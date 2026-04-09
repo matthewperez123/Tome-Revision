@@ -1,0 +1,52 @@
+{
+  "bookId": "de-bello-gallico",
+  "title": "Commentaries on the Gallic War",
+  "author": "Julius Caesar",
+  "chapterCount": 7,
+  "totalWordCount": 74954,
+  "totalMinutes": 303,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Book I",
+      "wordCount": 13442,
+      "estimatedMinutes": 54
+    },
+    {
+      "index": 1,
+      "title": "Book II",
+      "wordCount": 6915,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 2,
+      "title": "Book III",
+      "wordCount": 6023,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 3,
+      "title": "Book IV",
+      "wordCount": 7581,
+      "estimatedMinutes": 31
+    },
+    {
+      "index": 4,
+      "title": "Book V",
+      "wordCount": 12216,
+      "estimatedMinutes": 49
+    },
+    {
+      "index": 5,
+      "title": "Book VI",
+      "wordCount": 9171,
+      "estimatedMinutes": 37
+    },
+    {
+      "index": 6,
+      "title": "Book VII",
+      "wordCount": 19606,
+      "estimatedMinutes": 79
+    }
+  ]
+}

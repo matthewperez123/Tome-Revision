@@ -1,0 +1,16 @@
+{
+  "bookId": "the-republic",
+  "title": "The Republic",
+  "author": "Plato",
+  "chapterCount": 1,
+  "totalWordCount": 216539,
+  "totalMinutes": 867,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Republic",
+      "wordCount": 216539,
+      "estimatedMinutes": 867
+    }
+  ]
+}

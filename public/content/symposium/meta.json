@@ -1,0 +1,16 @@
+{
+  "bookId": "symposium",
+  "title": "The Symposium",
+  "author": "Plato",
+  "chapterCount": 1,
+  "totalWordCount": 32720,
+  "totalMinutes": 131,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Symposium",
+      "wordCount": 32720,
+      "estimatedMinutes": 131
+    }
+  ]
+}

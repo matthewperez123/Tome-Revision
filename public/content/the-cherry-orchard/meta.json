@@ -1,0 +1,40 @@
+{
+  "bookId": "the-cherry-orchard",
+  "title": "The Cherry Orchard",
+  "author": "Anton Chekhov",
+  "chapterCount": 5,
+  "totalWordCount": 17784,
+  "totalMinutes": 74,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Characters in the Play",
+      "wordCount": 88,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Act I",
+      "wordCount": 5834,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 2,
+      "title": "Act II",
+      "wordCount": 4092,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 3,
+      "title": "Act III",
+      "wordCount": 4197,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 4,
+      "title": "Act IV",
+      "wordCount": 3573,
+      "estimatedMinutes": 15
+    }
+  ]
+}

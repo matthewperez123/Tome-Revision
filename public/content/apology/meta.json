@@ -1,0 +1,16 @@
+{
+  "bookId": "apology",
+  "title": "The Apology",
+  "author": "Plato",
+  "chapterCount": 1,
+  "totalWordCount": 16128,
+  "totalMinutes": 65,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Apology",
+      "wordCount": 16128,
+      "estimatedMinutes": 65
+    }
+  ]
+}
