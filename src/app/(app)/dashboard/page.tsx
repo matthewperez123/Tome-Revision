@@ -326,7 +326,7 @@ export default function DashboardPage() {
                 <>
                   <Flame className="size-4 shrink-0 text-orange-500" />
                   <span>
-                    <Flame className="size-3.5 inline" /> <strong>{streak}-day</strong> Flames streak! Read today to keep it alive.
+                    <strong>{streak}-day</strong> Flames streak! Read today to keep it alive.
                   </span>
                 </>
               )}
