@@ -38,6 +38,7 @@ declare module "react-simple-maps" {
     cursor?: string
     outline?: string
     transition?: string
+    opacity?: number
   }
 
   export interface GeographyStyle {

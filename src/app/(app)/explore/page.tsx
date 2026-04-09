@@ -1,16 +1,23 @@
 "use client"
 
-import { useState, useMemo, useCallback } from "react"
+import { useState, useMemo, useCallback, useEffect } from "react"
 import Link from "next/link"
 import {
   ComposableMap,
   Geographies,
   Geography,
-  ZoomableGroup,
 } from "react-simple-maps"
 import { AnimatePresence, motion } from "framer-motion"
 import { useTheme } from "next-themes"
-import { X, BookOpen, Globe2, Users, ChevronRight } from "lucide-react"
+import {
+  X,
+  BookOpen,
+  Globe2,
+  Users,
+  ChevronRight,
+  ArrowLeft,
+  ArrowUpDown,
+} from "lucide-react"
 import {
   getAuthorsByCountry,
   getCountriesWithAuthors,
@@ -18,6 +25,7 @@ import {
   CONTINENT_COUNTRIES,
   type AuthorCountryData,
 } from "@/data/author-countries"
+import { getCountryColor } from "@/lib/country-colors"
 import { BOOKS } from "@/data/books"
 
 // ── Constants ────────────────────────────────────────────────────────────────
@@ -25,37 +33,41 @@ import { BOOKS } from "@/data/books"
 const GEO_URL =
   "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json"
 
-/** Approximate center coordinates for continent label placement (lon, lat) */
-const CONTINENT_POSITIONS: Record<string, { x: number; y: number }> = {
-  Europe: { x: 15, y: 50 },
-  "North America": { x: -100, y: 45 },
-  Asia: { x: 85, y: 40 },
+// ── Projection configs per view ──────────────────────────────────────────────
+
+type ViewKey = "world" | "europe" | "asia" | "northAmerica"
+
+interface ProjectionView {
+  center: [number, number]
+  scale: number
+  label: string
 }
 
-// ── Palette ──────────────────────────────────────────────────────────────────
+const VIEWS: Record<ViewKey, ProjectionView> = {
+  world:        { center: [0, 20],    scale: 155, label: "World" },
+  europe:       { center: [15, 54],   scale: 700, label: "Europe" },
+  asia:         { center: [95, 35],   scale: 380, label: "Asia" },
+  northAmerica: { center: [-100, 45], scale: 420, label: "North America" },
+}
 
-const PALETTE = {
-  light: {
-    ocean: "#faf7f2",
-    inactive: "#d6d3cd",
-    active: "#a5b4fc",
-    continentHighlight: "#818cf8",
-    hovered: "#6366f1",
-    selected: "#4f46e5",
-    stroke: "#94a3b8",
-    activeStroke: "#4f46e5",
-  },
-  dark: {
-    ocean: "#0f172a",
-    inactive: "#78716c",
-    active: "#92826a",
-    continentHighlight: "#c9943e",
-    hovered: "#e2b85c",
-    selected: "#D4A04C",
-    stroke: "#475569",
-    activeStroke: "#D4A04C",
-  },
-} as const
+// Map continent labels to ViewKey
+const CONTINENT_TO_VIEW: Record<string, ViewKey> = {
+  Europe: "europe",
+  Asia: "asia",
+  "North America": "northAmerica",
+}
+
+// ── Sort options ─────────────────────────────────────────────────────────────
+
+type SortMode = "chronological" | "alphabetical" | "bookCount"
+
+const SORT_LABELS: Record<SortMode, string> = {
+  chronological: "Chronological",
+  alphabetical: "Alphabetical",
+  bookCount: "Book count",
+}
+
+const SORT_ORDER: SortMode[] = ["chronological", "alphabetical", "bookCount"]
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -74,97 +86,156 @@ function formatLifespan(author: AuthorCountryData): string {
   return `${formatYear(author.birthYear)} \u2013 ${formatYear(author.deathYear)}`
 }
 
+function sortAuthors(authors: AuthorCountryData[], mode: SortMode): AuthorCountryData[] {
+  const sorted = [...authors]
+  switch (mode) {
+    case "chronological":
+      return sorted.sort((a, b) => (a.birthYear ?? 9999) - (b.birthYear ?? 9999))
+    case "alphabetical":
+      return sorted.sort((a, b) => a.name.localeCompare(b.name))
+    case "bookCount":
+      return sorted.sort(
+        (a, b) => getBookCountForAuthor(b.name) - getBookCountForAuthor(a.name)
+      )
+  }
+}
+
 // ── Component ────────────────────────────────────────────────────────────────
 
 export default function ExplorePage() {
   const { resolvedTheme } = useTheme()
   const isDark = resolvedTheme === "dark"
-  const palette = isDark ? PALETTE.dark : PALETTE.light
+  const mode = isDark ? "dark" : "light"
 
+  // ── State ───────────────────────────────────────────────────────────────
+  const [currentView, setCurrentView] = useState<ViewKey>("world")
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null)
-  const [selectedContinent, setSelectedContinent] = useState<string | null>(null)
-  const [panelOpen, setPanelOpen] = useState(false)
   const [hoveredGeo, setHoveredGeo] = useState<string | null>(null)
+  const [sortMode, setSortMode] = useState<SortMode>("chronological")
 
-  // ── Derived data ─────────────────────────────────────────────────────────
-
-  const countriesWithAuthors = useMemo(() => {
-    return new Set(getCountriesWithAuthors())
-  }, [])
+  // ── Derived data ────────────────────────────────────────────────────────
+  const countriesWithAuthors = useMemo(() => new Set(getCountriesWithAuthors()), [])
 
   const selectedAuthors = useMemo(() => {
     if (!selectedCountry) return []
-    return getAuthorsByCountry(selectedCountry).sort((a, b) => {
-      const aYear = a.birthYear ?? 9999
-      const bYear = b.birthYear ?? 9999
-      return aYear - bYear
-    })
-  }, [selectedCountry])
+    return sortAuthors(getAuthorsByCountry(selectedCountry), sortMode)
+  }, [selectedCountry, sortMode])
 
-  const continentCountryCodes = useMemo(() => {
-    if (!selectedContinent) return new Set<string>()
-    return new Set(CONTINENT_COUNTRIES[selectedContinent] ?? [])
-  }, [selectedContinent])
+  const panelOpen = selectedCountry !== null
 
-  // ── Handlers ─────────────────────────────────────────────────────────────
+  const projectionConfig = VIEWS[currentView]
+
+  // ── Colors ──────────────────────────────────────────────────────────────
+  const oceanColor = isDark ? "#0F0E1A" : "#FAF7F2"
+  const inactiveColor = isDark ? "#292524" : "#e7e5e4" // stone-800 / stone-200
+  const borderColor = isDark ? "#44403c" : "#d6d3d1" // stone-700 / stone-300
+  const goldAccent = "#D4A04C"
+
+  // ── Handlers ────────────────────────────────────────────────────────────
 
   const handleCountryClick = useCallback(
     (iso3: string) => {
       if (!countriesWithAuthors.has(iso3)) return
       setSelectedCountry(iso3)
-      setPanelOpen(true)
+      setSortMode("chronological")
     },
     [countriesWithAuthors]
   )
 
-  const handleContinentClick = useCallback(
-    (continent: string) => {
-      if (selectedContinent === continent) {
-        setSelectedContinent(null)
-      } else {
-        setSelectedContinent(continent)
-      }
-      setSelectedCountry(null)
-      setPanelOpen(false)
-    },
-    [selectedContinent]
-  )
-
-  const closePanel = useCallback(() => {
-    setPanelOpen(false)
+  const handleContinentZoom = useCallback((viewKey: ViewKey) => {
+    setCurrentView(viewKey)
     setSelectedCountry(null)
   }, [])
 
-  // ── Fill resolver ────────────────────────────────────────────────────────
+  const handleBackToWorld = useCallback(() => {
+    setCurrentView("world")
+    setSelectedCountry(null)
+  }, [])
 
+  const closePanel = useCallback(() => {
+    setSelectedCountry(null)
+  }, [])
+
+  const cycleSortMode = useCallback(() => {
+    setSortMode((prev) => {
+      const idx = SORT_ORDER.indexOf(prev)
+      return SORT_ORDER[(idx + 1) % SORT_ORDER.length]
+    })
+  }, [])
+
+  // ── Keyboard: Escape closes panel ──────────────────────────────────────
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") {
+        if (panelOpen) {
+          closePanel()
+        } else if (currentView !== "world") {
+          handleBackToWorld()
+        }
+      }
+    }
+    window.addEventListener("keydown", handleKeyDown)
+    return () => window.removeEventListener("keydown", handleKeyDown)
+  }, [panelOpen, currentView, closePanel, handleBackToWorld])
+
+  // ── Prevent wheel scroll on map ────────────────────────────────────────
+  const handleWheel = useCallback((e: React.WheelEvent) => {
+    // Do nothing — no zoom
+  }, [])
+
+  // ── Fill resolver ──────────────────────────────────────────────────────
   const getFill = useCallback(
     (iso3: string): string => {
       const isActive = countriesWithAuthors.has(iso3)
       const isSelected = selectedCountry === iso3
       const isHovered = hoveredGeo === iso3
-      const isInContinent = continentCountryCodes.has(iso3)
 
-      if (isSelected) return palette.selected
-      if (isHovered && isActive) return palette.hovered
-      if (isInContinent && isActive) return palette.continentHighlight
-      if (isActive) return palette.active
-      return palette.inactive
+      if (!isActive) return inactiveColor
+
+      const countryColor = getCountryColor(iso3, mode) ?? inactiveColor
+
+      if (isSelected) return countryColor
+      if (isHovered) return countryColor
+      return countryColor
     },
-    [countriesWithAuthors, selectedCountry, hoveredGeo, continentCountryCodes, palette]
+    [countriesWithAuthors, selectedCountry, hoveredGeo, mode, inactiveColor]
   )
 
-  const getStroke = useCallback(
+  const getStrokeWidth = useCallback(
+    (iso3: string): number => {
+      if (selectedCountry === iso3) return 2
+      if (hoveredGeo === iso3 && countriesWithAuthors.has(iso3)) return 1.5
+      return 0.5
+    },
+    [selectedCountry, hoveredGeo, countriesWithAuthors]
+  )
+
+  const getStrokeColor = useCallback(
     (iso3: string): string => {
-      const isActive = countriesWithAuthors.has(iso3)
-      const isSelected = selectedCountry === iso3
-
-      if (isSelected) return palette.activeStroke
-      return palette.stroke
+      if (selectedCountry === iso3) return goldAccent
+      if (hoveredGeo === iso3 && countriesWithAuthors.has(iso3)) return goldAccent
+      return borderColor
     },
-    [countriesWithAuthors, selectedCountry, palette]
+    [selectedCountry, hoveredGeo, countriesWithAuthors, borderColor]
   )
 
-  // ── Render ───────────────────────────────────────────────────────────────
+  const getOpacity = useCallback(
+    (iso3: string): number => {
+      const isActive = countriesWithAuthors.has(iso3)
+      const isHovered = hoveredGeo === iso3
+      if (!isActive) return 1
+      if (isHovered) return 0.85
+      return 1
+    },
+    [countriesWithAuthors, hoveredGeo]
+  )
+
+  // ── Country color for the sidebar dot ──────────────────────────────────
+  const selectedCountryColor = selectedCountry
+    ? getCountryColor(selectedCountry, mode) ?? goldAccent
+    : goldAccent
+
+  // ── Render ─────────────────────────────────────────────────────────────
 
   return (
     <div className="flex flex-col min-h-full relative overflow-hidden">
@@ -191,17 +262,32 @@ export default function ExplorePage() {
       </div>
 
       {/* ── Map container ──────────────────────────────────────────────── */}
-      <div className="flex-1 relative" style={{ backgroundColor: palette.ocean }}>
-        <ComposableMap
-          projection="geoEqualEarth"
-          projectionConfig={{
-            scale: 160,
-            center: [0, 5],
+      <div
+        className="flex-1 relative"
+        style={{
+          backgroundColor: oceanColor,
+          touchAction: "pan-y",
+        }}
+        onWheel={handleWheel}
+      >
+        {/* Map with CSS transition for smooth view switching */}
+        <div
+          style={{
+            transition: "all 700ms ease-out",
+            width: "100%",
+            height: "100%",
           }}
-          className="w-full h-full"
-          style={{ width: "100%", height: "100%" }}
+          key={currentView}
         >
-          <ZoomableGroup>
+          <ComposableMap
+            projection="geoEqualEarth"
+            projectionConfig={{
+              scale: projectionConfig.scale,
+              center: projectionConfig.center,
+            }}
+            className="w-full h-full"
+            style={{ width: "100%", height: "100%" }}
+          >
             <Geographies geography={GEO_URL}>
               {({ geographies }) =>
                 geographies.map((geo) => {
@@ -212,10 +298,10 @@ export default function ExplorePage() {
                   const isValid = iso3 && iso3 !== "-99"
                   const isActive = isValid && countriesWithAuthors.has(iso3)
 
-                  const fill = isValid ? getFill(iso3) : palette.inactive
-                  const stroke = isValid ? getStroke(iso3) : palette.stroke
-                  const hoverFill = isActive ? palette.hovered : fill
-                  const hoverStroke = isActive ? palette.activeStroke : stroke
+                  const fill = isValid ? getFill(iso3) : inactiveColor
+                  const strokeW = isValid ? getStrokeWidth(iso3) : 0.5
+                  const strokeC = isValid ? getStrokeColor(iso3) : borderColor
+                  const opacity = isValid ? getOpacity(iso3) : 1
 
                   return (
                     <Geography
@@ -232,22 +318,24 @@ export default function ExplorePage() {
                       style={{
                         default: {
                           fill,
-                          stroke,
-                          strokeWidth: 0.4,
+                          stroke: strokeC,
+                          strokeWidth: strokeW,
+                          opacity,
                           cursor: isActive ? "pointer" : "default",
-                          transition: "fill 0.2s ease, stroke 0.2s ease",
+                          transition: "fill 300ms ease, stroke 300ms ease, stroke-width 200ms ease, opacity 200ms ease",
                         },
                         hover: {
-                          fill: hoverFill,
-                          stroke: hoverStroke,
-                          strokeWidth: isActive ? 1.2 : 0.4,
+                          fill: isActive ? (getCountryColor(iso3, mode) ?? fill) : fill,
+                          stroke: isActive ? goldAccent : strokeC,
+                          strokeWidth: isActive ? 1.5 : 0.5,
+                          opacity: isActive ? 0.85 : 1,
                           cursor: isActive ? "pointer" : "default",
-                          transition: "fill 0.2s ease, stroke 0.2s ease",
+                          transition: "fill 300ms ease, stroke 300ms ease, stroke-width 200ms ease, opacity 200ms ease",
                         },
                         pressed: {
-                          fill: isActive ? palette.selected : fill,
-                          stroke,
-                          strokeWidth: 0.4,
+                          fill: isActive ? (getCountryColor(iso3, mode) ?? fill) : fill,
+                          stroke: isActive ? goldAccent : strokeC,
+                          strokeWidth: isActive ? 2 : 0.5,
                         },
                       }}
                     />
@@ -255,49 +343,76 @@ export default function ExplorePage() {
                 })
               }
             </Geographies>
-          </ZoomableGroup>
-        </ComposableMap>
-
-        {/* ── Continent gateway buttons ──────────────────────────────────── */}
-        <div className="absolute inset-0 pointer-events-none">
-          {Object.entries(CONTINENT_POSITIONS).map(([continent, pos]) => {
-            const isSelected = selectedContinent === continent
-            const authorCount = (CONTINENT_COUNTRIES[continent] ?? []).reduce(
-              (sum, code) => sum + getAuthorsByCountry(code).length,
-              0
-            )
-
-            return (
-              <button
-                key={continent}
-                onClick={() => handleContinentClick(continent)}
-                className={`
-                  pointer-events-auto absolute
-                  px-3 py-1.5 rounded-full
-                  font-serif text-xs font-semibold
-                  backdrop-blur-sm border transition-all duration-200
-                  shadow-sm hover:shadow-md
-                  ${
-                    isSelected
-                      ? "bg-[#D4A04C]/90 text-white border-[#D4A04C] dark:bg-[#D4A04C]/90"
-                      : "bg-white/80 dark:bg-slate-900/80 text-foreground border-border hover:border-[#D4A04C]/50"
-                  }
-                `}
-                style={{
-                  left: `${((pos.x + 180) / 360) * 100}%`,
-                  top: `${((90 - pos.y) / 180) * 100}%`,
-                  transform: "translate(-50%, -50%)",
-                }}
-                title={`${continent}: ${authorCount} authors`}
-              >
-                {continent}
-                <span className="ml-1.5 text-[10px] opacity-70">
-                  {authorCount}
-                </span>
-              </button>
-            )
-          })}
+          </ComposableMap>
         </div>
+
+        {/* ── Continent gateway buttons (fade out when zoomed in) ──────── */}
+        <AnimatePresence>
+          {currentView === "world" && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="absolute top-4 left-4 z-10 flex flex-wrap gap-2"
+            >
+              {Object.entries(CONTINENT_TO_VIEW).map(([continent, viewKey]) => {
+                const authorCount = (CONTINENT_COUNTRIES[continent] ?? []).reduce(
+                  (sum, code) => sum + getAuthorsByCountry(code).length,
+                  0
+                )
+
+                return (
+                  <button
+                    key={continent}
+                    onClick={() => handleContinentZoom(viewKey)}
+                    className="
+                      px-3 py-1.5 rounded-full
+                      font-serif text-xs font-semibold
+                      backdrop-blur-sm border transition-all duration-200
+                      shadow-sm hover:shadow-md
+                      bg-white/80 dark:bg-stone-900/80 text-foreground
+                      border-border hover:border-[#D4A04C]/50
+                      hover:bg-white dark:hover:bg-stone-800
+                    "
+                    title={`${continent}: ${authorCount} authors`}
+                  >
+                    {continent}
+                    <span className="ml-1.5 text-[10px] opacity-70">
+                      {authorCount}
+                    </span>
+                  </button>
+                )
+              })}
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* ── Back to world button ────────────────────────────────────── */}
+        <AnimatePresence>
+          {currentView !== "world" && (
+            <motion.button
+              initial={{ opacity: 0, x: -12 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -12 }}
+              transition={{ duration: 0.25 }}
+              onClick={handleBackToWorld}
+              className="
+                absolute top-4 left-4 z-10
+                flex items-center gap-1.5
+                px-3 py-1.5 rounded-full
+                font-serif text-xs font-semibold
+                backdrop-blur-sm border transition-all duration-200
+                shadow-sm hover:shadow-md
+                bg-white/80 dark:bg-stone-900/80 text-foreground
+                border-border hover:border-[#D4A04C]/50
+              "
+            >
+              <ArrowLeft className="size-3" />
+              Back to world
+            </motion.button>
+          )}
+        </AnimatePresence>
 
         {/* ── Hover tooltip ─────────────────────────────────────────────── */}
         <AnimatePresence>
@@ -310,11 +425,17 @@ export default function ExplorePage() {
               transition={{ duration: 0.15 }}
               className="absolute bottom-4 left-4 z-10 pointer-events-none"
             >
-              <div className="bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm rounded-lg px-3 py-2 border border-border shadow-lg">
-                <p className="font-serif font-semibold text-sm text-foreground">
-                  {COUNTRY_NAMES[hoveredGeo] ?? hoveredGeo}
-                </p>
-                <p className="text-xs text-muted-foreground">
+              <div className="bg-white/90 dark:bg-stone-900/90 backdrop-blur-sm rounded-lg px-3 py-2 border border-border shadow-lg">
+                <div className="flex items-center gap-2">
+                  <span
+                    className="w-2.5 h-2.5 rounded-full shrink-0"
+                    style={{ backgroundColor: getCountryColor(hoveredGeo, mode) ?? goldAccent }}
+                  />
+                  <p className="font-serif font-semibold text-sm text-foreground">
+                    {COUNTRY_NAMES[hoveredGeo] ?? hoveredGeo}
+                  </p>
+                </div>
+                <p className="text-xs text-muted-foreground mt-0.5 ml-[18px]">
                   {getAuthorsByCountry(hoveredGeo).length} author
                   {getAuthorsByCountry(hoveredGeo).length !== 1 ? "s" : ""}{" "}
                   &mdash; Click to explore
@@ -326,25 +447,28 @@ export default function ExplorePage() {
 
         {/* ── Legend ─────────────────────────────────────────────────────── */}
         <div className="absolute bottom-4 right-4 z-10">
-          <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm rounded-lg px-3 py-2 border border-border text-[10px] text-muted-foreground space-y-1">
+          <div className="bg-white/80 dark:bg-stone-900/80 backdrop-blur-sm rounded-lg px-3 py-2 border border-border text-[10px] text-muted-foreground space-y-1">
             <div className="flex items-center gap-2">
               <span
                 className="w-3 h-3 rounded-sm shrink-0"
-                style={{ backgroundColor: palette.active }}
+                style={{ backgroundColor: getCountryColor("GBR", mode) ?? goldAccent }}
               />
               <span>Has authors</span>
             </div>
             <div className="flex items-center gap-2">
               <span
-                className="w-3 h-3 rounded-sm shrink-0"
-                style={{ backgroundColor: palette.selected }}
+                className="w-3 h-3 rounded-sm shrink-0 border-2"
+                style={{
+                  backgroundColor: getCountryColor("FRA", mode) ?? goldAccent,
+                  borderColor: goldAccent,
+                }}
               />
               <span>Selected</span>
             </div>
             <div className="flex items-center gap-2">
               <span
                 className="w-3 h-3 rounded-sm shrink-0"
-                style={{ backgroundColor: palette.inactive }}
+                style={{ backgroundColor: inactiveColor }}
               />
               <span>No authors yet</span>
             </div>
@@ -352,7 +476,22 @@ export default function ExplorePage() {
         </div>
       </div>
 
-      {/* ── Right panel (author list) ────────────────────────────────────── */}
+      {/* ── Backdrop scrim ────────────────────────────────────────────────── */}
+      <AnimatePresence>
+        {panelOpen && (
+          <motion.div
+            key="backdrop"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            onClick={closePanel}
+            className="absolute inset-0 bg-black/30 dark:bg-black/50 z-20"
+          />
+        )}
+      </AnimatePresence>
+
+      {/* ── Right panel (author sidebar) ──────────────────────────────────── */}
       <AnimatePresence>
         {panelOpen && selectedCountry && (
           <motion.div
@@ -360,33 +499,63 @@ export default function ExplorePage() {
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
-            transition={{ type: "spring", damping: 25, stiffness: 250 }}
-            className="absolute top-0 right-0 bottom-0 w-full sm:w-96 z-30
+            transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+            className="
+              absolute top-0 right-0 bottom-0 z-30
+              w-full sm:w-[420px]
               bg-background/95 backdrop-blur-md border-l border-border
-              flex flex-col shadow-2xl"
+              flex flex-col shadow-2xl
+            "
           >
             {/* Panel header */}
-            <div className="flex items-center justify-between px-4 py-3 border-b border-border">
-              <div>
-                <h2 className="font-serif font-bold text-lg text-foreground">
-                  {COUNTRY_NAMES[selectedCountry] ?? selectedCountry}
-                </h2>
-                <p className="text-xs text-muted-foreground">
-                  {selectedAuthors.length} author
-                  {selectedAuthors.length !== 1 ? "s" : ""} in the Tome catalog
-                </p>
+            <div className="px-5 pt-5 pb-4 border-b border-border">
+              <div className="flex items-start justify-between gap-3">
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2.5 mb-1">
+                    <span
+                      className="w-3 h-3 rounded-full shrink-0"
+                      style={{ backgroundColor: selectedCountryColor }}
+                    />
+                    <h2
+                      className="font-serif font-bold text-foreground truncate"
+                      style={{ fontSize: "32px", lineHeight: "1.1" }}
+                    >
+                      {COUNTRY_NAMES[selectedCountry] ?? selectedCountry}
+                    </h2>
+                  </div>
+                  <p className="text-sm text-muted-foreground ml-[22px]">
+                    {selectedAuthors.length} author
+                    {selectedAuthors.length !== 1 ? "s" : ""} in the Tome catalog
+                  </p>
+                </div>
+                <button
+                  onClick={closePanel}
+                  className="p-1.5 rounded-lg hover:bg-muted transition-colors mt-1"
+                  aria-label="Close panel"
+                >
+                  <X className="size-5" />
+                </button>
               </div>
-              <button
-                onClick={closePanel}
-                className="p-1.5 rounded-lg hover:bg-muted transition-colors"
-                aria-label="Close panel"
-              >
-                <X className="size-4" />
-              </button>
+
+              {/* Sort toggle */}
+              {selectedAuthors.length > 1 && (
+                <button
+                  onClick={cycleSortMode}
+                  className="
+                    mt-3 ml-[22px] flex items-center gap-1.5
+                    text-xs text-muted-foreground
+                    hover:text-foreground transition-colors
+                    px-2 py-1 rounded-md hover:bg-muted
+                  "
+                >
+                  <ArrowUpDown className="size-3" />
+                  {SORT_LABELS[sortMode]}
+                </button>
+              )}
             </div>
 
             {/* Author cards */}
-            <div className="flex-1 overflow-y-auto px-4 py-3 space-y-3">
+            <div className="flex-1 overflow-y-auto px-5 py-4 space-y-3">
               {selectedAuthors.map((author, i) => {
                 const bookCount = getBookCountForAuthor(author.name)
 
@@ -402,7 +571,7 @@ export default function ExplorePage() {
                       className="block group"
                     >
                       <div
-                        className="rounded-xl border border-border p-3
+                        className="rounded-xl border border-border p-3.5
                           hover:border-[#D4A04C]/50 hover:bg-muted/50
                           transition-all duration-200"
                       >
@@ -442,10 +611,10 @@ export default function ExplorePage() {
             </div>
 
             {/* Panel footer */}
-            <div className="px-4 py-3 border-t border-border">
+            <div className="px-5 py-4 border-t border-border">
               <Link
                 href="/library"
-                className="flex items-center justify-center gap-2 w-full py-2 rounded-lg
+                className="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg
                   bg-[#D4A04C] text-white font-semibold text-sm
                   hover:bg-[#c99540] transition-colors"
               >
@@ -454,20 +623,6 @@ export default function ExplorePage() {
               </Link>
             </div>
           </motion.div>
-        )}
-      </AnimatePresence>
-
-      {/* ── Backdrop when panel is open (mobile) ──────────────────────── */}
-      <AnimatePresence>
-        {panelOpen && (
-          <motion.div
-            key="backdrop"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={closePanel}
-            className="absolute inset-0 bg-black/20 z-20 sm:hidden"
-          />
         )}
       </AnimatePresence>
     </div>
