@@ -69,7 +69,7 @@ export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelec
   // Keyboard navigation inside grid
   const handleGridKeyDown = useCallback(
     (e: React.KeyboardEvent) => {
-      const cols = 3
+      const cols = 4
       const total = filtered.length
       if (total === 0) return
       let next = focusIndex
@@ -131,7 +131,7 @@ export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelec
             aria-label="Select a painting"
             className={cn(
               "absolute top-full right-0 mt-2 z-50",
-              "w-[300px] rounded-xl",
+              "w-[280px] rounded-xl",
               "bg-white dark:bg-[#1A1A1A]/95",
               "border border-stone-200 dark:border-[#D4A04C]/15",
               "shadow-2xl shadow-black/20 dark:shadow-black/40",
@@ -141,7 +141,7 @@ export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelec
           >
             {/* Header */}
             <div className="flex items-center justify-between px-3 pt-3 pb-1.5">
-              <p className="text-[11px] font-semibold tracking-wide uppercase text-stone-500 dark:text-[#B0A898]">
+              <p className="text-[11px] font-semibold tracking-wide uppercase text-stone-500 dark:text-[#B0A898] flex-1 text-center">
                 Choose painting
               </p>
               <button
@@ -184,7 +184,7 @@ export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelec
                 "scrollbar-thumb-stone-300 scrollbar-track-stone-100",
                 "dark:scrollbar-thumb-white/15 dark:scrollbar-track-transparent"
               )}
-              style={{ maxHeight: "280px" }}
+              style={{ maxHeight: "360px" }}
             >
               {filtered.length === 0 ? (
                 <div className="flex items-center justify-center py-8 text-xs text-stone-400 dark:text-white/30">
@@ -193,7 +193,7 @@ export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelec
               ) : (
                 <div
                   ref={gridRef}
-                  className="grid grid-cols-3 gap-1.5"
+                  className="grid grid-cols-4 gap-1"
                   role="listbox"
                   aria-label="Paintings"
                   onKeyDown={handleGridKeyDown}
