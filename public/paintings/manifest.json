@@ -1,32 +1,1803 @@
 [
-  { "id": "ulysses-and-the-sirens", "filename": "ulysses-and-the-sirens.jpg", "src": "/paintings/ulysses-and-the-sirens.jpg", "title": "Ulysses and the Sirens", "artist": "John William Waterhouse", "year": "1891", "focalPoint": "center", "isDefault": true },
-  { "id": "barque-of-dante", "filename": "barque-of-dante.jpg", "src": "/paintings/barque-of-dante.jpg", "title": "The Barque of Dante", "artist": "Eugène Delacroix", "year": "1822", "focalPoint": "center" },
-  { "id": "school-of-athens", "filename": "school-of-athens.jpg", "src": "/paintings/school-of-athens.jpg", "title": "The School of Athens", "artist": "Raphael", "year": "1511", "focalPoint": "center" },
-  { "id": "moby-dick-turner", "filename": "moby-dick-turner.jpg", "src": "/paintings/moby-dick-turner.jpg", "title": "Snow Storm — Steam-Boat off a Harbour's Mouth", "artist": "J.M.W. Turner", "year": "1842", "focalPoint": "center" },
-  { "id": "ophelia", "filename": "ophelia.jpg", "src": "/paintings/ophelia.jpg", "title": "Ophelia", "artist": "John Everett Millais", "year": "1852", "focalPoint": "center" },
-  { "id": "liberty-leading-the-people", "filename": "liberty-leading-the-people.jpg", "src": "/paintings/liberty-leading-the-people.jpg", "title": "Liberty Leading the People", "artist": "Eugène Delacroix", "year": "1830", "focalPoint": "center" },
-  { "id": "romeo-and-juliet-dicksee", "filename": "romeo-and-juliet-dicksee.jpg", "src": "/paintings/romeo-and-juliet-dicksee.jpg", "title": "Romeo and Juliet", "artist": "Frank Dicksee", "year": "1884", "focalPoint": "top" },
-  { "id": "the-nightmare", "filename": "the-nightmare.jpg", "src": "/paintings/the-nightmare.jpg", "title": "The Nightmare", "artist": "Henry Fuseli", "year": "1781", "focalPoint": "center" },
-  { "id": "reading-from-homer", "filename": "reading-from-homer.jpg", "src": "/paintings/reading-from-homer.jpg", "title": "A Reading from Homer", "artist": "Lawrence Alma-Tadema", "year": "1885", "focalPoint": "center" },
-  { "id": "aeneid-tiepolo", "filename": "aeneid-tiepolo.jpg", "src": "/paintings/aeneid-tiepolo.jpg", "title": "Aeneas Presenting Cupid to Dido", "artist": "Giovanni Battista Tiepolo", "year": "c.1757", "focalPoint": "center" },
-  { "id": "gallic-wars-vercingetorix", "filename": "gallic-wars-vercingetorix.jpg", "src": "/paintings/gallic-wars-vercingetorix.jpg", "title": "Vercingetorix Throws Down His Arms", "artist": "Lionel Royer", "year": "1899", "focalPoint": "center" },
-  { "id": "madame-x", "filename": "madame-x.jpg", "src": "/paintings/madame-x.jpg", "title": "Madame X", "artist": "John Singer Sargent", "year": "1884", "focalPoint": "top" },
-  { "id": "wanderer-above-sea-of-fog", "filename": "wanderer-above-sea-of-fog.jpg", "src": "/paintings/wanderer-above-sea-of-fog.jpg", "title": "Wanderer Above the Sea of Fog", "artist": "Caspar David Friedrich", "year": "c.1818", "focalPoint": "top" },
-  { "id": "death-of-socrates", "filename": "death-of-socrates.jpg", "src": "/paintings/death-of-socrates.jpg", "title": "The Death of Socrates", "artist": "Jacques-Louis David", "year": "1787", "focalPoint": "center" },
-  { "id": "the-oxbow", "filename": "the-oxbow.jpg", "src": "/paintings/the-oxbow.jpg", "title": "The Oxbow", "artist": "Thomas Cole", "year": "1836", "focalPoint": "center" },
-  { "id": "crime-repin", "filename": "crime-repin.jpg", "src": "/paintings/crime-repin.jpg", "title": "Ivan the Terrible and His Son", "artist": "Ilya Repin", "year": "1885", "focalPoint": "center" },
-  { "id": "heart-of-the-andes", "filename": "heart-of-the-andes.jpg", "src": "/paintings/heart-of-the-andes.jpg", "title": "Heart of the Andes", "artist": "Frederic Edwin Church", "year": "1859", "focalPoint": "center" },
-  { "id": "don-quixote-dore", "filename": "don-quixote-dore.jpg", "src": "/paintings/don-quixote-dore.jpg", "title": "Don Quixote and Sancho Panza", "artist": "Gustave Doré", "year": "1863", "focalPoint": "center" },
-  { "id": "napoleons-retreat", "filename": "napoleons-retreat.jpg", "src": "/paintings/napoleons-retreat.jpg", "title": "Napoleon near Borodino", "artist": "Vasily Vereshchagin", "year": "1897", "focalPoint": "center" },
-  { "id": "nocturne-blue-gold", "filename": "nocturne-blue-gold.jpg", "src": "/paintings/nocturne-blue-gold.jpg", "title": "Nocturne in Blue and Gold", "artist": "James McNeill Whistler", "year": "c.1872", "focalPoint": "center" },
-  { "id": "sea-of-ice", "filename": "sea-of-ice.jpg", "src": "/paintings/sea-of-ice.jpg", "title": "The Sea of Ice", "artist": "Caspar David Friedrich", "year": "1824", "focalPoint": "center" },
-  { "id": "great-wave", "filename": "great-wave.jpg", "src": "/paintings/great-wave.jpg", "title": "The Great Wave off Kanagawa", "artist": "Katsushika Hokusai", "year": "c.1831", "focalPoint": "center" },
-  { "id": "abbey-in-oakwood", "filename": "abbey-in-oakwood.jpg", "src": "/paintings/abbey-in-oakwood.jpg", "title": "Abbey in the Oakwood", "artist": "Caspar David Friedrich", "year": "1810", "focalPoint": "center" },
-  { "id": "slave-ship", "filename": "slave-ship.jpg", "src": "/paintings/slave-ship.jpg", "title": "The Slave Ship", "artist": "J.M.W. Turner", "year": "1840", "focalPoint": "center" },
-  { "id": "washington-crossing", "filename": "washington-crossing.jpg", "src": "/paintings/washington-crossing.jpg", "title": "Washington Crossing the Delaware", "artist": "Emanuel Leutze", "year": "1851", "focalPoint": "center" },
-  { "id": "rembrandt-self-portrait", "filename": "rembrandt-self-portrait.jpg", "src": "/paintings/rembrandt-self-portrait.jpg", "title": "Self-Portrait with Two Circles", "artist": "Rembrandt van Rijn", "year": "c.1665", "focalPoint": "top" },
-  { "id": "pandemonium", "filename": "pandemonium.jpg", "src": "/paintings/pandemonium.jpg", "title": "Pandemonium", "artist": "John Martin", "year": "1841", "focalPoint": "center" },
-  { "id": "destruction-course-of-empire", "filename": "destruction-course-of-empire.jpg", "src": "/paintings/destruction-course-of-empire.jpg", "title": "Destruction (The Course of Empire)", "artist": "Thomas Cole", "year": "1836", "focalPoint": "center" },
-  { "id": "napoleon-crossing-the-alps", "filename": "napoleon-crossing-the-alps.jpg", "src": "/paintings/napoleon-crossing-the-alps.jpg", "title": "Napoleon Crossing the Alps", "artist": "Jacques-Louis David", "year": "1801", "focalPoint": "top" },
-  { "id": "macbeth-john-martin", "filename": "macbeth-john-martin.jpg", "src": "/paintings/macbeth-john-martin.jpg", "title": "Macbeth", "artist": "John Martin", "year": "1820", "focalPoint": "center" }
+  {
+    "id": "ulysses-and-the-sirens",
+    "filename": "ulysses-and-the-sirens.jpg",
+    "src": "/paintings/ulysses-and-the-sirens.jpg",
+    "title": "Ulysses and the Sirens",
+    "artist": "John William Waterhouse",
+    "year": "1891",
+    "focalPoint": "center",
+    "isDefault": true,
+    "tradition": "pre-raphaelite",
+    "themes": [
+      "temptation",
+      "cunning",
+      "music"
+    ],
+    "pairedBooks": [
+      "the-odyssey"
+    ],
+    "era": "19th-century",
+    "mood": "seductive",
+    "caption": "Waterhouse depicts Odysseus straining against his bonds as the Sirens beckon from their island.",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art"
+  },
+  {
+    "id": "barque-of-dante",
+    "filename": "barque-of-dante.jpg",
+    "src": "/paintings/barque-of-dante.jpg",
+    "title": "The Barque of Dante",
+    "artist": "Eugène Delacroix",
+    "year": "1822",
+    "focalPoint": "center",
+    "tradition": "romantic",
+    "themes": [
+      "damnation",
+      "journey",
+      "underworld"
+    ],
+    "pairedBooks": [
+      "the-divine-comedy",
+      "the-aeneid"
+    ],
+    "era": "19th-century",
+    "mood": "harrowing",
+    "caption": "Delacroix's debut masterpiece plunges Dante and Virgil into the roiling waters of the Styx.",
+    "isDefault": true,
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art"
+  },
+  {
+    "id": "school-of-athens",
+    "filename": "school-of-athens.jpg",
+    "src": "/paintings/school-of-athens.jpg",
+    "title": "The School of Athens",
+    "artist": "Raphael",
+    "year": "1511",
+    "focalPoint": "center",
+    "tradition": "renaissance",
+    "themes": [
+      "philosophy",
+      "knowledge",
+      "debate"
+    ],
+    "pairedBooks": [
+      "the-republic",
+      "nicomachean-ethics"
+    ],
+    "era": "renaissance",
+    "mood": "majestic",
+    "caption": "Raphael gathers every great philosopher of antiquity under a single vaulted heaven.",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art"
+  },
+  {
+    "id": "moby-dick-turner",
+    "filename": "moby-dick-turner.jpg",
+    "src": "/paintings/moby-dick-turner.jpg",
+    "title": "Snow Storm — Steam-Boat off a Harbour's Mouth",
+    "artist": "J.M.W. Turner",
+    "year": "1842",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art",
+    "tradition": "romantic",
+    "themes": [],
+    "pairedBooks": [],
+    "era": "19th-century",
+    "mood": "contemplative",
+    "caption": ""
+  },
+  {
+    "id": "ophelia",
+    "filename": "ophelia.jpg",
+    "src": "/paintings/ophelia.jpg",
+    "title": "Ophelia",
+    "artist": "John Everett Millais",
+    "year": "1852",
+    "focalPoint": "center",
+    "tradition": "pre-raphaelite",
+    "themes": [
+      "madness",
+      "death",
+      "beauty"
+    ],
+    "pairedBooks": [
+      "hamlet"
+    ],
+    "era": "19th-century",
+    "mood": "tragic",
+    "caption": "Millais' Ophelia floats downstream in a Pre-Raphaelite vision of Shakespeare's drowned heroine.",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art"
+  },
+  {
+    "id": "liberty-leading-the-people",
+    "filename": "liberty-leading-the-people.jpg",
+    "src": "/paintings/liberty-leading-the-people.jpg",
+    "title": "Liberty Leading the People",
+    "artist": "Eugène Delacroix",
+    "year": "1830",
+    "focalPoint": "center",
+    "tradition": "romantic",
+    "themes": [
+      "revolution",
+      "freedom",
+      "sacrifice"
+    ],
+    "pairedBooks": [
+      "les-miserables",
+      "a-tale-of-two-cities"
+    ],
+    "era": "19th-century",
+    "mood": "heroic",
+    "caption": "Delacroix's allegory of the 1830 Revolution personifies Liberty as a woman leading Parisians over the barricades.",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art"
+  },
+  {
+    "id": "romeo-and-juliet-dicksee",
+    "filename": "romeo-and-juliet-dicksee.jpg",
+    "src": "/paintings/romeo-and-juliet-dicksee.jpg",
+    "title": "Romeo and Juliet",
+    "artist": "Frank Dicksee",
+    "year": "1884",
+    "focalPoint": "top",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art",
+    "tradition": "romantic",
+    "themes": [],
+    "pairedBooks": [],
+    "era": "19th-century",
+    "mood": "contemplative",
+    "caption": ""
+  },
+  {
+    "id": "the-nightmare",
+    "filename": "the-nightmare.jpg",
+    "src": "/paintings/the-nightmare.jpg",
+    "title": "The Nightmare",
+    "artist": "Henry Fuseli",
+    "year": "1781",
+    "focalPoint": "center",
+    "tradition": "romantic",
+    "themes": [
+      "dreams",
+      "terror",
+      "unconscious"
+    ],
+    "pairedBooks": [
+      "frankenstein"
+    ],
+    "era": "18th-century",
+    "mood": "terrifying",
+    "caption": "Fuseli's incubus crouching on a sleeping woman became the defining image of Romantic horror.",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art"
+  },
+  {
+    "id": "reading-from-homer",
+    "filename": "reading-from-homer.jpg",
+    "src": "/paintings/reading-from-homer.jpg",
+    "title": "A Reading from Homer",
+    "artist": "Lawrence Alma-Tadema",
+    "year": "1885",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art",
+    "tradition": "romantic",
+    "themes": [],
+    "pairedBooks": [],
+    "era": "19th-century",
+    "mood": "contemplative",
+    "caption": ""
+  },
+  {
+    "id": "aeneid-tiepolo",
+    "filename": "aeneid-tiepolo.jpg",
+    "src": "/paintings/aeneid-tiepolo.jpg",
+    "title": "Aeneas Presenting Cupid to Dido",
+    "artist": "Giovanni Battista Tiepolo",
+    "year": "c.1757",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art",
+    "tradition": "romantic",
+    "themes": [],
+    "pairedBooks": [],
+    "era": "19th-century",
+    "mood": "contemplative",
+    "caption": ""
+  },
+  {
+    "id": "gallic-wars-vercingetorix",
+    "filename": "gallic-wars-vercingetorix.jpg",
+    "src": "/paintings/gallic-wars-vercingetorix.jpg",
+    "title": "Vercingetorix Throws Down His Arms",
+    "artist": "Lionel Royer",
+    "year": "1899",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art",
+    "tradition": "romantic",
+    "themes": [],
+    "pairedBooks": [],
+    "era": "19th-century",
+    "mood": "contemplative",
+    "caption": ""
+  },
+  {
+    "id": "madame-x",
+    "filename": "madame-x.jpg",
+    "src": "/paintings/madame-x.jpg",
+    "title": "Madame X",
+    "artist": "John Singer Sargent",
+    "year": "1884",
+    "focalPoint": "top",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art",
+    "tradition": "romantic",
+    "themes": [],
+    "pairedBooks": [],
+    "era": "19th-century",
+    "mood": "contemplative",
+    "caption": ""
+  },
+  {
+    "id": "wanderer-above-sea-of-fog",
+    "filename": "wanderer-above-sea-of-fog.jpg",
+    "src": "/paintings/wanderer-above-sea-of-fog.jpg",
+    "title": "Wanderer Above the Sea of Fog",
+    "artist": "Caspar David Friedrich",
+    "year": "c.1818",
+    "focalPoint": "top",
+    "tradition": "romantic",
+    "themes": [
+      "solitude",
+      "sublime",
+      "freedom"
+    ],
+    "pairedBooks": [
+      "walden",
+      "meditations"
+    ],
+    "era": "19th-century",
+    "mood": "sublime",
+    "caption": "Friedrich's wanderer surveys an infinite landscape, the quintessential Romantic icon of individual freedom.",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art"
+  },
+  {
+    "id": "death-of-socrates",
+    "filename": "death-of-socrates.jpg",
+    "src": "/paintings/death-of-socrates.jpg",
+    "title": "The Death of Socrates",
+    "artist": "Jacques-Louis David",
+    "year": "1787",
+    "focalPoint": "center",
+    "tradition": "neoclassical",
+    "themes": [
+      "martyrdom",
+      "philosophy",
+      "courage"
+    ],
+    "pairedBooks": [
+      "apology",
+      "the-republic"
+    ],
+    "era": "18th-century",
+    "mood": "heroic",
+    "caption": "David dramatizes the philosopher's calm acceptance of death while his students weep around him.",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art"
+  },
+  {
+    "id": "the-oxbow",
+    "filename": "the-oxbow.jpg",
+    "src": "/paintings/the-oxbow.jpg",
+    "title": "The Oxbow",
+    "artist": "Thomas Cole",
+    "year": "1836",
+    "focalPoint": "center",
+    "tradition": "hudson-river-school",
+    "themes": [
+      "civilization vs wilderness",
+      "landscape"
+    ],
+    "pairedBooks": [
+      "walden"
+    ],
+    "era": "19th-century",
+    "mood": "contemplative",
+    "caption": "Cole's split composition contrasts untamed wilderness with the cultivated Connecticut River valley.",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art"
+  },
+  {
+    "id": "crime-repin",
+    "filename": "crime-repin.jpg",
+    "src": "/paintings/crime-repin.jpg",
+    "title": "Ivan the Terrible and His Son",
+    "artist": "Ilya Repin",
+    "year": "1885",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art",
+    "tradition": "romantic",
+    "themes": [],
+    "pairedBooks": [],
+    "era": "19th-century",
+    "mood": "contemplative",
+    "caption": ""
+  },
+  {
+    "id": "heart-of-the-andes",
+    "filename": "heart-of-the-andes.jpg",
+    "src": "/paintings/heart-of-the-andes.jpg",
+    "title": "Heart of the Andes",
+    "artist": "Frederic Edwin Church",
+    "year": "1859",
+    "focalPoint": "center",
+    "tradition": "hudson-river-school",
+    "themes": [
+      "paradise",
+      "exploration",
+      "nature"
+    ],
+    "pairedBooks": [
+      "walden"
+    ],
+    "era": "19th-century",
+    "mood": "majestic",
+    "caption": "Church's monumental vision of South American landscape drew crowds who viewed it through opera glasses.",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art"
+  },
+  {
+    "id": "don-quixote-dore",
+    "filename": "don-quixote-dore.jpg",
+    "src": "/paintings/don-quixote-dore.jpg",
+    "title": "Don Quixote and Sancho Panza",
+    "artist": "Gustave Doré",
+    "year": "1863",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art",
+    "tradition": "romantic",
+    "themes": [],
+    "pairedBooks": [],
+    "era": "19th-century",
+    "mood": "contemplative",
+    "caption": ""
+  },
+  {
+    "id": "napoleons-retreat",
+    "filename": "napoleons-retreat.jpg",
+    "src": "/paintings/napoleons-retreat.jpg",
+    "title": "Napoleon near Borodino",
+    "artist": "Vasily Vereshchagin",
+    "year": "1897",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art",
+    "tradition": "romantic",
+    "themes": [],
+    "pairedBooks": [],
+    "era": "19th-century",
+    "mood": "contemplative",
+    "caption": ""
+  },
+  {
+    "id": "nocturne-blue-gold",
+    "filename": "nocturne-blue-gold.jpg",
+    "src": "/paintings/nocturne-blue-gold.jpg",
+    "title": "Nocturne in Blue and Gold",
+    "artist": "James McNeill Whistler",
+    "year": "c.1872",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art",
+    "tradition": "romantic",
+    "themes": [],
+    "pairedBooks": [],
+    "era": "19th-century",
+    "mood": "contemplative",
+    "caption": ""
+  },
+  {
+    "id": "sea-of-ice",
+    "filename": "sea-of-ice.jpg",
+    "src": "/paintings/sea-of-ice.jpg",
+    "title": "The Sea of Ice",
+    "artist": "Caspar David Friedrich",
+    "year": "1824",
+    "focalPoint": "center",
+    "tradition": "romantic",
+    "themes": [
+      "catastrophe",
+      "ice",
+      "futility"
+    ],
+    "pairedBooks": [
+      "frankenstein",
+      "moby-dick"
+    ],
+    "era": "19th-century",
+    "mood": "desolate",
+    "caption": "Friedrich's shattered ice sheets crushing a ship embody the Romantic confrontation with nature's indifference.",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art"
+  },
+  {
+    "id": "great-wave",
+    "filename": "great-wave.jpg",
+    "src": "/paintings/great-wave.jpg",
+    "title": "The Great Wave off Kanagawa",
+    "artist": "Katsushika Hokusai",
+    "year": "c.1831",
+    "focalPoint": "center",
+    "tradition": "ukiyo-e",
+    "themes": [
+      "nature",
+      "power",
+      "impermanence"
+    ],
+    "pairedBooks": [
+      "the-odyssey",
+      "moby-dick"
+    ],
+    "era": "19th-century",
+    "mood": "dynamic",
+    "caption": "Hokusai's iconic wave dwarfs Mount Fuji, capturing the terrifying beauty of nature's indifference.",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art"
+  },
+  {
+    "id": "abbey-in-oakwood",
+    "filename": "abbey-in-oakwood.jpg",
+    "src": "/paintings/abbey-in-oakwood.jpg",
+    "title": "Abbey in the Oakwood",
+    "artist": "Caspar David Friedrich",
+    "year": "1810",
+    "focalPoint": "center",
+    "tradition": "romantic",
+    "themes": [
+      "ruin",
+      "death",
+      "nature"
+    ],
+    "pairedBooks": [
+      "frankenstein"
+    ],
+    "era": "19th-century",
+    "mood": "melancholic",
+    "caption": "Friedrich's desolate abbey ruin and bare oaks create a meditation on mortality and the passage of time.",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art"
+  },
+  {
+    "id": "slave-ship",
+    "filename": "slave-ship.jpg",
+    "src": "/paintings/slave-ship.jpg",
+    "title": "The Slave Ship",
+    "artist": "J.M.W. Turner",
+    "year": "1840",
+    "focalPoint": "center",
+    "tradition": "romantic",
+    "themes": [
+      "cruelty",
+      "sea",
+      "justice"
+    ],
+    "pairedBooks": [
+      "moby-dick",
+      "twelve-years-a-slave"
+    ],
+    "era": "19th-century",
+    "mood": "apocalyptic",
+    "caption": "Turner's seascape transforms a slave trader's crime into a cosmic reckoning of fire and water.",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art"
+  },
+  {
+    "id": "washington-crossing",
+    "filename": "washington-crossing.jpg",
+    "src": "/paintings/washington-crossing.jpg",
+    "title": "Washington Crossing the Delaware",
+    "artist": "Emanuel Leutze",
+    "year": "1851",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art",
+    "tradition": "romantic",
+    "themes": [],
+    "pairedBooks": [],
+    "era": "19th-century",
+    "mood": "contemplative",
+    "caption": ""
+  },
+  {
+    "id": "rembrandt-self-portrait",
+    "filename": "rembrandt-self-portrait.jpg",
+    "src": "/paintings/rembrandt-self-portrait.jpg",
+    "title": "Self-Portrait with Two Circles",
+    "artist": "Rembrandt van Rijn",
+    "year": "c.1665",
+    "focalPoint": "top",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art",
+    "tradition": "romantic",
+    "themes": [],
+    "pairedBooks": [],
+    "era": "19th-century",
+    "mood": "contemplative",
+    "caption": ""
+  },
+  {
+    "id": "pandemonium",
+    "filename": "pandemonium.jpg",
+    "src": "/paintings/pandemonium.jpg",
+    "title": "Pandemonium",
+    "artist": "John Martin",
+    "year": "1841",
+    "focalPoint": "center",
+    "tradition": "romantic",
+    "themes": [
+      "hell",
+      "architecture",
+      "rebellion"
+    ],
+    "pairedBooks": [
+      "paradise-lost",
+      "the-divine-comedy"
+    ],
+    "era": "19th-century",
+    "mood": "sublime",
+    "caption": "Martin's vast vision of Satan's capital city in Hell dwarfs its demonic inhabitants with impossible architecture.",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art"
+  },
+  {
+    "id": "destruction-course-of-empire",
+    "filename": "destruction-course-of-empire.jpg",
+    "src": "/paintings/destruction-course-of-empire.jpg",
+    "title": "Destruction (The Course of Empire)",
+    "artist": "Thomas Cole",
+    "year": "1836",
+    "focalPoint": "center",
+    "tradition": "hudson-river-school",
+    "themes": [
+      "civilization",
+      "collapse",
+      "hubris"
+    ],
+    "pairedBooks": [
+      "the-histories"
+    ],
+    "era": "19th-century",
+    "mood": "apocalyptic",
+    "caption": "Cole's fourth painting in The Course of Empire shows civilization at the moment of its violent collapse.",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art"
+  },
+  {
+    "id": "napoleon-crossing-the-alps",
+    "filename": "napoleon-crossing-the-alps.jpg",
+    "src": "/paintings/napoleon-crossing-the-alps.jpg",
+    "title": "Napoleon Crossing the Alps",
+    "artist": "Jacques-Louis David",
+    "year": "1801",
+    "focalPoint": "top",
+    "tradition": "neoclassical",
+    "themes": [
+      "ambition",
+      "conquest",
+      "leadership"
+    ],
+    "pairedBooks": [
+      "war-and-peace"
+    ],
+    "era": "19th-century",
+    "mood": "heroic",
+    "caption": "David's propaganda portrait shows Bonaparte mastering nature itself as he crosses the Great St Bernard Pass.",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art"
+  },
+  {
+    "id": "macbeth-john-martin",
+    "filename": "macbeth-john-martin.jpg",
+    "src": "/paintings/macbeth-john-martin.jpg",
+    "title": "Macbeth",
+    "artist": "John Martin",
+    "year": "1820",
+    "focalPoint": "center",
+    "tradition": "romantic",
+    "themes": [
+      "ambition",
+      "supernatural",
+      "Scotland"
+    ],
+    "pairedBooks": [
+      "macbeth"
+    ],
+    "era": "19th-century",
+    "mood": "ominous",
+    "caption": "Martin's theatrical vision of the Scottish play captures the supernatural atmosphere of Shakespeare's tragedy.",
+    "medium": "Oil on canvas",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Art"
+  },
+  {
+    "id": "ulysses-deriding-polyphemus",
+    "title": "Ulysses Deriding Polyphemus",
+    "artist": "J.M.W. Turner",
+    "year": "1829",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "National Gallery, London",
+    "license": "PD-Art",
+    "tradition": "romantic",
+    "themes": [
+      "cunning",
+      "revenge",
+      "sea"
+    ],
+    "pairedBooks": [
+      "the-odyssey"
+    ],
+    "era": "19th-century",
+    "mood": "sublime",
+    "caption": "Turner dissolves Homer's Cyclops episode into a blaze of Mediterranean light as Odysseus taunts the blinded giant.",
+    "filename": "ulysses-deriding-polyphemus.jpg",
+    "src": "/paintings/ulysses-deriding-polyphemus.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "oath-of-the-horatii",
+    "title": "Oath of the Horatii",
+    "artist": "Jacques-Louis David",
+    "year": "1784",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Musée du Louvre",
+    "license": "PD-Art",
+    "tradition": "neoclassical",
+    "themes": [
+      "duty",
+      "sacrifice",
+      "patriotism"
+    ],
+    "pairedBooks": [
+      "the-iliad",
+      "the-aeneid"
+    ],
+    "era": "18th-century",
+    "mood": "heroic",
+    "caption": "David's manifesto of Neoclassical painting depicts three brothers swearing to fight or die for Rome.",
+    "filename": "oath-of-the-horatii.jpg",
+    "src": "/paintings/oath-of-the-horatii.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "birth-of-venus",
+    "title": "The Birth of Venus",
+    "artist": "Sandro Botticelli",
+    "year": "c.1485",
+    "focalPoint": "center",
+    "medium": "Tempera on canvas",
+    "institution": "Uffizi Gallery",
+    "license": "PD-Art",
+    "tradition": "renaissance",
+    "themes": [
+      "beauty",
+      "myth",
+      "creation"
+    ],
+    "pairedBooks": [
+      "metamorphoses"
+    ],
+    "era": "renaissance",
+    "mood": "serene",
+    "caption": "Botticelli's iconic Venus arrives on the shore of Cyprus, a Renaissance fusion of classical myth and Christian grace.",
+    "filename": "birth-of-venus.jpg",
+    "src": "/paintings/birth-of-venus.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "primavera",
+    "title": "Primavera",
+    "artist": "Sandro Botticelli",
+    "year": "c.1482",
+    "focalPoint": "center",
+    "medium": "Tempera on panel",
+    "institution": "Uffizi Gallery",
+    "license": "PD-Art",
+    "tradition": "renaissance",
+    "themes": [
+      "spring",
+      "love",
+      "allegory"
+    ],
+    "pairedBooks": [
+      "metamorphoses"
+    ],
+    "era": "renaissance",
+    "mood": "lyrical",
+    "caption": "Botticelli's garden of perpetual spring weaves Ovidian mythology into an allegory of love and renewal.",
+    "filename": "primavera.jpg",
+    "src": "/paintings/primavera.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "hylas-and-the-nymphs",
+    "title": "Hylas and the Nymphs",
+    "artist": "John William Waterhouse",
+    "year": "1896",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Manchester Art Gallery",
+    "license": "PD-Art",
+    "tradition": "pre-raphaelite",
+    "themes": [
+      "enchantment",
+      "temptation",
+      "myth"
+    ],
+    "pairedBooks": [
+      "the-odyssey",
+      "metamorphoses"
+    ],
+    "era": "19th-century",
+    "mood": "seductive",
+    "caption": "Waterhouse depicts the fatal moment when water nymphs lure Hercules' beloved companion into a moonlit pool.",
+    "filename": "hylas-and-the-nymphs.jpg",
+    "src": "/paintings/hylas-and-the-nymphs.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "echo-and-narcissus",
+    "title": "Echo and Narcissus",
+    "artist": "John William Waterhouse",
+    "year": "1903",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Walker Art Gallery",
+    "license": "PD-Art",
+    "tradition": "pre-raphaelite",
+    "themes": [
+      "vanity",
+      "unrequited love",
+      "myth"
+    ],
+    "pairedBooks": [
+      "metamorphoses"
+    ],
+    "era": "19th-century",
+    "mood": "melancholic",
+    "caption": "Waterhouse captures the tragedy of Echo pining for Narcissus as he gazes entranced at his own reflection.",
+    "filename": "echo-and-narcissus.jpg",
+    "src": "/paintings/echo-and-narcissus.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "creation-of-adam",
+    "title": "The Creation of Adam",
+    "artist": "Michelangelo",
+    "year": "c.1512",
+    "focalPoint": "center",
+    "medium": "Fresco",
+    "institution": "Sistine Chapel, Vatican",
+    "license": "PD-Art",
+    "tradition": "renaissance",
+    "themes": [
+      "creation",
+      "divinity",
+      "humanity"
+    ],
+    "pairedBooks": [
+      "paradise-lost"
+    ],
+    "era": "renaissance",
+    "mood": "transcendent",
+    "caption": "Michelangelo's near-touching fingers of God and Adam became the supreme image of divine creativity and human potential.",
+    "filename": "creation-of-adam.jpg",
+    "src": "/paintings/creation-of-adam.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "last-supper",
+    "title": "The Last Supper",
+    "artist": "Leonardo da Vinci",
+    "year": "c.1498",
+    "focalPoint": "center",
+    "medium": "Tempera and oil on gesso",
+    "institution": "Santa Maria delle Grazie, Milan",
+    "license": "PD-Art",
+    "tradition": "renaissance",
+    "themes": [
+      "betrayal",
+      "communion",
+      "sacrifice"
+    ],
+    "pairedBooks": [
+      "paradise-lost"
+    ],
+    "era": "renaissance",
+    "mood": "dramatic",
+    "caption": "Leonardo freezes the moment of Christ's announcement of betrayal, each apostle reacting with individual psychological truth.",
+    "filename": "last-supper.jpg",
+    "src": "/paintings/last-supper.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "return-of-prodigal-son",
+    "title": "The Return of the Prodigal Son",
+    "artist": "Rembrandt van Rijn",
+    "year": "c.1668",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Hermitage Museum",
+    "license": "PD-Art",
+    "tradition": "baroque",
+    "themes": [
+      "forgiveness",
+      "homecoming",
+      "mercy"
+    ],
+    "pairedBooks": [
+      "the-brothers-karamazov",
+      "crime-and-punishment"
+    ],
+    "era": "17th-century",
+    "mood": "devotional",
+    "caption": "Rembrandt's final masterpiece distills the parable into an embrace of unconditional mercy, glowing from the darkness.",
+    "filename": "return-of-prodigal-son.jpg",
+    "src": "/paintings/return-of-prodigal-son.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "sacrifice-of-isaac",
+    "title": "Sacrifice of Isaac",
+    "artist": "Caravaggio",
+    "year": "1603",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Uffizi Gallery",
+    "license": "PD-Art",
+    "tradition": "baroque",
+    "themes": [
+      "faith",
+      "obedience",
+      "sacrifice"
+    ],
+    "pairedBooks": [
+      "paradise-lost"
+    ],
+    "era": "17th-century",
+    "mood": "tense",
+    "caption": "Caravaggio freezes Abraham's blade mid-descent as the angel intervenes to spare Isaac in violent chiaroscuro.",
+    "filename": "sacrifice-of-isaac.jpg",
+    "src": "/paintings/sacrifice-of-isaac.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "judith-beheading-holofernes",
+    "title": "Judith Slaying Holofernes",
+    "artist": "Artemisia Gentileschi",
+    "year": "c.1620",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Uffizi Gallery",
+    "license": "PD-Art",
+    "tradition": "baroque",
+    "themes": [
+      "courage",
+      "justice",
+      "vengeance"
+    ],
+    "pairedBooks": [
+      "paradise-lost",
+      "antigone"
+    ],
+    "era": "17th-century",
+    "mood": "fierce",
+    "caption": "Gentileschi's unflinching depiction is one of the most powerful images of female agency in Western art.",
+    "filename": "judith-beheading-holofernes.jpg",
+    "src": "/paintings/judith-beheading-holofernes.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "tower-of-babel",
+    "title": "The Tower of Babel",
+    "artist": "Pieter Bruegel the Elder",
+    "year": "1563",
+    "focalPoint": "center",
+    "medium": "Oil on panel",
+    "institution": "Kunsthistorisches Museum, Vienna",
+    "license": "PD-Art",
+    "tradition": "northern-renaissance",
+    "themes": [
+      "hubris",
+      "language",
+      "civilization"
+    ],
+    "pairedBooks": [
+      "paradise-lost"
+    ],
+    "era": "renaissance",
+    "mood": "monumental",
+    "caption": "Bruegel's spiraling tower captures humanity's overreaching ambition and the chaos of mutual incomprehension.",
+    "filename": "tower-of-babel.jpg",
+    "src": "/paintings/tower-of-babel.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "garden-of-earthly-delights",
+    "title": "The Garden of Earthly Delights",
+    "artist": "Hieronymus Bosch",
+    "year": "c.1510",
+    "focalPoint": "center",
+    "medium": "Oil on oak panels",
+    "institution": "Museo del Prado",
+    "license": "PD-Art",
+    "tradition": "northern-renaissance",
+    "themes": [
+      "sin",
+      "paradise",
+      "damnation"
+    ],
+    "pairedBooks": [
+      "paradise-lost",
+      "the-divine-comedy"
+    ],
+    "era": "renaissance",
+    "mood": "fantastical",
+    "caption": "Bosch's hallucinatory triptych maps humanity's journey from Edenic innocence through earthly excess to infernal punishment.",
+    "filename": "garden-of-earthly-delights.jpg",
+    "src": "/paintings/garden-of-earthly-delights.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "dante-and-virgil-in-hell",
+    "title": "Dante and Virgil in Hell",
+    "artist": "William-Adolphe Bouguereau",
+    "year": "1850",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Musée d'Orsay",
+    "license": "PD-Art",
+    "tradition": "academic",
+    "themes": [
+      "damnation",
+      "violence",
+      "underworld"
+    ],
+    "pairedBooks": [
+      "the-divine-comedy"
+    ],
+    "era": "19th-century",
+    "mood": "brutal",
+    "caption": "Bouguereau depicts two damned souls locked in savage combat as Dante and Virgil watch in the eighth circle of Hell.",
+    "filename": "dante-and-virgil-in-hell.jpg",
+    "src": "/paintings/dante-and-virgil-in-hell.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "paolo-and-francesca",
+    "title": "Paolo and Francesca da Rimini",
+    "artist": "Dante Gabriel Rossetti",
+    "year": "1855",
+    "focalPoint": "center",
+    "medium": "Watercolour on paper",
+    "institution": "Tate Britain",
+    "license": "PD-Art",
+    "tradition": "pre-raphaelite",
+    "themes": [
+      "forbidden love",
+      "damnation",
+      "literature"
+    ],
+    "pairedBooks": [
+      "the-divine-comedy"
+    ],
+    "era": "19th-century",
+    "mood": "passionate",
+    "caption": "Rossetti follows the doomed lovers from their fatal kiss to their eternal punishment in Dante's whirlwind.",
+    "filename": "paolo-and-francesca.jpg",
+    "src": "/paintings/paolo-and-francesca.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "lady-of-shalott",
+    "title": "The Lady of Shalott",
+    "artist": "John William Waterhouse",
+    "year": "1888",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Tate Britain",
+    "license": "PD-Art",
+    "tradition": "pre-raphaelite",
+    "themes": [
+      "isolation",
+      "fate",
+      "art"
+    ],
+    "pairedBooks": [
+      "le-morte-darthur"
+    ],
+    "era": "19th-century",
+    "mood": "tragic",
+    "caption": "Waterhouse depicts Tennyson's cursed Lady setting forth on her final voyage toward Camelot and death.",
+    "filename": "lady-of-shalott.jpg",
+    "src": "/paintings/lady-of-shalott.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "miranda-the-tempest",
+    "title": "Miranda — The Tempest",
+    "artist": "John William Waterhouse",
+    "year": "1916",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Private collection",
+    "license": "PD-Art",
+    "tradition": "pre-raphaelite",
+    "themes": [
+      "storm",
+      "innocence",
+      "wonder"
+    ],
+    "pairedBooks": [
+      "the-tempest"
+    ],
+    "era": "20th-century",
+    "mood": "wistful",
+    "caption": "Waterhouse's Miranda gazes out at the shipwreck her father Prospero has conjured, full of pity and awe.",
+    "filename": "miranda-the-tempest.jpg",
+    "src": "/paintings/miranda-the-tempest.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "monk-by-the-sea",
+    "title": "The Monk by the Sea",
+    "artist": "Caspar David Friedrich",
+    "year": "1810",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Alte Nationalgalerie, Berlin",
+    "license": "PD-Art",
+    "tradition": "romantic",
+    "themes": [
+      "solitude",
+      "infinity",
+      "existentialism"
+    ],
+    "pairedBooks": [
+      "meditations",
+      "walden"
+    ],
+    "era": "19th-century",
+    "mood": "sublime",
+    "caption": "Friedrich reduces landscape to elemental bands of earth, sea and sky, dwarfing a solitary figure before the void.",
+    "filename": "monk-by-the-sea.jpg",
+    "src": "/paintings/monk-by-the-sea.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "fighting-temeraire",
+    "title": "The Fighting Temeraire",
+    "artist": "J.M.W. Turner",
+    "year": "1839",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "National Gallery, London",
+    "license": "PD-Art",
+    "tradition": "romantic",
+    "themes": [
+      "twilight",
+      "progress",
+      "elegy"
+    ],
+    "pairedBooks": [
+      "moby-dick"
+    ],
+    "era": "19th-century",
+    "mood": "elegiac",
+    "caption": "Turner's beloved painting shows the old warship towed to the breakers beneath a blazing sunset, an elegy for the age of sail.",
+    "filename": "fighting-temeraire.jpg",
+    "src": "/paintings/fighting-temeraire.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "rain-steam-speed",
+    "title": "Rain, Steam, and Speed",
+    "artist": "J.M.W. Turner",
+    "year": "1844",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "National Gallery, London",
+    "license": "PD-Art",
+    "tradition": "romantic",
+    "themes": [
+      "modernity",
+      "speed",
+      "nature vs industry"
+    ],
+    "pairedBooks": [
+      "hard-times"
+    ],
+    "era": "19th-century",
+    "mood": "exhilarating",
+    "caption": "Turner dissolves a Great Western Railway locomotive into atmosphere, celebrating and lamenting the industrial age.",
+    "filename": "rain-steam-speed.jpg",
+    "src": "/paintings/rain-steam-speed.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "raft-of-the-medusa",
+    "title": "The Raft of the Medusa",
+    "artist": "Théodore Géricault",
+    "year": "1819",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Musée du Louvre",
+    "license": "PD-Art",
+    "tradition": "romantic",
+    "themes": [
+      "survival",
+      "abandonment",
+      "desperation"
+    ],
+    "pairedBooks": [
+      "moby-dick",
+      "the-odyssey"
+    ],
+    "era": "19th-century",
+    "mood": "harrowing",
+    "caption": "Géricault's monumental canvas of shipwreck survivors scandalized France and launched Romantic painting.",
+    "filename": "raft-of-the-medusa.jpg",
+    "src": "/paintings/raft-of-the-medusa.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "girl-with-pearl-earring",
+    "title": "Girl with a Pearl Earring",
+    "artist": "Johannes Vermeer",
+    "year": "c.1665",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Mauritshuis, The Hague",
+    "license": "PD-Art",
+    "tradition": "dutch-golden-age",
+    "themes": [
+      "mystery",
+      "beauty",
+      "light"
+    ],
+    "pairedBooks": [
+      "pride-and-prejudice"
+    ],
+    "era": "17th-century",
+    "mood": "intimate",
+    "caption": "Vermeer's enigmatic tronie captures a girl's glance over her shoulder, luminous against a dark void.",
+    "filename": "girl-with-pearl-earring.jpg",
+    "src": "/paintings/girl-with-pearl-earring.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "milkmaid",
+    "title": "The Milkmaid",
+    "artist": "Johannes Vermeer",
+    "year": "c.1660",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Rijksmuseum, Amsterdam",
+    "license": "PD-Art",
+    "tradition": "dutch-golden-age",
+    "themes": [
+      "domesticity",
+      "labour",
+      "stillness"
+    ],
+    "pairedBooks": [
+      "middlemarch",
+      "pride-and-prejudice"
+    ],
+    "era": "17th-century",
+    "mood": "serene",
+    "caption": "Vermeer elevates a humble kitchen scene into a monument of quiet dignity through his mastery of light.",
+    "filename": "milkmaid.jpg",
+    "src": "/paintings/milkmaid.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "night-watch",
+    "title": "The Night Watch",
+    "artist": "Rembrandt van Rijn",
+    "year": "1642",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Rijksmuseum, Amsterdam",
+    "license": "CC0",
+    "tradition": "baroque",
+    "themes": [
+      "civic duty",
+      "drama",
+      "movement"
+    ],
+    "pairedBooks": [],
+    "era": "17th-century",
+    "mood": "dynamic",
+    "caption": "Rembrandt transforms a civic militia portrait into a theatrical drama of light, shadow and collective action.",
+    "filename": "night-watch.jpg",
+    "src": "/paintings/night-watch.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "anatomy-lesson-dr-tulp",
+    "title": "The Anatomy Lesson of Dr. Nicolaes Tulp",
+    "artist": "Rembrandt van Rijn",
+    "year": "1632",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Mauritshuis, The Hague",
+    "license": "PD-Art",
+    "tradition": "baroque",
+    "themes": [
+      "knowledge",
+      "mortality",
+      "science"
+    ],
+    "pairedBooks": [
+      "frankenstein"
+    ],
+    "era": "17th-century",
+    "mood": "clinical",
+    "caption": "Rembrandt's early masterpiece unites the drama of Baroque painting with the Enlightenment pursuit of anatomical knowledge.",
+    "filename": "anatomy-lesson-dr-tulp.jpg",
+    "src": "/paintings/anatomy-lesson-dr-tulp.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "astronomer",
+    "title": "The Astronomer",
+    "artist": "Johannes Vermeer",
+    "year": "1668",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Musée du Louvre",
+    "license": "PD-Art",
+    "tradition": "dutch-golden-age",
+    "themes": [
+      "knowledge",
+      "discovery",
+      "solitude"
+    ],
+    "pairedBooks": [
+      "meditations"
+    ],
+    "era": "17th-century",
+    "mood": "contemplative",
+    "caption": "Vermeer bathes a scholar reaching toward a celestial globe in golden window light, celebrating quiet intellectual pursuit.",
+    "filename": "astronomer.jpg",
+    "src": "/paintings/astronomer.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "philosopher-in-meditation",
+    "title": "Philosopher in Meditation",
+    "artist": "Rembrandt van Rijn",
+    "year": "1632",
+    "focalPoint": "center",
+    "medium": "Oil on panel",
+    "institution": "Musée du Louvre",
+    "license": "PD-Art",
+    "tradition": "baroque",
+    "themes": [
+      "contemplation",
+      "wisdom",
+      "light and dark"
+    ],
+    "pairedBooks": [
+      "meditations",
+      "the-republic"
+    ],
+    "era": "17th-century",
+    "mood": "meditative",
+    "caption": "Rembrandt's spiraling staircase and dramatic light create an allegory of the contemplative life.",
+    "filename": "philosopher-in-meditation.jpg",
+    "src": "/paintings/philosopher-in-meditation.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "kindred-spirits",
+    "title": "Kindred Spirits",
+    "artist": "Asher Brown Durand",
+    "year": "1849",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Crystal Bridges Museum",
+    "license": "PD-Art",
+    "tradition": "hudson-river-school",
+    "themes": [
+      "friendship",
+      "nature",
+      "art"
+    ],
+    "pairedBooks": [
+      "walden",
+      "leaves-of-grass"
+    ],
+    "era": "19th-century",
+    "mood": "pastoral",
+    "caption": "Durand memorializes the friendship of Thomas Cole and William Cullen Bryant in an idealized Catskill gorge.",
+    "filename": "kindred-spirits.jpg",
+    "src": "/paintings/kindred-spirits.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "twilight-in-wilderness",
+    "title": "Twilight in the Wilderness",
+    "artist": "Frederic Edwin Church",
+    "year": "1860",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Cleveland Museum of Art",
+    "license": "PD-Art",
+    "tradition": "hudson-river-school",
+    "themes": [
+      "wilderness",
+      "twilight",
+      "transcendence"
+    ],
+    "pairedBooks": [
+      "walden"
+    ],
+    "era": "19th-century",
+    "mood": "sublime",
+    "caption": "Church's incandescent sunset over the American wilderness served as a visual hymn on the eve of civil war.",
+    "filename": "twilight-in-wilderness.jpg",
+    "src": "/paintings/twilight-in-wilderness.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "among-sierra-nevada",
+    "title": "Among the Sierra Nevada, California",
+    "artist": "Albert Bierstadt",
+    "year": "1868",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Smithsonian American Art Museum",
+    "license": "PD-US",
+    "tradition": "hudson-river-school",
+    "themes": [
+      "frontier",
+      "paradise",
+      "landscape"
+    ],
+    "pairedBooks": [
+      "walden"
+    ],
+    "era": "19th-century",
+    "mood": "majestic",
+    "caption": "Bierstadt's luminous panorama presented the American West as an earthly paradise.",
+    "filename": "among-sierra-nevada.jpg",
+    "src": "/paintings/among-sierra-nevada.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "ninth-wave",
+    "title": "The Ninth Wave",
+    "artist": "Ivan Aivazovsky",
+    "year": "1850",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Russian Museum, Saint Petersburg",
+    "license": "PD-Art",
+    "tradition": "romantic",
+    "themes": [
+      "survival",
+      "sea",
+      "hope"
+    ],
+    "pairedBooks": [
+      "moby-dick",
+      "the-odyssey"
+    ],
+    "era": "19th-century",
+    "mood": "sublime",
+    "caption": "Aivazovsky's survivors cling to wreckage as a titanic wave rises before a golden dawn, balancing terror and hope.",
+    "filename": "ninth-wave.jpg",
+    "src": "/paintings/ninth-wave.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "bogatyrs",
+    "title": "Bogatyrs",
+    "artist": "Viktor Vasnetsov",
+    "year": "1898",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Tretyakov Gallery",
+    "license": "PD-Art",
+    "tradition": "romantic-nationalist",
+    "themes": [
+      "heroism",
+      "folklore",
+      "Russia"
+    ],
+    "pairedBooks": [
+      "war-and-peace"
+    ],
+    "era": "19th-century",
+    "mood": "heroic",
+    "caption": "Vasnetsov's three legendary warriors survey the Russian steppe, embodying the nation's mythic self-image.",
+    "filename": "bogatyrs.jpg",
+    "src": "/paintings/bogatyrs.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "portrait-of-dostoevsky",
+    "title": "Portrait of Dostoevsky",
+    "artist": "Vasily Perov",
+    "year": "1872",
+    "focalPoint": "top",
+    "medium": "Oil on canvas",
+    "institution": "Tretyakov Gallery",
+    "license": "PD-Art",
+    "tradition": "realist",
+    "themes": [
+      "genius",
+      "suffering",
+      "introspection"
+    ],
+    "pairedBooks": [
+      "crime-and-punishment",
+      "the-brothers-karamazov",
+      "notes-from-underground"
+    ],
+    "era": "19th-century",
+    "mood": "brooding",
+    "caption": "Perov's definitive portrait captures the novelist's inward gaze and tortured spiritual intensity.",
+    "filename": "portrait-of-dostoevsky.jpg",
+    "src": "/paintings/portrait-of-dostoevsky.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "isle-of-the-dead",
+    "title": "Isle of the Dead",
+    "artist": "Arnold Böcklin",
+    "year": "1880",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Kunstmuseum Basel",
+    "license": "PD-Art",
+    "tradition": "symbolist",
+    "themes": [
+      "death",
+      "passage",
+      "silence"
+    ],
+    "pairedBooks": [
+      "the-divine-comedy",
+      "the-odyssey"
+    ],
+    "era": "19th-century",
+    "mood": "sepulchral",
+    "caption": "Böcklin's mysterious island sanctuary, approached by a shrouded figure, became the supreme Symbolist image of death.",
+    "filename": "isle-of-the-dead.jpg",
+    "src": "/paintings/isle-of-the-dead.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "oedipus-and-sphinx",
+    "title": "Oedipus and the Sphinx",
+    "artist": "Gustave Moreau",
+    "year": "1864",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Metropolitan Museum of Art",
+    "license": "CC0",
+    "tradition": "symbolist",
+    "themes": [
+      "riddle",
+      "fate",
+      "knowledge"
+    ],
+    "pairedBooks": [
+      "oedipus-rex",
+      "the-odyssey"
+    ],
+    "era": "19th-century",
+    "mood": "enigmatic",
+    "caption": "Moreau transforms the mythic confrontation into an eerie, jewel-toned encounter between intellect and instinct.",
+    "filename": "oedipus-and-sphinx.jpg",
+    "src": "/paintings/oedipus-and-sphinx.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "ambassadors",
+    "title": "The Ambassadors",
+    "artist": "Hans Holbein the Younger",
+    "year": "1533",
+    "focalPoint": "center",
+    "medium": "Oil on oak",
+    "institution": "National Gallery, London",
+    "license": "PD-Art",
+    "tradition": "northern-renaissance",
+    "themes": [
+      "mortality",
+      "knowledge",
+      "illusion"
+    ],
+    "pairedBooks": [
+      "hamlet"
+    ],
+    "era": "renaissance",
+    "mood": "cerebral",
+    "caption": "Holbein's double portrait hides an anamorphic skull beneath displays of worldly learning, a memento mori in disguise.",
+    "filename": "ambassadors.jpg",
+    "src": "/paintings/ambassadors.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "arnolfini-portrait",
+    "title": "The Arnolfini Portrait",
+    "artist": "Jan van Eyck",
+    "year": "1434",
+    "focalPoint": "center",
+    "medium": "Oil on oak panel",
+    "institution": "National Gallery, London",
+    "license": "PD-Art",
+    "tradition": "northern-renaissance",
+    "themes": [
+      "marriage",
+      "domesticity",
+      "symbolism"
+    ],
+    "pairedBooks": [
+      "pride-and-prejudice",
+      "middlemarch"
+    ],
+    "era": "renaissance",
+    "mood": "ceremonial",
+    "caption": "Van Eyck's enigmatic double portrait revolutionized oil painting with its luminous surfaces and intricate symbolic program.",
+    "filename": "arnolfini-portrait.jpg",
+    "src": "/paintings/arnolfini-portrait.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "bacchus-and-ariadne",
+    "title": "Bacchus and Ariadne",
+    "artist": "Titian",
+    "year": "1522",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "National Gallery, London",
+    "license": "PD-Art",
+    "tradition": "renaissance",
+    "themes": [
+      "love",
+      "myth",
+      "ecstasy"
+    ],
+    "pairedBooks": [
+      "metamorphoses"
+    ],
+    "era": "renaissance",
+    "mood": "ecstatic",
+    "caption": "Titian captures the god of wine leaping from his chariot toward the abandoned Ariadne in a riot of colour and movement.",
+    "filename": "bacchus-and-ariadne.jpg",
+    "src": "/paintings/bacchus-and-ariadne.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "psyche-opening-golden-box",
+    "title": "Psyche Opening the Golden Box",
+    "artist": "John William Waterhouse",
+    "year": "1903",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Private collection",
+    "license": "PD-Art",
+    "tradition": "pre-raphaelite",
+    "themes": [
+      "curiosity",
+      "myth",
+      "beauty"
+    ],
+    "pairedBooks": [
+      "metamorphoses",
+      "the-odyssey"
+    ],
+    "era": "19th-century",
+    "mood": "enchanted",
+    "caption": "Waterhouse depicts Psyche's fateful moment of curiosity as she opens the box from Persephone's underworld.",
+    "filename": "psyche-opening-golden-box.jpg",
+    "src": "/paintings/psyche-opening-golden-box.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "return-of-persephone",
+    "title": "The Return of Persephone",
+    "artist": "Frederic Leighton",
+    "year": "1891",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Leeds Art Gallery",
+    "license": "PD-Art",
+    "tradition": "neoclassical",
+    "themes": [
+      "homecoming",
+      "seasons",
+      "myth"
+    ],
+    "pairedBooks": [
+      "metamorphoses",
+      "the-odyssey"
+    ],
+    "era": "19th-century",
+    "mood": "joyful",
+    "caption": "Leighton's luminous canvas shows Hermes returning Persephone from the underworld to her waiting mother Demeter.",
+    "filename": "return-of-persephone.jpg",
+    "src": "/paintings/return-of-persephone.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  },
+  {
+    "id": "orpheus-leading-eurydice",
+    "title": "Orpheus Leading Eurydice from the Underworld",
+    "artist": "Jean-Baptiste-Camille Corot",
+    "year": "1861",
+    "focalPoint": "center",
+    "medium": "Oil on canvas",
+    "institution": "Museum of Fine Arts, Houston",
+    "license": "PD-Art",
+    "tradition": "romantic",
+    "themes": [
+      "love",
+      "loss",
+      "underworld"
+    ],
+    "pairedBooks": [
+      "metamorphoses",
+      "the-divine-comedy"
+    ],
+    "era": "19th-century",
+    "mood": "melancholic",
+    "caption": "Corot bathes the myth of Orpheus in silvery light as the musician leads his beloved from Hades.",
+    "filename": "orpheus-leading-eurydice.jpg",
+    "src": "/paintings/orpheus-leading-eurydice.jpg",
+    "imageUrl": "",
+    "sourceUrl": ""
+  }
 ]
