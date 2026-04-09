@@ -1477,7 +1477,7 @@ export const CONTINENT_COUNTRIES: Record<string, string[]> = {
     "POL",
   ],
   "North America": ["USA", "CAN"],
-  Asia: ["IND", "CHN", "JPN", "IRN", "LBN"],
+  Asia: ["IND", "CHN", "JPN", "IRN", "LBN", "RUS"],
 }
 
 // ── Helper Functions ────────────────────────────────────────────────────────
