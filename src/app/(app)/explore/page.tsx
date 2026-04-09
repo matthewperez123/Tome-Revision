@@ -98,7 +98,13 @@ const VIEWS: Record<ViewKey, ProjectionView> = {
   northAmerica: { center: [-100, 45], scale: 420, label: "North America" },
 }
 
-// Map continent labels to ViewKey
+// Map continent labels to ViewKey + approximate screen position (% of map)
+const CONTINENT_BUTTONS: { continent: string; viewKey: ViewKey; top: string; left: string }[] = [
+  { continent: "Europe",        viewKey: "europe",       top: "28%", left: "52%" },
+  { continent: "Asia",          viewKey: "asia",         top: "32%", left: "72%" },
+  { continent: "North America", viewKey: "northAmerica", top: "30%", left: "22%" },
+]
+
 const CONTINENT_TO_VIEW: Record<string, ViewKey> = {
   Europe: "europe",
   Asia: "asia",
@@ -232,21 +238,39 @@ export default function ExplorePage() {
   }, [])
 
   // ── Fill resolver ──────────────────────────────────────────────────────
+  // Which continent's countries are currently visible (after zoom)
+  const visibleContinentCountries = useMemo(() => {
+    if (currentView === "world") return new Set<string>()
+    // Find which continent key maps to this view
+    const continent = Object.entries(CONTINENT_TO_VIEW).find(([, v]) => v === currentView)?.[0]
+    if (!continent) return new Set<string>()
+    return new Set(CONTINENT_COUNTRIES[continent] ?? [])
+  }, [currentView])
+
   const getFill = useCallback(
     (iso3: string): string => {
       const isActive = countriesWithAuthors.has(iso3)
       const isSelected = selectedCountry === iso3
       const isHovered = hoveredGeo === iso3
 
+      // World view: active countries get a muted tint, no individual colors yet
+      if (currentView === "world") {
+        if (!isActive) return inactiveColor
+        return isDark ? "#57534e" : "#a8a29e" // subtle warm stone for "has authors" at world level
+      }
+
+      // Continent view: only countries in the zoomed continent get vivid colors
       if (!isActive) return inactiveColor
+      if (!visibleContinentCountries.has(iso3)) {
+        return isDark ? "#44403c" : "#d6d3cd" // dimmer for countries outside this continent
+      }
 
       const countryColor = getCountryColor(iso3, mode) ?? inactiveColor
-
       if (isSelected) return countryColor
       if (isHovered) return countryColor
       return countryColor
     },
-    [countriesWithAuthors, selectedCountry, hoveredGeo, mode, inactiveColor]
+    [countriesWithAuthors, selectedCountry, hoveredGeo, mode, inactiveColor, isDark, currentView, visibleContinentCountries]
   )
 
   const getStrokeWidth = useCallback(
@@ -357,7 +381,7 @@ export default function ExplorePage() {
                       }}
                       onMouseLeave={() => setHoveredGeo(null)}
                       onClick={() => {
-                        if (isValid) handleCountryClick(iso3)
+                        if (isValid && currentView !== "world" && visibleContinentCountries.has(iso3)) handleCountryClick(iso3)
                       }}
                       className="outline-none"
                       style={{
@@ -366,7 +390,7 @@ export default function ExplorePage() {
                           stroke: strokeC,
                           strokeWidth: strokeW,
                           opacity,
-                          cursor: isActive ? "pointer" : "default",
+                          cursor: (isActive && currentView !== "world" && visibleContinentCountries.has(iso3)) ? "pointer" : "default",
                           transition: "fill 300ms ease, stroke 300ms ease, stroke-width 200ms ease, opacity 200ms ease",
                         },
                         hover: {
@@ -374,7 +398,7 @@ export default function ExplorePage() {
                           stroke: isActive ? goldAccent : strokeC,
                           strokeWidth: isActive ? 1.5 : 0.5,
                           opacity: isActive ? 0.85 : 1,
-                          cursor: isActive ? "pointer" : "default",
+                          cursor: (isActive && currentView !== "world" && visibleContinentCountries.has(iso3)) ? "pointer" : "default",
                           transition: "fill 300ms ease, stroke 300ms ease, stroke-width 200ms ease, opacity 200ms ease",
                         },
                         pressed: {
@@ -391,46 +415,41 @@ export default function ExplorePage() {
           </ComposableMap>
         </div>
 
-        {/* ── Continent gateway buttons (fade out when zoomed in) ──────── */}
+        {/* ── Continent gateway buttons — positioned ON each continent ── */}
         <AnimatePresence>
-          {currentView === "world" && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
-              className="absolute top-4 left-4 z-10 flex flex-wrap gap-2"
-            >
-              {Object.entries(CONTINENT_TO_VIEW).map(([continent, viewKey]) => {
-                const authorCount = (CONTINENT_COUNTRIES[continent] ?? []).reduce(
-                  (sum, code) => sum + getAuthorsByCountry(code).length,
-                  0
-                )
-
-                return (
-                  <button
-                    key={continent}
-                    onClick={() => handleContinentZoom(viewKey)}
-                    className="
-                      px-3 py-1.5 rounded-full
-                      font-serif text-xs font-semibold
-                      backdrop-blur-sm border transition-all duration-200
-                      shadow-sm hover:shadow-md
-                      bg-white/80 dark:bg-stone-900/80 text-foreground
-                      border-border hover:border-[#D4A04C]/50
-                      hover:bg-white dark:hover:bg-stone-800
-                    "
-                    title={`${continent}: ${authorCount} authors`}
-                  >
-                    {continent}
-                    <span className="ml-1.5 text-[10px] opacity-70">
-                      {authorCount}
-                    </span>
-                  </button>
-                )
-              })}
-            </motion.div>
-          )}
+          {currentView === "world" && CONTINENT_BUTTONS.map(({ continent, viewKey, top, left }) => {
+            const authorCount = (CONTINENT_COUNTRIES[continent] ?? []).reduce(
+              (sum, code) => sum + getAuthorsByCountry(code).length,
+              0
+            )
+            return (
+              <motion.button
+                key={continent}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.3 }}
+                onClick={() => handleContinentZoom(viewKey)}
+                className="
+                  absolute z-10 -translate-x-1/2 -translate-y-1/2
+                  px-3.5 py-2 rounded-xl
+                  font-serif text-sm font-semibold
+                  backdrop-blur-md border transition-all duration-200
+                  shadow-lg hover:shadow-xl
+                  bg-white/85 dark:bg-stone-900/85 text-foreground
+                  border-[#D4A04C]/20 hover:border-[#D4A04C]/60
+                  hover:bg-white dark:hover:bg-stone-800
+                  cursor-pointer
+                "
+                style={{ top, left }}
+              >
+                <span className="block text-center">{continent}</span>
+                <span className="block text-center text-[10px] text-muted-foreground mt-0.5">
+                  {authorCount} authors
+                </span>
+              </motion.button>
+            )
+          })}
         </AnimatePresence>
 
         {/* ── Back to world button ────────────────────────────────────── */}
@@ -461,7 +480,7 @@ export default function ExplorePage() {
 
         {/* ── Hover tooltip ─────────────────────────────────────────────── */}
         <AnimatePresence>
-          {hoveredGeo && countriesWithAuthors.has(hoveredGeo) && (
+          {hoveredGeo && currentView !== "world" && countriesWithAuthors.has(hoveredGeo) && visibleContinentCountries.has(hoveredGeo) && (
             <motion.div
               key="tooltip"
               initial={{ opacity: 0, y: 4 }}
