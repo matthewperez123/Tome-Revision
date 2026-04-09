@@ -43,8 +43,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       <SidebarProvider>
         <AppSidebar />
         <div className="flex flex-1 flex-col overflow-hidden">
-          <TopBar />
           <main className="flex-1 overflow-y-auto">
+            <TopBar />
             <PageTransition>{children}</PageTransition>
           </main>
         </div>
