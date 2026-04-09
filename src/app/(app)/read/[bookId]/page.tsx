@@ -18,7 +18,7 @@
 import { useEffect, useState, useRef, useCallback } from "react"
 import { useParams, useRouter } from "next/navigation"
 import { AnimatePresence, motion } from "framer-motion"
-import { MessageSquare, BookCheck, Bookmark, BookMarked } from "lucide-react"
+import { MessageSquare, BookCheck, Bookmark, BookMarked, Shield, BookOpen } from "lucide-react"
 import { toast } from "sonner"
 import { supabase } from "@/lib/supabase"
 import type { Book } from "@/lib/supabase"
@@ -577,6 +577,23 @@ export default function ReaderPage() {
                 aria-label="Bookmarks"
               >
                 <Bookmark className="size-3.5" />
+              </button>
+              {/* Reading mode toggle — guided ↔ free */}
+              <button
+                onClick={() => {
+                  const next = readingMode === "guided" ? "free" : "guided"
+                  setMode(bookId, next)
+                }}
+                className={cn(
+                  "flex size-7 items-center justify-center rounded-md transition-colors",
+                  readingMode === "free"
+                    ? "text-amber-500"
+                    : "text-[#D4A04C]"
+                )}
+                aria-label={readingMode === "guided" ? "Switch to Free Reading" : "Switch to Guided Mode"}
+                title={readingMode === "guided" ? "Switch to Free Reading (unlock all chapters)" : "Switch to Guided Mode (quizzes & XP)"}
+              >
+                {readingMode === "guided" ? <Shield className="size-3.5" /> : <BookOpen className="size-3.5" />}
               </button>
               <ReaderSettings
                 theme={theme}
