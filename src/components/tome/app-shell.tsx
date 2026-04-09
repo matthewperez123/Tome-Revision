@@ -42,8 +42,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     <VirgilWrapper>
       <SidebarProvider>
         <AppSidebar />
-        <div className="flex flex-1 flex-col overflow-hidden">
-          <main className="flex-1 overflow-y-auto">
+        <div className="flex flex-1 flex-col">
+          <main className="relative flex-1 overflow-y-auto">
             <TopBar />
             <PageTransition>{children}</PageTransition>
           </main>
