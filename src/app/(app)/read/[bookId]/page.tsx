@@ -48,6 +48,7 @@ import { VirgilReflection } from "@/components/tome/virgil-reflection"
 import { AuthorLink } from "@/components/tome/author-link"
 import { cn } from "@/lib/utils"
 import { useTheme } from "next-themes"
+import { notifyChapterCompleted, notifyBookCompleted } from "@/lib/notifications"
 import { VirgilDrawer } from "@/components/reader/VirgilDrawer"
 import { getAnnotationsForChapter } from "@/lib/virgil/annotations"
 
@@ -383,6 +384,13 @@ export default function ReaderPage() {
       xpEarned,
       completedAt:     new Date().toISOString(),
     })
+
+    // Fire notifications
+    const bookTitle = book?.title ?? bookId
+    notifyChapterCompleted(bookTitle, chapterData.title, bookId, isLastChapter ? undefined : currentChapter + 1)
+    if (isLastChapter) {
+      notifyBookCompleted(bookTitle, bookId, xpEarned)
+    }
 
     setShowQuizOverlay(false)
     if (!isLastChapter) setTimeout(() => handleChapterSelect(currentChapter + 1), 300)
