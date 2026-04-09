@@ -130,7 +130,7 @@ export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelec
             role="dialog"
             aria-label="Select a painting"
             className={cn(
-              "absolute top-full right-0 mt-2 z-50",
+              "absolute top-0 right-0 mt-10 z-50",
               "w-[280px] rounded-xl",
               "bg-white dark:bg-[#1A1A1A]/95",
               "border border-stone-200 dark:border-[#D4A04C]/15",
@@ -184,7 +184,7 @@ export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelec
                 "scrollbar-thumb-stone-300 scrollbar-track-stone-100",
                 "dark:scrollbar-thumb-white/15 dark:scrollbar-track-transparent"
               )}
-              style={{ maxHeight: "360px" }}
+              style={{ maxHeight: "min(320px, calc(100% - 100px))" }}
             >
               {filtered.length === 0 ? (
                 <div className="flex items-center justify-center py-8 text-xs text-stone-400 dark:text-white/30">
