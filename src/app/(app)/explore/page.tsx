@@ -27,11 +27,59 @@ import {
 } from "@/data/author-countries"
 import { getCountryColor } from "@/lib/country-colors"
 import { BOOKS } from "@/data/books"
+import { authorSlug } from "@/data/authors"
 
 // ── Constants ────────────────────────────────────────────────────────────────
 
 const GEO_URL =
   "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json"
+
+// ── ISO numeric → alpha-3 mapping (for world-atlas@2 which uses numeric IDs) ─
+
+const NUMERIC_TO_ISO3: Record<string, string> = {
+  "300": "GRC", "380": "ITA", "826": "GBR", "372": "IRL", "250": "FRA",
+  "643": "RUS", "840": "USA", "276": "DEU", "040": "AUT", "203": "CZE",
+  "348": "HUN", "724": "ESP", "578": "NOR", "752": "SWE", "246": "FIN",
+  "756": "CHE", "616": "POL", "356": "IND", "156": "CHN", "392": "JPN",
+  "364": "IRN", "422": "LBN", "124": "CAN",
+  // Additional common countries for geographic context
+  "032": "ARG", "036": "AUS", "076": "BRA", "818": "EGY", "404": "KEN",
+  "484": "MEX", "566": "NGA", "710": "ZAF", "792": "TUR", "804": "UKR",
+}
+
+const NAME_TO_ISO3: Record<string, string> = {
+  "Greece": "GRC", "Italy": "ITA", "United Kingdom": "GBR", "Ireland": "IRL",
+  "France": "FRA", "Russia": "RUS", "United States of America": "USA",
+  "Germany": "DEU", "Austria": "AUT", "Czechia": "CZE", "Czech Rep.": "CZE",
+  "Hungary": "HUN", "Spain": "ESP", "Norway": "NOR", "Sweden": "SWE",
+  "Finland": "FIN", "Switzerland": "CHE", "Poland": "POL", "India": "IND",
+  "China": "CHN", "Japan": "JPN", "Iran": "IRN", "Lebanon": "LBN",
+  "Canada": "CAN",
+}
+
+function resolveISO3(geo: { id?: string; properties: Record<string, unknown> }): string {
+  // Try ISO_A3 first (some TopoJSON sources have it)
+  const isoA3 = geo.properties.ISO_A3 as string | undefined
+  if (isoA3 && isoA3 !== "-99") return isoA3
+
+  const isoA3EH = geo.properties.ISO_A3_EH as string | undefined
+  if (isoA3EH && isoA3EH !== "-99") return isoA3EH
+
+  // Try numeric ID (world-atlas@2 uses this)
+  if (geo.id) {
+    const fromNumeric = NUMERIC_TO_ISO3[geo.id]
+    if (fromNumeric) return fromNumeric
+  }
+
+  // Try name as fallback
+  const name = geo.properties.name as string | undefined
+  if (name) {
+    const fromName = NAME_TO_ISO3[name]
+    if (fromName) return fromName
+  }
+
+  return ""
+}
 
 // ── Projection configs per view ──────────────────────────────────────────────
 
@@ -291,11 +339,8 @@ export default function ExplorePage() {
             <Geographies geography={GEO_URL}>
               {({ geographies }) =>
                 geographies.map((geo) => {
-                  const iso3: string =
-                    (geo.properties.ISO_A3 as string) ??
-                    (geo.properties.ISO_A3_EH as string) ??
-                    ""
-                  const isValid = iso3 && iso3 !== "-99"
+                  const iso3 = resolveISO3(geo as { id?: string; properties: Record<string, unknown> })
+                  const isValid = iso3.length > 0
                   const isActive = isValid && countriesWithAuthors.has(iso3)
 
                   const fill = isValid ? getFill(iso3) : inactiveColor
@@ -567,7 +612,7 @@ export default function ExplorePage() {
                     transition={{ delay: i * 0.04 }}
                   >
                     <Link
-                      href={`/library?author=${encodeURIComponent(author.name)}`}
+                      href={`/author/${authorSlug(author.name)}`}
                       className="block group"
                     >
                       <div
