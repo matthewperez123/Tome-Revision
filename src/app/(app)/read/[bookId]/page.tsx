@@ -482,7 +482,7 @@ export default function ReaderPage() {
           isOpen={showQuizOverlay}
           onPass={handleQuizPass}
           onFail={() => setShowQuizOverlay(false)}
-          onClose={() => setShowQuizOverlay(false)}
+          onClose={() => { setShowQuizOverlay(false); setMode(bookId, "free") }}
         />
       )}
 

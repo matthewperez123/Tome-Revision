@@ -45,7 +45,7 @@ export function TopBar({ className }: { className?: string }) {
       <SidebarTrigger className="md:hidden" />
 
       {/* Search */}
-      <div className="relative flex-1 max-w-md">
+      <div className="relative flex-1 max-w-md" data-search-container>
         <Search className="absolute left-2.5 top-1/2 size-3.5 -translate-y-1/2 text-muted-foreground pointer-events-none" />
         <Input
           ref={inputRef}
@@ -58,7 +58,10 @@ export function TopBar({ className }: { className?: string }) {
             if (query.trim().length >= 2) setDropdownOpen(true)
           }}
           placeholder="Search books, authors, genres…"
-          className="h-8 bg-[var(--tome-surface-elevated)] pl-8 pr-7 text-sm border-transparent focus-visible:border-[var(--tome-accent)] focus-visible:bg-background"
+          autoCorrect="off"
+          autoCapitalize="off"
+          spellCheck={false}
+          className="h-8 bg-[var(--tome-surface-elevated)] pl-8 pr-7 text-[16px] sm:text-sm border-transparent focus-visible:border-[var(--tome-accent)] focus-visible:bg-background"
         />
         {query && (
           <button
@@ -71,7 +74,7 @@ export function TopBar({ className }: { className?: string }) {
         <SearchDropdown
           results={results}
           query={query}
-          isOpen={dropdownOpen && isSearching}
+          isOpen={dropdownOpen && query.trim().length >= 2}
           onClose={handleClose}
         />
       </div>

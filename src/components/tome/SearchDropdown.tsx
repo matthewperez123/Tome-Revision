@@ -57,6 +57,7 @@ export function SearchDropdown({ results, query, isOpen, onClose }: SearchDropdo
   useEffect(() => {
     if (!isOpen) return
     function handleKey(e: KeyboardEvent) {
+      // Only intercept navigation keys — let all typing pass through to the input
       const list = items()
       if (e.key === "ArrowDown") {
         e.preventDefault()
@@ -68,9 +69,10 @@ export function SearchDropdown({ results, query, isOpen, onClose }: SearchDropdo
         e.preventDefault()
         router.push(list[focusIdx].route)
         onClose()
-      } else if (e.key === "Escape" || e.key === "Tab") {
+      } else if (e.key === "Escape") {
         onClose()
       }
+      // Tab and all other keys pass through to the input naturally
     }
     window.addEventListener("keydown", handleKey)
     return () => window.removeEventListener("keydown", handleKey)
@@ -79,7 +81,10 @@ export function SearchDropdown({ results, query, isOpen, onClose }: SearchDropdo
   useEffect(() => {
     if (!isOpen) return
     function handleClick(e: MouseEvent) {
-      if (ref.current && !ref.current.contains(e.target as Node)) onClose()
+      const target = e.target as HTMLElement
+      // Don't close if clicking the search input or clear button (siblings of dropdown)
+      if (target.closest?.("[data-search-container]")) return
+      if (ref.current && !ref.current.contains(target)) onClose()
     }
     document.addEventListener("mousedown", handleClick)
     return () => document.removeEventListener("mousedown", handleClick)
