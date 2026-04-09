@@ -44,9 +44,10 @@ export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelec
     const rect = stoa.getBoundingClientRect()
     const panelWidth = 280
     const maxH = Math.min(380, rect.height - 16)
+    // Use absolute positioning (add scrollY) so the panel doesn't follow viewport scroll
     setPanelPos({
-      top: rect.top + (rect.height - maxH) / 2,
-      left: rect.left + rect.width / 2 - panelWidth / 2,
+      top: rect.top + window.scrollY + (rect.height - maxH) / 2,
+      left: rect.left + window.scrollX + rect.width / 2 - panelWidth / 2,
       maxH,
     })
     setQuery("")
@@ -143,7 +144,7 @@ export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelec
           role="dialog"
           aria-label="Select a painting"
           className={cn(
-            "fixed z-[100]",
+            "absolute z-[100]",
             "w-[280px] rounded-xl",
             "bg-white dark:bg-[#1A1A1A]/95",
             "border border-stone-200 dark:border-[#D4A04C]/15",
