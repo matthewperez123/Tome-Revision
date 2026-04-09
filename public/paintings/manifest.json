@@ -981,33 +981,6 @@
     "sourceUrl": ""
   },
   {
-    "id": "judith-beheading-holofernes",
-    "title": "Judith Slaying Holofernes",
-    "artist": "Artemisia Gentileschi",
-    "year": "c.1620",
-    "focalPoint": "center",
-    "medium": "Oil on canvas",
-    "institution": "Uffizi Gallery",
-    "license": "PD-Art",
-    "tradition": "baroque",
-    "themes": [
-      "courage",
-      "justice",
-      "vengeance"
-    ],
-    "pairedBooks": [
-      "paradise-lost",
-      "antigone"
-    ],
-    "era": "17th-century",
-    "mood": "fierce",
-    "caption": "Gentileschi's unflinching depiction is one of the most powerful images of female agency in Western art.",
-    "filename": "judith-beheading-holofernes.jpg",
-    "src": "/paintings/judith-beheading-holofernes.jpg",
-    "imageUrl": "",
-    "sourceUrl": ""
-  },
-  {
     "id": "tower-of-babel",
     "title": "The Tower of Babel",
     "artist": "Pieter Bruegel the Elder",
@@ -1135,32 +1108,6 @@
     "caption": "Waterhouse depicts Tennyson's cursed Lady setting forth on her final voyage toward Camelot and death.",
     "filename": "lady-of-shalott.jpg",
     "src": "/paintings/lady-of-shalott.jpg",
-    "imageUrl": "",
-    "sourceUrl": ""
-  },
-  {
-    "id": "miranda-the-tempest",
-    "title": "Miranda — The Tempest",
-    "artist": "John William Waterhouse",
-    "year": "1916",
-    "focalPoint": "center",
-    "medium": "Oil on canvas",
-    "institution": "Private collection",
-    "license": "PD-Art",
-    "tradition": "pre-raphaelite",
-    "themes": [
-      "storm",
-      "innocence",
-      "wonder"
-    ],
-    "pairedBooks": [
-      "the-tempest"
-    ],
-    "era": "20th-century",
-    "mood": "wistful",
-    "caption": "Waterhouse's Miranda gazes out at the shipwreck her father Prospero has conjured, full of pity and awe.",
-    "filename": "miranda-the-tempest.jpg",
-    "src": "/paintings/miranda-the-tempest.jpg",
     "imageUrl": "",
     "sourceUrl": ""
   },
@@ -1427,59 +1374,6 @@
     "sourceUrl": ""
   },
   {
-    "id": "kindred-spirits",
-    "title": "Kindred Spirits",
-    "artist": "Asher Brown Durand",
-    "year": "1849",
-    "focalPoint": "center",
-    "medium": "Oil on canvas",
-    "institution": "Crystal Bridges Museum",
-    "license": "PD-Art",
-    "tradition": "hudson-river-school",
-    "themes": [
-      "friendship",
-      "nature",
-      "art"
-    ],
-    "pairedBooks": [
-      "walden",
-      "leaves-of-grass"
-    ],
-    "era": "19th-century",
-    "mood": "pastoral",
-    "caption": "Durand memorializes the friendship of Thomas Cole and William Cullen Bryant in an idealized Catskill gorge.",
-    "filename": "kindred-spirits.jpg",
-    "src": "/paintings/kindred-spirits.jpg",
-    "imageUrl": "",
-    "sourceUrl": ""
-  },
-  {
-    "id": "twilight-in-wilderness",
-    "title": "Twilight in the Wilderness",
-    "artist": "Frederic Edwin Church",
-    "year": "1860",
-    "focalPoint": "center",
-    "medium": "Oil on canvas",
-    "institution": "Cleveland Museum of Art",
-    "license": "PD-Art",
-    "tradition": "hudson-river-school",
-    "themes": [
-      "wilderness",
-      "twilight",
-      "transcendence"
-    ],
-    "pairedBooks": [
-      "walden"
-    ],
-    "era": "19th-century",
-    "mood": "sublime",
-    "caption": "Church's incandescent sunset over the American wilderness served as a visual hymn on the eve of civil war.",
-    "filename": "twilight-in-wilderness.jpg",
-    "src": "/paintings/twilight-in-wilderness.jpg",
-    "imageUrl": "",
-    "sourceUrl": ""
-  },
-  {
     "id": "among-sierra-nevada",
     "title": "Among the Sierra Nevada, California",
     "artist": "Albert Bierstadt",
@@ -1614,33 +1508,6 @@
     "sourceUrl": ""
   },
   {
-    "id": "oedipus-and-sphinx",
-    "title": "Oedipus and the Sphinx",
-    "artist": "Gustave Moreau",
-    "year": "1864",
-    "focalPoint": "center",
-    "medium": "Oil on canvas",
-    "institution": "Metropolitan Museum of Art",
-    "license": "CC0",
-    "tradition": "symbolist",
-    "themes": [
-      "riddle",
-      "fate",
-      "knowledge"
-    ],
-    "pairedBooks": [
-      "oedipus-rex",
-      "the-odyssey"
-    ],
-    "era": "19th-century",
-    "mood": "enigmatic",
-    "caption": "Moreau transforms the mythic confrontation into an eerie, jewel-toned encounter between intellect and instinct.",
-    "filename": "oedipus-and-sphinx.jpg",
-    "src": "/paintings/oedipus-and-sphinx.jpg",
-    "imageUrl": "",
-    "sourceUrl": ""
-  },
-  {
     "id": "ambassadors",
     "title": "The Ambassadors",
     "artist": "Hans Holbein the Younger",
@@ -1720,33 +1587,6 @@
     "sourceUrl": ""
   },
   {
-    "id": "psyche-opening-golden-box",
-    "title": "Psyche Opening the Golden Box",
-    "artist": "John William Waterhouse",
-    "year": "1903",
-    "focalPoint": "center",
-    "medium": "Oil on canvas",
-    "institution": "Private collection",
-    "license": "PD-Art",
-    "tradition": "pre-raphaelite",
-    "themes": [
-      "curiosity",
-      "myth",
-      "beauty"
-    ],
-    "pairedBooks": [
-      "metamorphoses",
-      "the-odyssey"
-    ],
-    "era": "19th-century",
-    "mood": "enchanted",
-    "caption": "Waterhouse depicts Psyche's fateful moment of curiosity as she opens the box from Persephone's underworld.",
-    "filename": "psyche-opening-golden-box.jpg",
-    "src": "/paintings/psyche-opening-golden-box.jpg",
-    "imageUrl": "",
-    "sourceUrl": ""
-  },
-  {
     "id": "return-of-persephone",
     "title": "The Return of Persephone",
     "artist": "Frederic Leighton",
@@ -1770,33 +1610,6 @@
     "caption": "Leighton's luminous canvas shows Hermes returning Persephone from the underworld to her waiting mother Demeter.",
     "filename": "return-of-persephone.jpg",
     "src": "/paintings/return-of-persephone.jpg",
-    "imageUrl": "",
-    "sourceUrl": ""
-  },
-  {
-    "id": "orpheus-leading-eurydice",
-    "title": "Orpheus Leading Eurydice from the Underworld",
-    "artist": "Jean-Baptiste-Camille Corot",
-    "year": "1861",
-    "focalPoint": "center",
-    "medium": "Oil on canvas",
-    "institution": "Museum of Fine Arts, Houston",
-    "license": "PD-Art",
-    "tradition": "romantic",
-    "themes": [
-      "love",
-      "loss",
-      "underworld"
-    ],
-    "pairedBooks": [
-      "metamorphoses",
-      "the-divine-comedy"
-    ],
-    "era": "19th-century",
-    "mood": "melancholic",
-    "caption": "Corot bathes the myth of Orpheus in silvery light as the musician leads his beloved from Hades.",
-    "filename": "orpheus-leading-eurydice.jpg",
-    "src": "/paintings/orpheus-leading-eurydice.jpg",
     "imageUrl": "",
     "sourceUrl": ""
   }
