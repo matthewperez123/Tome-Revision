@@ -688,7 +688,7 @@ The novel has been challenged and removed from curricula for generations, and th
       "The secret of getting ahead is getting started.",
     ],
     bookAuthorNames: ["Mark Twain", "Samuel Clemens", "Samuel L. Clemens"],
-    worksInLibrary: ["adventures-of-huckleberry-finn", "the-adventures-of-tom-sawyer"],
+    worksInLibrary: ["the-adventures-of-huckleberry-finn", "the-adventures-of-tom-sawyer"],
     portraitPlaceholder: "linear-gradient(135deg, #14532D, #166534)",
   },
 

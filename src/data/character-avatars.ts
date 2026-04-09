@@ -628,8 +628,8 @@ export const BOOK_CHARACTERS: BookCharacter[] = [
   {
     id: "huck-finn",
     name: "Huckleberry Finn",
-    bookId: "adventures-of-huckleberry-finn",
-    bookTitle: "Adventures of Huckleberry Finn",
+    bookId: "the-adventures-of-huckleberry-finn",
+    bookTitle: "The Adventures of Huckleberry Finn",
     description: "The barefoot boy on the raft who chose humanity over what he'd been taught was right.",
     rarity: "Uncommon",
     accentColor: "#F97316",
