@@ -17,12 +17,15 @@ interface StoaPaintingSelectorProps {
 export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelectorProps) {
   const [open, setOpen] = useState(false)
   const [query, setQuery] = useState("")
+  const [mounted, setMounted] = useState(false)
   const triggerRef = useRef<HTMLButtonElement>(null)
   const panelRef = useRef<HTMLDivElement>(null)
   const gridRef = useRef<HTMLDivElement>(null)
   const searchRef = useRef<HTMLInputElement>(null)
   const [focusIndex, setFocusIndex] = useState(-1)
-  const [panelPos, setPanelPos] = useState<{ top: number; left: number; maxHeight: number } | null>(null)
+  const [panelPos, setPanelPos] = useState<{ top: number; left: number; maxH: number }>({ top: 0, left: 0, maxH: 380 })
+
+  useEffect(() => { setMounted(true) }, [])
 
   // Filter paintings by search query
   const filtered = useMemo(() => {
@@ -36,33 +39,30 @@ export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelec
   // Position the panel centered over the Stoa banner when opening
   useEffect(() => {
     if (!open || !triggerRef.current) return
-    // Find the Stoa banner container (closest relative parent with aspect ratio)
     const stoa = triggerRef.current.closest("[role='img']") as HTMLElement | null
     if (!stoa) return
     const rect = stoa.getBoundingClientRect()
-    // Center the panel both horizontally and vertically in the Stoa
     const panelWidth = 280
-    const panelHeight = Math.min(400, rect.height - 24) // fit within banner
+    const maxH = Math.min(380, rect.height - 16)
     setPanelPos({
-      top: rect.top + (rect.height - panelHeight) / 2,
+      top: rect.top + (rect.height - maxH) / 2,
       left: rect.left + rect.width / 2 - panelWidth / 2,
-      maxHeight: panelHeight,
+      maxH,
     })
     setQuery("")
     setFocusIndex(-1)
     requestAnimationFrame(() => searchRef.current?.focus())
   }, [open])
 
-  // Reset focus index when filter results change
-  useEffect(() => {
-    setFocusIndex(-1)
-  }, [query])
+  useEffect(() => { setFocusIndex(-1) }, [query])
 
   // Close on outside click
   useEffect(() => {
     if (!open) return
     function handleClick(e: MouseEvent) {
-      const target = e.target as Node
+      const target = e.target as HTMLElement
+      // Don't close if clicking the theme toggle or any button in the top bar
+      if (target.closest?.("[aria-label='Switch to light mode'], [aria-label='Switch to dark mode']")) return
       if (
         panelRef.current && !panelRef.current.contains(target) &&
         triggerRef.current && !triggerRef.current.contains(target)
@@ -91,7 +91,6 @@ export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelec
       const total = filtered.length
       if (total === 0) return
       let next = focusIndex
-
       switch (e.key) {
         case "ArrowRight": next = Math.min(focusIndex + 1, total - 1); break
         case "ArrowLeft": next = Math.max(focusIndex - 1, 0); break
@@ -113,141 +112,11 @@ export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelec
     [focusIndex, filtered, onSelect]
   )
 
-  // Focus the correct thumbnail when focusIndex changes
   useEffect(() => {
     if (!open || focusIndex < 0) return
     const btn = gridRef.current?.children[focusIndex] as HTMLButtonElement | undefined
     btn?.focus()
   }, [focusIndex, open])
-
-  const panel = open && panelPos && createPortal(
-    <motion.div
-      ref={panelRef}
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.95 }}
-      transition={{ duration: 0.15, ease: "easeOut" }}
-      role="dialog"
-      aria-label="Select a painting"
-      className={cn(
-        "fixed z-[100]",
-        "w-[280px] rounded-xl",
-        "bg-white dark:bg-[#1A1A1A]/95",
-        "border border-stone-200 dark:border-[#D4A04C]/15",
-        "shadow-2xl shadow-black/20 dark:shadow-black/40",
-        "backdrop-blur-xl",
-        "flex flex-col"
-      )}
-      style={{ top: panelPos.top, left: panelPos.left, maxHeight: panelPos.maxHeight }}
-    >
-      {/* Header */}
-      <div className="flex items-center justify-between px-3 pt-3 pb-1.5">
-        <p className="text-[11px] font-semibold tracking-wide uppercase text-stone-500 dark:text-[#B0A898] flex-1 text-center">
-          Choose painting
-        </p>
-        <button
-          onClick={() => setOpen(false)}
-          className={cn(
-            "flex items-center justify-center size-6 rounded-md transition-colors",
-            "text-stone-400 hover:text-stone-600 hover:bg-stone-100",
-            "dark:text-white/40 dark:hover:text-white/70 dark:hover:bg-white/5"
-          )}
-          aria-label="Close"
-        >
-          <X className="size-3.5" />
-        </button>
-      </div>
-
-      {/* Search bar */}
-      <div className="px-3 pb-2">
-        <div className="relative">
-          <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 size-3.5 pointer-events-none text-stone-400 dark:text-white/30" />
-          <Input
-            ref={searchRef}
-            type="text"
-            placeholder="Search title or artist…"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            className={cn(
-              "pl-8 h-7 text-xs",
-              "bg-stone-50 border-stone-200 placeholder:text-stone-400",
-              "dark:bg-white/5 dark:border-white/10 dark:placeholder:text-white/30 dark:text-white"
-            )}
-          />
-        </div>
-      </div>
-
-      {/* Scrollable grid */}
-      <div
-        className={cn(
-          "overflow-y-auto overscroll-contain px-3 pb-3",
-          "scrollbar-thin",
-          "scrollbar-thumb-stone-300 scrollbar-track-stone-100",
-          "dark:scrollbar-thumb-white/15 dark:scrollbar-track-transparent"
-        )}
-        style={{ flex: "1 1 0", minHeight: 0 }}
-      >
-        {filtered.length === 0 ? (
-          <div className="flex items-center justify-center py-8 text-xs text-stone-400 dark:text-white/30">
-            No paintings match your search
-          </div>
-        ) : (
-          <div
-            ref={gridRef}
-            className="grid grid-cols-4 gap-1"
-            role="listbox"
-            aria-label="Paintings"
-            onKeyDown={handleGridKeyDown}
-          >
-            {filtered.map((painting, i) => {
-              const isSelected = painting.id === selectedId
-              return (
-                <button
-                  key={painting.id}
-                  role="option"
-                  aria-selected={isSelected}
-                  aria-label={`${painting.title} by ${painting.artist}`}
-                  tabIndex={0}
-                  onClick={() => { onSelect(painting); setOpen(false) }}
-                  onFocus={() => setFocusIndex(i)}
-                  className={cn(
-                    "group relative aspect-square rounded-lg overflow-hidden transition-all duration-150",
-                    "ring-1 ring-inset",
-                    "ring-stone-200 hover:ring-[#D4A04C]/50",
-                    "dark:ring-white/5 dark:hover:ring-[#D4A04C]/40",
-                    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4A04C]/60",
-                    isSelected && "ring-2 ring-[#D4A04C]/70 dark:ring-[#D4A04C]/60"
-                  )}
-                >
-                  <Image
-                    src={painting.src}
-                    alt={painting.title}
-                    fill
-                    className="object-cover"
-                    sizes="65px"
-                    unoptimized
-                  />
-                  {/* Hover tooltip */}
-                  <div className="absolute inset-x-0 bottom-0 p-1 opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-t from-black/70 to-transparent">
-                    <p className="text-[8px] text-white/90 leading-tight truncate font-medium">{painting.title}</p>
-                  </div>
-                  {/* Selected checkmark */}
-                  {isSelected && (
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-                      <div className="flex items-center justify-center size-5 rounded-full bg-[#D4A04C] shadow-md">
-                        <Check className="size-3 text-white" />
-                      </div>
-                    </div>
-                  )}
-                </button>
-              )
-            })}
-          </div>
-        )}
-      </div>
-    </motion.div>,
-    document.body
-  )
 
   return (
     <>
@@ -267,10 +136,132 @@ export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelec
         <Palette className="size-4" />
       </button>
 
-      {/* Panel rendered via portal to escape overflow:hidden */}
-      <AnimatePresence>
-        {panel}
-      </AnimatePresence>
+      {/* Portal-rendered panel to escape overflow:hidden on the Stoa */}
+      {mounted && open && createPortal(
+        <div
+          ref={panelRef}
+          role="dialog"
+          aria-label="Select a painting"
+          className={cn(
+            "fixed z-[100]",
+            "w-[280px] rounded-xl",
+            "bg-white dark:bg-[#1A1A1A]/95",
+            "border border-stone-200 dark:border-[#D4A04C]/15",
+            "shadow-2xl shadow-black/20 dark:shadow-black/40",
+            "backdrop-blur-xl",
+            "flex flex-col",
+            "animate-in fade-in zoom-in-95 duration-150"
+          )}
+          style={{ top: panelPos.top, left: panelPos.left, maxHeight: panelPos.maxH }}
+        >
+          {/* Header */}
+          <div className="flex items-center justify-between px-3 pt-3 pb-1.5">
+            <p className="text-[11px] font-semibold tracking-wide uppercase text-stone-500 dark:text-[#B0A898] flex-1 text-center">
+              Choose painting
+            </p>
+            <button
+              onClick={() => setOpen(false)}
+              className={cn(
+                "flex items-center justify-center size-6 rounded-md transition-colors",
+                "text-stone-400 hover:text-stone-600 hover:bg-stone-100",
+                "dark:text-white/40 dark:hover:text-white/70 dark:hover:bg-white/5"
+              )}
+              aria-label="Close"
+            >
+              <X className="size-3.5" />
+            </button>
+          </div>
+
+          {/* Search bar */}
+          <div className="px-3 pb-2">
+            <div className="relative">
+              <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 size-3.5 pointer-events-none text-stone-400 dark:text-white/30" />
+              <Input
+                ref={searchRef}
+                type="text"
+                placeholder="Search title or artist…"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                className={cn(
+                  "pl-8 h-7 text-xs",
+                  "bg-stone-50 border-stone-200 placeholder:text-stone-400",
+                  "dark:bg-white/5 dark:border-white/10 dark:placeholder:text-white/30 dark:text-white"
+                )}
+              />
+            </div>
+          </div>
+
+          {/* Scrollable grid */}
+          <div
+            className={cn(
+              "flex-1 min-h-0 overflow-y-auto overscroll-contain px-3 pb-3",
+              "[&::-webkit-scrollbar]:w-1.5",
+              "[&::-webkit-scrollbar-track]:bg-transparent",
+              "[&::-webkit-scrollbar-thumb]:rounded-full",
+              "[&::-webkit-scrollbar-thumb]:bg-stone-300 dark:[&::-webkit-scrollbar-thumb]:bg-white/15"
+            )}
+          >
+            {filtered.length === 0 ? (
+              <div className="flex items-center justify-center py-8 text-xs text-stone-400 dark:text-white/30">
+                No paintings match your search
+              </div>
+            ) : (
+              <div
+                ref={gridRef}
+                className="grid grid-cols-4 gap-1"
+                role="listbox"
+                aria-label="Paintings"
+                onKeyDown={handleGridKeyDown}
+              >
+                {filtered.map((painting, i) => {
+                  const isSelected = painting.id === selectedId
+                  return (
+                    <button
+                      key={painting.id}
+                      role="option"
+                      aria-selected={isSelected}
+                      aria-label={`${painting.title} by ${painting.artist}`}
+                      tabIndex={0}
+                      onClick={() => { onSelect(painting); setOpen(false) }}
+                      onFocus={() => setFocusIndex(i)}
+                      className={cn(
+                        "group relative aspect-square rounded-lg overflow-hidden transition-all duration-150",
+                        "ring-1 ring-inset",
+                        "ring-stone-200 hover:ring-[#D4A04C]/50",
+                        "dark:ring-white/5 dark:hover:ring-[#D4A04C]/40",
+                        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4A04C]/60",
+                        isSelected && "ring-2 ring-[#D4A04C]/70 dark:ring-[#D4A04C]/60"
+                      )}
+                    >
+                      <Image
+                        src={painting.src}
+                        alt={painting.title}
+                        fill
+                        className="object-cover"
+                        sizes="65px"
+                        unoptimized
+                      />
+                      {/* Hover tooltip */}
+                      <div className="absolute inset-x-0 bottom-0 p-1 opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-t from-black/70 to-transparent">
+                        <p className="text-[8px] text-white/90 leading-tight truncate font-medium">{painting.title}</p>
+                      </div>
+                      {/* Selected checkmark */}
+                      {isSelected && (
+                        <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+                          <div className="flex items-center justify-center size-5 rounded-full bg-[#D4A04C] shadow-md">
+                            <Check className="size-3 text-white" />
+                          </div>
+                        </div>
+                      )}
+                    </button>
+                  )
+                })}
+              </div>
+            )}
+          </div>
+        </div>,
+        document.body
+      )}
     </>
   )
 }
