@@ -40,7 +40,6 @@ import { useBookProgress } from "@/components/tome/book-progress-provider"
 import { useEconomy } from "@/components/tome/economy-provider"
 // ReadingModeModal removed — users go straight to reading
 import { ChapterQuizOverlay } from "@/components/tome/chapter-quiz-overlay"
-import { FreeModeBanner } from "@/components/tome/free-mode-banner"
 import { PaginatedReader } from "@/components/tome/paginated-reader"
 import { getQuestionsForChapter } from "@/lib/chapter-questions"
 import { isChapterLocked } from "@/lib/book-progress"
@@ -389,9 +388,6 @@ export default function ReaderPage() {
     if (!isLastChapter) setTimeout(() => handleChapterSelect(currentChapter + 1), 300)
   }, [bookId, currentChapter, chapters, dispatchEconomy, completeChapter, saveQuizResult, handleChapterSelect])
 
-  const handleSwitchToGuided = useCallback(() => {
-    setMode(bookId, "guided")
-  }, [bookId, setMode])
 
   // Keyboard navigation (scroll mode only — PaginatedReader owns keyboard in capture phase)
   useEffect(() => {
@@ -466,11 +462,6 @@ export default function ReaderPage() {
 
   return (
     <WordTooltipProvider>
-      {/* Free Mode Banner */}
-      {readingMode === "free" && (
-        <FreeModeBanner onSwitchToGuided={handleSwitchToGuided} />
-      )}
-
       {/* Quiz Overlay */}
       {book && (
         <ChapterQuizOverlay

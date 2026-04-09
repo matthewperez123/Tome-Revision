@@ -1,7 +1,8 @@
 "use client"
 
-import { BookOpen, ChevronLeft, ChevronRight, Lock, CheckCircle2, FileText, ScrollText, BookMarked } from "lucide-react"
-import { motion } from "framer-motion"
+import { useState } from "react"
+import { BookOpen, ChevronLeft, ChevronRight, ChevronDown, Lock, CheckCircle2, FileText, ScrollText, BookMarked, FolderOpen, Folder } from "lucide-react"
+import { motion, AnimatePresence } from "framer-motion"
 import { springs } from "@/lib/design-tokens"
 import { cn } from "@/lib/utils"
 
@@ -13,14 +14,51 @@ const FRONT_MATTER_KEYWORDS = [
   "preface", "introduction", "introductory", "foreword", "dedication",
   "prologue", "epigraph", "letter", "note to", "author's note",
   "translator's", "dramatis personae", "the story", "frontispiece",
-  "acknowledgment", "our raison",
+  "acknowledgment", "our raison", "characters in the play",
 ]
 
 const BACK_MATTER_KEYWORDS = [
-  "epilogue", "afterword", "appendix", "conclusion", "postscript",
-  "notes", "endnotes", "glossary", "bibliography", "colophon",
-  "three notes",
+  "afterword", "appendix", "postscript",
+  "endnotes", "glossary", "bibliography", "colophon",
 ]
+
+// Patterns that indicate a structural container (not a leaf chapter)
+const CONTAINER_PATTERNS = [
+  /^(part|book|volume|act|division|section)\s+[ivxlcdm\d]+/i,
+  /^(part|book|volume|act)\s+(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)/i,
+  /^(first|second|third|fourth|fifth)\s+(part|book|volume|act|epilogue)/i,
+  /^(part|book|volume)\s*:/i,
+  /^epilogue$/i,
+  /^(first|second|third)\s+epilogue/i,
+]
+
+// Patterns for scene-level items (nest under acts)
+const SCENE_PATTERNS = [
+  /^scene\s+[ivxlcdm\d]+/i,
+  /^scene\s+(one|two|three|four|five|six|seven|eight|nine|ten)/i,
+]
+
+function isContainerTitle(title: string): boolean {
+  const t = title.trim()
+  return CONTAINER_PATTERNS.some(p => p.test(t))
+}
+
+// Level 1 containers: Book, Volume (top-level grouping)
+const LEVEL1_PATTERNS = [
+  /^(book|volume)\s+[ivxlcdm\d]+/i,
+  /^(book|volume)\s+(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)/i,
+  /^(first|second|third|fourth|fifth)\s+(book|volume)/i,
+  /^(book|volume)\s*:/i,
+]
+
+function isLevel1Container(title: string): boolean {
+  return LEVEL1_PATTERNS.some(p => p.test(title.trim()))
+}
+
+function isSceneTitle(title: string): boolean {
+  const t = title.trim()
+  return SCENE_PATTERNS.some(p => p.test(t))
+}
 
 export function classifyChapter(title: string): ChapterType {
   const lower = title.toLowerCase().trim()
@@ -43,6 +81,124 @@ function getChapterTypeLabel(type: ChapterType): string {
     case "chapter": return "Chapters"
     case "back-matter": return "Back Matter"
   }
+}
+
+// ── Tree node types ──
+
+interface LeafNode {
+  kind: "leaf"
+  index: number
+  title: string
+  type: ChapterType
+}
+
+interface ContainerNode {
+  kind: "container"
+  index: number
+  title: string
+  children: (LeafNode | ContainerNode)[]
+}
+
+type TOCNode = LeafNode | ContainerNode
+
+// ── Build a two-level tree from flat chapter list ──
+
+function buildTOCTree(chapters: string[]): { frontMatter: LeafNode[]; body: TOCNode[]; backMatter: LeafNode[] } {
+  const frontMatter: LeafNode[] = []
+  const backMatter: LeafNode[] = []
+  const body: TOCNode[] = []
+  let inBackMatter = false
+
+  // First pass: identify containers that have actual content after them
+  // A level-1 (Book/Volume) can contain level-2 (Part/Act) containers
+  // A level-2 can contain leaf chapters
+  const containerIndices = new Set<number>()
+  for (let i = 0; i < chapters.length; i++) {
+    if (!isContainerTitle(chapters[i])) continue
+    const amL1 = isLevel1Container(chapters[i])
+    for (let j = i + 1; j < chapters.length; j++) {
+      if (classifyChapter(chapters[j]) === "back-matter") break
+      if (isContainerTitle(chapters[j])) {
+        // L1 container can contain L2 containers as children
+        if (amL1 && !isLevel1Container(chapters[j])) {
+          containerIndices.add(i)
+          break
+        }
+        // Same-level container means this one ends — check if anything was found
+        break
+      }
+      // Found a non-container child → this is a real container
+      containerIndices.add(i)
+      break
+    }
+  }
+
+  let level1: ContainerNode | null = null  // Book / Volume
+  let level2: ContainerNode | null = null  // Part / Act / Section
+
+  chapters.forEach((title, i) => {
+    const type = classifyChapter(title)
+
+    // Front matter (only before body starts)
+    if (type === "front-matter" && body.length === 0 && !level1 && !level2) {
+      frontMatter.push({ kind: "leaf", index: i, title, type })
+      return
+    }
+
+    // Back matter
+    if (type === "back-matter") {
+      inBackMatter = true
+      level1 = null
+      level2 = null
+      backMatter.push({ kind: "leaf", index: i, title, type })
+      return
+    }
+    if (inBackMatter) {
+      backMatter.push({ kind: "leaf", index: i, title, type })
+      return
+    }
+
+    const isReal = containerIndices.has(i)
+    const isL1 = isLevel1Container(title)
+
+    // Level-1 container with children (Book, Volume)
+    if (isReal && isL1) {
+      level1 = { kind: "container", index: i, title, children: [] }
+      level2 = null
+      body.push(level1)
+      return
+    }
+
+    // Level-2 container with children (Part, Act, Section)
+    if (isReal && !isL1) {
+      level2 = { kind: "container", index: i, title, children: [] }
+      if (level1) {
+        level1.children.push(level2)
+      } else {
+        body.push(level2)
+      }
+      return
+    }
+
+    // Container title WITHOUT children → render as leaf
+    if (isContainerTitle(title) && !isReal) {
+      // A childless L1 resets both levels
+      if (isL1) { level1 = null; level2 = null }
+      else { level2 = null }
+      const leaf: LeafNode = { kind: "leaf", index: i, title, type }
+      if (level1 && !isL1) level1.children.push(leaf)
+      else { level1 = null; level2 = null; body.push(leaf) }
+      return
+    }
+
+    // Regular leaf chapter — nest in deepest container
+    const leaf: LeafNode = { kind: "leaf", index: i, title, type }
+    if (level2) level2.children.push(leaf)
+    else if (level1) level1.children.push(leaf)
+    else body.push(leaf)
+  })
+
+  return { frontMatter, body, backMatter }
 }
 
 // ── Types ──
@@ -70,20 +226,168 @@ export function ChapterSidebar({
   lockedChapterIndices = [],
   completedChapterIndices = [],
 }: ChapterSidebarProps) {
-  // Classify all chapters into contiguous groups
-  const groups: { type: ChapterType; label: string; chapters: { index: number; title: string }[] }[] = []
-  let currentGroup: (typeof groups)[number] | null = null
+  const { frontMatter, body, backMatter } = buildTOCTree(chapters)
 
-  chapters.forEach((title, i) => {
-    const type = classifyChapter(title)
-    if (!currentGroup || currentGroup.type !== type) {
-      currentGroup = { type, label: getChapterTypeLabel(type), chapters: [] }
-      groups.push(currentGroup)
+  // Track which containers are expanded — auto-expand the one containing the current chapter
+  const [expandedContainers, setExpandedContainers] = useState<Set<number>>(() => {
+    const set = new Set<number>()
+    // Recursively find and expand all containers that hold the current chapter
+    function expandAncestors(nodes: TOCNode[]) {
+      for (const node of nodes) {
+        if (node.kind !== "container") continue
+        function hasChapter(n: ContainerNode): boolean {
+          return n.children.some(c =>
+            c.kind === "leaf" ? c.index === currentChapter :
+            c.index === currentChapter || hasChapter(c)
+          )
+        }
+        if (node.index === currentChapter || hasChapter(node)) {
+          set.add(node.index)
+          // Also expand nested containers
+          node.children.forEach(c => { if (c.kind === "container") expandAncestors([c]) })
+        }
+      }
     }
-    currentGroup.chapters.push({ index: i, title })
+    expandAncestors(body)
+    return set
   })
 
-  const hasMultipleGroups = groups.length > 1
+  function toggleContainer(containerIndex: number) {
+    setExpandedContainers(prev => {
+      const next = new Set(prev)
+      if (next.has(containerIndex)) next.delete(containerIndex)
+      else next.add(containerIndex)
+      return next
+    })
+  }
+
+  // Auto-expand the container of the current chapter when it changes
+  // (handled by initialState above + key mechanism below is simpler: just check on render)
+
+  const hasGroups = frontMatter.length > 0 || backMatter.length > 0
+  const hasContainers = body.some(n => n.kind === "container")
+
+  function renderLeaf(leaf: LeafNode, numberInGroup?: number) {
+    const isActive = leaf.index === currentChapter
+    const isLocked = lockedChapterIndices.includes(leaf.index)
+    const isCompleted = completedChapterIndices.includes(leaf.index)
+    const Icon = getChapterTypeIcon(leaf.type)
+
+    return (
+      <button
+        key={leaf.index}
+        onClick={() => !isLocked && onSelect(leaf.index)}
+        aria-disabled={isLocked ? "true" : undefined}
+        title={isLocked ? "Complete the previous chapter's trial to unlock" : undefined}
+        className={cn(
+          "relative flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs transition-[color,opacity] duration-[var(--tome-duration-fast)]",
+          isActive
+            ? "text-foreground font-medium"
+            : "text-muted-foreground hover:text-foreground hover:opacity-70",
+          isLocked && "pointer-events-none opacity-40"
+        )}
+      >
+        {/* Active indicator */}
+        {isActive && (
+          <motion.div
+            layoutId="chapter-indicator"
+            className="absolute left-0 top-1 bottom-1 w-0.5 rounded-full bg-foreground"
+            transition={springs.interactive}
+          />
+        )}
+        {isLocked ? (
+          <Lock className="size-3 shrink-0" />
+        ) : isCompleted && !isActive ? (
+          <CheckCircle2 className="size-3 shrink-0 text-emerald-500" />
+        ) : leaf.type !== "chapter" ? (
+          <Icon className={cn("size-3 shrink-0", isActive ? "text-foreground" : "text-muted-foreground")} />
+        ) : numberInGroup != null ? (
+          <span
+            className={cn(
+              "size-4 shrink-0 flex items-center justify-center rounded text-[9px] tabular-nums",
+              isActive
+                ? "bg-foreground text-background font-semibold"
+                : "bg-muted text-muted-foreground"
+            )}
+          >
+            {numberInGroup}
+          </span>
+        ) : (
+          <Icon className={cn("size-3 shrink-0", isActive ? "text-foreground" : "text-muted-foreground")} />
+        )}
+        <span className="truncate">{leaf.title}</span>
+      </button>
+    )
+  }
+
+  function renderContainer(node: ContainerNode) {
+    const isExpanded = expandedContainers.has(node.index)
+    // Check recursively if any descendant is the current chapter
+    function containsCurrentChapter(n: ContainerNode): boolean {
+      if (n.index === currentChapter) return true
+      return n.children.some(c => c.kind === "container" ? containsCurrentChapter(c) : c.index === currentChapter)
+    }
+    const containsCurrent = containsCurrentChapter(node)
+    // Check if all leaf descendants are completed
+    function allLeavesCompleted(n: ContainerNode): boolean {
+      return n.children.every(c => c.kind === "container" ? allLeavesCompleted(c) : completedChapterIndices.includes(c.index))
+    }
+    const allCompleted = node.children.length > 0 && allLeavesCompleted(node)
+
+    return (
+      <div key={node.index} className="mb-1">
+        {/* Container header — clickable to expand/collapse */}
+        <button
+          onClick={() => toggleContainer(node.index)}
+          className={cn(
+            "flex w-full items-center gap-1.5 rounded-md px-2 py-1.5 text-left text-xs font-medium transition-colors",
+            containsCurrent
+              ? "text-foreground"
+              : "text-muted-foreground hover:text-foreground"
+          )}
+        >
+          <ChevronDown
+            className={cn(
+              "size-3 shrink-0 transition-transform duration-150",
+              !isExpanded && "-rotate-90"
+            )}
+          />
+          {allCompleted ? (
+            <CheckCircle2 className="size-3 shrink-0 text-emerald-500" />
+          ) : isExpanded ? (
+            <FolderOpen className="size-3 shrink-0 text-[var(--tome-accent)]" />
+          ) : (
+            <Folder className="size-3 shrink-0" />
+          )}
+          <span className="truncate">{node.title}</span>
+          <span className="ml-auto text-[9px] text-muted-foreground/60 tabular-nums shrink-0">
+            {node.children.length}
+          </span>
+        </button>
+
+        {/* Children — collapsible */}
+        <AnimatePresence initial={false}>
+          {isExpanded && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
+              className="overflow-hidden"
+            >
+              <div className="ml-3 border-l border-border/50 pl-1 space-y-0.5">
+                {node.children.map((child, ci) =>
+                  child.kind === "container"
+                    ? renderContainer(child)
+                    : renderLeaf(child, ci + 1)
+                )}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    )
+  }
 
   return (
     <div
@@ -110,82 +414,59 @@ export function ChapterSidebar({
             <p className="text-xs font-medium truncate">{bookTitle}</p>
           </div>
 
-          {/* Chapter list with type groups */}
+          {/* Chapter list — tree structure */}
           <nav className="flex-1 overflow-y-auto">
-            {groups.map((group) => {
-              const Icon = getChapterTypeIcon(group.type)
-              return (
-                <div key={`${group.type}-${group.chapters[0]?.index}`} className="mb-3">
-                  {/* Group header — only show if multiple groups exist */}
-                  {hasMultipleGroups && (
-                    <div className="flex items-center gap-1.5 px-2 mb-1.5">
-                      <Icon className="size-3 text-muted-foreground/60" />
-                      <span className="text-[10px] font-medium text-muted-foreground/60 uppercase tracking-wider">
-                        {group.label}
-                      </span>
-                    </div>
-                  )}
-
-                  {/* Chapter items */}
-                  <div className="space-y-0.5">
-                    {group.chapters.map(({ index: i, title }) => {
-                      const isActive = i === currentChapter
-                      const isLocked = lockedChapterIndices.includes(i)
-                      const isCompleted = completedChapterIndices.includes(i)
-
-                      return (
-                        <button
-                          key={i}
-                          onClick={() => !isLocked && onSelect(i)}
-                          aria-disabled={isLocked ? "true" : undefined}
-                          title={isLocked ? "Complete the previous chapter's trial to unlock" : undefined}
-                          className={cn(
-                            "relative flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs transition-[color,opacity] duration-[var(--tome-duration-fast)]",
-                            isActive
-                              ? "text-foreground font-medium"
-                              : "text-muted-foreground hover:text-foreground hover:opacity-70",
-                            isLocked && "pointer-events-none opacity-40"
-                          )}
-                        >
-                          {/* Active indicator */}
-                          {isActive && (
-                            <motion.div
-                              layoutId="chapter-indicator"
-                              className="absolute left-0 top-1 bottom-1 w-0.5 rounded-full bg-foreground"
-                              transition={springs.interactive}
-                            />
-                          )}
-                          {isLocked ? (
-                            <Lock className="size-3 shrink-0" />
-                          ) : isCompleted && !isActive ? (
-                            <CheckCircle2 className="size-3 shrink-0 text-emerald-500" />
-                          ) : group.type !== "chapter" ? (
-                            <Icon
-                              className={cn(
-                                "size-3 shrink-0",
-                                isActive ? "text-foreground" : "text-muted-foreground"
-                              )}
-                            />
-                          ) : (
-                            <span
-                              className={cn(
-                                "size-4 shrink-0 flex items-center justify-center rounded text-[9px] tabular-nums",
-                                isActive
-                                  ? "bg-foreground text-background font-semibold"
-                                  : "bg-muted text-muted-foreground"
-                              )}
-                            >
-                              {group.chapters.findIndex(c => c.index === i) + 1}
-                            </span>
-                          )}
-                          <span className="truncate">{title}</span>
-                        </button>
-                      )
-                    })}
-                  </div>
+            {/* Front Matter section */}
+            {frontMatter.length > 0 && (hasGroups || hasContainers) && (
+              <div className="mb-3">
+                <div className="flex items-center gap-1.5 px-2 mb-1.5">
+                  <ScrollText className="size-3 text-muted-foreground/60" />
+                  <span className="text-[10px] font-medium text-muted-foreground/60 uppercase tracking-wider">
+                    Front Matter
+                  </span>
                 </div>
-              )
-            })}
+                <div className="space-y-0.5">
+                  {frontMatter.map(leaf => renderLeaf(leaf))}
+                </div>
+              </div>
+            )}
+
+            {/* Body — flat chapters or container → children tree */}
+            {body.length > 0 && (
+              <div className="mb-3">
+                {(hasGroups || hasContainers) && !hasContainers && (
+                  <div className="flex items-center gap-1.5 px-2 mb-1.5">
+                    <BookOpen className="size-3 text-muted-foreground/60" />
+                    <span className="text-[10px] font-medium text-muted-foreground/60 uppercase tracking-wider">
+                      Chapters
+                    </span>
+                  </div>
+                )}
+                <div className="space-y-0.5">
+                  {body.map((node, bi) => {
+                    if (node.kind === "container") return renderContainer(node)
+                    // Count only leaf nodes for numbering
+                    const leafIndex = body.slice(0, bi).filter(n => n.kind === "leaf").length + 1
+                    return renderLeaf(node, leafIndex)
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Back Matter section */}
+            {backMatter.length > 0 && (
+              <div className="mb-3">
+                <div className="flex items-center gap-1.5 px-2 mb-1.5">
+                  <FileText className="size-3 text-muted-foreground/60" />
+                  <span className="text-[10px] font-medium text-muted-foreground/60 uppercase tracking-wider">
+                    Back Matter
+                  </span>
+                </div>
+                <div className="space-y-0.5">
+                  {backMatter.map(leaf => renderLeaf(leaf))}
+                </div>
+              </div>
+            )}
           </nav>
 
           {/* Progress */}
