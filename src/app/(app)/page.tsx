@@ -13,6 +13,7 @@ import { BlurFade } from "@/components/ui/blur-fade"
 import { Marquee } from "@/components/ui/marquee"
 import { cn } from "@/lib/utils"
 import { isOnboardingComplete } from "@/lib/onboarding"
+import { BOOKS } from "@/data/books"
 
 // ── Painting Data ─────────────────────────────────
 
@@ -96,7 +97,7 @@ export default function LandingPage() {
           {ROW_2.map((p) => (<GalleryCard key={p.slug} card={p} />))}
         </Marquee>
         <div className="text-center mt-10 px-6">
-          <p className="text-sm text-[#787068]">793 books. 16 traditions. 3,000 years.</p>
+          <p className="text-sm text-[#787068]">{BOOKS.length.toLocaleString()} books. 16 traditions. 3,000 years.</p>
           <Link href="/library" className="inline-flex items-center gap-1.5 mt-2 text-sm text-[#D4B37A] hover:text-[#E0C48A] transition-colors">
             Browse the full library <ArrowRight className="size-3.5" />
           </Link>
@@ -112,12 +113,12 @@ export default function LandingPage() {
         </BlurFade>
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
-            { icon: BookOpen, label: "500+ Classic Texts", desc: "From Homer to Woolf. Every book parsed, annotated, and ready to read." },
+            { icon: BookOpen, label: "1,200+ Classic Texts", desc: "From Homer to Woolf. Every book parsed, annotated, and ready to read." },
             { icon: Brain, label: "AI Literary Companion", desc: "Virgil explains any passage — vocabulary, context, literary devices — on demand." },
             { icon: Target, label: "Adaptive Quizzes", desc: "Five questions per chapter across three difficulty tiers. Apprentice, Scholar, Master." },
             { icon: Flame, label: "Daily Streaks", desc: "Build a reading habit. Earn Flames for consecutive days. Freeze your streak in the Shop." },
-            { icon: Trophy, label: "21 Achievements", desc: "Seals for milestones — from your first page to reading across all 12 traditions." },
-            { icon: Globe2, label: "12 Literary Traditions", desc: "Ancient Greek to Eastern. Victorian to Modernist. Every major tradition represented." },
+            { icon: Trophy, label: "21 Achievements", desc: "Seals for milestones — from your first page to reading across all 16 traditions." },
+            { icon: Globe2, label: "16 Literary Traditions", desc: "Ancient Greek to Eastern. Victorian to Modernist. Every major tradition represented." },
             { icon: GraduationCap, label: "Classroom Mode", desc: "Teachers assign books, track progress, and use Virgil as a teaching assistant." },
             { icon: Users, label: "Leaderboards & Leagues", desc: "Compete in weekly leagues. Rise from Novice to Luminary. Top readers advance." },
             { icon: Bookmark, label: "Annotations & Bookmarks", desc: "Highlight passages, save notes, export your marginalia. Your reading journal, built in." },

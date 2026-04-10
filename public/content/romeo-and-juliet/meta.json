@@ -2,9 +2,9 @@
   "bookId": "romeo-and-juliet",
   "title": "Romeo and Juliet",
   "author": "William Shakespeare",
-  "chapterCount": 7,
-  "totalWordCount": 25958,
-  "totalMinutes": 105,
+  "chapterCount": 31,
+  "totalWords": 25829,
+  "totalEstimatedMinutes": 132,
   "chapters": [
     {
       "index": 0,
@@ -21,32 +21,176 @@
     {
       "index": 2,
       "title": "Act I",
-      "wordCount": 6025,
-      "estimatedMinutes": 24
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 3,
-      "title": "Act II",
-      "wordCount": 5734,
-      "estimatedMinutes": 23
+      "title": "Scene I",
+      "wordCount": 2001,
+      "estimatedMinutes": 10
     },
     {
       "index": 4,
-      "title": "Act III",
-      "wordCount": 6776,
-      "estimatedMinutes": 27
+      "title": "Scene II",
+      "wordCount": 850,
+      "estimatedMinutes": 4
     },
     {
       "index": 5,
-      "title": "Act IV",
-      "wordCount": 3496,
-      "estimatedMinutes": 14
+      "title": "Scene III",
+      "wordCount": 949,
+      "estimatedMinutes": 5
     },
     {
       "index": 6,
+      "title": "Scene IV",
+      "wordCount": 949,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 7,
+      "title": "Scene V",
+      "wordCount": 1274,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 8,
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 9,
+      "title": "Scene I",
+      "wordCount": 379,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 10,
+      "title": "Scene II",
+      "wordCount": 1658,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 11,
+      "title": "Scene III",
+      "wordCount": 797,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 12,
+      "title": "Scene IV",
+      "wordCount": 1754,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 13,
+      "title": "Scene V",
+      "wordCount": 706,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 14,
+      "title": "Scene VI",
+      "wordCount": 319,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 15,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 16,
+      "title": "Scene I",
+      "wordCount": 1713,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 17,
+      "title": "Scene II",
+      "wordCount": 1167,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 18,
+      "title": "Scene III",
+      "wordCount": 1455,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 19,
+      "title": "Scene IV",
+      "wordCount": 326,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 20,
+      "title": "Scene V",
+      "wordCount": 2113,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 21,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 22,
+      "title": "Scene I",
+      "wordCount": 1086,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 23,
+      "title": "Scene II",
+      "wordCount": 422,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 24,
+      "title": "Scene III",
+      "wordCount": 508,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 25,
+      "title": "Scene IV",
+      "wordCount": 281,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 26,
+      "title": "Scene V",
+      "wordCount": 1197,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 27,
       "title": "Act V",
-      "wordCount": 3688,
-      "estimatedMinutes": 15
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 28,
+      "title": "Scene I",
+      "wordCount": 727,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 29,
+      "title": "Scene II",
+      "wordCount": 255,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 30,
+      "title": "Scene III",
+      "wordCount": 2704,
+      "estimatedMinutes": 14
     }
   ]
 }

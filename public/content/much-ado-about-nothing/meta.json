@@ -2,9 +2,9 @@
   "bookId": "much-ado-about-nothing",
   "title": "Much Ado About Nothing",
   "author": "William Shakespeare",
-  "chapterCount": 6,
-  "totalWordCount": 22633,
-  "totalMinutes": 92,
+  "chapterCount": 23,
+  "totalWords": 22623,
+  "totalEstimatedMinutes": 113,
   "chapters": [
     {
       "index": 0,
@@ -15,32 +15,134 @@
     {
       "index": 1,
       "title": "Act I",
-      "wordCount": 3502,
-      "estimatedMinutes": 14
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 2,
-      "title": "Act II",
-      "wordCount": 5895,
-      "estimatedMinutes": 24
+      "title": "Scene I",
+      "wordCount": 2653,
+      "estimatedMinutes": 13
     },
     {
       "index": 3,
-      "title": "Act III",
-      "wordCount": 4738,
-      "estimatedMinutes": 19
+      "title": "Scene II",
+      "wordCount": 238,
+      "estimatedMinutes": 1
     },
     {
       "index": 4,
-      "title": "Act IV",
-      "wordCount": 3387,
-      "estimatedMinutes": 14
+      "title": "Scene III",
+      "wordCount": 609,
+      "estimatedMinutes": 3
     },
     {
       "index": 5,
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 6,
+      "title": "Scene I",
+      "wordCount": 3199,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 7,
+      "title": "Scene II",
+      "wordCount": 451,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 8,
+      "title": "Scene III",
+      "wordCount": 2243,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 9,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 10,
+      "title": "Scene I",
+      "wordCount": 973,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 11,
+      "title": "Scene II",
+      "wordCount": 1044,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 12,
+      "title": "Scene III",
+      "wordCount": 1433,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 13,
+      "title": "Scene IV",
+      "wordCount": 752,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 14,
+      "title": "Scene V",
+      "wordCount": 534,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 15,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 16,
+      "title": "Scene I",
+      "wordCount": 2708,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 17,
+      "title": "Scene II",
+      "wordCount": 677,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 18,
       "title": "Act V",
-      "wordCount": 5029,
-      "estimatedMinutes": 20
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 19,
+      "title": "Scene I",
+      "wordCount": 2809,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 20,
+      "title": "Scene II",
+      "wordCount": 819,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 21,
+      "title": "Scene III",
+      "wordCount": 241,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 22,
+      "title": "Scene IV",
+      "wordCount": 1158,
+      "estimatedMinutes": 6
     }
   ]
 }

@@ -2,9 +2,9 @@
   "bookId": "the-comedy-of-errors",
   "title": "The Comedy of Errors",
   "author": "William Shakespeare",
-  "chapterCount": 7,
-  "totalWordCount": 16817,
-  "totalMinutes": 68,
+  "chapterCount": 18,
+  "totalWords": 16807,
+  "totalEstimatedMinutes": 83,
   "chapters": [
     {
       "index": 0,
@@ -21,32 +21,98 @@
     {
       "index": 2,
       "title": "Act I",
-      "wordCount": 2181,
-      "estimatedMinutes": 9
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 3,
-      "title": "Act II",
-      "wordCount": 2945,
-      "estimatedMinutes": 12
+      "title": "Scene I",
+      "wordCount": 1226,
+      "estimatedMinutes": 6
     },
     {
       "index": 4,
-      "title": "Act III",
-      "wordCount": 3059,
-      "estimatedMinutes": 12
+      "title": "Scene II",
+      "wordCount": 953,
+      "estimatedMinutes": 5
     },
     {
       "index": 5,
-      "title": "Act IV",
-      "wordCount": 4202,
-      "estimatedMinutes": 17
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 6,
+      "title": "Scene I",
+      "wordCount": 1007,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 7,
+      "title": "Scene II",
+      "wordCount": 1936,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 8,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 9,
+      "title": "Scene I",
+      "wordCount": 1377,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 10,
+      "title": "Scene II",
+      "wordCount": 1680,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 11,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 12,
+      "title": "Scene I",
+      "wordCount": 1091,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 13,
+      "title": "Scene II",
+      "wordCount": 668,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 14,
+      "title": "Scene III",
+      "wordCount": 864,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 15,
+      "title": "Scene IV",
+      "wordCount": 1577,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 16,
       "title": "Act V",
-      "wordCount": 3792,
-      "estimatedMinutes": 15
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 17,
+      "title": "Scene I",
+      "wordCount": 3790,
+      "estimatedMinutes": 19
     }
   ]
 }

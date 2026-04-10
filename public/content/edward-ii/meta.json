@@ -2,9 +2,9 @@
   "bookId": "edward-ii",
   "title": "Edward II",
   "author": "Christopher Marlowe",
-  "chapterCount": 6,
-  "totalWordCount": 23565,
-  "totalMinutes": 94,
+  "chapterCount": 30,
+  "totalWords": 23555,
+  "totalEstimatedMinutes": 120,
   "chapters": [
     {
       "index": 0,
@@ -15,32 +15,176 @@
     {
       "index": 1,
       "title": "Act I",
-      "wordCount": 6309,
-      "estimatedMinutes": 25
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 2,
-      "title": "Act II",
-      "wordCount": 4870,
-      "estimatedMinutes": 19
+      "title": "Scene I",
+      "wordCount": 1767,
+      "estimatedMinutes": 9
     },
     {
       "index": 3,
-      "title": "Act III",
-      "wordCount": 2620,
-      "estimatedMinutes": 10
+      "title": "Scene II",
+      "wordCount": 734,
+      "estimatedMinutes": 4
     },
     {
       "index": 4,
-      "title": "Act IV",
-      "wordCount": 3488,
-      "estimatedMinutes": 14
+      "title": "Scene III",
+      "wordCount": 52,
+      "estimatedMinutes": 1
     },
     {
       "index": 5,
+      "title": "Scene IV",
+      "wordCount": 3754,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 6,
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 7,
+      "title": "Scene I",
+      "wordCount": 712,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 8,
+      "title": "Scene II",
+      "wordCount": 2308,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 9,
+      "title": "Scene III",
+      "wordCount": 255,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 10,
+      "title": "Scene IV",
+      "wordCount": 633,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 11,
+      "title": "Scene V",
+      "wordCount": 960,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 12,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 13,
+      "title": "Scene I",
+      "wordCount": 191,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 14,
+      "title": "Scene II",
+      "wordCount": 1566,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 15,
+      "title": "Scene III",
+      "wordCount": 861,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 16,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 17,
+      "title": "Scene I",
+      "wordCount": 146,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 18,
+      "title": "Scene II",
+      "wordCount": 737,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 19,
+      "title": "Scene III",
+      "wordCount": 495,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 20,
+      "title": "Scene IV",
+      "wordCount": 261,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 21,
+      "title": "Scene V",
+      "wordCount": 802,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 22,
+      "title": "Scene VI",
+      "wordCount": 1045,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 23,
       "title": "Act V",
-      "wordCount": 6179,
-      "estimatedMinutes": 25
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 24,
+      "title": "Scene I",
+      "wordCount": 1347,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 25,
+      "title": "Scene II",
+      "wordCount": 1118,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 26,
+      "title": "Scene III",
+      "wordCount": 597,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 27,
+      "title": "Scene IV",
+      "wordCount": 1047,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 28,
+      "title": "Scene V",
+      "wordCount": 1079,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 29,
+      "title": "Scene VI",
+      "wordCount": 989,
+      "estimatedMinutes": 5
     }
   ]
 }

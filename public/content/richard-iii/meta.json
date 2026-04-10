@@ -2,9 +2,9 @@
   "bookId": "richard-iii",
   "title": "Richard III",
   "author": "William Shakespeare",
-  "chapterCount": 6,
-  "totalWordCount": 31343,
-  "totalMinutes": 125,
+  "chapterCount": 31,
+  "totalWords": 31333,
+  "totalEstimatedMinutes": 156,
   "chapters": [
     {
       "index": 0,
@@ -15,32 +15,182 @@
     {
       "index": 1,
       "title": "Act I",
-      "wordCount": 8982,
-      "estimatedMinutes": 36
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 2,
-      "title": "Act II",
-      "wordCount": 3647,
-      "estimatedMinutes": 15
+      "title": "Scene I",
+      "wordCount": 1316,
+      "estimatedMinutes": 7
     },
     {
       "index": 3,
-      "title": "Act III",
-      "wordCount": 7049,
-      "estimatedMinutes": 28
+      "title": "Scene II",
+      "wordCount": 2221,
+      "estimatedMinutes": 11
     },
     {
       "index": 4,
-      "title": "Act IV",
-      "wordCount": 7350,
-      "estimatedMinutes": 29
+      "title": "Scene III",
+      "wordCount": 3068,
+      "estimatedMinutes": 15
     },
     {
       "index": 5,
+      "title": "Scene IV",
+      "wordCount": 2375,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 6,
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 7,
+      "title": "Scene I",
+      "wordCount": 1206,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 8,
+      "title": "Scene II",
+      "wordCount": 1323,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 9,
+      "title": "Scene III",
+      "wordCount": 456,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 10,
+      "title": "Scene IV",
+      "wordCount": 660,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 11,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 12,
+      "title": "Scene I",
+      "wordCount": 1734,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 13,
+      "title": "Scene II",
+      "wordCount": 1091,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 14,
+      "title": "Scene III",
+      "wordCount": 227,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 15,
+      "title": "Scene IV",
+      "wordCount": 983,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 16,
+      "title": "Scene V",
+      "wordCount": 887,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 17,
+      "title": "Scene VI",
+      "wordCount": 133,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 18,
+      "title": "Scene VII",
+      "wordCount": 1992,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 19,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 20,
+      "title": "Scene I",
+      "wordCount": 950,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 21,
+      "title": "Scene II",
+      "wordCount": 1085,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 22,
+      "title": "Scene III",
+      "wordCount": 473,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 23,
+      "title": "Scene IV",
+      "wordCount": 4678,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 24,
+      "title": "Scene V",
+      "wordCount": 162,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 25,
       "title": "Act V",
-      "wordCount": 4087,
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 26,
+      "title": "Scene I",
+      "wordCount": 249,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 27,
+      "title": "Scene II",
+      "wordCount": 216,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 28,
+      "title": "Scene III",
+      "wordCount": 3124,
       "estimatedMinutes": 16
+    },
+    {
+      "index": 29,
+      "title": "Scene IV",
+      "wordCount": 140,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 30,
+      "title": "Scene V",
+      "wordCount": 356,
+      "estimatedMinutes": 2
     }
   ]
 }

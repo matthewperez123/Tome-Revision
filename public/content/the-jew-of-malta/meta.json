@@ -2,9 +2,9 @@
   "bookId": "the-jew-of-malta",
   "title": "The Jew of Malta",
   "author": "Christopher Marlowe",
-  "chapterCount": 7,
-  "totalWordCount": 20124,
-  "totalMinutes": 81,
+  "chapterCount": 30,
+  "totalWords": 20114,
+  "totalEstimatedMinutes": 103,
   "chapters": [
     {
       "index": 0,
@@ -21,32 +21,170 @@
     {
       "index": 2,
       "title": "Act I",
-      "wordCount": 4776,
-      "estimatedMinutes": 19
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 3,
-      "title": "Act II",
-      "wordCount": 4362,
-      "estimatedMinutes": 17
+      "title": "Scene I",
+      "wordCount": 1524,
+      "estimatedMinutes": 8
     },
     {
       "index": 4,
-      "title": "Act III",
-      "wordCount": 2875,
-      "estimatedMinutes": 12
+      "title": "Scene II",
+      "wordCount": 3250,
+      "estimatedMinutes": 16
     },
     {
       "index": 5,
-      "title": "Act IV",
-      "wordCount": 4381,
-      "estimatedMinutes": 18
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 6,
+      "title": "Scene I",
+      "wordCount": 526,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 7,
+      "title": "Scene II",
+      "wordCount": 495,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 8,
+      "title": "Scene III",
+      "wordCount": 3339,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 9,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 10,
+      "title": "Scene I",
+      "wordCount": 282,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 11,
+      "title": "Scene II",
+      "wordCount": 346,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 12,
+      "title": "Scene III",
+      "wordCount": 593,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 13,
+      "title": "Scene IV",
+      "wordCount": 910,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 14,
+      "title": "Scene V",
+      "wordCount": 279,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 15,
+      "title": "Scene VI",
+      "wordCount": 463,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 16,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 17,
+      "title": "Scene I",
+      "wordCount": 1105,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 18,
+      "title": "Scene II",
+      "wordCount": 302,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 19,
+      "title": "Scene III",
+      "wordCount": 398,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 20,
+      "title": "Scene IV",
+      "wordCount": 1260,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 21,
+      "title": "Scene V",
+      "wordCount": 590,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 22,
+      "title": "Scene VI",
+      "wordCount": 724,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 23,
       "title": "Act V",
-      "wordCount": 3367,
-      "estimatedMinutes": 13
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 24,
+      "title": "Scene I",
+      "wordCount": 576,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 25,
+      "title": "Scene II",
+      "wordCount": 317,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 26,
+      "title": "Scene III",
+      "wordCount": 983,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 27,
+      "title": "Scene IV",
+      "wordCount": 339,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 28,
+      "title": "Scene V",
+      "wordCount": 105,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 29,
+      "title": "Scene VI",
+      "wordCount": 1045,
+      "estimatedMinutes": 5
     }
   ]
 }

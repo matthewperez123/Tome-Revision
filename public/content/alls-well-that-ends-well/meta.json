@@ -2,9 +2,9 @@
   "bookId": "alls-well-that-ends-well",
   "title": "All’s Well That Ends Well",
   "author": "William Shakespeare",
-  "chapterCount": 7,
-  "totalWordCount": 24450,
-  "totalMinutes": 100,
+  "chapterCount": 30,
+  "totalWords": 24440,
+  "totalEstimatedMinutes": 123,
   "chapters": [
     {
       "index": 0,
@@ -15,35 +15,173 @@
     {
       "index": 1,
       "title": "Act I",
-      "wordCount": 4641,
-      "estimatedMinutes": 19
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 2,
-      "title": "Act II",
-      "wordCount": 6179,
-      "estimatedMinutes": 25
+      "title": "Scene I",
+      "wordCount": 1860,
+      "estimatedMinutes": 9
     },
     {
       "index": 3,
-      "title": "Act III",
-      "wordCount": 4150,
-      "estimatedMinutes": 17
+      "title": "Scene II",
+      "wordCount": 657,
+      "estimatedMinutes": 3
     },
     {
       "index": 4,
-      "title": "Act IV",
-      "wordCount": 5570,
-      "estimatedMinutes": 22
+      "title": "Scene III",
+      "wordCount": 2122,
+      "estimatedMinutes": 11
     },
     {
       "index": 5,
-      "title": "Act V",
-      "wordCount": 3768,
-      "estimatedMinutes": 15
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 6,
+      "title": "Scene I",
+      "wordCount": 1807,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 7,
+      "title": "Scene II",
+      "wordCount": 578,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 8,
+      "title": "Scene III",
+      "wordCount": 2535,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 9,
+      "title": "Scene IV",
+      "wordCount": 463,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 10,
+      "title": "Scene V",
+      "wordCount": 794,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 11,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 12,
+      "title": "Scene I",
+      "wordCount": 211,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 13,
+      "title": "Scene II",
+      "wordCount": 1110,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 14,
+      "title": "Scene III",
+      "wordCount": 122,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 15,
+      "title": "Scene IV",
+      "wordCount": 362,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 16,
+      "title": "Scene V",
+      "wordCount": 889,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 17,
+      "title": "Scene VI",
+      "wordCount": 1039,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 18,
+      "title": "Scene VII",
+      "wordCount": 415,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 19,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 20,
+      "title": "Scene I",
+      "wordCount": 807,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 21,
+      "title": "Scene II",
+      "wordCount": 682,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 22,
+      "title": "Scene III",
+      "wordCount": 2866,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 23,
+      "title": "Scene IV",
+      "wordCount": 317,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 24,
+      "title": "Scene V",
+      "wordCount": 896,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 25,
+      "title": "Act V",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 26,
+      "title": "Scene I",
+      "wordCount": 342,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 27,
+      "title": "Scene II",
+      "wordCount": 471,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 28,
+      "title": "Scene III",
+      "wordCount": 2953,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 29,
       "title": "Epilogue",
       "wordCount": 55,
       "estimatedMinutes": 1

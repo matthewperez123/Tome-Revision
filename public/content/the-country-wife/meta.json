@@ -2,9 +2,9 @@
   "bookId": "the-country-wife",
   "title": "The Country Wife",
   "author": "William Wycherley",
-  "chapterCount": 10,
-  "totalWordCount": 35562,
-  "totalMinutes": 143,
+  "chapterCount": 22,
+  "totalWords": 35552,
+  "totalEstimatedMinutes": 174,
   "chapters": [
     {
       "index": 0,
@@ -33,35 +33,107 @@
     {
       "index": 4,
       "title": "Act I",
-      "wordCount": 4611,
-      "estimatedMinutes": 18
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 5,
-      "title": "Act II",
-      "wordCount": 5543,
-      "estimatedMinutes": 22
+      "title": "Scene I",
+      "wordCount": 4609,
+      "estimatedMinutes": 23
     },
     {
       "index": 6,
-      "title": "Act III",
-      "wordCount": 6697,
-      "estimatedMinutes": 27
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 7,
-      "title": "Act IV",
-      "wordCount": 8629,
-      "estimatedMinutes": 35
+      "title": "Scene I",
+      "wordCount": 5541,
+      "estimatedMinutes": 28
     },
     {
       "index": 8,
-      "title": "Act V",
-      "wordCount": 7292,
-      "estimatedMinutes": 29
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 9,
+      "title": "Scene I",
+      "wordCount": 1068,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 10,
+      "title": "Scene II",
+      "wordCount": 5627,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 11,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 12,
+      "title": "Scene I",
+      "wordCount": 1674,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 13,
+      "title": "Scene II",
+      "wordCount": 1995,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 14,
+      "title": "Scene III",
+      "wordCount": 4068,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 15,
+      "title": "Scene IV",
+      "wordCount": 890,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 16,
+      "title": "Act V",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 17,
+      "title": "Scene I",
+      "wordCount": 1201,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 18,
+      "title": "Scene II",
+      "wordCount": 1090,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 19,
+      "title": "Scene III",
+      "wordCount": 975,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 20,
+      "title": "Scene IV",
+      "wordCount": 4024,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 21,
       "title": "Epilogue",
       "wordCount": 271,
       "estimatedMinutes": 1

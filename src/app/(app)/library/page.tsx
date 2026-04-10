@@ -1,10 +1,10 @@
 "use client"
 
 import { useEffect, useState, useMemo, useCallback } from "react"
-import { BookOpen, TrendingUp, Star, Search, Flame } from "lucide-react"
+import { BookOpen, TrendingUp, Search, Flame } from "lucide-react"
 import { type TomeBook } from "@/data/books"
-import { getBooks, getFeaturedBooks, getTrendingBooks, searchBooks } from "@/lib/content"
-import { supabase, mapToTomeBook } from "@/lib/supabase"
+import { getBooks, getTrendingBooks, searchBooks } from "@/lib/content"
+// supabase removed — library uses local BOOKS data as the canonical source
 import { useDebounce } from "@/lib/use-debounce"
 import { getAllBookProgress } from "@/lib/book-progress"
 import { BlurFade } from "@/components/ui/blur-fade"
@@ -18,13 +18,7 @@ import { cn } from "@/lib/utils"
 
 // ── Constants ──────────────────────────────────
 
-const TRADITIONS = [
-  "Ancient Greek", "Roman", "Medieval European", "Renaissance",
-  "Enlightenment", "Romantic", "Victorian", "Russian",
-  "American", "French", "Modernist", "Eastern",
-  "Post-Colonial", "Contemporary", "Scandinavian", "Germanic",
-  "World Literature",
-] as const
+// Traditions are derived dynamically from the BOOKS catalog — no hardcoded list needed
 
 const ERAS = [
   { label: "All Eras",           value: "" },
@@ -76,7 +70,6 @@ export default function LibraryPage() {
   // ── Data ──────────────────────────────────────
   const [allBooks,    setAllBooks]    = useState<TomeBook[]>([])
   const [trendingBooks, setTrending] = useState<TomeBook[]>([])
-  const [featuredBooks, setFeatured] = useState<TomeBook[]>([])
   const [loading,     setLoading]    = useState(true)
   const [allProgress, setAllProgress] = useState<ReturnType<typeof getAllBookProgress>>({})
 
@@ -91,25 +84,9 @@ export default function LibraryPage() {
 
   // ── Load data ──────────────────────────────────
   useEffect(() => {
-    async function loadBooks() {
-      try {
-        const { data, error } = await supabase
-          .from("books")
-          .select("*")
-          .order("title", { ascending: true })
-
-        if (error) throw error
-
-        const mapped = (data ?? []).map(mapToTomeBook)
-        setAllBooks(mapped)
-        setFeatured(mapped.filter((b) => b.featured).slice(0, 3))
-        setTrending(getTrendingBooks().slice(0, 6))
-      } catch (err) {
-        console.warn("Supabase fetch failed, falling back to local data:", err)
-        setAllBooks(getBooks())
-        setTrending(getTrendingBooks().slice(0, 6))
-        setFeatured(getFeaturedBooks().slice(0, 3))
-      }
+    function loadBooks() {
+      setAllBooks(getBooks())
+      setTrending(getTrendingBooks().slice(0, 6))
       setAllProgress(getAllBookProgress())
       setLoading(false)
     }
@@ -140,8 +117,8 @@ export default function LibraryPage() {
   // ── All traditions present in the library ──
   const allTraditions = useMemo(() => {
     const tradSet = new Set<string>()
-    allBooks.forEach((b) => tradSet.add(b.tradition))
-    return (TRADITIONS as readonly string[]).filter((t) => tradSet.has(t))
+    allBooks.forEach((b) => { if (b.tradition) tradSet.add(b.tradition) })
+    return [...tradSet].sort()
   }, [allBooks])
 
   // ── Fully filtered + sorted books ─────────────
@@ -288,24 +265,6 @@ export default function LibraryPage() {
             <LibrarySkeleton />
           ) : (
             <div className="space-y-8">
-
-              {/* ── Recommended ── */}
-              {showDiscovery && featuredBooks.length > 0 && (
-                <section>
-                  <SectionHeader icon={<Star className="size-3.5" />} title="Recommended for You" />
-                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-                    {featuredBooks.map((book, i) => (
-                      <BlurFade key={book.id} delay={i * 0.06} inView>
-                        <BookCard
-                          book={book}
-                          progress={allProgress[book.id]}
-                          size="lg"
-                        />
-                      </BlurFade>
-                    ))}
-                  </div>
-                </section>
-              )}
 
               {/* ── All books grid ── */}
               {filtered.length === 0 ? (

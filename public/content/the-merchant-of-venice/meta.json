@@ -2,9 +2,9 @@
   "bookId": "the-merchant-of-venice",
   "title": "The Merchant of Venice",
   "author": "William Shakespeare",
-  "chapterCount": 6,
-  "totalWordCount": 22330,
-  "totalMinutes": 90,
+  "chapterCount": 26,
+  "totalWords": 22320,
+  "totalEstimatedMinutes": 111,
   "chapters": [
     {
       "index": 0,
@@ -15,32 +15,152 @@
     {
       "index": 1,
       "title": "Act I",
-      "wordCount": 4218,
-      "estimatedMinutes": 17
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 2,
-      "title": "Act II",
-      "wordCount": 5672,
-      "estimatedMinutes": 23
+      "title": "Scene I",
+      "wordCount": 1548,
+      "estimatedMinutes": 8
     },
     {
       "index": 3,
-      "title": "Act III",
-      "wordCount": 5556,
-      "estimatedMinutes": 22
+      "title": "Scene II",
+      "wordCount": 1188,
+      "estimatedMinutes": 6
     },
     {
       "index": 4,
-      "title": "Act IV",
-      "wordCount": 4088,
-      "estimatedMinutes": 16
+      "title": "Scene III",
+      "wordCount": 1480,
+      "estimatedMinutes": 7
     },
     {
       "index": 5,
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 6,
+      "title": "Scene I",
+      "wordCount": 399,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 7,
+      "title": "Scene II",
+      "wordCount": 1776,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 8,
+      "title": "Scene III",
+      "wordCount": 184,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 9,
+      "title": "Scene IV",
+      "wordCount": 331,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 10,
+      "title": "Scene V",
+      "wordCount": 470,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 11,
+      "title": "Scene VI",
+      "wordCount": 586,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 12,
+      "title": "Scene VII",
+      "wordCount": 664,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 13,
+      "title": "Scene VIII",
+      "wordCount": 435,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 14,
+      "title": "Scene IX",
+      "wordCount": 825,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 15,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 16,
+      "title": "Scene I",
+      "wordCount": 1101,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 17,
+      "title": "Scene II",
+      "wordCount": 2668,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 18,
+      "title": "Scene III",
+      "wordCount": 319,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 19,
+      "title": "Scene IV",
+      "wordCount": 698,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 20,
+      "title": "Scene V",
+      "wordCount": 768,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 21,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 22,
+      "title": "Scene I",
+      "wordCount": 3896,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 23,
+      "title": "Scene II",
+      "wordCount": 190,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 24,
       "title": "Act V",
-      "wordCount": 2660,
-      "estimatedMinutes": 11
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 25,
+      "title": "Scene I",
+      "wordCount": 2658,
+      "estimatedMinutes": 13
     }
   ]
 }

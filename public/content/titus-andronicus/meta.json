@@ -2,9 +2,9 @@
   "bookId": "titus-andronicus",
   "title": "Titus Andronicus",
   "author": "William Shakespeare",
-  "chapterCount": 7,
-  "totalWordCount": 23347,
-  "totalMinutes": 94,
+  "chapterCount": 21,
+  "totalWords": 23337,
+  "totalEstimatedMinutes": 116,
   "chapters": [
     {
       "index": 0,
@@ -21,32 +21,116 @@
     {
       "index": 2,
       "title": "Act I",
-      "wordCount": 4174,
-      "estimatedMinutes": 17
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 3,
-      "title": "Act II",
-      "wordCount": 4479,
-      "estimatedMinutes": 18
+      "title": "Scene I",
+      "wordCount": 4172,
+      "estimatedMinutes": 21
     },
     {
       "index": 4,
-      "title": "Act III",
-      "wordCount": 3330,
-      "estimatedMinutes": 13
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 5,
-      "title": "Act IV",
-      "wordCount": 4715,
-      "estimatedMinutes": 19
+      "title": "Scene I",
+      "wordCount": 1095,
+      "estimatedMinutes": 5
     },
     {
       "index": 6,
+      "title": "Scene II",
+      "wordCount": 278,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 7,
+      "title": "Scene III",
+      "wordCount": 2584,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 8,
+      "title": "Scene IV",
+      "wordCount": 520,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 9,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 10,
+      "title": "Scene I",
+      "wordCount": 2593,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 11,
+      "title": "Scene II",
+      "wordCount": 735,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 12,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 13,
+      "title": "Scene I",
+      "wordCount": 1160,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 14,
+      "title": "Scene II",
+      "wordCount": 1592,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 15,
+      "title": "Scene III",
+      "wordCount": 1035,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 16,
+      "title": "Scene IV",
+      "wordCount": 926,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 17,
       "title": "Act V",
-      "wordCount": 4941,
-      "estimatedMinutes": 20
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 18,
+      "title": "Scene I",
+      "wordCount": 1420,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 19,
+      "title": "Scene II",
+      "wordCount": 1771,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 20,
+      "title": "Scene III",
+      "wordCount": 1748,
+      "estimatedMinutes": 9
     }
   ]
 }

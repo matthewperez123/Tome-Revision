@@ -42,7 +42,7 @@ import { useEconomy } from "@/components/tome/economy-provider"
 import { ChapterQuizOverlay } from "@/components/tome/chapter-quiz-overlay"
 import { PaginatedReader } from "@/components/tome/paginated-reader"
 import { getQuestionsForChapter } from "@/lib/chapter-questions"
-import { isChapterLocked } from "@/lib/book-progress"
+import { isChapterLocked, isFrontOrBackMatter } from "@/lib/book-progress"
 import { paginateHTML } from "@/lib/paginator"
 import { VirgilReflection } from "@/components/tome/virgil-reflection"
 import { AuthorLink } from "@/components/tome/author-link"
@@ -64,6 +64,29 @@ type Chapter = {
 const PLACEHOLDER_HTML = `<p>The dawn spread her fingertips of rose across the sky as the hero stood upon the shore, gazing out at the wine-dark sea that stretched endlessly before him.</p>
 <p>In the great hall, the fire crackled and sent shadows dancing across the stone walls. The bard took up his lyre and began to sing of the deeds of men and gods.</p>
 <p>The philosopher sat beneath the olive tree, his students gathered around him. He posed his question not to instruct, but to illuminate.</p>`
+
+/** Strip the first heading from chapter HTML to prevent duplicate titles
+ *  (the reader's UI chrome already shows the chapter title). Handles:
+ *  - Simple: <h2>Title</h2>
+ *  - With spans: <h2><span>Act</span> <span>I</span></h2>
+ *  - Inside section: <section ...><h2>Title</h2>
+ *  - Header blocks: <header><h2>I</h2><p>Title</p></header>
+ */
+function stripLeadingHeading(html: string): string {
+  // Strip leading <header> block (contains heading + subtitle)
+  let result = html.replace(
+    /^(\s*<section[^>]*>\s*)<header[^>]*>[\s\S]*?<\/header>\s*/i,
+    "$1"
+  )
+  if (result !== html) return result
+
+  // Strip leading <h1>-<h4> (may contain nested <span>, <em>, etc.)
+  result = html.replace(
+    /^(\s*(?:<section[^>]*>\s*)?)<h[1-4][^>]*>[\s\S]*?<\/h[1-4]>\s*/i,
+    "$1"
+  )
+  return result
+}
 
 // Reader uses the global theme via next-themes. No separate theme system.
 
@@ -290,7 +313,7 @@ export default function ReaderPage() {
       const usableH = containerDims.h - PAGE_PADDING_V - 28 // 28px for progress strip
       const usableW = (containerDims.w - SPREAD_SPINE) / 2 - PAGE_PADDING_H
 
-      const html = chapterHTML
+      const html = stripLeadingHeading(chapterHTML)
 
       const computed = await paginateHTML({
         html,
@@ -346,13 +369,13 @@ export default function ReaderPage() {
 
   const handleChapterSelect = useCallback((index: number) => {
     const prog = getProgress(bookId)
-    if (prog && isChapterLocked(prog, index)) return
+    if (prog && isChapterLocked(prog, index, chapters.map(c => c.title))) return
     setCurrentChapter(index)
     setCurrentPage(0)
     if (viewMode === "scroll") {
       scrollContentRef.current?.scrollTo({ top: 0, behavior: "smooth" })
     }
-  }, [bookId, getProgress, viewMode])
+  }, [bookId, getProgress, viewMode, chapters])
 
   // handleModeSelect removed — modal no longer used
 
@@ -363,8 +386,15 @@ export default function ReaderPage() {
       if (currentChapter < totalCount - 1) handleChapterSelect(currentChapter + 1)
       return
     }
+    // Skip quiz for front/back matter — auto-complete and advance
+    const currentTitle = chapters[currentChapter]?.title ?? ""
+    if (isFrontOrBackMatter(currentTitle)) {
+      completeChapter(bookId, currentChapter, 0)
+      if (currentChapter < totalCount - 1) setTimeout(() => handleChapterSelect(currentChapter + 1), 100)
+      return
+    }
     setShowQuizOverlay(true)
-  }, [bookId, getProgress, currentChapter, chapters.length, handleChapterSelect])
+  }, [bookId, getProgress, currentChapter, chapters, handleChapterSelect, completeChapter])
 
   const handleQuizPass = useCallback((xpEarned: number, _coinsEarned: number) => {
     const totalCount    = chapters.length || 1
@@ -403,17 +433,17 @@ export default function ReaderPage() {
       if (viewMode !== "scroll") return
       if (e.key === "ArrowRight" || e.key === "ArrowDown" || e.key === "j") {
         e.preventDefault()
-        handleChapterSelect(currentChapter + 1)
+        if (currentChapter < chapters.length - 1) handleChapterSelect(currentChapter + 1)
       } else if (e.key === "ArrowLeft" || e.key === "ArrowUp" || e.key === "k") {
         e.preventDefault()
-        handleChapterSelect(currentChapter - 1)
+        if (currentChapter > 0) handleChapterSelect(currentChapter - 1)
       } else if (e.key === "Escape") {
         router.back()
       }
     }
     window.addEventListener("keydown", handleKey)
     return () => window.removeEventListener("keydown", handleKey)
-  }, [router, viewMode, currentChapter, handleChapterSelect])
+  }, [router, viewMode, currentChapter, chapters.length, handleChapterSelect])
 
   // ────────────────────────────────────────────────────
   // Loading / Error
@@ -455,7 +485,8 @@ export default function ReaderPage() {
   const progress               = getProgress(bookId)
   const readingMode            = progress?.readingMode ?? "guided"
   const quizDifficulty         = progress?.difficulty ?? 'Apprentice'
-  const lockedChapterIndices   = chapters.map((_, i) => (progress && isChapterLocked(progress, i) ? i : -1)).filter(i => i >= 0)
+  const chapterTitlesArr       = chapters.map(c => c.title)
+  const lockedChapterIndices   = chapters.map((_, i) => (progress && isChapterLocked(progress, i, chapterTitlesArr) ? i : -1)).filter(i => i >= 0)
   const completedChapterIndices = progress?.completedChapterIndices ?? []
   const quizQuestions          = getQuestionsForChapter(book.title, currentChapter, quizDifficulty)
 
@@ -637,10 +668,7 @@ export default function ReaderPage() {
                       }}
                       data-reader-text
                       dangerouslySetInnerHTML={{
-                        __html: chapterHTML.replace(
-                          /^\s*(<section[^>]*>\s*)?<h[12][^>]*>[^<]*<\/h[12]>/i,
-                          "$1"
-                        ),
+                        __html: stripLeadingHeading(chapterHTML),
                       }}
                     />
 
@@ -717,7 +745,7 @@ export default function ReaderPage() {
                         <button
                           disabled={currentChapter === totalChapters - 1}
                           onClick={() => {
-                            if (readingMode === "guided" && progress && isChapterLocked(progress, currentChapter + 1)) {
+                            if (readingMode === "guided" && progress && isChapterLocked(progress, currentChapter + 1, chapters.map(c => c.title))) {
                               // Chapter is locked — trigger quiz flow
                               handleFinishChapter()
                             } else {

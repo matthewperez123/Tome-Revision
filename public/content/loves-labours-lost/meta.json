@@ -2,9 +2,9 @@
   "bookId": "loves-labours-lost",
   "title": "Love’s Labour’s Lost",
   "author": "William Shakespeare",
-  "chapterCount": 7,
-  "totalWordCount": 24268,
-  "totalMinutes": 97,
+  "chapterCount": 16,
+  "totalWords": 24258,
+  "totalEstimatedMinutes": 120,
   "chapters": [
     {
       "index": 0,
@@ -21,32 +21,86 @@
     {
       "index": 2,
       "title": "Act I",
-      "wordCount": 3834,
-      "estimatedMinutes": 15
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 3,
-      "title": "Act II",
-      "wordCount": 2122,
-      "estimatedMinutes": 8
+      "title": "Scene I",
+      "wordCount": 2455,
+      "estimatedMinutes": 12
     },
     {
       "index": 4,
-      "title": "Act III",
-      "wordCount": 1606,
-      "estimatedMinutes": 6
+      "title": "Scene II",
+      "wordCount": 1377,
+      "estimatedMinutes": 7
     },
     {
       "index": 5,
-      "title": "Act IV",
-      "wordCount": 6176,
-      "estimatedMinutes": 25
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 6,
+      "title": "Scene I",
+      "wordCount": 2120,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 7,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 8,
+      "title": "Scene I",
+      "wordCount": 1604,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 9,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 10,
+      "title": "Scene I",
+      "wordCount": 1421,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 11,
+      "title": "Scene II",
+      "wordCount": 1475,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 12,
+      "title": "Scene III",
+      "wordCount": 3278,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 13,
       "title": "Act V",
-      "wordCount": 9010,
-      "estimatedMinutes": 36
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 14,
+      "title": "Scene I",
+      "wordCount": 1206,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 15,
+      "title": "Scene II",
+      "wordCount": 7802,
+      "estimatedMinutes": 39
     }
   ]
 }

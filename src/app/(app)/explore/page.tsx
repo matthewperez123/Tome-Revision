@@ -49,6 +49,7 @@ const NUMERIC_TO_ISO3: Record<string, string> = {
   // Countries with authors in our catalog
   "012": "DZA", "388": "JAM", "608": "PHL", "554": "NZL", "620": "PRT",
   "170": "COL", "152": "CHL", "604": "PER", "686": "SEN", "288": "GHA",
+  "208": "DNK", "442": "LUX",
 }
 
 const NAME_TO_ISO3: Record<string, string> = {
@@ -63,7 +64,8 @@ const NAME_TO_ISO3: Record<string, string> = {
   "South Africa": "ZAF", "Kenya": "KEN", "Ghana": "GHA", "Senegal": "SEN",
   "Colombia": "COL", "Chile": "CHL", "Peru": "PER",
   "Brazil": "BRA", "Argentina": "ARG", "Mexico": "MEX",
-  "Egypt": "EGY", "Turkey": "TUR",
+  "Egypt": "EGY", "Turkey": "TUR", "Ukraine": "UKR",
+  "Denmark": "DNK", "Luxembourg": "LUX",
 }
 
 function resolveISO3(geo: { id?: string; properties: Record<string, unknown> }): string {

@@ -2,9 +2,9 @@
   "bookId": "the-alchemist",
   "title": "The Alchemist",
   "author": "Ben Jonson",
-  "chapterCount": 9,
-  "totalWordCount": 31673,
-  "totalMinutes": 127,
+  "chapterCount": 20,
+  "totalWords": 31663,
+  "totalEstimatedMinutes": 157,
   "chapters": [
     {
       "index": 0,
@@ -33,32 +33,98 @@
     {
       "index": 4,
       "title": "Act I",
-      "wordCount": 4871,
-      "estimatedMinutes": 19
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 5,
-      "title": "Act II",
-      "wordCount": 7049,
-      "estimatedMinutes": 28
+      "title": "Scene I",
+      "wordCount": 4869,
+      "estimatedMinutes": 24
     },
     {
       "index": 6,
-      "title": "Act III",
-      "wordCount": 5011,
-      "estimatedMinutes": 20
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 7,
-      "title": "Act IV",
-      "wordCount": 7597,
-      "estimatedMinutes": 30
+      "title": "Scene I",
+      "wordCount": 7047,
+      "estimatedMinutes": 35
     },
     {
       "index": 8,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 9,
+      "title": "Scene I",
+      "wordCount": 431,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 10,
+      "title": "Scene II",
+      "wordCount": 4578,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 11,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 12,
+      "title": "Scene I",
+      "wordCount": 3475,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 13,
+      "title": "Scene II",
+      "wordCount": 948,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 14,
+      "title": "Scene III",
+      "wordCount": 1276,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 15,
+      "title": "Scene IV",
+      "wordCount": 1896,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 16,
       "title": "Act V",
-      "wordCount": 5290,
-      "estimatedMinutes": 21
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 17,
+      "title": "Scene I",
+      "wordCount": 2024,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 18,
+      "title": "Scene II",
+      "wordCount": 1551,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 19,
+      "title": "Scene III",
+      "wordCount": 1713,
+      "estimatedMinutes": 9
     }
   ]
 }

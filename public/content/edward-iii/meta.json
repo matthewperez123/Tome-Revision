@@ -2,9 +2,9 @@
   "bookId": "edward-iii",
   "title": "Edward III",
   "author": "William Shakespeare",
-  "chapterCount": 7,
-  "totalWordCount": 21587,
-  "totalMinutes": 86,
+  "chapterCount": 23,
+  "totalWords": 21576,
+  "totalEstimatedMinutes": 108,
   "chapters": [
     {
       "index": 0,
@@ -21,32 +21,128 @@
     {
       "index": 2,
       "title": "Act I",
-      "wordCount": 2838,
-      "estimatedMinutes": 11
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 3,
-      "title": "Act II",
-      "wordCount": 5604,
-      "estimatedMinutes": 22
+      "title": "Scene I",
+      "wordCount": 1388,
+      "estimatedMinutes": 7
     },
     {
       "index": 4,
-      "title": "Act III",
-      "wordCount": 5207,
-      "estimatedMinutes": 21
+      "title": "Scene II",
+      "wordCount": 1448,
+      "estimatedMinutes": 7
     },
     {
       "index": 5,
-      "title": "Act IV",
-      "wordCount": 5416,
-      "estimatedMinutes": 22
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 6,
-      "title": "Act V",
-      "wordCount": 2020,
+      "title": "Scene I",
+      "wordCount": 3802,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 7,
+      "title": "Scene II",
+      "wordCount": 1800,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 8,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 9,
+      "title": "Scene I",
+      "wordCount": 1542,
       "estimatedMinutes": 8
+    },
+    {
+      "index": 10,
+      "title": "Scene II",
+      "wordCount": 616,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 11,
+      "title": "Scene III",
+      "wordCount": 1895,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 12,
+      "title": "Scene IV",
+      "wordCount": 1152,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 13,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 14,
+      "title": "Scene I",
+      "wordCount": 381,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 15,
+      "title": "Scene II",
+      "wordCount": 743,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 16,
+      "title": "Scene III",
+      "wordCount": 731,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 17,
+      "title": "Scene IV",
+      "wordCount": 1349,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 18,
+      "title": "Scene V",
+      "wordCount": 1064,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 19,
+      "title": "Scene VI",
+      "wordCount": 569,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 20,
+      "title": "Scene VII",
+      "wordCount": 576,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 21,
+      "title": "Act V",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 22,
+      "title": "Scene I",
+      "wordCount": 2018,
+      "estimatedMinutes": 10
     }
   ]
 }

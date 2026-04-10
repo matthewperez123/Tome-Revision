@@ -2,9 +2,9 @@
   "bookId": "julius-caesar",
   "title": "Julius Caesar",
   "author": "William Shakespeare",
-  "chapterCount": 6,
-  "totalWordCount": 21042,
-  "totalMinutes": 84,
+  "chapterCount": 24,
+  "totalWords": 21032,
+  "totalEstimatedMinutes": 108,
   "chapters": [
     {
       "index": 0,
@@ -15,32 +15,140 @@
     {
       "index": 1,
       "title": "Act I",
-      "wordCount": 4734,
-      "estimatedMinutes": 19
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 2,
-      "title": "Act II",
-      "wordCount": 4449,
-      "estimatedMinutes": 18
+      "title": "Scene I",
+      "wordCount": 631,
+      "estimatedMinutes": 3
     },
     {
       "index": 3,
-      "title": "Act III",
-      "wordCount": 5114,
-      "estimatedMinutes": 20
-    },
-    {
-      "index": 4,
-      "title": "Act IV",
-      "wordCount": 3456,
+      "title": "Scene II",
+      "wordCount": 2737,
       "estimatedMinutes": 14
     },
     {
+      "index": 4,
+      "title": "Scene III",
+      "wordCount": 1364,
+      "estimatedMinutes": 7
+    },
+    {
       "index": 5,
-      "title": "Act V",
-      "wordCount": 3107,
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 6,
+      "title": "Scene I",
+      "wordCount": 2783,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 7,
+      "title": "Scene II",
+      "wordCount": 1104,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 8,
+      "title": "Scene III",
+      "wordCount": 134,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 9,
+      "title": "Scene IV",
+      "wordCount": 426,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 10,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 11,
+      "title": "Scene I",
+      "wordCount": 2507,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 12,
+      "title": "Scene II",
+      "wordCount": 2305,
       "estimatedMinutes": 12
+    },
+    {
+      "index": 13,
+      "title": "Scene III",
+      "wordCount": 300,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 14,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 15,
+      "title": "Scene I",
+      "wordCount": 429,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 16,
+      "title": "Scene II",
+      "wordCount": 424,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 17,
+      "title": "Scene III",
+      "wordCount": 2601,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 18,
+      "title": "Act V",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 19,
+      "title": "Scene I",
+      "wordCount": 1060,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 20,
+      "title": "Scene II",
+      "wordCount": 63,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 21,
+      "title": "Scene III",
+      "wordCount": 954,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 22,
+      "title": "Scene IV",
+      "wordCount": 293,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 23,
+      "title": "Scene V",
+      "wordCount": 735,
+      "estimatedMinutes": 4
     }
   ]
 }

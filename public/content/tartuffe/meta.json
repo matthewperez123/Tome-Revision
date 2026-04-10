@@ -2,9 +2,9 @@
   "bookId": "tartuffe",
   "title": "Tartuffe",
   "author": "Molière",
-  "chapterCount": 7,
-  "totalWordCount": 19549,
-  "totalMinutes": 78,
+  "chapterCount": 40,
+  "totalWords": 19539,
+  "totalEstimatedMinutes": 98,
   "chapters": [
     {
       "index": 0,
@@ -21,32 +21,230 @@
     {
       "index": 2,
       "title": "Act I",
-      "wordCount": 3663,
-      "estimatedMinutes": 15
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 3,
-      "title": "Act II",
-      "wordCount": 3895,
-      "estimatedMinutes": 16
+      "title": "Scene I",
+      "wordCount": 1475,
+      "estimatedMinutes": 7
     },
     {
       "index": 4,
-      "title": "Act III",
-      "wordCount": 3236,
-      "estimatedMinutes": 13
+      "title": "Scene II",
+      "wordCount": 358,
+      "estimatedMinutes": 2
     },
     {
       "index": 5,
-      "title": "Act IV",
-      "wordCount": 3424,
-      "estimatedMinutes": 14
+      "title": "Scene III",
+      "wordCount": 70,
+      "estimatedMinutes": 1
     },
     {
       "index": 6,
+      "title": "Scene IV",
+      "wordCount": 68,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 7,
+      "title": "Scene V",
+      "wordCount": 302,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 8,
+      "title": "Scene VI",
+      "wordCount": 1388,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 9,
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 10,
+      "title": "Scene I",
+      "wordCount": 134,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 11,
+      "title": "Scene II",
+      "wordCount": 1409,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 12,
+      "title": "Scene III",
+      "wordCount": 896,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 13,
+      "title": "Scene IV",
+      "wordCount": 1454,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 14,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 15,
+      "title": "Scene I",
+      "wordCount": 284,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 16,
+      "title": "Scene II",
+      "wordCount": 260,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 17,
+      "title": "Scene III",
+      "wordCount": 1208,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 18,
+      "title": "Scene IV",
+      "wordCount": 282,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 19,
+      "title": "Scene V",
+      "wordCount": 149,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 20,
+      "title": "Scene VI",
+      "wordCount": 636,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 21,
+      "title": "Scene VII",
+      "wordCount": 415,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 22,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 23,
+      "title": "Scene I",
+      "wordCount": 664,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 24,
+      "title": "Scene II",
+      "wordCount": 70,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 25,
+      "title": "Scene III",
+      "wordCount": 783,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 26,
+      "title": "Scene IV",
+      "wordCount": 259,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 27,
+      "title": "Scene V",
+      "wordCount": 1203,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 28,
+      "title": "Scene VI",
+      "wordCount": 113,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 29,
+      "title": "Scene VII",
+      "wordCount": 244,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 30,
+      "title": "Scene VIII",
+      "wordCount": 86,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 31,
       "title": "Act V",
-      "wordCount": 3455,
-      "estimatedMinutes": 14
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 32,
+      "title": "Scene I",
+      "wordCount": 464,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 33,
+      "title": "Scene II",
+      "wordCount": 119,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 34,
+      "title": "Scene III",
+      "wordCount": 687,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 35,
+      "title": "Scene IV",
+      "wordCount": 873,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 36,
+      "title": "Scene V",
+      "wordCount": 156,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 37,
+      "title": "Scene VI",
+      "wordCount": 309,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 38,
+      "title": "Scene VII",
+      "wordCount": 713,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 39,
+      "title": "Scene VIII",
+      "wordCount": 132,
+      "estimatedMinutes": 1
     }
   ]
 }

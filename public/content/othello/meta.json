@@ -2,9 +2,9 @@
   "bookId": "othello",
   "title": "Othello",
   "author": "William Shakespeare",
-  "chapterCount": 6,
-  "totalWordCount": 27982,
-  "totalMinutes": 113,
+  "chapterCount": 21,
+  "totalWords": 27972,
+  "totalEstimatedMinutes": 141,
   "chapters": [
     {
       "index": 0,
@@ -15,32 +15,122 @@
     {
       "index": 1,
       "title": "Act I",
-      "wordCount": 5830,
-      "estimatedMinutes": 23
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 2,
-      "title": "Act II",
-      "wordCount": 5938,
-      "estimatedMinutes": 24
+      "title": "Scene I",
+      "wordCount": 1553,
+      "estimatedMinutes": 8
     },
     {
       "index": 3,
-      "title": "Act III",
-      "wordCount": 6335,
-      "estimatedMinutes": 25
+      "title": "Scene II",
+      "wordCount": 895,
+      "estimatedMinutes": 4
     },
     {
       "index": 4,
-      "title": "Act IV",
-      "wordCount": 5411,
-      "estimatedMinutes": 22
+      "title": "Scene III",
+      "wordCount": 3380,
+      "estimatedMinutes": 17
     },
     {
       "index": 5,
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 6,
+      "title": "Scene I",
+      "wordCount": 2677,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 7,
+      "title": "Scene II",
+      "wordCount": 115,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 8,
+      "title": "Scene III",
+      "wordCount": 3144,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 9,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 10,
+      "title": "Scene I",
+      "wordCount": 491,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 11,
+      "title": "Scene II",
+      "wordCount": 65,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 12,
+      "title": "Scene III",
+      "wordCount": 4095,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 13,
+      "title": "Scene IV",
+      "wordCount": 1682,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 14,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 15,
+      "title": "Scene I",
+      "wordCount": 2361,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 16,
+      "title": "Scene II",
+      "wordCount": 2119,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 17,
+      "title": "Scene III",
+      "wordCount": 929,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 18,
       "title": "Act V",
-      "wordCount": 4387,
-      "estimatedMinutes": 18
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 19,
+      "title": "Scene I",
+      "wordCount": 1144,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 20,
+      "title": "Scene II",
+      "wordCount": 3241,
+      "estimatedMinutes": 16
     }
   ]
 }

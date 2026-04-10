@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { BookOpen, ChevronLeft, ChevronRight, ChevronDown, Lock, CheckCircle2, FileText, ScrollText, BookMarked, FolderOpen, Folder } from "lucide-react"
+import { BookOpen, ChevronLeft, ChevronRight, ChevronDown, Lock, CheckCircle2, FileText, ScrollText, BookMarked, Library, Layers, Scroll } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { springs } from "@/lib/design-tokens"
 import { cn } from "@/lib/utils"
@@ -72,6 +72,27 @@ function getChapterTypeIcon(type: ChapterType) {
     case "front-matter": return ScrollText
     case "chapter": return BookOpen
     case "back-matter": return FileText
+  }
+}
+
+type ContainerType = "part" | "book" | "volume" | "act" | "section"
+
+function getContainerType(title: string): ContainerType {
+  const t = title.toLowerCase().trim()
+  if (/^volume\b/i.test(t) || /\bvolume\b/i.test(t)) return "volume"
+  if (/^book\b/i.test(t) || /\bbook\b/i.test(t)) return "book"
+  if (/^act\b/i.test(t) || /\bact\b/i.test(t)) return "act"
+  if (/^part\b/i.test(t) || /\bpart\b/i.test(t)) return "part"
+  return "section"
+}
+
+function getContainerIcon(containerType: ContainerType) {
+  switch (containerType) {
+    case "part": return BookOpen
+    case "book": return Library
+    case "volume": return Layers
+    case "act": return Scroll
+    case "section": return BookOpen
   }
 }
 
@@ -352,13 +373,14 @@ export function ChapterSidebar({
               !isExpanded && "-rotate-90"
             )}
           />
-          {allCompleted ? (
-            <CheckCircle2 className="size-3 shrink-0 text-emerald-500" />
-          ) : isExpanded ? (
-            <FolderOpen className="size-3 shrink-0 text-[var(--tome-accent)]" />
-          ) : (
-            <Folder className="size-3 shrink-0" />
-          )}
+          {(() => {
+            const ContainerIcon = getContainerIcon(getContainerType(node.title))
+            return allCompleted ? (
+              <CheckCircle2 className="size-3 shrink-0 text-emerald-500" />
+            ) : (
+              <ContainerIcon className={cn("size-3 shrink-0", isExpanded ? "text-[var(--tome-accent)]" : "text-muted-foreground")} />
+            )
+          })()}
           <span className="truncate">{node.title}</span>
           <span className="ml-auto text-[9px] text-muted-foreground/60 tabular-nums shrink-0">
             {node.children.length}

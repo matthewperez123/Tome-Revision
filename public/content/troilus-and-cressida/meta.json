@@ -2,9 +2,9 @@
   "bookId": "troilus-and-cressida",
   "title": "Troilus and Cressida",
   "author": "William Shakespeare",
-  "chapterCount": 8,
-  "totalWordCount": 29618,
-  "totalMinutes": 118,
+  "chapterCount": 32,
+  "totalWords": 29608,
+  "totalEstimatedMinutes": 147,
   "chapters": [
     {
       "index": 0,
@@ -27,32 +27,176 @@
     {
       "index": 3,
       "title": "Act I",
-      "wordCount": 6333,
-      "estimatedMinutes": 25
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 4,
-      "title": "Act II",
-      "wordCount": 4773,
-      "estimatedMinutes": 19
+      "title": "Scene I",
+      "wordCount": 996,
+      "estimatedMinutes": 5
     },
     {
       "index": 5,
-      "title": "Act III",
-      "wordCount": 5350,
-      "estimatedMinutes": 21
+      "title": "Scene II",
+      "wordCount": 2326,
+      "estimatedMinutes": 12
     },
     {
       "index": 6,
-      "title": "Act IV",
-      "wordCount": 5480,
-      "estimatedMinutes": 22
+      "title": "Scene III",
+      "wordCount": 3009,
+      "estimatedMinutes": 15
     },
     {
       "index": 7,
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 8,
+      "title": "Scene I",
+      "wordCount": 970,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 9,
+      "title": "Scene II",
+      "wordCount": 1706,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 10,
+      "title": "Scene III",
+      "wordCount": 2095,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 11,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 12,
+      "title": "Scene I",
+      "wordCount": 1151,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 13,
+      "title": "Scene II",
+      "wordCount": 1730,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 14,
+      "title": "Scene III",
+      "wordCount": 2467,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 15,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 16,
+      "title": "Scene I",
+      "wordCount": 680,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 17,
+      "title": "Scene II",
+      "wordCount": 946,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 18,
+      "title": "Scene III",
+      "wordCount": 121,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 19,
+      "title": "Scene IV",
+      "wordCount": 1249,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 20,
+      "title": "Scene V",
+      "wordCount": 2482,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 21,
       "title": "Act V",
-      "wordCount": 5479,
-      "estimatedMinutes": 22
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 22,
+      "title": "Scene I",
+      "wordCount": 873,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 23,
+      "title": "Scene II",
+      "wordCount": 1610,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 24,
+      "title": "Scene III",
+      "wordCount": 977,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 25,
+      "title": "Scene IV",
+      "wordCount": 316,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 26,
+      "title": "Scene V",
+      "wordCount": 372,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 27,
+      "title": "Scene VI",
+      "wordCount": 305,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 28,
+      "title": "Scene VII",
+      "wordCount": 207,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 29,
+      "title": "Scene VIII",
+      "wordCount": 216,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 30,
+      "title": "Scene IX",
+      "wordCount": 104,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 31,
+      "title": "Scene X",
+      "wordCount": 497,
+      "estimatedMinutes": 2
     }
   ]
 }

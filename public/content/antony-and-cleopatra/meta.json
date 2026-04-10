@@ -2,9 +2,9 @@
   "bookId": "antony-and-cleopatra",
   "title": "Antony and Cleopatra",
   "author": "William Shakespeare",
-  "chapterCount": 6,
-  "totalWordCount": 26771,
-  "totalMinutes": 108,
+  "chapterCount": 48,
+  "totalWords": 26761,
+  "totalEstimatedMinutes": 140,
   "chapters": [
     {
       "index": 0,
@@ -15,31 +15,283 @@
     {
       "index": 1,
       "title": "Act I",
-      "wordCount": 4406,
-      "estimatedMinutes": 18
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 2,
-      "title": "Act II",
-      "wordCount": 6456,
-      "estimatedMinutes": 26
+      "title": "Scene I",
+      "wordCount": 554,
+      "estimatedMinutes": 3
     },
     {
       "index": 3,
-      "title": "Act III",
-      "wordCount": 6541,
-      "estimatedMinutes": 26
+      "title": "Scene II",
+      "wordCount": 1565,
+      "estimatedMinutes": 8
     },
     {
       "index": 4,
-      "title": "Act IV",
-      "wordCount": 5269,
-      "estimatedMinutes": 21
+      "title": "Scene III",
+      "wordCount": 920,
+      "estimatedMinutes": 5
     },
     {
       "index": 5,
+      "title": "Scene IV",
+      "wordCount": 715,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 6,
+      "title": "Scene V",
+      "wordCount": 650,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 7,
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 8,
+      "title": "Scene I",
+      "wordCount": 443,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 9,
+      "title": "Scene II",
+      "wordCount": 2033,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 10,
+      "title": "Scene III",
+      "wordCount": 376,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 11,
+      "title": "Scene IV",
+      "wordCount": 94,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 12,
+      "title": "Scene V",
+      "wordCount": 1098,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 13,
+      "title": "Scene VI",
+      "wordCount": 1179,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 14,
+      "title": "Scene VII",
+      "wordCount": 1231,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 15,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 16,
+      "title": "Scene I",
+      "wordCount": 324,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 17,
+      "title": "Scene II",
+      "wordCount": 618,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 18,
+      "title": "Scene III",
+      "wordCount": 441,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 19,
+      "title": "Scene IV",
+      "wordCount": 315,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 20,
+      "title": "Scene V",
+      "wordCount": 198,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 21,
+      "title": "Scene VI",
+      "wordCount": 792,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 22,
+      "title": "Scene VII",
+      "wordCount": 712,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 23,
+      "title": "Scene VIII",
+      "wordCount": 52,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 24,
+      "title": "Scene IX",
+      "wordCount": 44,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 25,
+      "title": "Scene X",
+      "wordCount": 349,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 26,
+      "title": "Scene XI",
+      "wordCount": 612,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 27,
+      "title": "Scene XII",
+      "wordCount": 322,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 28,
+      "title": "Scene XIII",
+      "wordCount": 1760,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 29,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 30,
+      "title": "Scene I",
+      "wordCount": 160,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 31,
+      "title": "Scene II",
+      "wordCount": 435,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 32,
+      "title": "Scene III",
+      "wordCount": 255,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 33,
+      "title": "Scene IV",
+      "wordCount": 369,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 34,
+      "title": "Scene V",
+      "wordCount": 173,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 35,
+      "title": "Scene VI",
+      "wordCount": 323,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 36,
+      "title": "Scene VII",
+      "wordCount": 168,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 37,
+      "title": "Scene VIII",
+      "wordCount": 352,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 38,
+      "title": "Scene IX",
+      "wordCount": 307,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 39,
+      "title": "Scene X",
+      "wordCount": 89,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 40,
+      "title": "Scene XI",
+      "wordCount": 48,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 41,
+      "title": "Scene XII",
+      "wordCount": 442,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 42,
+      "title": "Scene XIII",
+      "wordCount": 104,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 43,
+      "title": "Scene XIV",
+      "wordCount": 1259,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 44,
+      "title": "Scene XV",
+      "wordCount": 783,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 45,
       "title": "Act V",
-      "wordCount": 3943,
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 46,
+      "title": "Scene I",
+      "wordCount": 688,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 47,
+      "title": "Scene II",
+      "wordCount": 3253,
       "estimatedMinutes": 16
     }
   ]

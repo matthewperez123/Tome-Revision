@@ -1,5 +1,5 @@
 // ── Tome Author Country Mapping ──
-// Maps all 169 unique book authors to ISO 3166-1 alpha-3 country codes,
+// Maps all book authors to ISO 3166-1 alpha-3 country codes,
 // provides continent groupings, and one-line bios for the Explore map feature.
 
 export interface AuthorCountryData {
@@ -1977,6 +1977,1677 @@ export const AUTHOR_COUNTRIES: Record<string, AuthorCountryData> = {
     deathYear: 1716,
     oneLine: "Restoration dramatist whose Country Wife is the most scandalous and funniest comedy of its era.",
   },
+  // ── Auto-generated from books.ts ────────────────────────────────────────
+  "A. N. Afanasyev": {
+    name: "A. N. Afanasyev",
+    country: "RUS",
+    oneLine: "Russian folklorist known for Russian Folktales.",
+  },
+  "A. P. Herbert": {
+    name: "A. P. Herbert",
+    country: "GBR",
+    oneLine: "English novelist known for The House by the River.",
+  },
+  "A. W. Tozer": {
+    name: "A. W. Tozer",
+    country: "GBR",
+    oneLine: "English novelist known for The Pursuit of God.",
+  },
+  "Ada Elizabeth Chesterton": {
+    name: "Ada Elizabeth Chesterton",
+    country: "GBR",
+    oneLine: "English social critic known for In Darkest London.",
+  },
+  "Adam Mickiewicz": {
+    name: "Adam Mickiewicz",
+    country: "POL",
+    oneLine: "Polish epic poet known for Pan Tadeusz.",
+  },
+  Aesop: {
+    name: "Aesop",
+    country: "GRC",
+    oneLine: "ancient Greek writer known for Fables.",
+  },
+  "Akutagawa Ryūnosuke": {
+    name: "Akutagawa Ryūnosuke",
+    country: "JPN",
+    oneLine: "Japanese short story writer known for Short Fiction.",
+  },
+  "Alain-René Lesage": {
+    name: "Alain-René Lesage",
+    country: "FRA",
+    oneLine: "French novelist known for Gil Blas.",
+  },
+  "Aleksandr Kuprin": {
+    name: "Aleksandr Kuprin",
+    country: "RUS",
+    oneLine: "Russian short story writer known for Short Fiction.",
+  },
+  "Alexander Berkman": {
+    name: "Alexander Berkman",
+    country: "RUS",
+    oneLine: "Russian memoirist known for The Bolshevik Myth.",
+  },
+  "Algernon Blackwood": {
+    name: "Algernon Blackwood",
+    country: "GBR",
+    oneLine: "English short story writer known for John Silence Stories.",
+  },
+  "Ambrose Bierce": {
+    name: "Ambrose Bierce",
+    country: "USA",
+    oneLine: "American satirist whose works include Poetry and The Devil's Dictionary.",
+  },
+  "Ameen Rihani": {
+    name: "Ameen Rihani",
+    country: "LBN",
+    oneLine: "Lebanese poet known for Poetry.",
+  },
+  "Andre Norton": {
+    name: "Andre Norton",
+    country: "GBR",
+    oneLine: "English novelist whose works include Key Out of Time and Plague Ship.",
+  },
+  "Anna Katharine Green": {
+    name: "Anna Katharine Green",
+    country: "USA",
+    oneLine: "American mystery writer whose works include The Leavenworth Case and A Strange Disappearance.",
+  },
+  "Anthony Berkeley": {
+    name: "Anthony Berkeley",
+    country: "GBR",
+    oneLine: "English novelist whose works include The Layton Court Mystery and The Poisoned Chocolates Case.",
+  },
+  "Apsley Cherry-Garrard": {
+    name: "Apsley Cherry-Garrard",
+    country: "GBR",
+    oneLine: "English writer known for The Worst Journey in the World.",
+  },
+  "Arnold Bennett": {
+    name: "Arnold Bennett",
+    country: "GBR",
+    oneLine: "English novelist whose works include Anna of the Five Towns and The Old Wives' Tale.",
+  },
+  "Arthur Machen": {
+    name: "Arthur Machen",
+    country: "GBR",
+    oneLine: "Wales novelist whose works include The Three Impostors and The Secret Glory.",
+  },
+  "Arthur W. Pinero": {
+    name: "Arthur W. Pinero",
+    country: "GBR",
+    oneLine: "English novelist known for The Second Mrs. Tanqueray.",
+  },
+  "Barbara Newhall Follett": {
+    name: "Barbara Newhall Follett",
+    country: "USA",
+    oneLine: "American novelist known for The House Without Windows.",
+  },
+  "Barry Goldwater": {
+    name: "Barry Goldwater",
+    country: "USA",
+    oneLine: "American writer known for The Conscience of a Conservative.",
+  },
+  "Beatrix Potter": {
+    name: "Beatrix Potter",
+    country: "GBR",
+    oneLine: "English short story writer known for Short Fiction.",
+  },
+  "Ben Jonson": {
+    name: "Ben Jonson",
+    country: "GBR",
+    oneLine: "English dramatist known for The Alchemist.",
+  },
+  "Benito Pérez Galdós": {
+    name: "Benito Pérez Galdós",
+    country: "ESP",
+    oneLine: "Spanish novelist known for Trafalgar.",
+  },
+  "Benjamin Disraeli": {
+    name: "Benjamin Disraeli",
+    country: "GBR",
+    oneLine: "English novelist known for Sybil, or The Two Nations.",
+  },
+  "Bertha von Suttner": {
+    name: "Bertha von Suttner",
+    country: "AUT",
+    oneLine: "Austrian novelist known for Lay Down Your Arms.",
+  },
+  "Black Hawk": {
+    name: "Black Hawk",
+    country: "USA",
+    oneLine: "American memoirist known for Autobiography of Black Hawk.",
+  },
+  Boethius: {
+    name: "Boethius",
+    country: "ITA",
+    birthYear: 477,
+    deathYear: 524,
+    oneLine: "Roman senator and philosopher whose Consolation of Philosophy shaped medieval thought.",
+  },
+  "C. E. Montague": {
+    name: "C. E. Montague",
+    country: "GBR",
+    oneLine: "English war writer known for Disenchantment.",
+  },
+  "C. S. Forester": {
+    name: "C. S. Forester",
+    country: "GBR",
+    oneLine: "English novelist whose works include Payment Deferred and Brown on Resolution.",
+  },
+  "C. S. Lewis": {
+    name: "C. S. Lewis",
+    country: "GBR",
+    oneLine: "English novelist whose works include Poetry and Poetry.",
+  },
+  "Calvin Coolidge": {
+    name: "Calvin Coolidge",
+    country: "GBR",
+    oneLine: "English novelist known for The Autobiography of Calvin Coolidge.",
+  },
+  "Carey Rockwell": {
+    name: "Carey Rockwell",
+    country: "USA",
+    oneLine: "American science fiction writer known for Stand by for Mars!.",
+  },
+  "Carolyn Keene": {
+    name: "Carolyn Keene",
+    country: "USA",
+    oneLine: "American mystery writer whose works include The Secret of the Old Clock and The Hidden Staircase.",
+  },
+  "Carolyn Wells": {
+    name: "Carolyn Wells",
+    country: "USA",
+    oneLine: "American novelist known for The Clue.",
+  },
+  "Charles Beaumont": {
+    name: "Charles Beaumont",
+    country: "USA",
+    oneLine: "American short story writer known for Short Fiction.",
+  },
+  "Charles Kingsley": {
+    name: "Charles Kingsley",
+    country: "GBR",
+    oneLine: "English novelist known for The Water-Babies.",
+  },
+  "Charlotte Perkins Gilman": {
+    name: "Charlotte Perkins Gilman",
+    country: "USA",
+    oneLine: "American novelist whose works include Women and Economics and Herland.",
+  },
+  "Christopher Morley": {
+    name: "Christopher Morley",
+    country: "USA",
+    oneLine: "American novelist whose works include Parnassus on Wheels and The Haunted Bookshop.",
+  },
+  "Cicely Hamilton": {
+    name: "Cicely Hamilton",
+    country: "GBR",
+    oneLine: "English novelist known for Theodore Savage.",
+  },
+  Cicero: {
+    name: "Cicero",
+    country: "ITA",
+    oneLine: "Roman philosopher known for Tusculan Disputations.",
+  },
+  "Clara Reeve": {
+    name: "Clara Reeve",
+    country: "GBR",
+    oneLine: "English novelist known for The Old English Baron.",
+  },
+  "Clark Ashton Smith": {
+    name: "Clark Ashton Smith",
+    country: "USA",
+    oneLine: "American short story writer known for Short Fiction.",
+  },
+  "Clifford D. Simak": {
+    name: "Clifford D. Simak",
+    country: "USA",
+    oneLine: "American short story writer known for Short Fiction.",
+  },
+  "Compton Mackenzie": {
+    name: "Compton Mackenzie",
+    country: "GBR",
+    oneLine: "English novelist known for Sinister Street.",
+  },
+  "Constance Holme": {
+    name: "Constance Holme",
+    country: "GBR",
+    oneLine: "English novelist known for The Splendid Fairing.",
+  },
+  "Cordwainer Smith": {
+    name: "Cordwainer Smith",
+    country: "USA",
+    oneLine: "American short story writer known for Short Fiction.",
+  },
+  "Daisy Ashford": {
+    name: "Daisy Ashford",
+    country: "GBR",
+    oneLine: "English novelist known for The Young Visiters.",
+  },
+  "Daphne du Maurier": {
+    name: "Daphne du Maurier",
+    country: "GBR",
+    oneLine: "English short story writer known for Short Fiction.",
+  },
+  "David Lindsay": {
+    name: "David Lindsay",
+    country: "GBR",
+    oneLine: "Scottish novelist known for A Voyage to Arcturus.",
+  },
+  "Denis Diderot": {
+    name: "Denis Diderot",
+    country: "FRA",
+    oneLine: "French novelist known for The Indiscreet Jewels.",
+  },
+  "Diogenes Laërtius": {
+    name: "Diogenes Laërtius",
+    country: "GRC",
+    oneLine: "ancient Greek biographer known for The Lives and Opinions of Eminent Philosophers.",
+  },
+  "Dorothy Canfield Fisher": {
+    name: "Dorothy Canfield Fisher",
+    country: "USA",
+    oneLine: "American novelist whose works include Understood Betsy and The Homemaker.",
+  },
+  "Dorothy Day": {
+    name: "Dorothy Day",
+    country: "USA",
+    oneLine: "American novelist known for The Eleventh Virgin.",
+  },
+  "Dorothy L. Sayers and Robert Eustace": {
+    name: "Dorothy L. Sayers and Robert Eustace",
+    country: "GBR",
+    oneLine: "English novelist known for The Documents in the Case.",
+  },
+  "Dorothy M. Richardson": {
+    name: "Dorothy M. Richardson",
+    country: "GBR",
+    oneLine: "English novelist whose works include Pointed Roofs and Backwater.",
+  },
+  "E. C. Bentley": {
+    name: "E. C. Bentley",
+    country: "GBR",
+    oneLine: "English novelist known for Trent's Last Case.",
+  },
+  "E. E. Cummings": {
+    name: "E. E. Cummings",
+    country: "USA",
+    oneLine: "American novelist known for The Enormous Room.",
+  },
+  "E. E. Smith": {
+    name: "E. E. Smith",
+    country: "USA",
+    oneLine: "American novelist known for The Skylark of Space.",
+  },
+  "E. F. Benson": {
+    name: "E. F. Benson",
+    country: "GBR",
+    oneLine: "English short story writer known for Ghost Stories.",
+  },
+  "E. F. Knight": {
+    name: "E. F. Knight",
+    country: "GBR",
+    oneLine: "English adventure novelist known for The Cruise of the Alerte.",
+  },
+  "E. H. Young": {
+    name: "E. H. Young",
+    country: "GBR",
+    oneLine: "English novelist known for Miss Mole.",
+  },
+  "E. Pauline Johnson": {
+    name: "E. Pauline Johnson",
+    country: "CAN",
+    oneLine: "Canadian novelist known for Legends of Vancouver.",
+  },
+  "E. Phillips Oppenheim": {
+    name: "E. Phillips Oppenheim",
+    country: "GBR",
+    oneLine: "English novelist known for The Great Impersonation.",
+  },
+  "E. R. Eddison": {
+    name: "E. R. Eddison",
+    country: "GBR",
+    oneLine: "English novelist known for The Worm Ouroboros.",
+  },
+  "E. T. A. Hoffmann": {
+    name: "E. T. A. Hoffmann",
+    country: "DEU",
+    oneLine: "German novelist known for Master Flea.",
+  },
+  "E. W. Hornung": {
+    name: "E. W. Hornung",
+    country: "GBR",
+    oneLine: "English novelist whose works include The Amateur Cracksman and The Black Mask.",
+  },
+  "Earl Derr Biggers": {
+    name: "Earl Derr Biggers",
+    country: "USA",
+    oneLine: "American novelist whose works include The House Without a Key and The Chinese Parrot.",
+  },
+  "Edgar Saltus": {
+    name: "Edgar Saltus",
+    country: "USA",
+    oneLine: "American novelist known for The Truth About Tristrem Varick.",
+  },
+  "Edgar Wallace": {
+    name: "Edgar Wallace",
+    country: "GBR",
+    oneLine: "English mystery writer whose works include The Four Just Men and The Council of Justice.",
+  },
+  "Edmond de Goncourt and Jules de Goncourt": {
+    name: "Edmond de Goncourt and Jules de Goncourt",
+    country: "FRA",
+    oneLine: "French novelist known for Germinie Lacerteux.",
+  },
+  "Edward Bulwer-Lytton": {
+    name: "Edward Bulwer-Lytton",
+    country: "GBR",
+    oneLine: "English novelist known for The Coming Race.",
+  },
+  "Edward Eggleston": {
+    name: "Edward Eggleston",
+    country: "USA",
+    oneLine: "American novelist known for The Hoosier Schoolmaster.",
+  },
+  "Edward Lear": {
+    name: "Edward Lear",
+    country: "GBR",
+    oneLine: "English novelist known for Nonsense Books.",
+  },
+  "Edward Payson Roe": {
+    name: "Edward Payson Roe",
+    country: "USA",
+    oneLine: "American novelist known for Driven Back to Eden.",
+  },
+  "Edward Thomas": {
+    name: "Edward Thomas",
+    country: "GBR",
+    oneLine: "English poet known for Poetry.",
+  },
+  "Edward Whymper": {
+    name: "Edward Whymper",
+    country: "GBR",
+    oneLine: "English novelist known for Scrambles Amongst the Alps.",
+  },
+  "Elizabeth Barrett Browning": {
+    name: "Elizabeth Barrett Browning",
+    country: "GBR",
+    oneLine: "English novelist known for Sonnets from the Portuguese.",
+  },
+  "Ella Cheever Thayer": {
+    name: "Ella Cheever Thayer",
+    country: "USA",
+    oneLine: "American novelist known for Wired Love.",
+  },
+  "Ellery Queen": {
+    name: "Ellery Queen",
+    country: "USA",
+    oneLine: "American novelist known for The Roman Hat Mystery.",
+  },
+  "Émile Gaboriau": {
+    name: "Émile Gaboriau",
+    country: "FRA",
+    oneLine: "French novelist whose works include The Lerouge Case and File No. 113.",
+  },
+  "Emma Goldman": {
+    name: "Emma Goldman",
+    country: "USA",
+    oneLine: "American novelist known for My Disillusionment in Russia.",
+  },
+  Epictetus: {
+    name: "Epictetus",
+    country: "ITA",
+    oneLine: "Roman philosopher known for Discourses.",
+  },
+  "Ernest Bramah": {
+    name: "Ernest Bramah",
+    country: "GBR",
+    oneLine: "English fantasy writer known for Kai Lung's Golden Hours.",
+  },
+  "Ernest Poole": {
+    name: "Ernest Poole",
+    country: "USA",
+    oneLine: "American novelist known for His Family.",
+  },
+  "Ernest Shackleton": {
+    name: "Ernest Shackleton",
+    country: "GBR",
+    oneLine: "English writer known for South.",
+  },
+  "Ernest Thompson Seton": {
+    name: "Ernest Thompson Seton",
+    country: "CAN",
+    oneLine: "Canadian nature writer known for Wild Animals I Have Known.",
+  },
+  "Ethel Voynich": {
+    name: "Ethel Voynich",
+    country: "GBR",
+    oneLine: "English novelist known for The Gadfly.",
+  },
+  "Etsu Inagaki Sugimoto": {
+    name: "Etsu Inagaki Sugimoto",
+    country: "JPN",
+    oneLine: "Japanese memoirist known for A Daughter of the Samurai.",
+  },
+  "Evelyn Underhill": {
+    name: "Evelyn Underhill",
+    country: "GBR",
+    oneLine: "English writer known for Practical Mysticism.",
+  },
+  "Fergus Hume": {
+    name: "Fergus Hume",
+    country: "AUS",
+    oneLine: "Australian novelist known for The Mystery of a Hansom Cab.",
+  },
+  "Fernando Pessoa": {
+    name: "Fernando Pessoa",
+    country: "PRT",
+    oneLine: "Portuguese poet known for Poetry.",
+  },
+  "Fitz Hugh Ludlow": {
+    name: "Fitz Hugh Ludlow",
+    country: "USA",
+    oneLine: "American novelist known for The Hasheesh Eater.",
+  },
+  "Frances Noyes Hart": {
+    name: "Frances Noyes Hart",
+    country: "USA",
+    oneLine: "American mystery writer known for The Bellamy Trial.",
+  },
+  "Francis La Flesche": {
+    name: "Francis La Flesche",
+    country: "USA",
+    oneLine: "American novelist known for The Middle Five.",
+  },
+  "Frank Hamilton Cushing": {
+    name: "Frank Hamilton Cushing",
+    country: "USA",
+    oneLine: "American folklorist known for Zuni Folktales.",
+  },
+  "Franklin W. Dixon": {
+    name: "Franklin W. Dixon",
+    country: "GBR",
+    oneLine: "English novelist whose works include Hunting for Hidden Gold and The House on the Cliff.",
+  },
+  "Frédéric Mistral": {
+    name: "Frédéric Mistral",
+    country: "FRA",
+    oneLine: "French novelist known for Mirèio.",
+  },
+  "Frederick Rolfe": {
+    name: "Frederick Rolfe",
+    country: "GBR",
+    oneLine: "English novelist known for Hadrian the Seventh.",
+  },
+  "Frederik Pohl": {
+    name: "Frederik Pohl",
+    country: "USA",
+    oneLine: "American short story writer known for Short Fiction.",
+  },
+  "Freeman Wills Crofts": {
+    name: "Freeman Wills Crofts",
+    country: "IRL",
+    oneLine: "Irish mystery writer whose works include The Cask and The Ponson Case.",
+  },
+  "Friedrich Spielhagen": {
+    name: "Friedrich Spielhagen",
+    country: "DEU",
+    oneLine: "German novelist known for The Breaking of the Storm.",
+  },
+  "Fritz Leiber": {
+    name: "Fritz Leiber",
+    country: "USA",
+    oneLine: "American science fiction writer whose works include Short Fiction and The Big Time.",
+  },
+  "Fyodor Sologub": {
+    name: "Fyodor Sologub",
+    country: "RUS",
+    oneLine: "Russian novelist whose works include The Little Demon and Short Fiction.",
+  },
+  "G. D. H. Cole": {
+    name: "G. D. H. Cole",
+    country: "GBR",
+    oneLine: "English mystery writer known for The Brooklyn Murders.",
+  },
+  "G. E. Moore": {
+    name: "G. E. Moore",
+    country: "GBR",
+    oneLine: "English philosopher known for Principia Ethica.",
+  },
+  "Gene Stratton-Porter": {
+    name: "Gene Stratton-Porter",
+    country: "USA",
+    oneLine: "American novelist known for Freckles.",
+  },
+  "Geoffrey Dennis": {
+    name: "Geoffrey Dennis",
+    country: "GBR",
+    oneLine: "English novelist known for The End of the World.",
+  },
+  "George Barr McCutcheon": {
+    name: "George Barr McCutcheon",
+    country: "USA",
+    oneLine: "American novelist known for Brewster's Millions.",
+  },
+  "George Borrow": {
+    name: "George Borrow",
+    country: "GBR",
+    oneLine: "English novelist known for Lavengro.",
+  },
+  "George Dilnot": {
+    name: "George Dilnot",
+    country: "GBR",
+    oneLine: "English mystery writer known for The Lazy Detective.",
+  },
+  "George du Maurier": {
+    name: "George du Maurier",
+    country: "GBR",
+    oneLine: "English novelist known for Trilby.",
+  },
+  "George Gissing": {
+    name: "George Gissing",
+    country: "GBR",
+    oneLine: "English novelist whose works include New Grub Street and The Private Papers of Henry Ryecroft.",
+  },
+  "George Grey": {
+    name: "George Grey",
+    country: "NZL",
+    oneLine: "New Zealand writer known for Polynesian Mythology.",
+  },
+  "George S. Schuyler": {
+    name: "George S. Schuyler",
+    country: "USA",
+    oneLine: "American novelist known for Black No More.",
+  },
+  "George Sand": {
+    name: "George Sand",
+    country: "FRA",
+    oneLine: "French novelist whose works include Mauprat and The Devil's Pool.",
+  },
+  "George William Russell": {
+    name: "George William Russell",
+    country: "IRL",
+    oneLine: "Irish writer known for The National Being.",
+  },
+  "Georgette Heyer": {
+    name: "Georgette Heyer",
+    country: "GBR",
+    oneLine: "English historical novelist whose works include The Black Moth and These Old Shades.",
+  },
+  "Georgia Douglas Johnson": {
+    name: "Georgia Douglas Johnson",
+    country: "USA",
+    oneLine: "American poet known for Poetry.",
+  },
+  Geronimo: {
+    name: "Geronimo",
+    country: "USA",
+    oneLine: "American memoirist known for Geronimo's Story of His Life.",
+  },
+  "Godfrey R. Benson": {
+    name: "Godfrey R. Benson",
+    country: "GBR",
+    oneLine: "English essayist known for Tracks in the Snow.",
+  },
+  "Graham Greene": {
+    name: "Graham Greene",
+    country: "GBR",
+    oneLine: "English novelist known for The Man Within.",
+  },
+  "Grazia Deledda": {
+    name: "Grazia Deledda",
+    country: "ITA",
+    oneLine: "Italian novelist known for After the Divorce.",
+  },
+  "Gustave Le Bon": {
+    name: "Gustave Le Bon",
+    country: "FRA",
+    oneLine: "French writer known for The Crowd.",
+  },
+  "Guy de Maupassant": {
+    name: "Guy de Maupassant",
+    country: "FRA",
+    oneLine: "French novelist whose works include Short Fiction and Pierre and Jean.",
+  },
+  "H. Beam Piper": {
+    name: "H. Beam Piper",
+    country: "GBR",
+    oneLine: "English novelist whose works include Four-Day Planet and Little Fuzzy.",
+  },
+  "H. C. McNeile": {
+    name: "H. C. McNeile",
+    country: "GBR",
+    oneLine: "English novelist known for Bulldog Drummond.",
+  },
+  "H. de Vere Stacpoole": {
+    name: "H. de Vere Stacpoole",
+    country: "GBR",
+    oneLine: "English novelist known for The Blue Lagoon.",
+  },
+  "Hans Jakob Christoffel von Grimmelshausen": {
+    name: "Hans Jakob Christoffel von Grimmelshausen",
+    country: "DEU",
+    oneLine: "German novelist known for The Adventurous Simplicissimus.",
+  },
+  "Harriet E. Wilson": {
+    name: "Harriet E. Wilson",
+    country: "USA",
+    oneLine: "American novelist known for Our Nig.",
+  },
+  "Harry Harrison": {
+    name: "Harry Harrison",
+    country: "USA",
+    oneLine: "American novelist whose works include The Stainless Steel Rat and Planet of the Damned.",
+  },
+  "Helen Herron Taft": {
+    name: "Helen Herron Taft",
+    country: "USA",
+    oneLine: "American memoirist known for Recollections of Full Years.",
+  },
+  "Helen Keller": {
+    name: "Helen Keller",
+    country: "USA",
+    oneLine: "American memoirist known for The Story of My Life.",
+  },
+  "Henry Blake Fuller": {
+    name: "Henry Blake Fuller",
+    country: "USA",
+    oneLine: "American novelist known for Bertram Cope's Year.",
+  },
+  "Henry George": {
+    name: "Henry George",
+    country: "USA",
+    oneLine: "American writer known for Progress and Poverty.",
+  },
+  "Henry Kuttner": {
+    name: "Henry Kuttner",
+    country: "USA",
+    oneLine: "American short story writer known for Short Fiction.",
+  },
+  "Henry van Dyke Jr.": {
+    name: "Henry van Dyke Jr.",
+    country: "USA",
+    oneLine: "American poet known for Poetry.",
+  },
+  "Hilaire Belloc": {
+    name: "Hilaire Belloc",
+    country: "GBR",
+    oneLine: "English writer known for The Cruise of the Nona.",
+  },
+  "Hjalmar Söderberg": {
+    name: "Hjalmar Söderberg",
+    country: "SWE",
+    oneLine: "Swedish short story writer known for Short Fiction.",
+  },
+  "Hope Mirrlees": {
+    name: "Hope Mirrlees",
+    country: "GBR",
+    oneLine: "English novelist known for Lud-in-the-Mist.",
+  },
+  "Horatio Alger Jr.": {
+    name: "Horatio Alger Jr.",
+    country: "USA",
+    oneLine: "American novelist known for Ragged Dick.",
+  },
+  "Isaac Asimov": {
+    name: "Isaac Asimov",
+    country: "USA",
+    oneLine: "American short story writer known for Short Science Fiction.",
+  },
+  "Israel Zangwill": {
+    name: "Israel Zangwill",
+    country: "GBR",
+    oneLine: "English novelist known for The Big Bow Mystery.",
+  },
+  "Ivan Bunin": {
+    name: "Ivan Bunin",
+    country: "RUS",
+    oneLine: "Russian short story writer known for Short Fiction.",
+  },
+  "Ivy Compton-Burnett": {
+    name: "Ivy Compton-Burnett",
+    country: "GBR",
+    oneLine: "English novelist known for Pastors and Masters.",
+  },
+  "J. J. Connington": {
+    name: "J. J. Connington",
+    country: "GBR",
+    oneLine: "English novelist whose works include Murder in the Maze and Mystery at Lynden Sands.",
+  },
+  "J. M. Synge": {
+    name: "J. M. Synge",
+    country: "IRL",
+    oneLine: "Irish novelist whose works include Short Plays and The Playboy of the Western World.",
+  },
+  "J. P. Jacobsen": {
+    name: "J. P. Jacobsen",
+    country: "DNK",
+    oneLine: "Danish novelist known for Niels Lyhne.",
+  },
+  "J. Sheridan Le Fanu": {
+    name: "J. Sheridan Le Fanu",
+    country: "IRL",
+    oneLine: "Irish writer whose works include Short Fiction and The Room in the Dragon Volant.",
+  },
+  "J. Storer Clouston": {
+    name: "J. Storer Clouston",
+    country: "GBR",
+    oneLine: "Scottish novelist known for The Spy in Black.",
+  },
+  "J.-K. Huysmans": {
+    name: "J.-K. Huysmans",
+    country: "FRA",
+    oneLine: "French novelist known for Là-Bas.",
+  },
+  "Jacob Grimm & Wilhelm Grimm": {
+    name: "Jacob Grimm & Wilhelm Grimm",
+    country: "DEU",
+    oneLine: "German short story writer known for Household Tales.",
+  },
+  "James Branch Cabell": {
+    name: "James Branch Cabell",
+    country: "USA",
+    oneLine: "American novelist whose works include Jurgen and Figures of Earth.",
+  },
+  "James Hogg": {
+    name: "James Hogg",
+    country: "GBR",
+    oneLine: "Scottish novelist known for The Private Memoirs and Confessions of a Justified Sinner.",
+  },
+  "James Stephens": {
+    name: "James Stephens",
+    country: "IRL",
+    oneLine: "Irish novelist whose works include The Crock of Gold and Irish Fairy Tales.",
+  },
+  "Jane Addams": {
+    name: "Jane Addams",
+    country: "USA",
+    oneLine: "American writer whose works include Democracy and Social Ethics and Twenty Years at Hull House.",
+  },
+  "Jean Grave": {
+    name: "Jean Grave",
+    country: "FRA",
+    oneLine: "French writer known for Moribund Society and Anarchy.",
+  },
+  "Jessie Redmon Fauset": {
+    name: "Jessie Redmon Fauset",
+    country: "USA",
+    oneLine: "American novelist whose works include There Is Confusion and Plum Bun.",
+  },
+  "Joel Barlow": {
+    name: "Joel Barlow",
+    country: "USA",
+    oneLine: "American epic poet known for The Columbiad.",
+  },
+  "Johann David Wyss": {
+    name: "Johann David Wyss",
+    country: "CHE",
+    oneLine: "Swiss novelist known for The Swiss Family Robinson.",
+  },
+  "John A. Lomax": {
+    name: "John A. Lomax",
+    country: "USA",
+    oneLine: "American poet known for Songs of the Cattle Trail and Cow Camp.",
+  },
+  "John Cowper Powys": {
+    name: "John Cowper Powys",
+    country: "GBR",
+    oneLine: "English novelist known for Wolf Solent.",
+  },
+  "John Dewey": {
+    name: "John Dewey",
+    country: "USA",
+    oneLine: "American philosopher whose works include Democracy and Education and Human Nature and Conduct.",
+  },
+  "John Henry Newman": {
+    name: "John Henry Newman",
+    country: "GBR",
+    oneLine: "English novelist known for Verses on Various Occasions.",
+  },
+  "John Meade Falkner": {
+    name: "John Meade Falkner",
+    country: "GBR",
+    oneLine: "English novelist whose works include Moonfleet and The Nebuly Coat.",
+  },
+  "John Muir": {
+    name: "John Muir",
+    country: "USA",
+    oneLine: "American writer known for My First Summer in the Sierra.",
+  },
+  "John Ruskin": {
+    name: "John Ruskin",
+    country: "GBR",
+    oneLine: "English writer known for Unto This Last.",
+  },
+  "John Steinbeck": {
+    name: "John Steinbeck",
+    country: "USA",
+    oneLine: "American novelist known for Cup of Gold.",
+  },
+  "John W. Campbell": {
+    name: "John W. Campbell",
+    country: "GBR",
+    oneLine: "English novelist whose works include Invaders from the Infinite and Islands of Space.",
+  },
+  "Jonas Lie": {
+    name: "Jonas Lie",
+    country: "NOR",
+    oneLine: "Norwegian short story writer known for Short Fiction.",
+  },
+  "Joseph Conrad and Ford Madox Ford": {
+    name: "Joseph Conrad and Ford Madox Ford",
+    country: "GBR",
+    oneLine: "English novelist whose works include The Inheritors and Romance.",
+  },
+  "Joseph Jacobs": {
+    name: "Joseph Jacobs",
+    country: "GBR",
+    oneLine: "English folklorist known for Indian Fairy Tales.",
+  },
+  "Josiah Henson": {
+    name: "Josiah Henson",
+    country: "USA",
+    oneLine: "American novelist known for Father Henson's Story of His Own Life.",
+  },
+  "Julia Peterkin": {
+    name: "Julia Peterkin",
+    country: "USA",
+    oneLine: "American novelist known for Scarlet Sister Mary.",
+  },
+  "Karel Čapek": {
+    name: "Karel Čapek",
+    country: "CZE",
+    oneLine: "Czech dramatist whose works include R.U.R. and The Absolute at Large.",
+  },
+  "Karl Gjellerup": {
+    name: "Karl Gjellerup",
+    country: "DNK",
+    oneLine: "Danish novelist known for The Pilgrim Kamanita.",
+  },
+  "Katharine Susannah Prichard": {
+    name: "Katharine Susannah Prichard",
+    country: "AUS",
+    oneLine: "Australian novelist known for The Black Opal.",
+  },
+  "Knut Hamsun": {
+    name: "Knut Hamsun",
+    country: "NOR",
+    oneLine: "Norwegian novelist whose works include Hunger and Growth of the Soil.",
+  },
+  "L. T. Hobhouse": {
+    name: "L. T. Hobhouse",
+    country: "GBR",
+    oneLine: "English writer known for Liberalism.",
+  },
+  "Lady Gregory & W. B. Yeats": {
+    name: "Lady Gregory & W. B. Yeats",
+    country: "GBR",
+    oneLine: "English novelist known for The Unicorn from the Stars.",
+  },
+  "Langston Hughes": {
+    name: "Langston Hughes",
+    country: "USA",
+    oneLine: "American novelist whose works include Poetry and Not Without Laughter.",
+  },
+  "Langston Hughes & Zora Neale Hurston": {
+    name: "Langston Hughes & Zora Neale Hurston",
+    country: "USA",
+    oneLine: "American dramatist known for Mule Bone.",
+  },
+  "Leonid Andreyev": {
+    name: "Leonid Andreyev",
+    country: "RUS",
+    oneLine: "Russian novelist whose works include Short Fiction and He Who Gets Slapped.",
+  },
+  "Lewis Mumford": {
+    name: "Lewis Mumford",
+    country: "USA",
+    oneLine: "American novelist whose works include The Story of Utopias and Sticks and Stones.",
+  },
+  "Liam O'Flaherty": {
+    name: "Liam O'Flaherty",
+    country: "IRL",
+    oneLine: "Irish novelist known for The Informer.",
+  },
+  "Lloyd C. Douglas": {
+    name: "Lloyd C. Douglas",
+    country: "USA",
+    oneLine: "American novelist known for Magnificent Obsession.",
+  },
+  "Lord Byron": {
+    name: "Lord Byron",
+    country: "GBR",
+    oneLine: "English epic poet known for Don Juan.",
+  },
+  "Lord Dunsany": {
+    name: "Lord Dunsany",
+    country: "IRL",
+    oneLine: "Irish novelist whose works include The King of Elfland's Daughter and The Charwoman's Shadow.",
+  },
+  "Louis Bromfield": {
+    name: "Louis Bromfield",
+    country: "USA",
+    oneLine: "American novelist known for Early Autumn.",
+  },
+  "Louis H. Sullivan": {
+    name: "Louis H. Sullivan",
+    country: "USA",
+    oneLine: "American memoirist known for The Autobiography of an Idea.",
+  },
+  "Louis Hémon": {
+    name: "Louis Hémon",
+    country: "CAN",
+    oneLine: "Canadian novelist known for Maria Chapdelaine.",
+  },
+  "Louis Joseph Vance": {
+    name: "Louis Joseph Vance",
+    country: "USA",
+    oneLine: "American novelist known for The Lone Wolf.",
+  },
+  "Ludovico Ariosto": {
+    name: "Ludovico Ariosto",
+    country: "ITA",
+    oneLine: "Italian epic poet known for Orlando Furioso.",
+  },
+  "Lysander Spooner": {
+    name: "Lysander Spooner",
+    country: "GBR",
+    oneLine: "English novelist known for No Treason.",
+  },
+  "Lytton Strachey": {
+    name: "Lytton Strachey",
+    country: "GBR",
+    oneLine: "English novelist whose works include Eminent Victorians and Queen Victoria.",
+  },
+  "M. E. Braddon": {
+    name: "M. E. Braddon",
+    country: "GBR",
+    oneLine: "English novelist whose works include The Trail of the Serpent and Lady Audley's Secret.",
+  },
+  "M. P. Shiel": {
+    name: "M. P. Shiel",
+    country: "GBR",
+    oneLine: "English novelist known for The Purple Cloud.",
+  },
+  "M. R. James": {
+    name: "M. R. James",
+    country: "GBR",
+    oneLine: "English short story writer known for Short Fiction.",
+  },
+  "Mack Reynolds": {
+    name: "Mack Reynolds",
+    country: "USA",
+    oneLine: "American short story writer known for Short Fiction.",
+  },
+  "Manly Wade Wellman": {
+    name: "Manly Wade Wellman",
+    country: "USA",
+    oneLine: "American short story writer known for Short Fiction.",
+  },
+  "Margaret Ayer Barnes": {
+    name: "Margaret Ayer Barnes",
+    country: "USA",
+    oneLine: "American novelist known for Years of Grace.",
+  },
+  "Margaret Cavendish": {
+    name: "Margaret Cavendish",
+    country: "GBR",
+    oneLine: "English novelist known for The Blazing World.",
+  },
+  "Margaret Oliphant": {
+    name: "Margaret Oliphant",
+    country: "GBR",
+    oneLine: "English novelist whose works include Salem Chapel and The Perpetual Curate.",
+  },
+  "Margaret Wilson": {
+    name: "Margaret Wilson",
+    country: "USA",
+    oneLine: "American novelist known for The Able McLaughlins.",
+  },
+  "Margery Allingham": {
+    name: "Margery Allingham",
+    country: "GBR",
+    oneLine: "English novelist known for The Crime at Black Dudley.",
+  },
+  "Maria Bochkareva": {
+    name: "Maria Bochkareva",
+    country: "RUS",
+    oneLine: "Russian memoirist known for Yashka.",
+  },
+  "Marie Belloc Lowndes": {
+    name: "Marie Belloc Lowndes",
+    country: "GBR",
+    oneLine: "English novelist known for The Lodger.",
+  },
+  "Marie de France": {
+    name: "Marie de France",
+    country: "FRA",
+    oneLine: "French poet known for Lais.",
+  },
+  "Mark Rutherford": {
+    name: "Mark Rutherford",
+    country: "GBR",
+    oneLine: "English novelist known for The Autobiography of Mark Rutherford.",
+  },
+  "Marmaduke Pickthall": {
+    name: "Marmaduke Pickthall",
+    country: "GBR",
+    oneLine: "English novelist known for Veiled Women.",
+  },
+  "Martin Andersen Nexø": {
+    name: "Martin Andersen Nexø",
+    country: "DNK",
+    oneLine: "Danish novelist known for Pelle the Conqueror.",
+  },
+  "Mary Austin": {
+    name: "Mary Austin",
+    country: "USA",
+    oneLine: "American writer known for The Land of Little Rain.",
+  },
+  "Mary Parker Follett": {
+    name: "Mary Parker Follett",
+    country: "USA",
+    oneLine: "American writer known for The New State.",
+  },
+  "Mary Weston Fordham": {
+    name: "Mary Weston Fordham",
+    country: "USA",
+    oneLine: "American poet known for Magnolia Leaves.",
+  },
+  "Matthew Arnold": {
+    name: "Matthew Arnold",
+    country: "GBR",
+    oneLine: "English essayist whose works include Poetry and Culture and Anarchy.",
+  },
+  "Matthew Henson": {
+    name: "Matthew Henson",
+    country: "USA",
+    oneLine: "American novelist known for A Negro Explorer at the North Pole.",
+  },
+  "Maurice Leblanc": {
+    name: "Maurice Leblanc",
+    country: "FRA",
+    oneLine: "French novelist whose works include 813 and Memoirs of Arsène Lupin.",
+  },
+  "Max Beerbohm": {
+    name: "Max Beerbohm",
+    country: "GBR",
+    oneLine: "English novelist known for Zuleika Dobson.",
+  },
+  "May Sinclair": {
+    name: "May Sinclair",
+    country: "GBR",
+    oneLine: "English novelist known for Mary Olivier: A Life.",
+  },
+  "Metta Victor": {
+    name: "Metta Victor",
+    country: "USA",
+    oneLine: "American mystery writer known for The Dead Letter.",
+  },
+  "Michael Arlen": {
+    name: "Michael Arlen",
+    country: "GBR",
+    oneLine: "English novelist known for The Green Hat.",
+  },
+  "Mignon G. Eberhart": {
+    name: "Mignon G. Eberhart",
+    country: "USA",
+    oneLine: "American mystery writer known for The Patient in Room 18.",
+  },
+  "Mikhail Artsybashev": {
+    name: "Mikhail Artsybashev",
+    country: "RUS",
+    oneLine: "Russian novelist known for Sanine.",
+  },
+  "Mina Loy": {
+    name: "Mina Loy",
+    country: "GBR",
+    oneLine: "English poet known for Poetry.",
+  },
+  Molière: {
+    name: "Molière",
+    country: "FRA",
+    oneLine: "French novelist known for Tartuffe.",
+  },
+  "Nikolay Chernyshevsky": {
+    name: "Nikolay Chernyshevsky",
+    country: "RUS",
+    oneLine: "Russian novelist known for What Is to Be Done?.",
+  },
+  "Noël Coward": {
+    name: "Noël Coward",
+    country: "GBR",
+    oneLine: "English dramatist known for The Vortex.",
+  },
+  "Norbert Jacques": {
+    name: "Norbert Jacques",
+    country: "LUX",
+    birthYear: 1880,
+    deathYear: 1954,
+    oneLine: "Luxembourgish author who created the villainous Dr. Mabuse.",
+  },
+  "O. Henry": {
+    name: "O. Henry",
+    country: "USA",
+    oneLine: "American short story writer known for Short Fiction.",
+  },
+  "Octave Mirbeau": {
+    name: "Octave Mirbeau",
+    country: "FRA",
+    oneLine: "French novelist known for Calvary.",
+  },
+  "Okakura Kakuzō": {
+    name: "Okakura Kakuzō",
+    country: "JPN",
+    oneLine: "Japanese writer known for The Book of Tea.",
+  },
+  "Olaf Stapledon": {
+    name: "Olaf Stapledon",
+    country: "GBR",
+    oneLine: "English novelist known for Last and First Men.",
+  },
+  "Oliver La Farge": {
+    name: "Oliver La Farge",
+    country: "USA",
+    oneLine: "American novelist known for Laughing Boy.",
+  },
+  "Owen Johnson": {
+    name: "Owen Johnson",
+    country: "USA",
+    oneLine: "American novelist known for Stover at Yale.",
+  },
+  "P. T. Barnum": {
+    name: "P. T. Barnum",
+    country: "GBR",
+    oneLine: "English novelist whose works include Struggles and Triumphs: Or, Forty Years’ Recollections and The Art of Money Getting: Or, Golden Rules for Making Money.",
+  },
+  "Paul Dukes": {
+    name: "Paul Dukes",
+    country: "GBR",
+    oneLine: "English memoirist known for Red Dusk and the Morrow.",
+  },
+  "Paul Laurence Dunbar": {
+    name: "Paul Laurence Dunbar",
+    country: "USA",
+    oneLine: "American novelist whose works include The Uncalled and The Sport of the Gods.",
+  },
+  "Pearl S. Buck": {
+    name: "Pearl S. Buck",
+    country: "USA",
+    oneLine: "American novelist known for The Mother.",
+  },
+  "Pedro Carolino": {
+    name: "Pedro Carolino",
+    country: "PRT",
+    oneLine: "Portuguese writer known for English as She Is Spoke.",
+  },
+  "Percy Marks": {
+    name: "Percy Marks",
+    country: "USA",
+    oneLine: "American novelist known for The Plastic Age.",
+  },
+  "Philip Francis Nowlan": {
+    name: "Philip Francis Nowlan",
+    country: "GBR",
+    oneLine: "English novelist whose works include Armageddon 2419 A.D. and The Airlords of Han.",
+  },
+  "Philip Gibbs": {
+    name: "Philip Gibbs",
+    country: "GBR",
+    oneLine: "English war writer known for Now It Can Be Told.",
+  },
+  "Philip K. Dick": {
+    name: "Philip K. Dick",
+    country: "USA",
+    oneLine: "American short story writer known for Short Fiction.",
+  },
+  "Philip MacDonald": {
+    name: "Philip MacDonald",
+    country: "GBR",
+    oneLine: "English mystery writer known for The Rasp.",
+  },
+  "Philip Wylie": {
+    name: "Philip Wylie",
+    country: "USA",
+    oneLine: "American novelist known for Gladiator.",
+  },
+  "Phillis Wheatley": {
+    name: "Phillis Wheatley",
+    country: "USA",
+    oneLine: "American novelist known for Poems on Various Subjects, Religious and Moral.",
+  },
+  "Pierre Souvestre and Marcel Allain": {
+    name: "Pierre Souvestre and Marcel Allain",
+    country: "FRA",
+    oneLine: "French novelist known for Fantômas.",
+  },
+  "Pierre-Joseph Proudhon": {
+    name: "Pierre-Joseph Proudhon",
+    country: "FRA",
+    oneLine: "French political philosopher known for What Is Property?.",
+  },
+  Pindar: {
+    name: "Pindar",
+    country: "GRC",
+    oneLine: "ancient Greek poet known for Victory Odes.",
+  },
+  "Poul Anderson": {
+    name: "Poul Anderson",
+    country: "USA",
+    oneLine: "American short story writer known for Short Fiction.",
+  },
+  Procopius: {
+    name: "Procopius",
+    country: "GRC",
+    oneLine: "Greece historian known for The Secret History.",
+  },
+  "R. A. Lafferty": {
+    name: "R. A. Lafferty",
+    country: "USA",
+    oneLine: "American short story writer known for Short Fiction.",
+  },
+  "R. Austin Freeman": {
+    name: "R. Austin Freeman",
+    country: "GBR",
+    oneLine: "English novelist whose works include The Red Thumb Mark and The Eye of Osiris.",
+  },
+  "R. H. Tawney": {
+    name: "R. H. Tawney",
+    country: "GBR",
+    oneLine: "English writer whose works include The Acquisitive Society and Religion and the Rise of Capitalism.",
+  },
+  "R. M. Ballantyne": {
+    name: "R. M. Ballantyne",
+    country: "GBR",
+    oneLine: "Scottish adventure novelist known for The Coral Island.",
+  },
+  "Ralph Waldo Emerson": {
+    name: "Ralph Waldo Emerson",
+    country: "USA",
+    oneLine: "American writer known for Representative Men.",
+  },
+  "Ray Bradbury": {
+    name: "Ray Bradbury",
+    country: "USA",
+    oneLine: "American short story writer known for Short Fiction.",
+  },
+  "Richard F. Burton": {
+    name: "Richard F. Burton",
+    country: "GBR",
+    oneLine: "English folklorist known for Vikram and the Vampire.",
+  },
+  "Richard Henry Dana Jr.": {
+    name: "Richard Henry Dana Jr.",
+    country: "USA",
+    oneLine: "American novelist known for Two Years Before the Mast.",
+  },
+  "Richard Hughes": {
+    name: "Richard Hughes",
+    country: "GBR",
+    oneLine: "English novelist known for A High Wind in Jamaica.",
+  },
+  "Richard Jefferies": {
+    name: "Richard Jefferies",
+    country: "GBR",
+    oneLine: "English novelist whose works include World's End and After London.",
+  },
+  "Richard Steele": {
+    name: "Richard Steele",
+    country: "GBR",
+    oneLine: "English dramatist known for The Conscious Lovers.",
+  },
+  "Richmal Crompton": {
+    name: "Richmal Crompton",
+    country: "GBR",
+    oneLine: "English novelist known for Just William.",
+  },
+  "Ring Lardner": {
+    name: "Ring Lardner",
+    country: "USA",
+    oneLine: "American writer whose works include Jack Keefe Stories and My Four Weeks in France.",
+  },
+  "Robert Derby Holmes": {
+    name: "Robert Derby Holmes",
+    country: "USA",
+    oneLine: "American memoirist known for A Yankee in the Trenches.",
+  },
+  "Robert E. Howard": {
+    name: "Robert E. Howard",
+    country: "USA",
+    oneLine: "American short story writer known for Conan Stories.",
+  },
+  "Robert Sheckley": {
+    name: "Robert Sheckley",
+    country: "USA",
+    oneLine: "American short story writer known for Short Fiction.",
+  },
+  "Robert W. Service": {
+    name: "Robert W. Service",
+    country: "CAN",
+    oneLine: "Canadian novelist known for Songs of a Sourdough.",
+  },
+  "Rolf Boldrewood": {
+    name: "Rolf Boldrewood",
+    country: "AUS",
+    oneLine: "Australian novelist known for Robbery Under Arms.",
+  },
+  "Romain Rolland": {
+    name: "Romain Rolland",
+    country: "FRA",
+    oneLine: "French novelist whose works include Jean-Christophe and Clerambault.",
+  },
+  "Ronald A. Knox": {
+    name: "Ronald A. Knox",
+    country: "GBR",
+    oneLine: "English mystery writer whose works include The Viaduct Murder and The Three Taps.",
+  },
+  "Rose Macaulay": {
+    name: "Rose Macaulay",
+    country: "GBR",
+    oneLine: "English novelist known for Dangerous Ages.",
+  },
+  "Rose Wilder Lane": {
+    name: "Rose Wilder Lane",
+    country: "USA",
+    oneLine: "American novelist known for Diverging Roads.",
+  },
+  "Roswitha of Gandersheim": {
+    name: "Roswitha of Gandersheim",
+    country: "DEU",
+    oneLine: "German dramatist known for Plays.",
+  },
+  "Rufus King": {
+    name: "Rufus King",
+    country: "USA",
+    oneLine: "American mystery writer known for Murder by the Clock.",
+  },
+  "Russell Thorndike": {
+    name: "Russell Thorndike",
+    country: "GBR",
+    oneLine: "English novelist known for Doctor Syn: A Smuggler Tale of the Romney Marsh.",
+  },
+  "S. Fowler Wright": {
+    name: "S. Fowler Wright",
+    country: "GBR",
+    oneLine: "English novelist known for The World Below.",
+  },
+  "S. M. Mitra": {
+    name: "S. M. Mitra",
+    country: "IND",
+    oneLine: "Indian folklorist known for Hindu Tales from the Sanskrit.",
+  },
+  "S. S. Van Dine": {
+    name: "S. S. Van Dine",
+    country: "USA",
+    oneLine: "American novelist whose works include The Benson Murder Case and The Canary Murder Case.",
+  },
+  Saki: {
+    name: "Saki",
+    country: "GBR",
+    oneLine: "English short story writer known for Short Fiction.",
+  },
+  "Samuel Pepys": {
+    name: "Samuel Pepys",
+    country: "GBR",
+    oneLine: "English diarist known for The Diary of Samuel Pepys.",
+  },
+  "Samuel R. Delany": {
+    name: "Samuel R. Delany",
+    country: "USA",
+    oneLine: "American novelist known for The Jewels of Aptor.",
+  },
+  "Sarah Orne Jewett": {
+    name: "Sarah Orne Jewett",
+    country: "USA",
+    oneLine: "American novelist known for The Country of the Pointed Firs.",
+  },
+  "Selma Lagerlöf": {
+    name: "Selma Lagerlöf",
+    country: "SWE",
+    oneLine: "Swedish novelist whose works include The Story of Gösta Berling and Short Fiction.",
+  },
+  "Sherwood Anderson": {
+    name: "Sherwood Anderson",
+    country: "USA",
+    oneLine: "American short story writer known for Winesburg, Ohio.",
+  },
+  "Siegfried Sassoon": {
+    name: "Siegfried Sassoon",
+    country: "GBR",
+    oneLine: "English novelist known for Memoirs of a Fox-Hunting Man.",
+  },
+  "Stella Benson": {
+    name: "Stella Benson",
+    country: "GBR",
+    oneLine: "English novelist known for The Faraway Bride.",
+  },
+  "Stephen Leacock": {
+    name: "Stephen Leacock",
+    country: "CAN",
+    oneLine: "Canadian novelist known for Sunshine Sketches of a Little Town.",
+  },
+  "Stephen Vincent Benét": {
+    name: "Stephen Vincent Benét",
+    country: "USA",
+    oneLine: "American epic poet known for John Brown's Body.",
+  },
+  Suetonius: {
+    name: "Suetonius",
+    country: "ITA",
+    oneLine: "Roman biographer known for The Lives of the Caesars.",
+  },
+  "Tanizaki Jun'ichirō": {
+    name: "Tanizaki Jun'ichirō",
+    country: "JPN",
+    oneLine: "Japanese short story writer known for Short Fiction.",
+  },
+  "Taras Shevchenko": {
+    name: "Taras Shevchenko",
+    country: "UKR",
+    oneLine: "Ukrainian poet known for Poetry.",
+  },
+  "Thea von Harbou": {
+    name: "Thea von Harbou",
+    country: "DEU",
+    oneLine: "German novelist known for Metropolis.",
+  },
+  "Theodore Roosevelt": {
+    name: "Theodore Roosevelt",
+    country: "USA",
+    oneLine: "American writer whose works include The Rough Riders and An Autobiography.",
+  },
+  Thiruvalluvar: {
+    name: "Thiruvalluvar",
+    country: "IND",
+    oneLine: "Indian novelist known for The Kural.",
+  },
+  "Thomas à Kempis": {
+    name: "Thomas à Kempis",
+    country: "DEU",
+    oneLine: "German writer known for The Imitation of Christ.",
+  },
+  "Thomas Bulfinch": {
+    name: "Thomas Bulfinch",
+    country: "USA",
+    oneLine: "American writer known for Bulfinch's Mythology.",
+  },
+  "Thomas Carlyle": {
+    name: "Thomas Carlyle",
+    country: "GBR",
+    oneLine: "Scottish novelist known for Sartor Resartus.",
+  },
+  "Thomas De Quincey": {
+    name: "Thomas De Quincey",
+    country: "GBR",
+    oneLine: "English memoirist known for Confessions of an English Opium-Eater.",
+  },
+  "Thomas Gray": {
+    name: "Thomas Gray",
+    country: "GBR",
+    oneLine: "English poet known for Poetry.",
+  },
+  "Thomas Hughes": {
+    name: "Thomas Hughes",
+    country: "GBR",
+    oneLine: "English novelist known for Tom Brown's School Days.",
+  },
+  "Thomas Love Peacock": {
+    name: "Thomas Love Peacock",
+    country: "GBR",
+    oneLine: "English novelist known for Nightmare Abbey.",
+  },
+  "Thomas More": {
+    name: "Thomas More",
+    country: "GBR",
+    oneLine: "English novelist known for Utopia.",
+  },
+  "Thornton W. Burgess": {
+    name: "Thornton W. Burgess",
+    country: "GBR",
+    oneLine: "English novelist whose works include Green Forest Stories and Green Meadow Stories.",
+  },
+  "Thornton Wilder": {
+    name: "Thornton Wilder",
+    country: "USA",
+    oneLine: "American novelist known for The Bridge of San Luis Rey.",
+  },
+  "Thorstein Veblen": {
+    name: "Thorstein Veblen",
+    country: "USA",
+    oneLine: "American writer known for The Theory of the Leisure Class.",
+  },
+  "Tom Taylor": {
+    name: "Tom Taylor",
+    country: "GBR",
+    oneLine: "English dramatist known for Our American Cousin.",
+  },
+  "Vladimir Korolenko": {
+    name: "Vladimir Korolenko",
+    country: "RUS",
+    oneLine: "Russian short story writer known for Short Fiction.",
+  },
+  "Voltairine de Cleyre": {
+    name: "Voltairine de Cleyre",
+    country: "USA",
+    oneLine: "American short story writer known for Short Fiction.",
+  },
+  "W. B. Yeats": {
+    name: "W. B. Yeats",
+    country: "IRL",
+    oneLine: "Irish poet known for Poetry.",
+  },
+  "W. H. Hudson": {
+    name: "W. H. Hudson",
+    country: "GBR",
+    oneLine: "English novelist known for The Purple Land.",
+  },
+  "W. N. P. Barbellion": {
+    name: "W. N. P. Barbellion",
+    country: "GBR",
+    oneLine: "English novelist known for The Journal of a Disappointed Man.",
+  },
+  "W. R. Burnett": {
+    name: "W. R. Burnett",
+    country: "USA",
+    oneLine: "American novelist known for Little Caesar.",
+  },
+  "Walter Bagehot": {
+    name: "Walter Bagehot",
+    country: "GBR",
+    oneLine: "English writer known for The English Constitution.",
+  },
+  "Walter de la Mare": {
+    name: "Walter de la Mare",
+    country: "GBR",
+    oneLine: "English novelist whose works include The Return and Memoirs of a Midget.",
+  },
+  "Walter M. Miller Jr.": {
+    name: "Walter M. Miller Jr.",
+    country: "USA",
+    oneLine: "American short story writer known for Short Fiction.",
+  },
+  "Walter Noble Burns": {
+    name: "Walter Noble Burns",
+    country: "USA",
+    oneLine: "American writer known for Tombstone.",
+  },
+  "Walter Pater": {
+    name: "Walter Pater",
+    country: "GBR",
+    oneLine: "English novelist known for Marius the Epicurean.",
+  },
+  "Walter S. Masterman": {
+    name: "Walter S. Masterman",
+    country: "GBR",
+    oneLine: "English mystery writer known for The Wrong Letter.",
+  },
+  "William Beckford": {
+    name: "William Beckford",
+    country: "GBR",
+    oneLine: "English novelist known for Vathek.",
+  },
+  "William Carlos Williams": {
+    name: "William Carlos Williams",
+    country: "USA",
+    oneLine: "American poet known for Poetry.",
+  },
+  "William Dean Howells": {
+    name: "William Dean Howells",
+    country: "USA",
+    oneLine: "American novelist whose works include The Rise of Silas Lapham and Indian Summer.",
+  },
+  "William F. Cody": {
+    name: "William F. Cody",
+    country: "USA",
+    oneLine: "American memoirist known for The Life of Buffalo Bill.",
+  },
+  "William Gerhardie": {
+    name: "William Gerhardie",
+    country: "GBR",
+    oneLine: "English novelist known for Futility.",
+  },
+  "William Hazlitt": {
+    name: "William Hazlitt",
+    country: "GBR",
+    oneLine: "English novelist known for Table-Talk.",
+  },
+  "William Hope Hodgson": {
+    name: "William Hope Hodgson",
+    country: "GBR",
+    oneLine: "English novelist known for The Night Land.",
+  },
+  "Winston Churchill": {
+    name: "Winston Churchill",
+    country: "GBR",
+    oneLine: "English novelist known for Savrola.",
+  },
+  "Władysław Reymont": {
+    name: "Władysław Reymont",
+    country: "POL",
+    oneLine: "Polish novelist known for The Peasants.",
+  },
+  "Woodrow Wilson": {
+    name: "Woodrow Wilson",
+    country: "USA",
+    oneLine: "American writer known for The New Freedom.",
+  },
+  "Zane Grey": {
+    name: "Zane Grey",
+    country: "USA",
+    oneLine: "American novelist whose works include Betty Zane and Riders of the Purple Sage.",
+  },
+  "Zeami Motokiyo": {
+    name: "Zeami Motokiyo",
+    country: "JPN",
+    oneLine: "Japanese dramatist known for Plays.",
+  },
+  "Zitkála-Šá": {
+    name: "Zitkála-Šá",
+    country: "USA",
+    oneLine: "American short story writer whose works include Old Indian Legends and American Indian Stories.",
+  },
+
 }
 
 // ── ISO 3166-1 alpha-3 → Display Name ───────────────────────────────────────
@@ -2022,6 +3693,9 @@ export const COUNTRY_NAMES: Record<string, string> = {
   COL: "Colombia",
   CHL: "Chile",
   PER: "Peru",
+  DNK: "Denmark",
+  LUX: "Luxembourg",
+  UKR: "Ukraine",
   ZZZ: "Unknown",
 }
 
@@ -2046,6 +3720,9 @@ export const CONTINENT_COUNTRIES: Record<string, string[]> = {
     "CHE",
     "POL",
     "PRT",
+    "DNK",
+    "LUX",
+    "UKR",
   ],
   "North America": ["USA", "CAN", "JAM"],
   Asia: ["IND", "CHN", "JPN", "IRN", "LBN", "RUS", "PHL"],

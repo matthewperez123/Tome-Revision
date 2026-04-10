@@ -2,9 +2,9 @@
   "bookId": "the-taming-of-the-shrew",
   "title": "The Taming of the Shrew",
   "author": "William Shakespeare",
-  "chapterCount": 7,
-  "totalWordCount": 22290,
-  "totalMinutes": 91,
+  "chapterCount": 19,
+  "totalWords": 22280,
+  "totalEstimatedMinutes": 108,
   "chapters": [
     {
       "index": 0,
@@ -21,32 +21,104 @@
     {
       "index": 2,
       "title": "Act I",
-      "wordCount": 4488,
-      "estimatedMinutes": 18
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 3,
-      "title": "Act II",
-      "wordCount": 3554,
-      "estimatedMinutes": 14
+      "title": "Scene I",
+      "wordCount": 2117,
+      "estimatedMinutes": 11
     },
     {
       "index": 4,
-      "title": "Act III",
-      "wordCount": 2885,
+      "title": "Scene II",
+      "wordCount": 2369,
       "estimatedMinutes": 12
     },
     {
       "index": 5,
-      "title": "Act IV",
-      "wordCount": 5947,
-      "estimatedMinutes": 24
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 6,
+      "title": "Scene I",
+      "wordCount": 3552,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 7,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 8,
+      "title": "Scene I",
+      "wordCount": 785,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 9,
+      "title": "Scene II",
+      "wordCount": 2098,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 10,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 11,
+      "title": "Scene I",
+      "wordCount": 1677,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 12,
+      "title": "Scene II",
+      "wordCount": 1030,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 13,
+      "title": "Scene III",
+      "wordCount": 1676,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 14,
+      "title": "Scene IV",
+      "wordCount": 875,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 15,
+      "title": "Scene V",
+      "wordCount": 687,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 16,
       "title": "Act V",
-      "wordCount": 2891,
-      "estimatedMinutes": 12
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 17,
+      "title": "Scene I",
+      "wordCount": 1212,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 18,
+      "title": "Scene II",
+      "wordCount": 1677,
+      "estimatedMinutes": 8
     }
   ]
 }

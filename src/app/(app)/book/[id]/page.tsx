@@ -61,11 +61,12 @@ type ChapterStatus = "completed" | "current" | "locked" | "available"
 function getChapterStatus(
   index: number,
   progress: BookProgress | null,
+  chapterTitles?: string[],
 ): ChapterStatus {
   if (!progress) return "available"
   if (progress.completedChapterIndices.includes(index)) return "completed"
   if (index === progress.currentChapterIndex) return "current"
-  if (isChapterLocked(progress, index)) return "locked"
+  if (isChapterLocked(progress, index, chapterTitles)) return "locked"
   return "available"
 }
 
@@ -441,7 +442,7 @@ export default function BookDetailPage() {
               ) : (
                 <div className="space-y-1.5">
                   {visibleChapters.map((chapter, i) => {
-                    const status = getChapterStatus(i, progress)
+                    const status = getChapterStatus(i, progress, chapters.map(c => c.title))
                     return (
                       <ChapterRow
                         key={chapter.id}

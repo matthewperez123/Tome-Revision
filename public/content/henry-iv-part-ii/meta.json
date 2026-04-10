@@ -2,9 +2,9 @@
   "bookId": "henry-iv-part-ii",
   "title": "Henry IV, Part II",
   "author": "William Shakespeare",
-  "chapterCount": 9,
-  "totalWordCount": 27999,
-  "totalMinutes": 112,
+  "chapterCount": 28,
+  "totalWords": 27989,
+  "totalEstimatedMinutes": 137,
   "chapters": [
     {
       "index": 0,
@@ -27,35 +27,149 @@
     {
       "index": 3,
       "title": "Act I",
-      "wordCount": 4984,
-      "estimatedMinutes": 20
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 4,
-      "title": "Act II",
-      "wordCount": 6755,
-      "estimatedMinutes": 27
+      "title": "Scene I",
+      "wordCount": 1823,
+      "estimatedMinutes": 9
     },
     {
       "index": 5,
-      "title": "Act III",
-      "wordCount": 3637,
-      "estimatedMinutes": 15
+      "title": "Scene II",
+      "wordCount": 2261,
+      "estimatedMinutes": 11
     },
     {
       "index": 6,
-      "title": "Act IV",
-      "wordCount": 7224,
-      "estimatedMinutes": 29
+      "title": "Scene III",
+      "wordCount": 898,
+      "estimatedMinutes": 4
     },
     {
       "index": 7,
-      "title": "Act V",
-      "wordCount": 4247,
-      "estimatedMinutes": 17
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 8,
+      "title": "Scene I",
+      "wordCount": 1627,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 9,
+      "title": "Scene II",
+      "wordCount": 1398,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 10,
+      "title": "Scene III",
+      "wordCount": 581,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 11,
+      "title": "Scene IV",
+      "wordCount": 3147,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 12,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 13,
+      "title": "Scene I",
+      "wordCount": 869,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 14,
+      "title": "Scene II",
+      "wordCount": 2766,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 15,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 16,
+      "title": "Scene I",
+      "wordCount": 1844,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 17,
+      "title": "Scene II",
+      "wordCount": 1059,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 18,
+      "title": "Scene III",
+      "wordCount": 1202,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 19,
+      "title": "Scene IV",
+      "wordCount": 1104,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 20,
+      "title": "Scene V",
+      "wordCount": 2013,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 21,
+      "title": "Act V",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 22,
+      "title": "Scene I",
+      "wordCount": 749,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 23,
+      "title": "Scene II",
+      "wordCount": 1206,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 24,
+      "title": "Scene III",
+      "wordCount": 1081,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 25,
+      "title": "Scene IV",
+      "wordCount": 269,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 26,
+      "title": "Scene V",
+      "wordCount": 940,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 27,
       "title": "Epilogue",
       "wordCount": 337,
       "estimatedMinutes": 1

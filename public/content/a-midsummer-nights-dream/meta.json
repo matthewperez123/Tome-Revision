@@ -2,9 +2,9 @@
   "bookId": "a-midsummer-nights-dream",
   "title": "A Midsummer Night’s Dream",
   "author": "William Shakespeare",
-  "chapterCount": 6,
-  "totalWordCount": 17311,
-  "totalMinutes": 70,
+  "chapterCount": 15,
+  "totalWords": 17301,
+  "totalEstimatedMinutes": 86,
   "chapters": [
     {
       "index": 0,
@@ -15,32 +15,86 @@
     {
       "index": 1,
       "title": "Act I",
-      "wordCount": 2843,
-      "estimatedMinutes": 11
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 2,
-      "title": "Act II",
-      "wordCount": 3415,
-      "estimatedMinutes": 14
+      "title": "Scene I",
+      "wordCount": 2017,
+      "estimatedMinutes": 10
     },
     {
       "index": 3,
-      "title": "Act III",
-      "wordCount": 5458,
-      "estimatedMinutes": 22
+      "title": "Scene II",
+      "wordCount": 824,
+      "estimatedMinutes": 4
     },
     {
       "index": 4,
-      "title": "Act IV",
-      "wordCount": 2215,
-      "estimatedMinutes": 9
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 5,
+      "title": "Scene I",
+      "wordCount": 2187,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 6,
+      "title": "Scene II",
+      "wordCount": 1226,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 7,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 8,
+      "title": "Scene I",
+      "wordCount": 1629,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 9,
+      "title": "Scene II",
+      "wordCount": 3827,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 10,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 11,
+      "title": "Scene I",
+      "wordCount": 1827,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 12,
+      "title": "Scene II",
+      "wordCount": 386,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 13,
       "title": "Act V",
-      "wordCount": 3273,
-      "estimatedMinutes": 13
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 14,
+      "title": "Scene I",
+      "wordCount": 3271,
+      "estimatedMinutes": 16
     }
   ]
 }

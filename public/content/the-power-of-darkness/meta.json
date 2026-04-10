@@ -2,9 +2,9 @@
   "bookId": "the-power-of-darkness",
   "title": "The Power of Darkness: Or, If a Claw Is Caught the Bird Is Lost",
   "author": "Leo Tolstoy",
-  "chapterCount": 6,
-  "totalWordCount": 27796,
-  "totalMinutes": 111,
+  "chapterCount": 8,
+  "totalWords": 27794,
+  "totalEstimatedMinutes": 116,
   "chapters": [
     {
       "index": 0,
@@ -39,8 +39,20 @@
     {
       "index": 5,
       "title": "Act V",
-      "wordCount": 4356,
-      "estimatedMinutes": 17
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 6,
+      "title": "Scene I",
+      "wordCount": 3223,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 7,
+      "title": "Scene II",
+      "wordCount": 1131,
+      "estimatedMinutes": 6
     }
   ]
 }

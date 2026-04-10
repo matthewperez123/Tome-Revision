@@ -2,9 +2,9 @@
   "bookId": "the-two-noble-kinsmen",
   "title": "The Two Noble Kinsmen",
   "author": "William Shakespeare & John Fletcher",
-  "chapterCount": 8,
-  "totalWordCount": 25678,
-  "totalMinutes": 104,
+  "chapterCount": 32,
+  "totalWords": 25668,
+  "totalEstimatedMinutes": 131,
   "chapters": [
     {
       "index": 0,
@@ -21,35 +21,179 @@
     {
       "index": 2,
       "title": "Act I",
-      "wordCount": 4429,
-      "estimatedMinutes": 18
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 3,
-      "title": "Act II",
-      "wordCount": 5133,
-      "estimatedMinutes": 21
+      "title": "Scene I",
+      "wordCount": 2013,
+      "estimatedMinutes": 10
     },
     {
       "index": 4,
-      "title": "Act III",
-      "wordCount": 6490,
-      "estimatedMinutes": 26
+      "title": "Scene II",
+      "wordCount": 973,
+      "estimatedMinutes": 5
     },
     {
       "index": 5,
-      "title": "Act IV",
-      "wordCount": 3729,
-      "estimatedMinutes": 15
+      "title": "Scene III",
+      "wordCount": 827,
+      "estimatedMinutes": 4
     },
     {
       "index": 6,
-      "title": "Act V",
-      "wordCount": 5350,
-      "estimatedMinutes": 21
+      "title": "Scene IV",
+      "wordCount": 472,
+      "estimatedMinutes": 2
     },
     {
       "index": 7,
+      "title": "Scene V",
+      "wordCount": 142,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 8,
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 9,
+      "title": "Scene I",
+      "wordCount": 533,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 10,
+      "title": "Scene II",
+      "wordCount": 2504,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 11,
+      "title": "Scene III",
+      "wordCount": 796,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 12,
+      "title": "Scene IV",
+      "wordCount": 301,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 13,
+      "title": "Scene V",
+      "wordCount": 641,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 14,
+      "title": "Scene VI",
+      "wordCount": 356,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 15,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 16,
+      "title": "Scene I",
+      "wordCount": 1103,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 17,
+      "title": "Scene II",
+      "wordCount": 349,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 18,
+      "title": "Scene III",
+      "wordCount": 550,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 19,
+      "title": "Scene IV",
+      "wordCount": 250,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 20,
+      "title": "Scene V",
+      "wordCount": 1389,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 21,
+      "title": "Scene VI",
+      "wordCount": 2847,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 22,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 23,
+      "title": "Scene I",
+      "wordCount": 1446,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 24,
+      "title": "Scene II",
+      "wordCount": 1379,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 25,
+      "title": "Scene III",
+      "wordCount": 902,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 26,
+      "title": "Act V",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 27,
+      "title": "Scene I",
+      "wordCount": 1649,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 28,
+      "title": "Scene II",
+      "wordCount": 1117,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 29,
+      "title": "Scene III",
+      "wordCount": 1338,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 30,
+      "title": "Scene IV",
+      "wordCount": 1244,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 31,
       "title": "Epilogue",
       "wordCount": 169,
       "estimatedMinutes": 1

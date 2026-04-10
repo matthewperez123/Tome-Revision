@@ -2,9 +2,9 @@
   "bookId": "timon-of-athens",
   "title": "Timon of Athens",
   "author": "William Shakespeare",
-  "chapterCount": 6,
-  "totalWordCount": 19807,
-  "totalMinutes": 80,
+  "chapterCount": 23,
+  "totalWords": 19797,
+  "totalEstimatedMinutes": 102,
   "chapters": [
     {
       "index": 0,
@@ -15,32 +15,134 @@
     {
       "index": 1,
       "title": "Act I",
-      "wordCount": 4567,
-      "estimatedMinutes": 18
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 2,
-      "title": "Act II",
-      "wordCount": 2274,
-      "estimatedMinutes": 9
+      "title": "Scene I",
+      "wordCount": 2327,
+      "estimatedMinutes": 12
     },
     {
       "index": 3,
-      "title": "Act III",
-      "wordCount": 4647,
-      "estimatedMinutes": 19
+      "title": "Scene II",
+      "wordCount": 2238,
+      "estimatedMinutes": 11
     },
     {
       "index": 4,
-      "title": "Act IV",
-      "wordCount": 5220,
-      "estimatedMinutes": 21
+      "title": "Act II",
+      "wordCount": 0,
+      "estimatedMinutes": 0
     },
     {
       "index": 5,
+      "title": "Scene I",
+      "wordCount": 320,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 6,
+      "title": "Scene II",
+      "wordCount": 1952,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 7,
+      "title": "Act III",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 8,
+      "title": "Scene I",
+      "wordCount": 539,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 9,
+      "title": "Scene II",
+      "wordCount": 760,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 10,
+      "title": "Scene III",
+      "wordCount": 378,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 11,
+      "title": "Scene IV",
+      "wordCount": 996,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 12,
+      "title": "Scene V",
+      "wordCount": 961,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 13,
+      "title": "Scene VI",
+      "wordCount": 1011,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 14,
+      "title": "Act IV",
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 15,
+      "title": "Scene I",
+      "wordCount": 316,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 16,
+      "title": "Scene II",
+      "wordCount": 451,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 17,
+      "title": "Scene III",
+      "wordCount": 4451,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 18,
       "title": "Act V",
-      "wordCount": 2985,
-      "estimatedMinutes": 12
+      "wordCount": 0,
+      "estimatedMinutes": 0
+    },
+    {
+      "index": 19,
+      "title": "Scene I",
+      "wordCount": 1984,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 20,
+      "title": "Scene II",
+      "wordCount": 161,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 21,
+      "title": "Scene III",
+      "wordCount": 104,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 22,
+      "title": "Scene IV",
+      "wordCount": 734,
+      "estimatedMinutes": 4
     }
   ]
 }

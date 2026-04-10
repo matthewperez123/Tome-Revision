@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState, useCallback } from "react"
 import Link from "next/link"
 import { Search, Users2 } from "lucide-react"
 import { AUTHORS } from "@/data/authors"
-import { supabase } from "@/lib/supabase"
+import { BOOKS } from "@/data/books"
 import { Skeleton } from "@/components/ui/skeleton"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { Badge } from "@/components/ui/badge"
@@ -32,10 +32,10 @@ const TRADITION_COLORS: Record<string, string> = {
   Contemporary: "#8B5CF6",
   Scandinavian: "#64748B",
   Germanic: "#6B7280",
+  Ancient: "#0284C7",
+  Speculative: "#7C3AED",
   "World Literature": "#9CA3AF",
 }
-
-const TRADITIONS = Object.keys(TRADITION_COLORS) as string[]
 
 const ERAS = [
   { label: "All Eras", value: "" },
@@ -126,34 +126,13 @@ export default function AuthorsPage() {
   const [eraFilter, setEraFilter] = useState("")
   const [nationalityFilter, setNationalityFilter] = useState("")
   const [selectedTraditions, setSelectedTraditions] = useState<Set<string>>(new Set())
-  const [supabaseAuthors, setSupabaseAuthors] = useState<DerivedAuthor[]>([])
-  const [loadingSupabase, setLoadingSupabase] = useState(true)
-
-  useEffect(() => {
-    async function fetchAuthors() {
-      try {
-        const { data } = await supabase
-          .from("books")
-          .select("id, author, tradition")
-        if (data && data.length > 0) {
-          setSupabaseAuthors(deriveAuthorsFromBooks(data as Array<{ author: string; tradition: string; id: string }>))
-        }
-      } catch {
-        // fall through to static AUTHORS
-      } finally {
-        setLoadingSupabase(false)
-      }
-    }
-    fetchAuthors()
-  }, [])
-
-  // Merge: use static AUTHORS as base, supplement with Supabase-derived if available
+  // Derive all authors from BOOKS, merge with curated AUTHORS data
   const authors = useMemo(() => {
-    if (supabaseAuthors.length === 0) return AUTHORS
+    const derived = deriveAuthorsFromBooks(BOOKS.map(b => ({ id: b.id, author: b.author, tradition: b.tradition })))
     const staticIds = new Set(AUTHORS.map(a => a.id))
-    const extra = supabaseAuthors.filter(a => !staticIds.has(a.id))
+    const extra = derived.filter(a => !staticIds.has(a.id))
     return [...AUTHORS, ...extra] as typeof AUTHORS
-  }, [supabaseAuthors])
+  }, [])
 
   const debouncedSearch = useDebounce(search, 300)
 
@@ -193,7 +172,7 @@ export default function AuthorsPage() {
   const allTraditions = useMemo(() => {
     const tradSet = new Set<string>()
     authors.forEach((a) => a.traditions.forEach((t) => tradSet.add(t)))
-    return TRADITIONS.filter((t) => tradSet.has(t))
+    return [...tradSet].sort()
   }, [authors])
 
   return (

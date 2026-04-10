@@ -258,35 +258,6 @@ Chaucer wrote in Middle English at a moment when English was not the prestige la
     portraitPlaceholder: "linear-gradient(135deg, #92400E, #B45309)",
   },
 
-  {
-    id: "rumi",
-    name: "Rumi",
-    fullName: "Jalāl al-Dīn Muḥammad Rūmī",
-    birthYear: 1207,
-    deathYear: 1273,
-    birthPlace: "Wakhsh, Khurasan (present-day Tajikistan/Afghanistan)",
-    nationality: "Persian",
-    era: "Medieval",
-    traditions: ["Eastern"],
-    bio: `Jalāl al-Dīn Rūmī was born in 1207 in Wakhsh, a town in the region of Khurasan in the eastern Iranian world — an area that is now divided between Afghanistan and Tajikistan. His family fled westward ahead of the Mongol invasions when he was still a child, eventually settling in Konya, in present-day Turkey, where his father became a renowned religious teacher. Rumi was trained in Islamic jurisprudence, theology, and Sufi mysticism, and by his thirties he was an established scholar and teacher in Konya. Then, in 1244, he encountered a wandering dervish named Shams-i-Tabrizi, and everything changed. The intensity of his intellectual and spiritual friendship with Shams triggered an outpouring of lyric poetry unlike anything in the Persian tradition. When Shams mysteriously disappeared — possibly murdered by jealous disciples — Rumi's grief became the engine of his greatest work.
-
-The Masnavi (or Mathnawi), composed in the final years of his life, is a six-volume rhyming poem of roughly 25,000 couplets that weaves together Sufi mystical teaching with parables, anecdotes from the Quran and Hadith, folk tales, and philosophical digressions. It begins with the famous reed flute allegory: the ney (reed flute) cries because it has been cut from the reed bed, and its cry is the longing of the soul separated from its divine origin. This image of separation, longing, and the desire for reunion — with God, with the beloved, with one's deepest self — runs through all of Rumi's poetry. The Divan-e Shams-e Tabrizi (Divan of Shams), named for his lost companion, is an enormous collection of ghazals and quatrains written in a state of mystical intoxication: love lyrics in which the beloved is simultaneously the human Shams and the divine absolute.
-
-Rumi's influence on Persian and Turkish literature was immense, and he founded the Mevlevi Sufi order — the "Whirling Dervishes" — whose spinning meditation practice embodies his vision of the soul turning in longing toward God. In recent decades he has become the best-selling poet in the United States, though the translations most widely read there are extremely loose paraphrases rather than faithful renderings. The real Rumi is more philosophically dense and doctrinally Islamic than the greeting-card spirituality that bears his name — but the underlying themes of love, longing, and the divine within the human have clearly struck a universal chord.`,
-    notableWorks: ["Masnavi (Mathnawi)", "Divan-e Shams-e Tabrizi", "Fihi Ma Fihi"],
-    themes: ["Divine love and longing", "The soul's separation from God", "Sufi mysticism", "Joy in suffering", "Unity of existence", "The transformative power of music", "Inner spiritual journey"],
-    influence: "Rumi is the most widely read poet in the Persian-speaking world and, in loose translation, one of the best-selling poets in North America; his Mevlevi order introduced whirling meditation to world spiritual practice.",
-    funFact: "When Rumi died in 1273, his funeral was attended by representatives of all three Abrahamic faiths — Christians, Jews, and Muslims — a testament to his reputation for transcending sectarian boundaries.",
-    quotes: [
-      "Out beyond ideas of wrongdoing and rightdoing there is a field. I'll meet you there.",
-      "The wound is the place where the Light enters you.",
-      "Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.",
-    ],
-    bookAuthorNames: ["Rumi", "Jalal al-Din Rumi", "Jalāl al-Dīn Rūmī", "Mevlana Rumi"],
-    worksInLibrary: ["the-masnavi"],
-    portraitPlaceholder: "linear-gradient(135deg, #7C2D12, #B45309)",
-  },
-
   // ── RENAISSANCE / EARLY MODERN ─────────────────────────────────────────────
 
   {
@@ -868,34 +839,6 @@ Fitzgerald's subsequent career was a long decline into alcoholism, financial des
   // ── ANCIENT (ADDITIONAL) ───────────────────────────────────────────────────
 
   {
-    id: "euripides",
-    name: "Euripides",
-    birthYear: -480,
-    deathYear: -406,
-    birthPlace: "Salamis (or Athens), Ancient Greece",
-    nationality: "Greek",
-    era: "Ancient",
-    traditions: ["Ancient Greek"],
-    bio: `Euripides was the youngest of the three great Athenian tragedians and, in many ways, the most modern. Born around 480 BCE — possibly on the island of Salamis, on the very day of the famous naval battle there — he won the City Dionysia festival only five times during his lifetime, far fewer than Sophocles or Aeschylus, yet he was also the most frequently performed tragedian in antiquity after his death. His relative unpopularity with Athenian juries reflects what made him revolutionary: he pushed drama toward psychological realism, moral ambiguity, and a skepticism about the gods that his audiences found unsettling. Where Sophocles's heroes fall through a conjunction of fate and noble character, Euripides's characters are driven by passion, resentment, and wounded pride — emotions that feel embarrassingly contemporary.
-
-His Medea (431 BCE) is his greatest surviving work and one of the most radical plays in the Western canon. Medea, a foreign sorceress who abandoned her homeland and family to follow the Greek hero Jason, discovers that he plans to abandon her for a politically convenient marriage. Her response — to murder her own children in order to deprive Jason of his legacy and ensure his perpetual grief — is not presented as pure monstrosity but as the logical endpoint of a woman who has been stripped of everything that gave her existence meaning in a patriarchal Greek world that never accepted her. The famous monologue in which Medea deliberates between maternal love and destructive fury is the first sustained psychological self-examination in Western drama.
-
-Euripides was also unusual in giving his female characters real interiority and moral agency — both Medea and Phaedra in the Hippolytus are more fully realized psychological presences than their male counterparts. His last plays, including The Bacchae and Iphigenia at Aulis, written in Macedonia after he had left Athens in voluntary or involuntary exile, take on an even darker tone. The Bacchae, his strangest and greatest late work, dramatizes the god Dionysus's revenge on the city of Thebes in terms that suggest a profound reckoning with religion, ecstasy, and the irreducible power of the irrational.`,
-    notableWorks: ["Medea", "The Bacchae", "Electra", "Iphigenia at Aulis", "Alcestis"],
-    themes: ["Women's suffering", "Barbarian vs. Greek", "Passion and reason", "Divine cruelty", "Political tyranny"],
-    influence: "Euripides effectively invented the tradition of psychological tragedy — drama driven by inner states rather than fate — and his rehabilitation of outcasts and victims set a template that runs through Shakespeare's complex villains to modern drama; his influence on Roman tragedy and through it on Renaissance theater was decisive.",
-    funFact: "Ancient sources claim Euripides was friends with the philosopher Socrates, who rarely attended plays but made an exception for Euripides's work — the two shared a restless, questioning spirit that made them both unpopular with the Athenian establishment.",
-    quotes: [
-      "No act of kindness, no matter how small, is ever wasted.",
-      "Question everything.",
-      "The wisest men follow their own direction.",
-    ],
-    bookAuthorNames: ["Euripides"],
-    worksInLibrary: ["medea"],
-    portraitPlaceholder: "linear-gradient(135deg, #1E3A8A, #2563EB)",
-  },
-
-  {
     id: "herodotus",
     name: "Herodotus",
     birthYear: -484,
@@ -1243,36 +1186,6 @@ His plays — The Seagull, Uncle Vanya, Three Sisters, The Cherry Orchard — ga
     bookAuthorNames: ["Anton Chekhov", "Chekhov"],
     worksInLibrary: ["the-cherry-orchard", "the-duel", "three-sisters", "uncle-vanya"],
     portraitPlaceholder: "linear-gradient(135deg, #1E3A5F, #1E40AF)",
-  },
-
-  // ── CONTEMPORARY ──────────────────────────────────────────────────────────
-
-  {
-    id: "albert-camus",
-    name: "Albert Camus",
-    birthYear: 1913,
-    deathYear: 1960,
-    birthPlace: "Dréan, French Algeria",
-    nationality: "French-Algerian",
-    era: "Contemporary",
-    traditions: ["French", "Modernist"],
-    bio: `Albert Camus was born in 1913 in Dréan (then Mondovi), a small town in French Algeria, to a French-Algerian (pied-noir) family of very modest means. His father was killed at the Battle of the Marne when Camus was less than a year old; he grew up in poverty in Algiers with his mother, who was largely deaf and barely literate, and his grandmother. A tuberculosis diagnosis at seventeen threatened his education and health for the rest of his life, but he won a scholarship to study philosophy in Algiers and, under the mentorship of his teacher Jean Grenier, developed the philosophical sensibility that would define his work: a confrontation with the fundamental absurdity of human existence — the gap between the human need for meaning, clarity, and justice and the universe's absolute silence on all these questions.
-
-The Stranger (L'Étranger, 1942) and The Myth of Sisyphus (1942), published in the same year, establish the twin poles of Camus's early thought. The Stranger is the story of Meursault, a French-Algerian clerk who kills an Arab on a beach in Algiers, apparently without motive, and is tried and convicted not for the murder but for his failure to grieve at his mother's funeral and his general emotional non-conformity. The novel's famous opening — "Mother died today. Or maybe yesterday; I can't be sure" — announces a narrator whose relationship to conventional feeling is radically disengaged, and the novel's power comes from the reader's gradual uncertainty about whether Meursault is a monster, a saint, or simply honest. The Myth of Sisyphus, the philosophical companion, argues that the only serious philosophical question is suicide: whether, given the absurdity of existence, life is worth living. Camus's answer is yes — one must imagine Sisyphus happy.
-
-The Plague (La Peste, 1947), set in Oran, Algeria during a bubonic plague epidemic, is his most explicitly humanist and politically engaged novel: an allegory of the Nazi occupation of France written as a chronicle of a doctor's moral duty in the face of catastrophe. Camus broke with Sartre and the French left in 1951 over The Rebel, his critique of revolutionary violence and totalitarian logic, and spent the final decade of his life as the most controversial intellectual in France — criticized by Sartrean existentialists for insufficient political engagement and by the French right for his support of Algerian rights. He received the Nobel Prize in Literature in 1957. He died in a car accident in January 1960, aged forty-six, with an unfinished novel manuscript in his briefcase.`,
-    notableWorks: ["The Stranger", "The Plague", "The Myth of Sisyphus", "The Fall"],
-    themes: ["The absurd", "Alienation", "Revolt and freedom", "Mortality", "Colonial Algeria"],
-    influence: "Camus is the defining philosopher of the absurd and one of the central figures of twentieth-century European humanism; The Stranger became the essential text of postwar alienation and has sold over ten million copies, and his distinction between absurdism and existentialism opened a philosophical conversation that continues today.",
-    funFact: "Camus was the second-youngest Nobel laureate in Literature when he received the prize in 1957 at age forty-four, and his acceptance speech — in which he described the writer's obligation to serve truth and freedom — is still considered one of the finest Nobel addresses ever delivered.",
-    quotes: [
-      "In the depth of winter, I finally learned that within me there lay an invincible summer.",
-      "The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion.",
-      "You will never be happy if you continue to search for what happiness consists of.",
-    ],
-    bookAuthorNames: ["Albert Camus", "Camus"],
-    worksInLibrary: ["the-stranger"],
-    portraitPlaceholder: "linear-gradient(135deg, #2E1065, #5B21B6)",
   },
 
   // ── ADDITIONAL AUTHORS (auto-generated) ─────────────────────────────────────

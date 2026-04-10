@@ -79,10 +79,39 @@ export function getAllBookProgress(): Record<string, BookProgress> {
   return result
 }
 
-/** In Guided mode, chapter N is locked unless chapter N-1 is in completedChapterIndices */
-export function isChapterLocked(progress: BookProgress, chapterIndex: number): boolean {
+// Front/back matter keywords — chapters matching these are never locked and skip quizzes
+const FRONT_MATTER_KW = [
+  "preface", "introduction", "introductory", "foreword", "dedication",
+  "prologue", "epigraph", "letter", "note to", "author's note",
+  "translator's", "dramatis personae", "the story", "frontispiece",
+  "acknowledgment", "our raison", "characters in the play",
+]
+const BACK_MATTER_KW = [
+  "afterword", "appendix", "postscript", "endnotes", "glossary",
+  "bibliography", "colophon",
+]
+
+/** Check if a chapter title represents front or back matter (always unlocked, no quizzes) */
+export function isFrontOrBackMatter(title: string): boolean {
+  const lower = title.toLowerCase().trim()
+  return FRONT_MATTER_KW.some(kw => lower.startsWith(kw) || lower.includes(kw))
+    || BACK_MATTER_KW.some(kw => lower.startsWith(kw) || lower.includes(kw))
+}
+
+/** In Guided mode, chapter N is locked unless chapter N-1 is in completedChapterIndices.
+ *  Front matter and back matter are NEVER locked.
+ *  Pass chapterTitles to enable front/back matter exemption. */
+export function isChapterLocked(
+  progress: BookProgress,
+  chapterIndex: number,
+  chapterTitles?: string[]
+): boolean {
   if (progress.readingMode === 'free') return false
   if (chapterIndex === 0) return false
+  // Front/back matter is always unlocked
+  if (chapterTitles?.[chapterIndex] && isFrontOrBackMatter(chapterTitles[chapterIndex])) {
+    return false
+  }
   return !progress.completedChapterIndices.includes(chapterIndex - 1)
 }
 
