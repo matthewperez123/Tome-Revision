@@ -1,0 +1,142 @@
+{
+  "bookId": "the-able-mclaughlins",
+  "title": "The Able McLaughlins",
+  "author": "Margaret Wilson",
+  "chapterCount": 22,
+  "totalWordCount": 63563,
+  "totalMinutes": 254,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I",
+      "wordCount": 4499,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 1,
+      "title": "II",
+      "wordCount": 4113,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 2,
+      "title": "III",
+      "wordCount": 3343,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 3,
+      "title": "IV",
+      "wordCount": 2072,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 4,
+      "title": "V",
+      "wordCount": 3420,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 5,
+      "title": "VI",
+      "wordCount": 1446,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 6,
+      "title": "VII",
+      "wordCount": 3106,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 7,
+      "title": "VIII",
+      "wordCount": 3077,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 8,
+      "title": "IX",
+      "wordCount": 3753,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 9,
+      "title": "X",
+      "wordCount": 4669,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 10,
+      "title": "XI",
+      "wordCount": 3392,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 11,
+      "title": "XII",
+      "wordCount": 3447,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 12,
+      "title": "XIII",
+      "wordCount": 1916,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 13,
+      "title": "XIV",
+      "wordCount": 4923,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 14,
+      "title": "XV",
+      "wordCount": 2217,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 15,
+      "title": "XVI",
+      "wordCount": 1697,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 16,
+      "title": "XVII",
+      "wordCount": 2113,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 17,
+      "title": "XVIII",
+      "wordCount": 2042,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 18,
+      "title": "XIX",
+      "wordCount": 2696,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 19,
+      "title": "XX",
+      "wordCount": 2351,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 20,
+      "title": "XXI",
+      "wordCount": 2090,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 21,
+      "title": "XXII",
+      "wordCount": 1181,
+      "estimatedMinutes": 5
+    }
+  ]
+}

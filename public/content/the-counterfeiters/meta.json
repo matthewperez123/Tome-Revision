@@ -1,0 +1,304 @@
+{
+  "bookId": "the-counterfeiters",
+  "title": "The Counterfeiters",
+  "author": "André Gide",
+  "chapterCount": 49,
+  "totalWordCount": 120168,
+  "totalMinutes": 481,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 18,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Part I: Paris",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "I: The Luxembourg Gardens",
+      "wordCount": 1964,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 3,
+      "title": "II: The Profitendieus",
+      "wordCount": 4820,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 4,
+      "title": "III: Bernard and Olivier",
+      "wordCount": 3067,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 5,
+      "title": "IV: Vincent and the Comte de Passavant",
+      "wordCount": 3153,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 6,
+      "title": "V: Vincent Meets Passavant at Lady Griffith’s",
+      "wordCount": 2990,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 7,
+      "title": "VI: Bernard Awakens",
+      "wordCount": 1170,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 8,
+      "title": "VII: Lilian and Vincent",
+      "wordCount": 2034,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 9,
+      "title": "VIII: Edouard and Laura",
+      "wordCount": 3485,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 10,
+      "title": "IX: Edouard and Olivier",
+      "wordCount": 1191,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 11,
+      "title": "X: The Cloakroom Ticket",
+      "wordCount": 1178,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 12,
+      "title": "XI: Edouard’s Journal: George Molinier",
+      "wordCount": 3230,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 13,
+      "title": "XII: Edouard’s Journal: Laura’s Wedding",
+      "wordCount": 7219,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 14,
+      "title": "XIII: Edouard’s Journal: First Visit to La Pérouse",
+      "wordCount": 2923,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 15,
+      "title": "XIV: Bernard and Laura",
+      "wordCount": 3117,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 16,
+      "title": "XV: Olivier Visits the Comte de Passavant",
+      "wordCount": 1699,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 17,
+      "title": "XVI: Vincent and Lilian",
+      "wordCount": 2049,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 18,
+      "title": "XVII: The Evening at Rambouillet",
+      "wordCount": 2481,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 19,
+      "title": "XVIII: Edouard’s Journal: Second Visit to La Pérouse",
+      "wordCount": 2892,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 20,
+      "title": "Part II: Saas-Fée",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 21,
+      "title": "I: From Bernard to Olivier",
+      "wordCount": 1705,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 22,
+      "title": "II: Edouard’s Journal: Little Boris",
+      "wordCount": 2116,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 23,
+      "title": "III: Edouard Explains His Theory of the Novel",
+      "wordCount": 4556,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 24,
+      "title": "IV: Bernard and Laura",
+      "wordCount": 3157,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 25,
+      "title": "V: Edouard’s Journal: Conversation with Sophroniska",
+      "wordCount": 2056,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 26,
+      "title": "VI: From Olivier to Bernard",
+      "wordCount": 2476,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 27,
+      "title": "VII: The Author Reviews His Characters",
+      "wordCount": 1156,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 28,
+      "title": "Part III: Paris",
+      "wordCount": 102,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 29,
+      "title": "I: Edouard’s Journal: Oscar Molinier",
+      "wordCount": 3088,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 30,
+      "title": "II: Edouard’s Journal: At the Vedels’",
+      "wordCount": 3487,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 31,
+      "title": "III: Edouard’s Journal: Third Visit to La Pérouse",
+      "wordCount": 2348,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 32,
+      "title": "IV: The First Day of the Term",
+      "wordCount": 2147,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 33,
+      "title": "V: Olivier Meets Bernard",
+      "wordCount": 4659,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 34,
+      "title": "VI: Edouard’s Journal: Madame Molinier",
+      "wordCount": 2042,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 35,
+      "title": "VII: Olivier and Armand",
+      "wordCount": 2319,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 36,
+      "title": "VIII: The Argonauts’ Dinner",
+      "wordCount": 4774,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 37,
+      "title": "IX: Olivier and Edouard",
+      "wordCount": 1875,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 38,
+      "title": "X: Olivier’s Convalescence",
+      "wordCount": 1514,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 39,
+      "title": "XI: Edouard’s Journal: Pauline",
+      "wordCount": 1757,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 40,
+      "title": "XII: Edouard and Then Strouvilhou Visit Passavant",
+      "wordCount": 3634,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 41,
+      "title": "XIII: Edouard’s Journal: Douviers’ Profitendieu",
+      "wordCount": 3045,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 42,
+      "title": "XIV: Bernard and the Angel",
+      "wordCount": 2021,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 43,
+      "title": "XV: Bernard Visits Edouard",
+      "wordCount": 1387,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 44,
+      "title": "XVI: Edouard Warns George",
+      "wordCount": 3538,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 45,
+      "title": "XVII: Armand and Olivier",
+      "wordCount": 3336,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 46,
+      "title": "XVIII: “The Strong Men”",
+      "wordCount": 2900,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 47,
+      "title": "XIX: Boris",
+      "wordCount": 1329,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 48,
+      "title": "XX: Edouard’s Journal",
+      "wordCount": 958,
+      "estimatedMinutes": 4
+    }
+  ]
+}

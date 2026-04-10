@@ -1,0 +1,100 @@
+{
+  "bookId": "old-indian-legends",
+  "title": "Old Indian Legends",
+  "author": "Zitkála-Šá",
+  "chapterCount": 15,
+  "totalWordCount": 18365,
+  "totalMinutes": 73,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface",
+      "wordCount": 338,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Iktomi and the Ducks",
+      "wordCount": 1811,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 2,
+      "title": "Iktomi’s Blanket",
+      "wordCount": 905,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 3,
+      "title": "Iktomi and the Muskrat",
+      "wordCount": 1015,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 4,
+      "title": "Iktomi and the Coyote",
+      "wordCount": 981,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 5,
+      "title": "Iktomi and the Fawn",
+      "wordCount": 1612,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 6,
+      "title": "The Badger and the Bear",
+      "wordCount": 2153,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 7,
+      "title": "The Tree-Bound",
+      "wordCount": 1938,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 8,
+      "title": "Shooting of the Red Eagle",
+      "wordCount": 996,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 9,
+      "title": "Iktomi and the Turtle",
+      "wordCount": 904,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 10,
+      "title": "Dance in a Buffalo Skull",
+      "wordCount": 548,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 11,
+      "title": "The Toad and the Boy",
+      "wordCount": 1267,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 12,
+      "title": "Iya, the Camp-Eater",
+      "wordCount": 1529,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 13,
+      "title": "Manštin, the Rabbit",
+      "wordCount": 1493,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 14,
+      "title": "The Warlike Seven",
+      "wordCount": 875,
+      "estimatedMinutes": 4
+    }
+  ]
+}

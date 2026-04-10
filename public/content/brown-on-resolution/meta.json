@@ -1,0 +1,136 @@
+{
+  "bookId": "brown-on-resolution",
+  "title": "Brown on Resolution",
+  "author": "C. S. Forester",
+  "chapterCount": 21,
+  "totalWordCount": 49994,
+  "totalMinutes": 200,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I",
+      "wordCount": 704,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 1,
+      "title": "II",
+      "wordCount": 3278,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 2,
+      "title": "III",
+      "wordCount": 2032,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 3,
+      "title": "IV",
+      "wordCount": 2021,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 4,
+      "title": "V",
+      "wordCount": 2790,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 5,
+      "title": "VI",
+      "wordCount": 2902,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 6,
+      "title": "VII",
+      "wordCount": 2119,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 7,
+      "title": "VIII",
+      "wordCount": 1917,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 8,
+      "title": "IX",
+      "wordCount": 1969,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 9,
+      "title": "X",
+      "wordCount": 3174,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 10,
+      "title": "XI",
+      "wordCount": 3209,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 11,
+      "title": "XII",
+      "wordCount": 2551,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 12,
+      "title": "XIII",
+      "wordCount": 3935,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 13,
+      "title": "XIV",
+      "wordCount": 2546,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 14,
+      "title": "XV",
+      "wordCount": 2260,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 15,
+      "title": "XVI",
+      "wordCount": 1622,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 16,
+      "title": "XVII",
+      "wordCount": 1917,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 17,
+      "title": "XVIII",
+      "wordCount": 2453,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 18,
+      "title": "XIX",
+      "wordCount": 1876,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 19,
+      "title": "XX",
+      "wordCount": 1915,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 20,
+      "title": "XXI",
+      "wordCount": 2804,
+      "estimatedMinutes": 11
+    }
+  ]
+}

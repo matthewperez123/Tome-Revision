@@ -1,0 +1,214 @@
+{
+  "bookId": "an-outcast-of-the-islands",
+  "title": "An Outcast of the Islands",
+  "author": "Joseph Conrad",
+  "chapterCount": 34,
+  "totalWordCount": 105321,
+  "totalMinutes": 421,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Epigraph",
+      "wordCount": 10,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Dedication",
+      "wordCount": 4,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Author’s Note",
+      "wordCount": 1502,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 3,
+      "title": "Part I",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 4,
+      "title": "I",
+      "wordCount": 2687,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 5,
+      "title": "II",
+      "wordCount": 2397,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 6,
+      "title": "III",
+      "wordCount": 3340,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 7,
+      "title": "IV",
+      "wordCount": 4156,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 8,
+      "title": "V",
+      "wordCount": 4690,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 9,
+      "title": "VI",
+      "wordCount": 3020,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 10,
+      "title": "VII",
+      "wordCount": 2973,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 11,
+      "title": "Part II",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 12,
+      "title": "I",
+      "wordCount": 2740,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 13,
+      "title": "II",
+      "wordCount": 4077,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 14,
+      "title": "III",
+      "wordCount": 3723,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 15,
+      "title": "IV",
+      "wordCount": 2213,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 16,
+      "title": "V",
+      "wordCount": 2604,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 17,
+      "title": "VI",
+      "wordCount": 5805,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 18,
+      "title": "Part III",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 19,
+      "title": "I",
+      "wordCount": 2697,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 20,
+      "title": "II",
+      "wordCount": 3292,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 21,
+      "title": "III",
+      "wordCount": 4830,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 22,
+      "title": "IV",
+      "wordCount": 4013,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 23,
+      "title": "Part IV",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 24,
+      "title": "I",
+      "wordCount": 3302,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 25,
+      "title": "II",
+      "wordCount": 4909,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 26,
+      "title": "III",
+      "wordCount": 4384,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 27,
+      "title": "IV",
+      "wordCount": 3342,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 28,
+      "title": "V",
+      "wordCount": 5889,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 29,
+      "title": "Part V",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 30,
+      "title": "I",
+      "wordCount": 7409,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 31,
+      "title": "II",
+      "wordCount": 3054,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 32,
+      "title": "III",
+      "wordCount": 4112,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 33,
+      "title": "IV",
+      "wordCount": 8137,
+      "estimatedMinutes": 33
+    }
+  ]
+}

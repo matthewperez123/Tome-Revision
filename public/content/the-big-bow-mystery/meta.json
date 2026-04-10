@@ -1,0 +1,94 @@
+{
+  "bookId": "the-big-bow-mystery",
+  "title": "The Big Bow Mystery",
+  "author": "Israel Zangwill",
+  "chapterCount": 14,
+  "totalWordCount": 42812,
+  "totalMinutes": 171,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Introduction",
+      "wordCount": 1219,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 1,
+      "title": "Note",
+      "wordCount": 141,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "I",
+      "wordCount": 3126,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 3,
+      "title": "II",
+      "wordCount": 3059,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 4,
+      "title": "III",
+      "wordCount": 3226,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 5,
+      "title": "IV",
+      "wordCount": 2883,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 6,
+      "title": "V",
+      "wordCount": 3375,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 7,
+      "title": "VI",
+      "wordCount": 3598,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 8,
+      "title": "VII",
+      "wordCount": 3387,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 9,
+      "title": "VIII",
+      "wordCount": 3397,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 10,
+      "title": "IX",
+      "wordCount": 1744,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 11,
+      "title": "X",
+      "wordCount": 6494,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 12,
+      "title": "XI",
+      "wordCount": 2578,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 13,
+      "title": "XII",
+      "wordCount": 4585,
+      "estimatedMinutes": 18
+    }
+  ]
+}

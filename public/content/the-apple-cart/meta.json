@@ -1,0 +1,40 @@
+{
+  "bookId": "the-apple-cart",
+  "title": "The Apple Cart",
+  "author": "George Bernard Shaw",
+  "chapterCount": 5,
+  "totalWordCount": 35614,
+  "totalMinutes": 142,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface",
+      "wordCount": 9490,
+      "estimatedMinutes": 38
+    },
+    {
+      "index": 1,
+      "title": "Dramatis Personae",
+      "wordCount": 68,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Act I",
+      "wordCount": 14973,
+      "estimatedMinutes": 60
+    },
+    {
+      "index": 3,
+      "title": "An Interlude",
+      "wordCount": 4526,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 4,
+      "title": "Act II",
+      "wordCount": 6557,
+      "estimatedMinutes": 26
+    }
+  ]
+}

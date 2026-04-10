@@ -1,0 +1,40 @@
+{
+  "bookId": "the-playboy-of-the-western-world",
+  "title": "The Playboy of the Western World",
+  "author": "J. M. Synge",
+  "chapterCount": 5,
+  "totalWordCount": 20484,
+  "totalMinutes": 82,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface",
+      "wordCount": 569,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 1,
+      "title": "Persons in the Play",
+      "wordCount": 91,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Act I",
+      "wordCount": 6343,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 3,
+      "title": "Act II",
+      "wordCount": 6363,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 4,
+      "title": "Act III",
+      "wordCount": 7118,
+      "estimatedMinutes": 28
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "bookId": "the-jewels-of-aptor",
+  "title": "The Jewels of Aptor",
+  "author": "Samuel R. Delany",
+  "chapterCount": 14,
+  "totalWordCount": 52311,
+  "totalMinutes": 209,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Epigraph",
+      "wordCount": 89,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Prologue",
+      "wordCount": 1095,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 2,
+      "title": "I",
+      "wordCount": 3281,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 3,
+      "title": "II",
+      "wordCount": 3914,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 4,
+      "title": "III",
+      "wordCount": 4984,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 5,
+      "title": "IV",
+      "wordCount": 4609,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 6,
+      "title": "V",
+      "wordCount": 3333,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 7,
+      "title": "VI",
+      "wordCount": 2667,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 8,
+      "title": "VII",
+      "wordCount": 4115,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 9,
+      "title": "VIII",
+      "wordCount": 5843,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 10,
+      "title": "IX",
+      "wordCount": 4045,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 11,
+      "title": "X",
+      "wordCount": 6847,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 12,
+      "title": "XI",
+      "wordCount": 3467,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 13,
+      "title": "XII",
+      "wordCount": 4022,
+      "estimatedMinutes": 16
+    }
+  ]
+}

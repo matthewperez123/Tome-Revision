@@ -1,0 +1,40 @@
+{
+  "bookId": "the-journal-of-a-disappointed-man",
+  "title": "The Journal of a Disappointed Man",
+  "author": "W. N. P. Barbellion",
+  "chapterCount": 5,
+  "totalWordCount": 98327,
+  "totalMinutes": 393,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Epigraph",
+      "wordCount": 93,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Introduction",
+      "wordCount": 1239,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 2,
+      "title": "Part I: At Home",
+      "wordCount": 17608,
+      "estimatedMinutes": 70
+    },
+    {
+      "index": 3,
+      "title": "Part II: In London",
+      "wordCount": 51359,
+      "estimatedMinutes": 205
+    },
+    {
+      "index": 4,
+      "title": "Part III: Marriage",
+      "wordCount": 28028,
+      "estimatedMinutes": 112
+    }
+  ]
+}

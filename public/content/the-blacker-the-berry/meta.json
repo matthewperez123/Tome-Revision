@@ -1,0 +1,52 @@
+{
+  "bookId": "the-blacker-the-berry",
+  "title": "The Blacker the Berry",
+  "author": "Wallace Thurman",
+  "chapterCount": 7,
+  "totalWordCount": 54363,
+  "totalMinutes": 217,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Epigraph",
+      "wordCount": 20,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Part I: Emma Lou",
+      "wordCount": 14338,
+      "estimatedMinutes": 57
+    },
+    {
+      "index": 3,
+      "title": "Part II: Harlem",
+      "wordCount": 7190,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 4,
+      "title": "Part III: Alva",
+      "wordCount": 9472,
+      "estimatedMinutes": 38
+    },
+    {
+      "index": 5,
+      "title": "Part IV: Rent Party",
+      "wordCount": 12676,
+      "estimatedMinutes": 51
+    },
+    {
+      "index": 6,
+      "title": "Part V: Pyrrhic Victory",
+      "wordCount": 10664,
+      "estimatedMinutes": 43
+    }
+  ]
+}

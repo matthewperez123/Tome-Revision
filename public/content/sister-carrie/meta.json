@@ -1,0 +1,292 @@
+{
+  "bookId": "sister-carrie",
+  "title": "Sister Carrie",
+  "author": "Theodore Dreiser",
+  "chapterCount": 47,
+  "totalWordCount": 156056,
+  "totalMinutes": 624,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I: The Magnet Attracting: A Waif Amid Forces",
+      "wordCount": 3208,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 1,
+      "title": "II: What Poverty Threatened: Of Granite and Brass",
+      "wordCount": 2130,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 2,
+      "title": "III: We Question of Fortune: Four-Fifty a Week",
+      "wordCount": 3627,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 3,
+      "title": "IV: The Spendings of Fancy: Facts Answer with Sneers",
+      "wordCount": 4364,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 4,
+      "title": "V: A Glittering Night Flower: The Use of a Name",
+      "wordCount": 2414,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 5,
+      "title": "VI: The Machine and the Maiden: A Knight of Today",
+      "wordCount": 4190,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 6,
+      "title": "VII: The Lure of the Material: Beauty Speaks for Itself",
+      "wordCount": 3929,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 7,
+      "title": "VIII: Intimations by Winter: An Ambassador Summoned",
+      "wordCount": 2569,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 8,
+      "title": "IX: Convention’s Own Tinderbox: The Eye That Is Green",
+      "wordCount": 2452,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 9,
+      "title": "X: The Counsel of Winter: Fortune’s Ambassador Calls",
+      "wordCount": 2924,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 10,
+      "title": "XI: The Persuasion of Fashion: Feeling Guards O’er Its Own",
+      "wordCount": 3472,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 11,
+      "title": "XII: Of the Lamps of the Mansions: The Ambassador’s Plea",
+      "wordCount": 3130,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 12,
+      "title": "XIII: His Credentials Accepted: A Babel of Tongues",
+      "wordCount": 3293,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 13,
+      "title": "XIV: With Eyes and Not Seeing: One Influence Wanes",
+      "wordCount": 2473,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 14,
+      "title": "XV: The Irk of the Old Ties: The Magic of Youth",
+      "wordCount": 3960,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 15,
+      "title": "XVI: A Witless Aladdin: The Gate to the World",
+      "wordCount": 2856,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 16,
+      "title": "XVII: A Glimpse Through the Gateway: Hope Lightens the Eye",
+      "wordCount": 2730,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 17,
+      "title": "XVIII: Just Over the Border: A Hail and Farewell",
+      "wordCount": 1890,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 18,
+      "title": "XIX: An Hour in Elfland: A Clamour Half Heard",
+      "wordCount": 4444,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 19,
+      "title": "XX: The Lure of the Spirit: The Flesh in Pursuit",
+      "wordCount": 2611,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 20,
+      "title": "XXI: The Lure of the Spirit: The Flesh in Pursuit",
+      "wordCount": 1408,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 21,
+      "title": "XXII: The Blaze of the Tinder: Flesh Wars with the Flesh",
+      "wordCount": 3969,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 22,
+      "title": "XXIII: A Spirit in Travail: One Rung Put Behind",
+      "wordCount": 3800,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 23,
+      "title": "XXIV: Ashes of Tinder: A Face at the Window",
+      "wordCount": 1817,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 24,
+      "title": "XXV: Ashes of Tinder: The Loosing of Stays",
+      "wordCount": 1789,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 25,
+      "title": "XXVI: The Ambassador Fallen: A Search for the Gate",
+      "wordCount": 4058,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 26,
+      "title": "XXVII: When Waters Engulf Us We Reach for a Star",
+      "wordCount": 3777,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 27,
+      "title": "XXVIII: A Pilgrim, an Outlaw: The Spirit Detained",
+      "wordCount": 3704,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 28,
+      "title": "XXIX: The Solace of Travel: The Boats of the Sea",
+      "wordCount": 4352,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 29,
+      "title": "XXX: The Kingdom of Greatness: The Pilgrim Adream",
+      "wordCount": 2821,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 30,
+      "title": "XXXI: A Pet of Good Fortune: Broadway Flaunts Its Joys",
+      "wordCount": 3357,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 31,
+      "title": "XXXII: The Feast of Belshazzar: A Seer to Translate",
+      "wordCount": 4846,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 32,
+      "title": "XXXIII: Without the Walled City: The Slope of the Years",
+      "wordCount": 3041,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 33,
+      "title": "XXXIV: The Grind of the Millstones: A Sample of Chaff",
+      "wordCount": 3004,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 34,
+      "title": "XXXV: The Passing of Effort: The Visage of Care",
+      "wordCount": 3503,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 35,
+      "title": "XXXVI: A Grim Retrogression: The Phantom of Chance",
+      "wordCount": 3501,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 36,
+      "title": "XXXVII: The Spirit Awakens: New Search for the Gate",
+      "wordCount": 2476,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 37,
+      "title": "XXXVIII: In Elf Land Disporting: The Grim World Without",
+      "wordCount": 3142,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 38,
+      "title": "XXXIX: Of Lights and of Shadows: The Parting of Worlds",
+      "wordCount": 3711,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 39,
+      "title": "XL: A Public Dissension: A Final Appeal",
+      "wordCount": 2672,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 40,
+      "title": "XLI: The Strike",
+      "wordCount": 5418,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 41,
+      "title": "XLII: A Touch of Spring: The Empty Shell",
+      "wordCount": 3250,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 42,
+      "title": "XLIII: The World Turns Flatterer: An Eye in the Dark",
+      "wordCount": 2779,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 43,
+      "title": "XLIV: And This Is Not Elf Land: What Gold Will Not Buy",
+      "wordCount": 3197,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 44,
+      "title": "XLV: Curious Shifts of the Poor",
+      "wordCount": 5071,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 45,
+      "title": "XLVI: Stirring Troubled Waters",
+      "wordCount": 3432,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 46,
+      "title": "XLVII: The Way of the Beaten: A Harp in the Wind",
+      "wordCount": 5495,
+      "estimatedMinutes": 22
+    }
+  ]
+}

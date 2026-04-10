@@ -1,0 +1,142 @@
+{
+  "bookId": "the-story-of-doctor-dolittle",
+  "title": "The Story of Doctor Dolittle",
+  "author": "Hugh Lofting",
+  "chapterCount": 22,
+  "totalWordCount": 24840,
+  "totalMinutes": 99,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 14,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I: Puddleby",
+      "wordCount": 690,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 2,
+      "title": "II: Animal Language",
+      "wordCount": 1847,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 3,
+      "title": "III: More Money Troubles",
+      "wordCount": 1234,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 4,
+      "title": "IV: A Message from Africa",
+      "wordCount": 1099,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 5,
+      "title": "V: The Great Journey",
+      "wordCount": 1205,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 6,
+      "title": "VI: Polynesia and the King",
+      "wordCount": 1043,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 7,
+      "title": "VII: The Bridge of Apes",
+      "wordCount": 1608,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 8,
+      "title": "VIII: The Leader of the Lions",
+      "wordCount": 1032,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 9,
+      "title": "IX: The Monkeys’ Council",
+      "wordCount": 805,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 10,
+      "title": "X: The Rarest Animal of All",
+      "wordCount": 1281,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 11,
+      "title": "XI: The Black Prince",
+      "wordCount": 1107,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 12,
+      "title": "XII: Medicine and Magic",
+      "wordCount": 1864,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 13,
+      "title": "XIII: Red Sails and Blue Wings",
+      "wordCount": 861,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 14,
+      "title": "XIV: The Rats’ Warning",
+      "wordCount": 996,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 15,
+      "title": "XV: The Barbary Dragon",
+      "wordCount": 1293,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 16,
+      "title": "XVI: Too-Too, the Listener",
+      "wordCount": 976,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 17,
+      "title": "VII: The Ocean Gossips",
+      "wordCount": 1112,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 18,
+      "title": "XVIII: Smells",
+      "wordCount": 1656,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 19,
+      "title": "XIX: The Rock",
+      "wordCount": 1278,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 20,
+      "title": "XX: The Fisherman’s Town",
+      "wordCount": 1100,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 21,
+      "title": "XXI: Home Again",
+      "wordCount": 739,
+      "estimatedMinutes": 3
+    }
+  ]
+}

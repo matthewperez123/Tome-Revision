@@ -1,0 +1,244 @@
+{
+  "bookId": "the-white-company",
+  "title": "The White Company",
+  "author": "Arthur Conan Doyle",
+  "chapterCount": 39,
+  "totalWordCount": 150857,
+  "totalMinutes": 603,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 26,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I: How the Black Sheep Came Forth from the Fold",
+      "wordCount": 3360,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 2,
+      "title": "II: How Alleyne Edricson Came Out Into the World",
+      "wordCount": 2031,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 3,
+      "title": "III: How Hordle John Cozened the Fuller of Lymington",
+      "wordCount": 2201,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 4,
+      "title": "IV: How the Bailiff of Southampton Slew the Two Masterless Men",
+      "wordCount": 4717,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 5,
+      "title": "V: How a Strange Company Gathered at the Pied Merlin",
+      "wordCount": 4822,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 6,
+      "title": "VI: How Samkin Aylward Wagered His Featherbed",
+      "wordCount": 4624,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 7,
+      "title": "VII: How the Three Comrades Journeyed Through the Woodlands",
+      "wordCount": 4339,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 8,
+      "title": "VIII: The Three Friends",
+      "wordCount": 3814,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 9,
+      "title": "IX: How Strange Things Befell in Minstead Wood",
+      "wordCount": 7041,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 10,
+      "title": "X: How Hordle John Found a Man Whom He Might Follow",
+      "wordCount": 7352,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 11,
+      "title": "XI: How a Young Shepherd Had a Perilous Flock",
+      "wordCount": 5260,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 12,
+      "title": "XII: How Alleyne Learned More Than He Could Teach",
+      "wordCount": 3758,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 13,
+      "title": "XIII: How the White Company Set Forth to the Wars",
+      "wordCount": 2729,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 14,
+      "title": "XIV: How Sir Nigel Sought for a Wayside Venture",
+      "wordCount": 4181,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 15,
+      "title": "XV: How the Yellow Cog Sailed Forth from Lepe",
+      "wordCount": 4868,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 16,
+      "title": "XVI: How the Yellow Cog Fought the Two Rover Galleys",
+      "wordCount": 3011,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 17,
+      "title": "XVII: How the Yellow Cog Crossed the Bar of Gironde",
+      "wordCount": 2978,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 18,
+      "title": "XVIII: How Sir Nigel Loring Put a Patch Upon His Eye",
+      "wordCount": 3973,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 19,
+      "title": "XIX: How There Was Stir at the Abbey of St. Andrew’s",
+      "wordCount": 4360,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 20,
+      "title": "XX: How Alleyne Won His Place in an Honorable Guild",
+      "wordCount": 3575,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 21,
+      "title": "XXI: How Agostino Pisano Risked His Head",
+      "wordCount": 3741,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 22,
+      "title": "XXII: How the Bowmen Held Wassail at the Rose de Guienne",
+      "wordCount": 2690,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 23,
+      "title": "XXIII: How England Held the Lists at Bordeaux",
+      "wordCount": 3745,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 24,
+      "title": "XXIV: How a Champion Came Forth from the East",
+      "wordCount": 3539,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 25,
+      "title": "XXV: How Sir Nigel Wrote to Twynham Castle",
+      "wordCount": 2321,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 26,
+      "title": "XXVI: How the Three Comrades Gained a Mighty Treasure",
+      "wordCount": 5171,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 27,
+      "title": "XXVII: How Roger Clubfoot Was Passed Into Paradise",
+      "wordCount": 3600,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 28,
+      "title": "XXVIII: How the Comrades Came Over the Marches of France",
+      "wordCount": 4708,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 29,
+      "title": "XXIX: How the Blessed Hour of Sight Came to the Lady Tiphaine",
+      "wordCount": 4125,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 30,
+      "title": "XXX: How the Brushwood Men Came to the Château of Villefranche",
+      "wordCount": 3317,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 31,
+      "title": "XXXI: How Five Men Held the Keep of Villefranche",
+      "wordCount": 3828,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 32,
+      "title": "XXXII: How the Company Took Counsel Round the Fallen Tree",
+      "wordCount": 2837,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 33,
+      "title": "XXXIII: How the Army Made the Passage of Roncesvalles",
+      "wordCount": 3047,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 34,
+      "title": "XXXIV: How the Company Made Sport in the Vale of Pampeluna",
+      "wordCount": 3841,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 35,
+      "title": "XXXV: How Sir Nigel Hawked at an Eagle",
+      "wordCount": 5045,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 36,
+      "title": "XXXVI: How Sir Nigel Took the Patch from His Eye",
+      "wordCount": 5302,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 37,
+      "title": "XXXVII: How the White Company Came to Be Disbanded",
+      "wordCount": 3482,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 38,
+      "title": "XXXVIII: Of the Homecoming to Hampshire",
+      "wordCount": 3498,
+      "estimatedMinutes": 14
+    }
+  ]
+}

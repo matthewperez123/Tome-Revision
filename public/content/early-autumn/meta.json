@@ -1,0 +1,76 @@
+{
+  "bookId": "early-autumn",
+  "title": "Early Autumn",
+  "author": "Louis Bromfield",
+  "chapterCount": 11,
+  "totalWordCount": 99422,
+  "totalMinutes": 398,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 4,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I",
+      "wordCount": 7439,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 2,
+      "title": "II",
+      "wordCount": 5101,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 3,
+      "title": "III",
+      "wordCount": 8969,
+      "estimatedMinutes": 36
+    },
+    {
+      "index": 4,
+      "title": "IV",
+      "wordCount": 7538,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 5,
+      "title": "V",
+      "wordCount": 13506,
+      "estimatedMinutes": 54
+    },
+    {
+      "index": 6,
+      "title": "VI",
+      "wordCount": 3186,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 7,
+      "title": "VII",
+      "wordCount": 18205,
+      "estimatedMinutes": 73
+    },
+    {
+      "index": 8,
+      "title": "VIII",
+      "wordCount": 9037,
+      "estimatedMinutes": 36
+    },
+    {
+      "index": 9,
+      "title": "IX",
+      "wordCount": 19815,
+      "estimatedMinutes": 79
+    },
+    {
+      "index": 10,
+      "title": "X",
+      "wordCount": 6622,
+      "estimatedMinutes": 26
+    }
+  ]
+}

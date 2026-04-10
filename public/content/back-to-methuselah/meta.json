@@ -1,0 +1,82 @@
+{
+  "bookId": "back-to-methuselah",
+  "title": "Back to Methuselah",
+  "author": "George Bernard Shaw",
+  "chapterCount": 12,
+  "totalWordCount": 112680,
+  "totalMinutes": 451,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "The Infidel Half Century",
+      "wordCount": 29158,
+      "estimatedMinutes": 117
+    },
+    {
+      "index": 1,
+      "title": "Dramatis Personae",
+      "wordCount": 151,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Part I: In the Beginning",
+      "wordCount": 12,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "Act I",
+      "wordCount": 5501,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 4,
+      "title": "Act II",
+      "wordCount": 5908,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 5,
+      "title": "Part II: The Gospel of the Brothers Barnabas",
+      "wordCount": 17179,
+      "estimatedMinutes": 69
+    },
+    {
+      "index": 6,
+      "title": "Part III: The Thing Happens",
+      "wordCount": 14307,
+      "estimatedMinutes": 57
+    },
+    {
+      "index": 7,
+      "title": "Part IV: Tragedy of an Elderly Gentleman",
+      "wordCount": 9,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 8,
+      "title": "Act I",
+      "wordCount": 11909,
+      "estimatedMinutes": 48
+    },
+    {
+      "index": 9,
+      "title": "Act II",
+      "wordCount": 6360,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 10,
+      "title": "Act III",
+      "wordCount": 2865,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 11,
+      "title": "Part V: As Far as Thought Can Reach",
+      "wordCount": 19321,
+      "estimatedMinutes": 77
+    }
+  ]
+}

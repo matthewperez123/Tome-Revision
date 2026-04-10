@@ -1,0 +1,190 @@
+{
+  "bookId": "the-absolute-at-large",
+  "title": "The Absolute at Large",
+  "author": "Karel Čapek",
+  "chapterCount": 30,
+  "totalWordCount": 49623,
+  "totalMinutes": 198,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I: The Advertisement",
+      "wordCount": 1522,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 1,
+      "title": "II: The Karburator",
+      "wordCount": 1658,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 2,
+      "title": "III: Pantheism",
+      "wordCount": 1838,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 3,
+      "title": "IV: God in the Cellar",
+      "wordCount": 1784,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 4,
+      "title": "V: Bishop Linda",
+      "wordCount": 2057,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 5,
+      "title": "VI: The Board-Meeting",
+      "wordCount": 1647,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 6,
+      "title": "VII: Developments",
+      "wordCount": 1292,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 7,
+      "title": "VIII: The Dredge",
+      "wordCount": 2455,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 8,
+      "title": "IX: The Ceremony",
+      "wordCount": 1806,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 9,
+      "title": "X: Saint Ellen",
+      "wordCount": 1635,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 10,
+      "title": "XI: The First Blow Struck",
+      "wordCount": 1992,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 11,
+      "title": "XII: Doctor Blahous",
+      "wordCount": 1460,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 12,
+      "title": "XIII: The Chronicler’s Apology",
+      "wordCount": 1510,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 13,
+      "title": "XIV: The Land of Plenty",
+      "wordCount": 2158,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 14,
+      "title": "XV: Disaster",
+      "wordCount": 2050,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 15,
+      "title": "XVI: In the Mountains",
+      "wordCount": 1769,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 16,
+      "title": "XVII: The Hammer and Star",
+      "wordCount": 1248,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 17,
+      "title": "XVIII: In the Night Editor’s Room",
+      "wordCount": 1634,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 18,
+      "title": "XIX: The Process of Canonization",
+      "wordCount": 1337,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 19,
+      "title": "XX: St. Kilda",
+      "wordCount": 1974,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 20,
+      "title": "XXI: The Telegram",
+      "wordCount": 1577,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 21,
+      "title": "XXII: The Old Patriot",
+      "wordCount": 1846,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 22,
+      "title": "XXIII: The Augsburg Imbroglio",
+      "wordCount": 1937,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 23,
+      "title": "XXIV: The Napoleon of the Mountain Brigade",
+      "wordCount": 1427,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 24,
+      "title": "XXV: The So-Called Greatest War",
+      "wordCount": 1402,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 25,
+      "title": "XXVI: The Battle of Hradec Králové",
+      "wordCount": 1533,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 26,
+      "title": "XXVII: A Coral Island in the Pacific",
+      "wordCount": 1313,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 27,
+      "title": "XXVIII: At Seven Cottages",
+      "wordCount": 1162,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 28,
+      "title": "XXIX: The Last Battle",
+      "wordCount": 1261,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 29,
+      "title": "XXX: The End of Everything",
+      "wordCount": 1339,
+      "estimatedMinutes": 5
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "bookId": "indian-summer",
+  "title": "Indian Summer",
+  "author": "William Dean Howells",
+  "chapterCount": 24,
+  "totalWordCount": 96073,
+  "totalMinutes": 384,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I",
+      "wordCount": 2829,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 1,
+      "title": "II",
+      "wordCount": 2758,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 2,
+      "title": "III",
+      "wordCount": 4009,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 3,
+      "title": "IV",
+      "wordCount": 3397,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 4,
+      "title": "V",
+      "wordCount": 3465,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 5,
+      "title": "VI",
+      "wordCount": 4018,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 6,
+      "title": "VII",
+      "wordCount": 7077,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 7,
+      "title": "VIII",
+      "wordCount": 6292,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 8,
+      "title": "IX",
+      "wordCount": 4769,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 9,
+      "title": "X",
+      "wordCount": 2992,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 10,
+      "title": "XI",
+      "wordCount": 7467,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 11,
+      "title": "XII",
+      "wordCount": 2338,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 12,
+      "title": "XIII",
+      "wordCount": 4470,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 13,
+      "title": "XIV",
+      "wordCount": 3658,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 14,
+      "title": "XV",
+      "wordCount": 5232,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 15,
+      "title": "XVI",
+      "wordCount": 6242,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 16,
+      "title": "XVII",
+      "wordCount": 3031,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 17,
+      "title": "XVIII",
+      "wordCount": 4259,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 18,
+      "title": "XIX",
+      "wordCount": 2513,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 19,
+      "title": "XX",
+      "wordCount": 6035,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 20,
+      "title": "XXI",
+      "wordCount": 2383,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 21,
+      "title": "XXII",
+      "wordCount": 3087,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 22,
+      "title": "XXIII",
+      "wordCount": 3163,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 23,
+      "title": "XXIV",
+      "wordCount": 589,
+      "estimatedMinutes": 2
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "bookId": "queen-victoria",
+  "title": "Queen Victoria",
+  "author": "Lytton Strachey",
+  "chapterCount": 11,
+  "totalWordCount": 87284,
+  "totalMinutes": 349,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Foreword",
+      "wordCount": 46,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I: Antecedents",
+      "wordCount": 4794,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 2,
+      "title": "II: Childhood",
+      "wordCount": 9651,
+      "estimatedMinutes": 39
+    },
+    {
+      "index": 3,
+      "title": "III: Lord Melbourne",
+      "wordCount": 13179,
+      "estimatedMinutes": 53
+    },
+    {
+      "index": 4,
+      "title": "IV: Marriage",
+      "wordCount": 14622,
+      "estimatedMinutes": 58
+    },
+    {
+      "index": 5,
+      "title": "V: Lord Palmerston",
+      "wordCount": 10006,
+      "estimatedMinutes": 40
+    },
+    {
+      "index": 6,
+      "title": "VI: Last Years of Prince Consort",
+      "wordCount": 9112,
+      "estimatedMinutes": 36
+    },
+    {
+      "index": 7,
+      "title": "VII: Widowhood",
+      "wordCount": 6169,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 8,
+      "title": "VIII: Gladstone and Lord Beaconsfield",
+      "wordCount": 8075,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 9,
+      "title": "IX: Old Age",
+      "wordCount": 10720,
+      "estimatedMinutes": 43
+    },
+    {
+      "index": 10,
+      "title": "X: The End",
+      "wordCount": 910,
+      "estimatedMinutes": 4
+    }
+  ]
+}

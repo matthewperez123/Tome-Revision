@@ -1,0 +1,154 @@
+{
+  "bookId": "the-crock-of-gold",
+  "title": "The Crock of Gold",
+  "author": "James Stephens",
+  "chapterCount": 24,
+  "totalWordCount": 55641,
+  "totalMinutes": 223,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Book I: The Coming of Pan",
+      "wordCount": 6,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I",
+      "wordCount": 1469,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 2,
+      "title": "II",
+      "wordCount": 1897,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 3,
+      "title": "III",
+      "wordCount": 1262,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 4,
+      "title": "IV",
+      "wordCount": 1209,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 5,
+      "title": "V",
+      "wordCount": 1477,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 6,
+      "title": "VI",
+      "wordCount": 3249,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 7,
+      "title": "VII",
+      "wordCount": 1774,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 8,
+      "title": "VIII",
+      "wordCount": 1300,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 9,
+      "title": "IX",
+      "wordCount": 2534,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 10,
+      "title": "Book II: The Philosopher’s Journey",
+      "wordCount": 5,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 11,
+      "title": "X",
+      "wordCount": 1262,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 12,
+      "title": "XI",
+      "wordCount": 7254,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 13,
+      "title": "Book III: The Two Gods",
+      "wordCount": 5,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 14,
+      "title": "XII",
+      "wordCount": 2456,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 15,
+      "title": "Book IV: The Philosopher’s Return",
+      "wordCount": 5,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 16,
+      "title": "XIII",
+      "wordCount": 6407,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 17,
+      "title": "Book V: The Policemen",
+      "wordCount": 4,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 18,
+      "title": "XIV",
+      "wordCount": 6080,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 19,
+      "title": "XV",
+      "wordCount": 1306,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 20,
+      "title": "XVI",
+      "wordCount": 5803,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 21,
+      "title": "Book VI: The Thin Woman’s Journey and the Happy March",
+      "wordCount": 10,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 22,
+      "title": "XVII",
+      "wordCount": 6396,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 23,
+      "title": "XVIII: The Happy March",
+      "wordCount": 2471,
+      "estimatedMinutes": 10
+    }
+  ]
+}

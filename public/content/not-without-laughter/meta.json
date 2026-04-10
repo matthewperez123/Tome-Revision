@@ -1,0 +1,190 @@
+{
+  "bookId": "not-without-laughter",
+  "title": "Not Without Laughter",
+  "author": "Langston Hughes",
+  "chapterCount": 30,
+  "totalWordCount": 76403,
+  "totalMinutes": 306,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I: Storm",
+      "wordCount": 3170,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 1,
+      "title": "II: Conversation",
+      "wordCount": 3595,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 2,
+      "title": "III: Jimboy’s Letter",
+      "wordCount": 1796,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 3,
+      "title": "IV: Thursday Afternoon",
+      "wordCount": 2845,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 4,
+      "title": "V: Guitar",
+      "wordCount": 2421,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 5,
+      "title": "VI: Work",
+      "wordCount": 2301,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 6,
+      "title": "VII: White Folks",
+      "wordCount": 3577,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 7,
+      "title": "VIII: Dance",
+      "wordCount": 4972,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 8,
+      "title": "IX: Carnival",
+      "wordCount": 3421,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 9,
+      "title": "X: Punishment",
+      "wordCount": 1997,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 10,
+      "title": "XI: School",
+      "wordCount": 1792,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 11,
+      "title": "XII: Hard Winter",
+      "wordCount": 3636,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 12,
+      "title": "XIII: Christmas",
+      "wordCount": 3569,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 13,
+      "title": "XIV: Return",
+      "wordCount": 1826,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 14,
+      "title": "XV: One by One",
+      "wordCount": 2908,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 15,
+      "title": "XVI: Nothing but Love",
+      "wordCount": 1919,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 16,
+      "title": "XVII: Barbershop",
+      "wordCount": 2366,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 17,
+      "title": "XVIII: Children’s Day",
+      "wordCount": 2343,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 18,
+      "title": "XIX: Ten Dollars and Costs",
+      "wordCount": 1286,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 19,
+      "title": "XX: Hey, Boy!",
+      "wordCount": 2475,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 20,
+      "title": "XXI: Note to Harriett",
+      "wordCount": 2902,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 21,
+      "title": "XXII: Beyond the Jordan",
+      "wordCount": 1552,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 22,
+      "title": "XXIII: Tempy’s House",
+      "wordCount": 1916,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 23,
+      "title": "XXIV: A Shelf of Books",
+      "wordCount": 1534,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 24,
+      "title": "XXV: Pool Hall",
+      "wordCount": 2053,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 25,
+      "title": "XXVI: The Doors of Life",
+      "wordCount": 1862,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 26,
+      "title": "XXVII: Beware of Women",
+      "wordCount": 3075,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 27,
+      "title": "XXVIII: Chicago",
+      "wordCount": 3831,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 28,
+      "title": "XXIX: Elevator",
+      "wordCount": 1321,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 29,
+      "title": "XXX: Princess of the Blues",
+      "wordCount": 2142,
+      "estimatedMinutes": 9
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "bookId": "the-theory-of-the-leisure-class",
+  "title": "The Theory of the Leisure Class",
+  "author": "Thorstein Veblen",
+  "chapterCount": 15,
+  "totalWordCount": 105727,
+  "totalMinutes": 423,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface",
+      "wordCount": 407,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 1,
+      "title": "I: Introductory",
+      "wordCount": 5348,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 2,
+      "title": "II: Pecuniary Emulation",
+      "wordCount": 3282,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 3,
+      "title": "III: Conspicuous Leisure",
+      "wordCount": 8688,
+      "estimatedMinutes": 35
+    },
+    {
+      "index": 4,
+      "title": "IV: Conspicuous Consumption",
+      "wordCount": 8918,
+      "estimatedMinutes": 36
+    },
+    {
+      "index": 5,
+      "title": "V: The Pecuniary Standard of Living",
+      "wordCount": 3280,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 6,
+      "title": "VI: Pecuniary Canons of Taste",
+      "wordCount": 14129,
+      "estimatedMinutes": 57
+    },
+    {
+      "index": 7,
+      "title": "VII: Dress as an Expression of the Pecuniary Culture",
+      "wordCount": 5778,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 8,
+      "title": "VIII: Industrial Exemption and Conservatism",
+      "wordCount": 6262,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 9,
+      "title": "IX: The Conservation of Archaic Traits",
+      "wordCount": 8627,
+      "estimatedMinutes": 35
+    },
+    {
+      "index": 10,
+      "title": "X: Modern Survivals of Prowess",
+      "wordCount": 8007,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 11,
+      "title": "XI: The Belief in Luck",
+      "wordCount": 4456,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 12,
+      "title": "XII: Devout Observances",
+      "wordCount": 10431,
+      "estimatedMinutes": 42
+    },
+    {
+      "index": 13,
+      "title": "XII: Survivals of the Non-Invidious Interests",
+      "wordCount": 8166,
+      "estimatedMinutes": 33
+    },
+    {
+      "index": 14,
+      "title": "XIV: The Higher Learning as an Expression of the Pecuniary",
+      "wordCount": 9948,
+      "estimatedMinutes": 40
+    }
+  ]
+}

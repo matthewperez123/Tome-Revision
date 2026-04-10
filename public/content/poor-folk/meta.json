@@ -1,0 +1,340 @@
+{
+  "bookId": "poor-folk",
+  "title": "Poor Folk",
+  "author": "Fyodor Dostoevsky",
+  "chapterCount": 55,
+  "totalWordCount": 54706,
+  "totalMinutes": 219,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "April 8th: My Dearest Barbara Alexievna",
+      "wordCount": 1893,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 1,
+      "title": "April 8th: My Beloved Makar Alexievitch",
+      "wordCount": 924,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 2,
+      "title": "April 8th: My Dearest Barbara Alexievna",
+      "wordCount": 1405,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 3,
+      "title": "April 9th: My Dearest Makar Alexievitch",
+      "wordCount": 333,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 4,
+      "title": "April 12th: Dearest Mistress Barbara Alexievna",
+      "wordCount": 1492,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 5,
+      "title": "April 25th: My Dearest Makar Alexievitch",
+      "wordCount": 418,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 6,
+      "title": "May 20th: My Dearest Little Barbara",
+      "wordCount": 578,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 7,
+      "title": "June 1st: My Beloved Makar Alexievitch",
+      "wordCount": 11950,
+      "estimatedMinutes": 48
+    },
+    {
+      "index": 8,
+      "title": "June 11th: How I Thank You for Our Walk to the Islands Yesterday, Makar Alexievitch!",
+      "wordCount": 357,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 9,
+      "title": "June 12th: My Dearest Barbara Alexievna",
+      "wordCount": 1060,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 10,
+      "title": "June 20th: My Dearest Makar Alexievitch",
+      "wordCount": 588,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 11,
+      "title": "June 21st: My Own, My Darling",
+      "wordCount": 306,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 12,
+      "title": "June 22nd: My Dearest Barbara Alexievna",
+      "wordCount": 318,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 13,
+      "title": "June 25th: My Beloved Makar Alexievitch",
+      "wordCount": 88,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 14,
+      "title": "June 26th: My Dear Little Barbara",
+      "wordCount": 2010,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 15,
+      "title": "June 27th: My Dearest Makar Alexievitch",
+      "wordCount": 706,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 16,
+      "title": "June 28th: My Dearest Barbara Alexievna",
+      "wordCount": 748,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 17,
+      "title": "My Dear Makar Alexievitch",
+      "wordCount": 596,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 18,
+      "title": "July 1st: Rubbish, Rubbish, Barbara!",
+      "wordCount": 1211,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 19,
+      "title": "My Dearest Makar Alexievitch",
+      "wordCount": 251,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 20,
+      "title": "July 7th: My Dearest Barbara Alexievna",
+      "wordCount": 520,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 21,
+      "title": "July 8th: My Dearest Barbara Alexievna",
+      "wordCount": 1278,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 22,
+      "title": "July 27th: My Dearest Makar Alexievitch",
+      "wordCount": 864,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 23,
+      "title": "July 28th: My Priceless Barbara Alexievna",
+      "wordCount": 494,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 24,
+      "title": "July 28th: Dearest Little Barbara",
+      "wordCount": 946,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 25,
+      "title": "July 29th: My Dearest Makar Alexievitch",
+      "wordCount": 147,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 26,
+      "title": "August 1st: My Darling Barbara Alexievna",
+      "wordCount": 1058,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 27,
+      "title": "August 2nd: My Dearest Makar Alexievitch",
+      "wordCount": 185,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 28,
+      "title": "August 3rd: My Angel, Barbara Alexievna",
+      "wordCount": 899,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 29,
+      "title": "August 4th: My Beloved Makar Alexievitch",
+      "wordCount": 689,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 30,
+      "title": "August 4th: My Beloved Barbara Alexievna",
+      "wordCount": 1046,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 31,
+      "title": "August 5th: Dearest Makar Alexievitch",
+      "wordCount": 464,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 32,
+      "title": "August 5th: My Darling Little Barbara",
+      "wordCount": 1801,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 33,
+      "title": "August 11th: O Barbara Alexievna, I Am Undone",
+      "wordCount": 417,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 34,
+      "title": "August 13th: My Beloved Makar Alexievitch",
+      "wordCount": 159,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 35,
+      "title": "August 14th: What Is the Matter with You, Makar Alexievitch?",
+      "wordCount": 533,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 36,
+      "title": "August 19th: My Dearest Barbara Alexievna",
+      "wordCount": 208,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 37,
+      "title": "August 21st: My Dear and Kind Barbara Alexievna",
+      "wordCount": 697,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 38,
+      "title": "September 3rd: The Reason Why I Did Not Finish My Last Letter, Makar Alexievitch, Was That I Found It So Difficult to Write",
+      "wordCount": 1561,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 39,
+      "title": "September 5th: My Beloved Barbara",
+      "wordCount": 3603,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 40,
+      "title": "September 9th: My Dearest Barbara Alexievna",
+      "wordCount": 1819,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 41,
+      "title": "September 10th: My Beloved Makar Alexievitch",
+      "wordCount": 217,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 42,
+      "title": "September 11th: My Darling Barbara Alexievna",
+      "wordCount": 991,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 43,
+      "title": "September 15th: My Dearest Makar Alexievitch",
+      "wordCount": 589,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 44,
+      "title": "September 18th: My Beloved Barbara Alexievna",
+      "wordCount": 1166,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 45,
+      "title": "September 19th: My Beloved Barbara Alexievna",
+      "wordCount": 136,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 46,
+      "title": "September 23rd: My Dearest Makar Alexievitch",
+      "wordCount": 1295,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 47,
+      "title": "September 23rd: My Beloved Barbara Alexievna",
+      "wordCount": 515,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 48,
+      "title": "September 27th: Dear Makar Alexievitch",
+      "wordCount": 604,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 49,
+      "title": "September 27th: My Beloved Barbara Alexievna",
+      "wordCount": 242,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 50,
+      "title": "September 28th: My Dearest Makar Alexievitch",
+      "wordCount": 174,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 51,
+      "title": "September 28th: My Beloved Barbara Alexievna",
+      "wordCount": 138,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 52,
+      "title": "September 29th: My Own Barbara Alexievna",
+      "wordCount": 465,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 53,
+      "title": "September 30th: My Beloved Makar Alexievitch",
+      "wordCount": 470,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 54,
+      "title": "Beloved Barbara—My Jewel, My Priceless One",
+      "wordCount": 1084,
+      "estimatedMinutes": 4
+    }
+  ]
+}

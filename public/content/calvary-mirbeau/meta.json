@@ -1,0 +1,82 @@
+{
+  "bookId": "calvary-mirbeau",
+  "title": "Calvary",
+  "author": "Octave Mirbeau",
+  "chapterCount": 12,
+  "totalWordCount": 81367,
+  "totalMinutes": 325,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I",
+      "wordCount": 10885,
+      "estimatedMinutes": 44
+    },
+    {
+      "index": 1,
+      "title": "II",
+      "wordCount": 12448,
+      "estimatedMinutes": 50
+    },
+    {
+      "index": 2,
+      "title": "III",
+      "wordCount": 11795,
+      "estimatedMinutes": 47
+    },
+    {
+      "index": 3,
+      "title": "IV",
+      "wordCount": 4027,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 4,
+      "title": "V",
+      "wordCount": 5107,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 5,
+      "title": "VI",
+      "wordCount": 8250,
+      "estimatedMinutes": 33
+    },
+    {
+      "index": 6,
+      "title": "VII",
+      "wordCount": 5439,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 7,
+      "title": "VIII",
+      "wordCount": 4538,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 8,
+      "title": "IX",
+      "wordCount": 7343,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 9,
+      "title": "X",
+      "wordCount": 888,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 10,
+      "title": "XI",
+      "wordCount": 6486,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 11,
+      "title": "XII",
+      "wordCount": 4161,
+      "estimatedMinutes": 17
+    }
+  ]
+}

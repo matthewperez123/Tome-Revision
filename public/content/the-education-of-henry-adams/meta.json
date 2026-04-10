@@ -1,0 +1,232 @@
+{
+  "bookId": "the-education-of-henry-adams",
+  "title": "The Education of Henry Adams",
+  "author": "Henry Adams",
+  "chapterCount": 37,
+  "totalWordCount": 175818,
+  "totalMinutes": 703,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Editor’s Preface",
+      "wordCount": 667,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 1,
+      "title": "Preface",
+      "wordCount": 581,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 2,
+      "title": "I: Quincy (1838–1848)",
+      "wordCount": 7125,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 3,
+      "title": "II: Boston (1848–1854)",
+      "wordCount": 5836,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 4,
+      "title": "III: Washington (1850–1854)",
+      "wordCount": 4985,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 5,
+      "title": "IV: Harvard College (1854–1858)",
+      "wordCount": 5609,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 6,
+      "title": "V: Berlin (1858–1859)",
+      "wordCount": 4304,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 7,
+      "title": "VI: Rome (1859–1860)",
+      "wordCount": 5467,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 8,
+      "title": "VII: Treason (1860–1861)",
+      "wordCount": 4133,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 9,
+      "title": "VIII: Diplomacy (1861)",
+      "wordCount": 6401,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 10,
+      "title": "IX: Foes or Friends (1862)",
+      "wordCount": 5952,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 11,
+      "title": "X: Political Morality (1862)",
+      "wordCount": 7772,
+      "estimatedMinutes": 31
+    },
+    {
+      "index": 12,
+      "title": "XI: The Battle of the Rams (1863)",
+      "wordCount": 4390,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 13,
+      "title": "XII: Eccentricity (1863)",
+      "wordCount": 4821,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 14,
+      "title": "XIII: The Perfection of Human Society (1864)",
+      "wordCount": 4887,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 15,
+      "title": "XIV: Dilettantism (1865–1866)",
+      "wordCount": 5522,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 16,
+      "title": "XV: Darwinism (1867–1868)",
+      "wordCount": 4688,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 17,
+      "title": "XVI: The Press (1868)",
+      "wordCount": 6289,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 18,
+      "title": "XVII: President Grant (1869)",
+      "wordCount": 4634,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 19,
+      "title": "XVIII: Free Fight (1869–1870)",
+      "wordCount": 5437,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 20,
+      "title": "XIX: Chaos (1870)",
+      "wordCount": 5265,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 21,
+      "title": "XX: Failure (1871)",
+      "wordCount": 5486,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 22,
+      "title": "XXI: Twenty Years After (1892)",
+      "wordCount": 6259,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 23,
+      "title": "XXII: Chicago (1893)",
+      "wordCount": 5159,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 24,
+      "title": "XXIII: Silence (1894–1898)",
+      "wordCount": 5442,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 25,
+      "title": "XXIV: Indian Summer (1898–1899)",
+      "wordCount": 5845,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 26,
+      "title": "XXV: The Dynamo and the Virgin (1900)",
+      "wordCount": 3998,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 27,
+      "title": "XXVI: Twilight (1901)",
+      "wordCount": 4139,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 28,
+      "title": "XXVII: Teufelsdröckh (1901)",
+      "wordCount": 4499,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 29,
+      "title": "XXVIII: The Height of Knowledge (1902)",
+      "wordCount": 3281,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 30,
+      "title": "XXIX: The Abyss of Ignorance (1902)",
+      "wordCount": 3398,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 31,
+      "title": "XXX: Vis Inertiae (1903)",
+      "wordCount": 4508,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 32,
+      "title": "XXXI: The Grammar of Science (1903)",
+      "wordCount": 4270,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 33,
+      "title": "XXXII: Vis Nova (1903–1904)",
+      "wordCount": 4003,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 34,
+      "title": "XXXIII: A Dynamic Theory of History (1904)",
+      "wordCount": 5106,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 35,
+      "title": "XXXIV: A Law of Acceleration (1904)",
+      "wordCount": 3337,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 36,
+      "title": "XXXV: Nunc Age (1905)",
+      "wordCount": 2323,
+      "estimatedMinutes": 9
+    }
+  ]
+}

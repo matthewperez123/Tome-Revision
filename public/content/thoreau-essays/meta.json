@@ -1,0 +1,184 @@
+{
+  "bookId": "thoreau-essays",
+  "title": "Essays",
+  "author": "Henry David Thoreau",
+  "chapterCount": 29,
+  "totalWordCount": 231171,
+  "totalMinutes": 925,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Biographical Sketch",
+      "wordCount": 7413,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 1,
+      "title": "The Service",
+      "wordCount": 4665,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 2,
+      "title": "Aulus Persius Flaccus",
+      "wordCount": 1640,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 3,
+      "title": "A Walk to Wachusett",
+      "wordCount": 5467,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 4,
+      "title": "Natural History of Massachusetts",
+      "wordCount": 8042,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 5,
+      "title": "Dark Ages",
+      "wordCount": 1017,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 6,
+      "title": "A Winter Walk",
+      "wordCount": 5964,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 7,
+      "title": "The Landlord",
+      "wordCount": 2658,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 8,
+      "title": "Paradise (to Be) Regained",
+      "wordCount": 9853,
+      "estimatedMinutes": 39
+    },
+    {
+      "index": 9,
+      "title": "Homer; Ossian; Chaucer",
+      "wordCount": 5979,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 10,
+      "title": "Herald of Freedom",
+      "wordCount": 2523,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 11,
+      "title": "Wendell Phillips Before the Concord Lyceum",
+      "wordCount": 1113,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 12,
+      "title": "Thomas Carlyle and His Works",
+      "wordCount": 15369,
+      "estimatedMinutes": 61
+    },
+    {
+      "index": 13,
+      "title": "On the Duty of Civil Disobedience",
+      "wordCount": 9380,
+      "estimatedMinutes": 38
+    },
+    {
+      "index": 14,
+      "title": "Sir Walter Raleigh",
+      "wordCount": 14199,
+      "estimatedMinutes": 57
+    },
+    {
+      "index": 15,
+      "title": "Slavery in Massachusetts",
+      "wordCount": 6074,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 16,
+      "title": "Life Without Principle",
+      "wordCount": 8002,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 17,
+      "title": "Chesuncook",
+      "wordCount": 24245,
+      "estimatedMinutes": 97
+    },
+    {
+      "index": 18,
+      "title": "A Plea for Captain John Brown",
+      "wordCount": 9196,
+      "estimatedMinutes": 37
+    },
+    {
+      "index": 19,
+      "title": "After the Death of John Brown",
+      "wordCount": 1591,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 20,
+      "title": "The Last Days of John Brown",
+      "wordCount": 2610,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 21,
+      "title": "The Succession of Forest Trees",
+      "wordCount": 6105,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 22,
+      "title": "Walking",
+      "wordCount": 12129,
+      "estimatedMinutes": 49
+    },
+    {
+      "index": 23,
+      "title": "Autumnal Tints",
+      "wordCount": 11677,
+      "estimatedMinutes": 47
+    },
+    {
+      "index": 24,
+      "title": "Wild Apples",
+      "wordCount": 9191,
+      "estimatedMinutes": 37
+    },
+    {
+      "index": 25,
+      "title": "Night and Moonlight",
+      "wordCount": 2819,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 26,
+      "title": "The Wellfleet Oysterman",
+      "wordCount": 6376,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 27,
+      "title": "The Highland Light",
+      "wordCount": 7549,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 28,
+      "title": "A Yankee in Canada",
+      "wordCount": 28325,
+      "estimatedMinutes": 113
+    }
+  ]
+}

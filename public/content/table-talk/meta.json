@@ -1,0 +1,220 @@
+{
+  "bookId": "table-talk",
+  "title": "Table-Talk",
+  "author": "William Hazlitt",
+  "chapterCount": 35,
+  "totalWordCount": 152117,
+  "totalMinutes": 608,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Volume I",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "On the Pleasure of Painting",
+      "wordCount": 3937,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 2,
+      "title": "The Same Subject Continued",
+      "wordCount": 4009,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 3,
+      "title": "On the Past and Future",
+      "wordCount": 4410,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 4,
+      "title": "On Genius and Common Sense",
+      "wordCount": 5226,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 5,
+      "title": "The Same Subject Continued",
+      "wordCount": 4064,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 6,
+      "title": "Character of Cobbett",
+      "wordCount": 4456,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 7,
+      "title": "On People with One Idea",
+      "wordCount": 4869,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 8,
+      "title": "On the Ignorance of the Learned",
+      "wordCount": 3694,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 9,
+      "title": "The Indian Jugglers",
+      "wordCount": 6052,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 10,
+      "title": "On Living to One’s-Self",
+      "wordCount": 5201,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 11,
+      "title": "On Thought and Action",
+      "wordCount": 5620,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 12,
+      "title": "On Will-Making",
+      "wordCount": 3561,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 13,
+      "title": "On Certain Inconsistencies in Sir Joshua Reynolds’s Discourses",
+      "wordCount": 4197,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 14,
+      "title": "The Same Subject Continued",
+      "wordCount": 6956,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 15,
+      "title": "On Paradox and Commonplace",
+      "wordCount": 4724,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 16,
+      "title": "On Vulgarity and Affectation",
+      "wordCount": 4825,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 17,
+      "title": "Volume II",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 18,
+      "title": "On a Landscape of Nicolas Poussin",
+      "wordCount": 2566,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 19,
+      "title": "On Milton’s Sonnets",
+      "wordCount": 2950,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 20,
+      "title": "On Going a Journey",
+      "wordCount": 4237,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 21,
+      "title": "On Coffeehouse Politicians",
+      "wordCount": 6673,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 22,
+      "title": "On the Aristocracy of Letters",
+      "wordCount": 4330,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 23,
+      "title": "On Criticism",
+      "wordCount": 5867,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 24,
+      "title": "On Great and Little Things",
+      "wordCount": 7839,
+      "estimatedMinutes": 31
+    },
+    {
+      "index": 25,
+      "title": "On Familiar Style",
+      "wordCount": 2713,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 26,
+      "title": "On Effeminacy of Character",
+      "wordCount": 3358,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 27,
+      "title": "Why Distant Objects Please",
+      "wordCount": 4178,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 28,
+      "title": "On Corporate Bodies",
+      "wordCount": 3847,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 29,
+      "title": "Whether Actors Ought to Sit in the Boxes?",
+      "wordCount": 3456,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 30,
+      "title": "On the Disadvantages of Intellectual Superiority",
+      "wordCount": 4740,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 31,
+      "title": "On Patronage and Puffing",
+      "wordCount": 6455,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 32,
+      "title": "On the Knowledge of Character",
+      "wordCount": 6936,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 33,
+      "title": "On the Picturesque and Ideal",
+      "wordCount": 2050,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 34,
+      "title": "On the Fear of Death",
+      "wordCount": 4117,
+      "estimatedMinutes": 16
+    }
+  ]
+}

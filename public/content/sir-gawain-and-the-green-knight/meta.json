@@ -1,0 +1,52 @@
+{
+  "bookId": "sir-gawain-and-the-green-knight",
+  "title": "Sir Gawain and the Green Knight",
+  "author": "Anonymous",
+  "chapterCount": 7,
+  "totalWordCount": 23987,
+  "totalMinutes": 96,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface",
+      "wordCount": 158,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Introduction",
+      "wordCount": 2293,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 2,
+      "title": "Fit I",
+      "wordCount": 4100,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 3,
+      "title": "Fit II",
+      "wordCount": 5225,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 4,
+      "title": "Fit III",
+      "wordCount": 7364,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 5,
+      "title": "Fit IV",
+      "wordCount": 4587,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 6,
+      "title": "Glossary",
+      "wordCount": 260,
+      "estimatedMinutes": 1
+    }
+  ]
+}

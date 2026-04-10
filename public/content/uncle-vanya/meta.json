@@ -1,0 +1,40 @@
+{
+  "bookId": "uncle-vanya",
+  "title": "Uncle Vanya",
+  "author": "Anton Chekhov",
+  "chapterCount": 5,
+  "totalWordCount": 16915,
+  "totalMinutes": 68,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Characters in the Play",
+      "wordCount": 70,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Act I",
+      "wordCount": 3826,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 2,
+      "title": "Act II",
+      "wordCount": 4679,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 3,
+      "title": "Act III",
+      "wordCount": 4911,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 4,
+      "title": "Act IV",
+      "wordCount": 3429,
+      "estimatedMinutes": 14
+    }
+  ]
+}

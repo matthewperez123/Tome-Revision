@@ -1,0 +1,370 @@
+{
+  "bookId": "as-i-lay-dying",
+  "title": "As I Lay Dying",
+  "author": "William Faulkner",
+  "chapterCount": 60,
+  "totalWordCount": 56916,
+  "totalMinutes": 228,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Darl",
+      "wordCount": 447,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 2,
+      "title": "Cora",
+      "wordCount": 993,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 3,
+      "title": "Darl",
+      "wordCount": 908,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 4,
+      "title": "Jewel",
+      "wordCount": 359,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 5,
+      "title": "Darl",
+      "wordCount": 1015,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 6,
+      "title": "Cora",
+      "wordCount": 1090,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 7,
+      "title": "Dewey Dell",
+      "wordCount": 490,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 8,
+      "title": "Tull",
+      "wordCount": 1368,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 9,
+      "title": "Anse",
+      "wordCount": 1042,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 10,
+      "title": "Darl",
+      "wordCount": 307,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 11,
+      "title": "Peabody",
+      "wordCount": 1437,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 12,
+      "title": "Darl",
+      "wordCount": 1552,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 13,
+      "title": "Vardaman",
+      "wordCount": 1056,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 14,
+      "title": "Dewey Dell",
+      "wordCount": 1642,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 15,
+      "title": "Vardaman",
+      "wordCount": 551,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 16,
+      "title": "Tull",
+      "wordCount": 1671,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 17,
+      "title": "Darl",
+      "wordCount": 1613,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 18,
+      "title": "Cash",
+      "wordCount": 166,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 19,
+      "title": "Vardaman",
+      "wordCount": 6,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 20,
+      "title": "Tull",
+      "wordCount": 2087,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 21,
+      "title": "Darl",
+      "wordCount": 219,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 22,
+      "title": "Cash",
+      "wordCount": 67,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 23,
+      "title": "Darl",
+      "wordCount": 463,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 24,
+      "title": "Vardaman",
+      "wordCount": 426,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 25,
+      "title": "Darl",
+      "wordCount": 260,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 26,
+      "title": "Anse",
+      "wordCount": 299,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 27,
+      "title": "Darl",
+      "wordCount": 448,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 28,
+      "title": "Anse",
+      "wordCount": 243,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 29,
+      "title": "Samson",
+      "wordCount": 2053,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 30,
+      "title": "Dewey Dell",
+      "wordCount": 664,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 31,
+      "title": "Tull",
+      "wordCount": 1018,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 32,
+      "title": "Darl",
+      "wordCount": 2466,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 33,
+      "title": "Tull",
+      "wordCount": 1085,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 34,
+      "title": "Darl",
+      "wordCount": 2399,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 35,
+      "title": "Vardaman",
+      "wordCount": 476,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 36,
+      "title": "Tull",
+      "wordCount": 1027,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 37,
+      "title": "Darl",
+      "wordCount": 2085,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 38,
+      "title": "Cash",
+      "wordCount": 25,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 39,
+      "title": "Cora",
+      "wordCount": 708,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 40,
+      "title": "Addie",
+      "wordCount": 2320,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 41,
+      "title": "Whitfield",
+      "wordCount": 635,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 42,
+      "title": "Darl",
+      "wordCount": 731,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 43,
+      "title": "Armstid",
+      "wordCount": 2668,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 44,
+      "title": "Vardaman",
+      "wordCount": 688,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 45,
+      "title": "Moseley",
+      "wordCount": 2095,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 46,
+      "title": "Darl",
+      "wordCount": 674,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 47,
+      "title": "Vardaman",
+      "wordCount": 184,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 48,
+      "title": "Darl",
+      "wordCount": 296,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 49,
+      "title": "Vardaman",
+      "wordCount": 733,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 50,
+      "title": "Darl",
+      "wordCount": 1231,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 51,
+      "title": "Vardaman",
+      "wordCount": 488,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 52,
+      "title": "Darl",
+      "wordCount": 1443,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 53,
+      "title": "Cash",
+      "wordCount": 1914,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 54,
+      "title": "Peabody",
+      "wordCount": 401,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 55,
+      "title": "Macgowan",
+      "wordCount": 1909,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 56,
+      "title": "Vardaman",
+      "wordCount": 752,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 57,
+      "title": "Darl",
+      "wordCount": 381,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 58,
+      "title": "Dewey Dell",
+      "wordCount": 309,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 59,
+      "title": "Cash",
+      "wordCount": 830,
+      "estimatedMinutes": 3
+    }
+  ]
+}

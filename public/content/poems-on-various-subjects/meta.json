@@ -1,0 +1,34 @@
+{
+  "bookId": "poems-on-various-subjects",
+  "title": "Poems on Various Subjects, Religious and Moral",
+  "author": "Phillis Wheatley",
+  "chapterCount": 4,
+  "totalWordCount": 13950,
+  "totalMinutes": 56,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 32,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Preface",
+      "wordCount": 156,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Letter to the Publisher",
+      "wordCount": 180,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "Poems on Various Subjects Religious and Moral",
+      "wordCount": 13582,
+      "estimatedMinutes": 54
+    }
+  ]
+}

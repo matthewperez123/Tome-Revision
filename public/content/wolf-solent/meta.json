@@ -1,0 +1,166 @@
+{
+  "bookId": "wolf-solent",
+  "title": "Wolf Solent",
+  "author": "John Cowper Powys",
+  "chapterCount": 26,
+  "totalWordCount": 259685,
+  "totalMinutes": 1039,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 7,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "The Face on the Waterloo Steps",
+      "wordCount": 4325,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 2,
+      "title": "“Christ! I’ve Had a Happy Life!”",
+      "wordCount": 6399,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 3,
+      "title": "A Dorset Chronicle",
+      "wordCount": 5213,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 4,
+      "title": "Gerda",
+      "wordCount": 14380,
+      "estimatedMinutes": 58
+    },
+    {
+      "index": 5,
+      "title": "The Blackbird’s Song",
+      "wordCount": 12106,
+      "estimatedMinutes": 48
+    },
+    {
+      "index": 6,
+      "title": "Bar Sinister",
+      "wordCount": 11249,
+      "estimatedMinutes": 45
+    },
+    {
+      "index": 7,
+      "title": "Yellow Bracken",
+      "wordCount": 11080,
+      "estimatedMinutes": 44
+    },
+    {
+      "index": 8,
+      "title": "The Three Peewits",
+      "wordCount": 5211,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 9,
+      "title": "The Horse-Fair",
+      "wordCount": 16487,
+      "estimatedMinutes": 66
+    },
+    {
+      "index": 10,
+      "title": "Christie",
+      "wordCount": 13133,
+      "estimatedMinutes": 53
+    },
+    {
+      "index": 11,
+      "title": "The Tea-Party",
+      "wordCount": 3958,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 12,
+      "title": "The Slowworm of Lenty",
+      "wordCount": 4949,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 13,
+      "title": "Home for Bastards",
+      "wordCount": 5775,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 14,
+      "title": "Crooked Smoke",
+      "wordCount": 12752,
+      "estimatedMinutes": 51
+    },
+    {
+      "index": 15,
+      "title": "Rounded with a Sleep",
+      "wordCount": 2856,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 16,
+      "title": "A Game of Bowls",
+      "wordCount": 12389,
+      "estimatedMinutes": 50
+    },
+    {
+      "index": 17,
+      "title": "“This Is Reality”",
+      "wordCount": 6689,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 18,
+      "title": "The School-Treat",
+      "wordCount": 12521,
+      "estimatedMinutes": 50
+    },
+    {
+      "index": 19,
+      "title": "Wine",
+      "wordCount": 19138,
+      "estimatedMinutes": 77
+    },
+    {
+      "index": 20,
+      "title": "Mr. Malakite at Weymouth",
+      "wordCount": 8045,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 21,
+      "title": "Slate",
+      "wordCount": 18219,
+      "estimatedMinutes": 73
+    },
+    {
+      "index": 22,
+      "title": "The Quick or the Dead?",
+      "wordCount": 11832,
+      "estimatedMinutes": 47
+    },
+    {
+      "index": 23,
+      "title": "Lenty Pond",
+      "wordCount": 12647,
+      "estimatedMinutes": 51
+    },
+    {
+      "index": 24,
+      "title": "“Forget”",
+      "wordCount": 14706,
+      "estimatedMinutes": 59
+    },
+    {
+      "index": 25,
+      "title": "Ripeness Is All",
+      "wordCount": 13619,
+      "estimatedMinutes": 54
+    }
+  ]
+}

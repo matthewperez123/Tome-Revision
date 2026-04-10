@@ -1,0 +1,274 @@
+{
+  "bookId": "the-wonderful-adventures-of-nils",
+  "title": "The Wonderful Adventures of Nils",
+  "author": "Selma Lagerlöf",
+  "chapterCount": 44,
+  "totalWordCount": 154192,
+  "totalMinutes": 617,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Introduction",
+      "wordCount": 1216,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 1,
+      "title": "The Boy",
+      "wordCount": 6348,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 2,
+      "title": "Akka from Kebnekaise",
+      "wordCount": 6226,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 3,
+      "title": "The Wonderful Journey of Nils",
+      "wordCount": 7652,
+      "estimatedMinutes": 31
+    },
+    {
+      "index": 4,
+      "title": "Glimminge Castle",
+      "wordCount": 4912,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 5,
+      "title": "The Great Crane Dance on Kullaberg",
+      "wordCount": 3568,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 6,
+      "title": "In Rainy Weather",
+      "wordCount": 2234,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 7,
+      "title": "The Stairway with the Three Steps",
+      "wordCount": 1481,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 8,
+      "title": "By Ronneby River",
+      "wordCount": 3559,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 9,
+      "title": "Karlskrona",
+      "wordCount": 3364,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 10,
+      "title": "The Trip to Öland",
+      "wordCount": 1602,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 11,
+      "title": "Öland’s Southern Point",
+      "wordCount": 3152,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 12,
+      "title": "The Big Butterfly",
+      "wordCount": 1479,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 13,
+      "title": "Little Karl’s Island",
+      "wordCount": 4555,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 14,
+      "title": "Two Cities",
+      "wordCount": 4411,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 15,
+      "title": "The Legend of Småland",
+      "wordCount": 1909,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 16,
+      "title": "The Crows",
+      "wordCount": 6810,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 17,
+      "title": "The Old Peasant Woman",
+      "wordCount": 4167,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 18,
+      "title": "From Taberg to Huskvarna",
+      "wordCount": 1437,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 19,
+      "title": "The Big Bird Lake",
+      "wordCount": 5859,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 20,
+      "title": "Ulvåsa-Lady",
+      "wordCount": 1940,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 21,
+      "title": "The Homespun Cloth",
+      "wordCount": 1315,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 22,
+      "title": "The Story of Karr and Grayskin",
+      "wordCount": 10373,
+      "estimatedMinutes": 41
+    },
+    {
+      "index": 23,
+      "title": "The Wind Witch",
+      "wordCount": 5187,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 24,
+      "title": "The Breaking Up of the Ice",
+      "wordCount": 1437,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 25,
+      "title": "Thumbietot and the Bears",
+      "wordCount": 4940,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 26,
+      "title": "The Flood",
+      "wordCount": 3255,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 27,
+      "title": "Dunfin",
+      "wordCount": 3562,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 28,
+      "title": "Stockholm",
+      "wordCount": 4864,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 29,
+      "title": "Gorgo, the Eagle",
+      "wordCount": 3882,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 30,
+      "title": "On Over Gästrikland",
+      "wordCount": 2132,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 31,
+      "title": "A Day in Hälsingland",
+      "wordCount": 4597,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 32,
+      "title": "In Medelpad",
+      "wordCount": 1924,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 33,
+      "title": "A Morning in Ångermanland",
+      "wordCount": 2608,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 34,
+      "title": "Westbottom and Lapland",
+      "wordCount": 4227,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 35,
+      "title": "Osa, the Goose Girl, and Little Mats",
+      "wordCount": 2723,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 36,
+      "title": "With the Laplanders",
+      "wordCount": 3069,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 37,
+      "title": "Homeward Bound!",
+      "wordCount": 1168,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 38,
+      "title": "Legends from Härjedalen",
+      "wordCount": 3381,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 39,
+      "title": "Vermland and Dalsland",
+      "wordCount": 4063,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 40,
+      "title": "The Treasure on the Island",
+      "wordCount": 2562,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 41,
+      "title": "The Journey to Vemminghög",
+      "wordCount": 780,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 42,
+      "title": "Home at Last",
+      "wordCount": 3365,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 43,
+      "title": "The Parting with the Wild Geese",
+      "wordCount": 897,
+      "estimatedMinutes": 4
+    }
+  ]
+}

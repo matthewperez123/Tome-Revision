@@ -1,0 +1,112 @@
+{
+  "bookId": "the-eleventh-virgin",
+  "title": "The Eleventh Virgin",
+  "author": "Dorothy Day",
+  "chapterCount": 17,
+  "totalWordCount": 70804,
+  "totalMinutes": 283,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 37,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Part I: Adolescent",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "I",
+      "wordCount": 2519,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 3,
+      "title": "II",
+      "wordCount": 4456,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 4,
+      "title": "III",
+      "wordCount": 3840,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 5,
+      "title": "IV",
+      "wordCount": 1629,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 6,
+      "title": "V",
+      "wordCount": 5970,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 7,
+      "title": "Part II: Still Adolescent",
+      "wordCount": 4,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 8,
+      "title": "I",
+      "wordCount": 13707,
+      "estimatedMinutes": 55
+    },
+    {
+      "index": 9,
+      "title": "II",
+      "wordCount": 7419,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 10,
+      "title": "III",
+      "wordCount": 9306,
+      "estimatedMinutes": 37
+    },
+    {
+      "index": 11,
+      "title": "Part III: Not So Much So",
+      "wordCount": 6,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 12,
+      "title": "I",
+      "wordCount": 5955,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 13,
+      "title": "II",
+      "wordCount": 5845,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 14,
+      "title": "III",
+      "wordCount": 6477,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 15,
+      "title": "IV",
+      "wordCount": 3393,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 16,
+      "title": "Monologue",
+      "wordCount": 238,
+      "estimatedMinutes": 1
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "bookId": "scrambles-amongst-the-alps",
+  "title": "Scrambles Amongst the Alps",
+  "author": "Edward Whymper",
+  "chapterCount": 35,
+  "totalWordCount": 139696,
+  "totalMinutes": 559,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface",
+      "wordCount": 877,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 1,
+      "title": "Notes to the Preface of the Fifth Edition",
+      "wordCount": 1507,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 2,
+      "title": "Epigraph",
+      "wordCount": 18,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "Frontispiece",
+      "wordCount": 21,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 4,
+      "title": "I: Introductory",
+      "wordCount": 3715,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 5,
+      "title": "II: The Ascent of Mont Pelvoux",
+      "wordCount": 8933,
+      "estimatedMinutes": 36
+    },
+    {
+      "index": 6,
+      "title": "III: The Mont Cenis—The Fell Railway—The Great Tunnel Through the Alps",
+      "wordCount": 7424,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 7,
+      "title": "IV: My First Scramble on the Matterhorn",
+      "wordCount": 4925,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 8,
+      "title": "V: Renewed Attempts to Ascend the Matterhorn",
+      "wordCount": 9279,
+      "estimatedMinutes": 37
+    },
+    {
+      "index": 9,
+      "title": "VI: The Val Tournanche—Direct Pass from Breuil to Zermatt (Breuiljoch)—Zermatt—Ascent of the Grand Tournalin",
+      "wordCount": 11215,
+      "estimatedMinutes": 45
+    },
+    {
+      "index": 10,
+      "title": "VII: Our Sixth Attempt to Ascend the Matterhorn",
+      "wordCount": 3118,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 11,
+      "title": "VIII: From St. Michel on the Mont Cenis Road, by the Col des Aiguilles d’Arve, Col de Martignare, and the Brêche de la Meije, to La Bérarde",
+      "wordCount": 6615,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 12,
+      "title": "IX: The Ascent of the Pointe des Écrins",
+      "wordCount": 7037,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 13,
+      "title": "X: On the First Passage of the Col de Pilatte",
+      "wordCount": 3136,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 14,
+      "title": "XI: Passage of the Col de Triolet, and First Ascents of Mont Dolent, Aiguille de Trélatête, and Aiguille d’Argentière.",
+      "wordCount": 6198,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 15,
+      "title": "XII: The Moming Pass—Zermatt",
+      "wordCount": 3183,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 16,
+      "title": "XIII: The First Ascent of the Grand Cornier",
+      "wordCount": 2902,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 17,
+      "title": "XIV: The Ascent of the Dent Blanche",
+      "wordCount": 2207,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 18,
+      "title": "XV: Lost on the Col d’Hérens—My Seventh Attempt to Ascend the Matterhorn",
+      "wordCount": 4500,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 19,
+      "title": "XVI: The Valley of Aosta, and Ascent of the Grandes Jorasses",
+      "wordCount": 16000,
+      "estimatedMinutes": 64
+    },
+    {
+      "index": 20,
+      "title": "XVII: The First Passage of the Col Dolent",
+      "wordCount": 2240,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 21,
+      "title": "XVIII: Ascent of the Aiguille Verte",
+      "wordCount": 3530,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 22,
+      "title": "XIX: The First Passage of the Col de Talèfre",
+      "wordCount": 961,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 23,
+      "title": "XX: The First Ascent of the Ruinette—The Matterhorn",
+      "wordCount": 4702,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 24,
+      "title": "XXI: The First Ascent of the Matterhorn",
+      "wordCount": 2244,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 25,
+      "title": "XXII: Descent of the Matterhorn",
+      "wordCount": 3242,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 26,
+      "title": "A: The Death of Bennen",
+      "wordCount": 1701,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 27,
+      "title": "B: Struck by Lightning Upon the Matterhorn",
+      "wordCount": 363,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 28,
+      "title": "C: Subsequent History of the Matterhorn",
+      "wordCount": 9014,
+      "estimatedMinutes": 36
+    },
+    {
+      "index": 29,
+      "title": "D: Table of Attempts Made to Ascend the Matterhorn Previous to the First Ascent",
+      "wordCount": 424,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 30,
+      "title": "E: Ascents of the Matterhorn",
+      "wordCount": 3481,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 31,
+      "title": "F: Courte Note sur la Géologie du Matterhorn",
+      "wordCount": 921,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 32,
+      "title": "G: Stratification of Snow and Formation of Glacier-Ice",
+      "wordCount": 3380,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 33,
+      "title": "H: Denudation in the Valley of the Durance",
+      "wordCount": 629,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 34,
+      "title": "Maps",
+      "wordCount": 54,
+      "estimatedMinutes": 1
+    }
+  ]
+}

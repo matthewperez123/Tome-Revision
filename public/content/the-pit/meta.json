@@ -1,0 +1,94 @@
+{
+  "bookId": "the-pit",
+  "title": "The Pit",
+  "author": "Frank Norris",
+  "chapterCount": 14,
+  "totalWordCount": 124558,
+  "totalMinutes": 498,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 48,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Principal Characters in the Novel",
+      "wordCount": 50,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Preface",
+      "wordCount": 232,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "I",
+      "wordCount": 10869,
+      "estimatedMinutes": 43
+    },
+    {
+      "index": 4,
+      "title": "II",
+      "wordCount": 10541,
+      "estimatedMinutes": 42
+    },
+    {
+      "index": 5,
+      "title": "III",
+      "wordCount": 8939,
+      "estimatedMinutes": 36
+    },
+    {
+      "index": 6,
+      "title": "IV",
+      "wordCount": 11467,
+      "estimatedMinutes": 46
+    },
+    {
+      "index": 7,
+      "title": "V",
+      "wordCount": 12211,
+      "estimatedMinutes": 49
+    },
+    {
+      "index": 8,
+      "title": "VI",
+      "wordCount": 12379,
+      "estimatedMinutes": 50
+    },
+    {
+      "index": 9,
+      "title": "VII",
+      "wordCount": 11552,
+      "estimatedMinutes": 46
+    },
+    {
+      "index": 10,
+      "title": "VIII",
+      "wordCount": 14870,
+      "estimatedMinutes": 59
+    },
+    {
+      "index": 11,
+      "title": "IX",
+      "wordCount": 14767,
+      "estimatedMinutes": 59
+    },
+    {
+      "index": 12,
+      "title": "X",
+      "wordCount": 14137,
+      "estimatedMinutes": 57
+    },
+    {
+      "index": 13,
+      "title": "Conclusion",
+      "wordCount": 2496,
+      "estimatedMinutes": 10
+    }
+  ]
+}

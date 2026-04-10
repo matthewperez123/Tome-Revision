@@ -1,0 +1,172 @@
+{
+  "bookId": "the-rise-of-silas-lapham",
+  "title": "The Rise of Silas Lapham",
+  "author": "William Dean Howells",
+  "chapterCount": 27,
+  "totalWordCount": 128846,
+  "totalMinutes": 515,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I",
+      "wordCount": 7739,
+      "estimatedMinutes": 31
+    },
+    {
+      "index": 1,
+      "title": "II",
+      "wordCount": 5221,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 2,
+      "title": "III",
+      "wordCount": 3219,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 3,
+      "title": "IV",
+      "wordCount": 4626,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 4,
+      "title": "V",
+      "wordCount": 3540,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 5,
+      "title": "VI",
+      "wordCount": 4230,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 6,
+      "title": "VII",
+      "wordCount": 3225,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 7,
+      "title": "VIII",
+      "wordCount": 5363,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 8,
+      "title": "IX",
+      "wordCount": 6015,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 9,
+      "title": "X",
+      "wordCount": 4018,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 10,
+      "title": "XI",
+      "wordCount": 6561,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 11,
+      "title": "XII",
+      "wordCount": 5843,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 12,
+      "title": "XIII",
+      "wordCount": 5394,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 13,
+      "title": "XIV",
+      "wordCount": 8005,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 14,
+      "title": "XV",
+      "wordCount": 1726,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 15,
+      "title": "XVI",
+      "wordCount": 3011,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 16,
+      "title": "XVII",
+      "wordCount": 3287,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 17,
+      "title": "XVIII",
+      "wordCount": 3380,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 18,
+      "title": "XIX",
+      "wordCount": 5142,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 19,
+      "title": "XX",
+      "wordCount": 4661,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 20,
+      "title": "XXI",
+      "wordCount": 3357,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 21,
+      "title": "XXII",
+      "wordCount": 1831,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 22,
+      "title": "XXIII",
+      "wordCount": 5075,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 23,
+      "title": "XXIV",
+      "wordCount": 5577,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 24,
+      "title": "XXV",
+      "wordCount": 6633,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 25,
+      "title": "XXVI",
+      "wordCount": 5170,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 26,
+      "title": "XXVII",
+      "wordCount": 6997,
+      "estimatedMinutes": 28
+    }
+  ]
+}

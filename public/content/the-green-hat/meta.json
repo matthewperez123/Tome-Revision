@@ -1,0 +1,82 @@
+{
+  "bookId": "the-green-hat",
+  "title": "The Green Hat",
+  "author": "Michael Arlen",
+  "chapterCount": 12,
+  "totalWordCount": 91328,
+  "totalMinutes": 365,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 6,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I: The Green Hat",
+      "wordCount": 13754,
+      "estimatedMinutes": 55
+    },
+    {
+      "index": 2,
+      "title": "II: The Cavalier of Low Creatures",
+      "wordCount": 5684,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 3,
+      "title": "III: For Purity!",
+      "wordCount": 9019,
+      "estimatedMinutes": 36
+    },
+    {
+      "index": 4,
+      "title": "IV: Aphrodite",
+      "wordCount": 10306,
+      "estimatedMinutes": 41
+    },
+    {
+      "index": 5,
+      "title": "V: The Dark Letter",
+      "wordCount": 6046,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 6,
+      "title": "VI: The Red Lights",
+      "wordCount": 9565,
+      "estimatedMinutes": 38
+    },
+    {
+      "index": 7,
+      "title": "VII: For Venice!",
+      "wordCount": 7427,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 8,
+      "title": "VIII: Piqûre du cœur",
+      "wordCount": 4306,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 9,
+      "title": "IX: Talking of Hats",
+      "wordCount": 4499,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 10,
+      "title": "X: The Fall of the Emerald",
+      "wordCount": 7074,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 11,
+      "title": "XI: St. George for England!",
+      "wordCount": 13642,
+      "estimatedMinutes": 55
+    }
+  ]
+}

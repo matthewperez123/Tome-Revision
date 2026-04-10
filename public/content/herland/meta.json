@@ -1,0 +1,82 @@
+{
+  "bookId": "herland",
+  "title": "Herland",
+  "author": "Charlotte Perkins Gilman",
+  "chapterCount": 12,
+  "totalWordCount": 52193,
+  "totalMinutes": 209,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I: A Not Unnatural Enterprise",
+      "wordCount": 4190,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 1,
+      "title": "II: Rash Advances",
+      "wordCount": 3953,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 2,
+      "title": "III: A Peculiar Imprisonment",
+      "wordCount": 4597,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 3,
+      "title": "IV: Our Venture",
+      "wordCount": 4393,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 4,
+      "title": "V: A Unique History",
+      "wordCount": 4538,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 5,
+      "title": "VI: Comparisons Are Odious",
+      "wordCount": 3907,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 6,
+      "title": "VII: Our Growing Modesty",
+      "wordCount": 4072,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 7,
+      "title": "VIII: The Girls of Herland",
+      "wordCount": 4437,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 8,
+      "title": "IX: Our Relations and Theirs",
+      "wordCount": 4593,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 9,
+      "title": "X: Their Religions and Our Marriages",
+      "wordCount": 3905,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 10,
+      "title": "XI: Our Difficulties",
+      "wordCount": 4749,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 11,
+      "title": "XII: Expelled",
+      "wordCount": 4859,
+      "estimatedMinutes": 19
+    }
+  ]
+}

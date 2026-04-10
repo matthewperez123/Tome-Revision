@@ -1,0 +1,154 @@
+{
+  "bookId": "the-house-of-the-dead",
+  "title": "The House of the Dead",
+  "author": "Fyodor Dostoevsky",
+  "chapterCount": 24,
+  "totalWordCount": 125028,
+  "totalMinutes": 500,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Part I",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Introduction",
+      "wordCount": 1980,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 2,
+      "title": "I: The House of the Dead",
+      "wordCount": 5819,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 3,
+      "title": "II: First Impressions",
+      "wordCount": 6599,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 4,
+      "title": "III: First Impressions",
+      "wordCount": 6276,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 5,
+      "title": "IV: First Impressions",
+      "wordCount": 7048,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 6,
+      "title": "V: The First Month",
+      "wordCount": 6270,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 7,
+      "title": "VI: The First Month",
+      "wordCount": 5475,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 8,
+      "title": "VII: New Acquaintances. Petrov",
+      "wordCount": 5259,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 9,
+      "title": "VIII: Determined Characters. Lutchka",
+      "wordCount": 2642,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 10,
+      "title": "IX: Isay Fomitch—The Bathhouse—Baklushin’s Story",
+      "wordCount": 6816,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 11,
+      "title": "X: Christmas",
+      "wordCount": 6277,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 12,
+      "title": "XI: The Theatricals",
+      "wordCount": 8288,
+      "estimatedMinutes": 33
+    },
+    {
+      "index": 13,
+      "title": "Part II",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 14,
+      "title": "I: The Hospital",
+      "wordCount": 6051,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 15,
+      "title": "II: The Hospital (Continued)",
+      "wordCount": 5784,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 16,
+      "title": "III: The Hospital (Continued)",
+      "wordCount": 7318,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 17,
+      "title": "IV: Akulka’s Husband",
+      "wordCount": 4598,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 18,
+      "title": "V: Summer Time",
+      "wordCount": 6937,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 19,
+      "title": "VI: Prison Animals",
+      "wordCount": 5256,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 20,
+      "title": "VII: The Complaint",
+      "wordCount": 6874,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 21,
+      "title": "VIII: Comrades",
+      "wordCount": 5938,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 22,
+      "title": "IX: An Escape",
+      "wordCount": 5724,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 23,
+      "title": "X: How I Left Prison",
+      "wordCount": 1795,
+      "estimatedMinutes": 7
+    }
+  ]
+}

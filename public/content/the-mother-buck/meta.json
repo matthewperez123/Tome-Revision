@@ -1,0 +1,124 @@
+{
+  "bookId": "the-mother-buck",
+  "title": "The Mother",
+  "author": "Pearl S. Buck",
+  "chapterCount": 19,
+  "totalWordCount": 78862,
+  "totalMinutes": 315,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I",
+      "wordCount": 4483,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 1,
+      "title": "II",
+      "wordCount": 1915,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 2,
+      "title": "III",
+      "wordCount": 1503,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 3,
+      "title": "IV",
+      "wordCount": 7171,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 4,
+      "title": "V",
+      "wordCount": 8441,
+      "estimatedMinutes": 34
+    },
+    {
+      "index": 5,
+      "title": "VI",
+      "wordCount": 2482,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 6,
+      "title": "VII",
+      "wordCount": 1543,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 7,
+      "title": "VIII",
+      "wordCount": 2327,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 8,
+      "title": "IX",
+      "wordCount": 4500,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 9,
+      "title": "X",
+      "wordCount": 2070,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 10,
+      "title": "XI",
+      "wordCount": 7849,
+      "estimatedMinutes": 31
+    },
+    {
+      "index": 11,
+      "title": "XII",
+      "wordCount": 3066,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 12,
+      "title": "XIII",
+      "wordCount": 2435,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 13,
+      "title": "XIV",
+      "wordCount": 5064,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 14,
+      "title": "XV",
+      "wordCount": 4859,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 15,
+      "title": "XVI",
+      "wordCount": 5430,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 16,
+      "title": "XVII",
+      "wordCount": 2610,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 17,
+      "title": "XVIII",
+      "wordCount": 1691,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 18,
+      "title": "XIX",
+      "wordCount": 9423,
+      "estimatedMinutes": 38
+    }
+  ]
+}

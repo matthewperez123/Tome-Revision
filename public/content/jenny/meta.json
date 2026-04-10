@@ -1,0 +1,226 @@
+{
+  "bookId": "jenny",
+  "title": "Jenny",
+  "author": "Sigrid Undset",
+  "chapterCount": 36,
+  "totalWordCount": 95959,
+  "totalMinutes": 384,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Part I",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I",
+      "wordCount": 3795,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 2,
+      "title": "II",
+      "wordCount": 5687,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 3,
+      "title": "III",
+      "wordCount": 2978,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 4,
+      "title": "IV",
+      "wordCount": 3376,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 5,
+      "title": "V",
+      "wordCount": 2720,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 6,
+      "title": "VI",
+      "wordCount": 3004,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 7,
+      "title": "VII",
+      "wordCount": 3766,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 8,
+      "title": "VIII",
+      "wordCount": 4107,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 9,
+      "title": "IX",
+      "wordCount": 2281,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 10,
+      "title": "X",
+      "wordCount": 3090,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 11,
+      "title": "XI",
+      "wordCount": 1103,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 12,
+      "title": "Part II",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 13,
+      "title": "I",
+      "wordCount": 1930,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 14,
+      "title": "II",
+      "wordCount": 2032,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 15,
+      "title": "III",
+      "wordCount": 1344,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 16,
+      "title": "IV",
+      "wordCount": 1419,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 17,
+      "title": "V",
+      "wordCount": 3127,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 18,
+      "title": "VI",
+      "wordCount": 2920,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 19,
+      "title": "VII",
+      "wordCount": 1943,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 20,
+      "title": "VIII",
+      "wordCount": 1462,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 21,
+      "title": "IX",
+      "wordCount": 3314,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 22,
+      "title": "X",
+      "wordCount": 4790,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 23,
+      "title": "Part III",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 24,
+      "title": "I",
+      "wordCount": 4043,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 25,
+      "title": "II",
+      "wordCount": 2080,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 26,
+      "title": "III",
+      "wordCount": 3629,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 27,
+      "title": "IV",
+      "wordCount": 1923,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 28,
+      "title": "V",
+      "wordCount": 4127,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 29,
+      "title": "VI",
+      "wordCount": 1861,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 30,
+      "title": "VII",
+      "wordCount": 1753,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 31,
+      "title": "VIII",
+      "wordCount": 1809,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 32,
+      "title": "IX",
+      "wordCount": 2969,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 33,
+      "title": "X",
+      "wordCount": 3244,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 34,
+      "title": "XI",
+      "wordCount": 4630,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 35,
+      "title": "XI",
+      "wordCount": 3697,
+      "estimatedMinutes": 15
+    }
+  ]
+}

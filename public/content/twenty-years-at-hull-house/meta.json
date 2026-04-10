@@ -1,0 +1,136 @@
+{
+  "bookId": "twenty-years-at-hull-house",
+  "title": "Twenty Years at Hull House",
+  "author": "Jane Addams",
+  "chapterCount": 21,
+  "totalWordCount": 103892,
+  "totalMinutes": 416,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 6,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Preface",
+      "wordCount": 671,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 2,
+      "title": "Frontispiece",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "I: Earliest Impressions",
+      "wordCount": 4893,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 4,
+      "title": "II: Influence of Lincoln",
+      "wordCount": 4803,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 5,
+      "title": "III: Boarding-School Ideals",
+      "wordCount": 5130,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 6,
+      "title": "IV: The Snare of Preparation",
+      "wordCount": 5744,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 7,
+      "title": "V: First Days at Hull House",
+      "wordCount": 5343,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 8,
+      "title": "VI: Subjective Necessity for Social Settlements",
+      "wordCount": 3996,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 9,
+      "title": "VII: Some Early Undertakings at Hull House",
+      "wordCount": 5991,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 10,
+      "title": "VII: Problems of Poverty",
+      "wordCount": 5463,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 11,
+      "title": "IX: A Decade of Economic Discussion",
+      "wordCount": 4762,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 12,
+      "title": "X: Pioneer Labor Legislation in Illinois",
+      "wordCount": 7648,
+      "estimatedMinutes": 31
+    },
+    {
+      "index": 13,
+      "title": "XI: Immigrants and Their Children",
+      "wordCount": 6114,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 14,
+      "title": "XII: Tolstoyism",
+      "wordCount": 5183,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 15,
+      "title": "XIII: Public Activities and Investigations",
+      "wordCount": 6381,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 16,
+      "title": "XIV: Civic Cooperation",
+      "wordCount": 6910,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 17,
+      "title": "XV: The Value of Social Clubs",
+      "wordCount": 6418,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 18,
+      "title": "XVI: Arts at Hull House",
+      "wordCount": 6374,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 19,
+      "title": "XVII: Echoes of the Russian Revolution",
+      "wordCount": 5983,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 20,
+      "title": "XVIII: Socialized Education",
+      "wordCount": 6077,
+      "estimatedMinutes": 24
+    }
+  ]
+}

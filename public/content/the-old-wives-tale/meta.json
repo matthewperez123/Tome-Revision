@@ -1,0 +1,208 @@
+{
+  "bookId": "the-old-wives-tale",
+  "title": "The Old Wives' Tale",
+  "author": "Arnold Bennett",
+  "chapterCount": 33,
+  "totalWordCount": 216956,
+  "totalMinutes": 868,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 4,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Preface",
+      "wordCount": 1775,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 2,
+      "title": "Book I: Mrs. Baines",
+      "wordCount": 4,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "I: The Square",
+      "wordCount": 7720,
+      "estimatedMinutes": 31
+    },
+    {
+      "index": 4,
+      "title": "II: The Tooth",
+      "wordCount": 3875,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 5,
+      "title": "III: A Battle",
+      "wordCount": 11961,
+      "estimatedMinutes": 48
+    },
+    {
+      "index": 6,
+      "title": "IV: Elephant",
+      "wordCount": 6620,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 7,
+      "title": "V: The Traveller",
+      "wordCount": 6892,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 8,
+      "title": "VI: Escapade",
+      "wordCount": 6573,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 9,
+      "title": "VII: A Defeat",
+      "wordCount": 5153,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 10,
+      "title": "Book II: Constance",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 11,
+      "title": "I: Revolution",
+      "wordCount": 6657,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 12,
+      "title": "II: Christmas and the Future",
+      "wordCount": 6032,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 13,
+      "title": "III: Cyril",
+      "wordCount": 7340,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 14,
+      "title": "IV: Crime",
+      "wordCount": 6778,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 15,
+      "title": "V: Another Crime",
+      "wordCount": 12389,
+      "estimatedMinutes": 50
+    },
+    {
+      "index": 16,
+      "title": "VI: The Widow",
+      "wordCount": 4402,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 17,
+      "title": "VII: Bricks and Mortar",
+      "wordCount": 4747,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 18,
+      "title": "VIII: The Proudest Mother",
+      "wordCount": 4111,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 19,
+      "title": "Book III: Sophia",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 20,
+      "title": "I: The Elopement",
+      "wordCount": 4676,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 21,
+      "title": "II: Supper",
+      "wordCount": 5686,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 22,
+      "title": "III: An Ambition Satisfied",
+      "wordCount": 7097,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 23,
+      "title": "IV: A Crisis for Gerald",
+      "wordCount": 7463,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 24,
+      "title": "V: Fever",
+      "wordCount": 13119,
+      "estimatedMinutes": 52
+    },
+    {
+      "index": 25,
+      "title": "VI: The Siege",
+      "wordCount": 10061,
+      "estimatedMinutes": 40
+    },
+    {
+      "index": 26,
+      "title": "VII: Success",
+      "wordCount": 7132,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 27,
+      "title": "Book IV: What Life Is",
+      "wordCount": 5,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 28,
+      "title": "I: Frensham’s",
+      "wordCount": 11908,
+      "estimatedMinutes": 48
+    },
+    {
+      "index": 29,
+      "title": "II: The Meeting",
+      "wordCount": 9478,
+      "estimatedMinutes": 38
+    },
+    {
+      "index": 30,
+      "title": "III: Towards Hotel Life",
+      "wordCount": 15024,
+      "estimatedMinutes": 60
+    },
+    {
+      "index": 31,
+      "title": "IV: End of Sophia",
+      "wordCount": 12540,
+      "estimatedMinutes": 50
+    },
+    {
+      "index": 32,
+      "title": "V: End of Constance",
+      "wordCount": 9728,
+      "estimatedMinutes": 39
+    }
+  ]
+}

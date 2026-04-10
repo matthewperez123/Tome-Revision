@@ -1,0 +1,232 @@
+{
+  "bookId": "adams-breed",
+  "title": "Adams Breed",
+  "author": "Radclyffe Hall",
+  "chapterCount": 37,
+  "totalWordCount": 130933,
+  "totalMinutes": 524,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Book I",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I",
+      "wordCount": 2369,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 2,
+      "title": "II",
+      "wordCount": 3885,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 3,
+      "title": "III",
+      "wordCount": 3391,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 4,
+      "title": "IV",
+      "wordCount": 4543,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 5,
+      "title": "V",
+      "wordCount": 4832,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 6,
+      "title": "VI",
+      "wordCount": 2631,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 7,
+      "title": "VII",
+      "wordCount": 3369,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 8,
+      "title": "VIII",
+      "wordCount": 2316,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 9,
+      "title": "IX",
+      "wordCount": 5384,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 10,
+      "title": "X",
+      "wordCount": 5069,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 11,
+      "title": "XI",
+      "wordCount": 3157,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 12,
+      "title": "XII",
+      "wordCount": 4598,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 13,
+      "title": "XIII",
+      "wordCount": 4372,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 14,
+      "title": "Book II",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 15,
+      "title": "I",
+      "wordCount": 3244,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 16,
+      "title": "II",
+      "wordCount": 3608,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 17,
+      "title": "III",
+      "wordCount": 4432,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 18,
+      "title": "IV",
+      "wordCount": 5333,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 19,
+      "title": "V",
+      "wordCount": 3702,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 20,
+      "title": "VI",
+      "wordCount": 4725,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 21,
+      "title": "VII",
+      "wordCount": 3893,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 22,
+      "title": "VIII",
+      "wordCount": 3700,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 23,
+      "title": "Book III",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 24,
+      "title": "I",
+      "wordCount": 3782,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 25,
+      "title": "II",
+      "wordCount": 2467,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 26,
+      "title": "III",
+      "wordCount": 3528,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 27,
+      "title": "IV",
+      "wordCount": 3567,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 28,
+      "title": "V",
+      "wordCount": 4802,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 29,
+      "title": "VI",
+      "wordCount": 4408,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 30,
+      "title": "VII",
+      "wordCount": 5409,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 31,
+      "title": "VIII",
+      "wordCount": 3357,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 32,
+      "title": "IX",
+      "wordCount": 3914,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 33,
+      "title": "X",
+      "wordCount": 3986,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 34,
+      "title": "XI",
+      "wordCount": 4678,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 35,
+      "title": "XII",
+      "wordCount": 2698,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 36,
+      "title": "Epilogue",
+      "wordCount": 1778,
+      "estimatedMinutes": 7
+    }
+  ]
+}

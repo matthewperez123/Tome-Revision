@@ -1,0 +1,22 @@
+{
+  "bookId": "misalliance",
+  "title": "Misalliance",
+  "author": "George Bernard Shaw",
+  "chapterCount": 2,
+  "totalWordCount": 32227,
+  "totalMinutes": 129,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dramatis Personae",
+      "wordCount": 23,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Misalliance",
+      "wordCount": 32204,
+      "estimatedMinutes": 129
+    }
+  ]
+}

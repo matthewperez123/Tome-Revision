@@ -1,0 +1,190 @@
+{
+  "bookId": "the-charwomans-shadow",
+  "title": "The Charwoman's Shadow",
+  "author": "Lord Dunsany",
+  "chapterCount": 30,
+  "totalWordCount": 72210,
+  "totalMinutes": 289,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I: The Lord of the Tower Finds a Career for His Son",
+      "wordCount": 3348,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 1,
+      "title": "II: Ramon Alonzo Comes to the House in the Wood",
+      "wordCount": 2943,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 2,
+      "title": "III: The Charwoman Tells of Her Loss",
+      "wordCount": 2016,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 3,
+      "title": "IV: Ramon Alonzo Learns a Mystery Known to the Reader",
+      "wordCount": 2483,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 4,
+      "title": "V: Ramon Alonzo Learns of the Box",
+      "wordCount": 2656,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 5,
+      "title": "VI: There Is Talk of Gulvarez",
+      "wordCount": 2350,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 6,
+      "title": "VII: Ramon Alonzo Follows the Art",
+      "wordCount": 1906,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 7,
+      "title": "VIII: Ramon Alonzo Shares the Idleness of the Maidens of Aragona",
+      "wordCount": 1699,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 8,
+      "title": "IX: The Technique of Alchemy",
+      "wordCount": 2076,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 9,
+      "title": "X: The Exposure of the False Shadows",
+      "wordCount": 1757,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 10,
+      "title": "XI: The Chill of Space",
+      "wordCount": 2406,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 11,
+      "title": "XII: Mirandola Demands a Love-Potion",
+      "wordCount": 1732,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 12,
+      "title": "XIII: Ramon Alonzo Compounds the Potion",
+      "wordCount": 1911,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 13,
+      "title": "XIV: The Folk of Aragona Strike for the Faith",
+      "wordCount": 3359,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 14,
+      "title": "XV: Ramon Alonzo Talks of Technique and Muddles His Father",
+      "wordCount": 2339,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 15,
+      "title": "XVI: The Work of Father Joseph",
+      "wordCount": 1697,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 16,
+      "title": "XVII: The Three Fair Fields",
+      "wordCount": 2848,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 17,
+      "title": "XVIII: The Love-Potion",
+      "wordCount": 2415,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 18,
+      "title": "XIX: Father Joseph Explains How the Laity Have No Need of the Pen",
+      "wordCount": 2499,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 19,
+      "title": "XX: The Magician Imitates a Way of the Gods",
+      "wordCount": 1834,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 20,
+      "title": "XXI: White Magic Comes to the Wood",
+      "wordCount": 1712,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 21,
+      "title": "XXII: Ramon Alonzo Crosses a Sword with Magic",
+      "wordCount": 1690,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 22,
+      "title": "XXIII: The Plan of Ramon Alonzo",
+      "wordCount": 3060,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 23,
+      "title": "XXIV: Ramon Alonzo Dances with His Shadow",
+      "wordCount": 2857,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 24,
+      "title": "XXV: The Release of the Shadow",
+      "wordCount": 2216,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 25,
+      "title": "XXVI: The Wonderful Casting",
+      "wordCount": 1618,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 26,
+      "title": "XXVII: They Dread That a Witch Has Ridden from the Country Towards Moon’s Rising",
+      "wordCount": 3583,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 27,
+      "title": "XXVIII: Gonsalvo Sings What Had Been the Latest Air from Provence",
+      "wordCount": 2119,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 28,
+      "title": "XXIX: The Casket of Silver and Oak Is Given to Señor Gulvarez",
+      "wordCount": 3867,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 29,
+      "title": "XXX: The End of the Golden Age",
+      "wordCount": 3214,
+      "estimatedMinutes": 13
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "bookId": "the-city-of-god",
+  "title": "The City of God",
+  "author": "Augustine of Hippo",
+  "chapterCount": 25,
+  "totalWordCount": 443412,
+  "totalMinutes": 1774,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Editor’s Preface",
+      "wordCount": 3276,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 1,
+      "title": "Part I",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Book I",
+      "wordCount": 18256,
+      "estimatedMinutes": 73
+    },
+    {
+      "index": 3,
+      "title": "Book II",
+      "wordCount": 16574,
+      "estimatedMinutes": 66
+    },
+    {
+      "index": 4,
+      "title": "Book III",
+      "wordCount": 17008,
+      "estimatedMinutes": 68
+    },
+    {
+      "index": 5,
+      "title": "Book IV",
+      "wordCount": 16930,
+      "estimatedMinutes": 68
+    },
+    {
+      "index": 6,
+      "title": "Book V",
+      "wordCount": 20683,
+      "estimatedMinutes": 83
+    },
+    {
+      "index": 7,
+      "title": "Book VI",
+      "wordCount": 11978,
+      "estimatedMinutes": 48
+    },
+    {
+      "index": 8,
+      "title": "Book VII",
+      "wordCount": 18626,
+      "estimatedMinutes": 75
+    },
+    {
+      "index": 9,
+      "title": "Book VIII",
+      "wordCount": 18954,
+      "estimatedMinutes": 76
+    },
+    {
+      "index": 10,
+      "title": "Book IX",
+      "wordCount": 11122,
+      "estimatedMinutes": 44
+    },
+    {
+      "index": 11,
+      "title": "Book X",
+      "wordCount": 21618,
+      "estimatedMinutes": 86
+    },
+    {
+      "index": 12,
+      "title": "Part II",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 13,
+      "title": "Book XI",
+      "wordCount": 18088,
+      "estimatedMinutes": 72
+    },
+    {
+      "index": 14,
+      "title": "Book XII",
+      "wordCount": 16092,
+      "estimatedMinutes": 64
+    },
+    {
+      "index": 15,
+      "title": "Book XIII",
+      "wordCount": 15056,
+      "estimatedMinutes": 60
+    },
+    {
+      "index": 16,
+      "title": "Book XIV",
+      "wordCount": 18800,
+      "estimatedMinutes": 75
+    },
+    {
+      "index": 17,
+      "title": "Book XV",
+      "wordCount": 21924,
+      "estimatedMinutes": 88
+    },
+    {
+      "index": 18,
+      "title": "Book XVI",
+      "wordCount": 24521,
+      "estimatedMinutes": 98
+    },
+    {
+      "index": 19,
+      "title": "Book XVII",
+      "wordCount": 21008,
+      "estimatedMinutes": 84
+    },
+    {
+      "index": 20,
+      "title": "Book XVIII",
+      "wordCount": 30729,
+      "estimatedMinutes": 123
+    },
+    {
+      "index": 21,
+      "title": "Book XIX",
+      "wordCount": 21165,
+      "estimatedMinutes": 85
+    },
+    {
+      "index": 22,
+      "title": "Book XX",
+      "wordCount": 27589,
+      "estimatedMinutes": 110
+    },
+    {
+      "index": 23,
+      "title": "Book XXI",
+      "wordCount": 23599,
+      "estimatedMinutes": 94
+    },
+    {
+      "index": 24,
+      "title": "Book XXII",
+      "wordCount": 29812,
+      "estimatedMinutes": 119
+    }
+  ]
+}

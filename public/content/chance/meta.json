@@ -1,0 +1,118 @@
+{
+  "bookId": "chance",
+  "title": "Chance",
+  "author": "Joseph Conrad",
+  "chapterCount": 18,
+  "totalWordCount": 138940,
+  "totalMinutes": 556,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Epigraph",
+      "wordCount": 21,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Dedication",
+      "wordCount": 16,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Author’s Note",
+      "wordCount": 1194,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 3,
+      "title": "Part I: The Damsel",
+      "wordCount": 4,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 4,
+      "title": "I: Young Powell and His Chance",
+      "wordCount": 10041,
+      "estimatedMinutes": 40
+    },
+    {
+      "index": 5,
+      "title": "II: The Fynes and the Girlfriend",
+      "wordCount": 9608,
+      "estimatedMinutes": 38
+    },
+    {
+      "index": 6,
+      "title": "III: Thrift—and the Child",
+      "wordCount": 9772,
+      "estimatedMinutes": 39
+    },
+    {
+      "index": 7,
+      "title": "IV: The Governess",
+      "wordCount": 11886,
+      "estimatedMinutes": 48
+    },
+    {
+      "index": 8,
+      "title": "V: The Tea-Party",
+      "wordCount": 8845,
+      "estimatedMinutes": 35
+    },
+    {
+      "index": 9,
+      "title": "VI: Flora",
+      "wordCount": 10167,
+      "estimatedMinutes": 41
+    },
+    {
+      "index": 10,
+      "title": "VII: On the Pavement",
+      "wordCount": 17933,
+      "estimatedMinutes": 72
+    },
+    {
+      "index": 11,
+      "title": "Part II: The Knight",
+      "wordCount": 4,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 12,
+      "title": "I: The Ferndale",
+      "wordCount": 4784,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 13,
+      "title": "II: Young Powell Sees and Hears",
+      "wordCount": 7245,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 14,
+      "title": "III: Devoted Servants—and the Light of a Flare",
+      "wordCount": 9109,
+      "estimatedMinutes": 36
+    },
+    {
+      "index": 15,
+      "title": "IV: Anthony and Flora",
+      "wordCount": 7301,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 16,
+      "title": "V: The Great de Barral",
+      "wordCount": 16601,
+      "estimatedMinutes": 66
+    },
+    {
+      "index": 17,
+      "title": "VI: … a Moonless Night, Thick with Stars Above, Very Dark on the Water",
+      "wordCount": 14409,
+      "estimatedMinutes": 58
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "bookId": "jurgen",
+  "title": "Jurgen",
+  "author": "James Branch Cabell",
+  "chapterCount": 54,
+  "totalWordCount": 94869,
+  "totalMinutes": 379,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Epigraph",
+      "wordCount": 37,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Dedication",
+      "wordCount": 50,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "A Foreword: Which Asserts Nothing",
+      "wordCount": 1732,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 3,
+      "title": "Epigraph",
+      "wordCount": 5,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 4,
+      "title": "I: Why Jurgen Did the Manly Thing",
+      "wordCount": 1273,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 5,
+      "title": "II: Assumption of a Noted Garment",
+      "wordCount": 1025,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 6,
+      "title": "III: The Garden Between Dawn and Sunrise",
+      "wordCount": 1070,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 7,
+      "title": "IV: The Dorothy Who Did Not Understand",
+      "wordCount": 3488,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 8,
+      "title": "V: Requirements of Bread and Butter",
+      "wordCount": 1333,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 9,
+      "title": "VI: Showing That Sereda Is Feminine",
+      "wordCount": 2182,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 10,
+      "title": "VII: Of Compromises on a Wednesday",
+      "wordCount": 3451,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 11,
+      "title": "VIII: Old Toys and a New Shadow",
+      "wordCount": 1655,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 12,
+      "title": "IX: The Orthodox Rescue of Guenevere",
+      "wordCount": 1348,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 13,
+      "title": "X: Pitiful Disguises of Thragnar",
+      "wordCount": 1544,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 14,
+      "title": "XI: Appearance of the Duke of Logreus",
+      "wordCount": 1128,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 15,
+      "title": "XII: Excursus of Yolande’s Undoing",
+      "wordCount": 1265,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 16,
+      "title": "XIII: Philosophy of Gogyrvan Gawr",
+      "wordCount": 1655,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 17,
+      "title": "XIV: Preliminary Tactics of Duke Jurgen",
+      "wordCount": 2759,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 18,
+      "title": "XV: Of Compromises in Glathion",
+      "wordCount": 1764,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 19,
+      "title": "XVI: Divers Imbroglios of King Smoit",
+      "wordCount": 2827,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 20,
+      "title": "XVII: About a Cock That Crowed Too Soon",
+      "wordCount": 1771,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 21,
+      "title": "XVIII: Why Merlin Talked in Twilight",
+      "wordCount": 1826,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 22,
+      "title": "XIX: The Brown Man with Queer Feet",
+      "wordCount": 1262,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 23,
+      "title": "XX: Efficacy of Prayer",
+      "wordCount": 1378,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 24,
+      "title": "XXI: How Anaïtis Voyaged",
+      "wordCount": 1033,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 25,
+      "title": "XXII: As to a Veil They Broke",
+      "wordCount": 2092,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 26,
+      "title": "XXIII: Shortcomings of Prince Jurgen",
+      "wordCount": 3806,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 27,
+      "title": "XXIV: Of Compromises in Cocaigne",
+      "wordCount": 1800,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 28,
+      "title": "XXV: Cantraps of the Master Philologist",
+      "wordCount": 1290,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 29,
+      "title": "XXVI: In Time’s Hourglass",
+      "wordCount": 1824,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 30,
+      "title": "XXVII: Vexatious Estate of Queen Helen",
+      "wordCount": 2157,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 31,
+      "title": "XXVIII: Of Compromises in Leukê",
+      "wordCount": 3525,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 32,
+      "title": "XXIX: Concerning Horvendile’s Nonsense",
+      "wordCount": 2347,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 33,
+      "title": "XXX: Economics of King Jurgen",
+      "wordCount": 1495,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 34,
+      "title": "XXXI: The Fall of Pseudopolis",
+      "wordCount": 1110,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 35,
+      "title": "XXXII: Sundry Devices of the Philistines",
+      "wordCount": 2838,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 36,
+      "title": "XXXIII: Farewell to Chloris",
+      "wordCount": 1320,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 37,
+      "title": "XXXIV: How Emperor Jurgen Fared Infernally",
+      "wordCount": 974,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 38,
+      "title": "XXXV: What Grandfather Satan Reported",
+      "wordCount": 1094,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 39,
+      "title": "XXXVI: Why Coth Was Contradicted",
+      "wordCount": 1951,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 40,
+      "title": "XXXVII: Invention of the Lovely Vampire",
+      "wordCount": 1107,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 41,
+      "title": "XXXVIII: As to Applauded Precedents",
+      "wordCount": 2411,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 42,
+      "title": "XXXIX: Of Compromises in Hell",
+      "wordCount": 2078,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 43,
+      "title": "XL: The Ascension of Pope Jurgen",
+      "wordCount": 1590,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 44,
+      "title": "XLI: Of Compromises in Heaven",
+      "wordCount": 3136,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 45,
+      "title": "XLII: Twelve That Are Fretted Hourly",
+      "wordCount": 1700,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 46,
+      "title": "XLIII: Postures Before a Shadow",
+      "wordCount": 3434,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 47,
+      "title": "XLIV: In the Manager’s Office",
+      "wordCount": 2069,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 48,
+      "title": "XLV: The Faith of Guenevere",
+      "wordCount": 1237,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 49,
+      "title": "XLVI: The Desire of Anaïtis",
+      "wordCount": 1224,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 50,
+      "title": "XLVII: The Vision of Helen",
+      "wordCount": 1051,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 51,
+      "title": "XLVIII: Candid Opinions of Dame Lisa",
+      "wordCount": 1996,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 52,
+      "title": "XLIX: Of the Compromise with Koshchei",
+      "wordCount": 2083,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 53,
+      "title": "L: The Moment That Did Not Count",
+      "wordCount": 1269,
+      "estimatedMinutes": 5
+    }
+  ]
+}

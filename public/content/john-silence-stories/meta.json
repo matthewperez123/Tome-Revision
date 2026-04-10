@@ -1,0 +1,52 @@
+{
+  "bookId": "john-silence-stories",
+  "title": "John Silence Stories",
+  "author": "Algernon Blackwood",
+  "chapterCount": 7,
+  "totalWordCount": 114184,
+  "totalMinutes": 457,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 15,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Case I: A Psychical Invasion",
+      "wordCount": 19945,
+      "estimatedMinutes": 80
+    },
+    {
+      "index": 2,
+      "title": "Case II: Ancient Sorceries",
+      "wordCount": 18838,
+      "estimatedMinutes": 75
+    },
+    {
+      "index": 3,
+      "title": "Case III: The Nemesis of Fire",
+      "wordCount": 27541,
+      "estimatedMinutes": 110
+    },
+    {
+      "index": 4,
+      "title": "Case IV: Secret Worship",
+      "wordCount": 13003,
+      "estimatedMinutes": 52
+    },
+    {
+      "index": 5,
+      "title": "Case V: The Camp of the Dog",
+      "wordCount": 27343,
+      "estimatedMinutes": 109
+    },
+    {
+      "index": 6,
+      "title": "Case VI: A Victim of Higher Space",
+      "wordCount": 7499,
+      "estimatedMinutes": 30
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "bookId": "our-nig",
+  "title": "Our Nig",
+  "author": "Harriet E. Wilson",
+  "chapterCount": 15,
+  "totalWordCount": 25324,
+  "totalMinutes": 101,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Epigraph",
+      "wordCount": 80,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Preface",
+      "wordCount": 196,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "I: Mag Smith, My Mother",
+      "wordCount": 1579,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 3,
+      "title": "II: My Father’s Death",
+      "wordCount": 1646,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 4,
+      "title": "III: A New Home for Me",
+      "wordCount": 3006,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 5,
+      "title": "IV: A Friend for Nig",
+      "wordCount": 2173,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 6,
+      "title": "V: Departures",
+      "wordCount": 1838,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 7,
+      "title": "VI: Varieties",
+      "wordCount": 2014,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 8,
+      "title": "VII: Spiritual Condition of Nig",
+      "wordCount": 898,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 9,
+      "title": "VIII: Visitor and Departure",
+      "wordCount": 2346,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 10,
+      "title": "IX: Death",
+      "wordCount": 2058,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 11,
+      "title": "X: Perplexities.—Another Death",
+      "wordCount": 1447,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 12,
+      "title": "XI: Marriage Again",
+      "wordCount": 2642,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 13,
+      "title": "XII: The Winding Up of the Matter",
+      "wordCount": 928,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 14,
+      "title": "Appendix",
+      "wordCount": 2473,
+      "estimatedMinutes": 10
+    }
+  ]
+}

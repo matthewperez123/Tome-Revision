@@ -1,0 +1,40 @@
+{
+  "bookId": "the-second-mrs-tanqueray",
+  "title": "The Second Mrs. Tanqueray",
+  "author": "Arthur W. Pinero",
+  "chapterCount": 5,
+  "totalWordCount": 23642,
+  "totalMinutes": 95,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "The Persons of the Play",
+      "wordCount": 78,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Act I",
+      "wordCount": 6163,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 2,
+      "title": "Act II",
+      "wordCount": 5928,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 3,
+      "title": "Act III",
+      "wordCount": 6765,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 4,
+      "title": "Act IV",
+      "wordCount": 4708,
+      "estimatedMinutes": 19
+    }
+  ]
+}

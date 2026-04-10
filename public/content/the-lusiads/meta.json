@@ -1,0 +1,100 @@
+{
+  "bookId": "the-lusiads",
+  "title": "The Lusiads",
+  "author": "Luís de Camões",
+  "chapterCount": 15,
+  "totalWordCount": 75036,
+  "totalMinutes": 300,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 52,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Epigraph",
+      "wordCount": 87,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "To My Master Camões",
+      "wordCount": 118,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "Preface",
+      "wordCount": 1074,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 4,
+      "title": "Canto I",
+      "wordCount": 6559,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 5,
+      "title": "Canto II",
+      "wordCount": 7066,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 6,
+      "title": "Canto III",
+      "wordCount": 8780,
+      "estimatedMinutes": 35
+    },
+    {
+      "index": 7,
+      "title": "Canto IV",
+      "wordCount": 6501,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 8,
+      "title": "Canto V",
+      "wordCount": 6379,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 9,
+      "title": "Canto VI",
+      "wordCount": 6252,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 10,
+      "title": "Canto VII",
+      "wordCount": 5440,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 11,
+      "title": "Canto VIII",
+      "wordCount": 6177,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 12,
+      "title": "Canto IX",
+      "wordCount": 5932,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 13,
+      "title": "Canto X",
+      "wordCount": 9597,
+      "estimatedMinutes": 38
+    },
+    {
+      "index": 14,
+      "title": "The Rejected Stanzas",
+      "wordCount": 5022,
+      "estimatedMinutes": 20
+    }
+  ]
+}

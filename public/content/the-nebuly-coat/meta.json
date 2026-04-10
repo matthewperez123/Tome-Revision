@@ -1,0 +1,166 @@
+{
+  "bookId": "the-nebuly-coat",
+  "title": "The Nebuly Coat",
+  "author": "John Meade Falkner",
+  "chapterCount": 26,
+  "totalWordCount": 116879,
+  "totalMinutes": 468,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Prologue",
+      "wordCount": 391,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 1,
+      "title": "I",
+      "wordCount": 4376,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 2,
+      "title": "II",
+      "wordCount": 4790,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 3,
+      "title": "III",
+      "wordCount": 3141,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 4,
+      "title": "IV",
+      "wordCount": 5809,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 5,
+      "title": "V",
+      "wordCount": 4668,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 6,
+      "title": "VI",
+      "wordCount": 4297,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 7,
+      "title": "VII",
+      "wordCount": 5079,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 8,
+      "title": "VIII",
+      "wordCount": 3732,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 9,
+      "title": "IX",
+      "wordCount": 7574,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 10,
+      "title": "X",
+      "wordCount": 4902,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 11,
+      "title": "XI",
+      "wordCount": 6956,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 12,
+      "title": "XII",
+      "wordCount": 2099,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 13,
+      "title": "XIII",
+      "wordCount": 6246,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 14,
+      "title": "XIV",
+      "wordCount": 2458,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 15,
+      "title": "XV",
+      "wordCount": 9641,
+      "estimatedMinutes": 39
+    },
+    {
+      "index": 16,
+      "title": "XVI",
+      "wordCount": 4996,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 17,
+      "title": "XVII",
+      "wordCount": 7541,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 18,
+      "title": "XVIII",
+      "wordCount": 5814,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 19,
+      "title": "XIX",
+      "wordCount": 3020,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 20,
+      "title": "XX",
+      "wordCount": 3755,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 21,
+      "title": "XXI",
+      "wordCount": 5400,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 22,
+      "title": "XXII",
+      "wordCount": 7911,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 23,
+      "title": "XXIII",
+      "wordCount": 2004,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 24,
+      "title": "Epilogue",
+      "wordCount": 250,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 25,
+      "title": "Tunes Played by the Chimes of St. Sepulchre’s Church at Cullerne",
+      "wordCount": 29,
+      "estimatedMinutes": 1
+    }
+  ]
+}

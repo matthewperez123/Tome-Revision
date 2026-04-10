@@ -1,0 +1,160 @@
+{
+  "bookId": "a-negro-explorer-at-the-north-pole",
+  "title": "A Negro Explorer at the North Pole",
+  "author": "Matthew Henson",
+  "chapterCount": 25,
+  "totalWordCount": 38150,
+  "totalMinutes": 153,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Foreword",
+      "wordCount": 563,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 1,
+      "title": "Introduction",
+      "wordCount": 988,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 2,
+      "title": "I",
+      "wordCount": 2571,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 3,
+      "title": "II",
+      "wordCount": 2024,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 4,
+      "title": "III",
+      "wordCount": 1687,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 5,
+      "title": "IV",
+      "wordCount": 912,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 6,
+      "title": "V",
+      "wordCount": 1161,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 7,
+      "title": "VI",
+      "wordCount": 1135,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 8,
+      "title": "VII",
+      "wordCount": 1884,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 9,
+      "title": "VIII",
+      "wordCount": 1373,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 10,
+      "title": "IX",
+      "wordCount": 786,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 11,
+      "title": "X",
+      "wordCount": 516,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 12,
+      "title": "XI",
+      "wordCount": 2964,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 13,
+      "title": "XII",
+      "wordCount": 1936,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 14,
+      "title": "XIII",
+      "wordCount": 2359,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 15,
+      "title": "XIV",
+      "wordCount": 2097,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 16,
+      "title": "XV",
+      "wordCount": 2636,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 17,
+      "title": "XVI",
+      "wordCount": 945,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 18,
+      "title": "XVII",
+      "wordCount": 1487,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 19,
+      "title": "XVIII",
+      "wordCount": 1528,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 20,
+      "title": "XIX",
+      "wordCount": 1542,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 21,
+      "title": "XX",
+      "wordCount": 1892,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 22,
+      "title": "XXI",
+      "wordCount": 1639,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 23,
+      "title": "Appendix I: Notes on the Eskimos",
+      "wordCount": 1168,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 24,
+      "title": "Appendix II: List of Smith Sound Eskimos",
+      "wordCount": 357,
+      "estimatedMinutes": 1
+    }
+  ]
+}

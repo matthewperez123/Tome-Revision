@@ -1,0 +1,136 @@
+{
+  "bookId": "lay-down-your-arms",
+  "title": "Lay Down Your Arms",
+  "author": "Bertha von Suttner",
+  "chapterCount": 21,
+  "totalWordCount": 152002,
+  "totalMinutes": 608,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Translator’s Preface to the First Edition",
+      "wordCount": 659,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 1,
+      "title": "Preface to the Second Edition",
+      "wordCount": 380,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 2,
+      "title": "I",
+      "wordCount": 5615,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 3,
+      "title": "II",
+      "wordCount": 7562,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 4,
+      "title": "III",
+      "wordCount": 6789,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 5,
+      "title": "IV",
+      "wordCount": 8678,
+      "estimatedMinutes": 35
+    },
+    {
+      "index": 6,
+      "title": "V",
+      "wordCount": 10799,
+      "estimatedMinutes": 43
+    },
+    {
+      "index": 7,
+      "title": "VI",
+      "wordCount": 8582,
+      "estimatedMinutes": 34
+    },
+    {
+      "index": 8,
+      "title": "VII",
+      "wordCount": 8055,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 9,
+      "title": "VIII",
+      "wordCount": 7719,
+      "estimatedMinutes": 31
+    },
+    {
+      "index": 10,
+      "title": "IX",
+      "wordCount": 9695,
+      "estimatedMinutes": 39
+    },
+    {
+      "index": 11,
+      "title": "X",
+      "wordCount": 6007,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 12,
+      "title": "XI",
+      "wordCount": 5083,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 13,
+      "title": "XII",
+      "wordCount": 13482,
+      "estimatedMinutes": 54
+    },
+    {
+      "index": 14,
+      "title": "XIII",
+      "wordCount": 6930,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 15,
+      "title": "XIV",
+      "wordCount": 8199,
+      "estimatedMinutes": 33
+    },
+    {
+      "index": 16,
+      "title": "XV",
+      "wordCount": 10030,
+      "estimatedMinutes": 40
+    },
+    {
+      "index": 17,
+      "title": "XVI",
+      "wordCount": 8576,
+      "estimatedMinutes": 34
+    },
+    {
+      "index": 18,
+      "title": "XVII",
+      "wordCount": 5367,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 19,
+      "title": "XVIII",
+      "wordCount": 8191,
+      "estimatedMinutes": 33
+    },
+    {
+      "index": 20,
+      "title": "XIX",
+      "wordCount": 5604,
+      "estimatedMinutes": 22
+    }
+  ]
+}

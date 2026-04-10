@@ -1,0 +1,166 @@
+{
+  "bookId": "father-hensons-story-of-his-own-life",
+  "title": "Father Henson's Story of His Own Life",
+  "author": "Josiah Henson",
+  "chapterCount": 26,
+  "totalWordCount": 37226,
+  "totalMinutes": 149,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface",
+      "wordCount": 443,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 1,
+      "title": "Frontispiece",
+      "wordCount": 0,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "I: My Birth and Childhood",
+      "wordCount": 1109,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 3,
+      "title": "II: My First Great Trial",
+      "wordCount": 1439,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 4,
+      "title": "III: My Boyhood and Youth",
+      "wordCount": 1569,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 5,
+      "title": "IV: My Conversion",
+      "wordCount": 1053,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 6,
+      "title": "V: Maimed for Life",
+      "wordCount": 1994,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 7,
+      "title": "VI: A Responsible Journey",
+      "wordCount": 2221,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 8,
+      "title": "VII: A New Home",
+      "wordCount": 1989,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 9,
+      "title": "VIII: Return to Maryland",
+      "wordCount": 2311,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 10,
+      "title": "IX: Taken South, Away from Wife and Children",
+      "wordCount": 1141,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 11,
+      "title": "X: A Terrible Temptation",
+      "wordCount": 1128,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 12,
+      "title": "XI: Providential Deliverance",
+      "wordCount": 1534,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 13,
+      "title": "XII: Escape from Bondage",
+      "wordCount": 2011,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 14,
+      "title": "XIII: Journey to Canada",
+      "wordCount": 2742,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 15,
+      "title": "XIV: New Scenes and a New Home",
+      "wordCount": 1906,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 16,
+      "title": "XV: Life in Canada",
+      "wordCount": 1058,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 17,
+      "title": "XVI: Conducting Slaves to Canada",
+      "wordCount": 1026,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 18,
+      "title": "XVII: Second Journey on the Underground Railroad",
+      "wordCount": 2581,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 19,
+      "title": "XVIII: Home at Dawn",
+      "wordCount": 1452,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 20,
+      "title": "XIX: Lumbering Operations",
+      "wordCount": 1028,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 21,
+      "title": "XX: Visit to England",
+      "wordCount": 1238,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 22,
+      "title": "XXI: The World’s Fair in London",
+      "wordCount": 1118,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 23,
+      "title": "XXII: Visits to the Ragged Schools",
+      "wordCount": 1437,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 24,
+      "title": "XXIII: Closing Up My London Agency",
+      "wordCount": 1027,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 25,
+      "title": "XXIV: Closing Chapter",
+      "wordCount": 671,
+      "estimatedMinutes": 3
+    }
+  ]
+}

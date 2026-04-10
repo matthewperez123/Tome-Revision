@@ -1,0 +1,28 @@
+{
+  "bookId": "songs-of-a-sourdough",
+  "title": "Songs of a Sourdough",
+  "author": "Robert W. Service",
+  "chapterCount": 3,
+  "totalWordCount": 12655,
+  "totalMinutes": 51,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Epigraph",
+      "wordCount": 91,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Songs of a Sourdough",
+      "wordCount": 12561,
+      "estimatedMinutes": 50
+    }
+  ]
+}

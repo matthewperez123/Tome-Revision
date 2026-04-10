@@ -1,0 +1,250 @@
+{
+  "bookId": "two-years-before-the-mast",
+  "title": "Two Years Before the Mast",
+  "author": "Richard Henry Dana Jr.",
+  "chapterCount": 40,
+  "totalWordCount": 164855,
+  "totalMinutes": 659,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Epigraph",
+      "wordCount": 41,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Preface",
+      "wordCount": 803,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 2,
+      "title": "I",
+      "wordCount": 889,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 3,
+      "title": "II",
+      "wordCount": 2334,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 4,
+      "title": "III",
+      "wordCount": 2278,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 5,
+      "title": "IV",
+      "wordCount": 3004,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 6,
+      "title": "V",
+      "wordCount": 3471,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 7,
+      "title": "VI",
+      "wordCount": 2072,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 8,
+      "title": "VII",
+      "wordCount": 2889,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 9,
+      "title": "VIII",
+      "wordCount": 2257,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 10,
+      "title": "IX",
+      "wordCount": 3310,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 11,
+      "title": "X",
+      "wordCount": 1943,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 12,
+      "title": "XI",
+      "wordCount": 2012,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 13,
+      "title": "XII",
+      "wordCount": 1182,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 14,
+      "title": "XIII",
+      "wordCount": 4254,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 15,
+      "title": "XIV",
+      "wordCount": 5046,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 16,
+      "title": "XV",
+      "wordCount": 5452,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 17,
+      "title": "XVI",
+      "wordCount": 3258,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 18,
+      "title": "XVII",
+      "wordCount": 3018,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 19,
+      "title": "XVIII",
+      "wordCount": 5531,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 20,
+      "title": "XIX",
+      "wordCount": 6332,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 21,
+      "title": "XX",
+      "wordCount": 3601,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 22,
+      "title": "XXI",
+      "wordCount": 2270,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 23,
+      "title": "XXII",
+      "wordCount": 2560,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 24,
+      "title": "XXIII",
+      "wordCount": 7867,
+      "estimatedMinutes": 31
+    },
+    {
+      "index": 25,
+      "title": "XXIV",
+      "wordCount": 2994,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 26,
+      "title": "XXV",
+      "wordCount": 7071,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 27,
+      "title": "XXVI",
+      "wordCount": 3547,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 28,
+      "title": "XXVII",
+      "wordCount": 4699,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 29,
+      "title": "XXVIII",
+      "wordCount": 5639,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 30,
+      "title": "XXIX",
+      "wordCount": 9191,
+      "estimatedMinutes": 37
+    },
+    {
+      "index": 31,
+      "title": "XXX",
+      "wordCount": 4596,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 32,
+      "title": "XXXI",
+      "wordCount": 9749,
+      "estimatedMinutes": 39
+    },
+    {
+      "index": 33,
+      "title": "XXXII",
+      "wordCount": 4816,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 34,
+      "title": "XXXIII",
+      "wordCount": 4435,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 35,
+      "title": "XXXIV",
+      "wordCount": 2995,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 36,
+      "title": "XXXV",
+      "wordCount": 3591,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 37,
+      "title": "XXXVI",
+      "wordCount": 3800,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 38,
+      "title": "Concluding Chapter",
+      "wordCount": 7172,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 39,
+      "title": "Twenty-Four Years After",
+      "wordCount": 12886,
+      "estimatedMinutes": 52
+    }
+  ]
+}

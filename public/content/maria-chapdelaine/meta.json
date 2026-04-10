@@ -1,0 +1,106 @@
+{
+  "bookId": "maria-chapdelaine",
+  "title": "Maria Chapdelaine",
+  "author": "Louis Hémon",
+  "chapterCount": 16,
+  "totalWordCount": 46054,
+  "totalMinutes": 184,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I: Peribonka",
+      "wordCount": 4272,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 1,
+      "title": "II: Home in the Clearing",
+      "wordCount": 2822,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 2,
+      "title": "III: François Passes By",
+      "wordCount": 2039,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 3,
+      "title": "IV: Wild Land",
+      "wordCount": 2718,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 4,
+      "title": "V: The Vows",
+      "wordCount": 4455,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 5,
+      "title": "VI: The Stuff of Dreams",
+      "wordCount": 2153,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 6,
+      "title": "VII: A Meager Reaping",
+      "wordCount": 662,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 7,
+      "title": "VIII: Entrenched Against Winter",
+      "wordCount": 1405,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 8,
+      "title": "IX: One Thousand Aves",
+      "wordCount": 2868,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 9,
+      "title": "X: Straying Tracks",
+      "wordCount": 3266,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 10,
+      "title": "XI: The Interpreter of God",
+      "wordCount": 1773,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 11,
+      "title": "XII: Love Bearing Gifts",
+      "wordCount": 4327,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 12,
+      "title": "XIII: Love Bearing Chains",
+      "wordCount": 2223,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 13,
+      "title": "XIV: Into the Deep Silence",
+      "wordCount": 5758,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 14,
+      "title": "XV: That We Perish Not",
+      "wordCount": 5138,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 15,
+      "title": "XVI: Pledged to the Race",
+      "wordCount": 175,
+      "estimatedMinutes": 1
+    }
+  ]
+}

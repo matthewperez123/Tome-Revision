@@ -1,0 +1,112 @@
+{
+  "bookId": "in-the-days-of-the-comet",
+  "title": "In the Days of the Comet",
+  "author": "H. G. Wells",
+  "chapterCount": 17,
+  "totalWordCount": 80763,
+  "totalMinutes": 323,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Epigraph",
+      "wordCount": 34,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Prologue",
+      "wordCount": 593,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 2,
+      "title": "Book the First: The Comet",
+      "wordCount": 5,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "I: Dust in the Shadows",
+      "wordCount": 9557,
+      "estimatedMinutes": 38
+    },
+    {
+      "index": 4,
+      "title": "II: Nettie",
+      "wordCount": 7875,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 5,
+      "title": "III: The Revolver",
+      "wordCount": 14031,
+      "estimatedMinutes": 56
+    },
+    {
+      "index": 6,
+      "title": "IV: War",
+      "wordCount": 7008,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 7,
+      "title": "V: The Pursuit of the Two Lovers",
+      "wordCount": 7694,
+      "estimatedMinutes": 31
+    },
+    {
+      "index": 8,
+      "title": "Book the Second: The Green Vapors",
+      "wordCount": 6,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 9,
+      "title": "I: The Change",
+      "wordCount": 6818,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 10,
+      "title": "II: The Awakening",
+      "wordCount": 5735,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 11,
+      "title": "III: The Cabinet Council",
+      "wordCount": 4884,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 12,
+      "title": "Book the Third: The New World",
+      "wordCount": 6,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 13,
+      "title": "I: Love After the Change",
+      "wordCount": 7209,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 14,
+      "title": "II: My Mother’s Last Days",
+      "wordCount": 3934,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 15,
+      "title": "III: Beltane and New Year’s Eve",
+      "wordCount": 4600,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 16,
+      "title": "The Epilogue",
+      "wordCount": 774,
+      "estimatedMinutes": 3
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "bookId": "mr-mulliner-stories",
+  "title": "Mr. Mulliner Stories",
+  "author": "P. G. Wodehouse",
+  "chapterCount": 9,
+  "totalWordCount": 52593,
+  "totalMinutes": 210,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "The Truth About George",
+      "wordCount": 5710,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 1,
+      "title": "A Slice of Life",
+      "wordCount": 4988,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 2,
+      "title": "Mulliner’s Buck-U-Uppo",
+      "wordCount": 5733,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 3,
+      "title": "The Bishop’s Move",
+      "wordCount": 5886,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 4,
+      "title": "Came the Dawn",
+      "wordCount": 5367,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 5,
+      "title": "The Story of William",
+      "wordCount": 5582,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 6,
+      "title": "Portrait of a Disciplinarian",
+      "wordCount": 5408,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 7,
+      "title": "The Romance of a Bulb-Squeezer",
+      "wordCount": 5544,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 8,
+      "title": "Honeysuckle Cottage",
+      "wordCount": 8375,
+      "estimatedMinutes": 34
+    }
+  ]
+}

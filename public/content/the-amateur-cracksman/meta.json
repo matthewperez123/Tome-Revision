@@ -1,0 +1,64 @@
+{
+  "bookId": "the-amateur-cracksman",
+  "title": "The Amateur Cracksman",
+  "author": "E. W. Hornung",
+  "chapterCount": 9,
+  "totalWordCount": 52054,
+  "totalMinutes": 208,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 8,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "The Ides of March",
+      "wordCount": 7650,
+      "estimatedMinutes": 31
+    },
+    {
+      "index": 2,
+      "title": "A Costume Piece",
+      "wordCount": 6232,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 3,
+      "title": "Gentlemen and Players",
+      "wordCount": 6712,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 4,
+      "title": "Le Premier Pas",
+      "wordCount": 6109,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 5,
+      "title": "Wilful Murder",
+      "wordCount": 5365,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 6,
+      "title": "Nine Points of the Law",
+      "wordCount": 5983,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 7,
+      "title": "The Return Match",
+      "wordCount": 5488,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 8,
+      "title": "The Gift of the Emperor",
+      "wordCount": 8507,
+      "estimatedMinutes": 34
+    }
+  ]
+}

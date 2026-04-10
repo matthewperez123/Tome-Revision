@@ -1,0 +1,490 @@
+{
+  "bookId": "waverley",
+  "title": "Waverley",
+  "author": "Walter Scott",
+  "chapterCount": 80,
+  "totalWordCount": 177360,
+  "totalMinutes": 709,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 108,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Editor’s Introduction to Waverley",
+      "wordCount": 6637,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 2,
+      "title": "Introduction",
+      "wordCount": 1434,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 3,
+      "title": "Preface to the Third Edition",
+      "wordCount": 1050,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 4,
+      "title": "Epigraph",
+      "wordCount": 12,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 5,
+      "title": "Part I",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 6,
+      "title": "I: Introductory",
+      "wordCount": 1403,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 7,
+      "title": "II: Waverley-Honour—A Retrospect",
+      "wordCount": 2818,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 8,
+      "title": "III: Education",
+      "wordCount": 1808,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 9,
+      "title": "IV: Castle-Building",
+      "wordCount": 1862,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 10,
+      "title": "V: Choice of a Profession",
+      "wordCount": 3064,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 11,
+      "title": "VI: The Adieus of Waverley",
+      "wordCount": 2767,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 12,
+      "title": "VII: A Horse-Quarter in Scotland",
+      "wordCount": 955,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 13,
+      "title": "VIII: A Scottish Manor-House",
+      "wordCount": 1952,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 14,
+      "title": "IX: More of the Manor-House and Its Environs",
+      "wordCount": 1944,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 15,
+      "title": "X: Rose Bradwardine and Her Father",
+      "wordCount": 2042,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 16,
+      "title": "XI: The Banquet",
+      "wordCount": 3025,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 17,
+      "title": "XII: Repentance and a Reconciliation",
+      "wordCount": 2585,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 18,
+      "title": "XIII: A More Rational Day Than the Last",
+      "wordCount": 2900,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 19,
+      "title": "XIV: A Discovery—Waverley Becomes Domesticated at Tully-Veolan",
+      "wordCount": 2710,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 20,
+      "title": "XV: A Creagh, and Its Consequences",
+      "wordCount": 2743,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 21,
+      "title": "XVI: An Unexpected Ally Appears",
+      "wordCount": 3147,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 22,
+      "title": "XVII: The Hold of a Highland Robber",
+      "wordCount": 1809,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 23,
+      "title": "XVIII: Waverley Proceeds on His Journey",
+      "wordCount": 4131,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 24,
+      "title": "XIX: The Chief and His Mansion",
+      "wordCount": 2474,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 25,
+      "title": "XX: A Highland Feast",
+      "wordCount": 1861,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 26,
+      "title": "XXI: The Chieftain’s Sister",
+      "wordCount": 1661,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 27,
+      "title": "XXII: Highland Minstrelsy",
+      "wordCount": 3305,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 28,
+      "title": "XXIII: Waverley Continued at Glennaquoich",
+      "wordCount": 1566,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 29,
+      "title": "XXIV: A Stag-Hunt and Its Consequences",
+      "wordCount": 3289,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 30,
+      "title": "XXV: News from England",
+      "wordCount": 3389,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 31,
+      "title": "XXVI: An Eclaircissement",
+      "wordCount": 1673,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 32,
+      "title": "XXVII: Upon the Same Subject",
+      "wordCount": 2924,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 33,
+      "title": "XXVIII: A Letter from Tully-Veolan",
+      "wordCount": 2443,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 34,
+      "title": "XXIX: Waverley’s Reception in the Lowlands After His Highland Tour",
+      "wordCount": 3172,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 35,
+      "title": "Part II",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 36,
+      "title": "I: Shows That the Loss of a Horse’s Show May Be a Serious Inconvenience",
+      "wordCount": 2379,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 37,
+      "title": "II: An Examination",
+      "wordCount": 3144,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 38,
+      "title": "III: A Conference and the Consequence",
+      "wordCount": 2180,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 39,
+      "title": "IV: A Confidant",
+      "wordCount": 1940,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 40,
+      "title": "V: Things Mend a Little",
+      "wordCount": 889,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 41,
+      "title": "VI: A Volunteer Sixty Years Since",
+      "wordCount": 1280,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 42,
+      "title": "VII: An Incident",
+      "wordCount": 1798,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 43,
+      "title": "VIII: Waverley Is Still in Distress",
+      "wordCount": 2556,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 44,
+      "title": "IX: A Nocturnal Adventure",
+      "wordCount": 1920,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 45,
+      "title": "X: The Journey Is Continued",
+      "wordCount": 2880,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 46,
+      "title": "XI: An Old and a New Acquaintance",
+      "wordCount": 2083,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 47,
+      "title": "XII: The Mystery Begins to Be Cleared Up",
+      "wordCount": 2546,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 48,
+      "title": "XIII: A Soldier’s Dinner",
+      "wordCount": 2177,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 49,
+      "title": "XIV: The Ball",
+      "wordCount": 2635,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 50,
+      "title": "XV: The March",
+      "wordCount": 2269,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 51,
+      "title": "XVI: An Incident Gives Rise to Unavailing Reflections",
+      "wordCount": 1752,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 52,
+      "title": "XVII: The Eve of Battle",
+      "wordCount": 2171,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 53,
+      "title": "XVIII: The Conflict",
+      "wordCount": 1932,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 54,
+      "title": "XIX: An Unexpected Embarassment",
+      "wordCount": 1969,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 55,
+      "title": "XX: The English Prisoner",
+      "wordCount": 2034,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 56,
+      "title": "XXI: Rather Unimportant",
+      "wordCount": 1898,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 57,
+      "title": "XXII: Intrigues of Love and Politics",
+      "wordCount": 2472,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 58,
+      "title": "XXIII: Intrigues of Society and Love",
+      "wordCount": 2216,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 59,
+      "title": "XXIV: Fergus a Suitor",
+      "wordCount": 2015,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 60,
+      "title": "XXV: “To One Thing Constant Never”",
+      "wordCount": 1412,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 61,
+      "title": "XXVI: A Brave Man in Sorrow",
+      "wordCount": 1464,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 62,
+      "title": "XXVII: Exertion",
+      "wordCount": 1520,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 63,
+      "title": "XXVIII: The March",
+      "wordCount": 2231,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 64,
+      "title": "XXIX: The Confusion of King Agramant’s Camp",
+      "wordCount": 3039,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 65,
+      "title": "XXX: A Skirmish",
+      "wordCount": 2536,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 66,
+      "title": "XXXI: Chapter of Accidents",
+      "wordCount": 2006,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 67,
+      "title": "XXXII: A Journey to London",
+      "wordCount": 1787,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 68,
+      "title": "XXXIII: What’s to Be Done Next?",
+      "wordCount": 3259,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 69,
+      "title": "XXXIV: Desolation",
+      "wordCount": 3112,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 70,
+      "title": "XXXV: Comparing of Notes",
+      "wordCount": 1706,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 71,
+      "title": "XXXVI: More Explanation",
+      "wordCount": 3402,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 72,
+      "title": "XXXVII",
+      "wordCount": 2327,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 73,
+      "title": "XXXVIII",
+      "wordCount": 2707,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 74,
+      "title": "XXXIX",
+      "wordCount": 2565,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 75,
+      "title": "XL",
+      "wordCount": 2597,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 76,
+      "title": "XLI: Dulce Domum",
+      "wordCount": 1598,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 77,
+      "title": "XLII",
+      "wordCount": 3500,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 78,
+      "title": "XLIII: A Postcript Which Should Have Been a Preface",
+      "wordCount": 1181,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 79,
+      "title": "Glossary",
+      "wordCount": 1609,
+      "estimatedMinutes": 6
+    }
+  ]
+}

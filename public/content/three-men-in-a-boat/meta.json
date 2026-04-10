@@ -1,0 +1,130 @@
+{
+  "bookId": "three-men-in-a-boat",
+  "title": "Three Men in a Boat",
+  "author": "Jerome K. Jerome",
+  "chapterCount": 20,
+  "totalWordCount": 66437,
+  "totalMinutes": 266,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface",
+      "wordCount": 152,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I",
+      "wordCount": 3582,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 2,
+      "title": "II",
+      "wordCount": 2201,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 3,
+      "title": "III",
+      "wordCount": 2813,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 4,
+      "title": "IV",
+      "wordCount": 3803,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 5,
+      "title": "V",
+      "wordCount": 3039,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 6,
+      "title": "VI",
+      "wordCount": 3940,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 7,
+      "title": "VII",
+      "wordCount": 3277,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 8,
+      "title": "VIII",
+      "wordCount": 4175,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 9,
+      "title": "IX",
+      "wordCount": 3836,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 10,
+      "title": "X",
+      "wordCount": 3474,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 11,
+      "title": "XI",
+      "wordCount": 3914,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 12,
+      "title": "XII",
+      "wordCount": 4500,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 13,
+      "title": "XIII",
+      "wordCount": 4533,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 14,
+      "title": "XIV",
+      "wordCount": 4150,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 15,
+      "title": "XV",
+      "wordCount": 5121,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 16,
+      "title": "XVI",
+      "wordCount": 1384,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 17,
+      "title": "XVII",
+      "wordCount": 2785,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 18,
+      "title": "XVIII",
+      "wordCount": 2444,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 19,
+      "title": "XIX",
+      "wordCount": 3314,
+      "estimatedMinutes": 13
+    }
+  ]
+}

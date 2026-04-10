@@ -1,0 +1,172 @@
+{
+  "bookId": "the-splendid-fairing",
+  "title": "The Splendid Fairing",
+  "author": "Constance Holme",
+  "chapterCount": 27,
+  "totalWordCount": 68211,
+  "totalMinutes": 273,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 9,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Epigraph",
+      "wordCount": 9,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Part I: Simon and Sarah",
+      "wordCount": 5,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "I",
+      "wordCount": 4059,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 4,
+      "title": "II",
+      "wordCount": 2007,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 5,
+      "title": "III",
+      "wordCount": 2140,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 6,
+      "title": "IV",
+      "wordCount": 2732,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 7,
+      "title": "V",
+      "wordCount": 3700,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 8,
+      "title": "VI",
+      "wordCount": 5188,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 9,
+      "title": "Part II: Eliza",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 10,
+      "title": "I",
+      "wordCount": 3477,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 11,
+      "title": "II",
+      "wordCount": 1784,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 12,
+      "title": "III",
+      "wordCount": 8854,
+      "estimatedMinutes": 35
+    },
+    {
+      "index": 13,
+      "title": "IV",
+      "wordCount": 3124,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 14,
+      "title": "V",
+      "wordCount": 2666,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 15,
+      "title": "VI",
+      "wordCount": 6600,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 16,
+      "title": "VII",
+      "wordCount": 980,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 17,
+      "title": "VIII",
+      "wordCount": 3890,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 18,
+      "title": "Part III: May",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 19,
+      "title": "I",
+      "wordCount": 2352,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 20,
+      "title": "II",
+      "wordCount": 1504,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 21,
+      "title": "III",
+      "wordCount": 2495,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 22,
+      "title": "Part IV: Geordie-an’-Jim",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 23,
+      "title": "I",
+      "wordCount": 2475,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 24,
+      "title": "II",
+      "wordCount": 1870,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 25,
+      "title": "III",
+      "wordCount": 4614,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 26,
+      "title": "IV",
+      "wordCount": 1668,
+      "estimatedMinutes": 7
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "bookId": "the-titan",
+  "title": "The Titan",
+  "author": "Theodore Dreiser",
+  "chapterCount": 62,
+  "totalWordCount": 193207,
+  "totalMinutes": 773,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I: The New City",
+      "wordCount": 1461,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 1,
+      "title": "II: A Reconnoiter",
+      "wordCount": 2661,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 2,
+      "title": "III: A Chicago Evening",
+      "wordCount": 2277,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 3,
+      "title": "IV: Peter Laughlin &amp; Co.",
+      "wordCount": 2171,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 4,
+      "title": "V: Concerning a Wife and Family",
+      "wordCount": 1378,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 5,
+      "title": "VI: The New Queen of the Home",
+      "wordCount": 2878,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 6,
+      "title": "VII: Chicago Gas",
+      "wordCount": 2591,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 7,
+      "title": "VIII: Now This Is Fighting",
+      "wordCount": 2345,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 8,
+      "title": "IX: In Search of Victory",
+      "wordCount": 4342,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 9,
+      "title": "X: A Test",
+      "wordCount": 2751,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 10,
+      "title": "XI: The Fruits of Daring",
+      "wordCount": 2793,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 11,
+      "title": "XII: A New Retainer",
+      "wordCount": 3811,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 12,
+      "title": "XIII: The Die Is Cast",
+      "wordCount": 4707,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 13,
+      "title": "XIV: Undercurrents",
+      "wordCount": 4825,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 14,
+      "title": "XV: A New Affection",
+      "wordCount": 2347,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 15,
+      "title": "XVI: A Fateful Interlude",
+      "wordCount": 3514,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 16,
+      "title": "XVII: An Overture to Conflict",
+      "wordCount": 1533,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 17,
+      "title": "XVIII: The Clash",
+      "wordCount": 4342,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 18,
+      "title": "XIX: “Hell Hath No Fury—”",
+      "wordCount": 2524,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 19,
+      "title": "XX: “Man and Superman”",
+      "wordCount": 2124,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 20,
+      "title": "XXI: A Matter of Tunnels",
+      "wordCount": 3936,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 21,
+      "title": "XXII: Street-Railways at Last",
+      "wordCount": 2825,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 22,
+      "title": "XXIII: The Power of the Press",
+      "wordCount": 5042,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 23,
+      "title": "XXIV: The Coming of Stephanie Platow",
+      "wordCount": 3209,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 24,
+      "title": "XXV: Airs from the Orient",
+      "wordCount": 1684,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 25,
+      "title": "XXVI: Love and War",
+      "wordCount": 3637,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 26,
+      "title": "XXVII: A Financier Bewitched",
+      "wordCount": 2538,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 27,
+      "title": "XXVIII: The Exposure of Stephanie",
+      "wordCount": 3263,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 28,
+      "title": "XXIX: A Family Quarrel",
+      "wordCount": 3500,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 29,
+      "title": "XXX: Obstacles",
+      "wordCount": 2702,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 30,
+      "title": "XXXI: Untoward Disclosures",
+      "wordCount": 2505,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 31,
+      "title": "XXXII: A Supper Party",
+      "wordCount": 3549,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 32,
+      "title": "XXXIII: Mr. Lynde to the Rescue",
+      "wordCount": 2522,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 33,
+      "title": "XXXIV: Enter Hosmer Hand",
+      "wordCount": 3194,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 34,
+      "title": "XXXV: A Political Agreement",
+      "wordCount": 3341,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 35,
+      "title": "XXXVI: An Election Draws Near",
+      "wordCount": 1785,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 36,
+      "title": "XXXVII: Aileen’s Revenge",
+      "wordCount": 4211,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 37,
+      "title": "XXXVIII: An Hour of Defeat",
+      "wordCount": 4404,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 38,
+      "title": "XXXIX: The New Administration",
+      "wordCount": 3392,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 39,
+      "title": "XL: A Trip to Louisville",
+      "wordCount": 3227,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 40,
+      "title": "XLI: The Daughter of Mrs. Fleming",
+      "wordCount": 1709,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 41,
+      "title": "XLII: F. A. Cowperwood, Guardian",
+      "wordCount": 2509,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 42,
+      "title": "XLIII: The Planet Mars",
+      "wordCount": 3595,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 43,
+      "title": "XLIV: A Franchise Obtained",
+      "wordCount": 2447,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 44,
+      "title": "XLV: Changing Horizons",
+      "wordCount": 3149,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 45,
+      "title": "XLVI: Depths and Heights",
+      "wordCount": 3144,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 46,
+      "title": "XLVII: American Match",
+      "wordCount": 4300,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 47,
+      "title": "XLVIII: Panic",
+      "wordCount": 4251,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 48,
+      "title": "XLIX: Mount Olympus",
+      "wordCount": 4980,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 49,
+      "title": "L: A New York Mansion",
+      "wordCount": 2435,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 50,
+      "title": "LI: The Revival of Hattie Starr",
+      "wordCount": 4237,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 51,
+      "title": "LII: Behind the Arras",
+      "wordCount": 2076,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 52,
+      "title": "LIII: A Declaration of Love",
+      "wordCount": 3506,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 53,
+      "title": "LIV: Wanted—Fifty-Year Franchises",
+      "wordCount": 4208,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 54,
+      "title": "LV: Cowperwood and the Governor",
+      "wordCount": 3307,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 55,
+      "title": "LVI: The Ordeal of Berenice",
+      "wordCount": 2828,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 56,
+      "title": "LVII: Aileen’s Last Card",
+      "wordCount": 4663,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 57,
+      "title": "LVIII: A Marauder Upon the Commonwealth",
+      "wordCount": 2517,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 58,
+      "title": "LIX: Capital and Public Rights",
+      "wordCount": 2475,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 59,
+      "title": "LX: The Net",
+      "wordCount": 2163,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 60,
+      "title": "LXI: The Cataclysm",
+      "wordCount": 5081,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 61,
+      "title": "LXII: The Recompense",
+      "wordCount": 1786,
+      "estimatedMinutes": 7
+    }
+  ]
+}

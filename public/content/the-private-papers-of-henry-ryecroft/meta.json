@@ -1,0 +1,658 @@
+{
+  "bookId": "the-private-papers-of-henry-ryecroft",
+  "title": "The Private Papers of Henry Ryecroft",
+  "author": "George Gissing",
+  "chapterCount": 108,
+  "totalWordCount": 61576,
+  "totalMinutes": 246,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface",
+      "wordCount": 1565,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 1,
+      "title": "Part I: Spring",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "I",
+      "wordCount": 611,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 3,
+      "title": "II",
+      "wordCount": 823,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 4,
+      "title": "III",
+      "wordCount": 646,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 5,
+      "title": "IV",
+      "wordCount": 397,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 6,
+      "title": "V",
+      "wordCount": 426,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 7,
+      "title": "VI",
+      "wordCount": 97,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 8,
+      "title": "VII",
+      "wordCount": 267,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 9,
+      "title": "VIII",
+      "wordCount": 801,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 10,
+      "title": "IX",
+      "wordCount": 1088,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 11,
+      "title": "X",
+      "wordCount": 1263,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 12,
+      "title": "XI",
+      "wordCount": 421,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 13,
+      "title": "XII",
+      "wordCount": 1583,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 14,
+      "title": "XIII",
+      "wordCount": 320,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 15,
+      "title": "XIV",
+      "wordCount": 239,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 16,
+      "title": "XV",
+      "wordCount": 489,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 17,
+      "title": "XVI",
+      "wordCount": 667,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 18,
+      "title": "XVII",
+      "wordCount": 776,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 19,
+      "title": "XVIII",
+      "wordCount": 417,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 20,
+      "title": "XIX",
+      "wordCount": 768,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 21,
+      "title": "XX",
+      "wordCount": 1040,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 22,
+      "title": "XXI",
+      "wordCount": 121,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 23,
+      "title": "XXII",
+      "wordCount": 1399,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 24,
+      "title": "XXIII",
+      "wordCount": 358,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 25,
+      "title": "XXIV",
+      "wordCount": 311,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 26,
+      "title": "XXV",
+      "wordCount": 238,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 27,
+      "title": "Part II: Summer",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 28,
+      "title": "I",
+      "wordCount": 374,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 29,
+      "title": "II",
+      "wordCount": 745,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 30,
+      "title": "III",
+      "wordCount": 229,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 31,
+      "title": "IV",
+      "wordCount": 563,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 32,
+      "title": "V",
+      "wordCount": 616,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 33,
+      "title": "VI",
+      "wordCount": 1039,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 34,
+      "title": "VII",
+      "wordCount": 337,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 35,
+      "title": "VIII",
+      "wordCount": 488,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 36,
+      "title": "IX",
+      "wordCount": 848,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 37,
+      "title": "X",
+      "wordCount": 634,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 38,
+      "title": "XI",
+      "wordCount": 1022,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 39,
+      "title": "XII",
+      "wordCount": 537,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 40,
+      "title": "XIII",
+      "wordCount": 449,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 41,
+      "title": "XIV",
+      "wordCount": 367,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 42,
+      "title": "XV",
+      "wordCount": 183,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 43,
+      "title": "XVI",
+      "wordCount": 821,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 44,
+      "title": "XVII",
+      "wordCount": 439,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 45,
+      "title": "XVIII",
+      "wordCount": 793,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 46,
+      "title": "XIX",
+      "wordCount": 403,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 47,
+      "title": "XX",
+      "wordCount": 772,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 48,
+      "title": "XXI",
+      "wordCount": 318,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 49,
+      "title": "XXII",
+      "wordCount": 665,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 50,
+      "title": "XXIII",
+      "wordCount": 1218,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 51,
+      "title": "XXIV",
+      "wordCount": 579,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 52,
+      "title": "XXV",
+      "wordCount": 362,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 53,
+      "title": "XXVI",
+      "wordCount": 505,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 54,
+      "title": "XXVII",
+      "wordCount": 762,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 55,
+      "title": "Part III: Autumn",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 56,
+      "title": "I",
+      "wordCount": 191,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 57,
+      "title": "II",
+      "wordCount": 363,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 58,
+      "title": "III",
+      "wordCount": 550,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 59,
+      "title": "IV",
+      "wordCount": 426,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 60,
+      "title": "V",
+      "wordCount": 538,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 61,
+      "title": "VI",
+      "wordCount": 309,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 62,
+      "title": "VII",
+      "wordCount": 581,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 63,
+      "title": "VIII",
+      "wordCount": 707,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 64,
+      "title": "IX",
+      "wordCount": 927,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 65,
+      "title": "X",
+      "wordCount": 509,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 66,
+      "title": "XI",
+      "wordCount": 213,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 67,
+      "title": "XII",
+      "wordCount": 353,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 68,
+      "title": "XIII",
+      "wordCount": 1091,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 69,
+      "title": "XIV",
+      "wordCount": 587,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 70,
+      "title": "XV",
+      "wordCount": 954,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 71,
+      "title": "XVI",
+      "wordCount": 800,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 72,
+      "title": "XVII",
+      "wordCount": 870,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 73,
+      "title": "XVIII",
+      "wordCount": 254,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 74,
+      "title": "XIX",
+      "wordCount": 472,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 75,
+      "title": "XX",
+      "wordCount": 513,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 76,
+      "title": "XXI",
+      "wordCount": 605,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 77,
+      "title": "XXII",
+      "wordCount": 948,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 78,
+      "title": "XXIII",
+      "wordCount": 637,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 79,
+      "title": "XXIV",
+      "wordCount": 443,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 80,
+      "title": "XXV",
+      "wordCount": 135,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 81,
+      "title": "Part IV: Winter",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 82,
+      "title": "I",
+      "wordCount": 825,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 83,
+      "title": "II",
+      "wordCount": 155,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 84,
+      "title": "III",
+      "wordCount": 322,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 85,
+      "title": "IV",
+      "wordCount": 537,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 86,
+      "title": "V",
+      "wordCount": 517,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 87,
+      "title": "VI",
+      "wordCount": 616,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 88,
+      "title": "VII",
+      "wordCount": 783,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 89,
+      "title": "VIII",
+      "wordCount": 566,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 90,
+      "title": "IX",
+      "wordCount": 391,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 91,
+      "title": "X",
+      "wordCount": 209,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 92,
+      "title": "XI",
+      "wordCount": 644,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 93,
+      "title": "XII",
+      "wordCount": 484,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 94,
+      "title": "XIII",
+      "wordCount": 591,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 95,
+      "title": "XIV",
+      "wordCount": 516,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 96,
+      "title": "XV",
+      "wordCount": 560,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 97,
+      "title": "XVI",
+      "wordCount": 484,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 98,
+      "title": "XVII",
+      "wordCount": 665,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 99,
+      "title": "XVIII",
+      "wordCount": 538,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 100,
+      "title": "XIX",
+      "wordCount": 487,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 101,
+      "title": "XX",
+      "wordCount": 1014,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 102,
+      "title": "XXI",
+      "wordCount": 312,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 103,
+      "title": "XXII",
+      "wordCount": 807,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 104,
+      "title": "XXIII",
+      "wordCount": 1019,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 105,
+      "title": "XXIV",
+      "wordCount": 198,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 106,
+      "title": "XXV",
+      "wordCount": 678,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 107,
+      "title": "XXVI",
+      "wordCount": 471,
+      "estimatedMinutes": 2
+    }
+  ]
+}

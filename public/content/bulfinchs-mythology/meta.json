@@ -1,0 +1,700 @@
+{
+  "bookId": "bulfinchs-mythology",
+  "title": "Bulfinch's Mythology",
+  "author": "Thomas Bulfinch",
+  "chapterCount": 115,
+  "totalWordCount": 327993,
+  "totalMinutes": 1312,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Publishers’ Preface",
+      "wordCount": 660,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 1,
+      "title": "Author’s Preface",
+      "wordCount": 1896,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 2,
+      "title": "Stories of Gods and Heroes",
+      "wordCount": 5,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "I: Introduction",
+      "wordCount": 3376,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 4,
+      "title": "II: Prometheus and Pandora",
+      "wordCount": 2525,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 5,
+      "title": "III: Apollo and Daphne—Pyramus and Thisbe—Cephalus and Procris",
+      "wordCount": 3354,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 6,
+      "title": "IV: Juno and Her Rivals, Io and Callisto—Diana and Actaeon—Latona and the Rustics",
+      "wordCount": 3646,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 7,
+      "title": "V: Phaëton",
+      "wordCount": 2875,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 8,
+      "title": "VI: Midas—Baucis and Philemon",
+      "wordCount": 2260,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 9,
+      "title": "VII: Proserpine—Glaucus and Scylla",
+      "wordCount": 3652,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 10,
+      "title": "VIII: Pygmalion—Dryope—Venus and Adonis—Apollo and Hyacinthus",
+      "wordCount": 2310,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 11,
+      "title": "IX: Ceyx and Halcyone: or, the Halcyon Birds",
+      "wordCount": 2656,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 12,
+      "title": "X: Vertumnus and Pomona",
+      "wordCount": 1572,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 13,
+      "title": "XI: Cupid and Psyche",
+      "wordCount": 4140,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 14,
+      "title": "XII: Cadmus—The Myrmidons",
+      "wordCount": 2607,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 15,
+      "title": "XIII: Nisus and Scylla—Echo and Narcissus—Clytie—Hero and Leander",
+      "wordCount": 2946,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 16,
+      "title": "XIV: Minerva—Niobe",
+      "wordCount": 2900,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 17,
+      "title": "XV: The Graeae or Gray-Maids—Perseus—Medusa—Atlas—Andromeda",
+      "wordCount": 2243,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 18,
+      "title": "XVI: Monsters",
+      "wordCount": 2382,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 19,
+      "title": "XVII: The Golden Fleece—Medea",
+      "wordCount": 3006,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 20,
+      "title": "XVIII: Meleager and Atalanta",
+      "wordCount": 2089,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 21,
+      "title": "XIX: Hercules—Hebe and Ganymede",
+      "wordCount": 2425,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 22,
+      "title": "XX: Theseus—Daedalus—Castor and Pollux",
+      "wordCount": 3153,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 23,
+      "title": "XXI: Bacchus—Ariadne",
+      "wordCount": 2225,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 24,
+      "title": "XXII: The Rural Deities—Erisichthon—Rhoecus—The Water Deities—Camenae—Winds",
+      "wordCount": 3277,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 25,
+      "title": "XXIII: Achelous and Hercules—Admetus and Alcestis—Antigone—Penelope",
+      "wordCount": 2811,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 26,
+      "title": "XXIV: Orpheus and Eurydice—Aristaeus—Amphion—Linus—Thamyris—Marsyas—Melampus—Musaeus",
+      "wordCount": 3134,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 27,
+      "title": "XXV: Arion—Ibycus—Simonides—Sappho",
+      "wordCount": 3268,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 28,
+      "title": "XXVI: Endymion—Orion—Aurora and Tithonus—Acis and Galatea",
+      "wordCount": 2480,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 29,
+      "title": "XXVII: The Trojan War",
+      "wordCount": 5888,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 30,
+      "title": "XXVIII: The Fall of Troy—Return of the Greeks—Orestes and Electra",
+      "wordCount": 2914,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 31,
+      "title": "XXIX: Adventures of Ulysses—The Lotus-Eaters—Cyclopes—Circe—Sirens—Scylla and Charybdis—Calypso",
+      "wordCount": 3683,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 32,
+      "title": "XXX: The Phaeacians—Fate of the Suitors",
+      "wordCount": 3817,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 33,
+      "title": "XXXI: Adventures of Aeneas—The Harpies—Dido—Palinurus",
+      "wordCount": 2750,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 34,
+      "title": "XXXII: The Infernal Regions—The Sibyl",
+      "wordCount": 3638,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 35,
+      "title": "XXXIII: Camilla—Evander—Nisus and Euryalus—Mezentius—Turnus",
+      "wordCount": 4315,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 36,
+      "title": "XXXIV: Pythagoras—Egyptian Deities—Oracles",
+      "wordCount": 4116,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 37,
+      "title": "XXXV: Origin of Mythology—Statues of Gods and Goddesses—Poets of Mythology",
+      "wordCount": 3128,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 38,
+      "title": "XXXVI: Modern Monsters—The Phoenix—Basilisk—Unicorn—Salamander",
+      "wordCount": 2743,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 39,
+      "title": "XXXVII: Eastern Mythology—Zoroaster—Hindu Mythology—Castes—Buddha—Grand Lama",
+      "wordCount": 3355,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 40,
+      "title": "XXXVIII: Northern Mythology—Valhalla—The Valkyrior",
+      "wordCount": 2973,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 41,
+      "title": "XXXIX: Thor’s Visit to Jotunheim",
+      "wordCount": 2591,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 42,
+      "title": "XL: The Death of Baldur—The Elves—Runic Letters—Iceland—Teutonic Mythology—Nibelungen Lied",
+      "wordCount": 4877,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 43,
+      "title": "XLI: The Druids—Iona",
+      "wordCount": 2771,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 44,
+      "title": "King Arthur and His Knights",
+      "wordCount": 5,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 45,
+      "title": "I: Introduction",
+      "wordCount": 3902,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 46,
+      "title": "II: The Mythical History of England",
+      "wordCount": 3490,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 47,
+      "title": "III: Merlin",
+      "wordCount": 1843,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 48,
+      "title": "IV: Arthur",
+      "wordCount": 3525,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 49,
+      "title": "V: Arthur (Continued)",
+      "wordCount": 3152,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 50,
+      "title": "VI: Sir Gawain",
+      "wordCount": 1290,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 51,
+      "title": "VII: Caradoc Briefbras; or, Caradoc with the Shrunken Arm",
+      "wordCount": 1660,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 52,
+      "title": "VIII: Launcelot of the Lake",
+      "wordCount": 4457,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 53,
+      "title": "IX: The Adventure of the Cart",
+      "wordCount": 2196,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 54,
+      "title": "X: The Lady of Shalott",
+      "wordCount": 1337,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 55,
+      "title": "XI: Queen Guenever’s Peril",
+      "wordCount": 1364,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 56,
+      "title": "XII: Tristram and Isoude",
+      "wordCount": 2871,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 57,
+      "title": "XIII: Tristram and Isoude (Continued)",
+      "wordCount": 2492,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 58,
+      "title": "XIV: Sir Tristram’s Battle with Sir Launcelot",
+      "wordCount": 1195,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 59,
+      "title": "XV: The Round Table",
+      "wordCount": 1659,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 60,
+      "title": "XVI: Sir Palamedes",
+      "wordCount": 1236,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 61,
+      "title": "XVII: Sir Tristram",
+      "wordCount": 1265,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 62,
+      "title": "XVIII: Perceval",
+      "wordCount": 2679,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 63,
+      "title": "XIX: The Sangreal, or Holy Graal",
+      "wordCount": 2140,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 64,
+      "title": "XX: The Sangreal (Continued)",
+      "wordCount": 2178,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 65,
+      "title": "XXI: The Sangreal (Continued)",
+      "wordCount": 3953,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 66,
+      "title": "XXII: Sir Agrivain’s Treason",
+      "wordCount": 3057,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 67,
+      "title": "XXIII: Morte d’Arthur",
+      "wordCount": 4167,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 68,
+      "title": "The Mabinogeon",
+      "wordCount": 876,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 69,
+      "title": "I: The Britons",
+      "wordCount": 1355,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 70,
+      "title": "II: The Lady of the Fountain",
+      "wordCount": 2024,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 71,
+      "title": "III: The Lady of the Fountain (Continued)",
+      "wordCount": 2725,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 72,
+      "title": "IV: The Lady of the Fountain (Continued)",
+      "wordCount": 2601,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 73,
+      "title": "V: Geraint, the Son of Erbin",
+      "wordCount": 4111,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 74,
+      "title": "VI: Geraint, the Son of Erbin (Continued)",
+      "wordCount": 2940,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 75,
+      "title": "VII: Geraint, the Son of Erbin (Continued)",
+      "wordCount": 4235,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 76,
+      "title": "VIII: Pwyll, Prince of Dyved",
+      "wordCount": 2432,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 77,
+      "title": "IX: Branwen, the Daughter of Llyr",
+      "wordCount": 3303,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 78,
+      "title": "X: Manawyddan",
+      "wordCount": 4233,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 79,
+      "title": "XI: Kilwich and Olwen",
+      "wordCount": 4393,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 80,
+      "title": "XII: Kilwich and Olwen (Continued)",
+      "wordCount": 2543,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 81,
+      "title": "XIII: Taliesin",
+      "wordCount": 2672,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 82,
+      "title": "Hero Myths of the British Isles",
+      "wordCount": 6,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 83,
+      "title": "Beowulf",
+      "wordCount": 683,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 84,
+      "title": "Cuchulain, Champion of Ireland",
+      "wordCount": 1360,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 85,
+      "title": "Hereward the Wake",
+      "wordCount": 984,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 86,
+      "title": "Robin Hood",
+      "wordCount": 994,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 87,
+      "title": "Legends of Charlemagne",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 88,
+      "title": "Introduction",
+      "wordCount": 3172,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 89,
+      "title": "The Peers, or Paladins",
+      "wordCount": 2978,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 90,
+      "title": "The Tournament",
+      "wordCount": 3009,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 91,
+      "title": "The Siege of Albracca",
+      "wordCount": 4101,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 92,
+      "title": "Adventures of Rinaldo and Orlando",
+      "wordCount": 3316,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 93,
+      "title": "The Invasion of France",
+      "wordCount": 3159,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 94,
+      "title": "The Invasion of France (Continued)",
+      "wordCount": 3616,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 95,
+      "title": "Bradamante and Rogero",
+      "wordCount": 3590,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 96,
+      "title": "Astolpho and the Enchantress",
+      "wordCount": 3867,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 97,
+      "title": "The Orc",
+      "wordCount": 2683,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 98,
+      "title": "Astolpho’s Adventures Continued, and Isabella’s Begun",
+      "wordCount": 2283,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 99,
+      "title": "Medoro",
+      "wordCount": 2874,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 100,
+      "title": "Orlando Mad",
+      "wordCount": 2915,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 101,
+      "title": "Zerbino and Isabella",
+      "wordCount": 3358,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 102,
+      "title": "Astolpho in Abyssinia",
+      "wordCount": 2802,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 103,
+      "title": "The War in Africa",
+      "wordCount": 4228,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 104,
+      "title": "Rogero and Bradamante",
+      "wordCount": 4748,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 105,
+      "title": "The Battle of Roncesvalles",
+      "wordCount": 4646,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 106,
+      "title": "Rinaldo and Bayard",
+      "wordCount": 2157,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 107,
+      "title": "Death of Rinaldo",
+      "wordCount": 2252,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 108,
+      "title": "Huon of Bordeaux",
+      "wordCount": 2546,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 109,
+      "title": "Huon of Bordeaux (Continued)",
+      "wordCount": 3804,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 110,
+      "title": "Huon of Bordeaux (Continued)",
+      "wordCount": 2445,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 111,
+      "title": "Ogier, the Dane",
+      "wordCount": 3070,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 112,
+      "title": "Ogier, the Dane (Continued)",
+      "wordCount": 2504,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 113,
+      "title": "Ogier, the Dane (Continued)",
+      "wordCount": 3273,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 114,
+      "title": "Glossary",
+      "wordCount": 13579,
+      "estimatedMinutes": 54
+    }
+  ]
+}

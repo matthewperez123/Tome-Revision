@@ -1,0 +1,52 @@
+{
+  "bookId": "pastors-and-masters",
+  "title": "Pastors and Masters",
+  "author": "Ivy Compton-Burnett",
+  "chapterCount": 7,
+  "totalWordCount": 30413,
+  "totalMinutes": 122,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I",
+      "wordCount": 4054,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 1,
+      "title": "II",
+      "wordCount": 3910,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 2,
+      "title": "III",
+      "wordCount": 3608,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 3,
+      "title": "IV",
+      "wordCount": 5429,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 4,
+      "title": "V",
+      "wordCount": 3713,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 5,
+      "title": "VI",
+      "wordCount": 4781,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 6,
+      "title": "VII",
+      "wordCount": 4918,
+      "estimatedMinutes": 20
+    }
+  ]
+}

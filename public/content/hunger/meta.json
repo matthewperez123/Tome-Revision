@@ -1,0 +1,40 @@
+{
+  "bookId": "hunger",
+  "title": "Hunger",
+  "author": "Knut Hamsun",
+  "chapterCount": 5,
+  "totalWordCount": 66131,
+  "totalMinutes": 265,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Prefatory Note",
+      "wordCount": 994,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 1,
+      "title": "I",
+      "wordCount": 17215,
+      "estimatedMinutes": 69
+    },
+    {
+      "index": 2,
+      "title": "II",
+      "wordCount": 13932,
+      "estimatedMinutes": 56
+    },
+    {
+      "index": 3,
+      "title": "III",
+      "wordCount": 19987,
+      "estimatedMinutes": 80
+    },
+    {
+      "index": 4,
+      "title": "IV",
+      "wordCount": 14003,
+      "estimatedMinutes": 56
+    }
+  ]
+}

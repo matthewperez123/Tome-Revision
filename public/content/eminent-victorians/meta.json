@@ -1,0 +1,160 @@
+{
+  "bookId": "eminent-victorians",
+  "title": "Eminent Victorians",
+  "author": "Lytton Strachey",
+  "chapterCount": 25,
+  "totalWordCount": 98340,
+  "totalMinutes": 393,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 5,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Preface",
+      "wordCount": 805,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 2,
+      "title": "Cardinal Manning",
+      "wordCount": 437,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 3,
+      "title": "I",
+      "wordCount": 1620,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 4,
+      "title": "II",
+      "wordCount": 4005,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 5,
+      "title": "III",
+      "wordCount": 5296,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 6,
+      "title": "IV",
+      "wordCount": 4376,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 7,
+      "title": "V",
+      "wordCount": 4987,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 8,
+      "title": "VI",
+      "wordCount": 5113,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 9,
+      "title": "VII",
+      "wordCount": 4527,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 10,
+      "title": "VIII",
+      "wordCount": 1775,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 11,
+      "title": "IX",
+      "wordCount": 1522,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 12,
+      "title": "X",
+      "wordCount": 1897,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 13,
+      "title": "Bibliography",
+      "wordCount": 179,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 14,
+      "title": "Florence Nightingale",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 15,
+      "title": "I",
+      "wordCount": 1961,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 16,
+      "title": "II",
+      "wordCount": 6471,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 17,
+      "title": "III",
+      "wordCount": 7175,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 18,
+      "title": "IV",
+      "wordCount": 2961,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 19,
+      "title": "V",
+      "wordCount": 869,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 20,
+      "title": "Bibliography",
+      "wordCount": 80,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 21,
+      "title": "Dr. Arnold",
+      "wordCount": 10335,
+      "estimatedMinutes": 41
+    },
+    {
+      "index": 22,
+      "title": "Bibliography",
+      "wordCount": 54,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 23,
+      "title": "The End of General Gordon",
+      "wordCount": 31680,
+      "estimatedMinutes": 127
+    },
+    {
+      "index": 24,
+      "title": "Bibliography",
+      "wordCount": 208,
+      "estimatedMinutes": 1
+    }
+  ]
+}

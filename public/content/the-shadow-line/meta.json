@@ -1,0 +1,70 @@
+{
+  "bookId": "the-shadow-line",
+  "title": "The Shadow Line",
+  "author": "Joseph Conrad",
+  "chapterCount": 10,
+  "totalWordCount": 40832,
+  "totalMinutes": 163,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Epigraph",
+      "wordCount": 5,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Dedication",
+      "wordCount": 20,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Author’s Note",
+      "wordCount": 1224,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 3,
+      "title": "Epigraph",
+      "wordCount": 10,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 4,
+      "title": "I",
+      "wordCount": 9086,
+      "estimatedMinutes": 36
+    },
+    {
+      "index": 5,
+      "title": "II",
+      "wordCount": 5579,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 6,
+      "title": "III",
+      "wordCount": 7263,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 7,
+      "title": "IV",
+      "wordCount": 4477,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 8,
+      "title": "V",
+      "wordCount": 6098,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 9,
+      "title": "VI",
+      "wordCount": 7070,
+      "estimatedMinutes": 28
+    }
+  ]
+}

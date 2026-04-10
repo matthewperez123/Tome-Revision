@@ -1,0 +1,94 @@
+{
+  "bookId": "mr-britling-sees-it-through",
+  "title": "Mr. Britling Sees It Through",
+  "author": "H. G. Wells",
+  "chapterCount": 14,
+  "totalWordCount": 140729,
+  "totalMinutes": 563,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Book I: Matching’s Easy at Ease",
+      "wordCount": 6,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I: Mr. Direck Visits Mr. Britling",
+      "wordCount": 9993,
+      "estimatedMinutes": 40
+    },
+    {
+      "index": 2,
+      "title": "II: Mr. Britling Continues His Exposition",
+      "wordCount": 12464,
+      "estimatedMinutes": 50
+    },
+    {
+      "index": 3,
+      "title": "III: The Entertainment of Mr. Direck Reaches a Climax",
+      "wordCount": 7540,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 4,
+      "title": "IV: Mr. Britling in Soliloquy",
+      "wordCount": 8733,
+      "estimatedMinutes": 35
+    },
+    {
+      "index": 5,
+      "title": "V: The Coming of the Day",
+      "wordCount": 19996,
+      "estimatedMinutes": 80
+    },
+    {
+      "index": 6,
+      "title": "Book II: Matching’s Easy at War",
+      "wordCount": 6,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 7,
+      "title": "I: Onlookers",
+      "wordCount": 13155,
+      "estimatedMinutes": 53
+    },
+    {
+      "index": 8,
+      "title": "II: Taking Part",
+      "wordCount": 13952,
+      "estimatedMinutes": 56
+    },
+    {
+      "index": 9,
+      "title": "III: Malignity",
+      "wordCount": 10160,
+      "estimatedMinutes": 41
+    },
+    {
+      "index": 10,
+      "title": "IV: In the Web of the Ineffective",
+      "wordCount": 25409,
+      "estimatedMinutes": 102
+    },
+    {
+      "index": 11,
+      "title": "Book III: The Testament of Matching’s Easy",
+      "wordCount": 7,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 12,
+      "title": "I: Mrs. Teddy Goes for a Walk",
+      "wordCount": 10967,
+      "estimatedMinutes": 44
+    },
+    {
+      "index": 13,
+      "title": "II: Mr. Britling Writes Until Sunrise",
+      "wordCount": 8341,
+      "estimatedMinutes": 33
+    }
+  ]
+}

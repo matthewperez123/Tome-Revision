@@ -1,0 +1,280 @@
+{
+  "bookId": "sanine",
+  "title": "Sanine",
+  "author": "Mikhail Artsybashev",
+  "chapterCount": 45,
+  "totalWordCount": 95694,
+  "totalMinutes": 383,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface",
+      "wordCount": 1448,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 1,
+      "title": "I",
+      "wordCount": 1443,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 2,
+      "title": "II",
+      "wordCount": 3908,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 3,
+      "title": "III",
+      "wordCount": 3247,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 4,
+      "title": "IV",
+      "wordCount": 3694,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 5,
+      "title": "V",
+      "wordCount": 2090,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 6,
+      "title": "VI",
+      "wordCount": 1351,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 7,
+      "title": "VII",
+      "wordCount": 1316,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 8,
+      "title": "VIII",
+      "wordCount": 2189,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 9,
+      "title": "IX",
+      "wordCount": 1035,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 10,
+      "title": "X",
+      "wordCount": 4392,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 11,
+      "title": "XI",
+      "wordCount": 1741,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 12,
+      "title": "XII",
+      "wordCount": 2753,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 13,
+      "title": "XIII",
+      "wordCount": 3118,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 14,
+      "title": "XIV",
+      "wordCount": 3012,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 15,
+      "title": "XV",
+      "wordCount": 2211,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 16,
+      "title": "XVI",
+      "wordCount": 3347,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 17,
+      "title": "XVII",
+      "wordCount": 2081,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 18,
+      "title": "XVIII",
+      "wordCount": 369,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 19,
+      "title": "XIX",
+      "wordCount": 3871,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 20,
+      "title": "XX",
+      "wordCount": 2090,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 21,
+      "title": "XXI",
+      "wordCount": 1325,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 22,
+      "title": "XXII",
+      "wordCount": 1209,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 23,
+      "title": "XXIII",
+      "wordCount": 1916,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 24,
+      "title": "XXIV",
+      "wordCount": 1802,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 25,
+      "title": "XXV",
+      "wordCount": 3653,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 26,
+      "title": "XXVI",
+      "wordCount": 799,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 27,
+      "title": "XXVII",
+      "wordCount": 1374,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 28,
+      "title": "XXVIII",
+      "wordCount": 3675,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 29,
+      "title": "XXIX",
+      "wordCount": 1586,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 30,
+      "title": "XXX",
+      "wordCount": 1845,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 31,
+      "title": "XXXI",
+      "wordCount": 3535,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 32,
+      "title": "XXXII",
+      "wordCount": 2585,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 33,
+      "title": "XXXIII",
+      "wordCount": 1630,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 34,
+      "title": "XXXIV",
+      "wordCount": 1657,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 35,
+      "title": "XXXV",
+      "wordCount": 2318,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 36,
+      "title": "XXXVI",
+      "wordCount": 2174,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 37,
+      "title": "XXXVII",
+      "wordCount": 823,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 38,
+      "title": "XXXVIII",
+      "wordCount": 3891,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 39,
+      "title": "XXXIX",
+      "wordCount": 540,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 40,
+      "title": "XL",
+      "wordCount": 1520,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 41,
+      "title": "XLI",
+      "wordCount": 1977,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 42,
+      "title": "XLII",
+      "wordCount": 1639,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 43,
+      "title": "XLIII",
+      "wordCount": 949,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 44,
+      "title": "XLIV",
+      "wordCount": 566,
+      "estimatedMinutes": 2
+    }
+  ]
+}

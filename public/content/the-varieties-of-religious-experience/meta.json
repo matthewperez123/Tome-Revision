@@ -1,0 +1,112 @@
+{
+  "bookId": "the-varieties-of-religious-experience",
+  "title": "The Varieties of Religious Experience",
+  "author": "William James",
+  "chapterCount": 17,
+  "totalWordCount": 154921,
+  "totalMinutes": 620,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 9,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Preface",
+      "wordCount": 414,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 2,
+      "title": "Lecture I: Religion and Neurology",
+      "wordCount": 7072,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 3,
+      "title": "Lecture II: Circumscription of the Topic",
+      "wordCount": 8477,
+      "estimatedMinutes": 34
+    },
+    {
+      "index": 4,
+      "title": "Lecture III: The Reality of the Unseen",
+      "wordCount": 8364,
+      "estimatedMinutes": 33
+    },
+    {
+      "index": 5,
+      "title": "Lectures IV and V: The Religion of Healthy-Mindedness",
+      "wordCount": 14853,
+      "estimatedMinutes": 59
+    },
+    {
+      "index": 6,
+      "title": "Lectures VI and VII: The Sick Soul",
+      "wordCount": 12128,
+      "estimatedMinutes": 49
+    },
+    {
+      "index": 7,
+      "title": "Lecture VIII: The Divided Self, and the Process of Its Unification",
+      "wordCount": 7125,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 8,
+      "title": "Lecture IX: Conversion",
+      "wordCount": 8480,
+      "estimatedMinutes": 34
+    },
+    {
+      "index": 9,
+      "title": "Lecture X: Conversion—Concluded",
+      "wordCount": 13189,
+      "estimatedMinutes": 53
+    },
+    {
+      "index": 10,
+      "title": "Lectures XI, XII and XIII: Saintliness",
+      "wordCount": 20990,
+      "estimatedMinutes": 84
+    },
+    {
+      "index": 11,
+      "title": "Lectures XIV and XV: The Value of Saintliness",
+      "wordCount": 14801,
+      "estimatedMinutes": 59
+    },
+    {
+      "index": 12,
+      "title": "Lectures XVI and XVII: Mysticism",
+      "wordCount": 13680,
+      "estimatedMinutes": 55
+    },
+    {
+      "index": 13,
+      "title": "Lecture XVIII: Philosophy",
+      "wordCount": 7912,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 14,
+      "title": "Lecture XIX: Other Characteristics",
+      "wordCount": 7761,
+      "estimatedMinutes": 31
+    },
+    {
+      "index": 15,
+      "title": "Lecture XX: Conclusions",
+      "wordCount": 7586,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 16,
+      "title": "Postscript",
+      "wordCount": 2080,
+      "estimatedMinutes": 8
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "bookId": "worlds-end",
+  "title": "World's End",
+  "author": "Richard Jefferies",
+  "chapterCount": 47,
+  "totalWordCount": 125577,
+  "totalMinutes": 502,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Book I: Facts",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I",
+      "wordCount": 2300,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 2,
+      "title": "II",
+      "wordCount": 3394,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 3,
+      "title": "III",
+      "wordCount": 2742,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 4,
+      "title": "IV",
+      "wordCount": 2660,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 5,
+      "title": "V",
+      "wordCount": 2521,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 6,
+      "title": "VI",
+      "wordCount": 1886,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 7,
+      "title": "VII",
+      "wordCount": 2237,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 8,
+      "title": "VIII",
+      "wordCount": 2291,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 9,
+      "title": "IX",
+      "wordCount": 2455,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 10,
+      "title": "X",
+      "wordCount": 2632,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 11,
+      "title": "XI",
+      "wordCount": 2413,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 12,
+      "title": "XII",
+      "wordCount": 2438,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 13,
+      "title": "XIII",
+      "wordCount": 2286,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 14,
+      "title": "XIV",
+      "wordCount": 2582,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 15,
+      "title": "XV",
+      "wordCount": 3000,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 16,
+      "title": "Book II: Persons",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 17,
+      "title": "I",
+      "wordCount": 2715,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 18,
+      "title": "II",
+      "wordCount": 2497,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 19,
+      "title": "III",
+      "wordCount": 2349,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 20,
+      "title": "IV",
+      "wordCount": 2531,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 21,
+      "title": "V",
+      "wordCount": 2521,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 22,
+      "title": "VI",
+      "wordCount": 3722,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 23,
+      "title": "VII",
+      "wordCount": 3080,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 24,
+      "title": "VIII",
+      "wordCount": 2956,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 25,
+      "title": "IX",
+      "wordCount": 2785,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 26,
+      "title": "X",
+      "wordCount": 3046,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 27,
+      "title": "XI",
+      "wordCount": 2459,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 28,
+      "title": "XII",
+      "wordCount": 2892,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 29,
+      "title": "XIII",
+      "wordCount": 2735,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 30,
+      "title": "XIV",
+      "wordCount": 3059,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 31,
+      "title": "XV",
+      "wordCount": 3501,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 32,
+      "title": "Book III: Results",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 33,
+      "title": "I",
+      "wordCount": 2561,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 34,
+      "title": "II",
+      "wordCount": 2758,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 35,
+      "title": "III",
+      "wordCount": 2478,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 36,
+      "title": "IV",
+      "wordCount": 3180,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 37,
+      "title": "V",
+      "wordCount": 3116,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 38,
+      "title": "VI",
+      "wordCount": 3087,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 39,
+      "title": "VII",
+      "wordCount": 3518,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 40,
+      "title": "VIII",
+      "wordCount": 3059,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 41,
+      "title": "IX",
+      "wordCount": 2710,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 42,
+      "title": "X",
+      "wordCount": 2613,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 43,
+      "title": "XI",
+      "wordCount": 4386,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 44,
+      "title": "XII",
+      "wordCount": 4061,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 45,
+      "title": "XIII",
+      "wordCount": 3947,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 46,
+      "title": "XIV",
+      "wordCount": 3409,
+      "estimatedMinutes": 14
+    }
+  ]
+}

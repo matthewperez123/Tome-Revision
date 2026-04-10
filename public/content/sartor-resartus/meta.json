@@ -1,0 +1,232 @@
+{
+  "bookId": "sartor-resartus",
+  "title": "Sartor Resartus",
+  "author": "Thomas Carlyle",
+  "chapterCount": 37,
+  "totalWordCount": 80401,
+  "totalMinutes": 322,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Book I",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I: Preliminary",
+      "wordCount": 1454,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 2,
+      "title": "II: Editorial Difficulties",
+      "wordCount": 1336,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 3,
+      "title": "III: Reminiscences",
+      "wordCount": 3763,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 4,
+      "title": "IV: Characteristics",
+      "wordCount": 1932,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 5,
+      "title": "V: The World in Clothes",
+      "wordCount": 1961,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 6,
+      "title": "VI: Aprons",
+      "wordCount": 752,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 7,
+      "title": "VII: Miscellaneous-Historical",
+      "wordCount": 1262,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 8,
+      "title": "VIII: The World Out of Clothes",
+      "wordCount": 1858,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 9,
+      "title": "IX: Adamitism",
+      "wordCount": 1492,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 10,
+      "title": "X: Pure Reason",
+      "wordCount": 1731,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 11,
+      "title": "XI: Prospective",
+      "wordCount": 2758,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 12,
+      "title": "Book II",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 13,
+      "title": "I: Genesis",
+      "wordCount": 2419,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 14,
+      "title": "II: Idyllic",
+      "wordCount": 2827,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 15,
+      "title": "III: Pedagogy",
+      "wordCount": 5142,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 16,
+      "title": "IV: Getting Under Way",
+      "wordCount": 3776,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 17,
+      "title": "V: Romance",
+      "wordCount": 4184,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 18,
+      "title": "VI: Sorrows of Teufelsdröckh",
+      "wordCount": 3112,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 19,
+      "title": "VII: The Everlasting No",
+      "wordCount": 2623,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 20,
+      "title": "VIII: Centre of Indifference",
+      "wordCount": 3609,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 21,
+      "title": "IX: The Everlasting Yea",
+      "wordCount": 3906,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 22,
+      "title": "X: Pause",
+      "wordCount": 2311,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 23,
+      "title": "Book III",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 24,
+      "title": "I: Incident in Modern History",
+      "wordCount": 1662,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 25,
+      "title": "II: Church-Clothes",
+      "wordCount": 962,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 26,
+      "title": "III: Symbols",
+      "wordCount": 2346,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 27,
+      "title": "IV: Helotage",
+      "wordCount": 1315,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 28,
+      "title": "V: The Phoenix",
+      "wordCount": 1821,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 29,
+      "title": "VI: Old Clothes",
+      "wordCount": 1442,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 30,
+      "title": "VII: Organic Filaments",
+      "wordCount": 2752,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 31,
+      "title": "VIII: Natural Supernaturalism",
+      "wordCount": 3524,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 32,
+      "title": "IX: Circumspective",
+      "wordCount": 1180,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 33,
+      "title": "X: The Dandiacal Body",
+      "wordCount": 4097,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 34,
+      "title": "XI: Tailors",
+      "wordCount": 1034,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 35,
+      "title": "XII: Farewell",
+      "wordCount": 1777,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 36,
+      "title": "Appendix",
+      "wordCount": 2275,
+      "estimatedMinutes": 9
+    }
+  ]
+}

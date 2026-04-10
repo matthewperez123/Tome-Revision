@@ -1,0 +1,892 @@
+{
+  "bookId": "the-kural",
+  "title": "The Kural",
+  "author": "Thiruvalluvar",
+  "chapterCount": 147,
+  "totalWordCount": 38631,
+  "totalMinutes": 155,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface",
+      "wordCount": 8449,
+      "estimatedMinutes": 34
+    },
+    {
+      "index": 1,
+      "title": "Introduction",
+      "wordCount": 1,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "I: In Praise of the Lord",
+      "wordCount": 246,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "II: In Praise of Rain",
+      "wordCount": 195,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 4,
+      "title": "III: The Greatness of Those Who Have Renounced the World",
+      "wordCount": 223,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 5,
+      "title": "IV: The Glorification of Righteousness",
+      "wordCount": 203,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 6,
+      "title": "Part I: Righteousness",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 7,
+      "title": "Section I: The Life of the Householder",
+      "wordCount": 7,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 8,
+      "title": "V: Family Life",
+      "wordCount": 210,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 9,
+      "title": "VI: The Blessings of a Good Helpmate",
+      "wordCount": 190,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 10,
+      "title": "VII: Offspring",
+      "wordCount": 220,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 11,
+      "title": "VIII: Love",
+      "wordCount": 198,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 12,
+      "title": "IX: Hospitality",
+      "wordCount": 230,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 13,
+      "title": "X: Kindness of Speech",
+      "wordCount": 188,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 14,
+      "title": "XI: Gratitude",
+      "wordCount": 187,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 15,
+      "title": "XII: Uprightness of Heart",
+      "wordCount": 194,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 16,
+      "title": "XIII: Self-Control",
+      "wordCount": 206,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 17,
+      "title": "XIV: Purity of Conduct",
+      "wordCount": 189,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 18,
+      "title": "XV: Non-Desiring of Another Man’s Wife",
+      "wordCount": 202,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 19,
+      "title": "XVI: Forgiveness",
+      "wordCount": 183,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 20,
+      "title": "XVII: Non-Envying",
+      "wordCount": 174,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 21,
+      "title": "XVIII: Non-Coveting",
+      "wordCount": 200,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 22,
+      "title": "XIX: Refraining from Slander",
+      "wordCount": 216,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 23,
+      "title": "XX: Refraining from Vain Speaking",
+      "wordCount": 175,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 24,
+      "title": "XXI: Fear of Evildoing",
+      "wordCount": 187,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 25,
+      "title": "XXII: Complaisance",
+      "wordCount": 198,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 26,
+      "title": "XXIII: Charity",
+      "wordCount": 198,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 27,
+      "title": "XXIV: Glory",
+      "wordCount": 196,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 28,
+      "title": "Section II: The Life of the Ascetic",
+      "wordCount": 7,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 29,
+      "title": "Subdivision A: Discipline",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 30,
+      "title": "XXV: Mercy",
+      "wordCount": 220,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 31,
+      "title": "XXVI: Abjuring of Flesh-Meat",
+      "wordCount": 204,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 32,
+      "title": "XXVII: Tapas",
+      "wordCount": 217,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 33,
+      "title": "XXVIII: Imposture",
+      "wordCount": 239,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 34,
+      "title": "XXIX: Abstaining from Fraud",
+      "wordCount": 211,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 35,
+      "title": "XXX: Truthfulness",
+      "wordCount": 204,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 36,
+      "title": "XXXI: Abstaining from Anger",
+      "wordCount": 237,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 37,
+      "title": "XXXII: Non-Injuring",
+      "wordCount": 225,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 38,
+      "title": "XXXIII: Non-Killing",
+      "wordCount": 209,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 39,
+      "title": "Subdivision B: Wisdom",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 40,
+      "title": "XXXIV: The Vanity of All Things",
+      "wordCount": 208,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 41,
+      "title": "XXXV: Renunciation",
+      "wordCount": 219,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 42,
+      "title": "XXXVI: Realisation of the Truth",
+      "wordCount": 218,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 43,
+      "title": "XXXVII: The Killing of Desire",
+      "wordCount": 203,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 44,
+      "title": "XXXVIII: Destiny",
+      "wordCount": 214,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 45,
+      "title": "Part II: Wealth",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 46,
+      "title": "Section I: The Prince",
+      "wordCount": 4,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 47,
+      "title": "XXXIX: The Qualifications of the Prince",
+      "wordCount": 227,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 48,
+      "title": "XL: Learning",
+      "wordCount": 213,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 49,
+      "title": "XLI: The Neglecting of Instruction",
+      "wordCount": 232,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 50,
+      "title": "XLII: Listening to the Instruction of the Wise",
+      "wordCount": 227,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 51,
+      "title": "XLIII: The Understanding",
+      "wordCount": 197,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 52,
+      "title": "XLIV: Eschewing of Faults",
+      "wordCount": 212,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 53,
+      "title": "XLV: Courting the Friendship of the Worthy",
+      "wordCount": 217,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 54,
+      "title": "XLVI: Keeping Aloof from Vulgar Company",
+      "wordCount": 200,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 55,
+      "title": "XLVII: Deliberation Before Action",
+      "wordCount": 247,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 56,
+      "title": "XLVIII: Judging of Strength",
+      "wordCount": 249,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 57,
+      "title": "XLIX: Judging the Opportune Moment",
+      "wordCount": 211,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 58,
+      "title": "L: Judging of Place",
+      "wordCount": 216,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 59,
+      "title": "LI: Testing of Men for Confidence",
+      "wordCount": 231,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 60,
+      "title": "LII: Testing and Employment of Men",
+      "wordCount": 245,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 61,
+      "title": "LIII: Cherishing of Kindred",
+      "wordCount": 215,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 62,
+      "title": "LIV: Guarding Against Insouciance",
+      "wordCount": 186,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 63,
+      "title": "LV: Just Government",
+      "wordCount": 239,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 64,
+      "title": "LVI: Tyranny",
+      "wordCount": 196,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 65,
+      "title": "LVII: Abstaining from Deeds That Cause Trepidation",
+      "wordCount": 237,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 66,
+      "title": "LVIII: Considerateness",
+      "wordCount": 210,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 67,
+      "title": "LIX: The Service of Intelligence",
+      "wordCount": 230,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 68,
+      "title": "LX: Energy",
+      "wordCount": 217,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 69,
+      "title": "LXI: Abstention from Sloth",
+      "wordCount": 214,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 70,
+      "title": "LXII: Manly Exertion",
+      "wordCount": 205,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 71,
+      "title": "LXIII: Intrepidity in the Face of Misfortune",
+      "wordCount": 238,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 72,
+      "title": "Section II: The Members of the Body Politic",
+      "wordCount": 8,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 73,
+      "title": "LXIV: The Councillor of State",
+      "wordCount": 257,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 74,
+      "title": "LXV: Eloquence",
+      "wordCount": 224,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 75,
+      "title": "LXVI: Purity of Action",
+      "wordCount": 239,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 76,
+      "title": "LXVII: Decision of Character",
+      "wordCount": 256,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 77,
+      "title": "LXVIII: The Conduct of Affairs",
+      "wordCount": 235,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 78,
+      "title": "LXIX: The Ambassador",
+      "wordCount": 224,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 79,
+      "title": "LXX: Comporting Oneself Before Princes",
+      "wordCount": 248,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 80,
+      "title": "LXXI: Judging by Looks",
+      "wordCount": 243,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 81,
+      "title": "LXXII: Judging of the Audience",
+      "wordCount": 200,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 82,
+      "title": "LXXIII: Self-Confidence Before an Audience",
+      "wordCount": 246,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 83,
+      "title": "LXXIV: The Country",
+      "wordCount": 258,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 84,
+      "title": "LXXV: Fortresses",
+      "wordCount": 226,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 85,
+      "title": "LXXVI: The Acquisition of Wealth",
+      "wordCount": 183,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 86,
+      "title": "LXXVII: The Characteristics of the Army",
+      "wordCount": 232,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 87,
+      "title": "LXXVIII: The Self-Abandon of the Warrior",
+      "wordCount": 268,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 88,
+      "title": "LXXIX: Friendship",
+      "wordCount": 245,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 89,
+      "title": "LXXX: Testing of Fitness for Friendship",
+      "wordCount": 258,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 90,
+      "title": "LXXXI: Intimacy",
+      "wordCount": 232,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 91,
+      "title": "LXXXII: The Friendship That Injureth",
+      "wordCount": 261,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 92,
+      "title": "LXXXIII: False Friendship",
+      "wordCount": 214,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 93,
+      "title": "LXXXIV: Folly",
+      "wordCount": 232,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 94,
+      "title": "LXXXV: Conceited Folly",
+      "wordCount": 227,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 95,
+      "title": "LXXXVI: The Defiant Spirit",
+      "wordCount": 222,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 96,
+      "title": "LXXXVII: The Characteristics of Enemies",
+      "wordCount": 258,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 97,
+      "title": "LXXXVIII: The Appraising of Enemies",
+      "wordCount": 221,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 98,
+      "title": "LXXXIX: The Traitor in the Camp",
+      "wordCount": 251,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 99,
+      "title": "XC: Refraining from Offending the Great Ones",
+      "wordCount": 252,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 100,
+      "title": "XCI: Submission to Wife Government",
+      "wordCount": 243,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 101,
+      "title": "XCII: Prostitutes",
+      "wordCount": 240,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 102,
+      "title": "XCIII: Abstaining from Drink",
+      "wordCount": 242,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 103,
+      "title": "XCIV: Gambling",
+      "wordCount": 240,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 104,
+      "title": "XCV: Medicine",
+      "wordCount": 222,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 105,
+      "title": "Section III: Miscellaneous",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 106,
+      "title": "XCVI: Respectability of Birth",
+      "wordCount": 221,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 107,
+      "title": "XCVII: Honour",
+      "wordCount": 255,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 108,
+      "title": "XCVIII: Greatness",
+      "wordCount": 191,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 109,
+      "title": "XCIX: Worth",
+      "wordCount": 237,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 110,
+      "title": "C: Courteousness",
+      "wordCount": 207,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 111,
+      "title": "CI: The Wealth That Is Not Put to Good Use",
+      "wordCount": 265,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 112,
+      "title": "CII: Sensitiveness to Shame",
+      "wordCount": 238,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 113,
+      "title": "CIII: Advancing the Family",
+      "wordCount": 243,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 114,
+      "title": "CIV: Husbandry",
+      "wordCount": 244,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 115,
+      "title": "CV: Indigence",
+      "wordCount": 210,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 116,
+      "title": "CVI: Begging",
+      "wordCount": 235,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 117,
+      "title": "CVII: The Dread of Beggary",
+      "wordCount": 243,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 118,
+      "title": "CVIII: The Degraded Life",
+      "wordCount": 218,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 119,
+      "title": "Part III: Love",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 120,
+      "title": "Section I: The Secret Marriage",
+      "wordCount": 5,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 121,
+      "title": "CIX: The Wound That Beauty Inflicteth",
+      "wordCount": 282,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 122,
+      "title": "CX: Reading of the Heart by Signs",
+      "wordCount": 229,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 123,
+      "title": "CXI: In Praise of the Union",
+      "wordCount": 239,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 124,
+      "title": "CXII: In Praise of Her Beauty",
+      "wordCount": 250,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 125,
+      "title": "CXIII: The Glorification of Love",
+      "wordCount": 249,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 126,
+      "title": "CXIV: Overpassing the Bounds of Decorum",
+      "wordCount": 244,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 127,
+      "title": "CXV: The Public Humour",
+      "wordCount": 260,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 128,
+      "title": "Section II: Chastity",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 129,
+      "title": "CXVI: The Pangs of Separation",
+      "wordCount": 255,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 130,
+      "title": "CXVII: Bewailing the Pangs of Separation and Pining Away",
+      "wordCount": 261,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 131,
+      "title": "CXVIII: The Wasting of the Eyes Through Wistful Longing",
+      "wordCount": 254,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 132,
+      "title": "CXIX: Bewailing the Pallor of Pining Love",
+      "wordCount": 225,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 133,
+      "title": "CXX: Anguish of Heart That the Husband Feeleth Not as Oneself",
+      "wordCount": 228,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 134,
+      "title": "CXXI: Sighing for the Absent One",
+      "wordCount": 243,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 135,
+      "title": "CXXII: In Praise of the Dream-State",
+      "wordCount": 236,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 136,
+      "title": "CXXIII: Sighing at the Approach of Evening",
+      "wordCount": 227,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 137,
+      "title": "CXXIV: The Wasting Away of Her Lovely Form",
+      "wordCount": 265,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 138,
+      "title": "CXXV: Addressing One’s Own Heart",
+      "wordCount": 254,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 139,
+      "title": "CXXVI: The Losing of the Sense of a Dignified Reserve",
+      "wordCount": 217,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 140,
+      "title": "CXXVII: The Longing of the Lovers to Meet",
+      "wordCount": 266,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 141,
+      "title": "CXXVIII: Reading the Secret Thought",
+      "wordCount": 278,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 142,
+      "title": "CXXIX: The Impatience of the Pair to Fly to Each Other’s Arms",
+      "wordCount": 273,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 143,
+      "title": "CXXX: Chiding the Heart",
+      "wordCount": 246,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 144,
+      "title": "CXXXI: Bouderie",
+      "wordCount": 241,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 145,
+      "title": "CXXXII: The Finesses of Bouderie",
+      "wordCount": 238,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 146,
+      "title": "CXXXIII: The Charm of Bouderie",
+      "wordCount": 216,
+      "estimatedMinutes": 1
+    }
+  ]
+}

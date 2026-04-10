@@ -1,0 +1,34 @@
+{
+  "bookId": "getting-married",
+  "title": "Getting Married",
+  "author": "George Bernard Shaw",
+  "chapterCount": 4,
+  "totalWordCount": 61301,
+  "totalMinutes": 245,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface to Getting Married",
+      "wordCount": 27848,
+      "estimatedMinutes": 111
+    },
+    {
+      "index": 1,
+      "title": "Preface",
+      "wordCount": 172,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Dramatis Personae",
+      "wordCount": 49,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "Getting Married",
+      "wordCount": 33232,
+      "estimatedMinutes": 133
+    }
+  ]
+}

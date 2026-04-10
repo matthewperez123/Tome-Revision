@@ -1,0 +1,58 @@
+{
+  "bookId": "the-black-mask",
+  "title": "The Black Mask",
+  "author": "E. W. Hornung",
+  "chapterCount": 8,
+  "totalWordCount": 54938,
+  "totalMinutes": 220,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "No Sinecure",
+      "wordCount": 7256,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 1,
+      "title": "A Jubilee Present",
+      "wordCount": 4948,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 2,
+      "title": "The Fate of Faustina",
+      "wordCount": 7083,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 3,
+      "title": "The Last Laugh",
+      "wordCount": 6540,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 4,
+      "title": "To Catch a Thief",
+      "wordCount": 8253,
+      "estimatedMinutes": 33
+    },
+    {
+      "index": 5,
+      "title": "An Old Flame",
+      "wordCount": 8584,
+      "estimatedMinutes": 34
+    },
+    {
+      "index": 6,
+      "title": "The Wrong House",
+      "wordCount": 4801,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 7,
+      "title": "The Knees of the Gods",
+      "wordCount": 7473,
+      "estimatedMinutes": 30
+    }
+  ]
+}

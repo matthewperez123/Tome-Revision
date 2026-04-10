@@ -1,0 +1,46 @@
+{
+  "bookId": "dark-princess",
+  "title": "Dark Princess",
+  "author": "W. E. B. Du Bois",
+  "chapterCount": 6,
+  "totalWordCount": 114733,
+  "totalMinutes": 459,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 40,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Part I: The Exile",
+      "wordCount": 11922,
+      "estimatedMinutes": 48
+    },
+    {
+      "index": 2,
+      "title": "Part II: The Pullman Porter",
+      "wordCount": 25002,
+      "estimatedMinutes": 100
+    },
+    {
+      "index": 3,
+      "title": "Part III: The Chicago Politician",
+      "wordCount": 40175,
+      "estimatedMinutes": 161
+    },
+    {
+      "index": 4,
+      "title": "Part IV: The Maharajah of Bwodpur",
+      "wordCount": 37475,
+      "estimatedMinutes": 150
+    },
+    {
+      "index": 5,
+      "title": "Envoy",
+      "wordCount": 119,
+      "estimatedMinutes": 1
+    }
+  ]
+}

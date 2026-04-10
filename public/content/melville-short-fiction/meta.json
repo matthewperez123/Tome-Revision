@@ -1,0 +1,118 @@
+{
+  "bookId": "melville-short-fiction",
+  "title": "Short Fiction",
+  "author": "Herman Melville",
+  "chapterCount": 18,
+  "totalWordCount": 169933,
+  "totalMinutes": 680,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Bartleby",
+      "wordCount": 14321,
+      "estimatedMinutes": 57
+    },
+    {
+      "index": 1,
+      "title": "Cock-a-Doodle-Doo!",
+      "wordCount": 8704,
+      "estimatedMinutes": 35
+    },
+    {
+      "index": 2,
+      "title": "The Encantadas",
+      "wordCount": 20141,
+      "estimatedMinutes": 81
+    },
+    {
+      "index": 3,
+      "title": "Poor Man’s Pudding and Rich Man’s Crumbs",
+      "wordCount": 5432,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 4,
+      "title": "The Happy Failure",
+      "wordCount": 2740,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 5,
+      "title": "The Lightning-Rod Man",
+      "wordCount": 2564,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 6,
+      "title": "The Fiddler",
+      "wordCount": 2266,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 7,
+      "title": "The Paradise of Bachelors and the Tartarus of Maids",
+      "wordCount": 8034,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 8,
+      "title": "The Bell-Tower",
+      "wordCount": 5480,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 9,
+      "title": "Benito Cereno",
+      "wordCount": 31424,
+      "estimatedMinutes": 126
+    },
+    {
+      "index": 10,
+      "title": "Jimmy Rose",
+      "wordCount": 4138,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 11,
+      "title": "The ’Gees",
+      "wordCount": 2480,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 12,
+      "title": "I and My Chimney",
+      "wordCount": 11336,
+      "estimatedMinutes": 45
+    },
+    {
+      "index": 13,
+      "title": "The Apple-Tree Table",
+      "wordCount": 8048,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 14,
+      "title": "The Piazza",
+      "wordCount": 5113,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 15,
+      "title": "Billy Budd, Foretopman",
+      "wordCount": 30429,
+      "estimatedMinutes": 122
+    },
+    {
+      "index": 16,
+      "title": "Daniel Orme",
+      "wordCount": 1827,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 17,
+      "title": "The Two Temples",
+      "wordCount": 5456,
+      "estimatedMinutes": 22
+    }
+  ]
+}

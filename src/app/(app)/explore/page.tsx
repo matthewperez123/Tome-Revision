@@ -23,6 +23,7 @@ import {
   getCountriesWithAuthors,
   COUNTRY_NAMES,
   CONTINENT_COUNTRIES,
+  AUTHOR_COUNTRIES,
   type AuthorCountryData,
 } from "@/data/author-countries"
 import { getCountryColor } from "@/lib/country-colors"
@@ -45,6 +46,9 @@ const NUMERIC_TO_ISO3: Record<string, string> = {
   // Additional common countries for geographic context
   "032": "ARG", "036": "AUS", "076": "BRA", "818": "EGY", "404": "KEN",
   "484": "MEX", "566": "NGA", "710": "ZAF", "792": "TUR", "804": "UKR",
+  // Countries with authors in our catalog
+  "012": "DZA", "388": "JAM", "608": "PHL", "554": "NZL", "620": "PRT",
+  "170": "COL", "152": "CHL", "604": "PER", "686": "SEN", "288": "GHA",
 }
 
 const NAME_TO_ISO3: Record<string, string> = {
@@ -54,7 +58,12 @@ const NAME_TO_ISO3: Record<string, string> = {
   "Hungary": "HUN", "Spain": "ESP", "Norway": "NOR", "Sweden": "SWE",
   "Finland": "FIN", "Switzerland": "CHE", "Poland": "POL", "India": "IND",
   "China": "CHN", "Japan": "JPN", "Iran": "IRN", "Lebanon": "LBN",
-  "Canada": "CAN",
+  "Canada": "CAN", "Algeria": "DZA", "Jamaica": "JAM", "Philippines": "PHL", "Portugal": "PRT",
+  "Australia": "AUS", "New Zealand": "NZL", "Nigeria": "NGA",
+  "South Africa": "ZAF", "Kenya": "KEN", "Ghana": "GHA", "Senegal": "SEN",
+  "Colombia": "COL", "Chile": "CHL", "Peru": "PER",
+  "Brazil": "BRA", "Argentina": "ARG", "Mexico": "MEX",
+  "Egypt": "EGY", "Turkey": "TUR",
 }
 
 function resolveISO3(geo: { id?: string; properties: Record<string, unknown> }): string {
@@ -83,7 +92,7 @@ function resolveISO3(geo: { id?: string; properties: Record<string, unknown> }):
 
 // ── Projection configs per view ──────────────────────────────────────────────
 
-type ViewKey = "world" | "europe" | "asia" | "northAmerica"
+type ViewKey = "world" | "europe" | "asia" | "northAmerica" | "africa" | "oceania" | "southAmerica"
 
 interface ProjectionView {
   center: [number, number]
@@ -96,6 +105,9 @@ const VIEWS: Record<ViewKey, ProjectionView> = {
   europe:       { center: [15, 54],   scale: 700, label: "Europe" },
   asia:         { center: [95, 35],   scale: 380, label: "Asia" },
   northAmerica: { center: [-100, 45], scale: 420, label: "North America" },
+  africa:       { center: [20, 5],    scale: 380, label: "Africa" },
+  oceania:      { center: [135, -28], scale: 500, label: "Oceania" },
+  southAmerica: { center: [-60, -15], scale: 350, label: "South America" },
 }
 
 // Map continent labels to ViewKey + approximate screen position (% of map)
@@ -103,12 +115,18 @@ const CONTINENT_BUTTONS: { continent: string; viewKey: ViewKey; top: string; lef
   { continent: "Europe",        viewKey: "europe",       top: "28%", left: "52%" },
   { continent: "Asia",          viewKey: "asia",         top: "32%", left: "72%" },
   { continent: "North America", viewKey: "northAmerica", top: "30%", left: "22%" },
+  { continent: "South America", viewKey: "southAmerica", top: "58%", left: "32%" },
+  { continent: "Africa",        viewKey: "africa",       top: "52%", left: "52%" },
+  { continent: "Oceania",       viewKey: "oceania",      top: "65%", left: "82%" },
 ]
 
 const CONTINENT_TO_VIEW: Record<string, ViewKey> = {
   Europe: "europe",
   Asia: "asia",
   "North America": "northAmerica",
+  "South America": "southAmerica",
+  Africa: "africa",
+  Oceania: "oceania",
 }
 
 // ── Sort options ─────────────────────────────────────────────────────────────
@@ -326,6 +344,10 @@ export default function ExplorePage() {
               {countriesWithAuthors.size} countries
             </span>
             <span className="flex items-center gap-1">
+              <Users className="size-3" />
+              {Object.keys(AUTHOR_COUNTRIES).length} authors
+            </span>
+            <span className="flex items-center gap-1">
               <BookOpen className="size-3" />
               {BOOKS.length} books
             </span>
@@ -509,35 +531,6 @@ export default function ExplorePage() {
           )}
         </AnimatePresence>
 
-        {/* ── Legend ─────────────────────────────────────────────────────── */}
-        <div className="absolute bottom-4 right-4 z-10">
-          <div className="bg-white/80 dark:bg-stone-900/80 backdrop-blur-sm rounded-lg px-3 py-2 border border-border text-[10px] text-muted-foreground space-y-1">
-            <div className="flex items-center gap-2">
-              <span
-                className="w-3 h-3 rounded-sm shrink-0"
-                style={{ backgroundColor: getCountryColor("GBR", mode) ?? goldAccent }}
-              />
-              <span>Has authors</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span
-                className="w-3 h-3 rounded-sm shrink-0 border-2"
-                style={{
-                  backgroundColor: getCountryColor("FRA", mode) ?? goldAccent,
-                  borderColor: goldAccent,
-                }}
-              />
-              <span>Selected</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span
-                className="w-3 h-3 rounded-sm shrink-0"
-                style={{ backgroundColor: inactiveColor }}
-              />
-              <span>No authors yet</span>
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* ── Backdrop scrim ────────────────────────────────────────────────── */}

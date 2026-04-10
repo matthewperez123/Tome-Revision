@@ -1,0 +1,166 @@
+{
+  "bookId": "jeeves-stories",
+  "title": "Jeeves Stories",
+  "author": "P. G. Wodehouse",
+  "chapterCount": 26,
+  "totalWordCount": 169770,
+  "totalMinutes": 679,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Editor’s Preface",
+      "wordCount": 313,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Extricating Young Gussie",
+      "wordCount": 7242,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 2,
+      "title": "Leave It to Jeeves",
+      "wordCount": 6753,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 3,
+      "title": "The Aunt and the Sluggard",
+      "wordCount": 9184,
+      "estimatedMinutes": 37
+    },
+    {
+      "index": 4,
+      "title": "Jeeves Takes Charge",
+      "wordCount": 7696,
+      "estimatedMinutes": 31
+    },
+    {
+      "index": 5,
+      "title": "Jeeves and the Unbidden Guest",
+      "wordCount": 6962,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 6,
+      "title": "Jeeves and the Hard-Boiled Egg",
+      "wordCount": 6647,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 7,
+      "title": "Jeeves in the Springtime",
+      "wordCount": 5754,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 8,
+      "title": "Aunt Agatha Makes a Bloomer",
+      "wordCount": 6410,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 9,
+      "title": "Scoring Off Jeeves",
+      "wordCount": 5112,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 10,
+      "title": "Sir Roderick Comes to Lunch",
+      "wordCount": 4992,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 11,
+      "title": "Jeeves and the Chump Cyril",
+      "wordCount": 7026,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 12,
+      "title": "Comrade Bingo",
+      "wordCount": 6428,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 13,
+      "title": "The Great Sermon Handicap",
+      "wordCount": 5955,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 14,
+      "title": "The Purity of the Turf",
+      "wordCount": 5997,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 15,
+      "title": "The Metropolitan Touch",
+      "wordCount": 7345,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 16,
+      "title": "The Delayed Exit of Claude and Eustace",
+      "wordCount": 6529,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 17,
+      "title": "Bingo and the Little Woman",
+      "wordCount": 6336,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 18,
+      "title": "The Rummy Affair of Old Biffy",
+      "wordCount": 8437,
+      "estimatedMinutes": 34
+    },
+    {
+      "index": 19,
+      "title": "Without the Option",
+      "wordCount": 8307,
+      "estimatedMinutes": 33
+    },
+    {
+      "index": 20,
+      "title": "Fixing It for Freddie",
+      "wordCount": 6679,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 21,
+      "title": "Clustering Round Young Bingo",
+      "wordCount": 8563,
+      "estimatedMinutes": 34
+    },
+    {
+      "index": 22,
+      "title": "Bertie Changes His Mind",
+      "wordCount": 5356,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 23,
+      "title": "The Inferiority Complex of Old Sippy",
+      "wordCount": 6010,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 24,
+      "title": "Jeeves and the Impending Doom",
+      "wordCount": 7026,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 25,
+      "title": "Jeeves and the Yuletide Spirit",
+      "wordCount": 6711,
+      "estimatedMinutes": 27
+    }
+  ]
+}

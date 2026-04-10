@@ -1,0 +1,142 @@
+{
+  "bookId": "the-octopus",
+  "title": "The Octopus",
+  "author": "Frank Norris",
+  "chapterCount": 22,
+  "totalWordCount": 196171,
+  "totalMinutes": 785,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 4,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Preface",
+      "wordCount": 170,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Principal Characters in the Novel",
+      "wordCount": 143,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "Frontispiece",
+      "wordCount": 9,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 4,
+      "title": "Book I",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 5,
+      "title": "I",
+      "wordCount": 15159,
+      "estimatedMinutes": 61
+    },
+    {
+      "index": 6,
+      "title": "II",
+      "wordCount": 13107,
+      "estimatedMinutes": 52
+    },
+    {
+      "index": 7,
+      "title": "III",
+      "wordCount": 8946,
+      "estimatedMinutes": 36
+    },
+    {
+      "index": 8,
+      "title": "IV",
+      "wordCount": 10783,
+      "estimatedMinutes": 43
+    },
+    {
+      "index": 9,
+      "title": "V",
+      "wordCount": 16020,
+      "estimatedMinutes": 64
+    },
+    {
+      "index": 10,
+      "title": "VI",
+      "wordCount": 21583,
+      "estimatedMinutes": 86
+    },
+    {
+      "index": 11,
+      "title": "Book II",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 12,
+      "title": "I",
+      "wordCount": 11475,
+      "estimatedMinutes": 46
+    },
+    {
+      "index": 13,
+      "title": "II",
+      "wordCount": 14188,
+      "estimatedMinutes": 57
+    },
+    {
+      "index": 14,
+      "title": "III",
+      "wordCount": 7517,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 15,
+      "title": "IV",
+      "wordCount": 16576,
+      "estimatedMinutes": 66
+    },
+    {
+      "index": 16,
+      "title": "V",
+      "wordCount": 11561,
+      "estimatedMinutes": 46
+    },
+    {
+      "index": 17,
+      "title": "VI",
+      "wordCount": 10031,
+      "estimatedMinutes": 40
+    },
+    {
+      "index": 18,
+      "title": "VII",
+      "wordCount": 11561,
+      "estimatedMinutes": 46
+    },
+    {
+      "index": 19,
+      "title": "VIII",
+      "wordCount": 15806,
+      "estimatedMinutes": 63
+    },
+    {
+      "index": 20,
+      "title": "IX",
+      "wordCount": 9978,
+      "estimatedMinutes": 40
+    },
+    {
+      "index": 21,
+      "title": "Conclusion",
+      "wordCount": 1550,
+      "estimatedMinutes": 6
+    }
+  ]
+}

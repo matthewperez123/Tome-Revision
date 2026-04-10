@@ -1,0 +1,208 @@
+{
+  "bookId": "swallows-and-amazons",
+  "title": "Swallows and Amazons",
+  "author": "Arthur Ransome",
+  "chapterCount": 33,
+  "totalWordCount": 99423,
+  "totalMinutes": 398,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 15,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Frontispiece",
+      "wordCount": 0,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "I: The Peak in Darien",
+      "wordCount": 2718,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 3,
+      "title": "II: Making Ready",
+      "wordCount": 2982,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 4,
+      "title": "III: The Voyage to the Island",
+      "wordCount": 3427,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 5,
+      "title": "IV: The Hidden Harbour",
+      "wordCount": 3132,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 6,
+      "title": "V: First Night on the Island",
+      "wordCount": 2901,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 7,
+      "title": "VI: Island Life",
+      "wordCount": 3738,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 8,
+      "title": "VII: More Island Life",
+      "wordCount": 2453,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 9,
+      "title": "VIII: Skull and Crossbones",
+      "wordCount": 3699,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 10,
+      "title": "IX: The Arrow with the Green Feather",
+      "wordCount": 2185,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 11,
+      "title": "X: The Parley",
+      "wordCount": 2663,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 12,
+      "title": "XI: In Alliance",
+      "wordCount": 3488,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 13,
+      "title": "XII: Leading Lights",
+      "wordCount": 1717,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 14,
+      "title": "XIII: The Charcoal-Burners",
+      "wordCount": 4039,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 15,
+      "title": "XIV: The Letter from Captain Flint",
+      "wordCount": 2873,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 16,
+      "title": "XV: Captain John Visits Captain Flint",
+      "wordCount": 2674,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 17,
+      "title": "XVI: The Birthday Party",
+      "wordCount": 3000,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 18,
+      "title": "XVII: A Fair Wind",
+      "wordCount": 3060,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 19,
+      "title": "XVIII: Robinson Crusoe and Man Friday",
+      "wordCount": 3215,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 20,
+      "title": "XIX: The Amazon River",
+      "wordCount": 2545,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 21,
+      "title": "XX: Titty Alone",
+      "wordCount": 3835,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 22,
+      "title": "XXI: Swallows in the Dark",
+      "wordCount": 4010,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 23,
+      "title": "XXII: The White Flag",
+      "wordCount": 3235,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 24,
+      "title": "XXIII: Taking Breath",
+      "wordCount": 4160,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 25,
+      "title": "XXIV: Grave News from Houseboat Bay",
+      "wordCount": 3411,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 26,
+      "title": "XXV: Captain Flint Gets the Black Spot",
+      "wordCount": 1047,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 27,
+      "title": "XXVI: He Makes Peace and Declares War",
+      "wordCount": 4170,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 28,
+      "title": "XXVII: The Battle in Houseboat Bay",
+      "wordCount": 4482,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 29,
+      "title": "XXVIII: The Treasure on Cormorant Island",
+      "wordCount": 2975,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 30,
+      "title": "XXIX: Two Sorts of Fish",
+      "wordCount": 4114,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 31,
+      "title": "XXX: The Storm",
+      "wordCount": 3276,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 32,
+      "title": "XXXI: The Sailors’ Return",
+      "wordCount": 4184,
+      "estimatedMinutes": 17
+    }
+  ]
+}

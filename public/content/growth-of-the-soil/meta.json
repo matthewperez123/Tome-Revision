@@ -1,0 +1,208 @@
+{
+  "bookId": "growth-of-the-soil",
+  "title": "Growth of the Soil",
+  "author": "Knut Hamsun",
+  "chapterCount": 33,
+  "totalWordCount": 137802,
+  "totalMinutes": 551,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Book I",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I",
+      "wordCount": 3017,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 2,
+      "title": "II",
+      "wordCount": 2763,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 3,
+      "title": "III",
+      "wordCount": 3346,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 4,
+      "title": "IV",
+      "wordCount": 4057,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 5,
+      "title": "V",
+      "wordCount": 3149,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 6,
+      "title": "VI",
+      "wordCount": 4643,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 7,
+      "title": "VII",
+      "wordCount": 3793,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 8,
+      "title": "VIII",
+      "wordCount": 3529,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 9,
+      "title": "IX",
+      "wordCount": 3841,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 10,
+      "title": "X",
+      "wordCount": 3682,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 11,
+      "title": "XI",
+      "wordCount": 2735,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 12,
+      "title": "XII",
+      "wordCount": 3868,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 13,
+      "title": "XIII",
+      "wordCount": 3625,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 14,
+      "title": "XIV",
+      "wordCount": 4942,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 15,
+      "title": "XV",
+      "wordCount": 4564,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 16,
+      "title": "XVI",
+      "wordCount": 4759,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 17,
+      "title": "XVII",
+      "wordCount": 4874,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 18,
+      "title": "XVIII",
+      "wordCount": 5035,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 19,
+      "title": "XIX",
+      "wordCount": 4693,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 20,
+      "title": "Book II",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 21,
+      "title": "I",
+      "wordCount": 4821,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 22,
+      "title": "II",
+      "wordCount": 4904,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 23,
+      "title": "III",
+      "wordCount": 5555,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 24,
+      "title": "IV",
+      "wordCount": 6314,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 25,
+      "title": "V",
+      "wordCount": 5216,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 26,
+      "title": "VI",
+      "wordCount": 5360,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 27,
+      "title": "VII",
+      "wordCount": 6439,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 28,
+      "title": "VIII",
+      "wordCount": 4147,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 29,
+      "title": "IX",
+      "wordCount": 5192,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 30,
+      "title": "X",
+      "wordCount": 5038,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 31,
+      "title": "XI",
+      "wordCount": 5381,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 32,
+      "title": "XII",
+      "wordCount": 4516,
+      "estimatedMinutes": 18
+    }
+  ]
+}

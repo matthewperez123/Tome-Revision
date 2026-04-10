@@ -1,0 +1,70 @@
+{
+  "bookId": "a-high-wind-in-jamaica",
+  "title": "A High Wind in Jamaica",
+  "author": "Richard Hughes",
+  "chapterCount": 10,
+  "totalWordCount": 60099,
+  "totalMinutes": 240,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I",
+      "wordCount": 8727,
+      "estimatedMinutes": 35
+    },
+    {
+      "index": 1,
+      "title": "II",
+      "wordCount": 4832,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 2,
+      "title": "III",
+      "wordCount": 5641,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 3,
+      "title": "IV",
+      "wordCount": 5503,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 4,
+      "title": "V",
+      "wordCount": 3636,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 5,
+      "title": "VI",
+      "wordCount": 2949,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 6,
+      "title": "VII",
+      "wordCount": 6871,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 7,
+      "title": "VIII",
+      "wordCount": 6512,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 8,
+      "title": "IX",
+      "wordCount": 7114,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 9,
+      "title": "X",
+      "wordCount": 8314,
+      "estimatedMinutes": 33
+    }
+  ]
+}

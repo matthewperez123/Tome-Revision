@@ -1,0 +1,166 @@
+{
+  "bookId": "cakes-and-ale",
+  "title": "Cakes and Ale",
+  "author": "W. Somerset Maugham",
+  "chapterCount": 26,
+  "totalWordCount": 69708,
+  "totalMinutes": 279,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I",
+      "wordCount": 4907,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 1,
+      "title": "II",
+      "wordCount": 4231,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 2,
+      "title": "III",
+      "wordCount": 2502,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 3,
+      "title": "IV",
+      "wordCount": 3917,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 4,
+      "title": "V",
+      "wordCount": 4520,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 5,
+      "title": "VI",
+      "wordCount": 416,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 6,
+      "title": "VII",
+      "wordCount": 2954,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 7,
+      "title": "VIII",
+      "wordCount": 3714,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 8,
+      "title": "IX",
+      "wordCount": 937,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 9,
+      "title": "X",
+      "wordCount": 1981,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 10,
+      "title": "XI",
+      "wordCount": 7485,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 11,
+      "title": "XII",
+      "wordCount": 2192,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 12,
+      "title": "XIII",
+      "wordCount": 1265,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 13,
+      "title": "XIV",
+      "wordCount": 5689,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 14,
+      "title": "XV",
+      "wordCount": 1629,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 15,
+      "title": "XVI",
+      "wordCount": 1842,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 16,
+      "title": "XVII",
+      "wordCount": 2638,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 17,
+      "title": "XVIII",
+      "wordCount": 868,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 18,
+      "title": "XIX",
+      "wordCount": 2619,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 19,
+      "title": "XX",
+      "wordCount": 957,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 20,
+      "title": "XXI",
+      "wordCount": 126,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 21,
+      "title": "XXII",
+      "wordCount": 1281,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 22,
+      "title": "XXIII",
+      "wordCount": 1496,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 23,
+      "title": "XXIV",
+      "wordCount": 2900,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 24,
+      "title": "XXV",
+      "wordCount": 1668,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 25,
+      "title": "XXVI",
+      "wordCount": 4974,
+      "estimatedMinutes": 20
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "bookId": "master-flea",
+  "title": "Master Flea",
+  "author": "E. T. A. Hoffmann",
+  "chapterCount": 7,
+  "totalWordCount": 46163,
+  "totalMinutes": 185,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I: First Adventure",
+      "wordCount": 8088,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 1,
+      "title": "II: Second Adventure",
+      "wordCount": 6597,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 2,
+      "title": "III: Third Adventure",
+      "wordCount": 7261,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 3,
+      "title": "IV: Fourth Adventure",
+      "wordCount": 4639,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 4,
+      "title": "V: Fifth Adventure",
+      "wordCount": 4406,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 5,
+      "title": "VI: Sixth Adventure",
+      "wordCount": 6660,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 6,
+      "title": "VII: Seventh Adventure",
+      "wordCount": 8512,
+      "estimatedMinutes": 34
+    }
+  ]
+}

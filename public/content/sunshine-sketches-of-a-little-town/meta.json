@@ -1,0 +1,88 @@
+{
+  "bookId": "sunshine-sketches-of-a-little-town",
+  "title": "Sunshine Sketches of a Little Town",
+  "author": "Stephen Leacock",
+  "chapterCount": 13,
+  "totalWordCount": 60144,
+  "totalMinutes": 241,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface",
+      "wordCount": 1507,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 1,
+      "title": "I: The Hostelry of Mr. Smith",
+      "wordCount": 8151,
+      "estimatedMinutes": 33
+    },
+    {
+      "index": 2,
+      "title": "II: The Speculations of Jefferson Thorpe",
+      "wordCount": 5737,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 3,
+      "title": "III: The Marine Excursions of the Knights of Pythias",
+      "wordCount": 7130,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 4,
+      "title": "IV: The Ministrations of the Rev. Mr. Drone",
+      "wordCount": 5763,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 5,
+      "title": "V: The Whirlwind Campaign in Mariposa",
+      "wordCount": 2856,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 6,
+      "title": "VI: The Beacon on the Hill",
+      "wordCount": 3628,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 7,
+      "title": "VII: The Extraordinary Entanglement of Mr. Pupkin",
+      "wordCount": 3961,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 8,
+      "title": "VIII: The Foreordained Attachment of Zena Pepperleigh and Peter Pupkin",
+      "wordCount": 4570,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 9,
+      "title": "IX: The Mariposa Bank Mystery",
+      "wordCount": 5725,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 10,
+      "title": "X: The Great Election in Missinaba County",
+      "wordCount": 3939,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 11,
+      "title": "XI: The Candidacy of Mr. Smith",
+      "wordCount": 4986,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 12,
+      "title": "XII: L’Envoi. The Train to Mariposa",
+      "wordCount": 2191,
+      "estimatedMinutes": 9
+    }
+  ]
+}

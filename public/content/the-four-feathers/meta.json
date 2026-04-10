@@ -1,0 +1,226 @@
+{
+  "bookId": "the-four-feathers",
+  "title": "The Four Feathers",
+  "author": "A. E. W. Mason",
+  "chapterCount": 36,
+  "totalWordCount": 106985,
+  "totalMinutes": 428,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 9,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Acknowledgments",
+      "wordCount": 25,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "I: A Crimean Night",
+      "wordCount": 3968,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 3,
+      "title": "II: Captain Trench and a Telegram",
+      "wordCount": 2600,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 4,
+      "title": "III: The Last Ride Together",
+      "wordCount": 2327,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 5,
+      "title": "IV: The Ball at Lennon House",
+      "wordCount": 4634,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 6,
+      "title": "V: The Pariah",
+      "wordCount": 1681,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 7,
+      "title": "VI: Harry Feversham’s Plan",
+      "wordCount": 3819,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 8,
+      "title": "VII: The Last Reconnaissance",
+      "wordCount": 2703,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 9,
+      "title": "VIII: Lieutenant Sutch Is Tempted to Lie",
+      "wordCount": 2262,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 10,
+      "title": "IX: At Glenalla",
+      "wordCount": 3533,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 11,
+      "title": "X: The Wells of Obak",
+      "wordCount": 1984,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 12,
+      "title": "XI: Durrance Hears News of Feversham",
+      "wordCount": 2480,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 13,
+      "title": "XII: Durrance Sharpens His Wits",
+      "wordCount": 5454,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 14,
+      "title": "XIII: Durrance Begins to See",
+      "wordCount": 3126,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 15,
+      "title": "XIV: Captain Willoughby Reappears",
+      "wordCount": 3300,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 16,
+      "title": "XV: The Story of the First Feather",
+      "wordCount": 4326,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 17,
+      "title": "XVI: Captain Willoughby Retires",
+      "wordCount": 3369,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 18,
+      "title": "XVII: The “Melusine Overture”",
+      "wordCount": 2181,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 19,
+      "title": "XVIII: The Answer to the Overture",
+      "wordCount": 3942,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 20,
+      "title": "XIX: Mrs. Adair Intervenes",
+      "wordCount": 3464,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 21,
+      "title": "XX: East and West",
+      "wordCount": 2564,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 22,
+      "title": "XXI: Ethne Makes Another Slip",
+      "wordCount": 3155,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 23,
+      "title": "XXII: Durrance Lets His Cigar Go Out",
+      "wordCount": 2894,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 24,
+      "title": "XXIII: Mrs. Adair Makes Her Apology",
+      "wordCount": 2715,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 25,
+      "title": "XXIV: On the Nile",
+      "wordCount": 1888,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 26,
+      "title": "XXV: Lieutenant Sutch Comes Off the Half-Pay List",
+      "wordCount": 5217,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 27,
+      "title": "XXVI: General Feversham’s Portraits Are Appeased",
+      "wordCount": 2323,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 28,
+      "title": "XXVII: The House of Stone",
+      "wordCount": 5021,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 29,
+      "title": "XXVIII: Plans of Escape",
+      "wordCount": 3844,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 30,
+      "title": "XXIX: Colonel Trench Assumes a Knowledge of Chemistry",
+      "wordCount": 4263,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 31,
+      "title": "XXX: The Last of the Southern Cross",
+      "wordCount": 3210,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 32,
+      "title": "XXXI: Feversham Returns to Ramelton",
+      "wordCount": 2236,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 33,
+      "title": "XXXII: In the Church at Glenalla",
+      "wordCount": 2966,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 34,
+      "title": "XXXIII: Ethne Again Plays the “Melusine Overture”",
+      "wordCount": 2372,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 35,
+      "title": "XXXIV: The End",
+      "wordCount": 1130,
+      "estimatedMinutes": 5
+    }
+  ]
+}

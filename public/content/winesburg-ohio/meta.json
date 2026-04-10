@@ -1,0 +1,166 @@
+{
+  "bookId": "winesburg-ohio",
+  "title": "Winesburg, Ohio",
+  "author": "Sherwood Anderson",
+  "chapterCount": 26,
+  "totalWordCount": 73994,
+  "totalMinutes": 296,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Introduction",
+      "wordCount": 3182,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 1,
+      "title": "Dedication",
+      "wordCount": 35,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "The Book of the Grotesque",
+      "wordCount": 1170,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 3,
+      "title": "Hands",
+      "wordCount": 2354,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 4,
+      "title": "Paper Pills",
+      "wordCount": 1264,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 5,
+      "title": "Mother",
+      "wordCount": 3249,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 6,
+      "title": "The Philosopher",
+      "wordCount": 2629,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 7,
+      "title": "Nobody Knows",
+      "wordCount": 1232,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 8,
+      "title": "Godliness",
+      "wordCount": 7878,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 9,
+      "title": "Surrender",
+      "wordCount": 3275,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 10,
+      "title": "Terror",
+      "wordCount": 1990,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 11,
+      "title": "A Man of Ideas",
+      "wordCount": 2861,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 12,
+      "title": "Adventure",
+      "wordCount": 2824,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 13,
+      "title": "Respectability",
+      "wordCount": 2251,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 14,
+      "title": "The Thinker",
+      "wordCount": 4932,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 15,
+      "title": "Tandy",
+      "wordCount": 1159,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 16,
+      "title": "The Strength of God",
+      "wordCount": 3201,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 17,
+      "title": "The Teacher",
+      "wordCount": 3083,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 18,
+      "title": "Loneliness",
+      "wordCount": 3786,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 19,
+      "title": "An Awakening",
+      "wordCount": 3490,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 20,
+      "title": "“Queer”",
+      "wordCount": 3815,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 21,
+      "title": "The Untold Lie",
+      "wordCount": 2374,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 22,
+      "title": "Drink",
+      "wordCount": 3314,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 23,
+      "title": "Death",
+      "wordCount": 4206,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 24,
+      "title": "Sophistication",
+      "wordCount": 3340,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 25,
+      "title": "Departure",
+      "wordCount": 1100,
+      "estimatedMinutes": 4
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "bookId": "tartuffe",
+  "title": "Tartuffe",
+  "author": "Molière",
+  "chapterCount": 7,
+  "totalWordCount": 19549,
+  "totalMinutes": 78,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Introductory Note",
+      "wordCount": 1818,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 1,
+      "title": "Dramatis Personae",
+      "wordCount": 58,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Act I",
+      "wordCount": 3663,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 3,
+      "title": "Act II",
+      "wordCount": 3895,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 4,
+      "title": "Act III",
+      "wordCount": 3236,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 5,
+      "title": "Act IV",
+      "wordCount": 3424,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 6,
+      "title": "Act V",
+      "wordCount": 3455,
+      "estimatedMinutes": 14
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "bookId": "the-lives-and-opinions-of-eminent-philosophers",
+  "title": "The Lives and Opinions of Eminent Philosophers",
+  "author": "Diogenes Laërtius",
+  "chapterCount": 11,
+  "totalWordCount": 179978,
+  "totalMinutes": 720,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface",
+      "wordCount": 426,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 1,
+      "title": "Book I",
+      "wordCount": 18832,
+      "estimatedMinutes": 75
+    },
+    {
+      "index": 2,
+      "title": "Book II",
+      "wordCount": 21481,
+      "estimatedMinutes": 86
+    },
+    {
+      "index": 3,
+      "title": "Book III",
+      "wordCount": 15245,
+      "estimatedMinutes": 61
+    },
+    {
+      "index": 4,
+      "title": "Book IV",
+      "wordCount": 10144,
+      "estimatedMinutes": 41
+    },
+    {
+      "index": 5,
+      "title": "Book V",
+      "wordCount": 13750,
+      "estimatedMinutes": 55
+    },
+    {
+      "index": 6,
+      "title": "Book VI",
+      "wordCount": 16321,
+      "estimatedMinutes": 65
+    },
+    {
+      "index": 7,
+      "title": "Book VII",
+      "wordCount": 30661,
+      "estimatedMinutes": 123
+    },
+    {
+      "index": 8,
+      "title": "Book VIII",
+      "wordCount": 13026,
+      "estimatedMinutes": 52
+    },
+    {
+      "index": 9,
+      "title": "Book IX",
+      "wordCount": 17687,
+      "estimatedMinutes": 71
+    },
+    {
+      "index": 10,
+      "title": "Book X",
+      "wordCount": 22405,
+      "estimatedMinutes": 90
+    }
+  ]
+}

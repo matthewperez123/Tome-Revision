@@ -1,0 +1,16 @@
+{
+  "bookId": "sonnets-from-the-portuguese",
+  "title": "Sonnets from the Portuguese",
+  "author": "Elizabeth Barrett Browning",
+  "chapterCount": 1,
+  "totalWordCount": 5056,
+  "totalMinutes": 20,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Sonnets from the Portuguese",
+      "wordCount": 5056,
+      "estimatedMinutes": 20
+    }
+  ]
+}

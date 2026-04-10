@@ -1,0 +1,178 @@
+{
+  "bookId": "cimarron",
+  "title": "Cimarron",
+  "author": "Edna Ferber",
+  "chapterCount": 28,
+  "totalWordCount": 104167,
+  "totalMinutes": 417,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 5,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Acknowledgment",
+      "wordCount": 42,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Foreword",
+      "wordCount": 278,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "I",
+      "wordCount": 3632,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 4,
+      "title": "II",
+      "wordCount": 6807,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 5,
+      "title": "III",
+      "wordCount": 3218,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 6,
+      "title": "IV",
+      "wordCount": 1918,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 7,
+      "title": "V",
+      "wordCount": 5239,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 8,
+      "title": "VI",
+      "wordCount": 6103,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 9,
+      "title": "VII",
+      "wordCount": 5023,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 10,
+      "title": "VIII",
+      "wordCount": 6478,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 11,
+      "title": "IX",
+      "wordCount": 4148,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 12,
+      "title": "X",
+      "wordCount": 5124,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 13,
+      "title": "XI",
+      "wordCount": 3197,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 14,
+      "title": "XII",
+      "wordCount": 2537,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 15,
+      "title": "XIII",
+      "wordCount": 2678,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 16,
+      "title": "XIV",
+      "wordCount": 4226,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 17,
+      "title": "XV",
+      "wordCount": 6149,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 18,
+      "title": "XVI",
+      "wordCount": 4527,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 19,
+      "title": "XVII",
+      "wordCount": 2541,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 20,
+      "title": "XVIII",
+      "wordCount": 6005,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 21,
+      "title": "XIX",
+      "wordCount": 5580,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 22,
+      "title": "XX",
+      "wordCount": 4459,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 23,
+      "title": "XXI",
+      "wordCount": 4814,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 24,
+      "title": "XXII",
+      "wordCount": 2151,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 25,
+      "title": "XXIII",
+      "wordCount": 4501,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 26,
+      "title": "XXIV",
+      "wordCount": 1026,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 27,
+      "title": "XXV",
+      "wordCount": 1761,
+      "estimatedMinutes": 7
+    }
+  ]
+}

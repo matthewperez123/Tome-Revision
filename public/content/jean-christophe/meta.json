@@ -1,0 +1,274 @@
+{
+  "bookId": "jean-christophe",
+  "title": "Jean-Christophe",
+  "author": "Romain Rolland",
+  "chapterCount": 44,
+  "totalWordCount": 595306,
+  "totalMinutes": 2381,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface",
+      "wordCount": 1331,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 1,
+      "title": "Epigraph",
+      "wordCount": 15,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Part I: Dawn",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "I",
+      "wordCount": 9304,
+      "estimatedMinutes": 37
+    },
+    {
+      "index": 4,
+      "title": "II",
+      "wordCount": 16638,
+      "estimatedMinutes": 67
+    },
+    {
+      "index": 5,
+      "title": "III",
+      "wordCount": 14068,
+      "estimatedMinutes": 56
+    },
+    {
+      "index": 6,
+      "title": "Part II: Morning",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 7,
+      "title": "I: The Death of Jean Michel",
+      "wordCount": 13923,
+      "estimatedMinutes": 56
+    },
+    {
+      "index": 8,
+      "title": "II: Otto",
+      "wordCount": 9248,
+      "estimatedMinutes": 37
+    },
+    {
+      "index": 9,
+      "title": "III: Minna",
+      "wordCount": 18166,
+      "estimatedMinutes": 73
+    },
+    {
+      "index": 10,
+      "title": "Part III: Youth",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 11,
+      "title": "Epigraph",
+      "wordCount": 12,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 12,
+      "title": "I: The House of Euler",
+      "wordCount": 17330,
+      "estimatedMinutes": 69
+    },
+    {
+      "index": 13,
+      "title": "II: Sabine",
+      "wordCount": 17280,
+      "estimatedMinutes": 69
+    },
+    {
+      "index": 14,
+      "title": "III: Ada",
+      "wordCount": 19382,
+      "estimatedMinutes": 78
+    },
+    {
+      "index": 15,
+      "title": "Part IV: Revolt",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 16,
+      "title": "I: Shifting Sands",
+      "wordCount": 29566,
+      "estimatedMinutes": 118
+    },
+    {
+      "index": 17,
+      "title": "II: Engulfed",
+      "wordCount": 29402,
+      "estimatedMinutes": 118
+    },
+    {
+      "index": 18,
+      "title": "III: Deliverance",
+      "wordCount": 35818,
+      "estimatedMinutes": 143
+    },
+    {
+      "index": 19,
+      "title": "Part V: The Marketplace",
+      "wordCount": 4,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 20,
+      "title": "I",
+      "wordCount": 30407,
+      "estimatedMinutes": 122
+    },
+    {
+      "index": 21,
+      "title": "II",
+      "wordCount": 16089,
+      "estimatedMinutes": 64
+    },
+    {
+      "index": 22,
+      "title": "III",
+      "wordCount": 22240,
+      "estimatedMinutes": 89
+    },
+    {
+      "index": 23,
+      "title": "Part VI: Antoinette",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 24,
+      "title": "I",
+      "wordCount": 38234,
+      "estimatedMinutes": 153
+    },
+    {
+      "index": 25,
+      "title": "Part VII: The House",
+      "wordCount": 4,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 26,
+      "title": "I",
+      "wordCount": 24012,
+      "estimatedMinutes": 96
+    },
+    {
+      "index": 27,
+      "title": "II",
+      "wordCount": 36680,
+      "estimatedMinutes": 147
+    },
+    {
+      "index": 28,
+      "title": "III",
+      "wordCount": 1919,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 29,
+      "title": "Part VIII: Love and Friendship",
+      "wordCount": 5,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 30,
+      "title": "I",
+      "wordCount": 61761,
+      "estimatedMinutes": 247
+    },
+    {
+      "index": 31,
+      "title": "Epilogue",
+      "wordCount": 702,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 32,
+      "title": "Part IX: The Burning Bush",
+      "wordCount": 5,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 33,
+      "title": "I",
+      "wordCount": 30988,
+      "estimatedMinutes": 124
+    },
+    {
+      "index": 34,
+      "title": "II",
+      "wordCount": 31657,
+      "estimatedMinutes": 127
+    },
+    {
+      "index": 35,
+      "title": "Epilogue",
+      "wordCount": 8582,
+      "estimatedMinutes": 34
+    },
+    {
+      "index": 36,
+      "title": "Part X: The New Dawn",
+      "wordCount": 5,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 37,
+      "title": "Dedication",
+      "wordCount": 24,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 38,
+      "title": "Preface to the Last Volume of Jean-Christophe",
+      "wordCount": 141,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 39,
+      "title": "Prologue",
+      "wordCount": 391,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 40,
+      "title": "I",
+      "wordCount": 12934,
+      "estimatedMinutes": 52
+    },
+    {
+      "index": 41,
+      "title": "II",
+      "wordCount": 22109,
+      "estimatedMinutes": 88
+    },
+    {
+      "index": 42,
+      "title": "III",
+      "wordCount": 11407,
+      "estimatedMinutes": 46
+    },
+    {
+      "index": 43,
+      "title": "IV",
+      "wordCount": 13508,
+      "estimatedMinutes": 54
+    }
+  ]
+}

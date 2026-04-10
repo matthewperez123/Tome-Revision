@@ -1,0 +1,82 @@
+{
+  "bookId": "john-browns-body",
+  "title": "John Brown's Body",
+  "author": "Stephen Vincent Benét",
+  "chapterCount": 12,
+  "totalWordCount": 102375,
+  "totalMinutes": 410,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 10,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Note",
+      "wordCount": 284,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Invocation",
+      "wordCount": 1208,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 3,
+      "title": "Prelude",
+      "wordCount": 1627,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 4,
+      "title": "Book I",
+      "wordCount": 11711,
+      "estimatedMinutes": 47
+    },
+    {
+      "index": 5,
+      "title": "Book II",
+      "wordCount": 13714,
+      "estimatedMinutes": 55
+    },
+    {
+      "index": 6,
+      "title": "Book III",
+      "wordCount": 11454,
+      "estimatedMinutes": 46
+    },
+    {
+      "index": 7,
+      "title": "Book IV",
+      "wordCount": 16200,
+      "estimatedMinutes": 65
+    },
+    {
+      "index": 8,
+      "title": "Book V",
+      "wordCount": 8881,
+      "estimatedMinutes": 36
+    },
+    {
+      "index": 9,
+      "title": "Book VI",
+      "wordCount": 10146,
+      "estimatedMinutes": 41
+    },
+    {
+      "index": 10,
+      "title": "Book VII",
+      "wordCount": 10634,
+      "estimatedMinutes": 43
+    },
+    {
+      "index": 11,
+      "title": "Book VIII",
+      "wordCount": 16506,
+      "estimatedMinutes": 66
+    }
+  ]
+}

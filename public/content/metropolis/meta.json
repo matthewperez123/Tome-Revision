@@ -1,0 +1,166 @@
+{
+  "bookId": "metropolis",
+  "title": "Metropolis",
+  "author": "Thea von Harbou",
+  "chapterCount": 26,
+  "totalWordCount": 72254,
+  "totalMinutes": 289,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface",
+      "wordCount": 46,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I",
+      "wordCount": 4981,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 2,
+      "title": "II",
+      "wordCount": 3201,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 3,
+      "title": "III",
+      "wordCount": 5154,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 4,
+      "title": "IV",
+      "wordCount": 4916,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 5,
+      "title": "V",
+      "wordCount": 4615,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 6,
+      "title": "VI",
+      "wordCount": 3896,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 7,
+      "title": "VII",
+      "wordCount": 3397,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 8,
+      "title": "VIII",
+      "wordCount": 5340,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 9,
+      "title": "IX",
+      "wordCount": 1481,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 10,
+      "title": "X",
+      "wordCount": 3932,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 11,
+      "title": "XI",
+      "wordCount": 3675,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 12,
+      "title": "XII",
+      "wordCount": 1957,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 13,
+      "title": "XIII",
+      "wordCount": 1460,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 14,
+      "title": "XIV",
+      "wordCount": 2156,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 15,
+      "title": "XV",
+      "wordCount": 4105,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 16,
+      "title": "XVI",
+      "wordCount": 2458,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 17,
+      "title": "XVII",
+      "wordCount": 2259,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 18,
+      "title": "XVIII",
+      "wordCount": 2285,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 19,
+      "title": "XIX",
+      "wordCount": 2427,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 20,
+      "title": "XX",
+      "wordCount": 1694,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 21,
+      "title": "XXI",
+      "wordCount": 1187,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 22,
+      "title": "XXII",
+      "wordCount": 3344,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 23,
+      "title": "XXIII",
+      "wordCount": 773,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 24,
+      "title": "XXIV",
+      "wordCount": 375,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 25,
+      "title": "XXV",
+      "wordCount": 1140,
+      "estimatedMinutes": 5
+    }
+  ]
+}

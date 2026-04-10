@@ -1,0 +1,226 @@
+{
+  "bookId": "the-mystery-of-a-hansom-cab",
+  "title": "The Mystery of a Hansom Cab",
+  "author": "Fergus Hume",
+  "chapterCount": 36,
+  "totalWordCount": 87834,
+  "totalMinutes": 351,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface",
+      "wordCount": 1190,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 1,
+      "title": "I: What the Argus Said",
+      "wordCount": 1818,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 2,
+      "title": "II: The Evidence at the Inquest",
+      "wordCount": 1985,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 3,
+      "title": "III: One Hundred Pounds Reward",
+      "wordCount": 149,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 4,
+      "title": "IV: Mr. Gorby Makes a Start",
+      "wordCount": 1492,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 5,
+      "title": "V: Mrs. Hableton Unbosoms Herself",
+      "wordCount": 2617,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 6,
+      "title": "VI: Mr. Gorby Makes Further Discoveries",
+      "wordCount": 2739,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 7,
+      "title": "VII: The Wool King",
+      "wordCount": 3001,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 8,
+      "title": "VIII: Brian Takes a Walk and a Drive",
+      "wordCount": 3342,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 9,
+      "title": "IX: Mr. Gorby Is Satisfied at Last",
+      "wordCount": 3896,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 10,
+      "title": "X: In the Queen’s Name",
+      "wordCount": 2681,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 11,
+      "title": "XI: Counsel for the Prisoner",
+      "wordCount": 2968,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 12,
+      "title": "XII: She Was a True Woman",
+      "wordCount": 3052,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 13,
+      "title": "XIII: Madge Makes a Discovery",
+      "wordCount": 3454,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 14,
+      "title": "XIV: Another Richmond in the Field",
+      "wordCount": 2407,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 15,
+      "title": "XV: A Woman of the People",
+      "wordCount": 2982,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 16,
+      "title": "XVI: Missing",
+      "wordCount": 2033,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 17,
+      "title": "XVII: The Trial",
+      "wordCount": 3483,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 18,
+      "title": "XVIII: Sal Rawlins Tells All She Knows",
+      "wordCount": 2442,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 19,
+      "title": "XIX: The Verdict of the Jury",
+      "wordCount": 3430,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 20,
+      "title": "XX: The Argus Gives Its Opinion",
+      "wordCount": 1448,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 21,
+      "title": "XXI: Three Months Afterwards",
+      "wordCount": 2831,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 22,
+      "title": "XXII: A Daughter of Eve",
+      "wordCount": 1858,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 23,
+      "title": "XXIII: Across the Walnuts and the Wine",
+      "wordCount": 2451,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 24,
+      "title": "XXIV: Brian Receives a Letter",
+      "wordCount": 2877,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 25,
+      "title": "XXV: What Dr. Chinston Said",
+      "wordCount": 2608,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 26,
+      "title": "XXVI: Kilsip Has a Theory of His Own",
+      "wordCount": 1604,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 27,
+      "title": "XXVII: Mother Guttersnipe Joins the Majority",
+      "wordCount": 2596,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 28,
+      "title": "XXVIII: Mark Frettlby Has a Visitor",
+      "wordCount": 3006,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 29,
+      "title": "XXIX: Mr. Calton’s Curiosity Is Satisfied",
+      "wordCount": 2262,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 30,
+      "title": "XXX: Nemesis",
+      "wordCount": 2800,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 31,
+      "title": "XXXI: Hush-Money",
+      "wordCount": 2057,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 32,
+      "title": "XXXII: De Mortuis Nil Nisi Bonum",
+      "wordCount": 1615,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 33,
+      "title": "XXXIII: The Confession",
+      "wordCount": 3175,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 34,
+      "title": "XXXIV: The Hands of Justice",
+      "wordCount": 2321,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 35,
+      "title": "XXXV: The Love That Lives",
+      "wordCount": 1164,
+      "estimatedMinutes": 5
+    }
+  ]
+}

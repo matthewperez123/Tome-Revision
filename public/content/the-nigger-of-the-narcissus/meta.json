@@ -1,0 +1,58 @@
+{
+  "bookId": "the-nigger-of-the-narcissus",
+  "title": "The Nigger of the Narcissus",
+  "author": "Joseph Conrad",
+  "chapterCount": 8,
+  "totalWordCount": 54136,
+  "totalMinutes": 217,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 11,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "To My Readers in America",
+      "wordCount": 447,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 2,
+      "title": "Preface",
+      "wordCount": 1686,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 3,
+      "title": "I",
+      "wordCount": 7378,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 4,
+      "title": "II",
+      "wordCount": 6206,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 5,
+      "title": "III",
+      "wordCount": 13056,
+      "estimatedMinutes": 52
+    },
+    {
+      "index": 6,
+      "title": "IV",
+      "wordCount": 14417,
+      "estimatedMinutes": 58
+    },
+    {
+      "index": 7,
+      "title": "V",
+      "wordCount": 10935,
+      "estimatedMinutes": 44
+    }
+  ]
+}

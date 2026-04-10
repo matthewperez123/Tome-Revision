@@ -1,0 +1,298 @@
+{
+  "bookId": "figures-of-earth",
+  "title": "Figures of Earth",
+  "author": "James Branch Cabell",
+  "chapterCount": 48,
+  "totalWordCount": 73997,
+  "totalMinutes": 296,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Epigraph",
+      "wordCount": 14,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Dedication",
+      "wordCount": 30,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "A Foreword",
+      "wordCount": 1270,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 3,
+      "title": "Part I: The Book of Credit",
+      "wordCount": 68,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 4,
+      "title": "I: How Manuel Left the Mire",
+      "wordCount": 1767,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 5,
+      "title": "II: Niafer",
+      "wordCount": 1576,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 6,
+      "title": "III: Ascent of Vraidex",
+      "wordCount": 1224,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 7,
+      "title": "IV: In the Doubtful Palace",
+      "wordCount": 3804,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 8,
+      "title": "V: The Eternal Ambuscade",
+      "wordCount": 1693,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 9,
+      "title": "VI: Economics of Math",
+      "wordCount": 1009,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 10,
+      "title": "VII: The Crown of Wisdom",
+      "wordCount": 1650,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 11,
+      "title": "VIII: The Halo of Holiness",
+      "wordCount": 1826,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 12,
+      "title": "IX: The Feather of Love",
+      "wordCount": 2742,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 13,
+      "title": "Part II: The Book of Spending",
+      "wordCount": 67,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 14,
+      "title": "X: Alianora",
+      "wordCount": 1789,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 15,
+      "title": "XI: Magic of the Apsarasas",
+      "wordCount": 1813,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 16,
+      "title": "XII: Ice and Iron",
+      "wordCount": 2095,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 17,
+      "title": "XIII: What Helmas Directed",
+      "wordCount": 1209,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 18,
+      "title": "XIV: They Duel on Morven",
+      "wordCount": 3227,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 19,
+      "title": "XV: Bandages for the Victor",
+      "wordCount": 1171,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 20,
+      "title": "Part III: The Book of Cast Accounts",
+      "wordCount": 68,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 21,
+      "title": "XVI: Freydis",
+      "wordCount": 1684,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 22,
+      "title": "XVII: Magic of the Image-Makers",
+      "wordCount": 2142,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 23,
+      "title": "XVIII: Manuel Chooses",
+      "wordCount": 1280,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 24,
+      "title": "XIX: The Head of Misery",
+      "wordCount": 1072,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 25,
+      "title": "XX: The Month of Years",
+      "wordCount": 1556,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 26,
+      "title": "XXI: Touching Repayment",
+      "wordCount": 1935,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 27,
+      "title": "XXII: Return of Niafer",
+      "wordCount": 1089,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 28,
+      "title": "XXIII: Manuel Gets His Desire",
+      "wordCount": 1797,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 29,
+      "title": "XXIV: Three Women",
+      "wordCount": 1161,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 30,
+      "title": "Part IV: The Book of Surcharge",
+      "wordCount": 62,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 31,
+      "title": "XXV: Affairs in Poictesme",
+      "wordCount": 2378,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 32,
+      "title": "XXVI: Deals with the Stork",
+      "wordCount": 2090,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 33,
+      "title": "XXVII: They Come to Sargyll",
+      "wordCount": 1405,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 34,
+      "title": "XXVIII: How Melicent Was Welcomed",
+      "wordCount": 1640,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 35,
+      "title": "XXIX: Sesphra of the Dreams",
+      "wordCount": 2129,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 36,
+      "title": "XXX: Farewell to Freydis",
+      "wordCount": 2372,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 37,
+      "title": "XXXI: Statecraft",
+      "wordCount": 1098,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 38,
+      "title": "XXXII: The Redemption of Poictesme",
+      "wordCount": 2397,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 39,
+      "title": "Part V: The Book of Settlement",
+      "wordCount": 61,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 40,
+      "title": "XXXIII: Now Manuel Prospers",
+      "wordCount": 1866,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 41,
+      "title": "XXXIV: Farewell to Alianora",
+      "wordCount": 2050,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 42,
+      "title": "XXXV: The Troubling Window",
+      "wordCount": 1984,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 43,
+      "title": "XXXVI: Excursions from Content",
+      "wordCount": 1368,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 44,
+      "title": "XXXVII: Opinions of Hinzelmann",
+      "wordCount": 2484,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 45,
+      "title": "XXXVIII: Farewell to Suskind",
+      "wordCount": 1048,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 46,
+      "title": "XXXIX: The Passing of Manuel",
+      "wordCount": 2924,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 47,
+      "title": "XL: Colophon",
+      "wordCount": 813,
+      "estimatedMinutes": 3
+    }
+  ]
+}

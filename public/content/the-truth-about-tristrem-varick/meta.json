@@ -1,0 +1,124 @@
+{
+  "bookId": "the-truth-about-tristrem-varick",
+  "title": "The Truth About Tristrem Varick",
+  "author": "Edgar Saltus",
+  "chapterCount": 19,
+  "totalWordCount": 42990,
+  "totalMinutes": 172,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 24,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Epigraph",
+      "wordCount": 53,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "I",
+      "wordCount": 1939,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 3,
+      "title": "II",
+      "wordCount": 2991,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 4,
+      "title": "III",
+      "wordCount": 3202,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 5,
+      "title": "IV",
+      "wordCount": 3032,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 6,
+      "title": "V",
+      "wordCount": 2690,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 7,
+      "title": "VI",
+      "wordCount": 2134,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 8,
+      "title": "VII",
+      "wordCount": 3707,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 9,
+      "title": "VIII",
+      "wordCount": 2395,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 10,
+      "title": "IX",
+      "wordCount": 1492,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 11,
+      "title": "X",
+      "wordCount": 2796,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 12,
+      "title": "XI",
+      "wordCount": 2710,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 13,
+      "title": "XII",
+      "wordCount": 2705,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 14,
+      "title": "XIII",
+      "wordCount": 2187,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 15,
+      "title": "XIV",
+      "wordCount": 2827,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 16,
+      "title": "XV",
+      "wordCount": 1970,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 17,
+      "title": "XVI",
+      "wordCount": 2543,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 18,
+      "title": "XVII",
+      "wordCount": 1593,
+      "estimatedMinutes": 6
+    }
+  ]
+}

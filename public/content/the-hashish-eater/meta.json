@@ -1,0 +1,196 @@
+{
+  "bookId": "the-hashish-eater",
+  "title": "The Hasheesh Eater",
+  "author": "Fitz Hugh Ludlow",
+  "chapterCount": 31,
+  "totalWordCount": 100473,
+  "totalMinutes": 402,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Epigraph",
+      "wordCount": 27,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Preface",
+      "wordCount": 1029,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 2,
+      "title": "Introduction",
+      "wordCount": 1516,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 3,
+      "title": "I: The Night Entrance",
+      "wordCount": 3787,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 4,
+      "title": "II: Under the Shadow of Esculapius",
+      "wordCount": 1460,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 5,
+      "title": "III: The Kingdom of the Dream",
+      "wordCount": 2767,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 6,
+      "title": "IV: Cashmere and Cathay by Twilight",
+      "wordCount": 4699,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 7,
+      "title": "V: The Hour and the Power of Darkness",
+      "wordCount": 4234,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 8,
+      "title": "VI: The Mysteries of the Life-Sign Gemini",
+      "wordCount": 2497,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 9,
+      "title": "VII: The Night of Apotheosis",
+      "wordCount": 4476,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 10,
+      "title": "VIII: Vos Non Vobis—Wherein the Pythagorean Is a Bystander",
+      "wordCount": 6202,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 11,
+      "title": "IX: The Shadow of Bacchus, the Shadow of Thanatos, and the Shadow of Shame",
+      "wordCount": 2461,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 12,
+      "title": "X: Nimium—The Amreeta Cup of Unveiling",
+      "wordCount": 4106,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 13,
+      "title": "XI: The Book of Symbols",
+      "wordCount": 1827,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 14,
+      "title": "XII: Today, Zeus; Tomorrow, Prometheus",
+      "wordCount": 2254,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 15,
+      "title": "XIII: Idola Theatri and the Prince of Whales",
+      "wordCount": 4174,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 16,
+      "title": "XIV: Hail! Pythagoras",
+      "wordCount": 3136,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 17,
+      "title": "XV: “Then Seeva Opened on the Accursed One His Eye of Anger”",
+      "wordCount": 4367,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 18,
+      "title": "XVI: An Oath in the Forum of Madness",
+      "wordCount": 2607,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 19,
+      "title": "XVII: Down with the Tide",
+      "wordCount": 2407,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 20,
+      "title": "XVIII: My Stony Guardian",
+      "wordCount": 1746,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 21,
+      "title": "XIX: Resurgam",
+      "wordCount": 1437,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 22,
+      "title": "XX: Leaving the Schoolmaster, the Pythagorean Sets Up for Himself",
+      "wordCount": 3962,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 23,
+      "title": "XXI: Concerning the Doctor; Not Southey’s, but Mine",
+      "wordCount": 3231,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 24,
+      "title": "XXII: Grand Divertissement",
+      "wordCount": 1668,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 25,
+      "title": "XXIII: The Hell of Waters and the Hell of Treachery",
+      "wordCount": 1319,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 26,
+      "title": "XXIV: The Visionary; To Which Chapter There Is No Admittance Upon Business",
+      "wordCount": 2993,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 27,
+      "title": "XXV: Cave Succedanea",
+      "wordCount": 1306,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 28,
+      "title": "Notes on the Way Upward",
+      "wordCount": 1384,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 29,
+      "title": "Labyrinths and Guiding Threads",
+      "wordCount": 11485,
+      "estimatedMinutes": 46
+    },
+    {
+      "index": 30,
+      "title": "Ideal Men and Their Stimulants",
+      "wordCount": 9909,
+      "estimatedMinutes": 40
+    }
+  ]
+}

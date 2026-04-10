@@ -1,0 +1,508 @@
+{
+  "bookId": "barnaby-rudge",
+  "title": "Barnaby Rudge",
+  "author": "Charles Dickens",
+  "chapterCount": 83,
+  "totalWordCount": 253270,
+  "totalMinutes": 1013,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface",
+      "wordCount": 1268,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 1,
+      "title": "Chapter 1",
+      "wordCount": 5922,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 2,
+      "title": "Chapter 2",
+      "wordCount": 3140,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 3,
+      "title": "Chapter 3",
+      "wordCount": 2703,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 4,
+      "title": "Chapter 4",
+      "wordCount": 3952,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 5,
+      "title": "Chapter 5",
+      "wordCount": 1705,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 6,
+      "title": "Chapter 6",
+      "wordCount": 3686,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 7,
+      "title": "Chapter 7",
+      "wordCount": 2122,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 8,
+      "title": "Chapter 8",
+      "wordCount": 3593,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 9,
+      "title": "Chapter 9",
+      "wordCount": 2108,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 10,
+      "title": "Chapter 10",
+      "wordCount": 4056,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 11,
+      "title": "Chapter 11",
+      "wordCount": 1850,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 12,
+      "title": "Chapter 12",
+      "wordCount": 3001,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 13,
+      "title": "Chapter 13",
+      "wordCount": 4190,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 14,
+      "title": "Chapter 14",
+      "wordCount": 1737,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 15,
+      "title": "Chapter 15",
+      "wordCount": 3710,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 16,
+      "title": "Chapter 16",
+      "wordCount": 2322,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 17,
+      "title": "Chapter 17",
+      "wordCount": 3866,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 18,
+      "title": "Chapter 18",
+      "wordCount": 1832,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 19,
+      "title": "Chapter 19",
+      "wordCount": 4044,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 20,
+      "title": "Chapter 20",
+      "wordCount": 2266,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 21,
+      "title": "Chapter 21",
+      "wordCount": 3259,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 22,
+      "title": "Chapter 22",
+      "wordCount": 2516,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 23,
+      "title": "Chapter 23",
+      "wordCount": 3811,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 24,
+      "title": "Chapter 24",
+      "wordCount": 1881,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 25,
+      "title": "Chapter 25",
+      "wordCount": 3847,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 26,
+      "title": "Chapter 26",
+      "wordCount": 1883,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 27,
+      "title": "Chapter 27",
+      "wordCount": 4064,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 28,
+      "title": "Chapter 28",
+      "wordCount": 1977,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 29,
+      "title": "Chapter 29",
+      "wordCount": 4511,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 30,
+      "title": "Chapter 30",
+      "wordCount": 1574,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 31,
+      "title": "Chapter 31",
+      "wordCount": 4267,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 32,
+      "title": "Chapter 32",
+      "wordCount": 1936,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 33,
+      "title": "Chapter 33",
+      "wordCount": 3961,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 34,
+      "title": "Chapter 34",
+      "wordCount": 2168,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 35,
+      "title": "Chapter 35",
+      "wordCount": 4154,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 36,
+      "title": "Chapter 36",
+      "wordCount": 1682,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 37,
+      "title": "Chapter 37",
+      "wordCount": 4019,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 38,
+      "title": "Chapter 38",
+      "wordCount": 1938,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 39,
+      "title": "Chapter 39",
+      "wordCount": 3443,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 40,
+      "title": "Chapter 40",
+      "wordCount": 2426,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 41,
+      "title": "Chapter 41",
+      "wordCount": 4294,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 42,
+      "title": "Chapter 42",
+      "wordCount": 1770,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 43,
+      "title": "Chapter 43",
+      "wordCount": 4243,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 44,
+      "title": "Chapter 44",
+      "wordCount": 1743,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 45,
+      "title": "Chapter 45",
+      "wordCount": 4057,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 46,
+      "title": "Chapter 46",
+      "wordCount": 2102,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 47,
+      "title": "Chapter 47",
+      "wordCount": 3024,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 48,
+      "title": "Chapter 48",
+      "wordCount": 2958,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 49,
+      "title": "Chapter 49",
+      "wordCount": 4005,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 50,
+      "title": "Chapter 50",
+      "wordCount": 2266,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 51,
+      "title": "Chapter 51",
+      "wordCount": 3768,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 52,
+      "title": "Chapter 52",
+      "wordCount": 2462,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 53,
+      "title": "Chapter 53",
+      "wordCount": 3236,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 54,
+      "title": "Chapter 54",
+      "wordCount": 2840,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 55,
+      "title": "Chapter 55",
+      "wordCount": 3308,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 56,
+      "title": "Chapter 56",
+      "wordCount": 2933,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 57,
+      "title": "Chapter 57",
+      "wordCount": 3352,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 58,
+      "title": "Chapter 58",
+      "wordCount": 2739,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 59,
+      "title": "Chapter 59",
+      "wordCount": 4228,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 60,
+      "title": "Chapter 60",
+      "wordCount": 1686,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 61,
+      "title": "Chapter 61",
+      "wordCount": 2665,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 62,
+      "title": "Chapter 62",
+      "wordCount": 3348,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 63,
+      "title": "Chapter 63",
+      "wordCount": 3397,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 64,
+      "title": "Chapter 64",
+      "wordCount": 3126,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 65,
+      "title": "Chapter 65",
+      "wordCount": 4059,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 66,
+      "title": "Chapter 66",
+      "wordCount": 2560,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 67,
+      "title": "Chapter 67",
+      "wordCount": 4334,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 68,
+      "title": "Chapter 68",
+      "wordCount": 2064,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 69,
+      "title": "Chapter 69",
+      "wordCount": 3721,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 70,
+      "title": "Chapter 70",
+      "wordCount": 2595,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 71,
+      "title": "Chapter 71",
+      "wordCount": 3885,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 72,
+      "title": "Chapter 72",
+      "wordCount": 2164,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 73,
+      "title": "Chapter 73",
+      "wordCount": 3903,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 74,
+      "title": "Chapter 74",
+      "wordCount": 2414,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 75,
+      "title": "Chapter 75",
+      "wordCount": 4148,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 76,
+      "title": "Chapter 76",
+      "wordCount": 2096,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 77,
+      "title": "Chapter 77",
+      "wordCount": 4419,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 78,
+      "title": "Chapter 78",
+      "wordCount": 2128,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 79,
+      "title": "Chapter 79",
+      "wordCount": 3311,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 80,
+      "title": "Chapter 80",
+      "wordCount": 3029,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 81,
+      "title": "Chapter 81",
+      "wordCount": 3427,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 82,
+      "title": "Chapter the Last",
+      "wordCount": 3073,
+      "estimatedMinutes": 12
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "bookId": "the-law-and-the-lady",
+  "title": "The Law and the Lady",
+  "author": "Wilkie Collins",
+  "chapterCount": 53,
+  "totalWordCount": 139893,
+  "totalMinutes": 560,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Note",
+      "wordCount": 169,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Part I: Paradise Lost",
+      "wordCount": 4,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "I: The Bride’s Mistake",
+      "wordCount": 1889,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 3,
+      "title": "II: The Bride’s Thoughts",
+      "wordCount": 3111,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 4,
+      "title": "III: Ramsgate Sands",
+      "wordCount": 2611,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 5,
+      "title": "IV: On the Way Home",
+      "wordCount": 2417,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 6,
+      "title": "V: The Landlady’s Discovery",
+      "wordCount": 1461,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 7,
+      "title": "VI: My Own Discovery",
+      "wordCount": 2598,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 8,
+      "title": "VII: On the Way to the Major",
+      "wordCount": 2921,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 9,
+      "title": "VIII: The Friend of the Women",
+      "wordCount": 2207,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 10,
+      "title": "IX: The Defeat of the Major",
+      "wordCount": 4174,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 11,
+      "title": "X: The Search",
+      "wordCount": 6399,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 12,
+      "title": "XI: The Return to Life",
+      "wordCount": 2682,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 13,
+      "title": "XII: The Scotch Verdict",
+      "wordCount": 2239,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 14,
+      "title": "XIII: The Man’s Decision",
+      "wordCount": 1665,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 15,
+      "title": "XIV: The Woman’s Answer",
+      "wordCount": 3779,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 16,
+      "title": "Part II: Paradise Regained",
+      "wordCount": 4,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 17,
+      "title": "XV: The Story of the Trial. The Preliminaries",
+      "wordCount": 690,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 18,
+      "title": "XVI: First Question—Did the Woman Die Poisoned?",
+      "wordCount": 5480,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 19,
+      "title": "XVII: Second Question—Who Poisoned Her?",
+      "wordCount": 3900,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 20,
+      "title": "XVIII: Third Question—What Was His Motive?",
+      "wordCount": 5171,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 21,
+      "title": "XIX: The Evidence for the Defense",
+      "wordCount": 1643,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 22,
+      "title": "XX: The End of the Trial",
+      "wordCount": 3508,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 23,
+      "title": "XXI: I See My Way",
+      "wordCount": 2233,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 24,
+      "title": "XXII: The Major Makes Difficulties",
+      "wordCount": 1997,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 25,
+      "title": "XXIII: My Mother-in-Law Surprises Me",
+      "wordCount": 2121,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 26,
+      "title": "XXIV: Miserrimus Dexter—First View",
+      "wordCount": 2301,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 27,
+      "title": "XXV: Miserrimus Dexter—Second View",
+      "wordCount": 4082,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 28,
+      "title": "XXVI: More of My Obstinacy",
+      "wordCount": 2112,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 29,
+      "title": "XXVII: Mr. Dexter at Home",
+      "wordCount": 3388,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 30,
+      "title": "XXVIII: In the Dark",
+      "wordCount": 2155,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 31,
+      "title": "XXIX: In the Light",
+      "wordCount": 2759,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 32,
+      "title": "XXX: The Indictment of Mrs. Beauly",
+      "wordCount": 3695,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 33,
+      "title": "XXXI: The Defense of Mrs. Beauly",
+      "wordCount": 2635,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 34,
+      "title": "XXXII: A Specimen of My Wisdom",
+      "wordCount": 874,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 35,
+      "title": "XXXIII: A Specimen of My Folly",
+      "wordCount": 4462,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 36,
+      "title": "XXXIV: Gleninch",
+      "wordCount": 2282,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 37,
+      "title": "XXXV: Mr. Playmore’s Prophecy",
+      "wordCount": 3179,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 38,
+      "title": "XXXVI: Ariel",
+      "wordCount": 1995,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 39,
+      "title": "XXXVII: At the Bedside",
+      "wordCount": 4057,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 40,
+      "title": "XXXVIII: On the Journey Back",
+      "wordCount": 790,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 41,
+      "title": "XXXIX: On the Way to Dexter",
+      "wordCount": 2134,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 42,
+      "title": "XL: Nemesis at Last",
+      "wordCount": 8119,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 43,
+      "title": "XLI: Mr. Playmore in a New Character",
+      "wordCount": 3237,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 44,
+      "title": "XLII: More Surprises",
+      "wordCount": 2204,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 45,
+      "title": "XLIII: At Last!",
+      "wordCount": 1322,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 46,
+      "title": "XLIV: Our New Honeymoon",
+      "wordCount": 2203,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 47,
+      "title": "XLV: The Dust-Heap Disturbed",
+      "wordCount": 2663,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 48,
+      "title": "XLVI: The Crisis Deferred",
+      "wordCount": 1445,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 49,
+      "title": "XLVII: The Wife’s Confession",
+      "wordCount": 2725,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 50,
+      "title": "XLVIII: What Else Could I Do?",
+      "wordCount": 1412,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 51,
+      "title": "XLIX: Past and Future",
+      "wordCount": 2293,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 52,
+      "title": "L: The Last of the Story",
+      "wordCount": 2297,
+      "estimatedMinutes": 9
+    }
+  ]
+}

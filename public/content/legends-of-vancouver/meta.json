@@ -1,0 +1,118 @@
+{
+  "bookId": "legends-of-vancouver",
+  "title": "Legends of Vancouver",
+  "author": "E. Pauline Johnson",
+  "chapterCount": 18,
+  "totalWordCount": 28505,
+  "totalMinutes": 114,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Foreword",
+      "wordCount": 176,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Preface",
+      "wordCount": 138,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Biographical Notice",
+      "wordCount": 1225,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 3,
+      "title": "The Two Sisters",
+      "wordCount": 1657,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 4,
+      "title": "The Siwash Rock",
+      "wordCount": 1649,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 5,
+      "title": "The Recluse",
+      "wordCount": 2368,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 6,
+      "title": "The Lost Salmon-Run",
+      "wordCount": 1944,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 7,
+      "title": "The Deep Waters",
+      "wordCount": 2066,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 8,
+      "title": "The Sea-Serpent",
+      "wordCount": 2093,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 9,
+      "title": "The Lost Island",
+      "wordCount": 1420,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 10,
+      "title": "Point Grey",
+      "wordCount": 1279,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 11,
+      "title": "The Tulameen Trail",
+      "wordCount": 1920,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 12,
+      "title": "The Grey Archway",
+      "wordCount": 2185,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 13,
+      "title": "Deadman’s Island",
+      "wordCount": 1938,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 14,
+      "title": "A Squamish Legend of Napoleon",
+      "wordCount": 1694,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 15,
+      "title": "The Lure in Stanley Park",
+      "wordCount": 1789,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 16,
+      "title": "Deer Lake",
+      "wordCount": 1473,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 17,
+      "title": "A Royal Mohawk Chief",
+      "wordCount": 1491,
+      "estimatedMinutes": 6
+    }
+  ]
+}

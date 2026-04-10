@@ -1,0 +1,130 @@
+{
+  "bookId": "the-castle",
+  "title": "The Castle",
+  "author": "Franz Kafka",
+  "chapterCount": 20,
+  "totalWordCount": 102335,
+  "totalMinutes": 409,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Introductory Note",
+      "wordCount": 1971,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 1,
+      "title": "I",
+      "wordCount": 5976,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 2,
+      "title": "II",
+      "wordCount": 7039,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 3,
+      "title": "III",
+      "wordCount": 3424,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 4,
+      "title": "IV",
+      "wordCount": 4708,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 5,
+      "title": "V",
+      "wordCount": 6794,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 6,
+      "title": "VI",
+      "wordCount": 4944,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 7,
+      "title": "VII",
+      "wordCount": 3801,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 8,
+      "title": "VIII",
+      "wordCount": 3509,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 9,
+      "title": "IX",
+      "wordCount": 3842,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 10,
+      "title": "X",
+      "wordCount": 2221,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 11,
+      "title": "XI",
+      "wordCount": 1911,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 12,
+      "title": "XII",
+      "wordCount": 2521,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 13,
+      "title": "XIII",
+      "wordCount": 10620,
+      "estimatedMinutes": 42
+    },
+    {
+      "index": 14,
+      "title": "XIV",
+      "wordCount": 2934,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 15,
+      "title": "XV",
+      "wordCount": 24019,
+      "estimatedMinutes": 96
+    },
+    {
+      "index": 16,
+      "title": "XVI",
+      "wordCount": 2636,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 17,
+      "title": "XVII",
+      "wordCount": 1803,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 18,
+      "title": "XVIII",
+      "wordCount": 4443,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 19,
+      "title": "Additional Note",
+      "wordCount": 3219,
+      "estimatedMinutes": 13
+    }
+  ]
+}

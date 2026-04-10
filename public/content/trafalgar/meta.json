@@ -1,0 +1,112 @@
+{
+  "bookId": "trafalgar",
+  "title": "Trafalgar",
+  "author": "Benito Pérez Galdós",
+  "chapterCount": 17,
+  "totalWordCount": 55746,
+  "totalMinutes": 223,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I",
+      "wordCount": 2739,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 1,
+      "title": "II",
+      "wordCount": 1573,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 2,
+      "title": "III",
+      "wordCount": 1385,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 3,
+      "title": "IV",
+      "wordCount": 4592,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 4,
+      "title": "V",
+      "wordCount": 2936,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 5,
+      "title": "VI",
+      "wordCount": 2975,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 6,
+      "title": "VII",
+      "wordCount": 2276,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 7,
+      "title": "VIII",
+      "wordCount": 5177,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 8,
+      "title": "IX",
+      "wordCount": 3297,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 9,
+      "title": "X",
+      "wordCount": 2228,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 10,
+      "title": "XI",
+      "wordCount": 3753,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 11,
+      "title": "XII",
+      "wordCount": 4371,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 12,
+      "title": "XIII",
+      "wordCount": 4054,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 13,
+      "title": "XIV",
+      "wordCount": 3429,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 14,
+      "title": "XV",
+      "wordCount": 5452,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 15,
+      "title": "XVI",
+      "wordCount": 3006,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 16,
+      "title": "XVII",
+      "wordCount": 2503,
+      "estimatedMinutes": 10
+    }
+  ]
+}

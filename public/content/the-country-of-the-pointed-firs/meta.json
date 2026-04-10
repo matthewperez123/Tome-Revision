@@ -1,0 +1,136 @@
+{
+  "bookId": "the-country-of-the-pointed-firs",
+  "title": "The Country of the Pointed Firs",
+  "author": "Sarah Orne Jewett",
+  "chapterCount": 21,
+  "totalWordCount": 41979,
+  "totalMinutes": 168,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I: The Return",
+      "wordCount": 293,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "II: Mrs. Todd",
+      "wordCount": 1529,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 2,
+      "title": "III: The Schoolhouse",
+      "wordCount": 702,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 3,
+      "title": "IV: At the Schoolhouse Window",
+      "wordCount": 884,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 4,
+      "title": "V: Captain Littlepage",
+      "wordCount": 2092,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 5,
+      "title": "VI: The Waiting Place",
+      "wordCount": 2245,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 6,
+      "title": "VII: The Outer Island",
+      "wordCount": 1083,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 7,
+      "title": "VIII: Green Island",
+      "wordCount": 3594,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 8,
+      "title": "IX: William",
+      "wordCount": 1092,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 9,
+      "title": "X: Where Pennyroyal Grew",
+      "wordCount": 1617,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 10,
+      "title": "XI: The Old Singers",
+      "wordCount": 1101,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 11,
+      "title": "XII: A Strange Sail",
+      "wordCount": 2346,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 12,
+      "title": "XIII: Poor Joanna",
+      "wordCount": 3568,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 13,
+      "title": "XIV: The Hermitage",
+      "wordCount": 2491,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 14,
+      "title": "XV: On Shell-Heap Island",
+      "wordCount": 1199,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 15,
+      "title": "XVI: The Great Expedition",
+      "wordCount": 1983,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 16,
+      "title": "XVII: A Country Road",
+      "wordCount": 2260,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 17,
+      "title": "XVIII: The Bowden Reunion",
+      "wordCount": 3883,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 18,
+      "title": "XIX: The Feast’s End",
+      "wordCount": 1819,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 19,
+      "title": "XX: Along Shore",
+      "wordCount": 4742,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 20,
+      "title": "XXI: The Backward View",
+      "wordCount": 1456,
+      "estimatedMinutes": 6
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "bookId": "the-magic-mountain",
+  "title": "The Magic Mountain",
+  "author": "Thomas Mann",
+  "chapterCount": 60,
+  "totalWordCount": 323694,
+  "totalMinutes": 1295,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Translator’s Note",
+      "wordCount": 203,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Foreword",
+      "wordCount": 501,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 2,
+      "title": "Chapter I",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "Arrival",
+      "wordCount": 2991,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 4,
+      "title": "Number 34",
+      "wordCount": 1361,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 5,
+      "title": "In the Restaurant",
+      "wordCount": 2209,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 6,
+      "title": "Chapter II",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 7,
+      "title": "Of the Christening Basin, and of Grandfather in His Twofold Guise",
+      "wordCount": 4411,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 8,
+      "title": "At Tienappels’, and of Young Hans’s Moral State",
+      "wordCount": 3951,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 9,
+      "title": "Chapter III",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 10,
+      "title": "Drawing the Veil",
+      "wordCount": 1213,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 11,
+      "title": "Breakfast",
+      "wordCount": 3187,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 12,
+      "title": "Banter. Viaticum. Interrupted Mirth",
+      "wordCount": 3992,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 13,
+      "title": "Satana",
+      "wordCount": 3893,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 14,
+      "title": "Mental Gymnastic",
+      "wordCount": 2399,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 15,
+      "title": "A Word Too Much",
+      "wordCount": 1743,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 16,
+      "title": "Of Course, a Female!",
+      "wordCount": 2042,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 17,
+      "title": "Herr Albin",
+      "wordCount": 1240,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 18,
+      "title": "Satana Makes Proposals That Touch Our Honour",
+      "wordCount": 5000,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 19,
+      "title": "Chapter IV",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 20,
+      "title": "Necessary Purchases",
+      "wordCount": 4187,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 21,
+      "title": "Excursus on the Sense of Time",
+      "wordCount": 1695,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 22,
+      "title": "He Practises His French",
+      "wordCount": 2030,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 23,
+      "title": "Politically Suspect",
+      "wordCount": 2241,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 24,
+      "title": "Hippe",
+      "wordCount": 4453,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 25,
+      "title": "Analysis",
+      "wordCount": 2845,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 26,
+      "title": "Doubts and Considerations",
+      "wordCount": 1645,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 27,
+      "title": "Table-Talk",
+      "wordCount": 3052,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 28,
+      "title": "Mounting Misgivings. Of the Two Grandfathers, and the Boat-Ride in the Twilight",
+      "wordCount": 9213,
+      "estimatedMinutes": 37
+    },
+    {
+      "index": 29,
+      "title": "The Thermometer",
+      "wordCount": 9997,
+      "estimatedMinutes": 40
+    },
+    {
+      "index": 30,
+      "title": "Chapter V",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 31,
+      "title": "Soup-Everlasting",
+      "wordCount": 9574,
+      "estimatedMinutes": 38
+    },
+    {
+      "index": 32,
+      "title": "Sudden Enlightenment",
+      "wordCount": 7191,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 33,
+      "title": "Freedom",
+      "wordCount": 2649,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 34,
+      "title": "Whims of Mercurius",
+      "wordCount": 4823,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 35,
+      "title": "Encyclopaedic",
+      "wordCount": 6967,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 36,
+      "title": "Humaniora",
+      "wordCount": 7359,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 37,
+      "title": "Research",
+      "wordCount": 8710,
+      "estimatedMinutes": 35
+    },
+    {
+      "index": 38,
+      "title": "The Dance of Death",
+      "wordCount": 16549,
+      "estimatedMinutes": 66
+    },
+    {
+      "index": 39,
+      "title": "Walpurgis-Night",
+      "wordCount": 9570,
+      "estimatedMinutes": 38
+    },
+    {
+      "index": 40,
+      "title": "Chapter VI",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 41,
+      "title": "Changes",
+      "wordCount": 10979,
+      "estimatedMinutes": 44
+    },
+    {
+      "index": 42,
+      "title": "A Newcomer",
+      "wordCount": 8300,
+      "estimatedMinutes": 33
+    },
+    {
+      "index": 43,
+      "title": "Of the City of God, and Deliverance by Evil",
+      "wordCount": 11632,
+      "estimatedMinutes": 47
+    },
+    {
+      "index": 44,
+      "title": "Choler. And Worse",
+      "wordCount": 5731,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 45,
+      "title": "An Attack, and a Repulse",
+      "wordCount": 6671,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 46,
+      "title": "Operationes Spirituales",
+      "wordCount": 13116,
+      "estimatedMinutes": 52
+    },
+    {
+      "index": 47,
+      "title": "Snow",
+      "wordCount": 13923,
+      "estimatedMinutes": 56
+    },
+    {
+      "index": 48,
+      "title": "A Soldier, and Brave",
+      "wordCount": 19213,
+      "estimatedMinutes": 77
+    },
+    {
+      "index": 49,
+      "title": "Chapter VII",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 50,
+      "title": "By the Ocean of Time",
+      "wordCount": 3339,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 51,
+      "title": "Mynheer Peeperkorn",
+      "wordCount": 3541,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 52,
+      "title": "Vingt-Et-Un",
+      "wordCount": 8000,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 53,
+      "title": "Mynheer Peeperkorn (Continued)",
+      "wordCount": 17547,
+      "estimatedMinutes": 70
+    },
+    {
+      "index": 54,
+      "title": "Mynheer Peeperkorn (Conclusion)",
+      "wordCount": 5569,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 55,
+      "title": "The Great God Dumps",
+      "wordCount": 4882,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 56,
+      "title": "Fullness of Harmony",
+      "wordCount": 8069,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 57,
+      "title": "Highly Questionable",
+      "wordCount": 12702,
+      "estimatedMinutes": 51
+    },
+    {
+      "index": 58,
+      "title": "Hysterica Passio",
+      "wordCount": 10775,
+      "estimatedMinutes": 43
+    },
+    {
+      "index": 59,
+      "title": "The Thunderbolt",
+      "wordCount": 4605,
+      "estimatedMinutes": 18
+    }
+  ]
+}

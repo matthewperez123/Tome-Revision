@@ -1,0 +1,334 @@
+{
+  "bookId": "the-peasants",
+  "title": "The Peasants",
+  "author": "Władysław Reymont",
+  "chapterCount": 54,
+  "totalWordCount": 379718,
+  "totalMinutes": 1519,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Publisher’s Note",
+      "wordCount": 52,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Autumn",
+      "wordCount": 1,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "I",
+      "wordCount": 3751,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 3,
+      "title": "II",
+      "wordCount": 6866,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 4,
+      "title": "III",
+      "wordCount": 8556,
+      "estimatedMinutes": 34
+    },
+    {
+      "index": 5,
+      "title": "IV",
+      "wordCount": 7885,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 6,
+      "title": "V",
+      "wordCount": 9238,
+      "estimatedMinutes": 37
+    },
+    {
+      "index": 7,
+      "title": "VI",
+      "wordCount": 4479,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 8,
+      "title": "VII",
+      "wordCount": 7212,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 9,
+      "title": "VIII",
+      "wordCount": 4966,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 10,
+      "title": "IX",
+      "wordCount": 4498,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 11,
+      "title": "X",
+      "wordCount": 7936,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 12,
+      "title": "XI",
+      "wordCount": 10760,
+      "estimatedMinutes": 43
+    },
+    {
+      "index": 13,
+      "title": "XII",
+      "wordCount": 7773,
+      "estimatedMinutes": 31
+    },
+    {
+      "index": 14,
+      "title": "Winter",
+      "wordCount": 1,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 15,
+      "title": "I",
+      "wordCount": 8012,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 16,
+      "title": "II",
+      "wordCount": 6830,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 17,
+      "title": "III",
+      "wordCount": 7218,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 18,
+      "title": "IV",
+      "wordCount": 9242,
+      "estimatedMinutes": 37
+    },
+    {
+      "index": 19,
+      "title": "V",
+      "wordCount": 5457,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 20,
+      "title": "VI",
+      "wordCount": 6479,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 21,
+      "title": "VII",
+      "wordCount": 7158,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 22,
+      "title": "VIII",
+      "wordCount": 8080,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 23,
+      "title": "IX",
+      "wordCount": 5699,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 24,
+      "title": "X",
+      "wordCount": 7580,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 25,
+      "title": "XI",
+      "wordCount": 3434,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 26,
+      "title": "XII",
+      "wordCount": 8373,
+      "estimatedMinutes": 33
+    },
+    {
+      "index": 27,
+      "title": "XIII",
+      "wordCount": 11934,
+      "estimatedMinutes": 48
+    },
+    {
+      "index": 28,
+      "title": "Spring",
+      "wordCount": 1,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 29,
+      "title": "I",
+      "wordCount": 6358,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 30,
+      "title": "II",
+      "wordCount": 8592,
+      "estimatedMinutes": 34
+    },
+    {
+      "index": 31,
+      "title": "III",
+      "wordCount": 9295,
+      "estimatedMinutes": 37
+    },
+    {
+      "index": 32,
+      "title": "IV",
+      "wordCount": 10999,
+      "estimatedMinutes": 44
+    },
+    {
+      "index": 33,
+      "title": "V",
+      "wordCount": 12826,
+      "estimatedMinutes": 51
+    },
+    {
+      "index": 34,
+      "title": "VI",
+      "wordCount": 10533,
+      "estimatedMinutes": 42
+    },
+    {
+      "index": 35,
+      "title": "VII",
+      "wordCount": 11556,
+      "estimatedMinutes": 46
+    },
+    {
+      "index": 36,
+      "title": "VIII",
+      "wordCount": 13459,
+      "estimatedMinutes": 54
+    },
+    {
+      "index": 37,
+      "title": "IX",
+      "wordCount": 9442,
+      "estimatedMinutes": 38
+    },
+    {
+      "index": 38,
+      "title": "X",
+      "wordCount": 8282,
+      "estimatedMinutes": 33
+    },
+    {
+      "index": 39,
+      "title": "XI",
+      "wordCount": 5904,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 40,
+      "title": "Summer",
+      "wordCount": 1,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 41,
+      "title": "I",
+      "wordCount": 10270,
+      "estimatedMinutes": 41
+    },
+    {
+      "index": 42,
+      "title": "II",
+      "wordCount": 9204,
+      "estimatedMinutes": 37
+    },
+    {
+      "index": 43,
+      "title": "III",
+      "wordCount": 6660,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 44,
+      "title": "IV",
+      "wordCount": 8843,
+      "estimatedMinutes": 35
+    },
+    {
+      "index": 45,
+      "title": "V",
+      "wordCount": 10922,
+      "estimatedMinutes": 44
+    },
+    {
+      "index": 46,
+      "title": "VI",
+      "wordCount": 5674,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 47,
+      "title": "VII",
+      "wordCount": 4917,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 48,
+      "title": "VIII",
+      "wordCount": 6075,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 49,
+      "title": "IX",
+      "wordCount": 10754,
+      "estimatedMinutes": 43
+    },
+    {
+      "index": 50,
+      "title": "X",
+      "wordCount": 3752,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 51,
+      "title": "XI",
+      "wordCount": 4568,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 52,
+      "title": "XII",
+      "wordCount": 4835,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 53,
+      "title": "XIII",
+      "wordCount": 6526,
+      "estimatedMinutes": 26
+    }
+  ]
+}

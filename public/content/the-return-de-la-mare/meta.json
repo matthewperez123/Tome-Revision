@@ -1,0 +1,154 @@
+{
+  "bookId": "the-return-de-la-mare",
+  "title": "The Return",
+  "author": "Walter de la Mare",
+  "chapterCount": 24,
+  "totalWordCount": 80034,
+  "totalMinutes": 320,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Epigraph",
+      "wordCount": 48,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I",
+      "wordCount": 3546,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 2,
+      "title": "II",
+      "wordCount": 3757,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 3,
+      "title": "III",
+      "wordCount": 2632,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 4,
+      "title": "IV",
+      "wordCount": 988,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 5,
+      "title": "V",
+      "wordCount": 5276,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 6,
+      "title": "VI",
+      "wordCount": 4149,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 7,
+      "title": "VII",
+      "wordCount": 2935,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 8,
+      "title": "VIII",
+      "wordCount": 1513,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 9,
+      "title": "IX",
+      "wordCount": 1936,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 10,
+      "title": "X",
+      "wordCount": 2239,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 11,
+      "title": "XI",
+      "wordCount": 3924,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 12,
+      "title": "XII",
+      "wordCount": 3805,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 13,
+      "title": "XIII",
+      "wordCount": 2204,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 14,
+      "title": "XIV",
+      "wordCount": 4695,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 15,
+      "title": "XV",
+      "wordCount": 3976,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 16,
+      "title": "XVI",
+      "wordCount": 3301,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 17,
+      "title": "XVII",
+      "wordCount": 4202,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 18,
+      "title": "XVIII",
+      "wordCount": 3704,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 19,
+      "title": "XIX",
+      "wordCount": 3175,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 20,
+      "title": "XX",
+      "wordCount": 4205,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 21,
+      "title": "XXI",
+      "wordCount": 2698,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 22,
+      "title": "XXII",
+      "wordCount": 6352,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 23,
+      "title": "XXIII",
+      "wordCount": 4774,
+      "estimatedMinutes": 19
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "bookId": "anna-of-the-five-towns",
+  "title": "Anna of the Five Towns",
+  "author": "Arnold Bennett",
+  "chapterCount": 16,
+  "totalWordCount": 73853,
+  "totalMinutes": 295,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 21,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Epigraph",
+      "wordCount": 22,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "I: The Kindling of Love",
+      "wordCount": 4755,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 3,
+      "title": "II: The Miser’s Daughter",
+      "wordCount": 3207,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 4,
+      "title": "III: The Birthday",
+      "wordCount": 5174,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 5,
+      "title": "IV: A Visit",
+      "wordCount": 3048,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 6,
+      "title": "V: The Revival",
+      "wordCount": 3325,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 7,
+      "title": "VI: Willie",
+      "wordCount": 5633,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 8,
+      "title": "VII: The Sewing Meeting",
+      "wordCount": 6436,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 9,
+      "title": "VIII: On the Bank",
+      "wordCount": 6154,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 10,
+      "title": "IX: The Treat",
+      "wordCount": 5549,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 11,
+      "title": "X: The Isle",
+      "wordCount": 10555,
+      "estimatedMinutes": 42
+    },
+    {
+      "index": 12,
+      "title": "XI: The Downfall",
+      "wordCount": 9806,
+      "estimatedMinutes": 39
+    },
+    {
+      "index": 13,
+      "title": "XII: At the Priory",
+      "wordCount": 6459,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 14,
+      "title": "XIII: The Bazaar",
+      "wordCount": 3043,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 15,
+      "title": "XIV: End of a Simple Soul",
+      "wordCount": 666,
+      "estimatedMinutes": 3
+    }
+  ]
+}

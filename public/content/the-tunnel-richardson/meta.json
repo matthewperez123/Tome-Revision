@@ -1,0 +1,214 @@
+{
+  "bookId": "the-tunnel-richardson",
+  "title": "The Tunnel",
+  "author": "Dorothy M. Richardson",
+  "chapterCount": 34,
+  "totalWordCount": 93807,
+  "totalMinutes": 375,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I",
+      "wordCount": 4645,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 2,
+      "title": "II",
+      "wordCount": 2802,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 3,
+      "title": "III",
+      "wordCount": 15138,
+      "estimatedMinutes": 61
+    },
+    {
+      "index": 4,
+      "title": "IV",
+      "wordCount": 8041,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 5,
+      "title": "V",
+      "wordCount": 3138,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 6,
+      "title": "VI",
+      "wordCount": 9891,
+      "estimatedMinutes": 40
+    },
+    {
+      "index": 7,
+      "title": "VII",
+      "wordCount": 169,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 8,
+      "title": "VIII",
+      "wordCount": 2275,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 9,
+      "title": "IX",
+      "wordCount": 2986,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 10,
+      "title": "X",
+      "wordCount": 4941,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 11,
+      "title": "XI",
+      "wordCount": 1694,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 12,
+      "title": "XII",
+      "wordCount": 621,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 13,
+      "title": "XIII",
+      "wordCount": 1108,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 14,
+      "title": "XIV",
+      "wordCount": 1402,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 15,
+      "title": "XV",
+      "wordCount": 3573,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 16,
+      "title": "XVI",
+      "wordCount": 833,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 17,
+      "title": "XVII",
+      "wordCount": 1689,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 18,
+      "title": "XVIII",
+      "wordCount": 902,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 19,
+      "title": "XIX",
+      "wordCount": 464,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 20,
+      "title": "XX",
+      "wordCount": 1269,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 21,
+      "title": "XXI",
+      "wordCount": 709,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 22,
+      "title": "XXII",
+      "wordCount": 2374,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 23,
+      "title": "XXIII",
+      "wordCount": 751,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 24,
+      "title": "XXIV",
+      "wordCount": 1458,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 25,
+      "title": "XXV",
+      "wordCount": 1430,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 26,
+      "title": "XXVI",
+      "wordCount": 3147,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 27,
+      "title": "XXVII",
+      "wordCount": 1151,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 28,
+      "title": "XXVIII",
+      "wordCount": 892,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 29,
+      "title": "XXIX",
+      "wordCount": 1222,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 30,
+      "title": "XXX",
+      "wordCount": 4951,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 31,
+      "title": "XXXI",
+      "wordCount": 4555,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 32,
+      "title": "XXXII",
+      "wordCount": 2599,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 33,
+      "title": "XXXIII",
+      "wordCount": 984,
+      "estimatedMinutes": 4
+    }
+  ]
+}

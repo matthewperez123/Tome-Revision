@@ -1,0 +1,136 @@
+{
+  "bookId": "a-voyage-to-arcturus",
+  "title": "A Voyage to Arcturus",
+  "author": "David Lindsay",
+  "chapterCount": 21,
+  "totalWordCount": 92756,
+  "totalMinutes": 371,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I: The Séance",
+      "wordCount": 4184,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 1,
+      "title": "II: In the Street",
+      "wordCount": 1647,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 2,
+      "title": "III: Starkness",
+      "wordCount": 1456,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 3,
+      "title": "IV: The Voice",
+      "wordCount": 1733,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 4,
+      "title": "V: The Night of Departure",
+      "wordCount": 2133,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 5,
+      "title": "VI: Joiwind",
+      "wordCount": 5352,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 6,
+      "title": "VII: Panawe",
+      "wordCount": 4734,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 7,
+      "title": "VIII: The Lusion Plain",
+      "wordCount": 2932,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 8,
+      "title": "IX: Oceaxe",
+      "wordCount": 6796,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 9,
+      "title": "X: Tydomin",
+      "wordCount": 6787,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 10,
+      "title": "XI: On Disscourn",
+      "wordCount": 3031,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 11,
+      "title": "XII: Spadevil",
+      "wordCount": 5134,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 12,
+      "title": "XIII: The Wombflash Forest",
+      "wordCount": 1771,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 13,
+      "title": "XIV: Polecrab",
+      "wordCount": 5164,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 14,
+      "title": "XV: Swaylone’s Island",
+      "wordCount": 6290,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 15,
+      "title": "XVI: Leehallfae",
+      "wordCount": 6903,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 16,
+      "title": "XVII: Corpang",
+      "wordCount": 6164,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 17,
+      "title": "XVIII: Haunte",
+      "wordCount": 6352,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 18,
+      "title": "XIX: Sullenbode",
+      "wordCount": 5493,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 19,
+      "title": "XX: Barey",
+      "wordCount": 5390,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 20,
+      "title": "XXI: Muspel",
+      "wordCount": 3310,
+      "estimatedMinutes": 13
+    }
+  ]
+}

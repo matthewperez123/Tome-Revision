@@ -1,0 +1,202 @@
+{
+  "bookId": "the-gadfly",
+  "title": "The Gadfly",
+  "author": "Ethel Voynich",
+  "chapterCount": 32,
+  "totalWordCount": 100214,
+  "totalMinutes": 401,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Epigraph",
+      "wordCount": 11,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Author’s Preface",
+      "wordCount": 52,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Part I",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "I",
+      "wordCount": 2798,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 4,
+      "title": "II",
+      "wordCount": 3310,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 5,
+      "title": "III",
+      "wordCount": 2503,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 6,
+      "title": "IV",
+      "wordCount": 2951,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 7,
+      "title": "V",
+      "wordCount": 2311,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 8,
+      "title": "VI",
+      "wordCount": 4466,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 9,
+      "title": "VII",
+      "wordCount": 4893,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 10,
+      "title": "Part II",
+      "wordCount": 5,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 11,
+      "title": "I",
+      "wordCount": 3760,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 12,
+      "title": "II",
+      "wordCount": 4727,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 13,
+      "title": "III",
+      "wordCount": 3549,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 14,
+      "title": "IV",
+      "wordCount": 3042,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 15,
+      "title": "V",
+      "wordCount": 3367,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 16,
+      "title": "VI",
+      "wordCount": 2972,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 17,
+      "title": "VII",
+      "wordCount": 2725,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 18,
+      "title": "VIII",
+      "wordCount": 5393,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 19,
+      "title": "IX",
+      "wordCount": 4689,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 20,
+      "title": "X",
+      "wordCount": 3114,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 21,
+      "title": "XI",
+      "wordCount": 6022,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 22,
+      "title": "Part III",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 23,
+      "title": "I",
+      "wordCount": 4831,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 24,
+      "title": "II",
+      "wordCount": 3519,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 25,
+      "title": "III",
+      "wordCount": 3375,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 26,
+      "title": "IV",
+      "wordCount": 4525,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 27,
+      "title": "V",
+      "wordCount": 2418,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 28,
+      "title": "VI",
+      "wordCount": 6090,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 29,
+      "title": "VII",
+      "wordCount": 2942,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 30,
+      "title": "VIII",
+      "wordCount": 4281,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 31,
+      "title": "Epilogue",
+      "wordCount": 1569,
+      "estimatedMinutes": 6
+    }
+  ]
+}

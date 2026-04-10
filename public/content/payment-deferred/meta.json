@@ -1,0 +1,106 @@
+{
+  "bookId": "payment-deferred",
+  "title": "Payment Deferred",
+  "author": "C. S. Forester",
+  "chapterCount": 16,
+  "totalWordCount": 59328,
+  "totalMinutes": 237,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I",
+      "wordCount": 7299,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 1,
+      "title": "II",
+      "wordCount": 3868,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 2,
+      "title": "III",
+      "wordCount": 2312,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 3,
+      "title": "IV",
+      "wordCount": 4263,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 4,
+      "title": "V",
+      "wordCount": 4055,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 5,
+      "title": "VI",
+      "wordCount": 4535,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 6,
+      "title": "VII",
+      "wordCount": 2827,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 7,
+      "title": "VIII",
+      "wordCount": 3844,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 8,
+      "title": "IX",
+      "wordCount": 3758,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 9,
+      "title": "X",
+      "wordCount": 5651,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 10,
+      "title": "XI",
+      "wordCount": 2579,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 11,
+      "title": "XII",
+      "wordCount": 2688,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 12,
+      "title": "XIII",
+      "wordCount": 2981,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 13,
+      "title": "XIV",
+      "wordCount": 3883,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 14,
+      "title": "XV",
+      "wordCount": 4035,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 15,
+      "title": "XVI",
+      "wordCount": 750,
+      "estimatedMinutes": 3
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "bookId": "sticks-and-stones",
+  "title": "Sticks and Stones",
+  "author": "Lewis Mumford",
+  "chapterCount": 12,
+  "totalWordCount": 40998,
+  "totalMinutes": 164,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Epigraph",
+      "wordCount": 22,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Acknowledgments",
+      "wordCount": 321,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "I: The Medieval Tradition",
+      "wordCount": 3652,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 3,
+      "title": "II: The Heritage of the Renaissance",
+      "wordCount": 2974,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 4,
+      "title": "III: The Classical Myth",
+      "wordCount": 3552,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 5,
+      "title": "IV: The Diaspora of the Pioneer",
+      "wordCount": 4119,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 6,
+      "title": "V: The Defeat of Romanticism",
+      "wordCount": 3972,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 7,
+      "title": "VI: The Imperial Façade",
+      "wordCount": 5635,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 8,
+      "title": "VII: The Age of the Machine",
+      "wordCount": 6928,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 9,
+      "title": "VIII: Architecture and Civilization",
+      "wordCount": 8413,
+      "estimatedMinutes": 34
+    },
+    {
+      "index": 10,
+      "title": "Envoi",
+      "wordCount": 258,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 11,
+      "title": "Notes on Books",
+      "wordCount": 1152,
+      "estimatedMinutes": 5
+    }
+  ]
+}

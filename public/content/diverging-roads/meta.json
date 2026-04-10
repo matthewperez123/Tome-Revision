@@ -1,0 +1,160 @@
+{
+  "bookId": "diverging-roads",
+  "title": "Diverging Roads",
+  "author": "Rose Wilder Lane",
+  "chapterCount": 25,
+  "totalWordCount": 81417,
+  "totalMinutes": 326,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Prologue",
+      "wordCount": 393,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 1,
+      "title": "I",
+      "wordCount": 1837,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 2,
+      "title": "II",
+      "wordCount": 3278,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 3,
+      "title": "III",
+      "wordCount": 2457,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 4,
+      "title": "IV",
+      "wordCount": 2010,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 5,
+      "title": "V",
+      "wordCount": 4893,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 6,
+      "title": "VI",
+      "wordCount": 4576,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 7,
+      "title": "VII",
+      "wordCount": 2179,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 8,
+      "title": "VIII",
+      "wordCount": 6319,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 9,
+      "title": "IX",
+      "wordCount": 4946,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 10,
+      "title": "X",
+      "wordCount": 3904,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 11,
+      "title": "XI",
+      "wordCount": 5623,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 12,
+      "title": "XII",
+      "wordCount": 4040,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 13,
+      "title": "XIII",
+      "wordCount": 2832,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 14,
+      "title": "XIV",
+      "wordCount": 2772,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 15,
+      "title": "XV",
+      "wordCount": 2236,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 16,
+      "title": "XVI",
+      "wordCount": 3025,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 17,
+      "title": "XVII",
+      "wordCount": 4546,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 18,
+      "title": "XVIII",
+      "wordCount": 4121,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 19,
+      "title": "XIX",
+      "wordCount": 2512,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 20,
+      "title": "XX",
+      "wordCount": 3068,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 21,
+      "title": "XXI",
+      "wordCount": 5783,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 22,
+      "title": "XXII",
+      "wordCount": 906,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 23,
+      "title": "XXIII",
+      "wordCount": 1547,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 24,
+      "title": "XXIV",
+      "wordCount": 1614,
+      "estimatedMinutes": 6
+    }
+  ]
+}

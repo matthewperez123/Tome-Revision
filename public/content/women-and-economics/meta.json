@@ -1,0 +1,112 @@
+{
+  "bookId": "women-and-economics",
+  "title": "Women and Economics",
+  "author": "Charlotte Perkins Gilman",
+  "chapterCount": 17,
+  "totalWordCount": 72460,
+  "totalMinutes": 290,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Proem",
+      "wordCount": 498,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 1,
+      "title": "Preface",
+      "wordCount": 211,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "I",
+      "wordCount": 4790,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 3,
+      "title": "II",
+      "wordCount": 3502,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 4,
+      "title": "III",
+      "wordCount": 3741,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 5,
+      "title": "IV",
+      "wordCount": 3832,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 6,
+      "title": "V",
+      "wordCount": 4910,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 7,
+      "title": "VI",
+      "wordCount": 4585,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 8,
+      "title": "VII",
+      "wordCount": 4929,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 9,
+      "title": "VIII",
+      "wordCount": 4900,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 10,
+      "title": "IX",
+      "wordCount": 6465,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 11,
+      "title": "X",
+      "wordCount": 5408,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 12,
+      "title": "XI",
+      "wordCount": 5103,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 13,
+      "title": "XII",
+      "wordCount": 4782,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 14,
+      "title": "XIII",
+      "wordCount": 5221,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 15,
+      "title": "XIV",
+      "wordCount": 4824,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 16,
+      "title": "XV",
+      "wordCount": 4759,
+      "estimatedMinutes": 19
+    }
+  ]
+}

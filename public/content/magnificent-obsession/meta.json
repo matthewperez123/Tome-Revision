@@ -1,0 +1,148 @@
+{
+  "bookId": "magnificent-obsession",
+  "title": "Magnificent Obsession",
+  "author": "Lloyd C. Douglas",
+  "chapterCount": 23,
+  "totalWordCount": 86871,
+  "totalMinutes": 347,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 4,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I",
+      "wordCount": 6161,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 2,
+      "title": "II",
+      "wordCount": 7107,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 3,
+      "title": "III",
+      "wordCount": 3911,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 4,
+      "title": "IV",
+      "wordCount": 4633,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 5,
+      "title": "V",
+      "wordCount": 2300,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 6,
+      "title": "VI",
+      "wordCount": 2386,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 7,
+      "title": "VII",
+      "wordCount": 2546,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 8,
+      "title": "VIII",
+      "wordCount": 9936,
+      "estimatedMinutes": 40
+    },
+    {
+      "index": 9,
+      "title": "IX",
+      "wordCount": 2318,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 10,
+      "title": "X",
+      "wordCount": 4813,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 11,
+      "title": "XI",
+      "wordCount": 4643,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 12,
+      "title": "XII",
+      "wordCount": 5249,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 13,
+      "title": "XIII",
+      "wordCount": 4217,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 14,
+      "title": "XIV",
+      "wordCount": 2816,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 15,
+      "title": "XV",
+      "wordCount": 3060,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 16,
+      "title": "XVI",
+      "wordCount": 4062,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 17,
+      "title": "XVII",
+      "wordCount": 4549,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 18,
+      "title": "XVIII",
+      "wordCount": 4490,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 19,
+      "title": "XIX",
+      "wordCount": 2885,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 20,
+      "title": "XX",
+      "wordCount": 1628,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 21,
+      "title": "XXI",
+      "wordCount": 2067,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 22,
+      "title": "XXII",
+      "wordCount": 1090,
+      "estimatedMinutes": 4
+    }
+  ]
+}

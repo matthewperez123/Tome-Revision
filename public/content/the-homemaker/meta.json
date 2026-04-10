@@ -1,0 +1,166 @@
+{
+  "bookId": "the-homemaker",
+  "title": "The Homemaker",
+  "author": "Dorothy Canfield Fisher",
+  "chapterCount": 26,
+  "totalWordCount": 69492,
+  "totalMinutes": 278,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Part I",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I",
+      "wordCount": 3342,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 2,
+      "title": "II",
+      "wordCount": 6408,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 3,
+      "title": "III",
+      "wordCount": 3099,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 4,
+      "title": "IV",
+      "wordCount": 3583,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 5,
+      "title": "V",
+      "wordCount": 1529,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 6,
+      "title": "VI",
+      "wordCount": 1112,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 7,
+      "title": "Part II",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 8,
+      "title": "VII",
+      "wordCount": 4503,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 9,
+      "title": "VIII",
+      "wordCount": 4494,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 10,
+      "title": "IX",
+      "wordCount": 4254,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 11,
+      "title": "X",
+      "wordCount": 2802,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 12,
+      "title": "Part III",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 13,
+      "title": "XI",
+      "wordCount": 3258,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 14,
+      "title": "XII",
+      "wordCount": 1319,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 15,
+      "title": "XIII",
+      "wordCount": 1432,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 16,
+      "title": "XIV",
+      "wordCount": 2884,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 17,
+      "title": "XV",
+      "wordCount": 2657,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 18,
+      "title": "XVI",
+      "wordCount": 2897,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 19,
+      "title": "XVII",
+      "wordCount": 5189,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 20,
+      "title": "Part IV",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 21,
+      "title": "XVIII",
+      "wordCount": 1248,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 22,
+      "title": "XIX",
+      "wordCount": 3440,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 23,
+      "title": "XX",
+      "wordCount": 3551,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 24,
+      "title": "XXI",
+      "wordCount": 5317,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 25,
+      "title": "XXII",
+      "wordCount": 1166,
+      "estimatedMinutes": 5
+    }
+  ]
+}

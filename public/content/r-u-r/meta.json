@@ -1,0 +1,40 @@
+{
+  "bookId": "r-u-r",
+  "title": "R.U.R.",
+  "author": "Karel Čapek",
+  "chapterCount": 5,
+  "totalWordCount": 20052,
+  "totalMinutes": 80,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dramatis Personae",
+      "wordCount": 203,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Act I",
+      "wordCount": 6936,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 2,
+      "title": "Act II",
+      "wordCount": 6692,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 3,
+      "title": "Act III",
+      "wordCount": 4432,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 4,
+      "title": "Epilogue",
+      "wordCount": 1789,
+      "estimatedMinutes": 7
+    }
+  ]
+}

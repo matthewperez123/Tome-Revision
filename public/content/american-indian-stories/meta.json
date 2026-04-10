@@ -1,0 +1,82 @@
+{
+  "bookId": "american-indian-stories",
+  "title": "American Indian Stories",
+  "author": "Zitkála-Šá",
+  "chapterCount": 12,
+  "totalWordCount": 32085,
+  "totalMinutes": 128,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Epigraph",
+      "wordCount": 14,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Acknowledgments",
+      "wordCount": 72,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Impressions of an Indian Childhood",
+      "wordCount": 6831,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 3,
+      "title": "The School Days of an Indian Girl",
+      "wordCount": 6021,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 4,
+      "title": "An Indian Teacher Among Indians",
+      "wordCount": 3272,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 5,
+      "title": "Why I Am a Pagan",
+      "wordCount": 1384,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 6,
+      "title": "The Softhearted Sioux",
+      "wordCount": 2913,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 7,
+      "title": "The Trial Path",
+      "wordCount": 1711,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 8,
+      "title": "A Warrior’s Daughter",
+      "wordCount": 2973,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 9,
+      "title": "A Dream of Her Grandfather",
+      "wordCount": 634,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 10,
+      "title": "The Widespread Enigma Concerning Blue-Star Woman",
+      "wordCount": 4480,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 11,
+      "title": "America’s Indian Problem",
+      "wordCount": 1780,
+      "estimatedMinutes": 7
+    }
+  ]
+}

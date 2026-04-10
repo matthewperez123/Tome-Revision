@@ -1,0 +1,442 @@
+{
+  "bookId": "our-mutual-friend",
+  "title": "Our Mutual Friend",
+  "author": "Charles Dickens",
+  "chapterCount": 72,
+  "totalWordCount": 325076,
+  "totalMinutes": 1300,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Book the First: The Cup and the Lip",
+      "wordCount": 8,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I: On the Look Out",
+      "wordCount": 1887,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 2,
+      "title": "II: The Man from Somewhere",
+      "wordCount": 4502,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 3,
+      "title": "III: Another Man",
+      "wordCount": 5602,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 4,
+      "title": "IV: The R. Wilfer Family",
+      "wordCount": 4692,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 5,
+      "title": "V: Boffin’s Bower",
+      "wordCount": 6621,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 6,
+      "title": "VI: Cut Adrift",
+      "wordCount": 6485,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 7,
+      "title": "VII: Mr. Wegg Looks After Himself",
+      "wordCount": 3506,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 8,
+      "title": "VIII: Mr. Boffin in Consultation",
+      "wordCount": 5313,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 9,
+      "title": "IX: Mr. and Mrs. Boffin in Consultation",
+      "wordCount": 5769,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 10,
+      "title": "X: A Marriage Contract",
+      "wordCount": 5401,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 11,
+      "title": "XI: Podsnappery",
+      "wordCount": 6264,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 12,
+      "title": "XII: The Sweat of an Honest Man’s Brow",
+      "wordCount": 6128,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 13,
+      "title": "XIII: Tracking the Bird of Prey",
+      "wordCount": 3936,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 14,
+      "title": "XIV: The Bird of Prey Brought Down",
+      "wordCount": 3262,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 15,
+      "title": "XV: Two New Servants",
+      "wordCount": 5723,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 16,
+      "title": "XVI: Minders and Reminders",
+      "wordCount": 6376,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 17,
+      "title": "XVII: A Dismal Swamp",
+      "wordCount": 1832,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 18,
+      "title": "Book the Second: Birds of a Feather",
+      "wordCount": 7,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 19,
+      "title": "I: Of an Educational Character",
+      "wordCount": 7374,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 20,
+      "title": "II: Still Educational",
+      "wordCount": 4526,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 21,
+      "title": "III: A Piece of Work",
+      "wordCount": 4319,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 22,
+      "title": "IV: Cupid Prompted",
+      "wordCount": 4943,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 23,
+      "title": "V: Mercury Prompting",
+      "wordCount": 5814,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 24,
+      "title": "VI: A Riddle Without an Answer",
+      "wordCount": 5156,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 25,
+      "title": "VII: In Which a Friendly Move Is Originated",
+      "wordCount": 4402,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 26,
+      "title": "VIII: In Which an Innocent Elopement Occurs",
+      "wordCount": 6616,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 27,
+      "title": "IX: In Which the Orphan Makes His Will",
+      "wordCount": 3334,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 28,
+      "title": "X: A Successor",
+      "wordCount": 2518,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 29,
+      "title": "XI: Some Affairs of the Heart",
+      "wordCount": 4848,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 30,
+      "title": "XII: More Birds of Prey",
+      "wordCount": 5913,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 31,
+      "title": "XIII: A Solo and a Duet",
+      "wordCount": 6073,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 32,
+      "title": "XIV: Strong of Purpose",
+      "wordCount": 5301,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 33,
+      "title": "XV: The Whole Case So Far",
+      "wordCount": 6561,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 34,
+      "title": "XVI: An Anniversary Occasion",
+      "wordCount": 4718,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 35,
+      "title": "Book the Third: A Long Lane",
+      "wordCount": 6,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 36,
+      "title": "I: Lodgers in Queer Street",
+      "wordCount": 4912,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 37,
+      "title": "II: A Respected Friend in a New Aspect",
+      "wordCount": 4003,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 38,
+      "title": "III: The Same Respected Friend in More Aspects Than One",
+      "wordCount": 2327,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 39,
+      "title": "IV: A Happy Return of the Day",
+      "wordCount": 4900,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 40,
+      "title": "V: The Golden Dustman Falls Into Bad Company",
+      "wordCount": 6036,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 41,
+      "title": "VI: The Golden Dustman Falls Into Worse Company",
+      "wordCount": 5895,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 42,
+      "title": "VII: The Friendly Move Takes Up a Strong Position",
+      "wordCount": 4666,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 43,
+      "title": "VIII: The End of a Long Journey",
+      "wordCount": 4653,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 44,
+      "title": "IX: Somebody Becomes the Subject of a Prediction",
+      "wordCount": 6789,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 45,
+      "title": "X: Scouts Out",
+      "wordCount": 5260,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 46,
+      "title": "XI: In the Dark",
+      "wordCount": 3802,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 47,
+      "title": "XII: Meaning Mischief",
+      "wordCount": 3186,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 48,
+      "title": "XIII: Give a Dog a Bad Name, and Hang Him",
+      "wordCount": 4116,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 49,
+      "title": "XIV: Mr. Wegg Prepares a Grindstone for Mr. Boffin’s Nose",
+      "wordCount": 5124,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 50,
+      "title": "XV: The Golden Dustman at His Worst",
+      "wordCount": 6112,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 51,
+      "title": "XVI: The Feast of the Three Hobgoblins",
+      "wordCount": 6003,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 52,
+      "title": "XVII: A Social Chorus",
+      "wordCount": 4447,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 53,
+      "title": "Book the Fourth: A Turning",
+      "wordCount": 5,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 54,
+      "title": "I: Setting Traps",
+      "wordCount": 4686,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 55,
+      "title": "II: The Golden Dustman Rises a Little",
+      "wordCount": 3933,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 56,
+      "title": "III: The Golden Dustman Sinks Again",
+      "wordCount": 3974,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 57,
+      "title": "IV: A Runaway Match",
+      "wordCount": 4065,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 58,
+      "title": "V: Concerning the Mendicant’s Bride",
+      "wordCount": 7038,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 59,
+      "title": "VI: A Cry for Help",
+      "wordCount": 5632,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 60,
+      "title": "VII: Better to Be Abel Than Cain",
+      "wordCount": 4607,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 61,
+      "title": "VIII: A Few Grains of Pepper",
+      "wordCount": 4245,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 62,
+      "title": "IX: Two Places Vacated",
+      "wordCount": 4573,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 63,
+      "title": "X: The Dolls’ Dressmaker Discovers a Word",
+      "wordCount": 2717,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 64,
+      "title": "XI: Effect Is Given to the Dolls’ Dressmaker’s Discovery",
+      "wordCount": 4782,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 65,
+      "title": "XII: The Passing Shadow",
+      "wordCount": 5395,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 66,
+      "title": "XIII: Showing How the Golden Dustman Helped to Scatter Dust",
+      "wordCount": 4285,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 67,
+      "title": "XIV: Checkmate to the Friendly Move",
+      "wordCount": 4947,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 68,
+      "title": "XV: What Was Caught in the Traps That Were Set",
+      "wordCount": 4773,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 69,
+      "title": "XVI: Persons and Things in General",
+      "wordCount": 4522,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 70,
+      "title": "XVII: The Voice of Society",
+      "wordCount": 2134,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 71,
+      "title": "Postscript",
+      "wordCount": 796,
+      "estimatedMinutes": 3
+    }
+  ]
+}

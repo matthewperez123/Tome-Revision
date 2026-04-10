@@ -1,0 +1,214 @@
+{
+  "bookId": "brewsters-millions",
+  "title": "Brewster's Millions",
+  "author": "George Barr McCutcheon",
+  "chapterCount": 34,
+  "totalWordCount": 62452,
+  "totalMinutes": 250,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I: A Birthday Dinner",
+      "wordCount": 1256,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 1,
+      "title": "II: Shades of Aladdin",
+      "wordCount": 1153,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 2,
+      "title": "III: Mrs. and Miss Gray",
+      "wordCount": 1862,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 3,
+      "title": "IV: A Second",
+      "wordCount": 2072,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 4,
+      "title": "V: The Message from Jones",
+      "wordCount": 2828,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 5,
+      "title": "VI: Monty Cristo",
+      "wordCount": 2627,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 6,
+      "title": "VII: A Lesson in Tact",
+      "wordCount": 1075,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 7,
+      "title": "VIII: The Forelock of Time",
+      "wordCount": 1395,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 8,
+      "title": "IX: Love and a Prizefight",
+      "wordCount": 1464,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 9,
+      "title": "X: Napoleon of Finance",
+      "wordCount": 1871,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 10,
+      "title": "XI: Coals of Fire",
+      "wordCount": 2313,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 11,
+      "title": "XII: Christmas Despair",
+      "wordCount": 1557,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 12,
+      "title": "XIII: A Friend in Need",
+      "wordCount": 1613,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 13,
+      "title": "XIV: Mrs. DeMille Entertains",
+      "wordCount": 1891,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 14,
+      "title": "XV: The Cut Direct",
+      "wordCount": 2365,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 15,
+      "title": "XVI: In the Sunny South",
+      "wordCount": 2204,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 16,
+      "title": "XVII: The New Tenderfoot",
+      "wordCount": 1584,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 17,
+      "title": "XVIII: The Prodigal at Sea",
+      "wordCount": 1608,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 18,
+      "title": "XIX: One Hero and Another",
+      "wordCount": 1324,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 19,
+      "title": "XX: Le Roi s’amuse",
+      "wordCount": 2448,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 20,
+      "title": "XXI: Fairyland",
+      "wordCount": 1817,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 21,
+      "title": "XXII: Prince and Peasants",
+      "wordCount": 1891,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 22,
+      "title": "XXIII: An Offer of Marriage",
+      "wordCount": 1764,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 23,
+      "title": "XXIV: The Sheik’s Strategy",
+      "wordCount": 2596,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 24,
+      "title": "XXV: The Rescue of Peggy",
+      "wordCount": 1688,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 25,
+      "title": "XXVI: Mutiny",
+      "wordCount": 1667,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 26,
+      "title": "XXVII: A Fair Traitor",
+      "wordCount": 2009,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 27,
+      "title": "XXVIII: A Catastrophe",
+      "wordCount": 1830,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 28,
+      "title": "XXIX: The Prodigal’s Return",
+      "wordCount": 1902,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 29,
+      "title": "XXX: The Promise of Thrift",
+      "wordCount": 1712,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 30,
+      "title": "XXXI: How the Million Disappeared",
+      "wordCount": 1503,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 31,
+      "title": "XXXII: The Night Before",
+      "wordCount": 1511,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 32,
+      "title": "XXXIII: The Flight of Jones",
+      "wordCount": 1841,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 33,
+      "title": "XXXIV: The Last Word",
+      "wordCount": 2211,
+      "estimatedMinutes": 9
+    }
+  ]
+}

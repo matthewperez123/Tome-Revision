@@ -1,0 +1,46 @@
+{
+  "bookId": "he-who-gets-slapped",
+  "title": "He Who Gets Slapped",
+  "author": "Leonid Andreyev",
+  "chapterCount": 6,
+  "totalWordCount": 25525,
+  "totalMinutes": 102,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Introduction",
+      "wordCount": 961,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 1,
+      "title": "Cast of Characters",
+      "wordCount": 74,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Act I",
+      "wordCount": 5748,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 3,
+      "title": "Act II",
+      "wordCount": 6155,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 4,
+      "title": "Act III",
+      "wordCount": 6441,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 5,
+      "title": "Act IV",
+      "wordCount": 6146,
+      "estimatedMinutes": 25
+    }
+  ]
+}

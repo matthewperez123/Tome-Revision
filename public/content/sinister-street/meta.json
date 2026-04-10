@@ -1,0 +1,388 @@
+{
+  "bookId": "sinister-street",
+  "title": "Sinister Street",
+  "author": "Compton Mackenzie",
+  "chapterCount": 63,
+  "totalWordCount": 344165,
+  "totalMinutes": 1377,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "To the Reverend E. D. Stone",
+      "wordCount": 424,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 1,
+      "title": "Epigraph",
+      "wordCount": 45,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Book I: The Prison House",
+      "wordCount": 43,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "I: The New World",
+      "wordCount": 5654,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 4,
+      "title": "II: Bittersweet",
+      "wordCount": 5790,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 5,
+      "title": "III: Fears and Fantasies",
+      "wordCount": 2251,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 6,
+      "title": "IV: Unending Childhood",
+      "wordCount": 7623,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 7,
+      "title": "V: The First Fairy Princess",
+      "wordCount": 4403,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 8,
+      "title": "VI: The Enchanted Palace",
+      "wordCount": 3483,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 9,
+      "title": "VII: Randell House",
+      "wordCount": 4823,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 10,
+      "title": "VIII: Siamese Stamps",
+      "wordCount": 4612,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 11,
+      "title": "IX: Holidays in France",
+      "wordCount": 3814,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 12,
+      "title": "Book II: Classic Education",
+      "wordCount": 60,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 13,
+      "title": "I: The Jacobean",
+      "wordCount": 5654,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 14,
+      "title": "II: The Quadruple Intrigue",
+      "wordCount": 5333,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 15,
+      "title": "III: Pastoral",
+      "wordCount": 3886,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 16,
+      "title": "IV: Boyhood’s Glory",
+      "wordCount": 6450,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 17,
+      "title": "V: Incense",
+      "wordCount": 7363,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 18,
+      "title": "VI: Pax",
+      "wordCount": 4634,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 19,
+      "title": "VII: Cloven Hoofmarks",
+      "wordCount": 4103,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 20,
+      "title": "VIII: Mirrors",
+      "wordCount": 5243,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 21,
+      "title": "IX: The Yellow Age",
+      "wordCount": 8071,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 22,
+      "title": "X: Stella",
+      "wordCount": 3708,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 23,
+      "title": "XI: Action and Reaction",
+      "wordCount": 7428,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 24,
+      "title": "XII: Alan",
+      "wordCount": 2562,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 25,
+      "title": "XIII: Sentiment",
+      "wordCount": 6838,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 26,
+      "title": "XIV: Arabesque",
+      "wordCount": 5555,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 27,
+      "title": "XV: Grey Eyes",
+      "wordCount": 5855,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 28,
+      "title": "XVI: Blue Eyes",
+      "wordCount": 3201,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 29,
+      "title": "XVII: Lily",
+      "wordCount": 5782,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 30,
+      "title": "XVIII: Eighteen Years Old",
+      "wordCount": 6702,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 31,
+      "title": "XIX: Parents",
+      "wordCount": 2871,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 32,
+      "title": "XX: Music",
+      "wordCount": 5459,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 33,
+      "title": "Book III: Dreaming Spires",
+      "wordCount": 61,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 34,
+      "title": "I: The First Day",
+      "wordCount": 8362,
+      "estimatedMinutes": 33
+    },
+    {
+      "index": 35,
+      "title": "II: The First Week",
+      "wordCount": 4223,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 36,
+      "title": "III: The First Term",
+      "wordCount": 4502,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 37,
+      "title": "IV: Cheyne Walk",
+      "wordCount": 6145,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 38,
+      "title": "V: Youth’s Domination",
+      "wordCount": 7770,
+      "estimatedMinutes": 31
+    },
+    {
+      "index": 39,
+      "title": "VI: Gray and Blue",
+      "wordCount": 9805,
+      "estimatedMinutes": 39
+    },
+    {
+      "index": 40,
+      "title": "VII: Venner’s",
+      "wordCount": 6353,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 41,
+      "title": "VIII: The Oxford Looking-Glass",
+      "wordCount": 5077,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 42,
+      "title": "IX: The Lesson of Spain",
+      "wordCount": 7707,
+      "estimatedMinutes": 31
+    },
+    {
+      "index": 43,
+      "title": "X: Stella in Oxford",
+      "wordCount": 4663,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 44,
+      "title": "XI: Sympathy",
+      "wordCount": 6142,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 45,
+      "title": "XII: 202 High",
+      "wordCount": 7233,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 46,
+      "title": "XIII: Plashers Mead",
+      "wordCount": 5563,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 47,
+      "title": "XIV: 99 St. Giles",
+      "wordCount": 5972,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 48,
+      "title": "XV: The Last Term",
+      "wordCount": 3165,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 49,
+      "title": "XVI: The Last Week",
+      "wordCount": 4025,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 50,
+      "title": "XVII: The Last Day",
+      "wordCount": 3935,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 51,
+      "title": "Book IV: Romantic Education",
+      "wordCount": 52,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 52,
+      "title": "I: Ostia Ditis",
+      "wordCount": 6754,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 53,
+      "title": "II: Neptune Crescent",
+      "wordCount": 9457,
+      "estimatedMinutes": 38
+    },
+    {
+      "index": 54,
+      "title": "III: The Café d’Orange",
+      "wordCount": 7580,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 55,
+      "title": "IV: Leppard Street",
+      "wordCount": 16432,
+      "estimatedMinutes": 66
+    },
+    {
+      "index": 56,
+      "title": "V: The Innermost Circle",
+      "wordCount": 4818,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 57,
+      "title": "VI: Tinderbox Lane",
+      "wordCount": 17219,
+      "estimatedMinutes": 69
+    },
+    {
+      "index": 58,
+      "title": "VII: The Gate of Ivory",
+      "wordCount": 9217,
+      "estimatedMinutes": 37
+    },
+    {
+      "index": 59,
+      "title": "VIII: Seeds of Pomegranate",
+      "wordCount": 5309,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 60,
+      "title": "IX: The Gate of Horn",
+      "wordCount": 15015,
+      "estimatedMinutes": 60
+    },
+    {
+      "index": 61,
+      "title": "X: The Old World",
+      "wordCount": 707,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 62,
+      "title": "Epilogical Letter to John Nicolas Mavrogordato",
+      "wordCount": 1179,
+      "estimatedMinutes": 5
+    }
+  ]
+}

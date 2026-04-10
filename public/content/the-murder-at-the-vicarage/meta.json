@@ -1,0 +1,208 @@
+{
+  "bookId": "the-murder-at-the-vicarage",
+  "title": "The Murder at the Vicarage",
+  "author": "Agatha Christie",
+  "chapterCount": 33,
+  "totalWordCount": 69496,
+  "totalMinutes": 278,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I",
+      "wordCount": 1878,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 2,
+      "title": "II",
+      "wordCount": 2473,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 3,
+      "title": "III",
+      "wordCount": 2388,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 4,
+      "title": "IV",
+      "wordCount": 2689,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 5,
+      "title": "V",
+      "wordCount": 1940,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 6,
+      "title": "VI",
+      "wordCount": 2839,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 7,
+      "title": "VII",
+      "wordCount": 1133,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 8,
+      "title": "VIII",
+      "wordCount": 1686,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 9,
+      "title": "IX",
+      "wordCount": 1710,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 10,
+      "title": "X",
+      "wordCount": 2304,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 11,
+      "title": "XI",
+      "wordCount": 2486,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 12,
+      "title": "XII",
+      "wordCount": 3299,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 13,
+      "title": "XIII",
+      "wordCount": 1821,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 14,
+      "title": "XIV",
+      "wordCount": 1921,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 15,
+      "title": "XV",
+      "wordCount": 2308,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 16,
+      "title": "XVI",
+      "wordCount": 3305,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 17,
+      "title": "XVII",
+      "wordCount": 2171,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 18,
+      "title": "XVIII",
+      "wordCount": 2465,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 19,
+      "title": "XIX",
+      "wordCount": 2133,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 20,
+      "title": "XX",
+      "wordCount": 1787,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 21,
+      "title": "XXI",
+      "wordCount": 1203,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 22,
+      "title": "XXII",
+      "wordCount": 3864,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 23,
+      "title": "XXIII",
+      "wordCount": 2337,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 24,
+      "title": "XXIV",
+      "wordCount": 1779,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 25,
+      "title": "XXV",
+      "wordCount": 4000,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 26,
+      "title": "XXVI",
+      "wordCount": 3390,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 27,
+      "title": "XXVII",
+      "wordCount": 940,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 28,
+      "title": "XXVIII",
+      "wordCount": 546,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 29,
+      "title": "XXIX",
+      "wordCount": 1637,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 30,
+      "title": "XXX",
+      "wordCount": 2906,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 31,
+      "title": "XXXI",
+      "wordCount": 668,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 32,
+      "title": "XXXII",
+      "wordCount": 1488,
+      "estimatedMinutes": 6
+    }
+  ]
+}

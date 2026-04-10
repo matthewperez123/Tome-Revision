@@ -1,0 +1,76 @@
+{
+  "bookId": "honeycomb",
+  "title": "Honeycomb",
+  "author": "Dorothy M. Richardson",
+  "chapterCount": 11,
+  "totalWordCount": 49514,
+  "totalMinutes": 198,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I",
+      "wordCount": 4710,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 1,
+      "title": "II",
+      "wordCount": 2437,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 2,
+      "title": "III",
+      "wordCount": 7114,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 3,
+      "title": "IV",
+      "wordCount": 6248,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 4,
+      "title": "V",
+      "wordCount": 3482,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 5,
+      "title": "VI",
+      "wordCount": 1205,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 6,
+      "title": "VII",
+      "wordCount": 1376,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 7,
+      "title": "VIII",
+      "wordCount": 3001,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 8,
+      "title": "IX",
+      "wordCount": 4041,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 9,
+      "title": "X",
+      "wordCount": 11483,
+      "estimatedMinutes": 46
+    },
+    {
+      "index": 10,
+      "title": "XI",
+      "wordCount": 4417,
+      "estimatedMinutes": 18
+    }
+  ]
+}

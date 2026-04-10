@@ -1,0 +1,28 @@
+{
+  "bookId": "the-painted-veil",
+  "title": "The Painted Veil",
+  "author": "W. Somerset Maugham",
+  "chapterCount": 3,
+  "totalWordCount": 72635,
+  "totalMinutes": 291,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Epigraph",
+      "wordCount": 10,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Preface",
+      "wordCount": 1201,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 2,
+      "title": "The Painted Veil",
+      "wordCount": 71424,
+      "estimatedMinutes": 286
+    }
+  ]
+}

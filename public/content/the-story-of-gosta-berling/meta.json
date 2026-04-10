@@ -1,0 +1,262 @@
+{
+  "bookId": "the-story-of-gosta-berling",
+  "title": "The Story of Gösta Berling",
+  "author": "Selma Lagerlöf",
+  "chapterCount": 42,
+  "totalWordCount": 128287,
+  "totalMinutes": 513,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Translator’s Preface",
+      "wordCount": 148,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Introduction",
+      "wordCount": 1,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "I: The Priest",
+      "wordCount": 2830,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 3,
+      "title": "II: The Beggar",
+      "wordCount": 4336,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 4,
+      "title": "Part I",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 5,
+      "title": "I: The Landscape",
+      "wordCount": 1268,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 6,
+      "title": "II: Christmas Eve",
+      "wordCount": 4000,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 7,
+      "title": "III: Christmas Day",
+      "wordCount": 3602,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 8,
+      "title": "IV: Gösta Berling, Poet",
+      "wordCount": 4179,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 9,
+      "title": "V: La Cachucha",
+      "wordCount": 1127,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 10,
+      "title": "VI: The Ball at Ekeby",
+      "wordCount": 5857,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 11,
+      "title": "VII: The Old Vehicles",
+      "wordCount": 4344,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 12,
+      "title": "VIII: The Great Bear in Gurlitta Cliff",
+      "wordCount": 4615,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 13,
+      "title": "IX: The Auction at Björne",
+      "wordCount": 8792,
+      "estimatedMinutes": 35
+    },
+    {
+      "index": 14,
+      "title": "X: The Young Countess",
+      "wordCount": 8051,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 15,
+      "title": "XI: Ghost-Stories",
+      "wordCount": 4127,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 16,
+      "title": "XII: Ebba Dohna’s Story",
+      "wordCount": 6083,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 17,
+      "title": "XIII: Mamselle Marie",
+      "wordCount": 3088,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 18,
+      "title": "Part II",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 19,
+      "title": "I: Cousin Christopher",
+      "wordCount": 1692,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 20,
+      "title": "II: The Paths of Life",
+      "wordCount": 4111,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 21,
+      "title": "III: Penitence",
+      "wordCount": 3398,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 22,
+      "title": "IV: The Iron from Ekeby",
+      "wordCount": 3206,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 23,
+      "title": "V: Lilliecrona’s Home",
+      "wordCount": 1862,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 24,
+      "title": "VI: The Witch of Dovre",
+      "wordCount": 1524,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 25,
+      "title": "VII: Midsummer",
+      "wordCount": 1283,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 26,
+      "title": "VIII: Madame Musica",
+      "wordCount": 1689,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 27,
+      "title": "IX: The Broby Clergyman",
+      "wordCount": 1651,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 28,
+      "title": "X: Patron Julius",
+      "wordCount": 2253,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 29,
+      "title": "XI: The Plaster Saints",
+      "wordCount": 2070,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 30,
+      "title": "XII: God’s Wayfarer",
+      "wordCount": 3581,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 31,
+      "title": "XIII: The Churchyard",
+      "wordCount": 1155,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 32,
+      "title": "XIV: Old Songs",
+      "wordCount": 3279,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 33,
+      "title": "XV: Death, the Deliverer",
+      "wordCount": 1965,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 34,
+      "title": "XVI: The Drought",
+      "wordCount": 3254,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 35,
+      "title": "XVII: The Child’s Mother",
+      "wordCount": 2719,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 36,
+      "title": "XVIII: Amor Vincit Omnia",
+      "wordCount": 1738,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 37,
+      "title": "XIX: The Broom-Girl",
+      "wordCount": 3784,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 38,
+      "title": "XX: Kevenhüller",
+      "wordCount": 3178,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 39,
+      "title": "XXI: Broby Fair",
+      "wordCount": 2286,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 40,
+      "title": "XXII: The Forest Cottage",
+      "wordCount": 5096,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 41,
+      "title": "XXIII: Margareta Celsing",
+      "wordCount": 5061,
+      "estimatedMinutes": 20
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "bookId": "nonsense-books",
+  "title": "Nonsense Books",
+  "author": "Edward Lear",
+  "chapterCount": 6,
+  "totalWordCount": 28352,
+  "totalMinutes": 113,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "“How Pleasant to Know Mr. Lear!”",
+      "wordCount": 253,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Introduction",
+      "wordCount": 3745,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 2,
+      "title": "A Book of Nonsense",
+      "wordCount": 3507,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 3,
+      "title": "Nonsense Songs, Stories, Botany, and Alphabets",
+      "wordCount": 10927,
+      "estimatedMinutes": 44
+    },
+    {
+      "index": 4,
+      "title": "More Nonsense Pictures, Rhymes, Botany, etc.",
+      "wordCount": 4392,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 5,
+      "title": "Laughable Lyrics: A Fourth Book of Nonsense Poems, Songs, Botany, Music, etc.",
+      "wordCount": 5528,
+      "estimatedMinutes": 22
+    }
+  ]
+}

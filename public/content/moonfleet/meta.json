@@ -1,0 +1,142 @@
+{
+  "bookId": "moonfleet",
+  "title": "Moonfleet",
+  "author": "John Meade Falkner",
+  "chapterCount": 22,
+  "totalWordCount": 83314,
+  "totalMinutes": 333,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Epigraph",
+      "wordCount": 21,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Dedication",
+      "wordCount": 13,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "Epigraph",
+      "wordCount": 142,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "I: In Moonfleet Village",
+      "wordCount": 3908,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 4,
+      "title": "II: The Floods",
+      "wordCount": 4018,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 5,
+      "title": "III: A Discovery",
+      "wordCount": 4770,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 6,
+      "title": "IV: In the Vault",
+      "wordCount": 6361,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 7,
+      "title": "V: The Rescue",
+      "wordCount": 1938,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 8,
+      "title": "VI: An Assault",
+      "wordCount": 2635,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 9,
+      "title": "VII: An Auction",
+      "wordCount": 3248,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 10,
+      "title": "VIII: The Landing",
+      "wordCount": 4446,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 11,
+      "title": "IX: A Judgement",
+      "wordCount": 2556,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 12,
+      "title": "X: The Escape",
+      "wordCount": 6041,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 13,
+      "title": "XI: The Sea-Cave",
+      "wordCount": 3213,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 14,
+      "title": "XII: A Funeral",
+      "wordCount": 6356,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 15,
+      "title": "XIII: An Interview",
+      "wordCount": 4166,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 16,
+      "title": "XIV: The Well-House",
+      "wordCount": 3234,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 17,
+      "title": "XV: The Well",
+      "wordCount": 4140,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 18,
+      "title": "XVI: The Jewel",
+      "wordCount": 8142,
+      "estimatedMinutes": 33
+    },
+    {
+      "index": 19,
+      "title": "XVII: At Ymeguen",
+      "wordCount": 2645,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 20,
+      "title": "XVIII: In the Bay",
+      "wordCount": 4871,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 21,
+      "title": "XIX: On the Beach",
+      "wordCount": 6450,
+      "estimatedMinutes": 26
+    }
+  ]
+}

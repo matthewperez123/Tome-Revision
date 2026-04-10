@@ -1,0 +1,238 @@
+{
+  "bookId": "the-worm-ouroboros",
+  "title": "The Worm Ouroboros",
+  "author": "E. R. Eddison",
+  "chapterCount": 38,
+  "totalWordCount": 169615,
+  "totalMinutes": 678,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 116,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Epigraph",
+      "wordCount": 164,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "The Induction",
+      "wordCount": 1341,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 3,
+      "title": "I: The Castle of Lord Juss",
+      "wordCount": 5442,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 4,
+      "title": "II: The Wrastling for Demonland",
+      "wordCount": 5217,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 5,
+      "title": "III: The Red Foliot",
+      "wordCount": 5872,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 6,
+      "title": "IV: Conjuring in the Iron Tower",
+      "wordCount": 6529,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 7,
+      "title": "V: King Gorice’s Sending",
+      "wordCount": 2733,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 8,
+      "title": "VI: The Claws of Witchland",
+      "wordCount": 2677,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 9,
+      "title": "VII: Guests of the King in Carcë",
+      "wordCount": 10166,
+      "estimatedMinutes": 41
+    },
+    {
+      "index": 10,
+      "title": "VIII: The First Expedition to Impland",
+      "wordCount": 5814,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 11,
+      "title": "IX: Salapanta Hills",
+      "wordCount": 6425,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 12,
+      "title": "X: The Marchlands of the Moruna",
+      "wordCount": 2822,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 13,
+      "title": "XI: The Burg of Eshgrar Ogo",
+      "wordCount": 6283,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 14,
+      "title": "XII: Koshtra Pivrarcha",
+      "wordCount": 10613,
+      "estimatedMinutes": 42
+    },
+    {
+      "index": 15,
+      "title": "XIII: Koshtra Belorn",
+      "wordCount": 5059,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 16,
+      "title": "XIV: The Lake of Ravary",
+      "wordCount": 3333,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 17,
+      "title": "XV: Queen Prezmyra",
+      "wordCount": 3556,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 18,
+      "title": "XVI: The Lady Sriva’s Embassage",
+      "wordCount": 4671,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 19,
+      "title": "XVII: The King Flies His Haggard",
+      "wordCount": 4488,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 20,
+      "title": "XVIII: The Murther of Gallandus by Corsus",
+      "wordCount": 4945,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 21,
+      "title": "XIX: Thremnir’s Heugh",
+      "wordCount": 4438,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 22,
+      "title": "XX: King Corinius",
+      "wordCount": 2106,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 23,
+      "title": "XXI: The Parley Before Krothering",
+      "wordCount": 2131,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 24,
+      "title": "XXII: Aurwath and Switchwater",
+      "wordCount": 4151,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 25,
+      "title": "XXIII: The Weird Begun of Ishnain Nemartra",
+      "wordCount": 2314,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 26,
+      "title": "XXIV: A King in Krothering",
+      "wordCount": 4908,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 27,
+      "title": "XXV: Lord Gro and the Lady Mevrian",
+      "wordCount": 4840,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 28,
+      "title": "XXVI: The Battle of Krothering Side",
+      "wordCount": 7222,
+      "estimatedMinutes": 29
+    },
+    {
+      "index": 29,
+      "title": "XXVII: The Second Expedition to Impland",
+      "wordCount": 5803,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 30,
+      "title": "XXVIII: Zora Rach Nam Psarrion",
+      "wordCount": 4681,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 31,
+      "title": "XXIX: The Fleet at Muelva",
+      "wordCount": 897,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 32,
+      "title": "XXX: Tidings of Melikaphkhaz",
+      "wordCount": 4463,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 33,
+      "title": "XXXI: The Demons Before Carcë",
+      "wordCount": 8601,
+      "estimatedMinutes": 34
+    },
+    {
+      "index": 34,
+      "title": "XXXII: The Latter End of All the Lords of Witchland",
+      "wordCount": 6168,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 35,
+      "title": "XXXIII: Queen Sophonisba in Galing",
+      "wordCount": 6938,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 36,
+      "title": "Argument: With Dates",
+      "wordCount": 1372,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 37,
+      "title": "Bibliographical Note on the Verses",
+      "wordCount": 316,
+      "estimatedMinutes": 1
+    }
+  ]
+}

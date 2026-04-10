@@ -1,0 +1,334 @@
+{
+  "bookId": "riceyman-steps",
+  "title": "Riceyman Steps",
+  "author": "Arnold Bennett",
+  "chapterCount": 54,
+  "totalWordCount": 94711,
+  "totalMinutes": 379,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Part I",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I: Riceyman Steps",
+      "wordCount": 913,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 2,
+      "title": "II: The Customer",
+      "wordCount": 1467,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 3,
+      "title": "III: The Bookseller at Home",
+      "wordCount": 1404,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 4,
+      "title": "IV: Elsie",
+      "wordCount": 2007,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 5,
+      "title": "V: The Gift",
+      "wordCount": 1550,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 6,
+      "title": "VI: Mrs. Arb’s Case",
+      "wordCount": 1137,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 7,
+      "title": "VII: Under an Umbrella",
+      "wordCount": 922,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 8,
+      "title": "VIII: The Carving-Knife",
+      "wordCount": 1835,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 9,
+      "title": "IX: Sunday Morning",
+      "wordCount": 1190,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 10,
+      "title": "X: Riceyman Square",
+      "wordCount": 1217,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 11,
+      "title": "XI: Elsie’s Home",
+      "wordCount": 1803,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 12,
+      "title": "XII: The Benefactress",
+      "wordCount": 1041,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 13,
+      "title": "XIII: The Passion",
+      "wordCount": 2628,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 14,
+      "title": "XIV: A Man’s Private Life",
+      "wordCount": 2423,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 15,
+      "title": "Part II",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 16,
+      "title": "I: The Day Before",
+      "wordCount": 2595,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 17,
+      "title": "II: Elsie’s Retreat",
+      "wordCount": 1237,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 18,
+      "title": "III: Waxworks",
+      "wordCount": 2790,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 19,
+      "title": "IV: Vacuum",
+      "wordCount": 1031,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 20,
+      "title": "V: The Priestess",
+      "wordCount": 3542,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 21,
+      "title": "VI: The Next Day",
+      "wordCount": 1854,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 22,
+      "title": "Part III",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 23,
+      "title": "I: Early Morning",
+      "wordCount": 1230,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 24,
+      "title": "II: After Breakfast",
+      "wordCount": 2601,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 25,
+      "title": "III: International",
+      "wordCount": 1435,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 26,
+      "title": "IV: Afternoon",
+      "wordCount": 1717,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 27,
+      "title": "V: Tea",
+      "wordCount": 3122,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 28,
+      "title": "VI: Evening",
+      "wordCount": 3967,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 29,
+      "title": "Part IV",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 30,
+      "title": "I: At the Window",
+      "wordCount": 2015,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 31,
+      "title": "II: Elsie’s Motive",
+      "wordCount": 1796,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 32,
+      "title": "III: Charity",
+      "wordCount": 2821,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 33,
+      "title": "IV: No Verdict",
+      "wordCount": 1709,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 34,
+      "title": "V: Midnight",
+      "wordCount": 1180,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 35,
+      "title": "VI: Henry’s Plot",
+      "wordCount": 1115,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 36,
+      "title": "VII: The Night-Call",
+      "wordCount": 2653,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 37,
+      "title": "VIII: On the Landing",
+      "wordCount": 2355,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 38,
+      "title": "IX: Violet’s Victory",
+      "wordCount": 1974,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 39,
+      "title": "X: Departure",
+      "wordCount": 1453,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 40,
+      "title": "Part V",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 41,
+      "title": "I: The Promise",
+      "wordCount": 1445,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 42,
+      "title": "II: The Refusal",
+      "wordCount": 1225,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 43,
+      "title": "III: The Message of Violet",
+      "wordCount": 3192,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 44,
+      "title": "IV: Out of the Rain",
+      "wordCount": 2149,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 45,
+      "title": "V: The Two Patients",
+      "wordCount": 1351,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 46,
+      "title": "VI: The Second Refusal",
+      "wordCount": 1922,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 47,
+      "title": "VII: Malaria",
+      "wordCount": 1289,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 48,
+      "title": "VIII: A Climax",
+      "wordCount": 5244,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 49,
+      "title": "IX: The Kiss",
+      "wordCount": 1419,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 50,
+      "title": "X: The Safe",
+      "wordCount": 1442,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 51,
+      "title": "XI: Prison",
+      "wordCount": 1296,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 52,
+      "title": "XII: Asleep",
+      "wordCount": 1210,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 53,
+      "title": "XIII: Disappearance of T. T.’s",
+      "wordCount": 3788,
+      "estimatedMinutes": 15
+    }
+  ]
+}

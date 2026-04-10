@@ -1,0 +1,46 @@
+{
+  "bookId": "the-bridge-of-san-luis-rey",
+  "title": "The Bridge of San Luis Rey",
+  "author": "Thornton Wilder",
+  "chapterCount": 6,
+  "totalWordCount": 32329,
+  "totalMinutes": 129,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 3,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Part One: Perhaps an Accident",
+      "wordCount": 1487,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 2,
+      "title": "Part Two: The Marquesa de Montemayor; Pepita",
+      "wordCount": 9164,
+      "estimatedMinutes": 37
+    },
+    {
+      "index": 3,
+      "title": "Part Three: Esteban",
+      "wordCount": 7829,
+      "estimatedMinutes": 31
+    },
+    {
+      "index": 4,
+      "title": "Part Four: Uncle Pio; Don Jaime",
+      "wordCount": 10022,
+      "estimatedMinutes": 40
+    },
+    {
+      "index": 5,
+      "title": "Part Five: Perhaps an Intention",
+      "wordCount": 3824,
+      "estimatedMinutes": 15
+    }
+  ]
+}

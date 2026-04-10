@@ -1,0 +1,142 @@
+{
+  "bookId": "la-bas",
+  "title": "Là-Bas",
+  "author": "J.-K. Huysmans",
+  "chapterCount": 22,
+  "totalWordCount": 89693,
+  "totalMinutes": 359,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I",
+      "wordCount": 4269,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 1,
+      "title": "II",
+      "wordCount": 2487,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 2,
+      "title": "III",
+      "wordCount": 4974,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 3,
+      "title": "IV",
+      "wordCount": 3943,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 4,
+      "title": "V",
+      "wordCount": 5409,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 5,
+      "title": "VI",
+      "wordCount": 5290,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 6,
+      "title": "VII",
+      "wordCount": 5468,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 7,
+      "title": "VIII",
+      "wordCount": 6231,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 8,
+      "title": "IX",
+      "wordCount": 6130,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 9,
+      "title": "X",
+      "wordCount": 3109,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 10,
+      "title": "XI",
+      "wordCount": 3574,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 11,
+      "title": "XII",
+      "wordCount": 2876,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 12,
+      "title": "XIII",
+      "wordCount": 2869,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 13,
+      "title": "XIV",
+      "wordCount": 3581,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 14,
+      "title": "XV",
+      "wordCount": 3132,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 15,
+      "title": "XVI",
+      "wordCount": 3630,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 16,
+      "title": "XVII",
+      "wordCount": 4118,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 17,
+      "title": "XVIII",
+      "wordCount": 3448,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 18,
+      "title": "XIX",
+      "wordCount": 3838,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 19,
+      "title": "XX",
+      "wordCount": 5907,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 20,
+      "title": "XXI",
+      "wordCount": 3116,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 21,
+      "title": "XXII",
+      "wordCount": 2294,
+      "estimatedMinutes": 9
+    }
+  ]
+}

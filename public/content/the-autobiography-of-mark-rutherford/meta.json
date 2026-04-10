@@ -1,0 +1,76 @@
+{
+  "bookId": "the-autobiography-of-mark-rutherford",
+  "title": "The Autobiography of Mark Rutherford",
+  "author": "Mark Rutherford",
+  "chapterCount": 11,
+  "totalWordCount": 42871,
+  "totalMinutes": 171,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface to the Second Edition",
+      "wordCount": 752,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 1,
+      "title": "Epigraph",
+      "wordCount": 316,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "I: Childhood",
+      "wordCount": 3203,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 3,
+      "title": "II: Preparation",
+      "wordCount": 4136,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 4,
+      "title": "III: Water Lane",
+      "wordCount": 4549,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 5,
+      "title": "IV: Edward Gibbon Mardon",
+      "wordCount": 3885,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 6,
+      "title": "V: Miss Arbour",
+      "wordCount": 5473,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 7,
+      "title": "VI: Ellen and Mary",
+      "wordCount": 6038,
+      "estimatedMinutes": 24
+    },
+    {
+      "index": 8,
+      "title": "VII: Emancipation",
+      "wordCount": 3527,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 9,
+      "title": "VIII: Progress in Emancipation",
+      "wordCount": 3655,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 10,
+      "title": "IX: Oxford Street",
+      "wordCount": 7337,
+      "estimatedMinutes": 29
+    }
+  ]
+}

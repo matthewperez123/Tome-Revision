@@ -1,0 +1,40 @@
+{
+  "bookId": "the-house-without-windows",
+  "title": "The House Without Windows",
+  "author": "Barbara Newhall Follett",
+  "chapterCount": 5,
+  "totalWordCount": 34683,
+  "totalMinutes": 139,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 10,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "I: The Meadow",
+      "wordCount": 13055,
+      "estimatedMinutes": 52
+    },
+    {
+      "index": 2,
+      "title": "II: The Sea",
+      "wordCount": 8357,
+      "estimatedMinutes": 33
+    },
+    {
+      "index": 3,
+      "title": "III: The Mountains",
+      "wordCount": 10698,
+      "estimatedMinutes": 43
+    },
+    {
+      "index": 4,
+      "title": "Historical Note",
+      "wordCount": 2563,
+      "estimatedMinutes": 10
+    }
+  ]
+}

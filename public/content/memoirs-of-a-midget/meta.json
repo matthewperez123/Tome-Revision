@@ -1,0 +1,406 @@
+{
+  "bookId": "memoirs-of-a-midget",
+  "title": "Memoirs of a Midget",
+  "author": "Walter de la Mare",
+  "chapterCount": 66,
+  "totalWordCount": 149668,
+  "totalMinutes": 599,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 6,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Introduction",
+      "wordCount": 2123,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 2,
+      "title": "Epigraph",
+      "wordCount": 106,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 3,
+      "title": "Lyndsey",
+      "wordCount": 1,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 4,
+      "title": "I",
+      "wordCount": 2256,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 5,
+      "title": "II",
+      "wordCount": 3160,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 6,
+      "title": "III",
+      "wordCount": 2475,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 7,
+      "title": "IV",
+      "wordCount": 2841,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 8,
+      "title": "V",
+      "wordCount": 2097,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 9,
+      "title": "VI",
+      "wordCount": 2875,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 10,
+      "title": "VII",
+      "wordCount": 3179,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 11,
+      "title": "Beechwood",
+      "wordCount": 1,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 12,
+      "title": "VIII",
+      "wordCount": 1699,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 13,
+      "title": "IX",
+      "wordCount": 3007,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 14,
+      "title": "X",
+      "wordCount": 2998,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 15,
+      "title": "XI",
+      "wordCount": 3715,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 16,
+      "title": "XII",
+      "wordCount": 3030,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 17,
+      "title": "XIII",
+      "wordCount": 3495,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 18,
+      "title": "XIV",
+      "wordCount": 4044,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 19,
+      "title": "XV",
+      "wordCount": 2417,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 20,
+      "title": "XVI",
+      "wordCount": 2684,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 21,
+      "title": "XVII",
+      "wordCount": 2892,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 22,
+      "title": "Wanderslore",
+      "wordCount": 1,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 23,
+      "title": "XVIII",
+      "wordCount": 2503,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 24,
+      "title": "XIX",
+      "wordCount": 4180,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 25,
+      "title": "XX",
+      "wordCount": 2636,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 26,
+      "title": "XXI",
+      "wordCount": 2028,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 27,
+      "title": "XXII",
+      "wordCount": 2197,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 28,
+      "title": "XXIII",
+      "wordCount": 1731,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 29,
+      "title": "XXIV",
+      "wordCount": 2354,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 30,
+      "title": "XXV",
+      "wordCount": 2454,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 31,
+      "title": "XXVI",
+      "wordCount": 4411,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 32,
+      "title": "XXVII",
+      "wordCount": 2652,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 33,
+      "title": "XXVIII",
+      "wordCount": 2944,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 34,
+      "title": "Lyme Regis",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 35,
+      "title": "XXIX",
+      "wordCount": 2740,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 36,
+      "title": "XXX",
+      "wordCount": 1457,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 37,
+      "title": "XXXI",
+      "wordCount": 3944,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 38,
+      "title": "London",
+      "wordCount": 1,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 39,
+      "title": "XXXII",
+      "wordCount": 3331,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 40,
+      "title": "XXXIII",
+      "wordCount": 3069,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 41,
+      "title": "XXXIV",
+      "wordCount": 3082,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 42,
+      "title": "XXXV",
+      "wordCount": 2243,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 43,
+      "title": "XXXVI",
+      "wordCount": 1877,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 44,
+      "title": "XXXVII",
+      "wordCount": 3169,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 45,
+      "title": "XXXVIII",
+      "wordCount": 1955,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 46,
+      "title": "XXXIX",
+      "wordCount": 3957,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 47,
+      "title": "XL",
+      "wordCount": 2494,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 48,
+      "title": "XLI",
+      "wordCount": 3369,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 49,
+      "title": "XLII",
+      "wordCount": 2942,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 50,
+      "title": "XLIII",
+      "wordCount": 1772,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 51,
+      "title": "Monks’ House",
+      "wordCount": 2,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 52,
+      "title": "XLIV",
+      "wordCount": 1744,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 53,
+      "title": "XLV",
+      "wordCount": 2409,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 54,
+      "title": "XLVI",
+      "wordCount": 3432,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 55,
+      "title": "XLVII",
+      "wordCount": 2655,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 56,
+      "title": "XLVIII",
+      "wordCount": 3108,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 57,
+      "title": "XLIX",
+      "wordCount": 1802,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 58,
+      "title": "Wanderslore",
+      "wordCount": 1,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 59,
+      "title": "L",
+      "wordCount": 3042,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 60,
+      "title": "LI",
+      "wordCount": 4052,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 61,
+      "title": "LII",
+      "wordCount": 2114,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 62,
+      "title": "LIII",
+      "wordCount": 1008,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 63,
+      "title": "LIV",
+      "wordCount": 1297,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 64,
+      "title": "Lyndsey",
+      "wordCount": 1,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 65,
+      "title": "LV",
+      "wordCount": 405,
+      "estimatedMinutes": 2
+    }
+  ]
+}

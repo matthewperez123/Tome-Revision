@@ -1,0 +1,172 @@
+{
+  "bookId": "the-devils-dictionary",
+  "title": "The Devil's Dictionary",
+  "author": "Ambrose Bierce",
+  "chapterCount": 27,
+  "totalWordCount": 60324,
+  "totalMinutes": 241,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Author’s Preface",
+      "wordCount": 335,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "A",
+      "wordCount": 3726,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 2,
+      "title": "B",
+      "wordCount": 1868,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 3,
+      "title": "C",
+      "wordCount": 3006,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 4,
+      "title": "D",
+      "wordCount": 2520,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 5,
+      "title": "E",
+      "wordCount": 2669,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 6,
+      "title": "F",
+      "wordCount": 3155,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 7,
+      "title": "G",
+      "wordCount": 2304,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 8,
+      "title": "H",
+      "wordCount": 2994,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 9,
+      "title": "I",
+      "wordCount": 4944,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 10,
+      "title": "J",
+      "wordCount": 454,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 11,
+      "title": "K",
+      "wordCount": 886,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 12,
+      "title": "L",
+      "wordCount": 3713,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 13,
+      "title": "M",
+      "wordCount": 3714,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 14,
+      "title": "N",
+      "wordCount": 710,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 15,
+      "title": "O",
+      "wordCount": 1948,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 16,
+      "title": "P",
+      "wordCount": 3755,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 17,
+      "title": "Q",
+      "wordCount": 295,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 18,
+      "title": "R",
+      "wordCount": 4530,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 19,
+      "title": "S",
+      "wordCount": 6215,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 20,
+      "title": "T",
+      "wordCount": 2784,
+      "estimatedMinutes": 11
+    },
+    {
+      "index": 21,
+      "title": "U",
+      "wordCount": 695,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 22,
+      "title": "V",
+      "wordCount": 218,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 23,
+      "title": "W",
+      "wordCount": 1807,
+      "estimatedMinutes": 7
+    },
+    {
+      "index": 24,
+      "title": "X",
+      "wordCount": 124,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 25,
+      "title": "Y",
+      "wordCount": 293,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 26,
+      "title": "Z",
+      "wordCount": 662,
+      "estimatedMinutes": 3
+    }
+  ]
+}

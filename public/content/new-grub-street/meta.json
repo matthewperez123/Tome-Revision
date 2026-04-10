@@ -1,0 +1,232 @@
+{
+  "bookId": "new-grub-street",
+  "title": "New Grub Street",
+  "author": "George Gissing",
+  "chapterCount": 37,
+  "totalWordCount": 185882,
+  "totalMinutes": 744,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I: A Man of His Day",
+      "wordCount": 3917,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 1,
+      "title": "II: The House of Yule",
+      "wordCount": 4106,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 2,
+      "title": "III: Holiday",
+      "wordCount": 6585,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 3,
+      "title": "IV: An Author and His Wife",
+      "wordCount": 4067,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 4,
+      "title": "V: The Way Hither",
+      "wordCount": 4503,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 5,
+      "title": "VI: The Practical Friend",
+      "wordCount": 4213,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 6,
+      "title": "VII: Marian’s Home",
+      "wordCount": 8029,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 7,
+      "title": "VIII: To the Winning Side",
+      "wordCount": 6821,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 8,
+      "title": "IX: Invita Minerva",
+      "wordCount": 4364,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 9,
+      "title": "X: The Friends of the Family",
+      "wordCount": 5816,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 10,
+      "title": "XI: Respite",
+      "wordCount": 2209,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 11,
+      "title": "XII: Work Without Hope",
+      "wordCount": 3975,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 12,
+      "title": "XIII: A Warning",
+      "wordCount": 3140,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 13,
+      "title": "XIV: Recruits",
+      "wordCount": 5002,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 14,
+      "title": "XV: The Last Resource",
+      "wordCount": 6382,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 15,
+      "title": "XVI: Rejection",
+      "wordCount": 5460,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 16,
+      "title": "XVII: The Parting",
+      "wordCount": 5433,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 17,
+      "title": "XVIII: The Old Home",
+      "wordCount": 4604,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 18,
+      "title": "XIX: The Past Revived",
+      "wordCount": 4415,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 19,
+      "title": "XX: The End of Waiting",
+      "wordCount": 5297,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 20,
+      "title": "XXI: Mr. Yule Leaves Town",
+      "wordCount": 7538,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 21,
+      "title": "XXII: The Legatees",
+      "wordCount": 4836,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 22,
+      "title": "XXIII: A Proposed Investment",
+      "wordCount": 4674,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 23,
+      "title": "XXIV: Jasper’s Magnanimity",
+      "wordCount": 4837,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 24,
+      "title": "XXV: A Fruitless Meeting",
+      "wordCount": 6352,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 25,
+      "title": "XXVI: Married Woman’s Property",
+      "wordCount": 4222,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 26,
+      "title": "XXVII: The Lonely Man",
+      "wordCount": 6910,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 27,
+      "title": "XXVIII: Interim",
+      "wordCount": 5076,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 28,
+      "title": "XXIX: Catastrophe",
+      "wordCount": 5870,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 29,
+      "title": "XXX: Waiting on Destiny",
+      "wordCount": 4445,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 30,
+      "title": "XXXI: A Rescue and a Summons",
+      "wordCount": 6277,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 31,
+      "title": "XXXII: Reardon Becomes Practical",
+      "wordCount": 4706,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 32,
+      "title": "XXXIII: The Sunny Way",
+      "wordCount": 4758,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 33,
+      "title": "XXXIV: A Check",
+      "wordCount": 6149,
+      "estimatedMinutes": 25
+    },
+    {
+      "index": 34,
+      "title": "XXXV: Fever and Rest",
+      "wordCount": 3095,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 35,
+      "title": "XXXVI: Jasper’s Delicate Case",
+      "wordCount": 4412,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 36,
+      "title": "XXXVII: Rewards",
+      "wordCount": 3387,
+      "estimatedMinutes": 14
+    }
+  ]
+}

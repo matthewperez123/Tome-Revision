@@ -1,0 +1,88 @@
+{
+  "bookId": "the-young-visiters",
+  "title": "The Young Visiters",
+  "author": "Daisy Ashford",
+  "chapterCount": 13,
+  "totalWordCount": 14662,
+  "totalMinutes": 59,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface",
+      "wordCount": 2198,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 1,
+      "title": "I: Quite a Young Girl",
+      "wordCount": 551,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 2,
+      "title": "II: Starting Gaily",
+      "wordCount": 1393,
+      "estimatedMinutes": 6
+    },
+    {
+      "index": 3,
+      "title": "III: The First Evening",
+      "wordCount": 783,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 4,
+      "title": "IV: Mr. Salteenas Plan",
+      "wordCount": 595,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 5,
+      "title": "V: The Crystal Palace",
+      "wordCount": 2215,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 6,
+      "title": "VI: High Life",
+      "wordCount": 2413,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 7,
+      "title": "VII: Bernards Idear",
+      "wordCount": 685,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 8,
+      "title": "VIII: A Gay Call",
+      "wordCount": 1318,
+      "estimatedMinutes": 5
+    },
+    {
+      "index": 9,
+      "title": "IX: A Proposale",
+      "wordCount": 1027,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 10,
+      "title": "X: Preparing for the Fray",
+      "wordCount": 530,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 11,
+      "title": "XI: The Wedding",
+      "wordCount": 459,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 12,
+      "title": "XII: How It Ended",
+      "wordCount": 495,
+      "estimatedMinutes": 2
+    }
+  ]
+}

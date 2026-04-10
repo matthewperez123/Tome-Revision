@@ -1,0 +1,76 @@
+{
+  "bookId": "the-life-of-lazarillo-de-tormes",
+  "title": "The Life of Lazarillo de Tormes",
+  "author": "Anonymous",
+  "chapterCount": 11,
+  "totalWordCount": 21050,
+  "totalMinutes": 84,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Introductory",
+      "wordCount": 3325,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 1,
+      "title": "Prologue",
+      "wordCount": 495,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 2,
+      "title": "I: Lazaro Relates the Way of His Birth and Tells Whose Son He Is",
+      "wordCount": 818,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 3,
+      "title": "First Master",
+      "wordCount": 3543,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 4,
+      "title": "Second Master",
+      "wordCount": 3204,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 5,
+      "title": "Third Master",
+      "wordCount": 6489,
+      "estimatedMinutes": 26
+    },
+    {
+      "index": 6,
+      "title": "Fourth Master",
+      "wordCount": 138,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 7,
+      "title": "Fifth Master",
+      "wordCount": 1907,
+      "estimatedMinutes": 8
+    },
+    {
+      "index": 8,
+      "title": "Sixth Master",
+      "wordCount": 203,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 9,
+      "title": "Seventh Master",
+      "wordCount": 919,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 10,
+      "title": "Sketch Map of the Route from Salamanca to Toledo",
+      "wordCount": 9,
+      "estimatedMinutes": 1
+    }
+  ]
+}

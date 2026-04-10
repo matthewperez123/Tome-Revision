@@ -1,0 +1,124 @@
+{
+  "bookId": "dangerous-ages",
+  "title": "Dangerous Ages",
+  "author": "Rose Macaulay",
+  "chapterCount": 19,
+  "totalWordCount": 64443,
+  "totalMinutes": 258,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Dedication",
+      "wordCount": 10,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 1,
+      "title": "Epigraph",
+      "wordCount": 52,
+      "estimatedMinutes": 1
+    },
+    {
+      "index": 2,
+      "title": "I: Neville’s Birthday",
+      "wordCount": 5200,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 3,
+      "title": "II: Mrs. Hilary’s Birthday",
+      "wordCount": 7115,
+      "estimatedMinutes": 28
+    },
+    {
+      "index": 4,
+      "title": "III: Family Life",
+      "wordCount": 5791,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 5,
+      "title": "IV: Roots",
+      "wordCount": 2472,
+      "estimatedMinutes": 10
+    },
+    {
+      "index": 6,
+      "title": "V: Seaweed",
+      "wordCount": 5799,
+      "estimatedMinutes": 23
+    },
+    {
+      "index": 7,
+      "title": "VI: Jim",
+      "wordCount": 3622,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 8,
+      "title": "VII: Gerda",
+      "wordCount": 4650,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 9,
+      "title": "VIII: Nan",
+      "wordCount": 3000,
+      "estimatedMinutes": 12
+    },
+    {
+      "index": 10,
+      "title": "IX: The Pace",
+      "wordCount": 6780,
+      "estimatedMinutes": 27
+    },
+    {
+      "index": 11,
+      "title": "X: Principles",
+      "wordCount": 4108,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 12,
+      "title": "XI: That Which Remains",
+      "wordCount": 3181,
+      "estimatedMinutes": 13
+    },
+    {
+      "index": 13,
+      "title": "XII: The Mother",
+      "wordCount": 5109,
+      "estimatedMinutes": 20
+    },
+    {
+      "index": 14,
+      "title": "XIII: The Daughter",
+      "wordCount": 4382,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 15,
+      "title": "XIV: Youth to Youth",
+      "wordCount": 1042,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 16,
+      "title": "XV: The Dream",
+      "wordCount": 793,
+      "estimatedMinutes": 3
+    },
+    {
+      "index": 17,
+      "title": "XVI: Time",
+      "wordCount": 1092,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 18,
+      "title": "XVII: The Key",
+      "wordCount": 245,
+      "estimatedMinutes": 1
+    }
+  ]
+}
