@@ -66,9 +66,12 @@ export function LandingNav() {
         </Link>
         <Link
           href="/onboarding"
-          className="text-sm font-semibold text-primary-foreground bg-primary rounded-full px-5 py-2 hover:bg-primary/90 transition-colors shadow-md"
+          className={cn(
+            "text-sm font-medium transition-colors px-3 py-1.5 rounded-full",
+            scrolled ? "text-foreground hover:bg-accent" : "text-white hover:bg-white/10"
+          )}
         >
-          Start Reading
+          Sign Up
         </Link>
         <ThemeToggle
           className={cn(
