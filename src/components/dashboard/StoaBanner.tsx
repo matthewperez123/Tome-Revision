@@ -8,6 +8,7 @@ import {
   getPaintingById,
   getStoredPaintingId,
   setStoredPaintingId,
+  isExternalPainting,
   type Painting,
 } from "@/lib/paintings"
 import { StoaPaintingSelector } from "./StoaPaintingSelector"
@@ -23,6 +24,7 @@ export function StoaBanner() {
   const [painting, setPainting] = useState<Painting>(DEFAULT_PAINTING)
   const [mounted, setMounted] = useState(false)
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false)
+  const [imgError, setImgError] = useState(false)
 
   // Hydrate from localStorage
   useEffect(() => {
@@ -38,6 +40,7 @@ export function StoaBanner() {
   }, [])
 
   function handleSelect(next: Painting) {
+    setImgError(false)
     setPainting(next)
     setStoredPaintingId(next.id)
   }
@@ -50,6 +53,7 @@ export function StoaBanner() {
         // Responsive aspect ratios: 3:2 mobile → 16:9 tablet → 21:9 desktop
         "aspect-[3/2] sm:aspect-[16/9] lg:aspect-[21/9]"
       )}
+      style={{ backgroundColor: painting.dominantColor }}
       role="img"
       aria-label={`Banner painting: ${painting.title} by ${painting.artist}`}
     >
@@ -63,15 +67,32 @@ export function StoaBanner() {
           exit={prefersReducedMotion ? undefined : { opacity: 0 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
         >
-          <Image
-            src={painting.src}
-            alt={`${painting.title} by ${painting.artist}`}
-            fill
-            priority
-            className={cn("object-cover", FOCAL_MAP[painting.focalPoint])}
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 768px"
-            unoptimized
-          />
+          {!imgError ? (
+            <Image
+              src={painting.src}
+              alt={`${painting.title} by ${painting.artist}`}
+              fill
+              priority
+              className={cn("object-cover", FOCAL_MAP[painting.focalPoint])}
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 768px"
+              unoptimized={!isExternalPainting(painting)}
+              onError={() => {
+                console.warn(`[Stoa] Failed to load painting: ${painting.id}`)
+                setImgError(true)
+              }}
+            />
+          ) : (
+            /* Error fallback: dominant color bg + elegant title text */
+            <div className="absolute inset-0 flex flex-col items-center justify-center">
+              <p className="font-serif text-lg sm:text-xl text-white/70 text-center px-8 drop-shadow-md">
+                {painting.title}
+              </p>
+              <p className="text-xs text-white/40 mt-1 font-sans">
+                {painting.artist}
+                {painting.year ? `, ${painting.year}` : ""}
+              </p>
+            </div>
+          )}
         </motion.div>
       </AnimatePresence>
 

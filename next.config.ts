@@ -5,6 +5,18 @@ const nextConfig: NextConfig = {
     root: __dirname,
   },
 
+  // Allow external painting images from museum / Wikimedia sources
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "upload.wikimedia.org" },
+      { protocol: "https", hostname: "images.metmuseum.org" },
+      { protocol: "https", hostname: "www.artic.edu" },
+      { protocol: "https", hostname: "lakeimagesweb.artic.edu" },
+      { protocol: "https", hostname: "lh3.googleusercontent.com" },
+      { protocol: "https", hostname: "media.nga.gov" },
+    ],
+  },
+
   // Reduce file-watcher CPU by ignoring 27K static content files
   webpack: (config) => {
     config.watchOptions = {

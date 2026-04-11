@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans, Literata } from "next/font/google";
+import { Plus_Jakarta_Sans, Literata, Playfair_Display } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "@/styles/globals.css";
 
@@ -14,6 +14,13 @@ const literata = Literata({
   variable: "--font-serif",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
+  display: "swap",
+});
+
+const playfairDisplay = Playfair_Display({
+  variable: "--font-display",
+  subsets: ["latin"],
+  weight: ["400", "700", "800"],
   display: "swap",
 });
 
@@ -87,7 +94,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${plusJakartaSans.variable} ${literata.variable}`}
+      className={`${plusJakartaSans.variable} ${literata.variable} ${playfairDisplay.variable}`}
       suppressHydrationWarning
     >
       <body>

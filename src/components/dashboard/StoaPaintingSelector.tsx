@@ -4,8 +4,12 @@ import { useState, useRef, useEffect, useCallback, useMemo } from "react"
 import { createPortal } from "react-dom"
 import Image from "next/image"
 import { Palette, Check, Search, X } from "lucide-react"
-import { AnimatePresence, motion } from "framer-motion"
-import { PAINTINGS, type Painting } from "@/lib/paintings"
+import {
+  PAINTINGS,
+  PAINTING_CATEGORIES,
+  type Painting,
+  type PaintingCategory,
+} from "@/lib/paintings"
 import { cn } from "@/lib/utils"
 import { Input } from "@/components/ui/input"
 
@@ -17,24 +21,44 @@ interface StoaPaintingSelectorProps {
 export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelectorProps) {
   const [open, setOpen] = useState(false)
   const [query, setQuery] = useState("")
+  const [activeCategory, setActiveCategory] = useState<PaintingCategory | "all">("all")
   const [mounted, setMounted] = useState(false)
   const triggerRef = useRef<HTMLButtonElement>(null)
   const panelRef = useRef<HTMLDivElement>(null)
   const gridRef = useRef<HTMLDivElement>(null)
   const searchRef = useRef<HTMLInputElement>(null)
   const [focusIndex, setFocusIndex] = useState(-1)
-  const [panelPos, setPanelPos] = useState<{ top: number; left: number; maxH: number }>({ top: 0, left: 0, maxH: 380 })
+  const [panelPos, setPanelPos] = useState<{ top: number; left: number; maxH: number }>({ top: 0, left: 0, maxH: 420 })
 
   useEffect(() => { setMounted(true) }, [])
 
-  // Filter paintings by search query
+  // Filter paintings by category AND search query
   const filtered = useMemo(() => {
-    if (!query.trim()) return PAINTINGS
-    const q = query.toLowerCase()
-    return PAINTINGS.filter(
-      (p) => p.title.toLowerCase().includes(q) || p.artist.toLowerCase().includes(q)
-    )
-  }, [query])
+    let results = activeCategory === "all"
+      ? PAINTINGS
+      : PAINTINGS.filter((p) => p.category === activeCategory)
+    if (query.trim()) {
+      const q = query.toLowerCase()
+      results = results.filter(
+        (p) =>
+          p.title.toLowerCase().includes(q) ||
+          p.artist.toLowerCase().includes(q) ||
+          (p.tradition && p.tradition.toLowerCase().includes(q))
+      )
+    }
+    return results
+  }, [query, activeCategory])
+
+  // Category counts for tab badges
+  const categoryCounts = useMemo(() => {
+    const counts: Record<string, number> = { all: PAINTINGS.length }
+    for (const cat of PAINTING_CATEGORIES) {
+      if (cat.id !== "all") {
+        counts[cat.id] = PAINTINGS.filter((p) => p.category === cat.id).length
+      }
+    }
+    return counts
+  }, [])
 
   // Position the panel centered over the Stoa banner when opening
   useEffect(() => {
@@ -42,27 +66,29 @@ export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelec
     const stoa = triggerRef.current.closest("[role='img']") as HTMLElement | null
     if (!stoa) return
     const rect = stoa.getBoundingClientRect()
-    const panelWidth = 280
-    const maxH = Math.min(380, rect.height - 16)
-    // Use absolute positioning (add scrollY) so the panel doesn't follow viewport scroll
+    const panelWidth = Math.min(360, window.innerWidth - 16)
+    const maxH = Math.min(420, rect.height - 16)
+    let left = rect.left + window.scrollX + rect.width / 2 - panelWidth / 2
+    // Clamp to viewport edges
+    left = Math.max(8, Math.min(left, window.innerWidth - panelWidth - 8))
     setPanelPos({
       top: rect.top + window.scrollY + (rect.height - maxH) / 2,
-      left: rect.left + window.scrollX + rect.width / 2 - panelWidth / 2,
+      left,
       maxH,
     })
     setQuery("")
+    setActiveCategory("all")
     setFocusIndex(-1)
     requestAnimationFrame(() => searchRef.current?.focus())
   }, [open])
 
-  useEffect(() => { setFocusIndex(-1) }, [query])
+  useEffect(() => { setFocusIndex(-1) }, [query, activeCategory])
 
   // Close on outside click
   useEffect(() => {
     if (!open) return
     function handleClick(e: MouseEvent) {
       const target = e.target as HTMLElement
-      // Don't close if clicking the theme toggle or any button in the top bar
       if (target.closest?.("[aria-label='Switch to light mode'], [aria-label='Switch to dark mode']")) return
       if (
         panelRef.current && !panelRef.current.contains(target) &&
@@ -119,6 +145,15 @@ export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelec
     btn?.focus()
   }, [focusIndex, open])
 
+  // Auto-switch to "All" when user types in search
+  function handleSearchChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const val = e.target.value
+    setQuery(val)
+    if (val.trim() && activeCategory !== "all") {
+      setActiveCategory("all")
+    }
+  }
+
   return (
     <>
       {/* Trigger button */}
@@ -145,7 +180,7 @@ export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelec
           aria-label="Select a painting"
           className={cn(
             "absolute z-[100]",
-            "w-[280px] rounded-xl",
+            "w-[320px] sm:w-[360px] rounded-xl",
             "bg-white dark:bg-[#1A1A1A]/95",
             "border border-stone-200 dark:border-[#D4A04C]/15",
             "shadow-2xl shadow-black/20 dark:shadow-black/40",
@@ -180,15 +215,42 @@ export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelec
               <Input
                 ref={searchRef}
                 type="text"
-                placeholder="Search title or artist…"
+                placeholder="Search painters or paintings..."
                 value={query}
-                onChange={(e) => setQuery(e.target.value)}
+                onChange={handleSearchChange}
                 className={cn(
                   "pl-8 h-7 text-xs",
                   "bg-stone-50 border-stone-200 placeholder:text-stone-400",
                   "dark:bg-white/5 dark:border-white/10 dark:placeholder:text-white/30 dark:text-white"
                 )}
               />
+            </div>
+          </div>
+
+          {/* Category tabs */}
+          <div className="px-3 pb-2">
+            <div className="flex gap-1 overflow-x-auto scrollbar-none pb-0.5">
+              {PAINTING_CATEGORIES.map((cat) => {
+                const isActive = activeCategory === cat.id
+                return (
+                  <button
+                    key={cat.id}
+                    onClick={() => {
+                      setActiveCategory(cat.id as PaintingCategory | "all")
+                      setQuery("")
+                    }}
+                    className={cn(
+                      "flex-shrink-0 px-2 py-1 rounded-md text-[10px] font-medium uppercase tracking-wider transition-all duration-150",
+                      isActive
+                        ? "bg-[#D4A04C]/15 text-[#D4A04C] dark:bg-[#D4A04C]/20 dark:text-[#D4A04C]"
+                        : "text-stone-400 hover:text-stone-600 hover:bg-stone-100 dark:text-white/35 dark:hover:text-white/60 dark:hover:bg-white/5"
+                    )}
+                  >
+                    {cat.label}
+                    <span className="ml-1 text-[8px] opacity-60">{categoryCounts[cat.id]}</span>
+                  </button>
+                )
+              })}
             </div>
           </div>
 
@@ -233,19 +295,20 @@ export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelec
                         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4A04C]/60",
                         isSelected && "ring-2 ring-[#D4A04C]/70 dark:ring-[#D4A04C]/60"
                       )}
+                      style={{ backgroundColor: painting.dominantColor }}
                     >
                       <Image
                         src={painting.src}
                         alt={painting.title}
                         fill
                         className="object-cover"
-                        sizes="65px"
+                        sizes="80px"
                         unoptimized
+                        onError={(e) => {
+                          // On error, make image transparent so dominantColor bg shows through
+                          e.currentTarget.style.opacity = "0"
+                        }}
                       />
-                      {/* Hover tooltip */}
-                      <div className="absolute inset-x-0 bottom-0 p-1 opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-t from-black/70 to-transparent">
-                        <p className="text-[8px] text-white/90 leading-tight truncate font-medium">{painting.title}</p>
-                      </div>
                       {/* Selected checkmark */}
                       {isSelected && (
                         <div className="absolute inset-0 flex items-center justify-center bg-black/30">

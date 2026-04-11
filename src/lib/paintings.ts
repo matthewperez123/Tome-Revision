@@ -1,5 +1,20 @@
 import manifest from "../../public/paintings/manifest.json"
 
+export type PaintingMood =
+  | "serene"
+  | "dramatic"
+  | "contemplative"
+  | "epic"
+  | "intimate"
+  | "sublime"
+
+export type PaintingCategory =
+  | "classical-renaissance"
+  | "baroque-dutch"
+  | "romantic-sublime"
+  | "pre-raphaelite-victorian"
+  | "impressionist-modern"
+
 export interface Painting {
   id: string
   filename: string
@@ -8,8 +23,11 @@ export interface Painting {
   artist: string
   year: string
   focalPoint: "top" | "center" | "bottom"
+  dominantColor: string
+  aspectRatio: number
+  category: PaintingCategory
+  mood: PaintingMood
   isDefault?: boolean
-  // Extended fields (optional for backward compat with older entries)
   medium?: string
   institution?: string
   sourceUrl?: string
@@ -19,9 +37,17 @@ export interface Painting {
   themes?: string[]
   pairedBooks?: string[]
   era?: string
-  mood?: string
   caption?: string
 }
+
+export const PAINTING_CATEGORIES: { id: PaintingCategory | "all"; label: string }[] = [
+  { id: "all", label: "All" },
+  { id: "classical-renaissance", label: "Classical" },
+  { id: "baroque-dutch", label: "Baroque" },
+  { id: "romantic-sublime", label: "Romantic" },
+  { id: "pre-raphaelite-victorian", label: "Pre-Raph." },
+  { id: "impressionist-modern", label: "Modern" },
+]
 
 export const PAINTINGS: Painting[] = manifest as Painting[]
 
@@ -43,8 +69,18 @@ export function getPaintingsByTradition(tradition: string): Painting[] {
 }
 
 /** Get paintings by mood */
-export function getPaintingsByMood(mood: string): Painting[] {
+export function getPaintingsByMood(mood: PaintingMood): Painting[] {
   return PAINTINGS.filter((p) => p.mood === mood)
+}
+
+/** Get paintings by display category */
+export function getPaintingsByCategory(category: PaintingCategory): Painting[] {
+  return PAINTINGS.filter((p) => p.category === category)
+}
+
+/** Check if painting uses an external URL */
+export function isExternalPainting(p: Painting): boolean {
+  return p.src.startsWith("http")
 }
 
 const STORAGE_KEY = "tome:stoa_painting_id"

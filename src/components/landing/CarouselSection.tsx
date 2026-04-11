@@ -1,0 +1,38 @@
+"use client"
+
+import Link from "next/link"
+import { ArrowRight } from "lucide-react"
+import { Marquee } from "@/components/ui/marquee"
+import { BOOKS } from "@/data/books"
+import { GalleryCard } from "./GalleryCard"
+import { ROW_1, ROW_2 } from "./carousel-data"
+
+export function CarouselSection() {
+  return (
+    <section className="py-16 overflow-hidden">
+      <div className="text-center mb-8 px-6">
+        <p className="font-[var(--font-display)] text-sm text-[#7A756D] tracking-[0.15em] uppercase">
+          {BOOKS.length.toLocaleString()} books from 16 literary traditions
+        </p>
+      </div>
+      <Marquee pauseOnHover className="[--duration:60s] [--gap:0.75rem] mb-3">
+        {ROW_1.map((p) => (
+          <GalleryCard key={p.slug} card={p} />
+        ))}
+      </Marquee>
+      <Marquee pauseOnHover reverse className="[--duration:65s] [--gap:0.75rem]">
+        {ROW_2.map((p) => (
+          <GalleryCard key={p.slug} card={p} />
+        ))}
+      </Marquee>
+      <div className="text-center mt-8 px-6">
+        <Link
+          href="/library"
+          className="inline-flex items-center gap-1.5 text-sm text-[#D4AF37] hover:text-[#E0C060] transition-colors"
+        >
+          Browse the full library <ArrowRight className="size-3.5" />
+        </Link>
+      </div>
+    </section>
+  )
+}
