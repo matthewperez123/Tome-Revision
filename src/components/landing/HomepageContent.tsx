@@ -15,6 +15,7 @@ import { AnnotationShowcase } from "./AnnotationShowcase"
 import { TrialsShowcase } from "./TrialsShowcase"
 import { SealsShowcase } from "./SealsShowcase"
 import { LibraryShowcase } from "./LibraryShowcase"
+import { ReaderPricingSection } from "./ReaderPricingSection"
 import { FinalCTA } from "./FinalCTA"
 
 import { ClassRosterShowcase } from "./teacher/ClassRosterShowcase"
@@ -25,6 +26,7 @@ import { StudentDashboardShowcase } from "./teacher/StudentDashboardShowcase"
 import { DiscussionThreadsShowcase } from "./teacher/DiscussionThreadsShowcase"
 import { StandardsAlignmentShowcase } from "./teacher/StandardsAlignmentShowcase"
 import { RosterImportShowcase } from "./teacher/RosterImportShowcase"
+import { TeacherPricingSection } from "./TeacherPricingSection"
 import { TeacherCTA } from "./teacher/TeacherCTA"
 
 export function HomepageContent() {
@@ -49,6 +51,7 @@ export function HomepageContent() {
         <DiscussionThreadsShowcase />
         <StandardsAlignmentShowcase />
         <RosterImportShowcase />
+        <TeacherPricingSection />
         <TeacherCTA />
       </>
     )
@@ -68,6 +71,7 @@ export function HomepageContent() {
       <TrialsShowcase />
       <SealsShowcase />
       <LibraryShowcase />
+      <ReaderPricingSection />
       <FinalCTA />
     </>
   )

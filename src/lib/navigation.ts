@@ -15,6 +15,7 @@ import {
   BookMarked,
   ClipboardCheck,
   Feather,
+  History,
   type LucideIcon,
 } from "lucide-react"
 
@@ -52,6 +53,7 @@ export const sidebarNav: NavItem[] = [
 
   // Discovery & social — all roles
   { label: "Explore", href: "/explore", icon: Globe2 },
+  { label: "Timelines", href: "/timelines", icon: History },
   { label: "Achievements", href: "/achievements", icon: Trophy },
   { label: "Friends", href: "/friends", icon: Users },
   { label: "Community", href: "/social", icon: Users2 },
