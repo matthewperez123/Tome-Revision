@@ -23,25 +23,47 @@ import { StepRole } from "./step-role"
 import { StepTeacherSubject } from "./step-teacher-subject"
 import { StepTeacherLevel } from "./step-teacher-level"
 import { StepTeacherSize } from "./step-teacher-size"
+import { StepFirstClassroom } from "./step-first-classroom"
+import { StepTeacherIntent } from "./step-teacher-intent"
+import { StepTeacherTradition } from "./step-teacher-tradition"
+import { StepTeacherWelcome } from "./step-teacher-welcome"
 import { StepIntent } from "./step-intent"
 import { StepTradition } from "./step-tradition"
 import { StepGoal } from "./step-goal"
 import { StepVirgil } from "./step-virgil"
-import { isOnboardingComplete, completeOnboarding } from "@/lib/onboarding"
+import { isOnboardingComplete, completeOnboarding, syncOnboardingToSupabase } from "@/lib/onboarding"
 
 // Step keys for the branching flow
 type StepKey =
   | "role"
+  // Teacher-only steps
   | "teacher-subject"
   | "teacher-level"
   | "teacher-size"
+  | "first-classroom"
+  | "teacher-intent"
+  | "teacher-tradition"
+  | "teacher-welcome"
+  // Reader-only steps
   | "intent"
   | "tradition"
   | "goal"
   | "virgil"
 
+// Reader path: personal reading journey
 const READER_STEPS: StepKey[] = ["role", "intent", "tradition", "goal", "virgil"]
-const TEACHER_STEPS: StepKey[] = ["role", "teacher-subject", "teacher-level", "teacher-size", "intent", "tradition", "goal", "virgil"]
+
+// Teacher path: fully separate classroom-focused flow
+const TEACHER_STEPS: StepKey[] = [
+  "role",
+  "teacher-subject",
+  "teacher-level",
+  "teacher-size",
+  "teacher-intent",
+  "teacher-tradition",
+  "first-classroom",
+  "teacher-welcome",
+]
 
 export default function OnboardingPage() {
   const router = useRouter()
@@ -64,13 +86,15 @@ export default function OnboardingPage() {
   const currentStep = steps[stepIndex] ?? "role"
   const totalSteps = steps.length
 
-  function next() {
+  async function next() {
     if (stepIndex < totalSteps - 1) {
       setDirection(1)
       setStepIndex((s) => s + 1)
     } else {
       completeOnboarding()
-      router.push("/library")
+      // Sync onboarding data to Supabase (fire-and-forget)
+      syncOnboardingToSupabase().catch(() => {})
+      router.push("/dashboard")
     }
   }
 
@@ -93,11 +117,18 @@ export default function OnboardingPage() {
   }
 
   const stepContent: Record<StepKey, React.ReactNode> = {
+    // Shared
     "role": <StepRole onNext={handleRoleSelect} />,
+    // Teacher-only steps (separate flow from reader)
     "teacher-subject": <StepTeacherSubject onNext={next} onBack={back} />,
     "teacher-level": <StepTeacherLevel onNext={next} onBack={back} />,
     "teacher-size": <StepTeacherSize onNext={next} onBack={back} />,
-    "intent": <StepIntent onNext={next} onBack={userType === "teacher" ? back : undefined} />,
+    "teacher-intent": <StepTeacherIntent onNext={next} onBack={back} />,
+    "teacher-tradition": <StepTeacherTradition onNext={next} onBack={back} />,
+    "first-classroom": <StepFirstClassroom onNext={next} onBack={back} onSkip={next} />,
+    "teacher-welcome": <StepTeacherWelcome onComplete={next} />,
+    // Reader-only steps
+    "intent": <StepIntent onNext={next} onBack={undefined} />,
     "tradition": <StepTradition onNext={next} onBack={back} />,
     "goal": <StepGoal onNext={next} onBack={back} />,
     "virgil": <StepVirgil onComplete={next} />,

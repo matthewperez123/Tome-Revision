@@ -1,5 +1,7 @@
 // ── Tome Onboarding State ──
-// Persists user's onboarding selections to localStorage.
+// Persists user's onboarding selections to localStorage + Supabase.
+
+import { createClient } from "@/lib/supabase/client"
 
 export interface OnboardingData {
   userType: "reader" | "teacher" | null
@@ -10,6 +12,9 @@ export interface OnboardingData {
   traditions: string[]
   dailyGoalMinutes: number
   completedAt: string | null
+  // Teacher onboarding: first classroom
+  firstClassroomName: string | null
+  firstClassroomSubject: string | null
 }
 
 const STORAGE_KEY = "tome-onboarding"
@@ -23,6 +28,8 @@ const DEFAULT_DATA: OnboardingData = {
   traditions: [],
   dailyGoalMinutes: 15,
   completedAt: null,
+  firstClassroomName: null,
+  firstClassroomSubject: null,
 }
 
 export function getOnboardingData(): OnboardingData {
@@ -54,4 +61,33 @@ export function isOnboardingComplete(): boolean {
   } catch {
     return false
   }
+}
+
+/**
+ * Sync onboarding data to Supabase profiles table.
+ * Called after onboarding completion when authenticated.
+ */
+export async function syncOnboardingToSupabase(): Promise<void> {
+  const supabase = createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user) return
+
+  const data = getOnboardingData()
+
+  await supabase
+    .from("profiles")
+    .update({
+      role: data.userType ?? "reader",
+      subject: data.teacherSubject,
+      grade_levels: data.teacherLevel ? [data.teacherLevel] : null,
+      onboarding_data: {
+        intent: data.intent,
+        traditions: data.traditions,
+        dailyGoalMinutes: data.dailyGoalMinutes,
+        teacherClassSize: data.teacherClassSize,
+      },
+      onboarding_completed: true,
+      updated_at: new Date().toISOString(),
+    })
+    .eq("id", user.id)
 }

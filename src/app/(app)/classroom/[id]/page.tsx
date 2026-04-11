@@ -4,6 +4,8 @@ import { use, useState } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { Users, BookOpen, TrendingUp, Activity, Copy, Check, Sparkles, ChevronLeft } from "lucide-react"
+import { useAuth } from "@/hooks/use-auth"
+import { StudentClassroomView } from "@/components/classroom/student-classroom-view"
 import {
   getClassroom,
   getAssignmentsForClass,
@@ -15,8 +17,24 @@ import {
 
 export default function ClassroomDetail({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params)
-  const classroom = getClassroom(id)
-  const assignments = getAssignmentsForClass(id)
+  const { role, isDemoMode } = useAuth()
+
+  // In demo mode (or teacher role), show the full classroom management view with demo data
+  if (role === "teacher" || isDemoMode) {
+    return <DemoClassroomView classroomId={id} />
+  }
+
+  // Authenticated students see the student classroom view
+  return <StudentClassroomView classroomId={id} />
+}
+
+/**
+ * Full classroom management view using demo data.
+ * Works without auth for preview purposes.
+ */
+function DemoClassroomView({ classroomId }: { classroomId: string }) {
+  const classroom = getClassroom(classroomId)
+  const assignments = getAssignmentsForClass(classroomId)
   const [filter, setFilter] = useState<"active" | "upcoming" | "completed">("active")
   const [expandedAssignment, setExpandedAssignment] = useState<string | null>(
     assignments.find((a) => a.status === "active")?.id ?? null,
@@ -145,7 +163,6 @@ export default function ClassroomDetail({ params }: { params: Promise<{ id: stri
                   transition={{ delay: i * 0.04 }}
                   className="flex flex-wrap items-center gap-3 rounded-xl border border-border bg-card p-3 sm:p-4"
                 >
-                  {/* Avatar + name */}
                   <div className="flex items-center gap-2.5 min-w-[140px]">
                     <div
                       className="flex size-8 items-center justify-center rounded-full text-xs font-bold text-white shrink-0"
@@ -156,7 +173,6 @@ export default function ClassroomDetail({ params }: { params: Promise<{ id: stri
                     <span className="text-sm font-medium">{student.studentName}</span>
                   </div>
 
-                  {/* Progress bar */}
                   <div className="flex-1 min-w-[120px]">
                     <div className="flex items-center gap-2">
                       <div className="h-2 flex-1 rounded-full bg-muted overflow-hidden">
@@ -171,23 +187,19 @@ export default function ClassroomDetail({ params }: { params: Promise<{ id: stri
                     </div>
                   </div>
 
-                  {/* Quiz */}
                   <span className="text-sm tabular-nums w-10 text-center">
                     {student.quizScore !== null ? `${student.quizScore}%` : "—"}
                   </span>
 
-                  {/* Wisdom */}
                   <span className="flex items-center gap-1 text-sm text-amber-600 tabular-nums w-14">
                     <Sparkles className="size-3" />
                     {student.wisdomEarned}
                   </span>
 
-                  {/* Last active */}
                   <span className="text-xs text-muted-foreground w-20 hidden sm:block">
                     {student.lastActive}
                   </span>
 
-                  {/* Status */}
                   <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${sc.bg} ${sc.text} capitalize whitespace-nowrap`}>
                     {student.status.replace("-", " ")}
                   </span>
@@ -226,10 +238,7 @@ function AssignmentCard({
       }`}
     >
       <div className="flex items-center gap-4">
-        {/* Book color block */}
         <div className="size-12 shrink-0 rounded-lg bg-gradient-to-br from-[#D4A04C] to-[#B8862D]" />
-
-        {/* Info */}
         <div className="flex-1 min-w-0">
           <p className="text-base font-semibold truncate">{assignment.bookTitle}</p>
           <p className="text-sm text-muted-foreground">{assignment.bookAuthor}</p>
@@ -237,8 +246,6 @@ function AssignmentCard({
             {assignment.assignedChapters} · Due {new Date(assignment.dueDate).toLocaleDateString("en-US", { month: "short", day: "numeric" })}
           </p>
         </div>
-
-        {/* Completion */}
         <div className="flex flex-col items-center gap-1 shrink-0">
           <div className={`text-2xl font-bold ${getCompletionColor(assignment.completionRate)}`}>
             {assignment.completionRate}%

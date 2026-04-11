@@ -43,6 +43,10 @@ import { VirgilReflection } from "@/components/tome/virgil-reflection"
 import { getTipOfTheDay } from "@/lib/virgil-tips"
 import { cn } from "@/lib/utils"
 import { StoaBanner } from "@/components/dashboard/StoaBanner"
+import { TeacherDashboard } from "@/components/classroom/teacher-dashboard"
+import { UpcomingAssignments } from "@/components/classroom/upcoming-assignments"
+import { ClassLeaderboardMini } from "@/components/classroom/class-leaderboard-mini"
+import { useAuth } from "@/hooks/use-auth"
 
 // ─────────────────────────────────────────────
 // Daily challenge pool (rotates by day-of-year)
@@ -183,6 +187,15 @@ function SectionHeading({
 // ─────────────────────────────────────────────
 
 export default function DashboardPage() {
+  const { role } = useAuth()
+
+  // Teachers get a completely different dashboard
+  if (role === "teacher") return <TeacherDashboard />
+
+  return <StudentDashboard />
+}
+
+function StudentDashboard() {
   const { stats, level, dailyGoalMet } = useEconomy()
 
   const [challengeAnswer,  setChallengeAnswer]  = useState<number | null>(null)
@@ -269,6 +282,10 @@ export default function DashboardPage() {
         <BlurFade delay={0.02} inView>
           <StoaBanner />
         </BlurFade>
+
+        {/* ── Classroom Widgets (only if student is in a classroom) ── */}
+        <UpcomingAssignments />
+        <ClassLeaderboardMini />
 
         {/* ── 1. Header ──────────────────────────── */}
         <BlurFade delay={0.04} inView>

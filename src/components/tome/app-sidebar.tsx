@@ -4,7 +4,8 @@ import * as React from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { BookOpen } from "lucide-react"
-import { sidebarNav } from "@/lib/navigation"
+import { getNavForRole } from "@/lib/navigation"
+import { useAuth } from "@/hooks/use-auth"
 import {
   Sidebar,
   SidebarContent,
@@ -18,23 +19,12 @@ import {
   SidebarRail,
   useSidebar,
 } from "@/components/ui/sidebar"
-import { UserAvatar } from "@/components/tome/avatar/UserAvatar"
-import { getCurrentAvatar } from "@/lib/avatar-state"
-import type { BookCharacter } from "@/data/character-avatars"
-import { CHARACTER_MAP } from "@/data/character-avatars"
+import { ProfileSwitcher } from "@/components/tome/profile-switcher"
 
 export function AppSidebar() {
   const pathname = usePathname()
   const { state } = useSidebar()
   const collapsed = state === "collapsed"
-
-  const [character, setCharacter] = React.useState<BookCharacter | null>(null)
-
-  React.useEffect(() => {
-    setCharacter(getCurrentAvatar())
-  }, [])
-
-  const displayCharacter = character ?? CHARACTER_MAP["virgil"]
 
   return (
     <Sidebar collapsible="icon" className="border-r-0">
@@ -58,25 +48,9 @@ export function AppSidebar() {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
-      {displayCharacter && (
-        <SidebarFooter className="px-3 py-3 border-t border-border">
-          <Link
-            href="/profile/avatar"
-            className="flex items-center gap-2 rounded-md p-1.5 hover:bg-accent/50 transition-colors"
-          >
-            <UserAvatar
-              character={displayCharacter}
-              size="sm"
-              showRarityRing={true}
-            />
-            {!collapsed && (
-              <span className="text-xs text-muted-foreground max-w-[80px] truncate leading-tight">
-                {displayCharacter.name}
-              </span>
-            )}
-          </Link>
-        </SidebarFooter>
-      )}
+      <SidebarFooter className="px-3 py-3 border-t border-border">
+        <ProfileSwitcher />
+      </SidebarFooter>
       <SidebarRail />
     </Sidebar>
   )
@@ -84,7 +58,10 @@ export function AppSidebar() {
 
 function SidebarNav({ pathname }: { pathname: string }) {
   const { setOpenMobile } = useSidebar()
+  const { role } = useAuth()
   const listRef = React.useRef<HTMLUListElement>(null)
+
+  const navItems = React.useMemo(() => getNavForRole(role), [role])
 
   React.useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
@@ -111,28 +88,38 @@ function SidebarNav({ pathname }: { pathname: string }) {
     return () => window.removeEventListener("keydown", handleKeyDown)
   }, [])
 
-  // Map sub-routes to their parent nav item
+  // Map sub-routes to their parent nav item for active highlighting.
+  // Teacher-specific classroom sub-routes get their own active states
+  // to avoid multiple items highlighting at once.
   const activeHref = (() => {
     if (pathname.startsWith("/book/"))    return "/library"
     if (pathname.startsWith("/author/") && !pathname.startsWith("/authors")) return "/authors"
-    if (pathname.startsWith("/profile"))  return "/profile" // /profile/stats etc
+    if (pathname.startsWith("/profile"))  return "/profile"
     if (pathname.startsWith("/clubs/"))   return "/social"
     if (pathname.startsWith("/quiz/"))    return "/quizzes"
-    if (pathname.startsWith("/classroom/")) return "/classroom"
     if (pathname.startsWith("/read/"))    return "/reading"
+    // Teacher sub-routes: keep their exact prefixes so they don't
+    // also highlight the parent "/classroom" item
+    if (pathname.startsWith("/classroom/quiz-builder")) return "/classroom/quiz-builder"
+    if (pathname.startsWith("/classroom/grading"))      return "/classroom/grading"
+    if (pathname.startsWith("/classroom/create"))       return "/classroom"
+    if (pathname.startsWith("/classroom/"))             return "/classroom"
     return pathname
   })()
 
   return (
     <SidebarMenu ref={listRef}>
-      {sidebarNav.map((item) => {
+      {navItems.map((item) => {
+        // Exact match for the home route
+        // For other routes, match activeHref exactly to prevent
+        // multiple items highlighting (e.g. /classroom and /classroom/quiz-builder)
         const isActive =
           item.href === "/"
             ? pathname === "/"
-            : activeHref === item.href || pathname.startsWith(item.href)
+            : activeHref === item.href
 
         return (
-          <SidebarMenuItem key={item.href}>
+          <SidebarMenuItem key={`${item.label}-${item.href}`}>
             <SidebarMenuButton
               isActive={isActive}
               tooltip={item.label}
