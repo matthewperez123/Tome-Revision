@@ -8,13 +8,16 @@ import { GamificationSection } from "@/components/landing/GamificationSection"
 import { WorldMapSection } from "@/components/landing/WorldMapSection"
 import { ClassroomSection } from "@/components/landing/ClassroomSection"
 import { VirgilSection } from "@/components/landing/VirgilSection"
-import { StatsBar } from "@/components/landing/StatsBar"
+import { AnnotationShowcase } from "@/components/landing/AnnotationShowcase"
+import { TrialsShowcase } from "@/components/landing/TrialsShowcase"
+import { SealsShowcase } from "@/components/landing/SealsShowcase"
+import { LibraryShowcase } from "@/components/landing/LibraryShowcase"
 import { FinalCTA } from "@/components/landing/FinalCTA"
 import { LandingFooter } from "@/components/landing/LandingFooter"
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-[#0A0A0A] text-[#FAF7F2]">
+    <div className="min-h-screen bg-background text-foreground">
       <LandingNav />
       <HeroSection />
       <CarouselSection />
@@ -25,7 +28,10 @@ export default function LandingPage() {
       <WorldMapSection />
       <ClassroomSection />
       <VirgilSection />
-      <StatsBar />
+      <AnnotationShowcase />
+      <TrialsShowcase />
+      <SealsShowcase />
+      <LibraryShowcase />
       <FinalCTA />
       <LandingFooter />
     </div>

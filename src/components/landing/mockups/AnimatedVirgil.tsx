@@ -4,10 +4,10 @@ import { motion, AnimatePresence } from "motion/react"
 import { useAnimationLoop } from "../useAnimationLoop"
 
 const PHASES = [
-  { name: "passage", duration: 3000 },
-  { name: "highlight", duration: 3000 },
-  { name: "annotation1", duration: 3000 },
-  { name: "annotation2", duration: 3000 },
+  { name: "passage", duration: 4000 },
+  { name: "highlight", duration: 3500 },
+  { name: "annotation1", duration: 4000 },
+  { name: "annotation2", duration: 4000 },
 ]
 
 const PASSAGE_LINES = [
@@ -39,19 +39,19 @@ export function AnimatedVirgil() {
 
   if (isReduced) {
     return (
-      <div className="bg-[#0D0D0D] rounded-xl border border-[#333333] p-6">
-        <p className="text-xs text-[#7A756D] mb-3">The Divine Comedy &middot; Inferno, Canto III</p>
-        <div className="font-serif text-sm text-[#FAF7F2] leading-[1.9] mb-4">
+      <div className="bg-card rounded-xl border border-border p-6">
+        <p className="text-xs text-muted-foreground mb-3">The Divine Comedy &middot; Inferno, Canto III</p>
+        <div className="font-serif text-sm text-foreground leading-[1.9] mb-4">
           {PASSAGE_LINES.map((line, i) => (
             <p key={i}>{line}</p>
           ))}
         </div>
-        <div className="rounded-lg border-l-2 border-[#D4AF37] bg-[#1A1A0D] p-4">
+        <div className="rounded-lg border-l-2 border-primary bg-primary/5 p-4">
           <div className="flex items-center gap-2 mb-2">
             <VirgilAvatar />
-            <span className="text-xs text-[#D4AF37] font-semibold">Virgil</span>
+            <span className="text-xs text-primary font-semibold">Virgil</span>
           </div>
-          <p className="text-xs text-[#C4BFB6] leading-relaxed">{ANNOTATION_1.text}</p>
+          <p className="text-xs text-muted-foreground leading-relaxed">{ANNOTATION_1.text}</p>
         </div>
       </div>
     )
@@ -60,13 +60,13 @@ export function AnimatedVirgil() {
   return (
     <div
       ref={containerRef}
-      className="bg-[#0D0D0D] rounded-xl border border-[#333333] p-6 min-h-[300px]"
+      className="bg-card rounded-xl border border-border p-6 min-h-[300px]"
       aria-label="Animated Virgil annotation demonstration"
     >
-      <p className="text-xs text-[#7A756D] mb-3">The Divine Comedy &middot; Inferno, Canto III</p>
+      <p className="text-xs text-muted-foreground mb-3">The Divine Comedy &middot; Inferno, Canto III</p>
 
       {/* Passage */}
-      <div className="font-serif text-sm text-[#FAF7F2] leading-[1.9] mb-4">
+      <div className="font-serif text-sm text-foreground leading-[1.9] mb-4">
         {PASSAGE_LINES.map((line, i) => (
           <motion.p
             key={i}
@@ -79,8 +79,8 @@ export function AnimatedVirgil() {
                 There{" "}
                 <motion.span
                   initial={{ backgroundColor: "transparent" }}
-                  animate={{ backgroundColor: "rgba(212,175,55,0.15)" }}
-                  className="underline decoration-[#D4AF37] underline-offset-4 px-0.5 rounded"
+                  animate={{ backgroundColor: "color-mix(in srgb, var(--color-primary) 15%, transparent)" }}
+                  className="underline decoration-primary underline-offset-4 px-0.5 rounded"
                 >
                   sighs, lamentations
                 </motion.span>
@@ -102,14 +102,14 @@ export function AnimatedVirgil() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
             transition={{ duration: 0.5 }}
-            className="rounded-lg border-l-2 border-[#D4AF37] bg-[#1A1A0D] p-4"
+            className="rounded-lg border-l-2 border-primary bg-primary/5 p-4"
           >
             <div className="flex items-center gap-2 mb-2">
               <VirgilAvatar />
-              <span className="text-xs text-[#D4AF37] font-semibold">Virgil</span>
-              <span className="text-[10px] text-[#7A756D]">&middot; {annotation.title}</span>
+              <span className="text-xs text-primary font-semibold">Virgil</span>
+              <span className="text-[10px] text-muted-foreground">&middot; {annotation.title}</span>
             </div>
-            <p className="text-xs text-[#C4BFB6] leading-relaxed">{annotation.text}</p>
+            <p className="text-xs text-muted-foreground leading-relaxed">{annotation.text}</p>
           </motion.div>
         )}
       </AnimatePresence>
@@ -119,7 +119,7 @@ export function AnimatedVirgil() {
 
 function VirgilAvatar() {
   return (
-    <div className="size-5 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37]/40 flex items-center justify-center text-[10px] font-serif font-bold text-[#D4AF37]">
+    <div className="size-5 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-[10px] font-serif font-bold text-primary">
       V
     </div>
   )

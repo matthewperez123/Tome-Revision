@@ -16,7 +16,7 @@ export function HeroCTA() {
   return (
     <Link
       href={done ? "/library" : "/onboarding"}
-      className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#D4AF37] text-[#111111] font-semibold text-sm hover:bg-[#E0C060] hover:scale-[1.03] transition-all duration-200 shadow-lg"
+      className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold text-sm hover:bg-primary/90 hover:scale-[1.03] transition-all duration-200 shadow-lg"
     >
       Start reading <ArrowRight className="size-4" />
     </Link>

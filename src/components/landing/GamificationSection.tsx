@@ -5,13 +5,13 @@ import { AnimatedGamification } from "./mockups/AnimatedGamification"
 
 export function GamificationSection() {
   return (
-    <section className="bg-[#0A0A0A] py-24 px-6 md:px-12">
+    <section className="bg-background py-24 px-6 md:px-12">
       <div className="max-w-3xl mx-auto text-center mb-12">
         <BlurFade delay={0.1} inView>
-          <h2 className="font-[var(--font-display)] text-3xl md:text-4xl font-bold text-[#FAF7F2] mb-4">
+          <h2 className="font-[var(--font-display)] text-3xl md:text-4xl font-bold text-foreground mb-4">
             Every page earns its reward.
           </h2>
-          <p className="text-sm text-[#7A756D] leading-relaxed max-w-xl mx-auto">
+          <p className="text-sm text-muted-foreground leading-relaxed max-w-xl mx-auto">
             Wisdom replaces XP. Flames replace streaks. Seals replace badges. The language is classical, but the psychology is Duolingo.
           </p>
         </BlurFade>

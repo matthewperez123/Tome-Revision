@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react"
 import Link from "next/link"
 import { BookOpen } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { ThemeToggle } from "@/components/tome/ThemeToggle"
 
 export function LandingNav() {
   const [scrolled, setScrolled] = useState(false)
@@ -20,37 +21,60 @@ export function LandingNav() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-4 transition-all duration-300",
         scrolled
-          ? "bg-[#161616]/95 backdrop-blur-md border-b border-[rgba(255,255,255,0.06)]"
-          : "bg-gradient-to-b from-black/60 to-transparent"
+          ? "bg-background/95 backdrop-blur-md border-b border-border text-foreground"
+          : "bg-gradient-to-b from-black/60 to-transparent text-white"
       )}
     >
-      <Link href="/" className="flex items-center gap-2 drop-shadow-md">
-        <BookOpen className="size-5 text-[#D4AF37]" />
-        <span className="text-base font-bold tracking-[0.08em] text-[#D4AF37] drop-shadow-md font-[var(--font-display)]">
-          TOME
+      <Link
+        href="/"
+        className="flex items-center gap-2 transition-opacity duration-[var(--tome-duration-fast)] hover:opacity-70"
+      >
+        <BookOpen className="size-5 shrink-0" />
+        <span className="text-base font-[var(--font-display)] font-semibold tracking-tight">
+          Tome
         </span>
       </Link>
       <div className="hidden md:flex items-center gap-6">
-        <Link href="/library" className="text-sm text-[#7A756D] hover:text-[#FAF7F2] transition-colors">
+        <Link
+          href="/library"
+          className={cn(
+            "text-sm transition-colors",
+            scrolled ? "text-muted-foreground hover:text-foreground" : "text-white/60 hover:text-white"
+          )}
+        >
           Library
         </Link>
-        <Link href="/explore" className="text-sm text-[#7A756D] hover:text-[#FAF7F2] transition-colors">
+        <Link
+          href="/explore"
+          className={cn(
+            "text-sm transition-colors",
+            scrolled ? "text-muted-foreground hover:text-foreground" : "text-white/60 hover:text-white"
+          )}
+        >
           Explore
         </Link>
       </div>
       <div className="flex items-center gap-3">
         <Link
           href="/dashboard"
-          className="text-sm font-medium text-[#FAF7F2] hover:text-white transition-colors drop-shadow-md px-3 py-1.5 rounded-full hover:bg-white/10"
+          className={cn(
+            "text-sm font-medium transition-colors px-3 py-1.5 rounded-full",
+            scrolled ? "text-foreground hover:bg-accent" : "text-white hover:bg-white/10"
+          )}
         >
           Log in
         </Link>
         <Link
           href="/onboarding"
-          className="text-sm font-semibold text-[#111111] bg-[#D4AF37] rounded-full px-5 py-2 hover:bg-[#E0C060] transition-colors shadow-md"
+          className="text-sm font-semibold text-primary-foreground bg-primary rounded-full px-5 py-2 hover:bg-primary/90 transition-colors shadow-md"
         >
           Start Reading
         </Link>
+        <ThemeToggle
+          className={cn(
+            scrolled ? "" : "text-white/60 hover:text-white hover:bg-white/10"
+          )}
+        />
       </div>
     </nav>
   )

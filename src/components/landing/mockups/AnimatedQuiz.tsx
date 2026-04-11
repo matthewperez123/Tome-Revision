@@ -6,10 +6,10 @@ import { cn } from "@/lib/utils"
 import { useAnimationLoop } from "../useAnimationLoop"
 
 const PHASES = [
-  { name: "question", duration: 2000 },
-  { name: "correct", duration: 2000 },
-  { name: "nextQuestion", duration: 2000 },
-  { name: "wrong", duration: 2000 },
+  { name: "question", duration: 3000 },
+  { name: "correct", duration: 3000 },
+  { name: "nextQuestion", duration: 3000 },
+  { name: "wrong", duration: 3000 },
 ]
 
 const Q1 = {
@@ -42,14 +42,14 @@ export function AnimatedQuiz() {
 
   if (isReduced) {
     return (
-      <div className="bg-[#0D0D0D] rounded-xl border border-[#333333] p-6">
-        <p className="text-xs text-[#D4AF37] mb-3">Book I Trial</p>
-        <p className="font-serif text-sm text-[#FAF7F2] font-semibold mb-4">{Q1.question}</p>
+      <div className="bg-card rounded-xl border border-border p-6">
+        <p className="text-xs text-primary mb-3">Book I Trial</p>
+        <p className="font-serif text-sm text-foreground font-semibold mb-4">{Q1.question}</p>
         <div className="space-y-2.5">
           {Q1.options.map((opt, i) => (
             <div key={i} className={cn(
               "flex items-center gap-3 rounded-lg border px-4 py-2.5 text-sm",
-              i === Q1.correctIndex ? "border-emerald-600/50 bg-emerald-950/30 text-emerald-400" : "border-[#333333] bg-[#222222] text-[#FAF7F2]"
+              i === Q1.correctIndex ? "border-emerald-500/50 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/30 dark:text-emerald-400" : "border-border bg-muted text-foreground"
             )}>
               <span className="font-semibold text-xs">{String.fromCharCode(65 + i)}</span>
               <span>{opt}</span>
@@ -67,19 +67,19 @@ export function AnimatedQuiz() {
   return (
     <div
       ref={containerRef}
-      className="bg-[#0D0D0D] rounded-xl border border-[#333333] p-6 min-h-[350px]"
+      className="bg-card rounded-xl border border-border p-6 min-h-[350px]"
       aria-label="Animated quiz demonstration"
     >
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
-        <p className="text-xs text-[#D4AF37] font-semibold">Book I Trial</p>
+        <p className="text-xs text-primary font-semibold">Book I Trial</p>
         <div className="flex items-center gap-1">
           {Array.from({ length: 5 }).map((_, i) => (
             <Heart
               key={i}
               className={cn(
                 "size-3.5 transition-all duration-300",
-                i < hearts ? "text-rose-500 fill-rose-500" : "text-[#333333]"
+                i < hearts ? "text-rose-500 fill-rose-500" : "text-muted-foreground/30"
               )}
             />
           ))}
@@ -95,7 +95,7 @@ export function AnimatedQuiz() {
           transition={{ duration: 0.35 }}
         >
           {/* Question */}
-          <p className="font-serif text-sm text-[#FAF7F2] font-semibold mb-4">
+          <p className="font-serif text-sm text-foreground font-semibold mb-4">
             {currentQ.question}
           </p>
 
@@ -126,15 +126,15 @@ export function AnimatedQuiz() {
                   }}
                   className={cn(
                     "flex items-center gap-3 rounded-lg border px-4 py-2.5 text-sm transition-colors duration-300",
-                    variant === "correct" && "border-emerald-600/50 bg-emerald-950/30 text-emerald-400",
-                    variant === "wrong" && "border-rose-600/50 bg-rose-950/30 text-rose-400",
-                    variant === "default" && "border-[#333333] bg-[#222222] text-[#FAF7F2]"
+                    variant === "correct" && "border-emerald-500/50 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/30 dark:text-emerald-400",
+                    variant === "wrong" && "border-rose-500/50 bg-rose-50 text-rose-700 dark:bg-rose-950/30 dark:text-rose-400",
+                    variant === "default" && "border-border bg-muted text-foreground"
                   )}
                 >
                   <span className="font-semibold text-xs w-4">{letter}</span>
                   <span className="flex-1">{opt}</span>
-                  {variant === "correct" && <Check className="size-4 text-emerald-400" />}
-                  {variant === "wrong" && <X className="size-4 text-rose-400" />}
+                  {variant === "correct" && <Check className="size-4 text-emerald-600 dark:text-emerald-400" />}
+                  {variant === "wrong" && <X className="size-4 text-rose-600 dark:text-rose-400" />}
                 </motion.div>
               )
             })}
@@ -147,7 +147,7 @@ export function AnimatedQuiz() {
                 initial={{ opacity: 0, y: 0 }}
                 animate={{ opacity: [1, 1, 0], y: -15 }}
                 transition={{ duration: 1.2, times: [0, 0.6, 1] }}
-                className="text-sm text-[#D4AF37] font-semibold mt-3 text-center"
+                className="text-sm text-primary font-semibold mt-3 text-center"
               >
                 +10 Wisdom
               </motion.p>

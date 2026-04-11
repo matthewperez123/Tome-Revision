@@ -1,124 +1,122 @@
 /**
- * Bright, vivid color assignment for countries on the Explore map.
- * Every country with authors gets a unique, distinct color.
+ * Continent-based color assignment for the Explore map.
+ * Each continent has a thematically relevant base hue.
+ * Countries within a continent get distinct shades of that hue.
+ *
+ * Europe     → Indigo/Violet (classical scholarship, Western canon)
+ * Asia       → Amber/Gold (silk road, imperial traditions)
+ * Africa     → Emerald/Green (lush, vibrant heritage)
+ * N. America → Teal/Blue (Atlantic, new world)
+ * S. America → Rose/Warm Red (passion, magical realism)
+ * Oceania    → Cyan/Sky (Pacific ocean)
  */
+
+import { CONTINENT_COUNTRIES, getCountriesWithAuthors } from "@/data/author-countries"
 
 interface ColorPair {
   light: string
   dark: string
 }
 
-// 23 vivid, maximally distinct colors — one per active country, no sharing
-const VIVID_PALETTE: ColorPair[] = [
-  { light: "#6366F1", dark: "#818CF8" },   // indigo
-  { light: "#EC4899", dark: "#F472B6" },   // pink
-  { light: "#EF4444", dark: "#F87171" },   // red
-  { light: "#F59E0B", dark: "#FBBF24" },   // amber
-  { light: "#10B981", dark: "#34D399" },   // emerald
-  { light: "#3B82F6", dark: "#60A5FA" },   // blue
-  { light: "#8B5CF6", dark: "#A78BFA" },   // violet
-  { light: "#14B8A6", dark: "#2DD4BF" },   // teal
-  { light: "#F97316", dark: "#FB923C" },   // orange
-  { light: "#06B6D4", dark: "#22D3EE" },   // cyan
-  { light: "#84CC16", dark: "#A3E635" },   // lime
-  { light: "#E11D48", dark: "#FB7185" },   // rose
-  { light: "#7C3AED", dark: "#A78BFA" },   // purple
-  { light: "#D97706", dark: "#F59E0B" },   // golden
-  { light: "#059669", dark: "#34D399" },   // green
-  { light: "#2563EB", dark: "#93C5FD" },   // royal blue
-  { light: "#DC2626", dark: "#FCA5A5" },   // crimson
-  { light: "#9333EA", dark: "#C084FC" },   // grape
-  { light: "#0891B2", dark: "#67E8F9" },   // sky
-  { light: "#65A30D", dark: "#BEF264" },   // chartreuse
-  { light: "#BE185D", dark: "#F9A8D4" },   // magenta
-  { light: "#1D4ED8", dark: "#BFDBFE" },   // sapphire
-  { light: "#B45309", dark: "#FCD34D" },   // honey
+// ── Continent shade palettes ────────────────────────────────────────────────
+// Each continent has enough shades for its countries, ordered lightest→deepest.
+
+const EUROPE_SHADES: ColorPair[] = [
+  { light: "#818CF8", dark: "#A5B4FC" }, // indigo-400 / indigo-300
+  { light: "#6366F1", dark: "#818CF8" }, // indigo-500 / indigo-400
+  { light: "#4F46E5", dark: "#6366F1" }, // indigo-600 / indigo-500
+  { light: "#4338CA", dark: "#818CF8" }, // indigo-700 / indigo-400
+  { light: "#7C3AED", dark: "#A78BFA" }, // violet-600 / violet-400
+  { light: "#6D28D9", dark: "#8B5CF6" }, // violet-700 / violet-500
+  { light: "#5B21B6", dark: "#7C3AED" }, // violet-800 / violet-600
+  { light: "#8B5CF6", dark: "#C4B5FD" }, // violet-500 / violet-300
+  { light: "#3730A3", dark: "#6366F1" }, // indigo-800 / indigo-500
+  { light: "#312E81", dark: "#818CF8" }, // indigo-900 / indigo-400
+  { light: "#5346E0", dark: "#A5B4FC" }, // custom mid-indigo
+  { light: "#7E22CE", dark: "#A855F7" }, // purple-700 / purple-500
+  { light: "#6B21A8", dark: "#9333EA" }, // purple-800 / purple-600
+  { light: "#581C87", dark: "#7C3AED" }, // purple-900 / violet-600
+  { light: "#4C1D95", dark: "#8B5CF6" }, // violet-900 / violet-500
+  { light: "#553C9A", dark: "#9F7AEA" }, // custom deep violet
+  { light: "#6C2BD9", dark: "#B794F4" }, // custom vibrant violet
+  { light: "#4A3AE0", dark: "#9B8DFA" }, // custom blue-violet
+  { light: "#7043E0", dark: "#B5A3FA" }, // custom bright violet
+  { light: "#5A3FD4", dark: "#A594FA" }, // custom warm indigo
 ]
 
-// Country adjacency for greedy assignment
-const ADJACENCY: Record<string, string[]> = {
-  GBR: ["IRL", "FRA"],
-  IRL: ["GBR"],
-  FRA: ["GBR", "DEU", "ITA", "ESP", "CHE"],
-  DEU: ["FRA", "AUT", "CHE", "CZE", "POL"],
-  ITA: ["FRA", "AUT", "CHE"],
-  ESP: ["FRA"],
-  AUT: ["DEU", "ITA", "CHE", "CZE", "HUN"],
-  CHE: ["FRA", "DEU", "ITA", "AUT"],
-  CZE: ["DEU", "AUT", "POL"],
-  POL: ["DEU", "CZE", "RUS"],
-  HUN: ["AUT"],
-  DNK: ["DEU", "NOR", "SWE"],
-  NOR: ["SWE", "FIN", "RUS", "DNK"],
-  SWE: ["NOR", "FIN", "DNK"],
-  FIN: ["NOR", "SWE", "RUS"],
-  LUX: ["FRA", "DEU"],
-  UKR: ["POL", "RUS", "HUN"],
-  RUS: ["NOR", "FIN", "POL", "CHN"],
-  GRC: ["ITA"],
-  USA: ["CAN"],
-  CAN: ["USA"],
-  CHN: ["RUS", "IND", "JPN"],
-  JPN: ["CHN"],
-  IND: ["CHN", "IRN"],
-  IRN: ["IND", "LBN"],
-  LBN: ["IRN"],
+const ASIA_SHADES: ColorPair[] = [
+  { light: "#F59E0B", dark: "#FBBF24" }, // amber-500 / amber-400
+  { light: "#D97706", dark: "#F59E0B" }, // amber-600 / amber-500
+  { light: "#B45309", dark: "#D97706" }, // amber-700 / amber-600
+  { light: "#92400E", dark: "#F59E0B" }, // amber-800 / amber-500
+  { light: "#CA8A04", dark: "#EAB308" }, // yellow-600 / yellow-500
+  { light: "#A16207", dark: "#CA8A04" }, // yellow-700 / yellow-600
+  { light: "#EA580C", dark: "#FB923C" }, // orange-600 / orange-400 (for variety)
+]
+
+const AFRICA_SHADES: ColorPair[] = [
+  { light: "#10B981", dark: "#34D399" }, // emerald-500 / emerald-400
+  { light: "#059669", dark: "#10B981" }, // emerald-600 / emerald-500
+  { light: "#047857", dark: "#059669" }, // emerald-700 / emerald-600
+  { light: "#065F46", dark: "#10B981" }, // emerald-800 / emerald-500
+  { light: "#16A34A", dark: "#4ADE80" }, // green-600 / green-400
+  { light: "#15803D", dark: "#22C55E" }, // green-700 / green-500
+  { light: "#166534", dark: "#16A34A" }, // green-800 / green-600
+]
+
+const NORTH_AMERICA_SHADES: ColorPair[] = [
+  { light: "#0D9488", dark: "#2DD4BF" }, // teal-600 / teal-400
+  { light: "#0F766E", dark: "#14B8A6" }, // teal-700 / teal-500
+  { light: "#115E59", dark: "#0D9488" }, // teal-800 / teal-600
+]
+
+const SOUTH_AMERICA_SHADES: ColorPair[] = [
+  { light: "#E11D48", dark: "#FB7185" }, // rose-600 / rose-400
+  { light: "#BE123C", dark: "#F43F5E" }, // rose-700 / rose-500
+  { light: "#9F1239", dark: "#E11D48" }, // rose-800 / rose-600
+  { light: "#DB2777", dark: "#F472B6" }, // pink-600 / pink-400
+  { light: "#C026D3", dark: "#E879F9" }, // fuchsia-600 / fuchsia-400
+]
+
+const OCEANIA_SHADES: ColorPair[] = [
+  { light: "#0891B2", dark: "#22D3EE" }, // cyan-600 / cyan-400
+  { light: "#0E7490", dark: "#06B6D4" }, // cyan-700 / cyan-500
+]
+
+// ── Map continents to their shade palettes ──────────────────────────────────
+
+const CONTINENT_PALETTES: Record<string, ColorPair[]> = {
+  Europe: EUROPE_SHADES,
+  Asia: ASIA_SHADES,
+  Africa: AFRICA_SHADES,
+  "North America": NORTH_AMERICA_SHADES,
+  "South America": SOUTH_AMERICA_SHADES,
+  Oceania: OCEANIA_SHADES,
 }
 
-function hslDistance(hex1: string, hex2: string): number {
-  const r1 = parseInt(hex1.slice(1, 3), 16)
-  const g1 = parseInt(hex1.slice(3, 5), 16)
-  const b1 = parseInt(hex1.slice(5, 7), 16)
-  const r2 = parseInt(hex2.slice(1, 3), 16)
-  const g2 = parseInt(hex2.slice(3, 5), 16)
-  const b2 = parseInt(hex2.slice(5, 7), 16)
-  return Math.sqrt((r1 - r2) ** 2 + (g1 - g2) ** 2 + (b1 - b2) ** 2)
-}
+// ── Deterministic assignment: each country gets a shade from its continent ──
 
-function assignColors(countries: string[]): Record<string, ColorPair> {
-  const sorted = [...countries].sort()
-  const assigned: Record<string, ColorPair> = {}
-  const usedIndices = new Set<number>()
+function buildCountryColors(): Record<string, ColorPair> {
+  const activeCountries = new Set(getCountriesWithAuthors())
+  const result: Record<string, ColorPair> = {}
 
-  for (const iso of sorted) {
-    const neighborIndices = new Set<number>()
-    for (const n of ADJACENCY[iso] ?? []) {
-      if (assigned[n]) {
-        const idx = VIVID_PALETTE.findIndex(p => p.light === assigned[n].light)
-        if (idx >= 0) neighborIndices.add(idx)
-      }
-    }
+  for (const [continent, countries] of Object.entries(CONTINENT_COUNTRIES)) {
+    const palette = CONTINENT_PALETTES[continent]
+    if (!palette) continue
 
-    let bestIdx = 0
-    let bestDist = -1
+    // Only assign to countries that have authors
+    const active = countries.filter((c) => activeCountries.has(c))
 
-    for (let i = 0; i < VIVID_PALETTE.length; i++) {
-      if (neighborIndices.has(i)) continue
-      if (usedIndices.has(i)) continue // never reuse a color
-
-      let minDist = Infinity
-      for (const nIdx of neighborIndices) {
-        const d = hslDistance(VIVID_PALETTE[i].light, VIVID_PALETTE[nIdx].light)
-        if (d < minDist) minDist = d
-      }
-      if (neighborIndices.size === 0) minDist = i * 10
-
-      if (minDist > bestDist) {
-        bestDist = minDist
-        bestIdx = i
-      }
-    }
-
-    assigned[iso] = VIVID_PALETTE[bestIdx]
-    usedIndices.add(bestIdx)
+    active.forEach((iso3, i) => {
+      // Cycle through shades if more countries than shades
+      result[iso3] = palette[i % palette.length]
+    })
   }
 
-  return assigned
+  return result
 }
 
-import { getCountriesWithAuthors } from "@/data/author-countries"
-
-export const COUNTRY_COLORS: Record<string, ColorPair> = assignColors(getCountriesWithAuthors())
+export const COUNTRY_COLORS: Record<string, ColorPair> = buildCountryColors()
 
 export function getCountryColor(iso3: string, mode: "light" | "dark"): string | undefined {
   const pair = COUNTRY_COLORS[iso3]
@@ -132,4 +130,11 @@ export function getAllCountryColors(): { iso3: string; light: string; dark: stri
     light: colors.light,
     dark: colors.dark,
   }))
+}
+
+/** Get the continent base color (first shade) for theming purposes */
+export function getContinentColor(continent: string, mode: "light" | "dark"): string {
+  const palette = CONTINENT_PALETTES[continent]
+  if (!palette?.[0]) return mode === "dark" ? "#818CF8" : "#6366F1"
+  return mode === "dark" ? palette[0].dark : palette[0].light
 }
