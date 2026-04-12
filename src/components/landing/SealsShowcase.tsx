@@ -3,7 +3,6 @@
 import { motion, AnimatePresence } from "motion/react"
 import { Shield, Flame } from "lucide-react"
 import { BlurFade } from "@/components/ui/blur-fade"
-import { QuillCursor } from "./QuillCursor"
 import { useAnimationLoop } from "./useAnimationLoop"
 
 const PHASES = [
@@ -23,17 +22,6 @@ export function SealsShowcase() {
   const showFlame = phase === "flame"
   const sealName = phase === "sealUnlock2" ? "Seal of Dante" : "Seal of Homer"
   const sealDesc = phase === "sealUnlock2" ? "Complete the Divine Comedy" : "Read 5 Greek texts"
-
-  const quillPos = (() => {
-    switch (phase) {
-      case "idle":         return { x: 200, y: 80 }
-      case "sealUnlock":   return { x: 140, y: 110 }
-      case "flame":        return { x: 100, y: 120 }
-      case "sealUnlock2":  return { x: 140, y: 110 }
-      default:             return { x: 200, y: 80 }
-    }
-  })()
-  const quillClicking = phase === "sealUnlock" || phase === "sealUnlock2"
 
   if (isReduced) {
     return (
@@ -142,12 +130,6 @@ export function SealsShowcase() {
           )}
         </AnimatePresence>
 
-        <QuillCursor
-          visible
-          x={quillPos.x}
-          y={quillPos.y}
-          clicking={quillClicking}
-        />
       </div>
     </SealsShell>
   )

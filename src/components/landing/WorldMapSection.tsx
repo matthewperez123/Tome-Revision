@@ -17,7 +17,6 @@ import {
   CONTINENT_COUNTRIES,
 } from "@/data/author-countries"
 import { getCountryColor } from "@/lib/country-colors"
-import { QuillCursor } from "./QuillCursor"
 import { useAnimationLoop } from "./useAnimationLoop"
 
 const GEO_URL =
@@ -106,17 +105,6 @@ export function WorldMapSection() {
   const selectedCountry = (phase === "selectGreece" || phase === "showAuthors") ? FEATURED_COUNTRY : null
   const showPanel = phase === "showAuthors"
   const projection = isZoomed ? EUROPE_VIEW : WORLD_VIEW
-
-  const quillPos = (() => {
-    switch (phase) {
-      case "world":        return { x: 380, y: 100 }
-      case "zoomEurope":   return { x: 290, y: 130 }
-      case "selectGreece": return { x: 320, y: 160 }
-      case "showAuthors":  return { x: 400, y: 80 }
-      default:             return { x: 380, y: 100 }
-    }
-  })()
-  const quillClicking = phase === "zoomEurope" || phase === "selectGreece"
 
   // Theme-aware map colors matching in-app
   const oceanColor = mode === "dark" ? "#0F0E1A" : "#FAF7F2"
@@ -330,12 +318,6 @@ export function WorldMapSection() {
               )}
             </AnimatePresence>
 
-            <QuillCursor
-              visible
-              x={quillPos.x}
-              y={quillPos.y}
-              clicking={quillClicking}
-            />
           </div>
         </BlurFade>
       </div>

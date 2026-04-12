@@ -12,7 +12,7 @@ export function MobileDock() {
   const pathname = usePathname()
 
   return (
-    <nav className="fixed bottom-0 inset-x-0 z-50 flex md:hidden">
+    <nav className="fixed bottom-0 inset-x-0 z-50 flex min-[480px]:hidden">
       <div className="flex w-full items-end justify-around border-t border-border bg-background/80 px-2 pb-[env(safe-area-inset-bottom,0px)] pt-1 backdrop-blur-lg">
         {dockNav.map((item) => {
           const isActive =

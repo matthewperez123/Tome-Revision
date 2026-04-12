@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { BookOpen, GraduationCap } from "lucide-react"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { useAudience } from "@/contexts/AudienceContext"
@@ -26,13 +27,16 @@ export function TeacherCTA() {
           Set up your roster, assign your first text, and see how your students engage.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-          <button onClick={() => setAudience("teacher")} className={glowBtn}>
+          <Link
+            href="/demo"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-indigo-500 text-white font-semibold text-sm hover:bg-indigo-600 hover:shadow-[0_0_20px_rgba(99,102,241,0.35)] hover:scale-[1.03] transition-all duration-200"
+          >
             <GraduationCap className="size-4" />
-            Start teaching
-          </button>
+            Book a demo
+          </Link>
           <button onClick={() => setAudience("reader")} className={glowBtn}>
             <BookOpen className="size-4" />
-            Start reading
+            I&apos;m a reader
           </button>
         </div>
       </BlurFade>

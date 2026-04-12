@@ -40,13 +40,15 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     <BookProgressProvider>
     <TooltipProvider>
     <VirgilWrapper>
-      <SidebarProvider>
-        <AppSidebar />
-        <div className="flex flex-1 flex-col overflow-hidden">
+      <SidebarProvider defaultOpen={false}>
+        <div className="flex h-svh w-full flex-col overflow-hidden">
           <TopBar />
-          <main className="flex-1 overflow-y-auto">
-            <PageTransition>{children}</PageTransition>
-          </main>
+          <div className="flex flex-1 overflow-hidden">
+            <AppSidebar />
+            <main className="flex-1 overflow-y-auto">
+              <PageTransition>{children}</PageTransition>
+            </main>
+          </div>
         </div>
       </SidebarProvider>
     </VirgilWrapper>

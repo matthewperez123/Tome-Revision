@@ -2,7 +2,6 @@
 
 import { motion } from "motion/react"
 import { BlurFade } from "@/components/ui/blur-fade"
-import { QuillCursor } from "./QuillCursor"
 import { useAnimationLoop } from "./useAnimationLoop"
 
 const PHASES = [
@@ -31,18 +30,6 @@ export function LibraryShowcase() {
   const selectIdx = (phase === "select2" || phase === "fill2") ? 3 : 0
   const showSelect = phase === "select" || phase === "fill" || phase === "select2" || phase === "fill2"
   const showFill = phase === "fill" || phase === "fill2"
-
-  const quillPos = (() => {
-    switch (phase) {
-      case "idle":    return { x: 180, y: 50 }
-      case "select":  return { x: 35, y: 75 }
-      case "fill":    return { x: 60, y: 85 }
-      case "select2": return { x: 35, y: 170 }
-      case "fill2":   return { x: 60, y: 180 }
-      default:        return { x: 180, y: 50 }
-    }
-  })()
-  const quillClicking = phase === "select" || phase === "select2"
 
   if (isReduced) {
     return (
@@ -86,12 +73,6 @@ export function LibraryShowcase() {
           ))}
         </div>
 
-        <QuillCursor
-          visible
-          x={quillPos.x}
-          y={quillPos.y}
-          clicking={quillClicking}
-        />
       </div>
     </LibraryShell>
   )

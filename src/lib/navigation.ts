@@ -3,7 +3,7 @@ import {
   LayoutDashboard,
   Library,
   BookOpen,
-  BrainCircuit,
+  Brain,
   Trophy,
   Users,
   Users2,
@@ -41,7 +41,7 @@ export const sidebarNav: NavItem[] = [
   { label: "My Shelves", href: "/shelves", icon: BookMarked },
   { label: "Authors", href: "/authors", icon: Users2 },
   { label: "Reading", href: "/reading", icon: BookOpen },
-  { label: "Quizzes", href: "/quizzes", icon: BrainCircuit },
+  { label: "Quizzes", href: "/quizzes", icon: Brain },
 
   // Teacher-only classroom tools
   { label: "My Classrooms", href: "/classroom", icon: GraduationCap, roles: ["teacher"], section: "teaching" },
@@ -79,6 +79,6 @@ export const dockNav: NavItem[] = [
   { label: "Home", href: "/", icon: Home },
   { label: "Library", href: "/library", icon: Library },
   { label: "Read", href: "/reading", icon: BookOpen },
-  { label: "Quiz", href: "/quizzes", icon: BrainCircuit },
+  { label: "Quiz", href: "/quizzes", icon: Brain },
   { label: "Profile", href: "/profile", icon: User },
 ]

@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "motion/react"
 import { Check } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { BlurFade } from "@/components/ui/blur-fade"
-import { QuillCursor } from "./QuillCursor"
 import { useAnimationLoop } from "./useAnimationLoop"
 
 const PHASES = [
@@ -28,17 +27,6 @@ export function TrialsShowcase() {
   const showSelected = phase === "select" || phase === "correct" || phase === "wisdom"
   const showCorrect = phase === "correct" || phase === "wisdom"
   const showWisdom = phase === "wisdom"
-
-  const quillPos = (() => {
-    switch (phase) {
-      case "question": return { x: 200, y: 60 }
-      case "select":   return { x: 50, y: 168 }
-      case "correct":  return { x: 100, y: 168 }
-      case "wisdom":   return { x: 180, y: 140 }
-      default:         return { x: 200, y: 60 }
-    }
-  })()
-  const quillClicking = phase === "select"
 
   if (isReduced) {
     return (
@@ -121,12 +109,6 @@ export function TrialsShowcase() {
           )}
         </AnimatePresence>
 
-        <QuillCursor
-          visible
-          x={quillPos.x}
-          y={quillPos.y}
-          clicking={quillClicking}
-        />
       </div>
     </TrialsShell>
   )

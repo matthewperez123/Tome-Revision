@@ -140,7 +140,7 @@ export function VirgilChat() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={closeChat}
-            className="fixed inset-0 z-50 bg-black/20 backdrop-blur-sm md:hidden"
+            className="fixed inset-0 z-50 bg-black/20 backdrop-blur-sm sm:hidden"
           />
 
           <motion.div

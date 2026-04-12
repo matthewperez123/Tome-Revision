@@ -2,7 +2,6 @@
 
 import { motion, AnimatePresence } from "motion/react"
 import { BlurFade } from "@/components/ui/blur-fade"
-import { QuillCursor } from "./QuillCursor"
 import { useAnimationLoop } from "./useAnimationLoop"
 
 const PHASES = [
@@ -39,20 +38,6 @@ export function AnnotationShowcase() {
   const showAnnotation1 = phase === "annotate"
   const showHighlight2 = phase === "hover2" || phase === "annotate2"
   const showAnnotation2 = phase === "annotate2"
-
-  // Quill positions per phase — moves to where the action is
-  const quillPos = (() => {
-    switch (phase) {
-      case "reading":    return { x: 240, y: 60 }
-      case "hover":      return { x: 60, y: 52 }
-      case "annotate":   return { x: 100, y: 200 }
-      case "reading2":   return { x: 220, y: 90 }
-      case "hover2":     return { x: 60, y: 100 }
-      case "annotate2":  return { x: 100, y: 220 }
-      default:           return { x: 280, y: 40 }
-    }
-  })()
-  const quillClicking = phase === "hover" || phase === "hover2"
 
   if (isReduced) {
     return (
@@ -104,12 +89,6 @@ export function AnnotationShowcase() {
           )}
         </AnimatePresence>
 
-        <QuillCursor
-          visible
-          x={quillPos.x}
-          y={quillPos.y}
-          clicking={quillClicking}
-        />
       </div>
     </AnnotationShell>
   )

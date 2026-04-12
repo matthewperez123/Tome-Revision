@@ -34,26 +34,6 @@ export function LandingNav() {
           Tome
         </span>
       </Link>
-      <div className="hidden md:flex items-center gap-6">
-        <Link
-          href="/library"
-          className={cn(
-            "text-sm transition-colors",
-            scrolled ? "text-muted-foreground hover:text-foreground" : "text-white/60 hover:text-white"
-          )}
-        >
-          Library
-        </Link>
-        <Link
-          href="/explore"
-          className={cn(
-            "text-sm transition-colors",
-            scrolled ? "text-muted-foreground hover:text-foreground" : "text-white/60 hover:text-white"
-          )}
-        >
-          Explore
-        </Link>
-      </div>
       <div className="flex items-center gap-3">
         <Link
           href="/dashboard"

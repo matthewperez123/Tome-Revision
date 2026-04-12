@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { Search, X } from "lucide-react"
+import { BookOpen, Search, X } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { SidebarTrigger } from "@/components/ui/sidebar"
@@ -38,14 +38,22 @@ export function TopBar({ className }: { className?: string }) {
   return (
     <header
       className={cn(
-        "flex h-12 shrink-0 items-center gap-3 border-b border-border bg-background px-4",
+        "relative z-20 flex h-12 shrink-0 items-center gap-1.5 border-b border-border bg-background px-2",
         className
       )}
     >
-      <SidebarTrigger className="md:hidden" />
+      {/* Sidebar trigger + Logo */}
+      <SidebarTrigger className="shrink-0" />
+      <Link
+        href="/"
+        className="flex items-center gap-1.5 text-foreground shrink-0 hover:opacity-70 transition-opacity"
+      >
+        <BookOpen className="size-4" />
+        <span className="text-sm font-semibold tracking-tight">Tome</span>
+      </Link>
 
       {/* Search */}
-      <div className="relative flex-1 max-w-md" data-search-container>
+      <div className="relative flex-1 min-w-0" data-search-container>
         <Search className="absolute left-2.5 top-1/2 size-3.5 -translate-y-1/2 text-muted-foreground pointer-events-none" />
         <Input
           ref={inputRef}
@@ -79,15 +87,10 @@ export function TopBar({ className }: { className?: string }) {
         />
       </div>
 
-      <div className="ml-auto flex items-center gap-1">
-        {/* Theme toggle */}
+      <div className="ml-auto flex items-center gap-0.5">
         <ThemeToggle />
-
-        {/* Notification bell */}
         <NotificationBell />
-
-        {/* User avatar */}
-        <Link href="/profile/avatar" className="rounded-full hover:opacity-80 transition-opacity">
+        <Link href="/profile/avatar" className="rounded-full hover:opacity-80 transition-opacity ml-0.5">
           <UserAvatar
             character={displayCharacter}
             size="xs"

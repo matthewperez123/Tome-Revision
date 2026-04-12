@@ -3,7 +3,6 @@
 import * as React from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { BookOpen } from "lucide-react"
 import { getNavForRole } from "@/lib/navigation"
 import { useAuth } from "@/hooks/use-auth"
 import {
@@ -12,7 +11,6 @@ import {
   SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
-  SidebarHeader,
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuButton,
@@ -27,21 +25,8 @@ export function AppSidebar() {
   const collapsed = state === "collapsed"
 
   return (
-    <Sidebar collapsible="icon" className="border-r-0">
-      <SidebarHeader className="px-3 py-4">
-        <Link
-          href="/"
-          className="flex items-center gap-2 text-foreground transition-opacity duration-[var(--tome-duration-fast)] hover:opacity-70"
-        >
-          <BookOpen className="size-5 shrink-0" />
-          {!collapsed && (
-            <span className="text-base font-semibold tracking-tight">
-              Tome
-            </span>
-          )}
-        </Link>
-      </SidebarHeader>
-      <SidebarContent>
+    <Sidebar collapsible="icon" overlayExpand className="border-r-0 !top-12 !h-[calc(100svh-3rem)] [&_[data-sidebar=sidebar]]:bg-background">
+      <SidebarContent className="pt-1">
         <SidebarGroup>
           <SidebarGroupContent>
             <SidebarNav pathname={pathname} />

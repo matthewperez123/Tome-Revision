@@ -18,11 +18,11 @@ export function HeroCTA() {
       <div className="flex flex-col sm:flex-row items-center gap-3">
         <button onClick={() => setAudience("teacher")} className={glass}>
           <GraduationCap className="size-4" />
-          Start teaching
+          I&apos;m a teacher
         </button>
         <button onClick={() => setAudience("reader")} className={glass}>
           <BookOpen className="size-4" />
-          Start reading
+          I&apos;m a reader
         </button>
       </div>
     )
@@ -32,11 +32,11 @@ export function HeroCTA() {
     <div className="flex flex-col sm:flex-row items-center gap-3">
       <button onClick={() => setAudience("reader")} className={glass}>
         <BookOpen className="size-4" />
-        Start reading
+        I&apos;m a reader
       </button>
       <button onClick={() => setAudience("teacher")} className={glass}>
         <GraduationCap className="size-4" />
-        Start teaching
+        I&apos;m a teacher
       </button>
     </div>
   )
