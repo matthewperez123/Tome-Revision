@@ -437,7 +437,7 @@ export default function BookCompletePage() {
   const tradColor   = TRADITION_COLORS[book.tradition] ?? { bg: "rgba(99,102,241,0.14)", text: "#4338ca", dot: "#6366F1" }
   const chaptersDone = progress?.completedChapterIndices.length ?? book.chapters
   const quizCount   = progress?.quizResults.length ?? 0
-  const isGuided    = progress?.readingMode === "guided"
+  const isGuided    = true // reading mode concept removed; treat all as guided
 
   // Virgil rec
   const authorKey = book.author.toLowerCase().replace(/\s+/g, "-")
@@ -580,7 +580,7 @@ export default function BookCompletePage() {
                           className="ml-1.5 inline-flex items-center rounded-full px-1.5 py-0.5 text-[9px] font-bold"
                           style={{ background: tradColor.bg, color: tradColor.text }}
                         >
-                          {progress?.difficulty ?? "Apprentice"}
+                          Completed
                         </span>
                       </p>
                     </div>

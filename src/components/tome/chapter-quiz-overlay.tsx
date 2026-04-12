@@ -7,6 +7,7 @@ import { Confetti, type ConfettiRef } from "@/components/ui/confetti"
 import { Button } from "@/components/ui/button"
 import { quizReducer, createQuizState, type Quiz, type Question } from "@/lib/quiz-engine"
 import type { ChapterQuestion } from "@/lib/chapter-questions"
+import { TrialDifficultyCards } from "./trial-difficulty-cards"
 import type { Book } from "@/lib/supabase"
 import { springs } from "@/lib/design-tokens"
 
@@ -14,18 +15,25 @@ import { springs } from "@/lib/design-tokens"
 // Types
 // ─────────────────────────────────────────────
 
-type OverlayPhase = "celebration" | "quiz" | "results"
+type OverlayPhase = "difficulty-select" | "quiz" | "results"
 
 export interface ChapterQuizOverlayProps {
   book: Book
   chapterTitle: string
   chapterIndex: number
-  questions: ChapterQuestion[]
+  /** Unit display string, e.g. "Canto III" or "Chapter 5" */
+  unitDisplay: string
   hearts: number
   isOpen: boolean
   onPass: (xpEarned: number, coinsEarned: number) => void
   onFail: () => void
   onClose: () => void
+  /** Called when user selects a trial difficulty */
+  onSelectDifficulty: (difficulty: import("@/lib/book-progress").QuizDifficulty) => void
+  /** Called when user skips the trial */
+  onSkip: () => void
+  /** Questions for the currently selected difficulty (empty until selected) */
+  questions: ChapterQuestion[]
 }
 
 // ─────────────────────────────────────────────
@@ -593,11 +601,6 @@ function ResultsPhase({
           transition={{ delay: 0.35, duration: 0.35 }}
           className="space-y-3 w-full max-w-sm"
         >
-          {/* Unlock badge */}
-          <div className="flex items-center justify-center gap-2 py-2 px-4 rounded-xl border border-amber-300 bg-amber-50 dark:border-amber-600/40 dark:bg-amber-950/30">
-            <span className="text-amber-800 dark:text-amber-300 text-sm font-semibold">Next Chapter Unlocked!</span>
-          </div>
-
           <Button
             onClick={() => onPass(xpEarned, coinsEarned)}
             className="w-full bg-[var(--tome-accent)] hover:bg-[#E0C48A] text-[#111111] py-3 rounded-xl text-base font-semibold gap-2 shadow-lg shadow-black/20"
@@ -627,7 +630,7 @@ function ResultsPhase({
             onClick={onClose}
             className="text-muted-foreground hover:text-ink text-sm underline underline-offset-2 transition-colors"
           >
-            Switch to Free Mode
+            Skip and continue reading
           </button>
         </motion.div>
       )}
@@ -747,31 +750,34 @@ export function ChapterQuizOverlay({
   book,
   chapterTitle,
   chapterIndex,
+  unitDisplay,
   questions,
   hearts,
   isOpen,
   onPass,
   onFail,
   onClose,
+  onSelectDifficulty,
+  onSkip,
 }: ChapterQuizOverlayProps) {
-  const [phase, setPhase] = useState<OverlayPhase>("celebration")
+  const [phase, setPhase] = useState<OverlayPhase>("difficulty-select")
   // quizAttempt increments on retry; keyed on QuizController to force full state reset
   const [quizAttempt, setQuizAttempt] = useState(0)
 
   // Reset phase when overlay opens
   useEffect(() => {
     if (isOpen) {
-      setPhase("celebration")
+      setPhase("difficulty-select")
       setQuizAttempt(0)
     }
   }, [isOpen])
 
-  // Auto-advance from celebration to quiz after 1500ms
+  // When questions are provided (after difficulty selection), transition to quiz
   useEffect(() => {
-    if (phase !== "celebration") return
-    const t = setTimeout(() => setPhase("quiz"), 1500)
-    return () => clearTimeout(t)
-  }, [phase])
+    if (phase === "difficulty-select" && questions.length > 0) {
+      setPhase("quiz")
+    }
+  }, [phase, questions.length])
 
   const handleRetry = useCallback(() => {
     setQuizAttempt((n) => n + 1)
@@ -790,9 +796,9 @@ export function ChapterQuizOverlay({
           transition={{ ...springs.gentle, duration: 0.55 }}
           className="fixed inset-0 z-50 bg-background flex flex-col"
         >
-          {/* Close button (only visible in quiz/results phase) */}
+          {/* Close button (visible in all phases except difficulty-select) */}
           <AnimatePresence>
-            {phase !== "celebration" && (
+            {phase !== "difficulty-select" && (
               <motion.button
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -809,20 +815,21 @@ export function ChapterQuizOverlay({
 
           {/* Phase content */}
           <div className="flex-1 flex flex-col overflow-hidden relative">
-            {/* Celebration phase */}
+            {/* Difficulty selection phase */}
             <AnimatePresence mode="wait">
-              {phase === "celebration" && (
+              {phase === "difficulty-select" && (
                 <motion.div
-                  key="celebration"
+                  key="difficulty-select"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.3 }}
                   className="absolute inset-0 flex flex-col"
                 >
-                  <CelebrationPhase
-                    chapterTitle={chapterTitle}
-                    onStart={() => setPhase("quiz")}
+                  <TrialDifficultyCards
+                    unitDisplay={unitDisplay}
+                    onSelectDifficulty={onSelectDifficulty}
+                    onSkip={onSkip}
                   />
                 </motion.div>
               )}

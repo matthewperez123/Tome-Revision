@@ -239,10 +239,10 @@ export function createNotification(params: CreateNotificationParams): {
 
 // ── Typed Convenience Wrappers ──────────────────────────────────────────────
 
-export function notifyChapterCompleted(bookTitle: string, chapterTitle: string, bookId: string, nextChapterIndex?: number) {
+export function notifyChapterCompleted(bookTitle: string, chapterTitle: string, bookId: string, nextChapterIndex?: number, unitLabel = "Chapter") {
   return createNotification({
     type: "chapter_completed",
-    title: "Chapter complete",
+    title: `${unitLabel} complete`,
     body: `${bookTitle} — ${chapterTitle}`,
     icon: "BookCheck",
     link: nextChapterIndex != null ? `/read/${bookId}` : `/book/${bookId}`,

@@ -4,11 +4,20 @@ import { useState, useEffect } from "react"
 import { Heart, Flame, TrendingUp, BookOpen } from "lucide-react"
 import { toggleFavorite, isFavorite } from "@/lib/shelves/store"
 import { cn } from "@/lib/utils"
-import { type TomeBook } from "@/data/books"
+import { type TomeBook, type StructuralUnitType } from "@/data/books"
+import { getShortProgress } from "@/lib/structural-units"
 import { getCoverParams } from "@/components/tome/book-cover"
 import { ClassicsCover } from "@/components/tome/ClassicsCover"
 import { AuthorLink } from "@/components/tome/author-link"
 import type { getAllBookProgress } from "@/lib/book-progress"
+
+// ── Helpers ────────────────────────────────────
+
+function formatYear(year: number): string {
+  if (year < 0) return `c. ${Math.abs(year)} BCE`
+  if (year < 1500) return `c. ${year}`
+  return String(year)
+}
 
 // ── Palette helpers ────────────────────────────
 
@@ -30,6 +39,12 @@ export const TRADITION_COLORS: Record<string, { bg: string; text: string; dot: s
   "Scandinavian":      { bg: "rgba(100,116,139,0.14)", text: "#334155",  dot: "#64748B" },
   "Germanic":          { bg: "rgba(107,114,128,0.14)", text: "#374151",  dot: "#6B7280" },
   "World Literature":  { bg: "rgba(156,163,175,0.14)", text: "#4b5563",  dot: "#9CA3AF" },
+  "Speculative":       { bg: "rgba(168,85,247,0.14)",  text: "#7c3aed",  dot: "#A855F7" },
+  "Mystery & Crime":   { bg: "rgba(220,38,38,0.14)",   text: "#991b1b",  dot: "#DC2626" },
+  "Philosophy":        { bg: "rgba(59,130,246,0.14)",   text: "#1d4ed8",  dot: "#3B82F6" },
+  "Children's Literature": { bg: "rgba(251,191,36,0.14)", text: "#a16207", dot: "#FBBF24" },
+  "Religious":         { bg: "rgba(180,83,9,0.14)",     text: "#92400e",  dot: "#B45309" },
+  "Ancient":           { bg: "rgba(161,98,7,0.14)",     text: "#854d0e",  dot: "#A16207" },
 }
 
 const DIFFICULTY_COLORS: Record<string, { bg: string; text: string }> = {
@@ -86,9 +101,11 @@ export interface BookCardProps {
   /** sm = compact grid cards, lg = recommended/featured cards */
   size?: "sm" | "lg"
   className?: string
+  /** When set to "year", show the publication year below the author */
+  activeSort?: string
 }
 
-export function BookCard({ book, progress, size = "sm", className }: BookCardProps) {
+export function BookCard({ book, progress, size = "sm", className, activeSort }: BookCardProps) {
   const coverParams = getCoverParams(book)
   const tradColor  = TRADITION_COLORS[book.tradition]  ?? { bg: "rgba(99,102,241,0.14)", text: "#4338ca", dot: "#6366F1" }
   const diffColor  = DIFFICULTY_COLORS[book.difficulty] ?? { bg: "rgba(99,102,241,0.14)", text: "#4338ca" }
@@ -121,27 +138,13 @@ export function BookCard({ book, progress, size = "sm", className }: BookCardPro
           tradition={book.tradition}
           fallbackColors={book.coverColors}
           showTomeWordmark={size === "lg"}
+          hideBand
+          aspectRatio="3/4"
           className={cn(
             "w-full transition-transform duration-[var(--tome-duration-fast)] group-hover:-translate-y-0.5 rounded-none",
             size === "lg" && "min-h-[160px]"
           )}
         />
-
-        {/* Tradition badge — top-left */}
-        <span
-          className="absolute top-1.5 left-1.5 rounded-full px-1.5 py-px text-[8px] font-semibold leading-none truncate max-w-[90px]"
-          style={{ background: tradColor.bg, color: tradColor.text }}
-        >
-          {book.tradition}
-        </span>
-
-        {/* Difficulty badge — top-right */}
-        <span
-          className="absolute top-1.5 right-1.5 rounded-full px-1.5 py-px text-[8px] font-semibold leading-none"
-          style={{ background: diffColor.bg, color: diffColor.text }}
-        >
-          {book.difficulty}
-        </span>
 
         {/* Trending badge — bottom-right */}
         {book.trending && (
@@ -155,7 +158,25 @@ export function BookCard({ book, progress, size = "sm", className }: BookCardPro
       </div>
 
       {/* ── Meta ── */}
-      <div className={cn("flex flex-col min-w-0 px-2.5 pt-2 pb-2.5", size === "lg" ? "gap-1" : "gap-0.5")}>
+      <div className={cn("flex flex-col min-w-0 px-3 pt-2.5 pb-3", size === "lg" ? "gap-1" : "gap-0.5")}>
+        {/* Tradition dot + label · Difficulty */}
+        <div className="flex items-center gap-1.5">
+          <span
+            className="size-2 shrink-0 rounded-full"
+            style={{ backgroundColor: tradColor.dot }}
+          />
+          <span className="text-[10px] font-medium text-muted-foreground/70 uppercase tracking-wider truncate">
+            {book.tradition}
+          </span>
+          <span className="text-muted-foreground/30 text-[8px]">·</span>
+          <span
+            className="text-[10px] font-medium uppercase tracking-wider shrink-0"
+            style={{ color: diffColor.text }}
+          >
+            {book.difficulty}
+          </span>
+        </div>
+
         <h3
           className={cn(
             "font-semibold leading-snug line-clamp-2",
@@ -176,6 +197,12 @@ export function BookCard({ book, progress, size = "sm", className }: BookCardPro
           />
         </span>
 
+        {activeSort === "year" && book.year != null && (
+          <span className="text-[10px] text-muted-foreground/60 tabular-nums">
+            {formatYear(book.year)}
+          </span>
+        )}
+
         {size === "lg" && (
           <p className="text-[10px] text-muted-foreground/70 mt-0.5">
             {book.estimatedReadingTime} · {book.wordCount.toLocaleString()} words
@@ -187,7 +214,7 @@ export function BookCard({ book, progress, size = "sm", className }: BookCardPro
           <div className={cn("mt-1.5", size === "lg" && "mt-2")}>
             {progress ? (
               <div className="flex items-center justify-between text-[9px] text-muted-foreground mb-1">
-                <span>Ch {chaptersDone} / {book.chapters}</span>
+                <span>{getShortProgress((book as any).structuralUnitType ?? 'chapter', chaptersDone, book.chapters)}</span>
                 <span>{progressPct}%</span>
               </div>
             ) : null}

@@ -20,7 +20,7 @@ import { useParams, useRouter } from "next/navigation"
 import Link from "next/link"
 import {
   BookOpen, Bookmark, BookmarkCheck, ChevronRight, Clock,
-  Globe, Lock, Play, CheckCircle2, ArrowRight, Hash,
+  Globe, Play, CheckCircle2, ArrowRight, Hash,
   LayoutList, ChevronDown,
 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
@@ -30,13 +30,13 @@ import { getCoverParams } from "@/components/tome/book-cover"
 import { ClassicsCover } from "@/components/tome/ClassicsCover"
 import { BookCard, TRADITION_COLORS } from "@/components/tome/book-card"
 import { AuthorLink } from "@/components/tome/author-link"
-import { ReadingModeModal } from "@/components/tome/reading-mode-modal"
 import { getBook, getChapters, getAuthor, getBooksByTradition, getBooksByAuthor } from "@/lib/content"
 import {
-  getBookProgress, createBookProgress, saveBookProgress, isChapterLocked,
+  getBookProgress, createBookProgress, saveBookProgress,
   type BookProgress,
 } from "@/lib/book-progress"
-import type { TomeBook } from "@/data/books"
+import type { TomeBook, StructuralUnitType } from "@/data/books"
+import { getUnitLabel, getUnitNumber, getShortProgress } from "@/lib/structural-units"
 import type { TomeChapter } from "@/data/chapters"
 import type { Author } from "@/data/authors"
 import { cn } from "@/lib/utils"
@@ -56,17 +56,15 @@ const DIFFICULTY_COLORS: Record<string, { bg: string; text: string }> = {
 
 // ── Chapter status helper ──────────────────────
 
-type ChapterStatus = "completed" | "current" | "locked" | "available"
+type ChapterStatus = "completed" | "current" | "available"
 
 function getChapterStatus(
   index: number,
   progress: BookProgress | null,
-  chapterTitles?: string[],
 ): ChapterStatus {
   if (!progress) return "available"
   if (progress.completedChapterIndices.includes(index)) return "completed"
   if (index === progress.currentChapterIndex) return "current"
-  if (isChapterLocked(progress, index, chapterTitles)) return "locked"
   return "available"
 }
 
@@ -107,7 +105,6 @@ export default function BookDetailPage() {
 
   // ── UI state ──────────────────────────────────
   const [showAllChapters,  setShowAllChapters]  = useState(false)
-  const [showModeModal,    setShowModeModal]    = useState(false)
   const [mounted,          setMounted]          = useState(false)
 
   // ── Load ──────────────────────────────────────
@@ -128,18 +125,10 @@ export default function BookDetailPage() {
   // ── Handlers ──────────────────────────────────
   function handleStartReading() {
     if (!progress) {
-      // First time — show mode/difficulty selection
-      setShowModeModal(true)
-      return
+      const newProgress = createBookProgress(bookId)
+      saveBookProgress(newProgress)
+      setProgress(newProgress)
     }
-    router.push(`/read/${bookId}`)
-  }
-
-  function handleModeSelect(mode: 'guided' | 'free', difficulty?: import("@/lib/book-progress").QuizDifficulty) {
-    const newProgress = createBookProgress(bookId, mode, difficulty ?? 'Apprentice')
-    saveBookProgress(newProgress)
-    setProgress(newProgress)
-    setShowModeModal(false)
     router.push(`/read/${bookId}`)
   }
 
@@ -160,7 +149,7 @@ export default function BookDetailPage() {
     ? "Start Reading"
     : progressPct === 100
     ? "Read Again"
-    : `Continue — Ch ${currentChapterIdx + 1}${currentChapterTitle ? `: ${currentChapterTitle}` : ""}`
+    : `Continue — ${getUnitNumber(book?.structuralUnitType ?? 'chapter', currentChapterIdx + 1, currentChapterTitle)}`
 
   const INITIAL_CHAPTERS = 5
 
@@ -187,13 +176,6 @@ export default function BookDetailPage() {
 
   return (
     <>
-      {/* Reading Mode / Difficulty Selection Modal */}
-      <ReadingModeModal
-        bookTitle={book.title}
-        isOpen={showModeModal}
-        onSelect={handleModeSelect}
-      />
-
       <div className="flex flex-col min-h-full">
         {/* ── Breadcrumb ── */}
         <nav
@@ -273,7 +255,7 @@ export default function BookDetailPage() {
                 <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-muted-foreground">
                   <span className="flex items-center gap-1">
                     <LayoutList className="size-3" />
-                    {book.chapters} chapter{book.chapters !== 1 ? "s" : ""}
+                    {book.chapters} {getUnitLabel(book.structuralUnitType ?? 'chapter', book.chapters !== 1)}
                   </span>
                   <span className="opacity-40">·</span>
                   <span>{book.wordCount.toLocaleString()} words</span>
@@ -297,7 +279,7 @@ export default function BookDetailPage() {
                 {progress && progressPct > 0 && (
                   <div className="mt-3 w-full max-w-[260px]">
                     <div className="flex items-center justify-between text-[10px] text-muted-foreground mb-1">
-                      <span>Chapter {chaptersDone} / {book.chapters}</span>
+                      <span>{getShortProgress(book.structuralUnitType ?? 'chapter', chaptersDone, book.chapters)}</span>
                       <span>{progressPct}%</span>
                     </div>
                     <div className="h-1 bg-muted rounded-full overflow-hidden">
@@ -430,19 +412,19 @@ export default function BookDetailPage() {
               <div className="flex items-center justify-between mb-3">
                 <h2 className="text-sm font-semibold tracking-tight flex items-center gap-2">
                   <LayoutList className="size-4 text-muted-foreground" />
-                  Chapters
+                  {getUnitLabel(book.structuralUnitType ?? 'chapter', true)}
                   <span className="text-xs text-muted-foreground font-normal">({chapters.length})</span>
                 </h2>
               </div>
 
               {chapters.length === 0 ? (
                 <div className="rounded-xl border border-dashed border-border p-6 text-center">
-                  <p className="text-xs text-muted-foreground">Chapter list coming soon.</p>
+                  <p className="text-xs text-muted-foreground">{getUnitLabel(book.structuralUnitType ?? 'chapter')} list coming soon.</p>
                 </div>
               ) : (
                 <div className="space-y-1.5">
                   {visibleChapters.map((chapter, i) => {
-                    const status = getChapterStatus(i, progress, chapters.map(c => c.title))
+                    const status = getChapterStatus(i, progress)
                     return (
                       <ChapterRow
                         key={chapter.id}
@@ -467,8 +449,8 @@ export default function BookDetailPage() {
                         <ChevronDown className="size-4" />
                       </motion.span>
                       {showAllChapters
-                        ? "Show fewer chapters"
-                        : `Show all ${chapters.length} chapters`}
+                        ? `Show fewer ${getUnitLabel(book.structuralUnitType ?? 'chapter', true).toLowerCase()}`
+                        : `Show all ${chapters.length} ${getUnitLabel(book.structuralUnitType ?? 'chapter', true).toLowerCase()}`}
                     </button>
                   )}
                 </div>
@@ -560,8 +542,6 @@ interface ChapterRowProps {
 }
 
 function ChapterRow({ chapter, index, status, bookId, tradColor }: ChapterRowProps) {
-  const isLocked = status === "locked"
-
   const content = (
     <div
       className={cn(
@@ -569,7 +549,6 @@ function ChapterRow({ chapter, index, status, bookId, tradColor }: ChapterRowPro
         status === "current"  && "border-[var(--tome-accent)]/40 bg-[color-mix(in_srgb,var(--tome-accent)_5%,transparent)]",
         status === "completed" && "border-border/40 bg-muted/30 opacity-75",
         status === "available" && "border-border bg-card hover:border-foreground/20 hover:shadow-sm",
-        status === "locked"   && "border-border/30 bg-card opacity-40 cursor-not-allowed",
       )}
     >
       {/* Chapter number */}
@@ -589,18 +568,17 @@ function ChapterRow({ chapter, index, status, bookId, tradColor }: ChapterRowPro
         <p className={cn(
           "text-xs font-medium leading-snug",
           status === "completed" && "line-through decoration-muted-foreground/40",
-          status === "locked" && "text-muted-foreground"
         )}>
           {chapter.title}
         </p>
-        {chapter.summary && status !== "locked" && (
+        {chapter.summary && (
           <p className="text-[10px] text-muted-foreground mt-0.5 line-clamp-1">{chapter.summary}</p>
         )}
         <div className="flex items-center gap-2 mt-1 text-[10px] text-muted-foreground/60">
           <span>{chapter.wordCount.toLocaleString()} words</span>
           <span>·</span>
           <span>~{chapter.estimatedMinutes} min</span>
-          {chapter.quizAvailable && status !== "locked" && (
+          {chapter.quizAvailable && (
             <>
               <span>·</span>
               <span className="text-[var(--tome-accent)]/70">Quiz</span>
@@ -617,20 +595,9 @@ function ChapterRow({ chapter, index, status, bookId, tradColor }: ChapterRowPro
         {status === "current" && (
           <Play className="size-3.5 fill-[var(--tome-accent)] text-[var(--tome-accent)]" />
         )}
-        {status === "locked" && (
-          <Lock className="size-3.5 text-muted-foreground/40" />
-        )}
       </div>
     </div>
   )
-
-  if (isLocked) {
-    return (
-      <div title={`Complete Chapter ${index} to unlock`}>
-        {content}
-      </div>
-    )
-  }
 
   return (
     <a href={`/read/${bookId}`}>

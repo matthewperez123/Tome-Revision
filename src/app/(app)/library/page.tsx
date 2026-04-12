@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState, useMemo, useCallback } from "react"
-import { BookOpen, TrendingUp, Search, Flame } from "lucide-react"
+import { BookOpen, TrendingUp, Search, Flame, SlidersHorizontal, ChevronLeft, ChevronRight } from "lucide-react"
 import { type TomeBook } from "@/data/books"
 import { getBooks, getTrendingBooks, searchBooks } from "@/lib/content"
 // supabase removed — library uses local BOOKS data as the canonical source
@@ -20,16 +20,6 @@ import { cn } from "@/lib/utils"
 
 // Traditions are derived dynamically from the BOOKS catalog — no hardcoded list needed
 
-const ERAS = [
-  { label: "All Eras",           value: "" },
-  { label: "Ancient (–500)",     value: "ancient" },
-  { label: "Medieval (500–1400)",value: "medieval" },
-  { label: "Renaissance (–1700)",value: "renaissance" },
-  { label: "Enlightenment (–1800)", value: "enlightenment" },
-  { label: "Modern (–1950)",     value: "modern" },
-  { label: "Contemporary",       value: "contemporary" },
-] as const
-
 const DIFFICULTIES = [
   { label: "All Levels",     value: "" },
   { label: "Beginner",       value: "Beginner" },
@@ -40,7 +30,7 @@ const DIFFICULTIES = [
 
 const SORTS = [
   { label: "Title A–Z",      value: "title" },
-  { label: "Year",           value: "year" },
+  { label: "Chronological",  value: "year" },
   { label: "Difficulty",     value: "difficulty" },
   { label: "Shortest First", value: "shortest" },
   { label: "Most Popular",   value: "popular" },
@@ -50,19 +40,6 @@ const DIFFICULTY_ORDER: Record<string, number> = {
   beginner: 1, intermediate: 2, advanced: 3, scholar: 4,
 }
 
-// ── Era filtering helper ───────────────────────
-
-function bookMatchesEra(year: number, era: string): boolean {
-  switch (era) {
-    case "ancient":       return year < 500
-    case "medieval":      return year >= 500  && year < 1400
-    case "renaissance":   return year >= 1400 && year < 1700
-    case "enlightenment": return year >= 1700 && year < 1800
-    case "modern":        return year >= 1800 && year < 1950
-    case "contemporary":  return year >= 1950
-    default:              return true
-  }
-}
 
 // ── Page ──────────────────────────────────────
 
@@ -76,9 +53,12 @@ export default function LibraryPage() {
   // ── Filter state ───────────────────────────────
   const [search,     setSearch]     = useState("")
   const [selectedTraditions, setSelectedTraditions] = useState<Set<string>>(new Set())
-  const [era,        setEra]        = useState("")
   const [difficulty, setDifficulty] = useState("")
-  const [sort,       setSort]       = useState("title")
+  const [filterOpen, setFilterOpen] = useState(false)
+  const [sort,       setSort]       = useState(() => {
+    if (typeof window === 'undefined') return "title"
+    return localStorage.getItem("tome-library-sort") ?? "title"
+  })
 
   const debouncedSearch = useDebounce(search, 300)
 
@@ -91,6 +71,12 @@ export default function LibraryPage() {
       setLoading(false)
     }
     loadBooks()
+  }, [])
+
+  // ── Persist sort to localStorage ──
+  const handleSetSort = useCallback((value: string) => {
+    setSort(value)
+    try { localStorage.setItem("tome-library-sort", value) } catch {}
   }, [])
 
   // ── Tradition toggle (multi-select, matches /authors) ──
@@ -107,12 +93,11 @@ export default function LibraryPage() {
   const clearFilters = useCallback(() => {
     setSearch("")
     setSelectedTraditions(new Set())
-    setEra("")
     setDifficulty("")
-    setSort("title")
+    handleSetSort("title")
   }, [])
 
-  const hasActiveFilters = !!(debouncedSearch || selectedTraditions.size > 0 || era || difficulty)
+  const hasActiveFilters = !!(debouncedSearch || selectedTraditions.size > 0 || difficulty)
 
   // ── All traditions present in the library ──
   const allTraditions = useMemo(() => {
@@ -127,7 +112,6 @@ export default function LibraryPage() {
 
     if (debouncedSearch) result = searchBooks(debouncedSearch)
     if (selectedTraditions.size > 0) result = result.filter(b => selectedTraditions.has(b.tradition))
-    if (era)        result = result.filter(b => bookMatchesEra(b.year, era))
     if (difficulty) result = result.filter(b => b.difficulty === difficulty)
 
     result = [...result].sort((a, b) => {
@@ -146,54 +130,84 @@ export default function LibraryPage() {
     })
 
     return result
-  }, [allBooks, debouncedSearch, selectedTraditions, era, difficulty, sort])
+  }, [allBooks, debouncedSearch, selectedTraditions, difficulty, sort])
 
   // Show discovery sections only when no active filters
   const showDiscovery = !hasActiveFilters
 
   return (
-    <div className="flex flex-col md:flex-row gap-0 min-h-full">
-      {/* ── Filter Sidebar — mirrors /authors exactly ── */}
-      <aside className="hidden md:block shrink-0 w-56 border-r border-border bg-[var(--tome-surface-elevated)] p-4">
-        <div className="flex items-center justify-between mb-4">
-          <h3 className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
-            Filters
-          </h3>
-          {hasActiveFilters && (
+    <div className="flex flex-row gap-0 min-h-full">
+      {/* ── Filter Sidebar — collapsible with peek rail ── */}
+      <aside
+        className={cn(
+          "relative shrink-0 border-r border-border bg-[var(--tome-surface-elevated)] transition-[width] duration-200 ease-[var(--tome-ease-scholarly)] overflow-hidden z-10 sticky top-0 self-start h-[calc(100vh-3rem)]",
+          filterOpen ? "w-56" : "w-10"
+        )}
+      >
+        {/* Collapsed peek rail — filter icon + tradition dots */}
+        {!filterOpen && (
+          <div className="flex h-full w-10 flex-col items-center pt-3 pb-3 gap-1.5 overflow-y-auto">
             <button
-              onClick={clearFilters}
-              className="text-[10px] text-muted-foreground hover:text-foreground transition-colors"
+              onClick={() => setFilterOpen(true)}
+              title="Filters"
+              className={cn(
+                "flex size-7 shrink-0 items-center justify-center rounded-md transition-colors mb-1",
+                hasActiveFilters
+                  ? "text-[var(--tome-accent)]"
+                  : "text-muted-foreground hover:text-foreground hover:bg-muted"
+              )}
             >
-              Clear all
+              <SlidersHorizontal className="size-4" />
             </button>
-          )}
-        </div>
+            {allTraditions.map(t => (
+              <button
+                key={t}
+                onClick={() => { toggleTradition(t); setFilterOpen(true) }}
+                className={cn(
+                  "group/dot relative flex size-6 shrink-0 items-center justify-center rounded transition-colors",
+                  selectedTraditions.has(t)
+                    ? "bg-muted"
+                    : "hover:bg-muted"
+                )}
+              >
+                <span
+                  className="size-2.5 rounded-full"
+                  style={{ backgroundColor: TRADITION_COLORS[t]?.dot ?? "#6366F1" }}
+                />
+                {/* Hover tooltip */}
+                <span className="pointer-events-none absolute left-full ml-2 whitespace-nowrap rounded bg-foreground/90 px-2 py-1 text-[10px] font-medium text-background opacity-0 transition-opacity group-hover/dot:opacity-100 z-50">
+                  {t}
+                </span>
+              </button>
+            ))}
+          </div>
+        )}
 
-        {/* Era */}
-        <div className="mb-5">
-          <label className="text-xs font-medium text-muted-foreground mb-1.5 block">Era</label>
-          <FilterDropdown
-            label="Era"
-            value={era}
-            onChange={setEra}
-            options={ERAS}
-            className="w-full rounded-md"
-          />
-        </div>
-
-        {/* Difficulty */}
-        <div className="mb-5">
-          <label className="text-xs font-medium text-muted-foreground mb-1.5 block">
-            Difficulty
-          </label>
-          <FilterDropdown
-            label="Difficulty"
-            value={difficulty}
-            onChange={setDifficulty}
-            options={DIFFICULTIES}
-            className="w-full rounded-md"
-          />
-        </div>
+        {/* Expanded filter content */}
+        {filterOpen && (
+          <div className="flex h-full min-w-[220px] flex-col p-4 overflow-y-auto">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+                Filters
+              </h3>
+              <div className="flex items-center gap-2">
+                {hasActiveFilters && (
+                  <button
+                    onClick={clearFilters}
+                    className="text-[10px] text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    Clear all
+                  </button>
+                )}
+                <button
+                  onClick={() => setFilterOpen(false)}
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  aria-label="Collapse filters"
+                >
+                  <ChevronLeft className="size-3.5" />
+                </button>
+              </div>
+            </div>
 
         {/* Sort */}
         <div className="mb-5">
@@ -203,7 +217,7 @@ export default function LibraryPage() {
           <FilterDropdown
             label="Sort"
             value={sort}
-            onChange={setSort}
+            onChange={handleSetSort}
             options={SORTS}
             className="w-full rounded-md"
           />
@@ -234,6 +248,8 @@ export default function LibraryPage() {
             ))}
           </div>
         </div>
+        </div>
+        )}
       </aside>
 
       {/* ── Main Content ── */}
@@ -250,12 +266,24 @@ export default function LibraryPage() {
               </p>
             </div>
 
-            <SearchBar
-              placeholder="Search books, authors, themes…"
-              value={search}
-              onChange={setSearch}
-              className="w-48 sm:w-64"
-            />
+            <div className="flex items-center gap-1">
+              {DIFFICULTIES.map(d => (
+                <button
+                  key={d.value}
+                  onClick={() => setDifficulty(difficulty === d.value ? "" : d.value)}
+                  className={cn(
+                    "rounded-full px-3 py-1 text-[11px] font-medium transition-colors",
+                    difficulty === d.value
+                      ? "bg-[var(--tome-accent)] text-[#111111]"
+                      : d.value === ""
+                        ? "hidden"
+                        : "bg-muted text-muted-foreground hover:text-foreground"
+                  )}
+                >
+                  {d.label}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -292,6 +320,7 @@ export default function LibraryPage() {
                         book={book}
                         progress={allProgress[book.id]}
                         size="sm"
+                        activeSort={sort}
                       />
                     </BlurFade>
                   ))}

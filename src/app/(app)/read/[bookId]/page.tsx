@@ -18,14 +18,14 @@
 import { useEffect, useState, useRef, useCallback } from "react"
 import { useParams, useRouter } from "next/navigation"
 import { AnimatePresence, motion } from "framer-motion"
-import { MessageSquare, BookCheck, Bookmark, BookMarked, Shield, BookOpen } from "lucide-react"
+import { MessageSquare, BookCheck, Bookmark, BookMarked } from "lucide-react"
 import { toast } from "sonner"
 import { supabase } from "@/lib/supabase"
 import type { Book } from "@/lib/supabase"
 import { getBook, getChapters } from "@/lib/content"
 import type { TomeBook } from "@/data/books"
 import type { TomeChapter } from "@/data/chapters"
-import type { QuizDifficulty } from "@/lib/book-progress"
+// QuizDifficulty import removed — difficulty chosen at trial time (Phase E)
 import { springs } from "@/lib/design-tokens"
 import { getCoverParams } from "@/components/tome/book-cover"
 import { Particles } from "@/components/ui/particles"
@@ -42,7 +42,10 @@ import { useEconomy } from "@/components/tome/economy-provider"
 import { ChapterQuizOverlay } from "@/components/tome/chapter-quiz-overlay"
 import { PaginatedReader } from "@/components/tome/paginated-reader"
 import { getQuestionsForChapter } from "@/lib/chapter-questions"
-import { isChapterLocked, isFrontOrBackMatter } from "@/lib/book-progress"
+import { isFrontOrBackMatter } from "@/lib/book-progress"
+import type { QuizDifficulty } from "@/lib/book-progress"
+import { getUnitNumber, getUnitLabel } from "@/lib/structural-units"
+import type { StructuralUnitType } from "@/data/books"
 import { paginateHTML } from "@/lib/paginator"
 import { VirgilReflection } from "@/components/tome/virgil-reflection"
 import { AuthorLink } from "@/components/tome/author-link"
@@ -125,6 +128,8 @@ export default function ReaderPage() {
   // ── Guided / Free flow state ──
   // showModeModal removed — auto-start with guided/Apprentice
   const [showQuizOverlay, setShowQuizOverlay] = useState(false)
+  const [trialQuestions, setTrialQuestions] = useState<import("@/lib/chapter-questions").ChapterQuestion[]>([])
+  const [selectedDifficulty, setSelectedDifficulty] = useState<QuizDifficulty | null>(null)
   const [chapterEndReached, setChapterEndReached] = useState(false)
 
   // ── Virgil drawer (annotations) ──
@@ -139,8 +144,11 @@ export default function ReaderPage() {
   const anchorTextRef          = useRef<string | null>(null)
 
   // ── Providers ──
-  const { getProgress, startBook, completeChapter, saveQuizResult, setMode } = useBookProgress()
+  const { getProgress, startBook, completeChapter, saveQuizResult } = useBookProgress()
   const { stats, dispatch: dispatchEconomy } = useEconomy()
+
+  // ── Structural unit type (for dynamic labels) ──
+  const structuralUnitType: StructuralUnitType = (book as TomeBook & { structuralUnitType?: StructuralUnitType })?.structuralUnitType ?? "chapter"
 
   // ────────────────────────────────────────────────────
   // Effects
@@ -169,8 +177,8 @@ export default function ReaderPage() {
 
     const existingProgress = getProgress(bookId)
     if (!existingProgress) {
-      // Auto-start with guided/Apprentice — no modal prompt
-      startBook(bookId, "guided", "Apprentice")
+      // Auto-start progress — no modal prompt
+      startBook(bookId)
     } else {
       setCurrentChapter(existingProgress.currentChapterIndex)
     }
@@ -244,10 +252,10 @@ export default function ReaderPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [bookId])
 
-  // Reading time economy dispatch (guided mode only, every 60s)
+  // Reading time economy dispatch (every 60s)
   useEffect(() => {
     const progress = getProgress(bookId)
-    if (!progress || progress.readingMode === "free") return
+    if (!progress) return
     const interval = setInterval(() => {
       if (!document.hidden) dispatchEconomy({ type: "reading_minutes", minutes: 1 })
     }, 60000)
@@ -368,24 +376,17 @@ export default function ReaderPage() {
   // ────────────────────────────────────────────────────
 
   const handleChapterSelect = useCallback((index: number) => {
-    const prog = getProgress(bookId)
-    if (prog && isChapterLocked(prog, index, chapters.map(c => c.title))) return
     setCurrentChapter(index)
     setCurrentPage(0)
     if (viewMode === "scroll") {
       scrollContentRef.current?.scrollTo({ top: 0, behavior: "smooth" })
     }
-  }, [bookId, getProgress, viewMode, chapters])
+  }, [viewMode])
 
   // handleModeSelect removed — modal no longer used
 
   const handleFinishChapter = useCallback(() => {
-    const prog = getProgress(bookId)
     const totalCount = chapters.length || 1
-    if (!prog || prog.readingMode === "free") {
-      if (currentChapter < totalCount - 1) handleChapterSelect(currentChapter + 1)
-      return
-    }
     // Skip quiz for front/back matter — auto-complete and advance
     const currentTitle = chapters[currentChapter]?.title ?? ""
     if (isFrontOrBackMatter(currentTitle)) {
@@ -393,13 +394,32 @@ export default function ReaderPage() {
       if (currentChapter < totalCount - 1) setTimeout(() => handleChapterSelect(currentChapter + 1), 100)
       return
     }
+    setTrialQuestions([]) // Reset questions; they'll be loaded on difficulty selection
+    setSelectedDifficulty(null)
     setShowQuizOverlay(true)
-  }, [bookId, getProgress, currentChapter, chapters, handleChapterSelect, completeChapter])
+  }, [bookId, currentChapter, chapters, handleChapterSelect, completeChapter])
+
+  const handleTrialDifficultySelect = useCallback((difficulty: QuizDifficulty) => {
+    if (!book) return
+    setSelectedDifficulty(difficulty)
+    const qs = getQuestionsForChapter(book.title, currentChapter, difficulty)
+    setTrialQuestions(qs)
+  }, [book, currentChapter])
+
+  const handleTrialSkip = useCallback(() => {
+    // Skip trial — mark chapter complete with 0 XP and advance
+    completeChapter(bookId, currentChapter, 0)
+    setShowQuizOverlay(false)
+    const totalCount = chapters.length || 1
+    if (currentChapter < totalCount - 1) {
+      setTimeout(() => handleChapterSelect(currentChapter + 1), 100)
+    }
+  }, [bookId, currentChapter, chapters, completeChapter, handleChapterSelect])
 
   const handleQuizPass = useCallback((xpEarned: number, _coinsEarned: number) => {
     const totalCount    = chapters.length || 1
     const isLastChapter = currentChapter === totalCount - 1
-    const chapterData   = (chapters[currentChapter] ?? { id: `ch-${currentChapter}`, title: "Chapter 1" }) as { id: string; title: string }
+    const chapterData   = (chapters[currentChapter] ?? { id: `ch-${currentChapter}`, title: getUnitNumber(structuralUnitType, 1) }) as { id: string; title: string }
 
     dispatchEconomy({ type: "chapter_complete" })
     if (isLastChapter) dispatchEconomy({ type: "book_complete" })
@@ -417,7 +437,7 @@ export default function ReaderPage() {
 
     // Fire notifications
     const bookTitle = book?.title ?? bookId
-    notifyChapterCompleted(bookTitle, chapterData.title, bookId, isLastChapter ? undefined : currentChapter + 1)
+    notifyChapterCompleted(bookTitle, chapterData.title, bookId, isLastChapter ? undefined : currentChapter + 1, getUnitLabel(structuralUnitType))
     if (isLastChapter) {
       notifyBookCompleted(bookTitle, bookId, xpEarned)
     }
@@ -464,7 +484,7 @@ export default function ReaderPage() {
 
   const coverParams          = getCoverParams(book as Parameters<typeof getCoverParams>[0])
   const totalChapters        = chapters.length || 1
-  const chapter              = (chapters[currentChapter] ?? { id: "0", title: "Chapter 1" }) as { id: string; title: string }
+  const chapter              = (chapters[currentChapter] ?? { id: "0", title: getUnitNumber(structuralUnitType, 1) }) as { id: string; title: string }
   const genreColor           = coverParams.primaryColor
   // Theme colors now come from CSS variables via Tailwind classes.
   // Keeping a simple lookup for inline styles that can't easily use Tailwind.
@@ -483,12 +503,9 @@ export default function ReaderPage() {
   )
 
   const progress               = getProgress(bookId)
-  const readingMode            = progress?.readingMode ?? "guided"
-  const quizDifficulty         = progress?.difficulty ?? 'Apprentice'
-  const chapterTitlesArr       = chapters.map(c => c.title)
-  const lockedChapterIndices   = chapters.map((_, i) => (progress && isChapterLocked(progress, i, chapterTitlesArr) ? i : -1)).filter(i => i >= 0)
   const completedChapterIndices = progress?.completedChapterIndices ?? []
-  const quizQuestions          = getQuestionsForChapter(book.title, currentChapter, quizDifficulty)
+  // Compute unit display label (e.g. "Canto III", "Chapter 5", "The Dead")
+  const unitDisplay = getUnitNumber(structuralUnitType, currentChapter + 1, chapter.title)
 
   // Progress bar fraction (sub-chapter granularity in paginated modes)
   const progressFraction = viewMode === "scroll"
@@ -507,12 +524,15 @@ export default function ReaderPage() {
           book={book as Book}
           chapterTitle={chapter.title}
           chapterIndex={currentChapter}
-          questions={quizQuestions}
+          unitDisplay={unitDisplay}
+          questions={trialQuestions}
           hearts={stats.hearts}
           isOpen={showQuizOverlay}
           onPass={handleQuizPass}
           onFail={() => setShowQuizOverlay(false)}
-          onClose={() => { setShowQuizOverlay(false); setMode(bookId, "free") }}
+          onClose={() => setShowQuizOverlay(false)}
+          onSelectDifficulty={handleTrialDifficultySelect}
+          onSkip={handleTrialSkip}
         />
       )}
 
@@ -530,13 +550,13 @@ export default function ReaderPage() {
         {/* Chapter Sidebar */}
         <ChapterSidebar
           bookTitle={book.title}
-          chapters={chapters.length > 0 ? chapters.map(c => c.title) : ["Chapter 1"]}
+          chapters={chapters.length > 0 ? chapters.map(c => c.title) : [getUnitNumber(structuralUnitType, 1)]}
           currentChapter={currentChapter}
           onSelect={handleChapterSelect}
           open={sidebarOpen}
           onToggle={() => setSidebarOpen(!sidebarOpen)}
-          lockedChapterIndices={lockedChapterIndices}
           completedChapterIndices={completedChapterIndices}
+          structuralUnitType={structuralUnitType}
         />
 
         {/* Main Reader Area */}
@@ -608,23 +628,7 @@ export default function ReaderPage() {
               >
                 <Bookmark className="size-3.5" />
               </button>
-              {/* Reading mode toggle — guided ↔ free */}
-              <button
-                onClick={() => {
-                  const next = readingMode === "guided" ? "free" : "guided"
-                  setMode(bookId, next)
-                }}
-                className={cn(
-                  "flex size-7 items-center justify-center rounded-md transition-colors",
-                  readingMode === "free"
-                    ? "text-amber-500"
-                    : "text-[#D4A04C]"
-                )}
-                aria-label={readingMode === "guided" ? "Switch to Free Reading" : "Switch to Guided Mode"}
-                title={readingMode === "guided" ? "Switch to Free Reading (unlock all chapters)" : "Switch to Guided Mode (quizzes & XP)"}
-              >
-                {readingMode === "guided" ? <Shield className="size-3.5" /> : <BookOpen className="size-3.5" />}
-              </button>
+              {/* Reading mode toggle removed — all chapters unlocked */}
               <ReaderSettings
                 theme={theme}
                 layout={viewMode}
@@ -686,26 +690,9 @@ export default function ReaderPage() {
 
                     {/* Chapter Navigation — Quiz gate between prev/next */}
                     <div className="mt-16 border-t pt-6" style={{ borderColor: t.border }}>
-                      {/* Chapter end CTA — quiz gate (guided) or simple next (free) */}
+                      {/* Chapter end CTA — complete chapter */}
                       <AnimatePresence>
-                        {chapterEndReached && currentChapter < totalChapters - 1 && readingMode === "free" && (
-                          <motion.div
-                            initial={{ opacity: 0, y: 16 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: 8 }}
-                            transition={springs.gentle}
-                            className="mb-6 flex justify-center"
-                          >
-                            <button
-                              onClick={() => handleChapterSelect(currentChapter + 1)}
-                              className="flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold text-[#1a1a2e] transition-all hover:opacity-90 active:scale-95"
-                              style={{ background: "linear-gradient(135deg, #D4A04C, #B8862D)" }}
-                            >
-                              Next Chapter →
-                            </button>
-                          </motion.div>
-                        )}
-                        {chapterEndReached && currentChapter < totalChapters - 1 && readingMode === "guided" && (
+                        {chapterEndReached && currentChapter < totalChapters - 1 && (
                           <motion.div
                             initial={{ opacity: 0, y: 16 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -719,11 +706,8 @@ export default function ReaderPage() {
                               style={{ background: "linear-gradient(135deg, #D4A04C, #B8862D)" }}
                             >
                               <BookCheck className="size-4" />
-                              Complete Trial to Unlock Next Chapter
+                              Complete {getUnitLabel(structuralUnitType)}
                             </button>
-                            <p className="text-[11px]" style={{ color: t.muted }}>
-                              Pass the trial to continue your journey
-                            </p>
                           </motion.div>
                         )}
                       </AnimatePresence>
@@ -736,26 +720,18 @@ export default function ReaderPage() {
                           className="text-xs transition-colors disabled:opacity-30 hover:opacity-70"
                           style={{ color: t.muted }}
                         >
-                          ← Previous chapter
+                          ← Previous {getUnitLabel(structuralUnitType).toLowerCase()}
                         </button>
                         <span className="text-[10px] tabular-nums" style={{ color: t.muted }}>
                           {currentChapter + 1} / {totalChapters}
                         </span>
-                        {/* Next button — triggers quiz in guided mode, direct nav in free mode */}
                         <button
                           disabled={currentChapter === totalChapters - 1}
-                          onClick={() => {
-                            if (readingMode === "guided" && progress && isChapterLocked(progress, currentChapter + 1, chapters.map(c => c.title))) {
-                              // Chapter is locked — trigger quiz flow
-                              handleFinishChapter()
-                            } else {
-                              handleChapterSelect(currentChapter + 1)
-                            }
-                          }}
+                          onClick={() => handleChapterSelect(currentChapter + 1)}
                           className="text-xs transition-colors disabled:opacity-30 hover:opacity-70"
                           style={{ color: t.muted }}
                         >
-                          Next chapter →
+                          Next {getUnitLabel(structuralUnitType).toLowerCase()} →
                         </button>
                       </div>
                     </div>

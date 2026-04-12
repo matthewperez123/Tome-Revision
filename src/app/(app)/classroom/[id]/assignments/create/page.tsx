@@ -13,6 +13,8 @@ import { Input } from "@/components/ui/input"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
 import { getBooks } from "@/lib/content"
+import { getUnitLabel } from "@/lib/structural-units"
+import type { StructuralUnitType } from "@/data/books"
 
 type AssignmentType = "reading" | "quiz" | "discussion" | "essay" | "annotation"
 
@@ -166,7 +168,7 @@ export default function CreateAssignmentPage({ params }: { params: Promise<{ id:
 
                 {bookId && selectedBook && (
                   <div>
-                    <label className="mb-1.5 block text-sm font-medium">Chapter range</label>
+                    <label className="mb-1.5 block text-sm font-medium">{getUnitLabel((selectedBook as any).structuralUnitType ?? 'chapter')} range</label>
                     <div className="flex items-center gap-2">
                       <Input
                         type="number"
@@ -185,7 +187,7 @@ export default function CreateAssignmentPage({ params }: { params: Promise<{ id:
                         onChange={(e) => setChapterEnd(Number(e.target.value))}
                         className="w-20"
                       />
-                      <span className="text-xs text-muted-foreground">of {selectedBook.chapters} chapters</span>
+                      <span className="text-xs text-muted-foreground">of {selectedBook.chapters} {getUnitLabel((selectedBook as any).structuralUnitType ?? 'chapter', selectedBook.chapters !== 1).toLowerCase()}</span>
                     </div>
                   </div>
                 )}

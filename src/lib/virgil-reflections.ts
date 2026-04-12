@@ -92,7 +92,7 @@ const KNOWLEDGE_TEMPLATES = [
 const STUDY_TEMPLATES = [
   (c: ReflectionContext) =>
     c.weakCategory && c.bookTitle
-      ? `Your ${c.weakCategory} scores in ${c.bookTitle} are lower than your other categories. ${c.chapterNumber ? `Try re-reading Chapter ${c.chapterNumber} with the annotations visible.` : "Try reviewing the earlier chapters."}`
+      ? `Your ${c.weakCategory} scores in ${c.bookTitle} are lower than your other categories. ${c.chapterNumber ? `Try re-reading section ${c.chapterNumber} with the annotations visible.` : "Try reviewing the earlier sections."}`
       : null,
   (_c: ReflectionContext) =>
     `You haven't attempted a quiz above Intermediate difficulty yet. When you're ready, Scholar-level questions test what you actually think, not just what you remember.`,

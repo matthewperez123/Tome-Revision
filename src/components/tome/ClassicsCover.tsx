@@ -118,7 +118,7 @@ export interface ClassicsCoverProps {
   showTomeWordmark?: boolean
   /** Hide the bottom tradition band with title/author text */
   hideBand?: boolean
-  aspectRatio?: "2/3" | "1/1"
+  aspectRatio?: "2/3" | "3/4" | "1/1"
   priority?: boolean
 }
 

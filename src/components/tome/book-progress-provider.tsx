@@ -4,7 +4,6 @@ import { createContext, useContext, useState, useCallback, useEffect } from "rea
 import {
   BookProgress,
   ChapterQuizResult,
-  QuizDifficulty,
   getBookProgress,
   saveBookProgress,
   createBookProgress,
@@ -17,16 +16,14 @@ import {
 interface BookProgressContextValue {
   // Get progress for a specific book (null if never opened)
   getProgress: (bookId: string) => BookProgress | null
-  // Initialize progress for a book with a chosen mode and difficulty
-  startBook: (bookId: string, mode: 'guided' | 'free', difficulty?: QuizDifficulty) => BookProgress
+  // Initialize progress for a book
+  startBook: (bookId: string) => BookProgress
   // Mark a chapter complete and save XP
   completeChapter: (bookId: string, chapterIndex: number, xpEarned: number) => void
   // Save a quiz result
   saveQuizResult: (bookId: string, result: ChapterQuizResult) => void
   // Add reading time in minutes
   addTime: (bookId: string, minutes: number) => void
-  // Switch reading mode for a book
-  setMode: (bookId: string, mode: 'guided' | 'free') => void
   // All progress records (for library page)
   allProgress: Record<string, BookProgress>
 }
@@ -49,18 +46,10 @@ export function BookProgressProvider({ children }: { children: React.ReactNode }
     return allProgress[bookId] ?? null
   }, [allProgress])
 
-  const startBook = useCallback((
-    bookId: string,
-    mode: 'guided' | 'free',
-    difficulty: QuizDifficulty = 'Apprentice'
-  ) => {
+  const startBook = useCallback((bookId: string) => {
     const existing = allProgress[bookId]
-    if (existing) {
-      const updated = { ...existing, readingMode: mode, difficulty }
-      updateProgress(updated)
-      return updated
-    }
-    const fresh = createBookProgress(bookId, mode, difficulty)
+    if (existing) return existing
+    const fresh = createBookProgress(bookId)
     updateProgress(fresh)
     return fresh
   }, [allProgress, updateProgress])
@@ -83,15 +72,9 @@ export function BookProgressProvider({ children }: { children: React.ReactNode }
     updateProgress(addReadingTime(progress, minutes))
   }, [allProgress, updateProgress])
 
-  const setMode = useCallback((bookId: string, mode: 'guided' | 'free') => {
-    const progress = allProgress[bookId]
-    if (!progress) return
-    updateProgress({ ...progress, readingMode: mode })
-  }, [allProgress, updateProgress])
-
   return (
     <BookProgressContext.Provider
-      value={{ getProgress, startBook, completeChapter, saveQuizResult, addTime, setMode, allProgress }}
+      value={{ getProgress, startBook, completeChapter, saveQuizResult, addTime, allProgress }}
     >
       {children}
     </BookProgressContext.Provider>

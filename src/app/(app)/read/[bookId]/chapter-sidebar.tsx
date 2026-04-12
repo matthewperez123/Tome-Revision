@@ -1,10 +1,12 @@
 "use client"
 
 import { useState } from "react"
-import { BookOpen, ChevronLeft, ChevronRight, ChevronDown, Lock, CheckCircle2, FileText, ScrollText, BookMarked, Library, Layers, Scroll } from "lucide-react"
+import { BookOpen, ChevronLeft, ChevronRight, ChevronDown, CheckCircle2, FileText, ScrollText, BookMarked, Library, Layers, Scroll } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { springs } from "@/lib/design-tokens"
 import { cn } from "@/lib/utils"
+import { getUnitLabel } from "@/lib/structural-units"
+import type { StructuralUnitType } from "@/data/books"
 
 // ── Chapter type classification ──
 
@@ -96,10 +98,10 @@ function getContainerIcon(containerType: ContainerType) {
   }
 }
 
-function getChapterTypeLabel(type: ChapterType): string {
+function getChapterTypeLabel(type: ChapterType, unitType?: StructuralUnitType): string {
   switch (type) {
     case "front-matter": return "Front Matter"
-    case "chapter": return "Chapters"
+    case "chapter": return getUnitLabel(unitType ?? 'chapter', true)
     case "back-matter": return "Back Matter"
   }
 }
@@ -231,8 +233,8 @@ interface ChapterSidebarProps {
   onSelect: (index: number) => void
   open: boolean
   onToggle: () => void
-  lockedChapterIndices?: number[]
   completedChapterIndices?: number[]
+  structuralUnitType?: StructuralUnitType
 }
 
 // ── Component ──
@@ -244,8 +246,8 @@ export function ChapterSidebar({
   onSelect,
   open,
   onToggle,
-  lockedChapterIndices = [],
   completedChapterIndices = [],
+  structuralUnitType,
 }: ChapterSidebarProps) {
   const { frontMatter, body, backMatter } = buildTOCTree(chapters)
 
@@ -290,22 +292,18 @@ export function ChapterSidebar({
 
   function renderLeaf(leaf: LeafNode, numberInGroup?: number) {
     const isActive = leaf.index === currentChapter
-    const isLocked = lockedChapterIndices.includes(leaf.index)
     const isCompleted = completedChapterIndices.includes(leaf.index)
     const Icon = getChapterTypeIcon(leaf.type)
 
     return (
       <button
         key={leaf.index}
-        onClick={() => !isLocked && onSelect(leaf.index)}
-        aria-disabled={isLocked ? "true" : undefined}
-        title={isLocked ? "Complete the previous chapter's trial to unlock" : undefined}
+        onClick={() => { onSelect(leaf.index); if (open) onToggle() }}
         className={cn(
           "relative flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-xs transition-[color,opacity] duration-[var(--tome-duration-fast)]",
           isActive
             ? "text-foreground font-medium"
-            : "text-muted-foreground hover:text-foreground hover:opacity-70",
-          isLocked && "pointer-events-none opacity-40"
+            : "text-muted-foreground hover:text-foreground hover:opacity-70"
         )}
       >
         {/* Active indicator */}
@@ -316,9 +314,7 @@ export function ChapterSidebar({
             transition={springs.interactive}
           />
         )}
-        {isLocked ? (
-          <Lock className="size-3 shrink-0" />
-        ) : isCompleted && !isActive ? (
+        {isCompleted && !isActive ? (
           <CheckCircle2 className="size-3 shrink-0 text-emerald-500" />
         ) : leaf.type !== "chapter" ? (
           <Icon className={cn("size-3 shrink-0", isActive ? "text-foreground" : "text-muted-foreground")} />
@@ -411,11 +407,21 @@ export function ChapterSidebar({
     )
   }
 
+  // Build a flat list of leaf indices for the peek rail when collapsed
+  const allLeaves: { index: number; label: string }[] = []
+  function collectLeaves(nodes: TOCNode[]) {
+    for (const n of nodes) {
+      if (n.kind === "leaf") allLeaves.push({ index: n.index, label: String(n.index + 1) })
+      else n.children.forEach(c => { if (c.kind === "leaf") allLeaves.push({ index: c.index, label: String(allLeaves.length + 1) }); else if (c.kind === "container") collectLeaves([c]) })
+    }
+  }
+  collectLeaves([...frontMatter, ...body, ...backMatter])
+
   return (
     <div
       className={cn(
-        "relative shrink-0 border-r border-border bg-background transition-[width] duration-[var(--tome-duration-fast)] ease-[var(--tome-ease-scholarly)] overflow-hidden",
-        open ? "w-56" : "w-0 md:w-10"
+        "relative shrink-0 border-r border-border bg-background transition-[width] duration-[var(--tome-duration-fast)] ease-[var(--tome-ease-scholarly)] overflow-hidden z-20",
+        open ? "w-56" : "w-10"
       )}
     >
       {/* Toggle button */}
@@ -427,6 +433,33 @@ export function ChapterSidebar({
       >
         {open ? <ChevronLeft className="size-3" /> : <ChevronRight className="size-3" />}
       </button>
+
+      {/* Collapsed peek rail — always visible when sidebar is collapsed */}
+      {!open && (
+        <div className="flex h-full w-10 flex-col items-center pt-10 pb-3 overflow-y-auto gap-0.5">
+          {allLeaves.map(leaf => {
+            const isActive = leaf.index === currentChapter
+            const isCompleted = completedChapterIndices.includes(leaf.index)
+            return (
+              <button
+                key={leaf.index}
+                onClick={() => onSelect(leaf.index)}
+                title={chapters[leaf.index] ?? leaf.label}
+                className={cn(
+                  "flex size-6 shrink-0 items-center justify-center rounded text-[9px] tabular-nums transition-colors",
+                  isActive
+                    ? "bg-foreground text-background font-bold"
+                    : isCompleted
+                      ? "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-medium"
+                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                )}
+              >
+                {leaf.label}
+              </button>
+            )
+          })}
+        </div>
+      )}
 
       {open && (
         <div className="flex h-full min-w-[220px] flex-col p-3">
@@ -460,7 +493,7 @@ export function ChapterSidebar({
                   <div className="flex items-center gap-1.5 px-2 mb-1.5">
                     <BookOpen className="size-3 text-muted-foreground/60" />
                     <span className="text-[10px] font-medium text-muted-foreground/60 uppercase tracking-wider">
-                      Chapters
+                      {getChapterTypeLabel("chapter", structuralUnitType)}
                     </span>
                   </div>
                 )}

@@ -10,12 +10,10 @@ export interface ChapterQuizResult {
   completedAt: string
 }
 
-export type QuizDifficulty = 'Apprentice' | 'Scholar' | 'Master'
+export type QuizDifficulty = 'Foundational' | 'Scholar' | 'Sage'
 
 export interface BookProgress {
   bookId: string
-  readingMode: 'guided' | 'free'
-  difficulty: QuizDifficulty
   currentChapterIndex: number
   completedChapterIndices: number[]
   quizResults: ChapterQuizResult[]
@@ -31,7 +29,10 @@ export function getBookProgress(bookId: string): BookProgress | null {
   if (typeof window === 'undefined') return null
   try {
     const raw = localStorage.getItem(progressKey(bookId))
-    return raw ? (JSON.parse(raw) as BookProgress) : null
+    if (!raw) return null
+    // Migration shim: strip deprecated fields from old progress objects
+    const { readingMode, difficulty, ...clean } = JSON.parse(raw) as BookProgress & { readingMode?: unknown; difficulty?: unknown }
+    return clean as BookProgress
   } catch {
     return null
   }
@@ -44,15 +45,9 @@ export function saveBookProgress(progress: BookProgress): void {
   } catch {}
 }
 
-export function createBookProgress(
-  bookId: string,
-  mode: 'guided' | 'free',
-  difficulty: QuizDifficulty = 'Apprentice'
-): BookProgress {
+export function createBookProgress(bookId: string): BookProgress {
   return {
     bookId,
-    readingMode: mode,
-    difficulty,
     currentChapterIndex: 0,
     completedChapterIndices: [],
     quizResults: [],
@@ -98,22 +93,6 @@ export function isFrontOrBackMatter(title: string): boolean {
     || BACK_MATTER_KW.some(kw => lower.startsWith(kw) || lower.includes(kw))
 }
 
-/** In Guided mode, chapter N is locked unless chapter N-1 is in completedChapterIndices.
- *  Front matter and back matter are NEVER locked.
- *  Pass chapterTitles to enable front/back matter exemption. */
-export function isChapterLocked(
-  progress: BookProgress,
-  chapterIndex: number,
-  chapterTitles?: string[]
-): boolean {
-  if (progress.readingMode === 'free') return false
-  if (chapterIndex === 0) return false
-  // Front/back matter is always unlocked
-  if (chapterTitles?.[chapterIndex] && isFrontOrBackMatter(chapterTitles[chapterIndex])) {
-    return false
-  }
-  return !progress.completedChapterIndices.includes(chapterIndex - 1)
-}
 
 export function recordChapterComplete(
   progress: BookProgress,
