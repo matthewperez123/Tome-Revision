@@ -3,13 +3,14 @@ import { updateSession } from "@/lib/supabase/middleware"
 
 // Routes that don't require authentication
 const PUBLIC_ROUTES = ["/", "/login", "/signup", "/auth/callback"]
-const PUBLIC_PREFIXES = ["/join/"]
+const PUBLIC_PREFIXES = ["/join/", "/learn/"]
 
 // Routes that only teachers can access (when authenticated)
 const TEACHER_ONLY_PREFIXES = [
   "/classroom/create",
   "/classroom/quiz-builder",
   "/classroom/grading",
+  "/teacher/guided-learning",
 ]
 
 function isTeacherOnlyRoute(pathname: string): boolean {

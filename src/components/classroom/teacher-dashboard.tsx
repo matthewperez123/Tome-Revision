@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { Plus, ChevronDown } from "lucide-react"
+import { Plus, ChevronDown, MonitorPlay } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { StoaBanner } from "@/components/dashboard/StoaBanner"
 import { TeacherStatsCards } from "./teacher-stats-cards"
@@ -51,6 +51,16 @@ export function TeacherDashboard() {
         </div>
 
         <div className="flex gap-2">
+          <Link href="/teacher/guided-learning/new">
+            <Button
+              size="sm"
+              className="gap-1.5 text-white"
+              style={{ backgroundColor: "var(--tome-indigo, #6366F1)" }}
+            >
+              <MonitorPlay className="size-3.5" />
+              Guided Session
+            </Button>
+          </Link>
           <Link href="/classroom/create">
             <Button variant="outline" size="sm" className="gap-1.5">
               <Plus className="size-3.5" />
