@@ -111,7 +111,7 @@ export default function QuizBuilderPage() {
         </div>
       ) : quizzes.length === 0 ? (
         <div className="mt-12 flex flex-col items-center text-center">
-          <div className="flex size-16 items-center justify-center rounded-2xl bg-[#D4A04C]">
+          <div className="flex size-16 items-center justify-center rounded-2xl bg-[var(--tome-accent)]">
             <Feather className="size-7 text-white" />
           </div>
           <h2 className="mt-4 text-lg font-semibold">No quizzes yet</h2>
@@ -136,7 +136,7 @@ export default function QuizBuilderPage() {
                 href={`/classroom/quiz-builder/${quiz.id}`}
                 className="flex items-center gap-4 rounded-xl border bg-card p-4 transition-colors hover:bg-muted/50"
               >
-                <div className="flex size-10 items-center justify-center rounded-lg bg-[#D4A04C]">
+                <div className="flex size-10 items-center justify-center rounded-lg bg-[var(--tome-accent)]">
                   <Feather className="size-5 text-white" />
                 </div>
                 <div className="flex-1 min-w-0">

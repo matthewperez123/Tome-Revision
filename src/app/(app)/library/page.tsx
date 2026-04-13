@@ -21,7 +21,6 @@ import { cn } from "@/lib/utils"
 // Traditions are derived dynamically from the BOOKS catalog — no hardcoded list needed
 
 const DIFFICULTIES = [
-  { label: "All Levels",     value: "" },
   { label: "Beginner",       value: "Beginner" },
   { label: "Intermediate",   value: "Intermediate" },
   { label: "Advanced",       value: "Advanced" },
@@ -53,7 +52,7 @@ export default function LibraryPage() {
   // ── Filter state ───────────────────────────────
   const [search,     setSearch]     = useState("")
   const [selectedTraditions, setSelectedTraditions] = useState<Set<string>>(new Set())
-  const [difficulty, setDifficulty] = useState("")
+  const [selectedDifficulties, setSelectedDifficulties] = useState<Set<string>>(new Set())
   const [filterOpen, setFilterOpen] = useState(false)
   const [sort,       setSort]       = useState(() => {
     if (typeof window === 'undefined') return "title"
@@ -89,15 +88,25 @@ export default function LibraryPage() {
     })
   }, [])
 
+  // ── Difficulty toggle (multi-select) ──
+  const toggleDifficulty = useCallback((d: string) => {
+    setSelectedDifficulties((prev) => {
+      const next = new Set(prev)
+      if (next.has(d)) next.delete(d)
+      else next.add(d)
+      return next
+    })
+  }, [])
+
   // ── Clear all ─────────────────────────────────
   const clearFilters = useCallback(() => {
     setSearch("")
     setSelectedTraditions(new Set())
-    setDifficulty("")
+    setSelectedDifficulties(new Set())
     handleSetSort("title")
   }, [])
 
-  const hasActiveFilters = !!(debouncedSearch || selectedTraditions.size > 0 || difficulty)
+  const hasActiveFilters = !!(debouncedSearch || selectedTraditions.size > 0 || selectedDifficulties.size > 0)
 
   // ── All traditions present in the library ──
   const allTraditions = useMemo(() => {
@@ -112,7 +121,7 @@ export default function LibraryPage() {
 
     if (debouncedSearch) result = searchBooks(debouncedSearch)
     if (selectedTraditions.size > 0) result = result.filter(b => selectedTraditions.has(b.tradition))
-    if (difficulty) result = result.filter(b => b.difficulty === difficulty)
+    if (selectedDifficulties.size > 0) result = result.filter(b => selectedDifficulties.has(b.difficulty))
 
     result = [...result].sort((a, b) => {
       switch (sort) {
@@ -130,7 +139,7 @@ export default function LibraryPage() {
     })
 
     return result
-  }, [allBooks, debouncedSearch, selectedTraditions, difficulty, sort])
+  }, [allBooks, debouncedSearch, selectedTraditions, selectedDifficulties, sort])
 
   // Show discovery sections only when no active filters
   const showDiscovery = !hasActiveFilters
@@ -253,9 +262,9 @@ export default function LibraryPage() {
       </aside>
 
       {/* ── Main Content ── */}
-      <div className="flex-1 overflow-y-auto">
+      <div className="flex-1 min-w-0">
         {/* Sticky Header — identical structure to /authors */}
-        <div className="sticky top-0 z-10 border-b border-border bg-background/80 backdrop-blur-sm px-4 py-2.5">
+        <div className="sticky top-0 z-10 border-b border-border bg-background px-4 py-2.5">
           <div className="flex items-center gap-3">
             <div className="flex flex-col min-w-0 mr-auto">
               <h1 className="text-sm font-serif font-semibold leading-none tracking-tight">
@@ -270,14 +279,12 @@ export default function LibraryPage() {
               {DIFFICULTIES.map(d => (
                 <button
                   key={d.value}
-                  onClick={() => setDifficulty(difficulty === d.value ? "" : d.value)}
+                  onClick={() => toggleDifficulty(d.value)}
                   className={cn(
                     "rounded-full px-3 py-1 text-[11px] font-medium transition-colors",
-                    difficulty === d.value
+                    selectedDifficulties.has(d.value)
                       ? "bg-[var(--tome-accent)] text-[#111111]"
-                      : d.value === ""
-                        ? "hidden"
-                        : "bg-muted text-muted-foreground hover:text-foreground"
+                      : "bg-muted text-muted-foreground hover:text-foreground"
                   )}
                 >
                   {d.label}

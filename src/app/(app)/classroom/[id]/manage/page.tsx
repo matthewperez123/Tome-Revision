@@ -7,8 +7,11 @@ import { ChevronLeft, Copy, Check, Users, BookOpen, TrendingUp, Plus, Settings }
 import { Button } from "@/components/ui/button"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
+import { DEMO_CLASSROOMS, DEMO_STUDENTS } from "@/lib/classroom"
 
-type Tab = "overview" | "students" | "assignments" | "announcements"
+import { SemesterPlanTab } from "@/components/classroom/semester-timeline"
+
+type Tab = "overview" | "students" | "assignments" | "announcements" | "semester-plan"
 
 interface ClassroomInfo {
   id: string
@@ -37,7 +40,7 @@ interface AssignmentInfo {
 
 export default function ClassroomManagePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params)
-  const { user } = useAuth()
+  const { user, isDemoMode } = useAuth()
   const [classroom, setClassroom] = useState<ClassroomInfo | null>(null)
   const [members, setMembers] = useState<MemberInfo[]>([])
   const [assignments, setAssignments] = useState<AssignmentInfo[]>([])
@@ -46,7 +49,7 @@ export default function ClassroomManagePage({ params }: { params: Promise<{ id: 
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    if (!user) return
+    if (!user && !isDemoMode) return
 
     async function fetchData() {
       const supabase = createClient()
@@ -87,11 +90,21 @@ export default function ClassroomManagePage({ params }: { params: Promise<{ id: 
 
       if (assignmentData) setAssignments(assignmentData)
 
+      // Fallback to demo data if no Supabase classroom found
+      if (!cls) {
+        const demo = DEMO_CLASSROOMS.find(c => c.id === id)
+        if (demo) {
+          setClassroom({ id: demo.id, name: demo.name, subject: demo.subject, join_code: demo.joinCode, description: null, leaderboard_enabled: true })
+          const demoMembers = DEMO_STUDENTS.filter(s => s.classroomId === id)
+          setMembers(demoMembers.map(s => ({ student_id: s.id, display_name: s.studentName, avatar_url: null, joined_at: "2026-01-15" })))
+        }
+      }
+
       setLoading(false)
     }
 
     fetchData()
-  }, [user, id])
+  }, [user, isDemoMode, id])
 
   if (loading) {
     return (
@@ -117,6 +130,7 @@ export default function ClassroomManagePage({ params }: { params: Promise<{ id: 
     { key: "students", label: `Students (${members.length})` },
     { key: "assignments", label: `Assignments (${assignments.length})` },
     { key: "announcements", label: "Announcements" },
+    { key: "semester-plan", label: "Semester Plan" },
   ]
 
   return (
@@ -259,6 +273,10 @@ export default function ClassroomManagePage({ params }: { params: Promise<{ id: 
           <p className="py-8 text-center text-sm text-muted-foreground">
             Announcements coming soon
           </p>
+        )}
+
+        {tab === "semester-plan" && (
+          <SemesterPlanTab classroomId={id} />
         )}
       </div>
     </div>

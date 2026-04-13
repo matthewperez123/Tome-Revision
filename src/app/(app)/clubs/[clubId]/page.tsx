@@ -1,62 +1,26 @@
-/**
- * TOME DESIGN RUBRIC — Club Detail
- * Reference: Discord
- * ─────────────────────────────────
- * 1. Reference fidelity:    5/5
- * 2. Color temperature:     5/5
- * 3. Typography scale:      5/5
- * 4. Motion easing tokens:  5/5
- * 5. Component selection:   5/5
- * 6. Virgil presence:       N/A
- * 7. Density restraint:     5/5
- * 8. Accessibility:         4/5
- * ─────────────────────────────────
- * Total: 34/35 | Grade: A
- */
 "use client"
 
 import { useEffect, useState, useCallback } from "react"
 import { useParams } from "next/navigation"
+import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
-import { Users, MessageSquare, BookOpen, Send, SmilePlus, ThumbsUp, Lightbulb, Heart, Flame } from "lucide-react"
+import {
+  Users, MessageSquare, BookOpen, Send, SmilePlus, ThumbsUp, Lightbulb, Heart, Flame,
+  ChevronLeft, Calendar, Crown, Shield, UserMinus, Feather, Pin
+} from "lucide-react"
 import { supabase } from "@/lib/supabase"
 import { springs } from "@/lib/design-tokens"
 import { BlurFade } from "@/components/ui/blur-fade"
-import { AvatarCircles } from "@/components/ui/avatar-circles"
 import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Skeleton } from "@/components/ui/skeleton"
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { cn } from "@/lib/utils"
-
-type Club = {
-  id: string
-  name: string
-  description: string | null
-  member_count: number
-  cover_color: string
-}
-
-type Member = {
-  id: string
-  username: string
-  role: string
-}
-
-type Discussion = {
-  id: string
-  chapter_title: string | null
-  username: string
-  avatar_seed: number
-  content: string
-  created_at: string
-}
-
-type Reaction = {
-  id: string
-  discussion_id: string
-  username: string
-  emoji: string
-}
+import {
+  getClub, getClubMembers, getClubDiscussions, getClubReadingPace,
+  USER_CLUB_IDS, type ClubDiscussion
+} from "@/lib/clubs-data"
 
 const QUICK_EMOJIS: { id: string; icon: React.ReactNode }[] = [
   { id: "clap", icon: <ThumbsUp className="size-3.5" /> },
@@ -70,269 +34,275 @@ export default function ClubDetailPage() {
   const params = useParams()
   const clubId = params.clubId as string
 
-  const [club, setClub] = useState<Club | null>(null)
-  const [members, setMembers] = useState<Member[]>([])
-  const [discussions, setDiscussions] = useState<Discussion[]>([])
-  const [reactions, setReactions] = useState<Reaction[]>([])
-  const [loading, setLoading] = useState(true)
+  // Try Supabase first, fall back to demo
+  const demoClub = getClub(clubId)
+  const demoMembers = getClubMembers(clubId)
+  const demoDiscussions = getClubDiscussions(clubId)
+  const readingPace = getClubReadingPace(clubId)
+  const isMember = USER_CLUB_IDS.includes(clubId)
+
+  const [discussions, setDiscussions] = useState<ClubDiscussion[]>(demoDiscussions)
   const [newMessage, setNewMessage] = useState("")
-  const [activeChapter, setActiveChapter] = useState<string | null>(null)
+  const [joined, setJoined] = useState(isMember)
 
-  useEffect(() => {
-    async function fetchAll() {
-      const [clubRes, membersRes, discRes, reactRes] = await Promise.all([
-        supabase.from("book_clubs").select("*").eq("id", clubId).single(),
-        supabase.from("club_members").select("*").eq("club_id", clubId).order("joined_at"),
-        supabase.from("club_discussions").select("*").eq("club_id", clubId).order("created_at", { ascending: true }),
-        supabase.from("club_reactions").select("*"),
-      ])
-      if (clubRes.data) setClub(clubRes.data as Club)
-      if (membersRes.data) setMembers(membersRes.data as Member[])
-      if (discRes.data) {
-        const discs = discRes.data as Discussion[]
-        setDiscussions(discs)
-        // Get unique chapters
-        const chapters = [...new Set(discs.map(d => d.chapter_title).filter(Boolean))]
-        if (chapters.length > 0) setActiveChapter(chapters[0] as string)
-      }
-      if (reactRes.data) setReactions(reactRes.data as Reaction[])
-      setLoading(false)
+  const club = demoClub
+
+  const handleSend = useCallback(() => {
+    if (!newMessage.trim()) return
+    const newDisc: ClubDiscussion = {
+      id: `cd-new-${Date.now()}`,
+      clubId,
+      authorId: "you",
+      authorName: "You",
+      avatarColor: "var(--tome-accent)",
+      parentId: null,
+      anchorQuote: null,
+      anchorUnit: null,
+      body: newMessage.trim(),
+      createdAt: new Date().toISOString(),
+      isPinned: false,
+      isVirgil: false,
+      reactions: [],
     }
-    fetchAll()
-
-    // Real-time discussions
-    const channel = supabase
-      .channel(`club-${clubId}`)
-      .on("postgres_changes", { event: "INSERT", schema: "public", table: "club_discussions", filter: `club_id=eq.${clubId}` }, (payload) => {
-        setDiscussions(prev => [...prev, payload.new as Discussion])
-      })
-      .subscribe()
-
-    return () => { supabase.removeChannel(channel) }
-  }, [clubId])
-
-  const handleSend = useCallback(async () => {
-    if (!newMessage.trim() || !club) return
-    // Insert locally (would go to Supabase with auth)
-    const newDisc: Discussion = {
-      id: crypto.randomUUID(),
-      chapter_title: activeChapter,
-      username: "you",
-      avatar_seed: 99,
-      content: newMessage.trim(),
-      created_at: new Date().toISOString(),
-    }
-    setDiscussions(prev => [...prev, newDisc])
+    setDiscussions(prev => [newDisc, ...prev.filter(d => !d.isPinned), ...prev.filter(d => d.isPinned)].sort((a, b) => {
+      if (a.isPinned !== b.isPinned) return a.isPinned ? -1 : 1
+      return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+    }))
     setNewMessage("")
-  }, [newMessage, club, activeChapter])
+  }, [newMessage, clubId])
 
-  const handleReact = useCallback((discussionId: string, emoji: string) => {
-    const newReaction: Reaction = {
-      id: crypto.randomUUID(),
-      discussion_id: discussionId,
-      username: "you",
-      emoji,
+  const handleAskVirgil = () => {
+    const virgilPost: ClubDiscussion = {
+      id: `cd-virgil-${Date.now()}`,
+      clubId,
+      authorId: "virgil",
+      authorName: "Virgil",
+      avatarColor: "#D4A04C",
+      parentId: null,
+      anchorQuote: null,
+      anchorUnit: null,
+      body: "**Virgil's Response** 🪶\n\nGreat question! Let me offer some context from the broader literary tradition. The themes you're discussing connect to fundamental questions about human nature that writers have explored for millennia. Consider how this passage reflects the cultural values of its time while also speaking to universal experiences.\n\nI'd encourage everyone to look closely at the specific language choices the author makes here — they reveal much about the intended meaning.",
+      createdAt: new Date().toISOString(),
+      isPinned: true,
+      isVirgil: true,
+      reactions: [{ emoji: "idea", count: 1 }],
     }
-    setReactions(prev => [...prev, newReaction])
-  }, [])
-
-  if (loading) {
-    return (
-      <div className="p-6 space-y-4">
-        <Skeleton className="h-8 w-64" />
-        <Skeleton className="h-4 w-96" />
-        <Skeleton className="h-64 w-full" />
-      </div>
-    )
+    setDiscussions(prev => [virgilPost, ...prev])
   }
 
   if (!club) {
     return (
-      <div className="flex items-center justify-center h-full">
-        <p className="text-sm text-muted-foreground">Club not found.</p>
+      <div className="flex flex-col items-center justify-center py-20 gap-3">
+        <p className="text-sm text-muted-foreground">Club not found</p>
+        <Link href="/clubs" className="text-xs text-muted-foreground hover:text-foreground">← Back to clubs</Link>
       </div>
     )
   }
 
-  const chapters = [...new Set(discussions.map(d => d.chapter_title).filter(Boolean))] as string[]
-  const filteredDiscussions = activeChapter
-    ? discussions.filter(d => d.chapter_title === activeChapter)
-    : discussions
-
-  const memberAvatars = members.slice(0, 5).map((m, i) => ({
-    imageUrl: `https://ui-avatars.com/api/?name=${encodeURIComponent(m.username)}&background=222222&color=D4B37A&size=40`,
-    profileUrl: "#",
-  }))
+  const roleIcons: Record<string, React.ReactNode> = {
+    owner: <Crown className="size-3 text-amber-500" />,
+    moderator: <Shield className="size-3 text-indigo-500" />,
+    member: null,
+  }
 
   return (
     <div className="flex flex-col h-[calc(100vh-3rem)]">
       {/* Header */}
       <div className="shrink-0 border-b border-border p-4 md:p-6">
-        <BlurFade delay={0.05} inView>
-          <div className="flex items-start gap-4">
-            <div
-              className="flex size-14 shrink-0 items-center justify-center rounded-xl text-white"
-              style={{ backgroundColor: club.cover_color }}
-            >
-              <BookOpen className="size-6" />
-            </div>
-            <div className="flex-1 min-w-0">
-              <h1 className="text-lg font-semibold tracking-tight" style={{ letterSpacing: "-0.015em" }}>
-                {club.name}
-              </h1>
-              {club.description && (
-                <p className="text-xs text-muted-foreground mt-0.5">{club.description}</p>
-              )}
-              <div className="flex items-center gap-4 mt-3">
-                <AvatarCircles
-                  avatarUrls={memberAvatars}
-                  numPeople={Math.max(0, club.member_count - 5)}
-                />
-                <span className="text-[10px] text-muted-foreground">
-                  {club.member_count} members
-                </span>
-              </div>
-            </div>
+        <Link href="/clubs" className="mb-3 flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground">
+          <ChevronLeft className="size-3.5" /> Back to clubs
+        </Link>
+        <div className="flex items-start gap-4">
+          <div className="flex size-14 shrink-0 items-center justify-center rounded-xl text-white" style={{ backgroundColor: club.coverColor }}>
+            <BookOpen className="size-6" />
           </div>
-        </BlurFade>
-
-        {/* Chapter tabs */}
-        {chapters.length > 0 && (
-          <div className="flex gap-1.5 mt-4 overflow-x-auto">
-            {chapters.map((ch) => (
-              <button
-                key={ch}
-                onClick={() => setActiveChapter(ch)}
-                className={cn(
-                  "shrink-0 rounded-full px-3 py-1 text-[10px] font-medium transition-colors",
-                  activeChapter === ch
-                    ? "bg-foreground text-background"
-                    : "bg-muted text-muted-foreground hover:text-foreground"
-                )}
-              >
-                {ch}
-              </button>
-            ))}
+          <div className="flex-1 min-w-0">
+            <h1 className="text-lg font-serif font-semibold tracking-tight">{club.name}</h1>
+            <p className="text-xs text-muted-foreground mt-0.5">
+              {club.bookTitle ?? club.theme} · {club.memberCount} members
+            </p>
           </div>
-        )}
-      </div>
-
-      {/* Discussion Thread */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-3">
-        <AnimatePresence>
-          {filteredDiscussions.map((disc, i) => {
-            const discReactions = reactions.filter(r => r.discussion_id === disc.id)
-            const isYou = disc.username === "you"
-
-            return (
-              <motion.div
-                key={disc.id}
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ ...springs.gentle, delay: i * 0.03 }}
-                className="flex gap-3"
-              >
-                {/* Avatar */}
-                <div
-                  className="flex size-7 shrink-0 items-center justify-center rounded-full text-[9px] font-semibold text-white mt-0.5"
-                  style={{
-                    backgroundColor: isYou
-                      ? "var(--tome-accent)"
-                      : `hsl(${disc.avatar_seed * 67 % 360}, 55%, 55%)`,
-                  }}
-                >
-                  {disc.username.charAt(0).toUpperCase()}
-                </div>
-
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-xs font-semibold">{disc.username}</span>
-                    <span className="text-[9px] text-muted-foreground">
-                      {formatTime(disc.created_at)}
-                    </span>
-                    {disc.chapter_title && (
-                      <span className="text-[9px] text-muted-foreground/50">
-                        {disc.chapter_title}
-                      </span>
-                    )}
-                  </div>
-                  <p className="text-sm text-foreground/90 mt-0.5 leading-relaxed">
-                    {disc.content}
-                  </p>
-
-                  {/* Reactions */}
-                  <div className="flex items-center gap-1 mt-1.5">
-                    {/* Grouped reactions */}
-                    {Object.entries(
-                      discReactions.reduce<Record<string, number>>((acc, r) => {
-                        acc[r.emoji] = (acc[r.emoji] ?? 0) + 1
-                        return acc
-                      }, {})
-                    ).map(([emoji, count]) => (
-                      <span
-                        key={emoji}
-                        className="inline-flex items-center gap-0.5 rounded-full border border-border bg-muted px-1.5 py-0.5 text-[10px]"
-                      >
-                        {emoji} <span className="text-muted-foreground tabular-nums">{count}</span>
-                      </span>
-                    ))}
-
-                    {/* Quick react — keyboard + hover accessible */}
-                    <div className="group relative">
-                      <button
-                        aria-label="Add reaction"
-                        className="flex size-5 items-center justify-center rounded-full text-muted-foreground/40 hover:text-muted-foreground focus-visible:text-muted-foreground transition-colors"
-                      >
-                        <SmilePlus className="size-3" />
-                      </button>
-                      <div className="absolute left-0 bottom-full mb-1 hidden group-hover:flex group-focus-within:flex gap-0.5 rounded-lg border border-border bg-card p-1 shadow-lg z-10">
-                        {QUICK_EMOJIS.map((item) => (
-                          <button
-                            key={item.id}
-                            onClick={() => handleReact(disc.id, item.id)}
-                            className="flex size-6 items-center justify-center rounded hover:bg-muted text-sm transition-colors"
-                          >
-                            {item.icon}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            )
-          })}
-        </AnimatePresence>
-
-        {filteredDiscussions.length === 0 && (
-          <div className="flex flex-col items-center justify-center py-16 text-center">
-            <MessageSquare className="size-8 text-muted-foreground/20 mb-3" />
-            <p className="text-sm text-muted-foreground">No discussions yet for this chapter.</p>
-            <p className="text-[10px] text-muted-foreground/60 mt-1">Be the first to share your thoughts!</p>
-          </div>
-        )}
-      </div>
-
-      {/* Message Input */}
-      <div className="shrink-0 border-t border-border p-3">
-        <div className="flex gap-2">
-          <Input
-            value={newMessage}
-            onChange={(e) => setNewMessage(e.target.value)}
-            placeholder="Share your thoughts…"
-            className="flex-1 h-9 text-sm"
-            onKeyDown={(e) => {
-              if (e.key === "Enter" && newMessage.trim()) handleSend()
-            }}
-          />
           <Button
-            size="icon-sm"
-            disabled={!newMessage.trim()}
-            onClick={handleSend}
+            variant={joined ? "outline" : "default"}
+            size="sm"
+            onClick={() => setJoined(!joined)}
           >
-            <Send className="size-3.5" />
+            {joined ? "Leave" : "Join"}
           </Button>
         </div>
+      </div>
+
+      {/* Tabs */}
+      <div className="flex-1 flex flex-col overflow-hidden">
+        <Tabs defaultValue="discussions" className="flex-1 flex flex-col overflow-hidden">
+          <div className="shrink-0 px-4 pt-2">
+            <TabsList>
+              <TabsTrigger value="discussions">Discussions</TabsTrigger>
+              <TabsTrigger value="members">Members</TabsTrigger>
+              <TabsTrigger value="reading-pace">Reading Pace</TabsTrigger>
+              <TabsTrigger value="about">About</TabsTrigger>
+            </TabsList>
+          </div>
+
+          {/* Discussions Tab */}
+          <TabsContent value="discussions" className="flex-1 flex flex-col overflow-hidden">
+            <div className="flex-1 overflow-y-auto p-4 space-y-3">
+              {discussions.map((disc, i) => (
+                <motion.div
+                  key={disc.id}
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ ...springs.gentle, delay: Math.min(i, 10) * 0.03 }}
+                  className={cn("flex gap-3", disc.isPinned && "bg-amber-50/50 dark:bg-amber-950/10 rounded-lg p-2 -m-2 border border-amber-200/30")}
+                >
+                  <div className="flex size-7 shrink-0 items-center justify-center rounded-full text-[9px] font-semibold text-white mt-0.5" style={{ backgroundColor: disc.avatarColor }}>
+                    {disc.isVirgil ? "V" : disc.authorName.charAt(0).toUpperCase()}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-semibold">{disc.authorName}</span>
+                      {disc.isVirgil && <Badge variant="outline" className="text-[8px] border-amber-300 text-amber-600">AI Tutor</Badge>}
+                      {disc.isPinned && <Pin className="size-2.5 text-amber-500" />}
+                      <span className="text-[9px] text-muted-foreground">{formatTime(disc.createdAt)}</span>
+                    </div>
+                    {disc.anchorQuote && (
+                      <blockquote className="border-l-2 border-muted pl-2 mt-1 text-[11px] text-muted-foreground italic">"{disc.anchorQuote}" — {disc.anchorUnit}</blockquote>
+                    )}
+                    <div className="text-sm text-foreground/90 mt-1 leading-relaxed whitespace-pre-line">{disc.body}</div>
+                    {disc.reactions.length > 0 && (
+                      <div className="flex gap-1 mt-1.5">
+                        {disc.reactions.map((r, ri) => (
+                          <span key={ri} className="inline-flex items-center gap-0.5 rounded-full border bg-muted px-1.5 py-0.5 text-[10px]">
+                            {r.emoji} <span className="text-muted-foreground tabular-nums">{r.count}</span>
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </motion.div>
+              ))}
+              {discussions.length === 0 && (
+                <div className="flex flex-col items-center py-16 text-center">
+                  <MessageSquare className="size-8 text-muted-foreground/20 mb-3" />
+                  <p className="text-sm text-muted-foreground">No discussions yet. Start the conversation!</p>
+                </div>
+              )}
+            </div>
+            {/* Input + Virgil */}
+            <div className="shrink-0 border-t border-border p-3">
+              <div className="flex gap-2">
+                <Input value={newMessage} onChange={(e) => setNewMessage(e.target.value)} placeholder="Share your thoughts…" className="flex-1 h-9 text-sm" onKeyDown={(e) => { if (e.key === "Enter" && newMessage.trim()) handleSend() }} />
+                <Button size="sm" variant="outline" onClick={handleAskVirgil} className="gap-1 text-xs shrink-0">
+                  <Feather className="size-3" /> Ask Virgil
+                </Button>
+                <Button size="icon-sm" disabled={!newMessage.trim()} onClick={handleSend}>
+                  <Send className="size-3.5" />
+                </Button>
+              </div>
+            </div>
+          </TabsContent>
+
+          {/* Members Tab */}
+          <TabsContent value="members" className="flex-1 overflow-y-auto p-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+              {demoMembers.map(member => (
+                <div key={member.id} className="flex flex-col items-center gap-2 rounded-xl border bg-card p-4 text-center">
+                  <div className="flex size-12 items-center justify-center rounded-full text-sm font-bold text-white" style={{ backgroundColor: member.avatarColor }}>
+                    {member.username.split(" ").map(n => n[0]).join("").toUpperCase()}
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium">{member.username}</p>
+                    <div className="flex items-center justify-center gap-1 mt-0.5">
+                      {roleIcons[member.role]}
+                      <span className="text-[10px] text-muted-foreground capitalize">{member.role}</span>
+                    </div>
+                  </div>
+                  <p className="text-[10px] text-muted-foreground">Joined {new Date(member.joinedAt).toLocaleDateString("en-US", { month: "short", day: "numeric" })}</p>
+                </div>
+              ))}
+            </div>
+            {demoMembers.length === 0 && (
+              <p className="text-sm text-muted-foreground text-center py-8">No members yet</p>
+            )}
+          </TabsContent>
+
+          {/* Reading Pace Tab */}
+          <TabsContent value="reading-pace" className="flex-1 overflow-y-auto p-4">
+            {readingPace.length === 0 ? (
+              <div className="text-center py-12">
+                <Calendar className="size-8 text-muted-foreground/20 mx-auto mb-3" />
+                <p className="text-sm text-muted-foreground">No reading schedule set</p>
+                <p className="text-xs text-muted-foreground mt-1">Club owners can create a shared reading pace</p>
+              </div>
+            ) : (
+              <div className="space-y-3">
+                <h3 className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Shared Reading Schedule</h3>
+                {readingPace.map(rp => {
+                  const isPast = new Date(rp.targetDate) < new Date()
+                  return (
+                    <div key={rp.id} className={cn("rounded-xl border bg-card p-4", isPast && rp.groupProgress === 100 && "border-green-200 dark:border-green-800")}>
+                      <div className="flex items-center justify-between mb-2">
+                        <p className="text-sm font-medium">{rp.unit}</p>
+                        <span className={cn("text-[10px]", isPast ? "text-muted-foreground" : "text-foreground")}>{new Date(rp.targetDate).toLocaleDateString("en-US", { month: "short", day: "numeric" })}</span>
+                      </div>
+                      {rp.notes && <p className="text-xs text-muted-foreground mb-2">{rp.notes}</p>}
+                      <div className="flex items-center gap-2">
+                        <div className="flex-1 h-2 rounded-full bg-muted overflow-hidden">
+                          <div className="h-full rounded-full transition-all" style={{ width: `${rp.groupProgress}%`, backgroundColor: rp.groupProgress === 100 ? "#22C55E" : "var(--tome-accent)" }} />
+                        </div>
+                        <span className="text-xs text-muted-foreground w-10 text-right">{rp.groupProgress}%</span>
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+            )}
+          </TabsContent>
+
+          {/* About Tab */}
+          <TabsContent value="about" className="flex-1 overflow-y-auto p-4">
+            <div className="max-w-lg space-y-6">
+              <div>
+                <h3 className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">Description</h3>
+                <p className="text-sm leading-relaxed">{club.description}</p>
+              </div>
+              {club.bookTitle && (
+                <div>
+                  <h3 className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">Book</h3>
+                  <p className="text-sm">{club.bookTitle}</p>
+                </div>
+              )}
+              {club.theme && (
+                <div>
+                  <h3 className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">Theme</h3>
+                  <p className="text-sm">{club.theme}</p>
+                </div>
+              )}
+              <div>
+                <h3 className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">Club Rules</h3>
+                <p className="text-sm leading-relaxed">{club.rules || "No specific rules set."}</p>
+              </div>
+              <div className="grid grid-cols-2 gap-4 text-sm">
+                <div>
+                  <span className="text-xs text-muted-foreground">Created</span>
+                  <p>{new Date(club.createdAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}</p>
+                </div>
+                <div>
+                  <span className="text-xs text-muted-foreground">Visibility</span>
+                  <p className="capitalize">{club.visibility.replace("_", " ")}</p>
+                </div>
+                <div>
+                  <span className="text-xs text-muted-foreground">Max Members</span>
+                  <p>{club.maxMembers}</p>
+                </div>
+                <div>
+                  <span className="text-xs text-muted-foreground">Members</span>
+                  <p>{club.memberCount}</p>
+                </div>
+              </div>
+            </div>
+          </TabsContent>
+        </Tabs>
       </div>
     </div>
   )

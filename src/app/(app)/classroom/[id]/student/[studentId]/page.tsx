@@ -127,6 +127,12 @@ export default function StudentDetailPage({
           {student.username && (
             <p className="text-sm text-muted-foreground">@{student.username}</p>
           )}
+          <Link
+            href={`/teacher/students/${studentId}?from=${classroomId}`}
+            className="text-xs text-[var(--tome-accent)] hover:underline mt-1 inline-block"
+          >
+            View full profile →
+          </Link>
         </div>
       </div>
 

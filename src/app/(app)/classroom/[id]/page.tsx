@@ -3,7 +3,8 @@
 import { use, useState } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { Users, BookOpen, TrendingUp, Activity, Copy, Check, Sparkles, ChevronLeft } from "lucide-react"
+import { Users, BookOpen, TrendingUp, Activity, Copy, Check, Sparkles, ChevronLeft, Calendar } from "lucide-react"
+import { Button } from "@/components/ui/button"
 import { useAuth } from "@/hooks/use-auth"
 import { StudentClassroomView } from "@/components/classroom/student-classroom-view"
 import {
@@ -89,6 +90,11 @@ function DemoClassroomView({ classroomId }: { classroomId: string }) {
           Code: {classroom.joinCode}
           {copied ? <Check className="size-3 text-green-500" /> : <Copy className="size-3" />}
         </button>
+        <Link href={`/classroom/${classroomId}/manage`}>
+          <Button variant="outline" size="sm" className="gap-1.5">
+            <Calendar className="size-3.5" /> Manage Semester Plan
+          </Button>
+        </Link>
       </div>
 
       {/* Stats */}

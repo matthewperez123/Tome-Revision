@@ -33,7 +33,7 @@ export function AppSidebar() {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
-      <SidebarFooter className="px-3 py-3 border-t border-border">
+      <SidebarFooter className="px-1.5 py-2 border-t border-border">
         <ProfileSwitcher />
       </SidebarFooter>
       <SidebarRail />
@@ -42,7 +42,7 @@ export function AppSidebar() {
 }
 
 function SidebarNav({ pathname }: { pathname: string }) {
-  const { setOpenMobile } = useSidebar()
+  const { setOpen, setOpenMobile } = useSidebar()
   const { role } = useAuth()
   const listRef = React.useRef<HTMLUListElement>(null)
 
@@ -80,11 +80,14 @@ function SidebarNav({ pathname }: { pathname: string }) {
     if (pathname.startsWith("/book/"))    return "/library"
     if (pathname.startsWith("/author/") && !pathname.startsWith("/authors")) return "/authors"
     if (pathname.startsWith("/profile"))  return "/profile"
-    if (pathname.startsWith("/clubs/"))   return "/social"
+    if (pathname.startsWith("/clubs/"))   return "/clubs"
+    if (pathname.startsWith("/study-groups/")) return "/study-groups"
     if (pathname.startsWith("/quiz/"))    return "/quizzes"
     if (pathname.startsWith("/read/"))    return "/reading"
     // Teacher sub-routes: keep their exact prefixes so they don't
     // also highlight the parent "/classroom" item
+    if (pathname.startsWith("/teacher/parents"))          return "/teacher/parents"
+    if (pathname.startsWith("/teacher/students"))        return "/classroom"
     if (pathname.startsWith("/classroom/quiz-builder")) return "/classroom/quiz-builder"
     if (pathname.startsWith("/classroom/grading"))      return "/classroom/grading"
     if (pathname.startsWith("/classroom/create"))       return "/classroom"
@@ -108,7 +111,7 @@ function SidebarNav({ pathname }: { pathname: string }) {
             <SidebarMenuButton
               isActive={isActive}
               tooltip={item.label}
-              render={<Link href={item.href} onClick={() => setOpenMobile(false)} />}
+              render={<Link href={item.href} onClick={() => { setOpen(false); setOpenMobile(false) }} />}
             >
               <item.icon className="size-4" />
               <span>{item.label}</span>

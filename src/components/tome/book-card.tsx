@@ -159,7 +159,7 @@ export function BookCard({ book, progress, size = "sm", className, activeSort }:
 
       {/* ── Meta ── */}
       <div className={cn("flex flex-col min-w-0 px-3 pt-2.5 pb-3", size === "lg" ? "gap-1" : "gap-0.5")}>
-        {/* Tradition dot + label · Difficulty */}
+        {/* Tradition dot + label */}
         <div className="flex items-center gap-1.5">
           <span
             className="size-2 shrink-0 rounded-full"
@@ -167,13 +167,6 @@ export function BookCard({ book, progress, size = "sm", className, activeSort }:
           />
           <span className="text-[10px] font-medium text-muted-foreground/70 uppercase tracking-wider truncate">
             {book.tradition}
-          </span>
-          <span className="text-muted-foreground/30 text-[8px]">·</span>
-          <span
-            className="text-[10px] font-medium uppercase tracking-wider shrink-0"
-            style={{ color: diffColor.text }}
-          >
-            {book.difficulty}
           </span>
         </div>
 
@@ -195,6 +188,14 @@ export function BookCard({ book, progress, size = "sm", className, activeSort }:
               size === "lg" ? "text-xs" : "text-[10px]"
             )}
           />
+        </span>
+
+        {/* Difficulty badge */}
+        <span
+          className="text-[10px] font-medium uppercase tracking-wider"
+          style={{ color: diffColor.text }}
+        >
+          {book.difficulty}
         </span>
 
         {activeSort === "year" && book.year != null && (

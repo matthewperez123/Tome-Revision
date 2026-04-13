@@ -3,6 +3,7 @@ import {
   LayoutDashboard,
   Library,
   BookOpen,
+  BookHeart,
   Brain,
   Trophy,
   Users,
@@ -11,6 +12,7 @@ import {
   GraduationCap,
   ShoppingBag,
   User,
+  UserCircle,
   Bookmark,
   BookMarked,
   ClipboardCheck,
@@ -42,14 +44,17 @@ export const sidebarNav: NavItem[] = [
   { label: "Authors", href: "/authors", icon: Users2 },
   { label: "Reading", href: "/reading", icon: BookOpen },
   { label: "Quizzes", href: "/quizzes", icon: Brain },
+  { label: "Book Clubs", href: "/clubs", icon: BookHeart },
 
   // Teacher-only classroom tools
   { label: "My Classrooms", href: "/classroom", icon: GraduationCap, roles: ["teacher"], section: "teaching" },
+  { label: "Parents", href: "/teacher/parents", icon: UserCircle, roles: ["teacher"], section: "teaching" },
   { label: "Quiz Builder", href: "/classroom/quiz-builder", icon: Feather, roles: ["teacher"], section: "teaching" },
   { label: "Grading", href: "/classroom/grading", icon: ClipboardCheck, roles: ["teacher"], section: "teaching" },
 
   // Student classroom access (only if they have joined classrooms)
   { label: "My Classes", href: "/classroom", icon: GraduationCap, roles: ["reader"] },
+  { label: "Study Groups", href: "/study-groups", icon: Users2, roles: ["reader"] },
 
   // Discovery & social — all roles
   { label: "Explore", href: "/explore", icon: Globe2 },

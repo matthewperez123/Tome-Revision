@@ -38,7 +38,7 @@ export function TopBar({ className }: { className?: string }) {
   return (
     <header
       className={cn(
-        "relative z-20 flex h-12 shrink-0 items-center gap-1.5 border-b border-border bg-background px-2",
+        "relative z-30 flex h-12 shrink-0 items-center gap-1.5 border-b border-border bg-background px-2",
         className
       )}
     >

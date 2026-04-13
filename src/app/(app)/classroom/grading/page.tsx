@@ -1,7 +1,8 @@
 "use client"
 
 import { useEffect, useState, useCallback } from "react"
-import { ClipboardCheck, ChevronRight, Send } from "lucide-react"
+import Link from "next/link"
+import { ClipboardCheck, ChevronRight, Send, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { createClient } from "@/lib/supabase/client"
@@ -44,13 +45,46 @@ const DEMO_GRADING: GradingItem[] = [
     feedback: "",
   },
   {
-    submission_id: "demo-3",
+    submission_id: "es-1",
     student_name: "Emma Chen",
-    assignment_title: "Pride and Prejudice — Character Analysis Essay",
+    assignment_title: "The Odyssey — Metis vs. Bie Essay",
     assignment_type: "essay",
     classroom_name: "AP Literature — Period 3",
-    response_text: "Elizabeth Bennet's pride manifests differently than Darcy's. While Darcy's pride stems from social position and wealth, Elizabeth's comes from her confidence in her own judgment. Austen shows us that both forms of pride can blind a person to truth. Elizabeth's prejudice against Darcy is just as harmful as his initial snobbery. The genius of the novel is that both must undergo genuine change — not just one yielding to the other. Elizabeth must acknowledge she was wrong about Wickham and Darcy, while Darcy must learn that rank alone doesn't make one worthy of respect.",
+    response_text: "In Homer's Odyssey, the concept of heroism undergoes a fundamental transformation...",
     submitted_at: new Date(Date.now() - 24 * 3600000).toISOString(),
+    score: null,
+    feedback: "",
+  },
+  {
+    submission_id: "es-2",
+    student_name: "James O'Brien",
+    assignment_title: "The Odyssey — Metis vs. Bie Essay",
+    assignment_type: "essay",
+    classroom_name: "AP Literature — Period 3",
+    response_text: "The Odyssey by Homer is about Odysseus trying to get home after the Trojan War...",
+    submitted_at: new Date(Date.now() - 20 * 3600000).toISOString(),
+    score: null,
+    feedback: "",
+  },
+  {
+    submission_id: "es-3",
+    student_name: "Sofia Rodriguez",
+    assignment_title: "Pride and Prejudice — Irony Analysis Essay",
+    assignment_type: "essay",
+    classroom_name: "AP Literature — Period 3",
+    response_text: "Jane Austen opens Pride and Prejudice with one of literature's most celebrated examples of verbal irony...",
+    submitted_at: new Date(Date.now() - 18 * 3600000).toISOString(),
+    score: null,
+    feedback: "",
+  },
+  {
+    submission_id: "es-4",
+    student_name: "Olivia Kim",
+    assignment_title: "Pride and Prejudice — Irony Analysis Essay",
+    assignment_type: "essay",
+    classroom_name: "AP Literature — Period 3",
+    response_text: "Pride and Prejudice uses irony a lot. The first sentence is ironic...",
+    submitted_at: new Date(Date.now() - 16 * 3600000).toISOString(),
     score: null,
     feedback: "",
   },
@@ -214,6 +248,15 @@ export default function GradingQueuePage() {
                   {items[selectedIndex].response_text || "No written response submitted."}
                 </p>
               </div>
+
+              {/* AI essay grading link */}
+              {items[selectedIndex].assignment_type === "essay" && (
+                <Link href={`/classroom/grading/essay/${items[selectedIndex].submission_id}`}>
+                  <Button variant="outline" className="w-full mt-3 gap-1.5 border-[var(--tome-accent)]/30 text-[var(--tome-accent)] hover:bg-[var(--tome-accent)]/5">
+                    <Sparkles className="size-3.5" /> Open AI Grading Assistant
+                  </Button>
+                </Link>
+              )}
 
               <div className="mt-4 space-y-3">
                 <div>

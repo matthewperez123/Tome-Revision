@@ -338,7 +338,7 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
       </Link>
 
       <div className="flex items-center gap-3 mb-6">
-        <div className="flex size-10 items-center justify-center rounded-xl bg-[#D4A04C]">
+        <div className="flex size-10 items-center justify-center rounded-xl bg-[var(--tome-accent)]">
           <Feather className="size-5 text-white" />
         </div>
         <div className="flex-1">
@@ -468,7 +468,7 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
             <motion.div
               key={q.id}
               layout
-              className={`rounded-xl border transition-colors ${isExpanded ? "border-[#D4A04C]/30 bg-[#D4A04C]/5" : "bg-card"}`}
+              className={`rounded-xl border transition-colors ${isExpanded ? "border-[var(--tome-accent)]/30 bg-[var(--tome-accent)]/5" : "bg-card"}`}
             >
               {/* Collapsed header */}
               <div className="flex items-center gap-2 p-3">
@@ -515,7 +515,7 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
                         }}
                         className={`rounded-md px-2 py-1 text-[10px] font-medium transition-colors ${
                           q.question_type === t.key
-                            ? "bg-[#D4A04C]/10 text-[#D4A04C]"
+                            ? "bg-[var(--tome-accent)]/10 text-[var(--tome-accent)]"
                             : "text-muted-foreground hover:bg-muted"
                         }`}
                       >
@@ -691,7 +691,7 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
           variant="outline"
           onClick={handleAIGenerate}
           disabled={generating}
-          className="mt-3 w-full gap-2 border-[#D4A04C]/30 text-[#D4A04C] hover:bg-[#D4A04C]/5"
+          className="mt-3 w-full gap-2 border-[var(--tome-accent)]/30 text-[var(--tome-accent)] hover:bg-[var(--tome-accent)]/5"
         >
           <Sparkles className="size-4" />
           {generating ? "Generating questions..." : "AI-Assist: Generate 5 questions"}
@@ -704,7 +704,7 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
           {saved ? <Check className="size-3.5 text-green-500" /> : <Save className="size-3.5" />}
           {saving ? "Saving..." : saved ? "Saved!" : "Save Draft"}
         </Button>
-        <Button onClick={handlePublish} disabled={questions.length === 0} className="flex-1 gap-1.5 bg-[#D4A04C] hover:bg-[#C49040] text-white">
+        <Button onClick={handlePublish} disabled={questions.length === 0} className="flex-1 gap-1.5 bg-[var(--tome-accent)] hover:bg-[color-mix(in_srgb,var(--tome-accent)_85%,black)] text-white">
           <Eye className="size-3.5" />
           Publish Quiz
         </Button>

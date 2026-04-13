@@ -148,7 +148,7 @@ export function ProfileSwitcher() {
       {/* Current profile button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full items-center gap-2 rounded-md p-1.5 hover:bg-accent/50 transition-colors"
+        className={`flex w-full items-center gap-2 rounded-md p-1.5 hover:bg-accent/50 transition-colors ${collapsed ? "justify-center" : ""}`}
       >
         <UserAvatar
           character={displayCharacter}

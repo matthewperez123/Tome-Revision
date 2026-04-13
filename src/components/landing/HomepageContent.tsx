@@ -15,6 +15,12 @@ import { AnnotationShowcase } from "./AnnotationShowcase"
 import { TrialsShowcase } from "./TrialsShowcase"
 import { SealsShowcase } from "./SealsShowcase"
 import { LibraryShowcase } from "./LibraryShowcase"
+import { TimelinesShowcase } from "./TimelinesShowcase"
+import { AuthorShowcase } from "./AuthorShowcase"
+import { QuotesShowcase } from "./QuotesShowcase"
+import { BookClubsShowcase } from "./BookClubsShowcase"
+import { SearchShowcase } from "./SearchShowcase"
+import { ReadingInsightsShowcase } from "./ReadingInsightsShowcase"
 import { ReaderPricingSection } from "./ReaderPricingSection"
 import { FinalCTA } from "./FinalCTA"
 
@@ -26,6 +32,11 @@ import { StudentDashboardShowcase } from "./teacher/StudentDashboardShowcase"
 import { DiscussionThreadsShowcase } from "./teacher/DiscussionThreadsShowcase"
 import { StandardsAlignmentShowcase } from "./teacher/StandardsAlignmentShowcase"
 import { RosterImportShowcase } from "./teacher/RosterImportShowcase"
+import { SemesterPlanShowcase } from "./teacher/SemesterPlanShowcase"
+import { StudentProfileShowcase } from "./teacher/StudentProfileShowcase"
+import { EssayGradingShowcase } from "./teacher/EssayGradingShowcase"
+import { ParentsShowcase } from "./teacher/ParentsShowcase"
+import { StudyGroupsShowcase } from "./teacher/StudyGroupsShowcase"
 import { TeacherPricingSection } from "./TeacherPricingSection"
 import { TeacherCTA } from "./teacher/TeacherCTA"
 
@@ -51,6 +62,11 @@ export function HomepageContent() {
         <DiscussionThreadsShowcase />
         <StandardsAlignmentShowcase />
         <RosterImportShowcase />
+        <SemesterPlanShowcase />
+        <StudentProfileShowcase />
+        <EssayGradingShowcase />
+        <ParentsShowcase />
+        <StudyGroupsShowcase />
         <TeacherPricingSection />
         <TeacherCTA />
       </>
@@ -71,6 +87,12 @@ export function HomepageContent() {
       <TrialsShowcase />
       <SealsShowcase />
       <LibraryShowcase />
+      <TimelinesShowcase />
+      <AuthorShowcase />
+      <QuotesShowcase />
+      <BookClubsShowcase />
+      <SearchShowcase />
+      <ReadingInsightsShowcase />
       <ReaderPricingSection />
       <FinalCTA />
     </>

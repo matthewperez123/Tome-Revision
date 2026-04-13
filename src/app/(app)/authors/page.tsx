@@ -2,20 +2,21 @@
 
 import { useEffect, useMemo, useState, useCallback } from "react"
 import Link from "next/link"
-import { Search, Users2 } from "lucide-react"
+import { Search, Users2, SlidersHorizontal, ChevronLeft } from "lucide-react"
 import { AUTHORS } from "@/data/authors"
 import { BOOKS } from "@/data/books"
 import { Skeleton } from "@/components/ui/skeleton"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { Badge } from "@/components/ui/badge"
-import { SearchBar } from "@/components/tome/SearchBar"
 import { FilterDropdown } from "@/components/tome/FilterDropdown"
+import { TRADITION_COLORS } from "@/components/tome/book-card"
 import { cn } from "@/lib/utils"
 import { useDebounce } from "@/lib/use-debounce"
 
 // ── Constants ──────────────────────────────────
 
-const TRADITION_COLORS: Record<string, string> = {
+// Flat color map kept for author portrait circles (just needs a single hex)
+const AUTHOR_COLORS: Record<string, string> = {
   "Ancient Greek": "#0EA5E9",
   Roman: "#EF4444",
   "Medieval European": "#F59E0B",
@@ -126,6 +127,8 @@ export default function AuthorsPage() {
   const [eraFilter, setEraFilter] = useState("")
   const [nationalityFilter, setNationalityFilter] = useState("")
   const [selectedTraditions, setSelectedTraditions] = useState<Set<string>>(new Set())
+  const [filterOpen, setFilterOpen] = useState(false)
+
   // Derive all authors from BOOKS, merge with curated AUTHORS data
   const authors = useMemo(() => {
     const derived = deriveAuthorsFromBooks(BOOKS.map(b => ({ id: b.id, author: b.author, tradition: b.tradition })))
@@ -153,7 +156,7 @@ export default function AuthorsPage() {
   }, [])
 
   const hasActiveFilters =
-    debouncedSearch || eraFilter || nationalityFilter || selectedTraditions.size > 0
+    !!(debouncedSearch || eraFilter || nationalityFilter || selectedTraditions.size > 0)
 
   const filtered = useMemo(() => {
     return authors.filter((a) => {
@@ -176,96 +179,147 @@ export default function AuthorsPage() {
   }, [authors])
 
   return (
-    <div className="flex flex-col md:flex-row gap-0 min-h-full">
-      {/* ── Filter Sidebar ── */}
-      <aside className="hidden md:block shrink-0 w-56 border-r border-border bg-[var(--tome-surface-elevated)] p-4">
-        <div className="flex items-center justify-between mb-4">
-          <h3 className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
-            Filters
-          </h3>
-          {hasActiveFilters && (
+    <div className="flex flex-row gap-0 min-h-full">
+      {/* ── Filter Sidebar — collapsible with peek rail (matches Library) ── */}
+      <aside
+        className={cn(
+          "relative shrink-0 border-r border-border bg-[var(--tome-surface-elevated)] transition-[width] duration-200 ease-[var(--tome-ease-scholarly)] overflow-hidden z-10 sticky top-0 self-start h-[calc(100vh-3rem)]",
+          filterOpen ? "w-56" : "w-10"
+        )}
+      >
+        {/* Collapsed peek rail — filter icon + tradition dots */}
+        {!filterOpen && (
+          <div className="flex h-full w-10 flex-col items-center pt-3 pb-3 gap-1.5 overflow-y-auto">
             <button
-              onClick={clearFilters}
-              className="text-[10px] text-muted-foreground hover:text-foreground transition-colors"
+              onClick={() => setFilterOpen(true)}
+              title="Filters"
+              className={cn(
+                "flex size-7 shrink-0 items-center justify-center rounded-md transition-colors mb-1",
+                hasActiveFilters
+                  ? "text-[var(--tome-accent)]"
+                  : "text-muted-foreground hover:text-foreground hover:bg-muted"
+              )}
             >
-              Clear all
+              <SlidersHorizontal className="size-4" />
             </button>
-          )}
-        </div>
-
-        {/* Era */}
-        <div className="mb-5">
-          <label className="text-xs font-medium text-muted-foreground mb-1.5 block">Era</label>
-          <FilterDropdown
-            label="Era"
-            value={eraFilter}
-            onChange={setEraFilter}
-            options={ERAS}
-            className="w-full rounded-md"
-          />
-        </div>
-
-        {/* Nationality */}
-        <div className="mb-5">
-          <label className="text-xs font-medium text-muted-foreground mb-1.5 block">
-            Nationality
-          </label>
-          <FilterDropdown
-            label="Nationality"
-            value={nationalityFilter}
-            onChange={setNationalityFilter}
-            options={NATIONALITIES}
-            className="w-full rounded-md"
-          />
-        </div>
-
-        {/* Traditions */}
-        <div>
-          <label className="text-xs font-medium text-muted-foreground mb-2 block">
-            Traditions
-          </label>
-          <div className="space-y-1">
-            {allTraditions.map((t) => (
-              <label key={t} className="flex items-center gap-2 py-0.5 cursor-pointer group">
-                <input
-                  type="checkbox"
-                  checked={selectedTraditions.has(t)}
-                  onChange={() => toggleTradition(t)}
-                  className="size-3 rounded border-border accent-[var(--tome-accent)]"
-                />
+            {allTraditions.map(t => (
+              <button
+                key={t}
+                onClick={() => { toggleTradition(t); setFilterOpen(true) }}
+                className={cn(
+                  "group/dot relative flex size-6 shrink-0 items-center justify-center rounded transition-colors",
+                  selectedTraditions.has(t)
+                    ? "bg-muted"
+                    : "hover:bg-muted"
+                )}
+              >
                 <span
-                  className="size-1.5 rounded-full shrink-0"
-                  style={{ backgroundColor: TRADITION_COLORS[t] }}
+                  className="size-2.5 rounded-full"
+                  style={{ backgroundColor: TRADITION_COLORS[t]?.dot ?? AUTHOR_COLORS[t] ?? "#6366F1" }}
                 />
-                <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors truncate">
+                {/* Hover tooltip */}
+                <span className="pointer-events-none absolute left-full ml-2 whitespace-nowrap rounded bg-foreground/90 px-2 py-1 text-[10px] font-medium text-background opacity-0 transition-opacity group-hover/dot:opacity-100 z-50">
                   {t}
                 </span>
-              </label>
+              </button>
             ))}
           </div>
-        </div>
+        )}
+
+        {/* Expanded filter content */}
+        {filterOpen && (
+          <div className="flex h-full min-w-[220px] flex-col p-4 overflow-y-auto">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+                Filters
+              </h3>
+              <div className="flex items-center gap-2">
+                {hasActiveFilters && (
+                  <button
+                    onClick={clearFilters}
+                    className="text-[10px] text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    Clear all
+                  </button>
+                )}
+                <button
+                  onClick={() => setFilterOpen(false)}
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  aria-label="Collapse filters"
+                >
+                  <ChevronLeft className="size-3.5" />
+                </button>
+              </div>
+            </div>
+
+            {/* Era */}
+            <div className="mb-5">
+              <label className="text-xs font-medium text-muted-foreground mb-1.5 block">Era</label>
+              <FilterDropdown
+                label="Era"
+                value={eraFilter}
+                onChange={setEraFilter}
+                options={ERAS}
+                className="w-full rounded-md"
+              />
+            </div>
+
+            {/* Nationality */}
+            <div className="mb-5">
+              <label className="text-xs font-medium text-muted-foreground mb-1.5 block">
+                Nationality
+              </label>
+              <FilterDropdown
+                label="Nationality"
+                value={nationalityFilter}
+                onChange={setNationalityFilter}
+                options={NATIONALITIES}
+                className="w-full rounded-md"
+              />
+            </div>
+
+            {/* Traditions */}
+            <div>
+              <label className="text-xs font-medium text-muted-foreground mb-2 block">
+                Traditions
+              </label>
+              <div className="space-y-1">
+                {allTraditions.map((t) => (
+                  <label key={t} className="flex items-center gap-2 py-0.5 cursor-pointer group">
+                    <input
+                      type="checkbox"
+                      checked={selectedTraditions.has(t)}
+                      onChange={() => toggleTradition(t)}
+                      className="size-3 rounded border-border accent-[var(--tome-accent)]"
+                    />
+                    <span
+                      className="size-1.5 rounded-full shrink-0"
+                      style={{ backgroundColor: TRADITION_COLORS[t]?.dot ?? AUTHOR_COLORS[t] }}
+                    />
+                    <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors truncate">
+                      {t}
+                    </span>
+                  </label>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
       </aside>
 
       {/* ── Main Content ── */}
-      <div className="flex-1 overflow-y-auto">
-        {/* Sticky Header */}
-        <div className="sticky top-0 z-10 border-b border-border bg-background/80 backdrop-blur-sm px-4 py-2.5">
+      <div className="flex-1 min-w-0">
+        {/* Sticky Header — matches Library (no search bar, no difficulty pills) */}
+        <div className="sticky top-0 z-10 border-b border-border bg-background px-4 py-2.5">
           <div className="flex items-center gap-3">
             <div className="flex flex-col min-w-0 mr-auto">
               <h1 className="text-sm font-serif font-semibold leading-none tracking-tight">
                 Authors
               </h1>
               <p className="text-[10px] text-muted-foreground mt-0.5">
-                {filtered.length} authors across {allTraditions.length} traditions
+                {filtered.length} author{filtered.length !== 1 ? "s" : ""} across {allTraditions.length} traditions
               </p>
             </div>
-
-            <SearchBar
-              placeholder="Search authors…"
-              value={search}
-              onChange={setSearch}
-              className="w-48 sm:w-64"
-            />
           </div>
         </div>
 
@@ -292,7 +346,7 @@ export default function AuthorsPage() {
             <div className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5">
               {filtered.map((author, i) => {
                 const primaryTradition = getPrimaryTradition(author.traditions)
-                const color = TRADITION_COLORS[primaryTradition] ?? "#6366F1"
+                const color = AUTHOR_COLORS[primaryTradition] ?? "#6366F1"
                 const lifeSpan =
                   author.birthYear != null
                     ? author.deathYear != null
