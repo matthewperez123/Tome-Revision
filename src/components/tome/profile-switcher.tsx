@@ -101,8 +101,13 @@ export function ProfileSwitcher() {
       return
     }
 
-    // Update localStorage onboarding data
-    saveOnboardingData({ userType: newRole })
+    // Update localStorage onboarding data — ensure completedAt exists
+    // so getDemoProfile() recognises the profile on reload
+    const current = getOnboardingData()
+    saveOnboardingData({
+      userType: newRole,
+      completedAt: current.completedAt ?? new Date().toISOString(),
+    })
     setIsOpen(false)
 
     // Navigate to dashboard and reload to pick up the new role
