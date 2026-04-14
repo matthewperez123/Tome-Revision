@@ -6,12 +6,14 @@ import {
   BookHeart,
   Brain,
   Trophy,
-  Users,
-  Users2,
+  HeartHandshake,
+  PenTool,
+  UsersRound,
+  MessageCircle,
   Globe2,
   GraduationCap,
   ShoppingBag,
-  User,
+  CircleUser,
   UserCircle,
   Bookmark,
   BookMarked,
@@ -41,7 +43,7 @@ export const sidebarNav: NavItem[] = [
   { label: "Library", href: "/library", icon: Library },
   { label: "Bookmarks", href: "/bookmarks", icon: Bookmark },
   { label: "My Shelves", href: "/shelves", icon: BookMarked },
-  { label: "Authors", href: "/authors", icon: Users2 },
+  { label: "Authors", href: "/authors", icon: PenTool },
   { label: "Reading", href: "/reading", icon: BookOpen },
   { label: "Quizzes", href: "/quizzes", icon: Brain },
   { label: "Book Clubs", href: "/clubs", icon: BookHeart },
@@ -54,16 +56,16 @@ export const sidebarNav: NavItem[] = [
 
   // Student classroom access (only if they have joined classrooms)
   { label: "My Classes", href: "/classroom", icon: GraduationCap, roles: ["reader"] },
-  { label: "Study Groups", href: "/study-groups", icon: Users2, roles: ["reader"] },
+  { label: "Study Groups", href: "/study-groups", icon: UsersRound, roles: ["reader"] },
 
   // Discovery & social — all roles
   { label: "Explore", href: "/explore", icon: Globe2 },
   { label: "Timelines", href: "/timelines", icon: History },
   { label: "Achievements", href: "/achievements", icon: Trophy },
-  { label: "Friends", href: "/friends", icon: Users },
-  { label: "Community", href: "/social", icon: Users2 },
+  { label: "Friends", href: "/friends", icon: HeartHandshake },
+  { label: "Community", href: "/social", icon: MessageCircle },
   { label: "Shop", href: "/shop", icon: ShoppingBag },
-  { label: "Profile", href: "/profile", icon: User },
+  { label: "Profile", href: "/profile", icon: CircleUser },
 ]
 
 /**
@@ -85,5 +87,5 @@ export const dockNav: NavItem[] = [
   { label: "Library", href: "/library", icon: Library },
   { label: "Read", href: "/reading", icon: BookOpen },
   { label: "Quiz", href: "/quizzes", icon: Brain },
-  { label: "Profile", href: "/profile", icon: User },
+  { label: "Profile", href: "/profile", icon: CircleUser },
 ]

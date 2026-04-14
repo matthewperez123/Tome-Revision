@@ -1,6 +1,7 @@
 "use client"
 
 import { motion, AnimatePresence } from "motion/react"
+import { Flame } from "lucide-react"
 import { useAnimationLoop } from "../useAnimationLoop"
 import { TeacherShowcaseShell } from "./TeacherShowcaseShell"
 
@@ -60,9 +61,7 @@ function ProgressRing({ progress }: { progress: number }) {
 function FlameCounter({ target }: { target: number }) {
   return (
     <div className="flex items-center gap-3">
-      <span className="text-2xl" role="img" aria-label="flame">
-        🔥
-      </span>
+      <Flame className="size-6 text-orange-500" />
       <motion.span
         className="text-2xl font-bold text-foreground"
         initial={{ opacity: 0 }}
@@ -142,7 +141,7 @@ export function StudentDashboardShowcase() {
             ))}
           </div>
           <div className="flex items-center gap-3">
-            <span className="text-2xl">🔥</span>
+            <Flame className="size-6 text-orange-500" />
             <span className="text-2xl font-bold text-foreground">7</span>
             <span className="text-xs text-muted-foreground">7-day streak</span>
           </div>
