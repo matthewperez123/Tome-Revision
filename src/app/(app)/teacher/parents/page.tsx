@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useMemo } from "react"
+import { useState, useMemo, Suspense } from "react"
 import Link from "next/link"
 import { useSearchParams } from "next/navigation"
 import {
@@ -22,6 +22,14 @@ import {
 import { DEMO_STUDENT_DETAILS } from "@/lib/classroom-students"
 
 export default function ParentsPage() {
+  return (
+    <Suspense fallback={<div className="flex h-[calc(100vh-3rem)] items-center justify-center text-muted-foreground">Loading...</div>}>
+      <ParentsPageInner />
+    </Suspense>
+  )
+}
+
+function ParentsPageInner() {
   const searchParams = useSearchParams()
   const initialParentId = searchParams.get("parent")
   const initialStudentFilter = searchParams.get("student")
