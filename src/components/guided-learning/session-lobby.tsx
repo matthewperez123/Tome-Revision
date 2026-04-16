@@ -1,11 +1,18 @@
 "use client"
 
 import { motion, AnimatePresence } from "framer-motion"
-import { Users, Clock, BookOpen, Brain, Copy, Check } from "lucide-react"
+import { Users, Clock, BookOpen, Brain, PenTool, Copy, Check } from "lucide-react"
 import { useState, useCallback } from "react"
 import { Button } from "@/components/ui/button"
 import { springs } from "@/lib/design-tokens"
-import type { GuidedSession, ParticipantWithProfile } from "@/lib/guided-learning-types"
+import type { GuidedSession, ParticipantWithProfile, Station, StationType } from "@/lib/guided-learning-types"
+import { STATION_TYPE_LABELS } from "@/lib/guided-station-utils"
+
+const STATION_ICONS: Record<StationType, typeof BookOpen> = {
+  reading: BookOpen,
+  quiz: Brain,
+  reflection: PenTool,
+}
 
 interface SessionLobbyProps {
   session: GuidedSession
@@ -50,15 +57,18 @@ export function SessionLobby({
             <Brain className="h-4 w-4" />
           )}
           <span className="uppercase tracking-wider">
-            {session.type === "chapter" ? "Reading Session" : "Trial Session"}
+            {session.stations && session.stations.length > 0
+              ? "Guided Session"
+              : session.type === "chapter"
+                ? "Reading Session"
+                : "Trial Session"}
           </span>
         </div>
 
-        {bookTitle && (
-          <h2
-            className="text-2xl font-bold"
-          >
-            {bookTitle}
+        {/* Session title (multi-station) or book title (legacy) */}
+        {(session.title || bookTitle) && (
+          <h2 className="text-2xl font-bold">
+            {session.title || bookTitle}
           </h2>
         )}
         {bookAuthor && (
@@ -94,6 +104,37 @@ export function SessionLobby({
           {session.mode} mode
         </div>
       </div>
+
+      {/* Multi-station preview */}
+      {session.stations && session.stations.length > 0 && (
+        <div className="mb-6 w-full max-w-sm">
+          <p className="mb-2 text-xs uppercase tracking-wider opacity-40">
+            Station Queue ({session.stations.length})
+          </p>
+          <div
+            className="space-y-1.5 rounded-xl border p-3"
+            style={{ borderColor: "rgba(128, 128, 128, 0.12)" }}
+          >
+            {session.stations
+              .sort((a, b) => a.station_index - b.station_index)
+              .map((station, i) => {
+                const Icon = STATION_ICONS[station.type]
+                return (
+                  <div key={station.id} className="flex items-center gap-2.5 text-sm">
+                    <span className="w-4 text-right text-xs font-bold opacity-30">
+                      {i + 1}
+                    </span>
+                    <Icon className="h-3.5 w-3.5 opacity-40" />
+                    <span className="flex-1 truncate text-left">
+                      {station.title || STATION_TYPE_LABELS[station.type]}
+                    </span>
+                    <span className="text-xs opacity-30">{station.target_minutes}m</span>
+                  </div>
+                )
+              })}
+          </div>
+        </div>
+      )}
 
       {/* Teacher: Join code + controls */}
       {isTeacher && (

@@ -1,7 +1,14 @@
 "use client"
 
-import { Trophy, Clock, AlertTriangle, Users, Target } from "lucide-react"
-import type { GuidedSession, ParticipantWithProfile, SessionSummary } from "@/lib/guided-learning-types"
+import { Trophy, Clock, AlertTriangle, Users, Target, BookOpen, Brain, PenTool, Feather } from "lucide-react"
+import type { GuidedSession, ParticipantWithProfile, SessionSummary, StationType } from "@/lib/guided-learning-types"
+import { STATION_TYPE_LABELS } from "@/lib/guided-station-utils"
+
+const STATION_ICONS: Record<StationType, typeof BookOpen> = {
+  reading: BookOpen,
+  quiz: Brain,
+  reflection: PenTool,
+}
 
 interface SessionSummaryViewProps {
   session: GuidedSession
@@ -62,7 +69,9 @@ export function SessionSummaryView({ session, participants }: SessionSummaryView
           Session Complete
         </h1>
         <p className="text-sm opacity-60">
-          {session.type === "chapter" ? "Reading" : "Trial"} session ended
+          {session.title
+            ? session.title
+            : `${session.type === "chapter" ? "Reading" : "Trial"} session ended`}
         </p>
       </div>
 
@@ -84,6 +93,68 @@ export function SessionSummaryView({ session, participants }: SessionSummaryView
         ))}
       </div>
 
+      {/* Per-station breakdown (multi-station sessions) */}
+      {summary.stations && summary.stations.length > 0 && (
+        <div>
+          <h2 className="mb-4 text-lg font-semibold">Station Breakdown</h2>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {summary.stations.map((s, i) => {
+              const Icon = STATION_ICONS[s.station_type as StationType] ?? BookOpen
+              return (
+                <div
+                  key={s.station_index}
+                  className="rounded-xl border p-4"
+                  style={{ borderColor: "rgba(128, 128, 128, 0.12)" }}
+                >
+                  <div className="mb-2 flex items-center gap-2">
+                    <Icon className="h-4 w-4 opacity-50" />
+                    <span className="text-sm font-semibold">
+                      Station {s.station_index + 1}
+                    </span>
+                    <span className="text-xs opacity-40 capitalize">
+                      {STATION_TYPE_LABELS[s.station_type as StationType] ?? s.station_type}
+                    </span>
+                  </div>
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="opacity-50">Avg Progress</span>
+                    <span className="font-semibold">{s.avg_progress_pct}%</span>
+                  </div>
+                  <div className="mt-1 flex items-center justify-between text-xs">
+                    <span className="opacity-50">Completed</span>
+                    <span className="font-semibold">
+                      {s.completion_count}/{summary.total_participants ?? 0}
+                    </span>
+                  </div>
+                  {/* Progress bar */}
+                  <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
+                    <div
+                      className="h-full rounded-full"
+                      style={{
+                        width: `${s.avg_progress_pct}%`,
+                        backgroundColor: s.avg_progress_pct >= 100
+                          ? "var(--tome-success, #2D9A47)"
+                          : "var(--tome-indigo, #6366F1)",
+                      }}
+                    />
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* Hints summary */}
+      {summary.hints_total != null && summary.hints_total > 0 && (
+        <div
+          className="flex items-center gap-2 rounded-lg px-4 py-2.5 text-sm"
+          style={{ backgroundColor: "rgba(184, 146, 74, 0.06)" }}
+        >
+          <Feather className="h-4 w-4" style={{ color: "var(--gold-default, #B8924A)" }} />
+          <span>{summary.hints_total} total hint{summary.hints_total !== 1 ? "s" : ""} used across all students</span>
+        </div>
+      )}
+
       {/* Student breakdown table */}
       <div>
         <h2 className="mb-4 text-lg font-semibold">Student Results</h2>
@@ -98,6 +169,7 @@ export function SessionSummaryView({ session, participants }: SessionSummaryView
                 <th className="px-4 py-3">Status</th>
                 <th className="px-4 py-3 text-right">Progress</th>
                 <th className="px-4 py-3 text-right">Score</th>
+                <th className="px-4 py-3 text-right">Hints</th>
                 <th className="px-4 py-3 text-right">Violations</th>
               </tr>
             </thead>
@@ -116,13 +188,13 @@ export function SessionSummaryView({ session, participants }: SessionSummaryView
                       className="inline-block rounded-full px-2 py-0.5 text-xs font-medium"
                       style={{
                         backgroundColor:
-                          p.status === "submitted"
+                          p.status === "submitted" || p.status === "completed"
                             ? "rgba(45, 154, 71, 0.1)"
                             : p.status === "kicked"
                               ? "rgba(200, 74, 82, 0.1)"
                               : "rgba(128, 128, 128, 0.1)",
                         color:
-                          p.status === "submitted"
+                          p.status === "submitted" || p.status === "completed"
                             ? "var(--tome-success, #2D9A47)"
                             : p.status === "kicked"
                               ? "var(--tome-error, #C84A52)"
@@ -135,6 +207,9 @@ export function SessionSummaryView({ session, participants }: SessionSummaryView
                   <td className="px-4 py-3 text-right">{p.progress_pct}%</td>
                   <td className="px-4 py-3 text-right">
                     {p.score !== null ? `${p.score}%` : "—"}
+                  </td>
+                  <td className="px-4 py-3 text-right">
+                    {p.hints_used ?? 0}
                   </td>
                   <td className="px-4 py-3 text-right">
                     {p.violation_count > 0 ? (

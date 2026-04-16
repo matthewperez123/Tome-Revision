@@ -2,12 +2,22 @@
  * Guided Learning Mode types and utilities.
  *
  * Proctored, time-boxed reading/quiz sessions where teachers monitor
- * student progress in real time.
+ * student progress in real time. Supports multi-station sessions with
+ * ordered queues of reading, quiz, and reflection tasks.
  */
 
 // ── Session Types ───────────────────────────────────────────────────────────
 
-export type GuidedSessionStatus = "lobby" | "active" | "paused" | "ended"
+export type GuidedSessionStatus =
+  | "draft"
+  | "scheduled"
+  | "lobby"
+  | "active"
+  | "paused"
+  | "ended"       // legacy — kept for backward compat, equivalent to "completed"
+  | "completed"
+  | "cancelled"
+
 export type GuidedSessionMode = "strict" | "lenient"
 export type GuidedSessionType = "chapter" | "trial"
 
@@ -29,6 +39,17 @@ export interface GuidedSession {
   created_at: string
   ended_at: string | null
   summary_data: SessionSummary
+  // ── Multi-station fields (added in 20260415 migration) ──
+  title?: string
+  description?: string
+  scheduled_start_at?: string | null
+  actual_start_at?: string | null
+  actual_end_at?: string | null
+  duration_minutes?: number
+  settings?: SessionSettings
+  current_station_index?: number
+  /** Populated by API joins — not stored in the sessions table */
+  stations?: Station[]
 }
 
 export interface SessionSummary {
@@ -38,11 +59,107 @@ export interface SessionSummary {
   avg_score?: number | null
   total_violations?: number
   duration_seconds?: number
+  /** Per-station breakdowns (added in multi-station expansion) */
+  stations?: Array<{
+    station_index: number
+    station_type: StationType
+    avg_progress_pct: number
+    completion_count: number
+  }>
+  hints_total?: number
+}
+
+// ── Station Types ─────────────────────────────────────────────────────────
+
+export type StationType = "reading" | "quiz" | "reflection"
+
+export interface Station {
+  id: string
+  session_id: string
+  station_index: number
+  type: StationType
+  title: string | null
+  book_id: string | null
+  chapter_start: number | null
+  chapter_end: number | null
+  section_range: { startSection: string; endSection: string } | null
+  quiz_id: string | null
+  quiz_config: QuizConfig | null
+  reflection_prompt: string | null
+  min_words: number | null
+  target_minutes: number
+  require_completion: boolean
+  settings: Record<string, unknown>
+}
+
+/** Configuration for an ad-hoc quiz created inline during session setup. */
+export interface QuizConfig {
+  question_count: number
+  difficulty: "foundational" | "scholar" | "sage"
+  time_per_question_seconds?: number
+  question_types?: Array<"multiple_choice" | "true_false" | "fill_blank" | "short_answer">
+}
+
+// ── Session Settings ──────────────────────────────────────────────────────
+
+export interface SessionSettings {
+  allowEarlyExit: boolean
+  hintBudgetPerStudent: number | null   // null = unlimited
+  showOtherStudentsProgress: boolean
+  autoAdvance: boolean                  // auto-move to next station on completion
+  lockNavigation: boolean               // dim sidebar, block navigation
+  pauseOnTeacherDisconnect: boolean
+}
+
+// ── Station Progress ──────────────────────────────────────────────────────
+
+export interface StationProgress {
+  station_index: number
+  progress_pct: number
+  score: number | null
+  started_at: string | null
+  completed_at: string | null
+}
+
+// ── Message Types ─────────────────────────────────────────────────────────
+
+export type MessageType = "hint" | "nudge" | "announcement" | "praise" | "instruction"
+
+export interface SessionMessage {
+  id: string
+  session_id: string
+  sender_id: string
+  recipient_id: string | null   // null = broadcast to all
+  message_type: MessageType
+  content: string
+  station_index: number | null
+  created_at: string
+}
+
+// ── Reflection Types ──────────────────────────────────────────────────────
+
+export interface Reflection {
+  id: string
+  session_id: string
+  station_id: string
+  student_id: string
+  content: string
+  word_count: number
+  submitted_at: string | null
+  created_at: string
 }
 
 // ── Participant Types ───────────────────────────────────────────────────────
 
-export type ParticipantStatus = "lobby" | "active" | "submitted" | "kicked"
+export type ParticipantStatus =
+  | "invited"
+  | "lobby"
+  | "joined"
+  | "active"
+  | "submitted"
+  | "completed"
+  | "exited"
+  | "kicked"
 
 export interface GuidedSessionParticipant {
   id: string
@@ -54,6 +171,10 @@ export interface GuidedSessionParticipant {
   progress_pct: number
   violation_count: number
   score: number | null
+  // ── Multi-station fields ──
+  current_station_index?: number
+  hints_used?: number
+  station_progress?: Record<number, StationProgress>
 }
 
 /** Participant with profile info joined from the profiles table */
@@ -78,6 +199,13 @@ export type SessionEventType =
   | "message_received"
   | "progress_update"
   | "idle"
+  // ── Multi-station events ──
+  | "station_started"
+  | "station_completed"
+  | "reflection_saved"
+  | "hint_requested"
+  | "hint_received"
+  | "station_advanced"
 
 export interface GuidedSessionEvent {
   id: string
@@ -102,16 +230,59 @@ export interface GuidedPresence {
 
 // ── Teacher Control Actions ─────────────────────────────────────────────────
 
-export type ControlAction = "pause" | "resume" | "extend" | "kick" | "message"
+export type ControlAction =
+  | "pause"
+  | "resume"
+  | "extend"
+  | "kick"
+  | "message"
+  // ── Multi-station actions ──
+  | "advance_station"
+  | "advance_student"
+  | "release"
 
 export interface ControlRequest {
   action: ControlAction
   /** Extra minutes for "extend" action */
   minutes?: number
-  /** Target student_id for "kick" action */
+  /** Target student_id for "kick", "advance_student", or "release" actions */
   student_id?: string
   /** Message text for "message" action */
   message?: string
+  /** Message type for "message" action */
+  message_type?: MessageType
+  /** Recipient student_id for targeted messages (null = broadcast) */
+  recipient_id?: string | null
+}
+
+// ── Wizard Step Types ─────────────────────────────────────────────────────
+
+export type WizardStep = "basics" | "stations" | "roster" | "settings" | "review"
+
+export const WIZARD_STEPS: { key: WizardStep; label: string }[] = [
+  { key: "basics", label: "Basics" },
+  { key: "stations", label: "Stations" },
+  { key: "roster", label: "Roster" },
+  { key: "settings", label: "Settings" },
+  { key: "review", label: "Review" },
+]
+
+/** Draft station used in the creation wizard before saving to DB. */
+export interface DraftStation {
+  id: string               // client-side UUID for drag-and-drop keying
+  type: StationType
+  title: string
+  book_id: string | null
+  book_title?: string      // display only
+  chapter_start: number | null
+  chapter_end: number | null
+  section_range: { startSection: string; endSection: string } | null
+  quiz_id: string | null
+  quiz_config: QuizConfig | null
+  reflection_prompt: string | null
+  min_words: number | null
+  target_minutes: number
+  require_completion: boolean
 }
 
 // ── Timer Phases ────────────────────────────────────────────────────────────

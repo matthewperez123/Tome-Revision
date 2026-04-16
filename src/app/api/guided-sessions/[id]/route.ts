@@ -58,8 +58,18 @@ export async function GET(
     .eq("session_id", id)
     .order("joined_at", { ascending: true })
 
+  // Fetch stations (multi-station sessions)
+  const { data: stations } = await supabase
+    .from("guided_session_stations")
+    .select("*")
+    .eq("session_id", id)
+    .order("station_index", { ascending: true })
+
   return NextResponse.json({
-    session,
+    session: {
+      ...session,
+      stations: stations ?? [],
+    },
     participants: isTeacher ? participants : participants?.filter((p) => p.student_id === user.id),
   })
 }

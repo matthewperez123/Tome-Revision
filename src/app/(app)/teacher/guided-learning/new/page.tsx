@@ -1,7 +1,7 @@
 "use client"
 
-import { CreateSessionForm } from "@/components/guided-learning/create-session-form"
+import { CreateSessionWizard } from "@/components/guided-learning/wizard/create-session-wizard"
 
 export default function NewGuidedSessionPage() {
-  return <CreateSessionForm />
+  return <CreateSessionWizard />
 }

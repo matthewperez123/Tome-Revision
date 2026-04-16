@@ -1,8 +1,15 @@
 "use client"
 
-import { AlertTriangle, UserX, MessageSquare } from "lucide-react"
+import { AlertTriangle, UserX, MessageSquare, BookOpen, Brain, PenTool, Feather, SkipForward } from "lucide-react"
 import { cn } from "@/lib/utils"
-import type { ParticipantWithProfile, GuidedPresence, FocusState } from "@/lib/guided-learning-types"
+import type { ParticipantWithProfile, GuidedPresence, FocusState, Station, StationType } from "@/lib/guided-learning-types"
+import { STATION_TYPE_LABELS } from "@/lib/guided-station-utils"
+
+const STATION_ICONS: Record<StationType, typeof BookOpen> = {
+  reading: BookOpen,
+  quiz: Brain,
+  reflection: PenTool,
+}
 
 const FOCUS_COLORS: Record<FocusState, { bg: string; dot: string; label: string }> = {
   focused: {
@@ -25,8 +32,11 @@ const FOCUS_COLORS: Record<FocusState, { bg: string; dot: string; label: string 
 interface StudentMonitorCardProps {
   participant: ParticipantWithProfile
   presence?: GuidedPresence
+  /** Ordered stations for this session (used to show station indicator) */
+  stations?: Station[]
   onKick?: (studentId: string) => void
   onMessage?: (studentId: string) => void
+  onAdvance?: (studentId: string) => void
 }
 
 /**
@@ -36,16 +46,24 @@ interface StudentMonitorCardProps {
 export function StudentMonitorCard({
   participant,
   presence,
+  stations,
   onKick,
   onMessage,
+  onAdvance,
 }: StudentMonitorCardProps) {
   const focusState: FocusState = presence?.focusState ?? "focused"
   const focus = FOCUS_COLORS[focusState]
   const name = participant.profiles?.display_name ?? "Student"
   const progress = presence?.progressPct ?? participant.progress_pct
 
-  const isSubmitted = participant.status === "submitted"
+  const isSubmitted = participant.status === "submitted" || participant.status === "completed"
   const isKicked = participant.status === "kicked"
+
+  // Station info
+  const currentStationIndex = participant.current_station_index ?? 0
+  const currentStation = stations?.find((s) => s.station_index === currentStationIndex)
+  const StationIcon = currentStation ? STATION_ICONS[currentStation.type] : null
+  const hintsUsed = participant.hints_used ?? 0
 
   return (
     <div
@@ -104,6 +122,24 @@ export function StudentMonitorCard({
         </div>
       </div>
 
+      {/* Station indicator */}
+      {currentStation && StationIcon && stations && stations.length > 1 && (
+        <div className="mb-2 flex items-center gap-1.5 text-xs opacity-50">
+          <StationIcon className="h-3 w-3" />
+          <span>
+            {STATION_TYPE_LABELS[currentStation.type]} — Station {currentStationIndex + 1}/{stations.length}
+          </span>
+        </div>
+      )}
+
+      {/* Hints used */}
+      {hintsUsed > 0 && (
+        <div className="mb-2 flex items-center gap-1 text-xs opacity-50">
+          <Feather className="h-3 w-3" style={{ color: "var(--gold-default, #B8924A)" }} />
+          Hints: {hintsUsed}
+        </div>
+      )}
+
       {/* Violations */}
       {participant.violation_count > 0 && (
         <div
@@ -125,6 +161,15 @@ export function StudentMonitorCard({
           >
             <MessageSquare className="h-3.5 w-3.5" />
           </button>
+          {onAdvance && stations && stations.length > 1 && (
+            <button
+              onClick={() => onAdvance(participant.student_id)}
+              className="rounded-md p-1.5 text-xs opacity-40 transition-opacity hover:opacity-80"
+              title="Advance to next station"
+            >
+              <SkipForward className="h-3.5 w-3.5" />
+            </button>
+          )}
           <button
             onClick={() => onKick?.(participant.student_id)}
             className="rounded-md p-1.5 text-xs opacity-40 transition-opacity hover:opacity-80"

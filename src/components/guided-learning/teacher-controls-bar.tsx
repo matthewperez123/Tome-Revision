@@ -1,20 +1,31 @@
 "use client"
 
 import { useState } from "react"
-import { Pause, Play, Plus, StopCircle, Send } from "lucide-react"
+import { Pause, Play, Plus, StopCircle, Send, SkipForward, BookOpen, Brain, PenTool } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { TimerRing } from "./timer-ring"
-import type { GuidedSession } from "@/lib/guided-learning-types"
+import type { GuidedSession, Station, StationType } from "@/lib/guided-learning-types"
+import { STATION_TYPE_LABELS } from "@/lib/guided-station-utils"
+
+const STATION_ICONS: Record<StationType, typeof BookOpen> = {
+  reading: BookOpen,
+  quiz: Brain,
+  reflection: PenTool,
+}
 
 interface TeacherControlsBarProps {
   session: GuidedSession
+  /** Ordered stations for multi-station sessions */
+  stations?: Station[]
   onPause: () => void
   onResume: () => void
   onExtend: (minutes: number) => void
   onEnd: () => void
   onSendMessage: (message: string) => void
   onExpire?: () => void
+  /** Advance all students to next station */
+  onAdvanceAll?: () => void
 }
 
 /**
@@ -23,12 +34,14 @@ interface TeacherControlsBarProps {
  */
 export function TeacherControlsBar({
   session,
+  stations,
   onPause,
   onResume,
   onExtend,
   onEnd,
   onSendMessage,
   onExpire,
+  onAdvanceAll,
 }: TeacherControlsBarProps) {
   const [message, setMessage] = useState("")
   const [showEndConfirm, setShowEndConfirm] = useState(false)
@@ -93,6 +106,33 @@ export function TeacherControlsBar({
             <Plus className="h-3 w-3" />10m
           </Button>
         </div>
+
+        {/* Station indicator + advance */}
+        {stations && stations.length > 1 && (() => {
+          const currentIdx = session.current_station_index ?? 0
+          const currentStation = stations.find((s) => s.station_index === currentIdx)
+          const Icon = currentStation ? STATION_ICONS[currentStation.type] : null
+          const hasNext = currentIdx < stations.length - 1
+          return (
+            <div className="flex items-center gap-2">
+              {Icon && <Icon className="h-3.5 w-3.5 opacity-50" />}
+              <span className="text-xs opacity-50">
+                Station {currentIdx + 1}/{stations.length}
+              </span>
+              {hasNext && onAdvanceAll && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={onAdvanceAll}
+                  className="gap-1"
+                >
+                  <SkipForward className="h-3 w-3" />
+                  Next Station
+                </Button>
+              )}
+            </div>
+          )
+        })()}
 
         {/* Message broadcast */}
         <div className="flex min-w-[180px] flex-1 gap-2">

@@ -6,7 +6,9 @@ import { SessionLobby } from "./session-lobby"
 import { StudentMonitorCard } from "./student-monitor-card"
 import { TeacherControlsBar } from "./teacher-controls-bar"
 import { SessionSummaryView } from "./session-summary"
+import { MessagingPanel } from "./messaging-panel"
 import { Loader2 } from "lucide-react"
+import Link from "next/link"
 import {
   getDemoSession,
   updateDemoSessionStatus,
@@ -16,7 +18,7 @@ import {
   simulateDemoProgress,
   type DemoSession,
 } from "@/lib/guided-learning-demo"
-import type { GuidedPresence, FocusState } from "@/lib/guided-learning-types"
+import type { GuidedPresence, FocusState, SessionMessage, MessageType, Station } from "@/lib/guided-learning-types"
 
 interface SessionMonitorDashboardProps {
   sessionId: string
@@ -33,6 +35,9 @@ export function SessionMonitorDashboard({ sessionId }: SessionMonitorDashboardPr
   const [isLoading, setIsLoading] = useState(true)
   const [isStarting, setIsStarting] = useState(false)
   const [presences, setPresences] = useState<Map<string, GuidedPresence>>(new Map())
+  const [messages, setMessages] = useState<SessionMessage[]>([])
+  const [stations, setStations] = useState<Station[]>([])
+  const [selectedStudentIds, setSelectedStudentIds] = useState<Set<string>>(new Set())
   const simulateRef = useRef<ReturnType<typeof setInterval>>(undefined)
 
   // Load session
@@ -58,6 +63,37 @@ export function SessionMonitorDashboard({ sessionId }: SessionMonitorDashboardPr
         })
         .finally(() => setIsLoading(false))
     }
+  }, [sessionId, isDemoMode, user])
+
+  // Load messages and stations for real sessions
+  useEffect(() => {
+    if (isDemoMode || !user) return
+    async function loadExtra() {
+      const [msgRes, stRes] = await Promise.all([
+        fetch(`/api/guided-sessions/${sessionId}/messages`),
+        fetch(`/api/guided-sessions/${sessionId}`),
+      ])
+      if (msgRes.ok) {
+        const data = await msgRes.json()
+        setMessages(data.messages ?? [])
+      }
+      if (stRes.ok) {
+        const data = await stRes.json()
+        setStations(data.session?.stations ?? data.session?.guided_session_stations ?? [])
+      }
+    }
+    loadExtra()
+    // Poll messages every 5 seconds
+    const interval = setInterval(async () => {
+      try {
+        const res = await fetch(`/api/guided-sessions/${sessionId}/messages`)
+        if (res.ok) {
+          const data = await res.json()
+          setMessages(data.messages ?? [])
+        }
+      } catch { /* ignore */ }
+    }, 5000)
+    return () => clearInterval(interval)
   }, [sessionId, isDemoMode, user])
 
   // Simulate progress in demo mode when session is active
@@ -148,8 +184,65 @@ export function SessionMonitorDashboard({ sessionId }: SessionMonitorDashboardPr
   }, [sessionId])
 
   const handleSendMessage = useCallback((_message: string) => {
-    // In demo mode, just a no-op visual feedback could go here
-  }, [])
+    // Legacy: broadcast message via control endpoint
+    if (!isDemoMode && user) {
+      fetch(`/api/guided-sessions/${sessionId}/control`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "message", message: _message }),
+      })
+    }
+  }, [isDemoMode, user, sessionId])
+
+  const handleSendTypedMessage = useCallback(async (params: {
+    message_type: MessageType
+    content: string
+    recipient_id: string | null
+  }) => {
+    if (isDemoMode) {
+      // Add to local messages for demo
+      const msg: SessionMessage = {
+        id: crypto.randomUUID(),
+        session_id: sessionId,
+        sender_id: "teacher",
+        recipient_id: params.recipient_id,
+        message_type: params.message_type,
+        content: params.content,
+        station_index: null,
+        created_at: new Date().toISOString(),
+      }
+      setMessages((prev) => [...prev, msg])
+      return
+    }
+
+    await fetch(`/api/guided-sessions/${sessionId}/messages`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        message_type: params.message_type,
+        content: params.content,
+        recipient_id: params.recipient_id,
+      }),
+    })
+  }, [isDemoMode, sessionId])
+
+  const handleAdvanceAll = useCallback(async () => {
+    if (isDemoMode) return
+    await fetch(`/api/guided-sessions/${sessionId}/control`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action: "advance_station" }),
+    })
+  }, [isDemoMode, sessionId])
+
+  const handleAdvanceStudent = useCallback(async (studentId: string) => {
+    if (isDemoMode) return
+    await fetch(`/api/guided-sessions/${sessionId}/control`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action: "advance_student", student_id: studentId }),
+    })
+  }, [isDemoMode, sessionId])
 
   // ── Render ──────────────────────────────────────────────────────────────
 
@@ -186,48 +279,86 @@ export function SessionMonitorDashboard({ sessionId }: SessionMonitorDashboardPr
     )
   }
 
-  // Ended state
-  if (session.status === "ended") {
-    return <SessionSummaryView session={session} participants={participants} />
+  // Ended / Completed state
+  if (session.status === "ended" || session.status === "completed") {
+    return (
+      <div>
+        <SessionSummaryView session={session} participants={participants} />
+        <div className="flex justify-center pb-8">
+          <Link
+            href={`/teacher/guided-learning/${sessionId}/review`}
+            className="rounded-lg px-4 py-2 text-sm font-medium text-white"
+            style={{ backgroundColor: "var(--tome-indigo, #6366F1)" }}
+          >
+            View Detailed Review
+          </Link>
+        </div>
+      </div>
+    )
   }
 
   // Active / Paused state
+  const hasStations = stations.length > 0
+
   return (
     <div className="px-4 pt-4">
       {/* Header */}
       <div className="mb-4">
         <h1 className="text-xl font-bold">
-          {demoState.bookTitle ?? "Guided Session"}
+          {(session as any).title || demoState.bookTitle || "Guided Session"}
         </h1>
         <p className="text-sm opacity-60">
           {participants.length} students &middot; {session.mode} mode
+          {hasStations && ` · ${stations.length} stations`}
         </p>
       </div>
 
-      {/* Controls bar — inline at top of section */}
+      {/* Controls bar */}
       <div className="mb-4">
         <TeacherControlsBar
           session={session}
+          stations={hasStations ? stations : undefined}
           onPause={handlePause}
           onResume={handleResume}
           onExtend={handleExtend}
           onEnd={handleEnd}
           onSendMessage={handleSendMessage}
           onExpire={handleEnd}
+          onAdvanceAll={hasStations ? handleAdvanceAll : undefined}
         />
       </div>
 
-      {/* Student grid */}
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-        {participants.map((p) => (
-          <StudentMonitorCard
-            key={p.id}
-            participant={p}
-            presence={presences.get(p.student_id)}
-            onKick={handleKick}
-            onMessage={() => handleSendMessage(`Message for ${p.profiles?.display_name}`)}
-          />
-        ))}
+      {/* Main layout: student grid + messaging panel */}
+      <div className="flex gap-4">
+        {/* Student grid */}
+        <div className="flex-1">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+            {participants.map((p) => (
+              <StudentMonitorCard
+                key={p.id}
+                participant={p}
+                presence={presences.get(p.student_id)}
+                stations={hasStations ? stations : undefined}
+                onKick={handleKick}
+                onMessage={(studentId) => setSelectedStudentIds(new Set([studentId]))}
+                onAdvance={hasStations ? handleAdvanceStudent : undefined}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Messaging panel */}
+        <div className="hidden w-80 shrink-0 lg:block">
+          <div className="sticky top-4 h-[calc(100vh-8rem)] rounded-xl border" style={{ borderColor: "rgba(128,128,128,0.12)" }}>
+            <MessagingPanel
+              sessionId={sessionId}
+              participants={participants}
+              messages={messages}
+              selectedStudentIds={selectedStudentIds.size > 0 ? selectedStudentIds : undefined}
+              onSend={handleSendTypedMessage}
+            />
+          </div>
+        </div>
       </div>
     </div>
   )
