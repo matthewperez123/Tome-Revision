@@ -20,6 +20,7 @@ import {
   ClipboardCheck,
   Feather,
   History,
+  Compass,
   type LucideIcon,
 } from "lucide-react"
 
@@ -53,6 +54,7 @@ export const sidebarNav: NavItem[] = [
   { label: "Parents", href: "/teacher/parents", icon: UserCircle, roles: ["teacher"], section: "teaching" },
   { label: "Quiz Builder", href: "/classroom/quiz-builder", icon: Feather, roles: ["teacher"], section: "teaching" },
   { label: "Grading", href: "/classroom/grading", icon: ClipboardCheck, roles: ["teacher"], section: "teaching" },
+  { label: "Guided Sessions", href: "/teacher/guided-learning", icon: Compass, roles: ["teacher"], section: "teaching" },
 
   // Student classroom access (only if they have joined classrooms)
   { label: "My Classes", href: "/classroom", icon: GraduationCap, roles: ["reader"] },
@@ -61,7 +63,7 @@ export const sidebarNav: NavItem[] = [
   // Discovery & social — all roles
   { label: "Explore", href: "/explore", icon: Globe2 },
   { label: "Timelines", href: "/timelines", icon: History },
-  { label: "Achievements", href: "/achievements", icon: Trophy },
+  { label: "Seals", href: "/seals", icon: Trophy },
   { label: "Friends", href: "/friends", icon: HeartHandshake },
   { label: "Community", href: "/social", icon: MessageCircle },
   { label: "Shop", href: "/shop", icon: ShoppingBag },

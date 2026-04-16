@@ -18,6 +18,9 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar"
 import { ProfileSwitcher } from "@/components/tome/profile-switcher"
+import { AnimatedIconWrapper } from "@/components/sidebar/animations/AnimatedIconWrapper"
+import { studentIconRegistry } from "@/components/sidebar/animations/student/registry"
+import { teacherIconRegistry } from "@/components/sidebar/animations/teacher/registry"
 
 export function AppSidebar() {
   const pathname = usePathname()
@@ -97,7 +100,7 @@ function SidebarNav({ pathname }: { pathname: string }) {
 
   return (
     <SidebarMenu ref={listRef}>
-      {navItems.map((item) => {
+      {navItems.map((item, index) => {
         // Exact match for the home route
         // For other routes, match activeHref exactly to prevent
         // multiple items highlighting (e.g. /classroom and /classroom/quiz-builder)
@@ -106,6 +109,9 @@ function SidebarNav({ pathname }: { pathname: string }) {
             ? pathname === "/"
             : activeHref === item.href
 
+        const registry = role === "reader" ? studentIconRegistry : role === "teacher" ? teacherIconRegistry : undefined
+        const AnimatedIcon = registry?.[item.label]
+
         return (
           <SidebarMenuItem key={`${item.label}-${item.href}`}>
             <SidebarMenuButton
@@ -113,7 +119,19 @@ function SidebarNav({ pathname }: { pathname: string }) {
               tooltip={item.label}
               render={<Link href={item.href} onClick={() => { setOpen(false); setOpenMobile(false) }} />}
             >
-              <item.icon className="size-4" />
+              {AnimatedIcon ? (
+                <AnimatedIconWrapper isActive={isActive} index={index}>
+                  {(hovered) => (
+                    <AnimatedIcon
+                      isHovered={hovered}
+                      isActive={isActive}
+                      className="size-4"
+                    />
+                  )}
+                </AnimatedIconWrapper>
+              ) : (
+                <item.icon className="size-4" aria-hidden="true" />
+              )}
               <span>{item.label}</span>
             </SidebarMenuButton>
           </SidebarMenuItem>
