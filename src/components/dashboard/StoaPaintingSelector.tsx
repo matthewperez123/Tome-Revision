@@ -10,6 +10,8 @@ import {
   type Painting,
   type PaintingCategory,
 } from "@/lib/paintings"
+import { getStoaEntry } from "@/lib/stoa"
+import { BOOKS } from "@/data/books"
 import { cn } from "@/lib/utils"
 import { Input } from "@/components/ui/input"
 
@@ -253,6 +255,34 @@ export function StoaPaintingSelector({ selectedId, onSelect }: StoaPaintingSelec
               })}
             </div>
           </div>
+
+          {/* Focused painting info panel */}
+          {focusIndex >= 0 && focusIndex < filtered.length && (() => {
+            const fp = filtered[focusIndex]
+            const stoaInfo = getStoaEntry(fp.id)
+            const book = stoaInfo ? BOOKS.find(b => b.id === stoaInfo.unlockingBookId) : undefined
+            return (
+              <div className="px-3 pb-2">
+                <div className={cn(
+                  "rounded-lg px-2.5 py-2",
+                  "bg-stone-50 dark:bg-white/5",
+                  "border border-stone-200/50 dark:border-white/5"
+                )}>
+                  <p className="text-[11px] font-serif text-stone-700 dark:text-[#F5F0E8] leading-tight truncate">
+                    {fp.title}
+                  </p>
+                  <p className="text-[9px] text-stone-500 dark:text-[#B0A898] font-serif italic mt-0.5">
+                    {fp.artist}, {fp.year}
+                  </p>
+                  {book && (
+                    <p className="text-[9px] text-[#D4A04C] mt-1 truncate">
+                      Unlocks: {book.title} — {book.author}
+                    </p>
+                  )}
+                </div>
+              </div>
+            )
+          })()}
 
           {/* Scrollable grid */}
           <div
