@@ -22,6 +22,7 @@ import { GENERATED_BEOWULF_ANNOTATIONS } from "./beowulf-annotations"
 import { GENERATED_IDYLLS_OF_THE_KING_ANNOTATIONS } from "./idylls-of-the-king-annotations"
 import { GENERATED_CANTERBURY_TALES_ANNOTATIONS } from "./canterbury-tales-annotations"
 import { DECAMERON_ANNOTATIONS } from "./decameron-annotations"
+import { DECAMERON_ANNOTATIONS_BATCH_2 } from "./decameron-annotations-batch-2"
 import { GENERATED_LE_MORTE_DARTHUR_ANNOTATIONS } from "./le-morte-darthur-annotations"
 
 const CORE_ANNOTATIONS: Annotation[] = [
@@ -466,6 +467,7 @@ const ALL_ANNOTATIONS: Annotation[] = [
   ...GENERATED_IDYLLS_OF_THE_KING_ANNOTATIONS,
   ...GENERATED_CANTERBURY_TALES_ANNOTATIONS,
   ...DECAMERON_ANNOTATIONS,
+  ...DECAMERON_ANNOTATIONS_BATCH_2,
   ...GENERATED_LE_MORTE_DARTHUR_ANNOTATIONS,
 ]
 
