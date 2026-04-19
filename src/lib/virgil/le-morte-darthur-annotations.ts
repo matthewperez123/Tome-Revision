@@ -44,14 +44,14 @@ export const GENERATED_LE_MORTE_DARTHUR_ANNOTATIONS: Annotation[] = [
   // BOOK I, Chapter 5 — the birth of Arthur (flat 6)
   // ═══════════════════════════════════════════════
   {
-    id: "malory-1-5-arthur-born",
+    id: "malory-1-3-arthur-born",
     bookId: "le-morte-darthur",
-    chapterNumber: 6,
-    anchorText: "he was christened and named Arthur",
+    chapterNumber: 4,
+    anchorText: "delivered unto Merlin",
     anchorOccurrence: 1,
     title: "The Secret at the Foot of the Legend",
-    quotedPassage: "And when the child was born he was delivered unto Merlin, and so he bare it forth unto Sir Ector, and made an holy man to christen him, and named him Arthur; and so Sir Ector's wife nourished him with her own pap.",
-    passageReference: "Book I, Ch. 5",
+    quotedPassage: "So the child was delivered unto Merlin, and so he bare it forth unto Sir Ector, and made an holy man to christen him, and named him Arthur; and so Sir Ector's wife nourished him with her own pap.",
+    passageReference: "Book I, Ch. 3",
     commentary: `Malory gives you Arthur's birth in one sentence. A child, a wizard's hand, a foster-home. Nothing else. It is a remarkable sleight: the single most famous birth in English legend, passed over as a delivery of goods.
 
 Notice what the sentence is NOT doing. There is no prophecy spoken over the cradle. Arthur does not know he is the king's son. Ector does not know. The child's own mother (Igraine) does not know. Four people in this passage, and three of them are wrong about who this baby is. Only Merlin knows, and Merlin keeps the secret for the next fourteen years until the sword in the stone.
@@ -267,7 +267,7 @@ For the reader: the Storylines sidebar now shows "The Launcelot-Guenever Crisis"
     id: "malory-18-20-astolat-barge",
     bookId: "le-morte-darthur",
     chapterNumber: 452,
-    anchorText: "Elaine",
+    anchorText: "Most noble knight",
     anchorOccurrence: 1,
     title: "The Barge at Camelot",
     quotedPassage: "Then King Arthur made the letter to be read, the which was this intent: Most noble knight, Sir Launcelot, now hath death made us two at debate for your love; I was your lover, that men called the fair maiden of Astolat; therefore unto all ladies I make my moan, yet pray for my soul and bury me at the least, and offer ye my mass-penny.",
@@ -302,7 +302,7 @@ A small scholarly note: the Fair Maiden has a name in Malory — *Elaine* — bu
   {
     id: "malory-20-1-rupture",
     bookId: "le-morte-darthur",
-    chapterNumber: 481,
+    chapterNumber: 471,
     anchorText: "Sir Agravaine",
     anchorOccurrence: 1,
     title: "The Door That Cannot Be Unopened",
@@ -357,14 +357,14 @@ Notice Bedivere's two refusals. He tries twice to keep the sword. "What saw thou
   // BOOK XXI, Chapter 12 — Sir Ector's eulogy (flat 504)
   // ═══════════════════════════════════════════════
   {
-    id: "malory-21-12-ector-eulogy",
+    id: "malory-21-13-ector-eulogy",
     bookId: "le-morte-darthur",
-    chapterNumber: 504,
-    anchorText: "thou wert the meekest man",
+    chapterNumber: 505,
+    anchorText: "meekest man",
     anchorOccurrence: 1,
     title: "The Best Paragraph in English Prose",
-    quotedPassage: "Ah Launcelot, he said, thou were head of all Christian knights, and now I dare say, thou Sir Launcelot, there thou liest, that thou were never matched of earthly knight's hand. And thou were the courteoust knight that ever bare shield. And thou were the truest friend to thy lover that ever bestrad horse. And thou were the truest lover of a sinful man that ever loved woman. And thou were the kindest man that ever struck with sword. And thou were the goodliest person that ever came among press of knights. And thou were the meekest man and the gentlest that ever ate in hall among ladies. And thou were the sternest knight to thy mortal foe that ever put spear in the rest.",
-    passageReference: "Book XXI, Ch. 12",
+    quotedPassage: "Ah Launcelot, he said, thou were head of all Christian knights, and now I dare say, thou Sir Launcelot, there thou liest, that thou were never matched of earthly knight's hand. And thou were the courteoust knight that ever bare shield. And thou were the truest friend to thy lover that ever bestrad horse. And thou were the truest lover of a sinful man that ever loved woman. And thou were the kindest man that ever struck with sword. And thou were the goodliest person that ever came among press of knights. And thou was the meekest man and the gentlest that ever ate in hall among ladies. And thou were the sternest knight to thy mortal foe that ever put spear in the rest.",
+    passageReference: "Book XXI, Ch. 13",
     commentary: `This is Sir Ector de Maris, Launcelot's brother, speaking over Launcelot's corpse in a hermitage on the Severn.
 
 Read the rhythm. Eight clauses, each beginning *and thou were*. Each one names an attribute; each one complicates the last. "The truest friend to thy lover that ever bestrad horse" — a friend to *your lover*, to the woman you loved: the eulogy names the adultery that destroyed the kingdom and does not blink. "The truest lover of a sinful man that ever loved woman" — *sinful man*; Ector is Launcelot's brother, not his confessor, but he is not hiding anything. "The meekest man … and the sternest knight" — the compound virtues running in opposite directions. "The kindest man that ever struck with sword" — a whole ethics in eight words.
@@ -393,14 +393,14 @@ It is also, crucially, not about Launcelot. Ector is the survivor. Ector is spea
   // BOOK XXI, Chapter 13 — the closing; rex quondam rexque futurus (flat 505)
   // ═══════════════════════════════════════════════
   {
-    id: "malory-21-13-rex-quondam",
+    id: "malory-21-7-rex-quondam",
     bookId: "le-morte-darthur",
-    chapterNumber: 505,
-    anchorText: "Rex quondam Rexque futurus",
+    chapterNumber: 499,
+    anchorText: "Rex quondam, Rexque futurus",
     anchorOccurrence: 1,
     title: "The King Who Was and Will Be",
     quotedPassage: "Yet some men say in many parts of England that King Arthur is not dead, but had by the will of our Lord Jesu into another place; and men say that he shall come again, and he shall win the holy cross. I will not say it shall be so, but rather I will say, here in this world he changed his life. But many men say that there is written upon his tomb this verse: Hic jacet Arthurus, Rex quondam, Rexque futurus.",
-    passageReference: "Book XXI, Ch. 13",
+    passageReference: "Book XXI, Ch. 7",
     commentary: `The final epitaph. *Here lies Arthur, once king and king to be.*
 
 Malory is doing something careful. He does not commit to the supernatural option. He reports what people say — "some men say in many parts of England" — and what people saw carved on the tomb at Glastonbury. He weighs the report against his own preferred ending — "here in this world he changed his life," which in Malory's idiom means *he died* — and then, having weighed it, he gives the Latin tag in full and lets it stand.

@@ -49,10 +49,14 @@ function countWords(html: string): number {
 function stripSeBoilerplate(html: string): string {
   // Remove epub:-specific attributes and the dangling noteref anchors that
   // point into SE's endnotes.xhtml (we don't carry that file over).
+  // Tag the chapter header with `data-scholarly-header` so the reader
+  // page's stripLeadingHeading() preserves it rather than deleting it
+  // (the argumentum is a scholarly feature, not a duplicate chapter title).
   return html
     .replace(/\s*epub:type="[^"]*"/g, "")
     .replace(/\s*xml:lang="[^"]*"/g, "")
     .replace(/\s*xmlns:[a-z]+="[^"]*"/g, "")
+    .replace(/<header(\s|>)/g, "<header data-scholarly-header$1")
     .replace(/<a\b[^>]*id="noteref-[^"]*"[^>]*>\s*(\d+)\s*<\/a>/g, "") // drop the trailing superscript
     .replace(/<a\b[^>]*href="endnotes\.xhtml[^"]*"[^>]*>\s*[\d–—-]+\s*<\/a>/g, "");
 }
