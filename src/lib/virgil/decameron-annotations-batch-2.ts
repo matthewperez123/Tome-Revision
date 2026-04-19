@@ -27,7 +27,7 @@ export const DECAMERON_ANNOTATIONS_BATCH_2: Annotation[] = [
     crossReferences: [], tags: ["historical", "literary-influence"] },
 
   { id: "decameron-i-5-montferrat", bookId: "the-decameron", chapterNumber: 7,
-    anchorText: "Marchioness", anchorOccurrence: 1,
+    anchorText: "Marquis", anchorOccurrence: 1,
     title: "The Dinner of Hens",
     quotedPassage: "Marchioness",
     passageReference: "Day I, Tale 5 — Fiammetta's tale",
@@ -213,7 +213,7 @@ Dioneo tells it as the tenth tale of Day III, exploiting his theme-exemption pri
 
   // Day IV — remaining (load-bearing IV.1/IV.5 already covered)
   { id: "decameron-iv-2-frate-alberto", bookId: "the-decameron", chapterNumber: 40,
-    anchorText: "Frate Alberto", anchorOccurrence: 1,
+    anchorText: "Alberto", anchorOccurrence: 1,
     title: "The Angel Gabriel in Venice",
     quotedPassage: "Frate Alberto",
     passageReference: "Day IV, Tale 2 — Pampinea's tale",
@@ -242,7 +242,7 @@ Dioneo tells it as the tenth tale of Day III, exploiting his theme-exemption pri
     crossReferences: [], tags: ["philosophical", "literary-influence"] },
 
   { id: "decameron-iv-6-andreuola", bookId: "the-decameron", chapterNumber: 44,
-    anchorText: "Andreuola", anchorOccurrence: 1,
+    anchorText: "Gabriotto", anchorOccurrence: 1,
     title: "The Dream of Death",
     quotedPassage: "Andreuola",
     passageReference: "Day IV, Tale 6 — Pamfilo's tale",
@@ -266,7 +266,7 @@ Dioneo tells it as the tenth tale of Day III, exploiting his theme-exemption pri
     crossReferences: [], tags: ["philosophical", "literary-influence"] },
 
   { id: "decameron-iv-9-rossiglione", bookId: "the-decameron", chapterNumber: 47,
-    anchorText: "Rossiglione", anchorOccurrence: 1,
+    anchorText: "Roussillon", anchorOccurrence: 1,
     title: "The Eaten Heart",
     quotedPassage: "Rossiglione",
     passageReference: "Day IV, Tale 9 — Filostrato's tale",
@@ -283,7 +283,7 @@ Dioneo tells it as the tenth tale of Day III, exploiting his theme-exemption pri
 
   // Day V — remaining (V.8 Nastagio and V.9 Federigo already covered)
   { id: "decameron-v-1-cimone", bookId: "the-decameron", chapterNumber: 51,
-    anchorText: "Cimone", anchorOccurrence: 1,
+    anchorText: "Iphigenia", anchorOccurrence: 1,
     title: "Love Civilizes",
     quotedPassage: "Cimone",
     passageReference: "Day V, Tale 1 — Pamfilo's tale",
@@ -291,7 +291,7 @@ Dioneo tells it as the tenth tale of Day III, exploiting his theme-exemption pri
     crossReferences: [], tags: ["literary-influence", "philosophical"] },
 
   { id: "decameron-v-2-gostanza", bookId: "the-decameron", chapterNumber: 52,
-    anchorText: "Gostanza", anchorOccurrence: 1,
+    anchorText: "Costanza", anchorOccurrence: 1,
     title: "Adrift to Africa",
     quotedPassage: "Gostanza",
     passageReference: "Day V, Tale 2 — Emilia's tale",
@@ -388,7 +388,7 @@ Dioneo tells it as the tenth tale of Day III, exploiting his theme-exemption pri
     crossReferences: [], tags: ["literary-influence", "historical"] },
 
   { id: "decameron-vi-6-baronci", bookId: "the-decameron", chapterNumber: 68,
-    anchorText: "Baronci", anchorOccurrence: 1,
+    anchorText: "Scalza", anchorOccurrence: 1,
     title: "The Ugliest Family in Florence",
     quotedPassage: "Baronci",
     passageReference: "Day VI, Tale 6 — Fiammetta's tale",
@@ -404,7 +404,7 @@ Dioneo tells it as the tenth tale of Day III, exploiting his theme-exemption pri
     crossReferences: [], tags: ["literary-influence", "historical"] },
 
   { id: "decameron-vi-8-cesca", bookId: "the-decameron", chapterNumber: 70,
-    anchorText: "Cesca", anchorOccurrence: 1,
+    anchorText: "Ciesca", anchorOccurrence: 1,
     title: "The Mirror",
     quotedPassage: "Cesca",
     passageReference: "Day VI, Tale 8 — Emilia's tale",
@@ -482,7 +482,7 @@ Dioneo tells it as the tenth tale of Day III, exploiting his theme-exemption pri
     crossReferences: [], tags: ["historical", "literary-influence"] },
 
   { id: "decameron-vii-9-lidia-pear-tree", bookId: "the-decameron", chapterNumber: 83,
-    anchorText: "Lidia", anchorOccurrence: 1,
+    anchorText: "Lydia", anchorOccurrence: 1,
     title: "The Pear-Tree",
     quotedPassage: "Lidia",
     passageReference: "Day VII, Tale 9 — Pamfilo's tale",
@@ -601,7 +601,7 @@ Dioneo tells it as the tenth tale of Day III, exploiting his theme-exemption pri
     crossReferences: [], tags: ["literary-influence"] },
 
   { id: "decameron-ix-4-angiulieri", bookId: "the-decameron", chapterNumber: 102,
-    anchorText: "Angiulieri", anchorOccurrence: 1,
+    anchorText: "Fortarrigo", anchorOccurrence: 1,
     title: "Cecco and Cecco",
     quotedPassage: "Angiulieri",
     passageReference: "Day IX, Tale 4 — Neifile's tale",
@@ -726,7 +726,7 @@ Dioneo tells it as the tenth tale of Day III, exploiting his theme-exemption pri
     crossReferences: [], tags: ["philosophical"] },
 
   { id: "decameron-x-7-king-pietro", bookId: "the-decameron", chapterNumber: 117,
-    anchorText: "Pietro", anchorOccurrence: 1,
+    anchorText: "Pedro", anchorOccurrence: 1,
     title: "The King Who Visited Lisa",
     quotedPassage: "Pietro",
     passageReference: "Day X, Tale 7 — Pampinea's tale",

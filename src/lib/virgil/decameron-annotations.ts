@@ -597,10 +597,10 @@ Read the Day IV Introduction and the Author's Conclusion together. They are book
     id: "decameron-ii-9-cymbeline-source",
     bookId: "the-decameron",
     chapterNumber: 23,
-    anchorText: "Bernabò",
+    anchorText: "Bernabo",
     anchorOccurrence: 1,
     title: "The Source of Cymbeline",
-    quotedPassage: "Bernabò of Genoa",
+    quotedPassage: "Bernabo of Genoa",
     passageReference: "Day II, Tale 9 — Filomena's tale",
     commentary: `Bernabò of Genoa boasts to fellow merchants about his wife's chastity. The villain Ambrogiuolo bets against him, smuggles himself into the bedroom in a chest, observes private marks on the sleeping wife's body, and uses them to convince Bernabò she has been unfaithful. Bernabò orders her killed; she survives, disguises herself as a man, and eventually unmasks the deceiver.
 
@@ -626,10 +626,10 @@ Boccaccio's version is set in the world of Italian merchants: the wager takes pl
     id: "decameron-iii-9-alls-well-source",
     bookId: "the-decameron",
     chapterNumber: 35,
-    anchorText: "Giletta",
+    anchorText: "Gillette",
     anchorOccurrence: 1,
     title: "The Source of All's Well That Ends Well",
-    quotedPassage: "Giletta of Narbonne",
+    quotedPassage: "Gillette of Narbonne",
     passageReference: "Day III, Tale 9 — Neifile's tale",
     commentary: `Giletta, a physician's daughter, cures the King of France of a fistula and is granted, as the reward she chooses, marriage to the nobleman she loves — Beltramo of Roussillon. Beltramo refuses the marriage in his heart, sets impossible conditions on any real reconciliation ("when you bear a son by me and show my ring on your finger"), and flees to Italy. Giletta, disguised, arranges a bed-trick — taking the place of a young woman Beltramo is pursuing — and meets his conditions.
 
