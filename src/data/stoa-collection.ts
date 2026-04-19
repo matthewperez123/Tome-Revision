@@ -407,6 +407,24 @@ export const STOA_COLLECTION: StoaEntry[] = [
     curationNote: "Depicts Macbeth encountering the witches on the blasted heath",
   },
   {
+    // ── Canterbury Tales cover (Phase 1 placeholder) ──────────────────
+    // The default cover for Chaucer is the Kelmscott Press *Canterbury
+    // Tales* frontispiece (Edward Burne-Jones / William Morris, 1896) —
+    // cleanly PD worldwide, one of the most recognizable images in the
+    // history of English book arts. The alternative cover is the
+    // Ellesmere MS Wife of Bath illumination (Huntington Library EL 26
+    // C 9, c. 1405) — the underlying manuscript is PD but Huntington's
+    // digital reproduction requires licensing verification.
+    //
+    // PHASE 1 PLACEHOLDER: the Turner below is the previous Tier-4
+    // thematic pairing ("travellers-and-storytelling") that predated
+    // this ingestion. It is intentionally kept in place so the reader
+    // has a functioning cover; the Phase 2 Kelmscott swap requires
+    // sourcing the image from (e.g.) Internet Archive scans of the
+    // Kelmscott Chaucer and adding a manifest.json entry with
+    // id: "kelmscott-canterbury-tales-frontispiece", painter: "Edward
+    // Burne-Jones", year: 1896, institution: "Kelmscott Press /
+    // Internet Archive", and curationTier: 1.
     id: "ulysses-deriding-polyphemus",
     unlockingBookId: "the-canterbury-tales",
     title: "Ulysses Deriding Polyphemus",
@@ -417,7 +435,11 @@ export const STOA_COLLECTION: StoaEntry[] = [
     imageUrl: "/paintings/ulysses-deriding-polyphemus.jpg",
     publicDomainStatus: "PD-Old",
     curationTier: 4,
-    curationNote: "Travelers and storytelling — both Odysseus and Chaucer's pilgrims are frame tales of journeys and cunning",
+    curationNote:
+      "Phase 1 placeholder — atmospheric pairing via the travellers-and-storytelling theme. " +
+      "The Phase 2 default is the Kelmscott Press *Canterbury Tales* frontispiece " +
+      "(Edward Burne-Jones / William Morris, 1896, PD worldwide), which would be Tier 1 " +
+      "as a literal illustration of the work it unlocks.",
   },
   {
     id: "oath-of-the-horatii",
@@ -1019,7 +1041,7 @@ export const STOA_COLLECTION: StoaEntry[] = [
   },
   {
     id: "assumption-of-the-virgin",
-    unlockingBookId: "idylls-of-the-king",
+    unlockingBookId: "sir-gawain-and-the-green-knight",
     title: "The Assumption of the Virgin",
     painter: "Titian",
     year: 1518,
@@ -1028,7 +1050,7 @@ export const STOA_COLLECTION: StoaEntry[] = [
     imageUrl: "/paintings/assumption-of-the-virgin.jpg",
     publicDomainStatus: "PD-Art",
     curationTier: 4,
-    curationNote: "Titian's heavenward ascension evokes the apotheosis that Tennyson grants Arthur — a mortal king raised to legend.",
+    curationNote: "Titian's heavenward ascension pairs with Gawain's Marian devotion — Sir Gawain wears the Virgin's image on the inside of his shield (alongside the pentangle on the outside), and the poem's theology of grace rests on that image. The Assumption frames the Christian imagination the poem inhabits.",
   },
   {
     id: "diana-and-actaeon",
@@ -1643,16 +1665,16 @@ export const STOA_COLLECTION: StoaEntry[] = [
   },
   {
     id: "beguiling-of-merlin",
-    unlockingBookId: "sir-gawain-and-the-green-knight",
+    unlockingBookId: "idylls-of-the-king",
     title: "The Beguiling of Merlin",
     painter: "Edward Burne-Jones",
-    year: 1877,
-    sourceInstitution: "Lady Lever Art Gallery",
+    year: 1874,
+    sourceInstitution: "Lady Lever Art Gallery, Port Sunlight (Wirral, UK)",
     sourceUrl: "https://www.liverpoolmuseums.org.uk/artifact/beguiling-of-merlin",
     imageUrl: "/paintings/beguiling-of-merlin.jpg",
     publicDomainStatus: "PD-Art",
-    curationTier: 2,
-    curationNote: "Burne-Jones's Arthurian enchantment is drawn from the same medieval world as the Green Knight's magical test of honor.",
+    curationTier: 3,
+    curationNote: "Burne-Jones's 1874 canvas depicts the central scene of 'Merlin and Vivien' — Vivien leaning over the dreaming Merlin with the book of charms that will seal him in the hawthorn forever. The Pre-Raphaelite register is contemporary with Tennyson's composition period (the idyll was first published 1859; Burne-Jones began this canvas in the same decade), aesthetically sympathetic to Tennyson's medievalism, and visually definitive for the moment of the kingdom's moral unmaking. Bronze-gold, deep forest green, shadowed silver — the palette names the cycle's downward turn, the moment when the sage is silenced and the Round Table loses its sight. Placed against Doré for Ariosto and against Byron's Albanian portrait for Don Juan, the Pre-Raphaelite visual register anchors the Victorian terminus of the English epic tradition.",
   },
   {
     id: "flaming-june",
@@ -2865,5 +2887,70 @@ export const STOA_COLLECTION: StoaEntry[] = [
     publicDomainStatus: "CC0",
     curationTier: 4,
     curationNote: "El Greco's visionary apocalypse — bodies contorting under cosmic forces beyond comprehension. Lovecraft's Antarctic explorers confront the same ancient, inhuman sublime.",
+  },
+  {
+    id: "morning-of-agincourt-gilbert",
+    unlockingBookId: "henry-v",
+    title: "The Morning of the Battle of Agincourt, 25th October 1415",
+    painter: "Sir John Gilbert",
+    year: 1884,
+    sourceInstitution: "Guildhall Art Gallery, City of London",
+    sourceUrl: "https://artuk.org/discover/artworks/the-morning-of-the-battle-of-agincourt-25th-october-1415-51323",
+    imageUrl: "/paintings/morning-of-agincourt-gilbert.jpg",
+    publicDomainStatus: "PD-Old",
+    curationTier: 1,
+    curationNote: "Gilbert paints the dawn before Agincourt — Henry's wet, exhausted army in the mud on St. Crispin's morning. Tonally the opposite of triumphalist kitsch: weather, weariness, scale of what is about to happen. The painting refuses to decide whether the coming battle is glory or catastrophe, which is exactly the register the play sustains.",
+  },
+  {
+    id: "armada-portrait",
+    unlockingBookId: "the-faerie-queene",
+    title: "Elizabeth I (The Armada Portrait)",
+    painter: "formerly attributed to George Gower; workshop",
+    year: "1588",
+    sourceInstitution: "Three contemporary versions — Woburn Abbey; National Museum of the Royal Navy (Greenwich); National Portrait Gallery (London)",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Elizabeth_I_(Armada_Portrait).jpg",
+    imageUrl: "/paintings/armada-portrait.jpg",
+    publicDomainStatus: "PD-Old",
+    curationTier: 1,
+    curationNote: "Painted to celebrate the defeat of the Spanish Armada in August 1588, the portrait shows Elizabeth I in jewel-heavy imperial pomp — crimson gown, ocean-dark background with the Spanish fleet wrecking on storms, her hand resting on a globe at the Americas. Spenser's Gloriana is this queen under allegorical veil; The Faerie Queene (1590/1596) was composed in the decade following this portrait's creation, and Spenser's palace-poetry of the sovereign is this portrait's literary counterpart. Honest framing: the poem is inextricable from the queen it addresses, and the cover-image acknowledges that directly rather than depicting a scene from the allegorical narrative.",
+  },
+  {
+    id: "richard-iii-portrait-npg",
+    unlockingBookId: "richard-iii",
+    title: "Portrait of King Richard III",
+    painter: "Unknown, English School",
+    year: "c. 1520 (posthumous)",
+    sourceInstitution: "National Portrait Gallery, London (NPG 148)",
+    sourceUrl: "https://www.npg.org.uk/collections/search/portrait/mw05304/King-Richard-III",
+    imageUrl: "/paintings/richard-iii-portrait.jpg",
+    publicDomainStatus: "PD-Art",
+    curationTier: 1,
+    curationNote: "The earliest surviving portrait of Richard III, painted decades after Bosworth as a copy of a lost original — so it reaches us filtered through the same Tudor gaze Shakespeare inherits. Sidelong glance, thin lips, the telltale raised right shoulder: the portrait enacts the interpretive problem the play enacts. The face we see is the face the Tudors let survive, and the audience is asked to look back at it.",
+  },
+  {
+    id: "byron-in-albanian-dress",
+    unlockingBookId: "don-juan",
+    title: "Lord Byron in Albanian Dress",
+    painter: "Thomas Phillips",
+    year: 1813,
+    sourceInstitution: "National Portrait Gallery, London (NPG 142)",
+    sourceUrl: "https://www.npg.org.uk/collections/search/portrait/mw00977/George-Gordon-Byron-6th-Baron-Byron",
+    imageUrl: "/paintings/byron-in-albanian-dress.jpg",
+    publicDomainStatus: "PD-Art",
+    curationTier: 1,
+    curationNote: "Phillips's 1813 portrait, painted from life, showing Byron in the Albanian costume he bought in Epirus during his Mediterranean tour. For Don Juan the image is more than period decoration: the poem is about Byron-the-narrator more than about Juan-the-character — roughly half the stanzas are digression in the poet's own voice — and the Phillips is the face of that voice. The warm gold and deep crimson of the costume pair the book against the ember-dark classical and Christian epics rather than with them: the comic epic as deliberate visual outlier in the Great Epics shelf.",
+  },
+  {
+    id: "orlando-madness-dore",
+    unlockingBookId: "orlando-furioso",
+    title: "Orlando's Madness",
+    painter: "Gustave Doré",
+    year: 1877,
+    sourceInstitution: "Hachette (1877 Orlando Furioso illustrated edition)",
+    sourceUrl: "",
+    imageUrl: "/paintings/orlando-madness-dore.jpg",
+    publicDomainStatus: "PD-Old",
+    curationTier: 1,
+    curationNote: "Doré's plate for the 1877 Hachette Orlando Furioso captures the poem's titular and structuring moment — Orlando, having read Angelica's and Medoro's names carved into the forest trees (Canto XXIII), stripped of his armor, uprooting pines in his madness. The 1877 engravings are the canonical Western visual tradition for Ariosto, the same project that gave this catalog its Dante and Milton imagery. Forest green, wild gold, storm-white — Doré's palette is the one the book's cover borrows and the one the Great Epics grouping places Ariosto against: medieval allegory (Dante), Renaissance romance (here), Christian epic (Milton), comic counter-epic (Byron).",
   },
 ]

@@ -38,6 +38,12 @@ import {
 import type { TomeBook, StructuralUnitType } from "@/data/books"
 import { getUnitLabel, getUnitNumber, getShortProgress } from "@/lib/structural-units"
 import type { TomeChapter } from "@/data/chapters"
+import {
+  CanterburyTalesProgressMap,
+  CanterburyTalesPilgrimsGallery,
+  CanterburyTalesAtAGlance,
+} from "@/components/reader/canterbury-tales-enhancements"
+import { CANTERBURY_TALES_EDITORIAL_NOTES } from "@/data/canterbury-tales/editorial-notes"
 import type { Author } from "@/data/authors"
 import { cn } from "@/lib/utils"
 import { toggleFavorite as toggleShelfFavorite, isFavorite as isShelfFavorite } from "@/lib/shelves/store"
@@ -338,6 +344,98 @@ export default function BookDetailPage() {
             </section>
           </BlurFade>
 
+          {/* ── Tradition note ──
+              Optional scholarly callout for works that stand apart from
+              the catalog's main intertextual conversation (currently
+              Beowulf, as Germanic root of English epic, not read as
+              literature until Tolkien 1936). */}
+          {book.traditionNote && (
+            <BlurFade delay={0.11} inView>
+              <section className="rounded-xl border border-amber-700/30 bg-amber-50/40 dark:bg-amber-950/20 p-4">
+                <h2 className="text-xs font-semibold uppercase tracking-widest text-amber-900/80 dark:text-amber-200/80 mb-2">
+                  A book that stands apart
+                </h2>
+                <p className="text-sm leading-7 text-foreground/85 font-serif sm:text-base sm:leading-8">
+                  {book.traditionNote}
+                </p>
+              </section>
+            </BlurFade>
+          )}
+
+          {/* ── Pilgrim Progress Map (Canterbury Tales only) ── */}
+          {book.id === "the-canterbury-tales" && (
+            <BlurFade delay={0.11} inView>
+              <section>
+                <h2 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">
+                  The Pilgrimage at a Glance
+                </h2>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Twenty-five tales across ten Ellesmere fragments. Each column is a tale,
+                  colored by the teller&apos;s signature hue. Dashed columns (the Cook&apos;s
+                  and Squire&apos;s Tales) mark the two incompletes.
+                </p>
+                <CanterburyTalesProgressMap />
+              </section>
+            </BlurFade>
+          )}
+
+          {/* ── Tales at a Glance (Canterbury Tales only) ── */}
+          {book.id === "the-canterbury-tales" && (
+            <BlurFade delay={0.115} inView>
+              <section>
+                <h2 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">
+                  Tales, by Fragment
+                </h2>
+                <CanterburyTalesAtAGlance />
+              </section>
+            </BlurFade>
+          )}
+
+          {/* ── Pilgrims Gallery (Canterbury Tales only) ── */}
+          {book.id === "the-canterbury-tales" && (
+            <BlurFade delay={0.118} inView>
+              <section>
+                <h2 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">
+                  The Pilgrims
+                </h2>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Twenty-nine pilgrims ride to Canterbury, plus Harry Bailly the Host who
+                  orchestrates the tale-game from the Tabard Inn, and Chaucer himself —
+                  present as both poet and pilgrim, a naive observer whose praise is the
+                  poet&apos;s indictment.
+                </p>
+                <CanterburyTalesPilgrimsGallery />
+              </section>
+            </BlurFade>
+          )}
+
+          {/* ── Editorial Notes (Canterbury Tales only) ── */}
+          {book.id === "the-canterbury-tales" && (
+            <BlurFade delay={0.12} inView>
+              <section>
+                <h2 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">
+                  Editorial Notes
+                </h2>
+                <div className="space-y-4">
+                  {[...CANTERBURY_TALES_EDITORIAL_NOTES]
+                    .sort((a, b) => a.order - b.order)
+                    .map((note) => (
+                      <article
+                        key={note.id}
+                        className="rounded-xl border border-border bg-card p-4"
+                      >
+                        <h3 className="text-sm font-semibold mb-2">{note.title}</h3>
+                        <div className="text-sm text-muted-foreground space-y-2">
+                          {note.body.split("\n\n").map((para, i) => (
+                            <p key={i}>{para}</p>
+                          ))}
+                        </div>
+                      </article>
+                    ))}
+                </div>
+              </section>
+            </BlurFade>
+          )}
 
           {/* ── Themes ── */}
           {book.themes.length > 0 && (

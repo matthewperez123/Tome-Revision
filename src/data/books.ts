@@ -479,11 +479,11 @@ export const BOOKS: TomeBook[] = [
       "final -e that Chaucer's metre requires you to pronounce. Read aloud for the first " +
       "fifty lines; the ear adjusts. The gloss apparatus is the accessibility layer.",
     structuralUnitType: 'poem',
-    chapters: 25,
+    chapters: 26,
     // BookParts — 10 Ellesmere fragments (the canonical editorial order used by the
     // Riverside Chaucer and nearly every teaching edition). The General Prologue
-    // opens Fragment I; the Retractions currently bundle into Fragment X's
-    // Parson's Tale pending a follow-up extraction pass.
+    // opens Fragment I; Chaucer's Retractions (ch-25) are extracted from the end
+    // of the Parson's Tale and presented as their own chapter in Fragment X.
     // See src/data/canterbury-tales/fragments.ts for full structure.
     parts: [
       { id: "fragment-i",    title: "Fragment I",    subtitle: "General Prologue + Knight, Miller, Reeve, Cook",                     order: 1, unitCount: 5 },
@@ -495,7 +495,7 @@ export const BOOKS: TomeBook[] = [
       { id: "fragment-vii",  title: "Fragment VII",  subtitle: "Shipman, Prioress, Thopas, Melibee, Monk, Nun's Priest",              order: 7, unitCount: 6 },
       { id: "fragment-viii", title: "Fragment VIII", subtitle: "The Second Nun and the Canon's Yeoman",                              order: 8, unitCount: 2 },
       { id: "fragment-ix",   title: "Fragment IX",   subtitle: "The Manciple's Tale",                                                order: 9, unitCount: 1 },
-      { id: "fragment-x",    title: "Fragment X",    subtitle: "The Parson's Tale and Chaucer's Retractions",                        order: 10, unitCount: 1 },
+      { id: "fragment-x",    title: "Fragment X",    subtitle: "The Parson's Tale and Chaucer's Retractions",                        order: 10, unitCount: 2 },
     ],
     estimatedReadingTime: "~10 hours",
     wordCount: 156595,

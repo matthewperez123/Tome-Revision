@@ -816,6 +816,204 @@ const QUESTION_BANK: Record<string, Record<number, ChapterQuestion[]>> = {
           'Farinata explains that damned souls have a cone of prophetic vision extending into the future but a blind spot in the present. After the Last Judgment, when there is no more future to see, they will be in total ignorance. The heretics who denied the soul\'s eternity are condemned to an eternity of increasingly useless foresight — they can see everything except what is happening now.',
       },
     ],
+
+    // ── Inferno XXVI (flat 25) — Ulysses ──────────────────────────────
+    25: [
+      {
+        id: 'commedia-25-1',
+        type: 'multiple_choice',
+        difficulty: 'Foundational',
+        xpReward: 10,
+        text: 'In which circle of Hell does Dante find Ulysses?',
+        options: [
+          'The Second Circle, with the lustful',
+          'The Seventh Circle, with the violent',
+          'The Eighth Circle, eighth bolgia — the fraudulent counselors',
+          'The Ninth Circle, with the traitors',
+        ],
+        correctIndex: 2,
+        explanation:
+          'Ulysses burns in the eighth bolgia (ditch) of the Eighth Circle — Malebolge — where fraudulent counselors are each hidden inside a tongue-shaped flame, the tongue that deceived becoming the fire that consumes.',
+      },
+      {
+        id: 'commedia-25-2',
+        type: 'multiple_choice',
+        difficulty: 'Foundational',
+        xpReward: 10,
+        text: 'What, in Dante\'s version, ultimately happens to Ulysses after his time with Circe?',
+        options: [
+          'He returns to Ithaca and is reunited with Penelope',
+          'He sails past the Pillars of Hercules into the unknown Atlantic and is shipwrecked in sight of a mountain',
+          'He is killed in a sea battle off the coast of Troy',
+          'He wanders eternally but never dies',
+        ],
+        correctIndex: 1,
+        explanation:
+          'Dante invents a non-Homeric ending: Ulysses never returns home. He gathers his old crew for one last voyage past Hercules\' warning, sailing south until a whirlwind sinks him within sight of Mount Purgatory. The *folle volo* — the mad flight — is Dante\'s reading of what restless intelligence finally does.',
+      },
+      {
+        id: 'commedia-25-3',
+        type: 'multiple_choice',
+        difficulty: 'Foundational',
+        xpReward: 10,
+        text: 'Complete Ulysses\' famous exhortation to his crew: "You were not made to live like unto brutes, but for pursuit of ______."',
+        options: [
+          'glory and empire',
+          'virtue and knowledge',
+          'wisdom and the gods',
+          'peace and the stars',
+        ],
+        correctIndex: 1,
+        explanation:
+          'The Italian is *virtute e canoscenza* — virtue and knowledge. The speech is the most celebrated in the Inferno, and it is delivered by a damned soul persuading his elderly crew to their deaths. Dante makes us hear the beauty and the danger at once.',
+      },
+      {
+        id: 'commedia-25-4',
+        type: 'multiple_choice',
+        difficulty: 'Scholar',
+        xpReward: 25,
+        text: 'Dante had not read Homer directly. What did he know of Ulysses?',
+        options: [
+          'A Latin translation of the Odyssey made by Cicero',
+          'The Aeneid and medieval romance traditions',
+          'Greek fragments preserved in Byzantine manuscripts',
+          'Nothing — Ulysses in this canto is entirely Dante\'s invention',
+        ],
+        correctIndex: 1,
+        explanation:
+          'Greek was lost to the medieval Latin West until the Renaissance. Dante knew Odysseus through Virgil\'s Aeneid (where Odysseus is an enemy), Ovid\'s Metamorphoses, and the vernacular romance tradition. The Ulysses he invents in this canto is a deliberate refashioning — not a recovered Homer.',
+      },
+    ],
+
+    // ── Inferno XXXIII (flat 32) — Ugolino ───────────────────────────
+    32: [
+      {
+        id: 'commedia-32-1',
+        type: 'multiple_choice',
+        difficulty: 'Foundational',
+        xpReward: 10,
+        text: 'How did Count Ugolino and his sons die?',
+        options: [
+          'Killed in battle against the Pisan Ghibellines',
+          'Poisoned at a banquet by Archbishop Ruggieri',
+          'Locked in a tower and starved to death after the key was thrown into the Arno',
+          'Executed publicly in the city square',
+        ],
+        correctIndex: 2,
+        explanation:
+          'Ugolino della Gherardesca was imprisoned with his sons and grandsons in the Tower of Hunger (later the Torre della Fame) by Archbishop Ruggieri. The key was thrown into the Arno; they starved. Dante places him in Antenora, the zone of traitors to country.',
+      },
+      {
+        id: 'commedia-32-2',
+        type: 'multiple_choice',
+        difficulty: 'Foundational',
+        xpReward: 10,
+        text: 'In which zone of the Ninth Circle is Ugolino found?',
+        options: [
+          'Caina — traitors to kin',
+          'Antenora — traitors to country and faction',
+          'Ptolomaea — traitors to guests',
+          'Judecca — traitors to benefactors',
+        ],
+        correctIndex: 1,
+        explanation:
+          'Antenora is named for the Trojan Antenor, who in some medieval traditions betrayed Troy. Ugolino belongs here for his political betrayals within Pisan Ghibelline factionalism — not for killing, but for treason to his patria.',
+      },
+      {
+        id: 'commedia-32-3',
+        type: 'true_false',
+        difficulty: 'Foundational',
+        xpReward: 10,
+        text: 'In the Inferno, Ugolino gnaws on the skull of Archbishop Ruggieri, the man who imprisoned him.',
+        correctBool: true,
+        explanation:
+          'The canto opens with Ugolino lifting his mouth from the "horrid repast" — he is eating Ruggieri\'s head eternally, the traitor devouring his betrayer. The image frames the terrible narrative that follows.',
+      },
+      {
+        id: 'commedia-32-4',
+        type: 'multiple_choice',
+        difficulty: 'Scholar',
+        xpReward: 25,
+        text: 'Ugolino\'s closing line — "then hunger did what grief could not" — is famously ambiguous. What is the central interpretive question?',
+        options: [
+          'Whether Ugolino died before or after his sons',
+          'Whether Ugolino ate his sons\' bodies after they died',
+          'Whether his imprisonment was historically real',
+          'Whether Dante intended Ugolino to be sympathetic at all',
+        ],
+        correctIndex: 1,
+        explanation:
+          'The line can be read two ways: either starvation finally killed him, or — after days of calling to the corpses of his sons — hunger drove him to do what his grief had initially refused. Dante leaves it unresolved. Seven hundred years of readers have argued; the ambiguity is part of the design.',
+      },
+    ],
+
+    // ── Inferno XXXIV (flat 33) — Lucifer ────────────────────────────
+    33: [
+      {
+        id: 'commedia-33-1',
+        type: 'multiple_choice',
+        difficulty: 'Foundational',
+        xpReward: 10,
+        text: 'What three figures does Lucifer eternally chew in his three mouths?',
+        options: [
+          'Adam, Cain, and Abel',
+          'Judas, Brutus, and Cassius',
+          'Satan, Lucifer, and Beelzebub',
+          'Nero, Caligula, and Domitian',
+        ],
+        correctIndex: 1,
+        explanation:
+          'Judas (betrayer of Christ) is chewed head-first in the central mouth; Brutus and Cassius (assassins of Julius Caesar) in the other two. The choice pairs the betrayal of the founder of the Church with the betrayal of the founder of the Empire — the twin pillars of Dante\'s providential politics.',
+      },
+      {
+        id: 'commedia-33-2',
+        type: 'multiple_choice',
+        difficulty: 'Foundational',
+        xpReward: 10,
+        text: 'How do Virgil and Dante escape Hell at the canto\'s end?',
+        options: [
+          'They ride one of Lucifer\'s wings out through an opening in the ice',
+          'They climb down Lucifer\'s body, pass through the center of the earth, and climb back up the other side',
+          'A boat appears to carry them across Cocytus to a hidden shore',
+          'They pray and are lifted out by an angel sent from Beatrice',
+        ],
+        correctIndex: 1,
+        explanation:
+          'At the center of the earth gravity inverts. What was a descent becomes an ascent. In Dante\'s cosmic physics, evil is not a direction but a point you pass through; on the far side they are headed upward to the southern hemisphere and to Mount Purgatory.',
+      },
+      {
+        id: 'commedia-33-3',
+        type: 'multiple_choice',
+        difficulty: 'Foundational',
+        xpReward: 10,
+        text: 'What is the final word of the Inferno (and, in its Italian original, of every canticle)?',
+        options: [
+          '"Love" (amor)',
+          '"Stars" (stelle)',
+          '"God" (Dio)',
+          '"Home" (casa)',
+        ],
+        correctIndex: 1,
+        explanation:
+          'Inferno ends "to rebehold the stars." Purgatorio ends "ready to ascend unto the stars." Paradiso ends "the Love which moves the sun and the other stars." Stelle — the word is Dante\'s structural signature, marking each canticle\'s final ascent.',
+      },
+      {
+        id: 'commedia-33-4',
+        type: 'multiple_choice',
+        difficulty: 'Scholar',
+        xpReward: 25,
+        text: 'The canto opens with the Latin line "Vexilla Regis prodeunt Inferni." Why is this line significant?',
+        options: [
+          'It is a quotation from Virgil\'s Aeneid, marking Virgil\'s presence',
+          'It is a parody of a Good Friday hymn, with "inferni" ("of Hell") added to invert the liturgy',
+          'It is a line from Aquinas\'s Summa, citing the passage on damnation',
+          'It is a Dantean invention in Latin, without a known source',
+        ],
+        correctIndex: 1,
+        explanation:
+          'The hymn "Vexilla Regis prodeunt" ("The banners of the King advance") was sung on Good Friday in honor of Christ\'s cross. Dante appends "inferni" — "of Hell" — converting it into a parody announcement of Lucifer. The parody is not irreverent decoration; it is structural. Lucifer is the anti-Christ, a mirror fixed at the bottom of the universe.',
+      },
+    ],
   },
 
   hamlet: {
@@ -1566,6 +1764,240 @@ const QUESTION_BANK: Record<string, Record<number, ChapterQuestion[]>> = {
       },
     ],
   },
+
+  // ─────────────────────────────────────────────
+  // THE CANTERBURY TALES — starter trials (Phase 2b)
+  // One-to-two questions per load-bearing chapter; expand in later passes.
+  // ─────────────────────────────────────────────
+  'the-canterbury-tales': {
+    0: [
+      {
+        id: 'canterbury-0-1',
+        type: 'multiple_choice',
+        difficulty: 'Foundational',
+        xpReward: 10,
+        text: 'Where do the pilgrims gather before setting out on the road to Canterbury?',
+        options: [
+          'Westminster Abbey',
+          'The Tabard Inn in Southwark',
+          "St. Paul's Cathedral",
+          'The Canterbury shrine itself',
+        ],
+        correctIndex: 1,
+        explanation:
+          "The pilgrims gather at the Tabard Inn in Southwark, on the south bank of the Thames opposite the City of London — a real inn on the actual road to Canterbury. The Host, Harry Bailly, is its innkeeper; his proposal of the tale-telling game is what starts the work.",
+      },
+      {
+        id: 'canterbury-0-2',
+        type: 'multiple_choice',
+        difficulty: 'Scholar',
+        xpReward: 25,
+        text: 'What is the Prioress\'s brooch inscribed with, and what is its central ambiguity?',
+        options: [
+          '"Ave Maria" — ambiguous because she is half-educated in Latin',
+          '"Amor vincit omnia" ("Love conquers all") — ambiguous because it can mean sacred or romantic love',
+          '"Dulce et decorum est" — ambiguous because it is a pagan line on a Christian figure',
+          '"Pax vobiscum" — ambiguous because she violates the peace it wishes',
+        ],
+        correctIndex: 1,
+        explanation:
+          'The brooch carries "Amor vincit omnia," a line from Virgil\'s Eclogues X.69. The irony is whether the Prioress means sacred love (agape) or romantic love (the amor of the French courtly poetry her whole portrait has been gently mocking). The ambiguity is the portrait\'s climax.',
+      },
+      {
+        id: 'canterbury-0-3',
+        type: 'true_false',
+        difficulty: 'Foundational',
+        xpReward: 10,
+        text: 'Chaucer-the-poet and Chaucer-the-pilgrim are the same voice: the poet writing is always the pilgrim observing.',
+        correctBool: false,
+        explanation:
+          "One of the work's central artistic devices is the gap between Chaucer-the-pilgrim (the naive, easily impressed observer who praises the 'worthy' Friar and the 'noble' Monk without irony) and Chaucer-the-poet (the savage social satirist writing the portrait underneath). Learning to read that gap is learning to read Chaucer.",
+      },
+    ],
+    1: [
+      {
+        id: 'canterbury-1-1',
+        type: 'multiple_choice',
+        difficulty: 'Foundational',
+        xpReward: 10,
+        text: "Who is the direct source of the Knight's Tale?",
+        options: [
+          'Ovid\'s Metamorphoses',
+          'Virgil\'s Aeneid',
+          "Boccaccio's Teseida",
+          'Homer\'s Iliad',
+        ],
+        correctIndex: 2,
+        explanation:
+          "Chaucer adapts the Knight's Tale from Boccaccio's Teseida, a Tuscan epic on Theseus. The Palamon-Arcite-Emily triangle and the great tournament are Boccaccio's; Chaucer compresses the source heavily and adds the Boethian frame for Theseus's closing speech on the First Mover.",
+      },
+    ],
+    2: [
+      {
+        id: 'canterbury-2-1',
+        type: 'multiple_choice',
+        difficulty: 'Foundational',
+        xpReward: 10,
+        text: "Why does the Miller insist on telling his tale next, out of turn?",
+        options: [
+          'The Host has chosen him by lot',
+          'To "quite" (repay, top) the Knight\'s courtly romance with a fabliau counter',
+          'Because the Knight has asked him to',
+          'Because he is the next-ranking pilgrim socially',
+        ],
+        correctIndex: 1,
+        explanation:
+          "Drunken, the Miller insists on speaking next to 'quite' the Knight — the dramatic-link logic that makes the Ellesmere arrangement legible. The Miller's Tale is a fabliau counter to the Knight's courtly romance, and the Reeve (offended in turn by the Miller's portrait of a carpenter) will quite the Miller next.",
+      },
+    ],
+    6: [
+      {
+        id: 'canterbury-6-1',
+        type: 'multiple_choice',
+        difficulty: 'Scholar',
+        xpReward: 25,
+        text: 'What is the central argument of the Wife of Bath\'s Prologue?',
+        options: [
+          'That marriage is a sacrament beyond human questioning',
+          'That "experience" (her lived knowledge) outweighs "auctoritee" (the written tradition), and that wives should hold maistrie (sovereignty) in marriage',
+          'That clerical celibacy is the highest calling',
+          'That women should imitate Griselda\'s patient submission',
+        ],
+        correctIndex: 1,
+        explanation:
+          "The Wife's opening opposes experience to authority, and her Prologue mounts an extended argument that sovereignty — maistrie — in marriage should belong to the wife. Her tale then shows a loathly lady teaching the same lesson to an Arthurian knight. The Clerk's Tale of patient Griselda is the Marriage Group's answer; the Franklin's Tale offers the synthesis.",
+      },
+      {
+        id: 'canterbury-6-2',
+        type: 'true_false',
+        difficulty: 'Foundational',
+        xpReward: 10,
+        text: "The Wife of Bath's Prologue is longer than most of the tales in the Canterbury Tales.",
+        correctBool: true,
+        explanation:
+          "At nearly 900 lines, her Prologue is longer than most tales in the work — the architectural privilege that signals Chaucer's bet on her voice as the most distinctive in the pilgrimage.",
+      },
+    ],
+    9: [
+      {
+        id: 'canterbury-9-1',
+        type: 'multiple_choice',
+        difficulty: 'Scholar',
+        xpReward: 25,
+        text: "The Clerk's Tale of Griselda is Chaucer's direct adaptation of which source?",
+        options: [
+          "A folk-tale Chaucer collected from Italian travelers",
+          "Petrarch's Latin translation of Boccaccio's Decameron X.10",
+          "Dante's Paradiso",
+          "An anonymous Provençal lay",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Chaucer translates Petrarch's 1373 Latin *Historia Griseldis*, which is itself a translation of the closing tale of Boccaccio's Decameron (Day X, Tale 10, told by Dioneo). This is Tome's load-bearing Italian-to-English medieval cross-reference — Boccaccio → Petrarch → Chaucer.",
+      },
+      {
+        id: 'canterbury-9-2',
+        type: 'true_false',
+        difficulty: 'Sage',
+        xpReward: 50,
+        text: "The closing 'Lenvoy de Chaucer' at the end of the Clerk's Tale affirms that modern wives should imitate Griselda's patient obedience.",
+        correctBool: false,
+        explanation:
+          "The Envoy does the opposite. Chaucer-the-poet pivots: Griselda is dead and her patience with her; modern wives should answer sharply, dress expensively, and keep their husbands in jealousy. The Envoy ironically undercuts the exemplum the tale has just offered — one of the great Chaucerian tonal reversals, directly comparable to Dioneo's ambivalent closing of the same tale in the Decameron.",
+      },
+    ],
+    14: [
+      {
+        id: 'canterbury-14-1',
+        type: 'multiple_choice',
+        difficulty: 'Scholar',
+        xpReward: 25,
+        text: "The Pardoner's preaching text — repeated as the theme of his tale — is the Latin phrase 'Radix malorum est cupiditas.' What does it mean?",
+        options: [
+          'The fear of God is the beginning of wisdom',
+          'The root of evils is greed',
+          'Love conquers all',
+          'Death comes to all',
+        ],
+        correctIndex: 1,
+        explanation:
+          "1 Timothy 6:10: 'The root of evils is greed.' The Pardoner preaches it and sells indulgences against it; his tale of three rioters who set out to kill Death and find him in a hoard of gold is the preaching masterpiece. The irony that the Pardoner himself exemplifies the sin he preaches against is the opening admission of his self-exposing Prologue.",
+      },
+    ],
+    16: [
+      {
+        id: 'canterbury-16-1',
+        type: 'multiple_choice',
+        difficulty: 'Scholar',
+        xpReward: 25,
+        text: "The Prioress's Tale is what kind of story, and what is Tome's editorial posture toward it?",
+        options: [
+          "A saint's life; Tome removes it from the edition",
+          "An antisemitic blood-libel 'miracle of the Virgin'; Tome presents it as written and annotates the history honestly",
+          "A love-romance; Tome glosses its Middle English",
+          "A fable; Tome sets it alongside Aesop's parallel",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The tale participates in the medieval blood-libel tradition — stories (always false, often violent in their real-world consequences) accusing Jewish communities of ritual murder of Christian children. Tome's editorial posture is to present it as written and annotate the history honestly: the tale's antisemitic violence is structural, not incidental, and Chaucer's framing via the Prioress's portrait is part of the reading.",
+      },
+    ],
+    17: [
+      {
+        id: 'canterbury-17-1',
+        type: 'multiple_choice',
+        difficulty: 'Scholar',
+        xpReward: 25,
+        text: "Why does the Host interrupt *Sir Thopas*?",
+        options: [
+          "Because Chaucer-the-pilgrim has run out of time",
+          "Because the tail-rhyme doggerel is deliberately bad — a parody of chivalric romance — and the Host cannot bear any more",
+          "Because a thunderstorm breaks and the company must take shelter",
+          "Because another pilgrim has interrupted first",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The joke is formal and structural. Chaucer-the-poet is writing a parody of bad English tail-rhyme romances (Guy of Warwick, Bevis of Hampton), and Chaucer-the-pilgrim delivers it straight-faced. The Host's interruption — 'thy drasty rymyng is nat worth a toord' — is the payoff, and lets Chaucer pivot into the long prose *Melibee*. A metatextual set-piece.",
+      },
+    ],
+    20: [
+      {
+        id: 'canterbury-20-1',
+        type: 'multiple_choice',
+        difficulty: 'Foundational',
+        xpReward: 10,
+        text: "The Nun's Priest's Tale is a mock-epic about what?",
+        options: [
+          "A knight's quest for the Grail",
+          "A rooster, a hen, and a fox in a barnyard",
+          "The fall of Troy",
+          "The temptation of a hermit",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Chanticleer the rooster, his hen Pertelote, and the fox Russel — the whole weight of classical allusion, scholastic philosophy, and oneiromancy deployed on a barnyard. One of Chaucer's high achievements and the tonal counterweight to the preceding Monk's catalogue of tragedies.",
+      },
+    ],
+    24: [
+      {
+        id: 'canterbury-24-1',
+        type: 'multiple_choice',
+        difficulty: 'Sage',
+        xpReward: 50,
+        text: "What are Chaucer's Retractions, and what is their critical crux?",
+        options: [
+          "An apology to patrons; critics debate who the patrons were",
+          "The poet's own disowning of his bawdy tales at the end of the Parson's Tale; critics debate whether the retraction is sincere late piety, an ironic frame-closing gesture, or both",
+          "A colophon by the scribe; critics debate attribution",
+          "A missing fragment; critics debate whether it ever existed",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The work ends with Chaucer asking God's mercy for his 'translations and enditings of worldly vanities' and naming the Miller's, Reeve's, Merchant's, Summoner's, and Shipman's tales specifically. The three readings (sincere piety / ironic frame-close / both) have been debated for a century. Compare Boccaccio's *Author's Conclusion* to the Decameron — Boccaccio defends his bawdy tales; Chaucer retracts. The symmetry between the two framed collections is one of European literature's great parallel passages.",
+      },
+    ],
+  },
+
 }
 
 // ── Fallback Questions ─────────────────────────
@@ -1638,6 +2070,18 @@ export function getQuestionsForChapter(
     bankKey = 'pride'
   } else if (title.includes('crime')) {
     bankKey = 'crime'
+  } else if (title.includes('aeneid')) {
+    bankKey = 'aeneid'
+  } else if (title.includes('paradise lost') || title.includes('paradise-lost')) {
+    bankKey = 'paradise-lost'
+  } else if (title.includes('don juan') || title.includes('don-juan')) {
+    bankKey = 'don-juan'
+  } else if (title.includes('faerie queene') || title.includes('faerie-queene')) {
+    bankKey = 'faerie-queene'
+  } else if (title.includes('idylls')) {
+    bankKey = 'idylls-of-the-king'
+  } else if (title.includes('decameron')) {
+    bankKey = 'the-decameron'
   } else if (title.includes('moby')) {
     bankKey = null
   } else if (title.includes('quixote')) {
@@ -1653,6 +2097,108 @@ export function getQuestionsForChapter(
         const byDifficulty = allChapterQs.filter(q => q.difficulty === difficulty)
         return byDifficulty.length > 0 ? byDifficulty : allChapterQs.filter(q => q.difficulty === 'Foundational')
       }
+    }
+  }
+
+  // Odyssey extra-trials for Books V–XXIV + the Master Trial (chapter 25).
+  // Merged here to avoid bloating the QUESTION_BANK literal above.
+  if (bankKey === 'odyssey') {
+    // Lazy require to avoid circular imports
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { ODYSSEY_EXTRA_TRIALS } = require('./odyssey-extra-trials') as typeof import('./odyssey-extra-trials')
+    const extras = ODYSSEY_EXTRA_TRIALS[chapterIndex]
+    if (extras && extras.length > 0) {
+      const byDifficulty = extras.filter(q => q.difficulty === difficulty)
+      return byDifficulty.length > 0 ? byDifficulty : extras.filter(q => q.difficulty === 'Foundational')
+    }
+  }
+
+  // Aeneid trials — per-book (0..11), Master Trial (12), Classical Triad (13).
+  if (bankKey === 'aeneid') {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { AENEID_TRIALS } = require('./aeneid-trials') as typeof import('./aeneid-trials')
+    const aeneidExtras = AENEID_TRIALS[chapterIndex]
+    if (aeneidExtras && aeneidExtras.length > 0) {
+      const byDifficulty = aeneidExtras.filter(q => q.difficulty === difficulty)
+      return byDifficulty.length > 0 ? byDifficulty : aeneidExtras.filter(q => q.difficulty === 'Foundational')
+    }
+  }
+
+  // Paradise Lost trials — per-book (0..11), Master Trial (12),
+  // Christian Epic stretch (13), Epic Succession stretch (14).
+  if (bankKey === 'paradise-lost' || bankKey === 'paradiseLost') {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { PARADISE_LOST_TRIALS } = require('./paradise-lost-trials') as typeof import('./paradise-lost-trials')
+    const plExtras = PARADISE_LOST_TRIALS[chapterIndex]
+    if (plExtras && plExtras.length > 0) {
+      const byDifficulty = plExtras.filter(q => q.difficulty === difficulty)
+      return byDifficulty.length > 0 ? byDifficulty : plExtras.filter(q => q.difficulty === 'Foundational')
+    }
+  }
+
+  // Don Juan trials — per-canto (2..18, with 0/1 front matter), the
+  // "Pilgrim of Eternity" Master Trial (19), and the Epic Succession
+  // stretch (20). Byron's unfinished Canto XVII is honored as a fragment.
+  if (bankKey === 'don-juan') {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { DON_JUAN_TRIALS } = require('./don-juan-trials') as typeof import('./don-juan-trials')
+    const djExtras = DON_JUAN_TRIALS[chapterIndex]
+    if (djExtras && djExtras.length > 0) {
+      const byDifficulty = djExtras.filter(q => q.difficulty === difficulty)
+      return byDifficulty.length > 0 ? byDifficulty : djExtras.filter(q => q.difficulty === 'Foundational')
+    }
+  }
+
+  // Beowulf trials — per-fitt-cluster (2..44 with ~12 grouped trials),
+  // the "Hall-Friend" Master Trial (45), and scaffolded Germanic Root /
+  // Englisc stretch trials (46, 47).
+  if (bankKey === 'beowulf') {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { BEOWULF_TRIALS } = require('./beowulf-trials') as typeof import('./beowulf-trials')
+    const beoExtras = BEOWULF_TRIALS[chapterIndex]
+    if (beoExtras && beoExtras.length > 0) {
+      const byDifficulty = beoExtras.filter(q => q.difficulty === difficulty)
+      return byDifficulty.length > 0 ? byDifficulty : beoExtras.filter(q => q.difficulty === 'Foundational')
+    }
+  }
+
+  // Faerie Queene trials — per-book (13, 25, 37, 49, 61, 73), Mutabilitie (75),
+  // Master Trial (76 — "Gloriana's Knight" Seal), Renaissance Epic stretch
+  // (77 — "Romance Inheritance" Seal), and Full Epic Succession stretch (78).
+  if (bankKey === 'faerie-queene') {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { FAERIE_QUEENE_TRIALS } = require('./faerie-queene-trials') as typeof import('./faerie-queene-trials')
+    const fqExtras = FAERIE_QUEENE_TRIALS[chapterIndex]
+    if (fqExtras && fqExtras.length > 0) {
+      const byDifficulty = fqExtras.filter(q => q.difficulty === difficulty)
+      return byDifficulty.length > 0 ? byDifficulty : fqExtras.filter(q => q.difficulty === 'Foundational')
+    }
+  }
+
+  // Idylls of the King trials — Dedication (0), 12 idylls (1..12),
+  // "To the Queen" (13), mid-cycle Trials A & B (14, 15), Master
+  // Trial (16 — "Old Order Changeth" Seal), Anglophone Epic Line
+  // capstone (17 — "Englisc" Seal, extended).
+  if (bankKey === 'idylls-of-the-king') {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { IDYLLS_OF_THE_KING_TRIALS } = require('./idylls-of-the-king-trials') as typeof import('./idylls-of-the-king-trials')
+    const iotkExtras = IDYLLS_OF_THE_KING_TRIALS[chapterIndex]
+    if (iotkExtras && iotkExtras.length > 0) {
+      const byDifficulty = iotkExtras.filter(q => q.difficulty === difficulty)
+      return byDifficulty.length > 0 ? byDifficulty : iotkExtras.filter(q => q.difficulty === 'Foundational')
+    }
+  }
+
+  // Decameron trials — Day I Introduction (2, the plague), tale-close
+  // trials on the ten load-bearing tales, Author's Conclusion (121), and
+  // the "Member of the Brigata" Master Trial at chapter 123.
+  if (bankKey === 'the-decameron') {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { DECAMERON_TRIALS } = require('./decameron-trials') as typeof import('./decameron-trials')
+    const decExtras = DECAMERON_TRIALS[chapterIndex]
+    if (decExtras && decExtras.length > 0) {
+      const byDifficulty = decExtras.filter(q => q.difficulty === difficulty)
+      return byDifficulty.length > 0 ? byDifficulty : decExtras.filter(q => q.difficulty === 'Foundational')
     }
   }
 
