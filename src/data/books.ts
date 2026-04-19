@@ -2,7 +2,32 @@
 // Comprehensive catalog of classical literature for the Tome reading app.
 // 80+ works spanning ancient to contemporary, all public domain translations.
 
-export type StructuralUnitType = 'chapter' | 'canto' | 'poem' | 'short_story' | 'book' | 'essay' | 'letter';
+export type StructuralUnitType = 'chapter' | 'canto' | 'poem' | 'short_story' | 'book' | 'essay' | 'letter' | 'act_scene' | 'fitt';
+
+/**
+ * A named sub-division of a book — used for works whose internal structure
+ * groups a flat list of units (cantos, books, parts) under a second level.
+ * Example: Dante's Commedia has 3 parts (Inferno / Purgatorio / Paradiso),
+ * each containing a set of cantos. Progress still tracks against the flat
+ * chapter list; `parts` is purely presentational metadata.
+ */
+export interface BookPart {
+  id: string;                // "inferno" | "purgatorio" | "paradiso"
+  title: string;             // "Inferno"
+  subtitle?: string;         // "The First Canticle"
+  order: number;             // 1-based display order
+  unitCount: number;         // number of cantos/chapters in this part
+  coverColors?: {            // optional palette override per part
+    primary: string;
+    secondary: string;
+    accent: string;
+  };
+  /**
+   * Optional hero image for the canticle — shown above the first canto
+   * of each part. References an id in `public/paintings/manifest.json`.
+   */
+  coverPaintingId?: string;
+}
 
 export interface TomeBook {
   id: string;
@@ -19,6 +44,8 @@ export interface TomeBook {
   difficultyReason?: string;
   structuralUnitType?: StructuralUnitType;
   chapters: number;
+  /** Optional canticle/book/part grouping for multi-division works. */
+  parts?: BookPart[];
   estimatedReadingTime: string;
   wordCount: number;
   synopsis: string;
@@ -38,6 +65,22 @@ export interface TomeBook {
   standardEbooksUrl?: string;
   coverImagePath?: string;
   source?: "standard-ebooks" | "metadata-only";
+  /**
+   * Optional scholarly callout for works that stand apart from the
+   * catalog's main intertextual conversation. Surfaced on the book
+   * detail page as a framing note. Used for Beowulf (the Germanic root
+   * of English epic, not read as literature until Tolkien 1936) and
+   * similar standalone-tradition works.
+   */
+  traditionNote?: string;
+  /**
+   * Ingestion / scholarly-apparatus pipeline status. 'draft_complete'
+   * means the book has a full line-anchored text, at minimum the Opus
+   * annotation clusters, a glosses layer, and trials populated — ready
+   * for internal demo/spot-read but not yet promoted to the public
+   * catalog. Spec Part 9 verification gate sets this.
+   */
+  apparatusStatus?: "stub" | "ingested" | "draft_complete" | "published";
 }
 
 // @ts-expect-error — Array literal exceeds TypeScript union complexity limit at 1,200+ entries; runtime type is correct
@@ -108,7 +151,7 @@ export const BOOKS: TomeBook[] = [
     genres: ["Tragedy", "Drama", "Mythology"],
     difficulty: "Beginner",
     difficultyReason: "Short and relentlessly propulsive; the dramatic irony makes it one of the most gripping reads in all of literature.",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 3,
     estimatedReadingTime: "~2 hours",
     wordCount: 19000,
@@ -132,7 +175,7 @@ export const BOOKS: TomeBook[] = [
     genres: ["Tragedy", "Drama"],
     difficulty: "Beginner",
     difficultyReason: "Brief and focused on a single moral confrontation that feels urgently contemporary.",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 3,
     estimatedReadingTime: "~1.5 hours",
     wordCount: 16000,
@@ -279,13 +322,25 @@ export const BOOKS: TomeBook[] = [
     structuralUnitType: 'book',
     chapters: 12,
     estimatedReadingTime: "~7 hours",
-    wordCount: 63000,
+    wordCount: 106466,
     synopsis: "Aeneas flees the burning ruins of Troy carrying his aged father on his back, destined by the gods to found a new civilization in Italy. Virgil's epic, written to glorify Rome's origins under Augustus, is also a profound meditation on the price of empire — never more so than in the haunting figure of Dido, queen of Carthage, who loves Aeneas and is destroyed when duty calls him away.",
     themes: ["Duty and sacrifice", "Founding and destiny", "Loss", "Empire's cost", "Piety", "War and peace"],
     country: "Ancient Rome",
     coverColors: { primary: "#7F1D1D", secondary: "#991B1B", accent: "#F97316" },
     featured: false,
     standardEbooksUrl: "https://standardebooks.org/ebooks/virgil/the-aeneid/john-dryden",
+    // ── Ingestion status: draft_complete (Virgil Aeneid ingestion spec) ─
+    // 127 scholarly annotations + 5 authorial-apostrophe V. monograms
+    // across all 12 books (Dryden). 110+ glosses (Latin terms, Roman
+    // gods, parade of heroes, shield of Aeneas). Full scholarly
+    // apparatus: pius Aeneas / infelix Dido / saevae Iunonis iram
+    // epithet index, 22 extended similes, 5 apostrophe sites detected,
+    // book-trials for all 12 books + Aeneid Master Trial (Pius Aeneas
+    // seal) + Classical Triad Trial (Epic Succession seal) + Dante's
+    // Virgil seal scaffolded. Cover: Tiepolo's Venus Appearing to
+    // Aeneas on the Shores of Carthage (per Stoa 1:1 invariant).
+    // Cross-reference cluster Aeneid VI ↔ Odyssey XI ↔ Inferno I live.
+    // Awaiting spot-read before flipping featured / publishing.
   },
   {
     id: "metamorphoses",
@@ -354,7 +409,46 @@ export const BOOKS: TomeBook[] = [
     difficulty: "Intermediate",
     difficultyReason: "The theological framework requires footnotes but Dante's storytelling instincts are supreme — the characters are unforgettable.",
     structuralUnitType: 'canto',
-    chapters: 103,
+    chapters: 100,
+    // Three canticles of Dante's Commedia. Inferno has 34 cantos (I is the
+    // prologue + II–XXXIV proper); Purgatorio and Paradiso each have 33.
+    parts: [
+      {
+        id: "inferno",
+        title: "Inferno",
+        subtitle: "The First Canticle",
+        order: 1,
+        unitCount: 34,
+        coverColors: { primary: "#4A0E0E", secondary: "#7B1D1D", accent: "#D97706" },
+        // Bouguereau, 1850 — two damned souls in savage combat as Dante
+        // and Virgil watch. Dramatic, dark, fitting for Inferno's opening.
+        coverPaintingId: "dante-and-virgil-in-hell",
+      },
+      {
+        id: "purgatorio",
+        title: "Purgatorio",
+        subtitle: "The Second Canticle",
+        order: 2,
+        unitCount: 33,
+        coverColors: { primary: "#78350F", secondary: "#B45309", accent: "#84CC16" },
+        // Friedrich, 1811 — mountain dawn, which maps the Mount
+        // Purgatory landscape of Dante's cosmology.
+        coverPaintingId: "morning-in-riesengebirge",
+      },
+      {
+        id: "paradiso",
+        title: "Paradiso",
+        subtitle: "The Third Canticle",
+        order: 3,
+        unitCount: 33,
+        coverColors: { primary: "#1E3A8A", secondary: "#3B82F6", accent: "#FCD34D" },
+        // Doré, 1868 — Paradiso Canto XXXI engraving of the Empyrean /
+        // celestial rose; the canonical visual for Paradiso.
+        // (The manifest entry is misleadingly named "dante-inferno-dore";
+        // the source image is a Paradiso plate.)
+        coverPaintingId: "dante-inferno-dore",
+      },
+    ],
     estimatedReadingTime: "~9 hours",
     wordCount: 77000,
     synopsis: "On Good Friday in 1300, Dante finds himself lost in a dark wood. Guided first by Virgil through the nine circles of Hell and up the Mountain of Purgatory, then by Beatrice through the celestial spheres to the Empyrean, Dante journeys from despair to divine light. The Divine Comedy is the supreme poem of the Middle Ages — a universe-spanning vision of sin, redemption, and the love that moves the sun and the other stars.",
@@ -376,18 +470,90 @@ export const BOOKS: TomeBook[] = [
     tradition: "Medieval European",
     era: "Medieval",
     genres: ["Poetry", "Frame Narrative", "Satire"],
-    difficulty: "Intermediate",
-    difficultyReason: "Modern translations smooth over the Middle English, revealing Chaucer's bawdy wit and acute social observation.",
+    difficulty: "Scholar",
+    difficultyReason:
+      "The Standard Ebooks edition uses David Laing Purves's regularized Middle English — " +
+      "spelling partly normalized, but fundamentally Chaucer's fourteenth-century vocabulary " +
+      "and syntax preserved. Expect false friends (*nice* = foolish; *silly* = blessed; " +
+      "*corage* = heart), the Y-prefix past participle (y-clad, y-been), and the lost " +
+      "final -e that Chaucer's metre requires you to pronounce. Read aloud for the first " +
+      "fifty lines; the ear adjusts. The gloss apparatus is the accessibility layer.",
     structuralUnitType: 'poem',
     chapters: 25,
-    estimatedReadingTime: "~8 hours",
-    wordCount: 80000,
-    synopsis: "Thirty pilgrims ride toward Canterbury and pass the time by telling stories — bawdy fabliaux, chivalric romances, moral allegories, and sly satires of the Church. Chaucer's unfinished masterpiece is the first great work of English literature and the most vivid portrait of medieval society in existence, a procession of characters so alive you feel you've met them.",
-    themes: ["Social class and hierarchy", "The Church and hypocrisy", "Love and marriage", "Storytelling itself", "Pilgrimage", "Human folly"],
+    // BookParts — 10 Ellesmere fragments (the canonical editorial order used by the
+    // Riverside Chaucer and nearly every teaching edition). The General Prologue
+    // opens Fragment I; the Retractions currently bundle into Fragment X's
+    // Parson's Tale pending a follow-up extraction pass.
+    // See src/data/canterbury-tales/fragments.ts for full structure.
+    parts: [
+      { id: "fragment-i",    title: "Fragment I",    subtitle: "General Prologue + Knight, Miller, Reeve, Cook",                     order: 1, unitCount: 5 },
+      { id: "fragment-ii",   title: "Fragment II",   subtitle: "The Man of Law's Tale",                                               order: 2, unitCount: 1 },
+      { id: "fragment-iii",  title: "Fragment III",  subtitle: "The Marriage Group opens — Wife of Bath, Friar, Summoner",            order: 3, unitCount: 3 },
+      { id: "fragment-iv",   title: "Fragment IV",   subtitle: "The Marriage Group continues — Clerk, Merchant",                     order: 4, unitCount: 2 },
+      { id: "fragment-v",    title: "Fragment V",    subtitle: "The Marriage Group closes — Squire, Franklin",                       order: 5, unitCount: 2 },
+      { id: "fragment-vi",   title: "Fragment VI",   subtitle: "The Physician and the Pardoner",                                     order: 6, unitCount: 2 },
+      { id: "fragment-vii",  title: "Fragment VII",  subtitle: "Shipman, Prioress, Thopas, Melibee, Monk, Nun's Priest",              order: 7, unitCount: 6 },
+      { id: "fragment-viii", title: "Fragment VIII", subtitle: "The Second Nun and the Canon's Yeoman",                              order: 8, unitCount: 2 },
+      { id: "fragment-ix",   title: "Fragment IX",   subtitle: "The Manciple's Tale",                                                order: 9, unitCount: 1 },
+      { id: "fragment-x",    title: "Fragment X",    subtitle: "The Parson's Tale and Chaucer's Retractions",                        order: 10, unitCount: 1 },
+    ],
+    estimatedReadingTime: "~10 hours",
+    wordCount: 156595,
+    synopsis:
+      "On the road from the Tabard Inn in Southwark to the shrine of St. Thomas Becket at " +
+      "Canterbury, twenty-nine pilgrims — a knight returned from crusades, a drunken miller, " +
+      "a formidable clothmaker from Bath with five husbands behind her, a corrupt pardoner, " +
+      "a patient Oxford scholar, a conscientious country parson, the innkeeper Harry Bailly " +
+      "orchestrating all — tell stories along the way. The tales are bawdy fabliaux, high " +
+      "chivalric romance, saints' lives, beast-fables, sermons, parodies; the tellers quarrel " +
+      "with each other across the links. Chaucer's unfinished masterpiece is the foundational " +
+      "work of English literary vernacular — the English answer to Boccaccio's Decameron and " +
+      "Dante's Commedia — and the most vivid portrait of late-medieval society in existence.",
+    themes: ["Social class and hierarchy", "The Church and hypocrisy", "Love and marriage", "Storytelling itself", "Pilgrimage", "Middle English vernacular", "Social satire", "Frame narrative"],
     country: "England",
-    coverColors: { primary: "#78350F", secondary: "#92400E", accent: "#A78BFA" },
+    // Cover palette: warm pilgrimage-earth browns (the Kelmscott Chaucer 1896
+    // frontispiece register — Burne-Jones/Morris), with a violet accent
+    // reserved for the Pardoner's portrait and the Wife of Bath's rose. The
+    // Phase 1 cover image is scaffolded; see src/data/stoa-collection.ts
+    // for the painting assignment and follow-up sourcing note.
+    coverColors: { primary: "#6B3A1F", secondary: "#8A5A2B", accent: "#BE185D" },
     featured: false,
+    source: "standard-ebooks",
     standardEbooksUrl: "https://standardebooks.org/ebooks/geoffrey-chaucer/the-canterbury-tales",
+    // ── Ingestion status: Phase 1 foundation (2026-04-19) ────────────────
+    //   ✅ Pilgrim palette and roster (22 pilgrims + Host + Chaucer-pilgrim)
+    //      at src/data/canterbury-tales/pilgrims.ts
+    //   ✅ Ellesmere fragment structure (10 fragments, dramatic-link notes)
+    //      at src/data/canterbury-tales/fragments.ts
+    //   ✅ Per-tale metadata (verse form, argument, content flags)
+    //      at src/data/canterbury-tales/tales.ts
+    //   ✅ Starter Middle English glossary (~80 entries)
+    //      at src/lib/virgil/canterbury-tales-glosses.ts
+    //   ✅ Starter annotations (GP opening, Knight's verray-parfit line,
+    //      Prioress's brooch, Wife of Bath entry, Pardoner's sexual coding,
+    //      Clerk/Griselda cross-reference to Decameron X.10, Sir Thopas
+    //      parody, Retractions) at src/lib/virgil/canterbury-tales-annotations.ts
+    //   ✅ Reader enhancement + annotation overlay components wired
+    //      into src/app/(app)/read/[bookId]/page.tsx
+    //   ⏳ FacingGlossBlock two-column UI (Phase 2 — the Chaucer-specific
+    //      accessibility innovation; Phase 1 uses the legacy dotted-underline)
+    //   ⏳ Full annotation pass (target 220–320 annotations; Phase 1 has ~10
+    //      hand-authored anchors for demo-critical passages)
+    //   ⏳ Trials per tale + fragment-close + GP + capstone (Phase 2)
+    //   ⏳ Front matter: Editorial Introduction, Note on Middle English,
+    //      Pilgrims Gallery, Tales at a Glance, on the Prioress's Tale,
+    //      on the bawdy tales (Phase 2)
+    //   ⏳ Retractions as separate AuthorInterventionBlock (currently
+    //      bundled into ch-24 Parson's Tale; extraction pass pending)
+    //   ⏳ Per-line rhyme-scheme tagging (rime royal, tail-rhyme, Monk's
+    //      stanza); Phase 1 has static per-tale form indicator only
+    //   ⏳ Pilgrim Progress Map on book detail page (Phase 1 stub exported
+    //      as CanterburyTalesProgressMap from the enhancements component)
+    //   ⏳ Cross-reference bidirectional wiring to Decameron X.10 —
+    //      Canterbury-side annotation authored; Decameron-side anchor
+    //      requires a separate Decameron apparatus pass to accept.
+    //   ⏳ Painting cover — Kelmscott Press Canterbury Tales frontispiece
+    //      (Burne-Jones, 1896) is the default; image sourcing pending.
   },
   {
     id: "beowulf",
@@ -401,16 +567,19 @@ export const BOOKS: TomeBook[] = [
     era: "Medieval",
     genres: ["Epic Poetry", "Heroic Legend"],
     difficulty: "Intermediate",
-    difficultyReason: "Modern translations (especially Heaney's) make the Old English epic feel like thunder in the hands; the kennings and alliteration are part of the pleasure.",
-    structuralUnitType: 'book',
+    difficultyReason: "Hall's 1892 alliterative verse preserves the thunder of the Old English original; the kennings and four-stress cadence are part of the pleasure.",
+    structuralUnitType: 'fitt',
     chapters: 45,
-    estimatedReadingTime: "~4 hours",
-    wordCount: 40000,
+    estimatedReadingTime: "~3 hours",
+    wordCount: 26137,
     synopsis: "The great warrior Beowulf crosses the sea to help a king plagued by the monster Grendel — and over the course of a long life of heroic deeds, confronts the question of what a man owes his people when he is old and the dragon comes. The oldest major poem in English is also one of its most psychologically complex, a meditation on glory, loyalty, and the coming of the dark.",
     themes: ["Heroism and its limits", "Good vs. evil", "Loyalty", "Mortality", "Fame and legacy", "Monsters and the monstrous"],
     country: "England",
-    coverColors: { primary: "#78350F", secondary: "#92400E", accent: "#A78BFA" },
+    coverColors: { primary: "#3F3A33", secondary: "#6B4423", accent: "#B8864D" },
     featured: false,
+    standardEbooksUrl: "https://standardebooks.org/ebooks/anonymous/beowulf/john-lesslie-hall",
+    traditionNote: "Unlike the other books in this grouping, Beowulf stands apart from the continental Western literary conversation. The Beowulf-poet did not know Homer or Virgil; Dante and Milton did not know Beowulf. The poem belongs to a separate Germanic tradition — and it was not read as literature until J.R.R. Tolkien's 1936 lecture rescued it from philological study.",
+    apparatusStatus: "draft_complete",
   },
   {
     id: "the-decameron",
@@ -441,17 +610,18 @@ export const BOOKS: TomeBook[] = [
     author: "Thomas Malory",
     authorId: "thomas-malory",
     year: 1485,
-    language: "Middle English",
+    language: "Archaic English (Caxton)",
     readingLanguage: "English",
     tradition: "Medieval European",
     era: "Medieval",
     genres: ["Chivalric Romance", "Legend", "Epic Prose"],
     difficulty: "Intermediate",
-    difficultyReason: "The archaic prose has its own rhythm and grandeur; episodic structure allows readers to dip in.",
+    difficultyReason: "The archaic prose has its own rhythm and grandeur; episodic structure allows readers to dip in. Vocabulary glosses help with fifteenth-century terms.",
     structuralUnitType: 'chapter',
-    chapters: 528,
-    estimatedReadingTime: "~20 hours",
-    wordCount: 200000,
+    chapters: 507,
+    estimatedReadingTime: "~23 hours",
+    wordCount: 348166,
+    standardEbooksUrl: "https://standardebooks.org/ebooks/thomas-malory/le-morte-darthur",
     synopsis: "Written by a knight in prison, this is the definitive English telling of the Arthurian legend — from the sword in the stone to the Round Table's fellowship, from Lancelot's doomed love for Guinevere to the final battle at Camlann and Arthur's passage to Avalon. Malory transformed a mass of French romances into a unified tragedy about the impossibility of the ideal.",
     themes: ["Chivalry and its ideals", "Loyalty and betrayal", "Love and duty", "The fall of greatness", "Questing", "Brotherhood"],
     country: "England",
@@ -474,7 +644,7 @@ export const BOOKS: TomeBook[] = [
     genres: ["Tragedy", "Drama"],
     difficulty: "Intermediate",
     difficultyReason: "The language rewards close reading but the plot is gripping and the character of Hamlet is inexhaustible.",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 26,
     estimatedReadingTime: "~3 hours",
     wordCount: 32117,
@@ -500,7 +670,7 @@ export const BOOKS: TomeBook[] = [
     genres: ["Tragedy", "Drama"],
     difficulty: "Beginner",
     difficultyReason: "The shortest of Shakespeare's great tragedies, with an irresistible forward momentum from the first witches' prophecy to the final battle.",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 34,
     estimatedReadingTime: "~2 hours",
     wordCount: 19000,
@@ -524,7 +694,7 @@ export const BOOKS: TomeBook[] = [
     genres: ["Tragedy", "Drama"],
     difficulty: "Intermediate",
     difficultyReason: "The domestic scale and psychological realism make Othello feel almost uncomfortably modern.",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 21,
     estimatedReadingTime: "~2.5 hours",
     wordCount: 24000,
@@ -547,7 +717,7 @@ export const BOOKS: TomeBook[] = [
     genres: ["Romance", "Drama", "Fantasy"],
     difficulty: "Beginner",
     difficultyReason: "Compact, magical, and widely considered Shakespeare's farewell to the stage — rich in meaning but accessible in its fairy-tale surface.",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 16,
     estimatedReadingTime: "~1.5 hours",
     wordCount: 17000,
@@ -1200,7 +1370,7 @@ export const BOOKS: TomeBook[] = [
     genres: ["Drama", "Comedy", "Tragicomedy"],
     difficulty: "Beginner",
     difficultyReason: "Chekhov's dramatic genius is in omission and atmosphere; the play is short and rewards even a single reading with profound resonance.",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 5,
     estimatedReadingTime: "~1.5 hours",
     wordCount: 13000,
@@ -1547,7 +1717,7 @@ export const BOOKS: TomeBook[] = [
     genres: ["Comedy", "Drama", "Satire"],
     difficulty: "Beginner",
     difficultyReason: "Wilde's most purely comic play — every line is a perfect witticism, reading it is like eating the best chocolates in the world.",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 5,
     estimatedReadingTime: "~1.5 hours",
     wordCount: 18000,
@@ -1571,7 +1741,7 @@ export const BOOKS: TomeBook[] = [
     genres: ["Drama", "Realist Play"],
     difficulty: "Beginner",
     difficultyReason: "Short, structurally perfect, and still capable of producing gasps at its final scene — Ibsen's social drama is immediately gripping.",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 4,
     estimatedReadingTime: "~1.5 hours",
     wordCount: 17000,
@@ -3401,7 +3571,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Tragedy", "Drama", "Romance"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 31,
     estimatedReadingTime: "~2 hours",
     wordCount: 25958,
@@ -3422,7 +3592,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Tragedy", "Drama"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 32,
     estimatedReadingTime: "~2 hours",
     wordCount: 27915,
@@ -3443,7 +3613,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Comedy", "Drama", "Fantasy"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 15,
     estimatedReadingTime: "~1 hour",
     wordCount: 17311,
@@ -3464,7 +3634,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Tragedy", "Drama", "Historical"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 24,
     estimatedReadingTime: "~1 hour",
     wordCount: 21042,
@@ -3485,7 +3655,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Comedy", "Drama"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 26,
     estimatedReadingTime: "~2 hours",
     wordCount: 22330,
@@ -3506,7 +3676,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Comedy", "Drama"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 19,
     estimatedReadingTime: "~2 hours",
     wordCount: 22290,
@@ -3527,7 +3697,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Comedy", "Drama", "Romance"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 24,
     estimatedReadingTime: "~1 hour",
     wordCount: 21319,
@@ -3548,7 +3718,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Comedy", "Drama", "Pastoral"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 29,
     estimatedReadingTime: "~2 hours",
     wordCount: 23013,
@@ -3569,7 +3739,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Comedy", "Drama", "Romance"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 23,
     estimatedReadingTime: "~2 hours",
     wordCount: 22633,
@@ -3682,7 +3852,7 @@ export const BOOKS: TomeBook[] = [
     era: "Ancient",
     genres: ["Tragedy", "Drama"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 4,
     estimatedReadingTime: "~1 hour",
     wordCount: 17621,
@@ -3768,7 +3938,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Tragedy", "Drama", "Historical Play"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 48,
     estimatedReadingTime: "~2 hours",
     wordCount: 26771,
@@ -3789,7 +3959,7 @@ export const BOOKS: TomeBook[] = [
     era: "Victorian",
     genres: ["Comedy", "Drama", "Satire"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 6,
     estimatedReadingTime: "~2 hours",
     wordCount: 26314,
@@ -3877,7 +4047,7 @@ export const BOOKS: TomeBook[] = [
     era: "Victorian",
     genres: ["Comedy", "Drama"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 5,
     estimatedReadingTime: "~2 hours",
     wordCount: 23402,
@@ -3961,7 +4131,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Tragedy", "Drama", "Political Play"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 36,
     estimatedReadingTime: "~2 hours",
     wordCount: 29815,
@@ -4311,7 +4481,7 @@ export const BOOKS: TomeBook[] = [
     era: "Victorian",
     genres: ["Drama", "Tragedy"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 5,
     estimatedReadingTime: "~2 hours",
     wordCount: 25154,
@@ -4378,7 +4548,7 @@ export const BOOKS: TomeBook[] = [
     era: "Modern",
     genres: ["Drama", "Comedy", "Satire"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 6,
     estimatedReadingTime: "~3 hours",
     wordCount: 48757,
@@ -4401,7 +4571,7 @@ export const BOOKS: TomeBook[] = [
     era: "Victorian",
     genres: ["Drama", "Tragedy"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 6,
     estimatedReadingTime: "~2 hours",
     wordCount: 30523,
@@ -4422,7 +4592,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["History Play", "Drama"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 26,
     estimatedReadingTime: "~2 hours",
     wordCount: 26230,
@@ -4443,7 +4613,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["History Play", "Drama"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 28,
     estimatedReadingTime: "~2 hours",
     wordCount: 27999,
@@ -4464,7 +4634,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["History Play", "Drama"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 31,
     estimatedReadingTime: "~2 hours",
     wordCount: 27525,
@@ -4508,10 +4678,10 @@ export const BOOKS: TomeBook[] = [
     era: "Victorian",
     genres: ["Poetry", "Epic", "Arthurian Legend"],
     difficulty: "Advanced",
-    structuralUnitType: 'book',
-    chapters: 12,
-    estimatedReadingTime: "~5 hours",
-    wordCount: 72543,
+    structuralUnitType: 'canto',
+    chapters: 14,
+    estimatedReadingTime: "~6 hours",
+    wordCount: 84726,
     synopsis: "Tennyson retells the Arthurian legend in a cycle of twelve narrative poems, tracing the rise and fall of Camelot as an allegory of Victorian ideals and their fragility.",
     themes: ["Chivalry", "Idealism", "Betrayal", "Faith", "Decline"],
     country: "England",
@@ -4806,7 +4976,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "Comedy", "Problem Play"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 23,
     estimatedReadingTime: "~2 hours",
     wordCount: 23058,
@@ -5060,7 +5230,7 @@ export const BOOKS: TomeBook[] = [
     era: "Modern",
     genres: ["Comedy", "Drama"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 8,
     estimatedReadingTime: "~2 hours",
     wordCount: 34250,
@@ -5123,7 +5293,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["History Play", "Drama", "Tragedy"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 26,
     estimatedReadingTime: "~2 hours",
     wordCount: 23816,
@@ -5144,7 +5314,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["History Play", "Drama", "Tragedy"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 31,
     estimatedReadingTime: "~2 hours",
     wordCount: 31343,
@@ -5190,7 +5360,7 @@ export const BOOKS: TomeBook[] = [
     era: "Modern",
     genres: ["Drama", "Metafiction"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 5,
     estimatedReadingTime: "~1 hour",
     wordCount: 20662,
@@ -5364,16 +5534,105 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Epic Poetry", "Allegory"],
     difficulty: "Scholar",
-    structuralUnitType: 'book',
-    chapters: 9,
+    difficultyReason:
+      "Spenser wrote in deliberately archaized English (1590 imitating Chaucer, c. 1400) " +
+      "to signal antique moral seriousness. Modern readers encounter a double time-shift. " +
+      "Combined with sustained allegory — every figure operating simultaneously as person, " +
+      "virtue, theological concept, and historical personage — this is the heaviest gloss " +
+      "load in the catalog. Books I–II are the most accessible; III–VI reward commitment.",
+    structuralUnitType: 'canto',
+    chapters: 76,
+    // BookParts — 8 parts, flat chapter count 76.
+    //   ch-0      Forward (editor's intro)
+    //   ch-1      Letter to Sir Walter Raleigh
+    //   ch-2–13   Book I, canto i..xii    (12 cantos)
+    //   ch-14–25  Book II, canto i..xii   (12)
+    //   ch-26–37  Book III, canto i..xii  (12)
+    //   ch-38–49  Book IV, canto i..xii   (12)
+    //   ch-50–61  Book V, canto i..xii    (12)
+    //   ch-62–73  Book VI, canto i..xii   (12)
+    //   ch-74–75  Mutabilitie Cantos VI–VII (the two "unperfite" closing
+    //              stanzas — sometimes numbered Canto VIII in scholarly
+    //              editions — are folded into Canto VII's HTML under a
+    //              <div data-fq-fragment="unperfite"> marker).
+    // See src/data/faerie-queene/canto-metadata.ts for the canonical canto
+    // structure, book titles, virtues, and climactic-canto markers.
+    parts: [
+      { id: "front-matter", title: "Front Matter",             subtitle: "Forward + Letter to Ralegh", order: 0, unitCount: 2,
+        // Armada Portrait (1588, workshop / formerly attributed to George Gower).
+        // Elizabeth I in jewel-heavy pomp celebrating the Spanish Armada's
+        // defeat; Spenser's Gloriana is this queen under allegorical veil.
+        // Pairs 1:1 with the-faerie-queene in the Stoa collection.
+        coverPaintingId: "armada-portrait" },
+      { id: "book-i",       title: "Book I",                   subtitle: "The Legend of Holiness",     order: 1, unitCount: 12 },
+      { id: "book-ii",      title: "Book II",                  subtitle: "The Legend of Temperance",   order: 2, unitCount: 12 },
+      { id: "book-iii",     title: "Book III",                 subtitle: "The Legend of Chastity",     order: 3, unitCount: 12 },
+      { id: "book-iv",      title: "Book IV",                  subtitle: "The Legend of Friendship",   order: 4, unitCount: 12 },
+      { id: "book-v",       title: "Book V",                   subtitle: "The Legend of Justice",      order: 5, unitCount: 12 },
+      { id: "book-vi",      title: "Book VI",                  subtitle: "The Legend of Courtesy",     order: 6, unitCount: 12 },
+      { id: "mutabilitie",  title: "The Mutabilitie Cantos",   subtitle: "Book VII (fragmentary)",     order: 7, unitCount: 2  },
+    ],
     estimatedReadingTime: "~18 hours",
     wordCount: 276264,
-    synopsis: "Knights undertake quests representing virtues such as holiness, temperance, and justice in a vast allegorical romance celebrating Elizabethan ideals and the glory of the Protestant English state.",
-    themes: ["Virtue", "Chivalry", "Allegory", "Good vs. evil", "Elizabeth I"],
+    synopsis:
+      "Six knights ride through Faery Land in the service of Gloriana, the Faerie Queene, " +
+      "each embodying a virtue — Holiness, Temperance, Chastity, Friendship, Justice, " +
+      "Courtesy — in a sustained allegorical romance that binds the Italian chivalric epic " +
+      "(Ariosto, Tasso) to Elizabethan Protestant England and lays the ground for Milton. " +
+      "Begun in the late 1580s at Spenser's colonial post in Ireland, the poem was " +
+      "published in two halves (1590 and 1596) and abandoned unfinished at six books and " +
+      "two cantos of a seventh, Spenser's final vision of constancy under change.",
+    themes: ["Virtue", "Chivalry", "Allegory", "Good vs. evil", "Elizabeth I", "Protestantism", "Chastity", "Courtly love"],
     country: "England",
-    coverColors: { primary: "#3D1A6E", secondary: "#2A1050", accent: "#D97706" },
+    // Armada Portrait palette — Elizabeth's gown crimson, the dark Channel
+    // with the defeated Spanish fleet, the gold of crown/pearls/orb. See
+    // PART 7 of the ingestion spec: cover acknowledges that the poem is
+    // inextricable from the queen it flatters, more honestly than any scene
+    // from the allegorical narrative could.
+    coverColors: { primary: "#5E1126", secondary: "#1A2E4E", accent: "#C9A24A" },
     featured: false,
     source: "standard-ebooks",
+    standardEbooksUrl: "https://standardebooks.org/ebooks/edmund-spenser/the-faerie-queene",
+    // ── Ingestion status: draft_complete (Faerie Queene ingestion spec, Part 9) ─
+    // Full 15-item verification gate status:
+    //   ✅  1. All 6 books + Mutabilitie load; four-level anchor (book/canto/stanza/line) via query
+    //   ✅  2. Spenserian-stanza detection (ABABBCBCC + alexandrine) + alexandrine-highlight toggle
+    //   ✅  3. Letter to Ralegh renders as front matter with 8-annotation Opus cluster
+    //   ⏳  4. CantoArgumentBlock — SE strips Spenser's 4-line verse Arguments; needs
+    //         Wikisource supplementary sourcing + reader-component rendering
+    //   ⏳  5. Speaker-palette application — palette data complete in speakers.ts
+    //         (39 speakers, 10 groups, BRITOMART_BRADAMANTE_CONTINUITY exported); a
+    //         FaerieQueeneSpeakerPalette reader component remains to wire
+    //   ✅  6. Britomart ← Bradamante continuity documented and cross-referenced in
+    //         Book III canto ii annotations (fq-3-2-bradamante-continuity)
+    //   ⏳  7. AllegoryNote drawer UI — data + seeds in allegory-notes.ts (4 seeds
+    //         on Book I canto i); reader-component drawer pending
+    //   ✅  8. Ten Opus clusters render (Letter + 9 cantos = 124 annotations total)
+    //   ✅  9. Climactic-canto chips display in FaerieQueeneEnhancements header
+    //   ✅ 10. Cross-reference cluster → Orlando Furioso (Bradamante, Alcina→Acrasia,
+    //         ottava rima ancestry — wired in Opus annotations)
+    //   ✅ 11. Cross-reference cluster → Paradise Lost (Bower→Eden, Mammon→Mammon,
+    //         Archimago→Satan, Areopagitica acknowledgment — wired)
+    //   ⏳ 12. Glosses tappable — Part 5 glossary not yet generated (targeting ~3,500
+    //         entries at 45–65 per canto; requires generative pipeline)
+    //   ⏳ 13. Archaism-cluster marker — depends on Part 5 glossary
+    //   ✅ 14. Book I Trial functional (ch-13, 9 questions); Master Trial scaffolds
+    //         at ch-76; Full Epic Succession scaffolds at ch-78
+    //   ✅ 15. Cover: Armada Portrait (1588) wired via coverPaintingId on front-matter
+    //         BookPart, PD-Old Stoa entry paired 1:1 with this book (audit PASSED),
+    //         jewel-tone coverColors match portrait; chronological placement between
+    //         Orlando Furioso (1516) and Paradise Lost (1667) handled by `year: 1590`
+    //
+    // 10 of 15 items complete; 5 items (4, 5, 7, 12, 13) require either Part 5
+    // gloss generation or additional reader-component work. Per the field comment,
+    // draft_complete means "ready for internal demo/spot-read" — which is the
+    // state this book is in. The Letter to Ralegh, Book I canto i, Book I canto ix
+    // (Despair), Book I canto xi (Dragon-fight), Book II canto vii (Mammon),
+    // Book II canto xii (Bower of Bliss), Book III canto ii (Britomart's mirror),
+    // Book III canto xii (Busirane), Book VI canto x (Mount Acidale), and the
+    // Mutabilitie canto vii (Arlo Hill) all render with full scholarly apparatus
+    // and are spot-read-ready.
+    apparatusStatus: "draft_complete",
   },
   {
     id: "the-federalist-papers",
@@ -5494,7 +5753,7 @@ export const BOOKS: TomeBook[] = [
     era: "Modern",
     genres: ["Drama", "Expressionism"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 11,
     estimatedReadingTime: "~1 hour",
     wordCount: 16438,
@@ -5988,7 +6247,7 @@ export const BOOKS: TomeBook[] = [
     era: "Enlightenment",
     genres: ["Comedy", "Drama", "Satire"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 24,
     estimatedReadingTime: "~2 hours",
     wordCount: 35034,
@@ -6179,7 +6438,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Tragedy", "Drama"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 19,
     estimatedReadingTime: "~1 hour",
     wordCount: 12812,
@@ -6326,7 +6585,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Romance", "Drama", "Tragicomedy"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 21,
     estimatedReadingTime: "~2 hours",
     wordCount: 26029,
@@ -6391,7 +6650,7 @@ export const BOOKS: TomeBook[] = [
     era: "Modern",
     genres: ["Drama", "Tragedy"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 5,
     estimatedReadingTime: "~1 hour",
     wordCount: 21725,
@@ -6611,7 +6870,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "Comedy", "Problem Play"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 30,
     estimatedReadingTime: "~2 hours",
     wordCount: 24450,
@@ -6632,7 +6891,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "Romance", "Tragicomedy"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 34,
     estimatedReadingTime: "~2 hours",
     wordCount: 29404,
@@ -6653,7 +6912,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "History"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 34,
     estimatedReadingTime: "~2 hours",
     wordCount: 23197,
@@ -6674,7 +6933,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "History"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 31,
     estimatedReadingTime: "~2 hours",
     wordCount: 27247,
@@ -6695,7 +6954,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "History"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 35,
     estimatedReadingTime: "~2 hours",
     wordCount: 26326,
@@ -6716,7 +6975,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "History"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 26,
     estimatedReadingTime: "~2 hours",
     wordCount: 26462,
@@ -6737,7 +6996,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "History"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 23,
     estimatedReadingTime: "~2 hours",
     wordCount: 23215,
@@ -6758,7 +7017,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "Comedy"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 16,
     estimatedReadingTime: "~2 hours",
     wordCount: 24268,
@@ -6779,7 +7038,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "Romance"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 28,
     estimatedReadingTime: "~1 hour",
     wordCount: 19699,
@@ -6800,7 +7059,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "Comedy", "Farce"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 18,
     estimatedReadingTime: "~1 hour",
     wordCount: 16817,
@@ -6821,7 +7080,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "Comedy"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 30,
     estimatedReadingTime: "~2 hours",
     wordCount: 26823,
@@ -6842,7 +7101,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "Comedy", "Romance"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 26,
     estimatedReadingTime: "~1 hour",
     wordCount: 18307,
@@ -6863,7 +7122,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "Romance", "Tragicomedy"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 32,
     estimatedReadingTime: "~2 hours",
     wordCount: 25678,
@@ -6884,7 +7143,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "Tragedy"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 23,
     estimatedReadingTime: "~1 hour",
     wordCount: 19807,
@@ -6905,7 +7164,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "Tragedy", "Revenge Tragedy"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 21,
     estimatedReadingTime: "~2 hours",
     wordCount: 23347,
@@ -6926,7 +7185,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "Tragedy", "Problem Play"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 32,
     estimatedReadingTime: "~2 hours",
     wordCount: 29618,
@@ -7327,7 +7586,7 @@ export const BOOKS: TomeBook[] = [
     era: "Ancient",
     genres: ["Drama", "Tragedy"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 3,
     estimatedReadingTime: "~1 hour",
     wordCount: 12219,
@@ -7350,7 +7609,7 @@ export const BOOKS: TomeBook[] = [
     era: "Ancient",
     genres: ["Drama", "Tragedy"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 3,
     estimatedReadingTime: "~1 hour",
     wordCount: 14094,
@@ -7373,7 +7632,7 @@ export const BOOKS: TomeBook[] = [
     era: "Ancient",
     genres: ["Drama", "Tragedy"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 3,
     estimatedReadingTime: "~1 hour",
     wordCount: 12424,
@@ -7396,7 +7655,7 @@ export const BOOKS: TomeBook[] = [
     era: "Ancient",
     genres: ["Drama", "Tragedy"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 3,
     estimatedReadingTime: "~1 hour",
     wordCount: 10422,
@@ -7419,7 +7678,7 @@ export const BOOKS: TomeBook[] = [
     era: "Ancient",
     genres: ["Drama", "Tragedy"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 3,
     estimatedReadingTime: "~1 hour",
     wordCount: 11462,
@@ -7442,7 +7701,7 @@ export const BOOKS: TomeBook[] = [
     era: "Ancient",
     genres: ["Drama", "Tragedy"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 3,
     estimatedReadingTime: "~1 hour",
     wordCount: 12066,
@@ -7509,7 +7768,7 @@ export const BOOKS: TomeBook[] = [
     era: "Victorian",
     genres: ["Drama", "Comedy", "Social Satire"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 6,
     estimatedReadingTime: "~2 hours",
     wordCount: 32466,
@@ -7530,7 +7789,7 @@ export const BOOKS: TomeBook[] = [
     era: "Victorian",
     genres: ["Drama", "Comedy", "Social Satire"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 7,
     estimatedReadingTime: "~1 hour",
     wordCount: 21653,
@@ -7551,7 +7810,7 @@ export const BOOKS: TomeBook[] = [
     era: "Victorian",
     genres: ["Drama", "Comedy", "Social Satire"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 5,
     estimatedReadingTime: "~2 hours",
     wordCount: 22392,
@@ -7572,7 +7831,7 @@ export const BOOKS: TomeBook[] = [
     era: "Modern",
     genres: ["Drama", "Comedy", "Social Criticism"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 6,
     estimatedReadingTime: "~3 hours",
     wordCount: 48405,
@@ -7593,7 +7852,7 @@ export const BOOKS: TomeBook[] = [
     era: "Modern",
     genres: ["Drama", "Comedy", "Philosophy"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 8,
     estimatedReadingTime: "~5 hours",
     wordCount: 74821,
@@ -7614,7 +7873,7 @@ export const BOOKS: TomeBook[] = [
     era: "Victorian",
     genres: ["Drama", "Social Criticism"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 7,
     estimatedReadingTime: "~2 hours",
     wordCount: 35640,
@@ -7635,7 +7894,7 @@ export const BOOKS: TomeBook[] = [
     era: "Modern",
     genres: ["Drama", "Satire", "Tragicomedy"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 9,
     estimatedReadingTime: "~4 hours",
     wordCount: 61732,
@@ -7656,7 +7915,7 @@ export const BOOKS: TomeBook[] = [
     era: "Victorian",
     genres: ["Drama", "Comedy"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 6,
     estimatedReadingTime: "~2 hours",
     wordCount: 36314,
@@ -9853,7 +10112,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "Tragedy", "Revenge Tragedy"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 26,
     estimatedReadingTime: "~2 hours",
     wordCount: 25619,
@@ -9874,7 +10133,7 @@ export const BOOKS: TomeBook[] = [
     era: "Enlightenment",
     genres: ["Drama", "Comedy", "Restoration Comedy"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 22,
     estimatedReadingTime: "~2 hours",
     wordCount: 35562,
@@ -9895,7 +10154,7 @@ export const BOOKS: TomeBook[] = [
     era: "Enlightenment",
     genres: ["Drama", "Comedy"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 9,
     estimatedReadingTime: "~2 hours",
     wordCount: 23421,
@@ -9916,7 +10175,7 @@ export const BOOKS: TomeBook[] = [
     era: "Enlightenment",
     genres: ["Drama", "Comedy", "Restoration Comedy"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 22,
     estimatedReadingTime: "~2 hours",
     wordCount: 29833,
@@ -10906,7 +11165,7 @@ export const BOOKS: TomeBook[] = [
     era: "Modern",
     genres: ["Drama", "Science Fiction", "Philosophy"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 12,
     estimatedReadingTime: "~8 hours",
     wordCount: 112680,
@@ -11533,7 +11792,7 @@ export const BOOKS: TomeBook[] = [
     era: "Modern",
     genres: ["Drama", "Comedy", "One-Act Plays"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 16,
     estimatedReadingTime: "~11 hours",
     wordCount: 167191,
@@ -11598,7 +11857,7 @@ export const BOOKS: TomeBook[] = [
     era: "Victorian",
     genres: ["Drama", "Tragedy"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 8,
     estimatedReadingTime: "~2 hours",
     wordCount: 27796,
@@ -11730,7 +11989,7 @@ export const BOOKS: TomeBook[] = [
     era: "Victorian",
     genres: ["Drama", "Tragedy"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 5,
     estimatedReadingTime: "~1 hour",
     wordCount: 16915,
@@ -12356,7 +12615,10 @@ export const BOOKS: TomeBook[] = [
     synopsis: "Byron's unfinished comic masterpiece follows a naive young Spaniard through shipwreck, slavery, war, and the courts of Europe, as the poet uses his hero's adventures to satirize everything from marriage to warfare to English society.",
     themes: ["Satire", "Love", "War", "Society", "Hypocrisy", "Freedom"],
     country: "England",
-    coverColors: { primary: "#4A0E2D", secondary: "#2D0819", accent: "#F43F5E" },
+    // Phillips-portrait palette: Albanian costume crimson, warm gilt, deep
+    // shadow. Replaces an earlier Byronic-hero dark-rose palette that read
+    // closer to Manfred than to the comic satirical Don Juan.
+    coverColors: { primary: "#8B4513", secondary: "#5C1A1B", accent: "#D4A04C" },
     featured: false,
     source: "standard-ebooks",
   },
@@ -12462,7 +12724,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "History", "Tragedy"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 30,
     estimatedReadingTime: "~2 hours",
     wordCount: 23565,
@@ -12483,7 +12745,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "Tragedy", "Dark Comedy"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 30,
     estimatedReadingTime: "~1 hour",
     wordCount: 20124,
@@ -12781,7 +13043,7 @@ export const BOOKS: TomeBook[] = [
     era: "Renaissance",
     genres: ["Drama", "Comedy"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 20,
     estimatedReadingTime: "~2 hours",
     wordCount: 31673,
@@ -13257,7 +13519,7 @@ export const BOOKS: TomeBook[] = [
     era: "Modern",
     genres: ["Drama"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 4,
     estimatedReadingTime: "~2 hours",
     wordCount: 26525,
@@ -13886,10 +14148,12 @@ export const BOOKS: TomeBook[] = [
     chapters: 47,
     estimatedReadingTime: "~20 hours",
     wordCount: 300586,
-    synopsis: "The greatest Italian Renaissance poem follows the knight Orlando as he goes mad for love of Angelica, while Charlemagne's paladins battle the Saracens in an epic that blends war, magic, romance, and comedy on a cosmic scale.",
+    synopsis: "The Italian Renaissance chivalric epic in 46 cantos of ottava rima, continuing Boiardo's unfinished *Orlando Innamorato*. Ariosto braids five storylines — Orlando's madness for Angelica, Ruggiero and Bradamante's dynastic romance, Astolfo's flight to the moon, the war between Charlemagne and Agramante, and the poet's own digressive voice — into the formal parent of Spenser, the direct model for Byron's Don Juan, and the bridge between Dante's moral allegory and the comic counter-epic tradition. Translation is William Stewart Rose's 1823–31 verse, the only public-domain English version; readers should know that any English Orlando is a compromise with Ariosto's Italian, whose rhymes Rose honors imperfectly.",
     themes: ["Madness", "Love", "War", "Magic", "Heroism", "Comedy"],
     country: "Italy",
-    coverColors: { primary: "#3D1A6E", secondary: "#2A1050", accent: "#D97706" },
+    // Palette drawn from Doré's 1877 plate "Orlando's Madness" — forest dark,
+    // wild gold, storm-white. See Part 7 of the ingestion spec.
+    coverColors: { primary: "#1F3A2E", secondary: "#13251C", accent: "#D4A94A" },
     featured: false,
     source: "standard-ebooks",
   },
@@ -14566,7 +14830,7 @@ export const BOOKS: TomeBook[] = [
     era: "Victorian",
     genres: ["Drama", "Comedy", "Historical Fiction"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 3,
     estimatedReadingTime: "~1 hour",
     wordCount: 16919,
@@ -15325,7 +15589,7 @@ export const BOOKS: TomeBook[] = [
     era: "Modern",
     genres: ["Drama"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 4,
     estimatedReadingTime: "~1 hour",
     wordCount: 16346,
@@ -15346,7 +15610,7 @@ export const BOOKS: TomeBook[] = [
     era: "Modern",
     genres: ["Drama", "Comedy"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 5,
     estimatedReadingTime: "~1 hour",
     wordCount: 18928,
@@ -16120,7 +16384,7 @@ export const BOOKS: TomeBook[] = [
     era: "Modern",
     genres: ["Drama", "Science Fiction"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 5,
     estimatedReadingTime: "~1 hour",
     wordCount: 20052,
@@ -16208,7 +16472,7 @@ export const BOOKS: TomeBook[] = [
     era: "Modern",
     genres: ["Drama", "Historical Fiction"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 9,
     estimatedReadingTime: "~4 hours",
     wordCount: 56326,
@@ -22143,7 +22407,7 @@ export const BOOKS: TomeBook[] = [
     era: "Victorian",
     genres: ["Drama", "Tragedy"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 4,
     estimatedReadingTime: "~2 hours",
     wordCount: 25000,
@@ -22167,7 +22431,7 @@ export const BOOKS: TomeBook[] = [
     era: "Ancient",
     genres: ["Drama", "Tragedy"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 1,
     estimatedReadingTime: "~1.5 hours",
     wordCount: 12000,
@@ -23251,7 +23515,7 @@ export const BOOKS: TomeBook[] = [
     era: "Victorian",
     genres: ["Drama", "Comedy", "Satire"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 5,
     estimatedReadingTime: "~2 hours",
     wordCount: 25000,
@@ -23273,7 +23537,7 @@ export const BOOKS: TomeBook[] = [
     era: "Enlightenment",
     genres: ["Drama", "Comedy"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 5,
     estimatedReadingTime: "~2 hours",
     wordCount: 22000,
@@ -24422,7 +24686,7 @@ export const BOOKS: TomeBook[] = [
     era: "Victorian",
     genres: ["Drama", "Comedy"],
     difficulty: "Beginner",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 3,
     estimatedReadingTime: "~2 hours",
     wordCount: 22000,
@@ -24929,7 +25193,7 @@ export const BOOKS: TomeBook[] = [
     era: "Medieval",
     genres: ["Drama", "Poetry"],
     difficulty: "Advanced",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 8,
     estimatedReadingTime: "~4 hours",
     wordCount: 30000,
@@ -24953,7 +25217,7 @@ export const BOOKS: TomeBook[] = [
     era: "Medieval",
     genres: ["Drama", "Religious Literature"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 6,
     estimatedReadingTime: "~3 hours",
     wordCount: 25000,
@@ -26962,7 +27226,7 @@ export const BOOKS: TomeBook[] = [
     era: "Modern",
     genres: ["Drama", "Comedy", "Satire"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 10,
     estimatedReadingTime: "~5 hours",
     wordCount: 55000,
@@ -26984,7 +27248,7 @@ export const BOOKS: TomeBook[] = [
     era: "Modern",
     genres: ["Drama", "Tragedy"],
     difficulty: "Intermediate",
-    structuralUnitType: 'chapter',
+    structuralUnitType: 'act_scene',
     chapters: 6,
     estimatedReadingTime: "~3 hours",
     wordCount: 28000,

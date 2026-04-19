@@ -221,6 +221,1221 @@
   display: inline;
 }
 
+/* ── Drama Formatting — character tables ────────── */
+
+.prose-reader.content-drama table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+
+.prose-reader.content-drama table td {
+  vertical-align: top;
+  padding: 0 0 0.75em 0;
+  border: none;
+}
+
+/* Character name column */
+.prose-reader.content-drama table td:first-child {
+  width: 120px;
+  min-width: 80px;
+  max-width: 140px;
+  padding-right: 1em;
+  font-variant: small-caps;
+  font-weight: 600;
+  color: var(--tome-accent);
+  white-space: nowrap;
+  font-size: 0.9em;
+  letter-spacing: 0.03em;
+}
+
+/* Stage directions — empty first cell + italic second */
+.prose-reader.content-drama table tr:has(td:first-child:empty) td:last-child {
+  font-style: italic;
+  opacity: 0.65;
+  padding-left: 0;
+}
+
+/* Inline stage directions within speeches */
+.prose-reader.content-drama table td:last-child i:not(:has(b)) {
+  opacity: 0.65;
+  font-size: 0.92em;
+}
+
+/* Scene/act headers inside drama */
+.prose-reader.content-drama h3 {
+  text-align: center;
+  font-variant: small-caps;
+  color: var(--tome-accent);
+  margin-top: 2.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
+}
+
+/* Scene location subtitle */
+.prose-reader.content-drama h3 + p {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9em;
+  opacity: 0.7;
+  margin-bottom: 2em;
+  text-indent: 0;
+}
+
+/* Character color bars — applied via --char-color CSS variable from JS */
+.prose-reader.content-drama table tr[style*="--char-color"] {
+  border-left: 3px solid var(--char-color);
+  padding-left: 0.5em;
+}
+
+.prose-reader.content-drama table tr[style*="--char-color"] td:first-child {
+  color: var(--char-color);
+}
+
+/* Verse within drama speeches — inherit line spacing */
+.prose-reader.content-drama td p {
+  margin-bottom: 0.3em;
+  text-indent: 0;
+}
+
+.prose-reader.content-drama td p + p {
+  text-indent: 0;
+}
+
+/* ── Verse Formatting — poetry & epics ──────────── */
+
+.prose-reader.content-verse {
+  /* Verse uses the parent's max-width (680px) — no additional constraint.
+     At wide viewports, verse lines are naturally shorter than prose paragraphs
+     so the measure stays comfortable without an explicit max-width. */
+}
+
+/* Override prose paragraph indent for verse stanzas */
+.prose-reader.content-verse p + p {
+  text-indent: 0;
+}
+
+/* Stanza spacing */
+.prose-reader.content-verse p {
+  margin-bottom: 1.5em;
+  font-size: 0.95em;
+  line-height: 1.7;
+  position: relative;
+  text-indent: 0;
+}
+
+/* Verse container — subtle separation between cantos/sections */
+.prose-reader.content-verse section[role="doc-chapter"] {
+  margin: 2em 0;
+  padding-top: 1em;
+  border-top: 1px solid rgba(212, 160, 76, 0.15);
+}
+
+.prose-reader.content-verse section[role="doc-chapter"]:first-of-type {
+  border-top: none;
+  margin-top: 0;
+}
+
+/* Preface sections (e.g., Longfellow's intro sonnets to Dante) */
+.prose-reader.content-verse section[role="doc-preface"] {
+  margin-bottom: 2em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid rgba(212, 160, 76, 0.15);
+  font-style: italic;
+  opacity: 0.85;
+}
+
+/* Section / canto breaks — ornamental spacing */
+.prose-reader.content-verse h2 {
+  text-align: center;
+  font-variant: small-caps;
+  color: var(--tome-accent);
+  margin-top: 3em;
+  margin-bottom: 1em;
+  letter-spacing: 0.05em;
+}
+
+/* Prose arguments/summaries within verse works (e.g., Milton's book summaries) */
+.prose-reader.content-verse section > section:first-child > p:only-child {
+  font-style: italic;
+  font-size: 0.9em;
+  opacity: 0.8;
+  text-indent: 0;
+  padding-left: 0;
+  margin-bottom: 2em;
+}
+
+/* Footnote references within verse */
+.prose-reader.content-verse a[role="doc-noteref"] {
+  font-size: 0.75em;
+  vertical-align: super;
+  color: var(--tome-accent);
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+/* Tercet rhythm — injected by VerseEnhancements after every third <br>
+ * in Commedia paragraphs. The spacer is a zero-width span that "pushes" the
+ * next line down, yielding the three-line-then-breath rhythm of terza rima
+ * even in translations that don't rhyme. */
+.prose-reader.content-verse [data-tercet-gap] {
+  display: block;
+  height: 0.55em;
+  pointer-events: none;
+}
+
+/* ── Paradise Lost — scholarly apparatus ─────────────────────────────
+ * The transform script (scripts/paradise-lost/transform-book.ts) bakes
+ * line anchors, speaker tags, invocation markers, and Milton's prose
+ * Argument into the chapter HTML. This block styles that markup.
+ */
+
+/* Milton's prose "Argument" for each book — italic, muted, set apart
+ * from the verse body. Replaces the older `:only-child` heuristic,
+ * which doesn't apply once verse paragraphs sit in the same section. */
+.prose-reader.content-verse [data-pl-argument] {
+  font-style: italic;
+  font-size: 0.88em;
+  line-height: 1.6;
+  opacity: 0.78;
+  text-indent: 0;
+  padding: 0.75em 1em 0.75em 1.1em;
+  margin: 0 0 2em 0;
+  border-left: 2px solid var(--tome-accent);
+  background: color-mix(in srgb, var(--tome-accent) 4%, transparent);
+  border-radius: 0 4px 4px 0;
+}
+
+/* Verse line anchors — every <span> inside a verse <p> gets a
+ * data-pl-line. Lines whose number is divisible by 5 also carry
+ * data-pl-line-mark so CSS can render the numeral in the margin
+ * without needing modulo math. */
+.prose-reader.content-verse [data-pl-line] {
+  position: relative;
+}
+
+.prose-reader.content-verse [data-pl-line-mark]::before {
+  content: attr(data-pl-line-mark);
+  position: absolute;
+  left: -2.4em;
+  top: 0;
+  font-size: 0.68em;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted-foreground);
+  opacity: 0.55;
+  user-select: none;
+  pointer-events: none;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: inherit;
+}
+
+/* At narrow viewports (<900px), suppress the margin numbers — the
+ * measure is too tight for a gutter. */
+@media (max-width: 900px) {
+  .prose-reader.content-verse [data-pl-line-mark]::before {
+    display: none;
+  }
+}
+
+/* Invocation accent — a subtle indigo left-border on lines inside the
+ * four canonical invocations (I.1–26, III.1–55, VII.1–39, IX.1–47).
+ * Milton is most formally present in these passages; the accent signals
+ * that without shouting. */
+.prose-reader.content-verse [data-pl-invocation] {
+  box-shadow: inset 2px 0 0 0 rgba(93, 85, 140, 0.35);
+  padding-left: 0.65em;
+}
+.dark .prose-reader.content-verse [data-pl-invocation] {
+  box-shadow: inset 2px 0 0 0 rgba(170, 160, 230, 0.38);
+}
+
+/* Speaker palette — reader-time, applied against baked-in data-pl-speaker
+ * attributes. Colors align with src/data/paradise-lost/speakers.ts; the
+ * dark-theme variants live in `.dark .prose-reader ...`. */
+.prose-reader [data-pl-speaker="Satan"]      { color: #8B1A1A; }
+.prose-reader [data-pl-speaker="Beelzebub"]  { color: #7A2828; }
+.prose-reader [data-pl-speaker="Moloch"]     { color: #6B1818; }
+.prose-reader [data-pl-speaker="Belial"]     { color: #A86268; }
+.prose-reader [data-pl-speaker="Mammon"]     { color: #A05828; }
+.prose-reader [data-pl-speaker="Mulciber"]   { color: #B8652A; }
+.prose-reader [data-pl-speaker="Serpent"]    { color: #3E6B3E; }
+.prose-reader [data-pl-speaker="Father"]     { color: #44403C; }
+.prose-reader [data-pl-speaker="Son"]        { color: #B8862C; }
+.prose-reader [data-pl-speaker="Raphael"]    { color: #B8642E; }
+.prose-reader [data-pl-speaker="Michael"]    { color: #4E5A6E; }
+.prose-reader [data-pl-speaker="Gabriel"]    { color: #6B7A6E; }
+.prose-reader [data-pl-speaker="Uriel"]      { color: #A8965A; }
+.prose-reader [data-pl-speaker="Abdiel"]     { color: #8A7A3C; }
+.prose-reader [data-pl-speaker="Zephon"]     { color: #8C8A6A; }
+.prose-reader [data-pl-speaker="Ithuriel"]   { color: #8E8962; }
+.prose-reader [data-pl-speaker="Uzziel"]     { color: #8E8E72; }
+.prose-reader [data-pl-speaker="Sin"]        { color: #7A7770; }
+.prose-reader [data-pl-speaker="Death"]      { color: #9C988C; }
+.prose-reader [data-pl-speaker="Chaos"]      { color: #4E5568; }
+.prose-reader [data-pl-speaker="Night"]      { color: #2C3048; }
+.prose-reader [data-pl-speaker="Adam"]       { color: #7A5A2E; }
+.prose-reader [data-pl-speaker="Eve"]        { color: #A85E6E; }
+
+.dark .prose-reader [data-pl-speaker="Satan"]      { color: #DD5252; }
+.dark .prose-reader [data-pl-speaker="Beelzebub"]  { color: #C85E5E; }
+.dark .prose-reader [data-pl-speaker="Moloch"]     { color: #B84040; }
+.dark .prose-reader [data-pl-speaker="Belial"]     { color: #D48A90; }
+.dark .prose-reader [data-pl-speaker="Mammon"]     { color: #D98A58; }
+.dark .prose-reader [data-pl-speaker="Mulciber"]   { color: #E09050; }
+.dark .prose-reader [data-pl-speaker="Serpent"]    { color: #70A070; }
+.dark .prose-reader [data-pl-speaker="Father"]     { color: #E7E5E4; }
+.dark .prose-reader [data-pl-speaker="Son"]        { color: #E8C778; }
+.dark .prose-reader [data-pl-speaker="Raphael"]    { color: #E09060; }
+.dark .prose-reader [data-pl-speaker="Michael"]    { color: #9AA6BC; }
+.dark .prose-reader [data-pl-speaker="Gabriel"]    { color: #A8B8AC; }
+.dark .prose-reader [data-pl-speaker="Uriel"]      { color: #D4C080; }
+.dark .prose-reader [data-pl-speaker="Abdiel"]     { color: #BFA860; }
+.dark .prose-reader [data-pl-speaker="Zephon"]     { color: #BAB690; }
+.dark .prose-reader [data-pl-speaker="Ithuriel"]   { color: #BEB788; }
+.dark .prose-reader [data-pl-speaker="Uzziel"]     { color: #BCBCA0; }
+.dark .prose-reader [data-pl-speaker="Sin"]        { color: #BAB6AD; }
+.dark .prose-reader [data-pl-speaker="Death"]      { color: #D6D1C0; }
+.dark .prose-reader [data-pl-speaker="Chaos"]      { color: #8E96AC; }
+.dark .prose-reader [data-pl-speaker="Night"]      { color: #7078A0; }
+.dark .prose-reader [data-pl-speaker="Adam"]       { color: #C49860; }
+.dark .prose-reader [data-pl-speaker="Eve"]        { color: #D88898; }
+
+/* ── Idylls of the King — scholarly apparatus ────────────────────────
+ * The transform script (scripts/idylls/transform-book.ts) bakes line
+ * anchors (data-iotk-line) and a narrator-baseline speaker tag
+ * (data-iotk-speaker="narrator") into each chapter HTML. Hand-tagged
+ * speaker spans for Arthur / Guinevere / Lancelot / Vivien / Merlin /
+ * etc. are overlaid in a subsequent Part 2b pass. This block styles
+ * the markup.
+ */
+
+.prose-reader.content-verse [data-iotk-line] {
+  position: relative;
+}
+
+.prose-reader.content-verse [data-iotk-line-mark]::before {
+  content: attr(data-iotk-line-mark);
+  position: absolute;
+  left: -2.4em;
+  top: 0;
+  font-size: 0.68em;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted-foreground);
+  opacity: 0.55;
+  user-select: none;
+  pointer-events: none;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: inherit;
+}
+
+@media (max-width: 900px) {
+  .prose-reader.content-verse [data-iotk-line-mark]::before {
+    display: none;
+  }
+}
+
+/* Speaker palette — reader-time, applied against baked-in
+ * data-iotk-speaker attributes. Colors align with
+ * src/data/idylls-of-the-king/speakers.ts. */
+.prose-reader [data-iotk-speaker="narrator"]      { color: #8C7A3A; }
+.prose-reader [data-iotk-speaker="Arthur"]        { color: #B8A87A; }
+.prose-reader [data-iotk-speaker="Guinevere"]     { color: #B86878; }
+.prose-reader [data-iotk-speaker="Leodogran"]     { color: #8E7E56; }
+.prose-reader [data-iotk-speaker="Bellicent"]     { color: #9A7264; }
+.prose-reader [data-iotk-speaker="Lancelot"]      { color: #9C5E2E; }
+.prose-reader [data-iotk-speaker="Gareth"]        { color: #C8A050; }
+.prose-reader [data-iotk-speaker="Geraint"]       { color: #8B6038; }
+.prose-reader [data-iotk-speaker="Balin"]         { color: #8E4E3A; }
+.prose-reader [data-iotk-speaker="Balan"]         { color: #7E5C4A; }
+.prose-reader [data-iotk-speaker="Pelleas"]       { color: #9E7838; }
+.prose-reader [data-iotk-speaker="Tristram"]      { color: #876B4A; }
+.prose-reader [data-iotk-speaker="Kay"]           { color: #6B6E5E; }
+.prose-reader [data-iotk-speaker="Bedivere"]      { color: #7E7062; }
+.prose-reader [data-iotk-speaker="Gawain"]        { color: #9A7A48; }
+.prose-reader [data-iotk-speaker="Modred"]        { color: #4E5852; }
+.prose-reader [data-iotk-speaker="Elaine"]        { color: #C6B8A6; }
+.prose-reader [data-iotk-speaker="Enid"]          { color: #C68872; }
+.prose-reader [data-iotk-speaker="Lynette"]       { color: #B29AB0; }
+.prose-reader [data-iotk-speaker="Ettarre"]       { color: #A66882; }
+.prose-reader [data-iotk-speaker="Isolt"]         { color: #8F6A74; }
+.prose-reader [data-iotk-speaker="Yniol"]         { color: #8E6E52; }
+.prose-reader [data-iotk-speaker="Galahad"]       { color: #D8D4C0; }
+.prose-reader [data-iotk-speaker="Percivale"]     { color: #9E9380; }
+.prose-reader [data-iotk-speaker="Bors"]          { color: #8E7A4E; }
+.prose-reader [data-iotk-speaker="AmbrosiusTheMonk"] { color: #796E54; }
+.prose-reader [data-iotk-speaker="Merlin"]        { color: #6C7A96; }
+.prose-reader [data-iotk-speaker="Vivien"]        { color: #7A8860; }
+.prose-reader [data-iotk-speaker="MarkOfCornwall"] { color: #4A4E46; }
+.prose-reader [data-iotk-speaker="LadyOfTheLake"] { color: #7A98A8; }
+.prose-reader [data-iotk-speaker="Nimue"]         { color: #84A4A8; }
+.prose-reader [data-iotk-speaker="ThreeQueens"]   { color: #8994A8; }
+
+.dark .prose-reader [data-iotk-speaker="narrator"]      { color: #C6B273; }
+.dark .prose-reader [data-iotk-speaker="Arthur"]        { color: #E8DAAE; }
+.dark .prose-reader [data-iotk-speaker="Guinevere"]     { color: #E09AA8; }
+.dark .prose-reader [data-iotk-speaker="Leodogran"]     { color: #BAAA88; }
+.dark .prose-reader [data-iotk-speaker="Bellicent"]     { color: #C8A294; }
+.dark .prose-reader [data-iotk-speaker="Lancelot"]      { color: #D0946A; }
+.dark .prose-reader [data-iotk-speaker="Gareth"]        { color: #EACE80; }
+.dark .prose-reader [data-iotk-speaker="Geraint"]       { color: #BA8E68; }
+.dark .prose-reader [data-iotk-speaker="Balin"]         { color: #C48676; }
+.dark .prose-reader [data-iotk-speaker="Balan"]         { color: #B69684; }
+.dark .prose-reader [data-iotk-speaker="Pelleas"]       { color: #C8A46E; }
+.dark .prose-reader [data-iotk-speaker="Tristram"]      { color: #B69C7C; }
+.dark .prose-reader [data-iotk-speaker="Kay"]           { color: #9EA294; }
+.dark .prose-reader [data-iotk-speaker="Bedivere"]      { color: #AEA298; }
+.dark .prose-reader [data-iotk-speaker="Gawain"]        { color: #C8A878; }
+.dark .prose-reader [data-iotk-speaker="Modred"]        { color: #8A968E; }
+.dark .prose-reader [data-iotk-speaker="Elaine"]        { color: #E8DCC4; }
+.dark .prose-reader [data-iotk-speaker="Enid"]          { color: #E8B49E; }
+.dark .prose-reader [data-iotk-speaker="Lynette"]       { color: #D4C0D6; }
+.dark .prose-reader [data-iotk-speaker="Ettarre"]       { color: #D096AA; }
+.dark .prose-reader [data-iotk-speaker="Isolt"]         { color: #C49AA4; }
+.dark .prose-reader [data-iotk-speaker="Yniol"]         { color: #BE9E82; }
+.dark .prose-reader [data-iotk-speaker="Galahad"]       { color: #F0ECD8; }
+.dark .prose-reader [data-iotk-speaker="Percivale"]     { color: #C6BBA8; }
+.dark .prose-reader [data-iotk-speaker="Bors"]          { color: #BEA87A; }
+.dark .prose-reader [data-iotk-speaker="AmbrosiusTheMonk"] { color: #AC9E80; }
+.dark .prose-reader [data-iotk-speaker="Merlin"]        { color: #A8B6D2; }
+.dark .prose-reader [data-iotk-speaker="Vivien"]        { color: #B0C094; }
+.dark .prose-reader [data-iotk-speaker="MarkOfCornwall"] { color: #848A80; }
+.dark .prose-reader [data-iotk-speaker="LadyOfTheLake"] { color: #B4CCDE; }
+.dark .prose-reader [data-iotk-speaker="Nimue"]         { color: #BCD6DA; }
+.dark .prose-reader [data-iotk-speaker="ThreeQueens"]   { color: #BEC8DC; }
+
+/* Idylls prosody toggle — alliterating syllable accent and curated
+ * sound-rich passage margin-mark. Both appear only when the reader
+ * has opted in; the React hook sets data-iotk-prosody="1" on the
+ * reader-text root. Alliteration threshold is 3+ matches per line,
+ * stricter than Beowulf's 2+, because Tennyson uses alliteration as
+ * texturing rather than structure. */
+.prose-reader [data-reader-text][data-iotk-prosody="1"] em[data-iotk-allit] {
+  font-style: normal;
+  color: color-mix(in srgb, #8C7A3A 85%, currentColor);
+  background: color-mix(in srgb, #8C7A3A 8%, transparent);
+  border-radius: 2px;
+  padding: 0 0.1em;
+}
+.dark .prose-reader [data-reader-text][data-iotk-prosody="1"] em[data-iotk-allit] {
+  color: color-mix(in srgb, #C6B273 85%, currentColor);
+  background: color-mix(in srgb, #C6B273 12%, transparent);
+}
+.prose-reader [data-reader-text][data-iotk-prosody="1"] [data-iotk-prosody-passage] {
+  box-shadow: inset 3px 0 0 0 color-mix(in srgb, #8C7A3A 45%, transparent);
+  padding-left: 0.4em;
+}
+.dark .prose-reader [data-reader-text][data-iotk-prosody="1"] [data-iotk-prosody-passage] {
+  box-shadow: inset 3px 0 0 0 color-mix(in srgb, #C6B273 50%, transparent);
+}
+
+/* ── Paradise Lost reader toggles ────────────────────────────────────
+ * Verse-paragraph boundaries and enjambment highlighting are off by
+ * default. When the reader opts in via the checkboxes in the
+ * enhancement header, attributes appear on [data-reader-text] (or on
+ * individual lines) and these rules light up the decoration. */
+
+/* When "verse paragraphs" is on, each verse <p> gets a small
+ * ornamental break above it, making Milton's 20–40-line verse
+ * paragraphs visible as the compositional units the 1674 typography
+ * signaled. */
+.prose-reader.content-verse[data-pl-show-paragraphs]
+  section[role="doc-chapter"] > section > p + p:has(> span[data-pl-line]) {
+  margin-top: 2.2em;
+  position: relative;
+}
+.prose-reader.content-verse[data-pl-show-paragraphs]
+  section[role="doc-chapter"] > section > p + p:has(> span[data-pl-line])::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -1.1em;
+  transform: translateX(-50%);
+  width: 1.6em;
+  height: 1px;
+  background: var(--tome-accent);
+  opacity: 0.28;
+}
+
+/* When "enjambment" is on, lines flagged data-pl-enjambed by the
+ * enhancement's post-mount pass get a small continuation glyph after
+ * the line. The glyph is purely decorative and keyboard-inert. */
+.prose-reader.content-verse[data-pl-highlight-enjambment]
+  [data-pl-enjambed]::after {
+  content: " \2192";
+  color: var(--tome-accent);
+  opacity: 0.32;
+  font-size: 0.72em;
+  margin-left: 0.15em;
+  font-style: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Paradise Lost ✦ annotation marker — inserted by
+ * ParadiseLostAnnotations. Clicking opens the shared VirgilDrawer. */
+.prose-reader .pl-anchor-marker {
+  display: inline-block;
+  color: #8B1A1A;
+  font-size: 0.72em;
+  margin-right: 0.2em;
+  vertical-align: super;
+  cursor: pointer;
+  opacity: 0.72;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  user-select: none;
+  font-style: normal;
+}
+.dark .prose-reader .pl-anchor-marker {
+  color: #DD5252;
+}
+.prose-reader .pl-anchor-marker:hover,
+.prose-reader .pl-anchor-marker:focus {
+  opacity: 1;
+  transform: scale(1.15);
+  outline: none;
+}
+
+/* Idylls of the King anchor markers — heathered-gold ✦ (Tennyson
+ * narrator palette), clickable to open the annotation drawer. Parallel
+ * of .pl-anchor-marker. */
+.prose-reader .iotk-anchor-marker {
+  display: inline-block;
+  color: #8C7A3A;
+  font-size: 0.72em;
+  margin-right: 0.2em;
+  vertical-align: super;
+  cursor: pointer;
+  opacity: 0.72;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  user-select: none;
+  font-style: normal;
+}
+.dark .prose-reader .iotk-anchor-marker {
+  color: #C6B273;
+}
+.prose-reader .iotk-anchor-marker:hover,
+.prose-reader .iotk-anchor-marker:focus {
+  opacity: 1;
+  transform: scale(1.15);
+  outline: none;
+}
+
+/* Beowulf anchor markers — mead-hall-gold ✦ in the body text, clickable
+ * to open the annotation drawer. Parallel of .pl-anchor-marker. */
+.prose-reader .beowulf-anchor-marker {
+  display: inline-block;
+  color: var(--beowulf-gold, #B8864D);
+  font-size: 0.72em;
+  margin-right: 0.2em;
+  vertical-align: super;
+  cursor: pointer;
+  opacity: 0.78;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  user-select: none;
+  font-style: normal;
+}
+.dark .prose-reader .beowulf-anchor-marker {
+  color: var(--beowulf-gold, #E2B578);
+}
+.prose-reader .beowulf-anchor-marker:hover,
+.prose-reader .beowulf-anchor-marker:focus {
+  opacity: 1;
+  transform: scale(1.15);
+  outline: none;
+}
+
+/* ── Don Juan — scholarly apparatus ────────────────────────────────
+ * Byron's ottava rima is structurally regular: every stanza is eight
+ * iambic-pentameter lines rhyming ABABABCC, and in the Standard Ebooks
+ * source each stanza is an inner <section><p>...8 <span> lines
+ * separated by <br>...</p></section>. The enhancement component walks
+ * the DOM at mount time and tags each stanza with data-dj-stanza={N}
+ * and its final two <span> lines with data-dj-couplet. These rules
+ * style that markup; toggles on [data-reader-text] gate the display. */
+
+/* Visual separation between stanzas — an extra breath beyond the base
+ * p + p stanza gap. Makes the 8-line unit legible as a stanza. */
+.prose-reader.content-verse section[data-dj-stanza] {
+  margin-bottom: 1.6em;
+}
+.prose-reader.content-verse section[data-dj-stanza] > p {
+  margin-bottom: 0;
+}
+
+/* Stanza numbering — off by default. When the reader toggles it on,
+ * the root [data-reader-text] gets [data-dj-show-stanzas] and the
+ * attribute is projected as a margin numeral via ::before. */
+.prose-reader.content-verse[data-dj-show-stanzas]
+  section[data-dj-stanza]::before {
+  content: attr(data-dj-stanza);
+  position: absolute;
+  left: -2.6em;
+  margin-top: 0.18em;
+  font-size: 0.68em;
+  font-variant-numeric: tabular-nums;
+  color: #1F3A5F;
+  opacity: 0.5;
+  user-select: none;
+  pointer-events: none;
+  font-style: normal;
+  letter-spacing: 0;
+}
+.prose-reader.content-verse[data-dj-show-stanzas] section[data-dj-stanza] {
+  position: relative;
+}
+.dark .prose-reader.content-verse[data-dj-show-stanzas]
+  section[data-dj-stanza]::before {
+  color: #8AA6CC;
+  opacity: 0.55;
+}
+
+/* At narrow viewports (<900px), suppress the margin numbers — gutter
+ * is too tight. (Same heuristic as Paradise Lost line numbers.) */
+@media (max-width: 900px) {
+  .prose-reader.content-verse[data-dj-show-stanzas]
+    section[data-dj-stanza]::before {
+    display: none;
+  }
+}
+
+/* Closing-couplet highlight — off by default. When on, the final two
+ * lines of each stanza (tagged data-dj-couplet by the DOM walk) get a
+ * subtle left indent and an ink-blue tint, surfacing Byron's comic
+ * "snap" without explanation. Deliberately gentle — we do NOT want
+ * this feature to flatten the tonal variety of Byron's couplets. */
+.prose-reader.content-verse[data-dj-highlight-couplets]
+  [data-dj-couplet] {
+  color: #1F3A5F;
+  opacity: 0.92;
+  padding-left: 0.6em;
+  display: inline-block;
+}
+.dark .prose-reader.content-verse[data-dj-highlight-couplets]
+  [data-dj-couplet] {
+  color: #8AA6CC;
+}
+
+/* Byron-narrator base color — applied to all verse body text in Don Juan
+ * unconditionally, since the narrator's voice carries roughly the whole
+ * poem. Characters' speeches can be given their own colors in a later
+ * pass by baking data-dj-speaker attributes at transform time (not done
+ * in the current ingestion). The ink-blue reads as slightly cooler than
+ * the default foreground while remaining fully readable. */
+.prose-reader.content-verse section[role="doc-chapter"] span {
+  /* NB: We intentionally do NOT set a color here by default — the page
+   * sets the foreground color, and per-speaker markup (when baked) will
+   * override on a per-line basis. The narrator color is applied through
+   * the "Byron" palette entry in src/data/don-juan/speakers.ts and
+   * surfaces in the palette legend only. This avoids recoloring the
+   * entire poem on first render and preserves theme compatibility. */
+}
+
+/* ── Orlando Furioso — scholarly apparatus ─────────────────────────
+ * Ariosto's ottava rima is structurally identical to Byron's: 8 lines,
+ * ABABABCC. The Standard Ebooks Rose source wraps the canto in a single
+ * <section role="doc-chapter"> whose direct-child <p>s each hold one
+ * stanza (8 <br>-separated <span> lines). The enhancement component
+ * walks that DOM and tags <p data-of-stanza={N}> and each <span> with
+ * data-of-rhyme="A|B|C" and data-of-line={1–8}. These rules style that
+ * markup; toggles on [data-reader-text] gate the display. */
+
+/* Inter-stanza breathing room. */
+.prose-reader.content-verse p[data-of-stanza] {
+  margin-bottom: 1.55em;
+  position: relative;
+}
+
+/* Stanza numbering — off by default; on when [data-of-show-stanzas]. */
+.prose-reader.content-verse[data-of-show-stanzas]
+  p[data-of-stanza]::before {
+  content: attr(data-of-stanza);
+  position: absolute;
+  left: -2.6em;
+  margin-top: 0.18em;
+  font-size: 0.68em;
+  font-variant-numeric: tabular-nums;
+  color: #8B1A1A;
+  opacity: 0.55;
+  user-select: none;
+  pointer-events: none;
+  font-style: normal;
+  letter-spacing: 0;
+}
+.dark .prose-reader.content-verse[data-of-show-stanzas]
+  p[data-of-stanza]::before {
+  color: #D46C6C;
+  opacity: 0.6;
+}
+@media (max-width: 900px) {
+  .prose-reader.content-verse[data-of-show-stanzas]
+    p[data-of-stanza]::before {
+    display: none;
+  }
+}
+
+/* ── Rhyme-scheme overlay ────────────────────────────────────────────
+ * When [data-of-show-rhyme] is set on the reader root, each line span
+ * carrying data-of-rhyme gets its rhyme letter rendered as a small
+ * marginalia. The A/B alternation is kept faint so the six setup lines
+ * do not visually shout; the closing couplet (C) is tinted in the
+ * Ariosto-gold to surface the stanza's formal snap. Deliberately
+ * understated — we want readers to register the form, not perform it. */
+.prose-reader.content-verse[data-of-show-rhyme]
+  p[data-of-stanza] > span[data-of-rhyme] {
+  position: relative;
+}
+.prose-reader.content-verse[data-of-show-rhyme]
+  p[data-of-stanza] > span[data-of-rhyme]::before {
+  content: attr(data-of-rhyme);
+  position: absolute;
+  left: -1.7em;
+  top: 0.15em;
+  font-size: 0.62em;
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.55;
+}
+
+/* A — faint ink, the dominant setup rhyme. */
+.prose-reader.content-verse[data-of-show-rhyme]
+  p[data-of-stanza] > span[data-of-rhyme="A"]::before {
+  color: #8B1A1A;
+}
+/* B — muted sibling of A. */
+.prose-reader.content-verse[data-of-show-rhyme]
+  p[data-of-stanza] > span[data-of-rhyme="B"]::before {
+  color: #8B1A1A;
+  opacity: 0.38;
+}
+/* C — the closing couplet in Ariosto-gold; the stanza's snap. */
+.prose-reader.content-verse[data-of-show-rhyme]
+  p[data-of-stanza] > span[data-of-rhyme="C"]::before {
+  color: #C89B3C;
+  opacity: 0.85;
+}
+/* The closing-couplet text itself receives a subtle left indent so the
+ * turn of the stanza is legible without the letter-glyph. Always on
+ * when rhyme-scheme is shown (reinforces the form); discreet enough
+ * not to deform the line. */
+.prose-reader.content-verse[data-of-show-rhyme]
+  p[data-of-stanza] > span[data-of-rhyme="C"] {
+  padding-left: 0.4em;
+}
+
+/* Dark-theme rhyme letters. */
+.dark .prose-reader.content-verse[data-of-show-rhyme]
+  p[data-of-stanza] > span[data-of-rhyme="A"]::before {
+  color: #D46C6C;
+}
+.dark .prose-reader.content-verse[data-of-show-rhyme]
+  p[data-of-stanza] > span[data-of-rhyme="B"]::before {
+  color: #D46C6C;
+  opacity: 0.42;
+}
+.dark .prose-reader.content-verse[data-of-show-rhyme]
+  p[data-of-stanza] > span[data-of-rhyme="C"]::before {
+  color: #E6BD6E;
+  opacity: 0.9;
+}
+
+/* Narrow viewports — suppress the rhyme letter gutter to avoid crowding
+ * the line. The couplet indent remains. */
+@media (max-width: 900px) {
+  .prose-reader.content-verse[data-of-show-rhyme]
+    p[data-of-stanza] > span[data-of-rhyme]::before {
+    display: none;
+  }
+}
+
+/* Proem flagging — left bar in Ariosto-gold for canto-opening proems. */
+.prose-reader.content-verse[data-of-flag-proems]
+  p[data-of-stanza][data-of-proem] {
+  border-left: 2px solid #C89B3C;
+  padding-left: 0.7em;
+  background: rgba(200, 155, 60, 0.035);
+}
+.dark .prose-reader.content-verse[data-of-flag-proems]
+  p[data-of-stanza][data-of-proem] {
+  background: rgba(230, 189, 110, 0.045);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+ * The Faerie Queene — Spenserian stanza presentation
+ *
+ * Spenser invented the Spenserian stanza in 1590: nine lines rhyming
+ * ABABBCBCC, the first eight in iambic pentameter and the ninth an
+ * alexandrine (iambic hexameter). The closing alexandrine is the form's
+ * signature — it summarizes, deflates, or amplifies the preceding eight,
+ * and should be *visually recognizable* without counting syllables.
+ *
+ * FaerieQueeneEnhancements tags each Spenserian stanza as
+ *   <p data-fq-stanza={N}>
+ * and each of its direct <span> children as
+ *   <span data-fq-line={1..9} data-fq-rhyme="A|B|C">
+ * plus line 9 gets
+ *   data-fq-alexandrine="1"
+ * Toggles live on [data-reader-text] as data-fq-show-stanzas,
+ * data-fq-highlight-alexandrines, data-fq-show-rhyme.
+ * ══════════════════════════════════════════════════════════════════ */
+
+/* Inter-stanza breathing room. */
+.prose-reader.content-verse p[data-fq-stanza] {
+  margin-bottom: 1.6em;
+  position: relative;
+}
+
+/* Stanza numbers — off by default; on when [data-fq-show-stanzas]. */
+[data-reader-text][data-fq-show-stanzas]
+  .prose-reader.content-verse p[data-fq-stanza]::before,
+.prose-reader.content-verse[data-fq-show-stanzas] p[data-fq-stanza]::before {
+  content: attr(data-fq-stanza);
+  position: absolute;
+  left: -2.6em;
+  margin-top: 0.18em;
+  font-family: var(--font-serif);
+  font-size: 0.72em;
+  color: #9A2540;
+  opacity: 0.55;
+  font-variant-numeric: lining-nums;
+}
+.dark [data-reader-text][data-fq-show-stanzas]
+  .prose-reader.content-verse p[data-fq-stanza]::before,
+.dark .prose-reader.content-verse[data-fq-show-stanzas] p[data-fq-stanza]::before {
+  color: #D8A05A;
+  opacity: 0.6;
+}
+@media (max-width: 900px) {
+  [data-reader-text][data-fq-show-stanzas]
+    .prose-reader.content-verse p[data-fq-stanza]::before,
+  .prose-reader.content-verse[data-fq-show-stanzas] p[data-fq-stanza]::before {
+    display: none;
+  }
+}
+
+/* Rhyme-scheme letters — faint gutter letters showing ABABBCBCC. */
+[data-reader-text][data-fq-show-rhyme]
+  .prose-reader.content-verse p[data-fq-stanza] > span[data-fq-rhyme]::after,
+.prose-reader.content-verse[data-fq-show-rhyme]
+  p[data-fq-stanza] > span[data-fq-rhyme]::after {
+  content: attr(data-fq-rhyme);
+  display: inline-block;
+  margin-left: 0.75em;
+  font-size: 0.7em;
+  color: #C9A24A;
+  opacity: 0.55;
+  font-family: var(--font-sans);
+  font-style: normal;
+  letter-spacing: 0.04em;
+  vertical-align: baseline;
+}
+.dark [data-reader-text][data-fq-show-rhyme]
+  .prose-reader.content-verse p[data-fq-stanza] > span[data-fq-rhyme]::after,
+.dark .prose-reader.content-verse[data-fq-show-rhyme]
+  p[data-fq-stanza] > span[data-fq-rhyme]::after {
+  color: #E6C56F;
+  opacity: 0.6;
+}
+
+/* Alexandrine highlight — subtle accent on the 9th (hexameter) line.
+ * Rendered as a delicate left-edge tick + slightly heavier letterspacing.
+ * The point is visual recognition of the form's closing signature, not
+ * a neon callout. */
+[data-reader-text][data-fq-highlight-alexandrines]
+  .prose-reader.content-verse span[data-fq-alexandrine],
+.prose-reader.content-verse[data-fq-highlight-alexandrines]
+  span[data-fq-alexandrine] {
+  border-left: 2px solid #9A2540;
+  padding-left: 0.55em;
+  letter-spacing: 0.005em;
+  color: inherit;
+}
+.dark [data-reader-text][data-fq-highlight-alexandrines]
+  .prose-reader.content-verse span[data-fq-alexandrine],
+.dark .prose-reader.content-verse[data-fq-highlight-alexandrines]
+  span[data-fq-alexandrine] {
+  border-left-color: #D8A05A;
+}
+
+/* Book-proem block marker — when a canto HTML includes a
+ * <div data-fq-proem> (currently only canto i of each book), render
+ * with a subtle left bar in Spenser-crimson so the poet-voice proem
+ * reads formally distinct from the narrative. */
+.prose-reader [data-fq-proem] {
+  border-left: 2px solid #9A2540;
+  padding-left: 0.9em;
+  margin: 0.5em 0 1.5em;
+  opacity: 0.95;
+  background: rgba(154, 37, 64, 0.025);
+}
+.dark .prose-reader [data-fq-proem] {
+  border-left-color: #D8A05A;
+  background: rgba(216, 160, 90, 0.03);
+}
+
+/* Canto superheader (e.g. "Book I — Holiness") above the canto's h2. */
+.prose-reader .tome-canto-superheader {
+  font-family: var(--font-serif);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9A2540;
+  opacity: 0.85;
+  margin-bottom: 0.2rem;
+}
+.dark .prose-reader .tome-canto-superheader { color: #D8A05A; }
+
+/* Glossed words — dotted underline with a hover tooltip showing the
+ * definition. Mirrors the Shakespeare structured-enhancement styles so
+ * the Commedia reader (which doesn't mount StructuredEnhancements) has
+ * the same gloss UX. */
+.prose-reader .tome-gloss {
+  border-bottom: 1px dotted #b08d57;
+  cursor: help;
+  position: relative;
+}
+.prose-reader .tome-gloss:hover::after,
+.prose-reader .tome-gloss:focus::after {
+  content: attr(data-definition);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a1611;
+  color: #fbf8f3;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-style: normal;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.4;
+  width: max-content;
+  max-width: 320px;
+  white-space: normal;
+  z-index: 50;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  pointer-events: none;
+}
+.prose-reader .tome-gloss:hover::before,
+.prose-reader .tome-gloss:focus::before {
+  content: "";
+  position: absolute;
+  bottom: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #1a1611;
+  z-index: 50;
+}
+.dark .prose-reader .tome-gloss { border-bottom-color: #c9a670; }
+
+/* Commedia annotation anchors — small gold ✦ inserted before each passage
+ * that carries a scholarly note. Kept visually quiet so verse takes
+ * precedence; the marker is interactive and opens the Virgil drawer. */
+.prose-reader .commedia-anchor {
+  display: inline-block;
+  margin-right: 0.3em;
+  vertical-align: 0.05em;
+  font-size: 0.82em;
+  line-height: 1;
+  color: #D4A04C;
+  background: transparent;
+  border: none;
+  padding: 0 0.15em;
+  cursor: pointer;
+  opacity: 0.55;
+  transition: opacity 120ms ease-out, transform 120ms ease-out;
+}
+.prose-reader .commedia-anchor:hover,
+.prose-reader .commedia-anchor:focus-visible {
+  opacity: 1;
+  transform: translateY(-1px);
+  outline: none;
+}
+
+/* Aeneid annotation anchor (✦) — matches commedia-anchor chrome but
+ * tinted bronze to pair with the Aeneid book-header palette. */
+.prose-reader .aeneid-anchor {
+  display: inline-block;
+  margin-right: 0.3em;
+  vertical-align: 0.05em;
+  font-size: 0.82em;
+  line-height: 1;
+  color: #7A5A1F;
+  background: transparent;
+  border: none;
+  padding: 0 0.15em;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 120ms ease-out, transform 120ms ease-out;
+}
+.dark .prose-reader .aeneid-anchor { color: #D6B06A; }
+.prose-reader .aeneid-anchor:hover,
+.prose-reader .aeneid-anchor:focus-visible {
+  opacity: 1;
+  transform: translateY(-1px);
+  outline: none;
+}
+
+/* Aeneid authorial-apostrophe marker — a small italic "V." monogram
+ * in the margin at each of the five canonical Virgilian address
+ * sites (tu Marcellus eris, fortunati ambo, the Caieta invocation,
+ * the Lausus apostrophe, the two gates of sleep). Subtle by default;
+ * brightens on hover. */
+.prose-reader .aeneid-apostrophe {
+  display: inline-block;
+  margin-right: 0.35em;
+  vertical-align: 0.08em;
+  font-family: var(--font-serif, Georgia, "Times New Roman", serif);
+  font-style: italic;
+  font-size: 0.78em;
+  font-weight: 500;
+  line-height: 1;
+  color: #7A5A1F;
+  opacity: 0.45;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 120ms ease-out;
+}
+.dark .prose-reader .aeneid-apostrophe { color: #D6B06A; }
+.prose-reader .aeneid-apostrophe:hover,
+.prose-reader .aeneid-apostrophe:focus-visible {
+  opacity: 1;
+  outline: none;
+}
+
+/* Mobile: drama table adjustments */
+@media (max-width: 640px) {
+  .prose-reader.content-drama table td:first-child {
+    width: 80px;
+    min-width: 60px;
+    font-size: 0.8em;
+  }
+}
+
+/* ════════════════════════════════════════════════════════════════════
+ * Iliad — scholarly apparatus for Homer (Bryant, 1870)
+ * ═══════════════════════════════════════════════════════════════════ */
+
+/* Book header (Greek glyph + argument) is rendered by the React
+ * IliadEnhancements component outside the verse body; its styles are
+ * inline. Only the per-line speaker colors below are driven by CSS
+ * against the baked-in `data-iliad-speaker` attributes. */
+
+/* Speaker color coding — inline on every verse line carrying a speech.
+ * Each canonical speaker has a light-mode and dark-mode value keyed to
+ * the palette in src/lib/virgil/iliad-speakers.ts. When speaker is null
+ * (narrator), no rule matches and the base text color applies.
+ *
+ * The `data-iliad-speech-start="true"` flag marks the first line of a
+ * speech — useful if later UI wants to prefix a subtle marker. For now
+ * we give it a slightly stronger weight only. */
+
+.prose-reader [data-iliad-speech-start="true"] {
+  /* Keep identical weight; reserved hook for future attribution styling. */
+}
+
+/* — Greeks (warm bronze palette) — */
+.prose-reader [data-iliad-speaker="Achilles"]    { color: #9C3A1E; }
+.dark .prose-reader [data-iliad-speaker="Achilles"]    { color: #E26A46; }
+.prose-reader [data-iliad-speaker="Agamemnon"]   { color: #A8782C; }
+.dark .prose-reader [data-iliad-speaker="Agamemnon"]   { color: #D4A04A; }
+.prose-reader [data-iliad-speaker="Odysseus"]    { color: #B89556; }
+.dark .prose-reader [data-iliad-speaker="Odysseus"]    { color: #D9B97A; }
+.prose-reader [data-iliad-speaker="Nestor"]      { color: #6B4A2E; }
+.dark .prose-reader [data-iliad-speaker="Nestor"]      { color: #A88560; }
+.prose-reader [data-iliad-speaker="Diomedes"]    { color: #8C5A3D; }
+.dark .prose-reader [data-iliad-speaker="Diomedes"]    { color: #B88A6E; }
+.prose-reader [data-iliad-speaker="Ajax"]        { color: #8C6B3D; }
+.dark .prose-reader [data-iliad-speaker="Ajax"]        { color: #B8966C; }
+.prose-reader [data-iliad-speaker="Patroclus"]   { color: #A8782C; }
+.dark .prose-reader [data-iliad-speaker="Patroclus"]   { color: #D4A04A; }
+.prose-reader [data-iliad-speaker="Menelaus"]    { color: #8C4A3D; }
+.dark .prose-reader [data-iliad-speaker="Menelaus"]    { color: #B87A6E; }
+.prose-reader [data-iliad-speaker="Calchas"]     { color: #6E5A3D; }
+.dark .prose-reader [data-iliad-speaker="Calchas"]     { color: #A8926C; }
+
+/* — Trojans (cool rose / terracotta palette) — */
+.prose-reader [data-iliad-speaker="Hector"]      { color: #8C4A3D; }
+.dark .prose-reader [data-iliad-speaker="Hector"]      { color: #C97160; }
+.prose-reader [data-iliad-speaker="Priam"]       { color: #6E7A8C; }
+.dark .prose-reader [data-iliad-speaker="Priam"]       { color: #9AA8B8; }
+.prose-reader [data-iliad-speaker="Paris"]       { color: #8C6B7E; }
+.dark .prose-reader [data-iliad-speaker="Paris"]       { color: #B89AAA; }
+.prose-reader [data-iliad-speaker="Aeneas"]      { color: #8C5A5A; }
+.dark .prose-reader [data-iliad-speaker="Aeneas"]      { color: #B88A8A; }
+.prose-reader [data-iliad-speaker="Sarpedon"]    { color: #6E3A5A; }
+.dark .prose-reader [data-iliad-speaker="Sarpedon"]    { color: #A87A94; }
+.prose-reader [data-iliad-speaker="Helen"]       { color: #A8782C; }
+.dark .prose-reader [data-iliad-speaker="Helen"]       { color: #D4A070; }
+.prose-reader [data-iliad-speaker="Andromache"]  { color: #6E3A3D; }
+.dark .prose-reader [data-iliad-speaker="Andromache"]  { color: #A87A7E; }
+.prose-reader [data-iliad-speaker="Hecuba"]      { color: #5C3A5C; }
+.dark .prose-reader [data-iliad-speaker="Hecuba"]      { color: #9C7A9C; }
+.prose-reader [data-iliad-speaker="Glaucus"]     { color: #8C6B5A; }
+.dark .prose-reader [data-iliad-speaker="Glaucus"]     { color: #B8967E; }
+
+/* — Gods (each one a distinct mythic color) — */
+.prose-reader [data-iliad-speaker="Zeus"]        { color: #8C7A2C; }
+.dark .prose-reader [data-iliad-speaker="Zeus"]        { color: #E6D27A; }
+.prose-reader [data-iliad-speaker="Hera"]        { color: #2E5F6E; }
+.dark .prose-reader [data-iliad-speaker="Hera"]        { color: #6BA0B2; }
+.prose-reader [data-iliad-speaker="Athena"]      { color: #5A6040; }
+.dark .prose-reader [data-iliad-speaker="Athena"]      { color: #A0A874; }
+.prose-reader [data-iliad-speaker="Apollo"]      { color: #C8912A; }
+.dark .prose-reader [data-iliad-speaker="Apollo"]      { color: #F0C058; }
+.prose-reader [data-iliad-speaker="Aphrodite"]   { color: #B86B88; }
+.dark .prose-reader [data-iliad-speaker="Aphrodite"]   { color: #E09AB0; }
+.prose-reader [data-iliad-speaker="Poseidon"]    { color: #2E5A7A; }
+.dark .prose-reader [data-iliad-speaker="Poseidon"]    { color: #6895B5; }
+.prose-reader [data-iliad-speaker="Ares"]        { color: #8C2E2E; }
+.dark .prose-reader [data-iliad-speaker="Ares"]        { color: #C96464; }
+.prose-reader [data-iliad-speaker="Hephaestus"]  { color: #B8652A; }
+.dark .prose-reader [data-iliad-speaker="Hephaestus"]  { color: #E09050; }
+.prose-reader [data-iliad-speaker="Thetis"]      { color: #7A8C9C; }
+.dark .prose-reader [data-iliad-speaker="Thetis"]      { color: #B0BFCE; }
+.prose-reader [data-iliad-speaker="Iris"]        { color: #8C6B7E; }
+.dark .prose-reader [data-iliad-speaker="Iris"]        { color: #B89AAA; }
+.prose-reader [data-iliad-speaker="Hermes"]      { color: #6B8560; }
+.dark .prose-reader [data-iliad-speaker="Hermes"]      { color: #9EBE94; }
+.prose-reader [data-iliad-speaker="Artemis"]     { color: #5F8070; }
+.dark .prose-reader [data-iliad-speaker="Artemis"]     { color: #92B0A0; }
+.prose-reader [data-iliad-speaker="Dione"]       { color: #A88AA8; }
+.dark .prose-reader [data-iliad-speaker="Dione"]       { color: #C8B0C8; }
+
+/* ── Aeneid speaker color coding ─────────────────────────────────────────
+ * Mirror of the Iliad block. Roman god names share Homer's exact hues
+ * (Juno == Hera peacock, Venus == Aphrodite rose, Jove == Zeus white-gold)
+ * so the classical triad reads as one continuous palette.
+ * Applied via CSS attribute selectors against the baked-in
+ * `data-aeneid-speaker` attributes produced by
+ * scripts/aeneid/transform-book.ts.
+ */
+
+/* — Trojan exiles (imperial bronze, duty-weighted) — */
+.prose-reader [data-aeneid-speaker="Aeneas"]     { color: #7A5A1F; }
+.dark .prose-reader [data-aeneid-speaker="Aeneas"]     { color: #D6B06A; }
+.prose-reader [data-aeneid-speaker="Anchises"]   { color: #6E6B5A; }
+.dark .prose-reader [data-aeneid-speaker="Anchises"]   { color: #C8C2A8; }
+.prose-reader [data-aeneid-speaker="Ascanius"]   { color: #B88A3C; }
+.dark .prose-reader [data-aeneid-speaker="Ascanius"]   { color: #E8C070; }
+.prose-reader [data-aeneid-speaker="Creusa"]     { color: #8A8898; }
+.dark .prose-reader [data-aeneid-speaker="Creusa"]     { color: #BEBCCA; }
+.prose-reader [data-aeneid-speaker="Achates"]    { color: #7C6B48; }
+.dark .prose-reader [data-aeneid-speaker="Achates"]    { color: #BDA878; }
+.prose-reader [data-aeneid-speaker="Ilioneus"]   { color: #6E5A3C; }
+.dark .prose-reader [data-aeneid-speaker="Ilioneus"]   { color: #B69670; }
+.prose-reader [data-aeneid-speaker="Palinurus"]  { color: #4A5A6E; }
+.dark .prose-reader [data-aeneid-speaker="Palinurus"]  { color: #8EA2B8; }
+.prose-reader [data-aeneid-speaker="Panthus"]    { color: #6B5A4A; }
+.dark .prose-reader [data-aeneid-speaker="Panthus"]    { color: #B09A82; }
+.prose-reader [data-aeneid-speaker="Deiphobus"]  { color: #7C4A52; }
+.dark .prose-reader [data-aeneid-speaker="Deiphobus"]  { color: #BE8890; }
+
+/* — Carthaginians (burning carmine, regal and doomed) — */
+.prose-reader [data-aeneid-speaker="Dido"]       { color: #8E1F2F; }
+.dark .prose-reader [data-aeneid-speaker="Dido"]       { color: #E05068; }
+.prose-reader [data-aeneid-speaker="Anna"]       { color: #A85060; }
+.dark .prose-reader [data-aeneid-speaker="Anna"]       { color: #D88898; }
+.prose-reader [data-aeneid-speaker="Iarbas"]     { color: #7A3A28; }
+.dark .prose-reader [data-aeneid-speaker="Iarbas"]     { color: #C2725A; }
+.prose-reader [data-aeneid-speaker="Sychaeus"]   { color: #4A3040; }
+.dark .prose-reader [data-aeneid-speaker="Sychaeus"]   { color: #8E7080; }
+
+/* — Italians (iron and laurel) — */
+.prose-reader [data-aeneid-speaker="Turnus"]     { color: #8B1A1A; }
+.dark .prose-reader [data-aeneid-speaker="Turnus"]     { color: #DD5252; }
+.prose-reader [data-aeneid-speaker="Latinus"]    { color: #4E3E6C; }
+.dark .prose-reader [data-aeneid-speaker="Latinus"]    { color: #9A8AC8; }
+.prose-reader [data-aeneid-speaker="Amata"]      { color: #6C2C48; }
+.dark .prose-reader [data-aeneid-speaker="Amata"]      { color: #B06A88; }
+.prose-reader [data-aeneid-speaker="Lavinia"]    { color: #C8A2B0; }
+.dark .prose-reader [data-aeneid-speaker="Lavinia"]    { color: #E8C8D4; }
+.prose-reader [data-aeneid-speaker="Mezentius"]  { color: #4E4E54; }
+.dark .prose-reader [data-aeneid-speaker="Mezentius"]  { color: #9A9AA2; }
+.prose-reader [data-aeneid-speaker="Lausus"]     { color: #A88848; }
+.dark .prose-reader [data-aeneid-speaker="Lausus"]     { color: #E0BC74; }
+.prose-reader [data-aeneid-speaker="Camilla"]    { color: #8E8C9E; }
+.dark .prose-reader [data-aeneid-speaker="Camilla"]    { color: #C4C2D6; }
+.prose-reader [data-aeneid-speaker="Drances"]    { color: #5C5248; }
+.dark .prose-reader [data-aeneid-speaker="Drances"]    { color: #A89888; }
+.prose-reader [data-aeneid-speaker="Evander"]    { color: #4A6838; }
+.dark .prose-reader [data-aeneid-speaker="Evander"]    { color: #8CB07A; }
+.prose-reader [data-aeneid-speaker="Pallas"]     { color: #D4B03A; }
+.dark .prose-reader [data-aeneid-speaker="Pallas"]     { color: #F0D878; }
+.prose-reader [data-aeneid-speaker="Nisus"]      { color: #4A3A2C; }
+.dark .prose-reader [data-aeneid-speaker="Nisus"]      { color: #8A7058; }
+.prose-reader [data-aeneid-speaker="Euryalus"]   { color: #A8784C; }
+.dark .prose-reader [data-aeneid-speaker="Euryalus"]   { color: #E0B078; }
+.prose-reader [data-aeneid-speaker="Messapus"]   { color: #6E503A; }
+.dark .prose-reader [data-aeneid-speaker="Messapus"]   { color: #B08870; }
+.prose-reader [data-aeneid-speaker="Juturna"]    { color: #5A7888; }
+.dark .prose-reader [data-aeneid-speaker="Juturna"]    { color: #9EBCCE; }
+.prose-reader [data-aeneid-speaker="Tiberinus"]  { color: #3E5C68; }
+.dark .prose-reader [data-aeneid-speaker="Tiberinus"]  { color: #86A4B2; }
+
+/* — Underworld — */
+.prose-reader [data-aeneid-speaker="Sibyl"]      { color: #5A3A6A; }
+.dark .prose-reader [data-aeneid-speaker="Sibyl"]      { color: #A482BA; }
+.prose-reader [data-aeneid-speaker="Charon"]     { color: #302A2E; }
+.dark .prose-reader [data-aeneid-speaker="Charon"]     { color: #8C8488; }
+
+/* — Gods (Roman names; Homeric hues shared with Iliad/Odyssey) — */
+.prose-reader [data-aeneid-speaker="Jove"]       { color: #8C7A2C; }
+.dark .prose-reader [data-aeneid-speaker="Jove"]       { color: #E6D27A; }
+.prose-reader [data-aeneid-speaker="Juno"]       { color: #2E5F6E; }
+.dark .prose-reader [data-aeneid-speaker="Juno"]       { color: #6BA0B2; }
+.prose-reader [data-aeneid-speaker="Venus"]      { color: #B86B88; }
+.dark .prose-reader [data-aeneid-speaker="Venus"]      { color: #E09AB0; }
+.prose-reader [data-aeneid-speaker="Neptune"]    { color: #2E5A7A; }
+.dark .prose-reader [data-aeneid-speaker="Neptune"]    { color: #6895B5; }
+.prose-reader [data-aeneid-speaker="Mercury"]    { color: #6B8560; }
+.dark .prose-reader [data-aeneid-speaker="Mercury"]    { color: #9EBE94; }
+.prose-reader [data-aeneid-speaker="Apollo"]     { color: #C8912A; }
+.dark .prose-reader [data-aeneid-speaker="Apollo"]     { color: #F0C058; }
+.prose-reader [data-aeneid-speaker="Mars"]       { color: #8C2E2E; }
+.dark .prose-reader [data-aeneid-speaker="Mars"]       { color: #C96464; }
+.prose-reader [data-aeneid-speaker="Vulcan"]     { color: #B8652A; }
+.dark .prose-reader [data-aeneid-speaker="Vulcan"]     { color: #E09050; }
+.prose-reader [data-aeneid-speaker="Minerva"]    { color: #5A6040; }
+.dark .prose-reader [data-aeneid-speaker="Minerva"]    { color: #A0A874; }
+.prose-reader [data-aeneid-speaker="Diana"]      { color: #7A8898; }
+.dark .prose-reader [data-aeneid-speaker="Diana"]      { color: #BCC8D4; }
+.prose-reader [data-aeneid-speaker="Aeolus"]     { color: #5A6070; }
+.dark .prose-reader [data-aeneid-speaker="Aeolus"]     { color: #9EA4B4; }
+.prose-reader [data-aeneid-speaker="Allecto"]    { color: #3E1C28; }
+.dark .prose-reader [data-aeneid-speaker="Allecto"]    { color: #7E505C; }
+.prose-reader [data-aeneid-speaker="Cupid"]      { color: #B86B88; }
+.dark .prose-reader [data-aeneid-speaker="Cupid"]      { color: #E09AB0; }
+.prose-reader [data-aeneid-speaker="Fame"]       { color: #5A4E3A; }
+.dark .prose-reader [data-aeneid-speaker="Fame"]       { color: #A89878; }
+
+/* — Homeric cameos (reuse Iliad palette) — */
+.prose-reader [data-aeneid-speaker="Priam"]      { color: #6E7A8C; }
+.dark .prose-reader [data-aeneid-speaker="Priam"]      { color: #9AA8B8; }
+.prose-reader [data-aeneid-speaker="Hecuba"]     { color: #5C3A5C; }
+.dark .prose-reader [data-aeneid-speaker="Hecuba"]     { color: #9C7A9C; }
+.prose-reader [data-aeneid-speaker="Andromache"] { color: #6E3A3D; }
+.dark .prose-reader [data-aeneid-speaker="Andromache"] { color: #A87A7E; }
+.prose-reader [data-aeneid-speaker="Helenus"]    { color: #6A5A78; }
+.dark .prose-reader [data-aeneid-speaker="Helenus"]    { color: #B0A0BE; }
+.prose-reader [data-aeneid-speaker="Helen"]      { color: #A8782C; }
+.dark .prose-reader [data-aeneid-speaker="Helen"]      { color: #D4A070; }
+.prose-reader [data-aeneid-speaker="Pyrrhus"]    { color: #5E7A2E; }
+.dark .prose-reader [data-aeneid-speaker="Pyrrhus"]    { color: #A2BE68; }
+.prose-reader [data-aeneid-speaker="Ulysses"]    { color: #B89556; }
+.dark .prose-reader [data-aeneid-speaker="Ulysses"]    { color: #D9B97A; }
+.prose-reader [data-aeneid-speaker="Achilles"]   { color: #9C3A1E; }
+.dark .prose-reader [data-aeneid-speaker="Achilles"]   { color: #E26A46; }
+.prose-reader [data-aeneid-speaker="Sinon"]      { color: #6B6228; }
+.dark .prose-reader [data-aeneid-speaker="Sinon"]      { color: #AFA462; }
+
 /* ── Reduced Motion ──────────────────────────── */
 
 @media (prefers-reduced-motion: reduce) {
@@ -233,3 +1448,377 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* ═══════════════════════════════════════════════════════════════════
+ * BEOWULF — Anonymous Old English epic
+ * John Lesslie Hall 1892 translation (Standard Ebooks 2019), 43 fitts,
+ * alliterative verse. Line-anchored via
+ * scripts/beowulf/ingest-beowulf-lines.ts:
+ *   data-beowulf-fitt, data-beowulf-line, data-beowulf-poem-line,
+ *   data-beowulf-line-mark (every 5 lines).
+ * ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* Narrator — mead-hall fire gold. The Beowulf-scop's voice.           */
+  --beowulf-narrator: #B8864D;
+  /* Cover / edition palette — iron-bronze-gold, Sutton-Hoo-forward.     */
+  --beowulf-iron: #3F3A33;
+  --beowulf-bronze: #6B4423;
+  --beowulf-gold: #B8864D;
+}
+.dark {
+  --beowulf-narrator: #D9A86A;
+  --beowulf-iron: #B8B0A5;
+  --beowulf-bronze: #C8A073;
+  --beowulf-gold: #E2B578;
+}
+
+/* Line margin numerals — reuse the Paradise Lost gutter convention so
+ * the reader feels consistent across verse books. */
+.prose-reader.content-verse [data-beowulf-line] {
+  position: relative;
+}
+.prose-reader.content-verse [data-beowulf-line-mark]::before {
+  content: attr(data-beowulf-line-mark);
+  position: absolute;
+  left: -2.4em;
+  top: 0;
+  font-size: 0.68em;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted-foreground);
+  opacity: 0.55;
+  user-select: none;
+  pointer-events: none;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: inherit;
+}
+@media (max-width: 900px) {
+  .prose-reader.content-verse [data-beowulf-line-mark]::before {
+    display: none;
+  }
+}
+
+/* Alliteration highlighting — default OFF per spec. When the
+ * [data-beowulf-alliteration="1"] toggle is on, alliterating stressed
+ * syllables (marked by the detection pass as <em data-beowulf-allit="K">
+ * where K is the alliterating letter cluster) get a subtle gold
+ * underline. The detection pass itself is Part 3A; this CSS is ready
+ * for it. */
+.prose-reader[data-beowulf-alliteration="1"] [data-beowulf-allit] {
+  text-decoration: underline;
+  text-decoration-color: rgba(184, 134, 77, 0.55);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
+  font-style: inherit;
+}
+.dark .prose-reader[data-beowulf-alliteration="1"] [data-beowulf-allit] {
+  text-decoration-color: rgba(217, 168, 106, 0.65);
+}
+
+/* Bilingual scaffolding — when the Old English toggle is on, the
+ * reader root carries [data-beowulf-bilingual="1"]. The OE-line pairing
+ * markup (Part 1 step 6, not yet ingested) will live in siblings
+ * carrying [data-beowulf-oe-line]; when present, they render above the
+ * English line. Until that data ships, this rule simply makes the
+ * toggle state visible to any future sibling pair. */
+.prose-reader[data-beowulf-bilingual="1"] [data-beowulf-oe-line] {
+  display: block;
+  font-family: var(--font-serif, Georgia, serif);
+  font-style: italic;
+  color: var(--beowulf-bronze);
+  opacity: 0.85;
+  margin-top: 0.35em;
+  font-size: 0.92em;
+}
+
+/* Caesura — Old English alliterative verse has a strong mid-line break.
+ * Hall's translation preserves it implicitly; when the detection pass
+ * marks a caesura with <span class="beowulf-caesura">, render extra
+ * whitespace. Ready for Part 3A. */
+.prose-reader .beowulf-caesura {
+  display: inline-block;
+  width: 1.4em;
+}
+
+/* Kennings — first-occurrence tagging. Each tagged kenning gets a
+ * subtle dotted gold underline; on hover or tap, a gloss tooltip
+ * appears with the Old English form, the literal compound, and the
+ * referent. Tagging is by scripts/beowulf/transform-kennings.ts. */
+.prose-reader [data-beowulf-kenning] {
+  text-decoration: underline dotted rgba(184, 134, 77, 0.55);
+  text-underline-offset: 3px;
+  cursor: help;
+}
+.dark .prose-reader [data-beowulf-kenning] {
+  text-decoration-color: rgba(217, 168, 106, 0.55);
+}
+.prose-reader [data-beowulf-kenning]:hover,
+.prose-reader [data-beowulf-kenning]:focus-visible {
+  text-decoration-style: solid;
+  text-decoration-color: rgba(184, 134, 77, 0.85);
+  outline: none;
+}
+.beowulf-kenning-tooltip {
+  position: fixed;
+  z-index: 60;
+  max-width: 22em;
+  padding: 0.6em 0.8em;
+  background: var(--popover, #FAF6EC);
+  color: var(--popover-foreground, #2D241A);
+  border: 1px solid rgba(107, 68, 35, 0.25);
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  font-size: 0.82rem;
+  line-height: 1.35;
+  pointer-events: none;
+}
+.dark .beowulf-kenning-tooltip {
+  background: var(--popover, #1F1B16);
+  color: var(--popover-foreground, #F0E8D8);
+  border-color: rgba(217, 168, 106, 0.25);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+.beowulf-kenning-tooltip .kn-oe {
+  font-style: italic;
+  color: var(--beowulf-bronze, #6B4423);
+  letter-spacing: 0.02em;
+  font-size: 0.92em;
+}
+.dark .beowulf-kenning-tooltip .kn-oe { color: var(--beowulf-bronze, #C8A073); }
+.beowulf-kenning-tooltip .kn-literal {
+  display: block;
+  opacity: 0.75;
+  margin-top: 0.15em;
+}
+.beowulf-kenning-tooltip .kn-arrow {
+  margin: 0 0.3em;
+  color: var(--beowulf-gold, #B8864D);
+}
+.beowulf-kenning-tooltip .kn-meaning {
+  display: block;
+  margin-top: 0.4em;
+}
+.beowulf-kenning-tooltip .kn-note {
+  display: block;
+  margin-top: 0.4em;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+/* Speaker palette — reader-time CSS attribute selectors against baked-in
+ * data-beowulf-speaker markup (baked by a later transform script, Part 4
+ * scope). Colors align with src/data/beowulf/speakers.ts; dark variants
+ * follow. */
+.prose-reader [data-beowulf-speaker="Beowulf"]        { color: #8B6B2F; }
+.prose-reader [data-beowulf-speaker="Wiglaf"]         { color: #A58A5A; }
+.prose-reader [data-beowulf-speaker="Hygelac"]        { color: #8C6840; }
+.prose-reader [data-beowulf-speaker="Hygd"]           { color: #A6876A; }
+.prose-reader [data-beowulf-speaker="Ecgtheow"]       { color: #7A5B3A; }
+.prose-reader [data-beowulf-speaker="Hrothgar"]       { color: #5A6373; }
+.prose-reader [data-beowulf-speaker="Wealhtheow"]     { color: #8F7F63; }
+.prose-reader [data-beowulf-speaker="Unferth"]        { color: #6B4A4A; }
+.prose-reader [data-beowulf-speaker="Aeschere"]       { color: #7A7F8B; }
+.prose-reader [data-beowulf-speaker="Hrothulf"]       { color: #525A66; }
+.prose-reader [data-beowulf-speaker="Grendel"]        { color: #2B1E1E; }
+.prose-reader [data-beowulf-speaker="GrendelsMother"] { color: #2A2E28; }
+.prose-reader [data-beowulf-speaker="Dragon"]         { color: #9C4F1F; }
+.prose-reader [data-beowulf-speaker="Scop"]           { color: #A17B3E; }
+.prose-reader [data-beowulf-speaker="Sigemund"]       { color: #8F6A3E; }
+.prose-reader [data-beowulf-speaker="Heremod"]        { color: #6B4E2B; }
+.prose-reader [data-beowulf-speaker="Finn"]           { color: #7F5E36; }
+.prose-reader [data-beowulf-speaker="Hildeburh"]      { color: #937B5E; }
+.prose-reader [data-beowulf-speaker="Ongentheow"]     { color: #674A2A; }
+.prose-reader [data-beowulf-speaker="Heardred"]       { color: #8E7A5A; }
+.prose-reader [data-beowulf-speaker="Freawaru"]       { color: #A68A6A; }
+.prose-reader [data-beowulf-speaker="Messenger"]      { color: #5E5146; }
+
+.dark .prose-reader [data-beowulf-speaker="Beowulf"]        { color: #D4A74E; }
+.dark .prose-reader [data-beowulf-speaker="Wiglaf"]         { color: #C7B189; }
+.dark .prose-reader [data-beowulf-speaker="Hygelac"]        { color: #BF9669; }
+.dark .prose-reader [data-beowulf-speaker="Hygd"]           { color: #CFB395; }
+.dark .prose-reader [data-beowulf-speaker="Ecgtheow"]       { color: #B89465; }
+.dark .prose-reader [data-beowulf-speaker="Hrothgar"]       { color: #A8B0BE; }
+.dark .prose-reader [data-beowulf-speaker="Wealhtheow"]     { color: #D6C79E; }
+.dark .prose-reader [data-beowulf-speaker="Unferth"]        { color: #B08585; }
+.dark .prose-reader [data-beowulf-speaker="Aeschere"]       { color: #B6BCCB; }
+.dark .prose-reader [data-beowulf-speaker="Hrothulf"]       { color: #9CA5B5; }
+.dark .prose-reader [data-beowulf-speaker="Grendel"]        { color: #7A3030; }
+.dark .prose-reader [data-beowulf-speaker="GrendelsMother"] { color: #5E7A63; }
+.dark .prose-reader [data-beowulf-speaker="Dragon"]         { color: #E28A3C; }
+.dark .prose-reader [data-beowulf-speaker="Scop"]           { color: #D5A85F; }
+.dark .prose-reader [data-beowulf-speaker="Sigemund"]       { color: #C29659; }
+.dark .prose-reader [data-beowulf-speaker="Heremod"]        { color: #A58150; }
+.dark .prose-reader [data-beowulf-speaker="Finn"]           { color: #B68B5B; }
+.dark .prose-reader [data-beowulf-speaker="Hildeburh"]      { color: #C5AC86; }
+.dark .prose-reader [data-beowulf-speaker="Ongentheow"]     { color: #A17F53; }
+.dark .prose-reader [data-beowulf-speaker="Heardred"]       { color: #C5AD85; }
+.dark .prose-reader [data-beowulf-speaker="Freawaru"]       { color: #D1B48F; }
+.dark .prose-reader [data-beowulf-speaker="Messenger"]      { color: #9A8A79; }
+
+/* ═══════════════════════════════════════════════════════════════════════
+ * Le Morte d'Arthur — Caxton's argumentum header, orientation banner,
+ * speaker colors, storylines sidebar, anchor marker.
+ * ═══════════════════════════════════════════════════════════════════════ */
+
+/* Chapter header — the small Roman numeral + the Caxton rubric rendered
+ * as an italic argumentum epigraph. */
+.prose-reader .malory-chapter-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(120, 53, 15, 0.12);
+}
+.prose-reader .malory-chapter-number {
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+  color: #78350F;
+  font-size: 1.2rem;
+  margin: 0 0 0.35rem 0;
+}
+.prose-reader .malory-argumentum {
+  font-style: italic;
+  color: #57534E;
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin: 0;
+}
+.dark .prose-reader .malory-chapter-number { color: #D4A04C; }
+.dark .prose-reader .malory-argumentum     { color: #A8A29E; }
+
+/* Book-opening orientation banner. */
+.prose-reader .malory-orientation {
+  margin: 0 0 2rem 0;
+  padding: 0.9rem 1.1rem;
+  border-left: 3px solid #D4A04C;
+  background: rgba(212, 160, 76, 0.06);
+  border-radius: 0 4px 4px 0;
+  font-size: 0.93em;
+  line-height: 1.55;
+}
+.prose-reader .malory-orientation strong {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #78350F;
+}
+.prose-reader .malory-orientation p { margin: 0; color: #44403C; }
+.dark .prose-reader .malory-orientation {
+  border-left-color: #F5C675;
+  background: rgba(245, 198, 117, 0.04);
+}
+.dark .prose-reader .malory-orientation strong { color: #F5C675; }
+.dark .prose-reader .malory-orientation p      { color: #D6D3D1; }
+
+/* Reader-chrome toolbar row. */
+.prose-reader .malory-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0 1.25rem 0;
+  padding: 0.35rem 0;
+  border-top: 1px dotted rgba(120, 53, 15, 0.14);
+  border-bottom: 1px dotted rgba(120, 53, 15, 0.14);
+  font-size: 0.8em;
+}
+.prose-reader .malory-toggle {
+  background: transparent;
+  border: 1px solid rgba(120, 53, 15, 0.24);
+  color: #78350F;
+  border-radius: 3px;
+  padding: 0.2rem 0.55rem;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: background 0.12s ease, color 0.12s ease;
+}
+.prose-reader .malory-toggle[aria-pressed="true"] {
+  background: rgba(212, 160, 76, 0.16);
+  color: #5C2A0A;
+}
+.prose-reader .malory-toggle:hover {
+  background: rgba(212, 160, 76, 0.24);
+}
+.dark .prose-reader .malory-toolbar {
+  border-top-color: rgba(245, 198, 117, 0.14);
+  border-bottom-color: rgba(245, 198, 117, 0.14);
+}
+.dark .prose-reader .malory-toggle         { color: #F5C675; border-color: rgba(245, 198, 117, 0.28); }
+.dark .prose-reader .malory-toggle[aria-pressed="true"] { background: rgba(245, 198, 117, 0.12); color: #FBD58D; }
+.dark .prose-reader .malory-toggle:hover   { background: rgba(245, 198, 117, 0.18); }
+
+/* Anchor marker — laurel-gold ✦ (Arthur palette). */
+.prose-reader .malory-anchor-marker {
+  display: inline-block;
+  color: #D4A04C;
+  font-size: 0.72em;
+  margin-right: 0.2em;
+  vertical-align: super;
+  cursor: pointer;
+  opacity: 0.78;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  user-select: none;
+  font-style: normal;
+}
+.prose-reader .malory-anchor-marker:hover,
+.prose-reader .malory-anchor-marker:focus {
+  opacity: 1;
+  transform: scale(1.15);
+  outline: none;
+}
+.dark .prose-reader .malory-anchor-marker { color: #F5C675; }
+
+/* Glosses default-ON for Malory; the enhancements component sets
+ * data-malory-glosses="off" on [data-reader-text] when the user
+ * toggles them. In that state the dotted underline disappears. */
+[data-reader-text][data-malory-glosses="off"] .prose-reader .tome-gloss {
+  border-bottom: none;
+  cursor: text;
+}
+[data-reader-text][data-malory-glosses="off"] .prose-reader .tome-gloss:hover::after,
+[data-reader-text][data-malory-glosses="off"] .prose-reader .tome-gloss:focus::after,
+[data-reader-text][data-malory-glosses="off"] .prose-reader .tome-gloss:hover::before,
+[data-reader-text][data-malory-glosses="off"] .prose-reader .tome-gloss:focus::before {
+  display: none;
+}
+
+/* Storylines sidebar. */
+.prose-reader .malory-storylines {
+  margin: 0 0 1.75rem 0;
+  padding: 0.9rem 1.1rem;
+  background: rgba(120, 53, 15, 0.04);
+  border: 1px solid rgba(120, 53, 15, 0.14);
+  border-radius: 4px;
+  font-size: 0.88em;
+  line-height: 1.5;
+}
+.prose-reader .malory-storylines h4 {
+  margin: 0 0 0.6rem 0;
+  font-size: 0.85em;
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+  color: #78350F;
+}
+.prose-reader .malory-storylines ul { list-style: none; padding: 0; margin: 0; }
+.prose-reader .malory-storyline-item { padding: 0.5rem 0; border-bottom: 1px dotted rgba(120, 53, 15, 0.1); }
+.prose-reader .malory-storyline-item:last-child { border-bottom: none; padding-bottom: 0; }
+.prose-reader .malory-storyline-label { font-weight: 600; }
+.prose-reader .malory-storyline-beat  { color: #57534E; font-size: 0.95em; }
+.prose-reader .malory-storyline-pivot { color: #44403C; font-size: 0.95em; font-weight: 500; }
+.prose-reader .malory-pivot-mark      { color: #D4A04C; margin-right: 0.35em; }
+.prose-reader .malory-storyline-span-note { color: #78716C; font-style: italic; font-size: 0.92em; }
+.prose-reader .malory-storylines-footer {
+  margin-top: 0.6rem;
+  padding-top: 0.5rem;
+  border-top: 1px dotted rgba(120, 53, 15, 0.1);
+  font-size: 0.82em;
+  color: #78716C;
+}
+.dark .prose-reader .malory-storylines         { background: rgba(245, 198, 117, 0.04); border-color: rgba(245, 198, 117, 0.14); }
+.dark .prose-reader .malory-storylines h4      { color: #F5C675; }
+.dark .prose-reader .malory-storyline-beat     { color: #D6D3D1; }
+.dark .prose-reader .malory-storyline-pivot    { color: #E7E5E4; }
+.dark .prose-reader .malory-pivot-mark         { color: #F5C675; }
+.dark .prose-reader .malory-storyline-span-note{ color: #A8A29E; }
+.dark .prose-reader .malory-storylines-footer  { color: #A8A29E; }
+
+/* Speaker-name color tinting (the enhancement walks paragraphs and
+ * colorizes the name in each `said/quoth/answered Sir X` attribution). */
+.prose-reader .malory-speaker { font-weight: 500; }

@@ -18,7 +18,7 @@
 import { useEffect, useState, useRef, useCallback } from "react"
 import { useParams, useRouter } from "next/navigation"
 import { AnimatePresence, motion } from "framer-motion"
-import { MessageSquare, BookCheck, Bookmark, BookMarked } from "lucide-react"
+import { MessageSquare, BookCheck, Bookmark, BookMarked, Palette } from "lucide-react"
 import { toast } from "sonner"
 import { supabase } from "@/lib/supabase"
 import type { Book } from "@/lib/supabase"
@@ -45,7 +45,7 @@ import { getQuestionsForChapter } from "@/lib/chapter-questions"
 import { isFrontOrBackMatter } from "@/lib/book-progress"
 import type { QuizDifficulty } from "@/lib/book-progress"
 import { getUnitNumber, getUnitLabel } from "@/lib/structural-units"
-import type { StructuralUnitType } from "@/data/books"
+import type { StructuralUnitType, BookPart } from "@/data/books"
 import { paginateHTML } from "@/lib/paginator"
 import { VirgilReflection } from "@/components/tome/virgil-reflection"
 import { AuthorLink } from "@/components/tome/author-link"
@@ -54,6 +54,37 @@ import { useTheme } from "next-themes"
 import { notifyChapterCompleted, notifyBookCompleted } from "@/lib/notifications"
 import { VirgilDrawer } from "@/components/reader/VirgilDrawer"
 import { getAnnotationsForChapter } from "@/lib/virgil/annotations"
+import { assignCharacterColors, getCharacterColor, type BookColorAssignments } from "@/lib/character-colors"
+import { StructuredEnhancements } from "@/components/reader/structured-enhancements"
+import { VerseEnhancements } from "@/components/reader/verse-enhancements"
+import { CommediaAnnotations } from "@/components/reader/commedia-annotations"
+import { IliadEnhancements } from "@/components/reader/iliad-enhancements"
+import { AeneidEnhancements } from "@/components/reader/aeneid-enhancements"
+import { ParadiseLostEnhancements } from "@/components/reader/paradise-lost-enhancements"
+import { BeowulfEnhancements } from "@/components/reader/beowulf-enhancements"
+import { BeowulfAnnotations } from "@/components/reader/beowulf-annotations"
+import { ParadiseLostAnnotations } from "@/components/reader/paradise-lost-annotations"
+import { DonJuanEnhancements } from "@/components/reader/don-juan-enhancements"
+import { DonJuanAnnotations } from "@/components/reader/don-juan-annotations"
+import { OrlandoFuriosoEnhancements } from "@/components/reader/orlando-furioso-enhancements"
+import { OrlandoFuriosoAnnotations } from "@/components/reader/orlando-furioso-annotations"
+import { FaerieQueeneAnnotations } from "@/components/reader/faerie-queene-annotations"
+import { FaerieQueeneEnhancements } from "@/components/reader/faerie-queene-enhancements"
+import { IdyllsOfTheKingEnhancements } from "@/components/reader/idylls-of-the-king-enhancements"
+import { IdyllsOfTheKingAnnotations } from "@/components/reader/idylls-of-the-king-annotations"
+import { CanterburyTalesEnhancements } from "@/components/reader/canterbury-tales-enhancements"
+import { CanterburyTalesAnnotations } from "@/components/reader/canterbury-tales-annotations"
+import { LeMorteDarthurEnhancements } from "@/components/reader/le-morte-darthur-enhancements"
+import { LeMorteDarthurAnnotations } from "@/components/reader/le-morte-darthur-annotations"
+import { DecameronEnhancements } from "@/components/reader/decameron-enhancements"
+import { AeneidAnnotations } from "@/components/reader/aeneid-annotations"
+import { CanticleHero } from "@/components/reader/canticle-hero"
+
+/** Books that have structured-content enhancements available (glosses,
+ *  scholarly annotations, Trials) layered over the standard HTML reader.
+ *  The existing chapter rendering is unchanged; enhancements attach via DOM
+ *  scanning once the chapter mounts. */
+const STRUCTURED_ENHANCEMENT_WORKS = new Set(["hamlet", "othello", "macbeth", "romeo-and-juliet", "king-lear", "richard-iii"])
 
 // ── Types ──
 
@@ -76,9 +107,11 @@ const PLACEHOLDER_HTML = `<p>The dawn spread her fingertips of rose across the s
  *  - Header blocks: <header><h2>I</h2><p>Title</p></header>
  */
 function stripLeadingHeading(html: string): string {
-  // Strip leading <header> block (contains heading + subtitle)
+  // Strip leading <header> block (contains heading + subtitle). The negative
+  // lookahead preserves scholarly-apparatus headers that opt out by carrying
+  // a `data-scholarly-header` marker — those are not title duplicates.
   let result = html.replace(
-    /^(\s*<section[^>]*>\s*)<header[^>]*>[\s\S]*?<\/header>\s*/i,
+    /^(\s*<section[^>]*>\s*)<header(?![^>]*data-scholarly-header)[^>]*>[\s\S]*?<\/header>\s*/i,
     "$1"
   )
   if (result !== html) return result
@@ -89,6 +122,34 @@ function stripLeadingHeading(html: string): string {
     "$1"
   )
   return result
+}
+
+/** Derive a CSS content-type class from the book's genre tags.
+ *  Drama books get character-color bars + table styling.
+ *  Verse/poetry books get narrower measure + stanza spacing.
+ *  Prose (default) is unchanged. */
+function getContentTypeClass(genres: string[]): string {
+  // "Drama" and "History Play" are definitive stage-play markers.
+  // "Comedy" and "Tragedy" only count as drama when "Drama" is also present —
+  // otherwise they could be comedic short stories or tragic novels.
+  const hasExplicitDrama = genres.some(g => g === "Drama" || g === "History Play")
+  // NB: "Epic Poetry" used to live in the isNovel check, which pushed every
+  // epic (Iliad, Odyssey, Aeneid, Paradise Lost, the Commedia) into prose
+  // styling. Epics are verse — keep isNovel to actual novels and stories.
+  const isNovel = genres.some(g => g.includes("Novel") || g.includes("Short Stor"))
+  if (hasExplicitDrama && !isNovel) return "content-drama"
+
+  const hasVerse = genres.some(g =>
+    ["Poetry", "Epic Poetry", "War Poetry", "Didactic Poetry",
+     "Mythological Poetry", "Novel in Verse", "Verse"].some(v => g === v)
+  )
+  const hasEpic = genres.some(g =>
+    ["Epic", "National Epic"].includes(g)
+  )
+  // Only classify as verse if not also a prose work
+  if ((hasVerse || hasEpic) && !isNovel) return "content-verse"
+
+  return "content-prose"
 }
 
 // Reader uses the global theme via next-themes. No separate theme system.
@@ -150,6 +211,32 @@ export default function ReaderPage() {
   // ── Structural unit type (for dynamic labels) ──
   const structuralUnitType: StructuralUnitType = (book as TomeBook & { structuralUnitType?: StructuralUnitType })?.structuralUnitType ?? "chapter"
 
+  // ── Parts / canticles (for grouped books like the Divine Comedy) ──
+  // When a book declares `parts`, the sidebar renders canticle groups and
+  // the header displays "Inferno — Canto V" instead of a flat canto number.
+  const bookParts: BookPart[] | undefined = (book as TomeBook | null)?.parts
+  // Map each chapter's index → partId for the sidebar's parts-aware rendering.
+  const chapterPartIds: (string | undefined)[] | undefined = bookParts
+    ? chapters.map(c => (c as TomeChapter).partId)
+    : undefined
+  // Find the current chapter's canticle (if any) and the canto's 1-based
+  // position within that canticle (so we can render "Canto V" within Inferno
+  // rather than "Canto XXXVIII" globally).
+  const currentPartId = bookParts ? (chapters[currentChapter] as TomeChapter | undefined)?.partId : undefined
+  const currentPart = bookParts?.find(p => p.id === currentPartId)
+  const cantoNumberInPart = (() => {
+    if (!currentPart || !bookParts) return currentChapter + 1
+    // Flat index of the first chapter with this partId
+    const firstIndex = chapters.findIndex(c => (c as TomeChapter).partId === currentPart.id)
+    return firstIndex >= 0 ? currentChapter - firstIndex + 1 : currentChapter + 1
+  })()
+
+  // ── Character colors (drama books only) ──
+  const [characterColors, setCharacterColors] = useState<BookColorAssignments | null>(null)
+  const [characterColorsEnabled, setCharacterColorsEnabled] = useState(true)
+  const contentTypeClass = book && "genres" in book ? getContentTypeClass((book as TomeBook).genres) : "content-prose"
+  const isDrama = contentTypeClass === "content-drama"
+
   // ────────────────────────────────────────────────────
   // Effects
   // ────────────────────────────────────────────────────
@@ -181,6 +268,17 @@ export default function ReaderPage() {
       startBook(bookId)
     } else {
       setCurrentChapter(existingProgress.currentChapterIndex)
+    }
+
+    // Optional: jump to a specific chapter via ?ch=N (useful for testing and
+    // deep-linking). Only applied if the index looks valid.
+    if (typeof window !== "undefined") {
+      const search = new URLSearchParams(window.location.search)
+      const chParam = search.get("ch")
+      if (chParam) {
+        const n = parseInt(chParam, 10)
+        if (!Number.isNaN(n) && n >= 0) setCurrentChapter(n)
+      }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [bookId])
@@ -220,6 +318,97 @@ export default function ReaderPage() {
     return () => { cancelled = true }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [bookId, currentChapter])
+
+  // ── Character color computation (drama books — scan all chapters for speech counts) ──
+  useEffect(() => {
+    if (!isDrama || !chapters.length) return
+    let cancelled = false
+
+    async function computeColors() {
+      const speechCounts: Record<string, number> = {}
+      const allNames: string[] = []
+
+      // Scan all chapters to count speeches per character
+      const total = chapters.length
+      for (let i = 0; i < total; i++) {
+        try {
+          const res = await fetch(`/content/${bookId}/ch-${i}.json`)
+          if (!res.ok) continue
+          const text = await res.text()
+          if (!text) continue
+          let data: { html?: string }
+          try { data = JSON.parse(text) } catch { continue }
+          if (!data.html) continue
+
+          const parser = new DOMParser()
+          const doc = parser.parseFromString(data.html, "text/html")
+          doc.querySelectorAll("table tr").forEach(tr => {
+            const tds = tr.querySelectorAll("td")
+            if (tds.length < 2) return
+            // Normalize: collapse whitespace, skip multi-speaker lines (contain newlines)
+            const raw = tds[0].textContent?.trim().replace(/\s+/g, " ") ?? ""
+            if (!raw || raw.length > 30 || raw.includes("\n")) return
+            speechCounts[raw] = (speechCounts[raw] ?? 0) + 1
+            if (!allNames.includes(raw)) allNames.push(raw)
+          })
+        } catch { /* skip */ }
+      }
+
+      if (cancelled || allNames.length === 0) return
+
+      // Filter out multi-speaker entries (e.g., "Marcellus Bernardo") where
+      // both parts are already known individual characters
+      const individualNames = new Set(allNames.map(n => n.toLowerCase()))
+      const filteredNames = allNames.filter(name => {
+        const parts = name.split(" ")
+        if (parts.length <= 1) return true // Single-word name, keep
+        // If ALL parts match existing individual characters, it's a group entry — skip
+        const allPartsAreCharacters = parts.every(p => individualNames.has(p.toLowerCase()))
+        return !allPartsAreCharacters
+      })
+
+      const assignments = assignCharacterColors(bookId, filteredNames, speechCounts)
+      if (!cancelled) setCharacterColors(assignments)
+    }
+
+    computeColors()
+    return () => { cancelled = true }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [bookId, isDrama, chapters.length])
+
+  // ── Apply or remove character colors on rendered DOM ──
+  useEffect(() => {
+    if (!isDrama) return
+
+    const timer = setTimeout(() => {
+      const container = document.querySelector(".prose-reader.content-drama")
+      if (!container) return
+
+      if (!characterColors || !characterColorsEnabled) {
+        // Remove all character colors when disabled or not yet computed
+        container.querySelectorAll("table tr[style]").forEach(tr => {
+          ;(tr as HTMLElement).style.removeProperty("--char-color")
+        })
+        return
+      }
+
+      const isDarkMode = document.documentElement.classList.contains("dark")
+
+      container.querySelectorAll("table tr").forEach(tr => {
+        const tds = tr.querySelectorAll("td")
+        if (tds.length < 2) return
+        const name = tds[0].textContent?.trim().replace(/\s+/g, " ")
+        if (!name) return
+
+        const color = getCharacterColor(characterColors, name, isDarkMode)
+        if (color) {
+          ;(tr as HTMLElement).style.setProperty("--char-color", color)
+        }
+      })
+    }, 50)
+
+    return () => clearTimeout(timer)
+  }, [isDrama, characterColors, characterColorsEnabled, chapterHTML, theme])
 
   // Auto-save scroll progress every 30s
   useEffect(() => {
@@ -268,9 +457,12 @@ export default function ReaderPage() {
     setChapterEndReached(false)
     const sentinel = sentinelRef.current
     if (!sentinel) return
+    // threshold 0 fires on any intersection. A 1px sentinel with a 0.5
+    // threshold was unreliable on long canto pages where the element
+    // rarely occupied more than a fraction of a pixel in the viewport.
     const observer = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting) setChapterEndReached(true) },
-      { threshold: 0.5 }
+      { threshold: 0 }
     )
     observer.observe(sentinel)
     return () => observer.disconnect()
@@ -323,12 +515,14 @@ export default function ReaderPage() {
 
       const html = stripLeadingHeading(chapterHTML)
 
+      const ctClass = book && "genres" in book ? getContentTypeClass((book as TomeBook).genres) : "content-prose"
       const computed = await paginateHTML({
         html,
         pageHeight: Math.max(50, usableH),
         pageWidth:  Math.max(50, usableW),
         fontSize,
         lineHeight: 1.8,
+        contentTypeClass: ctClass,
       })
 
       if (cancelled) return
@@ -504,8 +698,11 @@ export default function ReaderPage() {
 
   const progress               = getProgress(bookId)
   const completedChapterIndices = progress?.completedChapterIndices ?? []
-  // Compute unit display label (e.g. "Canto III", "Chapter 5", "The Dead")
-  const unitDisplay = getUnitNumber(structuralUnitType, currentChapter + 1, chapter.title)
+  // Compute unit display label (e.g. "Canto III", "Chapter 5", "The Dead").
+  // For multi-part books, number cantos within their canticle, not globally.
+  const unitDisplay = currentPart
+    ? getUnitNumber(structuralUnitType, cantoNumberInPart, chapter.title)
+    : getUnitNumber(structuralUnitType, currentChapter + 1, chapter.title)
 
   // Progress bar fraction (sub-chapter granularity in paginated modes)
   const progressFraction = viewMode === "scroll"
@@ -557,6 +754,8 @@ export default function ReaderPage() {
           onToggle={() => setSidebarOpen(!sidebarOpen)}
           completedChapterIndices={completedChapterIndices}
           structuralUnitType={structuralUnitType}
+          parts={bookParts}
+          chapterPartIds={chapterPartIds}
         />
 
         {/* Main Reader Area */}
@@ -590,9 +789,11 @@ export default function ReaderPage() {
           <div
             className="sticky top-0 z-20 flex shrink-0 items-center justify-between border-b border-border px-4 py-1.5 backdrop-blur-sm bg-background/90"
           >
-            <div className="flex flex-col min-w-0 max-w-[200px]">
+            <div className="flex flex-col min-w-0 max-w-[220px]">
               <p className="text-[10px] font-medium truncate" style={{ color: t.muted }}>
-                {book.title} — {chapter.title}
+                {currentPart
+                  ? `${book.title} — ${currentPart.title} — ${chapter.title}`
+                  : `${book.title} — ${chapter.title}`}
               </p>
               <AuthorLink
                 name={book.author}
@@ -612,6 +813,20 @@ export default function ReaderPage() {
               >
                 <BookMarked className="size-3.5" />
               </button>
+              {/* Character color coding toggle — drama books only */}
+              {isDrama && (
+                <button
+                  onClick={() => setCharacterColorsEnabled(!characterColorsEnabled)}
+                  className={cn(
+                    "flex size-7 items-center justify-center rounded-md transition-colors",
+                    characterColorsEnabled ? "text-[#D4A04C]" : "text-muted-foreground hover:opacity-70"
+                  )}
+                  aria-label={characterColorsEnabled ? "Hide character colors" : "Show character colors"}
+                  title={characterColorsEnabled ? "Hide character colors" : "Show character colors"}
+                >
+                  <Palette className="size-3.5" />
+                </button>
+              )}
               <button
                 onClick={() => setAnnotationOpen(!annotationOpen)}
                 className="flex size-7 items-center justify-center rounded-md transition-colors hover:opacity-70"
@@ -655,16 +870,304 @@ export default function ReaderPage() {
                     transition={springs.gentle}
                   >
                     <p className="text-xs font-medium uppercase tracking-wider mb-2" style={{ color: t.muted }}>
-                      {book.title}
+                      {currentPart
+                        ? `${book.title} · ${currentPart.title}`
+                        : book.title}
                     </p>
+
+                    {/* Hero image for canticle openers. Renders nothing
+                        if the current chapter is not a canticle's first
+                        canto or the part has no painting declared. */}
+                    {currentPart && (
+                      <CanticleHero
+                        part={currentPart}
+                        cantoNumberInPart={cantoNumberInPart}
+                      />
+                    )}
+
                     <h1 className="font-serif text-3xl font-semibold tracking-tight" style={{ letterSpacing: "-0.02em" }}>
                       {chapter.title}
                     </h1>
+                    {currentPart?.subtitle && cantoNumberInPart === 1 && (
+                      <p className="mt-1 text-sm italic" style={{ color: t.muted }}>
+                        {currentPart.subtitle}
+                      </p>
+                    )}
+
+                    {/* Translation note + tercet rhythm enhancement for
+                        multi-canticle verse works (Commedia). Silently
+                        no-ops for books that don't opt in. */}
+                    <VerseEnhancements
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                      parts={bookParts}
+                      currentPartId={currentPartId}
+                    />
+
+                    {/* Scholarly annotation markers (✦) for the Commedia.
+                        Inserts after the canto HTML renders and routes
+                        clicks to the shared VirgilDrawer. */}
+                    <CommediaAnnotations
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                      onOpenAnnotation={setActiveAnnotationId}
+                    />
+
+                    {/* Aeneid — ✦ annotation markers and V. monogram
+                        authorial-apostrophe markers. Mirror of the
+                        Commedia overlay; only fires for the-aeneid. */}
+                    <AeneidAnnotations
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                      onOpenAnnotation={setActiveAnnotationId}
+                    />
+
+                    {/* Iliad — translation note and faction palette legend.
+                        Speaker color coding itself is applied via CSS
+                        attribute selectors against baked-in data-iliad-*
+                        markup in the chapter HTML. */}
+                    <IliadEnhancements
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                    />
+
+                    {/* Aeneid — Dryden heroic couplets. Book header with the
+                        Roman numeral and the Latin incipit; translation note
+                        and faction palette legend. Per-line speaker color
+                        coding itself is applied via CSS attribute selectors
+                        against baked-in data-aeneid-* markup. */}
+                    <AeneidEnhancements
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                    />
+
+                    {/* Paradise Lost — English blank verse, 1674 second
+                        edition. Book header with Roman numeral + one-sentence
+                        argument + Milton's opening lines as epigraph, plus
+                        edition note and speaker-palette legend. Per-line
+                        speaker colors, line numbers every 5 lines, invocation
+                        accents, and Milton's prose Arguments are all baked
+                        into the HTML by scripts/paradise-lost/transform-book.ts
+                        and styled via CSS attribute selectors. */}
+                    <ParadiseLostEnhancements
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                    />
+
+                    {/* Paradise Lost — ✦ annotation markers + gloss
+                        decorations. Mirror of the Commedia / Aeneid
+                        overlay; only fires for paradise-lost. */}
+                    <ParadiseLostAnnotations
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                      onOpenAnnotation={setActiveAnnotationId}
+                    />
+
+                    {/* Don Juan — Byron's ottava rima counter-epic.
+                        Canto header (Roman numeral + one-sentence
+                        argument + opening line as epigraph), edition
+                        note, Byron-narrator palette legend, and reader
+                        toggles for stanza numbering and closing-couplet
+                        highlighting. Stanza tagging is done by a
+                        post-mount DOM walk — the SE source wraps each
+                        ottava rima stanza in an inner <section><p> with
+                        eight <br>-separated <span> lines. */}
+                    <DonJuanEnhancements
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                    />
+
+                    {/* Beowulf — anonymous Old English epic in Hall's 1892
+                        alliterative-verse translation (SE 2019). Renders a
+                        fitt header with Roman numeral + scholarly argument
+                        + digression flag, an edition note, reader toggles
+                        for alliteration highlighting and Old English bilingual
+                        display, and a speaker-palette legend grouped narrator /
+                        Geats / Danes / monsters / scop / northern kings.
+                        Per-line line-number anchors are baked into the HTML
+                        by scripts/beowulf/ingest-beowulf-lines.ts as
+                        data-beowulf-line / data-beowulf-poem-line /
+                        data-beowulf-fitt attributes. */}
+                    {/* Beowulf — ✦ annotation markers against the five
+                        Opus clusters (opening, Grendel fight, mere,
+                        Hrothgar's sermon, dragon+death+lament).
+                        Mirrors ParadiseLostAnnotations. Only active for
+                        bookId === "beowulf". MUST render BEFORE
+                        BeowulfEnhancements so annotation markers are
+                        placed against whole text nodes before the
+                        alliteration pass splits them. */}
+                    <BeowulfAnnotations
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                      onOpenAnnotation={setActiveAnnotationId}
+                    />
+
+                    <BeowulfEnhancements
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                    />
+
+                    {/* Orlando Furioso — canto header chrome, stanza
+                        numbers toggle, ABABABCC rhyme-scheme toggle,
+                        proem flagging, and the Storylines sidebar that
+                        this book needs to be readable at scale.
+                        Stanza tagging is done by a post-mount DOM walk
+                        — the Rose SE source wraps the canto in
+                        <section role="doc-chapter"> whose direct <p>
+                        children each hold one 8-span stanza. Only
+                        active for bookId === "orlando-furioso". */}
+                    <OrlandoFuriosoEnhancements
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                    />
+
+                    {/* Idylls of the King — Tennyson's Victorian Arthurian
+                        cycle (1891 collected edition). Idyll header with
+                        Roman numeral + scholarly argument + emotional-
+                        register + Tennyson's opening as epigraph, plus
+                        edition note and speaker-palette legend grouped
+                        narrator / sovereignty / round-table / ladies /
+                        grail / villainy / numinous. Line-number anchors
+                        are baked into the HTML by
+                        scripts/idylls/transform-book.ts as
+                        data-iotk-line / data-iotk-speaker attributes. */}
+                    <IdyllsOfTheKingEnhancements
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                    />
+
+                    {/* Idylls of the King — ✦ annotation markers (glosses
+                        added in Part 5). Mirror of the Paradise Lost /
+                        Aeneid overlay; only fires for idylls-of-the-king.
+                        Anchors match against data-iotk-line-tagged verse
+                        spans. */}
+                    <IdyllsOfTheKingAnnotations
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                      onOpenAnnotation={setActiveAnnotationId}
+                    />
+
+                    {/* Le Morte d'Arthur — Caxton's argumentum header,
+                        per-book orientation banner (Book VIII = Tristram
+                        opens, Book XIII = Grail opens), speaker-color
+                        attribution decoration, a Storylines sidebar
+                        adapted from Orlando Furioso, and a persistent
+                        "vocabulary glosses" toggle (default ON for
+                        Malory only). Only fires for le-morte-darthur. */}
+                    <LeMorteDarthurEnhancements
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                    />
+
+                    {/* Le Morte d'Arthur — ✦ annotation markers and
+                        inline archaic-vocabulary glosses (dotted
+                        underline + tooltip). Glosses cover ~116 recurring
+                        Malorisms (wit, worship, hight, orgulous, etc.).
+                        Header/argumentum text is excluded from matching
+                        to avoid false positives inside Caxton's rubrics. */}
+                    <LeMorteDarthurAnnotations
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                      onOpenAnnotation={setActiveAnnotationId}
+                    />
+
+                    {/* Canterbury Tales — scholarly header chrome for
+                        each fragment and tale: fragment Roman numeral,
+                        teller's pilgrim identity with signature color,
+                        verse-form indicator (heroic couplets / rime royal
+                        / tail-rhyme / prose / Monk's stanza), dramatic-
+                        link note explaining why this tale follows the
+                        previous one, incomplete-tale banner (Cook's,
+                        Squire's), and content notes for the Prioress's
+                        blood-libel tale, the Pardoner's coded portrait,
+                        and the bawdy fabliaux. Phase 1 foundation —
+                        per-line rhyme-scheme tagging and the FacingGloss
+                        two-column layout are Phase 2. */}
+                    <CanterburyTalesEnhancements
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                    />
+
+                    {/* Canterbury Tales — ✦ annotation markers + Middle
+                        English gloss decorations (dotted-underline model
+                        in Phase 1; replaced by the FacingGlossBlock
+                        two-column layout in Phase 2). Mirrors the
+                        Idylls / Paradise Lost overlay; only fires for
+                        the-canterbury-tales. */}
+                    <CanterburyTalesAnnotations
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                      onOpenAnnotation={setActiveAnnotationId}
+                    />
+
+                    {/* The Decameron — chapter-kind-aware header (Proem,
+                        Plague Introduction, day openings, tale headers
+                        with narrator signature color, Day IV author-
+                        intervention register, Author's Conclusion);
+                        collapsible narrator tracker; vocabulary gloss
+                        decoration pass over Payne's archaic register.
+                        Annotation markers are inserted by the shared
+                        annotation-overlay path via the global
+                        annotations registry. Only active for bookId ===
+                        "the-decameron". */}
+                    <DecameronEnhancements
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                    />
+
+                    {/* Orlando Furioso — ✦ markers + gloss decorations.
+                        Mirrors DonJuanAnnotations. Waits for the
+                        enhancements component's stanza-tagging pass
+                        (data-of-stanza) before running so anchor
+                        matching runs against the finalized DOM. */}
+                    <OrlandoFuriosoAnnotations
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                      onOpenAnnotation={setActiveAnnotationId}
+                    />
+
+                    {/* Don Juan — ✦ annotation markers + gloss
+                        decorations. Mirror of the Paradise Lost /
+                        Aeneid / Commedia overlay; only fires for
+                        don-juan. Waits for the enhancement component's
+                        stanza-tagging pass before running so anchor
+                        matching sees a stable DOM. */}
+                    <DonJuanAnnotations
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                      onOpenAnnotation={setActiveAnnotationId}
+                    />
+
+                    {/* The Faerie Queene — canto header chrome with the
+                        book + virtue + canto Roman + scholarly summary +
+                        climactic-canto chip, stanza-tagging post-mount
+                        DOM walk (data-fq-stanza, data-fq-line,
+                        data-fq-rhyme ABABBCBCC, data-fq-alexandrine on
+                        line 9), and reader toggles for stanza numbering,
+                        alexandrine highlighting, and rhyme-scheme display.
+                        No-ops on front matter (Forward, Letter). */}
+                    <FaerieQueeneEnhancements
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                    />
+
+                    {/* The Faerie Queene — ✦ annotation markers.
+                        Mirror of the Orlando Furioso / Don Juan overlay;
+                        only fires for the-faerie-queene. Decorates as
+                        soon as [data-reader-text] has non-placeholder
+                        content. The Letter to Ralegh cluster ships;
+                        canto-level clusters land with subsequent
+                        Opus/Sonnet passes. */}
+                    <FaerieQueeneAnnotations
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                      onOpenAnnotation={setActiveAnnotationId}
+                    />
                     <div className="mt-2 h-px w-16" style={{ backgroundColor: t.border }} />
 
                     {/* Body Text — strip leading heading that duplicates the chapter title */}
                     <div
-                      className="mt-8 font-serif prose-reader"
+                      className={cn("mt-8 font-serif prose-reader", book && "genres" in book ? getContentTypeClass((book as TomeBook).genres) : "content-prose")}
                       style={{
                         fontSize:   `${fontSize}px`,
                         lineHeight: 1.8,
@@ -675,6 +1178,18 @@ export default function ReaderPage() {
                         __html: stripLeadingHeading(chapterHTML),
                       }}
                     />
+
+                    {/* Structured-content enhancements: glosses, scholarly
+                        annotations, and Trials for works ingested via the
+                        structured pipeline. Attaches to the rendered DOM
+                        without changing the chapter HTML itself. */}
+                    {STRUCTURED_ENHANCEMENT_WORKS.has(bookId) && (
+                      <StructuredEnhancements
+                        workId={bookId}
+                        chapterIndex={currentChapter}
+                        chapterEndReached={chapterEndReached}
+                      />
+                    )}
 
                     {/* Virgil Reflection */}
                     {chapterEndReached && (
@@ -772,6 +1287,7 @@ export default function ReaderPage() {
                 fontSize={fontSize}
                 accentColor={genreColor}
                 onToggleToolbar={() => setSidebarOpen(s => !s)}
+                contentTypeClass={book && "genres" in book ? getContentTypeClass((book as TomeBook).genres) : "content-prose"}
               />
             </div>
           )}
