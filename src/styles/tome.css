@@ -698,6 +698,31 @@
   outline: none;
 }
 
+/* Decameron anchor markers — amber ✦ matching Boccaccio's author-voice
+ * register in the Decameron enhancements component. Clickable to open
+ * the annotation drawer. Parallel of .pl-anchor-marker. */
+.prose-reader .dec-anchor-marker {
+  display: inline-block;
+  color: #B45309;
+  font-size: 0.72em;
+  margin-right: 0.2em;
+  vertical-align: super;
+  cursor: pointer;
+  opacity: 0.78;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  user-select: none;
+  font-style: normal;
+}
+.dark .prose-reader .dec-anchor-marker {
+  color: #F59E0B;
+}
+.prose-reader .dec-anchor-marker:hover,
+.prose-reader .dec-anchor-marker:focus {
+  opacity: 1;
+  transform: scale(1.15);
+  outline: none;
+}
+
 /* Idylls of the King anchor markers — heathered-gold ✦ (Tennyson
  * narrator palette), clickable to open the annotation drawer. Parallel
  * of .pl-anchor-marker. */

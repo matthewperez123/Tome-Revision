@@ -181,13 +181,14 @@ export const SINGLE_BOOK_ACHIEVEMENTS: Achievement[] = [
   },
   {
     id: 'the-decameron-completed',
-    slug: 'the-decameron',
-    name: 'The Decameron',
-    description: 'Completed The Decameron by Giovanni Boccaccio.',
+    slug: 'member-of-the-brigata',
+    name: 'Member of the Brigata',
+    description: 'Heard all one hundred tales of Boccaccio\'s Decameron — seven ladies and three men, ten days in the hills above plague-struck Florence, and the subtitle that answered Dante.',
+    flavorText: 'Here endeth the book called Decameron and surnamed Prince Galahalt.',
     sealDesignKey: 'key',
     category: 'single-book',
     rarity: 'uncommon',
-    wisdomReward: 200,
+    wisdomReward: 250,
     unlockCondition: { type: 'complete-book', bookId: 'the-decameron' },
   },
   {

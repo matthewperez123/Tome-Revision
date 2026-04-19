@@ -77,6 +77,7 @@ import { CanterburyTalesAnnotations } from "@/components/reader/canterbury-tales
 import { LeMorteDarthurEnhancements } from "@/components/reader/le-morte-darthur-enhancements"
 import { LeMorteDarthurAnnotations } from "@/components/reader/le-morte-darthur-annotations"
 import { DecameronEnhancements } from "@/components/reader/decameron-enhancements"
+import { DecameronAnnotations } from "@/components/reader/decameron-annotations"
 import { AeneidAnnotations } from "@/components/reader/aeneid-annotations"
 import { CanticleHero } from "@/components/reader/canticle-hero"
 
@@ -1113,6 +1114,17 @@ export default function ReaderPage() {
                     <DecameronEnhancements
                       bookId={bookId}
                       currentChapter={currentChapter}
+                    />
+
+                    {/* Decameron — ✦ annotation markers. Only fires for
+                        the-decameron. Waits for the chapter body to be
+                        injected (section role="doc-chapter" / doc-preface
+                        / doc-conclusion) before running. Glosses are
+                        handled by DecameronEnhancements' own pass. */}
+                    <DecameronAnnotations
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                      onOpenAnnotation={setActiveAnnotationId}
                     />
 
                     {/* Orlando Furioso — ✦ markers + gloss decorations.
