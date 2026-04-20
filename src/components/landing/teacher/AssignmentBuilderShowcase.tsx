@@ -1,16 +1,19 @@
 "use client"
 
 import { motion, AnimatePresence } from "motion/react"
+import { BookOpen, CheckSquare, MessageCircle, PenLine, Highlighter } from "lucide-react"
 import { useAnimationLoop } from "../useAnimationLoop"
 import { TeacherShowcaseShell } from "./TeacherShowcaseShell"
 
+// Teacher-side loop target: ~4s per cycle (reader ~5.5s - 30%).
 const PHASES = [
-  { name: "idle", duration: 2000 },
-  { name: "selectBook", duration: 2500 },
-  { name: "chapters", duration: 3000 },
-  { name: "dueDate", duration: 2000 },
-  { name: "create", duration: 2500 },
-  { name: "reset", duration: 600 },
+  { name: "idle", duration: 500 },
+  { name: "pickType", duration: 600 },
+  { name: "selectBook", duration: 600 },
+  { name: "chapters", duration: 900 },
+  { name: "dueDate", duration: 600 },
+  { name: "create", duration: 700 },
+  { name: "reset", duration: 300 },
 ]
 
 const CHAPTERS = [
@@ -20,33 +23,63 @@ const CHAPTERS = [
   "Book IV: The King and Queen of Sparta",
 ]
 
+const TYPES = [
+  { key: "reading", label: "Reading", Icon: BookOpen },
+  { key: "trial", label: "Trial", Icon: CheckSquare },
+  { key: "discussion", label: "Discussion", Icon: MessageCircle },
+  { key: "essay", label: "Essay", Icon: PenLine },
+  { key: "annotation", label: "Annotation", Icon: Highlighter },
+] as const
+
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1]
 
 export function AssignmentBuilderShowcase() {
   const { phase, containerRef, isReduced } = useAnimationLoop(PHASES)
 
-  const phaseOrder = ["idle", "selectBook", "chapters", "dueDate", "create", "reset"]
+  const phaseOrder = ["idle", "pickType", "selectBook", "chapters", "dueDate", "create", "reset"]
   const phaseIdx = phaseOrder.indexOf(phase)
 
-  const bookVisible = phaseIdx >= 1 && phase !== "reset"
+  const typeSelected = phaseIdx >= 1 && phase !== "reset"
+  const bookVisible = phaseIdx >= 2 && phase !== "reset"
   const checkedCount = phase === "chapters"
     ? 4
-    : phaseIdx > 2
+    : phaseIdx > 3
       ? 4
       : 0
-  const dueDateVisible = phaseIdx >= 3 && phase !== "reset"
+  const dueDateVisible = phaseIdx >= 4 && phase !== "reset"
   const buttonGlow = phase === "create"
 
   if (isReduced) {
     return (
       <TeacherShowcaseShell
         heading="Assign any text, any chapter"
-        subcopy="Pick a book, select chapters, set a due date. Tome handles the rest."
+        subcopy="Five assignment types \u2014 Reading, Trial, Discussion, Essay, Annotation. Pick a book, select chapters, set a due date. Tome handles the rest."
         layout="mockup-right"
         bgClass="bg-muted"
       >
         <div className="bg-card rounded-xl border border-border p-6">
-          <p className="text-sm font-semibold text-foreground mb-4">New Assignment</p>
+          <p className="text-sm font-semibold text-foreground mb-3">New Assignment</p>
+          <div className="mb-4 grid grid-cols-5 gap-1.5">
+            {TYPES.map((t, i) => (
+              <div
+                key={t.key}
+                className={`rounded-md border px-1.5 py-1.5 flex flex-col items-center gap-1 ${
+                  i === 1 ? "border-indigo-500/50 bg-indigo-500/10" : "border-border"
+                }`}
+              >
+                <t.Icon
+                  className={`size-3.5 ${i === 1 ? "text-indigo-500" : "text-muted-foreground"}`}
+                />
+                <span
+                  className={`text-[9px] font-medium leading-none ${
+                    i === 1 ? "text-indigo-500" : "text-muted-foreground"
+                  }`}
+                >
+                  {t.label}
+                </span>
+              </div>
+            ))}
+          </div>
           <div className="flex items-center gap-3 mb-4">
             <div className="size-10 rounded bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-xs font-serif font-bold text-indigo-500">
               O
@@ -88,7 +121,41 @@ export function AssignmentBuilderShowcase() {
         aria-label="Animated assignment builder demonstration"
       >
         {/* Card header */}
-        <p className="text-sm font-semibold text-foreground mb-4">New Assignment</p>
+        <p className="text-sm font-semibold text-foreground mb-3">New Assignment</p>
+
+        {/* Assignment-type row — all 5 types visible, active one highlighted */}
+        <div className="mb-4 grid grid-cols-5 gap-1.5">
+          {TYPES.map((t, i) => {
+            const isActive = typeSelected && i === 1 // Trial as the cycling exemplar
+            return (
+              <motion.div
+                key={t.key}
+                animate={{
+                  backgroundColor: isActive
+                    ? "rgba(99,102,241,0.1)"
+                    : "transparent",
+                  borderColor: isActive
+                    ? "rgba(99,102,241,0.5)"
+                    : "var(--border)",
+                }}
+                transition={{ duration: 0.25, ease: EASE }}
+                className="rounded-md border px-1.5 py-1.5 flex flex-col items-center gap-1"
+                style={{ willChange: "background-color, border-color" }}
+              >
+                <t.Icon
+                  className={`size-3.5 ${isActive ? "text-indigo-500" : "text-muted-foreground"}`}
+                />
+                <span
+                  className={`text-[9px] font-medium leading-none ${
+                    isActive ? "text-indigo-500" : "text-muted-foreground"
+                  }`}
+                >
+                  {t.label}
+                </span>
+              </motion.div>
+            )
+          })}
+        </div>
 
         {/* Book selector */}
         <div className="mb-4 h-12 relative">
