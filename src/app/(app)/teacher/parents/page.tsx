@@ -161,7 +161,13 @@ function ParentsPageInner() {
                   className="mt-1 size-3 rounded border-border accent-[var(--tome-accent)]"
                   onClick={e => e.stopPropagation()}
                 />
-                <div className="flex-1 min-w-0" onClick={() => setSelectedParentId(p.id)}>
+                <button
+                  type="button"
+                  className="flex-1 min-w-0 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--tome-accent)] focus-visible:ring-offset-1 rounded"
+                  onClick={() => setSelectedParentId(p.id)}
+                  aria-pressed={isSelected}
+                  aria-label={`Open messages with ${p.firstName} ${p.lastName}`}
+                >
                   <p className="text-sm font-medium">{p.firstName} {p.lastName}</p>
                   <div className="flex flex-wrap gap-1 mt-0.5">
                     {p.linkedStudents.map(ls => (
@@ -173,7 +179,7 @@ function ParentsPageInner() {
                       Last: {new Date(lastDate).toLocaleDateString("en-US", { month: "short", day: "numeric" })}
                     </p>
                   )}
-                </div>
+                </button>
                 <div className="flex items-center gap-1 shrink-0 mt-0.5">
                   {p.preferredContact === "email" && <Mail className="size-3 text-muted-foreground" />}
                   {p.preferredContact === "sms" && <Phone className="size-3 text-muted-foreground" />}
