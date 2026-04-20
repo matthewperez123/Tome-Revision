@@ -5,7 +5,7 @@
 
 export type AnnotationTag = "linguistic" | "mythological" | "historical" | "literary-influence" | "philosophical"
 
-export type CrossReferenceType = "echo" | "source" | "parody" | "allusion" | "compare"
+export type CrossReferenceType = "echo" | "source" | "parody" | "allusion" | "compare" | "typological"
 
 export interface CrossReference {
   type: CrossReferenceType

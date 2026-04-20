@@ -19,13 +19,14 @@ export type UserStats = {
 }
 
 export type EconomyEvent =
-  | { type: "quiz_correct" }
+  | { type: "quiz_correct"; xp?: number; coins?: number }
   | { type: "quiz_wrong" }
   | { type: "chapter_complete" }
   | { type: "book_complete" }
   | { type: "reading_minutes"; minutes: number }
   | { type: "buy_streak_freeze" }
   | { type: "use_streak_freeze" }
+  | { type: "heart_refill_with_coins" }
   | { type: "achievement_unlock"; achievementId: string; wisdomReward: number }
 
 export type EconomyResult = {
@@ -40,6 +41,7 @@ export type EconomyResult = {
 export const MAX_HEARTS = 5
 export const HEART_REGEN_INTERVAL_MS = 60 * 60 * 1000 // 1 hour
 export const STREAK_FREEZE_COST = 10
+export const HEART_REFILL_COIN_COST = 15
 
 export const XP_REWARDS = {
   quiz_correct: 10,
@@ -160,10 +162,26 @@ export function applyEvent(
 
   switch (event.type) {
     case "quiz_correct": {
-      xpGained = XP_REWARDS.quiz_correct
-      coinsGained = COIN_REWARDS.quiz_correct
+      xpGained = event.xp ?? XP_REWARDS.quiz_correct
+      coinsGained = event.coins ?? COIN_REWARDS.quiz_correct
       s.xp_total += xpGained
       s.coins += coinsGained
+      break
+    }
+
+    case "heart_refill_with_coins": {
+      if (s.coins >= HEART_REFILL_COIN_COST && s.hearts < MAX_HEARTS) {
+        s.coins -= HEART_REFILL_COIN_COST
+        s.hearts = MAX_HEARTS
+        s.hearts_last_regen = new Date().toISOString()
+        notifications.push(`Hearts refilled! -${HEART_REFILL_COIN_COST} coins`)
+      } else if (s.hearts >= MAX_HEARTS) {
+        notifications.push("Hearts already full.")
+      } else {
+        notifications.push(
+          `Not enough coins. Need ${HEART_REFILL_COIN_COST}, have ${s.coins}.`
+        )
+      }
       break
     }
 
