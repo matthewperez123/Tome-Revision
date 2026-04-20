@@ -121,7 +121,7 @@ const RECENT_ACTIVITY = [
   { id: "r1", icon: BookOpen, color: "#22C55E", text: "Completed Chapter 3 of Pride and Prejudice", time: "2h ago" },
   { id: "r2", icon: Star,     color: "#A78BFA", text: "Earned 'Week Warrior' seal",                  time: "1d ago" },
   { id: "r3", icon: Trophy,   color: "#F59E0B", text: "Scored 80% on The Odyssey Book I quiz",       time: "2d ago" },
-  { id: "r4", icon: Flame,    color: "#F97316", text: "7-day streak achieved — personal milestone",  time: "3d ago" },
+  { id: "r4", icon: Flame,    color: "#F97316", text: "7-day Flame achieved — personal milestone",  time: "3d ago" },
   { id: "r5", icon: BookOpen, color: "#0EA5E9", text: "Started Crime and Punishment by Dostoevsky",  time: "4d ago" },
 ]
 
@@ -301,7 +301,7 @@ function StudentDashboard() {
             <div className="shrink-0 text-right">
               <p className="text-[11px] text-muted-foreground">Level {level.level}</p>
               <p className="font-serif text-lg font-bold" style={{ color: "#6366F1" }}>
-                {stats.xp_total} XP
+                {stats.xp_total} Wisdom
               </p>
               <div className="h-1.5 w-24 bg-muted rounded-full overflow-hidden mt-1">
                 <motion.div
@@ -333,7 +333,7 @@ function StudentDashboard() {
                 <>
                   <AlertTriangle className="size-4 shrink-0 text-amber-500" />
                   <span>
-                    Your <strong>{streak}-day</strong> streak expires tonight!{" "}
+                    Your <strong>{streak}-day</strong> Flame expires tonight!{" "}
                     <Link href="/library" className="underline underline-offset-2 hover:no-underline">
                       Read now →
                     </Link>
@@ -343,7 +343,7 @@ function StudentDashboard() {
                 <>
                   <Flame className="size-4 shrink-0 text-orange-500" />
                   <span>
-                    <strong>{streak}-day</strong> Flames streak! Read today to keep it alive.
+                    <strong>{streak}-day</strong> Flame! Read today to keep it alive.
                   </span>
                 </>
               )}
@@ -474,7 +474,7 @@ function StudentDashboard() {
                 )} />
                 <NumberTicker value={streak} className="font-serif text-2xl font-bold tabular-nums" />
               </div>
-              <p className="text-[10px] font-medium text-muted-foreground">Day streak</p>
+              <p className="text-[10px] font-medium text-muted-foreground">Day Flame</p>
               <p className="text-[9px] text-muted-foreground/60">Best: {stats.longest_streak}</p>
             </div>
 
@@ -485,7 +485,7 @@ function StudentDashboard() {
                 <NumberTicker value={stats.xp_total} className="font-serif text-2xl font-bold tabular-nums text-[#6366F1]" />
               </div>
               <p className="text-[10px] font-medium text-muted-foreground">Total Wisdom</p>
-              <p className="text-[9px] text-muted-foreground/60">XP earned</p>
+              <p className="text-[9px] text-muted-foreground/60">Wisdom earned</p>
             </div>
 
             {/* Hearts */}
