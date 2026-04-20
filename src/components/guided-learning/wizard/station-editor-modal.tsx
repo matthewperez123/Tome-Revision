@@ -57,8 +57,12 @@ export function StationEditorModal({ station: initial, onSave, onClose }: Props)
           <h3 className="text-lg font-bold">
             {initial.title ? "Edit Station" : `New ${STATION_TYPE_LABELS[station.type]} Station`}
           </h3>
-          <button onClick={onClose} className="rounded-lg p-1.5 hover:bg-muted">
-            <X className="h-4 w-4" />
+          <button
+            onClick={onClose}
+            className="rounded-lg p-1.5 hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--tome-accent)]"
+            aria-label="Close station editor"
+          >
+            <X className="size-5" aria-hidden="true" />
           </button>
         </div>
 

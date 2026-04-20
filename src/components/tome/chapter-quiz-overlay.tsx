@@ -633,7 +633,7 @@ export function ChapterQuizOverlay({
                 className="absolute top-4 right-4 z-10 p-2 rounded-full bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400"
                 aria-label="Exit trial"
               >
-                <X className="w-4 h-4" />
+                <X className="size-5" aria-hidden="true" />
               </motion.button>
             )}
           </AnimatePresence>

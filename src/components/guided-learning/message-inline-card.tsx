@@ -110,9 +110,10 @@ export function MessageInlineCard({
               setDismissed(true)
               onDismiss()
             }}
-            className="shrink-0 rounded p-1 opacity-30 hover:opacity-60"
+            className="shrink-0 rounded p-1 opacity-30 hover:opacity-60 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--tome-accent)]"
+            aria-label="Dismiss message"
           >
-            <X className="h-3 w-3" />
+            <X className="size-4" aria-hidden="true" />
           </button>
         )}
       </div>
