@@ -611,11 +611,16 @@ export default function ReaderPage() {
     }
   }, [bookId, currentChapter, chapters, completeChapter, handleChapterSelect])
 
-  const handleQuizPass = useCallback((xpEarned: number, _coinsEarned: number) => {
+  const handleQuizPass = useCallback((xpEarned: number, coinsEarned: number) => {
     const totalCount    = chapters.length || 1
     const isLastChapter = currentChapter === totalCount - 1
     const chapterData   = (chapters[currentChapter] ?? { id: `ch-${currentChapter}`, title: getUnitNumber(structuralUnitType, 1) }) as { id: string; title: string }
 
+    // Credit tier-scaled Wisdom to global stats via a single quiz_correct event
+    // with explicit xp override (the overlay already summed per-tier wisdom).
+    if (xpEarned > 0 || coinsEarned > 0) {
+      dispatchEconomy({ type: "quiz_correct", xp: xpEarned, coins: coinsEarned })
+    }
     dispatchEconomy({ type: "chapter_complete" })
     if (isLastChapter) dispatchEconomy({ type: "book_complete" })
 
@@ -623,8 +628,8 @@ export default function ReaderPage() {
     saveQuizResult(bookId, {
       chapterId:       chapterData.id,
       chapterIndex:    currentChapter,
-      score:           xpEarned / 10,
-      totalQuestions:  5,
+      score:           Math.round((xpEarned / Math.max(1, trialQuestions.length * 15)) * 100),
+      totalQuestions:  trialQuestions.length,
       passed:          true,
       xpEarned,
       completedAt:     new Date().toISOString(),
@@ -639,7 +644,7 @@ export default function ReaderPage() {
 
     setShowQuizOverlay(false)
     if (!isLastChapter) setTimeout(() => handleChapterSelect(currentChapter + 1), 300)
-  }, [bookId, currentChapter, chapters, dispatchEconomy, completeChapter, saveQuizResult, handleChapterSelect])
+  }, [bookId, currentChapter, chapters, trialQuestions.length, dispatchEconomy, completeChapter, saveQuizResult, handleChapterSelect])
 
 
   // Keyboard navigation (scroll mode only — PaginatedReader owns keyboard in capture phase)
