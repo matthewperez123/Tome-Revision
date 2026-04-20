@@ -4,20 +4,14 @@ import { useEffect, useRef } from "react"
 import { useAudience } from "@/contexts/AudienceContext"
 
 import { CarouselSection } from "./CarouselSection"
-import { FeatureGrid } from "./FeatureGrid"
 import { ReaderSection } from "./ReaderSection"
-import { QuizSection } from "./QuizSection"
 import { GamificationSection } from "./GamificationSection"
 import { WorldMapSection } from "./WorldMapSection"
-import { ClassroomSection } from "./ClassroomSection"
-import { VirgilSection } from "./VirgilSection"
 import { AnnotationShowcase } from "./AnnotationShowcase"
 import { TrialsShowcase } from "./TrialsShowcase"
-import { SealsShowcase } from "./SealsShowcase"
 import { LibraryShowcase } from "./LibraryShowcase"
 import { TimelinesShowcase } from "./TimelinesShowcase"
 import { AuthorShowcase } from "./AuthorShowcase"
-import { QuotesShowcase } from "./QuotesShowcase"
 import { BookClubsShowcase } from "./BookClubsShowcase"
 import { SearchShowcase } from "./SearchShowcase"
 import { ReadingInsightsShowcase } from "./ReadingInsightsShowcase"
@@ -76,20 +70,14 @@ export function HomepageContent() {
   return (
     <>
       <CarouselSection />
-      <FeatureGrid />
       <ReaderSection />
-      <QuizSection />
-      <GamificationSection />
-      <WorldMapSection />
-      <ClassroomSection />
-      <VirgilSection />
       <AnnotationShowcase />
       <TrialsShowcase />
-      <SealsShowcase />
+      <GamificationSection />
       <LibraryShowcase />
+      <WorldMapSection />
       <TimelinesShowcase />
       <AuthorShowcase />
-      <QuotesShowcase />
       <BookClubsShowcase />
       <SearchShowcase />
       <ReadingInsightsShowcase />
