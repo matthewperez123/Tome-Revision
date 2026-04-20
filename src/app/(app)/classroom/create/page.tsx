@@ -1,5 +1,13 @@
 "use client"
 
+// Opt out of static prerendering — this page imports Supabase via
+// useAuth/createClient, and @supabase/ssr's newer release validates the
+// URL/anon-key at module init even with placeholder fallbacks, which
+// breaks Vercel's build-time page-data collection when real env vars
+// aren't present at build time. Rendering dynamically on the server
+// (with envs available at request time) sidesteps this.
+export const dynamic = "force-dynamic"
+
 import { useState, useCallback } from "react"
 import { useRouter } from "next/navigation"
 import { motion } from "framer-motion"
