@@ -5,6 +5,7 @@ import {
   AnimatePresence,
   motion,
   useInView,
+  useReducedMotion,
   type MotionProps,
   type UseInViewOptions,
   type Variants,
@@ -47,18 +48,23 @@ export function BlurFade({
   const ref = useRef(null)
   const inViewResult = useInView(ref, { once: true, margin: inViewMargin })
   const isInView = !inView || inViewResult
+  const prefersReducedMotion = useReducedMotion()
   const defaultVariants: Variants = {
-    hidden: {
-      [direction === "left" || direction === "right" ? "x" : "y"]:
-        direction === "right" || direction === "down" ? -offset : offset,
-      opacity: 0,
-      filter: `blur(${blur})`,
-    },
-    visible: {
-      [direction === "left" || direction === "right" ? "x" : "y"]: 0,
-      opacity: 1,
-      filter: `blur(0px)`,
-    },
+    hidden: prefersReducedMotion
+      ? { opacity: 0 }
+      : {
+          [direction === "left" || direction === "right" ? "x" : "y"]:
+            direction === "right" || direction === "down" ? -offset : offset,
+          opacity: 0,
+          filter: `blur(${blur})`,
+        },
+    visible: prefersReducedMotion
+      ? { opacity: 1 }
+      : {
+          [direction === "left" || direction === "right" ? "x" : "y"]: 0,
+          opacity: 1,
+          filter: `blur(0px)`,
+        },
   }
   const combinedVariants = variant ?? defaultVariants
 
@@ -78,12 +84,16 @@ export function BlurFade({
         animate={isInView ? "visible" : "hidden"}
         exit="hidden"
         variants={combinedVariants}
-        transition={{
-          delay: 0.04 + delay,
-          duration,
-          ease: "easeOut",
-          ...(shouldTransitionFilter ? { filter: { duration } } : {}),
-        }}
+        transition={
+          prefersReducedMotion
+            ? { duration: 0 }
+            : {
+                delay: 0.04 + delay,
+                duration,
+                ease: "easeOut",
+                ...(shouldTransitionFilter ? { filter: { duration } } : {}),
+              }
+        }
         className={className}
         {...props}
       >

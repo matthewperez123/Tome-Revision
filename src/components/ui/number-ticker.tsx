@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef, type ComponentPropsWithoutRef } from "react"
-import { useInView, useMotionValue, useSpring } from "motion/react"
+import { useInView, useMotionValue, useReducedMotion, useSpring } from "motion/react"
 
 import { cn } from "@/lib/utils"
 
@@ -23,6 +23,7 @@ export function NumberTicker({
   ...props
 }: NumberTickerProps) {
   const ref = useRef<HTMLSpanElement>(null)
+  const prefersReducedMotion = useReducedMotion()
   const motionValue = useMotionValue(direction === "down" ? value : startValue)
   const springValue = useSpring(motionValue, {
     damping: 60,
@@ -32,6 +33,17 @@ export function NumberTicker({
 
   useEffect(() => {
     let timer: ReturnType<typeof setTimeout> | null = null
+
+    if (prefersReducedMotion) {
+      // Skip animation: set the final value directly on the element.
+      if (ref.current) {
+        ref.current.textContent = Intl.NumberFormat("en-US", {
+          minimumFractionDigits: decimalPlaces,
+          maximumFractionDigits: decimalPlaces,
+        }).format(Number(value.toFixed(decimalPlaces)))
+      }
+      return
+    }
 
     if (isInView) {
       timer = setTimeout(() => {
@@ -44,19 +56,19 @@ export function NumberTicker({
         clearTimeout(timer)
       }
     }
-  }, [motionValue, isInView, delay, value, direction, startValue])
+  }, [motionValue, isInView, delay, value, direction, startValue, prefersReducedMotion, decimalPlaces])
 
   useEffect(
     () =>
       springValue.on("change", (latest) => {
-        if (ref.current) {
+        if (ref.current && !prefersReducedMotion) {
           ref.current.textContent = Intl.NumberFormat("en-US", {
             minimumFractionDigits: decimalPlaces,
             maximumFractionDigits: decimalPlaces,
           }).format(Number(latest.toFixed(decimalPlaces)))
         }
       }),
-    [springValue, decimalPlaces]
+    [springValue, decimalPlaces, prefersReducedMotion]
   )
 
   return (

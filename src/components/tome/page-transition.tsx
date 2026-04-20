@@ -1,10 +1,15 @@
 "use client"
 
-import { AnimatePresence, LazyMotion, domAnimation, m } from "framer-motion"
+import { AnimatePresence, LazyMotion, domAnimation, m, useReducedMotion } from "framer-motion"
 import { usePathname } from "next/navigation"
 
 export function PageTransition({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
+  const prefersReducedMotion = useReducedMotion()
+
+  if (prefersReducedMotion) {
+    return <div className="flex-1">{children}</div>
+  }
 
   return (
     <LazyMotion features={domAnimation}>

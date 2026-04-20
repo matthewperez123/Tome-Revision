@@ -1,9 +1,10 @@
 "use client"
 
-import { memo } from "react"
+import { memo, createElement } from "react"
 import {
   AnimatePresence,
   motion,
+  useReducedMotion,
   Variants,
   type DOMMotionComponents,
   type MotionProps,
@@ -343,6 +344,17 @@ const TextAnimateBase = ({
   accessible = true,
   ...props
 }: TextAnimateProps) => {
+  const prefersReducedMotion = useReducedMotion()
+
+  // Reduced-motion short-circuit: render plain element with content.
+  if (prefersReducedMotion) {
+    return createElement(
+      Component,
+      { className, ...(props as Record<string, unknown>) },
+      children,
+    )
+  }
+
   const MotionComponent = motionElements[Component]
 
   let segments: string[] = []

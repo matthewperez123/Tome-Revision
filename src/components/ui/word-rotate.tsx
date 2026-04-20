@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { AnimatePresence, motion, type MotionProps } from "motion/react"
+import { AnimatePresence, motion, useReducedMotion, type MotionProps } from "motion/react"
 
 import { cn } from "@/lib/utils"
 
@@ -24,6 +24,7 @@ export function WordRotate({
   className,
 }: WordRotateProps) {
   const [index, setIndex] = useState(0)
+  const prefersReducedMotion = useReducedMotion()
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -34,13 +35,22 @@ export function WordRotate({
     return () => clearInterval(interval)
   }, [words, duration])
 
+  const effectiveMotionProps = prefersReducedMotion
+    ? {
+        initial: { opacity: 0 },
+        animate: { opacity: 1 },
+        exit: { opacity: 0 },
+        transition: { duration: 0 },
+      }
+    : motionProps
+
   return (
     <div className="overflow-hidden py-2">
       <AnimatePresence mode="wait">
         <motion.h1
           key={words[index]}
           className={cn(className)}
-          {...motionProps}
+          {...effectiveMotionProps}
         >
           {words[index]}
         </motion.h1>

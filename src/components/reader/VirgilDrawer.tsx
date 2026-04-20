@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { AnimatePresence, motion } from "framer-motion"
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion"
 import { X, Bookmark, BookmarkCheck } from "lucide-react"
 import { toast } from "sonner"
 import { getAnnotation } from "@/lib/virgil/annotations"
@@ -21,9 +21,7 @@ export function VirgilDrawer({ annotationId, onClose }: VirgilDrawerProps) {
   const [bookmarked, setBookmarked] = useState(false)
   const scrollRef = useRef<HTMLDivElement>(null)
 
-  const prefersReducedMotion = typeof window !== "undefined"
-    ? window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    : false
+  const prefersReducedMotion = useReducedMotion() ?? false
 
   useEffect(() => {
     if (annotationId) {
