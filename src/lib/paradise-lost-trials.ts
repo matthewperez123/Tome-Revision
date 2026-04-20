@@ -1,0 +1,367 @@
+/**
+ * Paradise Lost chapter trials — Books I through XII (chapterIndex 0..11)
+ * plus the "Justify the Ways" Master Trial (chapterIndex 12) that awards
+ * the eponymous seal, and two stretch capstones:
+ *
+ *   chapterIndex 13 — The Two Christian Epics (Commedia + Paradise Lost)
+ *   chapterIndex 14 — Epic Succession Complete (Iliad + Odyssey + Aeneid
+ *                     + Paradise Lost)
+ *
+ * Merged at lookup time by `getQuestionsForChapter` in chapter-questions.ts,
+ * following the Aeneid pattern. Schema matches `ChapterQuestion`.
+ */
+
+import type { ChapterQuestion } from "./chapter-questions"
+
+export const PARADISE_LOST_TRIALS: Record<number, ChapterQuestion[]> = {
+  // ── Book I ───────────────────────────────────────────────────────────
+  0: [
+    { id: "pl-1-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+      text: "Milton's opening line — 'Of Man's first disobedience' — consciously contrasts with which earlier epic opening?",
+      options: ["Homer's *Iliad* ('Sing, goddess, the anger of Achilles')", "Virgil's *Aeneid* ('Arms and the man I sing')", "Dante's *Inferno* ('In the middle of our life's journey')", "Hesiod's *Theogony*"],
+      correctIndex: 1,
+      explanation: "Virgil gave *arma* (war) priority; Milton gives *Man* priority and demotes war to the interior of the poem. The word-order difference is itself the theological argument — the subject of epic shifts from martial to moral." },
+    { id: "pl-1-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+      text: "Who is the 'Tuscan artist' named in Milton's simile of Satan's shield?",
+      options: ["Leonardo da Vinci", "Michelangelo", "Galileo Galilei", "Dante Alighieri"],
+      correctIndex: 2,
+      explanation: "Milton visited Galileo in 1638 at his house arrest near Florence. The Book I simile (I.284–91) is Milton's single explicit reference to a living contemporary — and imports new telescope-astronomy into the ancient cosmology of the poem." },
+    { id: "pl-1-3", type: "true_false", difficulty: "Scholar", xpReward: 10,
+      text: "Satan's line 'Better to reign in Hell, than serve in Heaven' is straightforwardly endorsed by Milton as the poem's moral.",
+      correctBool: false,
+      explanation: "The line is Satan's rhetoric, not Milton's conclusion. The moral logic presupposes that *reigning* is the highest good — which is the proposition the whole poem is written to disprove. The rhetoric is seductive; that is why it needs teaching." },
+    { id: "pl-1-4", type: "passage_id", difficulty: "Scholar", xpReward: 10,
+      text: "Which Miltonic simile deliberately echoes Virgil's *Aeneid* VI and Dante's *Inferno* III — the dead gathered like autumn leaves?",
+      options: ["'Thick as autumnal leaves that strow the brooks / In Vallombrosa'", "'High on a throne of royal state'", "'Hurled headlong flaming from the ethereal sky'", "'Pandemonium, city and proud seat / Of Lucifer'"],
+      correctIndex: 0,
+      explanation: "The simile at I.302–04 places Milton on a direct inherited line: Homer (Iliad VI.146–49), Virgil (Aeneid VI.309–10), Dante (Inferno III.112–14), and now Milton. *Vallombrosa* locates the image in Tuscany, where Milton is said to have traveled in 1638." },
+  ],
+
+  // ── Book II ──────────────────────────────────────────────────────────
+  1: [
+    { id: "pl-2-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+      text: "In the council in Hell, which fallen angel argues for open war against Heaven?",
+      options: ["Belial", "Mammon", "Moloch", "Beelzebub"],
+      correctIndex: 2,
+      explanation: "Moloch — the ancient Ammonite god of child-sacrifice — speaks first and argues for destruction. His rhetoric is the destructive pole of the four-part debate; Belial, Mammon, and Beelzebub then speak in turn." },
+    { id: "pl-2-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+      text: "Whose plan actually wins Book II's council?",
+      options: ["Moloch's — open war", "Belial's — quiet endurance", "Mammon's — build up Hell", "Beelzebub's — corrupt God's new creation"],
+      correctIndex: 3,
+      explanation: "Beelzebub delivers the plan; Milton is explicit (II.379–80) that Satan devised it. The architecture of the debate is rigged: the three opposing positions split the vote, and Satan's plan arrives in Beelzebub's mouth as if a synthesis." },
+    { id: "pl-2-3", type: "multiple_choice", difficulty: "Scholar", xpReward: 10,
+      text: "Milton's Sin — born fully-armed from Satan's head — is a direct parody of which classical myth?",
+      options: ["Prometheus's theft of fire", "Athena's birth from Zeus's head", "Pandora's jar", "Narcissus at the pool"],
+      correctIndex: 1,
+      explanation: "Hesiod (Theogony 924ff) and Pindar (Olympian 7) give Athena bursting fully-armed from Zeus's forehead. Milton inverts: Sin emerges from Satan's head the same way, turning the myth of wisdom's birth into the backstory of evil." },
+  ],
+
+  // ── Book III ─────────────────────────────────────────────────────────
+  2: [
+    { id: "pl-3-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+      text: "Book III opens with Milton's second great invocation — to what?",
+      options: ["The muse Calliope", "Holy Light, 'offspring of Heaven first-born'", "The Christian God directly", "The soul of Homer"],
+      correctIndex: 1,
+      explanation: "*Hail, holy Light* — Milton invokes the first creature of Genesis 1:3 and, within forty lines, addresses his own blindness, naming Thamyris, Homer, Tiresias, and Phineus as blind-poet predecessors." },
+    { id: "pl-3-2", type: "true_false", difficulty: "Scholar", xpReward: 10,
+      text: "In Book III, it is the *Father* who volunteers to descend and ransom Man from the consequences of the Fall.",
+      correctBool: false,
+      explanation: "The Son volunteers (III.236–37: *Behold me then; me for him, life for life / I offer*). The whole Heavenly choir stands 'mute' before the offer — Milton's most eloquent silence. The Son's offer, not the Father's command, is the theological pivot." },
+    { id: "pl-3-3", type: "multiple_choice", difficulty: "Scholar", xpReward: 10,
+      text: "The 'Paradise of Fools' in Book III is Milton's satirical geography for whom?",
+      options: ["Wealthy merchants who died without confession", "Pagan philosophers who denied the resurrection", "Catholic devotional practitioners — friars, pilgrims to relics, the self-mortifying", "Pagans who lived before Christ"],
+      correctIndex: 2,
+      explanation: "Milton's Protestantism is sharpest in this passage. *Eremites and friars, white, black, and gray, with all their trumpery* — monks, pilgrims to false relics, and the devotional excess of medieval Catholicism are placed in an upper-air 'Limbo of Vanity.'" },
+  ],
+
+  // ── Book IV ──────────────────────────────────────────────────────────
+  3: [
+    { id: "pl-4-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+      text: "On Mount Niphates in Book IV, Satan delivers a soliloquy whose famous line inverts his Book I defiance. What is the inversion?",
+      options: ["'Better to reign in Hell' → 'Better to serve in Heaven'", "'The mind is its own place' → 'Myself am Hell'", "'Hurled headlong' → 'Lifted up'", "'Father of Lies' → 'Father of Truths'"],
+      correctIndex: 1,
+      explanation: "Book I's *the mind is its own place, and in itself can make a Heaven of Hell* is bravado; Book IV's *myself am Hell* is confession. Same mental-geography metaphor, reversed. The whole poem's moral architecture hangs on the gap between the two uses." },
+    { id: "pl-4-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+      text: "Which Ovidian myth does Milton recast in Eve's water-gazing scene (IV.449–91)?",
+      options: ["Narcissus at the pool", "Daphne and Apollo", "Arachne and Athena", "Pygmalion's statue"],
+      correctIndex: 0,
+      explanation: "Eve awakes by a pool, sees her reflection, and begins to love it until God's voice redirects her to Adam. Milton is rewriting Ovid's Narcissus (Metamorphoses III.413ff) with the ending changed — Narcissus dies in self-love; Eve is redirected." },
+    { id: "pl-4-3", type: "true_false", difficulty: "Scholar", xpReward: 10,
+      text: "The golden scales that God hangs in Heaven at IV.996–1003 are a direct borrowing from Homer's *Iliad*, where Zeus weighs the fates of Achilles and Hector.",
+      correctBool: true,
+      explanation: "Iliad XXII.209–13 — Zeus lifts the scales and Hector's lot sinks. Milton Christianizes the Homeric template: God's scales signal divine preference rather than predict death, and Satan flees rather than fights." },
+  ],
+
+  // ── Book V ───────────────────────────────────────────────────────────
+  4: [
+    { id: "pl-5-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+      text: "Which angel descends to Eden in Book V to instruct Adam and Eve?",
+      options: ["Michael", "Raphael", "Gabriel", "Uriel"],
+      correctIndex: 1,
+      explanation: "Raphael — *the sociable Spirit* — arrives at noon, eats with Adam and Eve, and begins the long instruction about the rebellion of the angels. Michael arrives later, in Book XI, for the more martial instruction about fallen human history." },
+    { id: "pl-5-2", type: "true_false", difficulty: "Scholar", xpReward: 10,
+      text: "When Raphael dines with Adam and Eve, Milton insists the angel eats real food — rebutting the 'common gloss of theologians' that angelic eating is only apparent.",
+      correctBool: true,
+      explanation: "V.433–37. Milton's monism requires it: if matter and spirit are continuous substances, angels can ingest material food. The parenthetical is a direct doctrinal jab at traditional Thomist angelology." },
+    { id: "pl-5-3", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+      text: "The single loyal angel in Satan's rebel camp, who turns and returns alone to the Father, is named what?",
+      options: ["Uriel", "Abdiel", "Ithuriel", "Zephon"],
+      correctIndex: 1,
+      explanation: "*Abdiel* (Hebrew 'servant of God') is Milton's invention — not in scripture. He argues with Satan, is mocked, turns his back on the rebels, and walks alone across Heaven. Milton's autobiographical self-portrait as the faithful remnant." },
+  ],
+
+  // ── Book VI ──────────────────────────────────────────────────────────
+  5: [
+    { id: "pl-6-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+      text: "What technology do Satan and the rebel angels invent on Day 2 of the war in Heaven?",
+      options: ["The bow and arrow", "Gunpowder and cannons", "Iron armor", "The siege tower"],
+      correctIndex: 1,
+      explanation: "VI.469–520. The rebels dig up the 'originals of Nature' — sulfur and nitre — and compound gunpowder. Milton is projecting the invention of artillery back into the war in Heaven as a specifically Satanic innovation." },
+    { id: "pl-6-2", type: "multiple_choice", difficulty: "Scholar", xpReward: 10,
+      text: "Who ends the war in Heaven by driving the rebel angels out — and whose vision supplies the chariot?",
+      options: ["Michael, using the chariot of Helios", "The Son alone, using the chariot of Ezekiel 1", "Gabriel, with the choir of Seraphim", "The Father himself"],
+      correctIndex: 1,
+      explanation: "No angelic force can conclude the war; Milton's theology requires the Son alone to finish it. The chariot is the throne-chariot of Ezekiel 1, with its four cherubim and wheels-within-wheels, now drive by the Son." },
+    { id: "pl-6-3", type: "true_false", difficulty: "Sage", xpReward: 25,
+      text: "Michael's sword wounds Satan at VI.320 — producing the first instance of pain in the universe.",
+      correctBool: true,
+      explanation: "Milton's consistent monism: Satan's celestial substance can be parted, and the parting produces *nectarous humour*, an angelic blood. Pain is introduced by the rebellion; the first suffering is the cost of defending the good order." },
+  ],
+
+  // ── Book VII ─────────────────────────────────────────────────────────
+  6: [
+    { id: "pl-7-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+      text: "Book VII's subject is which biblical narrative?",
+      options: ["The Ten Commandments", "The six days of Creation (Genesis 1)", "The Flood of Noah", "The Exodus from Egypt"],
+      correctIndex: 1,
+      explanation: "Raphael's Creation narrative runs VII.243–547, versifying Genesis 1:3–31 day by day. Milton is writing in the Hexaemeron tradition (Basil, Ambrose, Du Bartas) but with his characteristic descriptive amplifications." },
+    { id: "pl-7-2", type: "multiple_choice", difficulty: "Scholar", xpReward: 10,
+      text: "Milton's invocation opens Book VII with a muse named what?",
+      options: ["Calliope", "Erato", "Urania", "Polyhymnia"],
+      correctIndex: 2,
+      explanation: "*Descend from Heaven, Urania, by that name if rightly thou art called.* The classical Urania is the muse of astronomy; Milton detaches her from the pagan pantheon and calls her the Christian muse of sacred song." },
+  ],
+
+  // ── Book VIII ────────────────────────────────────────────────────────
+  7: [
+    { id: "pl-8-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+      text: "In Book VIII's astronomy debate, Raphael's counsel to Adam about Ptolemy vs. Copernicus is what?",
+      options: ["The Ptolemaic system is correct", "The Copernican system is correct", "'The great Architect did wisely to conceal' — be lowly wise", "A third system will one day supersede both"],
+      correctIndex: 2,
+      explanation: "Raphael refuses to settle the astronomy question (VIII.72–74, 167–78). Milton's move is ethical rather than scientific: direct knowledge to what concerns you. The astronomy is held open; the humility is the lesson." },
+    { id: "pl-8-2", type: "true_false", difficulty: "Scholar", xpReward: 10,
+      text: "When Adam asks whether angels love bodily, Raphael blushes — what Milton calls 'Love's proper hue.'",
+      correctBool: true,
+      explanation: "VIII.618–19. The blush is there because Milton's monism requires it: angels are material beings, and their love is materially registered. The passage (VIII.620–29) goes on to describe angelic eros as more total than human, unobstructed by denser flesh." },
+  ],
+
+  // ── Book IX ──────────────────────────────────────────────────────────
+  8: [
+    { id: "pl-9-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+      text: "Milton's fourth invocation, at the start of Book IX, announces what genre-shift?",
+      options: ["From pastoral to tragic", "From epic to comic", "From Latinate to plain style", "From rhymed to unrhymed verse"],
+      correctIndex: 0,
+      explanation: "*I now must change / Those notes to tragic* (IX.5–6). The poem's first eight books staged epic-pastoral instruction; Book IX is the Fall itself, and Milton names the formal change at the threshold." },
+    { id: "pl-9-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+      text: "What is the theological distinction Milton draws between Eve's Fall and Adam's Fall?",
+      options: ["Eve falls by pride; Adam by greed", "Eve is deceived; Adam is not — he eats knowingly", "Eve eats first; Adam refuses and is cursed anyway", "Both fall identically; Milton makes no distinction"],
+      correctIndex: 1,
+      explanation: "IX.997–99: *he scrupled not to eat, / Against his better knowledge; not deceived, / But fondly overcome with female charm.* Adam knows exactly what the fruit means and chooses to die with Eve — marital love overriding theological knowledge." },
+    { id: "pl-9-3", type: "multiple_choice", difficulty: "Scholar", xpReward: 10,
+      text: "Who initiates the post-Fall reconciliation between Adam and Eve in Book X?",
+      options: ["Adam, after a prayer in the garden", "Eve, approaching humbly — 'Forsake me not thus, Adam'", "Michael, descending to mediate", "The Son, announcing the protevangelium"],
+      correctIndex: 1,
+      explanation: "X.914–36. Eve approaches first, offers to take the blame alone, and begins the repair. Milton — whose doctrinal positions on gender are patriarchal — gives Eve the morally generous first move. Honest reading keeps both facts in play." },
+    { id: "pl-9-4", type: "true_false", difficulty: "Sage", xpReward: 25,
+      text: "In the separation scene (IX.205–384), Eve's argument for working apart from Adam is portrayed by Milton as obviously foolish — a clear moral error on her part.",
+      correctBool: false,
+      explanation: "Milton is deliberate: Eve's argument is not foolish, Adam's yielding is not clearly wrong, both proceed with internal reasons that make sense in context. The trouble that follows is not the result of manifest error. This is why the scene has been called the most scrutinized passage in English poetry." },
+  ],
+
+  // ── Book X ───────────────────────────────────────────────────────────
+  9: [
+    { id: "pl-10-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+      text: "Who physically builds a bridge from Hell to Earth after Satan's success in Eden?",
+      options: ["Satan and his twelve chief lieutenants", "Sin and Death", "Moloch and Belial", "Chaos and Night"],
+      correctIndex: 1,
+      explanation: "X.282–324. Sin and Death gather materials from Chaos and construct an allegorical bridge, giving Sin and Death physical access to the newly-fallen Earth. The engineering of evil has been visibly completed." },
+    { id: "pl-10-2", type: "multiple_choice", difficulty: "Scholar", xpReward: 10,
+      text: "When Satan returns triumphantly to Pandemonium and delivers his victory speech, what happens to him and his followers?",
+      options: ["They receive the applause he expects", "They are all transformed into serpents, their applause becomes hissing", "They mutiny against Satan", "Michael descends and chains them"],
+      correctIndex: 1,
+      explanation: "X.508–84. The transformation happens *during* Satan's speech; Milton stages it for maximum narrative irony. The fallen legions become reptiles at the moment of what they expect to be their greatest triumph, and they taste a false fruit that turns to ashes in their mouths." },
+    { id: "pl-10-3", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+      text: "Adam's despairing question at X.743–45 ('Did I request thee, Maker, from my clay / To mould me Man?') is famously quoted by whom?",
+      options: ["William Wordsworth's *Prelude*", "Mary Shelley's *Frankenstein* (title page)", "Herman Melville's *Moby-Dick*", "Samuel Taylor Coleridge's *Rime*"],
+      correctIndex: 1,
+      explanation: "Frankenstein's title page carries Adam's lines. Shelley's Creature reads Paradise Lost as formative text and identifies with both Adam and Satan. The Milton→Shelley cross-reference is one of the strongest novel-to-epic intertexts in English literature." },
+  ],
+
+  // ── Book XI ──────────────────────────────────────────────────────────
+  10: [
+    { id: "pl-11-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+      text: "Which archangel arrives in Book XI to lead Adam and Eve out of Eden — and to show Adam the future of human history?",
+      options: ["Raphael", "Gabriel", "Michael", "Uriel"],
+      correctIndex: 2,
+      explanation: "Michael — *who is like God* in Hebrew — is the martial archangel, paired with Raphael (the hospitable angel of Books V–VIII). Michael's vision covers through the Flood in Book XI, continuing through the Messiah and beyond in Book XII." },
+    { id: "pl-11-2", type: "multiple_choice", difficulty: "Scholar", xpReward: 10,
+      text: "What does Michael say enables Adam and Eve's repentance?",
+      options: ["Predestination, irresistible grace", "Prevenient grace — 'from the Mercy-seat above'", "Their own natural reason", "The merits of their future descendants"],
+      correctIndex: 1,
+      explanation: "XI.2–4. 'Prevenient' grace *goes before* human response, enabling it without compelling it. This is Milton's clearest Arminian doctrinal statement — opposed to both strict Calvinism (irresistible grace) and Pelagianism (human self-sufficiency)." },
+    { id: "pl-11-3", type: "true_false", difficulty: "Scholar", xpReward: 10,
+      text: "Book XI includes the vision of the first death — Cain's murder of Abel — which Adam witnesses and weeps over.",
+      correctBool: true,
+      explanation: "XI.429–65. Adam's first question on seeing the scene: *is piety thus paid?* Michael's answer launches the catalogue of the many kinds of death — the lazar-house passage (XI.477–549), the most unbearable sequence in the poem." },
+  ],
+
+  // ── Book XII ─────────────────────────────────────────────────────────
+  11: [
+    { id: "pl-12-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+      text: "What is the *felix culpa* ('fortunate fault')?",
+      options: ["The idea that Eve's fall was more blameworthy than Adam's", "The doctrine that the Fall was ultimately fortunate because it permitted the Incarnation", "The claim that Satan deserves sympathy", "The belief that pagan poets prefigured Christian truth"],
+      correctIndex: 1,
+      explanation: "Augustine, *Enchiridion* 8.27; the Easter *Exsultet*: 'O felix culpa.' Milton dramatizes Adam's exclamation at XII.469ff without the narrator endorsing it. Whether Milton himself accepts the doctrine is the subject of ongoing scholarly debate." },
+    { id: "pl-12-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+      text: "What are the poem's final lines?",
+      options: ["'Not yet, my lord, dismiss me from your sight'", "'They, hand in hand, with wandering steps and slow, / Through Eden took their solitary way.'", "'So farewell Hope, and with Hope farewell Fear'", "'Long is the way and hard, that out of Hell leads up to Light.'"],
+      correctIndex: 1,
+      explanation: "The closing couplet. *Hand in hand* carries the whole marriage theology; *wandering steps and slow* registers the grief; *solitary way* registers the loss of angelic companionship. C. S. Lewis read this as chastened hope; William Empson read it as residual grief masquerading as reconciliation." },
+    { id: "pl-12-3", type: "multiple_choice", difficulty: "Scholar", xpReward: 10,
+      text: "Michael's consolation at XII.587 — 'A Paradise within thee, happier far' — promises what?",
+      options: ["The restoration of Eden in the afterlife", "An interior state of virtue and obedience that can be happier than external Eden was", "The location of a second, hidden Garden", "That Adam will eventually return to Eden before dying"],
+      correctIndex: 1,
+      explanation: "Milton's most surprising theological claim. The loss of place can be compensated by interior virtue — and the interior Paradise can, conditionally, be *happier far*. The conditional is load-bearing; the interior Paradise is not given, it is cultivated." },
+  ],
+
+  // ── Master Trial ─────────────────────────────────────────────────────
+  // chapterIndex 12 — awards the "Justify the Ways" seal. 15 questions
+  // synthesizing the arc: the fall of the angels, the council in hell,
+  // Creation, Eden, the Fall, the expulsion, Michael's prophecy.
+  12: [
+    { id: "pl-master-1", type: "multiple_choice", difficulty: "Scholar", xpReward: 10,
+      text: "Milton's stated purpose in Paradise Lost, given in the first invocation, is to do what?",
+      options: ["'Sing of arms and the man'", "'Justify the ways of God to men'", "'Relate the fall of man, and woman, and angels'", "'Amend by rhyme the errors of prose theology'"],
+      correctIndex: 1,
+      explanation: "I.25–26. *Justify* carries its 17th-century legal force: to establish as just, to defend in court. The poem is the argument; every scholarly dispute about it is downstream of this promise." },
+    { id: "pl-master-2", type: "multiple_choice", difficulty: "Scholar", xpReward: 10,
+      text: "Which of these is NOT one of Milton's four invocations?",
+      options: ["'Of Man's first disobedience' (Book I)", "'Hail, holy Light' (Book III)", "'Descend from Heaven, Urania' (Book VII)", "'Rise, O sacred Muse of Zion' (Book V)"],
+      correctIndex: 3,
+      explanation: "The four invocations are in Books I, III, VII, and IX. Book V has no formal invocation; it opens with Eve's dream narration instead. The fourth, at IX.1–47, announces the genre-shift from pastoral to tragic." },
+    { id: "pl-master-3", type: "multiple_choice", difficulty: "Scholar", xpReward: 10,
+      text: "Which pair correctly names the sequence of Satan's major speeches in Books I and II?",
+      options: ["Rouse (I.84), Survey (I.242), Rally (I.315), Council open (II.11), Council reply (II.430), Voyage (II.end)", "Rouse, Ransom, Rally, Repentance", "Council open, Council close, Niphates, Sin-and-Death", "Only one: the great rally in Book I"],
+      correctIndex: 0,
+      explanation: "Satan's Book I–II speech-cycle is the poem's largest oratorical architecture. The 'Niphates' soliloquy is Book IV (the first moment of remorse); 'Fair daughter' is Book X. Book I–II is pure Satanic rhetoric in public." },
+    { id: "pl-master-4", type: "multiple_choice", difficulty: "Scholar", xpReward: 10,
+      text: "In the Heavenly Council of Book III, what does the Son volunteer to do?",
+      options: ["To accompany Satan back to Hell", "To offer himself as ransom for Man's fall", "To command the angelic defense of Eden", "To rewrite the decrees of Fate"],
+      correctIndex: 1,
+      explanation: "III.236–37: *Behold me then; me for him, life for life / I offer.* All the Heavenly choir stands 'mute' before the offer. Milton's theological pivot: the atonement is voluntary." },
+    { id: "pl-master-5", type: "multiple_choice", difficulty: "Scholar", xpReward: 10,
+      text: "The 'great Architect' of Pandemonium is which fallen angel?",
+      options: ["Beelzebub", "Mammon", "Mulciber", "Moloch"],
+      correctIndex: 2,
+      explanation: "*Men called him Mulciber* (I.740) — the Roman cult-name for Vulcan, Latin for Hephaestus. Milton identifies the classical smith-god with a fallen angel, and Mulciber is given a forge-orange palette that deliberately echoes Hephaestus/Vulcan across the Classical Triad." },
+    { id: "pl-master-6", type: "true_false", difficulty: "Scholar", xpReward: 10,
+      text: "The line 'The mind is its own place, and in itself / Can make a Heaven of Hell, a Hell of Heaven' is spoken by Satan in Book I and is the poem's moral conclusion.",
+      correctBool: false,
+      explanation: "It is Satan's rhetoric, not Milton's conclusion. In Book IV, on Mount Niphates, Satan himself reverses the figure: 'Myself am Hell.' The Book I version is bravado; the Book IV version is confession. Milton's method is to show the same metaphor doing first one thing and then the opposite." },
+    { id: "pl-master-7", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+      text: "In Book V, what precipitates Satan's rebellion?",
+      options: ["The creation of Man", "The Father's public exaltation of the Son as 'only-begotten'", "The marriage of a sister angel", "A prophecy of Hell's creation"],
+      correctIndex: 1,
+      explanation: "V.600–04. Milton's origin-story of evil is specifically Christological: Satan's rebellion is prompted by the Father's public elevation of the Son. The word 'begot,' with its temporal specificity, has fueled three centuries of debate about Milton's Trinitarianism." },
+    { id: "pl-master-8", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+      text: "Who finishes the war in Heaven, and with what?",
+      options: ["Michael, with Gabriel's chariot", "The loyal angels together, in a mass charge", "The Son alone, using the throne-chariot of Ezekiel 1", "God the Father himself, by word"],
+      correctIndex: 2,
+      explanation: "VI.749–866. No angelic force can conclude the war — a theological point in itself — and the Son alone, in the Ezekiel-chariot with its cherubic wheels, drives the rebels out. The solo victory is rehearsal for the cross." },
+    { id: "pl-master-9", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+      text: "At the climax of Book IX, what precise theological status does Milton assign to Adam's fall?",
+      options: ["Adam is also deceived, like Eve", "Adam eats knowingly, 'not deceived, but fondly overcome with female charm'", "Adam eats by divine compulsion", "Adam's fall is illusory — only Eve has genuinely fallen"],
+      correctIndex: 1,
+      explanation: "IX.997–99. Adam's fall is of a different kind than Eve's. Eve was deceived; Adam chooses. *Fondly* in its 17th-century sense: foolishly, doting — an affective rather than intellectual failure. The scholarly debate on whether this makes Adam's fall worse or better than Eve's is live." },
+    { id: "pl-master-10", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+      text: "The 'protevangelium' (first gospel) — Milton's versification of Genesis 3:15 — appears where?",
+      options: ["Book I's opening invocation", "Book III's Heavenly Council", "Book X's curse on the Serpent: 'her seed shall bruise thy head'", "Book XII's final lines"],
+      correctIndex: 2,
+      explanation: "X.179–81. Traditional Christian reading treats the 'seed of the woman' as Christ — the Fall's curse contains its own undoing. Milton does not gloss the typology in the passage, but the whole of Michael's vision in Books XI–XII cashes it out." },
+    { id: "pl-master-11", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+      text: "Mary Shelley's *Frankenstein* (1818) quotes Paradise Lost on its title page — the lines from Adam's despair soliloquy. Which lines?",
+      options: ["'Long is the way and hard, that out of Hell leads up to Light'", "'Did I request thee, Maker, from my clay / To mould me Man?'", "'Myself am Hell'", "'Better to reign in Hell, than serve in Heaven'"],
+      correctIndex: 1,
+      explanation: "X.743–45. Frankenstein's Creature reads Paradise Lost as part of his self-education and identifies with both Adam and Satan. The title-page epigraph is the Creature's complaint delivered in Adam's voice — one of the strongest novel-to-epic intertexts in English literature." },
+    { id: "pl-master-12", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+      text: "Michael's consolation at XII.587 — 'A Paradise within thee, happier far' — is grammatically conditional. What condition does Milton imply?",
+      options: ["If Adam lives long enough", "Adam's obedience, virtue, and Christian practice must cultivate the interior Paradise continuously", "If Eve assists him", "If the Messiah comes within Adam's lifetime"],
+      correctIndex: 1,
+      explanation: "The *happier* is load-bearing. The interior Paradise is not promised but conditioned: Milton is making a strenuous claim, not a sentimental one. Modern readers often mistreat the line as consolation; Milton's theological seriousness is in the conditional." },
+    { id: "pl-master-13", type: "true_false", difficulty: "Sage", xpReward: 25,
+      text: "Paradise Lost's closing line — 'Through Eden took their solitary way' — has been read by C. S. Lewis as chastened hope and by William Empson as residual grief; both readings are defensible from the text.",
+      correctBool: true,
+      explanation: "Eighty years of Milton scholarship confirms that both readings are in the lines. The poem honors both the consolation (the world is all before them, Providence their guide) and the loss (hand in hand, solitary way, wandering steps and slow). Honest reading keeps both." },
+    { id: "pl-master-14", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+      text: "Which philosophical / theological position does Milton most clearly hold, as registered in *De Doctrina Christiana* and shaded in Paradise Lost?",
+      options: ["Strict Calvinist double predestination", "Thomist angelic incorporeality", "Arminian free will and a subordinationist (quasi-Arian) Christology", "Pelagian self-sufficient salvation"],
+      correctIndex: 2,
+      explanation: "Milton's Arminianism shows in the prevenient-grace language (XI.2–4) and the Father's speeches on free will (III.98–128). His subordinationism shows in the 'this day I have begot' passage (V.603) and in how the Father and Son are described as separate-willing-aligned rather than co-substantial. These positions were controversial in his day and are still debated." },
+    { id: "pl-master-15", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+      text: "Milton's syncretism in Book I's catalogue of fallen angels makes what claim about the gods of pagan religion?",
+      options: ["They were invented by human storytellers", "They were demonic hallucinations with no referent", "They were the fallen angels, later worshipped by humans under idol names", "They were symbols of natural forces only"],
+      correctIndex: 2,
+      explanation: "Milton's theology absorbs the classical and ancient Near Eastern pantheons into Hell's hierarchy. Moloch, Chemos, Osiris, Isis, Mulciber (= Hephaestus / Vulcan) — each is a specific fallen angel's rebranding as an idol. Every previous epic's divine machinery becomes, retroactively, the backstory of Milton's Hell." },
+  ],
+
+  // ── Christian Epic Trial (stretch) ───────────────────────────────────
+  // chapterIndex 13 — unlocks on completion of both Paradise Lost AND the
+  // Divine Comedy. Awards the "Two Christian Epics" seal. Scaffolded
+  // lightly here; the full question set is reserved for when both texts
+  // have been read closely together.
+  13: [
+    { id: "pl-christian-1", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+      text: "Dante's Satan (Inferno XXXIV) is frozen in ice up to the waist and cannot move. Milton's Satan (Paradise Lost I) is what?",
+      options: ["Also frozen, identically", "Rising from the burning lake, capable of movement, rhetoric, and leadership", "Divided into three selves", "Described only by his absence"],
+      correctIndex: 1,
+      explanation: "Milton inherits Dante's iconography (vast scale, wings, enormous posture in liquid) and inverts the one feature that matters. The whole energetic architecture of Paradise Lost — council, voyage, temptation — depends on Satan's ability to act. Dante's Satan *cannot*; Milton's *does*." },
+    { id: "pl-christian-2", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+      text: "Both poems close with the same paired image: husband-and-wife, alone, on the threshold of a new state. But which poem has the more consoling ending?",
+      options: ["Paradise Lost — Michael's 'Paradise within thee' promises restoration", "The Divine Comedy — Dante reaches the Beatific Vision with Beatrice", "Both endings are equally consoling", "Both endings are equally desolating"],
+      correctIndex: 1,
+      explanation: "Dante's Paradiso ends in full visio beatifica — the direct knowledge of God. Paradise Lost ends with the Edenic pair exiled into time. Milton's *Paradise within thee, happier far* is a conditional hope, not a realized vision. The contrast is structural: Dante is a vision-poem; Milton is a loss-poem." },
+    { id: "pl-christian-3", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+      text: "The Fathers of the Church (Augustine, in particular) are behind which theological move in both poems?",
+      options: ["The doctrine of apokatastasis (universal salvation)", "The felix culpa — the Fall as fortunate because it permits the Incarnation", "The double predestination of the damned", "The mortality of the soul"],
+      correctIndex: 1,
+      explanation: "Augustine's *Enchiridion* 8.27 and the Easter Exsultet frame the fortunate-fault doctrine. Dante's structure (Inferno → Purgatorio → Paradiso) dramatizes it at cosmic scale; Milton's structure (Fall → protevangelium → Michael's vision → 'Paradise within') dramatizes it at human scale. Different scales, shared theology." },
+  ],
+
+  // ── Epic Succession Trial (stretch) ──────────────────────────────────
+  // chapterIndex 14 — unlocks on completion of the full classical-to-
+  // Christian line: Iliad + Odyssey + Aeneid + Paradise Lost. Awards the
+  // "Epic Succession Complete" seal. Reserved as scaffold for future
+  // expansion; the full question set is deferred per Part 6 of the spec.
+  14: [
+    { id: "pl-succession-1", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+      text: "The formal self-positioning in the four great epic openings — Homer (Iliad), Homer (Odyssey), Virgil (Aeneid), Milton (Paradise Lost) — can be summarized as:",
+      options: [
+        "Anger → Man → Arms and the man → Man's first disobedience",
+        "Gods → Heroes → Kings → Priests",
+        "Troy → Odysseus → Aeneas → Satan",
+        "War → Wandering → Founding → Falling",
+      ],
+      correctIndex: 0,
+      explanation: "Each subsequent epic's first word explicitly responds to its predecessors. *Anger* (a feeling) → *Man* (a subject) → *Arms and the man* (both, with war priority) → *Man's first disobedience* (Man priority, subject now universal). Milton's positioning claims the fourth place in the line — and the theological register beyond the military one." },
+    { id: "pl-succession-2", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+      text: "Which simile Milton shares with BOTH Virgil and Dante?",
+      options: [
+        "The lion attacking the sheepfold",
+        "The shade-like leaves of autumn (dead souls)",
+        "The storm at sea",
+        "The embattled city",
+      ],
+      correctIndex: 1,
+      explanation: "Iliad VI.146 → Aeneid VI.309 → Inferno III.112 → Paradise Lost I.302. The autumn-leaves simile for the gathering of the dead is one of the clearest continuous threads from Homer through Milton. Each poet names his place on the line." },
+  ],
+}
