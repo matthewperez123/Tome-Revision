@@ -1,0 +1,216 @@
+{
+  "generatedAt": "2026-04-20",
+  "phase": 1,
+  "scope": "read-only",
+  "preflight": {
+    "progressMdFound": false,
+    "driverJsInstalled": false,
+    "mobileDockMatchesSpec": false,
+    "mobileDockCodeTabs": ["Home", "Library", "Read", "Quiz", "Profile"],
+    "mobileDockSpecTabs": ["Dashboard", "Library", "Discover", "Connections", "Profile"],
+    "motionPackagesInstalled": ["framer-motion@12.38.0", "motion@12.38.0"],
+    "orphanVirgilPanel": true
+  },
+  "routes": {
+    "totalPages": 63,
+    "totalApi": 16,
+    "groups": {
+      "app": 54,
+      "standalone": 9
+    },
+    "loadingTsxCount": 9,
+    "loadingTsxCoveragePct": 14,
+    "errorTsxCount": 1,
+    "errorTsxLocation": "src/app/error.tsx",
+    "pagesWithLoading": [
+      "src/app/(app)/clubs/loading.tsx",
+      "src/app/(app)/achievements/loading.tsx",
+      "src/app/(app)/authors/loading.tsx",
+      "src/app/(app)/author/[id]/loading.tsx",
+      "src/app/(app)/library/loading.tsx",
+      "src/app/(app)/explore/loading.tsx",
+      "src/app/(app)/dashboard/loading.tsx",
+      "src/app/(app)/social/loading.tsx",
+      "src/app/(app)/book/[id]/loading.tsx"
+    ],
+    "publicRoutes": ["/", "/login", "/signup", "/auth/callback"],
+    "publicPrefixes": ["/join/", "/learn/"],
+    "teacherOnlyPrefixes": [
+      "/classroom/create",
+      "/classroom/quiz-builder",
+      "/classroom/grading",
+      "/teacher/guided-learning",
+      "/classroom/[id]/manage"
+    ],
+    "demoModeAllowed": true,
+    "demoModeNote": "middleware.ts allows unauthenticated users into all app routes; auth redirects only fire for authenticated users with wrong role or incomplete onboarding",
+    "apiRoutes": [
+      "POST /api/quiz-generate",
+      "GET /api/time",
+      "POST/GET /api/guided-sessions",
+      "GET /api/guided-sessions/lookup",
+      "GET /api/guided-sessions/[id]",
+      "POST /api/guided-sessions/[id]/start",
+      "POST /api/guided-sessions/[id]/end",
+      "POST /api/guided-sessions/[id]/join",
+      "GET/POST /api/guided-sessions/[id]/events",
+      "GET/POST /api/guided-sessions/[id]/messages",
+      "POST /api/guided-sessions/[id]/station-advance",
+      "POST /api/guided-sessions/[id]/control",
+      "GET /api/guided-sessions/[id]/reflections",
+      "GET /api/guided-sessions/[id]/review",
+      "GET /api/structured/[workId]",
+      "GET /api/structured/[workId]/[sectionId]"
+    ],
+    "suspectedOrphanRoutes": [
+      "/bookmarks",
+      "/shelves",
+      "/shop",
+      "/social",
+      "/seals",
+      "/seals/[slug]",
+      "/timelines",
+      "/friends",
+      "/dev/components",
+      "/dev/sidebar-demo/student",
+      "/dev/sidebar-demo/teacher"
+    ],
+    "confirmedReachableViaDock": ["/", "/library", "/reading", "/quizzes", "/profile"]
+  },
+  "designTokens": {
+    "colorTokenFile": "src/lib/design-tokens.ts",
+    "motionTokenFiles": [
+      "src/lib/design-tokens.ts",
+      "src/lib/animations/sidebar-tokens.ts"
+    ],
+    "animationTokensTsExists": false,
+    "cssPrimary": "#B8924A",
+    "cssBackground": "#FAFAF8",
+    "cssForeground": "#1A1816",
+    "fonts": {
+      "display": "var(--font-display) (Playfair Display expected)",
+      "serif": "var(--font-serif) (Literata expected)",
+      "sans": "var(--font-sans) (Plus Jakarta Sans expected)",
+      "loaderVerified": false
+    },
+    "hueSpectrumSize": 18
+  },
+  "motion": {
+    "filesImportingFramerMotion": 130,
+    "filesImportingMotionReact": 59,
+    "totalAnimatedFiles": 189,
+    "animatePresenceFiles": 71,
+    "useReducedMotionFiles": 2,
+    "useReducedMotionLocations": [
+      "src/components/sidebar/animations/AnimatedSvg.tsx",
+      "src/components/sidebar/animations/AnimatedIconWrapper.tsx"
+    ],
+    "reducedMotionCoverage": "approx 1%",
+    "inlineDurationDrift": [
+      "src/components/reader/VirgilTrigger.tsx",
+      "src/components/reader/VirgilPanel.tsx",
+      "src/components/reader/VirgilDrawer.tsx",
+      "src/components/ui/progress.tsx",
+      "src/components/ui/word-rotate.tsx",
+      "src/components/ui/text-animate.tsx"
+    ],
+    "customEasingNotInTokens": [
+      {
+        "curve": "[0.32, 0.72, 0, 1]",
+        "locations": ["VirgilDrawer.tsx", "VirgilPanel.tsx"],
+        "purpose": "sheet physics"
+      }
+    ]
+  },
+  "colorDrift": {
+    "hexInReaderComponents": [
+      "src/components/reader/beowulf-enhancements.tsx",
+      "src/components/reader/structured-hamlet-reader.tsx",
+      "src/components/reader/commedia-annotations.tsx",
+      "src/components/reader/orlando-furioso-annotations.tsx",
+      "src/components/reader/don-juan-annotations.tsx",
+      "src/components/reader/faerie-queene-annotations.tsx",
+      "src/components/reader/idylls-of-the-king-annotations.tsx",
+      "src/components/reader/paradise-lost-annotations.tsx"
+    ],
+    "nonSystemFontFallbacks": [
+      "src/app/(app)/classroom/grading/essay/[submissionId]/page.tsx",
+      "src/app/(standalone)/work-preview/[workId]/[sceneId]/scene-client.tsx",
+      "src/app/(standalone)/hamlet-preview/[sceneId]/scene-client.tsx",
+      "src/components/reader/structured-hamlet-reader.tsx"
+    ]
+  },
+  "emoji": {
+    "totalOccurrencesApprox": 11,
+    "hotspots": [
+      "src/data/books.ts",
+      "src/app/(standalone)/onboarding/step-teacher-tradition.tsx"
+    ]
+  },
+  "iconConsistency": {
+    "lucideReactFilesApprox": 188,
+    "otherIconLibraries": [],
+    "closeIconSizeVariance": ["h-3 w-3", "h-4 w-4", "w-4 h-4"],
+    "closeIconAffectedFiles": [
+      "src/components/guided-learning/wizard/station-editor-modal.tsx",
+      "src/components/guided-learning/message-inline-card.tsx",
+      "src/components/tome/chapter-quiz-overlay.tsx"
+    ]
+  },
+  "forms": {
+    "rawInputApprox": 47,
+    "rawButtonApprox": 278,
+    "buttonComponentApprox": 141,
+    "divAsButtonSamples": [
+      "src/app/(app)/teacher/parents/page.tsx",
+      "src/app/(standalone)/work-preview/[workId]/[sceneId]/scene-client.tsx",
+      "src/components/reader/structured-hamlet-reader.tsx"
+    ]
+  },
+  "orphans": {
+    "confirmedUnimportedComponents": ["src/components/reader/VirgilPanel.tsx"],
+    "suspectedOrphanAnnotationComponents": [
+      "src/components/reader/beowulf-annotations.tsx",
+      "src/components/reader/commedia-annotations.tsx",
+      "src/components/reader/paradise-lost-annotations.tsx",
+      "src/components/reader/idylls-of-the-king-annotations.tsx",
+      "src/components/reader/faerie-queene-annotations.tsx",
+      "src/components/reader/don-juan-annotations.tsx",
+      "src/components/reader/orlando-furioso-annotations.tsx",
+      "src/components/reader/odyssey-annotations.tsx",
+      "src/components/reader/aeneid-annotations.tsx",
+      "src/components/reader/canterbury-tales-annotations.tsx",
+      "src/components/reader/decameron-annotations.tsx",
+      "src/components/reader/le-morte-darthur-annotations.tsx"
+    ],
+    "note": "Annotation components likely dispatched by book id — verify in read/[bookId]/page.tsx before treating as dead."
+  },
+  "priorityStack": {
+    "p0Candidates": [
+      "Delete orphan VirgilPanel.tsx (spec: older split UI == P0)",
+      "Verify reader + VirgilDrawer + MobileDock runtime health in Phase 2"
+    ],
+    "p1Candidates": [
+      "Add useReducedMotion guards across 187 animated files",
+      "Reconcile mobile dock IA (or update spec language)",
+      "Add loading.tsx to 54 pages",
+      "Add per-route error.tsx boundaries",
+      "Replace emoji 📖 and ✅ with Lucide icons",
+      "Replace Georgia serif fallbacks with var(--font-serif)",
+      "Fix <div onClick> button-misuse in annotation overlays + teacher/parents"
+    ],
+    "p2Candidates": [
+      "Consolidate motion package imports on motion/react; remove framer-motion dep",
+      "Dedupe inline durations to durations.* tokens",
+      "Add ease.sheet token for [0.32, 0.72, 0, 1] used by Virgil drawer",
+      "Tokenise or accept per-work editorial hex colors",
+      "Standardise X/close icon sizes",
+      "Raw <button> vs <Button> audit for focus rings + aria-labels"
+    ],
+    "outOfScope": [
+      "Driver.js 9-step walkthrough (library not installed)",
+      "Rhyme-scheme detection toggle (not in code)",
+      "Standards alignment / Roster import / Semester Plan (homepage only, no app-side feature)"
+    ]
+  }
+}
