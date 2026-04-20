@@ -2150,6 +2150,18 @@ export function getQuestionsForChapter(
     }
   }
 
+  // Iliad extra trials — Books V–XXIV (chapterIndex 5..24) plus the
+  // "Mēnis" Master Trial (25). QUESTION_BANK covers Books I–IV inline.
+  if (bankKey === 'iliad') {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { ILIAD_EXTRA_TRIALS } = require('./iliad-extra-trials') as typeof import('./iliad-extra-trials')
+    const iliadExtras = ILIAD_EXTRA_TRIALS[chapterIndex]
+    if (iliadExtras && iliadExtras.length > 0) {
+      const byDifficulty = iliadExtras.filter(q => q.difficulty === difficulty)
+      return byDifficulty.length > 0 ? byDifficulty : iliadExtras.filter(q => q.difficulty === 'Apprentice')
+    }
+  }
+
   // Aeneid trials — per-book (0..11), Master Trial (12), Classical Triad (13).
   if (bankKey === 'aeneid') {
     // eslint-disable-next-line @typescript-eslint/no-require-imports
