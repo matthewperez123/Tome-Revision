@@ -33,3 +33,8 @@ export const ODYSSEY_GLOSSES: OdysseyGloss[] = [
   ...ODYSSEY_GLOSSES_BOOK_1_THROUGH_12,
   ...ODYSSEY_GLOSSES_BOOK_13_THROUGH_24,
 ]
+
+/** Per-chapter filter used by the reader overlay. */
+export function getOdysseyGlossesForChapter(chapterIndex: number): OdysseyGloss[] {
+  return ODYSSEY_GLOSSES.filter((g) => g.chapterIndex === chapterIndex)
+}
