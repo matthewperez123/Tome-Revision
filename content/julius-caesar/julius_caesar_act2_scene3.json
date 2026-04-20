@@ -1,0 +1,184 @@
+{
+  "section_id": "julius_caesar_act2_scene3",
+  "work_id": "julius-caesar",
+  "sequence": 6,
+  "act": 2,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "A street near the Capitol",
+  "line_count": 12,
+  "word_count": 117,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "ARTEMIDORUS",
+      "text": "“Caesar, beware of Brutus; take heed of Cassius; come not near Casca;"
+    },
+    {
+      "number": 2,
+      "speaker": "ARTEMIDORUS",
+      "text": "have an eye to Cinna; trust not Trebonius; mark well Metellus Cimber:"
+    },
+    {
+      "number": 3,
+      "speaker": "ARTEMIDORUS",
+      "text": "Decius Brutus loves thee not: thou hast wronged Caius Ligarius. There is"
+    },
+    {
+      "number": 4,
+      "speaker": "ARTEMIDORUS",
+      "text": "but one mind in all these men, and it is bent against"
+    },
+    {
+      "number": 5,
+      "speaker": "ARTEMIDORUS",
+      "text": "Caesar. If thou beest not immortal, look about you: security gives way"
+    },
+    {
+      "number": 6,
+      "speaker": "ARTEMIDORUS",
+      "text": "to conspiracy. The mighty gods defend thee! Thy lover, “Artemidorus.”"
+    },
+    {
+      "number": 7,
+      "speaker": "ARTEMIDORUS",
+      "text": "Here will I stand till Caesar pass along,"
+    },
+    {
+      "number": 8,
+      "speaker": "ARTEMIDORUS",
+      "text": "And as a suitor will I give him this."
+    },
+    {
+      "number": 9,
+      "speaker": "ARTEMIDORUS",
+      "text": "My heart laments that virtue cannot live"
+    },
+    {
+      "number": 10,
+      "speaker": "ARTEMIDORUS",
+      "text": "Out of the teeth of emulation."
+    },
+    {
+      "number": 11,
+      "speaker": "ARTEMIDORUS",
+      "text": "If thou read this, O Caesar, thou mayst live;"
+    },
+    {
+      "number": 12,
+      "speaker": "ARTEMIDORUS",
+      "text": "If not, the Fates with traitors do contrive."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Artemidorus, reading a paper."
+    },
+    {
+      "after_line": 12,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "julius_caesar_act2_scene3_gloss1",
+      "line": 1,
+      "phrase": "Caesar, beware of Brutus",
+      "definition": "opening of Artemidorus's petition — naming each conspirator in turn; Plutarch's *Life of Caesar* records this warning"
+    },
+    {
+      "id": "julius_caesar_act2_scene3_gloss2",
+      "line": 5,
+      "phrase": "security gives way to conspiracy",
+      "definition": "complacency opens the way to plots — the tragic moral of Caesar's refusal to read this letter"
+    },
+    {
+      "id": "julius_caesar_act2_scene3_gloss3",
+      "line": 6,
+      "phrase": "lover",
+      "definition": "in Elizabethan usage, a devoted friend or well-wisher; NOT romantic"
+    },
+    {
+      "id": "julius_caesar_act2_scene3_gloss4",
+      "line": 8,
+      "phrase": "suitor",
+      "definition": "petitioner; one who presents a request"
+    },
+    {
+      "id": "julius_caesar_act2_scene3_gloss5",
+      "line": 10,
+      "phrase": "teeth of emulation",
+      "definition": "the biting jaws of envy; ambitious rivalry figured as a predator"
+    },
+    {
+      "id": "julius_caesar_act2_scene3_gloss6",
+      "line": 12,
+      "phrase": "Fates with traitors do contrive",
+      "definition": "the three Fates (classical goddesses who spin, measure, and cut the thread of life) conspire with the traitors"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "julius_caesar_act2_scene3_ann1",
+      "line_start": 1,
+      "line_end": 12,
+      "citation_display": "Julius Caesar 2.3.1–12",
+      "category": "historical",
+      "title": "Artemidorus of Cnidos and the warning that was not read",
+      "body": "The historical Artemidorus was a Greek teacher of rhetoric in Rome, according to Plutarch a friend of Brutus's circle who had learned of the plot and tried to warn Caesar. Plutarch's *Life of Caesar* §65 reports that Artemidorus pressed a written petition on Caesar at the Forum, saying 'Caesar, read this alone, and quickly'; Caesar took the paper but was prevented from reading it by the press of other petitioners.\n\nShakespeare preserves the historical detail and gives it a brief solo scene, heightening its pathos. The letter's structure — name each conspirator, predict the plot's direction — is the exact form of information Caesar needs. In 3.1 Caesar will encounter Artemidorus in person and tell him (at L7) 'What touches us ourself shall be last served.' That refusal to prioritise personal over public business is the moment the warning is lost. Shakespeare uses the historical incident to make a specific point: Caesar dies partly because he has internalised a public-service ideology that puts his own safety behind the queue.",
+      "sources": [
+        "Plutarch, *Life of Caesar* §65 (North, 1579)",
+        "Suetonius, *Divus Iulius* §81"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "julius_caesar_act2_scene3_q1",
+      "kind": "comprehension",
+      "prompt": "Who is Artemidorus, and what does he know?",
+      "options": [
+        "A priest who has read entrails",
+        "A teacher of rhetoric with ties to Brutus's circle, who has learned of the conspiracy and attempts to warn Caesar by written petition — the incident is in Plutarch",
+        "A Senator",
+        "A conspirator"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 1,
+      "anchor_line_end": 12
+    },
+    {
+      "id": "julius_caesar_act2_scene3_q2",
+      "kind": "close_reading",
+      "prompt": "What does 'security gives way to conspiracy' mean in Artemidorus's letter?",
+      "options": [
+        "Complacency about one's safety opens the way for plots — the tragic moral of Caesar's refusal to read this letter in 3.1",
+        "Artemidorus is offering Caesar a bodyguard",
+        "A criticism of the Roman Senate's lax security",
+        "An advertisement for mercenaries"
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 15,
+      "anchor_line_start": 5,
+      "anchor_line_end": 6
+    },
+    {
+      "id": "julius_caesar_act2_scene3_q3",
+      "kind": "inference",
+      "prompt": "Artemidorus signs his letter 'Thy lover, Artemidorus' — what does 'lover' mean here?",
+      "options": [
+        "It is romantic in the modern sense",
+        "'Lover' in Elizabethan usage = devoted friend, well-wisher; the same meaning Brutus uses in 'Romans, countrymen, and lovers' at 3.2",
+        "Family member",
+        "Slave"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 6,
+      "anchor_line_end": 6
+    }
+  ]
+}

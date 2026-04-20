@@ -1,0 +1,1851 @@
+{
+  "section_id": "henry_v_act4_scene1",
+  "work_id": "henry-v",
+  "sequence": 18,
+  "act": 4,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "The English camp at Agincourt",
+  "line_count": 226,
+  "word_count": 2032,
+  "est_read_minutes": 10,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KING HENRY",
+      "text": "Gloucester, ’tis true that we are in great danger;"
+    },
+    {
+      "number": 2,
+      "speaker": "KING HENRY",
+      "text": "The greater therefore should our courage be."
+    },
+    {
+      "number": 3,
+      "speaker": "KING HENRY",
+      "text": "Good morrow, brother Bedford. God Almighty!"
+    },
+    {
+      "number": 4,
+      "speaker": "KING HENRY",
+      "text": "There is some soul of goodness in things evil,"
+    },
+    {
+      "number": 5,
+      "speaker": "KING HENRY",
+      "text": "Would men observingly distil it out."
+    },
+    {
+      "number": 6,
+      "speaker": "KING HENRY",
+      "text": "For our bad neighbour makes us early stirrers,"
+    },
+    {
+      "number": 7,
+      "speaker": "KING HENRY",
+      "text": "Which is both healthful and good husbandry:"
+    },
+    {
+      "number": 8,
+      "speaker": "KING HENRY",
+      "text": "Besides, they are our outward consciences,"
+    },
+    {
+      "number": 9,
+      "speaker": "KING HENRY",
+      "text": "And preachers to us all, admonishing"
+    },
+    {
+      "number": 10,
+      "speaker": "KING HENRY",
+      "text": "That we should dress us fairly for our end."
+    },
+    {
+      "number": 11,
+      "speaker": "KING HENRY",
+      "text": "Thus may we gather honey from the weed,"
+    },
+    {
+      "number": 12,
+      "speaker": "KING HENRY",
+      "text": "And make a moral of the devil himself."
+    },
+    {
+      "number": 13,
+      "speaker": "ERPINGHAM",
+      "text": "Not so, my liege: this lodging likes me better,"
+    },
+    {
+      "number": 14,
+      "speaker": "ERPINGHAM",
+      "text": "Since I may say “Now lie I like a king.”"
+    },
+    {
+      "number": 15,
+      "speaker": "KING HENRY",
+      "text": "’Tis good for men to love their present pains"
+    },
+    {
+      "number": 16,
+      "speaker": "KING HENRY",
+      "text": "Upon example; so the spirit is eased:"
+    },
+    {
+      "number": 17,
+      "speaker": "KING HENRY",
+      "text": "And when the mind is quicken’d, out of doubt,"
+    },
+    {
+      "number": 18,
+      "speaker": "KING HENRY",
+      "text": "The organs, though defunct and dead before,"
+    },
+    {
+      "number": 19,
+      "speaker": "KING HENRY",
+      "text": "Break up their drowsy grave and newly move,"
+    },
+    {
+      "number": 20,
+      "speaker": "KING HENRY",
+      "text": "With casted slough and fresh legerity."
+    },
+    {
+      "number": 21,
+      "speaker": "KING HENRY",
+      "text": "Lend me thy cloak, Sir Thomas. Brothers both,"
+    },
+    {
+      "number": 22,
+      "speaker": "KING HENRY",
+      "text": "Commend me to the princes in our camp;"
+    },
+    {
+      "number": 23,
+      "speaker": "KING HENRY",
+      "text": "Do my good morrow to them, and anon"
+    },
+    {
+      "number": 24,
+      "speaker": "KING HENRY",
+      "text": "Desire them all to my pavilion."
+    },
+    {
+      "number": 24,
+      "speaker": "GLOUCESTER",
+      "text": "We shall, my liege."
+    },
+    {
+      "number": 25,
+      "speaker": "ERPINGHAM",
+      "text": "Shall I attend your grace?"
+    },
+    {
+      "number": 25,
+      "speaker": "KING HENRY",
+      "text": "No, my good knight;"
+    },
+    {
+      "number": 26,
+      "speaker": "KING HENRY",
+      "text": "Go with my brothers to my lords of England:"
+    },
+    {
+      "number": 27,
+      "speaker": "KING HENRY",
+      "text": "I and my bosom must debate a while,"
+    },
+    {
+      "number": 28,
+      "speaker": "KING HENRY",
+      "text": "And then I would no other company."
+    },
+    {
+      "number": 29,
+      "speaker": "ERPINGHAM",
+      "text": "The Lord in heaven bless thee, noble Harry!"
+    },
+    {
+      "number": 30,
+      "speaker": "KING HENRY",
+      "text": "God-a-mercy, old heart! thou speak’st cheerfully."
+    },
+    {
+      "number": 30,
+      "speaker": "PISTOL",
+      "text": "Qui vas là?"
+    },
+    {
+      "number": 31,
+      "speaker": "KING HENRY",
+      "text": "A friend."
+    },
+    {
+      "number": 31,
+      "speaker": "PISTOL",
+      "text": "Discuss unto me; art thou officer?"
+    },
+    {
+      "number": 32,
+      "speaker": "PISTOL",
+      "text": "Or art thou base, common and popular?"
+    },
+    {
+      "number": 33,
+      "speaker": "KING HENRY",
+      "text": "I am a gentleman of a company."
+    },
+    {
+      "number": 34,
+      "speaker": "PISTOL",
+      "text": "Trail’st thou the puissant pike?"
+    },
+    {
+      "number": 34,
+      "speaker": "KING HENRY",
+      "text": "Even so. What are you?"
+    },
+    {
+      "number": 35,
+      "speaker": "PISTOL",
+      "text": "As good a gentleman as the emperor."
+    },
+    {
+      "number": 36,
+      "speaker": "KING HENRY",
+      "text": "Then you are a better than the king."
+    },
+    {
+      "number": 37,
+      "speaker": "PISTOL",
+      "text": "The king’s a bawcock, and a heart of gold,"
+    },
+    {
+      "number": 38,
+      "speaker": "PISTOL",
+      "text": "A lad of life, an imp of fame;"
+    },
+    {
+      "number": 39,
+      "speaker": "PISTOL",
+      "text": "Of parents good, of fist most valiant:"
+    },
+    {
+      "number": 40,
+      "speaker": "PISTOL",
+      "text": "I kiss his dirty shoe, and from heart-string"
+    },
+    {
+      "number": 41,
+      "speaker": "PISTOL",
+      "text": "I love the lovely bully. What is thy name?"
+    },
+    {
+      "number": 42,
+      "speaker": "KING HENRY",
+      "text": "Harry le Roy."
+    },
+    {
+      "number": 43,
+      "speaker": "PISTOL",
+      "text": "Le Roy! a Cornish name: art thou of Cornish crew?"
+    },
+    {
+      "number": 44,
+      "speaker": "KING HENRY",
+      "text": "No, I am a Welshman."
+    },
+    {
+      "number": 44,
+      "speaker": "PISTOL",
+      "text": "Know’st thou Fluellen?"
+    },
+    {
+      "number": 45,
+      "speaker": "KING HENRY",
+      "text": "Yes."
+    },
+    {
+      "number": 46,
+      "speaker": "PISTOL",
+      "text": "Tell him I’ll knock his leek about his pate"
+    },
+    {
+      "number": 47,
+      "speaker": "PISTOL",
+      "text": "Upon Saint Davy’s day."
+    },
+    {
+      "number": 48,
+      "speaker": "KING HENRY",
+      "text": "Do not you wear your dagger in your cap that day, lest"
+    },
+    {
+      "number": 49,
+      "speaker": "KING HENRY",
+      "text": "he knock that about yours."
+    },
+    {
+      "number": 49,
+      "speaker": "PISTOL",
+      "text": "Art thou his friend?"
+    },
+    {
+      "number": 50,
+      "speaker": "KING HENRY",
+      "text": "And his kinsman too."
+    },
+    {
+      "number": 50,
+      "speaker": "PISTOL",
+      "text": "The figo for thee, then!"
+    },
+    {
+      "number": 51,
+      "speaker": "KING HENRY",
+      "text": "I thank you: God be with you!"
+    },
+    {
+      "number": 52,
+      "speaker": "PISTOL",
+      "text": "My name is Pistol call’d."
+    },
+    {
+      "number": 52,
+      "speaker": "KING HENRY",
+      "text": "It sorts well with your fierceness."
+    },
+    {
+      "number": 53,
+      "speaker": "GOWER",
+      "text": "Captain Fluellen!"
+    },
+    {
+      "number": 54,
+      "speaker": "FLUELLEN",
+      "text": "So! in the name of Jesu Christ, speak lower. It is the"
+    },
+    {
+      "number": 55,
+      "speaker": "FLUELLEN",
+      "text": "greatest admiration in the universal world, when the true and aunchient prerogatifes"
+    },
+    {
+      "number": 56,
+      "speaker": "FLUELLEN",
+      "text": "and laws of the wars is not kept: if you would take"
+    },
+    {
+      "number": 57,
+      "speaker": "FLUELLEN",
+      "text": "the pains but to examine the wars of Pompey the Great, you"
+    },
+    {
+      "number": 58,
+      "speaker": "FLUELLEN",
+      "text": "shall find, I warrant you, that there is no tiddle taddle nor"
+    },
+    {
+      "number": 59,
+      "speaker": "FLUELLEN",
+      "text": "pibble pabble in Pompey’s camp; I warrant you, you shall find the"
+    },
+    {
+      "number": 60,
+      "speaker": "FLUELLEN",
+      "text": "ceremonies of the wars, and the cares of it, and the forms"
+    },
+    {
+      "number": 61,
+      "speaker": "FLUELLEN",
+      "text": "of it, and the sobriety of it, and the modesty of it,"
+    },
+    {
+      "number": 62,
+      "speaker": "FLUELLEN",
+      "text": "to be otherwise."
+    },
+    {
+      "number": 63,
+      "speaker": "GOWER",
+      "text": "Why, the enemy is loud; you hear him all night."
+    },
+    {
+      "number": 64,
+      "speaker": "FLUELLEN",
+      "text": "If the enemy is an ass and a fool and a prating"
+    },
+    {
+      "number": 65,
+      "speaker": "FLUELLEN",
+      "text": "coxcomb, is it meet, think you, that we should also, look you,"
+    },
+    {
+      "number": 66,
+      "speaker": "FLUELLEN",
+      "text": "be an ass and a fool and a prating coxcomb? in your"
+    },
+    {
+      "number": 67,
+      "speaker": "FLUELLEN",
+      "text": "own conscience, now?"
+    },
+    {
+      "number": 67,
+      "speaker": "GOWER",
+      "text": "I will speak lower."
+    },
+    {
+      "number": 68,
+      "speaker": "FLUELLEN",
+      "text": "I pray you and beseech you that you will."
+    },
+    {
+      "number": 69,
+      "speaker": "KING HENRY",
+      "text": "Though it appear a little out of fashion,"
+    },
+    {
+      "number": 70,
+      "speaker": "KING HENRY",
+      "text": "There is much care and valour in this Welshman."
+    },
+    {
+      "number": 71,
+      "speaker": "COURT",
+      "text": "Brother John Bates, is not that the morning which breaks yonder?"
+    },
+    {
+      "number": 72,
+      "speaker": "BATES",
+      "text": "I think it be: but we have no great cause to desire"
+    },
+    {
+      "number": 73,
+      "speaker": "BATES",
+      "text": "the approach of day."
+    },
+    {
+      "number": 74,
+      "speaker": "WILLIAMS",
+      "text": "We see yonder the beginning of the day, but I think we"
+    },
+    {
+      "number": 75,
+      "speaker": "WILLIAMS",
+      "text": "shall never see the end of it. Who goes there?"
+    },
+    {
+      "number": 76,
+      "speaker": "KING HENRY",
+      "text": "A friend."
+    },
+    {
+      "number": 76,
+      "speaker": "WILLIAMS",
+      "text": "Under what captain serve you?"
+    },
+    {
+      "number": 77,
+      "speaker": "KING HENRY",
+      "text": "Under Sir Thomas Erpingham."
+    },
+    {
+      "number": 78,
+      "speaker": "WILLIAMS",
+      "text": "A good old commander and a most kind gentleman: I pray you,"
+    },
+    {
+      "number": 79,
+      "speaker": "WILLIAMS",
+      "text": "what thinks he of our estate?"
+    },
+    {
+      "number": 80,
+      "speaker": "KING HENRY",
+      "text": "Even as men wrecked upon a sand, that look to be washed"
+    },
+    {
+      "number": 81,
+      "speaker": "KING HENRY",
+      "text": "off the next tide."
+    },
+    {
+      "number": 82,
+      "speaker": "BATES",
+      "text": "He hath not told his thought to the king?"
+    },
+    {
+      "number": 83,
+      "speaker": "KING HENRY",
+      "text": "No; nor it is not meet he should. For, though I speak"
+    },
+    {
+      "number": 84,
+      "speaker": "KING HENRY",
+      "text": "it to you, I think the king is but a man, as"
+    },
+    {
+      "number": 85,
+      "speaker": "KING HENRY",
+      "text": "I am: the violet smells to him as it doth to me;"
+    },
+    {
+      "number": 86,
+      "speaker": "KING HENRY",
+      "text": "the element shows to him as it doth to me; all his"
+    },
+    {
+      "number": 87,
+      "speaker": "KING HENRY",
+      "text": "senses have but human conditions: his ceremonies laid by, in his nakedness"
+    },
+    {
+      "number": 88,
+      "speaker": "KING HENRY",
+      "text": "he appears but a man; and though his affections are higher mounted"
+    },
+    {
+      "number": 89,
+      "speaker": "KING HENRY",
+      "text": "than ours, yet, when they stoop, they stoop with the like wing."
+    },
+    {
+      "number": 90,
+      "speaker": "KING HENRY",
+      "text": "Therefore when he sees reason of fears, as we do, his fears,"
+    },
+    {
+      "number": 91,
+      "speaker": "KING HENRY",
+      "text": "out of doubt, be of the same relish as ours are: yet,"
+    },
+    {
+      "number": 92,
+      "speaker": "KING HENRY",
+      "text": "in reason, no man should possess him with any appearance of fear,"
+    },
+    {
+      "number": 93,
+      "speaker": "KING HENRY",
+      "text": "lest he, by showing it, should dishearten his army."
+    },
+    {
+      "number": 94,
+      "speaker": "BATES",
+      "text": "He may show what outward courage he will; but I believe, as"
+    },
+    {
+      "number": 95,
+      "speaker": "BATES",
+      "text": "cold a night as ’tis, he could wish himself in Thames up"
+    },
+    {
+      "number": 96,
+      "speaker": "BATES",
+      "text": "to the neck; and so I would he were, and I by"
+    },
+    {
+      "number": 97,
+      "speaker": "BATES",
+      "text": "him, at all adventures, so we were quit here."
+    },
+    {
+      "number": 98,
+      "speaker": "KING HENRY",
+      "text": "By my troth, I will speak my conscience of the King: I"
+    },
+    {
+      "number": 99,
+      "speaker": "KING HENRY",
+      "text": "think he would not wish himself anywhere but where he is."
+    },
+    {
+      "number": 100,
+      "speaker": "BATES",
+      "text": "Then I would he were here alone; so should he be sure"
+    },
+    {
+      "number": 101,
+      "speaker": "BATES",
+      "text": "to be ransomed, and a many poor men’s lives saved."
+    },
+    {
+      "number": 102,
+      "speaker": "KING HENRY",
+      "text": "I dare say you love him not so ill, to wish him"
+    },
+    {
+      "number": 103,
+      "speaker": "KING HENRY",
+      "text": "here alone, howsoever you speak this to feel other men’s minds: methinks"
+    },
+    {
+      "number": 104,
+      "speaker": "KING HENRY",
+      "text": "I could not die anywhere so contented as in the king’s company;"
+    },
+    {
+      "number": 105,
+      "speaker": "KING HENRY",
+      "text": "his cause being just and his quarrel honourable."
+    },
+    {
+      "number": 106,
+      "speaker": "WILLIAMS",
+      "text": "That’s more than we know."
+    },
+    {
+      "number": 107,
+      "speaker": "BATES",
+      "text": "Ay, or more than we should seek after; for we know enough,"
+    },
+    {
+      "number": 108,
+      "speaker": "BATES",
+      "text": "if we know we are the king’s subjects: if his cause be"
+    },
+    {
+      "number": 109,
+      "speaker": "BATES",
+      "text": "wrong, our obedience to the king wipes the crime of it out"
+    },
+    {
+      "number": 110,
+      "speaker": "BATES",
+      "text": "of us."
+    },
+    {
+      "number": 111,
+      "speaker": "WILLIAMS",
+      "text": "But if the cause be not good, the king himself hath a"
+    },
+    {
+      "number": 112,
+      "speaker": "WILLIAMS",
+      "text": "heavy reckoning to make, when all those legs and arms and heads,"
+    },
+    {
+      "number": 113,
+      "speaker": "WILLIAMS",
+      "text": "chopped off in a battle, shall join together at the latter day"
+    },
+    {
+      "number": 114,
+      "speaker": "WILLIAMS",
+      "text": "and cry all “We died at such a place;” some swearing, some"
+    },
+    {
+      "number": 115,
+      "speaker": "WILLIAMS",
+      "text": "crying for a surgeon, some upon their wives left poor behind them,"
+    },
+    {
+      "number": 116,
+      "speaker": "WILLIAMS",
+      "text": "some upon the debts they owe, some upon their children rawly left."
+    },
+    {
+      "number": 117,
+      "speaker": "WILLIAMS",
+      "text": "I am afeard there are few die well that die in a"
+    },
+    {
+      "number": 118,
+      "speaker": "WILLIAMS",
+      "text": "battle; for how can they charitably dispose of anything, when blood is"
+    },
+    {
+      "number": 119,
+      "speaker": "WILLIAMS",
+      "text": "their argument? Now, if these men do not die well, it will"
+    },
+    {
+      "number": 120,
+      "speaker": "WILLIAMS",
+      "text": "be a black matter for the king that led them to it;"
+    },
+    {
+      "number": 121,
+      "speaker": "WILLIAMS",
+      "text": "who to disobey were against all proportion of subjection."
+    },
+    {
+      "number": 122,
+      "speaker": "KING HENRY",
+      "text": "So, if a son that is by his father sent about merchandise"
+    },
+    {
+      "number": 123,
+      "speaker": "KING HENRY",
+      "text": "do sinfully miscarry upon the sea, the imputation of his wickedness, by"
+    },
+    {
+      "number": 124,
+      "speaker": "KING HENRY",
+      "text": "your rule, should be imposed upon his father that sent him: or"
+    },
+    {
+      "number": 125,
+      "speaker": "KING HENRY",
+      "text": "if a servant, under his master’s command transporting a sum of money,"
+    },
+    {
+      "number": 126,
+      "speaker": "KING HENRY",
+      "text": "be assailed by robbers and die in many irreconcil’d iniquities, you may"
+    },
+    {
+      "number": 127,
+      "speaker": "KING HENRY",
+      "text": "call the business of the master the author of the servant’s damnation:"
+    },
+    {
+      "number": 128,
+      "speaker": "KING HENRY",
+      "text": "but this is not so: the king is not bound to answer"
+    },
+    {
+      "number": 129,
+      "speaker": "KING HENRY",
+      "text": "the particular endings of his soldiers, the father of his son, nor"
+    },
+    {
+      "number": 130,
+      "speaker": "KING HENRY",
+      "text": "the master of his servant; for they purpose not their death, when"
+    },
+    {
+      "number": 131,
+      "speaker": "KING HENRY",
+      "text": "they purpose their services. Besides, there is no king, be his cause"
+    },
+    {
+      "number": 132,
+      "speaker": "KING HENRY",
+      "text": "never so spotless, if it come to the arbitrement of swords, can"
+    },
+    {
+      "number": 133,
+      "speaker": "KING HENRY",
+      "text": "try it out with all unspotted soldiers: some peradventure have on them"
+    },
+    {
+      "number": 134,
+      "speaker": "KING HENRY",
+      "text": "the guilt of premeditated and contrived murder; some, of beguiling virgins with"
+    },
+    {
+      "number": 135,
+      "speaker": "KING HENRY",
+      "text": "the broken seals of perjury; some, making the wars their bulwark, that"
+    },
+    {
+      "number": 136,
+      "speaker": "KING HENRY",
+      "text": "have before gored the gentle bosom of peace with pillage and robbery."
+    },
+    {
+      "number": 137,
+      "speaker": "KING HENRY",
+      "text": "Now, if these men have defeated the law and outrun native punishment,"
+    },
+    {
+      "number": 138,
+      "speaker": "KING HENRY",
+      "text": "though they can outstrip men, they have no wings to fly from"
+    },
+    {
+      "number": 139,
+      "speaker": "KING HENRY",
+      "text": "God: war is his beadle, war is his vengeance; so that here"
+    },
+    {
+      "number": 140,
+      "speaker": "KING HENRY",
+      "text": "men are punished for before-breach of the king’s laws in now the"
+    },
+    {
+      "number": 141,
+      "speaker": "KING HENRY",
+      "text": "king’s quarrel: where they feared the death, they have borne life away;"
+    },
+    {
+      "number": 142,
+      "speaker": "KING HENRY",
+      "text": "and where they would be safe, they perish: then if they die"
+    },
+    {
+      "number": 143,
+      "speaker": "KING HENRY",
+      "text": "unprovided, no more is the king guilty of their damnation than he"
+    },
+    {
+      "number": 144,
+      "speaker": "KING HENRY",
+      "text": "was before guilty of those impieties for the which they are now"
+    },
+    {
+      "number": 145,
+      "speaker": "KING HENRY",
+      "text": "visited. Every subject’s duty is the king’s; but every subject’s soul is"
+    },
+    {
+      "number": 146,
+      "speaker": "KING HENRY",
+      "text": "his own. Therefore should every soldier in the wars do as every"
+    },
+    {
+      "number": 147,
+      "speaker": "KING HENRY",
+      "text": "sick man in his bed, wash every mote out of his conscience:"
+    },
+    {
+      "number": 148,
+      "speaker": "KING HENRY",
+      "text": "and dying so, death is to him advantage; or not dying, the"
+    },
+    {
+      "number": 149,
+      "speaker": "KING HENRY",
+      "text": "time was blessedly lost wherein such preparation was gained: and in him"
+    },
+    {
+      "number": 150,
+      "speaker": "KING HENRY",
+      "text": "that escapes, it were not sin to think that, making God so"
+    },
+    {
+      "number": 151,
+      "speaker": "KING HENRY",
+      "text": "free an offer, He let him outlive that day to see His"
+    },
+    {
+      "number": 152,
+      "speaker": "KING HENRY",
+      "text": "greatness and to teach others how they should prepare."
+    },
+    {
+      "number": 153,
+      "speaker": "WILLIAMS",
+      "text": "’Tis certain, every man that dies ill, the ill upon his own"
+    },
+    {
+      "number": 154,
+      "speaker": "WILLIAMS",
+      "text": "head, the king is not to answer for it."
+    },
+    {
+      "number": 155,
+      "speaker": "BATES",
+      "text": "I do not desire he should answer for me; and yet I"
+    },
+    {
+      "number": 156,
+      "speaker": "BATES",
+      "text": "determine to fight lustily for him."
+    },
+    {
+      "number": 157,
+      "speaker": "KING HENRY",
+      "text": "I myself heard the king say he would not be ransomed."
+    },
+    {
+      "number": 158,
+      "speaker": "WILLIAMS",
+      "text": "Ay, he said so, to make us fight cheerfully: but when our"
+    },
+    {
+      "number": 159,
+      "speaker": "WILLIAMS",
+      "text": "throats are cut, he may be ransomed, and we ne’er the wiser."
+    },
+    {
+      "number": 160,
+      "speaker": "KING HENRY",
+      "text": "If I live to see it, I will never trust his word after."
+    },
+    {
+      "number": 161,
+      "speaker": "WILLIAMS",
+      "text": "You pay him then. That’s a perilous shot out of an elder-gun,"
+    },
+    {
+      "number": 162,
+      "speaker": "WILLIAMS",
+      "text": "that a poor and a private displeasure can do against a monarch!"
+    },
+    {
+      "number": 163,
+      "speaker": "WILLIAMS",
+      "text": "you may as well go about to turn the sun to ice"
+    },
+    {
+      "number": 164,
+      "speaker": "WILLIAMS",
+      "text": "with fanning in his face with a peacock’s feather. You’ll never trust"
+    },
+    {
+      "number": 165,
+      "speaker": "WILLIAMS",
+      "text": "his word after! come, ’tis a foolish saying."
+    },
+    {
+      "number": 166,
+      "speaker": "KING HENRY",
+      "text": "Your reproof is something too round: I should be angry with you,"
+    },
+    {
+      "number": 167,
+      "speaker": "KING HENRY",
+      "text": "if the time were convenient."
+    },
+    {
+      "number": 168,
+      "speaker": "WILLIAMS",
+      "text": "Let it be a quarrel between us, if you live."
+    },
+    {
+      "number": 169,
+      "speaker": "KING HENRY",
+      "text": "I embrace it."
+    },
+    {
+      "number": 169,
+      "speaker": "WILLIAMS",
+      "text": "How shall I know thee again?"
+    },
+    {
+      "number": 170,
+      "speaker": "KING HENRY",
+      "text": "Give me any gage of thine, and I will wear it in"
+    },
+    {
+      "number": 171,
+      "speaker": "KING HENRY",
+      "text": "my bonnet: then, if ever thou darest acknowledge it, I will make"
+    },
+    {
+      "number": 172,
+      "speaker": "KING HENRY",
+      "text": "it my quarrel."
+    },
+    {
+      "number": 173,
+      "speaker": "WILLIAMS",
+      "text": "Here’s my glove: give me another of thine."
+    },
+    {
+      "number": 174,
+      "speaker": "KING HENRY",
+      "text": "There."
+    },
+    {
+      "number": 175,
+      "speaker": "WILLIAMS",
+      "text": "This will I also wear in my cap: if ever thou come"
+    },
+    {
+      "number": 176,
+      "speaker": "WILLIAMS",
+      "text": "to me and say, after tomorrow, “This is my glove,” by this"
+    },
+    {
+      "number": 177,
+      "speaker": "WILLIAMS",
+      "text": "hand I will take thee a box on the ear."
+    },
+    {
+      "number": 178,
+      "speaker": "KING HENRY",
+      "text": "If ever I live to see it, I will challenge it."
+    },
+    {
+      "number": 179,
+      "speaker": "WILLIAMS",
+      "text": "Thou darest as well be hane’d."
+    },
+    {
+      "number": 180,
+      "speaker": "KING HENRY",
+      "text": "Well, I will do it, though I take thee in the king’s company."
+    },
+    {
+      "number": 181,
+      "speaker": "WILLIAMS",
+      "text": "Keep thy word: fare thee well."
+    },
+    {
+      "number": 182,
+      "speaker": "BATES",
+      "text": "Be friends, you English fools, be friends: we have French quarrels enow,"
+    },
+    {
+      "number": 183,
+      "speaker": "BATES",
+      "text": "if you could tell how to reckon."
+    },
+    {
+      "number": 184,
+      "speaker": "KING HENRY",
+      "text": "Indeed, the French may lay twenty French crowns to one, they will"
+    },
+    {
+      "number": 185,
+      "speaker": "KING HENRY",
+      "text": "beat us; for they bear them on their shoulders: but it is"
+    },
+    {
+      "number": 186,
+      "speaker": "KING HENRY",
+      "text": "no English treason to cut French crowns, and tomorrow the king himself"
+    },
+    {
+      "number": 187,
+      "speaker": "KING HENRY",
+      "text": "will be a clipper."
+    },
+    {
+      "number": 188,
+      "speaker": "ERPINGHAM",
+      "text": "My lord, your nobles, jealous of your absence,"
+    },
+    {
+      "number": 189,
+      "speaker": "ERPINGHAM",
+      "text": "Seek through your camp to find you."
+    },
+    {
+      "number": 190,
+      "speaker": "KING HENRY",
+      "text": "Good old knight,"
+    },
+    {
+      "number": 191,
+      "speaker": "KING HENRY",
+      "text": "Collect them all together at my tent:"
+    },
+    {
+      "number": 192,
+      "speaker": "KING HENRY",
+      "text": "I’ll be before thee."
+    },
+    {
+      "number": 192,
+      "speaker": "ERPINGHAM",
+      "text": "I shall do’t, my lord."
+    },
+    {
+      "number": 193,
+      "speaker": "KING HENRY",
+      "text": "O God of battles! steel my soldiers’ hearts;"
+    },
+    {
+      "number": 194,
+      "speaker": "KING HENRY",
+      "text": "Possess them not with fear; take from them now"
+    },
+    {
+      "number": 195,
+      "speaker": "KING HENRY",
+      "text": "The sense of reckoning, if the opposed numbers"
+    },
+    {
+      "number": 196,
+      "speaker": "KING HENRY",
+      "text": "Pluck their hearts from them. Not today, O Lord,"
+    },
+    {
+      "number": 197,
+      "speaker": "KING HENRY",
+      "text": "O, not today, think not upon the fault"
+    },
+    {
+      "number": 198,
+      "speaker": "KING HENRY",
+      "text": "My father made in compassing the crown!"
+    },
+    {
+      "number": 199,
+      "speaker": "KING HENRY",
+      "text": "I Richard’s body have interred new;"
+    },
+    {
+      "number": 200,
+      "speaker": "KING HENRY",
+      "text": "And on it have bestow’d more contrite tears"
+    },
+    {
+      "number": 201,
+      "speaker": "KING HENRY",
+      "text": "Than from it issued forced drops of blood:"
+    },
+    {
+      "number": 202,
+      "speaker": "KING HENRY",
+      "text": "Five hundred poor I have in yearly pay,"
+    },
+    {
+      "number": 203,
+      "speaker": "KING HENRY",
+      "text": "Who twice a day their wither’d hands hold up"
+    },
+    {
+      "number": 204,
+      "speaker": "KING HENRY",
+      "text": "Toward heaven, to pardon blood; and I have built"
+    },
+    {
+      "number": 205,
+      "speaker": "KING HENRY",
+      "text": "Two chantries, where the sad and solemn priests"
+    },
+    {
+      "number": 206,
+      "speaker": "KING HENRY",
+      "text": "Sing still for Richard’s soul. More will I do;"
+    },
+    {
+      "number": 207,
+      "speaker": "KING HENRY",
+      "text": "Though all that I can do is nothing worth,"
+    },
+    {
+      "number": 208,
+      "speaker": "KING HENRY",
+      "text": "Since that my penitence comes after all,"
+    },
+    {
+      "number": 209,
+      "speaker": "KING HENRY",
+      "text": "Imploring pardon."
+    },
+    {
+      "number": 209,
+      "speaker": "GLOUCESTER",
+      "text": "My liege!"
+    },
+    {
+      "number": 210,
+      "speaker": "KING HENRY",
+      "text": "My brother Gloucester’s voice? Ay;"
+    },
+    {
+      "number": 211,
+      "speaker": "KING HENRY",
+      "text": "I know thy errand, I will go with thee:"
+    },
+    {
+      "number": 212,
+      "speaker": "KING HENRY",
+      "text": "The day, my friends and all things stay for me."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter King Henry, Bedford, and Gloucester."
+    },
+    {
+      "after_line": 12,
+      "text": "Enter Erpingham."
+    },
+    {
+      "after_line": 12,
+      "text": "Good morrow, old Sir Thomas Erpingham: A good soft pillow for that good white head Were better than a churlish turf of France."
+    },
+    {
+      "after_line": 29,
+      "text": "Exeunt all but King."
+    },
+    {
+      "after_line": 30,
+      "text": "Enter Pistol."
+    },
+    {
+      "after_line": 52,
+      "text": "Exit."
+    },
+    {
+      "after_line": 52,
+      "text": "Enter Fluellen and Gower."
+    },
+    {
+      "after_line": 68,
+      "text": "Exeunt Gower and Fluellen."
+    },
+    {
+      "after_line": 70,
+      "text": "Enter three soldiers, John Bates, Alexander Court, and Michael Williams."
+    },
+    {
+      "after_line": 187,
+      "text": "Exeunt Soldiers."
+    },
+    {
+      "after_line": 187,
+      "text": "Upon the king! let us our lives, our souls, Our debts, our careful wives, Our children and our sins lay on the king! We must bear all. O hard condition, Twin-born with greatness, subject to the breath Of every fool, whose sense no more can feel But his own wringing! What infinite heart’s-ease Must kings neglect, that private men enjoy! And what have kings, that privates have not too, Save ceremony, save general ceremony? And what art thou, thou idol ceremony? What kind of god art thou, that suffer’st more Of mortal griefs than do thy worshippers? What are thy rents? what are thy comings in? O ceremony, show me but thy worth! What is thy soul of adoration? Art thou aught else but place, degree and form, Creating awe and fear in other men? Wherein thou art less happy being fear’d Than they in fearing. What drink’st thou oft, instead of homage sweet, But poison’d flattery? O, be sick, great greatness, And bid thy ceremony give thee cure! Think’st thou the fiery fever will go out With titles blown from adulation? Will it give place to flexure and low bending? Canst thou, when thou command’st the beggar’s knee, Command the health of it? No, thou proud dream, That play’st so subtly with a king’s repose; I am a king that find thee, and I know ’Tis not the balm, the sceptre and the ball, The sword, the mace, the crown imperial, The intertissued robe of gold and pearl, The farced title running ’fore the king, The throne he sits on, nor the tide of pomp That beats upon the high shore of this world, No, not all these, thrice-gorgeous ceremony, Not all these, laid in bed majestical, Can sleep so soundly as the wretched slave, Who with a body fill’d and vacant mind Gets him to rest, cramm’d with distressful bread; Never sees horrid night, the child of hell, But, like a lackey, from the rise to set Sweats in the eye of Phoebus and all night Sleeps in Elysium; next day after dawn, Doth rise and help Hyperion to his horse, And follows so the ever-running year, With profitable labour, to his grave: And, but for ceremony, such a wretch, Winding up days with toil and nights with sleep, Had the forehand and vantage of a king. The slave, a member of the country’s peace, Enjoys it; but in gross brain little wots What watch the king keeps to maintain the peace, Whose hours the peasant best advantages."
+    },
+    {
+      "after_line": 187,
+      "text": "Enter Erpingham."
+    },
+    {
+      "after_line": 192,
+      "text": "Exit."
+    },
+    {
+      "after_line": 209,
+      "text": "Enter Gloucester."
+    },
+    {
+      "after_line": 212,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act4_scene1_gloss1",
+      "line": 4,
+      "phrase": "some soul of goodness in things evil",
+      "definition": "even in bad things there is a seed of good — Henry's habit of redeeming adversity"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss2",
+      "line": 5,
+      "phrase": "observingly distil it out",
+      "definition": "carefully extract the good — alchemical metaphor"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss3",
+      "line": 6,
+      "phrase": "bad neighbour makes us early stirrers",
+      "definition": "a dangerous neighbour makes us rise early — the French force vigilance on Henry's men"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss4",
+      "line": 7,
+      "phrase": "good husbandry",
+      "definition": "good management; thriftiness"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss5",
+      "line": 8,
+      "phrase": "outward consciences",
+      "definition": "external conscience; moral reminders"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss6",
+      "line": 10,
+      "phrase": "dress us fairly for our end",
+      "definition": "prepare ourselves properly for death"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss7",
+      "line": 11,
+      "phrase": "gather honey from the weed",
+      "definition": "extract sweetness even from useless plants — proverbial optimism"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss8",
+      "line": 77,
+      "phrase": "Erpingham",
+      "definition": "Sir Thomas Erpingham — the old knight who commanded the English archers; a historical figure"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss9",
+      "line": 15,
+      "phrase": "love their present pains",
+      "definition": "learn to love current hardship — stoic endurance"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss10",
+      "line": 20,
+      "phrase": "casted slough and fresh legerity",
+      "definition": "shed skin (like a snake) and new nimbleness — image of renewal"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss11",
+      "line": 21,
+      "phrase": "cloak",
+      "definition": "Erpingham's cloak — Henry uses it to disguise himself as a common officer"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss12",
+      "line": 27,
+      "phrase": "I and my bosom must debate",
+      "definition": "I and my heart must argue — solo self-examination"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss13",
+      "line": 30,
+      "phrase": "God-a-mercy",
+      "definition": "'God have mercy'; thanks"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss14",
+      "line": 30,
+      "phrase": "Qui vas là?",
+      "definition": "French: 'Who goes there?' — Pistol's attempt at a sentry's challenge"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss15",
+      "line": 31,
+      "phrase": "Discuss unto me",
+      "definition": "tell me — Pistolian inflation of 'say'"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss16",
+      "line": 32,
+      "phrase": "base, common and popular",
+      "definition": "low-born, ordinary, or of the people"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss17",
+      "line": 33,
+      "phrase": "gentleman of a company",
+      "definition": "a gentleman attached to a company of soldiers — roughly officer-rank"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss18",
+      "line": 34,
+      "phrase": "Trail’st thou the puissant pike",
+      "definition": "do you carry the mighty pike? — a foot-soldier's weapon"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss19",
+      "line": 37,
+      "phrase": "bawcock",
+      "definition": "fine fellow (French 'beau coq' — already glossed at 3.2)"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss20",
+      "line": 38,
+      "phrase": "imp of fame",
+      "definition": "offspring of fame — 'imp' = scion, noble graft"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss21",
+      "line": 41,
+      "phrase": "bully",
+      "definition": "here a term of affection — 'fine fellow'; not yet the modern pejorative"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss22",
+      "line": 42,
+      "phrase": "Harry le Roy",
+      "definition": "Henry the King — Henry's French-disguised name; Pistol thinks it's Cornish"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss23",
+      "line": 43,
+      "phrase": "Cornish",
+      "definition": "from Cornwall — 'le Roy' was a common Cornish surname"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss24",
+      "line": 46,
+      "phrase": "knock his leek about his pate",
+      "definition": "smack his leek about his head — the leek is Fluellen's emblem, and Pistol promises to assault him with it; sets up 5.1"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss25",
+      "line": 47,
+      "phrase": "Saint Davy’s day",
+      "definition": "St. David's Day (March 1) — the Welsh national saint's day"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss26",
+      "line": 50,
+      "phrase": "figo",
+      "definition": "obscene Spanish fig-gesture (already glossed in 3.6)"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss27",
+      "line": 52,
+      "phrase": "sorts well with your fierceness",
+      "definition": "suits your aggressive name; goes well with your bluster"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss28",
+      "line": 55,
+      "phrase": "prerogatifes",
+      "definition": "prerogatives, in Fluellen's accent — ancient military privileges"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss29",
+      "line": 57,
+      "phrase": "Pompey the Great",
+      "definition": "Pompey Magnus — Roman general and rival of Julius Caesar; Fluellen's model of military order"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss30",
+      "line": 58,
+      "phrase": "tiddle taddle nor pibble pabble",
+      "definition": "Fluellen's nonce-words for idle chatter"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss31",
+      "line": 63,
+      "phrase": "enemy is loud",
+      "definition": "the French camp is noisy — contrasts with the quiet English"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss32",
+      "line": 66,
+      "phrase": "prating coxcomb",
+      "definition": "babbling fool — 'coxcomb' = fool's cap / fool"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss33",
+      "line": 72,
+      "phrase": "no great cause to desire the approach of day",
+      "definition": "Bates doesn't look forward to dawn — the soldiers dread battle"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss34",
+      "line": 71,
+      "phrase": "Williams",
+      "definition": "Michael Williams — the soldier whose argument with Henry becomes the play's most sustained critique of kingship"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss35",
+      "line": 80,
+      "phrase": "wrecked upon a sand",
+      "definition": "shipwrecked on a sandbar — awaiting the next tide to sweep them off"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss36",
+      "line": 82,
+      "phrase": "told his thought",
+      "definition": "shared his private fear"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss37",
+      "line": 84,
+      "phrase": "the king is but a man",
+      "definition": "Henry's opening premise — the speech that attempts to demystify kingship to Williams and Bates"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss38",
+      "line": 85,
+      "phrase": "violet smells to him as it doth to me",
+      "definition": "his senses are the same as ours — the body, not the office"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss39",
+      "line": 86,
+      "phrase": "element shows to him as it doth to me",
+      "definition": "the sky looks the same to him as to me — 'element' = sky"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss40",
+      "line": 87,
+      "phrase": "ceremonies laid by",
+      "definition": "set aside his ceremonial dignities"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss41",
+      "line": 88,
+      "phrase": "affections are higher mounted",
+      "definition": "his passions fly higher — but they stoop like hawks, like ours"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss42",
+      "line": 91,
+      "phrase": "relish",
+      "definition": "taste; quality"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss43",
+      "line": 94,
+      "phrase": "outward courage",
+      "definition": "the courage one shows on the surface"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss44",
+      "line": 95,
+      "phrase": "Thames up to the neck",
+      "definition": "immersed in the Thames — wishing himself at home, cold and safe"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss45",
+      "line": 97,
+      "phrase": "at all adventures",
+      "definition": "whatever the consequences; come what may"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss46",
+      "line": 101,
+      "phrase": "ransomed",
+      "definition": "paid for his release — kings captured in battle were normally ransomed, not killed"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss47",
+      "line": 105,
+      "phrase": "his cause being just and his quarrel honourable",
+      "definition": "Henry's insistence — the condition he keeps returning to; it is the condition Williams will challenge"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss48",
+      "line": 106,
+      "phrase": "That’s more than we know",
+      "definition": "Williams's decisive skeptical reply — the audience cannot verify royal justifications"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss49",
+      "line": 109,
+      "phrase": "obedience to the king wipes the crime of it out of us",
+      "definition": "Bates's doctrine of passive obedience — our duty is to obey, not to judge the war's justice"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss50",
+      "line": 111,
+      "phrase": "cause be not good",
+      "definition": "if the war is not just"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss51",
+      "line": 112,
+      "phrase": "heavy reckoning to make",
+      "definition": "a terrible account to give (to God, on Judgment Day)"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss52",
+      "line": 113,
+      "phrase": "latter day",
+      "definition": "Judgment Day; the Last Judgment"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss53",
+      "line": 116,
+      "phrase": "children rawly left",
+      "definition": "children left destitute ('raw' = unprotected)"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss54",
+      "line": 117,
+      "phrase": "die well that die in a battle",
+      "definition": "soldiers rarely die 'well' — i.e., in the state of Christian grace — since battle gives no time to settle affairs or repent"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss55",
+      "line": 120,
+      "phrase": "black matter for the king",
+      "definition": "a serious moral indictment of the king — Williams holds Henry responsible"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss56",
+      "line": 121,
+      "phrase": "disobey were against all proportion of subjection",
+      "definition": "yet refusing to fight would violate the duty of a subject — Williams sees the trap"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss57",
+      "line": 122,
+      "phrase": "son that is by his father sent about merchandise",
+      "definition": "Henry's analogy — a son sent to trade who sins on the way; the father isn't damned for the son's sins"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss58",
+      "line": 132,
+      "phrase": "arbitrement of swords",
+      "definition": "decision by combat; the judgment of battle"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss59",
+      "line": 135,
+      "phrase": "broken seals of perjury",
+      "definition": "seduction under false promise of marriage"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss60",
+      "line": 135,
+      "phrase": "wars their bulwark",
+      "definition": "using the army as a refuge"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss61",
+      "line": 137,
+      "phrase": "defeated the law and outrun native punishment",
+      "definition": "escaped civil justice at home"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss62",
+      "line": 139,
+      "phrase": "beadle",
+      "definition": "a minor parish officer who administered whippings; war as God's whip"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss63",
+      "line": 143,
+      "phrase": "unprovided",
+      "definition": "spiritually unprepared; unconfessed"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss64",
+      "line": 145,
+      "phrase": "every subject’s soul is his own",
+      "definition": "Henry's rhetorical pivot — the king answers for the justice of the war, not the state of each soul"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss65",
+      "line": 147,
+      "phrase": "wash every mote out of his conscience",
+      "definition": "clean every speck from his conscience — a soldier's pre-battle spiritual hygiene"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss66",
+      "line": 156,
+      "phrase": "determine to fight lustily",
+      "definition": "resolve to fight vigorously"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss67",
+      "line": 157,
+      "phrase": "king say he would not be ransomed",
+      "definition": "Henry's pledge never to be captured — he fights or dies"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss68",
+      "line": 158,
+      "phrase": "when our throats are cut, he may be ransomed",
+      "definition": "Williams's bitter skepticism — the dead can't check on the king's promises"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss69",
+      "line": 161,
+      "phrase": "perilous shot out of an elder-gun",
+      "definition": "a dangerous pop from a pop-gun (elder-wood toy) — Williams mocks the commoner's leverage over the king"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss70",
+      "line": 164,
+      "phrase": "peacock’s feather",
+      "definition": "a feeble means — fanning the sun with a feather"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss71",
+      "line": 166,
+      "phrase": "Your reproof is something too round",
+      "definition": "your rebuke is too direct"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss72",
+      "line": 168,
+      "phrase": "quarrel between us, if you live",
+      "definition": "Williams proposes a personal duel after the battle if Henry survives — the glove plot begins"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss73",
+      "line": 170,
+      "phrase": "gage",
+      "definition": "pledge of combat — typically a glove thrown down"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss74",
+      "line": 171,
+      "phrase": "bonnet",
+      "definition": "soft cap"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss75",
+      "line": 177,
+      "phrase": "box on the ear",
+      "definition": "a slap on the side of the head — Williams's promised response to Henry's reappearance"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss76",
+      "line": 184,
+      "phrase": "twenty French crowns to one",
+      "definition": "20-to-1 odds; a French gold coin is also called a 'crown'"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss77",
+      "line": 186,
+      "phrase": "cut French crowns",
+      "definition": "pun: clip gold coins (illegal coin-cutting) OR cut French heads — Henry's morbid joke"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss78",
+      "line": 187,
+      "phrase": "clipper",
+      "definition": "coin-clipper, but here the king himself will be 'clipping' French heads with the sword"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss79",
+      "line": 193,
+      "phrase": "God of battles",
+      "definition": "the Old Testament God of Hosts — Henry's invocation before Agincourt"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss80",
+      "line": 195,
+      "phrase": "sense of reckoning",
+      "definition": "the counting of odds — Henry prays his men won't register how outnumbered they are"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss81",
+      "line": 197,
+      "phrase": "fault my father made in compassing the crown",
+      "definition": "Henry IV's usurpation of Richard II's throne — the dynastic sin Henry V has inherited"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss82",
+      "line": 199,
+      "phrase": "Richard’s body have interred new",
+      "definition": "Henry V reburied Richard II at Westminster Abbey (1413) — historical fact"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss83",
+      "line": 202,
+      "phrase": "Five hundred poor I have in yearly pay",
+      "definition": "500 poor people on annual stipend to pray for Richard"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss84",
+      "line": 205,
+      "phrase": "Two chantries",
+      "definition": "two chapels endowed for perpetual prayer — Henry's further atonement for his father's usurpation"
+    },
+    {
+      "id": "henry_v_act4_scene1_gloss85",
+      "line": 208,
+      "phrase": "penitence comes after all",
+      "definition": "my repentance comes after the deed — Henry knows his atonement can't truly erase the sin"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act4_scene1_ann1",
+      "line_start": 1,
+      "line_end": 30,
+      "citation_display": "Henry V 4.1.1–30",
+      "category": "thematic",
+      "title": "Henry's philosophy of hardship — 'soul of goodness in things evil'",
+      "body": "The scene opens with Henry's characteristic alchemical language: 'There is some soul of goodness in things evil, / Would men observingly distil it out.' The formulation is Stoic in its lineage — the philosopher's counsel that what cannot be avoided can be repurposed. Henry extends it: the 'bad neighbour' (the French army) is their 'outward conscience,' preaching 'that we should dress us fairly for our end.' What is unusual here is the private nature of the speech. Henry is speaking to his brothers and Erpingham before the sun is up; there is no crowd to impress, no audience to persuade. The speech is not performance; it is what the king actually thinks. This matters when we turn to the Chorus's heroic portrait and the Williams dialogue that follows: Henry genuinely believes hardship has spiritual value, and he genuinely believes a king's work is to model that belief to his men. The rhetorical question the play keeps asking is whether this private piety changes anything about the political and moral compromises Henry has already made.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)",
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)"
+      ]
+    },
+    {
+      "id": "henry_v_act4_scene1_ann2",
+      "line_start": 69,
+      "line_end": 70,
+      "citation_display": "Henry V 4.1.69–70",
+      "category": "close_reading",
+      "title": "Henry's aside on Fluellen",
+      "body": "In the brief moment after overhearing Fluellen rebuking Gower for loud speech at night, Henry says: 'Though it appear a little out of fashion, / There is much care and valour in this Welshman.' It is a small line, but important. Henry is watching a subordinate whom the audience has been permitted to find comic, and he sees something genuine in him. The line is evidence that Henry's generosity is not only rhetorical — and it anticipates Henry's public affirmation in 4.7 ('I am Welsh, you know, good countryman') that binds the king to the Welsh soldiery. A king who can hear out-of-fashion manners and still see care and valour in them is a king the play takes seriously. This is one of the small ways Shakespeare earns our ambivalence: not every Henry-moment is a calculation.",
+      "sources": [
+        "Andrew Gurr (ed.), King Henry V (New Cambridge Shakespeare, 1992)",
+        "Peter Saccio, Shakespeare's English Kings (2nd ed., 2000)"
+      ]
+    },
+    {
+      "id": "henry_v_act4_scene1_ann3",
+      "line_start": 106,
+      "line_end": 145,
+      "citation_display": "Henry V 4.1.106–145",
+      "category": "thematic",
+      "title": "The Williams debate — royal responsibility on trial",
+      "body": "The dialogue between Henry (disguised) and the soldier Michael Williams is the play's most sustained philosophical passage. Williams's argument is precise: if the king's cause is unjust, his soldiers die damned; if they die damned, 'it will be a black matter for the king that led them to it.' Henry's reply is the long merchant/servant analogy (lines 122–145): a father who sends a son to sea does not damn himself if the son sins on the journey; a master who sends a servant with money is not damned if the servant is killed by robbers. The argument's logic is: each subject's soul is his own; the king is not responsible for the spiritual state of his soldiers at the moment of death. This is internally coherent theology. But it is also a careful evasion of Williams's real question, which is about the justness of the cause itself. Henry's reply does not engage the premise ('if the cause be not good'); it sidesteps it by asserting the separability of king's judgement and subject's soul. Williams's concession ('Ay, he said so, to make us fight cheerfully') suggests the soldier is not fully persuaded. The scene refuses to vindicate either voice. It is the play's most direct staging of the critique that the Chorus's rhetoric wants to suppress.",
+      "sources": [
+        "Norman Rabkin, 'Either/Or' (1981)",
+        "Graham Holderness, Shakespeare: The Histories (2000)",
+        "Alexander Leggatt, Shakespeare's Political Drama (1988)"
+      ]
+    },
+    {
+      "id": "henry_v_act4_scene1_ann4",
+      "line_start": 193,
+      "line_end": 209,
+      "citation_display": "Henry V 4.1.193–209",
+      "category": "historical",
+      "title": "'Not today, O Lord' — Henry IV's usurpation and the guilty crown",
+      "body": "Henry's prayer alone before dawn — 'Not today, O Lord, / O, not today, think not upon the fault / My father made in compassing the crown' — is one of the play's most historically rich moments. Henry IV had seized the throne from his cousin Richard II in 1399, forcing Richard's abdication and later condoning his murder. This dynastic sin has shadowed the Lancastrian line throughout the first tetralogy (Henry VI Parts 1–3) and the second (Richard II, Henry IV Parts 1–2). Henry V's reburial of Richard II at Westminster Abbey (historically attested, 1413) and his endowment of two chantries for Richard's soul are acts of atonement specifically. Henry's prayer is honest about this: 'all that I can do is nothing worth, / Since that my penitence comes after all.' The Lancastrian curse — that usurpation poisons the crown and will eventually bring civil war — is acknowledged by the king himself in solitude. The Epilogue will return to it: Henry VI will lose France and England will bleed in the Wars of the Roses that end the tetralogy Shakespeare had already written.",
+      "sources": [
+        "Peter Saccio, Shakespeare's English Kings (2nd ed., 2000)",
+        "Nigel Saul, Richard II (1997)",
+        "Gary Taylor (ed.), Henry V (1982)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act4_scene1_q1",
+      "kind": "theme",
+      "prompt": "What philosophical stance opens Henry's speech to his brothers?",
+      "options": [
+        "Pure fatalism",
+        "A stoic/alchemical stance: 'some soul of goodness in things evil' — hardship can be distilled into spiritual preparation; the bad neighbour is an 'outward conscience' teaching us to 'dress us fairly for our end'",
+        "Scepticism about prayer",
+        "A renunciation of kingship"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 3,
+      "anchor_line_end": 12
+    },
+    {
+      "id": "henry_v_act4_scene1_q2",
+      "kind": "close_reading",
+      "prompt": "What is Williams's central argument about royal responsibility?",
+      "options": [
+        "That kings cannot be challenged under any circumstances",
+        "That if the king's cause is unjust, his soldiers die in a state of unrepented sin — and therefore 'it will be a black matter for the king that led them to it.' The king's moral accountability is load-bearing",
+        "That soldiers should refuse to fight without pay",
+        "That Henry is a kind king and deserves no criticism"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 111,
+      "anchor_line_end": 121
+    },
+    {
+      "id": "henry_v_act4_scene1_q3",
+      "kind": "inference",
+      "prompt": "How does Henry answer Williams's challenge?",
+      "options": [
+        "By agreeing entirely",
+        "With the father/son and master/servant analogies: each subject's soul is his own; the king isn't damned for the private state of each soldier. The reply is theologically coherent but sidesteps Williams's actual question about the justice of the war",
+        "By threatening to have him executed",
+        "By revealing his identity as king on the spot"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 122,
+      "anchor_line_end": 152
+    },
+    {
+      "id": "henry_v_act4_scene1_q4",
+      "kind": "historical",
+      "prompt": "What 'fault' does Henry pray God to 'think not upon' at line 198?",
+      "options": [
+        "His own drunken youth",
+        "His father Henry IV's usurpation of Richard II's throne in 1399 — the dynastic sin Henry V has tried to atone for by reburying Richard and endowing chantries for his soul",
+        "The tennis-balls insult",
+        "The death of Falstaff"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 197,
+      "anchor_line_end": 209
+    },
+    {
+      "id": "henry_v_act4_scene1_q5",
+      "kind": "structural",
+      "prompt": "What does the glove-exchange between Henry and Williams set up?",
+      "options": [
+        "Nothing — it is a throwaway moment",
+        "A two-scene comic pay-off: Henry will give the glove to Fluellen in 4.7, Williams will punch Fluellen in 4.8, and Henry will reveal the trick and reward Williams with a glove full of crowns",
+        "A duel that actually happens during Agincourt",
+        "An engagement between Williams and Alice"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 170,
+      "anchor_line_end": 181
+    }
+  ]
+}

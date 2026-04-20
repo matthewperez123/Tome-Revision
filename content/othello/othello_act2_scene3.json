@@ -1,0 +1,2236 @@
+{
+  "section_id": "othello_act2_scene3",
+  "work_id": "othello",
+  "sequence": 6,
+  "act": 2,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "A hall in the castle",
+  "line_count": 355,
+  "word_count": 2916,
+  "est_read_minutes": 15,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "OTHELLO",
+      "text": "Good Michael, look you to the guard to-night:"
+    },
+    {
+      "number": 2,
+      "speaker": "OTHELLO",
+      "text": "Let’s teach ourselves that honourable stop,"
+    },
+    {
+      "number": 3,
+      "speaker": "OTHELLO",
+      "text": "Not to outsport discretion."
+    },
+    {
+      "number": 3,
+      "speaker": "CASSIO",
+      "text": "Iago hath direction what to do;"
+    },
+    {
+      "number": 4,
+      "speaker": "CASSIO",
+      "text": "But, notwithstanding, with my personal eye"
+    },
+    {
+      "number": 5,
+      "speaker": "CASSIO",
+      "text": "Will I look to’t."
+    },
+    {
+      "number": 5,
+      "speaker": "OTHELLO",
+      "text": "Iago is most honest."
+    },
+    {
+      "number": 6,
+      "speaker": "OTHELLO",
+      "text": "Michael, good night: to-morrow with your earliest"
+    },
+    {
+      "number": 7,
+      "speaker": "OTHELLO",
+      "text": "Let me have speech with you. To Desdemona. Come, my dear love,"
+    },
+    {
+      "number": 8,
+      "speaker": "OTHELLO",
+      "text": "The purchase made, the fruits are to ensue;"
+    },
+    {
+      "number": 9,
+      "speaker": "OTHELLO",
+      "text": "That profit’s yet to come ’tween me and you."
+    },
+    {
+      "number": 10,
+      "speaker": "OTHELLO",
+      "text": "Good night."
+    },
+    {
+      "number": 11,
+      "speaker": "CASSIO",
+      "text": "Welcome, Iago; we must to the watch."
+    },
+    {
+      "number": 12,
+      "speaker": "IAGO",
+      "text": "Not this hour, lieutenant; ’tis not yet ten o’ the clock. Our"
+    },
+    {
+      "number": 13,
+      "speaker": "IAGO",
+      "text": "general cast us thus early for the love of his Desdemona; who"
+    },
+    {
+      "number": 14,
+      "speaker": "IAGO",
+      "text": "let us not therefore blame: he hath not yet made wanton the"
+    },
+    {
+      "number": 15,
+      "speaker": "IAGO",
+      "text": "night with her; and she is sport for Jove."
+    },
+    {
+      "number": 16,
+      "speaker": "CASSIO",
+      "text": "She’s a most exquisite lady."
+    },
+    {
+      "number": 17,
+      "speaker": "IAGO",
+      "text": "And, I’ll warrant her, full of game."
+    },
+    {
+      "number": 18,
+      "speaker": "CASSIO",
+      "text": "Indeed, she’s a most fresh and delicate creature."
+    },
+    {
+      "number": 19,
+      "speaker": "IAGO",
+      "text": "What an eye she has! methinks it sounds a parley of provocation."
+    },
+    {
+      "number": 20,
+      "speaker": "CASSIO",
+      "text": "An inviting eye; and yet methinks right modest."
+    },
+    {
+      "number": 21,
+      "speaker": "IAGO",
+      "text": "And when she speaks, is it not an alarum to love?"
+    },
+    {
+      "number": 22,
+      "speaker": "CASSIO",
+      "text": "She is indeed perfection."
+    },
+    {
+      "number": 23,
+      "speaker": "IAGO",
+      "text": "Well, happiness to their sheets! Come, lieutenant, I have a stoup of"
+    },
+    {
+      "number": 24,
+      "speaker": "IAGO",
+      "text": "wine; and here without are a brace of Cyprus gallants that would"
+    },
+    {
+      "number": 25,
+      "speaker": "IAGO",
+      "text": "fain have a measure to the health of black Othello."
+    },
+    {
+      "number": 26,
+      "speaker": "CASSIO",
+      "text": "Not to-night, good Iago: I have very poor and unhappy brains for"
+    },
+    {
+      "number": 27,
+      "speaker": "CASSIO",
+      "text": "drinking: I could well wish courtesy would invent some other custom of"
+    },
+    {
+      "number": 28,
+      "speaker": "CASSIO",
+      "text": "entertainment."
+    },
+    {
+      "number": 29,
+      "speaker": "IAGO",
+      "text": "O, they are our friends; but one cup: I’ll drink for you."
+    },
+    {
+      "number": 30,
+      "speaker": "CASSIO",
+      "text": "I have drunk but one cup to-night, and that was craftily qualified"
+    },
+    {
+      "number": 31,
+      "speaker": "CASSIO",
+      "text": "too, and, behold, what innovation it makes here: I am unfortunate in"
+    },
+    {
+      "number": 32,
+      "speaker": "CASSIO",
+      "text": "the infirmity, and dare not task my weakness with any more."
+    },
+    {
+      "number": 33,
+      "speaker": "IAGO",
+      "text": "What, man! ’tis a night of revels: the gallants desire it."
+    },
+    {
+      "number": 34,
+      "speaker": "CASSIO",
+      "text": "Where are they?"
+    },
+    {
+      "number": 35,
+      "speaker": "IAGO",
+      "text": "Here at the door; I pray you, call them in."
+    },
+    {
+      "number": 36,
+      "speaker": "CASSIO",
+      "text": "I’ll do’t; but it dislikes me."
+    },
+    {
+      "number": 37,
+      "speaker": "IAGO",
+      "text": "If I can fasten but one cup upon him,"
+    },
+    {
+      "number": 38,
+      "speaker": "IAGO",
+      "text": "With that which he hath drunk to-night already,"
+    },
+    {
+      "number": 39,
+      "speaker": "IAGO",
+      "text": "He’ll be as full of quarrel and offence"
+    },
+    {
+      "number": 40,
+      "speaker": "IAGO",
+      "text": "As my young mistress’ dog. Now, my sick fool Roderigo,"
+    },
+    {
+      "number": 41,
+      "speaker": "IAGO",
+      "text": "Whom love hath turn’d almost the wrong side out,"
+    },
+    {
+      "number": 42,
+      "speaker": "IAGO",
+      "text": "To Desdemona hath to-night caroused"
+    },
+    {
+      "number": 43,
+      "speaker": "IAGO",
+      "text": "Potations pottle-deep; and he’s to watch:"
+    },
+    {
+      "number": 44,
+      "speaker": "IAGO",
+      "text": "Three lads of Cyprus, noble swelling spirits,"
+    },
+    {
+      "number": 45,
+      "speaker": "IAGO",
+      "text": "That hold their honours in a wary distance,"
+    },
+    {
+      "number": 46,
+      "speaker": "IAGO",
+      "text": "The very elements of this warlike isle,"
+    },
+    {
+      "number": 47,
+      "speaker": "IAGO",
+      "text": "Have I to-night fluster’d with flowing cups,"
+    },
+    {
+      "number": 48,
+      "speaker": "IAGO",
+      "text": "And they watch too. Now, ’mongst this flock of drunkards,"
+    },
+    {
+      "number": 49,
+      "speaker": "IAGO",
+      "text": "Am I to put our Cassio in some action"
+    },
+    {
+      "number": 50,
+      "speaker": "IAGO",
+      "text": "That may offend the isle.—But here they come:"
+    },
+    {
+      "number": 51,
+      "speaker": "IAGO",
+      "text": "If consequence do but approve my dream,"
+    },
+    {
+      "number": 52,
+      "speaker": "IAGO",
+      "text": "My boat sails freely, both with wind and stream."
+    },
+    {
+      "number": 53,
+      "speaker": "CASSIO",
+      "text": "’Fore God, they have given me a rouse already."
+    },
+    {
+      "number": 54,
+      "speaker": "MONTANO",
+      "text": "Good faith, a little one; not past a pint, as I am a soldier."
+    },
+    {
+      "number": 55,
+      "speaker": "IAGO",
+      "text": "Some wine, ho! And let me the canakin clink, clink; And let"
+    },
+    {
+      "number": 56,
+      "speaker": "IAGO",
+      "text": "me the canakin clink A soldier’s a man; A life’s but a"
+    },
+    {
+      "number": 57,
+      "speaker": "IAGO",
+      "text": "span; Why, then, let a soldier drink. Some wine, boys!"
+    },
+    {
+      "number": 58,
+      "speaker": "CASSIO",
+      "text": "’Fore God, an excellent song."
+    },
+    {
+      "number": 59,
+      "speaker": "IAGO",
+      "text": "I learned it in England, where, indeed, they are most potent in"
+    },
+    {
+      "number": 60,
+      "speaker": "IAGO",
+      "text": "potting: your Dane, your German, and your swag-bellied Hollander—Drink, ho!—are nothing to"
+    },
+    {
+      "number": 61,
+      "speaker": "IAGO",
+      "text": "your English."
+    },
+    {
+      "number": 62,
+      "speaker": "CASSIO",
+      "text": "Is your Englishman so expert in his drinking?"
+    },
+    {
+      "number": 63,
+      "speaker": "IAGO",
+      "text": "Why, he drinks you, with facility, your Dane dead drunk; he sweats"
+    },
+    {
+      "number": 64,
+      "speaker": "IAGO",
+      "text": "not to overthrow your Almain; he gives your Hollander a vomit, ere"
+    },
+    {
+      "number": 65,
+      "speaker": "IAGO",
+      "text": "the next pottle can be filled."
+    },
+    {
+      "number": 65,
+      "speaker": "CASSIO",
+      "text": "To the health of our general!"
+    },
+    {
+      "number": 66,
+      "speaker": "MONTANO",
+      "text": "I am for it, lieutenant; and I’ll do you justice."
+    },
+    {
+      "number": 67,
+      "speaker": "IAGO",
+      "text": "O sweet England!"
+    },
+    {
+      "number": 68,
+      "speaker": "IAGO",
+      "text": "King Stephen was a worthy peer,"
+    },
+    {
+      "number": 69,
+      "speaker": "IAGO",
+      "text": "His breeches cost him but a crown;"
+    },
+    {
+      "number": 70,
+      "speaker": "IAGO",
+      "text": "He held them sixpence all too dear,"
+    },
+    {
+      "number": 71,
+      "speaker": "IAGO",
+      "text": "With that he call’d the tailor lown."
+    },
+    {
+      "number": 72,
+      "speaker": "IAGO",
+      "text": "He was a wight of high renown,"
+    },
+    {
+      "number": 73,
+      "speaker": "IAGO",
+      "text": "And thou art but of low degree:"
+    },
+    {
+      "number": 74,
+      "speaker": "IAGO",
+      "text": "’Tis pride that pulls the country down;"
+    },
+    {
+      "number": 75,
+      "speaker": "IAGO",
+      "text": "Then take thine auld cloak about thee."
+    },
+    {
+      "number": 76,
+      "speaker": "IAGO",
+      "text": "Some wine, ho!"
+    },
+    {
+      "number": 77,
+      "speaker": "CASSIO",
+      "text": "Why, this is a more exquisite song than the other."
+    },
+    {
+      "number": 78,
+      "speaker": "IAGO",
+      "text": "Will you hear’t again?"
+    },
+    {
+      "number": 79,
+      "speaker": "CASSIO",
+      "text": "No; for I hold him to be unworthy of his place that"
+    },
+    {
+      "number": 80,
+      "speaker": "CASSIO",
+      "text": "does those things. Well, God’s above all; and there be souls must"
+    },
+    {
+      "number": 81,
+      "speaker": "CASSIO",
+      "text": "be saved, and there be souls must not be saved."
+    },
+    {
+      "number": 82,
+      "speaker": "IAGO",
+      "text": "It’s true, good lieutenant."
+    },
+    {
+      "number": 83,
+      "speaker": "CASSIO",
+      "text": "For mine own part—no offence to the general, nor any man of"
+    },
+    {
+      "number": 84,
+      "speaker": "CASSIO",
+      "text": "quality—I hope to be saved."
+    },
+    {
+      "number": 84,
+      "speaker": "IAGO",
+      "text": "And so do I too, lieutenant."
+    },
+    {
+      "number": 85,
+      "speaker": "CASSIO",
+      "text": "Ay, but, by your leave, not before me; the lieutenant is to"
+    },
+    {
+      "number": 86,
+      "speaker": "CASSIO",
+      "text": "be saved before the ancient. Let’s have no more of this; let’s"
+    },
+    {
+      "number": 87,
+      "speaker": "CASSIO",
+      "text": "to our affairs.—Forgive us our sins!—Gentlemen, let’s look to our business. Do"
+    },
+    {
+      "number": 88,
+      "speaker": "CASSIO",
+      "text": "not think, gentlemen, I am drunk: this is my ancient; this is"
+    },
+    {
+      "number": 89,
+      "speaker": "CASSIO",
+      "text": "my right hand, and this is my left: I am not drunk"
+    },
+    {
+      "number": 90,
+      "speaker": "CASSIO",
+      "text": "now; I can stand well enough, and speak well enough."
+    },
+    {
+      "number": 91,
+      "speaker": "ALL",
+      "text": "Excellent well."
+    },
+    {
+      "number": 92,
+      "speaker": "CASSIO",
+      "text": "Why, very well then; you must not think then that I am drunk."
+    },
+    {
+      "number": 93,
+      "speaker": "MONTANO",
+      "text": "To the platform, masters; come, let’s set the watch."
+    },
+    {
+      "number": 94,
+      "speaker": "IAGO",
+      "text": "You see this fellow that is gone before;"
+    },
+    {
+      "number": 95,
+      "speaker": "IAGO",
+      "text": "He is a soldier fit to stand by Caesar"
+    },
+    {
+      "number": 96,
+      "speaker": "IAGO",
+      "text": "And give direction: and do but see his vice;"
+    },
+    {
+      "number": 97,
+      "speaker": "IAGO",
+      "text": "’Tis to his virtue a just equinox,"
+    },
+    {
+      "number": 98,
+      "speaker": "IAGO",
+      "text": "The one as long as the other: ’tis pity of him."
+    },
+    {
+      "number": 99,
+      "speaker": "IAGO",
+      "text": "I fear the trust Othello puts him in."
+    },
+    {
+      "number": 100,
+      "speaker": "IAGO",
+      "text": "On some odd time of his infirmity,"
+    },
+    {
+      "number": 101,
+      "speaker": "IAGO",
+      "text": "Will shake this island."
+    },
+    {
+      "number": 101,
+      "speaker": "MONTANO",
+      "text": "But is he often thus?"
+    },
+    {
+      "number": 102,
+      "speaker": "IAGO",
+      "text": "’Tis evermore the prologue to his sleep:"
+    },
+    {
+      "number": 103,
+      "speaker": "IAGO",
+      "text": "He’ll watch the horologe a double set,"
+    },
+    {
+      "number": 104,
+      "speaker": "IAGO",
+      "text": "If drink rock not his cradle."
+    },
+    {
+      "number": 104,
+      "speaker": "MONTANO",
+      "text": "It were well"
+    },
+    {
+      "number": 105,
+      "speaker": "MONTANO",
+      "text": "The general were put in mind of it."
+    },
+    {
+      "number": 106,
+      "speaker": "MONTANO",
+      "text": "Perhaps he sees it not; or his good nature"
+    },
+    {
+      "number": 107,
+      "speaker": "MONTANO",
+      "text": "Prizes the virtue that appears in Cassio,"
+    },
+    {
+      "number": 108,
+      "speaker": "MONTANO",
+      "text": "And looks not on his evils: is not this true?"
+    },
+    {
+      "number": 109,
+      "speaker": "IAGO",
+      "text": "How now, Roderigo! I pray you, after the lieutenant; go."
+    },
+    {
+      "number": 110,
+      "speaker": "MONTANO",
+      "text": "And ’tis great pity that the noble Moor"
+    },
+    {
+      "number": 111,
+      "speaker": "MONTANO",
+      "text": "Should hazard such a place as his own second"
+    },
+    {
+      "number": 112,
+      "speaker": "MONTANO",
+      "text": "With one of an ingraft infirmity:"
+    },
+    {
+      "number": 113,
+      "speaker": "MONTANO",
+      "text": "It were an honest action to say"
+    },
+    {
+      "number": 114,
+      "speaker": "MONTANO",
+      "text": "So to the Moor."
+    },
+    {
+      "number": 114,
+      "speaker": "IAGO",
+      "text": "Not I, for this fair island:"
+    },
+    {
+      "number": 115,
+      "speaker": "IAGO",
+      "text": "I do love Cassio well; and would do much"
+    },
+    {
+      "number": 116,
+      "speaker": "IAGO",
+      "text": "To cure him of this evil—But, hark! what noise? Cry within: “Help! help!”"
+    },
+    {
+      "number": 117,
+      "speaker": "CASSIO",
+      "text": "You rogue! you rascal!"
+    },
+    {
+      "number": 117,
+      "speaker": "MONTANO",
+      "text": "What’s the matter, lieutenant?"
+    },
+    {
+      "number": 118,
+      "speaker": "CASSIO",
+      "text": "A knave teach me my duty!"
+    },
+    {
+      "number": 119,
+      "speaker": "CASSIO",
+      "text": "I’ll beat the knave into a twiggen bottle."
+    },
+    {
+      "number": 120,
+      "speaker": "RODERIGO",
+      "text": "Beat me!"
+    },
+    {
+      "number": 120,
+      "speaker": "CASSIO",
+      "text": "Dost thou prate, rogue? Striking Roderigo."
+    },
+    {
+      "number": 121,
+      "speaker": "MONTANO",
+      "text": "Nay, good lieutenant; Staying him."
+    },
+    {
+      "number": 122,
+      "speaker": "MONTANO",
+      "text": "I pray you, sir, hold your hand."
+    },
+    {
+      "number": 123,
+      "speaker": "CASSIO",
+      "text": "Let me go, sir,"
+    },
+    {
+      "number": 124,
+      "speaker": "CASSIO",
+      "text": "Or I’ll knock you o’er the mazzard."
+    },
+    {
+      "number": 125,
+      "speaker": "MONTANO",
+      "text": "Come, come, you’re drunk."
+    },
+    {
+      "number": 125,
+      "speaker": "CASSIO",
+      "text": "Drunk! They fight."
+    },
+    {
+      "number": 126,
+      "speaker": "IAGO",
+      "text": "Away, I say; go out, and cry a mutiny."
+    },
+    {
+      "number": 127,
+      "speaker": "IAGO",
+      "text": "Nay, good lieutenant—alas, gentlemen;—"
+    },
+    {
+      "number": 128,
+      "speaker": "IAGO",
+      "text": "Help, ho!—Lieutenant—sir—Montano—sir;"
+    },
+    {
+      "number": 129,
+      "speaker": "IAGO",
+      "text": "Help, masters!—Here’s a goodly watch indeed!"
+    },
+    {
+      "number": 130,
+      "speaker": "IAGO",
+      "text": "Who’s that which rings the bell?—Diablo, ho!"
+    },
+    {
+      "number": 131,
+      "speaker": "IAGO",
+      "text": "The town will rise: God’s will, lieutenant, hold!"
+    },
+    {
+      "number": 132,
+      "speaker": "IAGO",
+      "text": "You will be shamed for ever."
+    },
+    {
+      "number": 132,
+      "speaker": "OTHELLO",
+      "text": "What is the matter here?"
+    },
+    {
+      "number": 133,
+      "speaker": "MONTANO",
+      "text": "’Zounds, I bleed still; I am hurt to the death. Faints."
+    },
+    {
+      "number": 134,
+      "speaker": "OTHELLO",
+      "text": "Hold, for your lives!"
+    },
+    {
+      "number": 134,
+      "speaker": "IAGO",
+      "text": "Hold, ho! Lieutenant—sir—Montano—gentlemen—"
+    },
+    {
+      "number": 135,
+      "speaker": "IAGO",
+      "text": "Have you forgot all sense of place and duty?"
+    },
+    {
+      "number": 136,
+      "speaker": "IAGO",
+      "text": "Hold! the general speaks to you; hold, hold, for shame!"
+    },
+    {
+      "number": 137,
+      "speaker": "OTHELLO",
+      "text": "Why, how now, ho! from whence ariseth this?"
+    },
+    {
+      "number": 138,
+      "speaker": "OTHELLO",
+      "text": "Are we turn’d Turks, and to ourselves do that"
+    },
+    {
+      "number": 139,
+      "speaker": "OTHELLO",
+      "text": "Which heaven hath forbid the Ottomites?"
+    },
+    {
+      "number": 140,
+      "speaker": "OTHELLO",
+      "text": "For Christian shame, put by this barbarous brawl:"
+    },
+    {
+      "number": 141,
+      "speaker": "OTHELLO",
+      "text": "He that stirs next to carve for his own rage"
+    },
+    {
+      "number": 142,
+      "speaker": "OTHELLO",
+      "text": "Holds his soul light; he dies upon his motion."
+    },
+    {
+      "number": 143,
+      "speaker": "OTHELLO",
+      "text": "Silence that dreadful bell: it frights the isle"
+    },
+    {
+      "number": 144,
+      "speaker": "OTHELLO",
+      "text": "From her propriety. What is the matter, masters?"
+    },
+    {
+      "number": 145,
+      "speaker": "OTHELLO",
+      "text": "Honest Iago, that look’st dead with grieving,"
+    },
+    {
+      "number": 146,
+      "speaker": "OTHELLO",
+      "text": "Speak, who began this? on thy love, I charge thee."
+    },
+    {
+      "number": 147,
+      "speaker": "IAGO",
+      "text": "I do not know: friends all but now, even now,"
+    },
+    {
+      "number": 148,
+      "speaker": "IAGO",
+      "text": "In quarter, and in terms like bride and groom"
+    },
+    {
+      "number": 149,
+      "speaker": "IAGO",
+      "text": "Devesting them for bed; and then, but now—"
+    },
+    {
+      "number": 150,
+      "speaker": "IAGO",
+      "text": "As if some planet had unwitted men—"
+    },
+    {
+      "number": 151,
+      "speaker": "IAGO",
+      "text": "Swords out, and tilting one at other’s breast,"
+    },
+    {
+      "number": 152,
+      "speaker": "IAGO",
+      "text": "In opposition bloody. I cannot speak"
+    },
+    {
+      "number": 153,
+      "speaker": "IAGO",
+      "text": "Any beginning to this peevish odds;"
+    },
+    {
+      "number": 154,
+      "speaker": "IAGO",
+      "text": "And would in action glorious I had lost"
+    },
+    {
+      "number": 155,
+      "speaker": "IAGO",
+      "text": "Those legs that brought me to a part of it!"
+    },
+    {
+      "number": 156,
+      "speaker": "OTHELLO",
+      "text": "How comes it, Michael, you are thus forgot?"
+    },
+    {
+      "number": 157,
+      "speaker": "CASSIO",
+      "text": "I pray you, pardon me; I cannot speak."
+    },
+    {
+      "number": 158,
+      "speaker": "OTHELLO",
+      "text": "Worthy Montano, you were wont be civil;"
+    },
+    {
+      "number": 159,
+      "speaker": "OTHELLO",
+      "text": "The gravity and stillness of your youth"
+    },
+    {
+      "number": 160,
+      "speaker": "OTHELLO",
+      "text": "The world hath noted, and your name is great"
+    },
+    {
+      "number": 161,
+      "speaker": "OTHELLO",
+      "text": "In mouths of wisest censure: what’s the matter,"
+    },
+    {
+      "number": 162,
+      "speaker": "OTHELLO",
+      "text": "That you unlace your reputation thus"
+    },
+    {
+      "number": 163,
+      "speaker": "OTHELLO",
+      "text": "And spend your rich opinion for the name"
+    },
+    {
+      "number": 164,
+      "speaker": "OTHELLO",
+      "text": "Of a night-brawler? give me answer to it."
+    },
+    {
+      "number": 165,
+      "speaker": "MONTANO",
+      "text": "Worthy Othello, I am hurt to danger:"
+    },
+    {
+      "number": 166,
+      "speaker": "MONTANO",
+      "text": "Your officer, Iago, can inform you—"
+    },
+    {
+      "number": 167,
+      "speaker": "MONTANO",
+      "text": "While I spare speech, which something now"
+    },
+    {
+      "number": 168,
+      "speaker": "MONTANO",
+      "text": "offends me—"
+    },
+    {
+      "number": 169,
+      "speaker": "MONTANO",
+      "text": "Of all that I do know: nor know I aught"
+    },
+    {
+      "number": 170,
+      "speaker": "MONTANO",
+      "text": "By me that’s said or done amiss this night;"
+    },
+    {
+      "number": 171,
+      "speaker": "MONTANO",
+      "text": "Unless self-charity be sometimes a vice,"
+    },
+    {
+      "number": 172,
+      "speaker": "MONTANO",
+      "text": "And to defend ourselves it be a sin"
+    },
+    {
+      "number": 173,
+      "speaker": "MONTANO",
+      "text": "When violence assails us."
+    },
+    {
+      "number": 173,
+      "speaker": "OTHELLO",
+      "text": "Now, by heaven,"
+    },
+    {
+      "number": 174,
+      "speaker": "OTHELLO",
+      "text": "My blood begins my safer guides to rule;"
+    },
+    {
+      "number": 175,
+      "speaker": "OTHELLO",
+      "text": "And passion, having my best judgment collied,"
+    },
+    {
+      "number": 176,
+      "speaker": "OTHELLO",
+      "text": "Assays to lead the way: if I once stir,"
+    },
+    {
+      "number": 177,
+      "speaker": "OTHELLO",
+      "text": "Or do but lift this arm, the best of you"
+    },
+    {
+      "number": 178,
+      "speaker": "OTHELLO",
+      "text": "Shall sink in my rebuke. Give me to know"
+    },
+    {
+      "number": 179,
+      "speaker": "OTHELLO",
+      "text": "How this foul rout began, who set it on;"
+    },
+    {
+      "number": 180,
+      "speaker": "OTHELLO",
+      "text": "And he that is approved in this offence,"
+    },
+    {
+      "number": 181,
+      "speaker": "OTHELLO",
+      "text": "Though he had twinn’d with me, both at a birth,"
+    },
+    {
+      "number": 182,
+      "speaker": "OTHELLO",
+      "text": "Shall lose me. What! in a town of war,"
+    },
+    {
+      "number": 183,
+      "speaker": "OTHELLO",
+      "text": "Yet wild, the people’s hearts brimful of fear,"
+    },
+    {
+      "number": 184,
+      "speaker": "OTHELLO",
+      "text": "To manage private and domestic quarrel,"
+    },
+    {
+      "number": 185,
+      "speaker": "OTHELLO",
+      "text": "In night, and on the court and guard of safety!"
+    },
+    {
+      "number": 186,
+      "speaker": "OTHELLO",
+      "text": "’Tis monstrous. Iago, who began’t?"
+    },
+    {
+      "number": 187,
+      "speaker": "MONTANO",
+      "text": "If partially affined, or leagued in office,"
+    },
+    {
+      "number": 188,
+      "speaker": "MONTANO",
+      "text": "Thou dost deliver more or less than truth,"
+    },
+    {
+      "number": 189,
+      "speaker": "MONTANO",
+      "text": "Thou art no soldier."
+    },
+    {
+      "number": 189,
+      "speaker": "IAGO",
+      "text": "Touch me not so near:"
+    },
+    {
+      "number": 190,
+      "speaker": "IAGO",
+      "text": "I had rather have this tongue cut from my mouth"
+    },
+    {
+      "number": 191,
+      "speaker": "IAGO",
+      "text": "Than it should do offence to Michael Cassio;"
+    },
+    {
+      "number": 192,
+      "speaker": "IAGO",
+      "text": "Yet, I persuade myself, to speak the truth"
+    },
+    {
+      "number": 193,
+      "speaker": "IAGO",
+      "text": "Shall nothing wrong him. Thus it is, general."
+    },
+    {
+      "number": 194,
+      "speaker": "IAGO",
+      "text": "Montano and myself being in speech,"
+    },
+    {
+      "number": 195,
+      "speaker": "IAGO",
+      "text": "There comes a fellow crying out for help:"
+    },
+    {
+      "number": 196,
+      "speaker": "IAGO",
+      "text": "And Cassio following him with determined sword,"
+    },
+    {
+      "number": 197,
+      "speaker": "IAGO",
+      "text": "To execute upon him. Sir, this gentleman"
+    },
+    {
+      "number": 198,
+      "speaker": "IAGO",
+      "text": "Steps in to Cassio, and entreats his pause:"
+    },
+    {
+      "number": 199,
+      "speaker": "IAGO",
+      "text": "Myself the crying fellow did pursue,"
+    },
+    {
+      "number": 200,
+      "speaker": "IAGO",
+      "text": "Lest by his clamour—as it so fell out—"
+    },
+    {
+      "number": 201,
+      "speaker": "IAGO",
+      "text": "The town might fall in fright: he, swift of foot,"
+    },
+    {
+      "number": 202,
+      "speaker": "IAGO",
+      "text": "Outran my purpose; and I return’d the rather"
+    },
+    {
+      "number": 203,
+      "speaker": "IAGO",
+      "text": "For that I heard the clink and fall of swords,"
+    },
+    {
+      "number": 204,
+      "speaker": "IAGO",
+      "text": "And Cassio high in oath; which till to-night"
+    },
+    {
+      "number": 205,
+      "speaker": "IAGO",
+      "text": "I ne’er might say before. When I came back—"
+    },
+    {
+      "number": 206,
+      "speaker": "IAGO",
+      "text": "For this was brief—I found them close together,"
+    },
+    {
+      "number": 207,
+      "speaker": "IAGO",
+      "text": "At blow and thrust; even as again they were"
+    },
+    {
+      "number": 208,
+      "speaker": "IAGO",
+      "text": "When you yourself did part them."
+    },
+    {
+      "number": 209,
+      "speaker": "IAGO",
+      "text": "More of this matter cannot I report:"
+    },
+    {
+      "number": 210,
+      "speaker": "IAGO",
+      "text": "But men are men; the best sometimes forget:"
+    },
+    {
+      "number": 211,
+      "speaker": "IAGO",
+      "text": "Though Cassio did some little wrong to him,"
+    },
+    {
+      "number": 212,
+      "speaker": "IAGO",
+      "text": "As men in rage strike those that wish them best,"
+    },
+    {
+      "number": 213,
+      "speaker": "IAGO",
+      "text": "Yet surely Cassio, I believe, received"
+    },
+    {
+      "number": 214,
+      "speaker": "IAGO",
+      "text": "From him that fled some strange indignity,"
+    },
+    {
+      "number": 215,
+      "speaker": "IAGO",
+      "text": "Which patience could not pass."
+    },
+    {
+      "number": 215,
+      "speaker": "OTHELLO",
+      "text": "I know, Iago,"
+    },
+    {
+      "number": 216,
+      "speaker": "OTHELLO",
+      "text": "Thy honesty and love doth mince this matter,"
+    },
+    {
+      "number": 217,
+      "speaker": "OTHELLO",
+      "text": "Making it light to Cassio. Cassio, I love thee"
+    },
+    {
+      "number": 218,
+      "speaker": "OTHELLO",
+      "text": "But never more be officer of mine."
+    },
+    {
+      "number": 219,
+      "speaker": "DESDEMONA",
+      "text": "What’s the matter?"
+    },
+    {
+      "number": 220,
+      "speaker": "OTHELLO",
+      "text": "All’s well now, sweeting; come away to bed."
+    },
+    {
+      "number": 221,
+      "speaker": "OTHELLO",
+      "text": "Sir, for your hurts, myself will be your surgeon:"
+    },
+    {
+      "number": 222,
+      "speaker": "OTHELLO",
+      "text": "Lead him off. To Montano, who is led off."
+    },
+    {
+      "number": 223,
+      "speaker": "OTHELLO",
+      "text": "Iago, look with care about the town,"
+    },
+    {
+      "number": 224,
+      "speaker": "OTHELLO",
+      "text": "And silence those whom this vile brawl distracted."
+    },
+    {
+      "number": 225,
+      "speaker": "OTHELLO",
+      "text": "Come, Desdemona: ’tis the soldiers’ life"
+    },
+    {
+      "number": 226,
+      "speaker": "OTHELLO",
+      "text": "To have their balmy slumbers waked with strife."
+    },
+    {
+      "number": 227,
+      "speaker": "IAGO",
+      "text": "What, are you hurt, lieutenant?"
+    },
+    {
+      "number": 227,
+      "speaker": "CASSIO",
+      "text": "Ay, past all surgery."
+    },
+    {
+      "number": 228,
+      "speaker": "IAGO",
+      "text": "Marry, heaven forbid!"
+    },
+    {
+      "number": 229,
+      "speaker": "CASSIO",
+      "text": "Reputation, reputation, reputation! O, I have lost my reputation! I have lost"
+    },
+    {
+      "number": 230,
+      "speaker": "CASSIO",
+      "text": "the immortal part of myself, and what remains is bestial. My reputation,"
+    },
+    {
+      "number": 231,
+      "speaker": "CASSIO",
+      "text": "Iago, my reputation!"
+    },
+    {
+      "number": 232,
+      "speaker": "IAGO",
+      "text": "As I am an honest man, I thought you had received some"
+    },
+    {
+      "number": 233,
+      "speaker": "IAGO",
+      "text": "bodily wound; there is more sense in that than in reputation. Reputation"
+    },
+    {
+      "number": 234,
+      "speaker": "IAGO",
+      "text": "is an idle and most false imposition: oft got without merit, and"
+    },
+    {
+      "number": 235,
+      "speaker": "IAGO",
+      "text": "lost without deserving: you have lost no reputation at all, unless you"
+    },
+    {
+      "number": 236,
+      "speaker": "IAGO",
+      "text": "repute yourself such a loser. What, man! there are ways to recover"
+    },
+    {
+      "number": 237,
+      "speaker": "IAGO",
+      "text": "the general again: you are but now cast in his mood, a"
+    },
+    {
+      "number": 238,
+      "speaker": "IAGO",
+      "text": "punishment more in policy than in malice, even so as one would"
+    },
+    {
+      "number": 239,
+      "speaker": "IAGO",
+      "text": "beat his offenceless dog to affright an imperious lion: sue to him"
+    },
+    {
+      "number": 240,
+      "speaker": "IAGO",
+      "text": "again, and he’s yours."
+    },
+    {
+      "number": 241,
+      "speaker": "CASSIO",
+      "text": "I will rather sue to be despised than to deceive so good"
+    },
+    {
+      "number": 242,
+      "speaker": "CASSIO",
+      "text": "a commander with so slight, so drunken, and so indiscreet an officer."
+    },
+    {
+      "number": 243,
+      "speaker": "CASSIO",
+      "text": "Drunk? and speak parrot? and squabble? swagger? swear? and discourse fustian with"
+    },
+    {
+      "number": 244,
+      "speaker": "CASSIO",
+      "text": "one’s own shadow? O thou invisible spirit of wine, if thou hast"
+    },
+    {
+      "number": 245,
+      "speaker": "CASSIO",
+      "text": "no name to be known by, let us call thee devil!"
+    },
+    {
+      "number": 246,
+      "speaker": "IAGO",
+      "text": "What was he that you followed with your sword? What had he done to you?"
+    },
+    {
+      "number": 247,
+      "speaker": "CASSIO",
+      "text": "I know not."
+    },
+    {
+      "number": 247,
+      "speaker": "IAGO",
+      "text": "Is’t possible?"
+    },
+    {
+      "number": 248,
+      "speaker": "CASSIO",
+      "text": "I remember a mass of things, but nothing distinctly; a quarrel, but"
+    },
+    {
+      "number": 249,
+      "speaker": "CASSIO",
+      "text": "nothing wherefore. O God, that men should put an enemy in their"
+    },
+    {
+      "number": 250,
+      "speaker": "CASSIO",
+      "text": "mouths to steal away their brains! that we should, with joy, pleasance"
+    },
+    {
+      "number": 251,
+      "speaker": "CASSIO",
+      "text": "revel and applause, transform ourselves into beasts!"
+    },
+    {
+      "number": 252,
+      "speaker": "IAGO",
+      "text": "Why, but you are now well enough: how came you thus recovered?"
+    },
+    {
+      "number": 253,
+      "speaker": "CASSIO",
+      "text": "It hath pleased the devil drunkenness to give place to the devil"
+    },
+    {
+      "number": 254,
+      "speaker": "CASSIO",
+      "text": "wrath; one unperfectness shows me another, to make me frankly despise myself."
+    },
+    {
+      "number": 255,
+      "speaker": "IAGO",
+      "text": "Come, you are too severe a moraler: as the time, the place,"
+    },
+    {
+      "number": 256,
+      "speaker": "IAGO",
+      "text": "and the condition of this country stands, I could heartily wish this"
+    },
+    {
+      "number": 257,
+      "speaker": "IAGO",
+      "text": "had not befallen; but, since it is as it is, mend it"
+    },
+    {
+      "number": 258,
+      "speaker": "IAGO",
+      "text": "for your own good."
+    },
+    {
+      "number": 259,
+      "speaker": "CASSIO",
+      "text": "I will ask him for my place again; he shall tell me"
+    },
+    {
+      "number": 260,
+      "speaker": "CASSIO",
+      "text": "I am a drunkard! Had I as many mouths as Hydra, such"
+    },
+    {
+      "number": 261,
+      "speaker": "CASSIO",
+      "text": "an answer would stop them all. To be now a sensible man,"
+    },
+    {
+      "number": 262,
+      "speaker": "CASSIO",
+      "text": "by and by a fool, and presently a beast! O strange! Every"
+    },
+    {
+      "number": 263,
+      "speaker": "CASSIO",
+      "text": "inordinate cup is unblessed and the ingredient is a devil."
+    },
+    {
+      "number": 264,
+      "speaker": "IAGO",
+      "text": "Come, come, good wine is a good familiar creature, if it be"
+    },
+    {
+      "number": 265,
+      "speaker": "IAGO",
+      "text": "well used: exclaim no more against it. And, good lieutenant, I think"
+    },
+    {
+      "number": 266,
+      "speaker": "IAGO",
+      "text": "you think I love you."
+    },
+    {
+      "number": 267,
+      "speaker": "CASSIO",
+      "text": "I have well approved it, sir. I drunk!"
+    },
+    {
+      "number": 268,
+      "speaker": "IAGO",
+      "text": "You or any man living may be drunk! at a time, man."
+    },
+    {
+      "number": 269,
+      "speaker": "IAGO",
+      "text": "I’ll tell you what you shall do. Our general’s wife is now"
+    },
+    {
+      "number": 270,
+      "speaker": "IAGO",
+      "text": "the general: may say so in this respect, for that he hath"
+    },
+    {
+      "number": 271,
+      "speaker": "IAGO",
+      "text": "devoted and given up himself to the contemplation, mark, and denotement of"
+    },
+    {
+      "number": 272,
+      "speaker": "IAGO",
+      "text": "her parts and graces: confess yourself freely to her; importune her help"
+    },
+    {
+      "number": 273,
+      "speaker": "IAGO",
+      "text": "to put you in your place again: she is of so free,"
+    },
+    {
+      "number": 274,
+      "speaker": "IAGO",
+      "text": "so kind, so apt, so blessed a disposition, she holds it a"
+    },
+    {
+      "number": 275,
+      "speaker": "IAGO",
+      "text": "vice in her goodness not to do more than she is requested:"
+    },
+    {
+      "number": 276,
+      "speaker": "IAGO",
+      "text": "this broken joint between you and her husband entreat her to splinter;"
+    },
+    {
+      "number": 277,
+      "speaker": "IAGO",
+      "text": "and, my fortunes against any lay worth naming, this crack of your"
+    },
+    {
+      "number": 278,
+      "speaker": "IAGO",
+      "text": "love shall grow stronger than it was before."
+    },
+    {
+      "number": 279,
+      "speaker": "CASSIO",
+      "text": "You advise me well."
+    },
+    {
+      "number": 280,
+      "speaker": "IAGO",
+      "text": "I protest, in the sincerity of love and honest kindness."
+    },
+    {
+      "number": 281,
+      "speaker": "CASSIO",
+      "text": "I think it freely; and betimes in the morning I will beseech"
+    },
+    {
+      "number": 282,
+      "speaker": "CASSIO",
+      "text": "the virtuous Desdemona to undertake for me: I am desperate of my"
+    },
+    {
+      "number": 283,
+      "speaker": "CASSIO",
+      "text": "fortunes if they cheque me here."
+    },
+    {
+      "number": 284,
+      "speaker": "IAGO",
+      "text": "You are in the right. Good night, lieutenant; I must to the watch."
+    },
+    {
+      "number": 285,
+      "speaker": "CASSIO",
+      "text": "Good night, honest Iago."
+    },
+    {
+      "number": 286,
+      "speaker": "IAGO",
+      "text": "And what’s he then that says I play the villain?"
+    },
+    {
+      "number": 287,
+      "speaker": "IAGO",
+      "text": "When this advice is free I give and honest,"
+    },
+    {
+      "number": 288,
+      "speaker": "IAGO",
+      "text": "Probal to thinking and indeed the course"
+    },
+    {
+      "number": 289,
+      "speaker": "IAGO",
+      "text": "To win the Moor again? For ’tis most easy"
+    },
+    {
+      "number": 290,
+      "speaker": "IAGO",
+      "text": "The inclining Desdemona to subdue"
+    },
+    {
+      "number": 291,
+      "speaker": "IAGO",
+      "text": "In any honest suit: she’s framed as fruitful"
+    },
+    {
+      "number": 292,
+      "speaker": "IAGO",
+      "text": "As the free elements. And then for her"
+    },
+    {
+      "number": 293,
+      "speaker": "IAGO",
+      "text": "To win the Moor—were’t to renounce his baptism,"
+    },
+    {
+      "number": 294,
+      "speaker": "IAGO",
+      "text": "All seals and symbols of redeemed sin,"
+    },
+    {
+      "number": 295,
+      "speaker": "IAGO",
+      "text": "His soul is so enfetter’d to her love,"
+    },
+    {
+      "number": 296,
+      "speaker": "IAGO",
+      "text": "That she may make, unmake, do what she list,"
+    },
+    {
+      "number": 297,
+      "speaker": "IAGO",
+      "text": "Even as her appetite shall play the god"
+    },
+    {
+      "number": 298,
+      "speaker": "IAGO",
+      "text": "With his weak function. How am I then a villain"
+    },
+    {
+      "number": 299,
+      "speaker": "IAGO",
+      "text": "To counsel Cassio to this parallel course,"
+    },
+    {
+      "number": 300,
+      "speaker": "IAGO",
+      "text": "Directly to his good? Divinity of hell!"
+    },
+    {
+      "number": 301,
+      "speaker": "IAGO",
+      "text": "When devils will the blackest sins put on,"
+    },
+    {
+      "number": 302,
+      "speaker": "IAGO",
+      "text": "They do suggest at first with heavenly shows,"
+    },
+    {
+      "number": 303,
+      "speaker": "IAGO",
+      "text": "As I do now: for whiles this honest fool"
+    },
+    {
+      "number": 304,
+      "speaker": "IAGO",
+      "text": "Plies Desdemona to repair his fortunes"
+    },
+    {
+      "number": 305,
+      "speaker": "IAGO",
+      "text": "And she for him pleads strongly to the Moor,"
+    },
+    {
+      "number": 306,
+      "speaker": "IAGO",
+      "text": "I’ll pour this pestilence into his ear,"
+    },
+    {
+      "number": 307,
+      "speaker": "IAGO",
+      "text": "That she repeals him for her body’s lust;"
+    },
+    {
+      "number": 308,
+      "speaker": "IAGO",
+      "text": "And by how much she strives to do him good,"
+    },
+    {
+      "number": 309,
+      "speaker": "IAGO",
+      "text": "She shall undo her credit with the Moor."
+    },
+    {
+      "number": 310,
+      "speaker": "IAGO",
+      "text": "So will I turn her virtue into pitch,"
+    },
+    {
+      "number": 311,
+      "speaker": "IAGO",
+      "text": "And out of her own goodness make the net"
+    },
+    {
+      "number": 312,
+      "speaker": "IAGO",
+      "text": "That shall enmesh them all."
+    },
+    {
+      "number": 313,
+      "speaker": "RODERIGO",
+      "text": "I do follow here in the chase, not like a hound that"
+    },
+    {
+      "number": 314,
+      "speaker": "RODERIGO",
+      "text": "hunts, but one that fills up the cry. My money is almost"
+    },
+    {
+      "number": 315,
+      "speaker": "RODERIGO",
+      "text": "spent; I have been to-night exceedingly well cudgelled; and I think the"
+    },
+    {
+      "number": 316,
+      "speaker": "RODERIGO",
+      "text": "issue will be, I shall have so much experience for my pains,"
+    },
+    {
+      "number": 317,
+      "speaker": "RODERIGO",
+      "text": "and so, with no money at all and a little more wit,"
+    },
+    {
+      "number": 318,
+      "speaker": "RODERIGO",
+      "text": "return again to Venice."
+    },
+    {
+      "number": 319,
+      "speaker": "IAGO",
+      "text": "How poor are they that have not patience!"
+    },
+    {
+      "number": 320,
+      "speaker": "IAGO",
+      "text": "What wound did ever heal but by degrees?"
+    },
+    {
+      "number": 321,
+      "speaker": "IAGO",
+      "text": "Thou know’st we work by wit, and not by witchcraft;"
+    },
+    {
+      "number": 322,
+      "speaker": "IAGO",
+      "text": "And wit depends on dilatory time."
+    },
+    {
+      "number": 323,
+      "speaker": "IAGO",
+      "text": "Does’t not go well? Cassio hath beaten thee."
+    },
+    {
+      "number": 324,
+      "speaker": "IAGO",
+      "text": "And thou, by that small hurt, hast cashier’d Cassio:"
+    },
+    {
+      "number": 325,
+      "speaker": "IAGO",
+      "text": "Though other things grow fair against the sun,"
+    },
+    {
+      "number": 326,
+      "speaker": "IAGO",
+      "text": "Yet fruits that blossom first will first be ripe:"
+    },
+    {
+      "number": 327,
+      "speaker": "IAGO",
+      "text": "Content thyself awhile. By the mass, ’tis morning;"
+    },
+    {
+      "number": 328,
+      "speaker": "IAGO",
+      "text": "Pleasure and action make the hours seem short."
+    },
+    {
+      "number": 329,
+      "speaker": "IAGO",
+      "text": "Retire thee; go where thou art billeted:"
+    },
+    {
+      "number": 330,
+      "speaker": "IAGO",
+      "text": "Away, I say; thou shalt know more hereafter:"
+    },
+    {
+      "number": 331,
+      "speaker": "IAGO",
+      "text": "Nay, get thee gone."
+    },
+    {
+      "number": 332,
+      "speaker": "IAGO",
+      "text": "Two things are to be done:"
+    },
+    {
+      "number": 333,
+      "speaker": "IAGO",
+      "text": "My wife must move for Cassio to her mistress;"
+    },
+    {
+      "number": 334,
+      "speaker": "IAGO",
+      "text": "I’ll set her on;"
+    },
+    {
+      "number": 335,
+      "speaker": "IAGO",
+      "text": "Myself the while to draw the Moor apart,"
+    },
+    {
+      "number": 336,
+      "speaker": "IAGO",
+      "text": "And bring him jump when he may Cassio find"
+    },
+    {
+      "number": 337,
+      "speaker": "IAGO",
+      "text": "Soliciting his wife: ay, that’s the way"
+    },
+    {
+      "number": 338,
+      "speaker": "IAGO",
+      "text": "Dull not device by coldness and delay."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Othello, Desdemona, Cassio, and Attendants."
+    },
+    {
+      "after_line": 10,
+      "text": "Exeunt Othello, Desdemona, and Attendants."
+    },
+    {
+      "after_line": 10,
+      "text": "Enter Iago."
+    },
+    {
+      "after_line": 36,
+      "text": "Exit."
+    },
+    {
+      "after_line": 52,
+      "text": "Reenter Cassio; with him Montano and Gentlemen; servants following with wine."
+    },
+    {
+      "after_line": 57,
+      "text": "Sings."
+    },
+    {
+      "after_line": 92,
+      "text": "Exit."
+    },
+    {
+      "after_line": 108,
+      "text": "Enter Roderigo."
+    },
+    {
+      "after_line": 109,
+      "text": "Aside to him."
+    },
+    {
+      "after_line": 109,
+      "text": "Exit Roderigo."
+    },
+    {
+      "after_line": 116,
+      "text": "Reenter Cassio, driving in Roderigo."
+    },
+    {
+      "after_line": 126,
+      "text": "Aside to Roderigo."
+    },
+    {
+      "after_line": 126,
+      "text": "Exit Roderigo."
+    },
+    {
+      "after_line": 129,
+      "text": "Bell rings."
+    },
+    {
+      "after_line": 132,
+      "text": "Reenter Othello and Attendants."
+    },
+    {
+      "after_line": 218,
+      "text": "Reenter Desdemona, attended."
+    },
+    {
+      "after_line": 218,
+      "text": "Look, if my gentle love be not raised up! I’ll make thee an example."
+    },
+    {
+      "after_line": 226,
+      "text": "Exeunt all but Iago and Cassio."
+    },
+    {
+      "after_line": 285,
+      "text": "Exit."
+    },
+    {
+      "after_line": 312,
+      "text": "Reenter Roderigo."
+    },
+    {
+      "after_line": 312,
+      "text": "How now, Roderigo!"
+    },
+    {
+      "after_line": 331,
+      "text": "Exit Roderigo."
+    },
+    {
+      "after_line": 338,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "othello_act2_scene3_gloss1",
+      "line": 3,
+      "phrase": "outsport discretion",
+      "definition": "let revelry push out good judgment"
+    },
+    {
+      "id": "othello_act2_scene3_gloss2",
+      "line": 2,
+      "phrase": "stop",
+      "definition": "stuffing; bushel-basket"
+    },
+    {
+      "id": "othello_act2_scene3_gloss3",
+      "line": 13,
+      "phrase": "cast us thus early",
+      "definition": "dismissed us so early"
+    },
+    {
+      "id": "othello_act2_scene3_gloss4",
+      "line": 17,
+      "phrase": "game",
+      "definition": "amorousness; sexual play"
+    },
+    {
+      "id": "othello_act2_scene3_gloss5",
+      "line": 21,
+      "phrase": "alarum to love",
+      "definition": "a summons or call to love-making"
+    },
+    {
+      "id": "othello_act2_scene3_gloss8",
+      "line": 25,
+      "phrase": "fain have a measure",
+      "definition": "gladly drink a cup"
+    },
+    {
+      "id": "othello_act2_scene3_gloss9",
+      "line": 43,
+      "phrase": "pottle-deep",
+      "definition": "two-quart deep — heartily drunk"
+    },
+    {
+      "id": "othello_act2_scene3_gloss10",
+      "line": 39,
+      "phrase": "quarrel",
+      "definition": "one given to picking fights"
+    },
+    {
+      "id": "othello_act2_scene3_gloss14",
+      "line": 60,
+      "phrase": "potting",
+      "definition": "heavy drinking"
+    },
+    {
+      "id": "othello_act2_scene3_gloss15",
+      "line": 63,
+      "phrase": "Your Dane",
+      "definition": "the Danes — reputed expert drinkers in Elizabethan stereotype"
+    },
+    {
+      "id": "othello_act2_scene3_gloss17",
+      "line": 65,
+      "phrase": "next pottle",
+      "definition": "next quart tankard"
+    },
+    {
+      "id": "othello_act2_scene3_gloss18",
+      "line": 71,
+      "phrase": "lown",
+      "definition": "rogue; rascal"
+    },
+    {
+      "id": "othello_act2_scene3_gloss20",
+      "line": 97,
+      "phrase": "just equinox",
+      "definition": "exact balance; equal measure of good and bad"
+    },
+    {
+      "id": "othello_act2_scene3_gloss21",
+      "line": 112,
+      "phrase": "ingraft infirmity",
+      "definition": "deeply rooted weakness"
+    },
+    {
+      "id": "othello_act2_scene3_gloss22",
+      "line": 129,
+      "phrase": "watch",
+      "definition": "stand guard duty"
+    },
+    {
+      "id": "othello_act2_scene3_gloss23",
+      "line": 133,
+      "phrase": "Zounds",
+      "definition": "by God's wounds — a violent oath"
+    },
+    {
+      "id": "othello_act2_scene3_gloss24",
+      "line": 119,
+      "phrase": "twiggen bottle",
+      "definition": "a wicker-covered bottle — Cassio's insult, making Roderigo into a vessel to be beaten"
+    },
+    {
+      "id": "othello_act2_scene3_gloss25",
+      "line": 124,
+      "phrase": "mazzard",
+      "definition": "head; skull (slang)"
+    },
+    {
+      "id": "othello_act2_scene3_gloss26",
+      "line": 130,
+      "phrase": "Diablo",
+      "definition": "the devil — Othello's Spanish oath"
+    },
+    {
+      "id": "othello_act2_scene3_gloss27",
+      "line": 141,
+      "phrase": "carve for his own rage",
+      "definition": "cut and serve out his own fury; take violent liberty"
+    },
+    {
+      "id": "othello_act2_scene3_gloss28",
+      "line": 148,
+      "phrase": "in quarter",
+      "definition": "on good terms; at peace with one another"
+    },
+    {
+      "id": "othello_act2_scene3_gloss29",
+      "line": 148,
+      "phrase": "in terms like bride and groom",
+      "definition": "as affectionate as newlyweds"
+    },
+    {
+      "id": "othello_act2_scene3_gloss30",
+      "line": 175,
+      "phrase": "collied",
+      "definition": "blackened; darkened (from 'coal')"
+    },
+    {
+      "id": "othello_act2_scene3_gloss32",
+      "line": 184,
+      "phrase": "manage private and domestic quarrel",
+      "definition": "conduct a private fight"
+    },
+    {
+      "id": "othello_act2_scene3_gloss33",
+      "line": 168,
+      "phrase": "offends",
+      "definition": "does wrong"
+    },
+    {
+      "id": "othello_act2_scene3_gloss34",
+      "line": 180,
+      "phrase": "approved",
+      "definition": "found guilty"
+    },
+    {
+      "id": "othello_act2_scene3_gloss35",
+      "line": 197,
+      "phrase": "execute upon him",
+      "definition": "carry out punishment against him"
+    },
+    {
+      "id": "othello_act2_scene3_gloss36",
+      "line": 187,
+      "phrase": "partially affined",
+      "definition": "biased by loyalty; bound by kinship"
+    },
+    {
+      "id": "othello_act2_scene3_gloss39",
+      "line": 253,
+      "phrase": "the devil drunkenness",
+      "definition": "the devil of drunkenness — Cassio's confession"
+    },
+    {
+      "id": "othello_act2_scene3_gloss40",
+      "line": 255,
+      "phrase": "a moraler",
+      "definition": "a moralizer; one who preaches"
+    },
+    {
+      "id": "othello_act2_scene3_gloss41",
+      "line": 260,
+      "phrase": "Hydra",
+      "definition": "the many-headed monster of Greek myth; here, drunkenness with countless mouths"
+    },
+    {
+      "id": "othello_act2_scene3_gloss42",
+      "line": 292,
+      "phrase": "free",
+      "definition": "generous; liberally disposed"
+    },
+    {
+      "id": "othello_act2_scene3_gloss44",
+      "line": 272,
+      "phrase": "parts and graces",
+      "definition": "qualities and charms"
+    },
+    {
+      "id": "othello_act2_scene3_gloss45",
+      "line": 272,
+      "phrase": "importune",
+      "definition": "urgently petition; beg"
+    },
+    {
+      "id": "othello_act2_scene3_gloss46",
+      "line": 276,
+      "phrase": "splinter",
+      "definition": "set with a splint; mend as one would a broken limb"
+    },
+    {
+      "id": "othello_act2_scene3_gloss47",
+      "line": 300,
+      "phrase": "Divinity of hell!",
+      "definition": "hellish theology! — Iago exults at his own perverse doctrine"
+    },
+    {
+      "id": "othello_act2_scene3_gloss48",
+      "line": 302,
+      "phrase": "suggest",
+      "definition": "tempt"
+    },
+    {
+      "id": "othello_act2_scene3_gloss49",
+      "line": 307,
+      "phrase": "repeals him",
+      "definition": "calls him back to favor"
+    },
+    {
+      "id": "othello_act2_scene3_gloss50",
+      "line": 310,
+      "phrase": "pitch",
+      "definition": "tar; black resin — Iago's metaphor for how virtue will become corruption"
+    },
+    {
+      "id": "othello_act2_scene3_gloss51",
+      "line": 314,
+      "phrase": "cry",
+      "definition": "pack (of hounds)"
+    },
+    {
+      "id": "othello_act2_scene3_gloss53",
+      "line": 336,
+      "phrase": "jump when he may Cassio find",
+      "definition": "manage the exact moment when he may come upon Cassio"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "othello_act2_scene3_ann1",
+      "line_start": 60,
+      "line_end": 110,
+      "citation_display": "Othello 2.3.60–110",
+      "category": "structural",
+      "title": "Drinking as weaponized sociability",
+      "body": "Iago turns a celebration into a trap by deploying conviviality. He sings drinking songs (stock tavern ballads the audience would have recognized), invokes English and Danish drinking stereotypes, and plies Cassio with wine while ostensibly moderating his own intake. The sociable drinker is, for Iago, the most useful kind of person — someone who becomes legible at the same moment he becomes impaired.\n\nShakespeare is precise about the sequence. Cassio is baited, drunk, roused to quarrel, provoked into striking Montano, and ruined — all in approximately 200 lines of continuous stage time. The scene's pace is part of the argument: the machinery of social destruction is fast.",
+      "sources": [
+        "Keith Wrightson, 'Alehouses, Order and Reformation in Rural England', in *Popular Culture and Class Conflict* (1981)",
+        "Peter Burke, *Popular Culture in Early Modern Europe* (1978)"
+      ]
+    },
+    {
+      "id": "othello_act2_scene3_ann2",
+      "line_start": 315,
+      "line_end": 360,
+      "citation_display": "Othello 2.3.315–360",
+      "category": "thematic",
+      "title": "Divinity of hell: Iago's theology of deception",
+      "body": "Iago's soliloquy at scene's end explains his method in theological terms. When devils work their blackest sins, they first tempt with heavenly appearances. Cassio, repentant, will petition Desdemona; Desdemona, generous, will plead his case; Othello, misreading generosity as entanglement, will convict them both. Every link in the chain is virtue turned into a weapon.\n\nThis inverted theology — 'Divinity of hell!' — is the closest the play comes to giving Iago a consistent doctrine. He does not disbelieve in goodness; he uses it. The distinction between tempter and temptation collapses. Desdemona's kindness will kill her not by being misrepresented but by being true.",
+      "sources": [
+        "Robert B. Heilman, *Magic in the Web: Action and Language in Othello* (1956)",
+        "Susan Snyder, *The Comic Matrix of Shakespeare's Tragedies* (1979)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "othello_act2_scene3_q1",
+      "kind": "comprehension",
+      "prompt": "Why does Cassio initially refuse to drink with Iago?",
+      "options": [
+        "He has taken a religious oath against alcohol",
+        "He knows he has a weak head for drink and is on duty",
+        "He dislikes the taste of the local Cypriot wine",
+        "Othello has specifically forbidden it"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 32,
+      "anchor_line_end": 45
+    },
+    {
+      "id": "othello_act2_scene3_q2",
+      "kind": "inference",
+      "prompt": "When Iago sings drinking songs and invokes English and Danish drinking stereotypes, what is his actual purpose?",
+      "options": [
+        "Killing time until the next official event",
+        "Performing sociability as a tool — making Cassio feel peer pressure to drink past his limit",
+        "Demonstrating his knowledge of foreign cultures to impress Montano",
+        "Practicing songs for a future court performance"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 65,
+      "anchor_line_end": 90
+    },
+    {
+      "id": "othello_act2_scene3_q3",
+      "kind": "comprehension",
+      "prompt": "What is the consequence of the drunken brawl?",
+      "options": [
+        "Iago is publicly disgraced by Othello",
+        "Cassio is stripped of his lieutenant's rank",
+        "Montano is banished from Cyprus",
+        "Roderigo is expelled from the garrison"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 240,
+      "anchor_line_end": 260
+    },
+    {
+      "id": "othello_act2_scene3_q4",
+      "kind": "theme",
+      "prompt": "In his closing soliloquy Iago explains that 'when devils will the blackest sins put on, / They do suggest at first with heavenly shows.' How will this doctrine play out in the next act?",
+      "options": [
+        "Iago will openly tempt Othello with obvious lies",
+        "Iago will use Desdemona's genuine kindness to Cassio as the evidence of her adultery — turning virtue into weapon",
+        "Iago will disguise himself as a priest and hear confession",
+        "Iago will perform miracles to dazzle Othello"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 315,
+      "anchor_line_end": 335
+    },
+    {
+      "id": "othello_act2_scene3_q5",
+      "kind": "close_reading",
+      "prompt": "What does Cassio lament losing more than anything else after his disgrace?",
+      "options": [
+        "His lieutenant's commission and its salary",
+        "His reputation — the 'immortal part of myself'",
+        "The respect of Othello personally",
+        "His safe return passage to Venice"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 265,
+      "anchor_line_end": 285
+    }
+  ]
+}

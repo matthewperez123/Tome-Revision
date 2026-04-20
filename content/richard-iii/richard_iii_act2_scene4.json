@@ -1,0 +1,656 @@
+{
+  "section_id": "richard_iii_act2_scene4",
+  "work_id": "richard-iii",
+  "sequence": 8,
+  "act": 2,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "London. The palace",
+  "line_count": 78,
+  "word_count": 586,
+  "est_read_minutes": 3,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "ARCHBISHOP",
+      "text": "Last night, I hear, they lay at Northampton;"
+    },
+    {
+      "number": 2,
+      "speaker": "ARCHBISHOP",
+      "text": "At Stony-Stratford will they be to-night:"
+    },
+    {
+      "number": 3,
+      "speaker": "ARCHBISHOP",
+      "text": "To-morrow, or next day, they will be here."
+    },
+    {
+      "number": 4,
+      "speaker": "DUCHESS",
+      "text": "I long with all my heart to see the prince:"
+    },
+    {
+      "number": 5,
+      "speaker": "DUCHESS",
+      "text": "I hope he is much grown since last I saw him."
+    },
+    {
+      "number": 6,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "But I hear, no; they say my son of York"
+    },
+    {
+      "number": 7,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Hath almost overta’en him in his growth."
+    },
+    {
+      "number": 8,
+      "speaker": "YORK",
+      "text": "Ay, mother; but I would not have it so."
+    },
+    {
+      "number": 9,
+      "speaker": "DUCHESS",
+      "text": "Why, my young cousin, it is good to grow."
+    },
+    {
+      "number": 10,
+      "speaker": "YORK",
+      "text": "Grandam, one night, as we did sit at supper,"
+    },
+    {
+      "number": 11,
+      "speaker": "YORK",
+      "text": "My uncle Rivers talk’d how I did grow"
+    },
+    {
+      "number": 12,
+      "speaker": "YORK",
+      "text": "More than my brother: “Ay,” quoth my uncle Gloucester,"
+    },
+    {
+      "number": 13,
+      "speaker": "YORK",
+      "text": "“Small herbs have grace, great weeds do grow apace:”"
+    },
+    {
+      "number": 14,
+      "speaker": "YORK",
+      "text": "And since, methinks, I would not grow so fast,"
+    },
+    {
+      "number": 15,
+      "speaker": "YORK",
+      "text": "Because sweet flowers are slow and weeds make haste."
+    },
+    {
+      "number": 16,
+      "speaker": "DUCHESS",
+      "text": "Good faith, good faith, the saying did not hold"
+    },
+    {
+      "number": 17,
+      "speaker": "DUCHESS",
+      "text": "In him that did object the same to thee:"
+    },
+    {
+      "number": 18,
+      "speaker": "DUCHESS",
+      "text": "He was the wretched’st thing when he was young,"
+    },
+    {
+      "number": 19,
+      "speaker": "DUCHESS",
+      "text": "So long a-growing and so leisurely,"
+    },
+    {
+      "number": 20,
+      "speaker": "DUCHESS",
+      "text": "That, if this rule were true, he should be gracious."
+    },
+    {
+      "number": 21,
+      "speaker": "ARCHBISHOP",
+      "text": "Why, madam, so, no doubt, he is."
+    },
+    {
+      "number": 22,
+      "speaker": "DUCHESS",
+      "text": "I hope he is; but yet let mothers doubt."
+    },
+    {
+      "number": 23,
+      "speaker": "YORK",
+      "text": "Now, by my troth, if I had been remember’d,"
+    },
+    {
+      "number": 24,
+      "speaker": "YORK",
+      "text": "I could have given my uncle’s grace a flout,"
+    },
+    {
+      "number": 25,
+      "speaker": "YORK",
+      "text": "To touch his growth nearer than he touch’d mine."
+    },
+    {
+      "number": 26,
+      "speaker": "DUCHESS",
+      "text": "How, my pretty York? I pray thee, let me hear it."
+    },
+    {
+      "number": 27,
+      "speaker": "YORK",
+      "text": "Marry, they say my uncle grew so fast"
+    },
+    {
+      "number": 28,
+      "speaker": "YORK",
+      "text": "That he could gnaw a crust at two hours old:"
+    },
+    {
+      "number": 29,
+      "speaker": "YORK",
+      "text": "’Twas full two years ere I could get a tooth."
+    },
+    {
+      "number": 30,
+      "speaker": "YORK",
+      "text": "Grandam, this would have been a biting jest."
+    },
+    {
+      "number": 31,
+      "speaker": "DUCHESS",
+      "text": "I pray thee, pretty York, who told thee this?"
+    },
+    {
+      "number": 32,
+      "speaker": "YORK",
+      "text": "Grandam, his nurse."
+    },
+    {
+      "number": 33,
+      "speaker": "DUCHESS",
+      "text": "His nurse! why, she was dead ere thou wert born."
+    },
+    {
+      "number": 34,
+      "speaker": "YORK",
+      "text": "If ’twere not she, I cannot tell who told me."
+    },
+    {
+      "number": 35,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "A parlous boy: go to, you are too shrewd."
+    },
+    {
+      "number": 36,
+      "speaker": "ARCHBISHOP",
+      "text": "Good madam, be not angry with the child."
+    },
+    {
+      "number": 37,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Pitchers have ears."
+    },
+    {
+      "number": 37,
+      "speaker": "ARCHBISHOP",
+      "text": "Here comes a messenger. What news?"
+    },
+    {
+      "number": 38,
+      "speaker": "MESSENGER",
+      "text": "Such news, my lord, as grieves me to unfold."
+    },
+    {
+      "number": 39,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "How fares the prince?"
+    },
+    {
+      "number": 39,
+      "speaker": "MESSENGER",
+      "text": "Well, madam, and in health."
+    },
+    {
+      "number": 40,
+      "speaker": "DUCHESS",
+      "text": "What is thy news then?"
+    },
+    {
+      "number": 41,
+      "speaker": "MESSENGER",
+      "text": "Lord Rivers and Lord Grey are sent to Pomfret,"
+    },
+    {
+      "number": 42,
+      "speaker": "MESSENGER",
+      "text": "With them Sir Thomas Vaughan, prisoners."
+    },
+    {
+      "number": 42,
+      "speaker": "DUCHESS",
+      "text": "Who hath committed them?"
+    },
+    {
+      "number": 43,
+      "speaker": "MESSENGER",
+      "text": "The mighty dukes"
+    },
+    {
+      "number": 44,
+      "speaker": "MESSENGER",
+      "text": "Gloucester and Buckingham."
+    },
+    {
+      "number": 44,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "For what offence?"
+    },
+    {
+      "number": 45,
+      "speaker": "MESSENGER",
+      "text": "The sum of all I can, I have disclosed;"
+    },
+    {
+      "number": 46,
+      "speaker": "MESSENGER",
+      "text": "Why or for what these nobles were committed"
+    },
+    {
+      "number": 47,
+      "speaker": "MESSENGER",
+      "text": "Is all unknown to me, my gracious lady."
+    },
+    {
+      "number": 48,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Ay me, I see the downfall of our house!"
+    },
+    {
+      "number": 49,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "The tiger now hath seized the gentle hind;"
+    },
+    {
+      "number": 50,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Insulting tyranny begins to jet"
+    },
+    {
+      "number": 51,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Upon the innocent and aweless throne:"
+    },
+    {
+      "number": 52,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Welcome, destruction, death, and massacre!"
+    },
+    {
+      "number": 53,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "I see, as in a map, the end of all."
+    },
+    {
+      "number": 54,
+      "speaker": "DUCHESS",
+      "text": "Accursed and unquiet wrangling days,"
+    },
+    {
+      "number": 55,
+      "speaker": "DUCHESS",
+      "text": "How many of you have mine eyes beheld!"
+    },
+    {
+      "number": 56,
+      "speaker": "DUCHESS",
+      "text": "My husband lost his life to get the crown;"
+    },
+    {
+      "number": 57,
+      "speaker": "DUCHESS",
+      "text": "And often up and down my sons were toss’d,"
+    },
+    {
+      "number": 58,
+      "speaker": "DUCHESS",
+      "text": "For me to joy and weep their gain and loss:"
+    },
+    {
+      "number": 59,
+      "speaker": "DUCHESS",
+      "text": "And being seated, and domestic broils"
+    },
+    {
+      "number": 60,
+      "speaker": "DUCHESS",
+      "text": "Clean over-blown, themselves, the conquerors,"
+    },
+    {
+      "number": 61,
+      "speaker": "DUCHESS",
+      "text": "Make war upon themselves; blood against blood,"
+    },
+    {
+      "number": 62,
+      "speaker": "DUCHESS",
+      "text": "Self against self: O, preposterous"
+    },
+    {
+      "number": 63,
+      "speaker": "DUCHESS",
+      "text": "And frantic outrage, end thy damned spleen;"
+    },
+    {
+      "number": 64,
+      "speaker": "DUCHESS",
+      "text": "Or let me die, to look on death no more!"
+    },
+    {
+      "number": 65,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Come, come, my boy; we will to sanctuary."
+    },
+    {
+      "number": 66,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Madam, farewell."
+    },
+    {
+      "number": 66,
+      "speaker": "DUCHESS",
+      "text": "I’ll go along with you."
+    },
+    {
+      "number": 67,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "You have no cause."
+    },
+    {
+      "number": 67,
+      "speaker": "ARCHBISHOP",
+      "text": "My gracious lady, go;"
+    },
+    {
+      "number": 68,
+      "speaker": "ARCHBISHOP",
+      "text": "And thither bear your treasure and your goods."
+    },
+    {
+      "number": 69,
+      "speaker": "ARCHBISHOP",
+      "text": "For my part, I’ll resign unto your grace"
+    },
+    {
+      "number": 70,
+      "speaker": "ARCHBISHOP",
+      "text": "The seal I keep: and so betide to me"
+    },
+    {
+      "number": 71,
+      "speaker": "ARCHBISHOP",
+      "text": "As well I tender you and all of yours!"
+    },
+    {
+      "number": 72,
+      "speaker": "ARCHBISHOP",
+      "text": "Come, I’ll conduct you to the sanctuary."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter the Archbishop of York, the young Duke of York, Queen Elizabeth, and the Duchess of York."
+    },
+    {
+      "after_line": 37,
+      "text": "Enter a Messenger."
+    },
+    {
+      "after_line": 72,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act2_scene4_gloss1",
+      "line": 1,
+      "phrase": "Northampton",
+      "definition": "town in Northamptonshire — stopping point on the route from Ludlow"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss2",
+      "line": 2,
+      "phrase": "Stony-Stratford",
+      "definition": "Stony Stratford — the nearby village where Richard in fact arrested Rivers and Grey"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss3",
+      "line": 7,
+      "phrase": "overta’en him in his growth",
+      "definition": "caught up with him in height"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss4",
+      "line": 13,
+      "phrase": "Small herbs have grace, great weeds do grow apace",
+      "definition": "small plants are graceful; weeds grow fast — Gloucester's proverb, turned against him by the clever York"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss5",
+      "line": 23,
+      "phrase": "if I had been remember’d",
+      "definition": "if I had recollected (the story)"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss6",
+      "line": 24,
+      "phrase": "flout",
+      "definition": "mocking reply; jeer"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss7",
+      "line": 28,
+      "phrase": "gnaw a crust at two hours old",
+      "definition": "the folk-tale of Richard born with teeth — transmitted by More and Holinshed, Shakespeare's source"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss8",
+      "line": 30,
+      "phrase": "biting jest",
+      "definition": "sharp joke — York's deliberate pun on 'biting' given the teeth legend"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss9",
+      "line": 35,
+      "phrase": "parlous",
+      "definition": "dangerously precocious; perilous (from 'perilous')"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss10",
+      "line": 37,
+      "phrase": "Pitchers have ears",
+      "definition": "jugs have handles ('ears') and children overhear adult talk — proverbial"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss11",
+      "line": 41,
+      "phrase": "Pomfret",
+      "definition": "Pontefract Castle, Yorkshire — notorious royal prison; site of Rivers, Grey, Vaughan's execution"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss12",
+      "line": 49,
+      "phrase": "tiger now hath seized the gentle hind",
+      "definition": "tiger seizing the doe — emblem of tyranny preying on innocence"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss13",
+      "line": 50,
+      "phrase": "jet",
+      "definition": "strut, swagger"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss14",
+      "line": 51,
+      "phrase": "aweless throne",
+      "definition": "throne that commands no awe — a child-king's weak majesty"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss15",
+      "line": 53,
+      "phrase": "as in a map",
+      "definition": "as if in a map, in miniature — Elizabeth sees the whole catastrophe laid out"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss16",
+      "line": 54,
+      "phrase": "wrangling days",
+      "definition": "quarrelsome, strife-filled times — the whole Wars of the Roses in one phrase"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss17",
+      "line": 59,
+      "phrase": "domestic broils",
+      "definition": "civil strife; quarrels at home"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss18",
+      "line": 62,
+      "phrase": "preposterous",
+      "definition": "reversed, upside-down (Latin pre-post — before-after inverted)"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss19",
+      "line": 63,
+      "phrase": "spleen",
+      "definition": "passion, ill-temper — the spleen was believed the seat of violent emotions"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss20",
+      "line": 65,
+      "phrase": "we will to sanctuary",
+      "definition": "we will take refuge in Westminster Abbey's sanctuary — church ground immune to arrest"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss21",
+      "line": 70,
+      "phrase": "seal I keep",
+      "definition": "the Great Seal of England — the Archbishop's office to keep; he surrenders it to Elizabeth"
+    },
+    {
+      "id": "richard_iii_act2_scene4_gloss22",
+      "line": 71,
+      "phrase": "tender",
+      "definition": "cherish, care for"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act2_scene4_ann1",
+      "line_start": 1,
+      "line_end": 48,
+      "citation_display": "Richard III 2.4.1–48",
+      "category": "historical",
+      "title": "Stony Stratford and the arrest of Rivers and Grey",
+      "body": "The messenger's news — that Rivers, Grey, and Vaughan have been sent to Pomfret — compresses the historical crisis of late April 1483. The young prince, escorted by Rivers and Grey, was met at Stony Stratford in Northamptonshire by Richard and Buckingham, travelling with a larger force. Richard arrested Rivers at nearby Northampton on 30 April and seized the prince at Stony Stratford on 1 May; Rivers, Grey, and Vaughan were sent north to Pomfret where they were executed in June. The play compresses these events offstage, but the dates, places, and names are accurate to Holinshed's chronicle. What the play adds is the women's immediate recognition of what has happened: Elizabeth's \"I see the downfall of our house\" and her decision to take sanctuary at Westminster Abbey. Shakespeare's stage condenses historical weeks into minutes, but the political grammar survives the compression.",
+      "sources": [
+        "Raphael Holinshed, Chronicles (1587)",
+        "Charles Ross, Richard III (1981)",
+        "Michael Hicks, Richard III (2000)"
+      ]
+    },
+    {
+      "id": "richard_iii_act2_scene4_ann2",
+      "line_start": 27,
+      "line_end": 35,
+      "citation_display": "Richard III 2.4.27–35",
+      "category": "close_reading",
+      "title": "York's tongue: precocity read and feared",
+      "body": "The young Duke of York's quick-witted exchange with his grandmother — the nurse who supposedly said Richard was born with teeth and therefore \"grew so fast / That he could gnaw a crust at two hours old\" — is one of the play's showcase moments of child-speech. York's rhetorical quickness is praised onstage (Buckingham: \"With what a sharp-provided wit he reasons!\") and feared behind the hand. Richard's own judgement (3.1.151 — \"a parlous boy\") will seal the child's fate. Shakespeare does something difficult here: he lets the boy be funny and then shows us that his very liveness is what dooms him. Tudor policy around royal children required their formative concealment; visible intelligence in a boy-heir was a political liability. The play lets us feel the tightening of a net we cannot prevent.",
+      "sources": [
+        "Ann Blake, \"Children and Suffering in Shakespeare's Plays\" (1998)",
+        "Carol Chillington Rutter, Shakespeare and Child's Play (2007)"
+      ]
+    },
+    {
+      "id": "richard_iii_act2_scene4_ann3",
+      "line_start": 49,
+      "line_end": 64,
+      "citation_display": "Richard III 2.4.49–64",
+      "category": "thematic",
+      "title": "\"The tiger now hath seized the gentle hind\"",
+      "body": "Elizabeth's image for Richard's arrest of her brother and son — \"The tiger now hath seized the gentle hind\" — introduces the play's predator-prey register that will intensify through Margaret's 4.4 imagery (wolves and lambs, hell-hound and butcher'd princes). What distinguishes this image is its political specificity: Elizabeth is not speaking of generic predation but of \"insulting tyranny\" jetting upon \"the innocent and aweless throne.\" The throne is \"aweless\" because its occupant is a child: the political body has lost its commanding presence. Elizabeth's phrase \"I see, as in a map, the end of all\" is one of the play's strongest compressed images of political foresight — she sees the whole sequence at once. What she cannot do, yet, is prevent it.",
+      "sources": [
+        "Caroline Spurgeon, Shakespeare's Imagery (1935)",
+        "Maurice Charney, Shakespeare's Style (1969)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act2_scene4_q1",
+      "kind": "historical",
+      "prompt": "The arrest of Rivers and Grey took place historically where, according to the chronicle sources Shakespeare used?",
+      "options": [
+        "At Ludlow Castle, before the prince's departure",
+        "At Northampton and Stony Stratford in late April 1483",
+        "At the Tower of London after Edward IV's death",
+        "At Dover, as they attempted to leave for Burgundy"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 41
+    },
+    {
+      "id": "richard_iii_act2_scene4_q2",
+      "kind": "close_reading",
+      "prompt": "The young Duke of York's joke about Richard's birth-teeth (28–30) achieves what dramatic effect?",
+      "options": [
+        "It introduces pure comic relief, unrelated to the plot",
+        "It is clever enough to be praised aloud and feared silently — the child's visible intelligence is precisely what makes him politically dangerous",
+        "It is an unwitting insult the boy does not understand",
+        "It is a learned riddle requiring classical knowledge to decode"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 27,
+      "anchor_line_end": 35
+    },
+    {
+      "id": "richard_iii_act2_scene4_q3",
+      "kind": "comprehension",
+      "prompt": "Where does Queen Elizabeth take refuge at the scene's end?",
+      "options": [
+        "At the Tower of London",
+        "In sanctuary at Westminster Abbey",
+        "At the Scottish border",
+        "At her brother Rivers' estate in Northamptonshire"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 65,
+      "anchor_line_end": 72
+    },
+    {
+      "id": "richard_iii_act2_scene4_q4",
+      "kind": "theme",
+      "prompt": "Elizabeth's \"The tiger now hath seized the gentle hind\" and \"I see, as in a map, the end of all\" together characterize her as what?",
+      "options": [
+        "A character given to inexact rhetorical flourish",
+        "A political seer whose predator-prey vocabulary and compressed foresight anticipate the play's larger imagery and moral arithmetic",
+        "An unreliable narrator",
+        "A passive mother with no political awareness"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 49,
+      "anchor_line_end": 53
+    }
+  ]
+}

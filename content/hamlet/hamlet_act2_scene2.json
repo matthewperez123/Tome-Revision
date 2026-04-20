@@ -1,0 +1,3101 @@
+{
+  "section_id": "hamlet_act2_scene2",
+  "work_id": "hamlet",
+  "sequence": 7,
+  "act": 2,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "A room in the castle",
+  "line_count": 515,
+  "word_count": 4502,
+  "est_read_minutes": 23,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KING",
+      "text": "Welcome, dear Rosencrantz and Guildenstern!"
+    },
+    {
+      "number": 2,
+      "speaker": "KING",
+      "text": "Moreover that we much did long to see you,"
+    },
+    {
+      "number": 3,
+      "speaker": "KING",
+      "text": "The need we have to use you did provoke"
+    },
+    {
+      "number": 4,
+      "speaker": "KING",
+      "text": "Our hasty sending. Something have you heard"
+    },
+    {
+      "number": 5,
+      "speaker": "KING",
+      "text": "Of Hamlet’s transformation; so call it,"
+    },
+    {
+      "number": 6,
+      "speaker": "KING",
+      "text": "Sith nor the exterior nor the inward man"
+    },
+    {
+      "number": 7,
+      "speaker": "KING",
+      "text": "Resembles that it was. What it should be,"
+    },
+    {
+      "number": 8,
+      "speaker": "KING",
+      "text": "More than his father’s death, that thus hath put him"
+    },
+    {
+      "number": 9,
+      "speaker": "KING",
+      "text": "So much from the understanding of himself,"
+    },
+    {
+      "number": 10,
+      "speaker": "KING",
+      "text": "I cannot dream of: I entreat you both,"
+    },
+    {
+      "number": 11,
+      "speaker": "KING",
+      "text": "That, being of so young days brought up with him,"
+    },
+    {
+      "number": 12,
+      "speaker": "KING",
+      "text": "And sith so neighbour’d to his youth and havior,"
+    },
+    {
+      "number": 13,
+      "speaker": "KING",
+      "text": "That you vouchsafe your rest here in our court"
+    },
+    {
+      "number": 14,
+      "speaker": "KING",
+      "text": "Some little time: so by your companies"
+    },
+    {
+      "number": 15,
+      "speaker": "KING",
+      "text": "To draw him on to pleasures, and to gather,"
+    },
+    {
+      "number": 16,
+      "speaker": "KING",
+      "text": "So much as from occasion you may glean,"
+    },
+    {
+      "number": 17,
+      "speaker": "KING",
+      "text": "Whether aught, to us unknown, afflicts him thus,"
+    },
+    {
+      "number": 18,
+      "speaker": "KING",
+      "text": "That, open’d, lies within our remedy."
+    },
+    {
+      "number": 19,
+      "speaker": "QUEEN",
+      "text": "Good gentlemen, he hath much talk’d of you;"
+    },
+    {
+      "number": 20,
+      "speaker": "QUEEN",
+      "text": "And sure I am two men there are not living"
+    },
+    {
+      "number": 21,
+      "speaker": "QUEEN",
+      "text": "To whom he more adheres. If it will please you"
+    },
+    {
+      "number": 22,
+      "speaker": "QUEEN",
+      "text": "To show us so much gentry and good will"
+    },
+    {
+      "number": 23,
+      "speaker": "QUEEN",
+      "text": "As to expend your time with us awhile,"
+    },
+    {
+      "number": 24,
+      "speaker": "QUEEN",
+      "text": "For the supply and profit of our hope,"
+    },
+    {
+      "number": 25,
+      "speaker": "QUEEN",
+      "text": "Your visitation shall receive such thanks"
+    },
+    {
+      "number": 26,
+      "speaker": "QUEEN",
+      "text": "As fits a king’s remembrance."
+    },
+    {
+      "number": 26,
+      "speaker": "ROSENCRANTZ",
+      "text": "Both your majesties"
+    },
+    {
+      "number": 27,
+      "speaker": "ROSENCRANTZ",
+      "text": "Might, by the sovereign power you have of us,"
+    },
+    {
+      "number": 28,
+      "speaker": "ROSENCRANTZ",
+      "text": "Put your dread pleasures more into command"
+    },
+    {
+      "number": 29,
+      "speaker": "ROSENCRANTZ",
+      "text": "Than to entreaty."
+    },
+    {
+      "number": 29,
+      "speaker": "GUILDENSTERN",
+      "text": "But we both obey,"
+    },
+    {
+      "number": 30,
+      "speaker": "GUILDENSTERN",
+      "text": "And here give up ourselves, in the full bent"
+    },
+    {
+      "number": 31,
+      "speaker": "GUILDENSTERN",
+      "text": "To lay our service freely at your feet,"
+    },
+    {
+      "number": 32,
+      "speaker": "GUILDENSTERN",
+      "text": "To be commanded."
+    },
+    {
+      "number": 32,
+      "speaker": "KING",
+      "text": "Thanks, Rosencrantz and gentle Guildenstern."
+    },
+    {
+      "number": 33,
+      "speaker": "QUEEN",
+      "text": "Thanks, Guildenstern and gentle Rosencrantz:"
+    },
+    {
+      "number": 34,
+      "speaker": "QUEEN",
+      "text": "And I beseech you instantly to visit"
+    },
+    {
+      "number": 35,
+      "speaker": "QUEEN",
+      "text": "My too much changed son. Go, some of you,"
+    },
+    {
+      "number": 36,
+      "speaker": "QUEEN",
+      "text": "And bring these gentlemen where Hamlet is."
+    },
+    {
+      "number": 37,
+      "speaker": "GUILDENSTERN",
+      "text": "Heavens make our presence and our practices"
+    },
+    {
+      "number": 38,
+      "speaker": "GUILDENSTERN",
+      "text": "Pleasant and helpful to him!"
+    },
+    {
+      "number": 38,
+      "speaker": "QUEEN",
+      "text": "Ay, amen!"
+    },
+    {
+      "number": 39,
+      "speaker": "POLONIUS",
+      "text": "The ambassadors from Norway, my good lord,"
+    },
+    {
+      "number": 40,
+      "speaker": "POLONIUS",
+      "text": "Are joyfully return’d."
+    },
+    {
+      "number": 41,
+      "speaker": "KING",
+      "text": "Thou still hast been the father of good news."
+    },
+    {
+      "number": 42,
+      "speaker": "POLONIUS",
+      "text": "Have I, my lord? I assure my good liege,"
+    },
+    {
+      "number": 43,
+      "speaker": "POLONIUS",
+      "text": "I hold my duty, as I hold my soul,"
+    },
+    {
+      "number": 44,
+      "speaker": "POLONIUS",
+      "text": "Both to my God and to my gracious king:"
+    },
+    {
+      "number": 45,
+      "speaker": "POLONIUS",
+      "text": "And I do think, or else this brain of mine"
+    },
+    {
+      "number": 46,
+      "speaker": "POLONIUS",
+      "text": "Hunts not the trail of policy so sure"
+    },
+    {
+      "number": 47,
+      "speaker": "POLONIUS",
+      "text": "As it hath used to do, that I have found"
+    },
+    {
+      "number": 48,
+      "speaker": "POLONIUS",
+      "text": "The very cause of Hamlet’s lunacy."
+    },
+    {
+      "number": 49,
+      "speaker": "KING",
+      "text": "O, speak of that; that do I long to hear."
+    },
+    {
+      "number": 50,
+      "speaker": "POLONIUS",
+      "text": "Give first admittance to the ambassadors;"
+    },
+    {
+      "number": 51,
+      "speaker": "POLONIUS",
+      "text": "My news shall be the fruit to that great feast."
+    },
+    {
+      "number": 52,
+      "speaker": "KING",
+      "text": "Thyself do grace to them, and bring them in."
+    },
+    {
+      "number": 53,
+      "speaker": "KING",
+      "text": "He tells me, my dear Gertrude, he hath found"
+    },
+    {
+      "number": 54,
+      "speaker": "KING",
+      "text": "The head and source of all your son’s distemper."
+    },
+    {
+      "number": 55,
+      "speaker": "QUEEN",
+      "text": "I doubt it is no other but the main;"
+    },
+    {
+      "number": 56,
+      "speaker": "QUEEN",
+      "text": "His father’s death, and our o’erhasty marriage."
+    },
+    {
+      "number": 57,
+      "speaker": "KING",
+      "text": "Well, we shall sift him."
+    },
+    {
+      "number": 58,
+      "speaker": "VOLTIMAND",
+      "text": "Most fair return of greetings and desires."
+    },
+    {
+      "number": 59,
+      "speaker": "VOLTIMAND",
+      "text": "Upon our first, he sent out to suppress"
+    },
+    {
+      "number": 60,
+      "speaker": "VOLTIMAND",
+      "text": "His nephew’s levies; which to him appear’d"
+    },
+    {
+      "number": 61,
+      "speaker": "VOLTIMAND",
+      "text": "To be a preparation ’gainst the Polack;"
+    },
+    {
+      "number": 62,
+      "speaker": "VOLTIMAND",
+      "text": "But, better look’d into, he truly found"
+    },
+    {
+      "number": 63,
+      "speaker": "VOLTIMAND",
+      "text": "It was against your highness: whereat grieved,"
+    },
+    {
+      "number": 64,
+      "speaker": "VOLTIMAND",
+      "text": "That so his sickness, age and impotence"
+    },
+    {
+      "number": 65,
+      "speaker": "VOLTIMAND",
+      "text": "Was falsely borne in hand, sends out arrests"
+    },
+    {
+      "number": 66,
+      "speaker": "VOLTIMAND",
+      "text": "On Fortinbras; which he, in brief, obeys;"
+    },
+    {
+      "number": 67,
+      "speaker": "VOLTIMAND",
+      "text": "Receives rebuke from Norway, and in fine"
+    },
+    {
+      "number": 68,
+      "speaker": "VOLTIMAND",
+      "text": "Makes vow before his uncle never more"
+    },
+    {
+      "number": 69,
+      "speaker": "VOLTIMAND",
+      "text": "To give the assay of arms against your majesty."
+    },
+    {
+      "number": 70,
+      "speaker": "VOLTIMAND",
+      "text": "Whereon old Norway, overcome with joy,"
+    },
+    {
+      "number": 71,
+      "speaker": "VOLTIMAND",
+      "text": "Gives him three thousand crowns in annual fee,"
+    },
+    {
+      "number": 72,
+      "speaker": "VOLTIMAND",
+      "text": "And his commission to employ those soldiers,"
+    },
+    {
+      "number": 73,
+      "speaker": "VOLTIMAND",
+      "text": "So levied as before, against the Polack:"
+    },
+    {
+      "number": 74,
+      "speaker": "VOLTIMAND",
+      "text": "With an entreaty, herein further shown,"
+    },
+    {
+      "number": 75,
+      "speaker": "VOLTIMAND",
+      "text": "That it might please you to give quiet pass"
+    },
+    {
+      "number": 76,
+      "speaker": "VOLTIMAND",
+      "text": "Through your dominions for this enterprise,"
+    },
+    {
+      "number": 77,
+      "speaker": "VOLTIMAND",
+      "text": "On such regards of safety and allowance"
+    },
+    {
+      "number": 78,
+      "speaker": "VOLTIMAND",
+      "text": "As therein are set down."
+    },
+    {
+      "number": 78,
+      "speaker": "KING",
+      "text": "It likes us well;"
+    },
+    {
+      "number": 79,
+      "speaker": "KING",
+      "text": "And at our more consider’d time well read,"
+    },
+    {
+      "number": 80,
+      "speaker": "KING",
+      "text": "Answer, and think upon this business."
+    },
+    {
+      "number": 81,
+      "speaker": "KING",
+      "text": "Meantime we thank you for your well-took labour:"
+    },
+    {
+      "number": 82,
+      "speaker": "KING",
+      "text": "Go to your rest; at night we’ll feast together:"
+    },
+    {
+      "number": 83,
+      "speaker": "KING",
+      "text": "Most welcome home!"
+    },
+    {
+      "number": 83,
+      "speaker": "POLONIUS",
+      "text": "This business is well ended."
+    },
+    {
+      "number": 84,
+      "speaker": "POLONIUS",
+      "text": "My liege, and madam, to expostulate"
+    },
+    {
+      "number": 85,
+      "speaker": "POLONIUS",
+      "text": "What majesty should be, what duty is,"
+    },
+    {
+      "number": 86,
+      "speaker": "POLONIUS",
+      "text": "Why day is day, night night, and time is time,"
+    },
+    {
+      "number": 87,
+      "speaker": "POLONIUS",
+      "text": "Were nothing but to waste night, day and time."
+    },
+    {
+      "number": 88,
+      "speaker": "POLONIUS",
+      "text": "Therefore, since brevity is the soul of wit,"
+    },
+    {
+      "number": 89,
+      "speaker": "POLONIUS",
+      "text": "And tediousness the limbs and outward flourishes,"
+    },
+    {
+      "number": 90,
+      "speaker": "POLONIUS",
+      "text": "I will be brief: your noble son is mad:"
+    },
+    {
+      "number": 91,
+      "speaker": "POLONIUS",
+      "text": "Mad call I it; for, to define true madness,"
+    },
+    {
+      "number": 92,
+      "speaker": "POLONIUS",
+      "text": "What is’t but to be nothing else but mad?"
+    },
+    {
+      "number": 93,
+      "speaker": "POLONIUS",
+      "text": "But let that go."
+    },
+    {
+      "number": 93,
+      "speaker": "QUEEN",
+      "text": "More matter, with less art."
+    },
+    {
+      "number": 94,
+      "speaker": "POLONIUS",
+      "text": "Madam, I swear I use no art at all. That he is"
+    },
+    {
+      "number": 95,
+      "speaker": "POLONIUS",
+      "text": "mad, ’tis true: ’tis true ’tis pity; And pity ’tis ’tis true:"
+    },
+    {
+      "number": 96,
+      "speaker": "POLONIUS",
+      "text": "a foolish figure; But farewell it, for I will use no art."
+    },
+    {
+      "number": 97,
+      "speaker": "POLONIUS",
+      "text": "Mad let us grant him, then: and now remains That we find"
+    },
+    {
+      "number": 98,
+      "speaker": "POLONIUS",
+      "text": "out the cause of this effect, Or rather say, the cause of"
+    },
+    {
+      "number": 99,
+      "speaker": "POLONIUS",
+      "text": "this defect, For this effect defective comes by cause: Thus it remains,"
+    },
+    {
+      "number": 100,
+      "speaker": "POLONIUS",
+      "text": "and the remainder thus. Perpend. I have a daughter—have while she is"
+    },
+    {
+      "number": 101,
+      "speaker": "POLONIUS",
+      "text": "mine— Who, in her duty and obedience, mark, Hath given me this:"
+    },
+    {
+      "number": 102,
+      "speaker": "POLONIUS",
+      "text": "now gather, and surmise. “To the celestial and my soul’s idol, the"
+    },
+    {
+      "number": 103,
+      "speaker": "POLONIUS",
+      "text": "most beautified Ophelia,”— That’s an ill phrase, a vile phrase; “beautified” is"
+    },
+    {
+      "number": 104,
+      "speaker": "POLONIUS",
+      "text": "a vile phrase: but you shall hear. Thus: “In her excellent white"
+    },
+    {
+      "number": 105,
+      "speaker": "POLONIUS",
+      "text": "bosom, these, etc.”"
+    },
+    {
+      "number": 105,
+      "speaker": "QUEEN",
+      "text": "Came this from Hamlet to her?"
+    },
+    {
+      "number": 106,
+      "speaker": "POLONIUS",
+      "text": "Good madam, stay awhile; I will be faithful. “Doubt thou the stars"
+    },
+    {
+      "number": 107,
+      "speaker": "POLONIUS",
+      "text": "are fire; Doubt that the sun doth move; Doubt truth to be"
+    },
+    {
+      "number": 108,
+      "speaker": "POLONIUS",
+      "text": "a liar; But never doubt I love. “O dear Ophelia, I am"
+    },
+    {
+      "number": 109,
+      "speaker": "POLONIUS",
+      "text": "ill at these numbers; I have not art to reckon my groans:"
+    },
+    {
+      "number": 110,
+      "speaker": "POLONIUS",
+      "text": "but that I love thee best, O most best, believe it. Adieu."
+    },
+    {
+      "number": 111,
+      "speaker": "POLONIUS",
+      "text": "“Thine evermore most dear lady, whilst this machine is to him, Hamlet.”"
+    },
+    {
+      "number": 112,
+      "speaker": "POLONIUS",
+      "text": "This, in obedience, hath my daughter shown me, And more above, hath"
+    },
+    {
+      "number": 113,
+      "speaker": "POLONIUS",
+      "text": "his solicitings, As they fell out by time, by means and place,"
+    },
+    {
+      "number": 114,
+      "speaker": "POLONIUS",
+      "text": "All given to mine ear."
+    },
+    {
+      "number": 114,
+      "speaker": "KING",
+      "text": "But how hath she"
+    },
+    {
+      "number": 115,
+      "speaker": "KING",
+      "text": "Received his love?"
+    },
+    {
+      "number": 115,
+      "speaker": "POLONIUS",
+      "text": "What do you think of me?"
+    },
+    {
+      "number": 116,
+      "speaker": "KING",
+      "text": "As of a man faithful and honourable."
+    },
+    {
+      "number": 117,
+      "speaker": "POLONIUS",
+      "text": "I would fain prove so. But what might you think,"
+    },
+    {
+      "number": 118,
+      "speaker": "POLONIUS",
+      "text": "When I had seen this hot love on the wing—"
+    },
+    {
+      "number": 119,
+      "speaker": "POLONIUS",
+      "text": "As I perceived it, I must tell you that,"
+    },
+    {
+      "number": 120,
+      "speaker": "POLONIUS",
+      "text": "Before my daughter told me—what might you,"
+    },
+    {
+      "number": 121,
+      "speaker": "POLONIUS",
+      "text": "Or my dear majesty your queen here, think,"
+    },
+    {
+      "number": 122,
+      "speaker": "POLONIUS",
+      "text": "If I had play’d the desk or table-book,"
+    },
+    {
+      "number": 123,
+      "speaker": "POLONIUS",
+      "text": "Or given my heart a winking, mute and dumb,"
+    },
+    {
+      "number": 124,
+      "speaker": "POLONIUS",
+      "text": "Or look’d upon this love with idle sight;"
+    },
+    {
+      "number": 125,
+      "speaker": "POLONIUS",
+      "text": "What might you think? No, I went round to work,"
+    },
+    {
+      "number": 126,
+      "speaker": "POLONIUS",
+      "text": "And my young mistress thus I did bespeak:"
+    },
+    {
+      "number": 127,
+      "speaker": "POLONIUS",
+      "text": "“Lord Hamlet is a prince, out of thy star;"
+    },
+    {
+      "number": 128,
+      "speaker": "POLONIUS",
+      "text": "This must not be:” and then I precepts gave her,"
+    },
+    {
+      "number": 129,
+      "speaker": "POLONIUS",
+      "text": "That she should lock herself from his resort,"
+    },
+    {
+      "number": 130,
+      "speaker": "POLONIUS",
+      "text": "Admit no messengers, receive no tokens."
+    },
+    {
+      "number": 131,
+      "speaker": "POLONIUS",
+      "text": "Which done, she took the fruits of my advice;"
+    },
+    {
+      "number": 132,
+      "speaker": "POLONIUS",
+      "text": "And he, repulsed—a short tale to make—"
+    },
+    {
+      "number": 133,
+      "speaker": "POLONIUS",
+      "text": "Fell into a sadness, then into a fast,"
+    },
+    {
+      "number": 134,
+      "speaker": "POLONIUS",
+      "text": "Thence to a watch, thence into a weakness,"
+    },
+    {
+      "number": 135,
+      "speaker": "POLONIUS",
+      "text": "Thence to a lightness, and, by this declension,"
+    },
+    {
+      "number": 136,
+      "speaker": "POLONIUS",
+      "text": "Into the madness wherein now he raves,"
+    },
+    {
+      "number": 137,
+      "speaker": "POLONIUS",
+      "text": "And all we mourn for."
+    },
+    {
+      "number": 137,
+      "speaker": "KING",
+      "text": "Do you think ’tis this?"
+    },
+    {
+      "number": 138,
+      "speaker": "QUEEN",
+      "text": "It may be, very likely."
+    },
+    {
+      "number": 139,
+      "speaker": "POLONIUS",
+      "text": "Hath there been such a time—I’d fain know that—"
+    },
+    {
+      "number": 140,
+      "speaker": "POLONIUS",
+      "text": "That I have positively said “ ’Tis so,”"
+    },
+    {
+      "number": 141,
+      "speaker": "POLONIUS",
+      "text": "When it proved otherwise?"
+    },
+    {
+      "number": 141,
+      "speaker": "KING",
+      "text": "Not that I know."
+    },
+    {
+      "number": 142,
+      "speaker": "POLONIUS",
+      "text": "Take this from this, if this be otherwise:"
+    },
+    {
+      "number": 143,
+      "speaker": "POLONIUS",
+      "text": "If circumstances lead me, I will find"
+    },
+    {
+      "number": 144,
+      "speaker": "POLONIUS",
+      "text": "Where truth is hid, though it were hid indeed"
+    },
+    {
+      "number": 145,
+      "speaker": "POLONIUS",
+      "text": "Within the centre."
+    },
+    {
+      "number": 145,
+      "speaker": "KING",
+      "text": "How may we try it further?"
+    },
+    {
+      "number": 146,
+      "speaker": "POLONIUS",
+      "text": "You know, sometimes he walks four hours together"
+    },
+    {
+      "number": 147,
+      "speaker": "POLONIUS",
+      "text": "Here in the lobby."
+    },
+    {
+      "number": 147,
+      "speaker": "QUEEN",
+      "text": "So he does indeed."
+    },
+    {
+      "number": 148,
+      "speaker": "POLONIUS",
+      "text": "At such a time I’ll loose my daughter to him:"
+    },
+    {
+      "number": 149,
+      "speaker": "POLONIUS",
+      "text": "Be you and I behind an arras then;"
+    },
+    {
+      "number": 150,
+      "speaker": "POLONIUS",
+      "text": "Mark the encounter: if he love her not"
+    },
+    {
+      "number": 151,
+      "speaker": "POLONIUS",
+      "text": "And be not from his reason fall’n thereon,"
+    },
+    {
+      "number": 152,
+      "speaker": "POLONIUS",
+      "text": "Let me be no assistant for a state,"
+    },
+    {
+      "number": 153,
+      "speaker": "POLONIUS",
+      "text": "But keep a farm and carters."
+    },
+    {
+      "number": 153,
+      "speaker": "KING",
+      "text": "We will try it."
+    },
+    {
+      "number": 154,
+      "speaker": "QUEEN",
+      "text": "But, look, where sadly the poor wretch comes reading."
+    },
+    {
+      "number": 155,
+      "speaker": "POLONIUS",
+      "text": "Away, I do beseech you, both away:"
+    },
+    {
+      "number": 156,
+      "speaker": "POLONIUS",
+      "text": "I’ll board him presently."
+    },
+    {
+      "number": 156,
+      "speaker": "HAMLET",
+      "text": "Well, God-a-mercy."
+    },
+    {
+      "number": 157,
+      "speaker": "POLONIUS",
+      "text": "Do you know me, my lord?"
+    },
+    {
+      "number": 157,
+      "speaker": "HAMLET",
+      "text": "Excellent well; you are a fishmonger."
+    },
+    {
+      "number": 158,
+      "speaker": "POLONIUS",
+      "text": "Not I, my lord."
+    },
+    {
+      "number": 159,
+      "speaker": "HAMLET",
+      "text": "Then I would you were so honest a man."
+    },
+    {
+      "number": 160,
+      "speaker": "POLONIUS",
+      "text": "Honest, my lord!"
+    },
+    {
+      "number": 161,
+      "speaker": "HAMLET",
+      "text": "Ay, sir; to be honest, as this world goes, is to be"
+    },
+    {
+      "number": 162,
+      "speaker": "HAMLET",
+      "text": "one man picked out of ten thousand."
+    },
+    {
+      "number": 163,
+      "speaker": "POLONIUS",
+      "text": "That’s very true, my lord."
+    },
+    {
+      "number": 164,
+      "speaker": "HAMLET",
+      "text": "For if the sun breed maggots in a dead dog, being a"
+    },
+    {
+      "number": 165,
+      "speaker": "HAMLET",
+      "text": "god kissing carrion—Have you a daughter?"
+    },
+    {
+      "number": 165,
+      "speaker": "POLONIUS",
+      "text": "I have, my lord."
+    },
+    {
+      "number": 166,
+      "speaker": "HAMLET",
+      "text": "Let her not walk i’ the sun: conception is a blessing: but"
+    },
+    {
+      "number": 167,
+      "speaker": "HAMLET",
+      "text": "not as your daughter may conceive. Friend, look to’t."
+    },
+    {
+      "number": 168,
+      "speaker": "POLONIUS",
+      "text": "How say you by that? Still harping on my daughter: yet he"
+    },
+    {
+      "number": 169,
+      "speaker": "POLONIUS",
+      "text": "knew me not at first; he said I was a fishmonger: he"
+    },
+    {
+      "number": 170,
+      "speaker": "POLONIUS",
+      "text": "is far gone, far gone: and truly in my youth I suffered"
+    },
+    {
+      "number": 171,
+      "speaker": "POLONIUS",
+      "text": "much extremity for love; very near this. I’ll speak to him again."
+    },
+    {
+      "number": 172,
+      "speaker": "POLONIUS",
+      "text": "What do you read, my lord?"
+    },
+    {
+      "number": 172,
+      "speaker": "HAMLET",
+      "text": "Words, words, words."
+    },
+    {
+      "number": 173,
+      "speaker": "POLONIUS",
+      "text": "What is the matter, my lord?"
+    },
+    {
+      "number": 173,
+      "speaker": "HAMLET",
+      "text": "Between who?"
+    },
+    {
+      "number": 174,
+      "speaker": "POLONIUS",
+      "text": "I mean, the matter that you read, my lord."
+    },
+    {
+      "number": 175,
+      "speaker": "HAMLET",
+      "text": "Slanders, sir: for the satirical rogue says here that old men have"
+    },
+    {
+      "number": 176,
+      "speaker": "HAMLET",
+      "text": "grey beards, that their faces are wrinkled, their eyes purging thick amber"
+    },
+    {
+      "number": 177,
+      "speaker": "HAMLET",
+      "text": "and plum-tree gum and that they have a plentiful lack of wit,"
+    },
+    {
+      "number": 178,
+      "speaker": "HAMLET",
+      "text": "together with most weak hams: all which, sir, though I most powerfully"
+    },
+    {
+      "number": 179,
+      "speaker": "HAMLET",
+      "text": "and potently believe, yet I hold it not honesty to have it"
+    },
+    {
+      "number": 180,
+      "speaker": "HAMLET",
+      "text": "thus set down, for yourself, sir, should be old as I am,"
+    },
+    {
+      "number": 181,
+      "speaker": "HAMLET",
+      "text": "if like a crab you could go backward."
+    },
+    {
+      "number": 182,
+      "speaker": "POLONIUS",
+      "text": "Though this be madness, yet there is method in’t. Will you walk"
+    },
+    {
+      "number": 183,
+      "speaker": "POLONIUS",
+      "text": "out of the air, my lord?"
+    },
+    {
+      "number": 183,
+      "speaker": "HAMLET",
+      "text": "Into my grave."
+    },
+    {
+      "number": 184,
+      "speaker": "POLONIUS",
+      "text": "Indeed, that is out o’ the air. How pregnant sometimes his replies"
+    },
+    {
+      "number": 185,
+      "speaker": "POLONIUS",
+      "text": "are! a happiness that often madness hits on, which reason and sanity"
+    },
+    {
+      "number": 186,
+      "speaker": "POLONIUS",
+      "text": "could not so prosperously be delivered of. I will leave him, and"
+    },
+    {
+      "number": 187,
+      "speaker": "POLONIUS",
+      "text": "suddenly contrive the means of meeting between him and my daughter.—My honourable"
+    },
+    {
+      "number": 188,
+      "speaker": "POLONIUS",
+      "text": "lord, I will most humbly take my leave of you."
+    },
+    {
+      "number": 189,
+      "speaker": "HAMLET",
+      "text": "You cannot, sir, take from me any thing that I will more"
+    },
+    {
+      "number": 190,
+      "speaker": "HAMLET",
+      "text": "willingly part withal: except my life, except my life, except my life."
+    },
+    {
+      "number": 191,
+      "speaker": "POLONIUS",
+      "text": "Fare you well, my lord."
+    },
+    {
+      "number": 191,
+      "speaker": "HAMLET",
+      "text": "These tedious old fools!"
+    },
+    {
+      "number": 192,
+      "speaker": "POLONIUS",
+      "text": "You go to seek the Lord Hamlet; there he is."
+    },
+    {
+      "number": 193,
+      "speaker": "ROSENCRANTZ",
+      "text": "To Polonius. God save you, sir!"
+    },
+    {
+      "number": 193,
+      "speaker": "GUILDENSTERN",
+      "text": "My honoured lord!"
+    },
+    {
+      "number": 194,
+      "speaker": "ROSENCRANTZ",
+      "text": "My most dear lord!"
+    },
+    {
+      "number": 195,
+      "speaker": "HAMLET",
+      "text": "My excellent good friends! How dost thou, Guildenstern? Ah, Rosencrantz! Good lads,"
+    },
+    {
+      "number": 196,
+      "speaker": "HAMLET",
+      "text": "how do ye both?"
+    },
+    {
+      "number": 197,
+      "speaker": "ROSENCRANTZ",
+      "text": "As the indifferent children of the earth."
+    },
+    {
+      "number": 198,
+      "speaker": "GUILDENSTERN",
+      "text": "Happy, in that we are not over-happy;"
+    },
+    {
+      "number": 199,
+      "speaker": "GUILDENSTERN",
+      "text": "On fortune’s cap we are not the very button."
+    },
+    {
+      "number": 200,
+      "speaker": "HAMLET",
+      "text": "Nor the soles of her shoe?"
+    },
+    {
+      "number": 200,
+      "speaker": "ROSENCRANTZ",
+      "text": "Neither, my lord."
+    },
+    {
+      "number": 201,
+      "speaker": "HAMLET",
+      "text": "Then you live about her waist, or in the middle of her favours?"
+    },
+    {
+      "number": 202,
+      "speaker": "GUILDENSTERN",
+      "text": "’Faith, her privates we."
+    },
+    {
+      "number": 203,
+      "speaker": "HAMLET",
+      "text": "In the secret parts of fortune? O, most true; she is a"
+    },
+    {
+      "number": 204,
+      "speaker": "HAMLET",
+      "text": "strumpet. What’s the news?"
+    },
+    {
+      "number": 205,
+      "speaker": "ROSENCRANTZ",
+      "text": "None, my lord, but that the world’s grown honest."
+    },
+    {
+      "number": 206,
+      "speaker": "HAMLET",
+      "text": "Then is doomsday near: but your news is not true. Let me"
+    },
+    {
+      "number": 207,
+      "speaker": "HAMLET",
+      "text": "question more in particular: what have you, my good friends, deserved at"
+    },
+    {
+      "number": 208,
+      "speaker": "HAMLET",
+      "text": "the hands of fortune, that she sends you to prison hither?"
+    },
+    {
+      "number": 209,
+      "speaker": "GUILDENSTERN",
+      "text": "Prison, my lord!"
+    },
+    {
+      "number": 209,
+      "speaker": "HAMLET",
+      "text": "Denmark’s a prison."
+    },
+    {
+      "number": 210,
+      "speaker": "ROSENCRANTZ",
+      "text": "Then is the world one."
+    },
+    {
+      "number": 211,
+      "speaker": "HAMLET",
+      "text": "A goodly one; in which there are many confines, wards and dungeons,"
+    },
+    {
+      "number": 212,
+      "speaker": "HAMLET",
+      "text": "Denmark being one o’ the worst."
+    },
+    {
+      "number": 212,
+      "speaker": "ROSENCRANTZ",
+      "text": "We think not so, my lord."
+    },
+    {
+      "number": 213,
+      "speaker": "HAMLET",
+      "text": "Why, then, ’tis none to you; for there is nothing either good"
+    },
+    {
+      "number": 214,
+      "speaker": "HAMLET",
+      "text": "or bad, but thinking makes it so: to me it is a"
+    },
+    {
+      "number": 215,
+      "speaker": "HAMLET",
+      "text": "prison."
+    },
+    {
+      "number": 216,
+      "speaker": "ROSENCRANTZ",
+      "text": "Why then, your ambition makes it one; ’tis too narrow for your mind."
+    },
+    {
+      "number": 217,
+      "speaker": "HAMLET",
+      "text": "O God, I could be bounded in a nut-shell and count myself"
+    },
+    {
+      "number": 218,
+      "speaker": "HAMLET",
+      "text": "a king of infinite space, were it not that I have bad"
+    },
+    {
+      "number": 219,
+      "speaker": "HAMLET",
+      "text": "dreams."
+    },
+    {
+      "number": 220,
+      "speaker": "GUILDENSTERN",
+      "text": "Which dreams indeed are ambition, for the very substance of the ambitious"
+    },
+    {
+      "number": 221,
+      "speaker": "GUILDENSTERN",
+      "text": "is merely the shadow of a dream."
+    },
+    {
+      "number": 222,
+      "speaker": "HAMLET",
+      "text": "A dream itself is but a shadow."
+    },
+    {
+      "number": 223,
+      "speaker": "ROSENCRANTZ",
+      "text": "Truly, and I hold ambition of so airy and light a quality"
+    },
+    {
+      "number": 224,
+      "speaker": "ROSENCRANTZ",
+      "text": "that it is but a shadow’s shadow."
+    },
+    {
+      "number": 225,
+      "speaker": "HAMLET",
+      "text": "Then are our beggars bodies, and our monarchs and outstretched heroes the"
+    },
+    {
+      "number": 226,
+      "speaker": "HAMLET",
+      "text": "beggars’ shadows. Shall we to the court? for, by my fay, I"
+    },
+    {
+      "number": 227,
+      "speaker": "HAMLET",
+      "text": "cannot reason."
+    },
+    {
+      "number": 227,
+      "speaker": "ROSENCRANTZ GUILDENSTERN",
+      "text": "We’ll wait upon you."
+    },
+    {
+      "number": 228,
+      "speaker": "HAMLET",
+      "text": "No such matter: I will not sort you with the rest of"
+    },
+    {
+      "number": 229,
+      "speaker": "HAMLET",
+      "text": "my servants, for, to speak to you like an honest man, I"
+    },
+    {
+      "number": 230,
+      "speaker": "HAMLET",
+      "text": "am most dreadfully attended. But, in the beaten way of friendship, what"
+    },
+    {
+      "number": 231,
+      "speaker": "HAMLET",
+      "text": "make you at Elsinore?"
+    },
+    {
+      "number": 232,
+      "speaker": "ROSENCRANTZ",
+      "text": "To visit you, my lord; no other occasion."
+    },
+    {
+      "number": 233,
+      "speaker": "HAMLET",
+      "text": "Beggar that I am, I am even poor in thanks; but I"
+    },
+    {
+      "number": 234,
+      "speaker": "HAMLET",
+      "text": "thank you: and sure, dear friends, my thanks are too dear a"
+    },
+    {
+      "number": 235,
+      "speaker": "HAMLET",
+      "text": "halfpenny. Were you not sent for? Is it your own inclining? Is"
+    },
+    {
+      "number": 236,
+      "speaker": "HAMLET",
+      "text": "it a free visitation? Come, deal justly with me: come, come; nay,"
+    },
+    {
+      "number": 237,
+      "speaker": "HAMLET",
+      "text": "speak."
+    },
+    {
+      "number": 237,
+      "speaker": "GUILDENSTERN",
+      "text": "What should we say, my lord?"
+    },
+    {
+      "number": 238,
+      "speaker": "HAMLET",
+      "text": "Why, any thing, but to the purpose. You were sent for; and"
+    },
+    {
+      "number": 239,
+      "speaker": "HAMLET",
+      "text": "there is a kind of confession in your looks which your modesties"
+    },
+    {
+      "number": 240,
+      "speaker": "HAMLET",
+      "text": "have not craft enough to colour: I know the good king and"
+    },
+    {
+      "number": 241,
+      "speaker": "HAMLET",
+      "text": "queen have sent for you."
+    },
+    {
+      "number": 241,
+      "speaker": "ROSENCRANTZ",
+      "text": "To what end, my lord?"
+    },
+    {
+      "number": 242,
+      "speaker": "HAMLET",
+      "text": "That you must teach me. But let me conjure you, by the"
+    },
+    {
+      "number": 243,
+      "speaker": "HAMLET",
+      "text": "rights of our fellowship, by the consonancy of our youth, by the"
+    },
+    {
+      "number": 244,
+      "speaker": "HAMLET",
+      "text": "obligation of our ever-preserved love, and by what more dear a better"
+    },
+    {
+      "number": 245,
+      "speaker": "HAMLET",
+      "text": "proposer could charge you withal, be even and direct with me, whether"
+    },
+    {
+      "number": 246,
+      "speaker": "HAMLET",
+      "text": "you were sent for, or no?"
+    },
+    {
+      "number": 246,
+      "speaker": "ROSENCRANTZ",
+      "text": "What say you?"
+    },
+    {
+      "number": 247,
+      "speaker": "HAMLET",
+      "text": "Nay, then, I have an eye of you.—If you love me, hold not off."
+    },
+    {
+      "number": 248,
+      "speaker": "GUILDENSTERN",
+      "text": "My lord, we were sent for."
+    },
+    {
+      "number": 249,
+      "speaker": "HAMLET",
+      "text": "I will tell you why; so shall my anticipation prevent your discovery,"
+    },
+    {
+      "number": 250,
+      "speaker": "HAMLET",
+      "text": "and your secrecy to the king and queen moult no feather. I"
+    },
+    {
+      "number": 251,
+      "speaker": "HAMLET",
+      "text": "have of late—but wherefore I know not—lost all my mirth, forgone all"
+    },
+    {
+      "number": 252,
+      "speaker": "HAMLET",
+      "text": "custom of exercises; and indeed it goes so heavily with my disposition"
+    },
+    {
+      "number": 253,
+      "speaker": "HAMLET",
+      "text": "that this goodly frame, the earth, seems to me a sterile promontory,"
+    },
+    {
+      "number": 254,
+      "speaker": "HAMLET",
+      "text": "this most excellent canopy, the air, look you, this brave o’erhanging firmament,"
+    },
+    {
+      "number": 255,
+      "speaker": "HAMLET",
+      "text": "this majestical roof fretted with golden fire, why, it appears no other"
+    },
+    {
+      "number": 256,
+      "speaker": "HAMLET",
+      "text": "thing to me than a foul and pestilent congregation of vapours. What"
+    },
+    {
+      "number": 257,
+      "speaker": "HAMLET",
+      "text": "a piece of work is a man! how noble in reason! how"
+    },
+    {
+      "number": 258,
+      "speaker": "HAMLET",
+      "text": "infinite in faculty! in form and moving how express and admirable! in"
+    },
+    {
+      "number": 259,
+      "speaker": "HAMLET",
+      "text": "action how like an angel! in apprehension how like a god! the"
+    },
+    {
+      "number": 260,
+      "speaker": "HAMLET",
+      "text": "beauty of the world! the paragon of animals! And yet, to me,"
+    },
+    {
+      "number": 261,
+      "speaker": "HAMLET",
+      "text": "what is this quintessence of dust? man delights not me: no, nor"
+    },
+    {
+      "number": 262,
+      "speaker": "HAMLET",
+      "text": "woman neither, though by your smiling you seem to say so."
+    },
+    {
+      "number": 263,
+      "speaker": "ROSENCRANTZ",
+      "text": "My lord, there was no such stuff in my thoughts."
+    },
+    {
+      "number": 264,
+      "speaker": "HAMLET",
+      "text": "Why did you laugh then, when I said “man delights not me”?"
+    },
+    {
+      "number": 265,
+      "speaker": "ROSENCRANTZ",
+      "text": "To think, my lord, if you delight not in man, what lenten"
+    },
+    {
+      "number": 266,
+      "speaker": "ROSENCRANTZ",
+      "text": "entertainment the players shall receive from you: we coted them on the"
+    },
+    {
+      "number": 267,
+      "speaker": "ROSENCRANTZ",
+      "text": "way; and hither are they coming, to offer you service."
+    },
+    {
+      "number": 268,
+      "speaker": "HAMLET",
+      "text": "He that plays the king shall be welcome; his majesty shall have"
+    },
+    {
+      "number": 269,
+      "speaker": "HAMLET",
+      "text": "tribute of me; the adventurous knight shall use his foil and target;"
+    },
+    {
+      "number": 270,
+      "speaker": "HAMLET",
+      "text": "the lover shall not sigh gratis; the humourous man shall end his"
+    },
+    {
+      "number": 271,
+      "speaker": "HAMLET",
+      "text": "part in peace; the clown shall make those laugh whose lungs are"
+    },
+    {
+      "number": 272,
+      "speaker": "HAMLET",
+      "text": "tickled o’ the sere; and the lady shall say her mind freely,"
+    },
+    {
+      "number": 273,
+      "speaker": "HAMLET",
+      "text": "or the blank verse shall halt for’t. What players are they?"
+    },
+    {
+      "number": 274,
+      "speaker": "ROSENCRANTZ",
+      "text": "Even those you were wont to take delight in, the tragedians of the city."
+    },
+    {
+      "number": 275,
+      "speaker": "HAMLET",
+      "text": "How chances it they travel? their residence, both in reputation and profit,"
+    },
+    {
+      "number": 276,
+      "speaker": "HAMLET",
+      "text": "was better both ways."
+    },
+    {
+      "number": 277,
+      "speaker": "ROSENCRANTZ",
+      "text": "I think their inhibition comes by the means of the late innovation."
+    },
+    {
+      "number": 278,
+      "speaker": "HAMLET",
+      "text": "Do they hold the same estimation they did when I was in"
+    },
+    {
+      "number": 279,
+      "speaker": "HAMLET",
+      "text": "the city? are they so followed?"
+    },
+    {
+      "number": 279,
+      "speaker": "ROSENCRANTZ",
+      "text": "No, indeed, are they not."
+    },
+    {
+      "number": 280,
+      "speaker": "HAMLET",
+      "text": "How comes it? do they grow rusty?"
+    },
+    {
+      "number": 281,
+      "speaker": "ROSENCRANTZ",
+      "text": "Nay, their endeavour keeps in the wonted pace: but there is, sir,"
+    },
+    {
+      "number": 282,
+      "speaker": "ROSENCRANTZ",
+      "text": "an aery of children, little eyases, that cry out on the top"
+    },
+    {
+      "number": 283,
+      "speaker": "ROSENCRANTZ",
+      "text": "of question, and are most tyrannically clapped for’t: these are now the"
+    },
+    {
+      "number": 284,
+      "speaker": "ROSENCRANTZ",
+      "text": "fashion, and so berattle the common stages—so they call them—that many wearing"
+    },
+    {
+      "number": 285,
+      "speaker": "ROSENCRANTZ",
+      "text": "rapiers are afraid of goose-quills and dare scarce come thither."
+    },
+    {
+      "number": 286,
+      "speaker": "HAMLET",
+      "text": "What, are they children? who maintains ’em? how are they escoted? Will"
+    },
+    {
+      "number": 287,
+      "speaker": "HAMLET",
+      "text": "they pursue the quality no longer than they can sing? will they"
+    },
+    {
+      "number": 288,
+      "speaker": "HAMLET",
+      "text": "not say afterwards, if they should grow themselves to common players—as it"
+    },
+    {
+      "number": 289,
+      "speaker": "HAMLET",
+      "text": "is most like, if their means are no better—their writers do them"
+    },
+    {
+      "number": 290,
+      "speaker": "HAMLET",
+      "text": "wrong, to make them exclaim against their own succession?"
+    },
+    {
+      "number": 291,
+      "speaker": "ROSENCRANTZ",
+      "text": "’Faith, there has been much to do on both sides; and the"
+    },
+    {
+      "number": 292,
+      "speaker": "ROSENCRANTZ",
+      "text": "nation holds it no sin to tarre them to controversy: there was,"
+    },
+    {
+      "number": 293,
+      "speaker": "ROSENCRANTZ",
+      "text": "for a while, no money bid for argument, unless the poet and"
+    },
+    {
+      "number": 294,
+      "speaker": "ROSENCRANTZ",
+      "text": "the player went to cuffs in the question."
+    },
+    {
+      "number": 295,
+      "speaker": "HAMLET",
+      "text": "Is’t possible?"
+    },
+    {
+      "number": 296,
+      "speaker": "GUILDENSTERN",
+      "text": "O, there has been much throwing about of brains."
+    },
+    {
+      "number": 297,
+      "speaker": "HAMLET",
+      "text": "Do the boys carry it away?"
+    },
+    {
+      "number": 298,
+      "speaker": "ROSENCRANTZ",
+      "text": "Ay, that they do, my lord; Hercules and his load too."
+    },
+    {
+      "number": 299,
+      "speaker": "HAMLET",
+      "text": "It is not very strange; for mine uncle is king of Denmark,"
+    },
+    {
+      "number": 300,
+      "speaker": "HAMLET",
+      "text": "and those that would make mows at him while my father lived,"
+    },
+    {
+      "number": 301,
+      "speaker": "HAMLET",
+      "text": "give twenty, forty, fifty, an hundred ducats a-piece for his picture in"
+    },
+    {
+      "number": 302,
+      "speaker": "HAMLET",
+      "text": "little. ’Sblood, there is something in this more than natural, if philosophy"
+    },
+    {
+      "number": 303,
+      "speaker": "HAMLET",
+      "text": "could find it out."
+    },
+    {
+      "number": 303,
+      "speaker": "GUILDENSTERN",
+      "text": "There are the players."
+    },
+    {
+      "number": 304,
+      "speaker": "HAMLET",
+      "text": "Gentlemen, you are welcome to Elsinore. Your hands, come then: the appurtenance"
+    },
+    {
+      "number": 305,
+      "speaker": "HAMLET",
+      "text": "of welcome is fashion and ceremony: let me comply with you in"
+    },
+    {
+      "number": 306,
+      "speaker": "HAMLET",
+      "text": "this garb, lest my extent to the players, which, I tell you,"
+    },
+    {
+      "number": 307,
+      "speaker": "HAMLET",
+      "text": "must show fairly outward, should more appear like entertainment than yours. You"
+    },
+    {
+      "number": 308,
+      "speaker": "HAMLET",
+      "text": "are welcome: but my uncle-father and aunt-mother are deceived."
+    },
+    {
+      "number": 309,
+      "speaker": "GUILDENSTERN",
+      "text": "In what, my dear lord?"
+    },
+    {
+      "number": 310,
+      "speaker": "HAMLET",
+      "text": "I am but mad north-north-west: when the wind is southerly I know"
+    },
+    {
+      "number": 311,
+      "speaker": "HAMLET",
+      "text": "a hawk from a handsaw."
+    },
+    {
+      "number": 311,
+      "speaker": "POLONIUS",
+      "text": "Well be with you, gentlemen!"
+    },
+    {
+      "number": 312,
+      "speaker": "HAMLET",
+      "text": "Hark you, Guildenstern; and you too: at each ear a hearer: that"
+    },
+    {
+      "number": 313,
+      "speaker": "HAMLET",
+      "text": "great baby you see there is not yet out of his swaddling-clouts."
+    },
+    {
+      "number": 314,
+      "speaker": "ROSENCRANTZ",
+      "text": "Happily he’s the second time come to them; for they say an"
+    },
+    {
+      "number": 315,
+      "speaker": "ROSENCRANTZ",
+      "text": "old man is twice a child."
+    },
+    {
+      "number": 316,
+      "speaker": "HAMLET",
+      "text": "I will prophesy he comes to tell me of the players; mark"
+    },
+    {
+      "number": 317,
+      "speaker": "HAMLET",
+      "text": "it. You say right, sir: o’ Monday morning; ’twas so indeed."
+    },
+    {
+      "number": 318,
+      "speaker": "POLONIUS",
+      "text": "My lord, I have news to tell you."
+    },
+    {
+      "number": 319,
+      "speaker": "HAMLET",
+      "text": "My lord, I have news to tell you. When Roscius was an actor in Rome—"
+    },
+    {
+      "number": 320,
+      "speaker": "POLONIUS",
+      "text": "The actors are come hither, my lord."
+    },
+    {
+      "number": 321,
+      "speaker": "HAMLET",
+      "text": "Buz, buz!"
+    },
+    {
+      "number": 321,
+      "speaker": "POLONIUS",
+      "text": "Upon mine honour—"
+    },
+    {
+      "number": 322,
+      "speaker": "HAMLET",
+      "text": "Then came each actor on his ass—"
+    },
+    {
+      "number": 323,
+      "speaker": "POLONIUS",
+      "text": "The best actors in the world, either for tragedy, comedy, history, pastoral,"
+    },
+    {
+      "number": 324,
+      "speaker": "POLONIUS",
+      "text": "pastoral-comical, historical-pastoral, tragical-historical, tragical-comical-historical-pastoral, scene individable, or poem unlimited: Seneca cannot be"
+    },
+    {
+      "number": 325,
+      "speaker": "POLONIUS",
+      "text": "too heavy, nor Plautus too light. For the law of writ and"
+    },
+    {
+      "number": 326,
+      "speaker": "POLONIUS",
+      "text": "the liberty, these are the only men."
+    },
+    {
+      "number": 327,
+      "speaker": "HAMLET",
+      "text": "O Jephthah, judge of Israel, what a treasure hadst thou!"
+    },
+    {
+      "number": 328,
+      "speaker": "POLONIUS",
+      "text": "What a treasure had he, my lord?"
+    },
+    {
+      "number": 329,
+      "speaker": "HAMLET",
+      "text": "Why, “One fair daughter and no more, The which he loved passing well.”"
+    },
+    {
+      "number": 330,
+      "speaker": "POLONIUS",
+      "text": "Still on my daughter."
+    },
+    {
+      "number": 331,
+      "speaker": "HAMLET",
+      "text": "Am I not i’ the right, old Jephthah?"
+    },
+    {
+      "number": 332,
+      "speaker": "POLONIUS",
+      "text": "If you call me Jephthah, my lord, I have a daughter that"
+    },
+    {
+      "number": 333,
+      "speaker": "POLONIUS",
+      "text": "I love passing well."
+    },
+    {
+      "number": 333,
+      "speaker": "HAMLET",
+      "text": "Nay, that follows not."
+    },
+    {
+      "number": 334,
+      "speaker": "POLONIUS",
+      "text": "What follows, then, my lord?"
+    },
+    {
+      "number": 335,
+      "speaker": "HAMLET",
+      "text": "Why, “As by lot, God wot,” and then, you know, “It came"
+    },
+    {
+      "number": 336,
+      "speaker": "HAMLET",
+      "text": "to pass, as most like it was,”— the first row of the"
+    },
+    {
+      "number": 337,
+      "speaker": "HAMLET",
+      "text": "pious chanson will show you more; for look, where my abridgement comes."
+    },
+    {
+      "number": 338,
+      "speaker": "FIRST PLAYER",
+      "text": "What speech, my lord?"
+    },
+    {
+      "number": 339,
+      "speaker": "HAMLET",
+      "text": "I heard thee speak me a speech once, but it was never"
+    },
+    {
+      "number": 340,
+      "speaker": "HAMLET",
+      "text": "acted; or, if it was, not above once; for the play, I"
+    },
+    {
+      "number": 341,
+      "speaker": "HAMLET",
+      "text": "remember, pleased not the million; ’twas caviare to the general: but it"
+    },
+    {
+      "number": 342,
+      "speaker": "HAMLET",
+      "text": "was—as I received it, and others, whose judgments in such matters cried"
+    },
+    {
+      "number": 343,
+      "speaker": "HAMLET",
+      "text": "in the top of mine—an excellent play, well digested in the scenes,"
+    },
+    {
+      "number": 344,
+      "speaker": "HAMLET",
+      "text": "set down with as much modesty as cunning. I remember, one said"
+    },
+    {
+      "number": 345,
+      "speaker": "HAMLET",
+      "text": "there were no sallets in the lines to make the matter savoury,"
+    },
+    {
+      "number": 346,
+      "speaker": "HAMLET",
+      "text": "nor no matter in the phrase that might indict the author of"
+    },
+    {
+      "number": 347,
+      "speaker": "HAMLET",
+      "text": "affectation; but called it an honest method, as wholesome as sweet, and"
+    },
+    {
+      "number": 348,
+      "speaker": "HAMLET",
+      "text": "by very much more handsome than fine. One speech in it I"
+    },
+    {
+      "number": 349,
+      "speaker": "HAMLET",
+      "text": "chiefly loved: ’twas Aeneas’ tale to Dido; and thereabout of it especially,"
+    },
+    {
+      "number": 350,
+      "speaker": "HAMLET",
+      "text": "where he speaks of Priam’s slaughter: if it live in your memory,"
+    },
+    {
+      "number": 351,
+      "speaker": "HAMLET",
+      "text": "begin at this line: let me see, let me see— “The rugged"
+    },
+    {
+      "number": 352,
+      "speaker": "HAMLET",
+      "text": "Pyrrhus, like the Hyrcanian beast,” —it is not so:—it begins with Pyrrhus:—"
+    },
+    {
+      "number": 353,
+      "speaker": "HAMLET",
+      "text": "“The rugged Pyrrhus, he whose sable arms, Black as his purpose, did"
+    },
+    {
+      "number": 354,
+      "speaker": "HAMLET",
+      "text": "the night resemble When he lay couched in the ominous horse, Hath"
+    },
+    {
+      "number": 355,
+      "speaker": "HAMLET",
+      "text": "now this dread and black complexion smear’d With heraldry more dismal; head"
+    },
+    {
+      "number": 356,
+      "speaker": "HAMLET",
+      "text": "to foot Now is he total gules; horridly trick’d With blood of"
+    },
+    {
+      "number": 357,
+      "speaker": "HAMLET",
+      "text": "fathers, mothers, daughters, sons, Baked and impasted with the parching streets, That"
+    },
+    {
+      "number": 358,
+      "speaker": "HAMLET",
+      "text": "lend a tyrannous and damned light To their lord’s murder: roasted in"
+    },
+    {
+      "number": 359,
+      "speaker": "HAMLET",
+      "text": "wrath and fire, And thus o’er-sized with coagulate gore, With eyes like"
+    },
+    {
+      "number": 360,
+      "speaker": "HAMLET",
+      "text": "carbuncles, the hellish Pyrrhus Old grandsire Priam seeks.” So, proceed you."
+    },
+    {
+      "number": 361,
+      "speaker": "POLONIUS",
+      "text": "’Fore God, my lord, well spoken, with good accent and good discretion."
+    },
+    {
+      "number": 362,
+      "speaker": "FIRST PLAYER",
+      "text": "“Anon he finds him Striking too short at Greeks; his antique sword,"
+    },
+    {
+      "number": 363,
+      "speaker": "FIRST PLAYER",
+      "text": "Rebellious to his arm, lies where it falls, Repugnant to command: unequal"
+    },
+    {
+      "number": 364,
+      "speaker": "FIRST PLAYER",
+      "text": "match’d, Pyrrhus at Priam drives; in rage strikes wide; But with the"
+    },
+    {
+      "number": 365,
+      "speaker": "FIRST PLAYER",
+      "text": "whiff and wind of his fell sword The unnerved father falls. Then"
+    },
+    {
+      "number": 366,
+      "speaker": "FIRST PLAYER",
+      "text": "senseless Ilium, Seeming to feel this blow, with flaming top Stoops to"
+    },
+    {
+      "number": 367,
+      "speaker": "FIRST PLAYER",
+      "text": "his base, and with a hideous crash Takes prisoner Pyrrhus’ ear: for,"
+    },
+    {
+      "number": 368,
+      "speaker": "FIRST PLAYER",
+      "text": "lo! his sword, Which was declining on the milky head Of reverend"
+    },
+    {
+      "number": 369,
+      "speaker": "FIRST PLAYER",
+      "text": "Priam, seem’d i’ the air to stick: So, as a painted tyrant,"
+    },
+    {
+      "number": 370,
+      "speaker": "FIRST PLAYER",
+      "text": "Pyrrhus stood, And like a neutral to his will and matter, Did"
+    },
+    {
+      "number": 371,
+      "speaker": "FIRST PLAYER",
+      "text": "nothing. But, as we often see, against some storm, A silence in"
+    },
+    {
+      "number": 372,
+      "speaker": "FIRST PLAYER",
+      "text": "the heavens, the rack stand still, The bold winds speechless and the"
+    },
+    {
+      "number": 373,
+      "speaker": "FIRST PLAYER",
+      "text": "orb below As hush as death, anon the dreadful thunder Doth rend"
+    },
+    {
+      "number": 374,
+      "speaker": "FIRST PLAYER",
+      "text": "the region, so, after Pyrrhus’ pause, Aroused vengeance sets him new a-work;"
+    },
+    {
+      "number": 375,
+      "speaker": "FIRST PLAYER",
+      "text": "And never did the Cyclops’ hammers fall On Mars’s armour forged for"
+    },
+    {
+      "number": 376,
+      "speaker": "FIRST PLAYER",
+      "text": "proof eterne With less remorse than Pyrrhus’ bleeding sword Now falls on"
+    },
+    {
+      "number": 377,
+      "speaker": "FIRST PLAYER",
+      "text": "Priam. Out, out, thou strumpet, Fortune! All you gods, In general synod"
+    },
+    {
+      "number": 378,
+      "speaker": "FIRST PLAYER",
+      "text": "take away her power; Break all the spokes and fellies from her"
+    },
+    {
+      "number": 379,
+      "speaker": "FIRST PLAYER",
+      "text": "wheel, And bowl the round nave down the hill of heaven, As"
+    },
+    {
+      "number": 380,
+      "speaker": "FIRST PLAYER",
+      "text": "low as to the fiends!”"
+    },
+    {
+      "number": 380,
+      "speaker": "POLONIUS",
+      "text": "This is too long."
+    },
+    {
+      "number": 381,
+      "speaker": "HAMLET",
+      "text": "It shall to the barber’s, with your beard. Prithee, say on: he’s"
+    },
+    {
+      "number": 382,
+      "speaker": "HAMLET",
+      "text": "for a jig or a tale of bawdry, or he sleeps: say"
+    },
+    {
+      "number": 383,
+      "speaker": "HAMLET",
+      "text": "on: come to Hecuba."
+    },
+    {
+      "number": 384,
+      "speaker": "FIRST PLAYER",
+      "text": "“But who, O, who had seen the mobled queen—”"
+    },
+    {
+      "number": 385,
+      "speaker": "HAMLET",
+      "text": "“The mobled queen?”"
+    },
+    {
+      "number": 385,
+      "speaker": "POLONIUS",
+      "text": "That’s good; “mobled queen” is good."
+    },
+    {
+      "number": 386,
+      "speaker": "FIRST PLAYER",
+      "text": "“Run barefoot up and down, threatening the flames With bisson rheum; a"
+    },
+    {
+      "number": 387,
+      "speaker": "FIRST PLAYER",
+      "text": "clout upon that head Where late the diadem stood, and for a"
+    },
+    {
+      "number": 388,
+      "speaker": "FIRST PLAYER",
+      "text": "robe, About her lank and all o’er-teemed loins, A blanket, in the"
+    },
+    {
+      "number": 389,
+      "speaker": "FIRST PLAYER",
+      "text": "alarm of fear caught up; Who this had seen, with tongue in"
+    },
+    {
+      "number": 390,
+      "speaker": "FIRST PLAYER",
+      "text": "venom steep’d, ’Gainst Fortune’s state would treason have pronounced: But if the"
+    },
+    {
+      "number": 391,
+      "speaker": "FIRST PLAYER",
+      "text": "gods themselves did see her then When she saw Pyrrhus make malicious"
+    },
+    {
+      "number": 392,
+      "speaker": "FIRST PLAYER",
+      "text": "sport In mincing with his sword her husband’s limbs, The instant burst"
+    },
+    {
+      "number": 393,
+      "speaker": "FIRST PLAYER",
+      "text": "of clamour that she made, Unless things mortal move them not at"
+    },
+    {
+      "number": 394,
+      "speaker": "FIRST PLAYER",
+      "text": "all, Would have made milch the burning eyes of heaven, And passion"
+    },
+    {
+      "number": 395,
+      "speaker": "FIRST PLAYER",
+      "text": "in the gods.”"
+    },
+    {
+      "number": 396,
+      "speaker": "POLONIUS",
+      "text": "Look, whether he has not turned his colour and has tears in’s"
+    },
+    {
+      "number": 397,
+      "speaker": "POLONIUS",
+      "text": "eyes. Pray you, no more."
+    },
+    {
+      "number": 398,
+      "speaker": "HAMLET",
+      "text": "’Tis well; I’ll have thee speak out the rest soon. Good my"
+    },
+    {
+      "number": 399,
+      "speaker": "HAMLET",
+      "text": "lord, will you see the players well bestowed? Do you hear, let"
+    },
+    {
+      "number": 400,
+      "speaker": "HAMLET",
+      "text": "them be well used; for they are the abstract and brief chronicles"
+    },
+    {
+      "number": 401,
+      "speaker": "HAMLET",
+      "text": "of the time: after your death you were better have a bad"
+    },
+    {
+      "number": 402,
+      "speaker": "HAMLET",
+      "text": "epitaph than their ill report while you live."
+    },
+    {
+      "number": 403,
+      "speaker": "POLONIUS",
+      "text": "My lord, I will use them according to their desert."
+    },
+    {
+      "number": 404,
+      "speaker": "HAMLET",
+      "text": "God’s bodykins, man, much better: use every man after his desert, and"
+    },
+    {
+      "number": 405,
+      "speaker": "HAMLET",
+      "text": "who should ’scape whipping? Use them after your own honour and dignity:"
+    },
+    {
+      "number": 406,
+      "speaker": "HAMLET",
+      "text": "the less they deserve, the more merit is in your bounty. Take"
+    },
+    {
+      "number": 407,
+      "speaker": "HAMLET",
+      "text": "them in."
+    },
+    {
+      "number": 407,
+      "speaker": "POLONIUS",
+      "text": "Come, sirs."
+    },
+    {
+      "number": 408,
+      "speaker": "HAMLET",
+      "text": "Follow him, friends: we’ll hear a play to-morrow. Dost thou hear me,"
+    },
+    {
+      "number": 409,
+      "speaker": "HAMLET",
+      "text": "old friend; can you play the Murder of Gonzago?"
+    },
+    {
+      "number": 410,
+      "speaker": "FIRST PLAYER",
+      "text": "Ay, my lord."
+    },
+    {
+      "number": 411,
+      "speaker": "HAMLET",
+      "text": "We’ll ha’t to-morrow night. You could, for a need, study a speech"
+    },
+    {
+      "number": 412,
+      "speaker": "HAMLET",
+      "text": "of some dozen or sixteen lines, which I would set down and"
+    },
+    {
+      "number": 413,
+      "speaker": "HAMLET",
+      "text": "insert in’t, could you not?"
+    },
+    {
+      "number": 413,
+      "speaker": "FIRST PLAYER",
+      "text": "Ay, my lord."
+    },
+    {
+      "number": 414,
+      "speaker": "HAMLET",
+      "text": "Very well. Follow that lord; and look you mock him not. My"
+    },
+    {
+      "number": 415,
+      "speaker": "HAMLET",
+      "text": "good friends, I’ll leave you till night: you are welcome to Elsinore."
+    },
+    {
+      "number": 416,
+      "speaker": "ROSENCRANTZ",
+      "text": "Good my lord!"
+    },
+    {
+      "number": 417,
+      "speaker": "HAMLET",
+      "text": "Ay, so, God be wi’ ye; Now I am alone."
+    },
+    {
+      "number": 418,
+      "speaker": "HAMLET",
+      "text": "O, what a rogue and peasant slave am I!"
+    },
+    {
+      "number": 419,
+      "speaker": "HAMLET",
+      "text": "Is it not monstrous that this player here,"
+    },
+    {
+      "number": 420,
+      "speaker": "HAMLET",
+      "text": "But in a fiction, in a dream of passion,"
+    },
+    {
+      "number": 421,
+      "speaker": "HAMLET",
+      "text": "Could force his soul so to his own conceit"
+    },
+    {
+      "number": 422,
+      "speaker": "HAMLET",
+      "text": "That from her working all his visage wann’d,"
+    },
+    {
+      "number": 423,
+      "speaker": "HAMLET",
+      "text": "Tears in his eyes, distraction in’s aspect,"
+    },
+    {
+      "number": 424,
+      "speaker": "HAMLET",
+      "text": "A broken voice, and his whole function suiting"
+    },
+    {
+      "number": 425,
+      "speaker": "HAMLET",
+      "text": "With forms to his conceit? and all for nothing!"
+    },
+    {
+      "number": 426,
+      "speaker": "HAMLET",
+      "text": "For Hecuba!"
+    },
+    {
+      "number": 427,
+      "speaker": "HAMLET",
+      "text": "What’s Hecuba to him, or he to Hecuba,"
+    },
+    {
+      "number": 428,
+      "speaker": "HAMLET",
+      "text": "That he should weep for her? What would he do,"
+    },
+    {
+      "number": 429,
+      "speaker": "HAMLET",
+      "text": "Had he the motive and the cue for passion"
+    },
+    {
+      "number": 430,
+      "speaker": "HAMLET",
+      "text": "That I have? He would drown the stage with tears"
+    },
+    {
+      "number": 431,
+      "speaker": "HAMLET",
+      "text": "And cleave the general ear with horrid speech,"
+    },
+    {
+      "number": 432,
+      "speaker": "HAMLET",
+      "text": "Make mad the guilty and appal the free,"
+    },
+    {
+      "number": 433,
+      "speaker": "HAMLET",
+      "text": "Confound the ignorant, and amaze indeed"
+    },
+    {
+      "number": 434,
+      "speaker": "HAMLET",
+      "text": "The very faculties of eyes and ears."
+    },
+    {
+      "number": 435,
+      "speaker": "HAMLET",
+      "text": "Yet I,"
+    },
+    {
+      "number": 436,
+      "speaker": "HAMLET",
+      "text": "A dull and muddy-mettled rascal, peak,"
+    },
+    {
+      "number": 437,
+      "speaker": "HAMLET",
+      "text": "Like John-a-dreams, unpregnant of my cause,"
+    },
+    {
+      "number": 438,
+      "speaker": "HAMLET",
+      "text": "And can say nothing; no, not for a king,"
+    },
+    {
+      "number": 439,
+      "speaker": "HAMLET",
+      "text": "Upon whose property and most dear life"
+    },
+    {
+      "number": 440,
+      "speaker": "HAMLET",
+      "text": "A damn’d defeat was made. Am I a coward?"
+    },
+    {
+      "number": 441,
+      "speaker": "HAMLET",
+      "text": "Who calls me villain? breaks my pate across?"
+    },
+    {
+      "number": 442,
+      "speaker": "HAMLET",
+      "text": "Plucks off my beard, and blows it in my face?"
+    },
+    {
+      "number": 443,
+      "speaker": "HAMLET",
+      "text": "Tweaks me by the nose? gives me the lie i’ the throat,"
+    },
+    {
+      "number": 444,
+      "speaker": "HAMLET",
+      "text": "As deep as to the lungs? who does me this?"
+    },
+    {
+      "number": 445,
+      "speaker": "HAMLET",
+      "text": "Ha!"
+    },
+    {
+      "number": 446,
+      "speaker": "HAMLET",
+      "text": "’Swounds, I should take it: for it cannot be"
+    },
+    {
+      "number": 447,
+      "speaker": "HAMLET",
+      "text": "But I am pigeon-liver’d and lack gall"
+    },
+    {
+      "number": 448,
+      "speaker": "HAMLET",
+      "text": "To make oppression bitter, or ere this"
+    },
+    {
+      "number": 449,
+      "speaker": "HAMLET",
+      "text": "I should have fatted all the region kites"
+    },
+    {
+      "number": 450,
+      "speaker": "HAMLET",
+      "text": "With this slave’s offal: bloody, bawdy villain!"
+    },
+    {
+      "number": 451,
+      "speaker": "HAMLET",
+      "text": "Remorseless, treacherous, lecherous, kindless villain!"
+    },
+    {
+      "number": 452,
+      "speaker": "HAMLET",
+      "text": "O, vengeance!"
+    },
+    {
+      "number": 453,
+      "speaker": "HAMLET",
+      "text": "Why, what an ass am I! This is most brave,"
+    },
+    {
+      "number": 454,
+      "speaker": "HAMLET",
+      "text": "That I, the son of a dear father murder’d,"
+    },
+    {
+      "number": 455,
+      "speaker": "HAMLET",
+      "text": "Prompted to my revenge by heaven and hell,"
+    },
+    {
+      "number": 456,
+      "speaker": "HAMLET",
+      "text": "Must, like a whore, unpack my heart with words,"
+    },
+    {
+      "number": 457,
+      "speaker": "HAMLET",
+      "text": "And fall a-cursing, like a very drab,"
+    },
+    {
+      "number": 458,
+      "speaker": "HAMLET",
+      "text": "A scullion!"
+    },
+    {
+      "number": 459,
+      "speaker": "HAMLET",
+      "text": "Fie upon’t! foh! About, my brain! I have heard"
+    },
+    {
+      "number": 460,
+      "speaker": "HAMLET",
+      "text": "That guilty creatures sitting at a play"
+    },
+    {
+      "number": 461,
+      "speaker": "HAMLET",
+      "text": "Have by the very cunning of the scene"
+    },
+    {
+      "number": 462,
+      "speaker": "HAMLET",
+      "text": "Been struck so to the soul that presently"
+    },
+    {
+      "number": 463,
+      "speaker": "HAMLET",
+      "text": "They have proclaim’d their malefactions;"
+    },
+    {
+      "number": 464,
+      "speaker": "HAMLET",
+      "text": "For murder, though it have no tongue, will speak"
+    },
+    {
+      "number": 465,
+      "speaker": "HAMLET",
+      "text": "With most miraculous organ. I’ll have these players"
+    },
+    {
+      "number": 466,
+      "speaker": "HAMLET",
+      "text": "Play something like the murder of my father"
+    },
+    {
+      "number": 467,
+      "speaker": "HAMLET",
+      "text": "Before mine uncle: I’ll observe his looks;"
+    },
+    {
+      "number": 468,
+      "speaker": "HAMLET",
+      "text": "I’ll tent him to the quick: if he but blench,"
+    },
+    {
+      "number": 469,
+      "speaker": "HAMLET",
+      "text": "I know my course. The spirit that I have seen"
+    },
+    {
+      "number": 470,
+      "speaker": "HAMLET",
+      "text": "May be the devil: and the devil hath power"
+    },
+    {
+      "number": 471,
+      "speaker": "HAMLET",
+      "text": "To assume a pleasing shape; yea, and perhaps"
+    },
+    {
+      "number": 472,
+      "speaker": "HAMLET",
+      "text": "Out of my weakness and my melancholy,"
+    },
+    {
+      "number": 473,
+      "speaker": "HAMLET",
+      "text": "As he is very potent with such spirits,"
+    },
+    {
+      "number": 474,
+      "speaker": "HAMLET",
+      "text": "Abuses me to damn me: I’ll have grounds"
+    },
+    {
+      "number": 475,
+      "speaker": "HAMLET",
+      "text": "More relative than this: the play’s the thing"
+    },
+    {
+      "number": 476,
+      "speaker": "HAMLET",
+      "text": "Wherein I’ll catch the conscience of the king."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter King, Queen, Rosencrantz, Guildenstern, and Attendants."
+    },
+    {
+      "after_line": 38,
+      "text": "Exeunt Rosencrantz, Guildenstern, and some Attendants."
+    },
+    {
+      "after_line": 38,
+      "text": "Enter Polonius."
+    },
+    {
+      "after_line": 52,
+      "text": "Exit Polonius."
+    },
+    {
+      "after_line": 57,
+      "text": "Reenter Polonius, with Voltimand and Cornelius."
+    },
+    {
+      "after_line": 57,
+      "text": "Welcome, my good friends! Say, Voltimand, what from our brother Norway?"
+    },
+    {
+      "after_line": 74,
+      "text": "Giving a paper."
+    },
+    {
+      "after_line": 83,
+      "text": "Exeunt Voltimand and Cornelius."
+    },
+    {
+      "after_line": 105,
+      "text": "Reads."
+    },
+    {
+      "after_line": 105,
+      "text": "Reads."
+    },
+    {
+      "after_line": 114,
+      "text": "Reads."
+    },
+    {
+      "after_line": 142,
+      "text": "Pointing to his head and shoulder."
+    },
+    {
+      "after_line": 156,
+      "text": "Exeunt King, Queen, and Attendants."
+    },
+    {
+      "after_line": 156,
+      "text": "Enter Hamlet, reading."
+    },
+    {
+      "after_line": 156,
+      "text": "O, give me leave: How does my good Lord Hamlet?"
+    },
+    {
+      "after_line": 172,
+      "text": "Aside."
+    },
+    {
+      "after_line": 183,
+      "text": "Aside."
+    },
+    {
+      "after_line": 188,
+      "text": "Aside."
+    },
+    {
+      "after_line": 191,
+      "text": "Enter Rosencrantz and Guildenstern."
+    },
+    {
+      "after_line": 193,
+      "text": "Exit Polonius."
+    },
+    {
+      "after_line": 246,
+      "text": "Aside to Guildenstern."
+    },
+    {
+      "after_line": 247,
+      "text": "Aside."
+    },
+    {
+      "after_line": 303,
+      "text": "Flourish of trumpets within."
+    },
+    {
+      "after_line": 311,
+      "text": "Reenter Polonius."
+    },
+    {
+      "after_line": 330,
+      "text": "Aside."
+    },
+    {
+      "after_line": 337,
+      "text": "Enter four or five Players."
+    },
+    {
+      "after_line": 337,
+      "text": "You are welcome, masters; welcome, all. I am glad to see thee well. Welcome, good friends. O, my old friend! thy face is valanced since I saw thee last: comest thou to beard me in Denmark? What, my young lady and mistress! By’r lady, your ladyship is nearer to heaven than when I saw you last, by the altitude of a chopine. Pray God, your voice, like apiece of uncurrent gold, be not cracked within the ring. Masters, you are all welcome. We’ll e’en to’t like French falconers, fly at any thing we see: we’ll have a speech straight: come, give us a taste of your quality; come, a passionate speech."
+    },
+    {
+      "after_line": 409,
+      "text": "Exit Polonius with all the Players but the First."
+    },
+    {
+      "after_line": 415,
+      "text": "Exit First Player."
+    },
+    {
+      "after_line": 417,
+      "text": "Exeunt Rosencrantz and Guildenstern."
+    },
+    {
+      "after_line": 476,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "hamlet_act2_scene2_gloss1",
+      "line": 4,
+      "phrase": "hasty sending",
+      "definition": "urgent summoning"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss2",
+      "line": 5,
+      "phrase": "transformation",
+      "definition": "change (in Hamlet's character)"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss3",
+      "line": 11,
+      "phrase": "of so young days brought up with him",
+      "definition": "from youth raised alongside him"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss4",
+      "line": 12,
+      "phrase": "sith",
+      "definition": "since"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss5",
+      "line": 12,
+      "phrase": "neighbour’d to his youth",
+      "definition": "close to him in youth"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss6",
+      "line": 13,
+      "phrase": "vouchsafe your rest",
+      "definition": "consent to stay"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss7",
+      "line": 22,
+      "phrase": "gentry",
+      "definition": "gentlemanly courtesy"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss8",
+      "line": 26,
+      "phrase": "remembrance",
+      "definition": "proper reward"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss9",
+      "line": 28,
+      "phrase": "dread pleasures",
+      "definition": "awe-inspiring commands"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss10",
+      "line": 41,
+      "phrase": "still",
+      "definition": "always"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss11",
+      "line": 56,
+      "phrase": "o’erhasty marriage",
+      "definition": "hasty remarriage"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss12",
+      "line": 60,
+      "phrase": "nephew",
+      "definition": "Fortinbras's relation to old Norway"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss13",
+      "line": 61,
+      "phrase": "preparation",
+      "definition": "military build-up"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss14",
+      "line": 72,
+      "phrase": "commission",
+      "definition": "order"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss15",
+      "line": 69,
+      "phrase": "assay",
+      "definition": "attempt"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss16",
+      "line": 71,
+      "phrase": "three thousand crowns in annual fee",
+      "definition": "yearly pension"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss17",
+      "line": 75,
+      "phrase": "quiet pass",
+      "definition": "peaceable passage"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss18",
+      "line": 78,
+      "phrase": "likes us well",
+      "definition": "pleases us"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss19",
+      "line": 84,
+      "phrase": "expostulate",
+      "definition": "explain at length; argue"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss20",
+      "line": 86,
+      "phrase": "time",
+      "definition": "the proper hour"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss21",
+      "line": 88,
+      "phrase": "brevity is the soul of wit",
+      "definition": "conciseness is the essence of intelligence"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss22",
+      "line": 89,
+      "phrase": "tediousness the limbs and outward flourishes",
+      "definition": "long-windedness is mere outward ornament"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss23",
+      "line": 96,
+      "phrase": "art",
+      "definition": "rhetoric; artful speech"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss24",
+      "line": 96,
+      "phrase": "figure",
+      "definition": "rhetorical figure (trope)"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss25",
+      "line": 125,
+      "phrase": "round",
+      "definition": "direct; blunt"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss26",
+      "line": 127,
+      "phrase": "out of thy star",
+      "definition": "above your station"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss27",
+      "line": 134,
+      "phrase": "watch",
+      "definition": "sleeplessness"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss28",
+      "line": 135,
+      "phrase": "lightness",
+      "definition": "light-headedness"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss29",
+      "line": 135,
+      "phrase": "declension",
+      "definition": "decline"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss30",
+      "line": 145,
+      "phrase": "centre",
+      "definition": "center of the earth"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss31",
+      "line": 149,
+      "phrase": "arras",
+      "definition": "tapestry hung on a wall"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss32",
+      "line": 157,
+      "phrase": "fishmonger",
+      "definition": "fish-seller (slang for pander/pimp)"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss33",
+      "line": 166,
+      "phrase": "conception is a blessing",
+      "definition": "conceiving (thinking/pregnancy) is a blessing"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss34",
+      "line": 255,
+      "phrase": "fretted with golden fire",
+      "definition": "adorned with golden (sun/star)fire"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss35",
+      "line": 260,
+      "phrase": "paragon",
+      "definition": "supreme model"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss36",
+      "line": 261,
+      "phrase": "quintessence of dust",
+      "definition": "finest essence reduced to mere dust"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss37",
+      "line": 282,
+      "phrase": "aery of children",
+      "definition": "a nest (flock) of boy-actors"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss38",
+      "line": 282,
+      "phrase": "little eyases",
+      "definition": "unfledged hawks (the child actors fashionable in 1600s London)"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss39",
+      "line": 319,
+      "phrase": "Roscius",
+      "definition": "famous Roman actor"
+    },
+    {
+      "id": "hamlet_act2_scene2_gloss40",
+      "line": 332,
+      "phrase": "Jephthah",
+      "definition": "biblical judge who sacrificed his daughter"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "hamlet_act2_scene2_ann1",
+      "line_start": 1,
+      "line_end": 40,
+      "citation_display": "Hamlet 2.2.1–40",
+      "category": "thematic",
+      "title": "Rosencrantz and Guildenstern: the instruments of friendship",
+      "body": "Claudius and Gertrude's charge to Hamlet's school-friends is a small masterpiece of political language. They are summoned 'of so young days brought up with him' — the friendship is real, which is why its weaponization will be ethically grave — but the request is surveillance with the manners of hospitality. Hamlet will later see through it instantly: 'Were you not sent for?' The scene also shows the play's mature political intelligence: Claudius does not command, he asks, and he frames the asking as a gift the young men may decline. The very shape of courtly tyranny, Stoppard's Rosencrantz and Guildenstern Are Dead would later argue, is that no one is ever quite forced.",
+      "sources": [
+        "Stephen Greenblatt, Will in the World (2004)"
+      ]
+    },
+    {
+      "id": "hamlet_act2_scene2_ann2",
+      "line_start": 86,
+      "line_end": 168,
+      "citation_display": "Hamlet 2.2.86–168",
+      "category": "structural",
+      "title": "Polonius's diagnosis and the politics of madness",
+      "body": "Polonius's long-winded display before the King — 'brevity is the soul of wit' delivered in the least brief speech imaginable — is a set-piece of dramatic irony. Shakespeare plays it for comedy while making the political stakes serious: the chamberlain is committing royal resources to the theory that Hamlet is lovesick, and the decision to 'loose' Ophelia as bait follows directly. Polonius's reading of the private letter to Ophelia — 'Doubt thou the stars are fire' — violates every courtesy and weaponizes a love poem for intelligence. It is Shakespeare's finest portrait of the officious counselor whose ambition to serve has eaten his conscience.",
+      "sources": [
+        "Frank Kermode, Shakespeare's Language (2000)"
+      ]
+    },
+    {
+      "id": "hamlet_act2_scene2_ann3",
+      "line_start": 265,
+      "line_end": 270,
+      "citation_display": "Hamlet 2.2.265–270",
+      "category": "thematic",
+      "title": "'What a piece of work is a man'",
+      "body": "Hamlet's paean to human nature — 'in action how like an angel! in apprehension how like a god!' — would be Renaissance commonplace if he left it there. The speech's power lies in its collapse: 'And yet, to me, what is this quintessence of dust?' In a handful of lines Hamlet traverses the distance from Pico della Mirandola's Oration on the Dignity of Man to Ecclesiastes's 'all is vanity.' Modern productions play the passage ironically; original Elizabethan audiences would have heard it as a genuine hymn to humanism undercut by the speaker's own grief. The speech announces a philosophical problem the play will not solve: why is a creature capable of so much unable to act even once?",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)",
+        "Tony Tanner, Prefaces to Shakespeare (2010)"
+      ]
+    },
+    {
+      "id": "hamlet_act2_scene2_ann4",
+      "line_start": 496,
+      "line_end": 554,
+      "citation_display": "Hamlet 2.2.496–554",
+      "category": "thematic",
+      "title": "The second soliloquy: the player and the prince",
+      "body": "Hamlet's soliloquy after the player's weeping speech about Hecuba is the play's most self-lacerating. The comparison is cruel: a professional actor, prompted by nothing, can summon tears for a fiction; Hamlet, prompted by a father's murder, has summoned nothing at all. The accusation — 'rogue and peasant slave,' 'muddy-mettled rascal,' 'John-a-dreams' — is both genuine self-contempt and a kind of self-flagellating performance, an attempt to will himself into feeling by describing his insufficiency. The soliloquy's turn at 'About, my brain!' is the play's first concrete plan: the Mousetrap. Hamlet discovers, under the pressure of shame, that he cannot act immediately but he can direct a play.",
+      "sources": [
+        "Stephen Orgel, The Illusion of Power (1975)",
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "hamlet_act2_scene2_q1",
+      "kind": "comprehension",
+      "prompt": "Why do the King and Queen summon Rosencrantz and Guildenstern?",
+      "options": [
+        "To serve as witnesses at Hamlet's trial.",
+        "To befriend Hamlet and discover the cause of his madness.",
+        "To deliver a diplomatic letter to Wittenberg.",
+        "To serve as guards during the ambassadors' visit."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 1,
+      "anchor_line_end": 40
+    },
+    {
+      "id": "hamlet_act2_scene2_q2",
+      "kind": "inference",
+      "prompt": "When Polonius says 'brevity is the soul of wit,' what is the dramatic irony?",
+      "options": [
+        "He is speaking Latin, though the audience hears English.",
+        "He delivers the maxim in the most long-winded speech in the play.",
+        "He is quoting Hamlet's private letter without permission.",
+        "He is teaching Ophelia how to speak concisely to the King."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 88,
+      "anchor_line_end": 110
+    },
+    {
+      "id": "hamlet_act2_scene2_q3",
+      "kind": "close_reading",
+      "prompt": "How does Hamlet's speech 'What a piece of work is a man' conclude?",
+      "options": [
+        "In an ecstatic affirmation of human nobility.",
+        "By collapsing into the question 'what is this quintessence of dust?' — undercutting the praise.",
+        "With a prayer that God restore Denmark's peace.",
+        "With a vow to kill Claudius before nightfall."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 264,
+      "anchor_line_end": 270
+    },
+    {
+      "id": "hamlet_act2_scene2_q4",
+      "kind": "theme",
+      "prompt": "What troubles Hamlet about the player's speech on Hecuba?",
+      "options": [
+        "That the actor has misquoted the Aeneid.",
+        "That a hired player can summon real tears for a fiction, while he has summoned none for his real father's murder.",
+        "That the speech contains unflattering references to Claudius.",
+        "That the player refuses to join Hamlet's plot against the King."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 496,
+      "anchor_line_end": 520
+    },
+    {
+      "id": "hamlet_act2_scene2_q5",
+      "kind": "comprehension",
+      "prompt": "What concrete plan does Hamlet form by the end of the scene?",
+      "options": [
+        "To stab Claudius at the next banquet.",
+        "To stage a play that re-enacts his father's murder and observe Claudius's reaction.",
+        "To flee to England with Horatio.",
+        "To confront Gertrude in her bedchamber."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 540,
+      "anchor_line_end": 554
+    },
+    {
+      "id": "hamlet_act2_scene2_q6",
+      "kind": "inference",
+      "prompt": "Why does Hamlet admit he must first test the ghost's testimony through the play?",
+      "options": [
+        "Because Horatio demanded evidence before joining the plot.",
+        "Because the ghost 'may be the devil' who 'hath power to assume a pleasing shape' to damn him.",
+        "Because Claudius has sworn an oath of innocence in public.",
+        "Because the Queen has forbidden him to act without proof."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 545,
+      "anchor_line_end": 550
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "section_id": "hamlet_act3_scene3",
+  "trials": [
+    {
+      "kind": "comprehension",
+      "prompt": "What does Claudius instruct Rosencrantz and Guildenstern to prepare for?",
+      "options": [
+        "A banquet for the visiting ambassadors.",
+        "A speedy voyage to escort Hamlet to England.",
+        "The coronation of Prince Hamlet as heir.",
+        "A military campaign against Fortinbras."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 1,
+      "anchor_line_end": 30
+    },
+    {
+      "kind": "theme",
+      "prompt": "Why can Claudius not repent fully in his soliloquy?",
+      "options": [
+        "Because he believes God will forgive him regardless.",
+        "Because he refuses to give up the crown, the queen, and the ambition the murder secured.",
+        "Because he does not believe in Christianity.",
+        "Because he is convinced Hamlet will kill him anyway."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 36,
+      "anchor_line_end": 72
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "What biblical 'primal eldest curse' does Claudius invoke to describe his crime?",
+      "options": [
+        "The fall of Adam and Eve.",
+        "The flood in the days of Noah.",
+        "Cain's murder of his brother Abel.",
+        "Judas's betrayal of Christ."
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 15,
+      "anchor_line_start": 42,
+      "anchor_line_end": 43
+    },
+    {
+      "kind": "inference",
+      "prompt": "Why does Hamlet decide not to kill Claudius at prayer?",
+      "options": [
+        "Because he fears divine punishment for killing in a chapel.",
+        "Because killing Claudius in a state of grace would send his soul to heaven — a reward, not a revenge.",
+        "Because he recognizes his sword is not sharp enough for armor.",
+        "Because he has promised Gertrude he will not act that night."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 73,
+      "anchor_line_end": 96
+    },
+    {
+      "kind": "theme",
+      "prompt": "What is the dramatic irony of Claudius's closing couplet, 'My words fly up, my thoughts remain below'?",
+      "options": [
+        "Hamlet has just spared Claudius on the assumption that his prayer has reached heaven — but the audience knows it has not.",
+        "Claudius is revealing his plan to have Hamlet killed in England.",
+        "The audience is informed that Gertrude has overheard the prayer.",
+        "Claudius is silently recanting his plan to send Hamlet away."
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 25,
+      "anchor_line_start": 97,
+      "anchor_line_end": 98
+    }
+  ]
+}

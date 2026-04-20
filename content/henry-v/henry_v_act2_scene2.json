@@ -1,0 +1,1382 @@
+{
+  "section_id": "henry_v_act2_scene2",
+  "work_id": "henry-v",
+  "sequence": 6,
+  "act": 2,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "Southampton. A council-chamber",
+  "line_count": 191,
+  "word_count": 1483,
+  "est_read_minutes": 7,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "BEDFORD",
+      "text": "’Fore God, his grace is bold, to trust these traitors."
+    },
+    {
+      "number": 2,
+      "speaker": "EXETER",
+      "text": "They shall be apprehended by and by."
+    },
+    {
+      "number": 3,
+      "speaker": "WESTMORELAND",
+      "text": "How smooth and even they do bear themselves!"
+    },
+    {
+      "number": 4,
+      "speaker": "WESTMORELAND",
+      "text": "As if allegiance in their bosoms sat,"
+    },
+    {
+      "number": 5,
+      "speaker": "WESTMORELAND",
+      "text": "Crowned with faith and constant loyalty."
+    },
+    {
+      "number": 6,
+      "speaker": "BEDFORD",
+      "text": "The king hath note of all that they intend,"
+    },
+    {
+      "number": 7,
+      "speaker": "BEDFORD",
+      "text": "By interception which they dream not of."
+    },
+    {
+      "number": 8,
+      "speaker": "EXETER",
+      "text": "Nay, but the man that was his bedfellow,"
+    },
+    {
+      "number": 9,
+      "speaker": "EXETER",
+      "text": "Whom he hath dull’d and cloy’d with gracious favours,"
+    },
+    {
+      "number": 10,
+      "speaker": "EXETER",
+      "text": "That he should, for a foreign purse, so sell"
+    },
+    {
+      "number": 11,
+      "speaker": "EXETER",
+      "text": "His sovereign’s life to death and treachery."
+    },
+    {
+      "number": 12,
+      "speaker": "KING HENRY",
+      "text": "Now sits the wind fair, and we will aboard."
+    },
+    {
+      "number": 13,
+      "speaker": "KING HENRY",
+      "text": "My Lord of Cambridge, and my kind Lord of Masham,"
+    },
+    {
+      "number": 14,
+      "speaker": "KING HENRY",
+      "text": "And you, my gentle knight, give me your thoughts:"
+    },
+    {
+      "number": 15,
+      "speaker": "KING HENRY",
+      "text": "Think you not that the powers we bear with us"
+    },
+    {
+      "number": 16,
+      "speaker": "KING HENRY",
+      "text": "Will cut their passage through the force of France,"
+    },
+    {
+      "number": 17,
+      "speaker": "KING HENRY",
+      "text": "Doing the execution and the act"
+    },
+    {
+      "number": 18,
+      "speaker": "KING HENRY",
+      "text": "For which we have in head assembled them?"
+    },
+    {
+      "number": 19,
+      "speaker": "SCROOP",
+      "text": "No doubt, my liege, if each man do his best."
+    },
+    {
+      "number": 20,
+      "speaker": "KING HENRY",
+      "text": "I doubt not that; since we are well persuaded"
+    },
+    {
+      "number": 21,
+      "speaker": "KING HENRY",
+      "text": "We carry not a heart with us from hence"
+    },
+    {
+      "number": 22,
+      "speaker": "KING HENRY",
+      "text": "That grows not in a fair consent with ours,"
+    },
+    {
+      "number": 23,
+      "speaker": "KING HENRY",
+      "text": "Nor leave not one behind that doth not wish"
+    },
+    {
+      "number": 24,
+      "speaker": "KING HENRY",
+      "text": "Success and conquest to attend on us."
+    },
+    {
+      "number": 25,
+      "speaker": "CAMBRIDGE",
+      "text": "Never was monarch better fear’d and loved"
+    },
+    {
+      "number": 26,
+      "speaker": "CAMBRIDGE",
+      "text": "Than is your majesty: there’s not, I think, a subject"
+    },
+    {
+      "number": 27,
+      "speaker": "CAMBRIDGE",
+      "text": "That sits in heart-grief and uneasiness"
+    },
+    {
+      "number": 28,
+      "speaker": "CAMBRIDGE",
+      "text": "Under the sweet shade of your government."
+    },
+    {
+      "number": 29,
+      "speaker": "GREY",
+      "text": "True: those that were your father’s enemies"
+    },
+    {
+      "number": 30,
+      "speaker": "GREY",
+      "text": "Have steep’d their galls in honey and do serve you"
+    },
+    {
+      "number": 31,
+      "speaker": "GREY",
+      "text": "With hearts create of duty and of zeal."
+    },
+    {
+      "number": 32,
+      "speaker": "KING HENRY",
+      "text": "We therefore have great cause of thankfulness;"
+    },
+    {
+      "number": 33,
+      "speaker": "KING HENRY",
+      "text": "And shall forget the office of our hand,"
+    },
+    {
+      "number": 34,
+      "speaker": "KING HENRY",
+      "text": "Sooner than quittance of desert and merit"
+    },
+    {
+      "number": 35,
+      "speaker": "KING HENRY",
+      "text": "According to the weight and worthiness."
+    },
+    {
+      "number": 36,
+      "speaker": "SCROOP",
+      "text": "So service shall with steeled sinews toil,"
+    },
+    {
+      "number": 37,
+      "speaker": "SCROOP",
+      "text": "And labour shall refresh itself with hope,"
+    },
+    {
+      "number": 38,
+      "speaker": "SCROOP",
+      "text": "To do your grace incessant services."
+    },
+    {
+      "number": 39,
+      "speaker": "KING HENRY",
+      "text": "We judge no less. Uncle of Exeter,"
+    },
+    {
+      "number": 40,
+      "speaker": "KING HENRY",
+      "text": "Enlarge the man committed yesterday,"
+    },
+    {
+      "number": 41,
+      "speaker": "KING HENRY",
+      "text": "That rail’d against our person: we consider"
+    },
+    {
+      "number": 42,
+      "speaker": "KING HENRY",
+      "text": "It was excess of wine that set him on;"
+    },
+    {
+      "number": 43,
+      "speaker": "KING HENRY",
+      "text": "And on his more advice we pardon him."
+    },
+    {
+      "number": 44,
+      "speaker": "SCROOP",
+      "text": "That’s mercy, but too much security:"
+    },
+    {
+      "number": 45,
+      "speaker": "SCROOP",
+      "text": "Let him be punish’d, sovereign, lest example"
+    },
+    {
+      "number": 46,
+      "speaker": "SCROOP",
+      "text": "Breed, by his sufferance, more of such a kind."
+    },
+    {
+      "number": 47,
+      "speaker": "KING HENRY",
+      "text": "O, let us yet be merciful."
+    },
+    {
+      "number": 48,
+      "speaker": "CAMBRIDGE",
+      "text": "So may your highness, and yet punish too."
+    },
+    {
+      "number": 49,
+      "speaker": "GREY",
+      "text": "Sir,"
+    },
+    {
+      "number": 50,
+      "speaker": "GREY",
+      "text": "You show great mercy, if you give him life,"
+    },
+    {
+      "number": 51,
+      "speaker": "GREY",
+      "text": "After the taste of much correction."
+    },
+    {
+      "number": 52,
+      "speaker": "KING HENRY",
+      "text": "Alas, your too much love and care of me"
+    },
+    {
+      "number": 53,
+      "speaker": "KING HENRY",
+      "text": "Are heavy orisons ’gainst this poor wretch!"
+    },
+    {
+      "number": 54,
+      "speaker": "KING HENRY",
+      "text": "If little faults, proceeding on distemper,"
+    },
+    {
+      "number": 55,
+      "speaker": "KING HENRY",
+      "text": "Shall not be wink’d at, how shall we stretch our eye"
+    },
+    {
+      "number": 56,
+      "speaker": "KING HENRY",
+      "text": "When capital crimes, chew’d, swallow’d and digested,"
+    },
+    {
+      "number": 57,
+      "speaker": "KING HENRY",
+      "text": "Appear before us? We’ll yet enlarge that man,"
+    },
+    {
+      "number": 58,
+      "speaker": "KING HENRY",
+      "text": "Though Cambridge, Scroop and Grey, in their dear care"
+    },
+    {
+      "number": 59,
+      "speaker": "KING HENRY",
+      "text": "And tender preservation of our person,"
+    },
+    {
+      "number": 60,
+      "speaker": "KING HENRY",
+      "text": "Would have him punish’d. And now to our French causes:"
+    },
+    {
+      "number": 61,
+      "speaker": "KING HENRY",
+      "text": "Who are the late commissioners?"
+    },
+    {
+      "number": 61,
+      "speaker": "CAMBRIDGE",
+      "text": "I one, my lord:"
+    },
+    {
+      "number": 62,
+      "speaker": "CAMBRIDGE",
+      "text": "Your highness bade me ask for it today."
+    },
+    {
+      "number": 63,
+      "speaker": "SCROOP",
+      "text": "So did you me, my liege."
+    },
+    {
+      "number": 63,
+      "speaker": "GREY",
+      "text": "And I, my royal sovereign."
+    },
+    {
+      "number": 64,
+      "speaker": "KING HENRY",
+      "text": "Then, Richard Earl of Cambridge, there is yours;"
+    },
+    {
+      "number": 65,
+      "speaker": "KING HENRY",
+      "text": "There yours, Lord Scroop of Masham; and, sir knight,"
+    },
+    {
+      "number": 66,
+      "speaker": "KING HENRY",
+      "text": "Grey of Northumberland, this same is yours:"
+    },
+    {
+      "number": 67,
+      "speaker": "KING HENRY",
+      "text": "Read them; and know, I know your worthiness."
+    },
+    {
+      "number": 68,
+      "speaker": "KING HENRY",
+      "text": "My Lord of Westmoreland, and uncle Exeter,"
+    },
+    {
+      "number": 69,
+      "speaker": "KING HENRY",
+      "text": "We will aboard tonight. Why, how now, gentlemen!"
+    },
+    {
+      "number": 70,
+      "speaker": "KING HENRY",
+      "text": "What see you in those papers that you lose"
+    },
+    {
+      "number": 71,
+      "speaker": "KING HENRY",
+      "text": "So much complexion? Look ye, how they change!"
+    },
+    {
+      "number": 72,
+      "speaker": "KING HENRY",
+      "text": "Their cheeks are paper. Why, what read you there,"
+    },
+    {
+      "number": 73,
+      "speaker": "KING HENRY",
+      "text": "That have so cowarded and chased your blood"
+    },
+    {
+      "number": 74,
+      "speaker": "KING HENRY",
+      "text": "Out of appearance?"
+    },
+    {
+      "number": 74,
+      "speaker": "CAMBRIDGE",
+      "text": "I do confess my fault;"
+    },
+    {
+      "number": 75,
+      "speaker": "CAMBRIDGE",
+      "text": "And do submit me to your highness’ mercy."
+    },
+    {
+      "number": 76,
+      "speaker": "GREY AND SCROOP",
+      "text": "To which we all appeal."
+    },
+    {
+      "number": 77,
+      "speaker": "KING HENRY",
+      "text": "The mercy that was quick in us but late,"
+    },
+    {
+      "number": 78,
+      "speaker": "KING HENRY",
+      "text": "By your own counsel is suppress’d and kill’d:"
+    },
+    {
+      "number": 79,
+      "speaker": "KING HENRY",
+      "text": "You must not dare, for shame, to talk of mercy;"
+    },
+    {
+      "number": 80,
+      "speaker": "KING HENRY",
+      "text": "For your own reasons turn into your bosoms,"
+    },
+    {
+      "number": 81,
+      "speaker": "KING HENRY",
+      "text": "As dogs upon their masters, worrying you."
+    },
+    {
+      "number": 82,
+      "speaker": "KING HENRY",
+      "text": "See you, my princes and my noble peers,"
+    },
+    {
+      "number": 83,
+      "speaker": "KING HENRY",
+      "text": "These English monsters! My Lord of Cambridge here,"
+    },
+    {
+      "number": 84,
+      "speaker": "KING HENRY",
+      "text": "You know how apt our love was to accord"
+    },
+    {
+      "number": 85,
+      "speaker": "KING HENRY",
+      "text": "To furnish him with an appertinents"
+    },
+    {
+      "number": 86,
+      "speaker": "KING HENRY",
+      "text": "Belonging to his honour; and this man"
+    },
+    {
+      "number": 87,
+      "speaker": "KING HENRY",
+      "text": "Hath, for a few light crowns, lightly conspired,"
+    },
+    {
+      "number": 88,
+      "speaker": "KING HENRY",
+      "text": "And sworn unto the practices of France,"
+    },
+    {
+      "number": 89,
+      "speaker": "KING HENRY",
+      "text": "To kill us here in Hampton: to the which"
+    },
+    {
+      "number": 90,
+      "speaker": "KING HENRY",
+      "text": "This knight, no less for bounty bound to us"
+    },
+    {
+      "number": 91,
+      "speaker": "KING HENRY",
+      "text": "Than Cambridge is, hath likewise sworn. But, O,"
+    },
+    {
+      "number": 92,
+      "speaker": "KING HENRY",
+      "text": "What shall I say to thee, Lord Scroop? thou cruel,"
+    },
+    {
+      "number": 93,
+      "speaker": "KING HENRY",
+      "text": "Ingrateful, savage and inhuman creature!"
+    },
+    {
+      "number": 94,
+      "speaker": "KING HENRY",
+      "text": "Thou that didst bear the key of all my counsels,"
+    },
+    {
+      "number": 95,
+      "speaker": "KING HENRY",
+      "text": "That knew’st the very bottom of my soul,"
+    },
+    {
+      "number": 96,
+      "speaker": "KING HENRY",
+      "text": "That almost mightst have coin’d me into gold,"
+    },
+    {
+      "number": 97,
+      "speaker": "KING HENRY",
+      "text": "Wouldst thou have practised on me for thy use!"
+    },
+    {
+      "number": 98,
+      "speaker": "KING HENRY",
+      "text": "May it be possible, that foreign hire"
+    },
+    {
+      "number": 99,
+      "speaker": "KING HENRY",
+      "text": "Could out of thee extract one spark of evil"
+    },
+    {
+      "number": 100,
+      "speaker": "KING HENRY",
+      "text": "That might annoy my finger? ’tis so strange,"
+    },
+    {
+      "number": 101,
+      "speaker": "KING HENRY",
+      "text": "That, though the truth of it stands off as gross"
+    },
+    {
+      "number": 102,
+      "speaker": "KING HENRY",
+      "text": "As black and white, my eye will scarcely see it."
+    },
+    {
+      "number": 103,
+      "speaker": "KING HENRY",
+      "text": "Treason and murder ever kept together,"
+    },
+    {
+      "number": 104,
+      "speaker": "KING HENRY",
+      "text": "As two yoke-devils sworn to either’s purpose,"
+    },
+    {
+      "number": 105,
+      "speaker": "KING HENRY",
+      "text": "Working so grossly in a natural cause,"
+    },
+    {
+      "number": 106,
+      "speaker": "KING HENRY",
+      "text": "That admiration did not whoop at them:"
+    },
+    {
+      "number": 107,
+      "speaker": "KING HENRY",
+      "text": "But thou, ’gainst all proportion, didst bring in"
+    },
+    {
+      "number": 108,
+      "speaker": "KING HENRY",
+      "text": "Wonder to wait on treason and on murder:"
+    },
+    {
+      "number": 109,
+      "speaker": "KING HENRY",
+      "text": "And whatsoever cunning fiend it was"
+    },
+    {
+      "number": 110,
+      "speaker": "KING HENRY",
+      "text": "That wrought upon thee so preposterously"
+    },
+    {
+      "number": 111,
+      "speaker": "KING HENRY",
+      "text": "Hath got the voice in hell for excellence:"
+    },
+    {
+      "number": 112,
+      "speaker": "KING HENRY",
+      "text": "And other devils that suggest by treasons"
+    },
+    {
+      "number": 113,
+      "speaker": "KING HENRY",
+      "text": "Do botch and bungle up damnation"
+    },
+    {
+      "number": 114,
+      "speaker": "KING HENRY",
+      "text": "With patches, colours and with forms being fetch’d"
+    },
+    {
+      "number": 115,
+      "speaker": "KING HENRY",
+      "text": "From glistering semblances of piety;"
+    },
+    {
+      "number": 116,
+      "speaker": "KING HENRY",
+      "text": "But he that temper’d thee bade thee stand up,"
+    },
+    {
+      "number": 117,
+      "speaker": "KING HENRY",
+      "text": "Gave thee no instance why thou shouldst do treason,"
+    },
+    {
+      "number": 118,
+      "speaker": "KING HENRY",
+      "text": "Unless to dub thee with the name of traitor."
+    },
+    {
+      "number": 119,
+      "speaker": "KING HENRY",
+      "text": "If that same demon that hath gull’d thee thus"
+    },
+    {
+      "number": 120,
+      "speaker": "KING HENRY",
+      "text": "Should with his lion gait walk the whole world,"
+    },
+    {
+      "number": 121,
+      "speaker": "KING HENRY",
+      "text": "He might return to vasty Tartar back,"
+    },
+    {
+      "number": 122,
+      "speaker": "KING HENRY",
+      "text": "And tell the legions “I can never win"
+    },
+    {
+      "number": 123,
+      "speaker": "KING HENRY",
+      "text": "A soul so easy as that Englishman’s.”"
+    },
+    {
+      "number": 124,
+      "speaker": "KING HENRY",
+      "text": "O, how hast thou with jealousy infected"
+    },
+    {
+      "number": 125,
+      "speaker": "KING HENRY",
+      "text": "The sweetness of affiance! Show men dutiful?"
+    },
+    {
+      "number": 126,
+      "speaker": "KING HENRY",
+      "text": "Why, so didst thou: seem they grave and learned?"
+    },
+    {
+      "number": 127,
+      "speaker": "KING HENRY",
+      "text": "Why, so didst thou: come they of noble family?"
+    },
+    {
+      "number": 128,
+      "speaker": "KING HENRY",
+      "text": "Why, so didst thou: seem they religious?"
+    },
+    {
+      "number": 129,
+      "speaker": "KING HENRY",
+      "text": "Why, so didst thou: or are they spare in diet,"
+    },
+    {
+      "number": 130,
+      "speaker": "KING HENRY",
+      "text": "Free from gross passion or of mirth or anger,"
+    },
+    {
+      "number": 131,
+      "speaker": "KING HENRY",
+      "text": "Constant in spirit, not swerving with the blood,"
+    },
+    {
+      "number": 132,
+      "speaker": "KING HENRY",
+      "text": "Garnish’d and deck’d in modest complement,"
+    },
+    {
+      "number": 133,
+      "speaker": "KING HENRY",
+      "text": "Not working with the eye without the ear,"
+    },
+    {
+      "number": 134,
+      "speaker": "KING HENRY",
+      "text": "And but in purged judgement trusting neither?"
+    },
+    {
+      "number": 135,
+      "speaker": "KING HENRY",
+      "text": "Such and so finely bolted didst thou seem:"
+    },
+    {
+      "number": 136,
+      "speaker": "KING HENRY",
+      "text": "And thus thy fall hath left a kind of blot,"
+    },
+    {
+      "number": 137,
+      "speaker": "KING HENRY",
+      "text": "To mark the full-fraught man and best indued"
+    },
+    {
+      "number": 138,
+      "speaker": "KING HENRY",
+      "text": "With some suspicion. I will weep for thee;"
+    },
+    {
+      "number": 139,
+      "speaker": "KING HENRY",
+      "text": "For this revolt of thine, methinks, is like"
+    },
+    {
+      "number": 140,
+      "speaker": "KING HENRY",
+      "text": "Another fall of man. Their faults are open:"
+    },
+    {
+      "number": 141,
+      "speaker": "KING HENRY",
+      "text": "Arrest them to the answer of the law;"
+    },
+    {
+      "number": 142,
+      "speaker": "KING HENRY",
+      "text": "And God acquit them of their practices!"
+    },
+    {
+      "number": 143,
+      "speaker": "EXETER",
+      "text": "I arrest thee of high treason, by the name of Richard Earl of Cambridge."
+    },
+    {
+      "number": 144,
+      "speaker": "EXETER",
+      "text": "I arrest thee of high treason, by the name of Henry Lord Scroop of Masham."
+    },
+    {
+      "number": 145,
+      "speaker": "EXETER",
+      "text": "I arrest thee of high treason, by the name of Thomas Grey, knight, of Northumberland."
+    },
+    {
+      "number": 146,
+      "speaker": "SCROOP",
+      "text": "Our purposes God justly hath discover’d;"
+    },
+    {
+      "number": 147,
+      "speaker": "SCROOP",
+      "text": "And I repent my fault more than my death;"
+    },
+    {
+      "number": 148,
+      "speaker": "SCROOP",
+      "text": "Which I beseech your highness to forgive,"
+    },
+    {
+      "number": 149,
+      "speaker": "SCROOP",
+      "text": "Although my body pay the price of it."
+    },
+    {
+      "number": 150,
+      "speaker": "CAMBRIDGE",
+      "text": "For me, the gold of France did not seduce;"
+    },
+    {
+      "number": 151,
+      "speaker": "CAMBRIDGE",
+      "text": "Although I did admit it as a motive"
+    },
+    {
+      "number": 152,
+      "speaker": "CAMBRIDGE",
+      "text": "The sooner to effect what I intended:"
+    },
+    {
+      "number": 153,
+      "speaker": "CAMBRIDGE",
+      "text": "But God be thanked for prevention;"
+    },
+    {
+      "number": 154,
+      "speaker": "CAMBRIDGE",
+      "text": "Which I in sufferance heartily will rejoice,"
+    },
+    {
+      "number": 155,
+      "speaker": "CAMBRIDGE",
+      "text": "Beseeching God and you to pardon me."
+    },
+    {
+      "number": 156,
+      "speaker": "GREY",
+      "text": "Never did faithful subject more rejoice"
+    },
+    {
+      "number": 157,
+      "speaker": "GREY",
+      "text": "At the discovery of most dangerous treason"
+    },
+    {
+      "number": 158,
+      "speaker": "GREY",
+      "text": "Than I do at this hour joy o’er myself,"
+    },
+    {
+      "number": 159,
+      "speaker": "GREY",
+      "text": "Prevented from a damned enterprise:"
+    },
+    {
+      "number": 160,
+      "speaker": "GREY",
+      "text": "My fault, but not my body, pardon, sovereign."
+    },
+    {
+      "number": 161,
+      "speaker": "KING HENRY",
+      "text": "God quit you in his mercy! Hear your sentence."
+    },
+    {
+      "number": 162,
+      "speaker": "KING HENRY",
+      "text": "You have conspired against our royal person,"
+    },
+    {
+      "number": 163,
+      "speaker": "KING HENRY",
+      "text": "Join’d with an enemy proclaim’d and from his coffers"
+    },
+    {
+      "number": 164,
+      "speaker": "KING HENRY",
+      "text": "Received the golden earnest of our death;"
+    },
+    {
+      "number": 165,
+      "speaker": "KING HENRY",
+      "text": "Wherein you would have sold your king to slaughter,"
+    },
+    {
+      "number": 166,
+      "speaker": "KING HENRY",
+      "text": "His princes and his peers to servitude,"
+    },
+    {
+      "number": 167,
+      "speaker": "KING HENRY",
+      "text": "His subjects to oppression and contempt"
+    },
+    {
+      "number": 168,
+      "speaker": "KING HENRY",
+      "text": "And his whole kingdom into desolation."
+    },
+    {
+      "number": 169,
+      "speaker": "KING HENRY",
+      "text": "Touching our person seek we no revenge;"
+    },
+    {
+      "number": 170,
+      "speaker": "KING HENRY",
+      "text": "But we our kingdom’s safety must so tender,"
+    },
+    {
+      "number": 171,
+      "speaker": "KING HENRY",
+      "text": "Whose ruin you have sought, that to her laws"
+    },
+    {
+      "number": 172,
+      "speaker": "KING HENRY",
+      "text": "We do deliver you. Get you therefore hence,"
+    },
+    {
+      "number": 173,
+      "speaker": "KING HENRY",
+      "text": "Poor miserable wretches, to your death:"
+    },
+    {
+      "number": 174,
+      "speaker": "KING HENRY",
+      "text": "The taste whereof, God of his mercy give"
+    },
+    {
+      "number": 175,
+      "speaker": "KING HENRY",
+      "text": "You patience to endure, and true repentance"
+    },
+    {
+      "number": 176,
+      "speaker": "KING HENRY",
+      "text": "Of all your dear offences! Bear them hence."
+    },
+    {
+      "number": 177,
+      "speaker": "KING HENRY",
+      "text": "Now, lords, for France; the enterprise whereof"
+    },
+    {
+      "number": 178,
+      "speaker": "KING HENRY",
+      "text": "Shall be to you, as us, like glorious."
+    },
+    {
+      "number": 179,
+      "speaker": "KING HENRY",
+      "text": "We doubt not of a fair and lucky war,"
+    },
+    {
+      "number": 180,
+      "speaker": "KING HENRY",
+      "text": "Since God so graciously hath brought to light"
+    },
+    {
+      "number": 181,
+      "speaker": "KING HENRY",
+      "text": "This dangerous treason lurking in our way"
+    },
+    {
+      "number": 182,
+      "speaker": "KING HENRY",
+      "text": "To hinder our beginnings. We doubt not now"
+    },
+    {
+      "number": 183,
+      "speaker": "KING HENRY",
+      "text": "But every rub is smoothed on our way."
+    },
+    {
+      "number": 184,
+      "speaker": "KING HENRY",
+      "text": "Then forth, dear countrymen: let us deliver"
+    },
+    {
+      "number": 185,
+      "speaker": "KING HENRY",
+      "text": "Our puissance into the hand of God,"
+    },
+    {
+      "number": 186,
+      "speaker": "KING HENRY",
+      "text": "Putting it straight in expedition."
+    },
+    {
+      "number": 187,
+      "speaker": "KING HENRY",
+      "text": "Cheerly to sea; the signs of war advance:"
+    },
+    {
+      "number": 188,
+      "speaker": "KING HENRY",
+      "text": "No king of England, if not king of France."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Exeter, Bedford and Westmoreland."
+    },
+    {
+      "after_line": 11,
+      "text": "Trumpets sound. Enter King Henry, Scroop, Cambridge, Grey, and Attendants."
+    },
+    {
+      "after_line": 176,
+      "text": "Exeunt Cambridge, Scroop and Grey, guarded."
+    },
+    {
+      "after_line": 188,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act2_scene2_gloss1",
+      "line": 6,
+      "phrase": "note",
+      "definition": "knowledge; information"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss2",
+      "line": 7,
+      "phrase": "interception",
+      "definition": "letters secretly intercepted by Henry's agents"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss3",
+      "line": 8,
+      "phrase": "bedfellow",
+      "definition": "intimate companion — in period, sharing a bed denoted extraordinary closeness; Scroop had been Henry's confidant"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss4",
+      "line": 9,
+      "phrase": "dull’d and cloy’d",
+      "definition": "surfeited; satiated to dullness"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss5",
+      "line": 10,
+      "phrase": "foreign purse",
+      "definition": "bribery from abroad — French gold"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss6",
+      "line": 12,
+      "phrase": "Now sits the wind fair",
+      "definition": "the wind is favorable — naval idiom for good sailing weather"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss7",
+      "line": 12,
+      "phrase": "aboard",
+      "definition": "onto the ship"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss8",
+      "line": 19,
+      "phrase": "liege",
+      "definition": "lord to whom allegiance is owed"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss9",
+      "line": 33,
+      "phrase": "office of our hand",
+      "definition": "duty of our hand — kingly reward-giving"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss10",
+      "line": 34,
+      "phrase": "quittance of desert and merit",
+      "definition": "repayment of what is deserved"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss11",
+      "line": 36,
+      "phrase": "steeled sinews",
+      "definition": "muscles hardened like steel"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss12",
+      "line": 40,
+      "phrase": "Enlarge",
+      "definition": "set free; release from custody"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss13",
+      "line": 41,
+      "phrase": "rail’d against our person",
+      "definition": "cursed the king aloud"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss14",
+      "line": 44,
+      "phrase": "too much security",
+      "definition": "too much freedom from consequence"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss15",
+      "line": 46,
+      "phrase": "Breed, by his sufferance, more of such a kind",
+      "definition": "let his being spared breed more like him"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss16",
+      "line": 53,
+      "phrase": "heavy orisons",
+      "definition": "weighty prayers — 'orisons' = prayers (already glossed in Hamlet)"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss17",
+      "line": 54,
+      "phrase": "distemper",
+      "definition": "temporary illness of mood; here, drunkenness"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss18",
+      "line": 55,
+      "phrase": "wink’d at",
+      "definition": "overlooked; ignored"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss19",
+      "line": 61,
+      "phrase": "late commissioners",
+      "definition": "officials recently appointed"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss20",
+      "line": 64,
+      "phrase": "Richard Earl of Cambridge",
+      "definition": "the traitor named in the Act II chorus — given his 'commission' papers by Henry"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss21",
+      "line": 70,
+      "phrase": "lose so much complexion",
+      "definition": "lose so much color from your faces"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss22",
+      "line": 72,
+      "phrase": "Their cheeks are paper",
+      "definition": "their faces have turned white as paper"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss23",
+      "line": 73,
+      "phrase": "cowarded and chased your blood",
+      "definition": "frightened your blood out of your faces"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss24",
+      "line": 87,
+      "phrase": "light crowns",
+      "definition": "light-weight gold coins — punning on lightness of mind; a trifling sum"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss25",
+      "line": 88,
+      "phrase": "practices of France",
+      "definition": "secret schemes of France"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss26",
+      "line": 89,
+      "phrase": "Hampton",
+      "definition": "Southampton — Henry's staging-port for the invasion"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss27",
+      "line": 93,
+      "phrase": "Ingrateful",
+      "definition": "ungrateful"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss28",
+      "line": 95,
+      "phrase": "bottom of my soul",
+      "definition": "deepest recesses of my spirit"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss29",
+      "line": 96,
+      "phrase": "coin’d me into gold",
+      "definition": "stamped me as a coin — used me as a mint for his own enrichment"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss30",
+      "line": 104,
+      "phrase": "yoke-devils",
+      "definition": "devils paired in harness — treason and murder as twin oxen"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss31",
+      "line": 106,
+      "phrase": "admiration did not whoop at them",
+      "definition": "astonishment did not hoot at them — they worked so smoothly that nothing cried out"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss32",
+      "line": 110,
+      "phrase": "preposterously",
+      "definition": "against natural order; perversely"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss33",
+      "line": 111,
+      "phrase": "got the voice in hell for excellence",
+      "definition": "been voted hell's prize for performance"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss34",
+      "line": 115,
+      "phrase": "glistering semblances of piety",
+      "definition": "shining appearances of holiness — false-religious disguises"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss35",
+      "line": 116,
+      "phrase": "temper’d thee",
+      "definition": "tuned you like a musical instrument; shaped your mind"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss36",
+      "line": 117,
+      "phrase": "no instance",
+      "definition": "no reason; no pretext"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss37",
+      "line": 121,
+      "phrase": "vasty Tartar",
+      "definition": "the vast underworld — Tartarus, the classical hell"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss38",
+      "line": 123,
+      "phrase": "easy as that Englishman’s",
+      "definition": "as easy to win as that Englishman's soul — Henry's bitter irony"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss39",
+      "line": 125,
+      "phrase": "sweetness of affiance",
+      "definition": "sweetness of trust; the pleasure of confiding"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss40",
+      "line": 129,
+      "phrase": "spare in diet",
+      "definition": "moderate in eating — a mark of discipline"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss41",
+      "line": 132,
+      "phrase": "Garnish’d and deck’d in modest complement",
+      "definition": "adorned and decorated with modest bearing"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss42",
+      "line": 134,
+      "phrase": "purged judgement",
+      "definition": "purified, disciplined judgment"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss43",
+      "line": 135,
+      "phrase": "finely bolted",
+      "definition": "finely sifted — 'bolting' = sieving flour"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss44",
+      "line": 137,
+      "phrase": "full-fraught man",
+      "definition": "the fully-accomplished man — loaded with virtues like a cargo ship"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss45",
+      "line": 137,
+      "phrase": "best indued",
+      "definition": "most richly endowed"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss46",
+      "line": 140,
+      "phrase": "Another fall of man",
+      "definition": "a second Fall — Scroop's betrayal echoes Adam's; Henry invokes Christian original sin"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss47",
+      "line": 143,
+      "phrase": "I arrest thee of high treason",
+      "definition": "formal arrest-phrase — 'of' means 'on the charge of'"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss48",
+      "line": 164,
+      "phrase": "golden earnest",
+      "definition": "gold given as down-payment; bribe money"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss49",
+      "line": 170,
+      "phrase": "tender",
+      "definition": "care for; protect"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss50",
+      "line": 183,
+      "phrase": "every rub is smoothed",
+      "definition": "every obstacle is removed — 'rub' = impediment, originally from bowls"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss51",
+      "line": 185,
+      "phrase": "puissance",
+      "definition": "military power (as in the Prologue)"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss52",
+      "line": 186,
+      "phrase": "in expedition",
+      "definition": "in motion; mobilized"
+    },
+    {
+      "id": "henry_v_act2_scene2_gloss53",
+      "line": 188,
+      "phrase": "No king of England, if not king of France",
+      "definition": "if I can't be king of France, I'm not really king of England — Henry's aggressive closing oath"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act2_scene2_ann1",
+      "line_start": 39,
+      "line_end": 85,
+      "citation_display": "Henry V 2.2.39–85",
+      "category": "close_reading",
+      "title": "The trap sprung — Henry's performance of mercy",
+      "body": "Henry stages the traitors' entrapment with theatrical care. He first proposes releasing a drunken man who railed against him; the three traitors pile on insisting the king be harsher; Henry gently overrules them and grants mercy. Only then does he hand them the papers that, as they read them, reveal their own treason. The trap's elegance is the point: the traitors have just demanded strict punishment, and Henry will now apply to them the logic they themselves urged. 'The mercy that was quick in us but late, / By your own counsel is suppress'd and kill'd' (lines 77–78). This is the kind of monarch Henry has become: one who makes his enemies condemn themselves with their own argument. Readers may recall Prince Hal in Henry IV Part 2, who famously banishes Falstaff at his coronation with calculated public timing. The political method is the same. What looks like improvised royal authority is in fact carefully rehearsed dramaturgy.",
+      "sources": [
+        "Alexander Leggatt, Shakespeare's Political Drama (1988)",
+        "Stephen Greenblatt, Shakespearean Negotiations (1988)"
+      ]
+    },
+    {
+      "id": "henry_v_act2_scene2_ann2",
+      "line_start": 92,
+      "line_end": 140,
+      "citation_display": "Henry V 2.2.92–140",
+      "category": "thematic",
+      "title": "Scroop and the Second Fall",
+      "body": "Henry's long reproach to Scroop in particular — 'Thou that didst bear the key of all my counsels' — is the most emotionally charged thing Henry says in the play up to this point. Scroop was his intimate, his 'bedfellow' in the period's sense of confidant. His betrayal is framed as 'another fall of man,' a second Eden. The theological vocabulary is deliberate: Henry's scandal is not merely political but cosmological. A trusted companion who was 'spare in diet, / Free from gross passion,' 'garnish'd and deck'd in modest complement' — exactly the virtues Canterbury earlier attributed to Henry himself in 1.1 — has proven hollow. The passage resonates with the Henry IV plays' preoccupation with false appearances and feigned loyalty. It is also the moment the play comes closest to expressing genuine anguish from Henry; he announces it himself ('I will weep for thee'). The anguish is rhetorical as well as felt; it is the only proper setting in which to pronounce a capital sentence against a man who once ate at your table.",
+      "sources": [
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)",
+        "Graham Holderness, Shakespeare: The Histories (2000)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act2_scene2_q1",
+      "kind": "inference",
+      "prompt": "Why does Henry first raise (and then grant) mercy for the drunkard before exposing the traitors?",
+      "options": [
+        "Because he has forgotten about the traitors",
+        "To make the traitors commit themselves to strict punishment — using their own advocacy for severity against them when their treason is revealed",
+        "Because Exeter pressured him",
+        "Because the drunk was an old friend"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 40,
+      "anchor_line_end": 82
+    },
+    {
+      "id": "henry_v_act2_scene2_q2",
+      "kind": "close_reading",
+      "prompt": "Henry's reproach to Scroop frames the betrayal as 'another fall of man.' Why this theological framing?",
+      "options": [
+        "Because Scroop is a priest",
+        "Because Shakespeare needs to fill time",
+        "Because the betrayal of trusted intimacy is figured as a second Eden — a cosmic scandal, not just a political one. It also echoes the Henry IV plays' preoccupation with false appearances",
+        "Because the Salic Law speech required biblical balance"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 30,
+      "anchor_line_start": 139,
+      "anchor_line_end": 145
+    },
+    {
+      "id": "henry_v_act2_scene2_q3",
+      "kind": "comprehension",
+      "prompt": "What does the scene end with?",
+      "options": [
+        "Henry sparing the traitors at the last moment",
+        "A verdict of death for all three traitors, and Henry's immediate sailing to France ('No king of England, if not king of France')",
+        "A council deciding to delay the French invasion",
+        "The queen's arrival from Cyprus"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 161,
+      "anchor_line_end": 188
+    }
+  ]
+}

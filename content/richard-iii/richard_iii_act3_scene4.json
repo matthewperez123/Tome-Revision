@@ -1,0 +1,848 @@
+{
+  "section_id": "richard_iii_act3_scene4",
+  "work_id": "richard-iii",
+  "sequence": 12,
+  "act": 3,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "The Tower of London",
+  "line_count": 110,
+  "word_count": 881,
+  "est_read_minutes": 4,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "HASTINGS",
+      "text": "My lords, at once: the cause why we are met"
+    },
+    {
+      "number": 2,
+      "speaker": "HASTINGS",
+      "text": "Is, to determine of the coronation."
+    },
+    {
+      "number": 3,
+      "speaker": "HASTINGS",
+      "text": "In God’s name, speak: when is the royal day?"
+    },
+    {
+      "number": 4,
+      "speaker": "BUCKINGHAM",
+      "text": "Are all things fitting for that royal time?"
+    },
+    {
+      "number": 5,
+      "speaker": "DERBY",
+      "text": "It is, and wants but nomination."
+    },
+    {
+      "number": 6,
+      "speaker": "ELY",
+      "text": "To-morrow, then, I judge a happy day."
+    },
+    {
+      "number": 7,
+      "speaker": "BUCKINGHAM",
+      "text": "Who knows the lord protector’s mind herein?"
+    },
+    {
+      "number": 8,
+      "speaker": "BUCKINGHAM",
+      "text": "Who is most inward with the noble duke?"
+    },
+    {
+      "number": 9,
+      "speaker": "ELY",
+      "text": "Your grace, we think, should soonest know his mind."
+    },
+    {
+      "number": 10,
+      "speaker": "BUCKINGHAM",
+      "text": "Who, I, my lord! we know each other’s faces,"
+    },
+    {
+      "number": 11,
+      "speaker": "BUCKINGHAM",
+      "text": "But for our hearts, he knows no more of mine,"
+    },
+    {
+      "number": 12,
+      "speaker": "BUCKINGHAM",
+      "text": "Than I of yours;"
+    },
+    {
+      "number": 13,
+      "speaker": "BUCKINGHAM",
+      "text": "Nor I no more of his, than you of mine."
+    },
+    {
+      "number": 14,
+      "speaker": "BUCKINGHAM",
+      "text": "Lord Hastings, you and he are near in love."
+    },
+    {
+      "number": 15,
+      "speaker": "HASTINGS",
+      "text": "I thank his grace, I know he loves me well;"
+    },
+    {
+      "number": 16,
+      "speaker": "HASTINGS",
+      "text": "But, for his purpose in the coronation,"
+    },
+    {
+      "number": 17,
+      "speaker": "HASTINGS",
+      "text": "I have not sounded him, nor he deliver’d"
+    },
+    {
+      "number": 18,
+      "speaker": "HASTINGS",
+      "text": "His gracious pleasure any way therein:"
+    },
+    {
+      "number": 19,
+      "speaker": "HASTINGS",
+      "text": "But you, my noble lords, may name the time;"
+    },
+    {
+      "number": 20,
+      "speaker": "HASTINGS",
+      "text": "And in the duke’s behalf I’ll give my voice,"
+    },
+    {
+      "number": 21,
+      "speaker": "HASTINGS",
+      "text": "Which, I presume, he’ll take in gentle part."
+    },
+    {
+      "number": 22,
+      "speaker": "ELY",
+      "text": "Now in good time, here comes the duke himself."
+    },
+    {
+      "number": 23,
+      "speaker": "GLOUCESTER",
+      "text": "My noble lords and cousins all, good morrow."
+    },
+    {
+      "number": 24,
+      "speaker": "GLOUCESTER",
+      "text": "I have been long a sleeper; but, I hope,"
+    },
+    {
+      "number": 25,
+      "speaker": "GLOUCESTER",
+      "text": "My absence doth neglect no great designs,"
+    },
+    {
+      "number": 26,
+      "speaker": "GLOUCESTER",
+      "text": "Which by my presence might have been concluded."
+    },
+    {
+      "number": 27,
+      "speaker": "BUCKINGHAM",
+      "text": "Had not you come upon your cue, my lord,"
+    },
+    {
+      "number": 28,
+      "speaker": "BUCKINGHAM",
+      "text": "William Lord Hastings had pronounced your part—"
+    },
+    {
+      "number": 29,
+      "speaker": "BUCKINGHAM",
+      "text": "I mean, your voice—for crowning of the king."
+    },
+    {
+      "number": 30,
+      "speaker": "GLOUCESTER",
+      "text": "Than my Lord Hastings no man might be bolder;"
+    },
+    {
+      "number": 31,
+      "speaker": "GLOUCESTER",
+      "text": "His lordship knows me well, and loves me well."
+    },
+    {
+      "number": 32,
+      "speaker": "HASTINGS",
+      "text": "I thank your grace."
+    },
+    {
+      "number": 32,
+      "speaker": "GLOUCESTER",
+      "text": "My lord of Ely!"
+    },
+    {
+      "number": 33,
+      "speaker": "ELY",
+      "text": "My lord?"
+    },
+    {
+      "number": 33,
+      "speaker": "GLOUCESTER",
+      "text": "When I was last in Holborn,"
+    },
+    {
+      "number": 34,
+      "speaker": "GLOUCESTER",
+      "text": "I saw good strawberries in your garden there:"
+    },
+    {
+      "number": 35,
+      "speaker": "GLOUCESTER",
+      "text": "I do beseech you send for some of them."
+    },
+    {
+      "number": 36,
+      "speaker": "ELY",
+      "text": "Marry, and will, my lord, with all my heart."
+    },
+    {
+      "number": 37,
+      "speaker": "GLOUCESTER",
+      "text": "Cousin of Buckingham, a word with you."
+    },
+    {
+      "number": 38,
+      "speaker": "GLOUCESTER",
+      "text": "Catesby hath sounded Hastings in our business,"
+    },
+    {
+      "number": 39,
+      "speaker": "GLOUCESTER",
+      "text": "And finds the testy gentleman so hot,"
+    },
+    {
+      "number": 40,
+      "speaker": "GLOUCESTER",
+      "text": "As he will lose his head ere give consent"
+    },
+    {
+      "number": 41,
+      "speaker": "GLOUCESTER",
+      "text": "His master’s son, as worshipful as he terms it,"
+    },
+    {
+      "number": 42,
+      "speaker": "GLOUCESTER",
+      "text": "Shall lose the royalty of England’s throne."
+    },
+    {
+      "number": 43,
+      "speaker": "BUCKINGHAM",
+      "text": "Withdraw you hence, my lord, I’ll follow you."
+    },
+    {
+      "number": 44,
+      "speaker": "DERBY",
+      "text": "We have not yet set down this day of triumph."
+    },
+    {
+      "number": 45,
+      "speaker": "DERBY",
+      "text": "To-morrow, in mine opinion, is too sudden;"
+    },
+    {
+      "number": 46,
+      "speaker": "DERBY",
+      "text": "For I myself am not so well provided"
+    },
+    {
+      "number": 47,
+      "speaker": "DERBY",
+      "text": "As else I would be, were the day prolong’d."
+    },
+    {
+      "number": 48,
+      "speaker": "ELY",
+      "text": "Where is my lord protector? I have sent for these strawberries."
+    },
+    {
+      "number": 49,
+      "speaker": "HASTINGS",
+      "text": "His grace looks cheerfully and smooth to-day;"
+    },
+    {
+      "number": 50,
+      "speaker": "HASTINGS",
+      "text": "There’s some conceit or other likes him well,"
+    },
+    {
+      "number": 51,
+      "speaker": "HASTINGS",
+      "text": "When he doth bid good morrow with such a spirit."
+    },
+    {
+      "number": 52,
+      "speaker": "HASTINGS",
+      "text": "I think there’s never a man in Christendom"
+    },
+    {
+      "number": 53,
+      "speaker": "HASTINGS",
+      "text": "That can less hide his love or hate than he;"
+    },
+    {
+      "number": 54,
+      "speaker": "HASTINGS",
+      "text": "For by his face straight shall you know his heart."
+    },
+    {
+      "number": 55,
+      "speaker": "DERBY",
+      "text": "What of his heart perceive you in his face"
+    },
+    {
+      "number": 56,
+      "speaker": "DERBY",
+      "text": "By any likelihood he show’d to-day?"
+    },
+    {
+      "number": 57,
+      "speaker": "HASTINGS",
+      "text": "Marry, that with no man here he is offended;"
+    },
+    {
+      "number": 58,
+      "speaker": "HASTINGS",
+      "text": "For, were he, he had shown it in his looks."
+    },
+    {
+      "number": 59,
+      "speaker": "DERBY",
+      "text": "I pray God he be not, I say."
+    },
+    {
+      "number": 60,
+      "speaker": "GLOUCESTER",
+      "text": "I pray you all, tell me what they deserve"
+    },
+    {
+      "number": 61,
+      "speaker": "GLOUCESTER",
+      "text": "That do conspire my death with devilish plots"
+    },
+    {
+      "number": 62,
+      "speaker": "GLOUCESTER",
+      "text": "Of damned witchcraft, and that have prevail’d"
+    },
+    {
+      "number": 63,
+      "speaker": "GLOUCESTER",
+      "text": "Upon my body with their hellish charms?"
+    },
+    {
+      "number": 64,
+      "speaker": "HASTINGS",
+      "text": "The tender love I bear your grace, my lord,"
+    },
+    {
+      "number": 65,
+      "speaker": "HASTINGS",
+      "text": "Makes me most forward in this noble presence"
+    },
+    {
+      "number": 66,
+      "speaker": "HASTINGS",
+      "text": "To doom the offenders, whatsoever they be:"
+    },
+    {
+      "number": 67,
+      "speaker": "HASTINGS",
+      "text": "I say, my lord, they have deserved death."
+    },
+    {
+      "number": 68,
+      "speaker": "GLOUCESTER",
+      "text": "Then be your eyes the witness of this ill:"
+    },
+    {
+      "number": 69,
+      "speaker": "GLOUCESTER",
+      "text": "See how I am bewitch’d; behold mine arm"
+    },
+    {
+      "number": 70,
+      "speaker": "GLOUCESTER",
+      "text": "Is, like a blasted sapling, wither’d up:"
+    },
+    {
+      "number": 71,
+      "speaker": "GLOUCESTER",
+      "text": "And this is Edward’s wife, that monstrous witch,"
+    },
+    {
+      "number": 72,
+      "speaker": "GLOUCESTER",
+      "text": "Consorted with that harlot strumpet Shore,"
+    },
+    {
+      "number": 73,
+      "speaker": "GLOUCESTER",
+      "text": "That by their witchcraft thus have marked me."
+    },
+    {
+      "number": 74,
+      "speaker": "HASTINGS",
+      "text": "If they have done this thing, my gracious lord—"
+    },
+    {
+      "number": 75,
+      "speaker": "GLOUCESTER",
+      "text": "If! thou protector of this damned strumpet,"
+    },
+    {
+      "number": 76,
+      "speaker": "GLOUCESTER",
+      "text": "Tellest thou me of “ifs”? Thou art a traitor:"
+    },
+    {
+      "number": 77,
+      "speaker": "GLOUCESTER",
+      "text": "Off with his head! Now, by Saint Paul I swear,"
+    },
+    {
+      "number": 78,
+      "speaker": "GLOUCESTER",
+      "text": "I will not dine until I see the same."
+    },
+    {
+      "number": 79,
+      "speaker": "GLOUCESTER",
+      "text": "Lovel and Ratcliff, look that it be done:"
+    },
+    {
+      "number": 80,
+      "speaker": "GLOUCESTER",
+      "text": "The rest, that love me, rise and follow me."
+    },
+    {
+      "number": 81,
+      "speaker": "HASTINGS",
+      "text": "Woe, woe for England! not a whit for me;"
+    },
+    {
+      "number": 82,
+      "speaker": "HASTINGS",
+      "text": "For I, too fond, might have prevented this."
+    },
+    {
+      "number": 83,
+      "speaker": "HASTINGS",
+      "text": "Stanley did dream the boar did raze his helm;"
+    },
+    {
+      "number": 84,
+      "speaker": "HASTINGS",
+      "text": "But I disdain’d it, and did scorn to fly:"
+    },
+    {
+      "number": 85,
+      "speaker": "HASTINGS",
+      "text": "Three times to-day my foot-cloth horse did stumble,"
+    },
+    {
+      "number": 86,
+      "speaker": "HASTINGS",
+      "text": "And startled, when he look’d upon the Tower,"
+    },
+    {
+      "number": 87,
+      "speaker": "HASTINGS",
+      "text": "As loath to bear me to the slaughter-house."
+    },
+    {
+      "number": 88,
+      "speaker": "HASTINGS",
+      "text": "O, now I want the priest that spake to me:"
+    },
+    {
+      "number": 89,
+      "speaker": "HASTINGS",
+      "text": "I now repent I told the pursuivant,"
+    },
+    {
+      "number": 90,
+      "speaker": "HASTINGS",
+      "text": "As ’twere triumphing at mine enemies,"
+    },
+    {
+      "number": 91,
+      "speaker": "HASTINGS",
+      "text": "How they at Pomfret bloodily were butcher’d,"
+    },
+    {
+      "number": 92,
+      "speaker": "HASTINGS",
+      "text": "And I myself secure in grace and favour."
+    },
+    {
+      "number": 93,
+      "speaker": "HASTINGS",
+      "text": "O Margaret, Margaret, now thy heavy curse"
+    },
+    {
+      "number": 94,
+      "speaker": "HASTINGS",
+      "text": "Is lighted on poor Hastings’ wretched head!"
+    },
+    {
+      "number": 95,
+      "speaker": "RATCLIFF",
+      "text": "Dispatch, my lord; the duke would be at dinner:"
+    },
+    {
+      "number": 96,
+      "speaker": "RATCLIFF",
+      "text": "Make a short shrift; he longs to see your head."
+    },
+    {
+      "number": 97,
+      "speaker": "HASTINGS",
+      "text": "O momentary grace of mortal men,"
+    },
+    {
+      "number": 98,
+      "speaker": "HASTINGS",
+      "text": "Which we more hunt for than the grace of God!"
+    },
+    {
+      "number": 99,
+      "speaker": "HASTINGS",
+      "text": "Who builds his hopes in air of your good looks,"
+    },
+    {
+      "number": 100,
+      "speaker": "HASTINGS",
+      "text": "Lives like a drunken sailor on a mast,"
+    },
+    {
+      "number": 101,
+      "speaker": "HASTINGS",
+      "text": "Ready, with every nod, to tumble down"
+    },
+    {
+      "number": 102,
+      "speaker": "HASTINGS",
+      "text": "Into the fatal bowels of the deep."
+    },
+    {
+      "number": 103,
+      "speaker": "LOVEL",
+      "text": "Come, come, dispatch; ’tis bootless to exclaim."
+    },
+    {
+      "number": 104,
+      "speaker": "HASTINGS",
+      "text": "O bloody Richard! miserable England!"
+    },
+    {
+      "number": 105,
+      "speaker": "HASTINGS",
+      "text": "I prophesy the fearfull’st time to thee"
+    },
+    {
+      "number": 106,
+      "speaker": "HASTINGS",
+      "text": "That ever wretched age hath look’d upon."
+    },
+    {
+      "number": 107,
+      "speaker": "HASTINGS",
+      "text": "Come, lead me to the block; bear him my head:"
+    },
+    {
+      "number": 108,
+      "speaker": "HASTINGS",
+      "text": "They smile at me that shortly shall be dead."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Buckingham, Derby, Hastings, the Bishop of Ely, Ratcliff, Lovel, with others, and take their seats at a table."
+    },
+    {
+      "after_line": 21,
+      "text": "Enter Gloucester."
+    },
+    {
+      "after_line": 36,
+      "text": "Exit."
+    },
+    {
+      "after_line": 37,
+      "text": "Drawing him aside."
+    },
+    {
+      "after_line": 43,
+      "text": "Exit Gloucester, Buckingham following."
+    },
+    {
+      "after_line": 47,
+      "text": "Reenter Bishop of Ely."
+    },
+    {
+      "after_line": 59,
+      "text": "Reenter Gloucester and Buckingham."
+    },
+    {
+      "after_line": 80,
+      "text": "Exeunt all but Hastings, Ratcliff, and Lovel."
+    },
+    {
+      "after_line": 108,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act3_scene4_gloss1",
+      "line": 2,
+      "phrase": "determine of the coronation",
+      "definition": "settle the date and details of the coronation"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss2",
+      "line": 5,
+      "phrase": "nomination",
+      "definition": "the naming of the day"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss3",
+      "line": 8,
+      "phrase": "most inward",
+      "definition": "most intimate, closest"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss4",
+      "line": 17,
+      "phrase": "sounded him",
+      "definition": "probed his opinion"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss5",
+      "line": 27,
+      "phrase": "come upon your cue",
+      "definition": "arrived on your cue (theatrical metaphor — Buckingham treats the room as a stage)"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss6",
+      "line": 34,
+      "phrase": "strawberries in your garden",
+      "definition": "Ely's Holborn strawberries — the infamous abrupt transition; Richard uses the request to exit briefly and return transformed"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss7",
+      "line": 39,
+      "phrase": "testy gentleman so hot",
+      "definition": "irritable gentleman so inflamed"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss8",
+      "line": 49,
+      "phrase": "cheerfully and smooth",
+      "definition": "brightly and pleasantly"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss9",
+      "line": 50,
+      "phrase": "conceit",
+      "definition": "idea, notion"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss10",
+      "line": 54,
+      "phrase": "by his face straight shall you know his heart",
+      "definition": "Hastings' fatal misjudgement — one of the play's grimmest dramatic ironies"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss11",
+      "line": 61,
+      "phrase": "conspire my death with devilish plots",
+      "definition": "plot my death with devilish schemes — Richard's manufactured accusation"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss12",
+      "line": 62,
+      "phrase": "damned witchcraft",
+      "definition": "accursed sorcery — witchcraft was a capital offence under 1563 and 1604 statutes"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss13",
+      "line": 70,
+      "phrase": "blasted sapling, wither’d up",
+      "definition": "struck young-tree, shriveled — Richard holds up his already-deformed arm as 'evidence' of witchcraft"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss14",
+      "line": 72,
+      "phrase": "harlot strumpet Shore",
+      "definition": "Jane Shore, labelled doubly; the charge is cynically fabricated"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss15",
+      "line": 77,
+      "phrase": "Off with his head",
+      "definition": "the scene's most famous line; summary execution by royal fiat"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss16",
+      "line": 85,
+      "phrase": "foot-cloth horse",
+      "definition": "a horse with a trailing cloth of state — a noble's ceremonial mount"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss17",
+      "line": 88,
+      "phrase": "want the priest",
+      "definition": "now I need the priest (for last rites) — Hastings in retrospect"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss18",
+      "line": 96,
+      "phrase": "short shrift",
+      "definition": "brief confession before death — origin of the modern idiom"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss19",
+      "line": 97,
+      "phrase": "momentary grace of mortal men",
+      "definition": "the fleeting favour of men — versus the grace of God"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss20",
+      "line": 100,
+      "phrase": "drunken sailor on a mast",
+      "definition": "a sailor perched on a masthead — ready to tumble with any motion"
+    },
+    {
+      "id": "richard_iii_act3_scene4_gloss21",
+      "line": 103,
+      "phrase": "bootless to exclaim",
+      "definition": "useless to cry out"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act3_scene4_ann1",
+      "line_start": 31,
+      "line_end": 48,
+      "citation_display": "Richard III 3.4.31–48",
+      "category": "historical",
+      "title": "The strawberries of Ely Place, and the trap",
+      "body": "Richard's apparent non sequitur — \"When I was last in Holborn, / I saw good strawberries in your garden there: / I do beseech you send for some of them\" — is one of Shakespeare's most quoted off-kilter moments, and it is inherited directly from Thomas More's History, where the detail is recorded verbatim as from eyewitness testimony. The Bishop of Ely's town palace in Holborn had famous strawberry gardens. Shakespeare uses the historical detail to construct a theatrical trap: Richard ambles into the council meeting cheerful and inconsequent, exits briefly (ostensibly to fetch strawberries), and returns moments later to accuse Hastings of witchcraft and order his head. The strawberries serve as cover for Richard's consultation with Buckingham — and as a signal to the audience that the council's apparent ordinariness is a stage set for murder.",
+      "sources": [
+        "Thomas More, History of King Richard III (c. 1513)",
+        "John Jowett, The Oxford Shakespeare: Richard III (2000)",
+        "Charles Ross, Richard III (1981)"
+      ]
+    },
+    {
+      "id": "richard_iii_act3_scene4_ann2",
+      "line_start": 49,
+      "line_end": 59,
+      "citation_display": "Richard III 3.4.49–59",
+      "category": "thematic",
+      "title": "Hastings' last and worst judgement",
+      "body": "Hastings' speech immediately before his accusation — \"His grace looks cheerfully and smooth to-day... / For by his face straight shall you know his heart\" — is one of Shakespeare's great ironies, and it registers as tragedy rather than simple dramatic irony because Hastings is not stupid. He has read Richard's face and trusted the reading. The play's claim is that this reading-method cannot work with Richard, whose face is a deliberate instrument. Hastings' confidence is the precise trap the play has been setting since 1.3. Derby's quiet counter-line — \"I pray God he be not, I say\" — is the only honest response Hastings' blindness permits. The audience, again, knows more than the stage: we have watched Richard give Catesby his orders about Hastings in 3.1. The scene demonstrates that political experience is no defence against Richard's mode of dissimulation.",
+      "sources": [
+        "Wolfgang Clemen, A Commentary on Shakespeare's Richard III (1968)",
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)"
+      ]
+    },
+    {
+      "id": "richard_iii_act3_scene4_ann3",
+      "line_start": 60,
+      "line_end": 80,
+      "citation_display": "Richard III 3.4.60–80",
+      "category": "historical",
+      "title": "The withered arm: staging the impossible charge",
+      "body": "Richard's production of his \"blasted sapling, wither'd up\" arm, blamed on Elizabeth and Jane Shore's witchcraft, enacts on stage what More reports as the scene's central spectacle. Two things are going on at once. First, everyone present knows that Richard's arm has always been as it is; the \"withering\" is not new. Second, Richard's point is precisely that the charge need not be plausible. What he needs is a pretext sufficient to move immediately. Hastings' \"If they have done this thing, my gracious lord —\" is the word that dooms him: the conditional \"if\" is treated as treason, because Richard has decided the accusation is not a claim but an instruction. Shakespeare is showing a show-trial in miniature. The charge is not a theory of what happened; it is a theory of what will happen, stated backward.",
+      "sources": [
+        "Thomas More, History of King Richard III (c. 1513)",
+        "Stephen Greenblatt, Tyrant: Shakespeare on Politics (2018)",
+        "Charles Ross, Richard III (1981)"
+      ]
+    },
+    {
+      "id": "richard_iii_act3_scene4_ann4",
+      "line_start": 95,
+      "line_end": 108,
+      "citation_display": "Richard III 3.4.95–108",
+      "category": "close_reading",
+      "title": "\"Momentary grace of mortal men\"",
+      "body": "Hastings' final soliloquy — \"O momentary grace of mortal men, / Which we more hunt for than the grace of God!\" — is the play's first fully articulated moral retrospect. The drunken-sailor-on-a-mast image compresses the court-life critique into a seafarer's emblem: those who build their hopes on a monarch's favourable looks live without stable footing. The speech is also, structurally, an echo of Clarence's dream-speech in 1.4 — another figure about to die, pulled from confidence to drowning. Shakespeare is quietly repeating forms: the self-conscious fall-speech becomes a convention the play establishes now and exploits later. Buckingham in 5.1 and Richard himself in 5.3 will each, in different ways, deliver versions of this retrospect.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)",
+        "Emrys Jones, Scenic Form in Shakespeare (1971)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act3_scene4_q1",
+      "kind": "historical",
+      "prompt": "Richard's request for strawberries from the Bishop of Ely's garden is drawn from what source?",
+      "options": [
+        "Shakespeare's invention, unsupported by chronicle",
+        "Thomas More's History of King Richard III, which reports the detail from eyewitness testimony",
+        "Holinshed, but without More's authority",
+        "A forged document from the Cromwell era"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 33,
+      "anchor_line_end": 35
+    },
+    {
+      "id": "richard_iii_act3_scene4_q2",
+      "kind": "inference",
+      "prompt": "Hastings says of Richard \"For by his face straight shall you know his heart.\" The line's tragic irony is that:",
+      "options": [
+        "It is a deliberate lie Hastings tells to flatter Richard",
+        "Hastings' reading-method, sound in general, fails with Richard, whose face is a deliberate instrument of dissimulation",
+        "It is a mistranslation of a Latin commonplace",
+        "Hastings is referring to a different person, not Richard"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 54,
+      "anchor_line_end": 54
+    },
+    {
+      "id": "richard_iii_act3_scene4_q3",
+      "kind": "close_reading",
+      "prompt": "Richard's charge that Jane Shore and Elizabeth have withered his arm by witchcraft serves what rhetorical purpose?",
+      "options": [
+        "An earnest medical diagnosis",
+        "An instruction disguised as accusation — Richard does not need the charge to be plausible, only sufficient to move against Hastings immediately",
+        "A standard legal procedure for treason trials",
+        "A ploy to gain sympathy from the council"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 68,
+      "anchor_line_end": 77
+    },
+    {
+      "id": "richard_iii_act3_scene4_q4",
+      "kind": "close_reading",
+      "prompt": "Hastings' line \"O momentary grace of mortal men, / Which we more hunt for than the grace of God!\" is structurally what?",
+      "options": [
+        "A comic aside",
+        "The play's first fully articulated moral retrospect, establishing a convention the play will reuse in Buckingham's 5.1 and Richard's 5.3 speeches",
+        "A biblical quotation",
+        "A private confession meant only for his own ear"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 97,
+      "anchor_line_end": 98
+    }
+  ]
+}

@@ -1,0 +1,1561 @@
+{
+  "section_id": "romeo_and_juliet_act2_scene2",
+  "work_id": "romeo-and-juliet",
+  "sequence": 9,
+  "act": 2,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "Capulet's orchard",
+  "line_count": 202,
+  "word_count": 1572,
+  "est_read_minutes": 8,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "ROMEO",
+      "text": "He jests at scars that never felt a wound. Juliet appears above at a window."
+    },
+    {
+      "number": 2,
+      "speaker": "ROMEO",
+      "text": "But, soft! what light through yonder window breaks?"
+    },
+    {
+      "number": 3,
+      "speaker": "ROMEO",
+      "text": "It is the east, and Juliet is the sun."
+    },
+    {
+      "number": 4,
+      "speaker": "ROMEO",
+      "text": "Arise, fair sun, and kill the envious moon,"
+    },
+    {
+      "number": 5,
+      "speaker": "ROMEO",
+      "text": "Who is already sick and pale with grief,"
+    },
+    {
+      "number": 6,
+      "speaker": "ROMEO",
+      "text": "That thou her maid art far more fair than she:"
+    },
+    {
+      "number": 7,
+      "speaker": "ROMEO",
+      "text": "Be not her maid, since she is envious;"
+    },
+    {
+      "number": 8,
+      "speaker": "ROMEO",
+      "text": "Her vestal livery is but sick and green"
+    },
+    {
+      "number": 9,
+      "speaker": "ROMEO",
+      "text": "And none but fools do wear it; cast it off."
+    },
+    {
+      "number": 10,
+      "speaker": "ROMEO",
+      "text": "It is my lady, O, it is my love!"
+    },
+    {
+      "number": 11,
+      "speaker": "ROMEO",
+      "text": "O, that she knew she were!"
+    },
+    {
+      "number": 12,
+      "speaker": "ROMEO",
+      "text": "She speaks, yet she says nothing: what of that?"
+    },
+    {
+      "number": 13,
+      "speaker": "ROMEO",
+      "text": "Her eye discourses; I will answer it."
+    },
+    {
+      "number": 14,
+      "speaker": "ROMEO",
+      "text": "I am too bold, ’tis not to me she speaks:"
+    },
+    {
+      "number": 15,
+      "speaker": "ROMEO",
+      "text": "Two of the fairest stars in all the heaven,"
+    },
+    {
+      "number": 16,
+      "speaker": "ROMEO",
+      "text": "Having some business, do entreat her eyes"
+    },
+    {
+      "number": 17,
+      "speaker": "ROMEO",
+      "text": "To twinkle in their spheres till they return."
+    },
+    {
+      "number": 18,
+      "speaker": "ROMEO",
+      "text": "What if her eyes were there, they in her head?"
+    },
+    {
+      "number": 19,
+      "speaker": "ROMEO",
+      "text": "The brightness of her cheek would shame those stars,"
+    },
+    {
+      "number": 20,
+      "speaker": "ROMEO",
+      "text": "As daylight doth a lamp; her eyes in heaven"
+    },
+    {
+      "number": 21,
+      "speaker": "ROMEO",
+      "text": "Would through the airy region stream so bright"
+    },
+    {
+      "number": 22,
+      "speaker": "ROMEO",
+      "text": "That birds would sing and think it were not night."
+    },
+    {
+      "number": 23,
+      "speaker": "ROMEO",
+      "text": "See, how she leans her cheek upon her hand!"
+    },
+    {
+      "number": 24,
+      "speaker": "ROMEO",
+      "text": "O, that I were a glove upon that hand,"
+    },
+    {
+      "number": 25,
+      "speaker": "ROMEO",
+      "text": "That I might touch that cheek!"
+    },
+    {
+      "number": 25,
+      "speaker": "JULIET",
+      "text": "Ay me!"
+    },
+    {
+      "number": 26,
+      "speaker": "ROMEO",
+      "text": "She speaks:"
+    },
+    {
+      "number": 27,
+      "speaker": "ROMEO",
+      "text": "O, speak again, bright angel! for thou art"
+    },
+    {
+      "number": 28,
+      "speaker": "ROMEO",
+      "text": "As glorious to this night, being o’er my head,"
+    },
+    {
+      "number": 29,
+      "speaker": "ROMEO",
+      "text": "As is a winged messenger of heaven"
+    },
+    {
+      "number": 30,
+      "speaker": "ROMEO",
+      "text": "Unto the white-upturned wondering eyes"
+    },
+    {
+      "number": 31,
+      "speaker": "ROMEO",
+      "text": "Of mortals that fall back to gaze on him"
+    },
+    {
+      "number": 32,
+      "speaker": "ROMEO",
+      "text": "When he bestrides the lazy-pacing clouds"
+    },
+    {
+      "number": 33,
+      "speaker": "ROMEO",
+      "text": "And sails upon the bosom of the air."
+    },
+    {
+      "number": 34,
+      "speaker": "JULIET",
+      "text": "O Romeo, Romeo! wherefore art thou Romeo?"
+    },
+    {
+      "number": 35,
+      "speaker": "JULIET",
+      "text": "Deny thy father and refuse thy name;"
+    },
+    {
+      "number": 36,
+      "speaker": "JULIET",
+      "text": "Or, if thou wilt not, be but sworn my love,"
+    },
+    {
+      "number": 37,
+      "speaker": "JULIET",
+      "text": "And I’ll no longer be a Capulet."
+    },
+    {
+      "number": 38,
+      "speaker": "ROMEO",
+      "text": "Shall I hear more, or shall I speak at this?"
+    },
+    {
+      "number": 39,
+      "speaker": "JULIET",
+      "text": "’Tis but thy name that is my enemy;"
+    },
+    {
+      "number": 40,
+      "speaker": "JULIET",
+      "text": "Thou art thyself, though not a Montague."
+    },
+    {
+      "number": 41,
+      "speaker": "JULIET",
+      "text": "What’s Montague? it is nor hand, nor foot,"
+    },
+    {
+      "number": 42,
+      "speaker": "JULIET",
+      "text": "Nor arm, nor face, nor any other part"
+    },
+    {
+      "number": 43,
+      "speaker": "JULIET",
+      "text": "Belonging to a man. O, be some other name!"
+    },
+    {
+      "number": 44,
+      "speaker": "JULIET",
+      "text": "What’s in a name? that which we call a rose"
+    },
+    {
+      "number": 45,
+      "speaker": "JULIET",
+      "text": "By any other name would smell as sweet;"
+    },
+    {
+      "number": 46,
+      "speaker": "JULIET",
+      "text": "So Romeo would, were he not Romeo call’d,"
+    },
+    {
+      "number": 47,
+      "speaker": "JULIET",
+      "text": "Retain that dear perfection which he owes"
+    },
+    {
+      "number": 48,
+      "speaker": "JULIET",
+      "text": "Without that title. Romeo, doff thy name,"
+    },
+    {
+      "number": 49,
+      "speaker": "JULIET",
+      "text": "And for that name which is no part of thee"
+    },
+    {
+      "number": 50,
+      "speaker": "JULIET",
+      "text": "Take all myself."
+    },
+    {
+      "number": 50,
+      "speaker": "ROMEO",
+      "text": "I take thee at thy word:"
+    },
+    {
+      "number": 51,
+      "speaker": "ROMEO",
+      "text": "Call me but love, and I’ll be new baptized;"
+    },
+    {
+      "number": 52,
+      "speaker": "ROMEO",
+      "text": "Henceforth I never will be Romeo."
+    },
+    {
+      "number": 53,
+      "speaker": "JULIET",
+      "text": "What man art thou that thus bescreen’d in night"
+    },
+    {
+      "number": 54,
+      "speaker": "JULIET",
+      "text": "So stumblest on my counsel?"
+    },
+    {
+      "number": 54,
+      "speaker": "ROMEO",
+      "text": "By a name"
+    },
+    {
+      "number": 55,
+      "speaker": "ROMEO",
+      "text": "I know not how to tell thee who I am:"
+    },
+    {
+      "number": 56,
+      "speaker": "ROMEO",
+      "text": "My name, dear saint, is hateful to myself,"
+    },
+    {
+      "number": 57,
+      "speaker": "ROMEO",
+      "text": "Because it is an enemy to thee;"
+    },
+    {
+      "number": 58,
+      "speaker": "ROMEO",
+      "text": "Had I it written, I would tear the word."
+    },
+    {
+      "number": 59,
+      "speaker": "JULIET",
+      "text": "My ears have not yet drunk a hundred words"
+    },
+    {
+      "number": 60,
+      "speaker": "JULIET",
+      "text": "Of that tongue’s utterance, yet I know the sound:"
+    },
+    {
+      "number": 61,
+      "speaker": "JULIET",
+      "text": "Art thou not Romeo and a Montague?"
+    },
+    {
+      "number": 62,
+      "speaker": "ROMEO",
+      "text": "Neither, fair saint, if either thee dislike."
+    },
+    {
+      "number": 63,
+      "speaker": "JULIET",
+      "text": "How camest thou hither, tell me, and wherefore?"
+    },
+    {
+      "number": 64,
+      "speaker": "JULIET",
+      "text": "The orchard walls are high and hard to climb,"
+    },
+    {
+      "number": 65,
+      "speaker": "JULIET",
+      "text": "And the place death, considering who thou art,"
+    },
+    {
+      "number": 66,
+      "speaker": "JULIET",
+      "text": "If any of my kinsmen find thee here."
+    },
+    {
+      "number": 67,
+      "speaker": "ROMEO",
+      "text": "With love’s light wings did I o’er-perch these walls;"
+    },
+    {
+      "number": 68,
+      "speaker": "ROMEO",
+      "text": "For stony limits cannot hold love out,"
+    },
+    {
+      "number": 69,
+      "speaker": "ROMEO",
+      "text": "And what love can do that dares love attempt;"
+    },
+    {
+      "number": 70,
+      "speaker": "ROMEO",
+      "text": "Therefore thy kinsmen are no let to me."
+    },
+    {
+      "number": 71,
+      "speaker": "JULIET",
+      "text": "If they do see thee, they will murder thee."
+    },
+    {
+      "number": 72,
+      "speaker": "ROMEO",
+      "text": "Alack, there lies more peril in thine eye"
+    },
+    {
+      "number": 73,
+      "speaker": "ROMEO",
+      "text": "Than twenty of their swords: look thou but sweet,"
+    },
+    {
+      "number": 74,
+      "speaker": "ROMEO",
+      "text": "And I am proof against their enmity."
+    },
+    {
+      "number": 75,
+      "speaker": "JULIET",
+      "text": "I would not for the world they saw thee here."
+    },
+    {
+      "number": 76,
+      "speaker": "ROMEO",
+      "text": "I have night’s cloak to hide me from their sight;"
+    },
+    {
+      "number": 77,
+      "speaker": "ROMEO",
+      "text": "And but thou love me, let them find me here:"
+    },
+    {
+      "number": 78,
+      "speaker": "ROMEO",
+      "text": "My life were better ended by their hate,"
+    },
+    {
+      "number": 79,
+      "speaker": "ROMEO",
+      "text": "Than death prorogued, wanting of thy love."
+    },
+    {
+      "number": 80,
+      "speaker": "JULIET",
+      "text": "By whose direction found’st thou out this place?"
+    },
+    {
+      "number": 81,
+      "speaker": "ROMEO",
+      "text": "By love, who first did prompt me to inquire;"
+    },
+    {
+      "number": 82,
+      "speaker": "ROMEO",
+      "text": "He lent me counsel and I lent him eyes."
+    },
+    {
+      "number": 83,
+      "speaker": "ROMEO",
+      "text": "I am no pilot; yet, wert thou as far"
+    },
+    {
+      "number": 84,
+      "speaker": "ROMEO",
+      "text": "As that vast shore wash’d with the farthest sea,"
+    },
+    {
+      "number": 85,
+      "speaker": "ROMEO",
+      "text": "I would adventure for such merchandise."
+    },
+    {
+      "number": 86,
+      "speaker": "JULIET",
+      "text": "Thou know’st the mask of night is on my face,"
+    },
+    {
+      "number": 87,
+      "speaker": "JULIET",
+      "text": "Else would a maiden blush bepaint my cheek"
+    },
+    {
+      "number": 88,
+      "speaker": "JULIET",
+      "text": "For that which thou hast heard me speak to-night."
+    },
+    {
+      "number": 89,
+      "speaker": "JULIET",
+      "text": "Fain would I dwell on form, fain, fain deny"
+    },
+    {
+      "number": 90,
+      "speaker": "JULIET",
+      "text": "What I have spoke: but farewell compliment!"
+    },
+    {
+      "number": 91,
+      "speaker": "JULIET",
+      "text": "Dost thou love me? I know thou wilt say “Ay,”"
+    },
+    {
+      "number": 92,
+      "speaker": "JULIET",
+      "text": "And I will take thy word: yet, if thou swear’st,"
+    },
+    {
+      "number": 93,
+      "speaker": "JULIET",
+      "text": "Thou mayst prove false; at lovers’ perjuries,"
+    },
+    {
+      "number": 94,
+      "speaker": "JULIET",
+      "text": "They say, Jove laughs. O gentle Romeo,"
+    },
+    {
+      "number": 95,
+      "speaker": "JULIET",
+      "text": "If thou dost love, pronounce it faithfully:"
+    },
+    {
+      "number": 96,
+      "speaker": "JULIET",
+      "text": "Or if thou think’st I am too quickly won,"
+    },
+    {
+      "number": 97,
+      "speaker": "JULIET",
+      "text": "I’ll frown and be perverse and say thee nay,"
+    },
+    {
+      "number": 98,
+      "speaker": "JULIET",
+      "text": "So thou wilt woo; but else, not for the world."
+    },
+    {
+      "number": 99,
+      "speaker": "JULIET",
+      "text": "In truth, fair Montague, I am too fond,"
+    },
+    {
+      "number": 100,
+      "speaker": "JULIET",
+      "text": "And therefore thou mayst think my ’havior light;"
+    },
+    {
+      "number": 101,
+      "speaker": "JULIET",
+      "text": "But trust me, gentleman, I’ll prove more true"
+    },
+    {
+      "number": 102,
+      "speaker": "JULIET",
+      "text": "Than those that have more cunning to be strange."
+    },
+    {
+      "number": 103,
+      "speaker": "JULIET",
+      "text": "I should have been more strange, I must confess,"
+    },
+    {
+      "number": 104,
+      "speaker": "JULIET",
+      "text": "But that thou overheard’st, ere I was ware,"
+    },
+    {
+      "number": 105,
+      "speaker": "JULIET",
+      "text": "My true love’s passion: therefore pardon me,"
+    },
+    {
+      "number": 106,
+      "speaker": "JULIET",
+      "text": "And not impute this yielding to light love,"
+    },
+    {
+      "number": 107,
+      "speaker": "JULIET",
+      "text": "Which the dark night hath so discovered."
+    },
+    {
+      "number": 108,
+      "speaker": "ROMEO",
+      "text": "Lady, by yonder blessed moon I swear"
+    },
+    {
+      "number": 109,
+      "speaker": "ROMEO",
+      "text": "That tips with silver all these fruit-tree tops—"
+    },
+    {
+      "number": 110,
+      "speaker": "JULIET",
+      "text": "O, swear not by the moon, the inconstant moon,"
+    },
+    {
+      "number": 111,
+      "speaker": "JULIET",
+      "text": "That monthly changes in her circled orb,"
+    },
+    {
+      "number": 112,
+      "speaker": "JULIET",
+      "text": "Lest that thy love prove likewise variable."
+    },
+    {
+      "number": 113,
+      "speaker": "ROMEO",
+      "text": "What shall I swear by?"
+    },
+    {
+      "number": 113,
+      "speaker": "JULIET",
+      "text": "Do not swear at all;"
+    },
+    {
+      "number": 114,
+      "speaker": "JULIET",
+      "text": "Or, if thou wilt, swear by thy gracious self,"
+    },
+    {
+      "number": 115,
+      "speaker": "JULIET",
+      "text": "Which is the god of my idolatry,"
+    },
+    {
+      "number": 116,
+      "speaker": "JULIET",
+      "text": "And I’ll believe thee."
+    },
+    {
+      "number": 116,
+      "speaker": "ROMEO",
+      "text": "If my heart’s dear love—"
+    },
+    {
+      "number": 117,
+      "speaker": "JULIET",
+      "text": "Well, do not swear: although I joy in thee,"
+    },
+    {
+      "number": 118,
+      "speaker": "JULIET",
+      "text": "I have no joy of this contract to-night:"
+    },
+    {
+      "number": 119,
+      "speaker": "JULIET",
+      "text": "It is too rash, too unadvised, too sudden;"
+    },
+    {
+      "number": 120,
+      "speaker": "JULIET",
+      "text": "Too like the lightning, which doth cease to be"
+    },
+    {
+      "number": 121,
+      "speaker": "JULIET",
+      "text": "Ere one can say “It lightens.” Sweet, good night!"
+    },
+    {
+      "number": 122,
+      "speaker": "JULIET",
+      "text": "This bud of love, by summer’s ripening breath,"
+    },
+    {
+      "number": 123,
+      "speaker": "JULIET",
+      "text": "May prove a beauteous flower when next we meet."
+    },
+    {
+      "number": 124,
+      "speaker": "JULIET",
+      "text": "Good night, good night! as sweet repose and rest"
+    },
+    {
+      "number": 125,
+      "speaker": "JULIET",
+      "text": "Come to thy heart as that within my breast!"
+    },
+    {
+      "number": 126,
+      "speaker": "ROMEO",
+      "text": "O, wilt thou leave me so unsatisfied?"
+    },
+    {
+      "number": 127,
+      "speaker": "JULIET",
+      "text": "What satisfaction canst thou have to-night?"
+    },
+    {
+      "number": 128,
+      "speaker": "ROMEO",
+      "text": "The exchange of thy love’s faithful vow for mine."
+    },
+    {
+      "number": 129,
+      "speaker": "JULIET",
+      "text": "I gave thee mine before thou didst request it:"
+    },
+    {
+      "number": 130,
+      "speaker": "JULIET",
+      "text": "And yet I would it were to give again."
+    },
+    {
+      "number": 131,
+      "speaker": "ROMEO",
+      "text": "Wouldst thou withdraw it? for what purpose, love?"
+    },
+    {
+      "number": 132,
+      "speaker": "JULIET",
+      "text": "But to be frank, and give it thee again."
+    },
+    {
+      "number": 133,
+      "speaker": "JULIET",
+      "text": "And yet I wish but for the thing I have:"
+    },
+    {
+      "number": 134,
+      "speaker": "JULIET",
+      "text": "My bounty is as boundless as the sea,"
+    },
+    {
+      "number": 135,
+      "speaker": "JULIET",
+      "text": "My love as deep; the more I give to thee,"
+    },
+    {
+      "number": 136,
+      "speaker": "JULIET",
+      "text": "The more I have, for both are infinite. Nurse calls within."
+    },
+    {
+      "number": 137,
+      "speaker": "JULIET",
+      "text": "I hear some noise within; dear love, adieu!"
+    },
+    {
+      "number": 138,
+      "speaker": "JULIET",
+      "text": "Anon, good nurse! Sweet Montague, be true."
+    },
+    {
+      "number": 139,
+      "speaker": "JULIET",
+      "text": "Stay but a little, I will come again."
+    },
+    {
+      "number": 140,
+      "speaker": "ROMEO",
+      "text": "O blessed, blessed night! I am afeard,"
+    },
+    {
+      "number": 141,
+      "speaker": "ROMEO",
+      "text": "Being in night, all this is but a dream,"
+    },
+    {
+      "number": 142,
+      "speaker": "ROMEO",
+      "text": "Too flattering-sweet to be substantial."
+    },
+    {
+      "number": 143,
+      "speaker": "JULIET",
+      "text": "Three words, dear Romeo, and good night indeed."
+    },
+    {
+      "number": 144,
+      "speaker": "JULIET",
+      "text": "If that thy bent of love be honourable,"
+    },
+    {
+      "number": 145,
+      "speaker": "JULIET",
+      "text": "Thy purpose marriage, send me word to-morrow,"
+    },
+    {
+      "number": 146,
+      "speaker": "JULIET",
+      "text": "By one that I’ll procure to come to thee,"
+    },
+    {
+      "number": 147,
+      "speaker": "JULIET",
+      "text": "Where and what time thou wilt perform the rite;"
+    },
+    {
+      "number": 148,
+      "speaker": "JULIET",
+      "text": "And all my fortunes at thy foot I’ll lay"
+    },
+    {
+      "number": 149,
+      "speaker": "JULIET",
+      "text": "And follow thee my lord throughout the world."
+    },
+    {
+      "number": 150,
+      "speaker": "NURSE",
+      "text": "Madam!"
+    },
+    {
+      "number": 151,
+      "speaker": "JULIET",
+      "text": "I come, anon.—But if thou mean’st not well,"
+    },
+    {
+      "number": 152,
+      "speaker": "JULIET",
+      "text": "I do beseech thee—"
+    },
+    {
+      "number": 152,
+      "speaker": "NURSE",
+      "text": "Madam!"
+    },
+    {
+      "number": 153,
+      "speaker": "JULIET",
+      "text": "By and by, I come:—"
+    },
+    {
+      "number": 154,
+      "speaker": "JULIET",
+      "text": "To cease thy suit, and leave me to my grief:"
+    },
+    {
+      "number": 155,
+      "speaker": "JULIET",
+      "text": "To-morrow will I send."
+    },
+    {
+      "number": 155,
+      "speaker": "ROMEO",
+      "text": "So thrive my soul—"
+    },
+    {
+      "number": 156,
+      "speaker": "JULIET",
+      "text": "A thousand times good night!"
+    },
+    {
+      "number": 157,
+      "speaker": "ROMEO",
+      "text": "A thousand times the worse, to want thy light."
+    },
+    {
+      "number": 158,
+      "speaker": "ROMEO",
+      "text": "Love goes toward love, as schoolboys from their books,"
+    },
+    {
+      "number": 159,
+      "speaker": "ROMEO",
+      "text": "But love from love, toward school with heavy looks. Retiring."
+    },
+    {
+      "number": 160,
+      "speaker": "JULIET",
+      "text": "Hist! Romeo, hist! O, for a falconer’s voice,"
+    },
+    {
+      "number": 161,
+      "speaker": "JULIET",
+      "text": "To lure this tassel-gentle back again!"
+    },
+    {
+      "number": 162,
+      "speaker": "JULIET",
+      "text": "Bondage is hoarse, and may not speak aloud;"
+    },
+    {
+      "number": 163,
+      "speaker": "JULIET",
+      "text": "Else would I tear the cave where Echo lies,"
+    },
+    {
+      "number": 164,
+      "speaker": "JULIET",
+      "text": "And make her airy tongue more hoarse than mine,"
+    },
+    {
+      "number": 165,
+      "speaker": "JULIET",
+      "text": "With repetition of my Romeo’s name."
+    },
+    {
+      "number": 166,
+      "speaker": "ROMEO",
+      "text": "It is my soul that calls upon my name:"
+    },
+    {
+      "number": 167,
+      "speaker": "ROMEO",
+      "text": "How silver-sweet sound lovers’ tongues by night,"
+    },
+    {
+      "number": 168,
+      "speaker": "ROMEO",
+      "text": "Like softest music to attending ears!"
+    },
+    {
+      "number": 168,
+      "speaker": "JULIET",
+      "text": "Romeo!"
+    },
+    {
+      "number": 169,
+      "speaker": "ROMEO",
+      "text": "My dear?"
+    },
+    {
+      "number": 169,
+      "speaker": "JULIET",
+      "text": "At what o’clock to-morrow"
+    },
+    {
+      "number": 170,
+      "speaker": "JULIET",
+      "text": "Shall I send to thee?"
+    },
+    {
+      "number": 170,
+      "speaker": "ROMEO",
+      "text": "At the hour of nine."
+    },
+    {
+      "number": 171,
+      "speaker": "JULIET",
+      "text": "I will not fail: ’tis twenty years till then."
+    },
+    {
+      "number": 172,
+      "speaker": "JULIET",
+      "text": "I have forgot why I did call thee back."
+    },
+    {
+      "number": 173,
+      "speaker": "ROMEO",
+      "text": "Let me stand here till thou remember it."
+    },
+    {
+      "number": 174,
+      "speaker": "JULIET",
+      "text": "I shall forget, to have thee still stand there,"
+    },
+    {
+      "number": 175,
+      "speaker": "JULIET",
+      "text": "Remembering how I love thy company."
+    },
+    {
+      "number": 176,
+      "speaker": "ROMEO",
+      "text": "And I’ll still stay, to have thee still forget,"
+    },
+    {
+      "number": 177,
+      "speaker": "ROMEO",
+      "text": "Forgetting any other home but this."
+    },
+    {
+      "number": 178,
+      "speaker": "JULIET",
+      "text": "’Tis almost morning; I would have thee gone:"
+    },
+    {
+      "number": 179,
+      "speaker": "JULIET",
+      "text": "And yet no further than a wanton’s bird;"
+    },
+    {
+      "number": 180,
+      "speaker": "JULIET",
+      "text": "Who lets it hop a little from her hand,"
+    },
+    {
+      "number": 181,
+      "speaker": "JULIET",
+      "text": "Like a poor prisoner in his twisted gyves,"
+    },
+    {
+      "number": 182,
+      "speaker": "JULIET",
+      "text": "And with a silk thread plucks it back again,"
+    },
+    {
+      "number": 183,
+      "speaker": "JULIET",
+      "text": "So loving-jealous of his liberty."
+    },
+    {
+      "number": 183,
+      "speaker": "ROMEO",
+      "text": "I would I were thy bird."
+    },
+    {
+      "number": 184,
+      "speaker": "JULIET",
+      "text": "Sweet, so would I:"
+    },
+    {
+      "number": 185,
+      "speaker": "JULIET",
+      "text": "Yet I should kill thee with much cherishing."
+    },
+    {
+      "number": 186,
+      "speaker": "JULIET",
+      "text": "Good night, good night! parting is such sweet sorrow,"
+    },
+    {
+      "number": 187,
+      "speaker": "JULIET",
+      "text": "That I shall say good night till it be morrow."
+    },
+    {
+      "number": 188,
+      "speaker": "ROMEO",
+      "text": "Sleep dwell upon thine eyes, peace in thy breast!"
+    },
+    {
+      "number": 189,
+      "speaker": "ROMEO",
+      "text": "Would I were sleep and peace, so sweet to rest!"
+    },
+    {
+      "number": 190,
+      "speaker": "ROMEO",
+      "text": "Hence will I to my ghostly father’s cell,"
+    },
+    {
+      "number": 191,
+      "speaker": "ROMEO",
+      "text": "His help to crave, and my dear hap to tell."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Romeo."
+    },
+    {
+      "after_line": 38,
+      "text": "Aside."
+    },
+    {
+      "after_line": 139,
+      "text": "Exit, above."
+    },
+    {
+      "after_line": 142,
+      "text": "Reenter Juliet, above."
+    },
+    {
+      "after_line": 150,
+      "text": "Within."
+    },
+    {
+      "after_line": 152,
+      "text": "Within."
+    },
+    {
+      "after_line": 156,
+      "text": "Exit, above."
+    },
+    {
+      "after_line": 159,
+      "text": "Reenter Juliet, above."
+    },
+    {
+      "after_line": 187,
+      "text": "Exit above."
+    },
+    {
+      "after_line": 191,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss1",
+      "line": 1,
+      "phrase": "He jests at scars that never felt a wound",
+      "definition": "Mercutio mocks wounds because he has never truly loved — proverb-like dismissal"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss2",
+      "line": 2,
+      "phrase": "But, soft!",
+      "definition": "but wait; hush"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss3",
+      "line": 4,
+      "phrase": "envious moon",
+      "definition": "jealous moon — the moon is personified as Juliet's romantic rival"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss4",
+      "line": 6,
+      "phrase": "her maid",
+      "definition": "Juliet as a vestal virgin attendant of Diana (the moon)"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss5",
+      "line": 8,
+      "phrase": "vestal livery",
+      "definition": "virgin's uniform — the green-white of Diana's priestesses"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss6",
+      "line": 8,
+      "phrase": "sick and green",
+      "definition": "the pale-green color of chlorosis, the 'green-sickness' of lovesick virgins"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss7",
+      "line": 10,
+      "phrase": "my lady",
+      "definition": "his beloved — courtly-love address"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss8",
+      "line": 13,
+      "phrase": "Her eye discourses",
+      "definition": "her eye speaks"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss9",
+      "line": 17,
+      "phrase": "twinkle in their spheres",
+      "definition": "revolve in their celestial orbits — Ptolemaic cosmology"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss10",
+      "line": 19,
+      "phrase": "shame those stars",
+      "definition": "outshine the stars"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss11",
+      "line": 21,
+      "phrase": "airy region",
+      "definition": "the upper atmosphere"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss12",
+      "line": 25,
+      "phrase": "Ay me!",
+      "definition": "Juliet's sigh — the 'ay me' Mercutio mocked is now really spoken"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss13",
+      "line": 27,
+      "phrase": "bright angel",
+      "definition": "Romeo addresses Juliet as a celestial being"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss14",
+      "line": 29,
+      "phrase": "winged messenger of heaven",
+      "definition": "an angel; a divine herald"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss15",
+      "line": 32,
+      "phrase": "bestrides the lazy-pacing clouds",
+      "definition": "rides astride the slow-moving clouds"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss16",
+      "line": 34,
+      "phrase": "wherefore art thou Romeo?",
+      "definition": "WHY are you named Romeo (not 'where are you'); the single most misread line in Shakespeare — 'wherefore' means 'why,' NEVER 'where'"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss17",
+      "line": 34,
+      "phrase": "wherefore",
+      "definition": "WHY; for what reason — NOT 'where.' Juliet is asking why Romeo has to be a Montague, not asking where he is"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss18",
+      "line": 35,
+      "phrase": "Deny thy father and refuse thy name",
+      "definition": "disown your family; reject your surname"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss19",
+      "line": 37,
+      "phrase": "no longer be a Capulet",
+      "definition": "she'd give up her name for his"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss20",
+      "line": 39,
+      "phrase": "name that is my enemy",
+      "definition": "it's only his name, 'Montague,' that is her enemy — not him"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss21",
+      "line": 44,
+      "phrase": "What’s in a name?",
+      "definition": "what does a name matter? — the play's most famous rhetorical question on language and essence"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss22",
+      "line": 45,
+      "phrase": "By any other name would smell as sweet",
+      "definition": "a rose's essence is independent of its label — Juliet's philosophical claim"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss23",
+      "line": 48,
+      "phrase": "doff",
+      "definition": "take off; lay aside"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss24",
+      "line": 53,
+      "phrase": "bescreen’d",
+      "definition": "hidden; screened"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss25",
+      "line": 54,
+      "phrase": "counsel",
+      "definition": "private thoughts"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss26",
+      "line": 62,
+      "phrase": "Neither, fair saint",
+      "definition": "Romeo resumes the pilgrim/saint language of 1.5"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss27",
+      "line": 67,
+      "phrase": "o’er-perch",
+      "definition": "fly over; leap across"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss28",
+      "line": 68,
+      "phrase": "stony limits",
+      "definition": "the garden walls of stone"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss29",
+      "line": 74,
+      "phrase": "proof against their enmity",
+      "definition": "invulnerable to their hostility — love as armor"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss30",
+      "line": 89,
+      "phrase": "Fain would I dwell on form",
+      "definition": "I would willingly maintain propriety — Juliet on why she can't play the coy beloved now"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss31",
+      "line": 90,
+      "phrase": "compliment",
+      "definition": "courtly etiquette"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss32",
+      "line": 93,
+      "phrase": "perjuries",
+      "definition": "sworn lies"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss33",
+      "line": 94,
+      "phrase": "laughs",
+      "definition": "takes lightly"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss34",
+      "line": 95,
+      "phrase": "pronounce it faithfully",
+      "definition": "swear your love sincerely"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss35",
+      "line": 106,
+      "phrase": "light love",
+      "definition": "wanton; promiscuous affection — Juliet disclaims frivolity"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss36",
+      "line": 108,
+      "phrase": "blessed moon",
+      "definition": "Romeo's proposed witness — Juliet rejects swearing by the moon"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss37",
+      "line": 110,
+      "phrase": "inconstant moon",
+      "definition": "the moon is changeable (waxing/waning) — a bad oath-object"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss38",
+      "line": 115,
+      "phrase": "idolatry",
+      "definition": "the worship of false gods — Juliet's half-joking caveat"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss39",
+      "line": 118,
+      "phrase": "contract",
+      "definition": "betrothal; formal exchange of promises"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss40",
+      "line": 119,
+      "phrase": "unadvised",
+      "definition": "rash; without deliberation"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss41",
+      "line": 120,
+      "phrase": "Too like the lightning",
+      "definition": "too sudden, too brief — Juliet's most self-aware warning"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss42",
+      "line": 134,
+      "phrase": "bounty",
+      "definition": "generosity; abundance"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss43",
+      "line": 134,
+      "phrase": "My bounty is as boundless as the sea",
+      "definition": "Juliet's love transcends limit — one of the play's loveliest lines"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss44",
+      "line": 160,
+      "phrase": "hist",
+      "definition": "a soft call to attention; 'hey'"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss45",
+      "line": 160,
+      "phrase": "falconer’s voice",
+      "definition": "she wishes for a hunter's call that trains hawks to return"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss46",
+      "line": 161,
+      "phrase": "tassel-gentle",
+      "definition": "male peregrine falcon — a noble bird, here Romeo"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss47",
+      "line": 163,
+      "phrase": "Echo",
+      "definition": "the nymph who pined away for Narcissus, leaving only her voice"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss48",
+      "line": 169,
+      "phrase": "My dear?",
+      "definition": "Juliet's recognition of Romeo's voice in the orchard dark"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss49",
+      "line": 170,
+      "phrase": "hour of nine",
+      "definition": "Juliet sets the Nurse's appointment — the fateful next-morning meeting"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss50",
+      "line": 174,
+      "phrase": "forget",
+      "definition": "a lovers' game of pretending forgetfulness to prolong parting"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss51",
+      "line": 179,
+      "phrase": "a wanton’s bird",
+      "definition": "a pet bird held by a careless girl who won't let it fly"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss52",
+      "line": 181,
+      "phrase": "gyves",
+      "definition": "fetters; leg-chains"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss53",
+      "line": 191,
+      "phrase": "dear hap",
+      "definition": "good fortune"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss54",
+      "line": 186,
+      "phrase": "Parting is such sweet sorrow",
+      "definition": "the oxymoron — Juliet's paradoxical farewell, one of the most quoted lines"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss55",
+      "line": 190,
+      "phrase": "hence",
+      "definition": "from here; away"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss56",
+      "line": 190,
+      "phrase": "ghostly",
+      "definition": "spiritual — pertaining to the soul"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss57",
+      "line": 190,
+      "phrase": "ghostly father’s cell",
+      "definition": "Friar Laurence's chamber — 'ghostly' meant 'spiritual,' not ghost-like"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_gloss58",
+      "line": 191,
+      "phrase": "dear hap",
+      "definition": "fortunate event"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act2_scene2_ann1",
+      "line_start": 2,
+      "line_end": 22,
+      "citation_display": "Romeo and Juliet 2.2.2–22",
+      "category": "close_reading",
+      "title": "'What light through yonder window breaks?' — Juliet as the sun",
+      "body": "Romeo's opening speech in the orchard transforms Juliet into a cosmic event: she is the sun rising in the east, brighter than stars, outshining day. The imagery is Petrarchan in its extravagance but new in its direction — Rosaline was cataloged; Juliet is made weather, is made sky. Notice the envious moon: for Romeo, the moon is Diana (chastity, the virgin goddess), and Juliet is the sun who will eclipse her. Urging Juliet to 'arise' and 'kill the envious moon' is urging her to abandon her virginity — the whole speech is erotic argument disguised as cosmology. This is Romeo's first speech in the new voice: the Rosaline-Petrarchism of 1.1 has been replaced with a vocabulary that is hotter, more physical, more solar.",
+      "sources": [
+        "Caroline Spurgeon, Shakespeare's Imagery (1935)",
+        "Jill L. Levenson, The Oxford Shakespeare: Romeo and Juliet (2000)"
+      ]
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_ann2",
+      "line_start": 33,
+      "line_end": 49,
+      "citation_display": "Romeo and Juliet 2.2.33–49",
+      "category": "linguistic",
+      "title": "'Wherefore art thou Romeo?' — why, not where",
+      "body": "The single most misread line in all of Shakespeare. Juliet is not asking where Romeo is hiding; he is not yet visible to her, but she isn't calling out to locate him. 'Wherefore' in Shakespeare's English means 'why' (from Old English 'hwær-for,' 'for what cause'). Juliet is asking the cosmos a question: why do you have to be a Montague? Her next lines make the point explicit: 'Deny thy father and refuse thy name.' The whole speech pivots on the arbitrariness of names versus the substance of being — 'What's in a name? that which we call a rose / By any other name would smell as sweet.' This is the play's linguistic-philosophical climax: Juliet proposes that identity is separable from its label, that Romeo is 'himself' though he is not 'a Montague.' The tragedy will prove that the world does not agree.",
+      "sources": [
+        "Stephen Orgel, The Authentic Shakespeare (2002)",
+        "Frank Kermode, Shakespeare's Language (2000)"
+      ]
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_ann3",
+      "line_start": 112,
+      "line_end": 127,
+      "citation_display": "Romeo and Juliet 2.2.112–127",
+      "category": "thematic",
+      "title": "Juliet on the contract — the play's most self-aware voice",
+      "body": "In the middle of the balcony-scene's ecstasy, Juliet stops to name the danger: 'I have no joy of this contract to-night: / It is too rash, too unadvised, too sudden; / Too like the lightning, which doth cease to be / Ere one can say it lightens.' These are astonishing lines for the play's thirteen-year-old heroine to speak — a self-critique of her own love as it happens. The three-adjective compression ('too rash, too unadvised, too sudden') resembles the Friar's later 'these violent delights have violent ends.' Juliet, like the Friar, sees the tragedy's shape; unlike him, she proceeds anyway, but with open eyes. The scene earns its sweetness because it has bought it by acknowledging its cost.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)",
+        "Jill L. Levenson, The Oxford Shakespeare: Romeo and Juliet (2000)"
+      ]
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_ann4",
+      "line_start": 183,
+      "line_end": 185,
+      "citation_display": "Romeo and Juliet 2.2.183–185",
+      "category": "close_reading",
+      "title": "'Parting is such sweet sorrow' — the closing oxymoron",
+      "body": "Juliet's farewell to Romeo condenses the whole play into five words: parting is sweet sorrow. The oxymoron recalls Romeo's Petrarchan cold-fire in 1.1 ('feather of lead, bright smoke, cold fire, sick health') — but there, the paradoxes were stacked for performance. Here, the paradox is earned. Parting is sweet because the prospect of meeting again is sweeter; parting is sorrow because the meeting is uncertain. Juliet has learned to handle the same rhetorical figure Romeo flaunted, but with a difference: her oxymoron describes what she actually feels. This is also the scene's formal lesson — love discovers its own language, different from the clichés it inherits.",
+      "sources": [
+        "Stephen Booth, Shakespeare's Sonnets (1977)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act2_scene2_q1",
+      "kind": "close_reading",
+      "prompt": "In 'O Romeo, Romeo! wherefore art thou Romeo?' — what does 'wherefore' mean?",
+      "options": [
+        "Where are you hiding",
+        "WHY are you named Romeo — i.e., why must you be a Montague (NOT 'where are you')",
+        "In what manner are you acting",
+        "Since when are you Romeo"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 34,
+      "anchor_line_end": 34
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_q2",
+      "kind": "theme",
+      "prompt": "What philosophical claim does Juliet make in 'What's in a name? that which we call a rose / By any other name would smell as sweet'?",
+      "options": [
+        "Names are deeply tied to identity",
+        "A thing's essence is separable from its label — identity is not fixed by the name society assigns",
+        "Roses are the only true flowers",
+        "Latin names are more reliable than English"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 44,
+      "anchor_line_end": 49
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_q3",
+      "kind": "close_reading",
+      "prompt": "What controlling image shapes Romeo's opening speech in the orchard?",
+      "options": [
+        "Juliet as a flower",
+        "Juliet as the sun rising in the east, outshining the envious moon",
+        "Juliet as a ship in a storm",
+        "Juliet as a caged bird"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 2,
+      "anchor_line_end": 22
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_q4",
+      "kind": "inference",
+      "prompt": "Juliet says the contract is 'too rash, too unadvised, too sudden.' What does this tell us about her?",
+      "options": [
+        "She is rejecting Romeo",
+        "She is the play's most self-aware voice — she sees the danger of her own love and proceeds with open eyes",
+        "She has been coached by Friar Laurence",
+        "She is nervous about her father"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 118,
+      "anchor_line_end": 122
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_q5",
+      "kind": "close_reading",
+      "prompt": "'Parting is such sweet sorrow' is an example of —",
+      "options": [
+        "Metonymy",
+        "Oxymoron (two contradictory terms yoked together)",
+        "Anaphora",
+        "Synecdoche"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 185,
+      "anchor_line_end": 185
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene2_q6",
+      "kind": "comprehension",
+      "prompt": "Why does Juliet refuse Romeo's oath 'by the moon'?",
+      "options": [
+        "She thinks Romeo is joking",
+        "The moon is inconstant — it waxes and wanes — and would make an unreliable witness",
+        "Swearing by the moon is blasphemous",
+        "She cannot see the moon from the balcony"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 107,
+      "anchor_line_end": 111
+    }
+  ]
+}

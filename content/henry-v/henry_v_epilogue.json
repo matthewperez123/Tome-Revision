@@ -1,0 +1,291 @@
+{
+  "section_id": "henry_v_epilogue",
+  "work_id": "henry-v",
+  "sequence": 29,
+  "act": null,
+  "scene": null,
+  "kind": "chorus",
+  "scene_title": "Epilogue",
+  "line_count": 14,
+  "word_count": 112,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CHORUS",
+      "text": "Thus far, with rough and all-unable pen,"
+    },
+    {
+      "number": 2,
+      "speaker": "CHORUS",
+      "text": "Our bending author hath pursued the story,"
+    },
+    {
+      "number": 3,
+      "speaker": "CHORUS",
+      "text": "In little room confining mighty men,"
+    },
+    {
+      "number": 4,
+      "speaker": "CHORUS",
+      "text": "Mangling by starts the full course of their glory."
+    },
+    {
+      "number": 5,
+      "speaker": "CHORUS",
+      "text": "Small time, but in that small most greatly lived"
+    },
+    {
+      "number": 6,
+      "speaker": "CHORUS",
+      "text": "This star of England: Fortune made his sword;"
+    },
+    {
+      "number": 7,
+      "speaker": "CHORUS",
+      "text": "By which the world’s best garden he achieved,"
+    },
+    {
+      "number": 8,
+      "speaker": "CHORUS",
+      "text": "And of it left his son imperial lord."
+    },
+    {
+      "number": 9,
+      "speaker": "CHORUS",
+      "text": "Henry the Sixth, in infant bands crown’d King"
+    },
+    {
+      "number": 10,
+      "speaker": "CHORUS",
+      "text": "Of France and England, did this king succeed;"
+    },
+    {
+      "number": 11,
+      "speaker": "CHORUS",
+      "text": "Whose state so many had the managing,"
+    },
+    {
+      "number": 12,
+      "speaker": "CHORUS",
+      "text": "That they lost France and made his England bleed:"
+    },
+    {
+      "number": 13,
+      "speaker": "CHORUS",
+      "text": "Which oft our stage hath shown; and, for their sake,"
+    },
+    {
+      "number": 14,
+      "speaker": "CHORUS",
+      "text": "In your fair minds let this acceptance take."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Chorus."
+    },
+    {
+      "after_line": 0,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_epilogue_gloss1",
+      "line": 1,
+      "phrase": "rough and all-unable pen",
+      "definition": "clumsy and inadequate pen — the author's conventional modesty"
+    },
+    {
+      "id": "henry_v_epilogue_gloss2",
+      "line": 2,
+      "phrase": "bending author",
+      "definition": "the stooping author — 'bending' = bowing under the weight of his subject"
+    },
+    {
+      "id": "henry_v_epilogue_gloss3",
+      "line": 3,
+      "phrase": "In little room confining mighty men",
+      "definition": "cramping great men into a small space — the theatre's physical constraint echoed from the Prologue"
+    },
+    {
+      "id": "henry_v_epilogue_gloss4",
+      "line": 4,
+      "phrase": "Mangling by starts",
+      "definition": "hacking apart in fits and starts — the play's abridgement acknowledged"
+    },
+    {
+      "id": "henry_v_epilogue_gloss5",
+      "line": 5,
+      "phrase": "Small time, but in that small most greatly lived",
+      "definition": "a short life, but within it lived most greatly — Henry V died at 35, nine years after Agincourt"
+    },
+    {
+      "id": "henry_v_epilogue_gloss6",
+      "line": 6,
+      "phrase": "star of England",
+      "definition": "Henry as England's brightest star"
+    },
+    {
+      "id": "henry_v_epilogue_gloss7",
+      "line": 6,
+      "phrase": "Fortune made his sword",
+      "definition": "Fortune smithed his sword — his victories attributed to luck as much as virtue"
+    },
+    {
+      "id": "henry_v_epilogue_gloss8",
+      "line": 7,
+      "phrase": "world’s best garden",
+      "definition": "France — the same phrase Burgundy used in 5.2; here edged with irony"
+    },
+    {
+      "id": "henry_v_epilogue_gloss9",
+      "line": 8,
+      "phrase": "son imperial lord",
+      "definition": "his son Henry VI — infant heir to both thrones"
+    },
+    {
+      "id": "henry_v_epilogue_gloss10",
+      "line": 9,
+      "phrase": "Henry the Sixth",
+      "definition": "Henry V's son, born December 1421; crowned King of England as an infant in 1422, and (claimed) King of France as a child in 1431"
+    },
+    {
+      "id": "henry_v_epilogue_gloss11",
+      "line": 9,
+      "phrase": "infant bands",
+      "definition": "swaddling-bands — Henry VI was nine months old when he inherited"
+    },
+    {
+      "id": "henry_v_epilogue_gloss12",
+      "line": 11,
+      "phrase": "Whose state so many had the managing",
+      "definition": "so many regents and councils governed his state — the turmoil of the protectorate"
+    },
+    {
+      "id": "henry_v_epilogue_gloss13",
+      "line": 12,
+      "phrase": "lost France and made his England bleed",
+      "definition": "under Henry VI, England lost all its French territories (by 1453) and was consumed by the Wars of the Roses (1455–1485)"
+    },
+    {
+      "id": "henry_v_epilogue_gloss14",
+      "line": 13,
+      "phrase": "Which oft our stage hath shown",
+      "definition": "Shakespeare's own Henry VI Parts 1–3 and Richard III, written earlier — the Epilogue cross-references the earlier tetralogy"
+    },
+    {
+      "id": "henry_v_epilogue_gloss15",
+      "line": 14,
+      "phrase": "In your fair minds let this acceptance take",
+      "definition": "accept this in your kind imagination — the final petition, echoing the Prologue's opening plea"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_epilogue_ann1",
+      "line_start": 1,
+      "line_end": 14,
+      "citation_display": "Henry V Epilogue.1–14",
+      "category": "structural",
+      "title": "The Epilogue is a sonnet — the play's final formal choice",
+      "body": "The Epilogue is a complete English sonnet: three quatrains rhymed ABAB CDCD EFEF and a closing couplet GG. Shakespeare has chosen the sonnet form for his most loaded exit in the whole play. The form matters because a sonnet is a closed, resolved, satisfying poetic unit — it arrives at a couplet that ties it off. By using this form, the Epilogue claims the authority of aesthetic completion. But the content of the sonnet is the opposite of aesthetic completion: it announces that everything Henry built will be unmade within a generation. The formal closure and the historical dis-closure pull against each other. The result is that the play ends with a structure that says 'finished' and a content that says 'collapsed.' Readers should hear both at once. The choice of sonnet form also recalls the opening Chorus's epic-invocation (lines 1–8) and the Prologue/Epilogue symmetry that frames the whole play: it begins with an aspiration to epic and ends with a sonnet naming dynastic failure. The arc from 'O for a Muse of fire' to 'made his England bleed' is deliberately undone.",
+      "sources": [
+        "Frank Kermode, Shakespeare's Language (2000)",
+        "Helen Vendler, The Art of Shakespeare's Sonnets (1997)"
+      ]
+    },
+    {
+      "id": "henry_v_epilogue_ann2",
+      "line_start": 5,
+      "line_end": 12,
+      "citation_display": "Henry V Epilogue.5–12",
+      "category": "historical",
+      "title": "The future-tense undoing — Henry VI and the loss of France",
+      "body": "The sonnet's eight middle lines describe what happens after the play ends. 'Small time' — Henry V died in 1422, aged 35, nine years after Agincourt. 'Fortune made his sword' — his victories are retrospectively attributed to luck (a less flattering gloss than the play has previously offered). 'The world's best garden he achieved' — echoes Burgundy's image from 5.2, now tinged with bitter irony. 'And of it left his son imperial lord. / Henry the Sixth, in infant bands crown'd King / Of France and England, did this king succeed' — the baby Henry VI inherited both crowns at nine months old. 'Whose state so many had the managing' — refers to the factional regency, with multiple protectors jockeying for power. 'That they lost France and made his England bleed' — the loss of France (complete by 1453) and the Wars of the Roses (1455–1485) that followed. The Epilogue compresses thirty years of civil-war collapse into two lines. The play's triumph is systematically undone.",
+      "sources": [
+        "Peter Saccio, Shakespeare's English Kings (2nd ed., 2000)",
+        "Anne Curry, The Hundred Years War (2nd ed., 2003)",
+        "Bertrand Wolffe, Henry VI (1981)"
+      ]
+    },
+    {
+      "id": "henry_v_epilogue_ann3",
+      "line_start": 13,
+      "line_end": 14,
+      "citation_display": "Henry V Epilogue.13–14",
+      "category": "biographical",
+      "title": "'Which oft our stage hath shown' — Shakespeare cross-referencing himself",
+      "body": "The Epilogue's penultimate line — 'Which oft our stage hath shown' — is a direct reference to Shakespeare's own earlier work. The Henry VI plays (Parts 1, 2, and 3) and Richard III were written in the early 1590s, years before Henry V (1599). Shakespeare had, in other words, already dramatized everything the Epilogue says will happen. The first tetralogy (Henry VI 1–3 and Richard III) showed the Wars of the Roses in considerable detail; the second tetralogy (Richard II, Henry IV 1–2, Henry V) now ends by pointing at the first. The chronological arc of the composition was reverse of the historical arc: Shakespeare had already written the later history, and Henry V is thus the prequel to a story whose ending he and his audience already knew. This is not an incidental detail. The Epilogue is effectively telling the audience: you know how this ends; you've seen it; accept the play's triumph knowing what follows. It is the play's final, quiet admission that the Agincourt victory it has just celebrated was historically followed by catastrophe — and that the playwright's own earlier work testifies to that catastrophe.",
+      "sources": [
+        "Gary Taylor (ed.), The Oxford Shakespeare: Henry V (1982), introduction",
+        "Jean E. Howard & Phyllis Rackin, Engendering a Nation (1997)",
+        "Norman Rabkin, 'Either/Or' (1981)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_epilogue_q1",
+      "kind": "structural",
+      "prompt": "What verse form is the Epilogue?",
+      "options": [
+        "Free verse",
+        "An English sonnet (three quatrains plus a couplet) — the form's closure pulls against the sonnet's content, which is the collapse of Henry's achievement",
+        "A ballad stanza",
+        "Heroic couplets"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 14
+    },
+    {
+      "id": "henry_v_epilogue_q2",
+      "kind": "historical",
+      "prompt": "What historical future does the Epilogue announce?",
+      "options": [
+        "Henry V's long and successful reign",
+        "Henry V's early death; the succession of his infant son Henry VI to both crowns; the factional regency; the loss of France; the Wars of the Roses that 'made his England bleed'",
+        "A crusade to reconquer Jerusalem",
+        "A peaceful transition to the Tudor dynasty"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 5,
+      "anchor_line_end": 12
+    },
+    {
+      "id": "henry_v_epilogue_q3",
+      "kind": "theme",
+      "prompt": "Why does the Epilogue mention 'Which oft our stage hath shown' (line 13)?",
+      "options": [
+        "As a general allusion to Elizabethan theatre",
+        "As a direct cross-reference to Shakespeare's own Henry VI plays (1–3) and Richard III — written years earlier. Henry V is thus the prequel to a catastrophe the audience has already seen dramatized",
+        "To advertise a forthcoming play",
+        "As a line added by a later editor"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 35,
+      "anchor_line_start": 13,
+      "anchor_line_end": 13
+    },
+    {
+      "id": "henry_v_epilogue_q4",
+      "kind": "inference",
+      "prompt": "What is the effect of ending the play this way?",
+      "options": [
+        "Pure triumphalism — the Epilogue celebrates Henry's victory",
+        "A deliberate undoing: the sonnet's formal closure frames content that says everything Henry built collapsed within a generation. The patriotic reading cannot be cleanly sustained against the Epilogue's future-tense dis-closure",
+        "An uplifting glimpse of the Tudor future",
+        "A factual error by Shakespeare"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 35,
+      "anchor_line_start": 5,
+      "anchor_line_end": 14
+    }
+  ]
+}

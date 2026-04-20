@@ -1,0 +1,45 @@
+{
+  "section_id": "hamlet_act5_scene2",
+  "annotations": [
+    {
+      "line_start": 4,
+      "line_end": 70,
+      "category": "thematic",
+      "title": "Providence and the altered commission",
+      "body": "Hamlet's narrative of the voyage — 'Rashly, / And praised be rashness for it' — articulates the play's only positive theology. 'There's a divinity that shapes our ends, / Rough-hew them how we will' is a claim the earlier Hamlet could not have made. The man who spent three acts immobilized by questions of action now ascribes the sealed commission's discovery to providence rather than to his own cleverness. The theological turn is easy to sentimentalize; Rhodri Lewis has argued that the play's providence-talk is not consolation but the calm that comes with surrendering agency. Hamlet is not saved; he is spared long enough to complete the revenge that will destroy him. The speech's peace is the peace of a man who has stopped trying to master his fate.",
+      "sources": ["Rhodri Lewis, Hamlet and the Vision of Darkness (2017)", "Stanley Cavell, Disowning Knowledge (1987)"]
+    },
+    {
+      "line_start": 197,
+      "line_end": 215,
+      "category": "thematic",
+      "title": "'The readiness is all'",
+      "body": "Hamlet's response to Horatio's warning about the duel — 'We defy augury. There's a special providence in the fall of a sparrow... The readiness is all' — echoes Matthew 10:29 ('one sparrow shall not fall on the ground without your Father') and Edgar's 'ripeness is all' in King Lear. What the prince arrives at, after five acts of deliberation, is not a philosophy of action but a philosophy of availability. One cannot control when one is called; one can only be ready when called. The speech is Hamlet's final utterance before the catastrophe, and its stoic-Christian fusion is where the play's religious and philosophical traditions quiet into a single voice.",
+      "sources": ["A. D. Nuttall, Shakespeare the Thinker (2007)"]
+    },
+    {
+      "line_start": 315,
+      "line_end": 360,
+      "category": "structural",
+      "title": "The choreography of death",
+      "body": "The final fencing match is a tragic mechanism: one instrument of death, two accidental redirections, four bodies. Laertes is wounded with the poisoned foil he meant for Hamlet; Gertrude drinks from the cup intended for Hamlet; Hamlet, learning the truth, poisons Claudius with his own potion. Each death is an inversion of the killer's intent. Shakespeare's revenge-tragedy precursors, particularly Kyd's Spanish Tragedy, tended toward operatic pile-ups of corpses; Hamlet's ending is more economical, each death following from a specific choice. The King is killed last, and by his own contrivance; the revenge Hamlet never managed to design, Claudius has done for him.",
+      "sources": ["Jonathan Bate, Soul of the Age (2008)"]
+    },
+    {
+      "line_start": 353,
+      "line_end": 359,
+      "category": "close_reading",
+      "title": "'The rest is silence'",
+      "body": "Hamlet's last words are simultaneously a statement about what cannot be said and an acknowledgment of what will be said after him — Fortinbras will inherit, Horatio will tell the story, the theater of Denmark will continue. The Folio has four additional syllables ('O, o, o, o') that some editors print and others suppress. If performed, these dying groans convert the neat aphorism into something more ragged. T. S. Eliot famously called 'the rest is silence' the cleanest ending in Shakespeare; others, including Bradley, found in the 'O, o, o, o' a more honest human ending. Either way, the phrase is Shakespeare's most condensed meditation on the limits of speech at the edge of death.",
+      "sources": ["T. S. Eliot, 'Hamlet and His Problems' (1919)", "A. C. Bradley, Shakespearean Tragedy (1904)"]
+    },
+    {
+      "line_start": 360,
+      "line_end": 390,
+      "category": "structural",
+      "title": "Fortinbras's arrival and the restoration",
+      "body": "Fortinbras enters as the play closes, returning from the Polish campaign and stepping almost by chance into the throne of Denmark. His claim — 'some rights of memory in this kingdom' — recalls his father's lost lands. The restoration he provides is not consoling. The young man who organized an army to 'find quarrel in a straw' inherits a kingdom emptied by a more meditative son. Shakespeare's political vision is bleak: the state that has consumed itself through corruption is passed to an outsider whose decisiveness is untouched by the questions Hamlet could not stop asking. The final 'soldier's music' given to Hamlet honors the prince who never quite got to be a warrior.",
+      "sources": ["Marjorie Garber, Shakespeare After All (2004)"]
+    }
+  ]
+}

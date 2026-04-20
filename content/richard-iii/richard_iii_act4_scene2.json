@@ -1,0 +1,1012 @@
+{
+  "section_id": "richard_iii_act4_scene2",
+  "work_id": "richard-iii",
+  "sequence": 17,
+  "act": 4,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "London. The palace",
+  "line_count": 130,
+  "word_count": 931,
+  "est_read_minutes": 5,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KING RICHARD",
+      "text": "Stand all apart Cousin of Buckingham!"
+    },
+    {
+      "number": 1,
+      "speaker": "BUCKINGHAM",
+      "text": "My gracious sovereign?"
+    },
+    {
+      "number": 2,
+      "speaker": "KING RICHARD",
+      "text": "Give me thy hand. Here he ascendeth his throne. Thus high, by thy advice"
+    },
+    {
+      "number": 3,
+      "speaker": "KING RICHARD",
+      "text": "And thy assistance, is King Richard seated:"
+    },
+    {
+      "number": 4,
+      "speaker": "KING RICHARD",
+      "text": "But shall we wear these honours for a day?"
+    },
+    {
+      "number": 5,
+      "speaker": "KING RICHARD",
+      "text": "Or shall they last, and we rejoice in them?"
+    },
+    {
+      "number": 6,
+      "speaker": "BUCKINGHAM",
+      "text": "Still live they and for ever may they last!"
+    },
+    {
+      "number": 7,
+      "speaker": "KING RICHARD",
+      "text": "O Buckingham, now do I play the touch,"
+    },
+    {
+      "number": 8,
+      "speaker": "KING RICHARD",
+      "text": "To try if thou be current gold indeed:"
+    },
+    {
+      "number": 9,
+      "speaker": "KING RICHARD",
+      "text": "Young Edward lives: think now what I would say."
+    },
+    {
+      "number": 10,
+      "speaker": "BUCKINGHAM",
+      "text": "Say on, my loving lord."
+    },
+    {
+      "number": 11,
+      "speaker": "KING RICHARD",
+      "text": "Why, Buckingham, I say, I would be king."
+    },
+    {
+      "number": 12,
+      "speaker": "BUCKINGHAM",
+      "text": "Why, so you are, my thrice renowned liege."
+    },
+    {
+      "number": 13,
+      "speaker": "KING RICHARD",
+      "text": "Ha! am I king? ’tis so: but Edward lives."
+    },
+    {
+      "number": 14,
+      "speaker": "BUCKINGHAM",
+      "text": "True, noble prince."
+    },
+    {
+      "number": 14,
+      "speaker": "KING RICHARD",
+      "text": "O bitter consequence,"
+    },
+    {
+      "number": 15,
+      "speaker": "KING RICHARD",
+      "text": "That Edward still should live! “True, noble prince!”"
+    },
+    {
+      "number": 16,
+      "speaker": "KING RICHARD",
+      "text": "Cousin, thou wert not wont to be so dull:"
+    },
+    {
+      "number": 17,
+      "speaker": "KING RICHARD",
+      "text": "Shall I be plain? I wish the bastards dead;"
+    },
+    {
+      "number": 18,
+      "speaker": "KING RICHARD",
+      "text": "And I would have it suddenly perform’d."
+    },
+    {
+      "number": 19,
+      "speaker": "KING RICHARD",
+      "text": "What sayest thou? speak suddenly; be brief."
+    },
+    {
+      "number": 20,
+      "speaker": "BUCKINGHAM",
+      "text": "Your grace may do your pleasure."
+    },
+    {
+      "number": 21,
+      "speaker": "KING RICHARD",
+      "text": "Tut, tut, thou art all ice, thy kindness freezeth:"
+    },
+    {
+      "number": 22,
+      "speaker": "KING RICHARD",
+      "text": "Say, have I thy consent that they shall die?"
+    },
+    {
+      "number": 23,
+      "speaker": "BUCKINGHAM",
+      "text": "Give me some breath, some little pause, my lord,"
+    },
+    {
+      "number": 24,
+      "speaker": "BUCKINGHAM",
+      "text": "Before I positively speak herein:"
+    },
+    {
+      "number": 25,
+      "speaker": "BUCKINGHAM",
+      "text": "I will resolve your grace immediately."
+    },
+    {
+      "number": 26,
+      "speaker": "CATESBY",
+      "text": "The king is angry: see, he bites the lip."
+    },
+    {
+      "number": 27,
+      "speaker": "KING RICHARD",
+      "text": "I will converse with iron-witted fools"
+    },
+    {
+      "number": 28,
+      "speaker": "KING RICHARD",
+      "text": "And unrespective boys: none are for me"
+    },
+    {
+      "number": 29,
+      "speaker": "KING RICHARD",
+      "text": "That look into me with considerate eyes:"
+    },
+    {
+      "number": 30,
+      "speaker": "KING RICHARD",
+      "text": "High-reaching Buckingham grows circumspect."
+    },
+    {
+      "number": 31,
+      "speaker": "KING RICHARD",
+      "text": "Boy!"
+    },
+    {
+      "number": 31,
+      "speaker": "PAGE",
+      "text": "My lord?"
+    },
+    {
+      "number": 32,
+      "speaker": "KING RICHARD",
+      "text": "Know’st thou not any whom corrupting gold"
+    },
+    {
+      "number": 33,
+      "speaker": "KING RICHARD",
+      "text": "Would tempt unto a close exploit of death?"
+    },
+    {
+      "number": 34,
+      "speaker": "PAGE",
+      "text": "My lord, I know a discontented gentleman,"
+    },
+    {
+      "number": 35,
+      "speaker": "PAGE",
+      "text": "Whose humble means match not his haughty mind:"
+    },
+    {
+      "number": 36,
+      "speaker": "PAGE",
+      "text": "Gold were as good as twenty orators,"
+    },
+    {
+      "number": 37,
+      "speaker": "PAGE",
+      "text": "And will, no doubt, tempt him to any thing."
+    },
+    {
+      "number": 38,
+      "speaker": "KING RICHARD",
+      "text": "What is his name?"
+    },
+    {
+      "number": 38,
+      "speaker": "PAGE",
+      "text": "His name, my lord, is Tyrrel."
+    },
+    {
+      "number": 39,
+      "speaker": "KING RICHARD",
+      "text": "I partly know the man: go, call him hither."
+    },
+    {
+      "number": 40,
+      "speaker": "KING RICHARD",
+      "text": "The deep-revolving witty Buckingham"
+    },
+    {
+      "number": 41,
+      "speaker": "KING RICHARD",
+      "text": "No more shall be the neighbour to my counsel:"
+    },
+    {
+      "number": 42,
+      "speaker": "KING RICHARD",
+      "text": "Hath he so long held out with me untired,"
+    },
+    {
+      "number": 43,
+      "speaker": "KING RICHARD",
+      "text": "And stops he now for breath?"
+    },
+    {
+      "number": 44,
+      "speaker": "STANLEY",
+      "text": "My lord, I hear the Marquis Dorset’s fled"
+    },
+    {
+      "number": 45,
+      "speaker": "STANLEY",
+      "text": "To Richmond, in those parts beyond the sea"
+    },
+    {
+      "number": 46,
+      "speaker": "STANLEY",
+      "text": "Where he abides. Stands apart."
+    },
+    {
+      "number": 46,
+      "speaker": "KING RICHARD",
+      "text": "Catesby!"
+    },
+    {
+      "number": 47,
+      "speaker": "CATESBY",
+      "text": "My lord?"
+    },
+    {
+      "number": 47,
+      "speaker": "KING RICHARD",
+      "text": "Rumour it abroad"
+    },
+    {
+      "number": 48,
+      "speaker": "KING RICHARD",
+      "text": "That Anne, my wife, is sick and like to die:"
+    },
+    {
+      "number": 49,
+      "speaker": "KING RICHARD",
+      "text": "I will take order for her keeping close."
+    },
+    {
+      "number": 50,
+      "speaker": "KING RICHARD",
+      "text": "Inquire me out some mean-born gentleman,"
+    },
+    {
+      "number": 51,
+      "speaker": "KING RICHARD",
+      "text": "Whom I will marry straight to Clarence’ daughter:"
+    },
+    {
+      "number": 52,
+      "speaker": "KING RICHARD",
+      "text": "The boy is foolish, and I fear not him."
+    },
+    {
+      "number": 53,
+      "speaker": "KING RICHARD",
+      "text": "Look, how thou dream’st! I say again, give out"
+    },
+    {
+      "number": 54,
+      "speaker": "KING RICHARD",
+      "text": "That Anne my wife is sick and like to die:"
+    },
+    {
+      "number": 55,
+      "speaker": "KING RICHARD",
+      "text": "About it; for it stands me much upon,"
+    },
+    {
+      "number": 56,
+      "speaker": "KING RICHARD",
+      "text": "To stop all hopes whose growth may damage me."
+    },
+    {
+      "number": 57,
+      "speaker": "KING RICHARD",
+      "text": "I must be married to my brother’s daughter,"
+    },
+    {
+      "number": 58,
+      "speaker": "KING RICHARD",
+      "text": "Or else my kingdom stands on brittle glass."
+    },
+    {
+      "number": 59,
+      "speaker": "KING RICHARD",
+      "text": "Murder her brothers, and then marry her!"
+    },
+    {
+      "number": 60,
+      "speaker": "KING RICHARD",
+      "text": "Uncertain way of gain! But I am in"
+    },
+    {
+      "number": 61,
+      "speaker": "KING RICHARD",
+      "text": "So far in blood that sin will pluck on sin:"
+    },
+    {
+      "number": 62,
+      "speaker": "KING RICHARD",
+      "text": "Tear-falling pity dwells not in this eye."
+    },
+    {
+      "number": 63,
+      "speaker": "TYRREL",
+      "text": "James Tyrrel, and your most obedient subject."
+    },
+    {
+      "number": 64,
+      "speaker": "KING RICHARD",
+      "text": "Art thou, indeed?"
+    },
+    {
+      "number": 64,
+      "speaker": "TYRREL",
+      "text": "Prove me, my gracious sovereign."
+    },
+    {
+      "number": 65,
+      "speaker": "KING RICHARD",
+      "text": "Darest thou resolve to kill a friend of mine?"
+    },
+    {
+      "number": 66,
+      "speaker": "TYRREL",
+      "text": "Ay, my lord;"
+    },
+    {
+      "number": 67,
+      "speaker": "TYRREL",
+      "text": "But I had rather kill two enemies."
+    },
+    {
+      "number": 68,
+      "speaker": "KING RICHARD",
+      "text": "Why, there thou hast it: two deep enemies,"
+    },
+    {
+      "number": 69,
+      "speaker": "KING RICHARD",
+      "text": "Foes to my rest and my sweet sleep’s disturbers"
+    },
+    {
+      "number": 70,
+      "speaker": "KING RICHARD",
+      "text": "Are they that I would have thee deal upon:"
+    },
+    {
+      "number": 71,
+      "speaker": "KING RICHARD",
+      "text": "Tyrrel, I mean those bastards in the Tower."
+    },
+    {
+      "number": 72,
+      "speaker": "TYRREL",
+      "text": "Let me have open means to come to them,"
+    },
+    {
+      "number": 73,
+      "speaker": "TYRREL",
+      "text": "And soon I’ll rid you from the fear of them."
+    },
+    {
+      "number": 74,
+      "speaker": "KING RICHARD",
+      "text": "Thou sing’st sweet music. Hark, come hither, Tyrrel:"
+    },
+    {
+      "number": 75,
+      "speaker": "KING RICHARD",
+      "text": "Go, by this token: rise, and lend thine ear:"
+    },
+    {
+      "number": 76,
+      "speaker": "KING RICHARD",
+      "text": "There is no more but so: say it is done,"
+    },
+    {
+      "number": 77,
+      "speaker": "KING RICHARD",
+      "text": "And I will love thee, and prefer thee too."
+    },
+    {
+      "number": 78,
+      "speaker": "TYRREL",
+      "text": "’Tis done, my gracious lord."
+    },
+    {
+      "number": 79,
+      "speaker": "KING RICHARD",
+      "text": "Shall we hear from thee, Tyrrel, ere we sleep?"
+    },
+    {
+      "number": 80,
+      "speaker": "TYRREL",
+      "text": "Ye shall, my Lord."
+    },
+    {
+      "number": 81,
+      "speaker": "BUCKINGHAM",
+      "text": "My Lord, I have consider’d in my mind"
+    },
+    {
+      "number": 82,
+      "speaker": "BUCKINGHAM",
+      "text": "The late demand that you did sound me in."
+    },
+    {
+      "number": 83,
+      "speaker": "KING RICHARD",
+      "text": "Well, let that pass. Dorset is fled to Richmond."
+    },
+    {
+      "number": 84,
+      "speaker": "BUCKINGHAM",
+      "text": "I hear that news, my lord."
+    },
+    {
+      "number": 85,
+      "speaker": "KING RICHARD",
+      "text": "Stanley, he is your wife’s son: well, look to it."
+    },
+    {
+      "number": 86,
+      "speaker": "BUCKINGHAM",
+      "text": "My lord, I claim your gift, my due by promise,"
+    },
+    {
+      "number": 87,
+      "speaker": "BUCKINGHAM",
+      "text": "For which your honour and your faith is pawn’d;"
+    },
+    {
+      "number": 88,
+      "speaker": "BUCKINGHAM",
+      "text": "The earldom of Hereford and the moveables"
+    },
+    {
+      "number": 89,
+      "speaker": "BUCKINGHAM",
+      "text": "The which you promised I should possess."
+    },
+    {
+      "number": 90,
+      "speaker": "KING RICHARD",
+      "text": "Stanley, look to your wife: if she convey"
+    },
+    {
+      "number": 91,
+      "speaker": "KING RICHARD",
+      "text": "Letters to Richmond, you shall answer it."
+    },
+    {
+      "number": 92,
+      "speaker": "BUCKINGHAM",
+      "text": "What says your highness to my just demand?"
+    },
+    {
+      "number": 93,
+      "speaker": "KING RICHARD",
+      "text": "As I remember, Henry the Sixth"
+    },
+    {
+      "number": 94,
+      "speaker": "KING RICHARD",
+      "text": "Did prophesy that Richmond should be king,"
+    },
+    {
+      "number": 95,
+      "speaker": "KING RICHARD",
+      "text": "When Richmond was a little peevish boy."
+    },
+    {
+      "number": 96,
+      "speaker": "KING RICHARD",
+      "text": "A king, perhaps, perhaps—"
+    },
+    {
+      "number": 96,
+      "speaker": "BUCKINGHAM",
+      "text": "My lord!"
+    },
+    {
+      "number": 97,
+      "speaker": "KING RICHARD",
+      "text": "How chance the prophet could not at that time"
+    },
+    {
+      "number": 98,
+      "speaker": "KING RICHARD",
+      "text": "Have told me, I being by, that I should kill him?"
+    },
+    {
+      "number": 99,
+      "speaker": "BUCKINGHAM",
+      "text": "My lord, your promise for the earldom—"
+    },
+    {
+      "number": 100,
+      "speaker": "KING RICHARD",
+      "text": "Richmond! When last I was at Exeter,"
+    },
+    {
+      "number": 101,
+      "speaker": "KING RICHARD",
+      "text": "The mayor in courtesy show’d me the castle."
+    },
+    {
+      "number": 102,
+      "speaker": "KING RICHARD",
+      "text": "And call’d it Rougemont: at which name I started,"
+    },
+    {
+      "number": 103,
+      "speaker": "KING RICHARD",
+      "text": "Because a bard of Ireland told me once,"
+    },
+    {
+      "number": 104,
+      "speaker": "KING RICHARD",
+      "text": "I should not live long after I saw Richmond."
+    },
+    {
+      "number": 105,
+      "speaker": "BUCKINGHAM",
+      "text": "My Lord!"
+    },
+    {
+      "number": 105,
+      "speaker": "KING RICHARD",
+      "text": "Ay, what’s o’clock?"
+    },
+    {
+      "number": 106,
+      "speaker": "BUCKINGHAM",
+      "text": "I am thus bold to put your grace in mind"
+    },
+    {
+      "number": 107,
+      "speaker": "BUCKINGHAM",
+      "text": "Of what you promised me."
+    },
+    {
+      "number": 107,
+      "speaker": "KING RICHARD",
+      "text": "Well, but what’s o’clock?"
+    },
+    {
+      "number": 108,
+      "speaker": "BUCKINGHAM",
+      "text": "Upon the stroke of ten."
+    },
+    {
+      "number": 108,
+      "speaker": "KING RICHARD",
+      "text": "Well, let it strike."
+    },
+    {
+      "number": 109,
+      "speaker": "BUCKINGHAM",
+      "text": "Why let it strike?"
+    },
+    {
+      "number": 110,
+      "speaker": "KING RICHARD",
+      "text": "Because that, like a Jack, thou keep’st the stroke"
+    },
+    {
+      "number": 111,
+      "speaker": "KING RICHARD",
+      "text": "Betwixt thy begging and my meditation."
+    },
+    {
+      "number": 112,
+      "speaker": "KING RICHARD",
+      "text": "I am not in the giving vein to-day."
+    },
+    {
+      "number": 113,
+      "speaker": "BUCKINGHAM",
+      "text": "Why, then resolve me whether you will or no."
+    },
+    {
+      "number": 114,
+      "speaker": "KING RICHARD",
+      "text": "Tut, tut,"
+    },
+    {
+      "number": 115,
+      "speaker": "KING RICHARD",
+      "text": "Thou troublest me; am not in the vein."
+    },
+    {
+      "number": 116,
+      "speaker": "BUCKINGHAM",
+      "text": "Is it even so? rewards he my true service"
+    },
+    {
+      "number": 117,
+      "speaker": "BUCKINGHAM",
+      "text": "With such deep contempt? made I him king for this?"
+    },
+    {
+      "number": 118,
+      "speaker": "BUCKINGHAM",
+      "text": "O, let me think on Hastings, and be gone"
+    },
+    {
+      "number": 119,
+      "speaker": "BUCKINGHAM",
+      "text": "To Brecknock, while my fearful head is on!"
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Sennet. Enter Richard, in pomp, crowned; Buckingham, Catesby, a Page, and others."
+    },
+    {
+      "after_line": 25,
+      "text": "Exit."
+    },
+    {
+      "after_line": 26,
+      "text": "Aside to a stander by."
+    },
+    {
+      "after_line": 39,
+      "text": "Exit Page."
+    },
+    {
+      "after_line": 43,
+      "text": "Enter Stanley."
+    },
+    {
+      "after_line": 43,
+      "text": "How now! what news with you?"
+    },
+    {
+      "after_line": 56,
+      "text": "Exit Catesby."
+    },
+    {
+      "after_line": 62,
+      "text": "Reenter Page, with Tyrrel."
+    },
+    {
+      "after_line": 62,
+      "text": "Is thy name Tyrrel?"
+    },
+    {
+      "after_line": 75,
+      "text": "Whispers."
+    },
+    {
+      "after_line": 80,
+      "text": "Exit."
+    },
+    {
+      "after_line": 80,
+      "text": "Reenter Buckingham."
+    },
+    {
+      "after_line": 115,
+      "text": "Exeunt all but Buckingham."
+    },
+    {
+      "after_line": 119,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act4_scene2_gloss1",
+      "line": 2,
+      "phrase": "ascendeth his throne",
+      "definition": "stage direction — Richard physically takes the throne; the play's peak of usurpation"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss2",
+      "line": 7,
+      "phrase": "play the touch",
+      "definition": "use the touchstone — the stone that tested gold's purity; Richard tests Buckingham's loyalty"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss3",
+      "line": 8,
+      "phrase": "current gold",
+      "definition": "gold of legal standard; genuine currency"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss4",
+      "line": 17,
+      "phrase": "bastards dead",
+      "definition": "the princes, declared illegitimate by Titulus Regius — Richard's chilling legalism turning to murder"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss5",
+      "line": 21,
+      "phrase": "thou art all ice, thy kindness freezeth",
+      "definition": "Richard rejects Buckingham's hesitation as cold disloyalty"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss6",
+      "line": 26,
+      "phrase": "bites the lip",
+      "definition": "stage cue / Catesby's aside — Richard's signature sign of suppressed rage"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss7",
+      "line": 27,
+      "phrase": "iron-witted fools",
+      "definition": "thick-headed fools; blunt-minded men"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss8",
+      "line": 28,
+      "phrase": "unrespective boys",
+      "definition": "unreflecting boys — youths who don't consider consequences"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss9",
+      "line": 29,
+      "phrase": "considerate eyes",
+      "definition": "thoughtful, probing eyes — Richard wants unquestioning agents"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss10",
+      "line": 30,
+      "phrase": "High-reaching Buckingham grows circumspect",
+      "definition": "ambitious Buckingham grows cautious — Richard's death-warrant for his ally"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss11",
+      "line": 35,
+      "phrase": "humble means match not his haughty mind",
+      "definition": "modest resources don't match his proud ambitions"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss12",
+      "line": 36,
+      "phrase": "Gold were as good as twenty orators",
+      "definition": "money persuades better than twenty speeches"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss13",
+      "line": 38,
+      "phrase": "Tyrrel",
+      "definition": "Sir James Tyrrel — historically blamed by More as the princes' murderer; confessed under torture in 1502"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss14",
+      "line": 40,
+      "phrase": "deep-revolving witty Buckingham",
+      "definition": "subtly-calculating, sharp-minded Buckingham — Richard's grudging assessment"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss15",
+      "line": 51,
+      "phrase": "marry straight to Clarence’ daughter",
+      "definition": "marry immediately to Clarence's daughter Margaret — neutralizing her dynastic claim"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss16",
+      "line": 57,
+      "phrase": "my brother’s daughter",
+      "definition": "Elizabeth of York — Edward IV's eldest daughter; Richard plans to marry his own niece"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss17",
+      "line": 61,
+      "phrase": "sin will pluck on sin",
+      "definition": "one sin drags another — Richard recognizes the logic of damnation"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss18",
+      "line": 69,
+      "phrase": "sweet sleep’s disturbers",
+      "definition": "those who trouble my sleep — the princes"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss19",
+      "line": 71,
+      "phrase": "bastards in the Tower",
+      "definition": "the princes, held there since 3.1"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss20",
+      "line": 77,
+      "phrase": "prefer thee",
+      "definition": "advance, promote thee"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss21",
+      "line": 93,
+      "phrase": "Henry the Sixth / Did prophesy that Richmond should be king",
+      "definition": "Henry VI's prophecy to young Henry Tudor, dramatized in 3 Henry VI 4.6 — Shakespeare's cross-reference"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss22",
+      "line": 102,
+      "phrase": "Rougemont",
+      "definition": "Red Mountain — the castle at Exeter; Richard hears 'Richmond' in the name and startles"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss23",
+      "line": 103,
+      "phrase": "bard of Ireland",
+      "definition": "Irish prophet-poet — a soothsayer's warning about 'Richmond' killing Richard"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss24",
+      "line": 110,
+      "phrase": "like a Jack, thou keep’st the stroke",
+      "definition": "like a mechanical figure striking the hour-bell on a clock — 'Jack of the clock', an automaton"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss25",
+      "line": 112,
+      "phrase": "not in the giving vein",
+      "definition": "not in the mood to give — Richard's famous refusal line"
+    },
+    {
+      "id": "richard_iii_act4_scene2_gloss26",
+      "line": 119,
+      "phrase": "Brecknock",
+      "definition": "Brecon Castle in Wales — Buckingham's stronghold; where his rebellion begins"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act4_scene2_ann1",
+      "line_start": 1,
+      "line_end": 24,
+      "citation_display": "Richard III 4.2.1–24",
+      "category": "textual",
+      "title": "The \"clock scene\" and the Q1/F1 variance",
+      "body": "This scene is the most famous textual crux of Richard III: the so-called \"clock scene\" in which Richard and Buckingham quarrel. In the First Folio (1623), the scene is extended by roughly thirty lines, including Richard's musical rebuke \"Because that, like a Jack, thou keep'st the stroke / Betwixt thy begging and my meditation.\" The First Quarto (1597) gives a shorter version. Editors have long debated which reading represents Shakespeare's preferred form — the Quarto's tighter version or the Folio's fuller one. Standard Ebooks' conflated text, following most modern editions, prefers the Folio's extended version. The extra lines add tonal colour (Richard's \"not in the giving vein\" becomes more pointed) and deepen Buckingham's humiliation. Richard III's Q1/F1 variance is not as scholarly-consequential as King Lear's, but this scene is where the two texts diverge most visibly, and the reader should know the text they are reading is one editorial choice among others.",
+      "sources": [
+        "John Jowett, The Oxford Shakespeare: Richard III (2000)",
+        "Antony Hammond, Arden Shakespeare: Richard III (1981)",
+        "Peter W. M. Blayney, The Texts of King Lear and Their Origins (1982)"
+      ]
+    },
+    {
+      "id": "richard_iii_act4_scene2_ann2",
+      "line_start": 1,
+      "line_end": 43,
+      "citation_display": "Richard III 4.2.1–43",
+      "category": "structural",
+      "title": "The throne ascended, the alliance breaks",
+      "body": "The scene opens with Richard ceremonially taking the throne (\"Here he ascendeth his throne. Thus high, by thy advice / And thy assistance, is King Richard seated\") and immediately begins testing Buckingham. The test is blunt: \"I wish the bastards dead; / And I would have it suddenly perform'd.\" Buckingham's hesitation — \"Give me some breath, some little pause, my lord\" — is the pause that kills him. Richard's cold aside (\"High-reaching Buckingham grows circumspect\") is the regime's first verdict on a principal ally. The scene enacts the pattern the play has been setting up since Buckingham's 2.2 alliance with Richard: those who enable Richard's rise must either continue enabling him or be eliminated. There is no middle state. Buckingham's attempt to defer decision is treated as refusal.",
+      "sources": [
+        "Wolfgang Clemen, A Commentary on Shakespeare's Richard III (1968)",
+        "A. P. Rossiter, Angel with Horns (1961)"
+      ]
+    },
+    {
+      "id": "richard_iii_act4_scene2_ann3",
+      "line_start": 32,
+      "line_end": 62,
+      "citation_display": "Richard III 4.2.32–62",
+      "category": "close_reading",
+      "title": "Tyrrel engaged, and Richard's horizon contracts",
+      "body": "Richard's engagement of Tyrrel through the Page — \"Know'st thou not any whom corrupting gold / Would tempt unto a close exploit of death?\" — marks a specific narrowing of his political world. In Acts I–III he worked through ceremony, legal pretext, and public performance. Here he works through an anonymous functionary paid in \"corrupting gold.\" The move is necessary because Buckingham, who had been the performance's co-producer, has balked. It also marks Richard's first explicit self-knowledge about his condition: \"I am in / So far in blood that sin will pluck on sin.\" The line echoes Macbeth's \"I am in blood / Stepp'd in so far\" (Macbeth 3.4) that Shakespeare will write about a decade later. Richard III is the play in which Shakespeare first articulates what becomes Macbeth's central theme — the logic of sin that generates the next sin.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)",
+        "Robert N. Watson, Shakespeare and the Hazards of Ambition (1984)"
+      ]
+    },
+    {
+      "id": "richard_iii_act4_scene2_ann4",
+      "line_start": 81,
+      "line_end": 119,
+      "citation_display": "Richard III 4.2.81–119",
+      "category": "thematic",
+      "title": "\"I am not in the giving vein to-day\"",
+      "body": "Buckingham's attempt to claim his promised reward (the earldom of Hereford) is one of the play's small, bitter comedies. He returns to the subject repeatedly — \"I claim your gift, my due by promise\"; \"your promise for the earldom\"; \"what says your highness to my just demand?\" — and Richard responds with free-associative asides about Henry VI's prophecy, the Exeter castle called Rougemont, and a bard of Ireland's prediction. Richard is not distracted; he is humiliating Buckingham in public by refusing even the courtesy of a clear refusal. The final line — \"I am not in the giving vein to-day\" — is Richard's signature sentence of post-coronation power: the giving of rewards is now entirely at his pleasure, and he signals that Buckingham's has run out. Buckingham's exit line (\"let me think on Hastings\") is the scene's formal acknowledgement that he has become another Hastings.",
+      "sources": [
+        "A. P. Rossiter, Angel with Horns (1961)",
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act4_scene2_q1",
+      "kind": "textual",
+      "prompt": "What is distinctive about the \"clock scene\" (4.2) in the textual history of Richard III?",
+      "options": [
+        "It appears only in the First Quarto, not the First Folio",
+        "It is the scene where the First Folio (1623) and First Quarto (1597) texts diverge most visibly, with F1 extending the scene by about thirty lines",
+        "It is missing from all early texts and is a nineteenth-century interpolation",
+        "It was rewritten by Colley Cibber for the Restoration stage"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 24
+    },
+    {
+      "id": "richard_iii_act4_scene2_q2",
+      "kind": "comprehension",
+      "prompt": "What does Richard test Buckingham with, immediately after the coronation?",
+      "options": [
+        "The demand to kill Richmond",
+        "The demand to kill the princes (\"the bastards dead\") suddenly — and Buckingham's pause is treated as refusal",
+        "The demand to disavow his wife and remarry",
+        "The demand to renounce his dukedom"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 17,
+      "anchor_line_end": 30
+    },
+    {
+      "id": "richard_iii_act4_scene2_q3",
+      "kind": "theme",
+      "prompt": "Richard's line \"I am in / So far in blood that sin will pluck on sin\" anticipates which later Shakespeare play?",
+      "options": [
+        "Hamlet — Claudius's prayer scene",
+        "Macbeth — the logic of sin that generates the next sin (cf. Macbeth 3.4 \"I am in blood / Stepp'd in so far\")",
+        "Othello — Iago's final unrepentant silence",
+        "King Lear — Edmund's dying confession"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 60,
+      "anchor_line_end": 62
+    },
+    {
+      "id": "richard_iii_act4_scene2_q4",
+      "kind": "close_reading",
+      "prompt": "\"I am not in the giving vein to-day\" is Richard's signature line of post-coronation power. What does it announce?",
+      "options": [
+        "A temporary mood that will change",
+        "That the giving of rewards is now entirely at his pleasure — Buckingham's request is refused as humiliation, not as matter of substance",
+        "A new tax policy to be enforced at court",
+        "A renouncement of all future promises"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 112,
+      "anchor_line_end": 112
+    },
+    {
+      "id": "richard_iii_act4_scene2_q5",
+      "kind": "inference",
+      "prompt": "Buckingham's exit line — \"let me think on Hastings\" — signals what?",
+      "options": [
+        "A conciliatory desire to remember an old friend",
+        "Formal acknowledgement that he has become another Hastings — marked for the same fate",
+        "A plan to replace Hastings as Lord Chamberlain",
+        "A political plot to rehabilitate Hastings' reputation"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 118,
+      "anchor_line_end": 119
+    }
+  ]
+}

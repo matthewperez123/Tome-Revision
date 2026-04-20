@@ -1,0 +1,103 @@
+{
+  "section_id": "hamlet_act5_scene2",
+  "trials": [
+    {
+      "kind": "comprehension",
+      "prompt": "What does Hamlet discover when he unseals the commission on the ship?",
+      "options": [
+        "Claudius's confession of the murder.",
+        "An order to the King of England to execute Hamlet on arrival.",
+        "A ransom demand for his release.",
+        "A letter of abdication in Hamlet's favor."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 15,
+      "anchor_line_end": 25
+    },
+    {
+      "kind": "theme",
+      "prompt": "What does Hamlet mean by 'There's a divinity that shapes our ends, rough-hew them how we will'?",
+      "options": [
+        "That Hamlet has become a carpenter.",
+        "That a providential design operates beyond human attempts to shape events.",
+        "That fate is entirely indifferent to human action.",
+        "That only kings can shape history."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 8,
+      "anchor_line_end": 12
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "What biblical passage does 'There's a special providence in the fall of a sparrow' echo?",
+      "options": [
+        "The Sermon on the Mount (Matthew 5).",
+        "Jesus's instruction to the apostles — Matthew 10:29 ('one sparrow shall not fall on the ground without your Father').",
+        "Psalm 23 ('The Lord is my shepherd').",
+        "The book of Job."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 208,
+      "anchor_line_end": 212
+    },
+    {
+      "kind": "inference",
+      "prompt": "How does Gertrude die?",
+      "options": [
+        "Laertes stabs her with the poisoned foil.",
+        "She drinks from the poisoned cup Claudius intended for Hamlet.",
+        "She collapses from grief.",
+        "Hamlet poisons her to punish her remarriage."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 295,
+      "anchor_line_end": 312
+    },
+    {
+      "kind": "comprehension",
+      "prompt": "How does Hamlet finally kill Claudius?",
+      "options": [
+        "He stabs him with the poisoned foil and forces him to drink the poisoned cup.",
+        "He strangles him with his own crown's circlet.",
+        "He has Horatio run him through with a sword.",
+        "He drowns him in a font."
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 15,
+      "anchor_line_start": 315,
+      "anchor_line_end": 335
+    },
+    {
+      "kind": "theme",
+      "prompt": "What does Hamlet ask Horatio to do after his death?",
+      "options": [
+        "Flee Denmark immediately.",
+        "Live on to tell Hamlet's story and report the truth aright.",
+        "Poison himself to accompany Hamlet.",
+        "Destroy the letter that proved Claudius's guilt."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 344,
+      "anchor_line_end": 351
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "What is the significance of Hamlet's final words, 'The rest is silence'?",
+      "options": [
+        "A literal request for quiet in the room.",
+        "An acknowledgment that what remains — of his story, of the afterlife, of himself — cannot be spoken.",
+        "A reference to a musical score.",
+        "A coded instruction to Horatio about a hidden document."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 358,
+      "anchor_line_end": 358
+    }
+  ]
+}

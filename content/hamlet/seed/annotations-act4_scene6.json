@@ -1,0 +1,21 @@
+{
+  "section_id": "hamlet_act4_scene6",
+  "annotations": [
+    {
+      "line_start": 13,
+      "line_end": 31,
+      "category": "structural",
+      "title": "Hamlet's letter and the pirate attack",
+      "body": "Hamlet's letter to Horatio, delivered by sailors, is the play's most improbable plot device: pirates attack the ship, Hamlet boards them in the fight, and they return him to Denmark. Shakespeare adapted this from Belleforest's Histoires Tragiques, where a similar escape occurs. The randomness is essential — the providence Hamlet will later credit ('There's a divinity that shapes our ends') requires a genuinely unscripted event. Critics have noted the structural parallel to the shipwreck in Twelfth Night and the maritime accidents that reshape The Tempest. In Hamlet, the ocean becomes the place where the prince's fate escapes Claudius's careful management and returns to him transformed.",
+      "sources": ["Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"]
+    },
+    {
+      "line_start": 22,
+      "line_end": 26,
+      "category": "close_reading",
+      "title": "'Thieves of mercy'",
+      "body": "Hamlet's oxymoron — 'thieves of mercy' — is as compact a piece of rhetoric as anything in the play. Pirates who spared his life and set him back on his own quest have behaved better than the Christian courtiers who sent him to die. The paradox preserves the play's moral disorientation: an honorable thief, a loyal pirate, a treacherous king. The short scene is a technical marvel — four speeches of report that move the plot from England to Denmark without a single on-stage action. Shakespeare trusts the audience to register the transition on the strength of letter-reading alone.",
+      "sources": ["Frank Kermode, Shakespeare's Language (2000)"]
+    }
+  ]
+}

@@ -1,0 +1,1642 @@
+{
+  "section_id": "hamlet_act5_scene1",
+  "work_id": "hamlet",
+  "sequence": 19,
+  "act": 5,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "A churchyard",
+  "line_count": 265,
+  "word_count": 2244,
+  "est_read_minutes": 11,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "FIRST CLOWN",
+      "text": "Is she to be buried in Christian burial that wilfully seeks her own salvation?"
+    },
+    {
+      "number": 2,
+      "speaker": "SECOND CLOWN",
+      "text": "I tell thee she is: and therefore make her grave straight: the"
+    },
+    {
+      "number": 3,
+      "speaker": "SECOND CLOWN",
+      "text": "crowner hath sat on her, and finds it Christian burial."
+    },
+    {
+      "number": 4,
+      "speaker": "FIRST CLOWN",
+      "text": "How can that be, unless she drowned herself in her own defence?"
+    },
+    {
+      "number": 5,
+      "speaker": "SECOND CLOWN",
+      "text": "Why, ’tis found so."
+    },
+    {
+      "number": 6,
+      "speaker": "FIRST CLOWN",
+      "text": "It must be “se offendendo;” it cannot be else. For here lies"
+    },
+    {
+      "number": 7,
+      "speaker": "FIRST CLOWN",
+      "text": "the point: if I drown myself wittingly, it argues an act: and"
+    },
+    {
+      "number": 8,
+      "speaker": "FIRST CLOWN",
+      "text": "an act hath three branches; it is, to act, to do, to"
+    },
+    {
+      "number": 9,
+      "speaker": "FIRST CLOWN",
+      "text": "perform: argal, she drowned herself wittingly."
+    },
+    {
+      "number": 9,
+      "speaker": "SECOND CLOWN",
+      "text": "Nay, but hear you, goodman delver—"
+    },
+    {
+      "number": 10,
+      "speaker": "FIRST CLOWN",
+      "text": "Give me leave. Here lies the water; good: here stands the man;"
+    },
+    {
+      "number": 11,
+      "speaker": "FIRST CLOWN",
+      "text": "good: if the man go to this water, and drown himself, it"
+    },
+    {
+      "number": 12,
+      "speaker": "FIRST CLOWN",
+      "text": "is, will he, nill he, he goes—mark you that; but if the"
+    },
+    {
+      "number": 13,
+      "speaker": "FIRST CLOWN",
+      "text": "water come to him and drown him, he drowns not himself: argal,"
+    },
+    {
+      "number": 14,
+      "speaker": "FIRST CLOWN",
+      "text": "he that is not guilty of his own death shortens not his"
+    },
+    {
+      "number": 15,
+      "speaker": "FIRST CLOWN",
+      "text": "own life."
+    },
+    {
+      "number": 15,
+      "speaker": "SECOND CLOWN",
+      "text": "But is this law?"
+    },
+    {
+      "number": 16,
+      "speaker": "FIRST CLOWN",
+      "text": "Ay, marry, is’t; crowner’s quest law."
+    },
+    {
+      "number": 17,
+      "speaker": "SECOND CLOWN",
+      "text": "Will you ha’ the truth on’t? If this had not been a"
+    },
+    {
+      "number": 18,
+      "speaker": "SECOND CLOWN",
+      "text": "gentlewoman, she should have been buried out o’ Christian burial."
+    },
+    {
+      "number": 19,
+      "speaker": "FIRST CLOWN",
+      "text": "Why, there thou say’st: and the more pity that great folk should"
+    },
+    {
+      "number": 20,
+      "speaker": "FIRST CLOWN",
+      "text": "have countenance in this world to drown or hang themselves, more than"
+    },
+    {
+      "number": 21,
+      "speaker": "FIRST CLOWN",
+      "text": "their even Christian. Come, my spade. There is no ancient gentleman but"
+    },
+    {
+      "number": 22,
+      "speaker": "FIRST CLOWN",
+      "text": "gardeners, ditchers, and grave-makers: they hold up Adam’s profession."
+    },
+    {
+      "number": 23,
+      "speaker": "SECOND CLOWN",
+      "text": "Was he a gentleman?"
+    },
+    {
+      "number": 24,
+      "speaker": "FIRST CLOWN",
+      "text": "A’ was the first that ever bore arms."
+    },
+    {
+      "number": 25,
+      "speaker": "SECOND CLOWN",
+      "text": "Why, he had none."
+    },
+    {
+      "number": 26,
+      "speaker": "FIRST CLOWN",
+      "text": "What, art a heathen? How dost thou understand the Scripture? The Scripture"
+    },
+    {
+      "number": 27,
+      "speaker": "FIRST CLOWN",
+      "text": "says “Adam digged:” could he dig without arms? I’ll put another question"
+    },
+    {
+      "number": 28,
+      "speaker": "FIRST CLOWN",
+      "text": "to thee: if thou answerest me not to the purpose, confess thyself—"
+    },
+    {
+      "number": 29,
+      "speaker": "SECOND CLOWN",
+      "text": "Go to."
+    },
+    {
+      "number": 30,
+      "speaker": "FIRST CLOWN",
+      "text": "What is he that builds stronger than either the mason, the shipwright, or the carpenter?"
+    },
+    {
+      "number": 31,
+      "speaker": "SECOND CLOWN",
+      "text": "The gallows-maker; for that frame outlives a thousand tenants."
+    },
+    {
+      "number": 32,
+      "speaker": "FIRST CLOWN",
+      "text": "I like thy wit well, in good faith: the gallows does well;"
+    },
+    {
+      "number": 33,
+      "speaker": "FIRST CLOWN",
+      "text": "but how does it well? it does well to those that do"
+    },
+    {
+      "number": 34,
+      "speaker": "FIRST CLOWN",
+      "text": "ill: now thou dost ill to say the gallows is built stronger"
+    },
+    {
+      "number": 35,
+      "speaker": "FIRST CLOWN",
+      "text": "than the church: argal, the gallows may do well to thee. To’t"
+    },
+    {
+      "number": 36,
+      "speaker": "FIRST CLOWN",
+      "text": "again, come."
+    },
+    {
+      "number": 37,
+      "speaker": "SECOND CLOWN",
+      "text": "“Who builds stronger than a mason, a shipwright, or a carpenter?”"
+    },
+    {
+      "number": 38,
+      "speaker": "FIRST CLOWN",
+      "text": "Ay, tell me that, and unyoke."
+    },
+    {
+      "number": 38,
+      "speaker": "SECOND CLOWN",
+      "text": "Marry, now I can tell."
+    },
+    {
+      "number": 39,
+      "speaker": "FIRST CLOWN",
+      "text": "To’t."
+    },
+    {
+      "number": 39,
+      "speaker": "SECOND CLOWN",
+      "text": "Mass, I cannot tell."
+    },
+    {
+      "number": 40,
+      "speaker": "FIRST CLOWN",
+      "text": "Cudgel thy brains no more about it, for your dull ass will"
+    },
+    {
+      "number": 41,
+      "speaker": "FIRST CLOWN",
+      "text": "not mend his pace with beating; and, when you are asked this"
+    },
+    {
+      "number": 42,
+      "speaker": "FIRST CLOWN",
+      "text": "question next, say “a grave-maker:” the houses that he makes last till"
+    },
+    {
+      "number": 43,
+      "speaker": "FIRST CLOWN",
+      "text": "doomsday. Go, get thee to Yaughan: fetch me a stoup of liquor."
+    },
+    {
+      "number": 44,
+      "speaker": "FIRST CLOWN",
+      "text": "He digs and sings. In youth, when I did love, did love,"
+    },
+    {
+      "number": 45,
+      "speaker": "FIRST CLOWN",
+      "text": "Methought it was very sweet, To contract, O, the time, for, ah,"
+    },
+    {
+      "number": 46,
+      "speaker": "FIRST CLOWN",
+      "text": "my behove, O, methought, there was nothing meet."
+    },
+    {
+      "number": 47,
+      "speaker": "HAMLET",
+      "text": "Has this fellow no feeling of his business, that he sings at grave-making?"
+    },
+    {
+      "number": 48,
+      "speaker": "HORATIO",
+      "text": "Custom hath made it in him a property of easiness."
+    },
+    {
+      "number": 49,
+      "speaker": "HAMLET",
+      "text": "’Tis e’en so: the hand of little employment hath the daintier sense."
+    },
+    {
+      "number": 50,
+      "speaker": "FIRST CLOWN",
+      "text": "But age, with his stealing steps, Hath claw’d me in his clutch,"
+    },
+    {
+      "number": 51,
+      "speaker": "FIRST CLOWN",
+      "text": "And hath shipped me intil the land, As if I had never"
+    },
+    {
+      "number": 52,
+      "speaker": "FIRST CLOWN",
+      "text": "been such."
+    },
+    {
+      "number": 53,
+      "speaker": "HAMLET",
+      "text": "That skull had a tongue in it, and could sing once: how"
+    },
+    {
+      "number": 54,
+      "speaker": "HAMLET",
+      "text": "the knave jowls it to the ground, as if it were Cain’s"
+    },
+    {
+      "number": 55,
+      "speaker": "HAMLET",
+      "text": "jaw-bone, that did the first murder! It might be the pate of"
+    },
+    {
+      "number": 56,
+      "speaker": "HAMLET",
+      "text": "a politician, which this ass now o’er-reaches; one that would circumvent God,"
+    },
+    {
+      "number": 57,
+      "speaker": "HAMLET",
+      "text": "might it not?"
+    },
+    {
+      "number": 57,
+      "speaker": "HORATIO",
+      "text": "It might, my lord."
+    },
+    {
+      "number": 58,
+      "speaker": "HAMLET",
+      "text": "Or of a courtier; which could say “Good morrow, sweet lord! How"
+    },
+    {
+      "number": 59,
+      "speaker": "HAMLET",
+      "text": "dost thou, good lord?” This might be my lord such-a-one, that praised"
+    },
+    {
+      "number": 60,
+      "speaker": "HAMLET",
+      "text": "my lord such-a-one’s horse, when he meant to beg it; might it"
+    },
+    {
+      "number": 61,
+      "speaker": "HAMLET",
+      "text": "not?"
+    },
+    {
+      "number": 61,
+      "speaker": "HORATIO",
+      "text": "Ay, my lord."
+    },
+    {
+      "number": 62,
+      "speaker": "HAMLET",
+      "text": "Why, e’en so: and now my Lady Worm’s; chapless, and knocked about"
+    },
+    {
+      "number": 63,
+      "speaker": "HAMLET",
+      "text": "the mazzard with a sexton’s spade: here’s fine revolution, an we had"
+    },
+    {
+      "number": 64,
+      "speaker": "HAMLET",
+      "text": "the trick to see’t. Did these bones cost no more the breeding,"
+    },
+    {
+      "number": 65,
+      "speaker": "HAMLET",
+      "text": "but to play at loggats with ’em? mine ache to think on’t."
+    },
+    {
+      "number": 66,
+      "speaker": "FIRST CLOWN",
+      "text": "A pick-axe, and a spade, a spade, For and a shrouding sheet:"
+    },
+    {
+      "number": 67,
+      "speaker": "FIRST CLOWN",
+      "text": "O, a pit of clay for to be made For such a"
+    },
+    {
+      "number": 68,
+      "speaker": "FIRST CLOWN",
+      "text": "guest is meet."
+    },
+    {
+      "number": 69,
+      "speaker": "HAMLET",
+      "text": "There’s another: why may not that be the skull of a lawyer?"
+    },
+    {
+      "number": 70,
+      "speaker": "HAMLET",
+      "text": "Where be his quiddities now, his quillets, his cases, his tenures, and"
+    },
+    {
+      "number": 71,
+      "speaker": "HAMLET",
+      "text": "his tricks? why does he suffer this rude knave now to knock"
+    },
+    {
+      "number": 72,
+      "speaker": "HAMLET",
+      "text": "him about the sconce with a dirty shovel, and will not tell"
+    },
+    {
+      "number": 73,
+      "speaker": "HAMLET",
+      "text": "him of his action of battery? Hum! This fellow might be in’s"
+    },
+    {
+      "number": 74,
+      "speaker": "HAMLET",
+      "text": "time a great buyer of land, with his statutes, his recognizances, his"
+    },
+    {
+      "number": 75,
+      "speaker": "HAMLET",
+      "text": "fines, his double vouchers, his recoveries: is this the fine of his"
+    },
+    {
+      "number": 76,
+      "speaker": "HAMLET",
+      "text": "fines, and the recovery of his recoveries, to have his fine pate"
+    },
+    {
+      "number": 77,
+      "speaker": "HAMLET",
+      "text": "full of fine dirt? will his vouchers vouch him no more of"
+    },
+    {
+      "number": 78,
+      "speaker": "HAMLET",
+      "text": "his purchases, and double ones too, than the length and breadth of"
+    },
+    {
+      "number": 79,
+      "speaker": "HAMLET",
+      "text": "a pair of indentures? The very conveyances of his lands will hardly"
+    },
+    {
+      "number": 80,
+      "speaker": "HAMLET",
+      "text": "lie in this box; and must the inheritor himself have no more,"
+    },
+    {
+      "number": 81,
+      "speaker": "HAMLET",
+      "text": "ha?"
+    },
+    {
+      "number": 81,
+      "speaker": "HORATIO",
+      "text": "Not a jot more, my lord."
+    },
+    {
+      "number": 82,
+      "speaker": "HAMLET",
+      "text": "Is not parchment made of sheepskins?"
+    },
+    {
+      "number": 83,
+      "speaker": "HORATIO",
+      "text": "Ay, my lord, and of calf-skins too."
+    },
+    {
+      "number": 84,
+      "speaker": "HAMLET",
+      "text": "They are sheep and calves which seek out assurance in that. I"
+    },
+    {
+      "number": 85,
+      "speaker": "HAMLET",
+      "text": "will speak to this fellow. Whose grave’s this, sirrah?"
+    },
+    {
+      "number": 86,
+      "speaker": "FIRST CLOWN",
+      "text": "Mine, sir. O, a pit of clay for to be made For"
+    },
+    {
+      "number": 87,
+      "speaker": "FIRST CLOWN",
+      "text": "such a guest is meet."
+    },
+    {
+      "number": 88,
+      "speaker": "HAMLET",
+      "text": "I think it be thine, indeed; for thou liest in’t."
+    },
+    {
+      "number": 89,
+      "speaker": "FIRST CLOWN",
+      "text": "You lie out on’t, sir, and therefore it is not yours: for"
+    },
+    {
+      "number": 90,
+      "speaker": "FIRST CLOWN",
+      "text": "my part, I do not lie in’t, and yet it is mine."
+    },
+    {
+      "number": 91,
+      "speaker": "HAMLET",
+      "text": "Thou dost lie in’t, to be in’t and say it is thine:"
+    },
+    {
+      "number": 92,
+      "speaker": "HAMLET",
+      "text": "’tis for the dead, not for the quick; therefore thou liest."
+    },
+    {
+      "number": 93,
+      "speaker": "FIRST CLOWN",
+      "text": "’Tis a quick lie, sir; ’twill away again, from me to you."
+    },
+    {
+      "number": 94,
+      "speaker": "HAMLET",
+      "text": "What man dost thou dig it for?"
+    },
+    {
+      "number": 95,
+      "speaker": "FIRST CLOWN",
+      "text": "For no man, sir."
+    },
+    {
+      "number": 95,
+      "speaker": "HAMLET",
+      "text": "What woman, then?"
+    },
+    {
+      "number": 96,
+      "speaker": "FIRST CLOWN",
+      "text": "For none, neither."
+    },
+    {
+      "number": 96,
+      "speaker": "HAMLET",
+      "text": "Who is to be buried in’t?"
+    },
+    {
+      "number": 97,
+      "speaker": "FIRST CLOWN",
+      "text": "One that was a woman, sir; but, rest her soul, she’s dead."
+    },
+    {
+      "number": 98,
+      "speaker": "HAMLET",
+      "text": "How absolute the knave is! we must speak by the card, or"
+    },
+    {
+      "number": 99,
+      "speaker": "HAMLET",
+      "text": "equivocation will undo us. By the Lord, Horatio, these three years I"
+    },
+    {
+      "number": 100,
+      "speaker": "HAMLET",
+      "text": "have taken a note of it; the age is grown so picked"
+    },
+    {
+      "number": 101,
+      "speaker": "HAMLET",
+      "text": "that the toe of the peasant comes so near the heel of"
+    },
+    {
+      "number": 102,
+      "speaker": "HAMLET",
+      "text": "the courtier, he galls his kibe. How long hast thou been a"
+    },
+    {
+      "number": 103,
+      "speaker": "HAMLET",
+      "text": "grave-maker?"
+    },
+    {
+      "number": 104,
+      "speaker": "FIRST CLOWN",
+      "text": "Of all the days i’ the year, I came to’t that day"
+    },
+    {
+      "number": 105,
+      "speaker": "FIRST CLOWN",
+      "text": "that our last king Hamlet overcame Fortinbras."
+    },
+    {
+      "number": 106,
+      "speaker": "HAMLET",
+      "text": "How long is that since?"
+    },
+    {
+      "number": 107,
+      "speaker": "FIRST CLOWN",
+      "text": "Cannot you tell that? every fool can tell that: it was the"
+    },
+    {
+      "number": 108,
+      "speaker": "FIRST CLOWN",
+      "text": "very day that young Hamlet was born; he that is mad, and"
+    },
+    {
+      "number": 109,
+      "speaker": "FIRST CLOWN",
+      "text": "sent into England."
+    },
+    {
+      "number": 110,
+      "speaker": "HAMLET",
+      "text": "Ay, marry, why was he sent into England?"
+    },
+    {
+      "number": 111,
+      "speaker": "FIRST CLOWN",
+      "text": "Why, because he was mad: he shall recover his wits there; or,"
+    },
+    {
+      "number": 112,
+      "speaker": "FIRST CLOWN",
+      "text": "if he do not, it’s no great matter there."
+    },
+    {
+      "number": 113,
+      "speaker": "HAMLET",
+      "text": "Why?"
+    },
+    {
+      "number": 114,
+      "speaker": "FIRST CLOWN",
+      "text": "’Twill not be seen in him there; there the men are as mad as he."
+    },
+    {
+      "number": 115,
+      "speaker": "HAMLET",
+      "text": "How came he mad?"
+    },
+    {
+      "number": 115,
+      "speaker": "FIRST CLOWN",
+      "text": "Very strangely, they say."
+    },
+    {
+      "number": 116,
+      "speaker": "HAMLET",
+      "text": "How strangely?"
+    },
+    {
+      "number": 116,
+      "speaker": "FIRST CLOWN",
+      "text": "Faith, e’en with losing his wits."
+    },
+    {
+      "number": 117,
+      "speaker": "HAMLET",
+      "text": "Upon what ground?"
+    },
+    {
+      "number": 118,
+      "speaker": "FIRST CLOWN",
+      "text": "Why, here in Denmark: I have been sexton here, man and boy, thirty years."
+    },
+    {
+      "number": 119,
+      "speaker": "HAMLET",
+      "text": "How long will a man lie i’ the earth ere he rot?"
+    },
+    {
+      "number": 120,
+      "speaker": "FIRST CLOWN",
+      "text": "I’ faith, if he be not rotten before he die—as we have"
+    },
+    {
+      "number": 121,
+      "speaker": "FIRST CLOWN",
+      "text": "many pocky corses now-a-days, that will scarce hold the laying in—he will"
+    },
+    {
+      "number": 122,
+      "speaker": "FIRST CLOWN",
+      "text": "last you some eight year or nine year: a tanner will last"
+    },
+    {
+      "number": 123,
+      "speaker": "FIRST CLOWN",
+      "text": "you nine year."
+    },
+    {
+      "number": 123,
+      "speaker": "HAMLET",
+      "text": "Why he more than another?"
+    },
+    {
+      "number": 124,
+      "speaker": "FIRST CLOWN",
+      "text": "Why, sir, his hide is so tanned with his trade, that he"
+    },
+    {
+      "number": 125,
+      "speaker": "FIRST CLOWN",
+      "text": "will keep out water a great while; and your water is a"
+    },
+    {
+      "number": 126,
+      "speaker": "FIRST CLOWN",
+      "text": "sore decayer of your whoreson dead body. Here’s a skull now; this"
+    },
+    {
+      "number": 127,
+      "speaker": "FIRST CLOWN",
+      "text": "skull has lain in the earth three and twenty years."
+    },
+    {
+      "number": 128,
+      "speaker": "HAMLET",
+      "text": "Whose was it?"
+    },
+    {
+      "number": 129,
+      "speaker": "FIRST CLOWN",
+      "text": "A whoreson mad fellow’s it was: whose do you think it was?"
+    },
+    {
+      "number": 130,
+      "speaker": "HAMLET",
+      "text": "Nay, I know not."
+    },
+    {
+      "number": 131,
+      "speaker": "FIRST CLOWN",
+      "text": "A pestilence on him for a mad rogue! a’ poured a flagon"
+    },
+    {
+      "number": 132,
+      "speaker": "FIRST CLOWN",
+      "text": "of Rhenish on my head once. This same skull, sir, was Yorick’s"
+    },
+    {
+      "number": 133,
+      "speaker": "FIRST CLOWN",
+      "text": "skull, the king’s jester."
+    },
+    {
+      "number": 133,
+      "speaker": "HAMLET",
+      "text": "This?"
+    },
+    {
+      "number": 134,
+      "speaker": "FIRST CLOWN",
+      "text": "E’en that."
+    },
+    {
+      "number": 135,
+      "speaker": "HAMLET",
+      "text": "Let me see. Alas, poor Yorick! I knew him, Horatio: a fellow"
+    },
+    {
+      "number": 136,
+      "speaker": "HAMLET",
+      "text": "of infinite jest, of most excellent fancy: he hath borne me on"
+    },
+    {
+      "number": 137,
+      "speaker": "HAMLET",
+      "text": "his back a thousand times; and now, how abhorred in my imagination"
+    },
+    {
+      "number": 138,
+      "speaker": "HAMLET",
+      "text": "it is! my gorge rises at it. Here hung those lips that"
+    },
+    {
+      "number": 139,
+      "speaker": "HAMLET",
+      "text": "I have kissed I know not how oft. Where be your gibes"
+    },
+    {
+      "number": 140,
+      "speaker": "HAMLET",
+      "text": "now? your gambols? your songs? your flashes of merriment, that were wont"
+    },
+    {
+      "number": 141,
+      "speaker": "HAMLET",
+      "text": "to set the table on a roar? Not one now, to mock"
+    },
+    {
+      "number": 142,
+      "speaker": "HAMLET",
+      "text": "your own grinning? quite chap-fallen? Now get you to my lady’s chamber,"
+    },
+    {
+      "number": 143,
+      "speaker": "HAMLET",
+      "text": "and tell her, let her paint an inch thick, to this favour"
+    },
+    {
+      "number": 144,
+      "speaker": "HAMLET",
+      "text": "she must come; make her laugh at that. Prithee, Horatio, tell me"
+    },
+    {
+      "number": 145,
+      "speaker": "HAMLET",
+      "text": "one thing."
+    },
+    {
+      "number": 145,
+      "speaker": "HORATIO",
+      "text": "What’s that, my lord?"
+    },
+    {
+      "number": 146,
+      "speaker": "HAMLET",
+      "text": "Dost thou think Alexander looked o’ this fashion i’ the earth?"
+    },
+    {
+      "number": 147,
+      "speaker": "HORATIO",
+      "text": "E’en so."
+    },
+    {
+      "number": 147,
+      "speaker": "HAMLET",
+      "text": "And smelt so? pah!"
+    },
+    {
+      "number": 148,
+      "speaker": "HORATIO",
+      "text": "E’en so, my lord."
+    },
+    {
+      "number": 149,
+      "speaker": "HAMLET",
+      "text": "To what base uses we may return, Horatio! Why may not imagination"
+    },
+    {
+      "number": 150,
+      "speaker": "HAMLET",
+      "text": "trace the noble dust of Alexander, till he find it stopping a"
+    },
+    {
+      "number": 151,
+      "speaker": "HAMLET",
+      "text": "bung-hole?"
+    },
+    {
+      "number": 152,
+      "speaker": "HORATIO",
+      "text": "’Twere to consider too curiously, to consider so."
+    },
+    {
+      "number": 153,
+      "speaker": "HAMLET",
+      "text": "No, faith, not a jot; but to follow him thither with modesty"
+    },
+    {
+      "number": 154,
+      "speaker": "HAMLET",
+      "text": "enough, and likelihood to lead it: as thus: Alexander died, Alexander was"
+    },
+    {
+      "number": 155,
+      "speaker": "HAMLET",
+      "text": "buried, Alexander returneth into dust; the dust is earth; of earth we"
+    },
+    {
+      "number": 156,
+      "speaker": "HAMLET",
+      "text": "make loam; and why of that loam, whereto he was converted, might"
+    },
+    {
+      "number": 157,
+      "speaker": "HAMLET",
+      "text": "they not stop a beer-barrel? Imperious Caesar, dead and turn’d to clay,"
+    },
+    {
+      "number": 158,
+      "speaker": "HAMLET",
+      "text": "Might stop a hole to keep the wind away: O, that that"
+    },
+    {
+      "number": 159,
+      "speaker": "HAMLET",
+      "text": "earth, which kept the world in awe, Should patch a wall to"
+    },
+    {
+      "number": 160,
+      "speaker": "HAMLET",
+      "text": "expel the winter flaw! But soft! but soft! aside: here comes the"
+    },
+    {
+      "number": 161,
+      "speaker": "HAMLET",
+      "text": "king,"
+    },
+    {
+      "number": 161,
+      "speaker": "LAERTES",
+      "text": "What ceremony else?"
+    },
+    {
+      "number": 162,
+      "speaker": "HAMLET",
+      "text": "That is Laertes,"
+    },
+    {
+      "number": 163,
+      "speaker": "HAMLET",
+      "text": "A very noble youth: mark."
+    },
+    {
+      "number": 163,
+      "speaker": "LAERTES",
+      "text": "What ceremony else?"
+    },
+    {
+      "number": 164,
+      "speaker": "FIRST PRIEST",
+      "text": "Her obsequies have been as far enlarged"
+    },
+    {
+      "number": 165,
+      "speaker": "FIRST PRIEST",
+      "text": "As we have warranty: her death was doubtful;"
+    },
+    {
+      "number": 166,
+      "speaker": "FIRST PRIEST",
+      "text": "And, but that great command o’ersways the order,"
+    },
+    {
+      "number": 167,
+      "speaker": "FIRST PRIEST",
+      "text": "She should in ground unsanctified have lodged"
+    },
+    {
+      "number": 168,
+      "speaker": "FIRST PRIEST",
+      "text": "Till the last trumpet; for charitable prayers,"
+    },
+    {
+      "number": 169,
+      "speaker": "FIRST PRIEST",
+      "text": "Shards, flints and pebbles should be thrown on her:"
+    },
+    {
+      "number": 170,
+      "speaker": "FIRST PRIEST",
+      "text": "Yet here she is allow’d her virgin crants,"
+    },
+    {
+      "number": 171,
+      "speaker": "FIRST PRIEST",
+      "text": "Her maiden strewments and the bringing home"
+    },
+    {
+      "number": 172,
+      "speaker": "FIRST PRIEST",
+      "text": "Of bell and burial."
+    },
+    {
+      "number": 172,
+      "speaker": "LAERTES",
+      "text": "Must there no more be done?"
+    },
+    {
+      "number": 173,
+      "speaker": "FIRST PRIEST",
+      "text": "No more be done:"
+    },
+    {
+      "number": 174,
+      "speaker": "FIRST PRIEST",
+      "text": "We should profane the service of the dead"
+    },
+    {
+      "number": 175,
+      "speaker": "FIRST PRIEST",
+      "text": "To sing a requiem and such rest to her"
+    },
+    {
+      "number": 176,
+      "speaker": "FIRST PRIEST",
+      "text": "As to peace-parted souls."
+    },
+    {
+      "number": 176,
+      "speaker": "LAERTES",
+      "text": "Lay her i’ the earth:"
+    },
+    {
+      "number": 177,
+      "speaker": "LAERTES",
+      "text": "And from her fair and unpolluted flesh"
+    },
+    {
+      "number": 178,
+      "speaker": "LAERTES",
+      "text": "May violets spring! I tell thee, churlish priest,"
+    },
+    {
+      "number": 179,
+      "speaker": "LAERTES",
+      "text": "A ministering angel shall my sister be,"
+    },
+    {
+      "number": 180,
+      "speaker": "LAERTES",
+      "text": "When thou liest howling."
+    },
+    {
+      "number": 180,
+      "speaker": "HAMLET",
+      "text": "What, the fair Ophelia!"
+    },
+    {
+      "number": 181,
+      "speaker": "QUEEN",
+      "text": "Sweets to the sweet: farewell! Scattering flowers."
+    },
+    {
+      "number": 182,
+      "speaker": "QUEEN",
+      "text": "I hoped thou shouldst have been my Hamlet’s wife;"
+    },
+    {
+      "number": 183,
+      "speaker": "QUEEN",
+      "text": "I thought thy bride-bed to have deck’d, sweet maid,"
+    },
+    {
+      "number": 184,
+      "speaker": "QUEEN",
+      "text": "And not have strew’d thy grave."
+    },
+    {
+      "number": 184,
+      "speaker": "LAERTES",
+      "text": "O, treble woe"
+    },
+    {
+      "number": 185,
+      "speaker": "LAERTES",
+      "text": "Fall ten times treble on that cursed head,"
+    },
+    {
+      "number": 186,
+      "speaker": "LAERTES",
+      "text": "Whose wicked deed thy most ingenious sense"
+    },
+    {
+      "number": 187,
+      "speaker": "LAERTES",
+      "text": "Deprived thee of! Hold off the earth awhile,"
+    },
+    {
+      "number": 188,
+      "speaker": "LAERTES",
+      "text": "Till I have caught her once more in mine arms: Leaps into the grave."
+    },
+    {
+      "number": 189,
+      "speaker": "LAERTES",
+      "text": "Now pile your dust upon the quick and dead,"
+    },
+    {
+      "number": 190,
+      "speaker": "LAERTES",
+      "text": "Till of this flat a mountain you have made,"
+    },
+    {
+      "number": 191,
+      "speaker": "LAERTES",
+      "text": "To o’ertop old Pelion, or the skyish head"
+    },
+    {
+      "number": 192,
+      "speaker": "LAERTES",
+      "text": "Of blue Olympus."
+    },
+    {
+      "number": 192,
+      "speaker": "HAMLET",
+      "text": "Advancing. What is he whose grief"
+    },
+    {
+      "number": 193,
+      "speaker": "HAMLET",
+      "text": "Bears such an emphasis? whose phrase of sorrow"
+    },
+    {
+      "number": 194,
+      "speaker": "HAMLET",
+      "text": "Conjures the wandering stars, and makes them stand"
+    },
+    {
+      "number": 195,
+      "speaker": "HAMLET",
+      "text": "Like wonder-wounded hearers? This is I,"
+    },
+    {
+      "number": 196,
+      "speaker": "HAMLET",
+      "text": "Hamlet the Dane. Leaps into the grave."
+    },
+    {
+      "number": 197,
+      "speaker": "LAERTES",
+      "text": "The devil take thy soul! Grappling with him."
+    },
+    {
+      "number": 198,
+      "speaker": "HAMLET",
+      "text": "Thou pray’st not well."
+    },
+    {
+      "number": 199,
+      "speaker": "HAMLET",
+      "text": "I prithee, take thy fingers from my throat;"
+    },
+    {
+      "number": 200,
+      "speaker": "HAMLET",
+      "text": "For, though I am not splenitive and rash,"
+    },
+    {
+      "number": 201,
+      "speaker": "HAMLET",
+      "text": "Yet have I something in me dangerous,"
+    },
+    {
+      "number": 202,
+      "speaker": "HAMLET",
+      "text": "Which let thy wiseness fear: hold off thy hand."
+    },
+    {
+      "number": 203,
+      "speaker": "KING",
+      "text": "Pluck them asunder."
+    },
+    {
+      "number": 203,
+      "speaker": "QUEEN",
+      "text": "Hamlet, Hamlet!"
+    },
+    {
+      "number": 204,
+      "speaker": "ALL",
+      "text": "Gentlemen—"
+    },
+    {
+      "number": 205,
+      "speaker": "HORATIO",
+      "text": "Good my lord, be quiet. The Attendants part them, and they come"
+    },
+    {
+      "number": 206,
+      "speaker": "HORATIO",
+      "text": "out of the grave."
+    },
+    {
+      "number": 207,
+      "speaker": "HAMLET",
+      "text": "Why, I will fight with him upon this theme"
+    },
+    {
+      "number": 208,
+      "speaker": "HAMLET",
+      "text": "Until my eyelids will no longer wag."
+    },
+    {
+      "number": 209,
+      "speaker": "QUEEN",
+      "text": "O my son, what theme?"
+    },
+    {
+      "number": 209,
+      "speaker": "HAMLET",
+      "text": "I loved Ophelia: forty thousand brothers"
+    },
+    {
+      "number": 210,
+      "speaker": "HAMLET",
+      "text": "Could not, with all their quantity of love,"
+    },
+    {
+      "number": 211,
+      "speaker": "HAMLET",
+      "text": "Make up my sum. What wilt thou do for her?"
+    },
+    {
+      "number": 212,
+      "speaker": "KING",
+      "text": "O, he is mad, Laertes."
+    },
+    {
+      "number": 212,
+      "speaker": "QUEEN",
+      "text": "For love of God, forbear him."
+    },
+    {
+      "number": 213,
+      "speaker": "HAMLET",
+      "text": "’Swounds, show me what thou’lt do:"
+    },
+    {
+      "number": 214,
+      "speaker": "HAMLET",
+      "text": "Woo’t weep? woo’t fight? woo’t fast? woo’t tear thyself?"
+    },
+    {
+      "number": 215,
+      "speaker": "HAMLET",
+      "text": "Woo’t drink up eisel? eat a crocodile?"
+    },
+    {
+      "number": 216,
+      "speaker": "HAMLET",
+      "text": "I’ll do’t. Dost thou come here to whine?"
+    },
+    {
+      "number": 217,
+      "speaker": "HAMLET",
+      "text": "To outface me with leaping in her grave?"
+    },
+    {
+      "number": 218,
+      "speaker": "HAMLET",
+      "text": "Be buried quick with her, and so will I:"
+    },
+    {
+      "number": 219,
+      "speaker": "HAMLET",
+      "text": "And, if thou prate of mountains, let them throw"
+    },
+    {
+      "number": 220,
+      "speaker": "HAMLET",
+      "text": "Millions of acres on us, till our ground,"
+    },
+    {
+      "number": 221,
+      "speaker": "HAMLET",
+      "text": "Singeing his pate against the burning zone,"
+    },
+    {
+      "number": 222,
+      "speaker": "HAMLET",
+      "text": "Make Ossa like a wart! Nay, an thou’lt mouth,"
+    },
+    {
+      "number": 223,
+      "speaker": "HAMLET",
+      "text": "I’ll rant as well as thou."
+    },
+    {
+      "number": 223,
+      "speaker": "QUEEN",
+      "text": "This is mere madness:"
+    },
+    {
+      "number": 224,
+      "speaker": "QUEEN",
+      "text": "And thus awhile the fit will work on him;"
+    },
+    {
+      "number": 225,
+      "speaker": "QUEEN",
+      "text": "Anon, as patient as the female dove,"
+    },
+    {
+      "number": 226,
+      "speaker": "QUEEN",
+      "text": "When that her golden couplets are disclosed,"
+    },
+    {
+      "number": 227,
+      "speaker": "QUEEN",
+      "text": "His silence will sit drooping."
+    },
+    {
+      "number": 227,
+      "speaker": "HAMLET",
+      "text": "Hear you, sir;"
+    },
+    {
+      "number": 228,
+      "speaker": "HAMLET",
+      "text": "What is the reason that you use me thus?"
+    },
+    {
+      "number": 229,
+      "speaker": "HAMLET",
+      "text": "I loved you ever: but it is no matter;"
+    },
+    {
+      "number": 230,
+      "speaker": "HAMLET",
+      "text": "Let Hercules himself do what he may,"
+    },
+    {
+      "number": 231,
+      "speaker": "HAMLET",
+      "text": "The cat will mew and dog will have his day."
+    },
+    {
+      "number": 232,
+      "speaker": "KING",
+      "text": "I pray you, good Horatio, wait upon him."
+    },
+    {
+      "number": 233,
+      "speaker": "KING",
+      "text": "To Laertes. Strengthen your patience in our last night’s speech;"
+    },
+    {
+      "number": 234,
+      "speaker": "KING",
+      "text": "We’ll put the matter to the present push."
+    },
+    {
+      "number": 235,
+      "speaker": "KING",
+      "text": "Good Gertrude, set some watch over your son."
+    },
+    {
+      "number": 236,
+      "speaker": "KING",
+      "text": "This grave shall have a living monument:"
+    },
+    {
+      "number": 237,
+      "speaker": "KING",
+      "text": "An hour of quiet shortly shall we see;"
+    },
+    {
+      "number": 238,
+      "speaker": "KING",
+      "text": "Till then, in patience our proceeding be."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter two Clowns, with spades, etc."
+    },
+    {
+      "after_line": 39,
+      "text": "Enter Hamlet and Horatio, at a distance."
+    },
+    {
+      "after_line": 46,
+      "text": "Exit Second Clown."
+    },
+    {
+      "after_line": 52,
+      "text": "Sings."
+    },
+    {
+      "after_line": 52,
+      "text": "Throws up a skull."
+    },
+    {
+      "after_line": 68,
+      "text": "Sings."
+    },
+    {
+      "after_line": 68,
+      "text": "Throws up another skull."
+    },
+    {
+      "after_line": 87,
+      "text": "Sings."
+    },
+    {
+      "after_line": 145,
+      "text": "Takes the skull."
+    },
+    {
+      "after_line": 147,
+      "text": "Puts down the skull."
+    },
+    {
+      "after_line": 161,
+      "text": "Enter Priests, etc. in procession; the Corpse of Ophelia, Laertes and Mourners following; King, Queen, their trains, etc."
+    },
+    {
+      "after_line": 161,
+      "text": "The queen, the courtiers: who is this they follow? And with such maimed rites? This doth betoken The corse they follow did with desperate hand Fordo its own life: ’twas of some estate. Couch we awhile, and mark. Retiring with Horatio."
+    },
+    {
+      "after_line": 231,
+      "text": "Exit."
+    },
+    {
+      "after_line": 232,
+      "text": "Exit Horatio."
+    },
+    {
+      "after_line": 238,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "hamlet_act5_scene1_gloss1",
+      "line": 1,
+      "phrase": "Christian burial",
+      "definition": "proper church burial (denied to suicides)"
+    },
+    {
+      "id": "hamlet_act5_scene1_gloss2",
+      "line": 1,
+      "phrase": "wilfully seeks her own salvation",
+      "definition": "willfully seeks her own heaven by suicide (ironic)"
+    },
+    {
+      "id": "hamlet_act5_scene1_gloss3",
+      "line": 2,
+      "phrase": "straight",
+      "definition": "straightaway; immediately"
+    },
+    {
+      "id": "hamlet_act5_scene1_gloss4",
+      "line": 3,
+      "phrase": "crowner",
+      "definition": "coroner"
+    },
+    {
+      "id": "hamlet_act5_scene1_gloss5",
+      "line": 6,
+      "phrase": "se offendendo",
+      "definition": "malapropism for 'se defendendo' (in self-defense)"
+    },
+    {
+      "id": "hamlet_act5_scene1_gloss6",
+      "line": 8,
+      "phrase": "three branches",
+      "definition": "jocular legal terminology — three parts"
+    },
+    {
+      "id": "hamlet_act5_scene1_gloss7",
+      "line": 9,
+      "phrase": "Argal",
+      "definition": "corruption of 'ergo' (therefore)"
+    },
+    {
+      "id": "hamlet_act5_scene1_gloss8",
+      "line": 9,
+      "phrase": "Goodman delver",
+      "definition": "Mr. Digger (addressing second clown)"
+    },
+    {
+      "id": "hamlet_act5_scene1_gloss9",
+      "line": 16,
+      "phrase": "quest law",
+      "definition": "inquest verdict"
+    },
+    {
+      "id": "hamlet_act5_scene1_gloss10",
+      "line": 19,
+      "phrase": "there thou say’st",
+      "definition": "there you are right"
+    },
+    {
+      "id": "hamlet_act5_scene1_gloss11",
+      "line": 19,
+      "phrase": "more pity",
+      "definition": "pity is that great folk"
+    },
+    {
+      "id": "hamlet_act5_scene1_gloss12",
+      "line": 24,
+      "phrase": "bore arms",
+      "definition": "carried weapons; also, a coat of arms"
+    },
+    {
+      "id": "hamlet_act5_scene1_gloss13",
+      "line": 31,
+      "phrase": "gallows",
+      "definition": "executioner's gibbet"
+    },
+    {
+      "id": "hamlet_act5_scene1_gloss14",
+      "line": 30,
+      "phrase": "builds stronger than",
+      "definition": "makes a more lasting frame than"
+    },
+    {
+      "id": "hamlet_act5_scene1_gloss15",
+      "line": 43,
+      "phrase": "a stoup of liquor",
+      "definition": "a large mug of drink"
+    },
+    {
+      "id": "hamlet_act5_scene1_gloss16",
+      "line": 49,
+      "phrase": "daintier sense",
+      "definition": "more delicate feeling"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "hamlet_act5_scene1_ann1",
+      "line_start": 1,
+      "line_end": 55,
+      "citation_display": "Hamlet 5.1.1–55",
+      "category": "historical",
+      "title": "The gravediggers and the theology of suicide",
+      "body": "The clowns' opening argument about whether Ophelia deserves Christian burial parodies a real 1560 legal case, Hales v. Pettit, which asked whether a suicide could legally transfer property. The First Clown's 'Argal' (a corruption of 'ergo') mocks the legalistic reasoning of the original case. Shakespeare's audience would have laughed at the bad Latin and recognized the grim topic underneath: the Church of England denied Christian burial rites to self-murderers, and exceptions required 'great command o'ersways the order.' The scene establishes, before Hamlet arrives, that Ophelia's death sits under a theological and legal ambiguity — the play will never quite say whether her drowning was suicide, accident, or something between the two.",
+      "sources": [
+        "Harold Jenkins, Hamlet (Arden 2nd ed., 1982)",
+        "Susan Snyder, 'The Genres of Shakespeare's Plays' (1979)"
+      ]
+    },
+    {
+      "id": "hamlet_act5_scene1_ann2",
+      "line_start": 55,
+      "line_end": 100,
+      "citation_display": "Hamlet 5.1.55–100",
+      "category": "thematic",
+      "title": "Hamlet in the graveyard: the return of the body",
+      "body": "The prince who spent Act 3 in a state of abstract meditation on death now handles actual skulls. The change is registered in the verse: 'That skull had a tongue in it, and could sing once' is plain English, no longer dressed in the rhetoric of 'this mortal coil.' Hamlet has been in a boat with pirates, seen his own execution order, and confronted death as a specific thing rather than a philosophical topic. The graveyard scene tracks this development — skulls become individuals (a lawyer, a politician, a courtier, a jester) rather than types. The meditation is the inverse of Ecclesiastes: not 'all is vanity' but 'someone once kissed these bones.'",
+      "sources": [
+        "Stephen Greenblatt, Hamlet in Purgatory (2001)"
+      ]
+    },
+    {
+      "id": "hamlet_act5_scene1_ann3",
+      "line_start": 166,
+      "line_end": 188,
+      "citation_display": "Hamlet 5.1.166–188",
+      "category": "close_reading",
+      "title": "'Alas, poor Yorick!'",
+      "body": "Hamlet's encounter with Yorick's skull is the play's most anthologized moment, and the one most liable to sentimental misreading. The speech is not melancholy but astonished: the jester who carried young Hamlet on his back now fits in the prince's hand. 'Where be your gibes now? your gambols? your songs? your flashes of merriment, that were wont to set the table on a roar?' The specific memory makes the grief personal in a way the abstract soliloquies could not. What follows ('Alexander died, Alexander was buried, Alexander returneth into dust') pushes the lesson outward again — but the Yorick moment itself is irreducible. A remembered child's laughter survives in an empty skull, and that survival is stranger than any philosophy can manage.",
+      "sources": [
+        "Tony Tanner, Prefaces to Shakespeare (2010)"
+      ]
+    },
+    {
+      "id": "hamlet_act5_scene1_ann4",
+      "line_start": 228,
+      "line_end": 275,
+      "citation_display": "Hamlet 5.1.228–275",
+      "category": "structural",
+      "title": "The grave-leap and the staging of rivalry",
+      "body": "Laertes leaps into Ophelia's grave; Hamlet leaps in after him. The physical confrontation inside the grave is one of Shakespeare's most daring stage images: two mourners fighting for possession of a corpse, each claiming to have loved Ophelia more. The First Quarto's stage direction — 'Hamlet leaps in after Laertes' — is disputed in later editions, and modern productions handle the moment variously. The textual uncertainty mirrors the scene's ethical uncertainty: the declaration of love ('forty thousand brothers / Could not, with all their quantity of love, / Make up my sum') is passionate but also bizarrely competitive. Hamlet loves Ophelia in retrospect, against Laertes, in public — a form of love her living self never got.",
+      "sources": [
+        "Paul Werstine, 'The Textual Mystery of Hamlet' (1988)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "hamlet_act5_scene1_q1",
+      "kind": "historical",
+      "prompt": "What do the gravediggers debate at the start of the scene?",
+      "options": [
+        "Whether to dig Polonius's grave or Ophelia's first.",
+        "Whether Ophelia deserves Christian burial rites given her apparent suicide.",
+        "How much they should charge the King for digging.",
+        "Whether a new cemetery should be opened outside Elsinore."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 1,
+      "anchor_line_end": 30
+    },
+    {
+      "id": "hamlet_act5_scene1_q2",
+      "kind": "comprehension",
+      "prompt": "Whose skull does Hamlet particularly remember and mourn?",
+      "options": [
+        "His father's.",
+        "Polonius's.",
+        "Yorick's, the court jester.",
+        "A lawyer unnamed."
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 10,
+      "anchor_line_start": 160,
+      "anchor_line_end": 175
+    },
+    {
+      "id": "hamlet_act5_scene1_q3",
+      "kind": "theme",
+      "prompt": "How does Hamlet's meditation on mortality in the graveyard differ from his 'To be, or not to be' soliloquy?",
+      "options": [
+        "It is more abstract and philosophical than the soliloquy.",
+        "It is concrete and personal — particular skulls remembered as particular persons — rather than abstract.",
+        "It is delivered in Latin.",
+        "It concludes that death is to be welcomed without reservation."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 55,
+      "anchor_line_end": 175
+    },
+    {
+      "id": "hamlet_act5_scene1_q4",
+      "kind": "close_reading",
+      "prompt": "What does Hamlet's tracing of Alexander's dust through 'loam' and a 'beer-barrel' argue?",
+      "options": [
+        "That great men should be embalmed rather than buried.",
+        "That even the noblest dust ends up stopping a bung-hole — a radical leveling of human greatness.",
+        "That beer is a fitter drink for a king than wine.",
+        "That Alexander was buried in Denmark."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 186,
+      "anchor_line_end": 208
+    },
+    {
+      "id": "hamlet_act5_scene1_q5",
+      "kind": "inference",
+      "prompt": "Why does Hamlet leap into Ophelia's grave after Laertes?",
+      "options": [
+        "To rescue a sword he has dropped.",
+        "To insist — publicly and passionately — that he loved Ophelia more than Laertes could.",
+        "To prevent the priest from finishing the curtailed rites.",
+        "To attack Claudius, who is standing at the graveside."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 235,
+      "anchor_line_end": 260
+    },
+    {
+      "id": "hamlet_act5_scene1_q6",
+      "kind": "comprehension",
+      "prompt": "What does Hamlet declare about his love for Ophelia at the graveside?",
+      "options": [
+        "That he never loved her and all his letters were pretense.",
+        "That forty thousand brothers could not have loved her as he did.",
+        "That he will follow her into death immediately.",
+        "That he forgives her for rejecting his suit."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 247,
+      "anchor_line_end": 253
+    }
+  ]
+}

@@ -1,0 +1,1318 @@
+{
+  "section_id": "hamlet_act4_scene5",
+  "work_id": "hamlet",
+  "sequence": 16,
+  "act": 4,
+  "scene": 5,
+  "kind": "scene",
+  "scene_title": "Elsinore. A room in the castle",
+  "line_count": 193,
+  "word_count": 1496,
+  "est_read_minutes": 7,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "QUEEN",
+      "text": "I will not speak with her."
+    },
+    {
+      "number": 1,
+      "speaker": "GENTLEMAN",
+      "text": "She is importunate, indeed distract:"
+    },
+    {
+      "number": 2,
+      "speaker": "GENTLEMAN",
+      "text": "Her mood will needs be pitied."
+    },
+    {
+      "number": 2,
+      "speaker": "QUEEN",
+      "text": "What would she have?"
+    },
+    {
+      "number": 3,
+      "speaker": "GENTLEMAN",
+      "text": "She speaks much of her father; says she hears"
+    },
+    {
+      "number": 4,
+      "speaker": "GENTLEMAN",
+      "text": "There’s tricks i’ the world; and hems, and beats her heart;"
+    },
+    {
+      "number": 5,
+      "speaker": "GENTLEMAN",
+      "text": "Spurns enviously at straws; speaks things in doubt,"
+    },
+    {
+      "number": 6,
+      "speaker": "GENTLEMAN",
+      "text": "That carry but half sense: her speech is nothing,"
+    },
+    {
+      "number": 7,
+      "speaker": "GENTLEMAN",
+      "text": "Yet the unshaped use of it doth move"
+    },
+    {
+      "number": 8,
+      "speaker": "GENTLEMAN",
+      "text": "The hearers to collection; they aim at it,"
+    },
+    {
+      "number": 9,
+      "speaker": "GENTLEMAN",
+      "text": "And botch the words up fit to their own thoughts;"
+    },
+    {
+      "number": 10,
+      "speaker": "GENTLEMAN",
+      "text": "Which, as her winks, and nods, and gestures yield them,"
+    },
+    {
+      "number": 11,
+      "speaker": "GENTLEMAN",
+      "text": "Indeed would make one think there might be thought,"
+    },
+    {
+      "number": 12,
+      "speaker": "GENTLEMAN",
+      "text": "Though nothing sure, yet much unhappily."
+    },
+    {
+      "number": 13,
+      "speaker": "HORATIO",
+      "text": "’Twere good she were spoken with; for she may strew"
+    },
+    {
+      "number": 14,
+      "speaker": "HORATIO",
+      "text": "Dangerous conjectures in ill-breeding minds."
+    },
+    {
+      "number": 14,
+      "speaker": "QUEEN",
+      "text": "Let her come in."
+    },
+    {
+      "number": 15,
+      "speaker": "QUEEN",
+      "text": "To my sick soul, as sin’s true nature is,"
+    },
+    {
+      "number": 16,
+      "speaker": "QUEEN",
+      "text": "Each toy seems prologue to some great amiss:"
+    },
+    {
+      "number": 17,
+      "speaker": "QUEEN",
+      "text": "So full of artless jealousy is guilt,"
+    },
+    {
+      "number": 18,
+      "speaker": "QUEEN",
+      "text": "It spills itself in fearing to be spilt."
+    },
+    {
+      "number": 19,
+      "speaker": "OPHELIA",
+      "text": "Where is the beauteous majesty of Denmark?"
+    },
+    {
+      "number": 20,
+      "speaker": "QUEEN",
+      "text": "How now, Ophelia!"
+    },
+    {
+      "number": 21,
+      "speaker": "OPHELIA",
+      "text": "How should I your true love know From another one? By his"
+    },
+    {
+      "number": 22,
+      "speaker": "OPHELIA",
+      "text": "cockle hat and staff, And his sandal shoon."
+    },
+    {
+      "number": 23,
+      "speaker": "QUEEN",
+      "text": "Alas, sweet lady, what imports this song?"
+    },
+    {
+      "number": 24,
+      "speaker": "OPHELIA",
+      "text": "Say you? nay, pray you, mark. He is dead and gone, lady,"
+    },
+    {
+      "number": 25,
+      "speaker": "OPHELIA",
+      "text": "He is dead and gone; At his head a grass-green turf, At"
+    },
+    {
+      "number": 26,
+      "speaker": "OPHELIA",
+      "text": "his heels a stone."
+    },
+    {
+      "number": 26,
+      "speaker": "QUEEN",
+      "text": "Nay, but, Ophelia—"
+    },
+    {
+      "number": 27,
+      "speaker": "OPHELIA",
+      "text": "Pray you, mark. White his shroud as the mountain snow—"
+    },
+    {
+      "number": 28,
+      "speaker": "QUEEN",
+      "text": "Alas, look here, my lord."
+    },
+    {
+      "number": 29,
+      "speaker": "OPHELIA",
+      "text": "Larded with sweet flowers; Which bewept to the grave did go With true-love showers."
+    },
+    {
+      "number": 30,
+      "speaker": "KING",
+      "text": "How do you, pretty lady?"
+    },
+    {
+      "number": 31,
+      "speaker": "OPHELIA",
+      "text": "Well, God ’ild you! They say the owl was a baker’s daughter."
+    },
+    {
+      "number": 32,
+      "speaker": "OPHELIA",
+      "text": "Lord, we know what we are, but know not what we may"
+    },
+    {
+      "number": 33,
+      "speaker": "OPHELIA",
+      "text": "be. God be at your table!"
+    },
+    {
+      "number": 33,
+      "speaker": "KING",
+      "text": "Conceit upon her father."
+    },
+    {
+      "number": 34,
+      "speaker": "OPHELIA",
+      "text": "Pray you, let’s have no words of this; but when they ask"
+    },
+    {
+      "number": 35,
+      "speaker": "OPHELIA",
+      "text": "you what it means, say you this: To-morrow is Saint Valentine’s day,"
+    },
+    {
+      "number": 36,
+      "speaker": "OPHELIA",
+      "text": "All in the morning betime, And I a maid at your window,"
+    },
+    {
+      "number": 37,
+      "speaker": "OPHELIA",
+      "text": "To be your Valentine. Then up he rose, and donn’d his clothes,"
+    },
+    {
+      "number": 38,
+      "speaker": "OPHELIA",
+      "text": "And dupp’d the chamber-door; Let in the maid, that out a maid"
+    },
+    {
+      "number": 39,
+      "speaker": "OPHELIA",
+      "text": "Never departed more."
+    },
+    {
+      "number": 39,
+      "speaker": "KING",
+      "text": "Pretty Ophelia!"
+    },
+    {
+      "number": 40,
+      "speaker": "OPHELIA",
+      "text": "Indeed, la, without an oath, I’ll make an end on’t: By Gis"
+    },
+    {
+      "number": 41,
+      "speaker": "OPHELIA",
+      "text": "and by Saint Charity, Alack, and fie for shame! Young men will"
+    },
+    {
+      "number": 42,
+      "speaker": "OPHELIA",
+      "text": "do’t, if they come to’t; By cock, they are to blame. Quoth"
+    },
+    {
+      "number": 43,
+      "speaker": "OPHELIA",
+      "text": "she, before you tumbled me, You promised me to wed. So would"
+    },
+    {
+      "number": 44,
+      "speaker": "OPHELIA",
+      "text": "I ha’ done, by yonder sun, An thou hadst not come to"
+    },
+    {
+      "number": 45,
+      "speaker": "OPHELIA",
+      "text": "my bed."
+    },
+    {
+      "number": 45,
+      "speaker": "KING",
+      "text": "How long hath she been thus?"
+    },
+    {
+      "number": 46,
+      "speaker": "OPHELIA",
+      "text": "I hope all will be well. We must be patient: but I"
+    },
+    {
+      "number": 47,
+      "speaker": "OPHELIA",
+      "text": "cannot choose but weep, to think they should lay him i’ the"
+    },
+    {
+      "number": 48,
+      "speaker": "OPHELIA",
+      "text": "cold ground. My brother shall know of it: and so I thank"
+    },
+    {
+      "number": 49,
+      "speaker": "OPHELIA",
+      "text": "you for your good counsel. Come, my coach! Good night, ladies; good"
+    },
+    {
+      "number": 50,
+      "speaker": "OPHELIA",
+      "text": "night, sweet ladies; good night, good night."
+    },
+    {
+      "number": 51,
+      "speaker": "KING",
+      "text": "Follow her close; give her good watch, I pray you."
+    },
+    {
+      "number": 52,
+      "speaker": "KING",
+      "text": "O, this is the poison of deep grief; it springs"
+    },
+    {
+      "number": 53,
+      "speaker": "KING",
+      "text": "All from her father’s death. O Gertrude, Gertrude,"
+    },
+    {
+      "number": 54,
+      "speaker": "KING",
+      "text": "When sorrows come, they come not single spies,"
+    },
+    {
+      "number": 55,
+      "speaker": "KING",
+      "text": "But in battalions. First, her father slain:"
+    },
+    {
+      "number": 56,
+      "speaker": "KING",
+      "text": "Next, your son gone; and he most violent author"
+    },
+    {
+      "number": 57,
+      "speaker": "KING",
+      "text": "Of his own just remove: the people muddied,"
+    },
+    {
+      "number": 58,
+      "speaker": "KING",
+      "text": "Thick and unwholesome in their thoughts and whispers,"
+    },
+    {
+      "number": 59,
+      "speaker": "KING",
+      "text": "For good Polonius’ death; and we have done but greenly,"
+    },
+    {
+      "number": 60,
+      "speaker": "KING",
+      "text": "In hugger-mugger to inter him: poor Ophelia"
+    },
+    {
+      "number": 61,
+      "speaker": "KING",
+      "text": "Divided from herself and her fair judgment,"
+    },
+    {
+      "number": 62,
+      "speaker": "KING",
+      "text": "Without the which we are pictures, or mere beasts:"
+    },
+    {
+      "number": 63,
+      "speaker": "KING",
+      "text": "Last, and as much containing as all these,"
+    },
+    {
+      "number": 64,
+      "speaker": "KING",
+      "text": "Her brother is in secret come from France;"
+    },
+    {
+      "number": 65,
+      "speaker": "KING",
+      "text": "Feeds on his wonder, keeps himself in clouds,"
+    },
+    {
+      "number": 66,
+      "speaker": "KING",
+      "text": "And wants not buzzers to infect his ear"
+    },
+    {
+      "number": 67,
+      "speaker": "KING",
+      "text": "With pestilent speeches of his father’s death;"
+    },
+    {
+      "number": 68,
+      "speaker": "KING",
+      "text": "Wherein necessity, of matter beggar’d,"
+    },
+    {
+      "number": 69,
+      "speaker": "KING",
+      "text": "Will nothing stick our person to arraign"
+    },
+    {
+      "number": 70,
+      "speaker": "KING",
+      "text": "In ear and ear. O my dear Gertrude, this,"
+    },
+    {
+      "number": 71,
+      "speaker": "KING",
+      "text": "Like to a murdering-piece, in many places"
+    },
+    {
+      "number": 72,
+      "speaker": "KING",
+      "text": "Gives me superfluous death. A noise within."
+    },
+    {
+      "number": 73,
+      "speaker": "QUEEN",
+      "text": "Alack, what noise is this?"
+    },
+    {
+      "number": 74,
+      "speaker": "KING",
+      "text": "Where are my Switzers? Let them guard the door."
+    },
+    {
+      "number": 75,
+      "speaker": "GENTLEMAN",
+      "text": "Save yourself, my lord:"
+    },
+    {
+      "number": 76,
+      "speaker": "GENTLEMAN",
+      "text": "The ocean, overpeering of his list,"
+    },
+    {
+      "number": 77,
+      "speaker": "GENTLEMAN",
+      "text": "Eats not the flats with more impetuous haste"
+    },
+    {
+      "number": 78,
+      "speaker": "GENTLEMAN",
+      "text": "Than young Laertes, in a riotous head,"
+    },
+    {
+      "number": 79,
+      "speaker": "GENTLEMAN",
+      "text": "O’erbears your officers. The rabble call him lord;"
+    },
+    {
+      "number": 80,
+      "speaker": "GENTLEMAN",
+      "text": "And, as the world were now but to begin,"
+    },
+    {
+      "number": 81,
+      "speaker": "GENTLEMAN",
+      "text": "Antiquity forgot, custom not known,"
+    },
+    {
+      "number": 82,
+      "speaker": "GENTLEMAN",
+      "text": "The ratifiers and props of every word,"
+    },
+    {
+      "number": 83,
+      "speaker": "GENTLEMAN",
+      "text": "They cry “Choose we: Laertes shall be king:”"
+    },
+    {
+      "number": 84,
+      "speaker": "GENTLEMAN",
+      "text": "Caps, hands, and tongues, applaud it to the clouds:"
+    },
+    {
+      "number": 85,
+      "speaker": "GENTLEMAN",
+      "text": "“Laertes shall be king, Laertes king!”"
+    },
+    {
+      "number": 86,
+      "speaker": "QUEEN",
+      "text": "How cheerfully on the false trail they cry!"
+    },
+    {
+      "number": 87,
+      "speaker": "QUEEN",
+      "text": "O, this is counter, you false Danish dogs!"
+    },
+    {
+      "number": 88,
+      "speaker": "KING",
+      "text": "The doors are broke. Noise within."
+    },
+    {
+      "number": 89,
+      "speaker": "LAERTES",
+      "text": "Where is this king? Sirs, stand you all without."
+    },
+    {
+      "number": 90,
+      "speaker": "DANES",
+      "text": "No, let’s come in."
+    },
+    {
+      "number": 90,
+      "speaker": "LAERTES",
+      "text": "I pray you, give me leave."
+    },
+    {
+      "number": 91,
+      "speaker": "DANES",
+      "text": "We will, we will. They retire without the door."
+    },
+    {
+      "number": 92,
+      "speaker": "LAERTES",
+      "text": "I thank you: keep the door. O thou vile king,"
+    },
+    {
+      "number": 93,
+      "speaker": "LAERTES",
+      "text": "Give me my father!"
+    },
+    {
+      "number": 93,
+      "speaker": "QUEEN",
+      "text": "Calmly, good Laertes."
+    },
+    {
+      "number": 94,
+      "speaker": "LAERTES",
+      "text": "That drop of blood that’s calm proclaims me bastard,"
+    },
+    {
+      "number": 95,
+      "speaker": "LAERTES",
+      "text": "Cries cuckold to my father, brands the harlot"
+    },
+    {
+      "number": 96,
+      "speaker": "LAERTES",
+      "text": "Even here, between the chaste unsmirched brow"
+    },
+    {
+      "number": 97,
+      "speaker": "LAERTES",
+      "text": "Of my true mother."
+    },
+    {
+      "number": 97,
+      "speaker": "KING",
+      "text": "What is the cause, Laertes,"
+    },
+    {
+      "number": 98,
+      "speaker": "KING",
+      "text": "That thy rebellion looks so giant-like?"
+    },
+    {
+      "number": 99,
+      "speaker": "KING",
+      "text": "Let him go, Gertrude; do not fear our person:"
+    },
+    {
+      "number": 100,
+      "speaker": "KING",
+      "text": "There’s such divinity doth hedge a king,"
+    },
+    {
+      "number": 101,
+      "speaker": "KING",
+      "text": "That treason can but peep to what it would,"
+    },
+    {
+      "number": 102,
+      "speaker": "KING",
+      "text": "Acts little of his will. Tell me, Laertes,"
+    },
+    {
+      "number": 103,
+      "speaker": "KING",
+      "text": "Why thou art thus incensed. Let him go, Gertrude."
+    },
+    {
+      "number": 104,
+      "speaker": "KING",
+      "text": "Speak, man."
+    },
+    {
+      "number": 104,
+      "speaker": "LAERTES",
+      "text": "Where is my father?"
+    },
+    {
+      "number": 105,
+      "speaker": "KING",
+      "text": "Dead."
+    },
+    {
+      "number": 105,
+      "speaker": "QUEEN",
+      "text": "But not by him."
+    },
+    {
+      "number": 106,
+      "speaker": "KING",
+      "text": "Let him demand his fill."
+    },
+    {
+      "number": 107,
+      "speaker": "LAERTES",
+      "text": "How came he dead? I’ll not be juggled with:"
+    },
+    {
+      "number": 108,
+      "speaker": "LAERTES",
+      "text": "To hell, allegiance! vows, to the blackest devil!"
+    },
+    {
+      "number": 109,
+      "speaker": "LAERTES",
+      "text": "Conscience and grace, to the profoundest pit!"
+    },
+    {
+      "number": 110,
+      "speaker": "LAERTES",
+      "text": "I dare damnation. To this point I stand,"
+    },
+    {
+      "number": 111,
+      "speaker": "LAERTES",
+      "text": "That both the worlds I give to negligence,"
+    },
+    {
+      "number": 112,
+      "speaker": "LAERTES",
+      "text": "Let come what comes; only I’ll be revenged"
+    },
+    {
+      "number": 113,
+      "speaker": "LAERTES",
+      "text": "Most thoroughly for my father."
+    },
+    {
+      "number": 113,
+      "speaker": "KING",
+      "text": "Who shall stay you?"
+    },
+    {
+      "number": 114,
+      "speaker": "LAERTES",
+      "text": "My will, not all the world:"
+    },
+    {
+      "number": 115,
+      "speaker": "LAERTES",
+      "text": "And for my means, I’ll husband them so well,"
+    },
+    {
+      "number": 116,
+      "speaker": "LAERTES",
+      "text": "They shall go far with little."
+    },
+    {
+      "number": 116,
+      "speaker": "KING",
+      "text": "Good Laertes,"
+    },
+    {
+      "number": 117,
+      "speaker": "KING",
+      "text": "If you desire to know the certainty"
+    },
+    {
+      "number": 118,
+      "speaker": "KING",
+      "text": "Of your dear father’s death, is’t writ in your revenge,"
+    },
+    {
+      "number": 119,
+      "speaker": "KING",
+      "text": "That, swoopstake, you will draw both friend and foe,"
+    },
+    {
+      "number": 120,
+      "speaker": "KING",
+      "text": "Winner and loser?"
+    },
+    {
+      "number": 120,
+      "speaker": "LAERTES",
+      "text": "None but his enemies."
+    },
+    {
+      "number": 121,
+      "speaker": "KING",
+      "text": "Will you know them then?"
+    },
+    {
+      "number": 122,
+      "speaker": "LAERTES",
+      "text": "To his good friends thus wide I’ll ope my arms;"
+    },
+    {
+      "number": 123,
+      "speaker": "LAERTES",
+      "text": "And like the kind life-rendering pelican,"
+    },
+    {
+      "number": 124,
+      "speaker": "LAERTES",
+      "text": "Repast them with my blood."
+    },
+    {
+      "number": 124,
+      "speaker": "KING",
+      "text": "Why, now you speak"
+    },
+    {
+      "number": 125,
+      "speaker": "KING",
+      "text": "Like a good child and a true gentleman."
+    },
+    {
+      "number": 126,
+      "speaker": "KING",
+      "text": "That I am guiltless of your father’s death,"
+    },
+    {
+      "number": 127,
+      "speaker": "KING",
+      "text": "And am most sensible in grief for it,"
+    },
+    {
+      "number": 128,
+      "speaker": "KING",
+      "text": "It shall as level to your judgment pierce"
+    },
+    {
+      "number": 129,
+      "speaker": "KING",
+      "text": "As day does to your eye."
+    },
+    {
+      "number": 129,
+      "speaker": "DANES",
+      "text": "Let her come in."
+    },
+    {
+      "number": 130,
+      "speaker": "LAERTES",
+      "text": "How now! what noise is that?"
+    },
+    {
+      "number": 131,
+      "speaker": "OPHELIA",
+      "text": "They bore him barefaced on the bier; Hey non nonny, nonny, hey"
+    },
+    {
+      "number": 132,
+      "speaker": "OPHELIA",
+      "text": "nonny; And in his grave rain’d many a tear:— Fare you well,"
+    },
+    {
+      "number": 133,
+      "speaker": "OPHELIA",
+      "text": "my dove!"
+    },
+    {
+      "number": 134,
+      "speaker": "LAERTES",
+      "text": "Hadst thou thy wits, and didst persuade revenge,"
+    },
+    {
+      "number": 135,
+      "speaker": "LAERTES",
+      "text": "It could not move thus."
+    },
+    {
+      "number": 136,
+      "speaker": "OPHELIA",
+      "text": "You must sing a-down a-down, An you call him a-down-a. O, how"
+    },
+    {
+      "number": 137,
+      "speaker": "OPHELIA",
+      "text": "the wheel becomes it! It is the false steward, that stole his"
+    },
+    {
+      "number": 138,
+      "speaker": "OPHELIA",
+      "text": "master’s daughter."
+    },
+    {
+      "number": 138,
+      "speaker": "LAERTES",
+      "text": "This nothing’s more than matter."
+    },
+    {
+      "number": 139,
+      "speaker": "OPHELIA",
+      "text": "There’s rosemary, that’s for remembrance; pray, love, remember: and there is pansies, that’s for thoughts."
+    },
+    {
+      "number": 140,
+      "speaker": "LAERTES",
+      "text": "A document in madness, thoughts and remembrance fitted."
+    },
+    {
+      "number": 141,
+      "speaker": "OPHELIA",
+      "text": "There’s fennel for you, and columbines: there’s rue for you; and here’s"
+    },
+    {
+      "number": 142,
+      "speaker": "OPHELIA",
+      "text": "some for me: we may call it herb-grace o’ Sundays: O you"
+    },
+    {
+      "number": 143,
+      "speaker": "OPHELIA",
+      "text": "must wear your rue with a difference. There’s a daisy: I would"
+    },
+    {
+      "number": 144,
+      "speaker": "OPHELIA",
+      "text": "give you some violets, but they withered all when my father died:"
+    },
+    {
+      "number": 145,
+      "speaker": "OPHELIA",
+      "text": "they say he made a good end— For bonny sweet Robin is"
+    },
+    {
+      "number": 146,
+      "speaker": "OPHELIA",
+      "text": "all my joy."
+    },
+    {
+      "number": 146,
+      "speaker": "LAERTES",
+      "text": "Thought and affliction, passion, hell itself,"
+    },
+    {
+      "number": 147,
+      "speaker": "LAERTES",
+      "text": "She turns to favour and to prettiness."
+    },
+    {
+      "number": 148,
+      "speaker": "OPHELIA",
+      "text": "And will he not come again? And will he not come again?"
+    },
+    {
+      "number": 149,
+      "speaker": "OPHELIA",
+      "text": "No, no, he is dead: Go to thy death-bed: He never will"
+    },
+    {
+      "number": 150,
+      "speaker": "OPHELIA",
+      "text": "come again. His beard was as white as snow, All flaxen was"
+    },
+    {
+      "number": 151,
+      "speaker": "OPHELIA",
+      "text": "his poll: He is gone, he is gone, And we cast away"
+    },
+    {
+      "number": 152,
+      "speaker": "OPHELIA",
+      "text": "moan: God ha’ mercy on his soul! And of all Christian souls,"
+    },
+    {
+      "number": 153,
+      "speaker": "OPHELIA",
+      "text": "I pray God. God be wi’ ye."
+    },
+    {
+      "number": 154,
+      "speaker": "LAERTES",
+      "text": "Do you see this, O God?"
+    },
+    {
+      "number": 155,
+      "speaker": "KING",
+      "text": "Laertes, I must commune with your grief,"
+    },
+    {
+      "number": 156,
+      "speaker": "KING",
+      "text": "Or you deny me right. Go but apart,"
+    },
+    {
+      "number": 157,
+      "speaker": "KING",
+      "text": "Make choice of whom your wisest friends you will,"
+    },
+    {
+      "number": 158,
+      "speaker": "KING",
+      "text": "And they shall hear and judge ’twixt you and me:"
+    },
+    {
+      "number": 159,
+      "speaker": "KING",
+      "text": "If by direct or by collateral hand"
+    },
+    {
+      "number": 160,
+      "speaker": "KING",
+      "text": "They find us touch’d, we will our kingdom give,"
+    },
+    {
+      "number": 161,
+      "speaker": "KING",
+      "text": "Our crown, our life, and all that we can ours,"
+    },
+    {
+      "number": 162,
+      "speaker": "KING",
+      "text": "To you in satisfaction; but if not,"
+    },
+    {
+      "number": 163,
+      "speaker": "KING",
+      "text": "Be you content to lend your patience to us,"
+    },
+    {
+      "number": 164,
+      "speaker": "KING",
+      "text": "And we shall jointly labour with your soul"
+    },
+    {
+      "number": 165,
+      "speaker": "KING",
+      "text": "To give it due content."
+    },
+    {
+      "number": 165,
+      "speaker": "LAERTES",
+      "text": "Let this be so;"
+    },
+    {
+      "number": 166,
+      "speaker": "LAERTES",
+      "text": "His means of death, his obscure funeral—"
+    },
+    {
+      "number": 167,
+      "speaker": "LAERTES",
+      "text": "No trophy, sword, nor hatchment o’er his bones,"
+    },
+    {
+      "number": 168,
+      "speaker": "LAERTES",
+      "text": "No noble rite nor formal ostentation—"
+    },
+    {
+      "number": 169,
+      "speaker": "LAERTES",
+      "text": "Cry to be heard, as ’twere from heaven to earth,"
+    },
+    {
+      "number": 170,
+      "speaker": "LAERTES",
+      "text": "That I must call’t in question."
+    },
+    {
+      "number": 170,
+      "speaker": "KING",
+      "text": "So you shall;"
+    },
+    {
+      "number": 171,
+      "speaker": "KING",
+      "text": "And where the offence is let the great axe fall."
+    },
+    {
+      "number": 172,
+      "speaker": "KING",
+      "text": "I pray you, go with me."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Queen, Horatio, and a Gentleman."
+    },
+    {
+      "after_line": 14,
+      "text": "Exit Horatio."
+    },
+    {
+      "after_line": 18,
+      "text": "Reenter Horatio, with Ophelia."
+    },
+    {
+      "after_line": 22,
+      "text": "Sings."
+    },
+    {
+      "after_line": 26,
+      "text": "Sings."
+    },
+    {
+      "after_line": 27,
+      "text": "Sings."
+    },
+    {
+      "after_line": 27,
+      "text": "Enter King."
+    },
+    {
+      "after_line": 29,
+      "text": "Sings."
+    },
+    {
+      "after_line": 39,
+      "text": "Sings."
+    },
+    {
+      "after_line": 45,
+      "text": "Sings."
+    },
+    {
+      "after_line": 50,
+      "text": "Exit."
+    },
+    {
+      "after_line": 51,
+      "text": "Exit Horatio."
+    },
+    {
+      "after_line": 74,
+      "text": "Enter another Gentleman."
+    },
+    {
+      "after_line": 74,
+      "text": "What is the matter?"
+    },
+    {
+      "after_line": 88,
+      "text": "Enter Laertes, armed; Danes following."
+    },
+    {
+      "after_line": 129,
+      "text": "Within."
+    },
+    {
+      "after_line": 130,
+      "text": "Reenter Ophelia."
+    },
+    {
+      "after_line": 130,
+      "text": "O heat, dry up my brains! tears seven times salt, Burn out the sense and virtue of mine eye! By heaven, thy madness shall be paid by weight, Till our scale turn the beam. O rose of May! Dear maid, kind sister, sweet Ophelia! O heavens! is’t possible, a young maid’s wits Should be as moral as an old man’s life? Nature is fine in love, and where ’tis fine, It sends some precious instance of itself After the thing it loves."
+    },
+    {
+      "after_line": 133,
+      "text": "Sings."
+    },
+    {
+      "after_line": 138,
+      "text": "Sings."
+    },
+    {
+      "after_line": 146,
+      "text": "Sings."
+    },
+    {
+      "after_line": 153,
+      "text": "Sings."
+    },
+    {
+      "after_line": 153,
+      "text": "Exit."
+    },
+    {
+      "after_line": 172,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "hamlet_act4_scene5_gloss1",
+      "line": 1,
+      "phrase": "importunate",
+      "definition": "persistent; demanding"
+    },
+    {
+      "id": "hamlet_act4_scene5_gloss2",
+      "line": 1,
+      "phrase": "distract",
+      "definition": "disordered in mind"
+    },
+    {
+      "id": "hamlet_act4_scene5_gloss3",
+      "line": 2,
+      "phrase": "pitied",
+      "definition": "to be pitied"
+    },
+    {
+      "id": "hamlet_act4_scene5_gloss4",
+      "line": 4,
+      "phrase": "tricks",
+      "definition": "devices; fanciful remarks"
+    },
+    {
+      "id": "hamlet_act4_scene5_gloss5",
+      "line": 6,
+      "phrase": "nothing",
+      "definition": "sometimes bawdy slang for female genitals (Elizabethan pun)"
+    },
+    {
+      "id": "hamlet_act4_scene5_gloss6",
+      "line": 7,
+      "phrase": "unshaped use",
+      "definition": "unformed manner"
+    },
+    {
+      "id": "hamlet_act4_scene5_gloss7",
+      "line": 9,
+      "phrase": "botch",
+      "definition": "patch together crudely"
+    },
+    {
+      "id": "hamlet_act4_scene5_gloss8",
+      "line": 14,
+      "phrase": "ill-breeding minds",
+      "definition": "mischievous speculation"
+    },
+    {
+      "id": "hamlet_act4_scene5_gloss9",
+      "line": 16,
+      "phrase": "great amiss",
+      "definition": "great calamity"
+    },
+    {
+      "id": "hamlet_act4_scene5_gloss10",
+      "line": 17,
+      "phrase": "artless jealousy",
+      "definition": "awkward suspicion"
+    },
+    {
+      "id": "hamlet_act4_scene5_gloss11",
+      "line": 19,
+      "phrase": "beauteous majesty of Denmark",
+      "definition": "beautiful queen of Denmark"
+    },
+    {
+      "id": "hamlet_act4_scene5_gloss12",
+      "line": 22,
+      "phrase": "cockle hat",
+      "definition": "pilgrim's hat (marked with a cockle-shell)"
+    },
+    {
+      "id": "hamlet_act4_scene5_gloss13",
+      "line": 22,
+      "phrase": "sandal shoon",
+      "definition": "pilgrim's sandals"
+    },
+    {
+      "id": "hamlet_act4_scene5_gloss14",
+      "line": 25,
+      "phrase": "his head a grass-green turf",
+      "definition": "a grassy mound at his head"
+    },
+    {
+      "id": "hamlet_act4_scene5_gloss15",
+      "line": 29,
+      "phrase": "Larded",
+      "definition": "garnished; strewn"
+    },
+    {
+      "id": "hamlet_act4_scene5_gloss16",
+      "line": 31,
+      "phrase": "the owl was a baker’s daughter",
+      "definition": "folktale: a baker's daughter was turned into an owl for stinginess to Jesus"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "hamlet_act4_scene5_ann1",
+      "line_start": 20,
+      "line_end": 70,
+      "citation_display": "Hamlet 4.5.20–70",
+      "category": "thematic",
+      "title": "Ophelia's songs: the breaking of a voice",
+      "body": "Ophelia's mad scenes substitute singing for speech, and the songs are not madness but scraps of a coherent emotional truth. The pilgrim song ('How should I your true love know / From another one?'), the Valentine's Day song with its sexual frankness ('Young men will do't, if they come to't; / By Cock, they are to blame'), and the song of the dead father ('He is gone, he is gone') articulate, through the displacement of received lyric, what Ophelia cannot say directly. Showalter's influential 'Representing Ophelia' argues that feminist criticism must recover the scene's meaning from the long tradition that aestheticized her madness as picturesque pathos. The songs are sharp instruments of accusation.",
+      "sources": [
+        "Elaine Showalter, 'Representing Ophelia' (1985)"
+      ]
+    },
+    {
+      "id": "hamlet_act4_scene5_ann2",
+      "line_start": 177,
+      "line_end": 188,
+      "citation_display": "Hamlet 4.5.177–188",
+      "category": "historical",
+      "title": "The flowers and the language of herbs",
+      "body": "Ophelia distributes flowers by their traditional meanings: rosemary for remembrance, pansies for thoughts, fennel for flattery, columbines for marital infidelity, rue for sorrow and repentance, daisy for dissembled love, violets (withered) for faithfulness. Elizabethan herbals, particularly John Gerard's Herball (1597), catalogued these significations and audiences would have read the tableau in real time. Ophelia's distributions are targeted: fennel and columbines (flattery and infidelity) to the King and Queen; rue to Gertrude; the withered violets since 'they all withered when my father died.' The scene is Ophelia's most articulate political speech, disguised as a flower game.",
+      "sources": [
+        "Dympna Callaghan, Shakespeare without Women (2000)",
+        "John Gerard, Herball (1597)"
+      ]
+    },
+    {
+      "id": "hamlet_act4_scene5_ann3",
+      "line_start": 95,
+      "line_end": 132,
+      "citation_display": "Hamlet 4.5.95–132",
+      "category": "structural",
+      "title": "Laertes's insurrection and Hamlet's absent parallel",
+      "body": "Laertes storms the castle with an armed mob shouting 'Laertes shall be king,' threatening Claudius with immediate deposition. The contrast with Hamlet is structural: given the same provocation (a father murdered), Laertes acts at once and politically, raising popular support and confronting the sovereign. Shakespeare deliberately places Laertes's vengeance beside Hamlet's to force comparison — but the comparison does not favor either man. Laertes will let Claudius turn his revenge into the King's own instrument within twenty lines. The play keeps showing us characters who act decisively and are destroyed by their decisiveness, and characters who delay and are destroyed by their delay. There is no correct speed at which to avenge a father.",
+      "sources": [
+        "Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"
+      ]
+    },
+    {
+      "id": "hamlet_act4_scene5_ann4",
+      "line_start": 188,
+      "line_end": 196,
+      "citation_display": "Hamlet 4.5.188–196",
+      "category": "close_reading",
+      "title": "'There's rosemary, that's for remembrance'",
+      "body": "The most quoted of Ophelia's flower lines is also the most theatrically charged: she gives rosemary to someone — the stage direction in modern editions is ambiguous, and Laertes's 'A document in madness' suggests he recognizes its pointedness. Rosemary was associated with both weddings and funerals, and the double resonance fits Ophelia's condition — the bride-never-to-be who is already mourning. 'Pray, love, remember' is an instruction to the living to honor the dead, and in performance its recipient matters: Gertrude? Laertes? The King? Ophelia gives herself no rosemary, which the tradition would have noted: she is asking to be the one whose own loss is carried forward by others.",
+      "sources": [
+        "Carol Thomas Neely, Distracted Subjects (2004)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "hamlet_act4_scene5_q1",
+      "kind": "comprehension",
+      "prompt": "What condition does Ophelia demonstrate in her first appearance here?",
+      "options": [
+        "She is composed and demands justice for her father.",
+        "She is mad, singing fragments of old songs about lost love and dead fathers.",
+        "She is weeping silently and refuses to speak.",
+        "She has joined Laertes's armed uprising."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 17,
+      "anchor_line_end": 45
+    },
+    {
+      "id": "hamlet_act4_scene5_q2",
+      "kind": "inference",
+      "prompt": "What does the Valentine's Day song suggest about Ophelia's distress?",
+      "options": [
+        "That she has taken up a new religion.",
+        "That sexual betrayal (by a lover who promised marriage then refused) is among the griefs driving her madness.",
+        "That she misses her time at court festivals.",
+        "That Polonius promised her marriage to a stranger."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 47,
+      "anchor_line_end": 65
+    },
+    {
+      "id": "hamlet_act4_scene5_q3",
+      "kind": "comprehension",
+      "prompt": "What does Laertes do when he returns to Denmark?",
+      "options": [
+        "He presents himself humbly to Claudius for counsel.",
+        "He bursts in with a mob of followers shouting 'Laertes shall be king,' ready to kill the King.",
+        "He searches the castle for Polonius's body.",
+        "He challenges Hamlet to a duel by proxy."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 95,
+      "anchor_line_end": 115
+    },
+    {
+      "id": "hamlet_act4_scene5_q4",
+      "kind": "close_reading",
+      "prompt": "Which flower does Ophelia associate with 'thoughts'?",
+      "options": [
+        "Rosemary",
+        "Pansies",
+        "Fennel",
+        "Rue"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 177,
+      "anchor_line_end": 180
+    },
+    {
+      "id": "hamlet_act4_scene5_q5",
+      "kind": "theme",
+      "prompt": "What does the contrast between Laertes's immediate revenge and Hamlet's delay suggest?",
+      "options": [
+        "That Laertes is the morally superior brother.",
+        "That Shakespeare is demonstrating the correct way to avenge a father.",
+        "That neither speed nor delay is safe — both revengers will be destroyed.",
+        "That Hamlet's philosophy has paralyzed him while Laertes acts freely."
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 25,
+      "anchor_line_start": 115,
+      "anchor_line_end": 145
+    },
+    {
+      "id": "hamlet_act4_scene5_q6",
+      "kind": "inference",
+      "prompt": "Why are the violets Ophelia mentions 'withered'?",
+      "options": [
+        "The season is late in summer and they have died.",
+        "They withered when her father died — faithfulness has died with Polonius.",
+        "A servant has neglected to water them.",
+        "She is referring to a plant disease in Denmark."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 185,
+      "anchor_line_end": 188
+    }
+  ]
+}

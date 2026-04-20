@@ -1,0 +1,265 @@
+{
+  "section_id": "hamlet_act4_scene6",
+  "work_id": "hamlet",
+  "sequence": 17,
+  "act": 4,
+  "scene": 6,
+  "kind": "scene",
+  "scene_title": "Another room in the castle",
+  "line_count": 26,
+  "word_count": 278,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "HORATIO",
+      "text": "What are they that would speak with me?"
+    },
+    {
+      "number": 2,
+      "speaker": "SERVANT",
+      "text": "Sailors, sir: they say they have letters for you."
+    },
+    {
+      "number": 3,
+      "speaker": "HORATIO",
+      "text": "Let them come in. I do not know from what part of"
+    },
+    {
+      "number": 4,
+      "speaker": "HORATIO",
+      "text": "the world I should be greeted, if not from Lord Hamlet."
+    },
+    {
+      "number": 5,
+      "speaker": "FIRST SAILOR",
+      "text": "God bless you, sir."
+    },
+    {
+      "number": 5,
+      "speaker": "HORATIO",
+      "text": "Let him bless thee too."
+    },
+    {
+      "number": 6,
+      "speaker": "FIRST SAILOR",
+      "text": "He shall, sir, an’t please him. There’s a letter for you, sir;"
+    },
+    {
+      "number": 7,
+      "speaker": "FIRST SAILOR",
+      "text": "it comes from the ambassador that was bound for England; if your"
+    },
+    {
+      "number": 8,
+      "speaker": "FIRST SAILOR",
+      "text": "name be Horatio, as I am let to know it is."
+    },
+    {
+      "number": 9,
+      "speaker": "HORATIO",
+      "text": "“Horatio, when thou shalt have overlooked this, give these fellows some means"
+    },
+    {
+      "number": 10,
+      "speaker": "HORATIO",
+      "text": "to the king: they have letters for him. Ere we were two"
+    },
+    {
+      "number": 11,
+      "speaker": "HORATIO",
+      "text": "days old at sea, a pirate of very warlike appointment gave us"
+    },
+    {
+      "number": 12,
+      "speaker": "HORATIO",
+      "text": "chase. Finding ourselves too slow of sail, we put on a compelled"
+    },
+    {
+      "number": 13,
+      "speaker": "HORATIO",
+      "text": "valour, and in the grapple I boarded them: on the instant they"
+    },
+    {
+      "number": 14,
+      "speaker": "HORATIO",
+      "text": "got clear of our ship; so I alone became their prisoner. They"
+    },
+    {
+      "number": 15,
+      "speaker": "HORATIO",
+      "text": "have dealt with me like thieves of mercy: but they knew what"
+    },
+    {
+      "number": 16,
+      "speaker": "HORATIO",
+      "text": "they did; I am to do a good turn for them. Let"
+    },
+    {
+      "number": 17,
+      "speaker": "HORATIO",
+      "text": "the king have the letters I have sent; and repair thou to"
+    },
+    {
+      "number": 18,
+      "speaker": "HORATIO",
+      "text": "me with as much speed as thou wouldst fly death. I have"
+    },
+    {
+      "number": 19,
+      "speaker": "HORATIO",
+      "text": "words to speak in thine ear will make thee dumb; yet are"
+    },
+    {
+      "number": 20,
+      "speaker": "HORATIO",
+      "text": "they much too light for the bore of the matter. These good"
+    },
+    {
+      "number": 21,
+      "speaker": "HORATIO",
+      "text": "fellows will bring thee where I am. Rosencrantz and Guildenstern hold their"
+    },
+    {
+      "number": 22,
+      "speaker": "HORATIO",
+      "text": "course for England: of them I have much to tell thee. Farewell."
+    },
+    {
+      "number": 23,
+      "speaker": "HORATIO",
+      "text": "Come, I will make you way for these your letters; And do’t"
+    },
+    {
+      "number": 24,
+      "speaker": "HORATIO",
+      "text": "the speedier, that you may direct me To him from whom you"
+    },
+    {
+      "number": 25,
+      "speaker": "HORATIO",
+      "text": "brought them."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Horatio and a Servant."
+    },
+    {
+      "after_line": 4,
+      "text": "Exit Servant."
+    },
+    {
+      "after_line": 4,
+      "text": "Enter Sailors."
+    },
+    {
+      "after_line": 25,
+      "text": "Reads."
+    },
+    {
+      "after_line": 25,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "hamlet_act4_scene6_gloss1",
+      "line": 9,
+      "phrase": "overlooked this",
+      "definition": "examined this letter"
+    },
+    {
+      "id": "hamlet_act4_scene6_gloss2",
+      "line": 11,
+      "phrase": "appointment",
+      "definition": "equipment"
+    },
+    {
+      "id": "hamlet_act4_scene6_gloss3",
+      "line": 11,
+      "phrase": "pirate of very warlike appointment",
+      "definition": "well-armed pirate ship"
+    },
+    {
+      "id": "hamlet_act4_scene6_gloss4",
+      "line": 12,
+      "phrase": "slow of sail",
+      "definition": "too slow to escape"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "hamlet_act4_scene6_ann1",
+      "line_start": 13,
+      "line_end": 31,
+      "citation_display": "Hamlet 4.6.13–31",
+      "category": "structural",
+      "title": "Hamlet's letter and the pirate attack",
+      "body": "Hamlet's letter to Horatio, delivered by sailors, is the play's most improbable plot device: pirates attack the ship, Hamlet boards them in the fight, and they return him to Denmark. Shakespeare adapted this from Belleforest's Histoires Tragiques, where a similar escape occurs. The randomness is essential — the providence Hamlet will later credit ('There's a divinity that shapes our ends') requires a genuinely unscripted event. Critics have noted the structural parallel to the shipwreck in Twelfth Night and the maritime accidents that reshape The Tempest. In Hamlet, the ocean becomes the place where the prince's fate escapes Claudius's careful management and returns to him transformed.",
+      "sources": [
+        "Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"
+      ]
+    },
+    {
+      "id": "hamlet_act4_scene6_ann2",
+      "line_start": 22,
+      "line_end": 26,
+      "citation_display": "Hamlet 4.6.22–26",
+      "category": "close_reading",
+      "title": "'Thieves of mercy'",
+      "body": "Hamlet's oxymoron — 'thieves of mercy' — is as compact a piece of rhetoric as anything in the play. Pirates who spared his life and set him back on his own quest have behaved better than the Christian courtiers who sent him to die. The paradox preserves the play's moral disorientation: an honorable thief, a loyal pirate, a treacherous king. The short scene is a technical marvel — four speeches of report that move the plot from England to Denmark without a single on-stage action. Shakespeare trusts the audience to register the transition on the strength of letter-reading alone.",
+      "sources": [
+        "Frank Kermode, Shakespeare's Language (2000)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "hamlet_act4_scene6_q1",
+      "kind": "comprehension",
+      "prompt": "How did Hamlet escape the voyage to England?",
+      "options": [
+        "A storm forced the ship back to Denmark.",
+        "He swam ashore when the ship anchored near the coast.",
+        "Pirates attacked the ship; Hamlet boarded their vessel in the fight and was returned to Denmark.",
+        "He bribed Rosencrantz and Guildenstern to turn the ship around."
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 15,
+      "anchor_line_start": 14,
+      "anchor_line_end": 25
+    },
+    {
+      "id": "hamlet_act4_scene6_q2",
+      "kind": "close_reading",
+      "prompt": "What does Hamlet's phrase 'thieves of mercy' express?",
+      "options": [
+        "Thieves of pity who stole his valuables.",
+        "The pirates who spared his life and returned him home — honorable behavior from dishonorable men.",
+        "Merciful thieves who work only by night.",
+        "A metaphor for Claudius and his courtiers, who steal justice from the kingdom."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 22,
+      "anchor_line_end": 26
+    },
+    {
+      "id": "hamlet_act4_scene6_q3",
+      "kind": "inference",
+      "prompt": "What does Hamlet ask Horatio to do in the letter?",
+      "options": [
+        "Bring his weapons and armor immediately.",
+        "Deliver a letter to the King and bring him to Hamlet's location.",
+        "Flee to Wittenberg and await further instructions.",
+        "Tell Ophelia that Hamlet is alive."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 12,
+      "anchor_line_end": 27
+    }
+  ]
+}

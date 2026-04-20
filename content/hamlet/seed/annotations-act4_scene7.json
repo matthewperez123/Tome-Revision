@@ -1,0 +1,29 @@
+{
+  "section_id": "hamlet_act4_scene7",
+  "annotations": [
+    {
+      "line_start": 60,
+      "line_end": 140,
+      "category": "structural",
+      "title": "The plot-making scene: Claudius at his most Machiavellian",
+      "body": "The King's exchange with Laertes is a masterclass in manipulation. Claudius does not propose the murder directly; he asks leading questions ('Was your father dear to you?') and lets Laertes arrive at the solution Claudius already has in mind. The staged fencing match, the unblunted rapier, the anointing with a 'mountebank's' poison, and the backup plan of a poisoned cup — all are introduced as if Laertes is the improviser and the King merely the sounding board. Shakespeare's Claudius is not the cardboard villain of the revenge-tragedy tradition. He is the political intelligence that revenge tragedy requires to generate its catastrophes, and his technique here is nearer Iago's than to any Senecan stereotype.",
+      "sources": ["Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"]
+    },
+    {
+      "line_start": 140,
+      "line_end": 180,
+      "category": "thematic",
+      "title": "Gertrude's elegy for Ophelia",
+      "body": "The report of Ophelia's drowning is one of the most famous speeches in English poetry, and also one of the most theatrically strange. It is delivered in past tense, as if by an eyewitness, by a queen who was certainly not there. The language — 'crow-flowers, nettles, daisies, and long purples' — is botanically precise and visually suspended. Critics from Coleridge onward have noted that the speech behaves less like a report than like a tableau. The pastoral mode (weeping willow, garlands, mermaid-like singing) softens the violence; Ophelia 'dies' into a painting before she actually dies. Tennyson and Millais would later build their Ophelia on these very lines. What Gertrude does not say — whether the death was accident or suicide — the gravediggers will debate in 5.1.",
+      "sources": ["Elaine Showalter, 'Representing Ophelia' (1985)", "Linda Charnes, Hamlet's Heirs (2006)"]
+    },
+    {
+      "line_start": 107,
+      "line_end": 128,
+      "category": "close_reading",
+      "title": "The poison plot and the logic of the foil",
+      "body": "Laertes's proposed poisoned rapier-tip is the scene's ethical nadir. Under Renaissance honor-code, a duel was a ritual combat that tested fate and skill; poisoning a foil turns the ritual into a secret assassination while preserving the ceremonial surface. The word 'unction,' applied to the poison, is theologically loaded — it is the word for the sacrament of anointing, here reversed into damnation. Shakespeare is noting a specific corruption of chivalry. The fallback plan — a poisoned cup, should the sword fail — represents the total betrayal of the duel's pretense. When the plan turns on its makers in Act 5, the rhetorical closure is near-surgical: poisons kill their compounders.",
+      "sources": ["Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"]
+    }
+  ]
+}

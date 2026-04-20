@@ -1,0 +1,259 @@
+{
+  "section_id": "richard_iii_act5_scene2",
+  "work_id": "richard-iii",
+  "sequence": 22,
+  "act": 5,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "Plain near Tamworth",
+  "line_count": 24,
+  "word_count": 189,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "RICHMOND",
+      "text": "Fellows in arms, and my most loving friends,"
+    },
+    {
+      "number": 2,
+      "speaker": "RICHMOND",
+      "text": "Bruised underneath the yoke of tyranny,"
+    },
+    {
+      "number": 3,
+      "speaker": "RICHMOND",
+      "text": "Thus far into the bowels of the land"
+    },
+    {
+      "number": 4,
+      "speaker": "RICHMOND",
+      "text": "Have we march’d on without impediment;"
+    },
+    {
+      "number": 5,
+      "speaker": "RICHMOND",
+      "text": "And here receive we from our father Stanley"
+    },
+    {
+      "number": 6,
+      "speaker": "RICHMOND",
+      "text": "Lines of fair comfort and encouragement."
+    },
+    {
+      "number": 7,
+      "speaker": "RICHMOND",
+      "text": "The wretched, bloody, and usurping boar,"
+    },
+    {
+      "number": 8,
+      "speaker": "RICHMOND",
+      "text": "That spoil’d your summer fields and fruitful vines,"
+    },
+    {
+      "number": 9,
+      "speaker": "RICHMOND",
+      "text": "Swills your warm blood like wash, and makes his trough"
+    },
+    {
+      "number": 10,
+      "speaker": "RICHMOND",
+      "text": "In your embowell’d bosoms, this foul swine"
+    },
+    {
+      "number": 11,
+      "speaker": "RICHMOND",
+      "text": "Lies now even in the centre of this isle,"
+    },
+    {
+      "number": 12,
+      "speaker": "RICHMOND",
+      "text": "Near to the town of Leicester, as we learn:"
+    },
+    {
+      "number": 13,
+      "speaker": "RICHMOND",
+      "text": "From Tamworth thither is but one day’s march."
+    },
+    {
+      "number": 14,
+      "speaker": "RICHMOND",
+      "text": "In God’s name, cheerly on, courageous friends,"
+    },
+    {
+      "number": 15,
+      "speaker": "RICHMOND",
+      "text": "To reap the harvest of perpetual peace"
+    },
+    {
+      "number": 16,
+      "speaker": "RICHMOND",
+      "text": "By this one bloody trial of sharp war."
+    },
+    {
+      "number": 17,
+      "speaker": "OXFORD",
+      "text": "Every man’s conscience is a thousand swords,"
+    },
+    {
+      "number": 18,
+      "speaker": "OXFORD",
+      "text": "To fight against that bloody homicide."
+    },
+    {
+      "number": 19,
+      "speaker": "HERBERT",
+      "text": "I doubt not but his friends will fly to us."
+    },
+    {
+      "number": 20,
+      "speaker": "BLUNT",
+      "text": "He hath no friends but who are friends for fear,"
+    },
+    {
+      "number": 21,
+      "speaker": "BLUNT",
+      "text": "Which in his greatest need will shrink from him."
+    },
+    {
+      "number": 22,
+      "speaker": "RICHMOND",
+      "text": "All for our vantage. Then, in God’s name, march:"
+    },
+    {
+      "number": 23,
+      "speaker": "RICHMOND",
+      "text": "True hope is swift, and flies with swallow’s wings;"
+    },
+    {
+      "number": 24,
+      "speaker": "RICHMOND",
+      "text": "Kings it makes gods, and meaner creatures kings."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Richmond, Oxford, Blunt, Herbert, and others, with drum and colours."
+    },
+    {
+      "after_line": 24,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act5_scene2_gloss1",
+      "line": 2,
+      "phrase": "yoke of tyranny",
+      "definition": "oppressive rule — Richmond's opening framing of Richard"
+    },
+    {
+      "id": "richard_iii_act5_scene2_gloss2",
+      "line": 3,
+      "phrase": "bowels of the land",
+      "definition": "heartland; inner regions"
+    },
+    {
+      "id": "richard_iii_act5_scene2_gloss3",
+      "line": 7,
+      "phrase": "usurping boar",
+      "definition": "Richard as heraldic boar — 'usurping' frames him as illegitimate king"
+    },
+    {
+      "id": "richard_iii_act5_scene2_gloss4",
+      "line": 9,
+      "phrase": "Swills your warm blood like wash",
+      "definition": "drinks your blood like pig-swill ('wash' = kitchen slops fed to pigs)"
+    },
+    {
+      "id": "richard_iii_act5_scene2_gloss5",
+      "line": 10,
+      "phrase": "embowell’d bosoms",
+      "definition": "disembowelled chests"
+    },
+    {
+      "id": "richard_iii_act5_scene2_gloss6",
+      "line": 12,
+      "phrase": "Leicester",
+      "definition": "Leicester — Richard's base before Bosworth; historically where his remains were rediscovered in 2012"
+    },
+    {
+      "id": "richard_iii_act5_scene2_gloss7",
+      "line": 13,
+      "phrase": "Tamworth",
+      "definition": "Richmond's staging point, Staffordshire — one day's march from Bosworth"
+    },
+    {
+      "id": "richard_iii_act5_scene2_gloss8",
+      "line": 16,
+      "phrase": "one bloody trial of sharp war",
+      "definition": "a single decisive battle"
+    },
+    {
+      "id": "richard_iii_act5_scene2_gloss9",
+      "line": 17,
+      "phrase": "Every man’s conscience is a thousand swords",
+      "definition": "Oxford's inversion of Richard's 5.3.190 'thousand several tongues' — good conscience arms the army"
+    },
+    {
+      "id": "richard_iii_act5_scene2_gloss10",
+      "line": 23,
+      "phrase": "swallow’s wings",
+      "definition": "proverbial image of speed"
+    },
+    {
+      "id": "richard_iii_act5_scene2_gloss11",
+      "line": 24,
+      "phrase": "Kings it makes gods, and meaner creatures kings",
+      "definition": "hope makes kings divine and common men royal"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act5_scene2_ann1",
+      "line_start": 1,
+      "line_end": 24,
+      "citation_display": "Richard III 5.2.1–24",
+      "category": "close_reading",
+      "title": "Richmond's first speech: the boar, the hog, the swine",
+      "body": "Richmond's rallying speech uses three different pig-variants for Richard — boar, foul swine, hog — within twenty lines. The escalation is deliberate. The boar is Richard's heraldic badge (white boar of Gloucester); the swine and hog degrade the emblem to the barnyard. \"Swills your warm blood like wash\" converts Richard into a pig drinking kitchen-slops; the \"trough\" is made in \"your embowell'd bosoms.\" The imagery cluster answers Margaret's 1.3 \"elvish-mark'd, abortive, rooting hog\" — Richmond arrives speaking her vocabulary, a detail that partially legitimizes his violence against Richard as the language of the women Richard has wronged. What the speech cannot quite do is give Richmond interiority. He is the play's necessary figure rather than its psychological counterpart, and the speech's calculated hatred lets the audience feel that.",
+      "sources": [
+        "Phyllis Rackin, Stages of History (1990)",
+        "Nicholas Brooke, Shakespeare's Early Tragedies (1968)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act5_scene2_q1",
+      "kind": "close_reading",
+      "prompt": "Richmond's rallying speech uses three pig-variants for Richard (boar, swine, hog). What does this imagery cluster do?",
+      "options": [
+        "Introduces comic deflation before a serious battle",
+        "Answers Margaret's 1.3 vocabulary — Richmond arrives speaking the language of the women Richard has wronged, partially legitimizing his cause",
+        "Is a classical pastoral reference drawn from Virgil",
+        "Is a heraldic argument about the boar's lower standing"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 7,
+      "anchor_line_end": 12
+    },
+    {
+      "id": "richard_iii_act5_scene2_q2",
+      "kind": "inference",
+      "prompt": "What does Richmond's calculated hatred of Richard reveal about his function in the play's design?",
+      "options": [
+        "That he is the play's psychological centre",
+        "That he is the play's necessary figure rather than its psychological counterpart — Shakespeare keeps him schematic so the Tudor dynastic arrival can take on providential shape",
+        "That he is a secondary character inserted for historical completeness",
+        "That he is the play's secret villain"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 1,
+      "anchor_line_end": 24
+    }
+  ]
+}

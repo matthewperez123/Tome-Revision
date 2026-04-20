@@ -1,0 +1,37 @@
+{
+  "section_id": "hamlet_act1_scene2",
+  "annotations": [
+    {
+      "line_start": 1,
+      "line_end": 16,
+      "category": "thematic",
+      "title": "The rhetoric of the usurper",
+      "body": "Claudius's opening speech is a masterclass in calculated balance: 'mirth in funeral,' 'dirge in marriage,' 'defeated joy,' 'auspicious and a dropping eye.' The rhetorical figure is oxymoron, and its density signals a speaker who needs language to do what his position cannot — reconcile mourning with celebration, legitimacy with haste. Elizabethan audiences would have heard a voice that sounds a great deal like their own Queen's accession speeches. What they would also have heard, and what Hamlet will later name, is that rhetorical poise functions here as concealment. The play's opening human voice is the voice of successful dissembling.",
+      "sources": ["Harry Berger Jr., Imaginary Audition (1989)"]
+    },
+    {
+      "line_start": 64,
+      "line_end": 74,
+      "category": "linguistic",
+      "title": "'A little more than kin, and less than kind'",
+      "body": "Hamlet's first line in the play is a pun that turns three times. 'Kin' means 'related,' now intensified by the incestuous marriage. 'Kind' means both 'natural' (he is too close in blood) and 'affectionate' (he feels nothing like it for Claudius). Beneath both runs the Old English sense of 'kind' as species or race: Claudius is not of Hamlet's kind. The line establishes a verbal strategy Hamlet will use for five acts: turning the simplest words against those who use them. When Claudius calls him 'son,' Hamlet hears 'sun'; when the King asks about his melancholy, Hamlet punctures 'seems' with 'I know not seems.' Wordplay is weaponry here, because open speech would be suicidal.",
+      "sources": ["Frank Kermode, Shakespeare's Language (2000)"]
+    },
+    {
+      "line_start": 129,
+      "line_end": 159,
+      "category": "thematic",
+      "title": "The first soliloquy: the problem of the remarriage",
+      "body": "Hamlet's first soliloquy grieves less for his father than for his mother. 'Frailty, thy name is woman' is not a general philosophical claim but a specific accusation: Gertrude's 'most wicked speed' has poisoned the mourning. The speech moves through classical analogies — Hyperion to a satyr, Niobe all tears — and arrives at the unspeakable: 'incestuous sheets.' Elizabethan canon law did forbid marriage to a deceased brother's wife; Henry VIII's divorce from Catherine of Aragon had turned precisely on this point, and Shakespeare's audience would recognize the charge. What drives the soliloquy is not yet the ghost's murder but the mother's remarriage — a private sexual grief that the public political scene has forced Hamlet to swallow.",
+      "sources": ["Janet Adelman, Suffocating Mothers (1992)"]
+    },
+    {
+      "line_start": 180,
+      "line_end": 258,
+      "category": "structural",
+      "title": "Hearsay and the delayed encounter",
+      "body": "Shakespeare delays Hamlet's meeting with the ghost by staging Horatio's report of it first. The effect is to make the ghost simultaneously present (Horatio's testimony is detailed, specific) and absent (Hamlet must wait until 1.4 to see for himself). The narrative technique multiplies the voices that attest to the apparition, building evidentiary pressure; it also gives Hamlet time to react to the news before the ghost makes its revelation. 'Foul deeds will rise, / Though all the earth o'erwhelm them, to men's eyes' — this is Hamlet's first articulation of a principle the play will test to destruction: that hidden truths cannot stay hidden. The plot from here will press that claim against the opposing pressure of concealment.",
+      "sources": ["Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"]
+    }
+  ]
+}

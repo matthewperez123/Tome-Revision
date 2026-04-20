@@ -1,0 +1,685 @@
+{
+  "section_id": "hamlet_act4_scene4",
+  "work_id": "hamlet",
+  "sequence": 15,
+  "act": 4,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "A plain in Denmark",
+  "line_count": 68,
+  "word_count": 507,
+  "est_read_minutes": 3,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "Go, captain, from me greet the Danish king;"
+    },
+    {
+      "number": 2,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "Tell him that, by his license, Fortinbras"
+    },
+    {
+      "number": 3,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "Craves the conveyance of a promised march"
+    },
+    {
+      "number": 4,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "Over his kingdom. You know the rendezvous."
+    },
+    {
+      "number": 5,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "If that his majesty would aught with us,"
+    },
+    {
+      "number": 6,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "We shall express our duty in his eye;"
+    },
+    {
+      "number": 7,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "And let him know so."
+    },
+    {
+      "number": 7,
+      "speaker": "CAPTAIN",
+      "text": "I will do’t, my lord."
+    },
+    {
+      "number": 8,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "Go softly on."
+    },
+    {
+      "number": 8,
+      "speaker": "HAMLET",
+      "text": "Good sir, whose powers are these?"
+    },
+    {
+      "number": 9,
+      "speaker": "CAPTAIN",
+      "text": "They are of Norway, sir."
+    },
+    {
+      "number": 9,
+      "speaker": "HAMLET",
+      "text": "How purposed, sir, I pray you?"
+    },
+    {
+      "number": 10,
+      "speaker": "CAPTAIN",
+      "text": "Against some part of Poland."
+    },
+    {
+      "number": 10,
+      "speaker": "HAMLET",
+      "text": "Who commands them, sir?"
+    },
+    {
+      "number": 11,
+      "speaker": "CAPTAIN",
+      "text": "The nephews to old Norway, Fortinbras."
+    },
+    {
+      "number": 12,
+      "speaker": "HAMLET",
+      "text": "Goes it against the main of Poland, sir,"
+    },
+    {
+      "number": 13,
+      "speaker": "HAMLET",
+      "text": "Or for some frontier?"
+    },
+    {
+      "number": 14,
+      "speaker": "CAPTAIN",
+      "text": "Truly to speak, and with no addition,"
+    },
+    {
+      "number": 15,
+      "speaker": "CAPTAIN",
+      "text": "We go to gain a little patch of ground"
+    },
+    {
+      "number": 16,
+      "speaker": "CAPTAIN",
+      "text": "That hath in it no profit but the name."
+    },
+    {
+      "number": 17,
+      "speaker": "CAPTAIN",
+      "text": "To pay five ducats, five, I would not farm it;"
+    },
+    {
+      "number": 18,
+      "speaker": "CAPTAIN",
+      "text": "Nor will it yield to Norway or the Pole"
+    },
+    {
+      "number": 19,
+      "speaker": "CAPTAIN",
+      "text": "A ranker rate, should it be sold in fee."
+    },
+    {
+      "number": 20,
+      "speaker": "HAMLET",
+      "text": "Why, then the Polack never will defend it."
+    },
+    {
+      "number": 21,
+      "speaker": "CAPTAIN",
+      "text": "Yes, it is already garrison’d."
+    },
+    {
+      "number": 22,
+      "speaker": "HAMLET",
+      "text": "Two thousand souls and twenty thousand ducats"
+    },
+    {
+      "number": 23,
+      "speaker": "HAMLET",
+      "text": "Will not debate the question of this straw:"
+    },
+    {
+      "number": 24,
+      "speaker": "HAMLET",
+      "text": "This is the imposthume of much wealth and peace,"
+    },
+    {
+      "number": 25,
+      "speaker": "HAMLET",
+      "text": "That inward breaks, and shows no cause without"
+    },
+    {
+      "number": 26,
+      "speaker": "HAMLET",
+      "text": "Why the man dies. I humbly thank you, sir."
+    },
+    {
+      "number": 27,
+      "speaker": "CAPTAIN",
+      "text": "God be wi’ you, sir."
+    },
+    {
+      "number": 27,
+      "speaker": "ROSENCRANTZ",
+      "text": "Will’t please you go, my lord?"
+    },
+    {
+      "number": 28,
+      "speaker": "HAMLET",
+      "text": "I’ll be with you straight. Go a little before."
+    },
+    {
+      "number": 29,
+      "speaker": "HAMLET",
+      "text": "How all occasions do inform against me,"
+    },
+    {
+      "number": 30,
+      "speaker": "HAMLET",
+      "text": "And spur my dull revenge! What is a man,"
+    },
+    {
+      "number": 31,
+      "speaker": "HAMLET",
+      "text": "If his chief good and market of his time"
+    },
+    {
+      "number": 32,
+      "speaker": "HAMLET",
+      "text": "Be but to sleep and feed? a beast, no more."
+    },
+    {
+      "number": 33,
+      "speaker": "HAMLET",
+      "text": "Sure, he that made us with such large discourse,"
+    },
+    {
+      "number": 34,
+      "speaker": "HAMLET",
+      "text": "Looking before and after, gave us not"
+    },
+    {
+      "number": 35,
+      "speaker": "HAMLET",
+      "text": "That capability and god-like reason"
+    },
+    {
+      "number": 36,
+      "speaker": "HAMLET",
+      "text": "To fust in us unused. Now, whether it be"
+    },
+    {
+      "number": 37,
+      "speaker": "HAMLET",
+      "text": "Bestial oblivion, or some craven scruple"
+    },
+    {
+      "number": 38,
+      "speaker": "HAMLET",
+      "text": "Of thinking too precisely on the event,"
+    },
+    {
+      "number": 39,
+      "speaker": "HAMLET",
+      "text": "A thought which, quarter’d, hath but one part wisdom"
+    },
+    {
+      "number": 40,
+      "speaker": "HAMLET",
+      "text": "And ever three parts coward, I do not know"
+    },
+    {
+      "number": 41,
+      "speaker": "HAMLET",
+      "text": "Why yet I live to say “This thing’s to do;”"
+    },
+    {
+      "number": 42,
+      "speaker": "HAMLET",
+      "text": "Sith I have cause and will and strength and means"
+    },
+    {
+      "number": 43,
+      "speaker": "HAMLET",
+      "text": "To do’t. Examples gross as earth exhort me:"
+    },
+    {
+      "number": 44,
+      "speaker": "HAMLET",
+      "text": "Witness this army of such mass and charge"
+    },
+    {
+      "number": 45,
+      "speaker": "HAMLET",
+      "text": "Led by a delicate and tender prince,"
+    },
+    {
+      "number": 46,
+      "speaker": "HAMLET",
+      "text": "Whose spirit with divine ambition puff’d"
+    },
+    {
+      "number": 47,
+      "speaker": "HAMLET",
+      "text": "Makes mouths at the invisible event,"
+    },
+    {
+      "number": 48,
+      "speaker": "HAMLET",
+      "text": "Exposing what is mortal and unsure"
+    },
+    {
+      "number": 49,
+      "speaker": "HAMLET",
+      "text": "To all that fortune, death and danger dare,"
+    },
+    {
+      "number": 50,
+      "speaker": "HAMLET",
+      "text": "Even for an egg-shell. Rightly to be great"
+    },
+    {
+      "number": 51,
+      "speaker": "HAMLET",
+      "text": "Is not to stir without great argument,"
+    },
+    {
+      "number": 52,
+      "speaker": "HAMLET",
+      "text": "But greatly to find quarrel in a straw"
+    },
+    {
+      "number": 53,
+      "speaker": "HAMLET",
+      "text": "When honour’s at the stake. How stand I then,"
+    },
+    {
+      "number": 54,
+      "speaker": "HAMLET",
+      "text": "That have a father kill’d, a mother stain’d,"
+    },
+    {
+      "number": 55,
+      "speaker": "HAMLET",
+      "text": "Excitements of my reason and my blood"
+    },
+    {
+      "number": 56,
+      "speaker": "HAMLET",
+      "text": "And let all sleep? while, to my shame, I see"
+    },
+    {
+      "number": 57,
+      "speaker": "HAMLET",
+      "text": "The imminent death of twenty thousand men,"
+    },
+    {
+      "number": 58,
+      "speaker": "HAMLET",
+      "text": "That, for a fantasy and trick of fame,"
+    },
+    {
+      "number": 59,
+      "speaker": "HAMLET",
+      "text": "Go to their graves like beds, fight for a plot"
+    },
+    {
+      "number": 60,
+      "speaker": "HAMLET",
+      "text": "Whereon the numbers cannot try the cause,"
+    },
+    {
+      "number": 61,
+      "speaker": "HAMLET",
+      "text": "Which is not tomb enough and continent"
+    },
+    {
+      "number": 62,
+      "speaker": "HAMLET",
+      "text": "To hide the slain? O, from this time forth,"
+    },
+    {
+      "number": 63,
+      "speaker": "HAMLET",
+      "text": "My thoughts be bloody, or be nothing worth!"
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Fortinbras, a Captain, and Soldiers, marching."
+    },
+    {
+      "after_line": 8,
+      "text": "Exeunt Fortinbras and Soldiers."
+    },
+    {
+      "after_line": 8,
+      "text": "Enter Hamlet, Rosencrantz, Guildenstern, and others."
+    },
+    {
+      "after_line": 27,
+      "text": "Exit."
+    },
+    {
+      "after_line": 28,
+      "text": "Exeunt all except Hamlet."
+    },
+    {
+      "after_line": 63,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "hamlet_act4_scene4_gloss1",
+      "line": 3,
+      "phrase": "conveyance",
+      "definition": "escort; passage"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss2",
+      "line": 4,
+      "phrase": "rendezvous",
+      "definition": "appointed meeting place"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss3",
+      "line": 6,
+      "phrase": "duty in his eye",
+      "definition": "homage in person"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss4",
+      "line": 8,
+      "phrase": "powers",
+      "definition": "soldiers; troops"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss5",
+      "line": 12,
+      "phrase": "main of Poland",
+      "definition": "main body of Poland"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss6",
+      "line": 13,
+      "phrase": "frontier",
+      "definition": "border territory"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss7",
+      "line": 17,
+      "phrase": "farm it",
+      "definition": "lease it (so worthless)"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss8",
+      "line": 19,
+      "phrase": "ranker rate",
+      "definition": "higher price"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss9",
+      "line": 19,
+      "phrase": "in fee",
+      "definition": "in freehold"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss10",
+      "line": 22,
+      "phrase": "Two thousand souls and twenty thousand ducats",
+      "definition": "2,000 lives and 20,000 gold coins"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss11",
+      "line": 24,
+      "phrase": "imposthume",
+      "definition": "abscess; inner sore"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss12",
+      "line": 29,
+      "phrase": "occasions do inform against me",
+      "definition": "circumstances accuse me"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss13",
+      "line": 31,
+      "phrase": "chief good and market of his time",
+      "definition": "best aim and profit of his life"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss14",
+      "line": 33,
+      "phrase": "discourse",
+      "definition": "reasoning faculty"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss15",
+      "line": 35,
+      "phrase": "capability and god-like reason",
+      "definition": "intellect and divine power of thought"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss16",
+      "line": 36,
+      "phrase": "fust",
+      "definition": "grow moldy"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss17",
+      "line": 37,
+      "phrase": "bestial oblivion",
+      "definition": "beast-like forgetfulness"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss18",
+      "line": 37,
+      "phrase": "craven scruple",
+      "definition": "cowardly hesitation"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss19",
+      "line": 38,
+      "phrase": "thinking too precisely on the event",
+      "definition": "reflecting too minutely on the outcome"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss20",
+      "line": 43,
+      "phrase": "gross as earth",
+      "definition": "obvious as the ground"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss21",
+      "line": 45,
+      "phrase": "delicate and tender prince",
+      "definition": "refined and young prince (Fortinbras)"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss22",
+      "line": 46,
+      "phrase": "puff’d",
+      "definition": "inflated"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss23",
+      "line": 46,
+      "phrase": "divine ambition",
+      "definition": "lofty ambition"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss24",
+      "line": 47,
+      "phrase": "mouths at the invisible event",
+      "definition": "mocks the unknown outcome"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss25",
+      "line": 50,
+      "phrase": "egg-shell",
+      "definition": "trifle (worthless prize)"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss26",
+      "line": 50,
+      "phrase": "rightly to be great",
+      "definition": "true greatness"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss27",
+      "line": 52,
+      "phrase": "greatly to find quarrel in a straw",
+      "definition": "nobly to take offense at a trifle"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss28",
+      "line": 53,
+      "phrase": "honour’s at the stake",
+      "definition": "reputation is in the balance"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss29",
+      "line": 58,
+      "phrase": "trick of fame",
+      "definition": "trifle of honor"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss30",
+      "line": 61,
+      "phrase": "continent",
+      "definition": "enclosure; ground"
+    },
+    {
+      "id": "hamlet_act4_scene4_gloss31",
+      "line": 63,
+      "phrase": "my thoughts be bloody, or be nothing worth",
+      "definition": "let my thoughts be violent, or else worthless"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "hamlet_act4_scene4_ann1",
+      "line_start": 1,
+      "line_end": 32,
+      "citation_display": "Hamlet 4.4.1–32",
+      "category": "structural",
+      "title": "Fortinbras's army and the politics of honor",
+      "body": "Fortinbras appears briefly en route to Poland, his army marching to fight over a patch of ground Hamlet's captain dismisses as 'the plot whereon the numbers cannot try the cause.' Shakespeare stages the man against whom Hamlet has been measured all along: a prince whose father was killed by King Hamlet, and who has organized an entire military campaign to recover the family honor. Hamlet's whole strategic horizon — delay, interrogation, doubt — has no corollary in Fortinbras. The scene poses the play's sharpest question: is Fortinbras's decisive honor-seeking noble, or is it the waste of twenty thousand lives over an eggshell? The final soliloquy will refuse to settle it.",
+      "sources": [
+        "Jonathan Bate, Soul of the Age (2008)"
+      ]
+    },
+    {
+      "id": "hamlet_act4_scene4_ann2",
+      "line_start": 32,
+      "line_end": 66,
+      "citation_display": "Hamlet 4.4.32–66",
+      "category": "thematic",
+      "title": "'How all occasions do inform against me'",
+      "body": "Hamlet's final soliloquy — absent from the Folio but present in the Second Quarto — is the prince's most thorough self-examination. 'What is a man, / If his chief good and market of his time / Be but to sleep and feed?' echoes the earlier 'what is this quintessence of dust?' but turns the question from species to self. The speech's climax — 'Rightly to be great / Is not to stir without great argument, / But greatly to find quarrel in a straw / When honour's at the stake' — is both a critique of Fortinbras and an envy of him. The closing couplet, 'O, from this time forth, / My thoughts be bloody, or be nothing worth,' is the play's last soliloquy of resolution, and the next time we see Hamlet he will already be different.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)",
+        "Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"
+      ]
+    },
+    {
+      "id": "hamlet_act4_scene4_ann3",
+      "line_start": 52,
+      "line_end": 58,
+      "citation_display": "Hamlet 4.4.52–58",
+      "category": "textual",
+      "title": "The soliloquy's textual ghost",
+      "body": "This entire soliloquy (about 35 lines) is missing from the 1623 First Folio. Many editors assume Shakespeare's company cut it in later performance for length; some scholars, including Paul Werstine and Barbara Mowat, argue the cut was thematic — the Folio Hamlet is a less meditative figure, closer to a man of action. Whichever theory is right, modern editions typically restore the speech from the Second Quarto because it is a pivot point for the character. Without it, Hamlet's decisiveness in Act 5 — the letter forgery, the pirate-ship escape, the readiness for the duel — arrives unearned.",
+      "sources": [
+        "Paul Werstine, 'The Textual Mystery of Hamlet' (1988)",
+        "Barbara Mowat and Paul Werstine, eds., Folger Shakespeare Library edition"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "hamlet_act4_scene4_q1",
+      "kind": "comprehension",
+      "prompt": "Where is Fortinbras leading his army in this scene?",
+      "options": [
+        "To reclaim his father's lost lands in Denmark.",
+        "To fight the Poles over a worthless patch of ground.",
+        "To invade England with the support of Denmark.",
+        "To assist the King of Norway against a rebellion."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 14,
+      "anchor_line_end": 27
+    },
+    {
+      "id": "hamlet_act4_scene4_q2",
+      "kind": "inference",
+      "prompt": "What does the Captain admit about the campaign?",
+      "options": [
+        "That the Poles will surrender without a fight.",
+        "That the land is not worth five ducats to farm, yet thousands will die for it.",
+        "That Fortinbras is a secret agent of Claudius.",
+        "That the soldiers will mutiny before reaching Poland."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 16,
+      "anchor_line_end": 23
+    },
+    {
+      "id": "hamlet_act4_scene4_q3",
+      "kind": "theme",
+      "prompt": "What does Hamlet's final soliloquy contrast his own behavior with?",
+      "options": [
+        "The courage of Fortinbras, who acts decisively for mere honor while Hamlet delays.",
+        "The piety of Claudius, whose prayers Hamlet cannot match.",
+        "The loyalty of Rosencrantz and Guildenstern.",
+        "The cunning of Polonius, whose methods he admires."
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 20,
+      "anchor_line_start": 44,
+      "anchor_line_end": 60
+    },
+    {
+      "id": "hamlet_act4_scene4_q4",
+      "kind": "close_reading",
+      "prompt": "What does Hamlet mean by 'Rightly to be great / Is not to stir without great argument, / But greatly to find quarrel in a straw'?",
+      "options": [
+        "True greatness avoids all conflict.",
+        "True greatness can turn a trifle into a cause of honor when honor is at stake.",
+        "Nobles should not quarrel over farmland.",
+        "Ambition is always a petty motive."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 53,
+      "anchor_line_end": 56
+    },
+    {
+      "id": "hamlet_act4_scene4_q5",
+      "kind": "comprehension",
+      "prompt": "What vow does Hamlet make at the end of the soliloquy?",
+      "options": [
+        "To return to Wittenberg and pursue his studies.",
+        "That his thoughts, from this moment, must be bloody or worthless.",
+        "To spare Claudius for his mother's sake.",
+        "To reveal all to Horatio."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 63,
+      "anchor_line_end": 66
+    }
+  ]
+}

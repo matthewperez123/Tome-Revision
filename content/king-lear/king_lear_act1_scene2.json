@@ -1,0 +1,1131 @@
+{
+  "section_id": "king_lear_act1_scene2",
+  "work_id": "king-lear",
+  "sequence": 2,
+  "act": 1,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "The Earl of Gloucester's castle",
+  "line_count": 144,
+  "word_count": 1340,
+  "est_read_minutes": 7,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "EDMUND",
+      "text": "Thou, nature, art my goddess; to thy law"
+    },
+    {
+      "number": 2,
+      "speaker": "EDMUND",
+      "text": "My services are bound. Wherefore should I"
+    },
+    {
+      "number": 3,
+      "speaker": "EDMUND",
+      "text": "Stand in the plague of custom, and permit"
+    },
+    {
+      "number": 4,
+      "speaker": "EDMUND",
+      "text": "The curiosity of nations to deprive me,"
+    },
+    {
+      "number": 5,
+      "speaker": "EDMUND",
+      "text": "For that I am some twelve or fourteen moon-shines"
+    },
+    {
+      "number": 6,
+      "speaker": "EDMUND",
+      "text": "Lag of a brother? Why bastard? wherefore base?"
+    },
+    {
+      "number": 7,
+      "speaker": "EDMUND",
+      "text": "When my dimensions are as well compact,"
+    },
+    {
+      "number": 8,
+      "speaker": "EDMUND",
+      "text": "My mind as generous, and my shape as true,"
+    },
+    {
+      "number": 9,
+      "speaker": "EDMUND",
+      "text": "As honest madam’s issue? Why brand they us"
+    },
+    {
+      "number": 10,
+      "speaker": "EDMUND",
+      "text": "With base? with baseness? bastardy? base, base?"
+    },
+    {
+      "number": 11,
+      "speaker": "EDMUND",
+      "text": "Who, in the lusty stealth of nature, take"
+    },
+    {
+      "number": 12,
+      "speaker": "EDMUND",
+      "text": "More composition and fierce quality"
+    },
+    {
+      "number": 13,
+      "speaker": "EDMUND",
+      "text": "Than doth, within a dull, stale, tired bed,"
+    },
+    {
+      "number": 14,
+      "speaker": "EDMUND",
+      "text": "Go to the creating a whole tribe of fops,"
+    },
+    {
+      "number": 15,
+      "speaker": "EDMUND",
+      "text": "Got ’tween asleep and wake? Well, then,"
+    },
+    {
+      "number": 16,
+      "speaker": "EDMUND",
+      "text": "Legitimate Edgar, I must have your land:"
+    },
+    {
+      "number": 17,
+      "speaker": "EDMUND",
+      "text": "Our father’s love is to the bastard Edmund"
+    },
+    {
+      "number": 18,
+      "speaker": "EDMUND",
+      "text": "As to the legitimate: fine word—legitimate!"
+    },
+    {
+      "number": 19,
+      "speaker": "EDMUND",
+      "text": "Well, my legitimate, if this letter speed,"
+    },
+    {
+      "number": 20,
+      "speaker": "EDMUND",
+      "text": "And my invention thrive, Edmund the base"
+    },
+    {
+      "number": 21,
+      "speaker": "EDMUND",
+      "text": "Shall top the legitimate. I grow; I prosper:"
+    },
+    {
+      "number": 22,
+      "speaker": "EDMUND",
+      "text": "Now, gods, stand up for bastards!"
+    },
+    {
+      "number": 23,
+      "speaker": "GLOUCESTER",
+      "text": "Kent banish’d thus! and France in choler parted!"
+    },
+    {
+      "number": 24,
+      "speaker": "GLOUCESTER",
+      "text": "And the king gone to-night! subscribed his power!"
+    },
+    {
+      "number": 25,
+      "speaker": "GLOUCESTER",
+      "text": "Confined to exhibition! All this done"
+    },
+    {
+      "number": 26,
+      "speaker": "GLOUCESTER",
+      "text": "Upon the gad! Edmund, how now! what news?"
+    },
+    {
+      "number": 27,
+      "speaker": "EDMUND",
+      "text": "So please your lordship, none. Putting up the letter."
+    },
+    {
+      "number": 28,
+      "speaker": "GLOUCESTER",
+      "text": "Why so earnestly seek you to put up that letter?"
+    },
+    {
+      "number": 29,
+      "speaker": "EDMUND",
+      "text": "I know no news, my lord."
+    },
+    {
+      "number": 29,
+      "speaker": "GLOUCESTER",
+      "text": "What paper were you reading?"
+    },
+    {
+      "number": 30,
+      "speaker": "EDMUND",
+      "text": "Nothing, my lord."
+    },
+    {
+      "number": 31,
+      "speaker": "GLOUCESTER",
+      "text": "No? What needed, then, that terrible dispatch of it into your pocket?"
+    },
+    {
+      "number": 32,
+      "speaker": "GLOUCESTER",
+      "text": "the quality of nothing hath not such need to hide itself. Let’s"
+    },
+    {
+      "number": 33,
+      "speaker": "GLOUCESTER",
+      "text": "see: come, if it be nothing, I shall not need spectacles."
+    },
+    {
+      "number": 34,
+      "speaker": "EDMUND",
+      "text": "I beseech you, sir, pardon me: it is a letter from my"
+    },
+    {
+      "number": 35,
+      "speaker": "EDMUND",
+      "text": "brother, that I have not all o’er-read; and for so much as"
+    },
+    {
+      "number": 36,
+      "speaker": "EDMUND",
+      "text": "I have perused, I find it not fit for your o’er-looking."
+    },
+    {
+      "number": 37,
+      "speaker": "GLOUCESTER",
+      "text": "Give me the letter, sir."
+    },
+    {
+      "number": 38,
+      "speaker": "EDMUND",
+      "text": "I shall offend, either to detain or give it. The contents, as"
+    },
+    {
+      "number": 39,
+      "speaker": "EDMUND",
+      "text": "in part I understand them, are to blame."
+    },
+    {
+      "number": 40,
+      "speaker": "GLOUCESTER",
+      "text": "Let’s see, let’s see."
+    },
+    {
+      "number": 41,
+      "speaker": "EDMUND",
+      "text": "I hope, for my brother’s justification, he wrote this but as an"
+    },
+    {
+      "number": 42,
+      "speaker": "EDMUND",
+      "text": "essay or taste of my virtue."
+    },
+    {
+      "number": 43,
+      "speaker": "GLOUCESTER",
+      "text": "“This policy and reverence of age makes the world bitter to the"
+    },
+    {
+      "number": 44,
+      "speaker": "GLOUCESTER",
+      "text": "best of our times; keeps our fortunes from us till our oldness"
+    },
+    {
+      "number": 45,
+      "speaker": "GLOUCESTER",
+      "text": "cannot relish them. I begin to find an idle and fond bondage"
+    },
+    {
+      "number": 46,
+      "speaker": "GLOUCESTER",
+      "text": "in the oppression of aged tyranny; who sways, not as it hath"
+    },
+    {
+      "number": 47,
+      "speaker": "GLOUCESTER",
+      "text": "power, but as it is suffered. Come to me, that of this"
+    },
+    {
+      "number": 48,
+      "speaker": "GLOUCESTER",
+      "text": "I may speak more. If our father would sleep till I waked"
+    },
+    {
+      "number": 49,
+      "speaker": "GLOUCESTER",
+      "text": "him, you should half his revenue for ever, and live the beloved"
+    },
+    {
+      "number": 50,
+      "speaker": "GLOUCESTER",
+      "text": "of your brother, Edgar.”"
+    },
+    {
+      "number": 51,
+      "speaker": "EDMUND",
+      "text": "It was not brought me, my lord; there’s the cunning of it;"
+    },
+    {
+      "number": 52,
+      "speaker": "EDMUND",
+      "text": "I found it thrown in at the casement of my closet."
+    },
+    {
+      "number": 53,
+      "speaker": "GLOUCESTER",
+      "text": "You know the character to be your brother’s?"
+    },
+    {
+      "number": 54,
+      "speaker": "EDMUND",
+      "text": "If the matter were good, my lord, I durst swear it were"
+    },
+    {
+      "number": 55,
+      "speaker": "EDMUND",
+      "text": "his; but, in respect of that, I would fain think it were"
+    },
+    {
+      "number": 56,
+      "speaker": "EDMUND",
+      "text": "not."
+    },
+    {
+      "number": 56,
+      "speaker": "GLOUCESTER",
+      "text": "It is his."
+    },
+    {
+      "number": 57,
+      "speaker": "EDMUND",
+      "text": "It is his hand, my lord; but I hope his heart is"
+    },
+    {
+      "number": 58,
+      "speaker": "EDMUND",
+      "text": "not in the contents."
+    },
+    {
+      "number": 59,
+      "speaker": "GLOUCESTER",
+      "text": "Hath he never heretofore sounded you in this business?"
+    },
+    {
+      "number": 60,
+      "speaker": "EDMUND",
+      "text": "Never, my lord: but I have heard him oft maintain it to"
+    },
+    {
+      "number": 61,
+      "speaker": "EDMUND",
+      "text": "be fit, that, sons at perfect age, and fathers declining, the father"
+    },
+    {
+      "number": 62,
+      "speaker": "EDMUND",
+      "text": "should be as ward to the son, and the son manage his"
+    },
+    {
+      "number": 63,
+      "speaker": "EDMUND",
+      "text": "revenue."
+    },
+    {
+      "number": 64,
+      "speaker": "GLOUCESTER",
+      "text": "O villain, villain! His very opinion in the letter! Abhorred villain! Unnatural,"
+    },
+    {
+      "number": 65,
+      "speaker": "GLOUCESTER",
+      "text": "detested, brutish villain! worse than brutish! Go, sirrah, seek him; I’ll apprehend"
+    },
+    {
+      "number": 66,
+      "speaker": "GLOUCESTER",
+      "text": "him: abominable villain! Where is he?"
+    },
+    {
+      "number": 67,
+      "speaker": "EDMUND",
+      "text": "I do not well know, my lord. If it shall please you"
+    },
+    {
+      "number": 68,
+      "speaker": "EDMUND",
+      "text": "to suspend your indignation against my brother till you can derive from"
+    },
+    {
+      "number": 69,
+      "speaker": "EDMUND",
+      "text": "him better testimony of his intent, you shall run a certain course;"
+    },
+    {
+      "number": 70,
+      "speaker": "EDMUND",
+      "text": "where, if you violently proceed against him, mistaking his purpose, it would"
+    },
+    {
+      "number": 71,
+      "speaker": "EDMUND",
+      "text": "make a great gap in your own honour, and shake in pieces"
+    },
+    {
+      "number": 72,
+      "speaker": "EDMUND",
+      "text": "the heart of his obedience. I dare pawn down my life for"
+    },
+    {
+      "number": 73,
+      "speaker": "EDMUND",
+      "text": "him, that he hath wrote this to feel my affection to your"
+    },
+    {
+      "number": 74,
+      "speaker": "EDMUND",
+      "text": "honour, and to no further pretence of danger."
+    },
+    {
+      "number": 75,
+      "speaker": "GLOUCESTER",
+      "text": "Think you so?"
+    },
+    {
+      "number": 76,
+      "speaker": "EDMUND",
+      "text": "If your honour judge it meet, I will place you where you"
+    },
+    {
+      "number": 77,
+      "speaker": "EDMUND",
+      "text": "shall hear us confer of this, and by an auricular assurance have"
+    },
+    {
+      "number": 78,
+      "speaker": "EDMUND",
+      "text": "your satisfaction; and that without any further delay than this very evening."
+    },
+    {
+      "number": 79,
+      "speaker": "GLOUCESTER",
+      "text": "He cannot be such a monster—"
+    },
+    {
+      "number": 79,
+      "speaker": "EDMUND",
+      "text": "Nor is not, sure."
+    },
+    {
+      "number": 80,
+      "speaker": "GLOUCESTER",
+      "text": "To his father, that so tenderly and entirely loves him. Heaven and"
+    },
+    {
+      "number": 81,
+      "speaker": "GLOUCESTER",
+      "text": "earth! Edmund, seek him out: wind me into him, I pray you:"
+    },
+    {
+      "number": 82,
+      "speaker": "GLOUCESTER",
+      "text": "frame the business after your own wisdom. I would unstate myself, to"
+    },
+    {
+      "number": 83,
+      "speaker": "GLOUCESTER",
+      "text": "be in a due resolution."
+    },
+    {
+      "number": 84,
+      "speaker": "EDMUND",
+      "text": "I will seek him, sir, presently: convey the business as I shall"
+    },
+    {
+      "number": 85,
+      "speaker": "EDMUND",
+      "text": "find means and acquaint you withal."
+    },
+    {
+      "number": 86,
+      "speaker": "GLOUCESTER",
+      "text": "These late eclipses in the sun and moon portend no good to"
+    },
+    {
+      "number": 87,
+      "speaker": "GLOUCESTER",
+      "text": "us: though the wisdom of nature can reason it thus and thus,"
+    },
+    {
+      "number": 88,
+      "speaker": "GLOUCESTER",
+      "text": "yet nature finds itself scourged by the sequent effects: love cools, friendship"
+    },
+    {
+      "number": 89,
+      "speaker": "GLOUCESTER",
+      "text": "falls off, brothers divide: in cities, mutinies; in countries, discord; in palaces,"
+    },
+    {
+      "number": 90,
+      "speaker": "GLOUCESTER",
+      "text": "treason; and the bond cracked ’twixt son and father. This villain of"
+    },
+    {
+      "number": 91,
+      "speaker": "GLOUCESTER",
+      "text": "mine comes under the prediction; there’s son against father: the king falls"
+    },
+    {
+      "number": 92,
+      "speaker": "GLOUCESTER",
+      "text": "from bias of nature; there’s father against child. We have seen the"
+    },
+    {
+      "number": 93,
+      "speaker": "GLOUCESTER",
+      "text": "best of our time: machinations, hollowness, treachery, and all ruinous disorders, follow"
+    },
+    {
+      "number": 94,
+      "speaker": "GLOUCESTER",
+      "text": "us disquietly to our graves. Find out this villain, Edmund; it shall"
+    },
+    {
+      "number": 95,
+      "speaker": "GLOUCESTER",
+      "text": "lose thee nothing; do it carefully. And the noble and true-hearted Kent"
+    },
+    {
+      "number": 96,
+      "speaker": "GLOUCESTER",
+      "text": "banished! his offence, honesty! ’Tis strange."
+    },
+    {
+      "number": 97,
+      "speaker": "EDMUND",
+      "text": "This is the excellent foppery of the world, that, when we are"
+    },
+    {
+      "number": 98,
+      "speaker": "EDMUND",
+      "text": "sick in fortune—often the surfeit of our own behavior—we make guilty of"
+    },
+    {
+      "number": 99,
+      "speaker": "EDMUND",
+      "text": "our disasters the sun, the moon, and the stars: as if we"
+    },
+    {
+      "number": 100,
+      "speaker": "EDMUND",
+      "text": "were villains by necessity; fools by heavenly compulsion; knaves, thieves, and treachers,"
+    },
+    {
+      "number": 101,
+      "speaker": "EDMUND",
+      "text": "by spherical predominance; drunkards, liars, and adulterers, by an enforced obedience of"
+    },
+    {
+      "number": 102,
+      "speaker": "EDMUND",
+      "text": "planetary influence; and all that we are evil in, by a divine"
+    },
+    {
+      "number": 103,
+      "speaker": "EDMUND",
+      "text": "thrusting on: an admirable evasion of whoremaster man, to lay his goatish"
+    },
+    {
+      "number": 104,
+      "speaker": "EDMUND",
+      "text": "disposition to the charge of a star! My father compounded with my"
+    },
+    {
+      "number": 105,
+      "speaker": "EDMUND",
+      "text": "mother under the dragon’s tail; and my nativity was under Ursa major;"
+    },
+    {
+      "number": 106,
+      "speaker": "EDMUND",
+      "text": "so that it follows, I am rough and lecherous. Tut, I should"
+    },
+    {
+      "number": 107,
+      "speaker": "EDMUND",
+      "text": "have been that I am, had the maidenliest star in the firmament"
+    },
+    {
+      "number": 108,
+      "speaker": "EDMUND",
+      "text": "twinkled on my bastardizing. Edgar—"
+    },
+    {
+      "number": 109,
+      "speaker": "EDGAR",
+      "text": "How now, brother Edmund! what serious contemplation are you in?"
+    },
+    {
+      "number": 110,
+      "speaker": "EDMUND",
+      "text": "I am thinking, brother, of a prediction I read this other day,"
+    },
+    {
+      "number": 111,
+      "speaker": "EDMUND",
+      "text": "what should follow these eclipses."
+    },
+    {
+      "number": 111,
+      "speaker": "EDGAR",
+      "text": "Do you busy yourself about that?"
+    },
+    {
+      "number": 112,
+      "speaker": "EDMUND",
+      "text": "I promise you, the effects he writes of succeed unhappily; as of"
+    },
+    {
+      "number": 113,
+      "speaker": "EDMUND",
+      "text": "unnaturalness between the child and the parent; death, dearth, dissolutions of ancient"
+    },
+    {
+      "number": 114,
+      "speaker": "EDMUND",
+      "text": "amities; divisions in state, menaces and maledictions against king and nobles; needless"
+    },
+    {
+      "number": 115,
+      "speaker": "EDMUND",
+      "text": "diffidences, banishment of friends, dissipation of cohorts, nuptial breaches, and I know"
+    },
+    {
+      "number": 116,
+      "speaker": "EDMUND",
+      "text": "not what."
+    },
+    {
+      "number": 117,
+      "speaker": "EDGAR",
+      "text": "How long have you been a sectary astronomical?"
+    },
+    {
+      "number": 118,
+      "speaker": "EDMUND",
+      "text": "Come, come; when saw you my father last?"
+    },
+    {
+      "number": 119,
+      "speaker": "EDGAR",
+      "text": "Why, the night gone by."
+    },
+    {
+      "number": 119,
+      "speaker": "EDMUND",
+      "text": "Spake you with him?"
+    },
+    {
+      "number": 120,
+      "speaker": "EDGAR",
+      "text": "Ay, two hours together."
+    },
+    {
+      "number": 121,
+      "speaker": "EDMUND",
+      "text": "Parted you in good terms? Found you no displeasure in him by word or countenance?"
+    },
+    {
+      "number": 122,
+      "speaker": "EDGAR",
+      "text": "None at all."
+    },
+    {
+      "number": 123,
+      "speaker": "EDMUND",
+      "text": "Bethink yourself wherein you may have offended him: and at my entreaty"
+    },
+    {
+      "number": 124,
+      "speaker": "EDMUND",
+      "text": "forbear his presence till some little time hath qualified the heat of"
+    },
+    {
+      "number": 125,
+      "speaker": "EDMUND",
+      "text": "his displeasure; which at this instant so rageth in him, that with"
+    },
+    {
+      "number": 126,
+      "speaker": "EDMUND",
+      "text": "the mischief of your person it would scarcely allay."
+    },
+    {
+      "number": 127,
+      "speaker": "EDGAR",
+      "text": "Some villain hath done me wrong."
+    },
+    {
+      "number": 128,
+      "speaker": "EDMUND",
+      "text": "That’s my fear. I pray you, have a continent forbearance till the"
+    },
+    {
+      "number": 129,
+      "speaker": "EDMUND",
+      "text": "spied of his rage goes slower; and, as I say, retire with"
+    },
+    {
+      "number": 130,
+      "speaker": "EDMUND",
+      "text": "me to my lodging, from whence I will fitly bring you to"
+    },
+    {
+      "number": 131,
+      "speaker": "EDMUND",
+      "text": "hear my lord speak: pray ye, go; there’s my key: if you"
+    },
+    {
+      "number": 132,
+      "speaker": "EDMUND",
+      "text": "do stir abroad, go armed."
+    },
+    {
+      "number": 132,
+      "speaker": "EDGAR",
+      "text": "Armed, brother!"
+    },
+    {
+      "number": 133,
+      "speaker": "EDMUND",
+      "text": "Brother, I advise you to the best; go armed: I am no"
+    },
+    {
+      "number": 134,
+      "speaker": "EDMUND",
+      "text": "honest man if there be any good meaning towards you: I have"
+    },
+    {
+      "number": 135,
+      "speaker": "EDMUND",
+      "text": "told you what I have seen and heard; but faintly, nothing like"
+    },
+    {
+      "number": 136,
+      "speaker": "EDMUND",
+      "text": "the image and horror of it: pray you, away."
+    },
+    {
+      "number": 137,
+      "speaker": "EDGAR",
+      "text": "Shall I hear from you anon?"
+    },
+    {
+      "number": 138,
+      "speaker": "EDMUND",
+      "text": "I do serve you in this business."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Edmund, with a letter."
+    },
+    {
+      "after_line": 22,
+      "text": "Enter Gloucester."
+    },
+    {
+      "after_line": 50,
+      "text": "Reads."
+    },
+    {
+      "after_line": 50,
+      "text": "Hum—conspiracy!—“Sleep till I waked him—you should enjoy half his revenue,”—My son Edgar! Had he a hand to write this? a heart and brain to breed it in?—When came this to you? who brought it?"
+    },
+    {
+      "after_line": 96,
+      "text": "Exit."
+    },
+    {
+      "after_line": 108,
+      "text": "Enter Edgar."
+    },
+    {
+      "after_line": 108,
+      "text": "And pat he comes like the catastrophe of the old comedy: my cue is villainous melancholy, with a sigh like Tom o’ Bedlam. O, these eclipses do portend these divisions! fa, sol, la, mi."
+    },
+    {
+      "after_line": 138,
+      "text": "Exit Edgar."
+    },
+    {
+      "after_line": 138,
+      "text": "A credulous father! and a brother noble, Whose nature is so far from doing harms, That he suspects none: on whose foolish honesty My practises ride easy! I see the business. Let me, if not by birth, have lands by wit: All with me’s meet that I can fashion fit. Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act1_scene2_gloss1",
+      "line": 1,
+      "phrase": "Nature",
+      "definition": "Edmund's deity — the principle of natural force, opposed to law and custom; the speech that defines his character"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss2",
+      "line": 2,
+      "phrase": "my services are bound",
+      "definition": "my loyalty is pledged"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss3",
+      "line": 3,
+      "phrase": "plague of custom",
+      "definition": "the curse of tradition; social conventions Edmund despises"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss4",
+      "line": 4,
+      "phrase": "curiosity of nations",
+      "definition": "the nice distinctions societies draw (legitimate / illegitimate)"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss5",
+      "line": 6,
+      "phrase": "lag of a brother",
+      "definition": "younger than my brother by"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss7",
+      "line": 6,
+      "phrase": "bastard",
+      "definition": "illegitimate child — Edmund seizes the word as his self-definition"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss8",
+      "line": 6,
+      "phrase": "base",
+      "definition": "low-born; illegitimate"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss9",
+      "line": 11,
+      "phrase": "lusty stealth of nature",
+      "definition": "vigorous, secret sexual energy of natural desire"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss10",
+      "line": 13,
+      "phrase": "dull, stale, tired bed",
+      "definition": "boring marital sex — Edmund prefers illicit passion"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss11",
+      "line": 14,
+      "phrase": "fops",
+      "definition": "fools; conventional types"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss12",
+      "line": 16,
+      "phrase": "legitimate Edgar",
+      "definition": "Edgar, the lawful heir; Edmund's foil"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss13",
+      "line": 16,
+      "phrase": "base / top the legitimate",
+      "definition": "the illegitimate shall surpass the legitimate"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss14",
+      "line": 22,
+      "phrase": "stand up for bastards",
+      "definition": "Edmund's mock-prayer"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss15",
+      "line": 23,
+      "phrase": "France in choler",
+      "definition": "France leaving in anger"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss17",
+      "line": 26,
+      "phrase": "upon the gad",
+      "definition": "on a sudden impulse"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss18",
+      "line": 109,
+      "phrase": "pat he comes",
+      "definition": "right on cue — Edmund sees Edgar approach"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss19",
+      "line": 109,
+      "phrase": "melancholy",
+      "definition": "pensive; brooding"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss21",
+      "line": 43,
+      "phrase": "policy",
+      "definition": "prudent statecraft — here with a sinister edge"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss22",
+      "line": 46,
+      "phrase": "aged tyranny",
+      "definition": "tyrannical old men"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss23",
+      "line": 63,
+      "phrase": "revenue",
+      "definition": "income; what Gloucester would leave Edgar"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss24",
+      "line": 45,
+      "phrase": "idle and fond bondage",
+      "definition": "lazy and foolish obligation — to fathers"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss25",
+      "line": 52,
+      "phrase": "casement",
+      "definition": "window"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss28",
+      "line": 97,
+      "phrase": "foppery of the world",
+      "definition": "folly of the age — Edmund's scornful view of astrology"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss29",
+      "line": 98,
+      "phrase": "surfeit",
+      "definition": "indulgence; excess"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss31",
+      "line": 99,
+      "phrase": "stars",
+      "definition": "astrology — which Edmund rejects as alibi"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss32",
+      "line": 100,
+      "phrase": "treachers",
+      "definition": "traitors"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss33",
+      "line": 101,
+      "phrase": "spherical predominance",
+      "definition": "astrological influence of a dominant planet"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss34",
+      "line": 102,
+      "phrase": "divine thrusting on",
+      "definition": "heavenly compulsion"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss35",
+      "line": 103,
+      "phrase": "goatish disposition",
+      "definition": "lustful temperament"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss37",
+      "line": 105,
+      "phrase": "Dragon’s tail",
+      "definition": "the descending node of the moon's orbit — astrological term"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss38",
+      "line": 105,
+      "phrase": "Ursa Major",
+      "definition": "the constellation Great Bear"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss40",
+      "line": 104,
+      "phrase": "compounded",
+      "definition": "conceived"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss41",
+      "line": 109,
+      "phrase": "Tom o’ Bedlam",
+      "definition": "madman — Bedlam (Bethlem Hospital, London) was the notorious asylum"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss42",
+      "line": 86,
+      "phrase": "late eclipses",
+      "definition": "the real eclipses of 1605; Gloucester's astrological alarm"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss43",
+      "line": 117,
+      "phrase": "sectary astronomical",
+      "definition": "partisan of astrology"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss44",
+      "line": 114,
+      "phrase": "division",
+      "definition": "strife; political partition"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss46",
+      "line": 74,
+      "phrase": "to no further pretence of danger",
+      "definition": "no further apparent danger — Edmund pretending to protect Edgar"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss47",
+      "line": 69,
+      "phrase": "run a certain course",
+      "definition": "take a predictable path"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss48",
+      "line": 77,
+      "phrase": "auricular assurance",
+      "definition": "evidence of the ears; firsthand hearing"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss49",
+      "line": 86,
+      "phrase": "These late eclipses",
+      "definition": "recent eclipses — the 1605 eclipses Gloucester reads as portents"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss50",
+      "line": 86,
+      "phrase": "portend no good",
+      "definition": "forecast misfortune"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss51",
+      "line": 89,
+      "phrase": "mutinies",
+      "definition": "civil disorders; uprisings"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss52",
+      "line": 89,
+      "phrase": "discord",
+      "definition": "disharmony; conflict"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss54",
+      "line": 115,
+      "phrase": "diffidences",
+      "definition": "distrusts"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss55",
+      "line": 113,
+      "phrase": "natural",
+      "definition": "literal-biological (as opposed to legitimate) — Edmund's pun on his status"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss57",
+      "line": 115,
+      "phrase": "pat",
+      "definition": "on cue; just in time"
+    },
+    {
+      "id": "king_lear_act1_scene2_gloss59",
+      "line": 109,
+      "phrase": "my cue",
+      "definition": "my role's line — theatrical metaphor for his cold planning"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act1_scene2_ann1",
+      "line_start": 1,
+      "line_end": 22,
+      "citation_display": "King Lear 1.2.1–22",
+      "category": "thematic",
+      "title": "Edmund's 'Nature' soliloquy — the play's materialist manifesto",
+      "body": "Edmund's opening speech is the most dangerous in the play: a young man invoking 'Nature' against custom and law, claiming that illegitimate sons have 'more composition and fierce quality' than children 'got 'tween asleep and wake' in tired marital beds. This is Renaissance anti-humanism avant la lettre — Machiavellian in content, Senecan in rhetoric. Edmund has no supernatural explanation for his resentment and does not want one; he later rejects astrology as 'the excellent foppery of the world.' He is the play's first thoroughgoing modern — self-made, unbelieving, free of metaphysical scruple. Shakespeare lets him speak this speech with such rhetorical force that audiences often find themselves agreeing before they remember what Edmund will do. That seduction is deliberate: the play is testing how much of traditional morality survives when someone refuses to take it seriously.",
+      "sources": [
+        "Stephen Greenblatt, Renaissance Self-Fashioning (1980)",
+        "Jonathan Dollimore, Radical Tragedy (1984)"
+      ]
+    },
+    {
+      "id": "king_lear_act1_scene2_ann2",
+      "line_start": 90,
+      "line_end": 125,
+      "citation_display": "King Lear 1.2.90–125",
+      "category": "thematic",
+      "title": "Gloucester on the eclipses — astrological anxiety vs. Edmund's scorn",
+      "body": "Gloucester's catalogue of dangers following the recent eclipses ('unnaturalness between the child and the parent; death, dearth, dissolutions of ancient amities; divisions in state...') is a contemporary anxiety Shakespeare's first audience recognised — eclipses in October 1605 had set off a pamphlet industry of catastrophic predictions. Gloucester speaks in the voice of the credulous early-modern: Edmund rebuts him silently in the soliloquy that follows. The play does not choose between them. The catalogue turns out to be accurate — families do break, kingdoms do divide — but not because of the stars. Shakespeare lets Gloucester be right about effects and wrong about causes, which is the play's most efficient dramatic-ironic stance.",
+      "sources": [
+        "Thomas Dekker, The Belman of London (1608)",
+        "F. P. Wilson, Elizabethan and Jacobean (1945)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act1_scene2_q1",
+      "kind": "close_reading",
+      "prompt": "What does Edmund mean by invoking 'Nature' as his goddess?",
+      "options": [
+        "He is a pastoral poet",
+        "He rejects custom, law, and legitimacy as arbitrary conventions, claiming natural vigor over social categories — a materialist manifesto",
+        "He is a pagan religious believer",
+        "He is quoting Cicero"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 22
+    },
+    {
+      "id": "king_lear_act1_scene2_q2",
+      "kind": "theme",
+      "prompt": "What is Edmund's view of astrology (lines ~103–120)?",
+      "options": [
+        "He believes in it fervently",
+        "He dismisses it as 'excellent foppery' — a self-excusing fiction for moral weakness",
+        "He is uncertain",
+        "He accepts only certain forms of it"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 103,
+      "anchor_line_end": 125
+    },
+    {
+      "id": "king_lear_act1_scene2_q3",
+      "kind": "historical",
+      "prompt": "Why would Gloucester's astrological speech have resonated with Shakespeare's first audience?",
+      "options": [
+        "It didn't resonate — audiences ignored it",
+        "Real eclipses in October 1605 had triggered a pamphlet industry of doom predictions; Gloucester's catalogue speaks in the contemporary credulous register",
+        "It's a classical allusion",
+        "It quotes Scripture"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 90,
+      "anchor_line_end": 125
+    }
+  ]
+}

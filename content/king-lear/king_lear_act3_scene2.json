@@ -1,0 +1,863 @@
+{
+  "section_id": "king_lear_act3_scene2",
+  "work_id": "king-lear",
+  "sequence": 11,
+  "act": 3,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "Another part of the heath. Storm still",
+  "line_count": 85,
+  "word_count": 640,
+  "est_read_minutes": 3,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KING LEAR",
+      "text": "Blow, winds, and crack your cheeks! rage! blow!"
+    },
+    {
+      "number": 2,
+      "speaker": "KING LEAR",
+      "text": "You cataracts and hurricanoes, spout"
+    },
+    {
+      "number": 3,
+      "speaker": "KING LEAR",
+      "text": "Till you have drench’d our steeples, drown’d the cocks!"
+    },
+    {
+      "number": 4,
+      "speaker": "KING LEAR",
+      "text": "You sulphurous and thought-executing fires,"
+    },
+    {
+      "number": 5,
+      "speaker": "KING LEAR",
+      "text": "Vaunt-couriers to oak-cleaving thunderbolts,"
+    },
+    {
+      "number": 6,
+      "speaker": "KING LEAR",
+      "text": "Singe my white head! And thou, all-shaking thunder,"
+    },
+    {
+      "number": 7,
+      "speaker": "KING LEAR",
+      "text": "Smite flat the thick rotundity o’ the world!"
+    },
+    {
+      "number": 8,
+      "speaker": "KING LEAR",
+      "text": "Crack nature’s moulds, an germens spill at once,"
+    },
+    {
+      "number": 9,
+      "speaker": "KING LEAR",
+      "text": "That make ingrateful man!"
+    },
+    {
+      "number": 10,
+      "speaker": "FOOL",
+      "text": "O nuncle, court holy-water in a dry house is better than this"
+    },
+    {
+      "number": 11,
+      "speaker": "FOOL",
+      "text": "rain-water out o’ door. Good nuncle, in, and ask thy daughters’ blessing:"
+    },
+    {
+      "number": 12,
+      "speaker": "FOOL",
+      "text": "here’s a night pities neither wise man nor fool."
+    },
+    {
+      "number": 13,
+      "speaker": "KING LEAR",
+      "text": "Rumble thy bellyful! Spit, fire! spout, rain!"
+    },
+    {
+      "number": 14,
+      "speaker": "KING LEAR",
+      "text": "Nor rain, wind, thunder, fire, are my daughters:"
+    },
+    {
+      "number": 15,
+      "speaker": "KING LEAR",
+      "text": "I tax not you, you elements, with unkindness;"
+    },
+    {
+      "number": 16,
+      "speaker": "KING LEAR",
+      "text": "I never gave you kingdom, call’d you children,"
+    },
+    {
+      "number": 17,
+      "speaker": "KING LEAR",
+      "text": "You owe me no subscription: then let fall"
+    },
+    {
+      "number": 18,
+      "speaker": "KING LEAR",
+      "text": "Your horrible pleasure: here I stand, your slave,"
+    },
+    {
+      "number": 19,
+      "speaker": "KING LEAR",
+      "text": "A poor, infirm, weak, and despised old man:"
+    },
+    {
+      "number": 20,
+      "speaker": "KING LEAR",
+      "text": "But yet I call you servile ministers,"
+    },
+    {
+      "number": 21,
+      "speaker": "KING LEAR",
+      "text": "That have with two pernicious daughters join’d"
+    },
+    {
+      "number": 22,
+      "speaker": "KING LEAR",
+      "text": "Your high engender’d battles ’gainst a head"
+    },
+    {
+      "number": 23,
+      "speaker": "KING LEAR",
+      "text": "So old and white as this. O! O! ’tis foul!"
+    },
+    {
+      "number": 24,
+      "speaker": "FOOL",
+      "text": "He that has a house to put’s head in has a good head-piece."
+    },
+    {
+      "number": 25,
+      "speaker": "KING LEAR",
+      "text": "No, I will be the pattern of all patience;"
+    },
+    {
+      "number": 26,
+      "speaker": "KING LEAR",
+      "text": "I will say nothing."
+    },
+    {
+      "number": 26,
+      "speaker": "KENT",
+      "text": "Who’s there?"
+    },
+    {
+      "number": 27,
+      "speaker": "FOOL",
+      "text": "Marry, here’s grace and a cod-piece; that’s a wise man and a fool."
+    },
+    {
+      "number": 28,
+      "speaker": "KENT",
+      "text": "Alas, sir, are you here? things that love night"
+    },
+    {
+      "number": 29,
+      "speaker": "KENT",
+      "text": "Love not such nights as these; the wrathful skies"
+    },
+    {
+      "number": 30,
+      "speaker": "KENT",
+      "text": "Gallow the very wanderers of the dark,"
+    },
+    {
+      "number": 31,
+      "speaker": "KENT",
+      "text": "And make them keep their caves: since I was man,"
+    },
+    {
+      "number": 32,
+      "speaker": "KENT",
+      "text": "Such sheets of fire, such bursts of horrid thunder,"
+    },
+    {
+      "number": 33,
+      "speaker": "KENT",
+      "text": "Such groans of roaring wind and rain, I never"
+    },
+    {
+      "number": 34,
+      "speaker": "KENT",
+      "text": "Remember to have heard: man’s nature cannot carry"
+    },
+    {
+      "number": 35,
+      "speaker": "KENT",
+      "text": "The affliction nor the fear."
+    },
+    {
+      "number": 35,
+      "speaker": "KING LEAR",
+      "text": "Let the great gods,"
+    },
+    {
+      "number": 36,
+      "speaker": "KING LEAR",
+      "text": "That keep this dreadful pother o’er our heads,"
+    },
+    {
+      "number": 37,
+      "speaker": "KING LEAR",
+      "text": "Find out their enemies now. Tremble, thou wretch,"
+    },
+    {
+      "number": 38,
+      "speaker": "KING LEAR",
+      "text": "That hast within thee undivulged crimes,"
+    },
+    {
+      "number": 39,
+      "speaker": "KING LEAR",
+      "text": "Unwhipp’d of justice: hide thee, thou bloody hand;"
+    },
+    {
+      "number": 40,
+      "speaker": "KING LEAR",
+      "text": "Thou perjured, and thou simular man of virtue"
+    },
+    {
+      "number": 41,
+      "speaker": "KING LEAR",
+      "text": "That art incestuous: caitiff, to pieces shake,"
+    },
+    {
+      "number": 42,
+      "speaker": "KING LEAR",
+      "text": "That under covert and convenient seeming"
+    },
+    {
+      "number": 43,
+      "speaker": "KING LEAR",
+      "text": "Hast practised on man’s life: close pent-up guilts,"
+    },
+    {
+      "number": 44,
+      "speaker": "KING LEAR",
+      "text": "Rive your concealing continents, and cry"
+    },
+    {
+      "number": 45,
+      "speaker": "KING LEAR",
+      "text": "These dreadful summoners grace. I am a man"
+    },
+    {
+      "number": 46,
+      "speaker": "KING LEAR",
+      "text": "More sinn’d against than sinning."
+    },
+    {
+      "number": 46,
+      "speaker": "KENT",
+      "text": "Alack, bare-headed!"
+    },
+    {
+      "number": 47,
+      "speaker": "KENT",
+      "text": "Gracious my lord, hard by here is a hovel;"
+    },
+    {
+      "number": 48,
+      "speaker": "KENT",
+      "text": "Some friendship will it lend you ’gainst the tempest:"
+    },
+    {
+      "number": 49,
+      "speaker": "KENT",
+      "text": "Repose you there; while I to this hard house—"
+    },
+    {
+      "number": 50,
+      "speaker": "KENT",
+      "text": "More harder than the stones whereof ’tis raised;"
+    },
+    {
+      "number": 51,
+      "speaker": "KENT",
+      "text": "Which even but now, demanding after you,"
+    },
+    {
+      "number": 52,
+      "speaker": "KENT",
+      "text": "Denied me to come in—return, and force"
+    },
+    {
+      "number": 53,
+      "speaker": "KENT",
+      "text": "Their scanted courtesy."
+    },
+    {
+      "number": 53,
+      "speaker": "KING LEAR",
+      "text": "My wits begin to turn."
+    },
+    {
+      "number": 54,
+      "speaker": "KING LEAR",
+      "text": "Come on, my boy: how dost, my boy? art cold?"
+    },
+    {
+      "number": 55,
+      "speaker": "KING LEAR",
+      "text": "I am cold myself. Where is this straw, my fellow?"
+    },
+    {
+      "number": 56,
+      "speaker": "KING LEAR",
+      "text": "The art of our necessities is strange,"
+    },
+    {
+      "number": 57,
+      "speaker": "KING LEAR",
+      "text": "That can make vile things precious. Come, your hovel."
+    },
+    {
+      "number": 58,
+      "speaker": "KING LEAR",
+      "text": "Poor fool and knave, I have one part in my heart"
+    },
+    {
+      "number": 59,
+      "speaker": "KING LEAR",
+      "text": "That’s sorry yet for thee."
+    },
+    {
+      "number": 60,
+      "speaker": "FOOL",
+      "text": "He that has and a little tiny wit—"
+    },
+    {
+      "number": 61,
+      "speaker": "FOOL",
+      "text": "With hey, ho, the wind and the rain—"
+    },
+    {
+      "number": 62,
+      "speaker": "FOOL",
+      "text": "Must make content with his fortunes fit,"
+    },
+    {
+      "number": 63,
+      "speaker": "FOOL",
+      "text": "For the rain it raineth every day."
+    },
+    {
+      "number": 64,
+      "speaker": "KING LEAR",
+      "text": "True, my good boy. Come, bring us to this hovel."
+    },
+    {
+      "number": 65,
+      "speaker": "FOOL",
+      "text": "This is a brave night to cool a courtezan."
+    },
+    {
+      "number": 66,
+      "speaker": "FOOL",
+      "text": "I’ll speak a prophecy ere I go:"
+    },
+    {
+      "number": 67,
+      "speaker": "FOOL",
+      "text": "When priests are more in word than matter;"
+    },
+    {
+      "number": 68,
+      "speaker": "FOOL",
+      "text": "When brewers mar their malt with water;"
+    },
+    {
+      "number": 69,
+      "speaker": "FOOL",
+      "text": "When nobles are their tailors’ tutors;"
+    },
+    {
+      "number": 70,
+      "speaker": "FOOL",
+      "text": "No heretics burn’d, but wenches’ suitors;"
+    },
+    {
+      "number": 71,
+      "speaker": "FOOL",
+      "text": "When every case in law is right;"
+    },
+    {
+      "number": 72,
+      "speaker": "FOOL",
+      "text": "No squire in debt, nor no poor knight;"
+    },
+    {
+      "number": 73,
+      "speaker": "FOOL",
+      "text": "When slanders do not live in tongues;"
+    },
+    {
+      "number": 74,
+      "speaker": "FOOL",
+      "text": "Nor cutpurses come not to throngs;"
+    },
+    {
+      "number": 75,
+      "speaker": "FOOL",
+      "text": "When usurers tell their gold i’ the field;"
+    },
+    {
+      "number": 76,
+      "speaker": "FOOL",
+      "text": "And bawds and whores do churches build;"
+    },
+    {
+      "number": 77,
+      "speaker": "FOOL",
+      "text": "Then shall the realm of Albion"
+    },
+    {
+      "number": 78,
+      "speaker": "FOOL",
+      "text": "Come to great confusion:"
+    },
+    {
+      "number": 79,
+      "speaker": "FOOL",
+      "text": "Then comes the time, who lives to see’t,"
+    },
+    {
+      "number": 80,
+      "speaker": "FOOL",
+      "text": "That going shall be used with feet."
+    },
+    {
+      "number": 81,
+      "speaker": "FOOL",
+      "text": "This prophecy Merlin shall make; for I live before his time."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter King Lear and Fool."
+    },
+    {
+      "after_line": 24,
+      "text": "The cod-piece that will house Before the head has any, The head and he shall louse; So beggars marry many. The man that makes his toe What he his heart should make Shall of a corn cry woe, And turn his sleep to wake. For there was never yet fair woman but she made mouths in a glass."
+    },
+    {
+      "after_line": 26,
+      "text": "Enter Kent."
+    },
+    {
+      "after_line": 60,
+      "text": "Singing."
+    },
+    {
+      "after_line": 64,
+      "text": "Exeunt King Lear and Kent."
+    },
+    {
+      "after_line": 81,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act3_scene2_gloss1",
+      "line": 1,
+      "phrase": "Blow, winds, and crack your cheeks",
+      "definition": "Lear's command to the wind personified — the most famous line of the storm scenes"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss2",
+      "line": 2,
+      "phrase": "cataracts",
+      "definition": "waterfalls; here, torrents of rain"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss3",
+      "line": 2,
+      "phrase": "hurricanoes",
+      "definition": "whirlwinds; storms"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss4",
+      "line": 3,
+      "phrase": "drench’d our steeples",
+      "definition": "flooded the church-towers"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss5",
+      "line": 3,
+      "phrase": "drown’d the cocks",
+      "definition": "drowned the weathercocks — wind-vanes atop the steeples"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss6",
+      "line": 4,
+      "phrase": "sulphurous",
+      "definition": "fiery, hellish — the sulphur of lightning"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss7",
+      "line": 4,
+      "phrase": "thought-executing fires",
+      "definition": "lightning that moves at the speed of thought"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss8",
+      "line": 5,
+      "phrase": "Vaunt-couriers",
+      "definition": "heralds; the advance scouts of a main force"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss9",
+      "line": 5,
+      "phrase": "oak-cleaving thunderbolts",
+      "definition": "lightning-strikes that split oak trees"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss10",
+      "line": 6,
+      "phrase": "Singe my white head",
+      "definition": "burn off my grey hair — Lear offers himself to be struck"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss11",
+      "line": 7,
+      "phrase": "Smite flat",
+      "definition": "flatten; strike level"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss12",
+      "line": 7,
+      "phrase": "thick rotundity o’ the world",
+      "definition": "the bulging roundness of the earth — flat the globe itself"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss13",
+      "line": 8,
+      "phrase": "Crack nature’s moulds",
+      "definition": "break the templates of creation"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss14",
+      "line": 8,
+      "phrase": "germens spill",
+      "definition": "seeds of life — spill (scatter, destroy) the very seeds from which creatures grow"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss15",
+      "line": 9,
+      "phrase": "ingrateful",
+      "definition": "ungrateful"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss16",
+      "line": 10,
+      "phrase": "court holy-water",
+      "definition": "flattery at court — better than the rain, the Fool quips"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss18",
+      "line": 15,
+      "phrase": "tax not you, you elements",
+      "definition": "I don't blame you, storm-elements"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss19",
+      "line": 17,
+      "phrase": "subscription",
+      "definition": "submission; allegiance"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss20",
+      "line": 20,
+      "phrase": "servile ministers",
+      "definition": "slavish agents — the storm is working for his daughters"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss21",
+      "line": 21,
+      "phrase": "pernicious",
+      "definition": "destructive; lethal"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss22",
+      "line": 22,
+      "phrase": "high-engender’d battles",
+      "definition": "armies bred in the heavens — thunderclouds as soldiery"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss23",
+      "line": 24,
+      "phrase": "head-piece",
+      "definition": "helmet — also the head itself"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss24",
+      "line": 27,
+      "phrase": "cod-piece",
+      "definition": "the decorative genital pouch on Renaissance breeches — the Fool's song makes it stand in for the penis / male sexuality"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss27",
+      "line": 37,
+      "phrase": "Tremble, thou wretch",
+      "definition": "Lear addresses the guilty of the world in apostrophe"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss28",
+      "line": 38,
+      "phrase": "undivulged crimes",
+      "definition": "hidden sins"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss29",
+      "line": 39,
+      "phrase": "Unwhipp’d of justice",
+      "definition": "unpunished"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss30",
+      "line": 39,
+      "phrase": "bloody hand",
+      "definition": "murderer"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss32",
+      "line": 40,
+      "phrase": "simular",
+      "definition": "counterfeit; pretender"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss33",
+      "line": 41,
+      "phrase": "incestuous",
+      "definition": "unchaste in a close kinship sense; in Jacobean usage also broadly sexually transgressive beyond modern incest meaning"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss35",
+      "line": 44,
+      "phrase": "concealing continents",
+      "definition": "the bodies that hide you"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss36",
+      "line": 45,
+      "phrase": "summoners",
+      "definition": "process-servers of divine judgment"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss38",
+      "line": 64,
+      "phrase": "hovel",
+      "definition": "a wretched shelter — Kent offers Lear the only refuge on the heath"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss40",
+      "line": 81,
+      "phrase": "prophecy",
+      "definition": "the Fool's mock-prophecy that follows — a parody of Chaucer's 'When priests are more in word than matter'"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss41",
+      "line": 67,
+      "phrase": "priests are more in word than matter",
+      "definition": "the Fool's Chaucer-parody opening — the world turned upside-down as moral diagnosis"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss43",
+      "line": 81,
+      "phrase": "Merlin",
+      "definition": "wizard of Arthurian legend — the Fool places his prophecy in a pre-Merlin past"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss44",
+      "line": 13,
+      "phrase": "rumble thy bellyful",
+      "definition": "Lear's derisive license to the storm — growl all you want"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss45",
+      "line": 15,
+      "phrase": "tax not you, you elements",
+      "definition": "I don't accuse the elements — they are innocent"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss46",
+      "line": 17,
+      "phrase": "subscription",
+      "definition": "vassal allegiance — the storm owes him nothing"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss47",
+      "line": 20,
+      "phrase": "servile ministers",
+      "definition": "slavish lackeys"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss48",
+      "line": 22,
+      "phrase": "high-engender’d battles",
+      "definition": "armies bred in the heavens"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss49",
+      "line": 27,
+      "phrase": "marry",
+      "definition": "indeed — oath"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss50",
+      "line": 27,
+      "phrase": "wise man",
+      "definition": "the Fool's proverb: the truly prudent do not enter weather like this without a hat"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss51",
+      "line": 38,
+      "phrase": "undivulged crimes",
+      "definition": "hidden sins"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss52",
+      "line": 39,
+      "phrase": "Unwhipp’d of justice",
+      "definition": "unscourged by law"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss53",
+      "line": 42,
+      "phrase": "seeming",
+      "definition": "appearance"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss55",
+      "line": 58,
+      "phrase": "heart",
+      "definition": "courage"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss56",
+      "line": 58,
+      "phrase": "poor fool and knave",
+      "definition": "the Fool — Lear's first kindness on the heath"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss57",
+      "line": 56,
+      "phrase": "art of our necessities",
+      "definition": "the craft of making do with what we have"
+    },
+    {
+      "id": "king_lear_act3_scene2_gloss58",
+      "line": 75,
+      "phrase": "usurers tell their gold",
+      "definition": "the Fool's mock-prophecy: when rich men count coins publicly"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act3_scene2_ann1",
+      "line_start": 1,
+      "line_end": 25,
+      "citation_display": "King Lear 3.2.1–25",
+      "category": "thematic",
+      "title": "The storm as externalised psychology",
+      "body": "Lear's 'Blow, winds, and crack your cheeks! rage! blow!' is the moment critics have most often used to argue that Lear is not merely tragic drama but poetic cosmology. The storm is the play's most famous example of pathetic fallacy turned structural: Lear's mind is the weather. Harold Bloom writes that these scenes contain 'the greatest poetry ever composed' and that Lear 'is not so much a character as a cosmic force.' The storm is also staging itself against the theatrical limits of Shakespeare's stage — a king on a literal heath in literal wind and rain, calling on the elements to destroy the templates of creation ('Crack nature's moulds, an germens spill at once'). This is metaphysical revolt dressed as meteorology. Lear wants the world un-made, and the play permits him the syntax for it.",
+      "sources": [
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)",
+        "Frank Kermode, Shakespeare's Language (2000)"
+      ]
+    },
+    {
+      "id": "king_lear_act3_scene2_ann2",
+      "line_start": 47,
+      "line_end": 60,
+      "citation_display": "King Lear 3.2.47–60",
+      "category": "close_reading",
+      "title": "'I am a man more sinn'd against than sinning' — compressed moral accounting",
+      "body": "After the big apostrophe to the storm, Lear quietens into a different register: 'Let the great gods, / That keep this dreadful pudder o'er our heads, / Find out their enemies now. Tremble, thou wretch, / That hast within thee undivulged crimes / Unwhipp'd of justice.' The list — hidden criminals, perjurers, adulterers — is almost a litany of Jacobean moral anxiety. Lear's own confession, 'I am a man / More sinn'd against than sinning,' is the play's quietest moment of self-appraisal. Not 'innocent,' not 'wronged' — he admits sin while claiming the weight is uneven. That asymmetry is the play's tragic judgment: Lear is no saint, but what's been done to him exceeds any reasonable punishment. This is a surprisingly rare move for Shakespeare — a protagonist who concedes fault while refusing the full allocation of blame.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)"
+      ]
+    },
+    {
+      "id": "king_lear_act3_scene2_ann3",
+      "line_start": 67,
+      "line_end": 85,
+      "citation_display": "King Lear 3.2.67–85",
+      "category": "structural",
+      "title": "The Fool's prophecy — a Chaucer parody amid the storm",
+      "body": "Left alone on the heath, the Fool delivers a mock-prophecy beginning 'When priests are more in word than matter.' The speech is a parody of a genuine medieval prophecy commonly attributed to Chaucer, inverting its logic — the Fool prophesies a world in which justice reigns, which is by definition impossible. The joke is serious: the Fool is saying that Britain will never see such a world, and a kingdom that must wait for universal virtue for reform will wait forever. Some editors (Folger, Riverside) note that the prophecy may have been inserted by an actor later and question Shakespeare's authorship. Either way, it ends with 'This prophecy Merlin shall make; for I live before his time,' a temporal joke that makes the Fool older than Arthur and places his pessimism outside history.",
+      "sources": [
+        "G. Blakemore Evans, The Riverside Shakespeare (1974, 1997)",
+        "Kenneth Muir, King Lear (Arden, 1952)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act3_scene2_q1",
+      "kind": "theme",
+      "prompt": "Critics often describe the storm in 3.2 as —",
+      "options": [
+        "A simple weather event",
+        "Externalised psychology — Lear's mind made weather; pathetic fallacy raised to structural principle",
+        "A metaphor for England's climate",
+        "A biblical reference to Noah"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 25
+    },
+    {
+      "id": "king_lear_act3_scene2_q2",
+      "kind": "close_reading",
+      "prompt": "Harold Bloom's reading of the storm scenes treats them as —",
+      "options": [
+        "A failure of staging",
+        "'The greatest poetry ever composed,' with Lear 'not so much a character as a cosmic force' — the summit of Shakespearean verse",
+        "A weakness of the play",
+        "A later addition"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 25
+    },
+    {
+      "id": "king_lear_act3_scene2_q3",
+      "kind": "inference",
+      "prompt": "Lear's 'I am a man / More sinn'd against than sinning' concedes what?",
+      "options": [
+        "Complete innocence",
+        "That he has sinned (not claiming innocence), but that what has been done to him exceeds the weight of his own faults — an asymmetric moral judgment",
+        "That he is guilty of everything",
+        "Nothing"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 58,
+      "anchor_line_end": 62
+    },
+    {
+      "id": "king_lear_act3_scene2_q4",
+      "kind": "historical",
+      "prompt": "The Fool's prophecy at the end of 3.2 parodies —",
+      "options": [
+        "A Cavalier love-poem",
+        "A genuine medieval prophecy commonly attributed to Chaucer, inverted for pessimistic effect",
+        "A Latin hymn",
+        "A modern lyric"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 79,
+      "anchor_line_end": 85
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "section_id": "hamlet_act4_scene5",
+  "annotations": [
+    {
+      "line_start": 20,
+      "line_end": 70,
+      "category": "thematic",
+      "title": "Ophelia's songs: the breaking of a voice",
+      "body": "Ophelia's mad scenes substitute singing for speech, and the songs are not madness but scraps of a coherent emotional truth. The pilgrim song ('How should I your true love know / From another one?'), the Valentine's Day song with its sexual frankness ('Young men will do't, if they come to't; / By Cock, they are to blame'), and the song of the dead father ('He is gone, he is gone') articulate, through the displacement of received lyric, what Ophelia cannot say directly. Showalter's influential 'Representing Ophelia' argues that feminist criticism must recover the scene's meaning from the long tradition that aestheticized her madness as picturesque pathos. The songs are sharp instruments of accusation.",
+      "sources": ["Elaine Showalter, 'Representing Ophelia' (1985)"]
+    },
+    {
+      "line_start": 177,
+      "line_end": 188,
+      "category": "historical",
+      "title": "The flowers and the language of herbs",
+      "body": "Ophelia distributes flowers by their traditional meanings: rosemary for remembrance, pansies for thoughts, fennel for flattery, columbines for marital infidelity, rue for sorrow and repentance, daisy for dissembled love, violets (withered) for faithfulness. Elizabethan herbals, particularly John Gerard's Herball (1597), catalogued these significations and audiences would have read the tableau in real time. Ophelia's distributions are targeted: fennel and columbines (flattery and infidelity) to the King and Queen; rue to Gertrude; the withered violets since 'they all withered when my father died.' The scene is Ophelia's most articulate political speech, disguised as a flower game.",
+      "sources": ["Dympna Callaghan, Shakespeare without Women (2000)", "John Gerard, Herball (1597)"]
+    },
+    {
+      "line_start": 95,
+      "line_end": 132,
+      "category": "structural",
+      "title": "Laertes's insurrection and Hamlet's absent parallel",
+      "body": "Laertes storms the castle with an armed mob shouting 'Laertes shall be king,' threatening Claudius with immediate deposition. The contrast with Hamlet is structural: given the same provocation (a father murdered), Laertes acts at once and politically, raising popular support and confronting the sovereign. Shakespeare deliberately places Laertes's vengeance beside Hamlet's to force comparison — but the comparison does not favor either man. Laertes will let Claudius turn his revenge into the King's own instrument within twenty lines. The play keeps showing us characters who act decisively and are destroyed by their decisiveness, and characters who delay and are destroyed by their delay. There is no correct speed at which to avenge a father.",
+      "sources": ["Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"]
+    },
+    {
+      "line_start": 188,
+      "line_end": 196,
+      "category": "close_reading",
+      "title": "'There's rosemary, that's for remembrance'",
+      "body": "The most quoted of Ophelia's flower lines is also the most theatrically charged: she gives rosemary to someone — the stage direction in modern editions is ambiguous, and Laertes's 'A document in madness' suggests he recognizes its pointedness. Rosemary was associated with both weddings and funerals, and the double resonance fits Ophelia's condition — the bride-never-to-be who is already mourning. 'Pray, love, remember' is an instruction to the living to honor the dead, and in performance its recipient matters: Gertrude? Laertes? The King? Ophelia gives herself no rosemary, which the tradition would have noted: she is asking to be the one whose own loss is carried forward by others.",
+      "sources": ["Carol Thomas Neely, Distracted Subjects (2004)"]
+    }
+  ]
+}

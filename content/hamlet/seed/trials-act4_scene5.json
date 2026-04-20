@@ -1,0 +1,89 @@
+{
+  "section_id": "hamlet_act4_scene5",
+  "trials": [
+    {
+      "kind": "comprehension",
+      "prompt": "What condition does Ophelia demonstrate in her first appearance here?",
+      "options": [
+        "She is composed and demands justice for her father.",
+        "She is mad, singing fragments of old songs about lost love and dead fathers.",
+        "She is weeping silently and refuses to speak.",
+        "She has joined Laertes's armed uprising."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 17,
+      "anchor_line_end": 45
+    },
+    {
+      "kind": "inference",
+      "prompt": "What does the Valentine's Day song suggest about Ophelia's distress?",
+      "options": [
+        "That she has taken up a new religion.",
+        "That sexual betrayal (by a lover who promised marriage then refused) is among the griefs driving her madness.",
+        "That she misses her time at court festivals.",
+        "That Polonius promised her marriage to a stranger."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 47,
+      "anchor_line_end": 65
+    },
+    {
+      "kind": "comprehension",
+      "prompt": "What does Laertes do when he returns to Denmark?",
+      "options": [
+        "He presents himself humbly to Claudius for counsel.",
+        "He bursts in with a mob of followers shouting 'Laertes shall be king,' ready to kill the King.",
+        "He searches the castle for Polonius's body.",
+        "He challenges Hamlet to a duel by proxy."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 95,
+      "anchor_line_end": 115
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "Which flower does Ophelia associate with 'thoughts'?",
+      "options": [
+        "Rosemary",
+        "Pansies",
+        "Fennel",
+        "Rue"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 177,
+      "anchor_line_end": 180
+    },
+    {
+      "kind": "theme",
+      "prompt": "What does the contrast between Laertes's immediate revenge and Hamlet's delay suggest?",
+      "options": [
+        "That Laertes is the morally superior brother.",
+        "That Shakespeare is demonstrating the correct way to avenge a father.",
+        "That neither speed nor delay is safe — both revengers will be destroyed.",
+        "That Hamlet's philosophy has paralyzed him while Laertes acts freely."
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 25,
+      "anchor_line_start": 115,
+      "anchor_line_end": 145
+    },
+    {
+      "kind": "inference",
+      "prompt": "Why are the violets Ophelia mentions 'withered'?",
+      "options": [
+        "The season is late in summer and they have died.",
+        "They withered when her father died — faithfulness has died with Polonius.",
+        "A servant has neglected to water them.",
+        "She is referring to a plant disease in Denmark."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 185,
+      "anchor_line_end": 188
+    }
+  ]
+}

@@ -1,0 +1,662 @@
+{
+  "section_id": "macbeth_act1_scene2",
+  "work_id": "macbeth",
+  "sequence": 2,
+  "act": 1,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "A camp near Forres",
+  "line_count": 76,
+  "word_count": 483,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "DUNCAN",
+      "text": "What bloody man is that? He can report,"
+    },
+    {
+      "number": 2,
+      "speaker": "DUNCAN",
+      "text": "As seemeth by his plight, of the revolt"
+    },
+    {
+      "number": 3,
+      "speaker": "DUNCAN",
+      "text": "The newest state."
+    },
+    {
+      "number": 3,
+      "speaker": "MALCOLM",
+      "text": "This is the sergeant"
+    },
+    {
+      "number": 4,
+      "speaker": "MALCOLM",
+      "text": "Who like a good and hardy soldier fought"
+    },
+    {
+      "number": 5,
+      "speaker": "MALCOLM",
+      "text": "’Gainst my captivity. Hail, brave friend!"
+    },
+    {
+      "number": 6,
+      "speaker": "MALCOLM",
+      "text": "Say to the king the knowledge of the broil"
+    },
+    {
+      "number": 7,
+      "speaker": "MALCOLM",
+      "text": "As thou didst leave it."
+    },
+    {
+      "number": 7,
+      "speaker": "SERGEANT",
+      "text": "Doubtful it stood;"
+    },
+    {
+      "number": 8,
+      "speaker": "SERGEANT",
+      "text": "As two spent swimmers, that do cling together"
+    },
+    {
+      "number": 9,
+      "speaker": "SERGEANT",
+      "text": "And choke their art. The merciless Macdonwald—"
+    },
+    {
+      "number": 10,
+      "speaker": "SERGEANT",
+      "text": "Worthy to be a rebel, for to that"
+    },
+    {
+      "number": 11,
+      "speaker": "SERGEANT",
+      "text": "The multiplying villainies of nature"
+    },
+    {
+      "number": 12,
+      "speaker": "SERGEANT",
+      "text": "Do swarm upon him—from the western isles"
+    },
+    {
+      "number": 13,
+      "speaker": "SERGEANT",
+      "text": "Of kerns and gallowglasses is supplied;"
+    },
+    {
+      "number": 14,
+      "speaker": "SERGEANT",
+      "text": "And fortune, on his damned quarrel smiling,"
+    },
+    {
+      "number": 15,
+      "speaker": "SERGEANT",
+      "text": "Show’d like a rebel’s whore: but all’s too weak:"
+    },
+    {
+      "number": 16,
+      "speaker": "SERGEANT",
+      "text": "For brave Macbeth—well he deserves that name—"
+    },
+    {
+      "number": 17,
+      "speaker": "SERGEANT",
+      "text": "Disdaining fortune, with his brandish’d steel,"
+    },
+    {
+      "number": 18,
+      "speaker": "SERGEANT",
+      "text": "Which smoked with bloody execution,"
+    },
+    {
+      "number": 19,
+      "speaker": "SERGEANT",
+      "text": "Like valour’s minion carved out his passage"
+    },
+    {
+      "number": 20,
+      "speaker": "SERGEANT",
+      "text": "Till he faced the slave;"
+    },
+    {
+      "number": 21,
+      "speaker": "SERGEANT",
+      "text": "Which ne’er shook hands, nor bade farewell to him,"
+    },
+    {
+      "number": 22,
+      "speaker": "SERGEANT",
+      "text": "Till he unseam’d him from the nave to the chaps,"
+    },
+    {
+      "number": 23,
+      "speaker": "SERGEANT",
+      "text": "And fix’d his head upon our battlements."
+    },
+    {
+      "number": 24,
+      "speaker": "DUNCAN",
+      "text": "O valiant cousin! worthy gentleman!"
+    },
+    {
+      "number": 25,
+      "speaker": "SERGEANT",
+      "text": "As whence the sun ’gins his reflection"
+    },
+    {
+      "number": 26,
+      "speaker": "SERGEANT",
+      "text": "Shipwrecking storms and direful thunders break,"
+    },
+    {
+      "number": 27,
+      "speaker": "SERGEANT",
+      "text": "So from that spring whence comfort seem’d to come"
+    },
+    {
+      "number": 28,
+      "speaker": "SERGEANT",
+      "text": "Discomfort swells. Mark, king of Scotland, mark:"
+    },
+    {
+      "number": 29,
+      "speaker": "SERGEANT",
+      "text": "No sooner justice had with valour arm’d"
+    },
+    {
+      "number": 30,
+      "speaker": "SERGEANT",
+      "text": "Compell’d these skipping kerns to trust their heels,"
+    },
+    {
+      "number": 31,
+      "speaker": "SERGEANT",
+      "text": "But the Norweyan lord surveying vantage,"
+    },
+    {
+      "number": 32,
+      "speaker": "SERGEANT",
+      "text": "With furbish’d arms and new supplies of men"
+    },
+    {
+      "number": 33,
+      "speaker": "SERGEANT",
+      "text": "Began a fresh assault."
+    },
+    {
+      "number": 33,
+      "speaker": "DUNCAN",
+      "text": "Dismay’d not this"
+    },
+    {
+      "number": 34,
+      "speaker": "DUNCAN",
+      "text": "Our captains, Macbeth and Banquo?"
+    },
+    {
+      "number": 34,
+      "speaker": "SERGEANT",
+      "text": "Yes;"
+    },
+    {
+      "number": 35,
+      "speaker": "SERGEANT",
+      "text": "As sparrows eagles, or the hare the lion."
+    },
+    {
+      "number": 36,
+      "speaker": "SERGEANT",
+      "text": "If I say sooth, I must report they were"
+    },
+    {
+      "number": 37,
+      "speaker": "SERGEANT",
+      "text": "As cannons overcharged with double cracks, so they"
+    },
+    {
+      "number": 38,
+      "speaker": "SERGEANT",
+      "text": "Doubly redoubled strokes upon the foe:"
+    },
+    {
+      "number": 39,
+      "speaker": "SERGEANT",
+      "text": "Except they meant to bathe in reeking wounds,"
+    },
+    {
+      "number": 40,
+      "speaker": "SERGEANT",
+      "text": "Or memorize another Golgotha,"
+    },
+    {
+      "number": 41,
+      "speaker": "SERGEANT",
+      "text": "I cannot tell."
+    },
+    {
+      "number": 42,
+      "speaker": "SERGEANT",
+      "text": "But I am faint, my gashes cry for help."
+    },
+    {
+      "number": 43,
+      "speaker": "DUNCAN",
+      "text": "So well thy words become thee as thy wounds;"
+    },
+    {
+      "number": 44,
+      "speaker": "DUNCAN",
+      "text": "They smack of honour both. Go get him surgeons."
+    },
+    {
+      "number": 45,
+      "speaker": "DUNCAN",
+      "text": "Who comes here?"
+    },
+    {
+      "number": 45,
+      "speaker": "MALCOLM",
+      "text": "The worthy thane of Ross."
+    },
+    {
+      "number": 46,
+      "speaker": "LENNOX",
+      "text": "What a haste looks through his eyes! So should he look"
+    },
+    {
+      "number": 47,
+      "speaker": "LENNOX",
+      "text": "That seems to speak things strange."
+    },
+    {
+      "number": 47,
+      "speaker": "ROSS",
+      "text": "God save the king!"
+    },
+    {
+      "number": 48,
+      "speaker": "DUNCAN",
+      "text": "Whence camest thou, worthy thane?"
+    },
+    {
+      "number": 48,
+      "speaker": "ROSS",
+      "text": "From Fife, great king;"
+    },
+    {
+      "number": 49,
+      "speaker": "ROSS",
+      "text": "Where the Norweyan banners flout the sky"
+    },
+    {
+      "number": 50,
+      "speaker": "ROSS",
+      "text": "And fan our people cold. Norway himself,"
+    },
+    {
+      "number": 51,
+      "speaker": "ROSS",
+      "text": "With terrible numbers,"
+    },
+    {
+      "number": 52,
+      "speaker": "ROSS",
+      "text": "Assisted by that most disloyal traitor"
+    },
+    {
+      "number": 53,
+      "speaker": "ROSS",
+      "text": "The thane of Cawdor, began a dismal conflict;"
+    },
+    {
+      "number": 54,
+      "speaker": "ROSS",
+      "text": "Till that Bellona’s bridegroom, lapp’d in proof,"
+    },
+    {
+      "number": 55,
+      "speaker": "ROSS",
+      "text": "Confronted him with self-comparisons,"
+    },
+    {
+      "number": 56,
+      "speaker": "ROSS",
+      "text": "Point against point rebellious, arm ’gainst arm,"
+    },
+    {
+      "number": 57,
+      "speaker": "ROSS",
+      "text": "Curbing his lavish spirit: and, to conclude,"
+    },
+    {
+      "number": 58,
+      "speaker": "ROSS",
+      "text": "The victory fell on us."
+    },
+    {
+      "number": 58,
+      "speaker": "DUNCAN",
+      "text": "Great happiness!"
+    },
+    {
+      "number": 59,
+      "speaker": "ROSS",
+      "text": "That now"
+    },
+    {
+      "number": 60,
+      "speaker": "ROSS",
+      "text": "Sweno, the Norways’ king, craves composition;"
+    },
+    {
+      "number": 61,
+      "speaker": "ROSS",
+      "text": "Nor would we deign him burial of his men"
+    },
+    {
+      "number": 62,
+      "speaker": "ROSS",
+      "text": "Till he disbursed at Saint Colme’s inch"
+    },
+    {
+      "number": 63,
+      "speaker": "ROSS",
+      "text": "Ten thousand dollars to our general use."
+    },
+    {
+      "number": 64,
+      "speaker": "DUNCAN",
+      "text": "No more that thane of Cawdor shall deceive"
+    },
+    {
+      "number": 65,
+      "speaker": "DUNCAN",
+      "text": "Our bosom interest: go pronounce his present death,"
+    },
+    {
+      "number": 66,
+      "speaker": "DUNCAN",
+      "text": "And with his former title greet Macbeth."
+    },
+    {
+      "number": 67,
+      "speaker": "ROSS",
+      "text": "I’ll see it done."
+    },
+    {
+      "number": 68,
+      "speaker": "DUNCAN",
+      "text": "What he hath lost noble Macbeth hath won."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Alarum within. Enter Duncan, Malcolm, Donalbain, Lennox, with Attendants, meeting a bleeding Sergeant."
+    },
+    {
+      "after_line": 44,
+      "text": "Exit Sergeant, attended."
+    },
+    {
+      "after_line": 45,
+      "text": "Enter Ross."
+    },
+    {
+      "after_line": 68,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act1_scene2_gloss1",
+      "line": 3,
+      "phrase": "sergeant",
+      "definition": "here, a senior soldier; a wounded officer"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss2",
+      "line": 5,
+      "phrase": "’Gainst my captivity",
+      "definition": "against my being captured"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss3",
+      "line": 6,
+      "phrase": "broil",
+      "definition": "battle; tumult"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss4",
+      "line": 7,
+      "phrase": "Doubtful it stood",
+      "definition": "the battle's outcome was uncertain"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss5",
+      "line": 9,
+      "phrase": "choke their art",
+      "definition": "defeat each other's skill"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss6",
+      "line": 11,
+      "phrase": "villainies of nature",
+      "definition": "his natural wickedness"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss7",
+      "line": 13,
+      "phrase": "kerns and gallowglasses",
+      "definition": "light-armed Irish foot soldiers and heavy-armed mercenaries"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss8",
+      "line": 14,
+      "phrase": "quarrel",
+      "definition": "cause; conflict"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss9",
+      "line": 14,
+      "phrase": "Fortune, on his damned quarrel smiling",
+      "definition": "Lady Luck favoring his evil cause"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss10",
+      "line": 15,
+      "phrase": "whore",
+      "definition": "fickle; unfaithful — Fortune figured as faithless"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss11",
+      "line": 17,
+      "phrase": "disdaining",
+      "definition": "scorning"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss12",
+      "line": 17,
+      "phrase": "steel",
+      "definition": "sword"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss13",
+      "line": 19,
+      "phrase": "minion",
+      "definition": "darling; favorite"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss15",
+      "line": 22,
+      "phrase": "unseam’d him from the nave to the chaps",
+      "definition": "split him open from the navel to the jaws — graphic battle-image for Macbeth's ferocity"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss16",
+      "line": 22,
+      "phrase": "chaps",
+      "definition": "jaws"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss17",
+      "line": 22,
+      "phrase": "nave",
+      "definition": "navel"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss18",
+      "line": 25,
+      "phrase": "As whence the sun ’gins his reflection",
+      "definition": "just as in the direction the sun rises"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss19",
+      "line": 27,
+      "phrase": "So from that spring whence comfort seem’d to come",
+      "definition": "from the source that seemed to bring relief"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss20",
+      "line": 54,
+      "phrase": "Bellona’s bridegroom",
+      "definition": "Macbeth figured as the husband of Bellona, Roman goddess of war — high praise"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss21",
+      "line": 54,
+      "phrase": "Bellona",
+      "definition": "Roman goddess of war"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss22",
+      "line": 54,
+      "phrase": "lapp’d in proof",
+      "definition": "encased in tested armor"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss23",
+      "line": 55,
+      "phrase": "self-comparisons",
+      "definition": "equal matching; meeting him blow for blow"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss24",
+      "line": 57,
+      "phrase": "lavish",
+      "definition": "insolent; unrestrained"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss25",
+      "line": 60,
+      "phrase": "craves composition",
+      "definition": "begs for terms of peace"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss26",
+      "line": 62,
+      "phrase": "Saint Colme’s Inch",
+      "definition": "Inchcolm, an island in the Firth of Forth used as a burial ground"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss27",
+      "line": 63,
+      "phrase": "dollars",
+      "definition": "anachronistic term for Scottish coinage"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss28",
+      "line": 53,
+      "phrase": "Thane of Cawdor",
+      "definition": "Scottish nobleman; Cawdor is a region in the Highlands — Thane is below an earl in rank"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss29",
+      "line": 65,
+      "phrase": "bosom interest",
+      "definition": "most trusted intimate; inner circle"
+    },
+    {
+      "id": "macbeth_act1_scene2_gloss30",
+      "line": 68,
+      "phrase": "What he hath lost noble Macbeth hath won",
+      "definition": "the title Macbeth is about to inherit — and the ambition that comes with it"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act1_scene2_ann1",
+      "line_start": 9,
+      "line_end": 25,
+      "citation_display": "Macbeth 1.2.9–25",
+      "category": "thematic",
+      "title": "Macbeth as Bellona's bridegroom: the problem of praise",
+      "body": "The bleeding Captain's report introduces Macbeth not as a man but as a killing machine. He 'unseam'd him from the nave to the chaps' — a graphic battlefield image that lets the audience see Macbeth's capacity for violence before he ever enters. The Captain's praise is extravagant ('Bellona's bridegroom'), figuring Macbeth as the husband of the Roman war goddess.\n\nThe praise matters structurally. What we will later see Macbeth do — to Duncan, Banquo, Macduff's family — he first did on the battlefield, and he was rewarded for it. The play's moral economy refuses a clean line between the sanctioned violence of war and the prohibited violence of murder. Macbeth's skill at one made his access to the other possible.\n\nShakespeare does not sentimentalize. The Captain's tongue-in-cheek horror at Macbeth's surgery with a sword tells the audience what kind of heroic economy Scotland runs on.",
+      "sources": [
+        "Stephen Greenblatt, *Will in the World* (2004), ch. 12",
+        "Janet Adelman, *Suffocating Mothers* (1992)"
+      ]
+    },
+    {
+      "id": "macbeth_act1_scene2_ann2",
+      "line_start": 46,
+      "line_end": 56,
+      "citation_display": "Macbeth 1.2.46–56",
+      "category": "historical",
+      "title": "The Thane of Cawdor's title, and its transfer",
+      "body": "Duncan's royal act — stripping a traitor of his title and bestowing it on a loyal subject — is presented as swift, clean, legitimate. But the play will spend its next five acts exposing how fragile that transfer is. Titles, the play will show, are clothing: they fit only the man for whom they were cut.\n\nThe 'Thane of Cawdor' is about to become, in rapid succession, three different men: the executed traitor, Macbeth the newly loyal, Macbeth the regicide. Shakespeare is careful: the title never really belongs to Macbeth, and the play's clothing imagery (culminating in the 'giant's robe upon a dwarfish thief' in 5.2) begins here.",
+      "sources": [
+        "Cleanth Brooks, 'The Naked Babe and the Cloak of Manliness' (1947)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act1_scene2_q1",
+      "kind": "comprehension",
+      "prompt": "What does the Captain report about Macbeth's defeat of Macdonwald?",
+      "options": [
+        "Macbeth fled",
+        "Macbeth killed Macdonwald in single combat by splitting him from navel to jaws",
+        "Macbeth captured him and demanded ransom",
+        "Macbeth made a treaty"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 18,
+      "anchor_line_end": 25
+    },
+    {
+      "id": "macbeth_act1_scene2_q2",
+      "kind": "close_reading",
+      "prompt": "Calling Macbeth 'Bellona's bridegroom' (L54) does what?",
+      "options": [
+        "Names his actual wife",
+        "Figures him as husband of the Roman war goddess — a high, violent praise",
+        "States his military rank",
+        "Insults his cowardice"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 52,
+      "anchor_line_end": 56
+    },
+    {
+      "id": "macbeth_act1_scene2_q3",
+      "kind": "inference",
+      "prompt": "Why does Shakespeare open the play with a military report celebrating Macbeth's violence?",
+      "options": [
+        "To bore the audience with exposition",
+        "To establish that Macbeth's capacity for murder was honored before it was feared — the transfer from soldier to regicide is shorter than it looks",
+        "To explain Scottish politics",
+        "To introduce minor characters"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 9,
+      "anchor_line_end": 56
+    }
+  ]
+}

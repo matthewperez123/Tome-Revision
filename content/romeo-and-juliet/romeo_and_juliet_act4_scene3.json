@@ -1,0 +1,537 @@
+{
+  "section_id": "romeo_and_juliet_act4_scene3",
+  "work_id": "romeo-and-juliet",
+  "sequence": 21,
+  "act": 4,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "Juliet's chamber",
+  "line_count": 59,
+  "word_count": 479,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "JULIET",
+      "text": "Ay, those attires are best: but, gentle nurse,"
+    },
+    {
+      "number": 2,
+      "speaker": "JULIET",
+      "text": "I pray thee, leave me to myself to-night;"
+    },
+    {
+      "number": 3,
+      "speaker": "JULIET",
+      "text": "For I have need of many orisons"
+    },
+    {
+      "number": 4,
+      "speaker": "JULIET",
+      "text": "To move the heavens to smile upon my state,"
+    },
+    {
+      "number": 5,
+      "speaker": "JULIET",
+      "text": "Which, well thou know’st, is cross and full of sin."
+    },
+    {
+      "number": 6,
+      "speaker": "LADY CAPULET",
+      "text": "What, are you busy, ho? need you my help?"
+    },
+    {
+      "number": 7,
+      "speaker": "JULIET",
+      "text": "No, madam; we have cull’d such necessaries"
+    },
+    {
+      "number": 8,
+      "speaker": "JULIET",
+      "text": "As are behoveful for our state to-morrow:"
+    },
+    {
+      "number": 9,
+      "speaker": "JULIET",
+      "text": "So please you, let me now be left alone,"
+    },
+    {
+      "number": 10,
+      "speaker": "JULIET",
+      "text": "And let the nurse this night sit up with you;"
+    },
+    {
+      "number": 11,
+      "speaker": "JULIET",
+      "text": "For, I am sure, you have your hands full all,"
+    },
+    {
+      "number": 12,
+      "speaker": "JULIET",
+      "text": "In this so sudden business."
+    },
+    {
+      "number": 12,
+      "speaker": "LADY CAPULET",
+      "text": "Good night:"
+    },
+    {
+      "number": 13,
+      "speaker": "LADY CAPULET",
+      "text": "Get thee to bed, and rest; for thou hast need."
+    },
+    {
+      "number": 14,
+      "speaker": "JULIET",
+      "text": "Farewell! God knows when we shall meet again."
+    },
+    {
+      "number": 15,
+      "speaker": "JULIET",
+      "text": "I have a faint cold fear thrills through my veins,"
+    },
+    {
+      "number": 16,
+      "speaker": "JULIET",
+      "text": "That almost freezes up the heat of life:"
+    },
+    {
+      "number": 17,
+      "speaker": "JULIET",
+      "text": "I’ll call them back again to comfort me:"
+    },
+    {
+      "number": 18,
+      "speaker": "JULIET",
+      "text": "Nurse! What should she do here?"
+    },
+    {
+      "number": 19,
+      "speaker": "JULIET",
+      "text": "My dismal scene I needs must act alone."
+    },
+    {
+      "number": 20,
+      "speaker": "JULIET",
+      "text": "Come, vial."
+    },
+    {
+      "number": 21,
+      "speaker": "JULIET",
+      "text": "What if this mixture do not work at all?"
+    },
+    {
+      "number": 22,
+      "speaker": "JULIET",
+      "text": "Shall I be married then to-morrow morning?"
+    },
+    {
+      "number": 23,
+      "speaker": "JULIET",
+      "text": "No, no: this shall forbid it: lie thou there. Laying down her dagger."
+    },
+    {
+      "number": 24,
+      "speaker": "JULIET",
+      "text": "What if it be a poison, which the friar"
+    },
+    {
+      "number": 25,
+      "speaker": "JULIET",
+      "text": "Subtly hath minister’d to have me dead,"
+    },
+    {
+      "number": 26,
+      "speaker": "JULIET",
+      "text": "Lest in this marriage he should be dishonour’d,"
+    },
+    {
+      "number": 27,
+      "speaker": "JULIET",
+      "text": "Because he married me before to Romeo?"
+    },
+    {
+      "number": 28,
+      "speaker": "JULIET",
+      "text": "I fear it is: and yet, methinks, it should not,"
+    },
+    {
+      "number": 29,
+      "speaker": "JULIET",
+      "text": "For he hath still been tried a holy man."
+    },
+    {
+      "number": 30,
+      "speaker": "JULIET",
+      "text": "How if, when I am laid into the tomb,"
+    },
+    {
+      "number": 31,
+      "speaker": "JULIET",
+      "text": "I wake before the time that Romeo"
+    },
+    {
+      "number": 32,
+      "speaker": "JULIET",
+      "text": "Come to redeem me? there’s a fearful point!"
+    },
+    {
+      "number": 33,
+      "speaker": "JULIET",
+      "text": "Shall I not, then, be stifled in the vault,"
+    },
+    {
+      "number": 34,
+      "speaker": "JULIET",
+      "text": "To whose foul mouth no healthsome air breathes in,"
+    },
+    {
+      "number": 35,
+      "speaker": "JULIET",
+      "text": "And there die strangled ere my Romeo comes?"
+    },
+    {
+      "number": 36,
+      "speaker": "JULIET",
+      "text": "Or, if I live, is it not very like,"
+    },
+    {
+      "number": 37,
+      "speaker": "JULIET",
+      "text": "The horrible conceit of death and night,"
+    },
+    {
+      "number": 38,
+      "speaker": "JULIET",
+      "text": "Together with the terror of the place—"
+    },
+    {
+      "number": 39,
+      "speaker": "JULIET",
+      "text": "As in a vault, an ancient receptacle,"
+    },
+    {
+      "number": 40,
+      "speaker": "JULIET",
+      "text": "Where, for these many hundred years, the bones"
+    },
+    {
+      "number": 41,
+      "speaker": "JULIET",
+      "text": "Of all my buried ancestors are pack’d:"
+    },
+    {
+      "number": 42,
+      "speaker": "JULIET",
+      "text": "Where bloody Tybalt, yet but green in earth,"
+    },
+    {
+      "number": 43,
+      "speaker": "JULIET",
+      "text": "Lies festering in his shroud; where, as they say,"
+    },
+    {
+      "number": 44,
+      "speaker": "JULIET",
+      "text": "At some hours in the night spirits resort;—"
+    },
+    {
+      "number": 45,
+      "speaker": "JULIET",
+      "text": "Alack, alack, is it not like that I,"
+    },
+    {
+      "number": 46,
+      "speaker": "JULIET",
+      "text": "So early waking, what with loathsome smells,"
+    },
+    {
+      "number": 47,
+      "speaker": "JULIET",
+      "text": "And shrieks like mandrakes’ torn out of the earth,"
+    },
+    {
+      "number": 48,
+      "speaker": "JULIET",
+      "text": "That living mortals, hearing them, run mad:—"
+    },
+    {
+      "number": 49,
+      "speaker": "JULIET",
+      "text": "O, if I wake, shall I not be distraught,"
+    },
+    {
+      "number": 50,
+      "speaker": "JULIET",
+      "text": "Environed with all these hideous fears?"
+    },
+    {
+      "number": 51,
+      "speaker": "JULIET",
+      "text": "And madly play with my forefather’s joints?"
+    },
+    {
+      "number": 52,
+      "speaker": "JULIET",
+      "text": "And pluck the mangled Tybalt from his shroud?"
+    },
+    {
+      "number": 53,
+      "speaker": "JULIET",
+      "text": "And, in this rage, with some great kinsman’s bone,"
+    },
+    {
+      "number": 54,
+      "speaker": "JULIET",
+      "text": "As with a club, dash out my desperate brains?"
+    },
+    {
+      "number": 55,
+      "speaker": "JULIET",
+      "text": "O, look! methinks I see my cousin’s ghost"
+    },
+    {
+      "number": 56,
+      "speaker": "JULIET",
+      "text": "Seeking out Romeo, that did spit his body"
+    },
+    {
+      "number": 57,
+      "speaker": "JULIET",
+      "text": "Upon a rapier’s point: stay, Tybalt, stay!"
+    },
+    {
+      "number": 58,
+      "speaker": "JULIET",
+      "text": "Romeo, I come! this do I drink to thee. She falls upon her bed, within the curtains."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Juliet and Nurse."
+    },
+    {
+      "after_line": 5,
+      "text": "Enter Lady Capulet."
+    },
+    {
+      "after_line": 13,
+      "text": "Exeunt Lady Capulet and Nurse."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss1",
+      "line": 3,
+      "phrase": "orisons",
+      "definition": "prayers"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss2",
+      "line": 5,
+      "phrase": "cross",
+      "definition": "crossed; contrary"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss3",
+      "line": 8,
+      "phrase": "behoveful",
+      "definition": "needful; fitting"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss4",
+      "line": 8,
+      "phrase": "our state",
+      "definition": "our ceremonial occasion"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss5",
+      "line": 19,
+      "phrase": "My dismal scene I needs must act alone",
+      "definition": "I must play my grim scene without help — Juliet's theatrical consciousness"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss6",
+      "line": 15,
+      "phrase": "faint cold fear",
+      "definition": "cold, weak terror"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss7",
+      "line": 16,
+      "phrase": "almost freezes up the heat of life",
+      "definition": "nearly stops my blood's warmth — the physiology of fear"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss8",
+      "line": 21,
+      "phrase": "mixture",
+      "definition": "the Friar's potion"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss9",
+      "line": 25,
+      "phrase": "minister’d to have me dead",
+      "definition": "given to me that I might die — Juliet's first suspicion"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss10",
+      "line": 26,
+      "phrase": "dishonour’d",
+      "definition": "disgraced — by having married Romeo in secret"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss11",
+      "line": 29,
+      "phrase": "a holy man",
+      "definition": "Juliet reasons the Friar is too righteous to poison her"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss12",
+      "line": 33,
+      "phrase": "stifled",
+      "definition": "suffocated"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss13",
+      "line": 35,
+      "phrase": "strangled ere my Romeo comes",
+      "definition": "Juliet imagines suffocation in the sealed vault"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss14",
+      "line": 37,
+      "phrase": "conceit of death",
+      "definition": "the mere thought of death"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss15",
+      "line": 39,
+      "phrase": "vault",
+      "definition": "burial-chamber"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss16",
+      "line": 39,
+      "phrase": "receptacle",
+      "definition": "container; the tomb as receptacle of the dead"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss17",
+      "line": 41,
+      "phrase": "buried ancestors",
+      "definition": "Juliet catalogues the Capulet dead she'll lie among"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss18",
+      "line": 42,
+      "phrase": "green in earth",
+      "definition": "newly laid in the ground"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss19",
+      "line": 47,
+      "phrase": "shrieks",
+      "definition": "cries of the dead; folk belief in spirits' wailing"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss20",
+      "line": 47,
+      "phrase": "mandrakes",
+      "definition": "the mandrake root was said to scream when uprooted, killing the hearer"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss21",
+      "line": 50,
+      "phrase": "environed with all these hideous fears",
+      "definition": "surrounded by all these horrors"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss22",
+      "line": 53,
+      "phrase": "great kinsman’s bone",
+      "definition": "Tybalt's bone — his body will be nearby, only days old"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss23",
+      "line": 55,
+      "phrase": "O, look! methinks I see my cousin’s ghost",
+      "definition": "Juliet's hallucination just before she drinks"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss24",
+      "line": 56,
+      "phrase": "seeking out Romeo",
+      "definition": "Tybalt's ghost pursuing Romeo — Juliet's imagined revenge-drama"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_gloss25",
+      "line": 58,
+      "phrase": "I drink to thee",
+      "definition": "her toast is to Romeo — sacrament of the bridal night"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act4_scene3_ann1",
+      "line_start": 14,
+      "line_end": 58,
+      "citation_display": "Romeo and Juliet 4.3.14–58",
+      "category": "close_reading",
+      "title": "Juliet's potion soliloquy — a tour of her own terror",
+      "body": "Left alone with the vial, Juliet's forty-four lines walk through every fear she can imagine and still choose the potion. She asks: What if this is poison — what if the Friar is saving himself from having married me? (She reasons he is too holy.) What if she wakes before Romeo arrives and suffocates in the tomb? What if she wakes among the stinking bones of her ancestors, Tybalt's new corpse fresh? What if ghosts wail and mandrakes scream? What if she goes mad? The whole speech is a study of a young person conducting her own moral audit under maximum pressure — she considers betrayal (by the Friar), suffocation, madness, desecration — and then drinks. Her toast 'Romeo, I come! this do I drink to thee' is both a wedding-night toast and a death-toast, compressed. This is one of Shakespeare's most concentrated studies of a character facing, and exceeding, her own fear.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)",
+        "Marjorie Garber, Shakespeare After All (2004)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act4_scene3_q1",
+      "kind": "inference",
+      "prompt": "Why does Juliet briefly consider the possibility that the Friar's potion is actually poison?",
+      "options": [
+        "She is paranoid",
+        "She reasons that the Friar might want to be rid of her to conceal his crime of marrying them — and then decides he is too holy for that",
+        "She dislikes the Friar",
+        "She has heard a rumor"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 24,
+      "anchor_line_end": 30
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_q2",
+      "kind": "theme",
+      "prompt": "Juliet's toast 'Romeo, I come! this do I drink to thee' compresses —",
+      "options": [
+        "Only a wedding toast",
+        "Both a wedding toast (drinking to her groom) and a death toast (drinking the near-poison) — the bridal and funereal registers collapse into one",
+        "A mockery of Romeo",
+        "A prayer to the Virgin Mary"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 57,
+      "anchor_line_end": 58
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene3_q3",
+      "kind": "close_reading",
+      "prompt": "What specific horror does Juliet imagine about the tomb?",
+      "options": [
+        "Only that it is cold",
+        "Ghosts wailing, mandrakes screaming, Tybalt's fresh corpse nearby, suffocation before Romeo arrives — an accumulating catalogue of specific terrors",
+        "That her dress will be ruined",
+        "Nothing in particular"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 30,
+      "anchor_line_end": 55
+    }
+  ]
+}

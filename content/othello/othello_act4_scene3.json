@@ -1,0 +1,715 @@
+{
+  "section_id": "othello_act4_scene3",
+  "work_id": "othello",
+  "sequence": 13,
+  "act": 4,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "Another room in the castle",
+  "line_count": 103,
+  "word_count": 847,
+  "est_read_minutes": 4,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "LODOVICO",
+      "text": "I do beseech you, sir, trouble yourself no further."
+    },
+    {
+      "number": 2,
+      "speaker": "OTHELLO",
+      "text": "O, pardon me: ’twill do me good to walk."
+    },
+    {
+      "number": 3,
+      "speaker": "LODOVICO",
+      "text": "Madam, good night; I humbly thank your ladyship."
+    },
+    {
+      "number": 4,
+      "speaker": "DESDEMONA",
+      "text": "Your honour is most welcome."
+    },
+    {
+      "number": 4,
+      "speaker": "OTHELLO",
+      "text": "Will you walk, sir? O—Desdemona—"
+    },
+    {
+      "number": 5,
+      "speaker": "DESDEMONA",
+      "text": "My lord?"
+    },
+    {
+      "number": 6,
+      "speaker": "OTHELLO",
+      "text": "Get you to bed on the instant; I will be returned forthwith:"
+    },
+    {
+      "number": 7,
+      "speaker": "OTHELLO",
+      "text": "dismiss your attendant there: look it be done."
+    },
+    {
+      "number": 8,
+      "speaker": "DESDEMONA",
+      "text": "I will, my lord."
+    },
+    {
+      "number": 9,
+      "speaker": "EMILIA",
+      "text": "How goes it now? he looks gentler than he did."
+    },
+    {
+      "number": 10,
+      "speaker": "DESDEMONA",
+      "text": "He says he will return incontinent:"
+    },
+    {
+      "number": 11,
+      "speaker": "DESDEMONA",
+      "text": "He hath commanded me to go to bed,"
+    },
+    {
+      "number": 12,
+      "speaker": "DESDEMONA",
+      "text": "And bade me to dismiss you."
+    },
+    {
+      "number": 12,
+      "speaker": "EMILIA",
+      "text": "Dismiss me!"
+    },
+    {
+      "number": 13,
+      "speaker": "DESDEMONA",
+      "text": "It was his bidding: therefore, good Emilia,"
+    },
+    {
+      "number": 14,
+      "speaker": "DESDEMONA",
+      "text": "Give me my nightly wearing, and adieu:"
+    },
+    {
+      "number": 15,
+      "speaker": "DESDEMONA",
+      "text": "We must not now displease him."
+    },
+    {
+      "number": 16,
+      "speaker": "EMILIA",
+      "text": "I would you had never seen him!"
+    },
+    {
+      "number": 17,
+      "speaker": "DESDEMONA",
+      "text": "So would not I my love doth so approve him,"
+    },
+    {
+      "number": 18,
+      "speaker": "DESDEMONA",
+      "text": "That even his stubbornness, his cheques, his frowns—"
+    },
+    {
+      "number": 19,
+      "speaker": "DESDEMONA",
+      "text": "Prithee, unpin me—have grace and favour in them."
+    },
+    {
+      "number": 20,
+      "speaker": "EMILIA",
+      "text": "I have laid those sheets you bade me on the bed."
+    },
+    {
+      "number": 21,
+      "speaker": "DESDEMONA",
+      "text": "All’s one. Good faith, how foolish are our minds!"
+    },
+    {
+      "number": 22,
+      "speaker": "DESDEMONA",
+      "text": "If I do die before thee prithee, shroud me"
+    },
+    {
+      "number": 23,
+      "speaker": "DESDEMONA",
+      "text": "In one of those same sheets."
+    },
+    {
+      "number": 23,
+      "speaker": "EMILIA",
+      "text": "Come, come you talk."
+    },
+    {
+      "number": 24,
+      "speaker": "DESDEMONA",
+      "text": "My mother had a maid call’d Barbara:"
+    },
+    {
+      "number": 25,
+      "speaker": "DESDEMONA",
+      "text": "She was in love, and he she loved proved mad"
+    },
+    {
+      "number": 26,
+      "speaker": "DESDEMONA",
+      "text": "And did forsake her: she had a song of “willow;”"
+    },
+    {
+      "number": 27,
+      "speaker": "DESDEMONA",
+      "text": "An old thing ’twas, but it express’d her fortune,"
+    },
+    {
+      "number": 28,
+      "speaker": "DESDEMONA",
+      "text": "And she died singing it: that song to-night"
+    },
+    {
+      "number": 29,
+      "speaker": "DESDEMONA",
+      "text": "Will not go from my mind; I have much to do,"
+    },
+    {
+      "number": 30,
+      "speaker": "DESDEMONA",
+      "text": "But to go hang my head all at one side,"
+    },
+    {
+      "number": 31,
+      "speaker": "DESDEMONA",
+      "text": "And sing it like poor Barbara. Prithee, dispatch."
+    },
+    {
+      "number": 32,
+      "speaker": "EMILIA",
+      "text": "Shall I go fetch your night-gown?"
+    },
+    {
+      "number": 32,
+      "speaker": "DESDEMONA",
+      "text": "No, unpin me here."
+    },
+    {
+      "number": 33,
+      "speaker": "DESDEMONA",
+      "text": "This Lodovico is a proper man."
+    },
+    {
+      "number": 33,
+      "speaker": "EMILIA",
+      "text": "A very handsome man."
+    },
+    {
+      "number": 34,
+      "speaker": "DESDEMONA",
+      "text": "He speaks well."
+    },
+    {
+      "number": 35,
+      "speaker": "EMILIA",
+      "text": "I know a lady in Venice would have walked barefoot to Palestine"
+    },
+    {
+      "number": 36,
+      "speaker": "EMILIA",
+      "text": "for a touch of his nether lip."
+    },
+    {
+      "number": 37,
+      "speaker": "DESDEMONA",
+      "text": "The poor soul sat sighing by a sycamore tree, Sing all a"
+    },
+    {
+      "number": 38,
+      "speaker": "DESDEMONA",
+      "text": "green willow: Her hand on her bosom, her head on her knee,"
+    },
+    {
+      "number": 39,
+      "speaker": "DESDEMONA",
+      "text": "Sing willow, willow, willow: The fresh streams ran by her, and murmur’d"
+    },
+    {
+      "number": 40,
+      "speaker": "DESDEMONA",
+      "text": "her moans; Sing willow, willow, willow; Her salt tears fell from her,"
+    },
+    {
+      "number": 41,
+      "speaker": "DESDEMONA",
+      "text": "and soften’d the stones; Lay by these:— Sing willow, willow, willow; Prithee,"
+    },
+    {
+      "number": 42,
+      "speaker": "DESDEMONA",
+      "text": "hie thee; he’ll come anon:— Sing all a green willow must be"
+    },
+    {
+      "number": 43,
+      "speaker": "DESDEMONA",
+      "text": "my garland. Let nobody blame him; his scorn I approve— Nay, that’s"
+    },
+    {
+      "number": 44,
+      "speaker": "DESDEMONA",
+      "text": "not next.—Hark! who is’t that knocks?"
+    },
+    {
+      "number": 44,
+      "speaker": "EMILIA",
+      "text": "It’s the wind."
+    },
+    {
+      "number": 45,
+      "speaker": "DESDEMONA",
+      "text": "I call’d my love false love; but what said he then?"
+    },
+    {
+      "number": 46,
+      "speaker": "DESDEMONA",
+      "text": "Sing willow, willow, willow:"
+    },
+    {
+      "number": 47,
+      "speaker": "DESDEMONA",
+      "text": "If I court moe women, you’ll couch with moe men!"
+    },
+    {
+      "number": 48,
+      "speaker": "DESDEMONA",
+      "text": "So, get thee gone; good night. Mine eyes do itch;"
+    },
+    {
+      "number": 49,
+      "speaker": "DESDEMONA",
+      "text": "Doth that bode weeping?"
+    },
+    {
+      "number": 49,
+      "speaker": "EMILIA",
+      "text": "’Tis neither here nor there."
+    },
+    {
+      "number": 50,
+      "speaker": "DESDEMONA",
+      "text": "I have heard it said so. O, these men, these men!"
+    },
+    {
+      "number": 51,
+      "speaker": "DESDEMONA",
+      "text": "Dost thou in conscience think—tell me, Emilia—"
+    },
+    {
+      "number": 52,
+      "speaker": "DESDEMONA",
+      "text": "That there be women do abuse their husbands"
+    },
+    {
+      "number": 53,
+      "speaker": "DESDEMONA",
+      "text": "In such gross kind?"
+    },
+    {
+      "number": 53,
+      "speaker": "EMILIA",
+      "text": "There be some such, no question."
+    },
+    {
+      "number": 54,
+      "speaker": "DESDEMONA",
+      "text": "Wouldst thou do such a deed for all the world?"
+    },
+    {
+      "number": 55,
+      "speaker": "EMILIA",
+      "text": "Why, would not you?"
+    },
+    {
+      "number": 55,
+      "speaker": "DESDEMONA",
+      "text": "No, by this heavenly light!"
+    },
+    {
+      "number": 56,
+      "speaker": "EMILIA",
+      "text": "Nor I neither by this heavenly light;"
+    },
+    {
+      "number": 57,
+      "speaker": "EMILIA",
+      "text": "I might do’t as well i’ the dark."
+    },
+    {
+      "number": 58,
+      "speaker": "DESDEMONA",
+      "text": "Wouldst thou do such a deed for all the world?"
+    },
+    {
+      "number": 59,
+      "speaker": "EMILIA",
+      "text": "The world’s a huge thing: it is a great price."
+    },
+    {
+      "number": 60,
+      "speaker": "EMILIA",
+      "text": "For a small vice."
+    },
+    {
+      "number": 61,
+      "speaker": "DESDEMONA",
+      "text": "In troth, I think thou wouldst not."
+    },
+    {
+      "number": 62,
+      "speaker": "EMILIA",
+      "text": "In troth, I think I should; and undo’t when I had done."
+    },
+    {
+      "number": 63,
+      "speaker": "EMILIA",
+      "text": "Marry, I would not do such a thing for a joint-ring, nor"
+    },
+    {
+      "number": 64,
+      "speaker": "EMILIA",
+      "text": "for measures of lawn, nor for gowns, petticoats, nor caps, nor any"
+    },
+    {
+      "number": 65,
+      "speaker": "EMILIA",
+      "text": "petty exhibition; but for the whole world—why, who would not make her"
+    },
+    {
+      "number": 66,
+      "speaker": "EMILIA",
+      "text": "husband a cuckold to make him a monarch? I should venture purgatory"
+    },
+    {
+      "number": 67,
+      "speaker": "EMILIA",
+      "text": "for’t."
+    },
+    {
+      "number": 68,
+      "speaker": "DESDEMONA",
+      "text": "Beshrew me, if I would do such a wrong"
+    },
+    {
+      "number": 69,
+      "speaker": "DESDEMONA",
+      "text": "For the whole world."
+    },
+    {
+      "number": 70,
+      "speaker": "EMILIA",
+      "text": "Why the wrong is but a wrong i’ the world: and having"
+    },
+    {
+      "number": 71,
+      "speaker": "EMILIA",
+      "text": "the world for your labour, ’tis a wrong in your own world,"
+    },
+    {
+      "number": 72,
+      "speaker": "EMILIA",
+      "text": "and you might quickly make it right."
+    },
+    {
+      "number": 73,
+      "speaker": "DESDEMONA",
+      "text": "I do not think there is any such woman."
+    },
+    {
+      "number": 74,
+      "speaker": "EMILIA",
+      "text": "Yes, a dozen; and as many to the vantage as would store the world they played for."
+    },
+    {
+      "number": 75,
+      "speaker": "EMILIA",
+      "text": "But I do think it is their husbands’ faults"
+    },
+    {
+      "number": 76,
+      "speaker": "EMILIA",
+      "text": "If wives do fall: say that they slack their duties,"
+    },
+    {
+      "number": 77,
+      "speaker": "EMILIA",
+      "text": "And pour our treasures into foreign laps,"
+    },
+    {
+      "number": 78,
+      "speaker": "EMILIA",
+      "text": "Or else break out in peevish jealousies,"
+    },
+    {
+      "number": 79,
+      "speaker": "EMILIA",
+      "text": "Throwing restraint upon us; or say they strike us,"
+    },
+    {
+      "number": 80,
+      "speaker": "EMILIA",
+      "text": "Or scant our former having in despite;"
+    },
+    {
+      "number": 81,
+      "speaker": "EMILIA",
+      "text": "Why, we have galls, and though we have some grace,"
+    },
+    {
+      "number": 82,
+      "speaker": "EMILIA",
+      "text": "Yet have we some revenge. Let husbands know"
+    },
+    {
+      "number": 83,
+      "speaker": "EMILIA",
+      "text": "Their wives have sense like them: they see and smell"
+    },
+    {
+      "number": 84,
+      "speaker": "EMILIA",
+      "text": "And have their palates both for sweet and sour,"
+    },
+    {
+      "number": 85,
+      "speaker": "EMILIA",
+      "text": "As husbands have. What is it that they do"
+    },
+    {
+      "number": 86,
+      "speaker": "EMILIA",
+      "text": "When they change us for others? Is it sport?"
+    },
+    {
+      "number": 87,
+      "speaker": "EMILIA",
+      "text": "I think it is: and doth affection breed it?"
+    },
+    {
+      "number": 88,
+      "speaker": "EMILIA",
+      "text": "I think it doth: is’t frailty that thus errs?"
+    },
+    {
+      "number": 89,
+      "speaker": "EMILIA",
+      "text": "It is so too: and have not we affections,"
+    },
+    {
+      "number": 90,
+      "speaker": "EMILIA",
+      "text": "Desires for sport, and frailty, as men have?"
+    },
+    {
+      "number": 91,
+      "speaker": "EMILIA",
+      "text": "Then let them use us well: else let them know,"
+    },
+    {
+      "number": 92,
+      "speaker": "EMILIA",
+      "text": "The ills we do, their ills instruct us so."
+    },
+    {
+      "number": 93,
+      "speaker": "DESDEMONA",
+      "text": "Good night, good night: heaven me such uses send,"
+    },
+    {
+      "number": 94,
+      "speaker": "DESDEMONA",
+      "text": "Not to pick bad from bad, but by bad mend!"
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Othello, Lodovico, Desdemona, Emilia and Attendants."
+    },
+    {
+      "after_line": 8,
+      "text": "Exeunt Othello, Lodovico, and Attendants."
+    },
+    {
+      "after_line": 44,
+      "text": "Singing."
+    },
+    {
+      "after_line": 44,
+      "text": "Singing."
+    },
+    {
+      "after_line": 44,
+      "text": "Singing."
+    },
+    {
+      "after_line": 45,
+      "text": "Singing."
+    },
+    {
+      "after_line": 94,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "othello_act4_scene3_gloss1",
+      "line": 10,
+      "phrase": "incontinent",
+      "definition": "at once; immediately"
+    },
+    {
+      "id": "othello_act4_scene3_gloss2",
+      "line": 14,
+      "phrase": "nightly wearing",
+      "definition": "nightgown"
+    },
+    {
+      "id": "othello_act4_scene3_gloss5",
+      "line": 26,
+      "phrase": "willow",
+      "definition": "emblem of forsaken love; the willow branch was worn as a sign of grief"
+    },
+    {
+      "id": "othello_act4_scene3_gloss7",
+      "line": 37,
+      "phrase": "the poor soul sat sighing by a sycamore tree",
+      "definition": "opening line of a traditional ballad of abandoned love, sung by Desdemona on the night of her death"
+    },
+    {
+      "id": "othello_act4_scene3_gloss8",
+      "line": 42,
+      "phrase": "hie thee",
+      "definition": "hurry"
+    },
+    {
+      "id": "othello_act4_scene3_gloss9",
+      "line": 56,
+      "phrase": "by this heavenly light",
+      "definition": "by the light of heaven"
+    },
+    {
+      "id": "othello_act4_scene3_gloss10",
+      "line": 64,
+      "phrase": "petticoats",
+      "definition": "underskirts"
+    },
+    {
+      "id": "othello_act4_scene3_gloss11",
+      "line": 63,
+      "phrase": "joint-ring",
+      "definition": "a cheap ring with parts that could be separated"
+    },
+    {
+      "id": "othello_act4_scene3_gloss12",
+      "line": 65,
+      "phrase": "exhibition",
+      "definition": "allowance of money"
+    },
+    {
+      "id": "othello_act4_scene3_gloss13",
+      "line": 74,
+      "phrase": "vantage",
+      "definition": "opportunity"
+    },
+    {
+      "id": "othello_act4_scene3_gloss17",
+      "line": 81,
+      "phrase": "galls",
+      "definition": "capacities for bitterness; spirited defiance"
+    },
+    {
+      "id": "othello_act4_scene3_gloss18",
+      "line": 92,
+      "phrase": "instruct us so",
+      "definition": "teach us likewise (to err)"
+    },
+    {
+      "id": "othello_act4_scene3_gloss19",
+      "line": 93,
+      "phrase": "Good night, good night",
+      "definition": "Desdemona's final words to her maid on this earth"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "othello_act4_scene3_ann1",
+      "line_start": 25,
+      "line_end": 60,
+      "citation_display": "Othello 4.3.25–60",
+      "category": "historical",
+      "title": "The Willow Song",
+      "body": "Desdemona's song — 'The poor soul sat sighing by a sycamore tree, sing willow, willow, willow' — is a real ballad, documented in Elizabethan and earlier sources under the title 'Willow, Willow'. The willow was the emblem of forsaken love; lovers wore willow garlands as visible signs of grief. Desdemona remembers the song from her mother's maid 'Barbary' — a detail with layered resonance: 'Barbary' names the North African coast, returning Othello's origins to the bedroom through song.\n\nShakespeare gives the moment a lullaby's stillness. The song reduces her tragedy to a folk object — something her body learned once and returns to without thought. This is the technical achievement: the scene's emotional devastation is expressed not through new language but through a song older than any of the characters, sung by someone about to die.",
+      "sources": [
+        "Ross W. Duffin, *Shakespeare's Songbook* (2004)",
+        "Peter Burke, *Popular Culture in Early Modern Europe* (1978)"
+      ]
+    },
+    {
+      "id": "othello_act4_scene3_ann2",
+      "line_start": 74,
+      "line_end": 101,
+      "citation_display": "Othello 4.3.74–101",
+      "category": "thematic",
+      "title": "Emilia's catechism on women",
+      "body": "Emilia's argument — that women err because men betray, that a wife's wrongs are husbands' teachings — is the most substantial piece of proto-feminist reasoning in Shakespeare. The speech is structural, not digressive: it prepares the ground for Emilia's defiance in 5.2, where she will speak over her husband's prohibition and be killed for it.\n\nShakespeare does not position Emilia's reasoning as self-exculpation. Desdemona refuses the argument. But Emilia's catalogue — slack husbands, confiscated allowances, bodily wrongs — is delivered with the authority of experience, and Shakespeare lets it stand. The scene's last lines ('Let husbands know / Their wives have sense like them') are the theatrical grounds for what Emilia will later do.",
+      "sources": [
+        "Carol Thomas Neely, *Broken Nuptials in Shakespeare's Plays* (1985)",
+        "Dympna Callaghan, *Shakespeare Without Women* (2000)",
+        "Phyllis Rackin, *Shakespeare and Women* (2005)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "othello_act4_scene3_q1",
+      "kind": "close_reading",
+      "prompt": "Desdemona sings the Willow Song she learned from her mother's maid 'Barbary'. Why is the name 'Barbary' significant in this scene?",
+      "options": [
+        "It is a random folk name with no meaning",
+        "It names the North African coast — quietly bringing Othello's origins into the bedroom through song",
+        "It is a pseudonym Desdemona invents on the spot",
+        "It was the name of a famous Venetian composer"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 25,
+      "anchor_line_end": 45
+    },
+    {
+      "id": "othello_act4_scene3_q2",
+      "kind": "theme",
+      "prompt": "Emilia's argument that women err because men betray them, and that 'their wives have sense like them', is:",
+      "options": [
+        "A minor digression Shakespeare immediately abandons",
+        "A structural preparation for Emilia's defiance of Iago in 5.2, where she will speak over his prohibition and be killed for it",
+        "Borrowed directly from a Venetian law treatise",
+        "Meant ironically — Shakespeare is satirizing early feminism"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 85,
+      "anchor_line_end": 101
+    },
+    {
+      "id": "othello_act4_scene3_q3",
+      "kind": "inference",
+      "prompt": "Desdemona asks Emilia whether there are women who would be unfaithful 'for all the world.' What does Desdemona's disbelief reveal?",
+      "options": [
+        "That she has personal experience of infidelity she is not admitting",
+        "That her moral imagination remains intact even as her husband's unravels — she cannot conceive what Iago has instilled in Othello",
+        "That she is considering an affair herself",
+        "That she is testing Emilia's loyalty"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 60,
+      "anchor_line_end": 80
+    }
+  ]
+}

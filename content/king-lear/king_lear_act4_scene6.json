@@ -1,0 +1,1958 @@
+{
+  "section_id": "king_lear_act4_scene6",
+  "work_id": "king-lear",
+  "sequence": 22,
+  "act": 4,
+  "scene": 6,
+  "kind": "scene",
+  "scene_title": "Fields near Dover",
+  "line_count": 263,
+  "word_count": 1983,
+  "est_read_minutes": 10,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "GLOUCESTER",
+      "text": "When shall we come to the top of that same hill?"
+    },
+    {
+      "number": 2,
+      "speaker": "EDGAR",
+      "text": "You do climb up it now: look, how we labour."
+    },
+    {
+      "number": 3,
+      "speaker": "GLOUCESTER",
+      "text": "Methinks the ground is even."
+    },
+    {
+      "number": 4,
+      "speaker": "EDGAR",
+      "text": "Horrible steep. Hark, do you hear the sea?"
+    },
+    {
+      "number": 5,
+      "speaker": "GLOUCESTER",
+      "text": "No, truly."
+    },
+    {
+      "number": 6,
+      "speaker": "EDGAR",
+      "text": "Why, then, your other senses grow imperfect"
+    },
+    {
+      "number": 7,
+      "speaker": "EDGAR",
+      "text": "By your eyes’ anguish."
+    },
+    {
+      "number": 7,
+      "speaker": "GLOUCESTER",
+      "text": "So may it be, indeed:"
+    },
+    {
+      "number": 8,
+      "speaker": "GLOUCESTER",
+      "text": "Methinks thy voice is alter’d; and thou speak’st"
+    },
+    {
+      "number": 9,
+      "speaker": "GLOUCESTER",
+      "text": "In better phrase and matter than thou didst."
+    },
+    {
+      "number": 10,
+      "speaker": "EDGAR",
+      "text": "You’re much deceived: in nothing am I changed"
+    },
+    {
+      "number": 11,
+      "speaker": "EDGAR",
+      "text": "But in my garments."
+    },
+    {
+      "number": 11,
+      "speaker": "GLOUCESTER",
+      "text": "Methinks you’re better spoken."
+    },
+    {
+      "number": 12,
+      "speaker": "EDGAR",
+      "text": "Come on, sir; here’s the place: stand still. How fearful"
+    },
+    {
+      "number": 13,
+      "speaker": "EDGAR",
+      "text": "And dizzy ’tis, to cast one’s eyes so low!"
+    },
+    {
+      "number": 14,
+      "speaker": "EDGAR",
+      "text": "The crows and choughs that wing the midway air"
+    },
+    {
+      "number": 15,
+      "speaker": "EDGAR",
+      "text": "Show scarce so gross as beetles: half way down"
+    },
+    {
+      "number": 16,
+      "speaker": "EDGAR",
+      "text": "Hangs one that gathers samphire, dreadful trade!"
+    },
+    {
+      "number": 17,
+      "speaker": "EDGAR",
+      "text": "Methinks he seems no bigger than his head:"
+    },
+    {
+      "number": 18,
+      "speaker": "EDGAR",
+      "text": "The fishermen, that walk upon the beach,"
+    },
+    {
+      "number": 19,
+      "speaker": "EDGAR",
+      "text": "Appear like mice; and yond tall anchoring bark,"
+    },
+    {
+      "number": 20,
+      "speaker": "EDGAR",
+      "text": "Diminish’d to her cock; her cock, a buoy"
+    },
+    {
+      "number": 21,
+      "speaker": "EDGAR",
+      "text": "Almost too small for sight: the murmuring surge,"
+    },
+    {
+      "number": 22,
+      "speaker": "EDGAR",
+      "text": "That on the unnumber’d idle pebbles chafes,"
+    },
+    {
+      "number": 23,
+      "speaker": "EDGAR",
+      "text": "Cannot be heard so high. I’ll look no more;"
+    },
+    {
+      "number": 24,
+      "speaker": "EDGAR",
+      "text": "Lest my brain turn, and the deficient sight"
+    },
+    {
+      "number": 25,
+      "speaker": "EDGAR",
+      "text": "Topple down headlong."
+    },
+    {
+      "number": 25,
+      "speaker": "GLOUCESTER",
+      "text": "Set me where you stand."
+    },
+    {
+      "number": 26,
+      "speaker": "EDGAR",
+      "text": "Give me your hand: you are now within a foot"
+    },
+    {
+      "number": 27,
+      "speaker": "EDGAR",
+      "text": "Of the extreme verge: for all beneath the moon"
+    },
+    {
+      "number": 28,
+      "speaker": "EDGAR",
+      "text": "Would I not leap upright."
+    },
+    {
+      "number": 28,
+      "speaker": "GLOUCESTER",
+      "text": "Let go my hand."
+    },
+    {
+      "number": 29,
+      "speaker": "GLOUCESTER",
+      "text": "Here, friend, ’s another purse; in it a jewel"
+    },
+    {
+      "number": 30,
+      "speaker": "GLOUCESTER",
+      "text": "Well worth a poor man’s taking: fairies and gods"
+    },
+    {
+      "number": 31,
+      "speaker": "GLOUCESTER",
+      "text": "Prosper it with thee! Go thou farther off;"
+    },
+    {
+      "number": 32,
+      "speaker": "GLOUCESTER",
+      "text": "Bid me farewell, and let me hear thee going."
+    },
+    {
+      "number": 33,
+      "speaker": "EDGAR",
+      "text": "Now fare you well, good sir."
+    },
+    {
+      "number": 33,
+      "speaker": "GLOUCESTER",
+      "text": "With all my heart."
+    },
+    {
+      "number": 34,
+      "speaker": "EDGAR",
+      "text": "Why I do trifle thus with his despair Is done to cure it."
+    },
+    {
+      "number": 35,
+      "speaker": "GLOUCESTER",
+      "text": "O you mighty gods!"
+    },
+    {
+      "number": 36,
+      "speaker": "GLOUCESTER",
+      "text": "This world I do renounce, and, in your sights,"
+    },
+    {
+      "number": 37,
+      "speaker": "GLOUCESTER",
+      "text": "Shake patiently my great affliction off:"
+    },
+    {
+      "number": 38,
+      "speaker": "GLOUCESTER",
+      "text": "If I could bear it longer, and not fall"
+    },
+    {
+      "number": 39,
+      "speaker": "GLOUCESTER",
+      "text": "To quarrel with your great opposeless wills,"
+    },
+    {
+      "number": 40,
+      "speaker": "GLOUCESTER",
+      "text": "My snuff and loathed part of nature should"
+    },
+    {
+      "number": 41,
+      "speaker": "GLOUCESTER",
+      "text": "Burn itself out. If Edgar live, O, bless him!"
+    },
+    {
+      "number": 42,
+      "speaker": "GLOUCESTER",
+      "text": "Now, fellow, fare thee well. He falls forward."
+    },
+    {
+      "number": 43,
+      "speaker": "EDGAR",
+      "text": "Gone, sir: farewell."
+    },
+    {
+      "number": 44,
+      "speaker": "EDGAR",
+      "text": "And yet I know not how conceit may rob"
+    },
+    {
+      "number": 45,
+      "speaker": "EDGAR",
+      "text": "The treasury of life, when life itself"
+    },
+    {
+      "number": 46,
+      "speaker": "EDGAR",
+      "text": "Yields to the theft: had he been where he thought,"
+    },
+    {
+      "number": 47,
+      "speaker": "EDGAR",
+      "text": "By this, had thought been past. Alive or dead?"
+    },
+    {
+      "number": 48,
+      "speaker": "EDGAR",
+      "text": "Ho, you sir! friend! Hear you, sir! speak!"
+    },
+    {
+      "number": 49,
+      "speaker": "EDGAR",
+      "text": "Thus might he pass indeed: yet he revives."
+    },
+    {
+      "number": 50,
+      "speaker": "EDGAR",
+      "text": "What are you, sir?"
+    },
+    {
+      "number": 50,
+      "speaker": "GLOUCESTER",
+      "text": "Away, and let me die."
+    },
+    {
+      "number": 51,
+      "speaker": "EDGAR",
+      "text": "Hadst thou been aught but gossamer, feathers, air,"
+    },
+    {
+      "number": 52,
+      "speaker": "EDGAR",
+      "text": "So many fathom down precipitating,"
+    },
+    {
+      "number": 53,
+      "speaker": "EDGAR",
+      "text": "Thou’dst shiver’d like an egg: but thou dost breathe;"
+    },
+    {
+      "number": 54,
+      "speaker": "EDGAR",
+      "text": "Hast heavy substance; bleed’st not; speak’st; art sound."
+    },
+    {
+      "number": 55,
+      "speaker": "EDGAR",
+      "text": "Ten masts at each make not the altitude"
+    },
+    {
+      "number": 56,
+      "speaker": "EDGAR",
+      "text": "Which thou hast perpendicularly fell:"
+    },
+    {
+      "number": 57,
+      "speaker": "EDGAR",
+      "text": "Thy life’s a miracle. Speak yet again."
+    },
+    {
+      "number": 58,
+      "speaker": "GLOUCESTER",
+      "text": "But have I fall’n, or no?"
+    },
+    {
+      "number": 59,
+      "speaker": "EDGAR",
+      "text": "From the dread summit of this chalky bourn."
+    },
+    {
+      "number": 60,
+      "speaker": "EDGAR",
+      "text": "Look up a-height; the shrill-gorged lark so far"
+    },
+    {
+      "number": 61,
+      "speaker": "EDGAR",
+      "text": "Cannot be seen or heard: do but look up."
+    },
+    {
+      "number": 62,
+      "speaker": "GLOUCESTER",
+      "text": "Alack, I have no eyes."
+    },
+    {
+      "number": 63,
+      "speaker": "GLOUCESTER",
+      "text": "Is wretchedness deprived that benefit,"
+    },
+    {
+      "number": 64,
+      "speaker": "GLOUCESTER",
+      "text": "To end itself by death? ’Twas yet some comfort,"
+    },
+    {
+      "number": 65,
+      "speaker": "GLOUCESTER",
+      "text": "When misery could beguile the tyrant’s rage,"
+    },
+    {
+      "number": 66,
+      "speaker": "GLOUCESTER",
+      "text": "And frustrate his proud will."
+    },
+    {
+      "number": 67,
+      "speaker": "EDGAR",
+      "text": "Give me your arm: Up: so. How is ’t? Feel you your legs? You stand."
+    },
+    {
+      "number": 68,
+      "speaker": "GLOUCESTER",
+      "text": "Too well, too well."
+    },
+    {
+      "number": 68,
+      "speaker": "EDGAR",
+      "text": "This is above all strangeness."
+    },
+    {
+      "number": 69,
+      "speaker": "EDGAR",
+      "text": "Upon the crown o’ the cliff, what thing was that"
+    },
+    {
+      "number": 70,
+      "speaker": "EDGAR",
+      "text": "Which parted from you?"
+    },
+    {
+      "number": 70,
+      "speaker": "GLOUCESTER",
+      "text": "A poor unfortunate beggar."
+    },
+    {
+      "number": 71,
+      "speaker": "EDGAR",
+      "text": "As I stood here below, methought his eyes"
+    },
+    {
+      "number": 72,
+      "speaker": "EDGAR",
+      "text": "Were two full moons; he had a thousand noses,"
+    },
+    {
+      "number": 73,
+      "speaker": "EDGAR",
+      "text": "Horns whelk’d and waved like the enridged sea:"
+    },
+    {
+      "number": 74,
+      "speaker": "EDGAR",
+      "text": "It was some fiend; therefore, thou happy father,"
+    },
+    {
+      "number": 75,
+      "speaker": "EDGAR",
+      "text": "Think that the clearest gods, who make them honours"
+    },
+    {
+      "number": 76,
+      "speaker": "EDGAR",
+      "text": "Of men’s impossibilities, have preserved thee."
+    },
+    {
+      "number": 77,
+      "speaker": "GLOUCESTER",
+      "text": "I do remember now: henceforth I’ll bear"
+    },
+    {
+      "number": 78,
+      "speaker": "GLOUCESTER",
+      "text": "Affliction till it do cry out itself"
+    },
+    {
+      "number": 79,
+      "speaker": "GLOUCESTER",
+      "text": "“Enough, enough,” and die. That thing you speak of,"
+    },
+    {
+      "number": 80,
+      "speaker": "GLOUCESTER",
+      "text": "I took it for a man; often ’twould say"
+    },
+    {
+      "number": 81,
+      "speaker": "GLOUCESTER",
+      "text": "“The fiend, the fiend:” he led me to that place."
+    },
+    {
+      "number": 82,
+      "speaker": "EDGAR",
+      "text": "Bear free and patient thoughts. But who comes here?"
+    },
+    {
+      "number": 83,
+      "speaker": "KING LEAR",
+      "text": "No, they cannot touch me for coining; I am the king himself."
+    },
+    {
+      "number": 84,
+      "speaker": "EDGAR",
+      "text": "O thou side-piercing sight!"
+    },
+    {
+      "number": 85,
+      "speaker": "KING LEAR",
+      "text": "Nature’s above art in that respect. There’s your press-money. That fellow handles"
+    },
+    {
+      "number": 86,
+      "speaker": "KING LEAR",
+      "text": "his bow like a crow-keeper: draw me a clothier’s yard. Look, look,"
+    },
+    {
+      "number": 87,
+      "speaker": "KING LEAR",
+      "text": "a mouse! Peace, peace; this piece of toasted cheese will do ’t."
+    },
+    {
+      "number": 88,
+      "speaker": "KING LEAR",
+      "text": "There’s my gauntlet; I’ll prove it on a giant. Bring up the"
+    },
+    {
+      "number": 89,
+      "speaker": "KING LEAR",
+      "text": "brown bills. O, well flown, bird! i’ the clout, i’ the clout:"
+    },
+    {
+      "number": 90,
+      "speaker": "KING LEAR",
+      "text": "hewgh! Give the word."
+    },
+    {
+      "number": 90,
+      "speaker": "EDGAR",
+      "text": "Sweet marjoram."
+    },
+    {
+      "number": 91,
+      "speaker": "KING LEAR",
+      "text": "Pass."
+    },
+    {
+      "number": 91,
+      "speaker": "GLOUCESTER",
+      "text": "I know that voice."
+    },
+    {
+      "number": 92,
+      "speaker": "KING LEAR",
+      "text": "Ha! Goneril, with a white beard! They flattered me like a dog;"
+    },
+    {
+      "number": 93,
+      "speaker": "KING LEAR",
+      "text": "and told me I had white hairs in my beard ere the"
+    },
+    {
+      "number": 94,
+      "speaker": "KING LEAR",
+      "text": "black ones were there. To say “ay” and “no” to every thing"
+    },
+    {
+      "number": 95,
+      "speaker": "KING LEAR",
+      "text": "that I said!—“Ay” and “no” too was no good divinity. When the"
+    },
+    {
+      "number": 96,
+      "speaker": "KING LEAR",
+      "text": "rain came to wet me once, and the wind to make me"
+    },
+    {
+      "number": 97,
+      "speaker": "KING LEAR",
+      "text": "chatter; when the thunder would not peace at my bidding; there I"
+    },
+    {
+      "number": 98,
+      "speaker": "KING LEAR",
+      "text": "found ’em, there I smelt ’em out. Go to, they are not"
+    },
+    {
+      "number": 99,
+      "speaker": "KING LEAR",
+      "text": "men o’ their words: they told me I was every thing; ’tis"
+    },
+    {
+      "number": 100,
+      "speaker": "KING LEAR",
+      "text": "a lie, I am not ague-proof."
+    },
+    {
+      "number": 101,
+      "speaker": "GLOUCESTER",
+      "text": "The trick of that voice I do well remember:"
+    },
+    {
+      "number": 102,
+      "speaker": "GLOUCESTER",
+      "text": "Is ’t not the king?"
+    },
+    {
+      "number": 102,
+      "speaker": "KING LEAR",
+      "text": "Ay, every inch a king:"
+    },
+    {
+      "number": 103,
+      "speaker": "KING LEAR",
+      "text": "When I do stare, see how the subject quakes."
+    },
+    {
+      "number": 104,
+      "speaker": "KING LEAR",
+      "text": "I pardon that man’s life. What was thy cause? Adultery?"
+    },
+    {
+      "number": 105,
+      "speaker": "KING LEAR",
+      "text": "Thou shalt not die: die for adultery! No:"
+    },
+    {
+      "number": 106,
+      "speaker": "KING LEAR",
+      "text": "The wren goes to ’t, and the small gilded fly"
+    },
+    {
+      "number": 107,
+      "speaker": "KING LEAR",
+      "text": "Does lecher in my sight."
+    },
+    {
+      "number": 108,
+      "speaker": "KING LEAR",
+      "text": "Let copulation thrive; for Gloucester’s bastard son"
+    },
+    {
+      "number": 109,
+      "speaker": "KING LEAR",
+      "text": "Was kinder to his father than my daughters"
+    },
+    {
+      "number": 110,
+      "speaker": "KING LEAR",
+      "text": "Got ’tween the lawful sheets."
+    },
+    {
+      "number": 111,
+      "speaker": "KING LEAR",
+      "text": "To ’t, luxury, pell-mell! for I lack soldiers."
+    },
+    {
+      "number": 112,
+      "speaker": "KING LEAR",
+      "text": "Behold yond simpering dame,"
+    },
+    {
+      "number": 113,
+      "speaker": "KING LEAR",
+      "text": "Whose face between her forks presages snow;"
+    },
+    {
+      "number": 114,
+      "speaker": "KING LEAR",
+      "text": "That minces virtue, and does shake the head"
+    },
+    {
+      "number": 115,
+      "speaker": "KING LEAR",
+      "text": "To hear of pleasure’s name;"
+    },
+    {
+      "number": 116,
+      "speaker": "KING LEAR",
+      "text": "The fitchew, nor the soiled horse, goes to ’t"
+    },
+    {
+      "number": 117,
+      "speaker": "KING LEAR",
+      "text": "With a more riotous appetite."
+    },
+    {
+      "number": 118,
+      "speaker": "KING LEAR",
+      "text": "Down from the waist they are Centaurs,"
+    },
+    {
+      "number": 119,
+      "speaker": "KING LEAR",
+      "text": "Though women all above:"
+    },
+    {
+      "number": 120,
+      "speaker": "KING LEAR",
+      "text": "But to the girdle do the gods inherit,"
+    },
+    {
+      "number": 121,
+      "speaker": "KING LEAR",
+      "text": "Beneath is all the fiends’;"
+    },
+    {
+      "number": 121,
+      "speaker": "GLOUCESTER",
+      "text": "O, let me kiss that hand!"
+    },
+    {
+      "number": 122,
+      "speaker": "KING LEAR",
+      "text": "Let me wipe it first; it smells of mortality."
+    },
+    {
+      "number": 123,
+      "speaker": "GLOUCESTER",
+      "text": "O ruin’d piece of nature! This great world"
+    },
+    {
+      "number": 124,
+      "speaker": "GLOUCESTER",
+      "text": "Shall so wear out to nought. Dost thou know me?"
+    },
+    {
+      "number": 125,
+      "speaker": "KING LEAR",
+      "text": "I remember thine eyes well enough. Dost thou squiny at me? No,"
+    },
+    {
+      "number": 126,
+      "speaker": "KING LEAR",
+      "text": "do thy worst, blind Cupid! I’ll not love. Read thou this challenge;"
+    },
+    {
+      "number": 127,
+      "speaker": "KING LEAR",
+      "text": "mark but the penning of it."
+    },
+    {
+      "number": 128,
+      "speaker": "GLOUCESTER",
+      "text": "Were all the letters suns, I could not see one."
+    },
+    {
+      "number": 129,
+      "speaker": "EDGAR",
+      "text": "I would not take this from report; it is,"
+    },
+    {
+      "number": 130,
+      "speaker": "EDGAR",
+      "text": "And my heart breaks at it."
+    },
+    {
+      "number": 130,
+      "speaker": "KING LEAR",
+      "text": "Read."
+    },
+    {
+      "number": 131,
+      "speaker": "GLOUCESTER",
+      "text": "What, with the case of eyes?"
+    },
+    {
+      "number": 132,
+      "speaker": "KING LEAR",
+      "text": "O, ho, are you there with me? No eyes in your head,"
+    },
+    {
+      "number": 133,
+      "speaker": "KING LEAR",
+      "text": "nor no money in your purse? Your eyes are in a heavy"
+    },
+    {
+      "number": 134,
+      "speaker": "KING LEAR",
+      "text": "case, your purse in a light; yet you see how this world"
+    },
+    {
+      "number": 135,
+      "speaker": "KING LEAR",
+      "text": "goes."
+    },
+    {
+      "number": 135,
+      "speaker": "GLOUCESTER",
+      "text": "I see it feelingly."
+    },
+    {
+      "number": 136,
+      "speaker": "KING LEAR",
+      "text": "What, art mad? A man may see how this world goes with"
+    },
+    {
+      "number": 137,
+      "speaker": "KING LEAR",
+      "text": "no eyes. Look with thine ears: see how yond justice rails upon"
+    },
+    {
+      "number": 138,
+      "speaker": "KING LEAR",
+      "text": "yond simple thief. Hark, in thine ear: change places; and, handy-dandy, which"
+    },
+    {
+      "number": 139,
+      "speaker": "KING LEAR",
+      "text": "is the justice, which is the thief? Thou hast seen a farmer’s"
+    },
+    {
+      "number": 140,
+      "speaker": "KING LEAR",
+      "text": "dog bark at a beggar?"
+    },
+    {
+      "number": 140,
+      "speaker": "GLOUCESTER",
+      "text": "Ay, sir."
+    },
+    {
+      "number": 141,
+      "speaker": "KING LEAR",
+      "text": "And the creature run from the cur? There thou mightst behold the"
+    },
+    {
+      "number": 142,
+      "speaker": "KING LEAR",
+      "text": "great image of authority: a dog’s obeyed in office."
+    },
+    {
+      "number": 143,
+      "speaker": "EDGAR",
+      "text": "O, matter and impertinency mix’d! Reason in madness!"
+    },
+    {
+      "number": 144,
+      "speaker": "KING LEAR",
+      "text": "If thou wilt weep my fortunes, take my eyes."
+    },
+    {
+      "number": 145,
+      "speaker": "KING LEAR",
+      "text": "I know thee well enough; thy name is Gloucester:"
+    },
+    {
+      "number": 146,
+      "speaker": "KING LEAR",
+      "text": "Thou must be patient; we came crying hither:"
+    },
+    {
+      "number": 147,
+      "speaker": "KING LEAR",
+      "text": "Thou know’st, the first time that we smell the air,"
+    },
+    {
+      "number": 148,
+      "speaker": "KING LEAR",
+      "text": "We wawl and cry. I will preach to thee: mark."
+    },
+    {
+      "number": 149,
+      "speaker": "GLOUCESTER",
+      "text": "Alack, alack the day!"
+    },
+    {
+      "number": 150,
+      "speaker": "KING LEAR",
+      "text": "When we are born, we cry that we are come"
+    },
+    {
+      "number": 151,
+      "speaker": "KING LEAR",
+      "text": "To this great stage of fools: this a good block;"
+    },
+    {
+      "number": 152,
+      "speaker": "KING LEAR",
+      "text": "It were a delicate stratagem, to shoe"
+    },
+    {
+      "number": 153,
+      "speaker": "KING LEAR",
+      "text": "A troop of horse with felt: I’ll put ’t in proof;"
+    },
+    {
+      "number": 154,
+      "speaker": "KING LEAR",
+      "text": "And when I have stol’n upon these sons-in-law,"
+    },
+    {
+      "number": 155,
+      "speaker": "KING LEAR",
+      "text": "Then, kill, kill, kill, kill, kill, kill!"
+    },
+    {
+      "number": 156,
+      "speaker": "GENTLEMAN",
+      "text": "O, here he is: lay hand upon him. Sir,"
+    },
+    {
+      "number": 157,
+      "speaker": "GENTLEMAN",
+      "text": "Your most dear daughter—"
+    },
+    {
+      "number": 158,
+      "speaker": "KING LEAR",
+      "text": "No rescue? What, a prisoner? I am even"
+    },
+    {
+      "number": 159,
+      "speaker": "KING LEAR",
+      "text": "The natural fool of fortune. Use me well;"
+    },
+    {
+      "number": 160,
+      "speaker": "KING LEAR",
+      "text": "You shall have ransom. Let me have surgeons;"
+    },
+    {
+      "number": 161,
+      "speaker": "KING LEAR",
+      "text": "I am cut to the brains."
+    },
+    {
+      "number": 161,
+      "speaker": "GENTLEMAN",
+      "text": "You shall have any thing."
+    },
+    {
+      "number": 162,
+      "speaker": "KING LEAR",
+      "text": "No seconds? all myself?"
+    },
+    {
+      "number": 163,
+      "speaker": "KING LEAR",
+      "text": "Why, this would make a man a man of salt,"
+    },
+    {
+      "number": 164,
+      "speaker": "KING LEAR",
+      "text": "To use his eyes for garden water-pots,"
+    },
+    {
+      "number": 165,
+      "speaker": "KING LEAR",
+      "text": "Ay, and laying autumn’s dust."
+    },
+    {
+      "number": 165,
+      "speaker": "GENTLEMAN",
+      "text": "Good sir—"
+    },
+    {
+      "number": 166,
+      "speaker": "KING LEAR",
+      "text": "I will die bravely, like a bridegroom. What!"
+    },
+    {
+      "number": 167,
+      "speaker": "KING LEAR",
+      "text": "I will be jovial: come, come; I am a king,"
+    },
+    {
+      "number": 168,
+      "speaker": "KING LEAR",
+      "text": "My masters, know you that."
+    },
+    {
+      "number": 169,
+      "speaker": "GENTLEMAN",
+      "text": "You are a royal one, and we obey you."
+    },
+    {
+      "number": 170,
+      "speaker": "KING LEAR",
+      "text": "Then there’s life in’t. Nay, if you get it, you shall get"
+    },
+    {
+      "number": 171,
+      "speaker": "KING LEAR",
+      "text": "it with running. Sa, sa, sa, sa."
+    },
+    {
+      "number": 172,
+      "speaker": "GENTLEMAN",
+      "text": "A sight most pitiful in the meanest wretch,"
+    },
+    {
+      "number": 173,
+      "speaker": "GENTLEMAN",
+      "text": "Past speaking of in a king! Thou hast one daughter,"
+    },
+    {
+      "number": 174,
+      "speaker": "GENTLEMAN",
+      "text": "Who redeems nature from the general curse"
+    },
+    {
+      "number": 175,
+      "speaker": "GENTLEMAN",
+      "text": "Which twain have brought her to."
+    },
+    {
+      "number": 175,
+      "speaker": "EDGAR",
+      "text": "Hail, gentle sir."
+    },
+    {
+      "number": 176,
+      "speaker": "GENTLEMAN",
+      "text": "Sir, speed you: what’s your will?"
+    },
+    {
+      "number": 177,
+      "speaker": "EDGAR",
+      "text": "Do you hear aught, sir, of a battle toward?"
+    },
+    {
+      "number": 178,
+      "speaker": "GENTLEMAN",
+      "text": "Most sure and vulgar: every one hears that,"
+    },
+    {
+      "number": 179,
+      "speaker": "GENTLEMAN",
+      "text": "Which can distinguish sound."
+    },
+    {
+      "number": 179,
+      "speaker": "EDGAR",
+      "text": "But, by your favour,"
+    },
+    {
+      "number": 180,
+      "speaker": "EDGAR",
+      "text": "How near’s the other army?"
+    },
+    {
+      "number": 181,
+      "speaker": "GENTLEMAN",
+      "text": "Near and on speedy foot; the main descry"
+    },
+    {
+      "number": 182,
+      "speaker": "GENTLEMAN",
+      "text": "Stands on the hourly thought."
+    },
+    {
+      "number": 182,
+      "speaker": "EDGAR",
+      "text": "I thank you, sir: that’s all."
+    },
+    {
+      "number": 183,
+      "speaker": "GENTLEMAN",
+      "text": "Though that the queen on special cause is here,"
+    },
+    {
+      "number": 184,
+      "speaker": "GENTLEMAN",
+      "text": "Her army is moved on."
+    },
+    {
+      "number": 184,
+      "speaker": "EDGAR",
+      "text": "I thank you, sir."
+    },
+    {
+      "number": 185,
+      "speaker": "GLOUCESTER",
+      "text": "You ever-gentle gods, take my breath from me:"
+    },
+    {
+      "number": 186,
+      "speaker": "GLOUCESTER",
+      "text": "Let not my worser spirit tempt me again"
+    },
+    {
+      "number": 187,
+      "speaker": "GLOUCESTER",
+      "text": "To die before you please!"
+    },
+    {
+      "number": 187,
+      "speaker": "EDGAR",
+      "text": "Well pray you, father."
+    },
+    {
+      "number": 188,
+      "speaker": "GLOUCESTER",
+      "text": "Now, good sir, what are you?"
+    },
+    {
+      "number": 189,
+      "speaker": "EDGAR",
+      "text": "A most poor man, made tame to fortune’s blows;"
+    },
+    {
+      "number": 190,
+      "speaker": "EDGAR",
+      "text": "Who, by the art of known and feeling sorrows,"
+    },
+    {
+      "number": 191,
+      "speaker": "EDGAR",
+      "text": "Am pregnant to good pity. Give me your hand,"
+    },
+    {
+      "number": 192,
+      "speaker": "EDGAR",
+      "text": "I’ll lead you to some biding."
+    },
+    {
+      "number": 192,
+      "speaker": "GLOUCESTER",
+      "text": "Hearty thanks:"
+    },
+    {
+      "number": 193,
+      "speaker": "GLOUCESTER",
+      "text": "The bounty and the benison of heaven"
+    },
+    {
+      "number": 194,
+      "speaker": "GLOUCESTER",
+      "text": "To boot, and boot!"
+    },
+    {
+      "number": 194,
+      "speaker": "OSWALD",
+      "text": "A proclaim’d prize! Most happy!"
+    },
+    {
+      "number": 195,
+      "speaker": "OSWALD",
+      "text": "That eyeless head of thine was first framed flesh"
+    },
+    {
+      "number": 196,
+      "speaker": "OSWALD",
+      "text": "To raise my fortunes. Thou old unhappy traitor,"
+    },
+    {
+      "number": 197,
+      "speaker": "OSWALD",
+      "text": "Briefly thyself remember: the sword is out"
+    },
+    {
+      "number": 198,
+      "speaker": "OSWALD",
+      "text": "That must destroy thee."
+    },
+    {
+      "number": 198,
+      "speaker": "GLOUCESTER",
+      "text": "Now let thy friendly hand"
+    },
+    {
+      "number": 199,
+      "speaker": "GLOUCESTER",
+      "text": "Put strength enough to’t. Edgar interposes."
+    },
+    {
+      "number": 199,
+      "speaker": "OSWALD",
+      "text": "Wherefore, bold peasant,"
+    },
+    {
+      "number": 200,
+      "speaker": "OSWALD",
+      "text": "Darest thou support a publish’d traitor? Hence;"
+    },
+    {
+      "number": 201,
+      "speaker": "OSWALD",
+      "text": "Lest that the infection of his fortune take"
+    },
+    {
+      "number": 202,
+      "speaker": "OSWALD",
+      "text": "Like hold on thee. Let go his arm."
+    },
+    {
+      "number": 203,
+      "speaker": "EDGAR",
+      "text": "Ch’ill not let go, zir, without vurther ’casion."
+    },
+    {
+      "number": 204,
+      "speaker": "OSWALD",
+      "text": "Let go, slave, or thou diest!"
+    },
+    {
+      "number": 205,
+      "speaker": "EDGAR",
+      "text": "Good gentleman, go your gait, and let poor volk pass. An chud"
+    },
+    {
+      "number": 206,
+      "speaker": "EDGAR",
+      "text": "ha’ bin zwaggered out of my life, ’twould not ha’ bin zo"
+    },
+    {
+      "number": 207,
+      "speaker": "EDGAR",
+      "text": "long as ’tis by a vortnight. Nay, come not near th’ old"
+    },
+    {
+      "number": 208,
+      "speaker": "EDGAR",
+      "text": "man; keep out, che vor ye, or ise try whether your costard"
+    },
+    {
+      "number": 209,
+      "speaker": "EDGAR",
+      "text": "or my ballow be the harder: ch’ill be plain with you."
+    },
+    {
+      "number": 210,
+      "speaker": "OSWALD",
+      "text": "Out, dunghill!"
+    },
+    {
+      "number": 211,
+      "speaker": "EDGAR",
+      "text": "Ch’ill pick your teeth, zir: come; no matter vor your foins. They"
+    },
+    {
+      "number": 212,
+      "speaker": "EDGAR",
+      "text": "fight, and Edgar knocks him down."
+    },
+    {
+      "number": 213,
+      "speaker": "OSWALD",
+      "text": "Slave, thou hast slain me: villain, take my purse:"
+    },
+    {
+      "number": 214,
+      "speaker": "OSWALD",
+      "text": "If ever thou wilt thrive, bury my body;"
+    },
+    {
+      "number": 215,
+      "speaker": "OSWALD",
+      "text": "And give the letters which thou find’st about me"
+    },
+    {
+      "number": 216,
+      "speaker": "OSWALD",
+      "text": "To Edmund earl of Gloucester; seek him out"
+    },
+    {
+      "number": 217,
+      "speaker": "OSWALD",
+      "text": "Upon the British party: O, untimely death!"
+    },
+    {
+      "number": 218,
+      "speaker": "EDGAR",
+      "text": "I know thee well: a serviceable villain;"
+    },
+    {
+      "number": 219,
+      "speaker": "EDGAR",
+      "text": "As duteous to the vices of thy mistress"
+    },
+    {
+      "number": 220,
+      "speaker": "EDGAR",
+      "text": "As badness would desire."
+    },
+    {
+      "number": 220,
+      "speaker": "GLOUCESTER",
+      "text": "What, is he dead?"
+    },
+    {
+      "number": 221,
+      "speaker": "EDGAR",
+      "text": "Sit you down, father; rest you"
+    },
+    {
+      "number": 222,
+      "speaker": "EDGAR",
+      "text": "Let’s see these pockets: the letters that he speaks of"
+    },
+    {
+      "number": 223,
+      "speaker": "EDGAR",
+      "text": "May be my friends. He’s dead; I am only sorry"
+    },
+    {
+      "number": 224,
+      "speaker": "EDGAR",
+      "text": "He had no other death’s-man. Let us see:"
+    },
+    {
+      "number": 225,
+      "speaker": "EDGAR",
+      "text": "Leave, gentle wax; and, manners, blame us not:"
+    },
+    {
+      "number": 226,
+      "speaker": "EDGAR",
+      "text": "To know our enemies’ minds, we’ld rip their hearts;"
+    },
+    {
+      "number": 227,
+      "speaker": "EDGAR",
+      "text": "Their papers, is more lawful."
+    },
+    {
+      "number": 228,
+      "speaker": "GLOUCESTER",
+      "text": "The king is mad: how stiff is my vile sense,"
+    },
+    {
+      "number": 229,
+      "speaker": "GLOUCESTER",
+      "text": "That I stand up, and have ingenious feeling"
+    },
+    {
+      "number": 230,
+      "speaker": "GLOUCESTER",
+      "text": "Of my huge sorrows! Better I were distract:"
+    },
+    {
+      "number": 231,
+      "speaker": "GLOUCESTER",
+      "text": "So should my thoughts be sever’d from my griefs,"
+    },
+    {
+      "number": 232,
+      "speaker": "GLOUCESTER",
+      "text": "And woes by wrong imaginations lose"
+    },
+    {
+      "number": 233,
+      "speaker": "GLOUCESTER",
+      "text": "The knowledge of themselves."
+    },
+    {
+      "number": 233,
+      "speaker": "EDGAR",
+      "text": "Give me your hand:"
+    },
+    {
+      "number": 234,
+      "speaker": "EDGAR",
+      "text": "Far off, methinks, I hear the beaten drum:"
+    },
+    {
+      "number": 235,
+      "speaker": "EDGAR",
+      "text": "Come, father, I’ll bestow you with a friend."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Gloucester, and Edgar dressed like a peasant."
+    },
+    {
+      "after_line": 35,
+      "text": "Kneeling."
+    },
+    {
+      "after_line": 82,
+      "text": "Enter King Lear, fantastically dressed with wild flowers."
+    },
+    {
+      "after_line": 82,
+      "text": "The safer sense will ne’er accommodate His master thus."
+    },
+    {
+      "after_line": 121,
+      "text": "There’s hell, there’s darkness, there’s the sulphurous pit, Burning, scalding, stench, consumption; fie, fie, fie! pah, pah! Give me an ounce of civet, good apothecary, to sweeten my imagination: there’s money for thee."
+    },
+    {
+      "after_line": 142,
+      "text": "Thou rascal beadle, hold thy bloody hand! Why dost thou lash that whore? Strip thine own back; Thou hotly lust’st to use her in that kind For which thou whipp’st her. The usurer hangs the cozener. Through tatter’d clothes small vices do appear; Robes and furr’d gowns hide all. Plate sin with gold, And the strong lance of justice hurtless breaks: Arm it in rags, a pygmy’s straw does pierce it. None does offend, none, I say, none; I’ll able ’em: Take that of me, my friend, who have the power To seal the accuser’s lips. Get thee glass eyes; And like a scurvy politician, seem To see the things thou dost not. Now, now, now, now: Pull off my boots: harder, harder: so."
+    },
+    {
+      "after_line": 155,
+      "text": "Enter a Gentleman, with Attendants."
+    },
+    {
+      "after_line": 171,
+      "text": "Exit running; Attendants follow."
+    },
+    {
+      "after_line": 184,
+      "text": "Exit Gentleman."
+    },
+    {
+      "after_line": 194,
+      "text": "Enter Oswald."
+    },
+    {
+      "after_line": 217,
+      "text": "Dies."
+    },
+    {
+      "after_line": 227,
+      "text": "Reads. “Let our reciprocal vows be remembered. You have many opportunities to cut him off: if your will want not, time and place will be fruitfully offered. There is nothing done, if he return the conqueror: then am I the prisoner, and his bed my goal; from the loathed warmth whereof deliver me, and supply the place for your labour."
+    },
+    {
+      "after_line": 227,
+      "text": "O undistinguish’d space of woman’s will! A plot upon her virtuous husband’s life; And the exchange my brother! Here, in the sands, Thee I’ll rake up, the post unsanctified Of murderous lechers: and in the mature time With this ungracious paper strike the sight Of the death practised duke: for him ’tis well That of thy death and business I can tell."
+    },
+    {
+      "after_line": 233,
+      "text": "Drum afar off."
+    },
+    {
+      "after_line": 235,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act4_scene6_gloss1",
+      "line": 1,
+      "phrase": "up the hill",
+      "definition": "Gloucester believes he's climbing toward the cliff — Edgar is leading him on level ground, reshaping reality by voice"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss2",
+      "line": 13,
+      "phrase": "dizzy",
+      "definition": "vertiginous — Edgar's described cliff makes even the reader dizzy"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss3",
+      "line": 14,
+      "phrase": "choughs",
+      "definition": "red-legged Cornish crows — the cliff-birds Edgar describes"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss4",
+      "line": 14,
+      "phrase": "midway air",
+      "definition": "halfway between top and bottom — the birds look small as beetles"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss5",
+      "line": 15,
+      "phrase": "gross as beetles",
+      "definition": "as big as beetles — the birds diminished by distance"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss6",
+      "line": 16,
+      "phrase": "samphire",
+      "definition": "a cliff-growing herb (Crithmum maritimum) — collected by men dangling on ropes, the figure makes vertigo"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss7",
+      "line": 16,
+      "phrase": "dreadful trade",
+      "definition": "the terrifying occupation of the samphire-gatherer"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss8",
+      "line": 19,
+      "phrase": "yon tall anchoring bark",
+      "definition": "that tall ship at anchor, now looking small"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss9",
+      "line": 20,
+      "phrase": "cock",
+      "definition": "cock-boat — small boat, reduced to a speck by distance"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss10",
+      "line": 22,
+      "phrase": "unnumber’d idle pebbles",
+      "definition": "countless restless stones — of the beach"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss11",
+      "line": 23,
+      "phrase": "I’ll look no more",
+      "definition": "Edgar breaks off his cliff-description, feigning vertigo"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss12",
+      "line": 37,
+      "phrase": "great affliction",
+      "definition": "Gloucester's grief — justification of his intended suicide"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss13",
+      "line": 39,
+      "phrase": "opposeless wills",
+      "definition": "the unopposable will (of the gods)"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss14",
+      "line": 40,
+      "phrase": "snuff",
+      "definition": "the stub of a candle — Gloucester's life reduced to this"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss15",
+      "line": 185,
+      "phrase": "worser spirit",
+      "definition": "evil impulse"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss18",
+      "line": 54,
+      "phrase": "ten masts at each make not the altitude",
+      "definition": "ten ships' masts stacked would not reach the height — Edgar's lie reinforced"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss19",
+      "line": 50,
+      "phrase": "gossamer",
+      "definition": "fine spider-silk — which normally floats down; Gloucester should have shattered by now"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss20",
+      "line": 56,
+      "phrase": "Thy life’s a miracle",
+      "definition": "you still have your life — Edgar's therapeutic theater"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss21",
+      "line": 58,
+      "phrase": "summit",
+      "definition": "cliff-top — Gloucester is persuaded he fell from there"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss22",
+      "line": 58,
+      "phrase": "bourn",
+      "definition": "edge; boundary (of the cliff)"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss24",
+      "line": 76,
+      "phrase": "henceforth I’ll bear / Affliction",
+      "definition": "Gloucester's new stoicism — Edgar has walked him through suicide and out the other side"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss25",
+      "line": 73,
+      "phrase": "Some fiend",
+      "definition": "Gloucester thinks a demon led him to the cliff — Edgar lets this stand"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss26",
+      "line": 74,
+      "phrase": "the clearest gods",
+      "definition": "the most glorious / just divinities — Edgar's retroactive theology"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss27",
+      "line": 83,
+      "phrase": "side-piercing sight",
+      "definition": "heart-piercing view — Edgar on seeing Lear enter in flower-crown"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss28",
+      "line": 82,
+      "phrase": "king himself",
+      "definition": "Lear enters mad, crowned with weeds"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss29",
+      "line": 82,
+      "phrase": "coining",
+      "definition": "minting coins — Lear's royal prerogative even in madness"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss30",
+      "line": 84,
+      "phrase": "press-money",
+      "definition": "advance pay given to press-ganged soldiers"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss31",
+      "line": 84,
+      "phrase": "Nature’s above art in that respect",
+      "definition": "Lear's line — nature exceeds art"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss32",
+      "line": 88,
+      "phrase": "bills",
+      "definition": "halberds — pole weapons"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss34",
+      "line": 88,
+      "phrase": "clout",
+      "definition": "cloth target"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss35",
+      "line": 89,
+      "phrase": "hewgh",
+      "definition": "whizzing sound of an arrow — Lear sound-effects his own bowshot"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss39",
+      "line": 91,
+      "phrase": "Goneril, with a white beard!",
+      "definition": "Lear sees Gloucester and mis-recognizes him as a white-bearded Goneril — time and gender collapse in madness"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss40",
+      "line": 91,
+      "phrase": "They flattered me like a dog",
+      "definition": "Lear's bitter recognition of earlier flattery"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss41",
+      "line": 101,
+      "phrase": "Ay, every inch a king",
+      "definition": "Lear reasserting his majesty, even stripped of it"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss42",
+      "line": 104,
+      "phrase": "adultery",
+      "definition": "Lear's launched tirade against sexuality itself"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss43",
+      "line": 104,
+      "phrase": "Die for adultery!",
+      "definition": "Lear's sentence, instantly revoked — 'No: / The wren goes to't...'"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss44",
+      "line": 105,
+      "phrase": "wren",
+      "definition": "the tiniest bird — Lear's emblem for universal lust"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss45",
+      "line": 105,
+      "phrase": "small gilded fly",
+      "definition": "the shimmering insect — lusty in Lear's estimation"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss46",
+      "line": 107,
+      "phrase": "let copulation thrive",
+      "definition": "Lear's raging sanction of sexual license — dark irony"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss47",
+      "line": 117,
+      "phrase": "Down from the waist they are Centaurs",
+      "definition": "Lear: women are divine above, beast below — Ovidian/satirical misogyny at its peak"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss48",
+      "line": 121,
+      "phrase": "Give me an ounce of civet",
+      "definition": "Lear wants perfume to clear his imagination of female genitalia"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss49",
+      "line": 121,
+      "phrase": "apothecary",
+      "definition": "druggist"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss50",
+      "line": 121,
+      "phrase": "Let me wipe it first",
+      "definition": "Lear wipes Gloucester's hand, not noticing the blindness — profound pathos"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss51",
+      "line": 124,
+      "phrase": "squiny",
+      "definition": "squint at; look askance"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss52",
+      "line": 126,
+      "phrase": "mark but the penning of it",
+      "definition": "Lear asks Gloucester to read his non-existent challenge"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss53",
+      "line": 127,
+      "phrase": "Were all the letters suns",
+      "definition": "even if letters blazed like suns — Gloucester cannot see"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss54",
+      "line": 135,
+      "phrase": "A man may see how this world goes with no eyes",
+      "definition": "Lear's paradox of moral sight after physical blindness"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss55",
+      "line": 150,
+      "phrase": "This great stage of fools",
+      "definition": "Lear's most famous theatrum mundi line — the world as a stage populated by fools"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss56",
+      "line": 149,
+      "phrase": "When we are born, we cry that we are come / To this great stage of fools",
+      "definition": "Lear's full statement — birth itself is grief; the world is a theater of folly"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss57",
+      "line": 144,
+      "phrase": "I know thee well enough",
+      "definition": "Lear finally recognizing Gloucester — by speech, not sight"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss58",
+      "line": 142,
+      "phrase": "reason in madness",
+      "definition": "Edgar's aside — 'O, matter and impertinency mix'd! / Reason in madness!' — the play's key formulation of Lear's insight through derangement"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss59",
+      "line": 204,
+      "phrase": "Pass",
+      "definition": "live; pass through life"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss62",
+      "line": 4,
+      "phrase": "horrible steep",
+      "definition": "terrifyingly sheer"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss63",
+      "line": 4,
+      "phrase": "the sea",
+      "definition": "the sound Edgar pretends Gloucester hears below"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss70",
+      "line": 82,
+      "phrase": "coining",
+      "definition": "minting; royalty's privilege"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss71",
+      "line": 84,
+      "phrase": "press-money",
+      "definition": "advance pay to conscripts"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss74",
+      "line": 101,
+      "phrase": "inch",
+      "definition": "part; scrap"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss76",
+      "line": 105,
+      "phrase": "small gilded fly",
+      "definition": "shimmering insect — Lear's emblem of universal lust"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss77",
+      "line": 116,
+      "phrase": "riotous appetite",
+      "definition": "wild lust"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss78",
+      "line": 121,
+      "phrase": "civet",
+      "definition": "perfume from the civet-cat — Lear wanting to mask imagined sexual smell"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss79",
+      "line": 124,
+      "phrase": "squiny",
+      "definition": "squint"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss80",
+      "line": 130,
+      "phrase": "case of eyes",
+      "definition": "pair of eyes — Lear's anatomical figure"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss81",
+      "line": 111,
+      "phrase": "simpering dame",
+      "definition": "coy woman — Lear's misogynist rant"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss82",
+      "line": 142,
+      "phrase": "matter and impertinency",
+      "definition": "substance and nonsense mixed — Edgar's characterisation"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss84",
+      "line": 204,
+      "phrase": "pass",
+      "definition": "go on; live"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss86",
+      "line": 50,
+      "phrase": "Feathers",
+      "definition": "light things — Edgar's lie that Gloucester's fall was cushioned"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss87",
+      "line": 50,
+      "phrase": "gossamer",
+      "definition": "cobweb"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss88",
+      "line": 54,
+      "phrase": "Ten masts at each make not the altitude",
+      "definition": "ten ships' masts stacked wouldn't reach the cliff's height"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss89",
+      "line": 58,
+      "phrase": "bourn",
+      "definition": "boundary; cliff-edge"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss90",
+      "line": 64,
+      "phrase": "beguile",
+      "definition": "cheat"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss91",
+      "line": 84,
+      "phrase": "press-money",
+      "definition": "recruiting pay"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss93",
+      "line": 88,
+      "phrase": "bird",
+      "definition": "Lear's pun-memory — the archer's target-bird"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss94",
+      "line": 100,
+      "phrase": "trick of that voice",
+      "definition": "mannerism — Lear recognising Gloucester by voice"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss95",
+      "line": 103,
+      "phrase": "What was thy cause?",
+      "definition": "what offense have you committed? — Lear's mock-court on the heath"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss96",
+      "line": 115,
+      "phrase": "fitchew",
+      "definition": "polecat; prostitute — Lear's misogynist rant turning zoological"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss97",
+      "line": 115,
+      "phrase": "soiled horse",
+      "definition": "pastured and ready-to-bolt horse — Lear's sexual figure"
+    },
+    {
+      "id": "king_lear_act4_scene6_gloss98",
+      "line": 136,
+      "phrase": "Look with thine ears",
+      "definition": "listen — Lear's synaesthetic command"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act4_scene6_ann1",
+      "line_start": 1,
+      "line_end": 80,
+      "citation_display": "King Lear 4.6.1–80",
+      "category": "structural",
+      "title": "The non-existent cliff — Edgar's therapeutic theater",
+      "body": "Edgar leads blind Gloucester to what Gloucester believes is the edge of the Dover cliffs, describes a vertiginous view that pure language makes real, and stands by while Gloucester 'falls' onto flat ground. This is Shakespeare's most sustained demonstration of theater's power to construct reality through verbal description alone. The cliff exists only in Edgar's speech. The ekphrasis — choughs 'midway air,' samphire-gatherers 'dreadful trade,' fishermen 'like mice,' the anchored ship 'diminish'd to her cock' — is vertiginous prose-verse, designed to make the reader's head spin alongside Gloucester's. After Gloucester falls, Edgar becomes a different speaker, 'of the bottom,' convincing Gloucester that a fiend led him and that the gods have preserved him. The scene is Edgar's therapeutic lie: he manages his father's despair by staging a survival miracle. That Shakespeare grants this theater its healing work (Gloucester's 'henceforth I'll bear / Affliction till it do cry out itself / Enough') is a quiet endorsement of theater as consolation — the opposite of Hamlet's bitter view of performance.",
+      "sources": [
+        "Jonathan Bate, The Genius of Shakespeare (1997)",
+        "Simon Palfrey, Doing Shakespeare (2005)"
+      ]
+    },
+    {
+      "id": "king_lear_act4_scene6_ann2",
+      "line_start": 210,
+      "line_end": 220,
+      "citation_display": "King Lear 4.6.210–220",
+      "category": "thematic",
+      "title": "'Great stage of fools' — the theatrum mundi tradition",
+      "body": "Lear's 'When we are born, we cry that we are come / To this great stage of fools' enters the theatrum mundi tradition at its most pessimistic. The metaphor of the world as a stage has a long history — Plato, Epictetus, Erasmus (whose 'The Praise of Folly' Shakespeare knew), Petronius ('mundus universus exercet histrionicam,' the whole world plays the actor). Shakespeare himself returns to it constantly ('All the world's a stage' in As You Like It; 'We are such stuff as dreams are made on' in The Tempest). Lear's contribution is the quality of the actors: not all human beings, just fools. Birth itself is figured as an entry into absurdity. This is pitch-dark — Lear in full disillusion — but it is also philosophically serious. The play ends with Edgar (or Albany) saying 'Speak what we feel, not what we ought to say,' which keeps the theatrical frame ('say') while endorsing sincerity over performance within it. The world is still a stage; only the register of the performance is negotiable.",
+      "sources": [
+        "Frances Yates, Theatre of the World (1969)",
+        "Stephen Greenblatt, 'Shakespeare and the Ethics of Authority' (2010)"
+      ]
+    },
+    {
+      "id": "king_lear_act4_scene6_ann3",
+      "line_start": 220,
+      "line_end": 235,
+      "citation_display": "King Lear 4.6.220–235",
+      "category": "close_reading",
+      "title": "'Reason in madness' — Edgar's formulation of the play's central paradox",
+      "body": "Edgar's aside during Lear's mad coherence — 'O, matter and impertinency mix'd! / Reason in madness!' — is the play's key formulation of its central paradox. Lear on the heath and at Dover has been speaking wisdom through derangement. 'Matter' (substance, real content) is mixed with 'impertinency' (off-topic ravings); the signal rides on noise. Edgar, who has spent much of the play playing at madness as Poor Tom, is the right character to recognise this. 'Reason in madness' will become a touchstone phrase in the play's critical tradition — E.M. Forster quoted it; Kurosawa's Ran takes its title from the Japanese word for chaos or turmoil that shares semantic territory with 'reason in madness.' The phrase names Shakespeare's deepest gamble in the play: that truth is accessible to the broken in ways the composed cannot reach.",
+      "sources": [
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)",
+        "E.M. Forster, Aspects of the Novel (1927)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act4_scene6_q1",
+      "kind": "structural",
+      "prompt": "What does Edgar accomplish by staging the non-existent cliff at Dover?",
+      "options": [
+        "He humiliates Gloucester",
+        "He uses pure verbal description to construct a reality Gloucester can 'fall' from — theater's power to heal by making a survival miracle out of a flat field",
+        "He tests whether Gloucester is faking blindness",
+        "He attempts to kill Gloucester"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 1,
+      "anchor_line_end": 80
+    },
+    {
+      "id": "king_lear_act4_scene6_q2",
+      "kind": "theme",
+      "prompt": "Lear's 'great stage of fools' belongs to which long tradition?",
+      "options": [
+        "The medieval morality play",
+        "Theatrum mundi — 'the world as theater,' a tradition running from Plato through Erasmus and Petronius to Shakespeare's own 'All the world's a stage'",
+        "Courtly romance",
+        "Biblical exegesis"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 210,
+      "anchor_line_end": 220
+    },
+    {
+      "id": "king_lear_act4_scene6_q3",
+      "kind": "close_reading",
+      "prompt": "Edgar's 'reason in madness' formulation names —",
+      "options": [
+        "Lear's hypocrisy",
+        "The play's central paradox — that truth is accessible to the broken in ways the composed cannot reach; signal riding on noise",
+        "A medical diagnosis",
+        "Edgar's own confusion"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 220,
+      "anchor_line_end": 225
+    },
+    {
+      "id": "king_lear_act4_scene6_q4",
+      "kind": "inference",
+      "prompt": "The extensive verbal description of the Dover cliff (choughs, samphire, fishermen) serves what purpose?",
+      "options": [
+        "Padding the scene",
+        "Constructing reality through language alone — the cliff exists only in Edgar's speech; the ekphrasis is designed to make reader and Gloucester equally vertiginous",
+        "Geographic accuracy",
+        "Showing off Shakespeare's research"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 11,
+      "anchor_line_end": 25
+    }
+  ]
+}

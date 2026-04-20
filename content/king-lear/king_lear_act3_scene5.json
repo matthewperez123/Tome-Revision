@@ -1,0 +1,231 @@
+{
+  "section_id": "king_lear_act3_scene5",
+  "work_id": "king-lear",
+  "sequence": 14,
+  "act": 3,
+  "scene": 5,
+  "kind": "scene",
+  "scene_title": "Gloucester's castle",
+  "line_count": 19,
+  "word_count": 191,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CORNWALL",
+      "text": "I will have my revenge ere I depart his house."
+    },
+    {
+      "number": 2,
+      "speaker": "EDMUND",
+      "text": "How, my lord, I may be censured, that nature thus gives way"
+    },
+    {
+      "number": 3,
+      "speaker": "EDMUND",
+      "text": "to loyalty, something fears me to think of."
+    },
+    {
+      "number": 4,
+      "speaker": "CORNWALL",
+      "text": "I now perceive, it was not altogether your brother’s evil disposition made"
+    },
+    {
+      "number": 5,
+      "speaker": "CORNWALL",
+      "text": "him seek his death; but a provoking merit, set a-work by a"
+    },
+    {
+      "number": 6,
+      "speaker": "CORNWALL",
+      "text": "reprovable badness in himself."
+    },
+    {
+      "number": 7,
+      "speaker": "EDMUND",
+      "text": "How malicious is my fortune, that I must repent to be just!"
+    },
+    {
+      "number": 8,
+      "speaker": "EDMUND",
+      "text": "This is the letter he spoke of, which approves him an intelligent"
+    },
+    {
+      "number": 9,
+      "speaker": "EDMUND",
+      "text": "party to the advantages of France: O heavens! that this treason were"
+    },
+    {
+      "number": 10,
+      "speaker": "EDMUND",
+      "text": "not, or not I the detector!"
+    },
+    {
+      "number": 10,
+      "speaker": "CORNWALL",
+      "text": "Go with me to the duchess."
+    },
+    {
+      "number": 11,
+      "speaker": "EDMUND",
+      "text": "If the matter of this paper be certain, you have mighty business in hand."
+    },
+    {
+      "number": 12,
+      "speaker": "CORNWALL",
+      "text": "True or false, it hath made thee earl of Gloucester. Seek out"
+    },
+    {
+      "number": 13,
+      "speaker": "CORNWALL",
+      "text": "where thy father is, that he may be ready for our apprehension."
+    },
+    {
+      "number": 14,
+      "speaker": "EDMUND",
+      "text": "If I find him comforting the king, it will stuff his suspicion"
+    },
+    {
+      "number": 15,
+      "speaker": "EDMUND",
+      "text": "more fully.—I will persevere in my course of loyalty, though the conflict"
+    },
+    {
+      "number": 16,
+      "speaker": "EDMUND",
+      "text": "be sore between that and my blood."
+    },
+    {
+      "number": 17,
+      "speaker": "CORNWALL",
+      "text": "I will lay trust upon thee; and thou shalt find a dearer"
+    },
+    {
+      "number": 18,
+      "speaker": "CORNWALL",
+      "text": "father in my love."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Cornwall and Edmund."
+    },
+    {
+      "after_line": 16,
+      "text": "Aside."
+    },
+    {
+      "after_line": 18,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act3_scene5_gloss1",
+      "line": 5,
+      "phrase": "provoking merit",
+      "definition": "provoking cause — Cornwall finds Gloucester's 'treachery' cause enough"
+    },
+    {
+      "id": "king_lear_act3_scene5_gloss2",
+      "line": 6,
+      "phrase": "reprovable badness in himself",
+      "definition": "reprehensible wickedness in himself (Edgar)"
+    },
+    {
+      "id": "king_lear_act3_scene5_gloss3",
+      "line": 8,
+      "phrase": "approves him",
+      "definition": "proves him"
+    },
+    {
+      "id": "king_lear_act3_scene5_gloss4",
+      "line": 16,
+      "phrase": "blood",
+      "definition": "relationship"
+    },
+    {
+      "id": "king_lear_act3_scene5_gloss5",
+      "line": 2,
+      "phrase": "nature thus gives way to loyalty",
+      "definition": "Edmund's formula — family feeling surrendered to political allegiance"
+    },
+    {
+      "id": "king_lear_act3_scene5_gloss6",
+      "line": 8,
+      "phrase": "approves him",
+      "definition": "confirms him"
+    },
+    {
+      "id": "king_lear_act3_scene5_gloss7",
+      "line": 8,
+      "phrase": "an intelligent party",
+      "definition": "a conscious agent; an informed accomplice"
+    },
+    {
+      "id": "king_lear_act3_scene5_gloss9",
+      "line": 12,
+      "phrase": "True or false",
+      "definition": "whatever the fact of the matter"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act3_scene5_ann1",
+      "line_start": 1,
+      "line_end": 19,
+      "citation_display": "King Lear 3.5.1–19",
+      "category": "close_reading",
+      "title": "Edmund the informer — the play's most efficient villainy",
+      "body": "Edmund betrays Gloucester to Cornwall in nineteen lines. 'This is the letter he spoke of, which approves him an intelligent party to the advantages of France.' Edmund's aside — 'I will persevere in my course of loyalty, though the conflict be sore between that and my blood' — is pure pretense; there is no conflict. Shakespeare lets Edmund's villainy be self-aware without qualm. The play's most chilling figures are not the raging sisters but this calm tactician who has studied how to convert kinship into profit. Edmund is modern in the worst sense: he does not hate his father; he just has a use for his father's blindness.",
+      "sources": [
+        "Jonathan Dollimore, Radical Tragedy (1984)"
+      ]
+    },
+    {
+      "id": "king_lear_act3_scene5_ann2",
+      "line_start": 1,
+      "line_end": 19,
+      "citation_display": "King Lear 3.5.1–19",
+      "category": "structural",
+      "title": "Nineteen lines that seal Gloucester's blinding",
+      "body": "This scene is nineteen lines long and contains the decisive act of denunciation. Edmund hands Cornwall the letter that Gloucester's 'intelligence' reveals; Cornwall promises Edmund the title Earl of Gloucester in return. The compression matters — the play's greatest atrocity (3.7) is set up in fewer than twenty lines of scene-time. Shakespeare is showing how fast betrayal can unfold when the conditions are right: a son ready to sell a father, a duke ready to pay the price, and a document as evidence. Nothing more is required.",
+      "sources": [
+        "Jonathan Bate, Soul of the Age (2008)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act3_scene5_q1",
+      "kind": "inference",
+      "prompt": "How does Edmund's betrayal of Gloucester differ in character from the sisters' cruelty to Lear?",
+      "options": [
+        "It doesn't differ",
+        "Edmund is calm, tactical, and profit-driven — not raging like the sisters; the play's most modern villainy is affective indifference, not hatred",
+        "Edmund hates Gloucester more than the sisters hate Lear",
+        "Edmund is acting under compulsion"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 19
+    },
+    {
+      "id": "king_lear_act3_scene5_q2",
+      "kind": "structural",
+      "prompt": "Why is 3.5 effective at nineteen lines?",
+      "options": [
+        "It is incomplete",
+        "Its compression shows how fast betrayal unfolds when conditions align — a son ready to sell his father, a duke ready to pay, a document as evidence; nothing else required",
+        "Shakespeare ran out of time",
+        "It was cut in Q1"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 19
+    }
+  ]
+}

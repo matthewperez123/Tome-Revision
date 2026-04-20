@@ -1,0 +1,445 @@
+{
+  "section_id": "romeo_and_juliet_act2_scene1",
+  "work_id": "romeo-and-juliet",
+  "sequence": 8,
+  "act": 2,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "A lane by the wall of Capulet's orchard",
+  "line_count": 45,
+  "word_count": 350,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "ROMEO",
+      "text": "Can I go forward when my heart is here?"
+    },
+    {
+      "number": 2,
+      "speaker": "ROMEO",
+      "text": "Turn back, dull earth, and find thy centre out. He climbs the wall, and leaps down within it."
+    },
+    {
+      "number": 3,
+      "speaker": "BENVOLIO",
+      "text": "Romeo! my cousin Romeo!"
+    },
+    {
+      "number": 3,
+      "speaker": "MERCUTIO",
+      "text": "He is wise;"
+    },
+    {
+      "number": 4,
+      "speaker": "MERCUTIO",
+      "text": "And, on my lie, hath stol’n him home to bed."
+    },
+    {
+      "number": 5,
+      "speaker": "BENVOLIO",
+      "text": "He ran this way, and leap’d this orchard wall:"
+    },
+    {
+      "number": 6,
+      "speaker": "BENVOLIO",
+      "text": "Call, good Mercutio."
+    },
+    {
+      "number": 6,
+      "speaker": "MERCUTIO",
+      "text": "Nay, I’ll conjure too."
+    },
+    {
+      "number": 7,
+      "speaker": "MERCUTIO",
+      "text": "Romeo! humours! madman! passion! lover!"
+    },
+    {
+      "number": 8,
+      "speaker": "MERCUTIO",
+      "text": "Appear thou in the likeness of a sigh:"
+    },
+    {
+      "number": 9,
+      "speaker": "MERCUTIO",
+      "text": "Speak but one rhyme, and I am satisfied;"
+    },
+    {
+      "number": 10,
+      "speaker": "MERCUTIO",
+      "text": "Cry but “Ay me!” pronounce but “love” and “dove;”"
+    },
+    {
+      "number": 11,
+      "speaker": "MERCUTIO",
+      "text": "Speak to my gossip Venus one fair word,"
+    },
+    {
+      "number": 12,
+      "speaker": "MERCUTIO",
+      "text": "One nick-name for her purblind son and heir,"
+    },
+    {
+      "number": 13,
+      "speaker": "MERCUTIO",
+      "text": "Young Adam Cupid, he that shot so trim,"
+    },
+    {
+      "number": 14,
+      "speaker": "MERCUTIO",
+      "text": "When King Cophetua loved the beggar-maid!"
+    },
+    {
+      "number": 15,
+      "speaker": "MERCUTIO",
+      "text": "He heareth not, he stirreth not, he moveth not;"
+    },
+    {
+      "number": 16,
+      "speaker": "MERCUTIO",
+      "text": "The ape is dead, and I must conjure him."
+    },
+    {
+      "number": 17,
+      "speaker": "MERCUTIO",
+      "text": "I conjure thee by Rosaline’s bright eyes,"
+    },
+    {
+      "number": 18,
+      "speaker": "MERCUTIO",
+      "text": "By her high forehead and her scarlet lip,"
+    },
+    {
+      "number": 19,
+      "speaker": "MERCUTIO",
+      "text": "By her fine foot, straight leg and quivering thigh"
+    },
+    {
+      "number": 20,
+      "speaker": "MERCUTIO",
+      "text": "And the demesnes that there adjacent lie,"
+    },
+    {
+      "number": 21,
+      "speaker": "MERCUTIO",
+      "text": "That in thy likeness thou appear to us!"
+    },
+    {
+      "number": 22,
+      "speaker": "BENVOLIO",
+      "text": "And if he hear thee, thou wilt anger him."
+    },
+    {
+      "number": 23,
+      "speaker": "MERCUTIO",
+      "text": "This cannot anger him: ’twould anger him"
+    },
+    {
+      "number": 24,
+      "speaker": "MERCUTIO",
+      "text": "To raise a spirit in his mistress’ circle"
+    },
+    {
+      "number": 25,
+      "speaker": "MERCUTIO",
+      "text": "Of some strange nature, letting it there stand"
+    },
+    {
+      "number": 26,
+      "speaker": "MERCUTIO",
+      "text": "Till she had laid it and conjured it down;"
+    },
+    {
+      "number": 27,
+      "speaker": "MERCUTIO",
+      "text": "That were some spite: my invocation"
+    },
+    {
+      "number": 28,
+      "speaker": "MERCUTIO",
+      "text": "Is fair and honest, and in his mistress’ name"
+    },
+    {
+      "number": 29,
+      "speaker": "MERCUTIO",
+      "text": "I conjure only but to raise up him."
+    },
+    {
+      "number": 30,
+      "speaker": "BENVOLIO",
+      "text": "Come, he hath hid himself among these trees,"
+    },
+    {
+      "number": 31,
+      "speaker": "BENVOLIO",
+      "text": "To be consorted with the humorous night:"
+    },
+    {
+      "number": 32,
+      "speaker": "BENVOLIO",
+      "text": "Blind is his love and best befits the dark."
+    },
+    {
+      "number": 33,
+      "speaker": "MERCUTIO",
+      "text": "If love be blind, love cannot hit the mark."
+    },
+    {
+      "number": 34,
+      "speaker": "MERCUTIO",
+      "text": "Now will he sit under a medlar tree,"
+    },
+    {
+      "number": 35,
+      "speaker": "MERCUTIO",
+      "text": "And wish his mistress were that kind of fruit"
+    },
+    {
+      "number": 36,
+      "speaker": "MERCUTIO",
+      "text": "As maids call medlars, when they laugh alone."
+    },
+    {
+      "number": 37,
+      "speaker": "MERCUTIO",
+      "text": "O, Romeo, that she were, O, that she were"
+    },
+    {
+      "number": 38,
+      "speaker": "MERCUTIO",
+      "text": "An open-arse, thou a pop’rin pear!"
+    },
+    {
+      "number": 39,
+      "speaker": "MERCUTIO",
+      "text": "Romeo, good night: I’ll to my truckle-bed;"
+    },
+    {
+      "number": 40,
+      "speaker": "MERCUTIO",
+      "text": "This field-bed is too cold for me to sleep:"
+    },
+    {
+      "number": 41,
+      "speaker": "MERCUTIO",
+      "text": "Come, shall we go?"
+    },
+    {
+      "number": 41,
+      "speaker": "BENVOLIO",
+      "text": "Go, then; for ’tis in vain"
+    },
+    {
+      "number": 42,
+      "speaker": "BENVOLIO",
+      "text": "To seek him here that means not to be found."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Romeo."
+    },
+    {
+      "after_line": 2,
+      "text": "Enter Benvolio and Mercutio."
+    },
+    {
+      "after_line": 42,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss1",
+      "line": 2,
+      "phrase": "dull earth",
+      "definition": "Romeo's own body, heavy with love"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss2",
+      "line": 2,
+      "phrase": "find thy centre out",
+      "definition": "find your gravitational center — Juliet"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss3",
+      "line": 16,
+      "phrase": "conjure",
+      "definition": "summon by charm; Mercutio mocks Romeo's love-trance as possession"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss4",
+      "line": 10,
+      "phrase": "Ay me",
+      "definition": "alas — stock lover's sigh"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss5",
+      "line": 10,
+      "phrase": "dove",
+      "definition": "symbol of love; a lover's conventional exclamation"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss6",
+      "line": 11,
+      "phrase": "gossip Venus",
+      "definition": "familiar Venus — the goddess of love, treated with casual disrespect"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss7",
+      "line": 12,
+      "phrase": "purblind son and heir",
+      "definition": "Cupid, Venus's half-blind boy"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss8",
+      "line": 13,
+      "phrase": "Young Adam Cupid",
+      "definition": "Cupid confused with Adam Bell, a legendary archer of ballad"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss9",
+      "line": 14,
+      "phrase": "King Cophetua",
+      "definition": "legendary king who fell in love with a beggar-maid — popular ballad subject"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss10",
+      "line": 14,
+      "phrase": "beggar-maid",
+      "definition": "the poor girl of the Cophetua ballad"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss11",
+      "line": 15,
+      "phrase": "stirreth",
+      "definition": "moves; shows himself"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss12",
+      "line": 16,
+      "phrase": "ape is dead",
+      "definition": "the trickster's gone silent — performer's slang for an unresponsive audience"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss13",
+      "line": 17,
+      "phrase": "Rosaline’s bright eyes",
+      "definition": "Mercutio doesn't know Romeo has moved on from Rosaline"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss14",
+      "line": 18,
+      "phrase": "scarlet lip",
+      "definition": "typically Petrarchan blazon — cataloguing the beloved's features"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss15",
+      "line": 19,
+      "phrase": "quivering thigh",
+      "definition": "bawdy — Mercutio pushes the Petrarchan blazon into obscenity"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss16",
+      "line": 20,
+      "phrase": "demesnes that there adjacent lie",
+      "definition": "the regions next to — i.e., the genitals; explicit sexual joke"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss17",
+      "line": 24,
+      "phrase": "raise a spirit in his mistress’ circle",
+      "definition": "double entendre — conjuring a spirit / sexual penetration"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss18",
+      "line": 27,
+      "phrase": "spite",
+      "definition": "malice; vexation"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss19",
+      "line": 31,
+      "phrase": "humorous night",
+      "definition": "damp, moody night — the humors of damp air"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss20",
+      "line": 34,
+      "phrase": "medlar tree",
+      "definition": "tree bearing a fruit whose eaten-ripe state was called 'open-arse' — bawdy joke"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss21",
+      "line": 38,
+      "phrase": "open-arse",
+      "definition": "vulgar folk-name for the medlar fruit — Mercutio pushes the joke to limit"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss22",
+      "line": 38,
+      "phrase": "pop’rin pear",
+      "definition": "a variety of pear whose shape suggested the male anatomy"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss23",
+      "line": 39,
+      "phrase": "truckle-bed",
+      "definition": "low wheeled bed that rolled under a higher one"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_gloss24",
+      "line": 40,
+      "phrase": "field-bed",
+      "definition": "camp-bed (here, the ground)"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act2_scene1_ann1",
+      "line_start": 13,
+      "line_end": 40,
+      "citation_display": "Romeo and Juliet 2.1.13–40",
+      "category": "close_reading",
+      "title": "Mercutio's mock conjuration — the Petrarchan blazon weaponised",
+      "body": "Mercutio's 'conjuration' of Romeo by cataloguing Rosaline's body is a deliberate parody of the Petrarchan blazon — the sonnet-convention of listing the beloved's features (bright eyes, red lips, white hand) as isolated ornaments. Mercutio pushes the form to obscenity ('quivering thigh / And the demesnes that there adjacent lie'), revealing what the blazon always half-concealed: the beloved's body reduced to a pornographic inventory. By degrading Petrarchism into filth here, Shakespeare clears the air for the balcony scene that follows — where Romeo and Juliet will speak to each other as subjects, not as catalogued objects. Mercutio's wit is the play's most relentless de-romanticising voice; its silence after 3.1 is a formal loss, not just the loss of a friend.",
+      "sources": [
+        "Nancy J. Vickers, 'Diana Described: Scattered Woman and Scattered Rhyme' (1981)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act2_scene1_q1",
+      "kind": "theme",
+      "prompt": "What does Mercutio's crude 'conjuration' of Rosaline parody?",
+      "options": [
+        "Catholic exorcism rites",
+        "The Petrarchan blazon — the sonnet-catalogue of a beloved's isolated features",
+        "A medical examination",
+        "A legal summons"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 18,
+      "anchor_line_end": 30
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene1_q2",
+      "kind": "inference",
+      "prompt": "Why does Mercutio not understand Romeo's true condition in this scene?",
+      "options": [
+        "He has not yet met Romeo",
+        "He still thinks Romeo pines for Rosaline — unaware of Juliet or the Capulet ball's outcome",
+        "He is drunk",
+        "He is deliberately ignoring him"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 1,
+      "anchor_line_end": 40
+    }
+  ]
+}

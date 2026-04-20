@@ -1,0 +1,441 @@
+{
+  "section_id": "richard_iii_act2_scene3",
+  "work_id": "richard-iii",
+  "sequence": 7,
+  "act": 2,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "London. A street",
+  "line_count": 49,
+  "word_count": 397,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "FIRST CITIZEN",
+      "text": "Neighbour, well met: whither away so fast?"
+    },
+    {
+      "number": 2,
+      "speaker": "SECOND CITIZEN",
+      "text": "I promise you, I scarcely know myself:"
+    },
+    {
+      "number": 3,
+      "speaker": "SECOND CITIZEN",
+      "text": "Hear you the news abroad?"
+    },
+    {
+      "number": 3,
+      "speaker": "FIRST CITIZEN",
+      "text": "Ay, that the king is dead."
+    },
+    {
+      "number": 4,
+      "speaker": "SECOND CITIZEN",
+      "text": "Bad news, by’r lady; seldom comes the better:"
+    },
+    {
+      "number": 5,
+      "speaker": "SECOND CITIZEN",
+      "text": "I fear, I fear ’twill prove a troublous world."
+    },
+    {
+      "number": 6,
+      "speaker": "THIRD CITIZEN",
+      "text": "Neighbours, God speed!"
+    },
+    {
+      "number": 6,
+      "speaker": "FIRST CITIZEN",
+      "text": "Give you good morrow, sir."
+    },
+    {
+      "number": 7,
+      "speaker": "THIRD CITIZEN",
+      "text": "Doth this news hold of good King Edward’s death?"
+    },
+    {
+      "number": 8,
+      "speaker": "SECOND CITIZEN",
+      "text": "Ay, sir, it is too true; God help the while!"
+    },
+    {
+      "number": 9,
+      "speaker": "THIRD CITIZEN",
+      "text": "Then, masters, look to see a troublous world."
+    },
+    {
+      "number": 10,
+      "speaker": "FIRST CITIZEN",
+      "text": "No, no; by God’s good grace his son shall reign."
+    },
+    {
+      "number": 11,
+      "speaker": "THIRD CITIZEN",
+      "text": "Woe to the land that’s govern’d by a child!"
+    },
+    {
+      "number": 12,
+      "speaker": "SECOND CITIZEN",
+      "text": "In him there is a hope of government,"
+    },
+    {
+      "number": 13,
+      "speaker": "SECOND CITIZEN",
+      "text": "That in his nonage council under him,"
+    },
+    {
+      "number": 14,
+      "speaker": "SECOND CITIZEN",
+      "text": "And in his full and ripen’d years himself,"
+    },
+    {
+      "number": 15,
+      "speaker": "SECOND CITIZEN",
+      "text": "No doubt, shall then and till then govern well."
+    },
+    {
+      "number": 16,
+      "speaker": "FIRST CITIZEN",
+      "text": "So stood the state when Henry the Sixth"
+    },
+    {
+      "number": 17,
+      "speaker": "FIRST CITIZEN",
+      "text": "Was crown’d in Paris but at nine months old."
+    },
+    {
+      "number": 18,
+      "speaker": "THIRD CITIZEN",
+      "text": "Stood the state so? No, no, good friends, God wot;"
+    },
+    {
+      "number": 19,
+      "speaker": "THIRD CITIZEN",
+      "text": "For then this land was famously enrich’d"
+    },
+    {
+      "number": 20,
+      "speaker": "THIRD CITIZEN",
+      "text": "With politic grave counsel; then the king"
+    },
+    {
+      "number": 21,
+      "speaker": "THIRD CITIZEN",
+      "text": "Had virtuous uncles to protect his grace."
+    },
+    {
+      "number": 22,
+      "speaker": "FIRST CITIZEN",
+      "text": "Why, so hath this, both by the father and mother."
+    },
+    {
+      "number": 23,
+      "speaker": "THIRD CITIZEN",
+      "text": "Better it were they all came by the father,"
+    },
+    {
+      "number": 24,
+      "speaker": "THIRD CITIZEN",
+      "text": "Or by the father there were none at all;"
+    },
+    {
+      "number": 25,
+      "speaker": "THIRD CITIZEN",
+      "text": "For emulation now, who shall be nearest,"
+    },
+    {
+      "number": 26,
+      "speaker": "THIRD CITIZEN",
+      "text": "Will touch us all too near, if God prevent not."
+    },
+    {
+      "number": 27,
+      "speaker": "THIRD CITIZEN",
+      "text": "O, full of danger is the Duke of Gloucester!"
+    },
+    {
+      "number": 28,
+      "speaker": "THIRD CITIZEN",
+      "text": "And the queen’s sons and brothers haught and proud:"
+    },
+    {
+      "number": 29,
+      "speaker": "THIRD CITIZEN",
+      "text": "And were they to be ruled, and not to rule,"
+    },
+    {
+      "number": 30,
+      "speaker": "THIRD CITIZEN",
+      "text": "This sickly land might solace as before."
+    },
+    {
+      "number": 31,
+      "speaker": "FIRST CITIZEN",
+      "text": "Come, come, we fear the worst; all shall be well."
+    },
+    {
+      "number": 32,
+      "speaker": "THIRD CITIZEN",
+      "text": "When clouds appear, wise men put on their cloaks;"
+    },
+    {
+      "number": 33,
+      "speaker": "THIRD CITIZEN",
+      "text": "When great leaves fall, the winter is at hand;"
+    },
+    {
+      "number": 34,
+      "speaker": "THIRD CITIZEN",
+      "text": "When the sun sets, who doth not look for night?"
+    },
+    {
+      "number": 35,
+      "speaker": "THIRD CITIZEN",
+      "text": "Untimely storms make men expect a dearth."
+    },
+    {
+      "number": 36,
+      "speaker": "THIRD CITIZEN",
+      "text": "All may be well; but, if God sort it so,"
+    },
+    {
+      "number": 37,
+      "speaker": "THIRD CITIZEN",
+      "text": "’Tis more than we deserve, or I expect."
+    },
+    {
+      "number": 38,
+      "speaker": "SECOND CITIZEN",
+      "text": "Truly, the souls of men are full of dread:"
+    },
+    {
+      "number": 39,
+      "speaker": "SECOND CITIZEN",
+      "text": "Ye cannot reason almost with a man"
+    },
+    {
+      "number": 40,
+      "speaker": "SECOND CITIZEN",
+      "text": "That looks not heavily and full of fear."
+    },
+    {
+      "number": 41,
+      "speaker": "THIRD CITIZEN",
+      "text": "Before the times of change, still is it so:"
+    },
+    {
+      "number": 42,
+      "speaker": "THIRD CITIZEN",
+      "text": "By a divine instinct men’s minds mistrust"
+    },
+    {
+      "number": 43,
+      "speaker": "THIRD CITIZEN",
+      "text": "Ensuing dangers; as, by proof, we see"
+    },
+    {
+      "number": 44,
+      "speaker": "THIRD CITIZEN",
+      "text": "The waters swell before a boisterous storm."
+    },
+    {
+      "number": 45,
+      "speaker": "THIRD CITIZEN",
+      "text": "But leave it all to God. Whither away?"
+    },
+    {
+      "number": 46,
+      "speaker": "SECOND CITIZEN",
+      "text": "Marry, we were sent for to the justices."
+    },
+    {
+      "number": 47,
+      "speaker": "THIRD CITIZEN",
+      "text": "And so was I: I’ll bear you company."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter two Citizens, meeting."
+    },
+    {
+      "after_line": 5,
+      "text": "Enter another Citizen."
+    },
+    {
+      "after_line": 47,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act2_scene3_gloss1",
+      "line": 4,
+      "phrase": "by’r lady",
+      "definition": "by Our Lady — a mild oath, invoking the Virgin Mary"
+    },
+    {
+      "id": "richard_iii_act2_scene3_gloss2",
+      "line": 4,
+      "phrase": "seldom comes the better",
+      "definition": "rarely does something better follow — proverbial"
+    },
+    {
+      "id": "richard_iii_act2_scene3_gloss3",
+      "line": 8,
+      "phrase": "God help the while",
+      "definition": "God help us in the meantime"
+    },
+    {
+      "id": "richard_iii_act2_scene3_gloss4",
+      "line": 11,
+      "phrase": "Woe to the land that’s govern’d by a child",
+      "definition": "Ecclesiastes 10:16, 'Woe to thee, O land, when thy king is a child'"
+    },
+    {
+      "id": "richard_iii_act2_scene3_gloss5",
+      "line": 13,
+      "phrase": "nonage",
+      "definition": "minority; period before legal adulthood"
+    },
+    {
+      "id": "richard_iii_act2_scene3_gloss6",
+      "line": 16,
+      "phrase": "Henry the Sixth / Was crown’d in Paris but at nine months old",
+      "definition": "Henry VI was crowned infant king of both England (1422) and France (1431) — the citizen's historical analogy"
+    },
+    {
+      "id": "richard_iii_act2_scene3_gloss7",
+      "line": 18,
+      "phrase": "God wot",
+      "definition": "God knows"
+    },
+    {
+      "id": "richard_iii_act2_scene3_gloss8",
+      "line": 20,
+      "phrase": "politic grave counsel",
+      "definition": "wise, weighty political advice"
+    },
+    {
+      "id": "richard_iii_act2_scene3_gloss9",
+      "line": 25,
+      "phrase": "emulation",
+      "definition": "rivalry, competitive ambition"
+    },
+    {
+      "id": "richard_iii_act2_scene3_gloss10",
+      "line": 28,
+      "phrase": "haught",
+      "definition": "haughty; proud"
+    },
+    {
+      "id": "richard_iii_act2_scene3_gloss11",
+      "line": 30,
+      "phrase": "sickly land might solace",
+      "definition": "ailing land might find comfort"
+    },
+    {
+      "id": "richard_iii_act2_scene3_gloss12",
+      "line": 32,
+      "phrase": "When clouds appear, wise men put on their cloaks",
+      "definition": "the Third Citizen's proverb-cluster; Shakespeare gives the common reader the playwright's own foreshadowing"
+    },
+    {
+      "id": "richard_iii_act2_scene3_gloss13",
+      "line": 35,
+      "phrase": "Untimely storms make men expect a dearth",
+      "definition": "storms out of season signal a coming famine — political weather-lore"
+    },
+    {
+      "id": "richard_iii_act2_scene3_gloss14",
+      "line": 44,
+      "phrase": "boisterous storm",
+      "definition": "violent storm"
+    },
+    {
+      "id": "richard_iii_act2_scene3_gloss15",
+      "line": 46,
+      "phrase": "sent for to the justices",
+      "definition": "summoned to the justices of the peace — routine citizen duty"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act2_scene3_ann1",
+      "line_start": 1,
+      "line_end": 46,
+      "citation_display": "Richard III 2.3.1–46",
+      "category": "structural",
+      "title": "The choric citizens: ordinary voices in an extraordinary play",
+      "body": "The three citizens' scene is Shakespeare's equivalent of the commoner-chorus he will deploy more elaborately in Julius Caesar (the Roman crowds) and Coriolanus. Here it is compact and haunted. The Third Citizen's cluster of weather-proverbs — \"When clouds appear, wise men put on their cloaks; / When great leaves fall, the winter is at hand; / When the sun sets, who doth not look for night?\" — operates as choric foreknowing, the ordinary man reading political weather as climate. The scene does critical structural work: it establishes that Richard's rise is not invisible to ordinary citizens. They see it coming. They do not know what to do. The play has just moved from Edward's death (2.1) to the wailing queens (2.2) to street-level fear, and in three short movements it has represented the whole polity grieving.",
+      "sources": [
+        "Phyllis Rackin, Stages of History (1990)",
+        "Andrew Gurr, Playgoing in Shakespeare's London (1987)"
+      ]
+    },
+    {
+      "id": "richard_iii_act2_scene3_ann2",
+      "line_start": 11,
+      "line_end": 30,
+      "citation_display": "Richard III 2.3.11–30",
+      "category": "historical",
+      "title": "\"Woe to the land that's govern'd by a child\"",
+      "body": "The First Citizen's quotation — \"Woe to the land that's govern'd by a child\" — is Ecclesiastes 10:16 in the Geneva Bible's phrasing (\"Woe be unto thee, O land, when thy King is a child\"). The citation is not incidental. Elizabethan political theology, especially in periods of anxious succession, treated the question of the underage king with great seriousness: Henry VI's own nine-month coronation is brought up here, and the Third Citizen's response (that Henry VI's reign had \"virtuous uncles\" to protect him, unlike Edward V's) names the exact political anxiety that Richard will exploit. The scene offers the audience not Richard's propaganda but its critical reception: the citizens understand why Richard could claim the protectorate and why that claim is dangerous. Shakespeare is letting his stage show his audience what his audience would have recognized as their own political literacy.",
+      "sources": [
+        "Geneva Bible (1560)",
+        "John Jowett, The Oxford Shakespeare: Richard III (2000)",
+        "Blair Worden, The Sound of Virtue: Philip Sidney's Arcadia (1996)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act2_scene3_q1",
+      "kind": "structural",
+      "prompt": "What role do the three citizens serve in the play's structure?",
+      "options": [
+        "Comic relief with no relation to the main plot",
+        "A choric function: ordinary voices reading political weather, establishing that Richard's rise is visible to citizens",
+        "A contrived obstacle to the main plot",
+        "A device to introduce historical backstory the audience has missed"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 1,
+      "anchor_line_end": 46
+    },
+    {
+      "id": "richard_iii_act2_scene3_q2",
+      "kind": "comprehension",
+      "prompt": "The First Citizen quotes \"Woe to the land that's govern'd by a child.\" What is the source?",
+      "options": [
+        "A proverb from Aesop's Fables",
+        "Ecclesiastes 10:16 — a biblical commonplace about the political dangers of an underage king",
+        "A line from Seneca's Hercules Furens",
+        "A Tudor-era statute on royal minority"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 11,
+      "anchor_line_end": 11
+    },
+    {
+      "id": "richard_iii_act2_scene3_q3",
+      "kind": "close_reading",
+      "prompt": "The Third Citizen's weather-proverbs (\"When clouds appear...\" etc.) function as what?",
+      "options": [
+        "A literal forecast of bad weather",
+        "Choric foreknowing: ordinary political intuition reading the court as climate",
+        "A parody of astrological prognostication",
+        "An unconnected digression"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 32,
+      "anchor_line_end": 37
+    }
+  ]
+}

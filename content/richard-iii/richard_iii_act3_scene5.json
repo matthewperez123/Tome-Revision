@@ -1,0 +1,754 @@
+{
+  "section_id": "richard_iii_act3_scene5",
+  "work_id": "richard-iii",
+  "sequence": 13,
+  "act": 3,
+  "scene": 5,
+  "kind": "scene",
+  "scene_title": "The Tower walls",
+  "line_count": 109,
+  "word_count": 820,
+  "est_read_minutes": 4,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "GLOUCESTER",
+      "text": "Come, cousin, canst thou quake, and change thy colour,"
+    },
+    {
+      "number": 2,
+      "speaker": "GLOUCESTER",
+      "text": "Murder thy breath in the middle of a word,"
+    },
+    {
+      "number": 3,
+      "speaker": "GLOUCESTER",
+      "text": "And then begin again, and stop again,"
+    },
+    {
+      "number": 4,
+      "speaker": "GLOUCESTER",
+      "text": "As if thou wert distraught and mad with terror?"
+    },
+    {
+      "number": 5,
+      "speaker": "BUCKINGHAM",
+      "text": "Tut, I can counterfeit the deep tragedian;"
+    },
+    {
+      "number": 6,
+      "speaker": "BUCKINGHAM",
+      "text": "Speak and look back, and pry on every side,"
+    },
+    {
+      "number": 7,
+      "speaker": "BUCKINGHAM",
+      "text": "Tremble and start at wagging of a straw,"
+    },
+    {
+      "number": 8,
+      "speaker": "BUCKINGHAM",
+      "text": "Intending deep suspicion: ghastly looks"
+    },
+    {
+      "number": 9,
+      "speaker": "BUCKINGHAM",
+      "text": "Are at my service, like enforced smiles;"
+    },
+    {
+      "number": 10,
+      "speaker": "BUCKINGHAM",
+      "text": "And both are ready in their offices,"
+    },
+    {
+      "number": 11,
+      "speaker": "BUCKINGHAM",
+      "text": "At any time, to grace my stratagems."
+    },
+    {
+      "number": 12,
+      "speaker": "BUCKINGHAM",
+      "text": "But what, is Catesby gone?"
+    },
+    {
+      "number": 13,
+      "speaker": "GLOUCESTER",
+      "text": "He is; and, see, he brings the mayor along."
+    },
+    {
+      "number": 14,
+      "speaker": "BUCKINGHAM",
+      "text": "Lord mayor—"
+    },
+    {
+      "number": 14,
+      "speaker": "GLOUCESTER",
+      "text": "Look to the drawbridge there!"
+    },
+    {
+      "number": 15,
+      "speaker": "BUCKINGHAM",
+      "text": "Hark! a drum."
+    },
+    {
+      "number": 15,
+      "speaker": "GLOUCESTER",
+      "text": "Catesby, o’erlook the walls."
+    },
+    {
+      "number": 16,
+      "speaker": "BUCKINGHAM",
+      "text": "Lord mayor, the reason we have sent—"
+    },
+    {
+      "number": 17,
+      "speaker": "GLOUCESTER",
+      "text": "Look back, defend thee, here are enemies."
+    },
+    {
+      "number": 18,
+      "speaker": "BUCKINGHAM",
+      "text": "God and our innocency defend and guard us!"
+    },
+    {
+      "number": 19,
+      "speaker": "GLOUCESTER",
+      "text": "Be patient, they are friends, Ratcliff and Lovel."
+    },
+    {
+      "number": 20,
+      "speaker": "LOVEL",
+      "text": "Here is the head of that ignoble traitor,"
+    },
+    {
+      "number": 21,
+      "speaker": "LOVEL",
+      "text": "The dangerous and unsuspected Hastings."
+    },
+    {
+      "number": 22,
+      "speaker": "GLOUCESTER",
+      "text": "So dear I loved the man, that I must weep."
+    },
+    {
+      "number": 23,
+      "speaker": "GLOUCESTER",
+      "text": "I took him for the plainest harmless creature"
+    },
+    {
+      "number": 24,
+      "speaker": "GLOUCESTER",
+      "text": "That breathed upon this earth a Christian;"
+    },
+    {
+      "number": 25,
+      "speaker": "GLOUCESTER",
+      "text": "Made him my book, wherein my soul recorded"
+    },
+    {
+      "number": 26,
+      "speaker": "GLOUCESTER",
+      "text": "The history of all her secret thoughts:"
+    },
+    {
+      "number": 27,
+      "speaker": "GLOUCESTER",
+      "text": "So smooth he daub’d his vice with show of virtue,"
+    },
+    {
+      "number": 28,
+      "speaker": "GLOUCESTER",
+      "text": "That, his apparent open guilt omitted,"
+    },
+    {
+      "number": 29,
+      "speaker": "GLOUCESTER",
+      "text": "I mean, his conversation with Shore’s wife,"
+    },
+    {
+      "number": 30,
+      "speaker": "GLOUCESTER",
+      "text": "He lived from all attainder of suspect."
+    },
+    {
+      "number": 31,
+      "speaker": "BUCKINGHAM",
+      "text": "Well, well, he was the covert’st shelter’d traitor"
+    },
+    {
+      "number": 32,
+      "speaker": "BUCKINGHAM",
+      "text": "That ever lived."
+    },
+    {
+      "number": 33,
+      "speaker": "BUCKINGHAM",
+      "text": "Would you imagine, or almost believe,"
+    },
+    {
+      "number": 34,
+      "speaker": "BUCKINGHAM",
+      "text": "Were’t not that, by great preservation,"
+    },
+    {
+      "number": 35,
+      "speaker": "BUCKINGHAM",
+      "text": "We live to tell it you, the subtle traitor"
+    },
+    {
+      "number": 36,
+      "speaker": "BUCKINGHAM",
+      "text": "This day had plotted, in the council-house"
+    },
+    {
+      "number": 37,
+      "speaker": "BUCKINGHAM",
+      "text": "To murder me and my good Lord of Gloucester?"
+    },
+    {
+      "number": 38,
+      "speaker": "MAYOR",
+      "text": "What, had he so?"
+    },
+    {
+      "number": 39,
+      "speaker": "GLOUCESTER",
+      "text": "What, think you we are Turks or infidels?"
+    },
+    {
+      "number": 40,
+      "speaker": "GLOUCESTER",
+      "text": "Or that we would, against the form of law,"
+    },
+    {
+      "number": 41,
+      "speaker": "GLOUCESTER",
+      "text": "Proceed thus rashly to the villain’s death,"
+    },
+    {
+      "number": 42,
+      "speaker": "GLOUCESTER",
+      "text": "But that the extreme peril of the case,"
+    },
+    {
+      "number": 43,
+      "speaker": "GLOUCESTER",
+      "text": "The peace of England and our persons’ safety,"
+    },
+    {
+      "number": 44,
+      "speaker": "GLOUCESTER",
+      "text": "Enforced us to this execution?"
+    },
+    {
+      "number": 45,
+      "speaker": "MAYOR",
+      "text": "Now, fair befall you! he deserved his death;"
+    },
+    {
+      "number": 46,
+      "speaker": "MAYOR",
+      "text": "And you my good lords, both have well proceeded,"
+    },
+    {
+      "number": 47,
+      "speaker": "MAYOR",
+      "text": "To warn false traitors from the like attempts."
+    },
+    {
+      "number": 48,
+      "speaker": "MAYOR",
+      "text": "I never look’d for better at his hands,"
+    },
+    {
+      "number": 49,
+      "speaker": "MAYOR",
+      "text": "After he once fell in with Mistress Shore."
+    },
+    {
+      "number": 50,
+      "speaker": "GLOUCESTER",
+      "text": "Yet had not we determined he should die,"
+    },
+    {
+      "number": 51,
+      "speaker": "GLOUCESTER",
+      "text": "Until your lordship came to see his death;"
+    },
+    {
+      "number": 52,
+      "speaker": "GLOUCESTER",
+      "text": "Which now the loving haste of these our friends,"
+    },
+    {
+      "number": 53,
+      "speaker": "GLOUCESTER",
+      "text": "Somewhat against our meaning, have prevented:"
+    },
+    {
+      "number": 54,
+      "speaker": "GLOUCESTER",
+      "text": "Because, my lord, we would have had you heard"
+    },
+    {
+      "number": 55,
+      "speaker": "GLOUCESTER",
+      "text": "The traitor speak, and timorously confess"
+    },
+    {
+      "number": 56,
+      "speaker": "GLOUCESTER",
+      "text": "The manner and the purpose of his treason;"
+    },
+    {
+      "number": 57,
+      "speaker": "GLOUCESTER",
+      "text": "That you might well have signified the same"
+    },
+    {
+      "number": 58,
+      "speaker": "GLOUCESTER",
+      "text": "Unto the citizens, who haply may"
+    },
+    {
+      "number": 59,
+      "speaker": "GLOUCESTER",
+      "text": "Misconstrue us in him and wail his death."
+    },
+    {
+      "number": 60,
+      "speaker": "MAYOR",
+      "text": "But, my good lord, your grace’s word shall serve,"
+    },
+    {
+      "number": 61,
+      "speaker": "MAYOR",
+      "text": "As well as I had seen and heard him speak:"
+    },
+    {
+      "number": 62,
+      "speaker": "MAYOR",
+      "text": "And doubt you not, right noble princes both,"
+    },
+    {
+      "number": 63,
+      "speaker": "MAYOR",
+      "text": "But I’ll acquaint our duteous citizens"
+    },
+    {
+      "number": 64,
+      "speaker": "MAYOR",
+      "text": "With all your just proceedings in this cause."
+    },
+    {
+      "number": 65,
+      "speaker": "GLOUCESTER",
+      "text": "And to that end we wish’d your lordship here,"
+    },
+    {
+      "number": 66,
+      "speaker": "GLOUCESTER",
+      "text": "To avoid the carping censures of the world."
+    },
+    {
+      "number": 67,
+      "speaker": "BUCKINGHAM",
+      "text": "But since you come too late of our intents,"
+    },
+    {
+      "number": 68,
+      "speaker": "BUCKINGHAM",
+      "text": "Yet witness what you hear we did intend:"
+    },
+    {
+      "number": 69,
+      "speaker": "BUCKINGHAM",
+      "text": "And so, my good lord mayor, we bid farewell."
+    },
+    {
+      "number": 70,
+      "speaker": "GLOUCESTER",
+      "text": "Go, after, after, cousin Buckingham."
+    },
+    {
+      "number": 71,
+      "speaker": "GLOUCESTER",
+      "text": "The mayor towards Guildhall hies him in all post:"
+    },
+    {
+      "number": 72,
+      "speaker": "GLOUCESTER",
+      "text": "There, at your meet’st advantage of the time,"
+    },
+    {
+      "number": 73,
+      "speaker": "GLOUCESTER",
+      "text": "Infer the bastardy of Edward’s children:"
+    },
+    {
+      "number": 74,
+      "speaker": "GLOUCESTER",
+      "text": "Tell them how Edward put to death a citizen,"
+    },
+    {
+      "number": 75,
+      "speaker": "GLOUCESTER",
+      "text": "Only for saying he would make his son"
+    },
+    {
+      "number": 76,
+      "speaker": "GLOUCESTER",
+      "text": "Heir to the crown; meaning indeed his house,"
+    },
+    {
+      "number": 77,
+      "speaker": "GLOUCESTER",
+      "text": "Which, by the sign thereof, was termed so."
+    },
+    {
+      "number": 78,
+      "speaker": "GLOUCESTER",
+      "text": "Moreover, urge his hateful luxury,"
+    },
+    {
+      "number": 79,
+      "speaker": "GLOUCESTER",
+      "text": "And bestial appetite in change of lust;"
+    },
+    {
+      "number": 80,
+      "speaker": "GLOUCESTER",
+      "text": "Which stretched to their servants, daughters, wives,"
+    },
+    {
+      "number": 81,
+      "speaker": "GLOUCESTER",
+      "text": "Even where his lustful eye or savage heart,"
+    },
+    {
+      "number": 82,
+      "speaker": "GLOUCESTER",
+      "text": "Without control, listed to make his prey."
+    },
+    {
+      "number": 83,
+      "speaker": "GLOUCESTER",
+      "text": "Nay, for a need, thus far come near my person:"
+    },
+    {
+      "number": 84,
+      "speaker": "GLOUCESTER",
+      "text": "Tell them, when that my mother went with child"
+    },
+    {
+      "number": 85,
+      "speaker": "GLOUCESTER",
+      "text": "Of that unsatiate Edward, noble York"
+    },
+    {
+      "number": 86,
+      "speaker": "GLOUCESTER",
+      "text": "My princely father then had wars in France;"
+    },
+    {
+      "number": 87,
+      "speaker": "GLOUCESTER",
+      "text": "And, by just computation of the time,"
+    },
+    {
+      "number": 88,
+      "speaker": "GLOUCESTER",
+      "text": "Found that the issue was not his begot;"
+    },
+    {
+      "number": 89,
+      "speaker": "GLOUCESTER",
+      "text": "Which well appeared in his lineaments,"
+    },
+    {
+      "number": 90,
+      "speaker": "GLOUCESTER",
+      "text": "Being nothing like the noble duke my father:"
+    },
+    {
+      "number": 91,
+      "speaker": "GLOUCESTER",
+      "text": "But touch this sparingly, as ’twere far off;"
+    },
+    {
+      "number": 92,
+      "speaker": "GLOUCESTER",
+      "text": "Because you know, my lord, my mother lives."
+    },
+    {
+      "number": 93,
+      "speaker": "BUCKINGHAM",
+      "text": "Fear not, my lord, I’ll play the orator"
+    },
+    {
+      "number": 94,
+      "speaker": "BUCKINGHAM",
+      "text": "As if the golden fee for which I plead"
+    },
+    {
+      "number": 95,
+      "speaker": "BUCKINGHAM",
+      "text": "Were for myself: and so, my lord, adieu."
+    },
+    {
+      "number": 96,
+      "speaker": "GLOUCESTER",
+      "text": "If you thrive well, bring them to Baynard’s Castle;"
+    },
+    {
+      "number": 97,
+      "speaker": "GLOUCESTER",
+      "text": "Where you shall find me well accompanied"
+    },
+    {
+      "number": 98,
+      "speaker": "GLOUCESTER",
+      "text": "With reverend fathers and well-learned bishops."
+    },
+    {
+      "number": 99,
+      "speaker": "BUCKINGHAM",
+      "text": "I go; and towards three or four o’clock"
+    },
+    {
+      "number": 100,
+      "speaker": "BUCKINGHAM",
+      "text": "Look for the news that the Guildhall affords."
+    },
+    {
+      "number": 101,
+      "speaker": "GLOUCESTER",
+      "text": "Go, Lovel, with all speed to Doctor Shaw;"
+    },
+    {
+      "number": 102,
+      "speaker": "GLOUCESTER",
+      "text": "To Catesby. Go thou to Friar Penker; bid them both"
+    },
+    {
+      "number": 103,
+      "speaker": "GLOUCESTER",
+      "text": "Meet me within this hour at Baynard’s Castle."
+    },
+    {
+      "number": 104,
+      "speaker": "GLOUCESTER",
+      "text": "Now will I in, to take some privy order,"
+    },
+    {
+      "number": 105,
+      "speaker": "GLOUCESTER",
+      "text": "To draw the brats of Clarence out of sight;"
+    },
+    {
+      "number": 106,
+      "speaker": "GLOUCESTER",
+      "text": "And to give notice, that no manner of person"
+    },
+    {
+      "number": 107,
+      "speaker": "GLOUCESTER",
+      "text": "At any time have recourse unto the princes."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Gloucester and Buckingham, in rotten armour, marvellous ill-favoured."
+    },
+    {
+      "after_line": 13,
+      "text": "Enter the Mayor and Catesby."
+    },
+    {
+      "after_line": 19,
+      "text": "Enter Lovel and Ratcliff, with Hastings’ head."
+    },
+    {
+      "after_line": 69,
+      "text": "Exit Mayor."
+    },
+    {
+      "after_line": 100,
+      "text": "Exit."
+    },
+    {
+      "after_line": 103,
+      "text": "Exeunt all but Gloucester."
+    },
+    {
+      "after_line": 107,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act3_scene5_gloss1",
+      "line": 1,
+      "phrase": "quake, and change thy colour",
+      "definition": "tremble and change colour — Richard's stage-direction to Buckingham's performance"
+    },
+    {
+      "id": "richard_iii_act3_scene5_gloss2",
+      "line": 5,
+      "phrase": "counterfeit the deep tragedian",
+      "definition": "imitate the accomplished tragic actor — Buckingham names the scene's mode as acting"
+    },
+    {
+      "id": "richard_iii_act3_scene5_gloss3",
+      "line": 7,
+      "phrase": "Tremble and start at wagging of a straw",
+      "definition": "the actor's technique: react to the least stimulus"
+    },
+    {
+      "id": "richard_iii_act3_scene5_gloss4",
+      "line": 8,
+      "phrase": "Intending deep suspicion",
+      "definition": "projecting grave suspicion"
+    },
+    {
+      "id": "richard_iii_act3_scene5_gloss5",
+      "line": 11,
+      "phrase": "grace my stratagems",
+      "definition": "ornament my schemes"
+    },
+    {
+      "id": "richard_iii_act3_scene5_gloss6",
+      "line": 21,
+      "phrase": "dangerous and unsuspected Hastings",
+      "definition": "dangerous-but-unsuspected — the state's official slander"
+    },
+    {
+      "id": "richard_iii_act3_scene5_gloss7",
+      "line": 26,
+      "phrase": "history of all her secret thoughts",
+      "definition": "Richard's bravura hypocrisy: he loved Hastings so that he recorded all his thoughts there"
+    },
+    {
+      "id": "richard_iii_act3_scene5_gloss8",
+      "line": 30,
+      "phrase": "attainder of suspect",
+      "definition": "legal taint of suspicion — 'attainder' = the corruption of blood following a treason conviction"
+    },
+    {
+      "id": "richard_iii_act3_scene5_gloss9",
+      "line": 31,
+      "phrase": "covert’st shelter’d traitor",
+      "definition": "most secretly sheltered traitor"
+    },
+    {
+      "id": "richard_iii_act3_scene5_gloss10",
+      "line": 39,
+      "phrase": "Turks or infidels",
+      "definition": "the two Elizabethan bywords for lawless unbelievers — Richard claims Christian legality"
+    },
+    {
+      "id": "richard_iii_act3_scene5_gloss11",
+      "line": 66,
+      "phrase": "carping censures",
+      "definition": "fault-finding criticism"
+    },
+    {
+      "id": "richard_iii_act3_scene5_gloss12",
+      "line": 73,
+      "phrase": "bastardy of Edward’s children",
+      "definition": "the official claim that Edward IV's sons are illegitimate — the legal pretext for Richard's accession"
+    },
+    {
+      "id": "richard_iii_act3_scene5_gloss13",
+      "line": 93,
+      "phrase": "play the orator",
+      "definition": "perform as public speaker — Buckingham's theatrical self-consciousness continues"
+    },
+    {
+      "id": "richard_iii_act3_scene5_gloss14",
+      "line": 96,
+      "phrase": "Baynard’s Castle",
+      "definition": "Richard's other London residence, on the Thames — site of the 3.7 staged-reluctance scene"
+    },
+    {
+      "id": "richard_iii_act3_scene5_gloss15",
+      "line": 101,
+      "phrase": "Doctor Shaw",
+      "definition": "Ralph Shaw, cleric who preached the Edward-was-a-bastard sermon at Paul's Cross; historical figure"
+    },
+    {
+      "id": "richard_iii_act3_scene5_gloss16",
+      "line": 102,
+      "phrase": "Friar Penker",
+      "definition": "John Penker, provincial of the Augustinian friars; another propagandist cleric"
+    },
+    {
+      "id": "richard_iii_act3_scene5_gloss17",
+      "line": 105,
+      "phrase": "brats of Clarence",
+      "definition": "Clarence's children — Margaret Pole and Edward, Earl of Warwick; Richard has them confined"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act3_scene5_ann1",
+      "line_start": 1,
+      "line_end": 12,
+      "citation_display": "Richard III 3.5.1–12",
+      "category": "structural",
+      "title": "The play explicitly names itself as theatre",
+      "body": "Richard's opening line — \"Come, cousin, canst thou quake, and change thy colour, / Murder thy breath in the middle of a word\" — and Buckingham's reply (\"I can counterfeit the deep tragedian\") is one of the most bald metatheatrical exchanges in all of Shakespeare. The two leading villains are here directly discussing their own craft as actors. Buckingham's self-description — tremble and start at wagging of a straw, ghastly looks at my service, enforced smiles — is a textbook for the Elizabethan tragedian. Shakespeare is doing something striking: he is letting his villains announce that the whole political spectacle they are staging is theatre. The scene self-consciously rehearses for the Mayor's benefit what it in fact is for us: a play. The distance between Richard's public performance and Richard's private self is not concealed from the audience — it is dramatized.",
+      "sources": [
+        "Anne Righter, Shakespeare and the Idea of the Play (1962)",
+        "Robert Weimann, Shakespeare and the Popular Tradition in the Theater (1967)"
+      ]
+    },
+    {
+      "id": "richard_iii_act3_scene5_ann2",
+      "line_start": 68,
+      "line_end": 107,
+      "citation_display": "Richard III 3.5.68–107",
+      "category": "historical",
+      "title": "Doctor Shaw, Friar Penker, and the bastardy campaign",
+      "body": "Richard's instructions to Buckingham — \"Go, Lovel, with all speed to Doctor Shaw; / To Catesby. Go thou to Friar Penker\" — name two historical propagandists. Ralph Shaw (the \"Doctor\" of divinity) preached at Paul's Cross on 22 June 1483 that Edward IV's children were illegitimate (arguing that Edward had been pre-contracted to Eleanor Butler before marrying Elizabeth Woodville). John Penker, provincial of the Augustinian friars, preached similar arguments. The sermon-campaign was the theological-legal groundwork for Richard's accession ten days later. Shakespeare compresses the campaign into a few stage-lines, but the detail is exact. What the play makes dramatically visible is the machinery: Buckingham delivers the propaganda at Guildhall (reported back in 3.7); clergymen stand ostentatiously next to Richard during the staged-reluctance tableau. Legitimacy is being manufactured in public view.",
+      "sources": [
+        "Charles Ross, Richard III (1981)",
+        "Rosemary Horrox, Richard III: A Study of Service (1989)",
+        "Michael Hicks, Richard III (2000)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act3_scene5_q1",
+      "kind": "structural",
+      "prompt": "When Buckingham claims he can \"counterfeit the deep tragedian,\" what is the scene doing dramaturgically?",
+      "options": [
+        "Breaking down — the actors have lost their lines",
+        "Explicitly naming itself as theatre — the villains are discussing their own acting craft in front of the audience",
+        "Introducing a minor character (the tragedian) who will later speak",
+        "Citing a specific contemporary actor of the Lord Chamberlain's Men"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 5,
+      "anchor_line_end": 11
+    },
+    {
+      "id": "richard_iii_act3_scene5_q2",
+      "kind": "historical",
+      "prompt": "Who are Doctor Shaw and Friar Penker, sent for at this scene's end?",
+      "options": [
+        "Fictional comic characters invented by Shakespeare",
+        "Historical clergymen who preached sermons arguing for Edward IV's children's illegitimacy — the theological groundwork for Richard's claim",
+        "Disguised officers of Richmond's intelligence service",
+        "Rival candidates for the see of Canterbury"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 101,
+      "anchor_line_end": 103
+    }
+  ]
+}

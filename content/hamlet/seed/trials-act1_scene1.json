@@ -1,0 +1,75 @@
+{
+  "section_id": "hamlet_act1_scene1",
+  "trials": [
+    {
+      "kind": "comprehension",
+      "prompt": "What do Bernardo and Marcellus want Horatio to witness?",
+      "options": [
+        "A military review of the night watch.",
+        "An apparition that has appeared to them on two previous nights.",
+        "The new king's first royal proclamation.",
+        "A strange comet passing over Elsinore."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 22,
+      "anchor_line_end": 35
+    },
+    {
+      "kind": "inference",
+      "prompt": "Why do the sentries want Horatio specifically to address the ghost?",
+      "options": [
+        "He is the King's personal secretary and has royal authority.",
+        "As a scholar, he knows the Latin needed to address spirits properly.",
+        "He is Hamlet's closest friend and the ghost will speak only to him.",
+        "He has seen ghosts before and knows how to drive them off."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 40,
+      "anchor_line_end": 42
+    },
+    {
+      "kind": "comprehension",
+      "prompt": "What does Horatio recount to explain why Denmark is arming for war?",
+      "options": [
+        "Claudius has declared a war of succession against Norway.",
+        "Young Fortinbras is assembling men to reclaim lands his father lost to King Hamlet.",
+        "A Polish invasion is expected before spring.",
+        "The English king has refused to pay his long-standing tribute."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 79,
+      "anchor_line_end": 107
+    },
+    {
+      "kind": "theme",
+      "prompt": "What function do Horatio's references to 'the mightiest Julius' and the omens before his assassination serve?",
+      "options": [
+        "They establish Hamlet's Roman education.",
+        "They signal that the ghost is a political warning of coming catastrophe.",
+        "They suggest Horatio is a superstitious man whom we should not trust.",
+        "They foreshadow Hamlet's own death by stabbing."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 108,
+      "anchor_line_end": 120
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "Why does Marcellus describe the Christmas season as a time when 'no spirit dare stir abroad'?",
+      "options": [
+        "It is a reference to the cold weather driving ghosts indoors.",
+        "He invokes a folk belief that the holiness of Christmas banishes wandering spirits.",
+        "He is quoting a Latin liturgy for the feast of the Nativity.",
+        "He is reassuring Horatio that the ghost cannot harm them in December."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 158,
+      "anchor_line_end": 165
+    }
+  ]
+}

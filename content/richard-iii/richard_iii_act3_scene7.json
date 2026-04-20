@@ -1,0 +1,1678 @@
+{
+  "section_id": "richard_iii_act3_scene7",
+  "work_id": "richard-iii",
+  "sequence": 15,
+  "act": 3,
+  "scene": 7,
+  "kind": "scene",
+  "scene_title": "Baynard's Castle",
+  "line_count": 234,
+  "word_count": 1778,
+  "est_read_minutes": 9,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "GLOUCESTER",
+      "text": "How now, my lord, what say the citizens?"
+    },
+    {
+      "number": 2,
+      "speaker": "BUCKINGHAM",
+      "text": "Now, by the holy mother of our Lord,"
+    },
+    {
+      "number": 3,
+      "speaker": "BUCKINGHAM",
+      "text": "The citizens are mum and speak not a word."
+    },
+    {
+      "number": 4,
+      "speaker": "GLOUCESTER",
+      "text": "Touch’d you the bastardy of Edward’s children?"
+    },
+    {
+      "number": 5,
+      "speaker": "BUCKINGHAM",
+      "text": "I did; with his contract with Lady Lucy,"
+    },
+    {
+      "number": 6,
+      "speaker": "BUCKINGHAM",
+      "text": "And his contract by deputy in France;"
+    },
+    {
+      "number": 7,
+      "speaker": "BUCKINGHAM",
+      "text": "The insatiate greediness of his desires,"
+    },
+    {
+      "number": 8,
+      "speaker": "BUCKINGHAM",
+      "text": "And his enforcement of the city wives;"
+    },
+    {
+      "number": 9,
+      "speaker": "BUCKINGHAM",
+      "text": "His tyranny for trifles; his own bastardy,"
+    },
+    {
+      "number": 10,
+      "speaker": "BUCKINGHAM",
+      "text": "As being got, your father then in France,"
+    },
+    {
+      "number": 11,
+      "speaker": "BUCKINGHAM",
+      "text": "His resemblance, being not like the duke:"
+    },
+    {
+      "number": 12,
+      "speaker": "BUCKINGHAM",
+      "text": "Withal I did infer your lineaments,"
+    },
+    {
+      "number": 13,
+      "speaker": "BUCKINGHAM",
+      "text": "Being the right idea of your father,"
+    },
+    {
+      "number": 14,
+      "speaker": "BUCKINGHAM",
+      "text": "Both in your form and nobleness of mind;"
+    },
+    {
+      "number": 15,
+      "speaker": "BUCKINGHAM",
+      "text": "Laid open all your victories in Scotland,"
+    },
+    {
+      "number": 16,
+      "speaker": "BUCKINGHAM",
+      "text": "Your dicipline in war, wisdom in peace,"
+    },
+    {
+      "number": 17,
+      "speaker": "BUCKINGHAM",
+      "text": "Your bounty, virtue, fair humility;"
+    },
+    {
+      "number": 18,
+      "speaker": "BUCKINGHAM",
+      "text": "Indeed, left nothing fitting for the purpose"
+    },
+    {
+      "number": 19,
+      "speaker": "BUCKINGHAM",
+      "text": "Untouch’d, or slightly handled, in discourse:"
+    },
+    {
+      "number": 20,
+      "speaker": "BUCKINGHAM",
+      "text": "And when mine oratory grew to an end,"
+    },
+    {
+      "number": 21,
+      "speaker": "BUCKINGHAM",
+      "text": "I bid them that did love their country’s good"
+    },
+    {
+      "number": 22,
+      "speaker": "BUCKINGHAM",
+      "text": "Cry “God save Richard, England’s royal king!”"
+    },
+    {
+      "number": 23,
+      "speaker": "GLOUCESTER",
+      "text": "Ah! and did they so?"
+    },
+    {
+      "number": 24,
+      "speaker": "BUCKINGHAM",
+      "text": "No, so God help me, they spake not a word;"
+    },
+    {
+      "number": 25,
+      "speaker": "BUCKINGHAM",
+      "text": "But, like dumb statuas or breathing stones,"
+    },
+    {
+      "number": 26,
+      "speaker": "BUCKINGHAM",
+      "text": "Gazed each on other, and look’d deadly pale."
+    },
+    {
+      "number": 27,
+      "speaker": "BUCKINGHAM",
+      "text": "Which when I saw, I reprehended them;"
+    },
+    {
+      "number": 28,
+      "speaker": "BUCKINGHAM",
+      "text": "And ask’d the mayor what meant this wilful silence:"
+    },
+    {
+      "number": 29,
+      "speaker": "BUCKINGHAM",
+      "text": "His answer was, the people were not wont"
+    },
+    {
+      "number": 30,
+      "speaker": "BUCKINGHAM",
+      "text": "To be spoke to but by the recorder."
+    },
+    {
+      "number": 31,
+      "speaker": "BUCKINGHAM",
+      "text": "Then he was urged to tell my tale again,"
+    },
+    {
+      "number": 32,
+      "speaker": "BUCKINGHAM",
+      "text": "“Thus saith the duke, thus hath the duke inferr’d;”"
+    },
+    {
+      "number": 33,
+      "speaker": "BUCKINGHAM",
+      "text": "But nothing spake in warrant from himself."
+    },
+    {
+      "number": 34,
+      "speaker": "BUCKINGHAM",
+      "text": "When he had done, some followers of mine own,"
+    },
+    {
+      "number": 35,
+      "speaker": "BUCKINGHAM",
+      "text": "At the lower end of the hall, hurl’d up their caps,"
+    },
+    {
+      "number": 36,
+      "speaker": "BUCKINGHAM",
+      "text": "And some ten voices cried “God save King Richard!”"
+    },
+    {
+      "number": 37,
+      "speaker": "BUCKINGHAM",
+      "text": "And thus I took the vantage of those few,"
+    },
+    {
+      "number": 38,
+      "speaker": "BUCKINGHAM",
+      "text": "“Thanks, gentle citizens and friends,” quoth I;"
+    },
+    {
+      "number": 39,
+      "speaker": "BUCKINGHAM",
+      "text": "“This general applause and loving shout"
+    },
+    {
+      "number": 40,
+      "speaker": "BUCKINGHAM",
+      "text": "Argues your wisdoms and your love to Richard:”"
+    },
+    {
+      "number": 41,
+      "speaker": "BUCKINGHAM",
+      "text": "And even here brake off, and came away."
+    },
+    {
+      "number": 42,
+      "speaker": "GLOUCESTER",
+      "text": "What tongueless blocks were they! would not they speak?"
+    },
+    {
+      "number": 43,
+      "speaker": "BUCKINGHAM",
+      "text": "No, by my troth, my lord."
+    },
+    {
+      "number": 44,
+      "speaker": "GLOUCESTER",
+      "text": "Will not the mayor then and his brethren come?"
+    },
+    {
+      "number": 45,
+      "speaker": "BUCKINGHAM",
+      "text": "The mayor is here at hand: intend some fear;"
+    },
+    {
+      "number": 46,
+      "speaker": "BUCKINGHAM",
+      "text": "Be not you spoke with, but by mighty suit:"
+    },
+    {
+      "number": 47,
+      "speaker": "BUCKINGHAM",
+      "text": "And look you get a prayer-book in your hand,"
+    },
+    {
+      "number": 48,
+      "speaker": "BUCKINGHAM",
+      "text": "And stand betwixt two churchmen, good my lord;"
+    },
+    {
+      "number": 49,
+      "speaker": "BUCKINGHAM",
+      "text": "For on that ground I’ll build a holy descant:"
+    },
+    {
+      "number": 50,
+      "speaker": "BUCKINGHAM",
+      "text": "And be not easily won to our request:"
+    },
+    {
+      "number": 51,
+      "speaker": "BUCKINGHAM",
+      "text": "Play the maid’s part, still answer nay, and take it."
+    },
+    {
+      "number": 52,
+      "speaker": "GLOUCESTER",
+      "text": "I go; and if you plead as well for them"
+    },
+    {
+      "number": 53,
+      "speaker": "GLOUCESTER",
+      "text": "As I can say nay to thee for myself,"
+    },
+    {
+      "number": 54,
+      "speaker": "GLOUCESTER",
+      "text": "No doubt we’ll bring it to a happy issue."
+    },
+    {
+      "number": 55,
+      "speaker": "BUCKINGHAM",
+      "text": "Go, go, up to the leads; the lord mayor knocks."
+    },
+    {
+      "number": 56,
+      "speaker": "CATESBY",
+      "text": "My lord, he doth entreat your grace"
+    },
+    {
+      "number": 57,
+      "speaker": "CATESBY",
+      "text": "To visit him to-morrow or next day:"
+    },
+    {
+      "number": 58,
+      "speaker": "CATESBY",
+      "text": "He is within, with two right reverend fathers,"
+    },
+    {
+      "number": 59,
+      "speaker": "CATESBY",
+      "text": "Divinely bent to meditation;"
+    },
+    {
+      "number": 60,
+      "speaker": "CATESBY",
+      "text": "And no worldly suit would he be moved,"
+    },
+    {
+      "number": 61,
+      "speaker": "CATESBY",
+      "text": "To draw him from his holy exercise."
+    },
+    {
+      "number": 62,
+      "speaker": "BUCKINGHAM",
+      "text": "Return, good Catesby, to thy lord again;"
+    },
+    {
+      "number": 63,
+      "speaker": "BUCKINGHAM",
+      "text": "Tell him, myself, the mayor and citizens,"
+    },
+    {
+      "number": 64,
+      "speaker": "BUCKINGHAM",
+      "text": "In deep designs and matters of great moment,"
+    },
+    {
+      "number": 65,
+      "speaker": "BUCKINGHAM",
+      "text": "No less importing than our general good,"
+    },
+    {
+      "number": 66,
+      "speaker": "BUCKINGHAM",
+      "text": "Are come to have some conference with his grace."
+    },
+    {
+      "number": 67,
+      "speaker": "CATESBY",
+      "text": "I’ll tell him what you say, my lord."
+    },
+    {
+      "number": 68,
+      "speaker": "BUCKINGHAM",
+      "text": "Ah, ha, my lord, this prince is not an Edward!"
+    },
+    {
+      "number": 69,
+      "speaker": "BUCKINGHAM",
+      "text": "He is not lolling on a lewd day-bed,"
+    },
+    {
+      "number": 70,
+      "speaker": "BUCKINGHAM",
+      "text": "But on his knees at meditation;"
+    },
+    {
+      "number": 71,
+      "speaker": "BUCKINGHAM",
+      "text": "Not dallying with a brace of courtezans,"
+    },
+    {
+      "number": 72,
+      "speaker": "BUCKINGHAM",
+      "text": "But meditating with two deep divines;"
+    },
+    {
+      "number": 73,
+      "speaker": "BUCKINGHAM",
+      "text": "Not sleeping, to engross his idle body,"
+    },
+    {
+      "number": 74,
+      "speaker": "BUCKINGHAM",
+      "text": "But praying, to enrich his watchful soul:"
+    },
+    {
+      "number": 75,
+      "speaker": "BUCKINGHAM",
+      "text": "Happy were England, would this gracious prince"
+    },
+    {
+      "number": 76,
+      "speaker": "BUCKINGHAM",
+      "text": "Take on himself the sovereignty thereof:"
+    },
+    {
+      "number": 77,
+      "speaker": "BUCKINGHAM",
+      "text": "But, sure, I fear, we shall ne’er win him to it."
+    },
+    {
+      "number": 78,
+      "speaker": "MAYOR",
+      "text": "Marry, God forbid his grace should say us nay!"
+    },
+    {
+      "number": 79,
+      "speaker": "BUCKINGHAM",
+      "text": "I fear he will."
+    },
+    {
+      "number": 79,
+      "speaker": "CATESBY",
+      "text": "My lord,"
+    },
+    {
+      "number": 80,
+      "speaker": "CATESBY",
+      "text": "He wonders to what end you have assembled"
+    },
+    {
+      "number": 81,
+      "speaker": "CATESBY",
+      "text": "Such troops of citizens to speak with him,"
+    },
+    {
+      "number": 82,
+      "speaker": "CATESBY",
+      "text": "His grace not being warn’d thereof before:"
+    },
+    {
+      "number": 83,
+      "speaker": "CATESBY",
+      "text": "My lord, he fears you mean no good to him."
+    },
+    {
+      "number": 84,
+      "speaker": "BUCKINGHAM",
+      "text": "Sorry I am my noble cousin should"
+    },
+    {
+      "number": 85,
+      "speaker": "BUCKINGHAM",
+      "text": "Suspect me, that I mean no good to him:"
+    },
+    {
+      "number": 86,
+      "speaker": "BUCKINGHAM",
+      "text": "By heaven, I come in perfect love to him;"
+    },
+    {
+      "number": 87,
+      "speaker": "BUCKINGHAM",
+      "text": "And so once more return and tell his grace."
+    },
+    {
+      "number": 88,
+      "speaker": "BUCKINGHAM",
+      "text": "When holy and devout religious men"
+    },
+    {
+      "number": 89,
+      "speaker": "BUCKINGHAM",
+      "text": "Are at their beads, ’tis hard to draw them thence,"
+    },
+    {
+      "number": 90,
+      "speaker": "BUCKINGHAM",
+      "text": "So sweet is zealous contemplation."
+    },
+    {
+      "number": 91,
+      "speaker": "MAYOR",
+      "text": "See, where he stands between two clergymen!"
+    },
+    {
+      "number": 92,
+      "speaker": "BUCKINGHAM",
+      "text": "Two props of virtue for a Christian prince,"
+    },
+    {
+      "number": 93,
+      "speaker": "BUCKINGHAM",
+      "text": "To stay him from the fall of vanity:"
+    },
+    {
+      "number": 94,
+      "speaker": "BUCKINGHAM",
+      "text": "And, see, a book of prayer in his hand,"
+    },
+    {
+      "number": 95,
+      "speaker": "BUCKINGHAM",
+      "text": "True ornaments to know a holy man."
+    },
+    {
+      "number": 96,
+      "speaker": "BUCKINGHAM",
+      "text": "Famous Plantagenet, most gracious prince,"
+    },
+    {
+      "number": 97,
+      "speaker": "BUCKINGHAM",
+      "text": "Lend favourable ears to our request;"
+    },
+    {
+      "number": 98,
+      "speaker": "BUCKINGHAM",
+      "text": "And pardon us the interruption"
+    },
+    {
+      "number": 99,
+      "speaker": "BUCKINGHAM",
+      "text": "Of thy devotion and right Christian zeal."
+    },
+    {
+      "number": 100,
+      "speaker": "GLOUCESTER",
+      "text": "My lord, there needs no such apology:"
+    },
+    {
+      "number": 101,
+      "speaker": "GLOUCESTER",
+      "text": "I rather do beseech you pardon me,"
+    },
+    {
+      "number": 102,
+      "speaker": "GLOUCESTER",
+      "text": "Who, earnest in the service of my God,"
+    },
+    {
+      "number": 103,
+      "speaker": "GLOUCESTER",
+      "text": "Neglect the visitation of my friends."
+    },
+    {
+      "number": 104,
+      "speaker": "GLOUCESTER",
+      "text": "But, leaving this, what is your grace’s pleasure?"
+    },
+    {
+      "number": 105,
+      "speaker": "BUCKINGHAM",
+      "text": "Even that, I hope, which pleaseth God above,"
+    },
+    {
+      "number": 106,
+      "speaker": "BUCKINGHAM",
+      "text": "And all good men of this ungovern’d isle."
+    },
+    {
+      "number": 107,
+      "speaker": "GLOUCESTER",
+      "text": "I do suspect I have done some offence"
+    },
+    {
+      "number": 108,
+      "speaker": "GLOUCESTER",
+      "text": "That seems disgracious in the city’s eyes,"
+    },
+    {
+      "number": 109,
+      "speaker": "GLOUCESTER",
+      "text": "And that you come to reprehend my ignorance."
+    },
+    {
+      "number": 110,
+      "speaker": "BUCKINGHAM",
+      "text": "You have, my lord: would it might please your grace,"
+    },
+    {
+      "number": 111,
+      "speaker": "BUCKINGHAM",
+      "text": "At our entreaties, to amend that fault!"
+    },
+    {
+      "number": 112,
+      "speaker": "GLOUCESTER",
+      "text": "Else wherefore breathe I in a Christian land?"
+    },
+    {
+      "number": 113,
+      "speaker": "BUCKINGHAM",
+      "text": "Then know, it is your fault that you resign"
+    },
+    {
+      "number": 114,
+      "speaker": "BUCKINGHAM",
+      "text": "The supreme seat, the throne majestical,"
+    },
+    {
+      "number": 115,
+      "speaker": "BUCKINGHAM",
+      "text": "The scepter’d office of your ancestors,"
+    },
+    {
+      "number": 116,
+      "speaker": "BUCKINGHAM",
+      "text": "Your state of fortune and your due of birth,"
+    },
+    {
+      "number": 117,
+      "speaker": "BUCKINGHAM",
+      "text": "The lineal glory of your royal house,"
+    },
+    {
+      "number": 118,
+      "speaker": "BUCKINGHAM",
+      "text": "To the corruption of a blemished stock:"
+    },
+    {
+      "number": 119,
+      "speaker": "BUCKINGHAM",
+      "text": "Whilst, in the mildness of your sleepy thoughts,"
+    },
+    {
+      "number": 120,
+      "speaker": "BUCKINGHAM",
+      "text": "Which here we waken to our country’s good,"
+    },
+    {
+      "number": 121,
+      "speaker": "BUCKINGHAM",
+      "text": "This noble isle doth want her proper limbs;"
+    },
+    {
+      "number": 122,
+      "speaker": "BUCKINGHAM",
+      "text": "Her face defaced with scars of infamy,"
+    },
+    {
+      "number": 123,
+      "speaker": "BUCKINGHAM",
+      "text": "Her royal stock graft with ignoble plants,"
+    },
+    {
+      "number": 124,
+      "speaker": "BUCKINGHAM",
+      "text": "And almost shoulder’d in the swallowing gulf"
+    },
+    {
+      "number": 125,
+      "speaker": "BUCKINGHAM",
+      "text": "Of blind forgetfulness and dark oblivion."
+    },
+    {
+      "number": 126,
+      "speaker": "BUCKINGHAM",
+      "text": "Which to recure, we heartily solicit"
+    },
+    {
+      "number": 127,
+      "speaker": "BUCKINGHAM",
+      "text": "Your gracious self to take on you the charge"
+    },
+    {
+      "number": 128,
+      "speaker": "BUCKINGHAM",
+      "text": "And kingly government of this your land;"
+    },
+    {
+      "number": 129,
+      "speaker": "BUCKINGHAM",
+      "text": "Not as protector, steward, substitute,"
+    },
+    {
+      "number": 130,
+      "speaker": "BUCKINGHAM",
+      "text": "Or lowly factor for another’s gain;"
+    },
+    {
+      "number": 131,
+      "speaker": "BUCKINGHAM",
+      "text": "But as successively from blood to blood,"
+    },
+    {
+      "number": 132,
+      "speaker": "BUCKINGHAM",
+      "text": "Your right of birth, your empery, your own."
+    },
+    {
+      "number": 133,
+      "speaker": "BUCKINGHAM",
+      "text": "For this, consorted with the citizens,"
+    },
+    {
+      "number": 134,
+      "speaker": "BUCKINGHAM",
+      "text": "Your very worshipful and loving friends,"
+    },
+    {
+      "number": 135,
+      "speaker": "BUCKINGHAM",
+      "text": "And by their vehement instigation,"
+    },
+    {
+      "number": 136,
+      "speaker": "BUCKINGHAM",
+      "text": "In this just suit come I to move your grace."
+    },
+    {
+      "number": 137,
+      "speaker": "GLOUCESTER",
+      "text": "I know not whether to depart in silence,"
+    },
+    {
+      "number": 138,
+      "speaker": "GLOUCESTER",
+      "text": "Or bitterly to speak in your reproof,"
+    },
+    {
+      "number": 139,
+      "speaker": "GLOUCESTER",
+      "text": "Best fitteth my degree or your condition:"
+    },
+    {
+      "number": 140,
+      "speaker": "GLOUCESTER",
+      "text": "If not to answer, you might haply think"
+    },
+    {
+      "number": 141,
+      "speaker": "GLOUCESTER",
+      "text": "Tongue-tied ambition, not replying, yielded"
+    },
+    {
+      "number": 142,
+      "speaker": "GLOUCESTER",
+      "text": "To bear the golden yoke of sovereignty,"
+    },
+    {
+      "number": 143,
+      "speaker": "GLOUCESTER",
+      "text": "Which fondly you would here impose on me;"
+    },
+    {
+      "number": 144,
+      "speaker": "GLOUCESTER",
+      "text": "If to reprove you for this suit of yours,"
+    },
+    {
+      "number": 145,
+      "speaker": "GLOUCESTER",
+      "text": "So season’d with your faithful love to me,"
+    },
+    {
+      "number": 146,
+      "speaker": "GLOUCESTER",
+      "text": "Then, on the other side, I check’d my friends."
+    },
+    {
+      "number": 147,
+      "speaker": "GLOUCESTER",
+      "text": "Therefore, to speak, and to avoid the first,"
+    },
+    {
+      "number": 148,
+      "speaker": "GLOUCESTER",
+      "text": "And then, in speaking, not to incur the last,"
+    },
+    {
+      "number": 149,
+      "speaker": "GLOUCESTER",
+      "text": "Definitively thus I answer you."
+    },
+    {
+      "number": 150,
+      "speaker": "GLOUCESTER",
+      "text": "Your love deserves my thanks; but my desert"
+    },
+    {
+      "number": 151,
+      "speaker": "GLOUCESTER",
+      "text": "Unmeritable shuns your high request."
+    },
+    {
+      "number": 152,
+      "speaker": "GLOUCESTER",
+      "text": "First, if all obstacles were cut away,"
+    },
+    {
+      "number": 153,
+      "speaker": "GLOUCESTER",
+      "text": "And that my path were even to the crown,"
+    },
+    {
+      "number": 154,
+      "speaker": "GLOUCESTER",
+      "text": "As my ripe revenue and due by birth;"
+    },
+    {
+      "number": 155,
+      "speaker": "GLOUCESTER",
+      "text": "Yet so much is my poverty of spirit,"
+    },
+    {
+      "number": 156,
+      "speaker": "GLOUCESTER",
+      "text": "So mighty and so many my defects,"
+    },
+    {
+      "number": 157,
+      "speaker": "GLOUCESTER",
+      "text": "As I had rather hide me from my greatness,"
+    },
+    {
+      "number": 158,
+      "speaker": "GLOUCESTER",
+      "text": "Being a bark to brook no mighty sea,"
+    },
+    {
+      "number": 159,
+      "speaker": "GLOUCESTER",
+      "text": "Than in my greatness covet to be hid,"
+    },
+    {
+      "number": 160,
+      "speaker": "GLOUCESTER",
+      "text": "And in the vapour of my glory smother’d."
+    },
+    {
+      "number": 161,
+      "speaker": "GLOUCESTER",
+      "text": "But, God be thank’d, there’s no need of me,"
+    },
+    {
+      "number": 162,
+      "speaker": "GLOUCESTER",
+      "text": "And much I need to help you, if need were;"
+    },
+    {
+      "number": 163,
+      "speaker": "GLOUCESTER",
+      "text": "The royal tree hath left us royal fruit,"
+    },
+    {
+      "number": 164,
+      "speaker": "GLOUCESTER",
+      "text": "Which, mellow’d by the stealing hours of time,"
+    },
+    {
+      "number": 165,
+      "speaker": "GLOUCESTER",
+      "text": "Will well become the seat of majesty,"
+    },
+    {
+      "number": 166,
+      "speaker": "GLOUCESTER",
+      "text": "And make, no doubt, us happy by his reign."
+    },
+    {
+      "number": 167,
+      "speaker": "GLOUCESTER",
+      "text": "On him I lay what you would lay on me,"
+    },
+    {
+      "number": 168,
+      "speaker": "GLOUCESTER",
+      "text": "The right and fortune of his happy stars;"
+    },
+    {
+      "number": 169,
+      "speaker": "GLOUCESTER",
+      "text": "Which God defend that I should wring from him!"
+    },
+    {
+      "number": 170,
+      "speaker": "BUCKINGHAM",
+      "text": "My lord, this argues conscience in your grace;"
+    },
+    {
+      "number": 171,
+      "speaker": "BUCKINGHAM",
+      "text": "But the respects thereof are nice and trivial,"
+    },
+    {
+      "number": 172,
+      "speaker": "BUCKINGHAM",
+      "text": "All circumstances well considered."
+    },
+    {
+      "number": 173,
+      "speaker": "BUCKINGHAM",
+      "text": "You say that Edward is your brother’s son:"
+    },
+    {
+      "number": 174,
+      "speaker": "BUCKINGHAM",
+      "text": "So say we too, but not by Edward’s wife;"
+    },
+    {
+      "number": 175,
+      "speaker": "BUCKINGHAM",
+      "text": "For first he was contract to Lady Lucy—"
+    },
+    {
+      "number": 176,
+      "speaker": "BUCKINGHAM",
+      "text": "Your mother lives a witness to that vow—"
+    },
+    {
+      "number": 177,
+      "speaker": "BUCKINGHAM",
+      "text": "And afterward by substitute betroth’d"
+    },
+    {
+      "number": 178,
+      "speaker": "BUCKINGHAM",
+      "text": "To Bona, sister to the King of France."
+    },
+    {
+      "number": 179,
+      "speaker": "BUCKINGHAM",
+      "text": "These both put by, a poor petitioner,"
+    },
+    {
+      "number": 180,
+      "speaker": "BUCKINGHAM",
+      "text": "A care-crazed mother of a many children,"
+    },
+    {
+      "number": 181,
+      "speaker": "BUCKINGHAM",
+      "text": "A beauty-waning and distressed widow,"
+    },
+    {
+      "number": 182,
+      "speaker": "BUCKINGHAM",
+      "text": "Even in the afternoon of her best days,"
+    },
+    {
+      "number": 183,
+      "speaker": "BUCKINGHAM",
+      "text": "Made prize and purchase of his lustful eye,"
+    },
+    {
+      "number": 184,
+      "speaker": "BUCKINGHAM",
+      "text": "Seduced the pitch and height of all his thoughts"
+    },
+    {
+      "number": 185,
+      "speaker": "BUCKINGHAM",
+      "text": "To base declension and loathed bigamy:"
+    },
+    {
+      "number": 186,
+      "speaker": "BUCKINGHAM",
+      "text": "By her, in his unlawful bed, he got"
+    },
+    {
+      "number": 187,
+      "speaker": "BUCKINGHAM",
+      "text": "This Edward, whom our manners term the prince."
+    },
+    {
+      "number": 188,
+      "speaker": "BUCKINGHAM",
+      "text": "More bitterly could I expostulate,"
+    },
+    {
+      "number": 189,
+      "speaker": "BUCKINGHAM",
+      "text": "Save that, for reverence to some alive,"
+    },
+    {
+      "number": 190,
+      "speaker": "BUCKINGHAM",
+      "text": "I give a sparing limit to my tongue."
+    },
+    {
+      "number": 191,
+      "speaker": "BUCKINGHAM",
+      "text": "Then, good my lord, take to your royal self"
+    },
+    {
+      "number": 192,
+      "speaker": "BUCKINGHAM",
+      "text": "This proffer’d benefit of dignity;"
+    },
+    {
+      "number": 193,
+      "speaker": "BUCKINGHAM",
+      "text": "If not to bless us and the land withal,"
+    },
+    {
+      "number": 194,
+      "speaker": "BUCKINGHAM",
+      "text": "Yet to draw forth your noble ancestry"
+    },
+    {
+      "number": 195,
+      "speaker": "BUCKINGHAM",
+      "text": "From the corruption of abusing times,"
+    },
+    {
+      "number": 196,
+      "speaker": "BUCKINGHAM",
+      "text": "Unto a lineal true-derived course."
+    },
+    {
+      "number": 197,
+      "speaker": "MAYOR",
+      "text": "Do, good my lord, your citizens entreat you."
+    },
+    {
+      "number": 198,
+      "speaker": "BUCKINGHAM",
+      "text": "Refuse not, mighty lord, this proffer’d love."
+    },
+    {
+      "number": 199,
+      "speaker": "CATESBY",
+      "text": "O, make them joyful, grant their lawful suit!"
+    },
+    {
+      "number": 200,
+      "speaker": "GLOUCESTER",
+      "text": "Alas, why would you heap these cares on me?"
+    },
+    {
+      "number": 201,
+      "speaker": "GLOUCESTER",
+      "text": "I am unfit for state and majesty:"
+    },
+    {
+      "number": 202,
+      "speaker": "GLOUCESTER",
+      "text": "I do beseech you, take it not amiss;"
+    },
+    {
+      "number": 203,
+      "speaker": "GLOUCESTER",
+      "text": "I cannot nor I will not yield to you."
+    },
+    {
+      "number": 204,
+      "speaker": "BUCKINGHAM",
+      "text": "If you refuse it—as, in love and zeal,"
+    },
+    {
+      "number": 205,
+      "speaker": "BUCKINGHAM",
+      "text": "Loath to depose the child, your brother’s son;"
+    },
+    {
+      "number": 206,
+      "speaker": "BUCKINGHAM",
+      "text": "As well we know your tenderness of heart"
+    },
+    {
+      "number": 207,
+      "speaker": "BUCKINGHAM",
+      "text": "And gentle, kind, effeminate remorse,"
+    },
+    {
+      "number": 208,
+      "speaker": "BUCKINGHAM",
+      "text": "Which we have noted in you to your kin,"
+    },
+    {
+      "number": 209,
+      "speaker": "BUCKINGHAM",
+      "text": "And egally indeed to all estates—"
+    },
+    {
+      "number": 210,
+      "speaker": "BUCKINGHAM",
+      "text": "Yet whether you accept our suit or no,"
+    },
+    {
+      "number": 211,
+      "speaker": "BUCKINGHAM",
+      "text": "Your brother’s son shall never reign our king;"
+    },
+    {
+      "number": 212,
+      "speaker": "BUCKINGHAM",
+      "text": "But we will plant some other in the throne,"
+    },
+    {
+      "number": 213,
+      "speaker": "BUCKINGHAM",
+      "text": "To the disgrace and downfall of your house:"
+    },
+    {
+      "number": 214,
+      "speaker": "BUCKINGHAM",
+      "text": "And in this resolution here we leave you.—"
+    },
+    {
+      "number": 215,
+      "speaker": "BUCKINGHAM",
+      "text": "Come, citizens: ’zounds! I’ll entreat no more."
+    },
+    {
+      "number": 216,
+      "speaker": "GLOUCESTER",
+      "text": "O, do not swear, my lord of Buckingham."
+    },
+    {
+      "number": 217,
+      "speaker": "CATESBY",
+      "text": "Call them again, my lord, and accept their suit."
+    },
+    {
+      "number": 218,
+      "speaker": "ANOTHER",
+      "text": "Do, good my lord, lest all the land do rue it."
+    },
+    {
+      "number": 219,
+      "speaker": "GLOUCESTER",
+      "text": "Would you enforce me to a world of care?"
+    },
+    {
+      "number": 220,
+      "speaker": "GLOUCESTER",
+      "text": "Well, call them again. I am not made of stones,"
+    },
+    {
+      "number": 221,
+      "speaker": "GLOUCESTER",
+      "text": "But penetrable to your kind entreats,"
+    },
+    {
+      "number": 222,
+      "speaker": "GLOUCESTER",
+      "text": "Albeit against my conscience and my soul."
+    },
+    {
+      "number": 223,
+      "speaker": "MAYOR",
+      "text": "God bless your grace! we see it, and will say it."
+    },
+    {
+      "number": 224,
+      "speaker": "GLOUCESTER",
+      "text": "In saying so, you shall but say the truth."
+    },
+    {
+      "number": 225,
+      "speaker": "BUCKINGHAM",
+      "text": "Then I salute you with this kingly title:"
+    },
+    {
+      "number": 226,
+      "speaker": "BUCKINGHAM",
+      "text": "Long live Richard, England’s royal king!"
+    },
+    {
+      "number": 226,
+      "speaker": "MAYOR CITIZENS",
+      "text": "Amen."
+    },
+    {
+      "number": 227,
+      "speaker": "BUCKINGHAM",
+      "text": "To-morrow will it please you to be crown’d?"
+    },
+    {
+      "number": 228,
+      "speaker": "GLOUCESTER",
+      "text": "Even when you please, since you will have it so."
+    },
+    {
+      "number": 229,
+      "speaker": "BUCKINGHAM",
+      "text": "To-morrow, then, we will attend your grace:"
+    },
+    {
+      "number": 230,
+      "speaker": "BUCKINGHAM",
+      "text": "And so most joyfully we take our leave."
+    },
+    {
+      "number": 231,
+      "speaker": "GLOUCESTER",
+      "text": "Come, let us to our holy task again."
+    },
+    {
+      "number": 232,
+      "speaker": "GLOUCESTER",
+      "text": "Farewell, good cousin; farewell, gentle friends."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Gloucester and Buckingham, at several doors."
+    },
+    {
+      "after_line": 55,
+      "text": "Exit Gloucester."
+    },
+    {
+      "after_line": 55,
+      "text": "Enter the Mayor and Citizens."
+    },
+    {
+      "after_line": 55,
+      "text": "Welcome my lord: I dance attendance here; I think the duke will not be spoke withal."
+    },
+    {
+      "after_line": 55,
+      "text": "Enter Catesby."
+    },
+    {
+      "after_line": 55,
+      "text": "Here comes his servant: how now, Catesby, What says he?"
+    },
+    {
+      "after_line": 67,
+      "text": "Exit."
+    },
+    {
+      "after_line": 79,
+      "text": "Reenter Catesby."
+    },
+    {
+      "after_line": 79,
+      "text": "How now, Catesby, what says your lord?"
+    },
+    {
+      "after_line": 87,
+      "text": "Exit Catesby."
+    },
+    {
+      "after_line": 90,
+      "text": "Enter Gloucester aloft, between two Bishops. Catesby returns."
+    },
+    {
+      "after_line": 216,
+      "text": "Exit Buckingham with the Citizens."
+    },
+    {
+      "after_line": 222,
+      "text": "Reenter Buckingham and the rest."
+    },
+    {
+      "after_line": 222,
+      "text": "Cousin of Buckingham, and you sage, grave men, Since you will buckle fortune on my back, To bear her burthen, whether I will or no, I must have patience to endure the load: But if black scandal or foul-faced reproach Attend the sequel of your imposition, Your mere enforcement shall acquittance me From all the impure blots and stains thereof; For God he knows, and you may partly see, How far I am from the desire thereof."
+    },
+    {
+      "after_line": 232,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act3_scene7_gloss1",
+      "line": 3,
+      "phrase": "mum and speak not a word",
+      "definition": "silent — the citizens' refusal to acclaim Richard is a political disaster Buckingham must spin"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss2",
+      "line": 5,
+      "phrase": "contract with Lady Lucy",
+      "definition": "Elizabeth Lucy, Edward IV's mistress, claimed by some to have been pre-contracted to him — the pretext for the 'bastardy' charge against Edward's marriage"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss3",
+      "line": 6,
+      "phrase": "contract by deputy in France",
+      "definition": "Edward's diplomatic marriage-contract to Bona of Savoy, never consummated"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss4",
+      "line": 8,
+      "phrase": "enforcement of the city wives",
+      "definition": "Edward's forcing of London citizens' wives — the charge of sexual predation"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss5",
+      "line": 9,
+      "phrase": "his own bastardy",
+      "definition": "the claim that Edward IV himself was illegitimate — gossip revived from the Duke of York's long absences in France; Buckingham repeats it, slandering Richard's own mother"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss6",
+      "line": 12,
+      "phrase": "lineaments",
+      "definition": "features, physical likeness"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss7",
+      "line": 13,
+      "phrase": "right idea of your father",
+      "definition": "the true image of your father — Buckingham flatters Richard's resemblance to Richard Duke of York"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss8",
+      "line": 15,
+      "phrase": "victories in Scotland",
+      "definition": "Richard's 1482 Scottish campaign, which took Berwick — his actual military record"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss9",
+      "line": 25,
+      "phrase": "dumb statuas",
+      "definition": "mute statues — 'statuas' is an old Latinate plural"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss10",
+      "line": 30,
+      "phrase": "recorder",
+      "definition": "senior legal officer of the City of London"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss11",
+      "line": 45,
+      "phrase": "intend some fear",
+      "definition": "feign some fear — the stage direction in the dialogue"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss12",
+      "line": 47,
+      "phrase": "prayer-book in your hand",
+      "definition": "a prayer-book as prop — Buckingham's explicit stage-managing of the 'pious Richard' tableau"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss13",
+      "line": 49,
+      "phrase": "build a holy descant",
+      "definition": "construct a pious elaboration — 'descant' = rhetorical flourish, from the musical term for counterpoint"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss14",
+      "line": 51,
+      "phrase": "Play the maid’s part, still answer nay, and take it",
+      "definition": "act the reluctant maiden — keep saying no but accept. Buckingham's frankest line: the king's pretended refusal is scripted seduction"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss15",
+      "line": 55,
+      "phrase": "leads",
+      "definition": "the lead-covered roof; upper level"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss16",
+      "line": 69,
+      "phrase": "lolling on a lewd day-bed",
+      "definition": "lounging on a lascivious couch — Buckingham's specific contrast with Edward IV's libertinism"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss17",
+      "line": 71,
+      "phrase": "brace of courtezans",
+      "definition": "a pair of prostitutes"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss18",
+      "line": 72,
+      "phrase": "two deep divines",
+      "definition": "two profound theologians — the prop clergymen"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss19",
+      "line": 89,
+      "phrase": "at their beads",
+      "definition": "at their prayer-beads (the rosary)"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss20",
+      "line": 92,
+      "phrase": "Two props of virtue for a Christian prince",
+      "definition": "two pillars of virtue for a Christian prince — Buckingham's staged acclamation of Richard between the two bishops; the bravura peak of the scene's hypocrisy"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss21",
+      "line": 95,
+      "phrase": "True ornaments to know a holy man",
+      "definition": "the real signs by which a holy man is recognized — Buckingham sells the tableau to the Mayor"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss22",
+      "line": 114,
+      "phrase": "supreme seat",
+      "definition": "the throne of England"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss23",
+      "line": 115,
+      "phrase": "scepter’d office",
+      "definition": "sceptred kingship"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss24",
+      "line": 116,
+      "phrase": "due of birth",
+      "definition": "inheritance by birthright"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss25",
+      "line": 118,
+      "phrase": "blemished stock",
+      "definition": "corrupted lineage — a new euphemism for Edward's 'illegitimate' children"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss26",
+      "line": 123,
+      "phrase": "royal stock graft with ignoble plants",
+      "definition": "royal tree grafted with base shoots — horticultural image for dynastic adulteration"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss27",
+      "line": 125,
+      "phrase": "blind forgetfulness and dark oblivion",
+      "definition": "oblivion doubled — the complete erasure of the Yorkist line"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss28",
+      "line": 126,
+      "phrase": "recure",
+      "definition": "remedy, cure"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss29",
+      "line": 130,
+      "phrase": "lowly factor for another’s gain",
+      "definition": "mere agent for another's benefit — Buckingham insists Richard must be king in his own right, not regent"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss30",
+      "line": 132,
+      "phrase": "empery",
+      "definition": "sovereign rule"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss31",
+      "line": 142,
+      "phrase": "golden yoke of sovereignty",
+      "definition": "kingship as a heavy, ornamented burden"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss32",
+      "line": 149,
+      "phrase": "Definitively thus I answer",
+      "definition": "formally, this is my answer — Richard's legalistic feint"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss33",
+      "line": 158,
+      "phrase": "bark to brook no mighty sea",
+      "definition": "small boat unfit for the great sea — Richard's humility-performance"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss34",
+      "line": 175,
+      "phrase": "first he was contract to Lady Lucy",
+      "definition": "Buckingham presses the pre-contract claim — legally devastating to Edward IV's marriage's validity"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss35",
+      "line": 178,
+      "phrase": "Bona, sister to the King of France",
+      "definition": "Bona of Savoy — the diplomatic marriage Warwick had been negotiating when Edward secretly wed Elizabeth Woodville"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss36",
+      "line": 180,
+      "phrase": "care-crazed mother of a many children",
+      "definition": "care-worn mother of several children — Buckingham's dismissive portrait of Elizabeth Woodville"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss37",
+      "line": 182,
+      "phrase": "afternoon of her best days",
+      "definition": "late middle age — past her prime"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss38",
+      "line": 185,
+      "phrase": "base declension and loathed bigamy",
+      "definition": "shameful descent and hateful bigamy — the charge that Edward's two 'marriages' made him a bigamist"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss39",
+      "line": 207,
+      "phrase": "effeminate remorse",
+      "definition": "womanly compassion — Elizabethan gender-coding of mercy as 'soft'"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss40",
+      "line": 220,
+      "phrase": "not made of stones",
+      "definition": "not stony-hearted — Richard's yielding-formula"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss41",
+      "line": 221,
+      "phrase": "penetrable to your kind entreats",
+      "definition": "pierceable by your kind pleas — the language of seductive yielding applied to politics"
+    },
+    {
+      "id": "richard_iii_act3_scene7_gloss42",
+      "line": 226,
+      "phrase": "Long live Richard, England’s royal king",
+      "definition": "the formal acclamation — Buckingham supplies the line the citizens would not"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act3_scene7_ann1",
+      "line_start": 1,
+      "line_end": 42,
+      "citation_display": "Richard III 3.7.1–42",
+      "category": "structural",
+      "title": "Buckingham reports failure — and the scene's hinge",
+      "body": "The scene opens with Buckingham's account of what just failed: the Guildhall audience refused to acclaim Richard king. Buckingham laid out the entire propaganda package — Edward IV's pre-contract with Lady Lucy, his marriage-by-proxy to Bona of Savoy, his sexual predation on city wives, his own supposed illegitimacy (an extraordinary slander of Richard's own mother), and Richard's personal virtues (Scottish campaign, discipline, bounty) — and was met with \"dumb statuas.\" Only ten voices cried \"God save King Richard!\" and those were Buckingham's own followers planted at the lower end of the hall. The first conclusion the scene reaches is political: Richard's coup does not have public consent. The second conclusion is theatrical: if consent cannot be won, it must be staged. The remainder of the scene is that staging.",
+      "sources": [
+        "Charles Ross, Richard III (1981)",
+        "Rosemary Horrox, Richard III: A Study of Service (1989)",
+        "Thomas More, History of King Richard III (c. 1513)"
+      ]
+    },
+    {
+      "id": "richard_iii_act3_scene7_ann2",
+      "line_start": 44,
+      "line_end": 55,
+      "citation_display": "Richard III 3.7.44–55",
+      "category": "close_reading",
+      "title": "Buckingham's stage-directions spoken aloud",
+      "body": "Buckingham's instructions to Richard are as frank as theatrical direction can be: intend some fear, be not easily won, play the maid's part still answer nay and take it, get a prayer-book, stand betwixt two churchmen. Shakespeare lets Buckingham narrate the coming scene to Richard before they stage it for the Mayor. The maid's-part line — \"Play the maid's part, still answer nay, and take it\" — is one of the most corrosive single sentences in English political theatre. The simile's gender is not accidental. The staging of pretended reluctance is explicitly likened to scripted seduction: a woman who says no while yielding, a script designed so that the refusal itself is the invitation. Richard will accept the crown the way (Buckingham says) women accept suitors. Politics and seduction are made grammatically identical.",
+      "sources": [
+        "Madonne M. Miner, \"'Neither mother, wife, nor England's queen'\" (1980)",
+        "Janet Adelman, Suffocating Mothers (1992)",
+        "Stephen Greenblatt, Shakespearean Negotiations (1988)"
+      ]
+    },
+    {
+      "id": "richard_iii_act3_scene7_ann3",
+      "line_start": 88,
+      "line_end": 99,
+      "citation_display": "Richard III 3.7.88–99",
+      "category": "thematic",
+      "title": "\"Two props of virtue for a Christian prince\"",
+      "body": "The tableau's peak: Buckingham points to Richard standing between two bishops with a prayer book in his hand and says \"Two props of virtue for a Christian prince, / To stay him from the fall of vanity.\" The line works three ways simultaneously. First, it is straight propaganda — Buckingham is selling Richard to the Mayor. Second, it is explicit theatre — the audience knows the bishops are props, the book a prop, the piety a performance. Third, it is bitterly ironic — the actual historical Richard III was a deeply pious man by the standards of his period, and Shakespeare's scene nevertheless asks us to read all his piety as performance. The play makes no room for sincere Ricardian religion. What Shakespeare wants us to see is how completely piety can be weaponized as cover, regardless of the underlying state of the actor's soul.",
+      "sources": [
+        "Anne Sutton, \"'A curious searcher for our weal public': Richard III, piety, chivalry and the concept of the 'good prince'\" (1986)",
+        "Charles Ross, Richard III (1981)",
+        "A. P. Rossiter, Angel with Horns (1961)"
+      ]
+    },
+    {
+      "id": "richard_iii_act3_scene7_ann4",
+      "line_start": 137,
+      "line_end": 169,
+      "citation_display": "Richard III 3.7.137–169",
+      "category": "close_reading",
+      "title": "Richard's speech of refusal, which is his acceptance",
+      "body": "Richard's long refusal-speech (137–169) is rhetorically astonishing. He divides his response into a precise rhetorical quadrant — to speak is ungracious, not to speak looks like tongue-tied acceptance; to reprove is to scold his friends, to accept is unworthy. Having announced the dilemma, he refuses the crown on grounds of personal unworthiness (\"my poverty of spirit,\" \"mighty and so many my defects\") and on grounds of legitimate succession (\"The royal tree hath left us royal fruit\" — i.e., the prince should inherit). Both reasons are false. The speech works because each is individually plausible; the combined effect is to make acceptance, when it comes, look like the regrettable overriding of personal scruple by public duty. Shakespeare is dramatizing the specific structure by which illegitimate power claims legitimacy through theatre.",
+      "sources": [
+        "Brian Vickers, The Artistry of Shakespeare's Prose (1968)",
+        "A. P. Rossiter, Angel with Horns (1961)",
+        "Wolfgang Clemen, A Commentary on Shakespeare's Richard III (1968)"
+      ]
+    },
+    {
+      "id": "richard_iii_act3_scene7_ann5",
+      "line_start": 170,
+      "line_end": 210,
+      "citation_display": "Richard III 3.7.170–210",
+      "category": "historical",
+      "title": "The pre-contract argument and its legal weight",
+      "body": "Buckingham's legal argument that Edward IV's marriage to Elizabeth Woodville was invalid — because Edward had been pre-contracted to Lady Lucy and had a marriage-by-proxy to Bona of Savoy, making his subsequent marriage bigamous — is drawn from the historical petition Titulus Regius (January 1484), which formally declared Richard III legitimate king. The pre-contract doctrine (matrimonium per verba de praesenti, followed by intercourse, created indissoluble marriage) was live canon law, and the Eleanor Butler pre-contract (substituted historically for the \"Lady Lucy\" Shakespeare gives) was the actual legal basis. Historians continue to debate whether any pre-contract actually existed or whether Richard's regime manufactured the evidence. Shakespeare's scene keeps the audience aware that the argument has legal form while making us see its propagandistic function. The two are simultaneously true: the claim is both legally articulated and politically engineered.",
+      "sources": [
+        "Titulus Regius (1484)",
+        "Charles Ross, Richard III (1981)",
+        "Michael Hicks, Richard III (2000)",
+        "R. H. Helmholz, \"The Sons of Edward IV\" (1986)"
+      ]
+    },
+    {
+      "id": "richard_iii_act3_scene7_ann6",
+      "line_start": 212,
+      "line_end": 230,
+      "citation_display": "Richard III 3.7.212–230",
+      "category": "thematic",
+      "title": "Buckingham's ultimatum and Richard's \"yielding\"",
+      "body": "The scene's resolution depends on Buckingham's threat: if Richard will not accept, we will \"plant some other in the throne, / To the disgrace and downfall of your house.\" The threat is the mechanism by which Richard can accept without appearing to have wanted to. Richard's line — \"I am not made of stones, / But penetrable to your kind entreats, / Albeit against my conscience and my soul\" — completes the scripted seduction Buckingham named earlier: he lets himself be pierced by the request. The final acclamation (\"Long live Richard, England's royal king!\") follows in a single line. The scene has taken 226 lines to produce a single formal result — a coronation date — but the production has mattered more than the result. The play now gives us a king acclaimed, however theatrically, and the coming scenes will test whether the theatricality can be extended into governance. It cannot.",
+      "sources": [
+        "Robert Weimann, Shakespeare and the Popular Tradition in the Theater (1967)",
+        "Emrys Jones, Scenic Form in Shakespeare (1971)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act3_scene7_q1",
+      "kind": "comprehension",
+      "prompt": "What happened when Buckingham addressed the citizens at Guildhall?",
+      "options": [
+        "They acclaimed Richard enthusiastically",
+        "They responded with silence; only ten voices (Buckingham's own planted followers) cried \"God save King Richard!\"",
+        "They rioted and demanded Edward V's coronation",
+        "They demanded Buckingham be king instead"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 24,
+      "anchor_line_end": 42
+    },
+    {
+      "id": "richard_iii_act3_scene7_q2",
+      "kind": "close_reading",
+      "prompt": "Buckingham instructs Richard: \"Play the maid's part, still answer nay, and take it.\" The simile compares political acceptance to what?",
+      "options": [
+        "The role of a young actor playing a female part on the Elizabethan stage",
+        "Scripted seduction — a woman refusing while yielding, where the refusal itself is the invitation",
+        "A child's game of hide and seek",
+        "A legal formality used in marriage contracts"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 51,
+      "anchor_line_end": 51
+    },
+    {
+      "id": "richard_iii_act3_scene7_q3",
+      "kind": "theme",
+      "prompt": "Buckingham's line \"Two props of virtue for a Christian prince, / To stay him from the fall of vanity\" points to Richard flanked by what, and to what end?",
+      "options": [
+        "Two guards — to suggest prudent caution",
+        "Two churchmen, with a prayer-book in his hand — piety as stage prop, legitimizing the claim to the throne",
+        "Two family relatives — to suggest dynastic legitimacy",
+        "Two scholars — to suggest intellectual depth"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 91,
+      "anchor_line_end": 95
+    },
+    {
+      "id": "richard_iii_act3_scene7_q4",
+      "kind": "close_reading",
+      "prompt": "Richard's formal refusal speech (137–169) works how?",
+      "options": [
+        "It is a sincere declaration of unworthiness that Richard genuinely holds",
+        "It deploys two individually plausible arguments (personal unworthiness, legitimate succession), combining to make the eventual acceptance look like reluctant overriding of personal scruple",
+        "It is incoherent, revealing Richard's cracking composure",
+        "It relies on direct biblical citation"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 137,
+      "anchor_line_end": 169
+    },
+    {
+      "id": "richard_iii_act3_scene7_q5",
+      "kind": "historical",
+      "prompt": "The legal argument that Edward IV's children are illegitimate — based on a pre-contract to \"Lady Lucy\" and the Bona of Savoy proxy — has what basis?",
+      "options": [
+        "Pure invention; no such arguments were ever made",
+        "It draws on the historical Titulus Regius (1484), which formally declared Richard III legitimate king — a real legal argument historians still debate",
+        "It was invented by Henry VII after Bosworth to discredit Richard",
+        "It originates in Holinshed alone, with no earlier source"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 175,
+      "anchor_line_end": 187
+    },
+    {
+      "id": "richard_iii_act3_scene7_q6",
+      "kind": "theme",
+      "prompt": "What is the scene's larger claim about political legitimacy?",
+      "options": [
+        "Legitimacy rests on ancient lineage, independent of performance",
+        "Illegitimate power claims legitimacy through theatre — the acceptance must look like a reluctant yielding rather than a seizure",
+        "Legitimacy requires only military strength",
+        "Only God can confer legitimacy, which is why the clergymen are necessary"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 230
+    }
+  ]
+}

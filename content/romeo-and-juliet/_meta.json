@@ -1,0 +1,33 @@
+{
+  "work_id": "romeo-and-juliet",
+  "title": "Romeo and Juliet",
+  "author": "William Shakespeare",
+  "source": "Standard Ebooks",
+  "source_url": "https://standardebooks.org/ebooks/william-shakespeare/romeo-and-juliet",
+  "language": "en",
+  "year": 1597,
+  "genre": "Drama",
+  "tradition": "English",
+  "difficulty": "Advanced",
+  "section_count": 26,
+  "total_lines": 2996,
+  "total_words": 23795,
+  "est_read_minutes": 119,
+  "structural_unit_type": "act_scene",
+  "tier_1_sections": [
+    "romeo_and_juliet_prologue",
+    "romeo_and_juliet_act1_scene5",
+    "romeo_and_juliet_act2_scene2",
+    "romeo_and_juliet_act3_scene1",
+    "romeo_and_juliet_act3_scene5",
+    "romeo_and_juliet_act5_scene3"
+  ],
+  "edition_note": null,
+  "cover_met_object_id": "436896",
+  "cover_title": "Portrait of a Woman with a Man at a Casement",
+  "cover_artist": "Fra Filippo Lippi",
+  "cover_year": "ca. 1440",
+  "cover_image_url": "https://images.metmuseum.org/CRDImages/ep/original/DP159891.jpg",
+  "cover_source_url": "https://www.metmuseum.org/art/collection/search/436896",
+  "cover_public_domain_status": "CC0"
+}

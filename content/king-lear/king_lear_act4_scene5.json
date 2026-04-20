@@ -1,0 +1,295 @@
+{
+  "section_id": "king_lear_act4_scene5",
+  "work_id": "king-lear",
+  "sequence": 21,
+  "act": 4,
+  "scene": 5,
+  "kind": "scene",
+  "scene_title": "Gloucester's castle",
+  "line_count": 44,
+  "word_count": 311,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "REGAN",
+      "text": "But are my brother’s powers set forth?"
+    },
+    {
+      "number": 2,
+      "speaker": "OSWALD",
+      "text": "Ay, madam."
+    },
+    {
+      "number": 2,
+      "speaker": "REGAN",
+      "text": "Himself in person there?"
+    },
+    {
+      "number": 3,
+      "speaker": "OSWALD",
+      "text": "Madam, with much ado: Your sister is the better soldier."
+    },
+    {
+      "number": 4,
+      "speaker": "REGAN",
+      "text": "Lord Edmund spake not with your lord at home?"
+    },
+    {
+      "number": 5,
+      "speaker": "OSWALD",
+      "text": "No, madam."
+    },
+    {
+      "number": 6,
+      "speaker": "REGAN",
+      "text": "What might import my sister’s letter to him?"
+    },
+    {
+      "number": 7,
+      "speaker": "OSWALD",
+      "text": "I know not, lady."
+    },
+    {
+      "number": 8,
+      "speaker": "REGAN",
+      "text": "’Faith, he is posted hence on serious matter."
+    },
+    {
+      "number": 9,
+      "speaker": "REGAN",
+      "text": "It was great ignorance, Gloucester’s eyes being out,"
+    },
+    {
+      "number": 10,
+      "speaker": "REGAN",
+      "text": "To let him live: where he arrives he moves"
+    },
+    {
+      "number": 11,
+      "speaker": "REGAN",
+      "text": "All hearts against us: Edmund, I think, is gone,"
+    },
+    {
+      "number": 12,
+      "speaker": "REGAN",
+      "text": "In pity of his misery, to dispatch"
+    },
+    {
+      "number": 13,
+      "speaker": "REGAN",
+      "text": "His nighted life: moreover, to descry"
+    },
+    {
+      "number": 14,
+      "speaker": "REGAN",
+      "text": "The strength o’ the enemy."
+    },
+    {
+      "number": 15,
+      "speaker": "OSWALD",
+      "text": "I must needs after him, madam, with my letter."
+    },
+    {
+      "number": 16,
+      "speaker": "REGAN",
+      "text": "Our troops set forth to-morrow: stay with us;"
+    },
+    {
+      "number": 17,
+      "speaker": "REGAN",
+      "text": "The ways are dangerous."
+    },
+    {
+      "number": 17,
+      "speaker": "OSWALD",
+      "text": "I may not, madam:"
+    },
+    {
+      "number": 18,
+      "speaker": "OSWALD",
+      "text": "My lady charged my duty in this business."
+    },
+    {
+      "number": 19,
+      "speaker": "REGAN",
+      "text": "Why should she write to Edmund? Might not you"
+    },
+    {
+      "number": 20,
+      "speaker": "REGAN",
+      "text": "Transport her purposes by word? Belike,"
+    },
+    {
+      "number": 21,
+      "speaker": "REGAN",
+      "text": "Something—I know not what: I’ll love thee much,"
+    },
+    {
+      "number": 22,
+      "speaker": "REGAN",
+      "text": "Let me unseal the letter."
+    },
+    {
+      "number": 22,
+      "speaker": "OSWALD",
+      "text": "Madam, I had rather—"
+    },
+    {
+      "number": 23,
+      "speaker": "REGAN",
+      "text": "I know your lady does not love her husband;"
+    },
+    {
+      "number": 24,
+      "speaker": "REGAN",
+      "text": "I am sure of that: and at her late being here"
+    },
+    {
+      "number": 25,
+      "speaker": "REGAN",
+      "text": "She gave strange oeillades and most speaking looks"
+    },
+    {
+      "number": 26,
+      "speaker": "REGAN",
+      "text": "To noble Edmund. I know you are of her bosom."
+    },
+    {
+      "number": 27,
+      "speaker": "OSWALD",
+      "text": "I, madam?"
+    },
+    {
+      "number": 28,
+      "speaker": "REGAN",
+      "text": "I speak in understanding; you are; I know’t:"
+    },
+    {
+      "number": 29,
+      "speaker": "REGAN",
+      "text": "Therefore I do advise you, take this note:"
+    },
+    {
+      "number": 30,
+      "speaker": "REGAN",
+      "text": "My lord is dead; Edmund and I have talk’d;"
+    },
+    {
+      "number": 31,
+      "speaker": "REGAN",
+      "text": "And more convenient is he for my hand"
+    },
+    {
+      "number": 32,
+      "speaker": "REGAN",
+      "text": "Than for your lady’s: you may gather more."
+    },
+    {
+      "number": 33,
+      "speaker": "REGAN",
+      "text": "If you do find him, pray you, give him this;"
+    },
+    {
+      "number": 34,
+      "speaker": "REGAN",
+      "text": "And when your mistress hears thus much from you,"
+    },
+    {
+      "number": 35,
+      "speaker": "REGAN",
+      "text": "I pray, desire her call her wisdom to her."
+    },
+    {
+      "number": 36,
+      "speaker": "REGAN",
+      "text": "So, fare you well."
+    },
+    {
+      "number": 37,
+      "speaker": "REGAN",
+      "text": "If you do chance to hear of that blind traitor,"
+    },
+    {
+      "number": 38,
+      "speaker": "REGAN",
+      "text": "Preferment falls on him that cuts him off."
+    },
+    {
+      "number": 39,
+      "speaker": "OSWALD",
+      "text": "Would I could meet him, madam! I should show"
+    },
+    {
+      "number": 40,
+      "speaker": "OSWALD",
+      "text": "What party I do follow."
+    },
+    {
+      "number": 40,
+      "speaker": "REGAN",
+      "text": "Fare thee well."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Regan and Oswald."
+    },
+    {
+      "after_line": 40,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act4_scene5_gloss1",
+      "line": 6,
+      "phrase": "sister’s",
+      "definition": "Goneril's"
+    },
+    {
+      "id": "king_lear_act4_scene5_gloss2",
+      "line": 13,
+      "phrase": "nighted life",
+      "definition": "Gloucester's blind life"
+    },
+    {
+      "id": "king_lear_act4_scene5_gloss4",
+      "line": 6,
+      "phrase": "sister’s letter",
+      "definition": "Goneril's letter to Edmund — love-note"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act4_scene5_ann1",
+      "line_start": 25,
+      "line_end": 40,
+      "citation_display": "King Lear 4.5.25–40",
+      "category": "thematic",
+      "title": "Regan and Goneril's rivalry for Edmund — mutual destruction set in motion",
+      "body": "With Cornwall dead, Regan is newly available and presses her claim to Edmund: 'I know your lady does not love her husband; / I am sure of that.' Goneril's letter, hidden on Oswald's body, will eventually surface. The rivalry is darkly funny — two women in their forties competing over a bastard half their age who is using them both — but it is also structurally decisive. Edmund's courtship of both sisters is the mechanism by which they will poison each other (Goneril poisoning Regan, then taking her own life). Shakespeare is letting Edmund be the knife each sister is handing the other. Their sexual rivalry is the play's most compressed study of how evil ultimately consumes itself — not because evil is self-punishing in general, but because Edmund is specifically more dangerous than anyone he plays.",
+      "sources": [
+        "Marilyn French, Shakespeare's Division of Experience (1981)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act4_scene5_q1",
+      "kind": "inference",
+      "prompt": "The sisters' rivalry for Edmund in 4.5 sets in motion —",
+      "options": [
+        "A new political alliance",
+        "Their mutual destruction — Edmund will be the knife each sister hands the other, ending in Goneril poisoning Regan and taking her own life",
+        "Edmund's escape",
+        "Cornwall's revenge"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 25,
+      "anchor_line_end": 40
+    }
+  ]
+}

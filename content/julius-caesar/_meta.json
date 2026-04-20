@@ -1,0 +1,33 @@
+{
+  "work_id": "julius-caesar",
+  "title": "Julius Caesar",
+  "author": "William Shakespeare",
+  "source": "Standard Ebooks",
+  "source_url": "https://standardebooks.org/ebooks/william-shakespeare/julius-caesar",
+  "language": "en",
+  "year": 1599,
+  "genre": "Drama",
+  "tradition": "English",
+  "difficulty": "Advanced",
+  "section_count": 18,
+  "total_lines": 2572,
+  "total_words": 19133,
+  "est_read_minutes": 96,
+  "structural_unit_type": "act_scene",
+  "tier_1_sections": [
+    "julius_caesar_act1_scene2",
+    "julius_caesar_act2_scene1",
+    "julius_caesar_act3_scene1",
+    "julius_caesar_act3_scene2",
+    "julius_caesar_act4_scene3",
+    "julius_caesar_act5_scene5"
+  ],
+  "edition_note": null,
+  "cover_met_object_id": null,
+  "cover_title": "Oath of the Horatii",
+  "cover_artist": "Jacques-Louis David",
+  "cover_year": "1784",
+  "cover_image_url": "/paintings/oath-of-the-horatii.jpg",
+  "cover_source_url": "https://collections.louvre.fr/en/ark:/53355/cl010062182",
+  "cover_public_domain_status": "PD-Old"
+}

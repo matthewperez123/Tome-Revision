@@ -1,0 +1,89 @@
+{
+  "section_id": "hamlet_act3_scene2",
+  "trials": [
+    {
+      "kind": "close_reading",
+      "prompt": "What style of acting does Hamlet criticize in his advice to the players?",
+      "options": [
+        "The naturalistic whisper of boy actors in girls' roles.",
+        "The bombastic, air-slashing ranting of actors who 'out-herod Herod.'",
+        "The monotone declamation of foreign troupes.",
+        "The mumbling of country actors who cannot be heard in the galleries."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 4,
+      "anchor_line_end": 17
+    },
+    {
+      "kind": "theme",
+      "prompt": "What quality in Horatio does Hamlet admire most?",
+      "options": [
+        "His physical courage in battle.",
+        "His calm imperviousness to fortune — he is 'not passion's slave.'",
+        "His knowledge of Latin and Greek.",
+        "His connections at the English court."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 55,
+      "anchor_line_end": 75
+    },
+    {
+      "kind": "comprehension",
+      "prompt": "Why does Hamlet arrange the performance of 'The Murder of Gonzago'?",
+      "options": [
+        "To entertain the King at a festival.",
+        "To re-enact his father's murder and observe Claudius for signs of guilt.",
+        "To impress Ophelia with his poetic skill.",
+        "To raise money for the traveling players."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 70,
+      "anchor_line_end": 85
+    },
+    {
+      "kind": "inference",
+      "prompt": "What does Claudius's reaction to the play's poisoning scene confirm?",
+      "options": [
+        "That the ghost was a malign spirit deceiving Hamlet.",
+        "That the ghost's account of the murder was accurate.",
+        "That Claudius is unable to tolerate violent drama.",
+        "That Gertrude was complicit in the murder."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 260,
+      "anchor_line_end": 285
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "In the recorder scene, what is Hamlet's accusation against Rosencrantz and Guildenstern?",
+      "options": [
+        "That they have poisoned the King's wine.",
+        "That they imagine they can play upon him though they cannot even play a simple pipe.",
+        "That they plan to betray him to the English king.",
+        "That they have stolen his signet ring."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 340,
+      "anchor_line_end": 355
+    },
+    {
+      "kind": "theme",
+      "prompt": "What is the dramatic function of the play-within-the-play?",
+      "options": [
+        "To give the audience a break from Hamlet's soliloquies.",
+        "To convert a private testimony (the ghost's) into public theatrical evidence Claudius cannot evade.",
+        "To introduce the character of Lucianus, who returns in Act 5.",
+        "To allow Hamlet to audition for a career as a playwright."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 236,
+      "anchor_line_end": 290
+    }
+  ]
+}

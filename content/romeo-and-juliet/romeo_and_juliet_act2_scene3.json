@@ -1,0 +1,802 @@
+{
+  "section_id": "romeo_and_juliet_act2_scene3",
+  "work_id": "romeo-and-juliet",
+  "sequence": 10,
+  "act": 2,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "Friar Laurence's cell",
+  "line_count": 97,
+  "word_count": 753,
+  "est_read_minutes": 4,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "FRIAR LAURENCE",
+      "text": "The grey-eyed morn smiles on the frowning night,"
+    },
+    {
+      "number": 2,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Chequering the eastern clouds with streaks of light,"
+    },
+    {
+      "number": 3,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And flecked darkness like a drunkard reels"
+    },
+    {
+      "number": 4,
+      "speaker": "FRIAR LAURENCE",
+      "text": "From forth day’s path and Titan’s fiery wheels:"
+    },
+    {
+      "number": 5,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Now, ere the sun advance his burning eye,"
+    },
+    {
+      "number": 6,
+      "speaker": "FRIAR LAURENCE",
+      "text": "The day to cheer and night’s dank dew to dry,"
+    },
+    {
+      "number": 7,
+      "speaker": "FRIAR LAURENCE",
+      "text": "I must up-fill this osier cage of ours"
+    },
+    {
+      "number": 8,
+      "speaker": "FRIAR LAURENCE",
+      "text": "With baleful weeds and precious-juiced flowers."
+    },
+    {
+      "number": 9,
+      "speaker": "FRIAR LAURENCE",
+      "text": "The earth that’s nature’s mother is her tomb;"
+    },
+    {
+      "number": 10,
+      "speaker": "FRIAR LAURENCE",
+      "text": "What is her burying grave that is her womb,"
+    },
+    {
+      "number": 11,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And from her womb children of divers kind"
+    },
+    {
+      "number": 12,
+      "speaker": "FRIAR LAURENCE",
+      "text": "We sucking on her natural bosom find,"
+    },
+    {
+      "number": 13,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Many for many virtues excellent,"
+    },
+    {
+      "number": 14,
+      "speaker": "FRIAR LAURENCE",
+      "text": "None but for some and yet all different."
+    },
+    {
+      "number": 15,
+      "speaker": "FRIAR LAURENCE",
+      "text": "O, mickle is the powerful grace that lies"
+    },
+    {
+      "number": 16,
+      "speaker": "FRIAR LAURENCE",
+      "text": "In herbs, plants, stones, and their true qualities:"
+    },
+    {
+      "number": 17,
+      "speaker": "FRIAR LAURENCE",
+      "text": "For nought so vile that on the earth doth live"
+    },
+    {
+      "number": 18,
+      "speaker": "FRIAR LAURENCE",
+      "text": "But to the earth some special good doth give,"
+    },
+    {
+      "number": 19,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Nor aught so good but strain’d from that fair use"
+    },
+    {
+      "number": 20,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Revolts from true birth, stumbling on abuse:"
+    },
+    {
+      "number": 21,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Virtue itself turns vice, being misapplied;"
+    },
+    {
+      "number": 22,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And vice sometimes by action dignified."
+    },
+    {
+      "number": 23,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Within the infant rind of this small flower"
+    },
+    {
+      "number": 24,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Poison hath residence and medicine power:"
+    },
+    {
+      "number": 25,
+      "speaker": "FRIAR LAURENCE",
+      "text": "For this, being smelt, with that part cheers each part;"
+    },
+    {
+      "number": 26,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Being tasted, slays all senses with the heart."
+    },
+    {
+      "number": 27,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Two such opposed kings encamp them still"
+    },
+    {
+      "number": 28,
+      "speaker": "FRIAR LAURENCE",
+      "text": "In man as well as herbs, grace and rude will;"
+    },
+    {
+      "number": 29,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And where the worser is predominant,"
+    },
+    {
+      "number": 30,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Full soon the canker death eats up that plant."
+    },
+    {
+      "number": 31,
+      "speaker": "ROMEO",
+      "text": "Good morrow, father."
+    },
+    {
+      "number": 31,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Benedicite!"
+    },
+    {
+      "number": 32,
+      "speaker": "FRIAR LAURENCE",
+      "text": "What early tongue so sweet saluteth me?"
+    },
+    {
+      "number": 33,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Young son, it argues a distemper’d head"
+    },
+    {
+      "number": 34,
+      "speaker": "FRIAR LAURENCE",
+      "text": "So soon to bid good morrow to thy bed:"
+    },
+    {
+      "number": 35,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Care keeps his watch in every old man’s eye,"
+    },
+    {
+      "number": 36,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And where care lodges, sleep will never lie;"
+    },
+    {
+      "number": 37,
+      "speaker": "FRIAR LAURENCE",
+      "text": "But where unbruised youth with unstuff’d brain"
+    },
+    {
+      "number": 38,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Doth couch his limbs, there golden sleep doth reign:"
+    },
+    {
+      "number": 39,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Therefore thy earliness doth me assure"
+    },
+    {
+      "number": 40,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Thou art up-roused by some distemperature;"
+    },
+    {
+      "number": 41,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Or if not so, then here I hit it right,"
+    },
+    {
+      "number": 42,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Our Romeo hath not been in bed to-night."
+    },
+    {
+      "number": 43,
+      "speaker": "ROMEO",
+      "text": "That last is true; the sweeter rest was mine."
+    },
+    {
+      "number": 44,
+      "speaker": "FRIAR LAURENCE",
+      "text": "God pardon sin! wast thou with Rosaline?"
+    },
+    {
+      "number": 45,
+      "speaker": "ROMEO",
+      "text": "With Rosaline, my ghostly father? no;"
+    },
+    {
+      "number": 46,
+      "speaker": "ROMEO",
+      "text": "I have forgot that name, and that name’s woe."
+    },
+    {
+      "number": 47,
+      "speaker": "FRIAR LAURENCE",
+      "text": "That’s my good son: but where hast thou been, then?"
+    },
+    {
+      "number": 48,
+      "speaker": "ROMEO",
+      "text": "I’ll tell thee, ere thou ask it me again."
+    },
+    {
+      "number": 49,
+      "speaker": "ROMEO",
+      "text": "I have been feasting with mine enemy,"
+    },
+    {
+      "number": 50,
+      "speaker": "ROMEO",
+      "text": "Where on a sudden one hath wounded me,"
+    },
+    {
+      "number": 51,
+      "speaker": "ROMEO",
+      "text": "That’s by me wounded: both our remedies"
+    },
+    {
+      "number": 52,
+      "speaker": "ROMEO",
+      "text": "Within thy help and holy physic lies:"
+    },
+    {
+      "number": 53,
+      "speaker": "ROMEO",
+      "text": "I bear no hatred, blessed man, for, lo,"
+    },
+    {
+      "number": 54,
+      "speaker": "ROMEO",
+      "text": "My intercession likewise steads my foe."
+    },
+    {
+      "number": 55,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Be plain, good son, and homely in thy drift;"
+    },
+    {
+      "number": 56,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Riddling confession finds but riddling shrift."
+    },
+    {
+      "number": 57,
+      "speaker": "ROMEO",
+      "text": "Then plainly know my heart’s dear love is set"
+    },
+    {
+      "number": 58,
+      "speaker": "ROMEO",
+      "text": "On the fair daughter of rich Capulet:"
+    },
+    {
+      "number": 59,
+      "speaker": "ROMEO",
+      "text": "As mine on hers, so hers is set on mine;"
+    },
+    {
+      "number": 60,
+      "speaker": "ROMEO",
+      "text": "And all combined, save what thou must combine"
+    },
+    {
+      "number": 61,
+      "speaker": "ROMEO",
+      "text": "By holy marriage: when and where and how"
+    },
+    {
+      "number": 62,
+      "speaker": "ROMEO",
+      "text": "We met, we woo’d and made exchange of vow,"
+    },
+    {
+      "number": 63,
+      "speaker": "ROMEO",
+      "text": "I’ll tell thee as we pass; but this I pray,"
+    },
+    {
+      "number": 64,
+      "speaker": "ROMEO",
+      "text": "That thou consent to marry us to-day."
+    },
+    {
+      "number": 65,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Holy Saint Francis, what a change is here!"
+    },
+    {
+      "number": 66,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Is Rosaline, whom thou didst love so dear,"
+    },
+    {
+      "number": 67,
+      "speaker": "FRIAR LAURENCE",
+      "text": "So soon forsaken? young men’s love then lies"
+    },
+    {
+      "number": 68,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Not truly in their hearts, but in their eyes."
+    },
+    {
+      "number": 69,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Jesu Maria, what a deal of brine"
+    },
+    {
+      "number": 70,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Hath wash’d thy sallow cheeks for Rosaline!"
+    },
+    {
+      "number": 71,
+      "speaker": "FRIAR LAURENCE",
+      "text": "How much salt water thrown away in waste,"
+    },
+    {
+      "number": 72,
+      "speaker": "FRIAR LAURENCE",
+      "text": "To season love, that of it doth not taste!"
+    },
+    {
+      "number": 73,
+      "speaker": "FRIAR LAURENCE",
+      "text": "The sun not yet thy sighs from heaven clears,"
+    },
+    {
+      "number": 74,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Thy old groans ring yet in my ancient ears;"
+    },
+    {
+      "number": 75,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Lo, here upon thy cheek the stain doth sit"
+    },
+    {
+      "number": 76,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Of an old tear that is not wash’d off yet:"
+    },
+    {
+      "number": 77,
+      "speaker": "FRIAR LAURENCE",
+      "text": "If e’er thou wast thyself and these woes thine,"
+    },
+    {
+      "number": 78,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Thou and these woes were all for Rosaline:"
+    },
+    {
+      "number": 79,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And art thou changed? pronounce this sentence then,"
+    },
+    {
+      "number": 80,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Women may fall, when there’s no strength in men."
+    },
+    {
+      "number": 81,
+      "speaker": "ROMEO",
+      "text": "Thou chid’st me oft for loving Rosaline."
+    },
+    {
+      "number": 82,
+      "speaker": "FRIAR LAURENCE",
+      "text": "For doting, not for loving, pupil mine."
+    },
+    {
+      "number": 83,
+      "speaker": "ROMEO",
+      "text": "And bad’st me bury love."
+    },
+    {
+      "number": 83,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Not in a grave,"
+    },
+    {
+      "number": 84,
+      "speaker": "FRIAR LAURENCE",
+      "text": "To lay one in, another out to have."
+    },
+    {
+      "number": 85,
+      "speaker": "ROMEO",
+      "text": "I pray thee, chide not: she whom I love now"
+    },
+    {
+      "number": 86,
+      "speaker": "ROMEO",
+      "text": "Doth grace for grace and love for love allow;"
+    },
+    {
+      "number": 87,
+      "speaker": "ROMEO",
+      "text": "The other did not so."
+    },
+    {
+      "number": 87,
+      "speaker": "FRIAR LAURENCE",
+      "text": "O, she knew well"
+    },
+    {
+      "number": 88,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Thy love did read by rote and could not spell."
+    },
+    {
+      "number": 89,
+      "speaker": "FRIAR LAURENCE",
+      "text": "But come, young waverer, come, go with me,"
+    },
+    {
+      "number": 90,
+      "speaker": "FRIAR LAURENCE",
+      "text": "In one respect I’ll thy assistant be;"
+    },
+    {
+      "number": 91,
+      "speaker": "FRIAR LAURENCE",
+      "text": "For this alliance may so happy prove,"
+    },
+    {
+      "number": 92,
+      "speaker": "FRIAR LAURENCE",
+      "text": "To turn your households’ rancour to pure love."
+    },
+    {
+      "number": 93,
+      "speaker": "ROMEO",
+      "text": "O, let us hence; I stand on sudden haste."
+    },
+    {
+      "number": 94,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Wisely and slow; they stumble that run fast."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Friar Laurence, with a basket."
+    },
+    {
+      "after_line": 30,
+      "text": "Enter Romeo."
+    },
+    {
+      "after_line": 94,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss1",
+      "line": 1,
+      "phrase": "grey-eyed morn",
+      "definition": "dawn, personified with grey eyes"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss2",
+      "line": 2,
+      "phrase": "Chequering the eastern clouds",
+      "definition": "dappling the sky at dawn"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss3",
+      "line": 3,
+      "phrase": "drunkard reels",
+      "definition": "staggers like a drunk man"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss4",
+      "line": 4,
+      "phrase": "Titan’s fiery wheels",
+      "definition": "the sun-god's fiery chariot wheels (Helios/Titan)"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss5",
+      "line": 7,
+      "phrase": "osier cage",
+      "definition": "willow-basket for gathering herbs"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss6",
+      "line": 8,
+      "phrase": "baleful weeds",
+      "definition": "harmful plants; poisonous weeds"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss7",
+      "line": 8,
+      "phrase": "precious-juiced flowers",
+      "definition": "plants with valuable medicinal sap"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss8",
+      "line": 13,
+      "phrase": "Many for many virtues excellent",
+      "definition": "many plants have many excellent properties"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss9",
+      "line": 15,
+      "phrase": "mickle",
+      "definition": "great; much — archaic"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss10",
+      "line": 15,
+      "phrase": "powerful grace",
+      "definition": "potent curative power"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss11",
+      "line": 19,
+      "phrase": "strain’d from that fair use",
+      "definition": "diverted from its proper purpose"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss12",
+      "line": 21,
+      "phrase": "Virtue itself turns vice, being misapplied",
+      "definition": "the Friar's moral centerpiece — good intent misused becomes evil"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss13",
+      "line": 22,
+      "phrase": "action dignified",
+      "definition": "purpose ennobled"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss14",
+      "line": 23,
+      "phrase": "infant rind",
+      "definition": "the young bark or skin of the plant"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss15",
+      "line": 24,
+      "phrase": "Poison hath residence and medicine power",
+      "definition": "the Friar's double nature: a single plant holds both cure and poison — Friar's plot will prove this"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss16",
+      "line": 30,
+      "phrase": "Full soon the canker death eats up that plant",
+      "definition": "death soon kills even a well-ordered plant — mortality is universal"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss17",
+      "line": 27,
+      "phrase": "opposed kings encamp them still",
+      "definition": "two opposing monarchs always camp in us — grace and will"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss18",
+      "line": 28,
+      "phrase": "rude",
+      "definition": "violent; aggressive"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss19",
+      "line": 31,
+      "phrase": "Benedicite!",
+      "definition": "Latin: 'Bless you' — Friar's greeting"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss20",
+      "line": 33,
+      "phrase": "distemper’d",
+      "definition": "disturbed; off-balance"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss21",
+      "line": 37,
+      "phrase": "unbruised youth",
+      "definition": "unworn young man; not yet bruised by love's defeats"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss22",
+      "line": 37,
+      "phrase": "unstuff’d brain",
+      "definition": "empty-headed; carefree"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss23",
+      "line": 38,
+      "phrase": "golden sleep",
+      "definition": "sound, peaceful slumber"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss24",
+      "line": 40,
+      "phrase": "distemperature",
+      "definition": "disorder; imbalance of humors"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss25",
+      "line": 55,
+      "phrase": "homely",
+      "definition": "plain; unadorned"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss26",
+      "line": 55,
+      "phrase": "drift",
+      "definition": "intent; general meaning"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss27",
+      "line": 54,
+      "phrase": "my foe",
+      "definition": "my enemy's daughter"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss28",
+      "line": 81,
+      "phrase": "chid",
+      "definition": "scolded (past tense of 'chide')"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss29",
+      "line": 69,
+      "phrase": "Jesu Maria",
+      "definition": "Jesus and Mary — Friar's exclamation of disbelief"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss30",
+      "line": 82,
+      "phrase": "doting",
+      "definition": "infatuated — not truly loving"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss31",
+      "line": 69,
+      "phrase": "brine",
+      "definition": "salt tears"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss32",
+      "line": 72,
+      "phrase": "season",
+      "definition": "preserve; flavor (salt)"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss33",
+      "line": 79,
+      "phrase": "sentence",
+      "definition": "maxim; proverb"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss34",
+      "line": 92,
+      "phrase": "rancour",
+      "definition": "bitter hostility"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss35",
+      "line": 92,
+      "phrase": "pure love",
+      "definition": "alchemical metaphor — love refining baser feuding into gold"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss36",
+      "line": 93,
+      "phrase": "stand on sudden haste",
+      "definition": "insist on speed"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss37",
+      "line": 94,
+      "phrase": "Wisely and slow",
+      "definition": "the Friar's warning that will go unheeded; proverb for cautious judgment"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_gloss38",
+      "line": 94,
+      "phrase": "they stumble that run fast",
+      "definition": "haste makes for falls — the Friar's advice and the play's epitaph"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act2_scene3_ann1",
+      "line_start": 17,
+      "line_end": 30,
+      "citation_display": "Romeo and Juliet 2.3.17–30",
+      "category": "thematic",
+      "title": "Friar Laurence's moral philosophy — poison and medicine in one root",
+      "body": "The Friar's opening soliloquy is the play's moral centerpiece. 'Within the infant rind of this weak flower / Poison hath residence and medicine power' — a single plant contains both the remedy and the kill, and only the user's intent makes the difference. 'Virtue itself turns vice, being misapplied, / And vice sometime's by action dignified.' This is Aristotelian ethics compressed into herbalism: the same substance is good or bad according to use. The philosophy matters because the Friar will test it in his own plot: the sleeping-draught he gives Juliet is intended to save her (medicine) but functionally kills both lovers (poison). The Friar is not a holy fool. He is the play's applied moral philosopher, and his plan fails because the material world (plague quarantine, missed letters, timing) does not cooperate with even the best intentions. His actions have real consequences — Shakespeare's moral universe does not excuse motive when outcome is catastrophe.",
+      "sources": [
+        "Douglas Peterson, Time, Tide, and Tempest (1973)",
+        "Paul A. Cantor, Shakespeare's Rome (1976)"
+      ]
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_ann2",
+      "line_start": 94,
+      "line_end": 96,
+      "citation_display": "Romeo and Juliet 2.3.94–96",
+      "category": "thematic",
+      "title": "'Wisely and slow; they stumble that run fast'",
+      "body": "The Friar's advice to Romeo — 'Wisely and slow; they stumble that run fast' — would if heeded stop the tragedy. It will be ignored almost immediately. This warning joins a chorus of advisory lines the play gives its lovers and audience ('these violent delights have violent ends,' 'too rash, too unadvised, too sudden'). The tragedy is not caused by the absence of wisdom; it is caused by speed overrunning it. Shakespeare repeatedly shows characters who know exactly what they should do and cannot bring themselves to do it — which is a much harder and more interesting shape of tragedy than mere ignorance.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act2_scene3_q1",
+      "kind": "theme",
+      "prompt": "What moral claim does the Friar's herb-philosophy make?",
+      "options": [
+        "Plants are inherently good",
+        "A single plant holds both poison and medicine — use (intent and action) determines virtue",
+        "Only the Church's plants are safe",
+        "All plants are harmful unless blessed"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 17,
+      "anchor_line_end": 30
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene3_q2",
+      "kind": "structural",
+      "prompt": "The Friar's 'Wisely and slow; they stumble that run fast' functions as —",
+      "options": [
+        "Idle proverbial filler",
+        "A warning whose ignoring will drive the tragedy — the play gives its characters the advice they fail to take",
+        "A line praising Romeo's maturity",
+        "A religious blessing"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 94,
+      "anchor_line_end": 96
+    }
+  ]
+}

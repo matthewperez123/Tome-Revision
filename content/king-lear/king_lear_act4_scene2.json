@@ -1,0 +1,785 @@
+{
+  "section_id": "king_lear_act4_scene2",
+  "work_id": "king-lear",
+  "sequence": 18,
+  "act": 4,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "Before the Duke of Albany's palace",
+  "line_count": 110,
+  "word_count": 761,
+  "est_read_minutes": 4,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "GONERIL",
+      "text": "Welcome, my lord: I marvel our mild husband"
+    },
+    {
+      "number": 2,
+      "speaker": "GONERIL",
+      "text": "Not met us on the way."
+    },
+    {
+      "number": 3,
+      "speaker": "OSWALD",
+      "text": "Madam, within; but never man so changed."
+    },
+    {
+      "number": 4,
+      "speaker": "OSWALD",
+      "text": "I told him of the army that was landed;"
+    },
+    {
+      "number": 5,
+      "speaker": "OSWALD",
+      "text": "He smiled at it: I told him you were coming:"
+    },
+    {
+      "number": 6,
+      "speaker": "OSWALD",
+      "text": "His answer was “The worse:” of Gloucester’s treachery,"
+    },
+    {
+      "number": 7,
+      "speaker": "OSWALD",
+      "text": "And of the loyal service of his son,"
+    },
+    {
+      "number": 8,
+      "speaker": "OSWALD",
+      "text": "When I inform’d him, then he call’d me sot,"
+    },
+    {
+      "number": 9,
+      "speaker": "OSWALD",
+      "text": "And told me I had turn’d the wrong side out:"
+    },
+    {
+      "number": 10,
+      "speaker": "OSWALD",
+      "text": "What most he should dislike seems pleasant to him;"
+    },
+    {
+      "number": 11,
+      "speaker": "OSWALD",
+      "text": "What like, offensive."
+    },
+    {
+      "number": 12,
+      "speaker": "GONERIL",
+      "text": "To Edmund. Then shall you go no further."
+    },
+    {
+      "number": 13,
+      "speaker": "GONERIL",
+      "text": "It is the cowish terror of his spirit,"
+    },
+    {
+      "number": 14,
+      "speaker": "GONERIL",
+      "text": "That dares not undertake: he’ll not feel wrongs"
+    },
+    {
+      "number": 15,
+      "speaker": "GONERIL",
+      "text": "Which tie him to an answer. Our wishes on the way"
+    },
+    {
+      "number": 16,
+      "speaker": "GONERIL",
+      "text": "May prove effects. Back, Edmund, to my brother;"
+    },
+    {
+      "number": 17,
+      "speaker": "GONERIL",
+      "text": "Hasten his musters and conduct his powers:"
+    },
+    {
+      "number": 18,
+      "speaker": "GONERIL",
+      "text": "I must change arms at home, and give the distaff"
+    },
+    {
+      "number": 19,
+      "speaker": "GONERIL",
+      "text": "Into my husband’s hands. This trusty servant"
+    },
+    {
+      "number": 20,
+      "speaker": "GONERIL",
+      "text": "Shall pass between us: ere long you are like to hear,"
+    },
+    {
+      "number": 21,
+      "speaker": "GONERIL",
+      "text": "If you dare venture in your own behalf,"
+    },
+    {
+      "number": 22,
+      "speaker": "GONERIL",
+      "text": "A mistress’s command. Wear this; spare speech;"
+    },
+    {
+      "number": 23,
+      "speaker": "GONERIL",
+      "text": "Decline your head: this kiss, if it durst speak,"
+    },
+    {
+      "number": 24,
+      "speaker": "GONERIL",
+      "text": "Would stretch thy spirits up into the air:"
+    },
+    {
+      "number": 25,
+      "speaker": "GONERIL",
+      "text": "Conceive, and fare thee well."
+    },
+    {
+      "number": 25,
+      "speaker": "EDMUND",
+      "text": "Yours in the ranks of death."
+    },
+    {
+      "number": 26,
+      "speaker": "GONERIL",
+      "text": "My most dear Gloucester!"
+    },
+    {
+      "number": 27,
+      "speaker": "GONERIL",
+      "text": "O, the difference of man and man!"
+    },
+    {
+      "number": 28,
+      "speaker": "GONERIL",
+      "text": "To thee a woman’s services are due:"
+    },
+    {
+      "number": 29,
+      "speaker": "GONERIL",
+      "text": "My fool usurps my body."
+    },
+    {
+      "number": 29,
+      "speaker": "OSWALD",
+      "text": "Madam, here comes my lord."
+    },
+    {
+      "number": 30,
+      "speaker": "GONERIL",
+      "text": "I have been worth the whistle."
+    },
+    {
+      "number": 30,
+      "speaker": "ALBANY",
+      "text": "O Goneril!"
+    },
+    {
+      "number": 31,
+      "speaker": "ALBANY",
+      "text": "You are not worth the dust which the rude wind"
+    },
+    {
+      "number": 32,
+      "speaker": "ALBANY",
+      "text": "Blows in your face. I fear your disposition:"
+    },
+    {
+      "number": 33,
+      "speaker": "ALBANY",
+      "text": "That nature, which contemns its origin,"
+    },
+    {
+      "number": 34,
+      "speaker": "ALBANY",
+      "text": "Cannot be border’d certain in itself;"
+    },
+    {
+      "number": 35,
+      "speaker": "ALBANY",
+      "text": "She that herself will sliver and disbranch"
+    },
+    {
+      "number": 36,
+      "speaker": "ALBANY",
+      "text": "From her material sap, perforce must wither"
+    },
+    {
+      "number": 37,
+      "speaker": "ALBANY",
+      "text": "And come to deadly use."
+    },
+    {
+      "number": 37,
+      "speaker": "GONERIL",
+      "text": "No more; the text is foolish."
+    },
+    {
+      "number": 38,
+      "speaker": "ALBANY",
+      "text": "Wisdom and goodness to the vile seem vile:"
+    },
+    {
+      "number": 39,
+      "speaker": "ALBANY",
+      "text": "Filths savour but themselves. What have you done?"
+    },
+    {
+      "number": 40,
+      "speaker": "ALBANY",
+      "text": "Tigers, not daughters, what have you perform’d?"
+    },
+    {
+      "number": 41,
+      "speaker": "ALBANY",
+      "text": "A father, and a gracious aged man,"
+    },
+    {
+      "number": 42,
+      "speaker": "ALBANY",
+      "text": "Whose reverence even the head-lugg’d bear would lick,"
+    },
+    {
+      "number": 43,
+      "speaker": "ALBANY",
+      "text": "Most barbarous, most degenerate! have you madded."
+    },
+    {
+      "number": 44,
+      "speaker": "ALBANY",
+      "text": "Could my good brother suffer you to do it?"
+    },
+    {
+      "number": 45,
+      "speaker": "ALBANY",
+      "text": "A man, a prince, by him so benefited!"
+    },
+    {
+      "number": 46,
+      "speaker": "ALBANY",
+      "text": "If that the heavens do not their visible spirits"
+    },
+    {
+      "number": 47,
+      "speaker": "ALBANY",
+      "text": "Send quickly down to tame these vile offences,"
+    },
+    {
+      "number": 48,
+      "speaker": "ALBANY",
+      "text": "It will come,"
+    },
+    {
+      "number": 49,
+      "speaker": "ALBANY",
+      "text": "Humanity must perforce prey on itself,"
+    },
+    {
+      "number": 50,
+      "speaker": "ALBANY",
+      "text": "Like monsters of the deep."
+    },
+    {
+      "number": 50,
+      "speaker": "GONERIL",
+      "text": "Milk-liver’d man!"
+    },
+    {
+      "number": 51,
+      "speaker": "GONERIL",
+      "text": "That bear’st a cheek for blows, a head for wrongs;"
+    },
+    {
+      "number": 52,
+      "speaker": "GONERIL",
+      "text": "Who hast not in thy brows an eye discerning"
+    },
+    {
+      "number": 53,
+      "speaker": "GONERIL",
+      "text": "Thine honour from thy suffering; that not know’st"
+    },
+    {
+      "number": 54,
+      "speaker": "GONERIL",
+      "text": "Fools do those villains pity who are punish’d"
+    },
+    {
+      "number": 55,
+      "speaker": "GONERIL",
+      "text": "Ere they have done their mischief. Where’s thy drum?"
+    },
+    {
+      "number": 56,
+      "speaker": "GONERIL",
+      "text": "France spreads his banners in our noiseless land;"
+    },
+    {
+      "number": 57,
+      "speaker": "GONERIL",
+      "text": "With plumed helm thy slayer begins threats;"
+    },
+    {
+      "number": 58,
+      "speaker": "GONERIL",
+      "text": "Whiles thou, a moral fool, sit’st still, and criest"
+    },
+    {
+      "number": 59,
+      "speaker": "GONERIL",
+      "text": "“Alack, why does he so?”"
+    },
+    {
+      "number": 59,
+      "speaker": "ALBANY",
+      "text": "See thyself, devil!"
+    },
+    {
+      "number": 60,
+      "speaker": "ALBANY",
+      "text": "Proper deformity seems not in the fiend"
+    },
+    {
+      "number": 61,
+      "speaker": "ALBANY",
+      "text": "So horrid as in woman."
+    },
+    {
+      "number": 61,
+      "speaker": "GONERIL",
+      "text": "O vain fool!"
+    },
+    {
+      "number": 62,
+      "speaker": "ALBANY",
+      "text": "Thou changed and self-cover’d thing, for shame,"
+    },
+    {
+      "number": 63,
+      "speaker": "ALBANY",
+      "text": "Be-monster not thy feature. Were’t my fitness"
+    },
+    {
+      "number": 64,
+      "speaker": "ALBANY",
+      "text": "To let these hands obey my blood,"
+    },
+    {
+      "number": 65,
+      "speaker": "ALBANY",
+      "text": "They are apt enough to dislocate and tear"
+    },
+    {
+      "number": 66,
+      "speaker": "ALBANY",
+      "text": "Thy flesh and bones: howe’er thou art a fiend,"
+    },
+    {
+      "number": 67,
+      "speaker": "ALBANY",
+      "text": "A woman’s shape doth shield thee."
+    },
+    {
+      "number": 67,
+      "speaker": "GONERIL",
+      "text": "Marry, your manhood now—"
+    },
+    {
+      "number": 68,
+      "speaker": "ALBANY",
+      "text": "What news?"
+    },
+    {
+      "number": 69,
+      "speaker": "MESSENGER",
+      "text": "O, my good lord, the Duke of Cornwall’s dead:"
+    },
+    {
+      "number": 70,
+      "speaker": "MESSENGER",
+      "text": "Slain by his servant, going to put out"
+    },
+    {
+      "number": 71,
+      "speaker": "MESSENGER",
+      "text": "The other eye of Gloucester."
+    },
+    {
+      "number": 71,
+      "speaker": "ALBANY",
+      "text": "Gloucester’s eye!"
+    },
+    {
+      "number": 72,
+      "speaker": "MESSENGER",
+      "text": "A servant that he bred, thrill’d with remorse,"
+    },
+    {
+      "number": 73,
+      "speaker": "MESSENGER",
+      "text": "Opposed against the act, bending his sword"
+    },
+    {
+      "number": 74,
+      "speaker": "MESSENGER",
+      "text": "To his great master; who, thereat enraged,"
+    },
+    {
+      "number": 75,
+      "speaker": "MESSENGER",
+      "text": "Flew on him, and amongst them fell’d him dead;"
+    },
+    {
+      "number": 76,
+      "speaker": "MESSENGER",
+      "text": "But not without that harmful stroke, which since"
+    },
+    {
+      "number": 77,
+      "speaker": "MESSENGER",
+      "text": "Hath pluck’d him after."
+    },
+    {
+      "number": 77,
+      "speaker": "ALBANY",
+      "text": "This shows you are above,"
+    },
+    {
+      "number": 78,
+      "speaker": "ALBANY",
+      "text": "You justicers, that these our nether crimes"
+    },
+    {
+      "number": 79,
+      "speaker": "ALBANY",
+      "text": "So speedily can venge! But, O poor Gloucester!"
+    },
+    {
+      "number": 80,
+      "speaker": "ALBANY",
+      "text": "Lost he his other eye?"
+    },
+    {
+      "number": 80,
+      "speaker": "MESSENGER",
+      "text": "Both, both, my lord."
+    },
+    {
+      "number": 81,
+      "speaker": "MESSENGER",
+      "text": "This letter, madam, craves a speedy answer;"
+    },
+    {
+      "number": 82,
+      "speaker": "MESSENGER",
+      "text": "’Tis from your sister."
+    },
+    {
+      "number": 82,
+      "speaker": "GONERIL",
+      "text": "One way I like this well;"
+    },
+    {
+      "number": 83,
+      "speaker": "GONERIL",
+      "text": "But being widow, and my Gloucester with her,"
+    },
+    {
+      "number": 84,
+      "speaker": "GONERIL",
+      "text": "May all the building in my fancy pluck"
+    },
+    {
+      "number": 85,
+      "speaker": "GONERIL",
+      "text": "Upon my hateful life: another way,"
+    },
+    {
+      "number": 86,
+      "speaker": "GONERIL",
+      "text": "The news is not so tart.—I’ll read, and answer."
+    },
+    {
+      "number": 87,
+      "speaker": "ALBANY",
+      "text": "Where was his son when they did take his eyes?"
+    },
+    {
+      "number": 88,
+      "speaker": "MESSENGER",
+      "text": "Come with my lady hither."
+    },
+    {
+      "number": 88,
+      "speaker": "ALBANY",
+      "text": "He is not here."
+    },
+    {
+      "number": 89,
+      "speaker": "MESSENGER",
+      "text": "No, my good lord; I met him back again."
+    },
+    {
+      "number": 90,
+      "speaker": "ALBANY",
+      "text": "Knows he the wickedness?"
+    },
+    {
+      "number": 91,
+      "speaker": "MESSENGER",
+      "text": "Ay, my good lord; ’twas he inform’d against him;"
+    },
+    {
+      "number": 92,
+      "speaker": "MESSENGER",
+      "text": "And quit the house on purpose, that their punishment"
+    },
+    {
+      "number": 93,
+      "speaker": "MESSENGER",
+      "text": "Might have the freer course."
+    },
+    {
+      "number": 93,
+      "speaker": "ALBANY",
+      "text": "Gloucester, I live"
+    },
+    {
+      "number": 94,
+      "speaker": "ALBANY",
+      "text": "To thank thee for the love thou show’dst the king,"
+    },
+    {
+      "number": 95,
+      "speaker": "ALBANY",
+      "text": "And to revenge thine eyes. Come hither, friend:"
+    },
+    {
+      "number": 96,
+      "speaker": "ALBANY",
+      "text": "Tell me what more thou know’st."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Goneril and Edmund."
+    },
+    {
+      "after_line": 2,
+      "text": "Enter Oswald."
+    },
+    {
+      "after_line": 2,
+      "text": "Now, where’s your master?"
+    },
+    {
+      "after_line": 22,
+      "text": "Giving a favour."
+    },
+    {
+      "after_line": 26,
+      "text": "Exit Edmund."
+    },
+    {
+      "after_line": 29,
+      "text": "Exit."
+    },
+    {
+      "after_line": 29,
+      "text": "Enter Albany."
+    },
+    {
+      "after_line": 67,
+      "text": "Enter a Messenger."
+    },
+    {
+      "after_line": 82,
+      "text": "Aside."
+    },
+    {
+      "after_line": 86,
+      "text": "Exit."
+    },
+    {
+      "after_line": 96,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act4_scene2_gloss1",
+      "line": 1,
+      "phrase": "mild husband",
+      "definition": "gentle husband — Goneril's contempt for Albany"
+    },
+    {
+      "id": "king_lear_act4_scene2_gloss2",
+      "line": 12,
+      "phrase": "cowish",
+      "definition": "cowardly"
+    },
+    {
+      "id": "king_lear_act4_scene2_gloss4",
+      "line": 16,
+      "phrase": "conduct",
+      "definition": "escort"
+    },
+    {
+      "id": "king_lear_act4_scene2_gloss5",
+      "line": 27,
+      "phrase": "a woman’s services",
+      "definition": "wifely duties"
+    },
+    {
+      "id": "king_lear_act4_scene2_gloss6",
+      "line": 21,
+      "phrase": "mistress’s command",
+      "definition": "Goneril's authority over Edmund"
+    },
+    {
+      "id": "king_lear_act4_scene2_gloss7",
+      "line": 31,
+      "phrase": "disposition",
+      "definition": "temperament"
+    },
+    {
+      "id": "king_lear_act4_scene2_gloss8",
+      "line": 41,
+      "phrase": "head-lugg’d bear",
+      "definition": "bear led by the head — a dangerous animal"
+    },
+    {
+      "id": "king_lear_act4_scene2_gloss9",
+      "line": 42,
+      "phrase": "most barbarous, most degenerate",
+      "definition": "Albany's formula for Goneril's unnaturalness"
+    },
+    {
+      "id": "king_lear_act4_scene2_gloss10",
+      "line": 45,
+      "phrase": "visible spirits",
+      "definition": "embodied heavenly powers"
+    },
+    {
+      "id": "king_lear_act4_scene2_gloss11",
+      "line": 46,
+      "phrase": "vile offences",
+      "definition": "loathsome crimes"
+    },
+    {
+      "id": "king_lear_act4_scene2_gloss13",
+      "line": 57,
+      "phrase": "moral fool",
+      "definition": "Goneril's jibe at Albany's moralizing"
+    },
+    {
+      "id": "king_lear_act4_scene2_gloss14",
+      "line": 61,
+      "phrase": "changed and self-cover’d",
+      "definition": "transformed and disguised — Goneril has put on a fiend's skin over her own"
+    },
+    {
+      "id": "king_lear_act4_scene2_gloss21",
+      "line": 49,
+      "phrase": "monster",
+      "definition": "unnatural creature"
+    },
+    {
+      "id": "king_lear_act4_scene2_gloss22",
+      "line": 16,
+      "phrase": "musters",
+      "definition": "musters of troops"
+    },
+    {
+      "id": "king_lear_act4_scene2_gloss24",
+      "line": 26,
+      "phrase": "O, the difference of man and man!",
+      "definition": "Goneril's contempt for Albany vs. Edmund"
+    },
+    {
+      "id": "king_lear_act4_scene2_gloss25",
+      "line": 21,
+      "phrase": "wear this",
+      "definition": "a token Goneril gives Edmund — possibly a ring or chain"
+    },
+    {
+      "id": "king_lear_act4_scene2_gloss26",
+      "line": 28,
+      "phrase": "My fool usurps my body",
+      "definition": "my fool of a husband possesses me — Goneril's bitter line about Albany"
+    },
+    {
+      "id": "king_lear_act4_scene2_gloss27",
+      "line": 61,
+      "phrase": "self-cover’d thing",
+      "definition": "creature covered by (her own) fiendishness disguised as woman"
+    },
+    {
+      "id": "king_lear_act4_scene2_gloss29",
+      "line": 46,
+      "phrase": "vile",
+      "definition": "base; degraded"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act4_scene2_ann1",
+      "line_start": 40,
+      "line_end": 80,
+      "citation_display": "King Lear 4.2.40–80",
+      "category": "structural",
+      "title": "Albany's transformation — from silence to denunciation",
+      "body": "Albany in 4.2 is no longer the cautious husband of 1.4. He calls Goneril 'most barbarous, most degenerate,' predicts 'humanity must perforce prey on itself / Like monsters of the deep,' and compares her to a fiend 'self-cover'd' in a woman's skin. The rhetoric is a transformation: he has seen what his wife is capable of and is speaking it. The scene also delivers the news of Cornwall's death (from the servant's wound in 3.7) by report. Goneril's aside — 'Our fears in Cornwall have weighed against my prayers' — shows the sisters calculating power: with Cornwall dead, Regan is free to claim Edmund, and the rivalry that will destroy them both is now active.",
+      "sources": [
+        "Jonathan Bate, Soul of the Age (2008)"
+      ]
+    },
+    {
+      "id": "king_lear_act4_scene2_ann2",
+      "line_start": 40,
+      "line_end": 72,
+      "citation_display": "King Lear 4.2.40–72",
+      "category": "close_reading",
+      "title": "Albany's 'monsters of the deep' — the play's cannibalism image",
+      "body": "Albany's 'Humanity must perforce prey on itself, / Like monsters of the deep' is the play's most compressed image of moral collapse. The earth's creatures consume each other by appetite; what distinguishes humanity is restraint. When Goneril and Regan act from pure will, without restraint, humanity stops being distinguishable from predation. The image has a Hobbesian premonition — Hobbes's 'bellum omnium contra omnes' is half a century away but the thought is legible here. Shakespeare is also gesturing at specific Jacobean anxieties: the post-Gunpowder-Plot fear of social dissolution. Albany speaks for the slow-developing conscience of the play, and his rhetoric here is the play's most explicit warning that moral order is frailer than anyone had assumed.",
+      "sources": [
+        "Jonathan Dollimore, Radical Tragedy (1984)",
+        "Kiernan Ryan, Shakespeare (1989)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act4_scene2_q1",
+      "kind": "structural",
+      "prompt": "How has Albany changed between 1.4 and 4.2?",
+      "options": [
+        "He hasn't changed",
+        "From cautious silence to open moral denunciation — 'most barbarous, most degenerate' — the play's conscience-figure steps into speech",
+        "He has become more cruel",
+        "He has left the play"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 40,
+      "anchor_line_end": 80
+    },
+    {
+      "id": "king_lear_act4_scene2_q2",
+      "kind": "theme",
+      "prompt": "Albany's 'monsters of the deep' claim —",
+      "options": [
+        "That the sea is dangerous",
+        "That humanity is defined by restraint against appetite; when Goneril and Regan act from pure will, humanity ceases to be distinguishable from predation",
+        "That fish are wicked",
+        "That ocean travel should be avoided"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 40,
+      "anchor_line_end": 72
+    }
+  ]
+}

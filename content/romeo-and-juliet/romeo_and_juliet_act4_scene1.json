@@ -1,0 +1,951 @@
+{
+  "section_id": "romeo_and_juliet_act4_scene1",
+  "work_id": "romeo-and-juliet",
+  "sequence": 19,
+  "act": 4,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "Friar Laurence's cell",
+  "line_count": 127,
+  "word_count": 1027,
+  "est_read_minutes": 5,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "FRIAR LAURENCE",
+      "text": "On Thursday, sir? the time is very short."
+    },
+    {
+      "number": 2,
+      "speaker": "PARIS",
+      "text": "My father Capulet will have it so;"
+    },
+    {
+      "number": 3,
+      "speaker": "PARIS",
+      "text": "And I am nothing slow to slack his haste."
+    },
+    {
+      "number": 4,
+      "speaker": "FRIAR LAURENCE",
+      "text": "You say you do not know the lady’s mind:"
+    },
+    {
+      "number": 5,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Uneven is the course, I like it not."
+    },
+    {
+      "number": 6,
+      "speaker": "PARIS",
+      "text": "Immoderately she weeps for Tybalt’s death,"
+    },
+    {
+      "number": 7,
+      "speaker": "PARIS",
+      "text": "And therefore have I little talk’d of love;"
+    },
+    {
+      "number": 8,
+      "speaker": "PARIS",
+      "text": "For Venus smiles not in a house of tears."
+    },
+    {
+      "number": 9,
+      "speaker": "PARIS",
+      "text": "Now, sir, her father counts it dangerous"
+    },
+    {
+      "number": 10,
+      "speaker": "PARIS",
+      "text": "That she doth give her sorrow so much sway,"
+    },
+    {
+      "number": 11,
+      "speaker": "PARIS",
+      "text": "And in his wisdom hastes our marriage,"
+    },
+    {
+      "number": 12,
+      "speaker": "PARIS",
+      "text": "To stop the inundation of her tears;"
+    },
+    {
+      "number": 13,
+      "speaker": "PARIS",
+      "text": "Which, too much minded by herself alone,"
+    },
+    {
+      "number": 14,
+      "speaker": "PARIS",
+      "text": "May be put from her by society:"
+    },
+    {
+      "number": 15,
+      "speaker": "PARIS",
+      "text": "Now do you know the reason of this haste."
+    },
+    {
+      "number": 16,
+      "speaker": "FRIAR LAURENCE",
+      "text": "I would I knew not why it should be slow’d."
+    },
+    {
+      "number": 17,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Look, sir, here comes the lady towards my cell."
+    },
+    {
+      "number": 18,
+      "speaker": "PARIS",
+      "text": "Happily met, my lady and my wife!"
+    },
+    {
+      "number": 19,
+      "speaker": "JULIET",
+      "text": "That may be, sir, when I may be a wife."
+    },
+    {
+      "number": 20,
+      "speaker": "PARIS",
+      "text": "That may be must be, love, on Thursday next."
+    },
+    {
+      "number": 21,
+      "speaker": "JULIET",
+      "text": "What must be shall be."
+    },
+    {
+      "number": 21,
+      "speaker": "FRIAR LAURENCE",
+      "text": "That’s a certain text."
+    },
+    {
+      "number": 22,
+      "speaker": "PARIS",
+      "text": "Come you to make confession to this father?"
+    },
+    {
+      "number": 23,
+      "speaker": "JULIET",
+      "text": "To answer that, I should confess to you."
+    },
+    {
+      "number": 24,
+      "speaker": "PARIS",
+      "text": "Do not deny to him that you love me."
+    },
+    {
+      "number": 25,
+      "speaker": "JULIET",
+      "text": "I will confess to you that I love him."
+    },
+    {
+      "number": 26,
+      "speaker": "PARIS",
+      "text": "So will ye, I am sure, that you love me."
+    },
+    {
+      "number": 27,
+      "speaker": "JULIET",
+      "text": "If I do so, it will be of more price,"
+    },
+    {
+      "number": 28,
+      "speaker": "JULIET",
+      "text": "Being spoke behind your back, than to your face."
+    },
+    {
+      "number": 29,
+      "speaker": "PARIS",
+      "text": "Poor soul, thy face is much abused with tears."
+    },
+    {
+      "number": 30,
+      "speaker": "JULIET",
+      "text": "The tears have got small victory by that;"
+    },
+    {
+      "number": 31,
+      "speaker": "JULIET",
+      "text": "For it was bad enough before their spite."
+    },
+    {
+      "number": 32,
+      "speaker": "PARIS",
+      "text": "Thou wrong’st it, more than tears, with that report."
+    },
+    {
+      "number": 33,
+      "speaker": "JULIET",
+      "text": "That is no slander, sir, which is a truth;"
+    },
+    {
+      "number": 34,
+      "speaker": "JULIET",
+      "text": "And what I spake, I spake it to my face."
+    },
+    {
+      "number": 35,
+      "speaker": "PARIS",
+      "text": "Thy face is mine, and thou hast slander’d it."
+    },
+    {
+      "number": 36,
+      "speaker": "JULIET",
+      "text": "It may be so, for it is not mine own."
+    },
+    {
+      "number": 37,
+      "speaker": "JULIET",
+      "text": "Are you at leisure, holy father, now;"
+    },
+    {
+      "number": 38,
+      "speaker": "JULIET",
+      "text": "Or shall I come to you at evening mass?"
+    },
+    {
+      "number": 39,
+      "speaker": "FRIAR LAURENCE",
+      "text": "My leisure serves me, pensive daughter, now."
+    },
+    {
+      "number": 40,
+      "speaker": "FRIAR LAURENCE",
+      "text": "My lord, we must entreat the time alone."
+    },
+    {
+      "number": 41,
+      "speaker": "PARIS",
+      "text": "God shield I should disturb devotion!"
+    },
+    {
+      "number": 42,
+      "speaker": "PARIS",
+      "text": "Juliet, on Thursday early will I rouse ye:"
+    },
+    {
+      "number": 43,
+      "speaker": "PARIS",
+      "text": "Till then, adieu; and keep this holy kiss."
+    },
+    {
+      "number": 44,
+      "speaker": "JULIET",
+      "text": "O shut the door! and when thou hast done so,"
+    },
+    {
+      "number": 45,
+      "speaker": "JULIET",
+      "text": "Come weep with me; past hope, past cure, past help!"
+    },
+    {
+      "number": 46,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Ah, Juliet, I already know thy grief;"
+    },
+    {
+      "number": 47,
+      "speaker": "FRIAR LAURENCE",
+      "text": "It strains me past the compass of my wits:"
+    },
+    {
+      "number": 48,
+      "speaker": "FRIAR LAURENCE",
+      "text": "I hear thou must, and nothing may prorogue it,"
+    },
+    {
+      "number": 49,
+      "speaker": "FRIAR LAURENCE",
+      "text": "On Thursday next be married to this county."
+    },
+    {
+      "number": 50,
+      "speaker": "JULIET",
+      "text": "Tell me not, friar, that thou hear’st of this,"
+    },
+    {
+      "number": 51,
+      "speaker": "JULIET",
+      "text": "Unless thou tell me how I may prevent it:"
+    },
+    {
+      "number": 52,
+      "speaker": "JULIET",
+      "text": "If, in thy wisdom, thou canst give no help,"
+    },
+    {
+      "number": 53,
+      "speaker": "JULIET",
+      "text": "Do thou but call my resolution wise,"
+    },
+    {
+      "number": 54,
+      "speaker": "JULIET",
+      "text": "And with this knife I’ll help it presently."
+    },
+    {
+      "number": 55,
+      "speaker": "JULIET",
+      "text": "God join’d my heart and Romeo’s, thou our hands;"
+    },
+    {
+      "number": 56,
+      "speaker": "JULIET",
+      "text": "And ere this hand, by thee to Romeo seal’d,"
+    },
+    {
+      "number": 57,
+      "speaker": "JULIET",
+      "text": "Shall be the label to another deed,"
+    },
+    {
+      "number": 58,
+      "speaker": "JULIET",
+      "text": "Or my true heart with treacherous revolt"
+    },
+    {
+      "number": 59,
+      "speaker": "JULIET",
+      "text": "Turn to another, this shall slay them both:"
+    },
+    {
+      "number": 60,
+      "speaker": "JULIET",
+      "text": "Therefore, out of thy long-experienced time,"
+    },
+    {
+      "number": 61,
+      "speaker": "JULIET",
+      "text": "Give me some present counsel, or, behold,"
+    },
+    {
+      "number": 62,
+      "speaker": "JULIET",
+      "text": "’Twixt my extremes and me this bloody knife"
+    },
+    {
+      "number": 63,
+      "speaker": "JULIET",
+      "text": "Shall play the umpire, arbitrating that"
+    },
+    {
+      "number": 64,
+      "speaker": "JULIET",
+      "text": "Which the commission of thy years and art"
+    },
+    {
+      "number": 65,
+      "speaker": "JULIET",
+      "text": "Could to no issue of true honour bring."
+    },
+    {
+      "number": 66,
+      "speaker": "JULIET",
+      "text": "Be not so long to speak; I long to die,"
+    },
+    {
+      "number": 67,
+      "speaker": "JULIET",
+      "text": "If what thou speak’st speak not of remedy."
+    },
+    {
+      "number": 68,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Hold, daughter: I do spy a kind of hope,"
+    },
+    {
+      "number": 69,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Which craves as desperate an execution"
+    },
+    {
+      "number": 70,
+      "speaker": "FRIAR LAURENCE",
+      "text": "As that is desperate which we would prevent."
+    },
+    {
+      "number": 71,
+      "speaker": "FRIAR LAURENCE",
+      "text": "If, rather than to marry County Paris,"
+    },
+    {
+      "number": 72,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Thou hast the strength of will to slay thyself,"
+    },
+    {
+      "number": 73,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Then is it likely thou wilt undertake"
+    },
+    {
+      "number": 74,
+      "speaker": "FRIAR LAURENCE",
+      "text": "A thing like death to chide away this shame,"
+    },
+    {
+      "number": 75,
+      "speaker": "FRIAR LAURENCE",
+      "text": "That copest with death himself to scape from it;"
+    },
+    {
+      "number": 76,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And, if thou darest, I’ll give thee remedy."
+    },
+    {
+      "number": 77,
+      "speaker": "JULIET",
+      "text": "O, bid me leap, rather than marry Paris,"
+    },
+    {
+      "number": 78,
+      "speaker": "JULIET",
+      "text": "From off the battlements of yonder tower;"
+    },
+    {
+      "number": 79,
+      "speaker": "JULIET",
+      "text": "Or walk in thievish ways; or bid me lurk"
+    },
+    {
+      "number": 80,
+      "speaker": "JULIET",
+      "text": "Where serpents are; chain me with roaring bears;"
+    },
+    {
+      "number": 81,
+      "speaker": "JULIET",
+      "text": "Or shut me nightly in a charnel-house,"
+    },
+    {
+      "number": 82,
+      "speaker": "JULIET",
+      "text": "O’er-cover’d quite with dead men’s rattling bones,"
+    },
+    {
+      "number": 83,
+      "speaker": "JULIET",
+      "text": "With reeky shanks and yellow chapless skulls;"
+    },
+    {
+      "number": 84,
+      "speaker": "JULIET",
+      "text": "Or bid me go into a new-made grave"
+    },
+    {
+      "number": 85,
+      "speaker": "JULIET",
+      "text": "And hide me with a dead man in his shroud;"
+    },
+    {
+      "number": 86,
+      "speaker": "JULIET",
+      "text": "Things that, to hear them told, have made me tremble;"
+    },
+    {
+      "number": 87,
+      "speaker": "JULIET",
+      "text": "And I will do it without fear or doubt,"
+    },
+    {
+      "number": 88,
+      "speaker": "JULIET",
+      "text": "To live an unstain’d wife to my sweet love."
+    },
+    {
+      "number": 89,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Hold, then; go home, be merry, give consent"
+    },
+    {
+      "number": 90,
+      "speaker": "FRIAR LAURENCE",
+      "text": "To marry Paris: Wednesday is to-morrow:"
+    },
+    {
+      "number": 91,
+      "speaker": "FRIAR LAURENCE",
+      "text": "To-morrow night look that thou lie alone;"
+    },
+    {
+      "number": 92,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Let not thy nurse lie with thee in thy chamber:"
+    },
+    {
+      "number": 93,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Take thou this vial, being then in bed,"
+    },
+    {
+      "number": 94,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And this distilled liquor drink thou off;"
+    },
+    {
+      "number": 95,
+      "speaker": "FRIAR LAURENCE",
+      "text": "When presently through all thy veins shall run"
+    },
+    {
+      "number": 96,
+      "speaker": "FRIAR LAURENCE",
+      "text": "A cold and drowsy humour, for no pulse"
+    },
+    {
+      "number": 97,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Shall keep his native progress, but surcease:"
+    },
+    {
+      "number": 98,
+      "speaker": "FRIAR LAURENCE",
+      "text": "No warmth, no breath, shall testify thou livest;"
+    },
+    {
+      "number": 99,
+      "speaker": "FRIAR LAURENCE",
+      "text": "The roses in thy lips and cheeks shall fade"
+    },
+    {
+      "number": 100,
+      "speaker": "FRIAR LAURENCE",
+      "text": "To paly ashes, thy eyes’ windows fall,"
+    },
+    {
+      "number": 101,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Like death, when he shuts up the day of life;"
+    },
+    {
+      "number": 102,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Each part, deprived of supple government,"
+    },
+    {
+      "number": 103,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Shall, stiff and stark and cold, appear like death:"
+    },
+    {
+      "number": 104,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And in this borrow’d likeness of shrunk death"
+    },
+    {
+      "number": 105,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Thou shalt continue two and forty hours,"
+    },
+    {
+      "number": 106,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And then awake as from a pleasant sleep."
+    },
+    {
+      "number": 107,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Now, when the bridegroom in the morning comes"
+    },
+    {
+      "number": 108,
+      "speaker": "FRIAR LAURENCE",
+      "text": "To rouse thee from thy bed, there art thou dead:"
+    },
+    {
+      "number": 109,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Then, as the manner of our country is,"
+    },
+    {
+      "number": 110,
+      "speaker": "FRIAR LAURENCE",
+      "text": "In thy best robes uncover’d on the bier"
+    },
+    {
+      "number": 111,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Thou shalt be borne to that same ancient vault"
+    },
+    {
+      "number": 112,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Where all the kindred of the Capulets lie."
+    },
+    {
+      "number": 113,
+      "speaker": "FRIAR LAURENCE",
+      "text": "In the meantime, against thou shalt awake,"
+    },
+    {
+      "number": 114,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Shall Romeo by my letters know our drift,"
+    },
+    {
+      "number": 115,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And hither shall he come: and he and I"
+    },
+    {
+      "number": 116,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Will watch thy waking, and that very night"
+    },
+    {
+      "number": 117,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Shall Romeo bear thee hence to Mantua."
+    },
+    {
+      "number": 118,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And this shall free thee from this present shame;"
+    },
+    {
+      "number": 119,
+      "speaker": "FRIAR LAURENCE",
+      "text": "If no inconstant toy, nor womanish fear,"
+    },
+    {
+      "number": 120,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Abate thy valour in the acting it."
+    },
+    {
+      "number": 121,
+      "speaker": "JULIET",
+      "text": "Give me, give me! O, tell not me of fear!"
+    },
+    {
+      "number": 122,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Hold; get you gone, be strong and prosperous"
+    },
+    {
+      "number": 123,
+      "speaker": "FRIAR LAURENCE",
+      "text": "In this resolve: I’ll send a friar with speed"
+    },
+    {
+      "number": 124,
+      "speaker": "FRIAR LAURENCE",
+      "text": "To Mantua, with my letters to thy lord."
+    },
+    {
+      "number": 125,
+      "speaker": "JULIET",
+      "text": "Love give me strength! and strength shall help afford."
+    },
+    {
+      "number": 126,
+      "speaker": "JULIET",
+      "text": "Farewell, dear father!"
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Friar Laurence and Paris."
+    },
+    {
+      "after_line": 16,
+      "text": "Aside."
+    },
+    {
+      "after_line": 17,
+      "text": "Enter Juliet."
+    },
+    {
+      "after_line": 43,
+      "text": "Exit."
+    },
+    {
+      "after_line": 126,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss1",
+      "line": 3,
+      "phrase": "slack his haste",
+      "definition": "slow him down"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss2",
+      "line": 13,
+      "phrase": "minded",
+      "definition": "thought of; considered"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss3",
+      "line": 12,
+      "phrase": "inundation of her tears",
+      "definition": "flood of weeping"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss4",
+      "line": 14,
+      "phrase": "society",
+      "definition": "company"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss5",
+      "line": 15,
+      "phrase": "now do you know the reason of this haste",
+      "definition": "Paris asserts the wedding is Capulet's remedy for Juliet's grief"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss6",
+      "line": 16,
+      "phrase": "I would I knew not why it should be slow’d",
+      "definition": "I wish I didn't know reason to delay"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss7",
+      "line": 18,
+      "phrase": "Happily met",
+      "definition": "well met"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss8",
+      "line": 25,
+      "phrase": "I will confess to you that I love him",
+      "definition": "Juliet tells Paris she loves someone — but the Friar is her audience"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss9",
+      "line": 34,
+      "phrase": "to my face",
+      "definition": "directly in my presence"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss10",
+      "line": 40,
+      "phrase": "entreat the time alone",
+      "definition": "beg some private time"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss11",
+      "line": 41,
+      "phrase": "shield",
+      "definition": "forbid"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss12",
+      "line": 47,
+      "phrase": "compass of my wits",
+      "definition": "past the reach of my intellect — the Friar's despair"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss13",
+      "line": 48,
+      "phrase": "prorogue it",
+      "definition": "postpone it"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss14",
+      "line": 54,
+      "phrase": "presently",
+      "definition": "at once"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss15",
+      "line": 59,
+      "phrase": "slay them both",
+      "definition": "kill both obstacles — Juliet rejects living with Paris"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss16",
+      "line": 63,
+      "phrase": "arbitrating",
+      "definition": "deciding; arbitrating between"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss17",
+      "line": 79,
+      "phrase": "thievish ways",
+      "definition": "roads full of robbers"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss18",
+      "line": 80,
+      "phrase": "serpents",
+      "definition": "she would brave any horror to avoid marrying Paris"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss19",
+      "line": 80,
+      "phrase": "roaring bears",
+      "definition": "wild bears — any monster rather than Paris"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss20",
+      "line": 81,
+      "phrase": "charnel-house",
+      "definition": "a building where human bones and corpses are stored"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss21",
+      "line": 83,
+      "phrase": "reeky shanks",
+      "definition": "stinking leg-bones"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss22",
+      "line": 83,
+      "phrase": "yellow chapless skulls",
+      "definition": "bare jaw-less skulls — decayed yellow remains"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss23",
+      "line": 84,
+      "phrase": "new-made grave",
+      "definition": "fresh burial-pit"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss24",
+      "line": 93,
+      "phrase": "vial",
+      "definition": "small flask — for the sleeping-draught"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss25",
+      "line": 96,
+      "phrase": "humour",
+      "definition": "fluid; effect in the body"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss26",
+      "line": 96,
+      "phrase": "cold and drowsy humour",
+      "definition": "the draught's description — it will mimic death"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss27",
+      "line": 104,
+      "phrase": "borrow’d likeness",
+      "definition": "the counterfeit face of a corpse"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss28",
+      "line": 105,
+      "phrase": "two and forty hours",
+      "definition": "forty-two hours — the Friar's cardinal time-estimate"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss29",
+      "line": 110,
+      "phrase": "bier",
+      "definition": "the frame on which a coffin is carried"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss30",
+      "line": 111,
+      "phrase": "ancient vault",
+      "definition": "the old family burial chamber — the Capulet tomb"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss31",
+      "line": 113,
+      "phrase": "against thou shalt awake",
+      "definition": "in preparation for when you wake"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss32",
+      "line": 117,
+      "phrase": "Mantua",
+      "definition": "the city of Romeo's exile — about twenty-five miles from Verona"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss33",
+      "line": 119,
+      "phrase": "inconstant toy",
+      "definition": "changeable whim — let no whim stop you"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_gloss34",
+      "line": 122,
+      "phrase": "prosperous",
+      "definition": "successful"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act4_scene1_ann1",
+      "line_start": 88,
+      "line_end": 121,
+      "citation_display": "Romeo and Juliet 4.1.88–121",
+      "category": "thematic",
+      "title": "The Friar's plan — applied ethics of medicine and poison",
+      "body": "The Friar's plan is the direct application of the philosophy he announced in 2.3: 'Within the infant rind of this weak flower / Poison hath residence and medicine power.' Juliet will drink a draught that mimics death, 'for two and forty hours,' long enough for her burial and for Romeo to arrive to find her alive in the tomb. The plan is intricate, physically specific, and depends on timing. Shakespeare makes the Friar name every detail: the draught's chill, the forty-two hours, Juliet's appearance of death, the waiting at the tomb. Every element will go wrong. Friar John will be quarantined by plague and fail to deliver the letter to Romeo; Romeo will reach the tomb believing Juliet dead and kill himself before she wakes; the Friar will arrive too late. The play does not blame the Friar for wickedness; it indicts him for faith in his own ingenuity in a world that does not cooperate. The lesson: a good plan is not the same as a good outcome.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)",
+        "Paul A. Cantor, Shakespeare's Rome (1976)"
+      ]
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_ann2",
+      "line_start": 75,
+      "line_end": 88,
+      "citation_display": "Romeo and Juliet 4.1.75–88",
+      "category": "close_reading",
+      "title": "Juliet's catalogue of horrors — what she will face rather than marry Paris",
+      "body": "Before the Friar suggests the potion, Juliet offers him a list of what she would do rather than marry Paris: leap from a tower, walk thievish roads, hide with serpents, be chained with roaring bears, shut in a charnel-house among reeky shanks and yellow chapless skulls, lie in a new-made grave. The catalogue is gothic in the extreme — and it is a rehearsal. Juliet is imagining the tomb she will lie in two scenes later. Shakespeare builds her resolve through speech: by articulating the horror in advance, she makes the actual horror bearable. Notice the poetic weight: the 'reeky shanks and yellow chapless skulls' will be among her literal neighbors when she wakes up.",
+      "sources": [
+        "Jill L. Levenson, The Oxford Shakespeare: Romeo and Juliet (2000)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act4_scene1_q1",
+      "kind": "comprehension",
+      "prompt": "How long is the Friar's draught meant to keep Juliet in death-like sleep?",
+      "options": [
+        "Twelve hours",
+        "Forty-two hours ('two and forty hours')",
+        "Three days",
+        "A week"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 105,
+      "anchor_line_end": 110
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_q2",
+      "kind": "theme",
+      "prompt": "How does the Friar's plan embody his 2.3 philosophy?",
+      "options": [
+        "It doesn't — the plan contradicts his philosophy",
+        "A single agent (the potion) is simultaneously medicine (saving Juliet from Paris) and poison (a near-death) — use and timing determine which",
+        "It rejects philosophy altogether",
+        "It is a strictly religious rite"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 88,
+      "anchor_line_end": 121
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene1_q3",
+      "kind": "structural",
+      "prompt": "Juliet's catalogue of horrors in 4.1 functions as —",
+      "options": [
+        "A complaint she intends to withdraw",
+        "A rehearsal — the images she lists (skulls, reeky shanks, new-made graves) are literally what she will encounter in the tomb",
+        "Mere hyperbole with no bearing on later scenes",
+        "A plea to postpone the Paris marriage indefinitely"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 75,
+      "anchor_line_end": 88
+    }
+  ]
+}

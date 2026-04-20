@@ -1,0 +1,29 @@
+{
+  "section_id": "hamlet_act3_scene3",
+  "annotations": [
+    {
+      "line_start": 36,
+      "line_end": 72,
+      "category": "thematic",
+      "title": "Claudius's prayer: the conscience that cannot repent",
+      "body": "Claudius's soliloquy is the only moment in the play where the King speaks alone, and it is Shakespeare's most searching portrait of unrepentant guilt. 'My offence is rank, it smells to heaven' — the imagery echoes the ghost's description of being poisoned through the ear with corrupting 'leperous distilment.' But Claudius cannot repent because he will not give up what the murder bought him: 'my crown, mine own ambition, and my queen.' He knows the theological logic perfectly ('May one be pardoned and retain the offence?') and knows his answer damns him. The scene gives us the first real interior of Claudius, and it is the interior of a man who sees his own damnation clearly and chooses it anyway.",
+      "sources": ["Harold Goddard, The Meaning of Shakespeare (1951)"]
+    },
+    {
+      "line_start": 73,
+      "line_end": 96,
+      "category": "thematic",
+      "title": "'Now might I do it pat' — Hamlet's terrible calculation",
+      "body": "Hamlet's decision not to kill the praying King is the play's most theologically fraught moment, and its most debated. The logic is precise: if he kills Claudius at prayer, the King goes to heaven; the ghost was damned at the hour of his death and confined to purgatorial fires. To send the murderer to salvation would be 'hire and salary, not revenge.' Critics from Samuel Johnson onward have found the calculation repellent — 'too horrible to be read or to be uttered,' Johnson wrote. Others, from Bradley to Lewis, have argued that Hamlet is lying to himself, that the theological reasoning is a rationalization for continued delay. Either reading, the scene is devastating because Claudius's following couplet reveals that the prayer did not reach heaven: the King would have died unforgiven.",
+      "sources": ["Samuel Johnson, 'Notes on Shakespeare' (1765)", "A. C. Bradley, Shakespearean Tragedy (1904)"]
+    },
+    {
+      "line_start": 97,
+      "line_end": 98,
+      "category": "close_reading",
+      "title": "'My words fly up, my thoughts remain below'",
+      "body": "Claudius's closing couplet is the play's most compressed tragedy. He has just prayed, and the prayer has not worked; the words ascended, the thoughts — the penitent heart required for efficacy — stayed on earth. 'Words without thoughts never to heaven go' is at once an admission of theological failure and a piece of reformed doctrine: the Protestant reformers insisted that mere vocal prayer without an examined conscience was nothing. The audience exits the scene knowing what Hamlet did not: the revenger missed a moral opportunity. Dramatic irony rarely cuts deeper than this.",
+      "sources": ["Stephen Greenblatt, Hamlet in Purgatory (2001)"]
+    }
+  ]
+}

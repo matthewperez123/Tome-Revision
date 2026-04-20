@@ -1,0 +1,223 @@
+{
+  "section_id": "richard_iii_act4_scene5",
+  "work_id": "richard-iii",
+  "sequence": 20,
+  "act": 4,
+  "scene": 5,
+  "kind": "scene",
+  "scene_title": "Lord Derby's house",
+  "line_count": 20,
+  "word_count": 144,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "DERBY",
+      "text": "Sir Christopher, tell Richmond this from me:"
+    },
+    {
+      "number": 2,
+      "speaker": "DERBY",
+      "text": "That in the sty of this most bloody boar"
+    },
+    {
+      "number": 3,
+      "speaker": "DERBY",
+      "text": "My son George Stanley is frank’d up in hold:"
+    },
+    {
+      "number": 4,
+      "speaker": "DERBY",
+      "text": "If I revolt, off goes young George’s head;"
+    },
+    {
+      "number": 5,
+      "speaker": "DERBY",
+      "text": "The fear of that withholds my present aid."
+    },
+    {
+      "number": 6,
+      "speaker": "DERBY",
+      "text": "But, tell me, where is princely Richmond now?"
+    },
+    {
+      "number": 7,
+      "speaker": "CHRISTOPHER",
+      "text": "At Pembroke, or at Ha’rford-west, in Wales."
+    },
+    {
+      "number": 8,
+      "speaker": "DERBY",
+      "text": "What men of name resort to him?"
+    },
+    {
+      "number": 9,
+      "speaker": "CHRISTOPHER",
+      "text": "Sir Walter Herbert, a renowned soldier;"
+    },
+    {
+      "number": 10,
+      "speaker": "CHRISTOPHER",
+      "text": "Sir Gilbert Talbot, Sir William Stanley;"
+    },
+    {
+      "number": 11,
+      "speaker": "CHRISTOPHER",
+      "text": "Oxford, redoubted Pembroke, Sir James Blunt,"
+    },
+    {
+      "number": 12,
+      "speaker": "CHRISTOPHER",
+      "text": "And Rice ap Thomas, with a valiant crew;"
+    },
+    {
+      "number": 13,
+      "speaker": "CHRISTOPHER",
+      "text": "And many more of noble fame and worth:"
+    },
+    {
+      "number": 14,
+      "speaker": "CHRISTOPHER",
+      "text": "And towards London they do bend their course,"
+    },
+    {
+      "number": 15,
+      "speaker": "CHRISTOPHER",
+      "text": "If by the way they be not fought withal."
+    },
+    {
+      "number": 16,
+      "speaker": "DERBY",
+      "text": "Return unto thy lord; commend me to him:"
+    },
+    {
+      "number": 17,
+      "speaker": "DERBY",
+      "text": "Tell him the queen hath heartily consented"
+    },
+    {
+      "number": 18,
+      "speaker": "DERBY",
+      "text": "He shall espouse Elizabeth her daughter."
+    },
+    {
+      "number": 19,
+      "speaker": "DERBY",
+      "text": "These letters will resolve him of my mind."
+    },
+    {
+      "number": 20,
+      "speaker": "DERBY",
+      "text": "Farewell."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Derby and Sir Christopher Urswick."
+    },
+    {
+      "after_line": 20,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act4_scene5_gloss1",
+      "line": 2,
+      "phrase": "sty of this most bloody boar",
+      "definition": "the 'boar' is Richard's heraldic badge; his court becomes a pigsty"
+    },
+    {
+      "id": "richard_iii_act4_scene5_gloss2",
+      "line": 3,
+      "phrase": "frank’d up in hold",
+      "definition": "confined in a sty as hostage — pig-fattening vocabulary again"
+    },
+    {
+      "id": "richard_iii_act4_scene5_gloss3",
+      "line": 7,
+      "phrase": "Ha’rford-west",
+      "definition": "Haverfordwest, Pembrokeshire — Welsh town on Richmond's line of march"
+    },
+    {
+      "id": "richard_iii_act4_scene5_gloss4",
+      "line": 11,
+      "phrase": "Oxford, redoubted Pembroke",
+      "definition": "John de Vere, Earl of Oxford (formidable Lancastrian commander) and Jasper Tudor, Earl of Pembroke (Henry's uncle)"
+    },
+    {
+      "id": "richard_iii_act4_scene5_gloss5",
+      "line": 12,
+      "phrase": "Rice ap Thomas",
+      "definition": "Rhys ap Thomas — Welsh magnate whose support was crucial for Richmond's march through Wales"
+    },
+    {
+      "id": "richard_iii_act4_scene5_gloss6",
+      "line": 18,
+      "phrase": "espouse Elizabeth her daughter",
+      "definition": "marry Elizabeth of York — the dynastic union that ended the Wars of the Roses"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act4_scene5_ann1",
+      "line_start": 1,
+      "line_end": 20,
+      "citation_display": "Richard III 4.5.1–20",
+      "category": "historical",
+      "title": "Lord Stanley's long double-game",
+      "body": "The scene shows Lord Stanley (Derby) sending Sir Christopher a message to Richmond: the queen has consented to Richmond marrying Elizabeth of York. Historically Stanley's position in summer 1485 was precisely this double-game. His second wife Margaret Beaufort was Richmond's mother; his son George was held as Richard's hostage (4.2.490); his own forces remained officially at Richard's disposal. At Bosworth, Stanley famously committed his forces only after the battle had begun to turn against Richard — arguably the decisive action of the day. Shakespeare compresses Stanley's layered motivations into a single cover-line: \"in the sty of this most bloody boar / My son George Stanley is frank'd up in hold: / If I revolt, off goes young George's head; / The fear of that withholds my present aid.\" The scene is short but historically load-bearing: Stanley is the character whose divided loyalties, more than any other, will decide the battle.",
+      "sources": [
+        "Charles Ross, Richard III (1981)",
+        "Barrie Williams, \"The Stanleys of Lathom and the Accession of Henry VII\" (1990)",
+        "Polydore Vergil, Anglica Historia (c. 1513)"
+      ]
+    },
+    {
+      "id": "richard_iii_act4_scene5_ann2",
+      "line_start": 11,
+      "line_end": 13,
+      "citation_display": "Richard III 4.5.11–13",
+      "category": "biographical",
+      "title": "The Welsh gentlemen and Rice ap Thomas",
+      "body": "Christopher's list of Richmond's supporters — Sir Walter Herbert, Sir Gilbert Talbot, Sir William Stanley, Oxford, \"redoubted Pembroke\" (Jasper Tudor), Sir James Blunt, and \"Rice ap Thomas, with a valiant crew\" — names the core of the coalition that would win at Bosworth. Rhys ap Thomas in particular was historically central: the Welsh magnate's decision to support Richmond during his march through Wales from Milford Haven (August 1485) was indispensable. Shakespeare's single-line mention masks vast political significance. Jasper Tudor (Earl of Pembroke, Richmond's uncle and long-term protector in exile) is the family link that made the Welsh support coherent. The scene in fourteen lines sketches the dynastic geography that would end the Wars of the Roses.",
+      "sources": [
+        "Stanley B. Chrimes, Henry VII (1972)",
+        "Ralph A. Griffiths and Roger S. Thomas, The Making of the Tudor Dynasty (1985)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act4_scene5_q1",
+      "kind": "historical",
+      "prompt": "Why cannot Lord Stanley (Derby) openly support Richmond at this point?",
+      "options": [
+        "He has no political interest in doing so",
+        "His son George Stanley is held as Richard's hostage at court — open revolt would cost the boy's head",
+        "He has sworn a sacred oath to Richard",
+        "He is physically imprisoned"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 2,
+      "anchor_line_end": 5
+    },
+    {
+      "id": "richard_iii_act4_scene5_q2",
+      "kind": "historical",
+      "prompt": "Among the supporters Christopher lists for Richmond, who was historically central for the march through Wales?",
+      "options": [
+        "Sir Walter Herbert",
+        "Rhys ap Thomas (\"Rice ap Thomas\"), the Welsh magnate whose support during Richmond's march from Milford Haven was indispensable",
+        "Sir James Blunt",
+        "The Earl of Oxford, solely"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 12,
+      "anchor_line_end": 12
+    }
+  ]
+}

@@ -1,0 +1,903 @@
+{
+  "section_id": "othello_act5_scene1",
+  "work_id": "othello",
+  "sequence": 14,
+  "act": 5,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "Cyprus. A street",
+  "line_count": 139,
+  "word_count": 1020,
+  "est_read_minutes": 5,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "IAGO",
+      "text": "Here, stand behind this bulk; straight will he come:"
+    },
+    {
+      "number": 2,
+      "speaker": "IAGO",
+      "text": "Wear thy good rapier bare, and put it home:"
+    },
+    {
+      "number": 3,
+      "speaker": "IAGO",
+      "text": "Quick, quick; fear nothing; I’ll be at thy elbow:"
+    },
+    {
+      "number": 4,
+      "speaker": "IAGO",
+      "text": "It makes us, or it mars us; think on that,"
+    },
+    {
+      "number": 5,
+      "speaker": "IAGO",
+      "text": "And fix most firm thy resolution."
+    },
+    {
+      "number": 6,
+      "speaker": "RODERIGO",
+      "text": "Be near at hand; I may miscarry in’t."
+    },
+    {
+      "number": 7,
+      "speaker": "IAGO",
+      "text": "Here, at thy hand: be bold, and take thy stand."
+    },
+    {
+      "number": 8,
+      "speaker": "RODERIGO",
+      "text": "I have no great devotion to the deed;"
+    },
+    {
+      "number": 9,
+      "speaker": "RODERIGO",
+      "text": "And yet he hath given me satisfying reasons:"
+    },
+    {
+      "number": 10,
+      "speaker": "RODERIGO",
+      "text": "’Tis but a man gone. Forth, my sword: he dies."
+    },
+    {
+      "number": 11,
+      "speaker": "IAGO",
+      "text": "I have rubb’d this young quat almost to the sense,"
+    },
+    {
+      "number": 12,
+      "speaker": "IAGO",
+      "text": "And he grows angry. Now, whether he kill Cassio,"
+    },
+    {
+      "number": 13,
+      "speaker": "IAGO",
+      "text": "Or Cassio him, or each do kill the other,"
+    },
+    {
+      "number": 14,
+      "speaker": "IAGO",
+      "text": "Every way makes my gain: live Roderigo,"
+    },
+    {
+      "number": 15,
+      "speaker": "IAGO",
+      "text": "He calls me to a restitution large"
+    },
+    {
+      "number": 16,
+      "speaker": "IAGO",
+      "text": "Of gold and jewels that I bobb’d from him,"
+    },
+    {
+      "number": 17,
+      "speaker": "IAGO",
+      "text": "As gifts to Desdemona;"
+    },
+    {
+      "number": 18,
+      "speaker": "IAGO",
+      "text": "It must not be: if Cassio do remain,"
+    },
+    {
+      "number": 19,
+      "speaker": "IAGO",
+      "text": "He hath a daily beauty in his life"
+    },
+    {
+      "number": 20,
+      "speaker": "IAGO",
+      "text": "That makes me ugly; and, besides, the Moor"
+    },
+    {
+      "number": 21,
+      "speaker": "IAGO",
+      "text": "May unfold me to him; there stand I in much peril:"
+    },
+    {
+      "number": 22,
+      "speaker": "IAGO",
+      "text": "No, he must die. But so: I hear him coming."
+    },
+    {
+      "number": 23,
+      "speaker": "RODERIGO",
+      "text": "I know his gait, ’tis he.—Villain, thou diest! Makes a pass at Cassio."
+    },
+    {
+      "number": 24,
+      "speaker": "CASSIO",
+      "text": "That thrust had been mine enemy indeed,"
+    },
+    {
+      "number": 25,
+      "speaker": "CASSIO",
+      "text": "But that my coat is better than thou know’st"
+    },
+    {
+      "number": 26,
+      "speaker": "CASSIO",
+      "text": "I will make proof of thine."
+    },
+    {
+      "number": 27,
+      "speaker": "RODERIGO",
+      "text": "O, I am slain! Iago from behind wounds Cassio in the leg, and exit."
+    },
+    {
+      "number": 28,
+      "speaker": "CASSIO",
+      "text": "I am maim’d for ever. Help, ho! murder! murder!"
+    },
+    {
+      "number": 29,
+      "speaker": "OTHELLO",
+      "text": "The voice of Cassio: Iago keeps his word."
+    },
+    {
+      "number": 30,
+      "speaker": "RODERIGO",
+      "text": "O, villain that I am!"
+    },
+    {
+      "number": 30,
+      "speaker": "OTHELLO",
+      "text": "It is even so."
+    },
+    {
+      "number": 31,
+      "speaker": "CASSIO",
+      "text": "O, help, ho! light! a surgeon!"
+    },
+    {
+      "number": 32,
+      "speaker": "OTHELLO",
+      "text": "’Tis he:—O brave Iago, honest and just,"
+    },
+    {
+      "number": 33,
+      "speaker": "OTHELLO",
+      "text": "That hast such noble sense of thy friend’s wrong!"
+    },
+    {
+      "number": 34,
+      "speaker": "OTHELLO",
+      "text": "Thou teachest me. Minion, your dear lies dead,"
+    },
+    {
+      "number": 35,
+      "speaker": "OTHELLO",
+      "text": "And your unblest fate hies: strumpet, I come."
+    },
+    {
+      "number": 36,
+      "speaker": "OTHELLO",
+      "text": "Forth of my heart those charms, thine eyes, are blotted;"
+    },
+    {
+      "number": 37,
+      "speaker": "OTHELLO",
+      "text": "Thy bed, lust-stain’d, shall with lust’s blood be spotted."
+    },
+    {
+      "number": 38,
+      "speaker": "CASSIO",
+      "text": "What, ho! no watch? no passage? murder! murder!"
+    },
+    {
+      "number": 39,
+      "speaker": "GRATIANO",
+      "text": "’Tis some mischance; the cry is very direful."
+    },
+    {
+      "number": 40,
+      "speaker": "CASSIO",
+      "text": "O, help!"
+    },
+    {
+      "number": 40,
+      "speaker": "LODOVICO",
+      "text": "Hark!"
+    },
+    {
+      "number": 41,
+      "speaker": "RODERIGO",
+      "text": "O wretched villain!"
+    },
+    {
+      "number": 42,
+      "speaker": "LODOVICO",
+      "text": "Two or three groan: it is a heavy night:"
+    },
+    {
+      "number": 43,
+      "speaker": "LODOVICO",
+      "text": "These may be counterfeits: let’s think’t unsafe"
+    },
+    {
+      "number": 44,
+      "speaker": "LODOVICO",
+      "text": "To come in to the cry without more help."
+    },
+    {
+      "number": 45,
+      "speaker": "RODERIGO",
+      "text": "Nobody come? then shall I bleed to death."
+    },
+    {
+      "number": 46,
+      "speaker": "LODOVICO",
+      "text": "Hark!"
+    },
+    {
+      "number": 47,
+      "speaker": "GRATIANO",
+      "text": "Here’s one comes in his shirt, with light and weapons."
+    },
+    {
+      "number": 48,
+      "speaker": "IAGO",
+      "text": "Who’s there? whose noise is this that ones on murder?"
+    },
+    {
+      "number": 49,
+      "speaker": "LODOVICO",
+      "text": "We do not know."
+    },
+    {
+      "number": 49,
+      "speaker": "IAGO",
+      "text": "Did not you hear a cry?"
+    },
+    {
+      "number": 50,
+      "speaker": "CASSIO",
+      "text": "Here, here! for heaven’s sake, help me!"
+    },
+    {
+      "number": 51,
+      "speaker": "IAGO",
+      "text": "What’s the matter?"
+    },
+    {
+      "number": 52,
+      "speaker": "GRATIANO",
+      "text": "This is Othello’s ancient, as I take it."
+    },
+    {
+      "number": 53,
+      "speaker": "LODOVICO",
+      "text": "The same indeed; a very valiant fellow."
+    },
+    {
+      "number": 54,
+      "speaker": "IAGO",
+      "text": "What are you here that cry so grievously?"
+    },
+    {
+      "number": 55,
+      "speaker": "CASSIO",
+      "text": "Iago? O, I am spoil’d, undone by villains!"
+    },
+    {
+      "number": 56,
+      "speaker": "CASSIO",
+      "text": "Give me some help."
+    },
+    {
+      "number": 57,
+      "speaker": "IAGO",
+      "text": "O me, lieutenant! what villains have done this?"
+    },
+    {
+      "number": 58,
+      "speaker": "CASSIO",
+      "text": "I think that one of them is hereabout,"
+    },
+    {
+      "number": 59,
+      "speaker": "CASSIO",
+      "text": "And cannot make away."
+    },
+    {
+      "number": 59,
+      "speaker": "IAGO",
+      "text": "O treacherous villains!"
+    },
+    {
+      "number": 60,
+      "speaker": "IAGO",
+      "text": "What are you there? come in, and give some help. To Lodovico and Gratiano."
+    },
+    {
+      "number": 61,
+      "speaker": "RODERIGO",
+      "text": "O, help me here!"
+    },
+    {
+      "number": 61,
+      "speaker": "CASSIO",
+      "text": "That’s one of them."
+    },
+    {
+      "number": 62,
+      "speaker": "IAGO",
+      "text": "O murderous slave! O villain!"
+    },
+    {
+      "number": 62,
+      "speaker": "RODERIGO",
+      "text": "O damn’d Iago! O inhuman dog!"
+    },
+    {
+      "number": 63,
+      "speaker": "IAGO",
+      "text": "Kill men i’ the dark!—Where be these bloody thieves?—"
+    },
+    {
+      "number": 64,
+      "speaker": "IAGO",
+      "text": "How silent is this town!—Ho! murder! murder!—"
+    },
+    {
+      "number": 65,
+      "speaker": "IAGO",
+      "text": "What may you be? are you of good or evil?"
+    },
+    {
+      "number": 66,
+      "speaker": "LODOVICO",
+      "text": "As you shall prove us, praise us."
+    },
+    {
+      "number": 67,
+      "speaker": "IAGO",
+      "text": "Signior Lodovico?"
+    },
+    {
+      "number": 67,
+      "speaker": "LODOVICO",
+      "text": "He, sir."
+    },
+    {
+      "number": 68,
+      "speaker": "IAGO",
+      "text": "I cry you mercy. Here’s Cassio hurt by villains."
+    },
+    {
+      "number": 69,
+      "speaker": "GRATIANO",
+      "text": "Cassio!"
+    },
+    {
+      "number": 69,
+      "speaker": "IAGO",
+      "text": "How is’t, brother!"
+    },
+    {
+      "number": 70,
+      "speaker": "CASSIO",
+      "text": "My leg is cut in two."
+    },
+    {
+      "number": 70,
+      "speaker": "IAGO",
+      "text": "Marry, heaven forbid!"
+    },
+    {
+      "number": 71,
+      "speaker": "IAGO",
+      "text": "Light, gentlemen; I’ll bind it with my shirt."
+    },
+    {
+      "number": 72,
+      "speaker": "BIANCA",
+      "text": "What is the matter, ho? who is’t that cried?"
+    },
+    {
+      "number": 73,
+      "speaker": "IAGO",
+      "text": "Who is’t that cried!"
+    },
+    {
+      "number": 74,
+      "speaker": "BIANCA",
+      "text": "O my dear Cassio! my sweet Cassio! O Cassio,"
+    },
+    {
+      "number": 75,
+      "speaker": "BIANCA",
+      "text": "Cassio, Cassio!"
+    },
+    {
+      "number": 76,
+      "speaker": "IAGO",
+      "text": "O notable strumpet! Cassio, may you suspect"
+    },
+    {
+      "number": 77,
+      "speaker": "IAGO",
+      "text": "Who they should be that have thus many led you?"
+    },
+    {
+      "number": 78,
+      "speaker": "CASSIO",
+      "text": "No."
+    },
+    {
+      "number": 79,
+      "speaker": "GRATIANO",
+      "text": "I am to find you thus: I have been to seek you."
+    },
+    {
+      "number": 80,
+      "speaker": "IAGO",
+      "text": "Lend me a garter. So. O, for a chair,"
+    },
+    {
+      "number": 81,
+      "speaker": "IAGO",
+      "text": "To bear him easily hence!"
+    },
+    {
+      "number": 82,
+      "speaker": "BIANCA",
+      "text": "Alas, he faints! O Cassio, Cassio, Cassio!"
+    },
+    {
+      "number": 83,
+      "speaker": "IAGO",
+      "text": "Gentlemen all, I do suspect this trash"
+    },
+    {
+      "number": 84,
+      "speaker": "IAGO",
+      "text": "To be a party in this injury."
+    },
+    {
+      "number": 85,
+      "speaker": "IAGO",
+      "text": "Patience awhile, good Cassio. Come, come;"
+    },
+    {
+      "number": 86,
+      "speaker": "IAGO",
+      "text": "Lend me a light. Know we this face or no?"
+    },
+    {
+      "number": 87,
+      "speaker": "IAGO",
+      "text": "Alas my friend and my dear countryman"
+    },
+    {
+      "number": 88,
+      "speaker": "IAGO",
+      "text": "Roderigo! no:—yes, sure: O heaven! Roderigo."
+    },
+    {
+      "number": 88,
+      "speaker": "GRATIANO",
+      "text": "What, of Venice?"
+    },
+    {
+      "number": 89,
+      "speaker": "IAGO",
+      "text": "Even he, sir; did you know him?"
+    },
+    {
+      "number": 90,
+      "speaker": "GRATIANO",
+      "text": "Know him! ay."
+    },
+    {
+      "number": 91,
+      "speaker": "IAGO",
+      "text": "Signior Gratiano? I cry you gentle pardon;"
+    },
+    {
+      "number": 92,
+      "speaker": "IAGO",
+      "text": "These bloody accidents must excuse my manners,"
+    },
+    {
+      "number": 93,
+      "speaker": "IAGO",
+      "text": "That so neglected you."
+    },
+    {
+      "number": 93,
+      "speaker": "GRATIANO",
+      "text": "I am glad to see you."
+    },
+    {
+      "number": 94,
+      "speaker": "IAGO",
+      "text": "How do you, Cassio? O, a chair, a chair!"
+    },
+    {
+      "number": 95,
+      "speaker": "GRATIANO",
+      "text": "Roderigo!"
+    },
+    {
+      "number": 96,
+      "speaker": "IAGO",
+      "text": "He, he ’tis he. A chair brought in. O, that’s well said; the chair!"
+    },
+    {
+      "number": 97,
+      "speaker": "IAGO",
+      "text": "Some good man bear him carefully from hence;"
+    },
+    {
+      "number": 98,
+      "speaker": "IAGO",
+      "text": "I’ll fetch the general’s surgeon. To Bianca. For you, mistress,"
+    },
+    {
+      "number": 99,
+      "speaker": "IAGO",
+      "text": "Save you your labour. He that lies slain here, Cassio,"
+    },
+    {
+      "number": 100,
+      "speaker": "IAGO",
+      "text": "Was my dear friend: what malice was between you?"
+    },
+    {
+      "number": 101,
+      "speaker": "CASSIO",
+      "text": "None in the world; nor do I know the man."
+    },
+    {
+      "number": 102,
+      "speaker": "IAGO",
+      "text": "To Bianca. What, look you pale? O, bear him out o’ the air. Cassio and Roderigo are borne off."
+    },
+    {
+      "number": 103,
+      "speaker": "IAGO",
+      "text": "Stay you, good gentlemen. Look you pale, mistress?"
+    },
+    {
+      "number": 104,
+      "speaker": "IAGO",
+      "text": "Do you perceive the gastness of her eye?"
+    },
+    {
+      "number": 105,
+      "speaker": "IAGO",
+      "text": "Nay, if you stare, we shall hear more anon."
+    },
+    {
+      "number": 106,
+      "speaker": "IAGO",
+      "text": "Behold her well; I pray you, look upon her:"
+    },
+    {
+      "number": 107,
+      "speaker": "IAGO",
+      "text": "Do you see, gentlemen? nay, guiltiness will speak,"
+    },
+    {
+      "number": 108,
+      "speaker": "IAGO",
+      "text": "Though tongues were out of use."
+    },
+    {
+      "number": 109,
+      "speaker": "EMILIA",
+      "text": "’Las, what’s the matter? what’s the matter, husband?"
+    },
+    {
+      "number": 110,
+      "speaker": "IAGO",
+      "text": "Cassio hath here been set on in the dark"
+    },
+    {
+      "number": 111,
+      "speaker": "IAGO",
+      "text": "By Roderigo and fellows that are scaped:"
+    },
+    {
+      "number": 112,
+      "speaker": "IAGO",
+      "text": "He’s almost slain, and Roderigo dead."
+    },
+    {
+      "number": 112,
+      "speaker": "EMILIA",
+      "text": "Alas, good gentleman! alas, good Cassio!"
+    },
+    {
+      "number": 113,
+      "speaker": "IAGO",
+      "text": "This is the fruit of whoring. Prithee, Emilia,"
+    },
+    {
+      "number": 114,
+      "speaker": "IAGO",
+      "text": "Go know of Cassio where he supp’d to-night."
+    },
+    {
+      "number": 115,
+      "speaker": "IAGO",
+      "text": "To Bianca. What, do you shake at that?"
+    },
+    {
+      "number": 116,
+      "speaker": "BIANCA",
+      "text": "He supp’d at my house; but I therefore shake not."
+    },
+    {
+      "number": 117,
+      "speaker": "IAGO",
+      "text": "O, did he so? I charge you, go with me."
+    },
+    {
+      "number": 118,
+      "speaker": "EMILIA",
+      "text": "Fie, fie upon thee, strumpet!"
+    },
+    {
+      "number": 119,
+      "speaker": "BIANCA",
+      "text": "I am no strumpet; but of life as honest"
+    },
+    {
+      "number": 120,
+      "speaker": "BIANCA",
+      "text": "As you that thus abuse me."
+    },
+    {
+      "number": 120,
+      "speaker": "EMILIA",
+      "text": "As I! foh! fie upon thee!"
+    },
+    {
+      "number": 121,
+      "speaker": "IAGO",
+      "text": "Kind gentlemen, let’s go see poor Cassio dress’d."
+    },
+    {
+      "number": 122,
+      "speaker": "IAGO",
+      "text": "Come, mistress, you must tell’s another tale."
+    },
+    {
+      "number": 123,
+      "speaker": "IAGO",
+      "text": "Emilia run you to the citadel,"
+    },
+    {
+      "number": 124,
+      "speaker": "IAGO",
+      "text": "And tell my lord and lady what hath happ’d."
+    },
+    {
+      "number": 125,
+      "speaker": "IAGO",
+      "text": "Will you go on? I pray. This is the night"
+    },
+    {
+      "number": 126,
+      "speaker": "IAGO",
+      "text": "That either makes me or fordoes me quite."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Iago and Roderigo."
+    },
+    {
+      "after_line": 7,
+      "text": "Retires."
+    },
+    {
+      "after_line": 22,
+      "text": "Enter Cassio."
+    },
+    {
+      "after_line": 26,
+      "text": "Draws, and wounds Roderigo."
+    },
+    {
+      "after_line": 28,
+      "text": "Falls."
+    },
+    {
+      "after_line": 28,
+      "text": "Enter Othello."
+    },
+    {
+      "after_line": 37,
+      "text": "Exit."
+    },
+    {
+      "after_line": 37,
+      "text": "Enter Lodovico and Gratiano."
+    },
+    {
+      "after_line": 46,
+      "text": "Reenter Iago, with a light."
+    },
+    {
+      "after_line": 62,
+      "text": "Stabs Roderigo."
+    },
+    {
+      "after_line": 71,
+      "text": "Enter Bianca."
+    },
+    {
+      "after_line": 108,
+      "text": "Enter Emilia."
+    },
+    {
+      "after_line": 125,
+      "text": "Aside."
+    },
+    {
+      "after_line": 126,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "othello_act5_scene1_gloss1",
+      "line": 1,
+      "phrase": "bulk",
+      "definition": "a projecting frame of a shop; a hiding place"
+    },
+    {
+      "id": "othello_act5_scene1_gloss2",
+      "line": 2,
+      "phrase": "rapier",
+      "definition": "a slender thrusting sword"
+    },
+    {
+      "id": "othello_act5_scene1_gloss3",
+      "line": 11,
+      "phrase": "quat",
+      "definition": "pimple — Iago's contemptuous term for Roderigo"
+    },
+    {
+      "id": "othello_act5_scene1_gloss4",
+      "line": 11,
+      "phrase": "to the sense",
+      "definition": "to the quick; painfully"
+    },
+    {
+      "id": "othello_act5_scene1_gloss7",
+      "line": 25,
+      "phrase": "coat",
+      "definition": "mail shirt; undergarment of protection"
+    },
+    {
+      "id": "othello_act5_scene1_gloss8",
+      "line": 37,
+      "phrase": "passage",
+      "definition": "passers-by; street traffic"
+    },
+    {
+      "id": "othello_act5_scene1_gloss11",
+      "line": 79,
+      "phrase": "garter",
+      "definition": "a garter pulled off for a bandage"
+    },
+    {
+      "id": "othello_act5_scene1_gloss12",
+      "line": 85,
+      "phrase": "light",
+      "definition": "a lantern — stage direction implied"
+    },
+    {
+      "id": "othello_act5_scene1_gloss13",
+      "line": 82,
+      "phrase": "trash",
+      "definition": "worthless person — Iago's slur over Roderigo's body"
+    },
+    {
+      "id": "othello_act5_scene1_gloss14",
+      "line": 75,
+      "phrase": "notable",
+      "definition": "notorious"
+    },
+    {
+      "id": "othello_act5_scene1_gloss15",
+      "line": 108,
+      "phrase": "What’s the matter",
+      "definition": "what has happened"
+    },
+    {
+      "id": "othello_act5_scene1_gloss17",
+      "line": 103,
+      "phrase": "gastness",
+      "definition": "aghast look; terror"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "othello_act5_scene1_ann1",
+      "line_start": 1,
+      "line_end": 55,
+      "citation_display": "Othello 5.1.1–55",
+      "category": "structural",
+      "title": "Night action and the unraveling of Iago's plot",
+      "body": "The ambush on Cassio is Iago's first major improvisation since the handkerchief. It is also his first real miscalculation. He expects Cassio dead; instead Cassio is wounded and Roderigo is dispatched by Iago himself to cover the failure. The night scene is murky — 'make me a light', 'what are you there?' — and Shakespeare uses the confusion to show Iago losing control of his own scheme.\n\nStructurally the play has been a pyramid of Iago's mastery; from here it is his descent. He has authored too many stories at once and can no longer reconcile them. By the time he enters Desdemona's bedchamber in the next scene, his plot has begun to consume him along with his victims.",
+      "sources": [
+        "Ann Pasternak Slater, *Shakespeare the Director* (1982)",
+        "Philip Edwards, *Shakespeare and the Confines of Art* (1968)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "othello_act5_scene1_q1",
+      "kind": "comprehension",
+      "prompt": "What is Iago's plan at the start of the scene?",
+      "options": [
+        "To kill Othello and seize Cyprus",
+        "To have Roderigo kill Cassio, gaining him as loyal ally while removing a witness",
+        "To poison Desdemona in her sleep",
+        "To flee Cyprus disguised as a merchant"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 1,
+      "anchor_line_end": 25
+    },
+    {
+      "id": "othello_act5_scene1_q2",
+      "kind": "inference",
+      "prompt": "Why does Iago ultimately kill Roderigo himself?",
+      "options": [
+        "Roderigo has betrayed him to Lodovico",
+        "Roderigo wounded Cassio but failed to kill him — Iago silences the man who knows the plot",
+        "Roderigo has stolen the remaining jewels",
+        "Roderigo has refused to pay the agreed-upon sum"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 55,
+      "anchor_line_end": 95
+    },
+    {
+      "id": "othello_act5_scene1_q3",
+      "kind": "structural",
+      "prompt": "Why does Shakespeare set this scene at night in a dark street?",
+      "options": [
+        "Because Venice and Cyprus had no streetlights",
+        "The darkness mirrors Iago's loss of control — his scheme becomes visually as confused as it is strategically",
+        "It was easier to stage in the Globe Theatre at sunset",
+        "Night scenes were cheaper to perform"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 1,
+      "anchor_line_end": 130
+    }
+  ]
+}

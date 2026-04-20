@@ -1,0 +1,305 @@
+{
+  "work_id": "richard-iii",
+  "entries": [
+    {
+      "type": "act",
+      "act": 1,
+      "title": "Act I"
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act1_scene1",
+      "sequence": 1,
+      "act": 1,
+      "scene": 1,
+      "scene_title": "London. A street",
+      "line_count": 163,
+      "word_count": 1235,
+      "est_read_minutes": 6
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act1_scene2",
+      "sequence": 2,
+      "act": 1,
+      "scene": 2,
+      "scene_title": "The same. Another street",
+      "line_count": 274,
+      "word_count": 2091,
+      "est_read_minutes": 10
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act1_scene3",
+      "sequence": 3,
+      "act": 1,
+      "scene": 3,
+      "scene_title": "London. The palace",
+      "line_count": 356,
+      "word_count": 2834,
+      "est_read_minutes": 14
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act1_scene4",
+      "sequence": 4,
+      "act": 1,
+      "scene": 4,
+      "scene_title": "London. The Tower",
+      "line_count": 266,
+      "word_count": 2190,
+      "est_read_minutes": 11
+    },
+    {
+      "type": "act",
+      "act": 2,
+      "title": "Act II"
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act2_scene1",
+      "sequence": 5,
+      "act": 2,
+      "scene": 1,
+      "scene_title": "London. The palace",
+      "line_count": 140,
+      "word_count": 1118,
+      "est_read_minutes": 6
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act2_scene2",
+      "sequence": 6,
+      "act": 2,
+      "scene": 2,
+      "scene_title": "The palace",
+      "line_count": 154,
+      "word_count": 1219,
+      "est_read_minutes": 6
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act2_scene3",
+      "sequence": 7,
+      "act": 2,
+      "scene": 3,
+      "scene_title": "London. A street",
+      "line_count": 49,
+      "word_count": 397,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act2_scene4",
+      "sequence": 8,
+      "act": 2,
+      "scene": 4,
+      "scene_title": "London. The palace",
+      "line_count": 78,
+      "word_count": 586,
+      "est_read_minutes": 3
+    },
+    {
+      "type": "act",
+      "act": 3,
+      "title": "Act III"
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act3_scene1",
+      "sequence": 9,
+      "act": 3,
+      "scene": 1,
+      "scene_title": "London. A street",
+      "line_count": 201,
+      "word_count": 1586,
+      "est_read_minutes": 8
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act3_scene2",
+      "sequence": 10,
+      "act": 3,
+      "scene": 2,
+      "scene_title": "Before Lord Hastings' house",
+      "line_count": 123,
+      "word_count": 978,
+      "est_read_minutes": 5
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act3_scene3",
+      "sequence": 11,
+      "act": 3,
+      "scene": 3,
+      "scene_title": "Pomfret. Before the castle",
+      "line_count": 25,
+      "word_count": 196,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act3_scene4",
+      "sequence": 12,
+      "act": 3,
+      "scene": 4,
+      "scene_title": "The Tower of London",
+      "line_count": 110,
+      "word_count": 881,
+      "est_read_minutes": 4
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act3_scene5",
+      "sequence": 13,
+      "act": 3,
+      "scene": 5,
+      "scene_title": "The Tower walls",
+      "line_count": 109,
+      "word_count": 820,
+      "est_read_minutes": 4
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act3_scene6",
+      "sequence": 14,
+      "act": 3,
+      "scene": 6,
+      "scene_title": "The same. A street",
+      "line_count": 14,
+      "word_count": 117,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act3_scene7",
+      "sequence": 15,
+      "act": 3,
+      "scene": 7,
+      "scene_title": "Baynard's Castle",
+      "line_count": 234,
+      "word_count": 1778,
+      "est_read_minutes": 9
+    },
+    {
+      "type": "act",
+      "act": 4,
+      "title": "Act IV"
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act4_scene1",
+      "sequence": 16,
+      "act": 4,
+      "scene": 1,
+      "scene_title": "Before the Tower",
+      "line_count": 102,
+      "word_count": 835,
+      "est_read_minutes": 4
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act4_scene2",
+      "sequence": 17,
+      "act": 4,
+      "scene": 2,
+      "scene_title": "London. The palace",
+      "line_count": 130,
+      "word_count": 931,
+      "est_read_minutes": 5
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act4_scene3",
+      "sequence": 18,
+      "act": 4,
+      "scene": 3,
+      "scene_title": "The same",
+      "line_count": 59,
+      "word_count": 431,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act4_scene4",
+      "sequence": 19,
+      "act": 4,
+      "scene": 4,
+      "scene_title": "Before the palace",
+      "line_count": 553,
+      "word_count": 4267,
+      "est_read_minutes": 21
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act4_scene5",
+      "sequence": 20,
+      "act": 4,
+      "scene": 5,
+      "scene_title": "Lord Derby's house",
+      "line_count": 20,
+      "word_count": 144,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "act",
+      "act": 5,
+      "title": "Act V"
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act5_scene1",
+      "sequence": 21,
+      "act": 5,
+      "scene": 1,
+      "scene_title": "Salisbury. An open place",
+      "line_count": 29,
+      "word_count": 225,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act5_scene2",
+      "sequence": 22,
+      "act": 5,
+      "scene": 2,
+      "scene_title": "Plain near Tamworth",
+      "line_count": 24,
+      "word_count": 189,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act5_scene3",
+      "sequence": 23,
+      "act": 5,
+      "scene": 3,
+      "scene_title": "Bosworth Field",
+      "line_count": 296,
+      "word_count": 2277,
+      "est_read_minutes": 11
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act5_scene4",
+      "sequence": 24,
+      "act": 5,
+      "scene": 4,
+      "scene_title": "Another part of the field",
+      "line_count": 13,
+      "word_count": 110,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "richard_iii_act5_scene5",
+      "sequence": 25,
+      "act": 5,
+      "scene": 5,
+      "scene_title": "Another part of the field",
+      "line_count": 41,
+      "word_count": 315,
+      "est_read_minutes": 2
+    }
+  ]
+}

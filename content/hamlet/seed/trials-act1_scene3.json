@@ -1,0 +1,75 @@
+{
+  "section_id": "hamlet_act1_scene3",
+  "trials": [
+    {
+      "kind": "comprehension",
+      "prompt": "What does Laertes warn Ophelia about before leaving for France?",
+      "options": [
+        "The political danger of associating with Prince Hamlet.",
+        "Hamlet's affections toward her, which he calls passing and unreliable.",
+        "The rumor that Polonius intends to send her to a convent.",
+        "That the King has designs of his own on her."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 4,
+      "anchor_line_end": 44
+    },
+    {
+      "kind": "inference",
+      "prompt": "When Ophelia tells Laertes to show her the way to heaven while he himself treads the 'primrose path of dalliance,' what is she doing?",
+      "options": [
+        "Accepting his advice and resolving to live more chastely.",
+        "Pointing out the hypocrisy of a brother who polices her conduct while indulging his own.",
+        "Mocking him as a hypocritical Puritan.",
+        "Confessing that she has already compromised her virtue."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 46,
+      "anchor_line_end": 51
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "Which of these is NOT a precept Polonius delivers to Laertes in this scene?",
+      "options": [
+        "'Give every man thy ear, but few thy voice.'",
+        "'Neither a borrower nor a lender be.'",
+        "'This above all: to thine own self be true.'",
+        "'Trust not a friend who praises you too much.'"
+      ],
+      "answer_index": 3,
+      "wisdom_reward": 15,
+      "anchor_line_start": 60,
+      "anchor_line_end": 82
+    },
+    {
+      "kind": "theme",
+      "prompt": "What does Polonius's phrase 'springes to catch woodcocks' imply about Hamlet's expressions of love?",
+      "options": [
+        "That they are genuine declarations suitable for marriage.",
+        "That they are traps set for a gullible victim.",
+        "That they are harmless jests among courtiers.",
+        "That they are Latin exercises Hamlet is practicing."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 115,
+      "anchor_line_end": 118
+    },
+    {
+      "kind": "comprehension",
+      "prompt": "What does Polonius order Ophelia to do at the end of the scene?",
+      "options": [
+        "Return all of Hamlet's letters and refuse to see him.",
+        "Report any meetings with Hamlet directly to the King.",
+        "Stop speaking with Hamlet and not give him any of her time.",
+        "Accept Hamlet's proposals but on her father's terms."
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 10,
+      "anchor_line_start": 131,
+      "anchor_line_end": 135
+    }
+  ]
+}

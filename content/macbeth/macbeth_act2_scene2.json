@@ -1,0 +1,771 @@
+{
+  "section_id": "macbeth_act2_scene2",
+  "work_id": "macbeth",
+  "sequence": 9,
+  "act": 2,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "The same",
+  "line_count": 85,
+  "word_count": 618,
+  "est_read_minutes": 3,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "LADY MACBETH",
+      "text": "That which hath made them drunk hath made me bold;"
+    },
+    {
+      "number": 2,
+      "speaker": "LADY MACBETH",
+      "text": "What hath quench’d them hath given me fire. Hark! Peace!"
+    },
+    {
+      "number": 3,
+      "speaker": "LADY MACBETH",
+      "text": "It was the owl that shriek’d, the fatal bellman,"
+    },
+    {
+      "number": 4,
+      "speaker": "LADY MACBETH",
+      "text": "Which gives the stern’st good-night. He is about it:"
+    },
+    {
+      "number": 5,
+      "speaker": "LADY MACBETH",
+      "text": "The doors are open; and the surfeited grooms"
+    },
+    {
+      "number": 6,
+      "speaker": "LADY MACBETH",
+      "text": "Do mock their charge with snores: I have drugg’d their possets,"
+    },
+    {
+      "number": 7,
+      "speaker": "LADY MACBETH",
+      "text": "That death and nature do contend about them,"
+    },
+    {
+      "number": 8,
+      "speaker": "LADY MACBETH",
+      "text": "Whether they live or die."
+    },
+    {
+      "number": 8,
+      "speaker": "MACBETH",
+      "text": "Who’s there? what, ho!"
+    },
+    {
+      "number": 9,
+      "speaker": "LADY MACBETH",
+      "text": "Alack, I am afraid they have awaked,"
+    },
+    {
+      "number": 10,
+      "speaker": "LADY MACBETH",
+      "text": "And ’tis not done. The attempt and not the deed"
+    },
+    {
+      "number": 11,
+      "speaker": "LADY MACBETH",
+      "text": "Confounds us. Hark! I laid their daggers ready;"
+    },
+    {
+      "number": 12,
+      "speaker": "LADY MACBETH",
+      "text": "He could not miss ’em. Had he not resembled"
+    },
+    {
+      "number": 13,
+      "speaker": "LADY MACBETH",
+      "text": "My father as he slept, I had done’t."
+    },
+    {
+      "number": 14,
+      "speaker": "MACBETH",
+      "text": "I have done the deed. Didst thou not hear a noise?"
+    },
+    {
+      "number": 15,
+      "speaker": "LADY MACBETH",
+      "text": "I heard the owl scream and the crickets cry."
+    },
+    {
+      "number": 16,
+      "speaker": "LADY MACBETH",
+      "text": "Did not you speak?"
+    },
+    {
+      "number": 16,
+      "speaker": "MACBETH",
+      "text": "When?"
+    },
+    {
+      "number": 17,
+      "speaker": "LADY MACBETH",
+      "text": "Now."
+    },
+    {
+      "number": 17,
+      "speaker": "MACBETH",
+      "text": "As I descended?"
+    },
+    {
+      "number": 18,
+      "speaker": "LADY MACBETH",
+      "text": "Ay."
+    },
+    {
+      "number": 18,
+      "speaker": "MACBETH",
+      "text": "Hark!"
+    },
+    {
+      "number": 19,
+      "speaker": "MACBETH",
+      "text": "Who lies i’ the second chamber?"
+    },
+    {
+      "number": 19,
+      "speaker": "LADY MACBETH",
+      "text": "Donalbain."
+    },
+    {
+      "number": 20,
+      "speaker": "MACBETH",
+      "text": "This is a sorry sight. Looking on his hands."
+    },
+    {
+      "number": 21,
+      "speaker": "LADY MACBETH",
+      "text": "A foolish thought, to say a sorry sight."
+    },
+    {
+      "number": 22,
+      "speaker": "MACBETH",
+      "text": "There’s one did laugh in’s sleep, and one cried “Murder!”"
+    },
+    {
+      "number": 23,
+      "speaker": "MACBETH",
+      "text": "That they did wake each other: I stood and heard them:"
+    },
+    {
+      "number": 24,
+      "speaker": "MACBETH",
+      "text": "But they did say their prayers, and address’d them"
+    },
+    {
+      "number": 25,
+      "speaker": "MACBETH",
+      "text": "Again to sleep."
+    },
+    {
+      "number": 25,
+      "speaker": "LADY MACBETH",
+      "text": "There are two lodged together."
+    },
+    {
+      "number": 26,
+      "speaker": "MACBETH",
+      "text": "One cried “God bless us!” and “Amen” the other;"
+    },
+    {
+      "number": 27,
+      "speaker": "MACBETH",
+      "text": "As they had seen me with these hangman’s hands."
+    },
+    {
+      "number": 28,
+      "speaker": "MACBETH",
+      "text": "Listening their fear, I could not say “Amen,”"
+    },
+    {
+      "number": 29,
+      "speaker": "MACBETH",
+      "text": "When they did say “God bless us!”"
+    },
+    {
+      "number": 30,
+      "speaker": "LADY MACBETH",
+      "text": "Consider it not so deeply."
+    },
+    {
+      "number": 31,
+      "speaker": "MACBETH",
+      "text": "But wherefore could not I pronounce “Amen”?"
+    },
+    {
+      "number": 32,
+      "speaker": "MACBETH",
+      "text": "I had most need of blessing, and “Amen”"
+    },
+    {
+      "number": 33,
+      "speaker": "MACBETH",
+      "text": "Stuck in my throat."
+    },
+    {
+      "number": 33,
+      "speaker": "LADY MACBETH",
+      "text": "These deeds must not be thought"
+    },
+    {
+      "number": 34,
+      "speaker": "LADY MACBETH",
+      "text": "After these ways; so, it will make us mad."
+    },
+    {
+      "number": 35,
+      "speaker": "MACBETH",
+      "text": "Methought I heard a voice cry “Sleep no more!"
+    },
+    {
+      "number": 36,
+      "speaker": "MACBETH",
+      "text": "Macbeth does murder sleep,” the innocent sleep,"
+    },
+    {
+      "number": 37,
+      "speaker": "MACBETH",
+      "text": "Sleep that knits up the ravell’d sleave of care,"
+    },
+    {
+      "number": 38,
+      "speaker": "MACBETH",
+      "text": "The death of each day’s life, sore labour’s bath,"
+    },
+    {
+      "number": 39,
+      "speaker": "MACBETH",
+      "text": "Balm of hurt minds, great nature’s second course,"
+    },
+    {
+      "number": 40,
+      "speaker": "MACBETH",
+      "text": "Chief nourisher in life’s feast—"
+    },
+    {
+      "number": 40,
+      "speaker": "LADY MACBETH",
+      "text": "What do you mean?"
+    },
+    {
+      "number": 41,
+      "speaker": "MACBETH",
+      "text": "Still it cried “Sleep no more!” to all the house:"
+    },
+    {
+      "number": 42,
+      "speaker": "MACBETH",
+      "text": "“Glamis hath murder’d sleep, and therefore Cawdor"
+    },
+    {
+      "number": 43,
+      "speaker": "MACBETH",
+      "text": "Shall sleep no more; Macbeth shall sleep no more.”"
+    },
+    {
+      "number": 44,
+      "speaker": "LADY MACBETH",
+      "text": "Who was it that thus cried? Why, worthy thane,"
+    },
+    {
+      "number": 45,
+      "speaker": "LADY MACBETH",
+      "text": "You do unbend your noble strength, to think"
+    },
+    {
+      "number": 46,
+      "speaker": "LADY MACBETH",
+      "text": "So brainsickly of things. Go get some water,"
+    },
+    {
+      "number": 47,
+      "speaker": "LADY MACBETH",
+      "text": "And wash this filthy witness from your hand."
+    },
+    {
+      "number": 48,
+      "speaker": "LADY MACBETH",
+      "text": "Why did you bring these daggers from the place?"
+    },
+    {
+      "number": 49,
+      "speaker": "LADY MACBETH",
+      "text": "They must lie there: go carry them; and smear"
+    },
+    {
+      "number": 50,
+      "speaker": "LADY MACBETH",
+      "text": "The sleepy grooms with blood."
+    },
+    {
+      "number": 50,
+      "speaker": "MACBETH",
+      "text": "I’ll go no more:"
+    },
+    {
+      "number": 51,
+      "speaker": "MACBETH",
+      "text": "I am afraid to think what I have done;"
+    },
+    {
+      "number": 52,
+      "speaker": "MACBETH",
+      "text": "Look on’t again I dare not."
+    },
+    {
+      "number": 52,
+      "speaker": "LADY MACBETH",
+      "text": "Infirm of purpose!"
+    },
+    {
+      "number": 53,
+      "speaker": "LADY MACBETH",
+      "text": "Give me the daggers: the sleeping and the dead"
+    },
+    {
+      "number": 54,
+      "speaker": "LADY MACBETH",
+      "text": "Are but as pictures: ’tis the eye of childhood"
+    },
+    {
+      "number": 55,
+      "speaker": "LADY MACBETH",
+      "text": "That fears a painted devil. If he do bleed,"
+    },
+    {
+      "number": 56,
+      "speaker": "LADY MACBETH",
+      "text": "I’ll gild the faces of the grooms withal;"
+    },
+    {
+      "number": 57,
+      "speaker": "LADY MACBETH",
+      "text": "For it must seem their guilt."
+    },
+    {
+      "number": 57,
+      "speaker": "MACBETH",
+      "text": "Whence is that knocking?"
+    },
+    {
+      "number": 58,
+      "speaker": "MACBETH",
+      "text": "How is’t with me, when every noise appals me?"
+    },
+    {
+      "number": 59,
+      "speaker": "MACBETH",
+      "text": "What hands are here? ha! they pluck out mine eyes."
+    },
+    {
+      "number": 60,
+      "speaker": "MACBETH",
+      "text": "Will all great Neptune’s ocean wash this blood"
+    },
+    {
+      "number": 61,
+      "speaker": "MACBETH",
+      "text": "Clean from my hand? No, this my hand will rather"
+    },
+    {
+      "number": 62,
+      "speaker": "MACBETH",
+      "text": "The multitudinous seas in incarnadine,"
+    },
+    {
+      "number": 63,
+      "speaker": "MACBETH",
+      "text": "Making the green one red."
+    },
+    {
+      "number": 64,
+      "speaker": "LADY MACBETH",
+      "text": "My hands are of your colour; but I shame"
+    },
+    {
+      "number": 65,
+      "speaker": "LADY MACBETH",
+      "text": "To wear a heart so white. I hear a knocking"
+    },
+    {
+      "number": 66,
+      "speaker": "LADY MACBETH",
+      "text": "At the south entry: retire we to our chamber:"
+    },
+    {
+      "number": 67,
+      "speaker": "LADY MACBETH",
+      "text": "A little water clears us of this deed:"
+    },
+    {
+      "number": 68,
+      "speaker": "LADY MACBETH",
+      "text": "How easy is it, then! Your constancy"
+    },
+    {
+      "number": 69,
+      "speaker": "LADY MACBETH",
+      "text": "Hath left you unattended. Hark! more knocking."
+    },
+    {
+      "number": 70,
+      "speaker": "LADY MACBETH",
+      "text": "Get on your nightgown, lest occasion call us,"
+    },
+    {
+      "number": 71,
+      "speaker": "LADY MACBETH",
+      "text": "And show us to be watchers. Be not lost"
+    },
+    {
+      "number": 72,
+      "speaker": "LADY MACBETH",
+      "text": "So poorly in your thoughts."
+    },
+    {
+      "number": 73,
+      "speaker": "MACBETH",
+      "text": "To know my deed, ’twere best not know myself."
+    },
+    {
+      "number": 74,
+      "speaker": "MACBETH",
+      "text": "Wake Duncan with thy knocking! I would thou couldst!"
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Lady Macbeth."
+    },
+    {
+      "after_line": 8,
+      "text": "Within."
+    },
+    {
+      "after_line": 13,
+      "text": "Enter Macbeth."
+    },
+    {
+      "after_line": 13,
+      "text": "My husband!"
+    },
+    {
+      "after_line": 57,
+      "text": "Exit. Knocking within."
+    },
+    {
+      "after_line": 63,
+      "text": "Reenter Lady Macbeth."
+    },
+    {
+      "after_line": 65,
+      "text": "Knocking within."
+    },
+    {
+      "after_line": 69,
+      "text": "Knocking within."
+    },
+    {
+      "after_line": 73,
+      "text": "Knocking within."
+    },
+    {
+      "after_line": 74,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act2_scene2_gloss1",
+      "line": 2,
+      "phrase": "quench’d them hath given me fire",
+      "definition": "the same drink that drugged the grooms has emboldened her"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss2",
+      "line": 3,
+      "phrase": "bellman",
+      "definition": "night-watchman whose bell rang at executions; here the owl cries as the bellman of death"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss3",
+      "line": 3,
+      "phrase": "fatal bellman",
+      "definition": "the owl whose cry foretells death"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss4",
+      "line": 5,
+      "phrase": "grooms",
+      "definition": "attendants at Duncan's chamber"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss5",
+      "line": 6,
+      "phrase": "possets",
+      "definition": "warm drinks of milk curdled with wine — here drugged"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss6",
+      "line": 6,
+      "phrase": "mock their charge with snores",
+      "definition": "neglect their guard-duty by snoring"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss8",
+      "line": 13,
+      "phrase": "I had done’t",
+      "definition": "I would have done it myself"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss9",
+      "line": 21,
+      "phrase": "sorry sight",
+      "definition": "painful, regrettable sight — Macbeth's bloodied hands"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss12",
+      "line": 35,
+      "phrase": "Sleep no more",
+      "definition": "the accusing voice; 'sleep' becomes one of the play's central image-systems, denied from Macbeth onward"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss13",
+      "line": 36,
+      "phrase": "Macbeth does murder sleep",
+      "definition": "the voice's indictment — Macbeth has killed not only Duncan but sleep itself, innocence, rest"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss14",
+      "line": 37,
+      "phrase": "knits up the ravell’d sleave of care",
+      "definition": "mends the tangled threads of worry — sleep as a knitting figure"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss15",
+      "line": 37,
+      "phrase": "ravell’d sleave",
+      "definition": "tangled skein of silk"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss16",
+      "line": 38,
+      "phrase": "sore labour’s bath",
+      "definition": "the nightly washing-away of the day's toil"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss17",
+      "line": 39,
+      "phrase": "Balm of hurt minds",
+      "definition": "salve for troubled minds — sleep as medicinal ointment"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss18",
+      "line": 39,
+      "phrase": "great nature’s second course",
+      "definition": "sleep figured as the main dish of nature's feast"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss19",
+      "line": 40,
+      "phrase": "Chief nourisher in life’s feast",
+      "definition": "the most important sustenance in the banquet of life"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss20",
+      "line": 42,
+      "phrase": "Glamis hath murder’d sleep",
+      "definition": "the titles sum the man up: each of his ranks has committed a crime against rest"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss21",
+      "line": 45,
+      "phrase": "unbend your noble strength",
+      "definition": "slacken your strong resolve — she is bracing him"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss22",
+      "line": 52,
+      "phrase": "Infirm of purpose",
+      "definition": "weak in resolve — her most cutting insult"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss24",
+      "line": 56,
+      "phrase": "gild the faces",
+      "definition": "smear with gold — here, blood; a grim pun"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss25",
+      "line": 57,
+      "phrase": "must seem their guilt",
+      "definition": "must look like evidence of their crime"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss27",
+      "line": 59,
+      "phrase": "Pluck out mine eyes",
+      "definition": "these hands will tear out my eyes when I see them"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss28",
+      "line": 60,
+      "phrase": "great Neptune’s ocean",
+      "definition": "all the oceans of the sea-god Neptune"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss29",
+      "line": 62,
+      "phrase": "multitudinous seas in incarnadine",
+      "definition": "turn the innumerable seas blood-red; 'incarnadine' is to make flesh-colored or blood-red"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss30",
+      "line": 62,
+      "phrase": "incarnadine",
+      "definition": "to turn blood-red; to make flesh-colored (from Latin 'caro,' flesh)"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss31",
+      "line": 63,
+      "phrase": "Making the green one red",
+      "definition": "turning the green sea to a single sheet of red"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss32",
+      "line": 67,
+      "phrase": "A little water clears us of this deed",
+      "definition": "Lady Macbeth's blithe answer; the sleepwalking scene in 5.1 will refute it"
+    },
+    {
+      "id": "macbeth_act2_scene2_gloss33",
+      "line": 74,
+      "phrase": "Wake Duncan with thy knocking",
+      "definition": "I wish the knocking could wake him — Macbeth's first moment of open remorse"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act2_scene2_ann1",
+      "line_start": 1,
+      "line_end": 20,
+      "citation_display": "Macbeth 2.2.1–20",
+      "category": "structural",
+      "title": "The murder offstage",
+      "body": "Shakespeare refuses to show the murder. Duncan is killed between the dagger soliloquy and Macbeth's return; what the audience sees is Lady Macbeth waiting in the court, listening for a cry, remarking that she would have killed Duncan herself 'had he not resembled / My father as he slept.' The one flicker of personal feeling she admits to all play.\n\nThe decision to keep the murder offstage is structural. *Macbeth* is never about the killing itself; it is about what killing does to the killer. The audience is placed where Lady Macbeth is — outside the door, hearing the act's edges, already complicit. When Macbeth returns with bloody hands, the scene we could not watch is inscribed on his body. The play will spend its remaining acts watching him try, and fail, to wash it off.",
+      "sources": [
+        "A. C. Bradley (1904)",
+        "Harley Granville-Barker (1947)"
+      ]
+    },
+    {
+      "id": "macbeth_act2_scene2_ann2",
+      "line_start": 30,
+      "line_end": 46,
+      "citation_display": "Macbeth 2.2.30–46",
+      "category": "thematic",
+      "title": "'Macbeth does murder sleep'",
+      "body": "The voice Macbeth heard — 'Sleep no more! / Macbeth does murder sleep' — turns the act of regicide into the destruction of a category. Sleep, in the play's vocabulary, is 'the innocent sleep,' 'the death of each day's life,' 'great nature's second course, / Chief nourisher in life's feast.' To murder it is to murder the human's capacity for rest, forgiveness, repair.\n\nThe indictment is immediate and, for Macbeth, permanent. From this moment forward, neither he nor Lady Macbeth sleeps properly. 3.2 will show him begging for the 'peace' sleep brings to the grave's more fortunate inhabitants. 5.1 will show Lady Macbeth walking in her sleep, confessing aloud what she has stopped daring to say awake.\n\nNotice the liturgical form. The voice accuses Macbeth by each of his titles in sequence — 'Glamis hath murdered sleep, and therefore Cawdor / Shall sleep no more, Macbeth shall sleep no more.' It is naming and indicting. The Catholic sacrament of confession, in which the sinner is named and his sin tallied, is the shape this voice is parodying. Macbeth's Amen stuck in his throat a moment earlier; this voice is the counter-Amen.",
+      "sources": [
+        "Harold Bloom (1998)",
+        "Ewan Fernie, *Demonic: Literature and Experience* (2013)",
+        "Jonathan Bate, *The Genius of Shakespeare* (1997)"
+      ]
+    },
+    {
+      "id": "macbeth_act2_scene2_ann3",
+      "line_start": 58,
+      "line_end": 76,
+      "citation_display": "Macbeth 2.2.58–76",
+      "category": "thematic",
+      "title": "Blood and water: Lady Macbeth's first error",
+      "body": "Macbeth stares at his hands: 'Will all great Neptune's ocean wash this blood / Clean from my hand? No, this my hand will rather / The multitudinous seas incarnadine, / Making the green one red.' Lady Macbeth dismisses him: 'A little water clears us of this deed.' The exchange is the play's deepest disagreement.\n\nShe is wrong by 5.1 — 'All the perfumes of Arabia will not sweeten this little hand.' He is right from the start. The blood is not a stain to be removed but an ontological condition to be endured. The word 'incarnadine' — to turn flesh-colored, to dye red from the Latin 'caro,' flesh — is Shakespeare's coinage for a specific moment: Macbeth's imagination has moved from a hand to an ocean, and the ocean has taken on the property of the hand.\n\nThe scene's final dissonance — Lady Macbeth's confidence, Macbeth's dread, the knocking that won't stop — is a preview of the rest of the play. She will break slowly and silently; he will break loudly and on stage. Both begin to break here.",
+      "sources": [
+        "Caroline Spurgeon (1935)",
+        "Cleanth Brooks (1947)",
+        "Janet Adelman (1992)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act2_scene2_q1",
+      "kind": "structural",
+      "prompt": "Why does Shakespeare not stage the murder of Duncan?",
+      "options": [
+        "Censorship forbade it",
+        "The play is about what killing does to the killer, not the killing itself — the audience watches Lady Macbeth wait outside the door",
+        "He ran out of time",
+        "Duncan's actor was unavailable"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 20
+    },
+    {
+      "id": "macbeth_act2_scene2_q2",
+      "kind": "close_reading",
+      "prompt": "The voice Macbeth hears — 'Sleep no more!' — accuses him by:",
+      "options": [
+        "His name alone",
+        "Each of his titles in sequence (Glamis, Cawdor, Macbeth) — a liturgical form that parodies confession",
+        "A nickname",
+        "A Latin curse"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 42,
+      "anchor_line_end": 46
+    },
+    {
+      "id": "macbeth_act2_scene2_q3",
+      "kind": "theme",
+      "prompt": "Macbeth and Lady Macbeth disagree about whether water can wash the blood off. Who is right?",
+      "options": [
+        "Lady Macbeth — the stain is trivial",
+        "Macbeth — the 'multitudinous seas' cannot clean it; 5.1 will confirm his reading",
+        "Neither",
+        "Both"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 58,
+      "anchor_line_end": 76
+    },
+    {
+      "id": "macbeth_act2_scene2_q4",
+      "kind": "close_reading",
+      "prompt": "'Incarnadine' (L62) is:",
+      "options": [
+        "A common Elizabethan word",
+        "Shakespeare's coinage from Latin 'caro' (flesh) — to turn blood-red",
+        "A French loanword for ink",
+        "A technical term of painting"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 60,
+      "anchor_line_end": 64
+    },
+    {
+      "id": "macbeth_act2_scene2_q5",
+      "kind": "inference",
+      "prompt": "Lady Macbeth says she would have killed Duncan herself 'had he not resembled / My father as he slept.' This reveals:",
+      "options": [
+        "She is lying",
+        "One flicker of personal feeling she admits to in the entire play",
+        "Duncan was her father",
+        "She is a sleepwalker already"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 10,
+      "anchor_line_end": 14
+    }
+  ]
+}

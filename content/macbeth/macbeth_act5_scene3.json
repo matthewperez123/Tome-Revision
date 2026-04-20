@@ -1,0 +1,525 @@
+{
+  "section_id": "macbeth_act5_scene3",
+  "work_id": "macbeth",
+  "sequence": 23,
+  "act": 5,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "Dunsinane. A room in the castle",
+  "line_count": 68,
+  "word_count": 471,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "MACBETH",
+      "text": "Bring me no more reports; let them fly all:"
+    },
+    {
+      "number": 2,
+      "speaker": "MACBETH",
+      "text": "Till Birnam wood remove to Dunsinane,"
+    },
+    {
+      "number": 3,
+      "speaker": "MACBETH",
+      "text": "I cannot taint with fear. What’s the boy Malcolm?"
+    },
+    {
+      "number": 4,
+      "speaker": "MACBETH",
+      "text": "Was he not born of woman? The spirits that know"
+    },
+    {
+      "number": 5,
+      "speaker": "MACBETH",
+      "text": "All mortal consequences have pronounced me thus:"
+    },
+    {
+      "number": 6,
+      "speaker": "MACBETH",
+      "text": "“Fear not, Macbeth; no man that’s born of woman"
+    },
+    {
+      "number": 7,
+      "speaker": "MACBETH",
+      "text": "Shall e’er have power upon thee.” Then fly, false thanes,"
+    },
+    {
+      "number": 8,
+      "speaker": "MACBETH",
+      "text": "And mingle with the English epicures:"
+    },
+    {
+      "number": 9,
+      "speaker": "MACBETH",
+      "text": "The mind I sway by and the heart I bear"
+    },
+    {
+      "number": 10,
+      "speaker": "MACBETH",
+      "text": "Shall never sag with doubt nor shake with fear."
+    },
+    {
+      "number": 11,
+      "speaker": "SERVANT",
+      "text": "There is ten thousand—"
+    },
+    {
+      "number": 11,
+      "speaker": "MACBETH",
+      "text": "Geese, villain?"
+    },
+    {
+      "number": 12,
+      "speaker": "SERVANT",
+      "text": "Soldiers, sir."
+    },
+    {
+      "number": 13,
+      "speaker": "MACBETH",
+      "text": "Go prick thy face, and over-red thy fear,"
+    },
+    {
+      "number": 14,
+      "speaker": "MACBETH",
+      "text": "Thou lily-liver’d boy. What soldiers, patch?"
+    },
+    {
+      "number": 15,
+      "speaker": "MACBETH",
+      "text": "Death of thy soul! those linen cheeks of thine"
+    },
+    {
+      "number": 16,
+      "speaker": "MACBETH",
+      "text": "Are counsellors to fear. What soldiers, whey-face?"
+    },
+    {
+      "number": 17,
+      "speaker": "SERVANT",
+      "text": "The English force, so please you."
+    },
+    {
+      "number": 18,
+      "speaker": "MACBETH",
+      "text": "Take thy face hence. Seyton!—I am sick at heart,"
+    },
+    {
+      "number": 19,
+      "speaker": "MACBETH",
+      "text": "When I behold—Seyton, I say!—This push"
+    },
+    {
+      "number": 20,
+      "speaker": "MACBETH",
+      "text": "Will cheer me ever, or disseat me now."
+    },
+    {
+      "number": 21,
+      "speaker": "MACBETH",
+      "text": "I have lived long enough: my way of life"
+    },
+    {
+      "number": 22,
+      "speaker": "MACBETH",
+      "text": "Is fall’n into the sear, the yellow leaf;"
+    },
+    {
+      "number": 23,
+      "speaker": "MACBETH",
+      "text": "And that which should accompany old age,"
+    },
+    {
+      "number": 24,
+      "speaker": "MACBETH",
+      "text": "As honour, love, obedience, troops of friends,"
+    },
+    {
+      "number": 25,
+      "speaker": "MACBETH",
+      "text": "I must not look to have; but, in their stead,"
+    },
+    {
+      "number": 26,
+      "speaker": "MACBETH",
+      "text": "Curses, not loud but deep, mouth-honour, breath,"
+    },
+    {
+      "number": 27,
+      "speaker": "MACBETH",
+      "text": "Which the poor heart would fain deny, and dare not."
+    },
+    {
+      "number": 28,
+      "speaker": "MACBETH",
+      "text": "Seyton!"
+    },
+    {
+      "number": 28,
+      "speaker": "SEYTON",
+      "text": "What is your gracious pleasure?"
+    },
+    {
+      "number": 29,
+      "speaker": "MACBETH",
+      "text": "What news more?"
+    },
+    {
+      "number": 30,
+      "speaker": "SEYTON",
+      "text": "All is confirm’d, my lord, which was reported."
+    },
+    {
+      "number": 31,
+      "speaker": "MACBETH",
+      "text": "I’ll fight till from my bones my flesh be hack’d."
+    },
+    {
+      "number": 32,
+      "speaker": "MACBETH",
+      "text": "Give me my armour."
+    },
+    {
+      "number": 32,
+      "speaker": "SEYTON",
+      "text": "’Tis not needed yet."
+    },
+    {
+      "number": 33,
+      "speaker": "MACBETH",
+      "text": "I’ll put it on."
+    },
+    {
+      "number": 34,
+      "speaker": "MACBETH",
+      "text": "Send out more horses; skirr the country round;"
+    },
+    {
+      "number": 35,
+      "speaker": "MACBETH",
+      "text": "Hang those that talk of fear. Give me mine armour."
+    },
+    {
+      "number": 36,
+      "speaker": "MACBETH",
+      "text": "How does your patient, doctor?"
+    },
+    {
+      "number": 36,
+      "speaker": "DOCTOR",
+      "text": "Not so sick, my lord,"
+    },
+    {
+      "number": 37,
+      "speaker": "DOCTOR",
+      "text": "As she is troubled with thick coming fancies,"
+    },
+    {
+      "number": 38,
+      "speaker": "DOCTOR",
+      "text": "That keep her from her rest."
+    },
+    {
+      "number": 38,
+      "speaker": "MACBETH",
+      "text": "Cure her of that."
+    },
+    {
+      "number": 39,
+      "speaker": "MACBETH",
+      "text": "Canst thou not minister to a mind diseased,"
+    },
+    {
+      "number": 40,
+      "speaker": "MACBETH",
+      "text": "Pluck from the memory a rooted sorrow,"
+    },
+    {
+      "number": 41,
+      "speaker": "MACBETH",
+      "text": "Raze out the written troubles of the brain"
+    },
+    {
+      "number": 42,
+      "speaker": "MACBETH",
+      "text": "And with some sweet oblivious antidote"
+    },
+    {
+      "number": 43,
+      "speaker": "MACBETH",
+      "text": "Cleanse the stuff’d bosom of that perilous stuff"
+    },
+    {
+      "number": 44,
+      "speaker": "MACBETH",
+      "text": "Which weighs upon the heart?"
+    },
+    {
+      "number": 44,
+      "speaker": "DOCTOR",
+      "text": "Therein the patient"
+    },
+    {
+      "number": 45,
+      "speaker": "DOCTOR",
+      "text": "Must minister to himself."
+    },
+    {
+      "number": 46,
+      "speaker": "MACBETH",
+      "text": "Throw physic to the dogs; I’ll none of it."
+    },
+    {
+      "number": 47,
+      "speaker": "MACBETH",
+      "text": "Come, put mine armour on; give me my staff."
+    },
+    {
+      "number": 48,
+      "speaker": "MACBETH",
+      "text": "Seyton, send out. Doctor, the thanes fly from me."
+    },
+    {
+      "number": 49,
+      "speaker": "MACBETH",
+      "text": "Come, sir, dispatch. If thou couldst, doctor, cast"
+    },
+    {
+      "number": 50,
+      "speaker": "MACBETH",
+      "text": "The water of my land, find her disease,"
+    },
+    {
+      "number": 51,
+      "speaker": "MACBETH",
+      "text": "And purge it to a sound and pristine health,"
+    },
+    {
+      "number": 52,
+      "speaker": "MACBETH",
+      "text": "I would applaud thee to the very echo,"
+    },
+    {
+      "number": 53,
+      "speaker": "MACBETH",
+      "text": "That should applaud again.—Pull’t off, I say.—"
+    },
+    {
+      "number": 54,
+      "speaker": "MACBETH",
+      "text": "What rhubarb, cyme, or what purgative drug,"
+    },
+    {
+      "number": 55,
+      "speaker": "MACBETH",
+      "text": "Would scour these English hence? Hear’st thou of them?"
+    },
+    {
+      "number": 56,
+      "speaker": "DOCTOR",
+      "text": "Ay, my good lord; your royal preparation"
+    },
+    {
+      "number": 57,
+      "speaker": "DOCTOR",
+      "text": "Makes us hear something."
+    },
+    {
+      "number": 57,
+      "speaker": "MACBETH",
+      "text": "Bring it after me."
+    },
+    {
+      "number": 58,
+      "speaker": "MACBETH",
+      "text": "I will not be afraid of death and bane,"
+    },
+    {
+      "number": 59,
+      "speaker": "MACBETH",
+      "text": "Till Birnam forest come to Dunsinane."
+    },
+    {
+      "number": 60,
+      "speaker": "DOCTOR",
+      "text": "Were I from Dunsinane away and clear,"
+    },
+    {
+      "number": 61,
+      "speaker": "DOCTOR",
+      "text": "Profit again should hardly draw me here."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Macbeth, Doctor, and Attendants."
+    },
+    {
+      "after_line": 10,
+      "text": "Enter a Servant."
+    },
+    {
+      "after_line": 10,
+      "text": "The devil damn thee black, thou cream-faced loon! Where got’st thou that goose look?"
+    },
+    {
+      "after_line": 18,
+      "text": "Exit Servant."
+    },
+    {
+      "after_line": 28,
+      "text": "Enter Seyton."
+    },
+    {
+      "after_line": 60,
+      "text": "Aside."
+    },
+    {
+      "after_line": 61,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act5_scene3_gloss2",
+      "line": 3,
+      "phrase": "taint with fear",
+      "definition": "be tainted by fear"
+    },
+    {
+      "id": "macbeth_act5_scene3_gloss5",
+      "line": 14,
+      "phrase": "lily-liver’d",
+      "definition": "cowardly — a coward's liver was thought to be pale"
+    },
+    {
+      "id": "macbeth_act5_scene3_gloss6",
+      "line": 15,
+      "phrase": "linen cheeks",
+      "definition": "cheeks white as linen"
+    },
+    {
+      "id": "macbeth_act5_scene3_gloss9",
+      "line": 22,
+      "phrase": "sear, the yellow leaf",
+      "definition": "dry, yellowed leaf — the late autumn of a life"
+    },
+    {
+      "id": "macbeth_act5_scene3_gloss10",
+      "line": 24,
+      "phrase": "honour, love, obedience, troops of friends",
+      "definition": "the things old age should command — denied to him"
+    },
+    {
+      "id": "macbeth_act5_scene3_gloss11",
+      "line": 26,
+      "phrase": "mouth-honour",
+      "definition": "lip-service; hollow, formal praise"
+    },
+    {
+      "id": "macbeth_act5_scene3_gloss12",
+      "line": 34,
+      "phrase": "skirr the country round",
+      "definition": "scour the countryside"
+    },
+    {
+      "id": "macbeth_act5_scene3_gloss15",
+      "line": 40,
+      "phrase": "rooted sorrow",
+      "definition": "deeply planted grief"
+    },
+    {
+      "id": "macbeth_act5_scene3_gloss16",
+      "line": 41,
+      "phrase": "written troubles of the brain",
+      "definition": "the inscribed anxieties in the mind"
+    },
+    {
+      "id": "macbeth_act5_scene3_gloss17",
+      "line": 42,
+      "phrase": "antidote",
+      "definition": "remedy"
+    },
+    {
+      "id": "macbeth_act5_scene3_gloss18",
+      "line": 42,
+      "phrase": "sweet oblivious antidote",
+      "definition": "a drug to bring sweet forgetfulness"
+    },
+    {
+      "id": "macbeth_act5_scene3_gloss19",
+      "line": 43,
+      "phrase": "Cleanse the stuff’d bosom",
+      "definition": "purify the clogged heart"
+    },
+    {
+      "id": "macbeth_act5_scene3_gloss20",
+      "line": 46,
+      "phrase": "Throw physic to the dogs",
+      "definition": "throw medicine to the dogs — I'll have none of it"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act5_scene3_ann1",
+      "line_start": 22,
+      "line_end": 30,
+      "citation_display": "Macbeth 5.3.22–30",
+      "category": "thematic",
+      "title": "'The sere, the yellow leaf'",
+      "body": "Macbeth's autumnal self-portrait — 'My way of life / Is fall'n into the sere, the yellow leaf' — is the play's most direct statement that he knows what he has lost. The things old age should command, he lists as already absent: 'honour, love, obedience, troops of friends.' In their place he has 'curses, not loud but deep, mouth-honour, breath.'\n\nThe speech's precision matters. Macbeth is not self-pitying; he is accurate. 'Mouth-honour' — lip-service, formal praise that is not meant — is exactly what a failing tyrant receives, and exactly what Macbeth has been getting since 3.1. The diagnosis is correct. The grief is that the diagnosis has come too late to revise the conduct.",
+      "sources": [
+        "Harold Bloom (1998)",
+        "A. D. Nuttall (2007)",
+        "Harold Goddard (1951)"
+      ]
+    },
+    {
+      "id": "macbeth_act5_scene3_ann2",
+      "line_start": 40,
+      "line_end": 56,
+      "citation_display": "Macbeth 5.3.40–56",
+      "category": "close_reading",
+      "title": "'Minister to a mind diseas'd'",
+      "body": "Macbeth's plea to the Doctor about Lady Macbeth is the play's most direct articulation of its psychiatric vocabulary: 'rooted sorrow,' 'written troubles of the brain,' 'stuff'd bosom,' 'sweet oblivious antidote.' The Jacobean audience did not have a clinical discipline of mental illness; Shakespeare is inventing one in front of them.\n\nThe Doctor's answer — 'Therein the patient / Must minister to himself' — is the play's most important refusal. There is no medicine for a soul that has chosen its own affliction. Macbeth's response ('Throw physic to the dogs') is refusal of refusal; he will not accept what the Doctor has said. The scene ends with him arming for battle he already knows he will not win.",
+      "sources": [
+        "Andrew Lemon, *A Strange Kind of Truth* (2020)",
+        "Ewan Fernie (2013)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act5_scene3_q1",
+      "kind": "close_reading",
+      "prompt": "'Sere, the yellow leaf' is:",
+      "options": [
+        "Agricultural advice",
+        "Macbeth's autumnal self-diagnosis — he can name exactly what he has lost",
+        "A weather forecast",
+        "An allusion to Spring"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 22,
+      "anchor_line_end": 30
+    },
+    {
+      "id": "macbeth_act5_scene3_q2",
+      "kind": "theme",
+      "prompt": "The Doctor's answer about Lady Macbeth ('the patient must minister to himself') is:",
+      "options": [
+        "Standard medicine",
+        "The play's refusal of psychiatric cure for chosen affliction",
+        "A joke",
+        "A confession of incompetence"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 45,
+      "anchor_line_end": 52
+    }
+  ]
+}

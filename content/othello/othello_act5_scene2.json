@@ -1,0 +1,2667 @@
+{
+  "section_id": "othello_act5_scene2",
+  "work_id": "othello",
+  "sequence": 15,
+  "act": 5,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "A bedchamber in the castle",
+  "line_count": 421,
+  "word_count": 2970,
+  "est_read_minutes": 15,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "OTHELLO",
+      "text": "It is the cause, it is the cause, my soul—"
+    },
+    {
+      "number": 2,
+      "speaker": "OTHELLO",
+      "text": "Let me not name it to you, you chaste stars!—"
+    },
+    {
+      "number": 3,
+      "speaker": "OTHELLO",
+      "text": "It is the cause. Yet I’ll not shed her blood;"
+    },
+    {
+      "number": 4,
+      "speaker": "OTHELLO",
+      "text": "Nor scar that whiter skin of hers than snow,"
+    },
+    {
+      "number": 5,
+      "speaker": "OTHELLO",
+      "text": "And smooth as monumental alabaster."
+    },
+    {
+      "number": 6,
+      "speaker": "OTHELLO",
+      "text": "Yet she must die, else she’ll betray more men."
+    },
+    {
+      "number": 7,
+      "speaker": "OTHELLO",
+      "text": "Put out the light, and then put out the light:"
+    },
+    {
+      "number": 8,
+      "speaker": "OTHELLO",
+      "text": "If I quench thee, thou flaming minister,"
+    },
+    {
+      "number": 9,
+      "speaker": "OTHELLO",
+      "text": "I can again thy former light restore,"
+    },
+    {
+      "number": 10,
+      "speaker": "OTHELLO",
+      "text": "Should I repent me: but once put out thy light,"
+    },
+    {
+      "number": 11,
+      "speaker": "OTHELLO",
+      "text": "Thou cunning’st pattern of excelling nature,"
+    },
+    {
+      "number": 12,
+      "speaker": "OTHELLO",
+      "text": "I know not where is that Promethean heat"
+    },
+    {
+      "number": 13,
+      "speaker": "OTHELLO",
+      "text": "That can thy light relume. When I have pluck’d the rose,"
+    },
+    {
+      "number": 14,
+      "speaker": "OTHELLO",
+      "text": "I cannot give it vital growth again."
+    },
+    {
+      "number": 15,
+      "speaker": "OTHELLO",
+      "text": "It must needs wither: I’ll smell it on the tree. Kissing her."
+    },
+    {
+      "number": 16,
+      "speaker": "OTHELLO",
+      "text": "Ah balmy breath, that dost almost persuade"
+    },
+    {
+      "number": 17,
+      "speaker": "OTHELLO",
+      "text": "Justice to break her sword! One more, one more."
+    },
+    {
+      "number": 18,
+      "speaker": "OTHELLO",
+      "text": "Be thus when thou art dead, and I will kill thee,"
+    },
+    {
+      "number": 19,
+      "speaker": "OTHELLO",
+      "text": "And love thee after. One more, and this the last:"
+    },
+    {
+      "number": 20,
+      "speaker": "OTHELLO",
+      "text": "So sweet was ne’er so fatal. I must weep,"
+    },
+    {
+      "number": 21,
+      "speaker": "OTHELLO",
+      "text": "But they are cruel tears: this sorrow’s heavenly;"
+    },
+    {
+      "number": 22,
+      "speaker": "OTHELLO",
+      "text": "It strikes where it doth love. She wakes."
+    },
+    {
+      "number": 23,
+      "speaker": "DESDEMONA",
+      "text": "Who’s there? Othello?"
+    },
+    {
+      "number": 23,
+      "speaker": "OTHELLO",
+      "text": "Ay. Desdemona."
+    },
+    {
+      "number": 24,
+      "speaker": "DESDEMONA",
+      "text": "Will you come to bed, my lord?"
+    },
+    {
+      "number": 25,
+      "speaker": "OTHELLO",
+      "text": "Have you pray’d to-night, Desdemona?"
+    },
+    {
+      "number": 25,
+      "speaker": "DESDEMONA",
+      "text": "Ay, my lord."
+    },
+    {
+      "number": 26,
+      "speaker": "OTHELLO",
+      "text": "If you bethink yourself of any crime"
+    },
+    {
+      "number": 27,
+      "speaker": "OTHELLO",
+      "text": "Unreconciled as yet to heaven and grace,"
+    },
+    {
+      "number": 28,
+      "speaker": "OTHELLO",
+      "text": "Solicit for it straight."
+    },
+    {
+      "number": 29,
+      "speaker": "DESDEMONA",
+      "text": "Alas, my lord, what do you mean by that?"
+    },
+    {
+      "number": 30,
+      "speaker": "OTHELLO",
+      "text": "Well, do it, and be brief; I will walk by:"
+    },
+    {
+      "number": 31,
+      "speaker": "OTHELLO",
+      "text": "I would not kill thy unprepared spirit;"
+    },
+    {
+      "number": 32,
+      "speaker": "OTHELLO",
+      "text": "No; heaven forfend! I would not kill thy soul."
+    },
+    {
+      "number": 33,
+      "speaker": "DESDEMONA",
+      "text": "Talk you of killing?"
+    },
+    {
+      "number": 33,
+      "speaker": "OTHELLO",
+      "text": "Ay, I do."
+    },
+    {
+      "number": 34,
+      "speaker": "DESDEMONA",
+      "text": "Then heaven"
+    },
+    {
+      "number": 35,
+      "speaker": "DESDEMONA",
+      "text": "Have mercy on me!"
+    },
+    {
+      "number": 35,
+      "speaker": "OTHELLO",
+      "text": "Amen, with all my heart!"
+    },
+    {
+      "number": 36,
+      "speaker": "DESDEMONA",
+      "text": "If you say so, I hope you will not kill me."
+    },
+    {
+      "number": 37,
+      "speaker": "OTHELLO",
+      "text": "Hum!"
+    },
+    {
+      "number": 38,
+      "speaker": "DESDEMONA",
+      "text": "And yet I fear you; for you are fatal then"
+    },
+    {
+      "number": 39,
+      "speaker": "DESDEMONA",
+      "text": "When your eyes roll so: why I should fear I know not,"
+    },
+    {
+      "number": 40,
+      "speaker": "DESDEMONA",
+      "text": "Since guiltiness I know not; but yet I feel I fear."
+    },
+    {
+      "number": 41,
+      "speaker": "OTHELLO",
+      "text": "Think on thy sins."
+    },
+    {
+      "number": 42,
+      "speaker": "DESDEMONA",
+      "text": "They are loves I bear to you."
+    },
+    {
+      "number": 43,
+      "speaker": "OTHELLO",
+      "text": "Ay, and for that thou diest."
+    },
+    {
+      "number": 44,
+      "speaker": "DESDEMONA",
+      "text": "That death’s unnatural that kills for loving."
+    },
+    {
+      "number": 45,
+      "speaker": "DESDEMONA",
+      "text": "Alas, why gnaw you so your nether lip?"
+    },
+    {
+      "number": 46,
+      "speaker": "DESDEMONA",
+      "text": "Some bloody passion shakes your very frame:"
+    },
+    {
+      "number": 47,
+      "speaker": "DESDEMONA",
+      "text": "These are portents; but yet I hope, I hope,"
+    },
+    {
+      "number": 48,
+      "speaker": "DESDEMONA",
+      "text": "They do not point on me."
+    },
+    {
+      "number": 48,
+      "speaker": "OTHELLO",
+      "text": "Peace, and be still!"
+    },
+    {
+      "number": 49,
+      "speaker": "DESDEMONA",
+      "text": "I will so. What’s the matter?"
+    },
+    {
+      "number": 50,
+      "speaker": "OTHELLO",
+      "text": "That handkerchief which I so loved and gave thee"
+    },
+    {
+      "number": 51,
+      "speaker": "OTHELLO",
+      "text": "Thou gavest to Cassio."
+    },
+    {
+      "number": 51,
+      "speaker": "DESDEMONA",
+      "text": "No, by my life and soul!"
+    },
+    {
+      "number": 52,
+      "speaker": "DESDEMONA",
+      "text": "Send for the man, and ask him."
+    },
+    {
+      "number": 53,
+      "speaker": "OTHELLO",
+      "text": "Sweet soul, take heed,"
+    },
+    {
+      "number": 54,
+      "speaker": "OTHELLO",
+      "text": "Take heed of perjury; thou art on thy deathbed."
+    },
+    {
+      "number": 55,
+      "speaker": "DESDEMONA",
+      "text": "Ay, but not yet to die."
+    },
+    {
+      "number": 55,
+      "speaker": "OTHELLO",
+      "text": "Yes, presently:"
+    },
+    {
+      "number": 56,
+      "speaker": "OTHELLO",
+      "text": "Therefore confess thee freely of thy sin;"
+    },
+    {
+      "number": 57,
+      "speaker": "OTHELLO",
+      "text": "For to deny each article with oath"
+    },
+    {
+      "number": 58,
+      "speaker": "OTHELLO",
+      "text": "Cannot remove nor choke the strong conception"
+    },
+    {
+      "number": 59,
+      "speaker": "OTHELLO",
+      "text": "That I do groan withal. Thou art to die."
+    },
+    {
+      "number": 60,
+      "speaker": "DESDEMONA",
+      "text": "Then Lord have mercy on me!"
+    },
+    {
+      "number": 60,
+      "speaker": "OTHELLO",
+      "text": "I say, amen."
+    },
+    {
+      "number": 61,
+      "speaker": "DESDEMONA",
+      "text": "And have you mercy too! I never did"
+    },
+    {
+      "number": 62,
+      "speaker": "DESDEMONA",
+      "text": "Offend you in my life; never loved Cassio"
+    },
+    {
+      "number": 63,
+      "speaker": "DESDEMONA",
+      "text": "But with such general warranty of heaven"
+    },
+    {
+      "number": 64,
+      "speaker": "DESDEMONA",
+      "text": "As I might love: I never gave him token."
+    },
+    {
+      "number": 65,
+      "speaker": "OTHELLO",
+      "text": "By heaven, I saw my handkerchief in’s hand."
+    },
+    {
+      "number": 66,
+      "speaker": "OTHELLO",
+      "text": "O perjured woman! thou dost stone my heart,"
+    },
+    {
+      "number": 67,
+      "speaker": "OTHELLO",
+      "text": "And makest me call what I intend to do"
+    },
+    {
+      "number": 68,
+      "speaker": "OTHELLO",
+      "text": "A murder, which I thought a sacrifice:"
+    },
+    {
+      "number": 69,
+      "speaker": "OTHELLO",
+      "text": "I saw the handkerchief."
+    },
+    {
+      "number": 69,
+      "speaker": "DESDEMONA",
+      "text": "He found it then;"
+    },
+    {
+      "number": 70,
+      "speaker": "DESDEMONA",
+      "text": "I never gave it him: send for him hither;"
+    },
+    {
+      "number": 71,
+      "speaker": "DESDEMONA",
+      "text": "Let him confess a truth."
+    },
+    {
+      "number": 71,
+      "speaker": "OTHELLO",
+      "text": "He hath confess’d."
+    },
+    {
+      "number": 72,
+      "speaker": "DESDEMONA",
+      "text": "What, my lord?"
+    },
+    {
+      "number": 72,
+      "speaker": "OTHELLO",
+      "text": "That he hath used thee."
+    },
+    {
+      "number": 73,
+      "speaker": "DESDEMONA",
+      "text": "How? unlawfully?"
+    },
+    {
+      "number": 73,
+      "speaker": "OTHELLO",
+      "text": "Ay."
+    },
+    {
+      "number": 74,
+      "speaker": "DESDEMONA",
+      "text": "He will not say so."
+    },
+    {
+      "number": 74,
+      "speaker": "OTHELLO",
+      "text": "No, his mouth is stopp’d;"
+    },
+    {
+      "number": 75,
+      "speaker": "OTHELLO",
+      "text": "Honest Iago hath ta’en order for’t."
+    },
+    {
+      "number": 76,
+      "speaker": "DESDEMONA",
+      "text": "O! my fear interprets: what, is he dead?"
+    },
+    {
+      "number": 77,
+      "speaker": "OTHELLO",
+      "text": "Had all his hairs been lives, my great revenge"
+    },
+    {
+      "number": 78,
+      "speaker": "OTHELLO",
+      "text": "Had stomach for them all."
+    },
+    {
+      "number": 79,
+      "speaker": "DESDEMONA",
+      "text": "Alas! he is betray’d and I undone."
+    },
+    {
+      "number": 80,
+      "speaker": "OTHELLO",
+      "text": "Out, strumpet! weep’st thou for him to my face?"
+    },
+    {
+      "number": 81,
+      "speaker": "DESDEMONA",
+      "text": "O, banish me, my lord, but kill me not!"
+    },
+    {
+      "number": 82,
+      "speaker": "OTHELLO",
+      "text": "Down, strumpet!"
+    },
+    {
+      "number": 83,
+      "speaker": "DESDEMONA",
+      "text": "Kill me to-morrow: let me live to-night!"
+    },
+    {
+      "number": 84,
+      "speaker": "OTHELLO",
+      "text": "Nay, if you strive—"
+    },
+    {
+      "number": 84,
+      "speaker": "DESDEMONA",
+      "text": "But half an hour!"
+    },
+    {
+      "number": 85,
+      "speaker": "OTHELLO",
+      "text": "Being done, there is no pause."
+    },
+    {
+      "number": 85,
+      "speaker": "DESDEMONA",
+      "text": "But while I say one prayer!"
+    },
+    {
+      "number": 86,
+      "speaker": "OTHELLO",
+      "text": "It is too late. He stifles her."
+    },
+    {
+      "number": 87,
+      "speaker": "EMILIA",
+      "text": "My lord, my lord! what, ho! my lord, my lord!"
+    },
+    {
+      "number": 88,
+      "speaker": "OTHELLO",
+      "text": "What noise is this? Not dead? not yet quite dead?"
+    },
+    {
+      "number": 89,
+      "speaker": "OTHELLO",
+      "text": "I that am cruel am yet merciful;"
+    },
+    {
+      "number": 90,
+      "speaker": "OTHELLO",
+      "text": "I would not have thee linger in thy pain: So, so."
+    },
+    {
+      "number": 91,
+      "speaker": "EMILIA",
+      "text": "What, ho! my lord, my lord!"
+    },
+    {
+      "number": 91,
+      "speaker": "OTHELLO",
+      "text": "Who’s there?"
+    },
+    {
+      "number": 92,
+      "speaker": "EMILIA",
+      "text": "O, good my lord, I would speak a word with you!"
+    },
+    {
+      "number": 93,
+      "speaker": "OTHELLO",
+      "text": "Yes: ’tis Emilia. By and by. She’s dead."
+    },
+    {
+      "number": 94,
+      "speaker": "OTHELLO",
+      "text": "’Tis like she comes to speak of Cassio’s death.—"
+    },
+    {
+      "number": 95,
+      "speaker": "OTHELLO",
+      "text": "The noise was here. Ha! no more moving?"
+    },
+    {
+      "number": 96,
+      "speaker": "OTHELLO",
+      "text": "Still as the grave. Shall she come in? were’t good?—"
+    },
+    {
+      "number": 97,
+      "speaker": "OTHELLO",
+      "text": "I think she stirs again:—no. What’s best to do?"
+    },
+    {
+      "number": 98,
+      "speaker": "OTHELLO",
+      "text": "If she come in, she’ll sure speak to my wife:"
+    },
+    {
+      "number": 99,
+      "speaker": "OTHELLO",
+      "text": "My wife! my wife! what wife? I have no wife."
+    },
+    {
+      "number": 100,
+      "speaker": "OTHELLO",
+      "text": "O insupportable! O heavy hour!"
+    },
+    {
+      "number": 101,
+      "speaker": "OTHELLO",
+      "text": "Methinks it should be now a huge eclipse"
+    },
+    {
+      "number": 102,
+      "speaker": "OTHELLO",
+      "text": "Of sun and moon, and that the affrighted globe"
+    },
+    {
+      "number": 103,
+      "speaker": "OTHELLO",
+      "text": "Should yawn at alteration."
+    },
+    {
+      "number": 103,
+      "speaker": "EMILIA",
+      "text": "I do beseech you"
+    },
+    {
+      "number": 104,
+      "speaker": "EMILIA",
+      "text": "That I may speak with you, O, good my lord!"
+    },
+    {
+      "number": 105,
+      "speaker": "OTHELLO",
+      "text": "I had forgot thee: O, come in, Emilia;"
+    },
+    {
+      "number": 106,
+      "speaker": "OTHELLO",
+      "text": "Soft; by and by. Let me the curtains draw."
+    },
+    {
+      "number": 107,
+      "speaker": "OTHELLO",
+      "text": "Where art thou? Unlocks the door."
+    },
+    {
+      "number": 108,
+      "speaker": "EMILIA",
+      "text": "O, my good lord, yonder’s foul murders done!"
+    },
+    {
+      "number": 109,
+      "speaker": "OTHELLO",
+      "text": "What, now?"
+    },
+    {
+      "number": 109,
+      "speaker": "EMILIA",
+      "text": "But now, my lord."
+    },
+    {
+      "number": 110,
+      "speaker": "OTHELLO",
+      "text": "It is the very error of the moon;"
+    },
+    {
+      "number": 111,
+      "speaker": "OTHELLO",
+      "text": "She comes more nearer earth than she was wont,"
+    },
+    {
+      "number": 112,
+      "speaker": "OTHELLO",
+      "text": "And makes men mad."
+    },
+    {
+      "number": 113,
+      "speaker": "EMILIA",
+      "text": "Cassio, my lord, hath kill’d a young Venetian"
+    },
+    {
+      "number": 114,
+      "speaker": "EMILIA",
+      "text": "Call’d Roderigo."
+    },
+    {
+      "number": 114,
+      "speaker": "OTHELLO",
+      "text": "Roderigo kill’d!"
+    },
+    {
+      "number": 115,
+      "speaker": "OTHELLO",
+      "text": "And Cassio kill’d!"
+    },
+    {
+      "number": 115,
+      "speaker": "EMILIA",
+      "text": "No, Cassio is not kill’d."
+    },
+    {
+      "number": 116,
+      "speaker": "OTHELLO",
+      "text": "Not Cassio kill’d! then murder’s out of tune,"
+    },
+    {
+      "number": 117,
+      "speaker": "OTHELLO",
+      "text": "And sweet revenge grows harsh."
+    },
+    {
+      "number": 117,
+      "speaker": "DESDEMONA",
+      "text": "O, falsely, falsely murder’d!"
+    },
+    {
+      "number": 118,
+      "speaker": "EMILIA",
+      "text": "Alas, what cry is that?"
+    },
+    {
+      "number": 118,
+      "speaker": "OTHELLO",
+      "text": "That! what?"
+    },
+    {
+      "number": 119,
+      "speaker": "EMILIA",
+      "text": "Out, and alas! that was my lady’s voice."
+    },
+    {
+      "number": 120,
+      "speaker": "EMILIA",
+      "text": "Help! help, ho! help! O lady, speak again!"
+    },
+    {
+      "number": 121,
+      "speaker": "EMILIA",
+      "text": "Sweet Desdemona! O sweet mistress, speak!"
+    },
+    {
+      "number": 121,
+      "speaker": "DESDEMONA",
+      "text": "A guiltless death I die."
+    },
+    {
+      "number": 122,
+      "speaker": "EMILIA",
+      "text": "O, who hath done this deed?"
+    },
+    {
+      "number": 122,
+      "speaker": "DESDEMONA",
+      "text": "Nobody; I myself. Farewell"
+    },
+    {
+      "number": 123,
+      "speaker": "DESDEMONA",
+      "text": "Commend me to my kind lord: O, farewell!"
+    },
+    {
+      "number": 124,
+      "speaker": "OTHELLO",
+      "text": "Why, how should she be murder’d?"
+    },
+    {
+      "number": 124,
+      "speaker": "EMILIA",
+      "text": "Alas, who knows?"
+    },
+    {
+      "number": 125,
+      "speaker": "OTHELLO",
+      "text": "You heard her say herself, it was not I."
+    },
+    {
+      "number": 126,
+      "speaker": "EMILIA",
+      "text": "She said so: I must needs report the truth."
+    },
+    {
+      "number": 127,
+      "speaker": "OTHELLO",
+      "text": "She’s, like a liar, gone to burning hell:"
+    },
+    {
+      "number": 128,
+      "speaker": "OTHELLO",
+      "text": "’Twas I that kill’d her."
+    },
+    {
+      "number": 128,
+      "speaker": "EMILIA",
+      "text": "O, the more angel she,"
+    },
+    {
+      "number": 129,
+      "speaker": "EMILIA",
+      "text": "And you the blacker devil!"
+    },
+    {
+      "number": 130,
+      "speaker": "OTHELLO",
+      "text": "She turn’d to folly, and she was a whore."
+    },
+    {
+      "number": 131,
+      "speaker": "EMILIA",
+      "text": "Thou dost belie her, and thou art a devil."
+    },
+    {
+      "number": 132,
+      "speaker": "OTHELLO",
+      "text": "She was false as water."
+    },
+    {
+      "number": 133,
+      "speaker": "EMILIA",
+      "text": "Thou art rash as fire, to say"
+    },
+    {
+      "number": 134,
+      "speaker": "EMILIA",
+      "text": "That she was false: O, she was heavenly true!"
+    },
+    {
+      "number": 135,
+      "speaker": "OTHELLO",
+      "text": "Cassio did top her; ask thy husband else."
+    },
+    {
+      "number": 136,
+      "speaker": "OTHELLO",
+      "text": "O, I were damn’d beneath all depth in hell,"
+    },
+    {
+      "number": 137,
+      "speaker": "OTHELLO",
+      "text": "But that I did proceed upon just grounds"
+    },
+    {
+      "number": 138,
+      "speaker": "OTHELLO",
+      "text": "To this extremity. Thy husband knew it all."
+    },
+    {
+      "number": 139,
+      "speaker": "EMILIA",
+      "text": "My husband!"
+    },
+    {
+      "number": 139,
+      "speaker": "OTHELLO",
+      "text": "Thy husband."
+    },
+    {
+      "number": 140,
+      "speaker": "EMILIA",
+      "text": "That she was false to wedlock?"
+    },
+    {
+      "number": 141,
+      "speaker": "OTHELLO",
+      "text": "Ay, with Cassio. Nay, had she been true,"
+    },
+    {
+      "number": 142,
+      "speaker": "OTHELLO",
+      "text": "If heaven would make me such another world"
+    },
+    {
+      "number": 143,
+      "speaker": "OTHELLO",
+      "text": "Of one entire and perfect chrysolite,"
+    },
+    {
+      "number": 144,
+      "speaker": "OTHELLO",
+      "text": "I’ld not have sold her for it."
+    },
+    {
+      "number": 145,
+      "speaker": "EMILIA",
+      "text": "My husband!"
+    },
+    {
+      "number": 146,
+      "speaker": "OTHELLO",
+      "text": "Ay, ’twas he that told me first:"
+    },
+    {
+      "number": 147,
+      "speaker": "OTHELLO",
+      "text": "An honest man he is, and hates the slime"
+    },
+    {
+      "number": 148,
+      "speaker": "OTHELLO",
+      "text": "That sticks on filthy deeds."
+    },
+    {
+      "number": 148,
+      "speaker": "EMILIA",
+      "text": "My husband!"
+    },
+    {
+      "number": 149,
+      "speaker": "OTHELLO",
+      "text": "What needs this iteration, woman? I say thy husband."
+    },
+    {
+      "number": 150,
+      "speaker": "EMILIA",
+      "text": "O mistress, villany hath made mocks with love,"
+    },
+    {
+      "number": 151,
+      "speaker": "EMILIA",
+      "text": "My husband say that she was false!"
+    },
+    {
+      "number": 152,
+      "speaker": "OTHELLO",
+      "text": "He, woman;"
+    },
+    {
+      "number": 153,
+      "speaker": "OTHELLO",
+      "text": "I say thy husband: dost understand the word?"
+    },
+    {
+      "number": 154,
+      "speaker": "OTHELLO",
+      "text": "My friend, thy husband, honest, honest Iago."
+    },
+    {
+      "number": 155,
+      "speaker": "EMILIA",
+      "text": "If he say so, may his pernicious soul"
+    },
+    {
+      "number": 156,
+      "speaker": "EMILIA",
+      "text": "Rot half a grain a day! he lies to the heart:"
+    },
+    {
+      "number": 157,
+      "speaker": "EMILIA",
+      "text": "She was too fond of her most filthy bargain."
+    },
+    {
+      "number": 158,
+      "speaker": "OTHELLO",
+      "text": "Ha!"
+    },
+    {
+      "number": 158,
+      "speaker": "EMILIA",
+      "text": "Do thy worst:"
+    },
+    {
+      "number": 159,
+      "speaker": "EMILIA",
+      "text": "This deed of thine is no more worthy heaven"
+    },
+    {
+      "number": 160,
+      "speaker": "EMILIA",
+      "text": "Than thou wast worthy her."
+    },
+    {
+      "number": 160,
+      "speaker": "OTHELLO",
+      "text": "Peace, you were best."
+    },
+    {
+      "number": 161,
+      "speaker": "EMILIA",
+      "text": "Thou hast not half that power to do me harm"
+    },
+    {
+      "number": 162,
+      "speaker": "EMILIA",
+      "text": "As I have to be hurt. O gull! O dolt!"
+    },
+    {
+      "number": 163,
+      "speaker": "EMILIA",
+      "text": "As ignorant as dirt! thou hast done a deed—"
+    },
+    {
+      "number": 164,
+      "speaker": "EMILIA",
+      "text": "I care not for thy sword; I’ll make thee known,"
+    },
+    {
+      "number": 165,
+      "speaker": "EMILIA",
+      "text": "Though I lost twenty lives.—Help! help, ho! help!"
+    },
+    {
+      "number": 166,
+      "speaker": "EMILIA",
+      "text": "The Moor hath kill’d my mistress! Murder! murder!"
+    },
+    {
+      "number": 167,
+      "speaker": "MONTANO",
+      "text": "What is the matter? How now, general!"
+    },
+    {
+      "number": 168,
+      "speaker": "EMILIA",
+      "text": "O, are you come, Iago? you have done well,"
+    },
+    {
+      "number": 169,
+      "speaker": "EMILIA",
+      "text": "That men must lay their murders on your neck."
+    },
+    {
+      "number": 170,
+      "speaker": "GRATIANO",
+      "text": "What is the matter?"
+    },
+    {
+      "number": 171,
+      "speaker": "EMILIA",
+      "text": "Disprove this villain, if thou be’st a man:"
+    },
+    {
+      "number": 172,
+      "speaker": "EMILIA",
+      "text": "He says thou told’st him that his wife was false:"
+    },
+    {
+      "number": 173,
+      "speaker": "EMILIA",
+      "text": "I know thou didst not, thou’rt not such a villain:"
+    },
+    {
+      "number": 174,
+      "speaker": "EMILIA",
+      "text": "Speak, for my heart is full."
+    },
+    {
+      "number": 175,
+      "speaker": "IAGO",
+      "text": "I told him what I thought, and told no more"
+    },
+    {
+      "number": 176,
+      "speaker": "IAGO",
+      "text": "Than what he found himself was apt and true."
+    },
+    {
+      "number": 177,
+      "speaker": "EMILIA",
+      "text": "But did you ever tell him she was false?"
+    },
+    {
+      "number": 178,
+      "speaker": "IAGO",
+      "text": "I did."
+    },
+    {
+      "number": 179,
+      "speaker": "EMILIA",
+      "text": "You told a lie, an odious, damned lie;"
+    },
+    {
+      "number": 180,
+      "speaker": "EMILIA",
+      "text": "Upon my soul, a lie, a wicked lie."
+    },
+    {
+      "number": 181,
+      "speaker": "EMILIA",
+      "text": "She false with Cassio!—did you say with Cassio?"
+    },
+    {
+      "number": 182,
+      "speaker": "IAGO",
+      "text": "With Cassio, mistress. Go to, charm your tongue."
+    },
+    {
+      "number": 183,
+      "speaker": "EMILIA",
+      "text": "I will not charm my tongue; I am bound to speak:"
+    },
+    {
+      "number": 184,
+      "speaker": "EMILIA",
+      "text": "My mistress here lies murder’d in her bed—"
+    },
+    {
+      "number": 185,
+      "speaker": "ALL",
+      "text": "O heavens forfend!"
+    },
+    {
+      "number": 186,
+      "speaker": "EMILIA",
+      "text": "And your reports have set the murder on."
+    },
+    {
+      "number": 187,
+      "speaker": "OTHELLO",
+      "text": "Nay, stare not, masters: it is true, indeed."
+    },
+    {
+      "number": 188,
+      "speaker": "GRATIANO",
+      "text": "’Tis a strange truth."
+    },
+    {
+      "number": 188,
+      "speaker": "MONTANO",
+      "text": "O monstrous act!"
+    },
+    {
+      "number": 189,
+      "speaker": "EMILIA",
+      "text": "Villany, villany, villany!"
+    },
+    {
+      "number": 190,
+      "speaker": "EMILIA",
+      "text": "I think upon’t, I think: I smell’t: O villany!—"
+    },
+    {
+      "number": 191,
+      "speaker": "EMILIA",
+      "text": "I thought so then:—I’ll kill myself for grief:—"
+    },
+    {
+      "number": 192,
+      "speaker": "EMILIA",
+      "text": "O villany, villany!"
+    },
+    {
+      "number": 193,
+      "speaker": "IAGO",
+      "text": "What, are you mad? I charge you, get you home."
+    },
+    {
+      "number": 194,
+      "speaker": "EMILIA",
+      "text": "Good gentlemen, let me have leave to speak:"
+    },
+    {
+      "number": 195,
+      "speaker": "EMILIA",
+      "text": "’Tis proper I obey him, but not now."
+    },
+    {
+      "number": 196,
+      "speaker": "EMILIA",
+      "text": "Perchance, Iago, I will ne’er go home."
+    },
+    {
+      "number": 197,
+      "speaker": "OTHELLO",
+      "text": "O! O! O! He falls on the bed."
+    },
+    {
+      "number": 198,
+      "speaker": "EMILIA",
+      "text": "Nay, lay thee down and roar;"
+    },
+    {
+      "number": 199,
+      "speaker": "EMILIA",
+      "text": "For thou hast kill’d the sweetest innocent"
+    },
+    {
+      "number": 200,
+      "speaker": "EMILIA",
+      "text": "That e’er did lift up eye."
+    },
+    {
+      "number": 200,
+      "speaker": "OTHELLO",
+      "text": "O, she was foul!"
+    },
+    {
+      "number": 201,
+      "speaker": "OTHELLO",
+      "text": "I scarce did know you, uncle: there lies your niece,"
+    },
+    {
+      "number": 202,
+      "speaker": "OTHELLO",
+      "text": "Whose breath, indeed, these hands have newly stopp’d:"
+    },
+    {
+      "number": 203,
+      "speaker": "OTHELLO",
+      "text": "I know this act shows horrible and grim."
+    },
+    {
+      "number": 204,
+      "speaker": "GRATIANO",
+      "text": "Poor Desdemona! I am glad thy father’s dead:"
+    },
+    {
+      "number": 205,
+      "speaker": "GRATIANO",
+      "text": "Thy match was mortal to him, and pure grief"
+    },
+    {
+      "number": 206,
+      "speaker": "GRATIANO",
+      "text": "Shore his old thread in twain: did he live now,"
+    },
+    {
+      "number": 207,
+      "speaker": "GRATIANO",
+      "text": "This sight would make him do a desperate turn,"
+    },
+    {
+      "number": 208,
+      "speaker": "GRATIANO",
+      "text": "Yea, curse his better angel from his side,"
+    },
+    {
+      "number": 209,
+      "speaker": "GRATIANO",
+      "text": "And fall to reprobation."
+    },
+    {
+      "number": 209,
+      "speaker": "OTHELLO",
+      "text": "’Tis pitiful; but yet Iago knows"
+    },
+    {
+      "number": 210,
+      "speaker": "OTHELLO",
+      "text": "That she with Cassio hath the act of shame"
+    },
+    {
+      "number": 211,
+      "speaker": "OTHELLO",
+      "text": "A thousand times committed; Cassio confess’d it:"
+    },
+    {
+      "number": 212,
+      "speaker": "OTHELLO",
+      "text": "And she did gratify his amorous works"
+    },
+    {
+      "number": 213,
+      "speaker": "OTHELLO",
+      "text": "With that recognizance and pledge of love"
+    },
+    {
+      "number": 214,
+      "speaker": "OTHELLO",
+      "text": "Which I first gave her; I saw it in his hand:"
+    },
+    {
+      "number": 215,
+      "speaker": "OTHELLO",
+      "text": "It was a handkerchief, an antique token"
+    },
+    {
+      "number": 216,
+      "speaker": "OTHELLO",
+      "text": "My father gave my mother."
+    },
+    {
+      "number": 216,
+      "speaker": "EMILIA",
+      "text": "O heaven! O heavenly powers!"
+    },
+    {
+      "number": 217,
+      "speaker": "IAGO",
+      "text": "Come, hold your peace."
+    },
+    {
+      "number": 217,
+      "speaker": "EMILIA",
+      "text": "’Twill out, ’twill out: I peace!"
+    },
+    {
+      "number": 218,
+      "speaker": "EMILIA",
+      "text": "No, I will speak as liberal as the north:"
+    },
+    {
+      "number": 219,
+      "speaker": "EMILIA",
+      "text": "Let heaven and men and devils, let them all,"
+    },
+    {
+      "number": 220,
+      "speaker": "EMILIA",
+      "text": "All, all, cry shame against me, yet I’ll speak."
+    },
+    {
+      "number": 221,
+      "speaker": "IAGO",
+      "text": "Be wise, and get you home."
+    },
+    {
+      "number": 222,
+      "speaker": "EMILIA",
+      "text": "I will not. Iago offers to stab Emilia."
+    },
+    {
+      "number": 223,
+      "speaker": "GRATIANO",
+      "text": "Fie!"
+    },
+    {
+      "number": 224,
+      "speaker": "GRATIANO",
+      "text": "Your sword upon a woman?"
+    },
+    {
+      "number": 225,
+      "speaker": "EMILIA",
+      "text": "O thou dull Moor! that handkerchief thou speak’st of"
+    },
+    {
+      "number": 226,
+      "speaker": "EMILIA",
+      "text": "I found by fortune and did give my husband;"
+    },
+    {
+      "number": 227,
+      "speaker": "EMILIA",
+      "text": "For often, with a solemn earnestness,"
+    },
+    {
+      "number": 228,
+      "speaker": "EMILIA",
+      "text": "More than indeed belong’d to such a trifle,"
+    },
+    {
+      "number": 229,
+      "speaker": "EMILIA",
+      "text": "He begg’d of me to steal it."
+    },
+    {
+      "number": 230,
+      "speaker": "IAGO",
+      "text": "Villainous whore!"
+    },
+    {
+      "number": 231,
+      "speaker": "EMILIA",
+      "text": "She give it Cassio! no, alas! I found it,"
+    },
+    {
+      "number": 232,
+      "speaker": "EMILIA",
+      "text": "And I did give’t my husband."
+    },
+    {
+      "number": 232,
+      "speaker": "IAGO",
+      "text": "Filth, thou liest!"
+    },
+    {
+      "number": 233,
+      "speaker": "EMILIA",
+      "text": "By heaven, I do not, I do not, gentlemen."
+    },
+    {
+      "number": 234,
+      "speaker": "EMILIA",
+      "text": "O murderous coxcomb! what should such a fool"
+    },
+    {
+      "number": 235,
+      "speaker": "EMILIA",
+      "text": "Do with so good a woman?"
+    },
+    {
+      "number": 235,
+      "speaker": "OTHELLO",
+      "text": "Are there no stones in heaven"
+    },
+    {
+      "number": 236,
+      "speaker": "OTHELLO",
+      "text": "But what serve for the thunder?—Precious villain! He runs at Iago. Iago, from behind, stabs Emilia, and exit."
+    },
+    {
+      "number": 237,
+      "speaker": "GRATIANO",
+      "text": "The woman falls; sure, he hath kill’d his wife."
+    },
+    {
+      "number": 238,
+      "speaker": "EMILIA",
+      "text": "Ay, ay: O, lay me by my mistress’ side."
+    },
+    {
+      "number": 239,
+      "speaker": "GRATIANO",
+      "text": "He’s gone, but his wife’s kill’d."
+    },
+    {
+      "number": 240,
+      "speaker": "MONTANO",
+      "text": "’Tis a notorious villain. Take you this weapon,"
+    },
+    {
+      "number": 241,
+      "speaker": "MONTANO",
+      "text": "Which I have here recover’d from the Moor:"
+    },
+    {
+      "number": 242,
+      "speaker": "MONTANO",
+      "text": "Come, guard the door without; let him not pass,"
+    },
+    {
+      "number": 243,
+      "speaker": "MONTANO",
+      "text": "But kill him rather. I’ll after that same villain,"
+    },
+    {
+      "number": 244,
+      "speaker": "MONTANO",
+      "text": "For ’tis a damned slave."
+    },
+    {
+      "number": 244,
+      "speaker": "OTHELLO",
+      "text": "I am not valiant neither,"
+    },
+    {
+      "number": 245,
+      "speaker": "OTHELLO",
+      "text": "But ever puny whipster gets my sword:"
+    },
+    {
+      "number": 246,
+      "speaker": "OTHELLO",
+      "text": "But why should honour outlive honesty?"
+    },
+    {
+      "number": 247,
+      "speaker": "OTHELLO",
+      "text": "Let it go all."
+    },
+    {
+      "number": 247,
+      "speaker": "EMILIA",
+      "text": "What did thy song bode, lady?"
+    },
+    {
+      "number": 248,
+      "speaker": "EMILIA",
+      "text": "Hark, canst thou hear me? I will play the swan."
+    },
+    {
+      "number": 249,
+      "speaker": "EMILIA",
+      "text": "And die in music. Willow, willow, willow—"
+    },
+    {
+      "number": 250,
+      "speaker": "EMILIA",
+      "text": "Moor, she was chaste; she loved thee, cruel Moor;"
+    },
+    {
+      "number": 251,
+      "speaker": "EMILIA",
+      "text": "So come my soul to bliss, as I speak true;"
+    },
+    {
+      "number": 252,
+      "speaker": "EMILIA",
+      "text": "So speaking as I think, I die, I die."
+    },
+    {
+      "number": 253,
+      "speaker": "OTHELLO",
+      "text": "I have another weapon in this chamber;"
+    },
+    {
+      "number": 254,
+      "speaker": "OTHELLO",
+      "text": "It is a sword of Spain, the ice-brook’s temper:—"
+    },
+    {
+      "number": 255,
+      "speaker": "OTHELLO",
+      "text": "O, here it is. Uncle, I must come forth."
+    },
+    {
+      "number": 256,
+      "speaker": "GRATIANO",
+      "text": "If thou attempt it, it will cost thee dear:"
+    },
+    {
+      "number": 257,
+      "speaker": "GRATIANO",
+      "text": "Thou hast no weapon, and perforce must suffer."
+    },
+    {
+      "number": 258,
+      "speaker": "OTHELLO",
+      "text": "Look in upon me then and speak with me,"
+    },
+    {
+      "number": 259,
+      "speaker": "OTHELLO",
+      "text": "Or, naked as I am, I will assault thee."
+    },
+    {
+      "number": 260,
+      "speaker": "GRATIANO",
+      "text": "What is the matter?"
+    },
+    {
+      "number": 260,
+      "speaker": "OTHELLO",
+      "text": "Behold, I have a weapon;"
+    },
+    {
+      "number": 261,
+      "speaker": "OTHELLO",
+      "text": "A better never did itself sustain"
+    },
+    {
+      "number": 262,
+      "speaker": "OTHELLO",
+      "text": "Upon a soldier’s thigh: I have seen the day,"
+    },
+    {
+      "number": 263,
+      "speaker": "OTHELLO",
+      "text": "That, with this little arm and this good sword,"
+    },
+    {
+      "number": 264,
+      "speaker": "OTHELLO",
+      "text": "I have made my way through more impediments"
+    },
+    {
+      "number": 265,
+      "speaker": "OTHELLO",
+      "text": "Than twenty times your stop: but, O vain boast!"
+    },
+    {
+      "number": 266,
+      "speaker": "OTHELLO",
+      "text": "Who can control his fate? ’tis not so now."
+    },
+    {
+      "number": 267,
+      "speaker": "OTHELLO",
+      "text": "Be not afraid, though you do see me weapon’d;"
+    },
+    {
+      "number": 268,
+      "speaker": "OTHELLO",
+      "text": "Here is my journey’s end, here is my butt,"
+    },
+    {
+      "number": 269,
+      "speaker": "OTHELLO",
+      "text": "And very sea-mark of my utmost sail."
+    },
+    {
+      "number": 270,
+      "speaker": "OTHELLO",
+      "text": "Do you go back dismay’d? ’tis a lost fear;"
+    },
+    {
+      "number": 271,
+      "speaker": "OTHELLO",
+      "text": "Man but a rush against Othello’s breast,"
+    },
+    {
+      "number": 272,
+      "speaker": "OTHELLO",
+      "text": "And he retires. Where should Othello go?"
+    },
+    {
+      "number": 273,
+      "speaker": "OTHELLO",
+      "text": "Now, how dost thou look now? O ill-starr’d wench!"
+    },
+    {
+      "number": 274,
+      "speaker": "OTHELLO",
+      "text": "Pale as thy smock! when we shall meet at compt,"
+    },
+    {
+      "number": 275,
+      "speaker": "OTHELLO",
+      "text": "This look of thine will hurl my soul from heaven,"
+    },
+    {
+      "number": 276,
+      "speaker": "OTHELLO",
+      "text": "And fiends will snatch at it. Cold, cold, my girl!"
+    },
+    {
+      "number": 277,
+      "speaker": "OTHELLO",
+      "text": "Even like thy chastity. O cursed slave!"
+    },
+    {
+      "number": 278,
+      "speaker": "OTHELLO",
+      "text": "Whip me, ye devils,"
+    },
+    {
+      "number": 279,
+      "speaker": "OTHELLO",
+      "text": "From the possession of this heavenly sight!"
+    },
+    {
+      "number": 280,
+      "speaker": "OTHELLO",
+      "text": "Blow me about in winds! roast me in sulphur!"
+    },
+    {
+      "number": 281,
+      "speaker": "OTHELLO",
+      "text": "Wash me in steep-down gulfs of liquid fire!"
+    },
+    {
+      "number": 282,
+      "speaker": "OTHELLO",
+      "text": "O Desdemona! Desdemona! dead!"
+    },
+    {
+      "number": 283,
+      "speaker": "OTHELLO",
+      "text": "Oh! Oh! Oh!"
+    },
+    {
+      "number": 284,
+      "speaker": "LODOVICO",
+      "text": "Where is this rash and most unfortunate man?"
+    },
+    {
+      "number": 285,
+      "speaker": "OTHELLO",
+      "text": "That’s he that was Othello: here I am."
+    },
+    {
+      "number": 286,
+      "speaker": "LODOVICO",
+      "text": "Where is that viper? bring the villain forth."
+    },
+    {
+      "number": 287,
+      "speaker": "OTHELLO",
+      "text": "I look down towards his feet; but that’s a fable."
+    },
+    {
+      "number": 288,
+      "speaker": "OTHELLO",
+      "text": "If that thou be’st a devil, I cannot kill thee. Wounds Iago."
+    },
+    {
+      "number": 289,
+      "speaker": "LODOVICO",
+      "text": "Wrench his sword from him."
+    },
+    {
+      "number": 289,
+      "speaker": "IAGO",
+      "text": "I bleed, sir; but not kill’d."
+    },
+    {
+      "number": 290,
+      "speaker": "OTHELLO",
+      "text": "I am not sorry neither: I’ld have thee live;"
+    },
+    {
+      "number": 291,
+      "speaker": "OTHELLO",
+      "text": "For, in my sense, ’tis happiness to die."
+    },
+    {
+      "number": 292,
+      "speaker": "LODOVICO",
+      "text": "O thou Othello, thou wert once so good,"
+    },
+    {
+      "number": 293,
+      "speaker": "LODOVICO",
+      "text": "Fall’n in the practise of a damned slave,"
+    },
+    {
+      "number": 294,
+      "speaker": "LODOVICO",
+      "text": "What shall be said to thee?"
+    },
+    {
+      "number": 294,
+      "speaker": "OTHELLO",
+      "text": "Why, any thing:"
+    },
+    {
+      "number": 295,
+      "speaker": "OTHELLO",
+      "text": "An honourable murderer, if you will;"
+    },
+    {
+      "number": 296,
+      "speaker": "OTHELLO",
+      "text": "For nought I did in hate, but all in honour."
+    },
+    {
+      "number": 297,
+      "speaker": "LODOVICO",
+      "text": "This wretch hath part confess’d his villany:"
+    },
+    {
+      "number": 298,
+      "speaker": "LODOVICO",
+      "text": "Did you and he consent in Cassio’s death?"
+    },
+    {
+      "number": 299,
+      "speaker": "OTHELLO",
+      "text": "Ay."
+    },
+    {
+      "number": 300,
+      "speaker": "CASSIO",
+      "text": "Dear general, I never gave you cause."
+    },
+    {
+      "number": 301,
+      "speaker": "OTHELLO",
+      "text": "I do believe it, and I ask your pardon."
+    },
+    {
+      "number": 302,
+      "speaker": "OTHELLO",
+      "text": "Will you, I pray, demand that demi-devil"
+    },
+    {
+      "number": 303,
+      "speaker": "OTHELLO",
+      "text": "Why he hath thus ensnared my soul and body?"
+    },
+    {
+      "number": 304,
+      "speaker": "IAGO",
+      "text": "Demand me nothing: what you know, you know:"
+    },
+    {
+      "number": 305,
+      "speaker": "IAGO",
+      "text": "From this time forth I never will speak word."
+    },
+    {
+      "number": 306,
+      "speaker": "LODOVICO",
+      "text": "What, not to pray?"
+    },
+    {
+      "number": 306,
+      "speaker": "GRATIANO",
+      "text": "Torments will ope your lips."
+    },
+    {
+      "number": 307,
+      "speaker": "OTHELLO",
+      "text": "Well, thou dost best."
+    },
+    {
+      "number": 308,
+      "speaker": "LODOVICO",
+      "text": "Sir, you shall understand what hath befall’n,"
+    },
+    {
+      "number": 309,
+      "speaker": "LODOVICO",
+      "text": "Which, as I think, you know not. Here is a letter"
+    },
+    {
+      "number": 310,
+      "speaker": "LODOVICO",
+      "text": "Found in the pocket of the slain Roderigo;"
+    },
+    {
+      "number": 311,
+      "speaker": "LODOVICO",
+      "text": "And here another: the one of them imports"
+    },
+    {
+      "number": 312,
+      "speaker": "LODOVICO",
+      "text": "The death of Cassio to be undertook"
+    },
+    {
+      "number": 313,
+      "speaker": "LODOVICO",
+      "text": "By Roderigo."
+    },
+    {
+      "number": 313,
+      "speaker": "OTHELLO",
+      "text": "O villain!"
+    },
+    {
+      "number": 314,
+      "speaker": "CASSIO",
+      "text": "Most heathenish and most gross!"
+    },
+    {
+      "number": 314,
+      "speaker": "LODOVICO",
+      "text": "Now here’s another discontented paper,"
+    },
+    {
+      "number": 315,
+      "speaker": "LODOVICO",
+      "text": "Found in his pocket too; and this, it seems,"
+    },
+    {
+      "number": 316,
+      "speaker": "LODOVICO",
+      "text": "Roderigo meant to have sent this damned villain;"
+    },
+    {
+      "number": 317,
+      "speaker": "LODOVICO",
+      "text": "But that belike Iago in the interim"
+    },
+    {
+      "number": 318,
+      "speaker": "LODOVICO",
+      "text": "Came in and satisfied him."
+    },
+    {
+      "number": 318,
+      "speaker": "OTHELLO",
+      "text": "O the pernicious caitiff!"
+    },
+    {
+      "number": 319,
+      "speaker": "OTHELLO",
+      "text": "How came you, Cassio, by that handkerchief"
+    },
+    {
+      "number": 320,
+      "speaker": "OTHELLO",
+      "text": "That was my wife’s?"
+    },
+    {
+      "number": 320,
+      "speaker": "CASSIO",
+      "text": "I found it in my chamber:"
+    },
+    {
+      "number": 321,
+      "speaker": "CASSIO",
+      "text": "And he himself confess’d but even now"
+    },
+    {
+      "number": 322,
+      "speaker": "CASSIO",
+      "text": "That there he dropp’d it for a special purpose"
+    },
+    {
+      "number": 323,
+      "speaker": "CASSIO",
+      "text": "Which wrought to his desire."
+    },
+    {
+      "number": 323,
+      "speaker": "OTHELLO",
+      "text": "O fool! fool! fool!"
+    },
+    {
+      "number": 324,
+      "speaker": "CASSIO",
+      "text": "There is besides in Roderigo’s letter,"
+    },
+    {
+      "number": 325,
+      "speaker": "CASSIO",
+      "text": "How he upbraids Iago, that he made him"
+    },
+    {
+      "number": 326,
+      "speaker": "CASSIO",
+      "text": "Brave me upon the watch; whereon it came"
+    },
+    {
+      "number": 327,
+      "speaker": "CASSIO",
+      "text": "That I was cast: and even but now he spake,"
+    },
+    {
+      "number": 328,
+      "speaker": "CASSIO",
+      "text": "After long seeming dead, Iago hurt him,"
+    },
+    {
+      "number": 329,
+      "speaker": "CASSIO",
+      "text": "Iago set him on."
+    },
+    {
+      "number": 330,
+      "speaker": "LODOVICO",
+      "text": "You must forsake this room, and go with us:"
+    },
+    {
+      "number": 331,
+      "speaker": "LODOVICO",
+      "text": "Your power and your command is taken off,"
+    },
+    {
+      "number": 332,
+      "speaker": "LODOVICO",
+      "text": "And Cassio rules in Cyprus. For this slave,"
+    },
+    {
+      "number": 333,
+      "speaker": "LODOVICO",
+      "text": "If there be any cunning cruelty"
+    },
+    {
+      "number": 334,
+      "speaker": "LODOVICO",
+      "text": "That can torment him much and hold him long,"
+    },
+    {
+      "number": 335,
+      "speaker": "LODOVICO",
+      "text": "It shall be his. You shall close prisoner rest,"
+    },
+    {
+      "number": 336,
+      "speaker": "LODOVICO",
+      "text": "Till that the nature of your fault be known"
+    },
+    {
+      "number": 337,
+      "speaker": "LODOVICO",
+      "text": "To the Venetian state. Come, bring him away."
+    },
+    {
+      "number": 338,
+      "speaker": "OTHELLO",
+      "text": "Soft you; a word or two before you go."
+    },
+    {
+      "number": 339,
+      "speaker": "OTHELLO",
+      "text": "I have done the state some service, and they know’t."
+    },
+    {
+      "number": 340,
+      "speaker": "OTHELLO",
+      "text": "No more of that. I pray you, in your letters,"
+    },
+    {
+      "number": 341,
+      "speaker": "OTHELLO",
+      "text": "When you shall these unlucky deeds relate,"
+    },
+    {
+      "number": 342,
+      "speaker": "OTHELLO",
+      "text": "Speak of me as I am; nothing extenuate,"
+    },
+    {
+      "number": 343,
+      "speaker": "OTHELLO",
+      "text": "Nor set down aught in malice: then must you speak"
+    },
+    {
+      "number": 344,
+      "speaker": "OTHELLO",
+      "text": "Of one that loved not wisely but too well;"
+    },
+    {
+      "number": 345,
+      "speaker": "OTHELLO",
+      "text": "Of one not easily jealous, but being wrought"
+    },
+    {
+      "number": 346,
+      "speaker": "OTHELLO",
+      "text": "Perplex’d in the extreme; of one whose hand,"
+    },
+    {
+      "number": 347,
+      "speaker": "OTHELLO",
+      "text": "Like the base Indian, threw a pearl away"
+    },
+    {
+      "number": 348,
+      "speaker": "OTHELLO",
+      "text": "Richer than all his tribe; of one whose subdued eyes,"
+    },
+    {
+      "number": 349,
+      "speaker": "OTHELLO",
+      "text": "Albeit unused to the melting mood,"
+    },
+    {
+      "number": 350,
+      "speaker": "OTHELLO",
+      "text": "Drop tears as fast as the Arabian trees"
+    },
+    {
+      "number": 351,
+      "speaker": "OTHELLO",
+      "text": "Their medicinal gum. Set you down this;"
+    },
+    {
+      "number": 352,
+      "speaker": "OTHELLO",
+      "text": "And say besides, that in Aleppo once,"
+    },
+    {
+      "number": 353,
+      "speaker": "OTHELLO",
+      "text": "Where a malignant and a turban’d Turk"
+    },
+    {
+      "number": 354,
+      "speaker": "OTHELLO",
+      "text": "Beat a Venetian and traduced the state,"
+    },
+    {
+      "number": 355,
+      "speaker": "OTHELLO",
+      "text": "I took by the throat the circumcised dog,"
+    },
+    {
+      "number": 356,
+      "speaker": "OTHELLO",
+      "text": "And smote him, thus."
+    },
+    {
+      "number": 356,
+      "speaker": "LODOVICO",
+      "text": "O bloody period!"
+    },
+    {
+      "number": 357,
+      "speaker": "GRATIANO",
+      "text": "All that’s spoke is marr’d."
+    },
+    {
+      "number": 358,
+      "speaker": "OTHELLO",
+      "text": "I kiss’d thee ere I kill’d thee: no way but this;"
+    },
+    {
+      "number": 359,
+      "speaker": "OTHELLO",
+      "text": "Killing myself, to die upon a kiss."
+    },
+    {
+      "number": 360,
+      "speaker": "CASSIO",
+      "text": "This did I fear, but thought he had no weapon;"
+    },
+    {
+      "number": 361,
+      "speaker": "CASSIO",
+      "text": "For he was great of heart."
+    },
+    {
+      "number": 361,
+      "speaker": "LODOVICO",
+      "text": "To Iago. O Spartan dog,"
+    },
+    {
+      "number": 362,
+      "speaker": "LODOVICO",
+      "text": "More fell than anguish, hunger, or the sea!"
+    },
+    {
+      "number": 363,
+      "speaker": "LODOVICO",
+      "text": "Look on the tragic loading of this bed;"
+    },
+    {
+      "number": 364,
+      "speaker": "LODOVICO",
+      "text": "This is thy work: the object poisons sight;"
+    },
+    {
+      "number": 365,
+      "speaker": "LODOVICO",
+      "text": "Let it be hid. Gratiano, keep the house,"
+    },
+    {
+      "number": 366,
+      "speaker": "LODOVICO",
+      "text": "And seize upon the fortunes of the Moor,"
+    },
+    {
+      "number": 367,
+      "speaker": "LODOVICO",
+      "text": "For they succeed on you. To you, lord governor,"
+    },
+    {
+      "number": 368,
+      "speaker": "LODOVICO",
+      "text": "Remains the censure of this hellish villain;"
+    },
+    {
+      "number": 369,
+      "speaker": "LODOVICO",
+      "text": "The time, the place, the torture: O, enforce it!"
+    },
+    {
+      "number": 370,
+      "speaker": "LODOVICO",
+      "text": "Myself will straight aboard: and to the state"
+    },
+    {
+      "number": 371,
+      "speaker": "LODOVICO",
+      "text": "This heavy act with heavy heart relate."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Othello."
+    },
+    {
+      "after_line": 87,
+      "text": "Within."
+    },
+    {
+      "after_line": 91,
+      "text": "Within."
+    },
+    {
+      "after_line": 92,
+      "text": "Within."
+    },
+    {
+      "after_line": 103,
+      "text": "Within."
+    },
+    {
+      "after_line": 107,
+      "text": "Enter Emilia."
+    },
+    {
+      "after_line": 107,
+      "text": "What’s the matter with thee now?"
+    },
+    {
+      "after_line": 123,
+      "text": "Dies."
+    },
+    {
+      "after_line": 166,
+      "text": "Enter Montano, Gratiano, Iago, and others."
+    },
+    {
+      "after_line": 200,
+      "text": "Rising."
+    },
+    {
+      "after_line": 244,
+      "text": "Exeunt Montano and Gratiano."
+    },
+    {
+      "after_line": 249,
+      "text": "Singing."
+    },
+    {
+      "after_line": 252,
+      "text": "Dies."
+    },
+    {
+      "after_line": 256,
+      "text": "Within."
+    },
+    {
+      "after_line": 259,
+      "text": "Reenter Gratiano."
+    },
+    {
+      "after_line": 283,
+      "text": "Enter Lodovico. Montano, Cassio carried in a chair, and Officers with Iago, prisoner."
+    },
+    {
+      "after_line": 356,
+      "text": "Stabs himself."
+    },
+    {
+      "after_line": 359,
+      "text": "Falls on the bed, and dies."
+    },
+    {
+      "after_line": 371,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "othello_act5_scene2_gloss1",
+      "line": 1,
+      "phrase": "It is the cause, it is the cause, my soul",
+      "definition": "the act is justified by the cause — Othello's ritual self-instruction as he approaches murder"
+    },
+    {
+      "id": "othello_act5_scene2_gloss2",
+      "line": 5,
+      "phrase": "alabaster",
+      "definition": "white, translucent stone used for funeral effigies — his chosen figure for Desdemona's sleeping skin"
+    },
+    {
+      "id": "othello_act5_scene2_gloss4",
+      "line": 10,
+      "phrase": "repent me",
+      "definition": "be able to reverse my act"
+    },
+    {
+      "id": "othello_act5_scene2_gloss5",
+      "line": 12,
+      "phrase": "Promethean heat",
+      "definition": "the divine fire Prometheus stole from the gods to animate mankind — Othello admits he cannot restore the life he is about to take"
+    },
+    {
+      "id": "othello_act5_scene2_gloss6",
+      "line": 13,
+      "phrase": "relume",
+      "definition": "rekindle; light again"
+    },
+    {
+      "id": "othello_act5_scene2_gloss8",
+      "line": 26,
+      "phrase": "bethink yourself of any crime",
+      "definition": "remember any sin on your conscience"
+    },
+    {
+      "id": "othello_act5_scene2_gloss9",
+      "line": 28,
+      "phrase": "Solicit",
+      "definition": "make earnest petition (to heaven)"
+    },
+    {
+      "id": "othello_act5_scene2_gloss10",
+      "line": 55,
+      "phrase": "presently",
+      "definition": "immediately"
+    },
+    {
+      "id": "othello_act5_scene2_gloss11",
+      "line": 58,
+      "phrase": "conception",
+      "definition": "conviction; firm belief"
+    },
+    {
+      "id": "othello_act5_scene2_gloss12",
+      "line": 66,
+      "phrase": "stone my heart",
+      "definition": "turn my heart to stone"
+    },
+    {
+      "id": "othello_act5_scene2_gloss13",
+      "line": 54,
+      "phrase": "perjury",
+      "definition": "a sworn lie"
+    },
+    {
+      "id": "othello_act5_scene2_gloss14",
+      "line": 75,
+      "phrase": "ta’en order",
+      "definition": "taken arrangements"
+    },
+    {
+      "id": "othello_act5_scene2_gloss15",
+      "line": 77,
+      "phrase": "Had all his hairs been lives",
+      "definition": "even if every hair on his head had been a separate life"
+    },
+    {
+      "id": "othello_act5_scene2_gloss17",
+      "line": 84,
+      "phrase": "half an hour",
+      "definition": "the brief reprieve Desdemona pleads for"
+    },
+    {
+      "id": "othello_act5_scene2_gloss19",
+      "line": 110,
+      "phrase": "error of the moon",
+      "definition": "the moon's aberration from its course — thought to cause madness; 'lunacy' from 'luna'"
+    },
+    {
+      "id": "othello_act5_scene2_gloss21",
+      "line": 130,
+      "phrase": "folly",
+      "definition": "wantonness; sexual sin"
+    },
+    {
+      "id": "othello_act5_scene2_gloss22",
+      "line": 143,
+      "phrase": "chrysolite",
+      "definition": "a precious stone, bright green-gold — see 4.1"
+    },
+    {
+      "id": "othello_act5_scene2_gloss23",
+      "line": 232,
+      "phrase": "coxcomb",
+      "definition": "fool"
+    },
+    {
+      "id": "othello_act5_scene2_gloss24",
+      "line": 214,
+      "phrase": "handkerchief",
+      "definition": "Emilia's realization of the fatal cloth's history"
+    },
+    {
+      "id": "othello_act5_scene2_gloss26",
+      "line": 217,
+      "phrase": "liberal as the north",
+      "definition": "open and free as the north wind"
+    },
+    {
+      "id": "othello_act5_scene2_gloss28",
+      "line": 257,
+      "phrase": "naked",
+      "definition": "without a weapon"
+    },
+    {
+      "id": "othello_act5_scene2_gloss29",
+      "line": 354,
+      "phrase": "bloody period",
+      "definition": "bloody end"
+    },
+    {
+      "id": "othello_act5_scene2_gloss30",
+      "line": 247,
+      "phrase": "Willow, willow, willow",
+      "definition": "refrain of the willow song — Emilia dies singing it, returning the reader to 4.3"
+    },
+    {
+      "id": "othello_act5_scene2_gloss31",
+      "line": 258,
+      "phrase": "A weapon",
+      "definition": "he will not die disarmed"
+    },
+    {
+      "id": "othello_act5_scene2_gloss32",
+      "line": 252,
+      "phrase": "sword of Spain",
+      "definition": "a finely tempered Spanish blade — Toledo steel, the best in Europe"
+    },
+    {
+      "id": "othello_act5_scene2_gloss33",
+      "line": 252,
+      "phrase": "ice-brook’s temper",
+      "definition": "tempered (hardened) in an ice-cold stream — the superior steel-making of Spain"
+    },
+    {
+      "id": "othello_act5_scene2_gloss34",
+      "line": 263,
+      "phrase": "stop",
+      "definition": "put an end to; obstruct"
+    },
+    {
+      "id": "othello_act5_scene2_gloss35",
+      "line": 266,
+      "phrase": "butt",
+      "definition": "limit; boundary"
+    },
+    {
+      "id": "othello_act5_scene2_gloss36",
+      "line": 267,
+      "phrase": "sea-mark of my utmost sail",
+      "definition": "the buoy marking the end of my voyage; my journey's last horizon"
+    },
+    {
+      "id": "othello_act5_scene2_gloss37",
+      "line": 272,
+      "phrase": "compt",
+      "definition": "the great accounting; Judgment Day"
+    },
+    {
+      "id": "othello_act5_scene2_gloss38",
+      "line": 275,
+      "phrase": "cursed slave",
+      "definition": "damned wretch — Othello to himself"
+    },
+    {
+      "id": "othello_act5_scene2_gloss39",
+      "line": 278,
+      "phrase": "Blow me about in winds",
+      "definition": "scatter me on the winds — a Dantean punishment for the damned"
+    },
+    {
+      "id": "othello_act5_scene2_gloss40",
+      "line": 278,
+      "phrase": "roast me in sulphur",
+      "definition": "burn me in brimstone — hellfire"
+    },
+    {
+      "id": "othello_act5_scene2_gloss41",
+      "line": 279,
+      "phrase": "gulfs of liquid fire",
+      "definition": "lakes of molten fire — the classical and Christian hell"
+    },
+    {
+      "id": "othello_act5_scene2_gloss43",
+      "line": 300,
+      "phrase": "demi-devil",
+      "definition": "half-devil — the word Othello uses for Iago"
+    },
+    {
+      "id": "othello_act5_scene2_gloss44",
+      "line": 303,
+      "phrase": "From this time forth I never will speak word",
+      "definition": "Iago's final vow — his silence will outlast the play itself"
+    },
+    {
+      "id": "othello_act5_scene2_gloss46",
+      "line": 342,
+      "phrase": "loved not wisely but too well",
+      "definition": "Othello's self-summary — the tragedy's most famous line of confession"
+    },
+    {
+      "id": "othello_act5_scene2_gloss47",
+      "line": 343,
+      "phrase": "one not easily jealous",
+      "definition": "Othello insists his was not the jealous temperament he displayed — contestable"
+    },
+    {
+      "id": "othello_act5_scene2_gloss48",
+      "line": 345,
+      "phrase": "base Indian",
+      "definition": "the F1 reading is 'Judean' — the textual crux. 'Indian' fits a naïve native who throws away a gem; 'Judean' fits Judas casting away the pearl of salvation. Both readings are argued by editors"
+    },
+    {
+      "id": "othello_act5_scene2_gloss49",
+      "line": 345,
+      "phrase": "pearl",
+      "definition": "Desdemona; also, in the Judean reading, Christ ('the pearl of great price')"
+    },
+    {
+      "id": "othello_act5_scene2_gloss50",
+      "line": 348,
+      "phrase": "Arabian trees",
+      "definition": "myrrh- or frankincense-producing trees — their sap, the 'medicinal gum,' was valued"
+    },
+    {
+      "id": "othello_act5_scene2_gloss52",
+      "line": 346,
+      "phrase": "subdued eyes",
+      "definition": "eyes brought low; weeping"
+    },
+    {
+      "id": "othello_act5_scene2_gloss53",
+      "line": 350,
+      "phrase": "Aleppo",
+      "definition": "Syrian city under Ottoman rule"
+    },
+    {
+      "id": "othello_act5_scene2_gloss55",
+      "line": 353,
+      "phrase": "circumcised dog",
+      "definition": "Muslim — a slur Othello applies to himself at the moment of suicide"
+    },
+    {
+      "id": "othello_act5_scene2_gloss56",
+      "line": 359,
+      "phrase": "Spartan dog",
+      "definition": "Iago is likened to a Spartan hunting-dog, fierce and silent — Lodovico's parting epithet"
+    },
+    {
+      "id": "othello_act5_scene2_gloss57",
+      "line": 361,
+      "phrase": "tragic loading of this bed",
+      "definition": "the bed piled with tragic burden — the final stage picture of the play"
+    },
+    {
+      "id": "othello_act5_scene2_gloss58",
+      "line": 368,
+      "phrase": "Myself will straight aboard",
+      "definition": "I will embark immediately"
+    },
+    {
+      "id": "othello_act5_scene2_gloss59",
+      "line": 369,
+      "phrase": "this heavy act",
+      "definition": "this grievous deed"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "othello_act5_scene2_ann1",
+      "line_start": 1,
+      "line_end": 22,
+      "citation_display": "Othello 5.2.1–22",
+      "category": "thematic",
+      "title": "It is the cause: the monstrous deliberation",
+      "body": "Othello's opening soliloquy is Shakespeare's most self-conscious staging of a murder. The refrain — 'It is the cause, it is the cause, my soul' — substitutes the vocabulary of justice for the vocabulary of killing. Othello is not about to murder his wife; he is, in the language he gives himself, conducting a necessary judicial act on behalf of an abstract 'cause'.\n\nEvery image amplifies the self-deception. Desdemona is 'alabaster', a material for monuments rather than a living woman. The snuffed light becomes an emblem for a soul. Even the Promethean image — 'I know not where is that Promethean heat / That can thy light relume' — treats the body as a lamp to be refilled, not a woman to be unkilled. Shakespeare is giving us a mind that has to aestheticize its act in order to commit it. The moment her eyes open, the aesthetic will fail.",
+      "sources": [
+        "A. C. Bradley, *Shakespearean Tragedy* (1904)",
+        "Harold Bloom, *Shakespeare: The Invention of the Human* (1998)",
+        "Paul A. Kottman, *Tragic Conditions in Shakespeare* (2009)"
+      ]
+    },
+    {
+      "id": "othello_act5_scene2_ann2",
+      "line_start": 130,
+      "line_end": 230,
+      "citation_display": "Othello 5.2.130–230",
+      "category": "structural",
+      "title": "Emilia's recognition and the play's closing logic",
+      "body": "Emilia's slow realization — the handkerchief, the 'eternal villain', the husband she has served without question — is the play's pivot from tragedy to reckoning. Shakespeare gives her three stages. First incredulity: 'My husband say she was false?' Second assembly: the handkerchief she gave Iago, the slander he wove. Third refusal: 'I will not charm my tongue; I am bound to speak.' Each stage takes time; the audience is made to sit through the mechanism of comprehension.\n\nThis is Shakespeare's answer to the problem of moral recognition in tragedy. Lear can see Cordelia only after the kingdom has fallen; Emilia sees Iago only after Desdemona is dead. In both cases, recognition comes too late to save but not too late to matter. Emilia's insistence that her voice will not be silenced — even by her husband's sword — is the play's one clean moral victory.",
+      "sources": [
+        "Carol Thomas Neely, *Broken Nuptials in Shakespeare's Plays* (1985)",
+        "A. C. Bradley, *Shakespearean Tragedy* (1904)",
+        "Stephen Greenblatt, *Will in the World* (2004)"
+      ]
+    },
+    {
+      "id": "othello_act5_scene2_ann3",
+      "line_start": 336,
+      "line_end": 360,
+      "citation_display": "Othello 5.2.336–360",
+      "category": "textual",
+      "title": "Indian or Judean? The famous crux",
+      "body": "Othello's final speech contains one of the most celebrated textual cruces in Shakespeare. The 1622 Quarto prints 'the base Indian, threw a pearl away / Richer than all his tribe.' The 1623 First Folio prints 'the base Judean'. Editors have argued both for four centuries.\n\nThe 'Indian' reading fits a familiar early-modern trope: the naïve native who does not recognize the value of a gem and discards it for glass. The 'Judean' reading makes the pearl Christ ('the pearl of great price' in Matthew 13:46) and the agent Judas Iscariot — or possibly Herod, who killed his wife Mariamne. Either way, 'Judean' is heavier, more theological, more culturally specific.\n\nArden editors (M. R. Ridley in 1958, E. A. J. Honigmann in 1997) have favored 'Judean' on intrinsic grounds; many modern productions have retained 'Indian' to preserve the orientalist valence appropriate to Othello's self-inventory. The editorial choice matters: 'Indian' makes Othello's self-condemnation colonial and worldly; 'Judean' makes it biblical and damning. Shakespeare may have revised the word. Or the compositor may have misread. Either way, the reader of the play in 2026 is reading a word chosen by an editor.",
+      "sources": [
+        "M. R. Ridley (ed.), Arden 2 *Othello* (1958), note to 5.2.347",
+        "E. A. J. Honigmann (ed.), Arden 3 *Othello* (1997), Appendix 3",
+        "Richard Levin, 'The Indian/Judean Crux in *Othello*', *Shakespeare Quarterly* (1982)"
+      ]
+    },
+    {
+      "id": "othello_act5_scene2_ann4",
+      "line_start": 336,
+      "line_end": 360,
+      "citation_display": "Othello 5.2.336–360",
+      "category": "thematic",
+      "title": "One that loved not wisely but too well",
+      "body": "Othello's self-summary is also Shakespeare's most contested line. Is the verdict true? He was jealous — the play has shown us nothing else for two acts. He was not easily jealous — the play has shown us Iago worked on him steadily for hours. The speech labors to compose a posthumous character, exactly as the Senate speech composed a living one.\n\nThe doubleness is the point. Othello is dying, and Shakespeare is asking whether the self one dies into is the self one lived. The speech is a last piece of autobiography: the Aleppo anecdote, the turbaned Turk, the hand raised to strike. Othello dies killing the enemy of the state he served. He becomes, in his final gesture, the Venetian he spent his life being. Whether that gesture redeems the murder is a question Shakespeare leaves open.\n\nLodovico's verdict — 'O Spartan dog, / More fell than anguish, hunger, or the sea' — names Iago without naming Othello. The play closes with a refusal to issue a final moral judgment on its protagonist. That refusal is itself a judgment.",
+      "sources": [
+        "F. R. Leavis, 'Diabolic Intellect and the Noble Hero' (1937)",
+        "A. C. Bradley, *Shakespearean Tragedy* (1904)",
+        "Stanley Cavell, 'Othello and the Stake of the Other' (2003)",
+        "Paul A. Kottman, *Tragic Conditions in Shakespeare* (2009)"
+      ]
+    },
+    {
+      "id": "othello_act5_scene2_ann5",
+      "line_start": 360,
+      "line_end": 375,
+      "citation_display": "Othello 5.2.360–375",
+      "category": "structural",
+      "title": "The tragic loading of this bed",
+      "body": "The final stage picture — three bodies on the wedding bed, Desdemona between Othello and Emilia — is the play's most concentrated image. Lodovico calls it 'the tragic loading of this bed' and orders the curtains drawn. Shakespeare gives the audience a last tableau before withdrawing it, a compositional choice that makes the final act of the tragedy the act of not-looking.\n\nIago, alive, is taken offstage; Cassio becomes governor of Cyprus; the state reasserts itself. The tragedy has happened in a single room, the military plot is elsewhere, and the play ends with administration. This is Shakespeare's hardest ending: the world outside the bedchamber carries on. That ordinary continuation is the tragedy's most disturbing reverberation.",
+      "sources": [
+        "Harley Granville-Barker, *Prefaces to Shakespeare: Othello* (1946)",
+        "Philip Edwards, *Shakespeare and the Confines of Art* (1968)",
+        "Michael Neill, *Issues of Death* (1997)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "othello_act5_scene2_q1",
+      "kind": "close_reading",
+      "prompt": "Othello's opening refrain 'It is the cause, it is the cause, my soul' substitutes what kind of vocabulary for the vocabulary of murder?",
+      "options": [
+        "Medical terminology (as if performing surgery)",
+        "Judicial / abstract-justice language — as if conducting a necessary trial rather than killing his wife",
+        "Religious language of pilgrimage",
+        "Military command language"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 10
+    },
+    {
+      "id": "othello_act5_scene2_q2",
+      "kind": "inference",
+      "prompt": "Othello says he cannot find 'that Promethean heat that can thy light relume.' What does this admission reveal?",
+      "options": [
+        "He has studied Greek mythology in depth",
+        "He acknowledges that killing Desdemona is irreversible — he cannot restore the life he is about to take",
+        "He is preparing an offering to the gods",
+        "He is doubting the existence of the Greek pantheon"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 10,
+      "anchor_line_end": 15
+    },
+    {
+      "id": "othello_act5_scene2_q3",
+      "kind": "theme",
+      "prompt": "What finally makes Othello understand that Iago has deceived him?",
+      "options": [
+        "Cassio's confession under torture",
+        "Emilia's testimony about the handkerchief — that she took it and gave it to Iago",
+        "A letter found in Roderigo's pocket after his death",
+        "A vision sent by the ghost of Brabantio"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 210,
+      "anchor_line_end": 240
+    },
+    {
+      "id": "othello_act5_scene2_q4",
+      "kind": "structural",
+      "prompt": "Iago's final declaration — 'From this time forth I never will speak word' — is dramatically significant because:",
+      "options": [
+        "It closes a subplot about his vow of chastity",
+        "The play ends with its central villain refusing to explain himself, leaving his motive forever unaccounted for",
+        "It indicates he has taken a vow of silence for religious reasons",
+        "It is a translation of a standard Italian legal formula"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 332,
+      "anchor_line_end": 340
+    },
+    {
+      "id": "othello_act5_scene2_q5",
+      "kind": "close_reading",
+      "prompt": "Othello compares himself to 'the base Indian' who threw a pearl away. The Folio reads 'Judean' instead. What is at stake in this textual variant?",
+      "options": [
+        "Two editors made separate typos that readers can now correct",
+        "'Indian' suggests a naïve native discarding a gem; 'Judean' suggests Judas casting away Christ — the two readings give the speech different theological weight",
+        "Both words mean exactly the same thing in Elizabethan English",
+        "The Quarto is the Shakespeare and the Folio is a forgery"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 342,
+      "anchor_line_end": 350
+    },
+    {
+      "id": "othello_act5_scene2_q6",
+      "kind": "theme",
+      "prompt": "Othello ends his life by killing himself as 'a malignant and a turbaned Turk.' What symbolic act is he performing?",
+      "options": [
+        "A ritual conversion to Islam at the moment of death",
+        "Killing the enemy of the state he once defended — dying as a Venetian by executing the Turk he has internally become",
+        "A final insult directed at the Ottoman Empire",
+        "A traditional Venetian military suicide"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 348,
+      "anchor_line_end": 360
+    },
+    {
+      "id": "othello_act5_scene2_q7",
+      "kind": "inference",
+      "prompt": "Why does Shakespeare end the play with Cassio becoming governor and Lodovico ordering the bed curtains drawn?",
+      "options": [
+        "To show that justice has been fully restored in Cyprus",
+        "To demonstrate that the world outside the bedchamber resumes ordinary governance — the tragedy reverberates precisely because life continues",
+        "Because Cassio was the original protagonist",
+        "To set up a sequel play Shakespeare never wrote"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 360,
+      "anchor_line_end": 375
+    }
+  ]
+}

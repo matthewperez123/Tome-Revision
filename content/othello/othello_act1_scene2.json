@@ -1,0 +1,889 @@
+{
+  "section_id": "othello_act1_scene2",
+  "work_id": "othello",
+  "sequence": 2,
+  "act": 1,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "Another street",
+  "line_count": 116,
+  "word_count": 823,
+  "est_read_minutes": 4,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "IAGO",
+      "text": "Though in the trade of war I have slain men,"
+    },
+    {
+      "number": 2,
+      "speaker": "IAGO",
+      "text": "Yet do I hold it very stuff o’ the conscience"
+    },
+    {
+      "number": 3,
+      "speaker": "IAGO",
+      "text": "To do no contrived murder: I lack iniquity"
+    },
+    {
+      "number": 4,
+      "speaker": "IAGO",
+      "text": "Sometimes to do me service: nine or ten times"
+    },
+    {
+      "number": 5,
+      "speaker": "IAGO",
+      "text": "I had thought to have yerk’d him here under the ribs."
+    },
+    {
+      "number": 6,
+      "speaker": "OTHELLO",
+      "text": "’Tis better as it is."
+    },
+    {
+      "number": 6,
+      "speaker": "IAGO",
+      "text": "Nay, but he prated,"
+    },
+    {
+      "number": 7,
+      "speaker": "IAGO",
+      "text": "And spoke such scurvy and provoking terms"
+    },
+    {
+      "number": 8,
+      "speaker": "IAGO",
+      "text": "Against your honour"
+    },
+    {
+      "number": 9,
+      "speaker": "IAGO",
+      "text": "That, with the little godliness I have,"
+    },
+    {
+      "number": 10,
+      "speaker": "IAGO",
+      "text": "I did full hard forbear him. But, I pray you, sir,"
+    },
+    {
+      "number": 11,
+      "speaker": "IAGO",
+      "text": "Are you fast married? Be assured of this,"
+    },
+    {
+      "number": 12,
+      "speaker": "IAGO",
+      "text": "That the magnifico is much beloved,"
+    },
+    {
+      "number": 13,
+      "speaker": "IAGO",
+      "text": "And hath in his effect a voice potential"
+    },
+    {
+      "number": 14,
+      "speaker": "IAGO",
+      "text": "As double as the duke’s: he will divorce you;"
+    },
+    {
+      "number": 15,
+      "speaker": "IAGO",
+      "text": "Or put upon you what restraint and grievance"
+    },
+    {
+      "number": 16,
+      "speaker": "IAGO",
+      "text": "The law, with all his might to enforce it on,"
+    },
+    {
+      "number": 17,
+      "speaker": "IAGO",
+      "text": "Will give him cable."
+    },
+    {
+      "number": 17,
+      "speaker": "OTHELLO",
+      "text": "Let him do his spite:"
+    },
+    {
+      "number": 18,
+      "speaker": "OTHELLO",
+      "text": "My services which I have done the signiory"
+    },
+    {
+      "number": 19,
+      "speaker": "OTHELLO",
+      "text": "Shall out-tongue his complaints. ’Tis yet to know—"
+    },
+    {
+      "number": 20,
+      "speaker": "OTHELLO",
+      "text": "Which, when I know that boasting is an honour,"
+    },
+    {
+      "number": 21,
+      "speaker": "OTHELLO",
+      "text": "I shall promulgate—I fetch my life and being"
+    },
+    {
+      "number": 22,
+      "speaker": "OTHELLO",
+      "text": "From men of royal siege, and my demerits"
+    },
+    {
+      "number": 23,
+      "speaker": "OTHELLO",
+      "text": "May speak unbonneted to as proud a fortune"
+    },
+    {
+      "number": 24,
+      "speaker": "OTHELLO",
+      "text": "As this that I have reach’d: for know, Iago,"
+    },
+    {
+      "number": 25,
+      "speaker": "OTHELLO",
+      "text": "But that I love the gentle Desdemona,"
+    },
+    {
+      "number": 26,
+      "speaker": "OTHELLO",
+      "text": "I would not my unhoused free condition"
+    },
+    {
+      "number": 27,
+      "speaker": "OTHELLO",
+      "text": "Put into circumscription and confine"
+    },
+    {
+      "number": 28,
+      "speaker": "OTHELLO",
+      "text": "For the sea’s worth. But, look! what lights come yond?"
+    },
+    {
+      "number": 29,
+      "speaker": "IAGO",
+      "text": "Those are the raised father and his friends:"
+    },
+    {
+      "number": 30,
+      "speaker": "IAGO",
+      "text": "You were best go in."
+    },
+    {
+      "number": 30,
+      "speaker": "OTHELLO",
+      "text": "Not I I must be found:"
+    },
+    {
+      "number": 31,
+      "speaker": "OTHELLO",
+      "text": "My parts, my title and my perfect soul"
+    },
+    {
+      "number": 32,
+      "speaker": "OTHELLO",
+      "text": "Shall manifest me rightly. Is it they?"
+    },
+    {
+      "number": 33,
+      "speaker": "IAGO",
+      "text": "By Janus, I think no."
+    },
+    {
+      "number": 34,
+      "speaker": "OTHELLO",
+      "text": "The servants of the duke, and my lieutenant."
+    },
+    {
+      "number": 35,
+      "speaker": "OTHELLO",
+      "text": "The goodness of the night upon you, friends!"
+    },
+    {
+      "number": 36,
+      "speaker": "OTHELLO",
+      "text": "What is the news?"
+    },
+    {
+      "number": 36,
+      "speaker": "CASSIO",
+      "text": "The duke does greet you, general,"
+    },
+    {
+      "number": 37,
+      "speaker": "CASSIO",
+      "text": "And he requires your haste-post-haste appearance,"
+    },
+    {
+      "number": 38,
+      "speaker": "CASSIO",
+      "text": "Even on the instant."
+    },
+    {
+      "number": 38,
+      "speaker": "OTHELLO",
+      "text": "What is the matter, think you?"
+    },
+    {
+      "number": 39,
+      "speaker": "CASSIO",
+      "text": "Something from Cyprus as I may divine:"
+    },
+    {
+      "number": 40,
+      "speaker": "CASSIO",
+      "text": "It is a business of some heat: the galleys"
+    },
+    {
+      "number": 41,
+      "speaker": "CASSIO",
+      "text": "Have sent a dozen sequent messengers"
+    },
+    {
+      "number": 42,
+      "speaker": "CASSIO",
+      "text": "This very night at one another’s heels,"
+    },
+    {
+      "number": 43,
+      "speaker": "CASSIO",
+      "text": "And many of the consuls, raised and met,"
+    },
+    {
+      "number": 44,
+      "speaker": "CASSIO",
+      "text": "Are at the duke’s already: you have been hotly call’d for;"
+    },
+    {
+      "number": 45,
+      "speaker": "CASSIO",
+      "text": "When, being not at your lodging to be found,"
+    },
+    {
+      "number": 46,
+      "speaker": "CASSIO",
+      "text": "The senate hath sent about three several guests"
+    },
+    {
+      "number": 47,
+      "speaker": "CASSIO",
+      "text": "To search you out."
+    },
+    {
+      "number": 48,
+      "speaker": "OTHELLO",
+      "text": "’Tis well I am found by you."
+    },
+    {
+      "number": 49,
+      "speaker": "OTHELLO",
+      "text": "I will but spend a word here in the house,"
+    },
+    {
+      "number": 50,
+      "speaker": "OTHELLO",
+      "text": "And go with you."
+    },
+    {
+      "number": 50,
+      "speaker": "CASSIO",
+      "text": "Ancient, what makes he here?"
+    },
+    {
+      "number": 51,
+      "speaker": "IAGO",
+      "text": "’Faith, he to-night hath boarded a land carack:"
+    },
+    {
+      "number": 52,
+      "speaker": "IAGO",
+      "text": "If it prove lawful prize, he’s made for ever."
+    },
+    {
+      "number": 53,
+      "speaker": "CASSIO",
+      "text": "I do not understand."
+    },
+    {
+      "number": 53,
+      "speaker": "IAGO",
+      "text": "He’s married."
+    },
+    {
+      "number": 54,
+      "speaker": "CASSIO",
+      "text": "To who?"
+    },
+    {
+      "number": 54,
+      "speaker": "IAGO",
+      "text": "Marry, to—Come, captain, will you go?"
+    },
+    {
+      "number": 55,
+      "speaker": "OTHELLO",
+      "text": "Have with you."
+    },
+    {
+      "number": 56,
+      "speaker": "CASSIO",
+      "text": "Here comes another troop to seek for you."
+    },
+    {
+      "number": 57,
+      "speaker": "IAGO",
+      "text": "It is Brabantio. General, be advised;"
+    },
+    {
+      "number": 58,
+      "speaker": "IAGO",
+      "text": "He comes to bad intent."
+    },
+    {
+      "number": 58,
+      "speaker": "OTHELLO",
+      "text": "Holla! stand there!"
+    },
+    {
+      "number": 59,
+      "speaker": "RODERIGO",
+      "text": "Signior, it is the Moor."
+    },
+    {
+      "number": 60,
+      "speaker": "BRABANTIO",
+      "text": "Down with him, thief! They draw on both sides."
+    },
+    {
+      "number": 61,
+      "speaker": "IAGO",
+      "text": "You, Roderigo! come, sir, I am for you."
+    },
+    {
+      "number": 62,
+      "speaker": "OTHELLO",
+      "text": "Keep up your bright swords, for the dew will rust them."
+    },
+    {
+      "number": 63,
+      "speaker": "OTHELLO",
+      "text": "Good signior, you shall more command with years"
+    },
+    {
+      "number": 64,
+      "speaker": "OTHELLO",
+      "text": "Than with your weapons."
+    },
+    {
+      "number": 65,
+      "speaker": "BRABANTIO",
+      "text": "O thou foul thief, where hast thou stow’d my daughter?"
+    },
+    {
+      "number": 66,
+      "speaker": "BRABANTIO",
+      "text": "Damn’d as thou art, thou hast enchanted her;"
+    },
+    {
+      "number": 67,
+      "speaker": "BRABANTIO",
+      "text": "For I’ll refer me to all things of sense,"
+    },
+    {
+      "number": 68,
+      "speaker": "BRABANTIO",
+      "text": "If she in chains of magic were not bound,"
+    },
+    {
+      "number": 69,
+      "speaker": "BRABANTIO",
+      "text": "Whether a maid so tender, fair and happy,"
+    },
+    {
+      "number": 70,
+      "speaker": "BRABANTIO",
+      "text": "So opposite to marriage that she shunned"
+    },
+    {
+      "number": 71,
+      "speaker": "BRABANTIO",
+      "text": "The wealthy curled darlings of our nation,"
+    },
+    {
+      "number": 72,
+      "speaker": "BRABANTIO",
+      "text": "Would ever have, to incur a general mock,"
+    },
+    {
+      "number": 73,
+      "speaker": "BRABANTIO",
+      "text": "Run from her guardage to the sooty bosom"
+    },
+    {
+      "number": 74,
+      "speaker": "BRABANTIO",
+      "text": "Of such a thing as thou, to fear, not to delight."
+    },
+    {
+      "number": 75,
+      "speaker": "BRABANTIO",
+      "text": "Judge me the world, if ’tis not gross in sense"
+    },
+    {
+      "number": 76,
+      "speaker": "BRABANTIO",
+      "text": "That thou hast practised on her with foul charms,"
+    },
+    {
+      "number": 77,
+      "speaker": "BRABANTIO",
+      "text": "Abused her delicate youth with drugs or minerals"
+    },
+    {
+      "number": 78,
+      "speaker": "BRABANTIO",
+      "text": "That weaken motion: I’ll have’t disputed on;"
+    },
+    {
+      "number": 79,
+      "speaker": "BRABANTIO",
+      "text": "’Tis probable and palpable to thinking."
+    },
+    {
+      "number": 80,
+      "speaker": "BRABANTIO",
+      "text": "I therefore apprehend and do attach thee"
+    },
+    {
+      "number": 81,
+      "speaker": "BRABANTIO",
+      "text": "For an abuser of the world, a practiser"
+    },
+    {
+      "number": 82,
+      "speaker": "BRABANTIO",
+      "text": "Of arts inhibited and out of warrant."
+    },
+    {
+      "number": 83,
+      "speaker": "BRABANTIO",
+      "text": "Lay hold upon him: if he do resist,"
+    },
+    {
+      "number": 84,
+      "speaker": "BRABANTIO",
+      "text": "Subdue him at his peril."
+    },
+    {
+      "number": 84,
+      "speaker": "OTHELLO",
+      "text": "Hold your hands,"
+    },
+    {
+      "number": 85,
+      "speaker": "OTHELLO",
+      "text": "Both you of my inclining, and the rest:"
+    },
+    {
+      "number": 86,
+      "speaker": "OTHELLO",
+      "text": "Were it my cue to fight, I should have known it"
+    },
+    {
+      "number": 87,
+      "speaker": "OTHELLO",
+      "text": "Without a prompter. Where will you that I go"
+    },
+    {
+      "number": 88,
+      "speaker": "OTHELLO",
+      "text": "To answer this your charge?"
+    },
+    {
+      "number": 88,
+      "speaker": "BRABANTIO",
+      "text": "To prison, till fit time"
+    },
+    {
+      "number": 89,
+      "speaker": "BRABANTIO",
+      "text": "Of law and course of direct session"
+    },
+    {
+      "number": 90,
+      "speaker": "BRABANTIO",
+      "text": "Call thee to answer."
+    },
+    {
+      "number": 90,
+      "speaker": "OTHELLO",
+      "text": "What if I do obey?"
+    },
+    {
+      "number": 91,
+      "speaker": "OTHELLO",
+      "text": "How may the duke be therewith satisfied,"
+    },
+    {
+      "number": 92,
+      "speaker": "OTHELLO",
+      "text": "Whose messengers are here about my side,"
+    },
+    {
+      "number": 93,
+      "speaker": "OTHELLO",
+      "text": "Upon some present business of the state"
+    },
+    {
+      "number": 94,
+      "speaker": "OTHELLO",
+      "text": "To bring me to him?"
+    },
+    {
+      "number": 94,
+      "speaker": "FIRST OFFICER",
+      "text": "’Tis true, most worthy signior;"
+    },
+    {
+      "number": 95,
+      "speaker": "FIRST OFFICER",
+      "text": "The duke’s in council and your noble self,"
+    },
+    {
+      "number": 96,
+      "speaker": "FIRST OFFICER",
+      "text": "I am sure, is sent for."
+    },
+    {
+      "number": 96,
+      "speaker": "BRABANTIO",
+      "text": "How! the duke in council!"
+    },
+    {
+      "number": 97,
+      "speaker": "BRABANTIO",
+      "text": "In this time of the night! Bring him away:"
+    },
+    {
+      "number": 98,
+      "speaker": "BRABANTIO",
+      "text": "Mine’s not an idle cause: the duke himself,"
+    },
+    {
+      "number": 99,
+      "speaker": "BRABANTIO",
+      "text": "Or any of my brothers of the state,"
+    },
+    {
+      "number": 100,
+      "speaker": "BRABANTIO",
+      "text": "Cannot but feel this wrong as ’twere their own;"
+    },
+    {
+      "number": 101,
+      "speaker": "BRABANTIO",
+      "text": "For if such actions may have passage free,"
+    },
+    {
+      "number": 102,
+      "speaker": "BRABANTIO",
+      "text": "Bond-slaves and pagans shall our statesmen be."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Othello, Iago, and Attendants with torches."
+    },
+    {
+      "after_line": 33,
+      "text": "Enter Cassio, and certain Officers with torches."
+    },
+    {
+      "after_line": 50,
+      "text": "Exit."
+    },
+    {
+      "after_line": 54,
+      "text": "Reenter Othello."
+    },
+    {
+      "after_line": 58,
+      "text": "Enter Brabantio, Roderigo, and Officers with torches and weapons."
+    },
+    {
+      "after_line": 102,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "othello_act1_scene2_gloss1",
+      "line": 2,
+      "phrase": "stuff o’ the conscience",
+      "definition": "matter of conscience; an act that weighs on the soul"
+    },
+    {
+      "id": "othello_act1_scene2_gloss3",
+      "line": 7,
+      "phrase": "scurvy",
+      "definition": "vile; contemptible"
+    },
+    {
+      "id": "othello_act1_scene2_gloss4",
+      "line": 7,
+      "phrase": "provoking terms",
+      "definition": "insulting, inflammatory language"
+    },
+    {
+      "id": "othello_act1_scene2_gloss5",
+      "line": 12,
+      "phrase": "magnifico",
+      "definition": "a Venetian grandee; a great nobleman"
+    },
+    {
+      "id": "othello_act1_scene2_gloss6",
+      "line": 14,
+      "phrase": "the Duke",
+      "definition": "the Doge of Venice, head of the republic's government"
+    },
+    {
+      "id": "othello_act1_scene2_gloss7",
+      "line": 14,
+      "phrase": "double as",
+      "definition": "as influential as"
+    },
+    {
+      "id": "othello_act1_scene2_gloss8",
+      "line": 18,
+      "phrase": "signiory",
+      "definition": "the Venetian senate; the ruling council"
+    },
+    {
+      "id": "othello_act1_scene2_gloss9",
+      "line": 31,
+      "phrase": "parts",
+      "definition": "qualities; abilities"
+    },
+    {
+      "id": "othello_act1_scene2_gloss10",
+      "line": 31,
+      "phrase": "title",
+      "definition": "rightful claim or rank"
+    },
+    {
+      "id": "othello_act1_scene2_gloss11",
+      "line": 26,
+      "phrase": "unhoused",
+      "definition": "unconfined; not bound by domestic ties"
+    },
+    {
+      "id": "othello_act1_scene2_gloss12",
+      "line": 27,
+      "phrase": "circumscription and confine",
+      "definition": "restriction and limitation"
+    },
+    {
+      "id": "othello_act1_scene2_gloss13",
+      "line": 28,
+      "phrase": "the sea’s worth",
+      "definition": "more than all the wealth of the sea"
+    },
+    {
+      "id": "othello_act1_scene2_gloss14",
+      "line": 33,
+      "phrase": "Janus",
+      "definition": "the two-faced Roman god of doorways; Iago's chosen oath, fitting his duplicity"
+    },
+    {
+      "id": "othello_act1_scene2_gloss15",
+      "line": 40,
+      "phrase": "galleys",
+      "definition": "Venetian war-ships propelled by oars"
+    },
+    {
+      "id": "othello_act1_scene2_gloss16",
+      "line": 41,
+      "phrase": "sequent messengers",
+      "definition": "messengers arriving one after another"
+    },
+    {
+      "id": "othello_act1_scene2_gloss17",
+      "line": 43,
+      "phrase": "consuls",
+      "definition": "senior Venetian magistrates"
+    },
+    {
+      "id": "othello_act1_scene2_gloss18",
+      "line": 49,
+      "phrase": "spend a word",
+      "definition": "take a moment to speak; stop briefly"
+    },
+    {
+      "id": "othello_act1_scene2_gloss19",
+      "line": 51,
+      "phrase": "carack",
+      "definition": "a large armed merchant ship; here, a prize of war — Iago's crude image of Desdemona as plunder"
+    },
+    {
+      "id": "othello_act1_scene2_gloss20",
+      "line": 61,
+      "phrase": "Keep up your bright swords",
+      "definition": "sheathe your weapons; the dew will rust them"
+    },
+    {
+      "id": "othello_act1_scene2_gloss21",
+      "line": 62,
+      "phrase": "years",
+      "definition": "my age (thought to command respect)"
+    },
+    {
+      "id": "othello_act1_scene2_gloss23",
+      "line": 70,
+      "phrase": "wealthy curled darlings of our nation",
+      "definition": "rich, well-groomed young noblemen of Venice"
+    },
+    {
+      "id": "othello_act1_scene2_gloss24",
+      "line": 71,
+      "phrase": "general mock",
+      "definition": "public ridicule"
+    },
+    {
+      "id": "othello_act1_scene2_gloss27",
+      "line": 77,
+      "phrase": "motion",
+      "definition": "impulse; mental movement"
+    },
+    {
+      "id": "othello_act1_scene2_gloss28",
+      "line": 75,
+      "phrase": "foul charms",
+      "definition": "wicked spells"
+    },
+    {
+      "id": "othello_act1_scene2_gloss29",
+      "line": 80,
+      "phrase": "abuser of the world",
+      "definition": "deceiver; one who cheats mankind"
+    },
+    {
+      "id": "othello_act1_scene2_gloss31",
+      "line": 79,
+      "phrase": "attach",
+      "definition": "arrest; take into custody"
+    },
+    {
+      "id": "othello_act1_scene2_gloss32",
+      "line": 78,
+      "phrase": "palpable to thinking",
+      "definition": "plainly evident to any thinking person"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "othello_act1_scene2_ann1",
+      "line_start": 17,
+      "line_end": 35,
+      "citation_display": "Othello 1.2.17–35",
+      "category": "thematic",
+      "title": "Othello's first self-presentation",
+      "body": "Before Brabantio confronts him, Othello gives us the frame he prefers: royal lineage, services rendered to the signiory, a nature so composed that 'the sea's worth' would not bend it. He speaks of himself in the third person of public record. This is the Othello the state trusts — calm, professional, a civic asset.\n\nThe rest of the play is the erosion of this self-presentation. By 3.3 his syntax will fragment under Iago; by 4.1 he will strike his wife in public. Attending to how he speaks here makes the disintegration audible.",
+      "sources": [
+        "F. R. Leavis, 'Diabolic Intellect and the Noble Hero', *Scrutiny* (1937)",
+        "A. D. Nuttall, *Shakespeare the Thinker* (2007)"
+      ]
+    },
+    {
+      "id": "othello_act1_scene2_ann2",
+      "line_start": 72,
+      "line_end": 106,
+      "citation_display": "Othello 1.2.72–106",
+      "category": "historical",
+      "title": "Brabantio's suit and Venetian law on enchantment",
+      "body": "Brabantio accuses Othello of 'foul charms' and 'practiser of arts inhibited'. This is not a metaphor. Early-modern Venice had statutes against amatory magic; witchcraft trials used the same vocabulary Brabantio deploys — 'drugs', 'minerals that weakens motion', 'practice on her'. Brabantio is not being a fanciful father; he is alleging a specific class of crime for which a man could be tried.\n\nThe Duke's handling of the charge in 1.3 is Venetian justice at work: he hears evidence, permits the accused to speak, and dismisses the complaint when the state's military interest outweighs domestic grievance. The play is precise about institutions until it isn't.",
+      "sources": [
+        "Guido Ruggiero, *Binding Passions: Tales of Magic, Marriage, and Power at the End of the Renaissance* (1993)",
+        "John Drakakis (ed.), Arden 3 *Othello* (2016), notes to 1.2"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "othello_act1_scene2_q1",
+      "kind": "comprehension",
+      "prompt": "Why is Othello confident that his services to Venice will 'out-tongue' Brabantio's complaints?",
+      "options": [
+        "He has written testimonies from the Doge stored at home",
+        "His public service and royal lineage outweigh a private complaint",
+        "Brabantio has a reputation for exaggeration that the senate knows",
+        "He has already bribed several senators"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 17,
+      "anchor_line_end": 32
+    },
+    {
+      "id": "othello_act1_scene2_q2",
+      "kind": "inference",
+      "prompt": "What does Brabantio assume must have happened for Desdemona to marry Othello?",
+      "options": [
+        "Desdemona fell in love over time during ordinary courtship",
+        "Othello used drugs, charms, or witchcraft on her",
+        "Othello promised her wealth she could not obtain elsewhere",
+        "Desdemona was blackmailed into the match"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 72,
+      "anchor_line_end": 106
+    },
+    {
+      "id": "othello_act1_scene2_q3",
+      "kind": "close_reading",
+      "prompt": "Iago swears 'By Janus' (line 38). Why is this oath fitting?",
+      "options": [
+        "Janus was the god of war, suiting Iago's profession",
+        "Janus was two-faced, matching Iago's duplicity",
+        "Janus was the patron deity of Venice",
+        "Janus represented truth in Roman religion"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 35,
+      "anchor_line_end": 40
+    },
+    {
+      "id": "othello_act1_scene2_q4",
+      "kind": "theme",
+      "prompt": "How does Othello's conduct in this scene differ from Brabantio's?",
+      "options": [
+        "Othello is hot-tempered while Brabantio is calm and legal",
+        "Othello speaks with composed public authority while Brabantio erupts with private grievance",
+        "Othello uses magical rhetoric while Brabantio cites Venetian law",
+        "Both behave identically, framed by Shakespeare as mirror images"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 65,
+      "anchor_line_end": 106
+    },
+    {
+      "id": "othello_act1_scene2_q5",
+      "kind": "comprehension",
+      "prompt": "What news interrupts Brabantio's confrontation with Othello?",
+      "options": [
+        "The Turkish fleet has been sighted off Cyprus",
+        "Roderigo has been arrested for disturbing the peace",
+        "The Duke summons Othello urgently for war council",
+        "Desdemona has fled to a Franciscan convent"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 10,
+      "anchor_line_start": 40,
+      "anchor_line_end": 60
+    }
+  ]
+}

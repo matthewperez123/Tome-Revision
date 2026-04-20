@@ -1,0 +1,2666 @@
+{
+  "section_id": "othello_act1_scene3",
+  "work_id": "othello",
+  "sequence": 3,
+  "act": 1,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "A council-chamber",
+  "line_count": 409,
+  "word_count": 3207,
+  "est_read_minutes": 16,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "DUKE",
+      "text": "There is no composition in these news"
+    },
+    {
+      "number": 2,
+      "speaker": "DUKE",
+      "text": "That gives them credit."
+    },
+    {
+      "number": 2,
+      "speaker": "FIRST SENATOR",
+      "text": "Indeed, they are disproportion’d;"
+    },
+    {
+      "number": 3,
+      "speaker": "FIRST SENATOR",
+      "text": "My letters say a hundred and seven galleys."
+    },
+    {
+      "number": 4,
+      "speaker": "DUKE",
+      "text": "And mine, a hundred and forty."
+    },
+    {
+      "number": 4,
+      "speaker": "SECOND SENATOR",
+      "text": "And mine, two hundred:"
+    },
+    {
+      "number": 5,
+      "speaker": "SECOND SENATOR",
+      "text": "But though they jump not on a just account—"
+    },
+    {
+      "number": 6,
+      "speaker": "SECOND SENATOR",
+      "text": "As in these cases, where the aim reports,"
+    },
+    {
+      "number": 7,
+      "speaker": "SECOND SENATOR",
+      "text": "’Tis oft with difference—yet do they all confirm"
+    },
+    {
+      "number": 8,
+      "speaker": "SECOND SENATOR",
+      "text": "A Turkish fleet, and bearing up to Cyprus."
+    },
+    {
+      "number": 9,
+      "speaker": "DUKE",
+      "text": "Nay, it is possible enough to judgment:"
+    },
+    {
+      "number": 10,
+      "speaker": "DUKE",
+      "text": "I do not so secure me in the error,"
+    },
+    {
+      "number": 11,
+      "speaker": "DUKE",
+      "text": "But the main article I do approve"
+    },
+    {
+      "number": 12,
+      "speaker": "DUKE",
+      "text": "In fearful sense."
+    },
+    {
+      "number": 12,
+      "speaker": "SAILOR",
+      "text": "What, ho! what, ho! what, ho!"
+    },
+    {
+      "number": 13,
+      "speaker": "FIRST OFFICER",
+      "text": "A messenger from the galleys."
+    },
+    {
+      "number": 13,
+      "speaker": "DUKE",
+      "text": "Now, what’s the business?"
+    },
+    {
+      "number": 14,
+      "speaker": "SAILOR",
+      "text": "The Turkish preparation makes for Rhodes;"
+    },
+    {
+      "number": 15,
+      "speaker": "SAILOR",
+      "text": "So was I bid report here to the state"
+    },
+    {
+      "number": 16,
+      "speaker": "SAILOR",
+      "text": "By Signior Angelo."
+    },
+    {
+      "number": 16,
+      "speaker": "DUKE",
+      "text": "How say you by this change?"
+    },
+    {
+      "number": 17,
+      "speaker": "FIRST SENATOR",
+      "text": "This cannot be,"
+    },
+    {
+      "number": 18,
+      "speaker": "FIRST SENATOR",
+      "text": "By no assay of reason: ’tis a pageant,"
+    },
+    {
+      "number": 19,
+      "speaker": "FIRST SENATOR",
+      "text": "To keep us in false gaze. When we consider"
+    },
+    {
+      "number": 20,
+      "speaker": "FIRST SENATOR",
+      "text": "The importancy of Cyprus to the Turk,"
+    },
+    {
+      "number": 21,
+      "speaker": "FIRST SENATOR",
+      "text": "And let ourselves again but understand,"
+    },
+    {
+      "number": 22,
+      "speaker": "FIRST SENATOR",
+      "text": "That as it more concerns the Turk than Rhodes,"
+    },
+    {
+      "number": 23,
+      "speaker": "FIRST SENATOR",
+      "text": "So may he with more facile question bear it,"
+    },
+    {
+      "number": 24,
+      "speaker": "FIRST SENATOR",
+      "text": "For that it stands not in such warlike brace,"
+    },
+    {
+      "number": 25,
+      "speaker": "FIRST SENATOR",
+      "text": "But altogether lacks the abilities"
+    },
+    {
+      "number": 26,
+      "speaker": "FIRST SENATOR",
+      "text": "That Rhodes is dress’d in: if we make thought of this,"
+    },
+    {
+      "number": 27,
+      "speaker": "FIRST SENATOR",
+      "text": "We must not think the Turk is so unskilful"
+    },
+    {
+      "number": 28,
+      "speaker": "FIRST SENATOR",
+      "text": "To leave that latest which concerns him first,"
+    },
+    {
+      "number": 29,
+      "speaker": "FIRST SENATOR",
+      "text": "Neglecting an attempt of ease and gain,"
+    },
+    {
+      "number": 30,
+      "speaker": "FIRST SENATOR",
+      "text": "To wake and wage a danger profitless."
+    },
+    {
+      "number": 31,
+      "speaker": "DUKE",
+      "text": "Nay, in all confidence, he’s not for Rhodes."
+    },
+    {
+      "number": 32,
+      "speaker": "FIRST OFFICER",
+      "text": "Here is more news."
+    },
+    {
+      "number": 32,
+      "speaker": "MESSENGER",
+      "text": "The Ottomites, reverend and gracious,"
+    },
+    {
+      "number": 33,
+      "speaker": "MESSENGER",
+      "text": "Steering with due course towards the isle of Rhodes,"
+    },
+    {
+      "number": 34,
+      "speaker": "MESSENGER",
+      "text": "Have there injointed them with an after fleet."
+    },
+    {
+      "number": 35,
+      "speaker": "FIRST SENATOR",
+      "text": "Ay, so I thought. How many, as you guess?"
+    },
+    {
+      "number": 36,
+      "speaker": "MESSENGER",
+      "text": "Of thirty sail: and now they do restem"
+    },
+    {
+      "number": 37,
+      "speaker": "MESSENGER",
+      "text": "Their backward course, bearing with frank appearance"
+    },
+    {
+      "number": 38,
+      "speaker": "MESSENGER",
+      "text": "Their purposes toward Cyprus. Signior Montano,"
+    },
+    {
+      "number": 39,
+      "speaker": "MESSENGER",
+      "text": "Your trusty and most valiant servitor,"
+    },
+    {
+      "number": 40,
+      "speaker": "MESSENGER",
+      "text": "With his free duty recommends you thus,"
+    },
+    {
+      "number": 41,
+      "speaker": "MESSENGER",
+      "text": "And prays you to believe him."
+    },
+    {
+      "number": 41,
+      "speaker": "DUKE",
+      "text": "’Tis certain, then, for Cyprus."
+    },
+    {
+      "number": 42,
+      "speaker": "DUKE",
+      "text": "Marcus Luccicos, is not he in town?"
+    },
+    {
+      "number": 43,
+      "speaker": "FIRST SENATOR",
+      "text": "He’s now in Florence."
+    },
+    {
+      "number": 44,
+      "speaker": "DUKE",
+      "text": "Write from us to him; post-post-haste dispatch."
+    },
+    {
+      "number": 45,
+      "speaker": "FIRST SENATOR",
+      "text": "Here comes Brabantio and the valiant Moor."
+    },
+    {
+      "number": 46,
+      "speaker": "DUKE",
+      "text": "Valiant Othello, we must straight employ you"
+    },
+    {
+      "number": 47,
+      "speaker": "DUKE",
+      "text": "Against the general enemy Ottoman."
+    },
+    {
+      "number": 48,
+      "speaker": "DUKE",
+      "text": "To Brabantio. I did not see you; welcome, gentle signior;"
+    },
+    {
+      "number": 49,
+      "speaker": "DUKE",
+      "text": "We lack’d your counsel and your help tonight."
+    },
+    {
+      "number": 50,
+      "speaker": "BRABANTIO",
+      "text": "So did I yours. Good your grace, pardon me;"
+    },
+    {
+      "number": 51,
+      "speaker": "BRABANTIO",
+      "text": "Neither my place nor aught I heard of business"
+    },
+    {
+      "number": 52,
+      "speaker": "BRABANTIO",
+      "text": "Hath raised me from my bed, nor doth the general care"
+    },
+    {
+      "number": 53,
+      "speaker": "BRABANTIO",
+      "text": "Take hold on me, for my particular grief"
+    },
+    {
+      "number": 54,
+      "speaker": "BRABANTIO",
+      "text": "Is of so flood-gate and o’erbearing nature"
+    },
+    {
+      "number": 55,
+      "speaker": "BRABANTIO",
+      "text": "That it engluts and swallows other sorrows"
+    },
+    {
+      "number": 56,
+      "speaker": "BRABANTIO",
+      "text": "And it is still itself."
+    },
+    {
+      "number": 56,
+      "speaker": "DUKE",
+      "text": "Why, what’s the matter?"
+    },
+    {
+      "number": 57,
+      "speaker": "BRABANTIO",
+      "text": "My daughter! O, my daughter!"
+    },
+    {
+      "number": 57,
+      "speaker": "DUKE SENATOR",
+      "text": "Dead?"
+    },
+    {
+      "number": 58,
+      "speaker": "BRABANTIO",
+      "text": "Ay, to me;"
+    },
+    {
+      "number": 59,
+      "speaker": "BRABANTIO",
+      "text": "She is abused, stol’n from me, and corrupted"
+    },
+    {
+      "number": 60,
+      "speaker": "BRABANTIO",
+      "text": "By spells and medicines bought of mountebanks;"
+    },
+    {
+      "number": 61,
+      "speaker": "BRABANTIO",
+      "text": "For nature so preposterously to err,"
+    },
+    {
+      "number": 62,
+      "speaker": "BRABANTIO",
+      "text": "Being not deficient, blind, or lame of sense,"
+    },
+    {
+      "number": 63,
+      "speaker": "BRABANTIO",
+      "text": "Sans witchcraft could not."
+    },
+    {
+      "number": 64,
+      "speaker": "DUKE",
+      "text": "Whoe’er he be that in this foul proceeding"
+    },
+    {
+      "number": 65,
+      "speaker": "DUKE",
+      "text": "Hath thus beguiled your daughter of herself"
+    },
+    {
+      "number": 66,
+      "speaker": "DUKE",
+      "text": "And you of her, the bloody book of law"
+    },
+    {
+      "number": 67,
+      "speaker": "DUKE",
+      "text": "You shall yourself read in the bitter letter"
+    },
+    {
+      "number": 68,
+      "speaker": "DUKE",
+      "text": "After your own sense, yea, though our proper son"
+    },
+    {
+      "number": 69,
+      "speaker": "DUKE",
+      "text": "Stood in your action."
+    },
+    {
+      "number": 69,
+      "speaker": "BRABANTIO",
+      "text": "Humbly I thank your grace."
+    },
+    {
+      "number": 70,
+      "speaker": "BRABANTIO",
+      "text": "Here is the man, this Moor, whom now, it seems,"
+    },
+    {
+      "number": 71,
+      "speaker": "BRABANTIO",
+      "text": "Your special mandate for the state-affairs"
+    },
+    {
+      "number": 72,
+      "speaker": "BRABANTIO",
+      "text": "Hath hither brought."
+    },
+    {
+      "number": 72,
+      "speaker": "DUKE SENATOR",
+      "text": "We are very sorry for’t."
+    },
+    {
+      "number": 73,
+      "speaker": "DUKE",
+      "text": "To Othello. What, in your own part, can you say to this?"
+    },
+    {
+      "number": 74,
+      "speaker": "BRABANTIO",
+      "text": "Nothing, but this is so."
+    },
+    {
+      "number": 74,
+      "speaker": "OTHELLO",
+      "text": "Most potent, grave, and reverend signiors,"
+    },
+    {
+      "number": 75,
+      "speaker": "OTHELLO",
+      "text": "My very noble and approved good masters,"
+    },
+    {
+      "number": 76,
+      "speaker": "OTHELLO",
+      "text": "That I have ta’en away this old man’s daughter,"
+    },
+    {
+      "number": 77,
+      "speaker": "OTHELLO",
+      "text": "It is most true; true, I have married her:"
+    },
+    {
+      "number": 78,
+      "speaker": "OTHELLO",
+      "text": "The very head and front of my offending"
+    },
+    {
+      "number": 79,
+      "speaker": "OTHELLO",
+      "text": "Hath this extent, no more. Rude am I in my speech,"
+    },
+    {
+      "number": 80,
+      "speaker": "OTHELLO",
+      "text": "And little bless’d with the soft phrase of peace:"
+    },
+    {
+      "number": 81,
+      "speaker": "OTHELLO",
+      "text": "For since these arms of mine had seven years’ pith,"
+    },
+    {
+      "number": 82,
+      "speaker": "OTHELLO",
+      "text": "Till now some nine moons wasted, they have used"
+    },
+    {
+      "number": 83,
+      "speaker": "OTHELLO",
+      "text": "Their dearest action in the tented field,"
+    },
+    {
+      "number": 84,
+      "speaker": "OTHELLO",
+      "text": "And little of this great world can I speak,"
+    },
+    {
+      "number": 85,
+      "speaker": "OTHELLO",
+      "text": "More than pertains to feats of broil and battle,"
+    },
+    {
+      "number": 86,
+      "speaker": "OTHELLO",
+      "text": "And therefore little shall I grace my cause"
+    },
+    {
+      "number": 87,
+      "speaker": "OTHELLO",
+      "text": "In speaking for myself. Yet, by your gracious patience,"
+    },
+    {
+      "number": 88,
+      "speaker": "OTHELLO",
+      "text": "I will a round unvarnish’d tale deliver"
+    },
+    {
+      "number": 89,
+      "speaker": "OTHELLO",
+      "text": "Of my whole course of love; what drugs, what charms,"
+    },
+    {
+      "number": 90,
+      "speaker": "OTHELLO",
+      "text": "What conjuration and what mighty magic,"
+    },
+    {
+      "number": 91,
+      "speaker": "OTHELLO",
+      "text": "For such proceeding I am charged withal,"
+    },
+    {
+      "number": 92,
+      "speaker": "OTHELLO",
+      "text": "I won his daughter."
+    },
+    {
+      "number": 92,
+      "speaker": "BRABANTIO",
+      "text": "A maiden never bold;"
+    },
+    {
+      "number": 93,
+      "speaker": "BRABANTIO",
+      "text": "Of spirit so still and quiet, that her motion"
+    },
+    {
+      "number": 94,
+      "speaker": "BRABANTIO",
+      "text": "Blush’d at herself; and she, in spite of nature,"
+    },
+    {
+      "number": 95,
+      "speaker": "BRABANTIO",
+      "text": "Of years, of country, credit, every thing,"
+    },
+    {
+      "number": 96,
+      "speaker": "BRABANTIO",
+      "text": "To fall in love with what she fear’d to look on!"
+    },
+    {
+      "number": 97,
+      "speaker": "BRABANTIO",
+      "text": "It is a judgment maim’d and most imperfect"
+    },
+    {
+      "number": 98,
+      "speaker": "BRABANTIO",
+      "text": "That will confess perfection so could err"
+    },
+    {
+      "number": 99,
+      "speaker": "BRABANTIO",
+      "text": "Against all rules of nature, and must be driven"
+    },
+    {
+      "number": 100,
+      "speaker": "BRABANTIO",
+      "text": "To find out practises of cunning hell,"
+    },
+    {
+      "number": 101,
+      "speaker": "BRABANTIO",
+      "text": "Why this should be. I therefore vouch again"
+    },
+    {
+      "number": 102,
+      "speaker": "BRABANTIO",
+      "text": "That with some mixtures powerful o’er the blood,"
+    },
+    {
+      "number": 103,
+      "speaker": "BRABANTIO",
+      "text": "Or with some dram conjured to this effect,"
+    },
+    {
+      "number": 104,
+      "speaker": "BRABANTIO",
+      "text": "He wrought upon her."
+    },
+    {
+      "number": 104,
+      "speaker": "DUKE",
+      "text": "To vouch this, is no proof,"
+    },
+    {
+      "number": 105,
+      "speaker": "DUKE",
+      "text": "Without more wider and more overt test"
+    },
+    {
+      "number": 106,
+      "speaker": "DUKE",
+      "text": "Than these thin habits and poor likelihoods"
+    },
+    {
+      "number": 107,
+      "speaker": "DUKE",
+      "text": "Of modern seeming do prefer against him."
+    },
+    {
+      "number": 108,
+      "speaker": "FIRST SENATOR",
+      "text": "But, Othello, speak:"
+    },
+    {
+      "number": 109,
+      "speaker": "FIRST SENATOR",
+      "text": "Did you by indirect and forced courses"
+    },
+    {
+      "number": 110,
+      "speaker": "FIRST SENATOR",
+      "text": "Subdue and poison this young maid’s affections?"
+    },
+    {
+      "number": 111,
+      "speaker": "FIRST SENATOR",
+      "text": "Or came it by request and such fair question"
+    },
+    {
+      "number": 112,
+      "speaker": "FIRST SENATOR",
+      "text": "As soul to soul affordeth?"
+    },
+    {
+      "number": 112,
+      "speaker": "OTHELLO",
+      "text": "I do beseech you,"
+    },
+    {
+      "number": 113,
+      "speaker": "OTHELLO",
+      "text": "Send for the lady to the Sagittary,"
+    },
+    {
+      "number": 114,
+      "speaker": "OTHELLO",
+      "text": "And let her speak of me before her father:"
+    },
+    {
+      "number": 115,
+      "speaker": "OTHELLO",
+      "text": "If you do find me foul in her report,"
+    },
+    {
+      "number": 116,
+      "speaker": "OTHELLO",
+      "text": "The trust, the office I do hold of you,"
+    },
+    {
+      "number": 117,
+      "speaker": "OTHELLO",
+      "text": "Not only take away, but let your sentence"
+    },
+    {
+      "number": 118,
+      "speaker": "OTHELLO",
+      "text": "Even fall upon my life."
+    },
+    {
+      "number": 118,
+      "speaker": "DUKE",
+      "text": "Fetch Desdemona hither."
+    },
+    {
+      "number": 119,
+      "speaker": "OTHELLO",
+      "text": "Ancient, conduct them: you best know the place."
+    },
+    {
+      "number": 120,
+      "speaker": "OTHELLO",
+      "text": "And, till she come, as truly as to heaven"
+    },
+    {
+      "number": 121,
+      "speaker": "OTHELLO",
+      "text": "I do confess the vices of my blood,"
+    },
+    {
+      "number": 122,
+      "speaker": "OTHELLO",
+      "text": "So justly to your grave ears I’ll present"
+    },
+    {
+      "number": 123,
+      "speaker": "OTHELLO",
+      "text": "How I did thrive in this fair lady’s love,"
+    },
+    {
+      "number": 124,
+      "speaker": "OTHELLO",
+      "text": "And she in mine."
+    },
+    {
+      "number": 124,
+      "speaker": "DUKE",
+      "text": "Say it, Othello."
+    },
+    {
+      "number": 125,
+      "speaker": "OTHELLO",
+      "text": "Her father loved me; oft invited me;"
+    },
+    {
+      "number": 126,
+      "speaker": "OTHELLO",
+      "text": "Still question’d me the story of my life,"
+    },
+    {
+      "number": 127,
+      "speaker": "OTHELLO",
+      "text": "From year to year, the battles, sieges, fortunes,"
+    },
+    {
+      "number": 128,
+      "speaker": "OTHELLO",
+      "text": "That I have passed."
+    },
+    {
+      "number": 129,
+      "speaker": "OTHELLO",
+      "text": "I ran it through, even from my boyish days,"
+    },
+    {
+      "number": 130,
+      "speaker": "OTHELLO",
+      "text": "To the very moment that he bade me tell it;"
+    },
+    {
+      "number": 131,
+      "speaker": "OTHELLO",
+      "text": "Wherein I spake of most disastrous chances,"
+    },
+    {
+      "number": 132,
+      "speaker": "OTHELLO",
+      "text": "Of moving accidents by flood and field"
+    },
+    {
+      "number": 133,
+      "speaker": "OTHELLO",
+      "text": "Of hair-breadth scapes i’ the imminent deadly breach,"
+    },
+    {
+      "number": 134,
+      "speaker": "OTHELLO",
+      "text": "Of being taken by the insolent foe"
+    },
+    {
+      "number": 135,
+      "speaker": "OTHELLO",
+      "text": "And sold to slavery, of my redemption thence"
+    },
+    {
+      "number": 136,
+      "speaker": "OTHELLO",
+      "text": "And portance in my travels’ history:"
+    },
+    {
+      "number": 137,
+      "speaker": "OTHELLO",
+      "text": "Wherein of antres vast and deserts idle,"
+    },
+    {
+      "number": 138,
+      "speaker": "OTHELLO",
+      "text": "Rough quarries, rocks and hills whose heads touch heaven"
+    },
+    {
+      "number": 139,
+      "speaker": "OTHELLO",
+      "text": "It was my hint to speak—such was the process;"
+    },
+    {
+      "number": 140,
+      "speaker": "OTHELLO",
+      "text": "And of the Cannibals that each other eat,"
+    },
+    {
+      "number": 141,
+      "speaker": "OTHELLO",
+      "text": "The Anthropophagi and men whose heads"
+    },
+    {
+      "number": 142,
+      "speaker": "OTHELLO",
+      "text": "Do grow beneath their shoulders. This to hear"
+    },
+    {
+      "number": 143,
+      "speaker": "OTHELLO",
+      "text": "Would Desdemona seriously incline:"
+    },
+    {
+      "number": 144,
+      "speaker": "OTHELLO",
+      "text": "But still the house-affairs would draw her thence:"
+    },
+    {
+      "number": 145,
+      "speaker": "OTHELLO",
+      "text": "Which ever as she could with haste dispatch,"
+    },
+    {
+      "number": 146,
+      "speaker": "OTHELLO",
+      "text": "She’d come again, and with a greedy ear"
+    },
+    {
+      "number": 147,
+      "speaker": "OTHELLO",
+      "text": "Devour up my discourse: which I observing,"
+    },
+    {
+      "number": 148,
+      "speaker": "OTHELLO",
+      "text": "Took once a pliant hour, and found good means"
+    },
+    {
+      "number": 149,
+      "speaker": "OTHELLO",
+      "text": "To draw from her a prayer of earnest heart"
+    },
+    {
+      "number": 150,
+      "speaker": "OTHELLO",
+      "text": "That I would all my pilgrimage dilate,"
+    },
+    {
+      "number": 151,
+      "speaker": "OTHELLO",
+      "text": "Whereof by parcels she had something heard,"
+    },
+    {
+      "number": 152,
+      "speaker": "OTHELLO",
+      "text": "But not intentively: I did consent,"
+    },
+    {
+      "number": 153,
+      "speaker": "OTHELLO",
+      "text": "And often did beguile her of her tears,"
+    },
+    {
+      "number": 154,
+      "speaker": "OTHELLO",
+      "text": "When I did speak of some distressful stroke"
+    },
+    {
+      "number": 155,
+      "speaker": "OTHELLO",
+      "text": "That my youth suffer’d. My story being done,"
+    },
+    {
+      "number": 156,
+      "speaker": "OTHELLO",
+      "text": "She gave me for my pains a world of sighs:"
+    },
+    {
+      "number": 157,
+      "speaker": "OTHELLO",
+      "text": "She swore, in faith, ’twas strange, ’twas passing strange,"
+    },
+    {
+      "number": 158,
+      "speaker": "OTHELLO",
+      "text": "’Twas pitiful, ’twas wondrous pitiful:"
+    },
+    {
+      "number": 159,
+      "speaker": "OTHELLO",
+      "text": "She wish’d she had not heard it, yet she wish’d"
+    },
+    {
+      "number": 160,
+      "speaker": "OTHELLO",
+      "text": "That heaven had made her such a man: she thank’d me,"
+    },
+    {
+      "number": 161,
+      "speaker": "OTHELLO",
+      "text": "And bade me, if I had a friend that loved her,"
+    },
+    {
+      "number": 162,
+      "speaker": "OTHELLO",
+      "text": "I should but teach him how to tell my story."
+    },
+    {
+      "number": 163,
+      "speaker": "OTHELLO",
+      "text": "And that would woo her. Upon this hint I spake:"
+    },
+    {
+      "number": 164,
+      "speaker": "OTHELLO",
+      "text": "She loved me for the dangers I had pass’d,"
+    },
+    {
+      "number": 165,
+      "speaker": "OTHELLO",
+      "text": "And I loved her that she did pity them."
+    },
+    {
+      "number": 166,
+      "speaker": "OTHELLO",
+      "text": "This only is the witchcraft I have used:"
+    },
+    {
+      "number": 167,
+      "speaker": "OTHELLO",
+      "text": "Here comes the lady; let her witness it."
+    },
+    {
+      "number": 168,
+      "speaker": "DUKE",
+      "text": "I think this tale would win my daughter too."
+    },
+    {
+      "number": 169,
+      "speaker": "DUKE",
+      "text": "Good Brabantio,"
+    },
+    {
+      "number": 170,
+      "speaker": "DUKE",
+      "text": "Take up this mangled matter at the best:"
+    },
+    {
+      "number": 171,
+      "speaker": "DUKE",
+      "text": "Men do their broken weapons rather use"
+    },
+    {
+      "number": 172,
+      "speaker": "DUKE",
+      "text": "Than their bare hands."
+    },
+    {
+      "number": 172,
+      "speaker": "BRABANTIO",
+      "text": "I pray you, hear her speak:"
+    },
+    {
+      "number": 173,
+      "speaker": "BRABANTIO",
+      "text": "If she confess that she was half the wooer,"
+    },
+    {
+      "number": 174,
+      "speaker": "BRABANTIO",
+      "text": "Destruction on my head, if my bad blame"
+    },
+    {
+      "number": 175,
+      "speaker": "BRABANTIO",
+      "text": "Light on the man! Come hither, gentle mistress:"
+    },
+    {
+      "number": 176,
+      "speaker": "BRABANTIO",
+      "text": "Do you perceive in all this noble company"
+    },
+    {
+      "number": 177,
+      "speaker": "BRABANTIO",
+      "text": "Where most you owe obedience?"
+    },
+    {
+      "number": 177,
+      "speaker": "DESDEMONA",
+      "text": "My noble father,"
+    },
+    {
+      "number": 178,
+      "speaker": "DESDEMONA",
+      "text": "I do perceive here a divided duty:"
+    },
+    {
+      "number": 179,
+      "speaker": "DESDEMONA",
+      "text": "To you I am bound for life and education;"
+    },
+    {
+      "number": 180,
+      "speaker": "DESDEMONA",
+      "text": "My life and education both do learn me"
+    },
+    {
+      "number": 181,
+      "speaker": "DESDEMONA",
+      "text": "How to respect you; you are the lord of duty;"
+    },
+    {
+      "number": 182,
+      "speaker": "DESDEMONA",
+      "text": "I am hitherto your daughter: but here’s my husband,"
+    },
+    {
+      "number": 183,
+      "speaker": "DESDEMONA",
+      "text": "And so much duty as my mother show’d"
+    },
+    {
+      "number": 184,
+      "speaker": "DESDEMONA",
+      "text": "To you, preferring you before her father,"
+    },
+    {
+      "number": 185,
+      "speaker": "DESDEMONA",
+      "text": "So much I challenge that I may profess"
+    },
+    {
+      "number": 186,
+      "speaker": "DESDEMONA",
+      "text": "Due to the Moor my lord."
+    },
+    {
+      "number": 187,
+      "speaker": "BRABANTIO",
+      "text": "God be wi’ you! I have done."
+    },
+    {
+      "number": 188,
+      "speaker": "BRABANTIO",
+      "text": "Please it your grace, on to the state-affairs:"
+    },
+    {
+      "number": 189,
+      "speaker": "BRABANTIO",
+      "text": "I had rather to adopt a child than get it."
+    },
+    {
+      "number": 190,
+      "speaker": "BRABANTIO",
+      "text": "Come hither, Moor:"
+    },
+    {
+      "number": 191,
+      "speaker": "BRABANTIO",
+      "text": "I here do give thee that with all my heart"
+    },
+    {
+      "number": 192,
+      "speaker": "BRABANTIO",
+      "text": "Which, but thou hast already, with all my heart"
+    },
+    {
+      "number": 193,
+      "speaker": "BRABANTIO",
+      "text": "I would keep from thee. For your sake, jewel,"
+    },
+    {
+      "number": 194,
+      "speaker": "BRABANTIO",
+      "text": "I am glad at soul I have no other child:"
+    },
+    {
+      "number": 195,
+      "speaker": "BRABANTIO",
+      "text": "For thy escape would teach me tyranny,"
+    },
+    {
+      "number": 196,
+      "speaker": "BRABANTIO",
+      "text": "To hang clogs on them. I have done, my lord."
+    },
+    {
+      "number": 197,
+      "speaker": "DUKE",
+      "text": "Let me speak like yourself, and lay a sentence,"
+    },
+    {
+      "number": 198,
+      "speaker": "DUKE",
+      "text": "Which, as a grise or step, may help these lovers"
+    },
+    {
+      "number": 199,
+      "speaker": "DUKE",
+      "text": "Into your favour."
+    },
+    {
+      "number": 200,
+      "speaker": "DUKE",
+      "text": "When remedies are past, the griefs are ended"
+    },
+    {
+      "number": 201,
+      "speaker": "DUKE",
+      "text": "By seeing the worst, which late on hopes depended."
+    },
+    {
+      "number": 202,
+      "speaker": "DUKE",
+      "text": "To mourn a mischief that is past and gone"
+    },
+    {
+      "number": 203,
+      "speaker": "DUKE",
+      "text": "Is the next way to draw new mischief on."
+    },
+    {
+      "number": 204,
+      "speaker": "DUKE",
+      "text": "What cannot be preserved when fortune takes"
+    },
+    {
+      "number": 205,
+      "speaker": "DUKE",
+      "text": "Patience her injury a mockery makes."
+    },
+    {
+      "number": 206,
+      "speaker": "DUKE",
+      "text": "The robb’d that smiles steals something from the thief;"
+    },
+    {
+      "number": 207,
+      "speaker": "DUKE",
+      "text": "He robs himself that spends a bootless grief."
+    },
+    {
+      "number": 208,
+      "speaker": "BRABANTIO",
+      "text": "So let the Turk of Cyprus us beguile;"
+    },
+    {
+      "number": 209,
+      "speaker": "BRABANTIO",
+      "text": "We lose it not, so long as we can smile."
+    },
+    {
+      "number": 210,
+      "speaker": "BRABANTIO",
+      "text": "He bears the sentence well that nothing bears"
+    },
+    {
+      "number": 211,
+      "speaker": "BRABANTIO",
+      "text": "But the free comfort which from thence he hears,"
+    },
+    {
+      "number": 212,
+      "speaker": "BRABANTIO",
+      "text": "But he bears both the sentence and the sorrow"
+    },
+    {
+      "number": 213,
+      "speaker": "BRABANTIO",
+      "text": "That, to pay grief, must of poor patience borrow."
+    },
+    {
+      "number": 214,
+      "speaker": "BRABANTIO",
+      "text": "These sentences, to sugar, or to gall,"
+    },
+    {
+      "number": 215,
+      "speaker": "BRABANTIO",
+      "text": "Being strong on both sides, are equivocal:"
+    },
+    {
+      "number": 216,
+      "speaker": "BRABANTIO",
+      "text": "But words are words; I never yet did hear"
+    },
+    {
+      "number": 217,
+      "speaker": "BRABANTIO",
+      "text": "That the bruised heart was pierced through the ear."
+    },
+    {
+      "number": 218,
+      "speaker": "BRABANTIO",
+      "text": "I humbly beseech you, proceed to the affairs of state."
+    },
+    {
+      "number": 219,
+      "speaker": "DUKE",
+      "text": "The Turk with a most mighty preparation makes for Cyprus. Othello, the"
+    },
+    {
+      "number": 220,
+      "speaker": "DUKE",
+      "text": "fortitude of the place is best known to you; and though we"
+    },
+    {
+      "number": 221,
+      "speaker": "DUKE",
+      "text": "have there a substitute of most allowed sufficiency, yet opinion, a sovereign"
+    },
+    {
+      "number": 222,
+      "speaker": "DUKE",
+      "text": "mistress of effects, throws a more safer voice on you: you must"
+    },
+    {
+      "number": 223,
+      "speaker": "DUKE",
+      "text": "therefore be content to slubber the gloss of your new fortunes with"
+    },
+    {
+      "number": 224,
+      "speaker": "DUKE",
+      "text": "this more stubborn and boisterous expedition."
+    },
+    {
+      "number": 224,
+      "speaker": "OTHELLO",
+      "text": "The tyrant custom, most grave senators,"
+    },
+    {
+      "number": 225,
+      "speaker": "OTHELLO",
+      "text": "Hath made the flinty and steel couch of war"
+    },
+    {
+      "number": 226,
+      "speaker": "OTHELLO",
+      "text": "My thrice-driven bed of down: I do agnise"
+    },
+    {
+      "number": 227,
+      "speaker": "OTHELLO",
+      "text": "A natural and prompt alacrity"
+    },
+    {
+      "number": 228,
+      "speaker": "OTHELLO",
+      "text": "I find in hardness, and do undertake"
+    },
+    {
+      "number": 229,
+      "speaker": "OTHELLO",
+      "text": "These present wars against the Ottomites."
+    },
+    {
+      "number": 230,
+      "speaker": "OTHELLO",
+      "text": "Most humbly therefore bending to your state,"
+    },
+    {
+      "number": 231,
+      "speaker": "OTHELLO",
+      "text": "I crave fit disposition for my wife."
+    },
+    {
+      "number": 232,
+      "speaker": "OTHELLO",
+      "text": "Due reference of place and exhibition,"
+    },
+    {
+      "number": 233,
+      "speaker": "OTHELLO",
+      "text": "With such accommodation and besort"
+    },
+    {
+      "number": 234,
+      "speaker": "OTHELLO",
+      "text": "As levels with her breeding."
+    },
+    {
+      "number": 234,
+      "speaker": "DUKE",
+      "text": "If you please,"
+    },
+    {
+      "number": 235,
+      "speaker": "DUKE",
+      "text": "Be’t at her father’s."
+    },
+    {
+      "number": 235,
+      "speaker": "BRABANTIO",
+      "text": "I’ll not have it so."
+    },
+    {
+      "number": 236,
+      "speaker": "OTHELLO",
+      "text": "Nor I."
+    },
+    {
+      "number": 237,
+      "speaker": "DESDEMONA",
+      "text": "Nor I; I would not there reside,"
+    },
+    {
+      "number": 238,
+      "speaker": "DESDEMONA",
+      "text": "To put my father in impatient thoughts"
+    },
+    {
+      "number": 239,
+      "speaker": "DESDEMONA",
+      "text": "By being in his eye. Most gracious duke,"
+    },
+    {
+      "number": 240,
+      "speaker": "DESDEMONA",
+      "text": "To my unfolding lend your prosperous ear;"
+    },
+    {
+      "number": 241,
+      "speaker": "DESDEMONA",
+      "text": "And let me find a charter in your voice,"
+    },
+    {
+      "number": 242,
+      "speaker": "DESDEMONA",
+      "text": "To assist my simpleness."
+    },
+    {
+      "number": 242,
+      "speaker": "DUKE",
+      "text": "What would you, Desdemona?"
+    },
+    {
+      "number": 243,
+      "speaker": "DESDEMONA",
+      "text": "That I did love the Moor to live with him,"
+    },
+    {
+      "number": 244,
+      "speaker": "DESDEMONA",
+      "text": "My downright violence and storm of fortunes"
+    },
+    {
+      "number": 245,
+      "speaker": "DESDEMONA",
+      "text": "May trumpet to the world: my heart’s subdued"
+    },
+    {
+      "number": 246,
+      "speaker": "DESDEMONA",
+      "text": "Even to the very quality of my lord:"
+    },
+    {
+      "number": 247,
+      "speaker": "DESDEMONA",
+      "text": "I saw Othello’s visage in his mind,"
+    },
+    {
+      "number": 248,
+      "speaker": "DESDEMONA",
+      "text": "And to his honour and his valiant parts"
+    },
+    {
+      "number": 249,
+      "speaker": "DESDEMONA",
+      "text": "Did I my soul and fortunes consecrate."
+    },
+    {
+      "number": 250,
+      "speaker": "DESDEMONA",
+      "text": "So that, dear lords, if I be left behind,"
+    },
+    {
+      "number": 251,
+      "speaker": "DESDEMONA",
+      "text": "A moth of peace, and he go to the war,"
+    },
+    {
+      "number": 252,
+      "speaker": "DESDEMONA",
+      "text": "The rites for which I love him are bereft me,"
+    },
+    {
+      "number": 253,
+      "speaker": "DESDEMONA",
+      "text": "And I a heavy interim shall support"
+    },
+    {
+      "number": 254,
+      "speaker": "DESDEMONA",
+      "text": "By his dear absence. Let me go with him."
+    },
+    {
+      "number": 255,
+      "speaker": "OTHELLO",
+      "text": "Let her have your voices."
+    },
+    {
+      "number": 256,
+      "speaker": "OTHELLO",
+      "text": "Vouch with me, heaven, I therefore beg it not,"
+    },
+    {
+      "number": 257,
+      "speaker": "OTHELLO",
+      "text": "To please the palate of my appetite,"
+    },
+    {
+      "number": 258,
+      "speaker": "OTHELLO",
+      "text": "Nor to comply with heat—the young affects"
+    },
+    {
+      "number": 259,
+      "speaker": "OTHELLO",
+      "text": "In me defunct—and proper satisfaction."
+    },
+    {
+      "number": 260,
+      "speaker": "OTHELLO",
+      "text": "But to be free and bounteous to her mind:"
+    },
+    {
+      "number": 261,
+      "speaker": "OTHELLO",
+      "text": "And heaven defend your good souls, that you think"
+    },
+    {
+      "number": 262,
+      "speaker": "OTHELLO",
+      "text": "I will your serious and great business scant"
+    },
+    {
+      "number": 263,
+      "speaker": "OTHELLO",
+      "text": "For she is with me: no, when light-wing’d toys"
+    },
+    {
+      "number": 264,
+      "speaker": "OTHELLO",
+      "text": "Of feather’d Cupid seal with wanton dullness"
+    },
+    {
+      "number": 265,
+      "speaker": "OTHELLO",
+      "text": "My speculative and officed instruments,"
+    },
+    {
+      "number": 266,
+      "speaker": "OTHELLO",
+      "text": "That my disports corrupt and taint my business,"
+    },
+    {
+      "number": 267,
+      "speaker": "OTHELLO",
+      "text": "Let housewives make a skillet of my helm,"
+    },
+    {
+      "number": 268,
+      "speaker": "OTHELLO",
+      "text": "And all indign and base adversities"
+    },
+    {
+      "number": 269,
+      "speaker": "OTHELLO",
+      "text": "Make head against my estimation!"
+    },
+    {
+      "number": 270,
+      "speaker": "DUKE",
+      "text": "Be it as you shall privately determine,"
+    },
+    {
+      "number": 271,
+      "speaker": "DUKE",
+      "text": "Either for her stay or going: the affair cries haste,"
+    },
+    {
+      "number": 272,
+      "speaker": "DUKE",
+      "text": "And speed must answer it."
+    },
+    {
+      "number": 272,
+      "speaker": "FIRST SENATOR",
+      "text": "You must away to-night."
+    },
+    {
+      "number": 273,
+      "speaker": "OTHELLO",
+      "text": "With all my heart."
+    },
+    {
+      "number": 274,
+      "speaker": "DUKE",
+      "text": "At nine i’ the morning here we’ll meet again."
+    },
+    {
+      "number": 275,
+      "speaker": "DUKE",
+      "text": "Othello, leave some officer behind,"
+    },
+    {
+      "number": 276,
+      "speaker": "DUKE",
+      "text": "And he shall our commission bring to you;"
+    },
+    {
+      "number": 277,
+      "speaker": "DUKE",
+      "text": "With such things else of quality and respect"
+    },
+    {
+      "number": 278,
+      "speaker": "DUKE",
+      "text": "As doth import you."
+    },
+    {
+      "number": 278,
+      "speaker": "OTHELLO",
+      "text": "So please your grace, my ancient;"
+    },
+    {
+      "number": 279,
+      "speaker": "OTHELLO",
+      "text": "A man he is of honest and trust:"
+    },
+    {
+      "number": 280,
+      "speaker": "OTHELLO",
+      "text": "To his conveyance I assign my wife,"
+    },
+    {
+      "number": 281,
+      "speaker": "OTHELLO",
+      "text": "With what else needful your good grace shall think"
+    },
+    {
+      "number": 282,
+      "speaker": "OTHELLO",
+      "text": "To be sent after me."
+    },
+    {
+      "number": 282,
+      "speaker": "DUKE",
+      "text": "Let it be so."
+    },
+    {
+      "number": 283,
+      "speaker": "DUKE",
+      "text": "Good night to every one. To Brabantio."
+    },
+    {
+      "number": 284,
+      "speaker": "DUKE",
+      "text": "And, noble signior,"
+    },
+    {
+      "number": 285,
+      "speaker": "DUKE",
+      "text": "If virtue no delighted beauty lack,"
+    },
+    {
+      "number": 286,
+      "speaker": "DUKE",
+      "text": "Your son-in-law is far more fair than black."
+    },
+    {
+      "number": 287,
+      "speaker": "FIRST SENATOR",
+      "text": "Adieu, brave Moor, use Desdemona well."
+    },
+    {
+      "number": 288,
+      "speaker": "BRABANTIO",
+      "text": "Look to her, Moor, if thou hast eyes to see:"
+    },
+    {
+      "number": 289,
+      "speaker": "BRABANTIO",
+      "text": "She has deceived her father, and may thee."
+    },
+    {
+      "number": 290,
+      "speaker": "OTHELLO",
+      "text": "My life upon her faith! Honest Iago,"
+    },
+    {
+      "number": 291,
+      "speaker": "OTHELLO",
+      "text": "My Desdemona must I leave to thee:"
+    },
+    {
+      "number": 292,
+      "speaker": "OTHELLO",
+      "text": "I prithee, let thy wife attend on her:"
+    },
+    {
+      "number": 293,
+      "speaker": "OTHELLO",
+      "text": "And bring them after in the best advantage."
+    },
+    {
+      "number": 294,
+      "speaker": "OTHELLO",
+      "text": "Come, Desdemona: I have but an hour"
+    },
+    {
+      "number": 295,
+      "speaker": "OTHELLO",
+      "text": "Of love, of worldly matters and direction,"
+    },
+    {
+      "number": 296,
+      "speaker": "OTHELLO",
+      "text": "To spend with thee: we must obey the time."
+    },
+    {
+      "number": 297,
+      "speaker": "RODERIGO",
+      "text": "Iago—"
+    },
+    {
+      "number": 297,
+      "speaker": "IAGO",
+      "text": "What say’st thou, noble heart?"
+    },
+    {
+      "number": 298,
+      "speaker": "RODERIGO",
+      "text": "What will I do, thinkest thou?"
+    },
+    {
+      "number": 298,
+      "speaker": "IAGO",
+      "text": "Why, go to bed, and sleep."
+    },
+    {
+      "number": 299,
+      "speaker": "RODERIGO",
+      "text": "I will incontinently drown myself."
+    },
+    {
+      "number": 300,
+      "speaker": "IAGO",
+      "text": "If thou dost, I shall never love thee after. Why, thou silly gentleman!"
+    },
+    {
+      "number": 301,
+      "speaker": "RODERIGO",
+      "text": "It is silliness to live when to live is torment; and then"
+    },
+    {
+      "number": 302,
+      "speaker": "RODERIGO",
+      "text": "have we a prescription to die when death is our physician."
+    },
+    {
+      "number": 303,
+      "speaker": "IAGO",
+      "text": "O villainous! I have looked upon the world for four times seven"
+    },
+    {
+      "number": 304,
+      "speaker": "IAGO",
+      "text": "years; and since I could distinguish betwixt a benefit and an injury,"
+    },
+    {
+      "number": 305,
+      "speaker": "IAGO",
+      "text": "I never found man that knew how to love himself. Ere I"
+    },
+    {
+      "number": 306,
+      "speaker": "IAGO",
+      "text": "would say, I would drown myself for the love of a guinea-hen,"
+    },
+    {
+      "number": 307,
+      "speaker": "IAGO",
+      "text": "I would change my humanity with a baboon."
+    },
+    {
+      "number": 308,
+      "speaker": "RODERIGO",
+      "text": "What should I do? I confess it is my shame to be"
+    },
+    {
+      "number": 309,
+      "speaker": "RODERIGO",
+      "text": "so fond; but it is not in my virtue to amend it."
+    },
+    {
+      "number": 310,
+      "speaker": "IAGO",
+      "text": "Virtue! a fig! ’tis in ourselves that we are thus or thus."
+    },
+    {
+      "number": 311,
+      "speaker": "IAGO",
+      "text": "Our bodies are our gardens, to the which our wills are gardeners:"
+    },
+    {
+      "number": 312,
+      "speaker": "IAGO",
+      "text": "so that if we will plant nettles, or sow lettuce, set hyssop"
+    },
+    {
+      "number": 313,
+      "speaker": "IAGO",
+      "text": "and weed up thyme, supply it with one gender of herbs, or"
+    },
+    {
+      "number": 314,
+      "speaker": "IAGO",
+      "text": "distract it with many, either to have it sterile with idleness, or"
+    },
+    {
+      "number": 315,
+      "speaker": "IAGO",
+      "text": "manured with industry, why, the power and corrigible authority of this lies"
+    },
+    {
+      "number": 316,
+      "speaker": "IAGO",
+      "text": "in our wills. If the balance of our lives had not one"
+    },
+    {
+      "number": 317,
+      "speaker": "IAGO",
+      "text": "scale of reason to poise another of sensuality, the blood and baseness"
+    },
+    {
+      "number": 318,
+      "speaker": "IAGO",
+      "text": "of our natures would conduct us to most preposterous conclusions: but we"
+    },
+    {
+      "number": 319,
+      "speaker": "IAGO",
+      "text": "have reason to cool our raging motions, our carnal stings, our unbitted"
+    },
+    {
+      "number": 320,
+      "speaker": "IAGO",
+      "text": "lusts, whereof I take this that you call love to be a"
+    },
+    {
+      "number": 321,
+      "speaker": "IAGO",
+      "text": "sect or scion."
+    },
+    {
+      "number": 321,
+      "speaker": "RODERIGO",
+      "text": "It cannot be."
+    },
+    {
+      "number": 322,
+      "speaker": "IAGO",
+      "text": "It is merely a lust of the blood and a permission of"
+    },
+    {
+      "number": 323,
+      "speaker": "IAGO",
+      "text": "the will. Come, be a man. Drown thyself! drown cats and blind"
+    },
+    {
+      "number": 324,
+      "speaker": "IAGO",
+      "text": "puppies. I have professed me thy friend and I confess me knit"
+    },
+    {
+      "number": 325,
+      "speaker": "IAGO",
+      "text": "to thy deserving with cables of perdurable toughness; I could never better"
+    },
+    {
+      "number": 326,
+      "speaker": "IAGO",
+      "text": "stead thee than now. Put money in thy purse; follow thou the"
+    },
+    {
+      "number": 327,
+      "speaker": "IAGO",
+      "text": "wars; defeat thy favour with an usurped beard; I say, put money"
+    },
+    {
+      "number": 328,
+      "speaker": "IAGO",
+      "text": "in thy purse. It cannot be that Desdemona should long continue her"
+    },
+    {
+      "number": 329,
+      "speaker": "IAGO",
+      "text": "love to the Moor—put money in thy purse—nor he his to her:"
+    },
+    {
+      "number": 330,
+      "speaker": "IAGO",
+      "text": "it was a violent commencement, and thou shalt see an answerable sequestration:—put"
+    },
+    {
+      "number": 331,
+      "speaker": "IAGO",
+      "text": "but money in thy purse. These Moors are changeable in their wills:"
+    },
+    {
+      "number": 332,
+      "speaker": "IAGO",
+      "text": "fill thy purse with money:—the food that to him now is as"
+    },
+    {
+      "number": 333,
+      "speaker": "IAGO",
+      "text": "luscious as locusts, shall be to him shortly as bitter as coloquintida."
+    },
+    {
+      "number": 334,
+      "speaker": "IAGO",
+      "text": "She must change for youth: when she is sated with his body,"
+    },
+    {
+      "number": 335,
+      "speaker": "IAGO",
+      "text": "she will find the error of her choice: she must have change,"
+    },
+    {
+      "number": 336,
+      "speaker": "IAGO",
+      "text": "she must: therefore put money in thy purse. If thou wilt needs"
+    },
+    {
+      "number": 337,
+      "speaker": "IAGO",
+      "text": "damn thyself, do it a more delicate way than drowning. Make all"
+    },
+    {
+      "number": 338,
+      "speaker": "IAGO",
+      "text": "the money thou canst: if sanctimony and a frail vow betwixt an"
+    },
+    {
+      "number": 339,
+      "speaker": "IAGO",
+      "text": "erring barbarian and a supersubtle Venetian not too hard for my wits"
+    },
+    {
+      "number": 340,
+      "speaker": "IAGO",
+      "text": "and all the tribe of hell, thou shalt enjoy her; therefore make"
+    },
+    {
+      "number": 341,
+      "speaker": "IAGO",
+      "text": "money. A pox of drowning thyself! it is clean out of the"
+    },
+    {
+      "number": 342,
+      "speaker": "IAGO",
+      "text": "way: seek thou rather to be hanged in compassing thy joy than"
+    },
+    {
+      "number": 343,
+      "speaker": "IAGO",
+      "text": "to be drowned and go without her."
+    },
+    {
+      "number": 344,
+      "speaker": "RODERIGO",
+      "text": "Wilt thou be fast to my hopes, if I depend on the issue?"
+    },
+    {
+      "number": 345,
+      "speaker": "IAGO",
+      "text": "Thou art sure of me:—go, make money:—I have told thee often, and"
+    },
+    {
+      "number": 346,
+      "speaker": "IAGO",
+      "text": "I re-tell thee again and again, I hate the Moor: my cause"
+    },
+    {
+      "number": 347,
+      "speaker": "IAGO",
+      "text": "is hearted; thine hath no less reason. Let us be conjunctive in"
+    },
+    {
+      "number": 348,
+      "speaker": "IAGO",
+      "text": "our revenge against him: if thou canst cuckold him, thou dost thyself"
+    },
+    {
+      "number": 349,
+      "speaker": "IAGO",
+      "text": "a pleasure, me a sport. There are many events in the womb"
+    },
+    {
+      "number": 350,
+      "speaker": "IAGO",
+      "text": "of time which will be delivered. Traverse! go, provide thy money. We"
+    },
+    {
+      "number": 351,
+      "speaker": "IAGO",
+      "text": "will have more of this to-morrow. Adieu."
+    },
+    {
+      "number": 352,
+      "speaker": "RODERIGO",
+      "text": "Where shall we meet i’ the morning?"
+    },
+    {
+      "number": 353,
+      "speaker": "IAGO",
+      "text": "At my lodging."
+    },
+    {
+      "number": 353,
+      "speaker": "RODERIGO",
+      "text": "I’ll be with thee betimes."
+    },
+    {
+      "number": 354,
+      "speaker": "IAGO",
+      "text": "Go to; farewell. Do you hear, Roderigo?"
+    },
+    {
+      "number": 355,
+      "speaker": "RODERIGO",
+      "text": "What say you?"
+    },
+    {
+      "number": 356,
+      "speaker": "IAGO",
+      "text": "No more of drowning, do you hear?"
+    },
+    {
+      "number": 357,
+      "speaker": "RODERIGO",
+      "text": "I am changed: I’ll go sell all my land."
+    },
+    {
+      "number": 358,
+      "speaker": "IAGO",
+      "text": "Thus do I ever make my fool my purse:"
+    },
+    {
+      "number": 359,
+      "speaker": "IAGO",
+      "text": "For I mine own gain’d knowledge should profane,"
+    },
+    {
+      "number": 360,
+      "speaker": "IAGO",
+      "text": "If I would time expend with such a snipe."
+    },
+    {
+      "number": 361,
+      "speaker": "IAGO",
+      "text": "But for my sport and profit. I hate the Moor:"
+    },
+    {
+      "number": 362,
+      "speaker": "IAGO",
+      "text": "And it is thought abroad, that ’twixt my sheets"
+    },
+    {
+      "number": 363,
+      "speaker": "IAGO",
+      "text": "He has done my office: I know not if’t be true;"
+    },
+    {
+      "number": 364,
+      "speaker": "IAGO",
+      "text": "But I, for mere suspicion in that kind,"
+    },
+    {
+      "number": 365,
+      "speaker": "IAGO",
+      "text": "Will do as if for surety. He holds me well;"
+    },
+    {
+      "number": 366,
+      "speaker": "IAGO",
+      "text": "The better shall my purpose work on him."
+    },
+    {
+      "number": 367,
+      "speaker": "IAGO",
+      "text": "Cassio’s a proper man: let me see now:"
+    },
+    {
+      "number": 368,
+      "speaker": "IAGO",
+      "text": "To get his place and to plume up my will"
+    },
+    {
+      "number": 369,
+      "speaker": "IAGO",
+      "text": "In double knavery—How, how? Let’s see:—"
+    },
+    {
+      "number": 370,
+      "speaker": "IAGO",
+      "text": "After some time, to abuse Othello’s ear"
+    },
+    {
+      "number": 371,
+      "speaker": "IAGO",
+      "text": "That he is too familiar with his wife."
+    },
+    {
+      "number": 372,
+      "speaker": "IAGO",
+      "text": "He hath a person and a smooth dispose"
+    },
+    {
+      "number": 373,
+      "speaker": "IAGO",
+      "text": "To be suspected, framed to make women false."
+    },
+    {
+      "number": 374,
+      "speaker": "IAGO",
+      "text": "The Moor is of a free and open nature,"
+    },
+    {
+      "number": 375,
+      "speaker": "IAGO",
+      "text": "That thinks men honest that but seem to be so,"
+    },
+    {
+      "number": 376,
+      "speaker": "IAGO",
+      "text": "And will as tenderly be led by the nose"
+    },
+    {
+      "number": 377,
+      "speaker": "IAGO",
+      "text": "As asses are."
+    },
+    {
+      "number": 378,
+      "speaker": "IAGO",
+      "text": "I have’t. It is engender’d. Hell and night"
+    },
+    {
+      "number": 379,
+      "speaker": "IAGO",
+      "text": "Must bring this monstrous birth to the world’s light."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "The Duke and Senators sitting at a table; Officers attending."
+    },
+    {
+      "after_line": 12,
+      "text": "Within."
+    },
+    {
+      "after_line": 13,
+      "text": "Enter a Sailor."
+    },
+    {
+      "after_line": 32,
+      "text": "Enter a Messenger."
+    },
+    {
+      "after_line": 45,
+      "text": "Enter Brabantio, Othello, Iago, Roderigo, and Officers."
+    },
+    {
+      "after_line": 119,
+      "text": "Exeunt Iago and Attendants."
+    },
+    {
+      "after_line": 167,
+      "text": "Enter Desdemona, Iago, and Attendants."
+    },
+    {
+      "after_line": 289,
+      "text": "Exeunt Duke, Senators, Officers, etc."
+    },
+    {
+      "after_line": 296,
+      "text": "Exeunt Othello and Desdemona."
+    },
+    {
+      "after_line": 357,
+      "text": "Exit."
+    },
+    {
+      "after_line": 379,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "othello_act1_scene3_gloss1",
+      "line": 1,
+      "phrase": "composition",
+      "definition": "consistency; agreement between accounts"
+    },
+    {
+      "id": "othello_act1_scene3_gloss2",
+      "line": 5,
+      "phrase": "jump not",
+      "definition": "do not exactly agree"
+    },
+    {
+      "id": "othello_act1_scene3_gloss3",
+      "line": 6,
+      "phrase": "aim",
+      "definition": "general estimate; conjecture"
+    },
+    {
+      "id": "othello_act1_scene3_gloss4",
+      "line": 18,
+      "phrase": "assay",
+      "definition": "test; trial"
+    },
+    {
+      "id": "othello_act1_scene3_gloss5",
+      "line": 23,
+      "phrase": "with more facile question bear it",
+      "definition": "take it with easier resistance"
+    },
+    {
+      "id": "othello_act1_scene3_gloss6",
+      "line": 32,
+      "phrase": "Ottomites",
+      "definition": "Ottoman Turks — the naval threat to Venice's empire"
+    },
+    {
+      "id": "othello_act1_scene3_gloss7",
+      "line": 32,
+      "phrase": "reverend and gracious",
+      "definition": "honored and gracious — formal address to the senators"
+    },
+    {
+      "id": "othello_act1_scene3_gloss8",
+      "line": 18,
+      "phrase": "pageant",
+      "definition": "show; display meant to deceive"
+    },
+    {
+      "id": "othello_act1_scene3_gloss9",
+      "line": 19,
+      "phrase": "in false gaze",
+      "definition": "looking the wrong way; misdirected"
+    },
+    {
+      "id": "othello_act1_scene3_gloss10",
+      "line": 36,
+      "phrase": "restem",
+      "definition": "turn back against; sail back toward"
+    },
+    {
+      "id": "othello_act1_scene3_gloss11",
+      "line": 38,
+      "phrase": "Signior Montano",
+      "definition": "the Venetian governor of Cyprus"
+    },
+    {
+      "id": "othello_act1_scene3_gloss12",
+      "line": 46,
+      "phrase": "valiant",
+      "definition": "brave; stout-hearted"
+    },
+    {
+      "id": "othello_act1_scene3_gloss13",
+      "line": 74,
+      "phrase": "grave",
+      "definition": "honored; weighty"
+    },
+    {
+      "id": "othello_act1_scene3_gloss14",
+      "line": 75,
+      "phrase": "approved",
+      "definition": "tested and proven"
+    },
+    {
+      "id": "othello_act1_scene3_gloss15",
+      "line": 79,
+      "phrase": "Rude am I in my speech",
+      "definition": "my speech is rough, unpolished — Othello's humility formula before his great address"
+    },
+    {
+      "id": "othello_act1_scene3_gloss16",
+      "line": 81,
+      "phrase": "pith",
+      "definition": "strength; vigor"
+    },
+    {
+      "id": "othello_act1_scene3_gloss17",
+      "line": 81,
+      "phrase": "seven years’ pith",
+      "definition": "at seven years old; since I was seven"
+    },
+    {
+      "id": "othello_act1_scene3_gloss18",
+      "line": 83,
+      "phrase": "tented field",
+      "definition": "battlefield; the encamped army"
+    },
+    {
+      "id": "othello_act1_scene3_gloss19",
+      "line": 85,
+      "phrase": "broil",
+      "definition": "tumult; battle"
+    },
+    {
+      "id": "othello_act1_scene3_gloss23",
+      "line": 104,
+      "phrase": "wrought upon",
+      "definition": "worked upon; manipulated"
+    },
+    {
+      "id": "othello_act1_scene3_gloss25",
+      "line": 126,
+      "phrase": "Still",
+      "definition": "continually; always"
+    },
+    {
+      "id": "othello_act1_scene3_gloss26",
+      "line": 132,
+      "phrase": "moving accidents",
+      "definition": "stirring incidents; events that move the heart"
+    },
+    {
+      "id": "othello_act1_scene3_gloss27",
+      "line": 133,
+      "phrase": "imminent deadly breach",
+      "definition": "narrow gap in a wall where death was a heartbeat away"
+    },
+    {
+      "id": "othello_act1_scene3_gloss28",
+      "line": 136,
+      "phrase": "portance",
+      "definition": "conduct; bearing"
+    },
+    {
+      "id": "othello_act1_scene3_gloss29",
+      "line": 137,
+      "phrase": "antres vast",
+      "definition": "vast caves"
+    },
+    {
+      "id": "othello_act1_scene3_gloss30",
+      "line": 137,
+      "phrase": "idle",
+      "definition": "barren; unproductive"
+    },
+    {
+      "id": "othello_act1_scene3_gloss31",
+      "line": 139,
+      "phrase": "hint to speak",
+      "definition": "occasion to mention"
+    },
+    {
+      "id": "othello_act1_scene3_gloss32",
+      "line": 141,
+      "phrase": "Anthropophagi",
+      "definition": "cannibals — from Greek 'man-eaters'; a legendary race reported by Pliny and Mandeville"
+    },
+    {
+      "id": "othello_act1_scene3_gloss34",
+      "line": 148,
+      "phrase": "pliant hour",
+      "definition": "a propitious moment; a favorable opening"
+    },
+    {
+      "id": "othello_act1_scene3_gloss35",
+      "line": 157,
+      "phrase": "passing strange",
+      "definition": "exceedingly strange; beyond the ordinary"
+    },
+    {
+      "id": "othello_act1_scene3_gloss36",
+      "line": 163,
+      "phrase": "hint",
+      "definition": "opportunity; occasion"
+    },
+    {
+      "id": "othello_act1_scene3_gloss37",
+      "line": 170,
+      "phrase": "Take up this mangled matter at the best",
+      "definition": "make the best you can of this damaged situation"
+    },
+    {
+      "id": "othello_act1_scene3_gloss38",
+      "line": 180,
+      "phrase": "education",
+      "definition": "upbringing"
+    },
+    {
+      "id": "othello_act1_scene3_gloss39",
+      "line": 185,
+      "phrase": "challenge",
+      "definition": "claim"
+    },
+    {
+      "id": "othello_act1_scene3_gloss40",
+      "line": 189,
+      "phrase": "get it",
+      "definition": "beget it; father it"
+    },
+    {
+      "id": "othello_act1_scene3_gloss41",
+      "line": 195,
+      "phrase": "escape",
+      "definition": "escape from loss; recovery"
+    },
+    {
+      "id": "othello_act1_scene3_gloss42",
+      "line": 198,
+      "phrase": "grise",
+      "definition": "step; a level on a stair"
+    },
+    {
+      "id": "othello_act1_scene3_gloss43",
+      "line": 214,
+      "phrase": "sentence",
+      "definition": "maxim; aphorism — Brabantio mocks the Duke's platitudes"
+    },
+    {
+      "id": "othello_act1_scene3_gloss44",
+      "line": 214,
+      "phrase": "sugar",
+      "definition": "sweetness; words that sweeten a bitter fact"
+    },
+    {
+      "id": "othello_act1_scene3_gloss45",
+      "line": 220,
+      "phrase": "fortitude",
+      "definition": "strength of fortification"
+    },
+    {
+      "id": "othello_act1_scene3_gloss46",
+      "line": 221,
+      "phrase": "allowed sufficiency",
+      "definition": "acknowledged capability"
+    },
+    {
+      "id": "othello_act1_scene3_gloss47",
+      "line": 224,
+      "phrase": "stubborn and boisterous expedition",
+      "definition": "harsh and stormy military campaign"
+    },
+    {
+      "id": "othello_act1_scene3_gloss48",
+      "line": 223,
+      "phrase": "slubber the gloss",
+      "definition": "tarnish the brightness; soil the newly polished"
+    },
+    {
+      "id": "othello_act1_scene3_gloss50",
+      "line": 225,
+      "phrase": "flinty and steel couch",
+      "definition": "the soldier's stony bed — the battlefield ground"
+    },
+    {
+      "id": "othello_act1_scene3_gloss51",
+      "line": 226,
+      "phrase": "thrice-driven bed of down",
+      "definition": "a feather mattress with down triple-sorted for softness"
+    },
+    {
+      "id": "othello_act1_scene3_gloss52",
+      "line": 232,
+      "phrase": "exhibition",
+      "definition": "allowance; provision of money"
+    },
+    {
+      "id": "othello_act1_scene3_gloss53",
+      "line": 244,
+      "phrase": "downright violence and storm of fortunes",
+      "definition": "my open breach with custom; the headlong boldness of my love"
+    },
+    {
+      "id": "othello_act1_scene3_gloss54",
+      "line": 258,
+      "phrase": "heat",
+      "definition": "sexual passion"
+    },
+    {
+      "id": "othello_act1_scene3_gloss55",
+      "line": 258,
+      "phrase": "young affects",
+      "definition": "youthful passions"
+    },
+    {
+      "id": "othello_act1_scene3_gloss56",
+      "line": 265,
+      "phrase": "instruments",
+      "definition": "weapons; tools of war"
+    },
+    {
+      "id": "othello_act1_scene3_gloss57",
+      "line": 206,
+      "phrase": "hie",
+      "definition": "hasten; hurry"
+    },
+    {
+      "id": "othello_act1_scene3_gloss59",
+      "line": 285,
+      "phrase": "delighted",
+      "definition": "endowed with delight"
+    },
+    {
+      "id": "othello_act1_scene3_gloss60",
+      "line": 299,
+      "phrase": "incontinently",
+      "definition": "at once; without restraint"
+    },
+    {
+      "id": "othello_act1_scene3_gloss61",
+      "line": 302,
+      "phrase": "prescription",
+      "definition": "right; claim"
+    },
+    {
+      "id": "othello_act1_scene3_gloss62",
+      "line": 306,
+      "phrase": "a guinea-hen",
+      "definition": "a cant term for a prostitute; a kept woman"
+    },
+    {
+      "id": "othello_act1_scene3_gloss63",
+      "line": 307,
+      "phrase": "baboon",
+      "definition": "a dolt; a fool"
+    },
+    {
+      "id": "othello_act1_scene3_gloss64",
+      "line": 313,
+      "phrase": "gender",
+      "definition": "kind; sort"
+    },
+    {
+      "id": "othello_act1_scene3_gloss65",
+      "line": 321,
+      "phrase": "sect or scion",
+      "definition": "cutting or offshoot of a plant — here, an offspring of passion"
+    },
+    {
+      "id": "othello_act1_scene3_gloss66",
+      "line": 325,
+      "phrase": "perdurable toughness",
+      "definition": "lasting toughness; durable strength"
+    },
+    {
+      "id": "othello_act1_scene3_gloss67",
+      "line": 330,
+      "phrase": "sequestration",
+      "definition": "separation"
+    },
+    {
+      "id": "othello_act1_scene3_gloss68",
+      "line": 333,
+      "phrase": "locusts",
+      "definition": "sweet carob pods — named in Matthew 3:4 as John the Baptist's food"
+    },
+    {
+      "id": "othello_act1_scene3_gloss69",
+      "line": 333,
+      "phrase": "coloquintida",
+      "definition": "colocynth; a bitter purgative gourd"
+    },
+    {
+      "id": "othello_act1_scene3_gloss70",
+      "line": 338,
+      "phrase": "sanctimony",
+      "definition": "solemn oath; a sacred vow"
+    },
+    {
+      "id": "othello_act1_scene3_gloss71",
+      "line": 339,
+      "phrase": "erring",
+      "definition": "wandering; unsettled"
+    },
+    {
+      "id": "othello_act1_scene3_gloss72",
+      "line": 360,
+      "phrase": "snipe",
+      "definition": "a long-beaked marsh bird; proverbially a gull or fool"
+    },
+    {
+      "id": "othello_act1_scene3_gloss73",
+      "line": 368,
+      "phrase": "plume up",
+      "definition": "exalt; dress in fine feathers"
+    },
+    {
+      "id": "othello_act1_scene3_gloss74",
+      "line": 374,
+      "phrase": "free and open nature",
+      "definition": "trusting, undisguised disposition"
+    },
+    {
+      "id": "othello_act1_scene3_gloss76",
+      "line": 378,
+      "phrase": "engender",
+      "definition": "beget; bring into being"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "othello_act1_scene3_ann1",
+      "line_start": 79,
+      "line_end": 170,
+      "citation_display": "Othello 1.3.79–170",
+      "category": "thematic",
+      "title": "Rude am I in my speech: the Senate speech as autobiography",
+      "body": "Othello's defence before the Venetian senate is the most extended self-representation of any Shakespearean hero. The claim 'rude am I in my speech' is, of course, a rhetorical figure — *occupatio*, the pretence of plainness — followed by a speech of exceptional rhythmical assurance. The content is autobiography: bondage, battle, travel, cannibals and the Blemmyae, the household where Brabantio invited him. Love grew from narration. Desdemona, he insists, 'loved me for the dangers I had passed, / And I loved her that she did pity them.'\n\nCritical tradition divides here. T. S. Eliot heard the speech as Othello 'cheering himself up', the man already composing his own myth. F. R. Leavis extended the charge: Othello's tragedy begins not in Iago's malice but in this unearned self-idealization. A. C. Bradley took the speech at face value: a noble soul speaking noble truths.\n\nRead either way, the speech establishes the currency Iago will debase. Othello's authority rests on the coherence of his story. By 3.3 he will have lost the ability to tell it.",
+      "sources": [
+        "T. S. Eliot, 'Shakespeare and the Stoicism of Seneca' (1927)",
+        "F. R. Leavis, 'Diabolic Intellect and the Noble Hero', *Scrutiny* (1937)",
+        "A. C. Bradley, *Shakespearean Tragedy* (1904)",
+        "Stephen Greenblatt, *Renaissance Self-Fashioning* (1980)"
+      ]
+    },
+    {
+      "id": "othello_act1_scene3_ann2",
+      "line_start": 141,
+      "line_end": 160,
+      "citation_display": "Othello 1.3.141–160",
+      "category": "historical",
+      "title": "The Anthropophagi and Renaissance travel literature",
+      "body": "The cannibals and headless men 'whose heads do grow beneath their shoulders' are not Shakespeare's invention. They come from Pliny's *Natural History* through Mandeville's *Travels* and Raleigh's *Discoverie of Guiana* (1596). The Blemmyae — headless humans with faces in their chests — were standard furniture of the early-modern imagination of Africa and the New World.\n\nThe audience would have recognized the catalogue and registered it two ways at once: as marvelous travel data (still credited) and as a literary commonplace. Desdemona's response — she 'seriously inclined' to hear it — shows her treating wonder literature as ethical knowledge rather than entertainment. Shakespeare is quietly noting what kind of reader she is.",
+      "sources": [
+        "Margaret T. Hodgen, *Early Anthropology in the Sixteenth and Seventeenth Centuries* (1964)",
+        "Peter Mason, *Deconstructing America: Representations of the Other* (1990)"
+      ]
+    },
+    {
+      "id": "othello_act1_scene3_ann3",
+      "line_start": 346,
+      "line_end": 409,
+      "citation_display": "Othello 1.3.346–409",
+      "category": "structural",
+      "title": "Iago's first soliloquy: the plan is not yet the plan",
+      "body": "Notice what Iago does *not* yet have. He has a grievance over the lieutenancy, a purse to milk from Roderigo, and a shaped suspicion — 'it is thought abroad that 'twixt my sheets / He's done my office.' He does not have a plan. What he has is a method: 'After some time, to abuse Othello's ear.'\n\nThe soliloquy's most infamous line — 'I hate the Moor' — is flanked on both sides by speculation, not conviction. The motive is multiple and shifting: professional resentment, sexual suspicion, a general love of mischief. This is the 'motiveless malignity' Coleridge named — not the absence of motive but motive as improvisation. Iago will know what he wants only as the scenes produce him it.\n\nThe shape of the soliloquy matters for the structure of the play: Iago's evil is a compositional method, not a predetermined design. He will improvise at every step, and the tragedy will unfold scene by scene as his opportunities unfold.",
+      "sources": [
+        "Samuel Taylor Coleridge, *Lectures on Shakespeare* (1818–19)",
+        "William Empson, *The Structure of Complex Words* (1951), ch. 11 'Honest in Othello'",
+        "Stanley Cavell, *Disowning Knowledge in Seven Plays of Shakespeare* (rev. 2003)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "othello_act1_scene3_q1",
+      "kind": "comprehension",
+      "prompt": "When the senators debate the Turkish fleet's destination — Rhodes or Cyprus — what conclusion do they reach?",
+      "options": [
+        "Rhodes is the real target; Cyprus is a feint",
+        "Cyprus is the real target; Rhodes is a feint to draw Venetian forces away",
+        "Both islands will be attacked simultaneously",
+        "The reports are contradictory and no action can be taken"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 1,
+      "anchor_line_end": 50
+    },
+    {
+      "id": "othello_act1_scene3_q2",
+      "kind": "inference",
+      "prompt": "In his long speech beginning 'Rude am I in my speech,' Othello claims his rhetorical gifts are limited. How should the audience read this claim?",
+      "options": [
+        "As a simple truthful self-description",
+        "As false modesty — a rhetorical figure (occupatio) opening an exceptionally well-made speech",
+        "As evidence that Othello secretly has speech impediments",
+        "As Shakespeare apologizing for an earlier draft of the scene"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 79,
+      "anchor_line_end": 94
+    },
+    {
+      "id": "othello_act1_scene3_q3",
+      "kind": "theme",
+      "prompt": "According to Othello, how did Desdemona come to love him?",
+      "options": [
+        "Her father arranged the match for political advantage",
+        "Through repeated social visits she gradually came to know him",
+        "She loved him for the dangerous stories he told, and he loved her for pitying those dangers",
+        "She received love letters written by Cassio on his behalf"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 20,
+      "anchor_line_start": 125,
+      "anchor_line_end": 170
+    },
+    {
+      "id": "othello_act1_scene3_q4",
+      "kind": "close_reading",
+      "prompt": "Othello describes meeting 'Anthropophagi, and men whose heads do grow beneath their shoulders.' What are these?",
+      "options": [
+        "Shakespeare's invented creatures",
+        "Classical legends of cannibals and headless humans (Blemmyae) from Pliny and Mandeville",
+        "Nicknames for particular Ottoman tribes",
+        "Characters from earlier Italian plays"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 141,
+      "anchor_line_end": 145
+    },
+    {
+      "id": "othello_act1_scene3_q5",
+      "kind": "inference",
+      "prompt": "In his closing soliloquy, Iago articulates multiple possible reasons to hate Othello. What does this multiplicity suggest about his motivation?",
+      "options": [
+        "He is logically ranking the most important reasons for revenge",
+        "His motives are improvised and shifting — Coleridge called it 'motiveless malignity'",
+        "He is lying to himself to hide a single real reason",
+        "The soliloquy was added later and reflects the views of a collaborator"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 346,
+      "anchor_line_end": 409
+    },
+    {
+      "id": "othello_act1_scene3_q6",
+      "kind": "theme",
+      "prompt": "What does the Duke mean by telling Brabantio that he should 'take the robb'd that smiles' and steal something from the thief?",
+      "options": [
+        "Brabantio should literally repay the theft by stealing from Othello",
+        "Accepting fate with good humor is better than ongoing grief; Brabantio should move on",
+        "It is a Venetian proverb about contract law",
+        "Brabantio should accuse Othello of embezzlement"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 205,
+      "anchor_line_end": 220
+    },
+    {
+      "id": "othello_act1_scene3_q7",
+      "kind": "comprehension",
+      "prompt": "What state assignment does the Duke give to Othello at the end of the council?",
+      "options": [
+        "Remain in Venice as chief military advisor",
+        "Lead the defence of Cyprus against the Turks",
+        "Negotiate a peace treaty with Istanbul",
+        "Retire from service and reconcile with Brabantio"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 224,
+      "anchor_line_end": 245
+    }
+  ]
+}

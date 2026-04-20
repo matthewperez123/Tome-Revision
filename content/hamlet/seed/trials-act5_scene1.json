@@ -1,0 +1,89 @@
+{
+  "section_id": "hamlet_act5_scene1",
+  "trials": [
+    {
+      "kind": "historical",
+      "prompt": "What do the gravediggers debate at the start of the scene?",
+      "options": [
+        "Whether to dig Polonius's grave or Ophelia's first.",
+        "Whether Ophelia deserves Christian burial rites given her apparent suicide.",
+        "How much they should charge the King for digging.",
+        "Whether a new cemetery should be opened outside Elsinore."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 1,
+      "anchor_line_end": 30
+    },
+    {
+      "kind": "comprehension",
+      "prompt": "Whose skull does Hamlet particularly remember and mourn?",
+      "options": [
+        "His father's.",
+        "Polonius's.",
+        "Yorick's, the court jester.",
+        "A lawyer unnamed."
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 10,
+      "anchor_line_start": 160,
+      "anchor_line_end": 175
+    },
+    {
+      "kind": "theme",
+      "prompt": "How does Hamlet's meditation on mortality in the graveyard differ from his 'To be, or not to be' soliloquy?",
+      "options": [
+        "It is more abstract and philosophical than the soliloquy.",
+        "It is concrete and personal — particular skulls remembered as particular persons — rather than abstract.",
+        "It is delivered in Latin.",
+        "It concludes that death is to be welcomed without reservation."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 55,
+      "anchor_line_end": 175
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "What does Hamlet's tracing of Alexander's dust through 'loam' and a 'beer-barrel' argue?",
+      "options": [
+        "That great men should be embalmed rather than buried.",
+        "That even the noblest dust ends up stopping a bung-hole — a radical leveling of human greatness.",
+        "That beer is a fitter drink for a king than wine.",
+        "That Alexander was buried in Denmark."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 186,
+      "anchor_line_end": 208
+    },
+    {
+      "kind": "inference",
+      "prompt": "Why does Hamlet leap into Ophelia's grave after Laertes?",
+      "options": [
+        "To rescue a sword he has dropped.",
+        "To insist — publicly and passionately — that he loved Ophelia more than Laertes could.",
+        "To prevent the priest from finishing the curtailed rites.",
+        "To attack Claudius, who is standing at the graveside."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 235,
+      "anchor_line_end": 260
+    },
+    {
+      "kind": "comprehension",
+      "prompt": "What does Hamlet declare about his love for Ophelia at the graveside?",
+      "options": [
+        "That he never loved her and all his letters were pretense.",
+        "That forty thousand brothers could not have loved her as he did.",
+        "That he will follow her into death immediately.",
+        "That he forgives her for rejecting his suit."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 247,
+      "anchor_line_end": 253
+    }
+  ]
+}

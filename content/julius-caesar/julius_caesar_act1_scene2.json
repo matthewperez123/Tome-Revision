@@ -1,0 +1,2259 @@
+{
+  "section_id": "julius_caesar_act1_scene2",
+  "work_id": "julius-caesar",
+  "sequence": 2,
+  "act": 1,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "A public place",
+  "line_count": 319,
+  "word_count": 2574,
+  "est_read_minutes": 13,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CAESAR",
+      "text": "Calpurnia!"
+    },
+    {
+      "number": 1,
+      "speaker": "CASCA",
+      "text": "Peace, ho! Caesar speaks."
+    },
+    {
+      "number": 2,
+      "speaker": "CAESAR",
+      "text": "Calpurnia!"
+    },
+    {
+      "number": 2,
+      "speaker": "CALPURNIA",
+      "text": "Here, my lord."
+    },
+    {
+      "number": 3,
+      "speaker": "CAESAR",
+      "text": "Stand you directly in Antonius’ way,"
+    },
+    {
+      "number": 4,
+      "speaker": "CAESAR",
+      "text": "When he doth run his course. Antonius!"
+    },
+    {
+      "number": 5,
+      "speaker": "ANTONY",
+      "text": "Caesar, my lord?"
+    },
+    {
+      "number": 5,
+      "speaker": "CAESAR",
+      "text": "Forget not, in your speed, Antonius,"
+    },
+    {
+      "number": 6,
+      "speaker": "CAESAR",
+      "text": "To touch Calpurnia; for our elders say,"
+    },
+    {
+      "number": 7,
+      "speaker": "CAESAR",
+      "text": "The barren, touched in this holy chase,"
+    },
+    {
+      "number": 8,
+      "speaker": "CAESAR",
+      "text": "Shake off their sterile curse."
+    },
+    {
+      "number": 8,
+      "speaker": "ANTONY",
+      "text": "I shall remember:"
+    },
+    {
+      "number": 9,
+      "speaker": "ANTONY",
+      "text": "When Caesar says “do this,” it is perform’d."
+    },
+    {
+      "number": 10,
+      "speaker": "CAESAR",
+      "text": "Set on; and leave no ceremony out."
+    },
+    {
+      "number": 11,
+      "speaker": "SOOTHSAYER",
+      "text": "Caesar!"
+    },
+    {
+      "number": 11,
+      "speaker": "CAESAR",
+      "text": "Ha! who calls?"
+    },
+    {
+      "number": 12,
+      "speaker": "CASCA",
+      "text": "Bid every noise be still: peace yet again!"
+    },
+    {
+      "number": 13,
+      "speaker": "CAESAR",
+      "text": "Who is it in the press that calls on me?"
+    },
+    {
+      "number": 14,
+      "speaker": "CAESAR",
+      "text": "I hear a tongue, shriller than all the music,"
+    },
+    {
+      "number": 15,
+      "speaker": "CAESAR",
+      "text": "Cry “Caesar!” Speak; Caesar is turn’d to hear."
+    },
+    {
+      "number": 16,
+      "speaker": "SOOTHSAYER",
+      "text": "Beware the ides of March."
+    },
+    {
+      "number": 16,
+      "speaker": "CAESAR",
+      "text": "What man is that?"
+    },
+    {
+      "number": 17,
+      "speaker": "BRUTUS",
+      "text": "A soothsayer bids you beware the ides of March."
+    },
+    {
+      "number": 18,
+      "speaker": "CAESAR",
+      "text": "Set him before me; let me see his face."
+    },
+    {
+      "number": 19,
+      "speaker": "CASSIUS",
+      "text": "Fellow, come from the throng; look upon Caesar."
+    },
+    {
+      "number": 20,
+      "speaker": "CAESAR",
+      "text": "What say’st thou to me now? speak once again."
+    },
+    {
+      "number": 21,
+      "speaker": "SOOTHSAYER",
+      "text": "Beware the ides of March."
+    },
+    {
+      "number": 22,
+      "speaker": "CAESAR",
+      "text": "He is a dreamer; let us leave him: pass."
+    },
+    {
+      "number": 23,
+      "speaker": "CASSIUS",
+      "text": "Will you go see the order of the course?"
+    },
+    {
+      "number": 24,
+      "speaker": "BRUTUS",
+      "text": "Not I."
+    },
+    {
+      "number": 24,
+      "speaker": "CASSIUS",
+      "text": "I pray you, do."
+    },
+    {
+      "number": 25,
+      "speaker": "BRUTUS",
+      "text": "I am not gamesome: I do lack some part"
+    },
+    {
+      "number": 26,
+      "speaker": "BRUTUS",
+      "text": "Of that quick spirit that is in Antony."
+    },
+    {
+      "number": 27,
+      "speaker": "BRUTUS",
+      "text": "Let me not hinder, Cassius, your desires;"
+    },
+    {
+      "number": 28,
+      "speaker": "BRUTUS",
+      "text": "I’ll leave you."
+    },
+    {
+      "number": 29,
+      "speaker": "CASSIUS",
+      "text": "Brutus, I do observe you now of late:"
+    },
+    {
+      "number": 30,
+      "speaker": "CASSIUS",
+      "text": "I have not from your eyes that gentleness"
+    },
+    {
+      "number": 31,
+      "speaker": "CASSIUS",
+      "text": "And show of love as I was wont to have:"
+    },
+    {
+      "number": 32,
+      "speaker": "CASSIUS",
+      "text": "You bear too stubborn and too strange a hand"
+    },
+    {
+      "number": 33,
+      "speaker": "CASSIUS",
+      "text": "Over your friend that loves you."
+    },
+    {
+      "number": 33,
+      "speaker": "BRUTUS",
+      "text": "Cassius,"
+    },
+    {
+      "number": 34,
+      "speaker": "BRUTUS",
+      "text": "Be not deceived: if I have veil’d my look,"
+    },
+    {
+      "number": 35,
+      "speaker": "BRUTUS",
+      "text": "I turn the trouble of my countenance"
+    },
+    {
+      "number": 36,
+      "speaker": "BRUTUS",
+      "text": "Merely upon myself. Vexed I am"
+    },
+    {
+      "number": 37,
+      "speaker": "BRUTUS",
+      "text": "Of late with passions of some difference,"
+    },
+    {
+      "number": 38,
+      "speaker": "BRUTUS",
+      "text": "Conceptions only proper to myself,"
+    },
+    {
+      "number": 39,
+      "speaker": "BRUTUS",
+      "text": "Which give some soil perhaps to my behaviors;"
+    },
+    {
+      "number": 40,
+      "speaker": "BRUTUS",
+      "text": "But let not therefore my good friends be grieved—"
+    },
+    {
+      "number": 41,
+      "speaker": "BRUTUS",
+      "text": "Among which number, Cassius, be you one—"
+    },
+    {
+      "number": 42,
+      "speaker": "BRUTUS",
+      "text": "Nor construe any further my neglect,"
+    },
+    {
+      "number": 43,
+      "speaker": "BRUTUS",
+      "text": "Than that poor Brutus, with himself at war,"
+    },
+    {
+      "number": 44,
+      "speaker": "BRUTUS",
+      "text": "Forgets the shows of love to other men."
+    },
+    {
+      "number": 45,
+      "speaker": "CASSIUS",
+      "text": "Then, Brutus, I have much mistook your passion;"
+    },
+    {
+      "number": 46,
+      "speaker": "CASSIUS",
+      "text": "By means whereof this breast of mine hath buried"
+    },
+    {
+      "number": 47,
+      "speaker": "CASSIUS",
+      "text": "Thoughts of great value, worthy cogitations."
+    },
+    {
+      "number": 48,
+      "speaker": "CASSIUS",
+      "text": "Tell me, good Brutus, can you see your face?"
+    },
+    {
+      "number": 49,
+      "speaker": "BRUTUS",
+      "text": "No, Cassius; for the eye sees not itself,"
+    },
+    {
+      "number": 50,
+      "speaker": "BRUTUS",
+      "text": "But by reflection, by some other things."
+    },
+    {
+      "number": 51,
+      "speaker": "CASSIUS",
+      "text": "’Tis just:"
+    },
+    {
+      "number": 52,
+      "speaker": "CASSIUS",
+      "text": "And it is very much lamented, Brutus,"
+    },
+    {
+      "number": 53,
+      "speaker": "CASSIUS",
+      "text": "That you have no such mirrors as will turn"
+    },
+    {
+      "number": 54,
+      "speaker": "CASSIUS",
+      "text": "Your hidden worthiness into your eye,"
+    },
+    {
+      "number": 55,
+      "speaker": "CASSIUS",
+      "text": "That you might see your shadow. I have heard,"
+    },
+    {
+      "number": 56,
+      "speaker": "CASSIUS",
+      "text": "Where many of the best respect in Rome,"
+    },
+    {
+      "number": 57,
+      "speaker": "CASSIUS",
+      "text": "Except immortal Caesar, speaking of Brutus"
+    },
+    {
+      "number": 58,
+      "speaker": "CASSIUS",
+      "text": "And groaning underneath this age’s yoke,"
+    },
+    {
+      "number": 59,
+      "speaker": "CASSIUS",
+      "text": "Have wish’d that noble Brutus had his eyes."
+    },
+    {
+      "number": 60,
+      "speaker": "BRUTUS",
+      "text": "Into what dangers would you lead me, Cassius,"
+    },
+    {
+      "number": 61,
+      "speaker": "BRUTUS",
+      "text": "That you would have me seek into myself"
+    },
+    {
+      "number": 62,
+      "speaker": "BRUTUS",
+      "text": "For that which is not in me?"
+    },
+    {
+      "number": 63,
+      "speaker": "CASSIUS",
+      "text": "Therefore, good Brutus, be prepared to hear:"
+    },
+    {
+      "number": 64,
+      "speaker": "CASSIUS",
+      "text": "And since you know you cannot see yourself"
+    },
+    {
+      "number": 65,
+      "speaker": "CASSIUS",
+      "text": "So well as by reflection, I, your glass,"
+    },
+    {
+      "number": 66,
+      "speaker": "CASSIUS",
+      "text": "Will modestly discover to yourself"
+    },
+    {
+      "number": 67,
+      "speaker": "CASSIUS",
+      "text": "That of yourself which you yet know not of."
+    },
+    {
+      "number": 68,
+      "speaker": "CASSIUS",
+      "text": "And be not jealous on me, gentle Brutus:"
+    },
+    {
+      "number": 69,
+      "speaker": "CASSIUS",
+      "text": "Were I a common laugher, or did use"
+    },
+    {
+      "number": 70,
+      "speaker": "CASSIUS",
+      "text": "To stale with ordinary oaths my love"
+    },
+    {
+      "number": 71,
+      "speaker": "CASSIUS",
+      "text": "To every new protester; if you know"
+    },
+    {
+      "number": 72,
+      "speaker": "CASSIUS",
+      "text": "That I do fawn on men and hug them hard"
+    },
+    {
+      "number": 73,
+      "speaker": "CASSIUS",
+      "text": "And after scandal them, or if you know"
+    },
+    {
+      "number": 74,
+      "speaker": "CASSIUS",
+      "text": "That I profess myself in banqueting"
+    },
+    {
+      "number": 75,
+      "speaker": "CASSIUS",
+      "text": "To all the rout, then hold me dangerous."
+    },
+    {
+      "number": 76,
+      "speaker": "BRUTUS",
+      "text": "What means this shouting? I do fear, the people"
+    },
+    {
+      "number": 77,
+      "speaker": "BRUTUS",
+      "text": "Choose Caesar for their king."
+    },
+    {
+      "number": 77,
+      "speaker": "CASSIUS",
+      "text": "Ay, do you fear it?"
+    },
+    {
+      "number": 78,
+      "speaker": "CASSIUS",
+      "text": "Then must I think you would not have it so."
+    },
+    {
+      "number": 79,
+      "speaker": "BRUTUS",
+      "text": "I would not, Cassius; yet I love him well."
+    },
+    {
+      "number": 80,
+      "speaker": "BRUTUS",
+      "text": "But wherefore do you hold me here so long?"
+    },
+    {
+      "number": 81,
+      "speaker": "BRUTUS",
+      "text": "What is it that you would impart to me?"
+    },
+    {
+      "number": 82,
+      "speaker": "BRUTUS",
+      "text": "If it be aught toward the general good,"
+    },
+    {
+      "number": 83,
+      "speaker": "BRUTUS",
+      "text": "Set honour in one eye and death i’ the other,"
+    },
+    {
+      "number": 84,
+      "speaker": "BRUTUS",
+      "text": "And I will look on both indifferently,"
+    },
+    {
+      "number": 85,
+      "speaker": "BRUTUS",
+      "text": "For let the gods so speed me as I love"
+    },
+    {
+      "number": 86,
+      "speaker": "BRUTUS",
+      "text": "The name of honour more than I fear death."
+    },
+    {
+      "number": 87,
+      "speaker": "CASSIUS",
+      "text": "I know that virtue to be in you, Brutus,"
+    },
+    {
+      "number": 88,
+      "speaker": "CASSIUS",
+      "text": "As well as I do know your outward favour."
+    },
+    {
+      "number": 89,
+      "speaker": "CASSIUS",
+      "text": "Well, honour is the subject of my story."
+    },
+    {
+      "number": 90,
+      "speaker": "CASSIUS",
+      "text": "I cannot tell what you and other men"
+    },
+    {
+      "number": 91,
+      "speaker": "CASSIUS",
+      "text": "Think of this life; but, for my single self,"
+    },
+    {
+      "number": 92,
+      "speaker": "CASSIUS",
+      "text": "I had as lief not be as live to be"
+    },
+    {
+      "number": 93,
+      "speaker": "CASSIUS",
+      "text": "In awe of such a thing as I myself."
+    },
+    {
+      "number": 94,
+      "speaker": "CASSIUS",
+      "text": "I was born free as Caesar; so were you:"
+    },
+    {
+      "number": 95,
+      "speaker": "CASSIUS",
+      "text": "We both have fed as well, and we can both"
+    },
+    {
+      "number": 96,
+      "speaker": "CASSIUS",
+      "text": "Endure the winter’s cold as well as he:"
+    },
+    {
+      "number": 97,
+      "speaker": "CASSIUS",
+      "text": "For once, upon a raw and gusty day,"
+    },
+    {
+      "number": 98,
+      "speaker": "CASSIUS",
+      "text": "The troubled Tiber chafing with her shores,"
+    },
+    {
+      "number": 99,
+      "speaker": "CASSIUS",
+      "text": "Caesar said to me “Darest thou, Cassius, now"
+    },
+    {
+      "number": 100,
+      "speaker": "CASSIUS",
+      "text": "Leap in with me into this angry flood,"
+    },
+    {
+      "number": 101,
+      "speaker": "CASSIUS",
+      "text": "And swim to yonder point?” Upon the word,"
+    },
+    {
+      "number": 102,
+      "speaker": "CASSIUS",
+      "text": "Accoutred as I was, I plunged in"
+    },
+    {
+      "number": 103,
+      "speaker": "CASSIUS",
+      "text": "And bade him follow; so indeed he did."
+    },
+    {
+      "number": 104,
+      "speaker": "CASSIUS",
+      "text": "The torrent roar’d, and we did buffet it"
+    },
+    {
+      "number": 105,
+      "speaker": "CASSIUS",
+      "text": "With lusty sinews, throwing it aside"
+    },
+    {
+      "number": 106,
+      "speaker": "CASSIUS",
+      "text": "And stemming it with hearts of controversy;"
+    },
+    {
+      "number": 107,
+      "speaker": "CASSIUS",
+      "text": "But ere we could arrive the point proposed,"
+    },
+    {
+      "number": 108,
+      "speaker": "CASSIUS",
+      "text": "Caesar cried “Help me, Cassius, or I sink!”"
+    },
+    {
+      "number": 109,
+      "speaker": "CASSIUS",
+      "text": "I, as Aeneas, our great ancestor,"
+    },
+    {
+      "number": 110,
+      "speaker": "CASSIUS",
+      "text": "Did from the flames of Troy upon his shoulder"
+    },
+    {
+      "number": 111,
+      "speaker": "CASSIUS",
+      "text": "The old Anchises bear, so from the waves of Tiber"
+    },
+    {
+      "number": 112,
+      "speaker": "CASSIUS",
+      "text": "Did I the tired Caesar. And this man"
+    },
+    {
+      "number": 113,
+      "speaker": "CASSIUS",
+      "text": "Is now become a god, and Cassius is"
+    },
+    {
+      "number": 114,
+      "speaker": "CASSIUS",
+      "text": "A wretched creature and must bend his body,"
+    },
+    {
+      "number": 115,
+      "speaker": "CASSIUS",
+      "text": "If Caesar carelessly but nod on him."
+    },
+    {
+      "number": 116,
+      "speaker": "CASSIUS",
+      "text": "He had a fever when he was in Spain,"
+    },
+    {
+      "number": 117,
+      "speaker": "CASSIUS",
+      "text": "And when the fit was on him, I did mark"
+    },
+    {
+      "number": 118,
+      "speaker": "CASSIUS",
+      "text": "How he did shake: ’tis true, this god did shake:"
+    },
+    {
+      "number": 119,
+      "speaker": "CASSIUS",
+      "text": "His coward lips did from their colour fly,"
+    },
+    {
+      "number": 120,
+      "speaker": "CASSIUS",
+      "text": "And that same eye whose bend doth awe the world"
+    },
+    {
+      "number": 121,
+      "speaker": "CASSIUS",
+      "text": "Did lose his lustre: I did hear him groan:"
+    },
+    {
+      "number": 122,
+      "speaker": "CASSIUS",
+      "text": "Ay, and that tongue of his that bade the Romans"
+    },
+    {
+      "number": 123,
+      "speaker": "CASSIUS",
+      "text": "Mark him and write his speeches in their books,"
+    },
+    {
+      "number": 124,
+      "speaker": "CASSIUS",
+      "text": "Alas, it cried “Give me some drink, Titinius,”"
+    },
+    {
+      "number": 125,
+      "speaker": "CASSIUS",
+      "text": "As a sick girl. Ye gods, it doth amaze me"
+    },
+    {
+      "number": 126,
+      "speaker": "CASSIUS",
+      "text": "A man of such a feeble temper should"
+    },
+    {
+      "number": 127,
+      "speaker": "CASSIUS",
+      "text": "So get the start of the majestic world"
+    },
+    {
+      "number": 128,
+      "speaker": "CASSIUS",
+      "text": "And bear the palm alone."
+    },
+    {
+      "number": 128,
+      "speaker": "BRUTUS",
+      "text": "Another general shout!"
+    },
+    {
+      "number": 129,
+      "speaker": "BRUTUS",
+      "text": "I do believe that these applauses are"
+    },
+    {
+      "number": 130,
+      "speaker": "BRUTUS",
+      "text": "For some new honours that are heap’d on Caesar."
+    },
+    {
+      "number": 131,
+      "speaker": "CASSIUS",
+      "text": "Why, man, he doth bestride the narrow world"
+    },
+    {
+      "number": 132,
+      "speaker": "CASSIUS",
+      "text": "Like a Colossus, and we petty men"
+    },
+    {
+      "number": 133,
+      "speaker": "CASSIUS",
+      "text": "Walk under his huge legs and peep about"
+    },
+    {
+      "number": 134,
+      "speaker": "CASSIUS",
+      "text": "To find ourselves dishonourable graves."
+    },
+    {
+      "number": 135,
+      "speaker": "CASSIUS",
+      "text": "Men at some time are masters of their fates:"
+    },
+    {
+      "number": 136,
+      "speaker": "CASSIUS",
+      "text": "The fault, dear Brutus, is not in our stars,"
+    },
+    {
+      "number": 137,
+      "speaker": "CASSIUS",
+      "text": "But in ourselves, that we are underlings."
+    },
+    {
+      "number": 138,
+      "speaker": "CASSIUS",
+      "text": "Brutus and Caesar: what should be in that “Caesar”?"
+    },
+    {
+      "number": 139,
+      "speaker": "CASSIUS",
+      "text": "Why should that name be sounded more than yours?"
+    },
+    {
+      "number": 140,
+      "speaker": "CASSIUS",
+      "text": "Write them together, yours is as fair a name;"
+    },
+    {
+      "number": 141,
+      "speaker": "CASSIUS",
+      "text": "Sound them, it doth become the mouth as well;"
+    },
+    {
+      "number": 142,
+      "speaker": "CASSIUS",
+      "text": "Weigh them, it is as heavy; conjure with ’em,"
+    },
+    {
+      "number": 143,
+      "speaker": "CASSIUS",
+      "text": "Brutus will start a spirit as soon as Caesar."
+    },
+    {
+      "number": 144,
+      "speaker": "CASSIUS",
+      "text": "Now, in the names of all the gods at once,"
+    },
+    {
+      "number": 145,
+      "speaker": "CASSIUS",
+      "text": "Upon what meat doth this our Caesar feed,"
+    },
+    {
+      "number": 146,
+      "speaker": "CASSIUS",
+      "text": "That he is grown so great? Age, thou art shamed!"
+    },
+    {
+      "number": 147,
+      "speaker": "CASSIUS",
+      "text": "Rome, thou hast lost the breed of noble bloods!"
+    },
+    {
+      "number": 148,
+      "speaker": "CASSIUS",
+      "text": "When went there by an age, since the great flood,"
+    },
+    {
+      "number": 149,
+      "speaker": "CASSIUS",
+      "text": "But it was famed with more than with one man?"
+    },
+    {
+      "number": 150,
+      "speaker": "CASSIUS",
+      "text": "When could they say till now, that talk’d of Rome,"
+    },
+    {
+      "number": 151,
+      "speaker": "CASSIUS",
+      "text": "That her wide walls encompass’d but one man?"
+    },
+    {
+      "number": 152,
+      "speaker": "CASSIUS",
+      "text": "Now is it Rome indeed and room enough,"
+    },
+    {
+      "number": 153,
+      "speaker": "CASSIUS",
+      "text": "When there is in it but one only man."
+    },
+    {
+      "number": 154,
+      "speaker": "CASSIUS",
+      "text": "O, you and I have heard our fathers say,"
+    },
+    {
+      "number": 155,
+      "speaker": "CASSIUS",
+      "text": "There was a Brutus once that would have brook’d"
+    },
+    {
+      "number": 156,
+      "speaker": "CASSIUS",
+      "text": "The eternal devil to keep his state in Rome"
+    },
+    {
+      "number": 157,
+      "speaker": "CASSIUS",
+      "text": "As easily as a king."
+    },
+    {
+      "number": 158,
+      "speaker": "BRUTUS",
+      "text": "That you do love me, I am nothing jealous;"
+    },
+    {
+      "number": 159,
+      "speaker": "BRUTUS",
+      "text": "What you would work me to, I have some aim:"
+    },
+    {
+      "number": 160,
+      "speaker": "BRUTUS",
+      "text": "How I have thought of this and of these times,"
+    },
+    {
+      "number": 161,
+      "speaker": "BRUTUS",
+      "text": "I shall recount hereafter; for this present,"
+    },
+    {
+      "number": 162,
+      "speaker": "BRUTUS",
+      "text": "I would not, so with love I might entreat you,"
+    },
+    {
+      "number": 163,
+      "speaker": "BRUTUS",
+      "text": "Be any further moved. What you have said"
+    },
+    {
+      "number": 164,
+      "speaker": "BRUTUS",
+      "text": "I will consider; what you have to say"
+    },
+    {
+      "number": 165,
+      "speaker": "BRUTUS",
+      "text": "I will with patience hear, and find a time"
+    },
+    {
+      "number": 166,
+      "speaker": "BRUTUS",
+      "text": "Both meet to hear and answer such high things."
+    },
+    {
+      "number": 167,
+      "speaker": "BRUTUS",
+      "text": "Till then, my noble friend, chew upon this:"
+    },
+    {
+      "number": 168,
+      "speaker": "BRUTUS",
+      "text": "Brutus had rather be a villager"
+    },
+    {
+      "number": 169,
+      "speaker": "BRUTUS",
+      "text": "Than to repute himself a son of Rome"
+    },
+    {
+      "number": 170,
+      "speaker": "BRUTUS",
+      "text": "Under these hard conditions as this time"
+    },
+    {
+      "number": 171,
+      "speaker": "BRUTUS",
+      "text": "Is like to lay upon us."
+    },
+    {
+      "number": 172,
+      "speaker": "CASSIUS",
+      "text": "I am glad that my weak words"
+    },
+    {
+      "number": 173,
+      "speaker": "CASSIUS",
+      "text": "Have struck but thus much show of fire from Brutus."
+    },
+    {
+      "number": 174,
+      "speaker": "BRUTUS",
+      "text": "The games are done and Caesar is returning."
+    },
+    {
+      "number": 175,
+      "speaker": "CASSIUS",
+      "text": "As they pass by, pluck Casca by the sleeve;"
+    },
+    {
+      "number": 176,
+      "speaker": "CASSIUS",
+      "text": "And he will, after his sour fashion, tell you"
+    },
+    {
+      "number": 177,
+      "speaker": "CASSIUS",
+      "text": "What hath proceeded worthy note to-day."
+    },
+    {
+      "number": 178,
+      "speaker": "BRUTUS",
+      "text": "I will do so. But, look you, Cassius,"
+    },
+    {
+      "number": 179,
+      "speaker": "BRUTUS",
+      "text": "The angry spot doth glow on Caesar’s brow,"
+    },
+    {
+      "number": 180,
+      "speaker": "BRUTUS",
+      "text": "And all the rest look like a chidden train:"
+    },
+    {
+      "number": 181,
+      "speaker": "BRUTUS",
+      "text": "Calpurnia’s cheek is pale; and Cicero"
+    },
+    {
+      "number": 182,
+      "speaker": "BRUTUS",
+      "text": "Looks with such ferret and such fiery eyes"
+    },
+    {
+      "number": 183,
+      "speaker": "BRUTUS",
+      "text": "As we have seen him in the Capitol,"
+    },
+    {
+      "number": 184,
+      "speaker": "BRUTUS",
+      "text": "Being cross’d in conference by some senators."
+    },
+    {
+      "number": 185,
+      "speaker": "CASSIUS",
+      "text": "Casca will tell us what the matter is."
+    },
+    {
+      "number": 186,
+      "speaker": "CAESAR",
+      "text": "Antonius!"
+    },
+    {
+      "number": 186,
+      "speaker": "ANTONY",
+      "text": "Caesar?"
+    },
+    {
+      "number": 187,
+      "speaker": "CAESAR",
+      "text": "Let me have men about me that are fat:"
+    },
+    {
+      "number": 188,
+      "speaker": "CAESAR",
+      "text": "Sleek-headed men and such as sleep o’ nights:"
+    },
+    {
+      "number": 189,
+      "speaker": "CAESAR",
+      "text": "Yond Cassius has a lean and hungry look;"
+    },
+    {
+      "number": 190,
+      "speaker": "CAESAR",
+      "text": "He thinks too much: such men are dangerous."
+    },
+    {
+      "number": 191,
+      "speaker": "ANTONY",
+      "text": "Fear him not, Caesar; he’s not dangerous;"
+    },
+    {
+      "number": 192,
+      "speaker": "ANTONY",
+      "text": "He is a noble Roman and well given."
+    },
+    {
+      "number": 193,
+      "speaker": "CAESAR",
+      "text": "Would he were fatter! But I fear him not:"
+    },
+    {
+      "number": 194,
+      "speaker": "CAESAR",
+      "text": "Yet if my name were liable to fear,"
+    },
+    {
+      "number": 195,
+      "speaker": "CAESAR",
+      "text": "I do not know the man I should avoid"
+    },
+    {
+      "number": 196,
+      "speaker": "CAESAR",
+      "text": "So soon as that spare Cassius. He reads much;"
+    },
+    {
+      "number": 197,
+      "speaker": "CAESAR",
+      "text": "He is a great observer and he looks"
+    },
+    {
+      "number": 198,
+      "speaker": "CAESAR",
+      "text": "Quite through the deeds of men; he loves no plays,"
+    },
+    {
+      "number": 199,
+      "speaker": "CAESAR",
+      "text": "As thou dost, Antony; he hears no music;"
+    },
+    {
+      "number": 200,
+      "speaker": "CAESAR",
+      "text": "Seldom he smiles, and smiles in such a sort"
+    },
+    {
+      "number": 201,
+      "speaker": "CAESAR",
+      "text": "As if he mock’d himself and scorn’d his spirit"
+    },
+    {
+      "number": 202,
+      "speaker": "CAESAR",
+      "text": "That could be moved to smile at anything."
+    },
+    {
+      "number": 203,
+      "speaker": "CAESAR",
+      "text": "Such men as he be never at heart’s ease"
+    },
+    {
+      "number": 204,
+      "speaker": "CAESAR",
+      "text": "Whiles they behold a greater than themselves,"
+    },
+    {
+      "number": 205,
+      "speaker": "CAESAR",
+      "text": "And therefore are they very dangerous."
+    },
+    {
+      "number": 206,
+      "speaker": "CAESAR",
+      "text": "I rather tell thee what is to be fear’d"
+    },
+    {
+      "number": 207,
+      "speaker": "CAESAR",
+      "text": "Than what I fear; for always I am Caesar."
+    },
+    {
+      "number": 208,
+      "speaker": "CAESAR",
+      "text": "Come on my right hand, for this ear is deaf,"
+    },
+    {
+      "number": 209,
+      "speaker": "CAESAR",
+      "text": "And tell me truly what thou think’st of him."
+    },
+    {
+      "number": 210,
+      "speaker": "CASCA",
+      "text": "You pull’d me by the cloak; would you speak with me?"
+    },
+    {
+      "number": 211,
+      "speaker": "BRUTUS",
+      "text": "Ay, Casca; tell us what hath chanced to-day,"
+    },
+    {
+      "number": 212,
+      "speaker": "BRUTUS",
+      "text": "That Caesar looks so sad."
+    },
+    {
+      "number": 213,
+      "speaker": "CASCA",
+      "text": "Why, you were with him, were you not?"
+    },
+    {
+      "number": 214,
+      "speaker": "BRUTUS",
+      "text": "I should not then ask Casca what had chanced."
+    },
+    {
+      "number": 215,
+      "speaker": "CASCA",
+      "text": "Why, there was a crown offered him: and being offered him, he"
+    },
+    {
+      "number": 216,
+      "speaker": "CASCA",
+      "text": "put it by with the back of his hand, thus; and then"
+    },
+    {
+      "number": 217,
+      "speaker": "CASCA",
+      "text": "the people fell a-shouting."
+    },
+    {
+      "number": 217,
+      "speaker": "BRUTUS",
+      "text": "What was the second noise for?"
+    },
+    {
+      "number": 218,
+      "speaker": "CASCA",
+      "text": "Why, for that too."
+    },
+    {
+      "number": 219,
+      "speaker": "CASSIUS",
+      "text": "They shouted thrice: what was the last cry for?"
+    },
+    {
+      "number": 220,
+      "speaker": "CASCA",
+      "text": "Why, for that too."
+    },
+    {
+      "number": 220,
+      "speaker": "BRUTUS",
+      "text": "Was the crown offered him thrice?"
+    },
+    {
+      "number": 221,
+      "speaker": "CASCA",
+      "text": "Ay, marry, was’t, and he put it by thrice, every time gentler"
+    },
+    {
+      "number": 222,
+      "speaker": "CASCA",
+      "text": "than other, and at every putting-by mine honest neighbours shouted."
+    },
+    {
+      "number": 223,
+      "speaker": "CASSIUS",
+      "text": "Who offered him the crown?"
+    },
+    {
+      "number": 223,
+      "speaker": "CASCA",
+      "text": "Why, Antony."
+    },
+    {
+      "number": 224,
+      "speaker": "BRUTUS",
+      "text": "Tell us the manner of it, gentle Casca."
+    },
+    {
+      "number": 225,
+      "speaker": "CASCA",
+      "text": "I can as well be hanged as tell the manner of it:"
+    },
+    {
+      "number": 226,
+      "speaker": "CASCA",
+      "text": "it was mere foolery; I did not mark it. I saw Mark"
+    },
+    {
+      "number": 227,
+      "speaker": "CASCA",
+      "text": "Antony offer him a crown;—yet ’twas not a crown neither, ’twas one"
+    },
+    {
+      "number": 228,
+      "speaker": "CASCA",
+      "text": "of these coronets;—and, as I told you, he put it by once:"
+    },
+    {
+      "number": 229,
+      "speaker": "CASCA",
+      "text": "but, for all that, to my thinking, he would fain have had"
+    },
+    {
+      "number": 230,
+      "speaker": "CASCA",
+      "text": "it. Then he offered it to him again; then he put it"
+    },
+    {
+      "number": 231,
+      "speaker": "CASCA",
+      "text": "by again: but, to my thinking, he was very loath to lay"
+    },
+    {
+      "number": 232,
+      "speaker": "CASCA",
+      "text": "his fingers off it. And then he offered it the third time;"
+    },
+    {
+      "number": 233,
+      "speaker": "CASCA",
+      "text": "he put it the third time by: and still as he refused"
+    },
+    {
+      "number": 234,
+      "speaker": "CASCA",
+      "text": "it, the rabblement hooted and clapped their chopped hands and threw up"
+    },
+    {
+      "number": 235,
+      "speaker": "CASCA",
+      "text": "their sweaty night-caps and uttered such a deal of stinking breath because"
+    },
+    {
+      "number": 236,
+      "speaker": "CASCA",
+      "text": "Caesar refused the crown that it had almost choked Caesar; for he"
+    },
+    {
+      "number": 237,
+      "speaker": "CASCA",
+      "text": "swounded and fell down at it: and for mine own part, I"
+    },
+    {
+      "number": 238,
+      "speaker": "CASCA",
+      "text": "durst not laugh, for fear of opening my lips and receiving the"
+    },
+    {
+      "number": 239,
+      "speaker": "CASCA",
+      "text": "bad air."
+    },
+    {
+      "number": 240,
+      "speaker": "CASSIUS",
+      "text": "But, soft, I pray you: what, did Caesar swound?"
+    },
+    {
+      "number": 241,
+      "speaker": "CASCA",
+      "text": "He fell down in the market-place, and foamed at mouth, and was speechless."
+    },
+    {
+      "number": 242,
+      "speaker": "BRUTUS",
+      "text": "’Tis very like: he hath the failing sickness."
+    },
+    {
+      "number": 243,
+      "speaker": "CASSIUS",
+      "text": "No, Caesar hath it not; but you and I"
+    },
+    {
+      "number": 244,
+      "speaker": "CASSIUS",
+      "text": "And honest Casca, we have the falling sickness."
+    },
+    {
+      "number": 245,
+      "speaker": "CASCA",
+      "text": "I know not what you mean by that; but, I am sure,"
+    },
+    {
+      "number": 246,
+      "speaker": "CASCA",
+      "text": "Caesar fell down. If the tag-rag people did not clap him and"
+    },
+    {
+      "number": 247,
+      "speaker": "CASCA",
+      "text": "hiss him, according as he pleased and displeased them, as they use"
+    },
+    {
+      "number": 248,
+      "speaker": "CASCA",
+      "text": "to do the players in the theatre, I am no true man."
+    },
+    {
+      "number": 249,
+      "speaker": "BRUTUS",
+      "text": "What said he when he came unto himself?"
+    },
+    {
+      "number": 250,
+      "speaker": "CASCA",
+      "text": "Marry, before he fell down, when he perceived the common herd was"
+    },
+    {
+      "number": 251,
+      "speaker": "CASCA",
+      "text": "glad he refused the crown, he plucked me ope his doublet and"
+    },
+    {
+      "number": 252,
+      "speaker": "CASCA",
+      "text": "offered them his throat to cut. An I had been a man"
+    },
+    {
+      "number": 253,
+      "speaker": "CASCA",
+      "text": "of any occupation, if I would not have taken him at a"
+    },
+    {
+      "number": 254,
+      "speaker": "CASCA",
+      "text": "word, I would I might go to hell among the rogues. And"
+    },
+    {
+      "number": 255,
+      "speaker": "CASCA",
+      "text": "so he fell. When he came to himself again, he said, If"
+    },
+    {
+      "number": 256,
+      "speaker": "CASCA",
+      "text": "he had done or said anything amiss, he desired their worships to"
+    },
+    {
+      "number": 257,
+      "speaker": "CASCA",
+      "text": "think it was his infirmity. Three or four wenches, where I stood,"
+    },
+    {
+      "number": 258,
+      "speaker": "CASCA",
+      "text": "cried “Alas, good soul!” and forgave him with all their hearts: but"
+    },
+    {
+      "number": 259,
+      "speaker": "CASCA",
+      "text": "there’s no heed to be taken of them: if Caesar had stabbed"
+    },
+    {
+      "number": 260,
+      "speaker": "CASCA",
+      "text": "their mothers, they would have done no less."
+    },
+    {
+      "number": 261,
+      "speaker": "BRUTUS",
+      "text": "And after that, he came, thus sad, away?"
+    },
+    {
+      "number": 262,
+      "speaker": "CASCA",
+      "text": "Ay."
+    },
+    {
+      "number": 262,
+      "speaker": "CASSIUS",
+      "text": "Did Cicero say anything?"
+    },
+    {
+      "number": 263,
+      "speaker": "CASCA",
+      "text": "Ay, he spoke Greek."
+    },
+    {
+      "number": 263,
+      "speaker": "CASSIUS",
+      "text": "To what effect?"
+    },
+    {
+      "number": 264,
+      "speaker": "CASCA",
+      "text": "Nay, an I tell you that, I’ll ne’er look you i’ the"
+    },
+    {
+      "number": 265,
+      "speaker": "CASCA",
+      "text": "face again: but those that understood him smiled at one another and"
+    },
+    {
+      "number": 266,
+      "speaker": "CASCA",
+      "text": "shook their heads; but, for mine own part, it was Greek to"
+    },
+    {
+      "number": 267,
+      "speaker": "CASCA",
+      "text": "me. I could tell you more news too: Marullus and Flavius, for"
+    },
+    {
+      "number": 268,
+      "speaker": "CASCA",
+      "text": "pulling scarfs off Caesar’s images, are put to silence. Fare you well."
+    },
+    {
+      "number": 269,
+      "speaker": "CASCA",
+      "text": "There was more foolery yet, if I could remember it."
+    },
+    {
+      "number": 270,
+      "speaker": "CASSIUS",
+      "text": "Will you sup with me to-night, Casca?"
+    },
+    {
+      "number": 271,
+      "speaker": "CASCA",
+      "text": "No, I am promised forth."
+    },
+    {
+      "number": 271,
+      "speaker": "CASSIUS",
+      "text": "Will you dine with me to-morrow?"
+    },
+    {
+      "number": 272,
+      "speaker": "CASCA",
+      "text": "Ay, if I be alive and your mind hold and your dinner worth the eating."
+    },
+    {
+      "number": 273,
+      "speaker": "CASSIUS",
+      "text": "Good: I will expect you."
+    },
+    {
+      "number": 273,
+      "speaker": "CASCA",
+      "text": "Do so. Farewell, both."
+    },
+    {
+      "number": 274,
+      "speaker": "BRUTUS",
+      "text": "What a blunt fellow is this grown to be!"
+    },
+    {
+      "number": 275,
+      "speaker": "BRUTUS",
+      "text": "He was quick mettle when he went to school."
+    },
+    {
+      "number": 276,
+      "speaker": "CASSIUS",
+      "text": "So is he now in execution"
+    },
+    {
+      "number": 277,
+      "speaker": "CASSIUS",
+      "text": "Of any bold or noble enterprise,"
+    },
+    {
+      "number": 278,
+      "speaker": "CASSIUS",
+      "text": "However he puts on this tardy form."
+    },
+    {
+      "number": 279,
+      "speaker": "CASSIUS",
+      "text": "This rudeness is a sauce to his good wit,"
+    },
+    {
+      "number": 280,
+      "speaker": "CASSIUS",
+      "text": "Which gives men stomach to digest his words"
+    },
+    {
+      "number": 281,
+      "speaker": "CASSIUS",
+      "text": "With better appetite."
+    },
+    {
+      "number": 282,
+      "speaker": "BRUTUS",
+      "text": "And so it is. For this time I will leave you:"
+    },
+    {
+      "number": 283,
+      "speaker": "BRUTUS",
+      "text": "To-morrow, if you please to speak with me,"
+    },
+    {
+      "number": 284,
+      "speaker": "BRUTUS",
+      "text": "I will come home to you; or, if you will,"
+    },
+    {
+      "number": 285,
+      "speaker": "BRUTUS",
+      "text": "Come home to me, and I will wait for you."
+    },
+    {
+      "number": 286,
+      "speaker": "CASSIUS",
+      "text": "I will do so: till then, think of the world."
+    },
+    {
+      "number": 287,
+      "speaker": "CASSIUS",
+      "text": "Well, Brutus, thou art noble; yet, I see,"
+    },
+    {
+      "number": 288,
+      "speaker": "CASSIUS",
+      "text": "Thy honourable metal may be wrought"
+    },
+    {
+      "number": 289,
+      "speaker": "CASSIUS",
+      "text": "From that it is disposed: therefore it is meet"
+    },
+    {
+      "number": 290,
+      "speaker": "CASSIUS",
+      "text": "That noble minds keep ever with their likes;"
+    },
+    {
+      "number": 291,
+      "speaker": "CASSIUS",
+      "text": "For who so firm that cannot be seduced?"
+    },
+    {
+      "number": 292,
+      "speaker": "CASSIUS",
+      "text": "Caesar doth bear me hard; but he loves Brutus:"
+    },
+    {
+      "number": 293,
+      "speaker": "CASSIUS",
+      "text": "If I were Brutus now and he were Cassius,"
+    },
+    {
+      "number": 294,
+      "speaker": "CASSIUS",
+      "text": "He should not humour me. I will this night,"
+    },
+    {
+      "number": 295,
+      "speaker": "CASSIUS",
+      "text": "In several hands, in at his windows throw,"
+    },
+    {
+      "number": 296,
+      "speaker": "CASSIUS",
+      "text": "As if they came from several citizens,"
+    },
+    {
+      "number": 297,
+      "speaker": "CASSIUS",
+      "text": "Writings all tending to the great opinion"
+    },
+    {
+      "number": 298,
+      "speaker": "CASSIUS",
+      "text": "That Rome holds of his name; wherein obscurely"
+    },
+    {
+      "number": 299,
+      "speaker": "CASSIUS",
+      "text": "Caesar’s ambition shall be glanced at:"
+    },
+    {
+      "number": 300,
+      "speaker": "CASSIUS",
+      "text": "And after this let Caesar seat him sure;"
+    },
+    {
+      "number": 301,
+      "speaker": "CASSIUS",
+      "text": "For we will shake him, or worse days endure."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Flourish. Enter Caesar; Antony, for the course; Calpurnia, Portia, Decius, Cicero, Brutus, Cassius, and Casca; a great crowd following, among them a Soothsayer."
+    },
+    {
+      "after_line": 10,
+      "text": "Flourish."
+    },
+    {
+      "after_line": 22,
+      "text": "Sennet. Exeunt all except Brutus and Cassius."
+    },
+    {
+      "after_line": 75,
+      "text": "Flourish, and shout."
+    },
+    {
+      "after_line": 128,
+      "text": "Shout. Flourish."
+    },
+    {
+      "after_line": 177,
+      "text": "Reenter Caesar and his Train."
+    },
+    {
+      "after_line": 209,
+      "text": "Sennet. Exeunt Caesar and all his Train, but Casca."
+    },
+    {
+      "after_line": 273,
+      "text": "Exit."
+    },
+    {
+      "after_line": 286,
+      "text": "Exit Brutus."
+    },
+    {
+      "after_line": 301,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "julius_caesar_act1_scene2_gloss1",
+      "line": 4,
+      "phrase": "run his course",
+      "definition": "run the Lupercalia ceremonial race through the streets"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss2",
+      "line": 7,
+      "phrase": "barren, touched in this holy chase",
+      "definition": "childless women struck by a Lupercalian runner's goatskin thong were believed to gain fertility"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss3",
+      "line": 8,
+      "phrase": "sterile curse",
+      "definition": "infertility, imagined as a divine affliction"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss4",
+      "line": 10,
+      "phrase": "Set on",
+      "definition": "go forward; proceed"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss5",
+      "line": 10,
+      "phrase": "leave no ceremony out",
+      "definition": "omit none of the ritual observances"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss6",
+      "line": 13,
+      "phrase": "press",
+      "definition": "crowd; throng"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss7",
+      "line": 16,
+      "phrase": "ides of March",
+      "definition": "March 15 by the Roman calendar; the Ides were the 15th of March, May, July, and October, the 13th of other months — a date for public business and, here, for assassination"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss8",
+      "line": 21,
+      "phrase": "Beware the ides of March",
+      "definition": "the play's most famous prophecy; the Soothsayer's warning of the assassination date"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss9",
+      "line": 23,
+      "phrase": "order of the course",
+      "definition": "the formal ceremony of the Lupercalian foot-race"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss10",
+      "line": 25,
+      "phrase": "gamesome",
+      "definition": "playful; fond of sport or games"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss11",
+      "line": 32,
+      "phrase": "too stubborn and too strange a hand",
+      "definition": "too cold and distant a manner"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss12",
+      "line": 38,
+      "phrase": "Conceptions only proper to myself",
+      "definition": "thoughts belonging only to me; private concerns"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss13",
+      "line": 42,
+      "phrase": "construe",
+      "definition": "interpret; read meaning into"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss14",
+      "line": 47,
+      "phrase": "worthy cogitations",
+      "definition": "important reflections; weighty thoughts"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss15",
+      "line": 56,
+      "phrase": "the best respect in Rome",
+      "definition": "the most respected men in Rome"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss16",
+      "line": 58,
+      "phrase": "this age's yoke",
+      "definition": "the servitude of the present time — under Caesar"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss17",
+      "line": 59,
+      "phrase": "had his eyes",
+      "definition": "could see (this situation rightly); i.e. would resist Caesar's rise"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss18",
+      "line": 69,
+      "phrase": "common laugher",
+      "definition": "a cheap jester; one who befriends everyone indiscriminately"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss19",
+      "line": 70,
+      "phrase": "stale with ordinary oaths",
+      "definition": "cheapen by overusing common oaths of friendship"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss20",
+      "line": 75,
+      "phrase": "rout",
+      "definition": "disorderly crowd; rabble"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss21",
+      "line": 84,
+      "phrase": "indifferently",
+      "definition": "impartially; with equal regard for both"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss22",
+      "line": 92,
+      "phrase": "had as lief",
+      "definition": "would just as soon; would prefer"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss23",
+      "line": 98,
+      "phrase": "Tiber chafing with her shores",
+      "definition": "the Tiber river rubbing angrily against its banks — the river flooding in winter"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss24",
+      "line": 102,
+      "phrase": "Accoutred as I was",
+      "definition": "fully armed and clothed as I was"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss25",
+      "line": 109,
+      "phrase": "Aeneas",
+      "definition": "the legendary Trojan hero, mythical founder of Rome; subject of Virgil's *Aeneid*. He carried his father Anchises on his back when Troy fell"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss26",
+      "line": 110,
+      "phrase": "flames of Troy",
+      "definition": "the burning of Troy by the Greeks — the event that drove Aeneas to Italy"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss27",
+      "line": 111,
+      "phrase": "old Anchises",
+      "definition": "Aeneas's aged father, whom he carried out of burning Troy on his shoulders"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss28",
+      "line": 116,
+      "phrase": "fever when he was in Spain",
+      "definition": "Caesar's historical illness during his campaigns in Spain — Plutarch reports it; Cassius uses it to diminish Caesar's divine image"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss29",
+      "line": 124,
+      "phrase": "Titinius",
+      "definition": "Cassius's lieutenant, later present at Philippi"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss30",
+      "line": 127,
+      "phrase": "get the start of",
+      "definition": "gain advantage over; outstrip"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss31",
+      "line": 128,
+      "phrase": "bear the palm alone",
+      "definition": "take the prize (victor's palm-branch) by himself"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss32",
+      "line": 131,
+      "phrase": "bestride the narrow world",
+      "definition": "straddle the world like a giant astride it"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss33",
+      "line": 132,
+      "phrase": "Colossus",
+      "definition": "the bronze statue of Helios at Rhodes, over 100 feet tall; ancient wonder of the world; Cassius imagines it bestriding the harbour (a later legend not actually described by ancient sources)"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss34",
+      "line": 136,
+      "phrase": "fault, dear Brutus, is not in our stars",
+      "definition": "blame lies not in fate but in human character — rejecting astrological determinism in favour of human agency"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss35",
+      "line": 137,
+      "phrase": "underlings",
+      "definition": "subordinates; inferiors"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss36",
+      "line": 142,
+      "phrase": "conjure with",
+      "definition": "use as a magic-word to summon spirits"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss37",
+      "line": 148,
+      "phrase": "great flood",
+      "definition": "the primordial deluge, here the Roman/Greek version in which Deucalion and Pyrrha repopulate the world"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss38",
+      "line": 152,
+      "phrase": "Rome indeed and room enough",
+      "definition": "pun — 'Rome' and 'room' were near-homophones in Elizabethan pronunciation; Cassius says Rome has shrunk to contain one man"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss39",
+      "line": 155,
+      "phrase": "a Brutus once",
+      "definition": "Lucius Junius Brutus, the legendary founder of the Roman Republic (509 BCE) who expelled the last king Tarquinius Superbus; Marcus Brutus's ancestor"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss40",
+      "line": 167,
+      "phrase": "chew upon this",
+      "definition": "think it over; ruminate"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss41",
+      "line": 175,
+      "phrase": "pluck Casca by the sleeve",
+      "definition": "grab Casca's sleeve to stop him"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss42",
+      "line": 180,
+      "phrase": "chidden train",
+      "definition": "scolded attendants"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss43",
+      "line": 182,
+      "phrase": "ferret",
+      "definition": "sharp and red — like a ferret's eyes"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss44",
+      "line": 189,
+      "phrase": "lean and hungry look",
+      "definition": "Caesar's famous description of Cassius — gaunt, hungry for advantage; the line is lifted almost directly from North's Plutarch"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss45",
+      "line": 192,
+      "phrase": "well given",
+      "definition": "well-disposed; of good character"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss46",
+      "line": 196,
+      "phrase": "spare",
+      "definition": "lean; sparing"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss47",
+      "line": 207,
+      "phrase": "always I am Caesar",
+      "definition": "Caesar's formal self-naming — speaking of himself in the third person, in the regal style"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss48",
+      "line": 210,
+      "phrase": "cloak",
+      "definition": "outer garment; the Elizabethan cloak is an anachronism for a Roman toga"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss49",
+      "line": 214,
+      "phrase": "chanced",
+      "definition": "happened"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss50",
+      "line": 217,
+      "phrase": "a-shouting",
+      "definition": "(they) started shouting"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss51",
+      "line": 221,
+      "phrase": "Ay, marry",
+      "definition": "yes, indeed (mild oath, from 'by the Virgin Mary')"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss52",
+      "line": 228,
+      "phrase": "coronets",
+      "definition": "lesser crowns; circlets — not full royal crowns"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss53",
+      "line": 229,
+      "phrase": "fain",
+      "definition": "gladly; willingly"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss54",
+      "line": 234,
+      "phrase": "rabblement",
+      "definition": "mob; the riff-raff"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss55",
+      "line": 234,
+      "phrase": "chopped hands",
+      "definition": "chapped, roughened working-class hands"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss56",
+      "line": 237,
+      "phrase": "swounded",
+      "definition": "swooned; fainted (Caesar's epileptic seizure)"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss57",
+      "line": 244,
+      "phrase": "falling sickness",
+      "definition": "epilepsy — the Elizabethan name; Plutarch records Caesar's attacks"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss58",
+      "line": 244,
+      "phrase": "falling sickness",
+      "definition": "Cassius's pun: Rome itself is in political decline ('falling') under Caesar"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss59",
+      "line": 246,
+      "phrase": "tag-rag people",
+      "definition": "the ragged mob; the common people dismissively named"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss60",
+      "line": 251,
+      "phrase": "doublet",
+      "definition": "a close-fitting Elizabethan jacket — anachronism; a Roman would wear a toga, not a doublet. Casca's costume vocabulary is Renaissance, not ancient"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss61",
+      "line": 263,
+      "phrase": "spoke Greek",
+      "definition": "Cicero actually spoke Greek (a learned language among Roman elites); Casca's 'Greek to me' is the origin of the modern idiom"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss62",
+      "line": 266,
+      "phrase": "Greek to me",
+      "definition": "unintelligible (to me) — the phrase enters English from this line"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss63",
+      "line": 268,
+      "phrase": "put to silence",
+      "definition": "removed from office and silenced — likely executed or exiled; Plutarch says they were deprived of their tribuneship"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss64",
+      "line": 270,
+      "phrase": "sup",
+      "definition": "have an evening meal"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss65",
+      "line": 275,
+      "phrase": "quick mettle",
+      "definition": "sharp in wit; spirited (metal/mettle pun)"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss66",
+      "line": 279,
+      "phrase": "rudeness",
+      "definition": "roughness of manner (not modern 'rudeness')"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss67",
+      "line": 288,
+      "phrase": "honourable metal may be wrought",
+      "definition": "noble character can be shaped (like metal); Cassius plans to seduce Brutus through forged letters"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss68",
+      "line": 295,
+      "phrase": "several hands",
+      "definition": "different handwritings — to disguise a single author"
+    },
+    {
+      "id": "julius_caesar_act1_scene2_gloss69",
+      "line": 299,
+      "phrase": "ambition shall be glanced at",
+      "definition": "Caesar's desire for power will be hinted at; 'ambition' in Elizabethan usage is a political vice, heavier in weight than modern 'ambition'"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "julius_caesar_act1_scene2_ann1",
+      "line_start": 11,
+      "line_end": 22,
+      "citation_display": "Julius Caesar 1.2.11–22",
+      "category": "structural",
+      "title": "The Soothsayer at the edge of the stage",
+      "body": "The Soothsayer's two-line interruption of the Lupercalian procession is dramatic compression at full strength. The prophecy arrives in fifteen words, and the play's entire clock is now set: every scene between this one and 3.1 counts down to the ides.\n\nShakespeare also uses the Soothsayer to characterise Caesar. Caesar's immediate response — 'He is a dreamer; let us leave him: pass' — is superstition-inflected (he takes the warning seriously enough to stop the procession) but finally dismissive. The play will revisit this exact psychological posture in 2.2: Caesar will take Calpurnia's dreams and the augurers' failed sacrifice seriously enough to stay home, then be argued out of his fear. The Soothsayer's warning is the first instance of a pattern that will kill him.",
+      "sources": [
+        "Plutarch, *Life of Caesar* §63 (North trans., 1579)",
+        "John D. Cox, *Shakespeare and the Dramaturgy of Power* (1989)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act1_scene2_ann2",
+      "line_start": 85,
+      "line_end": 158,
+      "citation_display": "Julius Caesar 1.2.85–158",
+      "category": "thematic",
+      "title": "Cassius's temptation scene: Shakespeare's template",
+      "body": "Cassius's long seduction of Brutus is the template for every later Shakespeare temptation scene. Iago seducing Othello (3.3), the Weird Sisters seducing Macbeth (1.3), Goneril and Regan drawing Lear, even Prospero dismissing Caliban — each owes its shape to Cassius here. The technique is specific: use what the target already half-believes, flatter him with mirror-images of his own virtue, supply the specific fear that rationalises the action the tempter wants.\n\nCassius takes Brutus's reverence for republican institutions ('Rome indeed and room enough / When there is in it but one only man') and weaponises the family name ('There was a Brutus once that would have brook'd / The eternal devil to keep his state in Rome / As easily as a king'). By the end of this scene, Brutus hasn't agreed to kill Caesar — but he has agreed to consider it, which is the movement the tempter needed.\n\nCassius's final soliloquy (L287–301) confirms the technique is conscious: 'Well, Brutus, thou art noble; yet, I see, / Thy honourable metal may be wrought / From that it is disposed.' The forged letters in Brutus's window are already planned.",
+      "sources": [
+        "A. C. Bradley, *Shakespearean Tragedy* (1904)",
+        "Harold Bloom, *Shakespeare: The Invention of the Human* (1998)",
+        "Robert S. Miola, *Shakespeare's Rome* (1983)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act1_scene2_ann3",
+      "line_start": 187,
+      "line_end": 207,
+      "citation_display": "Julius Caesar 1.2.187–207",
+      "category": "historical",
+      "title": "'A lean and hungry look' — Plutarch in Shakespeare's mouth",
+      "body": "Caesar's assessment of Cassius is among the clearest examples of Shakespeare working directly from Sir Thomas North's 1579 translation of Plutarch's *Lives*. North's text reads: 'Caesar also had Cassius in great jealousy, and suspected him much: whereupon he said on a time to his friends, What will Cassius do, think ye? I like not his pale looks.'\n\nPlutarch's *Life of Caesar* continues more broadly: 'As for those pale-visaged and carrion-lean people, I never reckon of them. But those fat men and smooth-combed heads, quoth he, I never reckon them dangerous. But these pale, visaged and carrion-lean people, I fear them most — meaning Brutus and Cassius.' Shakespeare has compressed this into the famous verse while keeping North's specific language: 'pale', 'lean', 'fear'.\n\nThis is Shakespeare's working method for *Julius Caesar*. The direct source is not Roman history in the abstract but one book on one shelf — Sir Thomas North's 1579 English translation of Jacques Amyot's 1559 French translation of Plutarch's Greek. The rhetorical moments the audience remembers ('Et tu, Brute', 'Beware the ides of March', 'lean and hungry look') are almost all places where Shakespeare lightly versifies North.",
+      "sources": [
+        "Sir Thomas North, *Plutarch's Lives* (1579), 'Life of Caesar' §62",
+        "T. J. B. Spencer (ed.), *Shakespeare's Plutarch* (Penguin, 1964)",
+        "C. B. R. Pelling, 'Plutarch's Adaptation of His Source-Material', *JHS* 100 (1980)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act1_scene2_ann4",
+      "line_start": 251,
+      "line_end": 268,
+      "citation_display": "Julius Caesar 1.2.251–268",
+      "category": "historical",
+      "title": "Doublets in Rome: the play's anachronisms as policy",
+      "body": "Casca's report that Caesar 'pluck'd me ope his doublet' and 'offered them his throat to cut' is a casual line with a very un-casual costume. Doublets are Renaissance garments; a Roman would wear a toga and tunic. Shakespeare's Rome is full of these anachronisms: the clock that strikes in 2.1, the book with turning pages Brutus reads in 4.3, the mechanical clock again in 2.2 ('strucken eight'), the Cheapside cobbler's jokes in 1.1, Cassius's doublet in 1.3 ('unbraced').\n\nThese are not carelessness. Shakespeare's plays knew what Roman dress looked like — Julius Caesar had been a staple of Elizabethan history for a generation. The anachronisms are a deliberate strategy: Rome is made legible to the English audience by being dressed in their own clothes. The argument about republican politics, about the line between lawful authority and tyranny, about the body politic — all of these are easier to prosecute on a London stage when the Forum looks a bit like Westminster and the senators could, physically, be privy councillors.\n\nThe reader should not try to correct the anachronisms away. They are the mechanism by which the play does its political work on its audience.",
+      "sources": [
+        "Naomi Conn Liebler, *Shakespeare's Festive Tragedy* (1995), ch. 4",
+        "Paul A. Cantor, *Shakespeare's Rome* (1976)",
+        "Coppélia Kahn, *Roman Shakespeare* (1997)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act1_scene2_ann5",
+      "line_start": 131,
+      "line_end": 137,
+      "citation_display": "Julius Caesar 1.2.131–137",
+      "category": "close_reading",
+      "title": "Colossus and stars: the speech that invents Cassius's politics",
+      "body": "'Why, man, he doth bestride the narrow world / Like a Colossus' is the play's first formalised image of Caesar as over-scaled man. The Colossus of Rhodes (a hundred-foot bronze statue of Helios) was one of the Seven Wonders; the legend that it bestrode the harbour is medieval, not ancient, but had entered the English imaginary. Cassius translates the image into explicit anti-tyranny: the Colossus stands so huge that other men 'walk under his huge legs and peep about / To find ourselves dishonourable graves.'\n\nThe complement arrives immediately: 'The fault, dear Brutus, is not in our stars, / But in ourselves, that we are underlings.' This rejection of astrological determinism is itself political — if Caesar's rise is fated, it cannot be resisted; if it is merely a consequence of other men's cowardice, then it demands action. Cassius is building Brutus a philosophy of agency; the conspiracy is its necessary conclusion.\n\nShakespeare will replay the irony in 3.1 when Caesar declares himself 'constant as the northern star' immediately before being stabbed twenty-three times. The play is arguing something specific about the relation between a man's self-image and his fate.",
+      "sources": [
+        "Ernst Cassirer, *The Myth of the State* (1946)",
+        "Wayne A. Rebhorn, 'The Crisis of the Aristocracy in *Julius Caesar*', *Renaissance Quarterly* 43 (1990)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "julius_caesar_act1_scene2_q1",
+      "kind": "close_reading",
+      "prompt": "Where does Shakespeare get 'a lean and hungry look'?",
+      "options": [
+        "He invents it freshly",
+        "From North's 1579 English translation of Plutarch, which he compresses almost verbatim",
+        "From Suetonius's Latin",
+        "From Livy"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 189,
+      "anchor_line_end": 192
+    },
+    {
+      "id": "julius_caesar_act1_scene2_q2",
+      "kind": "theme",
+      "prompt": "Cassius's long seduction of Brutus functions as:",
+      "options": [
+        "Comic interlude",
+        "The template for later Shakespearean temptation scenes — Iago/Othello, the Witches/Macbeth all follow its shape",
+        "Historical exposition only",
+        "A flattering portrait of Cassius's eloquence without further purpose"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 85,
+      "anchor_line_end": 158
+    },
+    {
+      "id": "julius_caesar_act1_scene2_q3",
+      "kind": "close_reading",
+      "prompt": "'The fault, dear Brutus, is not in our stars, / But in ourselves, that we are underlings' is rhetorically aimed at:",
+      "options": [
+        "Defending astrology",
+        "Rejecting fate in favour of human agency, so the conspiracy becomes a moral duty",
+        "Expressing humility",
+        "Complaining about Roman weather"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 135,
+      "anchor_line_end": 137
+    },
+    {
+      "id": "julius_caesar_act1_scene2_q4",
+      "kind": "comprehension",
+      "prompt": "What does Casca say happened at the Lupercal ceremony?",
+      "options": [
+        "Caesar was acclaimed king",
+        "Antony thrice offered Caesar a crown, which Caesar put by each time — then Caesar fell in a seizure",
+        "Caesar refused to attend",
+        "The tribunes disrupted the ceremony"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 215,
+      "anchor_line_end": 245
+    },
+    {
+      "id": "julius_caesar_act1_scene2_q5",
+      "kind": "historical",
+      "prompt": "Casca's mention of Caesar 'pluck'd me ope his doublet' is:",
+      "options": [
+        "Accurate Roman dress",
+        "A deliberate Renaissance-in-Rome anachronism; doublets are Elizabethan garments, one of several such dressings-in-English of the Roman setting",
+        "An editorial error",
+        "A dream sequence"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 251,
+      "anchor_line_end": 252
+    },
+    {
+      "id": "julius_caesar_act1_scene2_q6",
+      "kind": "close_reading",
+      "prompt": "Cassius's 'bestride the narrow world / Like a Colossus' refers to:",
+      "options": [
+        "Caesar's literal size",
+        "The bronze statue of Helios at Rhodes, legendarily said to straddle the harbour — an image of overbearing scale that dishonours those walking beneath",
+        "A sea-voyage",
+        "A Roman god"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 131,
+      "anchor_line_end": 134
+    },
+    {
+      "id": "julius_caesar_act1_scene2_q7",
+      "kind": "inference",
+      "prompt": "Why is the Soothsayer's warning dramatically important despite its brevity?",
+      "options": [
+        "It shows Shakespeare's interest in magic",
+        "It sets the play's clock — every scene between 1.2 and 3.1 now counts down to the ides of March",
+        "It introduces a new character unnecessary to the plot",
+        "It provides comic relief"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 16,
+      "anchor_line_end": 22
+    },
+    {
+      "id": "julius_caesar_act1_scene2_q8",
+      "kind": "theme",
+      "prompt": "What does Cassius's closing soliloquy reveal about his method?",
+      "options": [
+        "He is uncertain whether to proceed",
+        "The seduction of Brutus was consciously engineered, and the forged letters that will arrive in Brutus's window are next",
+        "He regrets manipulating Brutus",
+        "He plans to abandon the plot"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 287,
+      "anchor_line_end": 301
+    }
+  ]
+}

@@ -1,0 +1,680 @@
+{
+  "section_id": "julius_caesar_act1_scene1",
+  "work_id": "julius-caesar",
+  "sequence": 1,
+  "act": 1,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "Rome. A street",
+  "line_count": 74,
+  "word_count": 586,
+  "est_read_minutes": 3,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "FLAVIUS",
+      "text": "Hence! home, you idle creatures get you home:"
+    },
+    {
+      "number": 2,
+      "speaker": "FLAVIUS",
+      "text": "Is this a holiday? what! know you not,"
+    },
+    {
+      "number": 3,
+      "speaker": "FLAVIUS",
+      "text": "Being mechanical, you ought not walk"
+    },
+    {
+      "number": 4,
+      "speaker": "FLAVIUS",
+      "text": "Upon a labouring day without the sign"
+    },
+    {
+      "number": 5,
+      "speaker": "FLAVIUS",
+      "text": "Of your profession? Speak, what trade art thou?"
+    },
+    {
+      "number": 6,
+      "speaker": "FIRST COMMONER",
+      "text": "Why, sir, a carpenter."
+    },
+    {
+      "number": 7,
+      "speaker": "MARULLUS",
+      "text": "Where is thy leather apron and thy rule?"
+    },
+    {
+      "number": 8,
+      "speaker": "MARULLUS",
+      "text": "What dost thou with thy best apparel on?"
+    },
+    {
+      "number": 9,
+      "speaker": "MARULLUS",
+      "text": "You, sir, what trade are you?"
+    },
+    {
+      "number": 10,
+      "speaker": "SECOND COMMONER",
+      "text": "Truly, sir, in respect of a fine workman, I am but, as"
+    },
+    {
+      "number": 11,
+      "speaker": "SECOND COMMONER",
+      "text": "you would say, a cobbler."
+    },
+    {
+      "number": 12,
+      "speaker": "MARULLUS",
+      "text": "But what trade art thou? answer me directly."
+    },
+    {
+      "number": 13,
+      "speaker": "SECOND COMMONER",
+      "text": "A trade, sir, that, I hope, I may use with a safe"
+    },
+    {
+      "number": 14,
+      "speaker": "SECOND COMMONER",
+      "text": "conscience; which is, indeed, sir, a mender of bad soles."
+    },
+    {
+      "number": 15,
+      "speaker": "MARULLUS",
+      "text": "What trade, thou knave? thou naughty knave, what trade?"
+    },
+    {
+      "number": 16,
+      "speaker": "SECOND COMMONER",
+      "text": "Nay, I beseech you, sir, be not out with me: yet, if"
+    },
+    {
+      "number": 17,
+      "speaker": "SECOND COMMONER",
+      "text": "you be out, sir, I can mend you."
+    },
+    {
+      "number": 18,
+      "speaker": "MARULLUS",
+      "text": "What meanest thou by that? mend me, thou saucy fellow!"
+    },
+    {
+      "number": 19,
+      "speaker": "SECOND COMMONER",
+      "text": "Why, sir, cobble you."
+    },
+    {
+      "number": 19,
+      "speaker": "FLAVIUS",
+      "text": "Thou art a cobbler, art thou?"
+    },
+    {
+      "number": 20,
+      "speaker": "SECOND COMMONER",
+      "text": "Truly, sir, all that I live by is with the awl: I"
+    },
+    {
+      "number": 21,
+      "speaker": "SECOND COMMONER",
+      "text": "meddle with no tradesman’s matters, nor women’s matters, but with awl. I"
+    },
+    {
+      "number": 22,
+      "speaker": "SECOND COMMONER",
+      "text": "am, indeed, sir, a surgeon to old shoes; when they are in"
+    },
+    {
+      "number": 23,
+      "speaker": "SECOND COMMONER",
+      "text": "great danger, I recover them. As proper men as ever trod upon"
+    },
+    {
+      "number": 24,
+      "speaker": "SECOND COMMONER",
+      "text": "neat’s leather have gone upon my handiwork."
+    },
+    {
+      "number": 25,
+      "speaker": "FLAVIUS",
+      "text": "But wherefore art not in thy shop to-day?"
+    },
+    {
+      "number": 26,
+      "speaker": "FLAVIUS",
+      "text": "Why dost thou lead these men about the streets?"
+    },
+    {
+      "number": 27,
+      "speaker": "SECOND COMMONER",
+      "text": "Truly, sir, to wear out their shoes, to get myself into more"
+    },
+    {
+      "number": 28,
+      "speaker": "SECOND COMMONER",
+      "text": "work. But, indeed, sir, we make holiday, to see Caesar and to"
+    },
+    {
+      "number": 29,
+      "speaker": "SECOND COMMONER",
+      "text": "rejoice in his triumph."
+    },
+    {
+      "number": 30,
+      "speaker": "MARULLUS",
+      "text": "Wherefore rejoice? What conquest brings he home?"
+    },
+    {
+      "number": 31,
+      "speaker": "MARULLUS",
+      "text": "What tributaries follow him to Rome,"
+    },
+    {
+      "number": 32,
+      "speaker": "MARULLUS",
+      "text": "To grace in captive bonds his chariot-wheels?"
+    },
+    {
+      "number": 33,
+      "speaker": "MARULLUS",
+      "text": "You blocks, you stones, you worse than senseless things!"
+    },
+    {
+      "number": 34,
+      "speaker": "MARULLUS",
+      "text": "O you hard hearts, you cruel men of Rome,"
+    },
+    {
+      "number": 35,
+      "speaker": "MARULLUS",
+      "text": "Knew you not Pompey? Many a time and oft"
+    },
+    {
+      "number": 36,
+      "speaker": "MARULLUS",
+      "text": "Have you climb’d up to walls and battlements,"
+    },
+    {
+      "number": 37,
+      "speaker": "MARULLUS",
+      "text": "To towers and windows, yea, to chimney-tops,"
+    },
+    {
+      "number": 38,
+      "speaker": "MARULLUS",
+      "text": "Your infants in your arms, and there have sat"
+    },
+    {
+      "number": 39,
+      "speaker": "MARULLUS",
+      "text": "The live-long day, with patient expectation,"
+    },
+    {
+      "number": 40,
+      "speaker": "MARULLUS",
+      "text": "To see great Pompey pass the streets of Rome:"
+    },
+    {
+      "number": 41,
+      "speaker": "MARULLUS",
+      "text": "And when you saw his chariot but appear,"
+    },
+    {
+      "number": 42,
+      "speaker": "MARULLUS",
+      "text": "Have you not made an universal shout,"
+    },
+    {
+      "number": 43,
+      "speaker": "MARULLUS",
+      "text": "That Tiber trembled underneath her banks,"
+    },
+    {
+      "number": 44,
+      "speaker": "MARULLUS",
+      "text": "To hear the replication of your sounds"
+    },
+    {
+      "number": 45,
+      "speaker": "MARULLUS",
+      "text": "Made in her concave shores?"
+    },
+    {
+      "number": 46,
+      "speaker": "MARULLUS",
+      "text": "And do you now put on your best attire?"
+    },
+    {
+      "number": 47,
+      "speaker": "MARULLUS",
+      "text": "And do you now cull out a holiday?"
+    },
+    {
+      "number": 48,
+      "speaker": "MARULLUS",
+      "text": "And do you now strew flowers in his way"
+    },
+    {
+      "number": 49,
+      "speaker": "MARULLUS",
+      "text": "That comes in triumph over Pompey’s blood?"
+    },
+    {
+      "number": 50,
+      "speaker": "MARULLUS",
+      "text": "Be gone!"
+    },
+    {
+      "number": 51,
+      "speaker": "MARULLUS",
+      "text": "Run to your houses, fall upon your knees,"
+    },
+    {
+      "number": 52,
+      "speaker": "MARULLUS",
+      "text": "Pray to the gods to intermit the plague"
+    },
+    {
+      "number": 53,
+      "speaker": "MARULLUS",
+      "text": "That needs must light on this ingratitude."
+    },
+    {
+      "number": 54,
+      "speaker": "FLAVIUS",
+      "text": "Go, go, good countrymen, and, for this fault,"
+    },
+    {
+      "number": 55,
+      "speaker": "FLAVIUS",
+      "text": "Assemble all the poor men of your sort;"
+    },
+    {
+      "number": 56,
+      "speaker": "FLAVIUS",
+      "text": "Draw them to Tiber banks, and weep your tears"
+    },
+    {
+      "number": 57,
+      "speaker": "FLAVIUS",
+      "text": "Into the channel, till the lowest stream"
+    },
+    {
+      "number": 58,
+      "speaker": "FLAVIUS",
+      "text": "Do kiss the most exalted shores of all."
+    },
+    {
+      "number": 59,
+      "speaker": "FLAVIUS",
+      "text": "See whether their basest metal be not moved;"
+    },
+    {
+      "number": 60,
+      "speaker": "FLAVIUS",
+      "text": "They vanish tongue-tied in their guiltiness."
+    },
+    {
+      "number": 61,
+      "speaker": "FLAVIUS",
+      "text": "Go you down that way towards the Capitol;"
+    },
+    {
+      "number": 62,
+      "speaker": "FLAVIUS",
+      "text": "This way will I: disrobe the images,"
+    },
+    {
+      "number": 63,
+      "speaker": "FLAVIUS",
+      "text": "If you do find them deck’d with ceremonies."
+    },
+    {
+      "number": 64,
+      "speaker": "MARULLUS",
+      "text": "May we do so?"
+    },
+    {
+      "number": 65,
+      "speaker": "MARULLUS",
+      "text": "You know it is the feast of Lupercal."
+    },
+    {
+      "number": 66,
+      "speaker": "FLAVIUS",
+      "text": "It is no matter; let no images"
+    },
+    {
+      "number": 67,
+      "speaker": "FLAVIUS",
+      "text": "Be hung with Caesar’s trophies. I’ll about,"
+    },
+    {
+      "number": 68,
+      "speaker": "FLAVIUS",
+      "text": "And drive away the vulgar from the streets:"
+    },
+    {
+      "number": 69,
+      "speaker": "FLAVIUS",
+      "text": "So do you too, where you perceive them thick."
+    },
+    {
+      "number": 70,
+      "speaker": "FLAVIUS",
+      "text": "These growing feathers pluck’d from Caesar’s wing"
+    },
+    {
+      "number": 71,
+      "speaker": "FLAVIUS",
+      "text": "Will make him fly an ordinary pitch,"
+    },
+    {
+      "number": 72,
+      "speaker": "FLAVIUS",
+      "text": "Who else would soar above the view of men"
+    },
+    {
+      "number": 73,
+      "speaker": "FLAVIUS",
+      "text": "And keep us all in servile fearfulness."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Flavius, Marullus, and certain Commoners."
+    },
+    {
+      "after_line": 58,
+      "text": "Exeunt all the Commoners."
+    },
+    {
+      "after_line": 73,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "julius_caesar_act1_scene1_gloss1",
+      "line": 1,
+      "phrase": "Hence!",
+      "definition": "away; go home"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss2",
+      "line": 3,
+      "phrase": "mechanical",
+      "definition": "manual labourers; craftsmen (not the modern 'mechanical')"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss3",
+      "line": 5,
+      "phrase": "what trade art thou",
+      "definition": "what is your trade?"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss4",
+      "line": 7,
+      "phrase": "thy rule",
+      "definition": "the carpenter's measuring stick, the badge of his profession"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss5",
+      "line": 14,
+      "phrase": "mender of bad soles",
+      "definition": "cobbler; quibble on 'souls' — he mends both shoes and (mockingly) people"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss6",
+      "line": 15,
+      "phrase": "knave",
+      "definition": "rogue; rascal"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss7",
+      "line": 16,
+      "phrase": "be not out with me",
+      "definition": "don't be angry with me (with pun on out-at-heel shoes)"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss8",
+      "line": 20,
+      "phrase": "awl",
+      "definition": "a shoemaker's pointed tool for making holes in leather; pun on 'all'"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss9",
+      "line": 24,
+      "phrase": "neat's leather",
+      "definition": "cow-hide; leather made from cattle"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss10",
+      "line": 29,
+      "phrase": "triumph",
+      "definition": "formal Roman procession honouring a victorious general; by Caesar's day a tightly-regulated political event"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss11",
+      "line": 31,
+      "phrase": "tributaries",
+      "definition": "captive chieftains led in a Roman triumph to pay homage to the conqueror"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss12",
+      "line": 32,
+      "phrase": "captive bonds",
+      "definition": "prisoner's chains"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss13",
+      "line": 35,
+      "phrase": "Pompey",
+      "definition": "Pompey the Great, Caesar's former ally then rival; defeated at Pharsalus (48 BCE) and murdered in Egypt; Caesar's current triumph is over Pompey's sons"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss14",
+      "line": 37,
+      "phrase": "chimney-tops",
+      "definition": "anachronism — rooftops of ordinary English houses, not Roman"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss15",
+      "line": 43,
+      "phrase": "Tiber trembled",
+      "definition": "the river Tiber, which runs through Rome; personified as shaking with the crowd's noise"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss16",
+      "line": 44,
+      "phrase": "replication",
+      "definition": "echo; reverberation"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss17",
+      "line": 45,
+      "phrase": "concave shores",
+      "definition": "curved, hollow banks (that echo sound)"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss18",
+      "line": 52,
+      "phrase": "intermit",
+      "definition": "suspend; hold off"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss19",
+      "line": 53,
+      "phrase": "ingratitude",
+      "definition": "thanklessness — here, the plebs' disloyalty to Pompey's memory"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss20",
+      "line": 60,
+      "phrase": "tongue-tied",
+      "definition": "silenced; unable to speak"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss21",
+      "line": 61,
+      "phrase": "Capitol",
+      "definition": "the hill in Rome with the temple of Jupiter; Rome's political and religious centre"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss22",
+      "line": 63,
+      "phrase": "deck'd with ceremonies",
+      "definition": "decorated with ceremonial ornaments — here, wreaths and garlands hung on Caesar's statues for his triumph"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss23",
+      "line": 65,
+      "phrase": "feast of Lupercal",
+      "definition": "the Lupercalia, ancient Roman festival held February 15 — young priests ran naked through the streets striking women with goatskin thongs to promote fertility"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss24",
+      "line": 68,
+      "phrase": "vulgar",
+      "definition": "the common people; the mob (Latin vulgus, no modern negative sense)"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss25",
+      "line": 70,
+      "phrase": "growing feathers pluck'd from Caesar's wing",
+      "definition": "clipping Caesar's growing ambition, as one clips a hawk's pinion feathers to keep it from flying too high"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss26",
+      "line": 71,
+      "phrase": "ordinary pitch",
+      "definition": "a lower, more normal flight — a falconry metaphor"
+    },
+    {
+      "id": "julius_caesar_act1_scene1_gloss27",
+      "line": 73,
+      "phrase": "servile fearfulness",
+      "definition": "a slavish, cowed state of mind — the condition of subjects under a tyrant"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "julius_caesar_act1_scene1_ann1",
+      "line_start": 30,
+      "line_end": 53,
+      "citation_display": "Julius Caesar 1.1.30–53",
+      "category": "historical",
+      "title": "Pompey, Pharsalus, and the shape of republican memory",
+      "body": "Marullus rebukes the crowd for celebrating Caesar while having cheered Pompey only a few years earlier. The charge lands only if the audience can hear what the tribune's invoking: the civil war of 49–45 BCE, which Caesar won by defeating Pompey at Pharsalus (48 BCE), after which Pompey was murdered in Egypt. Caesar's current triumph — Shakespeare's opening scene — is over Pompey's *sons*, the last holdouts of the senatorial cause.\n\nThe scene introduces the play's political physics without a history lecture. The Republic has already been injured. The conspirators will not spend the play defending an intact democracy against a tyrant; they will spend it trying to revive a Republic that Caesar has effectively already replaced. Marullus's nostalgia for Pompey is, in that sense, the play's first definition of its republican nostalgia in general — mourning something already gone.",
+      "sources": [
+        "T. P. Wiseman, *Remembering the Roman People* (2009)",
+        "R. Syme, *The Roman Revolution* (1939)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act1_scene1_ann2",
+      "line_start": 60,
+      "line_end": 73,
+      "citation_display": "Julius Caesar 1.1.60–73",
+      "category": "thematic",
+      "title": "Growing feathers and servile fearfulness",
+      "body": "Flavius's closing image — 'These growing feathers pluck'd from Caesar's wing / Will make him fly an ordinary pitch' — introduces the play's recurring falconry and clipping metaphors. To the Renaissance audience this was technical language: a hawk's wing feathers could be trimmed to keep it flying low and under control. Flavius frames Caesar's ambition as a bird fledging — still clippable, but only for the moment.\n\nThe tribunes' fate, reported by Casca in 1.2 ('Marullus and Flavius, for pulling scarfs off Caesar's images, are put to silence'), is the first specific piece of evidence the play offers that Caesar has begun to punish political speech. What Brutus will frame as theoretical in his garden soliloquy — the worry that crowning Caesar would 'change his nature' — the tribunes have already touched the edge of.",
+      "sources": [
+        "T. S. Dorsch (ed.), Arden *Julius Caesar* (1955)",
+        "David Daniell (ed.), Arden 3 *Julius Caesar* (1998)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act1_scene1_ann3",
+      "line_start": 1,
+      "line_end": 29,
+      "citation_display": "Julius Caesar 1.1.1–29",
+      "category": "structural",
+      "title": "Prose, plebs, and the stock of Roman crowd-scenes",
+      "body": "Opening in prose with a trade-joking cobbler sets a register Shakespeare will exploit twice more (the funeral crowds of 3.2, the lynching crowd of 3.3). The Roman 'plebs' in this play are not noble peasants; they are working-class punsters who bend their opinions to whatever rhetorician last addressed them. The cobbler's puns on 'soles/souls' and 'awl/all' are Elizabethan craftsmen-jokes, not Roman — yet another deliberate English inflection of the setting. Shakespeare makes the Roman street look and sound like Cheapside.\n\nThe contrast with Marullus's verse rebuke is the play's first lesson in rhetoric: elevated oratory pitched to an audience already in its holiday clothes, tired of tribunes and hungry for Caesar. It will be the same audience, eager for a show, that Antony plays in 3.2.",
+      "sources": [
+        "Andrew Gurr, *Playgoing in Shakespeare's London* (1987)",
+        "Richard Wilson, *Julius Caesar: A Critical Casebook* (1992)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "julius_caesar_act1_scene1_q1",
+      "kind": "comprehension",
+      "prompt": "Why are the tribunes Flavius and Marullus so angry with the commoners?",
+      "options": [
+        "The commoners have refused to pay their taxes",
+        "The commoners are celebrating Caesar's triumph over Pompey's sons, though they once cheered Pompey himself",
+        "The commoners have committed a religious offence at the Lupercal",
+        "The commoners support a rival tribune"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 30,
+      "anchor_line_end": 53
+    },
+    {
+      "id": "julius_caesar_act1_scene1_q2",
+      "kind": "close_reading",
+      "prompt": "The Second Commoner's 'mender of bad soles' does what in the scene's opening exchange?",
+      "options": [
+        "States his trade plainly",
+        "Sets up a running pun on soles/souls and awl/all — the plebs' mode of indirect resistance to the tribunes",
+        "Announces his political allegiance",
+        "Mocks the audience"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 14,
+      "anchor_line_end": 24
+    },
+    {
+      "id": "julius_caesar_act1_scene1_q3",
+      "kind": "inference",
+      "prompt": "What does Flavius's falconry image 'growing feathers pluck'd from Caesar's wing' imply about Caesar's political trajectory?",
+      "options": [
+        "Caesar has already peaked and is in decline",
+        "Caesar is still a young bird whose ambition can, for now, be clipped — but soon won't be",
+        "Caesar has stolen feathers (metaphor for property) from the Roman people",
+        "Caesar intends to flee Rome"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 70,
+      "anchor_line_end": 73
+    },
+    {
+      "id": "julius_caesar_act1_scene1_q4",
+      "kind": "theme",
+      "prompt": "Shakespeare's opening with the tribunes rather than with Caesar signals:",
+      "options": [
+        "That Caesar is a minor character",
+        "That the play is concerned primarily with Rome's republican politics — not with Caesar the man, but with what his rise means for the state",
+        "That Shakespeare was uninterested in Caesar",
+        "That the actor playing Caesar wasn't ready"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 73
+    },
+    {
+      "id": "julius_caesar_act1_scene1_q5",
+      "kind": "comprehension",
+      "prompt": "What do the tribunes resolve to do about Caesar's statues?",
+      "options": [
+        "Leave them alone, since Lupercal is sacred",
+        "Strip the ceremonial wreaths from them, even though it is the feast of Lupercal",
+        "Destroy them entirely",
+        "Add new decorations"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 62,
+      "anchor_line_end": 69
+    }
+  ]
+}

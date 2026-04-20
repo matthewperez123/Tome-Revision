@@ -1,0 +1,254 @@
+{
+  "section_id": "richard_iii_act3_scene3",
+  "work_id": "richard-iii",
+  "sequence": 11,
+  "act": 3,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "Pomfret. Before the castle",
+  "line_count": 25,
+  "word_count": 196,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "RATCLIFF",
+      "text": "Come, bring forth the prisoners."
+    },
+    {
+      "number": 2,
+      "speaker": "RIVERS",
+      "text": "Sir Richard Ratcliff, let me tell thee this:"
+    },
+    {
+      "number": 3,
+      "speaker": "RIVERS",
+      "text": "To-day shalt thou behold a subject die"
+    },
+    {
+      "number": 4,
+      "speaker": "RIVERS",
+      "text": "For truth, for duty, and for loyalty."
+    },
+    {
+      "number": 5,
+      "speaker": "GREY",
+      "text": "God keep the prince from all the pack of you!"
+    },
+    {
+      "number": 6,
+      "speaker": "GREY",
+      "text": "A knot you are of damned blood-suckers."
+    },
+    {
+      "number": 7,
+      "speaker": "VAUGHAN",
+      "text": "You live that shall cry woe for this hereafter."
+    },
+    {
+      "number": 8,
+      "speaker": "RATCLIFF",
+      "text": "Dispatch; the limit of your lives is out."
+    },
+    {
+      "number": 9,
+      "speaker": "RIVERS",
+      "text": "O Pomfret, Pomfret! O thou bloody prison,"
+    },
+    {
+      "number": 10,
+      "speaker": "RIVERS",
+      "text": "Fatal and ominous to noble peers!"
+    },
+    {
+      "number": 11,
+      "speaker": "RIVERS",
+      "text": "Within the guilty closure of thy walls"
+    },
+    {
+      "number": 12,
+      "speaker": "RIVERS",
+      "text": "Richard the second here was hack’d to death;"
+    },
+    {
+      "number": 13,
+      "speaker": "RIVERS",
+      "text": "And, for more slander to thy dismal seat,"
+    },
+    {
+      "number": 14,
+      "speaker": "RIVERS",
+      "text": "We give thee up our guiltless blood to drink."
+    },
+    {
+      "number": 15,
+      "speaker": "GREY",
+      "text": "Now Margaret’s curse is fall’n upon our heads,"
+    },
+    {
+      "number": 16,
+      "speaker": "GREY",
+      "text": "For standing by when Richard stabb’d her son."
+    },
+    {
+      "number": 17,
+      "speaker": "RIVERS",
+      "text": "Then cursed she Hastings, then cursed she Buckingham,"
+    },
+    {
+      "number": 18,
+      "speaker": "RIVERS",
+      "text": "Then cursed she Richard. O, remember, God,"
+    },
+    {
+      "number": 19,
+      "speaker": "RIVERS",
+      "text": "To hear her prayers for them, as now for us!"
+    },
+    {
+      "number": 20,
+      "speaker": "RIVERS",
+      "text": "And for my sister and her princely sons,"
+    },
+    {
+      "number": 21,
+      "speaker": "RIVERS",
+      "text": "Be satisfied, dear God, with our true blood,"
+    },
+    {
+      "number": 22,
+      "speaker": "RIVERS",
+      "text": "Which, as thou know’st, unjustly must be spilt."
+    },
+    {
+      "number": 23,
+      "speaker": "RATCLIFF",
+      "text": "Make haste; the hour of death is expiate."
+    },
+    {
+      "number": 24,
+      "speaker": "RIVERS",
+      "text": "Come, Grey, come, Vaughan, let us all embrace:"
+    },
+    {
+      "number": 25,
+      "speaker": "RIVERS",
+      "text": "And take our leave, until we meet in heaven."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Sir Richard Ratcliff, with halberds, carrying Rivers, Grey, and Vaughan to death."
+    },
+    {
+      "after_line": 25,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act3_scene3_gloss1",
+      "line": 6,
+      "phrase": "knot you are of damned blood-suckers",
+      "definition": "a clique of damned blood-suckers — Grey's final condemnation of Richard's agents"
+    },
+    {
+      "id": "richard_iii_act3_scene3_gloss2",
+      "line": 8,
+      "phrase": "Dispatch",
+      "definition": "hurry; get it done (here, the execution)"
+    },
+    {
+      "id": "richard_iii_act3_scene3_gloss3",
+      "line": 9,
+      "phrase": "Pomfret, Pomfret",
+      "definition": "Rivers' apostrophe to Pontefract Castle — repeated vocative as lament-form"
+    },
+    {
+      "id": "richard_iii_act3_scene3_gloss4",
+      "line": 11,
+      "phrase": "guilty closure",
+      "definition": "guilty enclosure, walls stained with guilt"
+    },
+    {
+      "id": "richard_iii_act3_scene3_gloss5",
+      "line": 12,
+      "phrase": "Richard the second here was hack’d to death",
+      "definition": "Richard II was murdered at Pomfret in 1400 — Shakespeare's own earlier play's closing event; the dynasty's founding crime repeating"
+    },
+    {
+      "id": "richard_iii_act3_scene3_gloss6",
+      "line": 15,
+      "phrase": "Margaret’s curse is fall’n upon our heads",
+      "definition": "Margaret's 1.3 prophecy comes true — first confirmation of the curse-structure"
+    },
+    {
+      "id": "richard_iii_act3_scene3_gloss7",
+      "line": 23,
+      "phrase": "hour of death is expiate",
+      "definition": "the time for death is fulfilled; our hour is up"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act3_scene3_ann1",
+      "line_start": 1,
+      "line_end": 25,
+      "citation_display": "Richard III 3.3.1–25",
+      "category": "historical",
+      "title": "Pomfret and the ghosts of Richard II",
+      "body": "Rivers' apostrophe — \"O Pomfret, Pomfret! O thou bloody prison, / Fatal and ominous to noble peers!\" — invokes Pontefract Castle's long history as a royal slaughterhouse. Most pointedly, Richard II was imprisoned and murdered there in 1400, as dramatized in Shakespeare's own Richard II. Shakespeare cross-references his own play: the Yorkist murder of the Lancastrian king Henry VI (Tower, 1471) and the usurper Richard III's murder of Yorkist allies at Pomfret (1483) rhyme with the original sin of the cycle — Henry Bolingbroke's murder of Richard II at the same place. Pomfret is the Tudor Myth's master-location. Rivers names it consciously, and the scene gives Grey the play's first confirmation of Margaret's curse (\"Now Margaret's curse is fall'n upon our heads / For standing by when Richard stabb'd her son\"). The curse's machinery is now public to its victims.",
+      "sources": [
+        "E. M. W. Tillyard, Shakespeare's History Plays (1944)",
+        "John Jowett, The Oxford Shakespeare: Richard III (2000)",
+        "Raphael Holinshed, Chronicles (1587)"
+      ]
+    },
+    {
+      "id": "richard_iii_act3_scene3_ann2",
+      "line_start": 15,
+      "line_end": 25,
+      "citation_display": "Richard III 3.3.15–25",
+      "category": "structural",
+      "title": "Margaret's curse confirmed — the play begins its reckoning",
+      "body": "Grey's line — \"Now Margaret's curse is fall'n upon our heads, / For standing by when Richard stabb'd her son\" — is the first explicit confirmation within the play that Margaret's 1.3 cursing-speech was prophetic. The structural move is precise. Margaret cursed Rivers, Dorset, and Hastings (1.3.206–210); Rivers and Grey die here, Hastings dies at 3.4, Buckingham will die at 5.1 quoting her, and Richard dies at 5.4/5.5. The play's curse-mechanism becomes audible to its victims just before it kills them. Shakespeare is dramatizing prophecy as political epistemology: curses are real because historical violence accumulates as debt, and the debt is paid on schedule. Whether this is theology, dramaturgy, or both is a question the play does not settle. What the play demonstrates is that the curse-structure works.",
+      "sources": [
+        "Wolfgang Clemen, A Commentary on Shakespeare's Richard III (1968)",
+        "A. P. Rossiter, Angel with Horns (1961)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act3_scene3_q1",
+      "kind": "historical",
+      "prompt": "Why does Rivers call Pomfret Castle \"fatal and ominous to noble peers\"?",
+      "options": [
+        "Because of its location near the Scottish border",
+        "Because Richard II was imprisoned and murdered there in 1400 — Shakespeare's own Richard II cross-referenced here",
+        "Because it was built on the site of a Roman massacre",
+        "Because of an ancient curse laid upon it by the druids"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 9,
+      "anchor_line_end": 12
+    },
+    {
+      "id": "richard_iii_act3_scene3_q2",
+      "kind": "structural",
+      "prompt": "Grey's line \"Now Margaret's curse is fall'n upon our heads\" marks what moment in the play's architecture?",
+      "options": [
+        "A casual retrospective allusion",
+        "The first explicit confirmation inside the play that Margaret's 1.3 curses are prophetic — her curse-mechanism becomes audible to its victims just before it kills them",
+        "The beginning of a new subplot unrelated to Margaret",
+        "The moment Margaret herself returns to the stage"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 15,
+      "anchor_line_end": 19
+    }
+  ]
+}

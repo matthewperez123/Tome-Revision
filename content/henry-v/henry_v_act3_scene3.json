@@ -1,0 +1,702 @@
+{
+  "section_id": "henry_v_act3_scene3",
+  "work_id": "henry-v",
+  "sequence": 12,
+  "act": 3,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "The same. Before the gates of Harfleur",
+  "line_count": 58,
+  "word_count": 445,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KING HENRY",
+      "text": "How yet resolves the governor of the town?"
+    },
+    {
+      "number": 2,
+      "speaker": "KING HENRY",
+      "text": "This is the latest parle we will admit:"
+    },
+    {
+      "number": 3,
+      "speaker": "KING HENRY",
+      "text": "Therefore to our best mercy give yourselves;"
+    },
+    {
+      "number": 4,
+      "speaker": "KING HENRY",
+      "text": "Or like to men proud of destruction"
+    },
+    {
+      "number": 5,
+      "speaker": "KING HENRY",
+      "text": "Defy us to our worst: for, as I am a soldier,"
+    },
+    {
+      "number": 6,
+      "speaker": "KING HENRY",
+      "text": "A name that in my thoughts becomes me best,"
+    },
+    {
+      "number": 7,
+      "speaker": "KING HENRY",
+      "text": "If I begin the battery once again,"
+    },
+    {
+      "number": 8,
+      "speaker": "KING HENRY",
+      "text": "I will not leave the half-achieved Harfleur"
+    },
+    {
+      "number": 9,
+      "speaker": "KING HENRY",
+      "text": "Till in her ashes she lie buried."
+    },
+    {
+      "number": 10,
+      "speaker": "KING HENRY",
+      "text": "The gates of mercy shall be all shut up,"
+    },
+    {
+      "number": 11,
+      "speaker": "KING HENRY",
+      "text": "And the flesh’d soldier, rough and hard of heart,"
+    },
+    {
+      "number": 12,
+      "speaker": "KING HENRY",
+      "text": "In liberty of bloody hand shall range"
+    },
+    {
+      "number": 13,
+      "speaker": "KING HENRY",
+      "text": "With conscience wide as hell, mowing like grass"
+    },
+    {
+      "number": 14,
+      "speaker": "KING HENRY",
+      "text": "Your fresh-fair virgins and your flowering infants."
+    },
+    {
+      "number": 15,
+      "speaker": "KING HENRY",
+      "text": "What is it then to me, if impious War,"
+    },
+    {
+      "number": 16,
+      "speaker": "KING HENRY",
+      "text": "Array’d in flames like to the prince of fiends,"
+    },
+    {
+      "number": 17,
+      "speaker": "KING HENRY",
+      "text": "Do, with his smirch’d complexion, all fell feats"
+    },
+    {
+      "number": 18,
+      "speaker": "KING HENRY",
+      "text": "Enlink’d to waste and desolation?"
+    },
+    {
+      "number": 19,
+      "speaker": "KING HENRY",
+      "text": "What is’t to me, when you yourselves are cause,"
+    },
+    {
+      "number": 20,
+      "speaker": "KING HENRY",
+      "text": "If your pure maidens fall into the hand"
+    },
+    {
+      "number": 21,
+      "speaker": "KING HENRY",
+      "text": "Of hot and forcing violation?"
+    },
+    {
+      "number": 22,
+      "speaker": "KING HENRY",
+      "text": "What rein can hold licentious wickedness"
+    },
+    {
+      "number": 23,
+      "speaker": "KING HENRY",
+      "text": "When down the hill he holds his fierce career?"
+    },
+    {
+      "number": 24,
+      "speaker": "KING HENRY",
+      "text": "We may as bootless spend our vain command"
+    },
+    {
+      "number": 25,
+      "speaker": "KING HENRY",
+      "text": "Upon the enraged soldiers in their spoil"
+    },
+    {
+      "number": 26,
+      "speaker": "KING HENRY",
+      "text": "As send precepts to the leviathan"
+    },
+    {
+      "number": 27,
+      "speaker": "KING HENRY",
+      "text": "To come ashore. Therefore, you men of Harfleur,"
+    },
+    {
+      "number": 28,
+      "speaker": "KING HENRY",
+      "text": "Take pity of your town and of your people,"
+    },
+    {
+      "number": 29,
+      "speaker": "KING HENRY",
+      "text": "Whiles yet my soldiers are in my command;"
+    },
+    {
+      "number": 30,
+      "speaker": "KING HENRY",
+      "text": "Whiles yet the cool and temperate wind of grace"
+    },
+    {
+      "number": 31,
+      "speaker": "KING HENRY",
+      "text": "O’erblows the filthy and contagious clouds"
+    },
+    {
+      "number": 32,
+      "speaker": "KING HENRY",
+      "text": "Of heady murder, spoil and villainy."
+    },
+    {
+      "number": 33,
+      "speaker": "KING HENRY",
+      "text": "If not, why, in a moment look to see"
+    },
+    {
+      "number": 34,
+      "speaker": "KING HENRY",
+      "text": "The blind and bloody soldier with foul hand"
+    },
+    {
+      "number": 35,
+      "speaker": "KING HENRY",
+      "text": "Defile the locks of your shrill-shrieking daughters;"
+    },
+    {
+      "number": 36,
+      "speaker": "KING HENRY",
+      "text": "Your fathers taken by the silver beards,"
+    },
+    {
+      "number": 37,
+      "speaker": "KING HENRY",
+      "text": "And their most reverend heads dash’d to the walls,"
+    },
+    {
+      "number": 38,
+      "speaker": "KING HENRY",
+      "text": "Your naked infants spitted upon pikes,"
+    },
+    {
+      "number": 39,
+      "speaker": "KING HENRY",
+      "text": "Whiles the mad mothers with their howls confused"
+    },
+    {
+      "number": 40,
+      "speaker": "KING HENRY",
+      "text": "Do break the clouds, as did the wives of Jewry"
+    },
+    {
+      "number": 41,
+      "speaker": "KING HENRY",
+      "text": "At Herod’s bloody-hunting slaughtermen."
+    },
+    {
+      "number": 42,
+      "speaker": "KING HENRY",
+      "text": "What say you? will you yield, and this avoid,"
+    },
+    {
+      "number": 43,
+      "speaker": "KING HENRY",
+      "text": "Or, guilty in defence, be thus destroy’d?"
+    },
+    {
+      "number": 44,
+      "speaker": "GOVERNOR",
+      "text": "Our expectation hath this day an end:"
+    },
+    {
+      "number": 45,
+      "speaker": "GOVERNOR",
+      "text": "The Dauphin, whom of succours we entreated,"
+    },
+    {
+      "number": 46,
+      "speaker": "GOVERNOR",
+      "text": "Returns us that his powers are yet not ready"
+    },
+    {
+      "number": 47,
+      "speaker": "GOVERNOR",
+      "text": "To raise so great a siege. Therefore, great king,"
+    },
+    {
+      "number": 48,
+      "speaker": "GOVERNOR",
+      "text": "We yield our town and lives to thy soft mercy."
+    },
+    {
+      "number": 49,
+      "speaker": "GOVERNOR",
+      "text": "Enter our gates; dispose of us and ours;"
+    },
+    {
+      "number": 50,
+      "speaker": "GOVERNOR",
+      "text": "For we no longer are defensible."
+    },
+    {
+      "number": 50,
+      "speaker": "KING HENRY",
+      "text": "Open your gates. Come, uncle Exeter,"
+    },
+    {
+      "number": 51,
+      "speaker": "KING HENRY",
+      "text": "Go you and enter Harfleur; there remain,"
+    },
+    {
+      "number": 52,
+      "speaker": "KING HENRY",
+      "text": "And fortify it strongly ’gainst the French:"
+    },
+    {
+      "number": 53,
+      "speaker": "KING HENRY",
+      "text": "Use mercy to them all. For us, dear uncle,"
+    },
+    {
+      "number": 54,
+      "speaker": "KING HENRY",
+      "text": "The winter coming on and sickness growing"
+    },
+    {
+      "number": 55,
+      "speaker": "KING HENRY",
+      "text": "Upon our soldiers, we will retire to Calais."
+    },
+    {
+      "number": 56,
+      "speaker": "KING HENRY",
+      "text": "Tonight in Harfleur will we be your guest;"
+    },
+    {
+      "number": 57,
+      "speaker": "KING HENRY",
+      "text": "Tomorrow for the march are we addrest."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "The Governor and some Citizens on the walls; the English forces below. Enter King Henry and his train."
+    },
+    {
+      "after_line": 57,
+      "text": "Flourish. The King and his train enter the town."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act3_scene3_gloss1",
+      "line": 1,
+      "phrase": "resolves",
+      "definition": "decides; answers"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss2",
+      "line": 1,
+      "phrase": "governor",
+      "definition": "the town's military commander, empowered to surrender"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss3",
+      "line": 2,
+      "phrase": "latest parle",
+      "definition": "last parley — the final chance to negotiate before assault"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss4",
+      "line": 3,
+      "phrase": "to our best mercy give yourselves",
+      "definition": "surrender unconditionally to our mercy"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss5",
+      "line": 4,
+      "phrase": "proud of destruction",
+      "definition": "prideful in wanting their own destruction"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss6",
+      "line": 7,
+      "phrase": "battery",
+      "definition": "artillery bombardment"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss7",
+      "line": 8,
+      "phrase": "half-achieved",
+      "definition": "half-taken; half-conquered"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss8",
+      "line": 9,
+      "phrase": "in her ashes she lie buried",
+      "definition": "until the town is burnt and buried in its own ashes"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss9",
+      "line": 10,
+      "phrase": "gates of mercy shall be all shut up",
+      "definition": "mercy will be withdrawn — the speech's opening premise"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss10",
+      "line": 11,
+      "phrase": "flesh’d soldier",
+      "definition": "soldier accustomed to killing — 'flesh'd' = blooded, habituated to slaughter"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss11",
+      "line": 12,
+      "phrase": "liberty of bloody hand",
+      "definition": "free licence to kill — the abandonment of military restraint"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss12",
+      "line": 13,
+      "phrase": "conscience wide as hell",
+      "definition": "a conscience as vast and permissive as hell itself"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss13",
+      "line": 13,
+      "phrase": "mowing like grass",
+      "definition": "cutting down as a scythe cuts grass — slaughter as harvest"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss14",
+      "line": 14,
+      "phrase": "fresh-fair virgins and your flowering infants",
+      "definition": "the young women and small children — named explicitly as targets"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss15",
+      "line": 15,
+      "phrase": "impious War",
+      "definition": "war personified as unholy — 'impious' = sacrilegious"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss16",
+      "line": 16,
+      "phrase": "prince of fiends",
+      "definition": "Satan"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss17",
+      "line": 17,
+      "phrase": "smirch’d complexion",
+      "definition": "soot-blackened face — war imagined as a fire-blackened demon"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss18",
+      "line": 17,
+      "phrase": "fell feats",
+      "definition": "cruel deeds — 'fell' = savage, deadly"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss19",
+      "line": 18,
+      "phrase": "Enlink’d to waste and desolation",
+      "definition": "linked to destruction and ruin"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss20",
+      "line": 20,
+      "phrase": "pure maidens",
+      "definition": "chaste young women"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss21",
+      "line": 21,
+      "phrase": "hot and forcing violation",
+      "definition": "heated, forcible rape — the threat named directly"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss22",
+      "line": 22,
+      "phrase": "licentious wickedness",
+      "definition": "lawless evil — soldiers' unchained lust and rage"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss23",
+      "line": 23,
+      "phrase": "holds his fierce career",
+      "definition": "runs his headlong course — 'career' = gallop"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss24",
+      "line": 24,
+      "phrase": "bootless",
+      "definition": "pointless; useless"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss25",
+      "line": 26,
+      "phrase": "precepts to the leviathan",
+      "definition": "commands to the great sea-monster — Henry's image for impossibility"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss26",
+      "line": 29,
+      "phrase": "Whiles yet my soldiers are in my command",
+      "definition": "while I can still control them — the threat's pivot: after a certain point, he cannot restrain them"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss27",
+      "line": 30,
+      "phrase": "cool and temperate wind of grace",
+      "definition": "the mild breeze of mercy"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss28",
+      "line": 31,
+      "phrase": "O’erblows",
+      "definition": "blows away"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss29",
+      "line": 32,
+      "phrase": "heady murder",
+      "definition": "impulsive, headlong killing"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss30",
+      "line": 34,
+      "phrase": "blind and bloody soldier",
+      "definition": "the soldier who kills indiscriminately"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss31",
+      "line": 35,
+      "phrase": "Defile the locks of your shrill-shrieking daughters",
+      "definition": "rape your daughters — 'defile the locks' = tear at their hair as they are assaulted"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss32",
+      "line": 36,
+      "phrase": "silver beards",
+      "definition": "the grey beards of the old men — dragged by the elders"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss33",
+      "line": 37,
+      "phrase": "reverend heads dash’d to the walls",
+      "definition": "old men's venerable heads smashed against the walls"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss34",
+      "line": 38,
+      "phrase": "naked infants spitted upon pikes",
+      "definition": "babies impaled on long pole-weapons — the speech's most infamous image, left unambiguous on the page"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss35",
+      "line": 40,
+      "phrase": "wives of Jewry",
+      "definition": "the women of Judea — biblical reference to Matthew 2, Herod's massacre of the infants at Bethlehem"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss36",
+      "line": 41,
+      "phrase": "Herod’s bloody-hunting slaughtermen",
+      "definition": "Herod's soldiers hunting babies — the Massacre of the Innocents, the benchmark Henry's threat invokes"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss37",
+      "line": 43,
+      "phrase": "guilty in defence",
+      "definition": "responsible, by defending the town, for what follows"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss38",
+      "line": 45,
+      "phrase": "succours",
+      "definition": "reinforcements; relief"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss39",
+      "line": 46,
+      "phrase": "powers are yet not ready",
+      "definition": "the Dauphin's army is not yet mustered"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss40",
+      "line": 47,
+      "phrase": "raise so great a siege",
+      "definition": "break so large a siege"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss41",
+      "line": 48,
+      "phrase": "We yield our town",
+      "definition": "Harfleur's formal surrender"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss42",
+      "line": 50,
+      "phrase": "defensible",
+      "definition": "able to hold out"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss43",
+      "line": 52,
+      "phrase": "fortify it strongly",
+      "definition": "garrison and reinforce the captured town"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss44",
+      "line": 53,
+      "phrase": "Use mercy to them all",
+      "definition": "spare the citizens — Henry pivots instantly from threat to mercy, having achieved surrender"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss45",
+      "line": 54,
+      "phrase": "winter coming on and sickness growing",
+      "definition": "dysentery ravaged the English army after the siege — Henry's march to Calais is forced by attrition"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss46",
+      "line": 55,
+      "phrase": "retire to Calais",
+      "definition": "withdraw to the English-held port, ~100 miles north"
+    },
+    {
+      "id": "henry_v_act3_scene3_gloss47",
+      "line": 57,
+      "phrase": "addrest",
+      "definition": "ready; prepared (archaic)"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act3_scene3_ann1",
+      "line_start": 1,
+      "line_end": 43,
+      "citation_display": "Henry V 3.3.1–43",
+      "category": "thematic",
+      "title": "The threat to Harfleur — what is actually on the page",
+      "body": "Henry's speech to the governor of Harfleur is the play's hardest passage. The Chorus does not prepare us for it; the action scene does not euphemize it. In order, Henry threatens: the enraged soldiery in 'liberty of bloody hand,' with 'conscience wide as hell,' mowing virgins and infants like grass (lines 11–14); fire and desolation (15–18); the 'hot and forcing violation' of pure maidens — that is, the mass rape of the town's women (19–21); the defiling of 'shrill-shrieking daughters' and the dashing of old men's heads against the walls (34–37); and, most unmistakably, 'Your naked infants spitted upon pikes' (38). Henry compares the coming scene to Herod's massacre of the innocents at Bethlehem (40–41), thus locating his threat inside the Christian catalogue of atrocities. This is not a bluff; it is the standard early-modern rhetoric of siege warfare, in which credible threats of sack were conventional tools for forcing surrender. But Shakespeare's version is unusually specific and unusually sustained. Forty-three lines of threat, naming sexual violence and infanticide explicitly. Readers cannot honestly say Henry is a simple hero and hold these lines in mind at the same time. The play makes us hold both.",
+      "sources": [
+        "Theodor Meron, Bloody Constraint: War and Chivalry in Shakespeare (1998)",
+        "Norman Rabkin, 'Either/Or: Responding to Henry V,' Shakespeare and the Problem of Meaning (1981)",
+        "Juliet Barker, Agincourt: The King, the Campaign, the Battle (2005)"
+      ]
+    },
+    {
+      "id": "henry_v_act3_scene3_ann2",
+      "line_start": 44,
+      "line_end": 57,
+      "citation_display": "Henry V 3.3.44–57",
+      "category": "structural",
+      "title": "Henry's pivot from threat to mercy",
+      "body": "The governor surrenders, and Henry pivots instantly: 'Use mercy to them all' (line 53). The same man who forty lines earlier was promising pikes through infants is now commanding his uncle Exeter to garrison Harfleur gently. The speed of the pivot is the point. Henry's threat worked: the town yielded 'our town and lives to thy soft mercy' rather than endure sack. The play thus invites two readings simultaneously. (1) Henry is a cunning military psychologist who knows the conventions of siege warfare: make the threat credible enough and the city surrenders, sparing both sides. No rape happens; no infant is spitted. The threat is instrumental. (2) Henry is a rhetorician who can summon the imagery of atrocity without hesitation and withdraw it without explanation; what matters is what he was willing to promise. The scene refuses to decide. The structural fact — threat, surrender, mercy — is historically accurate and morally unresolved.",
+      "sources": [
+        "Meron, Bloody Constraint (1998)",
+        "Rabkin, 'Either/Or' (1981)"
+      ]
+    },
+    {
+      "id": "henry_v_act3_scene3_ann3",
+      "line_start": 54,
+      "line_end": 57,
+      "citation_display": "Henry V 3.3.54–57",
+      "category": "historical",
+      "title": "The march to Calais — forced by dysentery",
+      "body": "Henry's closing announcement — 'The winter coming on and sickness growing / Upon our soldiers, we will retire to Calais' — corresponds to a historical fact the play slightly softens. The English army was ravaged by dysentery during and after the siege of Harfleur; thousands of men died of the 'bloody flux'; Henry's best estimate of his effective force by the time of Agincourt was a fraction of what had landed. The march to Calais was not a strategic decision but a desperate one, undertaken with depleted forces through hostile territory. Historically this is the situation that made the victory at Agincourt so improbable and so mythologized afterwards. The play will register the depletion (Henry to Montjoy in 3.6: 'My people are with sickness much enfeebled'), but it presents the retirement to Calais as a poised royal choice rather than an epidemiological emergency.",
+      "sources": [
+        "Anne Curry, Agincourt: A New History (2005)",
+        "Juliet Barker, Agincourt: The King, the Campaign, the Battle (2005)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act3_scene3_q1",
+      "kind": "close_reading",
+      "prompt": "What, specifically, does Henry threaten if Harfleur does not surrender?",
+      "options": [
+        "A long siege without casualties",
+        "The mass rape of the town's women, the killing of its old men, and the impaling of its 'naked infants' on pikes — with an explicit comparison to Herod's massacre of the innocents",
+        "Economic sanctions",
+        "The removal of the town's governor"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 19,
+      "anchor_line_end": 41
+    },
+    {
+      "id": "henry_v_act3_scene3_q2",
+      "kind": "theme",
+      "prompt": "How should readers think about Henry's threat?",
+      "options": [
+        "As a pure expression of villainy",
+        "As the standard early-modern rhetoric of siege warfare, in which credible threats were conventional surrender-tools — but Shakespeare's version is unusually specific and sustained, naming sexual violence and infanticide; the moral weight is on the page and is not euphemized",
+        "As a rhetorical flourish meant to impress the soldiers",
+        "As a passage unique to the Folio and cut from modern editions"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 35,
+      "anchor_line_start": 1,
+      "anchor_line_end": 43
+    },
+    {
+      "id": "henry_v_act3_scene3_q3",
+      "kind": "structural",
+      "prompt": "What happens immediately after Henry's threat?",
+      "options": [
+        "A bloody assault on Harfleur",
+        "The town surrenders, and Henry pivots instantly to 'Use mercy to them all' — the scene stages threat, surrender, and sudden mercy in forty lines",
+        "The Dauphin arrives with reinforcements",
+        "Henry withdraws without taking the town"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 44,
+      "anchor_line_end": 57
+    },
+    {
+      "id": "henry_v_act3_scene3_q4",
+      "kind": "inference",
+      "prompt": "Why does the scene end with Henry's decision to march to Calais?",
+      "options": [
+        "Because he has defeated the French entirely",
+        "The army has been ravaged by dysentery during the siege; the retreat is historically forced by disease, though the play presents it as a poised royal choice",
+        "Because he wants to visit English garrisons",
+        "Because Montjoy has offered a truce"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 54,
+      "anchor_line_end": 57
+    }
+  ]
+}

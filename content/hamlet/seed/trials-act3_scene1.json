@@ -1,0 +1,117 @@
+{
+  "section_id": "hamlet_act3_scene1",
+  "trials": [
+    {
+      "kind": "comprehension",
+      "prompt": "In the opening of the scene, what do Rosencrantz and Guildenstern report about their conversation with Hamlet?",
+      "options": [
+        "Hamlet confessed the cause of his madness but asked them to keep it secret.",
+        "Hamlet admits he feels disturbed but refuses to say why.",
+        "Hamlet denies any madness and accuses the King of paranoia.",
+        "Hamlet spoke lucidly about politics but avoided all personal questions."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 5,
+      "anchor_line_end": 15
+    },
+    {
+      "kind": "inference",
+      "prompt": "Why do Claudius and Polonius arrange for Ophelia to 'accidentally' meet Hamlet in this scene?",
+      "options": [
+        "To give Ophelia a chance to comfort him.",
+        "To test whether thwarted love is the cause of Hamlet's madness.",
+        "To distract Hamlet while the King plans the England voyage.",
+        "To provoke Hamlet into attacking Polonius."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 32,
+      "anchor_line_end": 47
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "In the line 'To be, or not to be, that is the question,' what best describes the grammatical structure of Hamlet's opening question?",
+      "options": [
+        "A direct question about whether Hamlet should commit suicide.",
+        "Two infinitives placed in opposition, abstracting the question beyond any single speaker.",
+        "An imperative command to himself to choose action over inaction.",
+        "A conditional statement waiting for a 'then' clause."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 56,
+      "anchor_line_end": 56
+    },
+    {
+      "kind": "theme",
+      "prompt": "What is the central obstacle to action that Hamlet identifies in the soliloquy?",
+      "options": [
+        "The fear of the unknown that lies beyond death.",
+        "His uncertainty about whether the Ghost was honest.",
+        "His mother's remarriage to Claudius.",
+        "His inability to find a weapon suitable for the deed."
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 20,
+      "anchor_line_start": 76,
+      "anchor_line_end": 86
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "What does Hamlet mean by 'the native hue of resolution / Is sicklied o'er with the pale cast of thought'?",
+      "options": [
+        "Illness makes us indecisive.",
+        "The healthy color of determination is made pale and sickly by over-reflection.",
+        "Cold weather drains us of our courage.",
+        "Grief turns our complexion pale, showing our sorrow."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 82,
+      "anchor_line_end": 83
+    },
+    {
+      "kind": "inference",
+      "prompt": "When does Hamlet most likely realize that he is being overheard by Polonius and Claudius?",
+      "options": [
+        "From the very start of the scene, which is why he pretends to be mad.",
+        "When he asks Ophelia 'Where's your father?' — her lie reveals she is a pawn.",
+        "Only at the end, when he hears the King and Polonius re-enter.",
+        "He never realizes; his cruelty to Ophelia is entirely sincere."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 120,
+      "anchor_line_end": 121
+    },
+    {
+      "kind": "theme",
+      "prompt": "What is the dramatic function of Ophelia's lament ('O, what a noble mind is here o'erthrown')?",
+      "options": [
+        "To express her personal relief that Hamlet no longer loves her.",
+        "To crystallize, in concrete images, what Hamlet's abstract soliloquy could not say about his own ruin.",
+        "To warn the King that Hamlet is genuinely dangerous.",
+        "To signal to the audience that Ophelia has begun her own descent into madness."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 133,
+      "anchor_line_end": 145
+    },
+    {
+      "kind": "comprehension",
+      "prompt": "What does Claudius decide to do with Hamlet at the end of the scene?",
+      "options": [
+        "Have him imprisoned in the castle under guard.",
+        "Send him to England on the pretext of collecting neglected tribute.",
+        "Force him to marry Ophelia immediately.",
+        "Banish him permanently from Denmark."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 151,
+      "anchor_line_end": 158
+    }
+  ]
+}

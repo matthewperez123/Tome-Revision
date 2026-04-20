@@ -1,0 +1,2471 @@
+{
+  "section_id": "hamlet_act5_scene2",
+  "work_id": "hamlet",
+  "sequence": 20,
+  "act": 5,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "A hall in the castle",
+  "line_count": 406,
+  "word_count": 3168,
+  "est_read_minutes": 16,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "HAMLET",
+      "text": "So much for this, sir: now shall you see the other;"
+    },
+    {
+      "number": 2,
+      "speaker": "HAMLET",
+      "text": "You do remember all the circumstance?"
+    },
+    {
+      "number": 2,
+      "speaker": "HORATIO",
+      "text": "Remember it, my lord?"
+    },
+    {
+      "number": 3,
+      "speaker": "HAMLET",
+      "text": "Sir, in my heart there was a kind of fighting,"
+    },
+    {
+      "number": 4,
+      "speaker": "HAMLET",
+      "text": "That would not let me sleep: methought I lay"
+    },
+    {
+      "number": 5,
+      "speaker": "HAMLET",
+      "text": "Worse than the mutines in the bilboes. Rashly,"
+    },
+    {
+      "number": 6,
+      "speaker": "HAMLET",
+      "text": "And praised be rashness for it, let us know,"
+    },
+    {
+      "number": 7,
+      "speaker": "HAMLET",
+      "text": "Our indiscretion sometimes serves us well,"
+    },
+    {
+      "number": 8,
+      "speaker": "HAMLET",
+      "text": "When our deep plots do pall: and that should teach us"
+    },
+    {
+      "number": 9,
+      "speaker": "HAMLET",
+      "text": "There’s a divinity that shapes our ends,"
+    },
+    {
+      "number": 10,
+      "speaker": "HAMLET",
+      "text": "Rough-hew them how we will—"
+    },
+    {
+      "number": 10,
+      "speaker": "HORATIO",
+      "text": "That is most certain."
+    },
+    {
+      "number": 11,
+      "speaker": "HAMLET",
+      "text": "Up from my cabin,"
+    },
+    {
+      "number": 12,
+      "speaker": "HAMLET",
+      "text": "My sea-gown scarf’d about me, in the dark"
+    },
+    {
+      "number": 13,
+      "speaker": "HAMLET",
+      "text": "Groped I to find out them; had my desire,"
+    },
+    {
+      "number": 14,
+      "speaker": "HAMLET",
+      "text": "Finger’d their packet, and in fine withdrew"
+    },
+    {
+      "number": 15,
+      "speaker": "HAMLET",
+      "text": "To mine own room again; making so bold,"
+    },
+    {
+      "number": 16,
+      "speaker": "HAMLET",
+      "text": "My fears forgetting manners, to unseal"
+    },
+    {
+      "number": 17,
+      "speaker": "HAMLET",
+      "text": "Their grand commission; where I found, Horatio—"
+    },
+    {
+      "number": 18,
+      "speaker": "HAMLET",
+      "text": "O royal knavery!—an exact command,"
+    },
+    {
+      "number": 19,
+      "speaker": "HAMLET",
+      "text": "Larded with many several sorts of reasons"
+    },
+    {
+      "number": 20,
+      "speaker": "HAMLET",
+      "text": "Importing Denmark’s health and England’s too,"
+    },
+    {
+      "number": 21,
+      "speaker": "HAMLET",
+      "text": "With, ho! such bugs and goblins in my life,"
+    },
+    {
+      "number": 22,
+      "speaker": "HAMLET",
+      "text": "That, on the supervise, no leisure bated,"
+    },
+    {
+      "number": 23,
+      "speaker": "HAMLET",
+      "text": "No, not to stay the grinding of the axe,"
+    },
+    {
+      "number": 24,
+      "speaker": "HAMLET",
+      "text": "My head should be struck off."
+    },
+    {
+      "number": 24,
+      "speaker": "HORATIO",
+      "text": "Is’t possible?"
+    },
+    {
+      "number": 25,
+      "speaker": "HAMLET",
+      "text": "Here’s the commission: read it at more leisure."
+    },
+    {
+      "number": 26,
+      "speaker": "HAMLET",
+      "text": "But wilt thou hear me how I did proceed?"
+    },
+    {
+      "number": 27,
+      "speaker": "HORATIO",
+      "text": "I beseech you."
+    },
+    {
+      "number": 27,
+      "speaker": "HAMLET",
+      "text": "Being thus be-netted round with villainies—"
+    },
+    {
+      "number": 28,
+      "speaker": "HAMLET",
+      "text": "Ere I could make a prologue to my brains,"
+    },
+    {
+      "number": 29,
+      "speaker": "HAMLET",
+      "text": "They had begun the play—I sat me down,"
+    },
+    {
+      "number": 30,
+      "speaker": "HAMLET",
+      "text": "Devised a new commission, wrote it fair:"
+    },
+    {
+      "number": 31,
+      "speaker": "HAMLET",
+      "text": "I once did hold it, as our statists do,"
+    },
+    {
+      "number": 32,
+      "speaker": "HAMLET",
+      "text": "A baseness to write fair and labour’d much"
+    },
+    {
+      "number": 33,
+      "speaker": "HAMLET",
+      "text": "How to forget that learning, but, sir, now"
+    },
+    {
+      "number": 34,
+      "speaker": "HAMLET",
+      "text": "It did me yeoman’s service: wilt thou know"
+    },
+    {
+      "number": 35,
+      "speaker": "HAMLET",
+      "text": "The effect of what I wrote?"
+    },
+    {
+      "number": 35,
+      "speaker": "HORATIO",
+      "text": "Ay, good my lord."
+    },
+    {
+      "number": 36,
+      "speaker": "HAMLET",
+      "text": "An earnest conjuration from the king,"
+    },
+    {
+      "number": 37,
+      "speaker": "HAMLET",
+      "text": "As England was his faithful tributary,"
+    },
+    {
+      "number": 38,
+      "speaker": "HAMLET",
+      "text": "As love between them like the palm might flourish,"
+    },
+    {
+      "number": 39,
+      "speaker": "HAMLET",
+      "text": "As peace should still her wheaten garland wear"
+    },
+    {
+      "number": 40,
+      "speaker": "HAMLET",
+      "text": "And stand a comma ’tween their amities,"
+    },
+    {
+      "number": 41,
+      "speaker": "HAMLET",
+      "text": "And many such-like “As”es of great charge,"
+    },
+    {
+      "number": 42,
+      "speaker": "HAMLET",
+      "text": "That, on the view and knowing of these contents,"
+    },
+    {
+      "number": 43,
+      "speaker": "HAMLET",
+      "text": "Without debatement further, more or less,"
+    },
+    {
+      "number": 44,
+      "speaker": "HAMLET",
+      "text": "He should the bearers put to sudden death,"
+    },
+    {
+      "number": 45,
+      "speaker": "HAMLET",
+      "text": "Not shriving-time allow’d."
+    },
+    {
+      "number": 45,
+      "speaker": "HORATIO",
+      "text": "How was this seal’d?"
+    },
+    {
+      "number": 46,
+      "speaker": "HAMLET",
+      "text": "Why, even in that was heaven ordinant."
+    },
+    {
+      "number": 47,
+      "speaker": "HAMLET",
+      "text": "I had my father’s signet in my purse,"
+    },
+    {
+      "number": 48,
+      "speaker": "HAMLET",
+      "text": "Which was the model of that Danish seal;"
+    },
+    {
+      "number": 49,
+      "speaker": "HAMLET",
+      "text": "Folded the writ up in form of the other,"
+    },
+    {
+      "number": 50,
+      "speaker": "HAMLET",
+      "text": "Subscribed it, gave’t the impression, placed it safely,"
+    },
+    {
+      "number": 51,
+      "speaker": "HAMLET",
+      "text": "The changeling never known. Now, the next day"
+    },
+    {
+      "number": 52,
+      "speaker": "HAMLET",
+      "text": "Was our sea-fight; and what to this was sequent"
+    },
+    {
+      "number": 53,
+      "speaker": "HAMLET",
+      "text": "Thou know’st already."
+    },
+    {
+      "number": 53,
+      "speaker": "HORATIO",
+      "text": "So Guildenstern and Rosencrantz go to’t."
+    },
+    {
+      "number": 54,
+      "speaker": "HAMLET",
+      "text": "Why, man, they did make love to this employment;"
+    },
+    {
+      "number": 55,
+      "speaker": "HAMLET",
+      "text": "They are not near my conscience; their defeat"
+    },
+    {
+      "number": 56,
+      "speaker": "HAMLET",
+      "text": "Does by their own insinuation grow:"
+    },
+    {
+      "number": 57,
+      "speaker": "HAMLET",
+      "text": "’Tis dangerous when the baser nature comes"
+    },
+    {
+      "number": 58,
+      "speaker": "HAMLET",
+      "text": "Between the pass and fell incensed points"
+    },
+    {
+      "number": 59,
+      "speaker": "HAMLET",
+      "text": "Of mighty opposites."
+    },
+    {
+      "number": 59,
+      "speaker": "HORATIO",
+      "text": "Why, what a king is this!"
+    },
+    {
+      "number": 60,
+      "speaker": "HAMLET",
+      "text": "Does it not, think’st thee, stand me now upon—"
+    },
+    {
+      "number": 61,
+      "speaker": "HAMLET",
+      "text": "He that hath kill’d my king and whored my mother,"
+    },
+    {
+      "number": 62,
+      "speaker": "HAMLET",
+      "text": "Popp’d in between the election and my hopes,"
+    },
+    {
+      "number": 63,
+      "speaker": "HAMLET",
+      "text": "Thrown out his angle for my proper life,"
+    },
+    {
+      "number": 64,
+      "speaker": "HAMLET",
+      "text": "And with such cozenage—is’t not perfect conscience,"
+    },
+    {
+      "number": 65,
+      "speaker": "HAMLET",
+      "text": "To quit him with this arm? and is’t not to be damn’d,"
+    },
+    {
+      "number": 66,
+      "speaker": "HAMLET",
+      "text": "To let this canker of our nature come"
+    },
+    {
+      "number": 67,
+      "speaker": "HAMLET",
+      "text": "In further evil?"
+    },
+    {
+      "number": 68,
+      "speaker": "HORATIO",
+      "text": "It must be shortly known to him from England"
+    },
+    {
+      "number": 69,
+      "speaker": "HORATIO",
+      "text": "What is the issue of the business there."
+    },
+    {
+      "number": 70,
+      "speaker": "HAMLET",
+      "text": "It will be short: the interim is mine;"
+    },
+    {
+      "number": 71,
+      "speaker": "HAMLET",
+      "text": "And a man’s life’s no more than to say “One.”"
+    },
+    {
+      "number": 72,
+      "speaker": "HAMLET",
+      "text": "But I am very sorry, good Horatio,"
+    },
+    {
+      "number": 73,
+      "speaker": "HAMLET",
+      "text": "That to Laertes I forgot myself;"
+    },
+    {
+      "number": 74,
+      "speaker": "HAMLET",
+      "text": "For, by the image of my cause, I see"
+    },
+    {
+      "number": 75,
+      "speaker": "HAMLET",
+      "text": "The portraiture of his: I’ll court his favours:"
+    },
+    {
+      "number": 76,
+      "speaker": "HAMLET",
+      "text": "But, sure, the bravery of his grief did put me"
+    },
+    {
+      "number": 77,
+      "speaker": "HAMLET",
+      "text": "Into a towering passion."
+    },
+    {
+      "number": 77,
+      "speaker": "HORATIO",
+      "text": "Peace! who comes here?"
+    },
+    {
+      "number": 78,
+      "speaker": "OSRIC",
+      "text": "Your lordship is right welcome back to Denmark."
+    },
+    {
+      "number": 79,
+      "speaker": "HAMLET",
+      "text": "I humbly thank you, sir. Dost know this water-fly?"
+    },
+    {
+      "number": 80,
+      "speaker": "HORATIO",
+      "text": "No, my good lord."
+    },
+    {
+      "number": 81,
+      "speaker": "HAMLET",
+      "text": "Thy state is the more gracious; for ’tis a vice to know"
+    },
+    {
+      "number": 82,
+      "speaker": "HAMLET",
+      "text": "him. He hath much land, and fertile: let a beast be lord"
+    },
+    {
+      "number": 83,
+      "speaker": "HAMLET",
+      "text": "of beasts, and his crib shall stand at the king’s mess: ’tis"
+    },
+    {
+      "number": 84,
+      "speaker": "HAMLET",
+      "text": "a chough; but, as I say, spacious in the possession of dirt."
+    },
+    {
+      "number": 85,
+      "speaker": "OSRIC",
+      "text": "Sweet lord, if your lordship were at leisure, I should impart a"
+    },
+    {
+      "number": 86,
+      "speaker": "OSRIC",
+      "text": "thing to you from his majesty."
+    },
+    {
+      "number": 87,
+      "speaker": "HAMLET",
+      "text": "I will receive it, sir, with all diligence of spirit. Put your"
+    },
+    {
+      "number": 88,
+      "speaker": "HAMLET",
+      "text": "bonnet to his right use; ’tis for the head."
+    },
+    {
+      "number": 89,
+      "speaker": "OSRIC",
+      "text": "I thank your lordship, it is very hot."
+    },
+    {
+      "number": 90,
+      "speaker": "HAMLET",
+      "text": "No, believe me, ’tis very cold; the wind is northerly."
+    },
+    {
+      "number": 91,
+      "speaker": "OSRIC",
+      "text": "It is indifferent cold, my lord, indeed."
+    },
+    {
+      "number": 92,
+      "speaker": "HAMLET",
+      "text": "But yet methinks it is very sultry and hot for my complexion."
+    },
+    {
+      "number": 93,
+      "speaker": "OSRIC",
+      "text": "Exceedingly, my lord; it is very sultry—as ’twere—I cannot tell how. But,"
+    },
+    {
+      "number": 94,
+      "speaker": "OSRIC",
+      "text": "my lord, his majesty bade me signify to you that he has"
+    },
+    {
+      "number": 95,
+      "speaker": "OSRIC",
+      "text": "laid a great wager on your head: sir, this is the matter—"
+    },
+    {
+      "number": 96,
+      "speaker": "HAMLET",
+      "text": "I beseech you, remember—Hamlet moves him to put on his hat."
+    },
+    {
+      "number": 97,
+      "speaker": "OSRIC",
+      "text": "Nay, good my lord; for mine ease, in good faith. Sir, here"
+    },
+    {
+      "number": 98,
+      "speaker": "OSRIC",
+      "text": "is newly come to court Laertes; believe me, an absolute gentleman, full"
+    },
+    {
+      "number": 99,
+      "speaker": "OSRIC",
+      "text": "of most excellent differences, of very soft society and great showing: indeed,"
+    },
+    {
+      "number": 100,
+      "speaker": "OSRIC",
+      "text": "to speak feelingly of him, he is the card or calendar of"
+    },
+    {
+      "number": 101,
+      "speaker": "OSRIC",
+      "text": "gentry, for you shall find in him the continent of what part"
+    },
+    {
+      "number": 102,
+      "speaker": "OSRIC",
+      "text": "a gentleman would see."
+    },
+    {
+      "number": 103,
+      "speaker": "HAMLET",
+      "text": "Sir, his definement suffers no perdition in you; though, I know, to"
+    },
+    {
+      "number": 104,
+      "speaker": "HAMLET",
+      "text": "divide him inventorially would dizzy the arithmetic of memory, and yet but"
+    },
+    {
+      "number": 105,
+      "speaker": "HAMLET",
+      "text": "yaw neither, in respect of his quick sail. But, in the verity"
+    },
+    {
+      "number": 106,
+      "speaker": "HAMLET",
+      "text": "of extolment, I take him to be a soul of great article;"
+    },
+    {
+      "number": 107,
+      "speaker": "HAMLET",
+      "text": "and his infusion of such dearth and rareness, as, to make true"
+    },
+    {
+      "number": 108,
+      "speaker": "HAMLET",
+      "text": "diction of him, his semblable is his mirror; and who else would"
+    },
+    {
+      "number": 109,
+      "speaker": "HAMLET",
+      "text": "trace him, his umbrage, nothing more."
+    },
+    {
+      "number": 110,
+      "speaker": "OSRIC",
+      "text": "Your lordship speaks most infallibly of him."
+    },
+    {
+      "number": 111,
+      "speaker": "HAMLET",
+      "text": "The concernancy, sir? why do we wrap the gentleman in our more rawer breath?"
+    },
+    {
+      "number": 112,
+      "speaker": "OSRIC",
+      "text": "Sir?"
+    },
+    {
+      "number": 113,
+      "speaker": "HORATIO",
+      "text": "Is’t not possible to understand in another tongue? You will do’t, sir, really."
+    },
+    {
+      "number": 114,
+      "speaker": "HAMLET",
+      "text": "What imports the nomination of this gentleman?"
+    },
+    {
+      "number": 115,
+      "speaker": "OSRIC",
+      "text": "Of Laertes?"
+    },
+    {
+      "number": 116,
+      "speaker": "HORATIO",
+      "text": "His purse is empty already; all’s golden words are spent."
+    },
+    {
+      "number": 117,
+      "speaker": "HAMLET",
+      "text": "Of him, sir."
+    },
+    {
+      "number": 117,
+      "speaker": "OSRIC",
+      "text": "I know you are not ignorant—"
+    },
+    {
+      "number": 118,
+      "speaker": "HAMLET",
+      "text": "I would you did, sir; yet, in faith, if you did, it"
+    },
+    {
+      "number": 119,
+      "speaker": "HAMLET",
+      "text": "would not much approve me. Well, sir?"
+    },
+    {
+      "number": 120,
+      "speaker": "OSRIC",
+      "text": "You are not ignorant of what excellence Laertes is—"
+    },
+    {
+      "number": 121,
+      "speaker": "HAMLET",
+      "text": "I dare not confess that, lest I should compare with him in"
+    },
+    {
+      "number": 122,
+      "speaker": "HAMLET",
+      "text": "excellence; but, to know a man well, were to know himself."
+    },
+    {
+      "number": 123,
+      "speaker": "OSRIC",
+      "text": "I mean, sir, for his weapon; but in the imputation laid on"
+    },
+    {
+      "number": 124,
+      "speaker": "OSRIC",
+      "text": "him by them, in his meed he’s unfellowed."
+    },
+    {
+      "number": 125,
+      "speaker": "HAMLET",
+      "text": "What’s his weapon?"
+    },
+    {
+      "number": 125,
+      "speaker": "OSRIC",
+      "text": "Rapier and dagger."
+    },
+    {
+      "number": 126,
+      "speaker": "HAMLET",
+      "text": "That’s two of his weapons: but, well."
+    },
+    {
+      "number": 127,
+      "speaker": "OSRIC",
+      "text": "The king, sir, hath wagered with him six Barbary horses: against the"
+    },
+    {
+      "number": 128,
+      "speaker": "OSRIC",
+      "text": "which he has imponed, as I take it, six French rapiers and"
+    },
+    {
+      "number": 129,
+      "speaker": "OSRIC",
+      "text": "poniards, with their assigns, as girdle, hangers, and so: three of the"
+    },
+    {
+      "number": 130,
+      "speaker": "OSRIC",
+      "text": "carriages, in faith, are very dear to fancy, very responsive to the"
+    },
+    {
+      "number": 131,
+      "speaker": "OSRIC",
+      "text": "hilts, most delicate carriages, and of very liberal conceit."
+    },
+    {
+      "number": 132,
+      "speaker": "HAMLET",
+      "text": "What call you the carriages?"
+    },
+    {
+      "number": 133,
+      "speaker": "HORATIO",
+      "text": "I knew you must be edified by the margent ere you had done."
+    },
+    {
+      "number": 134,
+      "speaker": "OSRIC",
+      "text": "The carriages, sir, are the hangers."
+    },
+    {
+      "number": 135,
+      "speaker": "HAMLET",
+      "text": "The phrase would be more german to the matter, if we could"
+    },
+    {
+      "number": 136,
+      "speaker": "HAMLET",
+      "text": "carry cannon by our sides: I would it might be hangers till"
+    },
+    {
+      "number": 137,
+      "speaker": "HAMLET",
+      "text": "then. But, on: six Barbary horses against six French swords, their assigns,"
+    },
+    {
+      "number": 138,
+      "speaker": "HAMLET",
+      "text": "and three liberal-conceited carriages; that’s the French bet against the Danish. Why"
+    },
+    {
+      "number": 139,
+      "speaker": "HAMLET",
+      "text": "is this “imponed,” as you call it?"
+    },
+    {
+      "number": 140,
+      "speaker": "OSRIC",
+      "text": "The king, sir, hath laid, that in a dozen passes between yourself"
+    },
+    {
+      "number": 141,
+      "speaker": "OSRIC",
+      "text": "and him, he shall not exceed you three hits: he hath laid"
+    },
+    {
+      "number": 142,
+      "speaker": "OSRIC",
+      "text": "on twelve for nine; and it would come to immediate trial, if"
+    },
+    {
+      "number": 143,
+      "speaker": "OSRIC",
+      "text": "your lordship would vouchsafe the answer."
+    },
+    {
+      "number": 143,
+      "speaker": "HAMLET",
+      "text": "How if I answer “no”?"
+    },
+    {
+      "number": 144,
+      "speaker": "OSRIC",
+      "text": "I mean, my lord, the opposition of your person in trial."
+    },
+    {
+      "number": 145,
+      "speaker": "HAMLET",
+      "text": "Sir, I will walk here in the hall: if it please his"
+    },
+    {
+      "number": 146,
+      "speaker": "HAMLET",
+      "text": "majesty, ’tis the breathing time of day with me; let the foils"
+    },
+    {
+      "number": 147,
+      "speaker": "HAMLET",
+      "text": "be brought, the gentleman willing, and the king hold his purpose, I"
+    },
+    {
+      "number": 148,
+      "speaker": "HAMLET",
+      "text": "will win for him an I can; if not, I will gain"
+    },
+    {
+      "number": 149,
+      "speaker": "HAMLET",
+      "text": "nothing but my shame and the odd hits."
+    },
+    {
+      "number": 150,
+      "speaker": "OSRIC",
+      "text": "Shall I re-deliver you e’en so?"
+    },
+    {
+      "number": 151,
+      "speaker": "HAMLET",
+      "text": "To this effect, sir; after what flourish your nature will."
+    },
+    {
+      "number": 152,
+      "speaker": "OSRIC",
+      "text": "I commend my duty to your lordship."
+    },
+    {
+      "number": 153,
+      "speaker": "HAMLET",
+      "text": "Yours, yours. He does well to commend it himself; there are no"
+    },
+    {
+      "number": 154,
+      "speaker": "HAMLET",
+      "text": "tongues else for’s turn."
+    },
+    {
+      "number": 155,
+      "speaker": "HORATIO",
+      "text": "This lapwing runs away with the shell on his head."
+    },
+    {
+      "number": 156,
+      "speaker": "HAMLET",
+      "text": "He did comply with his dug, before he sucked it. Thus has"
+    },
+    {
+      "number": 157,
+      "speaker": "HAMLET",
+      "text": "he—and many more of the same bevy that I know the drossy"
+    },
+    {
+      "number": 158,
+      "speaker": "HAMLET",
+      "text": "age dotes on—only got the tune of the time and outward habit"
+    },
+    {
+      "number": 159,
+      "speaker": "HAMLET",
+      "text": "of encounter; a kind of yesty collection, which carries them through and"
+    },
+    {
+      "number": 160,
+      "speaker": "HAMLET",
+      "text": "through the most fond and winnowed opinions; and do but blow them"
+    },
+    {
+      "number": 161,
+      "speaker": "HAMLET",
+      "text": "to their trial, the bubbles are out."
+    },
+    {
+      "number": 162,
+      "speaker": "LORD",
+      "text": "My lord, his majesty commended him to you by young Osric, who"
+    },
+    {
+      "number": 163,
+      "speaker": "LORD",
+      "text": "brings back to him that you attend him in the hall: he"
+    },
+    {
+      "number": 164,
+      "speaker": "LORD",
+      "text": "sends to know if your pleasure hold to play with Laertes, or"
+    },
+    {
+      "number": 165,
+      "speaker": "LORD",
+      "text": "that you will take longer time."
+    },
+    {
+      "number": 166,
+      "speaker": "HAMLET",
+      "text": "I am constant to my purpose; they follow the king’s pleasure: if"
+    },
+    {
+      "number": 167,
+      "speaker": "HAMLET",
+      "text": "his fitness speaks, mine is ready; now or whensoever, provided I be"
+    },
+    {
+      "number": 168,
+      "speaker": "HAMLET",
+      "text": "so able as now."
+    },
+    {
+      "number": 169,
+      "speaker": "LORD",
+      "text": "The king and queen and all are coming down."
+    },
+    {
+      "number": 170,
+      "speaker": "HAMLET",
+      "text": "In happy time."
+    },
+    {
+      "number": 171,
+      "speaker": "LORD",
+      "text": "The queen desires you to use some gentle entertainment to Laertes before"
+    },
+    {
+      "number": 172,
+      "speaker": "LORD",
+      "text": "you fall to play."
+    },
+    {
+      "number": 172,
+      "speaker": "HAMLET",
+      "text": "She well instructs me."
+    },
+    {
+      "number": 173,
+      "speaker": "HORATIO",
+      "text": "You will lose this wager, my lord."
+    },
+    {
+      "number": 174,
+      "speaker": "HAMLET",
+      "text": "I do not think so: since he went into France, I have"
+    },
+    {
+      "number": 175,
+      "speaker": "HAMLET",
+      "text": "been in continual practice: I shall win at the odds. But thou"
+    },
+    {
+      "number": 176,
+      "speaker": "HAMLET",
+      "text": "wouldst not think how ill all’s here about my heart: but it"
+    },
+    {
+      "number": 177,
+      "speaker": "HAMLET",
+      "text": "is no matter."
+    },
+    {
+      "number": 177,
+      "speaker": "HORATIO",
+      "text": "Nay, good my lord—"
+    },
+    {
+      "number": 178,
+      "speaker": "HAMLET",
+      "text": "It is but foolery; but it is such a kind of gain-giving,"
+    },
+    {
+      "number": 179,
+      "speaker": "HAMLET",
+      "text": "as would perhaps trouble a woman."
+    },
+    {
+      "number": 180,
+      "speaker": "HORATIO",
+      "text": "If your mind dislike any thing, obey it: I will forestall their"
+    },
+    {
+      "number": 181,
+      "speaker": "HORATIO",
+      "text": "repair hither, and say you are not fit."
+    },
+    {
+      "number": 182,
+      "speaker": "HAMLET",
+      "text": "Not a whit, we defy augury: there’s a special providence in the"
+    },
+    {
+      "number": 183,
+      "speaker": "HAMLET",
+      "text": "fall of a sparrow. If it be now, ’tis not to come;"
+    },
+    {
+      "number": 184,
+      "speaker": "HAMLET",
+      "text": "if it be not to come, it will be now; if it"
+    },
+    {
+      "number": 185,
+      "speaker": "HAMLET",
+      "text": "be not now, yet it will come: the readiness is all: since"
+    },
+    {
+      "number": 186,
+      "speaker": "HAMLET",
+      "text": "no man has aught of what he leaves, what is’t to leave"
+    },
+    {
+      "number": 187,
+      "speaker": "HAMLET",
+      "text": "betimes?"
+    },
+    {
+      "number": 188,
+      "speaker": "KING",
+      "text": "Come, Hamlet, come, and take this hand from me."
+    },
+    {
+      "number": 189,
+      "speaker": "HAMLET",
+      "text": "Give me your pardon, sir: I’ve done you wrong;"
+    },
+    {
+      "number": 190,
+      "speaker": "HAMLET",
+      "text": "But pardon’t, as you are a gentleman."
+    },
+    {
+      "number": 191,
+      "speaker": "HAMLET",
+      "text": "This presence knows,"
+    },
+    {
+      "number": 192,
+      "speaker": "HAMLET",
+      "text": "And you must needs have heard, how I am punish’d"
+    },
+    {
+      "number": 193,
+      "speaker": "HAMLET",
+      "text": "With sore distraction. What I have done,"
+    },
+    {
+      "number": 194,
+      "speaker": "HAMLET",
+      "text": "That might your nature, honour and exception"
+    },
+    {
+      "number": 195,
+      "speaker": "HAMLET",
+      "text": "Roughly awake, I here proclaim was madness."
+    },
+    {
+      "number": 196,
+      "speaker": "HAMLET",
+      "text": "Was’t Hamlet wrong’d Laertes? Never Hamlet:"
+    },
+    {
+      "number": 197,
+      "speaker": "HAMLET",
+      "text": "If Hamlet from himself be ta’en away,"
+    },
+    {
+      "number": 198,
+      "speaker": "HAMLET",
+      "text": "And when he’s not himself does wrong Laertes,"
+    },
+    {
+      "number": 199,
+      "speaker": "HAMLET",
+      "text": "Then Hamlet does it not, Hamlet denies it."
+    },
+    {
+      "number": 200,
+      "speaker": "HAMLET",
+      "text": "Who does it, then? His madness: if’t be so,"
+    },
+    {
+      "number": 201,
+      "speaker": "HAMLET",
+      "text": "Hamlet is of the faction that is wrong’d;"
+    },
+    {
+      "number": 202,
+      "speaker": "HAMLET",
+      "text": "His madness is poor Hamlet’s enemy."
+    },
+    {
+      "number": 203,
+      "speaker": "HAMLET",
+      "text": "Sir, in this audience,"
+    },
+    {
+      "number": 204,
+      "speaker": "HAMLET",
+      "text": "Let my disclaiming from a purposed evil"
+    },
+    {
+      "number": 205,
+      "speaker": "HAMLET",
+      "text": "Free me so far in your most generous thoughts,"
+    },
+    {
+      "number": 206,
+      "speaker": "HAMLET",
+      "text": "That I have shot mine arrow o’er the house,"
+    },
+    {
+      "number": 207,
+      "speaker": "HAMLET",
+      "text": "And hurt my brother."
+    },
+    {
+      "number": 207,
+      "speaker": "LAERTES",
+      "text": "I am satisfied in nature,"
+    },
+    {
+      "number": 208,
+      "speaker": "LAERTES",
+      "text": "Whose motive, in this case, should stir me most"
+    },
+    {
+      "number": 209,
+      "speaker": "LAERTES",
+      "text": "To my revenge: but in my terms of honour"
+    },
+    {
+      "number": 210,
+      "speaker": "LAERTES",
+      "text": "I stand aloof; and will no reconcilement,"
+    },
+    {
+      "number": 211,
+      "speaker": "LAERTES",
+      "text": "Till by some elder masters, of known honour,"
+    },
+    {
+      "number": 212,
+      "speaker": "LAERTES",
+      "text": "I have a voice and precedent of peace,"
+    },
+    {
+      "number": 213,
+      "speaker": "LAERTES",
+      "text": "To keep my name ungored. But till that time,"
+    },
+    {
+      "number": 214,
+      "speaker": "LAERTES",
+      "text": "I do receive your offer’d love like love,"
+    },
+    {
+      "number": 215,
+      "speaker": "LAERTES",
+      "text": "And will not wrong it."
+    },
+    {
+      "number": 215,
+      "speaker": "HAMLET",
+      "text": "I embrace it freely;"
+    },
+    {
+      "number": 216,
+      "speaker": "HAMLET",
+      "text": "And will this brother’s wager frankly play."
+    },
+    {
+      "number": 217,
+      "speaker": "HAMLET",
+      "text": "Give us the foils. Come on."
+    },
+    {
+      "number": 217,
+      "speaker": "LAERTES",
+      "text": "Come, one for me."
+    },
+    {
+      "number": 218,
+      "speaker": "HAMLET",
+      "text": "I’ll be your foil, Laertes: in mine ignorance"
+    },
+    {
+      "number": 219,
+      "speaker": "HAMLET",
+      "text": "Your skill shall, like a star i’ the darkest night,"
+    },
+    {
+      "number": 220,
+      "speaker": "HAMLET",
+      "text": "Stick fiery off indeed."
+    },
+    {
+      "number": 220,
+      "speaker": "LAERTES",
+      "text": "You mock me, sir."
+    },
+    {
+      "number": 221,
+      "speaker": "HAMLET",
+      "text": "No, by this hand."
+    },
+    {
+      "number": 222,
+      "speaker": "KING",
+      "text": "Give them the foils, young Osric. Cousin Hamlet,"
+    },
+    {
+      "number": 223,
+      "speaker": "KING",
+      "text": "You know the wager?"
+    },
+    {
+      "number": 223,
+      "speaker": "HAMLET",
+      "text": "Very well, my lord;"
+    },
+    {
+      "number": 224,
+      "speaker": "HAMLET",
+      "text": "Your grace hath laid the odds o’ the weaker side."
+    },
+    {
+      "number": 225,
+      "speaker": "KING",
+      "text": "I do not fear it; I have seen you both:"
+    },
+    {
+      "number": 226,
+      "speaker": "KING",
+      "text": "But since he is better’d, we have therefore odds."
+    },
+    {
+      "number": 227,
+      "speaker": "LAERTES",
+      "text": "This is too heavy, let me see another."
+    },
+    {
+      "number": 228,
+      "speaker": "HAMLET",
+      "text": "This likes me well. These foils have all a length? They prepare to play."
+    },
+    {
+      "number": 229,
+      "speaker": "OSRIC",
+      "text": "Ay, my good lord."
+    },
+    {
+      "number": 230,
+      "speaker": "KING",
+      "text": "Set me the stoups of wine upon that table."
+    },
+    {
+      "number": 231,
+      "speaker": "KING",
+      "text": "If Hamlet give the first or second hit,"
+    },
+    {
+      "number": 232,
+      "speaker": "KING",
+      "text": "Or quit in answer of the third exchange,"
+    },
+    {
+      "number": 233,
+      "speaker": "KING",
+      "text": "Let all the battlements their ordnance fire;"
+    },
+    {
+      "number": 234,
+      "speaker": "KING",
+      "text": "The king shall drink to Hamlet’s better breath;"
+    },
+    {
+      "number": 235,
+      "speaker": "KING",
+      "text": "And in the cup an union shall he throw,"
+    },
+    {
+      "number": 236,
+      "speaker": "KING",
+      "text": "Richer than that which four successive kings"
+    },
+    {
+      "number": 237,
+      "speaker": "KING",
+      "text": "In Denmark’s crown have worn. Give me the cups;"
+    },
+    {
+      "number": 238,
+      "speaker": "KING",
+      "text": "And let the kettle to the trumpet speak,"
+    },
+    {
+      "number": 239,
+      "speaker": "KING",
+      "text": "The trumpet to the cannoneer without,"
+    },
+    {
+      "number": 240,
+      "speaker": "KING",
+      "text": "The cannons to the heavens, the heavens to earth,"
+    },
+    {
+      "number": 241,
+      "speaker": "KING",
+      "text": "“Now the king drinks to Hamlet.” Come, begin:"
+    },
+    {
+      "number": 242,
+      "speaker": "KING",
+      "text": "And you, the judges, bear a wary eye."
+    },
+    {
+      "number": 243,
+      "speaker": "HAMLET",
+      "text": "Come on, sir."
+    },
+    {
+      "number": 243,
+      "speaker": "LAERTES",
+      "text": "Come, my lord. They play."
+    },
+    {
+      "number": 244,
+      "speaker": "HAMLET",
+      "text": "One."
+    },
+    {
+      "number": 244,
+      "speaker": "LAERTES",
+      "text": "No."
+    },
+    {
+      "number": 245,
+      "speaker": "HAMLET",
+      "text": "Judgment."
+    },
+    {
+      "number": 245,
+      "speaker": "OSRIC",
+      "text": "A hit, a very palpable hit."
+    },
+    {
+      "number": 246,
+      "speaker": "LAERTES",
+      "text": "Well; again."
+    },
+    {
+      "number": 247,
+      "speaker": "KING",
+      "text": "Stay; give me drink. Hamlet, this pearl is thine;"
+    },
+    {
+      "number": 248,
+      "speaker": "KING",
+      "text": "Here’s to thy health. Give him the cup."
+    },
+    {
+      "number": 249,
+      "speaker": "HAMLET",
+      "text": "I’ll play this bout first; set it by awhile. Come. They play."
+    },
+    {
+      "number": 250,
+      "speaker": "HAMLET",
+      "text": "Another hit; what say you?"
+    },
+    {
+      "number": 251,
+      "speaker": "LAERTES",
+      "text": "A touch, a touch, I do confess."
+    },
+    {
+      "number": 252,
+      "speaker": "KING",
+      "text": "Our son shall win."
+    },
+    {
+      "number": 252,
+      "speaker": "QUEEN",
+      "text": "He’s fat, and scant of breath."
+    },
+    {
+      "number": 253,
+      "speaker": "QUEEN",
+      "text": "Here, Hamlet, take my napkin, rub thy brows:"
+    },
+    {
+      "number": 254,
+      "speaker": "QUEEN",
+      "text": "The queen carouses to thy fortune, Hamlet."
+    },
+    {
+      "number": 255,
+      "speaker": "HAMLET",
+      "text": "Good madam!"
+    },
+    {
+      "number": 255,
+      "speaker": "KING",
+      "text": "Gertrude, do not drink."
+    },
+    {
+      "number": 256,
+      "speaker": "QUEEN",
+      "text": "I will, my lord; I pray you, pardon me."
+    },
+    {
+      "number": 257,
+      "speaker": "KING",
+      "text": "It is the poison’d cup: it is too late."
+    },
+    {
+      "number": 258,
+      "speaker": "HAMLET",
+      "text": "I dare not drink yet, madam; by and by."
+    },
+    {
+      "number": 259,
+      "speaker": "QUEEN",
+      "text": "Come, let me wipe thy face."
+    },
+    {
+      "number": 259,
+      "speaker": "LAERTES",
+      "text": "My lord, I’ll hit him now."
+    },
+    {
+      "number": 260,
+      "speaker": "KING",
+      "text": "I do not think’t."
+    },
+    {
+      "number": 261,
+      "speaker": "LAERTES",
+      "text": "And yet ’tis almost ’gainst my conscience."
+    },
+    {
+      "number": 262,
+      "speaker": "HAMLET",
+      "text": "Come, for the third, Laertes: you but dally;"
+    },
+    {
+      "number": 263,
+      "speaker": "HAMLET",
+      "text": "I pray you, pass with your best violence;"
+    },
+    {
+      "number": 264,
+      "speaker": "HAMLET",
+      "text": "I am afeard you make a wanton of me."
+    },
+    {
+      "number": 265,
+      "speaker": "LAERTES",
+      "text": "Say you so? come on. They play."
+    },
+    {
+      "number": 266,
+      "speaker": "OSRIC",
+      "text": "Nothing, neither way."
+    },
+    {
+      "number": 267,
+      "speaker": "LAERTES",
+      "text": "Have at you now! Laertes wounds Hamlet; then, in scuffling, they change"
+    },
+    {
+      "number": 268,
+      "speaker": "LAERTES",
+      "text": "rapiers, and Hamlet wounds Laertes."
+    },
+    {
+      "number": 268,
+      "speaker": "KING",
+      "text": "Part them; they are incensed."
+    },
+    {
+      "number": 269,
+      "speaker": "HAMLET",
+      "text": "Nay, come, again. The Queen falls."
+    },
+    {
+      "number": 269,
+      "speaker": "OSRIC",
+      "text": "Look to the queen there, ho!"
+    },
+    {
+      "number": 270,
+      "speaker": "HORATIO",
+      "text": "They bleed on both sides. How is it, my lord?"
+    },
+    {
+      "number": 271,
+      "speaker": "OSRIC",
+      "text": "How is’t, Laertes?"
+    },
+    {
+      "number": 272,
+      "speaker": "LAERTES",
+      "text": "Why, as a woodcock to mine own springe, Osric;"
+    },
+    {
+      "number": 273,
+      "speaker": "LAERTES",
+      "text": "I am justly kill’d with mine own treachery."
+    },
+    {
+      "number": 274,
+      "speaker": "HAMLET",
+      "text": "How does the queen?"
+    },
+    {
+      "number": 274,
+      "speaker": "KING",
+      "text": "She swounds to see them bleed."
+    },
+    {
+      "number": 275,
+      "speaker": "QUEEN",
+      "text": "No, no, the drink, the drink—O my dear Hamlet—"
+    },
+    {
+      "number": 276,
+      "speaker": "QUEEN",
+      "text": "The drink, the drink! I am poison’d."
+    },
+    {
+      "number": 277,
+      "speaker": "HAMLET",
+      "text": "O villany! Ho! let the door be lock’d:"
+    },
+    {
+      "number": 278,
+      "speaker": "HAMLET",
+      "text": "Treachery! Seek it out."
+    },
+    {
+      "number": 279,
+      "speaker": "LAERTES",
+      "text": "It is here, Hamlet: Hamlet, thou art slain;"
+    },
+    {
+      "number": 280,
+      "speaker": "LAERTES",
+      "text": "No medicine in the world can do thee good;"
+    },
+    {
+      "number": 281,
+      "speaker": "LAERTES",
+      "text": "In thee there is not half an hour of life;"
+    },
+    {
+      "number": 282,
+      "speaker": "LAERTES",
+      "text": "The treacherous instrument is in thy hand,"
+    },
+    {
+      "number": 283,
+      "speaker": "LAERTES",
+      "text": "Unbated and envenom’d: the foul practice"
+    },
+    {
+      "number": 284,
+      "speaker": "LAERTES",
+      "text": "Hath turn’d itself on me; lo, here I lie,"
+    },
+    {
+      "number": 285,
+      "speaker": "LAERTES",
+      "text": "Never to rise again: thy mother’s poison’d:"
+    },
+    {
+      "number": 286,
+      "speaker": "LAERTES",
+      "text": "I can no more: the king, the king’s to blame."
+    },
+    {
+      "number": 287,
+      "speaker": "HAMLET",
+      "text": "The point envenom’d too!"
+    },
+    {
+      "number": 288,
+      "speaker": "HAMLET",
+      "text": "Then, venom, to thy work."
+    },
+    {
+      "number": 288,
+      "speaker": "ALL",
+      "text": "Treason! treason!"
+    },
+    {
+      "number": 289,
+      "speaker": "KING",
+      "text": "O, yet defend me, friends; I am but hurt."
+    },
+    {
+      "number": 290,
+      "speaker": "HAMLET",
+      "text": "Here, thou incestuous, murderous, damned Dane,"
+    },
+    {
+      "number": 291,
+      "speaker": "HAMLET",
+      "text": "Drink off this potion. Is thy union here?"
+    },
+    {
+      "number": 292,
+      "speaker": "HAMLET",
+      "text": "Follow my mother. King dies."
+    },
+    {
+      "number": 292,
+      "speaker": "LAERTES",
+      "text": "He is justly served;"
+    },
+    {
+      "number": 293,
+      "speaker": "LAERTES",
+      "text": "It is a poison temper’d by himself."
+    },
+    {
+      "number": 294,
+      "speaker": "LAERTES",
+      "text": "Exchange forgiveness with me, noble Hamlet:"
+    },
+    {
+      "number": 295,
+      "speaker": "LAERTES",
+      "text": "Mine and my father’s death come not upon thee,"
+    },
+    {
+      "number": 296,
+      "speaker": "LAERTES",
+      "text": "Nor thine on me!"
+    },
+    {
+      "number": 297,
+      "speaker": "HAMLET",
+      "text": "Heaven make thee free of it! I follow thee."
+    },
+    {
+      "number": 298,
+      "speaker": "HAMLET",
+      "text": "I am dead, Horatio. Wretched queen, adieu!"
+    },
+    {
+      "number": 299,
+      "speaker": "HAMLET",
+      "text": "You that look pale and tremble at this chance,"
+    },
+    {
+      "number": 300,
+      "speaker": "HAMLET",
+      "text": "That are but mutes or audience to this act,"
+    },
+    {
+      "number": 301,
+      "speaker": "HAMLET",
+      "text": "Had I but time—as this fell sergeant, death,"
+    },
+    {
+      "number": 302,
+      "speaker": "HAMLET",
+      "text": "Is strict in his arrest—O, I could tell you—"
+    },
+    {
+      "number": 303,
+      "speaker": "HAMLET",
+      "text": "But let it be. Horatio, I am dead;"
+    },
+    {
+      "number": 304,
+      "speaker": "HAMLET",
+      "text": "Thou livest; report me and my cause aright"
+    },
+    {
+      "number": 305,
+      "speaker": "HAMLET",
+      "text": "To the unsatisfied."
+    },
+    {
+      "number": 305,
+      "speaker": "HORATIO",
+      "text": "Never believe it:"
+    },
+    {
+      "number": 306,
+      "speaker": "HORATIO",
+      "text": "I am more an antique Roman than a Dane:"
+    },
+    {
+      "number": 307,
+      "speaker": "HORATIO",
+      "text": "Here’s yet some liquor left."
+    },
+    {
+      "number": 307,
+      "speaker": "HAMLET",
+      "text": "As thou’rt a man,"
+    },
+    {
+      "number": 308,
+      "speaker": "HAMLET",
+      "text": "Give me the cup: let go; by heaven, I’ll have’t."
+    },
+    {
+      "number": 309,
+      "speaker": "HAMLET",
+      "text": "O good Horatio, what a wounded name,"
+    },
+    {
+      "number": 310,
+      "speaker": "HAMLET",
+      "text": "Things standing thus unknown, shall live behind me!"
+    },
+    {
+      "number": 311,
+      "speaker": "HAMLET",
+      "text": "If thou didst ever hold me in thy heart,"
+    },
+    {
+      "number": 312,
+      "speaker": "HAMLET",
+      "text": "Absent thee from felicity awhile,"
+    },
+    {
+      "number": 313,
+      "speaker": "HAMLET",
+      "text": "And in this harsh world draw thy breath in pain,"
+    },
+    {
+      "number": 314,
+      "speaker": "HAMLET",
+      "text": "To tell my story. March afar off, and shot within. What warlike noise is this?"
+    },
+    {
+      "number": 315,
+      "speaker": "OSRIC",
+      "text": "Young Fortinbras, with conquest come from Poland,"
+    },
+    {
+      "number": 316,
+      "speaker": "OSRIC",
+      "text": "To the ambassadors of England gives"
+    },
+    {
+      "number": 317,
+      "speaker": "OSRIC",
+      "text": "This warlike volley."
+    },
+    {
+      "number": 317,
+      "speaker": "HAMLET",
+      "text": "O, I die, Horatio;"
+    },
+    {
+      "number": 318,
+      "speaker": "HAMLET",
+      "text": "The potent poison quite o’er-crows my spirit:"
+    },
+    {
+      "number": 319,
+      "speaker": "HAMLET",
+      "text": "I cannot live to hear the news from England;"
+    },
+    {
+      "number": 320,
+      "speaker": "HAMLET",
+      "text": "But I do prophesy the election lights"
+    },
+    {
+      "number": 321,
+      "speaker": "HAMLET",
+      "text": "On Fortinbras: he has my dying voice;"
+    },
+    {
+      "number": 322,
+      "speaker": "HAMLET",
+      "text": "So tell him, with the occurrents, more and less,"
+    },
+    {
+      "number": 323,
+      "speaker": "HAMLET",
+      "text": "Which have solicited. The rest is silence."
+    },
+    {
+      "number": 324,
+      "speaker": "HORATIO",
+      "text": "Now cracks a noble heart. Good night, sweet prince;"
+    },
+    {
+      "number": 325,
+      "speaker": "HORATIO",
+      "text": "And flights of angels sing thee to thy rest!"
+    },
+    {
+      "number": 326,
+      "speaker": "HORATIO",
+      "text": "Why does the drum come hither? March within."
+    },
+    {
+      "number": 327,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "Where is this sight?"
+    },
+    {
+      "number": 327,
+      "speaker": "HORATIO",
+      "text": "What is it ye would see?"
+    },
+    {
+      "number": 328,
+      "speaker": "HORATIO",
+      "text": "If aught of woe or wonder, cease your search."
+    },
+    {
+      "number": 329,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "This quarry cries on havoc. O proud death,"
+    },
+    {
+      "number": 330,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "What feast is toward in thine eternal cell,"
+    },
+    {
+      "number": 331,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "That thou so many princes at a shot"
+    },
+    {
+      "number": 332,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "So bloodily hast struck?"
+    },
+    {
+      "number": 332,
+      "speaker": "FIRST AMBASSADOR",
+      "text": "The sight is dismal;"
+    },
+    {
+      "number": 333,
+      "speaker": "FIRST AMBASSADOR",
+      "text": "And our affairs from England come too late:"
+    },
+    {
+      "number": 334,
+      "speaker": "FIRST AMBASSADOR",
+      "text": "The ears are senseless that should give us hearing,"
+    },
+    {
+      "number": 335,
+      "speaker": "FIRST AMBASSADOR",
+      "text": "To tell him his commandment is fulfill’d,"
+    },
+    {
+      "number": 336,
+      "speaker": "FIRST AMBASSADOR",
+      "text": "That Rosencrantz and Guildenstern are dead:"
+    },
+    {
+      "number": 337,
+      "speaker": "FIRST AMBASSADOR",
+      "text": "Where should we have our thanks?"
+    },
+    {
+      "number": 337,
+      "speaker": "HORATIO",
+      "text": "Not from his mouth,"
+    },
+    {
+      "number": 338,
+      "speaker": "HORATIO",
+      "text": "Had it the ability of life to thank you:"
+    },
+    {
+      "number": 339,
+      "speaker": "HORATIO",
+      "text": "He never gave commandment for their death."
+    },
+    {
+      "number": 340,
+      "speaker": "HORATIO",
+      "text": "But since, so jump upon this bloody question,"
+    },
+    {
+      "number": 341,
+      "speaker": "HORATIO",
+      "text": "You from the Polack wars, and you from England,"
+    },
+    {
+      "number": 342,
+      "speaker": "HORATIO",
+      "text": "Are here arrived give order that these bodies"
+    },
+    {
+      "number": 343,
+      "speaker": "HORATIO",
+      "text": "High on a stage be placed to the view;"
+    },
+    {
+      "number": 344,
+      "speaker": "HORATIO",
+      "text": "And let me speak to the yet unknowing world"
+    },
+    {
+      "number": 345,
+      "speaker": "HORATIO",
+      "text": "How these things came about: so shall you hear"
+    },
+    {
+      "number": 346,
+      "speaker": "HORATIO",
+      "text": "Of carnal, bloody, and unnatural acts,"
+    },
+    {
+      "number": 347,
+      "speaker": "HORATIO",
+      "text": "Of accidental judgments, casual slaughters,"
+    },
+    {
+      "number": 348,
+      "speaker": "HORATIO",
+      "text": "Of deaths put on by cunning and forced cause,"
+    },
+    {
+      "number": 349,
+      "speaker": "HORATIO",
+      "text": "And, in this upshot, purposes mistook"
+    },
+    {
+      "number": 350,
+      "speaker": "HORATIO",
+      "text": "Fall’n on the inventors’ heads: all this can I"
+    },
+    {
+      "number": 351,
+      "speaker": "HORATIO",
+      "text": "Truly deliver."
+    },
+    {
+      "number": 351,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "Let us haste to hear it,"
+    },
+    {
+      "number": 352,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "And call the noblest to the audience."
+    },
+    {
+      "number": 353,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "For me, with sorrow I embrace my fortune:"
+    },
+    {
+      "number": 354,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "I have some rights of memory in this kingdom,"
+    },
+    {
+      "number": 355,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "Which now to claim my vantage doth invite me."
+    },
+    {
+      "number": 356,
+      "speaker": "HORATIO",
+      "text": "Of that I shall have also cause to speak,"
+    },
+    {
+      "number": 357,
+      "speaker": "HORATIO",
+      "text": "And from his mouth whose voice will draw on more:"
+    },
+    {
+      "number": 358,
+      "speaker": "HORATIO",
+      "text": "But let this same be presently perform’d,"
+    },
+    {
+      "number": 359,
+      "speaker": "HORATIO",
+      "text": "Even while men’s minds are wild; lest more mischance,"
+    },
+    {
+      "number": 360,
+      "speaker": "HORATIO",
+      "text": "On plots and errors, happen."
+    },
+    {
+      "number": 360,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "Let four captains"
+    },
+    {
+      "number": 361,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "Bear Hamlet, like a soldier, to the stage;"
+    },
+    {
+      "number": 362,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "For he was likely, had he been put on,"
+    },
+    {
+      "number": 363,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "To have proved most royally: and, for his passage,"
+    },
+    {
+      "number": 364,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "The soldiers’ music and the rites of war"
+    },
+    {
+      "number": 365,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "Speak loudly for him."
+    },
+    {
+      "number": 366,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "Take up the bodies: such a sight as this"
+    },
+    {
+      "number": 367,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "Becomes the field, but here shows much amiss."
+    },
+    {
+      "number": 368,
+      "speaker": "PRINCE FORTINBRAS",
+      "text": "Go, bid the soldiers shoot. A dead march. Exeunt, bearing off the dead bodies; after which a peal of ordnance is shot off."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Hamlet and Horatio."
+    },
+    {
+      "after_line": 77,
+      "text": "Enter Osric."
+    },
+    {
+      "after_line": 154,
+      "text": "Exit Osric."
+    },
+    {
+      "after_line": 161,
+      "text": "Enter a Lord."
+    },
+    {
+      "after_line": 172,
+      "text": "Exit Lord."
+    },
+    {
+      "after_line": 187,
+      "text": "Enter King, Queen, Laertes, Lords, Osric, and Attendants with foils, etc."
+    },
+    {
+      "after_line": 188,
+      "text": "The King puts Laertes’ hand into Hamlet’s."
+    },
+    {
+      "after_line": 248,
+      "text": "Trumpets sound, and cannon shot off within."
+    },
+    {
+      "after_line": 257,
+      "text": "Aside."
+    },
+    {
+      "after_line": 261,
+      "text": "Aside."
+    },
+    {
+      "after_line": 276,
+      "text": "Dies."
+    },
+    {
+      "after_line": 288,
+      "text": "Stabs the King."
+    },
+    {
+      "after_line": 296,
+      "text": "Dies."
+    },
+    {
+      "after_line": 323,
+      "text": "Dies."
+    },
+    {
+      "after_line": 326,
+      "text": "Enter Fortinbras, the English Ambassadors, and others."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "hamlet_act5_scene2_gloss1",
+      "line": 1,
+      "phrase": "see the other",
+      "definition": "hear the rest"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss2",
+      "line": 5,
+      "phrase": "mutines in the bilboes",
+      "definition": "mutineers in leg-irons"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss3",
+      "line": 5,
+      "phrase": "Rashly",
+      "definition": "impulsively"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss4",
+      "line": 7,
+      "phrase": "indiscretion sometimes serves us well",
+      "definition": "rashness sometimes helps us"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss5",
+      "line": 8,
+      "phrase": "deep plots do pall",
+      "definition": "deliberate schemes fail"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss6",
+      "line": 10,
+      "phrase": "rough-hew them how we will",
+      "definition": "however we crudely shape events, a divinity perfects them"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss7",
+      "line": 12,
+      "phrase": "sea-gown",
+      "definition": "rough, hooded sailor's coat"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss8",
+      "line": 16,
+      "phrase": "unseal",
+      "definition": "break open"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss9",
+      "line": 17,
+      "phrase": "grand commission",
+      "definition": "royal warrant"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss10",
+      "line": 21,
+      "phrase": "bugs and goblins",
+      "definition": "bogeymen and spooks (absurd dangers)"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss11",
+      "line": 22,
+      "phrase": "no leisure bated",
+      "definition": "with no delay permitted"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss12",
+      "line": 23,
+      "phrase": "stay the grinding of the axe",
+      "definition": "wait for the axe to be sharpened"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss13",
+      "line": 32,
+      "phrase": "fair",
+      "definition": "in a fair hand (clearly)"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss14",
+      "line": 31,
+      "phrase": "statists",
+      "definition": "statesmen"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss15",
+      "line": 34,
+      "phrase": "yeoman's service",
+      "definition": "sturdy, trusty service"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss16",
+      "line": 36,
+      "phrase": "conjuration",
+      "definition": "solemn plea"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss17",
+      "line": 42,
+      "phrase": "view and knowing",
+      "definition": "reading and understanding"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss18",
+      "line": 43,
+      "phrase": "debatement",
+      "definition": "deliberation"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss19",
+      "line": 44,
+      "phrase": "bearers",
+      "definition": "messengers (Rosencrantz & Guildenstern)"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss20",
+      "line": 62,
+      "phrase": "Popp'd in between the election",
+      "definition": "thrust himself into the royal succession"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss21",
+      "line": 63,
+      "phrase": "angle for my proper life",
+      "definition": "fished for my life"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss22",
+      "line": 65,
+      "phrase": "to quit him with this arm",
+      "definition": "to repay him with this hand"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss23",
+      "line": 70,
+      "phrase": "the interim is mine",
+      "definition": "the time between will be mine to act"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss24",
+      "line": 76,
+      "phrase": "bravery",
+      "definition": "bravado"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss25",
+      "line": 79,
+      "phrase": "water-fly",
+      "definition": "foppish, flitting courtier"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss26",
+      "line": 97,
+      "phrase": "for mine ease",
+      "definition": "out of courtesy"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss27",
+      "line": 100,
+      "phrase": "feelingly of him",
+      "definition": "eloquently about him"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss28",
+      "line": 103,
+      "phrase": "his definement",
+      "definition": "his description"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss29",
+      "line": 103,
+      "phrase": "perdition in you",
+      "definition": "loss in you (of his virtues)"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss30",
+      "line": 105,
+      "phrase": "yaw neither",
+      "definition": "veer off-course either"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss31",
+      "line": 130,
+      "phrase": "carriages",
+      "definition": "straps (from which the rapier hangs)"
+    },
+    {
+      "id": "hamlet_act5_scene2_gloss32",
+      "line": 141,
+      "phrase": "hath laid",
+      "definition": "has wagered"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "hamlet_act5_scene2_ann1",
+      "line_start": 4,
+      "line_end": 70,
+      "citation_display": "Hamlet 5.2.4–70",
+      "category": "thematic",
+      "title": "Providence and the altered commission",
+      "body": "Hamlet's narrative of the voyage — 'Rashly, / And praised be rashness for it' — articulates the play's only positive theology. 'There's a divinity that shapes our ends, / Rough-hew them how we will' is a claim the earlier Hamlet could not have made. The man who spent three acts immobilized by questions of action now ascribes the sealed commission's discovery to providence rather than to his own cleverness. The theological turn is easy to sentimentalize; Rhodri Lewis has argued that the play's providence-talk is not consolation but the calm that comes with surrendering agency. Hamlet is not saved; he is spared long enough to complete the revenge that will destroy him. The speech's peace is the peace of a man who has stopped trying to master his fate.",
+      "sources": [
+        "Rhodri Lewis, Hamlet and the Vision of Darkness (2017)",
+        "Stanley Cavell, Disowning Knowledge (1987)"
+      ]
+    },
+    {
+      "id": "hamlet_act5_scene2_ann2",
+      "line_start": 197,
+      "line_end": 215,
+      "citation_display": "Hamlet 5.2.197–215",
+      "category": "thematic",
+      "title": "'The readiness is all'",
+      "body": "Hamlet's response to Horatio's warning about the duel — 'We defy augury. There's a special providence in the fall of a sparrow... The readiness is all' — echoes Matthew 10:29 ('one sparrow shall not fall on the ground without your Father') and Edgar's 'ripeness is all' in King Lear. What the prince arrives at, after five acts of deliberation, is not a philosophy of action but a philosophy of availability. One cannot control when one is called; one can only be ready when called. The speech is Hamlet's final utterance before the catastrophe, and its stoic-Christian fusion is where the play's religious and philosophical traditions quiet into a single voice.",
+      "sources": [
+        "A. D. Nuttall, Shakespeare the Thinker (2007)"
+      ]
+    },
+    {
+      "id": "hamlet_act5_scene2_ann3",
+      "line_start": 315,
+      "line_end": 360,
+      "citation_display": "Hamlet 5.2.315–360",
+      "category": "structural",
+      "title": "The choreography of death",
+      "body": "The final fencing match is a tragic mechanism: one instrument of death, two accidental redirections, four bodies. Laertes is wounded with the poisoned foil he meant for Hamlet; Gertrude drinks from the cup intended for Hamlet; Hamlet, learning the truth, poisons Claudius with his own potion. Each death is an inversion of the killer's intent. Shakespeare's revenge-tragedy precursors, particularly Kyd's Spanish Tragedy, tended toward operatic pile-ups of corpses; Hamlet's ending is more economical, each death following from a specific choice. The King is killed last, and by his own contrivance; the revenge Hamlet never managed to design, Claudius has done for him.",
+      "sources": [
+        "Jonathan Bate, Soul of the Age (2008)"
+      ]
+    },
+    {
+      "id": "hamlet_act5_scene2_ann4",
+      "line_start": 353,
+      "line_end": 359,
+      "citation_display": "Hamlet 5.2.353–359",
+      "category": "close_reading",
+      "title": "'The rest is silence'",
+      "body": "Hamlet's last words are simultaneously a statement about what cannot be said and an acknowledgment of what will be said after him — Fortinbras will inherit, Horatio will tell the story, the theater of Denmark will continue. The Folio has four additional syllables ('O, o, o, o') that some editors print and others suppress. If performed, these dying groans convert the neat aphorism into something more ragged. T. S. Eliot famously called 'the rest is silence' the cleanest ending in Shakespeare; others, including Bradley, found in the 'O, o, o, o' a more honest human ending. Either way, the phrase is Shakespeare's most condensed meditation on the limits of speech at the edge of death.",
+      "sources": [
+        "T. S. Eliot, 'Hamlet and His Problems' (1919)",
+        "A. C. Bradley, Shakespearean Tragedy (1904)"
+      ]
+    },
+    {
+      "id": "hamlet_act5_scene2_ann5",
+      "line_start": 360,
+      "line_end": 390,
+      "citation_display": "Hamlet 5.2.360–390",
+      "category": "structural",
+      "title": "Fortinbras's arrival and the restoration",
+      "body": "Fortinbras enters as the play closes, returning from the Polish campaign and stepping almost by chance into the throne of Denmark. His claim — 'some rights of memory in this kingdom' — recalls his father's lost lands. The restoration he provides is not consoling. The young man who organized an army to 'find quarrel in a straw' inherits a kingdom emptied by a more meditative son. Shakespeare's political vision is bleak: the state that has consumed itself through corruption is passed to an outsider whose decisiveness is untouched by the questions Hamlet could not stop asking. The final 'soldier's music' given to Hamlet honors the prince who never quite got to be a warrior.",
+      "sources": [
+        "Marjorie Garber, Shakespeare After All (2004)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "hamlet_act5_scene2_q1",
+      "kind": "comprehension",
+      "prompt": "What does Hamlet discover when he unseals the commission on the ship?",
+      "options": [
+        "Claudius's confession of the murder.",
+        "An order to the King of England to execute Hamlet on arrival.",
+        "A ransom demand for his release.",
+        "A letter of abdication in Hamlet's favor."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 15,
+      "anchor_line_end": 25
+    },
+    {
+      "id": "hamlet_act5_scene2_q2",
+      "kind": "theme",
+      "prompt": "What does Hamlet mean by 'There's a divinity that shapes our ends, rough-hew them how we will'?",
+      "options": [
+        "That Hamlet has become a carpenter.",
+        "That a providential design operates beyond human attempts to shape events.",
+        "That fate is entirely indifferent to human action.",
+        "That only kings can shape history."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 8,
+      "anchor_line_end": 12
+    },
+    {
+      "id": "hamlet_act5_scene2_q3",
+      "kind": "close_reading",
+      "prompt": "What biblical passage does 'There's a special providence in the fall of a sparrow' echo?",
+      "options": [
+        "The Sermon on the Mount (Matthew 5).",
+        "Jesus's instruction to the apostles — Matthew 10:29 ('one sparrow shall not fall on the ground without your Father').",
+        "Psalm 23 ('The Lord is my shepherd').",
+        "The book of Job."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 208,
+      "anchor_line_end": 212
+    },
+    {
+      "id": "hamlet_act5_scene2_q4",
+      "kind": "inference",
+      "prompt": "How does Gertrude die?",
+      "options": [
+        "Laertes stabs her with the poisoned foil.",
+        "She drinks from the poisoned cup Claudius intended for Hamlet.",
+        "She collapses from grief.",
+        "Hamlet poisons her to punish her remarriage."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 295,
+      "anchor_line_end": 312
+    },
+    {
+      "id": "hamlet_act5_scene2_q5",
+      "kind": "comprehension",
+      "prompt": "How does Hamlet finally kill Claudius?",
+      "options": [
+        "He stabs him with the poisoned foil and forces him to drink the poisoned cup.",
+        "He strangles him with his own crown's circlet.",
+        "He has Horatio run him through with a sword.",
+        "He drowns him in a font."
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 15,
+      "anchor_line_start": 315,
+      "anchor_line_end": 335
+    },
+    {
+      "id": "hamlet_act5_scene2_q6",
+      "kind": "theme",
+      "prompt": "What does Hamlet ask Horatio to do after his death?",
+      "options": [
+        "Flee Denmark immediately.",
+        "Live on to tell Hamlet's story and report the truth aright.",
+        "Poison himself to accompany Hamlet.",
+        "Destroy the letter that proved Claudius's guilt."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 344,
+      "anchor_line_end": 351
+    },
+    {
+      "id": "hamlet_act5_scene2_q7",
+      "kind": "close_reading",
+      "prompt": "What is the significance of Hamlet's final words, 'The rest is silence'?",
+      "options": [
+        "A literal request for quiet in the room.",
+        "An acknowledgment that what remains — of his story, of the afterlife, of himself — cannot be spoken.",
+        "A reference to a musical score.",
+        "A coded instruction to Horatio about a hidden document."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 358,
+      "anchor_line_end": 358
+    }
+  ]
+}

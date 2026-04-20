@@ -1,0 +1,29 @@
+{
+  "section_id": "hamlet_act2_scene1",
+  "annotations": [
+    {
+      "line_start": 1,
+      "line_end": 72,
+      "category": "thematic",
+      "title": "Polonius's indirections and the poetics of surveillance",
+      "body": "Polonius instructs Reynaldo to investigate Laertes by a technique he calls 'indirections find directions out': gossip about the son's drabbing, drinking, and quarreling to elicit, from the listener, confirmation of the son's true behavior. The method is a miniature of Polonius's whole epistemology, and by extension of Claudius's court. No one asks direct questions because no one can afford honest answers. The scene is often cut in performance but is theoretically crucial: it establishes, before we see Hamlet's 'antic disposition' exposed, that this is a state in which surveillance has replaced trust. When Polonius later plans to 'loose' Ophelia to Hamlet and eavesdrop, the technique will be the same.",
+      "sources": ["John Dover Wilson, What Happens in Hamlet (1935)"]
+    },
+    {
+      "line_start": 79,
+      "line_end": 110,
+      "category": "textual",
+      "title": "Ophelia's report: a scene Shakespeare does not stage",
+      "body": "The encounter between Hamlet and Ophelia that Ophelia describes — Hamlet silent, ungartered, pale, holding her wrist and studying her face — is never shown on stage. Shakespeare consistently reports through speech the most intimate crises in the play (Ophelia's drowning, the pirate attack, the England voyage), staging instead the public consequences. The strategy concentrates dramatic power: the unseen scene becomes more vivid in Ophelia's telling than it could in a staged rendering. Editors from Dover Wilson to Harold Jenkins have debated whether Hamlet's visit signals genuine distress or the beginning of the 'antic disposition' — a question the play refuses to settle because Ophelia herself cannot tell.",
+      "sources": ["Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"]
+    },
+    {
+      "line_start": 108,
+      "line_end": 119,
+      "category": "thematic",
+      "title": "The father's error — 'I am sorry'",
+      "body": "Polonius's response to Ophelia's report is revealing: 'This is the very ecstasy of love,' and he assumes her obedient refusal to admit Hamlet's letters has caused the madness. The comic irony is that Polonius is half-right and wholly wrong: Hamlet's distress is real but not about love, and Polonius's remedy — to march Ophelia to the King and weaponize her distress for political intelligence — will catalyze the next four acts of catastrophe. The line 'I had not quoted him' ('I had not interpreted him') is the scene's quiet admission that Polonius has misread everything, and he will now commit Ophelia, Hamlet, and himself to acting on that misreading.",
+      "sources": ["Carol Thomas Neely, Broken Nuptials in Shakespeare's Plays (1985)"]
+    }
+  ]
+}

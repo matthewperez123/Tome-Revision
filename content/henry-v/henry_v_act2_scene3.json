@@ -1,0 +1,535 @@
+{
+  "section_id": "henry_v_act2_scene3",
+  "work_id": "henry-v",
+  "sequence": 7,
+  "act": 2,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "London. Before a tavern in Eastcheap",
+  "line_count": 53,
+  "word_count": 477,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "HOSTESS",
+      "text": "Prithee, honey-sweet husband, let me bring thee to Staines."
+    },
+    {
+      "number": 2,
+      "speaker": "PISTOL",
+      "text": "No; for my manly heart doth yearn."
+    },
+    {
+      "number": 3,
+      "speaker": "PISTOL",
+      "text": "Bardolph, be blithe: Nym, rouse thy vaunting veins:"
+    },
+    {
+      "number": 4,
+      "speaker": "PISTOL",
+      "text": "Boy, bristle thy courage up; for Falstaff he is dead,"
+    },
+    {
+      "number": 5,
+      "speaker": "PISTOL",
+      "text": "And we must yearn therefore."
+    },
+    {
+      "number": 6,
+      "speaker": "BARDOLPH",
+      "text": "Would I were with him, wheresome’er he is, either in heaven or in hell!"
+    },
+    {
+      "number": 7,
+      "speaker": "HOSTESS",
+      "text": "Nay, sure, he’s not in hell: he’s in Arthur’s bosom, if ever"
+    },
+    {
+      "number": 8,
+      "speaker": "HOSTESS",
+      "text": "man went to Arthur’s bosom. A’ made a finer end and went"
+    },
+    {
+      "number": 9,
+      "speaker": "HOSTESS",
+      "text": "away an it had been any christom child; a’ parted even just"
+    },
+    {
+      "number": 10,
+      "speaker": "HOSTESS",
+      "text": "between twelve and one, even at the turning o’ the tide: for"
+    },
+    {
+      "number": 11,
+      "speaker": "HOSTESS",
+      "text": "after I saw him fumble with the sheets and play with flowers"
+    },
+    {
+      "number": 12,
+      "speaker": "HOSTESS",
+      "text": "and smile upon his fingers’ ends, I knew there was but one"
+    },
+    {
+      "number": 13,
+      "speaker": "HOSTESS",
+      "text": "way; for his nose was as sharp as a pen, and a’"
+    },
+    {
+      "number": 14,
+      "speaker": "HOSTESS",
+      "text": "babbled of green fields. “How now, Sir John!” quoth I: “what, man!"
+    },
+    {
+      "number": 15,
+      "speaker": "HOSTESS",
+      "text": "be o’ good cheer.” So a’ cried out, “God, God, God!” three"
+    },
+    {
+      "number": 16,
+      "speaker": "HOSTESS",
+      "text": "or four times. Now I, to comfort him, bid him a’ should"
+    },
+    {
+      "number": 17,
+      "speaker": "HOSTESS",
+      "text": "not think of God; I hoped there was no need to trouble"
+    },
+    {
+      "number": 18,
+      "speaker": "HOSTESS",
+      "text": "himself with any such thoughts yet. So a’ bade me lay more"
+    },
+    {
+      "number": 19,
+      "speaker": "HOSTESS",
+      "text": "clothes on his feet: I put my hand into the bed and"
+    },
+    {
+      "number": 20,
+      "speaker": "HOSTESS",
+      "text": "felt them, and they were as cold as any stone; then I"
+    },
+    {
+      "number": 21,
+      "speaker": "HOSTESS",
+      "text": "felt to his knees, and they were as cold as any stone,"
+    },
+    {
+      "number": 22,
+      "speaker": "HOSTESS",
+      "text": "and so upward and upward, and all was as cold as any"
+    },
+    {
+      "number": 23,
+      "speaker": "HOSTESS",
+      "text": "stone."
+    },
+    {
+      "number": 24,
+      "speaker": "NYM",
+      "text": "They say he cried out of sack."
+    },
+    {
+      "number": 25,
+      "speaker": "HOSTESS",
+      "text": "Ay, that a’ did."
+    },
+    {
+      "number": 25,
+      "speaker": "BARDOLPH",
+      "text": "And of women."
+    },
+    {
+      "number": 26,
+      "speaker": "HOSTESS",
+      "text": "Nay, that a’ did not."
+    },
+    {
+      "number": 27,
+      "speaker": "BOY",
+      "text": "Yes, that a’ did; and said they were devils incarnate."
+    },
+    {
+      "number": 28,
+      "speaker": "HOSTESS",
+      "text": "A’ could never abide carnation; ’twas a colour he never liked."
+    },
+    {
+      "number": 29,
+      "speaker": "BOY",
+      "text": "A’ said once, the devil would have him about women."
+    },
+    {
+      "number": 30,
+      "speaker": "HOSTESS",
+      "text": "A’ did in some sort, indeed, handle women; but then he was"
+    },
+    {
+      "number": 31,
+      "speaker": "HOSTESS",
+      "text": "rheumatic, and talk’d of the whore of Babylon."
+    },
+    {
+      "number": 32,
+      "speaker": "BOY",
+      "text": "Do you not remember, a’ saw a flea stick upon Bardolph’s nose,"
+    },
+    {
+      "number": 33,
+      "speaker": "BOY",
+      "text": "and a’ said it was a black soul burning in hellfire?"
+    },
+    {
+      "number": 34,
+      "speaker": "BARDOLPH",
+      "text": "Well, the fuel is gone that maintained that fire: that’s all the"
+    },
+    {
+      "number": 35,
+      "speaker": "BARDOLPH",
+      "text": "riches I got in his service."
+    },
+    {
+      "number": 36,
+      "speaker": "NYM",
+      "text": "Shall we shog? the king will be gone from Southampton."
+    },
+    {
+      "number": 37,
+      "speaker": "PISTOL",
+      "text": "Come, let’s away. My love, give me thy lips."
+    },
+    {
+      "number": 38,
+      "speaker": "PISTOL",
+      "text": "Look to my chattels and my movables:"
+    },
+    {
+      "number": 39,
+      "speaker": "PISTOL",
+      "text": "Let senses rule; the word is “Pitch and Pay:”"
+    },
+    {
+      "number": 40,
+      "speaker": "PISTOL",
+      "text": "Trust none;"
+    },
+    {
+      "number": 41,
+      "speaker": "PISTOL",
+      "text": "For oaths are straws, men’s faiths are wafer-cakes,"
+    },
+    {
+      "number": 42,
+      "speaker": "PISTOL",
+      "text": "And holdfast is the only dog, my duck:"
+    },
+    {
+      "number": 43,
+      "speaker": "PISTOL",
+      "text": "Therefore, Caveto be thy counsellor."
+    },
+    {
+      "number": 44,
+      "speaker": "PISTOL",
+      "text": "Go, clear thy crystals. Yoke-fellows in arms,"
+    },
+    {
+      "number": 45,
+      "speaker": "PISTOL",
+      "text": "Let us to France; like horse-leeches, my boys,"
+    },
+    {
+      "number": 46,
+      "speaker": "PISTOL",
+      "text": "To suck, to suck, the very blood to suck!"
+    },
+    {
+      "number": 47,
+      "speaker": "BOY",
+      "text": "And that’s but unwholesome food, they say."
+    },
+    {
+      "number": 48,
+      "speaker": "PISTOL",
+      "text": "Touch her soft mouth, and march."
+    },
+    {
+      "number": 48,
+      "speaker": "BARDOLPH",
+      "text": "Farewell, hostess. Kissing her."
+    },
+    {
+      "number": 49,
+      "speaker": "NYM",
+      "text": "I cannot kiss, that is the humour of it; but, adieu."
+    },
+    {
+      "number": 50,
+      "speaker": "PISTOL",
+      "text": "Let housewifery appear: keep close, I thee command."
+    },
+    {
+      "number": 51,
+      "speaker": "HOSTESS",
+      "text": "Farewell; adieu."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Pistol, Hostess, Nym, Bardolph and Boy."
+    },
+    {
+      "after_line": 51,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act2_scene3_gloss1",
+      "line": 1,
+      "phrase": "Staines",
+      "definition": "a town on the Thames west of London — stop on the road to Southampton"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss2",
+      "line": 2,
+      "phrase": "manly heart doth yearn",
+      "definition": "Pistol's grief — 'yearn' here = ache with sorrow"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss3",
+      "line": 3,
+      "phrase": "vaunting veins",
+      "definition": "boastful blood-vessels — Pistol's bombastic diction"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss4",
+      "line": 4,
+      "phrase": "Falstaff he is dead",
+      "definition": "Sir John Falstaff's death — imported from the end of Henry IV Part 2; reported, not staged"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss5",
+      "line": 7,
+      "phrase": "Arthur’s bosom",
+      "definition": "the Hostess's malapropism for 'Abraham's bosom' (Luke 16:22) — the resting-place of the righteous after death"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss6",
+      "line": 8,
+      "phrase": "a finer end",
+      "definition": "a better death"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss7",
+      "line": 9,
+      "phrase": "christom child",
+      "definition": "the Hostess's malapropism for 'chrisom child' — a baby in its christening-cloth, proverbial for innocence"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss8",
+      "line": 10,
+      "phrase": "turning o’ the tide",
+      "definition": "the moment of tidal change — old folk-belief held that dying men passed with the tide"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss9",
+      "line": 11,
+      "phrase": "fumble with the sheets",
+      "definition": "pluck absently at the bed-linen — a classical sign of the dying"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss10",
+      "line": 13,
+      "phrase": "nose was as sharp as a pen",
+      "definition": "his nose had grown pointed and thin — a traditional symptom of approaching death"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss11",
+      "line": 14,
+      "phrase": "babbled of green fields",
+      "definition": "famous textual crux — Theobald's emendation of the Folio's nonsense; conveys Falstaff in delirium remembering pastoral scenes"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss12",
+      "line": 15,
+      "phrase": "God, God, God",
+      "definition": "Falstaff's deathbed cry — the Hostess misunderstands, thinking he needs comforting away from religion"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss13",
+      "line": 24,
+      "phrase": "cried out of sack",
+      "definition": "spoke with regret of sack — the sweet sherry Falstaff was famous for loving"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss14",
+      "line": 28,
+      "phrase": "carnation",
+      "definition": "the color carnation/flesh-pink — the Hostess puns on 'carnal'; she insists Falstaff never cared for that color"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss15",
+      "line": 31,
+      "phrase": "rheumatic",
+      "definition": "the Hostess's malapropism — she means 'lunatic' or 'choleric'; 'rheumatic' = catarrhal, not relevant"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss16",
+      "line": 31,
+      "phrase": "whore of Babylon",
+      "definition": "apocalyptic image from Revelation 17 — Protestant rhetoric used it for the Catholic Church"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss17",
+      "line": 33,
+      "phrase": "black soul burning in hellfire",
+      "definition": "Falstaff's joke about Bardolph's notoriously red nose — a flea on it burns like a damned soul"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss18",
+      "line": 36,
+      "phrase": "shog",
+      "definition": "get going; move off (dialect)"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss19",
+      "line": 39,
+      "phrase": "Pitch and Pay",
+      "definition": "pay cash; literally 'throw down the money' — Pistol's motto for tavern credit"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss20",
+      "line": 41,
+      "phrase": "oaths are straws",
+      "definition": "promises are worthless as straws in the wind"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss21",
+      "line": 41,
+      "phrase": "wafer-cakes",
+      "definition": "flimsy as communion wafers — faith is fragile"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss22",
+      "line": 42,
+      "phrase": "holdfast",
+      "definition": "gripping tightly — 'the only dog' proverbially means the one virtue to keep"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss23",
+      "line": 43,
+      "phrase": "Caveto",
+      "definition": "Latin: 'beware' — Pistol's Latinate motto for caution"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss24",
+      "line": 44,
+      "phrase": "clear thy crystals",
+      "definition": "wipe your eyes — 'crystals' = crystalline tears/eyes"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss25",
+      "line": 44,
+      "phrase": "Yoke-fellows in arms",
+      "definition": "yoked together in military service"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss26",
+      "line": 45,
+      "phrase": "horse-leeches",
+      "definition": "large bloodsucking worms — Pistol's image of army camp-followers as parasites"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss27",
+      "line": 49,
+      "phrase": "adieu",
+      "definition": "French: goodbye — a mildly affected farewell"
+    },
+    {
+      "id": "henry_v_act2_scene3_gloss28",
+      "line": 50,
+      "phrase": "housewifery",
+      "definition": "proper wifely management — Pistol orders the Hostess to keep house while he's at war"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act2_scene3_ann1",
+      "line_start": 1,
+      "line_end": 35,
+      "citation_display": "Henry V 2.3.1–35",
+      "category": "biographical",
+      "title": "Falstaff's death — narrative necessity",
+      "body": "The death of Falstaff, reported with unguarded tenderness by the Hostess, is one of the most-loved passages in Shakespeare and one of the most necessary. Sir John Falstaff had been the comic center of Henry IV Parts 1 and 2 — the fat knight whose drunken wit made Prince Hal's youth recognizably human. At the end of Part 2, Henry (now crowned) publicly rejected him. Part of that play's bargain with the audience was the Epilogue's promise that Falstaff would return in Henry V. Shakespeare went back on that promise: Falstaff does not appear. The reasons are speculative — possibly a dispute with the actor Will Kemp, possibly a recognition that Falstaff's comic register is incompatible with the martial tone of Henry V. Whatever the cause, Shakespeare had to remove the character, and he does it with exquisite misdirection: the Hostess's mangled syntax, the famous 'babbled of green fields,' the detail of Falstaff fumbling with the sheets at the turning of the tide. Falstaff dies in the play's wings; the audience inherits the grief without ever seeing the body.",
+      "sources": [
+        "J. Dover Wilson, The Fortunes of Falstaff (1943)",
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)",
+        "René Weis, Shakespeare Unbound (2007)"
+      ]
+    },
+    {
+      "id": "henry_v_act2_scene3_ann2",
+      "line_start": 9,
+      "line_end": 15,
+      "citation_display": "Henry V 2.3.9–15",
+      "category": "textual",
+      "title": "'A' babbled of green fields' — Theobald's textual miracle",
+      "body": "The phrase 'a' babbled of green fields,' one of the most resonant lines in Shakespeare, does not appear in any original text. The First Folio (1623) reads 'a Table of greene fields,' which is nonsense. The eighteenth-century editor Lewis Theobald conjectured in 1733 that a compositor had misread Shakespeare's 'a bablde' (abbreviated for 'a babbled') as 'a Table.' Theobald's emendation is so accepted that modern editions simply print it; few lines of Shakespeare are so universally cited and so purely editorial. The reading gives us a dying Falstaff in delirious peace, remembering pastoral — an image that retroactively humanizes the whole Eastcheap world. It is worth noting that this is what textual editing, at its best, can do: it can recover a line that makes a whole scene sing.",
+      "sources": [
+        "Lewis Theobald, Shakespeare Restored (1726)",
+        "Stanley Wells & Gary Taylor, William Shakespeare: A Textual Companion (1987)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act2_scene3_q1",
+      "kind": "theme",
+      "prompt": "Why does Falstaff not appear in Henry V, given he was the star of Henry IV Parts 1 and 2?",
+      "options": [
+        "Shakespeare wrote him into the play but censors cut it",
+        "Because the martial register of Henry V has no place for his comic-unruly world — and his rejection at the end of Henry IV Part 2 had already severed him from the now-king. His death is reported, not staged",
+        "Because the actor who played Falstaff had died",
+        "Because the Queen disliked the character"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 1,
+      "anchor_line_end": 35
+    },
+    {
+      "id": "henry_v_act2_scene3_q2",
+      "kind": "close_reading",
+      "prompt": "What is the textual status of 'a' babbled of green fields' (line 14)?",
+      "options": [
+        "It appears in all original editions",
+        "The Folio (1623) has nonsense ('a Table of greene fields'); the famous line is an 18th-century editorial conjecture by Lewis Theobald that has become universally accepted",
+        "It is only in the First Quarto and cut from the Folio",
+        "It was added by Samuel Johnson in 1765"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 14,
+      "anchor_line_end": 14
+    },
+    {
+      "id": "henry_v_act2_scene3_q3",
+      "kind": "comprehension",
+      "prompt": "The Hostess's speech about Falstaff's death is full of malapropisms. 'Arthur's bosom' is her version of what?",
+      "options": [
+        "'Arthur's cave'",
+        "'Abraham's bosom' — the biblical resting-place of the righteous after death (Luke 16:22)",
+        "'Arthur's table'",
+        "'Aaron's bosom'"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 7,
+      "anchor_line_end": 8
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "section_id": "henry_v_act4_scene5",
+  "work_id": "henry-v",
+  "sequence": 22,
+  "act": 4,
+  "scene": 5,
+  "kind": "scene",
+  "scene_title": "Another part of the field",
+  "line_count": 24,
+  "word_count": 183,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CONSTABLE",
+      "text": "O diable!"
+    },
+    {
+      "number": 2,
+      "speaker": "ORLEANS",
+      "text": "O seigneur! le jour est perdu, tout est perdu!"
+    },
+    {
+      "number": 3,
+      "speaker": "DAUPHIN",
+      "text": "Mort de ma vie! all is confounded, all!"
+    },
+    {
+      "number": 4,
+      "speaker": "DAUPHIN",
+      "text": "Reproach and everlasting shame"
+    },
+    {
+      "number": 5,
+      "speaker": "DAUPHIN",
+      "text": "Sits mocking in our plumes. O méchante fortune!"
+    },
+    {
+      "number": 6,
+      "speaker": "DAUPHIN",
+      "text": "Do not run away. A short alarum."
+    },
+    {
+      "number": 7,
+      "speaker": "CONSTABLE",
+      "text": "Why, all our ranks are broke."
+    },
+    {
+      "number": 7,
+      "speaker": "DAUPHIN",
+      "text": "O perdurable shame! let’s stab ourselves."
+    },
+    {
+      "number": 8,
+      "speaker": "DAUPHIN",
+      "text": "Be these the wretches that we play’d at dice for?"
+    },
+    {
+      "number": 9,
+      "speaker": "ORLEANS",
+      "text": "Is this the king we sent to for his ransom?"
+    },
+    {
+      "number": 10,
+      "speaker": "BOURBON",
+      "text": "Shame and eternal shame, nothing but shame!"
+    },
+    {
+      "number": 11,
+      "speaker": "BOURBON",
+      "text": "Let’s die in honour: once more back again;"
+    },
+    {
+      "number": 12,
+      "speaker": "BOURBON",
+      "text": "And he that will not follow Bourbon now,"
+    },
+    {
+      "number": 13,
+      "speaker": "BOURBON",
+      "text": "Let him go hence, and with his cap in hand,"
+    },
+    {
+      "number": 14,
+      "speaker": "BOURBON",
+      "text": "Like a base pandar, hold the chamber-door"
+    },
+    {
+      "number": 15,
+      "speaker": "BOURBON",
+      "text": "Whilst by a slave, no gentler than my dog,"
+    },
+    {
+      "number": 16,
+      "speaker": "BOURBON",
+      "text": "His fairest daughter is contaminated."
+    },
+    {
+      "number": 17,
+      "speaker": "CONSTABLE",
+      "text": "Disorder, that hath spoil’d us, friend us now!"
+    },
+    {
+      "number": 18,
+      "speaker": "CONSTABLE",
+      "text": "Let us on heaps go offer up our lives."
+    },
+    {
+      "number": 19,
+      "speaker": "ORLEANS",
+      "text": "We are enough yet living in the field"
+    },
+    {
+      "number": 20,
+      "speaker": "ORLEANS",
+      "text": "To smother up the English in our throngs,"
+    },
+    {
+      "number": 21,
+      "speaker": "ORLEANS",
+      "text": "If any order might be thought upon."
+    },
+    {
+      "number": 22,
+      "speaker": "BOURBON",
+      "text": "The devil take order now! I’ll to the throng;"
+    },
+    {
+      "number": 23,
+      "speaker": "BOURBON",
+      "text": "Let life be short; else shame will be too long."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Constable, Orleans, Bourbon, Dauphin, and Rambures."
+    },
+    {
+      "after_line": 23,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act4_scene5_gloss1",
+      "line": 1,
+      "phrase": "O diable",
+      "definition": "French: 'O devil' — the Constable's cry as the French collapse"
+    },
+    {
+      "id": "henry_v_act4_scene5_gloss2",
+      "line": 2,
+      "phrase": "O seigneur! le jour est perdu, tout est perdu",
+      "definition": "French: 'O lord! the day is lost, all is lost'"
+    },
+    {
+      "id": "henry_v_act4_scene5_gloss3",
+      "line": 3,
+      "phrase": "Mort de ma vie",
+      "definition": "French: 'Death of my life' (already glossed in 3.5)"
+    },
+    {
+      "id": "henry_v_act4_scene5_gloss4",
+      "line": 3,
+      "phrase": "all is confounded",
+      "definition": "all is ruined"
+    },
+    {
+      "id": "henry_v_act4_scene5_gloss5",
+      "line": 4,
+      "phrase": "Reproach and everlasting shame",
+      "definition": "the Dauphin collapses into shame-language"
+    },
+    {
+      "id": "henry_v_act4_scene5_gloss6",
+      "line": 5,
+      "phrase": "Sits mocking in our plumes",
+      "definition": "mocking shame rides in the plumes of our helmets"
+    },
+    {
+      "id": "henry_v_act4_scene5_gloss7",
+      "line": 5,
+      "phrase": "méchante fortune",
+      "definition": "French: 'wicked fortune'"
+    },
+    {
+      "id": "henry_v_act4_scene5_gloss8",
+      "line": 7,
+      "phrase": "perdurable shame",
+      "definition": "lasting, eternal shame"
+    },
+    {
+      "id": "henry_v_act4_scene5_gloss9",
+      "line": 7,
+      "phrase": "let’s stab ourselves",
+      "definition": "the Dauphin's despairing suicide-impulse"
+    },
+    {
+      "id": "henry_v_act4_scene5_gloss10",
+      "line": 8,
+      "phrase": "wretches that we play’d at dice for",
+      "definition": "the English we gambled prisoner-rights over last night — recall 3.7 and 4 Chorus"
+    },
+    {
+      "id": "henry_v_act4_scene5_gloss11",
+      "line": 11,
+      "phrase": "die in honour",
+      "definition": "Bourbon's rallying cry — fall back into the battle to die well"
+    },
+    {
+      "id": "henry_v_act4_scene5_gloss12",
+      "line": 14,
+      "phrase": "pandar",
+      "definition": "pimp; procurer"
+    },
+    {
+      "id": "henry_v_act4_scene5_gloss13",
+      "line": 15,
+      "phrase": "no gentler than my dog",
+      "definition": "as common as any dog"
+    },
+    {
+      "id": "henry_v_act4_scene5_gloss14",
+      "line": 17,
+      "phrase": "Disorder, that hath spoil’d us, friend us now",
+      "definition": "disorder ruined us — let chaos help us in our last charge"
+    },
+    {
+      "id": "henry_v_act4_scene5_gloss15",
+      "line": 18,
+      "phrase": "on heaps go offer up our lives",
+      "definition": "in disorganized masses, sacrifice our lives"
+    },
+    {
+      "id": "henry_v_act4_scene5_gloss16",
+      "line": 20,
+      "phrase": "smother up the English in our throngs",
+      "definition": "overwhelm the English with our sheer numbers"
+    },
+    {
+      "id": "henry_v_act4_scene5_gloss17",
+      "line": 23,
+      "phrase": "shame will be too long",
+      "definition": "if we live long, our shame will last longer"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act4_scene5_ann1",
+      "line_start": 1,
+      "line_end": 23,
+      "citation_display": "Henry V 4.5.1–23",
+      "category": "close_reading",
+      "title": "The French collapse in twenty lines",
+      "body": "Scene 4.5 is the shortest scene in the play. The French nobles — the same Dauphin, Bourbon, Orleans, and Constable whose horse-boasts filled 3.7 — now cry out 'O diable!' and 'O seigneur! le jour est perdu, tout est perdu!' The brevity is the point. Shakespeare does not stage a French defeat scene of equal weight to any English triumph scene. Instead, he gives us twenty-three lines of panic, and then moves to 4.6, where Henry names York's death. The structural effect is fast and somewhat cruel: 3.7's fifty-line horse-bragging is paid off with 4.5's twenty-line collapse, and the ratio itself enacts the play's judgment. Bourbon's final line — 'The devil take order now! I'll to the throng; / Let life be short; else shame will be too long' — is the only dignified note. The rest is confusion. This is structural contempt rendered as pacing.",
+      "sources": [
+        "Emrys Jones, Scenic Form in Shakespeare (1971)",
+        "Andrew Gurr, The Shakespearean Stage (1992)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act4_scene5_q1",
+      "kind": "structural",
+      "prompt": "What is notable about the length of 4.5?",
+      "options": [
+        "It is the longest scene in Act IV",
+        "It is the shortest scene in the play — 23 lines; the brevity is the point: 3.7's long horse-bragging scene is paid off with a compressed collapse, the ratio enacting the play's judgment",
+        "It has been cut in most modern productions",
+        "It is spoken in Latin"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 1,
+      "anchor_line_end": 23
+    }
+  ]
+}

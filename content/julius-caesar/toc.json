@@ -1,0 +1,228 @@
+{
+  "work_id": "julius-caesar",
+  "entries": [
+    {
+      "type": "act",
+      "act": 1,
+      "title": "Act I"
+    },
+    {
+      "type": "scene",
+      "section_id": "julius_caesar_act1_scene1",
+      "sequence": 1,
+      "act": 1,
+      "scene": 1,
+      "scene_title": "Rome. A street",
+      "line_count": 74,
+      "word_count": 586,
+      "est_read_minutes": 3
+    },
+    {
+      "type": "scene",
+      "section_id": "julius_caesar_act1_scene2",
+      "sequence": 2,
+      "act": 1,
+      "scene": 2,
+      "scene_title": "A public place",
+      "line_count": 319,
+      "word_count": 2574,
+      "est_read_minutes": 13
+    },
+    {
+      "type": "scene",
+      "section_id": "julius_caesar_act1_scene3",
+      "sequence": 3,
+      "act": 1,
+      "scene": 3,
+      "scene_title": "The same. A street",
+      "line_count": 171,
+      "word_count": 1284,
+      "est_read_minutes": 6
+    },
+    {
+      "type": "act",
+      "act": 2,
+      "title": "Act II"
+    },
+    {
+      "type": "scene",
+      "section_id": "julius_caesar_act2_scene1",
+      "sequence": 4,
+      "act": 2,
+      "scene": 1,
+      "scene_title": "Rome. Brutus's orchard",
+      "line_count": 350,
+      "word_count": 2628,
+      "est_read_minutes": 13
+    },
+    {
+      "type": "scene",
+      "section_id": "julius_caesar_act2_scene2",
+      "sequence": 5,
+      "act": 2,
+      "scene": 2,
+      "scene_title": "Caesar's house",
+      "line_count": 136,
+      "word_count": 1023,
+      "est_read_minutes": 5
+    },
+    {
+      "type": "scene",
+      "section_id": "julius_caesar_act2_scene3",
+      "sequence": 6,
+      "act": 2,
+      "scene": 3,
+      "scene_title": "A street near the Capitol",
+      "line_count": 12,
+      "word_count": 117,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "julius_caesar_act2_scene4",
+      "sequence": 7,
+      "act": 2,
+      "scene": 4,
+      "scene_title": "Another part of the same street, before the house of Brutus",
+      "line_count": 50,
+      "word_count": 381,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "act",
+      "act": 3,
+      "title": "Act III"
+    },
+    {
+      "type": "scene",
+      "section_id": "julius_caesar_act3_scene1",
+      "sequence": 8,
+      "act": 3,
+      "scene": 1,
+      "scene_title": "Rome. Before the Capitol; the Senate sitting above",
+      "line_count": 317,
+      "word_count": 2295,
+      "est_read_minutes": 11
+    },
+    {
+      "type": "scene",
+      "section_id": "julius_caesar_act3_scene2",
+      "sequence": 9,
+      "act": 3,
+      "scene": 2,
+      "scene_title": "The Forum",
+      "line_count": 274,
+      "word_count": 2105,
+      "est_read_minutes": 11
+    },
+    {
+      "type": "scene",
+      "section_id": "julius_caesar_act3_scene3",
+      "sequence": 10,
+      "act": 3,
+      "scene": 3,
+      "scene_title": "A street",
+      "line_count": 35,
+      "word_count": 245,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "act",
+      "act": 4,
+      "title": "Act IV"
+    },
+    {
+      "type": "scene",
+      "section_id": "julius_caesar_act4_scene1",
+      "sequence": 11,
+      "act": 4,
+      "scene": 1,
+      "scene_title": "A house in Rome",
+      "line_count": 54,
+      "word_count": 392,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "julius_caesar_act4_scene2",
+      "sequence": 12,
+      "act": 4,
+      "scene": 2,
+      "scene_title": "Camp near Sardis. Before Brutus's tent",
+      "line_count": 57,
+      "word_count": 368,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "julius_caesar_act4_scene3",
+      "sequence": 13,
+      "act": 4,
+      "scene": 3,
+      "scene_title": "Brutus's tent",
+      "line_count": 346,
+      "word_count": 2356,
+      "est_read_minutes": 12
+    },
+    {
+      "type": "act",
+      "act": 5,
+      "title": "Act V"
+    },
+    {
+      "type": "scene",
+      "section_id": "julius_caesar_act5_scene1",
+      "sequence": 14,
+      "act": 5,
+      "scene": 1,
+      "scene_title": "The plains of Philippi",
+      "line_count": 136,
+      "word_count": 973,
+      "est_read_minutes": 5
+    },
+    {
+      "type": "scene",
+      "section_id": "julius_caesar_act5_scene2",
+      "sequence": 15,
+      "act": 5,
+      "scene": 2,
+      "scene_title": "The same. The field of battle",
+      "line_count": 6,
+      "word_count": 47,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "julius_caesar_act5_scene3",
+      "sequence": 16,
+      "act": 5,
+      "scene": 3,
+      "scene_title": "Another part of the field",
+      "line_count": 116,
+      "word_count": 868,
+      "est_read_minutes": 4
+    },
+    {
+      "type": "scene",
+      "section_id": "julius_caesar_act5_scene4",
+      "sequence": 17,
+      "act": 5,
+      "scene": 4,
+      "scene_title": "Another part of the field",
+      "line_count": 33,
+      "word_count": 246,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "julius_caesar_act5_scene5",
+      "sequence": 18,
+      "act": 5,
+      "scene": 5,
+      "scene_title": "Another part of the field",
+      "line_count": 86,
+      "word_count": 645,
+      "est_read_minutes": 3
+    }
+  ]
+}

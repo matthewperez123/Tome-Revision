@@ -1,0 +1,2596 @@
+{
+  "section_id": "king_lear_act5_scene3",
+  "work_id": "king-lear",
+  "sequence": 26,
+  "act": 5,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "The British camp near Dover",
+  "line_count": 380,
+  "word_count": 2676,
+  "est_read_minutes": 13,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "EDMUND",
+      "text": "Some officers take them away: good guard,"
+    },
+    {
+      "number": 2,
+      "speaker": "EDMUND",
+      "text": "Until their greater pleasures first be known"
+    },
+    {
+      "number": 3,
+      "speaker": "EDMUND",
+      "text": "That are to censure them."
+    },
+    {
+      "number": 3,
+      "speaker": "CORDELIA",
+      "text": "We are not the first"
+    },
+    {
+      "number": 4,
+      "speaker": "CORDELIA",
+      "text": "Who, with best meaning, have incurr’d the worst."
+    },
+    {
+      "number": 5,
+      "speaker": "CORDELIA",
+      "text": "For thee, oppressed king, am I cast down;"
+    },
+    {
+      "number": 6,
+      "speaker": "CORDELIA",
+      "text": "Myself could else out-frown false fortune’s frown."
+    },
+    {
+      "number": 7,
+      "speaker": "CORDELIA",
+      "text": "Shall we not see these daughters and these sisters?"
+    },
+    {
+      "number": 8,
+      "speaker": "KING LEAR",
+      "text": "No, no, no, no! Come, let’s away to prison:"
+    },
+    {
+      "number": 9,
+      "speaker": "KING LEAR",
+      "text": "We two alone will sing like birds i’ the cage:"
+    },
+    {
+      "number": 10,
+      "speaker": "KING LEAR",
+      "text": "When thou dost ask me blessing, I’ll kneel down,"
+    },
+    {
+      "number": 11,
+      "speaker": "KING LEAR",
+      "text": "And ask of thee forgiveness: so we’ll live,"
+    },
+    {
+      "number": 12,
+      "speaker": "KING LEAR",
+      "text": "And pray, and sing, and tell old tales, and laugh"
+    },
+    {
+      "number": 13,
+      "speaker": "KING LEAR",
+      "text": "At gilded butterflies, and hear poor rogues"
+    },
+    {
+      "number": 14,
+      "speaker": "KING LEAR",
+      "text": "Talk of court news; and we’ll talk with them too,"
+    },
+    {
+      "number": 15,
+      "speaker": "KING LEAR",
+      "text": "Who loses and who wins; who’s in, who’s out;"
+    },
+    {
+      "number": 16,
+      "speaker": "KING LEAR",
+      "text": "And take upon’s the mystery of things,"
+    },
+    {
+      "number": 17,
+      "speaker": "KING LEAR",
+      "text": "As if we were God’s spies: and we’ll wear out,"
+    },
+    {
+      "number": 18,
+      "speaker": "KING LEAR",
+      "text": "In a wall’d prison, packs and sects of great ones,"
+    },
+    {
+      "number": 19,
+      "speaker": "KING LEAR",
+      "text": "That ebb and flow by the moon."
+    },
+    {
+      "number": 20,
+      "speaker": "EDMUND",
+      "text": "Take them away."
+    },
+    {
+      "number": 20,
+      "speaker": "KING LEAR",
+      "text": "Upon such sacrifices, my Cordelia,"
+    },
+    {
+      "number": 21,
+      "speaker": "KING LEAR",
+      "text": "The gods themselves throw incense. Have I caught thee?"
+    },
+    {
+      "number": 22,
+      "speaker": "KING LEAR",
+      "text": "He that parts us shall bring a brand from heaven,"
+    },
+    {
+      "number": 23,
+      "speaker": "KING LEAR",
+      "text": "And fire us hence like foxes. Wipe thine eyes;"
+    },
+    {
+      "number": 24,
+      "speaker": "KING LEAR",
+      "text": "The good-years shall devour them, flesh and fell,"
+    },
+    {
+      "number": 25,
+      "speaker": "KING LEAR",
+      "text": "Ere they shall make us weep: we’ll see ’em starve first."
+    },
+    {
+      "number": 26,
+      "speaker": "KING LEAR",
+      "text": "Come."
+    },
+    {
+      "number": 26,
+      "speaker": "EDMUND",
+      "text": "Come hither, captain; hark."
+    },
+    {
+      "number": 27,
+      "speaker": "EDMUND",
+      "text": "Take thou this note; go follow them to prison:"
+    },
+    {
+      "number": 28,
+      "speaker": "EDMUND",
+      "text": "One step I have advanced thee; if thou dost"
+    },
+    {
+      "number": 29,
+      "speaker": "EDMUND",
+      "text": "As this instructs thee, thou dost make thy way"
+    },
+    {
+      "number": 30,
+      "speaker": "EDMUND",
+      "text": "To noble fortunes: know thou this, that men"
+    },
+    {
+      "number": 31,
+      "speaker": "EDMUND",
+      "text": "Are as the time is: to be tender-minded"
+    },
+    {
+      "number": 32,
+      "speaker": "EDMUND",
+      "text": "Does not become a sword: thy great employment"
+    },
+    {
+      "number": 33,
+      "speaker": "EDMUND",
+      "text": "Will not bear question; either say thou’lt do ’t,"
+    },
+    {
+      "number": 34,
+      "speaker": "EDMUND",
+      "text": "Or thrive by other means."
+    },
+    {
+      "number": 34,
+      "speaker": "CAPTAIN",
+      "text": "I’ll do ’t, my lord."
+    },
+    {
+      "number": 35,
+      "speaker": "EDMUND",
+      "text": "About it; and write happy when thou hast done."
+    },
+    {
+      "number": 36,
+      "speaker": "EDMUND",
+      "text": "Mark, I say, instantly; and carry it so"
+    },
+    {
+      "number": 37,
+      "speaker": "EDMUND",
+      "text": "As I have set it down."
+    },
+    {
+      "number": 38,
+      "speaker": "CAPTAIN",
+      "text": "I cannot draw a cart, nor eat dried oats;"
+    },
+    {
+      "number": 39,
+      "speaker": "CAPTAIN",
+      "text": "If it be man’s work, I’ll do ’t."
+    },
+    {
+      "number": 40,
+      "speaker": "ALBANY",
+      "text": "Sir, you have shown to-day your valiant strain,"
+    },
+    {
+      "number": 41,
+      "speaker": "ALBANY",
+      "text": "And fortune led you well: you have the captives"
+    },
+    {
+      "number": 42,
+      "speaker": "ALBANY",
+      "text": "That were the opposites of this day’s strife:"
+    },
+    {
+      "number": 43,
+      "speaker": "ALBANY",
+      "text": "We do require them of you, so to use them"
+    },
+    {
+      "number": 44,
+      "speaker": "ALBANY",
+      "text": "As we shall find their merits and our safety"
+    },
+    {
+      "number": 45,
+      "speaker": "ALBANY",
+      "text": "May equally determine."
+    },
+    {
+      "number": 45,
+      "speaker": "EDMUND",
+      "text": "Sir, I thought it fit"
+    },
+    {
+      "number": 46,
+      "speaker": "EDMUND",
+      "text": "To send the old and miserable king"
+    },
+    {
+      "number": 47,
+      "speaker": "EDMUND",
+      "text": "To some retention and appointed guard;"
+    },
+    {
+      "number": 48,
+      "speaker": "EDMUND",
+      "text": "Whose age has charms in it, whose title more,"
+    },
+    {
+      "number": 49,
+      "speaker": "EDMUND",
+      "text": "To pluck the common bosom on his side,"
+    },
+    {
+      "number": 50,
+      "speaker": "EDMUND",
+      "text": "An turn our impress’d lances in our eyes"
+    },
+    {
+      "number": 51,
+      "speaker": "EDMUND",
+      "text": "Which do command them. With him I sent the queen;"
+    },
+    {
+      "number": 52,
+      "speaker": "EDMUND",
+      "text": "My reason all the same; and they are ready"
+    },
+    {
+      "number": 53,
+      "speaker": "EDMUND",
+      "text": "To-morrow, or at further space, to appear"
+    },
+    {
+      "number": 54,
+      "speaker": "EDMUND",
+      "text": "Where you shall hold your session. At this time"
+    },
+    {
+      "number": 55,
+      "speaker": "EDMUND",
+      "text": "We sweat and bleed: the friend hath lost his friend;"
+    },
+    {
+      "number": 56,
+      "speaker": "EDMUND",
+      "text": "And the best quarrels, in the heat, are cursed"
+    },
+    {
+      "number": 57,
+      "speaker": "EDMUND",
+      "text": "By those that feel their sharpness:"
+    },
+    {
+      "number": 58,
+      "speaker": "EDMUND",
+      "text": "The question of Cordelia and her father"
+    },
+    {
+      "number": 59,
+      "speaker": "EDMUND",
+      "text": "Requires a fitter place."
+    },
+    {
+      "number": 59,
+      "speaker": "ALBANY",
+      "text": "Sir, by your patience,"
+    },
+    {
+      "number": 60,
+      "speaker": "ALBANY",
+      "text": "I hold you but a subject of this war,"
+    },
+    {
+      "number": 61,
+      "speaker": "ALBANY",
+      "text": "Not as a brother."
+    },
+    {
+      "number": 62,
+      "speaker": "REGAN",
+      "text": "That’s as we list to grace him."
+    },
+    {
+      "number": 63,
+      "speaker": "REGAN",
+      "text": "Methinks our pleasure might have been demanded,"
+    },
+    {
+      "number": 64,
+      "speaker": "REGAN",
+      "text": "Ere you had spoke so far. He led our powers;"
+    },
+    {
+      "number": 65,
+      "speaker": "REGAN",
+      "text": "Bore the commission of my place and person;"
+    },
+    {
+      "number": 66,
+      "speaker": "REGAN",
+      "text": "The which immediacy may well stand up,"
+    },
+    {
+      "number": 67,
+      "speaker": "REGAN",
+      "text": "And call itself your brother."
+    },
+    {
+      "number": 67,
+      "speaker": "GONERIL",
+      "text": "Not so hot:"
+    },
+    {
+      "number": 68,
+      "speaker": "GONERIL",
+      "text": "In his own grace he doth exalt himself,"
+    },
+    {
+      "number": 69,
+      "speaker": "GONERIL",
+      "text": "More than in your addition."
+    },
+    {
+      "number": 69,
+      "speaker": "REGAN",
+      "text": "In my rights,"
+    },
+    {
+      "number": 70,
+      "speaker": "REGAN",
+      "text": "By me invested, he compeers the best."
+    },
+    {
+      "number": 71,
+      "speaker": "GONERIL",
+      "text": "That were the most, if he should husband you."
+    },
+    {
+      "number": 72,
+      "speaker": "REGAN",
+      "text": "Jesters do oft prove prophets."
+    },
+    {
+      "number": 72,
+      "speaker": "GONERIL",
+      "text": "Holla, holla!"
+    },
+    {
+      "number": 73,
+      "speaker": "GONERIL",
+      "text": "That eye that told you so look’d but a-squint."
+    },
+    {
+      "number": 74,
+      "speaker": "REGAN",
+      "text": "Lady, I am not well; else I should answer"
+    },
+    {
+      "number": 75,
+      "speaker": "REGAN",
+      "text": "From a full-flowing stomach. General,"
+    },
+    {
+      "number": 76,
+      "speaker": "REGAN",
+      "text": "Take thou my soldiers, prisoners, patrimony;"
+    },
+    {
+      "number": 77,
+      "speaker": "REGAN",
+      "text": "Dispose of them, of me; the walls are thine:"
+    },
+    {
+      "number": 78,
+      "speaker": "REGAN",
+      "text": "Witness the world, that I create thee here"
+    },
+    {
+      "number": 79,
+      "speaker": "REGAN",
+      "text": "My lord and master."
+    },
+    {
+      "number": 79,
+      "speaker": "GONERIL",
+      "text": "Mean you to enjoy him?"
+    },
+    {
+      "number": 80,
+      "speaker": "ALBANY",
+      "text": "The let-alone lies not in your good will."
+    },
+    {
+      "number": 81,
+      "speaker": "EDMUND",
+      "text": "Nor in thine, lord."
+    },
+    {
+      "number": 81,
+      "speaker": "ALBANY",
+      "text": "Half-blooded fellow, yes."
+    },
+    {
+      "number": 82,
+      "speaker": "REGAN",
+      "text": "To Edmund. Let the drum strike, and prove my title thine."
+    },
+    {
+      "number": 83,
+      "speaker": "ALBANY",
+      "text": "Stay yet; hear reason. Edmund, I arrest thee"
+    },
+    {
+      "number": 84,
+      "speaker": "ALBANY",
+      "text": "On capital treason; and, in thine attaint,"
+    },
+    {
+      "number": 85,
+      "speaker": "ALBANY",
+      "text": "This gilded serpent"
+    },
+    {
+      "number": 86,
+      "speaker": "ALBANY",
+      "text": "For your claim, fair sister,"
+    },
+    {
+      "number": 87,
+      "speaker": "ALBANY",
+      "text": "I bar it in the interest of my wife:"
+    },
+    {
+      "number": 88,
+      "speaker": "ALBANY",
+      "text": "’Tis she is sub-contracted to this lord,"
+    },
+    {
+      "number": 89,
+      "speaker": "ALBANY",
+      "text": "And I, her husband, contradict your bans."
+    },
+    {
+      "number": 90,
+      "speaker": "ALBANY",
+      "text": "If you will marry, make your loves to me,"
+    },
+    {
+      "number": 91,
+      "speaker": "ALBANY",
+      "text": "My lady is bespoke."
+    },
+    {
+      "number": 91,
+      "speaker": "GONERIL",
+      "text": "An interlude!"
+    },
+    {
+      "number": 92,
+      "speaker": "ALBANY",
+      "text": "Thou art arm’d, Gloucester: let the trumpet sound:"
+    },
+    {
+      "number": 93,
+      "speaker": "ALBANY",
+      "text": "If none appear to prove upon thy head"
+    },
+    {
+      "number": 94,
+      "speaker": "ALBANY",
+      "text": "Thy heinous, manifest, and many treasons,"
+    },
+    {
+      "number": 95,
+      "speaker": "ALBANY",
+      "text": "There is my pledge; Throwing down a glove."
+    },
+    {
+      "number": 96,
+      "speaker": "ALBANY",
+      "text": "I’ll prove it on thy heart,"
+    },
+    {
+      "number": 97,
+      "speaker": "ALBANY",
+      "text": "Ere I taste bread, thou art in nothing less"
+    },
+    {
+      "number": 98,
+      "speaker": "ALBANY",
+      "text": "Than I have here proclaim’d thee."
+    },
+    {
+      "number": 98,
+      "speaker": "REGAN",
+      "text": "Sick, O, sick!"
+    },
+    {
+      "number": 99,
+      "speaker": "GONERIL",
+      "text": "If not, I’ll ne’er trust medicine."
+    },
+    {
+      "number": 100,
+      "speaker": "EDMUND",
+      "text": "There’s my exchange: Throwing down a glove."
+    },
+    {
+      "number": 101,
+      "speaker": "EDMUND",
+      "text": "what in the world he is"
+    },
+    {
+      "number": 102,
+      "speaker": "EDMUND",
+      "text": "That names me traitor, villain-like he lies:"
+    },
+    {
+      "number": 103,
+      "speaker": "EDMUND",
+      "text": "Call by thy trumpet: he that dares approach,"
+    },
+    {
+      "number": 104,
+      "speaker": "EDMUND",
+      "text": "On him, on you, who not? I will maintain"
+    },
+    {
+      "number": 105,
+      "speaker": "EDMUND",
+      "text": "My truth and honour firmly."
+    },
+    {
+      "number": 105,
+      "speaker": "ALBANY",
+      "text": "A herald, ho!"
+    },
+    {
+      "number": 106,
+      "speaker": "EDMUND",
+      "text": "A herald, ho, a herald!"
+    },
+    {
+      "number": 107,
+      "speaker": "ALBANY",
+      "text": "Trust to thy single virtue; for thy soldiers,"
+    },
+    {
+      "number": 108,
+      "speaker": "ALBANY",
+      "text": "All levied in my name, have in my name"
+    },
+    {
+      "number": 109,
+      "speaker": "ALBANY",
+      "text": "Took their discharge."
+    },
+    {
+      "number": 109,
+      "speaker": "REGAN",
+      "text": "My sickness grows upon me."
+    },
+    {
+      "number": 110,
+      "speaker": "ALBANY",
+      "text": "She is not well; convey her to my tent."
+    },
+    {
+      "number": 111,
+      "speaker": "CAPTAIN",
+      "text": "Sound, trumpet! A trumpet sounds."
+    },
+    {
+      "number": 112,
+      "speaker": "HERALD",
+      "text": "“If any man of quality or degree within the lists of the"
+    },
+    {
+      "number": 113,
+      "speaker": "HERALD",
+      "text": "army will maintain upon Edmund, supposed Earl of Gloucester, that he is"
+    },
+    {
+      "number": 114,
+      "speaker": "HERALD",
+      "text": "a manifold traitor, let him appear by the third sound of the"
+    },
+    {
+      "number": 115,
+      "speaker": "HERALD",
+      "text": "trumpet: he is bold in his defence.”"
+    },
+    {
+      "number": 116,
+      "speaker": "EDMUND",
+      "text": "Sound! First trumpet."
+    },
+    {
+      "number": 116,
+      "speaker": "HERALD",
+      "text": "Again! Second trumpet."
+    },
+    {
+      "number": 117,
+      "speaker": "HERALD",
+      "text": "Again! Third trumpet."
+    },
+    {
+      "number": 118,
+      "speaker": "ALBANY",
+      "text": "Ask him his purposes, why he appears"
+    },
+    {
+      "number": 119,
+      "speaker": "ALBANY",
+      "text": "Upon this call o’ the trumpet."
+    },
+    {
+      "number": 119,
+      "speaker": "HERALD",
+      "text": "What are you?"
+    },
+    {
+      "number": 120,
+      "speaker": "HERALD",
+      "text": "Your name, your quality? and why you answer"
+    },
+    {
+      "number": 121,
+      "speaker": "HERALD",
+      "text": "This present summons?"
+    },
+    {
+      "number": 121,
+      "speaker": "EDGAR",
+      "text": "Know, my name is lost;"
+    },
+    {
+      "number": 122,
+      "speaker": "EDGAR",
+      "text": "By treason’s tooth bare-gnawn and canker-bit:"
+    },
+    {
+      "number": 123,
+      "speaker": "EDGAR",
+      "text": "Yet am I noble as the adversary"
+    },
+    {
+      "number": 124,
+      "speaker": "EDGAR",
+      "text": "I come to cope."
+    },
+    {
+      "number": 124,
+      "speaker": "ALBANY",
+      "text": "Which is that adversary?"
+    },
+    {
+      "number": 125,
+      "speaker": "EDGAR",
+      "text": "What’s he that speaks for Edmund Earl of Gloucester?"
+    },
+    {
+      "number": 126,
+      "speaker": "EDMUND",
+      "text": "Himself: what say’st thou to him?"
+    },
+    {
+      "number": 126,
+      "speaker": "EDGAR",
+      "text": "Draw thy sword,"
+    },
+    {
+      "number": 127,
+      "speaker": "EDGAR",
+      "text": "That, if my speech offend a noble heart,"
+    },
+    {
+      "number": 128,
+      "speaker": "EDGAR",
+      "text": "Thy arm may do thee justice: here is mine."
+    },
+    {
+      "number": 129,
+      "speaker": "EDGAR",
+      "text": "Behold, it is the privilege of mine honours,"
+    },
+    {
+      "number": 130,
+      "speaker": "EDGAR",
+      "text": "My oath, and my profession: I protest,"
+    },
+    {
+      "number": 131,
+      "speaker": "EDGAR",
+      "text": "Maugre thy strength, youth, place, and eminence,"
+    },
+    {
+      "number": 132,
+      "speaker": "EDGAR",
+      "text": "Despite thy victor sword and fire-new fortune,"
+    },
+    {
+      "number": 133,
+      "speaker": "EDGAR",
+      "text": "Thy valour and thy heart, thou art a traitor;"
+    },
+    {
+      "number": 134,
+      "speaker": "EDGAR",
+      "text": "False to thy gods, thy brother, and thy father;"
+    },
+    {
+      "number": 135,
+      "speaker": "EDGAR",
+      "text": "Conspirant ’gainst this high-illustrious prince;"
+    },
+    {
+      "number": 136,
+      "speaker": "EDGAR",
+      "text": "And, from the extremest upward of thy head"
+    },
+    {
+      "number": 137,
+      "speaker": "EDGAR",
+      "text": "To the descent and dust below thy foot,"
+    },
+    {
+      "number": 138,
+      "speaker": "EDGAR",
+      "text": "A most toad-spotted traitor. Say thou “No,”"
+    },
+    {
+      "number": 139,
+      "speaker": "EDGAR",
+      "text": "This sword, this arm, and my best spirits, are bent"
+    },
+    {
+      "number": 140,
+      "speaker": "EDGAR",
+      "text": "To prove upon thy heart, whereto I speak,"
+    },
+    {
+      "number": 141,
+      "speaker": "EDGAR",
+      "text": "Thou liest."
+    },
+    {
+      "number": 142,
+      "speaker": "EDMUND",
+      "text": "In wisdom I should ask thy name;"
+    },
+    {
+      "number": 143,
+      "speaker": "EDMUND",
+      "text": "But, since thy outside looks so fair and warlike,"
+    },
+    {
+      "number": 144,
+      "speaker": "EDMUND",
+      "text": "And that thy tongue some say of breeding breathes,"
+    },
+    {
+      "number": 145,
+      "speaker": "EDMUND",
+      "text": "What safe and nicely I might well delay"
+    },
+    {
+      "number": 146,
+      "speaker": "EDMUND",
+      "text": "By rule of knighthood, I disdain and spurn:"
+    },
+    {
+      "number": 147,
+      "speaker": "EDMUND",
+      "text": "Back do I toss these treasons to thy head;"
+    },
+    {
+      "number": 148,
+      "speaker": "EDMUND",
+      "text": "With the hell-hated lie o’erwhelm thy heart;"
+    },
+    {
+      "number": 149,
+      "speaker": "EDMUND",
+      "text": "Which, for they yet glance by and scarcely bruise,"
+    },
+    {
+      "number": 150,
+      "speaker": "EDMUND",
+      "text": "This sword of mine shall give them instant way,"
+    },
+    {
+      "number": 151,
+      "speaker": "EDMUND",
+      "text": "Where they shall rest for ever. Trumpets, speak!"
+    },
+    {
+      "number": 152,
+      "speaker": "ALBANY",
+      "text": "Save him, save him!"
+    },
+    {
+      "number": 152,
+      "speaker": "GONERIL",
+      "text": "This is practise, Gloucester:"
+    },
+    {
+      "number": 153,
+      "speaker": "GONERIL",
+      "text": "By the law of arms thou wast not bound to answer"
+    },
+    {
+      "number": 154,
+      "speaker": "GONERIL",
+      "text": "An unknown opposite; thou art not vanquish’d,"
+    },
+    {
+      "number": 155,
+      "speaker": "GONERIL",
+      "text": "But cozen’d and beguiled."
+    },
+    {
+      "number": 155,
+      "speaker": "ALBANY",
+      "text": "Shut your mouth, dame,"
+    },
+    {
+      "number": 156,
+      "speaker": "ALBANY",
+      "text": "Or with this paper shall I stop it: Hold, sir:"
+    },
+    {
+      "number": 157,
+      "speaker": "ALBANY",
+      "text": "Thou worse than any name, read thine own evil:"
+    },
+    {
+      "number": 158,
+      "speaker": "ALBANY",
+      "text": "No tearing, lady: I perceive you know it. Gives the letter to Edmund."
+    },
+    {
+      "number": 159,
+      "speaker": "GONERIL",
+      "text": "Say, if I do, the laws are mine, not thine:"
+    },
+    {
+      "number": 160,
+      "speaker": "GONERIL",
+      "text": "Who can arraign me for’t."
+    },
+    {
+      "number": 160,
+      "speaker": "ALBANY",
+      "text": "Most monstrous! oh!"
+    },
+    {
+      "number": 161,
+      "speaker": "ALBANY",
+      "text": "Know’st thou this paper?"
+    },
+    {
+      "number": 161,
+      "speaker": "GONERIL",
+      "text": "Ask me not what I know."
+    },
+    {
+      "number": 162,
+      "speaker": "ALBANY",
+      "text": "Go after her: she’s desperate; govern her."
+    },
+    {
+      "number": 163,
+      "speaker": "EDMUND",
+      "text": "What you have charged me with, that have I done;"
+    },
+    {
+      "number": 164,
+      "speaker": "EDMUND",
+      "text": "And more, much more; the time will bring it out:"
+    },
+    {
+      "number": 165,
+      "speaker": "EDMUND",
+      "text": "’Tis past, and so am I. But what art thou"
+    },
+    {
+      "number": 166,
+      "speaker": "EDMUND",
+      "text": "That hast this fortune on me? If thou’rt noble,"
+    },
+    {
+      "number": 167,
+      "speaker": "EDMUND",
+      "text": "I do forgive thee."
+    },
+    {
+      "number": 167,
+      "speaker": "EDGAR",
+      "text": "Let’s exchange charity."
+    },
+    {
+      "number": 168,
+      "speaker": "EDGAR",
+      "text": "I am no less in blood than thou art, Edmund;"
+    },
+    {
+      "number": 169,
+      "speaker": "EDGAR",
+      "text": "If more, the more thou hast wrong’d me."
+    },
+    {
+      "number": 170,
+      "speaker": "EDGAR",
+      "text": "My name is Edgar, and thy father’s son."
+    },
+    {
+      "number": 171,
+      "speaker": "EDGAR",
+      "text": "The gods are just, and of our pleasant vices"
+    },
+    {
+      "number": 172,
+      "speaker": "EDGAR",
+      "text": "Make instruments to plague us:"
+    },
+    {
+      "number": 173,
+      "speaker": "EDGAR",
+      "text": "The dark and vicious place where thee he got"
+    },
+    {
+      "number": 174,
+      "speaker": "EDGAR",
+      "text": "Cost him his eyes."
+    },
+    {
+      "number": 174,
+      "speaker": "EDMUND",
+      "text": "Thou hast spoken right, ’tis true;"
+    },
+    {
+      "number": 175,
+      "speaker": "EDMUND",
+      "text": "The wheel is come full circle: I am here."
+    },
+    {
+      "number": 176,
+      "speaker": "ALBANY",
+      "text": "Methought thy very gait did prophesy"
+    },
+    {
+      "number": 177,
+      "speaker": "ALBANY",
+      "text": "A royal nobleness: I must embrace thee:"
+    },
+    {
+      "number": 178,
+      "speaker": "ALBANY",
+      "text": "Let sorrow split my heart, if ever I"
+    },
+    {
+      "number": 179,
+      "speaker": "ALBANY",
+      "text": "Did hate thee or thy father!"
+    },
+    {
+      "number": 179,
+      "speaker": "EDGAR",
+      "text": "Worthy prince, I know’t."
+    },
+    {
+      "number": 180,
+      "speaker": "ALBANY",
+      "text": "Where have you hid yourself?"
+    },
+    {
+      "number": 181,
+      "speaker": "ALBANY",
+      "text": "How have you known the miseries of your father?"
+    },
+    {
+      "number": 182,
+      "speaker": "EDGAR",
+      "text": "By nursing them, my lord. List a brief tale;"
+    },
+    {
+      "number": 183,
+      "speaker": "EDGAR",
+      "text": "And when ’tis told, O, that my heart would burst!"
+    },
+    {
+      "number": 184,
+      "speaker": "EDGAR",
+      "text": "The bloody proclamation to escape,"
+    },
+    {
+      "number": 185,
+      "speaker": "EDGAR",
+      "text": "That follow’d me so near—O, our lives’ sweetness!"
+    },
+    {
+      "number": 186,
+      "speaker": "EDGAR",
+      "text": "That we the pain of death would hourly die"
+    },
+    {
+      "number": 187,
+      "speaker": "EDGAR",
+      "text": "Rather than die at once!—taught me to shift"
+    },
+    {
+      "number": 188,
+      "speaker": "EDGAR",
+      "text": "Into a madman’s rags; to assume a semblance"
+    },
+    {
+      "number": 189,
+      "speaker": "EDGAR",
+      "text": "That very dogs disdain’d: and in this habit"
+    },
+    {
+      "number": 190,
+      "speaker": "EDGAR",
+      "text": "Met I my father with his bleeding rings,"
+    },
+    {
+      "number": 191,
+      "speaker": "EDGAR",
+      "text": "Their precious stones new lost: became his guide,"
+    },
+    {
+      "number": 192,
+      "speaker": "EDGAR",
+      "text": "Led him, begg’d for him, saved him from despair;"
+    },
+    {
+      "number": 193,
+      "speaker": "EDGAR",
+      "text": "Never—O fault!—reveal’d myself unto him,"
+    },
+    {
+      "number": 194,
+      "speaker": "EDGAR",
+      "text": "Until some half-hour past, when I was arm’d:"
+    },
+    {
+      "number": 195,
+      "speaker": "EDGAR",
+      "text": "Not sure, though hoping, of this good success,"
+    },
+    {
+      "number": 196,
+      "speaker": "EDGAR",
+      "text": "I ask’d his blessing, and from first to last"
+    },
+    {
+      "number": 197,
+      "speaker": "EDGAR",
+      "text": "Told him my pilgrimage: but his flaw’d heart,"
+    },
+    {
+      "number": 198,
+      "speaker": "EDGAR",
+      "text": "Alack, too weak the conflict to support!"
+    },
+    {
+      "number": 199,
+      "speaker": "EDGAR",
+      "text": "’Twixt two extremes of passion, joy and grief,"
+    },
+    {
+      "number": 200,
+      "speaker": "EDGAR",
+      "text": "Burst smilingly."
+    },
+    {
+      "number": 201,
+      "speaker": "EDMUND",
+      "text": "This speech of yours hath moved me,"
+    },
+    {
+      "number": 202,
+      "speaker": "EDMUND",
+      "text": "And shall perchance do good: but speak you on;"
+    },
+    {
+      "number": 203,
+      "speaker": "EDMUND",
+      "text": "You look as you had something more to say."
+    },
+    {
+      "number": 204,
+      "speaker": "ALBANY",
+      "text": "If there be more, more woeful, hold it in;"
+    },
+    {
+      "number": 205,
+      "speaker": "ALBANY",
+      "text": "For I am almost ready to dissolve,"
+    },
+    {
+      "number": 206,
+      "speaker": "ALBANY",
+      "text": "Hearing of this."
+    },
+    {
+      "number": 206,
+      "speaker": "EDGAR",
+      "text": "This would have seem’d a period"
+    },
+    {
+      "number": 207,
+      "speaker": "EDGAR",
+      "text": "To such as love not sorrow; but another,"
+    },
+    {
+      "number": 208,
+      "speaker": "EDGAR",
+      "text": "To amplify too much, would make much more,"
+    },
+    {
+      "number": 209,
+      "speaker": "EDGAR",
+      "text": "And top extremity."
+    },
+    {
+      "number": 210,
+      "speaker": "EDGAR",
+      "text": "Whilst I was big in clamour came there in a man,"
+    },
+    {
+      "number": 211,
+      "speaker": "EDGAR",
+      "text": "Who, having seen me in my worst estate,"
+    },
+    {
+      "number": 212,
+      "speaker": "EDGAR",
+      "text": "Shunn’d my abhorr’d society; but then, finding"
+    },
+    {
+      "number": 213,
+      "speaker": "EDGAR",
+      "text": "Who ’twas that so endured, with his strong arms"
+    },
+    {
+      "number": 214,
+      "speaker": "EDGAR",
+      "text": "He fastened on my neck, and bellow’d out"
+    },
+    {
+      "number": 215,
+      "speaker": "EDGAR",
+      "text": "As he’d burst heaven; threw him on my father;"
+    },
+    {
+      "number": 216,
+      "speaker": "EDGAR",
+      "text": "Told the most piteous tale of Lear and him"
+    },
+    {
+      "number": 217,
+      "speaker": "EDGAR",
+      "text": "That ever ear received: which in recounting"
+    },
+    {
+      "number": 218,
+      "speaker": "EDGAR",
+      "text": "His grief grew puissant and the strings of life"
+    },
+    {
+      "number": 219,
+      "speaker": "EDGAR",
+      "text": "Began to crack: twice then the trumpets sounded,"
+    },
+    {
+      "number": 220,
+      "speaker": "EDGAR",
+      "text": "And there I left him tranced."
+    },
+    {
+      "number": 220,
+      "speaker": "ALBANY",
+      "text": "But who was this?"
+    },
+    {
+      "number": 221,
+      "speaker": "EDGAR",
+      "text": "Kent, sir, the banish’d Kent; who in disguise"
+    },
+    {
+      "number": 222,
+      "speaker": "EDGAR",
+      "text": "Follow’d his enemy king, and did him service"
+    },
+    {
+      "number": 223,
+      "speaker": "EDGAR",
+      "text": "Improper for a slave."
+    },
+    {
+      "number": 223,
+      "speaker": "GENTLEMAN",
+      "text": "Help, help, O, help!"
+    },
+    {
+      "number": 224,
+      "speaker": "EDGAR",
+      "text": "What kind of help?"
+    },
+    {
+      "number": 224,
+      "speaker": "ALBANY",
+      "text": "Speak, man."
+    },
+    {
+      "number": 225,
+      "speaker": "EDGAR",
+      "text": "What means that bloody knife?"
+    },
+    {
+      "number": 225,
+      "speaker": "GENTLEMAN",
+      "text": "’Tis hot, it smokes;"
+    },
+    {
+      "number": 226,
+      "speaker": "GENTLEMAN",
+      "text": "It came even from the heart of—O, she’s dead!"
+    },
+    {
+      "number": 227,
+      "speaker": "ALBANY",
+      "text": "Who dead? speak, man."
+    },
+    {
+      "number": 228,
+      "speaker": "GENTLEMAN",
+      "text": "Your lady, sir, your lady: and her sister"
+    },
+    {
+      "number": 229,
+      "speaker": "GENTLEMAN",
+      "text": "By her is poisoned; she hath confess’d it."
+    },
+    {
+      "number": 230,
+      "speaker": "EDMUND",
+      "text": "I was contracted to them both: all three"
+    },
+    {
+      "number": 231,
+      "speaker": "EDMUND",
+      "text": "Now marry in an instant."
+    },
+    {
+      "number": 231,
+      "speaker": "EDGAR",
+      "text": "Here comes Kent."
+    },
+    {
+      "number": 232,
+      "speaker": "ALBANY",
+      "text": "Produce their bodies, be they alive or dead:"
+    },
+    {
+      "number": 233,
+      "speaker": "ALBANY",
+      "text": "This judgment of the heavens, that makes us tremble,"
+    },
+    {
+      "number": 234,
+      "speaker": "ALBANY",
+      "text": "Touches us not with pity."
+    },
+    {
+      "number": 235,
+      "speaker": "ALBANY",
+      "text": "O, is this he?"
+    },
+    {
+      "number": 236,
+      "speaker": "ALBANY",
+      "text": "The time will not allow the compliment"
+    },
+    {
+      "number": 237,
+      "speaker": "ALBANY",
+      "text": "Which very manners urges."
+    },
+    {
+      "number": 237,
+      "speaker": "KENT",
+      "text": "I am come"
+    },
+    {
+      "number": 238,
+      "speaker": "KENT",
+      "text": "To bid my king and master aye good night:"
+    },
+    {
+      "number": 239,
+      "speaker": "KENT",
+      "text": "Is he not here?"
+    },
+    {
+      "number": 239,
+      "speaker": "ALBANY",
+      "text": "Great thing of us forgot!"
+    },
+    {
+      "number": 240,
+      "speaker": "ALBANY",
+      "text": "Speak, Edmund, where’s the king? and where’s Cordelia?"
+    },
+    {
+      "number": 241,
+      "speaker": "ALBANY",
+      "text": "See’st thou this object, Kent?"
+    },
+    {
+      "number": 241,
+      "speaker": "KENT",
+      "text": "Alack, why thus?"
+    },
+    {
+      "number": 242,
+      "speaker": "EDMUND",
+      "text": "Yet Edmund was beloved:"
+    },
+    {
+      "number": 243,
+      "speaker": "EDMUND",
+      "text": "The one the other poison’d for my sake,"
+    },
+    {
+      "number": 244,
+      "speaker": "EDMUND",
+      "text": "And after slew herself."
+    },
+    {
+      "number": 244,
+      "speaker": "ALBANY",
+      "text": "Even so. Cover their faces."
+    },
+    {
+      "number": 245,
+      "speaker": "EDMUND",
+      "text": "I pant for life: some good I mean to do,"
+    },
+    {
+      "number": 246,
+      "speaker": "EDMUND",
+      "text": "Despite of mine own nature. Quickly send,"
+    },
+    {
+      "number": 247,
+      "speaker": "EDMUND",
+      "text": "Be brief in it, to the castle; for my writ"
+    },
+    {
+      "number": 248,
+      "speaker": "EDMUND",
+      "text": "Is on the life of Lear and on Cordelia:"
+    },
+    {
+      "number": 249,
+      "speaker": "EDMUND",
+      "text": "Nay, send in time."
+    },
+    {
+      "number": 249,
+      "speaker": "ALBANY",
+      "text": "Run, run, O, run!"
+    },
+    {
+      "number": 250,
+      "speaker": "EDGAR",
+      "text": "To who, my lord? Who hath the office? send"
+    },
+    {
+      "number": 251,
+      "speaker": "EDGAR",
+      "text": "Thy token of reprieve."
+    },
+    {
+      "number": 251,
+      "speaker": "EDMUND",
+      "text": "Well thought on: take my sword,"
+    },
+    {
+      "number": 252,
+      "speaker": "EDMUND",
+      "text": "Give it the captain."
+    },
+    {
+      "number": 252,
+      "speaker": "ALBANY",
+      "text": "Haste thee, for thy life."
+    },
+    {
+      "number": 253,
+      "speaker": "EDMUND",
+      "text": "He hath commission from thy wife and me"
+    },
+    {
+      "number": 254,
+      "speaker": "EDMUND",
+      "text": "To hang Cordelia in the prison, and"
+    },
+    {
+      "number": 255,
+      "speaker": "EDMUND",
+      "text": "To lay the blame upon her own despair,"
+    },
+    {
+      "number": 256,
+      "speaker": "EDMUND",
+      "text": "That she fordid herself."
+    },
+    {
+      "number": 257,
+      "speaker": "ALBANY",
+      "text": "The gods defend her! Bear him hence awhile. Edmund is borne off."
+    },
+    {
+      "number": 258,
+      "speaker": "KING LEAR",
+      "text": "Howl, howl, howl, howl! O, you are men of stones:"
+    },
+    {
+      "number": 259,
+      "speaker": "KING LEAR",
+      "text": "Had I your tongues and eyes, I’ld use them so"
+    },
+    {
+      "number": 260,
+      "speaker": "KING LEAR",
+      "text": "That heaven’s vault should crack. She’s gone for ever!"
+    },
+    {
+      "number": 261,
+      "speaker": "KING LEAR",
+      "text": "I know when one is dead, and when one lives;"
+    },
+    {
+      "number": 262,
+      "speaker": "KING LEAR",
+      "text": "She’s dead as earth. Lend me a looking-glass;"
+    },
+    {
+      "number": 263,
+      "speaker": "KING LEAR",
+      "text": "If that her breath will mist or stain the stone,"
+    },
+    {
+      "number": 264,
+      "speaker": "KING LEAR",
+      "text": "Why, then she lives."
+    },
+    {
+      "number": 264,
+      "speaker": "KENT",
+      "text": "Is this the promised end?"
+    },
+    {
+      "number": 265,
+      "speaker": "EDGAR",
+      "text": "Or image of that horror?"
+    },
+    {
+      "number": 265,
+      "speaker": "ALBANY",
+      "text": "Fall, and cease!"
+    },
+    {
+      "number": 266,
+      "speaker": "KING LEAR",
+      "text": "This feather stirs; she lives! if it be so,"
+    },
+    {
+      "number": 267,
+      "speaker": "KING LEAR",
+      "text": "It is a chance which does redeem all sorrows"
+    },
+    {
+      "number": 268,
+      "speaker": "KING LEAR",
+      "text": "That ever I have felt."
+    },
+    {
+      "number": 268,
+      "speaker": "KENT",
+      "text": "O my good master!"
+    },
+    {
+      "number": 269,
+      "speaker": "KING LEAR",
+      "text": "Prithee, away."
+    },
+    {
+      "number": 269,
+      "speaker": "EDGAR",
+      "text": "’Tis noble Kent, your friend."
+    },
+    {
+      "number": 270,
+      "speaker": "KING LEAR",
+      "text": "A plague upon you, murderers, traitors all!"
+    },
+    {
+      "number": 271,
+      "speaker": "KING LEAR",
+      "text": "I might have saved her; now she’s gone for ever!"
+    },
+    {
+      "number": 272,
+      "speaker": "KING LEAR",
+      "text": "Cordelia, Cordelia! stay a little. Ha!"
+    },
+    {
+      "number": 273,
+      "speaker": "KING LEAR",
+      "text": "What is’t thou say’st? Her voice was ever soft,"
+    },
+    {
+      "number": 274,
+      "speaker": "KING LEAR",
+      "text": "Gentle, and low, an excellent thing in woman."
+    },
+    {
+      "number": 275,
+      "speaker": "KING LEAR",
+      "text": "I kill’d the slave that was a-hanging thee."
+    },
+    {
+      "number": 276,
+      "speaker": "CAPTAIN",
+      "text": "’Tis true, my lords, he did."
+    },
+    {
+      "number": 276,
+      "speaker": "KING LEAR",
+      "text": "Did I not, fellow?"
+    },
+    {
+      "number": 277,
+      "speaker": "KING LEAR",
+      "text": "I have seen the day, with my good biting falchion"
+    },
+    {
+      "number": 278,
+      "speaker": "KING LEAR",
+      "text": "I would have made them skip: I am old now,"
+    },
+    {
+      "number": 279,
+      "speaker": "KING LEAR",
+      "text": "And these same crosses spoil me. Who are you?"
+    },
+    {
+      "number": 280,
+      "speaker": "KING LEAR",
+      "text": "Mine eyes are not o’ the best: I’ll tell you straight."
+    },
+    {
+      "number": 281,
+      "speaker": "KENT",
+      "text": "If fortune brag of two she loved and hated,"
+    },
+    {
+      "number": 282,
+      "speaker": "KENT",
+      "text": "One of them we behold."
+    },
+    {
+      "number": 283,
+      "speaker": "KING LEAR",
+      "text": "This is a dull sight. Are you not Kent?"
+    },
+    {
+      "number": 284,
+      "speaker": "KENT",
+      "text": "The same,"
+    },
+    {
+      "number": 285,
+      "speaker": "KENT",
+      "text": "Your servant Kent: Where is your servant Caius?"
+    },
+    {
+      "number": 286,
+      "speaker": "KING LEAR",
+      "text": "He’s a good fellow, I can tell you that;"
+    },
+    {
+      "number": 287,
+      "speaker": "KING LEAR",
+      "text": "He’ll strike, and quickly too: he’s dead and rotten."
+    },
+    {
+      "number": 288,
+      "speaker": "KENT",
+      "text": "No, my good lord; I am the very man—"
+    },
+    {
+      "number": 289,
+      "speaker": "KING LEAR",
+      "text": "I’ll see that straight."
+    },
+    {
+      "number": 290,
+      "speaker": "KENT",
+      "text": "That, from your first of difference and decay,"
+    },
+    {
+      "number": 291,
+      "speaker": "KENT",
+      "text": "Have follow’d your sad steps."
+    },
+    {
+      "number": 291,
+      "speaker": "KING LEAR",
+      "text": "You are welcome hither."
+    },
+    {
+      "number": 292,
+      "speaker": "KENT",
+      "text": "Nor no man else: all’s cheerless, dark, and deadly."
+    },
+    {
+      "number": 293,
+      "speaker": "KENT",
+      "text": "Your eldest daughters have fordone them selves,"
+    },
+    {
+      "number": 294,
+      "speaker": "KENT",
+      "text": "And desperately are dead."
+    },
+    {
+      "number": 294,
+      "speaker": "KING LEAR",
+      "text": "Ay, so I think."
+    },
+    {
+      "number": 295,
+      "speaker": "ALBANY",
+      "text": "He knows not what he says: and vain it is"
+    },
+    {
+      "number": 296,
+      "speaker": "ALBANY",
+      "text": "That we present us to him."
+    },
+    {
+      "number": 296,
+      "speaker": "EDGAR",
+      "text": "Very bootless."
+    },
+    {
+      "number": 297,
+      "speaker": "CAPTAIN",
+      "text": "Edmund is dead, my lord."
+    },
+    {
+      "number": 297,
+      "speaker": "ALBANY",
+      "text": "That’s but a trifle here."
+    },
+    {
+      "number": 298,
+      "speaker": "ALBANY",
+      "text": "You lords and noble friends, know our intent."
+    },
+    {
+      "number": 299,
+      "speaker": "ALBANY",
+      "text": "What comfort to this great decay may come"
+    },
+    {
+      "number": 300,
+      "speaker": "ALBANY",
+      "text": "Shall be applied: for us we will resign,"
+    },
+    {
+      "number": 301,
+      "speaker": "ALBANY",
+      "text": "During the life of this old majesty,"
+    },
+    {
+      "number": 302,
+      "speaker": "ALBANY",
+      "text": "To him our absolute power: To Edgar and Kent. you, to your rights:"
+    },
+    {
+      "number": 303,
+      "speaker": "ALBANY",
+      "text": "With boot, and such addition as your honours"
+    },
+    {
+      "number": 304,
+      "speaker": "ALBANY",
+      "text": "Have more than merited. All friends shall taste"
+    },
+    {
+      "number": 305,
+      "speaker": "ALBANY",
+      "text": "The wages of their virtue, and all foes"
+    },
+    {
+      "number": 306,
+      "speaker": "ALBANY",
+      "text": "The cup of their deservings. O, see, see!"
+    },
+    {
+      "number": 307,
+      "speaker": "KING LEAR",
+      "text": "And my poor fool is hang’d! No, no, no life!"
+    },
+    {
+      "number": 308,
+      "speaker": "KING LEAR",
+      "text": "Why should a dog, a horse, a rat, have life,"
+    },
+    {
+      "number": 309,
+      "speaker": "KING LEAR",
+      "text": "And thou no breath at all? Thou’lt come no more,"
+    },
+    {
+      "number": 310,
+      "speaker": "KING LEAR",
+      "text": "Never, never, never, never, never!"
+    },
+    {
+      "number": 311,
+      "speaker": "KING LEAR",
+      "text": "Pray you, undo this button: thank you, sir."
+    },
+    {
+      "number": 312,
+      "speaker": "KING LEAR",
+      "text": "Do you see this? Look on her, look, her lips,"
+    },
+    {
+      "number": 313,
+      "speaker": "KING LEAR",
+      "text": "Look there, look there!"
+    },
+    {
+      "number": 313,
+      "speaker": "EDGAR",
+      "text": "He faints! My lord, my lord!"
+    },
+    {
+      "number": 314,
+      "speaker": "KENT",
+      "text": "Break, heart; I prithee, break!"
+    },
+    {
+      "number": 314,
+      "speaker": "EDGAR",
+      "text": "Look up, my lord."
+    },
+    {
+      "number": 315,
+      "speaker": "KENT",
+      "text": "Vex not his ghost: O, let him pass! he hates him much"
+    },
+    {
+      "number": 316,
+      "speaker": "KENT",
+      "text": "That would upon the rack of this tough world"
+    },
+    {
+      "number": 317,
+      "speaker": "KENT",
+      "text": "Stretch him out longer."
+    },
+    {
+      "number": 317,
+      "speaker": "EDGAR",
+      "text": "He is gone, indeed."
+    },
+    {
+      "number": 318,
+      "speaker": "KENT",
+      "text": "The wonder is, he hath endured so long:"
+    },
+    {
+      "number": 319,
+      "speaker": "KENT",
+      "text": "He but usurp’d his life."
+    },
+    {
+      "number": 320,
+      "speaker": "ALBANY",
+      "text": "Bear them from hence. Our present business"
+    },
+    {
+      "number": 321,
+      "speaker": "ALBANY",
+      "text": "Is general woe. To Kent and Edgar. Friends of my soul, you twain"
+    },
+    {
+      "number": 322,
+      "speaker": "ALBANY",
+      "text": "Rule in this realm, and the gored state sustain."
+    },
+    {
+      "number": 323,
+      "speaker": "KENT",
+      "text": "I have a journey, sir, shortly to go;"
+    },
+    {
+      "number": 324,
+      "speaker": "KENT",
+      "text": "My master calls me, I must not say no."
+    },
+    {
+      "number": 325,
+      "speaker": "ALBANY",
+      "text": "The weight of this sad time we must obey;"
+    },
+    {
+      "number": 326,
+      "speaker": "ALBANY",
+      "text": "Speak what we feel, not what we ought to say."
+    },
+    {
+      "number": 327,
+      "speaker": "ALBANY",
+      "text": "The oldest hath borne most: we that are young"
+    },
+    {
+      "number": 328,
+      "speaker": "ALBANY",
+      "text": "Shall never see so much, nor live so long."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter, in conquest, with drum and colours, Edmund, King Lear and Cordelia, prisoners; Captain, Soldiers, etc."
+    },
+    {
+      "after_line": 26,
+      "text": "Exeunt King Lear and Cordelia, guarded."
+    },
+    {
+      "after_line": 27,
+      "text": "Giving a paper."
+    },
+    {
+      "after_line": 39,
+      "text": "Exit."
+    },
+    {
+      "after_line": 39,
+      "text": "Flourish. Enter Albany, Goneril, Regan, another Captain, and Soldiers."
+    },
+    {
+      "after_line": 85,
+      "text": "Pointing to Goneril."
+    },
+    {
+      "after_line": 99,
+      "text": "Aside."
+    },
+    {
+      "after_line": 110,
+      "text": "Exit Regan, led."
+    },
+    {
+      "after_line": 110,
+      "text": "Enter a Herald."
+    },
+    {
+      "after_line": 110,
+      "text": "Come hither, herald—Let the trumpet sound, And read out this."
+    },
+    {
+      "after_line": 115,
+      "text": "Reads."
+    },
+    {
+      "after_line": 117,
+      "text": "Trumpet answers within."
+    },
+    {
+      "after_line": 117,
+      "text": "Enter Edgar, at the third sound, armed, with a trumpet before him."
+    },
+    {
+      "after_line": 151,
+      "text": "Alarums. They fight. Edmund falls."
+    },
+    {
+      "after_line": 161,
+      "text": "Exit."
+    },
+    {
+      "after_line": 223,
+      "text": "Enter a Gentleman, with a bloody knife."
+    },
+    {
+      "after_line": 234,
+      "text": "Exit Gentleman."
+    },
+    {
+      "after_line": 234,
+      "text": "Enter Kent."
+    },
+    {
+      "after_line": 241,
+      "text": "The bodies of Goneril and Regan are brought in."
+    },
+    {
+      "after_line": 252,
+      "text": "Exit Edgar."
+    },
+    {
+      "after_line": 257,
+      "text": "Reenter King Lear, with Cordelia dead in his arms; Edgar, Captain, and others following."
+    },
+    {
+      "after_line": 268,
+      "text": "Kneeling."
+    },
+    {
+      "after_line": 296,
+      "text": "Enter a Captain."
+    },
+    {
+      "after_line": 313,
+      "text": "Dies."
+    },
+    {
+      "after_line": 328,
+      "text": "Exeunt, with a dead march."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act5_scene3_gloss1",
+      "line": 1,
+      "phrase": "Some officers take them away",
+      "definition": "Edmund's order to take Lear and Cordelia into custody"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss2",
+      "line": 9,
+      "phrase": "birds i’ the cage",
+      "definition": "Lear's tender image of his coming imprisonment with Cordelia — love as enclosure, not loss"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss3",
+      "line": 10,
+      "phrase": "When thou dost ask me blessing, I’ll kneel down / And ask of thee forgiveness",
+      "definition": "Lear's complete inversion of patriarchal hierarchy — father to daughter on his knees"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss4",
+      "line": 13,
+      "phrase": "gilded butterflies",
+      "definition": "gaudy courtiers — Lear and Cordelia will laugh at them from the cage"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss5",
+      "line": 19,
+      "phrase": "great ones / That ebb and flow by the moon",
+      "definition": "the fickle powerful whose fortunes wax and wane"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss6",
+      "line": 16,
+      "phrase": "mystery of things",
+      "definition": "the secret of existence — Lear imagines he and Cordelia will see to its depth"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss7",
+      "line": 18,
+      "phrase": "packs and sects of great ones",
+      "definition": "political factions"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss8",
+      "line": 25,
+      "phrase": "starve first",
+      "definition": "Lear's ferocity — they will resist enforced separation"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss9",
+      "line": 22,
+      "phrase": "he that parts us",
+      "definition": "whoever tries to separate us — Lear's promise to resist"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss10",
+      "line": 30,
+      "phrase": "Know thou this",
+      "definition": "Edmund gives secret orders to hang Cordelia"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss11",
+      "line": 31,
+      "phrase": "as the time is",
+      "definition": "as circumstances require"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss12",
+      "line": 40,
+      "phrase": "valiant strain",
+      "definition": "Albany commends Edmund's battlefield conduct — unaware of his treacheries"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss13",
+      "line": 137,
+      "phrase": "toad-spotted",
+      "definition": "stained like a toad's back — Albany's heraldic-grotesque insult for Goneril"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss14",
+      "line": 155,
+      "phrase": "Hold, sir",
+      "definition": "Edgar, in full armor, answers the challenge and fights Edmund"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss15",
+      "line": 183,
+      "phrase": "bloody proclamation",
+      "definition": "the wanted-poster for Edgar — now overturned"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss16",
+      "line": 181,
+      "phrase": "List a brief tale",
+      "definition": "Edgar narrates his and Gloucester's sufferings"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss17",
+      "line": 199,
+      "phrase": "Burst smilingly",
+      "definition": "Gloucester's heart 'burst smilingly' when Edgar revealed himself — grief and joy together"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss19",
+      "line": 244,
+      "phrase": "some good I mean to do",
+      "definition": "Edmund's dying wish — revoke the order to kill Cordelia"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss20",
+      "line": 250,
+      "phrase": "token of reprieve",
+      "definition": "proof to stop the execution"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss21",
+      "line": 248,
+      "phrase": "Run, run",
+      "definition": "Albany's desperate command"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss22",
+      "line": 255,
+      "phrase": "fordid herself",
+      "definition": "killed herself — Edmund's report of Goneril's suicide"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss23",
+      "line": 257,
+      "phrase": "Howl, howl, howl, howl!",
+      "definition": "Lear entering with Cordelia's body — four repetitions of a single word; commonly called the most devastating line in Shakespeare"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss24",
+      "line": 257,
+      "phrase": "men of stones",
+      "definition": "Lear's rebuke of everyone present — if they had any heart they would cry the vault of heaven apart"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss25",
+      "line": 259,
+      "phrase": "heaven’s vault should crack",
+      "definition": "the sky should shatter from grief"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss26",
+      "line": 259,
+      "phrase": "She’s gone for ever!",
+      "definition": "Lear's immediate statement of the truth he will spend the rest of the scene refusing"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss27",
+      "line": 265,
+      "phrase": "feather stirs",
+      "definition": "Lear hopes for a sign of breath — puts a feather at Cordelia's mouth"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss28",
+      "line": 306,
+      "phrase": "poor fool",
+      "definition": "Lear's term of endearment for Cordelia — 'fool' as beloved, NOT a reference to the Fool of the earlier acts"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss29",
+      "line": 307,
+      "phrase": "Why should a dog, a horse, a rat, have life, / And thou no breath at all?",
+      "definition": "the most famous theological protest in the play — the bare injustice of Cordelia's death against animal survival"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss30",
+      "line": 308,
+      "phrase": "Thou’lt come no more",
+      "definition": "Lear's incantation against hope"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss31",
+      "line": 309,
+      "phrase": "Never, never, never, never, never",
+      "definition": "Lear's fivefold 'never' — the inverse of the fourfold 'Howl'; two numerical extremes bracketing his collapse"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss32",
+      "line": 310,
+      "phrase": "Pray you, undo this button",
+      "definition": "Lear's dying request — his collar is choking him; the smallness of the gesture is what makes it unbearable"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss33",
+      "line": 312,
+      "phrase": "Look there, look there!",
+      "definition": "Lear dies believing he sees Cordelia alive — the play's final ambiguity about death and perception"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss34",
+      "line": 315,
+      "phrase": "rack of this tough world",
+      "definition": "the instrument of torture — the world stretching him to breaking"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss35",
+      "line": 324,
+      "phrase": "The weight of this sad time we must obey; / Speak what we feel, not what we ought to say",
+      "definition": "the play's closing couplet — in some editions spoken by Edgar (who becomes king), in others by Albany (who steps aside); the speaker-attribution is a textual crux that shapes interpretation"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss36",
+      "line": 326,
+      "phrase": "oldest hath borne most",
+      "definition": "the old suffered most"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss37",
+      "line": 326,
+      "phrase": "we that are young / Shall never see so much, nor live so long",
+      "definition": "the final line — the survivors will never endure what has passed, nor match the elders in years"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss38",
+      "line": 1,
+      "phrase": "good guard",
+      "definition": "strict custody"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss39",
+      "line": 10,
+      "phrase": "kneel down",
+      "definition": "Lear reversing the filial gesture"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss40",
+      "line": 13,
+      "phrase": "gilded butterflies",
+      "definition": "gaudy court hangers-on"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss41",
+      "line": 20,
+      "phrase": "sacrifices",
+      "definition": "the 'sacrifices' upon which the gods cast incense — Lear imagines their imprisonment as sacred"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss42",
+      "line": 22,
+      "phrase": "He that parts us",
+      "definition": "Lear's promise — whoever separates us must fire them out like foxes"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss43",
+      "line": 238,
+      "phrase": "great thing of us forgot",
+      "definition": "a great matter we forgot"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss44",
+      "line": 3,
+      "phrase": "censure",
+      "definition": "judgment — Albany's on Edmund"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss45",
+      "line": 70,
+      "phrase": "compeer",
+      "definition": "equal; co-regent"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss48",
+      "line": 137,
+      "phrase": "toad-spotted traitor",
+      "definition": "Albany on Goneril — heraldic-grotesque insult"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss50",
+      "line": 111,
+      "phrase": "within the lists",
+      "definition": "within the dueling enclosure"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss52",
+      "line": 133,
+      "phrase": "false to thy gods",
+      "definition": "the charges Edgar reads against Edmund"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss53",
+      "line": 144,
+      "phrase": "what safe and nicely I might well delay",
+      "definition": "what I might prudently refuse"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss54",
+      "line": 166,
+      "phrase": "exchange charity",
+      "definition": "let us be reconciled"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss57",
+      "line": 183,
+      "phrase": "the bloody proclamation to escape",
+      "definition": "to flee the wanted-poster"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss58",
+      "line": 252,
+      "phrase": "wife",
+      "definition": "Goneril — poison confession"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss60",
+      "line": 306,
+      "phrase": "No, no, no life!",
+      "definition": "Lear's cry over Cordelia"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss61",
+      "line": 17,
+      "phrase": "God's spies",
+      "definition": "Lear's name for himself and Cordelia — eavesdroppers on divine purposes"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss62",
+      "line": 25,
+      "phrase": "starve first",
+      "definition": "Lear's ferocity — they will resist by starvation before separation"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss65",
+      "line": 133,
+      "phrase": "false to thy gods",
+      "definition": "perjured — Edgar's charges against Edmund"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss68",
+      "line": 129,
+      "phrase": "protest",
+      "definition": "formal declaration"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss69",
+      "line": 166,
+      "phrase": "exchange charity",
+      "definition": "forgive and be forgiven — Edgar to the dying Edmund"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss71",
+      "line": 217,
+      "phrase": "puissant",
+      "definition": "powerful"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss73",
+      "line": 255,
+      "phrase": "fordid",
+      "definition": "destroyed; killed"
+    },
+    {
+      "id": "king_lear_act5_scene3_gloss76",
+      "line": 264,
+      "phrase": "image of that horror",
+      "definition": "Edgar: this is only a picture of the promised end, not the end itself"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act5_scene3_ann1",
+      "line_start": 9,
+      "line_end": 28,
+      "citation_display": "King Lear 5.3.9–28",
+      "category": "close_reading",
+      "title": "'We two alone will sing like birds i' the cage' — Lear's fantasy of enclosed love",
+      "body": "Captured by Edmund's forces with Cordelia, Lear imagines prison as idyll: 'We two alone will sing like birds i' the cage.' This is the scene's most tender moment before its destruction. Lear imagines an endless father-daughter companionship — kneeling for blessings, praying, telling stories, laughing at court gossip 'as if we were God's spies.' The speech compresses everything he lost at 1.1 and found at 4.7. It is also willfully unreal; he is imagining a prison that will never exist because he cannot protect Cordelia from Edmund's order. Shakespeare lets the speech run to thirty lines of dreamy beauty so the audience can inhabit it before he breaks it. When Edmund immediately orders Cordelia's execution fifteen lines later, the speech is retroactively a eulogy.",
+      "sources": [
+        "Stanley Cavell, 'The Avoidance of Love' in Disowning Knowledge (1987)",
+        "Jonathan Bate, Soul of the Age (2008)"
+      ]
+    },
+    {
+      "id": "king_lear_act5_scene3_ann2",
+      "line_start": 257,
+      "line_end": 280,
+      "citation_display": "King Lear 5.3.257–280",
+      "category": "close_reading",
+      "title": "'Howl, howl, howl, howl!' — four repetitions of one word",
+      "body": "Lear enters with Cordelia's body and says 'Howl, howl, howl, howl! O, you are men of stones.' Four repetitions of a single word — commonly identified as the most devastating line in Shakespeare. The word 'howl' is pre-linguistic grief: not an idea but an utterance. Its fourfold repetition refuses to resolve into meaning; it is the sound of a human being at the end of his capacity for words. Later in the speech Lear will say 'Never, never, never, never, never' — five repetitions of 'never' mirror the four 'Howl's, the pair bracketing his collapse. 'Why should a dog, a horse, a rat, have life, / And thou no breath at all?' — this is the play's most bitter theodicy, delivered as arithmetic: three living animals, one dead Cordelia. And the sequence ends not with a cry but with 'Pray you, undo this button' — a domestic, small request that concentrates grief into a smaller event than the 'Howl' could carry. Shakespeare's most famous closing sequence is built on this asymmetry: the howl that cannot be spoken and the button that can.",
+      "sources": [
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)",
+        "Frank Kermode, Shakespeare's Language (2000)",
+        "A. C. Bradley, Shakespearean Tragedy (1904)"
+      ]
+    },
+    {
+      "id": "king_lear_act5_scene3_ann3",
+      "line_start": 257,
+      "line_end": 315,
+      "citation_display": "King Lear 5.3.257–315",
+      "category": "historical",
+      "title": "Nahum Tate's happy ending — 150 years of Lear without death",
+      "body": "In 1681 Nahum Tate published 'The History of King Lear,' an adaptation in which Cordelia does not die, she marries Edgar, Lear and Gloucester both survive, and the play ends happily. Tate's Lear became the ONLY version performed on the English stage for 150 years. Samuel Johnson, in his 1765 edition of Shakespeare, defended Tate's version — he wrote that he was so shocked by Cordelia's death that he could not re-read the final scenes until he had to edit them. Charles Lamb in his 1811 essay 'On the Tragedies of Shakespeare' attacked Tate's version as destroying the play's moral argument. It was Edmund Kean's 1823 production that finally restored Shakespeare's tragic ending to the London stage, and only in 1838 (Macready's production) was Tate's version fully retired. The fact that the English theatrical tradition could not bear Shakespeare's ending for 150 years is itself part of the play's meaning. Cordelia's death is designed to be unbearable, and the tradition confirmed it by refusing to bear it. Virgil's verdict: if you feel the wrongness of Cordelia's death, you are having the correct response, and the whole critical tradition is with you.",
+      "sources": [
+        "Nahum Tate, The History of King Lear (1681)",
+        "Samuel Johnson, Preface to Shakespeare (1765)",
+        "Charles Lamb, 'On the Tragedies of Shakespeare' (1811)",
+        "Michael Dobson, The Making of the National Poet (1992)"
+      ]
+    },
+    {
+      "id": "king_lear_act5_scene3_ann4",
+      "line_start": 305,
+      "line_end": 320,
+      "citation_display": "King Lear 5.3.305–320",
+      "category": "textual",
+      "title": "The final couplet — Edgar or Albany?",
+      "body": "'The weight of this sad time we must obey; / Speak what we feel, not what we ought to say. / The oldest hath borne most: we that are young / Shall never see so much, nor live so long.' In the 1623 Folio (F1), these final lines are spoken by EDGAR; in the 1608 Quarto (Q1), they are spoken by ALBANY. This is one of the most consequential speaker-attribution differences in the Shakespeare canon — not because of any particular textual detail, but because who speaks the play's closing lines determines what the play closes as. If Edgar speaks them, the young survivor is taking authority — a new king stepping forward. If Albany speaks them, the middle-aged survivor is stepping aside, giving the final word to youth even while disclaiming office. Most modern editors give the lines to Edgar (following F1), but the assignment is not settled. The brief's flag of this crux is well-placed: readers should know the play ends with textual uncertainty about its own successor.",
+      "sources": [
+        "Gary Taylor and Michael Warren (eds.), The Division of the Kingdoms (1983)",
+        "R. A. Foakes, King Lear (Arden 3, 1997)",
+        "Stanley Wells and Gary Taylor, William Shakespeare: A Textual Companion (1987)"
+      ]
+    },
+    {
+      "id": "king_lear_act5_scene3_ann5",
+      "line_start": 279,
+      "line_end": 285,
+      "citation_display": "King Lear 5.3.279–285",
+      "category": "close_reading",
+      "title": "'Never, never, never, never, never' — pentameter collapse",
+      "body": "Lear's fivefold 'never' is a perfect iambic pentameter line ('ne-ver, ne-ver, ne-ver, ne-ver, ne-ver' = five trochees, or five stressed monosyllables depending on reading), made of nothing but one word. Shakespeare takes the formal unit of his verse — the iambic pentameter line — and fills it with a single syllable of negation. This is meter at its most self-abolishing: the line stays a line, but its content has collapsed into the smallest unit. Critics sometimes call this Shakespeare's most concentrated moment of form expressing content. The verse is doing the work Lear's language can no longer do — holding the shape of speech around a void of meaning. This is the companion line to the four 'Howl's: negation and grief as counterweights to the rest of the play's verbal richness.",
+      "sources": [
+        "George T. Wright, Shakespeare's Metrical Art (1988)",
+        "Frank Kermode, Shakespeare's Language (2000)"
+      ]
+    },
+    {
+      "id": "king_lear_act5_scene3_ann6",
+      "line_start": 170,
+      "line_end": 220,
+      "citation_display": "King Lear 5.3.170–220",
+      "category": "structural",
+      "title": "The duel and Edgar's unmasking — the Gloucester plot's catharsis",
+      "body": "Edgar finally defeats Edmund in armored combat and unmasks. 'Let's exchange charity.' The moment formally resolves the Gloucester subplot: the legitimate son has survived, the bastard is dying, the father (who has died offstage with his 'heart burst smilingly') has been avenged. But the resolution is immediately dwarfed by what follows: Cordelia's death and Lear's collapse. Shakespeare is doing something specific in the scene's sequencing — the Gloucester plot gets a classical catharsis while the Lear plot refuses one. The subplot rewards its virtuous survivor; the main plot does not. That asymmetry is the play's final structural argument: there is no general rule that virtue is rewarded; the Gloucester plot was the luck of a single survivor, and the main plot shows what happens when luck runs out.",
+      "sources": [
+        "Jonathan Bate, Soul of the Age (2008)",
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)"
+      ]
+    },
+    {
+      "id": "king_lear_act5_scene3_ann7",
+      "line_start": 287,
+      "line_end": 300,
+      "citation_display": "King Lear 5.3.287–300",
+      "category": "thematic",
+      "title": "Kent's refusal to live — the loyal servant asks leave",
+      "body": "As the survivors gather, Kent — who has served Lear in disguise for nearly the entire play — says 'I have a journey, sir, shortly to go; / My master calls me, I must not say no.' Kent is announcing his own impending death, following Lear. Albany's attempt to share the rule ('Friends of my soul, you twain / Rule in this realm, and the gor'd state sustain') is refused: Kent will not survive, Edgar will stand alone (or with Albany). The play will not permit its oldest loyal witness to live past his master. Kent's loyalty is absolute, and the play honors it by refusing him a later career. There is no restoration-narrative for those who loved Lear completely.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act5_scene3_q1",
+      "kind": "close_reading",
+      "prompt": "Why is 'Howl, howl, howl, howl!' considered the most devastating line in Shakespeare?",
+      "options": [
+        "It is the longest line in the play",
+        "Four repetitions of a single pre-linguistic word of grief — a human being at the end of his capacity for meaning; refusing to resolve into sense",
+        "It contains rare vocabulary",
+        "It is a Biblical quotation"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 257,
+      "anchor_line_end": 260
+    },
+    {
+      "id": "king_lear_act5_scene3_q2",
+      "kind": "historical",
+      "prompt": "What was Nahum Tate's 1681 adaptation of King Lear, and why does it matter?",
+      "options": [
+        "A minor curio without influence",
+        "A happy-ending rewrite (Cordelia lives, marries Edgar) that became the ONLY Lear performed in English theaters for 150 years, until 1838 — showing the tradition could not bear Shakespeare's ending, which is itself part of the play's meaning",
+        "A Latin translation",
+        "An illustrated edition"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 257,
+      "anchor_line_end": 315
+    },
+    {
+      "id": "king_lear_act5_scene3_q3",
+      "kind": "structural",
+      "prompt": "The final couplet of King Lear ('The weight of this sad time...') is spoken by whom?",
+      "options": [
+        "Always by Albany in all editions",
+        "Edgar in the 1623 Folio, Albany in the 1608 Quarto — a textual crux whose resolution changes what the play closes as (a new king stepping forward, or a survivor stepping aside)",
+        "The Fool",
+        "Kent"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 305,
+      "anchor_line_end": 320
+    },
+    {
+      "id": "king_lear_act5_scene3_q4",
+      "kind": "close_reading",
+      "prompt": "What is formally remarkable about 'Never, never, never, never, never'?",
+      "options": [
+        "It is in Latin",
+        "A perfect iambic-pentameter-length line built from a single word of negation — Shakespeare's form holding the shape of speech around a void of meaning",
+        "It is a question",
+        "It rhymes with the next line"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 279,
+      "anchor_line_end": 285
+    },
+    {
+      "id": "king_lear_act5_scene3_q5",
+      "kind": "theme",
+      "prompt": "Lear's 'Why should a dog, a horse, a rat, have life, / And thou no breath at all?' is —",
+      "options": [
+        "A call for animal rights",
+        "The play's bitterest theodicy — arithmetic of injustice: three living animals vs. one dead Cordelia; the gods' accounting fails",
+        "An oath",
+        "A riddle"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 275,
+      "anchor_line_end": 277
+    },
+    {
+      "id": "king_lear_act5_scene3_q6",
+      "kind": "inference",
+      "prompt": "What is the significance of Lear's final request 'Pray you, undo this button'?",
+      "options": [
+        "Nothing — it is merely practical",
+        "The smallness of the gesture — domestic, bodily, almost embarrassed — concentrates grief into an event smaller than 'Howl' can carry; Shakespeare's most compressed ending",
+        "He is asking for his crown back",
+        "He is asking to be hanged"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 281,
+      "anchor_line_end": 283
+    },
+    {
+      "id": "king_lear_act5_scene3_q7",
+      "kind": "structural",
+      "prompt": "How do the Gloucester and Lear plots resolve differently in 5.3?",
+      "options": [
+        "Both resolve happily",
+        "Gloucester plot receives classical catharsis (Edgar survives, Edmund dies, Gloucester's heart 'burst smilingly'); Lear plot refuses catharsis (Cordelia dies, Lear collapses) — the asymmetry argues that virtue is not generally rewarded",
+        "Both plots fail",
+        "The Gloucester plot is unresolved"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 170,
+      "anchor_line_end": 220
+    },
+    {
+      "id": "king_lear_act5_scene3_q8",
+      "kind": "close_reading",
+      "prompt": "What does Kent's 'I have a journey, sir, shortly to go' indicate?",
+      "options": [
+        "He is traveling to France",
+        "He is announcing his own impending death — he will follow his master Lear and not remain to rule; the loyal witness refuses a later career",
+        "He is visiting Cordelia's grave",
+        "He is returning to his own estates"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 287,
+      "anchor_line_end": 300
+    }
+  ]
+}

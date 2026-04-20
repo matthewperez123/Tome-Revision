@@ -1,0 +1,252 @@
+{
+  "section_id": "king_lear_act3_scene3",
+  "work_id": "king-lear",
+  "sequence": 12,
+  "act": 3,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "Gloucester's castle",
+  "line_count": 22,
+  "word_count": 220,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "GLOUCESTER",
+      "text": "Alack, alack, Edmund, I like not this unnatural dealing. When I desire"
+    },
+    {
+      "number": 2,
+      "speaker": "GLOUCESTER",
+      "text": "their leave that I might pity him, they took from me the"
+    },
+    {
+      "number": 3,
+      "speaker": "GLOUCESTER",
+      "text": "use of mine own house; charged me, on pain of their perpetual"
+    },
+    {
+      "number": 4,
+      "speaker": "GLOUCESTER",
+      "text": "displeasure, neither to speak of him, entreat for him, nor any way"
+    },
+    {
+      "number": 5,
+      "speaker": "GLOUCESTER",
+      "text": "sustain him."
+    },
+    {
+      "number": 5,
+      "speaker": "EDMUND",
+      "text": "Most savage and unnatural!"
+    },
+    {
+      "number": 6,
+      "speaker": "GLOUCESTER",
+      "text": "Go to; say you nothing. There’s a division betwixt the dukes; and"
+    },
+    {
+      "number": 7,
+      "speaker": "GLOUCESTER",
+      "text": "a worse matter than that: I have received a letter this night;"
+    },
+    {
+      "number": 8,
+      "speaker": "GLOUCESTER",
+      "text": "’tis dangerous to be spoken; I have locked the letter in my"
+    },
+    {
+      "number": 9,
+      "speaker": "GLOUCESTER",
+      "text": "closet: these injuries the king now bears will be revenged home; there’s"
+    },
+    {
+      "number": 10,
+      "speaker": "GLOUCESTER",
+      "text": "part of a power already footed: we must incline to the king."
+    },
+    {
+      "number": 11,
+      "speaker": "GLOUCESTER",
+      "text": "I will seek him, and privily relieve him: go you and maintain"
+    },
+    {
+      "number": 12,
+      "speaker": "GLOUCESTER",
+      "text": "talk with the duke, that my charity be not of him perceived:"
+    },
+    {
+      "number": 13,
+      "speaker": "GLOUCESTER",
+      "text": "if he ask for me. I am ill, and gone to bed."
+    },
+    {
+      "number": 14,
+      "speaker": "GLOUCESTER",
+      "text": "Though I die for it, as no less is threatened me, the"
+    },
+    {
+      "number": 15,
+      "speaker": "GLOUCESTER",
+      "text": "king my old master must be relieved. There is some strange thing"
+    },
+    {
+      "number": 16,
+      "speaker": "GLOUCESTER",
+      "text": "toward, Edmund; pray you, be careful."
+    },
+    {
+      "number": 17,
+      "speaker": "EDMUND",
+      "text": "This courtesy, forbid thee, shall the duke"
+    },
+    {
+      "number": 18,
+      "speaker": "EDMUND",
+      "text": "Instantly know; and of that letter too:"
+    },
+    {
+      "number": 19,
+      "speaker": "EDMUND",
+      "text": "This seems a fair deserving, and must draw me"
+    },
+    {
+      "number": 20,
+      "speaker": "EDMUND",
+      "text": "That which my father loses; no less than all:"
+    },
+    {
+      "number": 21,
+      "speaker": "EDMUND",
+      "text": "The younger rises when the old doth fall."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Gloucester and Edmund."
+    },
+    {
+      "after_line": 16,
+      "text": "Exit."
+    },
+    {
+      "after_line": 21,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act3_scene3_gloss1",
+      "line": 2,
+      "phrase": "pity him",
+      "definition": "Gloucester's forbidden compassion for Lear"
+    },
+    {
+      "id": "king_lear_act3_scene3_gloss2",
+      "line": 6,
+      "phrase": "division",
+      "definition": "split between Albany and Cornwall"
+    },
+    {
+      "id": "king_lear_act3_scene3_gloss3",
+      "line": 10,
+      "phrase": "footed",
+      "definition": "landed (France's army)"
+    },
+    {
+      "id": "king_lear_act3_scene3_gloss4",
+      "line": 9,
+      "phrase": "closet",
+      "definition": "private room"
+    },
+    {
+      "id": "king_lear_act3_scene3_gloss5",
+      "line": 19,
+      "phrase": "fair deserving",
+      "definition": "legitimate merit — Edmund's aside on his own advancement through betrayal"
+    },
+    {
+      "id": "king_lear_act3_scene3_gloss7",
+      "line": 7,
+      "phrase": "a worse matter than that",
+      "definition": "Gloucester's veiled reference to the French invasion"
+    },
+    {
+      "id": "king_lear_act3_scene3_gloss8",
+      "line": 10,
+      "phrase": "footed",
+      "definition": "landed — France has come ashore"
+    },
+    {
+      "id": "king_lear_act3_scene3_gloss9",
+      "line": 9,
+      "phrase": "These injuries the king now bears",
+      "definition": "Lear's present sufferings, which Gloucester intends to relieve"
+    },
+    {
+      "id": "king_lear_act3_scene3_gloss10",
+      "line": 11,
+      "phrase": "privily",
+      "definition": "privately — Gloucester's secret succor to Lear"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act3_scene3_ann1",
+      "line_start": 1,
+      "line_end": 22,
+      "citation_display": "King Lear 3.3.1–22",
+      "category": "structural",
+      "title": "Gloucester's mistake — Edmund becomes an informer",
+      "body": "Gloucester tells Edmund, in confidence, that he knows of a secret letter and intends to help Lear against the sisters' wishes. He even names the forbidden 'pity' he feels. Edmund's aside — 'This courtesy, forbid thee, shall the duke / Instantly know' — seals Gloucester's fate. The scene is twenty-two lines long and contains the whole mechanism by which Gloucester will be blinded. Shakespeare shows how every tragic sequence in this play runs on premature confidence: a parent telling a child a secret the child will weaponise. The structural echo of Lear's premature gift of the kingdom in 1.1 is exact.",
+      "sources": [
+        "Frank Kermode, Shakespeare's Language (2000)"
+      ]
+    },
+    {
+      "id": "king_lear_act3_scene3_ann2",
+      "line_start": 14,
+      "line_end": 22,
+      "citation_display": "King Lear 3.3.14–22",
+      "category": "thematic",
+      "title": "Gloucester's 'strange news' — pity in a time when pity is forbidden",
+      "body": "Gloucester tells Edmund he has had news of the impending French invasion and intends to aid Lear — despite Cornwall's prohibition. 'There is some strange thing toward, Edmund; pray you, be careful.' That Gloucester confides this to Edmund completes the parallel with Lear confiding in Goneril and Regan: each father hands his fatal intelligence to the child who will destroy him. But notice the play's specific moral move: Gloucester does this because he has chosen to risk himself for Lear. His first act of sustained moral courage is the act that dooms him. The play makes a dark claim here — in a sufficiently corrupt order, virtue is self-destructive. Gloucester will be blinded precisely because he tried to behave well.",
+      "sources": [
+        "Terry Eagleton, William Shakespeare (1986)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act3_scene3_q1",
+      "kind": "structural",
+      "prompt": "How does 3.3 parallel the opening scene?",
+      "options": [
+        "It doesn't parallel anything",
+        "A parent (Gloucester) confides in a child (Edmund) who instantly betrays him — echoing Lear's premature gift of trust to his daughters in 1.1",
+        "It is set in the same location as 1.1",
+        "It takes place at the same time of day"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 22
+    },
+    {
+      "id": "king_lear_act3_scene3_q2",
+      "kind": "theme",
+      "prompt": "What claim does the play make through Gloucester's fate — blinded for trying to help Lear?",
+      "options": [
+        "That Gloucester was imprudent",
+        "A dark moral: in a sufficiently corrupt order, virtue is self-destructive; Gloucester's first act of sustained moral courage is what dooms him",
+        "That Gloucester was secretly wicked",
+        "That Cornwall was just"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 14,
+      "anchor_line_end": 22
+    }
+  ]
+}

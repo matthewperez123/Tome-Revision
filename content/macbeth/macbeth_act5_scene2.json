@@ -1,0 +1,301 @@
+{
+  "section_id": "macbeth_act5_scene2",
+  "work_id": "macbeth",
+  "sequence": 22,
+  "act": 5,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "The country near Dunsinane",
+  "line_count": 37,
+  "word_count": 245,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "MENTEITH",
+      "text": "The English power is near, led on by Malcolm,"
+    },
+    {
+      "number": 2,
+      "speaker": "MENTEITH",
+      "text": "His uncle Siward and the good Macduff:"
+    },
+    {
+      "number": 3,
+      "speaker": "MENTEITH",
+      "text": "Revenges burn in them; for their dear causes"
+    },
+    {
+      "number": 4,
+      "speaker": "MENTEITH",
+      "text": "Would to the bleeding and the grim alarm"
+    },
+    {
+      "number": 5,
+      "speaker": "MENTEITH",
+      "text": "Excite the mortified man."
+    },
+    {
+      "number": 5,
+      "speaker": "ANGUS",
+      "text": "Near Birnam wood"
+    },
+    {
+      "number": 6,
+      "speaker": "ANGUS",
+      "text": "Shall we well meet them; that way are they coming."
+    },
+    {
+      "number": 7,
+      "speaker": "CAITHNESS",
+      "text": "Who knows if Donalbain be with his brother?"
+    },
+    {
+      "number": 8,
+      "speaker": "LENNOX",
+      "text": "For certain, sir, he is not: I have a file"
+    },
+    {
+      "number": 9,
+      "speaker": "LENNOX",
+      "text": "Of all the gentry: there is Siward’s son,"
+    },
+    {
+      "number": 10,
+      "speaker": "LENNOX",
+      "text": "And many unrough youths that even now"
+    },
+    {
+      "number": 11,
+      "speaker": "LENNOX",
+      "text": "Protest their first of manhood."
+    },
+    {
+      "number": 11,
+      "speaker": "MENTEITH",
+      "text": "What does the tyrant?"
+    },
+    {
+      "number": 12,
+      "speaker": "CAITHNESS",
+      "text": "Great Dunsinane he strongly fortifies:"
+    },
+    {
+      "number": 13,
+      "speaker": "CAITHNESS",
+      "text": "Some say he’s mad; others that lesser hate him"
+    },
+    {
+      "number": 14,
+      "speaker": "CAITHNESS",
+      "text": "Do call it valiant fury: but, for certain,"
+    },
+    {
+      "number": 15,
+      "speaker": "CAITHNESS",
+      "text": "He cannot buckle his distemper’d cause"
+    },
+    {
+      "number": 16,
+      "speaker": "CAITHNESS",
+      "text": "Within the belt of rule."
+    },
+    {
+      "number": 16,
+      "speaker": "ANGUS",
+      "text": "Now does he feel"
+    },
+    {
+      "number": 17,
+      "speaker": "ANGUS",
+      "text": "His secret murders sticking on his hands;"
+    },
+    {
+      "number": 18,
+      "speaker": "ANGUS",
+      "text": "Now minutely revolts upbraid his faith-breach;"
+    },
+    {
+      "number": 19,
+      "speaker": "ANGUS",
+      "text": "Those he commands move only in command,"
+    },
+    {
+      "number": 20,
+      "speaker": "ANGUS",
+      "text": "Nothing in love: now does he feel his title"
+    },
+    {
+      "number": 21,
+      "speaker": "ANGUS",
+      "text": "Hang loose about him, like a giant’s robe"
+    },
+    {
+      "number": 22,
+      "speaker": "ANGUS",
+      "text": "Upon a dwarfish thief."
+    },
+    {
+      "number": 22,
+      "speaker": "MENTEITH",
+      "text": "Who then shall blame"
+    },
+    {
+      "number": 23,
+      "speaker": "MENTEITH",
+      "text": "His pester’d senses to recoil and start,"
+    },
+    {
+      "number": 24,
+      "speaker": "MENTEITH",
+      "text": "When all that is within him does condemn"
+    },
+    {
+      "number": 25,
+      "speaker": "MENTEITH",
+      "text": "Itself for being there?"
+    },
+    {
+      "number": 25,
+      "speaker": "CAITHNESS",
+      "text": "Well, march we on,"
+    },
+    {
+      "number": 26,
+      "speaker": "CAITHNESS",
+      "text": "To give obedience where ’tis truly owed:"
+    },
+    {
+      "number": 27,
+      "speaker": "CAITHNESS",
+      "text": "Meet we the medicine of the sickly weal,"
+    },
+    {
+      "number": 28,
+      "speaker": "CAITHNESS",
+      "text": "And with him pour we in our country’s purge"
+    },
+    {
+      "number": 29,
+      "speaker": "CAITHNESS",
+      "text": "Each drop of us."
+    },
+    {
+      "number": 29,
+      "speaker": "LENNOX",
+      "text": "Or so much as it needs,"
+    },
+    {
+      "number": 30,
+      "speaker": "LENNOX",
+      "text": "To dew the sovereign flower and drown the weeds."
+    },
+    {
+      "number": 31,
+      "speaker": "LENNOX",
+      "text": "Make we our march towards Birnam."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Drum and colours. Enter Menteith, Caithness, Angus, Lennox, and Soldiers."
+    },
+    {
+      "after_line": 31,
+      "text": "Exeunt, marching."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act5_scene2_gloss2",
+      "line": 10,
+      "phrase": "unrough youths",
+      "definition": "boys too young for beards — soldiers fighting for the first time"
+    },
+    {
+      "id": "macbeth_act5_scene2_gloss3",
+      "line": 12,
+      "phrase": "Great Dunsinane",
+      "definition": "the hill-fortress in Perthshire, Macbeth's stronghold"
+    },
+    {
+      "id": "macbeth_act5_scene2_gloss4",
+      "line": 18,
+      "phrase": "minutely revolts",
+      "definition": "minute-by-minute defections"
+    },
+    {
+      "id": "macbeth_act5_scene2_gloss5",
+      "line": 18,
+      "phrase": "upbraid his faith-breach",
+      "definition": "reproach him for his broken faith"
+    },
+    {
+      "id": "macbeth_act5_scene2_gloss8",
+      "line": 27,
+      "phrase": "medicine of the sickly weal",
+      "definition": "medicine for the ailing state — Malcolm as the remedy for the body politic"
+    },
+    {
+      "id": "macbeth_act5_scene2_gloss9",
+      "line": 27,
+      "phrase": "sickly weal",
+      "definition": "sick commonwealth; diseased state"
+    },
+    {
+      "id": "macbeth_act5_scene2_gloss10",
+      "line": 30,
+      "phrase": "dew the sovereign flower",
+      "definition": "water the royal (Malcolm), the flower of sovereignty"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act5_scene2_ann1",
+      "line_start": 11,
+      "line_end": 22,
+      "citation_display": "Macbeth 5.2.11–22",
+      "category": "close_reading",
+      "title": "'Like a giant's robe upon a dwarfish thief'",
+      "body": "Angus's image for Macbeth's failing reign returns the play to its most sustained metaphor: kingship is clothing. Macbeth's title 'Hangs loose about him, like a giant's robe / Upon a dwarfish thief.' Cleanth Brooks's essay 'The Naked Babe and the Cloak of Manliness' reads this moment as the clothing-image system's summary statement.\n\nThe thief has stolen a robe cut for a bigger man. The longer he wears it, the more absurd he looks. The problem is not that Macbeth's ambition was too small (the play explicitly calls it 'vaulting'); the problem is that the office of king is not a fit: it was not cut for him, because kingship in this play's theology is a natural inheritance, not a position to be occupied.\n\nThe metaphor's last iteration will be Malcolm's coronation in 5.8, where the robe finds its body. The play's theological reading of kingship — inherited legitimacy restored after usurpation — is also a theatrical reading: it is about what fits.",
+      "sources": [
+        "Cleanth Brooks (1947)",
+        "Caroline Spurgeon (1935)",
+        "A. P. Rossiter, *Angel with Horns* (1961)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act5_scene2_q1",
+      "kind": "close_reading",
+      "prompt": "'Like a giant's robe upon a dwarfish thief' summarizes:",
+      "options": [
+        "A tailor's mistake",
+        "The play's clothing-image system — Macbeth's kingship is a stolen robe that does not fit",
+        "A prophecy",
+        "A battle plan"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 11,
+      "anchor_line_end": 22
+    },
+    {
+      "id": "macbeth_act5_scene2_q2",
+      "kind": "inference",
+      "prompt": "'Minutely revolts upbraid his faith-breach' means:",
+      "options": [
+        "He is sick",
+        "Minute-by-minute defections reproach him for broken loyalty — his support is collapsing in real time",
+        "His subjects are angels",
+        "The clock is wrong"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 10,
+      "anchor_line_end": 12
+    }
+  ]
+}

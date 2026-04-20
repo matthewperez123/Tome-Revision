@@ -1,0 +1,186 @@
+{
+  "section_id": "macbeth_act1_scene1",
+  "work_id": "macbeth",
+  "sequence": 1,
+  "act": 1,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "A desert place",
+  "line_count": 13,
+  "word_count": 61,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "FIRST WITCH",
+      "text": "When shall we three meet again"
+    },
+    {
+      "number": 2,
+      "speaker": "FIRST WITCH",
+      "text": "In thunder, lightning, or in rain?"
+    },
+    {
+      "number": 2,
+      "speaker": "SECOND WITCH",
+      "text": "When the hurlyburly’s done,"
+    },
+    {
+      "number": 3,
+      "speaker": "SECOND WITCH",
+      "text": "When the battle’s lost and won."
+    },
+    {
+      "number": 4,
+      "speaker": "THIRD WITCH",
+      "text": "That will be ere the set of sun."
+    },
+    {
+      "number": 5,
+      "speaker": "FIRST WITCH",
+      "text": "Where the place?"
+    },
+    {
+      "number": 5,
+      "speaker": "SECOND WITCH",
+      "text": "Upon the heath."
+    },
+    {
+      "number": 6,
+      "speaker": "THIRD WITCH",
+      "text": "There to meet with Macbeth."
+    },
+    {
+      "number": 6,
+      "speaker": "FIRST WITCH",
+      "text": "I come, Graymalkin!"
+    },
+    {
+      "number": 7,
+      "speaker": "SECOND WITCH",
+      "text": "Paddock calls."
+    },
+    {
+      "number": 7,
+      "speaker": "THIRD WITCH",
+      "text": "Anon."
+    },
+    {
+      "number": 8,
+      "speaker": "ALL",
+      "text": "Fair is foul, and foul is fair:"
+    },
+    {
+      "number": 9,
+      "speaker": "ALL",
+      "text": "Hover through the fog and filthy air."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Thunder and lightning. Enter three Witches."
+    },
+    {
+      "after_line": 9,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act1_scene1_gloss1",
+      "line": 2,
+      "phrase": "hurlyburly",
+      "definition": "tumult; uproar — the chaos of battle"
+    },
+    {
+      "id": "macbeth_act1_scene1_gloss2",
+      "line": 4,
+      "phrase": "ere",
+      "definition": "before"
+    },
+    {
+      "id": "macbeth_act1_scene1_gloss3",
+      "line": 5,
+      "phrase": "heath",
+      "definition": "open, uncultivated moorland, typical of the Scottish highlands"
+    },
+    {
+      "id": "macbeth_act1_scene1_gloss4",
+      "line": 6,
+      "phrase": "Graymalkin",
+      "definition": "the First Witch's grey cat, her familiar spirit"
+    },
+    {
+      "id": "macbeth_act1_scene1_gloss5",
+      "line": 7,
+      "phrase": "Paddock",
+      "definition": "the Second Witch's familiar, a toad"
+    },
+    {
+      "id": "macbeth_act1_scene1_gloss6",
+      "line": 7,
+      "phrase": "Anon",
+      "definition": "at once; coming shortly"
+    },
+    {
+      "id": "macbeth_act1_scene1_gloss7",
+      "line": 8,
+      "phrase": "Fair is foul, and foul is fair",
+      "definition": "the play's central paradox: moral categories will invert; appearances will deceive"
+    },
+    {
+      "id": "macbeth_act1_scene1_gloss8",
+      "line": 9,
+      "phrase": "Hover through the fog and filthy air",
+      "definition": "the witches supernaturally pass through the thick air; the line establishes the play's atmosphere of metaphysical disorder"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act1_scene1_ann1",
+      "line_start": 1,
+      "line_end": 13,
+      "citation_display": "Macbeth 1.1.1–13",
+      "category": "structural",
+      "title": "Thirteen lines that set the weather",
+      "body": "The shortest opening in Shakespeare. Thunder, three witches, a paradox ('Fair is foul, and foul is fair'), and an exit. Nothing is explained; the audience is handed an atmosphere and told that moral categories are about to invert.\n\nThe scene is a tonal overture rather than an exposition. Compare the deliberate exposition of *Hamlet* (the ghost, the watch, the state of Denmark) with this. *Macbeth* does not argue its weather; it declares it. The three witches will not appear again until line 32 of 1.3 — but the paradox they hand the audience is already installed, waiting for Macbeth's unwitting echo when he enters the play saying 'So foul and fair a day I have not seen.'",
+      "sources": [
+        "A. C. Bradley, *Shakespearean Tragedy* (1904)",
+        "L. C. Knights, 'How Many Children Had Lady Macbeth?' (1933)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act1_scene1_q1",
+      "kind": "close_reading",
+      "prompt": "The Witches' line 'Fair is foul, and foul is fair' does what for the play?",
+      "options": [
+        "Announces the weather",
+        "Establishes a paradox about moral inversion that Macbeth will unwittingly echo in 1.3",
+        "Invokes a specific biblical passage",
+        "Describes the Scottish highlands"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 10,
+      "anchor_line_end": 11
+    },
+    {
+      "id": "macbeth_act1_scene1_q2",
+      "kind": "comprehension",
+      "prompt": "Where do the Witches plan to meet Macbeth?",
+      "options": [
+        "A hall in the palace",
+        "On the battlefield",
+        "On the heath, after the battle ends",
+        "At Inverness"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 10,
+      "anchor_line_start": 6,
+      "anchor_line_end": 8
+    }
+  ]
+}

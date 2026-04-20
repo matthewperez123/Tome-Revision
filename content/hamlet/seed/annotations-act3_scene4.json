@@ -1,0 +1,37 @@
+{
+  "section_id": "hamlet_act3_scene4",
+  "annotations": [
+    {
+      "line_start": 22,
+      "line_end": 34,
+      "category": "structural",
+      "title": "The killing of Polonius: catastrophe as reflex",
+      "body": "Hamlet's stabbing of the man behind the arras is the play's central structural pivot. For three acts Hamlet has been unable to act; now he acts impulsively and kills the wrong man. The moment is the tragic inverse of the prayer scene moments before: there Hamlet reasoned himself out of a killing he could have done, here he kills without reasoning. Freud's famous reading — that the delayed revenge masks an unconscious identification with Claudius that Polonius accidentally triggers — is one way to read the inconsistency. Another, more structural reading: Shakespeare needed the accident to set in motion Laertes's parallel revenge plot, Ophelia's madness, and Hamlet's exile. The play's second half depends on this one impulsive thrust.",
+      "sources": ["Sigmund Freud, The Interpretation of Dreams (1900)", "Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"]
+    },
+    {
+      "line_start": 53,
+      "line_end": 104,
+      "category": "thematic",
+      "title": "The closet scene: portraits and the ethics of remarriage",
+      "body": "Hamlet confronts his mother with what appears to be two miniature portraits (some productions use life-size wall paintings) — his father's and Claudius's. The comparison uses a Renaissance technique: Hamlet reads virtues out of faces. His father has 'Hyperion's curls; the front of Jove himself; / An eye like Mars'; Claudius is 'a mildew'd ear / Blasting his wholesome brother.' The passage is Shakespeare's sharpest treatment of the marriage's illegitimacy — not legal but aesthetic and ethical. Janet Adelman has argued that the scene's force comes from its Oedipal charge: Hamlet's rage at the remarriage is inseparable from his horror at his mother's sexuality. 'Stew'd in corruption, honeying and making love / Over the nasty sty' is not the language of political indignation.",
+      "sources": ["Janet Adelman, Suffocating Mothers (1992)"]
+    },
+    {
+      "line_start": 102,
+      "line_end": 135,
+      "category": "textual",
+      "title": "Does Gertrude see the ghost?",
+      "body": "The ghost's re-entry in 3.4, visible only to Hamlet, is one of the play's most contested textual cruxes. Some critics read Gertrude's blindness as evidence that the ghost is a hallucination projected by Hamlet's guilt about his mother; others see it as a sign that Gertrude, unlike Hamlet, has not been inducted into the secret knowledge. The First Quarto (Q1) has a different stage direction — the ghost appears 'in his night-gown' — suggesting a more domestic, private apparition than the armored figure of 1.1. In performance, a director must decide whether to let the audience see the ghost (affirming his reality) or to stage him as Hamlet's subjective experience (suggesting madness). Either choice reshapes the scene.",
+      "sources": ["Paul Werstine, 'The Textual Mystery of Hamlet' (1988)", "Margreta de Grazia, Hamlet without Hamlet (2007)"]
+    },
+    {
+      "line_start": 172,
+      "line_end": 173,
+      "category": "thematic",
+      "title": "'I must be cruel only to be kind'",
+      "body": "Hamlet's line to Gertrude — 'I must be cruel only to be kind' — sums up the ethical logic he has been attempting since 1.5: the violence is therapeutic, the harshness serves a larger good. The argument is essentially pastoral: a physician's pain for a patient's healing. But the scene has not produced Gertrude's redemption — it has produced Polonius's corpse and Gertrude's pragmatic survival instinct ('Be thou assured, if words be made of breath... I have no life to breathe what thou hast said to me'). The gap between Hamlet's theory of cruelty and its practice is the gap the whole second half of the play opens onto.",
+      "sources": ["Stanley Cavell, Disowning Knowledge (1987)"]
+    }
+  ]
+}

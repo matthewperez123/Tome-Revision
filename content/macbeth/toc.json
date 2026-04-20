@@ -1,0 +1,338 @@
+{
+  "work_id": "macbeth",
+  "entries": [
+    {
+      "type": "act",
+      "act": 1,
+      "title": "Act I"
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act1_scene1",
+      "sequence": 1,
+      "act": 1,
+      "scene": 1,
+      "scene_title": "A desert place",
+      "line_count": 13,
+      "word_count": 61,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act1_scene2",
+      "sequence": 2,
+      "act": 1,
+      "scene": 2,
+      "scene_title": "A camp near Forres",
+      "line_count": 76,
+      "word_count": 483,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act1_scene3",
+      "sequence": 3,
+      "act": 1,
+      "scene": 3,
+      "scene_title": "A heath near Forres",
+      "line_count": 168,
+      "word_count": 1146,
+      "est_read_minutes": 6
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act1_scene4",
+      "sequence": 4,
+      "act": 1,
+      "scene": 4,
+      "scene_title": "Forres. The palace",
+      "line_count": 57,
+      "word_count": 406,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act1_scene5",
+      "sequence": 5,
+      "act": 1,
+      "scene": 5,
+      "scene_title": "Inverness. Macbeth's castle",
+      "line_count": 68,
+      "word_count": 567,
+      "est_read_minutes": 3
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act1_scene6",
+      "sequence": 6,
+      "act": 1,
+      "scene": 6,
+      "scene_title": "Before Macbeth's castle",
+      "line_count": 37,
+      "word_count": 253,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act1_scene7",
+      "sequence": 7,
+      "act": 1,
+      "scene": 7,
+      "scene_title": "Macbeth's castle",
+      "line_count": 91,
+      "word_count": 680,
+      "est_read_minutes": 3
+    },
+    {
+      "type": "act",
+      "act": 2,
+      "title": "Act II"
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act2_scene1",
+      "sequence": 8,
+      "act": 2,
+      "scene": 1,
+      "scene_title": "Court of Macbeth's castle",
+      "line_count": 70,
+      "word_count": 515,
+      "est_read_minutes": 3
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act2_scene2",
+      "sequence": 9,
+      "act": 2,
+      "scene": 2,
+      "scene_title": "The same",
+      "line_count": 85,
+      "word_count": 618,
+      "est_read_minutes": 3
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act2_scene3",
+      "sequence": 10,
+      "act": 2,
+      "scene": 3,
+      "scene_title": "The same",
+      "line_count": 158,
+      "word_count": 1146,
+      "est_read_minutes": 6
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act2_scene4",
+      "sequence": 11,
+      "act": 2,
+      "scene": 4,
+      "scene_title": "Outside Macbeth's castle",
+      "line_count": 50,
+      "word_count": 317,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "act",
+      "act": 3,
+      "title": "Act III"
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act3_scene1",
+      "sequence": 12,
+      "act": 3,
+      "scene": 1,
+      "scene_title": "Forres. The palace",
+      "line_count": 153,
+      "word_count": 1125,
+      "est_read_minutes": 6
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act3_scene2",
+      "sequence": 13,
+      "act": 3,
+      "scene": 2,
+      "scene_title": "The palace",
+      "line_count": 56,
+      "word_count": 402,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act3_scene3",
+      "sequence": 14,
+      "act": 3,
+      "scene": 3,
+      "scene_title": "A park near the palace",
+      "line_count": 32,
+      "word_count": 182,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act3_scene4",
+      "sequence": 15,
+      "act": 3,
+      "scene": 4,
+      "scene_title": "Hall in the palace",
+      "line_count": 166,
+      "word_count": 1204,
+      "est_read_minutes": 6
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act3_scene5",
+      "sequence": 16,
+      "act": 3,
+      "scene": 5,
+      "scene_title": "A Heath",
+      "line_count": 36,
+      "word_count": 247,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act3_scene6",
+      "sequence": 17,
+      "act": 3,
+      "scene": 6,
+      "scene_title": "Forres. The palace",
+      "line_count": 53,
+      "word_count": 403,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "act",
+      "act": 4,
+      "title": "Act IV"
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act4_scene1",
+      "sequence": 18,
+      "act": 4,
+      "scene": 1,
+      "scene_title": "A cavern. In the middle, a boiling cauldron",
+      "line_count": 167,
+      "word_count": 1060,
+      "est_read_minutes": 5
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act4_scene2",
+      "sequence": 19,
+      "act": 4,
+      "scene": 2,
+      "scene_title": "Fife. Macduff's castle",
+      "line_count": 91,
+      "word_count": 668,
+      "est_read_minutes": 3
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act4_scene3",
+      "sequence": 20,
+      "act": 4,
+      "scene": 3,
+      "scene_title": "England. Before the King's palace",
+      "line_count": 278,
+      "word_count": 1911,
+      "est_read_minutes": 10
+    },
+    {
+      "type": "act",
+      "act": 5,
+      "title": "Act V"
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act5_scene1",
+      "sequence": 21,
+      "act": 5,
+      "scene": 1,
+      "scene_title": "Dunsinane. Ante-room in the castle",
+      "line_count": 64,
+      "word_count": 560,
+      "est_read_minutes": 3
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act5_scene2",
+      "sequence": 22,
+      "act": 5,
+      "scene": 2,
+      "scene_title": "The country near Dunsinane",
+      "line_count": 37,
+      "word_count": 245,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act5_scene3",
+      "sequence": 23,
+      "act": 5,
+      "scene": 3,
+      "scene_title": "Dunsinane. A room in the castle",
+      "line_count": 68,
+      "word_count": 471,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act5_scene4",
+      "sequence": 24,
+      "act": 5,
+      "scene": 4,
+      "scene_title": "Country near Birnam wood",
+      "line_count": 27,
+      "word_count": 166,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act5_scene5",
+      "sequence": 25,
+      "act": 5,
+      "scene": 5,
+      "scene_title": "Dunsinane. Within the castle",
+      "line_count": 54,
+      "word_count": 413,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act5_scene6",
+      "sequence": 26,
+      "act": 5,
+      "scene": 6,
+      "scene_title": "Dunsinane. Before the castle",
+      "line_count": 11,
+      "word_count": 79,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act5_scene7",
+      "sequence": 27,
+      "act": 5,
+      "scene": 7,
+      "scene_title": "Another part of the field",
+      "line_count": 35,
+      "word_count": 248,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "macbeth_act5_scene8",
+      "sequence": 28,
+      "act": 5,
+      "scene": 8,
+      "scene_title": "Another part of the field",
+      "line_count": 86,
+      "word_count": 633,
+      "est_read_minutes": 3
+    }
+  ]
+}

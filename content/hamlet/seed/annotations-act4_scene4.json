@@ -1,0 +1,29 @@
+{
+  "section_id": "hamlet_act4_scene4",
+  "annotations": [
+    {
+      "line_start": 1,
+      "line_end": 32,
+      "category": "structural",
+      "title": "Fortinbras's army and the politics of honor",
+      "body": "Fortinbras appears briefly en route to Poland, his army marching to fight over a patch of ground Hamlet's captain dismisses as 'the plot whereon the numbers cannot try the cause.' Shakespeare stages the man against whom Hamlet has been measured all along: a prince whose father was killed by King Hamlet, and who has organized an entire military campaign to recover the family honor. Hamlet's whole strategic horizon — delay, interrogation, doubt — has no corollary in Fortinbras. The scene poses the play's sharpest question: is Fortinbras's decisive honor-seeking noble, or is it the waste of twenty thousand lives over an eggshell? The final soliloquy will refuse to settle it.",
+      "sources": ["Jonathan Bate, Soul of the Age (2008)"]
+    },
+    {
+      "line_start": 32,
+      "line_end": 66,
+      "category": "thematic",
+      "title": "'How all occasions do inform against me'",
+      "body": "Hamlet's final soliloquy — absent from the Folio but present in the Second Quarto — is the prince's most thorough self-examination. 'What is a man, / If his chief good and market of his time / Be but to sleep and feed?' echoes the earlier 'what is this quintessence of dust?' but turns the question from species to self. The speech's climax — 'Rightly to be great / Is not to stir without great argument, / But greatly to find quarrel in a straw / When honour's at the stake' — is both a critique of Fortinbras and an envy of him. The closing couplet, 'O, from this time forth, / My thoughts be bloody, or be nothing worth,' is the play's last soliloquy of resolution, and the next time we see Hamlet he will already be different.",
+      "sources": ["A. C. Bradley, Shakespearean Tragedy (1904)", "Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"]
+    },
+    {
+      "line_start": 52,
+      "line_end": 58,
+      "category": "textual",
+      "title": "The soliloquy's textual ghost",
+      "body": "This entire soliloquy (about 35 lines) is missing from the 1623 First Folio. Many editors assume Shakespeare's company cut it in later performance for length; some scholars, including Paul Werstine and Barbara Mowat, argue the cut was thematic — the Folio Hamlet is a less meditative figure, closer to a man of action. Whichever theory is right, modern editions typically restore the speech from the Second Quarto because it is a pivot point for the character. Without it, Hamlet's decisiveness in Act 5 — the letter forgery, the pirate-ship escape, the readiness for the duel — arrives unearned.",
+      "sources": ["Paul Werstine, 'The Textual Mystery of Hamlet' (1988)", "Barbara Mowat and Paul Werstine, eds., Folger Shakespeare Library edition"]
+    }
+  ]
+}

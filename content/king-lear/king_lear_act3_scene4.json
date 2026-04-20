@@ -1,0 +1,1351 @@
+{
+  "section_id": "king_lear_act3_scene4",
+  "work_id": "king-lear",
+  "sequence": 13,
+  "act": 3,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "The heath. Before a hovel",
+  "line_count": 160,
+  "word_count": 1393,
+  "est_read_minutes": 7,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KENT",
+      "text": "Here is the place, my lord; good my lord, enter:"
+    },
+    {
+      "number": 2,
+      "speaker": "KENT",
+      "text": "The tyranny of the open night’s too rough"
+    },
+    {
+      "number": 3,
+      "speaker": "KENT",
+      "text": "For nature to endure."
+    },
+    {
+      "number": 3,
+      "speaker": "KING LEAR",
+      "text": "Let me alone."
+    },
+    {
+      "number": 4,
+      "speaker": "KENT",
+      "text": "Good my lord, enter here."
+    },
+    {
+      "number": 4,
+      "speaker": "KING LEAR",
+      "text": "Wilt break my heart?"
+    },
+    {
+      "number": 5,
+      "speaker": "KENT",
+      "text": "I had rather break mine own. Good my lord, enter."
+    },
+    {
+      "number": 6,
+      "speaker": "KING LEAR",
+      "text": "Thou think’st ’tis much that this contentious storm"
+    },
+    {
+      "number": 7,
+      "speaker": "KING LEAR",
+      "text": "Invades us to the skin: so ’tis to thee;"
+    },
+    {
+      "number": 8,
+      "speaker": "KING LEAR",
+      "text": "But where the greater malady is fix’d,"
+    },
+    {
+      "number": 9,
+      "speaker": "KING LEAR",
+      "text": "The lesser is scarce felt. Thou’ldst shun a bear;"
+    },
+    {
+      "number": 10,
+      "speaker": "KING LEAR",
+      "text": "But if thy flight lay toward the raging sea,"
+    },
+    {
+      "number": 11,
+      "speaker": "KING LEAR",
+      "text": "Thou’ldst meet the bear i’ the mouth. When the mind’s free,"
+    },
+    {
+      "number": 12,
+      "speaker": "KING LEAR",
+      "text": "The body’s delicate: the tempest in my mind"
+    },
+    {
+      "number": 13,
+      "speaker": "KING LEAR",
+      "text": "Doth from my senses take all feeling else"
+    },
+    {
+      "number": 14,
+      "speaker": "KING LEAR",
+      "text": "Save what beats there. Filial ingratitude!"
+    },
+    {
+      "number": 15,
+      "speaker": "KING LEAR",
+      "text": "Is it not as this mouth should tear this hand"
+    },
+    {
+      "number": 16,
+      "speaker": "KING LEAR",
+      "text": "For lifting food to’t? But I will punish home:"
+    },
+    {
+      "number": 17,
+      "speaker": "KING LEAR",
+      "text": "No, I will weep no more. In such a night"
+    },
+    {
+      "number": 18,
+      "speaker": "KING LEAR",
+      "text": "To shut me out! Pour on; I will endure."
+    },
+    {
+      "number": 19,
+      "speaker": "KING LEAR",
+      "text": "In such a night as this! O Regan, Goneril!"
+    },
+    {
+      "number": 20,
+      "speaker": "KING LEAR",
+      "text": "Your old kind father, whose frank heart gave all—"
+    },
+    {
+      "number": 21,
+      "speaker": "KING LEAR",
+      "text": "O, that way madness lies; let me shun that;"
+    },
+    {
+      "number": 22,
+      "speaker": "KING LEAR",
+      "text": "No more of that."
+    },
+    {
+      "number": 22,
+      "speaker": "KENT",
+      "text": "Good my lord, enter here."
+    },
+    {
+      "number": 23,
+      "speaker": "KING LEAR",
+      "text": "Prithee, go in thyself: seek thine own ease:"
+    },
+    {
+      "number": 24,
+      "speaker": "KING LEAR",
+      "text": "This tempest will not give me leave to ponder"
+    },
+    {
+      "number": 25,
+      "speaker": "KING LEAR",
+      "text": "On things would hurt me more. But I’ll go in."
+    },
+    {
+      "number": 26,
+      "speaker": "KING LEAR",
+      "text": "To the Fool. In, boy; go first. You houseless poverty—"
+    },
+    {
+      "number": 27,
+      "speaker": "KING LEAR",
+      "text": "Nay, get thee in. I’ll pray, and then I’ll sleep. Fool goes in."
+    },
+    {
+      "number": 28,
+      "speaker": "KING LEAR",
+      "text": "Poor naked wretches, whereso’er you are,"
+    },
+    {
+      "number": 29,
+      "speaker": "KING LEAR",
+      "text": "That bide the pelting of this pitiless storm,"
+    },
+    {
+      "number": 30,
+      "speaker": "KING LEAR",
+      "text": "How shall your houseless heads and unfed sides,"
+    },
+    {
+      "number": 31,
+      "speaker": "KING LEAR",
+      "text": "Your loop’d and window’d raggedness, defend you"
+    },
+    {
+      "number": 32,
+      "speaker": "KING LEAR",
+      "text": "From seasons such as these? O, I have ta’en"
+    },
+    {
+      "number": 33,
+      "speaker": "KING LEAR",
+      "text": "Too little care of this! Take physic, pomp;"
+    },
+    {
+      "number": 34,
+      "speaker": "KING LEAR",
+      "text": "Expose thyself to feel what wretches feel,"
+    },
+    {
+      "number": 35,
+      "speaker": "KING LEAR",
+      "text": "That thou mayst shake the superflux to them,"
+    },
+    {
+      "number": 36,
+      "speaker": "KING LEAR",
+      "text": "And show the heavens more just."
+    },
+    {
+      "number": 37,
+      "speaker": "EDGAR",
+      "text": "Fathom and half, fathom and half! Poor Tom!"
+    },
+    {
+      "number": 38,
+      "speaker": "FOOL",
+      "text": "Come not in here, nuncle, here’s a spirit. Help me, help me!"
+    },
+    {
+      "number": 39,
+      "speaker": "KENT",
+      "text": "Give me thy hand. Who’s there?"
+    },
+    {
+      "number": 40,
+      "speaker": "FOOL",
+      "text": "A spirit, a spirit: he says his name’s poor Tom."
+    },
+    {
+      "number": 41,
+      "speaker": "KENT",
+      "text": "What art thou that dost grumble there i’ the straw? Come forth."
+    },
+    {
+      "number": 42,
+      "speaker": "EDGAR",
+      "text": "Away! the foul fiend follows me!"
+    },
+    {
+      "number": 43,
+      "speaker": "EDGAR",
+      "text": "Through the sharp hawthorn blows the cold wind."
+    },
+    {
+      "number": 44,
+      "speaker": "EDGAR",
+      "text": "Hum! go to thy cold bed, and warm thee."
+    },
+    {
+      "number": 45,
+      "speaker": "KING LEAR",
+      "text": "Hast thou given all to thy two daughters?"
+    },
+    {
+      "number": 46,
+      "speaker": "KING LEAR",
+      "text": "And art thou come to this?"
+    },
+    {
+      "number": 47,
+      "speaker": "EDGAR",
+      "text": "Who gives any thing to poor Tom? whom the foul fiend hath"
+    },
+    {
+      "number": 48,
+      "speaker": "EDGAR",
+      "text": "led through fire and through flame, and through ford and whirlipool e’er"
+    },
+    {
+      "number": 49,
+      "speaker": "EDGAR",
+      "text": "bog and quagmire; that hath laid knives under his pillow, and halters"
+    },
+    {
+      "number": 50,
+      "speaker": "EDGAR",
+      "text": "in his pew; set ratsbane by his porridge; made him proud of"
+    },
+    {
+      "number": 51,
+      "speaker": "EDGAR",
+      "text": "heart, to ride on a bay trotting-horse over four-inched bridges, to course"
+    },
+    {
+      "number": 52,
+      "speaker": "EDGAR",
+      "text": "his own shadow for a traitor. Bless thy five wits! Tom’s a-cold—O,"
+    },
+    {
+      "number": 53,
+      "speaker": "EDGAR",
+      "text": "do de, do de, do de. Bless thee from whirlwinds, star-blasting, and"
+    },
+    {
+      "number": 54,
+      "speaker": "EDGAR",
+      "text": "taking! Do poor Tom some charity, whom the foul fiend vexes: there"
+    },
+    {
+      "number": 55,
+      "speaker": "EDGAR",
+      "text": "could I have him now—and there—and there again, and there."
+    },
+    {
+      "number": 56,
+      "speaker": "KING LEAR",
+      "text": "What, have his daughters brought him to this pass?"
+    },
+    {
+      "number": 57,
+      "speaker": "KING LEAR",
+      "text": "Couldst thou save nothing? Didst thou give them all?"
+    },
+    {
+      "number": 58,
+      "speaker": "FOOL",
+      "text": "Nay, he reserved a blanket, else we had been all shamed."
+    },
+    {
+      "number": 59,
+      "speaker": "KING LEAR",
+      "text": "Now, all the plagues that in the pendulous air"
+    },
+    {
+      "number": 60,
+      "speaker": "KING LEAR",
+      "text": "Hang fated o’er men’s faults light on thy daughters!"
+    },
+    {
+      "number": 61,
+      "speaker": "KENT",
+      "text": "He hath no daughters, sir."
+    },
+    {
+      "number": 62,
+      "speaker": "KING LEAR",
+      "text": "Death, traitor! nothing could have subdued nature"
+    },
+    {
+      "number": 63,
+      "speaker": "KING LEAR",
+      "text": "To such a lowness but his unkind daughters."
+    },
+    {
+      "number": 64,
+      "speaker": "KING LEAR",
+      "text": "Is it the fashion, that discarded fathers"
+    },
+    {
+      "number": 65,
+      "speaker": "KING LEAR",
+      "text": "Should have thus little mercy on their flesh?"
+    },
+    {
+      "number": 66,
+      "speaker": "KING LEAR",
+      "text": "Judicious punishment! ’twas this flesh begot"
+    },
+    {
+      "number": 67,
+      "speaker": "KING LEAR",
+      "text": "Those pelican daughters."
+    },
+    {
+      "number": 68,
+      "speaker": "EDGAR",
+      "text": "Pillicock sat on Pillicock-hill: Halloo, halloo, loo, loo!"
+    },
+    {
+      "number": 69,
+      "speaker": "FOOL",
+      "text": "This cold night will turn us all to fools and madmen."
+    },
+    {
+      "number": 70,
+      "speaker": "EDGAR",
+      "text": "Take heed o’ the foul fiend: obey thy parents; keep thy word"
+    },
+    {
+      "number": 71,
+      "speaker": "EDGAR",
+      "text": "justly; swear not; commit not with man’s sworn spouse; set not thy"
+    },
+    {
+      "number": 72,
+      "speaker": "EDGAR",
+      "text": "sweet heart on proud array. Tom’s a-cold."
+    },
+    {
+      "number": 73,
+      "speaker": "KING LEAR",
+      "text": "What hast thou been?"
+    },
+    {
+      "number": 74,
+      "speaker": "EDGAR",
+      "text": "A serving-man, proud in heart and mind; that curled my hair; wore"
+    },
+    {
+      "number": 75,
+      "speaker": "EDGAR",
+      "text": "gloves in my cap; served the lust of my mistress’ heart, and"
+    },
+    {
+      "number": 76,
+      "speaker": "EDGAR",
+      "text": "did the act of darkness with her; swore as many oaths as"
+    },
+    {
+      "number": 77,
+      "speaker": "EDGAR",
+      "text": "I spake words, and broke them in the sweet face of heaven:"
+    },
+    {
+      "number": 78,
+      "speaker": "EDGAR",
+      "text": "one that slept in the contriving of lust, and waked to do"
+    },
+    {
+      "number": 79,
+      "speaker": "EDGAR",
+      "text": "it: wine loved I deeply, dice dearly: and in woman out-paramoured the"
+    },
+    {
+      "number": 80,
+      "speaker": "EDGAR",
+      "text": "Turk: false of heart, light of ear, bloody of hand; hog in"
+    },
+    {
+      "number": 81,
+      "speaker": "EDGAR",
+      "text": "sloth, fox in stealth, wolf in greediness, dog in madness, lion in"
+    },
+    {
+      "number": 82,
+      "speaker": "EDGAR",
+      "text": "prey. Let not the creaking of shoes nor the rustling of silks"
+    },
+    {
+      "number": 83,
+      "speaker": "EDGAR",
+      "text": "betray thy poor heart to woman: keep thy foot out of brothels,"
+    },
+    {
+      "number": 84,
+      "speaker": "EDGAR",
+      "text": "thy hand out of plackets, thy pen from lenders’ books, and defy"
+    },
+    {
+      "number": 85,
+      "speaker": "EDGAR",
+      "text": "the foul fiend. Still through the hawthorn blows the cold wind: Says"
+    },
+    {
+      "number": 86,
+      "speaker": "EDGAR",
+      "text": "suum, mun, ha, no, nonny. Dolphin my boy, my boy, sessa! let"
+    },
+    {
+      "number": 87,
+      "speaker": "EDGAR",
+      "text": "him trot by."
+    },
+    {
+      "number": 88,
+      "speaker": "KING LEAR",
+      "text": "Why, thou wert better in thy grave than to answer with thy"
+    },
+    {
+      "number": 89,
+      "speaker": "KING LEAR",
+      "text": "uncovered body this extremity of the skies. Is man no more than"
+    },
+    {
+      "number": 90,
+      "speaker": "KING LEAR",
+      "text": "this? Consider him well. Thou owest the worm no silk, the beast"
+    },
+    {
+      "number": 91,
+      "speaker": "KING LEAR",
+      "text": "no hide, the sheep no wool, the cat no perfume. Ha! here’s"
+    },
+    {
+      "number": 92,
+      "speaker": "KING LEAR",
+      "text": "three on ’s are sophisticated! Thou art the thing itself: unaccommodated man"
+    },
+    {
+      "number": 93,
+      "speaker": "KING LEAR",
+      "text": "is no more but such a poor bare, forked animal as thou"
+    },
+    {
+      "number": 94,
+      "speaker": "KING LEAR",
+      "text": "art. Off, off, you lendings! come unbutton here. Tearing off his clothes."
+    },
+    {
+      "number": 95,
+      "speaker": "FOOL",
+      "text": "Prithee, nuncle, be contented; ’tis a naughty night to swim in. Now"
+    },
+    {
+      "number": 96,
+      "speaker": "FOOL",
+      "text": "a little fire in a wild field were like an old lecher’s"
+    },
+    {
+      "number": 97,
+      "speaker": "FOOL",
+      "text": "heart; a small spark, all the rest on’s body cold. Look, here"
+    },
+    {
+      "number": 98,
+      "speaker": "FOOL",
+      "text": "comes a walking fire."
+    },
+    {
+      "number": 99,
+      "speaker": "EDGAR",
+      "text": "This is the foul fiend Flibbertigibbet: he begins at curfew, and walks"
+    },
+    {
+      "number": 100,
+      "speaker": "EDGAR",
+      "text": "till the first cock; he gives the web and the pin, squints"
+    },
+    {
+      "number": 101,
+      "speaker": "EDGAR",
+      "text": "the eye, and makes the hare-lip; mildews the white wheat, and hurts"
+    },
+    {
+      "number": 102,
+      "speaker": "EDGAR",
+      "text": "the poor creature of earth."
+    },
+    {
+      "number": 102,
+      "speaker": "KENT",
+      "text": "How fares your grace?"
+    },
+    {
+      "number": 103,
+      "speaker": "KING LEAR",
+      "text": "What’s he?"
+    },
+    {
+      "number": 103,
+      "speaker": "KENT",
+      "text": "Who’s there? What is’t you seek?"
+    },
+    {
+      "number": 104,
+      "speaker": "GLOUCESTER",
+      "text": "What are you there? Your names?"
+    },
+    {
+      "number": 105,
+      "speaker": "EDGAR",
+      "text": "Poor Tom; that eats the swimming frog, the toad, the tadpole, the"
+    },
+    {
+      "number": 106,
+      "speaker": "EDGAR",
+      "text": "wall-newt and the water; that in the fury of his heart, when"
+    },
+    {
+      "number": 107,
+      "speaker": "EDGAR",
+      "text": "the foul fiend rages, eats cow-dung for sallets; swallows the old rat"
+    },
+    {
+      "number": 108,
+      "speaker": "EDGAR",
+      "text": "and the ditch-dog; drinks the green mantle of the standing pool; who"
+    },
+    {
+      "number": 109,
+      "speaker": "EDGAR",
+      "text": "is whipped from tithing to tithing, and stock-punished, and imprisoned; who hath"
+    },
+    {
+      "number": 110,
+      "speaker": "EDGAR",
+      "text": "had three suits to his back, six shirts to his body, horse"
+    },
+    {
+      "number": 111,
+      "speaker": "EDGAR",
+      "text": "to ride, and weapon to wear;"
+    },
+    {
+      "number": 112,
+      "speaker": "GLOUCESTER",
+      "text": "What, hath your grace no better company?"
+    },
+    {
+      "number": 113,
+      "speaker": "EDGAR",
+      "text": "The prince of darkness is a gentleman: Modo he’s call’d, and Mahu."
+    },
+    {
+      "number": 114,
+      "speaker": "GLOUCESTER",
+      "text": "Our flesh and blood is grown so vile, my lord,"
+    },
+    {
+      "number": 115,
+      "speaker": "GLOUCESTER",
+      "text": "That it doth hate what gets it."
+    },
+    {
+      "number": 116,
+      "speaker": "EDGAR",
+      "text": "Poor Tom’s a-cold."
+    },
+    {
+      "number": 117,
+      "speaker": "GLOUCESTER",
+      "text": "Go in with me: my duty cannot suffer"
+    },
+    {
+      "number": 118,
+      "speaker": "GLOUCESTER",
+      "text": "To obey in all your daughters’ hard commands:"
+    },
+    {
+      "number": 119,
+      "speaker": "GLOUCESTER",
+      "text": "Though their injunction be to bar my doors,"
+    },
+    {
+      "number": 120,
+      "speaker": "GLOUCESTER",
+      "text": "And let this tyrannous night take hold upon you,"
+    },
+    {
+      "number": 121,
+      "speaker": "GLOUCESTER",
+      "text": "Yet have I ventured to come seek you out,"
+    },
+    {
+      "number": 122,
+      "speaker": "GLOUCESTER",
+      "text": "And bring you where both fire and food is ready."
+    },
+    {
+      "number": 123,
+      "speaker": "KING LEAR",
+      "text": "First let me talk with this philosopher."
+    },
+    {
+      "number": 124,
+      "speaker": "KING LEAR",
+      "text": "What is the cause of thunder?"
+    },
+    {
+      "number": 125,
+      "speaker": "KENT",
+      "text": "Good my lord, take his offer; go into the house."
+    },
+    {
+      "number": 126,
+      "speaker": "KING LEAR",
+      "text": "I’ll talk a word with this same learned Theban."
+    },
+    {
+      "number": 127,
+      "speaker": "KING LEAR",
+      "text": "What is your study?"
+    },
+    {
+      "number": 128,
+      "speaker": "EDGAR",
+      "text": "How to prevent the fiend, and to kill vermin."
+    },
+    {
+      "number": 129,
+      "speaker": "KING LEAR",
+      "text": "Let me ask you one word in private."
+    },
+    {
+      "number": 130,
+      "speaker": "KENT",
+      "text": "Importune him once more to go, my lord;"
+    },
+    {
+      "number": 131,
+      "speaker": "KENT",
+      "text": "His wits begin to unsettle."
+    },
+    {
+      "number": 131,
+      "speaker": "GLOUCESTER",
+      "text": "Canst thou blame him?"
+    },
+    {
+      "number": 132,
+      "speaker": "GLOUCESTER",
+      "text": "His daughters seek his death: ah, that good Kent!"
+    },
+    {
+      "number": 133,
+      "speaker": "GLOUCESTER",
+      "text": "He said it would be thus, poor banish’d man!"
+    },
+    {
+      "number": 134,
+      "speaker": "GLOUCESTER",
+      "text": "Thou say’st the king grows mad; I’ll tell thee, friend,"
+    },
+    {
+      "number": 135,
+      "speaker": "GLOUCESTER",
+      "text": "I am almost mad myself: I had a son,"
+    },
+    {
+      "number": 136,
+      "speaker": "GLOUCESTER",
+      "text": "Now outlaw’d from my blood; he sought my life,"
+    },
+    {
+      "number": 137,
+      "speaker": "GLOUCESTER",
+      "text": "But lately, very late: I loved him, friend;"
+    },
+    {
+      "number": 138,
+      "speaker": "GLOUCESTER",
+      "text": "No father his son dearer: truth to tell thee,"
+    },
+    {
+      "number": 139,
+      "speaker": "GLOUCESTER",
+      "text": "The grief hath crazed my wits. What a night’s this!"
+    },
+    {
+      "number": 140,
+      "speaker": "GLOUCESTER",
+      "text": "I do beseech your grace—"
+    },
+    {
+      "number": 141,
+      "speaker": "KING LEAR",
+      "text": "O, cry your mercy, sir. Noble philosopher, your company."
+    },
+    {
+      "number": 142,
+      "speaker": "EDGAR",
+      "text": "Tom’s a-cold."
+    },
+    {
+      "number": 143,
+      "speaker": "GLOUCESTER",
+      "text": "In, fellow, there, into the hovel: keep thee warm."
+    },
+    {
+      "number": 144,
+      "speaker": "KING LEAR",
+      "text": "Come let’s in all."
+    },
+    {
+      "number": 144,
+      "speaker": "KENT",
+      "text": "This way, my lord."
+    },
+    {
+      "number": 145,
+      "speaker": "KING LEAR",
+      "text": "With him; I will keep still with my philosopher."
+    },
+    {
+      "number": 146,
+      "speaker": "KENT",
+      "text": "Good my lord, soothe him; let him take the fellow."
+    },
+    {
+      "number": 147,
+      "speaker": "GLOUCESTER",
+      "text": "Take him you on."
+    },
+    {
+      "number": 148,
+      "speaker": "KENT",
+      "text": "Sirrah, come on; go along with us."
+    },
+    {
+      "number": 149,
+      "speaker": "KING LEAR",
+      "text": "Come, good Athenian."
+    },
+    {
+      "number": 149,
+      "speaker": "GLOUCESTER",
+      "text": "No words, no words: hush."
+    },
+    {
+      "number": 150,
+      "speaker": "EDGAR",
+      "text": "Child Rowland to the dark tower came,"
+    },
+    {
+      "number": 151,
+      "speaker": "EDGAR",
+      "text": "His word was still—Fie, foh, and fum,"
+    },
+    {
+      "number": 152,
+      "speaker": "EDGAR",
+      "text": "I smell the blood of a British man."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter King Lear, Kent, and Fool."
+    },
+    {
+      "after_line": 3,
+      "text": "Storm still."
+    },
+    {
+      "after_line": 37,
+      "text": "Within."
+    },
+    {
+      "after_line": 37,
+      "text": "The Fool runs out from the hovel."
+    },
+    {
+      "after_line": 41,
+      "text": "Enter Edgar disguised as a mad man."
+    },
+    {
+      "after_line": 55,
+      "text": "Storm still."
+    },
+    {
+      "after_line": 87,
+      "text": "Storm still."
+    },
+    {
+      "after_line": 98,
+      "text": "Enter Gloucester, with a torch."
+    },
+    {
+      "after_line": 102,
+      "text": "S. Withold footed thrice the old; He met the night-mare, and her nine-fold; Bid her alight, And her troth plight, And, aroint thee, witch, aroint thee!"
+    },
+    {
+      "after_line": 111,
+      "text": "But mice and rats, and such small deer, Have been Tom’s food for seven long year."
+    },
+    {
+      "after_line": 111,
+      "text": "Beware my follower. Peace, Smulkin; peace, thou fiend!"
+    },
+    {
+      "after_line": 131,
+      "text": "Storm still."
+    },
+    {
+      "after_line": 152,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act3_scene4_gloss2",
+      "line": 4,
+      "phrase": "break my heart",
+      "definition": "Lear fears going inside the hovel will let grief kill him"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss3",
+      "line": 12,
+      "phrase": "tempest",
+      "definition": "the storm — both meteorological and of the mind"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss4",
+      "line": 8,
+      "phrase": "greater malady",
+      "definition": "worse illness — his filial grief outweighs the storm"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss5",
+      "line": 14,
+      "phrase": "beats there",
+      "definition": "strikes in my heart — where his greater pain lives"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss6",
+      "line": 20,
+      "phrase": "frank heart",
+      "definition": "open, ingenuous spirit"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss7",
+      "line": 14,
+      "phrase": "filial ingratitude",
+      "definition": "a child's thanklessness — Lear names his wound"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss8",
+      "line": 15,
+      "phrase": "this mouth should tear",
+      "definition": "his own mouth feeding the hand that now strikes him"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss9",
+      "line": 16,
+      "phrase": "punish home",
+      "definition": "pursue the matter to the end"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss10",
+      "line": 28,
+      "phrase": "Poor naked wretches",
+      "definition": "Lear's first great act of imaginative sympathy — for the homeless he never noticed"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss11",
+      "line": 29,
+      "phrase": "pelting",
+      "definition": "pitiless; pelting (as a storm)"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss12",
+      "line": 30,
+      "phrase": "houseless heads",
+      "definition": "unsheltered people"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss13",
+      "line": 30,
+      "phrase": "unfed sides",
+      "definition": "starved bodies"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss14",
+      "line": 31,
+      "phrase": "loop’d and window’d raggedness",
+      "definition": "clothing so tattered it is full of holes and windows"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss15",
+      "line": 32,
+      "phrase": "O, I have ta’en / Too little care",
+      "definition": "Lear's recognition of his previous indifference to poverty"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss16",
+      "line": 33,
+      "phrase": "Take physic, pomp",
+      "definition": "swallow your medicine, royalty"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss17",
+      "line": 35,
+      "phrase": "superflux",
+      "definition": "the superfluous — what the rich should share with the poor"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss18",
+      "line": 37,
+      "phrase": "Fathom and half",
+      "definition": "Edgar's Poor Tom opening — depth-call, as if sounding deep water in the hovel"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss19",
+      "line": 40,
+      "phrase": "Tom",
+      "definition": "Poor Tom — Edgar's Bedlam-beggar persona"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss20",
+      "line": 54,
+      "phrase": "foul fiend",
+      "definition": "the devil — Poor Tom's constant companion in his jargon"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss22",
+      "line": 68,
+      "phrase": "pillicock",
+      "definition": "a nonsense rhyme-word (also slang for penis) — Poor Tom's ravings deliberately incoherent"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss23",
+      "line": 70,
+      "phrase": "Obey thy parents",
+      "definition": "Poor Tom's mock-catechism — twisted folk-piety"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss24",
+      "line": 50,
+      "phrase": "proud of heart",
+      "definition": "haughty — Poor Tom's past sins as imagined autobiography"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss25",
+      "line": 75,
+      "phrase": "gloves in my cap",
+      "definition": "a lover's token worn on the hat"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss26",
+      "line": 80,
+      "phrase": "Turk",
+      "definition": "Muslim; by extension, the sexually licentious of Elizabethan imagination"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss28",
+      "line": 94,
+      "phrase": "lendings",
+      "definition": "borrowed clothing — Lear starts to strip, seeking 'unaccommodated man'"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss29",
+      "line": 92,
+      "phrase": "unaccommodated man",
+      "definition": "the bare forked creature — human being stripped of culture and clothing"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss30",
+      "line": 93,
+      "phrase": "forked animal",
+      "definition": "the human body — two legs forking from a trunk — the play's most compressed image of reduced man"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss31",
+      "line": 67,
+      "phrase": "pelican daughters",
+      "definition": "pelicans were said to feed their young with their own blood; 'pelican daughters' means children who drain their parents' life — Lear's specific accusation"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss32",
+      "line": 99,
+      "phrase": "Flibbertigibbet",
+      "definition": "demon from Samuel Harsnett's 1603 'Declaration of Egregious Popish Impostures' — a Jesuit-exorcist source Shakespeare read while writing Lear"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss33",
+      "line": 99,
+      "phrase": "curfew",
+      "definition": "the evening bell signalling fire-covering (couvre-feu)"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss34",
+      "line": 100,
+      "phrase": "web and the pin",
+      "definition": "cataracts on the eye — a folk-medicine ailment"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss35",
+      "line": 100,
+      "phrase": "squints the eye",
+      "definition": "causes squinting"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss38",
+      "line": 102,
+      "phrase": "How fares your grace?",
+      "definition": "Kent's persistent solicitude amid the madness"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss39",
+      "line": 112,
+      "phrase": "Smulkin",
+      "definition": "demon from Harsnett's 1603 Declaration — a minor devil-name"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss40",
+      "line": 113,
+      "phrase": "prince of darkness",
+      "definition": "the devil himself"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss41",
+      "line": 113,
+      "phrase": "Modo",
+      "definition": "demon from Harsnett's 1603 Declaration — one of the four named devils Edgar/Tom invokes"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss42",
+      "line": 113,
+      "phrase": "Mahu",
+      "definition": "demon from Harsnett's 1603 Declaration — another named devil; Mahu was said to have possessed one of Harsnett's case-subjects"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss43",
+      "line": 123,
+      "phrase": "philosopher",
+      "definition": "Lear's new name for Poor Tom — a deep irony given Tom's gibberish"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss44",
+      "line": 124,
+      "phrase": "cause of thunder",
+      "definition": "Lear's serious question to Poor Tom, whom he now takes as sage"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss45",
+      "line": 126,
+      "phrase": "Theban",
+      "definition": "Greek sage — Tiresias and Oedipus were both Theban"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss46",
+      "line": 126,
+      "phrase": "learned Theban",
+      "definition": "the philosopher Tom has become in Lear's eyes — the play's deepest irony about wisdom"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss47",
+      "line": 141,
+      "phrase": "keep me company",
+      "definition": "Lear wants Poor Tom as his permanent philosopher"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss48",
+      "line": 149,
+      "phrase": "Athenian",
+      "definition": "Greek — second compliment to Tom"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss49",
+      "line": 150,
+      "phrase": "Child Rowland to the dark tower came",
+      "definition": "fragment of a Scottish ballad about the Arthurian knight Rowland — Tom's ravings include legendary scraps"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss50",
+      "line": 151,
+      "phrase": "Fie, foh, and fum",
+      "definition": "fragment from Jack the Giant-Killer — Tom's disordered quotation"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss51",
+      "line": 2,
+      "phrase": "tyranny",
+      "definition": "oppression — Kent on the storm"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss53",
+      "line": 15,
+      "phrase": "mouth should tear this hand",
+      "definition": "as if the mouth bit the hand that fed it — Lear's filial grief as anatomy"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss55",
+      "line": 53,
+      "phrase": "Bless thee from whirlwinds",
+      "definition": "Poor Tom's mock-blessing against weather"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss56",
+      "line": 53,
+      "phrase": "star-blasting",
+      "definition": "malign astral influence causing disease"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss57",
+      "line": 54,
+      "phrase": "taking",
+      "definition": "pestilence"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss58",
+      "line": 50,
+      "phrase": "set ratsbane by his porridge",
+      "definition": "Poor Tom's imagined suicide-method — rat poison in food"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss59",
+      "line": 50,
+      "phrase": "pew",
+      "definition": "stall; raised bench"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss62",
+      "line": 43,
+      "phrase": "through the sharp hawthorn",
+      "definition": "Poor Tom's description of the demon-lashed journey"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss63",
+      "line": 50,
+      "phrase": "rats",
+      "definition": "Poor Tom's catalogue of food-swallowed vermin — 'eats the swimming frog, the toad...'"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss64",
+      "line": 110,
+      "phrase": "three suits",
+      "definition": "three changes of clothes — the worldly minimum for a gentleman"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss67",
+      "line": 113,
+      "phrase": "prince of darkness is a gentleman",
+      "definition": "Poor Tom's mock-heraldry — the devil has manners"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss68",
+      "line": 68,
+      "phrase": "Pillicock sat on Pillicock-hill",
+      "definition": "a nonsense rhyme — child's jingle with sexual pun"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss69",
+      "line": 52,
+      "phrase": "Bless thy five wits",
+      "definition": "the five faculties — common sense, imagination, fantasy, estimation, memory"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss70",
+      "line": 53,
+      "phrase": "star-blasting",
+      "definition": "astral poisoning"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss72",
+      "line": 113,
+      "phrase": "prince of darkness",
+      "definition": "the devil, but Tom figures him as a gentleman"
+    },
+    {
+      "id": "king_lear_act3_scene4_gloss74",
+      "line": 92,
+      "phrase": "sophisticated",
+      "definition": "made complex by civilisation — Lear contrasting clothed man with bare man"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act3_scene4_ann1",
+      "line_start": 28,
+      "line_end": 42,
+      "citation_display": "King Lear 3.4.28–42",
+      "category": "thematic",
+      "title": "'Poor naked wretches' — Lear's first act of imagination",
+      "body": "Before entering the hovel, Lear pauses: 'Poor naked wretches, wheresoe'er you are, / That bide the pelting of this pitiless storm, / How shall your houseless heads and unfed sides, / Your loop'd and window'd raggedness, defend you / From seasons such as these? O, I have ta'en / Too little care of this! Take physic, pomp; / Expose thyself to feel what wretches feel, / That thou mayst shake the superflux to them, / And show the heavens more just.' This is the play's most remarkable moral moment — the king, stripped of his retinue, imagining for the first time the lives of those he ruled. 'Take physic, pomp' is the imperative he directs at his own past self: let royalty swallow the medicine of knowing what the poor endure. Critics read this as Lear's redemption-beginning, but its force comes from its too-lateness: the imagination arrives at the moment he is powerless to act on it. This is the play's argument for why moral imagination requires suffering.",
+      "sources": [
+        "Stanley Cavell, 'The Avoidance of Love' in Disowning Knowledge (1987)",
+        "Terry Eagleton, William Shakespeare (1986)"
+      ]
+    },
+    {
+      "id": "king_lear_act3_scene4_ann2",
+      "line_start": 95,
+      "line_end": 130,
+      "citation_display": "King Lear 3.4.95–130",
+      "category": "historical",
+      "title": "Poor Tom's demons — Harsnett's 1603 Declaration as source",
+      "body": "Flibbertigibbet, Smulkin, Modo, Mahu, Obidicut, Hobbididance — Poor Tom's repertoire of demon-names is not random invention but direct borrowing from Samuel Harsnett's 'A Declaration of Egregious Popish Impostures' (1603). Harsnett's book was an exposure of staged exorcisms by Jesuit priests during the 1580s, naming the demons they claimed had possessed their subjects. Shakespeare, who was almost certainly reading the Declaration while writing Lear in 1605, has Edgar/Tom recite the names Harsnett's frauds had used. The effect is layered: Edgar is pretending to be possessed, using the language of actual frauds who pretended to be possessing, to fool demons who themselves are frauds. This is Shakespeare's most compact skepticism about religious spectacle — the theatrical demons of Poor Tom's madness turn out, source-wise, to be theatrical demons all the way down.",
+      "sources": [
+        "Samuel Harsnett, A Declaration of Egregious Popish Impostures (1603)",
+        "Stephen Greenblatt, 'Shakespeare and the Exorcists' in Shakespearean Negotiations (1988)"
+      ]
+    },
+    {
+      "id": "king_lear_act3_scene4_ann3",
+      "line_start": 78,
+      "line_end": 95,
+      "citation_display": "King Lear 3.4.78–95",
+      "category": "close_reading",
+      "title": "'Unaccommodated man' — Lear strips",
+      "body": "Seeing Poor Tom in rags, Lear says: 'Is man no more than this? Consider him well... Thou art the thing itself: unaccommodated man is no more but such a poor, bare, forked animal as thou art.' He begins tearing off his own clothes: 'Off, off, you lendings!' The gesture is Lear's attempt to become 'the thing itself' — a creature without the false accommodations of culture. This is the play's most radical reduction. 'Poor, bare, forked animal' is the human as evolutionary fact: two legs forking from a trunk, nothing more. Shakespeare never comes closer to a non-theological anthropology than this line. Edgar's disguise has given Lear a mirror in which he sees what man is stripped of custom — and Lear insists on joining that image.",
+      "sources": [
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)",
+        "R. A. Foakes, King Lear (Arden 3, 1997)"
+      ]
+    },
+    {
+      "id": "king_lear_act3_scene4_ann4",
+      "line_start": 130,
+      "line_end": 160,
+      "citation_display": "King Lear 3.4.130–160",
+      "category": "close_reading",
+      "title": "'Learned Theban' — wisdom in madness",
+      "body": "Lear's insistence on treating Poor Tom as a philosopher ('Theban,' 'Athenian,' 'first let me talk with this philosopher') is the play's deepest irony about knowledge. Tom's speech is a jumble of demon-names, ballad-fragments, and folkloric oaths, and Lear takes it for wisdom. But Lear is not wrong. In a world where the sane (Goneril, Regan, Edmund) are the predators and the wise (Kent, Cordelia) have been banished, Tom's deranged honesty is more trustworthy than any coherent speech in the play. Lear's philosophical promotion of Tom is comedy of an extreme kind — but it also ratifies the play's argument that the truths of the broken are the only truths left. This is 'reason in madness' (Edgar's phrase in 4.6) at its opening instance.",
+      "sources": [
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act3_scene4_q1",
+      "kind": "theme",
+      "prompt": "What does Lear's 'Poor naked wretches' speech (lines ~28–42) argue?",
+      "options": [
+        "That he wants to return to the castle",
+        "That royalty should 'take physic' — expose itself to the suffering of the poor so that wealth might be redistributed and the heavens made more just; moral imagination born of stripped power",
+        "That he blames the storm",
+        "That the poor deserve their fate"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 28,
+      "anchor_line_end": 42
+    },
+    {
+      "id": "king_lear_act3_scene4_q2",
+      "kind": "historical",
+      "prompt": "Where do Poor Tom's demon-names (Flibbertigibbet, Smulkin, Modo, Mahu) come from?",
+      "options": [
+        "Shakespeare invented them",
+        "Samuel Harsnett's 1603 'Declaration of Egregious Popish Impostures,' which exposed staged Jesuit exorcisms and named the demons the frauds had used",
+        "Dante's Inferno",
+        "The Book of Revelation"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 95,
+      "anchor_line_end": 130
+    },
+    {
+      "id": "king_lear_act3_scene4_q3",
+      "kind": "close_reading",
+      "prompt": "What does 'unaccommodated man' mean in Lear's reduction speech?",
+      "options": [
+        "A man without a hotel room",
+        "Man stripped of culture and custom — the 'poor, bare, forked animal' that remains when clothing, rank, and shelter are removed",
+        "A man without family",
+        "A man without education"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 78,
+      "anchor_line_end": 95
+    },
+    {
+      "id": "king_lear_act3_scene4_q4",
+      "kind": "inference",
+      "prompt": "Why is Lear's elevation of Poor Tom to 'philosopher' ironically correct?",
+      "options": [
+        "It isn't correct at all",
+        "In a world where the sane are predators and the wise banished, the broken Tom's deranged honesty is more trustworthy than any coherent speech in the play — 'reason in madness'",
+        "Poor Tom is actually Plato",
+        "Lear is hallucinating"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 130,
+      "anchor_line_end": 160
+    }
+  ]
+}

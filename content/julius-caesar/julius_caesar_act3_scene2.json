@@ -1,0 +1,2063 @@
+{
+  "section_id": "julius_caesar_act3_scene2",
+  "work_id": "julius-caesar",
+  "sequence": 9,
+  "act": 3,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "The Forum",
+  "line_count": 274,
+  "word_count": 2105,
+  "est_read_minutes": 11,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CITIZENS",
+      "text": "We will be satisfied; let us be satisfied."
+    },
+    {
+      "number": 2,
+      "speaker": "BRUTUS",
+      "text": "Then follow me, and give me audience, friends."
+    },
+    {
+      "number": 3,
+      "speaker": "BRUTUS",
+      "text": "Cassius, go you into the other street,"
+    },
+    {
+      "number": 4,
+      "speaker": "BRUTUS",
+      "text": "And part the numbers."
+    },
+    {
+      "number": 5,
+      "speaker": "BRUTUS",
+      "text": "Those that will hear me speak, let ’em stay here;"
+    },
+    {
+      "number": 6,
+      "speaker": "BRUTUS",
+      "text": "Those that will follow Cassius, go with him;"
+    },
+    {
+      "number": 7,
+      "speaker": "BRUTUS",
+      "text": "And public reasons shall be rendered"
+    },
+    {
+      "number": 8,
+      "speaker": "BRUTUS",
+      "text": "Of Caesar’s death."
+    },
+    {
+      "number": 8,
+      "speaker": "FIRST CITIZEN",
+      "text": "I will hear Brutus speak."
+    },
+    {
+      "number": 9,
+      "speaker": "SECOND CITIZEN",
+      "text": "I will hear Cassius; and compare their reasons,"
+    },
+    {
+      "number": 10,
+      "speaker": "SECOND CITIZEN",
+      "text": "When severally we hear them rendered."
+    },
+    {
+      "number": 10,
+      "speaker": "THIRD CITIZEN",
+      "text": "The noble Brutus is ascended: silence!"
+    },
+    {
+      "number": 11,
+      "speaker": "BRUTUS",
+      "text": "Be patient till the last. Romans, countrymen, and lovers! hear me for"
+    },
+    {
+      "number": 12,
+      "speaker": "BRUTUS",
+      "text": "my cause, and be silent, that you may hear: believe me for"
+    },
+    {
+      "number": 13,
+      "speaker": "BRUTUS",
+      "text": "mine honour, and have respect to mine honour, that you may believe:"
+    },
+    {
+      "number": 14,
+      "speaker": "BRUTUS",
+      "text": "censure me in your wisdom, and awake your senses, that you may"
+    },
+    {
+      "number": 15,
+      "speaker": "BRUTUS",
+      "text": "the better judge. If there be any in this assembly, any dear"
+    },
+    {
+      "number": 16,
+      "speaker": "BRUTUS",
+      "text": "friend of Caesar’s, to him I say, that Brutus’ love to Caesar"
+    },
+    {
+      "number": 17,
+      "speaker": "BRUTUS",
+      "text": "was no less than his. If then that friend demand why Brutus"
+    },
+    {
+      "number": 18,
+      "speaker": "BRUTUS",
+      "text": "rose against Caesar, this is my answer:—Not that I loved Caesar less,"
+    },
+    {
+      "number": 19,
+      "speaker": "BRUTUS",
+      "text": "but that I loved Rome more. Had you rather Caesar were living"
+    },
+    {
+      "number": 20,
+      "speaker": "BRUTUS",
+      "text": "and die all slaves, than that Caesar were dead, to live all"
+    },
+    {
+      "number": 21,
+      "speaker": "BRUTUS",
+      "text": "free men? As Caesar loved me, I weep for him; as he"
+    },
+    {
+      "number": 22,
+      "speaker": "BRUTUS",
+      "text": "was fortunate, I rejoice at it; as he was valiant, I honour"
+    },
+    {
+      "number": 23,
+      "speaker": "BRUTUS",
+      "text": "him: but, as he was ambitious, I slew him. There is tears"
+    },
+    {
+      "number": 24,
+      "speaker": "BRUTUS",
+      "text": "for his love; joy for his fortune; honour for his valour; and"
+    },
+    {
+      "number": 25,
+      "speaker": "BRUTUS",
+      "text": "death for his ambition. Who is here so base that would be"
+    },
+    {
+      "number": 26,
+      "speaker": "BRUTUS",
+      "text": "a bondman? If any, speak; for him have I offended. Who is"
+    },
+    {
+      "number": 27,
+      "speaker": "BRUTUS",
+      "text": "here so rude that would not be a Roman? If any, speak;"
+    },
+    {
+      "number": 28,
+      "speaker": "BRUTUS",
+      "text": "for him have I offended. Who is here so vile that will"
+    },
+    {
+      "number": 29,
+      "speaker": "BRUTUS",
+      "text": "not love his country? If any, speak; for him have I offended."
+    },
+    {
+      "number": 30,
+      "speaker": "BRUTUS",
+      "text": "I pause for a reply."
+    },
+    {
+      "number": 30,
+      "speaker": "ALL",
+      "text": "None, Brutus, none."
+    },
+    {
+      "number": 31,
+      "speaker": "BRUTUS",
+      "text": "Then none have I offended. I have done no more to Caesar"
+    },
+    {
+      "number": 32,
+      "speaker": "BRUTUS",
+      "text": "than you shall do to Brutus. The question of his death is"
+    },
+    {
+      "number": 33,
+      "speaker": "BRUTUS",
+      "text": "enrolled in the Capitol; his glory not extenuated, wherein he was worthy,"
+    },
+    {
+      "number": 34,
+      "speaker": "BRUTUS",
+      "text": "nor his offences enforced, for which he suffered death."
+    },
+    {
+      "number": 35,
+      "speaker": "BRUTUS",
+      "text": "Here comes his body, mourned by Mark Antony: who, though he had"
+    },
+    {
+      "number": 36,
+      "speaker": "BRUTUS",
+      "text": "no hand in his death, shall receive the benefit of his dying,"
+    },
+    {
+      "number": 37,
+      "speaker": "BRUTUS",
+      "text": "a place in the commonwealth; as which of you shall not? With"
+    },
+    {
+      "number": 38,
+      "speaker": "BRUTUS",
+      "text": "this I depart—that, as I slew my best lover for the good"
+    },
+    {
+      "number": 39,
+      "speaker": "BRUTUS",
+      "text": "of Rome, I have the same dagger for myself, when it shall"
+    },
+    {
+      "number": 40,
+      "speaker": "BRUTUS",
+      "text": "please my country to need my death."
+    },
+    {
+      "number": 41,
+      "speaker": "ALL",
+      "text": "Live, Brutus! live, live!"
+    },
+    {
+      "number": 42,
+      "speaker": "FIRST CITIZEN",
+      "text": "Bring him with triumph home unto his house."
+    },
+    {
+      "number": 43,
+      "speaker": "SECOND CITIZEN",
+      "text": "Give him a statue with his ancestors."
+    },
+    {
+      "number": 44,
+      "speaker": "THIRD CITIZEN",
+      "text": "Let him be Caesar."
+    },
+    {
+      "number": 44,
+      "speaker": "FOURTH CITIZEN",
+      "text": "Caesar’s better parts"
+    },
+    {
+      "number": 45,
+      "speaker": "FOURTH CITIZEN",
+      "text": "Shall be crown’d in Brutus."
+    },
+    {
+      "number": 45,
+      "speaker": "FIRST CITIZEN",
+      "text": "We’ll bring him to his house"
+    },
+    {
+      "number": 46,
+      "speaker": "FIRST CITIZEN",
+      "text": "With shouts and clamours."
+    },
+    {
+      "number": 46,
+      "speaker": "BRUTUS",
+      "text": "My countrymen—"
+    },
+    {
+      "number": 47,
+      "speaker": "SECOND CITIZEN",
+      "text": "Peace, silence! Brutus speaks."
+    },
+    {
+      "number": 47,
+      "speaker": "FIRST CITIZEN",
+      "text": "Peace, ho!"
+    },
+    {
+      "number": 48,
+      "speaker": "BRUTUS",
+      "text": "Good countrymen, let me depart alone,"
+    },
+    {
+      "number": 49,
+      "speaker": "BRUTUS",
+      "text": "And, for my sake, stay here with Antony:"
+    },
+    {
+      "number": 50,
+      "speaker": "BRUTUS",
+      "text": "Do grace to Caesar’s corpse, and grace his speech"
+    },
+    {
+      "number": 51,
+      "speaker": "BRUTUS",
+      "text": "Tending to Caesar’s glories; which Mark Antony,"
+    },
+    {
+      "number": 52,
+      "speaker": "BRUTUS",
+      "text": "By our permission, is allow’d to make."
+    },
+    {
+      "number": 53,
+      "speaker": "BRUTUS",
+      "text": "I do entreat you, not a man depart,"
+    },
+    {
+      "number": 54,
+      "speaker": "BRUTUS",
+      "text": "Save I alone, till Antony have spoke."
+    },
+    {
+      "number": 55,
+      "speaker": "FIRST CITIZEN",
+      "text": "Stay, ho! and let us hear Mark Antony."
+    },
+    {
+      "number": 56,
+      "speaker": "THIRD CITIZEN",
+      "text": "Let him go up into the public chair;"
+    },
+    {
+      "number": 57,
+      "speaker": "THIRD CITIZEN",
+      "text": "We’ll hear him. Noble Antony, go up."
+    },
+    {
+      "number": 58,
+      "speaker": "ANTONY",
+      "text": "For Brutus’ sake, I am beholding to you. Goes into the pulpit."
+    },
+    {
+      "number": 59,
+      "speaker": "FOURTH CITIZEN",
+      "text": "What does he say of Brutus?"
+    },
+    {
+      "number": 59,
+      "speaker": "THIRD CITIZEN",
+      "text": "He says, for Brutus’ sake,"
+    },
+    {
+      "number": 60,
+      "speaker": "THIRD CITIZEN",
+      "text": "He finds himself beholding to us all."
+    },
+    {
+      "number": 61,
+      "speaker": "FOURTH CITIZEN",
+      "text": "’Twere best he speak no harm of Brutus here."
+    },
+    {
+      "number": 62,
+      "speaker": "FIRST CITIZEN",
+      "text": "This Caesar was a tyrant."
+    },
+    {
+      "number": 62,
+      "speaker": "THIRD CITIZEN",
+      "text": "Nay, that’s certain:"
+    },
+    {
+      "number": 63,
+      "speaker": "THIRD CITIZEN",
+      "text": "We are blest that Rome is rid of him."
+    },
+    {
+      "number": 64,
+      "speaker": "SECOND CITIZEN",
+      "text": "Peace! let us hear what Antony can say."
+    },
+    {
+      "number": 65,
+      "speaker": "ANTONY",
+      "text": "You gentle Romans—"
+    },
+    {
+      "number": 65,
+      "speaker": "CITIZENS",
+      "text": "Peace, ho! let us hear him."
+    },
+    {
+      "number": 66,
+      "speaker": "ANTONY",
+      "text": "Friends, Romans, countrymen, lend me your ears;"
+    },
+    {
+      "number": 67,
+      "speaker": "ANTONY",
+      "text": "I come to bury Caesar, not to praise him."
+    },
+    {
+      "number": 68,
+      "speaker": "ANTONY",
+      "text": "The evil that men do lives after them;"
+    },
+    {
+      "number": 69,
+      "speaker": "ANTONY",
+      "text": "The good is oft interred with their bones;"
+    },
+    {
+      "number": 70,
+      "speaker": "ANTONY",
+      "text": "So let it be with Caesar. The noble Brutus"
+    },
+    {
+      "number": 71,
+      "speaker": "ANTONY",
+      "text": "Hath told you Caesar was ambitious:"
+    },
+    {
+      "number": 72,
+      "speaker": "ANTONY",
+      "text": "If it were so, it was a grievous fault,"
+    },
+    {
+      "number": 73,
+      "speaker": "ANTONY",
+      "text": "And grievously hath Caesar answer’d it."
+    },
+    {
+      "number": 74,
+      "speaker": "ANTONY",
+      "text": "Here, under leave of Brutus and the rest—"
+    },
+    {
+      "number": 75,
+      "speaker": "ANTONY",
+      "text": "For Brutus is an honourable man;"
+    },
+    {
+      "number": 76,
+      "speaker": "ANTONY",
+      "text": "So are they all, all honourable men—"
+    },
+    {
+      "number": 77,
+      "speaker": "ANTONY",
+      "text": "Come I to speak in Caesar’s funeral."
+    },
+    {
+      "number": 78,
+      "speaker": "ANTONY",
+      "text": "He was my friend, faithful and just to me:"
+    },
+    {
+      "number": 79,
+      "speaker": "ANTONY",
+      "text": "But Brutus says he was ambitious;"
+    },
+    {
+      "number": 80,
+      "speaker": "ANTONY",
+      "text": "And Brutus is an honourable man."
+    },
+    {
+      "number": 81,
+      "speaker": "ANTONY",
+      "text": "He hath brought many captives home to Rome,"
+    },
+    {
+      "number": 82,
+      "speaker": "ANTONY",
+      "text": "Whose ransoms did the general coffers fill:"
+    },
+    {
+      "number": 83,
+      "speaker": "ANTONY",
+      "text": "Did this in Caesar seem ambitious?"
+    },
+    {
+      "number": 84,
+      "speaker": "ANTONY",
+      "text": "When that the poor have cried, Caesar hath wept:"
+    },
+    {
+      "number": 85,
+      "speaker": "ANTONY",
+      "text": "Ambition should be made of sterner stuff:"
+    },
+    {
+      "number": 86,
+      "speaker": "ANTONY",
+      "text": "Yet Brutus says he was ambitious;"
+    },
+    {
+      "number": 87,
+      "speaker": "ANTONY",
+      "text": "And Brutus is an honourable man."
+    },
+    {
+      "number": 88,
+      "speaker": "ANTONY",
+      "text": "You all did see that on the Lupercal"
+    },
+    {
+      "number": 89,
+      "speaker": "ANTONY",
+      "text": "I thrice presented him a kingly crown,"
+    },
+    {
+      "number": 90,
+      "speaker": "ANTONY",
+      "text": "Which he did thrice refuse: was this ambition?"
+    },
+    {
+      "number": 91,
+      "speaker": "ANTONY",
+      "text": "Yet Brutus says he was ambitious;"
+    },
+    {
+      "number": 92,
+      "speaker": "ANTONY",
+      "text": "And, sure, he is an honourable man."
+    },
+    {
+      "number": 93,
+      "speaker": "ANTONY",
+      "text": "I speak not to disprove what Brutus spoke,"
+    },
+    {
+      "number": 94,
+      "speaker": "ANTONY",
+      "text": "But here I am to speak what I do know."
+    },
+    {
+      "number": 95,
+      "speaker": "ANTONY",
+      "text": "You all did love him once, not without cause:"
+    },
+    {
+      "number": 96,
+      "speaker": "ANTONY",
+      "text": "What cause withholds you then, to mourn for him?"
+    },
+    {
+      "number": 97,
+      "speaker": "ANTONY",
+      "text": "O judgment! thou art fled to brutish beasts,"
+    },
+    {
+      "number": 98,
+      "speaker": "ANTONY",
+      "text": "And men have lost their reason. Bear with me;"
+    },
+    {
+      "number": 99,
+      "speaker": "ANTONY",
+      "text": "My heart is in the coffin there with Caesar,"
+    },
+    {
+      "number": 100,
+      "speaker": "ANTONY",
+      "text": "And I must pause till it come back to me."
+    },
+    {
+      "number": 101,
+      "speaker": "FIRST CITIZEN",
+      "text": "Methinks there is much reason in his sayings."
+    },
+    {
+      "number": 102,
+      "speaker": "SECOND CITIZEN",
+      "text": "If thou consider rightly of the matter,"
+    },
+    {
+      "number": 103,
+      "speaker": "SECOND CITIZEN",
+      "text": "Caesar has had great wrong."
+    },
+    {
+      "number": 103,
+      "speaker": "THIRD CITIZEN",
+      "text": "Has he, masters?"
+    },
+    {
+      "number": 104,
+      "speaker": "THIRD CITIZEN",
+      "text": "I fear there will a worse come in his place."
+    },
+    {
+      "number": 105,
+      "speaker": "FOURTH CITIZEN",
+      "text": "Mark’d ye his words? He would not take the crown;"
+    },
+    {
+      "number": 106,
+      "speaker": "FOURTH CITIZEN",
+      "text": "Therefore ’tis certain he was not ambitious."
+    },
+    {
+      "number": 107,
+      "speaker": "FIRST CITIZEN",
+      "text": "If it be found so, some will dear abide it."
+    },
+    {
+      "number": 108,
+      "speaker": "SECOND CITIZEN",
+      "text": "Poor soul! his eyes are red as fire with weeping."
+    },
+    {
+      "number": 109,
+      "speaker": "THIRD CITIZEN",
+      "text": "There’s not a nobler man in Rome than Antony."
+    },
+    {
+      "number": 110,
+      "speaker": "FOURTH CITIZEN",
+      "text": "Now mark him, he begins again to speak."
+    },
+    {
+      "number": 111,
+      "speaker": "ANTONY",
+      "text": "But yesterday the word of Caesar might"
+    },
+    {
+      "number": 112,
+      "speaker": "ANTONY",
+      "text": "Have stood against the world; now lies he there,"
+    },
+    {
+      "number": 113,
+      "speaker": "ANTONY",
+      "text": "And none so poor to do him reverence."
+    },
+    {
+      "number": 114,
+      "speaker": "ANTONY",
+      "text": "O masters, if I were disposed to stir"
+    },
+    {
+      "number": 115,
+      "speaker": "ANTONY",
+      "text": "Your hearts and minds to mutiny and rage,"
+    },
+    {
+      "number": 116,
+      "speaker": "ANTONY",
+      "text": "I should do Brutus wrong, and Cassius wrong,"
+    },
+    {
+      "number": 117,
+      "speaker": "ANTONY",
+      "text": "Who, you all know, are honourable men:"
+    },
+    {
+      "number": 118,
+      "speaker": "ANTONY",
+      "text": "I will not do them wrong; I rather choose"
+    },
+    {
+      "number": 119,
+      "speaker": "ANTONY",
+      "text": "To wrong the dead, to wrong myself and you,"
+    },
+    {
+      "number": 120,
+      "speaker": "ANTONY",
+      "text": "Than I will wrong such honourable men."
+    },
+    {
+      "number": 121,
+      "speaker": "ANTONY",
+      "text": "But here’s a parchment with the seal of Caesar;"
+    },
+    {
+      "number": 122,
+      "speaker": "ANTONY",
+      "text": "I found it in his closet, ’tis his will:"
+    },
+    {
+      "number": 123,
+      "speaker": "ANTONY",
+      "text": "Let but the commons hear this testament—"
+    },
+    {
+      "number": 124,
+      "speaker": "ANTONY",
+      "text": "Which, pardon me, I do not mean to read—"
+    },
+    {
+      "number": 125,
+      "speaker": "ANTONY",
+      "text": "And they would go and kiss dead Caesar’s wounds"
+    },
+    {
+      "number": 126,
+      "speaker": "ANTONY",
+      "text": "And dip their napkins in his sacred blood,"
+    },
+    {
+      "number": 127,
+      "speaker": "ANTONY",
+      "text": "Yea, beg a hair of him for memory,"
+    },
+    {
+      "number": 128,
+      "speaker": "ANTONY",
+      "text": "And, dying, mention it within their wills,"
+    },
+    {
+      "number": 129,
+      "speaker": "ANTONY",
+      "text": "Bequeathing it as a rich legacy"
+    },
+    {
+      "number": 130,
+      "speaker": "ANTONY",
+      "text": "Unto their issue."
+    },
+    {
+      "number": 131,
+      "speaker": "FOURTH CITIZEN",
+      "text": "We’ll hear the will: read it, Mark Antony."
+    },
+    {
+      "number": 132,
+      "speaker": "ALL",
+      "text": "The will, the will! we will hear Caesar’s will."
+    },
+    {
+      "number": 133,
+      "speaker": "ANTONY",
+      "text": "Have patience, gentle friends, I must not read it;"
+    },
+    {
+      "number": 134,
+      "speaker": "ANTONY",
+      "text": "It is not meet you know how Caesar loved you."
+    },
+    {
+      "number": 135,
+      "speaker": "ANTONY",
+      "text": "You are not wood, you are not stones, but men;"
+    },
+    {
+      "number": 136,
+      "speaker": "ANTONY",
+      "text": "And, being men, bearing the will of Caesar,"
+    },
+    {
+      "number": 137,
+      "speaker": "ANTONY",
+      "text": "It will inflame you, it will make you mad:"
+    },
+    {
+      "number": 138,
+      "speaker": "ANTONY",
+      "text": "’Tis good you know not that you are his heirs;"
+    },
+    {
+      "number": 139,
+      "speaker": "ANTONY",
+      "text": "For, if you should, O, what would come of it!"
+    },
+    {
+      "number": 140,
+      "speaker": "FOURTH CITIZEN",
+      "text": "Read the will; we’ll hear it, Antony;"
+    },
+    {
+      "number": 141,
+      "speaker": "FOURTH CITIZEN",
+      "text": "You shall read us the will, Caesar’s will."
+    },
+    {
+      "number": 142,
+      "speaker": "ANTONY",
+      "text": "Will you be patient? will you stay awhile?"
+    },
+    {
+      "number": 143,
+      "speaker": "ANTONY",
+      "text": "I have o’ershot myself to tell you of it:"
+    },
+    {
+      "number": 144,
+      "speaker": "ANTONY",
+      "text": "I fear I wrong the honourable men"
+    },
+    {
+      "number": 145,
+      "speaker": "ANTONY",
+      "text": "Whose daggers have stabb’d Caesar; I do fear it."
+    },
+    {
+      "number": 146,
+      "speaker": "FOURTH CITIZEN",
+      "text": "They were traitors: honourable men!"
+    },
+    {
+      "number": 146,
+      "speaker": "ALL",
+      "text": "The will! the testament!"
+    },
+    {
+      "number": 147,
+      "speaker": "SECOND CITIZEN",
+      "text": "They were villains, murderers: the will! read the will."
+    },
+    {
+      "number": 148,
+      "speaker": "ANTONY",
+      "text": "You will compel me, then, to read the will?"
+    },
+    {
+      "number": 149,
+      "speaker": "ANTONY",
+      "text": "Then make a ring about the corpse of Caesar,"
+    },
+    {
+      "number": 150,
+      "speaker": "ANTONY",
+      "text": "And let me show you him that made the will."
+    },
+    {
+      "number": 151,
+      "speaker": "ANTONY",
+      "text": "Shall I descend? and will you give me leave?"
+    },
+    {
+      "number": 152,
+      "speaker": "SEVERAL CITIZENS",
+      "text": "Come down."
+    },
+    {
+      "number": 152,
+      "speaker": "SECOND CITIZEN",
+      "text": "Descend."
+    },
+    {
+      "number": 153,
+      "speaker": "THIRD CITIZEN",
+      "text": "You shall have leave. Antony comes down."
+    },
+    {
+      "number": 154,
+      "speaker": "FOURTH CITIZEN",
+      "text": "A ring; stand round."
+    },
+    {
+      "number": 155,
+      "speaker": "FIRST CITIZEN",
+      "text": "Stand from the hearse, stand from the body."
+    },
+    {
+      "number": 156,
+      "speaker": "SECOND CITIZEN",
+      "text": "Room for Antony, most noble Antony."
+    },
+    {
+      "number": 157,
+      "speaker": "ANTONY",
+      "text": "Nay, press not so upon me; stand far off."
+    },
+    {
+      "number": 158,
+      "speaker": "SEVERAL CITIZENS",
+      "text": "Stand back; room; bear back."
+    },
+    {
+      "number": 159,
+      "speaker": "ANTONY",
+      "text": "If you have tears, prepare to shed them now."
+    },
+    {
+      "number": 160,
+      "speaker": "ANTONY",
+      "text": "You all do know this mantle: I remember"
+    },
+    {
+      "number": 161,
+      "speaker": "ANTONY",
+      "text": "The first time ever Caesar put it on;"
+    },
+    {
+      "number": 162,
+      "speaker": "ANTONY",
+      "text": "’Twas on a summer’s evening, in his tent,"
+    },
+    {
+      "number": 163,
+      "speaker": "ANTONY",
+      "text": "That day he overcame the Nervii:"
+    },
+    {
+      "number": 164,
+      "speaker": "ANTONY",
+      "text": "Look, in this place ran Cassius’ dagger through:"
+    },
+    {
+      "number": 165,
+      "speaker": "ANTONY",
+      "text": "See what a rent the envious Casca made:"
+    },
+    {
+      "number": 166,
+      "speaker": "ANTONY",
+      "text": "Through this the well-beloved Brutus stabb’d;"
+    },
+    {
+      "number": 167,
+      "speaker": "ANTONY",
+      "text": "And as he pluck’d his cursed steel away,"
+    },
+    {
+      "number": 168,
+      "speaker": "ANTONY",
+      "text": "Mark how the blood of Caesar follow’d it,"
+    },
+    {
+      "number": 169,
+      "speaker": "ANTONY",
+      "text": "As rushing out of doors, to be resolved"
+    },
+    {
+      "number": 170,
+      "speaker": "ANTONY",
+      "text": "If Brutus so unkindly knock’d, or no;"
+    },
+    {
+      "number": 171,
+      "speaker": "ANTONY",
+      "text": "For Brutus, as you know, was Caesar’s angel:"
+    },
+    {
+      "number": 172,
+      "speaker": "ANTONY",
+      "text": "Judge, O you gods, how dearly Caesar loved him!"
+    },
+    {
+      "number": 173,
+      "speaker": "ANTONY",
+      "text": "This was the most unkindest cut of all;"
+    },
+    {
+      "number": 174,
+      "speaker": "ANTONY",
+      "text": "For when the noble Caesar saw him stab,"
+    },
+    {
+      "number": 175,
+      "speaker": "ANTONY",
+      "text": "Ingratitude, more strong than traitors’ arms,"
+    },
+    {
+      "number": 176,
+      "speaker": "ANTONY",
+      "text": "Quite vanquish’d him: then burst his mighty heart;"
+    },
+    {
+      "number": 177,
+      "speaker": "ANTONY",
+      "text": "And, in his mantle muffling up his face,"
+    },
+    {
+      "number": 178,
+      "speaker": "ANTONY",
+      "text": "Even at the base of Pompey’s statua,"
+    },
+    {
+      "number": 179,
+      "speaker": "ANTONY",
+      "text": "Which all the while ran blood, great Caesar fell."
+    },
+    {
+      "number": 180,
+      "speaker": "ANTONY",
+      "text": "O, what a fall was there, my countrymen!"
+    },
+    {
+      "number": 181,
+      "speaker": "ANTONY",
+      "text": "Then I, and you, and all of us fell down,"
+    },
+    {
+      "number": 182,
+      "speaker": "ANTONY",
+      "text": "Whilst bloody treason flourish’d over us."
+    },
+    {
+      "number": 183,
+      "speaker": "ANTONY",
+      "text": "O, now you weep; and, I perceive, you feel"
+    },
+    {
+      "number": 184,
+      "speaker": "ANTONY",
+      "text": "The dint of pity: these are gracious drops."
+    },
+    {
+      "number": 185,
+      "speaker": "ANTONY",
+      "text": "Kind souls, what, weep you when you but behold"
+    },
+    {
+      "number": 186,
+      "speaker": "ANTONY",
+      "text": "Our Caesar’s vesture wounded? Look you here,"
+    },
+    {
+      "number": 187,
+      "speaker": "ANTONY",
+      "text": "Here is himself, marr’d, as you see, with traitors."
+    },
+    {
+      "number": 188,
+      "speaker": "FIRST CITIZEN",
+      "text": "O piteous spectacle!"
+    },
+    {
+      "number": 188,
+      "speaker": "SECOND CITIZEN",
+      "text": "O noble Caesar!"
+    },
+    {
+      "number": 189,
+      "speaker": "THIRD CITIZEN",
+      "text": "O woeful day!"
+    },
+    {
+      "number": 189,
+      "speaker": "FOURTH CITIZEN",
+      "text": "O traitors, villains!"
+    },
+    {
+      "number": 190,
+      "speaker": "FIRST CITIZEN",
+      "text": "O most bloody sight!"
+    },
+    {
+      "number": 190,
+      "speaker": "SECOND CITIZEN",
+      "text": "We will be revenged."
+    },
+    {
+      "number": 191,
+      "speaker": "ALL",
+      "text": "Revenge! About! Seek! Burn! Fire! Kill! Slay! Let not a traitor live!"
+    },
+    {
+      "number": 192,
+      "speaker": "ANTONY",
+      "text": "Stay, countrymen."
+    },
+    {
+      "number": 192,
+      "speaker": "FIRST CITIZEN",
+      "text": "Peace there! hear the noble Antony."
+    },
+    {
+      "number": 193,
+      "speaker": "SECOND CITIZEN",
+      "text": "We’ll hear him, we’ll follow him, we’ll die with him."
+    },
+    {
+      "number": 194,
+      "speaker": "ANTONY",
+      "text": "Good friends, sweet friends, let me not stir you up"
+    },
+    {
+      "number": 195,
+      "speaker": "ANTONY",
+      "text": "To such a sudden flood of mutiny."
+    },
+    {
+      "number": 196,
+      "speaker": "ANTONY",
+      "text": "They that have done this deed are honourable:"
+    },
+    {
+      "number": 197,
+      "speaker": "ANTONY",
+      "text": "What private griefs they have, alas, I know not,"
+    },
+    {
+      "number": 198,
+      "speaker": "ANTONY",
+      "text": "That made them do it: they are wise and honourable,"
+    },
+    {
+      "number": 199,
+      "speaker": "ANTONY",
+      "text": "And will, no doubt, with reasons answer you."
+    },
+    {
+      "number": 200,
+      "speaker": "ANTONY",
+      "text": "I come not, friends, to steal away your hearts:"
+    },
+    {
+      "number": 201,
+      "speaker": "ANTONY",
+      "text": "I am no orator, as Brutus is;"
+    },
+    {
+      "number": 202,
+      "speaker": "ANTONY",
+      "text": "But, as you know me all, a plain blunt man,"
+    },
+    {
+      "number": 203,
+      "speaker": "ANTONY",
+      "text": "That love my friend; and that they know full well"
+    },
+    {
+      "number": 204,
+      "speaker": "ANTONY",
+      "text": "That gave me public leave to speak of him:"
+    },
+    {
+      "number": 205,
+      "speaker": "ANTONY",
+      "text": "For I have neither wit, nor words, nor worth,"
+    },
+    {
+      "number": 206,
+      "speaker": "ANTONY",
+      "text": "Action, nor utterance, nor the power of speech,"
+    },
+    {
+      "number": 207,
+      "speaker": "ANTONY",
+      "text": "To stir men’s blood: I only speak right on;"
+    },
+    {
+      "number": 208,
+      "speaker": "ANTONY",
+      "text": "I tell you that which you yourselves do know;"
+    },
+    {
+      "number": 209,
+      "speaker": "ANTONY",
+      "text": "Show you sweet Caesar’s wounds, poor poor dumb mouths,"
+    },
+    {
+      "number": 210,
+      "speaker": "ANTONY",
+      "text": "And bid them speak for me: but were I Brutus,"
+    },
+    {
+      "number": 211,
+      "speaker": "ANTONY",
+      "text": "And Brutus Antony, there were an Antony"
+    },
+    {
+      "number": 212,
+      "speaker": "ANTONY",
+      "text": "Would ruffle up your spirits and put a tongue"
+    },
+    {
+      "number": 213,
+      "speaker": "ANTONY",
+      "text": "In every wound of Caesar that should move"
+    },
+    {
+      "number": 214,
+      "speaker": "ANTONY",
+      "text": "The stones of Rome to rise and mutiny."
+    },
+    {
+      "number": 215,
+      "speaker": "ALL",
+      "text": "We’ll mutiny."
+    },
+    {
+      "number": 215,
+      "speaker": "FIRST CITIZEN",
+      "text": "We’ll burn the house of Brutus."
+    },
+    {
+      "number": 216,
+      "speaker": "THIRD CITIZEN",
+      "text": "Away, then! come, seek the conspirators."
+    },
+    {
+      "number": 217,
+      "speaker": "ANTONY",
+      "text": "Yet hear me, countrymen; yet hear me speak."
+    },
+    {
+      "number": 218,
+      "speaker": "ALL",
+      "text": "Peace, ho! Hear Antony. Most noble Antony!"
+    },
+    {
+      "number": 219,
+      "speaker": "ANTONY",
+      "text": "Why, friends, you go to do you know not what:"
+    },
+    {
+      "number": 220,
+      "speaker": "ANTONY",
+      "text": "Wherein hath Caesar thus deserved your loves?"
+    },
+    {
+      "number": 221,
+      "speaker": "ANTONY",
+      "text": "Alas, you know not: I must tell you then:"
+    },
+    {
+      "number": 222,
+      "speaker": "ANTONY",
+      "text": "You have forgot the will I told you of."
+    },
+    {
+      "number": 223,
+      "speaker": "ALL",
+      "text": "Most true. The will! Let’s stay and hear the will."
+    },
+    {
+      "number": 224,
+      "speaker": "ANTONY",
+      "text": "Here is the will, and under Caesar’s seal."
+    },
+    {
+      "number": 225,
+      "speaker": "ANTONY",
+      "text": "To every Roman citizen he gives,"
+    },
+    {
+      "number": 226,
+      "speaker": "ANTONY",
+      "text": "To every several man, seventy-five drachmas."
+    },
+    {
+      "number": 227,
+      "speaker": "SECOND CITIZEN",
+      "text": "Most noble Caesar! We’ll revenge his death."
+    },
+    {
+      "number": 228,
+      "speaker": "THIRD CITIZEN",
+      "text": "O royal Caesar!"
+    },
+    {
+      "number": 228,
+      "speaker": "ANTONY",
+      "text": "Hear me with patience."
+    },
+    {
+      "number": 229,
+      "speaker": "ALL",
+      "text": "Peace, ho!"
+    },
+    {
+      "number": 230,
+      "speaker": "ANTONY",
+      "text": "Moreover, he hath left you all his walks,"
+    },
+    {
+      "number": 231,
+      "speaker": "ANTONY",
+      "text": "His private arbours and new-planted orchards,"
+    },
+    {
+      "number": 232,
+      "speaker": "ANTONY",
+      "text": "On this side Tiber; he hath left them you,"
+    },
+    {
+      "number": 233,
+      "speaker": "ANTONY",
+      "text": "And to your heirs forever, common pleasures,"
+    },
+    {
+      "number": 234,
+      "speaker": "ANTONY",
+      "text": "To walk abroad, and recreate yourselves."
+    },
+    {
+      "number": 235,
+      "speaker": "ANTONY",
+      "text": "Here was a Caesar! when comes such another?"
+    },
+    {
+      "number": 236,
+      "speaker": "FIRST CITIZEN",
+      "text": "Never, never. Come, away, away!"
+    },
+    {
+      "number": 237,
+      "speaker": "FIRST CITIZEN",
+      "text": "We’ll burn his body in the holy place,"
+    },
+    {
+      "number": 238,
+      "speaker": "FIRST CITIZEN",
+      "text": "And with the brands fire the traitors’ houses."
+    },
+    {
+      "number": 239,
+      "speaker": "FIRST CITIZEN",
+      "text": "Take up the body."
+    },
+    {
+      "number": 239,
+      "speaker": "SECOND CITIZEN",
+      "text": "Go fetch fire."
+    },
+    {
+      "number": 240,
+      "speaker": "THIRD CITIZEN",
+      "text": "Pluck down benches."
+    },
+    {
+      "number": 240,
+      "speaker": "FOURTH CITIZEN",
+      "text": "Pluck down forms, windows, anything."
+    },
+    {
+      "number": 241,
+      "speaker": "ANTONY",
+      "text": "Now let it work. Mischief, thou art afoot,"
+    },
+    {
+      "number": 242,
+      "speaker": "ANTONY",
+      "text": "Take thou what course thou wilt!"
+    },
+    {
+      "number": 243,
+      "speaker": "ANTONY",
+      "text": "How now, fellow!"
+    },
+    {
+      "number": 244,
+      "speaker": "SERVANT",
+      "text": "Sir, Octavius is already come to Rome."
+    },
+    {
+      "number": 245,
+      "speaker": "ANTONY",
+      "text": "Where is he?"
+    },
+    {
+      "number": 246,
+      "speaker": "SERVANT",
+      "text": "He and Lepidus are at Caesar’s house."
+    },
+    {
+      "number": 247,
+      "speaker": "ANTONY",
+      "text": "And thither will I straight to visit him:"
+    },
+    {
+      "number": 248,
+      "speaker": "ANTONY",
+      "text": "He comes upon a wish. Fortune is merry,"
+    },
+    {
+      "number": 249,
+      "speaker": "ANTONY",
+      "text": "And in this mood will give us anything."
+    },
+    {
+      "number": 250,
+      "speaker": "SERVANT",
+      "text": "I heard him say, Brutus and Cassius"
+    },
+    {
+      "number": 251,
+      "speaker": "SERVANT",
+      "text": "Are rid like madmen through the gates of Rome."
+    },
+    {
+      "number": 252,
+      "speaker": "ANTONY",
+      "text": "Belike they had some notice of the people,"
+    },
+    {
+      "number": 253,
+      "speaker": "ANTONY",
+      "text": "How I had moved them. Bring me to Octavius."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Brutus and Cassius, and a throng of Citizens."
+    },
+    {
+      "after_line": 10,
+      "text": "Exit Cassius, with some of the Citizens. Brutus goes into the pulpit."
+    },
+    {
+      "after_line": 34,
+      "text": "Enter Antony and others, with Caesar’s body."
+    },
+    {
+      "after_line": 54,
+      "text": "Exit."
+    },
+    {
+      "after_line": 240,
+      "text": "Exeunt Citizens with the body."
+    },
+    {
+      "after_line": 242,
+      "text": "Enter a Servant."
+    },
+    {
+      "after_line": 253,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "julius_caesar_act3_scene2_gloss1",
+      "line": 4,
+      "phrase": "part the numbers",
+      "definition": "divide the crowd into two parts (one to each speaker)"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss2",
+      "line": 10,
+      "phrase": "severally we hear",
+      "definition": "separately, one at a time, we hear"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss3",
+      "line": 10,
+      "phrase": "noble Brutus is ascended",
+      "definition": "Brutus has climbed up (onto the Rostra, the speaker's platform)"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss4",
+      "line": 11,
+      "phrase": "lovers",
+      "definition": "dear friends; devoted allies. In Elizabethan usage 'lover' frequently means friend or well-wisher — not romantic. Brutus's 'Romans, countrymen, and lovers' is emphatically NOT the modern sense; modern readers who hear it as incongruous or comic have misread the word"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss5",
+      "line": 14,
+      "phrase": "censure me",
+      "definition": "judge me (not modern 'criticise')"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss6",
+      "line": 16,
+      "phrase": "Brutus' love to Caesar / was no less than his",
+      "definition": "my love for Caesar was no less than his friend's — Brutus's rhetorical premise"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss7",
+      "line": 18,
+      "phrase": "Not that I loved Caesar less, but that I loved Rome more",
+      "definition": "Brutus's most-quoted line; the perfect Stoic-republican formula that attempts to make assassination an act of higher love"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss8",
+      "line": 26,
+      "phrase": "bondman",
+      "definition": "slave; bondsman"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss9",
+      "line": 23,
+      "phrase": "ambitious, I slew him",
+      "definition": "Brutus makes 'ambition' the sole justification; in Elizabethan political vocabulary 'ambition' was a specific vice — ungoverned desire for authority — heavier in weight than modern 'ambition'. The charge is more damning than it sounds to a modern ear"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss10",
+      "line": 27,
+      "phrase": "rude",
+      "definition": "barbarous; uncivilised"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss11",
+      "line": 33,
+      "phrase": "enrolled in the Capitol",
+      "definition": "formally recorded in the public archives"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss12",
+      "line": 33,
+      "phrase": "extenuated",
+      "definition": "lessened; diminished — his virtues have not been downplayed"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss13",
+      "line": 34,
+      "phrase": "enforced",
+      "definition": "exaggerated; pressed hard — his faults have not been overstated"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss14",
+      "line": 38,
+      "phrase": "best lover",
+      "definition": "dearest friend — again the Elizabethan sense, not romantic"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss15",
+      "line": 42,
+      "phrase": "Bring him with triumph home",
+      "definition": "bring him home in triumph — the Citizens propose for Brutus the very honour the tribunes rebuked for Caesar in 1.1"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss16",
+      "line": 44,
+      "phrase": "Let him be Caesar",
+      "definition": "the crowd's spontaneous collapse of principle — Brutus has just killed a man for being on the road to Caesarhood; they immediately propose Brutus as Caesar. Shakespeare's sharp moment on democratic volatility"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss17",
+      "line": 44,
+      "phrase": "Caesar's better parts / Shall be crown'd in Brutus",
+      "definition": "Caesar's good qualities shall be crowned in Brutus — the crowd simply transfers the crown-impulse"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss18",
+      "line": 58,
+      "phrase": "beholding",
+      "definition": "obliged; indebted (older form of 'beholden')"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss19",
+      "line": 62,
+      "phrase": "Caesar was a tyrant",
+      "definition": "the First Citizen's firm conviction at this moment — which Antony's speech will reverse"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss20",
+      "line": 66,
+      "phrase": "Friends, Romans, countrymen, lend me your ears",
+      "definition": "Antony's famous opening — 'lend me your ears' is idiom for 'give me your attention.' In context this is strategic manipulation, not sincere address: Antony is asking permission to speak from a crowd that already hates him, establishing false humility before systematically dismantling Brutus's justification"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss21",
+      "line": 67,
+      "phrase": "bury Caesar, not to praise him",
+      "definition": "Antony's opening disclaimer — which the entire rest of the speech contradicts. The structural irony of denying he is making a speech while making the greatest speech in the play"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss22",
+      "line": 69,
+      "phrase": "interred with their bones",
+      "definition": "buried with the dead man's bones; forgotten with the corpse"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss23",
+      "line": 70,
+      "phrase": "Brutus / Hath told you Caesar was ambitious",
+      "definition": "Antony sets up his refrain; 'ambitious' will be the word he dismantles"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss24",
+      "line": 72,
+      "phrase": "grievous fault",
+      "definition": "serious failing"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss25",
+      "line": 75,
+      "phrase": "Brutus is an honourable man",
+      "definition": "Antony's refrain. Each of the six repetitions lowers the word's credit; by the end 'honourable' has become an accusation of hypocrisy. Shakespeare shows how repetition, stripped of tonal sincerity, can reverse a word's meaning"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss26",
+      "line": 82,
+      "phrase": "general coffers",
+      "definition": "the public treasury"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss27",
+      "line": 85,
+      "phrase": "Ambition should be made of sterner stuff",
+      "definition": "Antony's pivot — real ambition is tougher than this; if Caesar wept at the poor, he was no ambitious tyrant"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss28",
+      "line": 88,
+      "phrase": "Lupercal",
+      "definition": "the Lupercalian festival of 1.2, where Antony offered Caesar the crown three times"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss29",
+      "line": 89,
+      "phrase": "thrice presented him a kingly crown",
+      "definition": "three times offered him a crown — Casca's report in 1.2 restaged as evidence of Caesar's moderation"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss30",
+      "line": 97,
+      "phrase": "O judgment! thou art fled to brutish beasts",
+      "definition": "judgment has fled to wild animals — men have lost their reason"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss31",
+      "line": 100,
+      "phrase": "must pause till it come back to me",
+      "definition": "Antony's calculated theatrical pause — false emotion as persuasive device"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss32",
+      "line": 121,
+      "phrase": "parchment with the seal of Caesar",
+      "definition": "a document under Caesar's official seal — his will"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss33",
+      "line": 122,
+      "phrase": "closet",
+      "definition": "private study"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss34",
+      "line": 123,
+      "phrase": "testament",
+      "definition": "last will and testament"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss35",
+      "line": 126,
+      "phrase": "dip their napkins in his sacred blood",
+      "definition": "dip handkerchiefs in his blood — the relic-hunting of martyrs' blood, transferred from Christian practice onto Caesar"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss36",
+      "line": 129,
+      "phrase": "Bequeathing it as a rich legacy",
+      "definition": "leaving it in their own wills as a treasure"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss37",
+      "line": 134,
+      "phrase": "meet",
+      "definition": "fitting; proper"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss38",
+      "line": 143,
+      "phrase": "o'ershot myself",
+      "definition": "overreached; spoken more than I meant to"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss39",
+      "line": 149,
+      "phrase": "ring about the corpse",
+      "definition": "circle around the body"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss40",
+      "line": 160,
+      "phrase": "mantle",
+      "definition": "a cloak; Caesar's outer garment, worn over the toga — bloodied and torn by the daggers. The mantle becomes Antony's physical prop for grief"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss41",
+      "line": 163,
+      "phrase": "overcame the Nervii",
+      "definition": "defeated the Nervii — a Belgic tribe Caesar conquered in 57 BCE; detail from Plutarch, though the 'mantle' anecdote is Shakespeare's invention"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss42",
+      "line": 164,
+      "phrase": "Cassius' dagger",
+      "definition": "Antony's fiction — he cannot know whose dagger made which cut, but the naming makes the wounds personal"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss43",
+      "line": 165,
+      "phrase": "envious Casca",
+      "definition": "malicious Casca; the striker of the first blow"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss44",
+      "line": 167,
+      "phrase": "cursed steel",
+      "definition": "accursed blade"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss45",
+      "line": 170,
+      "phrase": "unkindly knock'd",
+      "definition": "knocked in an unnatural way — pun on kin/kind; betrayal of family-blood feeling"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss46",
+      "line": 171,
+      "phrase": "Caesar's angel",
+      "definition": "Caesar's beloved — Brutus as Caesar's guardian spirit or dearest one"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss47",
+      "line": 173,
+      "phrase": "most unkindest cut of all",
+      "definition": "the cruellest cut — from the 'unkind' (unnatural/unkinned) Brutus; the line enters the language"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss48",
+      "line": 177,
+      "phrase": "mantle muffling up his face",
+      "definition": "covering his face with the cloak — Plutarch's detail; Caesar shrouded himself as he fell"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss49",
+      "line": 178,
+      "phrase": "Pompey's statua",
+      "definition": "Pompey's statue — Caesar fell beneath the statue of his defeated rival; Plutarch notes the fit of revenge"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss50",
+      "line": 182,
+      "phrase": "bloody treason flourish'd over us",
+      "definition": "bloody betrayal triumphed over us"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss51",
+      "line": 184,
+      "phrase": "dint of pity",
+      "definition": "the stroke/stamp of pity; pity's mark"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss52",
+      "line": 186,
+      "phrase": "vesture",
+      "definition": "garment; clothing"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss53",
+      "line": 195,
+      "phrase": "mutiny",
+      "definition": "rebellion; uprising (against authority)"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss54",
+      "line": 201,
+      "phrase": "I am no orator, as Brutus is",
+      "definition": "Antony's crowning false humility — while delivering what will become the most-taught example of public rhetoric in English"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss55",
+      "line": 202,
+      "phrase": "plain blunt man",
+      "definition": "Antony's pose of rustic directness; the opposite of what he is"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss56",
+      "line": 205,
+      "phrase": "neither wit, nor words, nor worth",
+      "definition": "no intelligence, no words, no value — a fisherman's disclaimer from a master rhetorician"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss57",
+      "line": 207,
+      "phrase": "speak right on",
+      "definition": "speak straightforwardly (yet another false claim)"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss58",
+      "line": 212,
+      "phrase": "ruffle up your spirits",
+      "definition": "stir your emotions; rouse you"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss59",
+      "line": 214,
+      "phrase": "stones of Rome to rise and mutiny",
+      "definition": "the very stones of Rome would rebel — the classical trope of hyperbolic civic outrage"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss60",
+      "line": 226,
+      "phrase": "seventy-five drachmas",
+      "definition": "a drachma was a Greek silver coin; roughly a Roman denarius; 75 denarii represented several weeks' labour — a substantial individual bequest"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss61",
+      "line": 231,
+      "phrase": "private arbours",
+      "definition": "enclosed gardens and groves"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss62",
+      "line": 232,
+      "phrase": "On this side Tiber",
+      "definition": "on the Roman (east) bank of the Tiber — Caesar's pleasure-grounds willed to the citizens"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss63",
+      "line": 234,
+      "phrase": "recreate yourselves",
+      "definition": "refresh yourselves; take recreation"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss64",
+      "line": 238,
+      "phrase": "brands",
+      "definition": "burning sticks; firebrands"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss65",
+      "line": 240,
+      "phrase": "forms",
+      "definition": "benches; long seats"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss66",
+      "line": 241,
+      "phrase": "Mischief, thou art afoot",
+      "definition": "mischief is now loose and moving — Antony's grim satisfaction as the mob runs riot"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss67",
+      "line": 248,
+      "phrase": "Fortune is merry",
+      "definition": "Fortune (the goddess of chance) is in a generous mood"
+    },
+    {
+      "id": "julius_caesar_act3_scene2_gloss68",
+      "line": 252,
+      "phrase": "Belike",
+      "definition": "probably; it seems likely"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "julius_caesar_act3_scene2_ann1",
+      "line_start": 11,
+      "line_end": 48,
+      "citation_display": "Julius Caesar 3.2.11–48",
+      "category": "close_reading",
+      "title": "Brutus in prose: the oration that tries to be a philosophical proof",
+      "body": "Brutus speaks his funeral oration in prose. This is the play's single most important formal decision. In Elizabethan dramatic convention, prose carries one of several meanings — the low-class, the mad, the comic, the deliberative, the philosophical. In Brutus's case the choice signals rational sincerity: he is offering his reasons, not his passions. The oration is constructed as a series of balanced antitheses ('Not that I loved Caesar less, but that I loved Rome more'), rhetorical questions ('Who is here so base that would be a bondman?'), and conditional self-offerings ('I have done no more to Caesar than you shall do to Brutus').\n\nThe structure is formal: it presents itself as a philosophical demonstration rather than a speech. The crowd's response is its first-order test. The citizens do cheer ('Live, Brutus! live, live!') but then, in the play's most unsettling democratic moment, one of them proposes 'Let him be Caesar.' Brutus has killed a man for approaching Caesarhood; the crowd offers the same status to Brutus seconds after the speech. Shakespeare is showing us something uncomfortable about the audience's real posture: they cheer the speaker, not the argument. The abstraction of Brutus's reasoning was never going to hold against the crowd's appetite for figures to venerate.\n\nNotice too the word 'lovers' (L11). It is the single most load-bearing word in the speech, and modern readers routinely misread it. 'Romans, countrymen, and lovers' does not mean what it would mean in a contemporary novel; 'lover' in Elizabethan usage is primarily 'devoted friend, well-wisher.' Brutus is addressing three categories of civic allegiance — citizens (Romans), native-born fellows (countrymen), and dear friends (lovers). The tonal register of the opening depends on hearing this correctly.",
+      "sources": [
+        "Wolfgang Clemen, *The Development of Shakespeare's Imagery* (1951)",
+        "Gary Wills, *Rome and Rhetoric: Shakespeare's Julius Caesar* (2011)",
+        "OED, 'lover, n.' §1.a"
+      ]
+    },
+    {
+      "id": "julius_caesar_act3_scene2_ann2",
+      "line_start": 66,
+      "line_end": 214,
+      "citation_display": "Julius Caesar 3.2.66–214",
+      "category": "close_reading",
+      "title": "Antony in verse: the speech that is taught in every rhetoric class",
+      "body": "Antony's oration is in verse. The formal contrast with Brutus's prose is structural, not decorative. Where Brutus signals rational deliberation, Antony signals elevated passion. But the verse itself does specific technical work that makes this the most-studied political speech in English.\n\n*The 'honourable' refrain.* Antony repeats 'honourable' six times in the speech's first movement (L75, 80, 86, 91, 116, 120). Each repetition is tonally more ironic than the last. By the fifth repetition, the word has been drained of its normal sincerity and become an accusation: Brutus cannot possibly be honourable if Caesar was not ambitious, and Caesar was, by each of the examples Antony supplies, not ambitious. The repetition is the argument. Shakespeare has shown us how a word, stripped of tonal confirmation, inverts.\n\n*The 'I am no orator, as Brutus is' trick.* While delivering one of the highest examples of English oratory ever composed, Antony claims not to be an orator. The paradox is rhetorical preterition — claiming not to say what you are in fact saying — and it protects Antony from the charge of manipulation even as he manipulates. Shakespeare lets the audience see the technique working: the Fourth Citizen's 'I fear there will a worse come in his place' (L104) is the exact response Antony wants, arrived at through a speech he is denying he is giving.\n\n*The physical props.* The will, the mantle, the body — each is produced at a calculated moment. The mantle carries specific wounds Antony attributes to specific daggers ('In this place ran Cassius' dagger through') even though Antony cannot actually know whose dagger made which cut. The attribution is fiction in service of concreteness. The body at the climax is simply shown: 'Here is himself, marr'd, as you see, with traitors.' Prose-Brutus gave them reasons; verse-Antony gives them an object to grieve.\n\n*The will.* Withheld, demanded, withheld again, finally read. The technique is classic preterition plus delay — making the audience co-author the speech's most incendiary material by begging for it. When the will is finally read (L225–234), the 75 drachmas and the public walks are anticlimactic; the real effect was the crowd's insistence on hearing it. Antony has taught them to demand their own inflammation.\n\n*The crowd's volatility.* The First Citizen begins with 'This Caesar was a tyrant' (L62); by L191 he is shouting 'Revenge! About! Seek! Burn! Fire! Kill! Slay!' In eleven minutes of stage-time Shakespeare has reversed the polity. The reversal is a warning about democratic rhetoric that is uncomfortable for democratic readers and was (some scholars argue) a specific warning to Shakespeare's Elizabethan audience about the fragility of a polity built on the passions of crowds.",
+      "sources": [
+        "Quintilian, *Institutio Oratoria* IX.iii (on figures of repetition)",
+        "Kenneth Burke, *A Rhetoric of Motives* (1950)",
+        "Gary Wills, *Rome and Rhetoric* (2011)",
+        "Stanley Fish, 'Rhetoric', in *Critical Terms for Literary Study* (1995)",
+        "Wayne A. Rebhorn (1990)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act3_scene2_ann3",
+      "line_start": 11,
+      "line_end": 11,
+      "citation_display": "Julius Caesar 3.2.11",
+      "category": "linguistic",
+      "title": "'Lovers' — the one-word gloss that keeps the opening from being comic",
+      "body": "Brutus's 'Romans, countrymen, and lovers!' is the phrase modern readers most often mishear. In Elizabethan usage 'lover' means primarily a devoted friend, a well-wisher, a trusted ally — not, except secondarily, a sexual partner. 'Lover' is how Artemidorus signs his warning letter in 2.3 ('Thy lover, Artemidorus') — the Greek teacher is not declaring romantic attachment to Caesar; he is declaring loyalty.\n\nShakespeare uses the word this way throughout the play. Cassius in 5.1 says 'Lovers in peace, lead on our days to age'; Brutus at 3.2 L38 calls Caesar 'my best lover' meaning his closest friend. The OED documents this sense (lover, n. §1.a) as standard from Old English through 1700.\n\nIf the reader imports the modern romantic sense, Brutus's opening becomes confusing or comic. If the reader hears the Elizabethan sense, the tricolon lands: citizens, fellow natives, trusted friends. The single most important gloss for any first-time reader of this speech is this one.",
+      "sources": [
+        "OED, 'lover, n.' §1.a",
+        "Gordon Williams, *A Glossary of Shakespeare's Sexual Language* (1997)",
+        "Eve Kosofsky Sedgwick, *Between Men* (1985) — on friendship/love vocabulary in early modern English"
+      ]
+    },
+    {
+      "id": "julius_caesar_act3_scene2_ann4",
+      "line_start": 42,
+      "line_end": 45,
+      "citation_display": "Julius Caesar 3.2.42–45",
+      "category": "thematic",
+      "title": "'Let him be Caesar': the crowd inverts Brutus's argument in one line",
+      "body": "Three citizens respond to Brutus's speech by proposing, in sequence, that Brutus be brought home in triumph, given a statue, and — 'Let him be Caesar.' The Fourth Citizen adds: 'Caesar's better parts / Shall be crown'd in Brutus.'\n\nBrutus has just finished killing Caesar to prevent any one man from being crowned Caesar. The crowd immediately offers Brutus the crown. Shakespeare is making a specific argument here — one uncomfortable for democratic readers and sharp for Elizabethan ones. The Caesar-impulse in Rome is not about Caesar; it is about the crowd's appetite for a single figure to venerate. Brutus's speech has not instructed the crowd in republican principle; it has simply introduced a new candidate. The rhetorical success of the oration is, in political terms, its failure.\n\nThis is where the play's political pessimism lives most clearly. Antony has not yet spoken; the reversal that the crowd will undergo is thus not solely Antony's work. Shakespeare has shown us, before Antony begins, that the crowd was always ready to transfer its veneration rather than to reject the category of veneration itself. Antony does not create the appetite; he feeds it.",
+      "sources": [
+        "Coppélia Kahn (1997)",
+        "David Norbrook, *Writing the English Republic* (1999)",
+        "Annabel Patterson, *Shakespeare and the Popular Voice* (1989)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act3_scene2_ann5",
+      "line_start": 74,
+      "line_end": 120,
+      "citation_display": "Julius Caesar 3.2.74–120",
+      "category": "close_reading",
+      "title": "'Honourable' said six times: rhetoric as tonal erosion",
+      "body": "Antony's refrain 'Brutus is an honourable man' occurs at lines 75, 80, 86, 91, (via 'honourable men' at) 116, and 120 — six times in about 45 lines. Each iteration is separated from the last by new evidence of Caesar's non-ambition: the ransoms, the poor's tears, the thrice-refused crown. The technique is classical: *paralipsis* (pretending to pass over something while stating it) combined with *incrementum* (accumulation of examples).\n\nThe effect is tonal erosion. The first 'honourable' is straight; the second carries doubt; by the fourth, the word means its opposite. Shakespeare is showing that the sincerity of language depends on a shared sense of match between tone and content. Strip the match and the word inverts. This is not subtle manipulation — the crowd's 'They were villains, murderers!' (L147) shows exactly when the inversion completes.\n\nAristotle in the *Rhetoric* (II.21) discusses this as a property of formal argument. Quintilian (IX.iii) formalises it as a figure. Antony's achievement is not invention but application — turning an Athenian figure on a Roman crowd in an English theatre. Shakespeare is writing a rhetorical primer here; the scene has been taught in every humanist curriculum in English for four centuries and shows no signs of losing its position.",
+      "sources": [
+        "Quintilian, *Institutio Oratoria* IX.iii.29–59",
+        "Richard Lanham, *A Handlist of Rhetorical Terms* (1991)",
+        "Gary Wills, *Rome and Rhetoric* (2011)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act3_scene2_ann6",
+      "line_start": 155,
+      "line_end": 200,
+      "citation_display": "Julius Caesar 3.2.155–200",
+      "category": "thematic",
+      "title": "The mantle, the wounds, the body: concrete objects for abstract grief",
+      "body": "Antony's second movement is built around three physical objects: Caesar's mantle (the bloodied cloak), the individual wounds, and finally the corpse itself. Where Brutus's prose was built from abstractions (ambition, honour, Rome, love), Antony's verse is built from specific things the audience can see.\n\nThe technique is epistemological. Abstract argument requires agreement on terms; concrete display requires only seeing. Antony shows the mantle and names Cassius's dagger-hole in it; he invites the crowd to 'behold / Our Caesar's vesture wounded' (L185–186); he finally pulls back the mantle and displays 'himself, marr'd, as you see, with traitors.' The crowd responds to this display, not to an argument. The first citizen's sequence — 'O piteous spectacle!' 'O noble Caesar!' 'O woeful day!' 'O traitors, villains!' — is not a reasoned response but a participation in display.\n\nShakespeare's implicit argument is that mass political persuasion is primarily visual. The funeral oration's verbal technique is the frame; the concrete display of wounds is the core. Modern political rhetoric has not moved on from this. The American advertising industry's discovery of photography in the 1950s is the same discovery: an abstract case for war, for a product, for a politician is enormously amplified by physical display. Antony in 3.2 is the West's first teacher of this.",
+      "sources": [
+        "Marshall McLuhan, *Understanding Media* (1964)",
+        "Stephen Greenblatt (1988)",
+        "Gail Kern Paster, *The Body Embarrassed* (1993)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act3_scene2_ann7",
+      "line_start": 201,
+      "line_end": 214,
+      "citation_display": "Julius Caesar 3.2.201–214",
+      "category": "close_reading",
+      "title": "'I am no orator' — preterition at its highest pitch",
+      "body": "Antony's disavowal of oratorical skill, delivered at the speech's emotional peak, is the single most studied instance of rhetorical preterition in English. Preterition is the figure in which the speaker denies saying what they are saying; its effect is to shelter the speaker from responsibility for the utterance while still producing it. 'I am no orator, as Brutus is; / But, as you know me all, a plain blunt man' is textbook.\n\nThe paradox works because the audience colludes in it. Having spent fifty lines being manipulated by a master, the crowd chooses to receive Antony's self-description as rough plain-speaking. Note the specific inversion Antony performs: Brutus, who was actually trying to argue from reasons, is tagged as 'orator'; Antony, who is manipulating the crowd with every device in classical rhetoric, is tagged as 'plain blunt man.' The inversion protects Antony from being examined for technique.\n\nShakespeare's placement of this moment matters. It comes after the mantle-and-wounds display (the visual appeal) and before the will (the transactional appeal). The 'plain blunt man' pose is the hinge between the two. It makes the crowd feel that what they have just seen was not rhetoric but confession, and thus primes them to receive the next, transactional move as simple generosity. Every part of the speech reinforces the others; preterition is the technique that makes the package look not like rhetoric but like life.",
+      "sources": [
+        "Kenneth Burke, *A Rhetoric of Motives* (1950)",
+        "Quintilian, *Institutio Oratoria* IX.ii.47–51",
+        "Richard Lanham (1991)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "julius_caesar_act3_scene2_q1",
+      "kind": "close_reading",
+      "prompt": "Brutus's oration is in prose; Antony's is in verse. The formal contrast signals:",
+      "options": [
+        "Only a printer's choice",
+        "Two rhetorical stances — Brutus's rational-philosophical (prose was the register of the learned and the deliberative); Antony's elevated-passionate (verse was the register of tragic heightening)",
+        "Brutus's lower social standing",
+        "Antony's greater knowledge"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 11,
+      "anchor_line_end": 120
+    },
+    {
+      "id": "julius_caesar_act3_scene2_q2",
+      "kind": "close_reading",
+      "prompt": "'Romans, countrymen, and lovers' — what does 'lovers' mean here?",
+      "options": [
+        "Romantic partners",
+        "Devoted friends, well-wishers — the primary Elizabethan sense of 'lover' (not romantic); the same usage Artemidorus makes in 2.3",
+        "Relatives by blood",
+        "Slaves"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 11,
+      "anchor_line_end": 11
+    },
+    {
+      "id": "julius_caesar_act3_scene2_q3",
+      "kind": "theme",
+      "prompt": "After Brutus's speech, the crowd proposes 'Let him be Caesar.' What does this reveal?",
+      "options": [
+        "That Brutus was misunderstood",
+        "That the Caesar-impulse in Rome is not about Caesar specifically — it is about the crowd's appetite for a single figure to venerate; Brutus's speech has supplied a new candidate rather than disabled the category",
+        "That the crowd is loyal to Brutus",
+        "That the crowd wants more speeches"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 42,
+      "anchor_line_end": 45
+    },
+    {
+      "id": "julius_caesar_act3_scene2_q4",
+      "kind": "close_reading",
+      "prompt": "Antony repeats 'honourable' six times in his speech's first movement. The effect is:",
+      "options": [
+        "Sincere praise",
+        "Tonal erosion — stripped of matching tone, the word inverts; by the fifth repetition 'honourable' has become an accusation",
+        "Religious invocation",
+        "Verbal tic"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 75,
+      "anchor_line_end": 120
+    },
+    {
+      "id": "julius_caesar_act3_scene2_q5",
+      "kind": "close_reading",
+      "prompt": "'I am no orator, as Brutus is' is an example of:",
+      "options": [
+        "Straightforward humility",
+        "Rhetorical preterition — the figure in which the speaker denies saying what they are saying; delivered at the emotional peak of a masterly speech, it inverts the actual roles (Brutus, who argued, is the 'orator'; Antony, who manipulates, is the 'plain blunt man')",
+        "Genuine confession of inadequacy",
+        "Flattery of Brutus"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 201,
+      "anchor_line_end": 214
+    },
+    {
+      "id": "julius_caesar_act3_scene2_q6",
+      "kind": "inference",
+      "prompt": "Why does Antony withhold and then reveal the will?",
+      "options": [
+        "He forgot he had it",
+        "To make the crowd co-author their own inflammation — by insisting on hearing the will, they feel they chose the incendiary material; the 75-drachma bequest is anticlimax, the demand to hear it was the real effect",
+        "Roman law required sequential reading",
+        "To buy time"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 121,
+      "anchor_line_end": 234
+    },
+    {
+      "id": "julius_caesar_act3_scene2_q7",
+      "kind": "theme",
+      "prompt": "Why is 3.2 taught in every rhetoric class in the English-speaking world?",
+      "options": [
+        "Because it is funny",
+        "Because it demonstrates, in one scene, the full technical apparatus of mass political persuasion — formal register (prose/verse), ironic refrain, preterition, concrete display, transactional reveal — all in active use on a volatile crowd",
+        "Because it is short",
+        "Because the Latin is difficult"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 11,
+      "anchor_line_end": 242
+    },
+    {
+      "id": "julius_caesar_act3_scene2_q8",
+      "kind": "inference",
+      "prompt": "Shakespeare's argument about democratic rhetoric in this scene is:",
+      "options": [
+        "Optimistic — the crowd ultimately reaches the right conclusion",
+        "Pessimistic and uncomfortable — the crowd is volatile, its veneration transferable, and a sufficiently skilled rhetorician can reverse its politics in the space of one speech",
+        "Neutral on political questions",
+        "That Brutus is the better speaker"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 66,
+      "anchor_line_end": 242
+    },
+    {
+      "id": "julius_caesar_act3_scene2_q9",
+      "kind": "close_reading",
+      "prompt": "What specific claim is Antony making when he attributes particular wounds to particular daggers ('In this place ran Cassius' dagger through')?",
+      "options": [
+        "Factual assertion, backed by evidence",
+        "Rhetorical fiction in service of concreteness — Antony cannot in fact know whose dagger made which cut; the named attribution makes abstract betrayal into personal injury",
+        "Medical evidence",
+        "Legal testimony"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 163,
+      "anchor_line_end": 170
+    }
+  ]
+}

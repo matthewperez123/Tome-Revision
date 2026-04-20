@@ -1,0 +1,75 @@
+{
+  "section_id": "hamlet_act4_scene7",
+  "trials": [
+    {
+      "kind": "inference",
+      "prompt": "How does Claudius convert Laertes's revenge into his own instrument?",
+      "options": [
+        "By offering Laertes the throne.",
+        "By leading Laertes to propose a treacherous fencing match that Claudius in fact designed.",
+        "By forging a letter that incriminates Hamlet.",
+        "By locking Laertes in a dungeon until he agrees."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 60,
+      "anchor_line_end": 140
+    },
+    {
+      "kind": "comprehension",
+      "prompt": "What does Laertes propose to do to the rapier for the duel?",
+      "options": [
+        "Polish it with a secret rust remover.",
+        "Anoint its tip with a poison bought from a mountebank, so that even a scratch will kill.",
+        "Weigh it down with lead to favor him in the strike.",
+        "Have it blessed by a priest so God will favor his cause."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 118,
+      "anchor_line_end": 128
+    },
+    {
+      "kind": "comprehension",
+      "prompt": "What backup plan does Claudius propose if Laertes's poisoned rapier fails?",
+      "options": [
+        "A second swordsman hidden in the gallery.",
+        "A poisoned cup of wine for Hamlet to drink 'for the nonce.'",
+        "A carriage accident on the return from the duel.",
+        "A hidden pistol behind the arras."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 128,
+      "anchor_line_end": 138
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "What peculiar aspect of Gertrude's speech reporting Ophelia's drowning has puzzled critics?",
+      "options": [
+        "It is spoken in prose rather than verse.",
+        "She describes the death in precise, pastoral detail as if she had witnessed it, though she cannot have been present.",
+        "It contains anachronistic references to modern flowers.",
+        "It is delivered in Latin."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 140,
+      "anchor_line_end": 162
+    },
+    {
+      "kind": "theme",
+      "prompt": "What does the metaphor of a 'tree' in Gertrude's speech — the 'envious sliver' that breaks — suggest about Ophelia's death?",
+      "options": [
+        "That the death is partly a natural accident and not clearly a suicide.",
+        "That Ophelia was deliberately pushed by an unseen assailant.",
+        "That the tree itself is a metaphor for King Hamlet's spirit.",
+        "That the willow carries biblical weight as a symbol of mourning."
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 25,
+      "anchor_line_start": 150,
+      "anchor_line_end": 160
+    }
+  ]
+}

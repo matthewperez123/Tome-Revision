@@ -1,0 +1,587 @@
+{
+  "section_id": "king_lear_act5_scene1",
+  "work_id": "king-lear",
+  "sequence": 24,
+  "act": 5,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "The British camp near Dover",
+  "line_count": 78,
+  "word_count": 544,
+  "est_read_minutes": 3,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "EDMUND",
+      "text": "Know of the duke if his last purpose hold,"
+    },
+    {
+      "number": 2,
+      "speaker": "EDMUND",
+      "text": "Or whether since he is advised by aught"
+    },
+    {
+      "number": 3,
+      "speaker": "EDMUND",
+      "text": "To change the course: he’s full of alteration"
+    },
+    {
+      "number": 4,
+      "speaker": "EDMUND",
+      "text": "And self-reproving: bring his constant pleasure. To a Gentleman, who goes out."
+    },
+    {
+      "number": 5,
+      "speaker": "REGAN",
+      "text": "Our sister’s man is certainly miscarried."
+    },
+    {
+      "number": 5,
+      "speaker": "EDMUND",
+      "text": "’Tis to be doubted, madam."
+    },
+    {
+      "number": 6,
+      "speaker": "REGAN",
+      "text": "Now, sweet lord,"
+    },
+    {
+      "number": 7,
+      "speaker": "REGAN",
+      "text": "You know the goodness I intend upon you:"
+    },
+    {
+      "number": 8,
+      "speaker": "REGAN",
+      "text": "Tell me—but truly—but then speak the truth,"
+    },
+    {
+      "number": 9,
+      "speaker": "REGAN",
+      "text": "Do you not love my sister?"
+    },
+    {
+      "number": 9,
+      "speaker": "EDMUND",
+      "text": "In honour’d love."
+    },
+    {
+      "number": 10,
+      "speaker": "REGAN",
+      "text": "But have you never found my brother’s way"
+    },
+    {
+      "number": 11,
+      "speaker": "REGAN",
+      "text": "To the forfended place?"
+    },
+    {
+      "number": 11,
+      "speaker": "EDMUND",
+      "text": "That thought abuses you."
+    },
+    {
+      "number": 12,
+      "speaker": "REGAN",
+      "text": "I am doubtful that you have been conjunct"
+    },
+    {
+      "number": 13,
+      "speaker": "REGAN",
+      "text": "And bosom’d with her, as far as we call hers."
+    },
+    {
+      "number": 14,
+      "speaker": "EDMUND",
+      "text": "No, by mine honour, madam."
+    },
+    {
+      "number": 15,
+      "speaker": "REGAN",
+      "text": "I never shall endure her: dear my lord,"
+    },
+    {
+      "number": 16,
+      "speaker": "REGAN",
+      "text": "Be not familiar with her."
+    },
+    {
+      "number": 16,
+      "speaker": "EDMUND",
+      "text": "Fear me not:"
+    },
+    {
+      "number": 17,
+      "speaker": "EDMUND",
+      "text": "She and the duke her husband!"
+    },
+    {
+      "number": 18,
+      "speaker": "GONERIL",
+      "text": "I had rather lose the battle than that sister"
+    },
+    {
+      "number": 19,
+      "speaker": "GONERIL",
+      "text": "Should loosen him and me."
+    },
+    {
+      "number": 19,
+      "speaker": "ALBANY",
+      "text": "Our very loving sister, well be-met."
+    },
+    {
+      "number": 20,
+      "speaker": "ALBANY",
+      "text": "Sir, this I hear; the king is come to his daughter,"
+    },
+    {
+      "number": 21,
+      "speaker": "ALBANY",
+      "text": "With others whom the rigor of our state"
+    },
+    {
+      "number": 22,
+      "speaker": "ALBANY",
+      "text": "Forced to cry out. Where I could not be honest,"
+    },
+    {
+      "number": 23,
+      "speaker": "ALBANY",
+      "text": "I never yet was valiant: for this business,"
+    },
+    {
+      "number": 24,
+      "speaker": "ALBANY",
+      "text": "It toucheth us, as France invades our land,"
+    },
+    {
+      "number": 25,
+      "speaker": "ALBANY",
+      "text": "Not bolds the king, with others, whom, I fear,"
+    },
+    {
+      "number": 26,
+      "speaker": "ALBANY",
+      "text": "Most just and heavy causes make oppose."
+    },
+    {
+      "number": 27,
+      "speaker": "EDMUND",
+      "text": "Sir, you speak nobly."
+    },
+    {
+      "number": 27,
+      "speaker": "REGAN",
+      "text": "Why is this reason’d?"
+    },
+    {
+      "number": 28,
+      "speaker": "GONERIL",
+      "text": "Combine together ’gainst the enemy;"
+    },
+    {
+      "number": 29,
+      "speaker": "GONERIL",
+      "text": "For these domestic and particular broils"
+    },
+    {
+      "number": 30,
+      "speaker": "GONERIL",
+      "text": "Are not the question here."
+    },
+    {
+      "number": 30,
+      "speaker": "ALBANY",
+      "text": "Let’s then determine"
+    },
+    {
+      "number": 31,
+      "speaker": "ALBANY",
+      "text": "With the ancient of war on our proceedings."
+    },
+    {
+      "number": 32,
+      "speaker": "EDMUND",
+      "text": "I shall attend you presently at your tent."
+    },
+    {
+      "number": 33,
+      "speaker": "REGAN",
+      "text": "Sister, you’ll go with us?"
+    },
+    {
+      "number": 33,
+      "speaker": "GONERIL",
+      "text": "No."
+    },
+    {
+      "number": 34,
+      "speaker": "REGAN",
+      "text": "’Tis most convenient; pray you, go with us."
+    },
+    {
+      "number": 35,
+      "speaker": "GONERIL",
+      "text": "O, ho, I know the riddle.—I will go."
+    },
+    {
+      "number": 36,
+      "speaker": "EDGAR",
+      "text": "If e’er your grace had speech with man so poor,"
+    },
+    {
+      "number": 37,
+      "speaker": "EDGAR",
+      "text": "Hear me one word."
+    },
+    {
+      "number": 37,
+      "speaker": "ALBANY",
+      "text": "I’ll overtake you. Speak."
+    },
+    {
+      "number": 38,
+      "speaker": "EDGAR",
+      "text": "Before you fight the battle, ope this letter."
+    },
+    {
+      "number": 39,
+      "speaker": "EDGAR",
+      "text": "If you have victory, let the trumpet sound"
+    },
+    {
+      "number": 40,
+      "speaker": "EDGAR",
+      "text": "For him that brought it: wretched though I seem,"
+    },
+    {
+      "number": 41,
+      "speaker": "EDGAR",
+      "text": "I can produce a champion that will prove"
+    },
+    {
+      "number": 42,
+      "speaker": "EDGAR",
+      "text": "What is avouched there. If you miscarry,"
+    },
+    {
+      "number": 43,
+      "speaker": "EDGAR",
+      "text": "Your business of the world hath so an end,"
+    },
+    {
+      "number": 44,
+      "speaker": "EDGAR",
+      "text": "And machination ceases. Fortune love you."
+    },
+    {
+      "number": 45,
+      "speaker": "ALBANY",
+      "text": "Stay till I have read the letter."
+    },
+    {
+      "number": 46,
+      "speaker": "EDGAR",
+      "text": "I was forbid it."
+    },
+    {
+      "number": 47,
+      "speaker": "EDGAR",
+      "text": "When time shall serve, let but the herald cry,"
+    },
+    {
+      "number": 48,
+      "speaker": "EDGAR",
+      "text": "And I’ll appear again."
+    },
+    {
+      "number": 49,
+      "speaker": "ALBANY",
+      "text": "Why, fare thee well: I will o’erlook thy paper."
+    },
+    {
+      "number": 50,
+      "speaker": "EDMUND",
+      "text": "The enemy’s in view; draw up your powers."
+    },
+    {
+      "number": 51,
+      "speaker": "EDMUND",
+      "text": "Here is the guess of their true strength and forces"
+    },
+    {
+      "number": 52,
+      "speaker": "EDMUND",
+      "text": "By diligent discovery; but your haste"
+    },
+    {
+      "number": 53,
+      "speaker": "EDMUND",
+      "text": "Is now urged on you."
+    },
+    {
+      "number": 53,
+      "speaker": "ALBANY",
+      "text": "We will greet the time."
+    },
+    {
+      "number": 54,
+      "speaker": "EDMUND",
+      "text": "To both these sisters have I sworn my love;"
+    },
+    {
+      "number": 55,
+      "speaker": "EDMUND",
+      "text": "Each jealous of the other, as the stung"
+    },
+    {
+      "number": 56,
+      "speaker": "EDMUND",
+      "text": "Are of the adder. Which of them shall I take?"
+    },
+    {
+      "number": 57,
+      "speaker": "EDMUND",
+      "text": "Both? one? or neither? Neither can be enjoy’d,"
+    },
+    {
+      "number": 58,
+      "speaker": "EDMUND",
+      "text": "If both remain alive: to take the widow"
+    },
+    {
+      "number": 59,
+      "speaker": "EDMUND",
+      "text": "Exasperates, makes mad her sister Goneril;"
+    },
+    {
+      "number": 60,
+      "speaker": "EDMUND",
+      "text": "And hardly shall I carry out my side,"
+    },
+    {
+      "number": 61,
+      "speaker": "EDMUND",
+      "text": "Her husband being alive. Now then we’ll use"
+    },
+    {
+      "number": 62,
+      "speaker": "EDMUND",
+      "text": "His countenance for the battle; which being done,"
+    },
+    {
+      "number": 63,
+      "speaker": "EDMUND",
+      "text": "Let her who would be rid of him devise"
+    },
+    {
+      "number": 64,
+      "speaker": "EDMUND",
+      "text": "His speedy taking off. As for the mercy"
+    },
+    {
+      "number": 65,
+      "speaker": "EDMUND",
+      "text": "Which he intends to Lear and to Cordelia,"
+    },
+    {
+      "number": 66,
+      "speaker": "EDMUND",
+      "text": "The battle done, and they within our power,"
+    },
+    {
+      "number": 67,
+      "speaker": "EDMUND",
+      "text": "Shall never see his pardon; for my state"
+    },
+    {
+      "number": 68,
+      "speaker": "EDMUND",
+      "text": "Stands on me to defend, not to debate."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter, with drum and colours, Edmund, Regan, Gentlemen, and Soldiers."
+    },
+    {
+      "after_line": 17,
+      "text": "Enter, with drum and colours, Albany, Goneril, and Soldiers."
+    },
+    {
+      "after_line": 18,
+      "text": "Aside."
+    },
+    {
+      "after_line": 35,
+      "text": "Aside."
+    },
+    {
+      "after_line": 35,
+      "text": "As they are going out, enter Edgar disguised."
+    },
+    {
+      "after_line": 37,
+      "text": "Exeunt all but Albany and Edgar."
+    },
+    {
+      "after_line": 49,
+      "text": "Exit Edgar."
+    },
+    {
+      "after_line": 49,
+      "text": "Reenter Edmund."
+    },
+    {
+      "after_line": 53,
+      "text": "Exit."
+    },
+    {
+      "after_line": 68,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act5_scene1_gloss1",
+      "line": 1,
+      "phrase": "know",
+      "definition": "ascertain"
+    },
+    {
+      "id": "king_lear_act5_scene1_gloss2",
+      "line": 4,
+      "phrase": "constant pleasure",
+      "definition": "fixed intention"
+    },
+    {
+      "id": "king_lear_act5_scene1_gloss6",
+      "line": 4,
+      "phrase": "self-reproving",
+      "definition": "Albany's scruple — he's uneasy about this war"
+    },
+    {
+      "id": "king_lear_act5_scene1_gloss7",
+      "line": 28,
+      "phrase": "domestic and particular broils",
+      "definition": "private quarrels — Albany distinguishes public from private cause"
+    },
+    {
+      "id": "king_lear_act5_scene1_gloss8",
+      "line": 30,
+      "phrase": "the ancient of war",
+      "definition": "the veteran officers"
+    },
+    {
+      "id": "king_lear_act5_scene1_gloss9",
+      "line": 54,
+      "phrase": "jealous",
+      "definition": "suspicious"
+    },
+    {
+      "id": "king_lear_act5_scene1_gloss10",
+      "line": 61,
+      "phrase": "his countenance",
+      "definition": "his countenance / authority"
+    },
+    {
+      "id": "king_lear_act5_scene1_gloss11",
+      "line": 56,
+      "phrase": "Both? one? or neither?",
+      "definition": "Edmund's cool calculation between Goneril and Regan"
+    },
+    {
+      "id": "king_lear_act5_scene1_gloss12",
+      "line": 59,
+      "phrase": "carry out my side",
+      "definition": "carry out my purpose"
+    },
+    {
+      "id": "king_lear_act5_scene1_gloss13",
+      "line": 66,
+      "phrase": "state / Stands",
+      "definition": "my fortunes depend on this"
+    },
+    {
+      "id": "king_lear_act5_scene1_gloss15",
+      "line": 10,
+      "phrase": "forfended",
+      "definition": "forbidden"
+    },
+    {
+      "id": "king_lear_act5_scene1_gloss16",
+      "line": 15,
+      "phrase": "Fear not",
+      "definition": "don't worry"
+    },
+    {
+      "id": "king_lear_act5_scene1_gloss17",
+      "line": 15,
+      "phrase": "familiar",
+      "definition": "customary; proper"
+    },
+    {
+      "id": "king_lear_act5_scene1_gloss18",
+      "line": 25,
+      "phrase": "cause",
+      "definition": "reason; concern"
+    },
+    {
+      "id": "king_lear_act5_scene1_gloss19",
+      "line": 14,
+      "phrase": "I never shall endure her",
+      "definition": "Regan about Goneril — the rivalry explicit"
+    },
+    {
+      "id": "king_lear_act5_scene1_gloss21",
+      "line": 54,
+      "phrase": "jealous",
+      "definition": "suspicious — Edmund's coolness about Goneril and Regan"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act5_scene1_ann1",
+      "line_start": 55,
+      "line_end": 78,
+      "citation_display": "King Lear 5.1.55–78",
+      "category": "structural",
+      "title": "Edmund's soliloquy — 'Both? one? or neither?'",
+      "body": "Edmund's 5.1 soliloquy is the play's coldest calculation: 'To both these sisters have I sworn my love; / Each jealous of the other... Which of them shall I take? / Both? one? or neither?' He concludes he will 'carry on my side' regardless of outcome — let the sisters kill each other and see who's left. This is sociopathic calculation as dramatic soliloquy. What makes the speech theatrically alive is Edmund's evident enjoyment; he is not tormented, he is amused. Shakespeare gives his villain a Machiavellian pleasure that neither the sisters nor Cornwall possess — they rage, he calculates. That calculative pleasure is also what undoes him: his very coolness leaves him open to being moved at the end ('some good I mean to do, / Despite of mine own nature'), a moment of late conscience that would have been unavailable to a villain of pure rage.",
+      "sources": [
+        "Jonathan Dollimore, Radical Tragedy (1984)"
+      ]
+    },
+    {
+      "id": "king_lear_act5_scene1_ann2",
+      "line_start": 1,
+      "line_end": 20,
+      "citation_display": "King Lear 5.1.1–20",
+      "category": "structural",
+      "title": "Edmund between sisters — Shakespeare's coldest triangle",
+      "body": "The first twenty lines of 5.1 stage an immense amount of dramatic information in a few gestures: Regan asks whether Edmund has slept with Goneril; Edmund denies it with a half-truth; Goneril arrives moments later with an aside ('I had rather lose the battle than that sister / Should loosen him and me'). The sexual triangle is fully alive. Edmund's coolness between them is the play's most economical study of how to manipulate two rivals simultaneously — tell each what she wants to hear, let them act on the assumption you prefer her, and watch them destroy each other. The scene also advances the military: the armies are about to engage. Shakespeare interleaves erotic plot and battlefield plot in a way that makes each feel consequent on the other.",
+      "sources": [
+        "Frank Kermode, Shakespeare's Language (2000)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act5_scene1_q1",
+      "kind": "close_reading",
+      "prompt": "What tone does Edmund's 'Both? one? or neither?' soliloquy strike?",
+      "options": [
+        "Anguished indecision",
+        "Cold calculation with evident enjoyment — Edmund's Machiavellian pleasure is what distinguishes him from the raging sisters and Cornwall",
+        "Regret",
+        "Boredom"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 55,
+      "anchor_line_end": 78
+    }
+  ]
+}

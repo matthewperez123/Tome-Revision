@@ -1,0 +1,269 @@
+{
+  "section_id": "macbeth_act3_scene3",
+  "work_id": "macbeth",
+  "sequence": 14,
+  "act": 3,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "A park near the palace",
+  "line_count": 32,
+  "word_count": 182,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "FIRST MURDERER",
+      "text": "But who did bid thee join with us?"
+    },
+    {
+      "number": 2,
+      "speaker": "THIRD MURDERER",
+      "text": "Macbeth."
+    },
+    {
+      "number": 3,
+      "speaker": "SECOND MURDERER",
+      "text": "He needs not our mistrust, since he delivers"
+    },
+    {
+      "number": 4,
+      "speaker": "SECOND MURDERER",
+      "text": "Our offices and what we have to do"
+    },
+    {
+      "number": 5,
+      "speaker": "SECOND MURDERER",
+      "text": "To the direction just."
+    },
+    {
+      "number": 5,
+      "speaker": "FIRST MURDERER",
+      "text": "Then stand with us."
+    },
+    {
+      "number": 6,
+      "speaker": "FIRST MURDERER",
+      "text": "The west yet glimmers with some streaks of day:"
+    },
+    {
+      "number": 7,
+      "speaker": "FIRST MURDERER",
+      "text": "Now spurs the lated traveller apace"
+    },
+    {
+      "number": 8,
+      "speaker": "FIRST MURDERER",
+      "text": "To gain the timely inn; and near approaches"
+    },
+    {
+      "number": 9,
+      "speaker": "FIRST MURDERER",
+      "text": "The subject of our watch."
+    },
+    {
+      "number": 9,
+      "speaker": "THIRD MURDERER",
+      "text": "Hark! I hear horses."
+    },
+    {
+      "number": 10,
+      "speaker": "BANQUO",
+      "text": "Give us a light there, ho!"
+    },
+    {
+      "number": 10,
+      "speaker": "SECOND MURDERER",
+      "text": "Then ’tis he: the rest"
+    },
+    {
+      "number": 11,
+      "speaker": "SECOND MURDERER",
+      "text": "That are within the note of expectation"
+    },
+    {
+      "number": 12,
+      "speaker": "SECOND MURDERER",
+      "text": "Already are i’ the court."
+    },
+    {
+      "number": 12,
+      "speaker": "FIRST MURDERER",
+      "text": "His horses go about."
+    },
+    {
+      "number": 13,
+      "speaker": "THIRD MURDERER",
+      "text": "Almost a mile: but he does usually,"
+    },
+    {
+      "number": 14,
+      "speaker": "THIRD MURDERER",
+      "text": "So all men do, from hence to the palace gate"
+    },
+    {
+      "number": 15,
+      "speaker": "THIRD MURDERER",
+      "text": "Make it their walk."
+    },
+    {
+      "number": 15,
+      "speaker": "SECOND MURDERER",
+      "text": "A light, a light!"
+    },
+    {
+      "number": 16,
+      "speaker": "THIRD MURDERER",
+      "text": "’Tis he."
+    },
+    {
+      "number": 16,
+      "speaker": "FIRST MURDERER",
+      "text": "Stand to’t."
+    },
+    {
+      "number": 17,
+      "speaker": "BANQUO",
+      "text": "It will be rain to-night."
+    },
+    {
+      "number": 18,
+      "speaker": "FIRST MURDERER",
+      "text": "Let it come down. They set upon Banquo."
+    },
+    {
+      "number": 19,
+      "speaker": "BANQUO",
+      "text": "O, treachery! Fly, good Fleance, fly, fly, fly!"
+    },
+    {
+      "number": 20,
+      "speaker": "BANQUO",
+      "text": "Thou mayst revenge. O slave!"
+    },
+    {
+      "number": 20,
+      "speaker": "THIRD MURDERER",
+      "text": "Who did strike out the light?"
+    },
+    {
+      "number": 21,
+      "speaker": "FIRST MURDERER",
+      "text": "Was’t not the way?"
+    },
+    {
+      "number": 22,
+      "speaker": "THIRD MURDERER",
+      "text": "There’s but one down; the son is fled."
+    },
+    {
+      "number": 23,
+      "speaker": "SECOND MURDERER",
+      "text": "We have lost"
+    },
+    {
+      "number": 24,
+      "speaker": "SECOND MURDERER",
+      "text": "Best half of our affair."
+    },
+    {
+      "number": 25,
+      "speaker": "FIRST MURDERER",
+      "text": "Well, let’s away, and say how much is done."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter three Murderers."
+    },
+    {
+      "after_line": 10,
+      "text": "Within."
+    },
+    {
+      "after_line": 15,
+      "text": "Enter Banquo, and Fleance with a torch."
+    },
+    {
+      "after_line": 20,
+      "text": "Dies. Fleance escapes."
+    },
+    {
+      "after_line": 25,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act3_scene3_gloss2",
+      "line": 5,
+      "phrase": "stand with us",
+      "definition": "agree with us"
+    },
+    {
+      "id": "macbeth_act3_scene3_gloss3",
+      "line": 7,
+      "phrase": "lated traveller",
+      "definition": "a late traveler caught by nightfall"
+    },
+    {
+      "id": "macbeth_act3_scene3_gloss4",
+      "line": 18,
+      "phrase": "Fly, good Fleance, fly, fly, fly!",
+      "definition": "Banquo's dying command — and the prophecy's preservation; Fleance's escape means the Stuart line will eventually reach the throne"
+    },
+    {
+      "id": "macbeth_act3_scene3_gloss5",
+      "line": 23,
+      "phrase": "Best half of our affair",
+      "definition": "the more important part of our task — killing Fleance — is lost"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act3_scene3_ann1",
+      "line_start": 14,
+      "line_end": 22,
+      "citation_display": "Macbeth 3.3.14–22",
+      "category": "structural",
+      "title": "Fleance escapes",
+      "body": "The murder of Banquo is staged; the escape of Fleance is offstage but louder. 'Fly, good Fleance, fly, fly, fly!' — the dying father's command preserves the prophecy. The third murderer (whose identity is never explained — some editors suspect Macbeth himself, disguised) lets the boy go by accident.\n\nFleance's flight is structurally the whole point. If Macbeth had succeeded, the Stuart line would have been aborted. James I's claim to the throne ran through Banquo (via the historical Fleance) to Robert II and the Stuart kings. The audience at the 1606 performance knew that the escaping boy was, in political time, their own king's ancestor. The tragedy of Macbeth is also the legitimation narrative of the reigning monarch.\n\nThe scene is short — 22 lines — but its consequence dominates the rest of the play and much of British political history.",
+      "sources": [
+        "Henry N. Paul, *The Royal Play of Macbeth* (1950)",
+        "Alvin Kernan, *Shakespeare, the King's Playwright* (1995)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act3_scene3_q1",
+      "kind": "structural",
+      "prompt": "Why does Fleance's escape matter?",
+      "options": [
+        "He is a main character",
+        "He preserves the Banquo-Stuart line — James I claimed descent from Banquo; the prophecy is still in force",
+        "Nothing significant",
+        "Because he has a sword"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 14,
+      "anchor_line_end": 22
+    },
+    {
+      "id": "macbeth_act3_scene3_q2",
+      "kind": "comprehension",
+      "prompt": "A third murderer appears unexpectedly. Editorial speculation sometimes identifies him as:",
+      "options": [
+        "The ghost of Duncan",
+        "Macbeth himself, disguised — a persistent interpretive theory",
+        "The First Witch",
+        "Malcolm"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 1,
+      "anchor_line_end": 10
+    }
+  ]
+}

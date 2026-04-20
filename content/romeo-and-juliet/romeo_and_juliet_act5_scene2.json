@@ -1,0 +1,270 @@
+{
+  "section_id": "romeo_and_juliet_act5_scene2",
+  "work_id": "romeo-and-juliet",
+  "sequence": 25,
+  "act": 5,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "Friar Laurence's cell",
+  "line_count": 30,
+  "word_count": 222,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "FRIAR JOHN",
+      "text": "Holy Franciscan friar! brother, ho!"
+    },
+    {
+      "number": 2,
+      "speaker": "FRIAR LAURENCE",
+      "text": "This same should be the voice of Friar John."
+    },
+    {
+      "number": 3,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Welcome from Mantua: what says Romeo?"
+    },
+    {
+      "number": 4,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Or, if his mind be writ, give me his letter."
+    },
+    {
+      "number": 5,
+      "speaker": "FRIAR JOHN",
+      "text": "Going to find a bare-foot brother out"
+    },
+    {
+      "number": 6,
+      "speaker": "FRIAR JOHN",
+      "text": "One of our order, to associate me,"
+    },
+    {
+      "number": 7,
+      "speaker": "FRIAR JOHN",
+      "text": "Here in this city visiting the sick,"
+    },
+    {
+      "number": 8,
+      "speaker": "FRIAR JOHN",
+      "text": "And finding him, the searchers of the town,"
+    },
+    {
+      "number": 9,
+      "speaker": "FRIAR JOHN",
+      "text": "Suspecting that we both were in a house"
+    },
+    {
+      "number": 10,
+      "speaker": "FRIAR JOHN",
+      "text": "Where the infectious pestilence did reign,"
+    },
+    {
+      "number": 11,
+      "speaker": "FRIAR JOHN",
+      "text": "Seal’d up the doors, and would not let us forth;"
+    },
+    {
+      "number": 12,
+      "speaker": "FRIAR JOHN",
+      "text": "So that my speed to Mantua there was stay’d."
+    },
+    {
+      "number": 13,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Who bare my letter, then, to Romeo?"
+    },
+    {
+      "number": 14,
+      "speaker": "FRIAR JOHN",
+      "text": "I could not send it—here it is again—"
+    },
+    {
+      "number": 15,
+      "speaker": "FRIAR JOHN",
+      "text": "Nor get a messenger to bring it thee,"
+    },
+    {
+      "number": 16,
+      "speaker": "FRIAR JOHN",
+      "text": "So fearful were they of infection."
+    },
+    {
+      "number": 16,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Unhappy fortune! by my brotherhood,"
+    },
+    {
+      "number": 17,
+      "speaker": "FRIAR LAURENCE",
+      "text": "The letter was not nice but full of charge"
+    },
+    {
+      "number": 18,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Of dear import, and the neglecting it"
+    },
+    {
+      "number": 19,
+      "speaker": "FRIAR LAURENCE",
+      "text": "May do much danger. Friar John, go hence;"
+    },
+    {
+      "number": 20,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Get me an iron crow, and bring it straight"
+    },
+    {
+      "number": 21,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Unto my cell."
+    },
+    {
+      "number": 22,
+      "speaker": "FRIAR JOHN",
+      "text": "Brother, I’ll go and bring it thee."
+    },
+    {
+      "number": 23,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Now must I to the monument alone;"
+    },
+    {
+      "number": 24,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Within three hours will fair Juliet wake:"
+    },
+    {
+      "number": 25,
+      "speaker": "FRIAR LAURENCE",
+      "text": "She will beshrew me much that Romeo"
+    },
+    {
+      "number": 26,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Hath had no notice of these accidents;"
+    },
+    {
+      "number": 27,
+      "speaker": "FRIAR LAURENCE",
+      "text": "But I will write again to Mantua,"
+    },
+    {
+      "number": 28,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And keep her at my cell till Romeo come;"
+    },
+    {
+      "number": 29,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Poor living corse, closed in a dead man’s tomb!"
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Friar John."
+    },
+    {
+      "after_line": 1,
+      "text": "Enter Friar Laurence."
+    },
+    {
+      "after_line": 22,
+      "text": "Exit."
+    },
+    {
+      "after_line": 29,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act5_scene2_gloss1",
+      "line": 1,
+      "phrase": "Holy Franciscan friar!",
+      "definition": "Friar John returns with the undelivered letter"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene2_gloss2",
+      "line": 5,
+      "phrase": "bare-foot brother",
+      "definition": "Franciscan friar — the order wore sandals"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene2_gloss3",
+      "line": 6,
+      "phrase": "associate",
+      "definition": "accompany; the Franciscan rule required going in pairs"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene2_gloss4",
+      "line": 8,
+      "phrase": "searchers of the town",
+      "definition": "plague-inspectors"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene2_gloss5",
+      "line": 10,
+      "phrase": "infectious pestilence",
+      "definition": "the plague — the quarantine that blocked the letter's delivery"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene2_gloss6",
+      "line": 17,
+      "phrase": "nice",
+      "definition": "trivial"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene2_gloss7",
+      "line": 18,
+      "phrase": "neglecting it",
+      "definition": "failing to deliver it"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene2_gloss8",
+      "line": 20,
+      "phrase": "iron crow",
+      "definition": "iron crowbar — to pry open the tomb"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene2_gloss9",
+      "line": 29,
+      "phrase": "living corse",
+      "definition": "Juliet is alive but entombed — the Friar's compressed tragedy"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act5_scene2_ann1",
+      "line_start": 5,
+      "line_end": 17,
+      "citation_display": "Romeo and Juliet 5.2.5–17",
+      "category": "structural",
+      "title": "Plague quarantine — the missed letter",
+      "body": "Friar John returns with the undelivered letter. The explanation is appallingly specific: he went to find a fellow Franciscan to accompany him (the Franciscan rule required pairs for travel); the pair entered a house under plague quarantine; they were detained by the searchers of the town as suspected contagion. The letter never reached Mantua. Shakespeare makes the obstacle precise and material. The tragedy is not the work of a malicious fate but of epidemiological bad luck: plague in Verona in the summer of the play (the real Verona endured plagues repeatedly in the sixteenth century, including outbreaks in 1575 and 1596, the latter just a year or two before the play's composition). The missed letter is the technical hinge that makes the final tragedy inevitable.",
+      "sources": [
+        "Jill L. Levenson, The Oxford Shakespeare: Romeo and Juliet (2000)",
+        "Jonathan Gil Harris, Sick Economies (2004)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act5_scene2_q1",
+      "kind": "comprehension",
+      "prompt": "Why did the Friar's letter not reach Romeo in Mantua?",
+      "options": [
+        "Friar John refused to deliver it",
+        "Friar John was detained by plague quarantine — the letter never reached Mantua",
+        "Romeo had already left Mantua",
+        "Balthasar intercepted it"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 5,
+      "anchor_line_end": 17
+    }
+  ]
+}

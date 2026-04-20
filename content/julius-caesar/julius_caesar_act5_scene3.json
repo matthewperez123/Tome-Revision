@@ -1,0 +1,865 @@
+{
+  "section_id": "julius_caesar_act5_scene3",
+  "work_id": "julius-caesar",
+  "sequence": 16,
+  "act": 5,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "Another part of the field",
+  "line_count": 116,
+  "word_count": 868,
+  "est_read_minutes": 4,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CASSIUS",
+      "text": "O, look, Titinius, look, the villains fly!"
+    },
+    {
+      "number": 2,
+      "speaker": "CASSIUS",
+      "text": "Myself have to mine own turn’d enemy:"
+    },
+    {
+      "number": 3,
+      "speaker": "CASSIUS",
+      "text": "This ensign here of mine was turning back;"
+    },
+    {
+      "number": 4,
+      "speaker": "CASSIUS",
+      "text": "I slew the coward, and did take it from him."
+    },
+    {
+      "number": 5,
+      "speaker": "TITINIUS",
+      "text": "O Cassius, Brutus gave the word too early;"
+    },
+    {
+      "number": 6,
+      "speaker": "TITINIUS",
+      "text": "Who, having some advantage on Octavius,"
+    },
+    {
+      "number": 7,
+      "speaker": "TITINIUS",
+      "text": "Took it too eagerly: his soldiers fell to spoil,"
+    },
+    {
+      "number": 8,
+      "speaker": "TITINIUS",
+      "text": "Whilst we by Antony are all enclosed."
+    },
+    {
+      "number": 9,
+      "speaker": "PINDARUS",
+      "text": "Fly further off, my lord, fly further off;"
+    },
+    {
+      "number": 10,
+      "speaker": "PINDARUS",
+      "text": "Mark Antony is in your tents, my lord:"
+    },
+    {
+      "number": 11,
+      "speaker": "PINDARUS",
+      "text": "Fly, therefore, noble Cassius, fly far off."
+    },
+    {
+      "number": 12,
+      "speaker": "CASSIUS",
+      "text": "This hill is far enough. Look, look, Titinius;"
+    },
+    {
+      "number": 13,
+      "speaker": "CASSIUS",
+      "text": "Are those my tents where I perceive the fire?"
+    },
+    {
+      "number": 14,
+      "speaker": "TITINIUS",
+      "text": "They are, my lord."
+    },
+    {
+      "number": 14,
+      "speaker": "CASSIUS",
+      "text": "Titinius, if thou lovest me,"
+    },
+    {
+      "number": 15,
+      "speaker": "CASSIUS",
+      "text": "Mount thou my horse, and hide thy spurs in him,"
+    },
+    {
+      "number": 16,
+      "speaker": "CASSIUS",
+      "text": "Till he have brought thee up to yonder troops,"
+    },
+    {
+      "number": 17,
+      "speaker": "CASSIUS",
+      "text": "And here again; that I may rest assured"
+    },
+    {
+      "number": 18,
+      "speaker": "CASSIUS",
+      "text": "Whether yond troops are friend or enemy."
+    },
+    {
+      "number": 19,
+      "speaker": "TITINIUS",
+      "text": "I will be here again, even with a thought."
+    },
+    {
+      "number": 20,
+      "speaker": "CASSIUS",
+      "text": "Go, Pindarus, get higher on that hill;"
+    },
+    {
+      "number": 21,
+      "speaker": "CASSIUS",
+      "text": "My sight was ever thick; regard Titinius,"
+    },
+    {
+      "number": 22,
+      "speaker": "CASSIUS",
+      "text": "And tell me what thou notest about the field. Pindarus ascends the hill."
+    },
+    {
+      "number": 23,
+      "speaker": "CASSIUS",
+      "text": "This day I breathed first: time is come round,"
+    },
+    {
+      "number": 24,
+      "speaker": "CASSIUS",
+      "text": "And where I did begin, there shall I end;"
+    },
+    {
+      "number": 25,
+      "speaker": "CASSIUS",
+      "text": "My life is run his compass. Sirrah, what news?"
+    },
+    {
+      "number": 26,
+      "speaker": "PINDARUS",
+      "text": "Above. O my lord!"
+    },
+    {
+      "number": 26,
+      "speaker": "CASSIUS",
+      "text": "What news?"
+    },
+    {
+      "number": 27,
+      "speaker": "PINDARUS",
+      "text": "Above. Titinius is enclosed round about"
+    },
+    {
+      "number": 28,
+      "speaker": "PINDARUS",
+      "text": "With horsemen, that make to him on the spur;"
+    },
+    {
+      "number": 29,
+      "speaker": "PINDARUS",
+      "text": "Yet he spurs on. Now they are almost on him."
+    },
+    {
+      "number": 30,
+      "speaker": "PINDARUS",
+      "text": "Now, Titinius! Now some light. O, he lights too."
+    },
+    {
+      "number": 31,
+      "speaker": "PINDARUS",
+      "text": "He’s ta’en. And, hark! they shout for joy."
+    },
+    {
+      "number": 32,
+      "speaker": "CASSIUS",
+      "text": "Come down, behold no more."
+    },
+    {
+      "number": 33,
+      "speaker": "CASSIUS",
+      "text": "O, coward that I am, to live so long,"
+    },
+    {
+      "number": 34,
+      "speaker": "CASSIUS",
+      "text": "To see my best friend ta’en before my face!"
+    },
+    {
+      "number": 35,
+      "speaker": "CASSIUS",
+      "text": "Come hither, sirrah:"
+    },
+    {
+      "number": 36,
+      "speaker": "CASSIUS",
+      "text": "In Parthia did I take thee prisoner;"
+    },
+    {
+      "number": 37,
+      "speaker": "CASSIUS",
+      "text": "And then I swore thee, saving of thy life,"
+    },
+    {
+      "number": 38,
+      "speaker": "CASSIUS",
+      "text": "That whatsoever I did bid thee do,"
+    },
+    {
+      "number": 39,
+      "speaker": "CASSIUS",
+      "text": "Thou shouldst attempt it. Come now, keep thine oath;"
+    },
+    {
+      "number": 40,
+      "speaker": "CASSIUS",
+      "text": "Now be a freeman: and with this good sword,"
+    },
+    {
+      "number": 41,
+      "speaker": "CASSIUS",
+      "text": "That ran through Caesar’s bowels, search this bosom."
+    },
+    {
+      "number": 42,
+      "speaker": "CASSIUS",
+      "text": "Stand not to answer: here, take thou the hilts;"
+    },
+    {
+      "number": 43,
+      "speaker": "CASSIUS",
+      "text": "And, when my face is cover’d, as ’tis now,"
+    },
+    {
+      "number": 44,
+      "speaker": "CASSIUS",
+      "text": "Guide thou the sword. Caesar, thou art revenged,"
+    },
+    {
+      "number": 45,
+      "speaker": "CASSIUS",
+      "text": "Even with the sword that kill’d thee."
+    },
+    {
+      "number": 46,
+      "speaker": "PINDARUS",
+      "text": "So, I am free; yet would not so have been,"
+    },
+    {
+      "number": 47,
+      "speaker": "PINDARUS",
+      "text": "Durst I have done my will. O Cassius,"
+    },
+    {
+      "number": 48,
+      "speaker": "PINDARUS",
+      "text": "Far from this country Pindarus shall run,"
+    },
+    {
+      "number": 49,
+      "speaker": "PINDARUS",
+      "text": "Where never Roman shall take note of him."
+    },
+    {
+      "number": 50,
+      "speaker": "MESSALA",
+      "text": "It is but change, Titinius; for Octavius"
+    },
+    {
+      "number": 51,
+      "speaker": "MESSALA",
+      "text": "Is overthrown by noble Brutus’ power,"
+    },
+    {
+      "number": 52,
+      "speaker": "MESSALA",
+      "text": "As Cassius’ legions are by Antony."
+    },
+    {
+      "number": 52,
+      "speaker": "TITINIUS",
+      "text": "These tidings will well comfort Cassius."
+    },
+    {
+      "number": 53,
+      "speaker": "MESSALA",
+      "text": "Where did you leave him?"
+    },
+    {
+      "number": 53,
+      "speaker": "TITINIUS",
+      "text": "All disconsolate,"
+    },
+    {
+      "number": 54,
+      "speaker": "TITINIUS",
+      "text": "With Pindarus his bondman, on this hill."
+    },
+    {
+      "number": 55,
+      "speaker": "MESSALA",
+      "text": "Is not that he that lies upon the ground?"
+    },
+    {
+      "number": 56,
+      "speaker": "TITINIUS",
+      "text": "He lies not like the living. O my heart!"
+    },
+    {
+      "number": 57,
+      "speaker": "MESSALA",
+      "text": "Is not that he?"
+    },
+    {
+      "number": 57,
+      "speaker": "TITINIUS",
+      "text": "No, this was he, Messala,"
+    },
+    {
+      "number": 58,
+      "speaker": "TITINIUS",
+      "text": "But Cassius is no more. O setting sun,"
+    },
+    {
+      "number": 59,
+      "speaker": "TITINIUS",
+      "text": "As in thy red rays thou dost sink to-night,"
+    },
+    {
+      "number": 60,
+      "speaker": "TITINIUS",
+      "text": "So in his red blood Cassius’ day is set;"
+    },
+    {
+      "number": 61,
+      "speaker": "TITINIUS",
+      "text": "The sun of Rome is set! Our day is gone;"
+    },
+    {
+      "number": 62,
+      "speaker": "TITINIUS",
+      "text": "Clouds, dews, and dangers come; our deeds are done!"
+    },
+    {
+      "number": 63,
+      "speaker": "TITINIUS",
+      "text": "Mistrust of my success hath done this deed."
+    },
+    {
+      "number": 64,
+      "speaker": "MESSALA",
+      "text": "Mistrust of good success hath done this deed."
+    },
+    {
+      "number": 65,
+      "speaker": "MESSALA",
+      "text": "O hateful error, melancholy’s child,"
+    },
+    {
+      "number": 66,
+      "speaker": "MESSALA",
+      "text": "Why dost thou show to the apt thoughts of men"
+    },
+    {
+      "number": 67,
+      "speaker": "MESSALA",
+      "text": "The things that are not? O error, soon conceived,"
+    },
+    {
+      "number": 68,
+      "speaker": "MESSALA",
+      "text": "Thou never comest unto a happy birth,"
+    },
+    {
+      "number": 69,
+      "speaker": "MESSALA",
+      "text": "But kill’st the mother that engender’d thee!"
+    },
+    {
+      "number": 70,
+      "speaker": "TITINIUS",
+      "text": "What, Pindarus! where art thou, Pindarus?"
+    },
+    {
+      "number": 71,
+      "speaker": "MESSALA",
+      "text": "Seek him, Titinius, whilst I go to meet"
+    },
+    {
+      "number": 72,
+      "speaker": "MESSALA",
+      "text": "The noble Brutus, thrusting this report"
+    },
+    {
+      "number": 73,
+      "speaker": "MESSALA",
+      "text": "Into his ears; I may say, thrusting it;"
+    },
+    {
+      "number": 74,
+      "speaker": "MESSALA",
+      "text": "For piercing steel and darts envenomed"
+    },
+    {
+      "number": 75,
+      "speaker": "MESSALA",
+      "text": "Shall be as welcome to the ears of Brutus"
+    },
+    {
+      "number": 76,
+      "speaker": "MESSALA",
+      "text": "As tidings of this sight."
+    },
+    {
+      "number": 76,
+      "speaker": "TITINIUS",
+      "text": "Hie you, Messala,"
+    },
+    {
+      "number": 77,
+      "speaker": "TITINIUS",
+      "text": "And I will seek for Pindarus the while."
+    },
+    {
+      "number": 78,
+      "speaker": "TITINIUS",
+      "text": "Why didst thou send me forth, brave Cassius?"
+    },
+    {
+      "number": 79,
+      "speaker": "TITINIUS",
+      "text": "Did I not meet thy friends? and did not they"
+    },
+    {
+      "number": 80,
+      "speaker": "TITINIUS",
+      "text": "Put on my brows this wreath of victory,"
+    },
+    {
+      "number": 81,
+      "speaker": "TITINIUS",
+      "text": "And bid me give it thee? Didst thou not hear their shouts?"
+    },
+    {
+      "number": 82,
+      "speaker": "TITINIUS",
+      "text": "Alas, thou hast misconstrued everything!"
+    },
+    {
+      "number": 83,
+      "speaker": "TITINIUS",
+      "text": "But, hold thee, take this garland on thy brow;"
+    },
+    {
+      "number": 84,
+      "speaker": "TITINIUS",
+      "text": "Thy Brutus bid me give it thee, and I"
+    },
+    {
+      "number": 85,
+      "speaker": "TITINIUS",
+      "text": "Will do his bidding. Brutus, come apace,"
+    },
+    {
+      "number": 86,
+      "speaker": "TITINIUS",
+      "text": "And see how I regarded Caius Cassius."
+    },
+    {
+      "number": 87,
+      "speaker": "TITINIUS",
+      "text": "By your leave, gods:—this is a Roman’s part"
+    },
+    {
+      "number": 88,
+      "speaker": "TITINIUS",
+      "text": "Come, Cassius’ sword, and find Titinius’ heart."
+    },
+    {
+      "number": 89,
+      "speaker": "BRUTUS",
+      "text": "Where, where, Messala, doth his body lie?"
+    },
+    {
+      "number": 90,
+      "speaker": "MESSALA",
+      "text": "Lo, yonder, and Titinius mourning it."
+    },
+    {
+      "number": 90,
+      "speaker": "BRUTUS",
+      "text": "Titinius’ face is upward."
+    },
+    {
+      "number": 91,
+      "speaker": "CATO",
+      "text": "He is slain."
+    },
+    {
+      "number": 92,
+      "speaker": "BRUTUS",
+      "text": "O Julius Caesar, thou art mighty yet!"
+    },
+    {
+      "number": 93,
+      "speaker": "BRUTUS",
+      "text": "Thy spirit walks abroad, and turns our swords"
+    },
+    {
+      "number": 94,
+      "speaker": "BRUTUS",
+      "text": "In our own proper entrails. Low alarums."
+    },
+    {
+      "number": 95,
+      "speaker": "CATO",
+      "text": "Brave Titinius!"
+    },
+    {
+      "number": 96,
+      "speaker": "CATO",
+      "text": "Look, whether he have not crown’d dead Cassius!"
+    },
+    {
+      "number": 97,
+      "speaker": "BRUTUS",
+      "text": "Are yet two Romans living such as these?"
+    },
+    {
+      "number": 98,
+      "speaker": "BRUTUS",
+      "text": "The last of all the Romans, fare thee well!"
+    },
+    {
+      "number": 99,
+      "speaker": "BRUTUS",
+      "text": "It is impossible that ever Rome"
+    },
+    {
+      "number": 100,
+      "speaker": "BRUTUS",
+      "text": "Should breed thy fellow. Friends, I owe more tears"
+    },
+    {
+      "number": 101,
+      "speaker": "BRUTUS",
+      "text": "To this dead man than you shall see me pay."
+    },
+    {
+      "number": 102,
+      "speaker": "BRUTUS",
+      "text": "I shall find time, Cassius, I shall find time."
+    },
+    {
+      "number": 103,
+      "speaker": "BRUTUS",
+      "text": "Come, therefore, and to Thasos send his body:"
+    },
+    {
+      "number": 104,
+      "speaker": "BRUTUS",
+      "text": "His funerals shall not be in our camp,"
+    },
+    {
+      "number": 105,
+      "speaker": "BRUTUS",
+      "text": "Lest it discomfort us. Lucilius, come;"
+    },
+    {
+      "number": 106,
+      "speaker": "BRUTUS",
+      "text": "And come, young Cato; let us to the field."
+    },
+    {
+      "number": 107,
+      "speaker": "BRUTUS",
+      "text": "Labeo and Flavius, set our battles on:"
+    },
+    {
+      "number": 108,
+      "speaker": "BRUTUS",
+      "text": "’Tis three o’clock; and, Romans, yet ere night"
+    },
+    {
+      "number": 109,
+      "speaker": "BRUTUS",
+      "text": "We shall try fortune in a second fight."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Alarums. Enter Cassius and Titinius."
+    },
+    {
+      "after_line": 8,
+      "text": "Enter Pindarus."
+    },
+    {
+      "after_line": 19,
+      "text": "Exit."
+    },
+    {
+      "after_line": 31,
+      "text": "Shout."
+    },
+    {
+      "after_line": 34,
+      "text": "Pindarus descends."
+    },
+    {
+      "after_line": 44,
+      "text": "Pindarus stabs him."
+    },
+    {
+      "after_line": 45,
+      "text": "Dies."
+    },
+    {
+      "after_line": 49,
+      "text": "Exit."
+    },
+    {
+      "after_line": 49,
+      "text": "Reenter Titinius with Messala."
+    },
+    {
+      "after_line": 77,
+      "text": "Exit Messala."
+    },
+    {
+      "after_line": 88,
+      "text": "Kills himself."
+    },
+    {
+      "after_line": 88,
+      "text": "Alarum. Reenter Messala, with Brutus, young Cato, Strato, Volumnius, and Lucilius."
+    },
+    {
+      "after_line": 109,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "julius_caesar_act5_scene3_gloss1",
+      "line": 1,
+      "phrase": "the villains fly",
+      "definition": "Cassius's own troops are fleeing — his left wing has broken"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss2",
+      "line": 3,
+      "phrase": "ensign",
+      "definition": "standard-bearer; here, the man carrying the legionary standard"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss3",
+      "line": 7,
+      "phrase": "fell to spoil",
+      "definition": "stopped to loot — a classical tactical error; Brutus's men were plundering Octavius's camp instead of pressing the attack"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss4",
+      "line": 12,
+      "phrase": "This hill is far enough",
+      "definition": "Cassius halts his retreat — the battlefield vantage from which he mistakes Titinius's capture for death"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss5",
+      "line": 21,
+      "phrase": "sight was ever thick",
+      "definition": "my eyesight has always been poor — the visual error that causes his suicide"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss6",
+      "line": 23,
+      "phrase": "This day I breathed first",
+      "definition": "today is my birthday (echoing 5.1); now I die on the day I was born"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss7",
+      "line": 25,
+      "phrase": "life is run his compass",
+      "definition": "my life has run its full circle"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss8",
+      "line": 36,
+      "phrase": "Parthia",
+      "definition": "the Parthian Empire east of Rome (modern Iran); Cassius campaigned there under Crassus in 53 BCE, where Pindarus became his prisoner"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss9",
+      "line": 41,
+      "phrase": "That ran through Caesar's bowels",
+      "definition": "the very sword Cassius used to kill Caesar — now turned upon himself; a perfect Roman poetic justice"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss10",
+      "line": 44,
+      "phrase": "Caesar, thou art revenged",
+      "definition": "Caesar is avenged — Cassius acknowledges the moral symmetry of his death"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss11",
+      "line": 50,
+      "phrase": "change",
+      "definition": "turn of fortune; reverse — Messala's mistaken good news"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss12",
+      "line": 58,
+      "phrase": "Cassius is no more",
+      "definition": "Cassius is dead (announced by Titinius)"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss13",
+      "line": 58,
+      "phrase": "setting sun",
+      "definition": "the evening sun — classical image for a great man's death; Julius Caesar was called the sun of Rome; now so is Cassius"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss14",
+      "line": 61,
+      "phrase": "sun of Rome is set",
+      "definition": "Rome's great day has ended — Titinius's lament for Cassius extends the solar metaphor to the Republic itself"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss15",
+      "line": 63,
+      "phrase": "Mistrust of my success hath done this deed",
+      "definition": "distrust in my victory caused this — Cassius's misreading of Titinius's fate killed him"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss16",
+      "line": 65,
+      "phrase": "melancholy's child",
+      "definition": "melancholy's offspring — error as the child of a morbid temperament"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss17",
+      "line": 96,
+      "phrase": "crown'd dead Cassius",
+      "definition": "placed a victory-wreath on Cassius's head — Titinius's last service before killing himself"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss18",
+      "line": 87,
+      "phrase": "Roman's part",
+      "definition": "the Roman role — Stoic suicide as performance of Roman virtue"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss19",
+      "line": 93,
+      "phrase": "spirit walks abroad",
+      "definition": "the ghost roams free — Caesar's revenge is spreading"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss20",
+      "line": 94,
+      "phrase": "In our own proper entrails",
+      "definition": "in our very own guts — we are killing ourselves; the suicides of 5.3 continue in 5.5"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss21",
+      "line": 98,
+      "phrase": "last of all the Romans",
+      "definition": "Brutus's epitaph for Cassius — the last true Roman of the old school; an elegy for the Republic itself. The play argues through Brutus that the Republic died with Cassius"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss22",
+      "line": 103,
+      "phrase": "Thasos",
+      "definition": "Greek island in the north Aegean, not far from Philippi; Brutus sends Cassius's body there for burial"
+    },
+    {
+      "id": "julius_caesar_act5_scene3_gloss23",
+      "line": 105,
+      "phrase": "discomfort us",
+      "definition": "dishearten our troops (not modern 'discomfort')"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "julius_caesar_act5_scene3_ann1",
+      "line_start": 20,
+      "line_end": 45,
+      "citation_display": "Julius Caesar 5.3.20–45",
+      "category": "thematic",
+      "title": "Cassius's suicide: the sword that killed Caesar turned inward",
+      "body": "Cassius's suicide is a model of Roman poetic justice. He instructs his freedman Pindarus to guide 'this good sword, / That ran through Caesar's bowels' into his own bosom. The same blade that opened Caesar's body in 3.1 now opens Cassius's. Shakespeare makes the moral symmetry explicit: 'Caesar, thou art revenged, / Even with the sword that kill'd thee.'\n\nThe suicide also turns on a mistake. Titinius, sent to verify whether the distant troops are friendly or enemy, is in fact greeted by Brutus's victorious forces — but Pindarus, watching from the hilltop with his master's poor eyesight in the equation, reports that Titinius has been captured. Cassius, on the bad news, kills himself. Titinius returns to find Cassius dead and kills himself in grief. The play's most politically consequential suicide is caused by a misreading.\n\nMessala's moralising response — 'O hateful error, melancholy's child, / Why dost thou show to the apt thoughts of men / The things that are not?' — turns the incident into an emblem of melancholy's power to generate false perception and fatal action. Shakespeare is showing, one more time, the theme that runs from Brutus's soliloquy through Calpurnia's dream-interpretation to this scene: political actors consistently kill on the basis of misread signs. The theme is not coincidence; it is the play's argument.",
+      "sources": [
+        "Plutarch, *Life of Brutus* §43 (North, 1579)",
+        "Miriam Griffin (1986)",
+        "Paul A. Cantor (1976)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act5_scene3_ann2",
+      "line_start": 98,
+      "line_end": 102,
+      "citation_display": "Julius Caesar 5.3.98–102",
+      "category": "thematic",
+      "title": "'The last of all the Romans': Brutus's elegy for the Republic",
+      "body": "Brutus's epitaph for Cassius — 'The last of all the Romans, fare thee well! / It is impossible that ever Rome / Should breed thy fellow' — is the play's first explicit statement that the Republic has effectively ended. Brutus is not saying that Cassius was the last human Roman; he is saying that the old republican type, of which Cassius was the best example, cannot be bred again. Rome has changed. The institutions that produced Cassius are gone.\n\nThe line is also an elegy for the speaker. Brutus is himself a Roman of that type; if Cassius was the last, Brutus is about to be the second-to-last. The scene is structurally the death of the old order in two persons: Cassius first, Brutus to come. Antony's 5.5 epitaph — 'This was the noblest Roman of them all' — will complete the arc by applying the same language to Brutus. Both Romans are dead; the new Rome — Octavius's Rome, the coming empire — has no place for their kind.",
+      "sources": [
+        "Plutarch, *Life of Brutus* §44 (North, 1579)",
+        "Coppélia Kahn (1997)",
+        "David Norbrook (1999)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "julius_caesar_act5_scene3_q1",
+      "kind": "close_reading",
+      "prompt": "Why does Cassius instruct Pindarus to use 'the sword / That ran through Caesar's bowels'?",
+      "options": [
+        "Incidental detail",
+        "The same blade that killed Caesar now kills Cassius — Roman poetic justice made physical; Shakespeare explicitly frames the suicide as Caesar's revenge via Cassius's own hand",
+        "It was the nearest weapon",
+        "Pindarus chose the sword"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 40,
+      "anchor_line_end": 45
+    },
+    {
+      "id": "julius_caesar_act5_scene3_q2",
+      "kind": "theme",
+      "prompt": "Cassius's suicide is caused by:",
+      "options": [
+        "A genuine defeat at that moment",
+        "Pindarus's misreading of distant friendly troops as enemy — Cassius kills himself on false information; Messala's 'hateful error, melancholy's child' turns the incident into an emblem of misreading-as-political-cause, a pattern the play traces from 2.1 through the whole action",
+        "A direct attack",
+        "Betrayal by Pindarus"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 20,
+      "anchor_line_end": 70
+    },
+    {
+      "id": "julius_caesar_act5_scene3_q3",
+      "kind": "theme",
+      "prompt": "Brutus's 'The last of all the Romans' is:",
+      "options": [
+        "Literal — no more Romans will be born",
+        "An elegy for the republican type — the institutional conditions that produced Cassius are gone; Rome has changed, and the man Cassius was cannot be bred again; the line also foreshadows Brutus's own death and the Republic's end",
+        "Exaggerated grief",
+        "A historical claim"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 98,
+      "anchor_line_end": 102
+    }
+  ]
+}

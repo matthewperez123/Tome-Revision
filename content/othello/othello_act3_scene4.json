@@ -1,0 +1,1455 @@
+{
+  "section_id": "othello_act3_scene4",
+  "work_id": "othello",
+  "sequence": 10,
+  "act": 3,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "Before the castle",
+  "line_count": 220,
+  "word_count": 1544,
+  "est_read_minutes": 8,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "DESDEMONA",
+      "text": "Do you know, sirrah, where Lieutenant Cassio lies?"
+    },
+    {
+      "number": 2,
+      "speaker": "CLOWN",
+      "text": "I dare not say he lies any where."
+    },
+    {
+      "number": 3,
+      "speaker": "DESDEMONA",
+      "text": "Why, man?"
+    },
+    {
+      "number": 4,
+      "speaker": "CLOWN",
+      "text": "He’s a soldier, and for one to say a soldier lies, is stabbing."
+    },
+    {
+      "number": 5,
+      "speaker": "DESDEMONA",
+      "text": "Go to: where lodges he?"
+    },
+    {
+      "number": 6,
+      "speaker": "CLOWN",
+      "text": "To tell you where he lodges, is to tell you where I lie."
+    },
+    {
+      "number": 7,
+      "speaker": "DESDEMONA",
+      "text": "Can any thing be made of this?"
+    },
+    {
+      "number": 8,
+      "speaker": "CLOWN",
+      "text": "I know not where he lodges, and for me to devise a"
+    },
+    {
+      "number": 9,
+      "speaker": "CLOWN",
+      "text": "lodging and say he lies here or he lies there, were to"
+    },
+    {
+      "number": 10,
+      "speaker": "CLOWN",
+      "text": "lie in mine own throat."
+    },
+    {
+      "number": 11,
+      "speaker": "DESDEMONA",
+      "text": "Can you inquire him out, and be edified by report?"
+    },
+    {
+      "number": 12,
+      "speaker": "CLOWN",
+      "text": "I will catechise the world for him; that is, make questions, and by them answer."
+    },
+    {
+      "number": 13,
+      "speaker": "DESDEMONA",
+      "text": "Seek him, bid him come hither: tell him I have moved my"
+    },
+    {
+      "number": 14,
+      "speaker": "DESDEMONA",
+      "text": "lord on his behalf, and hope all will be well."
+    },
+    {
+      "number": 15,
+      "speaker": "CLOWN",
+      "text": "To do this is within the compass of man’s wit: and therefore"
+    },
+    {
+      "number": 16,
+      "speaker": "CLOWN",
+      "text": "I will attempt the doing it."
+    },
+    {
+      "number": 17,
+      "speaker": "DESDEMONA",
+      "text": "Where should I lose that handkerchief, Emilia?"
+    },
+    {
+      "number": 18,
+      "speaker": "EMILIA",
+      "text": "I know not, madam."
+    },
+    {
+      "number": 19,
+      "speaker": "DESDEMONA",
+      "text": "Believe me, I had rather have lost my purse"
+    },
+    {
+      "number": 20,
+      "speaker": "DESDEMONA",
+      "text": "Full of crusadoes: and, but my noble Moor"
+    },
+    {
+      "number": 21,
+      "speaker": "DESDEMONA",
+      "text": "Is true of mind and made of no such baseness"
+    },
+    {
+      "number": 22,
+      "speaker": "DESDEMONA",
+      "text": "As jealous creatures are, it were enough"
+    },
+    {
+      "number": 23,
+      "speaker": "DESDEMONA",
+      "text": "To put him to ill thinking."
+    },
+    {
+      "number": 23,
+      "speaker": "EMILIA",
+      "text": "Is he not jealous?"
+    },
+    {
+      "number": 24,
+      "speaker": "DESDEMONA",
+      "text": "Who, he? I think the sun where he was born"
+    },
+    {
+      "number": 25,
+      "speaker": "DESDEMONA",
+      "text": "Drew all such humours from him."
+    },
+    {
+      "number": 25,
+      "speaker": "EMILIA",
+      "text": "Look, where he comes."
+    },
+    {
+      "number": 26,
+      "speaker": "DESDEMONA",
+      "text": "I will not leave him now till Cassio"
+    },
+    {
+      "number": 27,
+      "speaker": "DESDEMONA",
+      "text": "Be call’d to him."
+    },
+    {
+      "number": 27,
+      "speaker": "OTHELLO",
+      "text": "Well, my good lady."
+    },
+    {
+      "number": 28,
+      "speaker": "OTHELLO",
+      "text": "O, hardness to dissemble!—"
+    },
+    {
+      "number": 29,
+      "speaker": "OTHELLO",
+      "text": "How do you, Desdemona?"
+    },
+    {
+      "number": 29,
+      "speaker": "DESDEMONA",
+      "text": "Well, my good lord."
+    },
+    {
+      "number": 30,
+      "speaker": "OTHELLO",
+      "text": "Give me your hand: this hand is moist, my lady."
+    },
+    {
+      "number": 31,
+      "speaker": "DESDEMONA",
+      "text": "It yet hath felt no age nor known no sorrow."
+    },
+    {
+      "number": 32,
+      "speaker": "OTHELLO",
+      "text": "This argues fruitfulness and liberal heart:"
+    },
+    {
+      "number": 33,
+      "speaker": "OTHELLO",
+      "text": "Hot, hot, and moist: this hand of yours requires"
+    },
+    {
+      "number": 34,
+      "speaker": "OTHELLO",
+      "text": "A sequester from liberty, fasting and prayer,"
+    },
+    {
+      "number": 35,
+      "speaker": "OTHELLO",
+      "text": "Much castigation, exercise devout;"
+    },
+    {
+      "number": 36,
+      "speaker": "OTHELLO",
+      "text": "For here’s a young and sweating devil here,"
+    },
+    {
+      "number": 37,
+      "speaker": "OTHELLO",
+      "text": "That commonly rebels. ’Tis a good hand,"
+    },
+    {
+      "number": 38,
+      "speaker": "OTHELLO",
+      "text": "A frank one."
+    },
+    {
+      "number": 38,
+      "speaker": "DESDEMONA",
+      "text": "You may, indeed, say so;"
+    },
+    {
+      "number": 39,
+      "speaker": "DESDEMONA",
+      "text": "For ’twas that hand that gave away my heart."
+    },
+    {
+      "number": 40,
+      "speaker": "OTHELLO",
+      "text": "A liberal hand: the hearts of old gave hands;"
+    },
+    {
+      "number": 41,
+      "speaker": "OTHELLO",
+      "text": "But our new heraldry is hands, not hearts."
+    },
+    {
+      "number": 42,
+      "speaker": "DESDEMONA",
+      "text": "I cannot speak of this. Come now, your promise."
+    },
+    {
+      "number": 43,
+      "speaker": "OTHELLO",
+      "text": "What promise, chuck?"
+    },
+    {
+      "number": 44,
+      "speaker": "DESDEMONA",
+      "text": "I have sent to bid Cassio come speak with you."
+    },
+    {
+      "number": 45,
+      "speaker": "OTHELLO",
+      "text": "I have a salt and sorry rheum offends me;"
+    },
+    {
+      "number": 46,
+      "speaker": "OTHELLO",
+      "text": "Lend me thy handkerchief."
+    },
+    {
+      "number": 46,
+      "speaker": "DESDEMONA",
+      "text": "Here, my lord."
+    },
+    {
+      "number": 47,
+      "speaker": "OTHELLO",
+      "text": "That which I gave you."
+    },
+    {
+      "number": 47,
+      "speaker": "DESDEMONA",
+      "text": "I have it not about me."
+    },
+    {
+      "number": 48,
+      "speaker": "OTHELLO",
+      "text": "Not?"
+    },
+    {
+      "number": 48,
+      "speaker": "DESDEMONA",
+      "text": "No, indeed, my lord."
+    },
+    {
+      "number": 49,
+      "speaker": "OTHELLO",
+      "text": "That is a fault."
+    },
+    {
+      "number": 50,
+      "speaker": "OTHELLO",
+      "text": "That handkerchief"
+    },
+    {
+      "number": 51,
+      "speaker": "OTHELLO",
+      "text": "Did an Egyptian to my mother give;"
+    },
+    {
+      "number": 52,
+      "speaker": "OTHELLO",
+      "text": "She was a charmer, and could almost read"
+    },
+    {
+      "number": 53,
+      "speaker": "OTHELLO",
+      "text": "The thoughts of people: she told her, while"
+    },
+    {
+      "number": 54,
+      "speaker": "OTHELLO",
+      "text": "she kept it,"
+    },
+    {
+      "number": 55,
+      "speaker": "OTHELLO",
+      "text": "’Twould make her amiable and subdue my father"
+    },
+    {
+      "number": 56,
+      "speaker": "OTHELLO",
+      "text": "Entirely to her love, but if she lost it"
+    },
+    {
+      "number": 57,
+      "speaker": "OTHELLO",
+      "text": "Or made gift of it, my father’s eye"
+    },
+    {
+      "number": 58,
+      "speaker": "OTHELLO",
+      "text": "Should hold her loathed and his spirits should hunt"
+    },
+    {
+      "number": 59,
+      "speaker": "OTHELLO",
+      "text": "After new fancies: she, dying, gave it me;"
+    },
+    {
+      "number": 60,
+      "speaker": "OTHELLO",
+      "text": "And bid me, when my fate would have me wive,"
+    },
+    {
+      "number": 61,
+      "speaker": "OTHELLO",
+      "text": "To give it her. I did so: and take heed on’t;"
+    },
+    {
+      "number": 62,
+      "speaker": "OTHELLO",
+      "text": "Make it a darling like your precious eye;"
+    },
+    {
+      "number": 63,
+      "speaker": "OTHELLO",
+      "text": "To lose’t or give’t away were such perdition"
+    },
+    {
+      "number": 64,
+      "speaker": "OTHELLO",
+      "text": "As nothing else could match."
+    },
+    {
+      "number": 64,
+      "speaker": "DESDEMONA",
+      "text": "Is’t possible?"
+    },
+    {
+      "number": 65,
+      "speaker": "OTHELLO",
+      "text": "’Tis true: there’s magic in the web of it:"
+    },
+    {
+      "number": 66,
+      "speaker": "OTHELLO",
+      "text": "A sibyl, that had number’d in the world"
+    },
+    {
+      "number": 67,
+      "speaker": "OTHELLO",
+      "text": "The sun to course two hundred compasses,"
+    },
+    {
+      "number": 68,
+      "speaker": "OTHELLO",
+      "text": "In her prophetic fury sew’d the work;"
+    },
+    {
+      "number": 69,
+      "speaker": "OTHELLO",
+      "text": "The worms were hallow’d that did breed the silk;"
+    },
+    {
+      "number": 70,
+      "speaker": "OTHELLO",
+      "text": "And it was dyed in mummy which the skilful"
+    },
+    {
+      "number": 71,
+      "speaker": "OTHELLO",
+      "text": "Conserved of maidens’ hearts."
+    },
+    {
+      "number": 71,
+      "speaker": "DESDEMONA",
+      "text": "Indeed! is’t true?"
+    },
+    {
+      "number": 72,
+      "speaker": "OTHELLO",
+      "text": "Most veritable; therefore look to’t well."
+    },
+    {
+      "number": 73,
+      "speaker": "DESDEMONA",
+      "text": "Then would to God that I had never seen’t!"
+    },
+    {
+      "number": 74,
+      "speaker": "OTHELLO",
+      "text": "Ha! wherefore?"
+    },
+    {
+      "number": 75,
+      "speaker": "DESDEMONA",
+      "text": "Why do you speak so startingly and rash?"
+    },
+    {
+      "number": 76,
+      "speaker": "OTHELLO",
+      "text": "Is’t lost? is’t gone? speak, is it out o’ the way?"
+    },
+    {
+      "number": 77,
+      "speaker": "DESDEMONA",
+      "text": "Heaven bless us!"
+    },
+    {
+      "number": 77,
+      "speaker": "OTHELLO",
+      "text": "Say you?"
+    },
+    {
+      "number": 78,
+      "speaker": "DESDEMONA",
+      "text": "It is not lost; but what an if it were?"
+    },
+    {
+      "number": 79,
+      "speaker": "OTHELLO",
+      "text": "How!"
+    },
+    {
+      "number": 79,
+      "speaker": "DESDEMONA",
+      "text": "I say, it is not lost."
+    },
+    {
+      "number": 80,
+      "speaker": "OTHELLO",
+      "text": "Fetch’t, let me see’t."
+    },
+    {
+      "number": 81,
+      "speaker": "DESDEMONA",
+      "text": "Why, so I can, sir, but I will not now."
+    },
+    {
+      "number": 82,
+      "speaker": "DESDEMONA",
+      "text": "This is a trick to put me from my suit:"
+    },
+    {
+      "number": 83,
+      "speaker": "DESDEMONA",
+      "text": "Pray you, let Cassio be received again."
+    },
+    {
+      "number": 84,
+      "speaker": "OTHELLO",
+      "text": "Fetch me the handkerchief: my mind misgives."
+    },
+    {
+      "number": 85,
+      "speaker": "DESDEMONA",
+      "text": "Come, come;"
+    },
+    {
+      "number": 86,
+      "speaker": "DESDEMONA",
+      "text": "You’ll never meet a more sufficient man."
+    },
+    {
+      "number": 87,
+      "speaker": "OTHELLO",
+      "text": "The handkerchief!"
+    },
+    {
+      "number": 87,
+      "speaker": "DESDEMONA",
+      "text": "I pray, talk me of Cassio."
+    },
+    {
+      "number": 88,
+      "speaker": "OTHELLO",
+      "text": "The handkerchief!"
+    },
+    {
+      "number": 88,
+      "speaker": "DESDEMONA",
+      "text": "A man that all his time"
+    },
+    {
+      "number": 89,
+      "speaker": "DESDEMONA",
+      "text": "Hath founded his good fortunes on your love,"
+    },
+    {
+      "number": 90,
+      "speaker": "DESDEMONA",
+      "text": "Shared dangers with you—"
+    },
+    {
+      "number": 90,
+      "speaker": "OTHELLO",
+      "text": "The handkerchief!"
+    },
+    {
+      "number": 91,
+      "speaker": "DESDEMONA",
+      "text": "In sooth, you are to blame."
+    },
+    {
+      "number": 91,
+      "speaker": "OTHELLO",
+      "text": "Away!"
+    },
+    {
+      "number": 92,
+      "speaker": "EMILIA",
+      "text": "Is not this man jealous?"
+    },
+    {
+      "number": 92,
+      "speaker": "DESDEMONA",
+      "text": "I ne’er saw this before."
+    },
+    {
+      "number": 93,
+      "speaker": "DESDEMONA",
+      "text": "Sure, there’s some wonder in this handkerchief:"
+    },
+    {
+      "number": 94,
+      "speaker": "DESDEMONA",
+      "text": "I am most unhappy in the loss of it."
+    },
+    {
+      "number": 95,
+      "speaker": "EMILIA",
+      "text": "’Tis not a year or two shows us a man:"
+    },
+    {
+      "number": 96,
+      "speaker": "EMILIA",
+      "text": "They are all but stomachs, and we all but food;"
+    },
+    {
+      "number": 97,
+      "speaker": "EMILIA",
+      "text": "To eat us hungerly, and when they are full,"
+    },
+    {
+      "number": 98,
+      "speaker": "EMILIA",
+      "text": "They belch us. Look you, Cassio and my husband!"
+    },
+    {
+      "number": 99,
+      "speaker": "IAGO",
+      "text": "There is no other way; ’tis she must do’t:"
+    },
+    {
+      "number": 100,
+      "speaker": "IAGO",
+      "text": "And, lo, the happiness! go, and importune her."
+    },
+    {
+      "number": 101,
+      "speaker": "DESDEMONA",
+      "text": "How now, good Cassio! what’s the news with you?"
+    },
+    {
+      "number": 102,
+      "speaker": "CASSIO",
+      "text": "Madam, my former suit: I do beseech you"
+    },
+    {
+      "number": 103,
+      "speaker": "CASSIO",
+      "text": "That by your virtuous means I may again"
+    },
+    {
+      "number": 104,
+      "speaker": "CASSIO",
+      "text": "Exist, and be a member of his love"
+    },
+    {
+      "number": 105,
+      "speaker": "CASSIO",
+      "text": "Whom I with all the office of my heart"
+    },
+    {
+      "number": 106,
+      "speaker": "CASSIO",
+      "text": "Entirely honour: I would not be delay’d."
+    },
+    {
+      "number": 107,
+      "speaker": "CASSIO",
+      "text": "If my offence be of such mortal kind"
+    },
+    {
+      "number": 108,
+      "speaker": "CASSIO",
+      "text": "That nor my service past, nor present sorrows,"
+    },
+    {
+      "number": 109,
+      "speaker": "CASSIO",
+      "text": "Nor purposed merit in futurity,"
+    },
+    {
+      "number": 110,
+      "speaker": "CASSIO",
+      "text": "Can ransom me into his love again,"
+    },
+    {
+      "number": 111,
+      "speaker": "CASSIO",
+      "text": "But to know so must be my benefit;"
+    },
+    {
+      "number": 112,
+      "speaker": "CASSIO",
+      "text": "So shall I clothe me in a forced content,"
+    },
+    {
+      "number": 113,
+      "speaker": "CASSIO",
+      "text": "And shut myself up in some other course,"
+    },
+    {
+      "number": 114,
+      "speaker": "CASSIO",
+      "text": "To fortune’s alms."
+    },
+    {
+      "number": 114,
+      "speaker": "DESDEMONA",
+      "text": "Alas, thrice-gentle Cassio!"
+    },
+    {
+      "number": 115,
+      "speaker": "DESDEMONA",
+      "text": "My advocation is not now in tune;"
+    },
+    {
+      "number": 116,
+      "speaker": "DESDEMONA",
+      "text": "My lord is not my lord; nor should I know him,"
+    },
+    {
+      "number": 117,
+      "speaker": "DESDEMONA",
+      "text": "Were he in favour as in humour alter’d."
+    },
+    {
+      "number": 118,
+      "speaker": "DESDEMONA",
+      "text": "So help me every spirit sanctified,"
+    },
+    {
+      "number": 119,
+      "speaker": "DESDEMONA",
+      "text": "As I have spoken for you all my best"
+    },
+    {
+      "number": 120,
+      "speaker": "DESDEMONA",
+      "text": "And stood within the blank of his displeasure"
+    },
+    {
+      "number": 121,
+      "speaker": "DESDEMONA",
+      "text": "For my free speech! you must awhile be patient:"
+    },
+    {
+      "number": 122,
+      "speaker": "DESDEMONA",
+      "text": "What I can do I will; and more I will"
+    },
+    {
+      "number": 123,
+      "speaker": "DESDEMONA",
+      "text": "Than for myself I dare: let that suffice you."
+    },
+    {
+      "number": 124,
+      "speaker": "IAGO",
+      "text": "Is my lord angry?"
+    },
+    {
+      "number": 124,
+      "speaker": "EMILIA",
+      "text": "He went hence but now,"
+    },
+    {
+      "number": 125,
+      "speaker": "EMILIA",
+      "text": "And certainly in strange unquietness."
+    },
+    {
+      "number": 126,
+      "speaker": "IAGO",
+      "text": "Can he be angry? I have seen the cannon,"
+    },
+    {
+      "number": 127,
+      "speaker": "IAGO",
+      "text": "When it hath blown his ranks into the air,"
+    },
+    {
+      "number": 128,
+      "speaker": "IAGO",
+      "text": "And, like the devil, from his very arm"
+    },
+    {
+      "number": 129,
+      "speaker": "IAGO",
+      "text": "Puff’d his own brother:—and can he be angry?"
+    },
+    {
+      "number": 130,
+      "speaker": "IAGO",
+      "text": "Something of moment then: I will go meet him:"
+    },
+    {
+      "number": 131,
+      "speaker": "IAGO",
+      "text": "There’s matter in’t indeed, if he be angry."
+    },
+    {
+      "number": 132,
+      "speaker": "DESDEMONA",
+      "text": "I prithee, do so."
+    },
+    {
+      "number": 133,
+      "speaker": "DESDEMONA",
+      "text": "Something, sure, of state,"
+    },
+    {
+      "number": 134,
+      "speaker": "DESDEMONA",
+      "text": "Either from Venice, or some unhatch’d practise"
+    },
+    {
+      "number": 135,
+      "speaker": "DESDEMONA",
+      "text": "Made demonstrable here in Cyprus to him,"
+    },
+    {
+      "number": 136,
+      "speaker": "DESDEMONA",
+      "text": "Hath puddled his clear spirit: and in such cases"
+    },
+    {
+      "number": 137,
+      "speaker": "DESDEMONA",
+      "text": "Men’s natures wrangle with inferior things,"
+    },
+    {
+      "number": 138,
+      "speaker": "DESDEMONA",
+      "text": "Though great ones are their object. ’Tis even so;"
+    },
+    {
+      "number": 139,
+      "speaker": "DESDEMONA",
+      "text": "For let our finger ache, and it indues"
+    },
+    {
+      "number": 140,
+      "speaker": "DESDEMONA",
+      "text": "Our other healthful members even to that sense"
+    },
+    {
+      "number": 141,
+      "speaker": "DESDEMONA",
+      "text": "Of pain: nay, we must think men are not gods,"
+    },
+    {
+      "number": 142,
+      "speaker": "DESDEMONA",
+      "text": "Nor of them look for such observances"
+    },
+    {
+      "number": 143,
+      "speaker": "DESDEMONA",
+      "text": "As fit the bridal. Beshrew me much, Emilia,"
+    },
+    {
+      "number": 144,
+      "speaker": "DESDEMONA",
+      "text": "I was, unhandsome warrior as I am,"
+    },
+    {
+      "number": 145,
+      "speaker": "DESDEMONA",
+      "text": "Arraigning his unkindness with my soul;"
+    },
+    {
+      "number": 146,
+      "speaker": "DESDEMONA",
+      "text": "But now I find I had suborn’d the witness,"
+    },
+    {
+      "number": 147,
+      "speaker": "DESDEMONA",
+      "text": "And he’s indicted falsely."
+    },
+    {
+      "number": 148,
+      "speaker": "EMILIA",
+      "text": "Pray heaven it be state-matters, as you think,"
+    },
+    {
+      "number": 149,
+      "speaker": "EMILIA",
+      "text": "And no conception nor no jealous toy"
+    },
+    {
+      "number": 150,
+      "speaker": "EMILIA",
+      "text": "Concerning you."
+    },
+    {
+      "number": 151,
+      "speaker": "DESDEMONA",
+      "text": "Alas the day! I never gave him cause."
+    },
+    {
+      "number": 152,
+      "speaker": "EMILIA",
+      "text": "But jealous souls will not be answer’d so;"
+    },
+    {
+      "number": 153,
+      "speaker": "EMILIA",
+      "text": "They are not ever jealous for the cause,"
+    },
+    {
+      "number": 154,
+      "speaker": "EMILIA",
+      "text": "But jealous for they are jealous: ’tis a monster"
+    },
+    {
+      "number": 155,
+      "speaker": "EMILIA",
+      "text": "Begot upon itself, born on itself."
+    },
+    {
+      "number": 156,
+      "speaker": "DESDEMONA",
+      "text": "Heaven keep that monster from Othello’s mind!"
+    },
+    {
+      "number": 157,
+      "speaker": "EMILIA",
+      "text": "Lady, amen."
+    },
+    {
+      "number": 158,
+      "speaker": "DESDEMONA",
+      "text": "I will go seek him. Cassio, walk hereabout:"
+    },
+    {
+      "number": 159,
+      "speaker": "DESDEMONA",
+      "text": "If I do find him fit, I’ll move your suit"
+    },
+    {
+      "number": 160,
+      "speaker": "DESDEMONA",
+      "text": "And seek to effect it to my uttermost."
+    },
+    {
+      "number": 161,
+      "speaker": "CASSIO",
+      "text": "I humbly thank your ladyship."
+    },
+    {
+      "number": 161,
+      "speaker": "BIANCA",
+      "text": "Save you, friend Cassio!"
+    },
+    {
+      "number": 162,
+      "speaker": "CASSIO",
+      "text": "What make you from home?"
+    },
+    {
+      "number": 163,
+      "speaker": "CASSIO",
+      "text": "How is it with you, my most fair Bianca?"
+    },
+    {
+      "number": 164,
+      "speaker": "CASSIO",
+      "text": "I’ faith, sweet love, I was coming to your house."
+    },
+    {
+      "number": 165,
+      "speaker": "BIANCA",
+      "text": "And I was going to your lodging, Cassio."
+    },
+    {
+      "number": 166,
+      "speaker": "BIANCA",
+      "text": "What, keep a week away? seven days and nights?"
+    },
+    {
+      "number": 167,
+      "speaker": "BIANCA",
+      "text": "Eight score eight hours? and lovers’ absent hours,"
+    },
+    {
+      "number": 168,
+      "speaker": "BIANCA",
+      "text": "More tedious than the dial eight score times?"
+    },
+    {
+      "number": 169,
+      "speaker": "BIANCA",
+      "text": "O weary reckoning!"
+    },
+    {
+      "number": 169,
+      "speaker": "CASSIO",
+      "text": "Pardon me, Bianca:"
+    },
+    {
+      "number": 170,
+      "speaker": "CASSIO",
+      "text": "I have this while with leaden thoughts been press’d:"
+    },
+    {
+      "number": 171,
+      "speaker": "CASSIO",
+      "text": "But I shall, in a more continuate time,"
+    },
+    {
+      "number": 172,
+      "speaker": "CASSIO",
+      "text": "Strike off this score of absence. Sweet Bianca,"
+    },
+    {
+      "number": 173,
+      "speaker": "CASSIO",
+      "text": "Take me this work out."
+    },
+    {
+      "number": 173,
+      "speaker": "BIANCA",
+      "text": "O Cassio, whence came this?"
+    },
+    {
+      "number": 174,
+      "speaker": "BIANCA",
+      "text": "This is some token from a newer friend:"
+    },
+    {
+      "number": 175,
+      "speaker": "BIANCA",
+      "text": "To the felt absence now I feel a cause:"
+    },
+    {
+      "number": 176,
+      "speaker": "BIANCA",
+      "text": "Is’t come to this? Well, well."
+    },
+    {
+      "number": 176,
+      "speaker": "CASSIO",
+      "text": "Go to, woman!"
+    },
+    {
+      "number": 177,
+      "speaker": "CASSIO",
+      "text": "Throw your vile guesses in the devil’s teeth,"
+    },
+    {
+      "number": 178,
+      "speaker": "CASSIO",
+      "text": "From whence you have them. You are jealous now"
+    },
+    {
+      "number": 179,
+      "speaker": "CASSIO",
+      "text": "That this is from some mistress, some remembrance:"
+    },
+    {
+      "number": 180,
+      "speaker": "CASSIO",
+      "text": "No, in good troth, Bianca."
+    },
+    {
+      "number": 180,
+      "speaker": "BIANCA",
+      "text": "Why, whose is it?"
+    },
+    {
+      "number": 181,
+      "speaker": "CASSIO",
+      "text": "I know not, sweet: I found it in my chamber."
+    },
+    {
+      "number": 182,
+      "speaker": "CASSIO",
+      "text": "I like the work well: ere it be demanded—"
+    },
+    {
+      "number": 183,
+      "speaker": "CASSIO",
+      "text": "As like enough it will—I’ld have it copied:"
+    },
+    {
+      "number": 184,
+      "speaker": "CASSIO",
+      "text": "Take it, and do’t; and leave me for this time."
+    },
+    {
+      "number": 185,
+      "speaker": "BIANCA",
+      "text": "Leave you! wherefore?"
+    },
+    {
+      "number": 186,
+      "speaker": "CASSIO",
+      "text": "I do attend here on the general;"
+    },
+    {
+      "number": 187,
+      "speaker": "CASSIO",
+      "text": "And think it no addition, nor my wish,"
+    },
+    {
+      "number": 188,
+      "speaker": "CASSIO",
+      "text": "To have him see me woman’d."
+    },
+    {
+      "number": 188,
+      "speaker": "BIANCA",
+      "text": "Why, I pray you?"
+    },
+    {
+      "number": 189,
+      "speaker": "CASSIO",
+      "text": "Not that I love you not."
+    },
+    {
+      "number": 190,
+      "speaker": "BIANCA",
+      "text": "But that you do not love me."
+    },
+    {
+      "number": 191,
+      "speaker": "BIANCA",
+      "text": "I pray you, bring me on the way a little,"
+    },
+    {
+      "number": 192,
+      "speaker": "BIANCA",
+      "text": "And say if I shall see you soon at night."
+    },
+    {
+      "number": 193,
+      "speaker": "CASSIO",
+      "text": "’Tis but a little way that I can bring you;"
+    },
+    {
+      "number": 194,
+      "speaker": "CASSIO",
+      "text": "For I attend here: but I’ll see you soon."
+    },
+    {
+      "number": 195,
+      "speaker": "BIANCA",
+      "text": "’Tis very good; I must be circumstanced."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Desdemona, Emilia, and Clown."
+    },
+    {
+      "after_line": 16,
+      "text": "Exit."
+    },
+    {
+      "after_line": 27,
+      "text": "Enter Othello."
+    },
+    {
+      "after_line": 27,
+      "text": "How is’t with you, my lord?"
+    },
+    {
+      "after_line": 28,
+      "text": "Aside."
+    },
+    {
+      "after_line": 91,
+      "text": "Exit."
+    },
+    {
+      "after_line": 98,
+      "text": "Enter Cassio and Iago."
+    },
+    {
+      "after_line": 132,
+      "text": "Exit Iago."
+    },
+    {
+      "after_line": 161,
+      "text": "Exeunt Desdemona and Emilia."
+    },
+    {
+      "after_line": 161,
+      "text": "Enter Bianca."
+    },
+    {
+      "after_line": 172,
+      "text": "Giving her Desdemona’s handkerchief."
+    },
+    {
+      "after_line": 195,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "othello_act3_scene4_gloss1",
+      "line": 1,
+      "phrase": "sirrah",
+      "definition": "a form of address to a male inferior or servant"
+    },
+    {
+      "id": "othello_act3_scene4_gloss2",
+      "line": 2,
+      "phrase": "lies",
+      "definition": "lodges — the Clown quibbles that 'lies' means speaks falsely"
+    },
+    {
+      "id": "othello_act3_scene4_gloss5",
+      "line": 20,
+      "phrase": "crusadoes",
+      "definition": "Portuguese gold coins stamped with the cross"
+    },
+    {
+      "id": "othello_act3_scene4_gloss6",
+      "line": 21,
+      "phrase": "baseness",
+      "definition": "meanness of mind; suspicion"
+    },
+    {
+      "id": "othello_act3_scene4_gloss7",
+      "line": 25,
+      "phrase": "humours",
+      "definition": "temperamental moods; bodily fluids believed to govern character"
+    },
+    {
+      "id": "othello_act3_scene4_gloss8",
+      "line": 28,
+      "phrase": "hardness to dissemble",
+      "definition": "difficulty in concealing what I feel"
+    },
+    {
+      "id": "othello_act3_scene4_gloss9",
+      "line": 33,
+      "phrase": "moist",
+      "definition": "in palmistry, a moist palm signaled a passionate, possibly lustful, nature"
+    },
+    {
+      "id": "othello_act3_scene4_gloss10",
+      "line": 32,
+      "phrase": "argues fruitfulness and liberal heart",
+      "definition": "shows fertility and a too-generous disposition — Othello's veiled accusation"
+    },
+    {
+      "id": "othello_act3_scene4_gloss11",
+      "line": 34,
+      "phrase": "sequester",
+      "definition": "separation; restraint"
+    },
+    {
+      "id": "othello_act3_scene4_gloss12",
+      "line": 40,
+      "phrase": "liberal hand",
+      "definition": "free giving; by implication, sexual looseness"
+    },
+    {
+      "id": "othello_act3_scene4_gloss13",
+      "line": 45,
+      "phrase": "salt and sorry rheum",
+      "definition": "salty and painful head-cold"
+    },
+    {
+      "id": "othello_act3_scene4_gloss14",
+      "line": 51,
+      "phrase": "Egyptian",
+      "definition": "gypsy; one believed in Shakespeare's day to be from Egypt and skilled in enchantment"
+    },
+    {
+      "id": "othello_act3_scene4_gloss15",
+      "line": 52,
+      "phrase": "charmer",
+      "definition": "sorceress; enchantress"
+    },
+    {
+      "id": "othello_act3_scene4_gloss16",
+      "line": 55,
+      "phrase": "amiable",
+      "definition": "lovable; pleasing"
+    },
+    {
+      "id": "othello_act3_scene4_gloss17",
+      "line": 55,
+      "phrase": "subdue",
+      "definition": "bring under sway"
+    },
+    {
+      "id": "othello_act3_scene4_gloss18",
+      "line": 63,
+      "phrase": "perdition",
+      "definition": "ruin; damnation"
+    },
+    {
+      "id": "othello_act3_scene4_gloss19",
+      "line": 66,
+      "phrase": "sibyl",
+      "definition": "a female prophet of pagan antiquity"
+    },
+    {
+      "id": "othello_act3_scene4_gloss20",
+      "line": 67,
+      "phrase": "compasses",
+      "definition": "revolutions; complete courses"
+    },
+    {
+      "id": "othello_act3_scene4_gloss21",
+      "line": 68,
+      "phrase": "prophetic fury",
+      "definition": "the divine frenzy of prophecy"
+    },
+    {
+      "id": "othello_act3_scene4_gloss23",
+      "line": 70,
+      "phrase": "mummy",
+      "definition": "a pigment made from embalmed bodies, used as a medicine and dye"
+    },
+    {
+      "id": "othello_act3_scene4_gloss24",
+      "line": 71,
+      "phrase": "Conserved of",
+      "definition": "preserved from; made from"
+    },
+    {
+      "id": "othello_act3_scene4_gloss25",
+      "line": 75,
+      "phrase": "startingly and rash",
+      "definition": "abruptly and impetuously"
+    },
+    {
+      "id": "othello_act3_scene4_gloss26",
+      "line": 136,
+      "phrase": "puddled",
+      "definition": "muddied; troubled"
+    },
+    {
+      "id": "othello_act3_scene4_gloss27",
+      "line": 139,
+      "phrase": "indues",
+      "definition": "disposes; inclines"
+    },
+    {
+      "id": "othello_act3_scene4_gloss28",
+      "line": 144,
+      "phrase": "unhandsome warrior",
+      "definition": "unworthy soldier — Desdemona turns Othello's earlier endearment on herself"
+    },
+    {
+      "id": "othello_act3_scene4_gloss30",
+      "line": 149,
+      "phrase": "toy",
+      "definition": "whim; trivial mood"
+    },
+    {
+      "id": "othello_act3_scene4_gloss32",
+      "line": 114,
+      "phrase": "alms",
+      "definition": "charitable giving"
+    },
+    {
+      "id": "othello_act3_scene4_gloss33",
+      "line": 168,
+      "phrase": "the dial",
+      "definition": "the clock-face"
+    },
+    {
+      "id": "othello_act3_scene4_gloss34",
+      "line": 171,
+      "phrase": "continuate time",
+      "definition": "continuous, uninterrupted time"
+    },
+    {
+      "id": "othello_act3_scene4_gloss35",
+      "line": 173,
+      "phrase": "Take me this work out",
+      "definition": "copy this embroidery for me"
+    },
+    {
+      "id": "othello_act3_scene4_gloss36",
+      "line": 182,
+      "phrase": "demanded",
+      "definition": "asked for"
+    },
+    {
+      "id": "othello_act3_scene4_gloss38",
+      "line": 187,
+      "phrase": "addition",
+      "definition": "honor; credit"
+    },
+    {
+      "id": "othello_act3_scene4_gloss39",
+      "line": 195,
+      "phrase": "circumstanced",
+      "definition": "subject to circumstances; obliged to wait"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "othello_act3_scene4_ann1",
+      "line_start": 57,
+      "line_end": 98,
+      "citation_display": "Othello 3.4.57–98",
+      "category": "thematic",
+      "title": "The handkerchief and its contradictions",
+      "body": "Othello's account of the handkerchief's origin is a Renaissance marvel: an Egyptian charmer, a sibyl in prophetic frenzy, silkworms at the full moon, dye made of mummy (powdered embalmed bodies) conserved from maidens' hearts. Every detail is excessive. The handkerchief is love-token, ethnic heirloom, magical object, theatrical prop, forensic evidence. It is made to bear more meaning than any small cloth can bear.\n\nShakespeare is deliberate about this. The handkerchief has, across the play, already meant fidelity (a wedding token), matriarchal inheritance (Othello's mother's), ordinary housekeeping (it wipes Othello's brow), erotic transfer (handed to Cassio through Emilia's theft), and commodity (borrowed by Bianca). It survives each meaning and acquires the next. By Act 5 it will have outlived its interpretive anchor: Othello will read it as proof of adultery, Desdemona as a kept kindness, Emilia as a husband's trinket, Cassio as an unknown gift. No one reading is wrong; each is the handkerchief for its holder.\n\nThis is the play's most sustained meditation on evidence. The cloth itself stays the same. The meaning it bears is entirely a function of who holds it and what they need it to mean.",
+      "sources": [
+        "Lynda E. Boose, 'Othello's Handkerchief', *English Literary Renaissance* (1975)",
+        "Harry Berger Jr., *Making Trifles of Terrors* (1997)",
+        "James L. Calderwood, *The Properties of Othello* (1989)"
+      ]
+    },
+    {
+      "id": "othello_act3_scene4_ann2",
+      "line_start": 150,
+      "line_end": 200,
+      "citation_display": "Othello 3.4.150–200",
+      "category": "thematic",
+      "title": "Bianca and the three-woman structure",
+      "body": "Bianca's entrance introduces the play's third female type. Desdemona is the wife; Emilia is the maid and the ironic realist; Bianca is the mistress, the professional companion whom Cassio is honored to receive and ashamed to be seen with. The triad — wife, servant, courtesan — maps the range of women Venetian society acknowledged, and the traffic in women between them, figured by the handkerchief moving from Desdemona's hand to Emilia's to Iago's to Cassio's to Bianca's, is a slow demonstration of how female property is passed and reread.\n\nBianca's rage at the handkerchief's provenance — 'I must take out the work?' — is the first honest anger any woman voices in the act. The play will, by 5.2, return to Emilia the same capacity. The sequence matters: the women closest to the center of power speak last.",
+      "sources": [
+        "Carol Thomas Neely, *Broken Nuptials in Shakespeare's Plays* (1985)",
+        "Ann Jennalie Cook, *Making a Match: Courtship in Shakespeare and His Society* (1991)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "othello_act3_scene4_q1",
+      "kind": "comprehension",
+      "prompt": "According to Othello, where did the handkerchief originally come from?",
+      "options": [
+        "A Venetian jeweler commissioned by his father",
+        "An Egyptian charmer/sibyl who gave it to his mother",
+        "The Byzantine emperor's personal gift to Venetian allies",
+        "A gift from Brabantio to welcome him into the family"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 60,
+      "anchor_line_end": 85
+    },
+    {
+      "id": "othello_act3_scene4_q2",
+      "kind": "inference",
+      "prompt": "Desdemona lies to Othello about the handkerchief — she says she is not without it, though she has lost it. Why?",
+      "options": [
+        "She is beginning an affair with Cassio and wants to cover her tracks",
+        "She is trying to protect Othello from upset while she searches for it, a well-intentioned evasion that will turn ruinous",
+        "She has given it to Cassio as a love token",
+        "She has sold it to pay a gambling debt"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 85,
+      "anchor_line_end": 105
+    },
+    {
+      "id": "othello_act3_scene4_q3",
+      "kind": "theme",
+      "prompt": "The handkerchief means different things to different characters (wedding token, maternal heirloom, magical object, romantic prop, cheap cloth). What does Shakespeare's handling of this object suggest about evidence?",
+      "options": [
+        "Evidence is always objective and speaks for itself",
+        "Meaning is not in the object but in who holds it and what they need it to mean",
+        "Handkerchiefs should be registered with Venetian authorities",
+        "Only the original owner can correctly interpret an object's meaning"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 55,
+      "anchor_line_end": 200
+    },
+    {
+      "id": "othello_act3_scene4_q4",
+      "kind": "close_reading",
+      "prompt": "What does Othello mean when he tells Desdemona her palm is 'moist'?",
+      "options": [
+        "She has been working with water",
+        "In Elizabethan palmistry, a moist palm suggested a passionate, possibly lustful nature — a veiled accusation",
+        "She is ill and should rest",
+        "It is a gesture of affection and warmth"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 40,
+      "anchor_line_end": 55
+    }
+  ]
+}

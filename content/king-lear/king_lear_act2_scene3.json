@@ -1,0 +1,298 @@
+{
+  "section_id": "king_lear_act2_scene3",
+  "work_id": "king-lear",
+  "sequence": 8,
+  "act": 2,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "A wood",
+  "line_count": 21,
+  "word_count": 153,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "EDGAR",
+      "text": "I heard myself proclaim’d;"
+    },
+    {
+      "number": 2,
+      "speaker": "EDGAR",
+      "text": "And by the happy hollow of a tree"
+    },
+    {
+      "number": 3,
+      "speaker": "EDGAR",
+      "text": "Escaped the hunt. No port is free; no place,"
+    },
+    {
+      "number": 4,
+      "speaker": "EDGAR",
+      "text": "That guard, and most unusual vigilance,"
+    },
+    {
+      "number": 5,
+      "speaker": "EDGAR",
+      "text": "Does not attend my taking. Whiles I may ’scape,"
+    },
+    {
+      "number": 6,
+      "speaker": "EDGAR",
+      "text": "I will preserve myself: and am bethought"
+    },
+    {
+      "number": 7,
+      "speaker": "EDGAR",
+      "text": "To take the basest and most poorest shape"
+    },
+    {
+      "number": 8,
+      "speaker": "EDGAR",
+      "text": "That ever penury, in contempt of man,"
+    },
+    {
+      "number": 9,
+      "speaker": "EDGAR",
+      "text": "Brought near to beast: my face I’ll grime with filth;"
+    },
+    {
+      "number": 10,
+      "speaker": "EDGAR",
+      "text": "Blanket my loins: elf all my hair in knots;"
+    },
+    {
+      "number": 11,
+      "speaker": "EDGAR",
+      "text": "And with presented nakedness out-face"
+    },
+    {
+      "number": 12,
+      "speaker": "EDGAR",
+      "text": "The winds and persecutions of the sky."
+    },
+    {
+      "number": 13,
+      "speaker": "EDGAR",
+      "text": "The country gives me proof and precedent"
+    },
+    {
+      "number": 14,
+      "speaker": "EDGAR",
+      "text": "Of Bedlam beggars, who, with roaring voices,"
+    },
+    {
+      "number": 15,
+      "speaker": "EDGAR",
+      "text": "Strike in their numb’d and mortified bare arms"
+    },
+    {
+      "number": 16,
+      "speaker": "EDGAR",
+      "text": "Pins, wooden pricks, nails, sprigs of rosemary;"
+    },
+    {
+      "number": 17,
+      "speaker": "EDGAR",
+      "text": "And with this horrible object, from low farms,"
+    },
+    {
+      "number": 18,
+      "speaker": "EDGAR",
+      "text": "Poor pelting villages, sheep-cotes, and mills,"
+    },
+    {
+      "number": 19,
+      "speaker": "EDGAR",
+      "text": "Sometime with lunatic bans, sometime with prayers,"
+    },
+    {
+      "number": 20,
+      "speaker": "EDGAR",
+      "text": "Enforce their charity. Poor Turlygod! poor Tom!"
+    },
+    {
+      "number": 21,
+      "speaker": "EDGAR",
+      "text": "That’s something yet: Edgar I nothing am."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Edgar."
+    },
+    {
+      "after_line": 21,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act2_scene3_gloss1",
+      "line": 2,
+      "phrase": "happy hollow of a tree",
+      "definition": "lucky cavity in a tree — Edgar's hiding place"
+    },
+    {
+      "id": "king_lear_act2_scene3_gloss2",
+      "line": 3,
+      "phrase": "port",
+      "definition": "gate; city entrance"
+    },
+    {
+      "id": "king_lear_act2_scene3_gloss3",
+      "line": 5,
+      "phrase": "attend my taking",
+      "definition": "await my capture"
+    },
+    {
+      "id": "king_lear_act2_scene3_gloss4",
+      "line": 14,
+      "phrase": "Bedlam beggars",
+      "definition": "mad beggars discharged from Bethlem Hospital — the Elizabethan equivalent of discharged psychiatric patients roaming the countryside"
+    },
+    {
+      "id": "king_lear_act2_scene3_gloss5",
+      "line": 15,
+      "phrase": "mortified",
+      "definition": "deadened; numbed"
+    },
+    {
+      "id": "king_lear_act2_scene3_gloss6",
+      "line": 16,
+      "phrase": "pins",
+      "definition": "common needles"
+    },
+    {
+      "id": "king_lear_act2_scene3_gloss7",
+      "line": 16,
+      "phrase": "sprigs of rosemary",
+      "definition": "rosemary twigs — penitential herb"
+    },
+    {
+      "id": "king_lear_act2_scene3_gloss8",
+      "line": 19,
+      "phrase": "Sometime with lunatic bans",
+      "definition": "at times with mad curses"
+    },
+    {
+      "id": "king_lear_act2_scene3_gloss9",
+      "line": 20,
+      "phrase": "Poor Turlygod",
+      "definition": "a Bedlam beggar type — Edgar rehearses his Poor Tom persona"
+    },
+    {
+      "id": "king_lear_act2_scene3_gloss10",
+      "line": 20,
+      "phrase": "Poor Tom",
+      "definition": "the archetypal Bedlam beggar name — Edgar's new identity"
+    },
+    {
+      "id": "king_lear_act2_scene3_gloss11",
+      "line": 21,
+      "phrase": "Edgar I nothing am",
+      "definition": "as Edgar I am nothing — the self-erasure"
+    },
+    {
+      "id": "king_lear_act2_scene3_gloss12",
+      "line": 1,
+      "phrase": "proclaim’d",
+      "definition": "publicly declared an outlaw"
+    },
+    {
+      "id": "king_lear_act2_scene3_gloss13",
+      "line": 3,
+      "phrase": "escape",
+      "definition": "flee"
+    },
+    {
+      "id": "king_lear_act2_scene3_gloss14",
+      "line": 3,
+      "phrase": "no port is free",
+      "definition": "every harbor is watched — no exit from Britain"
+    },
+    {
+      "id": "king_lear_act2_scene3_gloss16",
+      "line": 6,
+      "phrase": "preserve",
+      "definition": "protect"
+    },
+    {
+      "id": "king_lear_act2_scene3_gloss17",
+      "line": 10,
+      "phrase": "elf",
+      "definition": "tangle into elf-locks — matted hair as if by fairies"
+    },
+    {
+      "id": "king_lear_act2_scene3_gloss18",
+      "line": 10,
+      "phrase": "elf all my hair in knots",
+      "definition": "tangle hair into mats — a Bedlam-beggar trait"
+    },
+    {
+      "id": "king_lear_act2_scene3_gloss19",
+      "line": 17,
+      "phrase": "object",
+      "definition": "sight; appearance"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act2_scene3_ann1",
+      "line_start": 1,
+      "line_end": 21,
+      "citation_display": "King Lear 2.3.1–21",
+      "category": "historical",
+      "title": "Edgar as Poor Tom — Bedlam beggars as historical type",
+      "body": "Edgar's plan to disguise himself as a 'Bedlam beggar' draws on a real Elizabethan phenomenon. Bethlem Royal Hospital (Bedlam) in London housed the mentally ill; discharged patients — or people pretending to be discharged patients — were a recognized class of roadside beggar, sometimes called 'Abraham-men.' They used characteristic attire (pinned rosemary sprigs, mortified arms), characteristic speech (lunatic cursing, demon-naming), and sometimes exaggerated or faked their condition for alms. Edgar's 'Edgar I nothing am' adopts an extant social costume. Samuel Harsnett's 1603 Declaration of Egregious Popish Impostures — from which Shakespeare draws Poor Tom's demon names in 3.4 — was partly an exposure of faked demoniac possession by exorcists. Edgar's Poor Tom thus operates inside a real cultural argument Shakespeare was reading about.",
+      "sources": [
+        "Samuel Harsnett, A Declaration of Egregious Popish Impostures (1603)",
+        "Kenneth Muir, Shakespeare's Sources (1957)"
+      ]
+    },
+    {
+      "id": "king_lear_act2_scene3_ann2",
+      "line_start": 6,
+      "line_end": 21,
+      "citation_display": "King Lear 2.3.6–21",
+      "category": "structural",
+      "title": "Edgar's self-erasure — 'Edgar I nothing am'",
+      "body": "Edgar's twenty-one-line soliloquy is one of the play's quiet structural masterpieces. He disguises himself as 'Poor Turlygod, Poor Tom' and closes with 'Edgar I nothing am.' The phrase echoes the play's governing word ('nothing') and reassigns it to self-erasure rather than Cordelia's refusal or Lear's reduction. In 3.4 and 4.6 Edgar will do much of the play's work of moral witness while erased. Shakespeare's gamble is that the character who abolishes his identity is the one who can best observe — and who, at the end, may be the one to inherit the kingdom. Edgar's trajectory (disguise, witness, restorer) is the play's longest developmental arc, and it starts here.",
+      "sources": [
+        "Jonathan Bate, Soul of the Age (2008)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act2_scene3_q1",
+      "kind": "historical",
+      "prompt": "What historical social type is Edgar disguising himself as in 2.3?",
+      "options": [
+        "A Roman senator",
+        "A 'Bedlam beggar' — a discharged-or-pretending-to-be-discharged inmate of Bethlem Hospital (London), a recognized class of Elizabethan roadside beggar",
+        "A priest",
+        "A pirate"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 21
+    },
+    {
+      "id": "king_lear_act2_scene3_q2",
+      "kind": "close_reading",
+      "prompt": "What is significant about Edgar's 'Edgar I nothing am'?",
+      "options": [
+        "It is a grammatical error",
+        "It echoes the play's governing word 'nothing' — now reassigned to self-erasure; Edgar becomes the most morally attentive witness precisely by abolishing his identity",
+        "It is a curse",
+        "It quotes Virgil"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 20,
+      "anchor_line_end": 21
+    }
+  ]
+}

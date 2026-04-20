@@ -1,0 +1,363 @@
+{
+  "section_id": "romeo_and_juliet_act4_scene2",
+  "work_id": "romeo-and-juliet",
+  "sequence": 20,
+  "act": 4,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "Hall in Capulet's house",
+  "line_count": 46,
+  "word_count": 365,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CAPULET",
+      "text": "So many guests invite as here are writ."
+    },
+    {
+      "number": 2,
+      "speaker": "CAPULET",
+      "text": "Sirrah, go hire me twenty cunning cooks."
+    },
+    {
+      "number": 3,
+      "speaker": "SECOND SERVINGMAN",
+      "text": "You shall have none ill, sir; for I’ll try if they can lick their fingers."
+    },
+    {
+      "number": 4,
+      "speaker": "CAPULET",
+      "text": "How canst thou try them so?"
+    },
+    {
+      "number": 5,
+      "speaker": "SECOND SERVINGMAN",
+      "text": "Marry, sir, ’tis an ill cook that cannot lick his own fingers:"
+    },
+    {
+      "number": 6,
+      "speaker": "SECOND SERVINGMAN",
+      "text": "therefore he that cannot lick his fingers goes not with me."
+    },
+    {
+      "number": 7,
+      "speaker": "CAPULET",
+      "text": "Go, be gone."
+    },
+    {
+      "number": 8,
+      "speaker": "CAPULET",
+      "text": "We shall be much unfurnish’d for this time."
+    },
+    {
+      "number": 9,
+      "speaker": "CAPULET",
+      "text": "What, is my daughter gone to Friar Laurence?"
+    },
+    {
+      "number": 10,
+      "speaker": "NURSE",
+      "text": "Ay, forsooth."
+    },
+    {
+      "number": 11,
+      "speaker": "CAPULET",
+      "text": "Well, he may chance to do some good on her:"
+    },
+    {
+      "number": 12,
+      "speaker": "CAPULET",
+      "text": "A peevish self-will’d harlotry it is."
+    },
+    {
+      "number": 13,
+      "speaker": "NURSE",
+      "text": "See where she comes from shrift with merry look."
+    },
+    {
+      "number": 14,
+      "speaker": "CAPULET",
+      "text": "How now, my headstrong! where have you been gadding?"
+    },
+    {
+      "number": 15,
+      "speaker": "JULIET",
+      "text": "Where I have learn’d me to repent the sin"
+    },
+    {
+      "number": 16,
+      "speaker": "JULIET",
+      "text": "Of disobedient opposition"
+    },
+    {
+      "number": 17,
+      "speaker": "JULIET",
+      "text": "To you and your behests, and am enjoin’d"
+    },
+    {
+      "number": 18,
+      "speaker": "JULIET",
+      "text": "By holy Laurence to fall prostrate here,"
+    },
+    {
+      "number": 19,
+      "speaker": "JULIET",
+      "text": "And beg your pardon: pardon, I beseech you!"
+    },
+    {
+      "number": 20,
+      "speaker": "JULIET",
+      "text": "Henceforward I am ever ruled by you."
+    },
+    {
+      "number": 21,
+      "speaker": "CAPULET",
+      "text": "Send for the county; go tell him of this:"
+    },
+    {
+      "number": 22,
+      "speaker": "CAPULET",
+      "text": "I’ll have this knot knit up to-morrow morning."
+    },
+    {
+      "number": 23,
+      "speaker": "JULIET",
+      "text": "I met the youthful lord at Laurence’ cell;"
+    },
+    {
+      "number": 24,
+      "speaker": "JULIET",
+      "text": "And gave him what becomed love I might"
+    },
+    {
+      "number": 25,
+      "speaker": "JULIET",
+      "text": "Not stepping o’er the bounds of modesty."
+    },
+    {
+      "number": 26,
+      "speaker": "CAPULET",
+      "text": "Why, I am glad on’t; this is well: stand up:"
+    },
+    {
+      "number": 27,
+      "speaker": "CAPULET",
+      "text": "This is as’t should be. Let me see the county;"
+    },
+    {
+      "number": 28,
+      "speaker": "CAPULET",
+      "text": "Ay, marry, go, I say, and fetch him hither."
+    },
+    {
+      "number": 29,
+      "speaker": "CAPULET",
+      "text": "Now, afore God! this reverend holy friar,"
+    },
+    {
+      "number": 30,
+      "speaker": "CAPULET",
+      "text": "All our whole city is much bound to him."
+    },
+    {
+      "number": 31,
+      "speaker": "JULIET",
+      "text": "Nurse, will you go with me into my closet,"
+    },
+    {
+      "number": 32,
+      "speaker": "JULIET",
+      "text": "To help me sort such needful ornaments"
+    },
+    {
+      "number": 33,
+      "speaker": "JULIET",
+      "text": "As you think fit to furnish me to-morrow?"
+    },
+    {
+      "number": 34,
+      "speaker": "LADY CAPULET",
+      "text": "No, not till Thursday; there is time enough."
+    },
+    {
+      "number": 35,
+      "speaker": "CAPULET",
+      "text": "Go, nurse, go with her: we’ll to church to-morrow."
+    },
+    {
+      "number": 36,
+      "speaker": "LADY CAPULET",
+      "text": "We shall be short in our provision:"
+    },
+    {
+      "number": 37,
+      "speaker": "LADY CAPULET",
+      "text": "’Tis now near night."
+    },
+    {
+      "number": 37,
+      "speaker": "CAPULET",
+      "text": "Tush, I will stir about,"
+    },
+    {
+      "number": 38,
+      "speaker": "CAPULET",
+      "text": "And all things shall be well, I warrant thee, wife:"
+    },
+    {
+      "number": 39,
+      "speaker": "CAPULET",
+      "text": "Go thou to Juliet, help to deck up her;"
+    },
+    {
+      "number": 40,
+      "speaker": "CAPULET",
+      "text": "I’ll not to bed to-night; let me alone;"
+    },
+    {
+      "number": 41,
+      "speaker": "CAPULET",
+      "text": "I’ll play the housewife for this once. What, ho!"
+    },
+    {
+      "number": 42,
+      "speaker": "CAPULET",
+      "text": "They are all forth. Well, I will walk myself"
+    },
+    {
+      "number": 43,
+      "speaker": "CAPULET",
+      "text": "To County Paris, to prepare him up"
+    },
+    {
+      "number": 44,
+      "speaker": "CAPULET",
+      "text": "Against to-morrow: my heart is wondrous light,"
+    },
+    {
+      "number": 45,
+      "speaker": "CAPULET",
+      "text": "Since this same wayward girl is so reclaim’d."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Capulet, Lady Capulet, Nurse, and two Servingmen."
+    },
+    {
+      "after_line": 1,
+      "text": "Exit First Servingman."
+    },
+    {
+      "after_line": 7,
+      "text": "Exit Second Servingman."
+    },
+    {
+      "after_line": 13,
+      "text": "Enter Juliet."
+    },
+    {
+      "after_line": 35,
+      "text": "Exeunt Juliet and Nurse."
+    },
+    {
+      "after_line": 45,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act4_scene2_gloss1",
+      "line": 2,
+      "phrase": "cunning cooks",
+      "definition": "expert kitchen staff — for the wedding feast"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene2_gloss2",
+      "line": 6,
+      "phrase": "lick his fingers",
+      "definition": "proverbial test of a good cook — the cook who tastes his own work"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene2_gloss3",
+      "line": 12,
+      "phrase": "peevish",
+      "definition": "willful; cross"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene2_gloss4",
+      "line": 12,
+      "phrase": "harlotry",
+      "definition": "wayward wench — not a literal charge"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene2_gloss5",
+      "line": 19,
+      "phrase": "Pardon, I beseech you!",
+      "definition": "Juliet feigns repentance"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene2_gloss6",
+      "line": 24,
+      "phrase": "become",
+      "definition": "befit"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene2_gloss7",
+      "line": 21,
+      "phrase": "Send for the county",
+      "definition": "summon Paris"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene2_gloss8",
+      "line": 29,
+      "phrase": "reverend",
+      "definition": "respected holy Father — the Friar"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene2_gloss9",
+      "line": 36,
+      "phrase": "short",
+      "definition": "short-notice"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene2_gloss10",
+      "line": 39,
+      "phrase": "deck up her",
+      "definition": "dress her in wedding attire"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act4_scene2_ann1",
+      "line_start": 14,
+      "line_end": 36,
+      "citation_display": "Romeo and Juliet 4.2.14–36",
+      "category": "thematic",
+      "title": "Juliet's strategic penitence",
+      "body": "Juliet, newly returned from the Friar's with the potion, kneels to Capulet and asks forgiveness. Her performance is so convincing that Capulet, delighted, moves the wedding from Thursday to Wednesday — one day earlier. The irony is cruel: Juliet's theatrical obedience has accelerated the timetable she was trying to evade. The scene demonstrates, quietly, how consequential even small forms of performance become in the play; Juliet's growing competence as a self-concealing actor will carry her into the tomb in the next scene. Capulet's generous response here ('My heart is wondrous light') also reminds us that he is not a monster — just a patriarch whose affections operate through his dynasty.",
+      "sources": [
+        "Marjorie Garber, Shakespeare After All (2004)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act4_scene2_q1",
+      "kind": "inference",
+      "prompt": "What unintended consequence follows from Juliet's apology?",
+      "options": [
+        "Her father forgives her but the marriage is still Thursday",
+        "Capulet, delighted, moves the wedding from Thursday to Wednesday — one day earlier, tightening the Friar's timeline",
+        "The wedding is cancelled",
+        "Lady Capulet suspects nothing"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 30,
+      "anchor_line_end": 44
+    }
+  ]
+}

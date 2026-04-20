@@ -1,0 +1,597 @@
+{
+  "section_id": "henry_v_act4_scene2",
+  "work_id": "henry-v",
+  "sequence": 19,
+  "act": 4,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "The French camp",
+  "line_count": 62,
+  "word_count": 474,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "ORLEANS",
+      "text": "The sun doth gild our armour; up, my lords!"
+    },
+    {
+      "number": 2,
+      "speaker": "DAUPHIN",
+      "text": "Monte à cheval! My horse! varlet! laquais! ha!"
+    },
+    {
+      "number": 3,
+      "speaker": "ORLEANS",
+      "text": "O brave spirit!"
+    },
+    {
+      "number": 3,
+      "speaker": "DAUPHIN",
+      "text": "Via! les eaux et la terre."
+    },
+    {
+      "number": 4,
+      "speaker": "ORLEANS",
+      "text": "Rien puis? l’air et le feu."
+    },
+    {
+      "number": 4,
+      "speaker": "DAUPHIN",
+      "text": "Ciel, cousin Orleans."
+    },
+    {
+      "number": 5,
+      "speaker": "CONSTABLE",
+      "text": "Hark, how our steeds for present service neigh!"
+    },
+    {
+      "number": 6,
+      "speaker": "DAUPHIN",
+      "text": "Mount them, and make incision in their hides,"
+    },
+    {
+      "number": 7,
+      "speaker": "DAUPHIN",
+      "text": "That their hot blood may spin in English eyes,"
+    },
+    {
+      "number": 8,
+      "speaker": "DAUPHIN",
+      "text": "And dout them with superfluous courage, ha!"
+    },
+    {
+      "number": 9,
+      "speaker": "RAMBURES",
+      "text": "What, will you have them weep our horses’ blood?"
+    },
+    {
+      "number": 10,
+      "speaker": "RAMBURES",
+      "text": "How shall we, then, behold their natural tears?"
+    },
+    {
+      "number": 11,
+      "speaker": "MESSENGER",
+      "text": "The English are embattled, you French peers."
+    },
+    {
+      "number": 12,
+      "speaker": "CONSTABLE",
+      "text": "To horse, you gallant princes! straight to horse!"
+    },
+    {
+      "number": 13,
+      "speaker": "CONSTABLE",
+      "text": "Do but behold yon poor and starved band,"
+    },
+    {
+      "number": 14,
+      "speaker": "CONSTABLE",
+      "text": "And your fair show shall suck away their souls,"
+    },
+    {
+      "number": 15,
+      "speaker": "CONSTABLE",
+      "text": "Leaving them but the shales and husks of men."
+    },
+    {
+      "number": 16,
+      "speaker": "CONSTABLE",
+      "text": "There is not work enough for all our hands;"
+    },
+    {
+      "number": 17,
+      "speaker": "CONSTABLE",
+      "text": "Scarce blood enough in all their sickly veins"
+    },
+    {
+      "number": 18,
+      "speaker": "CONSTABLE",
+      "text": "To give each naked curtle-axe a stain,"
+    },
+    {
+      "number": 19,
+      "speaker": "CONSTABLE",
+      "text": "That our French gallants shall today draw out,"
+    },
+    {
+      "number": 20,
+      "speaker": "CONSTABLE",
+      "text": "And sheathe for lack of sport: let us but blow on them,"
+    },
+    {
+      "number": 21,
+      "speaker": "CONSTABLE",
+      "text": "The vapour of our valour will o’erturn them."
+    },
+    {
+      "number": 22,
+      "speaker": "CONSTABLE",
+      "text": "’Tis positive ’gainst all exceptions, lords,"
+    },
+    {
+      "number": 23,
+      "speaker": "CONSTABLE",
+      "text": "That our superfluous lackeys and our peasants,"
+    },
+    {
+      "number": 24,
+      "speaker": "CONSTABLE",
+      "text": "Who in unnecessary action swarm"
+    },
+    {
+      "number": 25,
+      "speaker": "CONSTABLE",
+      "text": "About our squares of battle, were enough"
+    },
+    {
+      "number": 26,
+      "speaker": "CONSTABLE",
+      "text": "To purge this field of such a hilding foe,"
+    },
+    {
+      "number": 27,
+      "speaker": "CONSTABLE",
+      "text": "Though we upon this mountain’s basis by"
+    },
+    {
+      "number": 28,
+      "speaker": "CONSTABLE",
+      "text": "Took stand for idle speculation:"
+    },
+    {
+      "number": 29,
+      "speaker": "CONSTABLE",
+      "text": "But that our honours must not. What’s to say?"
+    },
+    {
+      "number": 30,
+      "speaker": "CONSTABLE",
+      "text": "A very little little let us do,"
+    },
+    {
+      "number": 31,
+      "speaker": "CONSTABLE",
+      "text": "And all is done. Then let the trumpets sound"
+    },
+    {
+      "number": 32,
+      "speaker": "CONSTABLE",
+      "text": "The tucket sonance and the note to mount;"
+    },
+    {
+      "number": 33,
+      "speaker": "CONSTABLE",
+      "text": "For our approach shall so much dare the field"
+    },
+    {
+      "number": 34,
+      "speaker": "CONSTABLE",
+      "text": "That England shall crouch down in fear and yield."
+    },
+    {
+      "number": 35,
+      "speaker": "GRANDPRÉ",
+      "text": "Why do you stay so long, my lords of France?"
+    },
+    {
+      "number": 36,
+      "speaker": "GRANDPRÉ",
+      "text": "Yond island carrions, desperate of their bones,"
+    },
+    {
+      "number": 37,
+      "speaker": "GRANDPRÉ",
+      "text": "Ill-favouredly become the morning field:"
+    },
+    {
+      "number": 38,
+      "speaker": "GRANDPRÉ",
+      "text": "Their ragged curtains poorly are let loose,"
+    },
+    {
+      "number": 39,
+      "speaker": "GRANDPRÉ",
+      "text": "And our air shakes them passing scornfully:"
+    },
+    {
+      "number": 40,
+      "speaker": "GRANDPRÉ",
+      "text": "Big Mars seems bankrupt in their beggar’d host"
+    },
+    {
+      "number": 41,
+      "speaker": "GRANDPRÉ",
+      "text": "And faintly through a rusty beaver peeps:"
+    },
+    {
+      "number": 42,
+      "speaker": "GRANDPRÉ",
+      "text": "The horsemen sit like fixed candlesticks,"
+    },
+    {
+      "number": 43,
+      "speaker": "GRANDPRÉ",
+      "text": "With torch-staves in their hand; and their poor jades"
+    },
+    {
+      "number": 44,
+      "speaker": "GRANDPRÉ",
+      "text": "Lob down their heads, drooping the hides and hips,"
+    },
+    {
+      "number": 45,
+      "speaker": "GRANDPRÉ",
+      "text": "The gum down-roping from their pale-dead eyes,"
+    },
+    {
+      "number": 46,
+      "speaker": "GRANDPRÉ",
+      "text": "And in their pale dull mouths the gimmal bit"
+    },
+    {
+      "number": 47,
+      "speaker": "GRANDPRÉ",
+      "text": "Lies foul with chew’d grass, still and motionless;"
+    },
+    {
+      "number": 48,
+      "speaker": "GRANDPRÉ",
+      "text": "And their executors, the knavish crows,"
+    },
+    {
+      "number": 49,
+      "speaker": "GRANDPRÉ",
+      "text": "Fly o’er them, all impatient for their hour."
+    },
+    {
+      "number": 50,
+      "speaker": "GRANDPRÉ",
+      "text": "Description cannot suit itself in words"
+    },
+    {
+      "number": 51,
+      "speaker": "GRANDPRÉ",
+      "text": "To demonstrate the life of such a battle"
+    },
+    {
+      "number": 52,
+      "speaker": "GRANDPRÉ",
+      "text": "In life so lifeless as it shows itself."
+    },
+    {
+      "number": 53,
+      "speaker": "CONSTABLE",
+      "text": "They have said their prayers, and they stay for death."
+    },
+    {
+      "number": 54,
+      "speaker": "DAUPHIN",
+      "text": "Shall we go send them dinners and fresh suits"
+    },
+    {
+      "number": 55,
+      "speaker": "DAUPHIN",
+      "text": "And give their fasting horses provender,"
+    },
+    {
+      "number": 56,
+      "speaker": "DAUPHIN",
+      "text": "And after fight with them?"
+    },
+    {
+      "number": 57,
+      "speaker": "CONSTABLE",
+      "text": "I stay but for my guidon: to the field!"
+    },
+    {
+      "number": 58,
+      "speaker": "CONSTABLE",
+      "text": "I will the banner from a trumpet take,"
+    },
+    {
+      "number": 59,
+      "speaker": "CONSTABLE",
+      "text": "And use it for my haste. Come, come, away!"
+    },
+    {
+      "number": 60,
+      "speaker": "CONSTABLE",
+      "text": "The sun is high, and we outwear the day."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter the Dauphin, Orleans, Rambures, and others."
+    },
+    {
+      "after_line": 4,
+      "text": "Enter Constable."
+    },
+    {
+      "after_line": 4,
+      "text": "Now, my lord constable!"
+    },
+    {
+      "after_line": 10,
+      "text": "Enter a Messenger."
+    },
+    {
+      "after_line": 34,
+      "text": "Enter Grandpré."
+    },
+    {
+      "after_line": 60,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act4_scene2_gloss1",
+      "line": 1,
+      "phrase": "gild our armour",
+      "definition": "gilds our armour — the sun turns the French armour golden"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss2",
+      "line": 2,
+      "phrase": "Monte à cheval",
+      "definition": "French: 'Mount on horse' — the Dauphin's cry for his mount"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss3",
+      "line": 2,
+      "phrase": "varlet! laquais",
+      "definition": "French: 'knave! lackey!' — the Dauphin calling servants"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss4",
+      "line": 3,
+      "phrase": "Via",
+      "definition": "Italian/French exclamation — 'off we go', 'away'"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss5",
+      "line": 3,
+      "phrase": "les eaux et la terre",
+      "definition": "French: 'the waters and the earth' — mock-elemental dialogue"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss6",
+      "line": 4,
+      "phrase": "Rien puis? l’air et le feu",
+      "definition": "French: 'Nothing more? The air and fire' — Orleans adds the other two elements; the four classical elements ascribed playfully to their horses"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss7",
+      "line": 4,
+      "phrase": "Ciel, cousin Orleans",
+      "definition": "French: 'Heaven, cousin Orleans' — the Dauphin tops him"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss8",
+      "line": 6,
+      "phrase": "incision in their hides",
+      "definition": "cut the horses' hides — the Dauphin's grotesque fantasy of the horses weeping blood"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss9",
+      "line": 8,
+      "phrase": "dout them with superfluous courage",
+      "definition": "extinguish (English eyes) with excess courage — 'dout' = do out, extinguish"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss10",
+      "line": 10,
+      "phrase": "natural tears",
+      "definition": "Rambures's deflation — if the horses weep blood now, they have nothing left for natural grief"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss11",
+      "line": 11,
+      "phrase": "embattled",
+      "definition": "drawn up in battle array"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss12",
+      "line": 14,
+      "phrase": "suck away their souls",
+      "definition": "the mere sight of the French army will drain English morale"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss13",
+      "line": 15,
+      "phrase": "shales and husks",
+      "definition": "empty shells and chaff — what will remain of the English"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss14",
+      "line": 18,
+      "phrase": "curtle-axe",
+      "definition": "cutlass; short broad sword — 'curtle' = short"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss15",
+      "line": 21,
+      "phrase": "vapour of our valour",
+      "definition": "the breath of our courage — will blow the English over"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss16",
+      "line": 23,
+      "phrase": "superfluous lackeys",
+      "definition": "surplus servants — French camp-followers, more than needed"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss17",
+      "line": 25,
+      "phrase": "squares of battle",
+      "definition": "the square formations of troops"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss18",
+      "line": 26,
+      "phrase": "hilding foe",
+      "definition": "worthless, cowardly foe — 'hilding' = good-for-nothing"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss19",
+      "line": 28,
+      "phrase": "idle speculation",
+      "definition": "mere watching — 'we wouldn't even have to fight, just observe'"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss20",
+      "line": 32,
+      "phrase": "tucket sonance",
+      "definition": "a trumpet fanfare — 'tucket' = flourish, 'sonance' = sound"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss21",
+      "line": 36,
+      "phrase": "Yond island carrions",
+      "definition": "those English island-carcasses — 'carrion' = dead flesh"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss22",
+      "line": 38,
+      "phrase": "ragged curtains",
+      "definition": "tattered banners"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss23",
+      "line": 40,
+      "phrase": "Big Mars seems bankrupt",
+      "definition": "Mars, god of war, looks ruined — the English have no martial splendour"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss24",
+      "line": 41,
+      "phrase": "rusty beaver",
+      "definition": "rust-stained visor — 'beaver' = the lower face-guard of a helmet"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss25",
+      "line": 42,
+      "phrase": "fixed candlesticks",
+      "definition": "motionless candlesticks — the English riders don't move"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss26",
+      "line": 43,
+      "phrase": "torch-staves",
+      "definition": "torch-poles — their weapons look ornamental, not deadly"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss27",
+      "line": 44,
+      "phrase": "Lob down their heads",
+      "definition": "droop their heads heavily"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss28",
+      "line": 45,
+      "phrase": "gum down-roping",
+      "definition": "mucus hanging in strings — sick horses"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss29",
+      "line": 46,
+      "phrase": "gimmal bit",
+      "definition": "a jointed horse-bit with two rings"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss30",
+      "line": 48,
+      "phrase": "executors, the knavish crows",
+      "definition": "the crows as the horses' death-executors — already circling"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss31",
+      "line": 54,
+      "phrase": "send them dinners and fresh suits",
+      "definition": "Dauphin's gibe — we might as well feed them before killing them"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss32",
+      "line": 57,
+      "phrase": "guidon",
+      "definition": "a small pennant carried by a cavalry unit"
+    },
+    {
+      "id": "henry_v_act4_scene2_gloss33",
+      "line": 60,
+      "phrase": "outwear the day",
+      "definition": "waste the daylight"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act4_scene2_ann1",
+      "line_start": 35,
+      "line_end": 53,
+      "citation_display": "Henry V 4.2.35–53",
+      "category": "close_reading",
+      "title": "Grandpré's mocking survey — English as dead meat",
+      "body": "Lord Grandpré's speech describing the English army before battle is a small masterpiece of contemptuous portraiture. The English are 'island carrions' — dead flesh — 'desperate of their bones,' their tattered banners hanging limp, 'Big Mars seems bankrupt in their beggar'd host.' The horses 'Lob down their heads,' their bits fouled with chewed grass; the crows are the horses' 'executors,' impatient for the hour. It is a memorable image and (like 3.7) an intensifier of the battle's dramatic irony: the French look at this army and see food for carrion-birds. The English will win in a few hours. Notice also that Grandpré's contempt is specifically for the English army's ragged appearance, not for its fighting quality — he doesn't understand that the longbow will make appearance irrelevant. The scene closes with the Constable reaching for his guidon: the battle starts at the end of this speech.",
+      "sources": [
+        "Juliet Barker, Agincourt: The King, the Campaign, the Battle (2005)",
+        "Emrys Jones, Scenic Form in Shakespeare (1971)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act4_scene2_q1",
+      "kind": "close_reading",
+      "prompt": "Grandpré describes the English army as —",
+      "options": [
+        "A formidable force",
+        "'Island carrions, desperate of their bones' — dead meat, with crows already circling as their 'executors' — a contemptuous image that the battle is about to falsify",
+        "A disciplined Roman legion",
+        "A combined fleet"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 35,
+      "anchor_line_end": 48
+    },
+    {
+      "id": "henry_v_act4_scene2_q2",
+      "kind": "theme",
+      "prompt": "What does the French attitude in 4.2 accomplish structurally?",
+      "options": [
+        "It wastes time",
+        "It amplifies the dramatic irony of the coming victory: the French are certain, the audience knows Agincourt is minutes away, and the English (unseen) are already saying the prayer that 4.3 will stage",
+        "It introduces the wooing subplot",
+        "It previews Henry's death"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 13,
+      "anchor_line_end": 34
+    }
+  ]
+}

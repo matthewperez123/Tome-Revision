@@ -1,0 +1,445 @@
+{
+  "section_id": "henry_v_act4_scene6",
+  "work_id": "henry-v",
+  "sequence": 23,
+  "act": 4,
+  "scene": 6,
+  "kind": "scene",
+  "scene_title": "Another part of the field",
+  "line_count": 39,
+  "word_count": 300,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KING HENRY",
+      "text": "Well have we done, thrice valiant countrymen:"
+    },
+    {
+      "number": 2,
+      "speaker": "KING HENRY",
+      "text": "But all’s not done; yet keep the French the field."
+    },
+    {
+      "number": 3,
+      "speaker": "EXETER",
+      "text": "The Duke of York commends him to your majesty."
+    },
+    {
+      "number": 4,
+      "speaker": "KING HENRY",
+      "text": "Lives he, good uncle? thrice within this hour"
+    },
+    {
+      "number": 5,
+      "speaker": "KING HENRY",
+      "text": "I saw him down; thrice up again, and fighting;"
+    },
+    {
+      "number": 6,
+      "speaker": "KING HENRY",
+      "text": "From helmet to the spur all blood he was."
+    },
+    {
+      "number": 7,
+      "speaker": "EXETER",
+      "text": "In which array, brave soldier, doth he lie,"
+    },
+    {
+      "number": 8,
+      "speaker": "EXETER",
+      "text": "Larding the plain; and by his bloody side,"
+    },
+    {
+      "number": 9,
+      "speaker": "EXETER",
+      "text": "Yoke-fellow to his honour-owing wounds,"
+    },
+    {
+      "number": 10,
+      "speaker": "EXETER",
+      "text": "The noble Earl of Suffolk also lies."
+    },
+    {
+      "number": 11,
+      "speaker": "EXETER",
+      "text": "Suffolk first died: and York, all haggled over,"
+    },
+    {
+      "number": 12,
+      "speaker": "EXETER",
+      "text": "Comes to him, where in gore he lay insteep’d,"
+    },
+    {
+      "number": 13,
+      "speaker": "EXETER",
+      "text": "And takes him by the beard; kisses the gashes"
+    },
+    {
+      "number": 14,
+      "speaker": "EXETER",
+      "text": "That bloodily did yawn upon his face;"
+    },
+    {
+      "number": 15,
+      "speaker": "EXETER",
+      "text": "He cries aloud “Tarry, my cousin Suffolk!"
+    },
+    {
+      "number": 16,
+      "speaker": "EXETER",
+      "text": "My soul shall thine keep company to heaven;"
+    },
+    {
+      "number": 17,
+      "speaker": "EXETER",
+      "text": "Tarry, sweet soul, for mine, then fly abreast,"
+    },
+    {
+      "number": 18,
+      "speaker": "EXETER",
+      "text": "As in this glorious and well-foughten field"
+    },
+    {
+      "number": 19,
+      "speaker": "EXETER",
+      "text": "We kept together in our chivalry!”"
+    },
+    {
+      "number": 20,
+      "speaker": "EXETER",
+      "text": "Upon these words I came and cheer’d him up:"
+    },
+    {
+      "number": 21,
+      "speaker": "EXETER",
+      "text": "He smiled me in the face, raught me his hand,"
+    },
+    {
+      "number": 22,
+      "speaker": "EXETER",
+      "text": "And, with a feeble gripe, says, “Dear my lord,"
+    },
+    {
+      "number": 23,
+      "speaker": "EXETER",
+      "text": "Commend my service to my sovereign.”"
+    },
+    {
+      "number": 24,
+      "speaker": "EXETER",
+      "text": "So did he turn and over Suffolk’s neck"
+    },
+    {
+      "number": 25,
+      "speaker": "EXETER",
+      "text": "He threw his wounded arm and kiss’d his lips;"
+    },
+    {
+      "number": 26,
+      "speaker": "EXETER",
+      "text": "And so espoused to death, with blood he seal’d"
+    },
+    {
+      "number": 27,
+      "speaker": "EXETER",
+      "text": "A testament of noble-ending love."
+    },
+    {
+      "number": 28,
+      "speaker": "EXETER",
+      "text": "The pretty and sweet manner of it forced"
+    },
+    {
+      "number": 29,
+      "speaker": "EXETER",
+      "text": "Those waters from me which I would have stopp’d;"
+    },
+    {
+      "number": 30,
+      "speaker": "EXETER",
+      "text": "But I had not so much of man in me,"
+    },
+    {
+      "number": 31,
+      "speaker": "EXETER",
+      "text": "And all my mother came into mine eyes"
+    },
+    {
+      "number": 32,
+      "speaker": "EXETER",
+      "text": "And gave me up to tears."
+    },
+    {
+      "number": 32,
+      "speaker": "KING HENRY",
+      "text": "I blame you not;"
+    },
+    {
+      "number": 33,
+      "speaker": "KING HENRY",
+      "text": "For, hearing this, I must perforce compound"
+    },
+    {
+      "number": 34,
+      "speaker": "KING HENRY",
+      "text": "With mistful eyes, or they will issue too. Alarm."
+    },
+    {
+      "number": 35,
+      "speaker": "KING HENRY",
+      "text": "But hark! what new alarum is this same?"
+    },
+    {
+      "number": 36,
+      "speaker": "KING HENRY",
+      "text": "The French have reinforced their scatter’d men:"
+    },
+    {
+      "number": 37,
+      "speaker": "KING HENRY",
+      "text": "Then every soldier kill his prisoners;"
+    },
+    {
+      "number": 38,
+      "speaker": "KING HENRY",
+      "text": "Give the word through."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Alarums. Enter King Henry, and forces, Exeter, and others."
+    },
+    {
+      "after_line": 38,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act4_scene6_gloss1",
+      "line": 2,
+      "phrase": "keep the French the field",
+      "definition": "the French still hold part of the battlefield — the battle isn't over"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss2",
+      "line": 3,
+      "phrase": "Duke of York",
+      "definition": "Edward, 2nd Duke of York — historically killed at Agincourt, possibly suffocated in his armour; the senior English casualty"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss3",
+      "line": 5,
+      "phrase": "thrice up again, and fighting",
+      "definition": "rose three times after being knocked down"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss4",
+      "line": 6,
+      "phrase": "From helmet to the spur all blood",
+      "definition": "covered in blood head to foot"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss5",
+      "line": 8,
+      "phrase": "Larding the plain",
+      "definition": "enriching the plain with his flesh — 'larding' = basting with fat"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss6",
+      "line": 9,
+      "phrase": "Yoke-fellow to his honour-owing wounds",
+      "definition": "paired with York by wounds deservingly won"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss7",
+      "line": 10,
+      "phrase": "Earl of Suffolk",
+      "definition": "Michael de la Pole, 3rd Earl of Suffolk — also killed at Agincourt"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss8",
+      "line": 11,
+      "phrase": "haggled over",
+      "definition": "hacked to pieces"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss9",
+      "line": 12,
+      "phrase": "in gore he lay insteep’d",
+      "definition": "drenched in his own blood"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss10",
+      "line": 16,
+      "phrase": "My soul shall thine keep company to heaven",
+      "definition": "York's vow to die alongside Suffolk — a deathbed companionship"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss11",
+      "line": 19,
+      "phrase": "chivalry",
+      "definition": "knightly fellowship"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss12",
+      "line": 21,
+      "phrase": "raught",
+      "definition": "reached (archaic)"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss13",
+      "line": 22,
+      "phrase": "feeble gripe",
+      "definition": "weak grasp"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss14",
+      "line": 24,
+      "phrase": "over Suffolk’s neck / He threw his wounded arm",
+      "definition": "homoerotic tableau of the two earls dying embraced — a heightened chivalric intimacy"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss15",
+      "line": 26,
+      "phrase": "espoused to death",
+      "definition": "married to death — the two earls wedded to each other in dying"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss16",
+      "line": 27,
+      "phrase": "testament of noble-ending love",
+      "definition": "a will (testament) sealed in blood — affirming their comradely love"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss17",
+      "line": 31,
+      "phrase": "all my mother came into mine eyes",
+      "definition": "my feminine (motherly) emotional side welled up — Exeter confesses tears"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss18",
+      "line": 33,
+      "phrase": "compound / With mistful eyes",
+      "definition": "negotiate with misty eyes — Henry has to deal with his tears too"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss19",
+      "line": 35,
+      "phrase": "new alarum",
+      "definition": "a fresh alarm — trumpet signal of a new French push"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss20",
+      "line": 36,
+      "phrase": "reinforced their scatter’d men",
+      "definition": "the French have regrouped their scattered forces"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss21",
+      "line": 37,
+      "phrase": "every soldier kill his prisoners",
+      "definition": "Henry's order to kill the French prisoners — historically attested; controversial even in its own time. The scene presents it flatly, without commentary; the text leaves the ethics for the reader"
+    },
+    {
+      "id": "henry_v_act4_scene6_gloss22",
+      "line": 38,
+      "phrase": "Give the word through",
+      "definition": "pass the order along"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act4_scene6_ann1",
+      "line_start": 3,
+      "line_end": 32,
+      "citation_display": "Henry V 4.6.3–32",
+      "category": "close_reading",
+      "title": "The York-Suffolk death — chivalric tableau",
+      "body": "Exeter's thirty-line report of the deaths of the Duke of York and the Earl of Suffolk is the play's most elaborate chivalric set-piece. The two earls die side by side, Suffolk first, then York 'all haggled over' comes to him; York takes Suffolk's beard, kisses the wounds on his face, and asks his soul to wait so they can fly to heaven together. The image of the two men 'espoused to death' with 'a testament of noble-ending love' is unmistakably homoerotic in its language and its staging — a male-male death-marriage. This is period chivalric idiom; it is also a tonal counterpoint to the harder action that is about to happen. Exeter's admission that he wept ('all my mother came into mine eyes / And gave me up to tears') is unusual for a commander; Henry's answer ('I blame you not; / For, hearing this, I must perforce compound / With mistful eyes') equally unusual for a king. The scene is building, in chivalric tears, an emotional charge that the next line — the order to kill the prisoners — will suddenly violate.",
+      "sources": [
+        "Bruce Smith, Homosexual Desire in Shakespeare's England (1991)",
+        "Goran V. Stanivukovic (ed.), Ovidian Transversions (2020)"
+      ]
+    },
+    {
+      "id": "henry_v_act4_scene6_ann2",
+      "line_start": 35,
+      "line_end": 38,
+      "citation_display": "Henry V 4.6.35–38",
+      "category": "historical",
+      "title": "'Then every soldier kill his prisoners' — the play's moral crux",
+      "body": "Henry's order to kill the French prisoners is the play's single most controversial moment, and Shakespeare does not soften it. 'But hark! what new alarum is this same? / The French have reinforced their scatter'd men: / Then every soldier kill his prisoners; / Give the word through.' Four lines. No debate, no hesitation, no later regret. Historically the order is attested: contemporary chroniclers (the Gesta Henrici Quinti and others) record that Henry gave this command when the baggage camp was attacked during the battle, fearing that the prisoners (who still had their weapons) would rise up and join their countrymen. The order was controversial even in its own time; some English knights refused to carry it out. The killing that followed was of noble prisoners who were, by the conventions of chivalric warfare, legally protected until ransomed. Shakespeare stages it flatly. The next scene (4.7) will let Gower interpret the order as retaliation for the French killing the camp-boys — but the play's chronology is deliberately blurred; in the text, Henry gives the order before he has heard about the boys. The moral complexity is exactly this: is Henry responding to a tactical emergency (the reinforcement alarm he mentions), a strategic calculation about armed prisoners, or a breach of the laws of war? The play refuses to adjudicate. Readers should hold the flatness of the stage-moment against the weight of what has been ordered.",
+      "sources": [
+        "Gesta Henrici Quinti, ed. Frank Taylor & John S. Roskell (1975)",
+        "Anne Curry, Agincourt: A New History (2005)",
+        "Juliet Barker, Agincourt: The King, the Campaign, the Battle (2005)",
+        "Theodor Meron, Bloody Constraint (1998)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act4_scene6_q1",
+      "kind": "close_reading",
+      "prompt": "How does Exeter describe the death of York and Suffolk?",
+      "options": [
+        "A distant massacre",
+        "A chivalric death-marriage: the two earls 'espoused to death' with York kissing Suffolk's wounds; Exeter admits he wept; Henry admits he must 'compound / With mistful eyes' — unusual emotional frankness before the next line's order",
+        "A forgotten incident",
+        "A strategic retreat"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 8,
+      "anchor_line_end": 32
+    },
+    {
+      "id": "henry_v_act4_scene6_q2",
+      "kind": "theme",
+      "prompt": "How does the play stage Henry's order to kill the French prisoners?",
+      "options": [
+        "With a long soliloquy justifying it",
+        "In four lines — 'hark! what new alarum is this same? / The French have reinforced their scatter'd men: / Then every soldier kill his prisoners; / Give the word through.' No debate, no regret; the flatness itself is the play's statement",
+        "As a deferred decision never actually carried out",
+        "Through Fluellen's narration offstage"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 35,
+      "anchor_line_start": 35,
+      "anchor_line_end": 38
+    },
+    {
+      "id": "henry_v_act4_scene6_q3",
+      "kind": "historical",
+      "prompt": "Is Henry's order historically attested?",
+      "options": [
+        "No — it is Shakespeare's invention",
+        "Yes — contemporary chroniclers (Gesta Henrici Quinti and others) record that Henry gave this command during the battle; it was controversial in its own time, with some English knights refusing to carry it out",
+        "Only in French sources hostile to Henry",
+        "Only in 19th-century retellings"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 37,
+      "anchor_line_end": 37
+    },
+    {
+      "id": "henry_v_act4_scene6_q4",
+      "kind": "inference",
+      "prompt": "Why does the play deliberately blur the timing between Henry's order and the French killing the camp-boys?",
+      "options": [
+        "Sloppy writing",
+        "To leave the moral question open: 4.6 has Henry give the order in response to a 'new alarum' of reinforcement, before any mention of the boys; 4.7 has Gower retroactively interpret the order as retaliation for the killed boys. The two framings are both on the page, neither adjudicated",
+        "The Folio printers made an error",
+        "Because Shakespeare wrote the scenes years apart"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 35,
+      "anchor_line_end": 38
+    }
+  ]
+}

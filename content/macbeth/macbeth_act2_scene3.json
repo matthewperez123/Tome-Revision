@@ -1,0 +1,1156 @@
+{
+  "section_id": "macbeth_act2_scene3",
+  "work_id": "macbeth",
+  "sequence": 10,
+  "act": 2,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "The same",
+  "line_count": 158,
+  "word_count": 1146,
+  "est_read_minutes": 6,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "PORTER",
+      "text": "Here’s a knocking indeed! If a man were porter of hell-gate, he"
+    },
+    {
+      "number": 2,
+      "speaker": "PORTER",
+      "text": "should have old turning the key. Knock, knock, knock! Who’s there, i’"
+    },
+    {
+      "number": 3,
+      "speaker": "PORTER",
+      "text": "the name of Beelzebub? Here’s a farmer, that hanged himself on the"
+    },
+    {
+      "number": 4,
+      "speaker": "PORTER",
+      "text": "expectation of plenty: come in time; have napkins enow about you; here"
+    },
+    {
+      "number": 5,
+      "speaker": "PORTER",
+      "text": "you’ll sweat for’t. Knock, knock! Who’s there, in the other devil’s name?"
+    },
+    {
+      "number": 6,
+      "speaker": "PORTER",
+      "text": "Faith, here’s an equivocator, that could swear in both the scales against"
+    },
+    {
+      "number": 7,
+      "speaker": "PORTER",
+      "text": "either scale; who committed treason enough for God’s sake, yet could not"
+    },
+    {
+      "number": 8,
+      "speaker": "PORTER",
+      "text": "equivocate to heaven: O, come in, equivocator. Knock, knock, knock! Who’s there?"
+    },
+    {
+      "number": 9,
+      "speaker": "PORTER",
+      "text": "Faith, here’s an English tailor come hither, for stealing out of a"
+    },
+    {
+      "number": 10,
+      "speaker": "PORTER",
+      "text": "French hose: come in, tailor; here you may roast your goose. Knock,"
+    },
+    {
+      "number": 11,
+      "speaker": "PORTER",
+      "text": "knock; never at quiet! What are you? But this place is too"
+    },
+    {
+      "number": 12,
+      "speaker": "PORTER",
+      "text": "cold for hell. I’ll devil-porter it no further: I had thought to"
+    },
+    {
+      "number": 13,
+      "speaker": "PORTER",
+      "text": "have let in some of all professions that go the primrose way"
+    },
+    {
+      "number": 14,
+      "speaker": "PORTER",
+      "text": "to the everlasting bonfire. Anon, anon! I pray you, remember the porter."
+    },
+    {
+      "number": 15,
+      "speaker": "PORTER",
+      "text": "Opens the gate."
+    },
+    {
+      "number": 16,
+      "speaker": "MACDUFF",
+      "text": "Was it so late, friend, ere you went to bed,"
+    },
+    {
+      "number": 17,
+      "speaker": "MACDUFF",
+      "text": "That you do lie so late?"
+    },
+    {
+      "number": 18,
+      "speaker": "PORTER",
+      "text": "’Faith sir, we were carousing till the second cock: and drink, sir,"
+    },
+    {
+      "number": 19,
+      "speaker": "PORTER",
+      "text": "is a great provoker of three things."
+    },
+    {
+      "number": 20,
+      "speaker": "MACDUFF",
+      "text": "What three things does drink especially provoke?"
+    },
+    {
+      "number": 21,
+      "speaker": "PORTER",
+      "text": "Marry, sir, nose-painting, sleep, and urine. Lechery, sir, it provokes, and unprovokes;"
+    },
+    {
+      "number": 22,
+      "speaker": "PORTER",
+      "text": "it provokes the desire, but it takes away the performance: therefore, much"
+    },
+    {
+      "number": 23,
+      "speaker": "PORTER",
+      "text": "drink may be said to be an equivocator with lechery: it makes"
+    },
+    {
+      "number": 24,
+      "speaker": "PORTER",
+      "text": "him, and it mars him; it sets him on, and it takes"
+    },
+    {
+      "number": 25,
+      "speaker": "PORTER",
+      "text": "him off; it persuades him, and disheartens him; makes him stand to,"
+    },
+    {
+      "number": 26,
+      "speaker": "PORTER",
+      "text": "and not stand to; in conclusion, equivocates him in a sleep, and,"
+    },
+    {
+      "number": 27,
+      "speaker": "PORTER",
+      "text": "giving him the lie, leaves him."
+    },
+    {
+      "number": 28,
+      "speaker": "MACDUFF",
+      "text": "I believe drink gave thee the lie last night."
+    },
+    {
+      "number": 29,
+      "speaker": "PORTER",
+      "text": "That it did, sir, i’ the very throat on me: but I"
+    },
+    {
+      "number": 30,
+      "speaker": "PORTER",
+      "text": "requited him for his lie; and, I think, being too strong for"
+    },
+    {
+      "number": 31,
+      "speaker": "PORTER",
+      "text": "him, though he took up my legs sometime, yet I made a"
+    },
+    {
+      "number": 32,
+      "speaker": "PORTER",
+      "text": "shift to cast him."
+    },
+    {
+      "number": 32,
+      "speaker": "MACDUFF",
+      "text": "Is thy master stirring?"
+    },
+    {
+      "number": 33,
+      "speaker": "LENNOX",
+      "text": "Good morrow, noble sir."
+    },
+    {
+      "number": 33,
+      "speaker": "MACBETH",
+      "text": "Good morrow, both."
+    },
+    {
+      "number": 34,
+      "speaker": "MACDUFF",
+      "text": "Is the king stirring, worthy thane?"
+    },
+    {
+      "number": 34,
+      "speaker": "MACBETH",
+      "text": "Not yet."
+    },
+    {
+      "number": 35,
+      "speaker": "MACDUFF",
+      "text": "He did command me to call timely on him:"
+    },
+    {
+      "number": 36,
+      "speaker": "MACDUFF",
+      "text": "I have almost slipp’d the hour."
+    },
+    {
+      "number": 36,
+      "speaker": "MACBETH",
+      "text": "I’ll bring you to him."
+    },
+    {
+      "number": 37,
+      "speaker": "MACDUFF",
+      "text": "I know this is a joyful trouble to you;"
+    },
+    {
+      "number": 38,
+      "speaker": "MACDUFF",
+      "text": "But yet ’tis one."
+    },
+    {
+      "number": 39,
+      "speaker": "MACBETH",
+      "text": "The labour we delight in physics pain."
+    },
+    {
+      "number": 40,
+      "speaker": "MACBETH",
+      "text": "This is the door."
+    },
+    {
+      "number": 40,
+      "speaker": "MACDUFF",
+      "text": "I’ll make so bold to call,"
+    },
+    {
+      "number": 41,
+      "speaker": "MACDUFF",
+      "text": "For ’tis my limited service."
+    },
+    {
+      "number": 41,
+      "speaker": "LENNOX",
+      "text": "Goes the king hence to-day?"
+    },
+    {
+      "number": 42,
+      "speaker": "MACBETH",
+      "text": "He does: he did appoint so."
+    },
+    {
+      "number": 43,
+      "speaker": "LENNOX",
+      "text": "The night has been unruly: where we lay,"
+    },
+    {
+      "number": 44,
+      "speaker": "LENNOX",
+      "text": "Our chimneys were blown down; and, as they say,"
+    },
+    {
+      "number": 45,
+      "speaker": "LENNOX",
+      "text": "Lamentings heard i’ the air; strange screams of death,"
+    },
+    {
+      "number": 46,
+      "speaker": "LENNOX",
+      "text": "And prophesying with accents terrible"
+    },
+    {
+      "number": 47,
+      "speaker": "LENNOX",
+      "text": "Of dire combustion and confused events"
+    },
+    {
+      "number": 48,
+      "speaker": "LENNOX",
+      "text": "New hatch’d to the woeful time: the obscure bird"
+    },
+    {
+      "number": 49,
+      "speaker": "LENNOX",
+      "text": "Clamour’d the livelong night: some say, the earth"
+    },
+    {
+      "number": 50,
+      "speaker": "LENNOX",
+      "text": "Was feverous and did shake."
+    },
+    {
+      "number": 50,
+      "speaker": "MACBETH",
+      "text": "’Twas a rough night."
+    },
+    {
+      "number": 51,
+      "speaker": "LENNOX",
+      "text": "My young remembrance cannot parallel"
+    },
+    {
+      "number": 52,
+      "speaker": "LENNOX",
+      "text": "A fellow to it."
+    },
+    {
+      "number": 53,
+      "speaker": "MACDUFF",
+      "text": "O horror, horror, horror! Tongue nor heart"
+    },
+    {
+      "number": 54,
+      "speaker": "MACDUFF",
+      "text": "Cannot conceive nor name thee!"
+    },
+    {
+      "number": 54,
+      "speaker": "MACBETH LENNOX",
+      "text": "What’s the matter?"
+    },
+    {
+      "number": 55,
+      "speaker": "MACDUFF",
+      "text": "Confusion now hath made his masterpiece!"
+    },
+    {
+      "number": 56,
+      "speaker": "MACDUFF",
+      "text": "Most sacrilegious murder hath broke ope"
+    },
+    {
+      "number": 57,
+      "speaker": "MACDUFF",
+      "text": "The Lord’s anointed temple, and stole thence"
+    },
+    {
+      "number": 58,
+      "speaker": "MACDUFF",
+      "text": "The life o’ the building!"
+    },
+    {
+      "number": 58,
+      "speaker": "MACBETH",
+      "text": "What is’t you say? the life?"
+    },
+    {
+      "number": 59,
+      "speaker": "LENNOX",
+      "text": "Mean you his majesty?"
+    },
+    {
+      "number": 60,
+      "speaker": "MACDUFF",
+      "text": "Approach the chamber, and destroy your sight"
+    },
+    {
+      "number": 61,
+      "speaker": "MACDUFF",
+      "text": "With a new Gorgon: do not bid me speak;"
+    },
+    {
+      "number": 62,
+      "speaker": "MACDUFF",
+      "text": "See, and then speak yourselves. Awake, awake!"
+    },
+    {
+      "number": 63,
+      "speaker": "MACDUFF",
+      "text": "Ring the alarum-bell. Murder and treason!"
+    },
+    {
+      "number": 64,
+      "speaker": "MACDUFF",
+      "text": "Banquo and Donalbain! Malcolm! awake!"
+    },
+    {
+      "number": 65,
+      "speaker": "MACDUFF",
+      "text": "Shake off this downy sleep, death’s counterfeit,"
+    },
+    {
+      "number": 66,
+      "speaker": "MACDUFF",
+      "text": "And look on death itself! up, up, and see"
+    },
+    {
+      "number": 67,
+      "speaker": "MACDUFF",
+      "text": "The great doom’s image! Malcolm! Banquo!"
+    },
+    {
+      "number": 68,
+      "speaker": "MACDUFF",
+      "text": "As from your graves rise up, and walk like sprites,"
+    },
+    {
+      "number": 69,
+      "speaker": "MACDUFF",
+      "text": "To countenance this horror! Ring the bell."
+    },
+    {
+      "number": 70,
+      "speaker": "LADY MACBETH",
+      "text": "What’s the business,"
+    },
+    {
+      "number": 71,
+      "speaker": "LADY MACBETH",
+      "text": "That such a hideous trumpet calls to parley"
+    },
+    {
+      "number": 72,
+      "speaker": "LADY MACBETH",
+      "text": "The sleepers of the house? speak, speak!"
+    },
+    {
+      "number": 73,
+      "speaker": "MACDUFF",
+      "text": "O gentle lady,"
+    },
+    {
+      "number": 74,
+      "speaker": "MACDUFF",
+      "text": "’Tis not for you to hear what I can speak:"
+    },
+    {
+      "number": 75,
+      "speaker": "MACDUFF",
+      "text": "The repetition, in a woman’s ear,"
+    },
+    {
+      "number": 76,
+      "speaker": "MACDUFF",
+      "text": "Would murder as it fell."
+    },
+    {
+      "number": 76,
+      "speaker": "LADY MACBETH",
+      "text": "Woe, alas!"
+    },
+    {
+      "number": 77,
+      "speaker": "LADY MACBETH",
+      "text": "What, in our house?"
+    },
+    {
+      "number": 77,
+      "speaker": "BANQUO",
+      "text": "Too cruel any where."
+    },
+    {
+      "number": 78,
+      "speaker": "BANQUO",
+      "text": "Dear Duff, I prithee, contradict thyself,"
+    },
+    {
+      "number": 79,
+      "speaker": "BANQUO",
+      "text": "And say it is not so."
+    },
+    {
+      "number": 80,
+      "speaker": "MACBETH",
+      "text": "Had I but died an hour before this chance,"
+    },
+    {
+      "number": 81,
+      "speaker": "MACBETH",
+      "text": "I had lived a blessed time; for, from this instant,"
+    },
+    {
+      "number": 82,
+      "speaker": "MACBETH",
+      "text": "There’s nothing serious in mortality:"
+    },
+    {
+      "number": 83,
+      "speaker": "MACBETH",
+      "text": "All is but toys: renown and grace is dead;"
+    },
+    {
+      "number": 84,
+      "speaker": "MACBETH",
+      "text": "The wine of life is drawn, and the mere lees"
+    },
+    {
+      "number": 85,
+      "speaker": "MACBETH",
+      "text": "Is left this vault to brag of."
+    },
+    {
+      "number": 86,
+      "speaker": "DONALBAIN",
+      "text": "What is amiss?"
+    },
+    {
+      "number": 86,
+      "speaker": "MACBETH",
+      "text": "You are, and do not know’t:"
+    },
+    {
+      "number": 87,
+      "speaker": "MACBETH",
+      "text": "The spring, the head, the fountain of your blood"
+    },
+    {
+      "number": 88,
+      "speaker": "MACBETH",
+      "text": "Is stopp’d; the very source of it is stopp’d."
+    },
+    {
+      "number": 89,
+      "speaker": "MACDUFF",
+      "text": "Your royal father’s murder’d."
+    },
+    {
+      "number": 89,
+      "speaker": "MALCOLM",
+      "text": "O, by whom?"
+    },
+    {
+      "number": 90,
+      "speaker": "LENNOX",
+      "text": "Those of his chamber, as it seem’d, had done’t:"
+    },
+    {
+      "number": 91,
+      "speaker": "LENNOX",
+      "text": "Their hands and faces were all badged with blood;"
+    },
+    {
+      "number": 92,
+      "speaker": "LENNOX",
+      "text": "So were their daggers, which unwiped we found"
+    },
+    {
+      "number": 93,
+      "speaker": "LENNOX",
+      "text": "Upon their pillows:"
+    },
+    {
+      "number": 94,
+      "speaker": "LENNOX",
+      "text": "They stared, and were distracted; no man’s life"
+    },
+    {
+      "number": 95,
+      "speaker": "LENNOX",
+      "text": "Was to be trusted with them."
+    },
+    {
+      "number": 96,
+      "speaker": "MACBETH",
+      "text": "O, yet I do repent me of my fury,"
+    },
+    {
+      "number": 97,
+      "speaker": "MACBETH",
+      "text": "That I did kill them."
+    },
+    {
+      "number": 97,
+      "speaker": "MACDUFF",
+      "text": "Wherefore did you so?"
+    },
+    {
+      "number": 98,
+      "speaker": "MACBETH",
+      "text": "Who can be wise, amazed, temperate and furious,"
+    },
+    {
+      "number": 99,
+      "speaker": "MACBETH",
+      "text": "Loyal and neutral, in a moment? No man:"
+    },
+    {
+      "number": 100,
+      "speaker": "MACBETH",
+      "text": "The expedition my violent love"
+    },
+    {
+      "number": 101,
+      "speaker": "MACBETH",
+      "text": "Outrun the pauser, reason. Here lay Duncan,"
+    },
+    {
+      "number": 102,
+      "speaker": "MACBETH",
+      "text": "His silver skin laced with his golden blood;"
+    },
+    {
+      "number": 103,
+      "speaker": "MACBETH",
+      "text": "And his gash’d stabs look’d like a breach in nature"
+    },
+    {
+      "number": 104,
+      "speaker": "MACBETH",
+      "text": "For ruin’s wasteful entrance: there, the murderers,"
+    },
+    {
+      "number": 105,
+      "speaker": "MACBETH",
+      "text": "Steep’d in the colours of their trade, their daggers"
+    },
+    {
+      "number": 106,
+      "speaker": "MACBETH",
+      "text": "Unmannerly breech’d with gore: who could refrain,"
+    },
+    {
+      "number": 107,
+      "speaker": "MACBETH",
+      "text": "That had a heart to love, and in that heart"
+    },
+    {
+      "number": 108,
+      "speaker": "MACBETH",
+      "text": "Courage to make’s love known?"
+    },
+    {
+      "number": 108,
+      "speaker": "LADY MACBETH",
+      "text": "Help me hence, ho!"
+    },
+    {
+      "number": 109,
+      "speaker": "MACDUFF",
+      "text": "Look to the lady."
+    },
+    {
+      "number": 109,
+      "speaker": "MALCOLM",
+      "text": "Why do we hold our tongues,"
+    },
+    {
+      "number": 110,
+      "speaker": "MALCOLM",
+      "text": "That most may claim this argument for ours?"
+    },
+    {
+      "number": 111,
+      "speaker": "DONALBAIN",
+      "text": "What should be spoken here, where our fate,"
+    },
+    {
+      "number": 112,
+      "speaker": "DONALBAIN",
+      "text": "Hid in an auger-hole, may rush, and seize us?"
+    },
+    {
+      "number": 113,
+      "speaker": "DONALBAIN",
+      "text": "Let’s away;"
+    },
+    {
+      "number": 114,
+      "speaker": "DONALBAIN",
+      "text": "Our tears are not yet brew’d."
+    },
+    {
+      "number": 114,
+      "speaker": "MALCOLM",
+      "text": "Nor our strong sorrow"
+    },
+    {
+      "number": 115,
+      "speaker": "MALCOLM",
+      "text": "Upon the foot of motion."
+    },
+    {
+      "number": 116,
+      "speaker": "BANQUO",
+      "text": "Look to the lady: Lady Macbeth is carried out."
+    },
+    {
+      "number": 117,
+      "speaker": "BANQUO",
+      "text": "And when we have our naked frailties hid,"
+    },
+    {
+      "number": 118,
+      "speaker": "BANQUO",
+      "text": "That suffer in exposure, let us meet,"
+    },
+    {
+      "number": 119,
+      "speaker": "BANQUO",
+      "text": "And question this most bloody piece of work,"
+    },
+    {
+      "number": 120,
+      "speaker": "BANQUO",
+      "text": "To know it further. Fears and scruples shake us:"
+    },
+    {
+      "number": 121,
+      "speaker": "BANQUO",
+      "text": "In the great hand of God I stand; and thence"
+    },
+    {
+      "number": 122,
+      "speaker": "BANQUO",
+      "text": "Against the undivulged pretence I fight"
+    },
+    {
+      "number": 123,
+      "speaker": "BANQUO",
+      "text": "Of treasonous malice."
+    },
+    {
+      "number": 123,
+      "speaker": "MACDUFF",
+      "text": "And so do I."
+    },
+    {
+      "number": 124,
+      "speaker": "ALL",
+      "text": "So all."
+    },
+    {
+      "number": 124,
+      "speaker": "MACBETH",
+      "text": "Let’s briefly put on manly readiness,"
+    },
+    {
+      "number": 125,
+      "speaker": "MACBETH",
+      "text": "And meet i’ the hall together."
+    },
+    {
+      "number": 125,
+      "speaker": "ALL",
+      "text": "Well contented."
+    },
+    {
+      "number": 126,
+      "speaker": "MALCOLM",
+      "text": "What will you do? Let’s not consort with them:"
+    },
+    {
+      "number": 127,
+      "speaker": "MALCOLM",
+      "text": "To show an unfelt sorrow is an office"
+    },
+    {
+      "number": 128,
+      "speaker": "MALCOLM",
+      "text": "Which the false man does easy. I’ll to England."
+    },
+    {
+      "number": 129,
+      "speaker": "DONALBAIN",
+      "text": "To Ireland, I; our separated fortune"
+    },
+    {
+      "number": 130,
+      "speaker": "DONALBAIN",
+      "text": "Shall keep us both the safer: where we are,"
+    },
+    {
+      "number": 131,
+      "speaker": "DONALBAIN",
+      "text": "There’s daggers in men’s smiles: the near in blood,"
+    },
+    {
+      "number": 132,
+      "speaker": "DONALBAIN",
+      "text": "The nearer bloody."
+    },
+    {
+      "number": 132,
+      "speaker": "MALCOLM",
+      "text": "This murderous shaft that’s shot"
+    },
+    {
+      "number": 133,
+      "speaker": "MALCOLM",
+      "text": "Hath not yet lighted, and our safest way"
+    },
+    {
+      "number": 134,
+      "speaker": "MALCOLM",
+      "text": "Is to avoid the aim. Therefore, to horse;"
+    },
+    {
+      "number": 135,
+      "speaker": "MALCOLM",
+      "text": "And let us not be dainty of leave-taking,"
+    },
+    {
+      "number": 136,
+      "speaker": "MALCOLM",
+      "text": "But shift away: there’s warrant in that theft"
+    },
+    {
+      "number": 137,
+      "speaker": "MALCOLM",
+      "text": "Which steals itself, when there’s no mercy left."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Knocking within. Enter a Porter."
+    },
+    {
+      "after_line": 15,
+      "text": "Knocking within."
+    },
+    {
+      "after_line": 15,
+      "text": "Knocking within."
+    },
+    {
+      "after_line": 15,
+      "text": "Knocking within."
+    },
+    {
+      "after_line": 15,
+      "text": "Knocking within."
+    },
+    {
+      "after_line": 15,
+      "text": "Knocking within."
+    },
+    {
+      "after_line": 15,
+      "text": "Enter Macduff and Lennox."
+    },
+    {
+      "after_line": 32,
+      "text": "Enter Macbeth."
+    },
+    {
+      "after_line": 32,
+      "text": "Our knocking has awaked him; here he comes."
+    },
+    {
+      "after_line": 41,
+      "text": "Exit."
+    },
+    {
+      "after_line": 52,
+      "text": "Reenter Macduff."
+    },
+    {
+      "after_line": 62,
+      "text": "Exeunt Macbeth and Lennox."
+    },
+    {
+      "after_line": 69,
+      "text": "Bell rings."
+    },
+    {
+      "after_line": 69,
+      "text": "Enter Lady Macbeth."
+    },
+    {
+      "after_line": 76,
+      "text": "Enter Banquo."
+    },
+    {
+      "after_line": 76,
+      "text": "O Banquo, Banquo, Our royal master’s murder’d!"
+    },
+    {
+      "after_line": 79,
+      "text": "Reenter Macbeth and Lennox, with Ross."
+    },
+    {
+      "after_line": 85,
+      "text": "Enter Malcolm and Donalbain."
+    },
+    {
+      "after_line": 109,
+      "text": "Aside to Donalbain."
+    },
+    {
+      "after_line": 111,
+      "text": "Aside to Malcolm."
+    },
+    {
+      "after_line": 114,
+      "text": "Aside to Donalbain."
+    },
+    {
+      "after_line": 125,
+      "text": "Exeunt all but Malcolm and Donalbain."
+    },
+    {
+      "after_line": 137,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act2_scene3_gloss1",
+      "line": 1,
+      "phrase": "Here’s a knocking indeed!",
+      "definition": "the Porter's famous opening of the comic relief scene after the murder"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss2",
+      "line": 1,
+      "phrase": "porter of hell-gate",
+      "definition": "the Porter imagines himself as the gatekeeper of hell — casting Macbeth's castle as a literal infernal site"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss3",
+      "line": 3,
+      "phrase": "Beelzebub",
+      "definition": "chief of demons; a name for Satan"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss5",
+      "line": 4,
+      "phrase": "napkins enow",
+      "definition": "enough handkerchiefs (to wipe the hell-sweat)"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss6",
+      "line": 6,
+      "phrase": "equivocator",
+      "definition": "a liar by mental reservation — direct allusion to the Jesuit Henry Garnet, executed 1606 for the Gunpowder Plot; his 'Treatise of Equivocation' taught that swearing to God while reserving mental truths was not technically perjury. Shakespeare's audience would have known the reference"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss11",
+      "line": 17,
+      "phrase": "second cock",
+      "definition": "the second cockcrow, around 3 a.m."
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss12",
+      "line": 18,
+      "phrase": "provoker of three things",
+      "definition": "drink, which provokes (1) nose-painting, (2) sleep, (3) urine; and (4) lechery"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss13",
+      "line": 20,
+      "phrase": "nose-painting",
+      "definition": "redness of the nose from drunkenness"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss15",
+      "line": 25,
+      "phrase": "equivocates him in a sleep",
+      "definition": "puts him to sleep before he can consummate — an equivocation against lechery"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss16",
+      "line": 27,
+      "phrase": "gave thee the lie",
+      "definition": "tripped you up; knocked you down"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss17",
+      "line": 34,
+      "phrase": "timely",
+      "definition": "in good time; early"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss18",
+      "line": 40,
+      "phrase": "limited service",
+      "definition": "appointed duty"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss20",
+      "line": 44,
+      "phrase": "lamentings heard i’ the air",
+      "definition": "cries in the air — supernatural omens"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss21",
+      "line": 47,
+      "phrase": "obscure bird",
+      "definition": "the owl, bird of darkness"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss22",
+      "line": 48,
+      "phrase": "Clamour’d the livelong night",
+      "definition": "shouted all night long"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss23",
+      "line": 49,
+      "phrase": "feverous",
+      "definition": "feverish; shaking"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss24",
+      "line": 52,
+      "phrase": "O horror, horror, horror!",
+      "definition": "Macduff's cry upon finding Duncan — the triple repetition echoes the Weird Sisters' tripling"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss25",
+      "line": 56,
+      "phrase": "Lord’s anointed temple",
+      "definition": "the king's body as a consecrated holy place — regicide as sacrilege"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss26",
+      "line": 60,
+      "phrase": "new Gorgon",
+      "definition": "a new Medusa — a sight that turns viewers to stone"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss27",
+      "line": 64,
+      "phrase": "Shake off this downy sleep, death’s counterfeit",
+      "definition": "wake up; sleep is the forgery of death"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss28",
+      "line": 66,
+      "phrase": "The great doom’s image",
+      "definition": "a preview of the Last Judgment"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss31",
+      "line": 105,
+      "phrase": "breech’d with gore",
+      "definition": "covered up to the haft with blood — the daggers Macbeth plants on the grooms"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss32",
+      "line": 111,
+      "phrase": "auger-hole",
+      "definition": "a tiny crack; a place too small to hide in — Donalbain's image for the danger all around"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss33",
+      "line": 129,
+      "phrase": "near in blood",
+      "definition": "close kin to Duncan (and thus in danger)"
+    },
+    {
+      "id": "macbeth_act2_scene3_gloss34",
+      "line": 129,
+      "phrase": "There’s daggers in men’s smiles",
+      "definition": "Donalbain's wisdom: trust no man's face"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act2_scene3_ann1",
+      "line_start": 1,
+      "line_end": 18,
+      "citation_display": "Macbeth 2.3.1–18",
+      "category": "historical",
+      "title": "The equivocator and the Gunpowder Plot",
+      "body": "The Porter imagines himself as the gatekeeper of hell and lets in a procession of the damned. The second damned soul is an 'equivocator, that could swear in both the scales against either scale.' For a London audience in 1606, the reference was unmissable.\n\nHenry Garnet, the Jesuit superior in England, had been executed on May 3, 1606 — months before the play's earliest likely performance — for his role in the Gunpowder Plot (November 1605). His *Treatise of Equivocation*, circulated in manuscript, argued that a Catholic under interrogation could swear 'truly' while mentally reserving crucial qualifications. The doctrine was held up at his trial as proof that Catholics could not be trusted to swear loyalty. Garnet was the equivocator in public imagination.\n\nThe Porter is not engaged in incidental humor. He is placing Duncan's murder — the regicide happening upstairs — in direct conversation with the Gunpowder Plot, the regicide that nearly happened a few months earlier. Both are attacks on a Scottish king on English soil. Both involved subjects sworn to protect the king and the oaths they broke. The play's audience heard the political analogy; James I heard it too, and would have approved.\n\nWhen Macbeth himself invokes 'the equivocation of the fiend' at 5.5.42, he is naming the same doctrine — but now against his own ruin.",
+      "sources": [
+        "Garry Wills, *Witches and Jesuits: Shakespeare's Macbeth* (1995)",
+        "Peter Holland (ed.), Oxford *Macbeth* (2016)",
+        "Alvin Kernan, *Shakespeare, the King's Playwright* (1995)"
+      ]
+    },
+    {
+      "id": "macbeth_act2_scene3_ann2",
+      "line_start": 55,
+      "line_end": 100,
+      "citation_display": "Macbeth 2.3.55–100",
+      "category": "thematic",
+      "title": "The discovery of Duncan's murder",
+      "body": "Macduff finds Duncan. His reaction — 'O horror, horror, horror! / Tongue nor heart cannot conceive nor name thee' — gives the play its iconic scream. He returns with the body-image: 'Confusion now hath made his masterpiece! / Most sacrilegious murder hath broke ope / The Lord's anointed temple.' Duncan is figured as a holy building, regicide as architectural sacrilege.\n\nNote who speaks and who doesn't. Macduff cries out; Banquo swears an oath of service ('In the great hand of God I stand'); Malcolm and Donalbain whisper asides about fleeing. Macbeth delivers a prepared speech so over-rhetorical that a suspicious listener would recognize it as performance — 'Had I but died an hour before this chance, / I had lived a blessed time.' Lady Macbeth is ostentatiously shocked, and faints at the right moment.\n\nThe scene is an audition for every character's reaction to violence, and the play rewards the ones who are honestly horrified. Macduff will become the avenger. Malcolm and Donalbain's decision to flee separately, to England and Ireland, is the political act that will eventually defeat Macbeth.",
+      "sources": [
+        "Alan Sinfield, *Faultlines* (1992)",
+        "A. R. Braunmuller (1997)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act2_scene3_q1",
+      "kind": "historical",
+      "prompt": "The Porter's 'equivocator' is a direct allusion to:",
+      "options": [
+        "Shakespeare himself",
+        "Henry Garnet, the Jesuit executed May 1606 for the Gunpowder Plot — his 'Treatise of Equivocation' justified sworn mental reservation",
+        "A fictional character",
+        "A Roman senator"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 6,
+      "anchor_line_end": 10
+    },
+    {
+      "id": "macbeth_act2_scene3_q2",
+      "kind": "theme",
+      "prompt": "The Porter scene is not filler. Its function is:",
+      "options": [
+        "To make the audience laugh",
+        "To place Duncan's murder in direct dialogue with the Gunpowder Plot — another regicide that nearly happened",
+        "To introduce a new character",
+        "To describe the weather"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 30
+    },
+    {
+      "id": "macbeth_act2_scene3_q3",
+      "kind": "inference",
+      "prompt": "Macbeth's prepared speech on finding Duncan ('Had I but died an hour before this chance') is:",
+      "options": [
+        "Sincere grief",
+        "Over-rhetorical performance that a suspicious listener would spot as staged",
+        "A private soliloquy",
+        "A Biblical citation"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 105,
+      "anchor_line_end": 115
+    },
+    {
+      "id": "macbeth_act2_scene3_q4",
+      "kind": "comprehension",
+      "prompt": "Malcolm and Donalbain decide to:",
+      "options": [
+        "Stay and investigate",
+        "Flee separately to England and Ireland — the political decision that preserves the legitimate line",
+        "Challenge Macbeth",
+        "Confess their own guilt"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 125,
+      "anchor_line_end": 145
+    },
+    {
+      "id": "macbeth_act2_scene3_q5",
+      "kind": "close_reading",
+      "prompt": "Lennox's report of the night — tempests, crying in the air, the owl's scream — functions as:",
+      "options": [
+        "Weather report",
+        "Portents — the natural order registering the regicide before it is announced",
+        "A poem",
+        "A sermon"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 62,
+      "anchor_line_end": 71
+    }
+  ]
+}

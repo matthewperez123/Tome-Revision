@@ -1,0 +1,316 @@
+{
+  "work_id": "romeo-and-juliet",
+  "entries": [
+    {
+      "type": "chorus",
+      "section_id": "romeo_and_juliet_prologue",
+      "sequence": 1,
+      "act": null,
+      "scene": null,
+      "scene_title": "Prologue",
+      "line_count": 14,
+      "word_count": 106,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "act",
+      "act": 1,
+      "title": "Act I"
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act1_scene1",
+      "sequence": 2,
+      "act": 1,
+      "scene": 1,
+      "scene_title": "Verona. A public place",
+      "line_count": 234,
+      "word_count": 1806,
+      "est_read_minutes": 9
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act1_scene2",
+      "sequence": 3,
+      "act": 1,
+      "scene": 2,
+      "scene_title": "A street",
+      "line_count": 97,
+      "word_count": 793,
+      "est_read_minutes": 4
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act1_scene3",
+      "sequence": 4,
+      "act": 1,
+      "scene": 3,
+      "scene_title": "A room in Capulet's house",
+      "line_count": 108,
+      "word_count": 872,
+      "est_read_minutes": 4
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act1_scene4",
+      "sequence": 5,
+      "act": 1,
+      "scene": 4,
+      "scene_title": "A street",
+      "line_count": 120,
+      "word_count": 900,
+      "est_read_minutes": 5
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act1_scene5",
+      "sequence": 6,
+      "act": 1,
+      "scene": 5,
+      "scene_title": "A hall in Capulet's house",
+      "line_count": 151,
+      "word_count": 1167,
+      "est_read_minutes": 6
+    },
+    {
+      "type": "act",
+      "act": 2,
+      "title": "Act II"
+    },
+    {
+      "type": "chorus",
+      "section_id": "romeo_and_juliet_act2_chorus",
+      "sequence": 7,
+      "act": null,
+      "scene": null,
+      "scene_title": "Chorus",
+      "line_count": 14,
+      "word_count": 113,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act2_scene1",
+      "sequence": 8,
+      "act": 2,
+      "scene": 1,
+      "scene_title": "A lane by the wall of Capulet's orchard",
+      "line_count": 45,
+      "word_count": 350,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act2_scene2",
+      "sequence": 9,
+      "act": 2,
+      "scene": 2,
+      "scene_title": "Capulet's orchard",
+      "line_count": 202,
+      "word_count": 1572,
+      "est_read_minutes": 8
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act2_scene3",
+      "sequence": 10,
+      "act": 2,
+      "scene": 3,
+      "scene_title": "Friar Laurence's cell",
+      "line_count": 97,
+      "word_count": 753,
+      "est_read_minutes": 4
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act2_scene4",
+      "sequence": 11,
+      "act": 2,
+      "scene": 4,
+      "scene_title": "A street",
+      "line_count": 179,
+      "word_count": 1625,
+      "est_read_minutes": 8
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act2_scene5",
+      "sequence": 12,
+      "act": 2,
+      "scene": 5,
+      "scene_title": "Capulet's orchard",
+      "line_count": 76,
+      "word_count": 654,
+      "est_read_minutes": 3
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act2_scene6",
+      "sequence": 13,
+      "act": 2,
+      "scene": 6,
+      "scene_title": "Friar Laurence's cell",
+      "line_count": 32,
+      "word_count": 254,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "act",
+      "act": 3,
+      "title": "Act III"
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act3_scene1",
+      "sequence": 14,
+      "act": 3,
+      "scene": 1,
+      "scene_title": "A public place",
+      "line_count": 191,
+      "word_count": 1546,
+      "est_read_minutes": 8
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act3_scene2",
+      "sequence": 15,
+      "act": 3,
+      "scene": 2,
+      "scene_title": "Capulet's orchard",
+      "line_count": 145,
+      "word_count": 1110,
+      "est_read_minutes": 6
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act3_scene3",
+      "sequence": 16,
+      "act": 3,
+      "scene": 3,
+      "scene_title": "Friar Laurence's cell",
+      "line_count": 179,
+      "word_count": 1375,
+      "est_read_minutes": 7
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act3_scene4",
+      "sequence": 17,
+      "act": 3,
+      "scene": 4,
+      "scene_title": "A room in Capulet's house",
+      "line_count": 37,
+      "word_count": 297,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act3_scene5",
+      "sequence": 18,
+      "act": 3,
+      "scene": 5,
+      "scene_title": "Capulet's orchard",
+      "line_count": 254,
+      "word_count": 1990,
+      "est_read_minutes": 10
+    },
+    {
+      "type": "act",
+      "act": 4,
+      "title": "Act IV"
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act4_scene1",
+      "sequence": 19,
+      "act": 4,
+      "scene": 1,
+      "scene_title": "Friar Laurence's cell",
+      "line_count": 127,
+      "word_count": 1027,
+      "est_read_minutes": 5
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act4_scene2",
+      "sequence": 20,
+      "act": 4,
+      "scene": 2,
+      "scene_title": "Hall in Capulet's house",
+      "line_count": 46,
+      "word_count": 365,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act4_scene3",
+      "sequence": 21,
+      "act": 4,
+      "scene": 3,
+      "scene_title": "Juliet's chamber",
+      "line_count": 59,
+      "word_count": 479,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act4_scene4",
+      "sequence": 22,
+      "act": 4,
+      "scene": 4,
+      "scene_title": "Hall in Capulet's house",
+      "line_count": 24,
+      "word_count": 190,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act4_scene5",
+      "sequence": 23,
+      "act": 4,
+      "scene": 5,
+      "scene_title": "Juliet's chamber",
+      "line_count": 135,
+      "word_count": 1084,
+      "est_read_minutes": 5
+    },
+    {
+      "type": "act",
+      "act": 5,
+      "title": "Act V"
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act5_scene1",
+      "sequence": 24,
+      "act": 5,
+      "scene": 1,
+      "scene_title": "Mantua. A street",
+      "line_count": 84,
+      "word_count": 649,
+      "est_read_minutes": 3
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act5_scene2",
+      "sequence": 25,
+      "act": 5,
+      "scene": 2,
+      "scene_title": "Friar Laurence's cell",
+      "line_count": 30,
+      "word_count": 222,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "romeo_and_juliet_act5_scene3",
+      "sequence": 26,
+      "act": 5,
+      "scene": 3,
+      "scene_title": "A churchyard; in it a tomb belonging to the Capulets",
+      "line_count": 316,
+      "word_count": 2496,
+      "est_read_minutes": 12
+    }
+  ]
+}

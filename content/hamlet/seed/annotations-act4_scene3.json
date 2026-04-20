@@ -1,0 +1,21 @@
+{
+  "section_id": "hamlet_act4_scene3",
+  "annotations": [
+    {
+      "line_start": 17,
+      "line_end": 32,
+      "category": "thematic",
+      "title": "'Your worm is your only emperor for diet'",
+      "body": "Hamlet's lecture to Claudius on worms, kings, and beggars is one of the play's great meditations on mortality: 'we fat all creatures else to fat us, and we fat ourselves for maggots.' The argument moves through the food chain and arrives at a leveling truth: a king may travel, via a fish, through the guts of a beggar. The rhetoric is grotesque but philosophically precise — it dismantles the doctrine of the king's two bodies. A king is meat like any other meat. The speech is Hamlet's cruelest to Claudius, because it is delivered in the code of madness the King must accept while understanding perfectly its content. Only in Act 5, in the graveyard, will Hamlet return to this meditation with a different spirit.",
+      "sources": ["Harold Bloom, Shakespeare: The Invention of the Human (1998)"]
+    },
+    {
+      "line_start": 55,
+      "line_end": 70,
+      "category": "structural",
+      "title": "The sealed commission and the secret plot",
+      "body": "Claudius's final soliloquy reveals what the audience has suspected and the play has not yet confirmed: the letter Hamlet carries to England is a death warrant. The monarch who in 3.3 could not pray effectively now directs the pen with cold efficiency. The lines 'thou must cure me: till I know 'tis done, / Howe'er my haps, my joys were ne'er begun' are a small masterpiece of compromised hope. Shakespeare holds two portraits of Claudius in superposition throughout the play — the penitent and the manager — and the second is what we see here. The commission will become the hinge of Act 5, when Hamlet, aboard ship, discovers and rewrites it.",
+      "sources": ["Geoffrey Bullough, Narrative and Dramatic Sources of Shakespeare, vol. 7 (1973)"]
+    }
+  ]
+}

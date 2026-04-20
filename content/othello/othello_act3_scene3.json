@@ -1,0 +1,3308 @@
+{
+  "section_id": "othello_act3_scene3",
+  "work_id": "othello",
+  "sequence": 9,
+  "act": 3,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "The garden of the castle",
+  "line_count": 524,
+  "word_count": 3829,
+  "est_read_minutes": 19,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "DESDEMONA",
+      "text": "Be thou assured, good Cassio, I will do"
+    },
+    {
+      "number": 2,
+      "speaker": "DESDEMONA",
+      "text": "All my abilities in thy behalf."
+    },
+    {
+      "number": 3,
+      "speaker": "EMILIA",
+      "text": "Good madam, do: I warrant it grieves my husband,"
+    },
+    {
+      "number": 4,
+      "speaker": "EMILIA",
+      "text": "As if the case were his."
+    },
+    {
+      "number": 5,
+      "speaker": "DESDEMONA",
+      "text": "O, that’s an honest fellow. Do not doubt, Cassio,"
+    },
+    {
+      "number": 6,
+      "speaker": "DESDEMONA",
+      "text": "But I will have my lord and you again"
+    },
+    {
+      "number": 7,
+      "speaker": "DESDEMONA",
+      "text": "As friendly as you were."
+    },
+    {
+      "number": 7,
+      "speaker": "CASSIO",
+      "text": "Bounteous madam,"
+    },
+    {
+      "number": 8,
+      "speaker": "CASSIO",
+      "text": "Whatever shall become of Michael Cassio,"
+    },
+    {
+      "number": 9,
+      "speaker": "CASSIO",
+      "text": "He’s never any thing but your true servant."
+    },
+    {
+      "number": 10,
+      "speaker": "DESDEMONA",
+      "text": "I know’t; I thank you. You do love my lord:"
+    },
+    {
+      "number": 11,
+      "speaker": "DESDEMONA",
+      "text": "You have known him long; and be you well assured"
+    },
+    {
+      "number": 12,
+      "speaker": "DESDEMONA",
+      "text": "He shall in strangeness stand no further off"
+    },
+    {
+      "number": 13,
+      "speaker": "DESDEMONA",
+      "text": "Than in a polite distance."
+    },
+    {
+      "number": 13,
+      "speaker": "CASSIO",
+      "text": "Ay, but, lady,"
+    },
+    {
+      "number": 14,
+      "speaker": "CASSIO",
+      "text": "That policy may either last so long,"
+    },
+    {
+      "number": 15,
+      "speaker": "CASSIO",
+      "text": "Or feed upon such nice and waterish diet,"
+    },
+    {
+      "number": 16,
+      "speaker": "CASSIO",
+      "text": "Or breed itself so out of circumstance,"
+    },
+    {
+      "number": 17,
+      "speaker": "CASSIO",
+      "text": "That, I being absent and my place supplied,"
+    },
+    {
+      "number": 18,
+      "speaker": "CASSIO",
+      "text": "My general will forget my love and service."
+    },
+    {
+      "number": 19,
+      "speaker": "DESDEMONA",
+      "text": "Do not doubt that; before Emilia here"
+    },
+    {
+      "number": 20,
+      "speaker": "DESDEMONA",
+      "text": "I give thee warrant of thy place: assure thee,"
+    },
+    {
+      "number": 21,
+      "speaker": "DESDEMONA",
+      "text": "If I do vow a friendship, I’ll perform it"
+    },
+    {
+      "number": 22,
+      "speaker": "DESDEMONA",
+      "text": "To the last article: my lord shall never rest;"
+    },
+    {
+      "number": 23,
+      "speaker": "DESDEMONA",
+      "text": "I’ll watch him tame and talk him out of patience;"
+    },
+    {
+      "number": 24,
+      "speaker": "DESDEMONA",
+      "text": "His bed shall seem a school, his board a shrift;"
+    },
+    {
+      "number": 25,
+      "speaker": "DESDEMONA",
+      "text": "I’ll intermingle every thing he does"
+    },
+    {
+      "number": 26,
+      "speaker": "DESDEMONA",
+      "text": "With Cassio’s suit: therefore be merry, Cassio;"
+    },
+    {
+      "number": 27,
+      "speaker": "DESDEMONA",
+      "text": "For thy solicitor shall rather die"
+    },
+    {
+      "number": 28,
+      "speaker": "DESDEMONA",
+      "text": "Than give thy cause away."
+    },
+    {
+      "number": 28,
+      "speaker": "EMILIA",
+      "text": "Madam, here comes my lord."
+    },
+    {
+      "number": 29,
+      "speaker": "CASSIO",
+      "text": "Madam, I’ll take my leave."
+    },
+    {
+      "number": 29,
+      "speaker": "DESDEMONA",
+      "text": "Why, stay, and hear me speak."
+    },
+    {
+      "number": 30,
+      "speaker": "CASSIO",
+      "text": "Madam, not now: I am very ill at ease,"
+    },
+    {
+      "number": 31,
+      "speaker": "CASSIO",
+      "text": "Unfit for mine own purposes."
+    },
+    {
+      "number": 31,
+      "speaker": "DESDEMONA",
+      "text": "Well, do your discretion."
+    },
+    {
+      "number": 32,
+      "speaker": "IAGO",
+      "text": "Ha! I like not that."
+    },
+    {
+      "number": 32,
+      "speaker": "OTHELLO",
+      "text": "What dost thou say?"
+    },
+    {
+      "number": 33,
+      "speaker": "IAGO",
+      "text": "Nothing, my lord: or if—I know not what."
+    },
+    {
+      "number": 34,
+      "speaker": "OTHELLO",
+      "text": "Was not that Cassio parted from my wife?"
+    },
+    {
+      "number": 35,
+      "speaker": "IAGO",
+      "text": "Cassio, my lord! No, sure, I cannot think it,"
+    },
+    {
+      "number": 36,
+      "speaker": "IAGO",
+      "text": "That he would steal away so guilty-like,"
+    },
+    {
+      "number": 37,
+      "speaker": "IAGO",
+      "text": "Seeing you coming."
+    },
+    {
+      "number": 37,
+      "speaker": "OTHELLO",
+      "text": "I do believe ’twas he."
+    },
+    {
+      "number": 38,
+      "speaker": "DESDEMONA",
+      "text": "How now, my lord!"
+    },
+    {
+      "number": 39,
+      "speaker": "DESDEMONA",
+      "text": "I have been talking with a suitor here,"
+    },
+    {
+      "number": 40,
+      "speaker": "DESDEMONA",
+      "text": "A man that languishes in your displeasure."
+    },
+    {
+      "number": 41,
+      "speaker": "OTHELLO",
+      "text": "Who is’t you mean?"
+    },
+    {
+      "number": 42,
+      "speaker": "DESDEMONA",
+      "text": "Why, your lieutenant, Cassio. Good my lord,"
+    },
+    {
+      "number": 43,
+      "speaker": "DESDEMONA",
+      "text": "If I have any grace or power to move you,"
+    },
+    {
+      "number": 44,
+      "speaker": "DESDEMONA",
+      "text": "His present reconciliation take;"
+    },
+    {
+      "number": 45,
+      "speaker": "DESDEMONA",
+      "text": "For if he be not one that truly loves you,"
+    },
+    {
+      "number": 46,
+      "speaker": "DESDEMONA",
+      "text": "That errs in ignorance and not in cunning,"
+    },
+    {
+      "number": 47,
+      "speaker": "DESDEMONA",
+      "text": "I have no judgment in an honest face:"
+    },
+    {
+      "number": 48,
+      "speaker": "DESDEMONA",
+      "text": "I prithee, call him back."
+    },
+    {
+      "number": 48,
+      "speaker": "OTHELLO",
+      "text": "Went he hence now?"
+    },
+    {
+      "number": 49,
+      "speaker": "DESDEMONA",
+      "text": "Ay, sooth; so humbled"
+    },
+    {
+      "number": 50,
+      "speaker": "DESDEMONA",
+      "text": "That he hath left part of his grief with me,"
+    },
+    {
+      "number": 51,
+      "speaker": "DESDEMONA",
+      "text": "To suffer with him. Good love, call him back."
+    },
+    {
+      "number": 52,
+      "speaker": "OTHELLO",
+      "text": "Not now, sweet Desdemona; some other time."
+    },
+    {
+      "number": 53,
+      "speaker": "DESDEMONA",
+      "text": "But shall’t be shortly?"
+    },
+    {
+      "number": 53,
+      "speaker": "OTHELLO",
+      "text": "The sooner, sweet, for you."
+    },
+    {
+      "number": 54,
+      "speaker": "DESDEMONA",
+      "text": "Shall’t be to-night at supper?"
+    },
+    {
+      "number": 54,
+      "speaker": "OTHELLO",
+      "text": "No, not to-night."
+    },
+    {
+      "number": 55,
+      "speaker": "DESDEMONA",
+      "text": "To-morrow dinner, then?"
+    },
+    {
+      "number": 56,
+      "speaker": "OTHELLO",
+      "text": "I shall not dine at home; I meet the captains at the citadel."
+    },
+    {
+      "number": 57,
+      "speaker": "DESDEMONA",
+      "text": "Why, then, to-morrow night; or Tuesday morn;"
+    },
+    {
+      "number": 58,
+      "speaker": "DESDEMONA",
+      "text": "On Tuesday noon, or night; on Wednesday morn:"
+    },
+    {
+      "number": 59,
+      "speaker": "DESDEMONA",
+      "text": "I prithee, name the time, but let it not"
+    },
+    {
+      "number": 60,
+      "speaker": "DESDEMONA",
+      "text": "Exceed three days: in faith, he’s penitent;"
+    },
+    {
+      "number": 61,
+      "speaker": "DESDEMONA",
+      "text": "And yet his trespass, in our common reason—"
+    },
+    {
+      "number": 62,
+      "speaker": "DESDEMONA",
+      "text": "Save that, they say, the wars must make examples"
+    },
+    {
+      "number": 63,
+      "speaker": "DESDEMONA",
+      "text": "Out of their best—is not almost a fault"
+    },
+    {
+      "number": 64,
+      "speaker": "DESDEMONA",
+      "text": "To incur a private cheque. When shall he come?"
+    },
+    {
+      "number": 65,
+      "speaker": "DESDEMONA",
+      "text": "Tell me, Othello: I wonder in my soul,"
+    },
+    {
+      "number": 66,
+      "speaker": "DESDEMONA",
+      "text": "What you would ask me, that I should deny,"
+    },
+    {
+      "number": 67,
+      "speaker": "DESDEMONA",
+      "text": "Or stand so mammering on. What! Michael Cassio,"
+    },
+    {
+      "number": 68,
+      "speaker": "DESDEMONA",
+      "text": "That came a-wooing with you, and so many a time,"
+    },
+    {
+      "number": 69,
+      "speaker": "DESDEMONA",
+      "text": "When I have spoke of you dispraisingly,"
+    },
+    {
+      "number": 70,
+      "speaker": "DESDEMONA",
+      "text": "Hath ta’en your part; to have so much to do"
+    },
+    {
+      "number": 71,
+      "speaker": "DESDEMONA",
+      "text": "To bring him in! Trust me, I could do much—"
+    },
+    {
+      "number": 72,
+      "speaker": "OTHELLO",
+      "text": "Prithee, no more: let him come when he will;"
+    },
+    {
+      "number": 73,
+      "speaker": "OTHELLO",
+      "text": "I will deny thee nothing."
+    },
+    {
+      "number": 73,
+      "speaker": "DESDEMONA",
+      "text": "Why, this is not a boon;"
+    },
+    {
+      "number": 74,
+      "speaker": "DESDEMONA",
+      "text": "’Tis as I should entreat you wear your gloves,"
+    },
+    {
+      "number": 75,
+      "speaker": "DESDEMONA",
+      "text": "Or feed on nourishing dishes, or keep you warm,"
+    },
+    {
+      "number": 76,
+      "speaker": "DESDEMONA",
+      "text": "Or sue to you to do a peculiar profit"
+    },
+    {
+      "number": 77,
+      "speaker": "DESDEMONA",
+      "text": "To your own person: nay, when I have a suit"
+    },
+    {
+      "number": 78,
+      "speaker": "DESDEMONA",
+      "text": "Wherein I mean to touch your love indeed,"
+    },
+    {
+      "number": 79,
+      "speaker": "DESDEMONA",
+      "text": "It shall be full of poise and difficult weight"
+    },
+    {
+      "number": 80,
+      "speaker": "DESDEMONA",
+      "text": "And fearful to be granted."
+    },
+    {
+      "number": 80,
+      "speaker": "OTHELLO",
+      "text": "I will deny thee nothing:"
+    },
+    {
+      "number": 81,
+      "speaker": "OTHELLO",
+      "text": "Whereon, I do beseech thee, grant me this,"
+    },
+    {
+      "number": 82,
+      "speaker": "OTHELLO",
+      "text": "To leave me but a little to myself."
+    },
+    {
+      "number": 83,
+      "speaker": "DESDEMONA",
+      "text": "Shall I deny you? no: farewell, my lord."
+    },
+    {
+      "number": 84,
+      "speaker": "OTHELLO",
+      "text": "Farewell, my Desdemona: I’ll come to thee straight."
+    },
+    {
+      "number": 85,
+      "speaker": "DESDEMONA",
+      "text": "Emilia, come. Be as your fancies teach you;"
+    },
+    {
+      "number": 86,
+      "speaker": "DESDEMONA",
+      "text": "Whate’er you be, I am obedient."
+    },
+    {
+      "number": 86,
+      "speaker": "OTHELLO",
+      "text": "Excellent wretch! Perdition catch my soul,"
+    },
+    {
+      "number": 87,
+      "speaker": "OTHELLO",
+      "text": "But I do love thee! and when I love thee not,"
+    },
+    {
+      "number": 88,
+      "speaker": "OTHELLO",
+      "text": "Chaos is come again."
+    },
+    {
+      "number": 88,
+      "speaker": "IAGO",
+      "text": "My noble lord—"
+    },
+    {
+      "number": 89,
+      "speaker": "OTHELLO",
+      "text": "What dost thou say, Iago?"
+    },
+    {
+      "number": 90,
+      "speaker": "IAGO",
+      "text": "Did Michael Cassio, when you woo’d my lady,"
+    },
+    {
+      "number": 91,
+      "speaker": "IAGO",
+      "text": "Know of your love?"
+    },
+    {
+      "number": 92,
+      "speaker": "OTHELLO",
+      "text": "He did, from first to last: why dost thou ask?"
+    },
+    {
+      "number": 93,
+      "speaker": "IAGO",
+      "text": "But for a satisfaction of my thought;"
+    },
+    {
+      "number": 94,
+      "speaker": "IAGO",
+      "text": "No further harm."
+    },
+    {
+      "number": 94,
+      "speaker": "OTHELLO",
+      "text": "Why of thy thought, Iago?"
+    },
+    {
+      "number": 95,
+      "speaker": "IAGO",
+      "text": "I did not think he had been acquainted with her."
+    },
+    {
+      "number": 96,
+      "speaker": "OTHELLO",
+      "text": "O, yes; and went between us very oft."
+    },
+    {
+      "number": 97,
+      "speaker": "IAGO",
+      "text": "Indeed!"
+    },
+    {
+      "number": 98,
+      "speaker": "OTHELLO",
+      "text": "Indeed! ay, indeed: discern’st thou aught in that?"
+    },
+    {
+      "number": 99,
+      "speaker": "OTHELLO",
+      "text": "Is he not honest?"
+    },
+    {
+      "number": 99,
+      "speaker": "IAGO",
+      "text": "Honest, my lord!"
+    },
+    {
+      "number": 100,
+      "speaker": "OTHELLO",
+      "text": "Honest! ay, honest."
+    },
+    {
+      "number": 100,
+      "speaker": "IAGO",
+      "text": "My lord, for aught I know."
+    },
+    {
+      "number": 101,
+      "speaker": "OTHELLO",
+      "text": "What dost thou think?"
+    },
+    {
+      "number": 101,
+      "speaker": "IAGO",
+      "text": "Think, my lord!"
+    },
+    {
+      "number": 102,
+      "speaker": "OTHELLO",
+      "text": "Think, my lord!"
+    },
+    {
+      "number": 103,
+      "speaker": "OTHELLO",
+      "text": "By heaven, he echoes me,"
+    },
+    {
+      "number": 104,
+      "speaker": "OTHELLO",
+      "text": "As if there were some monster in his thought"
+    },
+    {
+      "number": 105,
+      "speaker": "OTHELLO",
+      "text": "Too hideous to be shown. Thou dost mean something:"
+    },
+    {
+      "number": 106,
+      "speaker": "OTHELLO",
+      "text": "I heard thee say even now, thou likedst not that,"
+    },
+    {
+      "number": 107,
+      "speaker": "OTHELLO",
+      "text": "When Cassio left my wife: what didst not like?"
+    },
+    {
+      "number": 108,
+      "speaker": "OTHELLO",
+      "text": "And when I told thee he was of my counsel"
+    },
+    {
+      "number": 109,
+      "speaker": "OTHELLO",
+      "text": "In my whole course of wooing, thou criedst “Indeed!”"
+    },
+    {
+      "number": 110,
+      "speaker": "OTHELLO",
+      "text": "And didst contract and purse thy brow together,"
+    },
+    {
+      "number": 111,
+      "speaker": "OTHELLO",
+      "text": "As if thou then hadst shut up in thy brain"
+    },
+    {
+      "number": 112,
+      "speaker": "OTHELLO",
+      "text": "Some horrible conceit: if thou dost love me,"
+    },
+    {
+      "number": 113,
+      "speaker": "OTHELLO",
+      "text": "Show me thy thought."
+    },
+    {
+      "number": 114,
+      "speaker": "IAGO",
+      "text": "My lord, you know I love you."
+    },
+    {
+      "number": 115,
+      "speaker": "OTHELLO",
+      "text": "I think thou dost;"
+    },
+    {
+      "number": 116,
+      "speaker": "OTHELLO",
+      "text": "And, for I know thou’rt full of love and honesty,"
+    },
+    {
+      "number": 117,
+      "speaker": "OTHELLO",
+      "text": "And weigh’st thy words before thou givest them breath,"
+    },
+    {
+      "number": 118,
+      "speaker": "OTHELLO",
+      "text": "Therefore these stops of thine fright me the more:"
+    },
+    {
+      "number": 119,
+      "speaker": "OTHELLO",
+      "text": "For such things in a false disloyal knave"
+    },
+    {
+      "number": 120,
+      "speaker": "OTHELLO",
+      "text": "Are tricks of custom, but in a man that’s just"
+    },
+    {
+      "number": 121,
+      "speaker": "OTHELLO",
+      "text": "They are close delations, working from the heart"
+    },
+    {
+      "number": 122,
+      "speaker": "OTHELLO",
+      "text": "That passion cannot rule."
+    },
+    {
+      "number": 122,
+      "speaker": "IAGO",
+      "text": "For Michael Cassio,"
+    },
+    {
+      "number": 123,
+      "speaker": "IAGO",
+      "text": "I dare be sworn I think that he is honest."
+    },
+    {
+      "number": 124,
+      "speaker": "OTHELLO",
+      "text": "I think so too."
+    },
+    {
+      "number": 124,
+      "speaker": "IAGO",
+      "text": "Men should be what they seem;"
+    },
+    {
+      "number": 125,
+      "speaker": "IAGO",
+      "text": "Or those that be not, would they might seem none!"
+    },
+    {
+      "number": 126,
+      "speaker": "OTHELLO",
+      "text": "Certain, men should be what they seem."
+    },
+    {
+      "number": 127,
+      "speaker": "IAGO",
+      "text": "Why, then, I think Cassio’s an honest man."
+    },
+    {
+      "number": 128,
+      "speaker": "OTHELLO",
+      "text": "Nay, yet there’s more in this:"
+    },
+    {
+      "number": 129,
+      "speaker": "OTHELLO",
+      "text": "I prithee, speak to me as to thy thinkings,"
+    },
+    {
+      "number": 130,
+      "speaker": "OTHELLO",
+      "text": "As thou dost ruminate, and give thy worst of thoughts"
+    },
+    {
+      "number": 131,
+      "speaker": "OTHELLO",
+      "text": "The worst of words."
+    },
+    {
+      "number": 131,
+      "speaker": "IAGO",
+      "text": "Good my lord, pardon me:"
+    },
+    {
+      "number": 132,
+      "speaker": "IAGO",
+      "text": "Though I am bound to every act of duty,"
+    },
+    {
+      "number": 133,
+      "speaker": "IAGO",
+      "text": "I am not bound to that all slaves are free to."
+    },
+    {
+      "number": 134,
+      "speaker": "IAGO",
+      "text": "Utter my thoughts? Why, say they are vile and false;"
+    },
+    {
+      "number": 135,
+      "speaker": "IAGO",
+      "text": "As where’s that palace whereinto foul things"
+    },
+    {
+      "number": 136,
+      "speaker": "IAGO",
+      "text": "Sometimes intrude not? who has a breast so pure,"
+    },
+    {
+      "number": 137,
+      "speaker": "IAGO",
+      "text": "But some uncleanly apprehensions"
+    },
+    {
+      "number": 138,
+      "speaker": "IAGO",
+      "text": "Keep leets and law-days and in session sit"
+    },
+    {
+      "number": 139,
+      "speaker": "IAGO",
+      "text": "With meditations lawful?"
+    },
+    {
+      "number": 140,
+      "speaker": "OTHELLO",
+      "text": "Thou dost conspire against thy friend, Iago,"
+    },
+    {
+      "number": 141,
+      "speaker": "OTHELLO",
+      "text": "If thou but think’st him wrong’d and makest his ear"
+    },
+    {
+      "number": 142,
+      "speaker": "OTHELLO",
+      "text": "A stranger to thy thoughts."
+    },
+    {
+      "number": 142,
+      "speaker": "IAGO",
+      "text": "I do beseech you—"
+    },
+    {
+      "number": 143,
+      "speaker": "IAGO",
+      "text": "Though I perchance am vicious in my guess,"
+    },
+    {
+      "number": 144,
+      "speaker": "IAGO",
+      "text": "As, I confess, it is my nature’s plague"
+    },
+    {
+      "number": 145,
+      "speaker": "IAGO",
+      "text": "To spy into abuses, and oft my jealousy"
+    },
+    {
+      "number": 146,
+      "speaker": "IAGO",
+      "text": "Shapes faults that are not—that your wisdom yet,"
+    },
+    {
+      "number": 147,
+      "speaker": "IAGO",
+      "text": "From one that so imperfectly conceits,"
+    },
+    {
+      "number": 148,
+      "speaker": "IAGO",
+      "text": "Would take no notice, nor build yourself a trouble"
+    },
+    {
+      "number": 149,
+      "speaker": "IAGO",
+      "text": "Out of his scattering and unsure observance."
+    },
+    {
+      "number": 150,
+      "speaker": "IAGO",
+      "text": "It were not for your quiet nor your good,"
+    },
+    {
+      "number": 151,
+      "speaker": "IAGO",
+      "text": "Nor for my manhood, honesty, or wisdom,"
+    },
+    {
+      "number": 152,
+      "speaker": "IAGO",
+      "text": "To let you know my thoughts."
+    },
+    {
+      "number": 152,
+      "speaker": "OTHELLO",
+      "text": "What dost thou mean?"
+    },
+    {
+      "number": 153,
+      "speaker": "IAGO",
+      "text": "Good name in man and woman, dear my lord,"
+    },
+    {
+      "number": 154,
+      "speaker": "IAGO",
+      "text": "Is the immediate jewel of their souls:"
+    },
+    {
+      "number": 155,
+      "speaker": "IAGO",
+      "text": "Who steals my purse steals trash; ’tis something, nothing;"
+    },
+    {
+      "number": 156,
+      "speaker": "IAGO",
+      "text": "’Twas mine, ’tis his, and has been slave to thousands:"
+    },
+    {
+      "number": 157,
+      "speaker": "IAGO",
+      "text": "But he that filches from me my good name"
+    },
+    {
+      "number": 158,
+      "speaker": "IAGO",
+      "text": "Robs me of that which not enriches him"
+    },
+    {
+      "number": 159,
+      "speaker": "IAGO",
+      "text": "And makes me poor indeed."
+    },
+    {
+      "number": 159,
+      "speaker": "OTHELLO",
+      "text": "By heaven, I’ll know thy thoughts."
+    },
+    {
+      "number": 160,
+      "speaker": "IAGO",
+      "text": "You cannot, if my heart were in your hand;"
+    },
+    {
+      "number": 161,
+      "speaker": "IAGO",
+      "text": "Nor shall not, whilst ’tis in my custody."
+    },
+    {
+      "number": 162,
+      "speaker": "OTHELLO",
+      "text": "Ha!"
+    },
+    {
+      "number": 162,
+      "speaker": "IAGO",
+      "text": "O, beware, my lord, of jealousy;"
+    },
+    {
+      "number": 163,
+      "speaker": "IAGO",
+      "text": "It is the green-eyed monster which doth mock"
+    },
+    {
+      "number": 164,
+      "speaker": "IAGO",
+      "text": "The meat it feeds on; that cuckold lives in bliss"
+    },
+    {
+      "number": 165,
+      "speaker": "IAGO",
+      "text": "Who, certain of his fate, loves not his wronger;"
+    },
+    {
+      "number": 166,
+      "speaker": "IAGO",
+      "text": "But, O, what damned minutes tells he o’er"
+    },
+    {
+      "number": 167,
+      "speaker": "IAGO",
+      "text": "Who dotes, yet doubts, suspects, yet strongly loves!"
+    },
+    {
+      "number": 168,
+      "speaker": "OTHELLO",
+      "text": "O misery!"
+    },
+    {
+      "number": 169,
+      "speaker": "IAGO",
+      "text": "Poor and content is rich and rich enough,"
+    },
+    {
+      "number": 170,
+      "speaker": "IAGO",
+      "text": "But riches fineless is as poor as winter"
+    },
+    {
+      "number": 171,
+      "speaker": "IAGO",
+      "text": "To him that ever fears he shall be poor."
+    },
+    {
+      "number": 172,
+      "speaker": "IAGO",
+      "text": "Good heaven, the souls of all my tribe defend"
+    },
+    {
+      "number": 173,
+      "speaker": "IAGO",
+      "text": "From jealousy!"
+    },
+    {
+      "number": 173,
+      "speaker": "OTHELLO",
+      "text": "Why, why is this?"
+    },
+    {
+      "number": 174,
+      "speaker": "OTHELLO",
+      "text": "Think’st thou I’ld make a lie of jealousy,"
+    },
+    {
+      "number": 175,
+      "speaker": "OTHELLO",
+      "text": "To follow still the changes of the moon"
+    },
+    {
+      "number": 176,
+      "speaker": "OTHELLO",
+      "text": "With fresh suspicions? No; to be once in doubt"
+    },
+    {
+      "number": 177,
+      "speaker": "OTHELLO",
+      "text": "Is once to be resolved: exchange me for a goat,"
+    },
+    {
+      "number": 178,
+      "speaker": "OTHELLO",
+      "text": "When I shall turn the business of my soul"
+    },
+    {
+      "number": 179,
+      "speaker": "OTHELLO",
+      "text": "To such exsufflicate and blown surmises,"
+    },
+    {
+      "number": 180,
+      "speaker": "OTHELLO",
+      "text": "Matching thy inference. ’Tis not to make me jealous"
+    },
+    {
+      "number": 181,
+      "speaker": "OTHELLO",
+      "text": "To say my wife is fair, feeds well, loves company,"
+    },
+    {
+      "number": 182,
+      "speaker": "OTHELLO",
+      "text": "Is free of speech, sings, plays and dances well;"
+    },
+    {
+      "number": 183,
+      "speaker": "OTHELLO",
+      "text": "Where virtue is, these are more virtuous:"
+    },
+    {
+      "number": 184,
+      "speaker": "OTHELLO",
+      "text": "Nor from mine own weak merits will I draw"
+    },
+    {
+      "number": 185,
+      "speaker": "OTHELLO",
+      "text": "The smallest fear or doubt of her revolt;"
+    },
+    {
+      "number": 186,
+      "speaker": "OTHELLO",
+      "text": "For she had eyes, and chose me. No, Iago;"
+    },
+    {
+      "number": 187,
+      "speaker": "OTHELLO",
+      "text": "I’ll see before I doubt; when I doubt, prove;"
+    },
+    {
+      "number": 188,
+      "speaker": "OTHELLO",
+      "text": "And on the proof, there is no more but this—"
+    },
+    {
+      "number": 189,
+      "speaker": "OTHELLO",
+      "text": "Away at once with love or jealousy!"
+    },
+    {
+      "number": 190,
+      "speaker": "IAGO",
+      "text": "I am glad of it; for now I shall have reason"
+    },
+    {
+      "number": 191,
+      "speaker": "IAGO",
+      "text": "To show the love and duty that I bear you"
+    },
+    {
+      "number": 192,
+      "speaker": "IAGO",
+      "text": "With franker spirit: therefore, as I am bound,"
+    },
+    {
+      "number": 193,
+      "speaker": "IAGO",
+      "text": "Receive it from me. I speak not yet of proof."
+    },
+    {
+      "number": 194,
+      "speaker": "IAGO",
+      "text": "Look to your wife; observe her well with Cassio;"
+    },
+    {
+      "number": 195,
+      "speaker": "IAGO",
+      "text": "Wear your eye thus, not jealous nor secure:"
+    },
+    {
+      "number": 196,
+      "speaker": "IAGO",
+      "text": "I would not have your free and noble nature,"
+    },
+    {
+      "number": 197,
+      "speaker": "IAGO",
+      "text": "Out of self-bounty, be abused; look to’t:"
+    },
+    {
+      "number": 198,
+      "speaker": "IAGO",
+      "text": "I know our country disposition well;"
+    },
+    {
+      "number": 199,
+      "speaker": "IAGO",
+      "text": "In Venice they do let heaven see the pranks"
+    },
+    {
+      "number": 200,
+      "speaker": "IAGO",
+      "text": "They dare not show their husbands; their best conscience"
+    },
+    {
+      "number": 201,
+      "speaker": "IAGO",
+      "text": "Is not to leave’t undone, but keep’t unknown."
+    },
+    {
+      "number": 202,
+      "speaker": "OTHELLO",
+      "text": "Dost thou say so?"
+    },
+    {
+      "number": 203,
+      "speaker": "IAGO",
+      "text": "She did deceive her father, marrying you;"
+    },
+    {
+      "number": 204,
+      "speaker": "IAGO",
+      "text": "And when she seem’d to shake and fear your looks,"
+    },
+    {
+      "number": 205,
+      "speaker": "IAGO",
+      "text": "She loved them most."
+    },
+    {
+      "number": 205,
+      "speaker": "OTHELLO",
+      "text": "And so she did."
+    },
+    {
+      "number": 206,
+      "speaker": "IAGO",
+      "text": "Why, go to then;"
+    },
+    {
+      "number": 207,
+      "speaker": "IAGO",
+      "text": "She that, so young, could give out such a seeming,"
+    },
+    {
+      "number": 208,
+      "speaker": "IAGO",
+      "text": "To seal her father’s eyes up close as oak—"
+    },
+    {
+      "number": 209,
+      "speaker": "IAGO",
+      "text": "He thought ’twas witchcraft—but I am much to blame;"
+    },
+    {
+      "number": 210,
+      "speaker": "IAGO",
+      "text": "I humbly do beseech you of your pardon"
+    },
+    {
+      "number": 211,
+      "speaker": "IAGO",
+      "text": "For too much loving you."
+    },
+    {
+      "number": 212,
+      "speaker": "OTHELLO",
+      "text": "I am bound to thee for ever."
+    },
+    {
+      "number": 213,
+      "speaker": "IAGO",
+      "text": "I see this hath a little dash’d your spirits."
+    },
+    {
+      "number": 214,
+      "speaker": "OTHELLO",
+      "text": "Not a jot, not a jot."
+    },
+    {
+      "number": 214,
+      "speaker": "IAGO",
+      "text": "I’ faith, I fear it has."
+    },
+    {
+      "number": 215,
+      "speaker": "IAGO",
+      "text": "I hope you will consider what is spoke"
+    },
+    {
+      "number": 216,
+      "speaker": "IAGO",
+      "text": "Comes from my love. But I do see you’re moved:"
+    },
+    {
+      "number": 217,
+      "speaker": "IAGO",
+      "text": "I am to pray you not to strain my speech"
+    },
+    {
+      "number": 218,
+      "speaker": "IAGO",
+      "text": "To grosser issues nor to larger reach"
+    },
+    {
+      "number": 219,
+      "speaker": "IAGO",
+      "text": "Than to suspicion."
+    },
+    {
+      "number": 219,
+      "speaker": "OTHELLO",
+      "text": "I will not."
+    },
+    {
+      "number": 220,
+      "speaker": "IAGO",
+      "text": "Should you do so, my lord,"
+    },
+    {
+      "number": 221,
+      "speaker": "IAGO",
+      "text": "My speech should fall into such vile success"
+    },
+    {
+      "number": 222,
+      "speaker": "IAGO",
+      "text": "As my thoughts aim not at. Cassio’s my worthy friend—"
+    },
+    {
+      "number": 223,
+      "speaker": "IAGO",
+      "text": "My lord, I see you’re moved."
+    },
+    {
+      "number": 223,
+      "speaker": "OTHELLO",
+      "text": "No, not much moved:"
+    },
+    {
+      "number": 224,
+      "speaker": "OTHELLO",
+      "text": "I do not think but Desdemona’s honest."
+    },
+    {
+      "number": 225,
+      "speaker": "IAGO",
+      "text": "Long live she so! and long live you to think so!"
+    },
+    {
+      "number": 226,
+      "speaker": "OTHELLO",
+      "text": "And yet, how nature erring from itself—"
+    },
+    {
+      "number": 227,
+      "speaker": "IAGO",
+      "text": "Ay, there’s the point: as—to be bold with you—"
+    },
+    {
+      "number": 228,
+      "speaker": "IAGO",
+      "text": "Not to affect many proposed matches"
+    },
+    {
+      "number": 229,
+      "speaker": "IAGO",
+      "text": "Of her own clime, complexion, and degree,"
+    },
+    {
+      "number": 230,
+      "speaker": "IAGO",
+      "text": "Whereto we see in all things nature tends—"
+    },
+    {
+      "number": 231,
+      "speaker": "IAGO",
+      "text": "Foh! one may smell in such a will most rank,"
+    },
+    {
+      "number": 232,
+      "speaker": "IAGO",
+      "text": "Foul disproportion thoughts unnatural."
+    },
+    {
+      "number": 233,
+      "speaker": "IAGO",
+      "text": "But pardon me; I do not in position"
+    },
+    {
+      "number": 234,
+      "speaker": "IAGO",
+      "text": "Distinctly speak of her; though I may fear"
+    },
+    {
+      "number": 235,
+      "speaker": "IAGO",
+      "text": "Her will, recoiling to her better judgment,"
+    },
+    {
+      "number": 236,
+      "speaker": "IAGO",
+      "text": "May fall to match you with her country forms"
+    },
+    {
+      "number": 237,
+      "speaker": "IAGO",
+      "text": "And happily repent."
+    },
+    {
+      "number": 237,
+      "speaker": "OTHELLO",
+      "text": "Farewell, farewell:"
+    },
+    {
+      "number": 238,
+      "speaker": "OTHELLO",
+      "text": "If more thou dost perceive, let me know more;"
+    },
+    {
+      "number": 239,
+      "speaker": "OTHELLO",
+      "text": "Set on thy wife to observe: leave me, Iago:"
+    },
+    {
+      "number": 240,
+      "speaker": "IAGO",
+      "text": "Going. My lord, I take my leave."
+    },
+    {
+      "number": 241,
+      "speaker": "OTHELLO",
+      "text": "Why did I marry? This honest creature doubtless"
+    },
+    {
+      "number": 242,
+      "speaker": "OTHELLO",
+      "text": "Sees and knows more, much more, than he unfolds."
+    },
+    {
+      "number": 243,
+      "speaker": "IAGO",
+      "text": "Returning. My lord, I would I might entreat your honour"
+    },
+    {
+      "number": 244,
+      "speaker": "IAGO",
+      "text": "To scan this thing no further; leave it to time:"
+    },
+    {
+      "number": 245,
+      "speaker": "IAGO",
+      "text": "Though it be fit that Cassio have his place,"
+    },
+    {
+      "number": 246,
+      "speaker": "IAGO",
+      "text": "For sure, he fills it up with great ability,"
+    },
+    {
+      "number": 247,
+      "speaker": "IAGO",
+      "text": "Yet, if you please to hold him off awhile,"
+    },
+    {
+      "number": 248,
+      "speaker": "IAGO",
+      "text": "You shall by that perceive him and his means:"
+    },
+    {
+      "number": 249,
+      "speaker": "IAGO",
+      "text": "Note, if your lady strain his entertainment"
+    },
+    {
+      "number": 250,
+      "speaker": "IAGO",
+      "text": "With any strong or vehement importunity;"
+    },
+    {
+      "number": 251,
+      "speaker": "IAGO",
+      "text": "Much will be seen in that. In the mean time,"
+    },
+    {
+      "number": 252,
+      "speaker": "IAGO",
+      "text": "Let me be thought too busy in my fears—"
+    },
+    {
+      "number": 253,
+      "speaker": "IAGO",
+      "text": "As worthy cause I have to fear I am—"
+    },
+    {
+      "number": 254,
+      "speaker": "IAGO",
+      "text": "And hold her free, I do beseech your honour."
+    },
+    {
+      "number": 255,
+      "speaker": "OTHELLO",
+      "text": "Fear not my government."
+    },
+    {
+      "number": 255,
+      "speaker": "IAGO",
+      "text": "I once more take my leave."
+    },
+    {
+      "number": 256,
+      "speaker": "OTHELLO",
+      "text": "This fellow’s of exceeding honesty,"
+    },
+    {
+      "number": 257,
+      "speaker": "OTHELLO",
+      "text": "And knows all qualities, with a learned spirit,"
+    },
+    {
+      "number": 258,
+      "speaker": "OTHELLO",
+      "text": "Of human dealings. If I do prove her haggard,"
+    },
+    {
+      "number": 259,
+      "speaker": "OTHELLO",
+      "text": "Though that her jesses were my dear heartstrings,"
+    },
+    {
+      "number": 260,
+      "speaker": "OTHELLO",
+      "text": "I’ld whistle her off and let her down the wind,"
+    },
+    {
+      "number": 261,
+      "speaker": "OTHELLO",
+      "text": "To pray at fortune. Haply, for I am black"
+    },
+    {
+      "number": 262,
+      "speaker": "OTHELLO",
+      "text": "And have not those soft parts of conversation"
+    },
+    {
+      "number": 263,
+      "speaker": "OTHELLO",
+      "text": "That chamberers have, or for I am declined"
+    },
+    {
+      "number": 264,
+      "speaker": "OTHELLO",
+      "text": "Into the vale of years—yet that’s not much—"
+    },
+    {
+      "number": 265,
+      "speaker": "OTHELLO",
+      "text": "She’s gone. I am abused; and my relief"
+    },
+    {
+      "number": 266,
+      "speaker": "OTHELLO",
+      "text": "Must be to loathe her. O curse of marriage,"
+    },
+    {
+      "number": 267,
+      "speaker": "OTHELLO",
+      "text": "That we can call these delicate creatures ours,"
+    },
+    {
+      "number": 268,
+      "speaker": "OTHELLO",
+      "text": "And not their appetites! I had rather be a toad,"
+    },
+    {
+      "number": 269,
+      "speaker": "OTHELLO",
+      "text": "And live upon the vapour of a dungeon,"
+    },
+    {
+      "number": 270,
+      "speaker": "OTHELLO",
+      "text": "Than keep a corner in the thing I love"
+    },
+    {
+      "number": 271,
+      "speaker": "OTHELLO",
+      "text": "For others’ uses. Yet, ’tis the plague of great ones;"
+    },
+    {
+      "number": 272,
+      "speaker": "OTHELLO",
+      "text": "Prerogatived are they less than the base;"
+    },
+    {
+      "number": 273,
+      "speaker": "OTHELLO",
+      "text": "’Tis destiny unshunnable, like death:"
+    },
+    {
+      "number": 274,
+      "speaker": "OTHELLO",
+      "text": "Even then this forked plague is fated to us"
+    },
+    {
+      "number": 275,
+      "speaker": "OTHELLO",
+      "text": "When we do quicken. Desdemona comes:"
+    },
+    {
+      "number": 275,
+      "speaker": "DESDEMONA",
+      "text": "How now, my dear Othello!"
+    },
+    {
+      "number": 276,
+      "speaker": "DESDEMONA",
+      "text": "Your dinner, and the generous islanders"
+    },
+    {
+      "number": 277,
+      "speaker": "DESDEMONA",
+      "text": "By you invited, do attend your presence."
+    },
+    {
+      "number": 278,
+      "speaker": "OTHELLO",
+      "text": "I am to blame."
+    },
+    {
+      "number": 278,
+      "speaker": "DESDEMONA",
+      "text": "Why do you speak so faintly?"
+    },
+    {
+      "number": 279,
+      "speaker": "DESDEMONA",
+      "text": "Are you not well?"
+    },
+    {
+      "number": 280,
+      "speaker": "OTHELLO",
+      "text": "I have a pain upon my forehead here."
+    },
+    {
+      "number": 281,
+      "speaker": "DESDEMONA",
+      "text": "’Faith, that’s with watching; ’twill away again:"
+    },
+    {
+      "number": 282,
+      "speaker": "DESDEMONA",
+      "text": "Let me but bind it hard, within this hour"
+    },
+    {
+      "number": 283,
+      "speaker": "DESDEMONA",
+      "text": "It will be well."
+    },
+    {
+      "number": 284,
+      "speaker": "OTHELLO",
+      "text": "Your napkin is too little: He puts the handkerchief from him; and it drops."
+    },
+    {
+      "number": 285,
+      "speaker": "OTHELLO",
+      "text": "Let it alone. Come, I’ll go in with you."
+    },
+    {
+      "number": 286,
+      "speaker": "DESDEMONA",
+      "text": "I am very sorry that you are not well."
+    },
+    {
+      "number": 287,
+      "speaker": "EMILIA",
+      "text": "I am glad I have found this napkin:"
+    },
+    {
+      "number": 288,
+      "speaker": "EMILIA",
+      "text": "This was her first remembrance from the Moor:"
+    },
+    {
+      "number": 289,
+      "speaker": "EMILIA",
+      "text": "My wayward husband hath a hundred times"
+    },
+    {
+      "number": 290,
+      "speaker": "EMILIA",
+      "text": "Woo’d me to steal it; but she so loves the token,"
+    },
+    {
+      "number": 291,
+      "speaker": "EMILIA",
+      "text": "For he conjured her she should ever keep it,"
+    },
+    {
+      "number": 292,
+      "speaker": "EMILIA",
+      "text": "That she reserves it evermore about her"
+    },
+    {
+      "number": 293,
+      "speaker": "EMILIA",
+      "text": "To kiss and talk to. I’ll have the work ta’en out,"
+    },
+    {
+      "number": 294,
+      "speaker": "EMILIA",
+      "text": "And give’t Iago: what he will do with it"
+    },
+    {
+      "number": 295,
+      "speaker": "EMILIA",
+      "text": "Heaven knows, not I;"
+    },
+    {
+      "number": 296,
+      "speaker": "EMILIA",
+      "text": "I nothing but to please his fantasy."
+    },
+    {
+      "number": 297,
+      "speaker": "IAGO",
+      "text": "How now! what do you here alone?"
+    },
+    {
+      "number": 298,
+      "speaker": "EMILIA",
+      "text": "Do not you chide; I have a thing for you."
+    },
+    {
+      "number": 299,
+      "speaker": "IAGO",
+      "text": "A thing for me? it is a common thing—"
+    },
+    {
+      "number": 300,
+      "speaker": "EMILIA",
+      "text": "Ha!"
+    },
+    {
+      "number": 300,
+      "speaker": "IAGO",
+      "text": "To have a foolish wife."
+    },
+    {
+      "number": 301,
+      "speaker": "EMILIA",
+      "text": "O, is that all? What will you give me now"
+    },
+    {
+      "number": 302,
+      "speaker": "EMILIA",
+      "text": "For the same handkerchief?"
+    },
+    {
+      "number": 302,
+      "speaker": "IAGO",
+      "text": "What handkerchief?"
+    },
+    {
+      "number": 303,
+      "speaker": "EMILIA",
+      "text": "What handkerchief?"
+    },
+    {
+      "number": 304,
+      "speaker": "EMILIA",
+      "text": "Why, that the Moor first gave to Desdemona;"
+    },
+    {
+      "number": 305,
+      "speaker": "EMILIA",
+      "text": "That which so often you did bid me steal."
+    },
+    {
+      "number": 306,
+      "speaker": "IAGO",
+      "text": "Hast stol’n it from her?"
+    },
+    {
+      "number": 307,
+      "speaker": "EMILIA",
+      "text": "No, ’faith; she let it drop by negligence."
+    },
+    {
+      "number": 308,
+      "speaker": "EMILIA",
+      "text": "And, to the advantage, I, being here, took’t up."
+    },
+    {
+      "number": 309,
+      "speaker": "EMILIA",
+      "text": "Look, here it is."
+    },
+    {
+      "number": 309,
+      "speaker": "IAGO",
+      "text": "A good wench; give it me."
+    },
+    {
+      "number": 310,
+      "speaker": "EMILIA",
+      "text": "What will you do with ’t, that you have been so earnest"
+    },
+    {
+      "number": 311,
+      "speaker": "EMILIA",
+      "text": "To have me filch it?"
+    },
+    {
+      "number": 312,
+      "speaker": "IAGO",
+      "text": "Snatching it. Why, what’s that to you?"
+    },
+    {
+      "number": 313,
+      "speaker": "EMILIA",
+      "text": "If it be not for some purpose of import,"
+    },
+    {
+      "number": 314,
+      "speaker": "EMILIA",
+      "text": "Give’t me again: poor lady, she’ll run mad"
+    },
+    {
+      "number": 315,
+      "speaker": "EMILIA",
+      "text": "When she shall lack it."
+    },
+    {
+      "number": 316,
+      "speaker": "IAGO",
+      "text": "Be not acknown on ’t; I have use for it."
+    },
+    {
+      "number": 317,
+      "speaker": "IAGO",
+      "text": "Go, leave me."
+    },
+    {
+      "number": 318,
+      "speaker": "IAGO",
+      "text": "I will in Cassio’s lodging lose this napkin,"
+    },
+    {
+      "number": 319,
+      "speaker": "IAGO",
+      "text": "And let him find it. Trifles light as air"
+    },
+    {
+      "number": 320,
+      "speaker": "IAGO",
+      "text": "Are to the jealous confirmations strong"
+    },
+    {
+      "number": 321,
+      "speaker": "IAGO",
+      "text": "As proofs of holy writ: this may do something."
+    },
+    {
+      "number": 322,
+      "speaker": "IAGO",
+      "text": "The Moor already changes with my poison:"
+    },
+    {
+      "number": 323,
+      "speaker": "IAGO",
+      "text": "Dangerous conceits are, in their natures, poisons."
+    },
+    {
+      "number": 324,
+      "speaker": "IAGO",
+      "text": "Which at the first are scarce found to distaste,"
+    },
+    {
+      "number": 325,
+      "speaker": "IAGO",
+      "text": "But with a little act upon the blood."
+    },
+    {
+      "number": 326,
+      "speaker": "IAGO",
+      "text": "Burn like the mines of Sulphur. I did say so:"
+    },
+    {
+      "number": 327,
+      "speaker": "IAGO",
+      "text": "Look, where he comes!"
+    },
+    {
+      "number": 327,
+      "speaker": "OTHELLO",
+      "text": "Ha! ha! false to me?"
+    },
+    {
+      "number": 328,
+      "speaker": "IAGO",
+      "text": "Why, how now, general! no more of that."
+    },
+    {
+      "number": 329,
+      "speaker": "OTHELLO",
+      "text": "Avaunt! be gone! thou hast set me on the rack:"
+    },
+    {
+      "number": 330,
+      "speaker": "OTHELLO",
+      "text": "I swear ’tis better to be much abused"
+    },
+    {
+      "number": 331,
+      "speaker": "OTHELLO",
+      "text": "Than but to know’t a little."
+    },
+    {
+      "number": 331,
+      "speaker": "IAGO",
+      "text": "How now, my lord!"
+    },
+    {
+      "number": 332,
+      "speaker": "OTHELLO",
+      "text": "What sense had I of her stol’n hours of lust?"
+    },
+    {
+      "number": 333,
+      "speaker": "OTHELLO",
+      "text": "I saw’t not, thought it not, it harm’d not me:"
+    },
+    {
+      "number": 334,
+      "speaker": "OTHELLO",
+      "text": "I slept the next night well, was free and merry;"
+    },
+    {
+      "number": 335,
+      "speaker": "OTHELLO",
+      "text": "I found not Cassio’s kisses on her lips:"
+    },
+    {
+      "number": 336,
+      "speaker": "OTHELLO",
+      "text": "He that is robb’d, not wanting what is stol’n,"
+    },
+    {
+      "number": 337,
+      "speaker": "OTHELLO",
+      "text": "Let him not know’t, and he’s not robb’d at all."
+    },
+    {
+      "number": 338,
+      "speaker": "IAGO",
+      "text": "I am sorry to hear this."
+    },
+    {
+      "number": 339,
+      "speaker": "OTHELLO",
+      "text": "I had been happy, if the general camp,"
+    },
+    {
+      "number": 340,
+      "speaker": "OTHELLO",
+      "text": "Pioners and all, had tasted her sweet body,"
+    },
+    {
+      "number": 341,
+      "speaker": "OTHELLO",
+      "text": "So I had nothing known. O, now, for ever"
+    },
+    {
+      "number": 342,
+      "speaker": "OTHELLO",
+      "text": "Farewell the tranquil mind! farewell content!"
+    },
+    {
+      "number": 343,
+      "speaker": "OTHELLO",
+      "text": "Farewell the plumed troop, and the big wars,"
+    },
+    {
+      "number": 344,
+      "speaker": "OTHELLO",
+      "text": "That make ambition virtue! O, farewell!"
+    },
+    {
+      "number": 345,
+      "speaker": "OTHELLO",
+      "text": "Farewell the neighing steed, and the shrill trump,"
+    },
+    {
+      "number": 346,
+      "speaker": "OTHELLO",
+      "text": "The spirit-stirring drum, the ear-piercing fife,"
+    },
+    {
+      "number": 347,
+      "speaker": "OTHELLO",
+      "text": "The royal banner, and all quality,"
+    },
+    {
+      "number": 348,
+      "speaker": "OTHELLO",
+      "text": "Pride, pomp and circumstance of glorious war!"
+    },
+    {
+      "number": 349,
+      "speaker": "OTHELLO",
+      "text": "And, O you mortal engines, whose rude throats"
+    },
+    {
+      "number": 350,
+      "speaker": "OTHELLO",
+      "text": "The immortal Jove’s dead clamours counterfeit,"
+    },
+    {
+      "number": 351,
+      "speaker": "OTHELLO",
+      "text": "Farewell! Othello’s occupation’s gone!"
+    },
+    {
+      "number": 351,
+      "speaker": "IAGO",
+      "text": "Is’t possible, my lord?"
+    },
+    {
+      "number": 352,
+      "speaker": "OTHELLO",
+      "text": "Villain, be sure thou prove my love a whore,"
+    },
+    {
+      "number": 353,
+      "speaker": "OTHELLO",
+      "text": "Be sure of it; give me the ocular proof:"
+    },
+    {
+      "number": 354,
+      "speaker": "OTHELLO",
+      "text": "Or by the worth of man’s eternal soul,"
+    },
+    {
+      "number": 355,
+      "speaker": "OTHELLO",
+      "text": "Thou hadst been better have been born a dog"
+    },
+    {
+      "number": 356,
+      "speaker": "OTHELLO",
+      "text": "Than answer my waked wrath!"
+    },
+    {
+      "number": 356,
+      "speaker": "IAGO",
+      "text": "Is’t come to this?"
+    },
+    {
+      "number": 357,
+      "speaker": "OTHELLO",
+      "text": "Make me to see’t; or, at the least, so prove it,"
+    },
+    {
+      "number": 358,
+      "speaker": "OTHELLO",
+      "text": "That the probation bear no hinge nor loop"
+    },
+    {
+      "number": 359,
+      "speaker": "OTHELLO",
+      "text": "To hang a doubt on; or woe upon thy life!"
+    },
+    {
+      "number": 360,
+      "speaker": "IAGO",
+      "text": "My noble lord—"
+    },
+    {
+      "number": 361,
+      "speaker": "OTHELLO",
+      "text": "If thou dost slander her and torture me,"
+    },
+    {
+      "number": 362,
+      "speaker": "OTHELLO",
+      "text": "Never pray more; abandon all remorse;"
+    },
+    {
+      "number": 363,
+      "speaker": "OTHELLO",
+      "text": "On horror’s head horrors accumulate;"
+    },
+    {
+      "number": 364,
+      "speaker": "OTHELLO",
+      "text": "Do deeds to make heaven weep, all earth amazed;"
+    },
+    {
+      "number": 365,
+      "speaker": "OTHELLO",
+      "text": "For nothing canst thou to damnation add"
+    },
+    {
+      "number": 366,
+      "speaker": "OTHELLO",
+      "text": "Greater than that."
+    },
+    {
+      "number": 366,
+      "speaker": "IAGO",
+      "text": "O grace! O heaven forgive me!"
+    },
+    {
+      "number": 367,
+      "speaker": "IAGO",
+      "text": "Are you a man? have you a soul or sense?"
+    },
+    {
+      "number": 368,
+      "speaker": "IAGO",
+      "text": "God be wi’ you; take mine office. O wretched fool."
+    },
+    {
+      "number": 369,
+      "speaker": "IAGO",
+      "text": "That livest to make thine honesty a vice!"
+    },
+    {
+      "number": 370,
+      "speaker": "IAGO",
+      "text": "O monstrous world! Take note, take note, O world,"
+    },
+    {
+      "number": 371,
+      "speaker": "IAGO",
+      "text": "To be direct and honest is not safe."
+    },
+    {
+      "number": 372,
+      "speaker": "IAGO",
+      "text": "I thank you for this profit; and from hence"
+    },
+    {
+      "number": 373,
+      "speaker": "IAGO",
+      "text": "I’ll love no friend, sith love breeds such offence."
+    },
+    {
+      "number": 374,
+      "speaker": "OTHELLO",
+      "text": "Nay, stay: thou shouldst be honest."
+    },
+    {
+      "number": 375,
+      "speaker": "IAGO",
+      "text": "I should be wise, for honesty’s a fool"
+    },
+    {
+      "number": 376,
+      "speaker": "IAGO",
+      "text": "And loses that it works for."
+    },
+    {
+      "number": 376,
+      "speaker": "OTHELLO",
+      "text": "By the world,"
+    },
+    {
+      "number": 377,
+      "speaker": "OTHELLO",
+      "text": "I think my wife be honest and think she is not;"
+    },
+    {
+      "number": 378,
+      "speaker": "OTHELLO",
+      "text": "I think that thou art just and think thou art not."
+    },
+    {
+      "number": 379,
+      "speaker": "OTHELLO",
+      "text": "I’ll have some proof. Her name, that was as fresh"
+    },
+    {
+      "number": 380,
+      "speaker": "OTHELLO",
+      "text": "As Dian’s visage, is now begrimed and black"
+    },
+    {
+      "number": 381,
+      "speaker": "OTHELLO",
+      "text": "As mine own face. If there be cords, or knives,"
+    },
+    {
+      "number": 382,
+      "speaker": "OTHELLO",
+      "text": "Poison, or fire, or suffocating streams,"
+    },
+    {
+      "number": 383,
+      "speaker": "OTHELLO",
+      "text": "I’ll not endure it. Would I were satisfied!"
+    },
+    {
+      "number": 384,
+      "speaker": "IAGO",
+      "text": "I see, sir, you are eaten up with passion:"
+    },
+    {
+      "number": 385,
+      "speaker": "IAGO",
+      "text": "I do repent me that I put it to you."
+    },
+    {
+      "number": 386,
+      "speaker": "IAGO",
+      "text": "You would be satisfied?"
+    },
+    {
+      "number": 386,
+      "speaker": "OTHELLO",
+      "text": "Would! nay, I will."
+    },
+    {
+      "number": 387,
+      "speaker": "IAGO",
+      "text": "And may: but, how? how satisfied, my lord?"
+    },
+    {
+      "number": 388,
+      "speaker": "IAGO",
+      "text": "Would you, the supervisor, grossly gape on—"
+    },
+    {
+      "number": 389,
+      "speaker": "IAGO",
+      "text": "Behold her topp’d?"
+    },
+    {
+      "number": 389,
+      "speaker": "OTHELLO",
+      "text": "Death and damnation! O!"
+    },
+    {
+      "number": 390,
+      "speaker": "IAGO",
+      "text": "It were a tedious difficulty, I think,"
+    },
+    {
+      "number": 391,
+      "speaker": "IAGO",
+      "text": "To bring them to that prospect: damn them then,"
+    },
+    {
+      "number": 392,
+      "speaker": "IAGO",
+      "text": "If ever mortal eyes do see them bolster"
+    },
+    {
+      "number": 393,
+      "speaker": "IAGO",
+      "text": "More than their own! What then? how then?"
+    },
+    {
+      "number": 394,
+      "speaker": "IAGO",
+      "text": "What shall I say? Where’s satisfaction?"
+    },
+    {
+      "number": 395,
+      "speaker": "IAGO",
+      "text": "It is impossible you should see this,"
+    },
+    {
+      "number": 396,
+      "speaker": "IAGO",
+      "text": "Were they as prime as goats, as hot as monkeys,"
+    },
+    {
+      "number": 397,
+      "speaker": "IAGO",
+      "text": "As salt as wolves in pride, and fools as gross"
+    },
+    {
+      "number": 398,
+      "speaker": "IAGO",
+      "text": "As ignorance made drunk. But yet, I say,"
+    },
+    {
+      "number": 399,
+      "speaker": "IAGO",
+      "text": "If imputation and strong circumstances,"
+    },
+    {
+      "number": 400,
+      "speaker": "IAGO",
+      "text": "Which lead directly to the door of truth,"
+    },
+    {
+      "number": 401,
+      "speaker": "IAGO",
+      "text": "Will give you satisfaction, you may have’t."
+    },
+    {
+      "number": 402,
+      "speaker": "OTHELLO",
+      "text": "Give me a living reason she’s disloyal."
+    },
+    {
+      "number": 403,
+      "speaker": "IAGO",
+      "text": "I do not like the office:"
+    },
+    {
+      "number": 404,
+      "speaker": "IAGO",
+      "text": "But, sith I am enter’d in this cause so far,"
+    },
+    {
+      "number": 405,
+      "speaker": "IAGO",
+      "text": "Prick’d to’t by foolish honesty and love,"
+    },
+    {
+      "number": 406,
+      "speaker": "IAGO",
+      "text": "I will go on. I lay with Cassio lately;"
+    },
+    {
+      "number": 407,
+      "speaker": "IAGO",
+      "text": "And, being troubled with a raging tooth,"
+    },
+    {
+      "number": 408,
+      "speaker": "IAGO",
+      "text": "I could not sleep."
+    },
+    {
+      "number": 409,
+      "speaker": "IAGO",
+      "text": "There are a kind of men so loose of soul,"
+    },
+    {
+      "number": 410,
+      "speaker": "IAGO",
+      "text": "That in their sleeps will mutter their affairs:"
+    },
+    {
+      "number": 411,
+      "speaker": "IAGO",
+      "text": "One of this kind is Cassio:"
+    },
+    {
+      "number": 412,
+      "speaker": "IAGO",
+      "text": "In sleep I heard him say “Sweet Desdemona,"
+    },
+    {
+      "number": 413,
+      "speaker": "IAGO",
+      "text": "Let us be wary, let us hide our loves;”"
+    },
+    {
+      "number": 414,
+      "speaker": "IAGO",
+      "text": "And then, sir, would he gripe and wring my hand,"
+    },
+    {
+      "number": 415,
+      "speaker": "IAGO",
+      "text": "Cry “O sweet creature!” and then kiss me hard,"
+    },
+    {
+      "number": 416,
+      "speaker": "IAGO",
+      "text": "As if he pluck’d up kisses by the roots"
+    },
+    {
+      "number": 417,
+      "speaker": "IAGO",
+      "text": "That grew upon my lips: then laid his leg"
+    },
+    {
+      "number": 418,
+      "speaker": "IAGO",
+      "text": "Over my thigh, and sigh’d, and kiss’d; and then"
+    },
+    {
+      "number": 419,
+      "speaker": "IAGO",
+      "text": "Cried “Cursed fate that gave thee to the Moor!”"
+    },
+    {
+      "number": 420,
+      "speaker": "OTHELLO",
+      "text": "O monstrous! monstrous!"
+    },
+    {
+      "number": 420,
+      "speaker": "IAGO",
+      "text": "Nay, this was but his dream."
+    },
+    {
+      "number": 421,
+      "speaker": "OTHELLO",
+      "text": "But this denoted a foregone conclusion:"
+    },
+    {
+      "number": 422,
+      "speaker": "OTHELLO",
+      "text": "’Tis a shrewd doubt, though it be but a dream."
+    },
+    {
+      "number": 423,
+      "speaker": "IAGO",
+      "text": "And this may help to thicken other proofs"
+    },
+    {
+      "number": 424,
+      "speaker": "IAGO",
+      "text": "That do demonstrate thinly."
+    },
+    {
+      "number": 424,
+      "speaker": "OTHELLO",
+      "text": "I’ll tear her all to pieces."
+    },
+    {
+      "number": 425,
+      "speaker": "IAGO",
+      "text": "Nay, but be wise: yet we see nothing done;"
+    },
+    {
+      "number": 426,
+      "speaker": "IAGO",
+      "text": "She may be honest yet. Tell me but this,"
+    },
+    {
+      "number": 427,
+      "speaker": "IAGO",
+      "text": "Have you not sometimes seen a handkerchief"
+    },
+    {
+      "number": 428,
+      "speaker": "IAGO",
+      "text": "Spotted with strawberries in your wife’s hand?"
+    },
+    {
+      "number": 429,
+      "speaker": "OTHELLO",
+      "text": "I gave her such a one; ’twas my first gift."
+    },
+    {
+      "number": 430,
+      "speaker": "IAGO",
+      "text": "I know not that; but such a handkerchief—"
+    },
+    {
+      "number": 431,
+      "speaker": "IAGO",
+      "text": "I am sure it was your wife’s—did I to-day"
+    },
+    {
+      "number": 432,
+      "speaker": "IAGO",
+      "text": "See Cassio wipe his beard with."
+    },
+    {
+      "number": 432,
+      "speaker": "OTHELLO",
+      "text": "If it be that—"
+    },
+    {
+      "number": 433,
+      "speaker": "IAGO",
+      "text": "If it be that, or any that was hers,"
+    },
+    {
+      "number": 434,
+      "speaker": "IAGO",
+      "text": "It speaks against her with the other proofs."
+    },
+    {
+      "number": 435,
+      "speaker": "OTHELLO",
+      "text": "O, that the slave had forty thousand lives!"
+    },
+    {
+      "number": 436,
+      "speaker": "OTHELLO",
+      "text": "One is too poor, too weak for my revenge."
+    },
+    {
+      "number": 437,
+      "speaker": "OTHELLO",
+      "text": "Now do I see ’tis true. Look here, Iago;"
+    },
+    {
+      "number": 438,
+      "speaker": "OTHELLO",
+      "text": "All my fond love thus do I blow to heaven."
+    },
+    {
+      "number": 439,
+      "speaker": "OTHELLO",
+      "text": "’Tis gone."
+    },
+    {
+      "number": 440,
+      "speaker": "OTHELLO",
+      "text": "Arise, black vengeance, from thy hollow cell!"
+    },
+    {
+      "number": 441,
+      "speaker": "OTHELLO",
+      "text": "Yield up, O love, thy crown and hearted throne"
+    },
+    {
+      "number": 442,
+      "speaker": "OTHELLO",
+      "text": "To tyrannous hate! Swell, bosom, with thy fraught,"
+    },
+    {
+      "number": 443,
+      "speaker": "OTHELLO",
+      "text": "For ’tis of aspics’ tongues!"
+    },
+    {
+      "number": 443,
+      "speaker": "IAGO",
+      "text": "Yet be content."
+    },
+    {
+      "number": 444,
+      "speaker": "OTHELLO",
+      "text": "O, blood, blood, blood!"
+    },
+    {
+      "number": 445,
+      "speaker": "IAGO",
+      "text": "Patience, I say; your mind perhaps may change."
+    },
+    {
+      "number": 446,
+      "speaker": "OTHELLO",
+      "text": "Never, Iago: Like to the Pontic sea,"
+    },
+    {
+      "number": 447,
+      "speaker": "OTHELLO",
+      "text": "Whose icy current and compulsive course"
+    },
+    {
+      "number": 448,
+      "speaker": "OTHELLO",
+      "text": "Ne’er feels retiring ebb, but keeps due on"
+    },
+    {
+      "number": 449,
+      "speaker": "OTHELLO",
+      "text": "To the Propontic and the Hellespont,"
+    },
+    {
+      "number": 450,
+      "speaker": "OTHELLO",
+      "text": "Even so my bloody thoughts, with violent pace,"
+    },
+    {
+      "number": 451,
+      "speaker": "OTHELLO",
+      "text": "Shall ne’er look back, ne’er ebb to humble love,"
+    },
+    {
+      "number": 452,
+      "speaker": "OTHELLO",
+      "text": "Till that a capable and wide revenge"
+    },
+    {
+      "number": 453,
+      "speaker": "OTHELLO",
+      "text": "Swallow them up. Now, by yond marble heaven,"
+    },
+    {
+      "number": 454,
+      "speaker": "OTHELLO",
+      "text": "In the due reverence of a sacred vow"
+    },
+    {
+      "number": 455,
+      "speaker": "OTHELLO",
+      "text": "I here engage my words."
+    },
+    {
+      "number": 455,
+      "speaker": "IAGO",
+      "text": "Do not rise yet."
+    },
+    {
+      "number": 456,
+      "speaker": "IAGO",
+      "text": "Witness, you ever-burning lights above,"
+    },
+    {
+      "number": 457,
+      "speaker": "IAGO",
+      "text": "You elements that clip us round about,"
+    },
+    {
+      "number": 458,
+      "speaker": "IAGO",
+      "text": "Witness that here Iago doth give up"
+    },
+    {
+      "number": 459,
+      "speaker": "IAGO",
+      "text": "The execution of his wit, hands, heart,"
+    },
+    {
+      "number": 460,
+      "speaker": "IAGO",
+      "text": "To wrong’d Othello’s service! Let him command,"
+    },
+    {
+      "number": 461,
+      "speaker": "IAGO",
+      "text": "And to obey shall be in me remorse,"
+    },
+    {
+      "number": 462,
+      "speaker": "IAGO",
+      "text": "What bloody business ever. They rise."
+    },
+    {
+      "number": 462,
+      "speaker": "OTHELLO",
+      "text": "I greet thy love,"
+    },
+    {
+      "number": 463,
+      "speaker": "OTHELLO",
+      "text": "Not with vain thanks, but with acceptance bounteous,"
+    },
+    {
+      "number": 464,
+      "speaker": "OTHELLO",
+      "text": "And will upon the instant put thee to’t:"
+    },
+    {
+      "number": 465,
+      "speaker": "OTHELLO",
+      "text": "Within these three days let me hear thee say"
+    },
+    {
+      "number": 466,
+      "speaker": "OTHELLO",
+      "text": "That Cassio’s not alive."
+    },
+    {
+      "number": 467,
+      "speaker": "IAGO",
+      "text": "My friend is dead; ’tis done at your request:"
+    },
+    {
+      "number": 468,
+      "speaker": "IAGO",
+      "text": "But let her live."
+    },
+    {
+      "number": 469,
+      "speaker": "OTHELLO",
+      "text": "Damn her, lewd minx! O, damn her!"
+    },
+    {
+      "number": 470,
+      "speaker": "OTHELLO",
+      "text": "Come, go with me apart; I will withdraw,"
+    },
+    {
+      "number": 471,
+      "speaker": "OTHELLO",
+      "text": "To furnish me with some swift means of death"
+    },
+    {
+      "number": 472,
+      "speaker": "OTHELLO",
+      "text": "For the fair devil. Now art thou my lieutenant."
+    },
+    {
+      "number": 473,
+      "speaker": "IAGO",
+      "text": "I am your own for ever."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Desdemona, Cassio, and Emilia."
+    },
+    {
+      "after_line": 31,
+      "text": "Exit Cassio."
+    },
+    {
+      "after_line": 31,
+      "text": "Enter Othello and Iago."
+    },
+    {
+      "after_line": 86,
+      "text": "Exeunt Desdemona and Emilia."
+    },
+    {
+      "after_line": 255,
+      "text": "Exit."
+    },
+    {
+      "after_line": 275,
+      "text": "Reenter Desdemona and Emilia."
+    },
+    {
+      "after_line": 275,
+      "text": "If she be false, O, then heaven mocks itself! I’ll not believe’t."
+    },
+    {
+      "after_line": 286,
+      "text": "Exeunt Othello and Desdemona."
+    },
+    {
+      "after_line": 296,
+      "text": "Reenter Iago."
+    },
+    {
+      "after_line": 317,
+      "text": "Exit Emilia."
+    },
+    {
+      "after_line": 327,
+      "text": "Reenter Othello."
+    },
+    {
+      "after_line": 327,
+      "text": "Not poppy, nor mandragora, Nor all the drowsy syrups of the world, Shall ever medicine thee to that sweet sleep Which thou owedst yesterday."
+    },
+    {
+      "after_line": 454,
+      "text": "Kneels."
+    },
+    {
+      "after_line": 456,
+      "text": "Kneels."
+    },
+    {
+      "after_line": 473,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "othello_act3_scene3_gloss1",
+      "line": 22,
+      "phrase": "my lord shall never rest",
+      "definition": "I will give him no peace"
+    },
+    {
+      "id": "othello_act3_scene3_gloss2",
+      "line": 12,
+      "phrase": "strangeness",
+      "definition": "aloofness"
+    },
+    {
+      "id": "othello_act3_scene3_gloss3",
+      "line": 15,
+      "phrase": "nice and waterish diet",
+      "definition": "finicky, insubstantial nourishment — of political caution"
+    },
+    {
+      "id": "othello_act3_scene3_gloss4",
+      "line": 9,
+      "phrase": "servant",
+      "definition": "a sworn defender; a devoted friend"
+    },
+    {
+      "id": "othello_act3_scene3_gloss5",
+      "line": 7,
+      "phrase": "bounteous",
+      "definition": "generous"
+    },
+    {
+      "id": "othello_act3_scene3_gloss6",
+      "line": 24,
+      "phrase": "shrift",
+      "definition": "confessional; a place to confess"
+    },
+    {
+      "id": "othello_act3_scene3_gloss7",
+      "line": 24,
+      "phrase": "board a shrift",
+      "definition": "a dinner-table that serves as a confessional"
+    },
+    {
+      "id": "othello_act3_scene3_gloss8",
+      "line": 32,
+      "phrase": "Ha! I like not that",
+      "definition": "Iago's pretended pang of suspicion; the first planted seed of doubt in Othello"
+    },
+    {
+      "id": "othello_act3_scene3_gloss9",
+      "line": 36,
+      "phrase": "steal away so guilty-like",
+      "definition": "slink off as if caught in guilt"
+    },
+    {
+      "id": "othello_act3_scene3_gloss11",
+      "line": 55,
+      "phrase": "dinner",
+      "definition": "midday meal"
+    },
+    {
+      "id": "othello_act3_scene3_gloss14",
+      "line": 86,
+      "phrase": "Excellent wretch!",
+      "definition": "Othello's loving oxymoron — darling, delightful creature"
+    },
+    {
+      "id": "othello_act3_scene3_gloss15",
+      "line": 86,
+      "phrase": "perdition catch my soul",
+      "definition": "may damnation seize me — Othello's vow of love, tragically prophetic"
+    },
+    {
+      "id": "othello_act3_scene3_gloss17",
+      "line": 112,
+      "phrase": "conceit",
+      "definition": "notion; idea"
+    },
+    {
+      "id": "othello_act3_scene3_gloss19",
+      "line": 138,
+      "phrase": "leets and law-days",
+      "definition": "petty tribunals and court-sessions"
+    },
+    {
+      "id": "othello_act3_scene3_gloss21",
+      "line": 145,
+      "phrase": "jealousy",
+      "definition": "suspicion; distrust (not only sexual)"
+    },
+    {
+      "id": "othello_act3_scene3_gloss22",
+      "line": 146,
+      "phrase": "shapes faults that are not",
+      "definition": "invents flaws where none exist"
+    },
+    {
+      "id": "othello_act3_scene3_gloss23",
+      "line": 157,
+      "phrase": "my good name",
+      "definition": "my reputation"
+    },
+    {
+      "id": "othello_act3_scene3_gloss24",
+      "line": 163,
+      "phrase": "the green-eyed monster",
+      "definition": "jealousy, pictured as a monster that mocks the flesh it feeds on; the phrase is Shakespeare's most enduring coinage for the emotion"
+    },
+    {
+      "id": "othello_act3_scene3_gloss25",
+      "line": 164,
+      "phrase": "cuckold",
+      "definition": "a husband whose wife is unfaithful — a term carrying deep public shame in Elizabethan culture"
+    },
+    {
+      "id": "othello_act3_scene3_gloss26",
+      "line": 170,
+      "phrase": "fineless",
+      "definition": "infinite; without limit"
+    },
+    {
+      "id": "othello_act3_scene3_gloss27",
+      "line": 179,
+      "phrase": "exsufflicate and blown surmises",
+      "definition": "puffed-up, inflated guesses"
+    },
+    {
+      "id": "othello_act3_scene3_gloss28",
+      "line": 185,
+      "phrase": "revolt",
+      "definition": "infidelity; straying"
+    },
+    {
+      "id": "othello_act3_scene3_gloss29",
+      "line": 212,
+      "phrase": "I am bound to thee for ever",
+      "definition": "I am in your debt for life"
+    },
+    {
+      "id": "othello_act3_scene3_gloss30",
+      "line": 203,
+      "phrase": "She did deceive her father, marrying you",
+      "definition": "Iago's poisonous reminder: if she deceived him once, she can deceive again"
+    },
+    {
+      "id": "othello_act3_scene3_gloss31",
+      "line": 207,
+      "phrase": "seeming",
+      "definition": "outward appearance"
+    },
+    {
+      "id": "othello_act3_scene3_gloss33",
+      "line": 229,
+      "phrase": "clime, complexion, and degree",
+      "definition": "country, skin, and rank — Iago's racist catalogue of reasons Desdemona should have rejected Othello"
+    },
+    {
+      "id": "othello_act3_scene3_gloss34",
+      "line": 232,
+      "phrase": "disproportion",
+      "definition": "unnatural disparity"
+    },
+    {
+      "id": "othello_act3_scene3_gloss35",
+      "line": 231,
+      "phrase": "rank",
+      "definition": "lustful"
+    },
+    {
+      "id": "othello_act3_scene3_gloss36",
+      "line": 236,
+      "phrase": "country forms",
+      "definition": "Venetian standards of beauty; the native type"
+    },
+    {
+      "id": "othello_act3_scene3_gloss37",
+      "line": 249,
+      "phrase": "entertainment",
+      "definition": "reception; welcome"
+    },
+    {
+      "id": "othello_act3_scene3_gloss38",
+      "line": 221,
+      "phrase": "success",
+      "definition": "consequence; outcome"
+    },
+    {
+      "id": "othello_act3_scene3_gloss40",
+      "line": 258,
+      "phrase": "haggard",
+      "definition": "a wild, untamed female hawk"
+    },
+    {
+      "id": "othello_act3_scene3_gloss41",
+      "line": 259,
+      "phrase": "her jesses",
+      "definition": "the straps on a hawk's legs — Othello imagines releasing her"
+    },
+    {
+      "id": "othello_act3_scene3_gloss42",
+      "line": 260,
+      "phrase": "down the wind",
+      "definition": "downwind — the direction a hawk is loosed when cast off forever"
+    },
+    {
+      "id": "othello_act3_scene3_gloss44",
+      "line": 262,
+      "phrase": "soft parts of conversation",
+      "definition": "refined social arts"
+    },
+    {
+      "id": "othello_act3_scene3_gloss45",
+      "line": 263,
+      "phrase": "chamberers",
+      "definition": "frequenters of ladies' chambers; idle gallants"
+    },
+    {
+      "id": "othello_act3_scene3_gloss46",
+      "line": 264,
+      "phrase": "vale of years",
+      "definition": "downhill of life; middle age"
+    },
+    {
+      "id": "othello_act3_scene3_gloss47",
+      "line": 272,
+      "phrase": "Prerogatived",
+      "definition": "privileged"
+    },
+    {
+      "id": "othello_act3_scene3_gloss48",
+      "line": 272,
+      "phrase": "base",
+      "definition": "low-born"
+    },
+    {
+      "id": "othello_act3_scene3_gloss49",
+      "line": 274,
+      "phrase": "forked plague",
+      "definition": "the branching curse of cuckolds' horns"
+    },
+    {
+      "id": "othello_act3_scene3_gloss51",
+      "line": 286,
+      "phrase": "napkin",
+      "definition": "handkerchief — the handkerchief that becomes the play's deadly evidence"
+    },
+    {
+      "id": "othello_act3_scene3_gloss52",
+      "line": 288,
+      "phrase": "wayward",
+      "definition": "willful; capricious"
+    },
+    {
+      "id": "othello_act3_scene3_gloss53",
+      "line": 292,
+      "phrase": "work",
+      "definition": "embroidery pattern"
+    },
+    {
+      "id": "othello_act3_scene3_gloss54",
+      "line": 288,
+      "phrase": "a hundred times",
+      "definition": "Iago's casual exaggeration to Emilia"
+    },
+    {
+      "id": "othello_act3_scene3_gloss55",
+      "line": 317,
+      "phrase": "Trifles light as air",
+      "definition": "mere nothings, weightless — but Iago notes they become iron to the jealous; his key insight into how evidence operates in a poisoned mind"
+    },
+    {
+      "id": "othello_act3_scene3_gloss56",
+      "line": 319,
+      "phrase": "holy writ",
+      "definition": "Scripture; the Bible"
+    },
+    {
+      "id": "othello_act3_scene3_gloss57",
+      "line": 321,
+      "phrase": "conceits",
+      "definition": "ideas; imaginings"
+    },
+    {
+      "id": "othello_act3_scene3_gloss62",
+      "line": 344,
+      "phrase": "the spirit-stirring drum",
+      "definition": "the martial drum that rouses the soul"
+    },
+    {
+      "id": "othello_act3_scene3_gloss63",
+      "line": 344,
+      "phrase": "ear-piercing fife",
+      "definition": "the shrill military flute"
+    },
+    {
+      "id": "othello_act3_scene3_gloss64",
+      "line": 345,
+      "phrase": "royal banner",
+      "definition": "the commander's flag"
+    },
+    {
+      "id": "othello_act3_scene3_gloss66",
+      "line": 347,
+      "phrase": "mortal engines",
+      "definition": "deadly cannons"
+    },
+    {
+      "id": "othello_act3_scene3_gloss67",
+      "line": 349,
+      "phrase": "Othello’s occupation’s gone",
+      "definition": "my identity as soldier is gone — the line registers his self-collapse"
+    },
+    {
+      "id": "othello_act3_scene3_gloss68",
+      "line": 356,
+      "phrase": "probation",
+      "definition": "proof"
+    },
+    {
+      "id": "othello_act3_scene3_gloss70",
+      "line": 394,
+      "phrase": "prime as goats, as hot as monkeys",
+      "definition": "lustful as goats, as aroused as monkeys — Iago's animal catalogue of alleged lust"
+    },
+    {
+      "id": "othello_act3_scene3_gloss71",
+      "line": 404,
+      "phrase": "lay with Cassio lately",
+      "definition": "shared a bed with Cassio recently — army custom of officers bunking together"
+    },
+    {
+      "id": "othello_act3_scene3_gloss72",
+      "line": 412,
+      "phrase": "gripe",
+      "definition": "grip; clasp"
+    },
+    {
+      "id": "othello_act3_scene3_gloss73",
+      "line": 439,
+      "phrase": "hearted throne",
+      "definition": "the throne-place of my love within my heart"
+    },
+    {
+      "id": "othello_act3_scene3_gloss74",
+      "line": 451,
+      "phrase": "marble heaven",
+      "definition": "the unchanging heaven — the eternal witness to his oath"
+    },
+    {
+      "id": "othello_act3_scene3_gloss75",
+      "line": 444,
+      "phrase": "Pontic sea",
+      "definition": "the Black Sea — whose current was thought to flow only outward, never backward; Othello's simile for his unstoppable revenge"
+    },
+    {
+      "id": "othello_act3_scene3_gloss76",
+      "line": 447,
+      "phrase": "Propontic",
+      "definition": "the Sea of Marmara, lying between the Black Sea and the Aegean"
+    },
+    {
+      "id": "othello_act3_scene3_gloss77",
+      "line": 447,
+      "phrase": "Hellespont",
+      "definition": "the strait now called the Dardanelles — the onward path of Othello's imagined current"
+    },
+    {
+      "id": "othello_act3_scene3_gloss78",
+      "line": 450,
+      "phrase": "capable and wide revenge",
+      "definition": "a revenge that contains all and reaches everywhere"
+    },
+    {
+      "id": "othello_act3_scene3_gloss79",
+      "line": 455,
+      "phrase": "clip us round about",
+      "definition": "enclose us; embrace us"
+    },
+    {
+      "id": "othello_act3_scene3_gloss80",
+      "line": 458,
+      "phrase": "command",
+      "definition": "entrust; commission"
+    },
+    {
+      "id": "othello_act3_scene3_gloss81",
+      "line": 467,
+      "phrase": "minx",
+      "definition": "wanton; lewd woman"
+    },
+    {
+      "id": "othello_act3_scene3_gloss82",
+      "line": 470,
+      "phrase": "lieutenant",
+      "definition": "Cassio's office, now promised to Iago — the coveted promotion granted"
+    },
+    {
+      "id": "othello_act3_scene3_gloss83",
+      "line": 471,
+      "phrase": "I am your own for ever",
+      "definition": "Iago's damning declaration — the pledge of total loyalty in service of his deception"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "othello_act3_scene3_ann1",
+      "line_start": 32,
+      "line_end": 108,
+      "citation_display": "Othello 3.3.32–108",
+      "category": "thematic",
+      "title": "The geometry of insinuation",
+      "body": "Iago's temptation of Othello is conducted almost entirely through withheld information. He does not accuse Cassio; he steals away 'guilty-like' and lets Othello notice. He does not impute adultery; he asks whether Cassio knew of the courtship, ventures a half-question, trails off. Othello supplies every conclusion. The technique is surgical.\n\nNotice the grammar. Iago's sentences end in ellipses, conditionals, and negations: 'I cannot think it, / That he would steal away so guilty-like'; 'Men should be what they seem.' Each utterance is a space into which Othello's imagination is invited to step. Nothing Iago says is technically false; everything he withholds becomes the substance of what Othello believes.\n\nThis is why the scene is Shakespeare's most influential anatomy of manipulation. It is not about lies. It is about the architecture of implication and the way authority of voice — 'honest Iago' — transforms pauses into evidence.",
+      "sources": [
+        "William Empson, 'Honest in Othello', in *The Structure of Complex Words* (1951)",
+        "A. D. Nuttall, *Shakespeare the Thinker* (2007)",
+        "James L. Calderwood, *The Properties of Othello* (1989)"
+      ]
+    },
+    {
+      "id": "othello_act3_scene3_ann2",
+      "line_start": 145,
+      "line_end": 195,
+      "citation_display": "Othello 3.3.145–195",
+      "category": "linguistic",
+      "title": "The naming of the green-eyed monster",
+      "body": "The phrase 'green-eyed monster' is Shakespeare's, coined here, and has become the language's standard emblem for jealousy. The image is precise: a creature 'which doth mock / The meat it feeds on' — a beast that plays with its prey before consuming it, or (some editors argue) that mocks by lying about what is fed to it. Both readings operate at once.\n\nGreen was the color of jealousy in Elizabethan physiology, associated with bile and unsettled humors. Cats' eyes, proverbially predatory, complete the image. The monster is 'fineless' — without limit, an appetite without a stopping point. This is a definition of jealousy as a feeding disorder: the emotion consumes what it pretends to protect.\n\nThe coinage is part of a longer semantic field Iago opens in this scene — 'conceit', 'surmise', 'seeming' — the vocabulary of knowledge that cannot be grounded.",
+      "sources": [
+        "OED, s.v. 'green-eyed' (citing this passage as first use)",
+        "Paul Alpers, *What Is Pastoral?* (1996) on Shakespeare's inventive lexis",
+        "Russ McDonald, *Shakespeare's Late Style* (2006)"
+      ]
+    },
+    {
+      "id": "othello_act3_scene3_ann3",
+      "line_start": 225,
+      "line_end": 280,
+      "citation_display": "Othello 3.3.225–280",
+      "category": "thematic",
+      "title": "Clime, complexion, and degree",
+      "body": "Iago shifts registers here from suspicion to race. Nature in Desdemona, he insinuates, should have repudiated 'many proposed matches / Of her own clime, complexion, and degree' — country, skin, and class. Rejecting Venetian suitors for Othello is, on this account, a departure from nature itself; if she has strayed once from her kind, she may stray again.\n\nThe argument is doubly poisonous. It makes Desdemona's original choice evidence of instability, and it invites Othello to internalize a racial vocabulary about himself. Within thirty lines he will call himself 'black', will question whether the 'soft parts of conversation' are beyond him, will speak of his own age and his racial difference as arguments against his desirability. Iago's racism becomes Othello's self-appraisal. This is the scene's most devastating transformation.",
+      "sources": [
+        "Kim F. Hall, *Things of Darkness* (1995)",
+        "Ania Loomba, *Shakespeare, Race, and Colonialism* (2002)",
+        "Emily Bartels, *Speaking of the Moor* (2008)",
+        "Arthur L. Little Jr., *Shakespeare Jungle Fever* (2000)"
+      ]
+    },
+    {
+      "id": "othello_act3_scene3_ann4",
+      "line_start": 317,
+      "line_end": 335,
+      "citation_display": "Othello 3.3.317–335",
+      "category": "close_reading",
+      "title": "Trifles light as air",
+      "body": "The most quoted single line in Iago's rhetoric — 'Trifles light as air / Are to the jealous confirmations strong / As proofs of holy writ' — announces the scene's epistemological argument. Iago does not need evidence of Desdemona's guilt; he needs Othello to be jealous. Once Othello is in that state, the handkerchief (a stage prop worth pennies) will function with the authority of scripture.\n\nThe line reverses ordinary weights: air becomes holy writ, the negligible becomes the absolute. Shakespeare is describing the physics of a ruined mind. For the jealous, the unit of evidence has changed. Weight is in the viewer, not the viewed.",
+      "sources": [
+        "Stephen Greenblatt, *Shakespearean Negotiations* (1988)",
+        "Thomas M. Greene, 'The Light in Troy', *Comparative Literature* (1982)"
+      ]
+    },
+    {
+      "id": "othello_act3_scene3_ann5",
+      "line_start": 435,
+      "line_end": 470,
+      "citation_display": "Othello 3.3.435–470",
+      "category": "structural",
+      "title": "The Pontic sea simile and the point of no return",
+      "body": "Othello's oath binding his revenge to the unreversing current of the Black Sea — flowing 'to the Propontic and the Hellespont', never 'ebb to humble love' — is the play's structural hinge. He kneels; Iago kneels beside him; they speak a vow in the shape of a marriage ceremony ('I am your own for ever'). The irony is exact: Othello's marriage to Desdemona has been displaced by a vow to Iago.\n\nGeographically Shakespeare is precise. The Pontic (Black) Sea empties continuously south through the Bosphorus and Hellespont into the Aegean, a current classical geographers from Polybius onward described as unreturning. Othello, an oceanic man, picks the oceanic figure for the irrevocability he has just entered. After this vow, nothing in the play flows backward.",
+      "sources": [
+        "Polybius, *Histories*, 4.39–40 (on the Pontic current)",
+        "Harley Granville-Barker, *Prefaces to Shakespeare* (1946)",
+        "A. C. Bradley, *Shakespearean Tragedy* (1904)"
+      ]
+    },
+    {
+      "id": "othello_act3_scene3_ann6",
+      "line_start": 280,
+      "line_end": 362,
+      "citation_display": "Othello 3.3.280–362",
+      "category": "thematic",
+      "title": "Othello's occupation's gone",
+      "body": "The aria Shakespeare gives Othello after Iago has set the hook — 'Farewell the tranquil mind... farewell the plumed troops... Othello's occupation's gone' — is not only a soldier's lament. It is a valediction to the self he constructed in the Senate scene. Everything he named in that earlier autobiography — the tented field, the moving accidents, the profession as identity — is now past tense.\n\nRead as dramatic action, the speech is premature. Nothing has actually been proven; he has only just become suspicious. But Othello experiences the suspicion as the end of his life, because his self was an epic self, and epic selves do not survive domestic ambiguity. The speech is Shakespeare showing us the cost of a particular kind of heroic identity — the kind Othello needed to become a Venetian commander, the kind that cannot accommodate the private doubts of ordinary marriage.",
+      "sources": [
+        "F. R. Leavis, 'Diabolic Intellect and the Noble Hero', *Scrutiny* (1937)",
+        "Paul A. Kottman, *Tragic Conditions in Shakespeare* (2009)",
+        "Stephen Greenblatt, *Renaissance Self-Fashioning* (1980)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "othello_act3_scene3_q1",
+      "kind": "inference",
+      "prompt": "Iago says 'Ha! I like not that' when he sees Cassio leave Desdemona. What is he actually doing?",
+      "options": [
+        "Expressing genuine disapproval of Cassio's manners",
+        "Planting a small seed of suspicion without directly accusing anyone",
+        "Warning Othello about a political conspiracy",
+        "Complaining about Cassio's military strategy"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 30,
+      "anchor_line_end": 40
+    },
+    {
+      "id": "othello_act3_scene3_q2",
+      "kind": "close_reading",
+      "prompt": "Iago uses the image of a 'green-eyed monster' to describe jealousy. What does the monster do in his description?",
+      "options": [
+        "Weeps uncontrollably and cannot be comforted",
+        "Mocks the meat it feeds on — it plays with what it consumes",
+        "Sleeps for a year and wakes hungrier",
+        "Produces monstrous offspring"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 160,
+      "anchor_line_end": 170
+    },
+    {
+      "id": "othello_act3_scene3_q3",
+      "kind": "inference",
+      "prompt": "In this scene the audience sees Desdemona's innocent behavior clearly. The characters see it filtered through Iago's suggestions. What is this dramatic device called, and how does Shakespeare use it throughout the scene?",
+      "options": [
+        "Soliloquy — the audience hears inner thoughts not available to other characters",
+        "Dramatic irony — the audience knows more than the characters and must watch them act on less information",
+        "Dumbshow — pantomime of future events precedes the dialogue",
+        "Chorus — a commenting voice frames each episode"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 30,
+      "anchor_line_end": 500
+    },
+    {
+      "id": "othello_act3_scene3_q4",
+      "kind": "theme",
+      "prompt": "Iago argues that Desdemona's decision to reject suitors 'of her own clime, complexion, and degree' is itself suspicious. What ideological move is he making?",
+      "options": [
+        "He is citing the Venetian marriage law",
+        "He is converting a free choice into evidence of unnatural appetite, using racist logic to make Othello doubt his own desirability",
+        "He is praising her independence of mind",
+        "He is noting that she should have married a fellow soldier"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 225,
+      "anchor_line_end": 245
+    },
+    {
+      "id": "othello_act3_scene3_q5",
+      "kind": "close_reading",
+      "prompt": "Iago declares that 'Trifles light as air / Are to the jealous confirmations strong / As proofs of holy writ.' What is the core insight?",
+      "options": [
+        "Jealousy makes sufferers obsessed with reading Scripture",
+        "For a jealous mind, even trivial objects become as authoritative as Biblical evidence",
+        "Jealousy can be cured by reading religious texts",
+        "Holy writings often contain proof of infidelity"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 317,
+      "anchor_line_end": 325
+    },
+    {
+      "id": "othello_act3_scene3_q6",
+      "kind": "theme",
+      "prompt": "The 'Pontic Sea' simile Othello uses for his revenge describes a current that:",
+      "options": [
+        "Flows back and forth with the tides",
+        "Flows only one way and never reverses, matching his unstoppable revenge",
+        "Evaporates in hot weather",
+        "Freezes in winter and thaws in spring"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 440,
+      "anchor_line_end": 455
+    },
+    {
+      "id": "othello_act3_scene3_q7",
+      "kind": "structural",
+      "prompt": "At the end of the scene, Othello and Iago kneel together and make mutual vows. Why is this ritual dramatically important?",
+      "options": [
+        "It satisfies a religious obligation before Othello can take revenge",
+        "It displaces Othello's marriage vow with a vow to Iago — tragically inverting intimacy",
+        "It seals a legal document admissible in Venetian courts",
+        "It represents Iago's genuine conversion to Othello's cause"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 455,
+      "anchor_line_end": 483
+    },
+    {
+      "id": "othello_act3_scene3_q8",
+      "kind": "comprehension",
+      "prompt": "At the end of the scene, what role does Othello promise to Iago?",
+      "options": [
+        "His second-in-command on the battlefield",
+        "His lieutenant, taking Cassio's former position",
+        "His ambassador to Venice",
+        "His personal bodyguard and translator"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 478,
+      "anchor_line_end": 485
+    }
+  ]
+}

@@ -1,0 +1,864 @@
+{
+  "section_id": "macbeth_act1_scene7",
+  "work_id": "macbeth",
+  "sequence": 7,
+  "act": 1,
+  "scene": 7,
+  "kind": "scene",
+  "scene_title": "Macbeth's castle",
+  "line_count": 91,
+  "word_count": 680,
+  "est_read_minutes": 3,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "MACBETH",
+      "text": "If it were done when ’tis done, then ’twere well"
+    },
+    {
+      "number": 2,
+      "speaker": "MACBETH",
+      "text": "It were done quickly: if the assassination"
+    },
+    {
+      "number": 3,
+      "speaker": "MACBETH",
+      "text": "Could trammel up the consequence, and catch"
+    },
+    {
+      "number": 4,
+      "speaker": "MACBETH",
+      "text": "With his surcease success; that but this blow"
+    },
+    {
+      "number": 5,
+      "speaker": "MACBETH",
+      "text": "Might be the be-all and the end-all here,"
+    },
+    {
+      "number": 6,
+      "speaker": "MACBETH",
+      "text": "But here, upon this bank and shoal of time,"
+    },
+    {
+      "number": 7,
+      "speaker": "MACBETH",
+      "text": "We’ld jump the life to come. But in these cases"
+    },
+    {
+      "number": 8,
+      "speaker": "MACBETH",
+      "text": "We still have judgment here; that we but teach"
+    },
+    {
+      "number": 9,
+      "speaker": "MACBETH",
+      "text": "Bloody instructions, which, being taught, return"
+    },
+    {
+      "number": 10,
+      "speaker": "MACBETH",
+      "text": "To plague the inventor: this even-handed justice"
+    },
+    {
+      "number": 11,
+      "speaker": "MACBETH",
+      "text": "Commends the ingredients of our poison’d chalice"
+    },
+    {
+      "number": 12,
+      "speaker": "MACBETH",
+      "text": "To our own lips. He’s here in double trust;"
+    },
+    {
+      "number": 13,
+      "speaker": "MACBETH",
+      "text": "First, as I am his kinsman and his subject,"
+    },
+    {
+      "number": 14,
+      "speaker": "MACBETH",
+      "text": "Strong both against the deed; then, as his host,"
+    },
+    {
+      "number": 15,
+      "speaker": "MACBETH",
+      "text": "Who should against his murderer shut the door,"
+    },
+    {
+      "number": 16,
+      "speaker": "MACBETH",
+      "text": "Not bear the knife myself. Besides, this Duncan"
+    },
+    {
+      "number": 17,
+      "speaker": "MACBETH",
+      "text": "Hath borne his faculties so meek, hath been"
+    },
+    {
+      "number": 18,
+      "speaker": "MACBETH",
+      "text": "So clear in his great office, that his virtues"
+    },
+    {
+      "number": 19,
+      "speaker": "MACBETH",
+      "text": "Will plead like angels, trumpet-tongued, against"
+    },
+    {
+      "number": 20,
+      "speaker": "MACBETH",
+      "text": "The deep damnation of his taking-off;"
+    },
+    {
+      "number": 21,
+      "speaker": "MACBETH",
+      "text": "And pity, like a naked new-born babe,"
+    },
+    {
+      "number": 22,
+      "speaker": "MACBETH",
+      "text": "Striding the blast, or heaven’s cherubim, horsed"
+    },
+    {
+      "number": 23,
+      "speaker": "MACBETH",
+      "text": "Upon the sightless couriers of the air,"
+    },
+    {
+      "number": 24,
+      "speaker": "MACBETH",
+      "text": "Shall blow the horrid deed in every eye,"
+    },
+    {
+      "number": 25,
+      "speaker": "MACBETH",
+      "text": "That tears shall drown the wind. I have no spur"
+    },
+    {
+      "number": 26,
+      "speaker": "MACBETH",
+      "text": "To prick the sides of my intent, but only"
+    },
+    {
+      "number": 27,
+      "speaker": "MACBETH",
+      "text": "Vaulting ambition, which o’erleaps itself"
+    },
+    {
+      "number": 28,
+      "speaker": "MACBETH",
+      "text": "And falls on the other."
+    },
+    {
+      "number": 29,
+      "speaker": "LADY MACBETH",
+      "text": "He has almost supp’d: why have you left the chamber?"
+    },
+    {
+      "number": 30,
+      "speaker": "MACBETH",
+      "text": "Hath he ask’d for me?"
+    },
+    {
+      "number": 30,
+      "speaker": "LADY MACBETH",
+      "text": "Know you not he has?"
+    },
+    {
+      "number": 31,
+      "speaker": "MACBETH",
+      "text": "We will proceed no further in this business:"
+    },
+    {
+      "number": 32,
+      "speaker": "MACBETH",
+      "text": "He hath honour’d me of late; and I have bought"
+    },
+    {
+      "number": 33,
+      "speaker": "MACBETH",
+      "text": "Golden opinions from all sorts of people,"
+    },
+    {
+      "number": 34,
+      "speaker": "MACBETH",
+      "text": "Which would be worn now in their newest gloss,"
+    },
+    {
+      "number": 35,
+      "speaker": "MACBETH",
+      "text": "Not cast aside so soon."
+    },
+    {
+      "number": 35,
+      "speaker": "LADY MACBETH",
+      "text": "Was the hope drunk"
+    },
+    {
+      "number": 36,
+      "speaker": "LADY MACBETH",
+      "text": "Wherein you dress’d yourself? hath it slept since?"
+    },
+    {
+      "number": 37,
+      "speaker": "LADY MACBETH",
+      "text": "And wakes it now, to look so green and pale"
+    },
+    {
+      "number": 38,
+      "speaker": "LADY MACBETH",
+      "text": "At what it did so freely? From this time"
+    },
+    {
+      "number": 39,
+      "speaker": "LADY MACBETH",
+      "text": "Such I account thy love. Art thou afeard"
+    },
+    {
+      "number": 40,
+      "speaker": "LADY MACBETH",
+      "text": "To be the same in thine own act and valour"
+    },
+    {
+      "number": 41,
+      "speaker": "LADY MACBETH",
+      "text": "As thou art in desire? Wouldst thou have that"
+    },
+    {
+      "number": 42,
+      "speaker": "LADY MACBETH",
+      "text": "Which thou esteem’st the ornament of life,"
+    },
+    {
+      "number": 43,
+      "speaker": "LADY MACBETH",
+      "text": "And live a coward in thine own esteem,"
+    },
+    {
+      "number": 44,
+      "speaker": "LADY MACBETH",
+      "text": "Letting “I dare not” wait upon “I would,”"
+    },
+    {
+      "number": 45,
+      "speaker": "LADY MACBETH",
+      "text": "Like the poor cat i’ the adage?"
+    },
+    {
+      "number": 46,
+      "speaker": "MACBETH",
+      "text": "Prithee, peace:"
+    },
+    {
+      "number": 47,
+      "speaker": "MACBETH",
+      "text": "I dare do all that may become a man;"
+    },
+    {
+      "number": 48,
+      "speaker": "MACBETH",
+      "text": "Who dares do more is none."
+    },
+    {
+      "number": 48,
+      "speaker": "LADY MACBETH",
+      "text": "What beast was’t, then,"
+    },
+    {
+      "number": 49,
+      "speaker": "LADY MACBETH",
+      "text": "That made you break this enterprise to me?"
+    },
+    {
+      "number": 50,
+      "speaker": "LADY MACBETH",
+      "text": "When you durst do it, then you were a man;"
+    },
+    {
+      "number": 51,
+      "speaker": "LADY MACBETH",
+      "text": "And, to be more than what you were, you would"
+    },
+    {
+      "number": 52,
+      "speaker": "LADY MACBETH",
+      "text": "Be so much more the man. Nor time nor place"
+    },
+    {
+      "number": 53,
+      "speaker": "LADY MACBETH",
+      "text": "Did then adhere, and yet you would make both:"
+    },
+    {
+      "number": 54,
+      "speaker": "LADY MACBETH",
+      "text": "They have made themselves, and that their fitness now"
+    },
+    {
+      "number": 55,
+      "speaker": "LADY MACBETH",
+      "text": "Does unmake you. I have given suck, and know"
+    },
+    {
+      "number": 56,
+      "speaker": "LADY MACBETH",
+      "text": "How tender ’tis to love the babe that milks me:"
+    },
+    {
+      "number": 57,
+      "speaker": "LADY MACBETH",
+      "text": "I would, while it was smiling in my face,"
+    },
+    {
+      "number": 58,
+      "speaker": "LADY MACBETH",
+      "text": "Have pluck’d my nipple from his boneless gums,"
+    },
+    {
+      "number": 59,
+      "speaker": "LADY MACBETH",
+      "text": "And dash’d the brains out, had I so sworn as you"
+    },
+    {
+      "number": 60,
+      "speaker": "LADY MACBETH",
+      "text": "Have done to this."
+    },
+    {
+      "number": 60,
+      "speaker": "MACBETH",
+      "text": "If we should fail?"
+    },
+    {
+      "number": 61,
+      "speaker": "LADY MACBETH",
+      "text": "We fail!"
+    },
+    {
+      "number": 62,
+      "speaker": "LADY MACBETH",
+      "text": "But screw your courage to the sticking-place,"
+    },
+    {
+      "number": 63,
+      "speaker": "LADY MACBETH",
+      "text": "And we’ll not fail. When Duncan is asleep—"
+    },
+    {
+      "number": 64,
+      "speaker": "LADY MACBETH",
+      "text": "Whereto the rather shall his day’s hard journey"
+    },
+    {
+      "number": 65,
+      "speaker": "LADY MACBETH",
+      "text": "Soundly invite him—his two chamberlains"
+    },
+    {
+      "number": 66,
+      "speaker": "LADY MACBETH",
+      "text": "Will I with wine and wassail so convince"
+    },
+    {
+      "number": 67,
+      "speaker": "LADY MACBETH",
+      "text": "That memory, the warder of the brain,"
+    },
+    {
+      "number": 68,
+      "speaker": "LADY MACBETH",
+      "text": "Shall be a fume, and the receipt of reason"
+    },
+    {
+      "number": 69,
+      "speaker": "LADY MACBETH",
+      "text": "A limbeck only: when in swinish sleep"
+    },
+    {
+      "number": 70,
+      "speaker": "LADY MACBETH",
+      "text": "Their drenched natures lie as in a death,"
+    },
+    {
+      "number": 71,
+      "speaker": "LADY MACBETH",
+      "text": "What cannot you and I perform upon"
+    },
+    {
+      "number": 72,
+      "speaker": "LADY MACBETH",
+      "text": "The unguarded Duncan? what not put upon"
+    },
+    {
+      "number": 73,
+      "speaker": "LADY MACBETH",
+      "text": "His spongy officers, who shall bear the guilt"
+    },
+    {
+      "number": 74,
+      "speaker": "LADY MACBETH",
+      "text": "Of our great quell?"
+    },
+    {
+      "number": 74,
+      "speaker": "MACBETH",
+      "text": "Bring forth men-children only;"
+    },
+    {
+      "number": 75,
+      "speaker": "MACBETH",
+      "text": "For thy undaunted mettle should compose"
+    },
+    {
+      "number": 76,
+      "speaker": "MACBETH",
+      "text": "Nothing but males. Will it not be received,"
+    },
+    {
+      "number": 77,
+      "speaker": "MACBETH",
+      "text": "When we have mark’d with blood those sleepy two"
+    },
+    {
+      "number": 78,
+      "speaker": "MACBETH",
+      "text": "Of his own chamber and used their very daggers,"
+    },
+    {
+      "number": 79,
+      "speaker": "MACBETH",
+      "text": "That they have done’t?"
+    },
+    {
+      "number": 79,
+      "speaker": "LADY MACBETH",
+      "text": "Who dares receive it other,"
+    },
+    {
+      "number": 80,
+      "speaker": "LADY MACBETH",
+      "text": "As we shall make our griefs and clamour roar"
+    },
+    {
+      "number": 81,
+      "speaker": "LADY MACBETH",
+      "text": "Upon his death?"
+    },
+    {
+      "number": 81,
+      "speaker": "MACBETH",
+      "text": "I am settled, and bend up"
+    },
+    {
+      "number": 82,
+      "speaker": "MACBETH",
+      "text": "Each corporal agent to this terrible feat."
+    },
+    {
+      "number": 83,
+      "speaker": "MACBETH",
+      "text": "Away, and mock the time with fairest show:"
+    },
+    {
+      "number": 84,
+      "speaker": "MACBETH",
+      "text": "False face must hide what the false heart doth know."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Hautboys and torches. Enter a Sewer, and divers Servants with dishes and service, and pass over the stage. Then enter Macbeth."
+    },
+    {
+      "after_line": 28,
+      "text": "Enter Lady Macbeth."
+    },
+    {
+      "after_line": 28,
+      "text": "How now! what news?"
+    },
+    {
+      "after_line": 84,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act1_scene7_gloss1",
+      "line": 1,
+      "phrase": "If it were done when ’tis done",
+      "definition": "if the act were finished and over when it is finished — Macbeth's attempt to wish away the consequences"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss2",
+      "line": 3,
+      "phrase": "trammel up the consequence",
+      "definition": "catch and hold the consequences in a net"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss3",
+      "line": 4,
+      "phrase": "his surcease",
+      "definition": "his cessation, his stopping — i.e., Duncan's death"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss4",
+      "line": 4,
+      "phrase": "surcease",
+      "definition": "cessation; end"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss6",
+      "line": 6,
+      "phrase": "upon this bank and shoal of time",
+      "definition": "on this narrow strip of mortal time"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss7",
+      "line": 7,
+      "phrase": "jump the life to come",
+      "definition": "skip over what might happen in the next life (i.e., ignore damnation)"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss8",
+      "line": 10,
+      "phrase": "even-handed justice",
+      "definition": "impartial justice — that returns evil to its doer"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss9",
+      "line": 11,
+      "phrase": "Commends the ingredients of our poison’d chalice",
+      "definition": "serves us the poison we prepared for others"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss10",
+      "line": 12,
+      "phrase": "double trust",
+      "definition": "a twofold bond — as kinsman and subject, and as host"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss11",
+      "line": 14,
+      "phrase": "Strong both against the deed",
+      "definition": "twin restraints against committing the murder"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss12",
+      "line": 17,
+      "phrase": "borne his faculties so meek",
+      "definition": "exercised his powers so gently"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss13",
+      "line": 18,
+      "phrase": "clear in his great office",
+      "definition": "unstained, pure in his royal duties"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss15",
+      "line": 20,
+      "phrase": "taking-off",
+      "definition": "removal; assassination"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss16",
+      "line": 21,
+      "phrase": "naked new-born babe",
+      "definition": "the famous image of helpless innocence; part of Macbeth's speech Cleanth Brooks reads as the play's central emblem"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss17",
+      "line": 22,
+      "phrase": "Striding the blast",
+      "definition": "riding the storm wind"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss19",
+      "line": 23,
+      "phrase": "sightless couriers of the air",
+      "definition": "invisible messengers of the wind"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss20",
+      "line": 24,
+      "phrase": "Shall blow the horrid deed in every eye",
+      "definition": "will blow news of the murder into every eye like pollen"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss21",
+      "line": 25,
+      "phrase": "spur",
+      "definition": "motivation; goad"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss22",
+      "line": 27,
+      "phrase": "vaulting ambition",
+      "definition": "ambition that tries to leap too high — Macbeth's famous self-diagnosis"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss23",
+      "line": 27,
+      "phrase": "o’erleaps itself",
+      "definition": "leaps too far and falls on the other side"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss25",
+      "line": 34,
+      "phrase": "worn now in their newest gloss",
+      "definition": "enjoyed at their brightest moment — another clothing-image"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss26",
+      "line": 37,
+      "phrase": "green and pale",
+      "definition": "sickly; hungover"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss28",
+      "line": 39,
+      "phrase": "afeard",
+      "definition": "afraid"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss29",
+      "line": 42,
+      "phrase": "ornament of life",
+      "definition": "the crown; the highest honor"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss30",
+      "line": 43,
+      "phrase": "coward in thine own esteem",
+      "definition": "a coward in your own self-judgment"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss31",
+      "line": 45,
+      "phrase": "poor cat i’ the adage",
+      "definition": "reference to a proverb: a cat wanted fish but feared wetting its paws — accusation of pathetic indecision"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss32",
+      "line": 45,
+      "phrase": "adage",
+      "definition": "old proverb"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss33",
+      "line": 49,
+      "phrase": "break this enterprise to me",
+      "definition": "first broached this scheme to me"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss35",
+      "line": 59,
+      "phrase": "dash’d the brains out",
+      "definition": "Lady Macbeth's shocking boast: she would have killed her own nursing child rather than break an oath like his"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss36",
+      "line": 62,
+      "phrase": "screw your courage to the sticking-place",
+      "definition": "tune your courage like a crossbow string to its fastening peg — i.e., hold your nerve firmly"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss37",
+      "line": 62,
+      "phrase": "sticking-place",
+      "definition": "the notch on a crossbow holding the drawn string taut"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss38",
+      "line": 65,
+      "phrase": "chamberlains",
+      "definition": "personal attendants of the king"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss39",
+      "line": 66,
+      "phrase": "wine and wassail",
+      "definition": "wine and festive drinking"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss40",
+      "line": 66,
+      "phrase": "wassail",
+      "definition": "festive drinking"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss41",
+      "line": 66,
+      "phrase": "convince",
+      "definition": "overpower"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss42",
+      "line": 68,
+      "phrase": "receipt",
+      "definition": "recipient; vessel"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss43",
+      "line": 69,
+      "phrase": "limbeck",
+      "definition": "alembic — a distilling vessel; brain figured as an alchemist's still"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss44",
+      "line": 69,
+      "phrase": "swinish sleep",
+      "definition": "pig-like drunken slumber"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss45",
+      "line": 73,
+      "phrase": "spongy officers",
+      "definition": "the drunken chamberlains, soaked like sponges"
+    },
+    {
+      "id": "macbeth_act1_scene7_gloss47",
+      "line": 83,
+      "phrase": "mock the time with fairest show",
+      "definition": "deceive the world with the fairest appearance — the serpent-under-flower doctrine again"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act1_scene7_ann1",
+      "line_start": 1,
+      "line_end": 28,
+      "citation_display": "Macbeth 1.7.1–28",
+      "category": "thematic",
+      "title": "'If it were done': the soliloquy of reasons against",
+      "body": "Macbeth's soliloquy at scene's opening is unusual among tragic speeches in one respect: almost every reason he gives against the murder is prudential, not moral. 'If th' assassination / Could trammel up the consequence' — if the act could be insulated from its effects, he would do it. The worry is that consequences return: the 'even-handed justice' that 'commends th' ingredients of our poison'd chalice / To our own lips.'\n\nOnly near the end of the speech does Macbeth name moral reasons — Duncan's 'virtues' will 'plead like angels, trumpet-tongued' — and he names them in imagery so visual that the play's deepest image-systems surface together in one passage: angelic cherubs riding storm winds, and the 'naked new-born babe / Striding the blast,' which Cleanth Brooks reads as the play's central emblem.\n\nBrooks's argument, advanced in *The Well Wrought Urn*, is that the babe represents helpless pity — the exact thing Lady Macbeth has tried to strip from herself in 1.5 — and that the 'cherubin' carrying it is the moral force that the Macbeths cannot suppress. The babe will return in 4.1 (the bloody child apparition) and 4.2 (Macduff's murdered son), insisting on its presence across the play.\n\nThe soliloquy ends with Macbeth defeated: 'I have no spur / To prick the sides of my intent, but only / Vaulting ambition.' He has not been persuaded by the moral argument; he has been deserted by the practical one. Lady Macbeth's entrance will force the third, decisive factor.",
+      "sources": [
+        "Cleanth Brooks, 'The Naked Babe and the Cloak of Manliness,' in *The Well Wrought Urn* (1947)",
+        "A. C. Bradley (1904)",
+        "Caroline Spurgeon, *Shakespeare's Imagery* (1935)"
+      ]
+    },
+    {
+      "id": "macbeth_act1_scene7_ann2",
+      "line_start": 29,
+      "line_end": 60,
+      "citation_display": "Macbeth 1.7.29–60",
+      "category": "thematic",
+      "title": "Lady Macbeth's attack on manhood",
+      "body": "Lady Macbeth's counter-argument does not engage with Macbeth's scruples; it attacks his masculinity. 'Art thou afeard / To be the same in thine own act and valour / As thou art in desire?' The implied definition of manhood is uncompromising: a man is what he dares, not what he deliberates.\n\nHer climactic image — 'I have given suck, and know / How tender 'tis to love the babe that milks me: / I would, while it was smiling in my face, / Have pluck'd my nipple from his boneless gums, / And dash'd the brains out, had I so sworn as you / Have done to this' — is one of the most shocking passages in Shakespeare. It yokes maternal tenderness to infanticide in a single sentence, and offers the composite image as a measure of kept promises.\n\nThe speech answers Macbeth's 'naked new-born babe' with a 'babe that milks me.' The play's central image-cluster — babes, milk, swords — is now fully assembled. The Macbeths have staked their marriage on the proposition that a vow can override the instincts that make a human being human. The play will spend four acts proving them wrong.",
+      "sources": [
+        "Janet Adelman (1992)",
+        "Cleanth Brooks (1947)",
+        "Marjorie Garber, *Shakespeare After All* (2004)"
+      ]
+    },
+    {
+      "id": "macbeth_act1_scene7_ann3",
+      "line_start": 61,
+      "line_end": 82,
+      "citation_display": "Macbeth 1.7.61–82",
+      "category": "close_reading",
+      "title": "'Screw your courage to the sticking-place'",
+      "body": "The phrase is often quoted as if it meant 'find your nerve.' The metaphor is more specific. The 'sticking-place' is the notch on a crossbow that holds the drawn string; to screw your courage to it is to wind the string up to full tension and lock it there — ready to release. Courage, in the metaphor, is not a feeling but a mechanical readiness. You wind it up and it fires.\n\nLady Macbeth's plan follows the same logic: apply wine to the chamberlains, let oblivion lock them in place, and the deed becomes executable — a triggered mechanism. The play's dialogue repeatedly returns to this vocabulary of tension, bending, release ('bend up each corporal agent,' 2.1; 'the bond of life,' 3.2). Macbeth's courage, by 5.5, will have snapped: 'I am aweary of the sun.'",
+      "sources": [
+        "Frank Kermode, *Shakespeare's Language* (2000)",
+        "Russ McDonald, *Shakespeare's Late Style* (2006)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act1_scene7_q1",
+      "kind": "theme",
+      "prompt": "Most of Macbeth's reasons against murdering Duncan in this soliloquy are:",
+      "options": [
+        "Moral and religious",
+        "Prudential — he worries about consequences returning to him, not the murder's wrongness",
+        "Economic",
+        "Family-related"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 28
+    },
+    {
+      "id": "macbeth_act1_scene7_q2",
+      "kind": "close_reading",
+      "prompt": "Cleanth Brooks reads the 'naked new-born babe' image as:",
+      "options": [
+        "Random poetic imagery",
+        "The play's central emblem of helpless pity — exactly what Lady Macbeth tried to strip from herself",
+        "A Christian symbol",
+        "A reference to Scottish folklore"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 21,
+      "anchor_line_end": 28
+    },
+    {
+      "id": "macbeth_act1_scene7_q3",
+      "kind": "theme",
+      "prompt": "Lady Macbeth's counterargument to Macbeth's reluctance:",
+      "options": [
+        "Engages his moral concerns",
+        "Attacks his masculinity — reframing manhood as what one dares, not what one deliberates",
+        "Proposes an alternative victim",
+        "Offers to withdraw from the plan"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 35,
+      "anchor_line_end": 48
+    },
+    {
+      "id": "macbeth_act1_scene7_q4",
+      "kind": "close_reading",
+      "prompt": "'Screw your courage to the sticking-place' — what is the sticking-place?",
+      "options": [
+        "A stage direction",
+        "The notch on a crossbow holding the drawn string at full tension",
+        "A tavern",
+        "A compass bearing"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 60,
+      "anchor_line_end": 63
+    },
+    {
+      "id": "macbeth_act1_scene7_q5",
+      "kind": "inference",
+      "prompt": "Lady Macbeth claims she would dash her nursing child's brains out rather than break an oath like the one Macbeth has made. The rhetorical function:",
+      "options": [
+        "Autobiographical confession",
+        "A shock-image measuring kept promises — yoking nurture and infanticide in one sentence to shame Macbeth's hesitation",
+        "Gentle reassurance",
+        "A jest"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 54,
+      "anchor_line_end": 60
+    },
+    {
+      "id": "macbeth_act1_scene7_q6",
+      "kind": "comprehension",
+      "prompt": "What is Lady Macbeth's plan for framing Duncan's murder?",
+      "options": [
+        "Blame the English",
+        "Drug the chamberlains, smear them with blood, and use their daggers — then blame them",
+        "Flee Scotland",
+        "Announce the murder publicly"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 63,
+      "anchor_line_end": 82
+    }
+  ]
+}

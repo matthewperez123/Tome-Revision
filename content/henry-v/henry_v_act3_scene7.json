@@ -1,0 +1,995 @@
+{
+  "section_id": "henry_v_act3_scene7",
+  "work_id": "henry-v",
+  "sequence": 16,
+  "act": 3,
+  "scene": 7,
+  "kind": "scene",
+  "scene_title": "The French camp, near Agincourt",
+  "line_count": 123,
+  "word_count": 1168,
+  "est_read_minutes": 6,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CONSTABLE",
+      "text": "Tut! I have the best armour of the world. Would it were day!"
+    },
+    {
+      "number": 2,
+      "speaker": "ORLEANS",
+      "text": "You have an excellent armour; but let my horse have his due."
+    },
+    {
+      "number": 3,
+      "speaker": "CONSTABLE",
+      "text": "It is the best horse of Europe."
+    },
+    {
+      "number": 4,
+      "speaker": "ORLEANS",
+      "text": "Will it never be morning?"
+    },
+    {
+      "number": 5,
+      "speaker": "DAUPHIN",
+      "text": "My Lord of Orleans, and my lord high constable, you talk of horse and armour?"
+    },
+    {
+      "number": 6,
+      "speaker": "ORLEANS",
+      "text": "You are as well provided of both as any prince in the world."
+    },
+    {
+      "number": 7,
+      "speaker": "DAUPHIN",
+      "text": "What a long night is this! I will not change my horse"
+    },
+    {
+      "number": 8,
+      "speaker": "DAUPHIN",
+      "text": "with any that treads but on four pasterns. Ça, ha! he bounds"
+    },
+    {
+      "number": 9,
+      "speaker": "DAUPHIN",
+      "text": "from the earth, as if his entrails were hairs; le cheval volant,"
+    },
+    {
+      "number": 10,
+      "speaker": "DAUPHIN",
+      "text": "the Pegasus, qui a les narines de feu! When I bestride him,"
+    },
+    {
+      "number": 11,
+      "speaker": "DAUPHIN",
+      "text": "I soar, I am a hawk: he trots the air; the earth"
+    },
+    {
+      "number": 12,
+      "speaker": "DAUPHIN",
+      "text": "sings when he touches it; the basest horn of his hoof is"
+    },
+    {
+      "number": 13,
+      "speaker": "DAUPHIN",
+      "text": "more musical than the pipe of Hermes."
+    },
+    {
+      "number": 14,
+      "speaker": "ORLEANS",
+      "text": "He’s of the colour of the nutmeg."
+    },
+    {
+      "number": 15,
+      "speaker": "DAUPHIN",
+      "text": "And of the heat of the ginger. It is a beast for"
+    },
+    {
+      "number": 16,
+      "speaker": "DAUPHIN",
+      "text": "Perseus: he is pure air and fire; and the dull elements of"
+    },
+    {
+      "number": 17,
+      "speaker": "DAUPHIN",
+      "text": "earth and water never appear in him, but only in patient stillness"
+    },
+    {
+      "number": 18,
+      "speaker": "DAUPHIN",
+      "text": "while his rider mounts him: he is indeed a horse; and all"
+    },
+    {
+      "number": 19,
+      "speaker": "DAUPHIN",
+      "text": "other jades you may call beasts."
+    },
+    {
+      "number": 20,
+      "speaker": "CONSTABLE",
+      "text": "Indeed, my lord, it is a most absolute and excellent horse."
+    },
+    {
+      "number": 21,
+      "speaker": "DAUPHIN",
+      "text": "It is the prince of palfreys; his neigh is like the bidding"
+    },
+    {
+      "number": 22,
+      "speaker": "DAUPHIN",
+      "text": "of a monarch and his countenance enforces homage."
+    },
+    {
+      "number": 23,
+      "speaker": "ORLEANS",
+      "text": "No more, cousin."
+    },
+    {
+      "number": 24,
+      "speaker": "DAUPHIN",
+      "text": "Nay, the man hath no wit that cannot, from the rising of"
+    },
+    {
+      "number": 25,
+      "speaker": "DAUPHIN",
+      "text": "the lark to the lodging of the lamb, vary deserved praise on"
+    },
+    {
+      "number": 26,
+      "speaker": "DAUPHIN",
+      "text": "my palfrey: it is a theme as fluent as the sea: turn"
+    },
+    {
+      "number": 27,
+      "speaker": "DAUPHIN",
+      "text": "the sands into eloquent tongues, and my horse is argument for them"
+    },
+    {
+      "number": 28,
+      "speaker": "DAUPHIN",
+      "text": "all: ’tis a subject for a sovereign to reason on, and for"
+    },
+    {
+      "number": 29,
+      "speaker": "DAUPHIN",
+      "text": "a sovereign’s sovereign to ride on; and for the world, familiar to"
+    },
+    {
+      "number": 30,
+      "speaker": "DAUPHIN",
+      "text": "us and unknown, to lay apart their particular functions and wonder at"
+    },
+    {
+      "number": 31,
+      "speaker": "DAUPHIN",
+      "text": "him. I once writ a sonnet in his praise and began thus:"
+    },
+    {
+      "number": 32,
+      "speaker": "DAUPHIN",
+      "text": "“Wonder of nature,”—"
+    },
+    {
+      "number": 33,
+      "speaker": "ORLEANS",
+      "text": "I have heard a sonnet begin so to one’s mistress."
+    },
+    {
+      "number": 34,
+      "speaker": "DAUPHIN",
+      "text": "Then did they imitate that which I composed to my courser, for"
+    },
+    {
+      "number": 35,
+      "speaker": "DAUPHIN",
+      "text": "my horse is my mistress."
+    },
+    {
+      "number": 35,
+      "speaker": "ORLEANS",
+      "text": "Your mistress bears well."
+    },
+    {
+      "number": 36,
+      "speaker": "DAUPHIN",
+      "text": "Me well; which is the prescript praise and perfection of a good and particular mistress."
+    },
+    {
+      "number": 37,
+      "speaker": "CONSTABLE",
+      "text": "Nay, for methought yesterday your mistress shrewdly shook your back."
+    },
+    {
+      "number": 38,
+      "speaker": "DAUPHIN",
+      "text": "So perhaps did yours."
+    },
+    {
+      "number": 38,
+      "speaker": "CONSTABLE",
+      "text": "Mine was not bridled."
+    },
+    {
+      "number": 39,
+      "speaker": "DAUPHIN",
+      "text": "O then belike she was old and gentle; and you rode, like"
+    },
+    {
+      "number": 40,
+      "speaker": "DAUPHIN",
+      "text": "a kern of Ireland, your French hose off, and in your strait"
+    },
+    {
+      "number": 41,
+      "speaker": "DAUPHIN",
+      "text": "strossers."
+    },
+    {
+      "number": 41,
+      "speaker": "CONSTABLE",
+      "text": "You have good judgment in horsemanship."
+    },
+    {
+      "number": 42,
+      "speaker": "DAUPHIN",
+      "text": "Be warned by me, then: they that ride so and ride not"
+    },
+    {
+      "number": 43,
+      "speaker": "DAUPHIN",
+      "text": "warily, fall into foul bogs. I had rather have my horse to"
+    },
+    {
+      "number": 44,
+      "speaker": "DAUPHIN",
+      "text": "my mistress."
+    },
+    {
+      "number": 45,
+      "speaker": "CONSTABLE",
+      "text": "I had as lief have my mistress a jade."
+    },
+    {
+      "number": 46,
+      "speaker": "DAUPHIN",
+      "text": "I tell thee, constable, my mistress wears his own hair."
+    },
+    {
+      "number": 47,
+      "speaker": "CONSTABLE",
+      "text": "I could make as true a boast as that, if I had"
+    },
+    {
+      "number": 48,
+      "speaker": "CONSTABLE",
+      "text": "a sow to my mistress."
+    },
+    {
+      "number": 49,
+      "speaker": "DAUPHIN",
+      "text": "“Le chien est retourné à son propre vomissement, et la truie lavée"
+    },
+    {
+      "number": 50,
+      "speaker": "DAUPHIN",
+      "text": "au bourbier:” thou makest use of anything."
+    },
+    {
+      "number": 51,
+      "speaker": "CONSTABLE",
+      "text": "Yet do I not use my horse for my mistress, or any"
+    },
+    {
+      "number": 52,
+      "speaker": "CONSTABLE",
+      "text": "such proverb so little kin to the purpose."
+    },
+    {
+      "number": 53,
+      "speaker": "RAMBURES",
+      "text": "My lord constable, the armour that I saw in your tent tonight,"
+    },
+    {
+      "number": 54,
+      "speaker": "RAMBURES",
+      "text": "are those stars or suns upon it?"
+    },
+    {
+      "number": 55,
+      "speaker": "CONSTABLE",
+      "text": "Stars, my lord."
+    },
+    {
+      "number": 56,
+      "speaker": "DAUPHIN",
+      "text": "Some of them will fall tomorrow, I hope."
+    },
+    {
+      "number": 57,
+      "speaker": "CONSTABLE",
+      "text": "And yet my sky shall not want."
+    },
+    {
+      "number": 58,
+      "speaker": "DAUPHIN",
+      "text": "That may be, for you bear a many superfluously, and ’twere more"
+    },
+    {
+      "number": 59,
+      "speaker": "DAUPHIN",
+      "text": "honour some were away."
+    },
+    {
+      "number": 60,
+      "speaker": "CONSTABLE",
+      "text": "Even as your horse bears your praises; who would trot as well,"
+    },
+    {
+      "number": 61,
+      "speaker": "CONSTABLE",
+      "text": "were some of your brags dismounted."
+    },
+    {
+      "number": 62,
+      "speaker": "DAUPHIN",
+      "text": "Would I were able to load him with his desert! Will it"
+    },
+    {
+      "number": 63,
+      "speaker": "DAUPHIN",
+      "text": "never be day? I will trot tomorrow a mile, and my way"
+    },
+    {
+      "number": 64,
+      "speaker": "DAUPHIN",
+      "text": "shall be paved with English faces."
+    },
+    {
+      "number": 65,
+      "speaker": "CONSTABLE",
+      "text": "I will not say so, for fear I should be faced out"
+    },
+    {
+      "number": 66,
+      "speaker": "CONSTABLE",
+      "text": "of my way: but I would it were morning; for I would"
+    },
+    {
+      "number": 67,
+      "speaker": "CONSTABLE",
+      "text": "fain be about the ears of the English."
+    },
+    {
+      "number": 68,
+      "speaker": "RAMBURES",
+      "text": "Who will go to hazard with me for twenty prisoners?"
+    },
+    {
+      "number": 69,
+      "speaker": "CONSTABLE",
+      "text": "You must first go yourself to hazard, ere you have them."
+    },
+    {
+      "number": 70,
+      "speaker": "DAUPHIN",
+      "text": "’Tis midnight; I’ll go arm myself."
+    },
+    {
+      "number": 70,
+      "speaker": "ORLEANS",
+      "text": "The Dauphin longs for morning."
+    },
+    {
+      "number": 71,
+      "speaker": "RAMBURES",
+      "text": "He longs to eat the English."
+    },
+    {
+      "number": 72,
+      "speaker": "CONSTABLE",
+      "text": "I think he will eat all he kills."
+    },
+    {
+      "number": 73,
+      "speaker": "ORLEANS",
+      "text": "By the white hand of my lady, he’s a gallant prince."
+    },
+    {
+      "number": 74,
+      "speaker": "CONSTABLE",
+      "text": "Swear by her foot, that she may tread out the oath."
+    },
+    {
+      "number": 75,
+      "speaker": "ORLEANS",
+      "text": "He is simply the most active gentleman of France."
+    },
+    {
+      "number": 76,
+      "speaker": "CONSTABLE",
+      "text": "Doing is activity; and he will still be doing."
+    },
+    {
+      "number": 77,
+      "speaker": "ORLEANS",
+      "text": "He never did harm, that I heard of."
+    },
+    {
+      "number": 78,
+      "speaker": "CONSTABLE",
+      "text": "Nor will do none tomorrow: he will keep that good name still."
+    },
+    {
+      "number": 79,
+      "speaker": "ORLEANS",
+      "text": "I know him to be valiant."
+    },
+    {
+      "number": 80,
+      "speaker": "CONSTABLE",
+      "text": "I was told that by one that knows him better than you."
+    },
+    {
+      "number": 81,
+      "speaker": "ORLEANS",
+      "text": "What’s he?"
+    },
+    {
+      "number": 82,
+      "speaker": "CONSTABLE",
+      "text": "Marry, he told me so himself; and he said he cared not who knew it."
+    },
+    {
+      "number": 83,
+      "speaker": "ORLEANS",
+      "text": "He needs not; it is no hidden virtue in him."
+    },
+    {
+      "number": 84,
+      "speaker": "CONSTABLE",
+      "text": "By my faith, sir, but it is; never anybody saw it but"
+    },
+    {
+      "number": 85,
+      "speaker": "CONSTABLE",
+      "text": "his lackey: ’tis a hooded valour; and when it appears, it will"
+    },
+    {
+      "number": 86,
+      "speaker": "CONSTABLE",
+      "text": "bate."
+    },
+    {
+      "number": 86,
+      "speaker": "ORLEANS",
+      "text": "Ill will never said well."
+    },
+    {
+      "number": 87,
+      "speaker": "CONSTABLE",
+      "text": "I will cap that proverb with “There is flattery in friendship.”"
+    },
+    {
+      "number": 88,
+      "speaker": "ORLEANS",
+      "text": "And I will take up that with “Give the devil his due.”"
+    },
+    {
+      "number": 89,
+      "speaker": "CONSTABLE",
+      "text": "Well placed: there stands your friend for the devil: have at the"
+    },
+    {
+      "number": 90,
+      "speaker": "CONSTABLE",
+      "text": "very eye of that proverb with “A pox of the devil.”"
+    },
+    {
+      "number": 91,
+      "speaker": "ORLEANS",
+      "text": "You are the better at proverbs, by how much “A fool’s bolt is soon shot.”"
+    },
+    {
+      "number": 92,
+      "speaker": "CONSTABLE",
+      "text": "You have shot over."
+    },
+    {
+      "number": 93,
+      "speaker": "ORLEANS",
+      "text": "’Tis not the first time you were overshot."
+    },
+    {
+      "number": 94,
+      "speaker": "MESSENGER",
+      "text": "My lord high constable, the English lie within fifteen hundred paces of your tents."
+    },
+    {
+      "number": 95,
+      "speaker": "CONSTABLE",
+      "text": "Who hath measured the ground?"
+    },
+    {
+      "number": 95,
+      "speaker": "MESSENGER",
+      "text": "The Lord Grandpré."
+    },
+    {
+      "number": 96,
+      "speaker": "CONSTABLE",
+      "text": "A valiant and most expert gentleman. Would it were day! Alas, poor"
+    },
+    {
+      "number": 97,
+      "speaker": "CONSTABLE",
+      "text": "Harry of England! he longs not for the dawning as we do."
+    },
+    {
+      "number": 98,
+      "speaker": "ORLEANS",
+      "text": "What a wretched and peevish fellow is this king of England, to"
+    },
+    {
+      "number": 99,
+      "speaker": "ORLEANS",
+      "text": "mope with his fat-brained followers so far out of his knowledge!"
+    },
+    {
+      "number": 100,
+      "speaker": "CONSTABLE",
+      "text": "If the English had any apprehension, they would run away."
+    },
+    {
+      "number": 101,
+      "speaker": "ORLEANS",
+      "text": "That they lack; for if their heads had any intellectual armour, they"
+    },
+    {
+      "number": 102,
+      "speaker": "ORLEANS",
+      "text": "could never wear such heavy headpieces."
+    },
+    {
+      "number": 103,
+      "speaker": "RAMBURES",
+      "text": "That island of England breeds very valiant creatures; their mastiffs are of unmatchable courage."
+    },
+    {
+      "number": 104,
+      "speaker": "ORLEANS",
+      "text": "Foolish curs, that run winking into the mouth of a Russian bear"
+    },
+    {
+      "number": 105,
+      "speaker": "ORLEANS",
+      "text": "and have their heads crushed like rotten apples! You may as well"
+    },
+    {
+      "number": 106,
+      "speaker": "ORLEANS",
+      "text": "say, that’s a valiant flea that dare eat his breakfast on the"
+    },
+    {
+      "number": 107,
+      "speaker": "ORLEANS",
+      "text": "lip of a lion."
+    },
+    {
+      "number": 108,
+      "speaker": "CONSTABLE",
+      "text": "Just, just; and the men do sympathize with the mastiffs in robustious"
+    },
+    {
+      "number": 109,
+      "speaker": "CONSTABLE",
+      "text": "and rough coming on, leaving their wits with their wives: and then"
+    },
+    {
+      "number": 110,
+      "speaker": "CONSTABLE",
+      "text": "give them great meals of beef and iron and steel, they will"
+    },
+    {
+      "number": 111,
+      "speaker": "CONSTABLE",
+      "text": "eat like wolves and fight like devils."
+    },
+    {
+      "number": 112,
+      "speaker": "ORLEANS",
+      "text": "Ay, but these English are shrewdly out of beef."
+    },
+    {
+      "number": 113,
+      "speaker": "CONSTABLE",
+      "text": "Then shall we find tomorrow they have only stomachs to eat and"
+    },
+    {
+      "number": 114,
+      "speaker": "CONSTABLE",
+      "text": "none to fight. Now is it time to arm: come, shall we"
+    },
+    {
+      "number": 115,
+      "speaker": "CONSTABLE",
+      "text": "about it?"
+    },
+    {
+      "number": 116,
+      "speaker": "ORLEANS",
+      "text": "It is now two o’clock: but, let me see, by ten"
+    },
+    {
+      "number": 117,
+      "speaker": "ORLEANS",
+      "text": "We shall have each a hundred Englishmen."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter the Constable of France, the Lord Rambures, Orleans, Dauphin with others."
+    },
+    {
+      "after_line": 70,
+      "text": "Exit."
+    },
+    {
+      "after_line": 93,
+      "text": "Enter a Messenger."
+    },
+    {
+      "after_line": 117,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act3_scene7_gloss1",
+      "line": 2,
+      "phrase": "let my horse have his due",
+      "definition": "credit my horse as well — Orleans begins the scene's running horse-bragging"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss2",
+      "line": 8,
+      "phrase": "pasterns",
+      "definition": "the part of a horse's leg between the fetlock and hoof — 'he treads on four pasterns' = he's a true horse"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss3",
+      "line": 8,
+      "phrase": "Ça, ha",
+      "definition": "French exclamation of delight — 'Ah, there!'"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss4",
+      "line": 9,
+      "phrase": "le cheval volant",
+      "definition": "French: 'the flying horse' — mythical Pegasus"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss5",
+      "line": 10,
+      "phrase": "Pegasus",
+      "definition": "the winged horse of Greek myth, born from the blood of Medusa"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss6",
+      "line": 10,
+      "phrase": "qui a les narines de feu",
+      "definition": "French: 'which has nostrils of fire'"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss7",
+      "line": 11,
+      "phrase": "he trots the air",
+      "definition": "he trots through the sky"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss8",
+      "line": 13,
+      "phrase": "pipe of Hermes",
+      "definition": "the pipe Hermes used to charm Argus to sleep — Dauphin's mythological flattery of his horse"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss9",
+      "line": 14,
+      "phrase": "colour of the nutmeg",
+      "definition": "the tan-brown of a nutmeg"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss10",
+      "line": 15,
+      "phrase": "beast for Perseus",
+      "definition": "a mount fit for Perseus — the Greek hero who rode Pegasus"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss11",
+      "line": 16,
+      "phrase": "pure air and fire",
+      "definition": "composed only of the two lighter, nobler classical elements"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss12",
+      "line": 19,
+      "phrase": "jades",
+      "definition": "worn-out or ordinary horses"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss13",
+      "line": 21,
+      "phrase": "palfrey",
+      "definition": "a lady's riding horse — the Dauphin strangely feminizes his war-mount"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss14",
+      "line": 21,
+      "phrase": "bidding of a monarch",
+      "definition": "command of a king — the horse's whinny"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss15",
+      "line": 24,
+      "phrase": "rising of the lark to the lodging of the lamb",
+      "definition": "from dawn to night — 'lark' sings at sunrise, 'lamb' lies down at dusk"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss16",
+      "line": 31,
+      "phrase": "sonnet in his praise",
+      "definition": "the Dauphin wrote a love-sonnet to his horse — the joke's pivot"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss17",
+      "line": 33,
+      "phrase": "sonnet begin so to one’s mistress",
+      "definition": "the customary target of such verse — Orleans catches the Dauphin writing his horse as his lover"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss18",
+      "line": 35,
+      "phrase": "bears well",
+      "definition": "carries the rider well — Orleans picks up the double meaning: bears (tolerates) and bears (carries)"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss19",
+      "line": 37,
+      "phrase": "shrewdly shook your back",
+      "definition": "severely jarred your back — with crude double meaning about sexual activity"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss20",
+      "line": 38,
+      "phrase": "bridled",
+      "definition": "controlled — bawdy pun"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss21",
+      "line": 40,
+      "phrase": "kern of Ireland",
+      "definition": "an Irish light-armed foot-soldier, proverbially bare-legged"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss22",
+      "line": 40,
+      "phrase": "French hose off",
+      "definition": "without breeches — mocking the rider's undress"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss23",
+      "line": 40,
+      "phrase": "strait strossers",
+      "definition": "tight trousers/hose; here, nothing — 'strossers' = trousers"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss24",
+      "line": 45,
+      "phrase": "jade",
+      "definition": "a nag; also slang for a loose woman — Constable sustains the Dauphin's mistress/horse conceit in the crudest direction"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss25",
+      "line": 46,
+      "phrase": "wears his own hair",
+      "definition": "has her own hair (not a wig) — Dauphin's proud claim for his horse"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss26",
+      "line": 49,
+      "phrase": "Le chien est retourné à son propre vomissement",
+      "definition": "French: 'The dog is returned to his own vomit' — from 2 Peter 2:22 / Proverbs 26:11; the Dauphin quotes scripture to insult the Constable"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss27",
+      "line": 49,
+      "phrase": "la truie lavée au bourbier",
+      "definition": "French: 'the washed sow to the mire' — second half of the same biblical proverb"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss28",
+      "line": 54,
+      "phrase": "stars or suns",
+      "definition": "heraldic devices on the armour — the banter segues from horses to escutcheons"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss29",
+      "line": 58,
+      "phrase": "superfluously",
+      "definition": "more than necessary; extravagantly"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss30",
+      "line": 67,
+      "phrase": "fain be about the ears of the English",
+      "definition": "gladly be at grips with the English"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss31",
+      "line": 68,
+      "phrase": "hazard",
+      "definition": "dice-gambling — a popular Elizabethan game of chance"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss32",
+      "line": 70,
+      "phrase": "’Tis midnight",
+      "definition": "the hour before Agincourt; the French still boast while the English pray"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss33",
+      "line": 74,
+      "phrase": "Swear by her foot, that she may tread out the oath",
+      "definition": "Constable's indecent joke about the mistress's foot"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss34",
+      "line": 85,
+      "phrase": "hooded valour",
+      "definition": "courage kept hooded like a hawk — invisible until release, implied useless"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss35",
+      "line": 86,
+      "phrase": "bate",
+      "definition": "hawking term: a hawk 'bates' when it beats its wings; also 'diminish' — Constable's pun"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss36",
+      "line": 87,
+      "phrase": "flattery in friendship",
+      "definition": "Orleans's proverb; Constable caps it"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss37",
+      "line": 91,
+      "phrase": "fool’s bolt is soon shot",
+      "definition": "proverbial: a fool spends his wit quickly — fools have little ammunition"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss38",
+      "line": 99,
+      "phrase": "mope with his fat-brained followers",
+      "definition": "sulk among his dull-witted men"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss39",
+      "line": 101,
+      "phrase": "intellectual armour",
+      "definition": "mental armour — brains that would explain their thick helmets"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss40",
+      "line": 103,
+      "phrase": "mastiffs",
+      "definition": "English mastiff dogs, proverbially courageous — Rambures's back-handed compliment"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss41",
+      "line": 104,
+      "phrase": "Russian bear",
+      "definition": "proverbially fierce — the bear-baiting image, English mastiffs charging in"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss42",
+      "line": 108,
+      "phrase": "sympathize with the mastiffs",
+      "definition": "share the nature of mastiffs — English men like their dogs"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss43",
+      "line": 110,
+      "phrase": "meals of beef and iron and steel",
+      "definition": "beef and sword-steel — Elizabethan cliché of English diet and arms"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss44",
+      "line": 112,
+      "phrase": "shrewdly out of beef",
+      "definition": "severely short of beef — the English army is starving"
+    },
+    {
+      "id": "henry_v_act3_scene7_gloss45",
+      "line": 114,
+      "phrase": "come, shall we about it",
+      "definition": "let's get to arming — scene breaks toward battle"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act3_scene7_ann1",
+      "line_start": 1,
+      "line_end": 46,
+      "citation_display": "Henry V 3.7.1–46",
+      "category": "thematic",
+      "title": "The French nobles and their horses — the play's critique of aristocratic vanity",
+      "body": "The extended discussion of horses and armour among the French nobles the night before Agincourt is the play's sharpest piece of character-comedy. The Dauphin's description of his horse ('pure air and fire,' 'le cheval volant,' the Pegasus-comparison, 'my horse is my mistress') is over-refined to the point of absurdity. The Constable's needling about the Dauphin's sonnet-to-his-horse is a scholarly joke — sonnets are properly addressed to mistresses. The scene stages the French aristocracy as over-cultivated, effeminate (they prefer horses to women), and over-confident. This is not neutral characterization. Shakespeare is shaping the English self-image by contrast: the English are starving, dirty, and silent; the French are ornate, voluble, and dissipated. Historically, the French nobility at Agincourt were heavily armoured knights who were indeed beaten by English yeoman archers. The play translates that military reality into a cultural one. Virgil asks the modern reader to notice this: the comic French scenes are ideological work, not decoration. The culture being defeated is coded as feminine and aesthetic; the culture doing the defeating is coded as plain and masculine.",
+      "sources": [
+        "Lisa Jardine, Still Harping on Daughters (1983)",
+        "Janet Adelman, Suffocating Mothers (1992)",
+        "Graham Holderness, Shakespeare: The Histories (2000)"
+      ]
+    },
+    {
+      "id": "henry_v_act3_scene7_ann2",
+      "line_start": 95,
+      "line_end": 117,
+      "citation_display": "Henry V 3.7.95–117",
+      "category": "close_reading",
+      "title": "The mastiffs and the poor English army",
+      "body": "The French nobles' contempt for the English army is characterized with precision at the scene's close. Rambures compares the English to their 'mastiffs' — courageous but stupid dogs — and Orleans develops the simile: 'Foolish curs, that run winking into the mouth of a Russian bear / And have their heads crushed like rotten apples.' The Constable caps it: the English 'leave their wits with their wives, … give them great meals of beef and iron and steel, / They will eat like wolves and fight like devils.' Then the final deflation: 'Ay, but these English are shrewdly out of beef.' This is a clean dramatic irony. The audience knows the English have just been starved by the march; the French think they know the same and consider it the guarantee of victory. Tomorrow the army will win Agincourt. The scene is structured so that the French express their strategic assessment with perfect cultural snobbery and complete confidence, the audience hears it without commentary, and the play proceeds to falsify every word.",
+      "sources": [
+        "Emrys Jones, Scenic Form in Shakespeare (1971)",
+        "Andrew Gurr, The Shakespearean Stage (1992)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act3_scene7_q1",
+      "kind": "theme",
+      "prompt": "How does the play characterize the French nobles at 3.7?",
+      "options": [
+        "As sober military planners",
+        "As over-refined, voluble, effeminate — in love with their horses and armour, composing sonnets to their mounts; this is ideological work, not neutral comedy. The play is shaping the English self-image by cultural contrast",
+        "As honest peasants",
+        "As religious fanatics"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 1,
+      "anchor_line_end": 50
+    },
+    {
+      "id": "henry_v_act3_scene7_q2",
+      "kind": "close_reading",
+      "prompt": "What is the joke of the Constable's line 'I have heard a sonnet begin so to one's mistress' (line 33)?",
+      "options": [
+        "It is a misquotation",
+        "Sonnets are properly addressed to mistresses; the Dauphin has written one to his horse — the Constable is accusing him of treating his horse as a lover. The Dauphin then doubles down: 'my horse is my mistress'",
+        "Orleans doesn't understand sonnets",
+        "The sonnet is a recent invention in the play's timeline"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 33,
+      "anchor_line_end": 36
+    },
+    {
+      "id": "henry_v_act3_scene7_q3",
+      "kind": "inference",
+      "prompt": "What is the dramatic irony of the French nobles' confidence in 3.7?",
+      "options": [
+        "They don't know that Henry has already left for Calais",
+        "They correctly assess the English army as starving and reduced, but conclude from this (wrongly) that victory is guaranteed — the audience knows Agincourt is tomorrow and the English will win",
+        "They are fooled by a false peace offer",
+        "The French king has died in the night"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 95,
+      "anchor_line_end": 117
+    }
+  ]
+}

@@ -1,0 +1,1204 @@
+{
+  "section_id": "henry_v_act4_scene7",
+  "work_id": "henry-v",
+  "sequence": 24,
+  "act": 4,
+  "scene": 7,
+  "kind": "scene",
+  "scene_title": "Another part of the field",
+  "line_count": 161,
+  "word_count": 1487,
+  "est_read_minutes": 7,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "FLUELLEN",
+      "text": "Kill the poys and the luggage! ’tis expressly against the law of"
+    },
+    {
+      "number": 2,
+      "speaker": "FLUELLEN",
+      "text": "arms: ’tis as arrant a piece of knavery, mark you now, as"
+    },
+    {
+      "number": 3,
+      "speaker": "FLUELLEN",
+      "text": "can be offer’t; in your conscience, now, is it not?"
+    },
+    {
+      "number": 4,
+      "speaker": "GOWER",
+      "text": "’Tis certain there’s not a boy left alive; and the cowardly rascals"
+    },
+    {
+      "number": 5,
+      "speaker": "GOWER",
+      "text": "that ran from the battle ha’ done this slaughter: besides, they have"
+    },
+    {
+      "number": 6,
+      "speaker": "GOWER",
+      "text": "burned and carried away all that was in the king’s tent; wherefore"
+    },
+    {
+      "number": 7,
+      "speaker": "GOWER",
+      "text": "the king, most worthily, hath caused every soldier to cut his prisoner’s"
+    },
+    {
+      "number": 8,
+      "speaker": "GOWER",
+      "text": "throat. O, ’tis a gallant king!"
+    },
+    {
+      "number": 9,
+      "speaker": "FLUELLEN",
+      "text": "Ay, he was porn at Monmouth, Captain Gower. What call you the"
+    },
+    {
+      "number": 10,
+      "speaker": "FLUELLEN",
+      "text": "town’s name where Alexander the Pig was born!"
+    },
+    {
+      "number": 11,
+      "speaker": "GOWER",
+      "text": "Alexander the Great."
+    },
+    {
+      "number": 12,
+      "speaker": "FLUELLEN",
+      "text": "Why, I pray you, is not pig great? the pig, or the"
+    },
+    {
+      "number": 13,
+      "speaker": "FLUELLEN",
+      "text": "great, or the mighty, or the huge, or the magnanimous, are all"
+    },
+    {
+      "number": 14,
+      "speaker": "FLUELLEN",
+      "text": "one reckonings, save the phrase is a little variations."
+    },
+    {
+      "number": 15,
+      "speaker": "GOWER",
+      "text": "I think Alexander the Great was born in Macedon: his father was"
+    },
+    {
+      "number": 16,
+      "speaker": "GOWER",
+      "text": "called Philip of Macedon, as I take it."
+    },
+    {
+      "number": 17,
+      "speaker": "FLUELLEN",
+      "text": "I think it is in Macedon where Alexander is porn. I tell"
+    },
+    {
+      "number": 18,
+      "speaker": "FLUELLEN",
+      "text": "you, captain, if you look in the maps of the ’orld, I"
+    },
+    {
+      "number": 19,
+      "speaker": "FLUELLEN",
+      "text": "warrant you sall find, in the comparisons between Macedon and Monmouth, that"
+    },
+    {
+      "number": 20,
+      "speaker": "FLUELLEN",
+      "text": "the situations, look you, is both alike. There is a river in"
+    },
+    {
+      "number": 21,
+      "speaker": "FLUELLEN",
+      "text": "Macedon; and there is also moreover a river at Monmouth: it is"
+    },
+    {
+      "number": 22,
+      "speaker": "FLUELLEN",
+      "text": "called Wye at Monmouth; but it is out of my prains what"
+    },
+    {
+      "number": 23,
+      "speaker": "FLUELLEN",
+      "text": "is the name of the other river; but ’tis all one, ’tis"
+    },
+    {
+      "number": 24,
+      "speaker": "FLUELLEN",
+      "text": "alike as my fingers is to my fingers, and there is salmons"
+    },
+    {
+      "number": 25,
+      "speaker": "FLUELLEN",
+      "text": "in both. If you mark Alexander’s life well, Harry of Monmouth’s life"
+    },
+    {
+      "number": 26,
+      "speaker": "FLUELLEN",
+      "text": "is come after it indifferent well; for there is figures in all"
+    },
+    {
+      "number": 27,
+      "speaker": "FLUELLEN",
+      "text": "things. Alexander, God knows, and you know, in his rages, and his"
+    },
+    {
+      "number": 28,
+      "speaker": "FLUELLEN",
+      "text": "furies, and his wraths, and his cholers, and his moods, and his"
+    },
+    {
+      "number": 29,
+      "speaker": "FLUELLEN",
+      "text": "displeasures, and his indignations, and also being a little intoxicates in his"
+    },
+    {
+      "number": 30,
+      "speaker": "FLUELLEN",
+      "text": "prains, did, in his ales and his angers, look you, kill his"
+    },
+    {
+      "number": 31,
+      "speaker": "FLUELLEN",
+      "text": "best friend, Cleitus."
+    },
+    {
+      "number": 32,
+      "speaker": "GOWER",
+      "text": "Our king is not like him in that: he never killed any of his friends."
+    },
+    {
+      "number": 33,
+      "speaker": "FLUELLEN",
+      "text": "It is not well done, mark you now, to take the tales"
+    },
+    {
+      "number": 34,
+      "speaker": "FLUELLEN",
+      "text": "out of my mouth, ere it is made and finished. I speak"
+    },
+    {
+      "number": 35,
+      "speaker": "FLUELLEN",
+      "text": "but in the figures and comparisons of it: as Alexander killed his"
+    },
+    {
+      "number": 36,
+      "speaker": "FLUELLEN",
+      "text": "friend Cleitus, being in his ales and his cups; so also Harry"
+    },
+    {
+      "number": 37,
+      "speaker": "FLUELLEN",
+      "text": "Monmouth, being in his right wits and his good judgements, turned away"
+    },
+    {
+      "number": 38,
+      "speaker": "FLUELLEN",
+      "text": "the fat knight with the great belly doublet: he was full of"
+    },
+    {
+      "number": 39,
+      "speaker": "FLUELLEN",
+      "text": "jests, and gipes, and knaveries, and mocks; I have forgot his name."
+    },
+    {
+      "number": 40,
+      "speaker": "GOWER",
+      "text": "Sir John Falstaff."
+    },
+    {
+      "number": 41,
+      "speaker": "FLUELLEN",
+      "text": "That is he: I’ll tell you there is good men porn at Monmouth."
+    },
+    {
+      "number": 42,
+      "speaker": "GOWER",
+      "text": "Here comes his majesty."
+    },
+    {
+      "number": 43,
+      "speaker": "KING HENRY",
+      "text": "I was not angry since I came to France"
+    },
+    {
+      "number": 44,
+      "speaker": "KING HENRY",
+      "text": "Until this instant. Take a trumpet, herald;"
+    },
+    {
+      "number": 45,
+      "speaker": "KING HENRY",
+      "text": "Ride thou unto the horsemen on yond hill:"
+    },
+    {
+      "number": 46,
+      "speaker": "KING HENRY",
+      "text": "If they will fight with us, bid them come down,"
+    },
+    {
+      "number": 47,
+      "speaker": "KING HENRY",
+      "text": "Or void the field; they do offend our sight:"
+    },
+    {
+      "number": 48,
+      "speaker": "KING HENRY",
+      "text": "If they’ll do neither, we will come to them,"
+    },
+    {
+      "number": 49,
+      "speaker": "KING HENRY",
+      "text": "And make them skirr away, as swift as stones"
+    },
+    {
+      "number": 50,
+      "speaker": "KING HENRY",
+      "text": "Enforced from the old Assyrian slings:"
+    },
+    {
+      "number": 51,
+      "speaker": "KING HENRY",
+      "text": "Besides, we’ll cut the throats of those we have,"
+    },
+    {
+      "number": 52,
+      "speaker": "KING HENRY",
+      "text": "And not a man of them that we shall take"
+    },
+    {
+      "number": 53,
+      "speaker": "KING HENRY",
+      "text": "Shall taste our mercy. Go and tell them so."
+    },
+    {
+      "number": 54,
+      "speaker": "EXETER",
+      "text": "Here comes the herald of the French, my liege."
+    },
+    {
+      "number": 55,
+      "speaker": "GLOUCESTER",
+      "text": "His eyes are humbler than they used to be."
+    },
+    {
+      "number": 56,
+      "speaker": "KING HENRY",
+      "text": "How now! what means this, herald? know’st thou not"
+    },
+    {
+      "number": 57,
+      "speaker": "KING HENRY",
+      "text": "That I have fined these bones of mine for ransom?"
+    },
+    {
+      "number": 58,
+      "speaker": "KING HENRY",
+      "text": "Comest thou again for ransom?"
+    },
+    {
+      "number": 58,
+      "speaker": "MONTJOY",
+      "text": "No, great king:"
+    },
+    {
+      "number": 59,
+      "speaker": "MONTJOY",
+      "text": "I come to thee for charitable license,"
+    },
+    {
+      "number": 60,
+      "speaker": "MONTJOY",
+      "text": "That we may wander o’er this bloody field"
+    },
+    {
+      "number": 61,
+      "speaker": "MONTJOY",
+      "text": "To book our dead, and then to bury them;"
+    },
+    {
+      "number": 62,
+      "speaker": "MONTJOY",
+      "text": "To sort our nobles from our common men."
+    },
+    {
+      "number": 63,
+      "speaker": "MONTJOY",
+      "text": "For many of our princes—woe the while!—"
+    },
+    {
+      "number": 64,
+      "speaker": "MONTJOY",
+      "text": "Lie drown’d and soak’d in mercenary blood;"
+    },
+    {
+      "number": 65,
+      "speaker": "MONTJOY",
+      "text": "So do our vulgar drench their peasant limbs"
+    },
+    {
+      "number": 66,
+      "speaker": "MONTJOY",
+      "text": "In blood of princes; and their wounded steeds"
+    },
+    {
+      "number": 67,
+      "speaker": "MONTJOY",
+      "text": "Fret fetlock deep in gore and with wild rage"
+    },
+    {
+      "number": 68,
+      "speaker": "MONTJOY",
+      "text": "Yerk out their armed heels at their dead masters,"
+    },
+    {
+      "number": 69,
+      "speaker": "MONTJOY",
+      "text": "Killing them twice. O, give us leave, great king,"
+    },
+    {
+      "number": 70,
+      "speaker": "MONTJOY",
+      "text": "To view the field in safety and dispose"
+    },
+    {
+      "number": 71,
+      "speaker": "MONTJOY",
+      "text": "Of their dead bodies!"
+    },
+    {
+      "number": 71,
+      "speaker": "KING HENRY",
+      "text": "I tell thee truly, herald,"
+    },
+    {
+      "number": 72,
+      "speaker": "KING HENRY",
+      "text": "I know not if the day be ours or no;"
+    },
+    {
+      "number": 73,
+      "speaker": "KING HENRY",
+      "text": "For yet a many of your horsemen peer"
+    },
+    {
+      "number": 74,
+      "speaker": "KING HENRY",
+      "text": "And gallop o’er the field."
+    },
+    {
+      "number": 74,
+      "speaker": "MONTJOY",
+      "text": "The day is yours."
+    },
+    {
+      "number": 75,
+      "speaker": "KING HENRY",
+      "text": "Praised be God, and not our strength, for it!"
+    },
+    {
+      "number": 76,
+      "speaker": "KING HENRY",
+      "text": "What is this castle call’d that stands hard by?"
+    },
+    {
+      "number": 77,
+      "speaker": "MONTJOY",
+      "text": "They call it Agincourt."
+    },
+    {
+      "number": 78,
+      "speaker": "KING HENRY",
+      "text": "Then call we this the field of Agincourt."
+    },
+    {
+      "number": 79,
+      "speaker": "KING HENRY",
+      "text": "Fought on the day of Crispin Crispianus."
+    },
+    {
+      "number": 80,
+      "speaker": "FLUELLEN",
+      "text": "Your grandfather of famous memory, an’t please your majesty, and your great-uncle"
+    },
+    {
+      "number": 81,
+      "speaker": "FLUELLEN",
+      "text": "Edward the Plack Prince of Wales, as I have read in the"
+    },
+    {
+      "number": 82,
+      "speaker": "FLUELLEN",
+      "text": "chronicles, fought a most prave pattle here in France."
+    },
+    {
+      "number": 83,
+      "speaker": "KING HENRY",
+      "text": "They did, Fluellen."
+    },
+    {
+      "number": 84,
+      "speaker": "FLUELLEN",
+      "text": "Your majesty says very true: if your majesties is remembered of it,"
+    },
+    {
+      "number": 85,
+      "speaker": "FLUELLEN",
+      "text": "the Welshmen did good service in garden where leeks did grow, wearing"
+    },
+    {
+      "number": 86,
+      "speaker": "FLUELLEN",
+      "text": "leeks in their Monmouth caps; which, your majesty know, to this hour"
+    },
+    {
+      "number": 87,
+      "speaker": "FLUELLEN",
+      "text": "is an honourable badge of the service; and I do believe your"
+    },
+    {
+      "number": 88,
+      "speaker": "FLUELLEN",
+      "text": "majesty takes no scorn to wear the leek upon Saint Tavy’s day."
+    },
+    {
+      "number": 89,
+      "speaker": "KING HENRY",
+      "text": "I wear it for a memorable honour;"
+    },
+    {
+      "number": 90,
+      "speaker": "KING HENRY",
+      "text": "For I am Welsh, you know, good countryman."
+    },
+    {
+      "number": 91,
+      "speaker": "FLUELLEN",
+      "text": "All the water in Wye cannot wash your majesty’s Welsh plood out"
+    },
+    {
+      "number": 92,
+      "speaker": "FLUELLEN",
+      "text": "of your pody, I can tell you that: Got pless it and"
+    },
+    {
+      "number": 93,
+      "speaker": "FLUELLEN",
+      "text": "preserve it, as long as it pleases his grace, and his majesty"
+    },
+    {
+      "number": 94,
+      "speaker": "FLUELLEN",
+      "text": "too!"
+    },
+    {
+      "number": 94,
+      "speaker": "KING HENRY",
+      "text": "Thanks, good my countryman."
+    },
+    {
+      "number": 95,
+      "speaker": "FLUELLEN",
+      "text": "By Jeshu, I am your majesty’s countryman, I care not who know"
+    },
+    {
+      "number": 96,
+      "speaker": "FLUELLEN",
+      "text": "it; I will confess it to all the ’orld: I need not"
+    },
+    {
+      "number": 97,
+      "speaker": "FLUELLEN",
+      "text": "be ashamed of your majesty, praised be God, so long as your"
+    },
+    {
+      "number": 98,
+      "speaker": "FLUELLEN",
+      "text": "majesty is an honest man."
+    },
+    {
+      "number": 99,
+      "speaker": "KING HENRY",
+      "text": "God keep me so! Our heralds go with him:"
+    },
+    {
+      "number": 100,
+      "speaker": "KING HENRY",
+      "text": "Bring me just notice of the numbers dead"
+    },
+    {
+      "number": 101,
+      "speaker": "KING HENRY",
+      "text": "On both our parts. Call yonder fellow hither."
+    },
+    {
+      "number": 102,
+      "speaker": "EXETER",
+      "text": "Soldier, you must come to the king."
+    },
+    {
+      "number": 103,
+      "speaker": "KING HENRY",
+      "text": "Soldier, why wearest thou that glove in thy cap?"
+    },
+    {
+      "number": 104,
+      "speaker": "WILLIAMS",
+      "text": "An’t please your majesty, ’tis the gage of one that I should"
+    },
+    {
+      "number": 105,
+      "speaker": "WILLIAMS",
+      "text": "fight withal, if he be alive."
+    },
+    {
+      "number": 105,
+      "speaker": "KING HENRY",
+      "text": "An Englishman?"
+    },
+    {
+      "number": 106,
+      "speaker": "WILLIAMS",
+      "text": "An’t please your majesty, a rascal that swaggered with me last night;"
+    },
+    {
+      "number": 107,
+      "speaker": "WILLIAMS",
+      "text": "who, if alive and ever dare to challenge this glove, I have"
+    },
+    {
+      "number": 108,
+      "speaker": "WILLIAMS",
+      "text": "sworn to take him a box o’ th’ ear: or if I"
+    },
+    {
+      "number": 109,
+      "speaker": "WILLIAMS",
+      "text": "can see my glove in his cap, which he swore, as he"
+    },
+    {
+      "number": 110,
+      "speaker": "WILLIAMS",
+      "text": "was a soldier, he would wear if alive, I will strike it"
+    },
+    {
+      "number": 111,
+      "speaker": "WILLIAMS",
+      "text": "out soundly."
+    },
+    {
+      "number": 112,
+      "speaker": "KING HENRY",
+      "text": "What think you, Captain Fluellen? is it fit this soldier keep his oath?"
+    },
+    {
+      "number": 113,
+      "speaker": "FLUELLEN",
+      "text": "He is a craven and a villain else, an’t please your majesty, in my conscience."
+    },
+    {
+      "number": 114,
+      "speaker": "KING HENRY",
+      "text": "It may be his enemy is a gentlemen of great sort, quite"
+    },
+    {
+      "number": 115,
+      "speaker": "KING HENRY",
+      "text": "from the answer of his degree."
+    },
+    {
+      "number": 116,
+      "speaker": "FLUELLEN",
+      "text": "Though he be as good a gentleman as the devil is, as"
+    },
+    {
+      "number": 117,
+      "speaker": "FLUELLEN",
+      "text": "Lucifier and Belzebub himself, it is necessary, look your grace, that he"
+    },
+    {
+      "number": 118,
+      "speaker": "FLUELLEN",
+      "text": "keep his vow and his oath: if he be perjured, see you"
+    },
+    {
+      "number": 119,
+      "speaker": "FLUELLEN",
+      "text": "now, his reputation is as arrant a villain and a Jacksauce, as"
+    },
+    {
+      "number": 120,
+      "speaker": "FLUELLEN",
+      "text": "ever his black shoe trod upon God’s ground and his earth, in"
+    },
+    {
+      "number": 121,
+      "speaker": "FLUELLEN",
+      "text": "my conscience, la!"
+    },
+    {
+      "number": 122,
+      "speaker": "KING HENRY",
+      "text": "Then keep thy vow, sirrah, when thou meetest the fellow."
+    },
+    {
+      "number": 123,
+      "speaker": "WILLIAMS",
+      "text": "So I will, my liege, as I live."
+    },
+    {
+      "number": 124,
+      "speaker": "KING HENRY",
+      "text": "Who servest thou under?"
+    },
+    {
+      "number": 124,
+      "speaker": "WILLIAMS",
+      "text": "Under Captain Gower, my liege."
+    },
+    {
+      "number": 125,
+      "speaker": "FLUELLEN",
+      "text": "Gower is a good captain, and is good knowledge and literatured in the wars."
+    },
+    {
+      "number": 126,
+      "speaker": "KING HENRY",
+      "text": "Call him hither to me, soldier."
+    },
+    {
+      "number": 126,
+      "speaker": "WILLIAMS",
+      "text": "I will, my liege."
+    },
+    {
+      "number": 127,
+      "speaker": "KING HENRY",
+      "text": "Here, Fluellen; wear thou this favour for me and stick it in"
+    },
+    {
+      "number": 128,
+      "speaker": "KING HENRY",
+      "text": "thy cap: when Alençon and myself were down together, I plucked this"
+    },
+    {
+      "number": 129,
+      "speaker": "KING HENRY",
+      "text": "glove from his helm: if any man challenge this, he is a"
+    },
+    {
+      "number": 130,
+      "speaker": "KING HENRY",
+      "text": "friend to Alençon, and an enemy to our person; if thou encounter"
+    },
+    {
+      "number": 131,
+      "speaker": "KING HENRY",
+      "text": "any such, apprehend him, an thou dost me love."
+    },
+    {
+      "number": 132,
+      "speaker": "FLUELLEN",
+      "text": "Your grace doo’s me as great honours as can be desired in"
+    },
+    {
+      "number": 133,
+      "speaker": "FLUELLEN",
+      "text": "the hearts of his subjects: I would fain see the man, that"
+    },
+    {
+      "number": 134,
+      "speaker": "FLUELLEN",
+      "text": "has but two legs, that shall find himself aggriefed at this glove;"
+    },
+    {
+      "number": 135,
+      "speaker": "FLUELLEN",
+      "text": "that is all; but I would fain see it once, an please"
+    },
+    {
+      "number": 136,
+      "speaker": "FLUELLEN",
+      "text": "God of his grace that I might see."
+    },
+    {
+      "number": 137,
+      "speaker": "KING HENRY",
+      "text": "Knowest thou Gower?"
+    },
+    {
+      "number": 138,
+      "speaker": "FLUELLEN",
+      "text": "He is my dear friend, an please you."
+    },
+    {
+      "number": 139,
+      "speaker": "KING HENRY",
+      "text": "Pray thee, go seek him, and bring him to my tent."
+    },
+    {
+      "number": 140,
+      "speaker": "FLUELLEN",
+      "text": "I will fetch him."
+    },
+    {
+      "number": 141,
+      "speaker": "KING HENRY",
+      "text": "My Lord of Warwick, and my brother Gloucester,"
+    },
+    {
+      "number": 142,
+      "speaker": "KING HENRY",
+      "text": "Follow Fluellen closely at the heels:"
+    },
+    {
+      "number": 143,
+      "speaker": "KING HENRY",
+      "text": "The glove which I have given him for a favour"
+    },
+    {
+      "number": 144,
+      "speaker": "KING HENRY",
+      "text": "May haply purchase him a box o’ th’ ear;"
+    },
+    {
+      "number": 145,
+      "speaker": "KING HENRY",
+      "text": "It is the soldier’s; I by bargain should"
+    },
+    {
+      "number": 146,
+      "speaker": "KING HENRY",
+      "text": "Wear it myself. Follow, good cousin Warwick:"
+    },
+    {
+      "number": 147,
+      "speaker": "KING HENRY",
+      "text": "If that the soldier strike him, as I judge"
+    },
+    {
+      "number": 148,
+      "speaker": "KING HENRY",
+      "text": "By his blunt bearing he will keep his word,"
+    },
+    {
+      "number": 149,
+      "speaker": "KING HENRY",
+      "text": "Some sudden mischief may arise of it;"
+    },
+    {
+      "number": 150,
+      "speaker": "KING HENRY",
+      "text": "For I do know Fluellen valiant"
+    },
+    {
+      "number": 151,
+      "speaker": "KING HENRY",
+      "text": "And, touch’d with choler, hot as gunpowder,"
+    },
+    {
+      "number": 152,
+      "speaker": "KING HENRY",
+      "text": "And quickly will return an injury:"
+    },
+    {
+      "number": 153,
+      "speaker": "KING HENRY",
+      "text": "Follow, and see there be no harm between them."
+    },
+    {
+      "number": 154,
+      "speaker": "KING HENRY",
+      "text": "Go you with me, uncle of Exeter."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Fluellen and Gower."
+    },
+    {
+      "after_line": 42,
+      "text": "Alarum. Enter King Henry and forces; Warwick, Gloucester, Exeter, and others."
+    },
+    {
+      "after_line": 53,
+      "text": "Enter Montjoy."
+    },
+    {
+      "after_line": 101,
+      "text": "Points to Williams. Exeunt Heralds with Montjoy."
+    },
+    {
+      "after_line": 126,
+      "text": "Exit."
+    },
+    {
+      "after_line": 140,
+      "text": "Exit."
+    },
+    {
+      "after_line": 154,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act4_scene7_gloss1",
+      "line": 1,
+      "phrase": "Kill the poys and the luggage",
+      "definition": "'kill the boys and the [plunder the] luggage' — Fluellen reports the French raid on the English camp, the crime that (in the play's chronology) provides cover for Henry's order to kill prisoners"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss2",
+      "line": 1,
+      "phrase": "law of arms",
+      "definition": "the accepted rules of war — killing non-combatant boys violated the chivalric code"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss3",
+      "line": 7,
+      "phrase": "cut his prisoner’s throat",
+      "definition": "Gower's interpretation of Henry's order — retaliation for the French killing the camp-boys. The play hedges the timing"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss4",
+      "line": 9,
+      "phrase": "porn at Monmouth",
+      "definition": "born at Monmouth (Welsh pronunciation) — Henry's birthplace, in Wales"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss5",
+      "line": 10,
+      "phrase": "Alexander the Pig",
+      "definition": "Fluellen's blunder for 'Alexander the Big' — he means 'great' but the Welsh word 'pig' slips in; the error becomes the scene's joke"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss6",
+      "line": 11,
+      "phrase": "Alexander the Great",
+      "definition": "Alexander III of Macedon — classical conqueror; Fluellen's chosen parallel to Henry"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss7",
+      "line": 15,
+      "phrase": "born in Macedon",
+      "definition": "the Macedonian capital — Gower's correct version"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss8",
+      "line": 16,
+      "phrase": "Philip of Macedon",
+      "definition": "Philip II — Alexander's father"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss9",
+      "line": 20,
+      "phrase": "river in Macedon",
+      "definition": "Fluellen's parallel of Monmouth's River Wye with an unnamed Macedonian river"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss10",
+      "line": 22,
+      "phrase": "Wye",
+      "definition": "the river at Monmouth — a real Welsh river"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss11",
+      "line": 26,
+      "phrase": "figures in all things",
+      "definition": "typological parallels in everything — Fluellen's Renaissance rhetoric of correspondences"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss12",
+      "line": 31,
+      "phrase": "Cleitus",
+      "definition": "Alexander's friend and general, killed by Alexander in a drunken rage (328 BCE) — a notorious ancient example of tyrant-error"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss13",
+      "line": 38,
+      "phrase": "fat knight with the great belly doublet",
+      "definition": "Sir John Falstaff — Fluellen's parallel: as Alexander killed Cleitus drunk, Henry 'turned away' Falstaff sober. The rejection at the end of Henry IV Part 2"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss14",
+      "line": 40,
+      "phrase": "Sir John Falstaff",
+      "definition": "the plump companion of Henry's wild youth, rejected at Henry's coronation; his death was reported in 2.3"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss15",
+      "line": 49,
+      "phrase": "skirr away",
+      "definition": "flee swiftly; scatter"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss16",
+      "line": 50,
+      "phrase": "Assyrian slings",
+      "definition": "the slings of ancient Assyrian warriors — proverbial for speed and force"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss17",
+      "line": 51,
+      "phrase": "cut the throats of those we have",
+      "definition": "Henry renews the threat to kill prisoners — note the double mention; the play makes this choice unavoidable"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss18",
+      "line": 57,
+      "phrase": "fined these bones of mine for ransom",
+      "definition": "paid my ransom with my own bones — Henry's pledge to die on the field, not be ransomed"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss19",
+      "line": 59,
+      "phrase": "charitable license",
+      "definition": "Montjoy asks permission to bury the French dead — the battle is over"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss20",
+      "line": 61,
+      "phrase": "book our dead",
+      "definition": "register our dead (in a book)"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss21",
+      "line": 62,
+      "phrase": "sort our nobles from our common men",
+      "definition": "separate the nobles from the common dead for different burials — rank held even in death"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss22",
+      "line": 64,
+      "phrase": "mercenary blood",
+      "definition": "the blood of hirelings — a French nobleman has been killed beside commoners"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss23",
+      "line": 67,
+      "phrase": "fetlock deep in gore",
+      "definition": "horses' ankles submerged in blood"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss24",
+      "line": 68,
+      "phrase": "Yerk out their armed heels",
+      "definition": "kick out with their shod hooves"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss25",
+      "line": 69,
+      "phrase": "Killing them twice",
+      "definition": "the horses trample their own fallen masters — killing what is already dead"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss26",
+      "line": 76,
+      "phrase": "What is this castle call’d",
+      "definition": "Henry asks the name of the nearest castle — the question that gives the battle its name"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss27",
+      "line": 77,
+      "phrase": "Agincourt",
+      "definition": "Azincourt — a small village near the battlefield; Henry names the battle on the spot"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss28",
+      "line": 79,
+      "phrase": "Crispin Crispianus",
+      "definition": "the two Crispin saints (see 4.3) — Henry formally consecrates the day to them"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss29",
+      "line": 81,
+      "phrase": "Plack Prince of Wales",
+      "definition": "Black Prince of Wales (Fluellen's Welsh pronunciation) — Edward III's son, hero of Crécy"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss30",
+      "line": 85,
+      "phrase": "garden where leeks did grow",
+      "definition": "legendary Welsh battlefield where Welsh soldiers wore leeks to identify each other — the origin of the Welsh leek-badge"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss31",
+      "line": 86,
+      "phrase": "Monmouth caps",
+      "definition": "knitted woollen caps traditionally made at Monmouth — worn by Welsh soldiers"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss32",
+      "line": 88,
+      "phrase": "Saint Tavy’s day",
+      "definition": "St. David's Day, March 1 — Welsh national day (Fluellen's pronunciation of 'Davy')"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss33",
+      "line": 90,
+      "phrase": "I am Welsh",
+      "definition": "Henry's affirmation — he was born at Monmouth and is proud of his Welsh blood"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss34",
+      "line": 91,
+      "phrase": "water in Wye",
+      "definition": "the River Wye — cannot wash out his Welshness"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss35",
+      "line": 92,
+      "phrase": "Got pless it",
+      "definition": "'God bless it' in Fluellen's Welsh accent"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss36",
+      "line": 95,
+      "phrase": "By Jeshu",
+      "definition": "by Jesus (Fluellen's Welsh oath)"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss37",
+      "line": 104,
+      "phrase": "gage",
+      "definition": "pledge/glove from Williams; Henry re-opens the 4.1 plot"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss38",
+      "line": 108,
+      "phrase": "box o’ th’ ear",
+      "definition": "a slap on the ear (Williams's promised retribution)"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss39",
+      "line": 115,
+      "phrase": "from the answer of his degree",
+      "definition": "socially too high to be challenged by a commoner"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss40",
+      "line": 117,
+      "phrase": "Lucifier and Belzebub",
+      "definition": "Lucifer and Beelzebub — chief devils; Fluellen's rhetorical flourish"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss41",
+      "line": 119,
+      "phrase": "Jacksauce",
+      "definition": "impudent fellow — 'Jack' + 'sauce'"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss42",
+      "line": 128,
+      "phrase": "when Alençon and myself were down together",
+      "definition": "Henry had been in single combat with the Duke of Alençon — historically attested; Alençon died"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss43",
+      "line": 134,
+      "phrase": "aggriefed",
+      "definition": "aggrieved, in Fluellen's accent"
+    },
+    {
+      "id": "henry_v_act4_scene7_gloss44",
+      "line": 151,
+      "phrase": "hot as gunpowder",
+      "definition": "Fluellen's quick temper — sets up the 4.8 payoff"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act4_scene7_ann1",
+      "line_start": 1,
+      "line_end": 8,
+      "citation_display": "Henry V 4.7.1–8",
+      "category": "structural",
+      "title": "The French raid on the boys — retroactive justification",
+      "body": "Fluellen's opening lines announce that the French have raided the English baggage camp and killed 'the poys' (the boys, in Welsh pronunciation). Gower's immediate interpretive move is to connect this atrocity to Henry's prisoner-killing order of the previous scene: 'the king, most worthily, hath caused every soldier to cut his prisoner's throat. O, 'tis a gallant king!' But the textual chronology is reversed. In the play's spoken sequence, Henry gave the order BEFORE the raid on the boys was reported. Gower is retroactively supplying a just-war justification that the moment of the order did not provide. The play keeps both framings visible. A reader can, with Gower, read the prisoner-killing as legitimate retaliation; a reader can, with the blunt text of 4.6, read it as a tactical decision with independent justification. The scene's structural honesty is that it supplies Gower's reading as reading, not as fact.",
+      "sources": [
+        "Rabkin, 'Either/Or' (1981)",
+        "Anne Curry, Agincourt: A New History (2005)"
+      ]
+    },
+    {
+      "id": "henry_v_act4_scene7_ann2",
+      "line_start": 9,
+      "line_end": 41,
+      "citation_display": "Henry V 4.7.9–41",
+      "category": "close_reading",
+      "title": "Alexander the Pig — the play's shrewdest parallel",
+      "body": "Fluellen's comparison of Henry to Alexander the Great is one of the play's most quietly consequential passages. The comedy is Welsh-dialect: 'Alexander the Pig' (for 'Big'), rivers in Macedon and Monmouth, 'salmons in both.' But the parallel Fluellen draws is dangerous. He reminds Gower that Alexander, 'in his rages, and his furies,' killed his best friend Cleitus. Gower objects: Our king is not like Alexander in that; Henry never killed any of his friends. Fluellen corrects him: 'as Alexander killed his friend Cleitus, being in his ales and his cups; so also Harry Monmouth, being in his right wits and his good judgements, turned away the fat knight with the great belly doublet.' The fat knight is Falstaff. Fluellen is saying: Alexander-drunk killed Cleitus; Henry-sober rejected Falstaff; the parallel holds. This is the play's clearest acknowledgement that Henry's rejection of Falstaff was a moral action of the same order as Alexander's murder of his friend. A Welshman in a military camp, in dialect-inflected comic cadence, delivers what is arguably the most damning critical observation the play ventures about Henry.",
+      "sources": [
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)",
+        "Stephen Greenblatt, 'Invisible Bullets' (1985)",
+        "A. C. Bradley, 'The Rejection of Falstaff' (1902)"
+      ]
+    },
+    {
+      "id": "henry_v_act4_scene7_ann3",
+      "line_start": 77,
+      "line_end": 102,
+      "citation_display": "Henry V 4.7.77–102",
+      "category": "thematic",
+      "title": "'We call it Agincourt' — naming the victory",
+      "body": "When Montjoy returns with no more ransom-request but a plea for permission to bury the French dead, Henry asks the name of the nearest castle. Montjoy answers: 'Agincourt.' Henry immediately christens the battle: 'Then call we this the field of Agincourt, / Fought on the day of Crispin Crispianus.' The act of naming is the victory's first rhetorical monument. The place-name is not yet a battle-name; Henry makes it one. Then follows the Welsh-leek exchange with Fluellen — 'I am Welsh, you know, good countryman' — in which Henry publicly affirms his Welshness (he was born at Monmouth) and binds himself to the Welsh soldiery whose longbows had carried the day. This is Henry at his rhetorical best: naming the victory, crediting God, binding the army. It is also the moment the play's highest civic music sounds. The play does not deflate it here; the Epilogue will.",
+      "sources": [
+        "Peter Saccio, Shakespeare's English Kings (2nd ed., 2000)",
+        "Gwyn A. Williams, When Was Wales? (1985)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act4_scene7_q1",
+      "kind": "structural",
+      "prompt": "What is the structural problem with Gower's interpretation at 4.7 lines 4–8?",
+      "options": [
+        "It is false historically",
+        "Gower retroactively interprets Henry's prisoner-killing order as retaliation for the French raid on the boys — but in the text Henry gave the order BEFORE the raid was reported. The play keeps both framings visible, neither adjudicated",
+        "Gower is lying",
+        "Fluellen contradicts it immediately"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 4,
+      "anchor_line_end": 8
+    },
+    {
+      "id": "henry_v_act4_scene7_q2",
+      "kind": "close_reading",
+      "prompt": "What parallel does Fluellen draw between Henry and Alexander the Great?",
+      "options": [
+        "Both were born in Macedon",
+        "Alexander drunk killed his friend Cleitus; Henry sober rejected Falstaff — the parallel suggests the rejection was a moral action of the same kind. Delivered in Welsh-accented dialect, this is one of the play's most damning critical observations about its king",
+        "Both conquered India",
+        "Both died at age 35"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 35,
+      "anchor_line_start": 25,
+      "anchor_line_end": 41
+    },
+    {
+      "id": "henry_v_act4_scene7_q3",
+      "kind": "theme",
+      "prompt": "Why does Henry's exchange with Fluellen about the leek matter (lines 85–98)?",
+      "options": [
+        "It's a lunch break",
+        "It publicly affirms Henry's Welshness (he was born at Monmouth) and binds him to the Welsh soldiery whose longbow archers won the battle — a rhetorical moment of unity after naming the victory 'Agincourt'",
+        "It prepares the wooing scene",
+        "It introduces Macmorris"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 85,
+      "anchor_line_end": 98
+    }
+  ]
+}

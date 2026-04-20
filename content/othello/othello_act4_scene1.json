@@ -1,0 +1,1911 @@
+{
+  "section_id": "othello_act4_scene1",
+  "work_id": "othello",
+  "sequence": 11,
+  "act": 4,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "Cyprus. Before the castle",
+  "line_count": 294,
+  "word_count": 2107,
+  "est_read_minutes": 11,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "IAGO",
+      "text": "Will you think so?"
+    },
+    {
+      "number": 1,
+      "speaker": "OTHELLO",
+      "text": "Think so, Iago!"
+    },
+    {
+      "number": 2,
+      "speaker": "IAGO",
+      "text": "What,"
+    },
+    {
+      "number": 3,
+      "speaker": "IAGO",
+      "text": "To kiss in private?"
+    },
+    {
+      "number": 3,
+      "speaker": "OTHELLO",
+      "text": "An unauthorized kiss."
+    },
+    {
+      "number": 4,
+      "speaker": "IAGO",
+      "text": "Or to be naked with her friend in bed"
+    },
+    {
+      "number": 5,
+      "speaker": "IAGO",
+      "text": "An hour or more, not meaning any harm?"
+    },
+    {
+      "number": 6,
+      "speaker": "OTHELLO",
+      "text": "Naked in bed, Iago, and not mean harm!"
+    },
+    {
+      "number": 7,
+      "speaker": "OTHELLO",
+      "text": "It is hypocrisy against the devil:"
+    },
+    {
+      "number": 8,
+      "speaker": "OTHELLO",
+      "text": "They that mean virtuously, and yet do so,"
+    },
+    {
+      "number": 9,
+      "speaker": "OTHELLO",
+      "text": "The devil their virtue tempts, and they tempt heaven."
+    },
+    {
+      "number": 10,
+      "speaker": "IAGO",
+      "text": "So they do nothing, ’tis a venial slip:"
+    },
+    {
+      "number": 11,
+      "speaker": "IAGO",
+      "text": "But if I give my wife a handkerchief—"
+    },
+    {
+      "number": 12,
+      "speaker": "OTHELLO",
+      "text": "What then?"
+    },
+    {
+      "number": 13,
+      "speaker": "IAGO",
+      "text": "Why, then, ’tis hers, my lord; and, being hers,"
+    },
+    {
+      "number": 14,
+      "speaker": "IAGO",
+      "text": "She may, I think, bestow’t on any man."
+    },
+    {
+      "number": 15,
+      "speaker": "OTHELLO",
+      "text": "She is protectress of her honour too:"
+    },
+    {
+      "number": 16,
+      "speaker": "OTHELLO",
+      "text": "May she give that?"
+    },
+    {
+      "number": 17,
+      "speaker": "IAGO",
+      "text": "Her honour is an essence that’s not seen;"
+    },
+    {
+      "number": 18,
+      "speaker": "IAGO",
+      "text": "They have it very oft that have it not:"
+    },
+    {
+      "number": 19,
+      "speaker": "IAGO",
+      "text": "But, for the handkerchief—"
+    },
+    {
+      "number": 20,
+      "speaker": "OTHELLO",
+      "text": "By heaven, I would most gladly have forgot it."
+    },
+    {
+      "number": 21,
+      "speaker": "OTHELLO",
+      "text": "Thou said’st, it comes o’er my memory,"
+    },
+    {
+      "number": 22,
+      "speaker": "OTHELLO",
+      "text": "As doth the raven o’er the infected house,"
+    },
+    {
+      "number": 23,
+      "speaker": "OTHELLO",
+      "text": "Boding to all—he had my handkerchief."
+    },
+    {
+      "number": 23,
+      "speaker": "IAGO",
+      "text": "Ay, what of that?"
+    },
+    {
+      "number": 24,
+      "speaker": "OTHELLO",
+      "text": "That’s not so good now."
+    },
+    {
+      "number": 24,
+      "speaker": "IAGO",
+      "text": "What,"
+    },
+    {
+      "number": 25,
+      "speaker": "IAGO",
+      "text": "If I had said I had seen him do you wrong?"
+    },
+    {
+      "number": 26,
+      "speaker": "IAGO",
+      "text": "Or heard him say—as knaves be such abroad,"
+    },
+    {
+      "number": 27,
+      "speaker": "IAGO",
+      "text": "Who having, by their own importunate suit,"
+    },
+    {
+      "number": 28,
+      "speaker": "IAGO",
+      "text": "Or voluntary dotage of some mistress,"
+    },
+    {
+      "number": 29,
+      "speaker": "IAGO",
+      "text": "Convinced or supplied them, cannot choose"
+    },
+    {
+      "number": 30,
+      "speaker": "IAGO",
+      "text": "But they must blab—"
+    },
+    {
+      "number": 30,
+      "speaker": "OTHELLO",
+      "text": "Hath he said any thing?"
+    },
+    {
+      "number": 31,
+      "speaker": "IAGO",
+      "text": "He hath, my lord; but be you well assured,"
+    },
+    {
+      "number": 32,
+      "speaker": "IAGO",
+      "text": "No more than he’ll unswear."
+    },
+    {
+      "number": 32,
+      "speaker": "OTHELLO",
+      "text": "What hath he said?"
+    },
+    {
+      "number": 33,
+      "speaker": "IAGO",
+      "text": "’Faith, that he did—I know not what he did."
+    },
+    {
+      "number": 34,
+      "speaker": "OTHELLO",
+      "text": "What? what?"
+    },
+    {
+      "number": 34,
+      "speaker": "IAGO",
+      "text": "Lie—"
+    },
+    {
+      "number": 35,
+      "speaker": "OTHELLO",
+      "text": "With her?"
+    },
+    {
+      "number": 36,
+      "speaker": "IAGO",
+      "text": "With her, on her; what you will."
+    },
+    {
+      "number": 37,
+      "speaker": "OTHELLO",
+      "text": "Lie with her! lie on her! We say lie on her, when"
+    },
+    {
+      "number": 38,
+      "speaker": "OTHELLO",
+      "text": "they belie her. Lie with her! that’s fulsome."
+    },
+    {
+      "number": 39,
+      "speaker": "OTHELLO",
+      "text": "—Handkerchief—confessions—handkerchief!—To"
+    },
+    {
+      "number": 40,
+      "speaker": "OTHELLO",
+      "text": "confess, and be hanged for his labour;—first, to be"
+    },
+    {
+      "number": 41,
+      "speaker": "OTHELLO",
+      "text": "hanged, and then to confess.—I tremble at it."
+    },
+    {
+      "number": 42,
+      "speaker": "OTHELLO",
+      "text": "Nature would not invest herself in such shadowing"
+    },
+    {
+      "number": 43,
+      "speaker": "OTHELLO",
+      "text": "passion without some instruction. It is not words"
+    },
+    {
+      "number": 44,
+      "speaker": "OTHELLO",
+      "text": "that shake me thus. Pish! Noses, ears, and lips."
+    },
+    {
+      "number": 45,
+      "speaker": "OTHELLO",
+      "text": "—Is’t possible?—Confess—handkerchief!—O devil!—"
+    },
+    {
+      "number": 45,
+      "speaker": "IAGO",
+      "text": "Work on,"
+    },
+    {
+      "number": 46,
+      "speaker": "IAGO",
+      "text": "My medicine, work! Thus credulous fools are caught;"
+    },
+    {
+      "number": 47,
+      "speaker": "IAGO",
+      "text": "And many worthy and chaste dames even thus,"
+    },
+    {
+      "number": 48,
+      "speaker": "IAGO",
+      "text": "All guiltless, meet reproach. What, ho! my lord!"
+    },
+    {
+      "number": 49,
+      "speaker": "IAGO",
+      "text": "My lord, I say! Othello!"
+    },
+    {
+      "number": 49,
+      "speaker": "CASSIO",
+      "text": "What’s the matter?"
+    },
+    {
+      "number": 50,
+      "speaker": "IAGO",
+      "text": "My lord is fall’n into an epilepsy:"
+    },
+    {
+      "number": 51,
+      "speaker": "IAGO",
+      "text": "This is his second fit; he had one yesterday."
+    },
+    {
+      "number": 52,
+      "speaker": "CASSIO",
+      "text": "Rub him about the temples."
+    },
+    {
+      "number": 52,
+      "speaker": "IAGO",
+      "text": "No, forbear;"
+    },
+    {
+      "number": 53,
+      "speaker": "IAGO",
+      "text": "The lethargy must have his quiet course:"
+    },
+    {
+      "number": 54,
+      "speaker": "IAGO",
+      "text": "If not, he foams at mouth and by and by"
+    },
+    {
+      "number": 55,
+      "speaker": "IAGO",
+      "text": "Breaks out to savage madness. Look he stirs:"
+    },
+    {
+      "number": 56,
+      "speaker": "IAGO",
+      "text": "Do you withdraw yourself a little while,"
+    },
+    {
+      "number": 57,
+      "speaker": "IAGO",
+      "text": "He will recover straight: when he is gone,"
+    },
+    {
+      "number": 58,
+      "speaker": "IAGO",
+      "text": "I would on great occasion speak with you."
+    },
+    {
+      "number": 59,
+      "speaker": "IAGO",
+      "text": "How is it, general? have you not hurt your head?"
+    },
+    {
+      "number": 60,
+      "speaker": "OTHELLO",
+      "text": "Dost thou mock me?"
+    },
+    {
+      "number": 60,
+      "speaker": "IAGO",
+      "text": "I mock you! no, by heaven."
+    },
+    {
+      "number": 61,
+      "speaker": "IAGO",
+      "text": "Would you would bear your fortune like a man!"
+    },
+    {
+      "number": 62,
+      "speaker": "OTHELLO",
+      "text": "A horned man’s a monster and a beast."
+    },
+    {
+      "number": 63,
+      "speaker": "IAGO",
+      "text": "There’s many a beast then in a populous city,"
+    },
+    {
+      "number": 64,
+      "speaker": "IAGO",
+      "text": "And many a civil monster."
+    },
+    {
+      "number": 64,
+      "speaker": "OTHELLO",
+      "text": "Did he confess it?"
+    },
+    {
+      "number": 65,
+      "speaker": "IAGO",
+      "text": "Good sir, be a man;"
+    },
+    {
+      "number": 66,
+      "speaker": "IAGO",
+      "text": "Think every bearded fellow that’s but yoked"
+    },
+    {
+      "number": 67,
+      "speaker": "IAGO",
+      "text": "May draw with you: there’s millions now alive"
+    },
+    {
+      "number": 68,
+      "speaker": "IAGO",
+      "text": "That nightly lie in those unproper beds"
+    },
+    {
+      "number": 69,
+      "speaker": "IAGO",
+      "text": "Which they dare swear peculiar: your case is better."
+    },
+    {
+      "number": 70,
+      "speaker": "IAGO",
+      "text": "O, ’tis the spite of hell, the fiend’s arch-mock,"
+    },
+    {
+      "number": 71,
+      "speaker": "IAGO",
+      "text": "To lip a wanton in a secure couch,"
+    },
+    {
+      "number": 72,
+      "speaker": "IAGO",
+      "text": "And to suppose her chaste! No, let me know;"
+    },
+    {
+      "number": 73,
+      "speaker": "IAGO",
+      "text": "And knowing what I am, I know what she shall be."
+    },
+    {
+      "number": 74,
+      "speaker": "OTHELLO",
+      "text": "O, thou art wise; ’tis certain."
+    },
+    {
+      "number": 74,
+      "speaker": "IAGO",
+      "text": "Stand you awhile apart;"
+    },
+    {
+      "number": 75,
+      "speaker": "IAGO",
+      "text": "Confine yourself but in a patient list."
+    },
+    {
+      "number": 76,
+      "speaker": "IAGO",
+      "text": "Whilst you were here o’erwhelmed with your grief—"
+    },
+    {
+      "number": 77,
+      "speaker": "IAGO",
+      "text": "A passion most unsuiting such a man—"
+    },
+    {
+      "number": 78,
+      "speaker": "IAGO",
+      "text": "Cassio came hither: I shifted him away,"
+    },
+    {
+      "number": 79,
+      "speaker": "IAGO",
+      "text": "And laid good ’scuse upon your ecstasy,"
+    },
+    {
+      "number": 80,
+      "speaker": "IAGO",
+      "text": "Bade him anon return and here speak with me;"
+    },
+    {
+      "number": 81,
+      "speaker": "IAGO",
+      "text": "The which he promised. Do but encave yourself,"
+    },
+    {
+      "number": 82,
+      "speaker": "IAGO",
+      "text": "And mark the fleers, the gibes, and notable scorns,"
+    },
+    {
+      "number": 83,
+      "speaker": "IAGO",
+      "text": "That dwell in every region of his face;"
+    },
+    {
+      "number": 84,
+      "speaker": "IAGO",
+      "text": "For I will make him tell the tale anew,"
+    },
+    {
+      "number": 85,
+      "speaker": "IAGO",
+      "text": "Where, how, how oft, how long ago, and when"
+    },
+    {
+      "number": 86,
+      "speaker": "IAGO",
+      "text": "He hath, and is again to cope your wife:"
+    },
+    {
+      "number": 87,
+      "speaker": "IAGO",
+      "text": "I say, but mark his gesture. Marry, patience;"
+    },
+    {
+      "number": 88,
+      "speaker": "IAGO",
+      "text": "Or I shall say you are all in all in spleen,"
+    },
+    {
+      "number": 89,
+      "speaker": "IAGO",
+      "text": "And nothing of a man."
+    },
+    {
+      "number": 89,
+      "speaker": "OTHELLO",
+      "text": "Dost thou hear, Iago?"
+    },
+    {
+      "number": 90,
+      "speaker": "OTHELLO",
+      "text": "I will be found most cunning in my patience;"
+    },
+    {
+      "number": 91,
+      "speaker": "OTHELLO",
+      "text": "But—dost thou hear?—most bloody."
+    },
+    {
+      "number": 91,
+      "speaker": "IAGO",
+      "text": "That’s not amiss;"
+    },
+    {
+      "number": 92,
+      "speaker": "IAGO",
+      "text": "But yet keep time in all. Will you withdraw? Othello retires."
+    },
+    {
+      "number": 93,
+      "speaker": "IAGO",
+      "text": "Now will I question Cassio of Bianca,"
+    },
+    {
+      "number": 94,
+      "speaker": "IAGO",
+      "text": "A housewife that by selling her desires"
+    },
+    {
+      "number": 95,
+      "speaker": "IAGO",
+      "text": "Buys herself bread and clothes: it is a creature"
+    },
+    {
+      "number": 96,
+      "speaker": "IAGO",
+      "text": "That dotes on Cassio; as ’tis the strumpet’s plague"
+    },
+    {
+      "number": 97,
+      "speaker": "IAGO",
+      "text": "To beguile many and be beguiled by one:"
+    },
+    {
+      "number": 98,
+      "speaker": "IAGO",
+      "text": "He, when he hears of her, cannot refrain"
+    },
+    {
+      "number": 99,
+      "speaker": "IAGO",
+      "text": "From the excess of laughter. Here he comes:"
+    },
+    {
+      "number": 100,
+      "speaker": "CASSIO",
+      "text": "The worser that you give me the addition"
+    },
+    {
+      "number": 101,
+      "speaker": "CASSIO",
+      "text": "Whose want even kills me."
+    },
+    {
+      "number": 102,
+      "speaker": "IAGO",
+      "text": "Ply Desdemona well, and you are sure on’t."
+    },
+    {
+      "number": 103,
+      "speaker": "IAGO",
+      "text": "Speaking lower. Now, if this suit lay in Bianca’s power,"
+    },
+    {
+      "number": 104,
+      "speaker": "IAGO",
+      "text": "How quickly should you speed!"
+    },
+    {
+      "number": 104,
+      "speaker": "CASSIO",
+      "text": "Alas, poor caitiff!"
+    },
+    {
+      "number": 105,
+      "speaker": "OTHELLO",
+      "text": "Look, how he laughs already!"
+    },
+    {
+      "number": 106,
+      "speaker": "IAGO",
+      "text": "I never knew woman love man so."
+    },
+    {
+      "number": 107,
+      "speaker": "CASSIO",
+      "text": "Alas, poor rogue! I think, i’ faith, she loves me."
+    },
+    {
+      "number": 108,
+      "speaker": "OTHELLO",
+      "text": "Now he denies it faintly, and laughs it out."
+    },
+    {
+      "number": 109,
+      "speaker": "IAGO",
+      "text": "Do you hear, Cassio?"
+    },
+    {
+      "number": 109,
+      "speaker": "OTHELLO",
+      "text": "Now he importunes him"
+    },
+    {
+      "number": 110,
+      "speaker": "OTHELLO",
+      "text": "To tell it o’er: go to; well said, well said."
+    },
+    {
+      "number": 111,
+      "speaker": "IAGO",
+      "text": "She gives it out that you shall marry hey:"
+    },
+    {
+      "number": 112,
+      "speaker": "IAGO",
+      "text": "Do you intend it?"
+    },
+    {
+      "number": 112,
+      "speaker": "CASSIO",
+      "text": "Ha, ha, ha!"
+    },
+    {
+      "number": 113,
+      "speaker": "OTHELLO",
+      "text": "Do you triumph, Roman? do you triumph?"
+    },
+    {
+      "number": 114,
+      "speaker": "CASSIO",
+      "text": "I marry her! what? a customer! Prithee, bear some charity to my"
+    },
+    {
+      "number": 115,
+      "speaker": "CASSIO",
+      "text": "wit: do not think it so unwholesome. Ha, ha, ha!"
+    },
+    {
+      "number": 116,
+      "speaker": "OTHELLO",
+      "text": "So, so, so, so: they laugh that win."
+    },
+    {
+      "number": 117,
+      "speaker": "IAGO",
+      "text": "’Faith, the cry goes that you shall marry her."
+    },
+    {
+      "number": 118,
+      "speaker": "CASSIO",
+      "text": "Prithee, say true."
+    },
+    {
+      "number": 118,
+      "speaker": "IAGO",
+      "text": "I am a very villain else."
+    },
+    {
+      "number": 119,
+      "speaker": "OTHELLO",
+      "text": "Have you scored me? Well."
+    },
+    {
+      "number": 120,
+      "speaker": "CASSIO",
+      "text": "This is the monkey’s own giving out: she is persuaded I will"
+    },
+    {
+      "number": 121,
+      "speaker": "CASSIO",
+      "text": "marry her, out of her own love and flattery, not out of"
+    },
+    {
+      "number": 122,
+      "speaker": "CASSIO",
+      "text": "my promise."
+    },
+    {
+      "number": 123,
+      "speaker": "OTHELLO",
+      "text": "Iago beckons me; now he begins the story."
+    },
+    {
+      "number": 124,
+      "speaker": "CASSIO",
+      "text": "She was here even now; she haunts me in every place. I"
+    },
+    {
+      "number": 125,
+      "speaker": "CASSIO",
+      "text": "was the other day talking on the sea-bank with certain Venetians; and"
+    },
+    {
+      "number": 126,
+      "speaker": "CASSIO",
+      "text": "thither comes the bauble, and, by this hand, she falls me thus"
+    },
+    {
+      "number": 127,
+      "speaker": "CASSIO",
+      "text": "about my neck—"
+    },
+    {
+      "number": 128,
+      "speaker": "OTHELLO",
+      "text": "Crying “O dear Cassio!” as it were: his gesture imports it."
+    },
+    {
+      "number": 129,
+      "speaker": "CASSIO",
+      "text": "So hangs, and lolls, and weeps upon me; so hales, and pulls"
+    },
+    {
+      "number": 130,
+      "speaker": "CASSIO",
+      "text": "me: ha, ha, ha!"
+    },
+    {
+      "number": 131,
+      "speaker": "OTHELLO",
+      "text": "Now he tells how she plucked him to my chamber. O, I"
+    },
+    {
+      "number": 132,
+      "speaker": "OTHELLO",
+      "text": "see that nose of yours, but not that dog I shall throw"
+    },
+    {
+      "number": 133,
+      "speaker": "OTHELLO",
+      "text": "it to."
+    },
+    {
+      "number": 133,
+      "speaker": "CASSIO",
+      "text": "Well, I must leave her company."
+    },
+    {
+      "number": 134,
+      "speaker": "IAGO",
+      "text": "Before me! look, where she comes."
+    },
+    {
+      "number": 135,
+      "speaker": "CASSIO",
+      "text": "’Tis such another fitchew! marry a perfumed one."
+    },
+    {
+      "number": 136,
+      "speaker": "BIANCA",
+      "text": "Let the devil and his dam haunt you! What did you mean"
+    },
+    {
+      "number": 137,
+      "speaker": "BIANCA",
+      "text": "by that same handkerchief you gave me even now? I was a"
+    },
+    {
+      "number": 138,
+      "speaker": "BIANCA",
+      "text": "fine fool to take it. I must take out the work?—A likely"
+    },
+    {
+      "number": 139,
+      "speaker": "BIANCA",
+      "text": "piece of work, that you should find it in your chamber, and"
+    },
+    {
+      "number": 140,
+      "speaker": "BIANCA",
+      "text": "not know who left it there! This is some minx’s token, and"
+    },
+    {
+      "number": 141,
+      "speaker": "BIANCA",
+      "text": "I must take out the work? There; give it your hobby-horse: wheresoever"
+    },
+    {
+      "number": 142,
+      "speaker": "BIANCA",
+      "text": "you had it, I’ll take out no work on’t."
+    },
+    {
+      "number": 143,
+      "speaker": "CASSIO",
+      "text": "How now, my sweet Bianca! how now! how now!"
+    },
+    {
+      "number": 144,
+      "speaker": "OTHELLO",
+      "text": "By heaven, that should be my handkerchief!"
+    },
+    {
+      "number": 145,
+      "speaker": "BIANCA",
+      "text": "An you’ll come to supper to-night, you may; an you will not,"
+    },
+    {
+      "number": 146,
+      "speaker": "BIANCA",
+      "text": "come when you are next prepared for."
+    },
+    {
+      "number": 147,
+      "speaker": "IAGO",
+      "text": "After her, after her."
+    },
+    {
+      "number": 148,
+      "speaker": "CASSIO",
+      "text": "’Faith, I must; she’ll rail in the street else."
+    },
+    {
+      "number": 149,
+      "speaker": "IAGO",
+      "text": "Will you sup there?"
+    },
+    {
+      "number": 149,
+      "speaker": "CASSIO",
+      "text": "’Faith, I intend so."
+    },
+    {
+      "number": 150,
+      "speaker": "IAGO",
+      "text": "Well, I may chance to see you; for I would very fain speak with you."
+    },
+    {
+      "number": 151,
+      "speaker": "CASSIO",
+      "text": "Prithee, come; will you?"
+    },
+    {
+      "number": 151,
+      "speaker": "IAGO",
+      "text": "Go to; say no more."
+    },
+    {
+      "number": 152,
+      "speaker": "OTHELLO",
+      "text": "Advancing. How shall I murder him, Iago?"
+    },
+    {
+      "number": 153,
+      "speaker": "IAGO",
+      "text": "Did you perceive how he laughed at his vice?"
+    },
+    {
+      "number": 154,
+      "speaker": "OTHELLO",
+      "text": "O Iago!"
+    },
+    {
+      "number": 154,
+      "speaker": "IAGO",
+      "text": "And did you see the handkerchief?"
+    },
+    {
+      "number": 155,
+      "speaker": "OTHELLO",
+      "text": "Was that mine?"
+    },
+    {
+      "number": 156,
+      "speaker": "IAGO",
+      "text": "Yours by this hand: and to see how he prizes the foolish"
+    },
+    {
+      "number": 157,
+      "speaker": "IAGO",
+      "text": "woman your wife! she gave it him, and he hath given it"
+    },
+    {
+      "number": 158,
+      "speaker": "IAGO",
+      "text": "his whore."
+    },
+    {
+      "number": 159,
+      "speaker": "OTHELLO",
+      "text": "I would have him nine years a-killing. A fine woman! a fair"
+    },
+    {
+      "number": 160,
+      "speaker": "OTHELLO",
+      "text": "woman! a sweet woman!"
+    },
+    {
+      "number": 160,
+      "speaker": "IAGO",
+      "text": "Nay, you must forget that."
+    },
+    {
+      "number": 161,
+      "speaker": "OTHELLO",
+      "text": "Ay, let her rot, and perish, and be damned to-night; for she"
+    },
+    {
+      "number": 162,
+      "speaker": "OTHELLO",
+      "text": "shall not live: no, my heart is turned to stone; I strike"
+    },
+    {
+      "number": 163,
+      "speaker": "OTHELLO",
+      "text": "it, and it hurts my hand. O, the world hath not a"
+    },
+    {
+      "number": 164,
+      "speaker": "OTHELLO",
+      "text": "sweeter creature: she might lie by an emperor’s side and command him"
+    },
+    {
+      "number": 165,
+      "speaker": "OTHELLO",
+      "text": "tasks."
+    },
+    {
+      "number": 165,
+      "speaker": "IAGO",
+      "text": "Nay, that’s not your way."
+    },
+    {
+      "number": 166,
+      "speaker": "OTHELLO",
+      "text": "Hang her! I do but say what she is: so delicate with"
+    },
+    {
+      "number": 167,
+      "speaker": "OTHELLO",
+      "text": "her needle: an admirable musician: O! she will sing the savageness out"
+    },
+    {
+      "number": 168,
+      "speaker": "OTHELLO",
+      "text": "of a bear: of so high and plenteous wit and invention:—"
+    },
+    {
+      "number": 169,
+      "speaker": "IAGO",
+      "text": "She’s the worse for all this."
+    },
+    {
+      "number": 170,
+      "speaker": "OTHELLO",
+      "text": "O, a thousand thousand times: and then, of so gentle a condition!"
+    },
+    {
+      "number": 171,
+      "speaker": "IAGO",
+      "text": "Ay, too gentle."
+    },
+    {
+      "number": 172,
+      "speaker": "OTHELLO",
+      "text": "Nay, that’s certain: but yet the pity of it, Iago! O Iago,"
+    },
+    {
+      "number": 173,
+      "speaker": "OTHELLO",
+      "text": "the pity of it, Iago!"
+    },
+    {
+      "number": 174,
+      "speaker": "IAGO",
+      "text": "If you are so fond over her iniquity, give her patent to"
+    },
+    {
+      "number": 175,
+      "speaker": "IAGO",
+      "text": "offend; for, if it touch not you, it comes near nobody."
+    },
+    {
+      "number": 176,
+      "speaker": "OTHELLO",
+      "text": "I will chop her into messes: cuckold me!"
+    },
+    {
+      "number": 177,
+      "speaker": "IAGO",
+      "text": "O, ’tis foul in her."
+    },
+    {
+      "number": 177,
+      "speaker": "OTHELLO",
+      "text": "With mine officer!"
+    },
+    {
+      "number": 178,
+      "speaker": "IAGO",
+      "text": "That’s fouler."
+    },
+    {
+      "number": 179,
+      "speaker": "OTHELLO",
+      "text": "Get me some poison, Iago; this night: I’ll not expostulate with her,"
+    },
+    {
+      "number": 180,
+      "speaker": "OTHELLO",
+      "text": "lest her body and beauty unprovide my mind again: this night, Iago."
+    },
+    {
+      "number": 181,
+      "speaker": "IAGO",
+      "text": "Do it not with poison, strangle her in her bed, even the"
+    },
+    {
+      "number": 182,
+      "speaker": "IAGO",
+      "text": "bed she hath contaminated."
+    },
+    {
+      "number": 183,
+      "speaker": "OTHELLO",
+      "text": "Good, good: the justice of it pleases: very good."
+    },
+    {
+      "number": 184,
+      "speaker": "IAGO",
+      "text": "And for Cassio, let me be his undertaker: you shall hear more by midnight."
+    },
+    {
+      "number": 185,
+      "speaker": "OTHELLO",
+      "text": "Excellent good. A trumpet within. What trumpet is that same?"
+    },
+    {
+      "number": 186,
+      "speaker": "IAGO",
+      "text": "Something from Venice, sure. ’Tis Lodovico"
+    },
+    {
+      "number": 187,
+      "speaker": "IAGO",
+      "text": "Come from the duke: and, see, your wife is with him."
+    },
+    {
+      "number": 188,
+      "speaker": "LODOVICO",
+      "text": "Save you, worthy general!"
+    },
+    {
+      "number": 188,
+      "speaker": "OTHELLO",
+      "text": "With all my heart, sir."
+    },
+    {
+      "number": 189,
+      "speaker": "LODOVICO",
+      "text": "The duke and senators of Venice greet you. Gives him a letter."
+    },
+    {
+      "number": 190,
+      "speaker": "OTHELLO",
+      "text": "I kiss the instrument of their pleasures. Opens the letter, and reads."
+    },
+    {
+      "number": 191,
+      "speaker": "DESDEMONA",
+      "text": "And what’s the news, good cousin Lodovico?"
+    },
+    {
+      "number": 192,
+      "speaker": "IAGO",
+      "text": "I am very glad to see you, signior;"
+    },
+    {
+      "number": 193,
+      "speaker": "IAGO",
+      "text": "Welcome to Cyprus."
+    },
+    {
+      "number": 194,
+      "speaker": "LODOVICO",
+      "text": "I thank you. How does Lieutenant Cassio?"
+    },
+    {
+      "number": 195,
+      "speaker": "IAGO",
+      "text": "Lives, sir."
+    },
+    {
+      "number": 196,
+      "speaker": "DESDEMONA",
+      "text": "Cousin, there’s fall’n between him and my lord"
+    },
+    {
+      "number": 197,
+      "speaker": "DESDEMONA",
+      "text": "An unkind breach: but you shall make all well."
+    },
+    {
+      "number": 198,
+      "speaker": "OTHELLO",
+      "text": "Are you sure of that?"
+    },
+    {
+      "number": 198,
+      "speaker": "DESDEMONA",
+      "text": "My lord?"
+    },
+    {
+      "number": 199,
+      "speaker": "OTHELLO",
+      "text": "“This fail you not to do, as you will—”"
+    },
+    {
+      "number": 200,
+      "speaker": "LODOVICO",
+      "text": "He did not call; he’s busy in the paper."
+    },
+    {
+      "number": 201,
+      "speaker": "LODOVICO",
+      "text": "Is there division ’twixt my lord and Cassio?"
+    },
+    {
+      "number": 202,
+      "speaker": "DESDEMONA",
+      "text": "A most unhappy one: I would do much"
+    },
+    {
+      "number": 203,
+      "speaker": "DESDEMONA",
+      "text": "To atone them, for the love I bear to Cassio."
+    },
+    {
+      "number": 204,
+      "speaker": "OTHELLO",
+      "text": "Fire and brimstone!"
+    },
+    {
+      "number": 204,
+      "speaker": "DESDEMONA",
+      "text": "My lord?"
+    },
+    {
+      "number": 205,
+      "speaker": "OTHELLO",
+      "text": "Are you wise?"
+    },
+    {
+      "number": 205,
+      "speaker": "DESDEMONA",
+      "text": "What, is he angry?"
+    },
+    {
+      "number": 206,
+      "speaker": "LODOVICO",
+      "text": "May be the letter moved him;"
+    },
+    {
+      "number": 207,
+      "speaker": "LODOVICO",
+      "text": "For, as I think, they do command him home,"
+    },
+    {
+      "number": 208,
+      "speaker": "LODOVICO",
+      "text": "Deputing Cassio in his government."
+    },
+    {
+      "number": 208,
+      "speaker": "DESDEMONA",
+      "text": "Trust me, I am glad on’t."
+    },
+    {
+      "number": 209,
+      "speaker": "OTHELLO",
+      "text": "Indeed!"
+    },
+    {
+      "number": 209,
+      "speaker": "DESDEMONA",
+      "text": "My lord?"
+    },
+    {
+      "number": 210,
+      "speaker": "OTHELLO",
+      "text": "I am glad to see you mad."
+    },
+    {
+      "number": 211,
+      "speaker": "DESDEMONA",
+      "text": "Why, sweet Othello—"
+    },
+    {
+      "number": 211,
+      "speaker": "OTHELLO",
+      "text": "Striking her. Devil!"
+    },
+    {
+      "number": 212,
+      "speaker": "DESDEMONA",
+      "text": "I have not deserved this."
+    },
+    {
+      "number": 213,
+      "speaker": "LODOVICO",
+      "text": "My lord, this would not be believed in Venice,"
+    },
+    {
+      "number": 214,
+      "speaker": "LODOVICO",
+      "text": "Though I should swear I saw’t: ’tis very much:"
+    },
+    {
+      "number": 215,
+      "speaker": "LODOVICO",
+      "text": "Make her amends; she weeps."
+    },
+    {
+      "number": 215,
+      "speaker": "OTHELLO",
+      "text": "O devil, devil!"
+    },
+    {
+      "number": 216,
+      "speaker": "OTHELLO",
+      "text": "If that the earth could teem with woman’s tears,"
+    },
+    {
+      "number": 217,
+      "speaker": "OTHELLO",
+      "text": "Each drop she falls would prove a crocodile."
+    },
+    {
+      "number": 218,
+      "speaker": "OTHELLO",
+      "text": "Out of my sight!"
+    },
+    {
+      "number": 219,
+      "speaker": "DESDEMONA",
+      "text": "I will not stay to offend you. Going."
+    },
+    {
+      "number": 220,
+      "speaker": "LODOVICO",
+      "text": "Truly, an obedient lady:"
+    },
+    {
+      "number": 221,
+      "speaker": "LODOVICO",
+      "text": "I do beseech your lordship, call her back."
+    },
+    {
+      "number": 222,
+      "speaker": "OTHELLO",
+      "text": "Mistress!"
+    },
+    {
+      "number": 222,
+      "speaker": "DESDEMONA",
+      "text": "My lord?"
+    },
+    {
+      "number": 223,
+      "speaker": "OTHELLO",
+      "text": "What would you with her, sir?"
+    },
+    {
+      "number": 223,
+      "speaker": "LODOVICO",
+      "text": "Who, I, my lord?"
+    },
+    {
+      "number": 224,
+      "speaker": "OTHELLO",
+      "text": "Ay; you did wish that I would make her turn:"
+    },
+    {
+      "number": 225,
+      "speaker": "OTHELLO",
+      "text": "Sir, she can turn, and turn, and yet go on,"
+    },
+    {
+      "number": 226,
+      "speaker": "OTHELLO",
+      "text": "And turn again; and she can weep, sir, weep;"
+    },
+    {
+      "number": 227,
+      "speaker": "OTHELLO",
+      "text": "And she’s obedient, as you say, obedient,"
+    },
+    {
+      "number": 228,
+      "speaker": "OTHELLO",
+      "text": "Very obedient. Proceed you in your tears."
+    },
+    {
+      "number": 229,
+      "speaker": "OTHELLO",
+      "text": "Concerning this, sir—O well-painted passion!—"
+    },
+    {
+      "number": 230,
+      "speaker": "OTHELLO",
+      "text": "I am commanded home. Get you away;"
+    },
+    {
+      "number": 231,
+      "speaker": "OTHELLO",
+      "text": "I’ll send for you anon. Sir, I obey the mandate,"
+    },
+    {
+      "number": 232,
+      "speaker": "OTHELLO",
+      "text": "And will return to Venice. Hence, avaunt!"
+    },
+    {
+      "number": 233,
+      "speaker": "OTHELLO",
+      "text": "Cassio shall have my place. And, sir, tonight,"
+    },
+    {
+      "number": 234,
+      "speaker": "OTHELLO",
+      "text": "I do entreat that we may sup together:"
+    },
+    {
+      "number": 235,
+      "speaker": "OTHELLO",
+      "text": "You are welcome, sir, to Cyprus.—Goats and monkeys!"
+    },
+    {
+      "number": 236,
+      "speaker": "LODOVICO",
+      "text": "Is this the noble Moor whom our full senate"
+    },
+    {
+      "number": 237,
+      "speaker": "LODOVICO",
+      "text": "Call all in all sufficient? Is this the nature"
+    },
+    {
+      "number": 238,
+      "speaker": "LODOVICO",
+      "text": "Whom passion could not shake? whose solid virtue"
+    },
+    {
+      "number": 239,
+      "speaker": "LODOVICO",
+      "text": "The shot of accident, nor dart of chance,"
+    },
+    {
+      "number": 240,
+      "speaker": "LODOVICO",
+      "text": "Could neither graze nor pierce?"
+    },
+    {
+      "number": 240,
+      "speaker": "IAGO",
+      "text": "He is much changed."
+    },
+    {
+      "number": 241,
+      "speaker": "LODOVICO",
+      "text": "Are his wits safe? is he not light of brain?"
+    },
+    {
+      "number": 242,
+      "speaker": "IAGO",
+      "text": "He’s that he is: I may not breathe my censure"
+    },
+    {
+      "number": 243,
+      "speaker": "IAGO",
+      "text": "What he might be: if what he might he is not,"
+    },
+    {
+      "number": 244,
+      "speaker": "IAGO",
+      "text": "I would to heaven he were!"
+    },
+    {
+      "number": 244,
+      "speaker": "LODOVICO",
+      "text": "What, strike his wife!"
+    },
+    {
+      "number": 245,
+      "speaker": "IAGO",
+      "text": "’Faith, that was not so well; yet would I knew"
+    },
+    {
+      "number": 246,
+      "speaker": "IAGO",
+      "text": "That stroke would prove the worst!"
+    },
+    {
+      "number": 246,
+      "speaker": "LODOVICO",
+      "text": "Is it his use?"
+    },
+    {
+      "number": 247,
+      "speaker": "LODOVICO",
+      "text": "Or did the letters work upon his blood,"
+    },
+    {
+      "number": 248,
+      "speaker": "LODOVICO",
+      "text": "And new-create this fault?"
+    },
+    {
+      "number": 248,
+      "speaker": "IAGO",
+      "text": "Alas, alas!"
+    },
+    {
+      "number": 249,
+      "speaker": "IAGO",
+      "text": "It is not honesty in me to speak"
+    },
+    {
+      "number": 250,
+      "speaker": "IAGO",
+      "text": "What I have seen and known. You shall observe him,"
+    },
+    {
+      "number": 251,
+      "speaker": "IAGO",
+      "text": "And his own courses will denote him so"
+    },
+    {
+      "number": 252,
+      "speaker": "IAGO",
+      "text": "That I may save my speech: do but go after,"
+    },
+    {
+      "number": 253,
+      "speaker": "IAGO",
+      "text": "And mark how he continues."
+    },
+    {
+      "number": 254,
+      "speaker": "LODOVICO",
+      "text": "I am sorry that I am deceived in him."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Othello and Iago."
+    },
+    {
+      "after_line": 45,
+      "text": "Falls in a trance."
+    },
+    {
+      "after_line": 49,
+      "text": "Enter Cassio."
+    },
+    {
+      "after_line": 49,
+      "text": "How now, Cassio!"
+    },
+    {
+      "after_line": 58,
+      "text": "Exit Cassio."
+    },
+    {
+      "after_line": 99,
+      "text": "Reenter Cassio."
+    },
+    {
+      "after_line": 99,
+      "text": "As he shall smile, Othello shall go mad; And his unbookish jealousy must construe Poor Cassio’s smiles, gestures and light behavior, Quite in the wrong. How do you now, lieutenant?"
+    },
+    {
+      "after_line": 135,
+      "text": "Enter Bianca."
+    },
+    {
+      "after_line": 135,
+      "text": "What do you mean by this haunting of me?"
+    },
+    {
+      "after_line": 146,
+      "text": "Exit."
+    },
+    {
+      "after_line": 151,
+      "text": "Exit Cassio."
+    },
+    {
+      "after_line": 187,
+      "text": "Enter Lodovico, Desdemona, and Attendants."
+    },
+    {
+      "after_line": 199,
+      "text": "Reads."
+    },
+    {
+      "after_line": 232,
+      "text": "Exit Desdemona."
+    },
+    {
+      "after_line": 235,
+      "text": "Exit."
+    },
+    {
+      "after_line": 254,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "othello_act4_scene1_gloss1",
+      "line": 3,
+      "phrase": "an unauthorized kiss",
+      "definition": "a kiss without license; an unsanctioned intimacy"
+    },
+    {
+      "id": "othello_act4_scene1_gloss2",
+      "line": 7,
+      "phrase": "hypocrisy against the devil",
+      "definition": "hypocrisy that cheats the devil of his due — Iago's sly paradox"
+    },
+    {
+      "id": "othello_act4_scene1_gloss3",
+      "line": 17,
+      "phrase": "an essence that’s not seen",
+      "definition": "a quality invisible to the eye — honor"
+    },
+    {
+      "id": "othello_act4_scene1_gloss4",
+      "line": 22,
+      "phrase": "raven o’er the infected house",
+      "definition": "a raven croaks an omen over a plague-stricken house"
+    },
+    {
+      "id": "othello_act4_scene1_gloss5",
+      "line": 33,
+      "phrase": "Faith, that he did",
+      "definition": "truly, he did it — Iago's blunt lie"
+    },
+    {
+      "id": "othello_act4_scene1_gloss6",
+      "line": 38,
+      "phrase": "belie her",
+      "definition": "slander her"
+    },
+    {
+      "id": "othello_act4_scene1_gloss7",
+      "line": 39,
+      "phrase": "handkerchief",
+      "definition": "the handkerchief, now the fatal prop of the play — small linen cloth, heavy with meaning"
+    },
+    {
+      "id": "othello_act4_scene1_gloss8",
+      "line": 38,
+      "phrase": "fulsome",
+      "definition": "gross; disgusting"
+    },
+    {
+      "id": "othello_act4_scene1_gloss9",
+      "line": 42,
+      "phrase": "Nature would not invest herself",
+      "definition": "Nature would not clothe herself in such a darkening passion without cause"
+    },
+    {
+      "id": "othello_act4_scene1_gloss11",
+      "line": 50,
+      "phrase": "epilepsy",
+      "definition": "seizure — thought in Shakespeare's time to be a form of the falling sickness"
+    },
+    {
+      "id": "othello_act4_scene1_gloss12",
+      "line": 60,
+      "phrase": "mock me",
+      "definition": "make a laughing stock of me"
+    },
+    {
+      "id": "othello_act4_scene1_gloss13",
+      "line": 62,
+      "phrase": "A horned man’s a monster and a beast",
+      "definition": "a cuckold is both an unnatural creature and a brute animal"
+    },
+    {
+      "id": "othello_act4_scene1_gloss15",
+      "line": 68,
+      "phrase": "unproper",
+      "definition": "not exclusively their own"
+    },
+    {
+      "id": "othello_act4_scene1_gloss16",
+      "line": 69,
+      "phrase": "peculiar",
+      "definition": "their own; private"
+    },
+    {
+      "id": "othello_act4_scene1_gloss17",
+      "line": 75,
+      "phrase": "in a patient list",
+      "definition": "within the limits of patience"
+    },
+    {
+      "id": "othello_act4_scene1_gloss18",
+      "line": 79,
+      "phrase": "ecstasy",
+      "definition": "a trance; a fit of madness"
+    },
+    {
+      "id": "othello_act4_scene1_gloss19",
+      "line": 81,
+      "phrase": "encave yourself",
+      "definition": "hide yourself"
+    },
+    {
+      "id": "othello_act4_scene1_gloss20",
+      "line": 82,
+      "phrase": "fleers",
+      "definition": "sneers; scornful grimaces"
+    },
+    {
+      "id": "othello_act4_scene1_gloss21",
+      "line": 86,
+      "phrase": "cope",
+      "definition": "encounter; have intercourse with"
+    },
+    {
+      "id": "othello_act4_scene1_gloss22",
+      "line": 88,
+      "phrase": "spleen",
+      "definition": "seat of violent emotions; temper"
+    },
+    {
+      "id": "othello_act4_scene1_gloss25",
+      "line": 104,
+      "phrase": "caitiff",
+      "definition": "wretch; pitiable creature"
+    },
+    {
+      "id": "othello_act4_scene1_gloss26",
+      "line": 114,
+      "phrase": "customer",
+      "definition": "prostitute — Cassio's laughing word for Bianca"
+    },
+    {
+      "id": "othello_act4_scene1_gloss27",
+      "line": 126,
+      "phrase": "bauble",
+      "definition": "trinket — a dismissive term for Bianca"
+    },
+    {
+      "id": "othello_act4_scene1_gloss28",
+      "line": 125,
+      "phrase": "sea-bank",
+      "definition": "seashore"
+    },
+    {
+      "id": "othello_act4_scene1_gloss29",
+      "line": 141,
+      "phrase": "hobby-horse",
+      "definition": "loose woman — so called because the toy horse was once a rider's mock"
+    },
+    {
+      "id": "othello_act4_scene1_gloss30",
+      "line": 135,
+      "phrase": "fitchew",
+      "definition": "polecat; a creature proverbially lustful and foul-smelling"
+    },
+    {
+      "id": "othello_act4_scene1_gloss33",
+      "line": 173,
+      "phrase": "the pity of it, Iago",
+      "definition": "the pitiable cruelty of what he must do — perhaps the tragedy's most unguarded line"
+    },
+    {
+      "id": "othello_act4_scene1_gloss34",
+      "line": 174,
+      "phrase": "patent",
+      "definition": "license; permit"
+    },
+    {
+      "id": "othello_act4_scene1_gloss35",
+      "line": 180,
+      "phrase": "unprovide my mind",
+      "definition": "unsteady my resolve"
+    },
+    {
+      "id": "othello_act4_scene1_gloss36",
+      "line": 184,
+      "phrase": "be his undertaker",
+      "definition": "be the one to dispatch him"
+    },
+    {
+      "id": "othello_act4_scene1_gloss37",
+      "line": 190,
+      "phrase": "instrument",
+      "definition": "agent; cause"
+    },
+    {
+      "id": "othello_act4_scene1_gloss38",
+      "line": 231,
+      "phrase": "mandate",
+      "definition": "order; commission"
+    },
+    {
+      "id": "othello_act4_scene1_gloss39",
+      "line": 203,
+      "phrase": "love I bear to Cassio",
+      "definition": "Iago's lethal counterfeit; the phrase drips with irony"
+    },
+    {
+      "id": "othello_act4_scene1_gloss40",
+      "line": 215,
+      "phrase": "Devil!",
+      "definition": "Othello's cry at striking Desdemona in public — the most shocking stage moment in the play"
+    },
+    {
+      "id": "othello_act4_scene1_gloss41",
+      "line": 216,
+      "phrase": "teem with woman’s tears",
+      "definition": "give birth to woman's tears — the earth itself would conceive and weep"
+    },
+    {
+      "id": "othello_act4_scene1_gloss42",
+      "line": 238,
+      "phrase": "passion",
+      "definition": "violent emotion"
+    },
+    {
+      "id": "othello_act4_scene1_gloss43",
+      "line": 242,
+      "phrase": "censure",
+      "definition": "judgment"
+    },
+    {
+      "id": "othello_act4_scene1_gloss44",
+      "line": 246,
+      "phrase": "use",
+      "definition": "habit; custom"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "othello_act4_scene1_ann1",
+      "line_start": 35,
+      "line_end": 85,
+      "citation_display": "Othello 4.1.35–85",
+      "category": "structural",
+      "title": "Othello's trance as dramatic emblem",
+      "body": "Othello's physical collapse — the fit, the falling sickness (epilepsy as the Elizabethans understood it) — is Shakespeare's visible image for what the temptation scene has been doing invisibly. The general of Venice lies insensible on stage while his ensign watches. This is the first moment at which body gives ground to mind; up to now Othello's disintegration has been verbal. The stage picture is a diagnosis.\n\nShakespeare had used fits before — Caesar's in *Julius Caesar*, Macbeth's hallucinations — but neither was placed at the exact dramatic joint this is. The fall inverts Iago's humiliation of the general; the ensign stands, the commander is helpless. After this scene Othello will not recover strategic dignity; his authority becomes a public performance pitted against the private ruin.",
+      "sources": [
+        "Robert B. Heilman, *Magic in the Web* (1956)",
+        "Margaret Healy, *Shakespeare, Alchemy and the Creative Imagination* (2011)"
+      ]
+    },
+    {
+      "id": "othello_act4_scene1_ann2",
+      "line_start": 110,
+      "line_end": 175,
+      "citation_display": "Othello 4.1.110–175",
+      "category": "structural",
+      "title": "The eavesdropping and the audience's complicity",
+      "body": "In this scene Shakespeare gives the audience what it has not had before: Othello positioned to overhear Iago speak to Cassio, misreading every laugh and gesture. The dramatic irony tightens. The audience knows Cassio thinks he's being asked about Bianca; Othello thinks the subject is Desdemona. We see a double exposure: the real conversation and Othello's hallucination of it, simultaneously.\n\nThe device is brutally effective because it makes the audience complicit. We cannot both know what Othello sees and keep the peace with what Iago is doing; we are implicated in his method by the simple act of watching. *Othello* is Shakespeare's most sustained use of dramatic irony — not as a source of pleasure but as a source of moral weight on the spectator.",
+      "sources": [
+        "Bertrand Evans, *Shakespeare's Tragic Practice* (1979)",
+        "Stanley Cavell, *Disowning Knowledge* (2003)"
+      ]
+    },
+    {
+      "id": "othello_act4_scene1_ann3",
+      "line_start": 172,
+      "line_end": 218,
+      "citation_display": "Othello 4.1.172–218",
+      "category": "thematic",
+      "title": "The pity of it, Iago",
+      "body": "'But yet the pity of it, Iago — O, Iago, the pity of it, Iago.' The line is a dramatic aberration. Surrounded by the hardening of Othello's murder plan, it registers the cost of what he is about to do. The repetition — 'pity', 'Iago', three times — reads as a man hearing himself from outside, one foot still in the country he is leaving.\n\nShakespeare refuses to resolve the moment into either penitence or resolve. Othello will proceed to plan the killing in the same scene. But the line is not mere residue. It is the play's proof that Othello is not numb to what he is about to do — which makes the tragedy worse, not milder.",
+      "sources": [
+        "A. D. Nuttall, *Shakespeare the Thinker* (2007)",
+        "Stephen Greenblatt, *Will in the World* (2004)"
+      ]
+    },
+    {
+      "id": "othello_act4_scene1_ann4",
+      "line_start": 245,
+      "line_end": 285,
+      "citation_display": "Othello 4.1.245–285",
+      "category": "thematic",
+      "title": "Striking Desdemona in public",
+      "body": "The blow is the most transgressive stage moment in Shakespearean tragedy. The Venetian ambassador Lodovico is present; he is a state witness; the violence is public and unprovoked and registered immediately as scandal. The line that follows — Lodovico's astonished 'My lord, this would not be believed in Venice, / Though I should swear I saw't' — is Shakespeare's blunt acknowledgment of how the scene works. It lives on the far side of plausibility.\n\nWhat makes it work dramatically is the presence of witnesses. Othello does not strike Desdemona in private rage; he does it in full senatorial view. The collapse of his public self is now complete. What Iago has done to Othello's private mind is now visible to the state. The rest of the play is the working out, in public, of a ruin that happened in private.",
+      "sources": [
+        "Harley Granville-Barker, *Prefaces to Shakespeare* (1946)",
+        "Gary Taylor & John Jowett, *Shakespeare Reshaped 1606–1623* (1993)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "othello_act4_scene1_q1",
+      "kind": "comprehension",
+      "prompt": "Why does Iago arrange for Othello to overhear his conversation with Cassio?",
+      "options": [
+        "To clear Cassio of any wrongdoing through direct confrontation",
+        "To let Othello misinterpret laughter about Bianca as admissions about Desdemona — using Othello's distance to weaponize ambiguity",
+        "To resolve a financial dispute between Cassio and Bianca",
+        "To gather evidence that will clear Desdemona's name"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 85,
+      "anchor_line_end": 175
+    },
+    {
+      "id": "othello_act4_scene1_q2",
+      "kind": "inference",
+      "prompt": "What does the audience know during the eavesdropping scene that Othello does not?",
+      "options": [
+        "That Cassio is secretly in love with Desdemona",
+        "That Cassio's laughter and boasting concern Bianca, not Desdemona",
+        "That the handkerchief has been destroyed",
+        "That Iago is Cassio's secret ally"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 108,
+      "anchor_line_end": 165
+    },
+    {
+      "id": "othello_act4_scene1_q3",
+      "kind": "close_reading",
+      "prompt": "When Othello repeats 'But yet the pity of it, Iago — O, Iago, the pity of it, Iago', the tone is:",
+      "options": [
+        "Triumphant — he has achieved the certainty he sought",
+        "Anguished — he hears himself from outside, one foot still in the country he is leaving",
+        "Sarcastic — he is mocking Iago's earlier expressions of pity",
+        "Detached — he has become indifferent to Desdemona"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 170,
+      "anchor_line_end": 180
+    },
+    {
+      "id": "othello_act4_scene1_q4",
+      "kind": "theme",
+      "prompt": "Othello strikes Desdemona in front of the Venetian ambassador Lodovico. Why is this the play's most transgressive stage moment?",
+      "options": [
+        "Because striking a wife was illegal in Venice but common in Cyprus",
+        "Because the private ruin of Othello's mind is now witnessed officially and the public self collapses in full senatorial view",
+        "Because Desdemona's relatives in Venice will now seek revenge",
+        "Because it violates an unwritten military code"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 250,
+      "anchor_line_end": 285
+    },
+    {
+      "id": "othello_act4_scene1_q5",
+      "kind": "comprehension",
+      "prompt": "What message does Lodovico bring from Venice?",
+      "options": [
+        "Orders to execute Iago for treason",
+        "A letter recalling Othello to Venice and appointing Cassio as governor of Cyprus",
+        "News that Desdemona's father Brabantio has died",
+        "A warning that the Turkish fleet has regrouped"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 225,
+      "anchor_line_end": 245
+    }
+  ]
+}

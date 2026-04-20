@@ -1,0 +1,1171 @@
+{
+  "section_id": "henry_v_act4_scene3",
+  "work_id": "henry-v",
+  "sequence": 20,
+  "act": 4,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "The English camp",
+  "line_count": 135,
+  "word_count": 1090,
+  "est_read_minutes": 5,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "GLOUCESTER",
+      "text": "Where is the king?"
+    },
+    {
+      "number": 2,
+      "speaker": "BEDFORD",
+      "text": "The king himself is rode to view their battle."
+    },
+    {
+      "number": 3,
+      "speaker": "WESTMORELAND",
+      "text": "Of fighting men they have full threescore thousand."
+    },
+    {
+      "number": 4,
+      "speaker": "EXETER",
+      "text": "There’s five to one; besides, they all are fresh."
+    },
+    {
+      "number": 5,
+      "speaker": "SALISBURY",
+      "text": "God’s arm strike with us! ’tis a fearful odds."
+    },
+    {
+      "number": 6,
+      "speaker": "SALISBURY",
+      "text": "God be wi’ you, princes all; I’ll to my charge:"
+    },
+    {
+      "number": 7,
+      "speaker": "SALISBURY",
+      "text": "If we no more meet till we meet in heaven,"
+    },
+    {
+      "number": 8,
+      "speaker": "SALISBURY",
+      "text": "Then, joyfully, my noble Lord of Bedford,"
+    },
+    {
+      "number": 9,
+      "speaker": "SALISBURY",
+      "text": "My dear Lord Gloucester, and my good Lord Exeter,"
+    },
+    {
+      "number": 10,
+      "speaker": "SALISBURY",
+      "text": "And my kind kinsman, warriors all, adieu!"
+    },
+    {
+      "number": 11,
+      "speaker": "BEDFORD",
+      "text": "Farewell, good Salisbury; and good luck go with thee!"
+    },
+    {
+      "number": 12,
+      "speaker": "EXETER",
+      "text": "Farewell, kind lord; fight valiantly today:"
+    },
+    {
+      "number": 13,
+      "speaker": "EXETER",
+      "text": "And yet I do thee wrong to mind thee of it,"
+    },
+    {
+      "number": 14,
+      "speaker": "EXETER",
+      "text": "For thou art framed of the firm truth of valour."
+    },
+    {
+      "number": 15,
+      "speaker": "BEDFORD",
+      "text": "He is as full of valour as of kindness;"
+    },
+    {
+      "number": 16,
+      "speaker": "BEDFORD",
+      "text": "Princely in both."
+    },
+    {
+      "number": 16,
+      "speaker": "WESTMORELAND",
+      "text": "O that we now had here"
+    },
+    {
+      "number": 17,
+      "speaker": "WESTMORELAND",
+      "text": "But one ten thousand of those men in England"
+    },
+    {
+      "number": 18,
+      "speaker": "WESTMORELAND",
+      "text": "That do no work today!"
+    },
+    {
+      "number": 18,
+      "speaker": "KING HENRY",
+      "text": "What’s he that wishes so?"
+    },
+    {
+      "number": 19,
+      "speaker": "KING HENRY",
+      "text": "My cousin Westmoreland? No, my fair cousin:"
+    },
+    {
+      "number": 20,
+      "speaker": "KING HENRY",
+      "text": "If we are mark’d to die, we are enow"
+    },
+    {
+      "number": 21,
+      "speaker": "KING HENRY",
+      "text": "To do our country loss; and if to live,"
+    },
+    {
+      "number": 22,
+      "speaker": "KING HENRY",
+      "text": "The fewer men, the greater share of honour."
+    },
+    {
+      "number": 23,
+      "speaker": "KING HENRY",
+      "text": "God’s will! I pray thee, wish not one man more."
+    },
+    {
+      "number": 24,
+      "speaker": "KING HENRY",
+      "text": "By Jove, I am not covetous for gold,"
+    },
+    {
+      "number": 25,
+      "speaker": "KING HENRY",
+      "text": "Nor care I who doth feed upon my cost;"
+    },
+    {
+      "number": 26,
+      "speaker": "KING HENRY",
+      "text": "It yearns me not if men my garments wear;"
+    },
+    {
+      "number": 27,
+      "speaker": "KING HENRY",
+      "text": "Such outward things dwell not in my desires:"
+    },
+    {
+      "number": 28,
+      "speaker": "KING HENRY",
+      "text": "But if it be a sin to covet honour,"
+    },
+    {
+      "number": 29,
+      "speaker": "KING HENRY",
+      "text": "I am the most offending soul alive."
+    },
+    {
+      "number": 30,
+      "speaker": "KING HENRY",
+      "text": "No, faith, my coz, wish not a man from England:"
+    },
+    {
+      "number": 31,
+      "speaker": "KING HENRY",
+      "text": "God’s peace! I would not lose so great an honour"
+    },
+    {
+      "number": 32,
+      "speaker": "KING HENRY",
+      "text": "As one man more, methinks, would share from me"
+    },
+    {
+      "number": 33,
+      "speaker": "KING HENRY",
+      "text": "For the best hope I have. O, do not wish one more!"
+    },
+    {
+      "number": 34,
+      "speaker": "KING HENRY",
+      "text": "Rather proclaim it, Westmoreland, through my host,"
+    },
+    {
+      "number": 35,
+      "speaker": "KING HENRY",
+      "text": "That he which hath no stomach to this fight,"
+    },
+    {
+      "number": 36,
+      "speaker": "KING HENRY",
+      "text": "Let him depart; his passport shall be made"
+    },
+    {
+      "number": 37,
+      "speaker": "KING HENRY",
+      "text": "And crowns for convoy put into his purse:"
+    },
+    {
+      "number": 38,
+      "speaker": "KING HENRY",
+      "text": "We would not die in that man’s company"
+    },
+    {
+      "number": 39,
+      "speaker": "KING HENRY",
+      "text": "That fears his fellowship to die with us."
+    },
+    {
+      "number": 40,
+      "speaker": "KING HENRY",
+      "text": "This day is call’d the feast of Crispian:"
+    },
+    {
+      "number": 41,
+      "speaker": "KING HENRY",
+      "text": "He that outlives this day, and comes safe home,"
+    },
+    {
+      "number": 42,
+      "speaker": "KING HENRY",
+      "text": "Will stand a tip-toe when this day is named,"
+    },
+    {
+      "number": 43,
+      "speaker": "KING HENRY",
+      "text": "And rouse him at the name of Crispian."
+    },
+    {
+      "number": 44,
+      "speaker": "KING HENRY",
+      "text": "He that shall live this day, and see old age,"
+    },
+    {
+      "number": 45,
+      "speaker": "KING HENRY",
+      "text": "Will yearly on the vigil feast his neighbours,"
+    },
+    {
+      "number": 46,
+      "speaker": "KING HENRY",
+      "text": "And say, “Tomorrow is Saint Crispian:”"
+    },
+    {
+      "number": 47,
+      "speaker": "KING HENRY",
+      "text": "Then will he strip his sleeve and show his scars,"
+    },
+    {
+      "number": 48,
+      "speaker": "KING HENRY",
+      "text": "And say “These wounds I had on Crispian’s day.”"
+    },
+    {
+      "number": 49,
+      "speaker": "KING HENRY",
+      "text": "Old men forget; yet all shall be forgot,"
+    },
+    {
+      "number": 50,
+      "speaker": "KING HENRY",
+      "text": "But he’ll remember with advantages"
+    },
+    {
+      "number": 51,
+      "speaker": "KING HENRY",
+      "text": "What feats he did that day: then shall our names,"
+    },
+    {
+      "number": 52,
+      "speaker": "KING HENRY",
+      "text": "Familiar in his mouth as household words,"
+    },
+    {
+      "number": 53,
+      "speaker": "KING HENRY",
+      "text": "Harry the king, Bedford and Exeter,"
+    },
+    {
+      "number": 54,
+      "speaker": "KING HENRY",
+      "text": "Warwick and Talbot, Salisbury and Gloucester,"
+    },
+    {
+      "number": 55,
+      "speaker": "KING HENRY",
+      "text": "Be in their flowing cups freshly remember’d."
+    },
+    {
+      "number": 56,
+      "speaker": "KING HENRY",
+      "text": "This story shall the good man teach his son;"
+    },
+    {
+      "number": 57,
+      "speaker": "KING HENRY",
+      "text": "And Crispin Crispian shall ne’er go by,"
+    },
+    {
+      "number": 58,
+      "speaker": "KING HENRY",
+      "text": "From this day to the ending of the world,"
+    },
+    {
+      "number": 59,
+      "speaker": "KING HENRY",
+      "text": "But we in it shall be remembered;"
+    },
+    {
+      "number": 60,
+      "speaker": "KING HENRY",
+      "text": "We few, we happy few, we band of brothers;"
+    },
+    {
+      "number": 61,
+      "speaker": "KING HENRY",
+      "text": "For he today that sheds his blood with me"
+    },
+    {
+      "number": 62,
+      "speaker": "KING HENRY",
+      "text": "Shall be my brother; be he ne’er so vile,"
+    },
+    {
+      "number": 63,
+      "speaker": "KING HENRY",
+      "text": "This day shall gentle his condition:"
+    },
+    {
+      "number": 64,
+      "speaker": "KING HENRY",
+      "text": "And gentlemen in England now abed"
+    },
+    {
+      "number": 65,
+      "speaker": "KING HENRY",
+      "text": "Shall think themselves accursed they were not here,"
+    },
+    {
+      "number": 66,
+      "speaker": "KING HENRY",
+      "text": "And hold their manhoods cheap whiles any speaks"
+    },
+    {
+      "number": 67,
+      "speaker": "KING HENRY",
+      "text": "That fought with us upon Saint Crispin’s day."
+    },
+    {
+      "number": 68,
+      "speaker": "SALISBURY",
+      "text": "My sovereign lord, bestow yourself with speed:"
+    },
+    {
+      "number": 69,
+      "speaker": "SALISBURY",
+      "text": "The French are bravely in their battles set,"
+    },
+    {
+      "number": 70,
+      "speaker": "SALISBURY",
+      "text": "And will with all expedience charge on us."
+    },
+    {
+      "number": 71,
+      "speaker": "KING HENRY",
+      "text": "All things are ready, if our minds be so."
+    },
+    {
+      "number": 72,
+      "speaker": "WESTMORELAND",
+      "text": "Perish the man whose mind is backward now!"
+    },
+    {
+      "number": 73,
+      "speaker": "KING HENRY",
+      "text": "Thou dost not wish more help from England, coz?"
+    },
+    {
+      "number": 74,
+      "speaker": "WESTMORELAND",
+      "text": "God’s will! my liege, would you and I alone,"
+    },
+    {
+      "number": 75,
+      "speaker": "WESTMORELAND",
+      "text": "Without more help, could fight this royal battle!"
+    },
+    {
+      "number": 76,
+      "speaker": "KING HENRY",
+      "text": "Why, now thou hast unwish’d five thousand men;"
+    },
+    {
+      "number": 77,
+      "speaker": "KING HENRY",
+      "text": "Which likes me better than to wish us one."
+    },
+    {
+      "number": 78,
+      "speaker": "KING HENRY",
+      "text": "You know your places: God be with you all!"
+    },
+    {
+      "number": 79,
+      "speaker": "MONTJOY",
+      "text": "Once more I come to know of thee, King Harry,"
+    },
+    {
+      "number": 80,
+      "speaker": "MONTJOY",
+      "text": "If for thy ransom thou wilt now compound,"
+    },
+    {
+      "number": 81,
+      "speaker": "MONTJOY",
+      "text": "Before thy most assured overthrow:"
+    },
+    {
+      "number": 82,
+      "speaker": "MONTJOY",
+      "text": "For certainly thou art so near the gulf,"
+    },
+    {
+      "number": 83,
+      "speaker": "MONTJOY",
+      "text": "Thou needs must be englutted. Besides, in mercy,"
+    },
+    {
+      "number": 84,
+      "speaker": "MONTJOY",
+      "text": "The constable desires thee thou wilt mind"
+    },
+    {
+      "number": 85,
+      "speaker": "MONTJOY",
+      "text": "Thy followers of repentance; that their souls"
+    },
+    {
+      "number": 86,
+      "speaker": "MONTJOY",
+      "text": "May make a peaceful and a sweet retire"
+    },
+    {
+      "number": 87,
+      "speaker": "MONTJOY",
+      "text": "From off these fields, where, wretches, their poor bodies"
+    },
+    {
+      "number": 88,
+      "speaker": "MONTJOY",
+      "text": "Must lie and fester."
+    },
+    {
+      "number": 88,
+      "speaker": "KING HENRY",
+      "text": "Who hath sent thee now?"
+    },
+    {
+      "number": 89,
+      "speaker": "MONTJOY",
+      "text": "The Constable of France."
+    },
+    {
+      "number": 90,
+      "speaker": "KING HENRY",
+      "text": "I pray thee, bear my former answer back:"
+    },
+    {
+      "number": 91,
+      "speaker": "KING HENRY",
+      "text": "Bid them achieve me and then sell my bones."
+    },
+    {
+      "number": 92,
+      "speaker": "KING HENRY",
+      "text": "Good God! why should they mock poor fellows thus?"
+    },
+    {
+      "number": 93,
+      "speaker": "KING HENRY",
+      "text": "The man that once did sell the lion’s skin"
+    },
+    {
+      "number": 94,
+      "speaker": "KING HENRY",
+      "text": "While the beast lived, was killed with hunting him."
+    },
+    {
+      "number": 95,
+      "speaker": "KING HENRY",
+      "text": "A many of our bodies shall no doubt"
+    },
+    {
+      "number": 96,
+      "speaker": "KING HENRY",
+      "text": "Find native graves; upon the which, I trust,"
+    },
+    {
+      "number": 97,
+      "speaker": "KING HENRY",
+      "text": "Shall witness live in brass of this day’s work:"
+    },
+    {
+      "number": 98,
+      "speaker": "KING HENRY",
+      "text": "And those that leave their valiant bones in France,"
+    },
+    {
+      "number": 99,
+      "speaker": "KING HENRY",
+      "text": "Dying like men, though buried in your dunghills,"
+    },
+    {
+      "number": 100,
+      "speaker": "KING HENRY",
+      "text": "They shall be famed; for there the sun shall greet them,"
+    },
+    {
+      "number": 101,
+      "speaker": "KING HENRY",
+      "text": "And draw their honours reeking up to heaven;"
+    },
+    {
+      "number": 102,
+      "speaker": "KING HENRY",
+      "text": "Leaving their earthly parts to choke your clime,"
+    },
+    {
+      "number": 103,
+      "speaker": "KING HENRY",
+      "text": "The smell whereof shall breed a plague in France."
+    },
+    {
+      "number": 104,
+      "speaker": "KING HENRY",
+      "text": "Mark then abounding valour in our English,"
+    },
+    {
+      "number": 105,
+      "speaker": "KING HENRY",
+      "text": "That being dead, like to the bullet’s grazing,"
+    },
+    {
+      "number": 106,
+      "speaker": "KING HENRY",
+      "text": "Break out into a second course of mischief,"
+    },
+    {
+      "number": 107,
+      "speaker": "KING HENRY",
+      "text": "Killing in relapse of mortality."
+    },
+    {
+      "number": 108,
+      "speaker": "KING HENRY",
+      "text": "Let me speak proudly: tell the constable"
+    },
+    {
+      "number": 109,
+      "speaker": "KING HENRY",
+      "text": "We are but warriors for the working-day;"
+    },
+    {
+      "number": 110,
+      "speaker": "KING HENRY",
+      "text": "Our gayness and our gilt are all besmirch’d"
+    },
+    {
+      "number": 111,
+      "speaker": "KING HENRY",
+      "text": "With rainy marching in the painful field;"
+    },
+    {
+      "number": 112,
+      "speaker": "KING HENRY",
+      "text": "There’s not a piece of feather in our host—"
+    },
+    {
+      "number": 113,
+      "speaker": "KING HENRY",
+      "text": "Good argument, I hope, we will not fly—"
+    },
+    {
+      "number": 114,
+      "speaker": "KING HENRY",
+      "text": "And time hath worn us into slovenry:"
+    },
+    {
+      "number": 115,
+      "speaker": "KING HENRY",
+      "text": "But, by the mass, our hearts are in the trim;"
+    },
+    {
+      "number": 116,
+      "speaker": "KING HENRY",
+      "text": "And my poor soldiers tell me, yet ere night"
+    },
+    {
+      "number": 117,
+      "speaker": "KING HENRY",
+      "text": "They’ll be in fresher robes, or they will pluck"
+    },
+    {
+      "number": 118,
+      "speaker": "KING HENRY",
+      "text": "The gay new coats o’er the French soldiers’ heads"
+    },
+    {
+      "number": 119,
+      "speaker": "KING HENRY",
+      "text": "And turn them out of service. If they do this—"
+    },
+    {
+      "number": 120,
+      "speaker": "KING HENRY",
+      "text": "As, if God please, they shall—my ransom then"
+    },
+    {
+      "number": 121,
+      "speaker": "KING HENRY",
+      "text": "Will soon be levied. Herald, save thou thy labour;"
+    },
+    {
+      "number": 122,
+      "speaker": "KING HENRY",
+      "text": "Come thou no more for ransom, gentle herald:"
+    },
+    {
+      "number": 123,
+      "speaker": "KING HENRY",
+      "text": "They shall have none, I swear, but these my joints;"
+    },
+    {
+      "number": 124,
+      "speaker": "KING HENRY",
+      "text": "Which if they have as I will leave ’em them,"
+    },
+    {
+      "number": 125,
+      "speaker": "KING HENRY",
+      "text": "Shall yield them little, tell the constable."
+    },
+    {
+      "number": 126,
+      "speaker": "MONTJOY",
+      "text": "I shall, King Harry. And so fare thee well:"
+    },
+    {
+      "number": 127,
+      "speaker": "MONTJOY",
+      "text": "Thou never shalt hear herald any more."
+    },
+    {
+      "number": 128,
+      "speaker": "KING HENRY",
+      "text": "I fear thou’lt once more come again for ransom."
+    },
+    {
+      "number": 129,
+      "speaker": "YORK",
+      "text": "My lord, most humbly on my knee I beg"
+    },
+    {
+      "number": 130,
+      "speaker": "YORK",
+      "text": "The leading of the vaward."
+    },
+    {
+      "number": 131,
+      "speaker": "KING HENRY",
+      "text": "Take it, brave York. Now, soldiers, march away:"
+    },
+    {
+      "number": 132,
+      "speaker": "KING HENRY",
+      "text": "And how thou pleasest, God, dispose the day!"
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Gloucester, Bedford, Exeter, Erpingham, with all his host: Salisbury and Westmoreland."
+    },
+    {
+      "after_line": 14,
+      "text": "Exit Salisbury."
+    },
+    {
+      "after_line": 16,
+      "text": "Enter the King."
+    },
+    {
+      "after_line": 67,
+      "text": "Enter Salisbury."
+    },
+    {
+      "after_line": 78,
+      "text": "Tucket. Enter Montjoy."
+    },
+    {
+      "after_line": 127,
+      "text": "Exit."
+    },
+    {
+      "after_line": 128,
+      "text": "Enter York."
+    },
+    {
+      "after_line": 132,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act4_scene3_gloss1",
+      "line": 3,
+      "phrase": "threescore thousand",
+      "definition": "sixty thousand — Westmoreland's wildly inflated estimate of the French; the historical English/French ratio was closer to 1:4 or 1:5"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss2",
+      "line": 4,
+      "phrase": "five to one",
+      "definition": "five-to-one odds — Exeter's calculation; historically the French outnumbered the English roughly 3–5 to 1"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss3",
+      "line": 5,
+      "phrase": "fearful odds",
+      "definition": "terrifying numerical disadvantage"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss4",
+      "line": 14,
+      "phrase": "framed of the firm truth of valour",
+      "definition": "made of solid, unflinching valour"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss5",
+      "line": 17,
+      "phrase": "ten thousand of those men in England",
+      "definition": "Westmoreland wishes for reinforcements — the play's set-up line for Henry's reply"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss6",
+      "line": 20,
+      "phrase": "mark’d to die",
+      "definition": "marked out for death"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss7",
+      "line": 20,
+      "phrase": "enow",
+      "definition": "enough"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss8",
+      "line": 22,
+      "phrase": "fewer men, the greater share of honour",
+      "definition": "Henry's keynote — fewer sharers means each gets more glory"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss9",
+      "line": 24,
+      "phrase": "By Jove",
+      "definition": "by Jupiter — mild classical oath"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss10",
+      "line": 26,
+      "phrase": "yearns me not",
+      "definition": "doesn't grieve me — 'yearn' = grieve"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss11",
+      "line": 28,
+      "phrase": "sin to covet honour",
+      "definition": "if wanting honour is a sin — Henry's self-confessed ambition, the speech's personal note"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss12",
+      "line": 30,
+      "phrase": "coz",
+      "definition": "cousin — affectionate contraction"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss13",
+      "line": 34,
+      "phrase": "proclaim it, Westmoreland",
+      "definition": "Henry invites anyone unwilling to leave — a daring morale-setting gambit"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss14",
+      "line": 35,
+      "phrase": "hath no stomach to this fight",
+      "definition": "has no appetite (or courage) for the battle"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss15",
+      "line": 36,
+      "phrase": "passport shall be made",
+      "definition": "traveling documents will be provided — formal permission to leave"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss16",
+      "line": 37,
+      "phrase": "crowns for convoy",
+      "definition": "money for the journey home — 'crowns' = coins"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss17",
+      "line": 40,
+      "phrase": "feast of Crispian",
+      "definition": "St. Crispin's Day, October 25 — the date of Agincourt, 1415; Crispin and Crispianus (or Crispinian) were twin 3rd-century cobbler-saints martyred under Diocletian"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss18",
+      "line": 42,
+      "phrase": "Will stand a tip-toe",
+      "definition": "will stand up on tiptoe (with pride) when this day is mentioned"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss19",
+      "line": 45,
+      "phrase": "vigil",
+      "definition": "the eve of a feast — the day before"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss20",
+      "line": 47,
+      "phrase": "strip his sleeve and show his scars",
+      "definition": "the retired soldier's boast — the speech's physical gesture"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss21",
+      "line": 50,
+      "phrase": "remember with advantages",
+      "definition": "remember with exaggerations — Henry's realism about aging memory"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss22",
+      "line": 52,
+      "phrase": "Familiar in his mouth as household words",
+      "definition": "spoken as routinely as everyday expressions — the source of 'household words'"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss23",
+      "line": 53,
+      "phrase": "Harry the king, Bedford and Exeter",
+      "definition": "Henry names his own company — binding them to himself in memory"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss24",
+      "line": 55,
+      "phrase": "flowing cups freshly remember’d",
+      "definition": "remembered anew over the cups — the veterans drinking together"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss25",
+      "line": 57,
+      "phrase": "Crispin Crispian",
+      "definition": "the twin saints' names paired — the speech's liturgical cadence"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss26",
+      "line": 60,
+      "phrase": "We few, we happy few, we band of brothers",
+      "definition": "the speech's most-quoted line — 'band of brothers' becomes the foundational phrase of Anglo-American military fraternity (used for the WWII 101st Airborne, later the HBO series)"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss27",
+      "line": 61,
+      "phrase": "sheds his blood with me",
+      "definition": "fights alongside me and bleeds with me"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss28",
+      "line": 62,
+      "phrase": "vile",
+      "definition": "low-born; socially base — 'vile' in this period means low in rank, not morally evil"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss29",
+      "line": 63,
+      "phrase": "gentle his condition",
+      "definition": "raise him to the rank of gentleman; make him noble — the promise of social elevation through shared combat, the speech's operative pledge"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss30",
+      "line": 64,
+      "phrase": "gentlemen in England now abed",
+      "definition": "the nobles at home in bed — safe, and (Henry implies) less manly"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss31",
+      "line": 65,
+      "phrase": "accursed they were not here",
+      "definition": "they will curse themselves for missing this battle"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss32",
+      "line": 66,
+      "phrase": "hold their manhoods cheap",
+      "definition": "they will feel their masculinity is worth less"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss33",
+      "line": 67,
+      "phrase": "Saint Crispin’s day",
+      "definition": "October 25 — the battle's date, now bound to the speech"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss34",
+      "line": 70,
+      "phrase": "expedience",
+      "definition": "speed"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss35",
+      "line": 72,
+      "phrase": "Perish the man whose mind is backward now",
+      "definition": "cursed be anyone who now hesitates"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss36",
+      "line": 76,
+      "phrase": "unwish’d five thousand men",
+      "definition": "wished away 5,000 men by reducing the wished-for number"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss37",
+      "line": 82,
+      "phrase": "gulf",
+      "definition": "abyss; whirlpool"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss38",
+      "line": 83,
+      "phrase": "englutted",
+      "definition": "swallowed up"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss39",
+      "line": 84,
+      "phrase": "mind / Thy followers of repentance",
+      "definition": "remind your soldiers to repent — Montjoy's grim courtesy before battle"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss40",
+      "line": 91,
+      "phrase": "achieve me and then sell my bones",
+      "definition": "defeat me first, then profit from my corpse — Henry's sardonic answer"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss41",
+      "line": 93,
+      "phrase": "sell the lion’s skin / While the beast lived",
+      "definition": "proverb — from Aesop's fable; don't count your victory before winning it"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss42",
+      "line": 97,
+      "phrase": "witness live in brass of this day’s work",
+      "definition": "brass monuments will testify to this day's deeds"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss43",
+      "line": 101,
+      "phrase": "draw their honours reeking up to heaven",
+      "definition": "raise their smoking honours to heaven — 'reeking' = steaming, smoking"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss44",
+      "line": 103,
+      "phrase": "smell whereof shall breed a plague",
+      "definition": "English corpses rotting will poison France — a grotesque threat"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss45",
+      "line": 105,
+      "phrase": "bullet’s grazing",
+      "definition": "a cannonball skipping along the ground and bouncing up to kill again"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss46",
+      "line": 107,
+      "phrase": "Killing in relapse of mortality",
+      "definition": "killing twice — once dying, once after death"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss47",
+      "line": 109,
+      "phrase": "warriors for the working-day",
+      "definition": "workaday soldiers — Henry contrasts his ragged men with parade-ground finery"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss48",
+      "line": 110,
+      "phrase": "gayness and our gilt are all besmirch’d",
+      "definition": "our bright colours and gilding are all tarnished"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss49",
+      "line": 114,
+      "phrase": "worn us into slovenry",
+      "definition": "worn our appearance into slovenliness"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss50",
+      "line": 115,
+      "phrase": "hearts are in the trim",
+      "definition": "hearts are in fighting condition — 'trim' = order, readiness"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss51",
+      "line": 121,
+      "phrase": "Herald, save thou thy labour",
+      "definition": "spare yourself the trouble; no more negotiations"
+    },
+    {
+      "id": "henry_v_act4_scene3_gloss52",
+      "line": 130,
+      "phrase": "leading of the vaward",
+      "definition": "command of the vanguard — the front division in battle"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act4_scene3_ann1",
+      "line_start": 18,
+      "line_end": 39,
+      "citation_display": "Henry V 4.3.18–39",
+      "category": "close_reading",
+      "title": "The speech's opening inversion — fewer, not more",
+      "body": "The Crispin's Day oration begins with a reversal that does most of the speech's political work. Westmoreland wishes for reinforcements; Henry answers by wishing for even fewer men. 'If we are mark'd to die, we are enow / To do our country loss; and if to live, / The fewer men, the greater share of honour.' The rhetorical move is calculated: by publicly welcoming under-numbering, Henry takes the army's greatest liability (numerical inferiority) and converts it into the army's greatest asset (concentrated glory). The premise is that honour is a finite resource divided among the survivors, so a smaller share-base produces more per head. This is mathematically absurd and rhetorically irresistible. Westmoreland is immediately converted (line 74: 'Would you and I alone, / Without more help, could fight this royal battle!'). Henry now offers passports and pocket money to any man unwilling to fight; none leave. The opening inversion is the gate of the speech, and the audience feels it work.",
+      "sources": [
+        "Madeleine Doran, Shakespeare's Dramatic Language (1976)",
+        "Gary Taylor (ed.), Henry V (1982)"
+      ]
+    },
+    {
+      "id": "henry_v_act4_scene3_ann2",
+      "line_start": 40,
+      "line_end": 67,
+      "citation_display": "Henry V 4.3.40–67",
+      "category": "thematic",
+      "title": "'Band of brothers' and the politics of fraternity",
+      "body": "The core of the Crispin's Day speech — 'We few, we happy few, we band of brothers; / For he today that sheds his blood with me / Shall be my brother; be he ne'er so vile, / This day shall gentle his condition' — makes two enormous promises at once. The first is fraternity: the king will call the meanest soldier 'brother.' The second is social elevation: 'vile' here means low-born (not morally evil in this period), and 'gentle his condition' means to raise him to the rank of gentleman. Henry is offering, in effect, that shared combat will dissolve class distinction. The promise is explosive; it is also, historically, not kept. Agincourt's low-born survivors returned to England as commoners; very few were raised in rank. But the speech's rhetorical power is not damaged by its promise's thin fulfilment: the 'band of brothers' phrase has become foundational to English and American military rhetoric, used for the WWII 101st Airborne ('Easy Company'), later the HBO miniseries title, and across innumerable commemorations. The speech keeps working on any reading of Henry — patriotic or critical — because the promise of shared sacrifice and honour is, in the moment of battle, genuinely mobilizing. The fact that the speech works on the 'cynical' Henry as well as the 'heroic' one is itself part of the play's argument about rhetoric and power.",
+      "sources": [
+        "Norman Rabkin, 'Either/Or' (1981)",
+        "Stephen Ambrose, Band of Brothers (1992)",
+        "Graham Holderness, Shakespeare: The Histories (2000)"
+      ]
+    },
+    {
+      "id": "henry_v_act4_scene3_ann3",
+      "line_start": 85,
+      "line_end": 130,
+      "citation_display": "Henry V 4.3.85–130",
+      "category": "close_reading",
+      "title": "Henry's answer to Montjoy — the second, private oration",
+      "body": "After the public Crispin's Day speech, Montjoy returns for one more attempt at ransom, and Henry delivers what is effectively a second oration, less quoted but equally tight. 'We are but warriors for the working-day; / Our gayness and our gilt are all besmirch'd / With rainy marching in the painful field.' The tonal register is entirely different from the high-heroic 'band of brothers' speech: plainer, grittier, almost proletarian ('working-day,' 'slovenry,' 'poor soldiers'). Henry offers the French the image of his army as an honest working crew in dirty uniforms. It is also a commitment not to be ransomed: 'they shall have none, I swear, but these my joints' — his body is the only ransom. The combination — a public oration that promises nobility and a private answer that promises only labour and death — is rhetorically masterful. Readers should notice how many registers Henry can speak in and how each is pitched for its audience.",
+      "sources": [
+        "Brian Vickers, The Artistry of Shakespeare's Prose (1968)",
+        "Emrys Jones, Scenic Form in Shakespeare (1971)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act4_scene3_q1",
+      "kind": "close_reading",
+      "prompt": "What does Henry do with Westmoreland's wish for ten thousand more men from England?",
+      "options": [
+        "Grants it by sending a messenger",
+        "Inverts it — 'The fewer men, the greater share of honour' — converting the army's numerical liability into a rhetorical asset, then offering passports to anyone unwilling to fight",
+        "Rebukes Westmoreland publicly",
+        "Delays the battle to await reinforcements"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 18,
+      "anchor_line_end": 39
+    },
+    {
+      "id": "henry_v_act4_scene3_q2",
+      "kind": "theme",
+      "prompt": "What does 'be he ne'er so vile, / This day shall gentle his condition' (lines 62–63) promise?",
+      "options": [
+        "That cowards will be pardoned",
+        "That a low-born man ('vile' = socially base in period usage) who fights today will be raised to the rank of gentleman — a promise of social elevation through shared combat",
+        "That French prisoners will be treated well",
+        "That Henry's brothers will be made dukes"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 62,
+      "anchor_line_end": 63
+    },
+    {
+      "id": "henry_v_act4_scene3_q3",
+      "kind": "theme",
+      "prompt": "How does 'band of brothers' work on the critical (as well as patriotic) reading of Henry?",
+      "options": [
+        "It doesn't — cynical readings make the speech ineffective",
+        "The speech remains effective on any reading; even a calculating or cynical Henry could deliver it, and the rhetorical power of shared sacrifice doesn't depend on the speaker's sincerity. This is itself part of the play's argument about rhetoric and power",
+        "Only Olivier's 1944 film supports the patriotic reading",
+        "The speech is absent from critical editions"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 35,
+      "anchor_line_start": 60,
+      "anchor_line_end": 67
+    },
+    {
+      "id": "henry_v_act4_scene3_q4",
+      "kind": "close_reading",
+      "prompt": "What register does Henry use in his answer to Montjoy (lines 108–125)?",
+      "options": [
+        "Same as the Crispin's Day oration",
+        "Plain, gritty, almost proletarian — 'warriors for the working-day,' 'besmirch'd' gilt, 'slovenry,' 'poor soldiers.' The tonal shift is pitched for the French herald",
+        "Outraged Latinate grandeur",
+        "Formal verse quatrains"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 108,
+      "anchor_line_end": 125
+    },
+    {
+      "id": "henry_v_act4_scene3_q5",
+      "kind": "comprehension",
+      "prompt": "What date is St. Crispin's Day, and why does it matter?",
+      "options": [
+        "June 15 — the anniversary of Henry's coronation",
+        "October 25 — the date of the Battle of Agincourt (1415); saints Crispin and Crispianus were 3rd-century martyred shoemakers",
+        "March 1 — St. David's Day",
+        "April 23 — St. George's Day"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 40,
+      "anchor_line_end": 48
+    },
+    {
+      "id": "henry_v_act4_scene3_q6",
+      "kind": "structural",
+      "prompt": "Why is the Crispin's Day speech preceded by a second Montjoy-embassy (lines 79–88)?",
+      "options": [
+        "To give Montjoy more lines",
+        "To give Henry a second oration-audience: the French herald gets the 'working-day' register, after the army has been given the 'band of brothers' register. The two audiences receive different speeches",
+        "Because Westmoreland requested it",
+        "Because Montjoy has changed sides"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 79,
+      "anchor_line_end": 130
+    }
+  ]
+}

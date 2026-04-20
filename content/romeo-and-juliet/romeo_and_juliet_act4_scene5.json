@@ -1,0 +1,884 @@
+{
+  "section_id": "romeo_and_juliet_act4_scene5",
+  "work_id": "romeo-and-juliet",
+  "sequence": 23,
+  "act": 4,
+  "scene": 5,
+  "kind": "scene",
+  "scene_title": "Juliet's chamber",
+  "line_count": 135,
+  "word_count": 1084,
+  "est_read_minutes": 5,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "NURSE",
+      "text": "Mistress! what, mistress! Juliet! fast, I warrant her, she:"
+    },
+    {
+      "number": 2,
+      "speaker": "NURSE",
+      "text": "Why, lamb! why, lady! fie, you slug-a-bed!"
+    },
+    {
+      "number": 3,
+      "speaker": "NURSE",
+      "text": "Why, love, I say! madam! sweet-heart! why, bride!"
+    },
+    {
+      "number": 4,
+      "speaker": "NURSE",
+      "text": "What, not a word? you take your pennyworths now;"
+    },
+    {
+      "number": 5,
+      "speaker": "NURSE",
+      "text": "Sleep for a week; for the next night, I warrant,"
+    },
+    {
+      "number": 6,
+      "speaker": "NURSE",
+      "text": "The County Paris hath set up his rest,"
+    },
+    {
+      "number": 7,
+      "speaker": "NURSE",
+      "text": "That you shall rest but little. God forgive me,"
+    },
+    {
+      "number": 8,
+      "speaker": "NURSE",
+      "text": "Marry, and amen, how sound is she asleep!"
+    },
+    {
+      "number": 9,
+      "speaker": "NURSE",
+      "text": "I must needs wake her. Madam, madam, madam!"
+    },
+    {
+      "number": 10,
+      "speaker": "NURSE",
+      "text": "Ay, let the county take you in your bed;"
+    },
+    {
+      "number": 11,
+      "speaker": "NURSE",
+      "text": "He’ll fright you up, i’ faith. Will it not be? Undraws the curtains."
+    },
+    {
+      "number": 12,
+      "speaker": "NURSE",
+      "text": "What, dress’d! and in your clothes! and down again!"
+    },
+    {
+      "number": 13,
+      "speaker": "NURSE",
+      "text": "I must needs wake you: Lady! lady! lady!"
+    },
+    {
+      "number": 14,
+      "speaker": "NURSE",
+      "text": "Alas, alas! Help, help! my lady’s dead!"
+    },
+    {
+      "number": 15,
+      "speaker": "NURSE",
+      "text": "O, well-a-day, that ever I was born!"
+    },
+    {
+      "number": 16,
+      "speaker": "NURSE",
+      "text": "Some aqua vitae, ho! My lord! my lady!"
+    },
+    {
+      "number": 17,
+      "speaker": "LADY CAPULET",
+      "text": "What noise is here?"
+    },
+    {
+      "number": 17,
+      "speaker": "NURSE",
+      "text": "O lamentable day!"
+    },
+    {
+      "number": 18,
+      "speaker": "LADY CAPULET",
+      "text": "What is the matter?"
+    },
+    {
+      "number": 18,
+      "speaker": "NURSE",
+      "text": "Look, look! O heavy day!"
+    },
+    {
+      "number": 19,
+      "speaker": "LADY CAPULET",
+      "text": "O me, O me! My child, my only life,"
+    },
+    {
+      "number": 20,
+      "speaker": "LADY CAPULET",
+      "text": "Revive, look up, or I will die with thee!"
+    },
+    {
+      "number": 21,
+      "speaker": "LADY CAPULET",
+      "text": "Help, help! Call help."
+    },
+    {
+      "number": 22,
+      "speaker": "CAPULET",
+      "text": "For shame, bring Juliet forth; her lord is come."
+    },
+    {
+      "number": 23,
+      "speaker": "NURSE",
+      "text": "She’s dead, deceased, she’s dead; alack the day!"
+    },
+    {
+      "number": 24,
+      "speaker": "LADY CAPULET",
+      "text": "Alack the day, she’s dead, she’s dead, she’s dead!"
+    },
+    {
+      "number": 25,
+      "speaker": "CAPULET",
+      "text": "Ha! let me see her: out, alas! she’s cold;"
+    },
+    {
+      "number": 26,
+      "speaker": "CAPULET",
+      "text": "Her blood is settled, and her joints are stiff;"
+    },
+    {
+      "number": 27,
+      "speaker": "CAPULET",
+      "text": "Life and these lips have long been separated:"
+    },
+    {
+      "number": 28,
+      "speaker": "CAPULET",
+      "text": "Death lies on her like an untimely frost"
+    },
+    {
+      "number": 29,
+      "speaker": "CAPULET",
+      "text": "Upon the sweetest flower of all the field."
+    },
+    {
+      "number": 30,
+      "speaker": "NURSE",
+      "text": "O lamentable day!"
+    },
+    {
+      "number": 30,
+      "speaker": "LADY CAPULET",
+      "text": "O woeful time!"
+    },
+    {
+      "number": 31,
+      "speaker": "CAPULET",
+      "text": "Death, that hath ta’en her hence to make me wail,"
+    },
+    {
+      "number": 32,
+      "speaker": "CAPULET",
+      "text": "Ties up my tongue, and will not let me speak."
+    },
+    {
+      "number": 33,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Come, is the bride ready to go to church?"
+    },
+    {
+      "number": 34,
+      "speaker": "CAPULET",
+      "text": "Ready to go, but never to return."
+    },
+    {
+      "number": 35,
+      "speaker": "CAPULET",
+      "text": "O son! the night before thy wedding-day"
+    },
+    {
+      "number": 36,
+      "speaker": "CAPULET",
+      "text": "Hath Death lain with thy wife. There she lies,"
+    },
+    {
+      "number": 37,
+      "speaker": "CAPULET",
+      "text": "Flower as she was, deflowered by him."
+    },
+    {
+      "number": 38,
+      "speaker": "CAPULET",
+      "text": "Death is my son-in-law, Death is my heir;"
+    },
+    {
+      "number": 39,
+      "speaker": "CAPULET",
+      "text": "My daughter he hath wedded: I will die,"
+    },
+    {
+      "number": 40,
+      "speaker": "CAPULET",
+      "text": "And leave him all; life, living, all is Death’s."
+    },
+    {
+      "number": 41,
+      "speaker": "PARIS",
+      "text": "Have I thought long to see this morning’s face,"
+    },
+    {
+      "number": 42,
+      "speaker": "PARIS",
+      "text": "And doth it give me such a sight as this?"
+    },
+    {
+      "number": 43,
+      "speaker": "LADY CAPULET",
+      "text": "Accursed, unhappy, wretched, hateful day!"
+    },
+    {
+      "number": 44,
+      "speaker": "LADY CAPULET",
+      "text": "Most miserable hour that e’er time saw"
+    },
+    {
+      "number": 45,
+      "speaker": "LADY CAPULET",
+      "text": "In lasting labour of his pilgrimage!"
+    },
+    {
+      "number": 46,
+      "speaker": "LADY CAPULET",
+      "text": "But one, poor one, one poor and loving child,"
+    },
+    {
+      "number": 47,
+      "speaker": "LADY CAPULET",
+      "text": "But one thing to rejoice and solace in,"
+    },
+    {
+      "number": 48,
+      "speaker": "LADY CAPULET",
+      "text": "And cruel death hath catch’d it from my sight!"
+    },
+    {
+      "number": 49,
+      "speaker": "NURSE",
+      "text": "O woe! O woeful, woeful, woeful day!"
+    },
+    {
+      "number": 50,
+      "speaker": "NURSE",
+      "text": "Most lamentable day, most woeful day,"
+    },
+    {
+      "number": 51,
+      "speaker": "NURSE",
+      "text": "That ever, ever, I did yet behold!"
+    },
+    {
+      "number": 52,
+      "speaker": "NURSE",
+      "text": "O day! O day! O day! O hateful day!"
+    },
+    {
+      "number": 53,
+      "speaker": "NURSE",
+      "text": "Never was seen so black a day as this:"
+    },
+    {
+      "number": 54,
+      "speaker": "NURSE",
+      "text": "O woeful day, O woeful day!"
+    },
+    {
+      "number": 54,
+      "speaker": "PARIS",
+      "text": "Beguiled, divorced, wronged, spited, slain!"
+    },
+    {
+      "number": 55,
+      "speaker": "PARIS",
+      "text": "Most detestable death, by thee beguiled,"
+    },
+    {
+      "number": 56,
+      "speaker": "PARIS",
+      "text": "By cruel cruel thee quite overthrown!"
+    },
+    {
+      "number": 57,
+      "speaker": "PARIS",
+      "text": "O love! O life! not life, but love in death!"
+    },
+    {
+      "number": 58,
+      "speaker": "CAPULET",
+      "text": "Despised, distressed, hated, martyr’d, kill’d!"
+    },
+    {
+      "number": 59,
+      "speaker": "CAPULET",
+      "text": "Uncomfortable time, why camest thou now"
+    },
+    {
+      "number": 60,
+      "speaker": "CAPULET",
+      "text": "To murder, murder our solemnity?"
+    },
+    {
+      "number": 61,
+      "speaker": "CAPULET",
+      "text": "O child! O child! my soul, and not my child!"
+    },
+    {
+      "number": 62,
+      "speaker": "CAPULET",
+      "text": "Dead art thou! Alack! my child is dead;"
+    },
+    {
+      "number": 63,
+      "speaker": "CAPULET",
+      "text": "And with my child my joys are buried."
+    },
+    {
+      "number": 64,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Peace, ho, for shame! confusion’s cure lives not"
+    },
+    {
+      "number": 65,
+      "speaker": "FRIAR LAURENCE",
+      "text": "In these confusions. Heaven and yourself"
+    },
+    {
+      "number": 66,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Had part in this fair maid; now heaven hath all,"
+    },
+    {
+      "number": 67,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And all the better is it for the maid:"
+    },
+    {
+      "number": 68,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Your part in her you could not keep from death,"
+    },
+    {
+      "number": 69,
+      "speaker": "FRIAR LAURENCE",
+      "text": "But heaven keeps his part in eternal life."
+    },
+    {
+      "number": 70,
+      "speaker": "FRIAR LAURENCE",
+      "text": "The most you sought was her promotion;"
+    },
+    {
+      "number": 71,
+      "speaker": "FRIAR LAURENCE",
+      "text": "For ’twas your heaven she should be advanced:"
+    },
+    {
+      "number": 72,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And weep ye now, seeing she is advanced"
+    },
+    {
+      "number": 73,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Above the clouds, as high as heaven itself?"
+    },
+    {
+      "number": 74,
+      "speaker": "FRIAR LAURENCE",
+      "text": "O, in this love, you love your child so ill,"
+    },
+    {
+      "number": 75,
+      "speaker": "FRIAR LAURENCE",
+      "text": "That you run mad, seeing that she is well:"
+    },
+    {
+      "number": 76,
+      "speaker": "FRIAR LAURENCE",
+      "text": "She’s not well married that lives married long;"
+    },
+    {
+      "number": 77,
+      "speaker": "FRIAR LAURENCE",
+      "text": "But she’s best married that dies married young."
+    },
+    {
+      "number": 78,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Dry up your tears, and stick your rosemary"
+    },
+    {
+      "number": 79,
+      "speaker": "FRIAR LAURENCE",
+      "text": "On this fair corse; and, as the custom is,"
+    },
+    {
+      "number": 80,
+      "speaker": "FRIAR LAURENCE",
+      "text": "In all her best array bear her to church:"
+    },
+    {
+      "number": 81,
+      "speaker": "FRIAR LAURENCE",
+      "text": "For though fond nature bids us all lament,"
+    },
+    {
+      "number": 82,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Yet nature’s tears are reason’s merriment."
+    },
+    {
+      "number": 82,
+      "speaker": "CAPULET",
+      "text": "All things that we ordained festival,"
+    },
+    {
+      "number": 83,
+      "speaker": "CAPULET",
+      "text": "Turn from their office to black funeral;"
+    },
+    {
+      "number": 84,
+      "speaker": "CAPULET",
+      "text": "Our instruments to melancholy bells,"
+    },
+    {
+      "number": 85,
+      "speaker": "CAPULET",
+      "text": "Our wedding cheer to a sad burial feast,"
+    },
+    {
+      "number": 86,
+      "speaker": "CAPULET",
+      "text": "Our solemn hymns to sullen dirges change,"
+    },
+    {
+      "number": 87,
+      "speaker": "CAPULET",
+      "text": "Our bridal flowers serve for a buried corse,"
+    },
+    {
+      "number": 88,
+      "speaker": "CAPULET",
+      "text": "And all things change them to the contrary."
+    },
+    {
+      "number": 89,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Sir, go you in; and, madam, go with him;"
+    },
+    {
+      "number": 90,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And go, Sir Paris; everyone prepare"
+    },
+    {
+      "number": 91,
+      "speaker": "FRIAR LAURENCE",
+      "text": "To follow this fair corse unto her grave:"
+    },
+    {
+      "number": 92,
+      "speaker": "FRIAR LAURENCE",
+      "text": "The heavens do lour upon you for some ill;"
+    },
+    {
+      "number": 93,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Move them no more by crossing their high will."
+    },
+    {
+      "number": 94,
+      "speaker": "FIRST MUSICIAN",
+      "text": "Faith, we may put up our pipes, and be gone."
+    },
+    {
+      "number": 95,
+      "speaker": "NURSE",
+      "text": "Honest good fellows, ah, put up, put up;"
+    },
+    {
+      "number": 96,
+      "speaker": "NURSE",
+      "text": "For, well you know, this is a pitiful case."
+    },
+    {
+      "number": 97,
+      "speaker": "FIRST MUSICIAN",
+      "text": "Ay, by my troth, the case may be amended."
+    },
+    {
+      "number": 98,
+      "speaker": "PETER",
+      "text": "Musicians, O, musicians, “Heart’s ease, Heart’s ease:” O, an you will have"
+    },
+    {
+      "number": 99,
+      "speaker": "PETER",
+      "text": "me live, play “Heart’s ease.”"
+    },
+    {
+      "number": 99,
+      "speaker": "FIRST MUSICIAN",
+      "text": "Why “Heart’s ease”?"
+    },
+    {
+      "number": 100,
+      "speaker": "PETER",
+      "text": "O, musicians, because my heart itself plays “My heart is full of"
+    },
+    {
+      "number": 101,
+      "speaker": "PETER",
+      "text": "woe:” O, play me some merry dump, to comfort me."
+    },
+    {
+      "number": 102,
+      "speaker": "FIRST MUSICIAN",
+      "text": "Not a dump we; ’tis no time to play now."
+    },
+    {
+      "number": 103,
+      "speaker": "PETER",
+      "text": "You will not, then?"
+    },
+    {
+      "number": 103,
+      "speaker": "FIRST MUSICIAN",
+      "text": "No."
+    },
+    {
+      "number": 104,
+      "speaker": "PETER",
+      "text": "I will then give it you soundly."
+    },
+    {
+      "number": 105,
+      "speaker": "FIRST MUSICIAN",
+      "text": "What will you give us?"
+    },
+    {
+      "number": 106,
+      "speaker": "PETER",
+      "text": "No money, on my faith, but the gleek; I will give you the minstrel."
+    },
+    {
+      "number": 107,
+      "speaker": "FIRST MUSICIAN",
+      "text": "Then I will give you the serving-creature."
+    },
+    {
+      "number": 108,
+      "speaker": "PETER",
+      "text": "Then will I lay the serving-creature’s dagger on your pate. I will"
+    },
+    {
+      "number": 109,
+      "speaker": "PETER",
+      "text": "carry no crotchets: I’ll re you, I’ll fa you; do you note"
+    },
+    {
+      "number": 110,
+      "speaker": "PETER",
+      "text": "me?"
+    },
+    {
+      "number": 111,
+      "speaker": "FIRST MUSICIAN",
+      "text": "An you re us and fa us, you note us."
+    },
+    {
+      "number": 112,
+      "speaker": "SECOND MUSICIAN",
+      "text": "Pray you, put up your dagger, and put out your wit."
+    },
+    {
+      "number": 113,
+      "speaker": "PETER",
+      "text": "Then have at you with my wit! I will dry-beat you with"
+    },
+    {
+      "number": 114,
+      "speaker": "PETER",
+      "text": "an iron wit, and put up my iron dagger. Answer me like"
+    },
+    {
+      "number": 115,
+      "speaker": "PETER",
+      "text": "men: “When griping grief the heart doth wound, And doleful dumps the"
+    },
+    {
+      "number": 116,
+      "speaker": "PETER",
+      "text": "mind oppress, Then music with her silver sound”— why “silver sound”? why"
+    },
+    {
+      "number": 117,
+      "speaker": "PETER",
+      "text": "“music with her silver sound”? What say you, Simon Catling?"
+    },
+    {
+      "number": 118,
+      "speaker": "FIRST MUSICIAN",
+      "text": "Marry, sir, because silver hath a sweet sound."
+    },
+    {
+      "number": 119,
+      "speaker": "PETER",
+      "text": "Pretty! What say you, Hugh Rebeck?"
+    },
+    {
+      "number": 120,
+      "speaker": "SECOND MUSICIAN",
+      "text": "I say “silver sound,” because musicians sound for silver."
+    },
+    {
+      "number": 121,
+      "speaker": "PETER",
+      "text": "Pretty too! What say you, James Soundpost?"
+    },
+    {
+      "number": 122,
+      "speaker": "THIRD MUSICIAN",
+      "text": "Faith, I know not what to say."
+    },
+    {
+      "number": 123,
+      "speaker": "PETER",
+      "text": "O, I cry you mercy; you are the singer: I will say"
+    },
+    {
+      "number": 124,
+      "speaker": "PETER",
+      "text": "for you. It is “music with her silver sound,” because musicians have"
+    },
+    {
+      "number": 125,
+      "speaker": "PETER",
+      "text": "no gold for sounding: “Then music with her silver sound With speedy"
+    },
+    {
+      "number": 126,
+      "speaker": "PETER",
+      "text": "help doth lend redress.”"
+    },
+    {
+      "number": 127,
+      "speaker": "FIRST MUSICIAN",
+      "text": "What a pestilent knave is this same!"
+    },
+    {
+      "number": 128,
+      "speaker": "SECOND MUSICIAN",
+      "text": "Hang him, Jack! Come, we’ll in here; tarry for the mourners, and stay dinner."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Nurse."
+    },
+    {
+      "after_line": 16,
+      "text": "Enter Lady Capulet."
+    },
+    {
+      "after_line": 21,
+      "text": "Enter Capulet."
+    },
+    {
+      "after_line": 32,
+      "text": "Enter Friar Laurence and Paris, with Musicians."
+    },
+    {
+      "after_line": 93,
+      "text": "Exeunt Capulet, Lady Capulet, Paris, and Friar Laurence."
+    },
+    {
+      "after_line": 96,
+      "text": "Exit."
+    },
+    {
+      "after_line": 97,
+      "text": "Enter Peter."
+    },
+    {
+      "after_line": 126,
+      "text": "Exit."
+    },
+    {
+      "after_line": 128,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act4_scene5_gloss1",
+      "line": 2,
+      "phrase": "slug-a-bed",
+      "definition": "sluggard; lazy sleeper — the Nurse's affectionate scold"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene5_gloss2",
+      "line": 4,
+      "phrase": "pennyworths",
+      "definition": "small amounts"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene5_gloss3",
+      "line": 11,
+      "phrase": "fright you up",
+      "definition": "startle you awake"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene5_gloss4",
+      "line": 12,
+      "phrase": "down again",
+      "definition": "dressed in her day clothes — but dead"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene5_gloss5",
+      "line": 16,
+      "phrase": "aqua-vitae",
+      "definition": "brandy; strong spirits"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene5_gloss6",
+      "line": 24,
+      "phrase": "Alack the day",
+      "definition": "alas for this day"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene5_gloss7",
+      "line": 65,
+      "phrase": "heaven",
+      "definition": "the Nurse's diagnosis — death as heavenly theft"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene5_gloss8",
+      "line": 25,
+      "phrase": "Out, alas!",
+      "definition": "oh, alas — exclamation of grief"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene5_gloss9",
+      "line": 28,
+      "phrase": "Death lies on her like an untimely frost",
+      "definition": "Capulet's elegiac image — frost killing the fairest spring-flower"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene5_gloss10",
+      "line": 30,
+      "phrase": "O lamentable day",
+      "definition": "lamentable formula repeated many times — the mourners' ritual chorus"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene5_gloss11",
+      "line": 64,
+      "phrase": "Confusion’s cure",
+      "definition": "the remedy for this devastation"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene5_gloss12",
+      "line": 82,
+      "phrase": "ordained festival",
+      "definition": "the planned wedding"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene5_gloss13",
+      "line": 83,
+      "phrase": "black funeral",
+      "definition": "the wedding is now a funeral"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene5_gloss14",
+      "line": 86,
+      "phrase": "dirges",
+      "definition": "mournful hymns"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene5_gloss15",
+      "line": 87,
+      "phrase": "buried corse",
+      "definition": "buried corpse"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene5_gloss16",
+      "line": 95,
+      "phrase": "put up",
+      "definition": "put away — the musicians' instruments are no longer needed"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene5_gloss17",
+      "line": 120,
+      "phrase": "silver sound",
+      "definition": "sweet-toned — a common epithet for music"
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene5_gloss18",
+      "line": 128,
+      "phrase": "Jack",
+      "definition": "rogue; knave — a musicians' jest"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act4_scene5_ann1",
+      "line_start": 40,
+      "line_end": 98,
+      "citation_display": "Romeo and Juliet 4.5.40–98",
+      "category": "structural",
+      "title": "The mourners' ritual — comedy inside tragedy",
+      "body": "The Nurse, Lady Capulet, Paris, and Capulet each deliver stylized laments over Juliet's 'corpse.' The repetitions — 'O lamentable day!', 'O woeful day!' — are so formulaic that they verge on parody. Shakespeare is doing something delicate here: the audience knows Juliet is not dead (she has drunk the Friar's potion), so the mourners' grief is both real and misdirected. The scene then pivots to the musicians and the servant Peter in a small comic interlude (Peter calling for the musicians to play Heart’s ease), giving the audience a pressure-release before Act 5. It is unusual theater — comedy embedded in a false funeral. Some editors consider the Peter scene to be a detachable bit for the comedian Will Kemp; others defend it as Shakespeare's deliberate tone-modulation before the tomb scene.",
+      "sources": [
+        "Susan Snyder, The Comic Matrix of Shakespeare's Tragedies (1979)",
+        "Jill L. Levenson, The Oxford Shakespeare: Romeo and Juliet (2000)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act4_scene5_q1",
+      "kind": "structural",
+      "prompt": "What tone does the scene of lamentation over Juliet's 'corpse' strike?",
+      "options": [
+        "Straightforwardly tragic",
+        "Formally stylized and repetitive, approaching parody — the audience knows Juliet is not really dead, so the mourners' grief is both real and misdirected",
+        "Purely comic",
+        "Silent mime"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 40,
+      "anchor_line_end": 70
+    },
+    {
+      "id": "romeo_and_juliet_act4_scene5_q2",
+      "kind": "inference",
+      "prompt": "Why does Shakespeare follow the funeral laments with a brief comic exchange with musicians?",
+      "options": [
+        "The play is losing its thread",
+        "Deliberate tone-release before Act 5 — and a comic-register echo of Mercutio's lost voice; Peter the servant replaces Mercutio as wit-figure",
+        "To fill time while actors change costume",
+        "It is a printing error"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 98,
+      "anchor_line_end": 135
+    }
+  ]
+}

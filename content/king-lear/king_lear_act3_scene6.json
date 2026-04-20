@@ -1,0 +1,821 @@
+{
+  "section_id": "king_lear_act3_scene6",
+  "work_id": "king-lear",
+  "sequence": 15,
+  "act": 3,
+  "scene": 6,
+  "kind": "scene",
+  "scene_title": "A chamber in a farmhouse adjoining the castle",
+  "line_count": 110,
+  "word_count": 858,
+  "est_read_minutes": 4,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "GLOUCESTER",
+      "text": "Here is better than the open air; take it thankfully. I will"
+    },
+    {
+      "number": 2,
+      "speaker": "GLOUCESTER",
+      "text": "piece out the comfort with what addition I can: I will not"
+    },
+    {
+      "number": 3,
+      "speaker": "GLOUCESTER",
+      "text": "be long from you."
+    },
+    {
+      "number": 4,
+      "speaker": "KENT",
+      "text": "All the power of his wits have given way to his impatience:"
+    },
+    {
+      "number": 5,
+      "speaker": "KENT",
+      "text": "the gods reward your kindness!"
+    },
+    {
+      "number": 5,
+      "speaker": "EDGAR",
+      "text": "Frateretto calls me; and tells me"
+    },
+    {
+      "number": 6,
+      "speaker": "EDGAR",
+      "text": "Nero is an angler in the lake of darkness."
+    },
+    {
+      "number": 7,
+      "speaker": "EDGAR",
+      "text": "Pray, innocent, and beware the foul fiend."
+    },
+    {
+      "number": 8,
+      "speaker": "FOOL",
+      "text": "Prithee, nuncle, tell me whether a madman be a gentleman or a yeoman?"
+    },
+    {
+      "number": 9,
+      "speaker": "KING LEAR",
+      "text": "A king, a king!"
+    },
+    {
+      "number": 10,
+      "speaker": "FOOL",
+      "text": "No, he’s a yeoman that has a gentleman to his son; for"
+    },
+    {
+      "number": 11,
+      "speaker": "FOOL",
+      "text": "he’s a mad yeoman that sees his son a gentleman before him."
+    },
+    {
+      "number": 12,
+      "speaker": "KING LEAR",
+      "text": "To have a thousand with red burning spits"
+    },
+    {
+      "number": 13,
+      "speaker": "KING LEAR",
+      "text": "Come hissing in upon ’em—"
+    },
+    {
+      "number": 13,
+      "speaker": "EDGAR",
+      "text": "The foul fiend bites my back."
+    },
+    {
+      "number": 14,
+      "speaker": "FOOL",
+      "text": "He’s mad that trusts in the tameness of a wolf, a horse’s"
+    },
+    {
+      "number": 15,
+      "speaker": "FOOL",
+      "text": "health, a boy’s love, or a whore’s oath."
+    },
+    {
+      "number": 16,
+      "speaker": "KING LEAR",
+      "text": "It shall be done; I will arraign them straight."
+    },
+    {
+      "number": 17,
+      "speaker": "KING LEAR",
+      "text": "To Edgar. Come, sit thou here, most learned justicer;"
+    },
+    {
+      "number": 18,
+      "speaker": "KING LEAR",
+      "text": "To the Fool. Thou, sapient sir, sit here. Now, you she foxes!"
+    },
+    {
+      "number": 19,
+      "speaker": "EDGAR",
+      "text": "Look, where he stands and glares!"
+    },
+    {
+      "number": 20,
+      "speaker": "EDGAR",
+      "text": "Wantest thou eyes at trial, madam?"
+    },
+    {
+      "number": 21,
+      "speaker": "EDGAR",
+      "text": "Come o’er the bourn, Bessy, to me—"
+    },
+    {
+      "number": 22,
+      "speaker": "FOOL",
+      "text": "Her boat hath a leak,"
+    },
+    {
+      "number": 23,
+      "speaker": "FOOL",
+      "text": "And she must not speak"
+    },
+    {
+      "number": 24,
+      "speaker": "FOOL",
+      "text": "Why she dares not come over to thee."
+    },
+    {
+      "number": 25,
+      "speaker": "EDGAR",
+      "text": "The foul fiend haunts poor Tom in the voice of a nightingale."
+    },
+    {
+      "number": 26,
+      "speaker": "EDGAR",
+      "text": "Hopdance cries in Tom’s belly for two white herring. Croak not, black"
+    },
+    {
+      "number": 27,
+      "speaker": "EDGAR",
+      "text": "angel; I have no food for thee."
+    },
+    {
+      "number": 28,
+      "speaker": "KENT",
+      "text": "How do you, sir? Stand you not so amazed:"
+    },
+    {
+      "number": 29,
+      "speaker": "KENT",
+      "text": "Will you lie down and rest upon the cushions?"
+    },
+    {
+      "number": 30,
+      "speaker": "KING LEAR",
+      "text": "I’ll see their trial first. Bring in the evidence."
+    },
+    {
+      "number": 31,
+      "speaker": "KING LEAR",
+      "text": "To Edgar. Thou robed man of justice, take thy place;"
+    },
+    {
+      "number": 32,
+      "speaker": "KING LEAR",
+      "text": "To the Fool. And thou, his yoke-fellow of equity,"
+    },
+    {
+      "number": 33,
+      "speaker": "KING LEAR",
+      "text": "Bench by his side: To Kent. you are o’ the commission,"
+    },
+    {
+      "number": 34,
+      "speaker": "KING LEAR",
+      "text": "Sit you too."
+    },
+    {
+      "number": 34,
+      "speaker": "EDGAR",
+      "text": "Let us deal justly."
+    },
+    {
+      "number": 35,
+      "speaker": "EDGAR",
+      "text": "Sleepest or wakest thou, jolly shepherd?"
+    },
+    {
+      "number": 36,
+      "speaker": "EDGAR",
+      "text": "Thy sheep be in the corn;"
+    },
+    {
+      "number": 37,
+      "speaker": "EDGAR",
+      "text": "And for one blast of thy minikin mouth,"
+    },
+    {
+      "number": 38,
+      "speaker": "EDGAR",
+      "text": "Thy sheep shall take no harm."
+    },
+    {
+      "number": 39,
+      "speaker": "EDGAR",
+      "text": "Pur! the cat is gray."
+    },
+    {
+      "number": 40,
+      "speaker": "KING LEAR",
+      "text": "Arraign her first; ’tis Goneril. I here take my"
+    },
+    {
+      "number": 41,
+      "speaker": "KING LEAR",
+      "text": "oath before this honourable assembly, she kicked the"
+    },
+    {
+      "number": 42,
+      "speaker": "KING LEAR",
+      "text": "poor king her father."
+    },
+    {
+      "number": 43,
+      "speaker": "FOOL",
+      "text": "Come hither, mistress. Is your name Goneril?"
+    },
+    {
+      "number": 44,
+      "speaker": "KING LEAR",
+      "text": "She cannot deny it."
+    },
+    {
+      "number": 45,
+      "speaker": "FOOL",
+      "text": "Cry you mercy, I took you for a joint-stool."
+    },
+    {
+      "number": 46,
+      "speaker": "KING LEAR",
+      "text": "And here’s another, whose warp’d looks proclaim"
+    },
+    {
+      "number": 47,
+      "speaker": "KING LEAR",
+      "text": "What store her heart is made on. Stop her there!"
+    },
+    {
+      "number": 48,
+      "speaker": "KING LEAR",
+      "text": "Arms, arms, sword, fire! Corruption in the place!"
+    },
+    {
+      "number": 49,
+      "speaker": "KING LEAR",
+      "text": "False justicer, why hast thou let her ’scape?"
+    },
+    {
+      "number": 50,
+      "speaker": "EDGAR",
+      "text": "Bless thy five wits!"
+    },
+    {
+      "number": 51,
+      "speaker": "KENT",
+      "text": "O pity! Sir, where is the patience now,"
+    },
+    {
+      "number": 52,
+      "speaker": "KENT",
+      "text": "That thou so oft have boasted to retain?"
+    },
+    {
+      "number": 53,
+      "speaker": "EDGAR",
+      "text": "My tears begin to take his part so much,"
+    },
+    {
+      "number": 54,
+      "speaker": "EDGAR",
+      "text": "They’ll mar my counterfeiting."
+    },
+    {
+      "number": 55,
+      "speaker": "KING LEAR",
+      "text": "The little dogs and all, Tray, Blanch, and"
+    },
+    {
+      "number": 56,
+      "speaker": "KING LEAR",
+      "text": "Sweet-heart, see, they bark at me."
+    },
+    {
+      "number": 57,
+      "speaker": "EDGAR",
+      "text": "Tom will throw his head at them. Avaunt, you curs!"
+    },
+    {
+      "number": 58,
+      "speaker": "EDGAR",
+      "text": "Be thy mouth or black or white,"
+    },
+    {
+      "number": 59,
+      "speaker": "EDGAR",
+      "text": "Tooth that poisons if it bite;"
+    },
+    {
+      "number": 60,
+      "speaker": "EDGAR",
+      "text": "Mastiff, grey-hound, mongrel grim,"
+    },
+    {
+      "number": 61,
+      "speaker": "EDGAR",
+      "text": "Hound or spaniel, brach or lym,"
+    },
+    {
+      "number": 62,
+      "speaker": "EDGAR",
+      "text": "Or bobtail tike or trundle-tail,"
+    },
+    {
+      "number": 63,
+      "speaker": "EDGAR",
+      "text": "Tom will make them weep and wail:"
+    },
+    {
+      "number": 64,
+      "speaker": "EDGAR",
+      "text": "For, with throwing thus my head,"
+    },
+    {
+      "number": 65,
+      "speaker": "EDGAR",
+      "text": "Dogs leap the hatch, and all are fled."
+    },
+    {
+      "number": 66,
+      "speaker": "KING LEAR",
+      "text": "Then let them anatomize Regan; see what breeds about her heart. Is"
+    },
+    {
+      "number": 67,
+      "speaker": "KING LEAR",
+      "text": "there any cause in nature that makes these hard hearts? To Edgar."
+    },
+    {
+      "number": 68,
+      "speaker": "KING LEAR",
+      "text": "You, sir, I entertain for one of my hundred; only I do"
+    },
+    {
+      "number": 69,
+      "speaker": "KING LEAR",
+      "text": "not like the fashion of your garments: you will say they are"
+    },
+    {
+      "number": 70,
+      "speaker": "KING LEAR",
+      "text": "Persian attire: but let them be changed."
+    },
+    {
+      "number": 71,
+      "speaker": "KENT",
+      "text": "Now, good my lord, lie here and rest awhile."
+    },
+    {
+      "number": 72,
+      "speaker": "KING LEAR",
+      "text": "Make no noise, make no noise; draw the curtains: so, so, so."
+    },
+    {
+      "number": 73,
+      "speaker": "KING LEAR",
+      "text": "We’ll go to supper i’ he morning. So, so, so."
+    },
+    {
+      "number": 74,
+      "speaker": "FOOL",
+      "text": "And I’ll go to bed at noon."
+    },
+    {
+      "number": 75,
+      "speaker": "GLOUCESTER",
+      "text": "Come hither, friend: where is the king my master?"
+    },
+    {
+      "number": 76,
+      "speaker": "KENT",
+      "text": "Here, sir; but trouble him not, his wits are gone."
+    },
+    {
+      "number": 77,
+      "speaker": "GLOUCESTER",
+      "text": "Good friend, I prithee, take him in thy arms;"
+    },
+    {
+      "number": 78,
+      "speaker": "GLOUCESTER",
+      "text": "I have o’erheard a plot of death upon him:"
+    },
+    {
+      "number": 79,
+      "speaker": "GLOUCESTER",
+      "text": "There is a litter ready; lay him in ’t,"
+    },
+    {
+      "number": 80,
+      "speaker": "GLOUCESTER",
+      "text": "And drive towards Dover, friend, where thou shalt meet"
+    },
+    {
+      "number": 81,
+      "speaker": "GLOUCESTER",
+      "text": "Both welcome and protection. Take up thy master:"
+    },
+    {
+      "number": 82,
+      "speaker": "GLOUCESTER",
+      "text": "If thou shouldst dally half an hour, his life,"
+    },
+    {
+      "number": 83,
+      "speaker": "GLOUCESTER",
+      "text": "With thine, and all that offer to defend him,"
+    },
+    {
+      "number": 84,
+      "speaker": "GLOUCESTER",
+      "text": "Stand in assured loss: take up, take up;"
+    },
+    {
+      "number": 85,
+      "speaker": "GLOUCESTER",
+      "text": "And follow me, that will to some provision"
+    },
+    {
+      "number": 86,
+      "speaker": "GLOUCESTER",
+      "text": "Give thee quick conduct."
+    },
+    {
+      "number": 86,
+      "speaker": "KENT",
+      "text": "Oppressed nature sleeps:"
+    },
+    {
+      "number": 87,
+      "speaker": "KENT",
+      "text": "This rest might yet have balm’d thy broken senses,"
+    },
+    {
+      "number": 88,
+      "speaker": "KENT",
+      "text": "Which, if convenience will not allow,"
+    },
+    {
+      "number": 89,
+      "speaker": "KENT",
+      "text": "Stand in hard cure."
+    },
+    {
+      "number": 90,
+      "speaker": "KENT",
+      "text": "To the Fool. Come, help to bear thy master;"
+    },
+    {
+      "number": 91,
+      "speaker": "KENT",
+      "text": "Thou must not stay behind."
+    },
+    {
+      "number": 91,
+      "speaker": "GLOUCESTER",
+      "text": "Come, come, away."
+    },
+    {
+      "number": 92,
+      "speaker": "EDGAR",
+      "text": "When we our betters see bearing our woes,"
+    },
+    {
+      "number": 93,
+      "speaker": "EDGAR",
+      "text": "We scarcely think our miseries our foes."
+    },
+    {
+      "number": 94,
+      "speaker": "EDGAR",
+      "text": "Who alone suffers suffers most i’ the mind,"
+    },
+    {
+      "number": 95,
+      "speaker": "EDGAR",
+      "text": "Leaving free things and happy shows behind:"
+    },
+    {
+      "number": 96,
+      "speaker": "EDGAR",
+      "text": "But then the mind much sufferance doth o’er skip,"
+    },
+    {
+      "number": 97,
+      "speaker": "EDGAR",
+      "text": "When grief hath mates, and bearing fellowship."
+    },
+    {
+      "number": 98,
+      "speaker": "EDGAR",
+      "text": "How light and portable my pain seems now,"
+    },
+    {
+      "number": 99,
+      "speaker": "EDGAR",
+      "text": "When that which makes me bend makes the king bow,"
+    },
+    {
+      "number": 100,
+      "speaker": "EDGAR",
+      "text": "He childed as I father’d! Tom, away!"
+    },
+    {
+      "number": 101,
+      "speaker": "EDGAR",
+      "text": "Mark the high noises; and thyself bewray,"
+    },
+    {
+      "number": 102,
+      "speaker": "EDGAR",
+      "text": "When false opinion, whose wrong thought defiles thee,"
+    },
+    {
+      "number": 103,
+      "speaker": "EDGAR",
+      "text": "In thy just proof, repeals and reconciles thee."
+    },
+    {
+      "number": 104,
+      "speaker": "EDGAR",
+      "text": "What will hap more to-night, safe ’scape the king!"
+    },
+    {
+      "number": 105,
+      "speaker": "EDGAR",
+      "text": "Lurk, lurk."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Gloucester, King Lear, Kent, Fool, and Edgar."
+    },
+    {
+      "after_line": 5,
+      "text": "Exit Gloucester."
+    },
+    {
+      "after_line": 53,
+      "text": "Aside."
+    },
+    {
+      "after_line": 65,
+      "text": "Do de, de, de. Sessa! Come, march to wakes and fairs and market-towns. Poor Tom, thy horn is dry."
+    },
+    {
+      "after_line": 74,
+      "text": "Reenter Gloucester."
+    },
+    {
+      "after_line": 91,
+      "text": "Exeunt all but Edgar."
+    },
+    {
+      "after_line": 105,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act3_scene6_gloss1",
+      "line": 2,
+      "phrase": "piece out",
+      "definition": "supplement; fill in"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss3",
+      "line": 10,
+      "phrase": "yeoman",
+      "definition": "small landholder — Lear on class and nightcaps"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss4",
+      "line": 16,
+      "phrase": "arraign them straight",
+      "definition": "put them on trial immediately — Lear's command begins the mock trial (Q1-only)"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss5",
+      "line": 31,
+      "phrase": "robed man of justice",
+      "definition": "Lear's mad-play court: Poor Tom as judge"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss6",
+      "line": 32,
+      "phrase": "yoke-fellow of equity",
+      "definition": "partner in justice — the Fool"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss7",
+      "line": 43,
+      "phrase": "Come hither, mistress",
+      "definition": "Lear addresses a stool as Goneril in the mad trial"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss8",
+      "line": 46,
+      "phrase": "another",
+      "definition": "Regan as the second stool-defendant"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss9",
+      "line": 45,
+      "phrase": "join-stool",
+      "definition": "joint-stool (a plain bench) — the Fool jests that Lear has 'taken her for a join-stool'"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss10",
+      "line": 49,
+      "phrase": "false justicer",
+      "definition": "corrupt judge — Lear's cry when Regan 'escapes'"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss11",
+      "line": 72,
+      "phrase": "cur",
+      "definition": "mongrel dog"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss13",
+      "line": 66,
+      "phrase": "anatomize Regan",
+      "definition": "dissect her — Lear's ferocious curiosity"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss14",
+      "line": 72,
+      "phrase": "curtains",
+      "definition": "bed-hangings — Lear imagines himself in a royal bed"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss15",
+      "line": 69,
+      "phrase": "Persian attire",
+      "definition": "exotic clothing — Lear's playful reassignment of Tom's rags"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss19",
+      "line": 5,
+      "phrase": "Frateretto",
+      "definition": "demon from Harsnett's 1603 Declaration — another named devil"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss20",
+      "line": 7,
+      "phrase": "fiend",
+      "definition": "Poor Tom's demon"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss22",
+      "line": 17,
+      "phrase": "justicer",
+      "definition": "judge — formal trial vocabulary applied to a farmhouse bench"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss23",
+      "line": 33,
+      "phrase": "commission",
+      "definition": "court deputation"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss24",
+      "line": 48,
+      "phrase": "corruption",
+      "definition": "bribery — Lear's accusation against his own hallucinated court"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss26",
+      "line": 49,
+      "phrase": "false justicer",
+      "definition": "bad judge — Lear's rage when Regan 'escapes'"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss27",
+      "line": 62,
+      "phrase": "bobtail tike",
+      "definition": "mongrel with a docked tail — insults of Tom's demon-repertoire"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss28",
+      "line": 62,
+      "phrase": "trundle-tail",
+      "definition": "another mongrel variety"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss29",
+      "line": 79,
+      "phrase": "litter",
+      "definition": "stretcher"
+    },
+    {
+      "id": "king_lear_act3_scene6_gloss31",
+      "line": 76,
+      "phrase": "sir",
+      "definition": "Kent addressing the Fool directly"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act3_scene6_ann1",
+      "line_start": 20,
+      "line_end": 80,
+      "citation_display": "King Lear 3.6.20–80",
+      "category": "textual",
+      "title": "The mock trial — Q1-only material absent from the Folio",
+      "body": "The mock trial of Goneril and Regan — in which Lear, Kent, the Fool, and Edgar (as Poor Tom) hold court over two joint-stools standing in for the absent sisters — exists ONLY in the 1608 Quarto of King Lear (Q1). The 1623 Folio (F1) omits it entirely. This is one of the most significant Q1/F1 divergences in Shakespeare, and a test-case for editorial philosophy. Conflated editions (including Standard Ebooks' text) keep the trial. Some modern scholars (Gary Taylor, Michael Warren, Stanley Wells) argue that Q1 and F1 are different plays that Shakespeare revised, and that the Folio's excision of the mock trial was a deliberate late choice — tightening the scene, cutting a passage whose absurdity may have played better as read than staged. Whatever the textual politics, a reader encountering the conflated text encounters a scene Shakespeare may have later wanted removed. That layered presence matters: the trial is both definitively Shakespearean and potentially something he reconsidered.",
+      "sources": [
+        "Gary Taylor and Michael Warren (eds.), The Division of the Kingdoms (1983)",
+        "Stanley Wells and Gary Taylor, William Shakespeare: A Textual Companion (1987)"
+      ]
+    },
+    {
+      "id": "king_lear_act3_scene6_ann2",
+      "line_start": 40,
+      "line_end": 70,
+      "citation_display": "King Lear 3.6.40–70",
+      "category": "structural",
+      "title": "Putting the daughters on trial — Lear's attempt to legislate grief",
+      "body": "Lear's mock court is a desperate attempt to do formally what the real justice system refuses: try Goneril and Regan for ingratitude. The scene has the structure of a legal proceeding (judges, prosecution, evidence) performed over absent defendants represented by furniture. It is bleakly funny and unbearably sad at once. The Fool's 'Come hither, mistress. Is your name Goneril?' addressing a joint-stool ratifies the theatrical convention. That Lear demands he 'arraign them straight' reveals the category-collapse: he believes the theater of the trial is itself justice. When Regan 'escapes' ('Stop her there!'), Lear screams of 'false justicers' — and is right in a way he does not mean. The play has taught by 3.6 that the court system cannot touch Goneril and Regan, so Lear improvises a parallel theater in the farmhouse. That this scene was later cut from the Folio may be because its bleakness pushed past what even Jacobean tragic convention could bear.",
+      "sources": [
+        "R. A. Foakes, King Lear (Arden 3, 1997)"
+      ]
+    },
+    {
+      "id": "king_lear_act3_scene6_ann3",
+      "line_start": 80,
+      "line_end": 110,
+      "citation_display": "King Lear 3.6.80–110",
+      "category": "thematic",
+      "title": "The Fool's disappearance — an unresolved crux",
+      "body": "After 3.6 the Fool vanishes from the play. He has no death scene, no exit announcement, no reference by other characters. Scholars have offered several explanations: (1) the doubling theory — the same actor played Cordelia and the Fool in the original production, making the Fool's absence after 3.6 a theatrical necessity (Cordelia returns in 4.4); (2) the dying-offstage theory — Lear's later 'my poor fool is hanged' in 5.3 may refer equivocally to both Cordelia and the Fool; (3) the deliberate-silence theory — Shakespeare leaves the Fool's fate unexplained because the play is testing how much absence an audience can bear. The first theory is probably correct practically; the third is dramaturgically interesting. Either way, the Fool's disappearance is a reminder that the play's theater has working constraints (actor-count) that shaped its text.",
+      "sources": [
+        "Richard Abrams, 'The Double Casting of Cordelia and the Fool,' Text and Performance Quarterly (1985)",
+        "Stephen Booth, King Lear, Macbeth, Indefinition, and Tragedy (1983)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act3_scene6_q1",
+      "kind": "structural",
+      "prompt": "The mock trial of Goneril and Regan in 3.6 is textually significant because —",
+      "options": [
+        "It is the longest scene in the play",
+        "It exists ONLY in the 1608 Quarto (Q1); the 1623 Folio (F1) omits it entirely — one of the most important Q1/F1 divergences in the Shakespeare canon",
+        "It was added by an editor",
+        "It is in prose"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 20,
+      "anchor_line_end": 80
+    },
+    {
+      "id": "king_lear_act3_scene6_q2",
+      "kind": "inference",
+      "prompt": "Why does Lear stage a mock trial on the heath?",
+      "options": [
+        "For comic relief",
+        "To improvise a parallel justice system because the real one cannot or will not try Goneril and Regan — Lear legislating grief when law has failed him",
+        "To humiliate the Fool",
+        "Because he misremembers the location"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 40,
+      "anchor_line_end": 70
+    },
+    {
+      "id": "king_lear_act3_scene6_q3",
+      "kind": "structural",
+      "prompt": "What happens to the Fool after 3.6?",
+      "options": [
+        "He dies onstage",
+        "He vanishes without explanation — theories include actor-doubling with Cordelia, offstage death implied by Lear's 'my poor fool is hanged,' or deliberate authorial silence; the crux is unresolved",
+        "He becomes king",
+        "He leaves with Kent"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 80,
+      "anchor_line_end": 110
+    }
+  ]
+}

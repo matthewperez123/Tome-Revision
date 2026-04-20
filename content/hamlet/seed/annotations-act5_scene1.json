@@ -1,0 +1,37 @@
+{
+  "section_id": "hamlet_act5_scene1",
+  "annotations": [
+    {
+      "line_start": 1,
+      "line_end": 55,
+      "category": "historical",
+      "title": "The gravediggers and the theology of suicide",
+      "body": "The clowns' opening argument about whether Ophelia deserves Christian burial parodies a real 1560 legal case, Hales v. Pettit, which asked whether a suicide could legally transfer property. The First Clown's 'Argal' (a corruption of 'ergo') mocks the legalistic reasoning of the original case. Shakespeare's audience would have laughed at the bad Latin and recognized the grim topic underneath: the Church of England denied Christian burial rites to self-murderers, and exceptions required 'great command o'ersways the order.' The scene establishes, before Hamlet arrives, that Ophelia's death sits under a theological and legal ambiguity — the play will never quite say whether her drowning was suicide, accident, or something between the two.",
+      "sources": ["Harold Jenkins, Hamlet (Arden 2nd ed., 1982)", "Susan Snyder, 'The Genres of Shakespeare's Plays' (1979)"]
+    },
+    {
+      "line_start": 55,
+      "line_end": 100,
+      "category": "thematic",
+      "title": "Hamlet in the graveyard: the return of the body",
+      "body": "The prince who spent Act 3 in a state of abstract meditation on death now handles actual skulls. The change is registered in the verse: 'That skull had a tongue in it, and could sing once' is plain English, no longer dressed in the rhetoric of 'this mortal coil.' Hamlet has been in a boat with pirates, seen his own execution order, and confronted death as a specific thing rather than a philosophical topic. The graveyard scene tracks this development — skulls become individuals (a lawyer, a politician, a courtier, a jester) rather than types. The meditation is the inverse of Ecclesiastes: not 'all is vanity' but 'someone once kissed these bones.'",
+      "sources": ["Stephen Greenblatt, Hamlet in Purgatory (2001)"]
+    },
+    {
+      "line_start": 166,
+      "line_end": 188,
+      "category": "close_reading",
+      "title": "'Alas, poor Yorick!'",
+      "body": "Hamlet's encounter with Yorick's skull is the play's most anthologized moment, and the one most liable to sentimental misreading. The speech is not melancholy but astonished: the jester who carried young Hamlet on his back now fits in the prince's hand. 'Where be your gibes now? your gambols? your songs? your flashes of merriment, that were wont to set the table on a roar?' The specific memory makes the grief personal in a way the abstract soliloquies could not. What follows ('Alexander died, Alexander was buried, Alexander returneth into dust') pushes the lesson outward again — but the Yorick moment itself is irreducible. A remembered child's laughter survives in an empty skull, and that survival is stranger than any philosophy can manage.",
+      "sources": ["Tony Tanner, Prefaces to Shakespeare (2010)"]
+    },
+    {
+      "line_start": 228,
+      "line_end": 275,
+      "category": "structural",
+      "title": "The grave-leap and the staging of rivalry",
+      "body": "Laertes leaps into Ophelia's grave; Hamlet leaps in after him. The physical confrontation inside the grave is one of Shakespeare's most daring stage images: two mourners fighting for possession of a corpse, each claiming to have loved Ophelia more. The First Quarto's stage direction — 'Hamlet leaps in after Laertes' — is disputed in later editions, and modern productions handle the moment variously. The textual uncertainty mirrors the scene's ethical uncertainty: the declaration of love ('forty thousand brothers / Could not, with all their quantity of love, / Make up my sum') is passionate but also bizarrely competitive. Hamlet loves Ophelia in retrospect, against Laertes, in public — a form of love her living self never got.",
+      "sources": ["Paul Werstine, 'The Textual Mystery of Hamlet' (1988)"]
+    }
+  ]
+}

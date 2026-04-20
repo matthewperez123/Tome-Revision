@@ -1,0 +1,53 @@
+{
+  "section_id": "hamlet_act3_scene1",
+  "annotations": [
+    {
+      "line_start": 34,
+      "line_end": 55,
+      "category": "structural",
+      "title": "The trap is set: eavesdropping as tragic architecture",
+      "body": "Claudius and Polonius conceal themselves to overhear Hamlet with Ophelia. Shakespeare returns to this device repeatedly — Polonius behind the arras in 3.4, Claudius watching the play in 3.2, Claudius and Laertes plotting Hamlet's duel in 4.7. Eavesdropping is the governing shape of the play's middle acts: no one can speak without being overheard, no privacy is real. The consequence is that every soliloquy we hear, the audience overhears too, and Shakespeare's original Globe staging made this geometry visible: the groundlings surrounded the platform on three sides, so a speaker 'alone' was always ringed by watchers. The King's plan here — 'Her father and myself, lawful espials' — turns the word 'lawful' into bitter irony. The state has no legitimate access to a man's private grief; what begins as statecraft ends as the machinery of tragedy.",
+      "sources": ["Stephen Greenblatt, Hamlet in Purgatory (2001)", "Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"]
+    },
+    {
+      "line_start": 56,
+      "line_end": 90,
+      "category": "thematic",
+      "title": "The geometry of doubt",
+      "body": "The soliloquy is often read as contemplating suicide, but its grammar resists that reading. Hamlet speaks in the first-person plural — 'who would bear,' 'we have shuffled,' 'makes us rather bear' — generalizing his question into a problem of the human condition. The verbs ('to be,' 'to suffer,' 'to take arms,' 'to die,' 'to sleep,' 'to dream') climb a ladder of infinitives, each action dissolving into the next without a subject ever performing it. That grammatical paralysis is the speech's argument: the will to act is undone by the capacity to reflect on acting. Coleridge called Hamlet's disease 'an overbalance of the imaginative power'; Bradley called it 'melancholy'; Eliot, reading the play against itself, called the speech an 'objective correlative' that never quite finds its object. What the lines finally describe is not Hamlet's problem but consciousness's problem — the way thought 'sicklies o'er' action with reflection.",
+      "sources": ["A. C. Bradley, Shakespearean Tragedy (1904)", "T. S. Eliot, 'Hamlet and His Problems' (1919)"]
+    },
+    {
+      "line_start": 77,
+      "line_end": 80,
+      "category": "historical",
+      "title": "The 'undiscovered country' and Renaissance eschatology",
+      "body": "Hamlet's claim that no traveler returns from death is theologically strange coming from a man whose father's ghost has just returned from precisely there. The contradiction is not a lapse but a clue: the ghost belongs to purgatory (a doctrine officially abolished by the English Reformation but still culturally alive), while the soliloquy's frame is the Wittenberg Protestantism Hamlet studied. Protestant theology had no purgatory — only heaven or hell, entered at death and never left. When Hamlet speaks of the undiscovered country, he speaks as a Wittenberg student; when he listens to the ghost, he listens as a medieval Catholic son. The play is built on this confessional split. Greenblatt has argued that Hamlet is Shakespeare's most sustained meditation on a culture that no longer knew what to do with its dead.",
+      "sources": ["Stephen Greenblatt, Hamlet in Purgatory (2001)"]
+    },
+    {
+      "line_start": 87,
+      "line_end": 140,
+      "category": "thematic",
+      "title": "'Get thee to a nunnery': the cruelty of the known audience",
+      "body": "Hamlet's treatment of Ophelia here has puzzled productions for four centuries. The actress must play a woman being verbally abused by the man she loves; the actor must play a son who has just guessed, somewhere between 'soft you now' and 'are you honest?', that Polonius and the King are listening. Once Hamlet registers the eavesdropping, every line is spoken twice: to Ophelia and to the watchers behind the arras. The phrase 'Where's your father?' at line 120 is often played as the moment of realization — after Ophelia lies ('at home'), Hamlet's cruelty sharpens into performance. The nunnery speech, read this way, is an audition-piece of misogyny put on for the King's benefit. What Ophelia cannot know, and what the staging must decide, is whether Hamlet's tenderness toward her survives underneath.",
+      "sources": ["Carol Thomas Neely, Broken Nuptials in Shakespeare's Plays (1985)"]
+    },
+    {
+      "line_start": 133,
+      "line_end": 145,
+      "category": "structural",
+      "title": "Ophelia's lament as the play's counter-soliloquy",
+      "body": "Ophelia's twelve-line speech — 'O, what a noble mind is here o'erthrown' — functions as the mirror of Hamlet's own soliloquy moments earlier. Where Hamlet's language is abstract (the thousand natural shocks, the fardels, the quietus), Ophelia's is concrete (the courtier's, soldier's, scholar's eye, tongue, sword). Where Hamlet generalizes to 'us all,' Ophelia particularizes to a single beloved man, now ruined. This is the only speech she delivers in the play that is not interrupted by a man's instruction; it is also the speech that foreshadows her own undoing. Shakespeare frequently uses the lament of an onlooker to crystallize what the protagonist cannot say about himself. Ophelia's grief here lays the groundwork for her madness in Act 4.",
+      "sources": ["Elaine Showalter, 'Representing Ophelia' (1985)"]
+    },
+    {
+      "line_start": 151,
+      "line_end": 176,
+      "category": "historical",
+      "title": "The England trip as political maneuver",
+      "body": "Claudius's decision to send Hamlet to England on diplomatic business — collecting 'neglected tribute' — is presented as a measured statesmanlike response to a son whose madness may be political. In Elizabethan political theater, a troublesome royal relative was regularly dispatched abroad on the pretext of an embassy; audiences recognized the gesture. The historical source Shakespeare draws from, the Latin Historiae Danicae of Saxo Grammaticus, has Amleth sent to Britain with two retainers whose commission is to procure his death. Shakespeare preserves that plot but layers it with political reasoning: even if Hamlet is only melancholic, he must be kept from the people. Polonius's counter-proposal — let the Queen try to draw him out first — is the play's last gesture toward a domestic resolution; after 3.4 it will be impossible.",
+      "sources": ["Geoffrey Bullough, Narrative and Dramatic Sources of Shakespeare, vol. 7 (1973)"]
+    }
+  ]
+}

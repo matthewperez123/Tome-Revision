@@ -1,0 +1,474 @@
+{
+  "section_id": "henry_v_act5_chorus",
+  "work_id": "henry-v",
+  "sequence": 26,
+  "act": null,
+  "scene": null,
+  "kind": "chorus",
+  "scene_title": "Chorus",
+  "line_count": 45,
+  "word_count": 349,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CHORUS",
+      "text": "Vouchsafe to those that have not read the story,"
+    },
+    {
+      "number": 2,
+      "speaker": "CHORUS",
+      "text": "That I may prompt them: and of such as have,"
+    },
+    {
+      "number": 3,
+      "speaker": "CHORUS",
+      "text": "I humbly pray them to admit the excuse"
+    },
+    {
+      "number": 4,
+      "speaker": "CHORUS",
+      "text": "Of time, of numbers and due course of things,"
+    },
+    {
+      "number": 5,
+      "speaker": "CHORUS",
+      "text": "Which cannot in their huge and proper life"
+    },
+    {
+      "number": 6,
+      "speaker": "CHORUS",
+      "text": "Be here presented. Now we bear the king"
+    },
+    {
+      "number": 7,
+      "speaker": "CHORUS",
+      "text": "Toward Calais: grant him there; there seen,"
+    },
+    {
+      "number": 8,
+      "speaker": "CHORUS",
+      "text": "Heave him away upon your winged thoughts"
+    },
+    {
+      "number": 9,
+      "speaker": "CHORUS",
+      "text": "Athwart the sea. Behold, the English beach"
+    },
+    {
+      "number": 10,
+      "speaker": "CHORUS",
+      "text": "Pales in the flood with men, with wives and boys,"
+    },
+    {
+      "number": 11,
+      "speaker": "CHORUS",
+      "text": "Whose shouts and claps out-voice the deep-mouth’d sea,"
+    },
+    {
+      "number": 12,
+      "speaker": "CHORUS",
+      "text": "Which like a mighty whiffler ’fore the king"
+    },
+    {
+      "number": 13,
+      "speaker": "CHORUS",
+      "text": "Seems to prepare his way: so let him land,"
+    },
+    {
+      "number": 14,
+      "speaker": "CHORUS",
+      "text": "And solemnly see him set on to London."
+    },
+    {
+      "number": 15,
+      "speaker": "CHORUS",
+      "text": "So swift a pace hath thought that even now"
+    },
+    {
+      "number": 16,
+      "speaker": "CHORUS",
+      "text": "You may imagine him upon Blackheath;"
+    },
+    {
+      "number": 17,
+      "speaker": "CHORUS",
+      "text": "Where that his lords desire him to have borne"
+    },
+    {
+      "number": 18,
+      "speaker": "CHORUS",
+      "text": "His bruised helmet and his bended sword"
+    },
+    {
+      "number": 19,
+      "speaker": "CHORUS",
+      "text": "Before him through the city: he forbids it,"
+    },
+    {
+      "number": 20,
+      "speaker": "CHORUS",
+      "text": "Being free from vainness and self-glorious pride;"
+    },
+    {
+      "number": 21,
+      "speaker": "CHORUS",
+      "text": "Giving full trophy, signal and ostent"
+    },
+    {
+      "number": 22,
+      "speaker": "CHORUS",
+      "text": "Quite from himself to God. But now behold,"
+    },
+    {
+      "number": 23,
+      "speaker": "CHORUS",
+      "text": "In the quick forge and working-house of thought,"
+    },
+    {
+      "number": 24,
+      "speaker": "CHORUS",
+      "text": "How London doth pour out her citizens!"
+    },
+    {
+      "number": 25,
+      "speaker": "CHORUS",
+      "text": "The mayor and all his brethren in best sort,"
+    },
+    {
+      "number": 26,
+      "speaker": "CHORUS",
+      "text": "Like to the senators of the antique Rome,"
+    },
+    {
+      "number": 27,
+      "speaker": "CHORUS",
+      "text": "With the plebeians swarming at their heels,"
+    },
+    {
+      "number": 28,
+      "speaker": "CHORUS",
+      "text": "Go forth and fetch their conquering Caesar in:"
+    },
+    {
+      "number": 29,
+      "speaker": "CHORUS",
+      "text": "As, by a lower but loving likelihood,"
+    },
+    {
+      "number": 30,
+      "speaker": "CHORUS",
+      "text": "Were now the general of our gracious empress,"
+    },
+    {
+      "number": 31,
+      "speaker": "CHORUS",
+      "text": "As in good time he may, from Ireland coming,"
+    },
+    {
+      "number": 32,
+      "speaker": "CHORUS",
+      "text": "Bringing rebellion broached on his sword,"
+    },
+    {
+      "number": 33,
+      "speaker": "CHORUS",
+      "text": "How many would the peaceful city quit,"
+    },
+    {
+      "number": 34,
+      "speaker": "CHORUS",
+      "text": "To welcome him! much more, and much more cause,"
+    },
+    {
+      "number": 35,
+      "speaker": "CHORUS",
+      "text": "Did they this Harry. Now in London place him;"
+    },
+    {
+      "number": 36,
+      "speaker": "CHORUS",
+      "text": "As yet the lamentation of the French"
+    },
+    {
+      "number": 37,
+      "speaker": "CHORUS",
+      "text": "Invites the King of England’s stay at home;"
+    },
+    {
+      "number": 38,
+      "speaker": "CHORUS",
+      "text": "The emperor’s coming in behalf of France,"
+    },
+    {
+      "number": 39,
+      "speaker": "CHORUS",
+      "text": "To order peace between them; and omit"
+    },
+    {
+      "number": 40,
+      "speaker": "CHORUS",
+      "text": "All the occurrences, whatever chanced,"
+    },
+    {
+      "number": 41,
+      "speaker": "CHORUS",
+      "text": "Till Harry’s back-return again to France:"
+    },
+    {
+      "number": 42,
+      "speaker": "CHORUS",
+      "text": "There must we bring him; and myself have play’d"
+    },
+    {
+      "number": 43,
+      "speaker": "CHORUS",
+      "text": "The interim, by remembering you ’tis past."
+    },
+    {
+      "number": 44,
+      "speaker": "CHORUS",
+      "text": "Then brook abridgement, and your eyes advance,"
+    },
+    {
+      "number": 45,
+      "speaker": "CHORUS",
+      "text": "After your thoughts, straight back again to France."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Chorus."
+    },
+    {
+      "after_line": 0,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act5_chorus_gloss1",
+      "line": 1,
+      "phrase": "Vouchsafe",
+      "definition": "grant permission; be so good as to allow"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss2",
+      "line": 4,
+      "phrase": "of time, of numbers and due course of things",
+      "definition": "constraints of time, population size, and the proper sequence of events — the Chorus apologizes for compression"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss3",
+      "line": 7,
+      "phrase": "Calais",
+      "definition": "Henry's staging port for the return crossing"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss4",
+      "line": 8,
+      "phrase": "Heave him away upon your winged thoughts",
+      "definition": "lift him on your imagination's wings"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss5",
+      "line": 9,
+      "phrase": "Athwart the sea",
+      "definition": "across the sea — the English Channel"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss6",
+      "line": 10,
+      "phrase": "Pales in the flood",
+      "definition": "encloses the flood with a fence of people — the crowds line the shore"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss7",
+      "line": 11,
+      "phrase": "out-voice the deep-mouth’d sea",
+      "definition": "drown out the booming sea"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss8",
+      "line": 12,
+      "phrase": "whiffler",
+      "definition": "an armed official who cleared the way in processions — 'whiffler' = herald/marshal"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss9",
+      "line": 16,
+      "phrase": "Blackheath",
+      "definition": "an open area south-east of London where royal entries traditionally assembled"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss10",
+      "line": 18,
+      "phrase": "bruised helmet and his bended sword",
+      "definition": "Henry's battered Agincourt arms — which his lords want to parade"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss11",
+      "line": 19,
+      "phrase": "forbids it",
+      "definition": "Henry refuses the triumphal display — his modesty claim"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss12",
+      "line": 20,
+      "phrase": "vainness and self-glorious pride",
+      "definition": "vanity and boastful pride"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss13",
+      "line": 21,
+      "phrase": "signal and ostent",
+      "definition": "show and outward display"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss14",
+      "line": 23,
+      "phrase": "quick forge and working-house of thought",
+      "definition": "the active smithy of the mind — the Chorus's image for rapid imaginative scene-change"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss15",
+      "line": 25,
+      "phrase": "mayor and all his brethren",
+      "definition": "the Lord Mayor of London and his aldermen"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss16",
+      "line": 26,
+      "phrase": "senators of the antique Rome",
+      "definition": "senators of ancient Rome — the Chorus elevates London's civic reception to a Roman triumph"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss17",
+      "line": 27,
+      "phrase": "plebeians",
+      "definition": "common people — completes the Roman parallel"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss18",
+      "line": 28,
+      "phrase": "conquering Caesar",
+      "definition": "Henry as returning Caesar — the triumphal image"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss19",
+      "line": 29,
+      "phrase": "lower but loving likelihood",
+      "definition": "a humbler but affectionate parallel — the Chorus draws a current analogy"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss20",
+      "line": 30,
+      "phrase": "general of our gracious empress",
+      "definition": "the Earl of Essex — Queen Elizabeth's favorite, then leading troops in Ireland; the play's rare topical reference, datable to spring 1599"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss21",
+      "line": 32,
+      "phrase": "rebellion broached on his sword",
+      "definition": "rebellion impaled on his sword — the hoped-for Irish campaign victory that did not actually happen"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss22",
+      "line": 35,
+      "phrase": "Now in London place him",
+      "definition": "imagine Henry in London now"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss23",
+      "line": 38,
+      "phrase": "emperor’s coming in behalf of France",
+      "definition": "Emperor Sigismund came to England (1416) to mediate peace — a historical episode the Chorus skips over"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss24",
+      "line": 40,
+      "phrase": "All the occurrences, whatever chanced",
+      "definition": "everything that happened — omitted for compression"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss25",
+      "line": 41,
+      "phrase": "Harry’s back-return again to France",
+      "definition": "Henry's second invasion of France (1417–1420), which led to the Treaty of Troyes"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss26",
+      "line": 42,
+      "phrase": "play’d / The interim",
+      "definition": "acted (out) the intervening years — the Chorus as time-compressor"
+    },
+    {
+      "id": "henry_v_act5_chorus_gloss27",
+      "line": 44,
+      "phrase": "brook abridgement",
+      "definition": "tolerate the shortening"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act5_chorus_ann1",
+      "line_start": 9,
+      "line_end": 34,
+      "citation_display": "Henry V 5 Chorus.9–34",
+      "category": "structural",
+      "title": "London as Rome — the triumphal reception",
+      "body": "The 5 Chorus describes Henry's return to London in deliberately Roman terms: the mayor and aldermen 'Like to the senators of the antique Rome,' the plebeians at their heels, going forth to fetch their 'conquering Caesar in.' Henry's refusal of the triumphal display — refusing to have his bruised helmet and bent sword carried before him — is registered as humility ('being free from vainness and self-glorious pride'). Readers should note the layered strategy: the Chorus Latinizes London, elevates the event to antique ceremony, and then has Henry decline the ceremony, giving him all the moral credit of humility while retaining all the classical grandeur the framing confers. This is rhetorical double-counting. The passage is also the point at which the Chorus's voice sounds most frankly adulatory — and critics have often read this as the moment Shakespeare's irony is least available. Whether one hears the Chorus-stanza as sincere or as over-freighted with praise is a test of how the whole play sounds to each reader.",
+      "sources": [
+        "Norman Rabkin, 'Either/Or' (1981)",
+        "Andrew Gurr (ed.), King Henry V (New Cambridge Shakespeare, 1992)"
+      ]
+    },
+    {
+      "id": "henry_v_act5_chorus_ann2",
+      "line_start": 29,
+      "line_end": 34,
+      "citation_display": "Henry V 5 Chorus.29–34",
+      "category": "historical",
+      "title": "The Essex reference — the play's one dating anchor",
+      "body": "'Were now the general of our gracious empress, / As in good time he may, from Ireland coming, / Bringing rebellion broached on his sword' — this is Henry V's only unambiguous topical reference, and its dating is important. The 'general of our gracious empress' is the Earl of Essex, Queen Elizabeth I's favorite, who set out for Ireland in late March 1599 to put down Hugh O'Neill's rebellion. Essex returned in September 1599 without victory; his attempted rebellion and execution followed in 1601. This means Henry V was written and performed in the narrow window between roughly March and September 1599 — almost certainly for the opening of the Globe that summer. The reference is optimistic about Essex ('as in good time he may') in a way that became impossible after his return. The line is thus historical evidence about both the play's composition date and the political sympathies of the Chamberlain's Men in the weeks before the Essex disaster. By the time the Folio was printed in 1623, Essex was twenty years dead; the line read (and reads) as the ghost of a hope.",
+      "sources": [
+        "Gary Taylor (ed.), The Oxford Shakespeare: Henry V (1982), introduction",
+        "Paul E. J. Hammer, The Polarisation of Elizabethan Politics (1999)",
+        "Andrew Gurr (ed.), King Henry V (New Cambridge Shakespeare, 1992)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act5_chorus_q1",
+      "kind": "close_reading",
+      "prompt": "How does the Chorus describe Henry's return to London (lines 9–28)?",
+      "options": [
+        "As a quiet homecoming",
+        "In Roman triumphal terms — the mayor and aldermen as 'senators of the antique Rome,' Londoners as plebeians, Henry as 'conquering Caesar' — but Henry declines the triumphal display, gaining the credit of humility while retaining the classical grandeur the framing supplies",
+        "As a disaster",
+        "As a secret arrival by night"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 9,
+      "anchor_line_end": 28
+    },
+    {
+      "id": "henry_v_act5_chorus_q2",
+      "kind": "historical",
+      "prompt": "The reference at lines 29–34 to 'the general of our gracious empress … from Ireland coming' dates the play how?",
+      "options": [
+        "It cannot be dated",
+        "To late March–September 1599 — during the Earl of Essex's Irish campaign, while hope for his success was still possible. After his return without victory (autumn 1599) and his execution (1601), the line could not have been written in that form",
+        "To 1603, after Elizabeth's death",
+        "To 1595, before the Globe was built"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 29,
+      "anchor_line_end": 34
+    }
+  ]
+}

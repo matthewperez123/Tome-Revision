@@ -1,0 +1,966 @@
+{
+  "section_id": "hamlet_act2_scene1",
+  "work_id": "hamlet",
+  "sequence": 6,
+  "act": 2,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "A room in Polonius’ house",
+  "line_count": 129,
+  "word_count": 936,
+  "est_read_minutes": 5,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "POLONIUS",
+      "text": "Give him this money and these notes, Reynaldo."
+    },
+    {
+      "number": 2,
+      "speaker": "REYNALDO",
+      "text": "I will, my lord."
+    },
+    {
+      "number": 3,
+      "speaker": "POLONIUS",
+      "text": "You shall do marvellous wisely, good Reynaldo,"
+    },
+    {
+      "number": 4,
+      "speaker": "POLONIUS",
+      "text": "Before you visit him, to make inquire"
+    },
+    {
+      "number": 5,
+      "speaker": "POLONIUS",
+      "text": "Of his behavior."
+    },
+    {
+      "number": 5,
+      "speaker": "REYNALDO",
+      "text": "My lord, I did intend it."
+    },
+    {
+      "number": 6,
+      "speaker": "POLONIUS",
+      "text": "Marry, well said; very well said. Look you, sir,"
+    },
+    {
+      "number": 7,
+      "speaker": "POLONIUS",
+      "text": "Inquire me first what Danskers are in Paris;"
+    },
+    {
+      "number": 8,
+      "speaker": "POLONIUS",
+      "text": "And how, and who, what means, and where they keep,"
+    },
+    {
+      "number": 9,
+      "speaker": "POLONIUS",
+      "text": "What company, at what expense; and finding"
+    },
+    {
+      "number": 10,
+      "speaker": "POLONIUS",
+      "text": "By this encompassment and drift of question"
+    },
+    {
+      "number": 11,
+      "speaker": "POLONIUS",
+      "text": "That they do know my son, come you more nearer"
+    },
+    {
+      "number": 12,
+      "speaker": "POLONIUS",
+      "text": "Than your particular demands will touch it:"
+    },
+    {
+      "number": 13,
+      "speaker": "POLONIUS",
+      "text": "Take you, as ’twere, some distant knowledge of him;"
+    },
+    {
+      "number": 14,
+      "speaker": "POLONIUS",
+      "text": "As thus, “I know his father and his friends,"
+    },
+    {
+      "number": 15,
+      "speaker": "POLONIUS",
+      "text": "And in part him:” do you mark this, Reynaldo?"
+    },
+    {
+      "number": 16,
+      "speaker": "REYNALDO",
+      "text": "Ay, very well, my lord."
+    },
+    {
+      "number": 17,
+      "speaker": "POLONIUS",
+      "text": "“And in part him; but” you may say “not well:"
+    },
+    {
+      "number": 18,
+      "speaker": "POLONIUS",
+      "text": "But, if’t be he I mean, he’s very wild;"
+    },
+    {
+      "number": 19,
+      "speaker": "POLONIUS",
+      "text": "Addicted so-and-so:” and there put on him"
+    },
+    {
+      "number": 20,
+      "speaker": "POLONIUS",
+      "text": "What forgeries you please; marry, none so rank"
+    },
+    {
+      "number": 21,
+      "speaker": "POLONIUS",
+      "text": "As may dishonour him; take heed of that;"
+    },
+    {
+      "number": 22,
+      "speaker": "POLONIUS",
+      "text": "But, sir, such wanton, wild and usual slips"
+    },
+    {
+      "number": 23,
+      "speaker": "POLONIUS",
+      "text": "As are companions noted and most known"
+    },
+    {
+      "number": 24,
+      "speaker": "POLONIUS",
+      "text": "To youth and liberty."
+    },
+    {
+      "number": 24,
+      "speaker": "REYNALDO",
+      "text": "As gaming, my lord."
+    },
+    {
+      "number": 25,
+      "speaker": "POLONIUS",
+      "text": "Ay, or drinking, fencing, swearing, quarrelling,"
+    },
+    {
+      "number": 26,
+      "speaker": "POLONIUS",
+      "text": "Drabbing: you may go so far."
+    },
+    {
+      "number": 26,
+      "speaker": "REYNALDO",
+      "text": "My lord, that would dishonour him."
+    },
+    {
+      "number": 27,
+      "speaker": "POLONIUS",
+      "text": "’Faith, no; as you may season it in the charge."
+    },
+    {
+      "number": 28,
+      "speaker": "POLONIUS",
+      "text": "You must not put another scandal on him,"
+    },
+    {
+      "number": 29,
+      "speaker": "POLONIUS",
+      "text": "That he is open to incontinency;"
+    },
+    {
+      "number": 30,
+      "speaker": "POLONIUS",
+      "text": "That’s not my meaning: but breathe his faults so quaintly"
+    },
+    {
+      "number": 31,
+      "speaker": "POLONIUS",
+      "text": "That they may seem the taints of liberty,"
+    },
+    {
+      "number": 32,
+      "speaker": "POLONIUS",
+      "text": "The flash and outbreak of a fiery mind,"
+    },
+    {
+      "number": 33,
+      "speaker": "POLONIUS",
+      "text": "A savageness in unreclaimed blood,"
+    },
+    {
+      "number": 34,
+      "speaker": "POLONIUS",
+      "text": "Of general assault."
+    },
+    {
+      "number": 34,
+      "speaker": "REYNALDO",
+      "text": "But, my good lord—"
+    },
+    {
+      "number": 35,
+      "speaker": "POLONIUS",
+      "text": "Wherefore should you do this?"
+    },
+    {
+      "number": 35,
+      "speaker": "REYNALDO",
+      "text": "Ay, my lord,"
+    },
+    {
+      "number": 36,
+      "speaker": "REYNALDO",
+      "text": "I would know that."
+    },
+    {
+      "number": 36,
+      "speaker": "POLONIUS",
+      "text": "Marry, sir, here’s my drift;"
+    },
+    {
+      "number": 37,
+      "speaker": "POLONIUS",
+      "text": "And, I believe, it is a fetch of wit:"
+    },
+    {
+      "number": 38,
+      "speaker": "POLONIUS",
+      "text": "You laying these slight sullies on my son,"
+    },
+    {
+      "number": 39,
+      "speaker": "POLONIUS",
+      "text": "As ’twere a thing a little soil’d i’ the working,"
+    },
+    {
+      "number": 40,
+      "speaker": "POLONIUS",
+      "text": "Mark you,"
+    },
+    {
+      "number": 41,
+      "speaker": "POLONIUS",
+      "text": "Your party in converse, him you would sound,"
+    },
+    {
+      "number": 42,
+      "speaker": "POLONIUS",
+      "text": "Having ever seen in the prenominate crimes"
+    },
+    {
+      "number": 43,
+      "speaker": "POLONIUS",
+      "text": "The youth you breathe of guilty, be assured"
+    },
+    {
+      "number": 44,
+      "speaker": "POLONIUS",
+      "text": "He closes with you in this consequence;"
+    },
+    {
+      "number": 45,
+      "speaker": "POLONIUS",
+      "text": "“Good sir,” or so, or “friend,” or “gentleman,”"
+    },
+    {
+      "number": 46,
+      "speaker": "POLONIUS",
+      "text": "According to the phrase or the addition"
+    },
+    {
+      "number": 47,
+      "speaker": "POLONIUS",
+      "text": "Of man and country."
+    },
+    {
+      "number": 47,
+      "speaker": "REYNALDO",
+      "text": "Very good, my lord."
+    },
+    {
+      "number": 48,
+      "speaker": "POLONIUS",
+      "text": "And then, sir, does he this—he does—what was I about to say?"
+    },
+    {
+      "number": 49,
+      "speaker": "POLONIUS",
+      "text": "By the mass, I was about to say something: where did I"
+    },
+    {
+      "number": 50,
+      "speaker": "POLONIUS",
+      "text": "leave?"
+    },
+    {
+      "number": 51,
+      "speaker": "REYNALDO",
+      "text": "At “closes in the consequence,” at “friend or so,” and “gentleman.”"
+    },
+    {
+      "number": 52,
+      "speaker": "POLONIUS",
+      "text": "At “closes in the consequence,” ay, marry;"
+    },
+    {
+      "number": 53,
+      "speaker": "POLONIUS",
+      "text": "He closes thus: “I know the gentleman;"
+    },
+    {
+      "number": 54,
+      "speaker": "POLONIUS",
+      "text": "I saw him yesterday, or t’ other day,"
+    },
+    {
+      "number": 55,
+      "speaker": "POLONIUS",
+      "text": "Or then, or then; with such, or such; and, as you say,"
+    },
+    {
+      "number": 56,
+      "speaker": "POLONIUS",
+      "text": "There was a’ gaming; there o’ertook in’s rouse;"
+    },
+    {
+      "number": 57,
+      "speaker": "POLONIUS",
+      "text": "There falling out at tennis:” or perchance,"
+    },
+    {
+      "number": 58,
+      "speaker": "POLONIUS",
+      "text": "“I saw him enter such a house of sale,”"
+    },
+    {
+      "number": 59,
+      "speaker": "POLONIUS",
+      "text": "Videlicet, a brothel, or so forth."
+    },
+    {
+      "number": 60,
+      "speaker": "POLONIUS",
+      "text": "See you now;"
+    },
+    {
+      "number": 61,
+      "speaker": "POLONIUS",
+      "text": "Your bait of falsehood takes this carp of truth:"
+    },
+    {
+      "number": 62,
+      "speaker": "POLONIUS",
+      "text": "And thus do we of wisdom and of reach,"
+    },
+    {
+      "number": 63,
+      "speaker": "POLONIUS",
+      "text": "With windlasses and with assays of bias,"
+    },
+    {
+      "number": 64,
+      "speaker": "POLONIUS",
+      "text": "By indirections find directions out:"
+    },
+    {
+      "number": 65,
+      "speaker": "POLONIUS",
+      "text": "So by my former lecture and advice,"
+    },
+    {
+      "number": 66,
+      "speaker": "POLONIUS",
+      "text": "Shall you my son. You have me, have you not?"
+    },
+    {
+      "number": 67,
+      "speaker": "REYNALDO",
+      "text": "My lord, I have."
+    },
+    {
+      "number": 68,
+      "speaker": "POLONIUS",
+      "text": "God be wi’ you; fare you well."
+    },
+    {
+      "number": 69,
+      "speaker": "REYNALDO",
+      "text": "Good my lord!"
+    },
+    {
+      "number": 69,
+      "speaker": "POLONIUS",
+      "text": "Observe his inclination in yourself."
+    },
+    {
+      "number": 70,
+      "speaker": "REYNALDO",
+      "text": "I shall, my lord."
+    },
+    {
+      "number": 70,
+      "speaker": "POLONIUS",
+      "text": "And let him ply his music."
+    },
+    {
+      "number": 71,
+      "speaker": "REYNALDO",
+      "text": "Well, my lord."
+    },
+    {
+      "number": 71,
+      "speaker": "POLONIUS",
+      "text": "Farewell!"
+    },
+    {
+      "number": 72,
+      "speaker": "OPHELIA",
+      "text": "O, my lord, my lord, I have been so affrighted!"
+    },
+    {
+      "number": 73,
+      "speaker": "POLONIUS",
+      "text": "With what, i’ the name of God?"
+    },
+    {
+      "number": 74,
+      "speaker": "OPHELIA",
+      "text": "My lord, as I was sewing in my closet,"
+    },
+    {
+      "number": 75,
+      "speaker": "OPHELIA",
+      "text": "Lord Hamlet, with his doublet all unbraced;"
+    },
+    {
+      "number": 76,
+      "speaker": "OPHELIA",
+      "text": "No hat upon his head; his stockings foul’d,"
+    },
+    {
+      "number": 77,
+      "speaker": "OPHELIA",
+      "text": "Ungarter’d, and down-gyved to his ankle;"
+    },
+    {
+      "number": 78,
+      "speaker": "OPHELIA",
+      "text": "Pale as his shirt; his knees knocking each other;"
+    },
+    {
+      "number": 79,
+      "speaker": "OPHELIA",
+      "text": "And with a look so piteous in purport"
+    },
+    {
+      "number": 80,
+      "speaker": "OPHELIA",
+      "text": "As if he had been loosed out of hell"
+    },
+    {
+      "number": 81,
+      "speaker": "OPHELIA",
+      "text": "To speak of horrors—he comes before me."
+    },
+    {
+      "number": 82,
+      "speaker": "POLONIUS",
+      "text": "Mad for thy love?"
+    },
+    {
+      "number": 82,
+      "speaker": "OPHELIA",
+      "text": "My lord, I do not know;"
+    },
+    {
+      "number": 83,
+      "speaker": "OPHELIA",
+      "text": "But truly, I do fear it."
+    },
+    {
+      "number": 83,
+      "speaker": "POLONIUS",
+      "text": "What said he?"
+    },
+    {
+      "number": 84,
+      "speaker": "OPHELIA",
+      "text": "He took me by the wrist and held me hard;"
+    },
+    {
+      "number": 85,
+      "speaker": "OPHELIA",
+      "text": "Then goes he to the length of all his arm;"
+    },
+    {
+      "number": 86,
+      "speaker": "OPHELIA",
+      "text": "And, with his other hand thus o’er his brow,"
+    },
+    {
+      "number": 87,
+      "speaker": "OPHELIA",
+      "text": "He falls to such perusal of my face"
+    },
+    {
+      "number": 88,
+      "speaker": "OPHELIA",
+      "text": "As he would draw it. Long stay’d he so;"
+    },
+    {
+      "number": 89,
+      "speaker": "OPHELIA",
+      "text": "At last, a little shaking of mine arm"
+    },
+    {
+      "number": 90,
+      "speaker": "OPHELIA",
+      "text": "And thrice his head thus waving up and down,"
+    },
+    {
+      "number": 91,
+      "speaker": "OPHELIA",
+      "text": "He raised a sigh so piteous and profound"
+    },
+    {
+      "number": 92,
+      "speaker": "OPHELIA",
+      "text": "As it did seem to shatter all his bulk"
+    },
+    {
+      "number": 93,
+      "speaker": "OPHELIA",
+      "text": "And end his being: that done, he lets me go:"
+    },
+    {
+      "number": 94,
+      "speaker": "OPHELIA",
+      "text": "And, with his head over his shoulder turn’d,"
+    },
+    {
+      "number": 95,
+      "speaker": "OPHELIA",
+      "text": "He seem’d to find his way without his eyes;"
+    },
+    {
+      "number": 96,
+      "speaker": "OPHELIA",
+      "text": "For out o’ doors he went without their helps,"
+    },
+    {
+      "number": 97,
+      "speaker": "OPHELIA",
+      "text": "And, to the last, bended their light on me."
+    },
+    {
+      "number": 98,
+      "speaker": "POLONIUS",
+      "text": "Come, go with me: I will go seek the king."
+    },
+    {
+      "number": 99,
+      "speaker": "POLONIUS",
+      "text": "This is the very ecstasy of love,"
+    },
+    {
+      "number": 100,
+      "speaker": "POLONIUS",
+      "text": "Whose violent property fordoes itself"
+    },
+    {
+      "number": 101,
+      "speaker": "POLONIUS",
+      "text": "And leads the will to desperate undertakings"
+    },
+    {
+      "number": 102,
+      "speaker": "POLONIUS",
+      "text": "As oft as any passion under heaven"
+    },
+    {
+      "number": 103,
+      "speaker": "POLONIUS",
+      "text": "That does afflict our natures. I am sorry."
+    },
+    {
+      "number": 104,
+      "speaker": "POLONIUS",
+      "text": "What, have you given him any hard words of late?"
+    },
+    {
+      "number": 105,
+      "speaker": "OPHELIA",
+      "text": "No, my good lord, but, as you did command,"
+    },
+    {
+      "number": 106,
+      "speaker": "OPHELIA",
+      "text": "I did repel his letters and denied"
+    },
+    {
+      "number": 107,
+      "speaker": "OPHELIA",
+      "text": "His access to me."
+    },
+    {
+      "number": 107,
+      "speaker": "POLONIUS",
+      "text": "That hath made him mad."
+    },
+    {
+      "number": 108,
+      "speaker": "POLONIUS",
+      "text": "I am sorry that with better heed and judgment"
+    },
+    {
+      "number": 109,
+      "speaker": "POLONIUS",
+      "text": "I had not quoted him: I fear’d he did but trifle,"
+    },
+    {
+      "number": 110,
+      "speaker": "POLONIUS",
+      "text": "And meant to wreck thee; but, beshrew my jealousy!"
+    },
+    {
+      "number": 111,
+      "speaker": "POLONIUS",
+      "text": "By heaven, it is as proper to our age"
+    },
+    {
+      "number": 112,
+      "speaker": "POLONIUS",
+      "text": "To cast beyond ourselves in our opinions"
+    },
+    {
+      "number": 113,
+      "speaker": "POLONIUS",
+      "text": "As it is common for the younger sort"
+    },
+    {
+      "number": 114,
+      "speaker": "POLONIUS",
+      "text": "To lack discretion. Come, go we to the king:"
+    },
+    {
+      "number": 115,
+      "speaker": "POLONIUS",
+      "text": "This must be known; which, being kept close, might move"
+    },
+    {
+      "number": 116,
+      "speaker": "POLONIUS",
+      "text": "More grief to hide than hate to utter love."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Polonius and Reynaldo."
+    },
+    {
+      "after_line": 71,
+      "text": "Exit Reynaldo."
+    },
+    {
+      "after_line": 71,
+      "text": "Enter Ophelia."
+    },
+    {
+      "after_line": 71,
+      "text": "How now, Ophelia! what’s the matter?"
+    },
+    {
+      "after_line": 116,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "hamlet_act2_scene1_gloss1",
+      "line": 1,
+      "phrase": "Reynaldo",
+      "definition": "Polonius's servant"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss2",
+      "line": 3,
+      "phrase": "marvellous wisely",
+      "definition": "very cleverly"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss3",
+      "line": 7,
+      "phrase": "Danskers",
+      "definition": "Danes (living in Paris)"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss4",
+      "line": 10,
+      "phrase": "encompassment and drift of question",
+      "definition": "roundabout questioning"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss5",
+      "line": 12,
+      "phrase": "particular demands",
+      "definition": "specific questions"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss6",
+      "line": 22,
+      "phrase": "wanton",
+      "definition": "licentious; unruly"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss7",
+      "line": 26,
+      "phrase": "Drabbing",
+      "definition": "whoring (visiting prostitutes)"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss8",
+      "line": 27,
+      "phrase": "season it in the charge",
+      "definition": "temper the accusation"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss9",
+      "line": 29,
+      "phrase": "incontinency",
+      "definition": "lack of sexual restraint"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss10",
+      "line": 30,
+      "phrase": "quaintly",
+      "definition": "skillfully; artfully"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss11",
+      "line": 31,
+      "phrase": "taints of liberty",
+      "definition": "stains of freedom (youthful indiscretions)"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss12",
+      "line": 32,
+      "phrase": "flash and outbreak of a fiery mind",
+      "definition": "eruption of a passionate temperament"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss13",
+      "line": 33,
+      "phrase": "savageness in unreclaimed blood",
+      "definition": "wildness in untamed nature"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss14",
+      "line": 38,
+      "phrase": "sullies",
+      "definition": "stains; blemishes"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss15",
+      "line": 42,
+      "phrase": "prenominate crimes",
+      "definition": "aforementioned wrongdoings"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss16",
+      "line": 44,
+      "phrase": "closes with you in this consequence",
+      "definition": "agrees with you along these lines"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss17",
+      "line": 56,
+      "phrase": "o’ertook in’s rouse",
+      "definition": "overcome by drink"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss18",
+      "line": 57,
+      "phrase": "falling out at tennis",
+      "definition": "quarreling at tennis"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss19",
+      "line": 62,
+      "phrase": "reach",
+      "definition": "penetration; insight"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss20",
+      "line": 63,
+      "phrase": "windlasses and with assays of bias",
+      "definition": "indirect paths and oblique approaches"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss21",
+      "line": 65,
+      "phrase": "lecture and advice",
+      "definition": "guidance"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss22",
+      "line": 69,
+      "phrase": "in yourself",
+      "definition": "for yourself (personally)"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss23",
+      "line": 99,
+      "phrase": "ecstasy of love",
+      "definition": "madness of love"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss24",
+      "line": 100,
+      "phrase": "fordoes itself",
+      "definition": "destroys itself"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss25",
+      "line": 101,
+      "phrase": "leads the will to desperate undertakings",
+      "definition": "drives the mind to rash acts"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss26",
+      "line": 111,
+      "phrase": "proper to our age",
+      "definition": "characteristic of old men"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss27",
+      "line": 112,
+      "phrase": "cast beyond ourselves",
+      "definition": "over-calculate"
+    },
+    {
+      "id": "hamlet_act2_scene1_gloss28",
+      "line": 115,
+      "phrase": "close",
+      "definition": "concealed"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "hamlet_act2_scene1_ann1",
+      "line_start": 1,
+      "line_end": 72,
+      "citation_display": "Hamlet 2.1.1–72",
+      "category": "thematic",
+      "title": "Polonius's indirections and the poetics of surveillance",
+      "body": "Polonius instructs Reynaldo to investigate Laertes by a technique he calls 'indirections find directions out': gossip about the son's drabbing, drinking, and quarreling to elicit, from the listener, confirmation of the son's true behavior. The method is a miniature of Polonius's whole epistemology, and by extension of Claudius's court. No one asks direct questions because no one can afford honest answers. The scene is often cut in performance but is theoretically crucial: it establishes, before we see Hamlet's 'antic disposition' exposed, that this is a state in which surveillance has replaced trust. When Polonius later plans to 'loose' Ophelia to Hamlet and eavesdrop, the technique will be the same.",
+      "sources": [
+        "John Dover Wilson, What Happens in Hamlet (1935)"
+      ]
+    },
+    {
+      "id": "hamlet_act2_scene1_ann2",
+      "line_start": 79,
+      "line_end": 110,
+      "citation_display": "Hamlet 2.1.79–110",
+      "category": "textual",
+      "title": "Ophelia's report: a scene Shakespeare does not stage",
+      "body": "The encounter between Hamlet and Ophelia that Ophelia describes — Hamlet silent, ungartered, pale, holding her wrist and studying her face — is never shown on stage. Shakespeare consistently reports through speech the most intimate crises in the play (Ophelia's drowning, the pirate attack, the England voyage), staging instead the public consequences. The strategy concentrates dramatic power: the unseen scene becomes more vivid in Ophelia's telling than it could in a staged rendering. Editors from Dover Wilson to Harold Jenkins have debated whether Hamlet's visit signals genuine distress or the beginning of the 'antic disposition' — a question the play refuses to settle because Ophelia herself cannot tell.",
+      "sources": [
+        "Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"
+      ]
+    },
+    {
+      "id": "hamlet_act2_scene1_ann3",
+      "line_start": 108,
+      "line_end": 119,
+      "citation_display": "Hamlet 2.1.108–119",
+      "category": "thematic",
+      "title": "The father's error — 'I am sorry'",
+      "body": "Polonius's response to Ophelia's report is revealing: 'This is the very ecstasy of love,' and he assumes her obedient refusal to admit Hamlet's letters has caused the madness. The comic irony is that Polonius is half-right and wholly wrong: Hamlet's distress is real but not about love, and Polonius's remedy — to march Ophelia to the King and weaponize her distress for political intelligence — will catalyze the next four acts of catastrophe. The line 'I had not quoted him' ('I had not interpreted him') is the scene's quiet admission that Polonius has misread everything, and he will now commit Ophelia, Hamlet, and himself to acting on that misreading.",
+      "sources": [
+        "Carol Thomas Neely, Broken Nuptials in Shakespeare's Plays (1985)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "hamlet_act2_scene1_q1",
+      "kind": "comprehension",
+      "prompt": "What does Polonius instruct Reynaldo to do in Paris?",
+      "options": [
+        "Deliver a sealed letter directly to Laertes.",
+        "Spread rumors about Laertes's misbehavior to see who confirms them.",
+        "Confront Laertes about his debts and drinking.",
+        "Arrange for Laertes to return home at once."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 10,
+      "anchor_line_end": 45
+    },
+    {
+      "id": "hamlet_act2_scene1_q2",
+      "kind": "close_reading",
+      "prompt": "What does Polonius mean by 'indirections find directions out'?",
+      "options": [
+        "Take the long road so you are not followed.",
+        "Roundabout methods uncover straight truths.",
+        "Lies always reveal themselves in time.",
+        "Young men go astray before they find their path."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 63,
+      "anchor_line_end": 66
+    },
+    {
+      "id": "hamlet_act2_scene1_q3",
+      "kind": "comprehension",
+      "prompt": "How does Ophelia describe Hamlet's appearance when he visited her closet?",
+      "options": [
+        "Elegantly dressed and composed, reciting a love poem.",
+        "Disheveled — doublet unbraced, stockings fouled and fallen, pale as his shirt, staring at her silently.",
+        "Armed and furious, accusing her of betrayal.",
+        "Laughing wildly and throwing letters into the fire."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 82,
+      "anchor_line_end": 100
+    },
+    {
+      "id": "hamlet_act2_scene1_q4",
+      "kind": "inference",
+      "prompt": "What does Polonius conclude is the cause of Hamlet's distress?",
+      "options": [
+        "Political anxiety about the Norwegian threat.",
+        "The 'very ecstasy of love' — Ophelia's refusal to see him has driven him mad.",
+        "Grief for his father that has festered into melancholy.",
+        "Fear of being deposed by Claudius."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 105,
+      "anchor_line_end": 110
+    },
+    {
+      "id": "hamlet_act2_scene1_q5",
+      "kind": "theme",
+      "prompt": "What is the dramatic function of this scene?",
+      "options": [
+        "To establish Reynaldo as a major character in later acts.",
+        "To introduce a new subplot about Laertes's education.",
+        "To set up Polonius's erroneous diagnosis, which will drive the eavesdropping of Act 3.",
+        "To provide comic relief before the play's first soliloquy."
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 20,
+      "anchor_line_start": 105,
+      "anchor_line_end": 121
+    }
+  ]
+}

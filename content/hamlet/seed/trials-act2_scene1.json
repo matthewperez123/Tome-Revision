@@ -1,0 +1,75 @@
+{
+  "section_id": "hamlet_act2_scene1",
+  "trials": [
+    {
+      "kind": "comprehension",
+      "prompt": "What does Polonius instruct Reynaldo to do in Paris?",
+      "options": [
+        "Deliver a sealed letter directly to Laertes.",
+        "Spread rumors about Laertes's misbehavior to see who confirms them.",
+        "Confront Laertes about his debts and drinking.",
+        "Arrange for Laertes to return home at once."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 10,
+      "anchor_line_end": 45
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "What does Polonius mean by 'indirections find directions out'?",
+      "options": [
+        "Take the long road so you are not followed.",
+        "Roundabout methods uncover straight truths.",
+        "Lies always reveal themselves in time.",
+        "Young men go astray before they find their path."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 63,
+      "anchor_line_end": 66
+    },
+    {
+      "kind": "comprehension",
+      "prompt": "How does Ophelia describe Hamlet's appearance when he visited her closet?",
+      "options": [
+        "Elegantly dressed and composed, reciting a love poem.",
+        "Disheveled — doublet unbraced, stockings fouled and fallen, pale as his shirt, staring at her silently.",
+        "Armed and furious, accusing her of betrayal.",
+        "Laughing wildly and throwing letters into the fire."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 82,
+      "anchor_line_end": 100
+    },
+    {
+      "kind": "inference",
+      "prompt": "What does Polonius conclude is the cause of Hamlet's distress?",
+      "options": [
+        "Political anxiety about the Norwegian threat.",
+        "The 'very ecstasy of love' — Ophelia's refusal to see him has driven him mad.",
+        "Grief for his father that has festered into melancholy.",
+        "Fear of being deposed by Claudius."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 105,
+      "anchor_line_end": 110
+    },
+    {
+      "kind": "theme",
+      "prompt": "What is the dramatic function of this scene?",
+      "options": [
+        "To establish Reynaldo as a major character in later acts.",
+        "To introduce a new subplot about Laertes's education.",
+        "To set up Polonius's erroneous diagnosis, which will drive the eavesdropping of Act 3.",
+        "To provide comic relief before the play's first soliloquy."
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 20,
+      "anchor_line_start": 105,
+      "anchor_line_end": 121
+    }
+  ]
+}

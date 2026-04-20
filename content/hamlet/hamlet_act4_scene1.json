@@ -1,0 +1,362 @@
+{
+  "section_id": "hamlet_act4_scene1",
+  "work_id": "hamlet",
+  "sequence": 12,
+  "act": 4,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "A room in the castle",
+  "line_count": 33,
+  "word_count": 250,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KING",
+      "text": "There’s matter in these sighs, these profound heaves:"
+    },
+    {
+      "number": 2,
+      "speaker": "KING",
+      "text": "You must translate: ’tis fit we understand them."
+    },
+    {
+      "number": 3,
+      "speaker": "KING",
+      "text": "Where is your son?"
+    },
+    {
+      "number": 4,
+      "speaker": "QUEEN",
+      "text": "Bestow this place on us a little while."
+    },
+    {
+      "number": 5,
+      "speaker": "QUEEN",
+      "text": "Ah, mine good lord, what have I seen to-night!"
+    },
+    {
+      "number": 6,
+      "speaker": "KING",
+      "text": "What, Gertrude? How does Hamlet?"
+    },
+    {
+      "number": 7,
+      "speaker": "QUEEN",
+      "text": "Mad as the sea and wind, when both contend"
+    },
+    {
+      "number": 8,
+      "speaker": "QUEEN",
+      "text": "Which is the mightier: in his lawless fit,"
+    },
+    {
+      "number": 9,
+      "speaker": "QUEEN",
+      "text": "Behind the arras hearing something stir,"
+    },
+    {
+      "number": 10,
+      "speaker": "QUEEN",
+      "text": "Whips out his rapier, cries, “A rat, a rat!”"
+    },
+    {
+      "number": 11,
+      "speaker": "QUEEN",
+      "text": "And, in this brainish apprehension, kills"
+    },
+    {
+      "number": 12,
+      "speaker": "QUEEN",
+      "text": "The unseen good old man."
+    },
+    {
+      "number": 12,
+      "speaker": "KING",
+      "text": "O heavy deed!"
+    },
+    {
+      "number": 13,
+      "speaker": "KING",
+      "text": "It had been so with us, had we been there:"
+    },
+    {
+      "number": 14,
+      "speaker": "KING",
+      "text": "His liberty is full of threats to all;"
+    },
+    {
+      "number": 15,
+      "speaker": "KING",
+      "text": "To you yourself, to us, to every one."
+    },
+    {
+      "number": 16,
+      "speaker": "KING",
+      "text": "Alas, how shall this bloody deed be answer’d?"
+    },
+    {
+      "number": 17,
+      "speaker": "KING",
+      "text": "It will be laid to us, whose providence"
+    },
+    {
+      "number": 18,
+      "speaker": "KING",
+      "text": "Should have kept short, restrain’d and out of haunt,"
+    },
+    {
+      "number": 19,
+      "speaker": "KING",
+      "text": "This mad young man: but so much was our love,"
+    },
+    {
+      "number": 20,
+      "speaker": "KING",
+      "text": "We would not understand what was most fit;"
+    },
+    {
+      "number": 21,
+      "speaker": "KING",
+      "text": "But, like the owner of a foul disease,"
+    },
+    {
+      "number": 22,
+      "speaker": "KING",
+      "text": "To keep it from divulging, let it feed"
+    },
+    {
+      "number": 23,
+      "speaker": "KING",
+      "text": "Even on the pith of Life. Where is he gone?"
+    },
+    {
+      "number": 24,
+      "speaker": "QUEEN",
+      "text": "To draw apart the body he hath kill’d:"
+    },
+    {
+      "number": 25,
+      "speaker": "QUEEN",
+      "text": "O’er whom his very madness, like some ore"
+    },
+    {
+      "number": 26,
+      "speaker": "QUEEN",
+      "text": "Among a mineral of metals base,"
+    },
+    {
+      "number": 27,
+      "speaker": "QUEEN",
+      "text": "Shows itself pure; he weeps for what is done."
+    },
+    {
+      "number": 28,
+      "speaker": "KING",
+      "text": "O Gertrude, come away!"
+    },
+    {
+      "number": 29,
+      "speaker": "KING",
+      "text": "The sun no sooner shall the mountains touch,"
+    },
+    {
+      "number": 30,
+      "speaker": "KING",
+      "text": "But we will ship him hence: and this vile deed"
+    },
+    {
+      "number": 31,
+      "speaker": "KING",
+      "text": "We must, with all our majesty and skill,"
+    },
+    {
+      "number": 32,
+      "speaker": "KING",
+      "text": "Both countenance and excuse. Ho, Guildenstern!"
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter King, Queen, Rosencrantz, and Guildenstern."
+    },
+    {
+      "after_line": 4,
+      "text": "Exeunt Rosencrantz and Guildenstern."
+    },
+    {
+      "after_line": 32,
+      "text": "Reenter Rosencrantz and Guildenstern."
+    },
+    {
+      "after_line": 32,
+      "text": "Friends both, go join you with some further aid: Hamlet in madness hath Polonius slain, And from his mother’s closet hath he dragg’d him: Go seek him out; speak fair, and bring the body Into the chapel. I pray you, haste in this. Exeunt Rosencrantz and Guildenstern. Come, Gertrude, we’ll call up our wisest friends; And let them know, both what we mean to do, And what’s untimely done. So haply slander—2 Whose whisper o’er the world’s diameter, As level as the canon to his blank, Transports his poison’d shot, may miss our name, And hit the woundless air. O, come away! My soul is full of discord and dismay. Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "hamlet_act4_scene1_gloss1",
+      "line": 1,
+      "phrase": "matter in these sighs",
+      "definition": "significance in these sighs"
+    },
+    {
+      "id": "hamlet_act4_scene1_gloss2",
+      "line": 2,
+      "phrase": "translate",
+      "definition": "explain"
+    },
+    {
+      "id": "hamlet_act4_scene1_gloss3",
+      "line": 2,
+      "phrase": "understand them",
+      "definition": "make them comprehensible"
+    },
+    {
+      "id": "hamlet_act4_scene1_gloss4",
+      "line": 4,
+      "phrase": "Bestow this place on us",
+      "definition": "leave us alone here"
+    },
+    {
+      "id": "hamlet_act4_scene1_gloss5",
+      "line": 7,
+      "phrase": "Mad as the sea and wind",
+      "definition": "raging as sea and wind together"
+    },
+    {
+      "id": "hamlet_act4_scene1_gloss6",
+      "line": 8,
+      "phrase": "lawless fit",
+      "definition": "uncontrolled frenzy"
+    },
+    {
+      "id": "hamlet_act4_scene1_gloss7",
+      "line": 9,
+      "phrase": "arras",
+      "definition": "wall tapestry"
+    },
+    {
+      "id": "hamlet_act4_scene1_gloss8",
+      "line": 10,
+      "phrase": "whips out his rapier",
+      "definition": "whips out his sword"
+    },
+    {
+      "id": "hamlet_act4_scene1_gloss9",
+      "line": 10,
+      "phrase": "A rat, a rat!",
+      "definition": "a rat, a rat! (Hamlet's cry at Polonius)"
+    },
+    {
+      "id": "hamlet_act4_scene1_gloss10",
+      "line": 11,
+      "phrase": "brainish apprehension",
+      "definition": "wild imagination"
+    },
+    {
+      "id": "hamlet_act4_scene1_gloss11",
+      "line": 12,
+      "phrase": "the unseen good old man",
+      "definition": "the hidden, honest Polonius"
+    },
+    {
+      "id": "hamlet_act4_scene1_gloss12",
+      "line": 17,
+      "phrase": "us, whose providence",
+      "definition": "us, whose foresight"
+    },
+    {
+      "id": "hamlet_act4_scene1_gloss13",
+      "line": 18,
+      "phrase": "out of haunt",
+      "definition": "away from company"
+    },
+    {
+      "id": "hamlet_act4_scene1_gloss14",
+      "line": 26,
+      "phrase": "mineral of metals base",
+      "definition": "vein of common ores (his madness)"
+    },
+    {
+      "id": "hamlet_act4_scene1_gloss15",
+      "line": 32,
+      "phrase": "countenance and excuse",
+      "definition": "sanction and justify"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "hamlet_act4_scene1_ann1",
+      "line_start": 1,
+      "line_end": 16,
+      "citation_display": "Hamlet 4.1.1–16",
+      "category": "thematic",
+      "title": "Gertrude's equivocal loyalty",
+      "body": "The scene opens with Gertrude reporting to Claudius in terms that protect Hamlet: his madness is 'as the sea and wind,' the killing of Polonius a 'brainish apprehension.' She does not reveal what Hamlet has told her — that Claudius murdered King Hamlet — and she does not tell the King that Hamlet is only feigning madness. Gertrude has always been one of the play's critical puzzles: is she complicit, merely survivalist, or confusedly loving both her son and her husband? This short scene contains her most decisive act of protection. Carolyn Heilbrun's influential reading argues that critics systematically underestimate Gertrude, who here emerges as the play's most skillful diplomat.",
+      "sources": [
+        "Carolyn Heilbrun, 'The Character of Hamlet's Mother' (1957)"
+      ]
+    },
+    {
+      "id": "hamlet_act4_scene1_ann2",
+      "line_start": 17,
+      "line_end": 38,
+      "citation_display": "Hamlet 4.1.17–38",
+      "category": "structural",
+      "title": "Claudius's political instincts",
+      "body": "Claudius's immediate concern after hearing of Polonius's death is not grief but damage control: 'to us whose providence / Should have kept short, restrain'd and out of haunt / This mad young man.' His phrasing reveals the political mind — the killing reflects poorly on his management, and the King begins already to plan the concealment. By the end of his twenty lines he has arranged for the body's disposal, anticipated the slander to come, and resolved to accelerate the England voyage. This is Claudius at his most functional: not the tortured penitent of 3.3 but the professional sovereign managing a crisis. Shakespeare lets us see the King's competence precisely so we can measure its moral hollowness.",
+      "sources": [
+        "Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "hamlet_act4_scene1_q1",
+      "kind": "inference",
+      "prompt": "What does Gertrude withhold from Claudius in her report of the closet scene?",
+      "options": [
+        "That Polonius was killed.",
+        "That Hamlet's madness is feigned, and that he has accused Claudius of murdering King Hamlet.",
+        "That Hamlet saw the ghost during their conversation.",
+        "That Ophelia is wandering mad in the castle."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 5,
+      "anchor_line_end": 16
+    },
+    {
+      "id": "hamlet_act4_scene1_q2",
+      "kind": "comprehension",
+      "prompt": "What is Claudius's chief concern after learning of Polonius's death?",
+      "options": [
+        "Punishing Hamlet with immediate execution.",
+        "Concealing the crime and accelerating Hamlet's voyage to England.",
+        "Offering consolation to Laertes in France.",
+        "Consulting the priests about a proper burial."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 15,
+      "anchor_line_end": 38
+    },
+    {
+      "id": "hamlet_act4_scene1_q3",
+      "kind": "theme",
+      "prompt": "What does Gertrude's phrase 'Mad as the sea and wind' accomplish in context?",
+      "options": [
+        "It diagnoses Hamlet as genuinely deranged, reinforcing Polonius's earlier theory.",
+        "It is a poetic evasion that protects Hamlet while giving Claudius a plausible story.",
+        "It signals to Claudius that Gertrude has lost faith in her son.",
+        "It quotes a proverb about the dangers of sea travel."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 8,
+      "anchor_line_end": 10
+    }
+  ]
+}

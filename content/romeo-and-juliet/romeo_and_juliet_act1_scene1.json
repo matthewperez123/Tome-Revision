@@ -1,0 +1,1777 @@
+{
+  "section_id": "romeo_and_juliet_act1_scene1",
+  "work_id": "romeo-and-juliet",
+  "sequence": 2,
+  "act": 1,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "Verona. A public place",
+  "line_count": 234,
+  "word_count": 1806,
+  "est_read_minutes": 9,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "SAMPSON",
+      "text": "Gregory, o’ my word, we’ll not carry coals."
+    },
+    {
+      "number": 2,
+      "speaker": "GREGORY",
+      "text": "No, for then we should be colliers."
+    },
+    {
+      "number": 3,
+      "speaker": "SAMPSON",
+      "text": "I mean, an we be in choler, we’ll draw."
+    },
+    {
+      "number": 4,
+      "speaker": "GREGORY",
+      "text": "Ay, while you live, draw your neck out o’ the collar."
+    },
+    {
+      "number": 5,
+      "speaker": "SAMPSON",
+      "text": "I strike quickly, being moved."
+    },
+    {
+      "number": 6,
+      "speaker": "GREGORY",
+      "text": "But thou art not quickly moved to strike."
+    },
+    {
+      "number": 7,
+      "speaker": "SAMPSON",
+      "text": "A dog of the house of Montague moves me."
+    },
+    {
+      "number": 8,
+      "speaker": "GREGORY",
+      "text": "To move is to stir; and to be valiant is to stand:"
+    },
+    {
+      "number": 9,
+      "speaker": "GREGORY",
+      "text": "therefore, if thou art moved, thou runn’st away."
+    },
+    {
+      "number": 10,
+      "speaker": "SAMPSON",
+      "text": "A dog of that house shall move me to stand: I will"
+    },
+    {
+      "number": 11,
+      "speaker": "SAMPSON",
+      "text": "take the wall of any man or maid of Montague’s."
+    },
+    {
+      "number": 12,
+      "speaker": "GREGORY",
+      "text": "That shows thee a weak slave; for the weakest goes to the wall."
+    },
+    {
+      "number": 13,
+      "speaker": "SAMPSON",
+      "text": "True; and therefore women, being the weaker vessels, are ever thrust to"
+    },
+    {
+      "number": 14,
+      "speaker": "SAMPSON",
+      "text": "the wall: therefore I will push Montague’s men from the wall, and"
+    },
+    {
+      "number": 15,
+      "speaker": "SAMPSON",
+      "text": "thrust his maids to the wall."
+    },
+    {
+      "number": 16,
+      "speaker": "GREGORY",
+      "text": "The quarrel is between our masters and us their men."
+    },
+    {
+      "number": 17,
+      "speaker": "SAMPSON",
+      "text": "’Tis all one, I will show myself a tyrant: when I have"
+    },
+    {
+      "number": 18,
+      "speaker": "SAMPSON",
+      "text": "fought with the men, I will be cruel with the maids, and"
+    },
+    {
+      "number": 19,
+      "speaker": "SAMPSON",
+      "text": "cut off their heads."
+    },
+    {
+      "number": 19,
+      "speaker": "GREGORY",
+      "text": "The heads of the maids?"
+    },
+    {
+      "number": 20,
+      "speaker": "SAMPSON",
+      "text": "Ay, the heads of the maids, or their maidenheads; take it in"
+    },
+    {
+      "number": 21,
+      "speaker": "SAMPSON",
+      "text": "what sense thou wilt."
+    },
+    {
+      "number": 22,
+      "speaker": "GREGORY",
+      "text": "They must take it in sense that feel it."
+    },
+    {
+      "number": 23,
+      "speaker": "SAMPSON",
+      "text": "Me they shall feel while I am able to stand: and ’tis"
+    },
+    {
+      "number": 24,
+      "speaker": "SAMPSON",
+      "text": "known I am a pretty piece of flesh."
+    },
+    {
+      "number": 25,
+      "speaker": "GREGORY",
+      "text": "’Tis well thou art not fish; if thou hadst, thou hadst been"
+    },
+    {
+      "number": 26,
+      "speaker": "GREGORY",
+      "text": "poor John. Draw thy tool; here comes two of the house of"
+    },
+    {
+      "number": 27,
+      "speaker": "GREGORY",
+      "text": "the Montagues."
+    },
+    {
+      "number": 28,
+      "speaker": "SAMPSON",
+      "text": "My naked weapon is out: quarrel, I will back thee."
+    },
+    {
+      "number": 29,
+      "speaker": "GREGORY",
+      "text": "How! turn thy back and run?"
+    },
+    {
+      "number": 29,
+      "speaker": "SAMPSON",
+      "text": "Fear me not."
+    },
+    {
+      "number": 30,
+      "speaker": "GREGORY",
+      "text": "No, marry; I fear thee!"
+    },
+    {
+      "number": 31,
+      "speaker": "SAMPSON",
+      "text": "Let us take the law of our sides; let them begin."
+    },
+    {
+      "number": 32,
+      "speaker": "GREGORY",
+      "text": "I will frown as I pass by, and let them take it as they list."
+    },
+    {
+      "number": 33,
+      "speaker": "SAMPSON",
+      "text": "Nay, as they dare. I will bite my thumb at them; which"
+    },
+    {
+      "number": 34,
+      "speaker": "SAMPSON",
+      "text": "is a disgrace to them, if they bear it."
+    },
+    {
+      "number": 35,
+      "speaker": "ABRAHAM",
+      "text": "Do you bite your thumb at us, sir?"
+    },
+    {
+      "number": 36,
+      "speaker": "SAMPSON",
+      "text": "I do bite my thumb, sir."
+    },
+    {
+      "number": 37,
+      "speaker": "ABRAHAM",
+      "text": "Do you bite your thumb at us, sir?"
+    },
+    {
+      "number": 38,
+      "speaker": "SAMPSON",
+      "text": "Is the law of our side, if I say ay?"
+    },
+    {
+      "number": 39,
+      "speaker": "GREGORY",
+      "text": "No."
+    },
+    {
+      "number": 40,
+      "speaker": "SAMPSON",
+      "text": "No, sir, I do not bite my thumb at you, sir, but"
+    },
+    {
+      "number": 41,
+      "speaker": "SAMPSON",
+      "text": "I bite my thumb, sir."
+    },
+    {
+      "number": 41,
+      "speaker": "GREGORY",
+      "text": "Do you quarrel, sir?"
+    },
+    {
+      "number": 42,
+      "speaker": "ABRAHAM",
+      "text": "Quarrel, sir! no, sir."
+    },
+    {
+      "number": 43,
+      "speaker": "SAMPSON",
+      "text": "If you do, sir, I am for you: I serve as good"
+    },
+    {
+      "number": 44,
+      "speaker": "SAMPSON",
+      "text": "a man as you."
+    },
+    {
+      "number": 44,
+      "speaker": "ABRAHAM",
+      "text": "No better."
+    },
+    {
+      "number": 45,
+      "speaker": "SAMPSON",
+      "text": "Well, sir."
+    },
+    {
+      "number": 46,
+      "speaker": "GREGORY",
+      "text": "Say “better:” here comes one of my master’s kinsmen."
+    },
+    {
+      "number": 47,
+      "speaker": "SAMPSON",
+      "text": "Yes, better, sir."
+    },
+    {
+      "number": 47,
+      "speaker": "ABRAHAM",
+      "text": "You lie."
+    },
+    {
+      "number": 48,
+      "speaker": "SAMPSON",
+      "text": "Draw, if you be men. Gregory, remember thy swashing blow. They fight."
+    },
+    {
+      "number": 49,
+      "speaker": "BENVOLIO",
+      "text": "Part, fools!"
+    },
+    {
+      "number": 50,
+      "speaker": "BENVOLIO",
+      "text": "Put up your swords; you know not what you do. Beats down their swords."
+    },
+    {
+      "number": 51,
+      "speaker": "TYBALT",
+      "text": "What, art thou drawn among these heartless hinds?"
+    },
+    {
+      "number": 52,
+      "speaker": "TYBALT",
+      "text": "Turn thee, Benvolio, look upon thy death."
+    },
+    {
+      "number": 53,
+      "speaker": "BENVOLIO",
+      "text": "I do but keep the peace: put up thy sword,"
+    },
+    {
+      "number": 54,
+      "speaker": "BENVOLIO",
+      "text": "Or manage it to part these men with me."
+    },
+    {
+      "number": 55,
+      "speaker": "TYBALT",
+      "text": "What, drawn, and talk of peace! I hate the word,"
+    },
+    {
+      "number": 56,
+      "speaker": "TYBALT",
+      "text": "As I hate hell, all Montagues, and thee:"
+    },
+    {
+      "number": 57,
+      "speaker": "TYBALT",
+      "text": "Have at thee, coward! They fight."
+    },
+    {
+      "number": 58,
+      "speaker": "FIRST CITIZEN",
+      "text": "Clubs, bills, and partisans! strike! beat them down!"
+    },
+    {
+      "number": 59,
+      "speaker": "FIRST CITIZEN",
+      "text": "Down with the Capulets! down with the Montagues!"
+    },
+    {
+      "number": 60,
+      "speaker": "CAPULET",
+      "text": "What noise is this? Give me my long sword, ho!"
+    },
+    {
+      "number": 61,
+      "speaker": "LADY CAPULET",
+      "text": "A crutch, a crutch! why call you for a sword?"
+    },
+    {
+      "number": 62,
+      "speaker": "CAPULET",
+      "text": "My sword, I say! Old Montague is come,"
+    },
+    {
+      "number": 63,
+      "speaker": "CAPULET",
+      "text": "And flourishes his blade in spite of me."
+    },
+    {
+      "number": 64,
+      "speaker": "MONTAGUE",
+      "text": "Thou villain Capulet—Hold me not, let me go."
+    },
+    {
+      "number": 65,
+      "speaker": "LADY MONTAGUE",
+      "text": "Thou shalt not stir a foot to seek a foe."
+    },
+    {
+      "number": 66,
+      "speaker": "PRINCE",
+      "text": "Rebellious subjects, enemies to peace,"
+    },
+    {
+      "number": 67,
+      "speaker": "PRINCE",
+      "text": "Profaners of this neighbour-stained steel—"
+    },
+    {
+      "number": 68,
+      "speaker": "PRINCE",
+      "text": "Will they not hear? What, ho! you men, you beasts,"
+    },
+    {
+      "number": 69,
+      "speaker": "PRINCE",
+      "text": "That quench the fire of your pernicious rage"
+    },
+    {
+      "number": 70,
+      "speaker": "PRINCE",
+      "text": "With purple fountains issuing from your veins,"
+    },
+    {
+      "number": 71,
+      "speaker": "PRINCE",
+      "text": "On pain of torture, from those bloody hands"
+    },
+    {
+      "number": 72,
+      "speaker": "PRINCE",
+      "text": "Throw your mistemper’d weapons to the ground,"
+    },
+    {
+      "number": 73,
+      "speaker": "PRINCE",
+      "text": "And hear the sentence of your moved prince."
+    },
+    {
+      "number": 74,
+      "speaker": "PRINCE",
+      "text": "Three civil brawls, bred of an airy word,"
+    },
+    {
+      "number": 75,
+      "speaker": "PRINCE",
+      "text": "By thee, old Capulet, and Montague,"
+    },
+    {
+      "number": 76,
+      "speaker": "PRINCE",
+      "text": "Have thrice disturb’d the quiet of our streets,"
+    },
+    {
+      "number": 77,
+      "speaker": "PRINCE",
+      "text": "And made Verona’s ancient citizens"
+    },
+    {
+      "number": 78,
+      "speaker": "PRINCE",
+      "text": "Cast by their grave beseeming ornaments,"
+    },
+    {
+      "number": 79,
+      "speaker": "PRINCE",
+      "text": "To wield old partisans, in hands as old,"
+    },
+    {
+      "number": 80,
+      "speaker": "PRINCE",
+      "text": "Canker’d with peace, to part your canker’d hate:"
+    },
+    {
+      "number": 81,
+      "speaker": "PRINCE",
+      "text": "If ever you disturb our streets again,"
+    },
+    {
+      "number": 82,
+      "speaker": "PRINCE",
+      "text": "Your lives shall pay the forfeit of the peace."
+    },
+    {
+      "number": 83,
+      "speaker": "PRINCE",
+      "text": "For this time, all the rest depart away:"
+    },
+    {
+      "number": 84,
+      "speaker": "PRINCE",
+      "text": "You, Capulet, shall go along with me:"
+    },
+    {
+      "number": 85,
+      "speaker": "PRINCE",
+      "text": "And, Montague, come you this afternoon,"
+    },
+    {
+      "number": 86,
+      "speaker": "PRINCE",
+      "text": "To know our further pleasure in this case,"
+    },
+    {
+      "number": 87,
+      "speaker": "PRINCE",
+      "text": "To old Free-town, our common judgment-place."
+    },
+    {
+      "number": 88,
+      "speaker": "PRINCE",
+      "text": "Once more, on pain of death, all men depart."
+    },
+    {
+      "number": 89,
+      "speaker": "MONTAGUE",
+      "text": "Who set this ancient quarrel new abroach?"
+    },
+    {
+      "number": 90,
+      "speaker": "MONTAGUE",
+      "text": "Speak, nephew, were you by when it began?"
+    },
+    {
+      "number": 91,
+      "speaker": "BENVOLIO",
+      "text": "Here were the servants of your adversary,"
+    },
+    {
+      "number": 92,
+      "speaker": "BENVOLIO",
+      "text": "And yours, close fighting ere I did approach:"
+    },
+    {
+      "number": 93,
+      "speaker": "BENVOLIO",
+      "text": "I drew to part them: in the instant came"
+    },
+    {
+      "number": 94,
+      "speaker": "BENVOLIO",
+      "text": "The fiery Tybalt, with his sword prepared,"
+    },
+    {
+      "number": 95,
+      "speaker": "BENVOLIO",
+      "text": "Which, as he breathed defiance to my ears,"
+    },
+    {
+      "number": 96,
+      "speaker": "BENVOLIO",
+      "text": "He swung about his head and cut the winds,"
+    },
+    {
+      "number": 97,
+      "speaker": "BENVOLIO",
+      "text": "Who nothing hurt withal hiss’d him in scorn:"
+    },
+    {
+      "number": 98,
+      "speaker": "BENVOLIO",
+      "text": "While we were interchanging thrusts and blows,"
+    },
+    {
+      "number": 99,
+      "speaker": "BENVOLIO",
+      "text": "Came more and more and fought on part and part."
+    },
+    {
+      "number": 100,
+      "speaker": "BENVOLIO",
+      "text": "Till the prince came, who parted either part."
+    },
+    {
+      "number": 101,
+      "speaker": "LADY MONTAGUE",
+      "text": "O, where is Romeo? saw you him to-day?"
+    },
+    {
+      "number": 102,
+      "speaker": "LADY MONTAGUE",
+      "text": "Right glad I am he was not at this fray."
+    },
+    {
+      "number": 103,
+      "speaker": "BENVOLIO",
+      "text": "Madam, an hour before the worshipp’d sun"
+    },
+    {
+      "number": 104,
+      "speaker": "BENVOLIO",
+      "text": "Peer’d forth the golden window of the east,"
+    },
+    {
+      "number": 105,
+      "speaker": "BENVOLIO",
+      "text": "A troubled mind drave me to walk abroad;"
+    },
+    {
+      "number": 106,
+      "speaker": "BENVOLIO",
+      "text": "Where, underneath the grove of sycamore"
+    },
+    {
+      "number": 107,
+      "speaker": "BENVOLIO",
+      "text": "That westward rooteth from the city’s side,"
+    },
+    {
+      "number": 108,
+      "speaker": "BENVOLIO",
+      "text": "So early walking did I see your son:"
+    },
+    {
+      "number": 109,
+      "speaker": "BENVOLIO",
+      "text": "Towards him I made, but he was ware of me"
+    },
+    {
+      "number": 110,
+      "speaker": "BENVOLIO",
+      "text": "And stole into the covert of the wood:"
+    },
+    {
+      "number": 111,
+      "speaker": "BENVOLIO",
+      "text": "I, measuring his affections by my own,"
+    },
+    {
+      "number": 112,
+      "speaker": "BENVOLIO",
+      "text": "That most are busied when they’re most alone,"
+    },
+    {
+      "number": 113,
+      "speaker": "BENVOLIO",
+      "text": "Pursued my humour not pursuing his,"
+    },
+    {
+      "number": 114,
+      "speaker": "BENVOLIO",
+      "text": "And gladly shunn’d who gladly fled from me."
+    },
+    {
+      "number": 115,
+      "speaker": "MONTAGUE",
+      "text": "Many a morning hath he there been seen,"
+    },
+    {
+      "number": 116,
+      "speaker": "MONTAGUE",
+      "text": "With tears augmenting the fresh morning’s dew,"
+    },
+    {
+      "number": 117,
+      "speaker": "MONTAGUE",
+      "text": "Adding to clouds more clouds with his deep sighs;"
+    },
+    {
+      "number": 118,
+      "speaker": "MONTAGUE",
+      "text": "But all so soon as the all-cheering sun"
+    },
+    {
+      "number": 119,
+      "speaker": "MONTAGUE",
+      "text": "Should in the furthest east begin to draw"
+    },
+    {
+      "number": 120,
+      "speaker": "MONTAGUE",
+      "text": "The shady curtains from Aurora’s bed,"
+    },
+    {
+      "number": 121,
+      "speaker": "MONTAGUE",
+      "text": "Away from light steals home my heavy son,"
+    },
+    {
+      "number": 122,
+      "speaker": "MONTAGUE",
+      "text": "And private in his chamber pens himself,"
+    },
+    {
+      "number": 123,
+      "speaker": "MONTAGUE",
+      "text": "Shuts up his windows, locks fair daylight out"
+    },
+    {
+      "number": 124,
+      "speaker": "MONTAGUE",
+      "text": "And makes himself an artificial night:"
+    },
+    {
+      "number": 125,
+      "speaker": "MONTAGUE",
+      "text": "Black and portentous must this humour prove,"
+    },
+    {
+      "number": 126,
+      "speaker": "MONTAGUE",
+      "text": "Unless good counsel may the cause remove."
+    },
+    {
+      "number": 127,
+      "speaker": "BENVOLIO",
+      "text": "My noble uncle, do you know the cause?"
+    },
+    {
+      "number": 128,
+      "speaker": "MONTAGUE",
+      "text": "I neither know it nor can learn of him."
+    },
+    {
+      "number": 129,
+      "speaker": "BENVOLIO",
+      "text": "Have you importuned him by any means?"
+    },
+    {
+      "number": 130,
+      "speaker": "MONTAGUE",
+      "text": "Both by myself and many other friends:"
+    },
+    {
+      "number": 131,
+      "speaker": "MONTAGUE",
+      "text": "But he, his own affections’ counsellor,"
+    },
+    {
+      "number": 132,
+      "speaker": "MONTAGUE",
+      "text": "Is to himself—I will not say how true—"
+    },
+    {
+      "number": 133,
+      "speaker": "MONTAGUE",
+      "text": "But to himself so secret and so close,"
+    },
+    {
+      "number": 134,
+      "speaker": "MONTAGUE",
+      "text": "So far from sounding and discovery,"
+    },
+    {
+      "number": 135,
+      "speaker": "MONTAGUE",
+      "text": "As is the bird bit with an envious worm,"
+    },
+    {
+      "number": 136,
+      "speaker": "MONTAGUE",
+      "text": "Ere he can spread his sweet leaves to the air,"
+    },
+    {
+      "number": 137,
+      "speaker": "MONTAGUE",
+      "text": "Or dedicate his beauty to the sun."
+    },
+    {
+      "number": 138,
+      "speaker": "MONTAGUE",
+      "text": "Could we but learn from whence his sorrows grow,"
+    },
+    {
+      "number": 139,
+      "speaker": "MONTAGUE",
+      "text": "We would as willingly give cure as know."
+    },
+    {
+      "number": 140,
+      "speaker": "BENVOLIO",
+      "text": "See, where he comes: so please you, step aside;"
+    },
+    {
+      "number": 141,
+      "speaker": "BENVOLIO",
+      "text": "I’ll know his grievance, or be much denied."
+    },
+    {
+      "number": 142,
+      "speaker": "MONTAGUE",
+      "text": "I would thou wert so happy by thy stay,"
+    },
+    {
+      "number": 143,
+      "speaker": "MONTAGUE",
+      "text": "To hear true shrift. Come, madam, let’s away."
+    },
+    {
+      "number": 144,
+      "speaker": "BENVOLIO",
+      "text": "Good morrow, cousin."
+    },
+    {
+      "number": 144,
+      "speaker": "ROMEO",
+      "text": "Is the day so young?"
+    },
+    {
+      "number": 145,
+      "speaker": "BENVOLIO",
+      "text": "But new struck nine."
+    },
+    {
+      "number": 145,
+      "speaker": "ROMEO",
+      "text": "Ay me! sad hours seem long."
+    },
+    {
+      "number": 146,
+      "speaker": "ROMEO",
+      "text": "Was that my father that went hence so fast?"
+    },
+    {
+      "number": 147,
+      "speaker": "BENVOLIO",
+      "text": "It was. What sadness lengthens Romeo’s hours?"
+    },
+    {
+      "number": 148,
+      "speaker": "ROMEO",
+      "text": "Not having that, which, having, makes them short."
+    },
+    {
+      "number": 149,
+      "speaker": "BENVOLIO",
+      "text": "In love?"
+    },
+    {
+      "number": 149,
+      "speaker": "ROMEO",
+      "text": "Out—"
+    },
+    {
+      "number": 150,
+      "speaker": "BENVOLIO",
+      "text": "Of love?"
+    },
+    {
+      "number": 151,
+      "speaker": "ROMEO",
+      "text": "Out of her favour, where I am in love."
+    },
+    {
+      "number": 152,
+      "speaker": "BENVOLIO",
+      "text": "Alas, that love, so gentle in his view,"
+    },
+    {
+      "number": 153,
+      "speaker": "BENVOLIO",
+      "text": "Should be so tyrannous and rough in proof!"
+    },
+    {
+      "number": 154,
+      "speaker": "ROMEO",
+      "text": "Alas, that love, whose view is muffled still,"
+    },
+    {
+      "number": 155,
+      "speaker": "ROMEO",
+      "text": "Should, without eyes, see pathways to his will!"
+    },
+    {
+      "number": 156,
+      "speaker": "ROMEO",
+      "text": "Where shall we dine? O me! What fray was here?"
+    },
+    {
+      "number": 157,
+      "speaker": "ROMEO",
+      "text": "Yet tell me not, for I have heard it all."
+    },
+    {
+      "number": 158,
+      "speaker": "ROMEO",
+      "text": "Here’s much to do with hate, but more with love."
+    },
+    {
+      "number": 159,
+      "speaker": "ROMEO",
+      "text": "Why, then, O brawling love! O loving hate!"
+    },
+    {
+      "number": 160,
+      "speaker": "ROMEO",
+      "text": "O anything, of nothing first create!"
+    },
+    {
+      "number": 161,
+      "speaker": "ROMEO",
+      "text": "O heavy lightness! serious vanity!"
+    },
+    {
+      "number": 162,
+      "speaker": "ROMEO",
+      "text": "Mis-shapen chaos of well-seeming forms!"
+    },
+    {
+      "number": 163,
+      "speaker": "ROMEO",
+      "text": "Feather of lead, bright smoke, cold fire, sick health!"
+    },
+    {
+      "number": 164,
+      "speaker": "ROMEO",
+      "text": "Still-waking sleep, that is not what it is!"
+    },
+    {
+      "number": 165,
+      "speaker": "ROMEO",
+      "text": "This love feel I, that feel no love in this."
+    },
+    {
+      "number": 166,
+      "speaker": "ROMEO",
+      "text": "Dost thou not laugh?"
+    },
+    {
+      "number": 166,
+      "speaker": "BENVOLIO",
+      "text": "No, coz, I rather weep."
+    },
+    {
+      "number": 167,
+      "speaker": "ROMEO",
+      "text": "Good heart, at what?"
+    },
+    {
+      "number": 167,
+      "speaker": "BENVOLIO",
+      "text": "At thy good heart’s oppression."
+    },
+    {
+      "number": 168,
+      "speaker": "ROMEO",
+      "text": "Why, such is love’s transgression."
+    },
+    {
+      "number": 169,
+      "speaker": "ROMEO",
+      "text": "Griefs of mine own lie heavy in my breast,"
+    },
+    {
+      "number": 170,
+      "speaker": "ROMEO",
+      "text": "Which thou wilt propagate, to have it prest"
+    },
+    {
+      "number": 171,
+      "speaker": "ROMEO",
+      "text": "With more of thine: this love that thou hast shown"
+    },
+    {
+      "number": 172,
+      "speaker": "ROMEO",
+      "text": "Doth add more grief to too much of mine own."
+    },
+    {
+      "number": 173,
+      "speaker": "ROMEO",
+      "text": "Love is a smoke raised with the fume of sighs;"
+    },
+    {
+      "number": 174,
+      "speaker": "ROMEO",
+      "text": "Being purged, a fire sparkling in lovers’ eyes;"
+    },
+    {
+      "number": 175,
+      "speaker": "ROMEO",
+      "text": "Being vex’d, a sea nourish’d with lovers’ tears:"
+    },
+    {
+      "number": 176,
+      "speaker": "ROMEO",
+      "text": "What is it else? a madness most discreet,"
+    },
+    {
+      "number": 177,
+      "speaker": "ROMEO",
+      "text": "A choking gall and a preserving sweet."
+    },
+    {
+      "number": 178,
+      "speaker": "ROMEO",
+      "text": "Farewell, my coz."
+    },
+    {
+      "number": 178,
+      "speaker": "BENVOLIO",
+      "text": "Soft! I will go along;"
+    },
+    {
+      "number": 179,
+      "speaker": "BENVOLIO",
+      "text": "An if you leave me so, you do me wrong."
+    },
+    {
+      "number": 180,
+      "speaker": "ROMEO",
+      "text": "Tut, I have lost myself; I am not here;"
+    },
+    {
+      "number": 181,
+      "speaker": "ROMEO",
+      "text": "This is not Romeo, he’s some other where."
+    },
+    {
+      "number": 182,
+      "speaker": "BENVOLIO",
+      "text": "Tell me in sadness, who is that you love."
+    },
+    {
+      "number": 183,
+      "speaker": "ROMEO",
+      "text": "What, shall I groan and tell thee?"
+    },
+    {
+      "number": 184,
+      "speaker": "BENVOLIO",
+      "text": "Groan! why, no;"
+    },
+    {
+      "number": 185,
+      "speaker": "BENVOLIO",
+      "text": "But sadly tell me who."
+    },
+    {
+      "number": 186,
+      "speaker": "ROMEO",
+      "text": "Bid a sick man in sadness make his will:"
+    },
+    {
+      "number": 187,
+      "speaker": "ROMEO",
+      "text": "Ah, word ill urged to one that is so ill!"
+    },
+    {
+      "number": 188,
+      "speaker": "ROMEO",
+      "text": "In sadness, cousin, I do love a woman."
+    },
+    {
+      "number": 189,
+      "speaker": "BENVOLIO",
+      "text": "I aim’d so near, when I supposed you loved."
+    },
+    {
+      "number": 190,
+      "speaker": "ROMEO",
+      "text": "A right good mark-man! And she’s fair I love."
+    },
+    {
+      "number": 191,
+      "speaker": "BENVOLIO",
+      "text": "A right fair mark, fair coz, is soonest hit."
+    },
+    {
+      "number": 192,
+      "speaker": "ROMEO",
+      "text": "Well, in that hit you miss: she’ll not be hit"
+    },
+    {
+      "number": 193,
+      "speaker": "ROMEO",
+      "text": "With Cupid’s arrow; she hath Dian’s wit;"
+    },
+    {
+      "number": 194,
+      "speaker": "ROMEO",
+      "text": "And, in strong proof of chastity well arm’d,"
+    },
+    {
+      "number": 195,
+      "speaker": "ROMEO",
+      "text": "From love’s weak childish bow she lives unharm’d."
+    },
+    {
+      "number": 196,
+      "speaker": "ROMEO",
+      "text": "She will not stay the siege of loving terms,"
+    },
+    {
+      "number": 197,
+      "speaker": "ROMEO",
+      "text": "Nor bide the encounter of assailing eyes,"
+    },
+    {
+      "number": 198,
+      "speaker": "ROMEO",
+      "text": "Nor ope her lap to saint-seducing gold:"
+    },
+    {
+      "number": 199,
+      "speaker": "ROMEO",
+      "text": "O, she is rich in beauty, only poor,"
+    },
+    {
+      "number": 200,
+      "speaker": "ROMEO",
+      "text": "That when she dies with beauty dies her store."
+    },
+    {
+      "number": 201,
+      "speaker": "BENVOLIO",
+      "text": "Then she hath sworn that she will still live chaste?"
+    },
+    {
+      "number": 202,
+      "speaker": "ROMEO",
+      "text": "She hath, and in that sparing makes huge waste,"
+    },
+    {
+      "number": 203,
+      "speaker": "ROMEO",
+      "text": "For beauty starved with her severity"
+    },
+    {
+      "number": 204,
+      "speaker": "ROMEO",
+      "text": "Cuts beauty off from all posterity."
+    },
+    {
+      "number": 205,
+      "speaker": "ROMEO",
+      "text": "She is too fair, too wise, wisely too fair,"
+    },
+    {
+      "number": 206,
+      "speaker": "ROMEO",
+      "text": "To merit bliss by making me despair:"
+    },
+    {
+      "number": 207,
+      "speaker": "ROMEO",
+      "text": "She hath forsworn to love, and in that vow"
+    },
+    {
+      "number": 208,
+      "speaker": "ROMEO",
+      "text": "Do I live dead that live to tell it now."
+    },
+    {
+      "number": 209,
+      "speaker": "BENVOLIO",
+      "text": "Be ruled by me, forget to think of her."
+    },
+    {
+      "number": 210,
+      "speaker": "ROMEO",
+      "text": "O, teach me how I should forget to think."
+    },
+    {
+      "number": 211,
+      "speaker": "BENVOLIO",
+      "text": "By giving liberty unto thine eyes;"
+    },
+    {
+      "number": 212,
+      "speaker": "BENVOLIO",
+      "text": "Examine other beauties."
+    },
+    {
+      "number": 212,
+      "speaker": "ROMEO",
+      "text": "’Tis the way"
+    },
+    {
+      "number": 213,
+      "speaker": "ROMEO",
+      "text": "To call hers exquisite, in question more:"
+    },
+    {
+      "number": 214,
+      "speaker": "ROMEO",
+      "text": "These happy masks that kiss fair ladies’ brows"
+    },
+    {
+      "number": 215,
+      "speaker": "ROMEO",
+      "text": "Being black put us in mind they hide the fair;"
+    },
+    {
+      "number": 216,
+      "speaker": "ROMEO",
+      "text": "He that is strucken blind cannot forget"
+    },
+    {
+      "number": 217,
+      "speaker": "ROMEO",
+      "text": "The precious treasure of his eyesight lost:"
+    },
+    {
+      "number": 218,
+      "speaker": "ROMEO",
+      "text": "Show me a mistress that is passing fair,"
+    },
+    {
+      "number": 219,
+      "speaker": "ROMEO",
+      "text": "What doth her beauty serve, but as a note"
+    },
+    {
+      "number": 220,
+      "speaker": "ROMEO",
+      "text": "Where I may read who pass’d that passing fair?"
+    },
+    {
+      "number": 221,
+      "speaker": "ROMEO",
+      "text": "Farewell: thou canst not teach me to forget."
+    },
+    {
+      "number": 222,
+      "speaker": "BENVOLIO",
+      "text": "I’ll pay that doctrine, or else die in debt."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Sampson and Gregory, of the house of Capulet, armed with swords and bucklers."
+    },
+    {
+      "after_line": 34,
+      "text": "Enter Abraham and Balthasar."
+    },
+    {
+      "after_line": 38,
+      "text": "Aside to Gregory."
+    },
+    {
+      "after_line": 48,
+      "text": "Enter Benvolio."
+    },
+    {
+      "after_line": 50,
+      "text": "Enter Tybalt."
+    },
+    {
+      "after_line": 57,
+      "text": "Enter several of both houses, who join the fray; then enter Citizens, with clubs."
+    },
+    {
+      "after_line": 59,
+      "text": "Enter Capulet in his gown, and Lady Capulet."
+    },
+    {
+      "after_line": 63,
+      "text": "Enter Montague and Lady Montague."
+    },
+    {
+      "after_line": 65,
+      "text": "Enter Prince, with Attendants."
+    },
+    {
+      "after_line": 88,
+      "text": "Exeunt all but Montague, Lady Montague, and Benvolio."
+    },
+    {
+      "after_line": 139,
+      "text": "Enter Romeo."
+    },
+    {
+      "after_line": 143,
+      "text": "Exeunt Montague and Lady."
+    },
+    {
+      "after_line": 222,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss1",
+      "line": 1,
+      "phrase": "carry coals",
+      "definition": "endure insult; do menial work — to 'carry coals' was proverbially demeaning"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss2",
+      "line": 2,
+      "phrase": "colliers",
+      "definition": "coal-carriers — also slang for cheats or dirty fellows"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss3",
+      "line": 3,
+      "phrase": "choler",
+      "definition": "anger; one of the four humors, the hot bile"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss4",
+      "line": 4,
+      "phrase": "collar",
+      "definition": "the hangman's noose — Sampson's pun on choler/collier/collar"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss5",
+      "line": 6,
+      "phrase": "moved",
+      "definition": "provoked to anger"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss6",
+      "line": 11,
+      "phrase": "take the wall",
+      "definition": "claim the cleaner inner-street position, forcing others into the gutter — a gesture of dominance"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss7",
+      "line": 12,
+      "phrase": "weakest goes to the wall",
+      "definition": "the weak are pushed aside — proverb turned on its head by Sampson"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss8",
+      "line": 20,
+      "phrase": "maidenheads",
+      "definition": "virginities — Sampson's crude sexual bragging"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss9",
+      "line": 26,
+      "phrase": "poor-John",
+      "definition": "dried, salted hake — a cheap food associated with impotence"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss10",
+      "line": 1,
+      "phrase": "bucklers",
+      "definition": "small round shields used with short swords"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss11",
+      "line": 30,
+      "phrase": "marry",
+      "definition": "mild oath, from 'by the Virgin Mary' — roughly 'indeed'"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss12",
+      "line": 36,
+      "phrase": "bite my thumb",
+      "definition": "an insulting gesture made by flicking the thumbnail from behind the upper teeth"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss13",
+      "line": 42,
+      "phrase": "quarrel",
+      "definition": "a cause for fighting; a pretext"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss14",
+      "line": 48,
+      "phrase": "swashing blow",
+      "definition": "a slashing, swaggering sword-stroke"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss15",
+      "line": 51,
+      "phrase": "heartless hinds",
+      "definition": "cowardly peasants — 'hinds' = servants, with a pun on 'female deer'"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss16",
+      "line": 64,
+      "phrase": "villain",
+      "definition": "base-born man; peasant — not yet the modern sense of 'criminal'"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss17",
+      "line": 60,
+      "phrase": "long sword",
+      "definition": "an old-fashioned heavy weapon; the elder Capulet calls for one contemptuously, age-inappropriate"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss18",
+      "line": 67,
+      "phrase": "Profaners",
+      "definition": "defilers; those who desecrate sacred things"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss19",
+      "line": 67,
+      "phrase": "neighbour-stained steel",
+      "definition": "swords stained with neighbors' blood"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss20",
+      "line": 72,
+      "phrase": "mistemper’d",
+      "definition": "ill-tempered; used in anger (also: poorly forged)"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss21",
+      "line": 73,
+      "phrase": "moved prince",
+      "definition": "angered prince"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss22",
+      "line": 74,
+      "phrase": "airy word",
+      "definition": "trivial comment; mere breath"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss23",
+      "line": 77,
+      "phrase": "Verona’s ancient citizens",
+      "definition": "the elder townsmen of Verona"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss24",
+      "line": 78,
+      "phrase": "grave beseeming ornaments",
+      "definition": "dignified ceremonial garments of old age"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss25",
+      "line": 82,
+      "phrase": "forfeit",
+      "definition": "pay the penalty"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss26",
+      "line": 87,
+      "phrase": "Free-town",
+      "definition": "Villafranca, Escalus's judgment-seat near Verona"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss27",
+      "line": 89,
+      "phrase": "abroach",
+      "definition": "started; set in motion (like tapping a wine-cask)"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss28",
+      "line": 97,
+      "phrase": "withal",
+      "definition": "with it; therewith"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss29",
+      "line": 102,
+      "phrase": "fray",
+      "definition": "fight; brawl"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss30",
+      "line": 105,
+      "phrase": "drave",
+      "definition": "drove (archaic past tense)"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss31",
+      "line": 125,
+      "phrase": "humour",
+      "definition": "mood; temperament governed by the four bodily humors"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss32",
+      "line": 106,
+      "phrase": "sycamore",
+      "definition": "the name puns on 'sick-amour' — sick love"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss33",
+      "line": 110,
+      "phrase": "covert",
+      "definition": "hiding-place; thicket"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss34",
+      "line": 120,
+      "phrase": "Aurora",
+      "definition": "Roman goddess of the dawn"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss35",
+      "line": 121,
+      "phrase": "heavy son",
+      "definition": "sad son — 'heavy' means melancholy"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss36",
+      "line": 125,
+      "phrase": "portentous",
+      "definition": "ominous; warning of evil"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss37",
+      "line": 143,
+      "phrase": "shrift",
+      "definition": "confession"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss38",
+      "line": 151,
+      "phrase": "Out of her favour",
+      "definition": "unloved by her; out of the favor of the lady he loves"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss39",
+      "line": 152,
+      "phrase": "Alas, that love, so gentle in his view",
+      "definition": "Romeo begins his Petrarchan-lover complaint, heaping paradoxes on Cupid"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss40",
+      "line": 154,
+      "phrase": "muffled",
+      "definition": "blindfolded — Cupid was traditionally depicted blind"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss41",
+      "line": 159,
+      "phrase": "brawling love",
+      "definition": "quarrelsome love — the first of Romeo's stacked oxymorons"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss42",
+      "line": 159,
+      "phrase": "loving hate",
+      "definition": "hateful love — the play's central oxymoronic pairing"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss43",
+      "line": 162,
+      "phrase": "Mis-shapen chaos",
+      "definition": "formless disorder — from which creation was said to proceed"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss44",
+      "line": 163,
+      "phrase": "Feather of lead",
+      "definition": "weightless heaviness — impossible image"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss45",
+      "line": 163,
+      "phrase": "bright smoke",
+      "definition": "visible emptiness — paradox"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss46",
+      "line": 163,
+      "phrase": "cold fire",
+      "definition": "passionless flame — Petrarchan cliché"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss47",
+      "line": 163,
+      "phrase": "sick health",
+      "definition": "unhealthy well-being — oxymoron"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss48",
+      "line": 164,
+      "phrase": "Still-waking sleep",
+      "definition": "wakeful sleep; restless unconsciousness"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss49",
+      "line": 170,
+      "phrase": "propagate",
+      "definition": "increase; multiply"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss50",
+      "line": 173,
+      "phrase": "fume of sighs",
+      "definition": "vapor of sighs — love-sickness was thought to produce literal breath-clouds"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss51",
+      "line": 176,
+      "phrase": "discreet",
+      "definition": "prudent; judicious"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss52",
+      "line": 178,
+      "phrase": "soft",
+      "definition": "wait; stop — exclamation of interruption"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss53",
+      "line": 188,
+      "phrase": "In sadness",
+      "definition": "in earnest; seriously"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss54",
+      "line": 189,
+      "phrase": "aim’d so near",
+      "definition": "guessed so close to the truth"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss55",
+      "line": 174,
+      "phrase": "in love",
+      "definition": "actually in love"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss56",
+      "line": 190,
+      "phrase": "A right good mark-man",
+      "definition": "a good archer — continuing the Cupid-as-archer image"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss57",
+      "line": 191,
+      "phrase": "fair mark",
+      "definition": "attractive target"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss58",
+      "line": 191,
+      "phrase": "A right fair mark",
+      "definition": "a very beautiful target"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss59",
+      "line": 193,
+      "phrase": "Dian’s wit",
+      "definition": "the wisdom of Diana — Roman goddess of the moon, hunt, and chastity"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss60",
+      "line": 194,
+      "phrase": "strong proof of chastity well arm’d",
+      "definition": "heavily armored by virginity; immune to desire"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss61",
+      "line": 195,
+      "phrase": "childish bow",
+      "definition": "Cupid's boyish weapon — dismissed by Rosaline's chastity"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss62",
+      "line": 197,
+      "phrase": "encounter of assailing eyes",
+      "definition": "the seductive gaze of suitors"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss63",
+      "line": 196,
+      "phrase": "siege of loving terms",
+      "definition": "courtship as military campaign — a Petrarchan commonplace"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss64",
+      "line": 198,
+      "phrase": "ope",
+      "definition": "open"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss65",
+      "line": 199,
+      "phrase": "rich in beauty",
+      "definition": "only poor in that all her beauty will die with her — Rosaline has vowed chastity"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss66",
+      "line": 202,
+      "phrase": "sparing",
+      "definition": "self-denying; abstinent"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss67",
+      "line": 207,
+      "phrase": "forsworn to love",
+      "definition": "sworn off love"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss68",
+      "line": 117,
+      "phrase": "Adding to clouds more clouds",
+      "definition": "Romeo's sighs swell the clouds; Petrarchan weather-metaphor"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss69",
+      "line": 188,
+      "phrase": "in sadness",
+      "definition": "in earnest; seriously (Benvolio pressing Romeo)"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_gloss70",
+      "line": 204,
+      "phrase": "posterity",
+      "definition": "descendants; future generations — Rosaline will leave no heir"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act1_scene1_ann1",
+      "line_start": 1,
+      "line_end": 40,
+      "citation_display": "Romeo and Juliet 1.1.1–40",
+      "category": "linguistic",
+      "title": "Sampson and Gregory — beginning in prose and bawdry",
+      "body": "The play opens not with the noble lovers but with two Capulet servants trading puns and sexual insults in prose. This is a deliberate structural choice. Shakespeare's Verona is a city whose servants also carry the feud — violence is stitched into the social fabric from the bottom up. The bawdry ('maidenheads,' 'pretty piece of flesh,' 'take the wall') establishes that the feud is about masculine display, territory, and sexual honour as much as about high-family principle. Notice how rapidly the register shifts: prose for servants, verse for Benvolio and Tybalt, blank verse for the Prince. The play's verse/prose ecology mirrors its social hierarchy and makes possible the Nurse's later prose among the nobles' verse — a stylistic marker of her class and comic function.",
+      "sources": [
+        "Russ McDonald, Shakespeare and the Arts of Language (2001)",
+        "Frank Kermode, Shakespeare's Language (2000)"
+      ]
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_ann2",
+      "line_start": 85,
+      "line_end": 107,
+      "citation_display": "Romeo and Juliet 1.1.85–107",
+      "category": "structural",
+      "title": "The Prince's first entry — civic peace as precondition",
+      "body": "Escalus arrives to break up the third street-fight in the play's opening minutes and declares that any future breach will be a capital offence. His speech ('Rebellious subjects, enemies to peace, / Profaners of this neighbour-stained steel') is written in commanding blank verse and establishes a legal frame that will prove decisive: Romeo's killing of Tybalt in 3.1 is not punishable by death only because Tybalt had already killed Mercutio — the Prince's later decision of exile rather than execution is the compromise that launches the tragedy's second half. The Prince appears only three times in the play (1.1, 3.1, 5.3), forming a structural spine: establishing the law, adjudicating the first major breach, and delivering the final verdict.",
+      "sources": [
+        "Stephen Greenblatt, Will in the World (2004)"
+      ]
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_ann3",
+      "line_start": 165,
+      "line_end": 209,
+      "citation_display": "Romeo and Juliet 1.1.165–209",
+      "category": "thematic",
+      "title": "Romeo's Petrarchan complaint — love as performance",
+      "body": "Romeo's first long speech is a study in Petrarchan affectation. 'Feather of lead, bright smoke, cold fire, sick health' — these stacked oxymorons are not Romeo's private anguish but a public performance of the sixteenth-century lover's script, inherited from Francesco Petrarca's sonnets to Laura. Elizabethan sonneteers (Sidney, Spenser, Daniel) had made the Petrarchan complaint a fashionable literary posture. Shakespeare lets Romeo perform it at exhaustive length so that we hear, when he meets Juliet in 1.5, how radically his language shifts: at the ball he speaks in the sonnet form itself, not in the sonnet's clichés about it. The play is arguing something about language and love: the Petrarchan mode is a pose; genuine love requires finding a different syntax.",
+      "sources": [
+        "Jill L. Levenson, The Oxford Shakespeare: Romeo and Juliet (2000)",
+        "Heather Dubrow, Echoes of Desire (1995)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act1_scene1_q1",
+      "kind": "comprehension",
+      "prompt": "Why does the play open with servants rather than the titular lovers?",
+      "options": [
+        "To provide comic relief before the tragedy",
+        "To show the feud reaches all levels of Veronese society, not just the noble houses",
+        "To introduce minor characters who will die later",
+        "Standard opening convention of Elizabethan drama required it"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 1,
+      "anchor_line_end": 40
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_q2",
+      "kind": "close_reading",
+      "prompt": "What rhetorical figure dominates Romeo's first long speech about Rosaline ('cold fire,' 'bright smoke,' 'sick health')?",
+      "options": [
+        "Anaphora (repetition of opening words)",
+        "Oxymoron — stacked paradoxical pairings characteristic of Petrarchan love-poetry",
+        "Metonymy",
+        "Synecdoche"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 183,
+      "anchor_line_end": 190
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_q3",
+      "kind": "theme",
+      "prompt": "What critical view does Shakespeare take on Romeo's Rosaline-talk in 1.1?",
+      "options": [
+        "He endorses it as genuine feeling",
+        "He treats it neutrally without commentary",
+        "He frames it as performative and affected — a pose borrowed from Petrarchan sonnet convention, to be contrasted with the real love in 1.5",
+        "He mocks it as universally insincere"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 25,
+      "anchor_line_start": 165,
+      "anchor_line_end": 209
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_q4",
+      "kind": "inference",
+      "prompt": "The Prince's decree that 'if ever you disturb our streets again, / Your lives shall pay the forfeit of the peace' is structurally important because —",
+      "options": [
+        "It has no real consequence later in the play",
+        "It sets the legal stake that Romeo's later killing of Tybalt will activate, shaping his punishment",
+        "It is immediately forgotten by all characters",
+        "It only applies to commoners, not the nobility"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 94,
+      "anchor_line_end": 107
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene1_q5",
+      "kind": "comprehension",
+      "prompt": "What is Benvolio's first action when he arrives at the Capulet-Montague brawl?",
+      "options": [
+        "He encourages the fighting",
+        "He draws his sword and tries to part the combatants, urging 'Part, fools!'",
+        "He runs to fetch the Prince",
+        "He stays hidden and watches"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 62,
+      "anchor_line_end": 68
+    }
+  ]
+}

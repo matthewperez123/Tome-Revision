@@ -1,0 +1,2286 @@
+{
+  "section_id": "julius_caesar_act3_scene1",
+  "work_id": "julius-caesar",
+  "sequence": 8,
+  "act": 3,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "Rome. Before the Capitol; the Senate sitting above",
+  "line_count": 317,
+  "word_count": 2295,
+  "est_read_minutes": 11,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CAESAR",
+      "text": "To the Soothsayer. The ides of March are come."
+    },
+    {
+      "number": 2,
+      "speaker": "SOOTHSAYER",
+      "text": "Ay, Caesar; but not gone."
+    },
+    {
+      "number": 2,
+      "speaker": "ARTEMIDORUS",
+      "text": "Hail, Caesar! read this schedule."
+    },
+    {
+      "number": 3,
+      "speaker": "DECIUS",
+      "text": "Trebonius doth desire you to o’er-read,"
+    },
+    {
+      "number": 4,
+      "speaker": "DECIUS",
+      "text": "At your best leisure, this his humble suit."
+    },
+    {
+      "number": 5,
+      "speaker": "ARTEMIDORUS",
+      "text": "O Caesar, read mine first; for mine’s a suit"
+    },
+    {
+      "number": 6,
+      "speaker": "ARTEMIDORUS",
+      "text": "That touches Caesar nearer: read it, great Caesar."
+    },
+    {
+      "number": 7,
+      "speaker": "CAESAR",
+      "text": "What touches us ourself shall be last served."
+    },
+    {
+      "number": 8,
+      "speaker": "ARTEMIDORUS",
+      "text": "Delay not, Caesar; read it instantly."
+    },
+    {
+      "number": 8,
+      "speaker": "CAESAR",
+      "text": "What, is the fellow mad?"
+    },
+    {
+      "number": 9,
+      "speaker": "PUBLIUS",
+      "text": "Sirrah, give place."
+    },
+    {
+      "number": 10,
+      "speaker": "CASSIUS",
+      "text": "What, urge you your petitions in the street?"
+    },
+    {
+      "number": 11,
+      "speaker": "CASSIUS",
+      "text": "Come to the Capitol."
+    },
+    {
+      "number": 12,
+      "speaker": "POPILIUS",
+      "text": "I wish your enterprise to-day may thrive."
+    },
+    {
+      "number": 13,
+      "speaker": "CASSIUS",
+      "text": "What enterprise, Popilius?"
+    },
+    {
+      "number": 13,
+      "speaker": "POPILIUS",
+      "text": "Fare you well."
+    },
+    {
+      "number": 14,
+      "speaker": "BRUTUS",
+      "text": "What said Popilius Lena?"
+    },
+    {
+      "number": 15,
+      "speaker": "CASSIUS",
+      "text": "He wish’d to-day our enterprise might thrive."
+    },
+    {
+      "number": 16,
+      "speaker": "CASSIUS",
+      "text": "I fear our purpose is discovered."
+    },
+    {
+      "number": 17,
+      "speaker": "BRUTUS",
+      "text": "Look, how he makes to Caesar: mark him."
+    },
+    {
+      "number": 18,
+      "speaker": "CASSIUS",
+      "text": "Casca, be sudden, for we fear prevention."
+    },
+    {
+      "number": 19,
+      "speaker": "CASSIUS",
+      "text": "Brutus, what shall be done? If this be known,"
+    },
+    {
+      "number": 20,
+      "speaker": "CASSIUS",
+      "text": "Cassius or Caesar never shall turn back,"
+    },
+    {
+      "number": 21,
+      "speaker": "CASSIUS",
+      "text": "For I will slay myself."
+    },
+    {
+      "number": 21,
+      "speaker": "BRUTUS",
+      "text": "Cassius, be constant:"
+    },
+    {
+      "number": 22,
+      "speaker": "BRUTUS",
+      "text": "Popilius Lena speaks not of our purposes;"
+    },
+    {
+      "number": 23,
+      "speaker": "BRUTUS",
+      "text": "For, look, he smiles, and Caesar doth not change."
+    },
+    {
+      "number": 24,
+      "speaker": "CASSIUS",
+      "text": "Trebonius knows his time; for, look you, Brutus,"
+    },
+    {
+      "number": 25,
+      "speaker": "CASSIUS",
+      "text": "He draws Mark Antony out of the way."
+    },
+    {
+      "number": 26,
+      "speaker": "DECIUS",
+      "text": "Where is Metellus Cimber? Let him go,"
+    },
+    {
+      "number": 27,
+      "speaker": "DECIUS",
+      "text": "And presently prefer his suit to Caesar."
+    },
+    {
+      "number": 28,
+      "speaker": "BRUTUS",
+      "text": "He is address’d: press near and second him."
+    },
+    {
+      "number": 29,
+      "speaker": "CINNA",
+      "text": "Casca, you are the first that rears your hand."
+    },
+    {
+      "number": 30,
+      "speaker": "CAESAR",
+      "text": "Are we all ready? What is now amiss"
+    },
+    {
+      "number": 31,
+      "speaker": "CAESAR",
+      "text": "That Caesar and his senate must redress?"
+    },
+    {
+      "number": 32,
+      "speaker": "METELLUS",
+      "text": "Most high, most mighty, and most puissant Caesar,"
+    },
+    {
+      "number": 33,
+      "speaker": "METELLUS",
+      "text": "Metellus Cimber throws before thy seat"
+    },
+    {
+      "number": 34,
+      "speaker": "METELLUS",
+      "text": "An humble heart—"
+    },
+    {
+      "number": 34,
+      "speaker": "CAESAR",
+      "text": "I must prevent thee, Cimber."
+    },
+    {
+      "number": 35,
+      "speaker": "CAESAR",
+      "text": "These couchings and these lowly courtesies"
+    },
+    {
+      "number": 36,
+      "speaker": "CAESAR",
+      "text": "Might fire the blood of ordinary men,"
+    },
+    {
+      "number": 37,
+      "speaker": "CAESAR",
+      "text": "And turn pre-ordinance and first decree"
+    },
+    {
+      "number": 38,
+      "speaker": "CAESAR",
+      "text": "Into the law of children. Be not fond,"
+    },
+    {
+      "number": 39,
+      "speaker": "CAESAR",
+      "text": "To think that Caesar bears such rebel blood"
+    },
+    {
+      "number": 40,
+      "speaker": "CAESAR",
+      "text": "That will be thaw’d from the true quality"
+    },
+    {
+      "number": 41,
+      "speaker": "CAESAR",
+      "text": "With that which melteth fools; I mean, sweet words,"
+    },
+    {
+      "number": 42,
+      "speaker": "CAESAR",
+      "text": "Low-crooked court’sies and base spaniel-fawning."
+    },
+    {
+      "number": 43,
+      "speaker": "CAESAR",
+      "text": "Thy brother by decree is banished:"
+    },
+    {
+      "number": 44,
+      "speaker": "CAESAR",
+      "text": "If thou dost bend and pray and fawn for him,"
+    },
+    {
+      "number": 45,
+      "speaker": "CAESAR",
+      "text": "I spurn thee like a cur out of my way."
+    },
+    {
+      "number": 46,
+      "speaker": "CAESAR",
+      "text": "Know, Caesar doth not wrong, nor without cause"
+    },
+    {
+      "number": 47,
+      "speaker": "CAESAR",
+      "text": "Will he be satisfied."
+    },
+    {
+      "number": 48,
+      "speaker": "METELLUS",
+      "text": "Is there no voice more worthy than my own,"
+    },
+    {
+      "number": 49,
+      "speaker": "METELLUS",
+      "text": "To sound more sweetly in great Caesar’s ear"
+    },
+    {
+      "number": 50,
+      "speaker": "METELLUS",
+      "text": "For the repealing of my banish’d brother?"
+    },
+    {
+      "number": 51,
+      "speaker": "BRUTUS",
+      "text": "I kiss thy hand, but not in flattery, Caesar;"
+    },
+    {
+      "number": 52,
+      "speaker": "BRUTUS",
+      "text": "Desiring thee that Publius Cimber may"
+    },
+    {
+      "number": 53,
+      "speaker": "BRUTUS",
+      "text": "Have an immediate freedom of repeal."
+    },
+    {
+      "number": 53,
+      "speaker": "CAESAR",
+      "text": "What, Brutus!"
+    },
+    {
+      "number": 54,
+      "speaker": "CASSIUS",
+      "text": "Pardon, Caesar; Caesar, pardon:"
+    },
+    {
+      "number": 55,
+      "speaker": "CASSIUS",
+      "text": "As low as to thy foot doth Cassius fall,"
+    },
+    {
+      "number": 56,
+      "speaker": "CASSIUS",
+      "text": "To beg enfranchisement for Publius Cimber."
+    },
+    {
+      "number": 57,
+      "speaker": "CAESAR",
+      "text": "I could be well moved, if I were as you;"
+    },
+    {
+      "number": 58,
+      "speaker": "CAESAR",
+      "text": "If I could pray to move, prayers would move me:"
+    },
+    {
+      "number": 59,
+      "speaker": "CAESAR",
+      "text": "But I am constant as the northern star,"
+    },
+    {
+      "number": 60,
+      "speaker": "CAESAR",
+      "text": "Of whose true-fix’d and resting quality"
+    },
+    {
+      "number": 61,
+      "speaker": "CAESAR",
+      "text": "There is no fellow in the firmament."
+    },
+    {
+      "number": 62,
+      "speaker": "CAESAR",
+      "text": "The skies are painted with unnumber’d sparks,"
+    },
+    {
+      "number": 63,
+      "speaker": "CAESAR",
+      "text": "They are all fire and everyone doth shine,"
+    },
+    {
+      "number": 64,
+      "speaker": "CAESAR",
+      "text": "But there’s but one in all doth hold his place:"
+    },
+    {
+      "number": 65,
+      "speaker": "CAESAR",
+      "text": "So in the world; ’tis furnish’d well with men,"
+    },
+    {
+      "number": 66,
+      "speaker": "CAESAR",
+      "text": "And men are flesh and blood, and apprehensive;"
+    },
+    {
+      "number": 67,
+      "speaker": "CAESAR",
+      "text": "Yet in the number I do know but one"
+    },
+    {
+      "number": 68,
+      "speaker": "CAESAR",
+      "text": "That unassailable holds on his rank,"
+    },
+    {
+      "number": 69,
+      "speaker": "CAESAR",
+      "text": "Unshaked of motion: and that I am he,"
+    },
+    {
+      "number": 70,
+      "speaker": "CAESAR",
+      "text": "Let me a little show it, even in this;"
+    },
+    {
+      "number": 71,
+      "speaker": "CAESAR",
+      "text": "That I was constant Cimber should be banish’d,"
+    },
+    {
+      "number": 72,
+      "speaker": "CAESAR",
+      "text": "And constant do remain to keep him so."
+    },
+    {
+      "number": 73,
+      "speaker": "CINNA",
+      "text": "O Caesar—"
+    },
+    {
+      "number": 73,
+      "speaker": "CAESAR",
+      "text": "Hence! wilt thou lift up Olympus?"
+    },
+    {
+      "number": 74,
+      "speaker": "DECIUS",
+      "text": "Great Caesar—"
+    },
+    {
+      "number": 74,
+      "speaker": "CAESAR",
+      "text": "Doth not Brutus bootless kneel?"
+    },
+    {
+      "number": 75,
+      "speaker": "CASCA",
+      "text": "Speak, hands for me!"
+    },
+    {
+      "number": 75,
+      "speaker": "CAESAR",
+      "text": "Et tu, Brute! Then fall, Caesar."
+    },
+    {
+      "number": 76,
+      "speaker": "CINNA",
+      "text": "Liberty! Freedom! Tyranny is dead!"
+    },
+    {
+      "number": 77,
+      "speaker": "CINNA",
+      "text": "Run hence, proclaim, cry it about the streets."
+    },
+    {
+      "number": 78,
+      "speaker": "CASSIUS",
+      "text": "Some to the common pulpits, and cry out"
+    },
+    {
+      "number": 79,
+      "speaker": "CASSIUS",
+      "text": "“Liberty, freedom, and enfranchisement!”"
+    },
+    {
+      "number": 79,
+      "speaker": "BRUTUS",
+      "text": "People and senators, be not affrighted;"
+    },
+    {
+      "number": 80,
+      "speaker": "BRUTUS",
+      "text": "Fly not; stand still: ambition’s debt is paid."
+    },
+    {
+      "number": 81,
+      "speaker": "CASCA",
+      "text": "Go to the pulpit, Brutus."
+    },
+    {
+      "number": 81,
+      "speaker": "DECIUS",
+      "text": "And Cassius too."
+    },
+    {
+      "number": 82,
+      "speaker": "BRUTUS",
+      "text": "Where’s Publius?"
+    },
+    {
+      "number": 82,
+      "speaker": "CINNA",
+      "text": "Here, quite confounded with this mutiny."
+    },
+    {
+      "number": 83,
+      "speaker": "METELLUS",
+      "text": "Stand fast together, lest some friend of Caesar’s"
+    },
+    {
+      "number": 84,
+      "speaker": "METELLUS",
+      "text": "Should chance—"
+    },
+    {
+      "number": 85,
+      "speaker": "BRUTUS",
+      "text": "Talk not of standing. Publius, good cheer;"
+    },
+    {
+      "number": 86,
+      "speaker": "BRUTUS",
+      "text": "There is no harm intended to your person,"
+    },
+    {
+      "number": 87,
+      "speaker": "BRUTUS",
+      "text": "Nor to no Roman else: so tell them, Publius."
+    },
+    {
+      "number": 88,
+      "speaker": "CASSIUS",
+      "text": "And leave us, Publius; lest that the people,"
+    },
+    {
+      "number": 89,
+      "speaker": "CASSIUS",
+      "text": "Rushing on us, should do your age some mischief."
+    },
+    {
+      "number": 90,
+      "speaker": "BRUTUS",
+      "text": "Do so: and let no man abide this deed,"
+    },
+    {
+      "number": 91,
+      "speaker": "BRUTUS",
+      "text": "But we the doers."
+    },
+    {
+      "number": 91,
+      "speaker": "CASSIUS",
+      "text": "Where is Antony?"
+    },
+    {
+      "number": 92,
+      "speaker": "TREBONIUS",
+      "text": "Fled to his house amazed:"
+    },
+    {
+      "number": 93,
+      "speaker": "TREBONIUS",
+      "text": "Men, wives and children stare, cry out and run"
+    },
+    {
+      "number": 94,
+      "speaker": "TREBONIUS",
+      "text": "As it were doomsday."
+    },
+    {
+      "number": 94,
+      "speaker": "BRUTUS",
+      "text": "Fates, we will know your pleasures:"
+    },
+    {
+      "number": 95,
+      "speaker": "BRUTUS",
+      "text": "That we shall die, we know; ’tis but the time"
+    },
+    {
+      "number": 96,
+      "speaker": "BRUTUS",
+      "text": "And drawing days out, that men stand upon."
+    },
+    {
+      "number": 97,
+      "speaker": "CASSIUS",
+      "text": "Why, he that cuts off twenty years of life"
+    },
+    {
+      "number": 98,
+      "speaker": "CASSIUS",
+      "text": "Cuts off so many years of fearing death."
+    },
+    {
+      "number": 99,
+      "speaker": "BRUTUS",
+      "text": "Grant that, and then is death a benefit:"
+    },
+    {
+      "number": 100,
+      "speaker": "BRUTUS",
+      "text": "So are we Caesar’s friends, that have abridged"
+    },
+    {
+      "number": 101,
+      "speaker": "BRUTUS",
+      "text": "His time of fearing death. Stoop, Romans, stoop,"
+    },
+    {
+      "number": 102,
+      "speaker": "BRUTUS",
+      "text": "And let us bathe our hands in Caesar’s blood"
+    },
+    {
+      "number": 103,
+      "speaker": "BRUTUS",
+      "text": "Up to the elbows, and besmear our swords:"
+    },
+    {
+      "number": 104,
+      "speaker": "BRUTUS",
+      "text": "Then walk we forth, even to the market-place,"
+    },
+    {
+      "number": 105,
+      "speaker": "BRUTUS",
+      "text": "And, waving our red weapons o’er our heads,"
+    },
+    {
+      "number": 106,
+      "speaker": "BRUTUS",
+      "text": "Let’s all cry “Peace, freedom and liberty!”"
+    },
+    {
+      "number": 107,
+      "speaker": "CASSIUS",
+      "text": "Stoop, then, and wash. How many ages hence"
+    },
+    {
+      "number": 108,
+      "speaker": "CASSIUS",
+      "text": "Shall this our lofty scene be acted over"
+    },
+    {
+      "number": 109,
+      "speaker": "CASSIUS",
+      "text": "In states unborn and accents yet unknown!"
+    },
+    {
+      "number": 110,
+      "speaker": "BRUTUS",
+      "text": "How many times shall Caesar bleed in sport,"
+    },
+    {
+      "number": 111,
+      "speaker": "BRUTUS",
+      "text": "That now on Pompey’s basis lies along"
+    },
+    {
+      "number": 112,
+      "speaker": "BRUTUS",
+      "text": "No worthier than the dust!"
+    },
+    {
+      "number": 112,
+      "speaker": "CASSIUS",
+      "text": "So oft as that shall be,"
+    },
+    {
+      "number": 113,
+      "speaker": "CASSIUS",
+      "text": "So often shall the knot of us be call’d"
+    },
+    {
+      "number": 114,
+      "speaker": "CASSIUS",
+      "text": "The men that gave their country liberty."
+    },
+    {
+      "number": 115,
+      "speaker": "DECIUS",
+      "text": "What, shall we forth?"
+    },
+    {
+      "number": 115,
+      "speaker": "CASSIUS",
+      "text": "Ay, every man away:"
+    },
+    {
+      "number": 116,
+      "speaker": "CASSIUS",
+      "text": "Brutus shall lead; and we will grace his heels"
+    },
+    {
+      "number": 117,
+      "speaker": "CASSIUS",
+      "text": "With the most boldest and best hearts of Rome."
+    },
+    {
+      "number": 118,
+      "speaker": "BRUTUS",
+      "text": "Soft! who comes here? A friend of Antony’s."
+    },
+    {
+      "number": 119,
+      "speaker": "SERVANT",
+      "text": "Thus, Brutus, did my master bid me kneel;"
+    },
+    {
+      "number": 120,
+      "speaker": "SERVANT",
+      "text": "Thus did Mark Antony bid me fall down;"
+    },
+    {
+      "number": 121,
+      "speaker": "SERVANT",
+      "text": "And, being prostrate, thus he bade me say:"
+    },
+    {
+      "number": 122,
+      "speaker": "SERVANT",
+      "text": "Brutus is noble, wise, valiant, and honest;"
+    },
+    {
+      "number": 123,
+      "speaker": "SERVANT",
+      "text": "Caesar was mighty, bold, royal, and loving:"
+    },
+    {
+      "number": 124,
+      "speaker": "SERVANT",
+      "text": "Say I love Brutus, and I honour him;"
+    },
+    {
+      "number": 125,
+      "speaker": "SERVANT",
+      "text": "Say I fear’d Caesar, honour’d him and loved him."
+    },
+    {
+      "number": 126,
+      "speaker": "SERVANT",
+      "text": "If Brutus will vouchsafe that Antony"
+    },
+    {
+      "number": 127,
+      "speaker": "SERVANT",
+      "text": "May safely come to him, and be resolved"
+    },
+    {
+      "number": 128,
+      "speaker": "SERVANT",
+      "text": "How Caesar hath deserved to lie in death,"
+    },
+    {
+      "number": 129,
+      "speaker": "SERVANT",
+      "text": "Mark Antony shall not love Caesar dead"
+    },
+    {
+      "number": 130,
+      "speaker": "SERVANT",
+      "text": "So well as Brutus living; but will follow"
+    },
+    {
+      "number": 131,
+      "speaker": "SERVANT",
+      "text": "The fortunes and affairs of noble Brutus"
+    },
+    {
+      "number": 132,
+      "speaker": "SERVANT",
+      "text": "Thorough the hazards of this untrod state"
+    },
+    {
+      "number": 133,
+      "speaker": "SERVANT",
+      "text": "With all true faith. So says my master Antony."
+    },
+    {
+      "number": 134,
+      "speaker": "BRUTUS",
+      "text": "Thy master is a wise and valiant Roman;"
+    },
+    {
+      "number": 135,
+      "speaker": "BRUTUS",
+      "text": "I never thought him worse."
+    },
+    {
+      "number": 136,
+      "speaker": "BRUTUS",
+      "text": "Tell him, so please him come unto this place,"
+    },
+    {
+      "number": 137,
+      "speaker": "BRUTUS",
+      "text": "He shall be satisfied; and, by my honour,"
+    },
+    {
+      "number": 138,
+      "speaker": "BRUTUS",
+      "text": "Depart untouch’d."
+    },
+    {
+      "number": 138,
+      "speaker": "SERVANT",
+      "text": "I’ll fetch him presently."
+    },
+    {
+      "number": 139,
+      "speaker": "BRUTUS",
+      "text": "I know that we shall have him well to friend."
+    },
+    {
+      "number": 140,
+      "speaker": "CASSIUS",
+      "text": "I wish we may: but yet have I a mind"
+    },
+    {
+      "number": 141,
+      "speaker": "CASSIUS",
+      "text": "That fears him much; and my misgiving still"
+    },
+    {
+      "number": 142,
+      "speaker": "CASSIUS",
+      "text": "Falls shrewdly to the purpose."
+    },
+    {
+      "number": 142,
+      "speaker": "BRUTUS",
+      "text": "But here comes Antony."
+    },
+    {
+      "number": 143,
+      "speaker": "BRUTUS",
+      "text": "Welcome, Mark Antony."
+    },
+    {
+      "number": 144,
+      "speaker": "ANTONY",
+      "text": "O mighty Caesar! dost thou lie so low?"
+    },
+    {
+      "number": 145,
+      "speaker": "ANTONY",
+      "text": "Are all thy conquests, glories, triumphs, spoils,"
+    },
+    {
+      "number": 146,
+      "speaker": "ANTONY",
+      "text": "Shrunk to this little measure? Fare thee well."
+    },
+    {
+      "number": 147,
+      "speaker": "ANTONY",
+      "text": "I know not, gentlemen, what you intend,"
+    },
+    {
+      "number": 148,
+      "speaker": "ANTONY",
+      "text": "Who else must be let blood, who else is rank:"
+    },
+    {
+      "number": 149,
+      "speaker": "ANTONY",
+      "text": "If I myself, there is no hour so fit"
+    },
+    {
+      "number": 150,
+      "speaker": "ANTONY",
+      "text": "As Caesar’s death hour, nor no instrument"
+    },
+    {
+      "number": 151,
+      "speaker": "ANTONY",
+      "text": "Of half that worth as those your swords, made rich"
+    },
+    {
+      "number": 152,
+      "speaker": "ANTONY",
+      "text": "With the most noble blood of all this world."
+    },
+    {
+      "number": 153,
+      "speaker": "ANTONY",
+      "text": "I do beseech ye, if you bear me hard,"
+    },
+    {
+      "number": 154,
+      "speaker": "ANTONY",
+      "text": "Now, whilst your purpled hands do reek and smoke,"
+    },
+    {
+      "number": 155,
+      "speaker": "ANTONY",
+      "text": "Fulfil your pleasure. Live a thousand years,"
+    },
+    {
+      "number": 156,
+      "speaker": "ANTONY",
+      "text": "I shall not find myself so apt to die:"
+    },
+    {
+      "number": 157,
+      "speaker": "ANTONY",
+      "text": "No place will please me so, no mean of death,"
+    },
+    {
+      "number": 158,
+      "speaker": "ANTONY",
+      "text": "As here by Caesar, and by you cut off,"
+    },
+    {
+      "number": 159,
+      "speaker": "ANTONY",
+      "text": "The choice and master spirits of this age."
+    },
+    {
+      "number": 160,
+      "speaker": "BRUTUS",
+      "text": "O Antony, beg not your death of us."
+    },
+    {
+      "number": 161,
+      "speaker": "BRUTUS",
+      "text": "Though now we must appear bloody and cruel,"
+    },
+    {
+      "number": 162,
+      "speaker": "BRUTUS",
+      "text": "As, by our hands and this our present act,"
+    },
+    {
+      "number": 163,
+      "speaker": "BRUTUS",
+      "text": "You see we do, yet see you but our hands"
+    },
+    {
+      "number": 164,
+      "speaker": "BRUTUS",
+      "text": "And this the bleeding business they have done:"
+    },
+    {
+      "number": 165,
+      "speaker": "BRUTUS",
+      "text": "Our hearts you see not; they are pitiful;"
+    },
+    {
+      "number": 166,
+      "speaker": "BRUTUS",
+      "text": "And pity to the general wrong of Rome—"
+    },
+    {
+      "number": 167,
+      "speaker": "BRUTUS",
+      "text": "As fire drives out fire, so pity pity—"
+    },
+    {
+      "number": 168,
+      "speaker": "BRUTUS",
+      "text": "Hath done this deed on Caesar. For your part,"
+    },
+    {
+      "number": 169,
+      "speaker": "BRUTUS",
+      "text": "To you our swords have leaden points, Mark Antony:"
+    },
+    {
+      "number": 170,
+      "speaker": "BRUTUS",
+      "text": "Our arms, in strength of malice, and our hearts"
+    },
+    {
+      "number": 171,
+      "speaker": "BRUTUS",
+      "text": "Of brothers’ temper, do receive you in"
+    },
+    {
+      "number": 172,
+      "speaker": "BRUTUS",
+      "text": "With all kind love, good thoughts, and reverence."
+    },
+    {
+      "number": 173,
+      "speaker": "CASSIUS",
+      "text": "Your voice shall be as strong as any man’s"
+    },
+    {
+      "number": 174,
+      "speaker": "CASSIUS",
+      "text": "In the disposing of new dignities."
+    },
+    {
+      "number": 175,
+      "speaker": "BRUTUS",
+      "text": "Only be patient till we have appeased"
+    },
+    {
+      "number": 176,
+      "speaker": "BRUTUS",
+      "text": "The multitude, beside themselves with fear,"
+    },
+    {
+      "number": 177,
+      "speaker": "BRUTUS",
+      "text": "And then we will deliver you the cause,"
+    },
+    {
+      "number": 178,
+      "speaker": "BRUTUS",
+      "text": "Why I, that did love Caesar when I struck him,"
+    },
+    {
+      "number": 179,
+      "speaker": "BRUTUS",
+      "text": "Have thus proceeded."
+    },
+    {
+      "number": 179,
+      "speaker": "ANTONY",
+      "text": "I doubt not of your wisdom."
+    },
+    {
+      "number": 180,
+      "speaker": "ANTONY",
+      "text": "Let each man render me his bloody hand:"
+    },
+    {
+      "number": 181,
+      "speaker": "ANTONY",
+      "text": "First, Marcus Brutus, will I shake with you;"
+    },
+    {
+      "number": 182,
+      "speaker": "ANTONY",
+      "text": "Next, Caius Cassius, do I take your hand;"
+    },
+    {
+      "number": 183,
+      "speaker": "ANTONY",
+      "text": "Now, Decius Brutus, yours; now yours, Metellus;"
+    },
+    {
+      "number": 184,
+      "speaker": "ANTONY",
+      "text": "Yours, Cinna; and, my valiant Casca, yours;"
+    },
+    {
+      "number": 185,
+      "speaker": "ANTONY",
+      "text": "Though last, not least in love, yours, good Trebonius."
+    },
+    {
+      "number": 186,
+      "speaker": "ANTONY",
+      "text": "Gentlemen all—alas, what shall I say?"
+    },
+    {
+      "number": 187,
+      "speaker": "ANTONY",
+      "text": "My credit now stands on such slippery ground,"
+    },
+    {
+      "number": 188,
+      "speaker": "ANTONY",
+      "text": "That one of two bad ways you must conceit me,"
+    },
+    {
+      "number": 189,
+      "speaker": "ANTONY",
+      "text": "Either a coward or a flatterer."
+    },
+    {
+      "number": 190,
+      "speaker": "ANTONY",
+      "text": "That I did love thee, Caesar, O, ’tis true:"
+    },
+    {
+      "number": 191,
+      "speaker": "ANTONY",
+      "text": "If then thy spirit look upon us now,"
+    },
+    {
+      "number": 192,
+      "speaker": "ANTONY",
+      "text": "Shall it not grieve thee dearer than thy death,"
+    },
+    {
+      "number": 193,
+      "speaker": "ANTONY",
+      "text": "To see thy Anthony making his peace,"
+    },
+    {
+      "number": 194,
+      "speaker": "ANTONY",
+      "text": "Shaking the bloody fingers of thy foes,"
+    },
+    {
+      "number": 195,
+      "speaker": "ANTONY",
+      "text": "Most noble! in the presence of thy corse?"
+    },
+    {
+      "number": 196,
+      "speaker": "ANTONY",
+      "text": "Had I as many eyes as thou hast wounds,"
+    },
+    {
+      "number": 197,
+      "speaker": "ANTONY",
+      "text": "Weeping as fast as they stream forth thy blood,"
+    },
+    {
+      "number": 198,
+      "speaker": "ANTONY",
+      "text": "It would become me better than to close"
+    },
+    {
+      "number": 199,
+      "speaker": "ANTONY",
+      "text": "In terms of friendship with thine enemies."
+    },
+    {
+      "number": 200,
+      "speaker": "ANTONY",
+      "text": "Pardon me, Julius! Here wast thou bay’d, brave hart;"
+    },
+    {
+      "number": 201,
+      "speaker": "ANTONY",
+      "text": "Here didst thou fall; and here thy hunters stand,"
+    },
+    {
+      "number": 202,
+      "speaker": "ANTONY",
+      "text": "Sign’d in thy spoil, and crimson’d in thy lethe."
+    },
+    {
+      "number": 203,
+      "speaker": "ANTONY",
+      "text": "O world, thou wast the forest to this hart;"
+    },
+    {
+      "number": 204,
+      "speaker": "ANTONY",
+      "text": "And this, indeed, O world, the heart of thee."
+    },
+    {
+      "number": 205,
+      "speaker": "ANTONY",
+      "text": "How like a deer, strucken by many princes,"
+    },
+    {
+      "number": 206,
+      "speaker": "ANTONY",
+      "text": "Dost thou here lie!"
+    },
+    {
+      "number": 206,
+      "speaker": "CASSIUS",
+      "text": "Mark Antony—"
+    },
+    {
+      "number": 207,
+      "speaker": "ANTONY",
+      "text": "Pardon me, Caius Cassius:"
+    },
+    {
+      "number": 208,
+      "speaker": "ANTONY",
+      "text": "The enemies of Caesar shall say this;"
+    },
+    {
+      "number": 209,
+      "speaker": "ANTONY",
+      "text": "Then, in a friend, it is cold modesty."
+    },
+    {
+      "number": 210,
+      "speaker": "CASSIUS",
+      "text": "I blame you not for praising Caesar so;"
+    },
+    {
+      "number": 211,
+      "speaker": "CASSIUS",
+      "text": "But what compact mean you to have with us?"
+    },
+    {
+      "number": 212,
+      "speaker": "CASSIUS",
+      "text": "Will you be prick’d in number of our friends;"
+    },
+    {
+      "number": 213,
+      "speaker": "CASSIUS",
+      "text": "Or shall we on, and not depend on you?"
+    },
+    {
+      "number": 214,
+      "speaker": "ANTONY",
+      "text": "Therefore I took your hands, but was, indeed,"
+    },
+    {
+      "number": 215,
+      "speaker": "ANTONY",
+      "text": "Sway’d from the point, by looking down on Caesar."
+    },
+    {
+      "number": 216,
+      "speaker": "ANTONY",
+      "text": "Friends am I with you all and love you all,"
+    },
+    {
+      "number": 217,
+      "speaker": "ANTONY",
+      "text": "Upon this hope, that you shall give me reasons"
+    },
+    {
+      "number": 218,
+      "speaker": "ANTONY",
+      "text": "Why and wherein Caesar was dangerous."
+    },
+    {
+      "number": 219,
+      "speaker": "BRUTUS",
+      "text": "Or else were this a savage spectacle:"
+    },
+    {
+      "number": 220,
+      "speaker": "BRUTUS",
+      "text": "Our reasons are so full of good regard"
+    },
+    {
+      "number": 221,
+      "speaker": "BRUTUS",
+      "text": "That were you, Antony, the son of Caesar,"
+    },
+    {
+      "number": 222,
+      "speaker": "BRUTUS",
+      "text": "You should be satisfied."
+    },
+    {
+      "number": 222,
+      "speaker": "ANTONY",
+      "text": "That’s all I seek:"
+    },
+    {
+      "number": 223,
+      "speaker": "ANTONY",
+      "text": "And am moreover suitor that I may"
+    },
+    {
+      "number": 224,
+      "speaker": "ANTONY",
+      "text": "Produce his body to the market-place;"
+    },
+    {
+      "number": 225,
+      "speaker": "ANTONY",
+      "text": "And in the pulpit, as becomes a friend,"
+    },
+    {
+      "number": 226,
+      "speaker": "ANTONY",
+      "text": "Speak in the order of his funeral."
+    },
+    {
+      "number": 227,
+      "speaker": "BRUTUS",
+      "text": "You shall, Mark Antony."
+    },
+    {
+      "number": 227,
+      "speaker": "CASSIUS",
+      "text": "Brutus, a word with you."
+    },
+    {
+      "number": 228,
+      "speaker": "CASSIUS",
+      "text": "You know not what you do: do not consent"
+    },
+    {
+      "number": 229,
+      "speaker": "CASSIUS",
+      "text": "That Antony speak in his funeral:"
+    },
+    {
+      "number": 230,
+      "speaker": "CASSIUS",
+      "text": "Know you how much the people may be moved"
+    },
+    {
+      "number": 231,
+      "speaker": "CASSIUS",
+      "text": "By that which he will utter?"
+    },
+    {
+      "number": 231,
+      "speaker": "BRUTUS",
+      "text": "By your pardon;"
+    },
+    {
+      "number": 232,
+      "speaker": "BRUTUS",
+      "text": "I will myself into the pulpit first,"
+    },
+    {
+      "number": 233,
+      "speaker": "BRUTUS",
+      "text": "And show the reason of our Caesar’s death:"
+    },
+    {
+      "number": 234,
+      "speaker": "BRUTUS",
+      "text": "What Antony shall speak, I will protest"
+    },
+    {
+      "number": 235,
+      "speaker": "BRUTUS",
+      "text": "He speaks by leave and by permission,"
+    },
+    {
+      "number": 236,
+      "speaker": "BRUTUS",
+      "text": "And that we are contented Caesar shall"
+    },
+    {
+      "number": 237,
+      "speaker": "BRUTUS",
+      "text": "Have all true rites and lawful ceremonies."
+    },
+    {
+      "number": 238,
+      "speaker": "BRUTUS",
+      "text": "It shall advantage more than do us wrong."
+    },
+    {
+      "number": 239,
+      "speaker": "CASSIUS",
+      "text": "I know not what may fall; I like it not."
+    },
+    {
+      "number": 240,
+      "speaker": "BRUTUS",
+      "text": "Mark Antony, here, take you Caesar’s body."
+    },
+    {
+      "number": 241,
+      "speaker": "BRUTUS",
+      "text": "You shall not in your funeral speech blame us,"
+    },
+    {
+      "number": 242,
+      "speaker": "BRUTUS",
+      "text": "But speak all good you can devise of Caesar,"
+    },
+    {
+      "number": 243,
+      "speaker": "BRUTUS",
+      "text": "And say you do’t by our permission;"
+    },
+    {
+      "number": 244,
+      "speaker": "BRUTUS",
+      "text": "Else shall you not have any hand at all"
+    },
+    {
+      "number": 245,
+      "speaker": "BRUTUS",
+      "text": "About his funeral: and you shall speak"
+    },
+    {
+      "number": 246,
+      "speaker": "BRUTUS",
+      "text": "In the same pulpit whereto I am going,"
+    },
+    {
+      "number": 247,
+      "speaker": "BRUTUS",
+      "text": "After my speech is ended."
+    },
+    {
+      "number": 247,
+      "speaker": "ANTONY",
+      "text": "Be it so;"
+    },
+    {
+      "number": 248,
+      "speaker": "ANTONY",
+      "text": "I do desire no more."
+    },
+    {
+      "number": 249,
+      "speaker": "BRUTUS",
+      "text": "Prepare the body then, and follow us."
+    },
+    {
+      "number": 250,
+      "speaker": "ANTONY",
+      "text": "O, pardon me, thou bleeding piece of earth,"
+    },
+    {
+      "number": 251,
+      "speaker": "ANTONY",
+      "text": "That I am meek and gentle with these butchers!"
+    },
+    {
+      "number": 252,
+      "speaker": "ANTONY",
+      "text": "Thou art the ruins of the noblest man"
+    },
+    {
+      "number": 253,
+      "speaker": "ANTONY",
+      "text": "That ever lived in the tide of times."
+    },
+    {
+      "number": 254,
+      "speaker": "ANTONY",
+      "text": "Woe to the hand that shed this costly blood!"
+    },
+    {
+      "number": 255,
+      "speaker": "ANTONY",
+      "text": "Over thy wounds now do I prophesy—"
+    },
+    {
+      "number": 256,
+      "speaker": "ANTONY",
+      "text": "Which, like dumb mouths, do ope their ruby lips,"
+    },
+    {
+      "number": 257,
+      "speaker": "ANTONY",
+      "text": "To beg the voice and utterance of my tongue—"
+    },
+    {
+      "number": 258,
+      "speaker": "ANTONY",
+      "text": "A curse shall light upon the limbs of men;"
+    },
+    {
+      "number": 259,
+      "speaker": "ANTONY",
+      "text": "Domestic fury and fierce civil strife"
+    },
+    {
+      "number": 260,
+      "speaker": "ANTONY",
+      "text": "Shall cumber all the parts of Italy;"
+    },
+    {
+      "number": 261,
+      "speaker": "ANTONY",
+      "text": "Blood and destruction shall be so in use"
+    },
+    {
+      "number": 262,
+      "speaker": "ANTONY",
+      "text": "And dreadful objects so familiar"
+    },
+    {
+      "number": 263,
+      "speaker": "ANTONY",
+      "text": "That mothers shall but smile when they behold"
+    },
+    {
+      "number": 264,
+      "speaker": "ANTONY",
+      "text": "Their infants quarter’d with the hands of war;"
+    },
+    {
+      "number": 265,
+      "speaker": "ANTONY",
+      "text": "All pity choked with custom of fell deeds:"
+    },
+    {
+      "number": 266,
+      "speaker": "ANTONY",
+      "text": "And Caesar’s spirit, ranging for revenge,"
+    },
+    {
+      "number": 267,
+      "speaker": "ANTONY",
+      "text": "With Ate by his side come hot from hell,"
+    },
+    {
+      "number": 268,
+      "speaker": "ANTONY",
+      "text": "Shall in these confines with a monarch’s voice"
+    },
+    {
+      "number": 269,
+      "speaker": "ANTONY",
+      "text": "Cry “Havoc,” and let slip the dogs of war;"
+    },
+    {
+      "number": 270,
+      "speaker": "ANTONY",
+      "text": "That this foul deed shall smell above the earth"
+    },
+    {
+      "number": 271,
+      "speaker": "ANTONY",
+      "text": "With carrion men, groaning for burial."
+    },
+    {
+      "number": 272,
+      "speaker": "ANTONY",
+      "text": "You serve Octavius Caesar, do you not?"
+    },
+    {
+      "number": 273,
+      "speaker": "SERVANT",
+      "text": "I do, Mark Antony."
+    },
+    {
+      "number": 274,
+      "speaker": "ANTONY",
+      "text": "Caesar did write for him to come to Rome."
+    },
+    {
+      "number": 275,
+      "speaker": "SERVANT",
+      "text": "He did receive his letters, and is coming;"
+    },
+    {
+      "number": 276,
+      "speaker": "SERVANT",
+      "text": "And bid me say to you by word of mouth—"
+    },
+    {
+      "number": 277,
+      "speaker": "SERVANT",
+      "text": "O Caesar!—Seeing the body."
+    },
+    {
+      "number": 278,
+      "speaker": "ANTONY",
+      "text": "Thy heart is big, get thee apart and weep."
+    },
+    {
+      "number": 279,
+      "speaker": "ANTONY",
+      "text": "Passion, I see, is catching; for mine eyes,"
+    },
+    {
+      "number": 280,
+      "speaker": "ANTONY",
+      "text": "Seeing those beads of sorrow stand in thine,"
+    },
+    {
+      "number": 281,
+      "speaker": "ANTONY",
+      "text": "Began to water. Is thy master coming?"
+    },
+    {
+      "number": 282,
+      "speaker": "SERVANT",
+      "text": "He lies to-night within seven leagues of Rome."
+    },
+    {
+      "number": 283,
+      "speaker": "ANTONY",
+      "text": "Post back with speed, and tell him what hath chanced:"
+    },
+    {
+      "number": 284,
+      "speaker": "ANTONY",
+      "text": "Here is a mourning Rome, a dangerous Rome,"
+    },
+    {
+      "number": 285,
+      "speaker": "ANTONY",
+      "text": "No Rome of safety for Octavius yet;"
+    },
+    {
+      "number": 286,
+      "speaker": "ANTONY",
+      "text": "Hie hence, and tell him so. Yet, stay awhile;"
+    },
+    {
+      "number": 287,
+      "speaker": "ANTONY",
+      "text": "Thou shalt not back till I have borne this corse"
+    },
+    {
+      "number": 288,
+      "speaker": "ANTONY",
+      "text": "Into the market-place: there shall I try,"
+    },
+    {
+      "number": 289,
+      "speaker": "ANTONY",
+      "text": "In my oration, how the people take"
+    },
+    {
+      "number": 290,
+      "speaker": "ANTONY",
+      "text": "The cruel issue of these bloody men;"
+    },
+    {
+      "number": 291,
+      "speaker": "ANTONY",
+      "text": "According to the which, thou shalt discourse"
+    },
+    {
+      "number": 292,
+      "speaker": "ANTONY",
+      "text": "To young Octavius of the state of things."
+    },
+    {
+      "number": 293,
+      "speaker": "ANTONY",
+      "text": "Lend me your hand."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "A crowd of people; among them Artemidorus and the Soothsayer. Flourish. Enter Caesar, Brutus, Cassius, Casca, Decius, Metellus, Trebonius, Cinna, Antony, Lepidus, Popilius, Publius, and others."
+    },
+    {
+      "after_line": 11,
+      "text": "Caesar goes up to the Senate-House, the rest following."
+    },
+    {
+      "after_line": 13,
+      "text": "Advances to Caesar."
+    },
+    {
+      "after_line": 25,
+      "text": "Exeunt Antony and Trebonius."
+    },
+    {
+      "after_line": 34,
+      "text": "Kneeling."
+    },
+    {
+      "after_line": 75,
+      "text": "Casca first, then the other Conspirators and Marcus Brutus stab Caesar."
+    },
+    {
+      "after_line": 75,
+      "text": "Dies."
+    },
+    {
+      "after_line": 91,
+      "text": "Reenter Trebonius."
+    },
+    {
+      "after_line": 117,
+      "text": "Enter a Servant."
+    },
+    {
+      "after_line": 138,
+      "text": "Exit."
+    },
+    {
+      "after_line": 142,
+      "text": "Reenter Antony."
+    },
+    {
+      "after_line": 228,
+      "text": "Aside to Brutus."
+    },
+    {
+      "after_line": 249,
+      "text": "Exeunt all but Antony."
+    },
+    {
+      "after_line": 271,
+      "text": "Enter a Servant."
+    },
+    {
+      "after_line": 293,
+      "text": "Exeunt with Caesar’s body."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "julius_caesar_act3_scene1_gloss1",
+      "line": 1,
+      "phrase": "ides of March are come",
+      "definition": "Caesar's taunt to the Soothsayer — implying the feared day has arrived without harm; the Soothsayer's reply 'but not gone' completes the prophecy's edge"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss2",
+      "line": 2,
+      "phrase": "schedule",
+      "definition": "a written petition; a scroll (Artemidorus's warning letter)"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss3",
+      "line": 3,
+      "phrase": "o'er-read",
+      "definition": "read over; peruse"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss4",
+      "line": 7,
+      "phrase": "What touches us ourself shall be last served",
+      "definition": "Caesar's fatal hubris — putting his own safety last, from a public-service ideology that costs him his life"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss5",
+      "line": 9,
+      "phrase": "Sirrah",
+      "definition": "fellow (condescending address to a social inferior)"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss6",
+      "line": 12,
+      "phrase": "enterprise",
+      "definition": "undertaking — here euphemistic for the assassination plot"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss7",
+      "line": 18,
+      "phrase": "prevention",
+      "definition": "being forestalled; having the plot stopped before executed"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss8",
+      "line": 21,
+      "phrase": "constant",
+      "definition": "steadfast; resolute — the Stoic virtue; repeatedly invoked as Cassius slips into panic"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss9",
+      "line": 27,
+      "phrase": "presently prefer his suit",
+      "definition": "immediately present his petition"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss10",
+      "line": 29,
+      "phrase": "rears your hand",
+      "definition": "raises your hand (first to strike)"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss11",
+      "line": 32,
+      "phrase": "puissant",
+      "definition": "powerful; mighty (from French)"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss12",
+      "line": 35,
+      "phrase": "couchings",
+      "definition": "bowings; prostrations (physical obeisance)"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss13",
+      "line": 37,
+      "phrase": "pre-ordinance and first decree",
+      "definition": "established law and original decree — the fixed constitutional order"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss14",
+      "line": 38,
+      "phrase": "fond",
+      "definition": "foolish (not modern 'loving')"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss15",
+      "line": 42,
+      "phrase": "spaniel-fawning",
+      "definition": "fawning like a spaniel dog — obsequious flattery"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss16",
+      "line": 42,
+      "phrase": "Low-crooked court'sies",
+      "definition": "low bows with bent knees; Renaissance court etiquette"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss17",
+      "line": 45,
+      "phrase": "spurn thee like a cur",
+      "definition": "kick you aside like a mongrel dog"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss18",
+      "line": 46,
+      "phrase": "Caesar doth not wrong, nor without cause",
+      "definition": "Caesar does no wrong, and not without cause — Jonson famously ridiculed this line as self-contradicting; it has been emended since the 18th century"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss19",
+      "line": 56,
+      "phrase": "enfranchisement",
+      "definition": "restoration of citizenship; granting of political rights (for an exile, the undoing of banishment)"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss20",
+      "line": 59,
+      "phrase": "constant as the northern star",
+      "definition": "steadfast as Polaris — Caesar claims absolute political stability; the boast is immediately refuted by 23 wounds"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss21",
+      "line": 60,
+      "phrase": "true-fix'd and resting quality",
+      "definition": "firmly-fixed and motionless character — the North Star alone does not move across the night sky"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss22",
+      "line": 61,
+      "phrase": "fellow in the firmament",
+      "definition": "equal among the stars"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss23",
+      "line": 66,
+      "phrase": "apprehensive",
+      "definition": "capable of understanding; sentient (not modern 'anxious')"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss24",
+      "line": 73,
+      "phrase": "lift up Olympus",
+      "definition": "move a whole mountain — Mount Olympus was the home of the gods; proverbial for impossible effort"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss25",
+      "line": 74,
+      "phrase": "bootless",
+      "definition": "in vain; without result"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss26",
+      "line": 75,
+      "phrase": "Speak, hands for me!",
+      "definition": "Casca's cry as he strikes first — the conspirators' agreed signal; 'hands' stand in for voice"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss27",
+      "line": 75,
+      "phrase": "Et tu, Brute",
+      "definition": "Latin: 'and you, Brutus?' — Caesar's famous dying reproach to Brutus. The phrasing is Shakespeare's invention; Suetonius reports Caesar spoke Greek, 'καὶ σύ, τέκνον' ('and you, child'); Plutarch says he said nothing but pulled his toga over his face. The exact Latin is Shakespeare's compressed, English-inflected formulation"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss28",
+      "line": 76,
+      "phrase": "Tyranny is dead",
+      "definition": "Cinna's slogan for the assassination — the conspirators frame the killing as the Republic reasserting itself against incipient monarchy"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss29",
+      "line": 78,
+      "phrase": "common pulpits",
+      "definition": "public speaking platforms (rostra) in the Forum, from which citizens addressed the crowd"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss30",
+      "line": 80,
+      "phrase": "ambition's debt",
+      "definition": "the death that ambition has earned — Brutus's first moralising of the killing"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss31",
+      "line": 82,
+      "phrase": "confounded",
+      "definition": "confused; bewildered"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss32",
+      "line": 94,
+      "phrase": "doomsday",
+      "definition": "the Last Judgment; the apocalypse — an anachronistic Christian image for pagan panic"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss33",
+      "line": 100,
+      "phrase": "abridged / His time of fearing death",
+      "definition": "shortened his time of fearing to die — Brutus's sophistical consolation"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss34",
+      "line": 102,
+      "phrase": "bathe our hands in Caesar's blood",
+      "definition": "wash our hands in Caesar's blood — Brutus's ritual sanctification of murder; an image that Antony will invert in 3.2"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss35",
+      "line": 108,
+      "phrase": "this our lofty scene",
+      "definition": "this noble scene of ours — Cassius imagines the assassination re-staged in future plays in unknown languages, a meta-theatrical gesture"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss36",
+      "line": 109,
+      "phrase": "accents yet unknown",
+      "definition": "languages not yet invented — a prophecy fulfilled by Shakespeare's own play"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss37",
+      "line": 111,
+      "phrase": "Pompey's basis",
+      "definition": "the pedestal of Pompey's statue, at whose base Caesar falls — poetic justice (Plutarch notes this detail)"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss38",
+      "line": 126,
+      "phrase": "vouchsafe",
+      "definition": "grant; deign to allow"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss39",
+      "line": 132,
+      "phrase": "Thorough",
+      "definition": "through"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss40",
+      "line": 132,
+      "phrase": "untrod state",
+      "definition": "uncertain, untested political condition"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss41",
+      "line": 141,
+      "phrase": "misgiving still / Falls shrewdly to the purpose",
+      "definition": "my forebodings hit the mark — Cassius's accurate instinct, which Brutus overrides"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss42",
+      "line": 148,
+      "phrase": "let blood",
+      "definition": "bled — a medical metaphor for killing, dark from Antony's point of view"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss43",
+      "line": 148,
+      "phrase": "rank",
+      "definition": "festering; needing to be bled (of an infected humour)"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss44",
+      "line": 154,
+      "phrase": "purpled hands do reek and smoke",
+      "definition": "bloody hands steam and smoke — the fresh blood still warm"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss45",
+      "line": 159,
+      "phrase": "choice and master spirits",
+      "definition": "select and chief spirits — the best men; Antony flatters the conspirators"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss46",
+      "line": 166,
+      "phrase": "pity to the general wrong of Rome",
+      "definition": "pity for the general wrong done to Rome — pity for the state overrode personal pity for Caesar"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss47",
+      "line": 169,
+      "phrase": "our swords have leaden points",
+      "definition": "our swords are blunted (not to be used against you)"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss48",
+      "line": 174,
+      "phrase": "disposing of new dignities",
+      "definition": "distributing new offices — Cassius promises Antony a share in the spoils"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss49",
+      "line": 184,
+      "phrase": "Cinna",
+      "definition": "Cinna the conspirator — to be distinguished from Cinna the Poet of 3.3"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss50",
+      "line": 185,
+      "phrase": "Though last, not least in love",
+      "definition": "proverbial; Antony's ritual handclasp with each conspirator in turn"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss51",
+      "line": 189,
+      "phrase": "coward or a flatterer",
+      "definition": "Antony pretends to fear being thought one or the other — his false humility"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss52",
+      "line": 195,
+      "phrase": "corse",
+      "definition": "corpse"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss53",
+      "line": 200,
+      "phrase": "bay'd, brave hart",
+      "definition": "brought to bay, brave stag — the hunting metaphor; pun on hart/heart"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss54",
+      "line": 201,
+      "phrase": "hunters stand",
+      "definition": "the huntsmen stand around their kill (the conspirators positioned around Caesar)"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss55",
+      "line": 202,
+      "phrase": "Sign'd in thy spoil",
+      "definition": "marked with your blood; badged with the kill (a hunting ritual in which hunters dip their fingers in the stag's blood)"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss56",
+      "line": 202,
+      "phrase": "crimson'd in thy lethe",
+      "definition": "stained crimson in your life's blood ('lethe' = life-blood, obsolete usage; not the river Lethe of forgetfulness)"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss57",
+      "line": 205,
+      "phrase": "deer, strucken by many princes",
+      "definition": "deer struck down by many princes — extending the hunt metaphor; puns again on deer/dear"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss58",
+      "line": 212,
+      "phrase": "prick'd in number of our friends",
+      "definition": "marked down on the list of our friends (a proscription metaphor)"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss59",
+      "line": 225,
+      "phrase": "pulpit",
+      "definition": "the Rostra, the public speaker's platform in the Forum"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss60",
+      "line": 226,
+      "phrase": "order of his funeral",
+      "definition": "the funeral ceremony; the rites"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss61",
+      "line": 239,
+      "phrase": "I know not what may fall",
+      "definition": "I don't know what may happen — Cassius's prescient unease"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss62",
+      "line": 250,
+      "phrase": "bleeding piece of earth",
+      "definition": "Caesar's corpse; 'earth' in the biblical sense of mortal clay"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss63",
+      "line": 251,
+      "phrase": "meek and gentle with these butchers",
+      "definition": "mild and civil with these slaughterers — Antony's true view, now spoken alone"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss64",
+      "line": 259,
+      "phrase": "Domestic fury and fierce civil strife",
+      "definition": "internal rage and savage civil war — Antony's prophecy, fulfilled in the historical civil wars of 44–31 BCE"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss65",
+      "line": 260,
+      "phrase": "cumber",
+      "definition": "encumber; burden; trouble"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss66",
+      "line": 264,
+      "phrase": "quarter'd",
+      "definition": "cut into four pieces; mutilated"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss67",
+      "line": 265,
+      "phrase": "custom of fell deeds",
+      "definition": "habituation to cruel deeds"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss68",
+      "line": 267,
+      "phrase": "Ate",
+      "definition": "Greek goddess of ruin, reckless impulse, and delusion — she brings on divine vengeance"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss69",
+      "line": 269,
+      "phrase": "Cry \"Havoc,\"",
+      "definition": "the medieval English battle-cry giving soldiers permission to plunder; proclaiming 'havoc' signalled no-quarter warfare. Shakespeare's military-technical anachronism"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss70",
+      "line": 269,
+      "phrase": "let slip the dogs of war",
+      "definition": "release the war-dogs (unleashed mastiffs); launch total war. The play's most-quoted declaration of civil strife"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss71",
+      "line": 271,
+      "phrase": "carrion men",
+      "definition": "dead men rotting unburied; corpses"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss72",
+      "line": 282,
+      "phrase": "seven leagues",
+      "definition": "about 21 miles — a league being roughly three miles"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss73",
+      "line": 287,
+      "phrase": "borne this corse / Into the market-place",
+      "definition": "carried Caesar's body to the Forum — the setting for the funeral oration to come"
+    },
+    {
+      "id": "julius_caesar_act3_scene1_gloss74",
+      "line": 290,
+      "phrase": "cruel issue",
+      "definition": "cruel outcome (of the murder)"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "julius_caesar_act3_scene1_ann1",
+      "line_start": 59,
+      "line_end": 72,
+      "citation_display": "Julius Caesar 3.1.59–72",
+      "category": "close_reading",
+      "title": "'Constant as the northern star' — the boast that precedes the wounds",
+      "body": "Caesar's great self-description — 'But I am constant as the northern star, / Of whose true-fix'd and resting quality / There is no fellow in the firmament' — is the play's most extraordinary set-up for dramatic irony. Between the declaration of cosmic steadfastness and the first stab, seven lines pass. The constancy that Caesar claims for himself is the constancy Cassius has been mocking for four acts ('Ye gods, it doth amaze me / A man of such a feeble temper should / So get the start of the majestic world').\n\nShakespeare writes the stage-Caesar as a man whose public self-image has diverged fatally from his private body. The seizures, the deafness in his left ear (1.2 L208), the fever in Spain (1.2 L116), the illiteracy of his own will's terms that Antony will reveal (3.2) — all have been built up across the play as rebukes to the northern-star image. The audience does not need historical Caesar; it has been given the public speech and the private body as parallel texts. The assassination is where they collide.\n\nNotice also what the speech is for: it refuses Cimber's plea for his brother's recall. Caesar is being asked for a routine act of political clemency. The grandeur of the refusal — no human circumstance can move the one unmoved mover — turns a minor pardon into an occasion for absolute rule. Shakespeare is careful: the assassination is not unprovoked. It is committed on a man who, at the moment of his death, is claiming exemption from the normal political process of giving and taking.",
+      "sources": [
+        "A. C. Bradley, *Shakespearean Tragedy* (1904)",
+        "Wayne A. Rebhorn (1990)",
+        "Gary Taylor, *Reinventing Shakespeare* (1989)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act3_scene1_ann2",
+      "line_start": 75,
+      "line_end": 76,
+      "citation_display": "Julius Caesar 3.1.75–76",
+      "category": "textual",
+      "title": "'Et tu, Brute': Shakespeare's Latin, not Caesar's",
+      "body": "Caesar's dying reproach is the most recognisable line in the play and among the most widely-misunderstood. The Latin is Shakespeare's compression, not the historical Caesar's last words.\n\nThe ancient sources disagree. Suetonius (*Divus Iulius* §82) reports that Caesar said nothing when stabbed, except that some thought he spoke to Brutus in Greek: *καὶ σύ, τέκνον* — 'and you, child'. Plutarch's *Life of Caesar* §66 says Caesar groaned, covered his face with his toga, and said nothing. Dio Cassius reports the same silence. The Greek *καὶ σύ* became the textual tradition, sometimes expanded by later authors to the Latin *et tu* formulation, but Shakespeare's specific phrasing — 'Et tu, Brute! Then fall, Caesar.' — is not in any ancient source.\n\nShakespeare's Latin is in fact more compressed, more English, and more accusatory than any of his sources. 'Brute' (vocative of Brutus) personalises the reproach where Suetonius's 'child' generalises it; 'then fall, Caesar' makes the assassination a decision rather than a fate. The line has become cultural shorthand for 'betrayal by a close friend,' partly because Shakespeare's version is the one that took.\n\nA modern reader should hear, underneath the famous Latin, the textual history: this is not what Caesar said; it is what Shakespeare made Caesar say.",
+      "sources": [
+        "Suetonius, *Divus Iulius* §82",
+        "Plutarch, *Life of Caesar* §66 (North, 1579)",
+        "J. Russell Brown (ed.), New Penguin *Julius Caesar* (1967)",
+        "Miles Hollingworth, *Saint Augustine of Hippo* (2013), app. on Caesar's last words"
+      ]
+    },
+    {
+      "id": "julius_caesar_act3_scene1_ann3",
+      "line_start": 101,
+      "line_end": 114,
+      "citation_display": "Julius Caesar 3.1.101–114",
+      "category": "thematic",
+      "title": "'Bathe our hands in Caesar's blood': ritual the play will not permit",
+      "body": "Brutus's instruction to the conspirators to dip their hands in Caesar's blood and walk through the market-place displaying bloody swords is the physical gesture that matches the ritual framing of 2.1 ('sacrificers, but not butchers'). Brutus still believes the assassination is a sacred act that, correctly performed, will read to Rome as such.\n\nShakespeare immediately undercuts the ritual. Cassius's interjection — 'How many ages hence / Shall this our lofty scene be acted over / In states unborn and accents yet unknown!' — is uncanny meta-theatre: the conspirators are already imagining themselves as historical set-pieces, and Shakespeare is (from 1599) writing the exact historical set-piece they imagine. But the meta-theatre cuts against the ritual. By saying 'scene,' Cassius has named what Brutus wishes were a rite. The act is performance, not sacrament.\n\nAntony's entrance a few dozen lines later finishes the job. The bloody hands Brutus means as ritual badges Antony will reframe, in 3.2, as the 'purpled hands' of murderers. The image is the same; the meaning has inverted. Shakespeare is showing that Brutus's ritual depends on a hermeneutic consent that Rome is about to withhold.",
+      "sources": [
+        "Stephen Greenblatt, *Shakespearean Negotiations* (1988)",
+        "David Kastan, 'Proud Majesty Made a Subject', *SQ* 37 (1986)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act3_scene1_ann4",
+      "line_start": 159,
+      "line_end": 229,
+      "citation_display": "Julius Caesar 3.1.159–229",
+      "category": "structural",
+      "title": "Antony negotiating: the second mistake to match the first",
+      "body": "Antony's meeting with the conspirators is a masterclass in political negotiation under duress. He shakes each assassin's hand, declares himself friend to all, asks only two concessions: that he be told 'Why and wherein Caesar was dangerous' (L218), and that he be permitted to speak at the funeral (L223–226). Brutus grants both. Cassius privately objects. Brutus overrules.\n\nThis is Brutus's second catastrophic decision, exactly mirroring the first. In 2.1 he spared Antony's life; now he grants Antony the funeral-speech platform. Either decision alone is survivable. Together they hand Antony the means of vengeance. Shakespeare is building a pattern: Brutus's principled instincts consistently produce disastrous tactical outcomes. The integrity that recommends him to the conspiracy is the quality that ruins it.\n\nAntony's own tell, in his soliloquy (L250ff), confirms what the conspirators cannot see: the handshake, the friendship-language, the grief — all cover an already-formed intention to unleash 'Domestic fury and fierce civil strife.' Shakespeare's trick is dramatic: the audience hears Antony's soliloquy before the funeral, so the speech of 3.2 arrives as the fulfillment of a promise we have already heard him make.",
+      "sources": [
+        "Plutarch, *Life of Brutus* §20 (North, 1579)",
+        "A. D. Nuttall, *Shakespeare the Thinker* (2007)",
+        "Harold Bloom (1998)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act3_scene1_ann5",
+      "line_start": 266,
+      "line_end": 271,
+      "citation_display": "Julius Caesar 3.1.266–271",
+      "category": "linguistic",
+      "title": "'Cry Havoc, and let slip the dogs of war'",
+      "body": "'Havoc' is not a decorative word. In medieval English military law, the cry 'havoc' was the specific command given to soldiers authorising them to plunder and kill without restraint — the giving-up of quarter. By the 14th century, English monarchs (notably Richard II, 1385) had legislated *against* crying havoc without royal permission, precisely because the cry functioned as a legal permission to kill civilians. Shakespeare's audience would have recognised the vocabulary as English martial law, not Roman.\n\nAnother English anachronism, then, doing specific work. Antony's 'Cry havoc' is not generic violence; it is the technical command for total war, delivered in the English vocabulary Shakespeare's audience would have recognised from their own statutes. The sword will not be put up, the houses will be burned, the distinction between combatant and civilian will be suspended. The Roman civil wars of 43–31 BCE fulfilled this prophecy: proscriptions, property seizures, mass executions of senators (which Messala will report in 4.3). Antony has been a Roman general until this line; from 'Cry havoc' onwards he is a figure of unrestrained war.\n\nThe phrase, like 'Et tu, Brute,' entered the language. It too has largely lost its technical meaning. Modern usage reads 'havoc' as mess or chaos; the original was martial and specific.",
+      "sources": [
+        "OED, 'havoc, n.' §1",
+        "M. H. Keen, *The Laws of War in the Late Middle Ages* (1965)",
+        "Paul A. Jorgensen, *Shakespeare's Military World* (1956)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "julius_caesar_act3_scene1_q1",
+      "kind": "close_reading",
+      "prompt": "'Constant as the northern star' (L59) is ironic because:",
+      "options": [
+        "Caesar is in fact humble",
+        "Caesar is claiming cosmic constancy in the seven lines before being stabbed twenty-three times; the boast is the set-up for its refutation",
+        "Stars were not known to Romans",
+        "The audience doesn't know the line"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 59,
+      "anchor_line_end": 72
+    },
+    {
+      "id": "julius_caesar_act3_scene1_q2",
+      "kind": "textual",
+      "prompt": "'Et tu, Brute' is:",
+      "options": [
+        "Caesar's exact historical last words",
+        "Shakespeare's Latin invention; Suetonius reports Caesar said nothing or spoke Greek ('καὶ σύ, τέκνον' — 'and you, child'), Plutarch reports silence",
+        "A direct translation from Plutarch",
+        "A phrase from Cicero"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 75,
+      "anchor_line_end": 76
+    },
+    {
+      "id": "julius_caesar_act3_scene1_q3",
+      "kind": "theme",
+      "prompt": "Brutus's instruction to 'bathe our hands in Caesar's blood' and display bloody swords is an attempt to:",
+      "options": [
+        "Satisfy Cassius",
+        "Enforce a ritual reading of the assassination as sacrifice, not murder — but Cassius's meta-theatrical 'lofty scene' language and Antony's later 'purpled hands' image will invert the meaning",
+        "Obey Roman law",
+        "Intimidate the Senate"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 101,
+      "anchor_line_end": 114
+    },
+    {
+      "id": "julius_caesar_act3_scene1_q4",
+      "kind": "inference",
+      "prompt": "Brutus grants Antony both life (2.1) and the funeral-speech platform (3.1). The combined effect is:",
+      "options": [
+        "Ceremonial completeness",
+        "A pattern in which Brutus's principled instincts produce catastrophic tactical outcomes; together these two decisions hand Antony the means of destroying the conspiracy",
+        "Fair political process",
+        "Nothing consequential"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 159,
+      "anchor_line_end": 248
+    },
+    {
+      "id": "julius_caesar_act3_scene1_q5",
+      "kind": "historical",
+      "prompt": "'Cry havoc, and let slip the dogs of war' uses:",
+      "options": [
+        "Generic English",
+        "Technical medieval-English martial vocabulary — 'havoc' was the specific cry authorising unrestricted plunder and killing, legislated against by English monarchs; another deliberate anachronism in the Roman setting",
+        "A Latin legal phrase",
+        "A hunting metaphor only"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 266,
+      "anchor_line_end": 271
+    },
+    {
+      "id": "julius_caesar_act3_scene1_q6",
+      "kind": "comprehension",
+      "prompt": "After the murder, what does Antony ask the conspirators for?",
+      "options": [
+        "His own safety and a chance to leave Rome",
+        "Two things: to be told why Caesar was dangerous, and to speak at the funeral — Brutus grants both over Cassius's objection",
+        "Time to bury his friend privately",
+        "Revenge"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 215,
+      "anchor_line_end": 226
+    },
+    {
+      "id": "julius_caesar_act3_scene1_q7",
+      "kind": "close_reading",
+      "prompt": "Antony's soliloquy over Caesar's body (L250ff) tells the audience:",
+      "options": [
+        "That Antony is truly making peace",
+        "That his handshake with the conspirators was theatre; he is already planning to unleash 'Domestic fury and fierce civil strife'",
+        "That he will leave Rome",
+        "That he blames himself"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 250,
+      "anchor_line_end": 272
+    }
+  ]
+}

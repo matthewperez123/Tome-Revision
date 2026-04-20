@@ -1,0 +1,75 @@
+{
+  "section_id": "hamlet_act1_scene4",
+  "trials": [
+    {
+      "kind": "close_reading",
+      "prompt": "What is Hamlet criticizing when he describes the 'heavy-headed revel east and west'?",
+      "options": [
+        "The peasant classes' drunkenness at harvest festivals.",
+        "The Danish custom of heavy drinking during royal celebrations.",
+        "Claudius's personal habit of drugging his wine.",
+        "The soldiers on the night watch, who he fears are drunk."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 8,
+      "anchor_line_end": 22
+    },
+    {
+      "kind": "theme",
+      "prompt": "What is Hamlet arguing in the passage about the 'vicious mole of nature' and the 'dram of eale'?",
+      "options": [
+        "That no one can overcome their inherited flaws.",
+        "That a single defect can undo the virtues of an otherwise noble character.",
+        "That illness is contagious and must be quarantined.",
+        "That the Danish court is corrupt beyond redemption."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 24,
+      "anchor_line_end": 40
+    },
+    {
+      "kind": "inference",
+      "prompt": "Why does Hamlet address the ghost as both 'spirit of health' and 'goblin damn'd'?",
+      "options": [
+        "He believes the ghost is two different spirits at once.",
+        "He is preserving theological uncertainty about whether the ghost is holy or diabolical.",
+        "He is mocking the ghost to test its patience.",
+        "He is quoting a Latin incantation Horatio taught him."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 43,
+      "anchor_line_end": 46
+    },
+    {
+      "kind": "comprehension",
+      "prompt": "What do Horatio and Marcellus fear when the ghost beckons Hamlet away?",
+      "options": [
+        "That the ghost will reveal Hamlet's secrets to the King.",
+        "That the spirit may tempt Hamlet to leap from the cliff or drive him mad.",
+        "That Hamlet will be delayed from his studies.",
+        "That Claudius's spies are watching and will report them."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 69,
+      "anchor_line_end": 82
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "Marcellus's closing line — 'Something is rotten in the state of Denmark' — uses which metaphor?",
+      "options": [
+        "A legal metaphor: corruption as a miscarriage of justice.",
+        "An organic metaphor: hidden decay within a living body politic.",
+        "A military metaphor: an enemy within the walls.",
+        "A theological metaphor: damnation seeping into the soul."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 89,
+      "anchor_line_end": 90
+    }
+  ]
+}

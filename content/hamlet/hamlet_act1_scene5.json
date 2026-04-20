@@ -1,0 +1,1627 @@
+{
+  "section_id": "hamlet_act1_scene5",
+  "work_id": "hamlet",
+  "sequence": 5,
+  "act": 1,
+  "scene": 5,
+  "kind": "scene",
+  "scene_title": "Another part of the platform",
+  "line_count": 210,
+  "word_count": 1442,
+  "est_read_minutes": 7,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "HAMLET",
+      "text": "Where wilt thou lead me? speak; I’ll go no further."
+    },
+    {
+      "number": 2,
+      "speaker": "GHOST",
+      "text": "Mark me."
+    },
+    {
+      "number": 2,
+      "speaker": "HAMLET",
+      "text": "I will."
+    },
+    {
+      "number": 3,
+      "speaker": "GHOST",
+      "text": "My hour is almost come,"
+    },
+    {
+      "number": 4,
+      "speaker": "GHOST",
+      "text": "When I to sulphurous and tormenting flames"
+    },
+    {
+      "number": 5,
+      "speaker": "GHOST",
+      "text": "Must render up myself."
+    },
+    {
+      "number": 5,
+      "speaker": "HAMLET",
+      "text": "Alas, poor ghost!"
+    },
+    {
+      "number": 6,
+      "speaker": "GHOST",
+      "text": "Pity me not, but lend thy serious hearing"
+    },
+    {
+      "number": 7,
+      "speaker": "GHOST",
+      "text": "To what I shall unfold."
+    },
+    {
+      "number": 7,
+      "speaker": "HAMLET",
+      "text": "Speak; I am bound to hear."
+    },
+    {
+      "number": 8,
+      "speaker": "GHOST",
+      "text": "So art thou to revenge, when thou shalt hear."
+    },
+    {
+      "number": 9,
+      "speaker": "HAMLET",
+      "text": "What?"
+    },
+    {
+      "number": 9,
+      "speaker": "GHOST",
+      "text": "I am thy father’s spirit,"
+    },
+    {
+      "number": 10,
+      "speaker": "GHOST",
+      "text": "Doom’d for a certain term to walk the night,"
+    },
+    {
+      "number": 11,
+      "speaker": "GHOST",
+      "text": "And for the day confined to fast in fires,"
+    },
+    {
+      "number": 12,
+      "speaker": "GHOST",
+      "text": "Till the foul crimes done in my days of nature"
+    },
+    {
+      "number": 13,
+      "speaker": "GHOST",
+      "text": "Are burnt and purged away. But that I am forbid"
+    },
+    {
+      "number": 14,
+      "speaker": "GHOST",
+      "text": "To tell the secrets of my prison-house,"
+    },
+    {
+      "number": 15,
+      "speaker": "GHOST",
+      "text": "I could a tale unfold whose lightest word"
+    },
+    {
+      "number": 16,
+      "speaker": "GHOST",
+      "text": "Would harrow up thy soul, freeze thy young blood,"
+    },
+    {
+      "number": 17,
+      "speaker": "GHOST",
+      "text": "Make thy two eyes, like stars, start from their spheres,"
+    },
+    {
+      "number": 18,
+      "speaker": "GHOST",
+      "text": "Thy knotted and combined locks to part"
+    },
+    {
+      "number": 19,
+      "speaker": "GHOST",
+      "text": "And each particular hair to stand on end,"
+    },
+    {
+      "number": 20,
+      "speaker": "GHOST",
+      "text": "Like quills upon the fretful porpentine:"
+    },
+    {
+      "number": 21,
+      "speaker": "GHOST",
+      "text": "But this eternal blazon must not be"
+    },
+    {
+      "number": 22,
+      "speaker": "GHOST",
+      "text": "To ears of flesh and blood. List, list, O, list!"
+    },
+    {
+      "number": 23,
+      "speaker": "GHOST",
+      "text": "If thou didst ever thy dear father love—"
+    },
+    {
+      "number": 24,
+      "speaker": "HAMLET",
+      "text": "O God!"
+    },
+    {
+      "number": 25,
+      "speaker": "GHOST",
+      "text": "Revenge his foul and most unnatural murder."
+    },
+    {
+      "number": 26,
+      "speaker": "HAMLET",
+      "text": "Murder!"
+    },
+    {
+      "number": 27,
+      "speaker": "GHOST",
+      "text": "Murder most foul, as in the best it is;"
+    },
+    {
+      "number": 28,
+      "speaker": "GHOST",
+      "text": "But this most foul, strange and unnatural."
+    },
+    {
+      "number": 29,
+      "speaker": "HAMLET",
+      "text": "Haste me to know’t, that I, with wings as swift"
+    },
+    {
+      "number": 30,
+      "speaker": "HAMLET",
+      "text": "As meditation or the thoughts of love,"
+    },
+    {
+      "number": 31,
+      "speaker": "HAMLET",
+      "text": "May sweep to my revenge."
+    },
+    {
+      "number": 31,
+      "speaker": "GHOST",
+      "text": "I find thee apt;"
+    },
+    {
+      "number": 32,
+      "speaker": "GHOST",
+      "text": "And duller shouldst thou be than the fat weed"
+    },
+    {
+      "number": 33,
+      "speaker": "GHOST",
+      "text": "That roots itself in ease on Lethe wharf,"
+    },
+    {
+      "number": 34,
+      "speaker": "GHOST",
+      "text": "Wouldst thou not stir in this. Now, Hamlet, hear:"
+    },
+    {
+      "number": 35,
+      "speaker": "GHOST",
+      "text": "’Tis given out that, sleeping in my orchard,"
+    },
+    {
+      "number": 36,
+      "speaker": "GHOST",
+      "text": "A serpent stung me; so the whole ear of Denmark"
+    },
+    {
+      "number": 37,
+      "speaker": "GHOST",
+      "text": "Is by a forged process of my death"
+    },
+    {
+      "number": 38,
+      "speaker": "GHOST",
+      "text": "Rankly abused: but know, thou noble youth,"
+    },
+    {
+      "number": 39,
+      "speaker": "GHOST",
+      "text": "The serpent that did sting thy father’s life"
+    },
+    {
+      "number": 40,
+      "speaker": "GHOST",
+      "text": "Now wears his crown."
+    },
+    {
+      "number": 40,
+      "speaker": "HAMLET",
+      "text": "O my prophetic soul!"
+    },
+    {
+      "number": 41,
+      "speaker": "HAMLET",
+      "text": "My uncle!"
+    },
+    {
+      "number": 41,
+      "speaker": "GHOST",
+      "text": "Ay, that incestuous, that adulterate beast,"
+    },
+    {
+      "number": 42,
+      "speaker": "GHOST",
+      "text": "With witchcraft of his wit, with traitorous gifts—"
+    },
+    {
+      "number": 43,
+      "speaker": "GHOST",
+      "text": "O wicked wit and gifts, that have the power"
+    },
+    {
+      "number": 44,
+      "speaker": "GHOST",
+      "text": "So to seduce!—won to his shameful lust"
+    },
+    {
+      "number": 45,
+      "speaker": "GHOST",
+      "text": "The will of my most seeming-virtuous queen:"
+    },
+    {
+      "number": 46,
+      "speaker": "GHOST",
+      "text": "O Hamlet, what a falling-off was there!"
+    },
+    {
+      "number": 47,
+      "speaker": "GHOST",
+      "text": "From me, whose love was of that dignity"
+    },
+    {
+      "number": 48,
+      "speaker": "GHOST",
+      "text": "That it went hand in hand even with the vow"
+    },
+    {
+      "number": 49,
+      "speaker": "GHOST",
+      "text": "I made to her in marriage, and to decline"
+    },
+    {
+      "number": 50,
+      "speaker": "GHOST",
+      "text": "Upon a wretch whose natural gifts were poor"
+    },
+    {
+      "number": 51,
+      "speaker": "GHOST",
+      "text": "To those of mine!"
+    },
+    {
+      "number": 52,
+      "speaker": "GHOST",
+      "text": "But virtue, as it never will be moved,"
+    },
+    {
+      "number": 53,
+      "speaker": "GHOST",
+      "text": "Though lewdness court it in a shape of heaven,"
+    },
+    {
+      "number": 54,
+      "speaker": "GHOST",
+      "text": "So lust, though to a radiant angel link’d,"
+    },
+    {
+      "number": 55,
+      "speaker": "GHOST",
+      "text": "Will sate itself in a celestial bed,"
+    },
+    {
+      "number": 56,
+      "speaker": "GHOST",
+      "text": "And prey on garbage."
+    },
+    {
+      "number": 57,
+      "speaker": "GHOST",
+      "text": "But, soft! methinks I scent the morning air;"
+    },
+    {
+      "number": 58,
+      "speaker": "GHOST",
+      "text": "Brief let me be. Sleeping within my orchard,"
+    },
+    {
+      "number": 59,
+      "speaker": "GHOST",
+      "text": "My custom always of the afternoon,"
+    },
+    {
+      "number": 60,
+      "speaker": "GHOST",
+      "text": "Upon my secure hour thy uncle stole,"
+    },
+    {
+      "number": 61,
+      "speaker": "GHOST",
+      "text": "With juice of cursed hebenon in a vial,"
+    },
+    {
+      "number": 62,
+      "speaker": "GHOST",
+      "text": "And in the porches of my ears did pour"
+    },
+    {
+      "number": 63,
+      "speaker": "GHOST",
+      "text": "The leperous distilment; whose effect"
+    },
+    {
+      "number": 64,
+      "speaker": "GHOST",
+      "text": "Holds such an enmity with blood of man"
+    },
+    {
+      "number": 65,
+      "speaker": "GHOST",
+      "text": "That swift as quicksilver it courses through"
+    },
+    {
+      "number": 66,
+      "speaker": "GHOST",
+      "text": "The natural gates and alleys of the body,"
+    },
+    {
+      "number": 67,
+      "speaker": "GHOST",
+      "text": "And with a sudden vigour doth posset"
+    },
+    {
+      "number": 68,
+      "speaker": "GHOST",
+      "text": "And curd, like eager droppings into milk,"
+    },
+    {
+      "number": 69,
+      "speaker": "GHOST",
+      "text": "The thin and wholesome blood: so did it mine;"
+    },
+    {
+      "number": 70,
+      "speaker": "GHOST",
+      "text": "And a most instant tetter bark’d about,"
+    },
+    {
+      "number": 71,
+      "speaker": "GHOST",
+      "text": "Most lazar-like, with vile and loathsome crust,"
+    },
+    {
+      "number": 72,
+      "speaker": "GHOST",
+      "text": "All my smooth body."
+    },
+    {
+      "number": 73,
+      "speaker": "GHOST",
+      "text": "Thus was I, sleeping, by a brother’s hand"
+    },
+    {
+      "number": 74,
+      "speaker": "GHOST",
+      "text": "Of life, of crown, of queen, at once dispatch’d:"
+    },
+    {
+      "number": 75,
+      "speaker": "GHOST",
+      "text": "Cut off even in the blossoms of my sin,"
+    },
+    {
+      "number": 76,
+      "speaker": "GHOST",
+      "text": "Unhousel’d, disappointed, unaneled,"
+    },
+    {
+      "number": 77,
+      "speaker": "GHOST",
+      "text": "No reckoning made, but sent to my account"
+    },
+    {
+      "number": 78,
+      "speaker": "GHOST",
+      "text": "With all my imperfections on my head:"
+    },
+    {
+      "number": 79,
+      "speaker": "GHOST",
+      "text": "O, horrible! O, horrible! most horrible!"
+    },
+    {
+      "number": 80,
+      "speaker": "GHOST",
+      "text": "If thou hast nature in thee, bear it not;"
+    },
+    {
+      "number": 81,
+      "speaker": "GHOST",
+      "text": "Let not the royal bed of Denmark be"
+    },
+    {
+      "number": 82,
+      "speaker": "GHOST",
+      "text": "A couch for luxury and damned incest."
+    },
+    {
+      "number": 83,
+      "speaker": "GHOST",
+      "text": "But, howsoever thou pursuest this act,"
+    },
+    {
+      "number": 84,
+      "speaker": "GHOST",
+      "text": "Taint not thy mind, nor let thy soul contrive"
+    },
+    {
+      "number": 85,
+      "speaker": "GHOST",
+      "text": "Against thy mother aught: leave her to heaven"
+    },
+    {
+      "number": 86,
+      "speaker": "GHOST",
+      "text": "And to those thorns that in her bosom lodge,"
+    },
+    {
+      "number": 87,
+      "speaker": "GHOST",
+      "text": "To prick and sting her. Fare thee well at once!"
+    },
+    {
+      "number": 88,
+      "speaker": "GHOST",
+      "text": "The glow-worm shows the matin to be near,"
+    },
+    {
+      "number": 89,
+      "speaker": "GHOST",
+      "text": "And ’gins to pale his uneffectual fire:"
+    },
+    {
+      "number": 90,
+      "speaker": "GHOST",
+      "text": "Adieu, adieu! Hamlet, remember me."
+    },
+    {
+      "number": 91,
+      "speaker": "HAMLET",
+      "text": "O all you host of heaven! O earth! what else?"
+    },
+    {
+      "number": 92,
+      "speaker": "HAMLET",
+      "text": "And shall I couple hell? O, fie! Hold, hold, my heart;"
+    },
+    {
+      "number": 93,
+      "speaker": "HAMLET",
+      "text": "And you, my sinews, grow not instant old,"
+    },
+    {
+      "number": 94,
+      "speaker": "HAMLET",
+      "text": "But bear me stiffly up. Remember thee!"
+    },
+    {
+      "number": 95,
+      "speaker": "HAMLET",
+      "text": "Ay, thou poor ghost, while memory holds a seat"
+    },
+    {
+      "number": 96,
+      "speaker": "HAMLET",
+      "text": "In this distracted globe. Remember thee!"
+    },
+    {
+      "number": 97,
+      "speaker": "HAMLET",
+      "text": "Yea, from the table of my memory"
+    },
+    {
+      "number": 98,
+      "speaker": "HAMLET",
+      "text": "I’ll wipe away all trivial fond records,"
+    },
+    {
+      "number": 99,
+      "speaker": "HAMLET",
+      "text": "All saws of books, all forms, all pressures past,"
+    },
+    {
+      "number": 100,
+      "speaker": "HAMLET",
+      "text": "That youth and observation copied there;"
+    },
+    {
+      "number": 101,
+      "speaker": "HAMLET",
+      "text": "And thy commandment all alone shall live"
+    },
+    {
+      "number": 102,
+      "speaker": "HAMLET",
+      "text": "Within the book and volume of my brain,"
+    },
+    {
+      "number": 103,
+      "speaker": "HAMLET",
+      "text": "Unmix’d with baser matter: yes, by heaven!"
+    },
+    {
+      "number": 104,
+      "speaker": "HAMLET",
+      "text": "O most pernicious woman!"
+    },
+    {
+      "number": 105,
+      "speaker": "HAMLET",
+      "text": "O villain, villain, smiling, damned villain!"
+    },
+    {
+      "number": 106,
+      "speaker": "HAMLET",
+      "text": "My tables—meet it is I set it down,"
+    },
+    {
+      "number": 107,
+      "speaker": "HAMLET",
+      "text": "That one may smile, and smile, and be a villain;"
+    },
+    {
+      "number": 108,
+      "speaker": "HAMLET",
+      "text": "At least I’m sure it may be so in Denmark: Writing."
+    },
+    {
+      "number": 109,
+      "speaker": "HAMLET",
+      "text": "So, uncle, there you are. Now to my word;"
+    },
+    {
+      "number": 110,
+      "speaker": "HAMLET",
+      "text": "It is “Adieu, adieu! remember me.”"
+    },
+    {
+      "number": 111,
+      "speaker": "HAMLET",
+      "text": "I have sworn’t."
+    },
+    {
+      "number": 111,
+      "speaker": "MARCELLUS HORATIO",
+      "text": "My lord, my lord—"
+    },
+    {
+      "number": 112,
+      "speaker": "MARCELLUS",
+      "text": "Lord Hamlet—"
+    },
+    {
+      "number": 112,
+      "speaker": "HORATIO",
+      "text": "Heaven secure him!"
+    },
+    {
+      "number": 113,
+      "speaker": "HAMLET",
+      "text": "So be it!"
+    },
+    {
+      "number": 113,
+      "speaker": "HORATIO",
+      "text": "Hillo, ho, ho, my lord!"
+    },
+    {
+      "number": 114,
+      "speaker": "HAMLET",
+      "text": "Hillo, ho, ho, boy! come, bird, come."
+    },
+    {
+      "number": 115,
+      "speaker": "MARCELLUS",
+      "text": "How is’t, my noble lord?"
+    },
+    {
+      "number": 115,
+      "speaker": "HORATIO",
+      "text": "What news, my lord?"
+    },
+    {
+      "number": 116,
+      "speaker": "HAMLET",
+      "text": "O, wonderful!"
+    },
+    {
+      "number": 116,
+      "speaker": "HORATIO",
+      "text": "Good my lord, tell it."
+    },
+    {
+      "number": 117,
+      "speaker": "HAMLET",
+      "text": "No; you’ll reveal it."
+    },
+    {
+      "number": 117,
+      "speaker": "HORATIO",
+      "text": "Not I, my lord, by heaven."
+    },
+    {
+      "number": 118,
+      "speaker": "MARCELLUS",
+      "text": "Nor I, my lord."
+    },
+    {
+      "number": 119,
+      "speaker": "HAMLET",
+      "text": "How say you, then; would heart of man once think it?"
+    },
+    {
+      "number": 120,
+      "speaker": "HAMLET",
+      "text": "But you’ll be secret?"
+    },
+    {
+      "number": 120,
+      "speaker": "HORATIO MARCELLUS",
+      "text": "Ay, by heaven, my lord."
+    },
+    {
+      "number": 121,
+      "speaker": "HAMLET",
+      "text": "There’s ne’er a villain dwelling in all Denmark"
+    },
+    {
+      "number": 122,
+      "speaker": "HAMLET",
+      "text": "But he’s an arrant knave."
+    },
+    {
+      "number": 123,
+      "speaker": "HORATIO",
+      "text": "There needs no ghost, my lord, come from the grave"
+    },
+    {
+      "number": 124,
+      "speaker": "HORATIO",
+      "text": "To tell us this."
+    },
+    {
+      "number": 125,
+      "speaker": "HAMLET",
+      "text": "Why, right; you are i’ the right;"
+    },
+    {
+      "number": 126,
+      "speaker": "HAMLET",
+      "text": "And so, without more circumstance at all,"
+    },
+    {
+      "number": 127,
+      "speaker": "HAMLET",
+      "text": "I hold it fit that we shake hands and part:"
+    },
+    {
+      "number": 128,
+      "speaker": "HAMLET",
+      "text": "You, as your business and desire shall point you;"
+    },
+    {
+      "number": 129,
+      "speaker": "HAMLET",
+      "text": "For every man has business and desire,"
+    },
+    {
+      "number": 130,
+      "speaker": "HAMLET",
+      "text": "Such as it is; and for mine own poor part,"
+    },
+    {
+      "number": 131,
+      "speaker": "HAMLET",
+      "text": "Look you, I’ll go pray."
+    },
+    {
+      "number": 132,
+      "speaker": "HORATIO",
+      "text": "These are but wild and whirling words, my lord."
+    },
+    {
+      "number": 133,
+      "speaker": "HAMLET",
+      "text": "I’m sorry they offend you, heartily;"
+    },
+    {
+      "number": 134,
+      "speaker": "HAMLET",
+      "text": "Yes, ’faith heartily."
+    },
+    {
+      "number": 134,
+      "speaker": "HORATIO",
+      "text": "There’s no offence, my lord."
+    },
+    {
+      "number": 135,
+      "speaker": "HAMLET",
+      "text": "Yes, by Saint Patrick, but there is, Horatio,"
+    },
+    {
+      "number": 136,
+      "speaker": "HAMLET",
+      "text": "And much offence too. Touching this vision here,"
+    },
+    {
+      "number": 137,
+      "speaker": "HAMLET",
+      "text": "It is an honest ghost, that let me tell you:"
+    },
+    {
+      "number": 138,
+      "speaker": "HAMLET",
+      "text": "For your desire to know what is between us,"
+    },
+    {
+      "number": 139,
+      "speaker": "HAMLET",
+      "text": "O’ermaster’t as you may. And now, good friends,"
+    },
+    {
+      "number": 140,
+      "speaker": "HAMLET",
+      "text": "As you are friends, scholars and soldiers,"
+    },
+    {
+      "number": 141,
+      "speaker": "HAMLET",
+      "text": "Give me one poor request."
+    },
+    {
+      "number": 141,
+      "speaker": "HORATIO",
+      "text": "What is’t, my lord? we will."
+    },
+    {
+      "number": 142,
+      "speaker": "HAMLET",
+      "text": "Never make known what you have seen to-night."
+    },
+    {
+      "number": 143,
+      "speaker": "HORATIO MARCELLUS",
+      "text": "My lord, we will not."
+    },
+    {
+      "number": 143,
+      "speaker": "HAMLET",
+      "text": "Nay, but swear’t."
+    },
+    {
+      "number": 144,
+      "speaker": "HORATIO",
+      "text": "In faith,"
+    },
+    {
+      "number": 145,
+      "speaker": "HORATIO",
+      "text": "My lord, not I."
+    },
+    {
+      "number": 145,
+      "speaker": "MARCELLUS",
+      "text": "Nor I, my lord, in faith."
+    },
+    {
+      "number": 146,
+      "speaker": "HAMLET",
+      "text": "Upon my sword."
+    },
+    {
+      "number": 146,
+      "speaker": "MARCELLUS",
+      "text": "We have sworn, my lord, already."
+    },
+    {
+      "number": 147,
+      "speaker": "HAMLET",
+      "text": "Indeed, upon my sword, indeed."
+    },
+    {
+      "number": 147,
+      "speaker": "GHOST",
+      "text": "Beneath. Swear."
+    },
+    {
+      "number": 148,
+      "speaker": "HAMLET",
+      "text": "Ah, ha, boy! say’st thou so? art thou there, truepenny?"
+    },
+    {
+      "number": 149,
+      "speaker": "HAMLET",
+      "text": "Come on—you hear this fellow in the cellarage—"
+    },
+    {
+      "number": 150,
+      "speaker": "HAMLET",
+      "text": "Consent to swear."
+    },
+    {
+      "number": 150,
+      "speaker": "HORATIO",
+      "text": "Propose the oath, my lord."
+    },
+    {
+      "number": 151,
+      "speaker": "HAMLET",
+      "text": "Never to speak of this that you have seen,"
+    },
+    {
+      "number": 152,
+      "speaker": "HAMLET",
+      "text": "Swear by my sword."
+    },
+    {
+      "number": 152,
+      "speaker": "GHOST",
+      "text": "Beneath. Swear."
+    },
+    {
+      "number": 153,
+      "speaker": "HAMLET",
+      "text": "Hic et ubique? then we’ll shift our ground."
+    },
+    {
+      "number": 154,
+      "speaker": "HAMLET",
+      "text": "Come hither, gentlemen,"
+    },
+    {
+      "number": 155,
+      "speaker": "HAMLET",
+      "text": "And lay your hands again upon my sword:"
+    },
+    {
+      "number": 156,
+      "speaker": "HAMLET",
+      "text": "Never to speak of this that you have heard,"
+    },
+    {
+      "number": 157,
+      "speaker": "HAMLET",
+      "text": "Swear by my sword."
+    },
+    {
+      "number": 157,
+      "speaker": "GHOST",
+      "text": "Beneath. Swear."
+    },
+    {
+      "number": 158,
+      "speaker": "HAMLET",
+      "text": "Well said, old mole! canst work i’ the earth so fast?"
+    },
+    {
+      "number": 159,
+      "speaker": "HAMLET",
+      "text": "A worthy pioner! Once more remove, good friends."
+    },
+    {
+      "number": 160,
+      "speaker": "HORATIO",
+      "text": "O day and night, but this is wondrous strange!"
+    },
+    {
+      "number": 161,
+      "speaker": "HAMLET",
+      "text": "And therefore as a stranger give it welcome."
+    },
+    {
+      "number": 162,
+      "speaker": "HAMLET",
+      "text": "There are more things in heaven and earth, Horatio,"
+    },
+    {
+      "number": 163,
+      "speaker": "HAMLET",
+      "text": "Than are dreamt of in your philosophy."
+    },
+    {
+      "number": 164,
+      "speaker": "HAMLET",
+      "text": "But come;"
+    },
+    {
+      "number": 165,
+      "speaker": "HAMLET",
+      "text": "Here, as before, never, so help you mercy,"
+    },
+    {
+      "number": 166,
+      "speaker": "HAMLET",
+      "text": "How strange or odd soe’er I bear myself,"
+    },
+    {
+      "number": 167,
+      "speaker": "HAMLET",
+      "text": "As I perchance hereafter shall think meet"
+    },
+    {
+      "number": 168,
+      "speaker": "HAMLET",
+      "text": "To put an antic disposition on,"
+    },
+    {
+      "number": 169,
+      "speaker": "HAMLET",
+      "text": "That you, at such times seeing me, never shall,"
+    },
+    {
+      "number": 170,
+      "speaker": "HAMLET",
+      "text": "With arms encumber’d thus, or this headshake,"
+    },
+    {
+      "number": 171,
+      "speaker": "HAMLET",
+      "text": "Or by pronouncing of some doubtful phrase,"
+    },
+    {
+      "number": 172,
+      "speaker": "HAMLET",
+      "text": "As “Well, well, we know,” or “We could, an if we would,”"
+    },
+    {
+      "number": 173,
+      "speaker": "HAMLET",
+      "text": "Or “If we list to speak,” or “There be, an if they might,”"
+    },
+    {
+      "number": 174,
+      "speaker": "HAMLET",
+      "text": "Or such ambiguous giving out, to note"
+    },
+    {
+      "number": 175,
+      "speaker": "HAMLET",
+      "text": "That you know aught of me: this not to do,"
+    },
+    {
+      "number": 176,
+      "speaker": "HAMLET",
+      "text": "So grace and mercy at your most need help you,"
+    },
+    {
+      "number": 177,
+      "speaker": "HAMLET",
+      "text": "Swear."
+    },
+    {
+      "number": 177,
+      "speaker": "GHOST",
+      "text": "Beneath. Swear."
+    },
+    {
+      "number": 178,
+      "speaker": "HAMLET",
+      "text": "Rest, rest, perturbed spirit! They swear. So, gentlemen,"
+    },
+    {
+      "number": 179,
+      "speaker": "HAMLET",
+      "text": "With all my love I do commend me to you:"
+    },
+    {
+      "number": 180,
+      "speaker": "HAMLET",
+      "text": "And what so poor a man as Hamlet is"
+    },
+    {
+      "number": 181,
+      "speaker": "HAMLET",
+      "text": "May do, to express his love and friending to you,"
+    },
+    {
+      "number": 182,
+      "speaker": "HAMLET",
+      "text": "God willing, shall not lack. Let us go in together;"
+    },
+    {
+      "number": 183,
+      "speaker": "HAMLET",
+      "text": "And still your fingers on your lips, I pray."
+    },
+    {
+      "number": 184,
+      "speaker": "HAMLET",
+      "text": "The time is out of joint: O cursed spite,"
+    },
+    {
+      "number": 185,
+      "speaker": "HAMLET",
+      "text": "That ever I was born to set it right!"
+    },
+    {
+      "number": 186,
+      "speaker": "HAMLET",
+      "text": "Nay, come, let’s go together."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Ghost and Hamlet."
+    },
+    {
+      "after_line": 90,
+      "text": "Exit."
+    },
+    {
+      "after_line": 111,
+      "text": "Within."
+    },
+    {
+      "after_line": 112,
+      "text": "Within."
+    },
+    {
+      "after_line": 112,
+      "text": "Within."
+    },
+    {
+      "after_line": 113,
+      "text": "Within."
+    },
+    {
+      "after_line": 114,
+      "text": "Enter Horatio and Marcellus."
+    },
+    {
+      "after_line": 186,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "hamlet_act1_scene5_gloss1",
+      "line": 3,
+      "phrase": "My hour is almost come",
+      "definition": "the time I must return (to purgatory) approaches"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss2",
+      "line": 4,
+      "phrase": "sulphurous and tormenting flames",
+      "definition": "the fires of purgatory"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss3",
+      "line": 7,
+      "phrase": "bound to hear",
+      "definition": "obliged to listen (with a pun on 'ready to run')"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss4",
+      "line": 12,
+      "phrase": "foul crimes done in my days of nature",
+      "definition": "sins committed while living"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss5",
+      "line": 14,
+      "phrase": "prison-house",
+      "definition": "confinement (of purgatory)"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss6",
+      "line": 16,
+      "phrase": "harrow up thy soul",
+      "definition": "break up and agitate your soul"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss7",
+      "line": 17,
+      "phrase": "start from their spheres",
+      "definition": "leap out of their orbits (eye sockets)"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss8",
+      "line": 18,
+      "phrase": "knotted and combined locks",
+      "definition": "orderly arranged curls of hair"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss9",
+      "line": 20,
+      "phrase": "fretful porpentine",
+      "definition": "angry porcupine (hair standing on end)"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss10",
+      "line": 21,
+      "phrase": "eternal blazon",
+      "definition": "revelation of eternity"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss11",
+      "line": 30,
+      "phrase": "meditation",
+      "definition": "thought"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss12",
+      "line": 32,
+      "phrase": "fat weed",
+      "definition": "lush weed (possibly asphodel)"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss13",
+      "line": 33,
+      "phrase": "Lethe wharf",
+      "definition": "bank of the river Lethe (river of forgetfulness in the underworld)"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss14",
+      "line": 37,
+      "phrase": "forged process of my death",
+      "definition": "false account of my death"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss15",
+      "line": 40,
+      "phrase": "wears his crown",
+      "definition": "usurps his throne"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss16",
+      "line": 41,
+      "phrase": "adulterate beast",
+      "definition": "adulterous beast"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss17",
+      "line": 42,
+      "phrase": "witchcraft of his wit",
+      "definition": "seductive cunning of his mind"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss18",
+      "line": 42,
+      "phrase": "traitorous gifts",
+      "definition": "treacherous talents"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss19",
+      "line": 45,
+      "phrase": "seeming-virtuous queen",
+      "definition": "apparently-virtuous queen"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss20",
+      "line": 47,
+      "phrase": "dignity",
+      "definition": "nobility"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss21",
+      "line": 56,
+      "phrase": "prey on garbage",
+      "definition": "feed on refuse (Gertrude descending to Claudius)"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss22",
+      "line": 60,
+      "phrase": "Upon my secure hour",
+      "definition": "during my unguarded time"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss23",
+      "line": 61,
+      "phrase": "juice of cursed hebenon",
+      "definition": "poison from the hebenon plant (henbane or yew)"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss24",
+      "line": 63,
+      "phrase": "leperous distilment",
+      "definition": "foul distilled poison"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss25",
+      "line": 66,
+      "phrase": "gates and alleys of the body",
+      "definition": "passages and channels of the body"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss26",
+      "line": 69,
+      "phrase": "wholesome blood",
+      "definition": "healthy blood"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss27",
+      "line": 70,
+      "phrase": "tetter bark’d about",
+      "definition": "skin eruption crusted over"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss28",
+      "line": 71,
+      "phrase": "vile and loathsome crust",
+      "definition": "disgusting scabby coating"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss29",
+      "line": 74,
+      "phrase": "dispatch’d",
+      "definition": "killed swiftly"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss30",
+      "line": 76,
+      "phrase": "Unhousel’d",
+      "definition": "without receiving the Eucharist"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss31",
+      "line": 76,
+      "phrase": "disappointed",
+      "definition": "unprepared (spiritually)"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss32",
+      "line": 80,
+      "phrase": "bear it not",
+      "definition": "do not endure it"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss33",
+      "line": 80,
+      "phrase": "nature in thee",
+      "definition": "natural filial feeling"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss34",
+      "line": 85,
+      "phrase": "aught",
+      "definition": "anything"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss35",
+      "line": 84,
+      "phrase": "Taint not thy mind",
+      "definition": "do not corrupt your thoughts"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss36",
+      "line": 88,
+      "phrase": "matin",
+      "definition": "morning"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss37",
+      "line": 89,
+      "phrase": "uneffectual fire",
+      "definition": "weak light (of the glow-worm, paling at dawn)"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss38",
+      "line": 92,
+      "phrase": "couple hell",
+      "definition": "add hell (to heaven and earth)"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss39",
+      "line": 92,
+      "phrase": "Hold, hold, my heart",
+      "definition": "endure, endure, my heart"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss40",
+      "line": 93,
+      "phrase": "sinews",
+      "definition": "muscles; strength"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss41",
+      "line": 96,
+      "phrase": "distracted globe",
+      "definition": "disturbed head (Hamlet's skull)"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss42",
+      "line": 97,
+      "phrase": "table of my memory",
+      "definition": "record-tablet of memory"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss43",
+      "line": 98,
+      "phrase": "trivial fond records",
+      "definition": "worthless foolish notes"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss44",
+      "line": 99,
+      "phrase": "all saws of books",
+      "definition": "all the maxims of books"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss45",
+      "line": 99,
+      "phrase": "pressures past",
+      "definition": "impressions from the past"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss46",
+      "line": 104,
+      "phrase": "most pernicious woman",
+      "definition": "most wicked woman (Gertrude)"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss47",
+      "line": 105,
+      "phrase": "smiling, damned villain",
+      "definition": "grinning, accursed scoundrel (Claudius)"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss48",
+      "line": 106,
+      "phrase": "My tables",
+      "definition": "my writing-tablet"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss49",
+      "line": 106,
+      "phrase": "meet it is I set it down",
+      "definition": "it is fitting I record it"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss50",
+      "line": 114,
+      "phrase": "Hillo, ho, ho",
+      "definition": "falconer's call"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss51",
+      "line": 122,
+      "phrase": "arrant knave",
+      "definition": "absolute scoundrel"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss52",
+      "line": 126,
+      "phrase": "circumstance",
+      "definition": "formal delay"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss53",
+      "line": 135,
+      "phrase": "Saint Patrick",
+      "definition": "patron of purgatory in folklore"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss54",
+      "line": 137,
+      "phrase": "honest ghost",
+      "definition": "truthful ghost (not a devil in disguise)"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss55",
+      "line": 142,
+      "phrase": "Never make known what you have seen",
+      "definition": "never reveal what you saw"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss56",
+      "line": 148,
+      "phrase": "truepenny",
+      "definition": "trusty fellow (addressing the ghost)"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss57",
+      "line": 149,
+      "phrase": "cellarage",
+      "definition": "underground chambers (as if the ghost is below the stage)"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss58",
+      "line": 159,
+      "phrase": "pioner",
+      "definition": "pioneer; miner; digger"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss59",
+      "line": 163,
+      "phrase": "your philosophy",
+      "definition": "your learning (Horatio's rational approach)"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss60",
+      "line": 162,
+      "phrase": "more things in heaven and earth",
+      "definition": "more realities than your philosophy imagines"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss61",
+      "line": 168,
+      "phrase": "antic disposition",
+      "definition": "grotesque, madman-like behavior"
+    },
+    {
+      "id": "hamlet_act1_scene5_gloss62",
+      "line": 174,
+      "phrase": "ambiguous giving out",
+      "definition": "equivocal hinting"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "hamlet_act1_scene5_ann1",
+      "line_start": 9,
+      "line_end": 22,
+      "citation_display": "Hamlet 1.5.9–22",
+      "category": "historical",
+      "title": "The ghost's purgatorial fires",
+      "body": "The ghost's self-description — 'confined to fast in fires' until 'the foul crimes done in my days of nature / Are burnt and purged away' — places him unambiguously in purgatory, a doctrine the Church of England had officially abolished in 1547. Stephen Greenblatt argues that Hamlet is structured around this confessional impossibility: a son at a Protestant university receives a commission from a father whose very existence depends on a theology his education has taught him to reject. The ghost cannot reveal 'the secrets of my prison-house'; if he could, the fires would stop making sense within the play's official Protestant frame. Shakespeare keeps the ghost's ontology just fuzzy enough to allow both Catholic and Protestant audiences their own reading.",
+      "sources": [
+        "Stephen Greenblatt, Hamlet in Purgatory (2001)"
+      ]
+    },
+    {
+      "id": "hamlet_act1_scene5_ann2",
+      "line_start": 35,
+      "line_end": 80,
+      "citation_display": "Hamlet 1.5.35–80",
+      "category": "structural",
+      "title": "The murder narrated in real time",
+      "body": "The ghost does not merely report the murder; he re-enacts it. 'Sleeping within my orchard' establishes the scene; 'the juice of cursed hebenon' is poured; the poison's progress is tracked through blood, skin, and 'natural gates and alleys of the body.' The narrative takes its time — some forty lines — so that the audience experiences the murder in something close to its own duration. The technique is a Shakespearean innovation: the ghost makes his son an eyewitness to a crime he did not see. The scene Hamlet will later stage for Claudius in 3.2 is this same murder performed again, now by actors before its architect. Revenge in Hamlet is always a rehearsal of the original crime.",
+      "sources": [
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)"
+      ]
+    },
+    {
+      "id": "hamlet_act1_scene5_ann3",
+      "line_start": 82,
+      "line_end": 92,
+      "citation_display": "Hamlet 1.5.82–92",
+      "category": "thematic",
+      "title": "'Taint not thy mind' — the ghost's ethical commission",
+      "body": "The ghost's final instruction complicates the commission of revenge: 'But howsoever thou pursuest this act, / Taint not thy mind, nor let thy soul contrive / Against thy mother aught.' The son is to avenge the murder but spare the guilty wife, and he is to do it without corrupting himself. This ethical double-bind will drive Hamlet's behavior for four acts. Recent critics from Margreta de Grazia to Rhodri Lewis have argued that the play is less about delay than about the impossibility of carrying out this commission honorably — a truly revenging son would be a ruined man. 'Taint not thy mind' is the instruction on which the whole plot founders.",
+      "sources": [
+        "Rhodri Lewis, Hamlet and the Vision of Darkness (2017)",
+        "Margreta de Grazia, Hamlet without Hamlet (2007)"
+      ]
+    },
+    {
+      "id": "hamlet_act1_scene5_ann4",
+      "line_start": 96,
+      "line_end": 112,
+      "citation_display": "Hamlet 1.5.96–112",
+      "category": "close_reading",
+      "title": "'My tables — meet it is I set it down'",
+      "body": "Hamlet's note-taking after the ghost's departure is the scene's strangest moment. He is a man who has just been commissioned by his murdered father's spirit, and his immediate response is scholarly: he reaches for his writing-tablet to record the observation that 'one may smile, and smile, and be a villain.' Elizabethan tables were small erasable booklets of plaster-coated pages, used by students and lawyers; Hamlet's reach for his is a signal that his training at Wittenberg still governs him. The dissonance is precisely what Shakespeare exploits — in the moment of purest emotion, his hero behaves like a graduate student. This comic undertone recurs throughout the play and prevents its tragedy from curdling into melodrama.",
+      "sources": [
+        "Frank Kermode, Shakespeare's Language (2000)"
+      ]
+    },
+    {
+      "id": "hamlet_act1_scene5_ann5",
+      "line_start": 158,
+      "line_end": 175,
+      "citation_display": "Hamlet 1.5.158–175",
+      "category": "thematic",
+      "title": "'The time is out of joint' — the tragedy of restoration",
+      "body": "Hamlet's closing couplet — 'The time is out of joint: O cursed spite, / That ever I was born to set it right!' — names the tragic task with eerie precision. 'Out of joint' is anatomical: a time dislocated from itself. 'Set it right' is reparative: to put a bone back in its socket. The tragedy will consist in Hamlet's discovery that restoration is not available to him; setting the time right will require destroying everyone who occupies it, including himself. The line is also where the play first admits that Hamlet did not choose his role — 'born to set it right' — a determinism the Wittenberg student never reconciles with his Protestant theology of free will.",
+      "sources": [
+        "G. Wilson Knight, The Wheel of Fire (1930)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "hamlet_act1_scene5_q1",
+      "kind": "comprehension",
+      "prompt": "According to the ghost, how did he die?",
+      "options": [
+        "A serpent bit him while he slept in his orchard — the official story.",
+        "Claudius poured poison into his ear while he slept in his orchard.",
+        "He was stabbed in the night by an unknown assailant.",
+        "He died of an illness Claudius had secretly encouraged."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 35,
+      "anchor_line_end": 80
+    },
+    {
+      "id": "hamlet_act1_scene5_q2",
+      "kind": "historical",
+      "prompt": "The ghost's description of being 'confined to fast in fires' most precisely places him in which theological location?",
+      "options": [
+        "Hell, the Catholic place of damnation.",
+        "Purgatory, the Catholic place of purification — officially abolished in the Church of England.",
+        "Limbo, the place of unbaptized souls.",
+        "Sheol, the Old Testament place of the dead."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 9,
+      "anchor_line_end": 22
+    },
+    {
+      "id": "hamlet_act1_scene5_q3",
+      "kind": "inference",
+      "prompt": "What specific constraint does the ghost place on how Hamlet should carry out his revenge?",
+      "options": [
+        "He must do it publicly before the whole court.",
+        "He must not harm his mother and must not corrupt his own mind in the process.",
+        "He must do it within the month or the ghost will return to haunt him.",
+        "He must do it without the help of any friends."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 82,
+      "anchor_line_end": 92
+    },
+    {
+      "id": "hamlet_act1_scene5_q4",
+      "kind": "close_reading",
+      "prompt": "What does Hamlet mean by reaching for his 'tables' immediately after the ghost's departure?",
+      "options": [
+        "He is about to write a letter to Ophelia.",
+        "He is taking out a small writing-tablet to record his observations — a scholar's instinct in a moment of tragedy.",
+        "He is preparing to cast a spell to summon the ghost back.",
+        "He is setting up a table for Horatio's interrogation."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 107,
+      "anchor_line_end": 110
+    },
+    {
+      "id": "hamlet_act1_scene5_q5",
+      "kind": "theme",
+      "prompt": "What strategy does Hamlet announce he will adopt for the rest of the play?",
+      "options": [
+        "Open rebellion against the King.",
+        "Secret flight to Wittenberg to gather allies.",
+        "An 'antic disposition' — a put-on madness — to disguise his intentions.",
+        "Waiting silently until the ghost returns with further instructions."
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 15,
+      "anchor_line_start": 162,
+      "anchor_line_end": 170
+    },
+    {
+      "id": "hamlet_act1_scene5_q6",
+      "kind": "close_reading",
+      "prompt": "What does the image 'the time is out of joint' suggest?",
+      "options": [
+        "That winter has come unseasonably early.",
+        "That time is dislocated like a bone out of its socket, and Hamlet is called to reset it.",
+        "That Hamlet's wristwatch has broken.",
+        "That Denmark has abandoned the Christian calendar."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 174,
+      "anchor_line_end": 175
+    }
+  ]
+}

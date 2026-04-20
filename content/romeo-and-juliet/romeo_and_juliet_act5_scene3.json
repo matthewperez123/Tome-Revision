@@ -1,0 +1,2217 @@
+{
+  "section_id": "romeo_and_juliet_act5_scene3",
+  "work_id": "romeo-and-juliet",
+  "sequence": 26,
+  "act": 5,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "A churchyard; in it a tomb belonging to the Capulets",
+  "line_count": 316,
+  "word_count": 2496,
+  "est_read_minutes": 12,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "PARIS",
+      "text": "Give me thy torch, boy: hence, and stand aloof:"
+    },
+    {
+      "number": 2,
+      "speaker": "PARIS",
+      "text": "Yet put it out, for I would not be seen."
+    },
+    {
+      "number": 3,
+      "speaker": "PARIS",
+      "text": "Under yond yew-trees lay thee all along,"
+    },
+    {
+      "number": 4,
+      "speaker": "PARIS",
+      "text": "Holding thine ear close to the hollow ground;"
+    },
+    {
+      "number": 5,
+      "speaker": "PARIS",
+      "text": "So shall no foot upon the churchyard tread,"
+    },
+    {
+      "number": 6,
+      "speaker": "PARIS",
+      "text": "Being loose, unfirm, with digging up of graves,"
+    },
+    {
+      "number": 7,
+      "speaker": "PARIS",
+      "text": "But thou shalt hear it: whistle then to me,"
+    },
+    {
+      "number": 8,
+      "speaker": "PARIS",
+      "text": "As signal that thou hear’st something approach."
+    },
+    {
+      "number": 9,
+      "speaker": "PARIS",
+      "text": "Give me those flowers. Do as I bid thee, go."
+    },
+    {
+      "number": 10,
+      "speaker": "PAGE",
+      "text": "I am almost afraid to stand alone"
+    },
+    {
+      "number": 11,
+      "speaker": "PAGE",
+      "text": "Here in the churchyard; yet I will adventure."
+    },
+    {
+      "number": 12,
+      "speaker": "PARIS",
+      "text": "Sweet flower, with flowers thy bridal bed I strew—"
+    },
+    {
+      "number": 13,
+      "speaker": "PARIS",
+      "text": "O woe! thy canopy is dust and stones;—"
+    },
+    {
+      "number": 14,
+      "speaker": "PARIS",
+      "text": "Which with sweet water nightly I will dew,"
+    },
+    {
+      "number": 15,
+      "speaker": "PARIS",
+      "text": "Or, wanting that, with tears distill’d by moans:"
+    },
+    {
+      "number": 16,
+      "speaker": "PARIS",
+      "text": "The obsequies that I for thee will keep"
+    },
+    {
+      "number": 17,
+      "speaker": "PARIS",
+      "text": "Nightly shall be to strew thy grave and weep. The Page whistles."
+    },
+    {
+      "number": 18,
+      "speaker": "PARIS",
+      "text": "The boy gives warning something doth approach."
+    },
+    {
+      "number": 19,
+      "speaker": "PARIS",
+      "text": "What cursed foot wanders this way to-night,"
+    },
+    {
+      "number": 20,
+      "speaker": "PARIS",
+      "text": "To cross my obsequies and true love’s rite?"
+    },
+    {
+      "number": 21,
+      "speaker": "PARIS",
+      "text": "What, with a torch! muffle me, night, awhile."
+    },
+    {
+      "number": 22,
+      "speaker": "ROMEO",
+      "text": "Give me that mattock and the wrenching iron."
+    },
+    {
+      "number": 23,
+      "speaker": "ROMEO",
+      "text": "Hold, take this letter; early in the morning"
+    },
+    {
+      "number": 24,
+      "speaker": "ROMEO",
+      "text": "See thou deliver it to my lord and father."
+    },
+    {
+      "number": 25,
+      "speaker": "ROMEO",
+      "text": "Give me the light: upon thy life, I charge thee,"
+    },
+    {
+      "number": 26,
+      "speaker": "ROMEO",
+      "text": "Whate’er thou hear’st or seest, stand all aloof,"
+    },
+    {
+      "number": 27,
+      "speaker": "ROMEO",
+      "text": "And do not interrupt me in my course."
+    },
+    {
+      "number": 28,
+      "speaker": "ROMEO",
+      "text": "Why I descend into this bed of death,"
+    },
+    {
+      "number": 29,
+      "speaker": "ROMEO",
+      "text": "Is partly to behold my lady’s face;"
+    },
+    {
+      "number": 30,
+      "speaker": "ROMEO",
+      "text": "But chiefly to take thence from her dead finger"
+    },
+    {
+      "number": 31,
+      "speaker": "ROMEO",
+      "text": "A precious ring, a ring that I must use"
+    },
+    {
+      "number": 32,
+      "speaker": "ROMEO",
+      "text": "In dear employment: therefore hence, be gone:"
+    },
+    {
+      "number": 33,
+      "speaker": "ROMEO",
+      "text": "But if thou, jealous, dost return to pry"
+    },
+    {
+      "number": 34,
+      "speaker": "ROMEO",
+      "text": "In what I further shall intend to do,"
+    },
+    {
+      "number": 35,
+      "speaker": "ROMEO",
+      "text": "By heaven, I will tear thee joint by joint"
+    },
+    {
+      "number": 36,
+      "speaker": "ROMEO",
+      "text": "And strew this hungry churchyard with thy limbs:"
+    },
+    {
+      "number": 37,
+      "speaker": "ROMEO",
+      "text": "The time and my intents are savage-wild,"
+    },
+    {
+      "number": 38,
+      "speaker": "ROMEO",
+      "text": "More fierce and more inexorable far"
+    },
+    {
+      "number": 39,
+      "speaker": "ROMEO",
+      "text": "Than empty tigers or the roaring sea."
+    },
+    {
+      "number": 40,
+      "speaker": "BALTHASAR",
+      "text": "I will be gone, sir, and not trouble you."
+    },
+    {
+      "number": 41,
+      "speaker": "ROMEO",
+      "text": "So shalt thou show me friendship. Take thou that:"
+    },
+    {
+      "number": 42,
+      "speaker": "ROMEO",
+      "text": "Live, and be prosperous: and farewell, good fellow."
+    },
+    {
+      "number": 43,
+      "speaker": "BALTHASAR",
+      "text": "For all this same, I’ll hide me hereabout:"
+    },
+    {
+      "number": 44,
+      "speaker": "BALTHASAR",
+      "text": "His looks I fear, and his intents I doubt."
+    },
+    {
+      "number": 45,
+      "speaker": "ROMEO",
+      "text": "Thou detestable maw, thou womb of death,"
+    },
+    {
+      "number": 46,
+      "speaker": "ROMEO",
+      "text": "Gorged with the dearest morsel of the earth,"
+    },
+    {
+      "number": 47,
+      "speaker": "ROMEO",
+      "text": "Thus I enforce thy rotten jaws to open,"
+    },
+    {
+      "number": 48,
+      "speaker": "ROMEO",
+      "text": "And, in despite, I’ll cram thee with more food! Opens the tomb."
+    },
+    {
+      "number": 49,
+      "speaker": "PARIS",
+      "text": "This is that banish’d haughty Montague,"
+    },
+    {
+      "number": 50,
+      "speaker": "PARIS",
+      "text": "That murder’d my love’s cousin, with which grief,"
+    },
+    {
+      "number": 51,
+      "speaker": "PARIS",
+      "text": "It is supposed, the fair creature died;"
+    },
+    {
+      "number": 52,
+      "speaker": "PARIS",
+      "text": "And here is come to do some villainous shame"
+    },
+    {
+      "number": 53,
+      "speaker": "PARIS",
+      "text": "To the dead bodies: I will apprehend him. Comes forward."
+    },
+    {
+      "number": 54,
+      "speaker": "PARIS",
+      "text": "Stop thy unhallow’d toil, vile Montague!"
+    },
+    {
+      "number": 55,
+      "speaker": "PARIS",
+      "text": "Can vengeance be pursued further than death?"
+    },
+    {
+      "number": 56,
+      "speaker": "PARIS",
+      "text": "Condemned villain, I do apprehend thee:"
+    },
+    {
+      "number": 57,
+      "speaker": "PARIS",
+      "text": "Obey, and go with me; for thou must die."
+    },
+    {
+      "number": 58,
+      "speaker": "ROMEO",
+      "text": "I must indeed; and therefore came I hither."
+    },
+    {
+      "number": 59,
+      "speaker": "ROMEO",
+      "text": "Good gentle youth, tempt not a desperate man;"
+    },
+    {
+      "number": 60,
+      "speaker": "ROMEO",
+      "text": "Fly hence, and leave me: think upon these gone;"
+    },
+    {
+      "number": 61,
+      "speaker": "ROMEO",
+      "text": "Let them affright thee. I beseech thee, youth,"
+    },
+    {
+      "number": 62,
+      "speaker": "ROMEO",
+      "text": "Put not another sin upon my head,"
+    },
+    {
+      "number": 63,
+      "speaker": "ROMEO",
+      "text": "By urging me to fury: O, be gone!"
+    },
+    {
+      "number": 64,
+      "speaker": "ROMEO",
+      "text": "By heaven, I love thee better than myself;"
+    },
+    {
+      "number": 65,
+      "speaker": "ROMEO",
+      "text": "For I come hither arm’d against myself:"
+    },
+    {
+      "number": 66,
+      "speaker": "ROMEO",
+      "text": "Stay not, be gone; live, and hereafter say,"
+    },
+    {
+      "number": 67,
+      "speaker": "ROMEO",
+      "text": "A madman’s mercy bade thee run away."
+    },
+    {
+      "number": 68,
+      "speaker": "PARIS",
+      "text": "I do defy thy conjurations,"
+    },
+    {
+      "number": 69,
+      "speaker": "PARIS",
+      "text": "And apprehend thee for a felon here."
+    },
+    {
+      "number": 70,
+      "speaker": "ROMEO",
+      "text": "Wilt thou provoke me? then have at thee, boy! They fight."
+    },
+    {
+      "number": 71,
+      "speaker": "PAGE",
+      "text": "O Lord, they fight! I will go call the watch."
+    },
+    {
+      "number": 72,
+      "speaker": "PARIS",
+      "text": "O, I am slain! If thou be merciful,"
+    },
+    {
+      "number": 73,
+      "speaker": "PARIS",
+      "text": "Open the tomb, lay me with Juliet."
+    },
+    {
+      "number": 74,
+      "speaker": "ROMEO",
+      "text": "In faith, I will. Let me peruse this face."
+    },
+    {
+      "number": 75,
+      "speaker": "ROMEO",
+      "text": "Mercutio’s kinsman, noble County Paris!"
+    },
+    {
+      "number": 76,
+      "speaker": "ROMEO",
+      "text": "What said my man, when my betossed soul"
+    },
+    {
+      "number": 77,
+      "speaker": "ROMEO",
+      "text": "Did not attend him as we rode? I think"
+    },
+    {
+      "number": 78,
+      "speaker": "ROMEO",
+      "text": "He told me Paris should have married Juliet:"
+    },
+    {
+      "number": 79,
+      "speaker": "ROMEO",
+      "text": "Said he not so? or did I dream it so?"
+    },
+    {
+      "number": 80,
+      "speaker": "ROMEO",
+      "text": "Or am I mad, hearing him talk of Juliet,"
+    },
+    {
+      "number": 81,
+      "speaker": "ROMEO",
+      "text": "To think it was so? O, give me thy hand,"
+    },
+    {
+      "number": 82,
+      "speaker": "ROMEO",
+      "text": "One writ with me in sour misfortune’s book!"
+    },
+    {
+      "number": 83,
+      "speaker": "ROMEO",
+      "text": "I’ll bury thee in a triumphant grave;"
+    },
+    {
+      "number": 84,
+      "speaker": "ROMEO",
+      "text": "A grave? O no! a lantern, slaughter’d youth,"
+    },
+    {
+      "number": 85,
+      "speaker": "ROMEO",
+      "text": "For here lies Juliet, and her beauty makes"
+    },
+    {
+      "number": 86,
+      "speaker": "ROMEO",
+      "text": "This vault a feasting presence full of light."
+    },
+    {
+      "number": 87,
+      "speaker": "ROMEO",
+      "text": "Death, lie thou there, by a dead man interr’d. Laying Paris in the tomb."
+    },
+    {
+      "number": 88,
+      "speaker": "ROMEO",
+      "text": "How oft when men are at the point of death"
+    },
+    {
+      "number": 89,
+      "speaker": "ROMEO",
+      "text": "Have they been merry! which their keepers call"
+    },
+    {
+      "number": 90,
+      "speaker": "ROMEO",
+      "text": "A lightning before death: O, how may I"
+    },
+    {
+      "number": 91,
+      "speaker": "ROMEO",
+      "text": "Call this a lightning? O my love! my wife!"
+    },
+    {
+      "number": 92,
+      "speaker": "ROMEO",
+      "text": "Death, that hath suck’d the honey of thy breath,"
+    },
+    {
+      "number": 93,
+      "speaker": "ROMEO",
+      "text": "Hath had no power yet upon thy beauty:"
+    },
+    {
+      "number": 94,
+      "speaker": "ROMEO",
+      "text": "Thou art not conquer’d; beauty’s ensign yet"
+    },
+    {
+      "number": 95,
+      "speaker": "ROMEO",
+      "text": "Is crimson in thy lips and in thy cheeks,"
+    },
+    {
+      "number": 96,
+      "speaker": "ROMEO",
+      "text": "And death’s pale flag is not advanced there."
+    },
+    {
+      "number": 97,
+      "speaker": "ROMEO",
+      "text": "Tybalt, liest thou there in thy bloody sheet?"
+    },
+    {
+      "number": 98,
+      "speaker": "ROMEO",
+      "text": "O, what more favour can I do to thee,"
+    },
+    {
+      "number": 99,
+      "speaker": "ROMEO",
+      "text": "Than with that hand that cut thy youth in twain"
+    },
+    {
+      "number": 100,
+      "speaker": "ROMEO",
+      "text": "To sunder his that was thine enemy?"
+    },
+    {
+      "number": 101,
+      "speaker": "ROMEO",
+      "text": "Forgive me, cousin! Ah, dear Juliet,"
+    },
+    {
+      "number": 102,
+      "speaker": "ROMEO",
+      "text": "Why art thou yet so fair? shall I believe"
+    },
+    {
+      "number": 103,
+      "speaker": "ROMEO",
+      "text": "That unsubstantial death is amorous,"
+    },
+    {
+      "number": 104,
+      "speaker": "ROMEO",
+      "text": "And that the lean abhorred monster keeps"
+    },
+    {
+      "number": 105,
+      "speaker": "ROMEO",
+      "text": "Thee here in dark to be his paramour?"
+    },
+    {
+      "number": 106,
+      "speaker": "ROMEO",
+      "text": "For fear of that, I still will stay with thee;"
+    },
+    {
+      "number": 107,
+      "speaker": "ROMEO",
+      "text": "And never from this palace of dim night"
+    },
+    {
+      "number": 108,
+      "speaker": "ROMEO",
+      "text": "Depart again: here, here will I remain"
+    },
+    {
+      "number": 109,
+      "speaker": "ROMEO",
+      "text": "With worms that are thy chamber-maids; O, here"
+    },
+    {
+      "number": 110,
+      "speaker": "ROMEO",
+      "text": "Will I set up my everlasting rest,"
+    },
+    {
+      "number": 111,
+      "speaker": "ROMEO",
+      "text": "And shake the yoke of inauspicious stars"
+    },
+    {
+      "number": 112,
+      "speaker": "ROMEO",
+      "text": "From this world-wearied flesh. Eyes, look your last!"
+    },
+    {
+      "number": 113,
+      "speaker": "ROMEO",
+      "text": "Arms, take your last embrace! and, lips, O you"
+    },
+    {
+      "number": 114,
+      "speaker": "ROMEO",
+      "text": "The doors of breath, seal with a righteous kiss"
+    },
+    {
+      "number": 115,
+      "speaker": "ROMEO",
+      "text": "A dateless bargain to engrossing death!"
+    },
+    {
+      "number": 116,
+      "speaker": "ROMEO",
+      "text": "Come, bitter conduct, come, unsavoury guide!"
+    },
+    {
+      "number": 117,
+      "speaker": "ROMEO",
+      "text": "Thou desperate pilot, now at once run on"
+    },
+    {
+      "number": 118,
+      "speaker": "ROMEO",
+      "text": "The dashing rocks thy sea-sick weary bark!"
+    },
+    {
+      "number": 119,
+      "speaker": "ROMEO",
+      "text": "Here’s to my love! Drinks. O true apothecary!"
+    },
+    {
+      "number": 120,
+      "speaker": "ROMEO",
+      "text": "Thy drugs are quick. Thus with a kiss I die."
+    },
+    {
+      "number": 121,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Saint Francis be my speed! how oft to-night"
+    },
+    {
+      "number": 122,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Have my old feet stumbled at graves! Who’s there?"
+    },
+    {
+      "number": 123,
+      "speaker": "BALTHASAR",
+      "text": "Here’s one, a friend, and one that knows you well."
+    },
+    {
+      "number": 124,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Bliss be upon you! Tell me, good my friend,"
+    },
+    {
+      "number": 125,
+      "speaker": "FRIAR LAURENCE",
+      "text": "What torch is yond, that vainly lends his light"
+    },
+    {
+      "number": 126,
+      "speaker": "FRIAR LAURENCE",
+      "text": "To grubs and eyeless skulls? as I discern,"
+    },
+    {
+      "number": 127,
+      "speaker": "FRIAR LAURENCE",
+      "text": "It burneth in the Capel’s monument."
+    },
+    {
+      "number": 128,
+      "speaker": "BALTHASAR",
+      "text": "It doth so, holy sir; and there’s my master,"
+    },
+    {
+      "number": 129,
+      "speaker": "BALTHASAR",
+      "text": "One that you love."
+    },
+    {
+      "number": 129,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Who is it?"
+    },
+    {
+      "number": 130,
+      "speaker": "BALTHASAR",
+      "text": "Romeo."
+    },
+    {
+      "number": 130,
+      "speaker": "FRIAR LAURENCE",
+      "text": "How long hath he been there?"
+    },
+    {
+      "number": 131,
+      "speaker": "BALTHASAR",
+      "text": "Full half an hour."
+    },
+    {
+      "number": 131,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Go with me to the vault."
+    },
+    {
+      "number": 132,
+      "speaker": "BALTHASAR",
+      "text": "I dare not, sir:"
+    },
+    {
+      "number": 133,
+      "speaker": "BALTHASAR",
+      "text": "My master knows not but I am gone hence;"
+    },
+    {
+      "number": 134,
+      "speaker": "BALTHASAR",
+      "text": "And fearfully did menace me with death,"
+    },
+    {
+      "number": 135,
+      "speaker": "BALTHASAR",
+      "text": "If I did stay to look on his intents."
+    },
+    {
+      "number": 136,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Stay, then; I’ll go alone. Fear comes upon me:"
+    },
+    {
+      "number": 137,
+      "speaker": "FRIAR LAURENCE",
+      "text": "O, much I fear some ill unlucky thing."
+    },
+    {
+      "number": 138,
+      "speaker": "BALTHASAR",
+      "text": "As I did sleep under this yew-tree here,"
+    },
+    {
+      "number": 139,
+      "speaker": "BALTHASAR",
+      "text": "I dreamt my master and another fought,"
+    },
+    {
+      "number": 140,
+      "speaker": "BALTHASAR",
+      "text": "And that my master slew him."
+    },
+    {
+      "number": 140,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Romeo!"
+    },
+    {
+      "number": 141,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Alack, alack, what blood is this, which stains"
+    },
+    {
+      "number": 142,
+      "speaker": "FRIAR LAURENCE",
+      "text": "The stony entrance of this sepulchre?"
+    },
+    {
+      "number": 143,
+      "speaker": "FRIAR LAURENCE",
+      "text": "What mean these masterless and gory swords"
+    },
+    {
+      "number": 144,
+      "speaker": "FRIAR LAURENCE",
+      "text": "To lie discolour’d by this place of peace? Enters the tomb."
+    },
+    {
+      "number": 145,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Romeo! O, pale! Who else? what, Paris too?"
+    },
+    {
+      "number": 146,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And steep’d in blood? Ah, what an unkind hour"
+    },
+    {
+      "number": 147,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Is guilty of this lamentable chance!"
+    },
+    {
+      "number": 148,
+      "speaker": "FRIAR LAURENCE",
+      "text": "The lady stirs. Juliet wakes."
+    },
+    {
+      "number": 149,
+      "speaker": "JULIET",
+      "text": "O comfortable friar! where is my lord?"
+    },
+    {
+      "number": 150,
+      "speaker": "JULIET",
+      "text": "I do remember well where I should be,"
+    },
+    {
+      "number": 151,
+      "speaker": "JULIET",
+      "text": "And there I am. Where is my Romeo? Noise within."
+    },
+    {
+      "number": 152,
+      "speaker": "FRIAR LAURENCE",
+      "text": "I hear some noise. Lady, come from that nest"
+    },
+    {
+      "number": 153,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Of death, contagion, and unnatural sleep:"
+    },
+    {
+      "number": 154,
+      "speaker": "FRIAR LAURENCE",
+      "text": "A greater power than we can contradict"
+    },
+    {
+      "number": 155,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Hath thwarted our intents. Come, come away."
+    },
+    {
+      "number": 156,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Thy husband in thy bosom there lies dead;"
+    },
+    {
+      "number": 157,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And Paris too. Come, I’ll dispose of thee"
+    },
+    {
+      "number": 158,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Among a sisterhood of holy nuns:"
+    },
+    {
+      "number": 159,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Stay not to question, for the watch is coming;"
+    },
+    {
+      "number": 160,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Come, go, good Juliet noise again, I dare no longer stay."
+    },
+    {
+      "number": 161,
+      "speaker": "JULIET",
+      "text": "Go, get thee hence, for I will not away."
+    },
+    {
+      "number": 162,
+      "speaker": "JULIET",
+      "text": "What’s here? a cup, closed in my true love’s hand?"
+    },
+    {
+      "number": 163,
+      "speaker": "JULIET",
+      "text": "Poison, I see, hath been his timeless end:"
+    },
+    {
+      "number": 164,
+      "speaker": "JULIET",
+      "text": "O churl! drunk all, and left no friendly drop"
+    },
+    {
+      "number": 165,
+      "speaker": "JULIET",
+      "text": "To help me after? I will kiss thy lips;"
+    },
+    {
+      "number": 166,
+      "speaker": "JULIET",
+      "text": "Haply some poison yet doth hang on them,"
+    },
+    {
+      "number": 167,
+      "speaker": "JULIET",
+      "text": "To make die with a restorative."
+    },
+    {
+      "number": 168,
+      "speaker": "JULIET",
+      "text": "Thy lips are warm."
+    },
+    {
+      "number": 168,
+      "speaker": "FIRST WATCHMAN",
+      "text": "Lead, boy: which way?"
+    },
+    {
+      "number": 169,
+      "speaker": "JULIET",
+      "text": "Yea, noise? then I’ll be brief. O happy dagger! Snatching Romeo’s dagger."
+    },
+    {
+      "number": 170,
+      "speaker": "JULIET",
+      "text": "This is thy sheath ; there rust, and let me die."
+    },
+    {
+      "number": 171,
+      "speaker": "PAGE",
+      "text": "This is the place; there, where the torch doth burn."
+    },
+    {
+      "number": 172,
+      "speaker": "FIRST WATCHMAN",
+      "text": "The ground is bloody; search about the churchyard:"
+    },
+    {
+      "number": 173,
+      "speaker": "FIRST WATCHMAN",
+      "text": "Go, some of you, whoe’er you find attach."
+    },
+    {
+      "number": 174,
+      "speaker": "FIRST WATCHMAN",
+      "text": "Pitiful sight! here lies the county slain;"
+    },
+    {
+      "number": 175,
+      "speaker": "FIRST WATCHMAN",
+      "text": "And Juliet bleeding, warm, and newly dead,"
+    },
+    {
+      "number": 176,
+      "speaker": "FIRST WATCHMAN",
+      "text": "Who here hath lain these two days buried."
+    },
+    {
+      "number": 177,
+      "speaker": "FIRST WATCHMAN",
+      "text": "Go, tell the prince: run to the Capulets:"
+    },
+    {
+      "number": 178,
+      "speaker": "FIRST WATCHMAN",
+      "text": "Raise up the Montagues: some others search:"
+    },
+    {
+      "number": 179,
+      "speaker": "FIRST WATCHMAN",
+      "text": "We see the ground whereon these woes do lie;"
+    },
+    {
+      "number": 180,
+      "speaker": "FIRST WATCHMAN",
+      "text": "But the true ground of all these piteous woes"
+    },
+    {
+      "number": 181,
+      "speaker": "FIRST WATCHMAN",
+      "text": "We cannot without circumstance descry."
+    },
+    {
+      "number": 182,
+      "speaker": "SECOND WATCHMAN",
+      "text": "Here’s Romeo’s man; we found him in the churchyard."
+    },
+    {
+      "number": 183,
+      "speaker": "FIRST WATCHMAN",
+      "text": "Hold him in safety, till the prince come hither."
+    },
+    {
+      "number": 184,
+      "speaker": "THIRD WATCHMAN",
+      "text": "Here is a friar, that trembles, sighs, and weeps:"
+    },
+    {
+      "number": 185,
+      "speaker": "THIRD WATCHMAN",
+      "text": "We took this mattock and this spade from him,"
+    },
+    {
+      "number": 186,
+      "speaker": "THIRD WATCHMAN",
+      "text": "As he was coming from this churchyard side."
+    },
+    {
+      "number": 187,
+      "speaker": "FIRST WATCHMAN",
+      "text": "A great suspicion: stay the friar too."
+    },
+    {
+      "number": 188,
+      "speaker": "PRINCE",
+      "text": "What misadventure is so early up,"
+    },
+    {
+      "number": 189,
+      "speaker": "PRINCE",
+      "text": "That calls our person from our morning’s rest?"
+    },
+    {
+      "number": 190,
+      "speaker": "CAPULET",
+      "text": "What should it be, that they so shriek abroad?"
+    },
+    {
+      "number": 191,
+      "speaker": "LADY CAPULET",
+      "text": "The people in the street cry Romeo,"
+    },
+    {
+      "number": 192,
+      "speaker": "LADY CAPULET",
+      "text": "Some Juliet, and some Paris; and all run,"
+    },
+    {
+      "number": 193,
+      "speaker": "LADY CAPULET",
+      "text": "With open outcry, toward our monument."
+    },
+    {
+      "number": 194,
+      "speaker": "PRINCE",
+      "text": "What fear is this which startles in our ears?"
+    },
+    {
+      "number": 195,
+      "speaker": "FIRST WATCHMAN",
+      "text": "Sovereign, here lies the County Paris slain;"
+    },
+    {
+      "number": 196,
+      "speaker": "FIRST WATCHMAN",
+      "text": "And Romeo dead; and Juliet, dead before,"
+    },
+    {
+      "number": 197,
+      "speaker": "FIRST WATCHMAN",
+      "text": "Warm and new kill’d."
+    },
+    {
+      "number": 198,
+      "speaker": "PRINCE",
+      "text": "Search, seek, and know how this foul murder comes."
+    },
+    {
+      "number": 199,
+      "speaker": "FIRST WATCHMAN",
+      "text": "Here is a friar, and slaughter’d Romeo’s man;"
+    },
+    {
+      "number": 200,
+      "speaker": "FIRST WATCHMAN",
+      "text": "With instruments upon them, fit to open"
+    },
+    {
+      "number": 201,
+      "speaker": "FIRST WATCHMAN",
+      "text": "These dead men’s tombs."
+    },
+    {
+      "number": 202,
+      "speaker": "CAPULET",
+      "text": "O heavens! O wife, look how our daughter bleeds!"
+    },
+    {
+      "number": 203,
+      "speaker": "CAPULET",
+      "text": "This dagger hath mista’en—for, lo, his house"
+    },
+    {
+      "number": 204,
+      "speaker": "CAPULET",
+      "text": "Is empty on the back of Montague—"
+    },
+    {
+      "number": 205,
+      "speaker": "CAPULET",
+      "text": "And it mis-sheathed in my daughter’s bosom!"
+    },
+    {
+      "number": 206,
+      "speaker": "LADY CAPULET",
+      "text": "O me! this sight of death is as a bell,"
+    },
+    {
+      "number": 207,
+      "speaker": "LADY CAPULET",
+      "text": "That warns my old age to a sepulchre."
+    },
+    {
+      "number": 208,
+      "speaker": "PRINCE",
+      "text": "Come, Montague; for thou art early up,"
+    },
+    {
+      "number": 209,
+      "speaker": "PRINCE",
+      "text": "To see thy son and heir more early down."
+    },
+    {
+      "number": 210,
+      "speaker": "MONTAGUE",
+      "text": "Alas, my liege, my wife is dead to-night;"
+    },
+    {
+      "number": 211,
+      "speaker": "MONTAGUE",
+      "text": "Grief of my son’s exile hath stopp’d her breath:"
+    },
+    {
+      "number": 212,
+      "speaker": "MONTAGUE",
+      "text": "What further woe conspires against mine age?"
+    },
+    {
+      "number": 213,
+      "speaker": "PRINCE",
+      "text": "Look, and thou shalt see."
+    },
+    {
+      "number": 214,
+      "speaker": "MONTAGUE",
+      "text": "O thou untaught! what manners is in this,"
+    },
+    {
+      "number": 215,
+      "speaker": "MONTAGUE",
+      "text": "To press before thy father to a grave?"
+    },
+    {
+      "number": 216,
+      "speaker": "PRINCE",
+      "text": "Seal up the mouth of outrage for a while,"
+    },
+    {
+      "number": 217,
+      "speaker": "PRINCE",
+      "text": "Till we can clear these ambiguities,"
+    },
+    {
+      "number": 218,
+      "speaker": "PRINCE",
+      "text": "And know their spring, their head, their true descent;"
+    },
+    {
+      "number": 219,
+      "speaker": "PRINCE",
+      "text": "And then will I be general of your woes,"
+    },
+    {
+      "number": 220,
+      "speaker": "PRINCE",
+      "text": "And lead you even to death: meantime forbear,"
+    },
+    {
+      "number": 221,
+      "speaker": "PRINCE",
+      "text": "And let mischance be slave to patience."
+    },
+    {
+      "number": 222,
+      "speaker": "PRINCE",
+      "text": "Bring forth the parties of suspicion."
+    },
+    {
+      "number": 223,
+      "speaker": "FRIAR LAURENCE",
+      "text": "I am the greatest, able to do least,"
+    },
+    {
+      "number": 224,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Yet most suspected, as the time and place"
+    },
+    {
+      "number": 225,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Doth make against me, of this direful murder;"
+    },
+    {
+      "number": 226,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And here I stand, both to impeach and purge"
+    },
+    {
+      "number": 227,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Myself condemned and myself excused."
+    },
+    {
+      "number": 228,
+      "speaker": "PRINCE",
+      "text": "Then say at once what thou dost know in this."
+    },
+    {
+      "number": 229,
+      "speaker": "FRIAR LAURENCE",
+      "text": "I will be brief, for my short date of breath"
+    },
+    {
+      "number": 230,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Is not so long as is a tedious tale."
+    },
+    {
+      "number": 231,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Romeo, there dead, was husband to that Juliet;"
+    },
+    {
+      "number": 232,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And she, there dead, that Romeo’s faithful wife:"
+    },
+    {
+      "number": 233,
+      "speaker": "FRIAR LAURENCE",
+      "text": "I married them; and their stol’n marriage-day"
+    },
+    {
+      "number": 234,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Was Tybalt’s dooms-day, whose untimely death"
+    },
+    {
+      "number": 235,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Banish’d the new-made bridegroom from this city,"
+    },
+    {
+      "number": 236,
+      "speaker": "FRIAR LAURENCE",
+      "text": "For whom, and not for Tybalt, Juliet pined."
+    },
+    {
+      "number": 237,
+      "speaker": "FRIAR LAURENCE",
+      "text": "You, to remove that siege of grief from her,"
+    },
+    {
+      "number": 238,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Betroth’d and would have married her perforce"
+    },
+    {
+      "number": 239,
+      "speaker": "FRIAR LAURENCE",
+      "text": "To County Paris: then comes she to me,"
+    },
+    {
+      "number": 240,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And, with wild looks, bid me devise some mean"
+    },
+    {
+      "number": 241,
+      "speaker": "FRIAR LAURENCE",
+      "text": "To rid her from this second marriage,"
+    },
+    {
+      "number": 242,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Or in my cell there would she kill herself."
+    },
+    {
+      "number": 243,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Then gave I her, so tutor’d by my art,"
+    },
+    {
+      "number": 244,
+      "speaker": "FRIAR LAURENCE",
+      "text": "A sleeping potion; which so took effect"
+    },
+    {
+      "number": 245,
+      "speaker": "FRIAR LAURENCE",
+      "text": "As I intended, for it wrought on her"
+    },
+    {
+      "number": 246,
+      "speaker": "FRIAR LAURENCE",
+      "text": "The form of death: meantime I writ to Romeo,"
+    },
+    {
+      "number": 247,
+      "speaker": "FRIAR LAURENCE",
+      "text": "That he should hither come as this dire night,"
+    },
+    {
+      "number": 248,
+      "speaker": "FRIAR LAURENCE",
+      "text": "To help to take her from her borrow’d grave,"
+    },
+    {
+      "number": 249,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Being the time the potion’s force should cease."
+    },
+    {
+      "number": 250,
+      "speaker": "FRIAR LAURENCE",
+      "text": "But he which bore my letter, Friar John,"
+    },
+    {
+      "number": 251,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Was stay’d by accident, and yesternight"
+    },
+    {
+      "number": 252,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Return’d my letter back. Then all alone"
+    },
+    {
+      "number": 253,
+      "speaker": "FRIAR LAURENCE",
+      "text": "At the prefixed hour of her waking,"
+    },
+    {
+      "number": 254,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Came I to take her from her kindred’s vault;"
+    },
+    {
+      "number": 255,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Meaning to keep her closely at my cell,"
+    },
+    {
+      "number": 256,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Till I conveniently could send to Romeo:"
+    },
+    {
+      "number": 257,
+      "speaker": "FRIAR LAURENCE",
+      "text": "But when I came, some minute ere the time"
+    },
+    {
+      "number": 258,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Of her awaking, here untimely lay"
+    },
+    {
+      "number": 259,
+      "speaker": "FRIAR LAURENCE",
+      "text": "The noble Paris and true Romeo dead."
+    },
+    {
+      "number": 260,
+      "speaker": "FRIAR LAURENCE",
+      "text": "She wakes; and I entreated her come forth,"
+    },
+    {
+      "number": 261,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And bear this work of heaven with patience:"
+    },
+    {
+      "number": 262,
+      "speaker": "FRIAR LAURENCE",
+      "text": "But then a noise did scare me from the tomb;"
+    },
+    {
+      "number": 263,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And she, too desperate, would not go with me,"
+    },
+    {
+      "number": 264,
+      "speaker": "FRIAR LAURENCE",
+      "text": "But, as it seems, did violence on herself."
+    },
+    {
+      "number": 265,
+      "speaker": "FRIAR LAURENCE",
+      "text": "All this I know; and to the marriage"
+    },
+    {
+      "number": 266,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Her nurse is privy: and, if aught in this"
+    },
+    {
+      "number": 267,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Miscarried by my fault, let my old life"
+    },
+    {
+      "number": 268,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Be sacrificed, some hour before his time,"
+    },
+    {
+      "number": 269,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Unto the rigour of severest law."
+    },
+    {
+      "number": 270,
+      "speaker": "PRINCE",
+      "text": "We still have known thee for a holy man."
+    },
+    {
+      "number": 271,
+      "speaker": "PRINCE",
+      "text": "Where’s Romeo’s man? what can he say in this?"
+    },
+    {
+      "number": 272,
+      "speaker": "BALTHASAR",
+      "text": "I brought my master news of Juliet’s death;"
+    },
+    {
+      "number": 273,
+      "speaker": "BALTHASAR",
+      "text": "And then in post he came from Mantua"
+    },
+    {
+      "number": 274,
+      "speaker": "BALTHASAR",
+      "text": "To this same place, to this same monument."
+    },
+    {
+      "number": 275,
+      "speaker": "BALTHASAR",
+      "text": "This letter he early bid me give his father,"
+    },
+    {
+      "number": 276,
+      "speaker": "BALTHASAR",
+      "text": "And threaten’d me with death, going in the vault,"
+    },
+    {
+      "number": 277,
+      "speaker": "BALTHASAR",
+      "text": "If I departed not and left him there."
+    },
+    {
+      "number": 278,
+      "speaker": "PRINCE",
+      "text": "Give me the letter; I will look on it."
+    },
+    {
+      "number": 279,
+      "speaker": "PRINCE",
+      "text": "Where is the county’s page, that raised the watch?"
+    },
+    {
+      "number": 280,
+      "speaker": "PRINCE",
+      "text": "Sirrah, what made your master in this place?"
+    },
+    {
+      "number": 281,
+      "speaker": "PAGE",
+      "text": "He came with flowers to strew his lady’s grave;"
+    },
+    {
+      "number": 282,
+      "speaker": "PAGE",
+      "text": "And bid me stand aloof, and so I did:"
+    },
+    {
+      "number": 283,
+      "speaker": "PAGE",
+      "text": "Anon comes one with light to ope the tomb;"
+    },
+    {
+      "number": 284,
+      "speaker": "PAGE",
+      "text": "And by and by my master drew on him;"
+    },
+    {
+      "number": 285,
+      "speaker": "PAGE",
+      "text": "And then I ran away to call the watch."
+    },
+    {
+      "number": 286,
+      "speaker": "PRINCE",
+      "text": "This letter doth make good the friar’s words,"
+    },
+    {
+      "number": 287,
+      "speaker": "PRINCE",
+      "text": "Their course of love, the tidings of her death:"
+    },
+    {
+      "number": 288,
+      "speaker": "PRINCE",
+      "text": "And here he writes that he did buy a poison"
+    },
+    {
+      "number": 289,
+      "speaker": "PRINCE",
+      "text": "Of a poor ’pothecary, and therewithal"
+    },
+    {
+      "number": 290,
+      "speaker": "PRINCE",
+      "text": "Came to this vault to die, and lie with Juliet."
+    },
+    {
+      "number": 291,
+      "speaker": "PRINCE",
+      "text": "Where be these enemies? Capulet! Montague!"
+    },
+    {
+      "number": 292,
+      "speaker": "PRINCE",
+      "text": "See, what a scourge is laid upon your hate,"
+    },
+    {
+      "number": 293,
+      "speaker": "PRINCE",
+      "text": "That heaven finds means to kill your joys with love."
+    },
+    {
+      "number": 294,
+      "speaker": "PRINCE",
+      "text": "And I for winking at your discords too"
+    },
+    {
+      "number": 295,
+      "speaker": "PRINCE",
+      "text": "Have lost a brace of kinsmen: all are punish’d."
+    },
+    {
+      "number": 296,
+      "speaker": "CAPULET",
+      "text": "O brother Montague, give me thy hand:"
+    },
+    {
+      "number": 297,
+      "speaker": "CAPULET",
+      "text": "This is my daughter’s jointure, for no more"
+    },
+    {
+      "number": 298,
+      "speaker": "CAPULET",
+      "text": "Can I demand."
+    },
+    {
+      "number": 298,
+      "speaker": "MONTAGUE",
+      "text": "But I can give thee more:"
+    },
+    {
+      "number": 299,
+      "speaker": "MONTAGUE",
+      "text": "For I will raise her statue in pure gold;"
+    },
+    {
+      "number": 300,
+      "speaker": "MONTAGUE",
+      "text": "That while Verona by that name is known,"
+    },
+    {
+      "number": 301,
+      "speaker": "MONTAGUE",
+      "text": "There shall no figure at such rate be set"
+    },
+    {
+      "number": 302,
+      "speaker": "MONTAGUE",
+      "text": "As that of true and faithful Juliet."
+    },
+    {
+      "number": 303,
+      "speaker": "CAPULET",
+      "text": "As rich shall Romeo’s by his lady’s lie;"
+    },
+    {
+      "number": 304,
+      "speaker": "CAPULET",
+      "text": "Poor sacrifices of our enmity!"
+    },
+    {
+      "number": 305,
+      "speaker": "PRINCE",
+      "text": "A glooming peace this morning with it brings;"
+    },
+    {
+      "number": 306,
+      "speaker": "PRINCE",
+      "text": "The sun, for sorrow, will not show his head:"
+    },
+    {
+      "number": 307,
+      "speaker": "PRINCE",
+      "text": "Go hence, to have more talk of these sad things;"
+    },
+    {
+      "number": 308,
+      "speaker": "PRINCE",
+      "text": "Some shall be pardon’d, and some punished:"
+    },
+    {
+      "number": 309,
+      "speaker": "PRINCE",
+      "text": "For never was a story of more woe"
+    },
+    {
+      "number": 310,
+      "speaker": "PRINCE",
+      "text": "Than this of Juliet and her Romeo."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Paris, and his Page bearing flowers and a torch."
+    },
+    {
+      "after_line": 10,
+      "text": "Aside."
+    },
+    {
+      "after_line": 11,
+      "text": "Retires."
+    },
+    {
+      "after_line": 21,
+      "text": "Retires."
+    },
+    {
+      "after_line": 21,
+      "text": "Enter Romeo and Balthasar, with a torch, mattock, etc."
+    },
+    {
+      "after_line": 43,
+      "text": "Aside."
+    },
+    {
+      "after_line": 44,
+      "text": "Retires."
+    },
+    {
+      "after_line": 71,
+      "text": "Exit."
+    },
+    {
+      "after_line": 72,
+      "text": "Falls."
+    },
+    {
+      "after_line": 73,
+      "text": "Dies."
+    },
+    {
+      "after_line": 120,
+      "text": "Dies."
+    },
+    {
+      "after_line": 120,
+      "text": "Enter, at the other end of the churchyard, Friar Laurence, with a lantern, crow, and spade."
+    },
+    {
+      "after_line": 140,
+      "text": "Advances."
+    },
+    {
+      "after_line": 161,
+      "text": "Exit Friar Laurence."
+    },
+    {
+      "after_line": 167,
+      "text": "Kisses him."
+    },
+    {
+      "after_line": 168,
+      "text": "Within."
+    },
+    {
+      "after_line": 170,
+      "text": "Stabs herself"
+    },
+    {
+      "after_line": 170,
+      "text": "Falls on Romeo’s body, and dies."
+    },
+    {
+      "after_line": 170,
+      "text": "Enter Watch, with the Page of Paris."
+    },
+    {
+      "after_line": 181,
+      "text": "Reenter some of the Watch, with Balthasar."
+    },
+    {
+      "after_line": 183,
+      "text": "Reenter others of the Watch, with Friar Laurence."
+    },
+    {
+      "after_line": 187,
+      "text": "Enter the Prince and Attendants."
+    },
+    {
+      "after_line": 189,
+      "text": "Enter Capulet, Lady Capulet, and others."
+    },
+    {
+      "after_line": 207,
+      "text": "Enter Montague and others."
+    },
+    {
+      "after_line": 310,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss1",
+      "line": 1,
+      "phrase": "torch",
+      "definition": "Paris's light for night-mourning"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss2",
+      "line": 3,
+      "phrase": "yew-trees",
+      "definition": "traditionally planted in graveyards; yew is a symbol of death"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss3",
+      "line": 4,
+      "phrase": "hollow ground",
+      "definition": "the graveyard's loose soil"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss4",
+      "line": 12,
+      "phrase": "bridal bed I strew",
+      "definition": "Paris's elegy — scattering flowers on the grave of his intended bride"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss5",
+      "line": 13,
+      "phrase": "canopy",
+      "definition": "cover; tent over the bed"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss6",
+      "line": 16,
+      "phrase": "obsequies",
+      "definition": "funeral rites"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss7",
+      "line": 22,
+      "phrase": "mattock",
+      "definition": "digging tool, like a pickaxe"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss8",
+      "line": 22,
+      "phrase": "wrenching iron",
+      "definition": "crowbar"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss9",
+      "line": 32,
+      "phrase": "dear employment",
+      "definition": "precious task"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss10",
+      "line": 33,
+      "phrase": "jealous",
+      "definition": "suspicious"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss11",
+      "line": 38,
+      "phrase": "inexorable",
+      "definition": "unyielding"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss12",
+      "line": 37,
+      "phrase": "savage-wild",
+      "definition": "savagely wild"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss13",
+      "line": 36,
+      "phrase": "hungry tigers",
+      "definition": "Romeo imagines himself worse than natural beasts — despair speaking"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss14",
+      "line": 45,
+      "phrase": "maw",
+      "definition": "belly; mouth"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss15",
+      "line": 45,
+      "phrase": "detestable",
+      "definition": "loathsome — of the tomb as monster"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss16",
+      "line": 45,
+      "phrase": "womb of death",
+      "definition": "the tomb as both grave and womb — paradoxical"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss17",
+      "line": 49,
+      "phrase": "haughty Montague",
+      "definition": "proud Montague — Paris's bitter epithet for Romeo"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss18",
+      "line": 60,
+      "phrase": "think upon these gone",
+      "definition": "consider the dead inside"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss19",
+      "line": 72,
+      "phrase": "slain",
+      "definition": "Paris dies by Romeo's sword — the fourth death of the play"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss20",
+      "line": 73,
+      "phrase": "lay me with Juliet",
+      "definition": "Paris's dying wish — to lie with the woman he loved"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss21",
+      "line": 75,
+      "phrase": "Mercutio’s kinsman",
+      "definition": "Paris is kin to the dead Mercutio — Romeo recognizes him now, too late"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss22",
+      "line": 75,
+      "phrase": "noble county Paris",
+      "definition": "Count Paris — his title"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss23",
+      "line": 82,
+      "phrase": "writ with me in sour misfortune’s book",
+      "definition": "a name written in the ledger of disaster alongside my own"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss24",
+      "line": 83,
+      "phrase": "triumphant grave",
+      "definition": "a grave of victory — Romeo's paradoxical epitaph for Juliet's tomb"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss25",
+      "line": 84,
+      "phrase": "lantern",
+      "definition": "a small glass-sided structure at the top of a tomb, letting in light"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss26",
+      "line": 86,
+      "phrase": "feasting presence",
+      "definition": "a presence-chamber for ceremonial feasting — Romeo transfigures the tomb"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss27",
+      "line": 89,
+      "phrase": "keepers",
+      "definition": "those who watch over a dying man"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss28",
+      "line": 90,
+      "phrase": "lightning before death",
+      "definition": "a sudden brightness said to visit the dying — the play's 'fire and powder'"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss29",
+      "line": 94,
+      "phrase": "beauty’s ensign",
+      "definition": "beauty's banner — the redness of life, still on Juliet's cheek"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss30",
+      "line": 95,
+      "phrase": "crimson in thy lips and in thy cheeks",
+      "definition": "Romeo notes (without understanding) the blood still in Juliet — she is alive"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss31",
+      "line": 97,
+      "phrase": "Tybalt, liest thou there in thy bloody sheet",
+      "definition": "Tybalt's corpse shares the tomb — Romeo apologizes to him"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss32",
+      "line": 103,
+      "phrase": "unsubstantial death is amorous",
+      "definition": "Death the lover; personified as Juliet's rival — a classical trope"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss33",
+      "line": 105,
+      "phrase": "paramour",
+      "definition": "illicit lover — Death has taken Juliet as his mistress"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss34",
+      "line": 110,
+      "phrase": "set up my everlasting rest",
+      "definition": "settle down forever — a phrase from the card-game primero meaning 'stake everything'"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss35",
+      "line": 111,
+      "phrase": "shake the yoke of inauspicious stars",
+      "definition": "Romeo finally throws off fate by suicide — an inversion of the prologue's 'star-cross'd'"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss36",
+      "line": 115,
+      "phrase": "dateless bargain to engrossing death",
+      "definition": "an eternal contract with all-consuming death"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss37",
+      "line": 116,
+      "phrase": "conduct",
+      "definition": "guide — the poison as pilot"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss38",
+      "line": 117,
+      "phrase": "desperate pilot",
+      "definition": "reckless navigator — Romeo's soul"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss39",
+      "line": 118,
+      "phrase": "sea-sick weary bark",
+      "definition": "storm-sick weary ship — Romeo's body"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss40",
+      "line": 119,
+      "phrase": "true apothecary",
+      "definition": "the apothecary did sell genuine poison — Romeo's dying tribute"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss41",
+      "line": 120,
+      "phrase": "Thus with a kiss I die",
+      "definition": "Romeo's final line — the kiss that began their sonnet in 1.5 is his farewell"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss42",
+      "line": 121,
+      "phrase": "Saint Francis",
+      "definition": "may Saint Francis help me — the Friar's order is Franciscan"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss43",
+      "line": 146,
+      "phrase": "unkind hour",
+      "definition": "unfriendly moment"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss44",
+      "line": 149,
+      "phrase": "comfortable friar",
+      "definition": "friar who brings comfort"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss45",
+      "line": 153,
+      "phrase": "contagion",
+      "definition": "pollution; deadly air of the tomb"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss46",
+      "line": 163,
+      "phrase": "timeless end",
+      "definition": "untimely death — both unexpected and beyond time"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss47",
+      "line": 164,
+      "phrase": "churl",
+      "definition": "miser; Juliet's playful-bitter name for Romeo who drank all the poison"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss48",
+      "line": 165,
+      "phrase": "to help me after",
+      "definition": "to help me die after you"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss49",
+      "line": 166,
+      "phrase": "haply",
+      "definition": "perhaps; by chance"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss50",
+      "line": 167,
+      "phrase": "restorative",
+      "definition": "medicine — Juliet calls Romeo's mouth a cure"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss51",
+      "line": 169,
+      "phrase": "happy dagger",
+      "definition": "lucky dagger — Juliet welcomes death as rescue"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss52",
+      "line": 205,
+      "phrase": "sheath",
+      "definition": "Juliet's body as the dagger's sheath — the play's final, devastating image"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss53",
+      "line": 170,
+      "phrase": "rust, and let me die",
+      "definition": "corrode within me as I die — a body-as-steel image"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss54",
+      "line": 173,
+      "phrase": "attach",
+      "definition": "arrest"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss55",
+      "line": 222,
+      "phrase": "parties of suspicion",
+      "definition": "those suspected"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss56",
+      "line": 229,
+      "phrase": "date of breath",
+      "definition": "length of life"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss57",
+      "line": 233,
+      "phrase": "stol’n marriage",
+      "definition": "clandestine wedding"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss58",
+      "line": 253,
+      "phrase": "prefixed hour",
+      "definition": "appointed time"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss59",
+      "line": 266,
+      "phrase": "privy",
+      "definition": "an accomplice; in on the secret"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss60",
+      "line": 225,
+      "phrase": "direful",
+      "definition": "dreadful"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss61",
+      "line": 305,
+      "phrase": "glooming peace",
+      "definition": "a gloomy reconciliation — the Prince's closing formulation"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_gloss62",
+      "line": 309,
+      "phrase": "never was a story of more woe",
+      "definition": "the play's final couplet — a heroic couplet that formally closes the tragedy"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act5_scene3_ann1",
+      "line_start": 1,
+      "line_end": 136,
+      "citation_display": "Romeo and Juliet 5.3.1–136",
+      "category": "structural",
+      "title": "The pileup — why Paris, why the Friar's late arrival",
+      "body": "The tomb scene is a compression — three bodies in forty minutes of stage time. Paris dies first, killed by Romeo who does not recognize him. Romeo dies second, from the apothecary's poison. Juliet dies third, by her husband's dagger, after the Friar arrives moments too late. The critical question is: why does Shakespeare bring Paris back to the tomb? The sources don't require it (in Arthur Brooke's poem, Paris does not visit the grave). Shakespeare's addition lets the scene enact the play's pattern of good intentions producing catastrophic outcomes: Paris comes to mourn; Romeo thinks him an enemy; a corpse is added to the tomb unnecessarily. The Friar's late arrival is a structural device — his explanatory speech to the Watch in lines 229 onward gives the Prince (and audience) the full chronology, confirming that the tragedy is complete and unreversable. The sources require this delivery of truth after the deaths; Shakespeare gives it to the character morally most implicated.",
+      "sources": [
+        "Arthur Brooke, The Tragicall Historye of Romeus and Juliet (1562)",
+        "Jill L. Levenson, The Oxford Shakespeare: Romeo and Juliet (2000)",
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)"
+      ]
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_ann2",
+      "line_start": 97,
+      "line_end": 136,
+      "citation_display": "Romeo and Juliet 5.3.97–136",
+      "category": "close_reading",
+      "title": "Romeo's last speech — 'Thus with a kiss I die'",
+      "body": "Romeo's forty-line speech over Juliet's 'corpse' is the play's most formally wrought dying aria. He catalogues her unchanged beauty ('beauty's ensign yet / Is crimson in thy lips and in thy cheeks'), and the hint of crimson is what the audience knows means life — but Romeo reads it as the persistence of death's beauty. He apologizes to Tybalt, now a body sharing the vault. He invokes 'unsubstantial Death' as Juliet's 'paramour' — the traditional figure of Death the Lover, classical and medieval at once. Then 'Here's to my love! O true apothecary! / Thy drugs are quick. Thus with a kiss I die.' The kiss is the same kiss that began their sonnet in 1.5 — pilgrim's absolution now become suicide. The sonnet-world that opened the play is sealed here.",
+      "sources": [
+        "Frank Kermode, Shakespeare's Language (2000)",
+        "Stephen Booth, Shakespeare's Sonnets (1977)"
+      ]
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_ann3",
+      "line_start": 160,
+      "line_end": 211,
+      "citation_display": "Romeo and Juliet 5.3.160–211",
+      "category": "close_reading",
+      "title": "Juliet's wake and suicide — 'happy dagger'",
+      "body": "Juliet wakes to find the Friar bending over her, Romeo's body beside her, the poison vial empty: 'O churl! drunk all, and left no friendly drop / To help me after!' The accusation is playful-tender — the half-joke of a spouse robbed of her share. She then kisses Romeo: 'I will kiss thy lips; / Haply some poison yet doth hang on them.' When the poison fails her, she takes his dagger: 'O happy dagger! / This is thy sheath: there rust, and let me die.' The dagger's sheath is her body — an image that fuses the sexual and the funerary, the wedding bed and the grave. Juliet's death is the fourth and most absolute of the play's four major deaths (Mercutio, Tybalt, Paris, Romeo), and its visual vocabulary is Shakespeare's most compressed image of love and death as inseparable.",
+      "sources": [
+        "Coppélia Kahn, Man's Estate (1981)",
+        "Carol Rutter, Enter the Body (2001)"
+      ]
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_ann4",
+      "line_start": 300,
+      "line_end": 316,
+      "citation_display": "Romeo and Juliet 5.3.300–316",
+      "category": "structural",
+      "title": "The Prince's closing couplets — rhyme as closure",
+      "body": "The Prince closes the play in rhyming couplets rather than blank verse. 'A glooming peace this morning with it brings; / The sun, for sorrow, will not show his head: / Go hence, to have more talk of these sad things; / Some shall be pardon'd, and some punished: / For never was a story of more woe / Than this of Juliet and her Romeo.' The choice of couplets is deliberate — couplet closure is the sonnet's own technique, and the play that opened with a sonnet now ends with couplets that formally echo a sonnet's sestet. The famous final line ('For never was a story of more woe...') turns the proper names into the rhyme-word, making the tragedy eponymous by the closing syllable. The form itself performs the final act of commemoration: the lovers' story is inscribed, through rhyme, into collective memory.",
+      "sources": [
+        "Jill L. Levenson, The Oxford Shakespeare: Romeo and Juliet (2000)",
+        "Frank Kermode, Shakespeare's Language (2000)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act5_scene3_q1",
+      "kind": "structural",
+      "prompt": "Why is Paris's death in the tomb a notable choice by Shakespeare?",
+      "options": [
+        "It's a historical record of Paris's real death",
+        "Shakespeare added Paris's tomb-visit to his source — letting the scene embody the play's pattern of good intentions (Paris's mourning) producing catastrophe (Romeo kills him without recognizing him)",
+        "It was required by Elizabethan stage conventions",
+        "The actor had no other scenes"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 54,
+      "anchor_line_end": 87
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_q2",
+      "kind": "close_reading",
+      "prompt": "What does Romeo note about Juliet's appearance in the tomb — which the audience understands as dramatic irony?",
+      "options": [
+        "That she is obviously alive",
+        "That 'beauty's ensign' is still 'crimson in thy lips' — the audience knows this crimson is life, while Romeo reads it as beauty persisting in death",
+        "That she looks unlike herself",
+        "Her clothes are dishevelled"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 111,
+      "anchor_line_end": 116
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_q3",
+      "kind": "theme",
+      "prompt": "Juliet calls Romeo 'O churl! drunk all, and left no friendly drop'. The tone is —",
+      "options": [
+        "Straight fury",
+        "Half-playful, half-desolate — the tenderness of a spouse cheated of her share, inflected by despair",
+        "Mockery",
+        "Indifference"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 163,
+      "anchor_line_end": 166
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_q4",
+      "kind": "close_reading",
+      "prompt": "Juliet's 'O happy dagger! / This is thy sheath: there rust, and let me die' compresses —",
+      "options": [
+        "A wartime allusion",
+        "A sexual-funerary image — body as sheath, dagger's entry fusing wedding-bed and grave into one image",
+        "A religious oath",
+        "A joke about ironmongery"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 205,
+      "anchor_line_end": 207
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_q5",
+      "kind": "structural",
+      "prompt": "Why does the Prince end the play in rhymed couplets rather than blank verse?",
+      "options": [
+        "Shakespeare ran out of blank verse material",
+        "Couplets formally echo the sonnet form that opened the play, commemorating the story by enclosing it in rhyme — 'more woe / Romeo' is the play's epitaph by rhyme-syllable",
+        "Elizabethan law required couplets at the end of plays",
+        "It is an editorial addition"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 300,
+      "anchor_line_end": 316
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene3_q6",
+      "kind": "theme",
+      "prompt": "The Prince says 'Some shall be pardon'd, and some punished.' This acknowledges —",
+      "options": [
+        "That the feud is now over without consequence",
+        "That justice remains imperfect — not all wrongs can be remedied, and the living must still be sorted out; but the cost is the children",
+        "That he intends to execute the Friar",
+        "That the Nurse will be jailed"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 307,
+      "anchor_line_end": 312
+    }
+  ]
+}

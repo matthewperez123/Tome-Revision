@@ -1,0 +1,89 @@
+{
+  "section_id": "hamlet_act2_scene2",
+  "trials": [
+    {
+      "kind": "comprehension",
+      "prompt": "Why do the King and Queen summon Rosencrantz and Guildenstern?",
+      "options": [
+        "To serve as witnesses at Hamlet's trial.",
+        "To befriend Hamlet and discover the cause of his madness.",
+        "To deliver a diplomatic letter to Wittenberg.",
+        "To serve as guards during the ambassadors' visit."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 1,
+      "anchor_line_end": 40
+    },
+    {
+      "kind": "inference",
+      "prompt": "When Polonius says 'brevity is the soul of wit,' what is the dramatic irony?",
+      "options": [
+        "He is speaking Latin, though the audience hears English.",
+        "He delivers the maxim in the most long-winded speech in the play.",
+        "He is quoting Hamlet's private letter without permission.",
+        "He is teaching Ophelia how to speak concisely to the King."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 88,
+      "anchor_line_end": 110
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "How does Hamlet's speech 'What a piece of work is a man' conclude?",
+      "options": [
+        "In an ecstatic affirmation of human nobility.",
+        "By collapsing into the question 'what is this quintessence of dust?' — undercutting the praise.",
+        "With a prayer that God restore Denmark's peace.",
+        "With a vow to kill Claudius before nightfall."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 264,
+      "anchor_line_end": 270
+    },
+    {
+      "kind": "theme",
+      "prompt": "What troubles Hamlet about the player's speech on Hecuba?",
+      "options": [
+        "That the actor has misquoted the Aeneid.",
+        "That a hired player can summon real tears for a fiction, while he has summoned none for his real father's murder.",
+        "That the speech contains unflattering references to Claudius.",
+        "That the player refuses to join Hamlet's plot against the King."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 496,
+      "anchor_line_end": 520
+    },
+    {
+      "kind": "comprehension",
+      "prompt": "What concrete plan does Hamlet form by the end of the scene?",
+      "options": [
+        "To stab Claudius at the next banquet.",
+        "To stage a play that re-enacts his father's murder and observe Claudius's reaction.",
+        "To flee to England with Horatio.",
+        "To confront Gertrude in her bedchamber."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 540,
+      "anchor_line_end": 554
+    },
+    {
+      "kind": "inference",
+      "prompt": "Why does Hamlet admit he must first test the ghost's testimony through the play?",
+      "options": [
+        "Because Horatio demanded evidence before joining the plot.",
+        "Because the ghost 'may be the devil' who 'hath power to assume a pleasing shape' to damn him.",
+        "Because Claudius has sworn an oath of innocence in public.",
+        "Because the Queen has forbidden him to act without proof."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 545,
+      "anchor_line_end": 550
+    }
+  ]
+}

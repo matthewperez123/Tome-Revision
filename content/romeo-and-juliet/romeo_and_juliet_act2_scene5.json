@@ -1,0 +1,521 @@
+{
+  "section_id": "romeo_and_juliet_act2_scene5",
+  "work_id": "romeo-and-juliet",
+  "sequence": 12,
+  "act": 2,
+  "scene": 5,
+  "kind": "scene",
+  "scene_title": "Capulet's orchard",
+  "line_count": 76,
+  "word_count": 654,
+  "est_read_minutes": 3,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "JULIET",
+      "text": "The clock struck nine when I did send the nurse;"
+    },
+    {
+      "number": 2,
+      "speaker": "JULIET",
+      "text": "In half an hour she promised to return."
+    },
+    {
+      "number": 3,
+      "speaker": "JULIET",
+      "text": "Perchance she cannot meet him: that’s not so."
+    },
+    {
+      "number": 4,
+      "speaker": "JULIET",
+      "text": "O, she is lame! love’s heralds should be thoughts,"
+    },
+    {
+      "number": 5,
+      "speaker": "JULIET",
+      "text": "Which ten times faster glide than the sun’s beams,"
+    },
+    {
+      "number": 6,
+      "speaker": "JULIET",
+      "text": "Driving back shadows over louring hills:"
+    },
+    {
+      "number": 7,
+      "speaker": "JULIET",
+      "text": "Therefore do nimble-pinion’d doves draw love,"
+    },
+    {
+      "number": 8,
+      "speaker": "JULIET",
+      "text": "And therefore hath the wind-swift Cupid wings."
+    },
+    {
+      "number": 9,
+      "speaker": "JULIET",
+      "text": "Now is the sun upon the highmost hill"
+    },
+    {
+      "number": 10,
+      "speaker": "JULIET",
+      "text": "Of this day’s journey, and from nine till twelve"
+    },
+    {
+      "number": 11,
+      "speaker": "JULIET",
+      "text": "Is three long hours, yet she is not come."
+    },
+    {
+      "number": 12,
+      "speaker": "JULIET",
+      "text": "Had she affections and warm youthful blood,"
+    },
+    {
+      "number": 13,
+      "speaker": "JULIET",
+      "text": "She would be as swift in motion as a ball;"
+    },
+    {
+      "number": 14,
+      "speaker": "JULIET",
+      "text": "My words would bandy her to my sweet love,"
+    },
+    {
+      "number": 15,
+      "speaker": "JULIET",
+      "text": "And his to me:"
+    },
+    {
+      "number": 16,
+      "speaker": "JULIET",
+      "text": "But old folks, many feign as they were dead;"
+    },
+    {
+      "number": 17,
+      "speaker": "JULIET",
+      "text": "Unwieldy, slow, heavy and pale as lead."
+    },
+    {
+      "number": 18,
+      "speaker": "JULIET",
+      "text": "O God, she comes!"
+    },
+    {
+      "number": 18,
+      "speaker": "NURSE",
+      "text": "Peter, stay at the gate."
+    },
+    {
+      "number": 19,
+      "speaker": "JULIET",
+      "text": "Now, good sweet nurse—O Lord, why look’st thou sad?"
+    },
+    {
+      "number": 20,
+      "speaker": "JULIET",
+      "text": "Though news be sad, yet tell them merrily;"
+    },
+    {
+      "number": 21,
+      "speaker": "JULIET",
+      "text": "If good, thou shamest the music of sweet news"
+    },
+    {
+      "number": 22,
+      "speaker": "JULIET",
+      "text": "By playing it to me with so sour a face."
+    },
+    {
+      "number": 23,
+      "speaker": "NURSE",
+      "text": "I am a-weary, give me leave awhile:"
+    },
+    {
+      "number": 24,
+      "speaker": "NURSE",
+      "text": "Fie, how my bones ache! what a jaunt have I had!"
+    },
+    {
+      "number": 25,
+      "speaker": "JULIET",
+      "text": "I would thou hadst my bones, and I thy news."
+    },
+    {
+      "number": 26,
+      "speaker": "JULIET",
+      "text": "Nay, come, I pray thee, speak; good, good nurse, speak."
+    },
+    {
+      "number": 27,
+      "speaker": "NURSE",
+      "text": "Jesu, what haste? can you not stay awhile?"
+    },
+    {
+      "number": 28,
+      "speaker": "NURSE",
+      "text": "Do you not see that I am out of breath?"
+    },
+    {
+      "number": 29,
+      "speaker": "JULIET",
+      "text": "How art thou out of breath, when thou hast breath"
+    },
+    {
+      "number": 30,
+      "speaker": "JULIET",
+      "text": "To say to me that thou art out of breath?"
+    },
+    {
+      "number": 31,
+      "speaker": "JULIET",
+      "text": "The excuse that thou dost make in this delay"
+    },
+    {
+      "number": 32,
+      "speaker": "JULIET",
+      "text": "Is longer than the tale thou dost excuse."
+    },
+    {
+      "number": 33,
+      "speaker": "JULIET",
+      "text": "Is thy news good, or bad? answer to that;"
+    },
+    {
+      "number": 34,
+      "speaker": "JULIET",
+      "text": "Say either, and I’ll stay the circumstance:"
+    },
+    {
+      "number": 35,
+      "speaker": "JULIET",
+      "text": "Let me be satisfied, is’t good or bad?"
+    },
+    {
+      "number": 36,
+      "speaker": "NURSE",
+      "text": "Well, you have made a simple choice; you know not how to"
+    },
+    {
+      "number": 37,
+      "speaker": "NURSE",
+      "text": "choose a man: Romeo! no, not he; though his face be better"
+    },
+    {
+      "number": 38,
+      "speaker": "NURSE",
+      "text": "than any man’s, yet his leg excels all men’s; and for a"
+    },
+    {
+      "number": 39,
+      "speaker": "NURSE",
+      "text": "hand, and a foot, and a body, though they be not to"
+    },
+    {
+      "number": 40,
+      "speaker": "NURSE",
+      "text": "be talked on, yet they are past compare: he is not the"
+    },
+    {
+      "number": 41,
+      "speaker": "NURSE",
+      "text": "flower of courtesy, but, I’ll warrant him, as gentle as a lamb."
+    },
+    {
+      "number": 42,
+      "speaker": "NURSE",
+      "text": "Go thy ways, wench; serve God. What, have you dined at home?"
+    },
+    {
+      "number": 43,
+      "speaker": "JULIET",
+      "text": "No, no: but all this did I know before."
+    },
+    {
+      "number": 44,
+      "speaker": "JULIET",
+      "text": "What says he of our marriage? what of that?"
+    },
+    {
+      "number": 45,
+      "speaker": "NURSE",
+      "text": "Lord, how my head aches! what a head have I!"
+    },
+    {
+      "number": 46,
+      "speaker": "NURSE",
+      "text": "It beats as it would fall in twenty pieces."
+    },
+    {
+      "number": 47,
+      "speaker": "NURSE",
+      "text": "My back o’ t’other side—O, my back, my back!"
+    },
+    {
+      "number": 48,
+      "speaker": "NURSE",
+      "text": "Beshrew your heart for sending me about,"
+    },
+    {
+      "number": 49,
+      "speaker": "NURSE",
+      "text": "To catch my death with jaunting up and down!"
+    },
+    {
+      "number": 50,
+      "speaker": "JULIET",
+      "text": "I’ faith, I am sorry that thou art not well."
+    },
+    {
+      "number": 51,
+      "speaker": "JULIET",
+      "text": "Sweet, sweet, sweet nurse, tell me, what says my love?"
+    },
+    {
+      "number": 52,
+      "speaker": "NURSE",
+      "text": "Your love says, like an honest gentleman, and a courteous, and a"
+    },
+    {
+      "number": 53,
+      "speaker": "NURSE",
+      "text": "kind, and a handsome, and, I warrant, a virtuous—Where is your mother?"
+    },
+    {
+      "number": 54,
+      "speaker": "JULIET",
+      "text": "Where is my mother! why, she is within;"
+    },
+    {
+      "number": 55,
+      "speaker": "JULIET",
+      "text": "Where should she be? How oddly thou repliest!"
+    },
+    {
+      "number": 56,
+      "speaker": "JULIET",
+      "text": "“Your love says, like an honest gentleman,"
+    },
+    {
+      "number": 57,
+      "speaker": "JULIET",
+      "text": "Where is your mother?”"
+    },
+    {
+      "number": 57,
+      "speaker": "NURSE",
+      "text": "O God’s lady dear!"
+    },
+    {
+      "number": 58,
+      "speaker": "NURSE",
+      "text": "Are you so hot? marry, come up, I trow;"
+    },
+    {
+      "number": 59,
+      "speaker": "NURSE",
+      "text": "Is this the poultice for my aching bones?"
+    },
+    {
+      "number": 60,
+      "speaker": "NURSE",
+      "text": "Henceforward do your messages yourself."
+    },
+    {
+      "number": 61,
+      "speaker": "JULIET",
+      "text": "Here’s such a coil! come, what says Romeo?"
+    },
+    {
+      "number": 62,
+      "speaker": "NURSE",
+      "text": "Have you got leave to go to shrift to-day?"
+    },
+    {
+      "number": 63,
+      "speaker": "JULIET",
+      "text": "I have."
+    },
+    {
+      "number": 64,
+      "speaker": "NURSE",
+      "text": "Then hie you hence to Friar Laurence’ cell;"
+    },
+    {
+      "number": 65,
+      "speaker": "NURSE",
+      "text": "There stays a husband to make you a wife:"
+    },
+    {
+      "number": 66,
+      "speaker": "NURSE",
+      "text": "Now comes the wanton blood up in your cheeks,"
+    },
+    {
+      "number": 67,
+      "speaker": "NURSE",
+      "text": "They’ll be in scarlet straight at any news."
+    },
+    {
+      "number": 68,
+      "speaker": "NURSE",
+      "text": "Hie you to church; I must another way,"
+    },
+    {
+      "number": 69,
+      "speaker": "NURSE",
+      "text": "To fetch a ladder, by the which your love"
+    },
+    {
+      "number": 70,
+      "speaker": "NURSE",
+      "text": "Must climb a bird’s nest soon when it is dark:"
+    },
+    {
+      "number": 71,
+      "speaker": "NURSE",
+      "text": "I am the drudge and toil in your delight,"
+    },
+    {
+      "number": 72,
+      "speaker": "NURSE",
+      "text": "But you shall bear the burden soon at night."
+    },
+    {
+      "number": 73,
+      "speaker": "NURSE",
+      "text": "Go; I’ll to dinner; hie you to the cell."
+    },
+    {
+      "number": 74,
+      "speaker": "JULIET",
+      "text": "Hie to high fortune! Honest nurse, farewell."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Juliet."
+    },
+    {
+      "after_line": 18,
+      "text": "Enter Nurse and Peter."
+    },
+    {
+      "after_line": 18,
+      "text": "O honey nurse, what news? Hast thou met with him? Send thy man away."
+    },
+    {
+      "after_line": 18,
+      "text": "Exit Peter."
+    },
+    {
+      "after_line": 74,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act2_scene5_gloss1",
+      "line": 7,
+      "phrase": "nimble-pinion’d doves",
+      "definition": "swift-winged doves — Venus's team"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene5_gloss2",
+      "line": 4,
+      "phrase": "Love",
+      "definition": "Cupid, son of Venus"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene5_gloss3",
+      "line": 9,
+      "phrase": "highmost hill",
+      "definition": "noon position — the sun at its highest"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene5_gloss4",
+      "line": 14,
+      "phrase": "bandy her",
+      "definition": "toss her like a tennis ball back to my beloved"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene5_gloss5",
+      "line": 17,
+      "phrase": "unwieldy",
+      "definition": "slow; cumbersome — Juliet impatiently describes old age"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene5_gloss6",
+      "line": 17,
+      "phrase": "pale as lead",
+      "definition": "leaden, bloodless — the color of age and death"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene5_gloss7",
+      "line": 66,
+      "phrase": "wanton",
+      "definition": "unruly; playful"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene5_gloss8",
+      "line": 34,
+      "phrase": "stay the circumstance",
+      "definition": "leave off the detail; get to the point"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene5_gloss9",
+      "line": 48,
+      "phrase": "beshrew your heart",
+      "definition": "curse your heart — mild exclamation"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene5_gloss10",
+      "line": 64,
+      "phrase": "hie you hence",
+      "definition": "hurry to Friar Laurence's chamber"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene5_gloss11",
+      "line": 66,
+      "phrase": "wanton blood",
+      "definition": "hot, unruly blood — sexual desire"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene5_gloss12",
+      "line": 71,
+      "phrase": "drudge",
+      "definition": "laborer — the Nurse calls herself Juliet's servant"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act2_scene5_ann1",
+      "line_start": 1,
+      "line_end": 15,
+      "citation_display": "Romeo and Juliet 2.5.1–15",
+      "category": "close_reading",
+      "title": "Juliet's impatience — comic timing as character",
+      "body": "Juliet's twelve-line soliloquy waiting for the Nurse is one of Shakespeare's loveliest exercises in comic timing through verse. She counts the hours, imagines the Nurse moving 'Unwieldy, slow, heavy, and pale as lead,' invokes the nimble doves of Venus. The scene is funny because the tempo of her language ('perchance she cannot meet him; that's not so') outruns her own reasoning. Yet the comedy is foreboding: Juliet's speed is exactly what the Friar has just warned against, and her wish ('Love's heralds should be thoughts, / Which ten times faster glide than the sun's beams') is the dramatic pressure that makes events outrun wisdom.",
+      "sources": [
+        "Russ McDonald, Shakespeare and the Arts of Language (2001)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act2_scene5_q1",
+      "kind": "comprehension",
+      "prompt": "Why is Juliet so impatient in this scene?",
+      "options": [
+        "She is hungry",
+        "The Nurse is late returning with news from Romeo about the wedding plan",
+        "She is angry with her father",
+        "She fears for Tybalt"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 1,
+      "anchor_line_end": 15
+    }
+  ]
+}

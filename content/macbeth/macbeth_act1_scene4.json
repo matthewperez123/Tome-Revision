@@ -1,0 +1,456 @@
+{
+  "section_id": "macbeth_act1_scene4",
+  "work_id": "macbeth",
+  "sequence": 4,
+  "act": 1,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "Forres. The palace",
+  "line_count": 57,
+  "word_count": 406,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "DUNCAN",
+      "text": "Is execution done on Cawdor? Are not"
+    },
+    {
+      "number": 2,
+      "speaker": "DUNCAN",
+      "text": "Those in commission yet return’d?"
+    },
+    {
+      "number": 2,
+      "speaker": "MALCOLM",
+      "text": "My liege,"
+    },
+    {
+      "number": 3,
+      "speaker": "MALCOLM",
+      "text": "They are not yet come back. But I have spoke"
+    },
+    {
+      "number": 4,
+      "speaker": "MALCOLM",
+      "text": "With one that saw him die: who did report"
+    },
+    {
+      "number": 5,
+      "speaker": "MALCOLM",
+      "text": "That very frankly he confess’d his treasons,"
+    },
+    {
+      "number": 6,
+      "speaker": "MALCOLM",
+      "text": "Implored your highness’ pardon and set forth"
+    },
+    {
+      "number": 7,
+      "speaker": "MALCOLM",
+      "text": "A deep repentance: nothing in his life"
+    },
+    {
+      "number": 8,
+      "speaker": "MALCOLM",
+      "text": "Became him like the leaving it; he died"
+    },
+    {
+      "number": 9,
+      "speaker": "MALCOLM",
+      "text": "As one that had been studied in his death"
+    },
+    {
+      "number": 10,
+      "speaker": "MALCOLM",
+      "text": "To throw away the dearest thing he owed,"
+    },
+    {
+      "number": 11,
+      "speaker": "MALCOLM",
+      "text": "As ’twere a careless trifle."
+    },
+    {
+      "number": 11,
+      "speaker": "DUNCAN",
+      "text": "There’s no art"
+    },
+    {
+      "number": 12,
+      "speaker": "DUNCAN",
+      "text": "To find the mind’s construction in the face:"
+    },
+    {
+      "number": 13,
+      "speaker": "DUNCAN",
+      "text": "He was a gentleman on whom I built"
+    },
+    {
+      "number": 14,
+      "speaker": "DUNCAN",
+      "text": "An absolute trust."
+    },
+    {
+      "number": 15,
+      "speaker": "MACBETH",
+      "text": "The service and the loyalty I owe,"
+    },
+    {
+      "number": 16,
+      "speaker": "MACBETH",
+      "text": "In doing it, pays itself. Your highness’ part"
+    },
+    {
+      "number": 17,
+      "speaker": "MACBETH",
+      "text": "Is to receive our duties; and our duties"
+    },
+    {
+      "number": 18,
+      "speaker": "MACBETH",
+      "text": "Are to your throne and state children and servants,"
+    },
+    {
+      "number": 19,
+      "speaker": "MACBETH",
+      "text": "Which do but what they should, by doing every thing"
+    },
+    {
+      "number": 20,
+      "speaker": "MACBETH",
+      "text": "Safe toward your love and honour."
+    },
+    {
+      "number": 20,
+      "speaker": "DUNCAN",
+      "text": "Welcome hither:"
+    },
+    {
+      "number": 21,
+      "speaker": "DUNCAN",
+      "text": "I have begun to plant thee, and will labour"
+    },
+    {
+      "number": 22,
+      "speaker": "DUNCAN",
+      "text": "To make thee full of growing. Noble Banquo,"
+    },
+    {
+      "number": 23,
+      "speaker": "DUNCAN",
+      "text": "That hast no less deserved, nor must be known"
+    },
+    {
+      "number": 24,
+      "speaker": "DUNCAN",
+      "text": "No less to have done so, let me enfold thee"
+    },
+    {
+      "number": 25,
+      "speaker": "DUNCAN",
+      "text": "And hold thee to my heart."
+    },
+    {
+      "number": 25,
+      "speaker": "BANQUO",
+      "text": "There if I grow,"
+    },
+    {
+      "number": 26,
+      "speaker": "BANQUO",
+      "text": "The harvest is your own."
+    },
+    {
+      "number": 26,
+      "speaker": "DUNCAN",
+      "text": "My plenteous joys,"
+    },
+    {
+      "number": 27,
+      "speaker": "DUNCAN",
+      "text": "Wanton in fulness, seek to hide themselves"
+    },
+    {
+      "number": 28,
+      "speaker": "DUNCAN",
+      "text": "In drops of sorrow. Sons, kinsmen, thanes,"
+    },
+    {
+      "number": 29,
+      "speaker": "DUNCAN",
+      "text": "And you whose places are the nearest, know"
+    },
+    {
+      "number": 30,
+      "speaker": "DUNCAN",
+      "text": "We will establish our estate upon"
+    },
+    {
+      "number": 31,
+      "speaker": "DUNCAN",
+      "text": "Our eldest, Malcolm, whom we name hereafter"
+    },
+    {
+      "number": 32,
+      "speaker": "DUNCAN",
+      "text": "The Prince of Cumberland; which honour must"
+    },
+    {
+      "number": 33,
+      "speaker": "DUNCAN",
+      "text": "Not unaccompanied invest him only,"
+    },
+    {
+      "number": 34,
+      "speaker": "DUNCAN",
+      "text": "But signs of nobleness, like stars, shall shine"
+    },
+    {
+      "number": 35,
+      "speaker": "DUNCAN",
+      "text": "On all deservers. From hence to Inverness,"
+    },
+    {
+      "number": 36,
+      "speaker": "DUNCAN",
+      "text": "And bind us further to you."
+    },
+    {
+      "number": 37,
+      "speaker": "MACBETH",
+      "text": "The rest is labour, which is not used for you:"
+    },
+    {
+      "number": 38,
+      "speaker": "MACBETH",
+      "text": "I’ll be myself the harbinger and make joyful"
+    },
+    {
+      "number": 39,
+      "speaker": "MACBETH",
+      "text": "The hearing of my wife with your approach;"
+    },
+    {
+      "number": 40,
+      "speaker": "MACBETH",
+      "text": "So humbly take my leave."
+    },
+    {
+      "number": 40,
+      "speaker": "DUNCAN",
+      "text": "My worthy Cawdor!"
+    },
+    {
+      "number": 41,
+      "speaker": "MACBETH",
+      "text": "The Prince of Cumberland! that is a step"
+    },
+    {
+      "number": 42,
+      "speaker": "MACBETH",
+      "text": "On which I must fall down, or else o’erleap,"
+    },
+    {
+      "number": 43,
+      "speaker": "MACBETH",
+      "text": "For in my way it lies. Stars, hide your fires;"
+    },
+    {
+      "number": 44,
+      "speaker": "MACBETH",
+      "text": "Let not light see my black and deep desires:"
+    },
+    {
+      "number": 45,
+      "speaker": "MACBETH",
+      "text": "The eye wink at the hand; yet let that be,"
+    },
+    {
+      "number": 46,
+      "speaker": "MACBETH",
+      "text": "Which the eye fears, when it is done, to see."
+    },
+    {
+      "number": 47,
+      "speaker": "DUNCAN",
+      "text": "True, worthy Banquo; he is full so valiant,"
+    },
+    {
+      "number": 48,
+      "speaker": "DUNCAN",
+      "text": "And in his commendations I am fed;"
+    },
+    {
+      "number": 49,
+      "speaker": "DUNCAN",
+      "text": "It is a banquet to me. Let’s after him,"
+    },
+    {
+      "number": 50,
+      "speaker": "DUNCAN",
+      "text": "Whose care is gone before to bid us welcome:"
+    },
+    {
+      "number": 51,
+      "speaker": "DUNCAN",
+      "text": "It is a peerless kinsman."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Flourish. Enter Duncan, Malcolm, Donalbain, Lennox, and Attendants."
+    },
+    {
+      "after_line": 14,
+      "text": "Enter Macbeth, Banquo, Ross, and Angus."
+    },
+    {
+      "after_line": 14,
+      "text": "O worthiest cousin! The sin of my ingratitude even now Was heavy on me: thou art so far before That swiftest wing of recompense is slow To overtake thee. Would thou hadst less deserved, That the proportion both of thanks and payment Might have been mine! only I have left to say, More is thy due than more than all can pay."
+    },
+    {
+      "after_line": 41,
+      "text": "Aside."
+    },
+    {
+      "after_line": 46,
+      "text": "Exit."
+    },
+    {
+      "after_line": 51,
+      "text": "Flourish. Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act1_scene4_gloss2",
+      "line": 9,
+      "phrase": "studied in his death",
+      "definition": "rehearsed his execution like a lesson"
+    },
+    {
+      "id": "macbeth_act1_scene4_gloss3",
+      "line": 10,
+      "phrase": "owed",
+      "definition": "owned"
+    },
+    {
+      "id": "macbeth_act1_scene4_gloss5",
+      "line": 14,
+      "phrase": "absolute trust",
+      "definition": "complete confidence — which he now places in Macbeth"
+    },
+    {
+      "id": "macbeth_act1_scene4_gloss7",
+      "line": 32,
+      "phrase": "Prince of Cumberland",
+      "definition": "the formal title for the heir to the Scottish throne — a roadblock Macbeth now sees"
+    },
+    {
+      "id": "macbeth_act1_scene4_gloss9",
+      "line": 35,
+      "phrase": "Inverness",
+      "definition": "a town in the Scottish Highlands; Macbeth's castle"
+    },
+    {
+      "id": "macbeth_act1_scene4_gloss10",
+      "line": 43,
+      "phrase": "stars, hide your fires",
+      "definition": "Macbeth's first dark prayer — asking the heavens to conceal his intentions"
+    },
+    {
+      "id": "macbeth_act1_scene4_gloss11",
+      "line": 44,
+      "phrase": "black and deep desires",
+      "definition": "murderous ambitions he is beginning to admit to himself"
+    },
+    {
+      "id": "macbeth_act1_scene4_gloss12",
+      "line": 45,
+      "phrase": "wink at the hand",
+      "definition": "close (my eye) to what the hand does — separation of moral conscience from murderous action"
+    },
+    {
+      "id": "macbeth_act1_scene4_gloss13",
+      "line": 45,
+      "phrase": "yet let that be",
+      "definition": "yet let (the deed) still happen"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act1_scene4_ann1",
+      "line_start": 11,
+      "line_end": 21,
+      "citation_display": "Macbeth 1.4.11–21",
+      "category": "thematic",
+      "title": "'No art to find the mind's construction in the face'",
+      "body": "Duncan's line about the first Thane of Cawdor — that there is no art to read inner mind from outer face — is delivered at the exact moment Macbeth, his new Thane of Cawdor, enters the stage. The dramatic irony is too pointed to miss: Duncan's epistemological humility is exactly right, and exactly fatal. He cannot read the face of the man he is about to host.\n\nThis is the play's first serious engagement with its central moral problem. Hamlet asked whether the ghost's report could be trusted. *Othello* asks whether Desdemona's face tells the truth. *Macbeth* asks whether any face, king or subject, is legible at all. Duncan says no, and proceeds as if yes.",
+      "sources": [
+        "Stanley Cavell, *Disowning Knowledge* (2003)",
+        "A. D. Nuttall (2007)"
+      ]
+    },
+    {
+      "id": "macbeth_act1_scene4_ann2",
+      "line_start": 45,
+      "line_end": 53,
+      "citation_display": "Macbeth 1.4.45–53",
+      "category": "close_reading",
+      "title": "'Stars, hide your fires'",
+      "body": "Macbeth's aside concludes with his first direct prayer for darkness. 'Stars, hide your fires; / Let not light see my black and deep desires.' The dissociation is already advanced: the hand must not know what the eye sees. This will become the play's recurring grammar — hands estranged from their owners, eyes covered, night invoked against day.\n\nThe Cleanth Brooks reading of the play's imagery picks up here. Darkness is not metaphor in *Macbeth*; it is invocation. Lady Macbeth in 1.5 will speak the complement of this prayer — the 'blanket of the dark' — and the play's central murders will all happen under self-summoned night.",
+      "sources": [
+        "Cleanth Brooks, 'The Naked Babe and the Cloak of Manliness' (1947)",
+        "Caroline Spurgeon, *Shakespeare's Imagery* (1935)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act1_scene4_q1",
+      "kind": "structural",
+      "prompt": "Duncan announces Malcolm as 'Prince of Cumberland' (line 39). What structural function does this serve?",
+      "options": [
+        "It is mere genealogy",
+        "It names a political obstacle Macbeth sees immediately — the visible block on his way to the crown",
+        "It is a joke",
+        "It confuses the audience"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 39,
+      "anchor_line_end": 53
+    },
+    {
+      "id": "macbeth_act1_scene4_q2",
+      "kind": "inference",
+      "prompt": "What is the dramatic irony of Duncan saying 'There's no art / To find the mind's construction in the face'?",
+      "options": [
+        "It is sincere and true",
+        "Duncan says it just as the new Cawdor (Macbeth) enters — he cannot read the face of the man about to kill him",
+        "It is a Macbeth quote",
+        "It describes the weather"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 11,
+      "anchor_line_end": 21
+    },
+    {
+      "id": "macbeth_act1_scene4_q3",
+      "kind": "close_reading",
+      "prompt": "Macbeth prays 'Stars, hide your fires.' This begins:",
+      "options": [
+        "A religious conversion",
+        "A pattern in which the play's central murders are all invoked under self-summoned darkness",
+        "An astronomy lecture",
+        "A love song"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 48,
+      "anchor_line_end": 53
+    }
+  ]
+}

@@ -1,0 +1,412 @@
+{
+  "section_id": "macbeth_act3_scene6",
+  "work_id": "macbeth",
+  "sequence": 17,
+  "act": 3,
+  "scene": 6,
+  "kind": "scene",
+  "scene_title": "Forres. The palace",
+  "line_count": 53,
+  "word_count": 403,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "LENNOX",
+      "text": "My former speeches have but hit your thoughts,"
+    },
+    {
+      "number": 2,
+      "speaker": "LENNOX",
+      "text": "Which can interpret further: only, I say,"
+    },
+    {
+      "number": 3,
+      "speaker": "LENNOX",
+      "text": "Things have been strangely borne. The gracious Duncan"
+    },
+    {
+      "number": 4,
+      "speaker": "LENNOX",
+      "text": "Was pitied of Macbeth: marry, he was dead:"
+    },
+    {
+      "number": 5,
+      "speaker": "LENNOX",
+      "text": "And the right-valiant Banquo walk’d too late;"
+    },
+    {
+      "number": 6,
+      "speaker": "LENNOX",
+      "text": "Whom, you may say, if’t please you, Fleance kill’d,"
+    },
+    {
+      "number": 7,
+      "speaker": "LENNOX",
+      "text": "For Fleance fled: men must not walk too late."
+    },
+    {
+      "number": 8,
+      "speaker": "LENNOX",
+      "text": "Who cannot want the thought how monstrous"
+    },
+    {
+      "number": 9,
+      "speaker": "LENNOX",
+      "text": "It was for Malcolm and for Donalbain"
+    },
+    {
+      "number": 10,
+      "speaker": "LENNOX",
+      "text": "To kill their gracious father? damned fact!"
+    },
+    {
+      "number": 11,
+      "speaker": "LENNOX",
+      "text": "How it did grieve Macbeth! did he not straight"
+    },
+    {
+      "number": 12,
+      "speaker": "LENNOX",
+      "text": "In pious rage the two delinquents tear,"
+    },
+    {
+      "number": 13,
+      "speaker": "LENNOX",
+      "text": "That were the slaves of drink and thralls of sleep?"
+    },
+    {
+      "number": 14,
+      "speaker": "LENNOX",
+      "text": "Was not that nobly done? Ay, and wisely too;"
+    },
+    {
+      "number": 15,
+      "speaker": "LENNOX",
+      "text": "For ’twould have anger’d any heart alive"
+    },
+    {
+      "number": 16,
+      "speaker": "LENNOX",
+      "text": "To hear the men deny’t. So that, I say,"
+    },
+    {
+      "number": 17,
+      "speaker": "LENNOX",
+      "text": "He has borne all things well: and I do think"
+    },
+    {
+      "number": 18,
+      "speaker": "LENNOX",
+      "text": "That had he Duncan’s sons under his key—"
+    },
+    {
+      "number": 19,
+      "speaker": "LENNOX",
+      "text": "As, an’t please heaven, he shall not—they should find"
+    },
+    {
+      "number": 20,
+      "speaker": "LENNOX",
+      "text": "What ’twere to kill a father; so should Fleance."
+    },
+    {
+      "number": 21,
+      "speaker": "LENNOX",
+      "text": "But, peace! for from broad words and ’cause he fail’d"
+    },
+    {
+      "number": 22,
+      "speaker": "LENNOX",
+      "text": "His presence at the tyrant’s feast, I hear"
+    },
+    {
+      "number": 23,
+      "speaker": "LENNOX",
+      "text": "Macduff lives in disgrace: sir, can you tell"
+    },
+    {
+      "number": 24,
+      "speaker": "LENNOX",
+      "text": "Where he bestows himself?"
+    },
+    {
+      "number": 24,
+      "speaker": "LORD",
+      "text": "The son of Duncan,"
+    },
+    {
+      "number": 25,
+      "speaker": "LORD",
+      "text": "From whom this tyrant holds the due of birth,"
+    },
+    {
+      "number": 26,
+      "speaker": "LORD",
+      "text": "Lives in the English court, and is received"
+    },
+    {
+      "number": 27,
+      "speaker": "LORD",
+      "text": "Of the most pious Edward with such grace"
+    },
+    {
+      "number": 28,
+      "speaker": "LORD",
+      "text": "That the malevolence of fortune nothing"
+    },
+    {
+      "number": 29,
+      "speaker": "LORD",
+      "text": "Takes from his high respect: thither Macduff"
+    },
+    {
+      "number": 30,
+      "speaker": "LORD",
+      "text": "Is gone to pray the holy king, upon his aid"
+    },
+    {
+      "number": 31,
+      "speaker": "LORD",
+      "text": "To wake Northumberland and warlike Siward:"
+    },
+    {
+      "number": 32,
+      "speaker": "LORD",
+      "text": "That, by the help of these—with Him above"
+    },
+    {
+      "number": 33,
+      "speaker": "LORD",
+      "text": "To ratify the work—we may again"
+    },
+    {
+      "number": 34,
+      "speaker": "LORD",
+      "text": "Give to our tables meat, sleep to our nights,"
+    },
+    {
+      "number": 35,
+      "speaker": "LORD",
+      "text": "Free from our feasts and banquets bloody knives,"
+    },
+    {
+      "number": 36,
+      "speaker": "LORD",
+      "text": "Do faithful homage and receive free honours:"
+    },
+    {
+      "number": 37,
+      "speaker": "LORD",
+      "text": "All which we pine for now: and this report"
+    },
+    {
+      "number": 38,
+      "speaker": "LORD",
+      "text": "Hath so exasperate the king that he"
+    },
+    {
+      "number": 39,
+      "speaker": "LORD",
+      "text": "Prepares for some attempt of war."
+    },
+    {
+      "number": 39,
+      "speaker": "LENNOX",
+      "text": "Sent he to Macduff?"
+    },
+    {
+      "number": 40,
+      "speaker": "LORD",
+      "text": "He did: and with an absolute “Sir, not I,”"
+    },
+    {
+      "number": 41,
+      "speaker": "LORD",
+      "text": "The cloudy messenger turns me his back,"
+    },
+    {
+      "number": 42,
+      "speaker": "LORD",
+      "text": "And hums, as who should say “You’ll rue the time"
+    },
+    {
+      "number": 43,
+      "speaker": "LORD",
+      "text": "That clogs me with this answer.”"
+    },
+    {
+      "number": 43,
+      "speaker": "LENNOX",
+      "text": "And that well might"
+    },
+    {
+      "number": 44,
+      "speaker": "LENNOX",
+      "text": "Advise him to a caution, to hold what distance"
+    },
+    {
+      "number": 45,
+      "speaker": "LENNOX",
+      "text": "His wisdom can provide. Some holy angel"
+    },
+    {
+      "number": 46,
+      "speaker": "LENNOX",
+      "text": "Fly to the court of England and unfold"
+    },
+    {
+      "number": 47,
+      "speaker": "LENNOX",
+      "text": "His message ere he come, that a swift blessing"
+    },
+    {
+      "number": 48,
+      "speaker": "LENNOX",
+      "text": "May soon return to this our suffering country"
+    },
+    {
+      "number": 49,
+      "speaker": "LENNOX",
+      "text": "Under a hand accursed!"
+    },
+    {
+      "number": 49,
+      "speaker": "LORD",
+      "text": "I’ll send my prayers with him."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Lennox and another Lord."
+    },
+    {
+      "after_line": 49,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act3_scene6_gloss1",
+      "line": 1,
+      "phrase": "hit your thoughts",
+      "definition": "guessed what you were thinking"
+    },
+    {
+      "id": "macbeth_act3_scene6_gloss2",
+      "line": 17,
+      "phrase": "borne all things well",
+      "definition": "handled everything smoothly"
+    },
+    {
+      "id": "macbeth_act3_scene6_gloss3",
+      "line": 8,
+      "phrase": "monstrous",
+      "definition": "unnatural; abominable"
+    },
+    {
+      "id": "macbeth_act3_scene6_gloss4",
+      "line": 10,
+      "phrase": "damned fact",
+      "definition": "wicked deed"
+    },
+    {
+      "id": "macbeth_act3_scene6_gloss5",
+      "line": 12,
+      "phrase": "two delinquents",
+      "definition": "the grooms, framed as assassins"
+    },
+    {
+      "id": "macbeth_act3_scene6_gloss6",
+      "line": 22,
+      "phrase": "tyrant",
+      "definition": "the play's first direct application of the word to Macbeth — a political charge"
+    },
+    {
+      "id": "macbeth_act3_scene6_gloss7",
+      "line": 25,
+      "phrase": "due of birth",
+      "definition": "what is his by birthright"
+    },
+    {
+      "id": "macbeth_act3_scene6_gloss9",
+      "line": 30,
+      "phrase": "holy king",
+      "definition": "Edward, venerated for his piety"
+    },
+    {
+      "id": "macbeth_act3_scene6_gloss11",
+      "line": 33,
+      "phrase": "ratify the work",
+      "definition": "legitimize the cause — Northumberland's support"
+    },
+    {
+      "id": "macbeth_act3_scene6_gloss12",
+      "line": 41,
+      "phrase": "cloudy messenger",
+      "definition": "surly messenger returning with bad news"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act3_scene6_ann1",
+      "line_start": 1,
+      "line_end": 25,
+      "citation_display": "Macbeth 3.6.1–25",
+      "category": "structural",
+      "title": "The political assessment",
+      "body": "Lennox's long speech to a 'Lord' is the play's first moment of explicit political analysis. The word 'tyrant' is applied to Macbeth for the first time here. Lennox runs through Macbeth's rapid body count — Duncan, the grooms, now Banquo — and lets the repetitions speak: 'the gracious Duncan,' 'the right valiant Banquo,' 'the two delinquents.'\n\nThe irony is sustained. Lennox speaks as if praising Macbeth's story, but every sentence is a small accusation. The technique is one of the play's most compressed pieces of political speech: what cannot be said aloud in court is said in the form of ostentatious agreement. The scene is a preview of the discretion Scottish nobles will require until Malcolm's army arrives.",
+      "sources": [
+        "Alan Sinfield, *Faultlines* (1992)",
+        "Jonathan Dollimore, *Radical Tragedy* (1984)"
+      ]
+    },
+    {
+      "id": "macbeth_act3_scene6_ann2",
+      "line_start": 25,
+      "line_end": 53,
+      "citation_display": "Macbeth 3.6.25–53",
+      "category": "historical",
+      "title": "Edward the Confessor and the political theology of kingship",
+      "body": "The Lord reports that Macduff has fled to England, to the court of Edward the Confessor (r. 1042–1066), the English king venerated for his piety. Edward's capacity to cure the 'King's Evil' (scrofula) by royal touch — staged in 4.3 — is the counter-image to Macbeth's tyranny: the legitimate king has divine power to heal; the usurper has only the power to kill.\n\nThe reference is political. James I practiced the royal touch ceremony, reviving a tradition the Puritans had tried to suppress. The play's 1606 audience, seeing Edward's healing at work, would have seen an argument for the divine right of kings that James had explicitly made in his *True Law of Free Monarchies* (1598). Macbeth's tyranny is the argument's negative space.",
+      "sources": [
+        "Marc Bloch, *The Royal Touch* (1924, tr. 1973)",
+        "Stephen Greenblatt, *Shakespearean Negotiations* (1988)",
+        "Peter Holland (2016)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act3_scene6_q1",
+      "kind": "close_reading",
+      "prompt": "Lennox's ironic speech about Duncan, Banquo, and the 'delinquents' functions as:",
+      "options": [
+        "Flattery",
+        "Political speech-in-code — saying what cannot be said aloud by way of ostentatious agreement",
+        "Confusion",
+        "A legal deposition"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 25
+    },
+    {
+      "id": "macbeth_act3_scene6_q2",
+      "kind": "historical",
+      "prompt": "Edward the Confessor's touch-healing in the play frames:",
+      "options": [
+        "A ghost story",
+        "An argument for divine right of kings — the legitimate king heals, the usurper only kills",
+        "A medical fact",
+        "A comic interlude"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 25,
+      "anchor_line_end": 40
+    }
+  ]
+}

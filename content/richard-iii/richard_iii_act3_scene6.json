@@ -1,0 +1,179 @@
+{
+  "section_id": "richard_iii_act3_scene6",
+  "work_id": "richard-iii",
+  "sequence": 14,
+  "act": 3,
+  "scene": 6,
+  "kind": "scene",
+  "scene_title": "The same. A street",
+  "line_count": 14,
+  "word_count": 117,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "SCRIVENER",
+      "text": "This is the indictment of the good Lord Hastings;"
+    },
+    {
+      "number": 2,
+      "speaker": "SCRIVENER",
+      "text": "Which in a set hand fairly is engross’d,"
+    },
+    {
+      "number": 3,
+      "speaker": "SCRIVENER",
+      "text": "That it may be this day read over in Paul’s."
+    },
+    {
+      "number": 4,
+      "speaker": "SCRIVENER",
+      "text": "And mark how well the sequel hangs together:"
+    },
+    {
+      "number": 5,
+      "speaker": "SCRIVENER",
+      "text": "Eleven hours I spent to write it over,"
+    },
+    {
+      "number": 6,
+      "speaker": "SCRIVENER",
+      "text": "For yesternight by Catesby was it brought me;"
+    },
+    {
+      "number": 7,
+      "speaker": "SCRIVENER",
+      "text": "The precedent was full as long a-doing:"
+    },
+    {
+      "number": 8,
+      "speaker": "SCRIVENER",
+      "text": "And yet within these five hours lived Lord Hastings,"
+    },
+    {
+      "number": 9,
+      "speaker": "SCRIVENER",
+      "text": "Untainted, unexamined, free, at liberty."
+    },
+    {
+      "number": 10,
+      "speaker": "SCRIVENER",
+      "text": "Here’s a good world the while! Why who’s so gross,"
+    },
+    {
+      "number": 11,
+      "speaker": "SCRIVENER",
+      "text": "That seeth not this palpable device?"
+    },
+    {
+      "number": 12,
+      "speaker": "SCRIVENER",
+      "text": "Yet who’s so blind, but says he sees it not?"
+    },
+    {
+      "number": 13,
+      "speaker": "SCRIVENER",
+      "text": "Bad is the world; and all will come to nought,"
+    },
+    {
+      "number": 14,
+      "speaker": "SCRIVENER",
+      "text": "When such bad dealings must be seen in thought."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter a Scrivener, with a paper in his hand."
+    },
+    {
+      "after_line": 14,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act3_scene6_gloss1",
+      "line": 1,
+      "phrase": "indictment",
+      "definition": "formal written accusation"
+    },
+    {
+      "id": "richard_iii_act3_scene6_gloss2",
+      "line": 2,
+      "phrase": "set hand fairly is engross’d",
+      "definition": "in a formal hand carefully inscribed — legal scribal vocabulary"
+    },
+    {
+      "id": "richard_iii_act3_scene6_gloss3",
+      "line": 3,
+      "phrase": "read over in Paul’s",
+      "definition": "read aloud at St Paul's Cross — the public site for royal proclamations"
+    },
+    {
+      "id": "richard_iii_act3_scene6_gloss4",
+      "line": 7,
+      "phrase": "precedent",
+      "definition": "the rough draft from which the fair copy was made"
+    },
+    {
+      "id": "richard_iii_act3_scene6_gloss5",
+      "line": 11,
+      "phrase": "palpable device",
+      "definition": "obvious trick — the scrivener names the fraud: the indictment was prepared before Hastings was arrested"
+    },
+    {
+      "id": "richard_iii_act3_scene6_gloss6",
+      "line": 13,
+      "phrase": "come to nought",
+      "definition": "come to nothing; end badly"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act3_scene6_ann1",
+      "line_start": 1,
+      "line_end": 14,
+      "citation_display": "Richard III 3.6.1–14",
+      "category": "structural",
+      "title": "The scrivener as one-scene truth-teller",
+      "body": "The scrivener's fourteen-line scene is the shortest in the play and one of its most precisely calibrated. A legal scribe, alone, explains that the indictment against Hastings was drawn up before Hastings was accused, that the precedent (draft) took as long as the fair copy, and that the whole operation is a \"palpable device.\" The word \"palpable\" is key — the fraud is not subtle, it is obvious to anyone who handles the paper. The scrivener's closing couplet — \"Bad is the world; and all will come to nought, / When such bad dealings must be seen in thought\" — is a choric judgement from a minor character whose profession gives him uniquely reliable access to the regime's documentary practice. Shakespeare keeps moral clarity alive in the play by distributing it across scenes and minor voices. The scrivener will not appear again; his sentence is the whole scene.",
+      "sources": [
+        "Phyllis Rackin, Stages of History (1990)",
+        "Paola Pugliatti, Shakespeare the Historian (1996)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act3_scene6_q1",
+      "kind": "comprehension",
+      "prompt": "What does the scrivener reveal about the indictment against Hastings?",
+      "options": [
+        "That it is legally sound",
+        "That it was drafted before Hastings was ever accused — it is a \"palpable device\" visible to anyone handling the document",
+        "That Hastings himself had signed it in advance",
+        "That the charges are limited to minor offences"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 5,
+      "anchor_line_end": 10
+    },
+    {
+      "id": "richard_iii_act3_scene6_q2",
+      "kind": "structural",
+      "prompt": "The scrivener's fourteen-line scene functions as what?",
+      "options": [
+        "Accidental material, carried over from an earlier draft",
+        "A choric judgement from a minor professional voice — moral clarity distributed to a figure with uniquely reliable access to the regime's paperwork",
+        "A piece of comic relief without dramatic purpose",
+        "A digression on Elizabethan legal practice"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 1,
+      "anchor_line_end": 14
+    }
+  ]
+}

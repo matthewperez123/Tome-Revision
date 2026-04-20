@@ -1,0 +1,569 @@
+{
+  "section_id": "macbeth_act5_scene1",
+  "work_id": "macbeth",
+  "sequence": 21,
+  "act": 5,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "Dunsinane. Ante-room in the castle",
+  "line_count": 64,
+  "word_count": 560,
+  "est_read_minutes": 3,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "DOCTOR",
+      "text": "I have two nights watched with you, but can perceive no truth"
+    },
+    {
+      "number": 2,
+      "speaker": "DOCTOR",
+      "text": "in your report. When was it she last walked?"
+    },
+    {
+      "number": 3,
+      "speaker": "GENTLEWOMAN",
+      "text": "Since his majesty went into the field, I have seen her rise"
+    },
+    {
+      "number": 4,
+      "speaker": "GENTLEWOMAN",
+      "text": "from her bed, throw her nightgown upon her, unlock her closet, take"
+    },
+    {
+      "number": 5,
+      "speaker": "GENTLEWOMAN",
+      "text": "forth paper, fold it, write upon’t, read it, afterwards seal it, and"
+    },
+    {
+      "number": 6,
+      "speaker": "GENTLEWOMAN",
+      "text": "again return to bed; yet all this while in a most fast"
+    },
+    {
+      "number": 7,
+      "speaker": "GENTLEWOMAN",
+      "text": "sleep."
+    },
+    {
+      "number": 8,
+      "speaker": "DOCTOR",
+      "text": "A great perturbation in nature, to receive at once the benefit of"
+    },
+    {
+      "number": 9,
+      "speaker": "DOCTOR",
+      "text": "sleep, and do the effects of watching! In this slumbery agitation, besides"
+    },
+    {
+      "number": 10,
+      "speaker": "DOCTOR",
+      "text": "her walking and other actual performances, what, at any time, have you"
+    },
+    {
+      "number": 11,
+      "speaker": "DOCTOR",
+      "text": "heard her say?"
+    },
+    {
+      "number": 12,
+      "speaker": "GENTLEWOMAN",
+      "text": "That, sir, which I will not report after her."
+    },
+    {
+      "number": 13,
+      "speaker": "DOCTOR",
+      "text": "You may to me: and ’tis most meet you should."
+    },
+    {
+      "number": 14,
+      "speaker": "GENTLEWOMAN",
+      "text": "Neither to you nor any one; having no witness to confirm my speech."
+    },
+    {
+      "number": 15,
+      "speaker": "DOCTOR",
+      "text": "How came she by that light?"
+    },
+    {
+      "number": 16,
+      "speaker": "GENTLEWOMAN",
+      "text": "Why, it stood by her: she has light by her continually; ’tis her command."
+    },
+    {
+      "number": 17,
+      "speaker": "DOCTOR",
+      "text": "You see, her eyes are open."
+    },
+    {
+      "number": 17,
+      "speaker": "GENTLEWOMAN",
+      "text": "Ay, but their sense is shut."
+    },
+    {
+      "number": 18,
+      "speaker": "DOCTOR",
+      "text": "What is it she does now? Look, how she rubs her hands."
+    },
+    {
+      "number": 19,
+      "speaker": "GENTLEWOMAN",
+      "text": "It is an accustomed action with her, to seem thus washing her"
+    },
+    {
+      "number": 20,
+      "speaker": "GENTLEWOMAN",
+      "text": "hands: I have known her continue in this a quarter of an"
+    },
+    {
+      "number": 21,
+      "speaker": "GENTLEWOMAN",
+      "text": "hour."
+    },
+    {
+      "number": 21,
+      "speaker": "LADY MACBETH",
+      "text": "Yet here’s a spot."
+    },
+    {
+      "number": 22,
+      "speaker": "DOCTOR",
+      "text": "Hark! she speaks: I will set down what comes from her, to"
+    },
+    {
+      "number": 23,
+      "speaker": "DOCTOR",
+      "text": "satisfy my remembrance the more strongly."
+    },
+    {
+      "number": 24,
+      "speaker": "LADY MACBETH",
+      "text": "Out, damned spot! out, I say!—One: two: why, then, ’tis time to"
+    },
+    {
+      "number": 25,
+      "speaker": "LADY MACBETH",
+      "text": "do’t.—Hell is murky!—Fie, my lord, fie! a soldier, and afeard? What need"
+    },
+    {
+      "number": 26,
+      "speaker": "LADY MACBETH",
+      "text": "we fear who knows it, when none can call our power to"
+    },
+    {
+      "number": 27,
+      "speaker": "LADY MACBETH",
+      "text": "account?—Yet who would have thought the old man to have had so"
+    },
+    {
+      "number": 28,
+      "speaker": "LADY MACBETH",
+      "text": "much blood in him."
+    },
+    {
+      "number": 28,
+      "speaker": "DOCTOR",
+      "text": "Do you mark that?"
+    },
+    {
+      "number": 29,
+      "speaker": "LADY MACBETH",
+      "text": "The thane of Fife had a wife: where is she now?—What, will"
+    },
+    {
+      "number": 30,
+      "speaker": "LADY MACBETH",
+      "text": "these hands ne’er be clean?—No more o’ that, my lord, no more"
+    },
+    {
+      "number": 31,
+      "speaker": "LADY MACBETH",
+      "text": "o’ that: you mar all with this starting."
+    },
+    {
+      "number": 32,
+      "speaker": "DOCTOR",
+      "text": "Go to, go to; you have known what you should not."
+    },
+    {
+      "number": 33,
+      "speaker": "GENTLEWOMAN",
+      "text": "She has spoke what she should not, I am sure of that:"
+    },
+    {
+      "number": 34,
+      "speaker": "GENTLEWOMAN",
+      "text": "heaven knows what she has known."
+    },
+    {
+      "number": 35,
+      "speaker": "LADY MACBETH",
+      "text": "Here’s the smell of the blood still: all the perfumes of Arabia"
+    },
+    {
+      "number": 36,
+      "speaker": "LADY MACBETH",
+      "text": "will not sweeten this little hand. Oh, oh, oh!"
+    },
+    {
+      "number": 37,
+      "speaker": "DOCTOR",
+      "text": "What a sigh is there! The heart is sorely charged."
+    },
+    {
+      "number": 38,
+      "speaker": "GENTLEWOMAN",
+      "text": "I would not have such a heart in my bosom for the"
+    },
+    {
+      "number": 39,
+      "speaker": "GENTLEWOMAN",
+      "text": "dignity of the whole body."
+    },
+    {
+      "number": 39,
+      "speaker": "DOCTOR",
+      "text": "Well, well, well—"
+    },
+    {
+      "number": 40,
+      "speaker": "GENTLEWOMAN",
+      "text": "Pray God it be, sir."
+    },
+    {
+      "number": 41,
+      "speaker": "DOCTOR",
+      "text": "This disease is beyond my practice: yet I have known those which"
+    },
+    {
+      "number": 42,
+      "speaker": "DOCTOR",
+      "text": "have walked in their sleep who have died holily in their beds."
+    },
+    {
+      "number": 43,
+      "speaker": "LADY MACBETH",
+      "text": "Wash your hands, put on your nightgown; look not so pale.—I tell"
+    },
+    {
+      "number": 44,
+      "speaker": "LADY MACBETH",
+      "text": "you yet again, Banquo’s buried; he cannot come out on’s grave."
+    },
+    {
+      "number": 45,
+      "speaker": "DOCTOR",
+      "text": "Even so?"
+    },
+    {
+      "number": 46,
+      "speaker": "LADY MACBETH",
+      "text": "To bed, to bed! there’s knocking at the gate: come, come, come,"
+    },
+    {
+      "number": 47,
+      "speaker": "LADY MACBETH",
+      "text": "come, give me your hand. What’s done cannot be undone.—To bed, to"
+    },
+    {
+      "number": 48,
+      "speaker": "LADY MACBETH",
+      "text": "bed, to bed!"
+    },
+    {
+      "number": 48,
+      "speaker": "DOCTOR",
+      "text": "Will she go now to bed?"
+    },
+    {
+      "number": 49,
+      "speaker": "GENTLEWOMAN",
+      "text": "Directly."
+    },
+    {
+      "number": 49,
+      "speaker": "DOCTOR",
+      "text": "Foul whisperings are abroad: unnatural deeds"
+    },
+    {
+      "number": 50,
+      "speaker": "DOCTOR",
+      "text": "Do breed unnatural troubles: infected minds"
+    },
+    {
+      "number": 51,
+      "speaker": "DOCTOR",
+      "text": "To their deaf pillows will discharge their secrets:"
+    },
+    {
+      "number": 52,
+      "speaker": "DOCTOR",
+      "text": "More needs she the divine than the physician."
+    },
+    {
+      "number": 53,
+      "speaker": "DOCTOR",
+      "text": "God, God forgive us all! Look after her;"
+    },
+    {
+      "number": 54,
+      "speaker": "DOCTOR",
+      "text": "Remove from her the means of all annoyance,"
+    },
+    {
+      "number": 55,
+      "speaker": "DOCTOR",
+      "text": "And still keep eyes upon her. So, good night:"
+    },
+    {
+      "number": 56,
+      "speaker": "DOCTOR",
+      "text": "My mind she has mated, and amazed my sight."
+    },
+    {
+      "number": 57,
+      "speaker": "DOCTOR",
+      "text": "I think, but dare not speak."
+    },
+    {
+      "number": 57,
+      "speaker": "GENTLEWOMAN",
+      "text": "Good night, good doctor."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter a Doctor of Physic and a Waiting-Gentlewoman."
+    },
+    {
+      "after_line": 14,
+      "text": "Enter Lady Macbeth, with a taper."
+    },
+    {
+      "after_line": 14,
+      "text": "Lo you, here she comes! This is her very guise; and, upon my life, fast asleep. Observe her; stand close."
+    },
+    {
+      "after_line": 48,
+      "text": "Exit."
+    },
+    {
+      "after_line": 57,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act5_scene1_gloss1",
+      "line": 1,
+      "phrase": "watched",
+      "definition": "stayed awake; kept vigil"
+    },
+    {
+      "id": "macbeth_act5_scene1_gloss2",
+      "line": 8,
+      "phrase": "perturbation in nature",
+      "definition": "disturbance of the natural order"
+    },
+    {
+      "id": "macbeth_act5_scene1_gloss4",
+      "line": 9,
+      "phrase": "effects of watching",
+      "definition": "actions of a waking person"
+    },
+    {
+      "id": "macbeth_act5_scene1_gloss8",
+      "line": 19,
+      "phrase": "accustomed action",
+      "definition": "habitual motion — her obsessive hand-washing"
+    },
+    {
+      "id": "macbeth_act5_scene1_gloss10",
+      "line": 25,
+      "phrase": "Hell is murky",
+      "definition": "Lady Macbeth's reversal — the same woman who mocked Macbeth's fear of hell now sees into it"
+    },
+    {
+      "id": "macbeth_act5_scene1_gloss11",
+      "line": 25,
+      "phrase": "afeard",
+      "definition": "afraid"
+    },
+    {
+      "id": "macbeth_act5_scene1_gloss13",
+      "line": 29,
+      "phrase": "Thane of Fife",
+      "definition": "Macduff"
+    },
+    {
+      "id": "macbeth_act5_scene1_gloss14",
+      "line": 30,
+      "phrase": "No more o’ that",
+      "definition": "stop — the subjects she cannot bear to remember"
+    },
+    {
+      "id": "macbeth_act5_scene1_gloss15",
+      "line": 24,
+      "phrase": "Out, damned spot! out, I say!",
+      "definition": "the sleepwalking scene's central line; the stain she dismissed in 2.2 cannot be washed out — the water cannot clear her of the deed"
+    },
+    {
+      "id": "macbeth_act5_scene1_gloss16",
+      "line": 24,
+      "phrase": "damned spot",
+      "definition": "the bloodstain she cannot remove; the moral mark now physically visible to her alone"
+    },
+    {
+      "id": "macbeth_act5_scene1_gloss17",
+      "line": 25,
+      "phrase": "Fie, my lord, fie",
+      "definition": "for shame, my lord — her voice from 2.2"
+    },
+    {
+      "id": "macbeth_act5_scene1_gloss18",
+      "line": 35,
+      "phrase": "all the perfumes of Arabia",
+      "definition": "Arabia's famed spices cannot sweeten her little hand — the finest luxuries of the Renaissance world inadequate to the stain of regicide"
+    },
+    {
+      "id": "macbeth_act5_scene1_gloss19",
+      "line": 56,
+      "phrase": "sigh",
+      "definition": "audible sigh escaping her"
+    },
+    {
+      "id": "macbeth_act5_scene1_gloss20",
+      "line": 39,
+      "phrase": "dignity of the whole body",
+      "definition": "the nobility of her whole person"
+    },
+    {
+      "id": "macbeth_act5_scene1_gloss23",
+      "line": 52,
+      "phrase": "divine",
+      "definition": "a priest — not a physician, but a confessor, is what she needs"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act5_scene1_ann1",
+      "line_start": 1,
+      "line_end": 22,
+      "citation_display": "Macbeth 5.1.1–22",
+      "category": "structural",
+      "title": "The observers and the form of confession",
+      "body": "Shakespeare frames the sleepwalking scene with two silent witnesses: the Doctor of Physic and the Gentlewoman. Neither may repeat what Lady Macbeth says, but both are forced to hear. The form is the confession — sacramentally, the priest must not repeat what he hears. Shakespeare has placed a priest-stand-in at a scene of unconscious confession by a woman who cannot stop speaking.\n\nThe structural choice matters. We have not heard Lady Macbeth's inner voice since 3.2. Between then and now, the play gave her silence. What she stopped saying — about the murder, about her husband, about her conscience — pooled and returned in her sleep. The two witnesses allow the audience to hear what Lady Macbeth could not say while awake. The prohibition on repetition is Shakespeare's acknowledgment that what we are hearing should not be heard at all.",
+      "sources": [
+        "Janet Adelman (1992)",
+        "Coppélia Kahn, *Man's Estate* (1981)",
+        "Carol Chillington Rutter (2001)"
+      ]
+    },
+    {
+      "id": "macbeth_act5_scene1_ann2",
+      "line_start": 22,
+      "line_end": 50,
+      "citation_display": "Macbeth 5.1.22–50",
+      "category": "thematic",
+      "title": "The habitual action of washing",
+      "body": "'Accustomed action with her, to seem thus washing her hands. I have known her continue in this a quarter of an hour.' Lady Macbeth's sleepwalking has ritualized itself. The hand-washing of 2.2 — 'A little water clears us of this deed' — has become a permanent, nightly, fifteen-minute automation.\n\nThe specific minute-count is the scene's most chilling detail. We are not watching a one-off outburst; we are watching a private liturgy that has been repeating for months. The water Lady Macbeth pours is the water that, by 2.2, she said would be sufficient; it has been proving itself insufficient nightly for the entire third act.\n\nThe play's most important revision of her confidence comes at line 55: 'all the perfumes of Arabia will not sweeten this little hand.' The Arabian spice trade was the Renaissance emblem of the most expensive commodity in the world. If the Arabian perfume cannot reach it, nothing can. Lady Macbeth is making, in her sleep, the argument Macbeth made to her awake in 2.2 — the 'multitudinous seas' will rather take on the blood than wash it off.",
+      "sources": [
+        "Caroline Spurgeon (1935)",
+        "Cleanth Brooks (1947)",
+        "Stephen Orgel (2002)"
+      ]
+    },
+    {
+      "id": "macbeth_act5_scene1_ann3",
+      "line_start": 50,
+      "line_end": 69,
+      "citation_display": "Macbeth 5.1.50–69",
+      "category": "thematic",
+      "title": "Her spiritual diagnosis",
+      "body": "The Doctor's final line — 'More needs she the divine than the physician' — names what has happened to Lady Macbeth. Her illness is not medical but spiritual. The 'unnatural deeds' of 1.5 and 2.2 have produced 'unnatural troubles': sleep without rest, sight without vision, speech without listener. These are the classical symptoms of a soul separated from grace.\n\nThe play does not let Lady Macbeth die on stage. Her death is reported in 5.5, offstage, and Macbeth barely responds. Shakespeare's choice is precise: Lady Macbeth's death is not a scene but a rumor. She has become unrepresentable — not because she lacks dramatic weight, but because the scene we have just watched is her death. Everything after it is postscript.",
+      "sources": [
+        "A. C. Bradley (1904)",
+        "Ewan Fernie (2013)",
+        "Paul A. Kottman (2009)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act5_scene1_q1",
+      "kind": "structural",
+      "prompt": "Why are the Doctor and Gentlewoman both present?",
+      "options": [
+        "Medical accuracy",
+        "They function as priest-stand-ins at an unconscious confession — forced to hear, forbidden to repeat",
+        "For comic effect",
+        "To give Lady Macbeth company"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 22
+    },
+    {
+      "id": "macbeth_act5_scene1_q2",
+      "kind": "close_reading",
+      "prompt": "The Gentlewoman notes Lady Macbeth continues the hand-washing 'a quarter of an hour.' This reveals:",
+      "options": [
+        "A one-off outburst",
+        "A nightly ritual that has been repeating for months — a private liturgy",
+        "Her cleanliness",
+        "A prescription from the Doctor"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 22,
+      "anchor_line_end": 32
+    },
+    {
+      "id": "macbeth_act5_scene1_q3",
+      "kind": "theme",
+      "prompt": "'All the perfumes of Arabia will not sweeten this little hand' functions as:",
+      "options": [
+        "A shopping preference",
+        "Lady Macbeth making, in her sleep, the argument Macbeth made to her awake in 2.2 — blood cannot be washed off",
+        "A geography lesson",
+        "A reference to prayer"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 35,
+      "anchor_line_end": 38
+    },
+    {
+      "id": "macbeth_act5_scene1_q4",
+      "kind": "inference",
+      "prompt": "The Doctor concludes 'More needs she the divine than the physician' because:",
+      "options": [
+        "He is a priest",
+        "Her illness is spiritual, not medical — the symptoms of a soul separated from grace",
+        "He is incompetent",
+        "It is bedtime"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 65,
+      "anchor_line_end": 69
+    },
+    {
+      "id": "macbeth_act5_scene1_q5",
+      "kind": "comprehension",
+      "prompt": "Lady Macbeth mentions three murders in her sleep. They are:",
+      "options": [
+        "Duncan, Banquo, Macduff's family (the Thane of Fife's wife)",
+        "Duncan, Malcolm, Macduff",
+        "Banquo, Fleance, Ross",
+        "Duncan, Banquo, Malcolm"
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 20,
+      "anchor_line_start": 32,
+      "anchor_line_end": 50
+    }
+  ]
+}

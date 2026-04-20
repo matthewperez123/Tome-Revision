@@ -1,0 +1,2256 @@
+{
+  "section_id": "richard_iii_act5_scene3",
+  "work_id": "richard-iii",
+  "sequence": 23,
+  "act": 5,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "Bosworth Field",
+  "line_count": 296,
+  "word_count": 2277,
+  "est_read_minutes": 11,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KING RICHARD",
+      "text": "Here pitch our tents, even here in Bosworth field."
+    },
+    {
+      "number": 2,
+      "speaker": "KING RICHARD",
+      "text": "My Lord of Surrey, why look you so sad?"
+    },
+    {
+      "number": 3,
+      "speaker": "SURREY",
+      "text": "My heart is ten times lighter than my looks."
+    },
+    {
+      "number": 4,
+      "speaker": "KING RICHARD",
+      "text": "My Lord of Norfolk—"
+    },
+    {
+      "number": 4,
+      "speaker": "NORFOLK",
+      "text": "Here, most gracious liege."
+    },
+    {
+      "number": 5,
+      "speaker": "KING RICHARD",
+      "text": "Norfolk, we must have knocks; ha! must we not?"
+    },
+    {
+      "number": 6,
+      "speaker": "NORFOLK",
+      "text": "We must both give and take, my gracious lord."
+    },
+    {
+      "number": 7,
+      "speaker": "KING RICHARD",
+      "text": "Up with my tent there! here will I lie to-night;"
+    },
+    {
+      "number": 8,
+      "speaker": "KING RICHARD",
+      "text": "But where to-morrow? Well, all’s one for that."
+    },
+    {
+      "number": 9,
+      "speaker": "KING RICHARD",
+      "text": "Who hath descried the number of the foe?"
+    },
+    {
+      "number": 10,
+      "speaker": "NORFOLK",
+      "text": "Six or seven thousand is their utmost power."
+    },
+    {
+      "number": 11,
+      "speaker": "KING RICHARD",
+      "text": "Why, our battalion trebles that account:"
+    },
+    {
+      "number": 12,
+      "speaker": "KING RICHARD",
+      "text": "Besides, the king’s name is a tower of strength,"
+    },
+    {
+      "number": 13,
+      "speaker": "KING RICHARD",
+      "text": "Which they upon the adverse party want."
+    },
+    {
+      "number": 14,
+      "speaker": "KING RICHARD",
+      "text": "Up with my tent there! Valiant gentlemen,"
+    },
+    {
+      "number": 15,
+      "speaker": "KING RICHARD",
+      "text": "Let us survey the vantage of the field;"
+    },
+    {
+      "number": 16,
+      "speaker": "KING RICHARD",
+      "text": "Call for some men of sound direction:"
+    },
+    {
+      "number": 17,
+      "speaker": "KING RICHARD",
+      "text": "Let’s want no discipline, make no delay;"
+    },
+    {
+      "number": 18,
+      "speaker": "KING RICHARD",
+      "text": "For, lords, to-morrow is a busy day."
+    },
+    {
+      "number": 19,
+      "speaker": "RICHMOND",
+      "text": "The weary sun hath made a golden set,"
+    },
+    {
+      "number": 20,
+      "speaker": "RICHMOND",
+      "text": "And by the bright track of his fiery car,"
+    },
+    {
+      "number": 21,
+      "speaker": "RICHMOND",
+      "text": "Gives signal of a goodly day to-morrow."
+    },
+    {
+      "number": 22,
+      "speaker": "RICHMOND",
+      "text": "Sir William Brandon, you shall bear my standard."
+    },
+    {
+      "number": 23,
+      "speaker": "RICHMOND",
+      "text": "Give me some ink and paper in my tent:"
+    },
+    {
+      "number": 24,
+      "speaker": "RICHMOND",
+      "text": "I’ll draw the form and model of our battle,"
+    },
+    {
+      "number": 25,
+      "speaker": "RICHMOND",
+      "text": "Limit each leader to his several charge,"
+    },
+    {
+      "number": 26,
+      "speaker": "RICHMOND",
+      "text": "And part in just proportion our small strength."
+    },
+    {
+      "number": 27,
+      "speaker": "RICHMOND",
+      "text": "My Lord of Oxford, you, Sir William Brandon,"
+    },
+    {
+      "number": 28,
+      "speaker": "RICHMOND",
+      "text": "And you, Sir Walter Herbert, stay with me."
+    },
+    {
+      "number": 29,
+      "speaker": "RICHMOND",
+      "text": "The Earl of Pembroke keeps his regiment:"
+    },
+    {
+      "number": 30,
+      "speaker": "RICHMOND",
+      "text": "Good Captain Blunt, bear my good-night to him,"
+    },
+    {
+      "number": 31,
+      "speaker": "RICHMOND",
+      "text": "And by the second hour in the morning"
+    },
+    {
+      "number": 32,
+      "speaker": "RICHMOND",
+      "text": "Desire the earl to see me in my tent:"
+    },
+    {
+      "number": 33,
+      "speaker": "RICHMOND",
+      "text": "Yet one thing more, good Blunt, before thou go’st,"
+    },
+    {
+      "number": 34,
+      "speaker": "RICHMOND",
+      "text": "Where is Lord Stanley quarter’d, dost thou know?"
+    },
+    {
+      "number": 35,
+      "speaker": "BLUNT",
+      "text": "Unless I have mista’en his colours much,"
+    },
+    {
+      "number": 36,
+      "speaker": "BLUNT",
+      "text": "Which well I am assured I have not done,"
+    },
+    {
+      "number": 37,
+      "speaker": "BLUNT",
+      "text": "His regiment lies half a mile at least"
+    },
+    {
+      "number": 38,
+      "speaker": "BLUNT",
+      "text": "South from the mighty power of the king."
+    },
+    {
+      "number": 39,
+      "speaker": "RICHMOND",
+      "text": "If without peril it be possible,"
+    },
+    {
+      "number": 40,
+      "speaker": "RICHMOND",
+      "text": "Good Captain Blunt, bear my good-night to him,"
+    },
+    {
+      "number": 41,
+      "speaker": "RICHMOND",
+      "text": "And give him from me this most needful scroll."
+    },
+    {
+      "number": 42,
+      "speaker": "BLUNT",
+      "text": "Upon my life, my lord, I’ll undertake it;"
+    },
+    {
+      "number": 43,
+      "speaker": "BLUNT",
+      "text": "And so, God give you quiet rest to-night!"
+    },
+    {
+      "number": 44,
+      "speaker": "RICHMOND",
+      "text": "Good night, good Captain Blunt. Come gentlemen,"
+    },
+    {
+      "number": 45,
+      "speaker": "RICHMOND",
+      "text": "Let us consult upon to-morrow’s business:"
+    },
+    {
+      "number": 46,
+      "speaker": "RICHMOND",
+      "text": "In to our tent; the air is raw and cold. They withdraw into the tent."
+    },
+    {
+      "number": 47,
+      "speaker": "KING RICHARD",
+      "text": "What is’t o’clock?"
+    },
+    {
+      "number": 47,
+      "speaker": "CATESBY",
+      "text": "It’s supper-time, my lord;"
+    },
+    {
+      "number": 48,
+      "speaker": "CATESBY",
+      "text": "It’s nine o’clock."
+    },
+    {
+      "number": 48,
+      "speaker": "KING RICHARD",
+      "text": "I will not sup to-night."
+    },
+    {
+      "number": 49,
+      "speaker": "KING RICHARD",
+      "text": "Give me some ink and paper."
+    },
+    {
+      "number": 50,
+      "speaker": "KING RICHARD",
+      "text": "What, is my beaver easier than it was?"
+    },
+    {
+      "number": 51,
+      "speaker": "KING RICHARD",
+      "text": "And all my armour laid into my tent?"
+    },
+    {
+      "number": 52,
+      "speaker": "CATESBY",
+      "text": "It is, my liege; and all things are in readiness."
+    },
+    {
+      "number": 53,
+      "speaker": "KING RICHARD",
+      "text": "Good Norfolk, hie thee to thy charge;"
+    },
+    {
+      "number": 54,
+      "speaker": "KING RICHARD",
+      "text": "Use careful watch, choose trusty sentinels."
+    },
+    {
+      "number": 54,
+      "speaker": "NORFOLK",
+      "text": "I go, my lord."
+    },
+    {
+      "number": 55,
+      "speaker": "KING RICHARD",
+      "text": "Stir with the lark to-morrow, gentle Norfolk."
+    },
+    {
+      "number": 56,
+      "speaker": "NORFOLK",
+      "text": "I warrant you, my lord."
+    },
+    {
+      "number": 56,
+      "speaker": "KING RICHARD",
+      "text": "Catesby!"
+    },
+    {
+      "number": 57,
+      "speaker": "CATESBY",
+      "text": "My lord?"
+    },
+    {
+      "number": 57,
+      "speaker": "KING RICHARD",
+      "text": "Send out a pursuivant at arms"
+    },
+    {
+      "number": 58,
+      "speaker": "KING RICHARD",
+      "text": "To Stanley’s regiment; bid him bring his power"
+    },
+    {
+      "number": 59,
+      "speaker": "KING RICHARD",
+      "text": "Before sunrising, lest his son George fall"
+    },
+    {
+      "number": 60,
+      "speaker": "KING RICHARD",
+      "text": "Into the blind cave of eternal night."
+    },
+    {
+      "number": 61,
+      "speaker": "KING RICHARD",
+      "text": "Fill me a bowl of wine. Give me a watch."
+    },
+    {
+      "number": 62,
+      "speaker": "KING RICHARD",
+      "text": "Saddle white Surrey for the field to-morrow."
+    },
+    {
+      "number": 63,
+      "speaker": "KING RICHARD",
+      "text": "Look that my staves be sound, and not too heavy."
+    },
+    {
+      "number": 64,
+      "speaker": "KING RICHARD",
+      "text": "Ratcliff!"
+    },
+    {
+      "number": 64,
+      "speaker": "RATCLIFF",
+      "text": "My lord?"
+    },
+    {
+      "number": 65,
+      "speaker": "KING RICHARD",
+      "text": "Saw’st thou the melancholy Lord Northumberland?"
+    },
+    {
+      "number": 66,
+      "speaker": "RATCLIFF",
+      "text": "Thomas the Earl of Surrey, and himself,"
+    },
+    {
+      "number": 67,
+      "speaker": "RATCLIFF",
+      "text": "Much about cock-shut time, from troop to troop"
+    },
+    {
+      "number": 68,
+      "speaker": "RATCLIFF",
+      "text": "Went through the army, cheering up the soldiers."
+    },
+    {
+      "number": 69,
+      "speaker": "KING RICHARD",
+      "text": "So, I am satisfied. Give me a bowl of wine:"
+    },
+    {
+      "number": 70,
+      "speaker": "KING RICHARD",
+      "text": "I have not that alacrity of spirit,"
+    },
+    {
+      "number": 71,
+      "speaker": "KING RICHARD",
+      "text": "Nor cheer of mind, that I was wont to have."
+    },
+    {
+      "number": 72,
+      "speaker": "KING RICHARD",
+      "text": "Set it down. Is ink and paper ready?"
+    },
+    {
+      "number": 73,
+      "speaker": "RATCLIFF",
+      "text": "It is, my lord."
+    },
+    {
+      "number": 73,
+      "speaker": "KING RICHARD",
+      "text": "Bid my guard watch; leave me."
+    },
+    {
+      "number": 74,
+      "speaker": "KING RICHARD",
+      "text": "Ratcliff, about the mid of night come to my tent"
+    },
+    {
+      "number": 75,
+      "speaker": "KING RICHARD",
+      "text": "And help to arm me. Leave me, I say."
+    },
+    {
+      "number": 76,
+      "speaker": "DERBY",
+      "text": "Fortune and victory sit on thy helm!"
+    },
+    {
+      "number": 77,
+      "speaker": "RICHMOND",
+      "text": "All comfort that the dark night can afford"
+    },
+    {
+      "number": 78,
+      "speaker": "RICHMOND",
+      "text": "Be to thy person, noble father-in-law!"
+    },
+    {
+      "number": 79,
+      "speaker": "RICHMOND",
+      "text": "Tell me, how fares our loving mother?"
+    },
+    {
+      "number": 80,
+      "speaker": "DERBY",
+      "text": "I, by attorney, bless thee from thy mother,"
+    },
+    {
+      "number": 81,
+      "speaker": "DERBY",
+      "text": "Who prays continually for Richmond’s good:"
+    },
+    {
+      "number": 82,
+      "speaker": "DERBY",
+      "text": "So much for that. The silent hours steal on,"
+    },
+    {
+      "number": 83,
+      "speaker": "DERBY",
+      "text": "And flaky darkness breaks within the east."
+    },
+    {
+      "number": 84,
+      "speaker": "DERBY",
+      "text": "In brief—for so the season bids us be—"
+    },
+    {
+      "number": 85,
+      "speaker": "DERBY",
+      "text": "Prepare thy battle early in the morning,"
+    },
+    {
+      "number": 86,
+      "speaker": "DERBY",
+      "text": "And put thy fortune to the arbitrement"
+    },
+    {
+      "number": 87,
+      "speaker": "DERBY",
+      "text": "Of bloody strokes and mortal-staring war."
+    },
+    {
+      "number": 88,
+      "speaker": "DERBY",
+      "text": "I, as I may—that which I would I cannot—"
+    },
+    {
+      "number": 89,
+      "speaker": "DERBY",
+      "text": "With best advantage will deceive the time,"
+    },
+    {
+      "number": 90,
+      "speaker": "DERBY",
+      "text": "And aid thee in this doubtful shock of arms:"
+    },
+    {
+      "number": 91,
+      "speaker": "DERBY",
+      "text": "But on thy side I may not be too forward,"
+    },
+    {
+      "number": 92,
+      "speaker": "DERBY",
+      "text": "Lest, being seen, thy brother, tender George,"
+    },
+    {
+      "number": 93,
+      "speaker": "DERBY",
+      "text": "Be executed in his father’s sight."
+    },
+    {
+      "number": 94,
+      "speaker": "DERBY",
+      "text": "Farewell: the leisure and the fearful time"
+    },
+    {
+      "number": 95,
+      "speaker": "DERBY",
+      "text": "Cuts off the ceremonious vows of love"
+    },
+    {
+      "number": 96,
+      "speaker": "DERBY",
+      "text": "And ample interchange of sweet discourse,"
+    },
+    {
+      "number": 97,
+      "speaker": "DERBY",
+      "text": "Which so long sunder’d friends should dwell upon:"
+    },
+    {
+      "number": 98,
+      "speaker": "DERBY",
+      "text": "God give us leisure for these rites of love!"
+    },
+    {
+      "number": 99,
+      "speaker": "DERBY",
+      "text": "Once more, adieu: be valiant, and speed well!"
+    },
+    {
+      "number": 100,
+      "speaker": "RICHMOND",
+      "text": "Good lords, conduct him to his regiment:"
+    },
+    {
+      "number": 101,
+      "speaker": "RICHMOND",
+      "text": "I’ll strive, with troubled thoughts, to take a nap,"
+    },
+    {
+      "number": 102,
+      "speaker": "RICHMOND",
+      "text": "Lest leaden slumber peise me down to-morrow,"
+    },
+    {
+      "number": 103,
+      "speaker": "RICHMOND",
+      "text": "When I should mount with wings of victory:"
+    },
+    {
+      "number": 104,
+      "speaker": "RICHMOND",
+      "text": "Once more, good night, kind lords and gentlemen."
+    },
+    {
+      "number": 105,
+      "speaker": "RICHMOND",
+      "text": "O Thou, whose captain I account myself,"
+    },
+    {
+      "number": 106,
+      "speaker": "RICHMOND",
+      "text": "Look on my forces with a gracious eye;"
+    },
+    {
+      "number": 107,
+      "speaker": "RICHMOND",
+      "text": "Put in their hands thy bruising irons of wrath,"
+    },
+    {
+      "number": 108,
+      "speaker": "RICHMOND",
+      "text": "That they may crush down with a heavy fall"
+    },
+    {
+      "number": 109,
+      "speaker": "RICHMOND",
+      "text": "The usurping helmets of our adversaries!"
+    },
+    {
+      "number": 110,
+      "speaker": "RICHMOND",
+      "text": "Make us thy ministers of chastisement,"
+    },
+    {
+      "number": 111,
+      "speaker": "RICHMOND",
+      "text": "That we may praise thee in the victory!"
+    },
+    {
+      "number": 112,
+      "speaker": "RICHMOND",
+      "text": "To thee I do commend my watchful soul,"
+    },
+    {
+      "number": 113,
+      "speaker": "RICHMOND",
+      "text": "Ere I let fall the windows of mine eyes:"
+    },
+    {
+      "number": 114,
+      "speaker": "RICHMOND",
+      "text": "Sleeping and waking, O, defend me still! Sleeps."
+    },
+    {
+      "number": 115,
+      "speaker": "GHOST",
+      "text": "To Richard. Let me sit heavy on thy soul to-morrow!"
+    },
+    {
+      "number": 116,
+      "speaker": "GHOST",
+      "text": "Think, how thou stab’dst me in my prime of youth"
+    },
+    {
+      "number": 117,
+      "speaker": "GHOST",
+      "text": "At Tewksbury: despair, therefore, and die!"
+    },
+    {
+      "number": 118,
+      "speaker": "GHOST",
+      "text": "To Richmond. Be cheerful, Richmond; for the wronged souls"
+    },
+    {
+      "number": 119,
+      "speaker": "GHOST",
+      "text": "Of butcher’d princes fight in thy behalf:"
+    },
+    {
+      "number": 120,
+      "speaker": "GHOST",
+      "text": "King Henry’s issue, Richmond, comforts thee."
+    },
+    {
+      "number": 121,
+      "speaker": "GHOST",
+      "text": "To Richard. When I was mortal, my anointed body"
+    },
+    {
+      "number": 122,
+      "speaker": "GHOST",
+      "text": "By thee was punched full of deadly holes:"
+    },
+    {
+      "number": 123,
+      "speaker": "GHOST",
+      "text": "Think on the Tower and me: despair, and die!"
+    },
+    {
+      "number": 124,
+      "speaker": "GHOST",
+      "text": "Harry the Sixth bids thee despair and die!"
+    },
+    {
+      "number": 125,
+      "speaker": "GHOST",
+      "text": "To Richmond. Virtuous and holy, be thou conqueror!"
+    },
+    {
+      "number": 126,
+      "speaker": "GHOST",
+      "text": "Harry, that prophesied thou shouldst be king,"
+    },
+    {
+      "number": 127,
+      "speaker": "GHOST",
+      "text": "Doth comfort thee in thy sleep: live, and flourish!"
+    },
+    {
+      "number": 128,
+      "speaker": "GHOST",
+      "text": "To Richard. Let me sit heavy on thy soul to-morrow!"
+    },
+    {
+      "number": 129,
+      "speaker": "GHOST",
+      "text": "I, that was wash’d to death with fulsome wine,"
+    },
+    {
+      "number": 130,
+      "speaker": "GHOST",
+      "text": "Poor Clarence, by thy guile betrayed to death!"
+    },
+    {
+      "number": 131,
+      "speaker": "GHOST",
+      "text": "To-morrow in the battle think on me,"
+    },
+    {
+      "number": 132,
+      "speaker": "GHOST",
+      "text": "And fall thy edgeless sword: despair, and die!—"
+    },
+    {
+      "number": 133,
+      "speaker": "GHOST",
+      "text": "To Richmond. Thou offspring of the house of Lancaster,"
+    },
+    {
+      "number": 134,
+      "speaker": "GHOST",
+      "text": "The wronged heirs of York do pray for thee:"
+    },
+    {
+      "number": 135,
+      "speaker": "GHOST",
+      "text": "Good angels guard thy battle! live, and flourish!"
+    },
+    {
+      "number": 136,
+      "speaker": "GHOST OF RIVERS",
+      "text": "To Richard. Let me sit heavy on thy soul to-morrow,"
+    },
+    {
+      "number": 137,
+      "speaker": "GHOST OF RIVERS",
+      "text": "Rivers, that died at Pomfret! despair, and die!"
+    },
+    {
+      "number": 138,
+      "speaker": "GHOST OF GREY",
+      "text": "To Richard. Think upon Grey, and let thy soul despair!"
+    },
+    {
+      "number": 139,
+      "speaker": "GHOST OF VAUGHAN",
+      "text": "To Richard. Think upon Vaughan, and, with guilty fear,"
+    },
+    {
+      "number": 140,
+      "speaker": "GHOST OF VAUGHAN",
+      "text": "Let fall thy lance: despair, and die!"
+    },
+    {
+      "number": 141,
+      "speaker": "ALL",
+      "text": "To Richmond. Awake, and think our wrongs in Richard’s bosom"
+    },
+    {
+      "number": 142,
+      "speaker": "ALL",
+      "text": "Will conquer him! awake, and win the day!"
+    },
+    {
+      "number": 143,
+      "speaker": "GHOST OF HASTINGS",
+      "text": "To Richard. Bloody and guilty, guiltily awake,"
+    },
+    {
+      "number": 144,
+      "speaker": "GHOST OF HASTINGS",
+      "text": "And in a bloody battle end thy days!"
+    },
+    {
+      "number": 145,
+      "speaker": "GHOST OF HASTINGS",
+      "text": "Think on Lord Hastings: despair, and die!"
+    },
+    {
+      "number": 146,
+      "speaker": "GHOST OF HASTINGS",
+      "text": "To Richmond. Quiet untroubled soul, awake, awake!"
+    },
+    {
+      "number": 147,
+      "speaker": "GHOST OF HASTINGS",
+      "text": "Arm, fight, and conquer, for fair England’s sake!"
+    },
+    {
+      "number": 148,
+      "speaker": "GHOSTS",
+      "text": "To Richard. Dream on thy cousins smother’d in the Tower:"
+    },
+    {
+      "number": 149,
+      "speaker": "GHOSTS",
+      "text": "Let us be lead within thy bosom, Richard,"
+    },
+    {
+      "number": 150,
+      "speaker": "GHOSTS",
+      "text": "And weigh thee down to ruin, shame, and death!"
+    },
+    {
+      "number": 151,
+      "speaker": "GHOSTS",
+      "text": "Thy nephews’ souls bid thee despair and die!"
+    },
+    {
+      "number": 152,
+      "speaker": "GHOSTS",
+      "text": "To Richmond. Sleep, Richmond, sleep in peace, and wake in joy;"
+    },
+    {
+      "number": 153,
+      "speaker": "GHOSTS",
+      "text": "Good angels guard thee from the boar’s annoy!"
+    },
+    {
+      "number": 154,
+      "speaker": "GHOSTS",
+      "text": "Live, and beget a happy race of kings!"
+    },
+    {
+      "number": 155,
+      "speaker": "GHOSTS",
+      "text": "Edward’s unhappy sons do bid thee flourish."
+    },
+    {
+      "number": 156,
+      "speaker": "GHOST",
+      "text": "To Richard. Richard, thy wife, that wretched Anne thy wife,"
+    },
+    {
+      "number": 157,
+      "speaker": "GHOST",
+      "text": "That never slept a quiet hour with thee,"
+    },
+    {
+      "number": 158,
+      "speaker": "GHOST",
+      "text": "Now fills thy sleep with perturbations:"
+    },
+    {
+      "number": 159,
+      "speaker": "GHOST",
+      "text": "To-morrow in the battle think on me,"
+    },
+    {
+      "number": 160,
+      "speaker": "GHOST",
+      "text": "And fall thy edgeless sword: despair, and die!"
+    },
+    {
+      "number": 161,
+      "speaker": "GHOST",
+      "text": "To Richmond. Thou quiet soul, sleep thou a quiet sleep;"
+    },
+    {
+      "number": 162,
+      "speaker": "GHOST",
+      "text": "Dream of success and happy victory!"
+    },
+    {
+      "number": 163,
+      "speaker": "GHOST",
+      "text": "Thy adversary’s wife doth pray for thee."
+    },
+    {
+      "number": 164,
+      "speaker": "GHOST",
+      "text": "To Richard. The last was I that help’d thee to the crown;"
+    },
+    {
+      "number": 165,
+      "speaker": "GHOST",
+      "text": "The last was I that felt thy tyranny:"
+    },
+    {
+      "number": 166,
+      "speaker": "GHOST",
+      "text": "O, in the battle think on Buckingham,"
+    },
+    {
+      "number": 167,
+      "speaker": "GHOST",
+      "text": "And die in terror of thy guiltiness!"
+    },
+    {
+      "number": 168,
+      "speaker": "GHOST",
+      "text": "Dream on, dream on, of bloody deeds and death:"
+    },
+    {
+      "number": 169,
+      "speaker": "GHOST",
+      "text": "Fainting, despair; despairing, yield thy breath!"
+    },
+    {
+      "number": 170,
+      "speaker": "GHOST",
+      "text": "To Richmond. I died for hope ere I could lend thee aid:"
+    },
+    {
+      "number": 171,
+      "speaker": "GHOST",
+      "text": "But cheer thy heart, and be thou not dismay’d:"
+    },
+    {
+      "number": 172,
+      "speaker": "GHOST",
+      "text": "God and good angel fight on Richmond’s side;"
+    },
+    {
+      "number": 173,
+      "speaker": "GHOST",
+      "text": "And Richard falls in height of all his pride. The Ghosts vanish. King Richard starts out of his dream."
+    },
+    {
+      "number": 174,
+      "speaker": "KING RICHARD",
+      "text": "Give me another horse: bind up my wounds."
+    },
+    {
+      "number": 175,
+      "speaker": "KING RICHARD",
+      "text": "Have mercy, Jesu!—Soft! I did but dream."
+    },
+    {
+      "number": 176,
+      "speaker": "KING RICHARD",
+      "text": "O coward conscience, how dost thou afflict me!"
+    },
+    {
+      "number": 177,
+      "speaker": "KING RICHARD",
+      "text": "The lights burn blue. It is now dead midnight."
+    },
+    {
+      "number": 178,
+      "speaker": "KING RICHARD",
+      "text": "Cold fearful drops stand on my trembling flesh."
+    },
+    {
+      "number": 179,
+      "speaker": "KING RICHARD",
+      "text": "What do I fear? myself? there’s none else by:"
+    },
+    {
+      "number": 180,
+      "speaker": "KING RICHARD",
+      "text": "Richard loves Richard; that is, I am I."
+    },
+    {
+      "number": 181,
+      "speaker": "KING RICHARD",
+      "text": "Is there a murderer here? No. Yes, I am:"
+    },
+    {
+      "number": 182,
+      "speaker": "KING RICHARD",
+      "text": "Then fly. What, from myself? Great reason why:"
+    },
+    {
+      "number": 183,
+      "speaker": "KING RICHARD",
+      "text": "Lest I revenge. What, myself upon myself?"
+    },
+    {
+      "number": 184,
+      "speaker": "KING RICHARD",
+      "text": "Alack. I love myself. Wherefore? for any good"
+    },
+    {
+      "number": 185,
+      "speaker": "KING RICHARD",
+      "text": "That I myself have done unto myself?"
+    },
+    {
+      "number": 186,
+      "speaker": "KING RICHARD",
+      "text": "O, no! alas, I rather hate myself"
+    },
+    {
+      "number": 187,
+      "speaker": "KING RICHARD",
+      "text": "For hateful deeds committed by myself!"
+    },
+    {
+      "number": 188,
+      "speaker": "KING RICHARD",
+      "text": "I am a villain: yet I lie, I am not."
+    },
+    {
+      "number": 189,
+      "speaker": "KING RICHARD",
+      "text": "Fool, of thyself speak well: fool, do not flatter."
+    },
+    {
+      "number": 190,
+      "speaker": "KING RICHARD",
+      "text": "My conscience hath a thousand several tongues,"
+    },
+    {
+      "number": 191,
+      "speaker": "KING RICHARD",
+      "text": "And every tongue brings in a several tale,"
+    },
+    {
+      "number": 192,
+      "speaker": "KING RICHARD",
+      "text": "And every tale condemns me for a villain."
+    },
+    {
+      "number": 193,
+      "speaker": "KING RICHARD",
+      "text": "Perjury, perjury, in the high’st degree;"
+    },
+    {
+      "number": 194,
+      "speaker": "KING RICHARD",
+      "text": "Murder, stern murder, in the direst degree;"
+    },
+    {
+      "number": 195,
+      "speaker": "KING RICHARD",
+      "text": "All several sins, all used in each degree,"
+    },
+    {
+      "number": 196,
+      "speaker": "KING RICHARD",
+      "text": "Throng to the bar, crying all, Guilty! guilty!"
+    },
+    {
+      "number": 197,
+      "speaker": "KING RICHARD",
+      "text": "I shall despair. There is no creature loves me;"
+    },
+    {
+      "number": 198,
+      "speaker": "KING RICHARD",
+      "text": "And if I die, no soul shall pity me:"
+    },
+    {
+      "number": 199,
+      "speaker": "KING RICHARD",
+      "text": "Nay, wherefore should they, since that I myself"
+    },
+    {
+      "number": 200,
+      "speaker": "KING RICHARD",
+      "text": "Find in myself no pity to myself?"
+    },
+    {
+      "number": 201,
+      "speaker": "KING RICHARD",
+      "text": "Methought the souls of all that I had murder’d"
+    },
+    {
+      "number": 202,
+      "speaker": "KING RICHARD",
+      "text": "Came to my tent; and every one did threat"
+    },
+    {
+      "number": 203,
+      "speaker": "KING RICHARD",
+      "text": "To-morrow’s vengeance on the head of Richard."
+    },
+    {
+      "number": 204,
+      "speaker": "RATCLIFF",
+      "text": "My lord!"
+    },
+    {
+      "number": 204,
+      "speaker": "KING RICHARD",
+      "text": "’Zounds! who is there?"
+    },
+    {
+      "number": 205,
+      "speaker": "RATCLIFF",
+      "text": "Ratcliff, my lord; ’tis I. The early village-cock"
+    },
+    {
+      "number": 206,
+      "speaker": "RATCLIFF",
+      "text": "Hath twice done salutation to the morn;"
+    },
+    {
+      "number": 207,
+      "speaker": "RATCLIFF",
+      "text": "Your friends are up, and buckle on their armour."
+    },
+    {
+      "number": 208,
+      "speaker": "KING RICHARD",
+      "text": "O Ratcliff, I have dream’d a fearful dream!"
+    },
+    {
+      "number": 209,
+      "speaker": "KING RICHARD",
+      "text": "What thinkest thou, will our friends prove all true?"
+    },
+    {
+      "number": 210,
+      "speaker": "RATCLIFF",
+      "text": "No doubt, my lord."
+    },
+    {
+      "number": 210,
+      "speaker": "KING RICHARD",
+      "text": "O Ratcliff, I fear, I fear—"
+    },
+    {
+      "number": 211,
+      "speaker": "RATCLIFF",
+      "text": "Nay, good my lord, be not afraid of shadows."
+    },
+    {
+      "number": 212,
+      "speaker": "KING RICHARD",
+      "text": "By the apostle Paul, shadows to-night"
+    },
+    {
+      "number": 213,
+      "speaker": "KING RICHARD",
+      "text": "Have struck more terror to the soul of Richard"
+    },
+    {
+      "number": 214,
+      "speaker": "KING RICHARD",
+      "text": "Than can the substance of ten thousand soldiers"
+    },
+    {
+      "number": 215,
+      "speaker": "KING RICHARD",
+      "text": "Armed in proof, and led by shallow Richmond."
+    },
+    {
+      "number": 216,
+      "speaker": "KING RICHARD",
+      "text": "It is not yet near day. Come, go with me;"
+    },
+    {
+      "number": 217,
+      "speaker": "KING RICHARD",
+      "text": "Under our tents I’ll play the eaves-dropper,"
+    },
+    {
+      "number": 218,
+      "speaker": "KING RICHARD",
+      "text": "To see if any mean to shrink from me."
+    },
+    {
+      "number": 219,
+      "speaker": "LORDS",
+      "text": "Good morrow, Richmond!"
+    },
+    {
+      "number": 219,
+      "speaker": "RICHMOND",
+      "text": "Cry mercy, lords and watchful gentlemen,"
+    },
+    {
+      "number": 220,
+      "speaker": "RICHMOND",
+      "text": "That you have ta’en a tardy sluggard here."
+    },
+    {
+      "number": 221,
+      "speaker": "LORDS",
+      "text": "How have you slept, my lord?"
+    },
+    {
+      "number": 221,
+      "speaker": "RICHMOND",
+      "text": "The sweetest sleep, and fairest-boding dreams"
+    },
+    {
+      "number": 222,
+      "speaker": "RICHMOND",
+      "text": "That ever enter’d in a drowsy head,"
+    },
+    {
+      "number": 223,
+      "speaker": "RICHMOND",
+      "text": "Have I since your departure had, my lords."
+    },
+    {
+      "number": 224,
+      "speaker": "RICHMOND",
+      "text": "Methought their souls, whose bodies Richard murder’d,"
+    },
+    {
+      "number": 225,
+      "speaker": "RICHMOND",
+      "text": "Came to my tent, and cried on victory:"
+    },
+    {
+      "number": 226,
+      "speaker": "RICHMOND",
+      "text": "I promise you, my soul is very jocund"
+    },
+    {
+      "number": 227,
+      "speaker": "RICHMOND",
+      "text": "In the remembrance of so fair a dream."
+    },
+    {
+      "number": 228,
+      "speaker": "RICHMOND",
+      "text": "How far into the morning is it, lords?"
+    },
+    {
+      "number": 229,
+      "speaker": "LORDS",
+      "text": "Upon the stroke of four."
+    },
+    {
+      "number": 230,
+      "speaker": "RICHMOND",
+      "text": "Why, then ’tis time to arm and give direction."
+    },
+    {
+      "number": 231,
+      "speaker": "KING RICHARD",
+      "text": "What said Northumberland as touching Richmond?"
+    },
+    {
+      "number": 232,
+      "speaker": "RATCLIFF",
+      "text": "That he was never trained up in arms."
+    },
+    {
+      "number": 233,
+      "speaker": "KING RICHARD",
+      "text": "He said the truth: and what said Surrey then?"
+    },
+    {
+      "number": 234,
+      "speaker": "RATCLIFF",
+      "text": "He smiled and said “The better for our purpose.”"
+    },
+    {
+      "number": 235,
+      "speaker": "KING RICHARD",
+      "text": "He was in the right; and so indeed it is. Clock striketh."
+    },
+    {
+      "number": 236,
+      "speaker": "KING RICHARD",
+      "text": "Ten the clock there. Give me a calendar."
+    },
+    {
+      "number": 237,
+      "speaker": "KING RICHARD",
+      "text": "Who saw the sun to-day?"
+    },
+    {
+      "number": 237,
+      "speaker": "RATCLIFF",
+      "text": "Not I, my lord."
+    },
+    {
+      "number": 238,
+      "speaker": "KING RICHARD",
+      "text": "Then he disdains to shine; for by the book"
+    },
+    {
+      "number": 239,
+      "speaker": "KING RICHARD",
+      "text": "He should have braved the east an hour ago:"
+    },
+    {
+      "number": 240,
+      "speaker": "KING RICHARD",
+      "text": "A black day will it be to somebody."
+    },
+    {
+      "number": 241,
+      "speaker": "KING RICHARD",
+      "text": "Ratcliff!"
+    },
+    {
+      "number": 241,
+      "speaker": "RATCLIFF",
+      "text": "My lord?"
+    },
+    {
+      "number": 242,
+      "speaker": "KING RICHARD",
+      "text": "The sun will not be seen to-day;"
+    },
+    {
+      "number": 243,
+      "speaker": "KING RICHARD",
+      "text": "The sky doth frown and lour upon our army."
+    },
+    {
+      "number": 244,
+      "speaker": "KING RICHARD",
+      "text": "I would these dewy tears were from the ground."
+    },
+    {
+      "number": 245,
+      "speaker": "KING RICHARD",
+      "text": "Not shine to-day! Why, what is that to me"
+    },
+    {
+      "number": 246,
+      "speaker": "KING RICHARD",
+      "text": "More than to Richmond? for the selfsame heaven"
+    },
+    {
+      "number": 247,
+      "speaker": "KING RICHARD",
+      "text": "That frowns on me looks sadly upon him."
+    },
+    {
+      "number": 248,
+      "speaker": "NORFOLK",
+      "text": "Arm, arm, my lord; the foe vaunts in the field."
+    },
+    {
+      "number": 249,
+      "speaker": "KING RICHARD",
+      "text": "Come, bustle, bustle; caparison my horse."
+    },
+    {
+      "number": 250,
+      "speaker": "KING RICHARD",
+      "text": "Call up Lord Stanley, bid him bring his power:"
+    },
+    {
+      "number": 251,
+      "speaker": "KING RICHARD",
+      "text": "I will lead forth my soldiers to the plain,"
+    },
+    {
+      "number": 252,
+      "speaker": "KING RICHARD",
+      "text": "And thus my battle shall be ordered:"
+    },
+    {
+      "number": 253,
+      "speaker": "KING RICHARD",
+      "text": "My foreward shall be drawn out all in length,"
+    },
+    {
+      "number": 254,
+      "speaker": "KING RICHARD",
+      "text": "Consisting equally of horse and foot;"
+    },
+    {
+      "number": 255,
+      "speaker": "KING RICHARD",
+      "text": "Our archers shall be placed in the midst:"
+    },
+    {
+      "number": 256,
+      "speaker": "KING RICHARD",
+      "text": "John Duke of Norfolk, Thomas Earl of Surrey,"
+    },
+    {
+      "number": 257,
+      "speaker": "KING RICHARD",
+      "text": "Shall have the leading of this foot and horse."
+    },
+    {
+      "number": 258,
+      "speaker": "KING RICHARD",
+      "text": "They thus directed, we will follow"
+    },
+    {
+      "number": 259,
+      "speaker": "KING RICHARD",
+      "text": "In the main battle, whose puissance on either side"
+    },
+    {
+      "number": 260,
+      "speaker": "KING RICHARD",
+      "text": "Shall be well winged with our chiefest horse."
+    },
+    {
+      "number": 261,
+      "speaker": "KING RICHARD",
+      "text": "This, and Saint George to boot! What think’st thou, Norfolk?"
+    },
+    {
+      "number": 262,
+      "speaker": "NORFOLK",
+      "text": "A good direction, warlike sovereign."
+    },
+    {
+      "number": 263,
+      "speaker": "NORFOLK",
+      "text": "This found I on my tent this morning. He showeth him a paper."
+    },
+    {
+      "number": 264,
+      "speaker": "KING RICHARD",
+      "text": "“Jockey of Norfolk, be not too bold,"
+    },
+    {
+      "number": 265,
+      "speaker": "KING RICHARD",
+      "text": "For Dickon thy master is bought and sold.”"
+    },
+    {
+      "number": 266,
+      "speaker": "KING RICHARD",
+      "text": "A thing devised by the enemy."
+    },
+    {
+      "number": 267,
+      "speaker": "KING RICHARD",
+      "text": "Go, gentleman, every man unto his charge:"
+    },
+    {
+      "number": 268,
+      "speaker": "KING RICHARD",
+      "text": "Let not our babbling dreams affright our souls:"
+    },
+    {
+      "number": 269,
+      "speaker": "KING RICHARD",
+      "text": "Conscience is but a word that cowards use,"
+    },
+    {
+      "number": 270,
+      "speaker": "KING RICHARD",
+      "text": "Devised at first to keep the strong in awe:"
+    },
+    {
+      "number": 271,
+      "speaker": "KING RICHARD",
+      "text": "Our strong arms be our conscience, swords our law."
+    },
+    {
+      "number": 272,
+      "speaker": "KING RICHARD",
+      "text": "March on, join bravely, let us to’t pell-mell;"
+    },
+    {
+      "number": 273,
+      "speaker": "KING RICHARD",
+      "text": "If not to heaven, then hand in hand to hell."
+    },
+    {
+      "number": 274,
+      "speaker": "MESSENGER",
+      "text": "My lord, he doth deny to come."
+    },
+    {
+      "number": 275,
+      "speaker": "KING RICHARD",
+      "text": "Off with his son George’s head!"
+    },
+    {
+      "number": 276,
+      "speaker": "NORFOLK",
+      "text": "My lord, the enemy is past the marsh:"
+    },
+    {
+      "number": 277,
+      "speaker": "NORFOLK",
+      "text": "After the battle let George Stanley die."
+    },
+    {
+      "number": 278,
+      "speaker": "KING RICHARD",
+      "text": "A thousand hearts are great within my bosom:"
+    },
+    {
+      "number": 279,
+      "speaker": "KING RICHARD",
+      "text": "Advance our standards, set upon our foes;"
+    },
+    {
+      "number": 280,
+      "speaker": "KING RICHARD",
+      "text": "Our ancient word of courage, fair Saint George,"
+    },
+    {
+      "number": 281,
+      "speaker": "KING RICHARD",
+      "text": "Inspire us with the spleen of fiery dragons!"
+    },
+    {
+      "number": 282,
+      "speaker": "KING RICHARD",
+      "text": "Upon them! victory sits on our helms."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter King Richard in arms, with Norfolk, the Earl of Surrey, and others."
+    },
+    {
+      "after_line": 18,
+      "text": "Exeunt."
+    },
+    {
+      "after_line": 18,
+      "text": "Enter, on the other side of the field, Richmond, Sir William Brandon, Oxford, and others. Some of the Soldiers pitch Richmond’s tent."
+    },
+    {
+      "after_line": 46,
+      "text": "Enter, to his tent, King Richard, Norfolk, Ratcliff, Catesby, and others."
+    },
+    {
+      "after_line": 56,
+      "text": "Exit."
+    },
+    {
+      "after_line": 60,
+      "text": "Exit Catesby."
+    },
+    {
+      "after_line": 75,
+      "text": "Exeunt Ratcliff and the other Attendants."
+    },
+    {
+      "after_line": 75,
+      "text": "Enter Derby to Richmond in his tent, Lords and others attending."
+    },
+    {
+      "after_line": 104,
+      "text": "Exeunt all but Richmond."
+    },
+    {
+      "after_line": 114,
+      "text": "Enter the Ghost of Prince Edward, son to Henry the Sixth."
+    },
+    {
+      "after_line": 120,
+      "text": "Enter the Ghost of Henry the Sixth."
+    },
+    {
+      "after_line": 127,
+      "text": "Enter the Ghost of Clarence."
+    },
+    {
+      "after_line": 135,
+      "text": "Enter the Ghosts of Rivers, Grey, and Vaughan."
+    },
+    {
+      "after_line": 142,
+      "text": "Enter the Ghost of Hastings."
+    },
+    {
+      "after_line": 147,
+      "text": "Enter the Ghosts of the two young Princes."
+    },
+    {
+      "after_line": 155,
+      "text": "Enter the Ghost of Lady Anne."
+    },
+    {
+      "after_line": 163,
+      "text": "Enter the Ghost of Buckingham."
+    },
+    {
+      "after_line": 203,
+      "text": "Enter Ratcliff."
+    },
+    {
+      "after_line": 218,
+      "text": "Exeunt."
+    },
+    {
+      "after_line": 218,
+      "text": "Enter the Lords to Richmond, sitting in his tent."
+    },
+    {
+      "after_line": 230,
+      "text": "His oration to his soldiers."
+    },
+    {
+      "after_line": 230,
+      "text": "More than I have said, loving countrymen, The leisure and enforcement of the time Forbids to dwell upon: yet remember this, God and our good cause fight upon our side; The prayers of holy saints and wronged souls, Like high-rear’d bulwarks, stand before our faces; Richard except, those whom we fight against Had rather have us win than him they follow: For what is he they follow? truly, gentlemen, A bloody tyrant and a homicide; One raised in blood, and one in blood establish’d; One that made means to come by what he hath, And slaughter’d those that were the means to help him; A base foul stone, made precious by the foil Of England’s chair, where he is falsely set; One that hath ever been God’s enemy: Then, if you fight against God’s enemy, God will in justice ward you as his soldiers; If you do sweat to put a tyrant down, You sleep in peace, the tyrant being slain; If you do fight against your country’s foes, Your country’s fat shall pay your pains the hire; If you do fight in safeguard of your wives, Your wives shall welcome home the conquerors; If you do free your children from the sword, Your children’s children quit it in your age. Then, in the name of God and all these rights, Advance your standards, draw your willing swords. For me, the ransom of my bold attempt Shall be this cold corpse on the earth’s cold face; But if I thrive, the gain of my attempt The least of you shall share his part thereof. Sound drums and trumpets boldly and cheerfully; God and Saint George! Richmond and victory! Exeunt."
+    },
+    {
+      "after_line": 230,
+      "text": "Reenter King Richard, Ratcliff, Attendants and Forces."
+    },
+    {
+      "after_line": 247,
+      "text": "Enter Norfolk."
+    },
+    {
+      "after_line": 264,
+      "text": "Reads."
+    },
+    {
+      "after_line": 273,
+      "text": "His oration to his Army."
+    },
+    {
+      "after_line": 273,
+      "text": "What shall I say more than I have inferr’d? Remember whom you are to cope withal; A sort of vagabonds, rascals, and runaways, A scum of Bretons, and base lackey peasants, Whom their o’er-cloyed country vomits forth To desperate ventures and assured destruction. You sleeping safe, they bring to you unrest; You having lands, and blest with beauteous wives, They would restrain the one, distain the other. And who doth lead them but a paltry fellow, Long kept in Bretagne at our mother’s cost? A milk-sop, one that never in his life Felt so much cold as over shoes in snow? Let’s whip these stragglers o’er the seas again; Lash hence these overweening rags of France, These famish’d beggars, weary of their lives; Who, but for dreaming on this fond exploit, For want of means, poor rats, had hang’d themselves: If we be conquer’d, let men conquer us, And not these bastard Bretons; whom our fathers Have in their own land beaten, bobb’d, and thump’d, And in record, left them the heirs of shame. Shall these enjoy our lands? lie with our wives? Ravish our daughters? Drum afar off. Hark! I hear their drum. Fight, gentlemen of England! fight, bold yoemen! Draw, archers, draw your arrows to the head! Spur your proud horses hard, and ride in blood; Amaze the welkin with your broken staves!"
+    },
+    {
+      "after_line": 273,
+      "text": "Enter a Messenger."
+    },
+    {
+      "after_line": 273,
+      "text": "What says Lord Stanley? will he bring his power?"
+    },
+    {
+      "after_line": 282,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act5_scene3_gloss1",
+      "line": 1,
+      "phrase": "Bosworth field",
+      "definition": "Bosworth Field, Leicestershire — 22 August 1485; last battle of the Wars of the Roses. Richard's death site"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss2",
+      "line": 5,
+      "phrase": "must have knocks",
+      "definition": "must trade blows — Richard's blunt soldier-talk"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss3",
+      "line": 11,
+      "phrase": "battalion trebles that account",
+      "definition": "our force is three times theirs — historically Richard had ~10,000 to Richmond's ~5,000"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss4",
+      "line": 12,
+      "phrase": "king’s name is a tower of strength",
+      "definition": "the very title of king gives might — proverbial; cf. Proverbs 18:10"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss5",
+      "line": 16,
+      "phrase": "men of sound direction",
+      "definition": "men of reliable judgement"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss6",
+      "line": 19,
+      "phrase": "weary sun hath made a golden set",
+      "definition": "the tired sun has set in gold — Richmond's portent-reading, favourable"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss7",
+      "line": 20,
+      "phrase": "fiery car",
+      "definition": "the sun as a fiery chariot — classical image (Apollo/Phaethon)"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss8",
+      "line": 22,
+      "phrase": "Sir William Brandon, you shall bear my standard",
+      "definition": "Brandon was Richmond's standard-bearer — historically killed by Richard in single combat on the field"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss9",
+      "line": 25,
+      "phrase": "Limit each leader to his several charge",
+      "definition": "assign each commander his specific duty"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss10",
+      "line": 35,
+      "phrase": "colours",
+      "definition": "military banners — identifying a regiment"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss11",
+      "line": 50,
+      "phrase": "beaver",
+      "definition": "the movable front-piece of a helmet"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss12",
+      "line": 55,
+      "phrase": "Stir with the lark",
+      "definition": "rise at dawn — proverbial"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss13",
+      "line": 60,
+      "phrase": "blind cave of eternal night",
+      "definition": "the grave — death as a dark cave"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss14",
+      "line": 62,
+      "phrase": "white Surrey",
+      "definition": "Richard's warhorse, named for its pale colouring and origin (the county of Surrey)"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss15",
+      "line": 63,
+      "phrase": "staves",
+      "definition": "spears or lances"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss16",
+      "line": 67,
+      "phrase": "cock-shut time",
+      "definition": "dusk; the time when poultry are shut up — a rural time-marker"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss17",
+      "line": 70,
+      "phrase": "alacrity of spirit",
+      "definition": "briskness, quickness of mind — Richard notes his own dwindling"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss18",
+      "line": 80,
+      "phrase": "by attorney, bless thee from thy mother",
+      "definition": "by proxy, give you your mother's blessing — Margaret Beaufort in absentia"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss19",
+      "line": 83,
+      "phrase": "flaky darkness breaks within the east",
+      "definition": "dawn breaks in flakes (the first grey streaks) in the east"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss20",
+      "line": 86,
+      "phrase": "arbitrement",
+      "definition": "arbitration, decision — the battle as formal legal judgement"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss21",
+      "line": 87,
+      "phrase": "mortal-staring war",
+      "definition": "war that stares with deadly eyes"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss22",
+      "line": 102,
+      "phrase": "leaden slumber peise me down",
+      "definition": "heavy sleep weigh me down — 'peise' = weigh"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss23",
+      "line": 107,
+      "phrase": "bruising irons of wrath",
+      "definition": "bruising weapons of God's wrath — Richmond asks God to arm his soldiers"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss24",
+      "line": 110,
+      "phrase": "ministers of chastisement",
+      "definition": "agents of punishment"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss25",
+      "line": 113,
+      "phrase": "windows of mine eyes",
+      "definition": "eyelids — the 'windows' through which the soul looks out (cf. 1.2.12)"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss26",
+      "line": 115,
+      "phrase": "Let me sit heavy on thy soul",
+      "definition": "let me weigh on your conscience — the refrain each ghost delivers, with variations"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss27",
+      "line": 117,
+      "phrase": "At Tewksbury",
+      "definition": "the 1471 battle where Richard killed Prince Edward of Lancaster — the play's recurrent crime-reference"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss28",
+      "line": 117,
+      "phrase": "despair, therefore, and die",
+      "definition": "each ghost's theological curse — despair (the sin against the Holy Spirit) = damnation without repentance"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss29",
+      "line": 123,
+      "phrase": "Think on the Tower and me",
+      "definition": "Henry VI's murder at the Tower, 1471 — dramatized in 3 Henry VI 5.6"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss30",
+      "line": 129,
+      "phrase": "wash’d to death with fulsome wine",
+      "definition": "drowned in cloying wine — Clarence's malmsey-butt death (1.4.135)"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss31",
+      "line": 137,
+      "phrase": "Rivers, that died at Pomfret",
+      "definition": "Rivers names his own death-site (cf. 3.3)"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss32",
+      "line": 148,
+      "phrase": "cousins smother’d in the Tower",
+      "definition": "the two young princes — cousins (kin) to Richmond through both York and Lancaster lines"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss33",
+      "line": 149,
+      "phrase": "Let us be lead within thy bosom",
+      "definition": "let us be lead within your breast — leaden weight, not lead as in metal direction"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss34",
+      "line": 153,
+      "phrase": "boar’s annoy",
+      "definition": "the boar's harm — 'annoy' = injury"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss35",
+      "line": 158,
+      "phrase": "perturbations",
+      "definition": "troublings, disturbances"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss36",
+      "line": 169,
+      "phrase": "Fainting, despair; despairing, yield thy breath",
+      "definition": "as you faint, despair; as you despair, die — Buckingham's curse-chain"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss37",
+      "line": 170,
+      "phrase": "died for hope ere I could lend thee aid",
+      "definition": "Buckingham died hoping to aid Richmond, before he could act"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss38",
+      "line": 174,
+      "phrase": "Give me another horse",
+      "definition": "Richard waking from the ghost-dream — his first disoriented command anticipates 5.4"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss39",
+      "line": 175,
+      "phrase": "Soft",
+      "definition": "hold; wait — an interjection meaning 'stop and think'"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss40",
+      "line": 177,
+      "phrase": "lights burn blue",
+      "definition": "candles burn blue — the folk-sign of ghostly presence or death"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss41",
+      "line": 180,
+      "phrase": "Richard loves Richard; that is, I am I",
+      "definition": "the speech's famous solipsistic tautology — Richard's selfhood disintegrating into empty equation"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss42",
+      "line": 188,
+      "phrase": "I am a villain: yet I lie, I am not",
+      "definition": "Richard's logical impasse: he is a villain AND he denies it — the self-division the ghosts have produced"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss43",
+      "line": 190,
+      "phrase": "conscience hath a thousand several tongues",
+      "definition": "my conscience has a thousand distinct tongues — each a separate accusation. The clearest moment of interiority the play grants Richard"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss44",
+      "line": 196,
+      "phrase": "Throng to the bar",
+      "definition": "crowd to the court-bar — Richard's sins as plaintiffs"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss45",
+      "line": 197,
+      "phrase": "I shall despair",
+      "definition": "theological despair (cf. 1.2.84; the ghosts' curse achieved) — Richard recognizes his damnation"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss46",
+      "line": 207,
+      "phrase": "buckle on their armour",
+      "definition": "strap on their armor for battle"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss47",
+      "line": 211,
+      "phrase": "afraid of shadows",
+      "definition": "afraid of unreal things — Ratcliff's dismissal"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss48",
+      "line": 215,
+      "phrase": "Armed in proof",
+      "definition": "armed in tested (proven) armor"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss49",
+      "line": 217,
+      "phrase": "eaves-dropper",
+      "definition": "one who listens under the eaves of a house — here Richard as spy on his own camp"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss50",
+      "line": 225,
+      "phrase": "cried on victory",
+      "definition": "cried out for victory (to be granted to Richmond)"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss51",
+      "line": 226,
+      "phrase": "jocund",
+      "definition": "cheerful, merry"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss52",
+      "line": 248,
+      "phrase": "foe vaunts in the field",
+      "definition": "the enemy boasts on the battlefield — 'vaunts' = boasts loudly"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss53",
+      "line": 249,
+      "phrase": "caparison my horse",
+      "definition": "put the caparison (ornamental cloth and armor) on my horse"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss54",
+      "line": 253,
+      "phrase": "foreward",
+      "definition": "vanguard; front division of an army"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss55",
+      "line": 259,
+      "phrase": "puissance",
+      "definition": "military might; force"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss56",
+      "line": 261,
+      "phrase": "Saint George to boot",
+      "definition": "St George (England's patron saint) in addition — war-cry"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss57",
+      "line": 264,
+      "phrase": "Jockey of Norfolk",
+      "definition": "the mocking placard mounted on Norfolk's tent — 'Jockey' = familiar form of 'John', i.e. Duke John of Norfolk"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss58",
+      "line": 265,
+      "phrase": "Dickon thy master is bought and sold",
+      "definition": "'Dickon' = familiar for 'Richard'; the couplet is historical, cited by Holinshed"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss59",
+      "line": 269,
+      "phrase": "Conscience is but a word that cowards use",
+      "definition": "Richard's notorious dismissal of conscience — his public counter to the 'thousand tongues' soliloquy's private recognition"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss60",
+      "line": 272,
+      "phrase": "pell-mell",
+      "definition": "in confused, headlong fashion"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss61",
+      "line": 273,
+      "phrase": "If not to heaven, then hand in hand to hell",
+      "definition": "Richard's battle-motto — the most morally naked line in the play"
+    },
+    {
+      "id": "richard_iii_act5_scene3_gloss62",
+      "line": 281,
+      "phrase": "spleen of fiery dragons",
+      "definition": "fierce passion of dragons — the spleen was the seat of fury"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act5_scene3_ann1",
+      "line_start": 114,
+      "line_end": 173,
+      "citation_display": "Richard III 5.3.114–173",
+      "category": "structural",
+      "title": "The ghost procession: Shakespeare's most extensive haunting",
+      "body": "Ten ghosts appear to Richard in turn — Prince Edward of Lancaster, Henry VI, Clarence, Rivers, Grey, Vaughan, Hastings, the two young Princes (collectively), Lady Anne, and Buckingham — in the order of their deaths within the play's chronology. This is the most extensive ghost sequence in Shakespeare; the nearest comparisons are Banquo's single appearance in Macbeth 3.4 and the Caesar-visitation in Julius Caesar 4.3. The ghost scene's basic form is strictly formal: each ghost addresses Richard first (\"despair, and die!\") and then turns to Richmond, sleeping in his own tent at the other side of the stage, to bless him (\"live, and flourish!\"). The symmetry is the structure. Every ghost curses Richard in the vocabulary Margaret began (\"despair\"), blesses Richmond in the vocabulary the Duchess's maternal prayer has set up, and exits. The curse-chain Margaret started in 1.3, the maternal prayer the Duchess added in 4.4, and the souls of the murdered converge here as a single ledger-settlement.",
+      "sources": [
+        "Wolfgang Clemen, A Commentary on Shakespeare's Richard III (1968)",
+        "Marjorie Garber, Shakespeare's Ghost Writers (1987)",
+        "Stephen Greenblatt, Hamlet in Purgatory (2001)"
+      ]
+    },
+    {
+      "id": "richard_iii_act5_scene3_ann2",
+      "line_start": 114,
+      "line_end": 173,
+      "citation_display": "Richard III 5.3.114–173",
+      "category": "thematic",
+      "title": "The moral-accounting function of the ghosts",
+      "body": "Each ghost names a specific murder. Prince Edward cites Tewkesbury. Henry VI cites his own murder at the Tower (1471). Clarence cites the malmsey-butt drowning. Rivers, Grey, and Vaughan cite Pomfret. Hastings cites the council-chamber trap. The Young Princes cite the smothering in the Tower. Anne cites her own poisoned marriage-bed. Buckingham cites his betrayal at Salisbury. The sequence is the play's ledger, recited in order, one death at a time. The ghosts are not merely frightening — they are a courtroom. Each arrives to testify specifically. Richard's \"My conscience hath a thousand several tongues, / And every tongue brings in a several tale, / And every tale condemns me for a villain\" (190–192) names what the ghost sequence has just enacted: his conscience is not a single voice but a courtroom of testimonies, each specific, each separate. Shakespeare has given us in stage form what Richard will immediately re-describe in his own words.",
+      "sources": [
+        "Wolfgang Clemen, A Commentary on Shakespeare's Richard III (1968)",
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)",
+        "Maus, Katharine Eisaman, Inwardness and Theater in the English Renaissance (1995)"
+      ]
+    },
+    {
+      "id": "richard_iii_act5_scene3_ann3",
+      "line_start": 174,
+      "line_end": 207,
+      "citation_display": "Richard III 5.3.174–207",
+      "category": "close_reading",
+      "title": "\"I am I\" — the soliloquy of self-division",
+      "body": "Richard's waking soliloquy is the most philosophically interesting speech in the play. \"Richard loves Richard; that is, I am I\" is a formal tautology — the self equaling the self — but it fails as a consolation. He immediately multiplies: \"Is there a murderer here? No. Yes, I am: / Then fly. What, from myself?\" The speech stages a self that cannot hold together. The pronouns themselves unravel: myself, I myself, I, I. \"I am a villain: yet I lie, I am not.\" He cannot both condemn and absolve himself in consistent voice. This is the interiority the play has been pointing toward since 1.1 and has so far only given us in inverted form (the Second Murderer in 1.4, Anne in 4.1). Richard's soliloquy is the play's formal admission that Richard has one. The cost is the coherence of the I that had spoken so fluidly for four acts. The ghosts have not only indicted him; they have dispersed him across the pronouns he used to control.",
+      "sources": [
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)",
+        "Maynard Mack, \"The Jacobean Shakespeare: Some Observations on the Construction of the Tragedies\" (1960)",
+        "Katharine Eisaman Maus, Inwardness and Theater in the English Renaissance (1995)"
+      ]
+    },
+    {
+      "id": "richard_iii_act5_scene3_ann4",
+      "line_start": 190,
+      "line_end": 203,
+      "citation_display": "Richard III 5.3.190–203",
+      "category": "thematic",
+      "title": "\"A thousand several tongues\" — interiority as courtroom",
+      "body": "The soliloquy's formal peak is \"My conscience hath a thousand several tongues, / And every tongue brings in a several tale, / And every tale condemns me for a villain.\" The three \"several\" (= separate) tongues are the exact form of the ghost procession: distinct voices, distinct tales, one verdict. Shakespeare converts the stage convention of serial haunting into the pattern of conscience itself. What is remarkable is that the speech's eventual conclusion — \"There is no creature loves me; / And if I die, no soul shall pity me: / Nay, wherefore should they, since that I myself / Find in myself no pity to myself?\" — is not self-pity but accurate self-diagnosis. Richard has understood. The play's morality does not require him to repent; it requires him to see. He sees, and it changes nothing about his choice in the coming battle. This is perhaps the play's darkest theological move.",
+      "sources": [
+        "Katharine Eisaman Maus, Inwardness and Theater in the English Renaissance (1995)",
+        "A. C. Bradley, Shakespearean Tragedy (1904)",
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)"
+      ]
+    },
+    {
+      "id": "richard_iii_act5_scene3_ann5",
+      "line_start": 197,
+      "line_end": 202,
+      "citation_display": "Richard III 5.3.197–202",
+      "category": "historical",
+      "title": "\"I shall despair\" — the specific theological weight",
+      "body": "Richard's \"I shall despair\" is the precise theological terminus the ghosts have been aiming at. Within Christian tradition, despair (Latin desperatio) is the sin against the Holy Spirit — the refusal to believe that one's sins are forgivable, which therefore precludes repentance and guarantees damnation. Unlike pride, envy, or murder, despair cannot itself be forgiven because it refuses the possibility of forgiveness. This is why every ghost has used the exact phrase \"despair, and die!\" The ghosts are not wishing Richard physical death; they are wishing him a specific kind of death — unrepentant. Richard's admission \"I shall despair\" signals that he has accepted the curse's theological operation. He cannot repent now. The play has placed him in the one condition medieval-Christian doctrine identified as beyond rescue. Whether Shakespeare endorsed this theology or dramatized it because his audience held it is scholarly debate; what the play demonstrates is that its moral world requires the doctrine to work.",
+      "sources": [
+        "Susan Snyder, \"The Left Hand of God: Despair in Medieval and Renaissance Tradition\" (1965)",
+        "Debora K. Shuger, Habits of Thought in the English Renaissance (1990)",
+        "Richard Strier, The Unrepentant Renaissance (2011)"
+      ]
+    },
+    {
+      "id": "richard_iii_act5_scene3_ann6",
+      "line_start": 264,
+      "line_end": 273,
+      "citation_display": "Richard III 5.3.264–273",
+      "category": "close_reading",
+      "title": "\"Conscience is but a word that cowards use\"",
+      "body": "Richard's oration to his soldiers includes the couplet \"Conscience is but a word that cowards use, / Devised at first to keep the strong in awe: / Our strong arms be our conscience, swords our law.\" The lines are Richard's most explicitly nihilist public speech. They also stand in direct contradiction to the soliloquy he delivered privately moments earlier (\"A thousand several tongues\"). Shakespeare gives us Richard's public self and private self within a few hundred lines and lets the gap speak. He is lying to his troops and knows he is lying. The \"Jockey of Norfolk\" placard — \"Jockey of Norfolk, be not too bold, / For Dickon thy master is bought and sold\" — mounted on Norfolk's tent and dismissed as \"A thing devised by the enemy,\" continues the motif. Richard is surrounded by warnings he is now refusing to hear after having heard them acutely just hours before. The tragedy of the final act is that Richard has seen clearly and chosen anyway.",
+      "sources": [
+        "Stephen Greenblatt, Tyrant: Shakespeare on Politics (2018)",
+        "A. P. Rossiter, Angel with Horns (1961)",
+        "Wolfgang Clemen, A Commentary on Shakespeare's Richard III (1968)"
+      ]
+    },
+    {
+      "id": "richard_iii_act5_scene3_ann7",
+      "line_start": 218,
+      "line_end": 282,
+      "citation_display": "Richard III 5.3.218–282",
+      "category": "structural",
+      "title": "Richmond's prayer mirrors Richard's soliloquy",
+      "body": "Shakespeare stages the two commanders' nights in tight structural parallel. Each is visited by the same ghosts; each delivers a pre-battle speech. Richmond's prayer before sleep (105–113) — \"O Thou, whose captain I account myself, / Look on my forces with a gracious eye\" — asks God to \"make us thy ministers of chastisement.\" His post-ghost waking is the mirror-opposite of Richard's: \"my soul is very jocund / In the remembrance of so fair a dream.\" Same ghosts, opposite effects. Richmond's public oration to his troops (225–272) casts the battle as defence of \"God's enemies\" against \"foreign mercenaries,\" framing the Tudor arrival as national restoration. The parallel structure is doing particular theological work: the same supernatural visitation blesses one and curses the other, because the providential order recognizes the two men differently. Whether the audience must endorse this claim is another matter — but the scene asks us to see its shape.",
+      "sources": [
+        "E. M. W. Tillyard, Shakespeare's History Plays (1944)",
+        "Phyllis Rackin, Stages of History (1990)",
+        "Wolfgang Clemen, A Commentary on Shakespeare's Richard III (1968)"
+      ]
+    },
+    {
+      "id": "richard_iii_act5_scene3_ann8",
+      "line_start": 176,
+      "line_end": 202,
+      "citation_display": "Richard III 5.3.176–202",
+      "category": "thematic",
+      "title": "The ghosts as Shakespeare's laboratory for later tragedies",
+      "body": "This scene is where Shakespeare first stages the essential pattern of tragic interiority that he will refine in Macbeth's banquet scene (Banquo's ghost) and Hamlet's encounters with his father. The technique — the sinner's recognition as a procession of specific indictments rather than a single voice of doom — is here perfected. Richard's \"thousand several tongues\" will reappear in Macbeth's \"the multitudinous seas incarnadine\" and Lady Macbeth's \"all the perfumes of Arabia.\" The idea that guilt is serial, specific, and cumulative, and that recognition is not rescue, is the doctrine of the mature tragedies working itself out here in early form. What is different in Richard III is that Shakespeare allows the ghosts to be literal — they arrive, they speak, they exit — whereas in the later tragedies the ghosts will become (or threaten to become) hallucinatory. Here Shakespeare uses medieval stage convention without apology; in the later plays he will interrogate the convention itself.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)",
+        "Marjorie Garber, Shakespeare's Ghost Writers (1987)",
+        "Stephen Greenblatt, Hamlet in Purgatory (2001)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act5_scene3_q1",
+      "kind": "structural",
+      "prompt": "How is the ghost procession in 5.3 formally organized?",
+      "options": [
+        "Each ghost speaks only once, with no structural pattern",
+        "Each ghost curses Richard (\"despair, and die!\") and then turns to bless the sleeping Richmond (\"live, and flourish!\") — a double address in strict symmetry",
+        "The ghosts speak together as a chorus in unison",
+        "The ghosts speak only to Richmond, not to Richard"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 115,
+      "anchor_line_end": 173
+    },
+    {
+      "id": "richard_iii_act5_scene3_q2",
+      "kind": "theme",
+      "prompt": "What is the dramatic function of the ghost procession?",
+      "options": [
+        "To provide visual spectacle before the battle",
+        "To serve as a moral ledger — each ghost naming a specific murder, together recited in chronological order, enacting conscience as a courtroom of specific testimonies",
+        "To confirm that Richard will die the next day",
+        "To give Richmond a prophetic dream of victory"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 115,
+      "anchor_line_end": 173
+    },
+    {
+      "id": "richard_iii_act5_scene3_q3",
+      "kind": "close_reading",
+      "prompt": "Richard's soliloquy begins \"Richard loves Richard; that is, I am I.\" What does the speech dramatize?",
+      "options": [
+        "Richard's settled self-knowledge",
+        "Self-division: a self that cannot hold together — the pronouns unravel, he can neither condemn nor absolve himself in consistent voice, the I of four acts disperses under the ghosts' indictments",
+        "Richard's new resolve to rule better",
+        "A religious conversion"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 179,
+      "anchor_line_end": 200
+    },
+    {
+      "id": "richard_iii_act5_scene3_q4",
+      "kind": "thematic",
+      "prompt": "\"My conscience hath a thousand several tongues\" (190–192) does what formally?",
+      "options": [
+        "Restates a proverb from Ecclesiastes",
+        "Converts the stage convention of serial haunting (the ghost procession) into the pattern of conscience itself — distinct voices, distinct tales, one verdict",
+        "Predicts the number of soldiers in Richmond's army",
+        "Refers to the number of Senators in Rome"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 190,
+      "anchor_line_end": 192
+    },
+    {
+      "id": "richard_iii_act5_scene3_q5",
+      "kind": "historical",
+      "prompt": "Why is Richard's \"I shall despair\" theologically significant?",
+      "options": [
+        "It is idiomatic, meaning only temporary discouragement",
+        "In Christian tradition, despair (desperatio) is the sin against the Holy Spirit — refusal of forgiveness, which precludes repentance and guarantees damnation. Every ghost's \"despair, and die!\" aims at this specific theological terminus",
+        "It marks Richard's conversion to Calvinism",
+        "It is a quotation from Martin Luther"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 197,
+      "anchor_line_end": 197
+    },
+    {
+      "id": "richard_iii_act5_scene3_q6",
+      "kind": "close_reading",
+      "prompt": "Richard's public oration — \"Conscience is but a word that cowards use\" — contradicts what?",
+      "options": [
+        "A specific statute in Edwardian law",
+        "His own private soliloquy moments earlier (\"A thousand several tongues\") — Shakespeare gives us Richard's public and private selves within a few hundred lines and lets the gap speak",
+        "Richmond's rallying speech",
+        "An earlier promise to his mother"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 269,
+      "anchor_line_end": 271
+    },
+    {
+      "id": "richard_iii_act5_scene3_q7",
+      "kind": "structural",
+      "prompt": "Richmond's post-ghost waking (225–228) stands in what relation to Richard's?",
+      "options": [
+        "The same: both are terrified",
+        "Mirror-opposite: same ghosts, opposite effects — Richmond's soul is \"very jocund\" while Richard despairs, staging the providential order's differential recognition of the two men",
+        "Unrelated, occurring in separate acts",
+        "Briefer and less developed"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 224,
+      "anchor_line_end": 228
+    },
+    {
+      "id": "richard_iii_act5_scene3_q8",
+      "kind": "theme",
+      "prompt": "The ghost scene is most important as Shakespeare's early laboratory for which of his later plays' techniques?",
+      "options": [
+        "The comic subplots of Love's Labour's Lost",
+        "The inward recognition structures of Macbeth and Hamlet — guilt as serial, specific, and cumulative, and recognition as not rescue",
+        "The pastoral conventions of As You Like It",
+        "The historical method of the Henry IV plays"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 176,
+      "anchor_line_end": 202
+    },
+    {
+      "id": "richard_iii_act5_scene3_q9",
+      "kind": "inference",
+      "prompt": "When Richard says \"Is there a murderer here? No. Yes, I am: / Then fly. What, from myself?\" the syntactic feature most indicative of his breakdown is:",
+      "options": [
+        "The use of short questions — rhetorical convention only",
+        "The pronouns unravelling — \"myself, I myself, I, I\" — showing a self that can no longer sustain the coherent I of earlier acts",
+        "The shift from iambic pentameter to prose",
+        "The absence of biblical quotation"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 181,
+      "anchor_line_end": 187
+    },
+    {
+      "id": "richard_iii_act5_scene3_q10",
+      "kind": "close_reading",
+      "prompt": "What is the paper Norfolk finds on his tent in the morning (263–265)?",
+      "options": [
+        "A royal commission from Richard",
+        "A jeering couplet: \"Jockey of Norfolk, be not too bold, / For Dickon thy master is bought and sold\" — warning Norfolk that Richard's army is betrayed",
+        "A priest's absolution certificate",
+        "A Welsh battle-song"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 263,
+      "anchor_line_end": 265
+    }
+  ]
+}

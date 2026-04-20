@@ -1,0 +1,1297 @@
+{
+  "section_id": "julius_caesar_act1_scene3",
+  "work_id": "julius-caesar",
+  "sequence": 3,
+  "act": 1,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "The same. A street",
+  "line_count": 171,
+  "word_count": 1284,
+  "est_read_minutes": 6,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CICERO",
+      "text": "Good even, Casca: brought you Caesar home?"
+    },
+    {
+      "number": 2,
+      "speaker": "CICERO",
+      "text": "Why are you breathless? and why stare you so?"
+    },
+    {
+      "number": 3,
+      "speaker": "CASCA",
+      "text": "Are not you moved, when all the sway of earth"
+    },
+    {
+      "number": 4,
+      "speaker": "CASCA",
+      "text": "Shakes like a thing unfirm? O Cicero,"
+    },
+    {
+      "number": 5,
+      "speaker": "CASCA",
+      "text": "I have seen tempests, when the scolding winds"
+    },
+    {
+      "number": 6,
+      "speaker": "CASCA",
+      "text": "Have rived the knotty oaks, and I have seen"
+    },
+    {
+      "number": 7,
+      "speaker": "CASCA",
+      "text": "The ambitious ocean swell and rage and foam,"
+    },
+    {
+      "number": 8,
+      "speaker": "CASCA",
+      "text": "To be exalted with the threatening clouds:"
+    },
+    {
+      "number": 9,
+      "speaker": "CASCA",
+      "text": "But never till to-night, never till now,"
+    },
+    {
+      "number": 10,
+      "speaker": "CASCA",
+      "text": "Did I go through a tempest dropping fire."
+    },
+    {
+      "number": 11,
+      "speaker": "CASCA",
+      "text": "Either there is a civil strife in heaven,"
+    },
+    {
+      "number": 12,
+      "speaker": "CASCA",
+      "text": "Or else the world, too saucy with the gods,"
+    },
+    {
+      "number": 13,
+      "speaker": "CASCA",
+      "text": "Incenses them to send destruction."
+    },
+    {
+      "number": 13,
+      "speaker": "CICERO",
+      "text": "Why, saw you anything more wonderful?"
+    },
+    {
+      "number": 14,
+      "speaker": "CASCA",
+      "text": "A common slave—you know him well by sight—"
+    },
+    {
+      "number": 15,
+      "speaker": "CASCA",
+      "text": "Held up his left hand, which did flame and burn"
+    },
+    {
+      "number": 16,
+      "speaker": "CASCA",
+      "text": "Like twenty torches join’d, and yet his hand,"
+    },
+    {
+      "number": 17,
+      "speaker": "CASCA",
+      "text": "Not sensible of fire, remain’d unscorch’d."
+    },
+    {
+      "number": 18,
+      "speaker": "CASCA",
+      "text": "Besides—I ha’ not since put up my sword—"
+    },
+    {
+      "number": 19,
+      "speaker": "CASCA",
+      "text": "Against the Capitol I met a lion,"
+    },
+    {
+      "number": 20,
+      "speaker": "CASCA",
+      "text": "Who glared upon me, and went surly by,"
+    },
+    {
+      "number": 21,
+      "speaker": "CASCA",
+      "text": "Without annoying me: and there were drawn"
+    },
+    {
+      "number": 22,
+      "speaker": "CASCA",
+      "text": "Upon a heap a hundred ghastly women,"
+    },
+    {
+      "number": 23,
+      "speaker": "CASCA",
+      "text": "Transformed with their fear; who swore they saw"
+    },
+    {
+      "number": 24,
+      "speaker": "CASCA",
+      "text": "Men all in fire walk up and down the streets."
+    },
+    {
+      "number": 25,
+      "speaker": "CASCA",
+      "text": "And yesterday the bird of night did sit"
+    },
+    {
+      "number": 26,
+      "speaker": "CASCA",
+      "text": "Even at noon-day upon the market-place,"
+    },
+    {
+      "number": 27,
+      "speaker": "CASCA",
+      "text": "Hooting and shrieking. When these prodigies"
+    },
+    {
+      "number": 28,
+      "speaker": "CASCA",
+      "text": "Do so conjointly meet, let not men say"
+    },
+    {
+      "number": 29,
+      "speaker": "CASCA",
+      "text": "“These are their reasons; they are natural;”"
+    },
+    {
+      "number": 30,
+      "speaker": "CASCA",
+      "text": "For, I believe, they are portentous things"
+    },
+    {
+      "number": 31,
+      "speaker": "CASCA",
+      "text": "Unto the climate that they point upon."
+    },
+    {
+      "number": 32,
+      "speaker": "CICERO",
+      "text": "Indeed, it is a strange-disposed time:"
+    },
+    {
+      "number": 33,
+      "speaker": "CICERO",
+      "text": "But men may construe things after their fashion,"
+    },
+    {
+      "number": 34,
+      "speaker": "CICERO",
+      "text": "Clean from the purpose of the things themselves."
+    },
+    {
+      "number": 35,
+      "speaker": "CICERO",
+      "text": "Come Caesar to the Capitol to-morrow?"
+    },
+    {
+      "number": 36,
+      "speaker": "CASCA",
+      "text": "He doth; for he did bid Antonius"
+    },
+    {
+      "number": 37,
+      "speaker": "CASCA",
+      "text": "Send word to you he would be there to-morrow."
+    },
+    {
+      "number": 38,
+      "speaker": "CICERO",
+      "text": "Good night then, Casca: this disturbed sky"
+    },
+    {
+      "number": 39,
+      "speaker": "CICERO",
+      "text": "Is not to walk in."
+    },
+    {
+      "number": 39,
+      "speaker": "CASCA",
+      "text": "Farewell, Cicero."
+    },
+    {
+      "number": 40,
+      "speaker": "CASSIUS",
+      "text": "Who’s there?"
+    },
+    {
+      "number": 40,
+      "speaker": "CASCA",
+      "text": "A Roman."
+    },
+    {
+      "number": 41,
+      "speaker": "CASSIUS",
+      "text": "Casca, by your voice."
+    },
+    {
+      "number": 42,
+      "speaker": "CASCA",
+      "text": "Your ear is good. Cassius, what night is this!"
+    },
+    {
+      "number": 43,
+      "speaker": "CASSIUS",
+      "text": "A very pleasing night to honest men."
+    },
+    {
+      "number": 44,
+      "speaker": "CASCA",
+      "text": "Who ever knew the heavens menace so?"
+    },
+    {
+      "number": 45,
+      "speaker": "CASSIUS",
+      "text": "Those that have known the earth so full of faults."
+    },
+    {
+      "number": 46,
+      "speaker": "CASSIUS",
+      "text": "For my part, I have walk’d about the streets,"
+    },
+    {
+      "number": 47,
+      "speaker": "CASSIUS",
+      "text": "Submitting me unto the perilous night,"
+    },
+    {
+      "number": 48,
+      "speaker": "CASSIUS",
+      "text": "And, thus unbraced, Casca, as you see,"
+    },
+    {
+      "number": 49,
+      "speaker": "CASSIUS",
+      "text": "Have bared my bosom to the thunder-stone;"
+    },
+    {
+      "number": 50,
+      "speaker": "CASSIUS",
+      "text": "And when the cross blue lightning seem’d to open"
+    },
+    {
+      "number": 51,
+      "speaker": "CASSIUS",
+      "text": "The breast of heaven, I did present myself"
+    },
+    {
+      "number": 52,
+      "speaker": "CASSIUS",
+      "text": "Even in the aim and very flash of it."
+    },
+    {
+      "number": 53,
+      "speaker": "CASCA",
+      "text": "But wherefore did you so much tempt the heavens?"
+    },
+    {
+      "number": 54,
+      "speaker": "CASCA",
+      "text": "It is the part of men to fear and tremble,"
+    },
+    {
+      "number": 55,
+      "speaker": "CASCA",
+      "text": "When the most mighty gods by tokens send"
+    },
+    {
+      "number": 56,
+      "speaker": "CASCA",
+      "text": "Such dreadful heralds to astonish us."
+    },
+    {
+      "number": 57,
+      "speaker": "CASSIUS",
+      "text": "You are dull, Casca, and those sparks of life"
+    },
+    {
+      "number": 58,
+      "speaker": "CASSIUS",
+      "text": "That should be in a Roman you do want,"
+    },
+    {
+      "number": 59,
+      "speaker": "CASSIUS",
+      "text": "Or else you use not. You look pale and gaze"
+    },
+    {
+      "number": 60,
+      "speaker": "CASSIUS",
+      "text": "And put on fear and cast yourself in wonder,"
+    },
+    {
+      "number": 61,
+      "speaker": "CASSIUS",
+      "text": "To see the strange impatience of the heavens:"
+    },
+    {
+      "number": 62,
+      "speaker": "CASSIUS",
+      "text": "But if you would consider the true cause"
+    },
+    {
+      "number": 63,
+      "speaker": "CASSIUS",
+      "text": "Why all these fires, why all these gliding ghosts,"
+    },
+    {
+      "number": 64,
+      "speaker": "CASSIUS",
+      "text": "Why birds and beasts from quality and kind,"
+    },
+    {
+      "number": 65,
+      "speaker": "CASSIUS",
+      "text": "Why old men fool and children calculate,"
+    },
+    {
+      "number": 66,
+      "speaker": "CASSIUS",
+      "text": "Why all these things change from their ordinance"
+    },
+    {
+      "number": 67,
+      "speaker": "CASSIUS",
+      "text": "Their natures and preformed faculties"
+    },
+    {
+      "number": 68,
+      "speaker": "CASSIUS",
+      "text": "To monstrous quality—why, you shall find"
+    },
+    {
+      "number": 69,
+      "speaker": "CASSIUS",
+      "text": "That heaven hath infused them with these spirits,"
+    },
+    {
+      "number": 70,
+      "speaker": "CASSIUS",
+      "text": "To make them instruments of fear and warning"
+    },
+    {
+      "number": 71,
+      "speaker": "CASSIUS",
+      "text": "Unto some monstrous state."
+    },
+    {
+      "number": 72,
+      "speaker": "CASSIUS",
+      "text": "Now could I, Casca, name to thee a man"
+    },
+    {
+      "number": 73,
+      "speaker": "CASSIUS",
+      "text": "Most like this dreadful night,"
+    },
+    {
+      "number": 74,
+      "speaker": "CASSIUS",
+      "text": "That thunders, lightens, opens graves, and roars"
+    },
+    {
+      "number": 75,
+      "speaker": "CASSIUS",
+      "text": "As doth the lion in the Capitol,"
+    },
+    {
+      "number": 76,
+      "speaker": "CASSIUS",
+      "text": "A man no mightier than thyself or me"
+    },
+    {
+      "number": 77,
+      "speaker": "CASSIUS",
+      "text": "In personal action, yet prodigious grown"
+    },
+    {
+      "number": 78,
+      "speaker": "CASSIUS",
+      "text": "And fearful, as these strange eruptions are."
+    },
+    {
+      "number": 79,
+      "speaker": "CASCA",
+      "text": "’Tis Caesar that you mean; is it not, Cassius?"
+    },
+    {
+      "number": 80,
+      "speaker": "CASSIUS",
+      "text": "Let it be who it is: for Romans now"
+    },
+    {
+      "number": 81,
+      "speaker": "CASSIUS",
+      "text": "Have thews and limbs like to their ancestors;"
+    },
+    {
+      "number": 82,
+      "speaker": "CASSIUS",
+      "text": "But, woe the while! our fathers’ minds are dead,"
+    },
+    {
+      "number": 83,
+      "speaker": "CASSIUS",
+      "text": "And we are govern’d with our mothers’ spirits;"
+    },
+    {
+      "number": 84,
+      "speaker": "CASSIUS",
+      "text": "Our yoke and sufferance show us womanish."
+    },
+    {
+      "number": 85,
+      "speaker": "CASCA",
+      "text": "Indeed, they say the senators to-morrow"
+    },
+    {
+      "number": 86,
+      "speaker": "CASCA",
+      "text": "Mean to establish Caesar as a king;"
+    },
+    {
+      "number": 87,
+      "speaker": "CASCA",
+      "text": "And he shall wear his crown by sea and land,"
+    },
+    {
+      "number": 88,
+      "speaker": "CASCA",
+      "text": "In every place, save here in Italy."
+    },
+    {
+      "number": 89,
+      "speaker": "CASSIUS",
+      "text": "I know where I will wear this dagger then;"
+    },
+    {
+      "number": 90,
+      "speaker": "CASSIUS",
+      "text": "Cassius from bondage will deliver Cassius:"
+    },
+    {
+      "number": 91,
+      "speaker": "CASSIUS",
+      "text": "Therein, ye gods, you make the weak most strong;"
+    },
+    {
+      "number": 92,
+      "speaker": "CASSIUS",
+      "text": "Therein, ye gods, you tyrants do defeat:"
+    },
+    {
+      "number": 93,
+      "speaker": "CASSIUS",
+      "text": "Nor stony tower, nor walls of beaten brass,"
+    },
+    {
+      "number": 94,
+      "speaker": "CASSIUS",
+      "text": "Nor airless dungeon, nor strong links of iron,"
+    },
+    {
+      "number": 95,
+      "speaker": "CASSIUS",
+      "text": "Can be retentive to the strength of spirit;"
+    },
+    {
+      "number": 96,
+      "speaker": "CASSIUS",
+      "text": "But life, being weary of these worldly bars,"
+    },
+    {
+      "number": 97,
+      "speaker": "CASSIUS",
+      "text": "Never lacks power to dismiss itself."
+    },
+    {
+      "number": 98,
+      "speaker": "CASSIUS",
+      "text": "If I know this, know all the world besides,"
+    },
+    {
+      "number": 99,
+      "speaker": "CASSIUS",
+      "text": "That part of tyranny that I do bear"
+    },
+    {
+      "number": 100,
+      "speaker": "CASSIUS",
+      "text": "I can shake off at pleasure."
+    },
+    {
+      "number": 100,
+      "speaker": "CASCA",
+      "text": "So can I:"
+    },
+    {
+      "number": 101,
+      "speaker": "CASCA",
+      "text": "So every bondman in his own hand bears"
+    },
+    {
+      "number": 102,
+      "speaker": "CASCA",
+      "text": "The power to cancel his captivity."
+    },
+    {
+      "number": 103,
+      "speaker": "CASSIUS",
+      "text": "And why should Caesar be a tyrant then?"
+    },
+    {
+      "number": 104,
+      "speaker": "CASSIUS",
+      "text": "Poor man! I know he would not be a wolf,"
+    },
+    {
+      "number": 105,
+      "speaker": "CASSIUS",
+      "text": "But that he sees the Romans are but sheep:"
+    },
+    {
+      "number": 106,
+      "speaker": "CASSIUS",
+      "text": "He were no lion, were not Romans hinds."
+    },
+    {
+      "number": 107,
+      "speaker": "CASSIUS",
+      "text": "Those that with haste will make a mighty fire"
+    },
+    {
+      "number": 108,
+      "speaker": "CASSIUS",
+      "text": "Begin it with weak straws: what trash is Rome,"
+    },
+    {
+      "number": 109,
+      "speaker": "CASSIUS",
+      "text": "What rubbish and what offal, when it serves"
+    },
+    {
+      "number": 110,
+      "speaker": "CASSIUS",
+      "text": "For the base matter to illuminate"
+    },
+    {
+      "number": 111,
+      "speaker": "CASSIUS",
+      "text": "So vile a thing as Caesar! But, O grief,"
+    },
+    {
+      "number": 112,
+      "speaker": "CASSIUS",
+      "text": "Where hast thou led me? I perhaps speak this"
+    },
+    {
+      "number": 113,
+      "speaker": "CASSIUS",
+      "text": "Before a willing bondman; then I know"
+    },
+    {
+      "number": 114,
+      "speaker": "CASSIUS",
+      "text": "My answer must be made. But I am arm’d,"
+    },
+    {
+      "number": 115,
+      "speaker": "CASSIUS",
+      "text": "And dangers are to me indifferent."
+    },
+    {
+      "number": 116,
+      "speaker": "CASCA",
+      "text": "You speak to Casca, and to such a man"
+    },
+    {
+      "number": 117,
+      "speaker": "CASCA",
+      "text": "That is no fleering tell-tale. Hold, my hand:"
+    },
+    {
+      "number": 118,
+      "speaker": "CASCA",
+      "text": "Be factious for redress of all these griefs,"
+    },
+    {
+      "number": 119,
+      "speaker": "CASCA",
+      "text": "And I will set this foot of mine as far"
+    },
+    {
+      "number": 120,
+      "speaker": "CASCA",
+      "text": "As who goes farthest."
+    },
+    {
+      "number": 120,
+      "speaker": "CASSIUS",
+      "text": "There’s a bargain made."
+    },
+    {
+      "number": 121,
+      "speaker": "CASSIUS",
+      "text": "Now know you, Casca, I have moved already"
+    },
+    {
+      "number": 122,
+      "speaker": "CASSIUS",
+      "text": "Some certain of the noblest-minded Romans"
+    },
+    {
+      "number": 123,
+      "speaker": "CASSIUS",
+      "text": "To undergo with me an enterprise"
+    },
+    {
+      "number": 124,
+      "speaker": "CASSIUS",
+      "text": "Of honourable-dangerous consequence;"
+    },
+    {
+      "number": 125,
+      "speaker": "CASSIUS",
+      "text": "And I do know, by this, they stay for me"
+    },
+    {
+      "number": 126,
+      "speaker": "CASSIUS",
+      "text": "In Pompey’s porch: for now, this fearful night,"
+    },
+    {
+      "number": 127,
+      "speaker": "CASSIUS",
+      "text": "There is no stir or walking in the streets;"
+    },
+    {
+      "number": 128,
+      "speaker": "CASSIUS",
+      "text": "And the complexion of the element"
+    },
+    {
+      "number": 129,
+      "speaker": "CASSIUS",
+      "text": "In favour’s like the work we have in hand,"
+    },
+    {
+      "number": 130,
+      "speaker": "CASSIUS",
+      "text": "Most bloody, fiery, and most terrible."
+    },
+    {
+      "number": 131,
+      "speaker": "CASCA",
+      "text": "Stand close awhile, for here comes one in haste."
+    },
+    {
+      "number": 132,
+      "speaker": "CASSIUS",
+      "text": "’Tis Cinna; I do know him by his gait;"
+    },
+    {
+      "number": 133,
+      "speaker": "CASSIUS",
+      "text": "He is a friend."
+    },
+    {
+      "number": 134,
+      "speaker": "CASSIUS",
+      "text": "Cinna, where haste you so?"
+    },
+    {
+      "number": 135,
+      "speaker": "CINNA",
+      "text": "To find out you. Who’s that? Metellus Cimber?"
+    },
+    {
+      "number": 136,
+      "speaker": "CASSIUS",
+      "text": "No, it is Casca; one incorporate"
+    },
+    {
+      "number": 137,
+      "speaker": "CASSIUS",
+      "text": "To our attempts. Am I not stay’d for, Cinna?"
+    },
+    {
+      "number": 138,
+      "speaker": "CINNA",
+      "text": "I am glad on’t. What a fearful night is this!"
+    },
+    {
+      "number": 139,
+      "speaker": "CINNA",
+      "text": "There’s two or three of us have seen strange sights."
+    },
+    {
+      "number": 140,
+      "speaker": "CASSIUS",
+      "text": "Am I not stay’d for? tell me."
+    },
+    {
+      "number": 141,
+      "speaker": "CINNA",
+      "text": "Yes, you are."
+    },
+    {
+      "number": 142,
+      "speaker": "CINNA",
+      "text": "O Cassius, if you could"
+    },
+    {
+      "number": 143,
+      "speaker": "CINNA",
+      "text": "But win the noble Brutus to our party—"
+    },
+    {
+      "number": 144,
+      "speaker": "CASSIUS",
+      "text": "Be you content: good Cinna, take this paper,"
+    },
+    {
+      "number": 145,
+      "speaker": "CASSIUS",
+      "text": "And look you lay it in the praetor’s chair,"
+    },
+    {
+      "number": 146,
+      "speaker": "CASSIUS",
+      "text": "Where Brutus may but find it; and throw this"
+    },
+    {
+      "number": 147,
+      "speaker": "CASSIUS",
+      "text": "In at his window; set this up with wax"
+    },
+    {
+      "number": 148,
+      "speaker": "CASSIUS",
+      "text": "Upon old Brutus’ statue: all this done,"
+    },
+    {
+      "number": 149,
+      "speaker": "CASSIUS",
+      "text": "Repair to Pompey’s porch, where you shall find us."
+    },
+    {
+      "number": 150,
+      "speaker": "CASSIUS",
+      "text": "Is Decius Brutus and Trebonius there?"
+    },
+    {
+      "number": 151,
+      "speaker": "CINNA",
+      "text": "All but Metellus Cimber; and he’s gone"
+    },
+    {
+      "number": 152,
+      "speaker": "CINNA",
+      "text": "To seek you at your house. Well, I will hie,"
+    },
+    {
+      "number": 153,
+      "speaker": "CINNA",
+      "text": "And so bestow these papers as you bade me."
+    },
+    {
+      "number": 154,
+      "speaker": "CASSIUS",
+      "text": "That done, repair to Pompey’s theatre."
+    },
+    {
+      "number": 155,
+      "speaker": "CASSIUS",
+      "text": "Come, Casca, you and I will yet ere day"
+    },
+    {
+      "number": 156,
+      "speaker": "CASSIUS",
+      "text": "See Brutus at his house: three parts of him"
+    },
+    {
+      "number": 157,
+      "speaker": "CASSIUS",
+      "text": "Is ours already, and the man entire"
+    },
+    {
+      "number": 158,
+      "speaker": "CASSIUS",
+      "text": "Upon the next encounter yields him ours."
+    },
+    {
+      "number": 159,
+      "speaker": "CASCA",
+      "text": "O, he sits high in all the people’s hearts:"
+    },
+    {
+      "number": 160,
+      "speaker": "CASCA",
+      "text": "And that which would appear offence in us,"
+    },
+    {
+      "number": 161,
+      "speaker": "CASCA",
+      "text": "His countenance, like richest alchemy,"
+    },
+    {
+      "number": 162,
+      "speaker": "CASCA",
+      "text": "Will change to virtue and to worthiness."
+    },
+    {
+      "number": 163,
+      "speaker": "CASSIUS",
+      "text": "Him and his worth and our great need of him"
+    },
+    {
+      "number": 164,
+      "speaker": "CASSIUS",
+      "text": "You have right well conceited. Let us go,"
+    },
+    {
+      "number": 165,
+      "speaker": "CASSIUS",
+      "text": "For it is after midnight; and ere day"
+    },
+    {
+      "number": 166,
+      "speaker": "CASSIUS",
+      "text": "We will awake him and be sure of him."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Thunder and lightning. Enter from opposite sides, Casca, with his sword drawn, and Cicero."
+    },
+    {
+      "after_line": 39,
+      "text": "Exit Cicero."
+    },
+    {
+      "after_line": 39,
+      "text": "Enter Cassius."
+    },
+    {
+      "after_line": 100,
+      "text": "Thunder still."
+    },
+    {
+      "after_line": 133,
+      "text": "Enter Cinna."
+    },
+    {
+      "after_line": 154,
+      "text": "Exit Cinna."
+    },
+    {
+      "after_line": 166,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "julius_caesar_act1_scene3_gloss1",
+      "line": 3,
+      "phrase": "sway of earth",
+      "definition": "the stable order of the earth; its governance"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss2",
+      "line": 6,
+      "phrase": "rived",
+      "definition": "split; cloven"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss3",
+      "line": 7,
+      "phrase": "ambitious ocean",
+      "definition": "the grasping, rising sea — 'ambition' as a moral fault even in nature"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss4",
+      "line": 10,
+      "phrase": "tempest dropping fire",
+      "definition": "a storm with lightning — the sky seen as raining fire"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss5",
+      "line": 12,
+      "phrase": "saucy with the gods",
+      "definition": "impudent toward the gods"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss6",
+      "line": 17,
+      "phrase": "not sensible of fire",
+      "definition": "not feeling the fire; insensible to heat"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss7",
+      "line": 18,
+      "phrase": "put up my sword",
+      "definition": "sheathed my drawn sword"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss8",
+      "line": 22,
+      "phrase": "ghastly women",
+      "definition": "women pale as ghosts; terrified"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss9",
+      "line": 25,
+      "phrase": "bird of night",
+      "definition": "owl — an ill-omened bird; an owl's appearance at noon was a Roman portent"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss10",
+      "line": 27,
+      "phrase": "prodigies",
+      "definition": "supernatural portents; omens of events to come — Roman religion placed great weight on reading them"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss11",
+      "line": 30,
+      "phrase": "portentous things",
+      "definition": "things serving as portents; ominous signs"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss12",
+      "line": 33,
+      "phrase": "construe things after their fashion",
+      "definition": "interpret signs in ways that suit them — a skeptical Ciceronian note against superstition"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss13",
+      "line": 42,
+      "phrase": "Cassius",
+      "definition": "Gaius Cassius Longinus, Caesar's brother-in-law (married to Brutus's half-sister Junia); ringleader of the conspiracy"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss14",
+      "line": 48,
+      "phrase": "unbraced",
+      "definition": "with doublet unlaced and open — breast bared to the storm"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss15",
+      "line": 49,
+      "phrase": "thunder-stone",
+      "definition": "thunderbolt; lightning cast as a stone from heaven"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss16",
+      "line": 50,
+      "phrase": "cross blue lightning",
+      "definition": "forked blue lightning"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss17",
+      "line": 54,
+      "phrase": "It is the part of men",
+      "definition": "it is the role/duty of men"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss18",
+      "line": 56,
+      "phrase": "heralds to astonish us",
+      "definition": "messengers (of the gods) sent to stun us"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss19",
+      "line": 60,
+      "phrase": "cast yourself in wonder",
+      "definition": "throw yourself into amazement; give yourself over to awe"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss20",
+      "line": 65,
+      "phrase": "children calculate",
+      "definition": "children speak prophecy (normally reserved for augurs and old men)"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss21",
+      "line": 67,
+      "phrase": "preformed faculties",
+      "definition": "natural abilities assigned at creation"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss22",
+      "line": 70,
+      "phrase": "instruments of fear and warning",
+      "definition": "means by which the gods alert mortals to coming danger"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss23",
+      "line": 77,
+      "phrase": "prodigious",
+      "definition": "monstrous; portentous — having the quality of a prodigy"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss24",
+      "line": 81,
+      "phrase": "thews and limbs",
+      "definition": "muscles and body parts; physical strength"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss25",
+      "line": 83,
+      "phrase": "govern'd with our mothers' spirits",
+      "definition": "ruled by softer, feminine temperaments rather than warrior fathers'"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss26",
+      "line": 84,
+      "phrase": "yoke and sufferance",
+      "definition": "submission and patient endurance — the condition of a slave"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss27",
+      "line": 89,
+      "phrase": "I know where I will wear this dagger",
+      "definition": "Cassius threatens suicide rather than serve under a king — a Stoic self-killing"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss28",
+      "line": 94,
+      "phrase": "links of iron",
+      "definition": "iron chains"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss29",
+      "line": 95,
+      "phrase": "retentive",
+      "definition": "capable of imprisoning; able to hold back"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss30",
+      "line": 101,
+      "phrase": "bondman",
+      "definition": "slave; bondsman"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss31",
+      "line": 104,
+      "phrase": "wolf",
+      "definition": "tyrannical predator — Cassius's stock image for Caesar"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss32",
+      "line": 106,
+      "phrase": "hinds",
+      "definition": "does; female deer — and by pun, servants/rustics"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss33",
+      "line": 109,
+      "phrase": "offal",
+      "definition": "refuse; scraps; animal waste"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss34",
+      "line": 114,
+      "phrase": "arm'd",
+      "definition": "prepared, steeled (in mind, not just in arms)"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss35",
+      "line": 117,
+      "phrase": "fleering tell-tale",
+      "definition": "grinning informer; mocking tattler"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss36",
+      "line": 118,
+      "phrase": "factious for redress",
+      "definition": "a partisan working to remedy — to join a faction against wrongs"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss37",
+      "line": 124,
+      "phrase": "honourable-dangerous consequence",
+      "definition": "honourable but dangerous outcome — the assassination"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss38",
+      "line": 126,
+      "phrase": "Pompey's porch",
+      "definition": "the colonnade beside Pompey's Theatre — the historical site of Caesar's assassination (not the Capitol, as Shakespeare stages it)"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss39",
+      "line": 136,
+      "phrase": "incorporate",
+      "definition": "joined; made one body (with us)"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss40",
+      "line": 145,
+      "phrase": "praetor's chair",
+      "definition": "the magistrate's seat of the urban praetor — Brutus's office"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss41",
+      "line": 148,
+      "phrase": "old Brutus' statue",
+      "definition": "the statue of Lucius Junius Brutus, expeller of the last king; Marcus Brutus's legendary ancestor, displayed prominently in the Forum"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss42",
+      "line": 150,
+      "phrase": "Decius Brutus",
+      "definition": "Decimus Junius Brutus Albinus, conspirator — a different Brutus from Marcus"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss43",
+      "line": 150,
+      "phrase": "Trebonius",
+      "definition": "Gaius Trebonius, conspirator; in 3.1 he detains Antony outside while the murder is done"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss44",
+      "line": 154,
+      "phrase": "Pompey's theatre",
+      "definition": "Rome's first permanent stone theatre, built 55 BCE; adjoining the colonnade where the Senate sometimes met — where Caesar was killed"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss45",
+      "line": 161,
+      "phrase": "richest alchemy",
+      "definition": "the finest transformation of base into gold — Brutus's name makes base deeds seem noble"
+    },
+    {
+      "id": "julius_caesar_act1_scene3_gloss46",
+      "line": 164,
+      "phrase": "conceited",
+      "definition": "conceived; understood"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "julius_caesar_act1_scene3_ann1",
+      "line_start": 1,
+      "line_end": 32,
+      "citation_display": "Julius Caesar 1.3.1–32",
+      "category": "historical",
+      "title": "Roman prodigies and the theatre of omen",
+      "body": "Casca's catalogue of portents — the slave with the burning unscorched hand, the lion at the Capitol, men walking the streets in fire, the owl shrieking at noon — is a curated list. Plutarch's *Life of Caesar* §63 reports several of these as genuine Roman omens surrounding the assassination. For the Roman religious imagination, unnatural events were not random: the gods communicated through disturbances of the natural order, and priest-augurs interpreted the signs.\n\nShakespeare's choice to stage them through Casca — not a priest or augur — is significant. Casca is a skeptic in 1.2 ('it was Greek to me'), and here he is shaken into reading the storm religiously. The play's opening three scenes move the audience from plebeian comedy (1.1) to private temptation (1.2) to public cosmic disturbance (1.3) — each louder than the last. By the time we reach 2.1 in Brutus's garden, the decision to kill has been contextualised by an atmosphere in which the universe itself seems to be announcing that something is wrong.",
+      "sources": [
+        "Plutarch, *Life of Caesar* §63 (North, 1579)",
+        "Marianne Novy, *Shakespeare and Outsiders* (2013)",
+        "Mary Floyd-Wilson, *English Ethnicity and Race in Early Modern Drama* (2003)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act1_scene3_ann2",
+      "line_start": 40,
+      "line_end": 90,
+      "citation_display": "Julius Caesar 1.3.40–90",
+      "category": "thematic",
+      "title": "Cassius's sky-defying and the Republican suicide",
+      "body": "Cassius bares his chest to the lightning and declares he will wear his dagger rather than bow to a king. This is the play's first articulation of the Roman Stoic case for suicide — the view that a free man's life must end on his own terms rather than a tyrant's. Cato the Younger, Portia's father, had killed himself at Utica in 46 BCE rather than accept Caesar's pardon; Cassius invokes the same logic.\n\nThe play tracks Brutus's slow arrival at this view across five acts. In 5.1 Brutus tells Cassius he would once have blamed Cato's suicide as cowardly; by 5.5 he falls on Strato's sword himself. The philosophical arc is the play's most careful study. Cassius announces the destination here; Brutus arrives four acts later.\n\nThe Stoic-suicide tradition has an afterlife. Joseph Addison's *Cato* (1713) — written partly against Caesarism — was the most-performed serious drama in eighteenth-century America; George Washington staged it for his troops at Valley Forge. The Roman case for self-killing as a political statement was republican shorthand for more than a millennium. *Julius Caesar* is where Shakespeare rehearses it.",
+      "sources": [
+        "Paul A. Cantor, *Shakespeare's Rome* (1976), ch. 2",
+        "Miriam Griffin, 'Philosophy, Cato, and Roman Suicide', *G&R* 33 (1986)",
+        "Eric Nelson, *The Royalist Revolution* (2014)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act1_scene3_ann3",
+      "line_start": 120,
+      "line_end": 166,
+      "citation_display": "Julius Caesar 1.3.120–166",
+      "category": "structural",
+      "title": "The conspiracy's anatomy: how Shakespeare assembles it",
+      "body": "The recruitment pattern is efficient: Cassius has already moved 'Some certain of the noblest-minded Romans,' takes Casca as a new sworn member in the storm, meets Cinna to plant the forged letters for Brutus, and confirms the meeting at Pompey's porch. Shakespeare telescopes what was in Plutarch a many-month negotiation into one night's work.\n\nThe choice of Pompey's porch (historically, the colonnade attached to Pompey's Theatre) is carefully preserved — that is where Caesar was actually killed in 44 BCE, not at the Capitol where Shakespeare stages the murder in 3.1. Shakespeare moves the murder's setting for dramatic reasons (the Capitol is grander, more political) while keeping the conspirators' muster at the historically-correct site.\n\nCasca's speech on alchemy (L160ff) — that Brutus's involvement will 'change to virtue' any appearance of offence — is the conspiracy's necessary condition. The conspirators need Brutus for legitimacy, not ability; his moral capital will transmute the murder from assassination to civic act. Whether the transmutation actually happens is the question 3.2 will settle.",
+      "sources": [
+        "Plutarch, *Life of Brutus* §4–10 (North, 1579)",
+        "Wayne A. Rebhorn (1990)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "julius_caesar_act1_scene3_q1",
+      "kind": "comprehension",
+      "prompt": "Which of these is NOT one of Casca's reported prodigies?",
+      "options": [
+        "A slave's left hand burning without being scorched",
+        "A lion glaring at Casca near the Capitol",
+        "A ghost of Caesar appearing in the Forum",
+        "An owl shrieking at noon in the market-place"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 15,
+      "anchor_line_start": 14,
+      "anchor_line_end": 27
+    },
+    {
+      "id": "julius_caesar_act1_scene3_q2",
+      "kind": "close_reading",
+      "prompt": "Cassius's baring his breast to the lightning and threatening 'I know where I will wear this dagger' is:",
+      "options": [
+        "A theatrical gesture without philosophical content",
+        "The play's first explicit articulation of the Roman Stoic case for suicide as resistance to tyranny",
+        "A threat against Casca",
+        "Invocation of a storm-god"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 46,
+      "anchor_line_end": 90
+    },
+    {
+      "id": "julius_caesar_act1_scene3_q3",
+      "kind": "inference",
+      "prompt": "Why does Cassius need Brutus in the conspiracy so much more than he needs any other individual man?",
+      "options": [
+        "Brutus is the best swordsman",
+        "Brutus's reputation — 'like richest alchemy' — will transmute the assassination into a civic act; he supplies legitimacy the other conspirators cannot",
+        "Brutus controls Rome's finances",
+        "Brutus has the key to the Capitol"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 159,
+      "anchor_line_end": 166
+    },
+    {
+      "id": "julius_caesar_act1_scene3_q4",
+      "kind": "historical",
+      "prompt": "Where does Cassius tell Cinna the conspirators are meeting?",
+      "options": [
+        "The Senate house",
+        "Pompey's porch — the colonnade beside Pompey's Theatre, and historically the actual site of Caesar's assassination (though Shakespeare later stages the murder at the Capitol)",
+        "Brutus's garden",
+        "The Capitol"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 125,
+      "anchor_line_end": 150
+    },
+    {
+      "id": "julius_caesar_act1_scene3_q5",
+      "kind": "theme",
+      "prompt": "What rhetorical effect does Shakespeare achieve by placing the prodigies scene between Cassius's private seduction of Brutus and the garden soliloquy of 2.1?",
+      "options": [
+        "It fills time",
+        "It escalates the setting from private conversation to cosmic disturbance, so that the decision in 2.1 arrives under an atmosphere of universe-wide upheaval",
+        "It introduces comic relief",
+        "It resolves the main plot early"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 166
+    }
+  ]
+}

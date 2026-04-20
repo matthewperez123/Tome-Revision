@@ -1,0 +1,1587 @@
+{
+  "section_id": "romeo_and_juliet_act3_scene1",
+  "work_id": "romeo-and-juliet",
+  "sequence": 14,
+  "act": 3,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "A public place",
+  "line_count": 191,
+  "word_count": 1546,
+  "est_read_minutes": 8,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "BENVOLIO",
+      "text": "I pray thee, good Mercutio, let’s retire:"
+    },
+    {
+      "number": 2,
+      "speaker": "BENVOLIO",
+      "text": "The day is hot, the Capulets abroad,"
+    },
+    {
+      "number": 3,
+      "speaker": "BENVOLIO",
+      "text": "And, if we meet, we shall not scape a brawl;"
+    },
+    {
+      "number": 4,
+      "speaker": "BENVOLIO",
+      "text": "For now, these hot days, is the mad blood stirring."
+    },
+    {
+      "number": 5,
+      "speaker": "MERCUTIO",
+      "text": "Thou art like one of those fellows that when he enters the"
+    },
+    {
+      "number": 6,
+      "speaker": "MERCUTIO",
+      "text": "confines of a tavern claps me his sword upon the table and"
+    },
+    {
+      "number": 7,
+      "speaker": "MERCUTIO",
+      "text": "says “God send me no need of thee!” and by the operation"
+    },
+    {
+      "number": 8,
+      "speaker": "MERCUTIO",
+      "text": "of the second cup draws it on the drawer, when indeed there"
+    },
+    {
+      "number": 9,
+      "speaker": "MERCUTIO",
+      "text": "is no need."
+    },
+    {
+      "number": 9,
+      "speaker": "BENVOLIO",
+      "text": "Am I like such a fellow?"
+    },
+    {
+      "number": 10,
+      "speaker": "MERCUTIO",
+      "text": "Come, come, thou art as hot a Jack in thy mood as"
+    },
+    {
+      "number": 11,
+      "speaker": "MERCUTIO",
+      "text": "any in Italy, and as soon moved to be moody, and as"
+    },
+    {
+      "number": 12,
+      "speaker": "MERCUTIO",
+      "text": "soon moody to be moved."
+    },
+    {
+      "number": 12,
+      "speaker": "BENVOLIO",
+      "text": "And what to?"
+    },
+    {
+      "number": 13,
+      "speaker": "MERCUTIO",
+      "text": "Nay, an there were two such, we should have none shortly, for"
+    },
+    {
+      "number": 14,
+      "speaker": "MERCUTIO",
+      "text": "one would kill the other. Thou! why, thou wilt quarrel with a"
+    },
+    {
+      "number": 15,
+      "speaker": "MERCUTIO",
+      "text": "man that hath a hair more, or a hair less, in his"
+    },
+    {
+      "number": 16,
+      "speaker": "MERCUTIO",
+      "text": "beard, than thou hast: thou wilt quarrel with a man for cracking"
+    },
+    {
+      "number": 17,
+      "speaker": "MERCUTIO",
+      "text": "nuts, having no other reason but because thou hast hazel eyes: what"
+    },
+    {
+      "number": 18,
+      "speaker": "MERCUTIO",
+      "text": "eye but such an eye would spy out such a quarrel? Thy"
+    },
+    {
+      "number": 19,
+      "speaker": "MERCUTIO",
+      "text": "head is as full of quarrels as an egg is full of"
+    },
+    {
+      "number": 20,
+      "speaker": "MERCUTIO",
+      "text": "meat, and yet thy head hath been beaten as addle as an"
+    },
+    {
+      "number": 21,
+      "speaker": "MERCUTIO",
+      "text": "egg for quarrelling: thou hast quarrelled with a man for coughing in"
+    },
+    {
+      "number": 22,
+      "speaker": "MERCUTIO",
+      "text": "the street, because he hath wakened thy dog that hath lain asleep"
+    },
+    {
+      "number": 23,
+      "speaker": "MERCUTIO",
+      "text": "in the sun: didst thou not fall out with a tailor for"
+    },
+    {
+      "number": 24,
+      "speaker": "MERCUTIO",
+      "text": "wearing his new doublet before Easter? with another, for tying his new"
+    },
+    {
+      "number": 25,
+      "speaker": "MERCUTIO",
+      "text": "shoes with old riband? and yet thou wilt tutor me from quarrelling!"
+    },
+    {
+      "number": 26,
+      "speaker": "BENVOLIO",
+      "text": "An I were so apt to quarrel as thou art, any man"
+    },
+    {
+      "number": 27,
+      "speaker": "BENVOLIO",
+      "text": "should buy the fee-simple of my life for an hour and a"
+    },
+    {
+      "number": 28,
+      "speaker": "BENVOLIO",
+      "text": "quarter."
+    },
+    {
+      "number": 28,
+      "speaker": "MERCUTIO",
+      "text": "The fee-simple! O simple!"
+    },
+    {
+      "number": 29,
+      "speaker": "BENVOLIO",
+      "text": "By my head, here come the Capulets."
+    },
+    {
+      "number": 30,
+      "speaker": "MERCUTIO",
+      "text": "By my heel, I care not."
+    },
+    {
+      "number": 31,
+      "speaker": "TYBALT",
+      "text": "Follow me close, for I will speak to them. Gentlemen, good den:"
+    },
+    {
+      "number": 32,
+      "speaker": "TYBALT",
+      "text": "a word with one of you."
+    },
+    {
+      "number": 33,
+      "speaker": "MERCUTIO",
+      "text": "And but one word with one of us? couple it with something;"
+    },
+    {
+      "number": 34,
+      "speaker": "MERCUTIO",
+      "text": "make it a word and a blow."
+    },
+    {
+      "number": 35,
+      "speaker": "TYBALT",
+      "text": "You shall find me apt enough to that, sir, an you will give me occasion."
+    },
+    {
+      "number": 36,
+      "speaker": "MERCUTIO",
+      "text": "Could you not take some occasion without giving?"
+    },
+    {
+      "number": 37,
+      "speaker": "TYBALT",
+      "text": "Mercutio, thou consort’st with Romeo—"
+    },
+    {
+      "number": 38,
+      "speaker": "MERCUTIO",
+      "text": "Consort! what, dost thou make us minstrels? an thou make minstrels of"
+    },
+    {
+      "number": 39,
+      "speaker": "MERCUTIO",
+      "text": "us, look to hear nothing but discords: here’s my fiddlestick; here’s that"
+    },
+    {
+      "number": 40,
+      "speaker": "MERCUTIO",
+      "text": "shall make you dance. ’Zounds, consort!"
+    },
+    {
+      "number": 41,
+      "speaker": "BENVOLIO",
+      "text": "We talk here in the public haunt of men:"
+    },
+    {
+      "number": 42,
+      "speaker": "BENVOLIO",
+      "text": "Either withdraw unto some private place,"
+    },
+    {
+      "number": 43,
+      "speaker": "BENVOLIO",
+      "text": "And reason coldly of your grievances,"
+    },
+    {
+      "number": 44,
+      "speaker": "BENVOLIO",
+      "text": "Or else depart; here all eyes gaze on us."
+    },
+    {
+      "number": 45,
+      "speaker": "MERCUTIO",
+      "text": "Men’s eyes were made to look, and let them gaze;"
+    },
+    {
+      "number": 46,
+      "speaker": "MERCUTIO",
+      "text": "I will not budge for no man’s pleasure, I."
+    },
+    {
+      "number": 47,
+      "speaker": "TYBALT",
+      "text": "Well, peace be with you, sir: here comes my man."
+    },
+    {
+      "number": 48,
+      "speaker": "MERCUTIO",
+      "text": "But I’ll be hang’d, sir, if he wear your livery:"
+    },
+    {
+      "number": 49,
+      "speaker": "MERCUTIO",
+      "text": "Marry, go before to field, he’ll be your follower;"
+    },
+    {
+      "number": 50,
+      "speaker": "MERCUTIO",
+      "text": "Your worship in that sense may call him “man.”"
+    },
+    {
+      "number": 51,
+      "speaker": "TYBALT",
+      "text": "Romeo, the hate I bear thee can afford"
+    },
+    {
+      "number": 52,
+      "speaker": "TYBALT",
+      "text": "No better term than this—thou art a villain."
+    },
+    {
+      "number": 53,
+      "speaker": "ROMEO",
+      "text": "Tybalt, the reason that I have to love thee"
+    },
+    {
+      "number": 54,
+      "speaker": "ROMEO",
+      "text": "Doth much excuse the appertaining rage"
+    },
+    {
+      "number": 55,
+      "speaker": "ROMEO",
+      "text": "To such a greeting: villain am I none;"
+    },
+    {
+      "number": 56,
+      "speaker": "ROMEO",
+      "text": "Therefore farewell; I see thou know’st me not."
+    },
+    {
+      "number": 57,
+      "speaker": "TYBALT",
+      "text": "Boy, this shall not excuse the injuries"
+    },
+    {
+      "number": 58,
+      "speaker": "TYBALT",
+      "text": "That thou hast done me; therefore turn and draw."
+    },
+    {
+      "number": 59,
+      "speaker": "ROMEO",
+      "text": "I do protest, I never injured thee,"
+    },
+    {
+      "number": 60,
+      "speaker": "ROMEO",
+      "text": "But love thee better than thou canst devise,"
+    },
+    {
+      "number": 61,
+      "speaker": "ROMEO",
+      "text": "Till thou shalt know the reason of my love:"
+    },
+    {
+      "number": 62,
+      "speaker": "ROMEO",
+      "text": "And so, good Capulet—which name I tender"
+    },
+    {
+      "number": 63,
+      "speaker": "ROMEO",
+      "text": "As dearly as my own—be satisfied."
+    },
+    {
+      "number": 63,
+      "speaker": "MERCUTIO",
+      "text": "O calm, dishonourable, vile submission!"
+    },
+    {
+      "number": 64,
+      "speaker": "MERCUTIO",
+      "text": "Alla stoccata carries it away."
+    },
+    {
+      "number": 65,
+      "speaker": "MERCUTIO",
+      "text": "Tybalt, you rat-catcher, will you walk?"
+    },
+    {
+      "number": 65,
+      "speaker": "TYBALT",
+      "text": "What wouldst thou have with me?"
+    },
+    {
+      "number": 66,
+      "speaker": "MERCUTIO",
+      "text": "Good king of cats, nothing but one of your nine lives; that"
+    },
+    {
+      "number": 67,
+      "speaker": "MERCUTIO",
+      "text": "I mean to make bold withal, and, as you shall use me"
+    },
+    {
+      "number": 68,
+      "speaker": "MERCUTIO",
+      "text": "hereafter, dry-beat the rest of the eight. Will you pluck your sword"
+    },
+    {
+      "number": 69,
+      "speaker": "MERCUTIO",
+      "text": "out of his pilcher by the ears? make haste, lest mine be"
+    },
+    {
+      "number": 70,
+      "speaker": "MERCUTIO",
+      "text": "about your ears ere it be out."
+    },
+    {
+      "number": 71,
+      "speaker": "TYBALT",
+      "text": "I am for you."
+    },
+    {
+      "number": 71,
+      "speaker": "ROMEO",
+      "text": "Gentle Mercutio, put thy rapier up."
+    },
+    {
+      "number": 72,
+      "speaker": "MERCUTIO",
+      "text": "Come, sir, your passado. They fight."
+    },
+    {
+      "number": 72,
+      "speaker": "ROMEO",
+      "text": "Draw, Benvolio; beat down their weapons."
+    },
+    {
+      "number": 73,
+      "speaker": "ROMEO",
+      "text": "Gentlemen, for shame, forbear this outrage!"
+    },
+    {
+      "number": 74,
+      "speaker": "ROMEO",
+      "text": "Tybalt, Mercutio, the prince expressly hath"
+    },
+    {
+      "number": 75,
+      "speaker": "ROMEO",
+      "text": "Forbidden bandying in Verona streets:"
+    },
+    {
+      "number": 76,
+      "speaker": "ROMEO",
+      "text": "Hold, Tybalt! good Mercutio! Tybalt under Romeo’s arm stabs Mercutio, and flies with his followers."
+    },
+    {
+      "number": 77,
+      "speaker": "MERCUTIO",
+      "text": "I am hurt."
+    },
+    {
+      "number": 78,
+      "speaker": "MERCUTIO",
+      "text": "A plague o’ both your houses! I am sped."
+    },
+    {
+      "number": 79,
+      "speaker": "MERCUTIO",
+      "text": "Is he gone, and hath nothing?"
+    },
+    {
+      "number": 79,
+      "speaker": "BENVOLIO",
+      "text": "What, art thou hurt?"
+    },
+    {
+      "number": 80,
+      "speaker": "MERCUTIO",
+      "text": "Ay, ay, a scratch, a scratch; marry, ’tis enough."
+    },
+    {
+      "number": 81,
+      "speaker": "MERCUTIO",
+      "text": "Where is my page? Go, villain, fetch a surgeon."
+    },
+    {
+      "number": 82,
+      "speaker": "ROMEO",
+      "text": "Courage, man; the hurt cannot be much."
+    },
+    {
+      "number": 83,
+      "speaker": "MERCUTIO",
+      "text": "No, ’tis not so deep as a well, nor so wide as"
+    },
+    {
+      "number": 84,
+      "speaker": "MERCUTIO",
+      "text": "a church-door; but ’tis enough, ’twill serve: ask for me to-morrow, and"
+    },
+    {
+      "number": 85,
+      "speaker": "MERCUTIO",
+      "text": "you shall find me a grave man. I am peppered, I warrant,"
+    },
+    {
+      "number": 86,
+      "speaker": "MERCUTIO",
+      "text": "for this world. A plague o’ both your houses! ’Zounds, a dog,"
+    },
+    {
+      "number": 87,
+      "speaker": "MERCUTIO",
+      "text": "a rat, a mouse, a cat, to scratch a man to death!"
+    },
+    {
+      "number": 88,
+      "speaker": "MERCUTIO",
+      "text": "a braggart, a rogue, a villain, that fights by the book of"
+    },
+    {
+      "number": 89,
+      "speaker": "MERCUTIO",
+      "text": "arithmetic! Why the devil came you between us? I was hurt under"
+    },
+    {
+      "number": 90,
+      "speaker": "MERCUTIO",
+      "text": "your arm."
+    },
+    {
+      "number": 90,
+      "speaker": "ROMEO",
+      "text": "I thought all for the best."
+    },
+    {
+      "number": 91,
+      "speaker": "MERCUTIO",
+      "text": "Help me into some house, Benvolio,"
+    },
+    {
+      "number": 92,
+      "speaker": "MERCUTIO",
+      "text": "Or I shall faint. A plague o’ both your houses!"
+    },
+    {
+      "number": 93,
+      "speaker": "MERCUTIO",
+      "text": "They have made worms’ meat of me: I have it,"
+    },
+    {
+      "number": 94,
+      "speaker": "MERCUTIO",
+      "text": "And soundly too: your houses!"
+    },
+    {
+      "number": 94,
+      "speaker": "ROMEO",
+      "text": "This gentleman, the prince’s near ally,"
+    },
+    {
+      "number": 95,
+      "speaker": "ROMEO",
+      "text": "My very friend, hath got his mortal hurt"
+    },
+    {
+      "number": 96,
+      "speaker": "ROMEO",
+      "text": "In my behalf; my reputation stain’d"
+    },
+    {
+      "number": 97,
+      "speaker": "ROMEO",
+      "text": "With Tybalt’s slander—Tybalt, that an hour"
+    },
+    {
+      "number": 98,
+      "speaker": "ROMEO",
+      "text": "Hath been my kinsman! O sweet Juliet,"
+    },
+    {
+      "number": 99,
+      "speaker": "ROMEO",
+      "text": "Thy beauty hath made me effeminate"
+    },
+    {
+      "number": 100,
+      "speaker": "ROMEO",
+      "text": "And in my temper soften’d valour’s steel!"
+    },
+    {
+      "number": 101,
+      "speaker": "BENVOLIO",
+      "text": "O Romeo, Romeo, brave Mercutio’s dead!"
+    },
+    {
+      "number": 102,
+      "speaker": "BENVOLIO",
+      "text": "That gallant spirit hath aspired the clouds,"
+    },
+    {
+      "number": 103,
+      "speaker": "BENVOLIO",
+      "text": "Which too untimely here did scorn the earth."
+    },
+    {
+      "number": 104,
+      "speaker": "ROMEO",
+      "text": "This day’s black fate on more days doth depend;"
+    },
+    {
+      "number": 105,
+      "speaker": "ROMEO",
+      "text": "This but begins the woe others must end."
+    },
+    {
+      "number": 106,
+      "speaker": "BENVOLIO",
+      "text": "Here comes the furious Tybalt back again."
+    },
+    {
+      "number": 107,
+      "speaker": "ROMEO",
+      "text": "Alive, in triumph! and Mercutio slain!"
+    },
+    {
+      "number": 108,
+      "speaker": "ROMEO",
+      "text": "Away to heaven, respective lenity,"
+    },
+    {
+      "number": 109,
+      "speaker": "ROMEO",
+      "text": "And fire-eyed fury be my conduct now!"
+    },
+    {
+      "number": 110,
+      "speaker": "TYBALT",
+      "text": "Thou, wretched boy, that didst consort him here,"
+    },
+    {
+      "number": 111,
+      "speaker": "TYBALT",
+      "text": "Shalt with him hence."
+    },
+    {
+      "number": 112,
+      "speaker": "ROMEO",
+      "text": "This shall determine that. They fight; Tybalt falls."
+    },
+    {
+      "number": 113,
+      "speaker": "BENVOLIO",
+      "text": "Romeo, away, be gone!"
+    },
+    {
+      "number": 114,
+      "speaker": "BENVOLIO",
+      "text": "The citizens are up, and Tybalt slain."
+    },
+    {
+      "number": 115,
+      "speaker": "BENVOLIO",
+      "text": "Stand not amazed: the prince will doom thee death,"
+    },
+    {
+      "number": 116,
+      "speaker": "BENVOLIO",
+      "text": "If thou art taken: hence, be gone, away!"
+    },
+    {
+      "number": 117,
+      "speaker": "ROMEO",
+      "text": "O, I am fortune’s fool!"
+    },
+    {
+      "number": 117,
+      "speaker": "BENVOLIO",
+      "text": "Why dost thou stay?"
+    },
+    {
+      "number": 118,
+      "speaker": "FIRST CITIZEN",
+      "text": "Which way ran he that kill’d Mercutio?"
+    },
+    {
+      "number": 119,
+      "speaker": "FIRST CITIZEN",
+      "text": "Tybalt, that murderer, which way ran he?"
+    },
+    {
+      "number": 120,
+      "speaker": "BENVOLIO",
+      "text": "There lies that Tybalt."
+    },
+    {
+      "number": 120,
+      "speaker": "FIRST CITIZEN",
+      "text": "Up, sir, go with me;"
+    },
+    {
+      "number": 121,
+      "speaker": "FIRST CITIZEN",
+      "text": "I charge thee in the princes name, obey."
+    },
+    {
+      "number": 122,
+      "speaker": "PRINCE",
+      "text": "Where are the vile beginners of this fray?"
+    },
+    {
+      "number": 123,
+      "speaker": "BENVOLIO",
+      "text": "O noble prince, I can discover all"
+    },
+    {
+      "number": 124,
+      "speaker": "BENVOLIO",
+      "text": "The unlucky manage of this fatal brawl:"
+    },
+    {
+      "number": 125,
+      "speaker": "BENVOLIO",
+      "text": "There lies the man, slain by young Romeo,"
+    },
+    {
+      "number": 126,
+      "speaker": "BENVOLIO",
+      "text": "That slew thy kinsman, brave Mercutio."
+    },
+    {
+      "number": 127,
+      "speaker": "LADY CAPULET",
+      "text": "Tybalt, my cousin! O my brother’s child!"
+    },
+    {
+      "number": 128,
+      "speaker": "LADY CAPULET",
+      "text": "O prince! O cousin! husband! O, the blood is spilt"
+    },
+    {
+      "number": 129,
+      "speaker": "LADY CAPULET",
+      "text": "Of my dear kinsman! Prince, as thou art true,"
+    },
+    {
+      "number": 130,
+      "speaker": "LADY CAPULET",
+      "text": "For blood of ours, shed blood of Montague."
+    },
+    {
+      "number": 131,
+      "speaker": "LADY CAPULET",
+      "text": "O cousin, cousin!"
+    },
+    {
+      "number": 131,
+      "speaker": "PRINCE",
+      "text": "Benvolio, who began this bloody fray?"
+    },
+    {
+      "number": 132,
+      "speaker": "BENVOLIO",
+      "text": "Tybalt, here slain, whom Romeo’s hand did slay;"
+    },
+    {
+      "number": 133,
+      "speaker": "BENVOLIO",
+      "text": "Romeo that spoke him fair, bade him bethink"
+    },
+    {
+      "number": 134,
+      "speaker": "BENVOLIO",
+      "text": "How nice the quarrel was, and urged withal"
+    },
+    {
+      "number": 135,
+      "speaker": "BENVOLIO",
+      "text": "Your high displeasure: all this uttered"
+    },
+    {
+      "number": 136,
+      "speaker": "BENVOLIO",
+      "text": "With gentle breath, calm look, knees humbly bow’d,"
+    },
+    {
+      "number": 137,
+      "speaker": "BENVOLIO",
+      "text": "Could not take truce with the unruly spleen"
+    },
+    {
+      "number": 138,
+      "speaker": "BENVOLIO",
+      "text": "Of Tybalt deaf to peace, but that he tilts"
+    },
+    {
+      "number": 139,
+      "speaker": "BENVOLIO",
+      "text": "With piercing steel at bold Mercutio’s breast,"
+    },
+    {
+      "number": 140,
+      "speaker": "BENVOLIO",
+      "text": "Who, all as hot, turns deadly point to point,"
+    },
+    {
+      "number": 141,
+      "speaker": "BENVOLIO",
+      "text": "And, with a martial scorn, with one hand beats"
+    },
+    {
+      "number": 142,
+      "speaker": "BENVOLIO",
+      "text": "Cold death aside, and with the other sends"
+    },
+    {
+      "number": 143,
+      "speaker": "BENVOLIO",
+      "text": "It back to Tybalt, whose dexterity"
+    },
+    {
+      "number": 144,
+      "speaker": "BENVOLIO",
+      "text": "Retorts it: Romeo he cries aloud,"
+    },
+    {
+      "number": 145,
+      "speaker": "BENVOLIO",
+      "text": "“Hold, friends! friends, part!” and, swifter than his tongue,"
+    },
+    {
+      "number": 146,
+      "speaker": "BENVOLIO",
+      "text": "His agile arm beats down their fatal points,"
+    },
+    {
+      "number": 147,
+      "speaker": "BENVOLIO",
+      "text": "And ’twixt them rushes; underneath whose arm"
+    },
+    {
+      "number": 148,
+      "speaker": "BENVOLIO",
+      "text": "An envious thrust from Tybalt hit the life"
+    },
+    {
+      "number": 149,
+      "speaker": "BENVOLIO",
+      "text": "Of stout Mercutio, and then Tybalt fled;"
+    },
+    {
+      "number": 150,
+      "speaker": "BENVOLIO",
+      "text": "But by and by comes back to Romeo,"
+    },
+    {
+      "number": 151,
+      "speaker": "BENVOLIO",
+      "text": "Who had but newly entertain’d revenge,"
+    },
+    {
+      "number": 152,
+      "speaker": "BENVOLIO",
+      "text": "And to’t they go like lightning, for, ere I"
+    },
+    {
+      "number": 153,
+      "speaker": "BENVOLIO",
+      "text": "Could draw to part them, was stout Tybalt slain,"
+    },
+    {
+      "number": 154,
+      "speaker": "BENVOLIO",
+      "text": "And, as he fell, did Romeo turn and fly."
+    },
+    {
+      "number": 155,
+      "speaker": "BENVOLIO",
+      "text": "This is the truth, or let Benvolio die."
+    },
+    {
+      "number": 156,
+      "speaker": "LADY CAPULET",
+      "text": "He is a kinsman to the Montague;"
+    },
+    {
+      "number": 157,
+      "speaker": "LADY CAPULET",
+      "text": "Affection makes him false; he speaks not true:"
+    },
+    {
+      "number": 158,
+      "speaker": "LADY CAPULET",
+      "text": "Some twenty of them fought in this black strife,"
+    },
+    {
+      "number": 159,
+      "speaker": "LADY CAPULET",
+      "text": "And all those twenty could but kill one life."
+    },
+    {
+      "number": 160,
+      "speaker": "LADY CAPULET",
+      "text": "I beg for justice, which thou, prince, must give;"
+    },
+    {
+      "number": 161,
+      "speaker": "LADY CAPULET",
+      "text": "Romeo slew Tybalt, Romeo must not live."
+    },
+    {
+      "number": 162,
+      "speaker": "PRINCE",
+      "text": "Romeo slew him, he slew Mercutio;"
+    },
+    {
+      "number": 163,
+      "speaker": "PRINCE",
+      "text": "Who now the price of his dear blood doth owe?"
+    },
+    {
+      "number": 164,
+      "speaker": "MONTAGUE",
+      "text": "Not Romeo, prince, he was Mercutio’s friend;"
+    },
+    {
+      "number": 165,
+      "speaker": "MONTAGUE",
+      "text": "His fault concludes but what the law should end,"
+    },
+    {
+      "number": 166,
+      "speaker": "MONTAGUE",
+      "text": "The life of Tybalt."
+    },
+    {
+      "number": 166,
+      "speaker": "PRINCE",
+      "text": "And for that offence"
+    },
+    {
+      "number": 167,
+      "speaker": "PRINCE",
+      "text": "Immediately we do exile him hence:"
+    },
+    {
+      "number": 168,
+      "speaker": "PRINCE",
+      "text": "I have an interest in your hate’s proceeding,"
+    },
+    {
+      "number": 169,
+      "speaker": "PRINCE",
+      "text": "My blood for your rude brawls doth lie a-bleeding;"
+    },
+    {
+      "number": 170,
+      "speaker": "PRINCE",
+      "text": "But I’ll amerce you with so strong a fine"
+    },
+    {
+      "number": 171,
+      "speaker": "PRINCE",
+      "text": "That you shall all repent the loss of mine:"
+    },
+    {
+      "number": 172,
+      "speaker": "PRINCE",
+      "text": "I will be deaf to pleading and excuses;"
+    },
+    {
+      "number": 173,
+      "speaker": "PRINCE",
+      "text": "Nor tears nor prayers shall purchase out abuses:"
+    },
+    {
+      "number": 174,
+      "speaker": "PRINCE",
+      "text": "Therefore use none: let Romeo hence in haste,"
+    },
+    {
+      "number": 175,
+      "speaker": "PRINCE",
+      "text": "Else, when he’s found, that hour is his last."
+    },
+    {
+      "number": 176,
+      "speaker": "PRINCE",
+      "text": "Bear hence this body and attend our will:"
+    },
+    {
+      "number": 177,
+      "speaker": "PRINCE",
+      "text": "Mercy but murders, pardoning those that kill."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Mercutio, Benvolio, Page, and Servants."
+    },
+    {
+      "after_line": 30,
+      "text": "Enter Tybalt and others."
+    },
+    {
+      "after_line": 46,
+      "text": "Enter Romeo."
+    },
+    {
+      "after_line": 64,
+      "text": "Draws."
+    },
+    {
+      "after_line": 71,
+      "text": "Drawing."
+    },
+    {
+      "after_line": 81,
+      "text": "Exit Page."
+    },
+    {
+      "after_line": 94,
+      "text": "Exeunt Mercutio and Benvolio."
+    },
+    {
+      "after_line": 100,
+      "text": "Reenter Benvolio."
+    },
+    {
+      "after_line": 109,
+      "text": "Reenter Tybalt."
+    },
+    {
+      "after_line": 109,
+      "text": "Now, Tybalt, take the villain back again, That late thou gavest me; for Mercutio’s soul Is but a little way above our heads, Staying for thine to keep him company: Either thou, or I, or both, must go with him."
+    },
+    {
+      "after_line": 117,
+      "text": "Exit Romeo."
+    },
+    {
+      "after_line": 117,
+      "text": "Enter Citizens, etc."
+    },
+    {
+      "after_line": 121,
+      "text": "Enter Prince, attended; Montague, Capulet, their Wives, and others."
+    },
+    {
+      "after_line": 177,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss1",
+      "line": 1,
+      "phrase": "retire",
+      "definition": "withdraw to safety"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss2",
+      "line": 2,
+      "phrase": "abroad",
+      "definition": "out in the streets"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss3",
+      "line": 4,
+      "phrase": "mad blood stirring",
+      "definition": "hot tempers aroused — the July heat has made Veronese blood easily stirred"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss4",
+      "line": 10,
+      "phrase": "jack",
+      "definition": "fellow; man (neutral here)"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss5",
+      "line": 6,
+      "phrase": "claps me his sword",
+      "definition": "bangs his sword"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss6",
+      "line": 10,
+      "phrase": "Jack in thy mood",
+      "definition": "fool in your quarrelsome mood"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss7",
+      "line": 20,
+      "phrase": "meat",
+      "definition": "food"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss8",
+      "line": 12,
+      "phrase": "moody",
+      "definition": "irritable"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss9",
+      "line": 24,
+      "phrase": "doublet",
+      "definition": "a close-fitting upper garment"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss10",
+      "line": 17,
+      "phrase": "hazel",
+      "definition": "light-brown — hazel-eyed man is picked on as a quarrel-pretext"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss11",
+      "line": 20,
+      "phrase": "addle",
+      "definition": "rotten; muddled"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss12",
+      "line": 37,
+      "phrase": "Mercutio, thou consort’st with Romeo",
+      "definition": "Tybalt accuses Mercutio of keeping Romeo's company"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss13",
+      "line": 38,
+      "phrase": "Consort!",
+      "definition": "Mercutio takes offense: 'consort' could mean musical troupe (he's no minstrel)"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss14",
+      "line": 38,
+      "phrase": "minstrels",
+      "definition": "low hired musicians — a social insult"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss15",
+      "line": 39,
+      "phrase": "fiddlestick",
+      "definition": "a fiddle-bow; slang for sword (with double entendre)"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss16",
+      "line": 40,
+      "phrase": "Zounds",
+      "definition": "by God's wounds — strong oath"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss17",
+      "line": 45,
+      "phrase": "gaze",
+      "definition": "common view; here, stared at by passers-by"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss18",
+      "line": 50,
+      "phrase": "man",
+      "definition": "servant; underling"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss19",
+      "line": 49,
+      "phrase": "field",
+      "definition": "battleground; dueling-ground"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss20",
+      "line": 43,
+      "phrase": "reason coldly",
+      "definition": "discuss calmly"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss21",
+      "line": 48,
+      "phrase": "your livery",
+      "definition": "your servant's uniform — i.e., your hired man"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss22",
+      "line": 54,
+      "phrase": "appertaining rage",
+      "definition": "proper wrath; the anger I should feel"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss23",
+      "line": 55,
+      "phrase": "villain am I none",
+      "definition": "I am no scoundrel — Romeo refuses the insult"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss24",
+      "line": 60,
+      "phrase": "love thee better than thou canst devise",
+      "definition": "I love you more than you can imagine — Romeo hints at the secret marriage"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss25",
+      "line": 63,
+      "phrase": "dishonourable, vile submission",
+      "definition": "Mercutio's scorn at Romeo's apparent cowardice"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss26",
+      "line": 65,
+      "phrase": "Alla stoccata",
+      "definition": "'all at the thrust' — Italian fencing jargon for a decisive lunge"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss27",
+      "line": 65,
+      "phrase": "rat-catcher",
+      "definition": "cat — Mercutio's pun on Tybalt-as-feline (Tybert the cat)"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss28",
+      "line": 65,
+      "phrase": "will you walk?",
+      "definition": "will you fight? — formal invitation to a duel"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss29",
+      "line": 66,
+      "phrase": "King of Cats",
+      "definition": "Tybalt as Tybert, the cat-king of the Reynard fables"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss30",
+      "line": 66,
+      "phrase": "nine lives",
+      "definition": "Mercutio intends to take all nine of Tybalt's feline lives"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss31",
+      "line": 68,
+      "phrase": "dry-beat",
+      "definition": "beat severely without drawing blood"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss32",
+      "line": 68,
+      "phrase": "dry-beat the rest of the eight",
+      "definition": "knock out the other eight lives with a cane"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss33",
+      "line": 69,
+      "phrase": "pilcher",
+      "definition": "sword's scabbard (contemptuous); also a fish"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss34",
+      "line": 70,
+      "phrase": "about your ears",
+      "definition": "at your head"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss35",
+      "line": 76,
+      "phrase": "Hold, Tybalt!",
+      "definition": "stop! — Romeo's cry to halt the brawl"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss36",
+      "line": 74,
+      "phrase": "expressly hath forbid",
+      "definition": "the Prince has forbidden — Escalus's decree from 1.1"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss37",
+      "line": 77,
+      "phrase": "sped",
+      "definition": "done for; dispatched — dying"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss38",
+      "line": 91,
+      "phrase": "A plague o’ both your houses!",
+      "definition": "Mercutio's curse — the line that marks the play's tragic turn; he rejects both Montagues and Capulets"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss39",
+      "line": 87,
+      "phrase": "braggart",
+      "definition": "boaster"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss40",
+      "line": 87,
+      "phrase": "rogue",
+      "definition": "scoundrel"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss41",
+      "line": 88,
+      "phrase": "arithmetic",
+      "definition": "fencing-manual numbers — an insult to Tybalt's by-the-book swordsmanship"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss42",
+      "line": 84,
+      "phrase": "grave man",
+      "definition": "a dead man — Mercutio's last pun, dying of a wound"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss43",
+      "line": 84,
+      "phrase": "peppered",
+      "definition": "done for; killed"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss44",
+      "line": 85,
+      "phrase": "for this world",
+      "definition": "as far as living is concerned"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss45",
+      "line": 91,
+      "phrase": "A plague o’ both your houses",
+      "definition": "Mercutio's curse, repeated; the second of three utterances — he lays the play's tragedy on both families"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss46",
+      "line": 85,
+      "phrase": "’Zounds",
+      "definition": "by God's wounds — dying oath"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss47",
+      "line": 87,
+      "phrase": "villain",
+      "definition": "low-born man"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss48",
+      "line": 122,
+      "phrase": "man",
+      "definition": "valiant"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss49",
+      "line": 91,
+      "phrase": "faint",
+      "definition": "swoon"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss50",
+      "line": 91,
+      "phrase": "A plague o’ both your houses!",
+      "definition": "Mercutio's third and final curse — the dying phrase seals the tragic turn"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss51",
+      "line": 92,
+      "phrase": "worms’ meat",
+      "definition": "corpse fodder; dead flesh"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss52",
+      "line": 79,
+      "phrase": "a scratch",
+      "definition": "Mercutio dismisses his fatal wound — tragicomic bravado"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss53",
+      "line": 127,
+      "phrase": "kinsman",
+      "definition": "blood-relative — Mercutio was kin to the Prince, and an ally of Romeo"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss54",
+      "line": 98,
+      "phrase": "effeminate",
+      "definition": "unmanly — Romeo blames his unmartial mildness on love"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss55",
+      "line": 99,
+      "phrase": "valour’s steel",
+      "definition": "made my fighting spirit soft"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss56",
+      "line": 101,
+      "phrase": "aspired the clouds",
+      "definition": "soared to the clouds — Mercutio's lofty spirit"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss57",
+      "line": 105,
+      "phrase": "furious",
+      "definition": "wrathful; frenzied"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss58",
+      "line": 108,
+      "phrase": "fire-eyed fury",
+      "definition": "wrath with flaming eyes — the Furies of Greek myth"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss59",
+      "line": 109,
+      "phrase": "consort",
+      "definition": "accompany — Romeo picks up Mercutio's angry pun and makes it literal"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss60",
+      "line": 115,
+      "phrase": "O, I am fortune’s fool!",
+      "definition": "Romeo as the plaything of fate — 'fool' in the sense of dupe, toy"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss61",
+      "line": 129,
+      "phrase": "Benvolio, who began this bloody fray?",
+      "definition": "the Prince demands an account"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss62",
+      "line": 122,
+      "phrase": "manage",
+      "definition": "control; management (of the quarrel)"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss63",
+      "line": 142,
+      "phrase": "Retorts it",
+      "definition": "throws it back"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss64",
+      "line": 146,
+      "phrase": "envious",
+      "definition": "malicious; spiteful — NOT the modern 'jealous'"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss65",
+      "line": 132,
+      "phrase": "withal",
+      "definition": "with it"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss66",
+      "line": 167,
+      "phrase": "a-bleeding",
+      "definition": "bleeding — Mercutio was kin to the Prince, killed in the Montague/Capulet feud"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss67",
+      "line": 168,
+      "phrase": "amerce",
+      "definition": "fine; punish by penalty"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss68",
+      "line": 165,
+      "phrase": "exile",
+      "definition": "Romeo's sentence — banishment from Verona, the play's second hinge"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_gloss69",
+      "line": 175,
+      "phrase": "Mercy but murders, pardoning those that kill",
+      "definition": "forgiving murderers amounts to fresh murder — the Prince's final judgment"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act3_scene1_ann1",
+      "line_start": 95,
+      "line_end": 122,
+      "citation_display": "Romeo and Juliet 3.1.95–122",
+      "category": "structural",
+      "title": "'A plague o' both your houses!' — the play's tragic hinge",
+      "body": "Everything before this moment is comedy — arranged or conditioned or delayed. Everything after is tragedy. Mercutio's death converts the register of the whole play. The specific mechanism is cruel: Romeo's well-meaning intervention (stepping between Tybalt and Mercutio to urge peace, citing the Prince's decree) is exactly what enables Tybalt to land the fatal thrust, reaching under Romeo's arm. Romeo's peacemaking causes the death that will force the tragedy. Mercutio delivers three versions of his dying curse, 'A plague o' both your houses,' each more desperate than the last — refusing to side with either family, laying the tragedy's fault equally on both. The curse is structurally performative: from Mercutio's death forward, the play accelerates, every scene shorter and tighter than the last, rushing toward 5.3.",
+      "sources": [
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)",
+        "Susan Snyder, The Comic Matrix of Shakespeare's Tragedies (1979)"
+      ]
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_ann2",
+      "line_start": 96,
+      "line_end": 110,
+      "citation_display": "Romeo and Juliet 3.1.96–110",
+      "category": "close_reading",
+      "title": "Mercutio dying — puns to the last",
+      "body": "Mercutio's dying lines keep his voice intact: 'Ask for me to-morrow, and you shall find me a grave man' — the pun on 'grave' (serious / sepulchral) is delivered with a wound in his chest. 'I am peppered, I warrant, for this world' — 'peppered' meaning 'done for.' He keeps fencing with language until his language gives out. This is not just characterization; it is structural. The play cannot continue in Mercutio's voice, and he knows it: 'A plague o' both your houses, / They have made worms' meat of me.' The 'worms' meat' phrase compresses his identity (wit, speed, excess) into the material fact of a corpse. Mercutio's commitment to puns even as he bleeds out is Shakespeare's most concentrated demonstration of character expressed in style.",
+      "sources": [
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)"
+      ]
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_ann3",
+      "line_start": 156,
+      "line_end": 158,
+      "citation_display": "Romeo and Juliet 3.1.156–158",
+      "category": "thematic",
+      "title": "'O, I am fortune's fool!'",
+      "body": "After killing Tybalt, Romeo cries out: 'O, I am fortune's fool!' — the phrase naming the play's second theory of misfortune. The prologue said 'star-cross'd' (fated by the stars); here, Romeo says 'fortune's fool' (toy of the goddess Fortuna). Fortune was the medieval figure of circumstance; her wheel raised and toppled men arbitrarily. Romeo is indicating that he is not just doomed, but humiliated by doom — made a fool. The self-awareness is partial: he is not yet ready to rebel against fortune. That moment comes in 5.1, 'Then I defy you, stars!' — where his suicide becomes the paradoxical assertion of will against the fate the prologue announced.",
+      "sources": [
+        "Douglas Peterson, Time, Tide, and Tempest (1973)",
+        "Frederick Kiefer, Fortune and Elizabethan Tragedy (1983)"
+      ]
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_ann4",
+      "line_start": 185,
+      "line_end": 222,
+      "citation_display": "Romeo and Juliet 3.1.185–222",
+      "category": "structural",
+      "title": "The Prince's second judgment — exile instead of death",
+      "body": "Escalus returns to adjudicate the second major breach of the peace. The decision is consequential: Romeo killed Tybalt, but Tybalt killed Mercutio first. The Prince banishes Romeo rather than executing him, and fines the Montagues and Capulets. Every element of this judgment will drive the rest of the play. Banishment rather than death preserves Romeo — and therefore preserves the need to communicate with Juliet — and therefore requires the Friar's letter, which (Act 5) will fail to reach him. The fine does not end the feud; the families' private grief takes a more personal turn. The Prince's closing line, 'Mercy but murders, pardoning those that kill,' is a rueful acknowledgment that his attempted mercy will not save more lives.",
+      "sources": [
+        "Jill L. Levenson, The Oxford Shakespeare: Romeo and Juliet (2000)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act3_scene1_q1",
+      "kind": "structural",
+      "prompt": "Why is Mercutio's death called the play's tragic hinge?",
+      "options": [
+        "It is the longest death-scene",
+        "It converts the play's register from comedy to tragedy — everything before is conditional, everything after is catastrophe",
+        "It happens at the exact midpoint (line count)",
+        "The Prince appears for the first time"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 95,
+      "anchor_line_end": 122
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_q2",
+      "kind": "comprehension",
+      "prompt": "How exactly does Tybalt manage to wound Mercutio?",
+      "options": [
+        "Tybalt stabs him from behind",
+        "Romeo steps between them to urge peace, and Tybalt thrusts under Romeo's arm — Romeo's peacemaking enables the fatal blow",
+        "Mercutio trips on his own sword",
+        "Benvolio accidentally pushes Mercutio onto Tybalt's blade"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 90,
+      "anchor_line_end": 97
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_q3",
+      "kind": "close_reading",
+      "prompt": "What pun does the dying Mercutio make?",
+      "options": [
+        "A pun on 'feud' / 'food'",
+        "'Ask for me to-morrow, and you shall find me a grave man' — grave meaning both serious and buried",
+        "A pun on 'Tybalt' / 'Tybert'",
+        "A pun on 'Romeo' / 'rose'"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 97,
+      "anchor_line_end": 99
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_q4",
+      "kind": "theme",
+      "prompt": "What does Mercutio's triple-repeated curse 'A plague o' both your houses!' accomplish?",
+      "options": [
+        "It blames only the Capulets",
+        "It refuses to take sides — laying the tragedy's fault equally on Montague and Capulet",
+        "It asks for divine intervention",
+        "It is merely an exclamation"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 99,
+      "anchor_line_end": 122
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_q5",
+      "kind": "inference",
+      "prompt": "Romeo cries 'O, I am fortune's fool!' — what does this mean?",
+      "options": [
+        "He is proud of his luck",
+        "He feels used and humiliated by Fortune (circumstance) — a toy of events beyond his control",
+        "He is apologizing to Tybalt",
+        "He is joking"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 156,
+      "anchor_line_end": 158
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene1_q6",
+      "kind": "structural",
+      "prompt": "What is the Prince's judgment at the end of the scene?",
+      "options": [
+        "He executes Romeo",
+        "He exiles Romeo from Verona on pain of death — and fines both houses; this preserves Romeo for the rest of the tragedy",
+        "He pardons Romeo entirely",
+        "He jails Romeo for one year"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 211,
+      "anchor_line_end": 222
+    }
+  ]
+}

@@ -1,0 +1,1172 @@
+{
+  "section_id": "romeo_and_juliet_act3_scene3",
+  "work_id": "romeo-and-juliet",
+  "sequence": 16,
+  "act": 3,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "Friar Laurence's cell",
+  "line_count": 179,
+  "word_count": 1375,
+  "est_read_minutes": 7,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Romeo, come forth; come forth, thou fearful man:"
+    },
+    {
+      "number": 2,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Affliction is enamour’d of thy parts,"
+    },
+    {
+      "number": 3,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And thou art wedded to calamity."
+    },
+    {
+      "number": 4,
+      "speaker": "ROMEO",
+      "text": "Father, what news? what is the prince’s doom?"
+    },
+    {
+      "number": 5,
+      "speaker": "ROMEO",
+      "text": "What sorrow craves acquaintance at my hand,"
+    },
+    {
+      "number": 6,
+      "speaker": "ROMEO",
+      "text": "That I yet know not?"
+    },
+    {
+      "number": 6,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Too familiar"
+    },
+    {
+      "number": 7,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Is my dear son with such sour company:"
+    },
+    {
+      "number": 8,
+      "speaker": "FRIAR LAURENCE",
+      "text": "I bring thee tidings of the prince’s doom."
+    },
+    {
+      "number": 9,
+      "speaker": "ROMEO",
+      "text": "What less than dooms-day is the prince’s doom?"
+    },
+    {
+      "number": 10,
+      "speaker": "FRIAR LAURENCE",
+      "text": "A gentler judgment vanish’d from his lips,"
+    },
+    {
+      "number": 11,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Not body’s death, but body’s banishment."
+    },
+    {
+      "number": 11,
+      "speaker": "ROMEO",
+      "text": "Ha, banishment! be merciful, say “death;”"
+    },
+    {
+      "number": 12,
+      "speaker": "ROMEO",
+      "text": "For exile hath more terror in his look,"
+    },
+    {
+      "number": 13,
+      "speaker": "ROMEO",
+      "text": "Much more than death: do not say “banishment.”"
+    },
+    {
+      "number": 14,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Hence from Verona art thou banished:"
+    },
+    {
+      "number": 15,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Be patient, for the world is broad and wide."
+    },
+    {
+      "number": 16,
+      "speaker": "ROMEO",
+      "text": "There is no world without Verona walls,"
+    },
+    {
+      "number": 17,
+      "speaker": "ROMEO",
+      "text": "But purgatory, torture, hell itself."
+    },
+    {
+      "number": 18,
+      "speaker": "ROMEO",
+      "text": "Hence-banished is banish’d from the world,"
+    },
+    {
+      "number": 19,
+      "speaker": "ROMEO",
+      "text": "And world’s exile is death: then banished,"
+    },
+    {
+      "number": 20,
+      "speaker": "ROMEO",
+      "text": "Is death mis-term’d: calling death banishment,"
+    },
+    {
+      "number": 21,
+      "speaker": "ROMEO",
+      "text": "Thou cutt’st my head off with a golden axe,"
+    },
+    {
+      "number": 22,
+      "speaker": "ROMEO",
+      "text": "And smilest upon the stroke that murders me."
+    },
+    {
+      "number": 23,
+      "speaker": "FRIAR LAURENCE",
+      "text": "O deadly sin! O rude unthankfulness!"
+    },
+    {
+      "number": 24,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Thy fault our law calls death; but the kind prince,"
+    },
+    {
+      "number": 25,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Taking thy part, hath rush’d aside the law,"
+    },
+    {
+      "number": 26,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And turn’d that black word death to banishment:"
+    },
+    {
+      "number": 27,
+      "speaker": "FRIAR LAURENCE",
+      "text": "This is dear mercy, and thou seest it not."
+    },
+    {
+      "number": 28,
+      "speaker": "ROMEO",
+      "text": "’Tis torture, and not mercy: heaven is here,"
+    },
+    {
+      "number": 29,
+      "speaker": "ROMEO",
+      "text": "Where Juliet lives; and every cat and dog"
+    },
+    {
+      "number": 30,
+      "speaker": "ROMEO",
+      "text": "And little mouse, every unworthy thing,"
+    },
+    {
+      "number": 31,
+      "speaker": "ROMEO",
+      "text": "Live here in heaven and may look on her;"
+    },
+    {
+      "number": 32,
+      "speaker": "ROMEO",
+      "text": "But Romeo may not: more validity,"
+    },
+    {
+      "number": 33,
+      "speaker": "ROMEO",
+      "text": "More honourable state, more courtship lives"
+    },
+    {
+      "number": 34,
+      "speaker": "ROMEO",
+      "text": "In carrion-flies than Romeo: they may seize"
+    },
+    {
+      "number": 35,
+      "speaker": "ROMEO",
+      "text": "On the white wonder of dear Juliet’s hand"
+    },
+    {
+      "number": 36,
+      "speaker": "ROMEO",
+      "text": "And steal immortal blessing from her lips,"
+    },
+    {
+      "number": 37,
+      "speaker": "ROMEO",
+      "text": "Who even in pure and vestal modesty,"
+    },
+    {
+      "number": 38,
+      "speaker": "ROMEO",
+      "text": "Still blush, as thinking their own kisses sin;"
+    },
+    {
+      "number": 39,
+      "speaker": "ROMEO",
+      "text": "But Romeo may not; he is banished:"
+    },
+    {
+      "number": 40,
+      "speaker": "ROMEO",
+      "text": "Flies may do this, but I from this must fly:"
+    },
+    {
+      "number": 41,
+      "speaker": "ROMEO",
+      "text": "They are free men, but I am banished."
+    },
+    {
+      "number": 42,
+      "speaker": "ROMEO",
+      "text": "And say’st thou yet that exile is not death?"
+    },
+    {
+      "number": 43,
+      "speaker": "ROMEO",
+      "text": "Hadst thou no poison mix’d, no sharp-ground knife,"
+    },
+    {
+      "number": 44,
+      "speaker": "ROMEO",
+      "text": "No sudden mean of death, though ne’er so mean,"
+    },
+    {
+      "number": 45,
+      "speaker": "ROMEO",
+      "text": "But “banished” to kill me?—“banished”?"
+    },
+    {
+      "number": 46,
+      "speaker": "ROMEO",
+      "text": "O friar, the damned use that word in hell;"
+    },
+    {
+      "number": 47,
+      "speaker": "ROMEO",
+      "text": "Howlings attend it: how hast thou the heart,"
+    },
+    {
+      "number": 48,
+      "speaker": "ROMEO",
+      "text": "Being a divine, a ghostly confessor,"
+    },
+    {
+      "number": 49,
+      "speaker": "ROMEO",
+      "text": "A sin-absolver, and my friend profess’d,"
+    },
+    {
+      "number": 50,
+      "speaker": "ROMEO",
+      "text": "To mangle me with that word “banished”?"
+    },
+    {
+      "number": 51,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Thou fond mad man, hear me but speak a word."
+    },
+    {
+      "number": 52,
+      "speaker": "ROMEO",
+      "text": "O, thou wilt speak again of banishment."
+    },
+    {
+      "number": 53,
+      "speaker": "FRIAR LAURENCE",
+      "text": "I’ll give thee armour to keep off that word;"
+    },
+    {
+      "number": 54,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Adversity’s sweet milk, philosophy,"
+    },
+    {
+      "number": 55,
+      "speaker": "FRIAR LAURENCE",
+      "text": "To comfort thee, though thou art banished."
+    },
+    {
+      "number": 56,
+      "speaker": "ROMEO",
+      "text": "Yet “banished”? Hang up philosophy!"
+    },
+    {
+      "number": 57,
+      "speaker": "ROMEO",
+      "text": "Unless philosophy can make a Juliet,"
+    },
+    {
+      "number": 58,
+      "speaker": "ROMEO",
+      "text": "Displant a town, reverse a prince’s doom,"
+    },
+    {
+      "number": 59,
+      "speaker": "ROMEO",
+      "text": "It helps not, it prevails not: talk no more."
+    },
+    {
+      "number": 60,
+      "speaker": "FRIAR LAURENCE",
+      "text": "O, then I see that madmen have no ears."
+    },
+    {
+      "number": 61,
+      "speaker": "ROMEO",
+      "text": "How should they, when that wise men have no eyes?"
+    },
+    {
+      "number": 62,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Let me dispute with thee of thy estate."
+    },
+    {
+      "number": 63,
+      "speaker": "ROMEO",
+      "text": "Thou canst not speak of that thou dost not feel:"
+    },
+    {
+      "number": 64,
+      "speaker": "ROMEO",
+      "text": "Wert thou as young as I, Juliet thy love,"
+    },
+    {
+      "number": 65,
+      "speaker": "ROMEO",
+      "text": "An hour but married, Tybalt murdered,"
+    },
+    {
+      "number": 66,
+      "speaker": "ROMEO",
+      "text": "Doting like me and like me banished,"
+    },
+    {
+      "number": 67,
+      "speaker": "ROMEO",
+      "text": "Then mightst thou speak, then mightst thou tear thy hair,"
+    },
+    {
+      "number": 68,
+      "speaker": "ROMEO",
+      "text": "And fall upon the ground, as I do now,"
+    },
+    {
+      "number": 69,
+      "speaker": "ROMEO",
+      "text": "Taking the measure of an unmade grave."
+    },
+    {
+      "number": 70,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Arise; one knocks; good Romeo, hide thyself."
+    },
+    {
+      "number": 71,
+      "speaker": "ROMEO",
+      "text": "Not I; unless the breath of heart-sick groans,"
+    },
+    {
+      "number": 72,
+      "speaker": "ROMEO",
+      "text": "Mist-like, infold me from the search of eyes."
+    },
+    {
+      "number": 73,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Hark, how they knock! Who’s there? Romeo, arise;"
+    },
+    {
+      "number": 74,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Thou wilt be taken. Stay awhile! Stand up;"
+    },
+    {
+      "number": 75,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Run to my study. By and by! God’s will,"
+    },
+    {
+      "number": 76,
+      "speaker": "FRIAR LAURENCE",
+      "text": "What simpleness is this! I come, I come!"
+    },
+    {
+      "number": 77,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Who knocks so hard? whence come you? what’s your will?"
+    },
+    {
+      "number": 78,
+      "speaker": "NURSE",
+      "text": "Let me come in, and you shall know my errand;"
+    },
+    {
+      "number": 79,
+      "speaker": "NURSE",
+      "text": "I come from Lady Juliet."
+    },
+    {
+      "number": 79,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Welcome, then."
+    },
+    {
+      "number": 80,
+      "speaker": "NURSE",
+      "text": "O holy friar, O, tell me, holy friar,"
+    },
+    {
+      "number": 81,
+      "speaker": "NURSE",
+      "text": "Where is my lady’s lord, where’s Romeo?"
+    },
+    {
+      "number": 82,
+      "speaker": "FRIAR LAURENCE",
+      "text": "There on the ground, with his own tears made drunk."
+    },
+    {
+      "number": 83,
+      "speaker": "NURSE",
+      "text": "O, he is even in my mistress’ case,"
+    },
+    {
+      "number": 84,
+      "speaker": "NURSE",
+      "text": "Just in her case! O woeful sympathy!"
+    },
+    {
+      "number": 85,
+      "speaker": "NURSE",
+      "text": "Piteous predicament! Even so lies she,"
+    },
+    {
+      "number": 86,
+      "speaker": "NURSE",
+      "text": "Blubbering and weeping, weeping and blubbering."
+    },
+    {
+      "number": 87,
+      "speaker": "NURSE",
+      "text": "Stand up, stand up; stand, an you be a man:"
+    },
+    {
+      "number": 88,
+      "speaker": "NURSE",
+      "text": "For Juliet’s sake, for her sake, rise and stand;"
+    },
+    {
+      "number": 89,
+      "speaker": "NURSE",
+      "text": "Why should you fall into so deep an O?"
+    },
+    {
+      "number": 90,
+      "speaker": "ROMEO",
+      "text": "Nurse!"
+    },
+    {
+      "number": 91,
+      "speaker": "NURSE",
+      "text": "Ah sir! ah sir! Well, death’s the end of all."
+    },
+    {
+      "number": 92,
+      "speaker": "ROMEO",
+      "text": "Spakest thou of Juliet? how is it with her?"
+    },
+    {
+      "number": 93,
+      "speaker": "ROMEO",
+      "text": "Doth she not think me an old murderer,"
+    },
+    {
+      "number": 94,
+      "speaker": "ROMEO",
+      "text": "Now I have stain’d the childhood of our joy"
+    },
+    {
+      "number": 95,
+      "speaker": "ROMEO",
+      "text": "With blood removed but little from her own?"
+    },
+    {
+      "number": 96,
+      "speaker": "ROMEO",
+      "text": "Where is she? and how doth she? and what says"
+    },
+    {
+      "number": 97,
+      "speaker": "ROMEO",
+      "text": "My conceal’d lady to our cancell’d love?"
+    },
+    {
+      "number": 98,
+      "speaker": "NURSE",
+      "text": "O, she says nothing, sir, but weeps and weeps;"
+    },
+    {
+      "number": 99,
+      "speaker": "NURSE",
+      "text": "And now falls on her bed; and then starts up,"
+    },
+    {
+      "number": 100,
+      "speaker": "NURSE",
+      "text": "And Tybalt calls; and then on Romeo cries,"
+    },
+    {
+      "number": 101,
+      "speaker": "NURSE",
+      "text": "And then down falls again."
+    },
+    {
+      "number": 101,
+      "speaker": "ROMEO",
+      "text": "As if that name,"
+    },
+    {
+      "number": 102,
+      "speaker": "ROMEO",
+      "text": "Shot from the deadly level of a gun,"
+    },
+    {
+      "number": 103,
+      "speaker": "ROMEO",
+      "text": "Did murder her; as that name’s cursed hand"
+    },
+    {
+      "number": 104,
+      "speaker": "ROMEO",
+      "text": "Murder’d her kinsman. O, tell me, friar, tell me,"
+    },
+    {
+      "number": 105,
+      "speaker": "ROMEO",
+      "text": "In what vile part of this anatomy"
+    },
+    {
+      "number": 106,
+      "speaker": "ROMEO",
+      "text": "Doth my name lodge? tell me, that I may sack"
+    },
+    {
+      "number": 107,
+      "speaker": "ROMEO",
+      "text": "The hateful mansion."
+    },
+    {
+      "number": 107,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Hold thy desperate hand:"
+    },
+    {
+      "number": 108,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Art thou a man? thy form cries out thou art:"
+    },
+    {
+      "number": 109,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Thy tears are womanish; thy wild acts denote"
+    },
+    {
+      "number": 110,
+      "speaker": "FRIAR LAURENCE",
+      "text": "The unreasonable fury of a beast:"
+    },
+    {
+      "number": 111,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Unseemly woman in a seeming man!"
+    },
+    {
+      "number": 112,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Or ill-beseeming beast in seeming both!"
+    },
+    {
+      "number": 113,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Thou hast amazed me: by my holy order,"
+    },
+    {
+      "number": 114,
+      "speaker": "FRIAR LAURENCE",
+      "text": "I thought thy disposition better temper’d."
+    },
+    {
+      "number": 115,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Hast thou slain Tybalt? wilt thou slay thyself?"
+    },
+    {
+      "number": 116,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And slay thy lady too that lives in thee,"
+    },
+    {
+      "number": 117,
+      "speaker": "FRIAR LAURENCE",
+      "text": "By doing damned hate upon thyself?"
+    },
+    {
+      "number": 118,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Why rail’st thou on thy birth, the heaven, and earth?"
+    },
+    {
+      "number": 119,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Since birth, and heaven, and earth, all three do meet"
+    },
+    {
+      "number": 120,
+      "speaker": "FRIAR LAURENCE",
+      "text": "In thee at once; which thou at once wouldst lose."
+    },
+    {
+      "number": 121,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Fie, fie, thou shamest thy shape, thy love, thy wit;"
+    },
+    {
+      "number": 122,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Which, like a usurer, abound’st in all,"
+    },
+    {
+      "number": 123,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And usest none in that true use indeed"
+    },
+    {
+      "number": 124,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Which should bedeck thy shape, thy love, thy wit:"
+    },
+    {
+      "number": 125,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Thy noble shape is but a form of wax,"
+    },
+    {
+      "number": 126,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Digressing from the valour of a man;"
+    },
+    {
+      "number": 127,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Thy dear love sworn but hollow perjury,"
+    },
+    {
+      "number": 128,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Killing that love which thou hast vow’d to cherish;"
+    },
+    {
+      "number": 129,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Thy wit, that ornament to shape and love,"
+    },
+    {
+      "number": 130,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Mis-shapen in the conduct of them both,"
+    },
+    {
+      "number": 131,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Like powder in a skilless soldier’s flask,"
+    },
+    {
+      "number": 132,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Is set a-fire by thine own ignorance,"
+    },
+    {
+      "number": 133,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And thou dismember’d with thine own defence."
+    },
+    {
+      "number": 134,
+      "speaker": "FRIAR LAURENCE",
+      "text": "What, rouse thee, man! thy Juliet is alive,"
+    },
+    {
+      "number": 135,
+      "speaker": "FRIAR LAURENCE",
+      "text": "For whose dear sake thou wast but lately dead;"
+    },
+    {
+      "number": 136,
+      "speaker": "FRIAR LAURENCE",
+      "text": "There art thou happy: Tybalt would kill thee,"
+    },
+    {
+      "number": 137,
+      "speaker": "FRIAR LAURENCE",
+      "text": "But thou slew’st Tybalt; there are thou happy too:"
+    },
+    {
+      "number": 138,
+      "speaker": "FRIAR LAURENCE",
+      "text": "The law that threaten’d death becomes thy friend"
+    },
+    {
+      "number": 139,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And turns it to exile; there art thou happy:"
+    },
+    {
+      "number": 140,
+      "speaker": "FRIAR LAURENCE",
+      "text": "A pack of blessings lights up upon thy back;"
+    },
+    {
+      "number": 141,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Happiness courts thee in her best array;"
+    },
+    {
+      "number": 142,
+      "speaker": "FRIAR LAURENCE",
+      "text": "But, like a misbehaved and sullen wench,"
+    },
+    {
+      "number": 143,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Thou pout’st upon thy fortune and thy love:"
+    },
+    {
+      "number": 144,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Take heed, take heed, for such die miserable."
+    },
+    {
+      "number": 145,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Go, get thee to thy love, as was decreed,"
+    },
+    {
+      "number": 146,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Ascend her chamber, hence and comfort her:"
+    },
+    {
+      "number": 147,
+      "speaker": "FRIAR LAURENCE",
+      "text": "But look thou stay not till the watch be set,"
+    },
+    {
+      "number": 148,
+      "speaker": "FRIAR LAURENCE",
+      "text": "For then thou canst not pass to Mantua;"
+    },
+    {
+      "number": 149,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Where thou shalt live, till we can find a time"
+    },
+    {
+      "number": 150,
+      "speaker": "FRIAR LAURENCE",
+      "text": "To blaze your marriage, reconcile your friends,"
+    },
+    {
+      "number": 151,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Beg pardon of the prince, and call thee back"
+    },
+    {
+      "number": 152,
+      "speaker": "FRIAR LAURENCE",
+      "text": "With twenty hundred thousand times more joy"
+    },
+    {
+      "number": 153,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Than thou went’st forth in lamentation."
+    },
+    {
+      "number": 154,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Go before, nurse: commend me to thy lady;"
+    },
+    {
+      "number": 155,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And bid her hasten all the house to bed,"
+    },
+    {
+      "number": 156,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Which heavy sorrow makes them apt unto:"
+    },
+    {
+      "number": 157,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Romeo is coming."
+    },
+    {
+      "number": 158,
+      "speaker": "NURSE",
+      "text": "O Lord, I could have stay’d here all the night"
+    },
+    {
+      "number": 159,
+      "speaker": "NURSE",
+      "text": "To hear good counsel: O, what learning is!"
+    },
+    {
+      "number": 160,
+      "speaker": "NURSE",
+      "text": "My lord, I’ll tell my lady you will come."
+    },
+    {
+      "number": 161,
+      "speaker": "ROMEO",
+      "text": "Do so, and bid my sweet prepare to chide."
+    },
+    {
+      "number": 162,
+      "speaker": "NURSE",
+      "text": "Here, sir, a ring she bid me give you, sir:"
+    },
+    {
+      "number": 163,
+      "speaker": "NURSE",
+      "text": "Hie you, make haste, for it grows very late."
+    },
+    {
+      "number": 164,
+      "speaker": "ROMEO",
+      "text": "How well my comfort is revived by this!"
+    },
+    {
+      "number": 165,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Go hence; good night; and here stands all your state:"
+    },
+    {
+      "number": 166,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Either be gone before the watch be set,"
+    },
+    {
+      "number": 167,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Or by the break of day disguised from hence:"
+    },
+    {
+      "number": 168,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Sojourn in Mantua; I’ll find out your man,"
+    },
+    {
+      "number": 169,
+      "speaker": "FRIAR LAURENCE",
+      "text": "And he shall signify from time to time"
+    },
+    {
+      "number": 170,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Every good hap to you that chances here:"
+    },
+    {
+      "number": 171,
+      "speaker": "FRIAR LAURENCE",
+      "text": "Give me thy hand; ’tis late: farewell; good night."
+    },
+    {
+      "number": 172,
+      "speaker": "ROMEO",
+      "text": "But that a joy past joy calls out on me,"
+    },
+    {
+      "number": 173,
+      "speaker": "ROMEO",
+      "text": "It were a grief, so brief to part with thee:"
+    },
+    {
+      "number": 174,
+      "speaker": "ROMEO",
+      "text": "Farewell."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Friar Laurence."
+    },
+    {
+      "after_line": 3,
+      "text": "Enter Romeo."
+    },
+    {
+      "after_line": 69,
+      "text": "Knocking within."
+    },
+    {
+      "after_line": 72,
+      "text": "Knocking."
+    },
+    {
+      "after_line": 74,
+      "text": "Knocking."
+    },
+    {
+      "after_line": 76,
+      "text": "Knocking."
+    },
+    {
+      "after_line": 78,
+      "text": "Within."
+    },
+    {
+      "after_line": 79,
+      "text": "Enter Nurse."
+    },
+    {
+      "after_line": 107,
+      "text": "Drawing his sword."
+    },
+    {
+      "after_line": 163,
+      "text": "Exit."
+    },
+    {
+      "after_line": 174,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss1",
+      "line": 1,
+      "phrase": "fearful man",
+      "definition": "trembling man"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss2",
+      "line": 2,
+      "phrase": "affliction is enamour’d of thy parts",
+      "definition": "misfortune is in love with your qualities — irony"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss3",
+      "line": 3,
+      "phrase": "calamity",
+      "definition": "misfortune"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss4",
+      "line": 10,
+      "phrase": "gentler judgment",
+      "definition": "the Prince's softer sentence slipped from him"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss5",
+      "line": 27,
+      "phrase": "mercy",
+      "definition": "Romeo denies this term to his sentence"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss6",
+      "line": 28,
+      "phrase": "heaven is here",
+      "definition": "Juliet is his heaven; banishment is hell"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss7",
+      "line": 32,
+      "phrase": "validity",
+      "definition": "worth; value"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss8",
+      "line": 34,
+      "phrase": "carrion-flies",
+      "definition": "flies that feed on dead flesh"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss9",
+      "line": 34,
+      "phrase": "flies",
+      "definition": "Romeo's envy of the freedom flies enjoy — to touch Juliet"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss10",
+      "line": 54,
+      "phrase": "adversity’s sweet milk",
+      "definition": "philosophy as the nurse of those in trouble"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss11",
+      "line": 56,
+      "phrase": "Hang up philosophy",
+      "definition": "enough of abstract consolation — Romeo's rejection of Stoic counsel"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss12",
+      "line": 51,
+      "phrase": "fond",
+      "definition": "foolish; doting"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss13",
+      "line": 109,
+      "phrase": "thy tears are womanish",
+      "definition": "the Friar rebukes Romeo for unmanly weeping"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss14",
+      "line": 109,
+      "phrase": "wild acts",
+      "definition": "passionate, unreasonable behavior"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss15",
+      "line": 159,
+      "phrase": "Good counsel",
+      "definition": "the Nurse interrupts Romeo's collapse"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss16",
+      "line": 93,
+      "phrase": "old murderer",
+      "definition": "the Nurse calls Romeo by his new identity — Tybalt's killer"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss17",
+      "line": 102,
+      "phrase": "level of a gun",
+      "definition": "aim of a firearm"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss18",
+      "line": 105,
+      "phrase": "anatomy",
+      "definition": "body; skeletal frame"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss19",
+      "line": 127,
+      "phrase": "hollow perjury",
+      "definition": "empty oath-breaking — the Friar charges Romeo"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss20",
+      "line": 142,
+      "phrase": "misbehaved",
+      "definition": "misbehaving"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss21",
+      "line": 122,
+      "phrase": "usurer",
+      "definition": "money-lender — overflowing in true wealth yet withholding"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss22",
+      "line": 131,
+      "phrase": "skilless soldier",
+      "definition": "inept soldier — his own ignorance ignites the powder"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss23",
+      "line": 145,
+      "phrase": "decreed",
+      "definition": "ordained"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss24",
+      "line": 150,
+      "phrase": "blaze your marriage",
+      "definition": "announce your marriage publicly"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss25",
+      "line": 165,
+      "phrase": "here stands all your state",
+      "definition": "here is the whole picture of your condition"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss26",
+      "line": 157,
+      "phrase": "Romeo is coming",
+      "definition": "to Juliet's chamber — the wedding night will be snatched before exile"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss27",
+      "line": 166,
+      "phrase": "watch be set",
+      "definition": "before the city guard takes its posts"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_gloss28",
+      "line": 170,
+      "phrase": "hap",
+      "definition": "fortune; chance"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act3_scene3_ann1",
+      "line_start": 12,
+      "line_end": 70,
+      "citation_display": "Romeo and Juliet 3.3.12–70",
+      "category": "thematic",
+      "title": "'There is no world without Verona walls' — banishment as death",
+      "body": "Romeo's speech on banishment is the play's most extreme statement of the lover's absolutism. The Friar has announced the Prince's mercy: exile instead of execution. Romeo rejects the framing: 'There is no world without Verona walls, / But purgatory, torture, hell itself.' To be banished from Juliet is to be banished from existence. The speech stacks increasingly extreme formulations — banishment is worse than death, because death at least sets you free from Juliet's absence. This is hyperbole, but it is also an accurate report of how love-totalitarianism felt to a sixteen-year-old in Shakespeare's world (and in ours). The Friar's attempt to counsel 'philosophy' — classical Stoic acceptance — crashes into Romeo's 'Hang up philosophy.' The play is not endorsing either position; it is staging the collision.",
+      "sources": [
+        "G. K. Hunter, English Drama 1586–1642 (1997)",
+        "Douglas Peterson, Time, Tide, and Tempest (1973)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act3_scene3_q1",
+      "kind": "theme",
+      "prompt": "Why does Romeo say 'There is no world without Verona walls'?",
+      "options": [
+        "Because he has never travelled",
+        "Because banishment means separation from Juliet — without her, there is no 'world' worth the name",
+        "Because Verona has the best food in Italy",
+        "Because he fears Mantua's law"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 17,
+      "anchor_line_end": 21
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene3_q2",
+      "kind": "structural",
+      "prompt": "What position does the Friar defend against Romeo's despair?",
+      "options": [
+        "He urges him to escape to France",
+        "He appeals to 'philosophy' — classical Stoic acceptance — which Romeo rejects ('Hang up philosophy')",
+        "He argues Romeo should confess and surrender",
+        "He urges Romeo to forget Juliet"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 47,
+      "anchor_line_end": 55
+    }
+  ]
+}

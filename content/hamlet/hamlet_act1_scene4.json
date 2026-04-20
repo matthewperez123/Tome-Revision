@@ -1,0 +1,936 @@
+{
+  "section_id": "hamlet_act1_scene4",
+  "work_id": "hamlet",
+  "sequence": 4,
+  "act": 1,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "The platform",
+  "line_count": 101,
+  "word_count": 722,
+  "est_read_minutes": 4,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "HAMLET",
+      "text": "The air bites shrewdly; it is very cold."
+    },
+    {
+      "number": 2,
+      "speaker": "HORATIO",
+      "text": "It is a nipping and an eager air."
+    },
+    {
+      "number": 3,
+      "speaker": "HAMLET",
+      "text": "What hour now?"
+    },
+    {
+      "number": 3,
+      "speaker": "HORATIO",
+      "text": "I think it lacks of twelve."
+    },
+    {
+      "number": 4,
+      "speaker": "HAMLET",
+      "text": "No, it is struck."
+    },
+    {
+      "number": 5,
+      "speaker": "HORATIO",
+      "text": "Indeed? I heard it not: then it draws near the season"
+    },
+    {
+      "number": 6,
+      "speaker": "HORATIO",
+      "text": "Wherein the spirit held his wont to walk. A flourish of trumpets, and ordnance shot off, within."
+    },
+    {
+      "number": 7,
+      "speaker": "HORATIO",
+      "text": "What does this mean, my lord?"
+    },
+    {
+      "number": 8,
+      "speaker": "HAMLET",
+      "text": "The king doth wake to-night and takes his rouse,"
+    },
+    {
+      "number": 9,
+      "speaker": "HAMLET",
+      "text": "Keeps wassail, and the swaggering up-spring reels;"
+    },
+    {
+      "number": 10,
+      "speaker": "HAMLET",
+      "text": "And, as he drains his draughts of Rhenish down,"
+    },
+    {
+      "number": 11,
+      "speaker": "HAMLET",
+      "text": "The kettle-drum and trumpet thus bray out"
+    },
+    {
+      "number": 12,
+      "speaker": "HAMLET",
+      "text": "The triumph of his pledge."
+    },
+    {
+      "number": 12,
+      "speaker": "HORATIO",
+      "text": "Is it a custom?"
+    },
+    {
+      "number": 13,
+      "speaker": "HAMLET",
+      "text": "Ay, marry, is’t:"
+    },
+    {
+      "number": 14,
+      "speaker": "HAMLET",
+      "text": "But to my mind, though I am native here"
+    },
+    {
+      "number": 15,
+      "speaker": "HAMLET",
+      "text": "And to the manner born, it is a custom"
+    },
+    {
+      "number": 16,
+      "speaker": "HAMLET",
+      "text": "More honour’d in the breach than the observance."
+    },
+    {
+      "number": 17,
+      "speaker": "HAMLET",
+      "text": "This heavy-headed revel east and west"
+    },
+    {
+      "number": 18,
+      "speaker": "HAMLET",
+      "text": "Makes us traduced and tax’d of other nations:"
+    },
+    {
+      "number": 19,
+      "speaker": "HAMLET",
+      "text": "They clepe us drunkards, and with swinish phrase"
+    },
+    {
+      "number": 20,
+      "speaker": "HAMLET",
+      "text": "Soil our addition; and indeed it takes"
+    },
+    {
+      "number": 21,
+      "speaker": "HAMLET",
+      "text": "From our achievements, though perform’d at height,"
+    },
+    {
+      "number": 22,
+      "speaker": "HAMLET",
+      "text": "The pith and marrow of our attribute."
+    },
+    {
+      "number": 23,
+      "speaker": "HAMLET",
+      "text": "So, oft it chances in particular men,"
+    },
+    {
+      "number": 24,
+      "speaker": "HAMLET",
+      "text": "That for some vicious mole of nature in them,"
+    },
+    {
+      "number": 25,
+      "speaker": "HAMLET",
+      "text": "As, in their birth—wherein they are not guilty,"
+    },
+    {
+      "number": 26,
+      "speaker": "HAMLET",
+      "text": "Since nature cannot choose his origin—"
+    },
+    {
+      "number": 27,
+      "speaker": "HAMLET",
+      "text": "By the o’ergrowth of some complexion,"
+    },
+    {
+      "number": 28,
+      "speaker": "HAMLET",
+      "text": "Oft breaking down the pales and forts of reason,"
+    },
+    {
+      "number": 29,
+      "speaker": "HAMLET",
+      "text": "Or by some habit that too much o’er-leavens"
+    },
+    {
+      "number": 30,
+      "speaker": "HAMLET",
+      "text": "The form of plausive manners, that these men,"
+    },
+    {
+      "number": 31,
+      "speaker": "HAMLET",
+      "text": "Carrying, I say, the stamp of one defect,"
+    },
+    {
+      "number": 32,
+      "speaker": "HAMLET",
+      "text": "Being nature’s livery, or fortune’s star—"
+    },
+    {
+      "number": 33,
+      "speaker": "HAMLET",
+      "text": "Their virtues else—be they as pure as grace,"
+    },
+    {
+      "number": 34,
+      "speaker": "HAMLET",
+      "text": "As infinite as man may undergo—"
+    },
+    {
+      "number": 35,
+      "speaker": "HAMLET",
+      "text": "Shall in the general censure take corruption"
+    },
+    {
+      "number": 36,
+      "speaker": "HAMLET",
+      "text": "From that particular fault: the dram of eale"
+    },
+    {
+      "number": 37,
+      "speaker": "HAMLET",
+      "text": "Doth all the noble substance of a doubt"
+    },
+    {
+      "number": 38,
+      "speaker": "HAMLET",
+      "text": "To his own scandal."
+    },
+    {
+      "number": 38,
+      "speaker": "HORATIO",
+      "text": "Look, my lord, it comes!"
+    },
+    {
+      "number": 39,
+      "speaker": "HAMLET",
+      "text": "Angels and ministers of grace defend us!"
+    },
+    {
+      "number": 40,
+      "speaker": "HAMLET",
+      "text": "Be thou a spirit of health or goblin damn’d,"
+    },
+    {
+      "number": 41,
+      "speaker": "HAMLET",
+      "text": "Bring with thee airs from heaven or blasts from hell,"
+    },
+    {
+      "number": 42,
+      "speaker": "HAMLET",
+      "text": "Be thy intents wicked or charitable,"
+    },
+    {
+      "number": 43,
+      "speaker": "HAMLET",
+      "text": "Thou comest in such a questionable shape"
+    },
+    {
+      "number": 44,
+      "speaker": "HAMLET",
+      "text": "That I will speak to thee: I’ll call thee Hamlet,"
+    },
+    {
+      "number": 45,
+      "speaker": "HAMLET",
+      "text": "King, father, royal Dane: O, answer me!"
+    },
+    {
+      "number": 46,
+      "speaker": "HAMLET",
+      "text": "Let me not burst in ignorance; but tell"
+    },
+    {
+      "number": 47,
+      "speaker": "HAMLET",
+      "text": "Why thy canonized bones, hearsed in death,"
+    },
+    {
+      "number": 48,
+      "speaker": "HAMLET",
+      "text": "Have burst their cerements; why the sepulchre,"
+    },
+    {
+      "number": 49,
+      "speaker": "HAMLET",
+      "text": "Wherein we saw thee quietly inurn’d,"
+    },
+    {
+      "number": 50,
+      "speaker": "HAMLET",
+      "text": "Hath oped his ponderous and marble jaws,"
+    },
+    {
+      "number": 51,
+      "speaker": "HAMLET",
+      "text": "To cast thee up again. What may this mean,"
+    },
+    {
+      "number": 52,
+      "speaker": "HAMLET",
+      "text": "That thou, dead corse, again in complete steel"
+    },
+    {
+      "number": 53,
+      "speaker": "HAMLET",
+      "text": "Revisit’st thus the glimpses of the moon,"
+    },
+    {
+      "number": 54,
+      "speaker": "HAMLET",
+      "text": "Making night hideous; and we fools of nature"
+    },
+    {
+      "number": 55,
+      "speaker": "HAMLET",
+      "text": "So horridly to shake our disposition"
+    },
+    {
+      "number": 56,
+      "speaker": "HAMLET",
+      "text": "With thoughts beyond the reaches of our souls?"
+    },
+    {
+      "number": 57,
+      "speaker": "HAMLET",
+      "text": "Say, why is this? wherefore? what should we do? Ghost beckons Hamlet."
+    },
+    {
+      "number": 58,
+      "speaker": "HORATIO",
+      "text": "It beckons you to go away with it,"
+    },
+    {
+      "number": 59,
+      "speaker": "HORATIO",
+      "text": "As if it some impartment did desire"
+    },
+    {
+      "number": 60,
+      "speaker": "HORATIO",
+      "text": "To you alone."
+    },
+    {
+      "number": 60,
+      "speaker": "MARCELLUS",
+      "text": "Look, with what courteous action"
+    },
+    {
+      "number": 61,
+      "speaker": "MARCELLUS",
+      "text": "It waves you to a more removed ground:"
+    },
+    {
+      "number": 62,
+      "speaker": "MARCELLUS",
+      "text": "But do not go with it."
+    },
+    {
+      "number": 62,
+      "speaker": "HORATIO",
+      "text": "No, by no means."
+    },
+    {
+      "number": 63,
+      "speaker": "HAMLET",
+      "text": "It will not speak; then I will follow it."
+    },
+    {
+      "number": 64,
+      "speaker": "HORATIO",
+      "text": "Do not, my lord."
+    },
+    {
+      "number": 64,
+      "speaker": "HAMLET",
+      "text": "Why, what should be the fear?"
+    },
+    {
+      "number": 65,
+      "speaker": "HAMLET",
+      "text": "I do not set my life in a pin’s fee;"
+    },
+    {
+      "number": 66,
+      "speaker": "HAMLET",
+      "text": "And for my soul, what can it do to that,"
+    },
+    {
+      "number": 67,
+      "speaker": "HAMLET",
+      "text": "Being a thing immortal as itself?"
+    },
+    {
+      "number": 68,
+      "speaker": "HAMLET",
+      "text": "It waves me forth again: I’ll follow it."
+    },
+    {
+      "number": 69,
+      "speaker": "HORATIO",
+      "text": "What if it tempt you toward the flood, my lord,"
+    },
+    {
+      "number": 70,
+      "speaker": "HORATIO",
+      "text": "Or to the dreadful summit of the cliff"
+    },
+    {
+      "number": 71,
+      "speaker": "HORATIO",
+      "text": "That beetles o’er his base into the sea,"
+    },
+    {
+      "number": 72,
+      "speaker": "HORATIO",
+      "text": "And there assume some other horrible form,"
+    },
+    {
+      "number": 73,
+      "speaker": "HORATIO",
+      "text": "Which might deprive your sovereignty of reason"
+    },
+    {
+      "number": 74,
+      "speaker": "HORATIO",
+      "text": "And draw you into madness? think of it:"
+    },
+    {
+      "number": 75,
+      "speaker": "HORATIO",
+      "text": "The very place puts toys of desperation,"
+    },
+    {
+      "number": 76,
+      "speaker": "HORATIO",
+      "text": "Without more motive, into every brain"
+    },
+    {
+      "number": 77,
+      "speaker": "HORATIO",
+      "text": "That looks so many fathoms to the sea"
+    },
+    {
+      "number": 78,
+      "speaker": "HORATIO",
+      "text": "And hears it roar beneath."
+    },
+    {
+      "number": 78,
+      "speaker": "HAMLET",
+      "text": "It waves me still."
+    },
+    {
+      "number": 79,
+      "speaker": "HAMLET",
+      "text": "Go on; I’ll follow thee."
+    },
+    {
+      "number": 79,
+      "speaker": "MARCELLUS",
+      "text": "You shall not go, my lord."
+    },
+    {
+      "number": 80,
+      "speaker": "HAMLET",
+      "text": "Hold off your hands."
+    },
+    {
+      "number": 80,
+      "speaker": "HORATIO",
+      "text": "Be ruled; you shall not go."
+    },
+    {
+      "number": 81,
+      "speaker": "HAMLET",
+      "text": "My fate cries out,"
+    },
+    {
+      "number": 82,
+      "speaker": "HAMLET",
+      "text": "And makes each petty artery in this body"
+    },
+    {
+      "number": 83,
+      "speaker": "HAMLET",
+      "text": "As hardy as the Nemean lion’s nerve."
+    },
+    {
+      "number": 84,
+      "speaker": "HAMLET",
+      "text": "Still am I call’d. Unhand me, gentlemen."
+    },
+    {
+      "number": 85,
+      "speaker": "HAMLET",
+      "text": "By heaven, I’ll make a ghost of him that lets me!"
+    },
+    {
+      "number": 86,
+      "speaker": "HAMLET",
+      "text": "I say, away! Go on; I’ll follow thee."
+    },
+    {
+      "number": 87,
+      "speaker": "HORATIO",
+      "text": "He waxes desperate with imagination."
+    },
+    {
+      "number": 88,
+      "speaker": "MARCELLUS",
+      "text": "Let’s follow; ’tis not fit thus to obey him."
+    },
+    {
+      "number": 89,
+      "speaker": "HORATIO",
+      "text": "Have after. To what issue will this come?"
+    },
+    {
+      "number": 90,
+      "speaker": "MARCELLUS",
+      "text": "Something is rotten in the state of Denmark."
+    },
+    {
+      "number": 91,
+      "speaker": "HORATIO",
+      "text": "Heaven will direct it."
+    },
+    {
+      "number": 91,
+      "speaker": "MARCELLUS",
+      "text": "Nay, let’s follow him."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Hamlet, Horatio, and Marcellus."
+    },
+    {
+      "after_line": 38,
+      "text": "Enter Ghost."
+    },
+    {
+      "after_line": 86,
+      "text": "Exeunt Ghost and Hamlet."
+    },
+    {
+      "after_line": 91,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "hamlet_act1_scene4_gloss1",
+      "line": 1,
+      "phrase": "air bites shrewdly",
+      "definition": "the air bites sharply (keenly cold)"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss2",
+      "line": 2,
+      "phrase": "eager",
+      "definition": "sharp; keen"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss3",
+      "line": 6,
+      "phrase": "held his wont",
+      "definition": "kept his custom"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss4",
+      "line": 8,
+      "phrase": "wake",
+      "definition": "stays awake carousing"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss5",
+      "line": 8,
+      "phrase": "takes his rouse",
+      "definition": "indulges in a heavy drinking bout"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss6",
+      "line": 9,
+      "phrase": "wassail",
+      "definition": "drunken revelry"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss7",
+      "line": 10,
+      "phrase": "Rhenish",
+      "definition": "Rhine wine (German white wine)"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss8",
+      "line": 11,
+      "phrase": "kettle-drum and trumpet",
+      "definition": "percussion and horn, sounded to salute toasts"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss9",
+      "line": 12,
+      "phrase": "triumph of his pledge",
+      "definition": "fanfare for his toast"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss10",
+      "line": 15,
+      "phrase": "manner born",
+      "definition": "native-born to this custom"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss11",
+      "line": 16,
+      "phrase": "honour’d in the breach",
+      "definition": "more honored by being broken than kept"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss12",
+      "line": 17,
+      "phrase": "heavy-headed revel east and west",
+      "definition": "the drunken reputation far and wide"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss13",
+      "line": 19,
+      "phrase": "clepe",
+      "definition": "call; name"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss14",
+      "line": 19,
+      "phrase": "with swinish phrase",
+      "definition": "with the insult of 'swine' (drunken pigs)"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss15",
+      "line": 20,
+      "phrase": "Soil our addition",
+      "definition": "taint our reputation"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss16",
+      "line": 21,
+      "phrase": "at height",
+      "definition": "at their peak"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss17",
+      "line": 22,
+      "phrase": "pith and marrow of our attribute",
+      "definition": "essence and core of our worth"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss18",
+      "line": 23,
+      "phrase": "particular men",
+      "definition": "individual persons"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss19",
+      "line": 24,
+      "phrase": "vicious mole of nature",
+      "definition": "corrupt blemish of natural constitution"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss20",
+      "line": 28,
+      "phrase": "pales and forts of reason",
+      "definition": "defenses of rational thinking"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss21",
+      "line": 29,
+      "phrase": "o’er-leavens",
+      "definition": "overly ferments; corrupts"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss22",
+      "line": 30,
+      "phrase": "plausive manners",
+      "definition": "agreeable behaviors"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss23",
+      "line": 32,
+      "phrase": "livery",
+      "definition": "distinctive garb; mark"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss24",
+      "line": 36,
+      "phrase": "dram of eale",
+      "definition": "tiny amount of evil"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss25",
+      "line": 37,
+      "phrase": "noble substance",
+      "definition": "essentially good character"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss26",
+      "line": 38,
+      "phrase": "scandal",
+      "definition": "shame; bring into disgrace"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss27",
+      "line": 40,
+      "phrase": "spirit of health or goblin damn’d",
+      "definition": "holy spirit or damned devil"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss28",
+      "line": 43,
+      "phrase": "questionable shape",
+      "definition": "form inviting questions"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss29",
+      "line": 47,
+      "phrase": "hearsed",
+      "definition": "coffined; entombed"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss30",
+      "line": 48,
+      "phrase": "cerements",
+      "definition": "waxed burial wrappings"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss31",
+      "line": 49,
+      "phrase": "inurn’d",
+      "definition": "placed in an urn; buried"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss32",
+      "line": 52,
+      "phrase": "complete steel",
+      "definition": "full armor"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss33",
+      "line": 53,
+      "phrase": "glimpses of the moon",
+      "definition": "fleeting moonlight"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss34",
+      "line": 55,
+      "phrase": "disposition",
+      "definition": "temperament; peace of mind"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss35",
+      "line": 56,
+      "phrase": "reaches of our souls",
+      "definition": "capacities of our minds"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss36",
+      "line": 58,
+      "phrase": "beckons you",
+      "definition": "signals you to come"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss37",
+      "line": 61,
+      "phrase": "removed ground",
+      "definition": "distant place"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss38",
+      "line": 65,
+      "phrase": "pin’s fee",
+      "definition": "price of a pin (very little)"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss39",
+      "line": 69,
+      "phrase": "flood",
+      "definition": "sea"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss40",
+      "line": 71,
+      "phrase": "beetles o’er his base",
+      "definition": "overhangs its base like an overshot eyebrow"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss41",
+      "line": 73,
+      "phrase": "sovereignty of reason",
+      "definition": "rule of rational thought"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss42",
+      "line": 75,
+      "phrase": "toys of desperation",
+      "definition": "suicidal impulses"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss43",
+      "line": 83,
+      "phrase": "Nemean lion’s nerve",
+      "definition": "sinew of Hercules's Nemean lion (emblem of strength)"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss44",
+      "line": 85,
+      "phrase": "lets me",
+      "definition": "hinders me"
+    },
+    {
+      "id": "hamlet_act1_scene4_gloss45",
+      "line": 89,
+      "phrase": "Have after",
+      "definition": "let us follow"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "hamlet_act1_scene4_ann1",
+      "line_start": 8,
+      "line_end": 38,
+      "citation_display": "Hamlet 1.4.8–38",
+      "category": "historical",
+      "title": "The Danes as drunkards: Shakespeare's political diplomacy",
+      "body": "Hamlet's discourse on Danish drinking customs ('heavy-headed revel east and west / Makes us traduced and taxed of other nations') appears only in the Second Quarto, not in the Folio. Why the cut? One reading: by 1603 James I, married to Anne of Denmark, had drawn England into closer diplomatic relations with Denmark, and Shakespeare's company suppressed a passage that called their new queen's countrymen swine. Whether or not the cut was deliberately political, the speech is the play's most sustained meditation on the 'one defect' — how a small flaw of nature can undo a whole character. That diagnostic will become Hamlet's own self-indictment by Act 4.",
+      "sources": [
+        "Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"
+      ]
+    },
+    {
+      "id": "hamlet_act1_scene4_ann2",
+      "line_start": 43,
+      "line_end": 62,
+      "citation_display": "Hamlet 1.4.43–62",
+      "category": "thematic",
+      "title": "'Spirit of health or goblin damn'd'",
+      "body": "Hamlet's first address to the ghost carefully preserves the Elizabethan threefold uncertainty: he may be a holy spirit, a damned devil in disguise, or a hallucination. The phrase 'questionable shape' puts the ghost in the category of things one may legitimately interrogate. Hamlet's skepticism here is theological as much as personal — a Protestant's wariness of Catholic ghost-lore — and it prepares the ground for the 'play within a play' trap in Act 3, by which he will test the ghost's credibility. Until then, any action Hamlet might take on the ghost's word would be imprudent, possibly damnable. This is the play's first principled defense of delay.",
+      "sources": [
+        "Stephen Greenblatt, Hamlet in Purgatory (2001)"
+      ]
+    },
+    {
+      "id": "hamlet_act1_scene4_ann3",
+      "line_start": 65,
+      "line_end": 85,
+      "citation_display": "Hamlet 1.4.65–85",
+      "category": "structural",
+      "title": "The ghost's silence and the platform's edge",
+      "body": "The ghost will not speak in the presence of others; it beckons Hamlet away. Horatio's warning — that the spirit may 'assume some other horrible form' or tempt Hamlet toward the cliff — is the play's first suggestion that the revenant might be diabolical. The image of the cliff that 'beetles o'er his base' would have been staged with the trapdoor and gallery architecture of the Globe: the ghost leading Hamlet 'off-stage' is physically leading him upward or downward in the Elizabethan three-tiered cosmos. The geography matters because the truth the ghost is about to deliver will depend on where it comes from — purgatorial fire, hellish fraud, or the mind's own projection.",
+      "sources": [
+        "Andrew Gurr, The Shakespearean Stage 1574–1642 (3rd ed., 1992)"
+      ]
+    },
+    {
+      "id": "hamlet_act1_scene4_ann4",
+      "line_start": 89,
+      "line_end": 90,
+      "citation_display": "Hamlet 1.4.89–90",
+      "category": "close_reading",
+      "title": "'Something is rotten in the state of Denmark'",
+      "body": "Marcellus's line is one of the most quoted in all of Shakespeare, and its iconic status tends to strip its dramatic force. Coming at the end of the scene, after the ghost has exited and Hamlet has followed against his friends' pleas, the line serves as a choric comment: the ghost is a symptom, not a cause. The word 'state' is precise and political — not 'condition' but commonwealth, body politic. The metaphor of rot implies something dead within a living organism, corruption hidden inside a ceremonial surface. Everything that will unfold — the assassination plot, the spying, the poisoning at a royal feast — is already implied in this one sentence.",
+      "sources": [
+        "Jonathan Dollimore, Radical Tragedy (1984)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "hamlet_act1_scene4_q1",
+      "kind": "close_reading",
+      "prompt": "What is Hamlet criticizing when he describes the 'heavy-headed revel east and west'?",
+      "options": [
+        "The peasant classes' drunkenness at harvest festivals.",
+        "The Danish custom of heavy drinking during royal celebrations.",
+        "Claudius's personal habit of drugging his wine.",
+        "The soldiers on the night watch, who he fears are drunk."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 8,
+      "anchor_line_end": 22
+    },
+    {
+      "id": "hamlet_act1_scene4_q2",
+      "kind": "theme",
+      "prompt": "What is Hamlet arguing in the passage about the 'vicious mole of nature' and the 'dram of eale'?",
+      "options": [
+        "That no one can overcome their inherited flaws.",
+        "That a single defect can undo the virtues of an otherwise noble character.",
+        "That illness is contagious and must be quarantined.",
+        "That the Danish court is corrupt beyond redemption."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 24,
+      "anchor_line_end": 40
+    },
+    {
+      "id": "hamlet_act1_scene4_q3",
+      "kind": "inference",
+      "prompt": "Why does Hamlet address the ghost as both 'spirit of health' and 'goblin damn'd'?",
+      "options": [
+        "He believes the ghost is two different spirits at once.",
+        "He is preserving theological uncertainty about whether the ghost is holy or diabolical.",
+        "He is mocking the ghost to test its patience.",
+        "He is quoting a Latin incantation Horatio taught him."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 43,
+      "anchor_line_end": 46
+    },
+    {
+      "id": "hamlet_act1_scene4_q4",
+      "kind": "comprehension",
+      "prompt": "What do Horatio and Marcellus fear when the ghost beckons Hamlet away?",
+      "options": [
+        "That the ghost will reveal Hamlet's secrets to the King.",
+        "That the spirit may tempt Hamlet to leap from the cliff or drive him mad.",
+        "That Hamlet will be delayed from his studies.",
+        "That Claudius's spies are watching and will report them."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 69,
+      "anchor_line_end": 82
+    },
+    {
+      "id": "hamlet_act1_scene4_q5",
+      "kind": "close_reading",
+      "prompt": "Marcellus's closing line — 'Something is rotten in the state of Denmark' — uses which metaphor?",
+      "options": [
+        "A legal metaphor: corruption as a miscarriage of justice.",
+        "An organic metaphor: hidden decay within a living body politic.",
+        "A military metaphor: an enemy within the walls.",
+        "A theological metaphor: damnation seeping into the soul."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 89,
+      "anchor_line_end": 90
+    }
+  ]
+}

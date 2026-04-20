@@ -1,0 +1,643 @@
+{
+  "section_id": "macbeth_act5_scene8",
+  "work_id": "macbeth",
+  "sequence": 28,
+  "act": 5,
+  "scene": 8,
+  "kind": "scene",
+  "scene_title": "Another part of the field",
+  "line_count": 86,
+  "word_count": 633,
+  "est_read_minutes": 3,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "MACBETH",
+      "text": "Why should I play the Roman fool, and die"
+    },
+    {
+      "number": 2,
+      "speaker": "MACBETH",
+      "text": "On mine own sword? whiles I see lives, the gashes"
+    },
+    {
+      "number": 3,
+      "speaker": "MACBETH",
+      "text": "Do better upon them."
+    },
+    {
+      "number": 3,
+      "speaker": "MACDUFF",
+      "text": "Turn, hell-hound, turn!"
+    },
+    {
+      "number": 4,
+      "speaker": "MACBETH",
+      "text": "Of all men else I have avoided thee:"
+    },
+    {
+      "number": 5,
+      "speaker": "MACBETH",
+      "text": "But get thee back; my soul is too much charged"
+    },
+    {
+      "number": 6,
+      "speaker": "MACBETH",
+      "text": "With blood of thine already."
+    },
+    {
+      "number": 6,
+      "speaker": "MACDUFF",
+      "text": "I have no words:"
+    },
+    {
+      "number": 7,
+      "speaker": "MACDUFF",
+      "text": "My voice is in my sword: thou bloodier villain"
+    },
+    {
+      "number": 8,
+      "speaker": "MACDUFF",
+      "text": "Than terms can give thee out! They fight."
+    },
+    {
+      "number": 9,
+      "speaker": "MACBETH",
+      "text": "Thou losest labour:"
+    },
+    {
+      "number": 10,
+      "speaker": "MACBETH",
+      "text": "As easy mayst thou the intrenchant air"
+    },
+    {
+      "number": 11,
+      "speaker": "MACBETH",
+      "text": "With thy keen sword impress as make me bleed:"
+    },
+    {
+      "number": 12,
+      "speaker": "MACBETH",
+      "text": "Let fall thy blade on vulnerable crests;"
+    },
+    {
+      "number": 13,
+      "speaker": "MACBETH",
+      "text": "I bear a charmed life, which must not yield"
+    },
+    {
+      "number": 14,
+      "speaker": "MACBETH",
+      "text": "To one of woman born."
+    },
+    {
+      "number": 14,
+      "speaker": "MACDUFF",
+      "text": "Despair thy charm;"
+    },
+    {
+      "number": 15,
+      "speaker": "MACDUFF",
+      "text": "And let the angel whom thou still hast served"
+    },
+    {
+      "number": 16,
+      "speaker": "MACDUFF",
+      "text": "Tell thee, Macduff was from his mother’s womb"
+    },
+    {
+      "number": 17,
+      "speaker": "MACDUFF",
+      "text": "Untimely ripp’d."
+    },
+    {
+      "number": 18,
+      "speaker": "MACBETH",
+      "text": "Accursed be that tongue that tells me so,"
+    },
+    {
+      "number": 19,
+      "speaker": "MACBETH",
+      "text": "For it hath cow’d my better part of man!"
+    },
+    {
+      "number": 20,
+      "speaker": "MACBETH",
+      "text": "And be these juggling fiends no more believed,"
+    },
+    {
+      "number": 21,
+      "speaker": "MACBETH",
+      "text": "That palter with us in a double sense;"
+    },
+    {
+      "number": 22,
+      "speaker": "MACBETH",
+      "text": "That keep the word of promise to our ear,"
+    },
+    {
+      "number": 23,
+      "speaker": "MACBETH",
+      "text": "And break it to our hope. I’ll not fight with thee."
+    },
+    {
+      "number": 24,
+      "speaker": "MACDUFF",
+      "text": "Then yield thee, coward,"
+    },
+    {
+      "number": 25,
+      "speaker": "MACDUFF",
+      "text": "And live to be the show and gaze o’ the time:"
+    },
+    {
+      "number": 26,
+      "speaker": "MACDUFF",
+      "text": "We’ll have thee, as our rarer monsters are,"
+    },
+    {
+      "number": 27,
+      "speaker": "MACDUFF",
+      "text": "Painted on a pole, and underwrit,"
+    },
+    {
+      "number": 28,
+      "speaker": "MACDUFF",
+      "text": "“Here may you see the tyrant.”"
+    },
+    {
+      "number": 28,
+      "speaker": "MACBETH",
+      "text": "I will not yield,"
+    },
+    {
+      "number": 29,
+      "speaker": "MACBETH",
+      "text": "To kiss the ground before young Malcolm’s feet,"
+    },
+    {
+      "number": 30,
+      "speaker": "MACBETH",
+      "text": "And to be baited with the rabble’s curse."
+    },
+    {
+      "number": 31,
+      "speaker": "MACBETH",
+      "text": "Though Birnam wood be come to Dunsinane,"
+    },
+    {
+      "number": 32,
+      "speaker": "MACBETH",
+      "text": "And thou opposed, being of no woman born,"
+    },
+    {
+      "number": 33,
+      "speaker": "MACBETH",
+      "text": "Yet I will try the last. Before my body"
+    },
+    {
+      "number": 34,
+      "speaker": "MACBETH",
+      "text": "I throw my warlike shield. Lay on, Macduff,"
+    },
+    {
+      "number": 35,
+      "speaker": "MACBETH",
+      "text": "And damn’d be him that first cries, “Hold, enough!”"
+    },
+    {
+      "number": 36,
+      "speaker": "MALCOLM",
+      "text": "I would the friends we miss were safe arrived."
+    },
+    {
+      "number": 37,
+      "speaker": "SIWARD",
+      "text": "Some must go off: and yet, by these I see,"
+    },
+    {
+      "number": 38,
+      "speaker": "SIWARD",
+      "text": "So great a day as this is cheaply bought."
+    },
+    {
+      "number": 39,
+      "speaker": "MALCOLM",
+      "text": "Macduff is missing, and your noble son."
+    },
+    {
+      "number": 40,
+      "speaker": "ROSS",
+      "text": "Your son, my lord, has paid a soldier’s debt:"
+    },
+    {
+      "number": 41,
+      "speaker": "ROSS",
+      "text": "He only lived but till he was a man;"
+    },
+    {
+      "number": 42,
+      "speaker": "ROSS",
+      "text": "The which no sooner had his prowess confirm’d"
+    },
+    {
+      "number": 43,
+      "speaker": "ROSS",
+      "text": "In the unshrinking station where he fought,"
+    },
+    {
+      "number": 44,
+      "speaker": "ROSS",
+      "text": "But like a man he died."
+    },
+    {
+      "number": 44,
+      "speaker": "SIWARD",
+      "text": "Then he is dead?"
+    },
+    {
+      "number": 45,
+      "speaker": "ROSS",
+      "text": "Ay, and brought off the field: your cause of sorrow"
+    },
+    {
+      "number": 46,
+      "speaker": "ROSS",
+      "text": "Must not be measured by his worth, for then"
+    },
+    {
+      "number": 47,
+      "speaker": "ROSS",
+      "text": "It hath no end."
+    },
+    {
+      "number": 47,
+      "speaker": "SIWARD",
+      "text": "Had he his hurts before?"
+    },
+    {
+      "number": 48,
+      "speaker": "ROSS",
+      "text": "Ay, on the front."
+    },
+    {
+      "number": 48,
+      "speaker": "SIWARD",
+      "text": "Why then, God’s soldier be he!"
+    },
+    {
+      "number": 49,
+      "speaker": "SIWARD",
+      "text": "Had I as many sons as I have hairs,"
+    },
+    {
+      "number": 50,
+      "speaker": "SIWARD",
+      "text": "I would not wish them to a fairer death:"
+    },
+    {
+      "number": 51,
+      "speaker": "SIWARD",
+      "text": "And so, his knell is knoll’d."
+    },
+    {
+      "number": 51,
+      "speaker": "MALCOLM",
+      "text": "He’s worth more sorrow,"
+    },
+    {
+      "number": 52,
+      "speaker": "MALCOLM",
+      "text": "And that I’ll spend for him."
+    },
+    {
+      "number": 52,
+      "speaker": "SIWARD",
+      "text": "He’s worth no more:"
+    },
+    {
+      "number": 53,
+      "speaker": "SIWARD",
+      "text": "They say he parted well, and paid his score:"
+    },
+    {
+      "number": 54,
+      "speaker": "SIWARD",
+      "text": "And so, God be with him! Here comes newer comfort."
+    },
+    {
+      "number": 55,
+      "speaker": "MACDUFF",
+      "text": "Hail, king! for so thou art: behold, where stands"
+    },
+    {
+      "number": 56,
+      "speaker": "MACDUFF",
+      "text": "The usurper’s cursed head: the time is free:"
+    },
+    {
+      "number": 57,
+      "speaker": "MACDUFF",
+      "text": "I see thee compass’d with thy kingdom’s pearl,"
+    },
+    {
+      "number": 58,
+      "speaker": "MACDUFF",
+      "text": "That speak my salutation in their minds;"
+    },
+    {
+      "number": 59,
+      "speaker": "MACDUFF",
+      "text": "Whose voices I desire aloud with mine:"
+    },
+    {
+      "number": 60,
+      "speaker": "MACDUFF",
+      "text": "Hail, King of Scotland!"
+    },
+    {
+      "number": 60,
+      "speaker": "ALL",
+      "text": "Hail, King of Scotland!"
+    },
+    {
+      "number": 61,
+      "speaker": "MALCOLM",
+      "text": "We shall not spend a large expense of time"
+    },
+    {
+      "number": 62,
+      "speaker": "MALCOLM",
+      "text": "Before we reckon with your several loves,"
+    },
+    {
+      "number": 63,
+      "speaker": "MALCOLM",
+      "text": "And make us even with you. My thanes and kinsmen,"
+    },
+    {
+      "number": 64,
+      "speaker": "MALCOLM",
+      "text": "Henceforth be earls, the first that ever Scotland"
+    },
+    {
+      "number": 65,
+      "speaker": "MALCOLM",
+      "text": "In such an honour named. What’s more to do,"
+    },
+    {
+      "number": 66,
+      "speaker": "MALCOLM",
+      "text": "Which would be planted newly with the time,"
+    },
+    {
+      "number": 67,
+      "speaker": "MALCOLM",
+      "text": "As calling home our exiled friends abroad"
+    },
+    {
+      "number": 68,
+      "speaker": "MALCOLM",
+      "text": "That fled the snares of watchful tyranny;"
+    },
+    {
+      "number": 69,
+      "speaker": "MALCOLM",
+      "text": "Producing forth the cruel ministers"
+    },
+    {
+      "number": 70,
+      "speaker": "MALCOLM",
+      "text": "Of this dead butcher and his fiend-like queen,"
+    },
+    {
+      "number": 71,
+      "speaker": "MALCOLM",
+      "text": "Who, as ’tis thought, by self and violent hands"
+    },
+    {
+      "number": 72,
+      "speaker": "MALCOLM",
+      "text": "Took off her life; this, and what needful else"
+    },
+    {
+      "number": 73,
+      "speaker": "MALCOLM",
+      "text": "That calls upon us, by the grace of Grace,"
+    },
+    {
+      "number": 74,
+      "speaker": "MALCOLM",
+      "text": "We will perform in measure, time and place:"
+    },
+    {
+      "number": 75,
+      "speaker": "MALCOLM",
+      "text": "So, thanks to all at once and to each one,"
+    },
+    {
+      "number": 76,
+      "speaker": "MALCOLM",
+      "text": "Whom we invite to see us crown’d at Scone."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Macbeth."
+    },
+    {
+      "after_line": 3,
+      "text": "Enter Macduff."
+    },
+    {
+      "after_line": 35,
+      "text": "Exeunt, fighting. Alarums."
+    },
+    {
+      "after_line": 35,
+      "text": "Retreat. Flourish. Enter, with drum and colours, Malcolm, old Siward, Ross, the other Thanes, and Soldiers."
+    },
+    {
+      "after_line": 54,
+      "text": "Reenter Macduff, with Macbeth’s head."
+    },
+    {
+      "after_line": 60,
+      "text": "Flourish."
+    },
+    {
+      "after_line": 76,
+      "text": "Flourish. Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act5_scene8_gloss1",
+      "line": 1,
+      "phrase": "Roman fool",
+      "definition": "a Stoic suicide in the classical manner — Macbeth rejects suicide"
+    },
+    {
+      "id": "macbeth_act5_scene8_gloss3",
+      "line": 8,
+      "phrase": "terms can give thee out",
+      "definition": "words can describe you"
+    },
+    {
+      "id": "macbeth_act5_scene8_gloss6",
+      "line": 9,
+      "phrase": "intrenchant air",
+      "definition": "air that cannot be cut — Macbeth's bravado about his charmed life"
+    },
+    {
+      "id": "macbeth_act5_scene8_gloss7",
+      "line": 10,
+      "phrase": "impress",
+      "definition": "mark; wound"
+    },
+    {
+      "id": "macbeth_act5_scene8_gloss8",
+      "line": 11,
+      "phrase": "vulnerable crests",
+      "definition": "heads that can be hurt (i.e., other men)"
+    },
+    {
+      "id": "macbeth_act5_scene8_gloss9",
+      "line": 12,
+      "phrase": "I bear a charmed life",
+      "definition": "Macbeth's still-confident boast — about to be shattered"
+    },
+    {
+      "id": "macbeth_act5_scene8_gloss11",
+      "line": 13,
+      "phrase": "Despair thy charm",
+      "definition": "Macduff's revelation — give up believing in the charm"
+    },
+    {
+      "id": "macbeth_act5_scene8_gloss12",
+      "line": 14,
+      "phrase": "angel whom thou still hast served",
+      "definition": "the dark angel (devil) Macbeth has served — called to give him the truth"
+    },
+    {
+      "id": "macbeth_act5_scene8_gloss14",
+      "line": 16,
+      "phrase": "untimely ripp’d",
+      "definition": "cut out before birth (by Caesarean section)"
+    },
+    {
+      "id": "macbeth_act5_scene8_gloss15",
+      "line": 19,
+      "phrase": "juggling fiends",
+      "definition": "the Witches — deceitful devils who play with words"
+    },
+    {
+      "id": "macbeth_act5_scene8_gloss16",
+      "line": 20,
+      "phrase": "palter with us in a double sense",
+      "definition": "deceive us with double meanings"
+    },
+    {
+      "id": "macbeth_act5_scene8_gloss19",
+      "line": 29,
+      "phrase": "baited with the rabble’s curse",
+      "definition": "tormented by the mob's hatred"
+    },
+    {
+      "id": "macbeth_act5_scene8_gloss21",
+      "line": 33,
+      "phrase": "Lay on, Macduff",
+      "definition": "strike — Macbeth's final command to his killer"
+    },
+    {
+      "id": "macbeth_act5_scene8_gloss30",
+      "line": 72,
+      "phrase": "by the grace of Grace",
+      "definition": "by the grace of God — the new reign will be godly"
+    },
+    {
+      "id": "macbeth_act5_scene8_gloss31",
+      "line": 75,
+      "phrase": "Scone",
+      "definition": "the coronation-site of Scottish kings — the new reign begins where 2.4 left off"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act5_scene8_ann1",
+      "line_start": 17,
+      "line_end": 32,
+      "citation_display": "Macbeth 5.8.17–32",
+      "category": "thematic",
+      "title": "The equivocation sprung",
+      "body": "Macbeth's confidence in the Second Apparition's prophecy breaks in a single exchange. 'I bear a charmed life, which must not yield / To one of woman born.' Macduff: 'Despair thy charm; / And let the angel whom thou still hast served / Tell thee, Macduff was from his mother's womb / Untimely ripp'd.' Caesarean birth — which early-modern medicine categorized as not, strictly, 'born' in the ordinary sense — has made Macduff the prophecy's loophole.\n\nMacbeth's response — 'these juggling fiends no more believed, / That palter with us in a double sense' — is the play's closing indictment of equivocation. The Porter's equivocator from 2.3, the Witches' double meanings from 4.1, Lady Macbeth's 'serpent under the flower' from 1.5 — all have combined to produce this defeat. Macbeth dies knowing he has been played by his own technique.\n\nHis last line (Lay on, Macduff; / And damn'd be him that first cries, Hold, enough!) recovers something. He has lost everything, but he will not surrender. The soldier Macbeth of 1.2 returns in the last couplet. It is not redemption — but it is a kind of closing coherence.",
+      "sources": [
+        "A. C. Bradley (1904)",
+        "Harold Bloom (1998)",
+        "Paul A. Kottman (2009)"
+      ]
+    },
+    {
+      "id": "macbeth_act5_scene8_ann2",
+      "line_start": 55,
+      "line_end": 76,
+      "citation_display": "Macbeth 5.8.55–76",
+      "category": "historical",
+      "title": "Malcolm's coronation and the new earldoms",
+      "body": "Malcolm's coronation speech makes Scotland's Thanes into 'earls' — the first earls in Scottish history, per Holinshed. The play ends with an administrative innovation: Scotland will be reorganized on the English model. Macduff, not Malcolm, delivers the line naming Macbeth 'this dead butcher and his fiend-like queen,' setting the official verdict.\n\nThe play's final couplet belongs to the restored state: 'So thanks to all at once and to each one, / Whom we invite to see us crown'd at Scone.' Scone — the coronation site first mentioned in 2.4 as the site of Macbeth's crowning — now receives Malcolm. The play has taken the audience from Duncan's body (2.3) to Macbeth's crowning (2.4, offstage) to Malcolm's crowning (5.8, also offstage). Three kings, one throne, one site. The political order has been cycled through rupture and restoration.\n\nThe audience of 1606 would have read the conclusion as confirmation of the Stuart legitimacy theme: disorder is chaotic but temporary; rightful kingship returns. It was what James I wanted the play to mean. It is also what the play means. The two are not incompatible.",
+      "sources": [
+        "Raphael Holinshed, *Chronicles* (1577)",
+        "Henry N. Paul (1950)",
+        "Alvin Kernan (1995)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act5_scene8_q1",
+      "kind": "structural",
+      "prompt": "What breaks Macbeth's charmed-life confidence?",
+      "options": [
+        "Young Siward's attack",
+        "Macduff's revelation that he was 'from his mother's womb untimely ripp'd' — Caesarean birth is the prophecy's loophole",
+        "Malcolm's army",
+        "Lady Macbeth's death"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 17,
+      "anchor_line_end": 32
+    },
+    {
+      "id": "macbeth_act5_scene8_q2",
+      "kind": "theme",
+      "prompt": "Macbeth's last line ('Lay on, Macduff') recovers:",
+      "options": [
+        "Regret",
+        "The soldier of 1.2 — not redemption, but closing coherence; he refuses to surrender",
+        "Joy",
+        "Religious faith"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 35,
+      "anchor_line_end": 42
+    },
+    {
+      "id": "macbeth_act5_scene8_q3",
+      "kind": "historical",
+      "prompt": "Malcolm's creation of 'earls' at the end:",
+      "options": [
+        "Is fictional filler",
+        "Is historical — per Holinshed, the first earls in Scottish history, reorganizing Scotland on the English model",
+        "Is a joke",
+        "Is unconstitutional"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 60,
+      "anchor_line_end": 76
+    }
+  ]
+}

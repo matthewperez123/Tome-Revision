@@ -1,0 +1,969 @@
+{
+  "section_id": "henry_v_act4_scene8",
+  "work_id": "henry-v",
+  "sequence": 25,
+  "act": 4,
+  "scene": 8,
+  "kind": "scene",
+  "scene_title": "Before King Henry's pavilion",
+  "line_count": 116,
+  "word_count": 994,
+  "est_read_minutes": 5,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "WILLIAMS",
+      "text": "I warrant it is to knight you, captain."
+    },
+    {
+      "number": 2,
+      "speaker": "FLUELLEN",
+      "text": "God’s will and his pleasure, captain, I beseech you now, come apace"
+    },
+    {
+      "number": 3,
+      "speaker": "FLUELLEN",
+      "text": "to the King. There is more good toward you peradventure than is"
+    },
+    {
+      "number": 4,
+      "speaker": "FLUELLEN",
+      "text": "in your knowledge to dream of."
+    },
+    {
+      "number": 4,
+      "speaker": "WILLIAMS",
+      "text": "Sir, know you this glove?"
+    },
+    {
+      "number": 5,
+      "speaker": "FLUELLEN",
+      "text": "Know the glove! I know the glove is a glove."
+    },
+    {
+      "number": 6,
+      "speaker": "WILLIAMS",
+      "text": "I know this; and thus I challenge it."
+    },
+    {
+      "number": 7,
+      "speaker": "FLUELLEN",
+      "text": "’Sblood! an arrant traitor as any is in the universal world, or"
+    },
+    {
+      "number": 8,
+      "speaker": "FLUELLEN",
+      "text": "in France, or in England!"
+    },
+    {
+      "number": 8,
+      "speaker": "GOWER",
+      "text": "How now, sir! you villain!"
+    },
+    {
+      "number": 9,
+      "speaker": "WILLIAMS",
+      "text": "Do you think I’ll be forsworn?"
+    },
+    {
+      "number": 10,
+      "speaker": "FLUELLEN",
+      "text": "Stand away, Captain Gower; I will give treason his payment into plows, I warrant you."
+    },
+    {
+      "number": 11,
+      "speaker": "WILLIAMS",
+      "text": "I am no traitor."
+    },
+    {
+      "number": 12,
+      "speaker": "FLUELLEN",
+      "text": "That’s a lie in thy throat. I charge you in his majesty’s"
+    },
+    {
+      "number": 13,
+      "speaker": "FLUELLEN",
+      "text": "name, apprehend him: he’s a friend of the Duke Alençon’s."
+    },
+    {
+      "number": 14,
+      "speaker": "WARWICK",
+      "text": "How now, how now! what’s the matter?"
+    },
+    {
+      "number": 15,
+      "speaker": "FLUELLEN",
+      "text": "My lord of Warwick, here is—praised be God for it!—a most contagious"
+    },
+    {
+      "number": 16,
+      "speaker": "FLUELLEN",
+      "text": "treason come to light, look you, as you shall desire in a"
+    },
+    {
+      "number": 17,
+      "speaker": "FLUELLEN",
+      "text": "summer’s day. Here is his majesty."
+    },
+    {
+      "number": 17,
+      "speaker": "KING HENRY",
+      "text": "How now! what’s the matter?"
+    },
+    {
+      "number": 18,
+      "speaker": "FLUELLEN",
+      "text": "My liege, here is a villain and a traitor, that, look your"
+    },
+    {
+      "number": 19,
+      "speaker": "FLUELLEN",
+      "text": "grace, has struck the glove which your majesty is take out of"
+    },
+    {
+      "number": 20,
+      "speaker": "FLUELLEN",
+      "text": "the helmet of Alençon."
+    },
+    {
+      "number": 21,
+      "speaker": "WILLIAMS",
+      "text": "My liege, this was my glove; here is the fellow of it;"
+    },
+    {
+      "number": 22,
+      "speaker": "WILLIAMS",
+      "text": "and he that I gave it to in change promised to wear"
+    },
+    {
+      "number": 23,
+      "speaker": "WILLIAMS",
+      "text": "it in his cap: I promised to strike him, if he did:"
+    },
+    {
+      "number": 24,
+      "speaker": "WILLIAMS",
+      "text": "I met this man with my glove in his cap, and I"
+    },
+    {
+      "number": 25,
+      "speaker": "WILLIAMS",
+      "text": "have been as good as my word."
+    },
+    {
+      "number": 26,
+      "speaker": "FLUELLEN",
+      "text": "Your majesty hear now, saving your majesty’s manhood, what an arrant, rascally,"
+    },
+    {
+      "number": 27,
+      "speaker": "FLUELLEN",
+      "text": "beggarly, lousy knave it is: I hope your majesty is pear me"
+    },
+    {
+      "number": 28,
+      "speaker": "FLUELLEN",
+      "text": "testimony and witness, and will avouchment, that this is the glove of"
+    },
+    {
+      "number": 29,
+      "speaker": "FLUELLEN",
+      "text": "Alençon, that your majesty is give me; in your conscience, now."
+    },
+    {
+      "number": 30,
+      "speaker": "KING HENRY",
+      "text": "Give me thy glove, soldier: look, here is the fellow of it."
+    },
+    {
+      "number": 31,
+      "speaker": "KING HENRY",
+      "text": "’Twas I, indeed, thou promised’st to strike;"
+    },
+    {
+      "number": 32,
+      "speaker": "KING HENRY",
+      "text": "And thou hast given me most bitter terms."
+    },
+    {
+      "number": 33,
+      "speaker": "FLUELLEN",
+      "text": "An it please your majesty, let his neck answer for it, if"
+    },
+    {
+      "number": 34,
+      "speaker": "FLUELLEN",
+      "text": "there is any martial law in the world."
+    },
+    {
+      "number": 35,
+      "speaker": "KING HENRY",
+      "text": "How canst thou make me satisfaction?"
+    },
+    {
+      "number": 36,
+      "speaker": "WILLIAMS",
+      "text": "All offences, my lord, come from the heart: never came any from"
+    },
+    {
+      "number": 37,
+      "speaker": "WILLIAMS",
+      "text": "mine that might offend your majesty."
+    },
+    {
+      "number": 37,
+      "speaker": "KING HENRY",
+      "text": "It was ourself thou didst abuse."
+    },
+    {
+      "number": 38,
+      "speaker": "WILLIAMS",
+      "text": "Your majesty came not like yourself: you appeared to me but as"
+    },
+    {
+      "number": 39,
+      "speaker": "WILLIAMS",
+      "text": "a common man; witness the night, your garments, your lowliness; and what"
+    },
+    {
+      "number": 40,
+      "speaker": "WILLIAMS",
+      "text": "your highness suffered under that shape, I beseech you take it for"
+    },
+    {
+      "number": 41,
+      "speaker": "WILLIAMS",
+      "text": "your own fault and not mine: for had you been as I"
+    },
+    {
+      "number": 42,
+      "speaker": "WILLIAMS",
+      "text": "took you for, I made no offence; therefore, I beseech your highness,"
+    },
+    {
+      "number": 43,
+      "speaker": "WILLIAMS",
+      "text": "pardon me."
+    },
+    {
+      "number": 44,
+      "speaker": "KING HENRY",
+      "text": "Here, uncle Exeter, fill this glove with crowns,"
+    },
+    {
+      "number": 45,
+      "speaker": "KING HENRY",
+      "text": "And give it to this fellow. Keep it, fellow;"
+    },
+    {
+      "number": 46,
+      "speaker": "KING HENRY",
+      "text": "And wear it for an honour in thy cap"
+    },
+    {
+      "number": 47,
+      "speaker": "KING HENRY",
+      "text": "Till I do challenge it. Give him his crowns:"
+    },
+    {
+      "number": 48,
+      "speaker": "KING HENRY",
+      "text": "And, captain, you must needs be friends with him."
+    },
+    {
+      "number": 49,
+      "speaker": "FLUELLEN",
+      "text": "By this day and this light, the fellow has mettle enough in"
+    },
+    {
+      "number": 50,
+      "speaker": "FLUELLEN",
+      "text": "his belly. Hold, there is twelve pence for you; and I pray"
+    },
+    {
+      "number": 51,
+      "speaker": "FLUELLEN",
+      "text": "you to serve God, and keep you out of prawls, and prabbles,"
+    },
+    {
+      "number": 52,
+      "speaker": "FLUELLEN",
+      "text": "and quarrels, and dissensions, and, I warrant you, it is the better"
+    },
+    {
+      "number": 53,
+      "speaker": "FLUELLEN",
+      "text": "for you."
+    },
+    {
+      "number": 53,
+      "speaker": "WILLIAMS",
+      "text": "I will none of your money."
+    },
+    {
+      "number": 54,
+      "speaker": "FLUELLEN",
+      "text": "It is with a good will; I can tell you, it will"
+    },
+    {
+      "number": 55,
+      "speaker": "FLUELLEN",
+      "text": "serve you to mend your shoes: come, wherefore should you be so"
+    },
+    {
+      "number": 56,
+      "speaker": "FLUELLEN",
+      "text": "pashful? your shoes is not so good: ’tis a good silling, I"
+    },
+    {
+      "number": 57,
+      "speaker": "FLUELLEN",
+      "text": "warrant you, or I will change it."
+    },
+    {
+      "number": 58,
+      "speaker": "KING HENRY",
+      "text": "Now, herald, are the dead number’d?"
+    },
+    {
+      "number": 59,
+      "speaker": "HERALD",
+      "text": "Here is the number of the slaughter’d French."
+    },
+    {
+      "number": 60,
+      "speaker": "KING HENRY",
+      "text": "What prisoners of good sort are taken, uncle?"
+    },
+    {
+      "number": 61,
+      "speaker": "EXETER",
+      "text": "Charles Duke of Orleans, nephew to the king;"
+    },
+    {
+      "number": 62,
+      "speaker": "EXETER",
+      "text": "John Duke of Bourbon, and Lord Bouciqualt:"
+    },
+    {
+      "number": 63,
+      "speaker": "EXETER",
+      "text": "Of other lords and barons, knights and squires,"
+    },
+    {
+      "number": 64,
+      "speaker": "EXETER",
+      "text": "Full fifteen hundred, besides common men."
+    },
+    {
+      "number": 65,
+      "speaker": "KING HENRY",
+      "text": "This note doth tell me of ten thousand French"
+    },
+    {
+      "number": 66,
+      "speaker": "KING HENRY",
+      "text": "That in the field lie slain: of princes, in this number,"
+    },
+    {
+      "number": 67,
+      "speaker": "KING HENRY",
+      "text": "And nobles bearing banners, there lie dead"
+    },
+    {
+      "number": 68,
+      "speaker": "KING HENRY",
+      "text": "One hundred twenty-six: added to these,"
+    },
+    {
+      "number": 69,
+      "speaker": "KING HENRY",
+      "text": "Of knights, esquires, and gallant gentlemen,"
+    },
+    {
+      "number": 70,
+      "speaker": "KING HENRY",
+      "text": "Eight thousand and four hundred; of the which,"
+    },
+    {
+      "number": 71,
+      "speaker": "KING HENRY",
+      "text": "Five hundred were but yesterday dubb’d knights:"
+    },
+    {
+      "number": 72,
+      "speaker": "KING HENRY",
+      "text": "So that, in these ten thousand they have lost,"
+    },
+    {
+      "number": 73,
+      "speaker": "KING HENRY",
+      "text": "There are but sixteen hundred mercenaries;"
+    },
+    {
+      "number": 74,
+      "speaker": "KING HENRY",
+      "text": "The rest are princes, barons, lords, knights, squires,"
+    },
+    {
+      "number": 75,
+      "speaker": "KING HENRY",
+      "text": "And gentlemen of blood and quality."
+    },
+    {
+      "number": 76,
+      "speaker": "KING HENRY",
+      "text": "The names of those their nobles that lie dead:"
+    },
+    {
+      "number": 77,
+      "speaker": "KING HENRY",
+      "text": "Charles Delabreth, high constable of France;"
+    },
+    {
+      "number": 78,
+      "speaker": "KING HENRY",
+      "text": "Jacques of Chatillon, admiral of France;"
+    },
+    {
+      "number": 79,
+      "speaker": "KING HENRY",
+      "text": "The master of the crossbows, Lord Rambures;"
+    },
+    {
+      "number": 80,
+      "speaker": "KING HENRY",
+      "text": "Great Master of France, the brave Sir Guichard Dolphin,"
+    },
+    {
+      "number": 81,
+      "speaker": "KING HENRY",
+      "text": "John, Duke of Alençon, Anthony Duke of Brabant,"
+    },
+    {
+      "number": 82,
+      "speaker": "KING HENRY",
+      "text": "The brother to the Duke of Burgundy,"
+    },
+    {
+      "number": 83,
+      "speaker": "KING HENRY",
+      "text": "And Edward Duke of Bar: of lusty earls,"
+    },
+    {
+      "number": 84,
+      "speaker": "KING HENRY",
+      "text": "Grandpré and Roussi, Fauconberg and Foix,"
+    },
+    {
+      "number": 85,
+      "speaker": "KING HENRY",
+      "text": "Beaumont and Marle, Vaudemont and Lestrale."
+    },
+    {
+      "number": 86,
+      "speaker": "KING HENRY",
+      "text": "Here was a royal fellowship of death!"
+    },
+    {
+      "number": 87,
+      "speaker": "KING HENRY",
+      "text": "Where is the number of our English dead? Herald shews him another paper."
+    },
+    {
+      "number": 88,
+      "speaker": "KING HENRY",
+      "text": "Edward the Duke of York, the Earl of Suffolk,"
+    },
+    {
+      "number": 89,
+      "speaker": "KING HENRY",
+      "text": "Sir Richard Ketly, Davy Gam, esquire:"
+    },
+    {
+      "number": 90,
+      "speaker": "KING HENRY",
+      "text": "None else of name; and of all other men"
+    },
+    {
+      "number": 91,
+      "speaker": "KING HENRY",
+      "text": "But five and twenty. O God, thy arm was here;"
+    },
+    {
+      "number": 92,
+      "speaker": "KING HENRY",
+      "text": "And not to us, but to thy arm alone,"
+    },
+    {
+      "number": 93,
+      "speaker": "KING HENRY",
+      "text": "Ascribe we all! When, without stratagem,"
+    },
+    {
+      "number": 94,
+      "speaker": "KING HENRY",
+      "text": "But in plain shock and even play of battle,"
+    },
+    {
+      "number": 95,
+      "speaker": "KING HENRY",
+      "text": "Was ever known so great and little loss"
+    },
+    {
+      "number": 96,
+      "speaker": "KING HENRY",
+      "text": "On one part and on the other? Take it, God,"
+    },
+    {
+      "number": 97,
+      "speaker": "KING HENRY",
+      "text": "For it is none but thine!"
+    },
+    {
+      "number": 97,
+      "speaker": "EXETER",
+      "text": "’Tis wonderful!"
+    },
+    {
+      "number": 98,
+      "speaker": "KING HENRY",
+      "text": "Come, go we in procession to the village:"
+    },
+    {
+      "number": 99,
+      "speaker": "KING HENRY",
+      "text": "And be it death proclaimed through our host"
+    },
+    {
+      "number": 100,
+      "speaker": "KING HENRY",
+      "text": "To boast of this or take that praise from God"
+    },
+    {
+      "number": 101,
+      "speaker": "KING HENRY",
+      "text": "Which is his only."
+    },
+    {
+      "number": 102,
+      "speaker": "FLUELLEN",
+      "text": "Is it not lawful, an please your majesty, to tell how many is killed?"
+    },
+    {
+      "number": 103,
+      "speaker": "KING HENRY",
+      "text": "Yes, captain; but with this acknowledgment,"
+    },
+    {
+      "number": 104,
+      "speaker": "KING HENRY",
+      "text": "That God fought for us."
+    },
+    {
+      "number": 105,
+      "speaker": "FLUELLEN",
+      "text": "Yes, my conscience, he did us great good."
+    },
+    {
+      "number": 106,
+      "speaker": "KING HENRY",
+      "text": "Do we all holy rites;"
+    },
+    {
+      "number": 107,
+      "speaker": "KING HENRY",
+      "text": "Let there be sung “Non nobis” and “Te Deum;”"
+    },
+    {
+      "number": 108,
+      "speaker": "KING HENRY",
+      "text": "The dead with charity enclosed in clay:"
+    },
+    {
+      "number": 109,
+      "speaker": "KING HENRY",
+      "text": "And then to Calais; and to England then;"
+    },
+    {
+      "number": 110,
+      "speaker": "KING HENRY",
+      "text": "Where ne’er from France arrived more happy men."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Gower and Williams."
+    },
+    {
+      "after_line": 1,
+      "text": "Enter Fluellen."
+    },
+    {
+      "after_line": 6,
+      "text": "Strikes him."
+    },
+    {
+      "after_line": 13,
+      "text": "Enter Warwick and Gloucester."
+    },
+    {
+      "after_line": 17,
+      "text": "Enter King Henry and Exeter."
+    },
+    {
+      "after_line": 57,
+      "text": "Enter an English Herald."
+    },
+    {
+      "after_line": 110,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act4_scene8_gloss1",
+      "line": 1,
+      "phrase": "knight you",
+      "definition": "Williams thinks Fluellen is being summoned for knighthood"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss2",
+      "line": 5,
+      "phrase": "Know the glove! I know the glove is a glove",
+      "definition": "Fluellen's comic tautology"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss3",
+      "line": 7,
+      "phrase": "’Sblood",
+      "definition": "'by God's blood' — a strong oath"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss4",
+      "line": 10,
+      "phrase": "treason his payment into plows",
+      "definition": "punish treason with blows — Fluellen's 'plows' = 'blows'"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss5",
+      "line": 26,
+      "phrase": "saving your majesty’s manhood",
+      "definition": "not to impugn your majesty's courage — Fluellen's polite hedge as he insults the 'traitor'"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss6",
+      "line": 27,
+      "phrase": "beggarly, lousy knave",
+      "definition": "poverty-stricken, lice-ridden scoundrel"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss7",
+      "line": 28,
+      "phrase": "avouchment",
+      "definition": "affirmation; certification — Fluellen's mock-legal word"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss8",
+      "line": 32,
+      "phrase": "most bitter terms",
+      "definition": "Henry admits Williams spoke harshly to him in 4.1 — plays at being offended"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss9",
+      "line": 33,
+      "phrase": "let his neck answer for it",
+      "definition": "hang him, in Fluellen's view"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss10",
+      "line": 36,
+      "phrase": "All offences, my lord, come from the heart",
+      "definition": "Williams's moral defence — no offence was intended"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss11",
+      "line": 38,
+      "phrase": "came not like yourself",
+      "definition": "you appeared as a common soldier, not a king — Williams's self-defence"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss12",
+      "line": 39,
+      "phrase": "garments, your lowliness",
+      "definition": "your borrowed cloak and lowly bearing"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss13",
+      "line": 44,
+      "phrase": "fill this glove with crowns",
+      "definition": "a purse in the shape of a glove — Henry's way of rewarding Williams's honesty"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss14",
+      "line": 50,
+      "phrase": "twelve pence",
+      "definition": "a shilling — Fluellen's small personal gift to Williams"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss15",
+      "line": 51,
+      "phrase": "prawls, and prabbles",
+      "definition": "brawls and brabbles (squabbles), in Fluellen's accent — dialect preserved"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss16",
+      "line": 56,
+      "phrase": "pashful",
+      "definition": "bashful, in Fluellen's accent"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss17",
+      "line": 56,
+      "phrase": "silling",
+      "definition": "shilling, in Fluellen's accent"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss18",
+      "line": 59,
+      "phrase": "number of the slaughter’d French",
+      "definition": "the casualty list — Henry will read it aloud, producing the play's roll-call of dead nobles"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss19",
+      "line": 61,
+      "phrase": "Charles Duke of Orleans",
+      "definition": "Charles d'Orléans — captured at Agincourt, held in England for 25 years; a noted poet in captivity"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss20",
+      "line": 62,
+      "phrase": "John Duke of Bourbon",
+      "definition": "John I, Duke of Bourbon — captured at Agincourt; died in English captivity 1434"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss21",
+      "line": 62,
+      "phrase": "Lord Bouciqualt",
+      "definition": "Boucicaut — Marshal of France; captured at Agincourt, died in English captivity"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss22",
+      "line": 65,
+      "phrase": "ten thousand French",
+      "definition": "the play's inflated casualty figure — the historical estimate is ~6,000–10,000 French dead at Agincourt"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss23",
+      "line": 68,
+      "phrase": "One hundred twenty-six",
+      "definition": "the number of French princes, dukes and banner-bearing nobles dead — precision lends the catalogue authority"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss24",
+      "line": 71,
+      "phrase": "yesterday dubb’d knights",
+      "definition": "500 who had been newly knighted on the eve of battle — all killed"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss25",
+      "line": 73,
+      "phrase": "sixteen hundred mercenaries",
+      "definition": "1,600 of the dead were hired soldiers — the rest aristocrats, a deliberate inversion of normal casualty ratios"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss26",
+      "line": 77,
+      "phrase": "Charles Delabreth",
+      "definition": "Charles d'Albret — Constable of France, killed at Agincourt (already in 3.5)"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss27",
+      "line": 78,
+      "phrase": "Jacques of Chatillon",
+      "definition": "Admiral of France — killed"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss28",
+      "line": 80,
+      "phrase": "Guichard Dolphin",
+      "definition": "Guichard Dauphin — 'Great Master of France'; killed"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss29",
+      "line": 81,
+      "phrase": "John, Duke of Alençon",
+      "definition": "French duke killed by Henry personally — note, Alençon as Henry's own kill"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss30",
+      "line": 82,
+      "phrase": "Brother to the Duke of Burgundy",
+      "definition": "the Duke of Brabant — related to the Duke of Burgundy (who was not at Agincourt)"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss31",
+      "line": 86,
+      "phrase": "royal fellowship of death",
+      "definition": "an assembly of nobility united only by dying — Henry's phrase for the catalogue"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss32",
+      "line": 89,
+      "phrase": "Sir Richard Ketly, Davy Gam",
+      "definition": "Kettle/Kethele and Dafydd Gam — actual English casualties, one Welsh; 'Davy Gam' = the historical David Gam, killed saving Henry's life (per Tudor chroniclers)"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss33",
+      "line": 90,
+      "phrase": "None else of name",
+      "definition": "no other English nobles dead — the vanishingly small English loss"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss34",
+      "line": 91,
+      "phrase": "five and twenty",
+      "definition": "25 English dead (common soldiers) — historically an understatement, but propaganda had already inflated the French dead and deflated the English"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss35",
+      "line": 91,
+      "phrase": "thy arm was here",
+      "definition": "God's arm fought for us — Henry's providentialism"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss36",
+      "line": 93,
+      "phrase": "without stratagem",
+      "definition": "without trickery; in straight combat"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss37",
+      "line": 94,
+      "phrase": "plain shock and even play of battle",
+      "definition": "straightforward clash of arms"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss38",
+      "line": 100,
+      "phrase": "boast of this or take that praise from God",
+      "definition": "Henry forbids boasting — all credit to God; proclamation on pain of death"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss39",
+      "line": 107,
+      "phrase": "Non nobis",
+      "definition": "Latin Psalm 115 — 'Non nobis, Domine': 'Not unto us, O Lord, but unto thy name give glory.' Traditional English battle-thanksgiving"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss40",
+      "line": 107,
+      "phrase": "Te Deum",
+      "definition": "'Te Deum laudamus' — the ancient Latin hymn of thanksgiving to God"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss41",
+      "line": 108,
+      "phrase": "charity enclosed in clay",
+      "definition": "buried charitably in the earth"
+    },
+    {
+      "id": "henry_v_act4_scene8_gloss42",
+      "line": 109,
+      "phrase": "Calais",
+      "definition": "the English-held Channel port — Henry's destination, already planned at the end of 3.3"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act4_scene8_ann1",
+      "line_start": 1,
+      "line_end": 50,
+      "citation_display": "Henry V 4.8.1–50",
+      "category": "structural",
+      "title": "The glove-plot pays off — Henry gives Williams crowns",
+      "body": "The glove-exchange set up in 4.1 pays off here. Williams has punched Fluellen (believing the glove in Fluellen's cap belongs to the arrogant soldier who insulted the king); Henry reveals that he was that soldier. Williams's defense is disarmingly direct: 'Your majesty came not like yourself … had you been as I took you for, I made no offence.' Henry's response is generous: he fills Williams's glove with crowns. What makes the sequence work is Williams's refusal to apologize: the king in disguise invited the insult, and the responsibility is not on the soldier. Shakespeare does not flinch from having Williams win the argument. Henry rewards him with money, not with a title; Williams will go home as a commoner, which is the appropriate register. The king-in-disguise trope is a favorite of Elizabethan drama (it recurs in As You Like It and Measure for Measure); Shakespeare's version here is unusual in that the commoner gets to keep his moral advantage.",
+      "sources": [
+        "Anne Barton, 'The King Disguised,' in The Triple Bond (1975)",
+        "Kenneth Muir, The Sources of Shakespeare's Plays (1977)"
+      ]
+    },
+    {
+      "id": "henry_v_act4_scene8_ann2",
+      "line_start": 58,
+      "line_end": 100,
+      "citation_display": "Henry V 4.8.58–100",
+      "category": "historical",
+      "title": "The catalogue of the dead — historical politics of a casualty report",
+      "body": "Henry's long recitation of the French noble dead is a set-piece of propagandist accounting. The numbers are unreliable: 10,000 French dead, 126 princes and banner-bearing nobles, 8,400 knights and gentlemen, 500 freshly-knighted — and only 25 common English dead plus four named nobles (York, Suffolk, Kettle, Davy Gam). Historical estimates of Agincourt casualties vary considerably, but modern historians generally put French losses at roughly 6,000–10,000 (heavily weighted toward the nobility, who led the fatal cavalry charge into the mud) and English losses at probably several hundred rather than 25. Shakespeare follows his source (Holinshed) but the source itself inherits the aftermath-propaganda. What the catalogue accomplishes dramatically is different from its historical accuracy: it stages an astonishing inversion of normal war-casualties (nobles killed in massive numbers, commoners almost untouched) and it invites the audience to hear 'God fought for us' as both historically adequate (in the sense that such a disproportion is not ordinary) and theologically exorbitant (since attributing it wholly to God erases the strategic fact of the longbow). Henry's immediate decree banning boasting on pain of death — 'be it death proclaimed through our host / To boast of this or take that praise from God / Which is his only' — closes the catalogue by making providentialism state policy.",
+      "sources": [
+        "Anne Curry, Agincourt: A New History (2005)",
+        "Juliet Barker, Agincourt: The King, the Campaign, the Battle (2005)",
+        "Peter Saccio, Shakespeare's English Kings (2nd ed., 2000)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act4_scene8_q1",
+      "kind": "structural",
+      "prompt": "How does the glove-plot resolve?",
+      "options": [
+        "Williams is imprisoned for striking Fluellen",
+        "Williams explains that the king's disguise invited the insult; Henry, persuaded, fills Williams's glove with crowns. Williams doesn't apologize; the king doesn't insist",
+        "Fluellen is rewarded with a dukedom",
+        "Both Williams and Fluellen are sent to Calais"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 37,
+      "anchor_line_end": 48
+    },
+    {
+      "id": "henry_v_act4_scene8_q2",
+      "kind": "comprehension",
+      "prompt": "According to Henry's list, how many common English soldiers died?",
+      "options": [
+        "Five hundred",
+        "Twenty-five — an astonishingly low number that has been disputed by modern historians, who estimate several hundred",
+        "Ten thousand",
+        "None"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 88,
+      "anchor_line_end": 91
+    },
+    {
+      "id": "henry_v_act4_scene8_q3",
+      "kind": "theme",
+      "prompt": "What does Henry do immediately after reciting the casualty catalogue?",
+      "options": [
+        "Leads a prayer at the battlefield",
+        "Issues a decree — on pain of death — forbidding any soldier to boast of Agincourt or take credit from God. Providentialism becomes state policy",
+        "Orders the dead to be burned",
+        "Writes a personal letter to Katherine"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 98,
+      "anchor_line_end": 101
+    },
+    {
+      "id": "henry_v_act4_scene8_q4",
+      "kind": "historical",
+      "prompt": "How should readers treat Henry's casualty numbers?",
+      "options": [
+        "As modern archaeology",
+        "As propaganda inherited from 15th-century sources (via Holinshed): the disproportion (French nobles killed in huge numbers, English commoners barely scratched) is extraordinary and real, but the specific numbers are likely inflated/deflated on both sides. Modern estimates differ substantially",
+        "As literal transcripts of French rolls",
+        "As inventions of Shakespeare with no historical basis"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 65,
+      "anchor_line_end": 91
+    }
+  ]
+}

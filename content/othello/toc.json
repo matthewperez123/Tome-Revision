@@ -1,0 +1,195 @@
+{
+  "work_id": "othello",
+  "entries": [
+    {
+      "type": "act",
+      "act": 1,
+      "title": "Act I"
+    },
+    {
+      "type": "scene",
+      "section_id": "othello_act1_scene1",
+      "sequence": 1,
+      "act": 1,
+      "scene": 1,
+      "scene_title": "Venice. A street",
+      "line_count": 193,
+      "word_count": 1474,
+      "est_read_minutes": 7
+    },
+    {
+      "type": "scene",
+      "section_id": "othello_act1_scene2",
+      "sequence": 2,
+      "act": 1,
+      "scene": 2,
+      "scene_title": "Another street",
+      "line_count": 116,
+      "word_count": 823,
+      "est_read_minutes": 4
+    },
+    {
+      "type": "scene",
+      "section_id": "othello_act1_scene3",
+      "sequence": 3,
+      "act": 1,
+      "scene": 3,
+      "scene_title": "A council-chamber",
+      "line_count": 409,
+      "word_count": 3207,
+      "est_read_minutes": 16
+    },
+    {
+      "type": "act",
+      "act": 2,
+      "title": "Act II"
+    },
+    {
+      "type": "scene",
+      "section_id": "othello_act2_scene1",
+      "sequence": 4,
+      "act": 2,
+      "scene": 1,
+      "scene_title": "A seaport in Cyprus. An open place near the quay",
+      "line_count": 302,
+      "word_count": 2454,
+      "est_read_minutes": 12
+    },
+    {
+      "type": "scene",
+      "section_id": "othello_act2_scene2",
+      "sequence": 5,
+      "act": 2,
+      "scene": 2,
+      "scene_title": "A street",
+      "line_count": 9,
+      "word_count": 101,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "othello_act2_scene3",
+      "sequence": 6,
+      "act": 2,
+      "scene": 3,
+      "scene_title": "A hall in the castle",
+      "line_count": 355,
+      "word_count": 2916,
+      "est_read_minutes": 15
+    },
+    {
+      "type": "act",
+      "act": 3,
+      "title": "Act III"
+    },
+    {
+      "type": "scene",
+      "section_id": "othello_act3_scene1",
+      "sequence": 7,
+      "act": 3,
+      "scene": 1,
+      "scene_title": "Before the castle",
+      "line_count": 58,
+      "word_count": 433,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "othello_act3_scene2",
+      "sequence": 8,
+      "act": 3,
+      "scene": 2,
+      "scene_title": "A room in the castle",
+      "line_count": 7,
+      "word_count": 46,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "othello_act3_scene3",
+      "sequence": 9,
+      "act": 3,
+      "scene": 3,
+      "scene_title": "The garden of the castle",
+      "line_count": 524,
+      "word_count": 3829,
+      "est_read_minutes": 19
+    },
+    {
+      "type": "scene",
+      "section_id": "othello_act3_scene4",
+      "sequence": 10,
+      "act": 3,
+      "scene": 4,
+      "scene_title": "Before the castle",
+      "line_count": 220,
+      "word_count": 1544,
+      "est_read_minutes": 8
+    },
+    {
+      "type": "act",
+      "act": 4,
+      "title": "Act IV"
+    },
+    {
+      "type": "scene",
+      "section_id": "othello_act4_scene1",
+      "sequence": 11,
+      "act": 4,
+      "scene": 1,
+      "scene_title": "Cyprus. Before the castle",
+      "line_count": 294,
+      "word_count": 2107,
+      "est_read_minutes": 11
+    },
+    {
+      "type": "scene",
+      "section_id": "othello_act4_scene2",
+      "sequence": 12,
+      "act": 4,
+      "scene": 2,
+      "scene_title": "A room in the castle",
+      "line_count": 252,
+      "word_count": 1948,
+      "est_read_minutes": 10
+    },
+    {
+      "type": "scene",
+      "section_id": "othello_act4_scene3",
+      "sequence": 13,
+      "act": 4,
+      "scene": 3,
+      "scene_title": "Another room in the castle",
+      "line_count": 103,
+      "word_count": 847,
+      "est_read_minutes": 4
+    },
+    {
+      "type": "act",
+      "act": 5,
+      "title": "Act V"
+    },
+    {
+      "type": "scene",
+      "section_id": "othello_act5_scene1",
+      "sequence": 14,
+      "act": 5,
+      "scene": 1,
+      "scene_title": "Cyprus. A street",
+      "line_count": 139,
+      "word_count": 1020,
+      "est_read_minutes": 5
+    },
+    {
+      "type": "scene",
+      "section_id": "othello_act5_scene2",
+      "sequence": 15,
+      "act": 5,
+      "scene": 2,
+      "scene_title": "A bedchamber in the castle",
+      "line_count": 421,
+      "word_count": 2970,
+      "est_read_minutes": 15
+    }
+  ]
+}

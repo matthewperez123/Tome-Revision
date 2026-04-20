@@ -1,0 +1,321 @@
+{
+  "section_id": "macbeth_act1_scene6",
+  "work_id": "macbeth",
+  "sequence": 6,
+  "act": 1,
+  "scene": 6,
+  "kind": "scene",
+  "scene_title": "Before Macbeth's castle",
+  "line_count": 37,
+  "word_count": 253,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "DUNCAN",
+      "text": "This castle hath a pleasant seat; the air"
+    },
+    {
+      "number": 2,
+      "speaker": "DUNCAN",
+      "text": "Nimbly and sweetly recommends itself"
+    },
+    {
+      "number": 3,
+      "speaker": "DUNCAN",
+      "text": "Unto our gentle senses."
+    },
+    {
+      "number": 3,
+      "speaker": "BANQUO",
+      "text": "This guest of summer,"
+    },
+    {
+      "number": 4,
+      "speaker": "BANQUO",
+      "text": "The temple-haunting martlet, does approve,"
+    },
+    {
+      "number": 5,
+      "speaker": "BANQUO",
+      "text": "By his loved mansionry, that the heaven’s breath"
+    },
+    {
+      "number": 6,
+      "speaker": "BANQUO",
+      "text": "Smells wooingly here: no jutty, frieze,"
+    },
+    {
+      "number": 7,
+      "speaker": "BANQUO",
+      "text": "Buttress, nor coign of vantage, but this bird"
+    },
+    {
+      "number": 8,
+      "speaker": "BANQUO",
+      "text": "Hath made his pendent bed and procreant cradle:"
+    },
+    {
+      "number": 9,
+      "speaker": "BANQUO",
+      "text": "Where they most breed and haunt, I have observed,"
+    },
+    {
+      "number": 10,
+      "speaker": "BANQUO",
+      "text": "The air is delicate."
+    },
+    {
+      "number": 10,
+      "speaker": "DUNCAN",
+      "text": "See, see, our honour’d hostess!"
+    },
+    {
+      "number": 11,
+      "speaker": "DUNCAN",
+      "text": "The love that follows us sometime is our trouble,"
+    },
+    {
+      "number": 12,
+      "speaker": "DUNCAN",
+      "text": "Which still we thank as love. Herein I teach you"
+    },
+    {
+      "number": 13,
+      "speaker": "DUNCAN",
+      "text": "How you shall bid God ’ild us for your pains,"
+    },
+    {
+      "number": 14,
+      "speaker": "DUNCAN",
+      "text": "And thank us for your trouble."
+    },
+    {
+      "number": 14,
+      "speaker": "LADY MACBETH",
+      "text": "All our service"
+    },
+    {
+      "number": 15,
+      "speaker": "LADY MACBETH",
+      "text": "In every point twice done and then done double"
+    },
+    {
+      "number": 16,
+      "speaker": "LADY MACBETH",
+      "text": "Were poor and single business to contend"
+    },
+    {
+      "number": 17,
+      "speaker": "LADY MACBETH",
+      "text": "Against those honours deep and broad wherewith"
+    },
+    {
+      "number": 18,
+      "speaker": "LADY MACBETH",
+      "text": "Your majesty loads our house: for those of old,"
+    },
+    {
+      "number": 19,
+      "speaker": "LADY MACBETH",
+      "text": "And the late dignities heap’d up to them,"
+    },
+    {
+      "number": 20,
+      "speaker": "LADY MACBETH",
+      "text": "We rest your hermits."
+    },
+    {
+      "number": 20,
+      "speaker": "DUNCAN",
+      "text": "Where’s the thane of Cawdor?"
+    },
+    {
+      "number": 21,
+      "speaker": "DUNCAN",
+      "text": "We coursed him at the heels, and had a purpose"
+    },
+    {
+      "number": 22,
+      "speaker": "DUNCAN",
+      "text": "To be his purveyor: but he rides well;"
+    },
+    {
+      "number": 23,
+      "speaker": "DUNCAN",
+      "text": "And his great love, sharp as his spur, hath holp him"
+    },
+    {
+      "number": 24,
+      "speaker": "DUNCAN",
+      "text": "To his home before us. Fair and noble hostess,"
+    },
+    {
+      "number": 25,
+      "speaker": "DUNCAN",
+      "text": "We are your guest to-night."
+    },
+    {
+      "number": 25,
+      "speaker": "LADY MACBETH",
+      "text": "Your servants ever"
+    },
+    {
+      "number": 26,
+      "speaker": "LADY MACBETH",
+      "text": "Have theirs, themselves and what is theirs, in compt,"
+    },
+    {
+      "number": 27,
+      "speaker": "LADY MACBETH",
+      "text": "To make their audit at your highness’ pleasure,"
+    },
+    {
+      "number": 28,
+      "speaker": "LADY MACBETH",
+      "text": "Still to return your own."
+    },
+    {
+      "number": 28,
+      "speaker": "DUNCAN",
+      "text": "Give me your hand;"
+    },
+    {
+      "number": 29,
+      "speaker": "DUNCAN",
+      "text": "Conduct me to mine host: we love him highly,"
+    },
+    {
+      "number": 30,
+      "speaker": "DUNCAN",
+      "text": "And shall continue our graces towards him."
+    },
+    {
+      "number": 31,
+      "speaker": "DUNCAN",
+      "text": "By your leave, hostess."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Hautboys and torches. Enter Duncan, Malcolm, Donalbain, Banquo, Lennox, Macduff, Ross, Angus, and Attendants."
+    },
+    {
+      "after_line": 10,
+      "text": "Enter Lady Macbeth."
+    },
+    {
+      "after_line": 31,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act1_scene6_gloss1",
+      "line": 2,
+      "phrase": "recommends itself",
+      "definition": "commends itself; presents itself favorably"
+    },
+    {
+      "id": "macbeth_act1_scene6_gloss2",
+      "line": 4,
+      "phrase": "martlet",
+      "definition": "house martin (swallow) — a bird said to nest only in holy places"
+    },
+    {
+      "id": "macbeth_act1_scene6_gloss3",
+      "line": 4,
+      "phrase": "approve",
+      "definition": "confirm"
+    },
+    {
+      "id": "macbeth_act1_scene6_gloss4",
+      "line": 5,
+      "phrase": "mansionry",
+      "definition": "nesting-place; dwelling"
+    },
+    {
+      "id": "macbeth_act1_scene6_gloss6",
+      "line": 7,
+      "phrase": "coign of vantage",
+      "definition": "a corner providing a vantage point"
+    },
+    {
+      "id": "macbeth_act1_scene6_gloss7",
+      "line": 8,
+      "phrase": "pendent bed and procreant cradle",
+      "definition": "hanging nest and nursery — where the martlet breeds"
+    },
+    {
+      "id": "macbeth_act1_scene6_gloss8",
+      "line": 9,
+      "phrase": "haunt",
+      "definition": "frequent; inhabit"
+    },
+    {
+      "id": "macbeth_act1_scene6_gloss9",
+      "line": 20,
+      "phrase": "hermits",
+      "definition": "praying men — religious figures who pray for their benefactors"
+    },
+    {
+      "id": "macbeth_act1_scene6_gloss10",
+      "line": 21,
+      "phrase": "coursed him at the heels",
+      "definition": "pursued him close behind"
+    },
+    {
+      "id": "macbeth_act1_scene6_gloss11",
+      "line": 22,
+      "phrase": "purveyor",
+      "definition": "an officer sent ahead to prepare for a royal arrival"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act1_scene6_ann1",
+      "line_start": 1,
+      "line_end": 15,
+      "citation_display": "Macbeth 1.6.1–15",
+      "category": "thematic",
+      "title": "Duncan's last approval",
+      "body": "Duncan and Banquo praise the sweet air of Macbeth's castle while Lady Macbeth waits inside to kill him. Banquo notes the martlet — a bird said to nest only in holy places — has made its home on the walls. The dramatic irony is unbearable: every word of their praise is a misreading of the place they are about to enter.\n\nThe scene is Shakespeare at his most cruel. He does not allow Duncan a moment of suspicion. The king is graceful, charming, trusting. His thanks to Lady Macbeth ('this honoured hostess') is delivered as courtesy, and she answers in perfect protocol. The audience has thirty-seven lines to watch the trap be set politely.",
+      "sources": [
+        "Harley Granville-Barker, *Prefaces to Shakespeare* (1947)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act1_scene6_q1",
+      "kind": "inference",
+      "prompt": "Why does Shakespeare have Banquo note the martlet nests on the castle walls?",
+      "options": [
+        "Ornithological accuracy",
+        "To set up dramatic irony — martlets nest only in holy places, but this house is about to become a site of regicide",
+        "To foreshadow peace",
+        "Because Banquo is an amateur naturalist"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 3,
+      "anchor_line_end": 12
+    },
+    {
+      "id": "macbeth_act1_scene6_q2",
+      "kind": "close_reading",
+      "prompt": "Duncan calls Lady Macbeth 'this honoured hostess.' The dramatic irony is:",
+      "options": [
+        "None — it is sincere",
+        "She is preparing to help murder him",
+        "She is about to divorce her husband",
+        "She is a witch"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 10,
+      "anchor_line_end": 20
+    }
+  ]
+}

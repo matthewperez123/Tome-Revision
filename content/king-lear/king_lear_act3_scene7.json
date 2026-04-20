@@ -1,0 +1,1002 @@
+{
+  "section_id": "king_lear_act3_scene7",
+  "work_id": "king-lear",
+  "sequence": 16,
+  "act": 3,
+  "scene": 7,
+  "kind": "scene",
+  "scene_title": "Gloucester's castle",
+  "line_count": 114,
+  "word_count": 856,
+  "est_read_minutes": 4,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CORNWALL",
+      "text": "Post speedily to my lord your husband; show him this letter: the"
+    },
+    {
+      "number": 2,
+      "speaker": "CORNWALL",
+      "text": "army of France is landed. Seek out the villain Gloucester."
+    },
+    {
+      "number": 3,
+      "speaker": "REGAN",
+      "text": "Hang him instantly."
+    },
+    {
+      "number": 3,
+      "speaker": "GONERIL",
+      "text": "Pluck out his eyes."
+    },
+    {
+      "number": 4,
+      "speaker": "CORNWALL",
+      "text": "Leave him to my displeasure. Edmund, keep you our sister company: the"
+    },
+    {
+      "number": 5,
+      "speaker": "CORNWALL",
+      "text": "revenges we are bound to take upon your traitorous father are not"
+    },
+    {
+      "number": 6,
+      "speaker": "CORNWALL",
+      "text": "fit for your beholding. Advise the duke, where you are going, to"
+    },
+    {
+      "number": 7,
+      "speaker": "CORNWALL",
+      "text": "a most festinate preparation: we are bound to the like. Our posts"
+    },
+    {
+      "number": 8,
+      "speaker": "CORNWALL",
+      "text": "shall be swift and intelligent betwixt us. Farewell, dear sister: farewell, my"
+    },
+    {
+      "number": 9,
+      "speaker": "CORNWALL",
+      "text": "lord of Gloucester."
+    },
+    {
+      "number": 10,
+      "speaker": "OSWALD",
+      "text": "My lord of Gloucester hath convey’d him hence:"
+    },
+    {
+      "number": 11,
+      "speaker": "OSWALD",
+      "text": "Some five or six and thirty of his knights,"
+    },
+    {
+      "number": 12,
+      "speaker": "OSWALD",
+      "text": "Hot questrists after him, met him at gate;"
+    },
+    {
+      "number": 13,
+      "speaker": "OSWALD",
+      "text": "Who, with some other of the lords dependants,"
+    },
+    {
+      "number": 14,
+      "speaker": "OSWALD",
+      "text": "Are gone with him towards Dover; where they boast"
+    },
+    {
+      "number": 15,
+      "speaker": "OSWALD",
+      "text": "To have well-armed friends."
+    },
+    {
+      "number": 15,
+      "speaker": "CORNWALL",
+      "text": "Get horses for your mistress."
+    },
+    {
+      "number": 16,
+      "speaker": "GONERIL",
+      "text": "Farewell, sweet lord, and sister."
+    },
+    {
+      "number": 16,
+      "speaker": "CORNWALL",
+      "text": "Edmund, farewell."
+    },
+    {
+      "number": 17,
+      "speaker": "CORNWALL",
+      "text": "Go seek the traitor Gloucester,"
+    },
+    {
+      "number": 18,
+      "speaker": "CORNWALL",
+      "text": "Pinion him like a thief, bring him before us."
+    },
+    {
+      "number": 19,
+      "speaker": "CORNWALL",
+      "text": "Though well we may not pass upon his life"
+    },
+    {
+      "number": 20,
+      "speaker": "CORNWALL",
+      "text": "Without the form of justice, yet our power"
+    },
+    {
+      "number": 21,
+      "speaker": "CORNWALL",
+      "text": "Shall do a courtesy to our wrath, which men"
+    },
+    {
+      "number": 22,
+      "speaker": "CORNWALL",
+      "text": "May blame, but not control. Who’s there? the traitor?"
+    },
+    {
+      "number": 23,
+      "speaker": "REGAN",
+      "text": "Ingrateful fox! ’tis he."
+    },
+    {
+      "number": 23,
+      "speaker": "CORNWALL",
+      "text": "Bind fast his corky arms."
+    },
+    {
+      "number": 24,
+      "speaker": "GLOUCESTER",
+      "text": "What mean your graces? Good my friends, consider"
+    },
+    {
+      "number": 25,
+      "speaker": "GLOUCESTER",
+      "text": "You are my guests: do me no foul play, friends."
+    },
+    {
+      "number": 26,
+      "speaker": "CORNWALL",
+      "text": "Bind him, I say. Servants bind him."
+    },
+    {
+      "number": 27,
+      "speaker": "REGAN",
+      "text": "Hard, hard. O filthy traitor!"
+    },
+    {
+      "number": 28,
+      "speaker": "GLOUCESTER",
+      "text": "Unmerciful lady as you are, I’m none."
+    },
+    {
+      "number": 29,
+      "speaker": "CORNWALL",
+      "text": "To this chair bind him. Villain, thou shalt find—Regan plucks his beard."
+    },
+    {
+      "number": 30,
+      "speaker": "GLOUCESTER",
+      "text": "By the kind gods, ’tis most ignobly done"
+    },
+    {
+      "number": 31,
+      "speaker": "GLOUCESTER",
+      "text": "To pluck me by the beard."
+    },
+    {
+      "number": 31,
+      "speaker": "REGAN",
+      "text": "So white, and such a traitor!"
+    },
+    {
+      "number": 32,
+      "speaker": "GLOUCESTER",
+      "text": "Naughty lady,"
+    },
+    {
+      "number": 33,
+      "speaker": "GLOUCESTER",
+      "text": "These hairs, which thou dost ravish from my chin,"
+    },
+    {
+      "number": 34,
+      "speaker": "GLOUCESTER",
+      "text": "Will quicken, and accuse thee: I am your host:"
+    },
+    {
+      "number": 35,
+      "speaker": "GLOUCESTER",
+      "text": "With robbers’ hands my hospitable favours"
+    },
+    {
+      "number": 36,
+      "speaker": "GLOUCESTER",
+      "text": "You should not ruffle thus. What will you do?"
+    },
+    {
+      "number": 37,
+      "speaker": "CORNWALL",
+      "text": "Come, sir, what letters had you late from France?"
+    },
+    {
+      "number": 38,
+      "speaker": "REGAN",
+      "text": "Be simple answerer, for we know the truth."
+    },
+    {
+      "number": 39,
+      "speaker": "CORNWALL",
+      "text": "And what confederacy have you with the traitors"
+    },
+    {
+      "number": 40,
+      "speaker": "CORNWALL",
+      "text": "Late footed in the kingdom?"
+    },
+    {
+      "number": 41,
+      "speaker": "REGAN",
+      "text": "To whose hands have you sent the lunatic king? Speak."
+    },
+    {
+      "number": 42,
+      "speaker": "GLOUCESTER",
+      "text": "I have a letter guessingly set down,"
+    },
+    {
+      "number": 43,
+      "speaker": "GLOUCESTER",
+      "text": "Which came from one that’s of a neutral heart,"
+    },
+    {
+      "number": 44,
+      "speaker": "GLOUCESTER",
+      "text": "And not from one opposed."
+    },
+    {
+      "number": 44,
+      "speaker": "CORNWALL",
+      "text": "Cunning."
+    },
+    {
+      "number": 45,
+      "speaker": "REGAN",
+      "text": "And false."
+    },
+    {
+      "number": 45,
+      "speaker": "CORNWALL",
+      "text": "Where hast thou sent the king?"
+    },
+    {
+      "number": 46,
+      "speaker": "GLOUCESTER",
+      "text": "To Dover."
+    },
+    {
+      "number": 47,
+      "speaker": "REGAN",
+      "text": "Wherefore to Dover? Wast thou not charged at peril—"
+    },
+    {
+      "number": 48,
+      "speaker": "CORNWALL",
+      "text": "Wherefore to Dover? Let him first answer that."
+    },
+    {
+      "number": 49,
+      "speaker": "GLOUCESTER",
+      "text": "I am tied to the stake, and I must stand the course."
+    },
+    {
+      "number": 50,
+      "speaker": "REGAN",
+      "text": "Wherefore to Dover, sir?"
+    },
+    {
+      "number": 51,
+      "speaker": "GLOUCESTER",
+      "text": "Because I would not see thy cruel nails"
+    },
+    {
+      "number": 52,
+      "speaker": "GLOUCESTER",
+      "text": "Pluck out his poor old eyes; nor thy fierce sister"
+    },
+    {
+      "number": 53,
+      "speaker": "GLOUCESTER",
+      "text": "In his anointed flesh stick boarish fangs."
+    },
+    {
+      "number": 54,
+      "speaker": "GLOUCESTER",
+      "text": "The sea, with such a storm as his bare head"
+    },
+    {
+      "number": 55,
+      "speaker": "GLOUCESTER",
+      "text": "In hell-black night endured, would have buoy’d up,"
+    },
+    {
+      "number": 56,
+      "speaker": "GLOUCESTER",
+      "text": "And quench’d the stelled fires:"
+    },
+    {
+      "number": 57,
+      "speaker": "GLOUCESTER",
+      "text": "Yet, poor old heart, he holp the heavens to rain."
+    },
+    {
+      "number": 58,
+      "speaker": "GLOUCESTER",
+      "text": "If wolves had at thy gate howl’d that stern time,"
+    },
+    {
+      "number": 59,
+      "speaker": "GLOUCESTER",
+      "text": "Thou shouldst have said “Good porter, turn the key,”"
+    },
+    {
+      "number": 60,
+      "speaker": "GLOUCESTER",
+      "text": "All cruels else subscribed: but I shall see"
+    },
+    {
+      "number": 61,
+      "speaker": "GLOUCESTER",
+      "text": "The winged vengeance overtake such children."
+    },
+    {
+      "number": 62,
+      "speaker": "CORNWALL",
+      "text": "See’t shalt thou never. Fellows, hold the chair."
+    },
+    {
+      "number": 63,
+      "speaker": "CORNWALL",
+      "text": "Upon these eyes of thine I’ll set my foot."
+    },
+    {
+      "number": 64,
+      "speaker": "GLOUCESTER",
+      "text": "He that will think to live till he be old,"
+    },
+    {
+      "number": 65,
+      "speaker": "GLOUCESTER",
+      "text": "Give me some help! O cruel! O you gods!"
+    },
+    {
+      "number": 66,
+      "speaker": "REGAN",
+      "text": "One side will mock another; the other too."
+    },
+    {
+      "number": 67,
+      "speaker": "CORNWALL",
+      "text": "If you see vengeance—"
+    },
+    {
+      "number": 67,
+      "speaker": "FIRST SERVANT",
+      "text": "Hold your hand, my lord:"
+    },
+    {
+      "number": 68,
+      "speaker": "FIRST SERVANT",
+      "text": "I have served you ever since I was a child;"
+    },
+    {
+      "number": 69,
+      "speaker": "FIRST SERVANT",
+      "text": "But better service have I never done you"
+    },
+    {
+      "number": 70,
+      "speaker": "FIRST SERVANT",
+      "text": "Than now to bid you hold."
+    },
+    {
+      "number": 70,
+      "speaker": "REGAN",
+      "text": "How now, you dog!"
+    },
+    {
+      "number": 71,
+      "speaker": "FIRST SERVANT",
+      "text": "If you did wear a beard upon your chin,"
+    },
+    {
+      "number": 72,
+      "speaker": "FIRST SERVANT",
+      "text": "I’d shake it on this quarrel. What do you mean?"
+    },
+    {
+      "number": 73,
+      "speaker": "CORNWALL",
+      "text": "My villain! They draw and fight."
+    },
+    {
+      "number": 74,
+      "speaker": "FIRST SERVANT",
+      "text": "Nay, then, come on, and take the chance of anger."
+    },
+    {
+      "number": 75,
+      "speaker": "REGAN",
+      "text": "Give me thy sword. A peasant stand up thus!"
+    },
+    {
+      "number": 76,
+      "speaker": "FIRST SERVANT",
+      "text": "O, I am slain! My lord, you have one eye left"
+    },
+    {
+      "number": 77,
+      "speaker": "FIRST SERVANT",
+      "text": "To see some mischief on him. O!"
+    },
+    {
+      "number": 78,
+      "speaker": "CORNWALL",
+      "text": "Lest it see more, prevent it. Out, vile jelly!"
+    },
+    {
+      "number": 79,
+      "speaker": "CORNWALL",
+      "text": "Where is thy lustre now?"
+    },
+    {
+      "number": 80,
+      "speaker": "GLOUCESTER",
+      "text": "All dark and comfortless. Where’s my son Edmund?"
+    },
+    {
+      "number": 81,
+      "speaker": "GLOUCESTER",
+      "text": "Edmund, enkindle all the sparks of nature,"
+    },
+    {
+      "number": 82,
+      "speaker": "GLOUCESTER",
+      "text": "To quit this horrid act."
+    },
+    {
+      "number": 82,
+      "speaker": "REGAN",
+      "text": "Out, treacherous villain!"
+    },
+    {
+      "number": 83,
+      "speaker": "REGAN",
+      "text": "Thou call’st on him that hates thee: it was he"
+    },
+    {
+      "number": 84,
+      "speaker": "REGAN",
+      "text": "That made the overture of thy treasons to us;"
+    },
+    {
+      "number": 85,
+      "speaker": "REGAN",
+      "text": "Who is too good to pity thee."
+    },
+    {
+      "number": 86,
+      "speaker": "GLOUCESTER",
+      "text": "O my follies! then Edgar was abused."
+    },
+    {
+      "number": 87,
+      "speaker": "GLOUCESTER",
+      "text": "Kind gods, forgive me that, and prosper him!"
+    },
+    {
+      "number": 88,
+      "speaker": "REGAN",
+      "text": "Go thrust him out at gates, and let him smell"
+    },
+    {
+      "number": 89,
+      "speaker": "REGAN",
+      "text": "His way to Dover."
+    },
+    {
+      "number": 90,
+      "speaker": "REGAN",
+      "text": "How is’t, my lord? how look you?"
+    },
+    {
+      "number": 91,
+      "speaker": "CORNWALL",
+      "text": "I have received a hurt: follow me, lady."
+    },
+    {
+      "number": 92,
+      "speaker": "CORNWALL",
+      "text": "Turn out that eyeless villain; throw this slave"
+    },
+    {
+      "number": 93,
+      "speaker": "CORNWALL",
+      "text": "Upon the dunghill. Regan, I bleed apace:"
+    },
+    {
+      "number": 94,
+      "speaker": "CORNWALL",
+      "text": "Untimely comes this hurt: give me your arm."
+    },
+    {
+      "number": 95,
+      "speaker": "SECOND SERVANT",
+      "text": "I’ll never care what wickedness I do,"
+    },
+    {
+      "number": 96,
+      "speaker": "SECOND SERVANT",
+      "text": "If this man come to good."
+    },
+    {
+      "number": 96,
+      "speaker": "THIRD SERVANT",
+      "text": "If she live long,"
+    },
+    {
+      "number": 97,
+      "speaker": "THIRD SERVANT",
+      "text": "And in the end meet the old course of death,"
+    },
+    {
+      "number": 98,
+      "speaker": "THIRD SERVANT",
+      "text": "Women will all turn monsters."
+    },
+    {
+      "number": 99,
+      "speaker": "SECOND SERVANT",
+      "text": "Let’s follow the old earl, and get the Bedlam"
+    },
+    {
+      "number": 100,
+      "speaker": "SECOND SERVANT",
+      "text": "To lead him where he would: his roguish madness"
+    },
+    {
+      "number": 101,
+      "speaker": "SECOND SERVANT",
+      "text": "Allows itself to any thing."
+    },
+    {
+      "number": 102,
+      "speaker": "THIRD SERVANT",
+      "text": "Go thou: I’ll fetch some flax and whites of eggs"
+    },
+    {
+      "number": 103,
+      "speaker": "THIRD SERVANT",
+      "text": "To apply to his bleeding face. Now, heaven help him!"
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Cornwall, Regan, Goneril, Edmund, and Servants."
+    },
+    {
+      "after_line": 2,
+      "text": "Exeunt some of the Servants."
+    },
+    {
+      "after_line": 9,
+      "text": "Enter Oswald."
+    },
+    {
+      "after_line": 9,
+      "text": "How now! where’s the king?"
+    },
+    {
+      "after_line": 16,
+      "text": "Exeunt Goneril, Edmund, and Oswald."
+    },
+    {
+      "after_line": 18,
+      "text": "Exeunt other Servants."
+    },
+    {
+      "after_line": 22,
+      "text": "Enter Gloucester, brought in by two or three."
+    },
+    {
+      "after_line": 75,
+      "text": "Takes a sword, and runs at him behind."
+    },
+    {
+      "after_line": 77,
+      "text": "Dies."
+    },
+    {
+      "after_line": 89,
+      "text": "Exit one with Gloucester."
+    },
+    {
+      "after_line": 94,
+      "text": "Exit Cornwall, led by Regan."
+    },
+    {
+      "after_line": 103,
+      "text": "Exeunt severally."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act3_scene7_gloss1",
+      "line": 1,
+      "phrase": "Post speedily",
+      "definition": "ride with all haste"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss2",
+      "line": 10,
+      "phrase": "my lord of Gloucester",
+      "definition": "addressing Edmund — who now holds the title"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss3",
+      "line": 3,
+      "phrase": "pluck out his eyes",
+      "definition": "Goneril's chilling suggestion for Gloucester's punishment — the play's most disturbing line uttered casually"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss4",
+      "line": 7,
+      "phrase": "we are bound",
+      "definition": "we are bound to the law of courtesy"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss5",
+      "line": 23,
+      "phrase": "corky arms",
+      "definition": "dry, withered old arms — bindings for Gloucester"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss6",
+      "line": 27,
+      "phrase": "None",
+      "definition": "Gloucester's flat denial under interrogation"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss7",
+      "line": 23,
+      "phrase": "ingrateful fox",
+      "definition": "Cornwall's epithet for Gloucester"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss9",
+      "line": 35,
+      "phrase": "ruffle",
+      "definition": "rumple; disarrange — of his beard being pulled"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss10",
+      "line": 38,
+      "phrase": "confederacy",
+      "definition": "conspiracy"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss12",
+      "line": 47,
+      "phrase": "answer",
+      "definition": "face the consequences"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss13",
+      "line": 52,
+      "phrase": "anointed flesh",
+      "definition": "the king's body, consecrated by coronation — a direct appeal to divine monarchy"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss14",
+      "line": 60,
+      "phrase": "winged vengeance",
+      "definition": "swift divine retribution"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss15",
+      "line": 62,
+      "phrase": "Upon these eyes of thine I’ll set my foot",
+      "definition": "Cornwall's explicit threat, immediately followed by the act"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss16",
+      "line": 61,
+      "phrase": "See’t shalt thou never",
+      "definition": "Cornwall's vow — Gloucester shall never see again"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss17",
+      "line": 77,
+      "phrase": "Out, vile jelly!",
+      "definition": "Cornwall gouging out Gloucester's eye — one of the most shocking lines in Jacobean theater, staged onstage rather than offstage"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss18",
+      "line": 78,
+      "phrase": "Where is thy lustre now?",
+      "definition": "Cornwall's taunt to the just-blinded eye"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss19",
+      "line": 80,
+      "phrase": "kind",
+      "definition": "natural; proper"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss20",
+      "line": 66,
+      "phrase": "Hold your hand, my lord",
+      "definition": "the First Servant's intervention — a tiny moral resistance in a scene of cruelty"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss21",
+      "line": 91,
+      "phrase": "villain",
+      "definition": "peasant — Cornwall's outrage that a servant would stand against him"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss23",
+      "line": 77,
+      "phrase": "Lest it see more, prevent it",
+      "definition": "Cornwall to the second eye — completing the blinding"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss24",
+      "line": 77,
+      "phrase": "Out, vile jelly!",
+      "definition": "Cornwall's line repeated for the second eye — the doubling is pointed"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss25",
+      "line": 79,
+      "phrase": "All dark and comfortless",
+      "definition": "Gloucester in blind despair"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss26",
+      "line": 30,
+      "phrase": "a traitor",
+      "definition": "Gloucester naming Edmund as betrayer — the moment he understands"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss28",
+      "line": 85,
+      "phrase": "O my follies!",
+      "definition": "Gloucester's anagnorisis — recognition of his own blindness in trusting Edmund"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss29",
+      "line": 85,
+      "phrase": "Edgar was abused",
+      "definition": "his true son was wronged"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss30",
+      "line": 87,
+      "phrase": "Go thrust him out at gates",
+      "definition": "Regan orders Gloucester thrown out of his own castle"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss31",
+      "line": 87,
+      "phrase": "smell / His way to Dover",
+      "definition": "Regan's grotesque final cruelty — a blind man finding Dover by smell"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss32",
+      "line": 12,
+      "phrase": "hot questrists after him",
+      "definition": "eager hunters pursuing Lear"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss33",
+      "line": 5,
+      "phrase": "traitor",
+      "definition": "Cornwall's label for Gloucester"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss35",
+      "line": 40,
+      "phrase": "lunatic king",
+      "definition": "Regan dismissing Lear"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss36",
+      "line": 48,
+      "phrase": "course",
+      "definition": "a bear-baiting term — the chained victim's 'course' against dogs"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss38",
+      "line": 53,
+      "phrase": "the sea, with such a storm",
+      "definition": "Gloucester's account of Lear's condition in the storm"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss39",
+      "line": 59,
+      "phrase": "all cruels",
+      "definition": "all cruelties personified"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss40",
+      "line": 54,
+      "phrase": "In hell-black night",
+      "definition": "in the darkness of hell"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss42",
+      "line": 57,
+      "phrase": "if wolves had at thy gate howl’d",
+      "definition": "even wolves would have shown more mercy"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss43",
+      "line": 60,
+      "phrase": "winged vengeance",
+      "definition": "swift divine retribution"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss44",
+      "line": 91,
+      "phrase": "Villain",
+      "definition": "insult — Cornwall calls the servant a peasant"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss47",
+      "line": 18,
+      "phrase": "Pinion him",
+      "definition": "bind his arms — bracketing Gloucester before the torture"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss48",
+      "line": 31,
+      "phrase": "Naughty lady",
+      "definition": "wicked woman — Gloucester to Regan; 'naughty' is Jacobean severe, not modern mild"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss49",
+      "line": 33,
+      "phrase": "host",
+      "definition": "one who owes the duty of hospitality — the very category Cornwall and Regan are violating"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss50",
+      "line": 54,
+      "phrase": "buoy’d up",
+      "definition": "risen up to cover"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss51",
+      "line": 101,
+      "phrase": "flax and whites of eggs",
+      "definition": "folk remedy for eye-injury; Regan's contemptuous dismissal of treatment"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss52",
+      "line": 77,
+      "phrase": "jelly",
+      "definition": "the eye reduced to biological substrate — the line's shock"
+    },
+    {
+      "id": "king_lear_act3_scene7_gloss53",
+      "line": 93,
+      "phrase": "Untimely comes this hurt",
+      "definition": "Cornwall, wounded, recognises his injury"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act3_scene7_ann1",
+      "line_start": 70,
+      "line_end": 100,
+      "citation_display": "King Lear 3.7.70–100",
+      "category": "thematic",
+      "title": "'Out, vile jelly!' — the play's deliberate shock",
+      "body": "Cornwall's putting out of Gloucester's eyes, onstage, was shocking even by Jacobean standards. Earlier tragedies happen at a distance; here the violence is staged, with Gloucester bound, Cornwall's thumb described putting pressure on the eye. Nineteenth-century productions routinely cut or offstaged the blinding; Nahum Tate's 1681 adaptation simply omitted it. Shakespeare's deliberate choice to put the act in front of the audience is the play's moral argument made theatrical. Gloucester, who 'had eyes' metaphorically — who trusted what he could see and was therefore deceived by Edmund's forged letter — must literally lose them to perceive what his metaphorical sight missed. The 'Out, vile jelly!' line concentrates the play's horror into four words; 'jelly' reduces the eye to its biological substrate. Victorian audiences found this unbearable; modern audiences should not find it less so. The scene's purpose is to be unbearable.",
+      "sources": [
+        "Jonathan Bate, Soul of the Age (2008)",
+        "Stanley Wells, Shakespeare and Co. (2006)"
+      ]
+    },
+    {
+      "id": "king_lear_act3_scene7_ann2",
+      "line_start": 82,
+      "line_end": 90,
+      "citation_display": "King Lear 3.7.82–90",
+      "category": "thematic",
+      "title": "The servant who intervenes — a tiny act of moral resistance",
+      "body": "In the middle of Gloucester's blinding, an unnamed First Servant — a household retainer — draws his sword on Cornwall: 'Hold your hand, my lord. / I have serv'd you ever since I was a child, / But better service have I never done you / Than now to bid you hold.' He wounds Cornwall fatally (the injury will kill Cornwall offstage, reported in 4.2). Regan snatches a sword and kills the servant from behind. The moment is easy to miss because it happens inside the scene's larger atrocity, but it is structurally crucial: the play's only direct onstage resistance to the sisters' cruelty comes not from a nobleman but from a serving-man, anonymous, who pays for it with his life. Shakespeare gives him no name because the point is that moral resistance can come from anywhere — and that in this play it is always punished.",
+      "sources": [
+        "Terry Eagleton, William Shakespeare (1986)",
+        "Kiernan Ryan, Shakespeare (1989)"
+      ]
+    },
+    {
+      "id": "king_lear_act3_scene7_ann3",
+      "line_start": 100,
+      "line_end": 114,
+      "citation_display": "King Lear 3.7.100–114",
+      "category": "close_reading",
+      "title": "Gloucester's recognition — 'O my follies!'",
+      "body": "Blinded, Gloucester hears from Regan that 'it was he / That made the overture of thy treasons to us' — Edmund. The instant recognition: 'O my follies! then Edgar was abused. / Kind gods, forgive me that, and prosper him!' Gloucester achieves full understanding only after losing his eyes — the play's most ruthless formalization of its blindness-as-insight theme. Shakespeare makes the anagnorisis minimalist. Gloucester does not catalogue his errors; he names Edgar, asks forgiveness, hopes for his son's prospering. There is nothing left to do. The gods he invokes will not answer — 4.1's 'As flies to wanton boys' comes directly from this Gloucester, now fully disabused.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act3_scene7_q1",
+      "kind": "theme",
+      "prompt": "Why does Shakespeare stage Gloucester's blinding onstage rather than reporting it?",
+      "options": [
+        "Stage conventions required it",
+        "The play's argument requires the shock — Gloucester who 'had eyes' metaphorically must lose them literally to perceive what his metaphorical sight missed; the scene's unbearability is its moral point",
+        "Shakespeare wanted the play to be shorter",
+        "It was a mistake"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 70,
+      "anchor_line_end": 100
+    },
+    {
+      "id": "king_lear_act3_scene7_q2",
+      "kind": "structural",
+      "prompt": "What is the significance of the unnamed First Servant who wounds Cornwall?",
+      "options": [
+        "He is a minor comic figure",
+        "The play's only direct onstage resistance to the sisters' cruelty — and it comes from an anonymous serving-man who dies for it; Shakespeare making moral resistance class-mobile and immediately punished",
+        "He is actually Kent in disguise",
+        "He is Cornwall's son"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 82,
+      "anchor_line_end": 90
+    },
+    {
+      "id": "king_lear_act3_scene7_q3",
+      "kind": "close_reading",
+      "prompt": "What does Gloucester recognise immediately after being blinded?",
+      "options": [
+        "That Kent is alive",
+        "That Edmund has betrayed him and Edgar was innocent — 'O my follies! then Edgar was abused' — full moral sight arrives only after physical blindness",
+        "That Lear is safe",
+        "Nothing at first"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 100,
+      "anchor_line_end": 114
+    },
+    {
+      "id": "king_lear_act3_scene7_q4",
+      "kind": "historical",
+      "prompt": "What did Nahum Tate's 1681 adaptation of Lear do with the blinding scene?",
+      "options": [
+        "He expanded it",
+        "He omitted it entirely — along with the tragic ending; Tate's Lear (in which Cordelia lives and marries Edgar) was the standard performance text for 150 years",
+        "He moved it earlier in the play",
+        "He kept it unchanged"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 70,
+      "anchor_line_end": 100
+    }
+  ]
+}

@@ -1,0 +1,1985 @@
+{
+  "section_id": "richard_iii_act1_scene2",
+  "work_id": "richard-iii",
+  "sequence": 2,
+  "act": 1,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "The same. Another street",
+  "line_count": 274,
+  "word_count": 2091,
+  "est_read_minutes": 10,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "ANNE",
+      "text": "Set down, set down your honourable load,"
+    },
+    {
+      "number": 2,
+      "speaker": "ANNE",
+      "text": "If honour may be shrouded in a hearse,"
+    },
+    {
+      "number": 3,
+      "speaker": "ANNE",
+      "text": "Whilst I awhile obsequiously lament"
+    },
+    {
+      "number": 4,
+      "speaker": "ANNE",
+      "text": "The untimely fall of virtuous Lancaster."
+    },
+    {
+      "number": 5,
+      "speaker": "ANNE",
+      "text": "Poor key-cold figure of a holy king!"
+    },
+    {
+      "number": 6,
+      "speaker": "ANNE",
+      "text": "Pale ashes of the house of Lancaster!"
+    },
+    {
+      "number": 7,
+      "speaker": "ANNE",
+      "text": "Thou bloodless remnant of that royal blood!"
+    },
+    {
+      "number": 8,
+      "speaker": "ANNE",
+      "text": "Be it lawful that I invocate thy ghost,"
+    },
+    {
+      "number": 9,
+      "speaker": "ANNE",
+      "text": "To hear the lamentations of poor Anne,"
+    },
+    {
+      "number": 10,
+      "speaker": "ANNE",
+      "text": "Wife to thy Edward, to thy slaughter’d son,"
+    },
+    {
+      "number": 11,
+      "speaker": "ANNE",
+      "text": "Stabb’d by the selfsame hand that made these wounds!"
+    },
+    {
+      "number": 12,
+      "speaker": "ANNE",
+      "text": "Lo, in these windows that let forth thy life,"
+    },
+    {
+      "number": 13,
+      "speaker": "ANNE",
+      "text": "I pour the helpless balm of my poor eyes."
+    },
+    {
+      "number": 14,
+      "speaker": "ANNE",
+      "text": "Cursed be the hand that made these fatal holes!"
+    },
+    {
+      "number": 15,
+      "speaker": "ANNE",
+      "text": "Cursed be the heart that had the heart to do it!"
+    },
+    {
+      "number": 16,
+      "speaker": "ANNE",
+      "text": "Cursed the blood that let this blood from hence!"
+    },
+    {
+      "number": 17,
+      "speaker": "ANNE",
+      "text": "More direful hap betide that hated wretch,"
+    },
+    {
+      "number": 18,
+      "speaker": "ANNE",
+      "text": "That makes us wretched by the death of thee,"
+    },
+    {
+      "number": 19,
+      "speaker": "ANNE",
+      "text": "Than I can wish to adders, spiders, toads,"
+    },
+    {
+      "number": 20,
+      "speaker": "ANNE",
+      "text": "Or any creeping venom’d thing that lives!"
+    },
+    {
+      "number": 21,
+      "speaker": "ANNE",
+      "text": "If ever he have child, abortive be it,"
+    },
+    {
+      "number": 22,
+      "speaker": "ANNE",
+      "text": "Prodigious, and untimely brought to light,"
+    },
+    {
+      "number": 23,
+      "speaker": "ANNE",
+      "text": "Whose ugly and unnatural aspect"
+    },
+    {
+      "number": 24,
+      "speaker": "ANNE",
+      "text": "May fright the hopeful mother at the view;"
+    },
+    {
+      "number": 25,
+      "speaker": "ANNE",
+      "text": "And that be heir to his unhappiness!"
+    },
+    {
+      "number": 26,
+      "speaker": "ANNE",
+      "text": "If ever he have wife, let her be made"
+    },
+    {
+      "number": 27,
+      "speaker": "ANNE",
+      "text": "As miserable by the death of him"
+    },
+    {
+      "number": 28,
+      "speaker": "ANNE",
+      "text": "As I am made by my poor lord and thee!"
+    },
+    {
+      "number": 29,
+      "speaker": "ANNE",
+      "text": "Come, now towards Chertsey with your holy load,"
+    },
+    {
+      "number": 30,
+      "speaker": "ANNE",
+      "text": "Taken from Paul’s to be interred there;"
+    },
+    {
+      "number": 31,
+      "speaker": "ANNE",
+      "text": "And still, as you are weary of the weight,"
+    },
+    {
+      "number": 32,
+      "speaker": "ANNE",
+      "text": "Rest you, whiles I lament King Henry’s corse."
+    },
+    {
+      "number": 33,
+      "speaker": "GLOUCESTER",
+      "text": "Stay, you that bear the corse, and set it down."
+    },
+    {
+      "number": 34,
+      "speaker": "ANNE",
+      "text": "What black magician conjures up this fiend,"
+    },
+    {
+      "number": 35,
+      "speaker": "ANNE",
+      "text": "To stop devoted charitable deeds?"
+    },
+    {
+      "number": 36,
+      "speaker": "GLOUCESTER",
+      "text": "Villains, set down the corse; or, by Saint Paul,"
+    },
+    {
+      "number": 37,
+      "speaker": "GLOUCESTER",
+      "text": "I’ll make a corse of him that disobeys."
+    },
+    {
+      "number": 38,
+      "speaker": "GENTLEMAN",
+      "text": "My lord, stand back, and let the coffin pass."
+    },
+    {
+      "number": 39,
+      "speaker": "GLOUCESTER",
+      "text": "Unmanner’d dog! stand thou, when I command:"
+    },
+    {
+      "number": 40,
+      "speaker": "GLOUCESTER",
+      "text": "Advance thy halberd higher than my breast,"
+    },
+    {
+      "number": 41,
+      "speaker": "GLOUCESTER",
+      "text": "Or, by Saint Paul, I’ll strike thee to my foot,"
+    },
+    {
+      "number": 42,
+      "speaker": "GLOUCESTER",
+      "text": "And spurn upon thee, beggar, for thy boldness."
+    },
+    {
+      "number": 43,
+      "speaker": "ANNE",
+      "text": "What, do you tremble? are you all afraid?"
+    },
+    {
+      "number": 44,
+      "speaker": "ANNE",
+      "text": "Alas, I blame you not; for you are mortal,"
+    },
+    {
+      "number": 45,
+      "speaker": "ANNE",
+      "text": "And mortal eyes cannot endure the devil."
+    },
+    {
+      "number": 46,
+      "speaker": "ANNE",
+      "text": "Avaunt, thou dreadful minister of hell!"
+    },
+    {
+      "number": 47,
+      "speaker": "ANNE",
+      "text": "Thou hadst but power over his mortal body,"
+    },
+    {
+      "number": 48,
+      "speaker": "ANNE",
+      "text": "His soul thou canst not have; therefore, be gone."
+    },
+    {
+      "number": 49,
+      "speaker": "GLOUCESTER",
+      "text": "Sweet saint, for charity, be not so curst."
+    },
+    {
+      "number": 50,
+      "speaker": "ANNE",
+      "text": "Foul devil, for God’s sake, hence, and trouble us not;"
+    },
+    {
+      "number": 51,
+      "speaker": "ANNE",
+      "text": "For thou hast made the happy earth thy hell,"
+    },
+    {
+      "number": 52,
+      "speaker": "ANNE",
+      "text": "Fill’d it with cursing cries and deep exclaims."
+    },
+    {
+      "number": 53,
+      "speaker": "ANNE",
+      "text": "If thou delight to view thy heinous deeds,"
+    },
+    {
+      "number": 54,
+      "speaker": "ANNE",
+      "text": "Behold this pattern of thy butcheries."
+    },
+    {
+      "number": 55,
+      "speaker": "ANNE",
+      "text": "O, gentlemen, see, see! dead Henry’s wounds"
+    },
+    {
+      "number": 56,
+      "speaker": "ANNE",
+      "text": "Open their congeal’d mouths and bleed afresh!"
+    },
+    {
+      "number": 57,
+      "speaker": "ANNE",
+      "text": "Blush, blush, thou lump of foul deformity;"
+    },
+    {
+      "number": 58,
+      "speaker": "ANNE",
+      "text": "For ’tis thy presence that exhales this blood"
+    },
+    {
+      "number": 59,
+      "speaker": "ANNE",
+      "text": "From cold and empty veins, where no blood dwells;"
+    },
+    {
+      "number": 60,
+      "speaker": "ANNE",
+      "text": "Thy deed, inhuman and unnatural,"
+    },
+    {
+      "number": 61,
+      "speaker": "ANNE",
+      "text": "Provokes this deluge most unnatural."
+    },
+    {
+      "number": 62,
+      "speaker": "ANNE",
+      "text": "O God, which this blood madest, revenge his death!"
+    },
+    {
+      "number": 63,
+      "speaker": "ANNE",
+      "text": "O earth, which this blood drink’st revenge his death!"
+    },
+    {
+      "number": 64,
+      "speaker": "ANNE",
+      "text": "Either heaven with lightning strike the murderer dead,"
+    },
+    {
+      "number": 65,
+      "speaker": "ANNE",
+      "text": "Or earth, gape open wide and eat him quick,"
+    },
+    {
+      "number": 66,
+      "speaker": "ANNE",
+      "text": "As thou dost swallow up this good king’s blood,"
+    },
+    {
+      "number": 67,
+      "speaker": "ANNE",
+      "text": "Which his hell-govern’d arm hath butchered!"
+    },
+    {
+      "number": 68,
+      "speaker": "GLOUCESTER",
+      "text": "Lady, you know no rules of charity,"
+    },
+    {
+      "number": 69,
+      "speaker": "GLOUCESTER",
+      "text": "Which renders good for bad, blessings for curses."
+    },
+    {
+      "number": 70,
+      "speaker": "ANNE",
+      "text": "Villain, thou know’st no law of God nor man:"
+    },
+    {
+      "number": 71,
+      "speaker": "ANNE",
+      "text": "No beast so fierce but knows some touch of pity."
+    },
+    {
+      "number": 72,
+      "speaker": "GLOUCESTER",
+      "text": "But I know none, and therefore am no beast."
+    },
+    {
+      "number": 73,
+      "speaker": "ANNE",
+      "text": "O wonderful, when devils tell the truth!"
+    },
+    {
+      "number": 74,
+      "speaker": "GLOUCESTER",
+      "text": "More wonderful, when angels are so angry."
+    },
+    {
+      "number": 75,
+      "speaker": "GLOUCESTER",
+      "text": "Vouchsafe, divine perfection of a woman,"
+    },
+    {
+      "number": 76,
+      "speaker": "GLOUCESTER",
+      "text": "Of these supposed evils, to give me leave,"
+    },
+    {
+      "number": 77,
+      "speaker": "GLOUCESTER",
+      "text": "By circumstance, but to acquit myself."
+    },
+    {
+      "number": 77,
+      "speaker": "ANNE",
+      "text": "Vouchsafe, defused infection of a man,"
+    },
+    {
+      "number": 78,
+      "speaker": "ANNE",
+      "text": "For these known evils, but to give me leave,"
+    },
+    {
+      "number": 79,
+      "speaker": "ANNE",
+      "text": "By circumstance, to curse thy cursed self."
+    },
+    {
+      "number": 80,
+      "speaker": "GLOUCESTER",
+      "text": "Fairer than tongue can name thee, let me have"
+    },
+    {
+      "number": 81,
+      "speaker": "GLOUCESTER",
+      "text": "Some patient leisure to excuse myself."
+    },
+    {
+      "number": 82,
+      "speaker": "ANNE",
+      "text": "Fouler than heart can think thee, thou canst make"
+    },
+    {
+      "number": 83,
+      "speaker": "ANNE",
+      "text": "No excuse current, but to hang thyself."
+    },
+    {
+      "number": 84,
+      "speaker": "GLOUCESTER",
+      "text": "By such despair, I should accuse myself."
+    },
+    {
+      "number": 85,
+      "speaker": "ANNE",
+      "text": "And, by despairing, shouldst thou stand excused;"
+    },
+    {
+      "number": 86,
+      "speaker": "ANNE",
+      "text": "For doing worthy vengeance on thyself,"
+    },
+    {
+      "number": 87,
+      "speaker": "ANNE",
+      "text": "Which didst unworthy slaughter upon others."
+    },
+    {
+      "number": 87,
+      "speaker": "GLOUCESTER",
+      "text": "Say that I slew them not?"
+    },
+    {
+      "number": 88,
+      "speaker": "ANNE",
+      "text": "Why, then they are not dead:"
+    },
+    {
+      "number": 89,
+      "speaker": "ANNE",
+      "text": "But dead they are, and, devilish slave, by thee."
+    },
+    {
+      "number": 90,
+      "speaker": "GLOUCESTER",
+      "text": "I did not kill your husband."
+    },
+    {
+      "number": 90,
+      "speaker": "ANNE",
+      "text": "Why, then he is alive."
+    },
+    {
+      "number": 91,
+      "speaker": "GLOUCESTER",
+      "text": "Nay, he is dead; and slain by Edward’s hand."
+    },
+    {
+      "number": 92,
+      "speaker": "ANNE",
+      "text": "In thy foul throat thou liest: Queen Margaret saw"
+    },
+    {
+      "number": 93,
+      "speaker": "ANNE",
+      "text": "Thy murderous falchion smoking in his blood;"
+    },
+    {
+      "number": 94,
+      "speaker": "ANNE",
+      "text": "The which thou once didst bend against her breast,"
+    },
+    {
+      "number": 95,
+      "speaker": "ANNE",
+      "text": "But that thy brothers beat aside the point."
+    },
+    {
+      "number": 96,
+      "speaker": "GLOUCESTER",
+      "text": "I was provoked by her slanderous tongue,"
+    },
+    {
+      "number": 97,
+      "speaker": "GLOUCESTER",
+      "text": "Which laid their guilt upon my guiltless shoulders."
+    },
+    {
+      "number": 98,
+      "speaker": "ANNE",
+      "text": "Thou wast provoked by thy bloody mind,"
+    },
+    {
+      "number": 99,
+      "speaker": "ANNE",
+      "text": "Which never dreamt on aught but butcheries:"
+    },
+    {
+      "number": 100,
+      "speaker": "ANNE",
+      "text": "Didst thou not kill this king?"
+    },
+    {
+      "number": 100,
+      "speaker": "GLOUCESTER",
+      "text": "I grant ye."
+    },
+    {
+      "number": 101,
+      "speaker": "ANNE",
+      "text": "Dost grant me, hedgehog? then, God grant me too"
+    },
+    {
+      "number": 102,
+      "speaker": "ANNE",
+      "text": "Thou mayst be damned for that wicked deed!"
+    },
+    {
+      "number": 103,
+      "speaker": "ANNE",
+      "text": "O, he was gentle, mild, and virtuous!"
+    },
+    {
+      "number": 104,
+      "speaker": "GLOUCESTER",
+      "text": "The fitter for the King of heaven, that hath him."
+    },
+    {
+      "number": 105,
+      "speaker": "ANNE",
+      "text": "He is in heaven, where thou shalt never come."
+    },
+    {
+      "number": 106,
+      "speaker": "GLOUCESTER",
+      "text": "Let him thank me, that holp to send him thither;"
+    },
+    {
+      "number": 107,
+      "speaker": "GLOUCESTER",
+      "text": "For he was fitter for that place than earth."
+    },
+    {
+      "number": 108,
+      "speaker": "ANNE",
+      "text": "And thou unfit for any place but hell."
+    },
+    {
+      "number": 109,
+      "speaker": "GLOUCESTER",
+      "text": "Yes, one place else, if you will hear me name it."
+    },
+    {
+      "number": 110,
+      "speaker": "ANNE",
+      "text": "Some dungeon."
+    },
+    {
+      "number": 110,
+      "speaker": "GLOUCESTER",
+      "text": "Your bed-chamber."
+    },
+    {
+      "number": 111,
+      "speaker": "ANNE",
+      "text": "Ill rest betide the chamber where thou liest!"
+    },
+    {
+      "number": 112,
+      "speaker": "GLOUCESTER",
+      "text": "So will it, madam till I lie with you."
+    },
+    {
+      "number": 113,
+      "speaker": "ANNE",
+      "text": "I hope so."
+    },
+    {
+      "number": 114,
+      "speaker": "GLOUCESTER",
+      "text": "I know so. But, gentle Lady Anne,"
+    },
+    {
+      "number": 115,
+      "speaker": "GLOUCESTER",
+      "text": "To leave this keen encounter of our wits,"
+    },
+    {
+      "number": 116,
+      "speaker": "GLOUCESTER",
+      "text": "And fall somewhat into a slower method,"
+    },
+    {
+      "number": 117,
+      "speaker": "GLOUCESTER",
+      "text": "Is not the causer of the timeless deaths"
+    },
+    {
+      "number": 118,
+      "speaker": "GLOUCESTER",
+      "text": "Of these Plantagenets, Henry and Edward,"
+    },
+    {
+      "number": 119,
+      "speaker": "GLOUCESTER",
+      "text": "As blameful as the executioner?"
+    },
+    {
+      "number": 120,
+      "speaker": "ANNE",
+      "text": "Thou art the cause, and most accursed effect."
+    },
+    {
+      "number": 121,
+      "speaker": "GLOUCESTER",
+      "text": "Your beauty was the cause of that effect;"
+    },
+    {
+      "number": 122,
+      "speaker": "GLOUCESTER",
+      "text": "Your beauty, which did haunt me in my sleep"
+    },
+    {
+      "number": 123,
+      "speaker": "GLOUCESTER",
+      "text": "To undertake the death of all the world,"
+    },
+    {
+      "number": 124,
+      "speaker": "GLOUCESTER",
+      "text": "So I might live one hour in your sweet bosom."
+    },
+    {
+      "number": 125,
+      "speaker": "ANNE",
+      "text": "If I thought that, I tell thee, homicide,"
+    },
+    {
+      "number": 126,
+      "speaker": "ANNE",
+      "text": "These nails should rend that beauty from my cheeks."
+    },
+    {
+      "number": 127,
+      "speaker": "GLOUCESTER",
+      "text": "These eyes could never endure sweet beauty’s wreck;"
+    },
+    {
+      "number": 128,
+      "speaker": "GLOUCESTER",
+      "text": "You should not blemish it, if I stood by:"
+    },
+    {
+      "number": 129,
+      "speaker": "GLOUCESTER",
+      "text": "As all the world is cheered by the sun,"
+    },
+    {
+      "number": 130,
+      "speaker": "GLOUCESTER",
+      "text": "So I by that; it is my day, my life."
+    },
+    {
+      "number": 131,
+      "speaker": "ANNE",
+      "text": "Black night o’ershade thy day, and death thy life!"
+    },
+    {
+      "number": 132,
+      "speaker": "GLOUCESTER",
+      "text": "Curse not thyself, fair creature; thou art both."
+    },
+    {
+      "number": 133,
+      "speaker": "ANNE",
+      "text": "I would I were, to be revenged on thee."
+    },
+    {
+      "number": 134,
+      "speaker": "GLOUCESTER",
+      "text": "It is a quarrel most unnatural,"
+    },
+    {
+      "number": 135,
+      "speaker": "GLOUCESTER",
+      "text": "To be revenged on him that loveth you."
+    },
+    {
+      "number": 136,
+      "speaker": "ANNE",
+      "text": "It is a quarrel just and reasonable,"
+    },
+    {
+      "number": 137,
+      "speaker": "ANNE",
+      "text": "To be revenged on him that slew my husband."
+    },
+    {
+      "number": 138,
+      "speaker": "GLOUCESTER",
+      "text": "He that bereft thee, lady, of thy husband,"
+    },
+    {
+      "number": 139,
+      "speaker": "GLOUCESTER",
+      "text": "Did it to help thee to a better husband."
+    },
+    {
+      "number": 140,
+      "speaker": "ANNE",
+      "text": "His better doth not breathe upon the earth."
+    },
+    {
+      "number": 141,
+      "speaker": "GLOUCESTER",
+      "text": "He lives that loves thee better than he could."
+    },
+    {
+      "number": 142,
+      "speaker": "ANNE",
+      "text": "Name him."
+    },
+    {
+      "number": 142,
+      "speaker": "GLOUCESTER",
+      "text": "Plantagenet."
+    },
+    {
+      "number": 143,
+      "speaker": "ANNE",
+      "text": "Why, that was he."
+    },
+    {
+      "number": 144,
+      "speaker": "GLOUCESTER",
+      "text": "The selfsame name, but one of better nature."
+    },
+    {
+      "number": 145,
+      "speaker": "ANNE",
+      "text": "Where is he?"
+    },
+    {
+      "number": 146,
+      "speaker": "GLOUCESTER",
+      "text": "Here. She spitteth at him. Why dost thou spit at me?"
+    },
+    {
+      "number": 147,
+      "speaker": "ANNE",
+      "text": "Would it were mortal poison, for thy sake!"
+    },
+    {
+      "number": 148,
+      "speaker": "GLOUCESTER",
+      "text": "Never came poison from so sweet a place."
+    },
+    {
+      "number": 149,
+      "speaker": "ANNE",
+      "text": "Never hung poison on a fouler toad."
+    },
+    {
+      "number": 150,
+      "speaker": "ANNE",
+      "text": "Out of my sight! thou dost infect my eyes."
+    },
+    {
+      "number": 151,
+      "speaker": "GLOUCESTER",
+      "text": "Thine eyes, sweet lady, have infected mine."
+    },
+    {
+      "number": 152,
+      "speaker": "ANNE",
+      "text": "Would they were basilisks, to strike thee dead!"
+    },
+    {
+      "number": 153,
+      "speaker": "GLOUCESTER",
+      "text": "I would they were, that I might die at once;"
+    },
+    {
+      "number": 154,
+      "speaker": "GLOUCESTER",
+      "text": "For now they kill me with a living death."
+    },
+    {
+      "number": 155,
+      "speaker": "GLOUCESTER",
+      "text": "Those eyes of thine from mine have drawn salt tears,"
+    },
+    {
+      "number": 156,
+      "speaker": "GLOUCESTER",
+      "text": "Shamed their aspect with store of childish drops:"
+    },
+    {
+      "number": 157,
+      "speaker": "GLOUCESTER",
+      "text": "These eyes, which never shed remorseful tear,"
+    },
+    {
+      "number": 158,
+      "speaker": "GLOUCESTER",
+      "text": "No, when my father York and Edward wept,"
+    },
+    {
+      "number": 159,
+      "speaker": "GLOUCESTER",
+      "text": "To hear the piteous moan that Rutland made"
+    },
+    {
+      "number": 160,
+      "speaker": "GLOUCESTER",
+      "text": "When black-faced Clifford shook his sword at him;"
+    },
+    {
+      "number": 161,
+      "speaker": "GLOUCESTER",
+      "text": "Nor when thy warlike father, like a child,"
+    },
+    {
+      "number": 162,
+      "speaker": "GLOUCESTER",
+      "text": "Told the sad story of my father’s death,"
+    },
+    {
+      "number": 163,
+      "speaker": "GLOUCESTER",
+      "text": "And twenty times made pause to sob and weep,"
+    },
+    {
+      "number": 164,
+      "speaker": "GLOUCESTER",
+      "text": "That all the standers-by had wet their cheeks,"
+    },
+    {
+      "number": 165,
+      "speaker": "GLOUCESTER",
+      "text": "Like trees bedash’d with rain: in that sad time"
+    },
+    {
+      "number": 166,
+      "speaker": "GLOUCESTER",
+      "text": "My manly eyes did scorn an humble tear;"
+    },
+    {
+      "number": 167,
+      "speaker": "GLOUCESTER",
+      "text": "And what these sorrows could not thence exhale,"
+    },
+    {
+      "number": 168,
+      "speaker": "GLOUCESTER",
+      "text": "Thy beauty hath, and made them blind with weeping."
+    },
+    {
+      "number": 169,
+      "speaker": "GLOUCESTER",
+      "text": "I never sued to friend nor enemy;"
+    },
+    {
+      "number": 170,
+      "speaker": "GLOUCESTER",
+      "text": "My tongue could never learn sweet smoothing words;"
+    },
+    {
+      "number": 171,
+      "speaker": "GLOUCESTER",
+      "text": "But, now thy beauty is proposed my fee,"
+    },
+    {
+      "number": 172,
+      "speaker": "GLOUCESTER",
+      "text": "My proud heart sues, and prompts my tongue to speak. She looks scornfully at him."
+    },
+    {
+      "number": 173,
+      "speaker": "GLOUCESTER",
+      "text": "Teach not thy lips such scorn, for they were made"
+    },
+    {
+      "number": 174,
+      "speaker": "GLOUCESTER",
+      "text": "For kissing, lady, not for such contempt."
+    },
+    {
+      "number": 175,
+      "speaker": "GLOUCESTER",
+      "text": "If thy revengeful heart cannot forgive,"
+    },
+    {
+      "number": 176,
+      "speaker": "GLOUCESTER",
+      "text": "Lo, here I lend thee this sharp-pointed sword;"
+    },
+    {
+      "number": 177,
+      "speaker": "GLOUCESTER",
+      "text": "Which if thou please to hide in this true bosom,"
+    },
+    {
+      "number": 178,
+      "speaker": "GLOUCESTER",
+      "text": "And let the soul forth that adoreth thee,"
+    },
+    {
+      "number": 179,
+      "speaker": "GLOUCESTER",
+      "text": "I lay it naked to the deadly stroke,"
+    },
+    {
+      "number": 180,
+      "speaker": "GLOUCESTER",
+      "text": "And humbly beg the death upon my knee. He lays his breast open: she offers at it with his sword."
+    },
+    {
+      "number": 181,
+      "speaker": "GLOUCESTER",
+      "text": "Nay, do not pause; for I did kill King Henry,"
+    },
+    {
+      "number": 182,
+      "speaker": "GLOUCESTER",
+      "text": "But ’twas thy beauty that provoked me."
+    },
+    {
+      "number": 183,
+      "speaker": "GLOUCESTER",
+      "text": "Nay, now dispatch; ’twas I that stabb’d young Edward,"
+    },
+    {
+      "number": 184,
+      "speaker": "GLOUCESTER",
+      "text": "But ’twas thy heavenly face that set me on. Here she lets fall the sword."
+    },
+    {
+      "number": 185,
+      "speaker": "GLOUCESTER",
+      "text": "Take up the sword again, or take up me."
+    },
+    {
+      "number": 186,
+      "speaker": "ANNE",
+      "text": "Arise, dissembler: though I wish thy death,"
+    },
+    {
+      "number": 187,
+      "speaker": "ANNE",
+      "text": "I will not be the executioner."
+    },
+    {
+      "number": 188,
+      "speaker": "GLOUCESTER",
+      "text": "Then bid me kill myself, and I will do it."
+    },
+    {
+      "number": 189,
+      "speaker": "ANNE",
+      "text": "I have already."
+    },
+    {
+      "number": 189,
+      "speaker": "GLOUCESTER",
+      "text": "Tush, that was in thy rage:"
+    },
+    {
+      "number": 190,
+      "speaker": "GLOUCESTER",
+      "text": "Speak it again, and, even with the word,"
+    },
+    {
+      "number": 191,
+      "speaker": "GLOUCESTER",
+      "text": "That hand, which, for thy love, did kill thy love,"
+    },
+    {
+      "number": 192,
+      "speaker": "GLOUCESTER",
+      "text": "Shall, for thy love, kill a far truer love;"
+    },
+    {
+      "number": 193,
+      "speaker": "GLOUCESTER",
+      "text": "To both their deaths thou shalt be accessary."
+    },
+    {
+      "number": 194,
+      "speaker": "ANNE",
+      "text": "I would I knew thy heart."
+    },
+    {
+      "number": 194,
+      "speaker": "GLOUCESTER",
+      "text": "’Tis figured in my tongue."
+    },
+    {
+      "number": 195,
+      "speaker": "ANNE",
+      "text": "I fear me both are false."
+    },
+    {
+      "number": 195,
+      "speaker": "GLOUCESTER",
+      "text": "Then never man was true."
+    },
+    {
+      "number": 196,
+      "speaker": "ANNE",
+      "text": "Well, well, put up your sword."
+    },
+    {
+      "number": 196,
+      "speaker": "GLOUCESTER",
+      "text": "Say, then, my peace is made."
+    },
+    {
+      "number": 197,
+      "speaker": "ANNE",
+      "text": "That shall you know hereafter."
+    },
+    {
+      "number": 197,
+      "speaker": "GLOUCESTER",
+      "text": "But shall I live in hope?"
+    },
+    {
+      "number": 198,
+      "speaker": "ANNE",
+      "text": "All men, I hope, live so."
+    },
+    {
+      "number": 198,
+      "speaker": "GLOUCESTER",
+      "text": "Vouchsafe to wear this ring."
+    },
+    {
+      "number": 199,
+      "speaker": "ANNE",
+      "text": "To take is not to give."
+    },
+    {
+      "number": 200,
+      "speaker": "GLOUCESTER",
+      "text": "Look, how this ring encompasseth thy finger,"
+    },
+    {
+      "number": 201,
+      "speaker": "GLOUCESTER",
+      "text": "Even so thy breast encloseth my poor heart;"
+    },
+    {
+      "number": 202,
+      "speaker": "GLOUCESTER",
+      "text": "Wear both of them, for both of them are thine."
+    },
+    {
+      "number": 203,
+      "speaker": "GLOUCESTER",
+      "text": "And if thy poor devoted suppliant may"
+    },
+    {
+      "number": 204,
+      "speaker": "GLOUCESTER",
+      "text": "But beg one favour at thy gracious hand,"
+    },
+    {
+      "number": 205,
+      "speaker": "GLOUCESTER",
+      "text": "Thou dost confirm his happiness for ever."
+    },
+    {
+      "number": 206,
+      "speaker": "ANNE",
+      "text": "What is it?"
+    },
+    {
+      "number": 207,
+      "speaker": "GLOUCESTER",
+      "text": "That it would please thee leave these sad designs"
+    },
+    {
+      "number": 208,
+      "speaker": "GLOUCESTER",
+      "text": "To him that hath more cause to be a mourner,"
+    },
+    {
+      "number": 209,
+      "speaker": "GLOUCESTER",
+      "text": "And presently repair to Crosby Place;"
+    },
+    {
+      "number": 210,
+      "speaker": "GLOUCESTER",
+      "text": "Where, after I have solemnly interr’d"
+    },
+    {
+      "number": 211,
+      "speaker": "GLOUCESTER",
+      "text": "At Chertsey monastery this noble king,"
+    },
+    {
+      "number": 212,
+      "speaker": "GLOUCESTER",
+      "text": "And wet his grave with my repentant tears,"
+    },
+    {
+      "number": 213,
+      "speaker": "GLOUCESTER",
+      "text": "I will with all expedient duty see you:"
+    },
+    {
+      "number": 214,
+      "speaker": "GLOUCESTER",
+      "text": "For divers unknown reasons, I beseech you,"
+    },
+    {
+      "number": 215,
+      "speaker": "GLOUCESTER",
+      "text": "Grant me this boon."
+    },
+    {
+      "number": 216,
+      "speaker": "ANNE",
+      "text": "With all my heart; and much it joys me too,"
+    },
+    {
+      "number": 217,
+      "speaker": "ANNE",
+      "text": "To see you are become so penitent."
+    },
+    {
+      "number": 218,
+      "speaker": "ANNE",
+      "text": "Tressel and Berkeley, go along with me."
+    },
+    {
+      "number": 219,
+      "speaker": "GLOUCESTER",
+      "text": "Bid me farewell."
+    },
+    {
+      "number": 219,
+      "speaker": "ANNE",
+      "text": "’Tis more than you deserve;"
+    },
+    {
+      "number": 220,
+      "speaker": "ANNE",
+      "text": "But since you teach me how to flatter you,"
+    },
+    {
+      "number": 221,
+      "speaker": "ANNE",
+      "text": "Imagine I have said farewell already."
+    },
+    {
+      "number": 221,
+      "speaker": "GLOUCESTER",
+      "text": "Sirs, take up the corse."
+    },
+    {
+      "number": 222,
+      "speaker": "GENTLEMAN",
+      "text": "Towards Chertsey, noble lord?"
+    },
+    {
+      "number": 223,
+      "speaker": "GLOUCESTER",
+      "text": "No, to White-Friars; there attend my coming."
+    },
+    {
+      "number": 224,
+      "speaker": "GLOUCESTER",
+      "text": "Was ever woman in this humour woo’d?"
+    },
+    {
+      "number": 225,
+      "speaker": "GLOUCESTER",
+      "text": "Was ever woman in this humour won?"
+    },
+    {
+      "number": 226,
+      "speaker": "GLOUCESTER",
+      "text": "I’ll have her; but I will not keep her long."
+    },
+    {
+      "number": 227,
+      "speaker": "GLOUCESTER",
+      "text": "What! I, that kill’d her husband and his father,"
+    },
+    {
+      "number": 228,
+      "speaker": "GLOUCESTER",
+      "text": "To take her in her heart’s extremest hate,"
+    },
+    {
+      "number": 229,
+      "speaker": "GLOUCESTER",
+      "text": "With curses in her mouth, tears in her eyes,"
+    },
+    {
+      "number": 230,
+      "speaker": "GLOUCESTER",
+      "text": "The bleeding witness of her hatred by;"
+    },
+    {
+      "number": 231,
+      "speaker": "GLOUCESTER",
+      "text": "Having God, her conscience, and these bars against me,"
+    },
+    {
+      "number": 232,
+      "speaker": "GLOUCESTER",
+      "text": "And I nothing to back my suit at all,"
+    },
+    {
+      "number": 233,
+      "speaker": "GLOUCESTER",
+      "text": "But the plain devil and dissembling looks,"
+    },
+    {
+      "number": 234,
+      "speaker": "GLOUCESTER",
+      "text": "And yet to win her, all the world to nothing!"
+    },
+    {
+      "number": 235,
+      "speaker": "GLOUCESTER",
+      "text": "Ha!"
+    },
+    {
+      "number": 236,
+      "speaker": "GLOUCESTER",
+      "text": "Hath she forgot already that brave prince,"
+    },
+    {
+      "number": 237,
+      "speaker": "GLOUCESTER",
+      "text": "Edward, her lord, whom I, some three months since,"
+    },
+    {
+      "number": 238,
+      "speaker": "GLOUCESTER",
+      "text": "Stabb’d in my angry mood at Tewksbury?"
+    },
+    {
+      "number": 239,
+      "speaker": "GLOUCESTER",
+      "text": "A sweeter and a lovelier gentleman,"
+    },
+    {
+      "number": 240,
+      "speaker": "GLOUCESTER",
+      "text": "Framed in the prodigality of nature,"
+    },
+    {
+      "number": 241,
+      "speaker": "GLOUCESTER",
+      "text": "Young, valiant, wise, and, no doubt, right royal,"
+    },
+    {
+      "number": 242,
+      "speaker": "GLOUCESTER",
+      "text": "The spacious world cannot again afford:"
+    },
+    {
+      "number": 243,
+      "speaker": "GLOUCESTER",
+      "text": "And will she yet debase her eyes on me,"
+    },
+    {
+      "number": 244,
+      "speaker": "GLOUCESTER",
+      "text": "That cropp’d the golden prime of this sweet prince,"
+    },
+    {
+      "number": 245,
+      "speaker": "GLOUCESTER",
+      "text": "And made her widow to a woeful bed?"
+    },
+    {
+      "number": 246,
+      "speaker": "GLOUCESTER",
+      "text": "On me, whose all not equals Edward’s moiety?"
+    },
+    {
+      "number": 247,
+      "speaker": "GLOUCESTER",
+      "text": "On me, that halt and am unshapen thus?"
+    },
+    {
+      "number": 248,
+      "speaker": "GLOUCESTER",
+      "text": "My dukedom to a beggarly denier,"
+    },
+    {
+      "number": 249,
+      "speaker": "GLOUCESTER",
+      "text": "I do mistake my person all this while:"
+    },
+    {
+      "number": 250,
+      "speaker": "GLOUCESTER",
+      "text": "Upon my life, she finds, although I cannot,"
+    },
+    {
+      "number": 251,
+      "speaker": "GLOUCESTER",
+      "text": "Myself to be a marvellous proper man."
+    },
+    {
+      "number": 252,
+      "speaker": "GLOUCESTER",
+      "text": "I’ll be at charges for a looking-glass,"
+    },
+    {
+      "number": 253,
+      "speaker": "GLOUCESTER",
+      "text": "And entertain some score or two of tailors,"
+    },
+    {
+      "number": 254,
+      "speaker": "GLOUCESTER",
+      "text": "To study fashions to adorn my body:"
+    },
+    {
+      "number": 255,
+      "speaker": "GLOUCESTER",
+      "text": "Since I am crept in favour with myself,"
+    },
+    {
+      "number": 256,
+      "speaker": "GLOUCESTER",
+      "text": "I will maintain it with some little cost."
+    },
+    {
+      "number": 257,
+      "speaker": "GLOUCESTER",
+      "text": "But first I’ll turn yon fellow in his grave;"
+    },
+    {
+      "number": 258,
+      "speaker": "GLOUCESTER",
+      "text": "And then return lamenting to my love."
+    },
+    {
+      "number": 259,
+      "speaker": "GLOUCESTER",
+      "text": "Shine out, fair sun, till I have bought a glass,"
+    },
+    {
+      "number": 260,
+      "speaker": "GLOUCESTER",
+      "text": "That I may see my shadow as I pass."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter the corpse of King Henry the Sixth, Gentlemen with halberds to guard it; Lady Anne being the mourner."
+    },
+    {
+      "after_line": 32,
+      "text": "Enter Gloucester."
+    },
+    {
+      "after_line": 221,
+      "text": "Exeunt Lady Anne, Tressel, and Berkeley."
+    },
+    {
+      "after_line": 223,
+      "text": "Exeunt all but Gloucester."
+    },
+    {
+      "after_line": 260,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act1_scene2_gloss1",
+      "line": 2,
+      "phrase": "hearse",
+      "definition": "a framework for a coffin; here, the funeral bier"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss2",
+      "line": 3,
+      "phrase": "obsequiously",
+      "definition": "in a manner befitting obsequies (funeral rites) — solemnly, not the modern sense of fawning"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss3",
+      "line": 4,
+      "phrase": "virtuous Lancaster",
+      "definition": "Henry VI, head of the Lancastrian royal house; Anne calls him 'virtuous' against Yorkist propaganda"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss4",
+      "line": 5,
+      "phrase": "key-cold",
+      "definition": "cold as metal keys — proverbial for the chill of a corpse"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss5",
+      "line": 6,
+      "phrase": "Pale ashes",
+      "definition": "pale remains; the dead body addressed as the ash of a burnt-out fire"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss6",
+      "line": 8,
+      "phrase": "invocate thy ghost",
+      "definition": "call upon thy spirit — a formal necromantic address"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss7",
+      "line": 10,
+      "phrase": "thy slaughter’d son",
+      "definition": "Henry VI's son Edward of Lancaster, Anne's first husband — killed by Richard at Tewkesbury"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss8",
+      "line": 12,
+      "phrase": "windows that let forth thy life",
+      "definition": "the wounds through which his life departed"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss9",
+      "line": 13,
+      "phrase": "helpless balm",
+      "definition": "tears that cannot heal"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss10",
+      "line": 17,
+      "phrase": "direful hap betide",
+      "definition": "may a dreadful fate fall upon"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss11",
+      "line": 19,
+      "phrase": "adders, spiders, toads",
+      "definition": "conventional poisonous/cursed creatures of Elizabethan imprecation"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss12",
+      "line": 21,
+      "phrase": "abortive",
+      "definition": "deformed at birth; monstrously misshapen"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss13",
+      "line": 22,
+      "phrase": "Prodigious",
+      "definition": "portentously monstrous — a prodigy of nature, in the old sense of ominous freak"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss14",
+      "line": 29,
+      "phrase": "Chertsey",
+      "definition": "Chertsey Abbey, west of London — historical burial site of Henry VI"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss15",
+      "line": 30,
+      "phrase": "Paul’s",
+      "definition": "St Paul's Cathedral; the funeral procession has passed through"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss16",
+      "line": 32,
+      "phrase": "corse",
+      "definition": "corpse"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss17",
+      "line": 34,
+      "phrase": "black magician",
+      "definition": "dark sorcerer — Anne's first sight of Richard casts him as a conjurer"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss18",
+      "line": 40,
+      "phrase": "halberd",
+      "definition": "a long-handled axe-and-spear, carried by guards"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss19",
+      "line": 46,
+      "phrase": "Avaunt",
+      "definition": "begone; away (archaic command to depart)"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss20",
+      "line": 46,
+      "phrase": "dreadful minister of hell",
+      "definition": "awful agent of hell — minister = servant"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss21",
+      "line": 52,
+      "phrase": "deep exclaims",
+      "definition": "loud lamentations"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss22",
+      "line": 56,
+      "phrase": "Open their congeal’d mouths and bleed afresh",
+      "definition": "the folk belief that a corpse's wounds bleed again in the murderer's presence — cruentation, admitted as legal evidence in some Elizabethan trials"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss23",
+      "line": 58,
+      "phrase": "exhales",
+      "definition": "draws out; calls forth (from cold veins)"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss24",
+      "line": 65,
+      "phrase": "quick",
+      "definition": "alive (as in 'the quick and the dead')"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss25",
+      "line": 67,
+      "phrase": "hell-govern’d arm",
+      "definition": "arm ruled by hell — Anne's accusation that Richard's body is Satan's instrument"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss26",
+      "line": 70,
+      "phrase": "law of God nor man",
+      "definition": "neither divine nor human law"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss27",
+      "line": 75,
+      "phrase": "Vouchsafe",
+      "definition": "deign, condescend to grant"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss28",
+      "line": 77,
+      "phrase": "defused infection",
+      "definition": "shapeless contagion — 'defused' = disordered; the word twists Gloucester's 'divine perfection'"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss29",
+      "line": 83,
+      "phrase": "hang thyself",
+      "definition": "Anne's bitter sentence: the only valid excuse is suicide"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss30",
+      "line": 84,
+      "phrase": "despair",
+      "definition": "in Christian theology, the sin against the Holy Spirit that precludes repentance — a loaded word here and throughout the play, esp. 5.3"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss31",
+      "line": 93,
+      "phrase": "falchion",
+      "definition": "a curved broadsword"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss32",
+      "line": 101,
+      "phrase": "hedgehog",
+      "definition": "prickly, hostile creature — Anne's epithet for Richard, whose heraldic badge was the white boar (similarly bristled)"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss33",
+      "line": 106,
+      "phrase": "holp",
+      "definition": "helped (archaic past tense of 'help')"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss34",
+      "line": 115,
+      "phrase": "keen encounter of our wits",
+      "definition": "sharp verbal fencing — Richard explicitly names the scene's mode of stichomythic dueling"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss35",
+      "line": 117,
+      "phrase": "timeless deaths",
+      "definition": "untimely deaths — deaths outside their proper time"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss36",
+      "line": 118,
+      "phrase": "Plantagenets",
+      "definition": "the royal house of Plantagenet — Henry VI and his son Edward both bore the name"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss37",
+      "line": 139,
+      "phrase": "better husband",
+      "definition": "Gloucester's cynical self-offer as replacement husband"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss38",
+      "line": 142,
+      "phrase": "Plantagenet",
+      "definition": "Gloucester names himself by the dynastic family name rather than a personal one — claiming royal continuity"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss39",
+      "line": 146,
+      "phrase": "spitteth at him",
+      "definition": "stage direction — Anne's physical refusal"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss40",
+      "line": 152,
+      "phrase": "basilisks",
+      "definition": "legendary serpents whose gaze killed; Anne wishes her eyes were weapons"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss41",
+      "line": 154,
+      "phrase": "living death",
+      "definition": "the paradox of being dead in life — a lover's commonplace Richard weaponizes"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss42",
+      "line": 160,
+      "phrase": "black-faced Clifford",
+      "definition": "the Lancastrian lord who killed young Rutland (York's youngest son) at Wakefield — 'black-faced' for his brutality; referenced by name in 3 Henry VI"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss43",
+      "line": 165,
+      "phrase": "bedash’d with rain",
+      "definition": "spattered with rain — Gloucester's image of weeping trees"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss44",
+      "line": 170,
+      "phrase": "sweet smoothing words",
+      "definition": "flattering, conciliatory speech"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss45",
+      "line": 176,
+      "phrase": "sharp-pointed sword",
+      "definition": "Richard's offered weapon — the scene's bravura stage image: he kneels, bares his chest"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss46",
+      "line": 180,
+      "phrase": "lays his breast open",
+      "definition": "stage direction — the theatrical peak; Anne holds Richard's sword at his exposed chest"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss47",
+      "line": 184,
+      "phrase": "heavenly face that set me on",
+      "definition": "Richard claims her beauty drove him to murder her husband — the impossible seduction's rhetorical peak"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss48",
+      "line": 186,
+      "phrase": "dissembler",
+      "definition": "deceiver, hypocrite — Anne calls him by what he is even as she yields"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss49",
+      "line": 198,
+      "phrase": "Vouchsafe to wear this ring",
+      "definition": "deign to wear this ring — Richard's formal suit-token"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss50",
+      "line": 209,
+      "phrase": "Crosby Place",
+      "definition": "Richard's London residence in Bishopsgate — a real building, parts of which survived into the 20th century"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss51",
+      "line": 211,
+      "phrase": "Chertsey monastery",
+      "definition": "the same Chertsey Abbey named earlier; Richard promises to complete the interment"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss52",
+      "line": 224,
+      "phrase": "Was ever woman in this humour woo’d",
+      "definition": "was ever woman courted in these conditions — Richard's self-astonished theatrical punctuation of the scene; a soliloquy set-piece"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss53",
+      "line": 238,
+      "phrase": "Tewksbury",
+      "definition": "the 1471 battle where Prince Edward of Lancaster was killed, consolidating Yorkist power"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss54",
+      "line": 240,
+      "phrase": "prodigality of nature",
+      "definition": "nature's extravagant generosity — Prince Edward was lavishly endowed"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss55",
+      "line": 244,
+      "phrase": "cropp’d the golden prime",
+      "definition": "cut short the golden youth — the mowing-down of young life"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss56",
+      "line": 246,
+      "phrase": "Edward’s moiety",
+      "definition": "half of Edward's worth — Richard asks how she could accept a fraction of her first husband"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss57",
+      "line": 247,
+      "phrase": "halt and am unshapen",
+      "definition": "limp and am deformed — Richard returns to his signature self-description"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss58",
+      "line": 248,
+      "phrase": "dukedom to a beggarly denier",
+      "definition": "I'll bet my dukedom against a farthing (denier = the least French coin)"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss59",
+      "line": 251,
+      "phrase": "marvellous proper man",
+      "definition": "a marvelously handsome man — Richard's sarcastic self-estimate"
+    },
+    {
+      "id": "richard_iii_act1_scene2_gloss60",
+      "line": 259,
+      "phrase": "Shine out, fair sun",
+      "definition": "a sardonic closing apostrophe; Richard addresses the sun (echoing 'sun of York') as he goes to buy a mirror"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act1_scene2_ann1",
+      "line_start": 1,
+      "line_end": 67,
+      "citation_display": "Richard III 1.2.1–67",
+      "category": "structural",
+      "title": "The premise as bravura",
+      "body": "Harold Bloom called this \"the greatest scene in Shakespeare between two people,\" and the claim rests on a simple observation: the premise is impossible. Anne enters with the corpse of her father-in-law Henry VI, whom Richard helped kill; her husband Edward, whom Richard also killed, is freshly dead. Richard interrupts her procession, openly admits both murders, offers her his sword against his bare chest, and leaves the scene engaged to her. No naturalistic logic supports the scene; Shakespeare makes it work anyway, through sheer rhetorical velocity. The wooing compresses what in most seductions would take acts or lifetimes into one uninterrupted span of stichomythia (line-for-line exchange) and bravura self-offering. It is the play's first demonstration that Richard's power is linguistic before it is political. What can be said in English he can make happen.",
+      "sources": [
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)",
+        "Nicholas Brooke, Shakespeare's Early Tragedies (1968)"
+      ]
+    },
+    {
+      "id": "richard_iii_act1_scene2_ann2",
+      "line_start": 73,
+      "line_end": 129,
+      "citation_display": "Richard III 1.2.73–129",
+      "category": "linguistic",
+      "title": "Stichomythia and the duel of wits",
+      "body": "The central exchange between Richard and Anne is a virtuoso deployment of stichomythia — the classical-dramatic convention of alternating single-line retorts, inherited from Seneca. Each speaker seizes the opponent's diction and inverts it: \"Vouchsafe, divine perfection of a woman\" becomes \"Vouchsafe, defused infection of a man\"; \"More wonderful, when angels are so angry\" answers \"O wonderful, when devils tell the truth.\" This is not decorative. In a play whose hero is defined by his mastery of language, stichomythia is the duel's genre, and the scene's dramatic stakes are whether Anne can sustain her rhetorical position. She loses by degrees — first when she accepts the term of the exchange, then when she repurposes her own curse (\"despair, and die\") against Richard without noticing how he has already begun to convert it. The scene charts defeat by rhetoric.",
+      "sources": [
+        "Brian Vickers, The Artistry of Shakespeare's Prose (1968)",
+        "Russ McDonald, Shakespeare's Late Style (2006)"
+      ]
+    },
+    {
+      "id": "richard_iii_act1_scene2_ann3",
+      "line_start": 176,
+      "line_end": 196,
+      "citation_display": "Richard III 1.2.176–196",
+      "category": "thematic",
+      "title": "Anne's psychology, or: the seduction is not simple",
+      "body": "It is tempting to read Anne as simply outmanoeuvred, but her yielding is more complex than defeat. She is young, widowed, exhausted, surrounded by the murderers of her family; the Yorkists have won the war, and the England she knew as Prince Edward's wife no longer exists. Richard's offered sword at his bared chest is the scene's theatrical peak, but the more telling moment is the line she lets fall: \"Arise, dissembler: though I wish thy death, / I will not be the executioner.\" She names him accurately — dissembler — and withholds violence from him anyway. This is not straightforward seduction; it is the capitulation of a person who has run out of allies, register by register. Contemporary critics (Janet Adelman, Madonne Miner) have resisted the older reading of Anne as dupe or hysteric, arguing instead that her exhaustion is the point, and that Richard's triumph depends on a specific kind of despair that the wars have produced in the women who survived.",
+      "sources": [
+        "Madonne M. Miner, \"'Neither mother, wife, nor England's queen'\" (1980)",
+        "Janet Adelman, Suffocating Mothers (1992)",
+        "Phyllis Rackin, Stages of History (1990)"
+      ]
+    },
+    {
+      "id": "richard_iii_act1_scene2_ann4",
+      "line_start": 224,
+      "line_end": 260,
+      "citation_display": "Richard III 1.2.224–260",
+      "category": "close_reading",
+      "title": "\"Was ever woman in this humour woo'd?\" as theatrical punctuation",
+      "body": "After Anne exits, Richard holds the stage alone and delivers one of Shakespeare's most audacious soliloquies. \"Was ever woman in this humour woo'd? / Was ever woman in this humour won?\" The rhetorical questions function as theatrical punctuation — Richard makes the audience acknowledge what we have just witnessed. He then surveys the impossibility: I killed her husband, I killed his father, she saw me with their blood on me, and still she accepted my ring. The soliloquy is the scene's control panel; Richard explains to us how outrageous it has been, and thereby forecloses any naturalistic objection we might raise. He is also, crucially, beginning to mock his own power: the last lines (\"I'll be at charges for a looking-glass...\") shade into comic preening. Richard cannot sustain anyone's devotion, including his own. What he can do is speak anything into being — for as long as he keeps speaking.",
+      "sources": [
+        "A. P. Rossiter, Angel with Horns (1961)",
+        "Emrys Jones, Scenic Form in Shakespeare (1971)"
+      ]
+    },
+    {
+      "id": "richard_iii_act1_scene2_ann5",
+      "line_start": 155,
+      "line_end": 168,
+      "citation_display": "Richard III 1.2.155–168",
+      "category": "historical",
+      "title": "The biographical scaffolding Richard invokes",
+      "body": "Richard's claim that Anne's father Warwick (\"thy warlike father\") once wept over the death of Richard's own father, the Duke of York — killed at Wakefield in 1460 by Margaret's forces — is not Shakespeare's invention. The detail comes from Holinshed and ultimately from More. Rutland, the young son York and Clarence's biological brother, was killed at Wakefield by Clifford; Richard here weaponizes the family's grief-record to claim emotional cover. The moment illuminates something important about the tetralogy: Richard III is the final play in Shakespeare's first historical sequence (1, 2, 3 Henry VI and Richard III), and many of its scenes assume the audience's memory of the prior plays. Shakespeare trusts his audience to recall who Rutland was, who Clifford was, and what Wakefield cost. Readers encountering Richard III on its own lose some of this density; editions often footnote the prior-play references for that reason.",
+      "sources": [
+        "Raphael Holinshed, Chronicles (1587)",
+        "E. M. W. Tillyard, Shakespeare's History Plays (1944)",
+        "Paola Pugliatti, Shakespeare the Historian (1996)"
+      ]
+    },
+    {
+      "id": "richard_iii_act1_scene2_ann6",
+      "line_start": 203,
+      "line_end": 223,
+      "citation_display": "Richard III 1.2.203–223",
+      "category": "textual",
+      "title": "The ring — prop and symbol",
+      "body": "Richard's gift of the ring — \"Vouchsafe to wear this ring\" — is one of the scene's two decisive physical gestures (the other is the sword-on-chest offer). Theatrically the ring does heavy work. It converts rhetorical promise into material token; it stands in for consent Anne has not quite spoken; and it will haunt Anne's later remorse (4.1) when she recalls this moment as a curse self-inflicted. Productions stage the ring variously: placed on Anne's finger against her will, taken from her listless hand, left by Richard at her feet. None of the choices are wrong, and all carry different readings of what yielding means here. The line \"To take is not to give\" is Anne's attempt to hold a boundary; the stage action that follows is where directors and actors decide what she has actually done.",
+      "sources": [
+        "John Russell Brown, Shakespeare's Plays in Performance (1966)",
+        "Alan C. Dessen and Leslie Thomson, A Dictionary of Stage Directions in English Drama 1580-1642 (1999)"
+      ]
+    },
+    {
+      "id": "richard_iii_act1_scene2_ann7",
+      "line_start": 251,
+      "line_end": 260,
+      "citation_display": "Richard III 1.2.251–260",
+      "category": "thematic",
+      "title": "\"Myself to be a marvellous proper man\"",
+      "body": "The scene's closing joke — Richard decides the wooing's success must mean he is, after all, handsome — is where the play first hints at Richard's self-division. He has convinced Anne with a performance he does not himself believe; the joke depends on the audience's knowledge that the performance is artificial. But Richard partly believes it too, or wants to. The line \"I'll be at charges for a looking-glass / And entertain some score or two of tailors\" is comic preening that also reveals appetite. This is the fissure the ghosts will eventually widen in 5.3: Richard is a villain who still wants to be loved. The scene leaves him laughing at Anne's gullibility and at his own power, but the closing apostrophe — \"Shine out, fair sun, till I have bought a glass\" — addresses the sun he mocked in 1.1's opening line. He has begun to flatter his own creation.",
+      "sources": [
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)",
+        "Harry Berger Jr., Imaginary Audition (1989)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act1_scene2_q1",
+      "kind": "comprehension",
+      "prompt": "Whose corpse does Anne accompany at the scene's opening?",
+      "options": [
+        "Her husband Edward, Prince of Wales",
+        "Her father Warwick \"the Kingmaker\"",
+        "Her father-in-law Henry VI, the former Lancastrian king",
+        "Richard III's father, the Duke of York"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 15,
+      "anchor_line_start": 1,
+      "anchor_line_end": 32
+    },
+    {
+      "id": "richard_iii_act1_scene2_q2",
+      "kind": "close_reading",
+      "prompt": "What is stichomythia, the rhetorical device that structures Anne and Richard's central exchange?",
+      "options": [
+        "Extended metaphor sustained across multiple speakers",
+        "Alternating single-line retorts in which each speaker seizes and inverts the opponent's diction",
+        "A formal debate with a moderator between disputants",
+        "Rhyming couplets passed between two characters"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 73,
+      "anchor_line_end": 129
+    },
+    {
+      "id": "richard_iii_act1_scene2_q3",
+      "kind": "theme",
+      "prompt": "Which reading of Anne's \"yielding\" best reflects twentieth- and twenty-first-century scholarship on the scene?",
+      "options": [
+        "She is an unrealistic character whom Shakespeare could not render plausibly",
+        "She is straightforwardly seduced by Richard's superior wit",
+        "Her yielding is the capitulation of a widowed, surrounded, exhausted woman in a conquered political world — more complex than defeat",
+        "She is engineered by Margaret's curse and has no agency in the scene"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 25,
+      "anchor_line_start": 176,
+      "anchor_line_end": 196
+    },
+    {
+      "id": "richard_iii_act1_scene2_q4",
+      "kind": "inference",
+      "prompt": "When Richard offers Anne his bare chest and his own sword, inviting her to kill him, what is the rhetorical logic?",
+      "options": [
+        "Genuine self-sacrifice to atone for his crimes",
+        "A piece of theatre that forces Anne to either strike (implausible) or release him (inevitable), converting her hatred into reluctant mercy",
+        "A religious gesture invoking martyrdom as penance",
+        "A legal offering: the sword represents the authority she would need to judge him"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 176,
+      "anchor_line_end": 185
+    },
+    {
+      "id": "richard_iii_act1_scene2_q5",
+      "kind": "close_reading",
+      "prompt": "Richard's closing couplet — \"Was ever woman in this humour woo'd? / Was ever woman in this humour won?\" — functions how in the scene's structure?",
+      "options": [
+        "As a genuine expression of self-doubt and bewilderment",
+        "As theatrical punctuation: he makes the audience acknowledge the impossibility of what we have just witnessed",
+        "As a conventional prayer of thanksgiving",
+        "As a formal vow to remain faithful to Anne"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 224,
+      "anchor_line_end": 235
+    },
+    {
+      "id": "richard_iii_act1_scene2_q6",
+      "kind": "structural",
+      "prompt": "In the soliloquy after Anne exits, Richard's final joke — that her acceptance must mean he is \"a marvellous proper man\" — suggests what about his psychology?",
+      "options": [
+        "He has sincerely fallen in love with her",
+        "The play will not treat him psychologically; he is a flat villain",
+        "He is self-divided: a villain who has begun to flatter his own performance and wants, partly, to be loved",
+        "He has realized Anne will be a political liability"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 20,
+      "anchor_line_start": 249,
+      "anchor_line_end": 260
+    },
+    {
+      "id": "richard_iii_act1_scene2_q7",
+      "kind": "historical",
+      "prompt": "Richard tells Anne that her father Warwick once wept over the death of Richard's own father, the Duke of York. This reference draws on what source material?",
+      "options": [
+        "Shakespeare's invention for the scene",
+        "Plutarch's Lives, via North's 1579 translation",
+        "The earlier plays 1, 2, and 3 Henry VI (and their chronicle sources) — the audience is expected to remember Wakefield and Rutland",
+        "A fictional backstory with no prior reference"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 25,
+      "anchor_line_start": 155,
+      "anchor_line_end": 168
+    },
+    {
+      "id": "richard_iii_act1_scene2_q8",
+      "kind": "theme",
+      "prompt": "What is the larger argument the scene makes about Richard's power?",
+      "options": [
+        "His power is primarily military",
+        "His power is primarily financial",
+        "His power is linguistic before it is political — what he can say he can make happen",
+        "His power depends on supernatural agency, not rhetoric"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 260
+    }
+  ]
+}

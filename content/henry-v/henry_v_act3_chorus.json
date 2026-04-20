@@ -1,0 +1,436 @@
+{
+  "section_id": "henry_v_act3_chorus",
+  "work_id": "henry-v",
+  "sequence": 9,
+  "act": null,
+  "scene": null,
+  "kind": "chorus",
+  "scene_title": "Chorus",
+  "line_count": 35,
+  "word_count": 261,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CHORUS",
+      "text": "Thus with imagined wing our swift scene flies"
+    },
+    {
+      "number": 2,
+      "speaker": "CHORUS",
+      "text": "In motion of no less celerity"
+    },
+    {
+      "number": 3,
+      "speaker": "CHORUS",
+      "text": "Than that of thought. Suppose that you have seen"
+    },
+    {
+      "number": 4,
+      "speaker": "CHORUS",
+      "text": "The well-appointed king at Hampton pier"
+    },
+    {
+      "number": 5,
+      "speaker": "CHORUS",
+      "text": "Embark his royalty; and his brave fleet"
+    },
+    {
+      "number": 6,
+      "speaker": "CHORUS",
+      "text": "With silken streamers the young Phoebus fanning:"
+    },
+    {
+      "number": 7,
+      "speaker": "CHORUS",
+      "text": "Play with your fancies, and in them behold"
+    },
+    {
+      "number": 8,
+      "speaker": "CHORUS",
+      "text": "Upon the hempen tackle ship-boys climbing;"
+    },
+    {
+      "number": 9,
+      "speaker": "CHORUS",
+      "text": "Hear the shrill whistle which doth order give"
+    },
+    {
+      "number": 10,
+      "speaker": "CHORUS",
+      "text": "To sounds confused; behold the threaden sails,"
+    },
+    {
+      "number": 11,
+      "speaker": "CHORUS",
+      "text": "Borne with the invisible and creeping wind,"
+    },
+    {
+      "number": 12,
+      "speaker": "CHORUS",
+      "text": "Draw the huge bottoms through the furrow’d sea,"
+    },
+    {
+      "number": 13,
+      "speaker": "CHORUS",
+      "text": "Breasting the lofty surge: O, do but think"
+    },
+    {
+      "number": 14,
+      "speaker": "CHORUS",
+      "text": "You stand upon the rivage and behold"
+    },
+    {
+      "number": 15,
+      "speaker": "CHORUS",
+      "text": "A city on the inconstant billows dancing;"
+    },
+    {
+      "number": 16,
+      "speaker": "CHORUS",
+      "text": "For so appears this fleet majestical,"
+    },
+    {
+      "number": 17,
+      "speaker": "CHORUS",
+      "text": "Holding due course to Harfleur. Follow, follow:"
+    },
+    {
+      "number": 18,
+      "speaker": "CHORUS",
+      "text": "Grapple your minds to sternage of this navy,"
+    },
+    {
+      "number": 19,
+      "speaker": "CHORUS",
+      "text": "And leave your England, as dead midnight still,"
+    },
+    {
+      "number": 20,
+      "speaker": "CHORUS",
+      "text": "Guarded with grandsires, babies and old women,"
+    },
+    {
+      "number": 21,
+      "speaker": "CHORUS",
+      "text": "Either past or not arrived to pith and puissance;"
+    },
+    {
+      "number": 22,
+      "speaker": "CHORUS",
+      "text": "For who is he, whose chin is but enrich’d"
+    },
+    {
+      "number": 23,
+      "speaker": "CHORUS",
+      "text": "With one appearing hair, that will not follow"
+    },
+    {
+      "number": 24,
+      "speaker": "CHORUS",
+      "text": "These cull’d and choice-drawn cavaliers to France?"
+    },
+    {
+      "number": 25,
+      "speaker": "CHORUS",
+      "text": "Work, work your thoughts, and therein see a siege;"
+    },
+    {
+      "number": 26,
+      "speaker": "CHORUS",
+      "text": "Behold the ordnance on their carriages,"
+    },
+    {
+      "number": 27,
+      "speaker": "CHORUS",
+      "text": "With fatal mouths gaping on girded Harfleur."
+    },
+    {
+      "number": 28,
+      "speaker": "CHORUS",
+      "text": "Suppose the ambassador from the French comes back;"
+    },
+    {
+      "number": 29,
+      "speaker": "CHORUS",
+      "text": "Tells Harry that the king doth offer him"
+    },
+    {
+      "number": 30,
+      "speaker": "CHORUS",
+      "text": "Katharine his daughter, and with her, to dowry,"
+    },
+    {
+      "number": 31,
+      "speaker": "CHORUS",
+      "text": "Some petty and unprofitable dukedoms."
+    },
+    {
+      "number": 32,
+      "speaker": "CHORUS",
+      "text": "The offer likes not: and the nimble gunner"
+    },
+    {
+      "number": 33,
+      "speaker": "CHORUS",
+      "text": "With linstock now the devilish cannon touches,"
+    },
+    {
+      "number": 34,
+      "speaker": "CHORUS",
+      "text": "And down goes all before them. Still be kind,"
+    },
+    {
+      "number": 35,
+      "speaker": "CHORUS",
+      "text": "And eke out our performance with your mind."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Chorus."
+    },
+    {
+      "after_line": 0,
+      "text": "Alarum, and chambers go off."
+    },
+    {
+      "after_line": 0,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act3_chorus_gloss1",
+      "line": 1,
+      "phrase": "imagined wing",
+      "definition": "the audience's imagination as wings — the Chorus continues its central metaphor"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss2",
+      "line": 2,
+      "phrase": "celerity",
+      "definition": "swiftness; speed"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss3",
+      "line": 4,
+      "phrase": "well-appointed",
+      "definition": "properly equipped and fitted out for war"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss4",
+      "line": 4,
+      "phrase": "Hampton pier",
+      "definition": "Southampton's dock — the embarkation port"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss5",
+      "line": 6,
+      "phrase": "silken streamers",
+      "definition": "silk pennants fluttering from the masts"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss6",
+      "line": 6,
+      "phrase": "young Phoebus fanning",
+      "definition": "the streamers fanning the rising sun — Phoebus Apollo is the sun-god"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss7",
+      "line": 8,
+      "phrase": "hempen tackle",
+      "definition": "the hemp ropes of the ship's rigging"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss8",
+      "line": 9,
+      "phrase": "shrill whistle",
+      "definition": "the boatswain's pipe — signalling orders"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss9",
+      "line": 10,
+      "phrase": "threaden sails",
+      "definition": "canvas sails — 'threaden' = made of thread/cloth"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss10",
+      "line": 12,
+      "phrase": "huge bottoms",
+      "definition": "large ship hulls"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss11",
+      "line": 13,
+      "phrase": "Breasting the lofty surge",
+      "definition": "cutting through tall waves chest-first"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss12",
+      "line": 14,
+      "phrase": "rivage",
+      "definition": "shore; coastline (French loan-word)"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss13",
+      "line": 15,
+      "phrase": "inconstant billows",
+      "definition": "restless waves"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss14",
+      "line": 17,
+      "phrase": "Harfleur",
+      "definition": "the French port town Henry besieges — modern Le Havre is built beside it"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss15",
+      "line": 18,
+      "phrase": "Grapple your minds to sternage of this navy",
+      "definition": "hook your imagination to the stern of this fleet — 'sternage' = the fleet's stern, the following ships"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss16",
+      "line": 20,
+      "phrase": "grandsires, babies and old women",
+      "definition": "England's wartime skeleton population — the able-bodied are abroad"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss17",
+      "line": 21,
+      "phrase": "pith and puissance",
+      "definition": "vigor and military power"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss18",
+      "line": 24,
+      "phrase": "cull’d and choice-drawn cavaliers",
+      "definition": "picked, handpicked horsemen — an elite selection"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss19",
+      "line": 26,
+      "phrase": "ordnance on their carriages",
+      "definition": "cannons mounted on wheeled carriages"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss20",
+      "line": 27,
+      "phrase": "fatal mouths gaping on girded Harfleur",
+      "definition": "deadly cannon mouths aimed at besieged Harfleur — 'girded' = surrounded by a ring of troops"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss21",
+      "line": 30,
+      "phrase": "Katharine his daughter",
+      "definition": "the French princess whose betrothal to Henry is offered as a peace-bribe — prefigures Act 5"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss22",
+      "line": 31,
+      "phrase": "petty and unprofitable dukedoms",
+      "definition": "worthless small fiefs — Henry's scornful view of the French dowry offer"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss23",
+      "line": 32,
+      "phrase": "likes not",
+      "definition": "does not please; is unwelcome"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss24",
+      "line": 32,
+      "phrase": "nimble gunner",
+      "definition": "the quick-handed artilleryman"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss25",
+      "line": 33,
+      "phrase": "linstock",
+      "definition": "a forked staff holding the lighted match used to fire a cannon"
+    },
+    {
+      "id": "henry_v_act3_chorus_gloss26",
+      "line": 35,
+      "phrase": "eke out our performance with your mind",
+      "definition": "supplement our staging with your imagination — the Chorus's signature plea"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act3_chorus_ann1",
+      "line_start": 1,
+      "line_end": 18,
+      "citation_display": "Henry V 3 Chorus.1–18",
+      "category": "close_reading",
+      "title": "'A city on th' inconstant billows dancing' — the fleet as sea-borne metropolis",
+      "body": "The Act 3 Chorus is one of Shakespeare's great occasional poems in miniature. Its core image — the English fleet observed from shore, 'a city on th' inconstant billows dancing' — has been admired since the Romantics. The stanza does several things at once: it persuades the audience to visualize a vast invasion fleet the Globe cannot stage; it dignifies the expedition with civic grandeur ('so appears this fleet majestical'); and it uses shore-based spectatorship ('you stand upon the rivage') to make the audience an onlooker rather than a participant. Notice the verbs: 'grapple your minds to sternage of this navy,' 'Work, work your thoughts.' The Chorus demands work from us; the language is almost nautical labor. And the stanza's closing image — 'the nimble gunner / With linstock now the devilish cannon touches / And down goes all before them' — dispatches Harfleur's fall in a single graceful sentence, letting the imagination accomplish what the stage cannot.",
+      "sources": [
+        "Samuel Taylor Coleridge, Lectures on Shakespeare (1818)",
+        "Frank Kermode, Shakespeare's Language (2000)"
+      ]
+    },
+    {
+      "id": "henry_v_act3_chorus_ann2",
+      "line_start": 28,
+      "line_end": 35,
+      "citation_display": "Henry V 3 Chorus.28–35",
+      "category": "thematic",
+      "title": "The Katherine offer — dowry as deflection",
+      "body": "The Chorus introduces an offstage diplomatic detail: the French king has offered Katharine as Henry's bride, together with 'some petty and unprofitable dukedoms,' as a settlement. 'The offer likes not' — Henry refuses. Why this matters: it tells the audience that a marriage-solution to the war existed and was declined. When Act 5 finally stages the wooing scene, the audience should remember that Katherine was offered to Henry before Harfleur, before Agincourt, before the thousands of French dead. Henry accepted her only after taking France at sword-point. The Chorus's brief couplet — dowry proposal, Henry refuses, 'nimble gunner … devilish cannon touches' — is a compressed argument about what this war is actually buying.",
+      "sources": [
+        "Graham Holderness, Shakespeare: The Histories (2000)",
+        "Andrew Gurr (ed.), King Henry V (New Cambridge Shakespeare, 1992)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act3_chorus_q1",
+      "kind": "close_reading",
+      "prompt": "The Chorus compares the English fleet at sea to —",
+      "options": [
+        "An army on the march",
+        "A city on the inconstant billows dancing — civic grandeur conferred on the invasion by imagery",
+        "A forest of masts",
+        "A flock of migrating birds"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 13,
+      "anchor_line_end": 17
+    },
+    {
+      "id": "henry_v_act3_chorus_q2",
+      "kind": "theme",
+      "prompt": "Why does the Chorus mention the French king's offer of Katherine as a peace-settlement?",
+      "options": [
+        "To introduce Katherine as a character for the first time",
+        "To indicate that a marriage-settlement was offered BEFORE the war and was declined — reminding us (when we reach Act 5) that Katherine was the price of conquest, not the reward of genuine love",
+        "To stage a French marriage proposal",
+        "To introduce the sub-plot of Alice the interpreter"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 28,
+      "anchor_line_end": 32
+    },
+    {
+      "id": "henry_v_act3_chorus_q3",
+      "kind": "structural",
+      "prompt": "How does the Chorus handle the fall of Harfleur?",
+      "options": [
+        "Stages the siege in detail",
+        "Skips it entirely without mention",
+        "Compresses it into a closing couplet — 'the nimble gunner / With linstock now the devilish cannon touches / And down goes all before them' — leaving the imagination to do the work",
+        "Narrates it through a captured French soldier"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 20,
+      "anchor_line_start": 32,
+      "anchor_line_end": 35
+    }
+  ]
+}

@@ -1,0 +1,636 @@
+{
+  "section_id": "macbeth_act4_scene2",
+  "work_id": "macbeth",
+  "sequence": 19,
+  "act": 4,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "Fife. Macduff's castle",
+  "line_count": 91,
+  "word_count": 668,
+  "est_read_minutes": 3,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "LADY MACDUFF",
+      "text": "What had he done, to make him fly the land?"
+    },
+    {
+      "number": 2,
+      "speaker": "ROSS",
+      "text": "You must have patience, madam."
+    },
+    {
+      "number": 2,
+      "speaker": "LADY MACDUFF",
+      "text": "He had none:"
+    },
+    {
+      "number": 3,
+      "speaker": "LADY MACDUFF",
+      "text": "His flight was madness: when our actions do not,"
+    },
+    {
+      "number": 4,
+      "speaker": "LADY MACDUFF",
+      "text": "Our fears do make us traitors."
+    },
+    {
+      "number": 4,
+      "speaker": "ROSS",
+      "text": "You know not"
+    },
+    {
+      "number": 5,
+      "speaker": "ROSS",
+      "text": "Whether it was his wisdom or his fear."
+    },
+    {
+      "number": 6,
+      "speaker": "LADY MACDUFF",
+      "text": "Wisdom! to leave his wife, to leave his babes,"
+    },
+    {
+      "number": 7,
+      "speaker": "LADY MACDUFF",
+      "text": "His mansion and his titles in a place"
+    },
+    {
+      "number": 8,
+      "speaker": "LADY MACDUFF",
+      "text": "From whence himself does fly? He loves us not;"
+    },
+    {
+      "number": 9,
+      "speaker": "LADY MACDUFF",
+      "text": "He wants the natural touch: for the poor wren,"
+    },
+    {
+      "number": 10,
+      "speaker": "LADY MACDUFF",
+      "text": "The most diminutive of birds, will fight,"
+    },
+    {
+      "number": 11,
+      "speaker": "LADY MACDUFF",
+      "text": "Her young ones in her nest, against the owl."
+    },
+    {
+      "number": 12,
+      "speaker": "LADY MACDUFF",
+      "text": "All is the fear and nothing is the love;"
+    },
+    {
+      "number": 13,
+      "speaker": "LADY MACDUFF",
+      "text": "As little is the wisdom, where the flight"
+    },
+    {
+      "number": 14,
+      "speaker": "LADY MACDUFF",
+      "text": "So runs against all reason."
+    },
+    {
+      "number": 14,
+      "speaker": "ROSS",
+      "text": "My dearest coz,"
+    },
+    {
+      "number": 15,
+      "speaker": "ROSS",
+      "text": "I pray you, school yourself: but for your husband,"
+    },
+    {
+      "number": 16,
+      "speaker": "ROSS",
+      "text": "He is noble, wise, judicious, and best knows"
+    },
+    {
+      "number": 17,
+      "speaker": "ROSS",
+      "text": "The fits o’ the season. I dare not speak much further;"
+    },
+    {
+      "number": 18,
+      "speaker": "ROSS",
+      "text": "But cruel are the times, when we are traitors"
+    },
+    {
+      "number": 19,
+      "speaker": "ROSS",
+      "text": "And do not know ourselves, when we hold rumour"
+    },
+    {
+      "number": 20,
+      "speaker": "ROSS",
+      "text": "From what we fear, yet know not what we fear,"
+    },
+    {
+      "number": 21,
+      "speaker": "ROSS",
+      "text": "But float upon a wild and violent sea"
+    },
+    {
+      "number": 22,
+      "speaker": "ROSS",
+      "text": "Each way and move. I take my leave of you:"
+    },
+    {
+      "number": 23,
+      "speaker": "ROSS",
+      "text": "Shall not be long but I’ll be here again:"
+    },
+    {
+      "number": 24,
+      "speaker": "ROSS",
+      "text": "Things at the worst will cease, or else climb upward"
+    },
+    {
+      "number": 25,
+      "speaker": "ROSS",
+      "text": "To what they were before. My pretty cousin,"
+    },
+    {
+      "number": 26,
+      "speaker": "ROSS",
+      "text": "Blessing upon you!"
+    },
+    {
+      "number": 27,
+      "speaker": "LADY MACDUFF",
+      "text": "Father’d he is, and yet he’s fatherless."
+    },
+    {
+      "number": 28,
+      "speaker": "ROSS",
+      "text": "I am so much a fool, should I stay longer,"
+    },
+    {
+      "number": 29,
+      "speaker": "ROSS",
+      "text": "It would be my disgrace and your discomfort:"
+    },
+    {
+      "number": 30,
+      "speaker": "ROSS",
+      "text": "I take my leave at once."
+    },
+    {
+      "number": 30,
+      "speaker": "LADY MACDUFF",
+      "text": "Sirrah, your father’s dead:"
+    },
+    {
+      "number": 31,
+      "speaker": "LADY MACDUFF",
+      "text": "And what will you do now? How will you live?"
+    },
+    {
+      "number": 32,
+      "speaker": "SON",
+      "text": "As birds do, mother."
+    },
+    {
+      "number": 32,
+      "speaker": "LADY MACDUFF",
+      "text": "What, with worms and flies?"
+    },
+    {
+      "number": 33,
+      "speaker": "SON",
+      "text": "With what I get, I mean; and so do they."
+    },
+    {
+      "number": 34,
+      "speaker": "LADY MACDUFF",
+      "text": "Poor bird! thou’ldst never fear the net nor lime,"
+    },
+    {
+      "number": 35,
+      "speaker": "LADY MACDUFF",
+      "text": "The pitfall nor the gin."
+    },
+    {
+      "number": 36,
+      "speaker": "SON",
+      "text": "Why should I, mother? Poor birds they are not set for."
+    },
+    {
+      "number": 37,
+      "speaker": "SON",
+      "text": "My father is not dead, for all your saying."
+    },
+    {
+      "number": 38,
+      "speaker": "LADY MACDUFF",
+      "text": "Yes, he is dead: how wilt thou do for a father?"
+    },
+    {
+      "number": 39,
+      "speaker": "SON",
+      "text": "Nay, how will you do for a husband?"
+    },
+    {
+      "number": 40,
+      "speaker": "LADY MACDUFF",
+      "text": "Why, I can buy me twenty at any market."
+    },
+    {
+      "number": 41,
+      "speaker": "SON",
+      "text": "Then you’ll buy ’em to sell again."
+    },
+    {
+      "number": 42,
+      "speaker": "LADY MACDUFF",
+      "text": "Thou speak’st with all thy wit; and yet, i’ faith,"
+    },
+    {
+      "number": 43,
+      "speaker": "LADY MACDUFF",
+      "text": "With wit enough for thee."
+    },
+    {
+      "number": 43,
+      "speaker": "SON",
+      "text": "Was my father a traitor, mother?"
+    },
+    {
+      "number": 44,
+      "speaker": "LADY MACDUFF",
+      "text": "Ay, that he was."
+    },
+    {
+      "number": 44,
+      "speaker": "SON",
+      "text": "What is a traitor?"
+    },
+    {
+      "number": 45,
+      "speaker": "LADY MACDUFF",
+      "text": "Why, one that swears and lies."
+    },
+    {
+      "number": 46,
+      "speaker": "SON",
+      "text": "And be all traitors that do so?"
+    },
+    {
+      "number": 47,
+      "speaker": "LADY MACDUFF",
+      "text": "Every one that does so is a traitor, and must be hanged."
+    },
+    {
+      "number": 48,
+      "speaker": "SON",
+      "text": "And must they all be hanged that swear and lie?"
+    },
+    {
+      "number": 49,
+      "speaker": "LADY MACDUFF",
+      "text": "Every one."
+    },
+    {
+      "number": 49,
+      "speaker": "SON",
+      "text": "Who must hang them?"
+    },
+    {
+      "number": 50,
+      "speaker": "LADY MACDUFF",
+      "text": "Why, the honest men."
+    },
+    {
+      "number": 51,
+      "speaker": "SON",
+      "text": "Then the liars and swearers are fools, for there are liars and"
+    },
+    {
+      "number": 52,
+      "speaker": "SON",
+      "text": "swearers enow to beat the honest men and hang up them."
+    },
+    {
+      "number": 53,
+      "speaker": "LADY MACDUFF",
+      "text": "Now, God help thee, poor monkey!"
+    },
+    {
+      "number": 54,
+      "speaker": "LADY MACDUFF",
+      "text": "But how wilt thou do for a father?"
+    },
+    {
+      "number": 55,
+      "speaker": "SON",
+      "text": "If he were dead, you’d weep for him: if you would not,"
+    },
+    {
+      "number": 56,
+      "speaker": "SON",
+      "text": "it were a good sign that I should quickly have a new"
+    },
+    {
+      "number": 57,
+      "speaker": "SON",
+      "text": "father."
+    },
+    {
+      "number": 57,
+      "speaker": "LADY MACDUFF",
+      "text": "Poor prattler, how thou talk’st!"
+    },
+    {
+      "number": 58,
+      "speaker": "MESSENGER",
+      "text": "Bless you, fair dame! I am not to you known,"
+    },
+    {
+      "number": 59,
+      "speaker": "MESSENGER",
+      "text": "Though in your state of honour I am perfect."
+    },
+    {
+      "number": 60,
+      "speaker": "MESSENGER",
+      "text": "I doubt some danger does approach you nearly:"
+    },
+    {
+      "number": 61,
+      "speaker": "MESSENGER",
+      "text": "If you will take a homely man’s advice,"
+    },
+    {
+      "number": 62,
+      "speaker": "MESSENGER",
+      "text": "Be not found here; hence, with your little ones."
+    },
+    {
+      "number": 63,
+      "speaker": "MESSENGER",
+      "text": "To fright you thus, methinks, I am too savage;"
+    },
+    {
+      "number": 64,
+      "speaker": "MESSENGER",
+      "text": "To do worse to you were fell cruelty,"
+    },
+    {
+      "number": 65,
+      "speaker": "MESSENGER",
+      "text": "Which is too nigh your person. Heaven preserve you!"
+    },
+    {
+      "number": 66,
+      "speaker": "MESSENGER",
+      "text": "I dare abide no longer."
+    },
+    {
+      "number": 66,
+      "speaker": "LADY MACDUFF",
+      "text": "Whither should I fly?"
+    },
+    {
+      "number": 67,
+      "speaker": "LADY MACDUFF",
+      "text": "I have done no harm. But I remember now"
+    },
+    {
+      "number": 68,
+      "speaker": "LADY MACDUFF",
+      "text": "I am in this earthly world; where to do harm"
+    },
+    {
+      "number": 69,
+      "speaker": "LADY MACDUFF",
+      "text": "Is often laudable, to do good sometime"
+    },
+    {
+      "number": 70,
+      "speaker": "LADY MACDUFF",
+      "text": "Accounted dangerous folly: why then, alas,"
+    },
+    {
+      "number": 71,
+      "speaker": "LADY MACDUFF",
+      "text": "Do I put up that womanly defence,"
+    },
+    {
+      "number": 72,
+      "speaker": "LADY MACDUFF",
+      "text": "To say I have done no harm?"
+    },
+    {
+      "number": 73,
+      "speaker": "FIRST MURDERER",
+      "text": "Where is your husband?"
+    },
+    {
+      "number": 74,
+      "speaker": "LADY MACDUFF",
+      "text": "I hope, in no place so unsanctified"
+    },
+    {
+      "number": 75,
+      "speaker": "LADY MACDUFF",
+      "text": "Where such as thou mayst find him."
+    },
+    {
+      "number": 76,
+      "speaker": "FIRST MURDERER",
+      "text": "He’s a traitor."
+    },
+    {
+      "number": 76,
+      "speaker": "SON",
+      "text": "Thou liest, thou shag-hair’d villain!"
+    },
+    {
+      "number": 77,
+      "speaker": "FIRST MURDERER",
+      "text": "What, you egg! Stabbing him."
+    },
+    {
+      "number": 78,
+      "speaker": "FIRST MURDERER",
+      "text": "Young fry of treachery!"
+    },
+    {
+      "number": 78,
+      "speaker": "SON",
+      "text": "He has kill’d me, mother:"
+    },
+    {
+      "number": 79,
+      "speaker": "SON",
+      "text": "Run away, I pray you!"
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Lady Macduff, her Son, and Ross."
+    },
+    {
+      "after_line": 30,
+      "text": "Exit."
+    },
+    {
+      "after_line": 57,
+      "text": "Enter a Messenger."
+    },
+    {
+      "after_line": 66,
+      "text": "Exit."
+    },
+    {
+      "after_line": 72,
+      "text": "Enter Murderers."
+    },
+    {
+      "after_line": 72,
+      "text": "What are these faces?"
+    },
+    {
+      "after_line": 79,
+      "text": "Dies."
+    },
+    {
+      "after_line": 79,
+      "text": "Exit Lady Macduff, crying “Murder!” Exeunt Murderers, following her."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act4_scene2_gloss1",
+      "line": 2,
+      "phrase": "patience",
+      "definition": "endurance; acceptance"
+    },
+    {
+      "id": "macbeth_act4_scene2_gloss2",
+      "line": 7,
+      "phrase": "title",
+      "definition": "legitimate claim (as a husband)"
+    },
+    {
+      "id": "macbeth_act4_scene2_gloss4",
+      "line": 25,
+      "phrase": "cousin",
+      "definition": "kinsman — Ross to Lady Macduff"
+    },
+    {
+      "id": "macbeth_act4_scene2_gloss5",
+      "line": 30,
+      "phrase": "Sirrah",
+      "definition": "address to a child or social inferior"
+    },
+    {
+      "id": "macbeth_act4_scene2_gloss8",
+      "line": 35,
+      "phrase": "gin",
+      "definition": "snare; trap"
+    },
+    {
+      "id": "macbeth_act4_scene2_gloss9",
+      "line": 47,
+      "phrase": "Every one that does so is a traitor, and must be hanged",
+      "definition": "the son's deadpan logic about swearing oaths — shocking innocence"
+    },
+    {
+      "id": "macbeth_act4_scene2_gloss11",
+      "line": 64,
+      "phrase": "fell cruelty",
+      "definition": "deadly cruelty — the same 'fell' used by Lady Macbeth in 1.5"
+    },
+    {
+      "id": "macbeth_act4_scene2_gloss12",
+      "line": 71,
+      "phrase": "womanly defence",
+      "definition": "the plea of the defenseless"
+    },
+    {
+      "id": "macbeth_act4_scene2_gloss13",
+      "line": 76,
+      "phrase": "shag-hair’d villain",
+      "definition": "shaggy-haired cutthroat — the murderer attacks her son first"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act4_scene2_ann1",
+      "line_start": 1,
+      "line_end": 40,
+      "citation_display": "Macbeth 4.2.1–40",
+      "category": "thematic",
+      "title": "Lady Macduff's complaint",
+      "body": "Lady Macduff's speech is the play's most direct moral statement from a woman. 'He loves us not; / He wants the natural touch.' Her husband has left her and their children exposed, and she calls it a violation of natural obligation. Ross's excuse — that Macduff's 'wisdom' knows best — she rejects: 'Wisdom! to leave his wife, to leave his babes, / His mansion and his titles, in a place / From whence himself does fly?'\n\nThe scene presents a second feminine counterweight to Lady Macbeth. Where Lady Macbeth renounced the maternal, Lady Macduff inhabits it and insists on its claims. Her argument — that the abstract duty of revolt cannot excuse the concrete duty of protection — is not given a rebuttal by the play. Ross leaves, her son holds the moral stage with her for sixty lines, and then the murderers arrive.",
+      "sources": [
+        "Janet Adelman (1992)",
+        "Marjorie Garber (2004)",
+        "Carol Chillington Rutter (2001)"
+      ]
+    },
+    {
+      "id": "macbeth_act4_scene2_ann2",
+      "line_start": 60,
+      "line_end": 95,
+      "citation_display": "Macbeth 4.2.60–95",
+      "category": "structural",
+      "title": "The killing of the son",
+      "body": "The son is killed onstage: 'He has kill'd me, mother.' A thirteen-year-old Jacobean boy-actor speaks these words, and then dies while asking his mother to save herself. The scene is the play's most direct refutation of Lady Macbeth's 'I have given suck' boast from 1.7: here is the babe whose brains were dashed out, the promise kept. The image of the murdered child is now literal.\n\nShakespeare does not spare the audience. The scene runs to ninety-five lines, most of them the son's precocious back-and-forth with his mother ('What is a traitor?' 'Every one that does so is a traitor, and must be hanged'). The intimacy is deliberate. We watch the household for long enough to feel the domestic weight; then we watch it destroyed.\n\nThe scene has no strategic function in the plot. Its function is moral: to insist that the audience see what Macbeth's regime costs, counted in pennies.",
+      "sources": [
+        "A. C. Bradley (1904)",
+        "Harold Goddard (1951)",
+        "Ewan Fernie (2013)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act4_scene2_q1",
+      "kind": "theme",
+      "prompt": "Lady Macduff's argument against Ross is:",
+      "options": [
+        "Political",
+        "Moral: abstract duty of revolt cannot excuse concrete duty of protection — her children come first",
+        "Economic",
+        "Theological"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 40
+    },
+    {
+      "id": "macbeth_act4_scene2_q2",
+      "kind": "structural",
+      "prompt": "The son's onstage murder is Shakespeare's:",
+      "options": [
+        "Comic relief",
+        "Direct refutation of Lady Macbeth's 'I have given suck' boast in 1.7 — here is the murdered babe, made literal",
+        "Political speech",
+        "Religious instruction"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 75,
+      "anchor_line_end": 95
+    },
+    {
+      "id": "macbeth_act4_scene2_q3",
+      "kind": "inference",
+      "prompt": "The scene's function in the plot is:",
+      "options": [
+        "Advance Macbeth's military plan",
+        "Moral — no strategic function; it forces the audience to see the human cost of Macbeth's regime",
+        "Introduce Macduff",
+        "Kill time"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 95
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "section_id": "julius_caesar_act3_scene3",
+  "work_id": "julius-caesar",
+  "sequence": 10,
+  "act": 3,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "A street",
+  "line_count": 35,
+  "word_count": 245,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CINNA",
+      "text": "I dreamt to-night that I did feast with Caesar,"
+    },
+    {
+      "number": 2,
+      "speaker": "CINNA",
+      "text": "And things unluckily charge my fantasy:"
+    },
+    {
+      "number": 3,
+      "speaker": "CINNA",
+      "text": "I have no will to wander forth of doors,"
+    },
+    {
+      "number": 4,
+      "speaker": "CINNA",
+      "text": "Yet something leads me forth."
+    },
+    {
+      "number": 4,
+      "speaker": "FIRST CITIZEN",
+      "text": "What is your name?"
+    },
+    {
+      "number": 5,
+      "speaker": "SECOND CITIZEN",
+      "text": "Whither are you going?"
+    },
+    {
+      "number": 5,
+      "speaker": "THIRD CITIZEN",
+      "text": "Where do you dwell?"
+    },
+    {
+      "number": 6,
+      "speaker": "FOURTH CITIZEN",
+      "text": "Are you a married man or a bachelor?"
+    },
+    {
+      "number": 7,
+      "speaker": "SECOND CITIZEN",
+      "text": "Answer every man directly."
+    },
+    {
+      "number": 7,
+      "speaker": "FIRST CITIZEN",
+      "text": "Ay, and briefly."
+    },
+    {
+      "number": 8,
+      "speaker": "FOURTH CITIZEN",
+      "text": "Ay, and wisely."
+    },
+    {
+      "number": 8,
+      "speaker": "THIRD CITIZEN",
+      "text": "Ay, and truly, you were best."
+    },
+    {
+      "number": 9,
+      "speaker": "CINNA",
+      "text": "What is my name? Whither am I going? Where do I dwell?"
+    },
+    {
+      "number": 10,
+      "speaker": "CINNA",
+      "text": "Am I a married man or a bachelor? Then, to answer every"
+    },
+    {
+      "number": 11,
+      "speaker": "CINNA",
+      "text": "man directly and briefly, wisely and truly: wisely I say, I am"
+    },
+    {
+      "number": 12,
+      "speaker": "CINNA",
+      "text": "a bachelor."
+    },
+    {
+      "number": 13,
+      "speaker": "SECOND CITIZEN",
+      "text": "That’s as much as to say, they are fools that marry: you’ll"
+    },
+    {
+      "number": 14,
+      "speaker": "SECOND CITIZEN",
+      "text": "bear me a bang for that, I fear. Proceed; directly."
+    },
+    {
+      "number": 15,
+      "speaker": "CINNA",
+      "text": "Directly, I am going to Caesar’s funeral."
+    },
+    {
+      "number": 16,
+      "speaker": "FIRST CITIZEN",
+      "text": "As a friend or an enemy?"
+    },
+    {
+      "number": 16,
+      "speaker": "CINNA",
+      "text": "As a friend."
+    },
+    {
+      "number": 17,
+      "speaker": "SECOND CITIZEN",
+      "text": "That matter is answered directly."
+    },
+    {
+      "number": 17,
+      "speaker": "FOURTH CITIZEN",
+      "text": "For your dwelling—briefly."
+    },
+    {
+      "number": 18,
+      "speaker": "CINNA",
+      "text": "Briefly, I dwell by the Capitol."
+    },
+    {
+      "number": 18,
+      "speaker": "THIRD CITIZEN",
+      "text": "Your name, sir, truly."
+    },
+    {
+      "number": 19,
+      "speaker": "CINNA",
+      "text": "Truly, my name is Cinna."
+    },
+    {
+      "number": 20,
+      "speaker": "FIRST CITIZEN",
+      "text": "Tear him to pieces; he’s a conspirator."
+    },
+    {
+      "number": 21,
+      "speaker": "CINNA",
+      "text": "I am Cinna the poet, I am Cinna the poet."
+    },
+    {
+      "number": 22,
+      "speaker": "FOURTH CITIZEN",
+      "text": "Tear him for his bad verses, tear him for his bad verses."
+    },
+    {
+      "number": 23,
+      "speaker": "CINNA",
+      "text": "I am not Cinna the conspirator."
+    },
+    {
+      "number": 24,
+      "speaker": "FOURTH CITIZEN",
+      "text": "It is no matter, his name’s Cinna; pluck but his name out"
+    },
+    {
+      "number": 25,
+      "speaker": "FOURTH CITIZEN",
+      "text": "of his heart, and turn him going."
+    },
+    {
+      "number": 26,
+      "speaker": "THIRD CITIZEN",
+      "text": "Tear him, tear him! Come, brands ho! fire-brands: to Brutus’, to Cassius’;"
+    },
+    {
+      "number": 27,
+      "speaker": "THIRD CITIZEN",
+      "text": "burn all: some to Decius’ house, and some to Casca’s; some to"
+    },
+    {
+      "number": 28,
+      "speaker": "THIRD CITIZEN",
+      "text": "Ligarius’: away, go!"
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Cinna the poet."
+    },
+    {
+      "after_line": 4,
+      "text": "Enter Citizens."
+    },
+    {
+      "after_line": 28,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "julius_caesar_act3_scene3_gloss1",
+      "line": 2,
+      "phrase": "things unluckily charge my fantasy",
+      "definition": "ill-omened things burden my imagination"
+    },
+    {
+      "id": "julius_caesar_act3_scene3_gloss2",
+      "line": 6,
+      "phrase": "married man or a bachelor",
+      "definition": "the Citizens' absurd catechism — a parody of Roman legal examination, played for dark comedy"
+    },
+    {
+      "id": "julius_caesar_act3_scene3_gloss3",
+      "line": 14,
+      "phrase": "bear me a bang",
+      "definition": "receive a blow from me — the Citizen's crude threat"
+    },
+    {
+      "id": "julius_caesar_act3_scene3_gloss4",
+      "line": 20,
+      "phrase": "conspirator",
+      "definition": "Cinna the *conspirator* is in the play (1.3, 3.1); Cinna the *poet* is a real historical figure (Gaius Helvius Cinna, contemporary of Catullus); the crowd confuses them and murders the wrong Cinna"
+    },
+    {
+      "id": "julius_caesar_act3_scene3_gloss5",
+      "line": 21,
+      "phrase": "Cinna the poet",
+      "definition": "the historical poet Helvius Cinna, author of the lost epyllion *Zmyrna*; actually killed by the mob at Caesar's funeral per Plutarch. Not the conspirator"
+    },
+    {
+      "id": "julius_caesar_act3_scene3_gloss6",
+      "line": 22,
+      "phrase": "Tear him for his bad verses",
+      "definition": "the absurd excuse — once his name is established they need another reason. Shakespeare's self-referential glance at the poet's precarious place in political crisis"
+    },
+    {
+      "id": "julius_caesar_act3_scene3_gloss7",
+      "line": 25,
+      "phrase": "turn him going",
+      "definition": "send him off; drive him away"
+    },
+    {
+      "id": "julius_caesar_act3_scene3_gloss8",
+      "line": 26,
+      "phrase": "brands",
+      "definition": "firebrands"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "julius_caesar_act3_scene3_ann1",
+      "line_start": 1,
+      "line_end": 28,
+      "citation_display": "Julius Caesar 3.3.1–28",
+      "category": "structural",
+      "title": "'Tear him for his bad verses': Shakespeare on poets in a political crisis",
+      "body": "Cinna the Poet, a real historical figure (Gaius Helvius Cinna, friend of Catullus, author of the lost *Zmyrna*), was killed by the mob at Caesar's funeral after being mistaken for Cinna the Conspirator. Plutarch reports the incident in *Life of Caesar* §68 and *Life of Brutus* §20. The mistake is a dry joke about proper-noun politics: two men named Cinna, one a poet, one a killer, indistinguishable to a crowd not reading carefully.\n\nShakespeare's dramatic addition is the line 'Tear him for his bad verses.' Once the name has been fixed as 'conspirator' and the crowd has to invent a secondary excuse — since Cinna cannot actually be the conspirator — they land on his *poetry*. The scene is Shakespeare's one wry aside about his own profession. Poets are killed, the joke goes, for political reasons disguised as aesthetic ones; they are killed for who people think they are; they are killed, ultimately, because a crowd in a political frenzy does not care who they actually are.\n\nModern productions often cut 3.3 for length. They should not. It is 28 lines of cold comedy that completes the funeral-oration arc of 3.2: Antony's rhetoric produced the mob; the mob's first act is to lynch the wrong Cinna for his name. The line from 'Friends, Romans, countrymen' to 'Tear him for his bad verses' is direct. Shakespeare, himself a poet whose profession had been intermittently prosecuted by English authorities (the Blackfriars closures, the Tilney and Tilney successor licensing regime, the Essex affair that touched Shakespeare's own *Richard II*), has a stake in this scene that critics rarely foreground.",
+      "sources": [
+        "Plutarch, *Life of Caesar* §68 (North, 1579)",
+        "Catullus §95 (on Cinna's *Zmyrna*)",
+        "Richard Wilson, *Will Power: Essays on Shakespearean Authority* (1993)",
+        "James Shapiro, *1599: A Year in the Life of William Shakespeare* (2005)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "julius_caesar_act3_scene3_q1",
+      "kind": "comprehension",
+      "prompt": "Why does the mob attack Cinna the Poet?",
+      "options": [
+        "Because he has written bad verses",
+        "Because they mistake him for Cinna the Conspirator; when he protests he's a poet, they switch justifications to 'Tear him for his bad verses'",
+        "Because he has refused to fight",
+        "Because he is an outsider"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 20,
+      "anchor_line_end": 24
+    },
+    {
+      "id": "julius_caesar_act3_scene3_q2",
+      "kind": "theme",
+      "prompt": "Shakespeare includes 3.3 — often cut in performance — because:",
+      "options": [
+        "It is comic relief",
+        "It completes the funeral-oration arc of 3.2 by showing the mob's first act: lynching the wrong man for his name; a cold joke about crowds in political frenzy, and Shakespeare's wry aside about his own profession's peril",
+        "It introduces new plot",
+        "It fills time"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 28
+    }
+  ]
+}

@@ -1,0 +1,901 @@
+{
+  "section_id": "king_lear_act2_scene1",
+  "work_id": "king-lear",
+  "sequence": 6,
+  "act": 2,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "A court within the castle of the Earl of Gloucester",
+  "line_count": 130,
+  "word_count": 968,
+  "est_read_minutes": 5,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "EDMUND",
+      "text": "Save thee, Curan."
+    },
+    {
+      "number": 2,
+      "speaker": "CURAN",
+      "text": "And you, sir. I have been with your father, and given him"
+    },
+    {
+      "number": 3,
+      "speaker": "CURAN",
+      "text": "notice that the Duke of Cornwall and Regan his duchess will be"
+    },
+    {
+      "number": 4,
+      "speaker": "CURAN",
+      "text": "here with him this night."
+    },
+    {
+      "number": 4,
+      "speaker": "EDMUND",
+      "text": "How comes that?"
+    },
+    {
+      "number": 5,
+      "speaker": "CURAN",
+      "text": "Nay, I know not. You have heard of the news abroad; I"
+    },
+    {
+      "number": 6,
+      "speaker": "CURAN",
+      "text": "mean the whispered ones, for they are yet but ear-kissing arguments?"
+    },
+    {
+      "number": 7,
+      "speaker": "EDMUND",
+      "text": "Not I: pray you, what are they?"
+    },
+    {
+      "number": 8,
+      "speaker": "CURAN",
+      "text": "Have you heard of no likely wars toward, ’twixt the Dukes of Cornwall and Albany?"
+    },
+    {
+      "number": 9,
+      "speaker": "EDMUND",
+      "text": "Not a word."
+    },
+    {
+      "number": 10,
+      "speaker": "CURAN",
+      "text": "You may do, then, in time. Fare you well, sir."
+    },
+    {
+      "number": 11,
+      "speaker": "EDMUND",
+      "text": "The duke be here to-night? The better! best!"
+    },
+    {
+      "number": 12,
+      "speaker": "EDMUND",
+      "text": "This weaves itself perforce into my business."
+    },
+    {
+      "number": 13,
+      "speaker": "EDMUND",
+      "text": "My father hath set guard to take my brother;"
+    },
+    {
+      "number": 14,
+      "speaker": "EDMUND",
+      "text": "And I have one thing, of a queasy question,"
+    },
+    {
+      "number": 15,
+      "speaker": "EDMUND",
+      "text": "Which I must act: briefness and fortune, work!"
+    },
+    {
+      "number": 16,
+      "speaker": "EDMUND",
+      "text": "Brother, a word; descend: brother, I say!"
+    },
+    {
+      "number": 17,
+      "speaker": "EDGAR",
+      "text": "I am sure on’t, not a word."
+    },
+    {
+      "number": 18,
+      "speaker": "EDMUND",
+      "text": "I hear my father coming: pardon me:"
+    },
+    {
+      "number": 19,
+      "speaker": "EDMUND",
+      "text": "In cunning I must draw my sword upon you"
+    },
+    {
+      "number": 20,
+      "speaker": "EDMUND",
+      "text": "Draw; seem to defend yourself; now quit you well."
+    },
+    {
+      "number": 21,
+      "speaker": "EDMUND",
+      "text": "Yield: come before my father. Light, ho, here!"
+    },
+    {
+      "number": 22,
+      "speaker": "EDMUND",
+      "text": "Fly, brother. Torches, torches! So, farewell."
+    },
+    {
+      "number": 23,
+      "speaker": "EDMUND",
+      "text": "Some blood drawn on me would beget opinion. Wounds his arm."
+    },
+    {
+      "number": 24,
+      "speaker": "EDMUND",
+      "text": "Of my more fierce endeavour: I have seen drunkards"
+    },
+    {
+      "number": 25,
+      "speaker": "EDMUND",
+      "text": "Do more than this in sport. Father, father!"
+    },
+    {
+      "number": 26,
+      "speaker": "EDMUND",
+      "text": "Stop, stop! No help?"
+    },
+    {
+      "number": 26,
+      "speaker": "GLOUCESTER",
+      "text": "Now, Edmund, where’s the villain?"
+    },
+    {
+      "number": 27,
+      "speaker": "EDMUND",
+      "text": "Here stood he in the dark, his sharp sword out,"
+    },
+    {
+      "number": 28,
+      "speaker": "EDMUND",
+      "text": "Mumbling of wicked charms, conjuring the moon"
+    },
+    {
+      "number": 29,
+      "speaker": "EDMUND",
+      "text": "To stand auspicious mistress—"
+    },
+    {
+      "number": 29,
+      "speaker": "GLOUCESTER",
+      "text": "But where is he?"
+    },
+    {
+      "number": 30,
+      "speaker": "EDMUND",
+      "text": "Look, sir, I bleed."
+    },
+    {
+      "number": 30,
+      "speaker": "GLOUCESTER",
+      "text": "Where is the villain, Edmund?"
+    },
+    {
+      "number": 31,
+      "speaker": "EDMUND",
+      "text": "Fled this way, sir. When by no means he could—"
+    },
+    {
+      "number": 32,
+      "speaker": "GLOUCESTER",
+      "text": "Pursue him, ho! Go after. By no means what?"
+    },
+    {
+      "number": 33,
+      "speaker": "EDMUND",
+      "text": "Persuade me to the murder of your lordship;"
+    },
+    {
+      "number": 34,
+      "speaker": "EDMUND",
+      "text": "But that I told him, the revenging gods"
+    },
+    {
+      "number": 35,
+      "speaker": "EDMUND",
+      "text": "’Gainst parricides did all their thunders bend;"
+    },
+    {
+      "number": 36,
+      "speaker": "EDMUND",
+      "text": "Spoke, with how manifold and strong a bond"
+    },
+    {
+      "number": 37,
+      "speaker": "EDMUND",
+      "text": "The child was bound to the father; sir, in fine,"
+    },
+    {
+      "number": 38,
+      "speaker": "EDMUND",
+      "text": "Seeing how loathly opposite I stood"
+    },
+    {
+      "number": 39,
+      "speaker": "EDMUND",
+      "text": "To his unnatural purpose, in fell motion,"
+    },
+    {
+      "number": 40,
+      "speaker": "EDMUND",
+      "text": "With his prepared sword, he charges home"
+    },
+    {
+      "number": 41,
+      "speaker": "EDMUND",
+      "text": "My unprovided body, lanced mine arm:"
+    },
+    {
+      "number": 42,
+      "speaker": "EDMUND",
+      "text": "But when he saw my best alarum’d spirits,"
+    },
+    {
+      "number": 43,
+      "speaker": "EDMUND",
+      "text": "Bold in the quarrel’s right, roused to the encounter,"
+    },
+    {
+      "number": 44,
+      "speaker": "EDMUND",
+      "text": "Or whether gasted by the noise I made,"
+    },
+    {
+      "number": 45,
+      "speaker": "EDMUND",
+      "text": "Full suddenly he fled."
+    },
+    {
+      "number": 45,
+      "speaker": "GLOUCESTER",
+      "text": "Let him fly far:"
+    },
+    {
+      "number": 46,
+      "speaker": "GLOUCESTER",
+      "text": "Not in this land shall he remain uncaught;"
+    },
+    {
+      "number": 47,
+      "speaker": "GLOUCESTER",
+      "text": "And found—dispatch. The noble duke my master,"
+    },
+    {
+      "number": 48,
+      "speaker": "GLOUCESTER",
+      "text": "My worthy arch and patron, comes to-night:"
+    },
+    {
+      "number": 49,
+      "speaker": "GLOUCESTER",
+      "text": "By his authority I will proclaim it,"
+    },
+    {
+      "number": 50,
+      "speaker": "GLOUCESTER",
+      "text": "That he which finds him shall deserve our thanks,"
+    },
+    {
+      "number": 51,
+      "speaker": "GLOUCESTER",
+      "text": "Bringing the murderous coward to the stake;"
+    },
+    {
+      "number": 52,
+      "speaker": "GLOUCESTER",
+      "text": "He that conceals him, death."
+    },
+    {
+      "number": 53,
+      "speaker": "EDMUND",
+      "text": "When I dissuaded him from his intent,"
+    },
+    {
+      "number": 54,
+      "speaker": "EDMUND",
+      "text": "And found him pight to do it, with curst speech"
+    },
+    {
+      "number": 55,
+      "speaker": "EDMUND",
+      "text": "I threaten’d to discover him: he replied,"
+    },
+    {
+      "number": 56,
+      "speaker": "EDMUND",
+      "text": "“Thou unpossessing bastard! dost thou think,"
+    },
+    {
+      "number": 57,
+      "speaker": "EDMUND",
+      "text": "If I would stand against thee, would the reposal"
+    },
+    {
+      "number": 58,
+      "speaker": "EDMUND",
+      "text": "Of any trust, virtue, or worth in thee"
+    },
+    {
+      "number": 59,
+      "speaker": "EDMUND",
+      "text": "Make thy words faith’d? No: what I should deny—"
+    },
+    {
+      "number": 60,
+      "speaker": "EDMUND",
+      "text": "As this I would: ay, though thou didst produce"
+    },
+    {
+      "number": 61,
+      "speaker": "EDMUND",
+      "text": "My very character—I’ld turn it all"
+    },
+    {
+      "number": 62,
+      "speaker": "EDMUND",
+      "text": "To thy suggestion, plot, and damned practise:"
+    },
+    {
+      "number": 63,
+      "speaker": "EDMUND",
+      "text": "And thou must make a dullard of the world,"
+    },
+    {
+      "number": 64,
+      "speaker": "EDMUND",
+      "text": "If they not thought the profits of my death"
+    },
+    {
+      "number": 65,
+      "speaker": "EDMUND",
+      "text": "Were very pregnant and potential spurs"
+    },
+    {
+      "number": 66,
+      "speaker": "EDMUND",
+      "text": "To make thee seek it.”"
+    },
+    {
+      "number": 66,
+      "speaker": "GLOUCESTER",
+      "text": "Strong and fasten’d villain"
+    },
+    {
+      "number": 67,
+      "speaker": "GLOUCESTER",
+      "text": "Would he deny his letter? I never got him. Tucket within."
+    },
+    {
+      "number": 68,
+      "speaker": "GLOUCESTER",
+      "text": "Hark, the duke’s trumpets! I know not why he comes."
+    },
+    {
+      "number": 69,
+      "speaker": "GLOUCESTER",
+      "text": "All ports I’ll bar; the villain shall not ’scape;"
+    },
+    {
+      "number": 70,
+      "speaker": "GLOUCESTER",
+      "text": "The duke must grant me that: besides, his picture"
+    },
+    {
+      "number": 71,
+      "speaker": "GLOUCESTER",
+      "text": "I will send far and near, that all the kingdom"
+    },
+    {
+      "number": 72,
+      "speaker": "GLOUCESTER",
+      "text": "May have the due note of him; and of my land,"
+    },
+    {
+      "number": 73,
+      "speaker": "GLOUCESTER",
+      "text": "Loyal and natural boy, I’ll work the means"
+    },
+    {
+      "number": 74,
+      "speaker": "GLOUCESTER",
+      "text": "To make thee capable."
+    },
+    {
+      "number": 75,
+      "speaker": "CORNWALL",
+      "text": "How now, my noble friend! since I came hither,"
+    },
+    {
+      "number": 76,
+      "speaker": "CORNWALL",
+      "text": "Which I can call but now, I have heard strange news."
+    },
+    {
+      "number": 77,
+      "speaker": "REGAN",
+      "text": "If it be true, all vengeance comes too short"
+    },
+    {
+      "number": 78,
+      "speaker": "REGAN",
+      "text": "Which can pursue the offender. How dost, my lord?"
+    },
+    {
+      "number": 79,
+      "speaker": "GLOUCESTER",
+      "text": "O, madam, my old heart is crack’d, it’s crack’d!"
+    },
+    {
+      "number": 80,
+      "speaker": "REGAN",
+      "text": "What, did my father’s godson seek your life?"
+    },
+    {
+      "number": 81,
+      "speaker": "REGAN",
+      "text": "He whom my father named? your Edgar?"
+    },
+    {
+      "number": 82,
+      "speaker": "GLOUCESTER",
+      "text": "O, lady, lady, shame would have it hid!"
+    },
+    {
+      "number": 83,
+      "speaker": "REGAN",
+      "text": "Was he not companion with the riotous knights"
+    },
+    {
+      "number": 84,
+      "speaker": "REGAN",
+      "text": "That tend upon my father?"
+    },
+    {
+      "number": 85,
+      "speaker": "GLOUCESTER",
+      "text": "I know not, madam: ’tis too bad, too bad."
+    },
+    {
+      "number": 86,
+      "speaker": "EDMUND",
+      "text": "Yes, madam, he was of that consort."
+    },
+    {
+      "number": 87,
+      "speaker": "REGAN",
+      "text": "No marvel, then, though he were ill affected:"
+    },
+    {
+      "number": 88,
+      "speaker": "REGAN",
+      "text": "’Tis they have put him on the old man’s death,"
+    },
+    {
+      "number": 89,
+      "speaker": "REGAN",
+      "text": "To have the expense and waste of his revenues."
+    },
+    {
+      "number": 90,
+      "speaker": "REGAN",
+      "text": "I have this present evening from my sister"
+    },
+    {
+      "number": 91,
+      "speaker": "REGAN",
+      "text": "Been well inform’d of them; and with such cautions,"
+    },
+    {
+      "number": 92,
+      "speaker": "REGAN",
+      "text": "That if they come to sojourn at my house,"
+    },
+    {
+      "number": 93,
+      "speaker": "REGAN",
+      "text": "I’ll not be there."
+    },
+    {
+      "number": 93,
+      "speaker": "CORNWALL",
+      "text": "Nor I, assure thee, Regan."
+    },
+    {
+      "number": 94,
+      "speaker": "CORNWALL",
+      "text": "Edmund, I hear that you have shown your father"
+    },
+    {
+      "number": 95,
+      "speaker": "CORNWALL",
+      "text": "A child-like office."
+    },
+    {
+      "number": 95,
+      "speaker": "EDMUND",
+      "text": "’Twas my duty, sir."
+    },
+    {
+      "number": 96,
+      "speaker": "GLOUCESTER",
+      "text": "He did bewray his practise; and received"
+    },
+    {
+      "number": 97,
+      "speaker": "GLOUCESTER",
+      "text": "This hurt you see, striving to apprehend him."
+    },
+    {
+      "number": 98,
+      "speaker": "CORNWALL",
+      "text": "Is he pursued?"
+    },
+    {
+      "number": 98,
+      "speaker": "GLOUCESTER",
+      "text": "Ay, my good lord."
+    },
+    {
+      "number": 99,
+      "speaker": "CORNWALL",
+      "text": "If he be taken, he shall never more"
+    },
+    {
+      "number": 100,
+      "speaker": "CORNWALL",
+      "text": "Be fear’d of doing harm: make your own purpose,"
+    },
+    {
+      "number": 101,
+      "speaker": "CORNWALL",
+      "text": "How in my strength you please. For you, Edmund,"
+    },
+    {
+      "number": 102,
+      "speaker": "CORNWALL",
+      "text": "Whose virtue and obedience doth this instant"
+    },
+    {
+      "number": 103,
+      "speaker": "CORNWALL",
+      "text": "So much commend itself, you shall be ours:"
+    },
+    {
+      "number": 104,
+      "speaker": "CORNWALL",
+      "text": "Natures of such deep trust we shall much need;"
+    },
+    {
+      "number": 105,
+      "speaker": "CORNWALL",
+      "text": "You we first seize on."
+    },
+    {
+      "number": 105,
+      "speaker": "EDMUND",
+      "text": "I shall serve you, sir,"
+    },
+    {
+      "number": 106,
+      "speaker": "EDMUND",
+      "text": "Truly, however else."
+    },
+    {
+      "number": 106,
+      "speaker": "GLOUCESTER",
+      "text": "For him I thank your grace."
+    },
+    {
+      "number": 107,
+      "speaker": "CORNWALL",
+      "text": "You know not why we came to visit you—"
+    },
+    {
+      "number": 108,
+      "speaker": "REGAN",
+      "text": "Thus out of season, threading dark-eyed night:"
+    },
+    {
+      "number": 109,
+      "speaker": "REGAN",
+      "text": "Occasions, noble Gloucester, of some poise,"
+    },
+    {
+      "number": 110,
+      "speaker": "REGAN",
+      "text": "Wherein we must have use of your advice:"
+    },
+    {
+      "number": 111,
+      "speaker": "REGAN",
+      "text": "Our father he hath writ, so hath our sister,"
+    },
+    {
+      "number": 112,
+      "speaker": "REGAN",
+      "text": "Of differences, which I least thought it fit"
+    },
+    {
+      "number": 113,
+      "speaker": "REGAN",
+      "text": "To answer from our home; the several messengers"
+    },
+    {
+      "number": 114,
+      "speaker": "REGAN",
+      "text": "From hence attend dispatch. Our good old friend,"
+    },
+    {
+      "number": 115,
+      "speaker": "REGAN",
+      "text": "Lay comforts to your bosom; and bestow"
+    },
+    {
+      "number": 116,
+      "speaker": "REGAN",
+      "text": "Your needful counsel to our business,"
+    },
+    {
+      "number": 117,
+      "speaker": "REGAN",
+      "text": "Which craves the instant use."
+    },
+    {
+      "number": 117,
+      "speaker": "GLOUCESTER",
+      "text": "I serve you, madam:"
+    },
+    {
+      "number": 118,
+      "speaker": "GLOUCESTER",
+      "text": "Your graces are right welcome."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Edmund, and Curan meets him."
+    },
+    {
+      "after_line": 10,
+      "text": "Exit."
+    },
+    {
+      "after_line": 16,
+      "text": "Enter Edgar."
+    },
+    {
+      "after_line": 16,
+      "text": "My father watches: O sir, fly this place; Intelligence is given where you are hid; You have now the good advantage of the night: Have you not spoken ’gainst the Duke of Cornwall? He’s coming hither: now, i’ the night, i’ the haste, And Regan with him: have you nothing said Upon his party ’gainst the Duke of Albany? Advise yourself."
+    },
+    {
+      "after_line": 22,
+      "text": "Exit Edgar."
+    },
+    {
+      "after_line": 26,
+      "text": "Enter Gloucester, and Servants with torches."
+    },
+    {
+      "after_line": 32,
+      "text": "Exeunt some Servants."
+    },
+    {
+      "after_line": 74,
+      "text": "Enter Cornwall, Regan, and Attendants."
+    },
+    {
+      "after_line": 118,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act2_scene1_gloss1",
+      "line": 6,
+      "phrase": "ear-kissing arguments",
+      "definition": "whispered reports; rumors"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss2",
+      "line": 8,
+      "phrase": "likely wars",
+      "definition": "probable conflicts — between Cornwall and Albany"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss3",
+      "line": 14,
+      "phrase": "Queasy question",
+      "definition": "sensitive matter"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss4",
+      "line": 17,
+      "phrase": "intelligence",
+      "definition": "information; news"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss6",
+      "line": 22,
+      "phrase": "Fly, brother",
+      "definition": "Edmund's feigned urgency to Edgar"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss7",
+      "line": 20,
+      "phrase": "quit you well",
+      "definition": "defend yourself well"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss9",
+      "line": 23,
+      "phrase": "beget",
+      "definition": "produce; engender"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss11",
+      "line": 39,
+      "phrase": "fell motion",
+      "definition": "deadly thrust"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss12",
+      "line": 55,
+      "phrase": "discover",
+      "definition": "reveal; uncover"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss14",
+      "line": 54,
+      "phrase": "pight",
+      "definition": "resolved; determined"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss15",
+      "line": 56,
+      "phrase": "unpossessing bastard",
+      "definition": "propertyless illegitimate — Edmund's false quotation of Edgar"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss16",
+      "line": 48,
+      "phrase": "my worthy arch",
+      "definition": "my worthy chief — Edmund greeting Cornwall"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss18",
+      "line": 86,
+      "phrase": "consort",
+      "definition": "associate with"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss19",
+      "line": 89,
+      "phrase": "expense",
+      "definition": "extravagance; costly riot"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss20",
+      "line": 84,
+      "phrase": "tend upon",
+      "definition": "attend; serve"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss21",
+      "line": 6,
+      "phrase": "ear-kissing",
+      "definition": "whispered secretly"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss22",
+      "line": 8,
+      "phrase": "toward",
+      "definition": "in prospect; coming"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss23",
+      "line": 15,
+      "phrase": "briefness and fortune",
+      "definition": "speed and luck"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss25",
+      "line": 22,
+      "phrase": "Fly, brother",
+      "definition": "Edmund pretending concern for Edgar"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss26",
+      "line": 43,
+      "phrase": "my quarrel",
+      "definition": "my supposed dispute with Edgar"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss31",
+      "line": 47,
+      "phrase": "dispatch",
+      "definition": "kill"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss32",
+      "line": 69,
+      "phrase": "ports I’ll bar",
+      "definition": "I'll block the harbors"
+    },
+    {
+      "id": "king_lear_act2_scene1_gloss36",
+      "line": 48,
+      "phrase": "worthy arch and patron",
+      "definition": "Edmund's flattery of Cornwall"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act2_scene1_ann1",
+      "line_start": 30,
+      "line_end": 90,
+      "citation_display": "King Lear 2.1.30–90",
+      "category": "structural",
+      "title": "Edmund's deception of Gloucester — the subplot mirrors the main plot",
+      "body": "Edmund's theatrical self-wounding and instant framing of Edgar mirrors in miniature what the sisters are doing to Lear: a child exploits a parent's credulity, uses the rhetoric of filial piety, and drives the parent into immediate disinheritance of the other child. Gloucester disinheriting Edgar in 2.1 is the dramatic echo of Lear disinheriting Cordelia in 1.1. This parallelism is what makes Lear structurally unusual — a secondary plot that does not decorate the main plot but philosophically interrogates it. The two plots are two experiments testing the same question: can parental love survive the failure of its own perception?",
+      "sources": [
+        "William R. Elton, King Lear and the Gods (1966)",
+        "Russ McDonald, Shakespeare's Late Style (2006)"
+      ]
+    },
+    {
+      "id": "king_lear_act2_scene1_ann2",
+      "line_start": 75,
+      "line_end": 115,
+      "citation_display": "King Lear 2.1.75–115",
+      "category": "close_reading",
+      "title": "Edmund's fake wound — theater as evidence",
+      "body": "Edmund cuts his own arm to fabricate evidence that Edgar attacked him. The gesture anticipates Iago's way of manufacturing proofs from material fragments: a wound is more persuasive than a story. Gloucester accepts the evidence instantly and disinherits Edgar in a single line. The scene is Shakespeare's compressed lesson that physical signs can lie more fluently than language. It is also the Gloucester subplot's duplicate of Lear's 1.1 mistake: a parent mis-reading a staged performance as truth. Edmund, like the sisters, has learned that theater is more convincing than life.",
+      "sources": [
+        "Jonathan Bate, Soul of the Age (2008)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act2_scene1_q1",
+      "kind": "structural",
+      "prompt": "How does Edmund's framing of Edgar in 2.1 relate structurally to 1.1?",
+      "options": [
+        "The two scenes are unrelated",
+        "2.1 is the Gloucester-plot mirror of 1.1 — a parent disinheriting a true child on the word of a false one; the two plots run in deliberate parallel",
+        "Edgar is actually guilty in 2.1",
+        "Gloucester already knows Edgar is innocent"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 30,
+      "anchor_line_end": 90
+    },
+    {
+      "id": "king_lear_act2_scene1_q2",
+      "kind": "structural",
+      "prompt": "Edmund cutting his own arm to frame Edgar parallels what earlier moment?",
+      "options": [
+        "It has no parallel",
+        "Lear's 1.1 mis-reading of staged filial performance as truth — Gloucester too accepts a staged appearance as evidence; the two plots mirror in method",
+        "The banishment of Kent",
+        "The Fool's entry"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 75,
+      "anchor_line_end": 115
+    }
+  ]
+}

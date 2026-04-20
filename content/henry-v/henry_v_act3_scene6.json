@@ -1,0 +1,1221 @@
+{
+  "section_id": "henry_v_act3_scene6",
+  "work_id": "henry-v",
+  "sequence": 15,
+  "act": 3,
+  "scene": 6,
+  "kind": "scene",
+  "scene_title": "The English camp in Picardy",
+  "line_count": 151,
+  "word_count": 1409,
+  "est_read_minutes": 7,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "GOWER",
+      "text": "How now, Captain Fluellen! come you from the bridge?"
+    },
+    {
+      "number": 2,
+      "speaker": "FLUELLEN",
+      "text": "I assure you, there is very excellent services committed at the bridge."
+    },
+    {
+      "number": 3,
+      "speaker": "GOWER",
+      "text": "Is the Duke of Exeter safe?"
+    },
+    {
+      "number": 4,
+      "speaker": "FLUELLEN",
+      "text": "The Duke of Exeter is as magnanimous as Agamemnon; and a man"
+    },
+    {
+      "number": 5,
+      "speaker": "FLUELLEN",
+      "text": "that I love and honour with my soul, and my heart, and"
+    },
+    {
+      "number": 6,
+      "speaker": "FLUELLEN",
+      "text": "my duty, and my life, and my living, and my uttermost power:"
+    },
+    {
+      "number": 7,
+      "speaker": "FLUELLEN",
+      "text": "he is not—God be praised and blessed!—any hurt in the world; but"
+    },
+    {
+      "number": 8,
+      "speaker": "FLUELLEN",
+      "text": "keeps the bridge most valiantly, with excellent discipline. There is an aunchient"
+    },
+    {
+      "number": 9,
+      "speaker": "FLUELLEN",
+      "text": "lieutenant there at the pridge, I think in my very conscience he"
+    },
+    {
+      "number": 10,
+      "speaker": "FLUELLEN",
+      "text": "is as valiant a man as Mark Antony; and he is a"
+    },
+    {
+      "number": 11,
+      "speaker": "FLUELLEN",
+      "text": "man of no estimation in the world; but I did see him"
+    },
+    {
+      "number": 12,
+      "speaker": "FLUELLEN",
+      "text": "do as gallant service."
+    },
+    {
+      "number": 12,
+      "speaker": "GOWER",
+      "text": "What do you call him?"
+    },
+    {
+      "number": 13,
+      "speaker": "FLUELLEN",
+      "text": "He is call’d Aunchient Pistol."
+    },
+    {
+      "number": 13,
+      "speaker": "GOWER",
+      "text": "I know him not."
+    },
+    {
+      "number": 14,
+      "speaker": "FLUELLEN",
+      "text": "Here is the man."
+    },
+    {
+      "number": 15,
+      "speaker": "PISTOL",
+      "text": "Captain, I thee beseech to do me favours:"
+    },
+    {
+      "number": 16,
+      "speaker": "PISTOL",
+      "text": "The Duke of Exeter doth love thee well."
+    },
+    {
+      "number": 17,
+      "speaker": "FLUELLEN",
+      "text": "Ay, I praise God; and I have merited some love at his hands."
+    },
+    {
+      "number": 18,
+      "speaker": "PISTOL",
+      "text": "Bardolph, a soldier, firm and sound of heart,"
+    },
+    {
+      "number": 19,
+      "speaker": "PISTOL",
+      "text": "And of buxom valour, hath by cruel fate,"
+    },
+    {
+      "number": 20,
+      "speaker": "PISTOL",
+      "text": "And giddy Fortune’s furious fickle wheel,"
+    },
+    {
+      "number": 21,
+      "speaker": "PISTOL",
+      "text": "That goddess blind,"
+    },
+    {
+      "number": 22,
+      "speaker": "PISTOL",
+      "text": "That stands upon the rolling restless stone—"
+    },
+    {
+      "number": 23,
+      "speaker": "FLUELLEN",
+      "text": "By your patience, Aunchient Pistol. Fortune is painted blind, with a muffler"
+    },
+    {
+      "number": 24,
+      "speaker": "FLUELLEN",
+      "text": "afore his eyes, to signify to you that Fortune is blind; and"
+    },
+    {
+      "number": 25,
+      "speaker": "FLUELLEN",
+      "text": "she is painted also with a wheel, to signify to you, which"
+    },
+    {
+      "number": 26,
+      "speaker": "FLUELLEN",
+      "text": "is the moral of it, that she is turning, and inconstant, and"
+    },
+    {
+      "number": 27,
+      "speaker": "FLUELLEN",
+      "text": "mutability, and variation: and her foot, look you, is fixed upon a"
+    },
+    {
+      "number": 28,
+      "speaker": "FLUELLEN",
+      "text": "spherical stone, which rolls, and rolls, and rolls: in good truth, the"
+    },
+    {
+      "number": 29,
+      "speaker": "FLUELLEN",
+      "text": "poet makes a most excellent description of it: Fortune is an excellent"
+    },
+    {
+      "number": 30,
+      "speaker": "FLUELLEN",
+      "text": "moral."
+    },
+    {
+      "number": 31,
+      "speaker": "PISTOL",
+      "text": "Fortune is Bardolph’s foe, and frowns on him;"
+    },
+    {
+      "number": 32,
+      "speaker": "PISTOL",
+      "text": "For he hath stolen a pax, and hanged must a’ be:"
+    },
+    {
+      "number": 33,
+      "speaker": "PISTOL",
+      "text": "A damned death!"
+    },
+    {
+      "number": 34,
+      "speaker": "PISTOL",
+      "text": "Let gallows gape for dog; let man go free"
+    },
+    {
+      "number": 35,
+      "speaker": "PISTOL",
+      "text": "And let not hemp his windpipe suffocate:"
+    },
+    {
+      "number": 36,
+      "speaker": "PISTOL",
+      "text": "But Exeter hath given the doom of death"
+    },
+    {
+      "number": 37,
+      "speaker": "PISTOL",
+      "text": "For pax of little price."
+    },
+    {
+      "number": 38,
+      "speaker": "PISTOL",
+      "text": "Therefore, go speak: the duke will hear thy voice;"
+    },
+    {
+      "number": 39,
+      "speaker": "PISTOL",
+      "text": "And let not Bardolph’s vital thread be cut"
+    },
+    {
+      "number": 40,
+      "speaker": "PISTOL",
+      "text": "With edge of penny cord and vile reproach:"
+    },
+    {
+      "number": 41,
+      "speaker": "PISTOL",
+      "text": "Speak, captain, for his life, and I will thee requite."
+    },
+    {
+      "number": 42,
+      "speaker": "FLUELLEN",
+      "text": "Aunchient Pistol, I do partly understand your meaning."
+    },
+    {
+      "number": 43,
+      "speaker": "PISTOL",
+      "text": "Why then, rejoice therefore."
+    },
+    {
+      "number": 44,
+      "speaker": "FLUELLEN",
+      "text": "Certainly, aunchient, it is not a thing to rejoice at: for if,"
+    },
+    {
+      "number": 45,
+      "speaker": "FLUELLEN",
+      "text": "look you, he were my brother, I would desire the duke to"
+    },
+    {
+      "number": 46,
+      "speaker": "FLUELLEN",
+      "text": "use his good pleasure, and put him to execution; for discipline ought"
+    },
+    {
+      "number": 47,
+      "speaker": "FLUELLEN",
+      "text": "to be used."
+    },
+    {
+      "number": 48,
+      "speaker": "PISTOL",
+      "text": "Die and be damned! and figo for thy friendship!"
+    },
+    {
+      "number": 49,
+      "speaker": "FLUELLEN",
+      "text": "It is well."
+    },
+    {
+      "number": 49,
+      "speaker": "PISTOL",
+      "text": "The fig of Spain!"
+    },
+    {
+      "number": 50,
+      "speaker": "FLUELLEN",
+      "text": "Very good."
+    },
+    {
+      "number": 51,
+      "speaker": "GOWER",
+      "text": "Why, this is an arrant counterfeit rascal; I remember him now; a bawd, a cutpurse."
+    },
+    {
+      "number": 52,
+      "speaker": "FLUELLEN",
+      "text": "I’ll assure you, a’ uttered as prave words at the pridge as"
+    },
+    {
+      "number": 53,
+      "speaker": "FLUELLEN",
+      "text": "you shall see in a summer’s day. But it is very well;"
+    },
+    {
+      "number": 54,
+      "speaker": "FLUELLEN",
+      "text": "what he has spoke to me, that is well, I warrant you,"
+    },
+    {
+      "number": 55,
+      "speaker": "FLUELLEN",
+      "text": "when time is serve."
+    },
+    {
+      "number": 56,
+      "speaker": "GOWER",
+      "text": "Why, ’tis a gull, a fool, a rogue, that now and then"
+    },
+    {
+      "number": 57,
+      "speaker": "GOWER",
+      "text": "goes to the wars, to grace himself at his return into London"
+    },
+    {
+      "number": 58,
+      "speaker": "GOWER",
+      "text": "under the form of a soldier. And such fellows are perfect in"
+    },
+    {
+      "number": 59,
+      "speaker": "GOWER",
+      "text": "the great commanders’ names: and they will learn you by rote where"
+    },
+    {
+      "number": 60,
+      "speaker": "GOWER",
+      "text": "services were done; at such and such a sconce, at such a"
+    },
+    {
+      "number": 61,
+      "speaker": "GOWER",
+      "text": "breach, at such a convoy; who came off bravely, who was shot,"
+    },
+    {
+      "number": 62,
+      "speaker": "GOWER",
+      "text": "who disgraced, what terms the enemy stood on; and this they con"
+    },
+    {
+      "number": 63,
+      "speaker": "GOWER",
+      "text": "perfectly in the phrase of war, which they trick up with new-tuned"
+    },
+    {
+      "number": 64,
+      "speaker": "GOWER",
+      "text": "oaths: and what a beard of the general’s cut and a horrid"
+    },
+    {
+      "number": 65,
+      "speaker": "GOWER",
+      "text": "suit of the camp will do among foaming bottles and ale-washed wits,"
+    },
+    {
+      "number": 66,
+      "speaker": "GOWER",
+      "text": "is wonderful to be thought on. But you must learn to know"
+    },
+    {
+      "number": 67,
+      "speaker": "GOWER",
+      "text": "such slanders of the age, or else you may be marvellously mistook."
+    },
+    {
+      "number": 68,
+      "speaker": "FLUELLEN",
+      "text": "I tell you what, Captain Gower; I do perceive he is not"
+    },
+    {
+      "number": 69,
+      "speaker": "FLUELLEN",
+      "text": "the man that he would gladly make show to the world he"
+    },
+    {
+      "number": 70,
+      "speaker": "FLUELLEN",
+      "text": "is: if I find a hole in his coat, I will tell"
+    },
+    {
+      "number": 71,
+      "speaker": "FLUELLEN",
+      "text": "him my mind. Hark you, the king is coming, and I must"
+    },
+    {
+      "number": 72,
+      "speaker": "FLUELLEN",
+      "text": "speak with him from the pridge."
+    },
+    {
+      "number": 73,
+      "speaker": "KING HENRY",
+      "text": "How now, Fluellen! camest thou from the bridge?"
+    },
+    {
+      "number": 74,
+      "speaker": "FLUELLEN",
+      "text": "Ay, so please your majesty. The Duke of Exeter has very gallantly"
+    },
+    {
+      "number": 75,
+      "speaker": "FLUELLEN",
+      "text": "maintained the pridge: the French is gone off, look you; and there"
+    },
+    {
+      "number": 76,
+      "speaker": "FLUELLEN",
+      "text": "is gallant and most prave passages; marry, th’ athversary was have possession"
+    },
+    {
+      "number": 77,
+      "speaker": "FLUELLEN",
+      "text": "of the pridge; but he is enforced to retire, and the Duke"
+    },
+    {
+      "number": 78,
+      "speaker": "FLUELLEN",
+      "text": "of Exeter is master of the pridge: I can tell your majesty,"
+    },
+    {
+      "number": 79,
+      "speaker": "FLUELLEN",
+      "text": "the duke is a prave man."
+    },
+    {
+      "number": 79,
+      "speaker": "KING HENRY",
+      "text": "What men have you lost, Fluellen?"
+    },
+    {
+      "number": 80,
+      "speaker": "FLUELLEN",
+      "text": "The perdition of th’ athversary hath been very great, reasonable great: marry,"
+    },
+    {
+      "number": 81,
+      "speaker": "FLUELLEN",
+      "text": "for my part, I think the duke hath lost never a man,"
+    },
+    {
+      "number": 82,
+      "speaker": "FLUELLEN",
+      "text": "but one that is like to be executed for robbing a church,"
+    },
+    {
+      "number": 83,
+      "speaker": "FLUELLEN",
+      "text": "one Bardolph, if your majesty know the man: his face is all"
+    },
+    {
+      "number": 84,
+      "speaker": "FLUELLEN",
+      "text": "bubukles, and whelks, and knobs, and flames o’ fire: and his lips"
+    },
+    {
+      "number": 85,
+      "speaker": "FLUELLEN",
+      "text": "blows at his nose, and it is like a coal of fire,"
+    },
+    {
+      "number": 86,
+      "speaker": "FLUELLEN",
+      "text": "sometimes plue and sometimes red; but his nose is executed, and his"
+    },
+    {
+      "number": 87,
+      "speaker": "FLUELLEN",
+      "text": "fire’s out."
+    },
+    {
+      "number": 88,
+      "speaker": "KING HENRY",
+      "text": "We would have all such offenders so cut off: and we give"
+    },
+    {
+      "number": 89,
+      "speaker": "KING HENRY",
+      "text": "express charge, that in our marches through the country, there be nothing"
+    },
+    {
+      "number": 90,
+      "speaker": "KING HENRY",
+      "text": "compelled from the villages, nothing taken but paid for, none of the"
+    },
+    {
+      "number": 91,
+      "speaker": "KING HENRY",
+      "text": "French upbraided or abused in disdainful language; for when lenity and cruelty"
+    },
+    {
+      "number": 92,
+      "speaker": "KING HENRY",
+      "text": "play for a kingdom, the gentler gamester is the soonest winner."
+    },
+    {
+      "number": 93,
+      "speaker": "MONTJOY",
+      "text": "You know me by my habit."
+    },
+    {
+      "number": 94,
+      "speaker": "KING HENRY",
+      "text": "Well then I know thee: what shall I know of thee?"
+    },
+    {
+      "number": 95,
+      "speaker": "MONTJOY",
+      "text": "My master’s mind."
+    },
+    {
+      "number": 95,
+      "speaker": "KING HENRY",
+      "text": "Unfold it."
+    },
+    {
+      "number": 96,
+      "speaker": "MONTJOY",
+      "text": "Thus says my king: Say thou to Harry of England: Though we"
+    },
+    {
+      "number": 97,
+      "speaker": "MONTJOY",
+      "text": "seemed dead, we did but sleep: advantage is a better soldier than"
+    },
+    {
+      "number": 98,
+      "speaker": "MONTJOY",
+      "text": "rashness. Tell him we could have rebuked him at Harfleur, but that"
+    },
+    {
+      "number": 99,
+      "speaker": "MONTJOY",
+      "text": "we thought not good to bruise an injury till it were full"
+    },
+    {
+      "number": 100,
+      "speaker": "MONTJOY",
+      "text": "ripe: now we speak upon our cue, and our voice is imperial:"
+    },
+    {
+      "number": 101,
+      "speaker": "MONTJOY",
+      "text": "England shall repent his folly, see his weakness, and admire our sufferance."
+    },
+    {
+      "number": 102,
+      "speaker": "MONTJOY",
+      "text": "Bid him therefore consider of his ransom; which must proportion the losses"
+    },
+    {
+      "number": 103,
+      "speaker": "MONTJOY",
+      "text": "we have borne, the subjects we have lost, the disgrace we have"
+    },
+    {
+      "number": 104,
+      "speaker": "MONTJOY",
+      "text": "digested; which in weight to re-answer, his pettiness would bow under. For"
+    },
+    {
+      "number": 105,
+      "speaker": "MONTJOY",
+      "text": "our losses, his exchequer is too poor; for the effusion of our"
+    },
+    {
+      "number": 106,
+      "speaker": "MONTJOY",
+      "text": "blood, the muster of his kingdom too faint a number; and for"
+    },
+    {
+      "number": 107,
+      "speaker": "MONTJOY",
+      "text": "our disgrace, his own person, kneeling at our feet, but a weak"
+    },
+    {
+      "number": 108,
+      "speaker": "MONTJOY",
+      "text": "and worthless satisfaction. To this add defiance: and tell him, for conclusion,"
+    },
+    {
+      "number": 109,
+      "speaker": "MONTJOY",
+      "text": "he hath betrayed his followers, whose condemnation is pronounced. So far my"
+    },
+    {
+      "number": 110,
+      "speaker": "MONTJOY",
+      "text": "king and master; so much my office."
+    },
+    {
+      "number": 111,
+      "speaker": "KING HENRY",
+      "text": "What is thy name? I know thy quality."
+    },
+    {
+      "number": 112,
+      "speaker": "MONTJOY",
+      "text": "Montjoy."
+    },
+    {
+      "number": 113,
+      "speaker": "KING HENRY",
+      "text": "Thou dost thy office fairly. Turn thee back,"
+    },
+    {
+      "number": 114,
+      "speaker": "KING HENRY",
+      "text": "And tell thy king I do not seek him now;"
+    },
+    {
+      "number": 115,
+      "speaker": "KING HENRY",
+      "text": "But could be willing to march on to Calais"
+    },
+    {
+      "number": 116,
+      "speaker": "KING HENRY",
+      "text": "Without impeachment: for, to say the sooth,"
+    },
+    {
+      "number": 117,
+      "speaker": "KING HENRY",
+      "text": "Though ’tis no wisdom to confess so much"
+    },
+    {
+      "number": 118,
+      "speaker": "KING HENRY",
+      "text": "Unto an enemy of craft and vantage,"
+    },
+    {
+      "number": 119,
+      "speaker": "KING HENRY",
+      "text": "My people are with sickness much enfeebled,"
+    },
+    {
+      "number": 120,
+      "speaker": "KING HENRY",
+      "text": "My numbers lessened, and those few I have"
+    },
+    {
+      "number": 121,
+      "speaker": "KING HENRY",
+      "text": "Almost no better than so many French;"
+    },
+    {
+      "number": 122,
+      "speaker": "KING HENRY",
+      "text": "Who when they were in health, I tell thee, herald,"
+    },
+    {
+      "number": 123,
+      "speaker": "KING HENRY",
+      "text": "I thought upon one pair of English legs"
+    },
+    {
+      "number": 124,
+      "speaker": "KING HENRY",
+      "text": "Did march three Frenchmen. Yet, forgive me, God,"
+    },
+    {
+      "number": 125,
+      "speaker": "KING HENRY",
+      "text": "That I do brag thus! This your air of France"
+    },
+    {
+      "number": 126,
+      "speaker": "KING HENRY",
+      "text": "Hath blown that vice in me; I must repent."
+    },
+    {
+      "number": 127,
+      "speaker": "KING HENRY",
+      "text": "Go therefore, tell thy master here I am;"
+    },
+    {
+      "number": 128,
+      "speaker": "KING HENRY",
+      "text": "My ransom is this frail and worthless trunk,"
+    },
+    {
+      "number": 129,
+      "speaker": "KING HENRY",
+      "text": "My army but a weak and sickly guard;"
+    },
+    {
+      "number": 130,
+      "speaker": "KING HENRY",
+      "text": "Yet, God before, tell him we will come on,"
+    },
+    {
+      "number": 131,
+      "speaker": "KING HENRY",
+      "text": "Though France himself and such another neighbour"
+    },
+    {
+      "number": 132,
+      "speaker": "KING HENRY",
+      "text": "Stand in our way. There’s for thy labour, Montjoy."
+    },
+    {
+      "number": 133,
+      "speaker": "KING HENRY",
+      "text": "Go, bid thy master well advise himself:"
+    },
+    {
+      "number": 134,
+      "speaker": "KING HENRY",
+      "text": "If we may pass, we will; if we be hinder’d,"
+    },
+    {
+      "number": 135,
+      "speaker": "KING HENRY",
+      "text": "We shall your tawny ground with your red blood"
+    },
+    {
+      "number": 136,
+      "speaker": "KING HENRY",
+      "text": "Discolour; and so, Montjoy, fare you well."
+    },
+    {
+      "number": 137,
+      "speaker": "KING HENRY",
+      "text": "The sum of all our answer is but this:"
+    },
+    {
+      "number": 138,
+      "speaker": "KING HENRY",
+      "text": "We would not seek a battle, as we are;"
+    },
+    {
+      "number": 139,
+      "speaker": "KING HENRY",
+      "text": "Nor, as we are, we say we will not shun it:"
+    },
+    {
+      "number": 140,
+      "speaker": "KING HENRY",
+      "text": "So tell your master."
+    },
+    {
+      "number": 141,
+      "speaker": "MONTJOY",
+      "text": "I shall deliver so. Thanks to your highness."
+    },
+    {
+      "number": 142,
+      "speaker": "GLOUCESTER",
+      "text": "I hope they will not come upon us now."
+    },
+    {
+      "number": 143,
+      "speaker": "KING HENRY",
+      "text": "We are in God’s hands, brother, not in theirs."
+    },
+    {
+      "number": 144,
+      "speaker": "KING HENRY",
+      "text": "March to the bridge; it now draws toward night:"
+    },
+    {
+      "number": 145,
+      "speaker": "KING HENRY",
+      "text": "Beyond the river we’ll encamp ourselves,"
+    },
+    {
+      "number": 146,
+      "speaker": "KING HENRY",
+      "text": "And on tomorrow bid them march away."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Gower and Fluellen, meeting."
+    },
+    {
+      "after_line": 13,
+      "text": "Enter Pistol."
+    },
+    {
+      "after_line": 49,
+      "text": "Exit."
+    },
+    {
+      "after_line": 72,
+      "text": "Drum heard."
+    },
+    {
+      "after_line": 72,
+      "text": "Drum and colours. Enter King Henry, Gloucester and Soldiers."
+    },
+    {
+      "after_line": 72,
+      "text": "God bless your majesty!"
+    },
+    {
+      "after_line": 92,
+      "text": "Tucket. Enter Montjoy."
+    },
+    {
+      "after_line": 141,
+      "text": "Exit."
+    },
+    {
+      "after_line": 146,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act3_scene6_gloss1",
+      "line": 1,
+      "phrase": "bridge",
+      "definition": "a contested bridge on the march to Calais — Exeter holds it"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss2",
+      "line": 4,
+      "phrase": "Agamemnon",
+      "definition": "Greek king who led the expedition against Troy — Fluellen's classical flattery of Exeter"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss3",
+      "line": 8,
+      "phrase": "aunchient lieutenant",
+      "definition": "ensign-lieutenant — Pistol's rank (pronounced Fluellen-style)"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss4",
+      "line": 9,
+      "phrase": "pridge",
+      "definition": "bridge, in Fluellen's Welsh pronunciation — dialect marker, not a typo"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss5",
+      "line": 10,
+      "phrase": "Mark Antony",
+      "definition": "Roman general renowned for loyalty and martial skill — another classical flattery from Fluellen"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss6",
+      "line": 11,
+      "phrase": "no estimation in the world",
+      "definition": "no reputation — Fluellen's accurate judgment of Pistol's social standing, mixed with praise for his soldiering"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss7",
+      "line": 19,
+      "phrase": "buxom valour",
+      "definition": "vigorous courage — 'buxom' originally = pliant, lively"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss8",
+      "line": 20,
+      "phrase": "giddy Fortune’s furious fickle wheel",
+      "definition": "Fortune's spinning wheel — medieval allegorical image; Pistol inflates it with alliteration"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss9",
+      "line": 21,
+      "phrase": "goddess blind",
+      "definition": "Fortune personified as blindfolded — the conventional medieval figure"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss10",
+      "line": 23,
+      "phrase": "Fortune is painted blind, with a muffler afore his eyes",
+      "definition": "Fluellen's scholarly elaboration of the Fortune-allegory Pistol began — she wears a blindfold"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss11",
+      "line": 27,
+      "phrase": "foot, look you, is fixed upon a spherical stone",
+      "definition": "Fortune's traditional emblem — she balances on a sphere that keeps her unstable"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss12",
+      "line": 32,
+      "phrase": "pax",
+      "definition": "a small tablet or medallion (typically metal or wood) kissed during the Mass — Bardolph stole one from a church"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss13",
+      "line": 35,
+      "phrase": "hemp",
+      "definition": "the rope of the hangman — 'hemp's windpipe' = be hanged"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss14",
+      "line": 36,
+      "phrase": "doom of death",
+      "definition": "sentence of death"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss15",
+      "line": 40,
+      "phrase": "penny cord",
+      "definition": "cheap rope — the hangman's noose"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss16",
+      "line": 41,
+      "phrase": "requite",
+      "definition": "repay; reward"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss17",
+      "line": 46,
+      "phrase": "discipline ought to be used",
+      "definition": "military discipline must be enforced — Fluellen refuses to intercede; Bardolph hangs"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss18",
+      "line": 48,
+      "phrase": "figo",
+      "definition": "fig (Spanish/Italian) — an obscene gesture of contempt, thumb thrust between fingers"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss19",
+      "line": 49,
+      "phrase": "fig of Spain",
+      "definition": "same obscene gesture, named as a Spanish import — Pistol at full bombast"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss20",
+      "line": 51,
+      "phrase": "arrant",
+      "definition": "absolute; downright (intensifier)"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss21",
+      "line": 51,
+      "phrase": "bawd",
+      "definition": "pimp; brothel-keeper"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss22",
+      "line": 51,
+      "phrase": "cutpurse",
+      "definition": "pickpocket"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss23",
+      "line": 52,
+      "phrase": "prave",
+      "definition": "brave, in Fluellen's Welsh accent — dialect marker"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss24",
+      "line": 56,
+      "phrase": "gull",
+      "definition": "dupe; fool (derived from the gull-bird, said to be easily caught)"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss25",
+      "line": 59,
+      "phrase": "by rote",
+      "definition": "by memorized routine"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss26",
+      "line": 60,
+      "phrase": "sconce",
+      "definition": "small fortification; also, slang for 'head'"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss27",
+      "line": 63,
+      "phrase": "trick up",
+      "definition": "dress up; embellish falsely"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss28",
+      "line": 64,
+      "phrase": "horrid suit of the camp",
+      "definition": "soldier's uniform worn to impress civilians"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss29",
+      "line": 65,
+      "phrase": "foaming bottles and ale-washed wits",
+      "definition": "drunken, beery wits — tavern audience for Pistol's battle-tales"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss30",
+      "line": 70,
+      "phrase": "hole in his coat",
+      "definition": "fault; flaw — Fluellen will watch for a pretext to act"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss31",
+      "line": 77,
+      "phrase": "enforced to retire",
+      "definition": "forced to withdraw"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss32",
+      "line": 82,
+      "phrase": "one that is like to be executed for robbing a church",
+      "definition": "Bardolph — his sentence; Fluellen reports it to Henry"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss33",
+      "line": 84,
+      "phrase": "bubukles, and whelks, and knobs",
+      "definition": "pimples, pustules, and swellings — Fluellen's clinical catalogue of Bardolph's inflamed nose"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss34",
+      "line": 85,
+      "phrase": "coal of fire",
+      "definition": "a burning ember — Bardolph's famously red nose"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss35",
+      "line": 86,
+      "phrase": "plue",
+      "definition": "blue, in Fluellen's Welsh accent"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss36",
+      "line": 88,
+      "phrase": "We would have all such offenders so cut off",
+      "definition": "Henry endorses the execution — no favouritism for an old Eastcheap companion"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss37",
+      "line": 90,
+      "phrase": "compelled from the villages",
+      "definition": "taken from the villages by force — Henry forbids plunder"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss38",
+      "line": 91,
+      "phrase": "lenity and cruelty play for a kingdom",
+      "definition": "when mercy and cruelty are both competing for a kingdom"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss39",
+      "line": 92,
+      "phrase": "gentler gamester is the soonest winner",
+      "definition": "the milder gambler wins fastest — Henry's governance maxim"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss40",
+      "line": 93,
+      "phrase": "habit",
+      "definition": "costume; clothing — Montjoy is identified by his herald's tabard"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss41",
+      "line": 99,
+      "phrase": "bruise an injury till it were full ripe",
+      "definition": "strike at a wound only when it is fully developed — French strategic rationalization"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss42",
+      "line": 100,
+      "phrase": "speak upon our cue",
+      "definition": "now is our moment to speak — theatrical image"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss43",
+      "line": 100,
+      "phrase": "voice is imperial",
+      "definition": "we speak with royal authority"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss44",
+      "line": 101,
+      "phrase": "admire our sufferance",
+      "definition": "marvel at our patience"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss45",
+      "line": 102,
+      "phrase": "consider of his ransom",
+      "definition": "think about what he will pay to avoid battle"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss46",
+      "line": 104,
+      "phrase": "pettiness would bow under",
+      "definition": "his small person would buckle under the weight"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss47",
+      "line": 105,
+      "phrase": "exchequer",
+      "definition": "treasury"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss48",
+      "line": 112,
+      "phrase": "Montjoy",
+      "definition": "the herald's titular name — the office of principal king-of-arms in France, renewed with each officeholder"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss49",
+      "line": 116,
+      "phrase": "Without impeachment",
+      "definition": "without hindrance; unopposed"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss50",
+      "line": 116,
+      "phrase": "say the sooth",
+      "definition": "tell the truth"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss51",
+      "line": 118,
+      "phrase": "craft and vantage",
+      "definition": "cunning and advantage"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss52",
+      "line": 125,
+      "phrase": "This your air of France",
+      "definition": "this French air — Henry blames Continental atmosphere for his boasting"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss53",
+      "line": 128,
+      "phrase": "frail and worthless trunk",
+      "definition": "my weak body — Henry's self-deprecation; 'trunk' = body"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss54",
+      "line": 131,
+      "phrase": "such another neighbour",
+      "definition": "an enemy as great as France itself"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss55",
+      "line": 135,
+      "phrase": "tawny ground with your red blood",
+      "definition": "the sunburnt French soil stained red with French blood"
+    },
+    {
+      "id": "henry_v_act3_scene6_gloss56",
+      "line": 143,
+      "phrase": "We are in God’s hands",
+      "definition": "Henry's keynote piety — the providentialism that frames his Agincourt victory"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act3_scene6_ann1",
+      "line_start": 32,
+      "line_end": 90,
+      "citation_display": "Henry V 3.6.32–90",
+      "category": "thematic",
+      "title": "Bardolph's execution — Henry's old companion killed, without comment",
+      "body": "The execution of Bardolph for stealing a pax (a small altar object) from a French church is one of the play's most pointed structural decisions. Bardolph had been Falstaff's companion throughout the Henry IV plays and one of Prince Hal's Eastcheap drinking-crew; he is an old familiar face, a man Henry knew well in his youth. Fluellen reports the execution almost incidentally: 'one Bardolph, if your majesty know the man: his face is all bubukles, and whelks, and knobs, and flames o' fire...' Henry answers, 'We would have all such offenders so cut off' — a single line, no recognition, no hesitation. Compare Hal's immediate, raw grief when he thought Falstaff was dead in Henry IV Part 1, 5.4. The Henry V who executes Bardolph has successfully eliminated the Prince Hal who knew him. Readers should register the absence of emotion as itself the scene's moral statement. And Henry's follow-on speech forbidding English plunder in the villages — 'the gentler gamester is the soonest winner' — is the same speech that just refused to protect an old companion from the hanging-tree. The morality is consistent, but only if you accept that Henry's conversion from Hal to king was complete.",
+      "sources": [
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)",
+        "Stephen Greenblatt, Will in the World (2004)",
+        "Graham Holderness, Shakespeare: The Histories (2000)"
+      ]
+    },
+    {
+      "id": "henry_v_act3_scene6_ann2",
+      "line_start": 113,
+      "line_end": 140,
+      "citation_display": "Henry V 3.6.113–140",
+      "category": "close_reading",
+      "title": "Henry's 'plain soldier' frankness with Montjoy",
+      "body": "When Montjoy the French herald arrives, Henry's answer is unusually direct: 'My people are with sickness much enfeebled, / My numbers lessened, and those few I have / Almost no better than so many French.' This is a private admission of weakness delivered to the enemy, and it is unexpected. The strategic calculation is one thing: Montjoy will report the English army as a ragged band, inviting the French to attack en masse rather than let the sick English march quietly to Calais. But there is also a rhetorical honesty here that Henry does not display elsewhere in the play. He even apologizes for boasting ('forgive me, God, / That I do brag thus'). The passage prepares us for the Henry of the night before Agincourt — the king who will walk among his men disguised and hear their complaints. The 'plain soldier' pose that dominates the wooing scene is already being rehearsed.",
+      "sources": [
+        "Anne Barton, 'The King Disguised,' in The Triple Bond (1975)",
+        "Andrew Gurr (ed.), King Henry V (New Cambridge Shakespeare, 1992)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act3_scene6_q1",
+      "kind": "inference",
+      "prompt": "How does Henry respond to the news that his old Eastcheap companion Bardolph is to be executed?",
+      "options": [
+        "With private grief",
+        "By pardoning Bardolph",
+        "With a single line endorsing the execution — 'We would have all such offenders so cut off' — showing that Prince Hal has been successfully eliminated from the present king",
+        "By sending him back to England in chains"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 30,
+      "anchor_line_start": 82,
+      "anchor_line_end": 90
+    },
+    {
+      "id": "henry_v_act3_scene6_q2",
+      "kind": "comprehension",
+      "prompt": "What does Henry tell Montjoy about the English army's condition?",
+      "options": [
+        "That it is in full health",
+        "That the soldiers are enfeebled by sickness and reduced in numbers — a candid admission of weakness, delivered to the enemy",
+        "That reinforcements have just arrived from England",
+        "That the Dauphin has already surrendered"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 119,
+      "anchor_line_end": 122
+    },
+    {
+      "id": "henry_v_act3_scene6_q3",
+      "kind": "theme",
+      "prompt": "Henry's maxim 'the gentler gamester is the soonest winner' (line 92) refers to —",
+      "options": [
+        "A recommendation that soldiers play chess",
+        "His policy of forbidding plunder from French villages — strict discipline and payment for supplies, to conciliate the local population and speed the march",
+        "A proverb about card games",
+        "Instruction on how to treat horses"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 88,
+      "anchor_line_end": 92
+    }
+  ]
+}

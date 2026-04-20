@@ -1,0 +1,276 @@
+{
+  "section_id": "julius_caesar_act5_scene4",
+  "work_id": "julius-caesar",
+  "sequence": 17,
+  "act": 5,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "Another part of the field",
+  "line_count": 33,
+  "word_count": 246,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "BRUTUS",
+      "text": "Yet, countrymen, O, yet hold up your heads!"
+    },
+    {
+      "number": 2,
+      "speaker": "CATO",
+      "text": "What bastard doth not? Who will go with me?"
+    },
+    {
+      "number": 3,
+      "speaker": "CATO",
+      "text": "I will proclaim my name about the field:"
+    },
+    {
+      "number": 4,
+      "speaker": "CATO",
+      "text": "I am the son of Marcus Cato, ho!"
+    },
+    {
+      "number": 5,
+      "speaker": "CATO",
+      "text": "A foe to tyrants, and my country’s friend;"
+    },
+    {
+      "number": 6,
+      "speaker": "CATO",
+      "text": "I am the son of Marcus Cato, ho!"
+    },
+    {
+      "number": 7,
+      "speaker": "BRUTUS",
+      "text": "And I am Brutus, Marcus Brutus, I;"
+    },
+    {
+      "number": 8,
+      "speaker": "BRUTUS",
+      "text": "Brutus, my country’s friend; know me for Brutus!"
+    },
+    {
+      "number": 9,
+      "speaker": "LUCILIUS",
+      "text": "O young and noble Cato, art thou down?"
+    },
+    {
+      "number": 10,
+      "speaker": "LUCILIUS",
+      "text": "Why, now thou diest as bravely as Titinius;"
+    },
+    {
+      "number": 11,
+      "speaker": "LUCILIUS",
+      "text": "And mayst be honour’d, being Cato’s son."
+    },
+    {
+      "number": 12,
+      "speaker": "FIRST SOLDIER",
+      "text": "Yield, or thou diest."
+    },
+    {
+      "number": 12,
+      "speaker": "LUCILIUS",
+      "text": "Only I yield to die:"
+    },
+    {
+      "number": 13,
+      "speaker": "LUCILIUS",
+      "text": "There is so much that thou wilt kill me straight;"
+    },
+    {
+      "number": 14,
+      "speaker": "LUCILIUS",
+      "text": "Kill Brutus, and be honour’d in his death."
+    },
+    {
+      "number": 15,
+      "speaker": "FIRST SOLDIER",
+      "text": "We must not. A noble prisoner!"
+    },
+    {
+      "number": 16,
+      "speaker": "SECOND SOLDIER",
+      "text": "Room, ho! Tell Antony, Brutus is ta’en."
+    },
+    {
+      "number": 17,
+      "speaker": "FIRST SOLDIER",
+      "text": "I’ll tell the news. Here comes the general."
+    },
+    {
+      "number": 18,
+      "speaker": "FIRST SOLDIER",
+      "text": "Brutus is ta’en, Brutus is ta’en, my lord."
+    },
+    {
+      "number": 19,
+      "speaker": "ANTONY",
+      "text": "Where is he?"
+    },
+    {
+      "number": 19,
+      "speaker": "LUCILIUS",
+      "text": "Safe, Antony; Brutus is safe enough:"
+    },
+    {
+      "number": 20,
+      "speaker": "LUCILIUS",
+      "text": "I dare assure thee that no enemy"
+    },
+    {
+      "number": 21,
+      "speaker": "LUCILIUS",
+      "text": "Shall ever take alive the noble Brutus:"
+    },
+    {
+      "number": 22,
+      "speaker": "LUCILIUS",
+      "text": "The gods defend him from so great a shame!"
+    },
+    {
+      "number": 23,
+      "speaker": "LUCILIUS",
+      "text": "When you do find him, or alive or dead,"
+    },
+    {
+      "number": 24,
+      "speaker": "LUCILIUS",
+      "text": "He will be found like Brutus, like himself."
+    },
+    {
+      "number": 25,
+      "speaker": "ANTONY",
+      "text": "This is not Brutus, friend; but, I assure you,"
+    },
+    {
+      "number": 26,
+      "speaker": "ANTONY",
+      "text": "A prize no less in worth: keep this man safe;"
+    },
+    {
+      "number": 27,
+      "speaker": "ANTONY",
+      "text": "Give him all kindness: I had rather have"
+    },
+    {
+      "number": 28,
+      "speaker": "ANTONY",
+      "text": "Such men my friends than enemies. Go on,"
+    },
+    {
+      "number": 29,
+      "speaker": "ANTONY",
+      "text": "And see whether Brutus be alive or dead;"
+    },
+    {
+      "number": 30,
+      "speaker": "ANTONY",
+      "text": "And bring us word unto Octavius’ tent"
+    },
+    {
+      "number": 31,
+      "speaker": "ANTONY",
+      "text": "How everything is chanced."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Alarum. Enter fighting, Soldiers of both armies; then Brutus, young Cato, Lucilius, and others."
+    },
+    {
+      "after_line": 8,
+      "text": "Exit."
+    },
+    {
+      "after_line": 13,
+      "text": "Offering money."
+    },
+    {
+      "after_line": 17,
+      "text": "Enter Antony."
+    },
+    {
+      "after_line": 31,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "julius_caesar_act5_scene4_gloss1",
+      "line": 2,
+      "phrase": "bastard",
+      "definition": "no true Roman; one not born of Roman stock (Cato's taunt)"
+    },
+    {
+      "id": "julius_caesar_act5_scene4_gloss2",
+      "line": 4,
+      "phrase": "son of Marcus Cato",
+      "definition": "young Cato, Portia's brother, Cato the Younger's son; he dies at Philippi"
+    },
+    {
+      "id": "julius_caesar_act5_scene4_gloss3",
+      "line": 5,
+      "phrase": "foe to tyrants",
+      "definition": "Cato's family slogan; the inherited republican identity"
+    },
+    {
+      "id": "julius_caesar_act5_scene4_gloss4",
+      "line": 7,
+      "phrase": "I am Brutus, Marcus Brutus, I",
+      "definition": "Lucilius pretends to be Brutus, drawing fire away from the real Brutus; Plutarch records this ruse"
+    },
+    {
+      "id": "julius_caesar_act5_scene4_gloss5",
+      "line": 12,
+      "phrase": "Only I yield to die",
+      "definition": "I yield only to die (not as a captive)"
+    },
+    {
+      "id": "julius_caesar_act5_scene4_gloss6",
+      "line": 22,
+      "phrase": "The gods defend him from so great a shame",
+      "definition": "may the gods keep Brutus from the shame of being taken alive — Lucilius's plea that Brutus has died freely"
+    },
+    {
+      "id": "julius_caesar_act5_scene4_gloss7",
+      "line": 26,
+      "phrase": "A prize no less in worth",
+      "definition": "Antony recognises Lucilius's loyalty as itself valuable — an act of mercy that characterises him"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "julius_caesar_act5_scene4_ann1",
+      "line_start": 7,
+      "line_end": 27,
+      "citation_display": "Julius Caesar 5.4.7–27",
+      "category": "historical",
+      "title": "Lucilius pretends to be Brutus — and Antony spares him",
+      "body": "The scene is short and does specific work. Lucilius, captured, announces himself as Brutus to draw fire away from the real Brutus; Antony realises the truth and, notably, spares him: 'A prize no less in worth: keep this man safe; / Give him all kindness: I had rather have / Such men my friends than enemies.'\n\nPlutarch records the incident (*Life of Brutus* §50). Shakespeare uses it for one last characterisation of Antony: the political actor who proscribed senators in 4.1 is also, at the specific moment of victory, capable of an act of mercy. Shakespeare's Antony is not a monster; he is a calculating politician with real feeling for personal loyalty. The moment also quietly rehabilitates the political category of the honourable enemy — an idea the play keeps alive even as its main action shows its disappearance. Lucilius, who spoke the scene's most moving lines ('The gods defend him from so great a shame'), has acted as Brutus's surrogate; Antony treats him as one.",
+      "sources": [
+        "Plutarch, *Life of Brutus* §50 (North, 1579)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "julius_caesar_act5_scene4_q1",
+      "kind": "comprehension",
+      "prompt": "Why does Lucilius pretend to be Brutus?",
+      "options": [
+        "He has lost his memory",
+        "To draw the enemy's fire and let the real Brutus escape — a historical incident Shakespeare takes from Plutarch; Antony recognises the trick and, notably, spares Lucilius",
+        "He is confused",
+        "To gain a reward"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 7,
+      "anchor_line_end": 27
+    }
+  ]
+}

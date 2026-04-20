@@ -1,0 +1,284 @@
+{
+  "section_id": "romeo_and_juliet_act3_scene4",
+  "work_id": "romeo-and-juliet",
+  "sequence": 17,
+  "act": 3,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "A room in Capulet's house",
+  "line_count": 37,
+  "word_count": 297,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CAPULET",
+      "text": "Things have fall’n out, sir, so unluckily,"
+    },
+    {
+      "number": 2,
+      "speaker": "CAPULET",
+      "text": "That we have had no time to move our daughter:"
+    },
+    {
+      "number": 3,
+      "speaker": "CAPULET",
+      "text": "Look you, she loved her kinsman Tybalt dearly,"
+    },
+    {
+      "number": 4,
+      "speaker": "CAPULET",
+      "text": "And so did I:—Well, we were born to die."
+    },
+    {
+      "number": 5,
+      "speaker": "CAPULET",
+      "text": "’Tis very late, she’ll not come down to-night:"
+    },
+    {
+      "number": 6,
+      "speaker": "CAPULET",
+      "text": "I promise you, but for your company,"
+    },
+    {
+      "number": 7,
+      "speaker": "CAPULET",
+      "text": "I would have been a-bed an hour ago."
+    },
+    {
+      "number": 8,
+      "speaker": "PARIS",
+      "text": "These times of woe afford no time to woo."
+    },
+    {
+      "number": 9,
+      "speaker": "PARIS",
+      "text": "Madam, good night: commend me to your daughter."
+    },
+    {
+      "number": 10,
+      "speaker": "LADY CAPULET",
+      "text": "I will, and know her mind early to-morrow;"
+    },
+    {
+      "number": 11,
+      "speaker": "LADY CAPULET",
+      "text": "To-night she is mew’d up to her heaviness."
+    },
+    {
+      "number": 12,
+      "speaker": "CAPULET",
+      "text": "Sir Paris, I will make a desperate tender"
+    },
+    {
+      "number": 13,
+      "speaker": "CAPULET",
+      "text": "Of my child’s love: I think she will be ruled"
+    },
+    {
+      "number": 14,
+      "speaker": "CAPULET",
+      "text": "In all respects by me; nay, more, I doubt it not."
+    },
+    {
+      "number": 15,
+      "speaker": "CAPULET",
+      "text": "Wife, go you to her ere you go to bed;"
+    },
+    {
+      "number": 16,
+      "speaker": "CAPULET",
+      "text": "Acquaint her here of my son Paris’ love;"
+    },
+    {
+      "number": 17,
+      "speaker": "CAPULET",
+      "text": "And bid her, mark you me, on Wednesday next—"
+    },
+    {
+      "number": 18,
+      "speaker": "CAPULET",
+      "text": "But, soft! what day is this?"
+    },
+    {
+      "number": 18,
+      "speaker": "PARIS",
+      "text": "Monday, my lord,"
+    },
+    {
+      "number": 19,
+      "speaker": "CAPULET",
+      "text": "Monday! ha, ha! Well, Wednesday is too soon,"
+    },
+    {
+      "number": 20,
+      "speaker": "CAPULET",
+      "text": "O’ Thursday let it be: o’ Thursday, tell her,"
+    },
+    {
+      "number": 21,
+      "speaker": "CAPULET",
+      "text": "She shall be married to this noble earl."
+    },
+    {
+      "number": 22,
+      "speaker": "CAPULET",
+      "text": "Will you be ready? do you like this haste?"
+    },
+    {
+      "number": 23,
+      "speaker": "CAPULET",
+      "text": "We’ll keep no great ado—a friend or two;"
+    },
+    {
+      "number": 24,
+      "speaker": "CAPULET",
+      "text": "For, hark you, Tybalt being slain so late,"
+    },
+    {
+      "number": 25,
+      "speaker": "CAPULET",
+      "text": "It may be thought we held him carelessly,"
+    },
+    {
+      "number": 26,
+      "speaker": "CAPULET",
+      "text": "Being our kinsman, if we revel much:"
+    },
+    {
+      "number": 27,
+      "speaker": "CAPULET",
+      "text": "Therefore we’ll have some half a dozen friends,"
+    },
+    {
+      "number": 28,
+      "speaker": "CAPULET",
+      "text": "And there an end. But what say you to Thursday?"
+    },
+    {
+      "number": 29,
+      "speaker": "PARIS",
+      "text": "My lord, I would that Thursday were to-morrow."
+    },
+    {
+      "number": 30,
+      "speaker": "CAPULET",
+      "text": "Well, get you gone: o’ Thursday be it, then."
+    },
+    {
+      "number": 31,
+      "speaker": "CAPULET",
+      "text": "Go you to Juliet ere you go to bed,"
+    },
+    {
+      "number": 32,
+      "speaker": "CAPULET",
+      "text": "Prepare her, wife, against this wedding-day."
+    },
+    {
+      "number": 33,
+      "speaker": "CAPULET",
+      "text": "Farewell, my lord. Light to my chamber, ho!"
+    },
+    {
+      "number": 34,
+      "speaker": "CAPULET",
+      "text": "Afore me! it is so very very late,"
+    },
+    {
+      "number": 35,
+      "speaker": "CAPULET",
+      "text": "That we may call it early by and by."
+    },
+    {
+      "number": 36,
+      "speaker": "CAPULET",
+      "text": "Good night."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Capulet, Lady Capulet, and Paris."
+    },
+    {
+      "after_line": 36,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act3_scene4_gloss1",
+      "line": 2,
+      "phrase": "move",
+      "definition": "persuade; speak to"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene4_gloss2",
+      "line": 6,
+      "phrase": "promise you",
+      "definition": "assure you"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene4_gloss3",
+      "line": 11,
+      "phrase": "mew’d up",
+      "definition": "shut up with her grief — 'mew' is a falconer's cage"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene4_gloss4",
+      "line": 12,
+      "phrase": "desperate tender",
+      "definition": "a rash offer — Capulet pledges Juliet's hand without consulting her"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene4_gloss5",
+      "line": 21,
+      "phrase": "earl",
+      "definition": "nobleman — Paris's rank"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene4_gloss6",
+      "line": 26,
+      "phrase": "kinsman",
+      "definition": "relative; Tybalt"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene4_gloss7",
+      "line": 27,
+      "phrase": "half a dozen friends",
+      "definition": "Capulet intends a modest funeral-adjacent wedding"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act3_scene4_ann1",
+      "line_start": 14,
+      "line_end": 35,
+      "citation_display": "Romeo and Juliet 3.4.14–35",
+      "category": "structural",
+      "title": "Capulet sets the wedding date — without consulting Juliet",
+      "body": "This brief thirty-seven-line scene is the play's most economical turning point. Capulet, in his grief over Tybalt, promises Juliet's hand to Paris for Thursday — two days away. Juliet has just been married to Romeo; Capulet doesn't know. The haste is meant to console — 'o' Thursday let it be: o' Thursday, tell her, / She shall be married to this noble earl' — but it creates the pressure under which Juliet will take the Friar's potion. The scene is important because it happens offstage from Juliet's perspective: when we cut to her in 3.5, the Paris-marriage decision has already been made without her being consulted. Structurally, this is the Elizabethan domestic machine visible in miniature.",
+      "sources": [
+        "Jill L. Levenson, The Oxford Shakespeare: Romeo and Juliet (2000)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act3_scene4_q1",
+      "kind": "comprehension",
+      "prompt": "What does Capulet promise Paris in this scene, without consulting Juliet?",
+      "options": [
+        "He will give Paris a gold chain",
+        "He promises Juliet's hand in marriage for Thursday — two days away — setting the tragic timeline",
+        "He will end the feud with the Montagues",
+        "He will exile his daughter"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 14,
+      "anchor_line_end": 25
+    }
+  ]
+}

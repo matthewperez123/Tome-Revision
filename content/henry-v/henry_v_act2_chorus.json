@@ -1,0 +1,461 @@
+{
+  "section_id": "henry_v_act2_chorus",
+  "work_id": "henry-v",
+  "sequence": 4,
+  "act": null,
+  "scene": null,
+  "kind": "chorus",
+  "scene_title": "Chorus",
+  "line_count": 42,
+  "word_count": 319,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CHORUS",
+      "text": "Now all the youth of England are on fire,"
+    },
+    {
+      "number": 2,
+      "speaker": "CHORUS",
+      "text": "And silken dalliance in the wardrobe lies:"
+    },
+    {
+      "number": 3,
+      "speaker": "CHORUS",
+      "text": "Now thrive the armourers, and honour’s thought"
+    },
+    {
+      "number": 4,
+      "speaker": "CHORUS",
+      "text": "Reigns solely in the breast of every man:"
+    },
+    {
+      "number": 5,
+      "speaker": "CHORUS",
+      "text": "They sell the pasture now to buy the horse,"
+    },
+    {
+      "number": 6,
+      "speaker": "CHORUS",
+      "text": "Following the mirror of all Christian kings,"
+    },
+    {
+      "number": 7,
+      "speaker": "CHORUS",
+      "text": "With winged heels, as English Mercuries."
+    },
+    {
+      "number": 8,
+      "speaker": "CHORUS",
+      "text": "For now sits Expectation in the air,"
+    },
+    {
+      "number": 9,
+      "speaker": "CHORUS",
+      "text": "And hides a sword from hilts unto the point"
+    },
+    {
+      "number": 10,
+      "speaker": "CHORUS",
+      "text": "With crowns imperial, crowns and coronets,"
+    },
+    {
+      "number": 11,
+      "speaker": "CHORUS",
+      "text": "Promised to Harry and his followers."
+    },
+    {
+      "number": 12,
+      "speaker": "CHORUS",
+      "text": "The French, advised by good intelligence"
+    },
+    {
+      "number": 13,
+      "speaker": "CHORUS",
+      "text": "Of this most dreadful preparation,"
+    },
+    {
+      "number": 14,
+      "speaker": "CHORUS",
+      "text": "Shake in their fear and with pale policy"
+    },
+    {
+      "number": 15,
+      "speaker": "CHORUS",
+      "text": "Seek to divert the English purposes."
+    },
+    {
+      "number": 16,
+      "speaker": "CHORUS",
+      "text": "O England! model to thy inward greatness,"
+    },
+    {
+      "number": 17,
+      "speaker": "CHORUS",
+      "text": "Like little body with a mighty heart,"
+    },
+    {
+      "number": 18,
+      "speaker": "CHORUS",
+      "text": "What mightst thou do, that honour would thee do,"
+    },
+    {
+      "number": 19,
+      "speaker": "CHORUS",
+      "text": "Were all thy children kind and natural!"
+    },
+    {
+      "number": 20,
+      "speaker": "CHORUS",
+      "text": "But see thy fault! France hath in thee found out"
+    },
+    {
+      "number": 21,
+      "speaker": "CHORUS",
+      "text": "A nest of hollow bosoms, which he fills"
+    },
+    {
+      "number": 22,
+      "speaker": "CHORUS",
+      "text": "With treacherous crowns; and three corrupted men,"
+    },
+    {
+      "number": 23,
+      "speaker": "CHORUS",
+      "text": "One, Richard Earl of Cambridge, and the second,"
+    },
+    {
+      "number": 24,
+      "speaker": "CHORUS",
+      "text": "Henry Lord Scroop of Masham, and the third,"
+    },
+    {
+      "number": 25,
+      "speaker": "CHORUS",
+      "text": "Sir Thomas Grey, knight, of Northumberland,"
+    },
+    {
+      "number": 26,
+      "speaker": "CHORUS",
+      "text": "Have, for the gilt of France—O guilt indeed!—"
+    },
+    {
+      "number": 27,
+      "speaker": "CHORUS",
+      "text": "Confirm’d conspiracy with fearful France;"
+    },
+    {
+      "number": 28,
+      "speaker": "CHORUS",
+      "text": "And by their hands this grace of kings must die,"
+    },
+    {
+      "number": 29,
+      "speaker": "CHORUS",
+      "text": "If hell and treason hold their promises,"
+    },
+    {
+      "number": 30,
+      "speaker": "CHORUS",
+      "text": "Ere he take ship for France, and in Southampton."
+    },
+    {
+      "number": 31,
+      "speaker": "CHORUS",
+      "text": "Linger your patience on; and we’ll digest"
+    },
+    {
+      "number": 32,
+      "speaker": "CHORUS",
+      "text": "The abuse of distance; force a play:"
+    },
+    {
+      "number": 33,
+      "speaker": "CHORUS",
+      "text": "The sum is paid; the traitors are agreed;"
+    },
+    {
+      "number": 34,
+      "speaker": "CHORUS",
+      "text": "The king is set from London; and the scene"
+    },
+    {
+      "number": 35,
+      "speaker": "CHORUS",
+      "text": "Is now transported, gentles, to Southampton."
+    },
+    {
+      "number": 36,
+      "speaker": "CHORUS",
+      "text": "There is the playhouse now, there must you sit:"
+    },
+    {
+      "number": 37,
+      "speaker": "CHORUS",
+      "text": "And thence to France shall we convey you safe,"
+    },
+    {
+      "number": 38,
+      "speaker": "CHORUS",
+      "text": "And bring you back, charming the narrow seas"
+    },
+    {
+      "number": 39,
+      "speaker": "CHORUS",
+      "text": "To give you gentle pass; for, if we may,"
+    },
+    {
+      "number": 40,
+      "speaker": "CHORUS",
+      "text": "We’ll not offend one stomach with our play."
+    },
+    {
+      "number": 41,
+      "speaker": "CHORUS",
+      "text": "But, till the king come forth, and not till then,"
+    },
+    {
+      "number": 42,
+      "speaker": "CHORUS",
+      "text": "Unto Southampton do we shift our scene."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Flourish. Enter Chorus."
+    },
+    {
+      "after_line": 0,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act2_chorus_gloss1",
+      "line": 1,
+      "phrase": "youth of England are on fire",
+      "definition": "the young men of England are aflame with martial enthusiasm"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss2",
+      "line": 2,
+      "phrase": "silken dalliance",
+      "definition": "soft, idle love-making — silken courtly pleasure"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss3",
+      "line": 3,
+      "phrase": "armourers",
+      "definition": "makers and repairers of armour — the war-industry booms"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss4",
+      "line": 5,
+      "phrase": "sell the pasture now to buy the horse",
+      "definition": "sell farmland to buy warhorses — economic re-tooling for war"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss5",
+      "line": 6,
+      "phrase": "mirror of all Christian kings",
+      "definition": "the model of Christian kingship — Henry as the era's royal paragon"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss6",
+      "line": 7,
+      "phrase": "winged heels",
+      "definition": "winged feet — the attribute of Mercury, the Roman messenger god"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss7",
+      "line": 7,
+      "phrase": "English Mercuries",
+      "definition": "Englishmen imagined as Mercury — swift and divinely errand-bound"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss8",
+      "line": 8,
+      "phrase": "Expectation",
+      "definition": "personified anticipation — the air of coming battle"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss9",
+      "line": 10,
+      "phrase": "crowns imperial, crowns and coronets",
+      "definition": "the three ranks of royal headgear — imperial crowns, kingly crowns, noble coronets"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss10",
+      "line": 14,
+      "phrase": "pale policy",
+      "definition": "cowardly statecraft — 'pale' = fearful"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss11",
+      "line": 17,
+      "phrase": "Like little body with a mighty heart",
+      "definition": "small in body but great in spirit — the emerging myth of England's scale"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss12",
+      "line": 21,
+      "phrase": "nest of hollow bosoms",
+      "definition": "a colony of hollow (treacherous) hearts — the traitors"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss13",
+      "line": 22,
+      "phrase": "treacherous crowns",
+      "definition": "French gold coins paid as bribes — 'crowns' puns on coins and kingly heads"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss14",
+      "line": 23,
+      "phrase": "Richard Earl of Cambridge",
+      "definition": "the first traitor, Richard of Conisburgh — historically motivated by the Mortimer claim, not the French bribe the play emphasizes"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss15",
+      "line": 24,
+      "phrase": "Henry Lord Scroop of Masham",
+      "definition": "the second traitor — Henry's former intimate"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss16",
+      "line": 25,
+      "phrase": "Sir Thomas Grey",
+      "definition": "the third traitor — a Northumberland knight"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss17",
+      "line": 26,
+      "phrase": "gilt of France",
+      "definition": "France's gold — with a pun on 'guilt' in the next line"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss18",
+      "line": 28,
+      "phrase": "grace of kings",
+      "definition": "Henry, the ornament of kings"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss19",
+      "line": 31,
+      "phrase": "digest",
+      "definition": "arrange; compose"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss20",
+      "line": 32,
+      "phrase": "abuse of distance",
+      "definition": "the stage-trick of violating real geography"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss21",
+      "line": 34,
+      "phrase": "set from London",
+      "definition": "departed from London"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss22",
+      "line": 36,
+      "phrase": "playhouse",
+      "definition": "the theatrical space — now imaginatively relocated to Southampton"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss23",
+      "line": 38,
+      "phrase": "charming the narrow seas",
+      "definition": "magically calming the Channel — a theatrical spell"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss24",
+      "line": 40,
+      "phrase": "offend one stomach",
+      "definition": "cause any seasickness — the Chorus jokes about the stage's imagined Channel crossing"
+    },
+    {
+      "id": "henry_v_act2_chorus_gloss25",
+      "line": 42,
+      "phrase": "shift our scene",
+      "definition": "change the location of the action"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act2_chorus_ann1",
+      "line_start": 1,
+      "line_end": 14,
+      "citation_display": "Henry V 2 Chorus.1–14",
+      "category": "structural",
+      "title": "The economy of war — England retooling",
+      "body": "The Chorus's opening economic image — selling the pasture to buy the horse — is one of the play's most materially specific lines. It captures the Tudor understanding of an expeditionary war: livestock and arable land converted to cavalry; armourers prospering; silk and leisure ('silken dalliance') stored away; the young men mobilized. The Chorus frames this as moral elevation (honour 'reigns solely in the breast of every man'), but the economic mechanism remains visible. 'Now thrive the armourers' is not incidental — Shakespeare is telling us that war is industry. The speech's buoyant tone contrasts sharply with the tavern scene that follows (2.1), in which the war's actual recruits are low-life quarrellers preparing to go pillage for a living. The juxtaposition is deliberate. The Chorus speaks for official England; the play gives us the other England in counterpoint.",
+      "sources": [
+        "Andrew Gurr (ed.), King Henry V (New Cambridge Shakespeare, 1992)",
+        "Thomas Healy, Shakespeare, Alienation and the Early Modern Stage (1994)"
+      ]
+    },
+    {
+      "id": "henry_v_act2_chorus_ann2",
+      "line_start": 20,
+      "line_end": 30,
+      "citation_display": "Henry V 2 Chorus.20–30",
+      "category": "historical",
+      "title": "The three traitors of Southampton",
+      "body": "The Chorus names the Southampton plotters — Richard Earl of Cambridge, Henry Lord Scroop of Masham, and Sir Thomas Grey of Northumberland — and attributes their treason simply to French gold. Historically, the situation was more complicated. Cambridge's real motive was dynastic: he was married to the Mortimer line, whose claim to the English throne was arguably stronger than the Lancastrian Henry's. His plot aimed to put his brother-in-law, Edmund Mortimer, Earl of March, on the throne. The play suppresses this because it would introduce the Lancastrian usurpation problem that Henry V itself wants to keep offstage. By reducing the motive to 'the gilt of France,' the Chorus and the later scene collapse a dynastic conspiracy into a simple bribery narrative. This is a characteristic move: the play manages the awkward question of Henry's legitimacy throughout, and the Chorus's simplification is one of its key instruments.",
+      "sources": [
+        "Gary Taylor (ed.), The Oxford Shakespeare: Henry V (1982)",
+        "Anne Curry, Agincourt: A New History (2005)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act2_chorus_q1",
+      "kind": "close_reading",
+      "prompt": "What does 'They sell the pasture now to buy the horse' (line 5) describe?",
+      "options": [
+        "A farmer's bad bargain",
+        "The economic mobilization of the English countryside for war — selling livestock-land to equip cavalry",
+        "The purchase of racehorses for Agincourt",
+        "A French trade embargo on English wool"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 5,
+      "anchor_line_end": 5
+    },
+    {
+      "id": "henry_v_act2_chorus_q2",
+      "kind": "inference",
+      "prompt": "The Chorus attributes the traitors' treason to 'the gilt of France.' What does the play omit?",
+      "options": [
+        "Nothing — the account is historically complete",
+        "That Cambridge's actual motive was dynastic: his Mortimer marriage gave his brother-in-law a rival claim to Henry's throne. The play simplifies the plot into bribery",
+        "That one of the traitors was secretly Welsh",
+        "That the plot also involved the Dauphin personally"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 22,
+      "anchor_line_end": 30
+    },
+    {
+      "id": "henry_v_act2_chorus_q3",
+      "kind": "theme",
+      "prompt": "Why does the Chorus's 'silken dalliance in the wardrobe lies' image matter?",
+      "options": [
+        "It is purely decorative",
+        "It registers the cultural cost of mobilization — ease, pleasure, and courtly idleness are stored away while the war industry thrives",
+        "It refers to a ceremonial robe worn at Henry's coronation",
+        "It is an anti-Catholic jibe"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 2,
+      "anchor_line_end": 4
+    }
+  ]
+}

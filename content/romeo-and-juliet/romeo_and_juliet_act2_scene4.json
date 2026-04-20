@@ -1,0 +1,1387 @@
+{
+  "section_id": "romeo_and_juliet_act2_scene4",
+  "work_id": "romeo-and-juliet",
+  "sequence": 11,
+  "act": 2,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "A street",
+  "line_count": 179,
+  "word_count": 1625,
+  "est_read_minutes": 8,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "MERCUTIO",
+      "text": "Where the devil should this Romeo be?"
+    },
+    {
+      "number": 2,
+      "speaker": "MERCUTIO",
+      "text": "Came he not home to-night?"
+    },
+    {
+      "number": 3,
+      "speaker": "BENVOLIO",
+      "text": "Not to his father’s; I spoke with his man."
+    },
+    {
+      "number": 4,
+      "speaker": "MERCUTIO",
+      "text": "Ah, that same pale hard-hearted wench, that Rosaline,"
+    },
+    {
+      "number": 5,
+      "speaker": "MERCUTIO",
+      "text": "Torments him so, that he will sure run mad."
+    },
+    {
+      "number": 6,
+      "speaker": "BENVOLIO",
+      "text": "Tybalt, the kinsman of old Capulet,"
+    },
+    {
+      "number": 7,
+      "speaker": "BENVOLIO",
+      "text": "Hath sent a letter to his father’s house."
+    },
+    {
+      "number": 8,
+      "speaker": "MERCUTIO",
+      "text": "A challenge, on my life."
+    },
+    {
+      "number": 8,
+      "speaker": "BENVOLIO",
+      "text": "Romeo will answer it."
+    },
+    {
+      "number": 9,
+      "speaker": "MERCUTIO",
+      "text": "Any man that can write may answer a letter."
+    },
+    {
+      "number": 10,
+      "speaker": "BENVOLIO",
+      "text": "Nay, he will answer the letter’s master, how he dares, being dared."
+    },
+    {
+      "number": 11,
+      "speaker": "MERCUTIO",
+      "text": "Alas poor Romeo! he is already dead: stabbed with a white wench’s"
+    },
+    {
+      "number": 12,
+      "speaker": "MERCUTIO",
+      "text": "black eye; shot thorough the ear with a love-song; the very pin"
+    },
+    {
+      "number": 13,
+      "speaker": "MERCUTIO",
+      "text": "of his heart cleft with the blind bow-boy’s butt-shaft: and is he"
+    },
+    {
+      "number": 14,
+      "speaker": "MERCUTIO",
+      "text": "a man to encounter Tybalt?"
+    },
+    {
+      "number": 14,
+      "speaker": "BENVOLIO",
+      "text": "Why, what is Tybalt?"
+    },
+    {
+      "number": 15,
+      "speaker": "MERCUTIO",
+      "text": "More than prince of cats, I can tell you. O, he is"
+    },
+    {
+      "number": 16,
+      "speaker": "MERCUTIO",
+      "text": "the courageous captain of complements. He fights as you sing prick-song, keeps"
+    },
+    {
+      "number": 17,
+      "speaker": "MERCUTIO",
+      "text": "time, distance, and proportion; rests me his minim rest, one, two, and"
+    },
+    {
+      "number": 18,
+      "speaker": "MERCUTIO",
+      "text": "the third in your bosom: the very butcher of a silk button,"
+    },
+    {
+      "number": 19,
+      "speaker": "MERCUTIO",
+      "text": "a duellist, a duellist; a gentleman of the very first house, of"
+    },
+    {
+      "number": 20,
+      "speaker": "MERCUTIO",
+      "text": "the first and second cause: ah, the immortal passado! the punto reverso!"
+    },
+    {
+      "number": 21,
+      "speaker": "MERCUTIO",
+      "text": "the hai!"
+    },
+    {
+      "number": 21,
+      "speaker": "BENVOLIO",
+      "text": "The what?"
+    },
+    {
+      "number": 22,
+      "speaker": "MERCUTIO",
+      "text": "The pox of such antic, lisping, affecting fantasticoes; these new tuners of"
+    },
+    {
+      "number": 23,
+      "speaker": "MERCUTIO",
+      "text": "accents! “By Jesu, a very good blade! a very tall man! a"
+    },
+    {
+      "number": 24,
+      "speaker": "MERCUTIO",
+      "text": "very good whore!” Why, is not this a lamentable thing, grandsire, that"
+    },
+    {
+      "number": 25,
+      "speaker": "MERCUTIO",
+      "text": "we should be thus afflicted with these strange flies, these fashion-mongers, these"
+    },
+    {
+      "number": 26,
+      "speaker": "MERCUTIO",
+      "text": "perdona-mi’s, who stand so much on the new form, that they cannot"
+    },
+    {
+      "number": 27,
+      "speaker": "MERCUTIO",
+      "text": "sit at ease on the old bench? O, their bones, their bones!"
+    },
+    {
+      "number": 28,
+      "speaker": "BENVOLIO",
+      "text": "Here comes Romeo, here comes Romeo."
+    },
+    {
+      "number": 29,
+      "speaker": "MERCUTIO",
+      "text": "Without his roe, like a dried herring: O flesh, flesh, how art"
+    },
+    {
+      "number": 30,
+      "speaker": "MERCUTIO",
+      "text": "thou fishified! Now is he for the numbers that Petrarch flowed in:"
+    },
+    {
+      "number": 31,
+      "speaker": "MERCUTIO",
+      "text": "Laura to his lady was but a kitchen-wench; marry, she had a"
+    },
+    {
+      "number": 32,
+      "speaker": "MERCUTIO",
+      "text": "better love to be-rhyme her; Dido a dowdy; Cleopatra a gipsy; Helen"
+    },
+    {
+      "number": 33,
+      "speaker": "MERCUTIO",
+      "text": "and Hero hildings and harlots; Thisbe a grey eye or so, but"
+    },
+    {
+      "number": 34,
+      "speaker": "MERCUTIO",
+      "text": "not to the purpose. Signior Romeo, bon jour! there’s a French salutation"
+    },
+    {
+      "number": 35,
+      "speaker": "MERCUTIO",
+      "text": "to your French slop. You gave us the counterfeit fairly last night."
+    },
+    {
+      "number": 36,
+      "speaker": "ROMEO",
+      "text": "Good morrow to you both. What counterfeit did I give you?"
+    },
+    {
+      "number": 37,
+      "speaker": "MERCUTIO",
+      "text": "The slip, sir, the slip; can you not conceive?"
+    },
+    {
+      "number": 38,
+      "speaker": "ROMEO",
+      "text": "Pardon, good Mercutio, my business was great; and in such a case"
+    },
+    {
+      "number": 39,
+      "speaker": "ROMEO",
+      "text": "as mine a man may strain courtesy."
+    },
+    {
+      "number": 40,
+      "speaker": "MERCUTIO",
+      "text": "That’s as much as to say, such a case as yours constrains"
+    },
+    {
+      "number": 41,
+      "speaker": "MERCUTIO",
+      "text": "a man to bow in the hams."
+    },
+    {
+      "number": 42,
+      "speaker": "ROMEO",
+      "text": "Meaning, to court’sy."
+    },
+    {
+      "number": 42,
+      "speaker": "MERCUTIO",
+      "text": "Thou hast most kindly hit it."
+    },
+    {
+      "number": 43,
+      "speaker": "ROMEO",
+      "text": "A most courteous exposition."
+    },
+    {
+      "number": 44,
+      "speaker": "MERCUTIO",
+      "text": "Nay, I am the very pink of courtesy."
+    },
+    {
+      "number": 45,
+      "speaker": "ROMEO",
+      "text": "Pink for flower."
+    },
+    {
+      "number": 45,
+      "speaker": "MERCUTIO",
+      "text": "Right."
+    },
+    {
+      "number": 46,
+      "speaker": "ROMEO",
+      "text": "Why, then is my pump well flowered."
+    },
+    {
+      "number": 47,
+      "speaker": "MERCUTIO",
+      "text": "Well said: follow me this jest now till thou hast worn out"
+    },
+    {
+      "number": 48,
+      "speaker": "MERCUTIO",
+      "text": "thy pump, that when the single sole of it is worn, the"
+    },
+    {
+      "number": 49,
+      "speaker": "MERCUTIO",
+      "text": "jest may remain after the wearing sole singular."
+    },
+    {
+      "number": 50,
+      "speaker": "ROMEO",
+      "text": "O single-soled jest, solely singular for the singleness."
+    },
+    {
+      "number": 51,
+      "speaker": "MERCUTIO",
+      "text": "Come between us, good Benvolio; my wits faint."
+    },
+    {
+      "number": 52,
+      "speaker": "ROMEO",
+      "text": "Switch and spurs, switch and spurs; or I’ll cry a match."
+    },
+    {
+      "number": 53,
+      "speaker": "MERCUTIO",
+      "text": "Nay, if thy wits run the wild-goose chase, I have done, for"
+    },
+    {
+      "number": 54,
+      "speaker": "MERCUTIO",
+      "text": "thou hast more of the wild-goose in one of thy wits than,"
+    },
+    {
+      "number": 55,
+      "speaker": "MERCUTIO",
+      "text": "I am sure, I have in my whole five: was I with"
+    },
+    {
+      "number": 56,
+      "speaker": "MERCUTIO",
+      "text": "you there for the goose?"
+    },
+    {
+      "number": 57,
+      "speaker": "ROMEO",
+      "text": "Thou wast never with me for anything when thou wast not there for the goose."
+    },
+    {
+      "number": 58,
+      "speaker": "MERCUTIO",
+      "text": "I will bite thee by the ear for that jest."
+    },
+    {
+      "number": 59,
+      "speaker": "ROMEO",
+      "text": "Nay, good goose, bite not."
+    },
+    {
+      "number": 60,
+      "speaker": "MERCUTIO",
+      "text": "Thy wit is a very bitter sweeting; it is a most sharp sauce."
+    },
+    {
+      "number": 61,
+      "speaker": "ROMEO",
+      "text": "And is it not well served in to a sweet goose?"
+    },
+    {
+      "number": 62,
+      "speaker": "MERCUTIO",
+      "text": "O here’s a wit of cheveril, that stretches from an inch narrow"
+    },
+    {
+      "number": 63,
+      "speaker": "MERCUTIO",
+      "text": "to an ell broad!"
+    },
+    {
+      "number": 64,
+      "speaker": "ROMEO",
+      "text": "I stretch it out for that word “broad;” which added to the"
+    },
+    {
+      "number": 65,
+      "speaker": "ROMEO",
+      "text": "goose, proves thee far and wide a broad goose."
+    },
+    {
+      "number": 66,
+      "speaker": "MERCUTIO",
+      "text": "Why, is not this better now than groaning for love? now art"
+    },
+    {
+      "number": 67,
+      "speaker": "MERCUTIO",
+      "text": "thou sociable, now art thou Romeo; now art thou what thou art,"
+    },
+    {
+      "number": 68,
+      "speaker": "MERCUTIO",
+      "text": "by art as well as by nature: for this drivelling love is"
+    },
+    {
+      "number": 69,
+      "speaker": "MERCUTIO",
+      "text": "like a great natural, that runs lolling up and down to hide"
+    },
+    {
+      "number": 70,
+      "speaker": "MERCUTIO",
+      "text": "his bauble in a hole."
+    },
+    {
+      "number": 70,
+      "speaker": "BENVOLIO",
+      "text": "Stop there, stop there."
+    },
+    {
+      "number": 71,
+      "speaker": "MERCUTIO",
+      "text": "Thou desirest me to stop in my tale against the hair."
+    },
+    {
+      "number": 72,
+      "speaker": "BENVOLIO",
+      "text": "Thou wouldst else have made thy tale large."
+    },
+    {
+      "number": 73,
+      "speaker": "MERCUTIO",
+      "text": "O, thou art deceived; I would have made it short: for I"
+    },
+    {
+      "number": 74,
+      "speaker": "MERCUTIO",
+      "text": "was come to the whole depth of my tale; and meant, indeed,"
+    },
+    {
+      "number": 75,
+      "speaker": "MERCUTIO",
+      "text": "to occupy the argument no longer."
+    },
+    {
+      "number": 75,
+      "speaker": "ROMEO",
+      "text": "Here’s goodly gear!"
+    },
+    {
+      "number": 76,
+      "speaker": "MERCUTIO",
+      "text": "A sail, a sail!"
+    },
+    {
+      "number": 77,
+      "speaker": "BENVOLIO",
+      "text": "Two, two; a shirt and a smock."
+    },
+    {
+      "number": 78,
+      "speaker": "NURSE",
+      "text": "Peter!"
+    },
+    {
+      "number": 78,
+      "speaker": "PETER",
+      "text": "Anon!"
+    },
+    {
+      "number": 79,
+      "speaker": "NURSE",
+      "text": "My fan, Peter."
+    },
+    {
+      "number": 80,
+      "speaker": "MERCUTIO",
+      "text": "Good Peter, to hide her face; for her fan’s the fairer face."
+    },
+    {
+      "number": 81,
+      "speaker": "NURSE",
+      "text": "God ye good morrow, gentlemen."
+    },
+    {
+      "number": 81,
+      "speaker": "MERCUTIO",
+      "text": "God ye good den, fair gentlewoman."
+    },
+    {
+      "number": 82,
+      "speaker": "NURSE",
+      "text": "Is it good den?"
+    },
+    {
+      "number": 83,
+      "speaker": "MERCUTIO",
+      "text": "’Tis no less, I tell you, for the bawdy hand of the"
+    },
+    {
+      "number": 84,
+      "speaker": "MERCUTIO",
+      "text": "dial is now upon the prick of noon."
+    },
+    {
+      "number": 85,
+      "speaker": "NURSE",
+      "text": "Out upon you! what a man are you!"
+    },
+    {
+      "number": 86,
+      "speaker": "ROMEO",
+      "text": "One, gentlewoman, that God hath made for himself to mar."
+    },
+    {
+      "number": 87,
+      "speaker": "NURSE",
+      "text": "By my troth, it is well said; “for himself to mar,” quoth"
+    },
+    {
+      "number": 88,
+      "speaker": "NURSE",
+      "text": "a’? Gentlemen, can any of you tell me where I may find"
+    },
+    {
+      "number": 89,
+      "speaker": "NURSE",
+      "text": "the young Romeo?"
+    },
+    {
+      "number": 90,
+      "speaker": "ROMEO",
+      "text": "I can tell you; but young Romeo will be older when you"
+    },
+    {
+      "number": 91,
+      "speaker": "ROMEO",
+      "text": "have found him than he was when you sought him: I am"
+    },
+    {
+      "number": 92,
+      "speaker": "ROMEO",
+      "text": "the youngest of that name, for fault of a worse."
+    },
+    {
+      "number": 93,
+      "speaker": "NURSE",
+      "text": "You say well."
+    },
+    {
+      "number": 94,
+      "speaker": "MERCUTIO",
+      "text": "Yea, is the worst well? very well took, i’ faith; wisely, wisely."
+    },
+    {
+      "number": 95,
+      "speaker": "NURSE",
+      "text": "If you be he, sir, I desire some confidence with you."
+    },
+    {
+      "number": 96,
+      "speaker": "BENVOLIO",
+      "text": "She will indite him to some supper."
+    },
+    {
+      "number": 97,
+      "speaker": "MERCUTIO",
+      "text": "A bawd, a bawd, a bawd! So ho!"
+    },
+    {
+      "number": 98,
+      "speaker": "ROMEO",
+      "text": "What hast thou found?"
+    },
+    {
+      "number": 99,
+      "speaker": "MERCUTIO",
+      "text": "No hare, sir; unless a hare, sir, in a Lenten pie, that"
+    },
+    {
+      "number": 100,
+      "speaker": "MERCUTIO",
+      "text": "is something stale and hoar ere it be spent. An old hare"
+    },
+    {
+      "number": 101,
+      "speaker": "MERCUTIO",
+      "text": "hoar, And an old hare hoar, Is very good meat in Lent:"
+    },
+    {
+      "number": 102,
+      "speaker": "MERCUTIO",
+      "text": "But a hare that is hoar Is too much for a score,"
+    },
+    {
+      "number": 103,
+      "speaker": "MERCUTIO",
+      "text": "When it hoars ere it be spent. Romeo, will you come to"
+    },
+    {
+      "number": 104,
+      "speaker": "MERCUTIO",
+      "text": "your father’s? we’ll to dinner, thither."
+    },
+    {
+      "number": 104,
+      "speaker": "ROMEO",
+      "text": "I will follow you."
+    },
+    {
+      "number": 105,
+      "speaker": "MERCUTIO",
+      "text": "Farewell, ancient lady; farewell, “lady, lady, lady.”"
+    },
+    {
+      "number": 106,
+      "speaker": "NURSE",
+      "text": "Marry, farewell! I pray you, sir, what saucy merchant was this, that"
+    },
+    {
+      "number": 107,
+      "speaker": "NURSE",
+      "text": "was so full of his ropery?"
+    },
+    {
+      "number": 108,
+      "speaker": "ROMEO",
+      "text": "A gentleman, nurse, that loves to hear himself talk, and will speak"
+    },
+    {
+      "number": 109,
+      "speaker": "ROMEO",
+      "text": "more in a minute than he will stand to in a month."
+    },
+    {
+      "number": 110,
+      "speaker": "NURSE",
+      "text": "An a’ speak anything against me, I’ll take him down, an a’"
+    },
+    {
+      "number": 111,
+      "speaker": "NURSE",
+      "text": "were lustier than he is, and twenty such Jacks; and if I"
+    },
+    {
+      "number": 112,
+      "speaker": "NURSE",
+      "text": "cannot, I’ll find those that shall. Scurvy knave! I am none of"
+    },
+    {
+      "number": 113,
+      "speaker": "NURSE",
+      "text": "his flirt-gills; I am none of his skains-mates. And thou must stand"
+    },
+    {
+      "number": 114,
+      "speaker": "NURSE",
+      "text": "by too, and suffer every knave to use me at his pleasure?"
+    },
+    {
+      "number": 115,
+      "speaker": "PETER",
+      "text": "I saw no man use you at his pleasure; if I had,"
+    },
+    {
+      "number": 116,
+      "speaker": "PETER",
+      "text": "my weapon should quickly have been out, I warrant you: I dare"
+    },
+    {
+      "number": 117,
+      "speaker": "PETER",
+      "text": "draw as soon as another man, if I see occasion in a"
+    },
+    {
+      "number": 118,
+      "speaker": "PETER",
+      "text": "good quarrel, and the law on my side."
+    },
+    {
+      "number": 119,
+      "speaker": "NURSE",
+      "text": "Now, afore God, I am so vexed, that every part about me"
+    },
+    {
+      "number": 120,
+      "speaker": "NURSE",
+      "text": "quivers. Scurvy knave! Pray you, sir, a word: and as I told"
+    },
+    {
+      "number": 121,
+      "speaker": "NURSE",
+      "text": "you, my young lady bade me inquire you out; what she bade"
+    },
+    {
+      "number": 122,
+      "speaker": "NURSE",
+      "text": "me say, I will keep to myself: but first let me tell"
+    },
+    {
+      "number": 123,
+      "speaker": "NURSE",
+      "text": "ye, if ye should lead her into a fool’s paradise, as they"
+    },
+    {
+      "number": 124,
+      "speaker": "NURSE",
+      "text": "say, it were a very gross kind of behavior, as they say:"
+    },
+    {
+      "number": 125,
+      "speaker": "NURSE",
+      "text": "for the gentlewoman is young; and, therefore, if you should deal double"
+    },
+    {
+      "number": 126,
+      "speaker": "NURSE",
+      "text": "with her, truly it were an ill thing to be offered to"
+    },
+    {
+      "number": 127,
+      "speaker": "NURSE",
+      "text": "any gentlewoman, and very weak dealing."
+    },
+    {
+      "number": 128,
+      "speaker": "ROMEO",
+      "text": "Nurse, commend me to thy lady and mistress. I protest unto thee—"
+    },
+    {
+      "number": 129,
+      "speaker": "NURSE",
+      "text": "Good heart, and, i’ faith, I will tell her as much: Lord,"
+    },
+    {
+      "number": 130,
+      "speaker": "NURSE",
+      "text": "Lord, she will be a joyful woman."
+    },
+    {
+      "number": 131,
+      "speaker": "ROMEO",
+      "text": "What wilt thou tell her, nurse? thou dost not mark me."
+    },
+    {
+      "number": 132,
+      "speaker": "NURSE",
+      "text": "I will tell her, sir, that you do protest; which, as I"
+    },
+    {
+      "number": 133,
+      "speaker": "NURSE",
+      "text": "take it, is a gentlemanlike offer."
+    },
+    {
+      "number": 133,
+      "speaker": "ROMEO",
+      "text": "Bid her devise"
+    },
+    {
+      "number": 134,
+      "speaker": "ROMEO",
+      "text": "Some means to come to shrift this afternoon;"
+    },
+    {
+      "number": 135,
+      "speaker": "ROMEO",
+      "text": "And there she shall at Friar Laurence’ cell"
+    },
+    {
+      "number": 136,
+      "speaker": "ROMEO",
+      "text": "Be shrived and married. Here is for thy pains."
+    },
+    {
+      "number": 137,
+      "speaker": "NURSE",
+      "text": "No, truly, sir; not a penny."
+    },
+    {
+      "number": 137,
+      "speaker": "ROMEO",
+      "text": "Go to; I say you shall."
+    },
+    {
+      "number": 138,
+      "speaker": "NURSE",
+      "text": "This afternoon, sir? well, she shall be there."
+    },
+    {
+      "number": 139,
+      "speaker": "ROMEO",
+      "text": "And stay, good nurse, behind the abbey wall:"
+    },
+    {
+      "number": 140,
+      "speaker": "ROMEO",
+      "text": "Within this hour my man shall be with thee"
+    },
+    {
+      "number": 141,
+      "speaker": "ROMEO",
+      "text": "And bring thee cords made like a tackled stair;"
+    },
+    {
+      "number": 142,
+      "speaker": "ROMEO",
+      "text": "Which to the high top-gallant of my joy"
+    },
+    {
+      "number": 143,
+      "speaker": "ROMEO",
+      "text": "Must be my convoy in the secret night."
+    },
+    {
+      "number": 144,
+      "speaker": "ROMEO",
+      "text": "Farewell; be trusty, and I’ll quit thy pains:"
+    },
+    {
+      "number": 145,
+      "speaker": "ROMEO",
+      "text": "Farewell; commend me to thy mistress."
+    },
+    {
+      "number": 146,
+      "speaker": "NURSE",
+      "text": "Now God in heaven bless thee! Hark you, sir."
+    },
+    {
+      "number": 147,
+      "speaker": "ROMEO",
+      "text": "What say’st thou, my dear nurse?"
+    },
+    {
+      "number": 148,
+      "speaker": "NURSE",
+      "text": "Is your man secret? Did you ne’er hear say,"
+    },
+    {
+      "number": 149,
+      "speaker": "NURSE",
+      "text": "Two may keep counsel, putting one away?"
+    },
+    {
+      "number": 150,
+      "speaker": "ROMEO",
+      "text": "I warrant thee, my man’s as true as steel."
+    },
+    {
+      "number": 151,
+      "speaker": "NURSE",
+      "text": "Well, sir; my mistress is the sweetest lady—Lord, Lord! when ’twas a"
+    },
+    {
+      "number": 152,
+      "speaker": "NURSE",
+      "text": "little prating thing:—O, there is a nobleman in town, one Paris, that"
+    },
+    {
+      "number": 153,
+      "speaker": "NURSE",
+      "text": "would fain lay knife aboard; but she, good soul, had as lief"
+    },
+    {
+      "number": 154,
+      "speaker": "NURSE",
+      "text": "see a toad, a very toad, as see him. I anger her"
+    },
+    {
+      "number": 155,
+      "speaker": "NURSE",
+      "text": "sometimes and tell her that Paris is the properer man; but, I’ll"
+    },
+    {
+      "number": 156,
+      "speaker": "NURSE",
+      "text": "warrant you, when I say so, she looks as pale as any"
+    },
+    {
+      "number": 157,
+      "speaker": "NURSE",
+      "text": "clout in the versal world. Doth not rosemary and Romeo begin both"
+    },
+    {
+      "number": 158,
+      "speaker": "NURSE",
+      "text": "with a letter?"
+    },
+    {
+      "number": 159,
+      "speaker": "ROMEO",
+      "text": "Ay, nurse; what of that? both with an R."
+    },
+    {
+      "number": 160,
+      "speaker": "NURSE",
+      "text": "Ah, mocker! that’s the dog’s name; R is for the—No; I know"
+    },
+    {
+      "number": 161,
+      "speaker": "NURSE",
+      "text": "it begins with some other letter:—and she hath the prettiest sententious of"
+    },
+    {
+      "number": 162,
+      "speaker": "NURSE",
+      "text": "it, of you and rosemary, that it would do you good to"
+    },
+    {
+      "number": 163,
+      "speaker": "NURSE",
+      "text": "hear it."
+    },
+    {
+      "number": 163,
+      "speaker": "ROMEO",
+      "text": "Commend me to thy lady."
+    },
+    {
+      "number": 164,
+      "speaker": "NURSE",
+      "text": "Ay, a thousand times. Peter!"
+    },
+    {
+      "number": 164,
+      "speaker": "PETER",
+      "text": "Anon!"
+    },
+    {
+      "number": 165,
+      "speaker": "NURSE",
+      "text": "Peter, take my fan, and go before, and apace."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Benvolio and Mercutio."
+    },
+    {
+      "after_line": 27,
+      "text": "Enter Romeo."
+    },
+    {
+      "after_line": 75,
+      "text": "Enter Nurse and Peter."
+    },
+    {
+      "after_line": 104,
+      "text": "Sings."
+    },
+    {
+      "after_line": 105,
+      "text": "Singing."
+    },
+    {
+      "after_line": 105,
+      "text": "Exeunt Mercutio and Benvolio."
+    },
+    {
+      "after_line": 164,
+      "text": "Exit Romeo."
+    },
+    {
+      "after_line": 165,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss1",
+      "line": 5,
+      "phrase": "torments him",
+      "definition": "Rosaline still torments Romeo (Mercutio's mistaken assumption)"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss2",
+      "line": 8,
+      "phrase": "answer it",
+      "definition": "accept and respond to Tybalt's challenge"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss3",
+      "line": 9,
+      "phrase": "Any man that can write may answer a letter",
+      "definition": "Mercutio's pun on 'answer' as reply versus duel"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss4",
+      "line": 12,
+      "phrase": "pin",
+      "definition": "the center-peg of a target; Mercutio's archery metaphor"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss5",
+      "line": 13,
+      "phrase": "butt-shaft",
+      "definition": "a blunt practice arrow — for shooting at butts, not in war"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss6",
+      "line": 15,
+      "phrase": "Prince of Cats",
+      "definition": "Tybalt = Tybert, the cat in the medieval Reynard fables — Mercutio mocks him by name"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss7",
+      "line": 16,
+      "phrase": "prick-song",
+      "definition": "music sung from written notes — Tybalt fights like a score-reader"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss8",
+      "line": 18,
+      "phrase": "butcher of a silk button",
+      "definition": "he can prick a button off at will — ironically precise"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss9",
+      "line": 19,
+      "phrase": "duellist",
+      "definition": "a man of the formal dueling school"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss10",
+      "line": 19,
+      "phrase": "very first house",
+      "definition": "highest rank of duelist"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss11",
+      "line": 22,
+      "phrase": "passado",
+      "definition": "a forward thrust in fencing (Italian)"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss12",
+      "line": 22,
+      "phrase": "punto reverso",
+      "definition": "backhanded thrust (Italian)"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss13",
+      "line": 22,
+      "phrase": "pox of",
+      "definition": "a plague on; to hell with"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss14",
+      "line": 22,
+      "phrase": "fantasticoes",
+      "definition": "foreign fops; affected gallants"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss15",
+      "line": 24,
+      "phrase": "grandsire",
+      "definition": "old man — Mercutio parodies old-men's complaints"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss16",
+      "line": 25,
+      "phrase": "strange flies",
+      "definition": "odd, buzzing foreigners"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss17",
+      "line": 26,
+      "phrase": "stand so much on the new form",
+      "definition": "cling so hard to the latest fashion"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss18",
+      "line": 27,
+      "phrase": "on the old bench",
+      "definition": "on the customary old ways"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss19",
+      "line": 27,
+      "phrase": "bones!",
+      "definition": "Mercutio's pun — 'bon/bones' playing on French-adopted fashion speech"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss20",
+      "line": 29,
+      "phrase": "roe",
+      "definition": "a fish's eggs — Mercutio puns: Romeo without Ro, the female fish's eggs"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss21",
+      "line": 30,
+      "phrase": "Petrarch",
+      "definition": "14th-century Italian poet who immortalized Laura in sonnets — the model Romeo's affected love imitates"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss22",
+      "line": 31,
+      "phrase": "Laura",
+      "definition": "Petrarch's beloved; symbol of unattainable chaste beauty"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss23",
+      "line": 31,
+      "phrase": "kitchen-wench",
+      "definition": "low servant woman — Mercutio demotes Rosaline"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss24",
+      "line": 32,
+      "phrase": "Dido",
+      "definition": "legendary queen of Carthage, lover of Aeneas"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss25",
+      "line": 32,
+      "phrase": "dowdy",
+      "definition": "dowdy woman; plain wench"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss26",
+      "line": 32,
+      "phrase": "Cleopatra",
+      "definition": "queen of Egypt, lover of Antony — another classical beauty topped by Rosaline in Romeo's view"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss27",
+      "line": 32,
+      "phrase": "gipsy",
+      "definition": "Egyptian (period usage); also vagrant"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss28",
+      "line": 32,
+      "phrase": "Helen",
+      "definition": "Helen of Troy"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss29",
+      "line": 33,
+      "phrase": "Hero",
+      "definition": "the priestess Leander swam the Hellespont for, at Sestos"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss30",
+      "line": 33,
+      "phrase": "hildings and harlots",
+      "definition": "low women; whores"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss31",
+      "line": 33,
+      "phrase": "Thisbe",
+      "definition": "Pyramus's lover in Ovid; chosen as a grey-eyed pattern of beauty"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss32",
+      "line": 33,
+      "phrase": "grey eye",
+      "definition": "prized color in Elizabethan beauty standards"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss33",
+      "line": 37,
+      "phrase": "slip",
+      "definition": "counterfeit coin — Romeo 'slipped' them by vanishing last night"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss34",
+      "line": 41,
+      "phrase": "hams",
+      "definition": "thighs; knees — bawdy wordplay"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss35",
+      "line": 48,
+      "phrase": "pump",
+      "definition": "thin dancing shoe"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss36",
+      "line": 47,
+      "phrase": "follow me this jest",
+      "definition": "pursue the witticism to its end"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss37",
+      "line": 53,
+      "phrase": "goose chase",
+      "definition": "a kind of horseback contest (origin of 'wild goose chase')"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss38",
+      "line": 65,
+      "phrase": "goose",
+      "definition": "fool; silly bird — Mercutio's continuing pun"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss39",
+      "line": 65,
+      "phrase": "broad goose",
+      "definition": "extensive goose — pun on 'broad' meaning obvious"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss40",
+      "line": 69,
+      "phrase": "natural",
+      "definition": "natural fool; idiot"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss41",
+      "line": 70,
+      "phrase": "bauble",
+      "definition": "a jester's ornamented stick (bawdy pun)"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss42",
+      "line": 76,
+      "phrase": "A sail, a sail!",
+      "definition": "mock-nautical announcement of the Nurse's approach (her skirts like sails)"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss43",
+      "line": 77,
+      "phrase": "Two, two",
+      "definition": "a pair — shirt and smock, man and woman"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss44",
+      "line": 82,
+      "phrase": "good-den",
+      "definition": "good afternoon (after noon); contraction of 'good e'en'"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss45",
+      "line": 84,
+      "phrase": "prick",
+      "definition": "the mark on a sundial pointing the hour — bawdy pun"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss46",
+      "line": 97,
+      "phrase": "A bawd, a bawd, a bawd!",
+      "definition": "procurer; pimp — Mercutio mocks the Nurse as a go-between"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss47",
+      "line": 97,
+      "phrase": "bawd",
+      "definition": "procurer; go-between for lovers"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss48",
+      "line": 103,
+      "phrase": "hoar",
+      "definition": "mouldy; old (pun on 'whore')"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss49",
+      "line": 104,
+      "phrase": "dinner",
+      "definition": "midday meal, not evening"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss50",
+      "line": 111,
+      "phrase": "Jack",
+      "definition": "a rude fellow; here = scoundrel"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss51",
+      "line": 113,
+      "phrase": "flirt-gills",
+      "definition": "loose women; flighty girls"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss52",
+      "line": 113,
+      "phrase": "skains-mates",
+      "definition": "rough companions of the knife-crowd (uncertain)"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss53",
+      "line": 123,
+      "phrase": "fool’s paradise",
+      "definition": "false hopes; a deceived happiness"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss54",
+      "line": 127,
+      "phrase": "weak dealing",
+      "definition": "dishonest conduct"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss55",
+      "line": 132,
+      "phrase": "protest",
+      "definition": "solemnly declare"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss56",
+      "line": 134,
+      "phrase": "shrift",
+      "definition": "confession — Juliet's pretext for meeting Romeo at the Friar's"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss57",
+      "line": 136,
+      "phrase": "Be shrived and married",
+      "definition": "be confessed and married — the Friar will do both"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss58",
+      "line": 141,
+      "phrase": "tackled stair",
+      "definition": "rope ladder — like a ship's rigging"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss59",
+      "line": 142,
+      "phrase": "top-gallant",
+      "definition": "the highest masthead — Romeo's bedroom window"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss60",
+      "line": 148,
+      "phrase": "secret",
+      "definition": "silent; trustworthy"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss61",
+      "line": 149,
+      "phrase": "Two may keep counsel, putting one away",
+      "definition": "Nurse's joke: two keep a secret if one is dead"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss62",
+      "line": 152,
+      "phrase": "prating",
+      "definition": "chattering; prattling"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss63",
+      "line": 157,
+      "phrase": "clout",
+      "definition": "cloth; rag"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss64",
+      "line": 157,
+      "phrase": "versal world",
+      "definition": "the whole universe (Nurse's malapropism)"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss65",
+      "line": 162,
+      "phrase": "rosemary",
+      "definition": "herb of remembrance, associated with weddings and funerals"
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_gloss66",
+      "line": 160,
+      "phrase": "dog’s name",
+      "definition": "R was called the 'dog letter' for its growling sound"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act2_scene4_ann1",
+      "line_start": 1,
+      "line_end": 105,
+      "citation_display": "Romeo and Juliet 2.4.1–105",
+      "category": "close_reading",
+      "title": "Mercutio at full bore — the play's verbal comedy before it ends",
+      "body": "2.4 is Mercutio's great comic aria — the Italian-fencing parody (Tybalt as 'the Prince of Cats,' the 'passado, the punto reverso, the hai!'), the pun-relay with Romeo, the exasperating Nurse-tease. This is the last scene Shakespeare gives him at full linguistic power. From 3.1 forward, the play will have to do without this voice. Notice that Mercutio's style — accelerated puns, Italianism, classical allusion, sexual innuendo — is precisely the mode the tragedy will have to leave behind to become tragic. His killing is also a killing of the play's comic-verbal register.",
+      "sources": [
+        "Jonathan Bate, The Soul of the Age (2008)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act2_scene4_q1",
+      "kind": "comprehension",
+      "prompt": "What is Mercutio's running joke about Tybalt in this scene?",
+      "options": [
+        "That Tybalt is unusually short",
+        "That Tybalt is 'the Prince of Cats' — Tybert, the cat of medieval Reynard fables — and fights by the Italian fencing-manual",
+        "That Tybalt is a coward",
+        "That Tybalt is in love with Rosaline"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 17,
+      "anchor_line_end": 24
+    },
+    {
+      "id": "romeo_and_juliet_act2_scene4_q2",
+      "kind": "theme",
+      "prompt": "Why is Mercutio's comic voice structurally important to Romeo and Juliet?",
+      "options": [
+        "Shakespeare needed more male roles",
+        "Mercutio's language represents the comic-verbal mode the tragedy will have to abandon once he dies in 3.1",
+        "It reduces the play's length",
+        "It has no structural function"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 105
+    }
+  ]
+}

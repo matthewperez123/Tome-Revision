@@ -1,0 +1,47 @@
+{
+  "section_id": "hamlet_act4_scene1",
+  "trials": [
+    {
+      "kind": "inference",
+      "prompt": "What does Gertrude withhold from Claudius in her report of the closet scene?",
+      "options": [
+        "That Polonius was killed.",
+        "That Hamlet's madness is feigned, and that he has accused Claudius of murdering King Hamlet.",
+        "That Hamlet saw the ghost during their conversation.",
+        "That Ophelia is wandering mad in the castle."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 5,
+      "anchor_line_end": 16
+    },
+    {
+      "kind": "comprehension",
+      "prompt": "What is Claudius's chief concern after learning of Polonius's death?",
+      "options": [
+        "Punishing Hamlet with immediate execution.",
+        "Concealing the crime and accelerating Hamlet's voyage to England.",
+        "Offering consolation to Laertes in France.",
+        "Consulting the priests about a proper burial."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 15,
+      "anchor_line_end": 38
+    },
+    {
+      "kind": "theme",
+      "prompt": "What does Gertrude's phrase 'Mad as the sea and wind' accomplish in context?",
+      "options": [
+        "It diagnoses Hamlet as genuinely deranged, reinforcing Polonius's earlier theory.",
+        "It is a poetic evasion that protects Hamlet while giving Claudius a plausible story.",
+        "It signals to Claudius that Gertrude has lost faith in her son.",
+        "It quotes a proverb about the dangers of sea travel."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 8,
+      "anchor_line_end": 10
+    }
+  ]
+}

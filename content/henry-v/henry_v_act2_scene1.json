@@ -1,0 +1,1005 @@
+{
+  "section_id": "henry_v_act2_scene1",
+  "work_id": "henry-v",
+  "sequence": 5,
+  "act": 2,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "London. Before a tavern in Eastcheap",
+  "line_count": 112,
+  "word_count": 983,
+  "est_read_minutes": 5,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "BARDOLPH",
+      "text": "Well met, Corporal Nym."
+    },
+    {
+      "number": 1,
+      "speaker": "NYM",
+      "text": "Good morrow, Lieutenant Bardolph."
+    },
+    {
+      "number": 2,
+      "speaker": "BARDOLPH",
+      "text": "What, are Ancient Pistol and you friends yet?"
+    },
+    {
+      "number": 3,
+      "speaker": "NYM",
+      "text": "For my part, I care not: I say little; but when time"
+    },
+    {
+      "number": 4,
+      "speaker": "NYM",
+      "text": "shall serve, there shall be smiles; but that shall be as it"
+    },
+    {
+      "number": 5,
+      "speaker": "NYM",
+      "text": "may. I dare not fight; but I will wink and hold out"
+    },
+    {
+      "number": 6,
+      "speaker": "NYM",
+      "text": "mine iron: it is a simple one; but what though? it will"
+    },
+    {
+      "number": 7,
+      "speaker": "NYM",
+      "text": "toast cheese, and it will endure cold as another man’s sword will:"
+    },
+    {
+      "number": 8,
+      "speaker": "NYM",
+      "text": "and there’s an end."
+    },
+    {
+      "number": 9,
+      "speaker": "BARDOLPH",
+      "text": "I will bestow a breakfast to make you friends; and we’ll be"
+    },
+    {
+      "number": 10,
+      "speaker": "BARDOLPH",
+      "text": "all three sworn brothers to France: let it be so, good Corporal"
+    },
+    {
+      "number": 11,
+      "speaker": "BARDOLPH",
+      "text": "Nym."
+    },
+    {
+      "number": 12,
+      "speaker": "NYM",
+      "text": "Faith, I will live so long as I may, that’s the certain"
+    },
+    {
+      "number": 13,
+      "speaker": "NYM",
+      "text": "of it; and when I cannot live any longer, I will do"
+    },
+    {
+      "number": 14,
+      "speaker": "NYM",
+      "text": "as I may: that is my rest, that is the rendezvous of"
+    },
+    {
+      "number": 15,
+      "speaker": "NYM",
+      "text": "it."
+    },
+    {
+      "number": 16,
+      "speaker": "BARDOLPH",
+      "text": "It is certain, corporal, that he is married to Nell Quickly; and"
+    },
+    {
+      "number": 17,
+      "speaker": "BARDOLPH",
+      "text": "certainly she did you wrong; for you were troth-plight to her."
+    },
+    {
+      "number": 18,
+      "speaker": "NYM",
+      "text": "I cannot tell: things must be as they may: men may sleep,"
+    },
+    {
+      "number": 19,
+      "speaker": "NYM",
+      "text": "and they may have their throats about them at that time; and"
+    },
+    {
+      "number": 20,
+      "speaker": "NYM",
+      "text": "some say knives have edges. It must be as it may: though"
+    },
+    {
+      "number": 21,
+      "speaker": "NYM",
+      "text": "patience be a tired mare, yet she will plod. There must be"
+    },
+    {
+      "number": 22,
+      "speaker": "NYM",
+      "text": "conclusions. Well, I cannot tell."
+    },
+    {
+      "number": 23,
+      "speaker": "BARDOLPH",
+      "text": "Here comes Ancient Pistol and his wife: good corporal, be patient here."
+    },
+    {
+      "number": 24,
+      "speaker": "BARDOLPH",
+      "text": "How now, mine host Pistol!"
+    },
+    {
+      "number": 24,
+      "speaker": "PISTOL",
+      "text": "Base tike, call’st thou me host?"
+    },
+    {
+      "number": 25,
+      "speaker": "PISTOL",
+      "text": "Now, by this hand, I swear, I scorn the term;"
+    },
+    {
+      "number": 26,
+      "speaker": "PISTOL",
+      "text": "Nor shall my Nell keep lodgers."
+    },
+    {
+      "number": 27,
+      "speaker": "HOSTESS",
+      "text": "No, by my troth, not long; for we cannot lodge and board"
+    },
+    {
+      "number": 28,
+      "speaker": "HOSTESS",
+      "text": "a dozen or fourteen gentlewomen that live honestly by the prick of"
+    },
+    {
+      "number": 29,
+      "speaker": "HOSTESS",
+      "text": "their needles, but it will be thought we keep a bawdy house"
+    },
+    {
+      "number": 30,
+      "speaker": "HOSTESS",
+      "text": "straight. Nym and Pistol draw. O well a day, Lady, if he"
+    },
+    {
+      "number": 31,
+      "speaker": "HOSTESS",
+      "text": "be not drawn now! we shall see wilful adultery and murder committed."
+    },
+    {
+      "number": 32,
+      "speaker": "BARDOLPH",
+      "text": "Good lieutenant! good corporal! offer nothing here."
+    },
+    {
+      "number": 33,
+      "speaker": "NYM",
+      "text": "Pish!"
+    },
+    {
+      "number": 34,
+      "speaker": "PISTOL",
+      "text": "Pish for thee, Iceland dog! thou prick-ear’d cur of Iceland!"
+    },
+    {
+      "number": 35,
+      "speaker": "HOSTESS",
+      "text": "Good Corporal Nym, show thy valour, and put up your sword."
+    },
+    {
+      "number": 36,
+      "speaker": "NYM",
+      "text": "Will you shog off? I would have you solus."
+    },
+    {
+      "number": 37,
+      "speaker": "PISTOL",
+      "text": "“Solus,” egregious dog! O viper vile!"
+    },
+    {
+      "number": 38,
+      "speaker": "PISTOL",
+      "text": "The “solus” in thy most mervailous face;"
+    },
+    {
+      "number": 39,
+      "speaker": "PISTOL",
+      "text": "The “solus” in thy teeth, and in thy throat,"
+    },
+    {
+      "number": 40,
+      "speaker": "PISTOL",
+      "text": "And in thy hateful lungs, yea, in thy maw, perdy,"
+    },
+    {
+      "number": 41,
+      "speaker": "PISTOL",
+      "text": "And, which is worse, within thy nasty mouth!"
+    },
+    {
+      "number": 42,
+      "speaker": "PISTOL",
+      "text": "I do retort the “solus” in thy bowels;"
+    },
+    {
+      "number": 43,
+      "speaker": "PISTOL",
+      "text": "For I can take, and Pistol’s cock is up,"
+    },
+    {
+      "number": 44,
+      "speaker": "PISTOL",
+      "text": "And flashing fire will follow."
+    },
+    {
+      "number": 45,
+      "speaker": "NYM",
+      "text": "I am not Barbason; you cannot conjure me. I have an humour"
+    },
+    {
+      "number": 46,
+      "speaker": "NYM",
+      "text": "to knock you indifferently well. If you grow foul with me, Pistol,"
+    },
+    {
+      "number": 47,
+      "speaker": "NYM",
+      "text": "I will scour you with my rapier, as I may, in fair"
+    },
+    {
+      "number": 48,
+      "speaker": "NYM",
+      "text": "terms: if you would walk off, I would prick your guts a"
+    },
+    {
+      "number": 49,
+      "speaker": "NYM",
+      "text": "little, in good terms, as I may: and that’s the humour of"
+    },
+    {
+      "number": 50,
+      "speaker": "NYM",
+      "text": "it."
+    },
+    {
+      "number": 51,
+      "speaker": "PISTOL",
+      "text": "O braggart vile and damned furious wight!"
+    },
+    {
+      "number": 52,
+      "speaker": "PISTOL",
+      "text": "The grave doth gape, and doting death is near;"
+    },
+    {
+      "number": 53,
+      "speaker": "PISTOL",
+      "text": "Therefore exhale."
+    },
+    {
+      "number": 54,
+      "speaker": "BARDOLPH",
+      "text": "Hear me, hear me what I say: he that strikes the first"
+    },
+    {
+      "number": 55,
+      "speaker": "BARDOLPH",
+      "text": "stroke, I’ll run him up to the hilts, as I am a"
+    },
+    {
+      "number": 56,
+      "speaker": "BARDOLPH",
+      "text": "soldier."
+    },
+    {
+      "number": 57,
+      "speaker": "PISTOL",
+      "text": "An oath of mickle might; and fury shall abate."
+    },
+    {
+      "number": 58,
+      "speaker": "PISTOL",
+      "text": "Give me thy fist, thy fore-foot to me give:"
+    },
+    {
+      "number": 59,
+      "speaker": "PISTOL",
+      "text": "Thy spirits are most tall."
+    },
+    {
+      "number": 60,
+      "speaker": "NYM",
+      "text": "I will cut thy throat, one time or other, in fair terms:"
+    },
+    {
+      "number": 61,
+      "speaker": "NYM",
+      "text": "that is the humour of it."
+    },
+    {
+      "number": 61,
+      "speaker": "PISTOL",
+      "text": "“Couple a gorge!”"
+    },
+    {
+      "number": 62,
+      "speaker": "PISTOL",
+      "text": "That is the word. I thee defy again."
+    },
+    {
+      "number": 63,
+      "speaker": "PISTOL",
+      "text": "O hound of Crete, think’st thou my spouse to get?"
+    },
+    {
+      "number": 64,
+      "speaker": "PISTOL",
+      "text": "No; to the spital go,"
+    },
+    {
+      "number": 65,
+      "speaker": "PISTOL",
+      "text": "And from the powdering-tub of infamy"
+    },
+    {
+      "number": 66,
+      "speaker": "PISTOL",
+      "text": "Fetch forth the lazar kite of Cressid’s kind,"
+    },
+    {
+      "number": 67,
+      "speaker": "PISTOL",
+      "text": "Doll Tearsheet she by name, and her espouse:"
+    },
+    {
+      "number": 68,
+      "speaker": "PISTOL",
+      "text": "I have, and I will hold, the quondam Quickly"
+    },
+    {
+      "number": 69,
+      "speaker": "PISTOL",
+      "text": "For the only she; and—pauca, there’s enough."
+    },
+    {
+      "number": 70,
+      "speaker": "PISTOL",
+      "text": "Go to."
+    },
+    {
+      "number": 71,
+      "speaker": "BOY",
+      "text": "Mine host Pistol, you must come to my master, and you, hostess:"
+    },
+    {
+      "number": 72,
+      "speaker": "BOY",
+      "text": "he is very sick, and would to bed. Good Bardolph, put thy"
+    },
+    {
+      "number": 73,
+      "speaker": "BOY",
+      "text": "face between his sheets, and do the office of a warming-pan. Faith,"
+    },
+    {
+      "number": 74,
+      "speaker": "BOY",
+      "text": "he’s very ill."
+    },
+    {
+      "number": 74,
+      "speaker": "BARDOLPH",
+      "text": "Away, you rogue!"
+    },
+    {
+      "number": 75,
+      "speaker": "HOSTESS",
+      "text": "By my troth, he’ll yield the crow a pudding one of these"
+    },
+    {
+      "number": 76,
+      "speaker": "HOSTESS",
+      "text": "days. The king has killed his heart. Good husband, come home presently."
+    },
+    {
+      "number": 77,
+      "speaker": "BARDOLPH",
+      "text": "Come, shall I make you two friends? We must to France together:"
+    },
+    {
+      "number": 78,
+      "speaker": "BARDOLPH",
+      "text": "why the devil should we keep knives to cut one another’s throats?"
+    },
+    {
+      "number": 79,
+      "speaker": "PISTOL",
+      "text": "Let floods o’erswell, and fiends for food howl on!"
+    },
+    {
+      "number": 80,
+      "speaker": "NYM",
+      "text": "You’ll pay me the eight shillings I won of you at betting?"
+    },
+    {
+      "number": 81,
+      "speaker": "PISTOL",
+      "text": "Base is the slave that pays."
+    },
+    {
+      "number": 82,
+      "speaker": "NYM",
+      "text": "That now I will have: that’s the humour of it."
+    },
+    {
+      "number": 83,
+      "speaker": "PISTOL",
+      "text": "As manhood shall compound: push home.They draw."
+    },
+    {
+      "number": 84,
+      "speaker": "BARDOLPH",
+      "text": "By this sword, he that makes the first thrust, I’ll kill him;"
+    },
+    {
+      "number": 85,
+      "speaker": "BARDOLPH",
+      "text": "by this sword, I will."
+    },
+    {
+      "number": 86,
+      "speaker": "PISTOL",
+      "text": "Sword is an oath, and oaths must have their course."
+    },
+    {
+      "number": 87,
+      "speaker": "BARDOLPH",
+      "text": "Corporal Nym, and thou wilt be friends, be friends: an thou wilt"
+    },
+    {
+      "number": 88,
+      "speaker": "BARDOLPH",
+      "text": "not, why, then, be enemies with me too. Prithee, put up."
+    },
+    {
+      "number": 89,
+      "speaker": "NYM",
+      "text": "I shall have my eight shillings I won from you at betting?"
+    },
+    {
+      "number": 90,
+      "speaker": "PISTOL",
+      "text": "A noble shalt thou have, and present pay;"
+    },
+    {
+      "number": 91,
+      "speaker": "PISTOL",
+      "text": "And liquor likewise will I give to thee,"
+    },
+    {
+      "number": 92,
+      "speaker": "PISTOL",
+      "text": "And friendship shall combine, and brotherhood:"
+    },
+    {
+      "number": 93,
+      "speaker": "PISTOL",
+      "text": "I’ll live by Nym, and Nym shall live by me;"
+    },
+    {
+      "number": 94,
+      "speaker": "PISTOL",
+      "text": "Is not this just? for I shall sutler be"
+    },
+    {
+      "number": 95,
+      "speaker": "PISTOL",
+      "text": "Unto the camp, and profits will accrue."
+    },
+    {
+      "number": 96,
+      "speaker": "PISTOL",
+      "text": "Give me thy hand."
+    },
+    {
+      "number": 96,
+      "speaker": "NYM",
+      "text": "I shall have my noble?"
+    },
+    {
+      "number": 97,
+      "speaker": "PISTOL",
+      "text": "In cash most justly paid."
+    },
+    {
+      "number": 97,
+      "speaker": "NYM",
+      "text": "Well, then, that’s the humour of’t."
+    },
+    {
+      "number": 98,
+      "speaker": "HOSTESS",
+      "text": "As ever you come of women, come in quickly to Sir John."
+    },
+    {
+      "number": 99,
+      "speaker": "HOSTESS",
+      "text": "Ah, poor heart! he is so shaked of a burning quotidian tertian,"
+    },
+    {
+      "number": 100,
+      "speaker": "HOSTESS",
+      "text": "that it is most lamentable to behold. Sweet men, come to him."
+    },
+    {
+      "number": 101,
+      "speaker": "NYM",
+      "text": "The king hath run bad humours on the knight; that’s the even of it."
+    },
+    {
+      "number": 102,
+      "speaker": "PISTOL",
+      "text": "Nym, thou hast spoke the right;"
+    },
+    {
+      "number": 103,
+      "speaker": "PISTOL",
+      "text": "His heart is fracted and corroborate."
+    },
+    {
+      "number": 104,
+      "speaker": "NYM",
+      "text": "The king is a good king: but it must be as it"
+    },
+    {
+      "number": 105,
+      "speaker": "NYM",
+      "text": "may; he passes some humours and careers."
+    },
+    {
+      "number": 106,
+      "speaker": "PISTOL",
+      "text": "Let us condole the knight; for, lambkins, we will live."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Corporal Nym and Lieutenant Bardolph."
+    },
+    {
+      "after_line": 22,
+      "text": "Enter Pistol and Hostess."
+    },
+    {
+      "after_line": 56,
+      "text": "Draws."
+    },
+    {
+      "after_line": 70,
+      "text": "Enter the Boy."
+    },
+    {
+      "after_line": 76,
+      "text": "Exeunt Hostess and Boy."
+    },
+    {
+      "after_line": 97,
+      "text": "Reenter Hostess."
+    },
+    {
+      "after_line": 106,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act2_scene1_gloss1",
+      "line": 1,
+      "phrase": "Corporal Nym",
+      "definition": "'Nym' means 'to take/filch' in Elizabethan slang — his name is a joke about petty theft"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss2",
+      "line": 2,
+      "phrase": "Ancient Pistol",
+      "definition": "'Ancient' = ensign, the lowest commissioned officer; Pistol's name signals noisy bombast"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss3",
+      "line": 5,
+      "phrase": "wink",
+      "definition": "shut my eyes"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss4",
+      "line": 5,
+      "phrase": "hold out mine iron",
+      "definition": "keep my sword out — Nym's comic threat"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss5",
+      "line": 7,
+      "phrase": "toast cheese",
+      "definition": "the sword is fit only for toasting cheese — a pathetic weapon"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss6",
+      "line": 10,
+      "phrase": "sworn brothers",
+      "definition": "men joined by oath in military fellowship"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss7",
+      "line": 14,
+      "phrase": "my rest",
+      "definition": "my decision; my settled resolve — gambling term, 'the stakes I reserve'"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss8",
+      "line": 14,
+      "phrase": "rendezvous",
+      "definition": "ultimate destination; final resort"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss9",
+      "line": 16,
+      "phrase": "Nell Quickly",
+      "definition": "the Hostess of the Boar's Head tavern, familiar from the Henry IV plays"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss10",
+      "line": 17,
+      "phrase": "troth-plight",
+      "definition": "betrothed; formally engaged by oath"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss11",
+      "line": 21,
+      "phrase": "patience be a tired mare, yet she will plod",
+      "definition": "Nym's proverbial locution: even an exhausted horse keeps going"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss12",
+      "line": 24,
+      "phrase": "mine host",
+      "definition": "my innkeeper — Bardolph's familiar address insults Pistol's new domestic role"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss13",
+      "line": 24,
+      "phrase": "Base tike",
+      "definition": "low-bred cur; contemptible dog"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss14",
+      "line": 29,
+      "phrase": "keep a bawdy house",
+      "definition": "run a brothel — the Hostess's anxious euphemism"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss15",
+      "line": 31,
+      "phrase": "drawn",
+      "definition": "with sword drawn"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss16",
+      "line": 33,
+      "phrase": "Pish!",
+      "definition": "expression of contempt — a hiss of dismissal"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss17",
+      "line": 34,
+      "phrase": "Iceland dog",
+      "definition": "a breed of long-haired lap-dog — Pistol insults Nym as a yappy, effete cur"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss18",
+      "line": 34,
+      "phrase": "prick-ear’d cur",
+      "definition": "sharp-eared mongrel"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss19",
+      "line": 36,
+      "phrase": "shog off",
+      "definition": "clear off; buzz off — Nym's low slang"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss20",
+      "line": 36,
+      "phrase": "solus",
+      "definition": "Latin: 'alone' — Nym wants a private duel; Pistol mishears it as an insult"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss21",
+      "line": 37,
+      "phrase": "egregious",
+      "definition": "outstandingly bad; conspicuous in wickedness"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss22",
+      "line": 38,
+      "phrase": "mervailous",
+      "definition": "marvellous — Pistol's inflated diction"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss23",
+      "line": 40,
+      "phrase": "maw",
+      "definition": "stomach; gullet"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss24",
+      "line": 40,
+      "phrase": "perdy",
+      "definition": "by God (par Dieu) — mild oath"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss25",
+      "line": 42,
+      "phrase": "retort the “solus” in thy bowels",
+      "definition": "hurl the word back into Pistol's guts — Pistolian bombast"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss26",
+      "line": 43,
+      "phrase": "Pistol’s cock is up",
+      "definition": "my pistol's cocked and ready to fire — with bawdy double-meaning Pistol cultivates"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss27",
+      "line": 45,
+      "phrase": "Barbason",
+      "definition": "a demon's name from contemporary demonology — Nym refuses to be 'conjured' like a devil"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss28",
+      "line": 45,
+      "phrase": "humour",
+      "definition": "Nym's catchphrase — 'mood', 'inclination'; he over-uses it comically throughout the scene"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss29",
+      "line": 47,
+      "phrase": "scour you with my rapier",
+      "definition": "run you through with my sword — 'scour' = cleanse by piercing"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss30",
+      "line": 51,
+      "phrase": "wight",
+      "definition": "creature; fellow (archaic)"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss31",
+      "line": 53,
+      "phrase": "exhale",
+      "definition": "draw (your sword) — Pistol's Latinate way of saying 'unsheathe'"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss32",
+      "line": 57,
+      "phrase": "mickle",
+      "definition": "great; much (archaic/dialect)"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss33",
+      "line": 57,
+      "phrase": "fury shall abate",
+      "definition": "my anger will lessen"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss34",
+      "line": 61,
+      "phrase": "Couple a gorge",
+      "definition": "Pistol's butchery of the French 'couper la gorge' — 'cut the throat'"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss35",
+      "line": 63,
+      "phrase": "hound of Crete",
+      "definition": "mock-epic insult — Cretan hounds were proverbially fierce"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss36",
+      "line": 64,
+      "phrase": "spital",
+      "definition": "hospital — especially one for the diseased poor, often the pox"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss37",
+      "line": 65,
+      "phrase": "powdering-tub of infamy",
+      "definition": "the sweating-tub used to treat venereal disease; by extension, a house of ill repute"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss38",
+      "line": 66,
+      "phrase": "lazar",
+      "definition": "leprous beggar; diseased wretch"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss39",
+      "line": 66,
+      "phrase": "Cressid’s kind",
+      "definition": "descendants of Cressida — who in Elizabethan tradition ends as a leprous beggar; slang for syphilitic women"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss40",
+      "line": 67,
+      "phrase": "Doll Tearsheet",
+      "definition": "a notorious prostitute from Henry IV Part 2 — Pistol re-names the Hostess into her world"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss41",
+      "line": 68,
+      "phrase": "quondam Quickly",
+      "definition": "the former Quickly — Latin 'quondam' = formerly; she is now Pistol's wife"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss42",
+      "line": 69,
+      "phrase": "pauca",
+      "definition": "Latin: 'few (words)' — enough said"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss43",
+      "line": 73,
+      "phrase": "warming-pan",
+      "definition": "a long-handled pan of hot coals to warm a bed — the Boy's crude joke about Bardolph's face"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss44",
+      "line": 75,
+      "phrase": "yield the crow a pudding",
+      "definition": "give the crow his meal — i.e. die, so the crows can feed on him"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss45",
+      "line": 80,
+      "phrase": "eight shillings",
+      "definition": "the debt Pistol owes Nym from a wager — the quarrel's actual trigger"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss46",
+      "line": 81,
+      "phrase": "Base is the slave that pays",
+      "definition": "Pistol's motto: only slaves pay their debts; gentlemen don't"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss47",
+      "line": 83,
+      "phrase": "As manhood shall compound",
+      "definition": "let our manhood settle it; let swordplay decide"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss48",
+      "line": 90,
+      "phrase": "noble",
+      "definition": "a gold coin worth roughly six shillings eightpence"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss49",
+      "line": 94,
+      "phrase": "sutler",
+      "definition": "army camp-follower who sells food and drink to soldiers"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss50",
+      "line": 99,
+      "phrase": "burning quotidian tertian",
+      "definition": "the Hostess's malapropism — 'quotidian' (daily fever) and 'tertian' (every third day) are contradictory; she means he has a raging fever"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss51",
+      "line": 103,
+      "phrase": "fracted and corroborate",
+      "definition": "broken and corroborated (confirmed) — Pistol means 'broken'; he doesn't know what 'corroborate' means"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss52",
+      "line": 105,
+      "phrase": "passes some humours and careers",
+      "definition": "gives vent to some moods and outbursts — Nym jargon; 'careers' = runs"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss53",
+      "line": 106,
+      "phrase": "condole",
+      "definition": "sympathize with; mourn for"
+    },
+    {
+      "id": "henry_v_act2_scene1_gloss54",
+      "line": 106,
+      "phrase": "lambkins",
+      "definition": "little lambs — Pistol's incongruously tender address"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act2_scene1_ann1",
+      "line_start": 1,
+      "line_end": 50,
+      "citation_display": "Henry V 2.1.1–50",
+      "category": "thematic",
+      "title": "The other England — Eastcheap after Falstaff",
+      "body": "The Eastcheap scene that opens Act II introduces the remnants of Falstaff's old company — Bardolph, Nym, Pistol — and installs them as the play's recurring comic counterpoint to the official war. Their world is petty theft, doubtful marriages, and sword-quarrels about eight-shilling debts. Shakespeare is doing something structurally specific here: he is showing us who Henry's war actually sweeps up. The Chorus has just named England's 'youth on fire' and 'the mirror of all Christian kings'; the scene immediately undercuts the image by staging Nym's plodding cowardice and Pistol's inflated bombast as the mobilization's reality on the ground. The contrast is not sentimental — Shakespeare is not asking us to love Pistol — but it is structural: the play's official voice and its low-comic undervoice alternate throughout, and this is the first such alternation.",
+      "sources": [
+        "C. L. Barber, Shakespeare's Festive Comedy (1959)",
+        "Robert Weimann, Shakespeare and the Popular Tradition in the Theater (1978)"
+      ]
+    },
+    {
+      "id": "henry_v_act2_scene1_ann2",
+      "line_start": 60,
+      "line_end": 100,
+      "citation_display": "Henry V 2.1.60–100",
+      "category": "linguistic",
+      "title": "Pistol's diction — mock-heroic as a character",
+      "body": "Pistol is Shakespeare's most fully realized parody of a certain kind of Elizabethan actor — the roaring, classically-allusive, stage-villain whose speech is studded with half-digested Latin, misquoted classical mythology, and oaths designed to sound imposing. His vocabulary is a running pastiche: 'Couple a gorge' (bungled French), 'quondam Quickly' (Latinate pretension), 'pauca' (schoolboy Latin), 'Cressid's kind' (misused Troy-matter). His rhythmic, near-blank-verse inflections parody the high style of earlier Elizabethan drama (especially Marlowe). The comedy depends on our hearing the rhetorical mode Pistol is imitating. Importantly, Pistol's inflation is not just funny: it is a window into what soldier-theatre could sound like in 1599, and the play will later (5.1) strip away the inflated pose entirely, showing us the ordinary scrounger underneath.",
+      "sources": [
+        "M. M. Mahood, Shakespeare's Wordplay (1957)",
+        "Emrys Jones, Scenic Form in Shakespeare (1971)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act2_scene1_q1",
+      "kind": "structural",
+      "prompt": "What is the structural function of the Eastcheap scene in Act II?",
+      "options": [
+        "To introduce new characters for the wooing subplot",
+        "To provide comic relief with no thematic content",
+        "To show the actual human material of Henry's 'youth of England on fire' — low-comic scroungers preparing for pillage — as a counterpoint to the Chorus's official rhetoric",
+        "To explain the Salic Law to the audience"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 30
+    },
+    {
+      "id": "henry_v_act2_scene1_q2",
+      "kind": "close_reading",
+      "prompt": "What does Pistol's speech-register imitate?",
+      "options": [
+        "Courtly French love-sonnets",
+        "Biblical Psalter translations",
+        "The mock-heroic, classically-allusive style of earlier Elizabethan stage-villains (especially the Marlovian bombastic tradition), full of misused Latin and over-inflated oaths",
+        "The Welsh dialect of Fluellen"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 25,
+      "anchor_line_start": 37,
+      "anchor_line_end": 70
+    },
+    {
+      "id": "henry_v_act2_scene1_q3",
+      "kind": "comprehension",
+      "prompt": "What is the actual quarrel between Pistol and Nym?",
+      "options": [
+        "A matter of military honour",
+        "A religious dispute",
+        "An eight-shilling gambling debt — and Pistol's having married Nym's betrothed Nell Quickly",
+        "A disputed command at Harfleur"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 20,
+      "anchor_line_start": 16,
+      "anchor_line_end": 80
+    }
+  ]
+}

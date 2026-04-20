@@ -1,0 +1,782 @@
+{
+  "section_id": "romeo_and_juliet_act5_scene1",
+  "work_id": "romeo-and-juliet",
+  "sequence": 24,
+  "act": 5,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "Mantua. A street",
+  "line_count": 84,
+  "word_count": 649,
+  "est_read_minutes": 3,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "ROMEO",
+      "text": "If I may trust the flattering truth of sleep,"
+    },
+    {
+      "number": 2,
+      "speaker": "ROMEO",
+      "text": "My dreams presage some joyful news at hand:"
+    },
+    {
+      "number": 3,
+      "speaker": "ROMEO",
+      "text": "My bosom’s lord sits lightly in his throne;"
+    },
+    {
+      "number": 4,
+      "speaker": "ROMEO",
+      "text": "And all this day an unaccustom’d spirit"
+    },
+    {
+      "number": 5,
+      "speaker": "ROMEO",
+      "text": "Lifts me above the ground with cheerful thoughts."
+    },
+    {
+      "number": 6,
+      "speaker": "ROMEO",
+      "text": "I dreamt my lady came and found me dead—"
+    },
+    {
+      "number": 7,
+      "speaker": "ROMEO",
+      "text": "Strange dream, that gives a dead man leave to think!—"
+    },
+    {
+      "number": 8,
+      "speaker": "ROMEO",
+      "text": "And breathed such life with kisses in my lips,"
+    },
+    {
+      "number": 9,
+      "speaker": "ROMEO",
+      "text": "That I revived, and was an emperor."
+    },
+    {
+      "number": 10,
+      "speaker": "ROMEO",
+      "text": "Ah me! how sweet is love itself possess’d,"
+    },
+    {
+      "number": 11,
+      "speaker": "ROMEO",
+      "text": "When but love’s shadows are so rich in joy!"
+    },
+    {
+      "number": 12,
+      "speaker": "BALTHASAR",
+      "text": "Then she is well, and nothing can be ill:"
+    },
+    {
+      "number": 13,
+      "speaker": "BALTHASAR",
+      "text": "Her body sleeps in Capel’s monument,"
+    },
+    {
+      "number": 14,
+      "speaker": "BALTHASAR",
+      "text": "And her immortal part with angels lives."
+    },
+    {
+      "number": 15,
+      "speaker": "BALTHASAR",
+      "text": "I saw her laid low in her kindred’s vault,"
+    },
+    {
+      "number": 16,
+      "speaker": "BALTHASAR",
+      "text": "And presently took post to tell it you:"
+    },
+    {
+      "number": 17,
+      "speaker": "BALTHASAR",
+      "text": "O, pardon me for bringing these ill news,"
+    },
+    {
+      "number": 18,
+      "speaker": "BALTHASAR",
+      "text": "Since you did leave it for my office, sir."
+    },
+    {
+      "number": 19,
+      "speaker": "ROMEO",
+      "text": "Is it even so? then I defy you, stars!"
+    },
+    {
+      "number": 20,
+      "speaker": "ROMEO",
+      "text": "Thou know’st my lodging: get me ink and paper,"
+    },
+    {
+      "number": 21,
+      "speaker": "ROMEO",
+      "text": "And hire post-horses; I will hence to-night."
+    },
+    {
+      "number": 22,
+      "speaker": "BALTHASAR",
+      "text": "I do beseech you, sir, have patience:"
+    },
+    {
+      "number": 23,
+      "speaker": "BALTHASAR",
+      "text": "Your looks are pale and wild, and do import"
+    },
+    {
+      "number": 24,
+      "speaker": "BALTHASAR",
+      "text": "Some misadventure."
+    },
+    {
+      "number": 24,
+      "speaker": "ROMEO",
+      "text": "Tush, thou art deceived:"
+    },
+    {
+      "number": 25,
+      "speaker": "ROMEO",
+      "text": "Leave me, and do the thing I bid thee do."
+    },
+    {
+      "number": 26,
+      "speaker": "ROMEO",
+      "text": "Hast thou no letters to me from the friar?"
+    },
+    {
+      "number": 27,
+      "speaker": "BALTHASAR",
+      "text": "No, my good lord."
+    },
+    {
+      "number": 27,
+      "speaker": "ROMEO",
+      "text": "No matter: get thee gone,"
+    },
+    {
+      "number": 28,
+      "speaker": "ROMEO",
+      "text": "And hire those horses; I’ll be with thee straight."
+    },
+    {
+      "number": 29,
+      "speaker": "ROMEO",
+      "text": "Well, Juliet, I will lie with thee to-night."
+    },
+    {
+      "number": 30,
+      "speaker": "ROMEO",
+      "text": "Let’s see for means: O mischief, thou art swift"
+    },
+    {
+      "number": 31,
+      "speaker": "ROMEO",
+      "text": "To enter in the thoughts of desperate men!"
+    },
+    {
+      "number": 32,
+      "speaker": "ROMEO",
+      "text": "I do remember an apothecary—"
+    },
+    {
+      "number": 33,
+      "speaker": "ROMEO",
+      "text": "And hereabouts he dwells—which late I noted"
+    },
+    {
+      "number": 34,
+      "speaker": "ROMEO",
+      "text": "In tatter’d weeds, with overwhelming brows,"
+    },
+    {
+      "number": 35,
+      "speaker": "ROMEO",
+      "text": "Culling of simples; meagre were his looks,"
+    },
+    {
+      "number": 36,
+      "speaker": "ROMEO",
+      "text": "Sharp misery had worn him to the bones:"
+    },
+    {
+      "number": 37,
+      "speaker": "ROMEO",
+      "text": "And in his needy shop a tortoise hung,"
+    },
+    {
+      "number": 38,
+      "speaker": "ROMEO",
+      "text": "An alligator stuff’d, and other skins"
+    },
+    {
+      "number": 39,
+      "speaker": "ROMEO",
+      "text": "Of ill-shaped fishes; and about his shelves"
+    },
+    {
+      "number": 40,
+      "speaker": "ROMEO",
+      "text": "A beggarly account of empty boxes,"
+    },
+    {
+      "number": 41,
+      "speaker": "ROMEO",
+      "text": "Green earthen pots, bladders and musty seeds,"
+    },
+    {
+      "number": 42,
+      "speaker": "ROMEO",
+      "text": "Remnants of packthread and old cakes of roses,"
+    },
+    {
+      "number": 43,
+      "speaker": "ROMEO",
+      "text": "Were thinly scatter’d, to make up a show."
+    },
+    {
+      "number": 44,
+      "speaker": "ROMEO",
+      "text": "Noting this penury, to myself I said"
+    },
+    {
+      "number": 45,
+      "speaker": "ROMEO",
+      "text": "“An if a man did need a poison now,"
+    },
+    {
+      "number": 46,
+      "speaker": "ROMEO",
+      "text": "Whose sale is present death in Mantua,"
+    },
+    {
+      "number": 47,
+      "speaker": "ROMEO",
+      "text": "Here lives a caitiff wretch would sell it him.”"
+    },
+    {
+      "number": 48,
+      "speaker": "ROMEO",
+      "text": "O, this same thought did but forerun my need;"
+    },
+    {
+      "number": 49,
+      "speaker": "ROMEO",
+      "text": "And this same needy man must sell it me."
+    },
+    {
+      "number": 50,
+      "speaker": "ROMEO",
+      "text": "As I remember, this should be the house."
+    },
+    {
+      "number": 51,
+      "speaker": "ROMEO",
+      "text": "Being holiday, the beggar’s shop is shut."
+    },
+    {
+      "number": 52,
+      "speaker": "ROMEO",
+      "text": "What, ho! apothecary!"
+    },
+    {
+      "number": 52,
+      "speaker": "APOTHECARY",
+      "text": "Who calls so loud?"
+    },
+    {
+      "number": 53,
+      "speaker": "ROMEO",
+      "text": "Come hither, man. I see that thou art poor:"
+    },
+    {
+      "number": 54,
+      "speaker": "ROMEO",
+      "text": "Hold, there is forty ducats: let me have"
+    },
+    {
+      "number": 55,
+      "speaker": "ROMEO",
+      "text": "A dram of poison, such soon-speeding gear"
+    },
+    {
+      "number": 56,
+      "speaker": "ROMEO",
+      "text": "As will disperse itself through all the veins"
+    },
+    {
+      "number": 57,
+      "speaker": "ROMEO",
+      "text": "That the life-weary taker may fall dead"
+    },
+    {
+      "number": 58,
+      "speaker": "ROMEO",
+      "text": "And that the trunk may be discharged of breath"
+    },
+    {
+      "number": 59,
+      "speaker": "ROMEO",
+      "text": "As violently as hasty powder fired"
+    },
+    {
+      "number": 60,
+      "speaker": "ROMEO",
+      "text": "Doth hurry from the fatal cannon’s womb."
+    },
+    {
+      "number": 61,
+      "speaker": "APOTHECARY",
+      "text": "Such mortal drugs I have; but Mantua’s law"
+    },
+    {
+      "number": 62,
+      "speaker": "APOTHECARY",
+      "text": "Is death to any he that utters them."
+    },
+    {
+      "number": 63,
+      "speaker": "ROMEO",
+      "text": "Art thou so bare and full of wretchedness,"
+    },
+    {
+      "number": 64,
+      "speaker": "ROMEO",
+      "text": "And fear’st to die? famine is in thy cheeks,"
+    },
+    {
+      "number": 65,
+      "speaker": "ROMEO",
+      "text": "Need and oppression starveth in thine eyes,"
+    },
+    {
+      "number": 66,
+      "speaker": "ROMEO",
+      "text": "Contempt and beggary hangs upon thy back;"
+    },
+    {
+      "number": 67,
+      "speaker": "ROMEO",
+      "text": "The world is not thy friend nor the world’s law;"
+    },
+    {
+      "number": 68,
+      "speaker": "ROMEO",
+      "text": "The world affords no law to make thee rich;"
+    },
+    {
+      "number": 69,
+      "speaker": "ROMEO",
+      "text": "Then be not poor, but break it, and take this."
+    },
+    {
+      "number": 70,
+      "speaker": "APOTHECARY",
+      "text": "My poverty, but not my will, consents."
+    },
+    {
+      "number": 71,
+      "speaker": "ROMEO",
+      "text": "I pay thy poverty, and not thy will."
+    },
+    {
+      "number": 72,
+      "speaker": "APOTHECARY",
+      "text": "Put this in any liquid thing you will,"
+    },
+    {
+      "number": 73,
+      "speaker": "APOTHECARY",
+      "text": "And drink it off; and, if you had the strength"
+    },
+    {
+      "number": 74,
+      "speaker": "APOTHECARY",
+      "text": "Of twenty men, it would dispatch you straight."
+    },
+    {
+      "number": 75,
+      "speaker": "ROMEO",
+      "text": "There is thy gold, worse poison to men’s souls,"
+    },
+    {
+      "number": 76,
+      "speaker": "ROMEO",
+      "text": "Doing more murders in this loathsome world,"
+    },
+    {
+      "number": 77,
+      "speaker": "ROMEO",
+      "text": "Than these poor compounds that thou mayst not sell."
+    },
+    {
+      "number": 78,
+      "speaker": "ROMEO",
+      "text": "I sell thee poison; thou hast sold me none."
+    },
+    {
+      "number": 79,
+      "speaker": "ROMEO",
+      "text": "Farewell: buy food, and get thyself in flesh."
+    },
+    {
+      "number": 80,
+      "speaker": "ROMEO",
+      "text": "Come, cordial and not poison, go with me"
+    },
+    {
+      "number": 81,
+      "speaker": "ROMEO",
+      "text": "To Juliet’s grave; for there must I use thee."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Romeo."
+    },
+    {
+      "after_line": 11,
+      "text": "Enter Balthasar, booted."
+    },
+    {
+      "after_line": 11,
+      "text": "News from Verona!—How now, Balthasar! Dost thou not bring me letters from the friar? How doth my lady? Is my father well? How fares my Juliet? that I ask again; For nothing can be ill, if she be well."
+    },
+    {
+      "after_line": 28,
+      "text": "Exit Balthasar."
+    },
+    {
+      "after_line": 52,
+      "text": "Enter Apothecary."
+    },
+    {
+      "after_line": 81,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss1",
+      "line": 1,
+      "phrase": "flattering truth of sleep",
+      "definition": "the pleasing but deceptive content of dreams"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss2",
+      "line": 2,
+      "phrase": "presage",
+      "definition": "foretell; forebode"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss3",
+      "line": 3,
+      "phrase": "My bosom’s lord sits lightly in his throne",
+      "definition": "my heart sits easily — Romeo feels unaccountable joy, just before disaster"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss4",
+      "line": 4,
+      "phrase": "unaccustom’d spirit",
+      "definition": "an unfamiliar elation"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss5",
+      "line": 6,
+      "phrase": "lady came and found me dead",
+      "definition": "Romeo's dream — he dreamed Juliet found him dead; a perfect inversion of what will happen"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss6",
+      "line": 9,
+      "phrase": "Emperor",
+      "definition": "Romeo felt raised to imperial joy by the kiss"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss7",
+      "line": 11,
+      "phrase": "shadows",
+      "definition": "dream-images; also, by Elizabethan theatre vocabulary, actors"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss8",
+      "line": 13,
+      "phrase": "Capel’s monument",
+      "definition": "the Capulet family tomb — Balthasar's fatal report"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss9",
+      "line": 15,
+      "phrase": "I saw her laid low",
+      "definition": "I witnessed her being laid in the tomb"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss10",
+      "line": 19,
+      "phrase": "Then I defy you, stars!",
+      "definition": "Romeo rejects fate — an act of heroic assertion against the prologue's cosmic sentence"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss11",
+      "line": 24,
+      "phrase": "misadventure",
+      "definition": "misfortune"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss12",
+      "line": 22,
+      "phrase": "patience",
+      "definition": "calmness — Balthasar's appeal Romeo will not accept"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss13",
+      "line": 23,
+      "phrase": "pale and wild",
+      "definition": "unnaturally pale and frenzied"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss14",
+      "line": 32,
+      "phrase": "apothecary",
+      "definition": "seller of drugs and medicines — an Elizabethan pharmacist"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss15",
+      "line": 34,
+      "phrase": "weeds",
+      "definition": "tattered clothes"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss16",
+      "line": 34,
+      "phrase": "overwhelming brows",
+      "definition": "heavy, overhanging eyebrows"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss17",
+      "line": 35,
+      "phrase": "culling of simples",
+      "definition": "gathering of medicinal herbs"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss18",
+      "line": 34,
+      "phrase": "tatter’d weeds",
+      "definition": "ragged clothing — signs of his poverty"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss19",
+      "line": 37,
+      "phrase": "tortoise hung",
+      "definition": "a preserved tortoise — traditional apothecary shop curio"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss20",
+      "line": 38,
+      "phrase": "alligator",
+      "definition": "stuffed alligator on display — exotic apothecary-shop curio"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss21",
+      "line": 40,
+      "phrase": "beggarly account",
+      "definition": "pitiable small number"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss22",
+      "line": 40,
+      "phrase": "empty boxes",
+      "definition": "empty pharmacist's containers — the shop is impoverished"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss23",
+      "line": 41,
+      "phrase": "Green earthen pots",
+      "definition": "medicinal clay jars"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss24",
+      "line": 41,
+      "phrase": "musty seeds",
+      "definition": "stale, moldy seeds"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss25",
+      "line": 42,
+      "phrase": "cakes of roses",
+      "definition": "pressed rose-petal confections"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss26",
+      "line": 47,
+      "phrase": "caitiff wretch",
+      "definition": "miserable wretch"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss27",
+      "line": 45,
+      "phrase": "An if a man did need a poison now",
+      "definition": "if a man needed poison right now — Romeo ironically invokes the apothecary's wares"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss28",
+      "line": 61,
+      "phrase": "Mantua’s law",
+      "definition": "the ducal law against selling poison"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss29",
+      "line": 63,
+      "phrase": "bare and full of wretchedness",
+      "definition": "stripped and miserable"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss30",
+      "line": 66,
+      "phrase": "Contempt and beggary hangs upon thy back",
+      "definition": "disdain and poverty cling to you"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss31",
+      "line": 55,
+      "phrase": "soon-speeding gear",
+      "definition": "quick-acting substance"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss32",
+      "line": 74,
+      "phrase": "twenty men",
+      "definition": "a dose sufficient to kill twenty men — the apothecary's professional estimate"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss33",
+      "line": 61,
+      "phrase": "mortal drugs",
+      "definition": "deadly drugs"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss34",
+      "line": 62,
+      "phrase": "utters",
+      "definition": "sells"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss35",
+      "line": 63,
+      "phrase": "so bare and full of wretchedness",
+      "definition": "Romeo's rhetorical question — he already knows the answer"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss36",
+      "line": 66,
+      "phrase": "Contempt and beggary",
+      "definition": "scorn and poverty"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss37",
+      "line": 70,
+      "phrase": "My poverty, but not my will, consents",
+      "definition": "the apothecary's resigned formulation — my need, not my ethic, accepts"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss38",
+      "line": 71,
+      "phrase": "I pay thy poverty, and not thy will",
+      "definition": "Romeo meets the apothecary's phrasing with his own"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss39",
+      "line": 54,
+      "phrase": "ducats",
+      "definition": "gold coins — Venetian currency, used widely in Italy"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss40",
+      "line": 74,
+      "phrase": "dispatch you straight",
+      "definition": "kill you instantly"
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_gloss41",
+      "line": 80,
+      "phrase": "cordial",
+      "definition": "life-restoring drink — Romeo calls his poison a 'cordial' because it restores him to Juliet"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act5_scene1_ann1",
+      "line_start": 1,
+      "line_end": 29,
+      "citation_display": "Romeo and Juliet 5.1.1–29",
+      "category": "structural",
+      "title": "Romeo's dream — and 'Then I defy you, stars!'",
+      "body": "Romeo opens 5.1 in a state of inexplicable joy: 'My bosom's lord sits lightly in his throne.' He dreams Juliet found him dead and her kisses brought him back to life. This is one of the play's most exquisite moments of dramatic irony — the dream exactly inverts what is about to happen: he will find her 'dead' in the tomb; his kisses will not revive her; his suicide will be consummated by her dagger. Balthasar enters with the news of Juliet's death. Romeo's response — 'Is it e'en so? then I defy you, stars!' — is the most heroic gesture in the play. After a play in which he has been 'fortune's fool' (3.1) and 'star-cross'd' (prologue), Romeo asserts will against fate. The defiance is tragic because its means is suicide — he wills his own death in order to join Juliet. In rebelling against the stars, he fulfills them.",
+      "sources": [
+        "Douglas Peterson, Time, Tide, and Tempest (1973)",
+        "Marjorie Garber, Shakespeare After All (2004)"
+      ]
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_ann2",
+      "line_start": 37,
+      "line_end": 83,
+      "citation_display": "Romeo and Juliet 5.1.37–83",
+      "category": "close_reading",
+      "title": "The apothecary — poverty as moral leverage",
+      "body": "Romeo finds the Mantuan apothecary in the extreme of poverty — 'tatter'd weeds, with overwhelming brows,' 'beggarly account of empty boxes.' Romeo buys illegal poison not with argument but with pressure: 'My poverty, but not my will, consents,' the apothecary says. Shakespeare lingers on this transaction for twenty-four lines — not a detour, but a scene in miniature about what poverty can be made to do. The apothecary accepts forty ducats and the moral weight of the sale because he has no other option. Romeo's line 'I pay thy poverty, and not thy will' is brutal recognition of the transaction's ethics. This is Shakespeare's most compact anatomy of how catastrophe recruits the poor as its instruments — a theme he develops in Timon of Athens and Lear. The apothecary disappears from the play after this scene, but the transaction has a long shadow.",
+      "sources": [
+        "Stephen Greenblatt, Will in the World (2004)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act5_scene1_q1",
+      "kind": "close_reading",
+      "prompt": "What dream does Romeo report in the opening speech of 5.1?",
+      "options": [
+        "A dream of the feud ending",
+        "A dream that Juliet found him dead, and that her kisses revived him — an ironic inversion of the actual outcome",
+        "A dream of his mother's death",
+        "A nightmare of Tybalt's ghost"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 1,
+      "anchor_line_end": 11
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_q2",
+      "kind": "structural",
+      "prompt": "What is the significance of Romeo's cry 'Then I defy you, stars!'?",
+      "options": [
+        "He has lost his faith in astrology forever",
+        "After being 'fortune's fool' and 'star-cross'd,' he asserts will against fate — a heroic gesture, though its means (suicide) will ironically fulfill the stars' sentence",
+        "He is accusing Balthasar of lying",
+        "He is merely exclaiming in surprise"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 28,
+      "anchor_line_end": 29
+    },
+    {
+      "id": "romeo_and_juliet_act5_scene1_q3",
+      "kind": "theme",
+      "prompt": "What moral point does the apothecary scene make?",
+      "options": [
+        "Pharmacies should be better regulated",
+        "Poverty can be recruited as an instrument of catastrophe — 'My poverty, but not my will, consents'",
+        "Romeo is good at negotiation",
+        "Apothecaries are generally untrustworthy"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 67,
+      "anchor_line_end": 76
+    }
+  ]
+}

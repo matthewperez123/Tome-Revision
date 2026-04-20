@@ -1,0 +1,3497 @@
+{
+  "section_id": "richard_iii_act4_scene4",
+  "work_id": "richard-iii",
+  "sequence": 19,
+  "act": 4,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "Before the palace",
+  "line_count": 553,
+  "word_count": 4267,
+  "est_read_minutes": 21,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "QUEEN MARGARET",
+      "text": "So, now prosperity begins to mellow"
+    },
+    {
+      "number": 2,
+      "speaker": "QUEEN MARGARET",
+      "text": "And drop into the rotten mouth of death."
+    },
+    {
+      "number": 3,
+      "speaker": "QUEEN MARGARET",
+      "text": "Here in these confines slily have I lurk’d,"
+    },
+    {
+      "number": 4,
+      "speaker": "QUEEN MARGARET",
+      "text": "To watch the waning of mine adversaries."
+    },
+    {
+      "number": 5,
+      "speaker": "QUEEN MARGARET",
+      "text": "A dire induction am I witness to,"
+    },
+    {
+      "number": 6,
+      "speaker": "QUEEN MARGARET",
+      "text": "And will to France, hoping the consequence"
+    },
+    {
+      "number": 7,
+      "speaker": "QUEEN MARGARET",
+      "text": "Will prove as bitter, black, and tragical."
+    },
+    {
+      "number": 8,
+      "speaker": "QUEEN MARGARET",
+      "text": "Withdraw thee, wretched Margaret: who comes here?"
+    },
+    {
+      "number": 9,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Ah, my young princes! ah, my tender babes!"
+    },
+    {
+      "number": 10,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "My unblown flowers, new-appearing sweets!"
+    },
+    {
+      "number": 11,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "If yet your gentle souls fly in the air"
+    },
+    {
+      "number": 12,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "And be not fix’d in doom perpetual,"
+    },
+    {
+      "number": 13,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Hover about me with your airy wings"
+    },
+    {
+      "number": 14,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "And hear your mother’s lamentation!"
+    },
+    {
+      "number": 15,
+      "speaker": "QUEEN MARGARET",
+      "text": "Hover about her; say, that right for right"
+    },
+    {
+      "number": 16,
+      "speaker": "QUEEN MARGARET",
+      "text": "Hath dimm’d your infant morn to aged night."
+    },
+    {
+      "number": 17,
+      "speaker": "DUCHESS",
+      "text": "So many miseries have crazed my voice,"
+    },
+    {
+      "number": 18,
+      "speaker": "DUCHESS",
+      "text": "That my woe-wearied tongue is mute and dumb,"
+    },
+    {
+      "number": 19,
+      "speaker": "DUCHESS",
+      "text": "Edward Plantagenet, why art thou dead?"
+    },
+    {
+      "number": 19,
+      "speaker": "QUEEN MARGARET",
+      "text": "Plantagenet doth quit Plantagenet."
+    },
+    {
+      "number": 20,
+      "speaker": "QUEEN MARGARET",
+      "text": "Edward for Edward pays a dying debt."
+    },
+    {
+      "number": 21,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Wilt thou, O God, fly from such gentle lambs,"
+    },
+    {
+      "number": 22,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "And throw them in the entrails of the wolf?"
+    },
+    {
+      "number": 23,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "When didst thou sleep when such a deed was done?"
+    },
+    {
+      "number": 24,
+      "speaker": "QUEEN MARGARET",
+      "text": "When holy Harry died, and my sweet son."
+    },
+    {
+      "number": 25,
+      "speaker": "DUCHESS",
+      "text": "Blind sight, dead life, poor mortal living ghost,"
+    },
+    {
+      "number": 26,
+      "speaker": "DUCHESS",
+      "text": "Woe’s scene, world’s shame, grave’s due by life usurp’d,"
+    },
+    {
+      "number": 27,
+      "speaker": "DUCHESS",
+      "text": "Brief abstract and record of tedious days,"
+    },
+    {
+      "number": 28,
+      "speaker": "DUCHESS",
+      "text": "Rest thy unrest on England’s lawful earth, Sitting down."
+    },
+    {
+      "number": 29,
+      "speaker": "DUCHESS",
+      "text": "Unlawfully made drunk with innocents’ blood!"
+    },
+    {
+      "number": 30,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "O, that thou wouldst as well afford a grave"
+    },
+    {
+      "number": 31,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "As thou canst yield a melancholy seat!"
+    },
+    {
+      "number": 32,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Then would I hide my bones, not rest them here."
+    },
+    {
+      "number": 33,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "O, who hath any cause to mourn but I? Sitting down by her."
+    },
+    {
+      "number": 34,
+      "speaker": "QUEEN MARGARET",
+      "text": "If ancient sorrow be most reverend,"
+    },
+    {
+      "number": 35,
+      "speaker": "QUEEN MARGARET",
+      "text": "Give mine the benefit of seniory,"
+    },
+    {
+      "number": 36,
+      "speaker": "QUEEN MARGARET",
+      "text": "And let my woes frown on the upper hand."
+    },
+    {
+      "number": 37,
+      "speaker": "QUEEN MARGARET",
+      "text": "If sorrow can admit society, Sitting down with them."
+    },
+    {
+      "number": 38,
+      "speaker": "QUEEN MARGARET",
+      "text": "Tell o’er your woes again by viewing mine:"
+    },
+    {
+      "number": 39,
+      "speaker": "QUEEN MARGARET",
+      "text": "I had an Edward, till a Richard kill’d him;"
+    },
+    {
+      "number": 40,
+      "speaker": "QUEEN MARGARET",
+      "text": "I had a Harry, till a Richard kill’d him:"
+    },
+    {
+      "number": 41,
+      "speaker": "QUEEN MARGARET",
+      "text": "Thou hadst an Edward, till a Richard kill’d him;"
+    },
+    {
+      "number": 42,
+      "speaker": "QUEEN MARGARET",
+      "text": "Thou hadst a Richard, till a Richard killed him;"
+    },
+    {
+      "number": 43,
+      "speaker": "DUCHESS",
+      "text": "I had a Richard too, and thou didst kill him;"
+    },
+    {
+      "number": 44,
+      "speaker": "DUCHESS",
+      "text": "I had a Rutland too, thou holp’st to kill him."
+    },
+    {
+      "number": 45,
+      "speaker": "QUEEN MARGARET",
+      "text": "Thou hadst a Clarence too, and Richard kill’d him."
+    },
+    {
+      "number": 46,
+      "speaker": "QUEEN MARGARET",
+      "text": "From forth the kennel of thy womb hath crept"
+    },
+    {
+      "number": 47,
+      "speaker": "QUEEN MARGARET",
+      "text": "A hell-hound that doth hunt us all to death:"
+    },
+    {
+      "number": 48,
+      "speaker": "QUEEN MARGARET",
+      "text": "That dog, that had his teeth before his eyes,"
+    },
+    {
+      "number": 49,
+      "speaker": "QUEEN MARGARET",
+      "text": "To worry lambs and lap their gentle blood,"
+    },
+    {
+      "number": 50,
+      "speaker": "QUEEN MARGARET",
+      "text": "That foul defacer of God’s handiwork,"
+    },
+    {
+      "number": 51,
+      "speaker": "QUEEN MARGARET",
+      "text": "That excellent grand tyrant of the earth,"
+    },
+    {
+      "number": 52,
+      "speaker": "QUEEN MARGARET",
+      "text": "That reigns in galled eyes of weeping souls,"
+    },
+    {
+      "number": 53,
+      "speaker": "QUEEN MARGARET",
+      "text": "Thy womb let loose, to chase us to our graves."
+    },
+    {
+      "number": 54,
+      "speaker": "QUEEN MARGARET",
+      "text": "O upright, just, and true-disposing God,"
+    },
+    {
+      "number": 55,
+      "speaker": "QUEEN MARGARET",
+      "text": "How do I thank thee, that this carnal cur"
+    },
+    {
+      "number": 56,
+      "speaker": "QUEEN MARGARET",
+      "text": "Preys on the issue of his mother’s body,"
+    },
+    {
+      "number": 57,
+      "speaker": "QUEEN MARGARET",
+      "text": "And makes her pew-fellow with others’ moan!"
+    },
+    {
+      "number": 58,
+      "speaker": "DUCHESS",
+      "text": "O Harry’s wife, triumph not in my woes!"
+    },
+    {
+      "number": 59,
+      "speaker": "DUCHESS",
+      "text": "God witness with me, I have wept for thine."
+    },
+    {
+      "number": 60,
+      "speaker": "QUEEN MARGARET",
+      "text": "Bear with me; I am hungry for revenge,"
+    },
+    {
+      "number": 61,
+      "speaker": "QUEEN MARGARET",
+      "text": "And now I cloy me with beholding it."
+    },
+    {
+      "number": 62,
+      "speaker": "QUEEN MARGARET",
+      "text": "Thy Edward he is dead, that stabb’d my Edward;"
+    },
+    {
+      "number": 63,
+      "speaker": "QUEEN MARGARET",
+      "text": "Thy other Edward dead, to quit my Edward;"
+    },
+    {
+      "number": 64,
+      "speaker": "QUEEN MARGARET",
+      "text": "Young York he is but boot, because both they"
+    },
+    {
+      "number": 65,
+      "speaker": "QUEEN MARGARET",
+      "text": "Match not the high perfection of my loss:"
+    },
+    {
+      "number": 66,
+      "speaker": "QUEEN MARGARET",
+      "text": "Thy Clarence he is dead that kill’d my Edward;"
+    },
+    {
+      "number": 67,
+      "speaker": "QUEEN MARGARET",
+      "text": "And the beholders of this tragic play,"
+    },
+    {
+      "number": 68,
+      "speaker": "QUEEN MARGARET",
+      "text": "The adulterate Hastings, Rivers, Vaughan, Grey,"
+    },
+    {
+      "number": 69,
+      "speaker": "QUEEN MARGARET",
+      "text": "Untimely smother’d in their dusky graves."
+    },
+    {
+      "number": 70,
+      "speaker": "QUEEN MARGARET",
+      "text": "Richard yet lives, hell’s black intelligencer,"
+    },
+    {
+      "number": 71,
+      "speaker": "QUEEN MARGARET",
+      "text": "Only reserved their factor, to buy souls"
+    },
+    {
+      "number": 72,
+      "speaker": "QUEEN MARGARET",
+      "text": "And send them thither: but at hand, at hand,"
+    },
+    {
+      "number": 73,
+      "speaker": "QUEEN MARGARET",
+      "text": "Ensues his piteous and unpitied end:"
+    },
+    {
+      "number": 74,
+      "speaker": "QUEEN MARGARET",
+      "text": "Earth gapes, hell burns, fiends roar, saints pray,"
+    },
+    {
+      "number": 75,
+      "speaker": "QUEEN MARGARET",
+      "text": "To have him suddenly convey’d away."
+    },
+    {
+      "number": 76,
+      "speaker": "QUEEN MARGARET",
+      "text": "Cancel his bond of life, dear God, I pray,"
+    },
+    {
+      "number": 77,
+      "speaker": "QUEEN MARGARET",
+      "text": "That I may live to say, The dog is dead!"
+    },
+    {
+      "number": 78,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "O, thou didst prophesy the time would come"
+    },
+    {
+      "number": 79,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "That I should wish for thee to help me curse"
+    },
+    {
+      "number": 80,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "That bottled spider, that foul bunch-back’d toad!"
+    },
+    {
+      "number": 81,
+      "speaker": "QUEEN MARGARET",
+      "text": "I call’d thee then vain flourish of my fortune;"
+    },
+    {
+      "number": 82,
+      "speaker": "QUEEN MARGARET",
+      "text": "I call’d thee then poor shadow, painted queen;"
+    },
+    {
+      "number": 83,
+      "speaker": "QUEEN MARGARET",
+      "text": "The presentation of but what I was;"
+    },
+    {
+      "number": 84,
+      "speaker": "QUEEN MARGARET",
+      "text": "The flattering index of a direful pageant;"
+    },
+    {
+      "number": 85,
+      "speaker": "QUEEN MARGARET",
+      "text": "One heaved a-high, to be hurl’d down below;"
+    },
+    {
+      "number": 86,
+      "speaker": "QUEEN MARGARET",
+      "text": "A mother only mock’d with two sweet babes;"
+    },
+    {
+      "number": 87,
+      "speaker": "QUEEN MARGARET",
+      "text": "A dream of what thou wert, a breath, a bubble,"
+    },
+    {
+      "number": 88,
+      "speaker": "QUEEN MARGARET",
+      "text": "A sign of dignity, a garish flag,"
+    },
+    {
+      "number": 89,
+      "speaker": "QUEEN MARGARET",
+      "text": "To be the aim of every dangerous shot;"
+    },
+    {
+      "number": 90,
+      "speaker": "QUEEN MARGARET",
+      "text": "A queen in jest, only to fill the scene."
+    },
+    {
+      "number": 91,
+      "speaker": "QUEEN MARGARET",
+      "text": "Where is thy husband now? where be thy brothers?"
+    },
+    {
+      "number": 92,
+      "speaker": "QUEEN MARGARET",
+      "text": "Where are thy children? wherein dost thou joy?"
+    },
+    {
+      "number": 93,
+      "speaker": "QUEEN MARGARET",
+      "text": "Who sues to thee and cries “God save the queen”?"
+    },
+    {
+      "number": 94,
+      "speaker": "QUEEN MARGARET",
+      "text": "Where be the bending peers that flatter’d thee?"
+    },
+    {
+      "number": 95,
+      "speaker": "QUEEN MARGARET",
+      "text": "Where be the thronging troops that follow’d thee?"
+    },
+    {
+      "number": 96,
+      "speaker": "QUEEN MARGARET",
+      "text": "Decline all this, and see what now thou art:"
+    },
+    {
+      "number": 97,
+      "speaker": "QUEEN MARGARET",
+      "text": "For happy wife, a most distressed widow;"
+    },
+    {
+      "number": 98,
+      "speaker": "QUEEN MARGARET",
+      "text": "For joyful mother, one that wails the name;"
+    },
+    {
+      "number": 99,
+      "speaker": "QUEEN MARGARET",
+      "text": "For queen, a very caitiff crown’d with care;"
+    },
+    {
+      "number": 100,
+      "speaker": "QUEEN MARGARET",
+      "text": "For one being sued to, one that humbly sues;"
+    },
+    {
+      "number": 101,
+      "speaker": "QUEEN MARGARET",
+      "text": "For one that scorn’d at me, now scorn’d of me;"
+    },
+    {
+      "number": 102,
+      "speaker": "QUEEN MARGARET",
+      "text": "For one being fear’d of all, now fearing one;"
+    },
+    {
+      "number": 103,
+      "speaker": "QUEEN MARGARET",
+      "text": "For one commanding all, obey’d of none."
+    },
+    {
+      "number": 104,
+      "speaker": "QUEEN MARGARET",
+      "text": "Thus hath the course of justice wheel’d about,"
+    },
+    {
+      "number": 105,
+      "speaker": "QUEEN MARGARET",
+      "text": "And left thee but a very prey to time;"
+    },
+    {
+      "number": 106,
+      "speaker": "QUEEN MARGARET",
+      "text": "Having no more but thought of what thou wert,"
+    },
+    {
+      "number": 107,
+      "speaker": "QUEEN MARGARET",
+      "text": "To torture thee the more, being what thou art."
+    },
+    {
+      "number": 108,
+      "speaker": "QUEEN MARGARET",
+      "text": "Thou didst usurp my place, and dost thou not"
+    },
+    {
+      "number": 109,
+      "speaker": "QUEEN MARGARET",
+      "text": "Usurp the just proportion of my sorrow?"
+    },
+    {
+      "number": 110,
+      "speaker": "QUEEN MARGARET",
+      "text": "Now thy proud neck bears half my burthen’d yoke;"
+    },
+    {
+      "number": 111,
+      "speaker": "QUEEN MARGARET",
+      "text": "From which even here I slip my weary neck,"
+    },
+    {
+      "number": 112,
+      "speaker": "QUEEN MARGARET",
+      "text": "And leave the burthen of it all on thee."
+    },
+    {
+      "number": 113,
+      "speaker": "QUEEN MARGARET",
+      "text": "Farewell, York’s wife, and queen of sad mischance:"
+    },
+    {
+      "number": 114,
+      "speaker": "QUEEN MARGARET",
+      "text": "These English woes will make me smile in France."
+    },
+    {
+      "number": 115,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "O thou well skill’d in curses, stay awhile,"
+    },
+    {
+      "number": 116,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "And teach me how to curse mine enemies!"
+    },
+    {
+      "number": 117,
+      "speaker": "QUEEN MARGARET",
+      "text": "Forbear to sleep the nights, and fast the days;"
+    },
+    {
+      "number": 118,
+      "speaker": "QUEEN MARGARET",
+      "text": "Compare dead happiness with living woe;"
+    },
+    {
+      "number": 119,
+      "speaker": "QUEEN MARGARET",
+      "text": "Think that thy babes were fairer than they were,"
+    },
+    {
+      "number": 120,
+      "speaker": "QUEEN MARGARET",
+      "text": "And he that slew them fouler than he is:"
+    },
+    {
+      "number": 121,
+      "speaker": "QUEEN MARGARET",
+      "text": "Bettering thy loss makes the bad causer worse:"
+    },
+    {
+      "number": 122,
+      "speaker": "QUEEN MARGARET",
+      "text": "Revolving this will teach thee how to curse."
+    },
+    {
+      "number": 123,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "My words are dull; O, quicken them with thine!"
+    },
+    {
+      "number": 124,
+      "speaker": "QUEEN MARGARET",
+      "text": "Thy woes will make them sharp, and pierce like mine."
+    },
+    {
+      "number": 125,
+      "speaker": "DUCHESS",
+      "text": "Why should calamity be full of words?"
+    },
+    {
+      "number": 126,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Windy attorneys to their client woes,"
+    },
+    {
+      "number": 127,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Airy succeeders of intestate joys,"
+    },
+    {
+      "number": 128,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Poor breathing orators of miseries!"
+    },
+    {
+      "number": 129,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Let them have scope: though what they do impart"
+    },
+    {
+      "number": 130,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Help not all, yet do they ease the heart."
+    },
+    {
+      "number": 131,
+      "speaker": "DUCHESS",
+      "text": "If so, then be not tongue-tied: go with me,"
+    },
+    {
+      "number": 132,
+      "speaker": "DUCHESS",
+      "text": "And in the breath of bitter words let’s smother"
+    },
+    {
+      "number": 133,
+      "speaker": "DUCHESS",
+      "text": "My damned son, which thy two sweet sons smother’d."
+    },
+    {
+      "number": 134,
+      "speaker": "DUCHESS",
+      "text": "I hear his drum: be copious in exclaims."
+    },
+    {
+      "number": 135,
+      "speaker": "KING RICHARD",
+      "text": "Who intercepts my expedition?"
+    },
+    {
+      "number": 136,
+      "speaker": "DUCHESS",
+      "text": "O, she that might have intercepted thee,"
+    },
+    {
+      "number": 137,
+      "speaker": "DUCHESS",
+      "text": "By strangling thee in her accursed womb,"
+    },
+    {
+      "number": 138,
+      "speaker": "DUCHESS",
+      "text": "From all the slaughters, wretch, that thou hast done!"
+    },
+    {
+      "number": 139,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Hidest thou that forehead with a golden crown,"
+    },
+    {
+      "number": 140,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Where should be graven, if that right were right,"
+    },
+    {
+      "number": 141,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "The slaughter of the prince that owed that crown,"
+    },
+    {
+      "number": 142,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "And the dire death of my two sons and brothers?"
+    },
+    {
+      "number": 143,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Tell me, thou villain slave, where are my children?"
+    },
+    {
+      "number": 144,
+      "speaker": "DUCHESS",
+      "text": "Thou toad, thou toad, where is thy brother Clarence?"
+    },
+    {
+      "number": 145,
+      "speaker": "DUCHESS",
+      "text": "And little Ned Plantagenet, his son?"
+    },
+    {
+      "number": 146,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Where is kind Hastings, Rivers, Vaughan, Grey?"
+    },
+    {
+      "number": 147,
+      "speaker": "KING RICHARD",
+      "text": "A flourish, trumpets! strike alarum, drums!"
+    },
+    {
+      "number": 148,
+      "speaker": "KING RICHARD",
+      "text": "Let not the heavens hear these tell-tale women"
+    },
+    {
+      "number": 149,
+      "speaker": "KING RICHARD",
+      "text": "Rail on the Lord’s enointed: strike, I say!"
+    },
+    {
+      "number": 150,
+      "speaker": "KING RICHARD",
+      "text": "Either be patient, and entreat me fair,"
+    },
+    {
+      "number": 151,
+      "speaker": "KING RICHARD",
+      "text": "Or with the clamorous report of war"
+    },
+    {
+      "number": 152,
+      "speaker": "KING RICHARD",
+      "text": "Thus will I drown your exclamations."
+    },
+    {
+      "number": 152,
+      "speaker": "DUCHESS",
+      "text": "Art thou my son?"
+    },
+    {
+      "number": 153,
+      "speaker": "KING RICHARD",
+      "text": "Ay, I thank God, my father, and yourself."
+    },
+    {
+      "number": 154,
+      "speaker": "DUCHESS",
+      "text": "Then patiently hear my impatience."
+    },
+    {
+      "number": 155,
+      "speaker": "KING RICHARD",
+      "text": "Madam, I have a touch of your condition,"
+    },
+    {
+      "number": 156,
+      "speaker": "KING RICHARD",
+      "text": "Which cannot brook the accent of reproof."
+    },
+    {
+      "number": 157,
+      "speaker": "DUCHESS",
+      "text": "O, let me speak!"
+    },
+    {
+      "number": 157,
+      "speaker": "KING RICHARD",
+      "text": "Do then; but I’ll not hear."
+    },
+    {
+      "number": 158,
+      "speaker": "DUCHESS",
+      "text": "I will be mild and gentle in my speech."
+    },
+    {
+      "number": 159,
+      "speaker": "KING RICHARD",
+      "text": "And brief, good mother; for I am in haste."
+    },
+    {
+      "number": 160,
+      "speaker": "DUCHESS",
+      "text": "Art thou so hasty? I have stay’d for thee,"
+    },
+    {
+      "number": 161,
+      "speaker": "DUCHESS",
+      "text": "God knows, in anguish, pain and agony."
+    },
+    {
+      "number": 162,
+      "speaker": "KING RICHARD",
+      "text": "And came I not at last to comfort you?"
+    },
+    {
+      "number": 163,
+      "speaker": "DUCHESS",
+      "text": "No, by the holy rood, thou know’st it well,"
+    },
+    {
+      "number": 164,
+      "speaker": "DUCHESS",
+      "text": "Thou camest on earth to make the earth my hell."
+    },
+    {
+      "number": 165,
+      "speaker": "DUCHESS",
+      "text": "A grievous burthen was thy birth to me;"
+    },
+    {
+      "number": 166,
+      "speaker": "DUCHESS",
+      "text": "Tetchy and wayward was thy infancy;"
+    },
+    {
+      "number": 167,
+      "speaker": "DUCHESS",
+      "text": "Thy school-days frightful, desperate, wild, and furious,"
+    },
+    {
+      "number": 168,
+      "speaker": "DUCHESS",
+      "text": "Thy prime of manhood daring, bold, and venturous,"
+    },
+    {
+      "number": 169,
+      "speaker": "DUCHESS",
+      "text": "Thy age confirm’d, proud, subdued, bloody, treacherous,"
+    },
+    {
+      "number": 170,
+      "speaker": "DUCHESS",
+      "text": "More mild, but yet more harmful, kind in hatred:"
+    },
+    {
+      "number": 171,
+      "speaker": "DUCHESS",
+      "text": "What comfortable hour canst thou name,"
+    },
+    {
+      "number": 172,
+      "speaker": "DUCHESS",
+      "text": "That ever graced me in thy company?"
+    },
+    {
+      "number": 173,
+      "speaker": "KING RICHARD",
+      "text": "Faith, none, but Humphrey Hour, that call’d your grace"
+    },
+    {
+      "number": 174,
+      "speaker": "KING RICHARD",
+      "text": "To breakfast once forth of my company."
+    },
+    {
+      "number": 175,
+      "speaker": "KING RICHARD",
+      "text": "If I be so disgracious in your sight,"
+    },
+    {
+      "number": 176,
+      "speaker": "KING RICHARD",
+      "text": "Let me march on, and not offend your grace."
+    },
+    {
+      "number": 177,
+      "speaker": "KING RICHARD",
+      "text": "Strike the drum."
+    },
+    {
+      "number": 177,
+      "speaker": "DUCHESS",
+      "text": "I prithee, hear me speak."
+    },
+    {
+      "number": 178,
+      "speaker": "KING RICHARD",
+      "text": "You speak too bitterly."
+    },
+    {
+      "number": 178,
+      "speaker": "DUCHESS",
+      "text": "Hear me a word;"
+    },
+    {
+      "number": 179,
+      "speaker": "DUCHESS",
+      "text": "For I shall never speak to thee again."
+    },
+    {
+      "number": 180,
+      "speaker": "KING RICHARD",
+      "text": "So."
+    },
+    {
+      "number": 181,
+      "speaker": "DUCHESS",
+      "text": "Either thou wilt die, by God’s just ordinance,"
+    },
+    {
+      "number": 182,
+      "speaker": "DUCHESS",
+      "text": "Ere from this war thou turn a conqueror,"
+    },
+    {
+      "number": 183,
+      "speaker": "DUCHESS",
+      "text": "Or I with grief and extreme age shall perish"
+    },
+    {
+      "number": 184,
+      "speaker": "DUCHESS",
+      "text": "And never look upon thy face again."
+    },
+    {
+      "number": 185,
+      "speaker": "DUCHESS",
+      "text": "Therefore take with thee my most heavy curse;"
+    },
+    {
+      "number": 186,
+      "speaker": "DUCHESS",
+      "text": "Which, in the day of battle, tire thee more"
+    },
+    {
+      "number": 187,
+      "speaker": "DUCHESS",
+      "text": "Than all the complete armour that thou wear’st!"
+    },
+    {
+      "number": 188,
+      "speaker": "DUCHESS",
+      "text": "My prayers on the adverse party fight;"
+    },
+    {
+      "number": 189,
+      "speaker": "DUCHESS",
+      "text": "And there the little souls of Edward’s children"
+    },
+    {
+      "number": 190,
+      "speaker": "DUCHESS",
+      "text": "Whisper the spirits of thine enemies"
+    },
+    {
+      "number": 191,
+      "speaker": "DUCHESS",
+      "text": "And promise them success and victory."
+    },
+    {
+      "number": 192,
+      "speaker": "DUCHESS",
+      "text": "Bloody thou art, bloody will be thy end;"
+    },
+    {
+      "number": 193,
+      "speaker": "DUCHESS",
+      "text": "Shame serves thy life and doth thy death attend."
+    },
+    {
+      "number": 194,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Though far more cause, yet much less spirit to curse"
+    },
+    {
+      "number": 195,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Abides in me; I say amen to all."
+    },
+    {
+      "number": 196,
+      "speaker": "KING RICHARD",
+      "text": "Stay, madam; I must speak a word with you."
+    },
+    {
+      "number": 197,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "I have no more sons of the royal blood"
+    },
+    {
+      "number": 198,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "For thee to murder: for my daughters, Richard,"
+    },
+    {
+      "number": 199,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "They shall be praying nuns, not weeping queens;"
+    },
+    {
+      "number": 200,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "And therefore level not to hit their lives."
+    },
+    {
+      "number": 201,
+      "speaker": "KING RICHARD",
+      "text": "You have a daughter call’d Elizabeth,"
+    },
+    {
+      "number": 202,
+      "speaker": "KING RICHARD",
+      "text": "Virtuous and fair, royal and gracious."
+    },
+    {
+      "number": 203,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "And must she die for this? O, let her live,"
+    },
+    {
+      "number": 204,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "And I’ll corrupt her manners, stain her beauty;"
+    },
+    {
+      "number": 205,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Slander myself as false to Edward’s bed;"
+    },
+    {
+      "number": 206,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Throw over her the veil of infamy:"
+    },
+    {
+      "number": 207,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "So she may live unscarr’d of bleeding slaughter,"
+    },
+    {
+      "number": 208,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "I will confess she was not Edward’s daughter."
+    },
+    {
+      "number": 209,
+      "speaker": "KING RICHARD",
+      "text": "Wrong not her birth, she is of royal blood."
+    },
+    {
+      "number": 210,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "To save her life, I’ll say she is not so."
+    },
+    {
+      "number": 211,
+      "speaker": "KING RICHARD",
+      "text": "Her life is only safest in her birth."
+    },
+    {
+      "number": 212,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "And only in that safety died her brothers."
+    },
+    {
+      "number": 213,
+      "speaker": "KING RICHARD",
+      "text": "Lo, at their births good stars were opposite."
+    },
+    {
+      "number": 214,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "No, to their lives bad friends were contrary."
+    },
+    {
+      "number": 215,
+      "speaker": "KING RICHARD",
+      "text": "All unavoided is the doom of destiny."
+    },
+    {
+      "number": 216,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "True, when avoided grace makes destiny:"
+    },
+    {
+      "number": 217,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "My babes were destined to a fairer death,"
+    },
+    {
+      "number": 218,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "If grace had bless’d thee with a fairer life."
+    },
+    {
+      "number": 219,
+      "speaker": "KING RICHARD",
+      "text": "You speak as if that I had slain my cousins."
+    },
+    {
+      "number": 220,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Cousins, indeed; and by their uncle cozen’d"
+    },
+    {
+      "number": 221,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Of comfort, kingdom, kindred, freedom, life."
+    },
+    {
+      "number": 222,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Whose hand soever lanced their tender hearts,"
+    },
+    {
+      "number": 223,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Thy head, all indirectly, gave direction:"
+    },
+    {
+      "number": 224,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "No doubt the murderous knife was dull and blunt"
+    },
+    {
+      "number": 225,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Till it was whetted on thy stone-hard heart,"
+    },
+    {
+      "number": 226,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "To revel in the entrails of my lambs."
+    },
+    {
+      "number": 227,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "But that still use of grief makes wild grief tame,"
+    },
+    {
+      "number": 228,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "My tongue should to thy ears not name my boys"
+    },
+    {
+      "number": 229,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Till that my nails were anchor’d in thine eyes;"
+    },
+    {
+      "number": 230,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "And I, in such a desperate bay of death,"
+    },
+    {
+      "number": 231,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Like a poor bark, of sails and tackling reft,"
+    },
+    {
+      "number": 232,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Rush all to pieces on thy rocky bosom."
+    },
+    {
+      "number": 233,
+      "speaker": "KING RICHARD",
+      "text": "Madam, so thrive I in my enterprise"
+    },
+    {
+      "number": 234,
+      "speaker": "KING RICHARD",
+      "text": "And dangerous success of bloody wars,"
+    },
+    {
+      "number": 235,
+      "speaker": "KING RICHARD",
+      "text": "As I intend more good to you and yours"
+    },
+    {
+      "number": 236,
+      "speaker": "KING RICHARD",
+      "text": "Than ever you or yours were by me wrong’d!"
+    },
+    {
+      "number": 237,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "What good is cover’d with the face of heaven,"
+    },
+    {
+      "number": 238,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "To be discover’d, that can do me good?"
+    },
+    {
+      "number": 239,
+      "speaker": "KING RICHARD",
+      "text": "The advancement of your children, gentle lady."
+    },
+    {
+      "number": 240,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Up to some scaffold, there to lose their heads?"
+    },
+    {
+      "number": 241,
+      "speaker": "KING RICHARD",
+      "text": "No, to the dignity and height of honour,"
+    },
+    {
+      "number": 242,
+      "speaker": "KING RICHARD",
+      "text": "The high imperial type of this earth’s glory."
+    },
+    {
+      "number": 243,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Flatter my sorrows with report of it;"
+    },
+    {
+      "number": 244,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Tell me what state, what dignity, what honour,"
+    },
+    {
+      "number": 245,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Canst thou demise to any child of mine?"
+    },
+    {
+      "number": 246,
+      "speaker": "KING RICHARD",
+      "text": "Even all I have; yea, and myself and all,"
+    },
+    {
+      "number": 247,
+      "speaker": "KING RICHARD",
+      "text": "Will I withal endow a child of thine;"
+    },
+    {
+      "number": 248,
+      "speaker": "KING RICHARD",
+      "text": "So in the Lethe of thy angry soul"
+    },
+    {
+      "number": 249,
+      "speaker": "KING RICHARD",
+      "text": "Thou drown the sad remembrance of those wrongs"
+    },
+    {
+      "number": 250,
+      "speaker": "KING RICHARD",
+      "text": "Which thou supposest I have done to thee."
+    },
+    {
+      "number": 251,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Be brief, lest that be process of thy kindness"
+    },
+    {
+      "number": 252,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Last longer telling than thy kindness’ date."
+    },
+    {
+      "number": 253,
+      "speaker": "KING RICHARD",
+      "text": "Then know, that from my soul I love thy daughter."
+    },
+    {
+      "number": 254,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "My daughter’s mother thinks it with her soul."
+    },
+    {
+      "number": 255,
+      "speaker": "KING RICHARD",
+      "text": "What do you think?"
+    },
+    {
+      "number": 256,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "That thou dost love my daughter from thy soul:"
+    },
+    {
+      "number": 257,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "So from thy soul’s love didst thou love her brothers;"
+    },
+    {
+      "number": 258,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "And from my heart’s love I do thank thee for it."
+    },
+    {
+      "number": 259,
+      "speaker": "KING RICHARD",
+      "text": "Be not so hasty to confound my meaning:"
+    },
+    {
+      "number": 260,
+      "speaker": "KING RICHARD",
+      "text": "I mean, that with my soul I love thy daughter,"
+    },
+    {
+      "number": 261,
+      "speaker": "KING RICHARD",
+      "text": "And mean to make her queen of England."
+    },
+    {
+      "number": 262,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Say then, who dost thou mean shall be her king?"
+    },
+    {
+      "number": 263,
+      "speaker": "KING RICHARD",
+      "text": "Even he that makes her queen: who should be else?"
+    },
+    {
+      "number": 264,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "What, thou?"
+    },
+    {
+      "number": 265,
+      "speaker": "KING RICHARD",
+      "text": "I, even I: what think you of it, madam?"
+    },
+    {
+      "number": 266,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "How canst thou woo her?"
+    },
+    {
+      "number": 266,
+      "speaker": "KING RICHARD",
+      "text": "That would I learn of you,"
+    },
+    {
+      "number": 267,
+      "speaker": "KING RICHARD",
+      "text": "As one that are best acquainted with her humour."
+    },
+    {
+      "number": 268,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "And wilt thou learn of me?"
+    },
+    {
+      "number": 268,
+      "speaker": "KING RICHARD",
+      "text": "Madam, with all my heart."
+    },
+    {
+      "number": 269,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Send to her, by the man that slew her brothers,"
+    },
+    {
+      "number": 270,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "A pair of bleeding-hearts; thereon engrave"
+    },
+    {
+      "number": 271,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Edward and York; then haply she will weep:"
+    },
+    {
+      "number": 272,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Therefore present to her—as sometime Margaret"
+    },
+    {
+      "number": 273,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Did to thy father, steep’d in Rutland’s blood—"
+    },
+    {
+      "number": 274,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "A handkerchief; which, say to her, did drain"
+    },
+    {
+      "number": 275,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "The purple sap from her sweet brother’s body."
+    },
+    {
+      "number": 276,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "And bid her dry her weeping eyes therewith."
+    },
+    {
+      "number": 277,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "If this inducement force her not to love,"
+    },
+    {
+      "number": 278,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Send her a story of thy noble acts;"
+    },
+    {
+      "number": 279,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Tell her thou madest away her uncle Clarence,"
+    },
+    {
+      "number": 280,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Her uncle Rivers; yea, and, for her sake,"
+    },
+    {
+      "number": 281,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Madest quick conveyance with her good aunt Anne."
+    },
+    {
+      "number": 282,
+      "speaker": "KING RICHARD",
+      "text": "Come, come, you mock me; this is not the way"
+    },
+    {
+      "number": 283,
+      "speaker": "KING RICHARD",
+      "text": "To win our daughter."
+    },
+    {
+      "number": 283,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "There is no other way;"
+    },
+    {
+      "number": 284,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Unless thou couldst put on some other shape,"
+    },
+    {
+      "number": 285,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "And not be Richard that hath done all this."
+    },
+    {
+      "number": 286,
+      "speaker": "KING RICHARD",
+      "text": "Say that I did all this for love of her."
+    },
+    {
+      "number": 287,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Nay, then indeed she cannot choose but hate thee,"
+    },
+    {
+      "number": 288,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Having bought love with such a bloody spoil."
+    },
+    {
+      "number": 289,
+      "speaker": "KING RICHARD",
+      "text": "Look, what is done cannot be now amended:"
+    },
+    {
+      "number": 290,
+      "speaker": "KING RICHARD",
+      "text": "Men shall deal unadvisedly sometimes,"
+    },
+    {
+      "number": 291,
+      "speaker": "KING RICHARD",
+      "text": "Which after hours give leisure to repent."
+    },
+    {
+      "number": 292,
+      "speaker": "KING RICHARD",
+      "text": "If I did take the kingdom from your sons,"
+    },
+    {
+      "number": 293,
+      "speaker": "KING RICHARD",
+      "text": "To make amends, Ill give it to your daughter."
+    },
+    {
+      "number": 294,
+      "speaker": "KING RICHARD",
+      "text": "If I have kill’d the issue of your womb,"
+    },
+    {
+      "number": 295,
+      "speaker": "KING RICHARD",
+      "text": "To quicken your increase, I will beget"
+    },
+    {
+      "number": 296,
+      "speaker": "KING RICHARD",
+      "text": "Mine issue of your blood upon your daughter:"
+    },
+    {
+      "number": 297,
+      "speaker": "KING RICHARD",
+      "text": "A grandam’s name is little less in love"
+    },
+    {
+      "number": 298,
+      "speaker": "KING RICHARD",
+      "text": "Than is the doting title of a mother;"
+    },
+    {
+      "number": 299,
+      "speaker": "KING RICHARD",
+      "text": "They are as children but one step below,"
+    },
+    {
+      "number": 300,
+      "speaker": "KING RICHARD",
+      "text": "Even of your mettle, of your very blood;"
+    },
+    {
+      "number": 301,
+      "speaker": "KING RICHARD",
+      "text": "Of all one pain, save for a night of groans"
+    },
+    {
+      "number": 302,
+      "speaker": "KING RICHARD",
+      "text": "Endured of her, for whom you bid like sorrow."
+    },
+    {
+      "number": 303,
+      "speaker": "KING RICHARD",
+      "text": "Your children were vexation to your youth,"
+    },
+    {
+      "number": 304,
+      "speaker": "KING RICHARD",
+      "text": "But mine shall be a comfort to your age."
+    },
+    {
+      "number": 305,
+      "speaker": "KING RICHARD",
+      "text": "The loss you have is but a son being king,"
+    },
+    {
+      "number": 306,
+      "speaker": "KING RICHARD",
+      "text": "And by that loss your daughter is made queen."
+    },
+    {
+      "number": 307,
+      "speaker": "KING RICHARD",
+      "text": "I cannot make you what amends I would,"
+    },
+    {
+      "number": 308,
+      "speaker": "KING RICHARD",
+      "text": "Therefore accept such kindness as I can."
+    },
+    {
+      "number": 309,
+      "speaker": "KING RICHARD",
+      "text": "Dorset your son, that with a fearful soul"
+    },
+    {
+      "number": 310,
+      "speaker": "KING RICHARD",
+      "text": "Leads discontented steps in foreign soil,"
+    },
+    {
+      "number": 311,
+      "speaker": "KING RICHARD",
+      "text": "This fair alliance quickly shall call home"
+    },
+    {
+      "number": 312,
+      "speaker": "KING RICHARD",
+      "text": "To high promotions and great dignity:"
+    },
+    {
+      "number": 313,
+      "speaker": "KING RICHARD",
+      "text": "The king, that calls your beauteous daughter wife,"
+    },
+    {
+      "number": 314,
+      "speaker": "KING RICHARD",
+      "text": "Familiarly shall call thy Dorset brother;"
+    },
+    {
+      "number": 315,
+      "speaker": "KING RICHARD",
+      "text": "Again shall you be mother to a king,"
+    },
+    {
+      "number": 316,
+      "speaker": "KING RICHARD",
+      "text": "And all the ruins of distressful times"
+    },
+    {
+      "number": 317,
+      "speaker": "KING RICHARD",
+      "text": "Repair’d with double riches of content."
+    },
+    {
+      "number": 318,
+      "speaker": "KING RICHARD",
+      "text": "What! we have many goodly days to see:"
+    },
+    {
+      "number": 319,
+      "speaker": "KING RICHARD",
+      "text": "The liquid drops of tears that you have shed"
+    },
+    {
+      "number": 320,
+      "speaker": "KING RICHARD",
+      "text": "Shall come again, transform’d to orient pearl,"
+    },
+    {
+      "number": 321,
+      "speaker": "KING RICHARD",
+      "text": "Advantaging their loan with interest"
+    },
+    {
+      "number": 322,
+      "speaker": "KING RICHARD",
+      "text": "Of ten times double gain of happiness."
+    },
+    {
+      "number": 323,
+      "speaker": "KING RICHARD",
+      "text": "Go, then my mother, to thy daughter go;"
+    },
+    {
+      "number": 324,
+      "speaker": "KING RICHARD",
+      "text": "Make bold her bashful years with your experience;"
+    },
+    {
+      "number": 325,
+      "speaker": "KING RICHARD",
+      "text": "Prepare her ears to hear a wooer’s tale;"
+    },
+    {
+      "number": 326,
+      "speaker": "KING RICHARD",
+      "text": "Put in her tender heart the aspiring flame"
+    },
+    {
+      "number": 327,
+      "speaker": "KING RICHARD",
+      "text": "Of golden sovereignty; acquaint the princess"
+    },
+    {
+      "number": 328,
+      "speaker": "KING RICHARD",
+      "text": "With the sweet silent hours of marriage joys:"
+    },
+    {
+      "number": 329,
+      "speaker": "KING RICHARD",
+      "text": "And when this arm of mine hath chastised"
+    },
+    {
+      "number": 330,
+      "speaker": "KING RICHARD",
+      "text": "The petty rebel, dull-brain’d Buckingham,"
+    },
+    {
+      "number": 331,
+      "speaker": "KING RICHARD",
+      "text": "Bound with triumphant garlands will I come"
+    },
+    {
+      "number": 332,
+      "speaker": "KING RICHARD",
+      "text": "And lead thy daughter to a conqueror’s bed;"
+    },
+    {
+      "number": 333,
+      "speaker": "KING RICHARD",
+      "text": "To whom I will retail my conquest won,"
+    },
+    {
+      "number": 334,
+      "speaker": "KING RICHARD",
+      "text": "And she shall be sole victress, Caesar’s Caesar."
+    },
+    {
+      "number": 335,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "What were I best to say? her father’s brother"
+    },
+    {
+      "number": 336,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Would be her lord? or shall I say, her uncle?"
+    },
+    {
+      "number": 337,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Or, he that slew her brothers and her uncles?"
+    },
+    {
+      "number": 338,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Under what title shall I woo for thee,"
+    },
+    {
+      "number": 339,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "That God, the law, my honour and her love,"
+    },
+    {
+      "number": 340,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Can make seem pleasing to her tender years?"
+    },
+    {
+      "number": 341,
+      "speaker": "KING RICHARD",
+      "text": "Infer fair England’s peace by this alliance."
+    },
+    {
+      "number": 342,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Which she shall purchase with still lasting war."
+    },
+    {
+      "number": 343,
+      "speaker": "KING RICHARD",
+      "text": "Say that the king, which may command, entreats."
+    },
+    {
+      "number": 344,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "That at her hands which the king’s King forbids."
+    },
+    {
+      "number": 345,
+      "speaker": "KING RICHARD",
+      "text": "Say, she shall be a high and mighty queen."
+    },
+    {
+      "number": 346,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "To wail the tide, as her mother doth."
+    },
+    {
+      "number": 347,
+      "speaker": "KING RICHARD",
+      "text": "Say, I will love her everlastingly."
+    },
+    {
+      "number": 348,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "But how long shall that title “ever” last?"
+    },
+    {
+      "number": 349,
+      "speaker": "KING RICHARD",
+      "text": "Sweetly in force unto her fair life’s end."
+    },
+    {
+      "number": 350,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "But how long fairly shall her sweet life last?"
+    },
+    {
+      "number": 351,
+      "speaker": "KING RICHARD",
+      "text": "So long as heaven and nature lengthens it."
+    },
+    {
+      "number": 352,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "So long as hell and Richard likes of it."
+    },
+    {
+      "number": 353,
+      "speaker": "KING RICHARD",
+      "text": "Say, I, her sovereign, am her subject love."
+    },
+    {
+      "number": 354,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "But she, your subject, loathes such sovereignty."
+    },
+    {
+      "number": 355,
+      "speaker": "KING RICHARD",
+      "text": "Be eloquent in my behalf to her."
+    },
+    {
+      "number": 356,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "An honest tale speeds best being plainly told."
+    },
+    {
+      "number": 357,
+      "speaker": "KING RICHARD",
+      "text": "Then in plain terms tell her my loving tale."
+    },
+    {
+      "number": 358,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Plain and not honest is too harsh a style."
+    },
+    {
+      "number": 359,
+      "speaker": "KING RICHARD",
+      "text": "Your reasons are too shallow and too quick."
+    },
+    {
+      "number": 360,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "O no, my reasons are too deep and dead;"
+    },
+    {
+      "number": 361,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Too deep and dead, poor infants, in their grave."
+    },
+    {
+      "number": 362,
+      "speaker": "KING RICHARD",
+      "text": "Harp not on that string, madam; that is past."
+    },
+    {
+      "number": 363,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Harp on it still shall I till heart-strings break."
+    },
+    {
+      "number": 364,
+      "speaker": "KING RICHARD",
+      "text": "Now, by my George, my garter, and my crown—"
+    },
+    {
+      "number": 365,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Profaned, dishonour’d, and the third usurp’d."
+    },
+    {
+      "number": 365,
+      "speaker": "KING RICHARD",
+      "text": "I swear—"
+    },
+    {
+      "number": 366,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "By nothing; for this is no oath:"
+    },
+    {
+      "number": 367,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "The George, profaned, hath lost his holy honour;"
+    },
+    {
+      "number": 368,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "The garter, blemish’d, pawn’d his knightly virtue;"
+    },
+    {
+      "number": 369,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "The crown, usurp’d, disgraced his kingly glory."
+    },
+    {
+      "number": 370,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "If something thou wilt swear to be believed,"
+    },
+    {
+      "number": 371,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Swear then by something that thou hast not wrong’d."
+    },
+    {
+      "number": 372,
+      "speaker": "KING RICHARD",
+      "text": "Now, by the world—"
+    },
+    {
+      "number": 372,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "’Tis full of thy foul wrongs."
+    },
+    {
+      "number": 373,
+      "speaker": "KING RICHARD",
+      "text": "My father’s death—"
+    },
+    {
+      "number": 373,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Thy life hath that dishonour’d."
+    },
+    {
+      "number": 374,
+      "speaker": "KING RICHARD",
+      "text": "Then, by myself—"
+    },
+    {
+      "number": 374,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Thyself thyself misusest."
+    },
+    {
+      "number": 375,
+      "speaker": "KING RICHARD",
+      "text": "Why then, by God—"
+    },
+    {
+      "number": 375,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "God’s wrong is most of all."
+    },
+    {
+      "number": 376,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "If thou hadst fear’d to break an oath by Him,"
+    },
+    {
+      "number": 377,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "The unity the king thy brother made"
+    },
+    {
+      "number": 378,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Had not been broken, nor my brother slain:"
+    },
+    {
+      "number": 379,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "If thou hadst fear’d to break an oath by Him,"
+    },
+    {
+      "number": 380,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "The imperial metal, circling now thy brow,"
+    },
+    {
+      "number": 381,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Had graced the tender temples of my child,"
+    },
+    {
+      "number": 382,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "And both the princes had been breathing here,"
+    },
+    {
+      "number": 383,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Which now, two tender playfellows to dust,"
+    },
+    {
+      "number": 384,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Thy broken faith hath made a prey for worms."
+    },
+    {
+      "number": 385,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "What canst thou swear by now?"
+    },
+    {
+      "number": 385,
+      "speaker": "KING RICHARD",
+      "text": "The time to come."
+    },
+    {
+      "number": 386,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "That thou hast wronged in the time o’erpast;"
+    },
+    {
+      "number": 387,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "For I myself have many tears to wash"
+    },
+    {
+      "number": 388,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Hereafter time, for time past wrong’d by thee."
+    },
+    {
+      "number": 389,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "The children live, whose parents thou hast slaughter’d,"
+    },
+    {
+      "number": 390,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Ungovern’d youth, to wail it in their age;"
+    },
+    {
+      "number": 391,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "The parents live, whose children thou hast butcher’d,"
+    },
+    {
+      "number": 392,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Old wither’d plants, to wail it with their age."
+    },
+    {
+      "number": 393,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Swear not by time to come; for that thou hast"
+    },
+    {
+      "number": 394,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Misused ere used, by time misused o’erpast."
+    },
+    {
+      "number": 395,
+      "speaker": "KING RICHARD",
+      "text": "As I intend to prosper and repent,"
+    },
+    {
+      "number": 396,
+      "speaker": "KING RICHARD",
+      "text": "So thrive I in my dangerous attempt"
+    },
+    {
+      "number": 397,
+      "speaker": "KING RICHARD",
+      "text": "Of hostile arms! myself myself confound!"
+    },
+    {
+      "number": 398,
+      "speaker": "KING RICHARD",
+      "text": "Heaven and fortune bar me happy hours!"
+    },
+    {
+      "number": 399,
+      "speaker": "KING RICHARD",
+      "text": "Day, yield me not thy light; nor, night, thy rest!"
+    },
+    {
+      "number": 400,
+      "speaker": "KING RICHARD",
+      "text": "Be opposite all planets of good luck"
+    },
+    {
+      "number": 401,
+      "speaker": "KING RICHARD",
+      "text": "To my proceedings, if, with pure heart’s love,"
+    },
+    {
+      "number": 402,
+      "speaker": "KING RICHARD",
+      "text": "Immaculate devotion, holy thoughts,"
+    },
+    {
+      "number": 403,
+      "speaker": "KING RICHARD",
+      "text": "I tender not thy beauteous princely daughter!"
+    },
+    {
+      "number": 404,
+      "speaker": "KING RICHARD",
+      "text": "In her consists my happiness and thine;"
+    },
+    {
+      "number": 405,
+      "speaker": "KING RICHARD",
+      "text": "Without her, follows to this land and me,"
+    },
+    {
+      "number": 406,
+      "speaker": "KING RICHARD",
+      "text": "To thee, herself, and many a Christian soul,"
+    },
+    {
+      "number": 407,
+      "speaker": "KING RICHARD",
+      "text": "Death, desolation, ruin and decay:"
+    },
+    {
+      "number": 408,
+      "speaker": "KING RICHARD",
+      "text": "It cannot be avoided but by this;"
+    },
+    {
+      "number": 409,
+      "speaker": "KING RICHARD",
+      "text": "It will not be avoided but by this."
+    },
+    {
+      "number": 410,
+      "speaker": "KING RICHARD",
+      "text": "Therefore, good mother—I must can you so—"
+    },
+    {
+      "number": 411,
+      "speaker": "KING RICHARD",
+      "text": "Be the attorney of my love to her:"
+    },
+    {
+      "number": 412,
+      "speaker": "KING RICHARD",
+      "text": "Plead what I will be, not what I have been;"
+    },
+    {
+      "number": 413,
+      "speaker": "KING RICHARD",
+      "text": "Not my deserts, but what I will deserve:"
+    },
+    {
+      "number": 414,
+      "speaker": "KING RICHARD",
+      "text": "Urge the necessity and state of times,"
+    },
+    {
+      "number": 415,
+      "speaker": "KING RICHARD",
+      "text": "And be not peevish-fond in great designs."
+    },
+    {
+      "number": 416,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Shall I be tempted of the devil thus?"
+    },
+    {
+      "number": 417,
+      "speaker": "KING RICHARD",
+      "text": "Ay, if the devil tempt thee to do good."
+    },
+    {
+      "number": 418,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Shall I forget myself to be myself?"
+    },
+    {
+      "number": 419,
+      "speaker": "KING RICHARD",
+      "text": "Ay, if yourself’s remembrance wrong yourself."
+    },
+    {
+      "number": 419,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "But thou didst kill my children."
+    },
+    {
+      "number": 420,
+      "speaker": "KING RICHARD",
+      "text": "But in your daughter’s womb I bury them:"
+    },
+    {
+      "number": 421,
+      "speaker": "KING RICHARD",
+      "text": "Where in that nest of spicery they shall breed"
+    },
+    {
+      "number": 422,
+      "speaker": "KING RICHARD",
+      "text": "Selves of themselves, to your recomforture."
+    },
+    {
+      "number": 423,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Shall I go win my daughter to thy will?"
+    },
+    {
+      "number": 424,
+      "speaker": "KING RICHARD",
+      "text": "And be a happy mother by the deed."
+    },
+    {
+      "number": 425,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "I go. Write to me very shortly,"
+    },
+    {
+      "number": 426,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "And you shall understand from me her mind."
+    },
+    {
+      "number": 427,
+      "speaker": "KING RICHARD",
+      "text": "Bear her my true love’s kiss; and so, farewell."
+    },
+    {
+      "number": 428,
+      "speaker": "KING RICHARD",
+      "text": "Relenting fool, and shallow, changing woman!"
+    },
+    {
+      "number": 429,
+      "speaker": "RATCLIFF",
+      "text": "My gracious sovereign, on the western coast"
+    },
+    {
+      "number": 430,
+      "speaker": "RATCLIFF",
+      "text": "Rideth a puissant navy; to the shore"
+    },
+    {
+      "number": 431,
+      "speaker": "RATCLIFF",
+      "text": "Throng many doubtful hollow-hearted friends,"
+    },
+    {
+      "number": 432,
+      "speaker": "RATCLIFF",
+      "text": "Unarm’d, and unresolved to beat them back:"
+    },
+    {
+      "number": 433,
+      "speaker": "RATCLIFF",
+      "text": "’Tis thought that Richmond is their admiral;"
+    },
+    {
+      "number": 434,
+      "speaker": "RATCLIFF",
+      "text": "And there they hull, expecting but the aid"
+    },
+    {
+      "number": 435,
+      "speaker": "RATCLIFF",
+      "text": "Of Buckingham to welcome them ashore."
+    },
+    {
+      "number": 436,
+      "speaker": "KING RICHARD",
+      "text": "Some light-foot friend post to the Duke of Norfolk:"
+    },
+    {
+      "number": 437,
+      "speaker": "KING RICHARD",
+      "text": "Ratcliff, thyself, or Catesby; where is he?"
+    },
+    {
+      "number": 438,
+      "speaker": "CATESBY",
+      "text": "Here, my lord."
+    },
+    {
+      "number": 439,
+      "speaker": "KING RICHARD",
+      "text": "Fly to the duke: To Ratcliff. Post thou to Salisbury:"
+    },
+    {
+      "number": 440,
+      "speaker": "KING RICHARD",
+      "text": "When thou comest thither—To Catesby. Dull, unmindful villain,"
+    },
+    {
+      "number": 441,
+      "speaker": "KING RICHARD",
+      "text": "Why stand’st thou still, and go’st not to the duke?"
+    },
+    {
+      "number": 442,
+      "speaker": "CATESBY",
+      "text": "First, mighty sovereign, let me know your mind,"
+    },
+    {
+      "number": 443,
+      "speaker": "CATESBY",
+      "text": "What from your grace I shall deliver to him."
+    },
+    {
+      "number": 444,
+      "speaker": "KING RICHARD",
+      "text": "O, true, good Catesby: bid him levy straight"
+    },
+    {
+      "number": 445,
+      "speaker": "KING RICHARD",
+      "text": "The greatest strength and power he can make,"
+    },
+    {
+      "number": 446,
+      "speaker": "KING RICHARD",
+      "text": "And meet me presently at Salisbury."
+    },
+    {
+      "number": 446,
+      "speaker": "CATESBY",
+      "text": "I go."
+    },
+    {
+      "number": 447,
+      "speaker": "RATCLIFF",
+      "text": "What is’t your highness’ pleasure I shall do"
+    },
+    {
+      "number": 448,
+      "speaker": "RATCLIFF",
+      "text": "At Salisbury?"
+    },
+    {
+      "number": 449,
+      "speaker": "KING RICHARD",
+      "text": "Why, what wouldst thou do there before I go?"
+    },
+    {
+      "number": 450,
+      "speaker": "RATCLIFF",
+      "text": "Your highness told me I should post before."
+    },
+    {
+      "number": 451,
+      "speaker": "KING RICHARD",
+      "text": "My mind is changed, sir, my mind is changed."
+    },
+    {
+      "number": 452,
+      "speaker": "STANLEY",
+      "text": "None good, my lord, to please you with the hearing;"
+    },
+    {
+      "number": 453,
+      "speaker": "STANLEY",
+      "text": "Nor none so bad, but it may well be told."
+    },
+    {
+      "number": 454,
+      "speaker": "KING RICHARD",
+      "text": "Hoyday, a riddle! neither good nor bad!"
+    },
+    {
+      "number": 455,
+      "speaker": "KING RICHARD",
+      "text": "Why dost thou run so many mile about,"
+    },
+    {
+      "number": 456,
+      "speaker": "KING RICHARD",
+      "text": "When thou mayst tell thy tale a nearer way?"
+    },
+    {
+      "number": 457,
+      "speaker": "KING RICHARD",
+      "text": "Once more, what news?"
+    },
+    {
+      "number": 457,
+      "speaker": "STANLEY",
+      "text": "Richmond is on the seas."
+    },
+    {
+      "number": 458,
+      "speaker": "KING RICHARD",
+      "text": "There let him sink, and be the seas on him!"
+    },
+    {
+      "number": 459,
+      "speaker": "KING RICHARD",
+      "text": "White-liver’d runagate, what doth he there?"
+    },
+    {
+      "number": 460,
+      "speaker": "STANLEY",
+      "text": "I know not, mighty sovereign, but by guess."
+    },
+    {
+      "number": 461,
+      "speaker": "KING RICHARD",
+      "text": "Well, sir, as you guess, as you guess?"
+    },
+    {
+      "number": 462,
+      "speaker": "STANLEY",
+      "text": "Stirr’d up by Dorset, Buckingham, and Ely,"
+    },
+    {
+      "number": 463,
+      "speaker": "STANLEY",
+      "text": "He makes for England, there to claim the crown."
+    },
+    {
+      "number": 464,
+      "speaker": "KING RICHARD",
+      "text": "Is the chair empty? is the sword unsway’d?"
+    },
+    {
+      "number": 465,
+      "speaker": "KING RICHARD",
+      "text": "Is the king dead? the empire unpossess’d?"
+    },
+    {
+      "number": 466,
+      "speaker": "KING RICHARD",
+      "text": "What heir of York is there alive but we?"
+    },
+    {
+      "number": 467,
+      "speaker": "KING RICHARD",
+      "text": "And who is England’s king but great York’s heir?"
+    },
+    {
+      "number": 468,
+      "speaker": "KING RICHARD",
+      "text": "Then, tell me, what doth he upon the sea?"
+    },
+    {
+      "number": 469,
+      "speaker": "STANLEY",
+      "text": "Unless for that, my liege, I cannot guess."
+    },
+    {
+      "number": 470,
+      "speaker": "KING RICHARD",
+      "text": "Unless for that he comes to be your liege,"
+    },
+    {
+      "number": 471,
+      "speaker": "KING RICHARD",
+      "text": "You cannot guess wherefore the Welshman comes."
+    },
+    {
+      "number": 472,
+      "speaker": "KING RICHARD",
+      "text": "Thou wilt revolt, and fly to him, I fear."
+    },
+    {
+      "number": 473,
+      "speaker": "STANLEY",
+      "text": "No, mighty liege; therefore mistrust me not."
+    },
+    {
+      "number": 474,
+      "speaker": "KING RICHARD",
+      "text": "Where is thy power, then, to beat him back?"
+    },
+    {
+      "number": 475,
+      "speaker": "KING RICHARD",
+      "text": "Where are thy tenants and thy followers?"
+    },
+    {
+      "number": 476,
+      "speaker": "KING RICHARD",
+      "text": "Are they not now upon the western shore,"
+    },
+    {
+      "number": 477,
+      "speaker": "KING RICHARD",
+      "text": "Safe-conducting the rebels from their ships!"
+    },
+    {
+      "number": 478,
+      "speaker": "STANLEY",
+      "text": "No, my good lord, my friends are in the north."
+    },
+    {
+      "number": 479,
+      "speaker": "KING RICHARD",
+      "text": "Cold friends to Richard: what do they in the north,"
+    },
+    {
+      "number": 480,
+      "speaker": "KING RICHARD",
+      "text": "When they should serve their sovereign in the west?"
+    },
+    {
+      "number": 481,
+      "speaker": "STANLEY",
+      "text": "They have not been commanded, mighty sovereign:"
+    },
+    {
+      "number": 482,
+      "speaker": "STANLEY",
+      "text": "Please it your majesty to give me leave,"
+    },
+    {
+      "number": 483,
+      "speaker": "STANLEY",
+      "text": "I’ll muster up my friends, and meet your grace"
+    },
+    {
+      "number": 484,
+      "speaker": "STANLEY",
+      "text": "Where and what time your majesty shall please."
+    },
+    {
+      "number": 485,
+      "speaker": "KING RICHARD",
+      "text": "Ay, ay, thou wouldst be gone to join with Richmond:"
+    },
+    {
+      "number": 486,
+      "speaker": "KING RICHARD",
+      "text": "I will not trust you, sir."
+    },
+    {
+      "number": 486,
+      "speaker": "STANLEY",
+      "text": "Most mighty sovereign,"
+    },
+    {
+      "number": 487,
+      "speaker": "STANLEY",
+      "text": "You have no cause to hold my friendship doubtful:"
+    },
+    {
+      "number": 488,
+      "speaker": "STANLEY",
+      "text": "I never was nor never will be false."
+    },
+    {
+      "number": 489,
+      "speaker": "KING RICHARD",
+      "text": "Well,"
+    },
+    {
+      "number": 490,
+      "speaker": "KING RICHARD",
+      "text": "Go muster men; but, hear you, leave behind"
+    },
+    {
+      "number": 491,
+      "speaker": "KING RICHARD",
+      "text": "Your son, George Stanley: look your faith be firm,"
+    },
+    {
+      "number": 492,
+      "speaker": "KING RICHARD",
+      "text": "Or else his head’s assurance is but frail."
+    },
+    {
+      "number": 493,
+      "speaker": "STANLEY",
+      "text": "So deal with him as I prove true to you."
+    },
+    {
+      "number": 494,
+      "speaker": "MESSENGER",
+      "text": "My gracious sovereign, now in Devonshire,"
+    },
+    {
+      "number": 495,
+      "speaker": "MESSENGER",
+      "text": "As I by friends am well advertised,"
+    },
+    {
+      "number": 496,
+      "speaker": "MESSENGER",
+      "text": "Sir Edward Courtney, and the haughty prelate"
+    },
+    {
+      "number": 497,
+      "speaker": "MESSENGER",
+      "text": "Bishop of Exeter, his brother there,"
+    },
+    {
+      "number": 498,
+      "speaker": "MESSENGER",
+      "text": "With many more confederates, are in arms."
+    },
+    {
+      "number": 499,
+      "speaker": "SECOND MESSENGER",
+      "text": "My liege, in Kent the Guildfords are in arms;"
+    },
+    {
+      "number": 500,
+      "speaker": "SECOND MESSENGER",
+      "text": "And every hour more competitors"
+    },
+    {
+      "number": 501,
+      "speaker": "SECOND MESSENGER",
+      "text": "Flock to their aid, and still their power increaseth."
+    },
+    {
+      "number": 502,
+      "speaker": "THIRD MESSENGER",
+      "text": "My lord, the army of the Duke of Buckingham—"
+    },
+    {
+      "number": 503,
+      "speaker": "KING RICHARD",
+      "text": "Out on you, owls! nothing but songs of death? He striketh him."
+    },
+    {
+      "number": 504,
+      "speaker": "KING RICHARD",
+      "text": "Take that, until thou bring me better news."
+    },
+    {
+      "number": 505,
+      "speaker": "THIRD MESSENGER",
+      "text": "The news I have to tell your majesty"
+    },
+    {
+      "number": 506,
+      "speaker": "THIRD MESSENGER",
+      "text": "Is, that by sudden floods and fall of waters,"
+    },
+    {
+      "number": 507,
+      "speaker": "THIRD MESSENGER",
+      "text": "Buckingham’s army is dispersed and scatter’d;"
+    },
+    {
+      "number": 508,
+      "speaker": "THIRD MESSENGER",
+      "text": "And he himself wander’d away alone,"
+    },
+    {
+      "number": 509,
+      "speaker": "THIRD MESSENGER",
+      "text": "No man knows whither."
+    },
+    {
+      "number": 509,
+      "speaker": "KING RICHARD",
+      "text": "I cry thee mercy:"
+    },
+    {
+      "number": 510,
+      "speaker": "KING RICHARD",
+      "text": "There is my purse to cure that blow of thine."
+    },
+    {
+      "number": 511,
+      "speaker": "KING RICHARD",
+      "text": "Hath any well-advised friend proclaim’d"
+    },
+    {
+      "number": 512,
+      "speaker": "KING RICHARD",
+      "text": "Reward to him that brings the traitor in?"
+    },
+    {
+      "number": 513,
+      "speaker": "THIRD MESSENGER",
+      "text": "Such proclamation hath been made, my liege."
+    },
+    {
+      "number": 514,
+      "speaker": "FOURTH MESSENGER",
+      "text": "Sir Thomas Lovel and Lord Marquis Dorset,"
+    },
+    {
+      "number": 515,
+      "speaker": "FOURTH MESSENGER",
+      "text": "’Tis said, my liege, in Yorkshire are in arms."
+    },
+    {
+      "number": 516,
+      "speaker": "FOURTH MESSENGER",
+      "text": "Yet this good comfort bring I to your grace,"
+    },
+    {
+      "number": 517,
+      "speaker": "FOURTH MESSENGER",
+      "text": "The Breton navy is dispersed by tempest:"
+    },
+    {
+      "number": 518,
+      "speaker": "FOURTH MESSENGER",
+      "text": "Richmond, in Yorkshire, sent out a boat"
+    },
+    {
+      "number": 519,
+      "speaker": "FOURTH MESSENGER",
+      "text": "Unto the shore, to ask those on the banks"
+    },
+    {
+      "number": 520,
+      "speaker": "FOURTH MESSENGER",
+      "text": "If they were his assistants, yea or no;"
+    },
+    {
+      "number": 521,
+      "speaker": "FOURTH MESSENGER",
+      "text": "Who answer’d him, they came from Buckingham"
+    },
+    {
+      "number": 522,
+      "speaker": "FOURTH MESSENGER",
+      "text": "Upon his party: he, mistrusting them,"
+    },
+    {
+      "number": 523,
+      "speaker": "FOURTH MESSENGER",
+      "text": "Hoisted sail and made away for Brittany."
+    },
+    {
+      "number": 524,
+      "speaker": "KING RICHARD",
+      "text": "March on, march on, since we are up in arms;"
+    },
+    {
+      "number": 525,
+      "speaker": "KING RICHARD",
+      "text": "If not to fight with foreign enemies,"
+    },
+    {
+      "number": 526,
+      "speaker": "KING RICHARD",
+      "text": "Yet to beat down these rebels here at home."
+    },
+    {
+      "number": 527,
+      "speaker": "CATESBY",
+      "text": "My liege, the Duke of Buckingham is taken;"
+    },
+    {
+      "number": 528,
+      "speaker": "CATESBY",
+      "text": "That is the best news: that the Earl of Richmond"
+    },
+    {
+      "number": 529,
+      "speaker": "CATESBY",
+      "text": "Is with a mighty power landed at Milford,"
+    },
+    {
+      "number": 530,
+      "speaker": "CATESBY",
+      "text": "Is colder tidings, yet they must be told."
+    },
+    {
+      "number": 531,
+      "speaker": "KING RICHARD",
+      "text": "Away towards Salisbury! while we reason here,"
+    },
+    {
+      "number": 532,
+      "speaker": "KING RICHARD",
+      "text": "A royal battle might be won and lost:"
+    },
+    {
+      "number": 533,
+      "speaker": "KING RICHARD",
+      "text": "Some one take order Buckingham be brought"
+    },
+    {
+      "number": 534,
+      "speaker": "KING RICHARD",
+      "text": "To Salisbury; the rest march on with me."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Queen Margaret."
+    },
+    {
+      "after_line": 8,
+      "text": "Enter Queen Elizabeth and the Duchess of York."
+    },
+    {
+      "after_line": 124,
+      "text": "Exit."
+    },
+    {
+      "after_line": 134,
+      "text": "Enter King Richard, marching, with drums and trumpets."
+    },
+    {
+      "after_line": 149,
+      "text": "Flourish. Alarums."
+    },
+    {
+      "after_line": 193,
+      "text": "Exit."
+    },
+    {
+      "after_line": 427,
+      "text": "Exit Queen Elizabeth."
+    },
+    {
+      "after_line": 428,
+      "text": "Enter Ratcliff; Catesby following."
+    },
+    {
+      "after_line": 428,
+      "text": "How now! what news?"
+    },
+    {
+      "after_line": 446,
+      "text": "Exit."
+    },
+    {
+      "after_line": 451,
+      "text": "Enter Lord Stanley."
+    },
+    {
+      "after_line": 451,
+      "text": "How now, what news with you?"
+    },
+    {
+      "after_line": 493,
+      "text": "Exit."
+    },
+    {
+      "after_line": 493,
+      "text": "Enter a Messenger."
+    },
+    {
+      "after_line": 498,
+      "text": "Enter another Messenger."
+    },
+    {
+      "after_line": 501,
+      "text": "Enter another Messenger."
+    },
+    {
+      "after_line": 513,
+      "text": "Enter another Messenger."
+    },
+    {
+      "after_line": 526,
+      "text": "Reenter Catesby."
+    },
+    {
+      "after_line": 534,
+      "text": "Flourish. Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act4_scene4_gloss1",
+      "line": 1,
+      "phrase": "prosperity begins to mellow",
+      "definition": "prosperity starts to ripen (and rot) — Margaret's fruit-image for Richard's now-overripe tyranny"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss2",
+      "line": 3,
+      "phrase": "slily have I lurk’d",
+      "definition": "stealthily have I lurked — Margaret has remained in England (contrary to the actual historical timeline; she died 1482) as a prophetic presence"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss3",
+      "line": 5,
+      "phrase": "dire induction",
+      "definition": "grim prologue — 'induction' = theatrical opening section; Margaret explicitly names the play's structure"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss4",
+      "line": 10,
+      "phrase": "unblown flowers",
+      "definition": "buds not yet opened — Elizabeth's dead children"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss5",
+      "line": 12,
+      "phrase": "fix’d in doom perpetual",
+      "definition": "fixed in eternal judgement (damned or saved forever)"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss6",
+      "line": 15,
+      "phrase": "right for right",
+      "definition": "one right cancels another — Margaret's calculus of retributive justice"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss7",
+      "line": 19,
+      "phrase": "Plantagenet doth quit Plantagenet",
+      "definition": "one Plantagenet pays back another — the dynasty self-consuming"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss8",
+      "line": 25,
+      "phrase": "Blind sight, dead life",
+      "definition": "the Duchess's formal paradox-string — an oxymoron-lament"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss9",
+      "line": 26,
+      "phrase": "grave’s due by life usurp’d",
+      "definition": "already owed to the grave, still walking — the Duchess as living corpse"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss10",
+      "line": 28,
+      "phrase": "England’s lawful earth",
+      "definition": "lawful English ground — for a ceremonial sitting"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss11",
+      "line": 35,
+      "phrase": "seniory",
+      "definition": "seniority; priority of ancient grief"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss12",
+      "line": 39,
+      "phrase": "I had an Edward, till a Richard kill’d him",
+      "definition": "Margaret's systematic arithmetic of the dead — the scene's most famous formal structure (anaphora + parallel syntax)"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss13",
+      "line": 46,
+      "phrase": "kennel of thy womb",
+      "definition": "the Duchess's womb as a dog-kennel that bred Richard — Margaret's brutal image"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss14",
+      "line": 48,
+      "phrase": "dog, that had his teeth before his eyes",
+      "definition": "an allusion to the legend that Richard was born with teeth (cf. 2.4.28) — Margaret repurposes it into monstrosity"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss15",
+      "line": 52,
+      "phrase": "galled eyes of weeping souls",
+      "definition": "sore, inflamed eyes — reflecting Richard's reign of sorrow"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss16",
+      "line": 54,
+      "phrase": "upright, just, and true-disposing God",
+      "definition": "God as righteous arranger — the 'justice-disposing' theology Margaret enacts"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss17",
+      "line": 55,
+      "phrase": "carnal cur",
+      "definition": "fleshly dog — Richard"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss18",
+      "line": 57,
+      "phrase": "pew-fellow",
+      "definition": "church-bench companion — Margaret makes the Duchess a fellow-mourner"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss19",
+      "line": 64,
+      "phrase": "Young York he is but boot",
+      "definition": "the younger prince is but 'boot' (a supplement, the makeweight in a trade)"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss20",
+      "line": 68,
+      "phrase": "adulterate Hastings",
+      "definition": "adulterous Hastings — Hastings' affair with Jane Shore, invoked as his undoing"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss21",
+      "line": 70,
+      "phrase": "hell’s black intelligencer",
+      "definition": "hell's black spy/agent — Richard as Satan's informant on earth"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss22",
+      "line": 71,
+      "phrase": "Only reserved their factor",
+      "definition": "only kept as their (hell's) agent"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss23",
+      "line": 76,
+      "phrase": "Cancel his bond of life",
+      "definition": "cancel his life-contract — Margaret's legal-accounting theology"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss24",
+      "line": 80,
+      "phrase": "bottled spider",
+      "definition": "Margaret's repeat signature-insult for Richard (cf. 1.3.239)"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss25",
+      "line": 82,
+      "phrase": "poor shadow, painted queen",
+      "definition": "Margaret's repeat (cf. 1.3.238) — Elizabeth is now the painted queen Margaret foretold"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss26",
+      "line": 84,
+      "phrase": "flattering index of a direful pageant",
+      "definition": "the deceptively-attractive table-of-contents of a dreadful show — index = introductory matter"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss27",
+      "line": 86,
+      "phrase": "mother only mock’d with two sweet babes",
+      "definition": "a mother mocked (by fate) with two sweet babes — now dead"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss28",
+      "line": 90,
+      "phrase": "queen in jest",
+      "definition": "mock-queen, queen in play"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss29",
+      "line": 96,
+      "phrase": "Decline all this",
+      "definition": "recite all this grammatically (as one declines a Latin noun through its cases) — Margaret makes grief a grammar-exercise"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss30",
+      "line": 99,
+      "phrase": "caitiff crown’d with care",
+      "definition": "wretch crowned with anxieties"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss31",
+      "line": 104,
+      "phrase": "course of justice wheel’d about",
+      "definition": "the wheel of Fortune/Justice has come full circle"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss32",
+      "line": 108,
+      "phrase": "usurp my place",
+      "definition": "Margaret accuses Elizabeth of having taken her throne — now both are queens of sorrow"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss33",
+      "line": 114,
+      "phrase": "English woes will make me smile in France",
+      "definition": "Margaret's exit-line — her grief-schadenfreude"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss34",
+      "line": 123,
+      "phrase": "dull; O, quicken them with thine",
+      "definition": "my words are sluggish; sharpen them with yours — Elizabeth asks Margaret for the craft of cursing"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss35",
+      "line": 126,
+      "phrase": "Windy attorneys",
+      "definition": "wind-filled advocates — words as lawyers for grief (Queen Elizabeth's formal definition)"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss36",
+      "line": 127,
+      "phrase": "succeeders of intestate joys",
+      "definition": "inheritors of joys that died without a will — grief as unlegal heirs (intestate = died without a will)"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss37",
+      "line": 134,
+      "phrase": "be copious in exclaims",
+      "definition": "be abundant in outcries — stage direction in dialogue"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss38",
+      "line": 149,
+      "phrase": "Lord’s enointed",
+      "definition": "the Lord's anointed king — Richard claims biblical protection (Psalm 105:15)"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss39",
+      "line": 166,
+      "phrase": "Tetchy and wayward",
+      "definition": "peevish and willful"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss40",
+      "line": 168,
+      "phrase": "prime of manhood",
+      "definition": "the peak years of adulthood"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss41",
+      "line": 173,
+      "phrase": "Humphrey Hour",
+      "definition": "obscure topical joke — possibly a local personality; Richard's flippant deflection"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss42",
+      "line": 186,
+      "phrase": "tire thee more / Than all the complete armour",
+      "definition": "weigh you down more than full armor — the Duchess's curse as spiritual armor-weight"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss43",
+      "line": 199,
+      "phrase": "praying nuns, not weeping queens",
+      "definition": "Elizabeth would rather her daughters enter convents than become Richard's pawns"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss44",
+      "line": 220,
+      "phrase": "by their uncle cozen’d",
+      "definition": "cheated by their uncle — pun on cousin/cozen"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss45",
+      "line": 231,
+      "phrase": "poor bark, of sails and tackling reft",
+      "definition": "poor boat stripped of sails and rigging — Elizabeth as wrecked vessel"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss46",
+      "line": 248,
+      "phrase": "Lethe of thy angry soul",
+      "definition": "the Lethe (river of forgetfulness) of your angry soul — Richard asks Elizabeth to forget"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss47",
+      "line": 270,
+      "phrase": "pair of bleeding-hearts",
+      "definition": "Elizabeth's ghastly dowry-suggestion: give her daughter the princes' hearts"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss48",
+      "line": 273,
+      "phrase": "steep’d in Rutland’s blood",
+      "definition": "the handkerchief Margaret mockingly gave York at Wakefield — soaked in young Rutland's blood; Elizabeth proposes its symmetry"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss49",
+      "line": 281,
+      "phrase": "quick conveyance",
+      "definition": "swift transport — Elizabeth's euphemism for Anne's murder"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss50",
+      "line": 316,
+      "phrase": "ruins of distressful times / Repair’d with double riches",
+      "definition": "the wreckage of the past made whole with doubled wealth — Richard's salesman's promise"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss51",
+      "line": 320,
+      "phrase": "transform’d to orient pearl",
+      "definition": "turned to eastern pearl — tears as precious jewels; eastern pearls were the most valued"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss52",
+      "line": 328,
+      "phrase": "sweet silent hours of marriage joys",
+      "definition": "Richard's sales pitch reaches sexual innuendo — addressed, grotesquely, to the girl's mother"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss53",
+      "line": 334,
+      "phrase": "Caesar’s Caesar",
+      "definition": "Caesar of Caesar — above all emperors; Richard's ultimate imperial flattery"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss54",
+      "line": 362,
+      "phrase": "Harp not on that string",
+      "definition": "don't keep playing that note — don't keep returning to the children"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss55",
+      "line": 364,
+      "phrase": "by my George, my garter, and my crown",
+      "definition": "by the Order of the Garter's St George jewel, the Garter itself, and the royal crown — the three great insignia Richard swears by"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss56",
+      "line": 396,
+      "phrase": "thrive I in my dangerous attempt",
+      "definition": "Richard's self-conditional curse — 'may I thrive in the battle only if I am sincere'"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss57",
+      "line": 397,
+      "phrase": "myself myself confound",
+      "definition": "may I destroy myself — ironic self-curse (which the ghost scene will honour)"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss58",
+      "line": 430,
+      "phrase": "puissant navy",
+      "definition": "powerful fleet — Ratcliff's report of Richmond's invasion"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss59",
+      "line": 433,
+      "phrase": "Richmond is their admiral",
+      "definition": "Richmond commands the fleet"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss60",
+      "line": 434,
+      "phrase": "hull",
+      "definition": "drift with sails furled — awaiting news from shore"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss61",
+      "line": 454,
+      "phrase": "Hoyday, a riddle",
+      "definition": "'Hoyday' = an exclamation of surprise; Richard's sarcasm"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss62",
+      "line": 459,
+      "phrase": "White-liver’d runagate",
+      "definition": "cowardly deserter — 'white-livered' = lacking blood in the liver, i.e. cowardly"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss63",
+      "line": 464,
+      "phrase": "the chair empty? is the sword unsway’d?",
+      "definition": "is the throne vacant? is the sword without a wielder? — Richard's sarcastic protest that he is still king"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss64",
+      "line": 490,
+      "phrase": "leave behind / Your son, George Stanley",
+      "definition": "hostage-taking: Stanley's son kept to ensure his father's loyalty — historically accurate"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss65",
+      "line": 496,
+      "phrase": "Sir Edward Courtney",
+      "definition": "a Devon Yorkist-turned-Tudor ally; historical figure"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss66",
+      "line": 503,
+      "phrase": "Out on you, owls",
+      "definition": "Richard's fury at messenger after messenger — owls = birds of ill omen"
+    },
+    {
+      "id": "richard_iii_act4_scene4_gloss67",
+      "line": 529,
+      "phrase": "Milford",
+      "definition": "Milford Haven, Wales — Richmond's landing point, 7 August 1485"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act4_scene4_ann1",
+      "line_start": 1,
+      "line_end": 113,
+      "citation_display": "Richard III 4.4.1–113",
+      "category": "structural",
+      "title": "The three women together — the play's formal peak",
+      "body": "The first hundred lines of 4.4 are the play's most intricately constructed formal set-piece, and one of the densest in Shakespeare. Queen Margaret, Queen Elizabeth, and the Duchess of York arrange themselves in a triangle of grief; each has lost an Edward, each has lost a second male kinsman, each occupies a specific position in the moral ledger the play has been keeping. The central passage — \"I had an Edward, till a Richard kill'd him; / I had a Harry, till a Richard kill'd him: / Thou hadst an Edward, till a Richard kill'd him; / Thou hadst a Richard, till a Richard killed him\" — uses near-identical syntax to enact precise moral arithmetic. Every grief rhymes with every other; every murder is paid against every other. The form is Senecan antiphony refined through medieval complaint-poetry and brought to a level Shakespeare himself will rarely exceed. When Margaret and Elizabeth together review the dead (\"The adulterate Hastings, Rivers, Vaughan, Grey\"), they are also reviewing Margaret's 1.3 curse fulfilled.",
+      "sources": [
+        "Nicholas Brooke, Shakespeare's Early Tragedies (1968)",
+        "Wolfgang Clemen, A Commentary on Shakespeare's Richard III (1968)",
+        "Emrys Jones, Scenic Form in Shakespeare (1971)"
+      ]
+    },
+    {
+      "id": "richard_iii_act4_scene4_ann2",
+      "line_start": 1,
+      "line_end": 16,
+      "citation_display": "Richard III 4.4.1–16",
+      "category": "thematic",
+      "title": "Margaret returns — the chorus collects its dividends",
+      "body": "Margaret's soliloquy — \"So, now prosperity begins to mellow / And drop into the rotten mouth of death\" — is one of the most savage re-entries in Shakespeare. She has remained in England (historically impossible — she died in France in 1482) to witness each of her 1.3 curses being fulfilled, and now she enters to watch the last convulsions. \"A dire induction am I witness to\" — the vocabulary is Senecan, the posture choric. The scene's later line-for-line grief arithmetic is Margaret's grim exam: Elizabeth and the Duchess must now admit, in her presence, what they could not accept in 1.3. The play is asking whether the victim of yesterday's crime owes moral witness to today's victims when she was herself dismissed. Margaret is in one reading heartless and in another — closer to the play's own — terrible precisely because she is the only one left with the historical memory to be accurate.",
+      "sources": [
+        "Patricia-Ann Lee, \"Reflections of Power: Margaret of Anjou and the Dark Side of Queenship\" (1986)",
+        "Phyllis Rackin, Stages of History (1990)",
+        "A. P. Rossiter, Angel with Horns (1961)"
+      ]
+    },
+    {
+      "id": "richard_iii_act4_scene4_ann3",
+      "line_start": 116,
+      "line_end": 126,
+      "citation_display": "Richard III 4.4.116–126",
+      "category": "close_reading",
+      "title": "Elizabeth becomes Margaret's pupil",
+      "body": "Elizabeth's request — \"O thou well skill'd in curses, stay awhile, / And teach me how to curse mine enemies!\" — is the play's cleanest reversal. In 1.3 Elizabeth had dismissed Margaret as a \"lunatic\" (1.3.251). Now she asks Margaret to teach her the craft. Margaret's answer is methodologically specific: forbear sleep, fast, remember dead happiness against living woe, \"Compare dead happiness with living woe; / Think that thy babes were fairer than they were, / And he that slew them fouler than he is.\" The curse is a daily discipline of recollection. What Margaret is teaching is what she has become: someone whose grief survives because she refuses to let time soften it. The scene is the play's rarest gift — a moment of instruction across a victim-solidarity that crosses the Lancaster-York line. It will not prevent any of what comes, but it changes Elizabeth into someone capable of resisting Richard in the second half of the scene.",
+      "sources": [
+        "Madonne M. Miner, \"'Neither mother, wife, nor England's queen'\" (1980)",
+        "Janet Adelman, Suffocating Mothers (1992)",
+        "Kathryn Schwarz, Tough Love: Amazon Encounters in the English Renaissance (2000)"
+      ]
+    },
+    {
+      "id": "richard_iii_act4_scene4_ann4",
+      "line_start": 165,
+      "line_end": 193,
+      "citation_display": "Richard III 4.4.165–193",
+      "category": "thematic",
+      "title": "The Duchess of York's maternal curse",
+      "body": "The Duchess's farewell to Richard — \"take with thee my most heavy curse; / Which, in the day of battle, tire thee more / Than all the complete armour that thou wear'st!\" — is the play's most terrible maternal curse. She has traced his whole life in a single speech — grievous burthen at birth, tetchy infancy, frightful schooldays, venturous manhood, treacherous confirmed age — and concludes that no comfortable hour graced her in his company. The curse's specific invocation is that his own mother's prayers will fight for his adversary in the battle: \"My prayers on the adverse party fight.\" The play's supernatural machinery has now added the mother's prayer to Margaret's curse-chain and the murdered souls' ghost-summons. In 5.3 all three will converge against Richard in the tent. The Duchess is one of the ghosts of the battle before the battle begins.",
+      "sources": [
+        "Janet Adelman, Suffocating Mothers (1992)",
+        "Coppélia Kahn, Man's Estate: Masculine Identity in Shakespeare (1981)",
+        "Phyllis Rackin, Stages of History (1990)"
+      ]
+    },
+    {
+      "id": "richard_iii_act4_scene4_ann5",
+      "line_start": 201,
+      "line_end": 293,
+      "citation_display": "Richard III 4.4.201–293",
+      "category": "structural",
+      "title": "The second wooing — and the question whether Elizabeth yields",
+      "body": "Richard's attempt to woo Elizabeth of York through her mother is the play's structural answer to 1.2. The scene is roughly ninety lines, again stichomythic, again a duel of wits — but this time the woman opposing Richard is not exhausted and widowed; she is the mother of the murdered princes and has just been instructed by Margaret in the craft of curse. Critics remain divided on whether Elizabeth \"yields\" at the scene's end. The surface text (\"I go. Write to me very shortly, / And you shall understand from me her mind\") can be read as capitulation (Richard thinks so: \"Relenting fool, and shallow, changing woman!\"), as tactical delay (she knows Richmond is approaching), or as outright deceit (she is simultaneously sending Derby a letter arranging Elizabeth of York's marriage to Richmond — confirmed in 4.5). Modern productions mostly favour the tactical-deceit reading; the wordplay's aggressiveness supports it. What is clear is that Richard misjudges: the 1.2 method does not work on a mother who has read the play's earlier scenes.",
+      "sources": [
+        "Madonne M. Miner, \"'Neither mother, wife, nor England's queen'\" (1980)",
+        "Janet Adelman, Suffocating Mothers (1992)",
+        "Marjorie Garber, Shakespeare and Modern Culture (2008)",
+        "Harriet Hawkins, \"The Authority of Tradition, the Authority of Experience\" (1978)"
+      ]
+    },
+    {
+      "id": "richard_iii_act4_scene4_ann6",
+      "line_start": 364,
+      "line_end": 397,
+      "citation_display": "Richard III 4.4.364–397",
+      "category": "close_reading",
+      "title": "\"Swear then by something that thou hast not wrong'd\"",
+      "body": "Elizabeth's systematic demolition of Richard's oaths (364–397) is one of the great rhetorical sequences in Shakespeare. He swears by his George, his garter, and his crown: profaned, dishonour'd, usurped. The world: full of his wrongs. His father's death: his life has dishonour'd it. Himself: misused. God: most wronged of all. Her method is not counter-argument but exclusion — the method of someone who has realized that Richard's rhetoric only works where a remainder of uncompromised value is available. She takes away every possible guarantor of his promise. The speech's closing thrust — \"Swear not by time to come; for that thou hast / Misused ere used, by time misused o'erpast\" — is the play's most precise articulation of the logic Margaret had been teaching: the future is already mortgaged by the past. This is the play's one entirely successful rhetorical duel against Richard. He loses.",
+      "sources": [
+        "Brian Vickers, The Artistry of Shakespeare's Prose (1968)",
+        "Madonne M. Miner, \"'Neither mother, wife, nor England's queen'\" (1980)",
+        "Joel B. Altman, The Tudor Play of Mind (1978)"
+      ]
+    },
+    {
+      "id": "richard_iii_act4_scene4_ann7",
+      "line_start": 427,
+      "line_end": 428,
+      "citation_display": "Richard III 4.4.427–428",
+      "category": "inference",
+      "title": "\"Relenting fool, and shallow, changing woman!\"",
+      "body": "Richard's aside after Elizabeth exits — \"Relenting fool, and shallow, changing woman!\" — is the scene's trap for him. He thinks he has won; the play lets us see that he has not. The coming scenes will reveal that Elizabeth has sent word to Derby that \"the queen hath heartily consented / He shall espouse Elizabeth her daughter\" — meaning Richmond, not Richard (4.5.17–18). Richard's contemptuous summary of her is the index of his misreading, and in a play whose hero is defined by his reading of others, being wrong about a woman is the first indication that his command of the scene has slipped. Margaret's curse — \"Thy friends suspect for traitors while thou livest, / And take deep traitors for thy dearest friends\" (1.3.219–220) — is fulfilled here in miniature. Richard cannot tell who he is talking to anymore.",
+      "sources": [
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)",
+        "Madonne M. Miner, \"'Neither mother, wife, nor England's queen'\" (1980)"
+      ]
+    },
+    {
+      "id": "richard_iii_act4_scene4_ann8",
+      "line_start": 46,
+      "line_end": 57,
+      "citation_display": "Richard III 4.4.46–57",
+      "category": "thematic",
+      "title": "\"Kennel of thy womb\" — Margaret's extreme maternal curse",
+      "body": "Margaret's image of the Duchess's womb as \"kennel\" to a \"hell-hound\" — \"a dog, that had his teeth before his eyes, / To worry lambs and lap their gentle blood\" — is the play's most extreme treatment of its maternal-monstrous register. The compressed allusion to the birth-with-teeth legend (cf. 2.4, 1.3's \"rooting hog\") is weaponized here into a vision of the Duchess as unwitting kennel for a hunting-dog that hunts its own family. It is almost impossible maternal language. What justifies it dramaturgically is that the Duchess herself has been moving toward this language since 2.2 (\"from my dugs he drew not this deceit\") and 4.1 (\"cockatrice hast thou hatch'd\"). Margaret names what the Duchess has already been confessing. The scene's moral economy requires that the curse come from the outsider-queen rather than the mother, but the mother must consent. When the Duchess says \"God witness with me, I have wept for thine\" (59), she is consenting to Margaret's reading of her own son.",
+      "sources": [
+        "Janet Adelman, Suffocating Mothers (1992)",
+        "Phyllis Rackin, Stages of History (1990)",
+        "Madonne M. Miner, \"'Neither mother, wife, nor England's queen'\" (1980)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act4_scene4_q1",
+      "kind": "structural",
+      "prompt": "The central passage \"I had an Edward, till a Richard kill'd him...\" does what formally?",
+      "options": [
+        "It uses unstructured exclamation to convey grief",
+        "It uses near-identical syntactic parallelism to enact precise moral arithmetic — every grief rhymes with every other",
+        "It introduces new characters by their titles",
+        "It is a quotation from an Old English lament poem"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 39,
+      "anchor_line_end": 42
+    },
+    {
+      "id": "richard_iii_act4_scene4_q2",
+      "kind": "theme",
+      "prompt": "What is the structural function of Margaret's return in 4.4, given that historically she had died in 1482?",
+      "options": [
+        "To provide comic relief before the final act",
+        "To serve as the play's chorus — her historical impossibility as deliberate dramaturgy, keeping the cross-dynastic moral ledger present at the scene of its fulfillment",
+        "To introduce a romantic subplot",
+        "To represent France's official political position"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 16
+    },
+    {
+      "id": "richard_iii_act4_scene4_q3",
+      "kind": "close_reading",
+      "prompt": "Elizabeth's \"O thou well skill'd in curses, stay awhile, / And teach me how to curse mine enemies!\" marks what change?",
+      "options": [
+        "She has become confused about political allegiances",
+        "She explicitly becomes Margaret's pupil — the reversal from her 1.3 dismissal of Margaret as a lunatic",
+        "She is preparing a spell for use against Richmond",
+        "She is mocking Margaret to distract her from grief"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 115,
+      "anchor_line_end": 116
+    },
+    {
+      "id": "richard_iii_act4_scene4_q4",
+      "kind": "inference",
+      "prompt": "The Duchess of York's curse on Richard includes the line \"My prayers on the adverse party fight.\" What does she invoke?",
+      "options": [
+        "The military chaplain of Richmond's army",
+        "Her maternal prayers fighting for Richmond — the mother's prayer added to Margaret's curse-chain and the murdered souls' ghost-summons that will all converge in 5.3",
+        "A specific saint she believes will intercede",
+        "An ancient family motto"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 188,
+      "anchor_line_end": 191
+    },
+    {
+      "id": "richard_iii_act4_scene4_q5",
+      "kind": "theme",
+      "prompt": "Most modern critics read Elizabeth's exit in the second wooing (4.4) as what?",
+      "options": [
+        "A genuine capitulation, as Richard himself believes",
+        "Tactical delay or outright deceit — she is in fact arranging her daughter's marriage to Richmond, not Richard (confirmed in 4.5)",
+        "A permanent break with all political engagement",
+        "A conversion to a religious order"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 420,
+      "anchor_line_end": 428
+    },
+    {
+      "id": "richard_iii_act4_scene4_q6",
+      "kind": "close_reading",
+      "prompt": "Elizabeth's systematic demolition of Richard's oaths (364–397) succeeds by what method?",
+      "options": [
+        "Direct counter-argument on each point",
+        "Exclusion — she takes away every possible uncompromised guarantor of his promise (his George, his garter, the world, his father's death, himself, God), leaving nothing uncorrupted to swear by",
+        "Appeal to a higher authority in heaven",
+        "A legal argument citing specific statutes"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 364,
+      "anchor_line_end": 375
+    },
+    {
+      "id": "richard_iii_act4_scene4_q7",
+      "kind": "structural",
+      "prompt": "Richard's aside at 427–428 — \"Relenting fool, and shallow, changing woman!\" — marks what?",
+      "options": [
+        "The moment of Richard's final triumph",
+        "The scene's trap for Richard: he thinks he has won; the audience sees (and 4.5 will confirm) that he has been outmanoeuvred",
+        "A transitional soliloquy about his next military move",
+        "A reflection on his mother's character"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 427,
+      "anchor_line_end": 428
+    },
+    {
+      "id": "richard_iii_act4_scene4_q8",
+      "kind": "theme",
+      "prompt": "Margaret's \"kennel of thy womb\" image compresses which motif recurring since 2.4?",
+      "options": [
+        "The boar as Richard's heraldic badge",
+        "The folk legend that Richard was born with teeth — weaponized here into a vision of the Duchess's womb as unwitting kennel for a hunting-dog",
+        "The biblical motif of the lion and the lamb",
+        "The classical topos of the basilisk's gaze"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 46,
+      "anchor_line_end": 53
+    }
+  ]
+}

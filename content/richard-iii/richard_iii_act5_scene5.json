@@ -1,0 +1,511 @@
+{
+  "section_id": "richard_iii_act5_scene5",
+  "work_id": "richard-iii",
+  "sequence": 25,
+  "act": 5,
+  "scene": 5,
+  "kind": "scene",
+  "scene_title": "Another part of the field",
+  "line_count": 41,
+  "word_count": 315,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "RICHMOND",
+      "text": "God and your arms be praised, victorious friends;"
+    },
+    {
+      "number": 2,
+      "speaker": "RICHMOND",
+      "text": "The day is ours, the bloody dog is dead."
+    },
+    {
+      "number": 3,
+      "speaker": "DERBY",
+      "text": "Courageous Richmond, well hast thou acquit thee."
+    },
+    {
+      "number": 4,
+      "speaker": "DERBY",
+      "text": "Lo, here, this long-usurped royalty"
+    },
+    {
+      "number": 5,
+      "speaker": "DERBY",
+      "text": "From the dead temples of this bloody wretch"
+    },
+    {
+      "number": 6,
+      "speaker": "DERBY",
+      "text": "Have I pluck’d off, to grace thy brows withal:"
+    },
+    {
+      "number": 7,
+      "speaker": "DERBY",
+      "text": "Wear it, enjoy it, and make much of it."
+    },
+    {
+      "number": 8,
+      "speaker": "RICHMOND",
+      "text": "Great God of heaven, say Amen to all!"
+    },
+    {
+      "number": 9,
+      "speaker": "RICHMOND",
+      "text": "But, tell me, is young George Stanley living?"
+    },
+    {
+      "number": 10,
+      "speaker": "DERBY",
+      "text": "He is, my lord, and safe in Leicester town;"
+    },
+    {
+      "number": 11,
+      "speaker": "DERBY",
+      "text": "Whither, if it please you, we may now withdraw us."
+    },
+    {
+      "number": 12,
+      "speaker": "RICHMOND",
+      "text": "What men of name are slain on either side?"
+    },
+    {
+      "number": 13,
+      "speaker": "DERBY",
+      "text": "John Duke of Norfolk, Walter Lord Ferrers,"
+    },
+    {
+      "number": 14,
+      "speaker": "DERBY",
+      "text": "Sir Robert Brakenbury, and Sir William Brandon."
+    },
+    {
+      "number": 15,
+      "speaker": "RICHMOND",
+      "text": "Inter their bodies as becomes their births:"
+    },
+    {
+      "number": 16,
+      "speaker": "RICHMOND",
+      "text": "Proclaim a pardon to the soldiers fled"
+    },
+    {
+      "number": 17,
+      "speaker": "RICHMOND",
+      "text": "That in submission will return to us:"
+    },
+    {
+      "number": 18,
+      "speaker": "RICHMOND",
+      "text": "And then, as we have ta’en the sacrament,"
+    },
+    {
+      "number": 19,
+      "speaker": "RICHMOND",
+      "text": "We will unite the white rose and the red:"
+    },
+    {
+      "number": 20,
+      "speaker": "RICHMOND",
+      "text": "Smile heaven upon this fair conjunction,"
+    },
+    {
+      "number": 21,
+      "speaker": "RICHMOND",
+      "text": "That long have frown’d upon their enmity!"
+    },
+    {
+      "number": 22,
+      "speaker": "RICHMOND",
+      "text": "What traitor hears me, and says not amen?"
+    },
+    {
+      "number": 23,
+      "speaker": "RICHMOND",
+      "text": "England hath long been mad, and scarr’d herself;"
+    },
+    {
+      "number": 24,
+      "speaker": "RICHMOND",
+      "text": "The brother blindly shed the brother’s blood,"
+    },
+    {
+      "number": 25,
+      "speaker": "RICHMOND",
+      "text": "The father rashly slaughter’d his own son,"
+    },
+    {
+      "number": 26,
+      "speaker": "RICHMOND",
+      "text": "The son, compell’d, been butcher to the sire:"
+    },
+    {
+      "number": 27,
+      "speaker": "RICHMOND",
+      "text": "All this divided York and Lancaster,"
+    },
+    {
+      "number": 28,
+      "speaker": "RICHMOND",
+      "text": "Divided in their dire division,"
+    },
+    {
+      "number": 29,
+      "speaker": "RICHMOND",
+      "text": "O, now, let Richmond and Elizabeth,"
+    },
+    {
+      "number": 30,
+      "speaker": "RICHMOND",
+      "text": "The true succeeders of each royal house,"
+    },
+    {
+      "number": 31,
+      "speaker": "RICHMOND",
+      "text": "By God’s fair ordinance conjoin together!"
+    },
+    {
+      "number": 32,
+      "speaker": "RICHMOND",
+      "text": "And let their heirs, God, if thy will be so,"
+    },
+    {
+      "number": 33,
+      "speaker": "RICHMOND",
+      "text": "Enrich the time to come with smooth-faced peace,"
+    },
+    {
+      "number": 34,
+      "speaker": "RICHMOND",
+      "text": "With smiling plenty and fair prosperous days!"
+    },
+    {
+      "number": 35,
+      "speaker": "RICHMOND",
+      "text": "Abate the edge of traitors, gracious Lord,"
+    },
+    {
+      "number": 36,
+      "speaker": "RICHMOND",
+      "text": "That would reduce these bloody days again,"
+    },
+    {
+      "number": 37,
+      "speaker": "RICHMOND",
+      "text": "And make poor England weep in streams of blood!"
+    },
+    {
+      "number": 38,
+      "speaker": "RICHMOND",
+      "text": "Let them not live to taste this land’s increase"
+    },
+    {
+      "number": 39,
+      "speaker": "RICHMOND",
+      "text": "That would with treason wound this fair land’s peace!"
+    },
+    {
+      "number": 40,
+      "speaker": "RICHMOND",
+      "text": "Now civil wounds are stopp’d, peace lives again:"
+    },
+    {
+      "number": 41,
+      "speaker": "RICHMOND",
+      "text": "That she may long live here, God say amen!"
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Alarum. Enter Richard and Richmond; they fight. Richard is slain. Retreat and flourish. Reenter Richmond, Derby bearing the crown, with divers other Lords."
+    },
+    {
+      "after_line": 41,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act5_scene5_gloss1",
+      "line": 2,
+      "phrase": "bloody dog is dead",
+      "definition": "Richmond's flat acclamation of Richard's death — 'bloody dog' aligns with Margaret's cur-imagery (4.4)"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss2",
+      "line": 3,
+      "phrase": "acquit thee",
+      "definition": "discharged yourself (honourably)"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss3",
+      "line": 4,
+      "phrase": "long-usurped royalty",
+      "definition": "crown long usurped (by Richard) — Stanley/Derby's phrasing legitimizes the Tudor claim"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss4",
+      "line": 5,
+      "phrase": "dead temples of this bloody wretch",
+      "definition": "the dead brow of this bloody wretch — the crown physically taken from Richard's corpse on the field, per tradition"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss5",
+      "line": 9,
+      "phrase": "young George Stanley living",
+      "definition": "Richmond's first question after victory — the hostage boy Derby left behind at 4.5"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss6",
+      "line": 13,
+      "phrase": "John Duke of Norfolk",
+      "definition": "the highest-ranking casualty on Richard's side — historically killed at Bosworth"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss7",
+      "line": 14,
+      "phrase": "Sir Robert Brakenbury",
+      "definition": "the Tower's constable — killed at Bosworth on Richard's side"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss8",
+      "line": 15,
+      "phrase": "Inter their bodies as becomes their births",
+      "definition": "bury them according to their social rank — Richmond's first act of royal clemency"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss9",
+      "line": 16,
+      "phrase": "Proclaim a pardon",
+      "definition": "announce a pardon — the classic royal act of mercy at the start of a reign"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss10",
+      "line": 18,
+      "phrase": "as we have ta’en the sacrament",
+      "definition": "Richmond had sworn at Rennes Cathedral (1483) to marry Elizabeth of York — a sacramentally-sworn vow"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss11",
+      "line": 19,
+      "phrase": "unite the white rose and the red",
+      "definition": "unite the white rose (York) and the red rose (Lancaster) — the Tudor rose, literally the grafted heraldic emblem of Henry VII's reign; the canonical end-of-play image of reconciliation"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss12",
+      "line": 20,
+      "phrase": "Smile heaven upon this fair conjunction",
+      "definition": "Richmond asks God to bless the dynastic marriage — 'conjunction' = astrological alignment, also marital joining"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss13",
+      "line": 23,
+      "phrase": "England hath long been mad, and scarr’d herself",
+      "definition": "England has been self-wounding in civil madness — Richmond diagnoses the Wars of the Roses as pathology"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss14",
+      "line": 24,
+      "phrase": "brother blindly shed the brother’s blood",
+      "definition": "the civil-war horror: kin-against-kin violence"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss15",
+      "line": 27,
+      "phrase": "divided York and Lancaster",
+      "definition": "the two houses whose feud is the Wars of the Roses — named explicitly at the play's close"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss16",
+      "line": 29,
+      "phrase": "Richmond and Elizabeth",
+      "definition": "Henry VII and Elizabeth of York — married January 1486, founding the Tudor dynasty"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss17",
+      "line": 30,
+      "phrase": "true succeeders of each royal house",
+      "definition": "legitimate heirs of each house — the political theology that legitimizes the union"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss18",
+      "line": 31,
+      "phrase": "By God’s fair ordinance",
+      "definition": "by God's just decree — Richmond frames the marriage as providential"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss19",
+      "line": 33,
+      "phrase": "Enrich the time to come with smooth-faced peace",
+      "definition": "fill the future with placid peace — the Tudor political promise"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss20",
+      "line": 35,
+      "phrase": "Abate the edge of traitors",
+      "definition": "blunt the edge of traitors' weapons — a prayer against future rebellion"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss21",
+      "line": 36,
+      "phrase": "reduce these bloody days again",
+      "definition": "bring back these bloody days — 'reduce' in old sense = lead back"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss22",
+      "line": 38,
+      "phrase": "taste this land’s increase",
+      "definition": "enjoy this land's growth, its prosperity"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss23",
+      "line": 40,
+      "phrase": "civil wounds are stopp’d",
+      "definition": "civil-war wounds are staunched — surgical image for political healing"
+    },
+    {
+      "id": "richard_iii_act5_scene5_gloss24",
+      "line": 41,
+      "phrase": "she may long live here",
+      "definition": "may Peace long live here — Peace personified as female, and as the new Tudor order"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act5_scene5_ann1",
+      "line_start": 1,
+      "line_end": 7,
+      "citation_display": "Richard III 5.5.1–7",
+      "category": "historical",
+      "title": "The crown from the dead temples",
+      "body": "Derby's line — \"Lo, here, this long-usurped royalty / From the dead temples of this bloody wretch / Have I pluck'd off, to grace thy brows withal\" — enacts a detail from the chronicle tradition: at Bosworth, Richard's crown was found on the battlefield (in a hawthorn bush, by later tradition) and placed on Richmond's head by Lord Stanley. The gesture is politically exact. Stanley's son George had been Richard's hostage; Stanley had refused to commit his forces until the battle turned; and now Stanley physically transfers the crown. The theatrical economy of the moment is its meaning: the man whose divided loyalty was the battle's hinge is the one who crowns Henry VII. The play does not comment on this arrangement. It lets us see it.",
+      "sources": [
+        "Polydore Vergil, Anglica Historia (c. 1513)",
+        "Charles Ross, Richard III (1981)",
+        "Michael K. Jones and Malcolm G. Underwood, The King's Mother: Lady Margaret Beaufort, Countess of Richmond and Derby (1992)"
+      ]
+    },
+    {
+      "id": "richard_iii_act5_scene5_ann2",
+      "line_start": 18,
+      "line_end": 41,
+      "citation_display": "Richard III 5.5.18–41",
+      "category": "historical",
+      "title": "The Tudor Myth and Henry VII's thin claim",
+      "body": "Richmond's closing speech declares the coming marriage to Elizabeth of York: \"We will unite the white rose and the red.\" The figure became the defining symbol of the Tudor dynasty — the red-and-white Tudor rose grafted together — and the theological framework for justifying the Tudor arrival is what modern scholarship calls the Tudor Myth. In this framework, the Wars of the Roses were divine punishment for Henry IV's usurpation of Richard II (1399); the Tudor accession was providential restoration. Shakespeare's entire first tetralogy (Henry VI Parts 1–3 and Richard III) is structured by this theology, most thoroughly argued by E. M. W. Tillyard in Shakespeare's History Plays (1944). What the Tudor Myth obscures is the thinness of Henry VII's own claim. Through his mother Margaret Beaufort he descended from John of Gaunt's third (legitimated) marriage via an illegitimate Beaufort line — weaker than Richard's under normal succession rules. Henry's claim at Bosworth was military, not dynastic. The marriage to Elizabeth of York repaired this retroactively. Richmond's speech is Shakespeare's clean summary of a complicated political theology; readers should know it is theology, not simple fact.",
+      "sources": [
+        "E. M. W. Tillyard, Shakespeare's History Plays (1944)",
+        "S. B. Chrimes, Henry VII (1972)",
+        "Phyllis Rackin, Stages of History (1990)",
+        "Polydore Vergil, Anglica Historia (c. 1513)"
+      ]
+    },
+    {
+      "id": "richard_iii_act5_scene5_ann3",
+      "line_start": 23,
+      "line_end": 34,
+      "citation_display": "Richard III 5.5.23–34",
+      "category": "thematic",
+      "title": "\"England hath long been mad\" — the national self-diagnosis",
+      "body": "Richmond's diagnosis — \"England hath long been mad, and scarr'd herself; / The brother blindly shed the brother's blood, / The father rashly slaughter'd his own son, / The son, compell'd, been butcher to the sire\" — is Shakespeare's condensation of the whole first tetralogy into four lines. Every catastrophe named here appeared somewhere in the Henry VI plays: the father-son killings on the battlefield at Towton (3 Henry VI 2.5), the long fratricidal violence of the York-Lancaster cycle. Shakespeare is speaking to the audience in the theatre that has just watched the whole cycle: this is what we have been showing you. Richmond's prayer that his heirs may \"Enrich the time to come with smooth-faced peace\" is both the Tudor theology and the Elizabethan political hope. Elizabeth I was Henry VII's granddaughter, ruling when this play was written (c. 1592–3). Richmond's prayer is, in its way, Shakespeare's political acknowledgement of his own patron-queen.",
+      "sources": [
+        "E. M. W. Tillyard, Shakespeare's History Plays (1944)",
+        "Paola Pugliatti, Shakespeare the Historian (1996)",
+        "Phyllis Rackin, Stages of History (1990)"
+      ]
+    },
+    {
+      "id": "richard_iii_act5_scene5_ann4",
+      "line_start": 35,
+      "line_end": 41,
+      "citation_display": "Richard III 5.5.35–41",
+      "category": "historical",
+      "title": "\"Abate the edge of traitors\" and the Tudor anxiety",
+      "body": "Richmond's closing prayer for the abatement of future traitors — \"Let them not live to taste this land's increase / That would with treason wound this fair land's peace!\" — registers a specifically Tudor anxiety. The dynasty Henry VII founded remained insecure for decades: rebellions in 1486 (Lovell, Stafford), the Simnel affair (1487), the Warbeck affair (1491–99), and continuing plots into Henry VIII's reign made \"treason\" the period's master-category for political disorder. The 1352 Statute of Treasons and the Tudor elaborations of it (especially 1534 under Henry VIII) made treason prosecution the Crown's primary instrument of self-preservation. Shakespeare writing in the 1590s — with the Essex crisis building, the succession question unresolved, and treason trials a regular feature of political life — has Richmond pray for the specific thing his descendants continue to need. The Tudor Myth closes the play; the Tudor security-apparatus is already in force in the prayer's vocabulary.",
+      "sources": [
+        "John Bellamy, The Tudor Law of Treason (1979)",
+        "Wallace MacCaffrey, Elizabeth I (1993)",
+        "Richard Hillman, Shakespearean Subversions (1992)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act5_scene5_q1",
+      "kind": "historical",
+      "prompt": "Richmond's declaration \"We will unite the white rose and the red\" refers to what?",
+      "options": [
+        "A new university college to be founded at Oxford",
+        "The marriage of Richmond (Lancaster) to Elizabeth of York, producing the Tudor rose — the dynasty's defining symbol and the political theology of the \"Tudor Myth\"",
+        "A specific agricultural innovation of the Tudor period",
+        "The union of two knightly orders"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 18,
+      "anchor_line_end": 19
+    },
+    {
+      "id": "richard_iii_act5_scene5_q2",
+      "kind": "historical",
+      "prompt": "What is the historical strength of Henry VII's own dynastic claim?",
+      "options": [
+        "It was legally unimpeachable through the male Lancastrian line",
+        "It was thin — through the illegitimate (later legitimated) Beaufort line, weaker than Richard's under normal succession; his claim at Bosworth was military, and the marriage to Elizabeth of York repaired it retroactively",
+        "He held the throne by papal appointment",
+        "He was Richard III's designated heir"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 29,
+      "anchor_line_end": 31
+    },
+    {
+      "id": "richard_iii_act5_scene5_q3",
+      "kind": "theme",
+      "prompt": "The \"Tudor Myth\" as a political theology argues what?",
+      "options": [
+        "That the Tudors descended directly from King Arthur",
+        "That the Wars of the Roses were divine punishment for Henry IV's usurpation of Richard II (1399), and the Tudor accession was providential restoration — the framework underlying Shakespeare's entire first tetralogy",
+        "That Richmond was born of a virgin",
+        "That Bosworth was fought under a miraculous sign in the sky"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 18,
+      "anchor_line_end": 34
+    },
+    {
+      "id": "richard_iii_act5_scene5_q4",
+      "kind": "structural",
+      "prompt": "Richmond's \"England hath long been mad, and scarr'd herself\" speech condenses what?",
+      "options": [
+        "Current events of the 1590s",
+        "Shakespeare's entire first tetralogy (Henry VI 1–3 and Richard III) into four lines — the cycle of fratricidal violence the audience has just watched",
+        "A single battle between two English armies",
+        "A specific biblical passage on civil strife"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 23,
+      "anchor_line_end": 28
+    },
+    {
+      "id": "richard_iii_act5_scene5_q5",
+      "kind": "historical",
+      "prompt": "Stanley (Derby) physically removes Richard's crown and places it on Richmond's head — a detail drawn from what?",
+      "options": [
+        "Shakespeare's invention for the scene",
+        "The chronicle tradition: at Bosworth, Richard's crown was recovered from the battlefield (by tradition, from a hawthorn bush) and placed on Richmond by Lord Stanley — whose divided loyalty had been the battle's hinge",
+        "A ceremonial rubric from the English coronation liturgy",
+        "A specific vision granted to Richmond in his dream"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 4,
+      "anchor_line_end": 7
+    }
+  ]
+}

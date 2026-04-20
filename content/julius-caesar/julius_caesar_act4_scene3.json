@@ -1,0 +1,2501 @@
+{
+  "section_id": "julius_caesar_act4_scene3",
+  "work_id": "julius-caesar",
+  "sequence": 13,
+  "act": 4,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "Brutus's tent",
+  "line_count": 346,
+  "word_count": 2356,
+  "est_read_minutes": 12,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CASSIUS",
+      "text": "That you have wrong’d me doth appear in this:"
+    },
+    {
+      "number": 2,
+      "speaker": "CASSIUS",
+      "text": "You have condemn’d and noted Lucius Pella"
+    },
+    {
+      "number": 3,
+      "speaker": "CASSIUS",
+      "text": "For taking bribes here of the Sardians;"
+    },
+    {
+      "number": 4,
+      "speaker": "CASSIUS",
+      "text": "Wherein my letters, praying on his side,"
+    },
+    {
+      "number": 5,
+      "speaker": "CASSIUS",
+      "text": "Because I knew the man, were slighted off."
+    },
+    {
+      "number": 6,
+      "speaker": "BRUTUS",
+      "text": "You wrong’d yourself to write in such a case."
+    },
+    {
+      "number": 7,
+      "speaker": "CASSIUS",
+      "text": "In such a time as this it is not meet"
+    },
+    {
+      "number": 8,
+      "speaker": "CASSIUS",
+      "text": "That every nice offence should bear his comment."
+    },
+    {
+      "number": 9,
+      "speaker": "BRUTUS",
+      "text": "Let me tell you, Cassius, you yourself"
+    },
+    {
+      "number": 10,
+      "speaker": "BRUTUS",
+      "text": "Are much condemn’d to have an itching palm;"
+    },
+    {
+      "number": 11,
+      "speaker": "BRUTUS",
+      "text": "To sell and mart your offices for gold"
+    },
+    {
+      "number": 12,
+      "speaker": "BRUTUS",
+      "text": "To undeservers."
+    },
+    {
+      "number": 12,
+      "speaker": "CASSIUS",
+      "text": "I an itching palm!"
+    },
+    {
+      "number": 13,
+      "speaker": "CASSIUS",
+      "text": "You know that you are Brutus that speak this,"
+    },
+    {
+      "number": 14,
+      "speaker": "CASSIUS",
+      "text": "Or, by the gods, this speech were else your last."
+    },
+    {
+      "number": 15,
+      "speaker": "BRUTUS",
+      "text": "The name of Cassius honours this corruption,"
+    },
+    {
+      "number": 16,
+      "speaker": "BRUTUS",
+      "text": "And chastisement doth therefore hide his head."
+    },
+    {
+      "number": 17,
+      "speaker": "CASSIUS",
+      "text": "Chastisement!"
+    },
+    {
+      "number": 18,
+      "speaker": "BRUTUS",
+      "text": "Remember March, the ides of March remember:"
+    },
+    {
+      "number": 19,
+      "speaker": "BRUTUS",
+      "text": "Did not great Julius bleed for justice’ sake?"
+    },
+    {
+      "number": 20,
+      "speaker": "BRUTUS",
+      "text": "What villain touch’d his body, that did stab,"
+    },
+    {
+      "number": 21,
+      "speaker": "BRUTUS",
+      "text": "And not for justice? What, shall one of us,"
+    },
+    {
+      "number": 22,
+      "speaker": "BRUTUS",
+      "text": "That struck the foremost man of all this world"
+    },
+    {
+      "number": 23,
+      "speaker": "BRUTUS",
+      "text": "But for supporting robbers, shall we now"
+    },
+    {
+      "number": 24,
+      "speaker": "BRUTUS",
+      "text": "Contaminate our fingers with base bribes,"
+    },
+    {
+      "number": 25,
+      "speaker": "BRUTUS",
+      "text": "And sell the mighty space of our large honours"
+    },
+    {
+      "number": 26,
+      "speaker": "BRUTUS",
+      "text": "For so much trash as may be grasped thus?"
+    },
+    {
+      "number": 27,
+      "speaker": "BRUTUS",
+      "text": "I had rather be a dog, and bay the moon,"
+    },
+    {
+      "number": 28,
+      "speaker": "BRUTUS",
+      "text": "Than such a Roman."
+    },
+    {
+      "number": 28,
+      "speaker": "CASSIUS",
+      "text": "Brutus, bay not me;"
+    },
+    {
+      "number": 29,
+      "speaker": "CASSIUS",
+      "text": "I’ll not endure it: you forget yourself,"
+    },
+    {
+      "number": 30,
+      "speaker": "CASSIUS",
+      "text": "To hedge me in; I am a soldier, I,"
+    },
+    {
+      "number": 31,
+      "speaker": "CASSIUS",
+      "text": "Older in practice, abler than yourself"
+    },
+    {
+      "number": 32,
+      "speaker": "CASSIUS",
+      "text": "To make conditions."
+    },
+    {
+      "number": 32,
+      "speaker": "BRUTUS",
+      "text": "Go to; you are not, Cassius."
+    },
+    {
+      "number": 33,
+      "speaker": "CASSIUS",
+      "text": "I am."
+    },
+    {
+      "number": 33,
+      "speaker": "BRUTUS",
+      "text": "I say you are not."
+    },
+    {
+      "number": 34,
+      "speaker": "CASSIUS",
+      "text": "Urge me no more, I shall forget myself;"
+    },
+    {
+      "number": 35,
+      "speaker": "CASSIUS",
+      "text": "Have mind upon your health, tempt me no further."
+    },
+    {
+      "number": 36,
+      "speaker": "BRUTUS",
+      "text": "Away, slight man!"
+    },
+    {
+      "number": 36,
+      "speaker": "CASSIUS",
+      "text": "Is’t possible?"
+    },
+    {
+      "number": 37,
+      "speaker": "BRUTUS",
+      "text": "Hear me, for I will speak."
+    },
+    {
+      "number": 38,
+      "speaker": "BRUTUS",
+      "text": "Must I give way and room to your rash choler?"
+    },
+    {
+      "number": 39,
+      "speaker": "BRUTUS",
+      "text": "Shall I be frighted when a madman stares?"
+    },
+    {
+      "number": 40,
+      "speaker": "CASSIUS",
+      "text": "O ye gods, ye gods! must I endure all this?"
+    },
+    {
+      "number": 41,
+      "speaker": "BRUTUS",
+      "text": "All this! ay, more: fret till your proud heart break;"
+    },
+    {
+      "number": 42,
+      "speaker": "BRUTUS",
+      "text": "Go show your slaves how choleric you are,"
+    },
+    {
+      "number": 43,
+      "speaker": "BRUTUS",
+      "text": "And make your bondmen tremble. Must I budge?"
+    },
+    {
+      "number": 44,
+      "speaker": "BRUTUS",
+      "text": "Must I observe you? must I stand and crouch"
+    },
+    {
+      "number": 45,
+      "speaker": "BRUTUS",
+      "text": "Under your testy humour? By the gods,"
+    },
+    {
+      "number": 46,
+      "speaker": "BRUTUS",
+      "text": "You shall digest the venom of your spleen,"
+    },
+    {
+      "number": 47,
+      "speaker": "BRUTUS",
+      "text": "Though it do split you; for, from this day forth,"
+    },
+    {
+      "number": 48,
+      "speaker": "BRUTUS",
+      "text": "I’ll use you for my mirth, yea, for my laughter,"
+    },
+    {
+      "number": 49,
+      "speaker": "BRUTUS",
+      "text": "When you are waspish."
+    },
+    {
+      "number": 49,
+      "speaker": "CASSIUS",
+      "text": "Is it come to this?"
+    },
+    {
+      "number": 50,
+      "speaker": "BRUTUS",
+      "text": "You say you are a better soldier:"
+    },
+    {
+      "number": 51,
+      "speaker": "BRUTUS",
+      "text": "Let it appear so; make your vaunting true,"
+    },
+    {
+      "number": 52,
+      "speaker": "BRUTUS",
+      "text": "And it shall please me well: for mine own part,"
+    },
+    {
+      "number": 53,
+      "speaker": "BRUTUS",
+      "text": "I shall be glad to learn of noble men."
+    },
+    {
+      "number": 54,
+      "speaker": "CASSIUS",
+      "text": "You wrong me every way; you wrong me, Brutus;"
+    },
+    {
+      "number": 55,
+      "speaker": "CASSIUS",
+      "text": "I said, an elder soldier, not a better:"
+    },
+    {
+      "number": 56,
+      "speaker": "CASSIUS",
+      "text": "Did I say “better”?"
+    },
+    {
+      "number": 56,
+      "speaker": "BRUTUS",
+      "text": "If you did, I care not."
+    },
+    {
+      "number": 57,
+      "speaker": "CASSIUS",
+      "text": "When Caesar lived, he durst not thus have moved me."
+    },
+    {
+      "number": 58,
+      "speaker": "BRUTUS",
+      "text": "Peace, peace! you durst not so have tempted him."
+    },
+    {
+      "number": 59,
+      "speaker": "CASSIUS",
+      "text": "I durst not!"
+    },
+    {
+      "number": 59,
+      "speaker": "BRUTUS",
+      "text": "No."
+    },
+    {
+      "number": 60,
+      "speaker": "CASSIUS",
+      "text": "What, durst not tempt him!"
+    },
+    {
+      "number": 60,
+      "speaker": "BRUTUS",
+      "text": "For your life you durst not."
+    },
+    {
+      "number": 61,
+      "speaker": "CASSIUS",
+      "text": "Do not presume too much upon my love;"
+    },
+    {
+      "number": 62,
+      "speaker": "CASSIUS",
+      "text": "I may do that I shall be sorry for."
+    },
+    {
+      "number": 63,
+      "speaker": "BRUTUS",
+      "text": "You have done that you should be sorry for."
+    },
+    {
+      "number": 64,
+      "speaker": "BRUTUS",
+      "text": "There is no terror, Cassius, in your threats,"
+    },
+    {
+      "number": 65,
+      "speaker": "BRUTUS",
+      "text": "For I am arm’d so strong in honesty"
+    },
+    {
+      "number": 66,
+      "speaker": "BRUTUS",
+      "text": "That they pass by me as the idle wind,"
+    },
+    {
+      "number": 67,
+      "speaker": "BRUTUS",
+      "text": "Which I respect not. I did send to you"
+    },
+    {
+      "number": 68,
+      "speaker": "BRUTUS",
+      "text": "For certain sums of gold, which you denied me:"
+    },
+    {
+      "number": 69,
+      "speaker": "BRUTUS",
+      "text": "For I can raise no money by vile means:"
+    },
+    {
+      "number": 70,
+      "speaker": "BRUTUS",
+      "text": "By heaven, I had rather coin my heart,"
+    },
+    {
+      "number": 71,
+      "speaker": "BRUTUS",
+      "text": "And drop my blood for drachmas, than to wring"
+    },
+    {
+      "number": 72,
+      "speaker": "BRUTUS",
+      "text": "From the hard hands of peasants their vile trash"
+    },
+    {
+      "number": 73,
+      "speaker": "BRUTUS",
+      "text": "By any indirection: I did send"
+    },
+    {
+      "number": 74,
+      "speaker": "BRUTUS",
+      "text": "To you for gold to pay my legions,"
+    },
+    {
+      "number": 75,
+      "speaker": "BRUTUS",
+      "text": "Which you denied me: was that done like Cassius?"
+    },
+    {
+      "number": 76,
+      "speaker": "BRUTUS",
+      "text": "Should I have answer’d Caius Cassius so?"
+    },
+    {
+      "number": 77,
+      "speaker": "BRUTUS",
+      "text": "When Marcus Brutus grows so covetous,"
+    },
+    {
+      "number": 78,
+      "speaker": "BRUTUS",
+      "text": "To lock such rascal counters from his friends,"
+    },
+    {
+      "number": 79,
+      "speaker": "BRUTUS",
+      "text": "Be ready, gods, with all your thunderbolts;"
+    },
+    {
+      "number": 80,
+      "speaker": "BRUTUS",
+      "text": "Dash him to pieces!"
+    },
+    {
+      "number": 80,
+      "speaker": "CASSIUS",
+      "text": "I denied you not."
+    },
+    {
+      "number": 81,
+      "speaker": "BRUTUS",
+      "text": "You did."
+    },
+    {
+      "number": 82,
+      "speaker": "CASSIUS",
+      "text": "I did not: he was but a fool that brought"
+    },
+    {
+      "number": 83,
+      "speaker": "CASSIUS",
+      "text": "My answer back. Brutus hath rived my heart:"
+    },
+    {
+      "number": 84,
+      "speaker": "CASSIUS",
+      "text": "A friend should bear his friend’s infirmities,"
+    },
+    {
+      "number": 85,
+      "speaker": "CASSIUS",
+      "text": "But Brutus makes mine greater than they are."
+    },
+    {
+      "number": 86,
+      "speaker": "BRUTUS",
+      "text": "I do not, till you practise them on me."
+    },
+    {
+      "number": 87,
+      "speaker": "CASSIUS",
+      "text": "You love me not."
+    },
+    {
+      "number": 87,
+      "speaker": "BRUTUS",
+      "text": "I do not like your faults."
+    },
+    {
+      "number": 88,
+      "speaker": "CASSIUS",
+      "text": "A friendly eye could never see such faults."
+    },
+    {
+      "number": 89,
+      "speaker": "BRUTUS",
+      "text": "A flatterer’s would not, though they do appear"
+    },
+    {
+      "number": 90,
+      "speaker": "BRUTUS",
+      "text": "As huge as high Olympus."
+    },
+    {
+      "number": 90,
+      "speaker": "CASSIUS",
+      "text": "Come, Antony, and young Octavius, come,"
+    },
+    {
+      "number": 91,
+      "speaker": "CASSIUS",
+      "text": "Revenge yourselves alone on Cassius,"
+    },
+    {
+      "number": 92,
+      "speaker": "CASSIUS",
+      "text": "For Cassius is aweary of the world;"
+    },
+    {
+      "number": 93,
+      "speaker": "CASSIUS",
+      "text": "Hated by one he loves; braved by his brother;"
+    },
+    {
+      "number": 94,
+      "speaker": "CASSIUS",
+      "text": "Check’d like a bondman; all his faults observed,"
+    },
+    {
+      "number": 95,
+      "speaker": "CASSIUS",
+      "text": "Set in a note-book, learn’d, and conn’d by rote,"
+    },
+    {
+      "number": 96,
+      "speaker": "CASSIUS",
+      "text": "To cast into my teeth. O, I could weep"
+    },
+    {
+      "number": 97,
+      "speaker": "CASSIUS",
+      "text": "My spirit from mine eyes! There is my dagger,"
+    },
+    {
+      "number": 98,
+      "speaker": "CASSIUS",
+      "text": "And here my naked breast; within, a heart"
+    },
+    {
+      "number": 99,
+      "speaker": "CASSIUS",
+      "text": "Dearer than Plutus’ mine, richer than gold:"
+    },
+    {
+      "number": 100,
+      "speaker": "CASSIUS",
+      "text": "If that thou be’st a Roman, take it forth;"
+    },
+    {
+      "number": 101,
+      "speaker": "CASSIUS",
+      "text": "I, that denied thee gold, will give my heart:"
+    },
+    {
+      "number": 102,
+      "speaker": "CASSIUS",
+      "text": "Strike, as thou didst at Caesar; for, I know,"
+    },
+    {
+      "number": 103,
+      "speaker": "CASSIUS",
+      "text": "When thou didst hate him worst, thou lovedst him better"
+    },
+    {
+      "number": 104,
+      "speaker": "CASSIUS",
+      "text": "Than ever thou lovedst Cassius."
+    },
+    {
+      "number": 104,
+      "speaker": "BRUTUS",
+      "text": "Sheathe your dagger:"
+    },
+    {
+      "number": 105,
+      "speaker": "BRUTUS",
+      "text": "Be angry when you will, it shall have scope;"
+    },
+    {
+      "number": 106,
+      "speaker": "BRUTUS",
+      "text": "Do what you will, dishonour shall be humour."
+    },
+    {
+      "number": 107,
+      "speaker": "BRUTUS",
+      "text": "O Cassius, you are yoked with a lamb"
+    },
+    {
+      "number": 108,
+      "speaker": "BRUTUS",
+      "text": "That carries anger as the flint bears fire;"
+    },
+    {
+      "number": 109,
+      "speaker": "BRUTUS",
+      "text": "Who, much enforced, shows a hasty spark,"
+    },
+    {
+      "number": 110,
+      "speaker": "BRUTUS",
+      "text": "And straight is cold again."
+    },
+    {
+      "number": 110,
+      "speaker": "CASSIUS",
+      "text": "Hath Cassius lived"
+    },
+    {
+      "number": 111,
+      "speaker": "CASSIUS",
+      "text": "To be but mirth and laughter to his Brutus,"
+    },
+    {
+      "number": 112,
+      "speaker": "CASSIUS",
+      "text": "When grief, and blood ill-temper’d, vexeth him?"
+    },
+    {
+      "number": 113,
+      "speaker": "BRUTUS",
+      "text": "When I spoke that, I was ill-temper’d too."
+    },
+    {
+      "number": 114,
+      "speaker": "CASSIUS",
+      "text": "Do you confess so much? Give me your hand."
+    },
+    {
+      "number": 115,
+      "speaker": "BRUTUS",
+      "text": "And my heart too."
+    },
+    {
+      "number": 115,
+      "speaker": "CASSIUS",
+      "text": "O Brutus!"
+    },
+    {
+      "number": 116,
+      "speaker": "BRUTUS",
+      "text": "What’s the matter?"
+    },
+    {
+      "number": 117,
+      "speaker": "CASSIUS",
+      "text": "Have not you love enough to bear with me,"
+    },
+    {
+      "number": 118,
+      "speaker": "CASSIUS",
+      "text": "When that rash humour which my mother gave me"
+    },
+    {
+      "number": 119,
+      "speaker": "CASSIUS",
+      "text": "Makes me forgetful?"
+    },
+    {
+      "number": 119,
+      "speaker": "BRUTUS",
+      "text": "Yes, Cassius; and, from henceforth,"
+    },
+    {
+      "number": 120,
+      "speaker": "BRUTUS",
+      "text": "When you are over-earnest with your Brutus,"
+    },
+    {
+      "number": 121,
+      "speaker": "BRUTUS",
+      "text": "He’ll think your mother chides, and leave you so."
+    },
+    {
+      "number": 122,
+      "speaker": "POET",
+      "text": "Let me go in to see the generals;"
+    },
+    {
+      "number": 123,
+      "speaker": "POET",
+      "text": "There is some grudge between ’em, ’tis not meet"
+    },
+    {
+      "number": 124,
+      "speaker": "POET",
+      "text": "They be alone."
+    },
+    {
+      "number": 124,
+      "speaker": "LUCILIUS",
+      "text": "You shall not come to them."
+    },
+    {
+      "number": 125,
+      "speaker": "POET",
+      "text": "Nothing but death shall stay me."
+    },
+    {
+      "number": 125,
+      "speaker": "CASSIUS",
+      "text": "How now! what’s the matter?"
+    },
+    {
+      "number": 126,
+      "speaker": "POET",
+      "text": "For shame, you generals! what do you mean?"
+    },
+    {
+      "number": 127,
+      "speaker": "POET",
+      "text": "Love, and be friends, as two such men should be;"
+    },
+    {
+      "number": 128,
+      "speaker": "POET",
+      "text": "For I have seen more years, I’m sure, than ye."
+    },
+    {
+      "number": 129,
+      "speaker": "CASSIUS",
+      "text": "Ha, ha! how vilely doth this cynic rhyme!"
+    },
+    {
+      "number": 130,
+      "speaker": "BRUTUS",
+      "text": "Get you hence, sirrah; saucy fellow, hence!"
+    },
+    {
+      "number": 131,
+      "speaker": "CASSIUS",
+      "text": "Bear with him, Brutus; ’tis his fashion."
+    },
+    {
+      "number": 132,
+      "speaker": "BRUTUS",
+      "text": "I’ll know his humour, when he knows his time:"
+    },
+    {
+      "number": 133,
+      "speaker": "BRUTUS",
+      "text": "What should the wars do with these jigging fools?"
+    },
+    {
+      "number": 134,
+      "speaker": "BRUTUS",
+      "text": "Companion, hence!"
+    },
+    {
+      "number": 134,
+      "speaker": "CASSIUS",
+      "text": "Away, away, be gone!"
+    },
+    {
+      "number": 135,
+      "speaker": "BRUTUS",
+      "text": "Lucilius and Titinius, bid the commanders"
+    },
+    {
+      "number": 136,
+      "speaker": "BRUTUS",
+      "text": "Prepare to lodge their companies to-night."
+    },
+    {
+      "number": 137,
+      "speaker": "CASSIUS",
+      "text": "And come yourselves, and bring Messala with you"
+    },
+    {
+      "number": 138,
+      "speaker": "CASSIUS",
+      "text": "Immediately to us."
+    },
+    {
+      "number": 138,
+      "speaker": "BRUTUS",
+      "text": "Lucius, a bowl of wine!"
+    },
+    {
+      "number": 139,
+      "speaker": "CASSIUS",
+      "text": "I did not think you could have been so angry."
+    },
+    {
+      "number": 140,
+      "speaker": "BRUTUS",
+      "text": "O Cassius, I am sick of many griefs."
+    },
+    {
+      "number": 141,
+      "speaker": "CASSIUS",
+      "text": "Of your philosophy you make no use,"
+    },
+    {
+      "number": 142,
+      "speaker": "CASSIUS",
+      "text": "If you give place to accidental evils."
+    },
+    {
+      "number": 143,
+      "speaker": "BRUTUS",
+      "text": "No man bears sorrow better. Portia is dead."
+    },
+    {
+      "number": 144,
+      "speaker": "CASSIUS",
+      "text": "Ha! Portia!"
+    },
+    {
+      "number": 144,
+      "speaker": "BRUTUS",
+      "text": "She is dead."
+    },
+    {
+      "number": 145,
+      "speaker": "CASSIUS",
+      "text": "How ’scaped I killing when I cross’d you so?"
+    },
+    {
+      "number": 146,
+      "speaker": "CASSIUS",
+      "text": "O insupportable and touching loss!"
+    },
+    {
+      "number": 147,
+      "speaker": "CASSIUS",
+      "text": "Upon what sickness?"
+    },
+    {
+      "number": 147,
+      "speaker": "BRUTUS",
+      "text": "Impatient of my absence,"
+    },
+    {
+      "number": 148,
+      "speaker": "BRUTUS",
+      "text": "And grief that young Octavius with Mark Antony"
+    },
+    {
+      "number": 149,
+      "speaker": "BRUTUS",
+      "text": "Have made themselves so strong:—for with her death"
+    },
+    {
+      "number": 150,
+      "speaker": "BRUTUS",
+      "text": "That tidings came;—with this she fell distract,"
+    },
+    {
+      "number": 151,
+      "speaker": "BRUTUS",
+      "text": "And, her attendants absent, swallow’d fire."
+    },
+    {
+      "number": 151,
+      "speaker": "CASSIUS",
+      "text": "And died so?"
+    },
+    {
+      "number": 152,
+      "speaker": "BRUTUS",
+      "text": "Even so."
+    },
+    {
+      "number": 152,
+      "speaker": "CASSIUS",
+      "text": "O ye immortal gods!"
+    },
+    {
+      "number": 153,
+      "speaker": "BRUTUS",
+      "text": "Speak no more of her. Give me a bowl of wine."
+    },
+    {
+      "number": 154,
+      "speaker": "BRUTUS",
+      "text": "In this I bury all unkindness, Cassius."
+    },
+    {
+      "number": 155,
+      "speaker": "CASSIUS",
+      "text": "My heart is thirsty for that noble pledge."
+    },
+    {
+      "number": 156,
+      "speaker": "CASSIUS",
+      "text": "Fill, Lucius, till the wine o’erswell the cup;"
+    },
+    {
+      "number": 157,
+      "speaker": "CASSIUS",
+      "text": "I cannot drink too much of Brutus’ love."
+    },
+    {
+      "number": 158,
+      "speaker": "BRUTUS",
+      "text": "Come in, Titinius!"
+    },
+    {
+      "number": 159,
+      "speaker": "BRUTUS",
+      "text": "Welcome, good Messala."
+    },
+    {
+      "number": 160,
+      "speaker": "BRUTUS",
+      "text": "Now sit we close about this taper here,"
+    },
+    {
+      "number": 161,
+      "speaker": "BRUTUS",
+      "text": "And call in question our necessities."
+    },
+    {
+      "number": 161,
+      "speaker": "CASSIUS",
+      "text": "Portia, art thou gone?"
+    },
+    {
+      "number": 162,
+      "speaker": "BRUTUS",
+      "text": "No more, I pray you."
+    },
+    {
+      "number": 163,
+      "speaker": "BRUTUS",
+      "text": "Messala, I have here received letters,"
+    },
+    {
+      "number": 164,
+      "speaker": "BRUTUS",
+      "text": "That young Octavius and Mark Antony"
+    },
+    {
+      "number": 165,
+      "speaker": "BRUTUS",
+      "text": "Come down upon us with a mighty power,"
+    },
+    {
+      "number": 166,
+      "speaker": "BRUTUS",
+      "text": "Bending their expedition toward Philippi."
+    },
+    {
+      "number": 167,
+      "speaker": "MESSALA",
+      "text": "Myself have letters of the self-same tenor."
+    },
+    {
+      "number": 168,
+      "speaker": "BRUTUS",
+      "text": "With what addition?"
+    },
+    {
+      "number": 169,
+      "speaker": "MESSALA",
+      "text": "That by proscription and bills of outlawry,"
+    },
+    {
+      "number": 170,
+      "speaker": "MESSALA",
+      "text": "Octavius, Antony, and Lepidus,"
+    },
+    {
+      "number": 171,
+      "speaker": "MESSALA",
+      "text": "Have put to death an hundred senators."
+    },
+    {
+      "number": 172,
+      "speaker": "BRUTUS",
+      "text": "Therein our letters do not well agree;"
+    },
+    {
+      "number": 173,
+      "speaker": "BRUTUS",
+      "text": "Mine speak of seventy senators that died"
+    },
+    {
+      "number": 174,
+      "speaker": "BRUTUS",
+      "text": "By their proscriptions, Cicero being one."
+    },
+    {
+      "number": 174,
+      "speaker": "CASSIUS",
+      "text": "Cicero one!"
+    },
+    {
+      "number": 175,
+      "speaker": "MESSALA",
+      "text": "Cicero is dead,"
+    },
+    {
+      "number": 176,
+      "speaker": "MESSALA",
+      "text": "And by that order of proscription."
+    },
+    {
+      "number": 177,
+      "speaker": "MESSALA",
+      "text": "Had you your letters from your wife, my lord?"
+    },
+    {
+      "number": 178,
+      "speaker": "BRUTUS",
+      "text": "No, Messala."
+    },
+    {
+      "number": 179,
+      "speaker": "MESSALA",
+      "text": "Nor nothing in your letters writ of her?"
+    },
+    {
+      "number": 180,
+      "speaker": "BRUTUS",
+      "text": "Nothing, Messala."
+    },
+    {
+      "number": 180,
+      "speaker": "MESSALA",
+      "text": "That, methinks, is strange."
+    },
+    {
+      "number": 181,
+      "speaker": "BRUTUS",
+      "text": "Why ask you? hear you aught of her in yours?"
+    },
+    {
+      "number": 182,
+      "speaker": "MESSALA",
+      "text": "No, my lord."
+    },
+    {
+      "number": 183,
+      "speaker": "BRUTUS",
+      "text": "Now, as you are a Roman, tell me true."
+    },
+    {
+      "number": 184,
+      "speaker": "MESSALA",
+      "text": "Then like a Roman bear the truth I tell:"
+    },
+    {
+      "number": 185,
+      "speaker": "MESSALA",
+      "text": "For certain she is dead, and by strange manner."
+    },
+    {
+      "number": 186,
+      "speaker": "BRUTUS",
+      "text": "Why, farewell, Portia. We must die, Messala:"
+    },
+    {
+      "number": 187,
+      "speaker": "BRUTUS",
+      "text": "With meditating that she must die once,"
+    },
+    {
+      "number": 188,
+      "speaker": "BRUTUS",
+      "text": "I have the patience to endure it now."
+    },
+    {
+      "number": 189,
+      "speaker": "MESSALA",
+      "text": "Even so great men great losses should endure."
+    },
+    {
+      "number": 190,
+      "speaker": "CASSIUS",
+      "text": "I have as much of this in art as you,"
+    },
+    {
+      "number": 191,
+      "speaker": "CASSIUS",
+      "text": "But yet my nature could not bear it so."
+    },
+    {
+      "number": 192,
+      "speaker": "BRUTUS",
+      "text": "Well, to our work alive. What do you think"
+    },
+    {
+      "number": 193,
+      "speaker": "BRUTUS",
+      "text": "Of marching to Philippi presently?"
+    },
+    {
+      "number": 193,
+      "speaker": "CASSIUS",
+      "text": "I do not think it good."
+    },
+    {
+      "number": 194,
+      "speaker": "BRUTUS",
+      "text": "Your reason?"
+    },
+    {
+      "number": 194,
+      "speaker": "CASSIUS",
+      "text": "This it is:"
+    },
+    {
+      "number": 195,
+      "speaker": "CASSIUS",
+      "text": "’Tis better that the enemy seek us:"
+    },
+    {
+      "number": 196,
+      "speaker": "CASSIUS",
+      "text": "So shall he waste his means, weary his soldiers,"
+    },
+    {
+      "number": 197,
+      "speaker": "CASSIUS",
+      "text": "Doing himself offence; whilst we, lying still,"
+    },
+    {
+      "number": 198,
+      "speaker": "CASSIUS",
+      "text": "Are full of rest, defense, and nimbleness."
+    },
+    {
+      "number": 199,
+      "speaker": "BRUTUS",
+      "text": "Good reasons must, of force, give place to better."
+    },
+    {
+      "number": 200,
+      "speaker": "BRUTUS",
+      "text": "The people ’twixt Philippi and this ground"
+    },
+    {
+      "number": 201,
+      "speaker": "BRUTUS",
+      "text": "Do stand but in a forced affection;"
+    },
+    {
+      "number": 202,
+      "speaker": "BRUTUS",
+      "text": "For they have grudged us contribution:"
+    },
+    {
+      "number": 203,
+      "speaker": "BRUTUS",
+      "text": "The enemy, marching along by them,"
+    },
+    {
+      "number": 204,
+      "speaker": "BRUTUS",
+      "text": "By them shall make a fuller number up,"
+    },
+    {
+      "number": 205,
+      "speaker": "BRUTUS",
+      "text": "Come on refresh’d, new-added, and encouraged;"
+    },
+    {
+      "number": 206,
+      "speaker": "BRUTUS",
+      "text": "From which advantage shall we cut him off,"
+    },
+    {
+      "number": 207,
+      "speaker": "BRUTUS",
+      "text": "If at Philippi we do face him there,"
+    },
+    {
+      "number": 208,
+      "speaker": "BRUTUS",
+      "text": "These people at our back."
+    },
+    {
+      "number": 208,
+      "speaker": "CASSIUS",
+      "text": "Hear me, good brother."
+    },
+    {
+      "number": 209,
+      "speaker": "BRUTUS",
+      "text": "Under your pardon. You must note beside,"
+    },
+    {
+      "number": 210,
+      "speaker": "BRUTUS",
+      "text": "That we have tried the utmost of our friends,"
+    },
+    {
+      "number": 211,
+      "speaker": "BRUTUS",
+      "text": "Our legions are brim-full, our cause is ripe:"
+    },
+    {
+      "number": 212,
+      "speaker": "BRUTUS",
+      "text": "The enemy increaseth every day;"
+    },
+    {
+      "number": 213,
+      "speaker": "BRUTUS",
+      "text": "We, at the height, are ready to decline."
+    },
+    {
+      "number": 214,
+      "speaker": "BRUTUS",
+      "text": "There is a tide in the affairs of men,"
+    },
+    {
+      "number": 215,
+      "speaker": "BRUTUS",
+      "text": "Which, taken at the flood, leads on to fortune;"
+    },
+    {
+      "number": 216,
+      "speaker": "BRUTUS",
+      "text": "Omitted, all the voyage of their life"
+    },
+    {
+      "number": 217,
+      "speaker": "BRUTUS",
+      "text": "Is bound in shallows and in miseries."
+    },
+    {
+      "number": 218,
+      "speaker": "BRUTUS",
+      "text": "On such a full sea are we now afloat;"
+    },
+    {
+      "number": 219,
+      "speaker": "BRUTUS",
+      "text": "And we must take the current when it serves,"
+    },
+    {
+      "number": 220,
+      "speaker": "BRUTUS",
+      "text": "Or lose our ventures."
+    },
+    {
+      "number": 220,
+      "speaker": "CASSIUS",
+      "text": "Then, with your will, go on;"
+    },
+    {
+      "number": 221,
+      "speaker": "CASSIUS",
+      "text": "We’ll along ourselves, and meet them at Philippi."
+    },
+    {
+      "number": 222,
+      "speaker": "BRUTUS",
+      "text": "The deep of night is crept upon our talk,"
+    },
+    {
+      "number": 223,
+      "speaker": "BRUTUS",
+      "text": "And nature must obey necessity;"
+    },
+    {
+      "number": 224,
+      "speaker": "BRUTUS",
+      "text": "Which we will niggard with a little rest."
+    },
+    {
+      "number": 225,
+      "speaker": "BRUTUS",
+      "text": "There is no more to say?"
+    },
+    {
+      "number": 225,
+      "speaker": "CASSIUS",
+      "text": "No more. Good night:"
+    },
+    {
+      "number": 226,
+      "speaker": "CASSIUS",
+      "text": "Early to-morrow will we rise, and hence."
+    },
+    {
+      "number": 227,
+      "speaker": "BRUTUS",
+      "text": "Lucius! My gown. Farewell, good Messala:"
+    },
+    {
+      "number": 228,
+      "speaker": "BRUTUS",
+      "text": "Good night, Titinius. Noble, noble Cassius,"
+    },
+    {
+      "number": 229,
+      "speaker": "BRUTUS",
+      "text": "Good night, and good repose."
+    },
+    {
+      "number": 229,
+      "speaker": "CASSIUS",
+      "text": "O my dear brother!"
+    },
+    {
+      "number": 230,
+      "speaker": "CASSIUS",
+      "text": "This was an ill beginning of the night:"
+    },
+    {
+      "number": 231,
+      "speaker": "CASSIUS",
+      "text": "Never come such division ’tween our souls!"
+    },
+    {
+      "number": 232,
+      "speaker": "CASSIUS",
+      "text": "Let it not, Brutus."
+    },
+    {
+      "number": 232,
+      "speaker": "BRUTUS",
+      "text": "Everything is well."
+    },
+    {
+      "number": 233,
+      "speaker": "CASSIUS",
+      "text": "Good night, my lord."
+    },
+    {
+      "number": 233,
+      "speaker": "BRUTUS",
+      "text": "Good night, good brother."
+    },
+    {
+      "number": 234,
+      "speaker": "TITINIUS AND MESSALA",
+      "text": "Good night, Lord Brutus."
+    },
+    {
+      "number": 234,
+      "speaker": "BRUTUS",
+      "text": "Farewell, everyone."
+    },
+    {
+      "number": 235,
+      "speaker": "BRUTUS",
+      "text": "Give me the gown. Where is thy instrument?"
+    },
+    {
+      "number": 236,
+      "speaker": "LUCIUS",
+      "text": "Here in the tent."
+    },
+    {
+      "number": 236,
+      "speaker": "BRUTUS",
+      "text": "What, thou speak’st drowsily?"
+    },
+    {
+      "number": 237,
+      "speaker": "BRUTUS",
+      "text": "Poor knave, I blame thee not; thou art o’erwatch’d."
+    },
+    {
+      "number": 238,
+      "speaker": "BRUTUS",
+      "text": "Call Claudius and some other of my men;"
+    },
+    {
+      "number": 239,
+      "speaker": "BRUTUS",
+      "text": "I’ll have them sleep on cushions in my tent."
+    },
+    {
+      "number": 240,
+      "speaker": "LUCIUS",
+      "text": "Varro and Claudius!"
+    },
+    {
+      "number": 240,
+      "speaker": "VARRO",
+      "text": "Calls my lord?"
+    },
+    {
+      "number": 241,
+      "speaker": "BRUTUS",
+      "text": "I pray you, sirs, lie in my tent and sleep;"
+    },
+    {
+      "number": 242,
+      "speaker": "BRUTUS",
+      "text": "It may be I shall raise you by and by"
+    },
+    {
+      "number": 243,
+      "speaker": "BRUTUS",
+      "text": "On business to my brother Cassius."
+    },
+    {
+      "number": 244,
+      "speaker": "VARRO",
+      "text": "So please you, we will stand and watch your pleasure."
+    },
+    {
+      "number": 245,
+      "speaker": "BRUTUS",
+      "text": "I will not have it so: lie down, good sirs;"
+    },
+    {
+      "number": 246,
+      "speaker": "BRUTUS",
+      "text": "It may be I shall otherwise bethink me."
+    },
+    {
+      "number": 247,
+      "speaker": "BRUTUS",
+      "text": "Look, Lucius, here’s the book I sought for so;"
+    },
+    {
+      "number": 248,
+      "speaker": "BRUTUS",
+      "text": "I put it in the pocket of my gown. Varro and Claudius lie down."
+    },
+    {
+      "number": 249,
+      "speaker": "LUCIUS",
+      "text": "I was sure your lordship did not give it me."
+    },
+    {
+      "number": 250,
+      "speaker": "BRUTUS",
+      "text": "Bear with me, good boy, I am much forgetful."
+    },
+    {
+      "number": 251,
+      "speaker": "BRUTUS",
+      "text": "Canst thou hold up thy heavy eyes awhile,"
+    },
+    {
+      "number": 252,
+      "speaker": "BRUTUS",
+      "text": "And touch thy instrument a strain or two?"
+    },
+    {
+      "number": 253,
+      "speaker": "LUCIUS",
+      "text": "Ay, my lord, an’t please you."
+    },
+    {
+      "number": 253,
+      "speaker": "BRUTUS",
+      "text": "It does, my boy:"
+    },
+    {
+      "number": 254,
+      "speaker": "BRUTUS",
+      "text": "I trouble thee too much, but thou art willing."
+    },
+    {
+      "number": 255,
+      "speaker": "LUCIUS",
+      "text": "It is my duty, sir."
+    },
+    {
+      "number": 256,
+      "speaker": "BRUTUS",
+      "text": "I should not urge thy duty past thy might;"
+    },
+    {
+      "number": 257,
+      "speaker": "BRUTUS",
+      "text": "I know young bloods look for a time of rest."
+    },
+    {
+      "number": 258,
+      "speaker": "LUCIUS",
+      "text": "I have slept, my lord, already."
+    },
+    {
+      "number": 259,
+      "speaker": "BRUTUS",
+      "text": "It was well done; and thou shalt sleep again;"
+    },
+    {
+      "number": 260,
+      "speaker": "BRUTUS",
+      "text": "I will not hold thee long: if I do live,"
+    },
+    {
+      "number": 261,
+      "speaker": "BRUTUS",
+      "text": "I will be good to thee."
+    },
+    {
+      "number": 262,
+      "speaker": "BRUTUS",
+      "text": "This is a sleepy tune. O murderous slumber,"
+    },
+    {
+      "number": 263,
+      "speaker": "BRUTUS",
+      "text": "Lay’st thou thy leaden mace upon my boy,"
+    },
+    {
+      "number": 264,
+      "speaker": "BRUTUS",
+      "text": "That plays thee music? Gentle knave, good night;"
+    },
+    {
+      "number": 265,
+      "speaker": "BRUTUS",
+      "text": "I will not do thee so much wrong to wake thee:"
+    },
+    {
+      "number": 266,
+      "speaker": "BRUTUS",
+      "text": "If thou dost nod, thou break’st thy instrument;"
+    },
+    {
+      "number": 267,
+      "speaker": "BRUTUS",
+      "text": "I’ll take it from thee; and, good boy, good night."
+    },
+    {
+      "number": 268,
+      "speaker": "BRUTUS",
+      "text": "Let me see, let me see; is not the leaf turn’d down"
+    },
+    {
+      "number": 269,
+      "speaker": "BRUTUS",
+      "text": "Where I left reading? Here it is, I think."
+    },
+    {
+      "number": 270,
+      "speaker": "BRUTUS",
+      "text": "How ill this taper burns! Ha! who comes here?"
+    },
+    {
+      "number": 271,
+      "speaker": "BRUTUS",
+      "text": "I think it is the weakness of mine eyes"
+    },
+    {
+      "number": 272,
+      "speaker": "BRUTUS",
+      "text": "That shapes this monstrous apparition."
+    },
+    {
+      "number": 273,
+      "speaker": "BRUTUS",
+      "text": "It comes upon me. Art thou anything?"
+    },
+    {
+      "number": 274,
+      "speaker": "BRUTUS",
+      "text": "Art thou some god, some angel, or some devil,"
+    },
+    {
+      "number": 275,
+      "speaker": "BRUTUS",
+      "text": "That makest my blood cold and my hair to stare?"
+    },
+    {
+      "number": 276,
+      "speaker": "BRUTUS",
+      "text": "Speak to me what thou art."
+    },
+    {
+      "number": 276,
+      "speaker": "GHOST",
+      "text": "Thy evil spirit, Brutus."
+    },
+    {
+      "number": 277,
+      "speaker": "BRUTUS",
+      "text": "Why comest thou?"
+    },
+    {
+      "number": 278,
+      "speaker": "GHOST",
+      "text": "To tell thee thou shalt see me at Philippi."
+    },
+    {
+      "number": 279,
+      "speaker": "BRUTUS",
+      "text": "Well; then I shall see thee again?"
+    },
+    {
+      "number": 280,
+      "speaker": "GHOST",
+      "text": "Ay, at Philippi."
+    },
+    {
+      "number": 281,
+      "speaker": "BRUTUS",
+      "text": "Why, I will see thee at Philippi, then."
+    },
+    {
+      "number": 282,
+      "speaker": "BRUTUS",
+      "text": "Now I have taken heart thou vanishest:"
+    },
+    {
+      "number": 283,
+      "speaker": "BRUTUS",
+      "text": "Ill spirit, I would hold more talk with thee."
+    },
+    {
+      "number": 284,
+      "speaker": "BRUTUS",
+      "text": "Boy, Lucius! Varro! Claudius! Sirs, awake!"
+    },
+    {
+      "number": 285,
+      "speaker": "BRUTUS",
+      "text": "Claudius!"
+    },
+    {
+      "number": 285,
+      "speaker": "LUCIUS",
+      "text": "The strings, my lord, are false."
+    },
+    {
+      "number": 286,
+      "speaker": "BRUTUS",
+      "text": "He thinks he still is at his instrument."
+    },
+    {
+      "number": 287,
+      "speaker": "BRUTUS",
+      "text": "Lucius, awake!"
+    },
+    {
+      "number": 287,
+      "speaker": "LUCIUS",
+      "text": "My lord?"
+    },
+    {
+      "number": 288,
+      "speaker": "BRUTUS",
+      "text": "Didst thou dream, Lucius, that thou so criedst out?"
+    },
+    {
+      "number": 289,
+      "speaker": "LUCIUS",
+      "text": "My lord, I do not know that I did cry."
+    },
+    {
+      "number": 290,
+      "speaker": "BRUTUS",
+      "text": "Yes, that thou didst: didst thou see anything?"
+    },
+    {
+      "number": 291,
+      "speaker": "LUCIUS",
+      "text": "Nothing, my lord."
+    },
+    {
+      "number": 291,
+      "speaker": "BRUTUS",
+      "text": "Sleep again, Lucius. Sirrah Claudius!"
+    },
+    {
+      "number": 292,
+      "speaker": "BRUTUS",
+      "text": "To Varro. Fellow thou, awake!"
+    },
+    {
+      "number": 292,
+      "speaker": "VARRO",
+      "text": "My lord?"
+    },
+    {
+      "number": 293,
+      "speaker": "CLAUDIUS",
+      "text": "My lord?"
+    },
+    {
+      "number": 294,
+      "speaker": "BRUTUS",
+      "text": "Why did you so cry out, sirs, in your sleep?"
+    },
+    {
+      "number": 295,
+      "speaker": "VARRO AND CLAUDIUS",
+      "text": "Did we, my lord?"
+    },
+    {
+      "number": 295,
+      "speaker": "BRUTUS",
+      "text": "Ay: saw you anything?"
+    },
+    {
+      "number": 296,
+      "speaker": "VARRO",
+      "text": "No, my lord, I saw nothing."
+    },
+    {
+      "number": 296,
+      "speaker": "CLAUDIUS",
+      "text": "Nor I, my lord."
+    },
+    {
+      "number": 297,
+      "speaker": "BRUTUS",
+      "text": "Go and commend me to my brother Cassius;"
+    },
+    {
+      "number": 298,
+      "speaker": "BRUTUS",
+      "text": "Bid him set on his powers betimes before,"
+    },
+    {
+      "number": 299,
+      "speaker": "BRUTUS",
+      "text": "And we will follow."
+    },
+    {
+      "number": 299,
+      "speaker": "VARRO AND CLAUDIUS",
+      "text": "It shall be done, my lord."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Brutus and Cassius."
+    },
+    {
+      "after_line": 122,
+      "text": "Within."
+    },
+    {
+      "after_line": 124,
+      "text": "Within."
+    },
+    {
+      "after_line": 125,
+      "text": "Within."
+    },
+    {
+      "after_line": 125,
+      "text": "Enter Poet, followed by Lucilius, Titinius, and Lucius."
+    },
+    {
+      "after_line": 134,
+      "text": "Exit Poet."
+    },
+    {
+      "after_line": 138,
+      "text": "Exeunt Lucilius and Titinius."
+    },
+    {
+      "after_line": 138,
+      "text": "Exit Lucius."
+    },
+    {
+      "after_line": 152,
+      "text": "Reenter Lucius, with wine and taper."
+    },
+    {
+      "after_line": 158,
+      "text": "Exit Lucius."
+    },
+    {
+      "after_line": 158,
+      "text": "Reenter Titinius, with Messala."
+    },
+    {
+      "after_line": 227,
+      "text": "Enter Lucius."
+    },
+    {
+      "after_line": 227,
+      "text": "Exit Lucius."
+    },
+    {
+      "after_line": 234,
+      "text": "Exeunt all but Brutus."
+    },
+    {
+      "after_line": 234,
+      "text": "Reenter Lucius, with the gown."
+    },
+    {
+      "after_line": 240,
+      "text": "Enter Varro and Claudius."
+    },
+    {
+      "after_line": 261,
+      "text": "Music, and a song."
+    },
+    {
+      "after_line": 269,
+      "text": "Enter the Ghost of Caesar."
+    },
+    {
+      "after_line": 281,
+      "text": "Exit Ghost."
+    },
+    {
+      "after_line": 299,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "julius_caesar_act4_scene3_gloss1",
+      "line": 2,
+      "phrase": "condemn'd and noted",
+      "definition": "publicly censured and marked down as guilty"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss2",
+      "line": 2,
+      "phrase": "Lucius Pella",
+      "definition": "a Roman ally of Cassius, convicted of corruption in the province of Sardis; the historical incident is in Plutarch"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss3",
+      "line": 5,
+      "phrase": "slighted off",
+      "definition": "dismissed contemptuously"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss4",
+      "line": 7,
+      "phrase": "meet",
+      "definition": "fitting; proper"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss5",
+      "line": 8,
+      "phrase": "every nice offence should bear his comment",
+      "definition": "every petty offence should be publicly censured"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss6",
+      "line": 10,
+      "phrase": "itching palm",
+      "definition": "greedy hand (itching for bribes) — proverbial; the play's most direct charge of corruption"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss7",
+      "line": 11,
+      "phrase": "sell and mart your offices",
+      "definition": "sell and traffic in your official appointments — a specific crime of Roman political corruption"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss8",
+      "line": 18,
+      "phrase": "ides of March remember",
+      "definition": "Brutus's damning rhetorical pivot — we killed Caesar FOR this kind of corruption, and you now commit it; the assassination's justification is under threat"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss9",
+      "line": 22,
+      "phrase": "foremost man of all this world",
+      "definition": "Caesar described in superlative terms by the man who killed him — a measure of Brutus's residual honour"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss10",
+      "line": 23,
+      "phrase": "supporting robbers",
+      "definition": "defending bribers and extortioners"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss11",
+      "line": 27,
+      "phrase": "bay the moon",
+      "definition": "howl at the moon (like a dog) — be futilely noisy"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss12",
+      "line": 30,
+      "phrase": "hedge me in",
+      "definition": "confine me; constrain me"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss13",
+      "line": 31,
+      "phrase": "older in practice",
+      "definition": "older in experience; more seasoned"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss14",
+      "line": 32,
+      "phrase": "Go to",
+      "definition": "dismissive exclamation — 'come on,' 'get out'"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss15",
+      "line": 35,
+      "phrase": "Have mind upon your health",
+      "definition": "take care of your own safety — Cassius's veiled threat"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss16",
+      "line": 36,
+      "phrase": "slight man",
+      "definition": "insignificant man — Brutus returns the insult"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss17",
+      "line": 38,
+      "phrase": "rash choler",
+      "definition": "hasty anger (choler = yellow bile, one of the four humours; associated with irascibility)"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss18",
+      "line": 42,
+      "phrase": "choleric",
+      "definition": "angry (from the humoral psychology)"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss19",
+      "line": 43,
+      "phrase": "bondmen tremble",
+      "definition": "make your slaves tremble"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss20",
+      "line": 45,
+      "phrase": "testy humour",
+      "definition": "irritable disposition"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss21",
+      "line": 46,
+      "phrase": "venom of your spleen",
+      "definition": "poison of your bile — the spleen was thought to be the seat of anger"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss22",
+      "line": 49,
+      "phrase": "waspish",
+      "definition": "fretful; stinging like a wasp"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss23",
+      "line": 55,
+      "phrase": "elder soldier, not a better",
+      "definition": "Cassius's climb-down — redefining his claim mid-argument"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss24",
+      "line": 61,
+      "phrase": "presume too much upon my love",
+      "definition": "take my love for granted"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss25",
+      "line": 65,
+      "phrase": "arm'd so strong in honesty",
+      "definition": "fortified by my integrity"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss26",
+      "line": 70,
+      "phrase": "coin my heart",
+      "definition": "mint my own heart into coins — I would rather bleed money from my own body than extort it"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss27",
+      "line": 71,
+      "phrase": "drop my blood for drachmas",
+      "definition": "shed my own blood for coinage (drachma = Greek silver coin)"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss28",
+      "line": 71,
+      "phrase": "wring from the hard hands of peasants",
+      "definition": "extract by force from working men's calloused hands"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss29",
+      "line": 73,
+      "phrase": "indirection",
+      "definition": "crooked means"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss30",
+      "line": 78,
+      "phrase": "rascal counters",
+      "definition": "worthless reckoning-tokens — low money; Brutus's dismissive view of cash"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss31",
+      "line": 83,
+      "phrase": "rived my heart",
+      "definition": "split my heart (rived = cloven)"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss32",
+      "line": 84,
+      "phrase": "bear his friend's infirmities",
+      "definition": "tolerate his friend's weaknesses"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss33",
+      "line": 90,
+      "phrase": "huge as high Olympus",
+      "definition": "as large as Mount Olympus — the classical seat of the gods"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss34",
+      "line": 94,
+      "phrase": "Check'd like a bondman",
+      "definition": "rebuked like a slave"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss35",
+      "line": 95,
+      "phrase": "conn'd by rote",
+      "definition": "memorised by repetition"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss36",
+      "line": 99,
+      "phrase": "Plutus' mine",
+      "definition": "the mine of Plutus, Greek god of wealth; richer than any gold-mine"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss37",
+      "line": 102,
+      "phrase": "Strike, as thou didst at Caesar",
+      "definition": "Cassius offers his breast as Brutus offered his dagger to Caesar — the quarrel repeats the assassination in miniature"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss38",
+      "line": 103,
+      "phrase": "When thou didst hate him worst, thou lovedst him better",
+      "definition": "Cassius's keen wound: Brutus loved Caesar even in killing him more than he ever loved Cassius"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss39",
+      "line": 107,
+      "phrase": "yoked with a lamb",
+      "definition": "paired in harness with a lamb — Brutus's ironic self-description as the mild partner"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss40",
+      "line": 108,
+      "phrase": "carries anger as the flint bears fire",
+      "definition": "holds anger as flint holds fire — sparks only when struck, then cold"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss41",
+      "line": 118,
+      "phrase": "rash humour which my mother gave me",
+      "definition": "the hot temper inherited from his mother — Cassius's half-apology via humoral inheritance"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss42",
+      "line": 126,
+      "phrase": "POET",
+      "definition": "the unnamed Poet who interrupts the reconciliation — a cynical philosopher-poet in Plutarch; here played for comic relief that turns on the poet's uselessness in war"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss43",
+      "line": 129,
+      "phrase": "cynic rhyme",
+      "definition": "Cynic rhyme — verse in the manner of the Cynic philosophers (bare, moralising); Plutarch calls this figure 'Marcus Phaonius,' a follower of Cato who affected Cynic manners"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss44",
+      "line": 130,
+      "phrase": "saucy fellow",
+      "definition": "impudent fellow"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss45",
+      "line": 132,
+      "phrase": "I'll know his humour, when he knows his time",
+      "definition": "I'll tolerate his manner when he learns the right time — i.e. never, mid-war"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss46",
+      "line": 133,
+      "phrase": "What should the wars do with these jigging fools?",
+      "definition": "what use have wars for these rhyme-jigging fools? — the play's dismissive question about poets in political crisis; Shakespeare's metapoetical self-awareness"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss47",
+      "line": 134,
+      "phrase": "Companion",
+      "definition": "fellow (dismissive, as in 'fellow!')"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss48",
+      "line": 141,
+      "phrase": "Of your philosophy you make no use",
+      "definition": "you're not using your Stoic philosophy — Brutus was a professed Stoic; the complaint is apt"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss49",
+      "line": 143,
+      "phrase": "Portia is dead",
+      "definition": "Brutus announces Portia's death; a substantive loss. The double-report problem: he repeats the news later (L183ff) as if hearing it for the first time. Some editors read this as a textual-revision artifact — Shakespeare may have cut one version and failed to remove the other"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss50",
+      "line": 146,
+      "phrase": "insupportable and touching loss",
+      "definition": "unbearable, heart-moving loss"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss51",
+      "line": 150,
+      "phrase": "fell distract",
+      "definition": "became distraught; went mad"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss52",
+      "line": 151,
+      "phrase": "swallow'd fire",
+      "definition": "Portia killed herself by swallowing burning coals — the traditional, Plutarchan account of her suicide; one of the ancient world's most distinctive suicides"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss53",
+      "line": 161,
+      "phrase": "call in question our necessities",
+      "definition": "consider what we need (for the war)"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss54",
+      "line": 166,
+      "phrase": "Philippi",
+      "definition": "city in Macedonia (northern Greece); site of the decisive double battle of October 42 BCE, where Antony and Octavius defeated Brutus and Cassius"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss55",
+      "line": 169,
+      "phrase": "proscription and bills of outlawry",
+      "definition": "the triumvirs' lists of enemies to be killed and property seized; 'bills of outlawry' = public notices of outlawing"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss56",
+      "line": 171,
+      "phrase": "put to death an hundred senators",
+      "definition": "executed a hundred senators — Messala's news of the triumvirate's political purge; Plutarch gives 130; it was a systematic dismantling of the senatorial class"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss57",
+      "line": 174,
+      "phrase": "Cicero being one",
+      "definition": "Cicero was among those killed in the proscriptions of 43 BCE — Antony, whom Cicero had attacked in the *Philippics*, put him on the list"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss58",
+      "line": 175,
+      "phrase": "Cicero is dead",
+      "definition": "Marcus Tullius Cicero, Roman orator, philosopher, and statesman, executed December 7, 43 BCE — the death Messala confirms"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss59",
+      "line": 184,
+      "phrase": "like a Roman bear the truth",
+      "definition": "endure the truth as a Roman should — Stoic fortitude invoked"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss60",
+      "line": 190,
+      "phrase": "I have as much of this in art as you",
+      "definition": "my philosophy (art = learned discipline) teaches me the same lesson — Cassius acknowledges Stoicism but admits his nature can't bear it"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss61",
+      "line": 192,
+      "phrase": "to our work alive",
+      "definition": "to the living business at hand"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss62",
+      "line": 199,
+      "phrase": "Good reasons must, of force, give place to better",
+      "definition": "good reasons must yield to better ones"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss63",
+      "line": 214,
+      "phrase": "tide in the affairs of men",
+      "definition": "a tide in human affairs — Brutus's most-quoted line; a maritime metaphor for opportunity"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss64",
+      "line": 215,
+      "phrase": "taken at the flood",
+      "definition": "caught at high water; seized at the right moment"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss65",
+      "line": 217,
+      "phrase": "bound in shallows and in miseries",
+      "definition": "stuck in shallow waters and troubles — the opportunity missed"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss66",
+      "line": 218,
+      "phrase": "full sea",
+      "definition": "high tide — the moment for action"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss67",
+      "line": 224,
+      "phrase": "niggard with a little rest",
+      "definition": "be stingy with a brief sleep — take only a little"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss68",
+      "line": 237,
+      "phrase": "o'erwatch'd",
+      "definition": "exhausted from over-long watching"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss69",
+      "line": 247,
+      "phrase": "book",
+      "definition": "Brutus is reading a book — with turning pages and a bookmark leaf ('is not the leaf turn'd down'). Roman reading was on scrolls; the codex (book with pages) wasn't common until the 2nd century CE. Another deliberate anachronism that places Rome in an English study"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss70",
+      "line": 262,
+      "phrase": "murderous slumber",
+      "definition": "sleep personified as a murderer"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss71",
+      "line": 263,
+      "phrase": "leaden mace",
+      "definition": "a heavy lead mace — the weapon of Sleep in Renaissance allegory"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss72",
+      "line": 268,
+      "phrase": "leaf turn'd down",
+      "definition": "a page folded over as a bookmark — anachronism confirmed; scrolls don't have leaves to turn down"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss73",
+      "line": 272,
+      "phrase": "monstrous apparition",
+      "definition": "terrible supernatural appearance — Caesar's Ghost"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss74",
+      "line": 276,
+      "phrase": "Thy evil spirit",
+      "definition": "your evil genius — in Roman belief, each person had a guiding spirit (genius); the ghost announces itself as Brutus's shadow-self, not specifically as Caesar. The ambiguity is Shakespeare's"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss75",
+      "line": 278,
+      "phrase": "Philippi",
+      "definition": "the ghost's prophecy — he will appear again at Philippi, where Brutus dies"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss76",
+      "line": 285,
+      "phrase": "strings, my lord, are false",
+      "definition": "Lucius's sleep-talking about his instrument — the strings have gone out of tune; a touching domestic detail amid the supernatural"
+    },
+    {
+      "id": "julius_caesar_act4_scene3_gloss77",
+      "line": 298,
+      "phrase": "set on his powers betimes",
+      "definition": "set his forces marching early"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "julius_caesar_act4_scene3_ann1",
+      "line_start": 1,
+      "line_end": 122,
+      "citation_display": "Julius Caesar 4.3.1–122",
+      "category": "thematic",
+      "title": "The quarrel as relationship study — Shakespeare's intimate scene between men",
+      "body": "The Brutus-Cassius quarrel is among Shakespeare's most carefully observed portraits of male political friendship. It is not a disagreement about tactics that happens to become heated; it is a heated scene that happens to surface tactical disagreements. What is primarily being transacted is the relationship itself.\n\nThe quarrel moves through distinct registers: the professional grievance (Lucius Pella's corruption), the moral grievance (Cassius's 'itching palm'), the personal wound (Cassius's complaint that Brutus makes his infirmities larger than they are), the theatrical threat (Cassius offers his dagger as Brutus offered his to Caesar), and the reconciliation ('When I spoke that, I was ill-temper'd too'). Shakespeare writes male intimacy here with a specificity he rarely grants it elsewhere. The stage direction 'Give me your hand' (L114) and Brutus's 'And my heart too' (L115) are among the frankest gestures of affection between men in the canon.\n\nAnd the scene also enacts what Brutus saw in 4.2: Cassius under pressure — 'bloody spur' — fails his vaunt. His argument for marching on Philippi (5.1) will, tactically, have been correct; Brutus's will prove wrong. But Cassius has already ceded the moral ground. Brutus's willingness to quarrel is leverage; Cassius's willingness to be hurt is defeat. The play's insistent question of who leads has been answered in this scene, and the answer is catastrophic.\n\nPlutarch's *Life of Brutus* §34 records the quarrel but not the emotional specificity. The dagger moment and the 'Give me your hand / And my heart too' exchange are Shakespeare's invention. They make the scene not military-political debate but a study of love under threat.",
+      "sources": [
+        "Plutarch, *Life of Brutus* §34 (North, 1579)",
+        "A. C. Bradley, *Shakespearean Tragedy* (1904)",
+        "Eve Kosofsky Sedgwick, *Between Men* (1985)",
+        "Bruce R. Smith, *Homosexual Desire in Shakespeare's England* (1991)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act4_scene3_ann2",
+      "line_start": 10,
+      "line_end": 28,
+      "citation_display": "Julius Caesar 4.3.10–28",
+      "category": "thematic",
+      "title": "'Itching palm': the conspiracy's moral collapse, in one accusation",
+      "body": "Brutus accuses Cassius of taking bribes — 'to sell and mart your offices for gold / To undeservers.' The specificity is important: this is not generic greed but the sale of political offices, one of the defined crimes of Roman corruption. Brutus links the charge, with devastating aim, to the assassination itself: 'Remember March, the ides of March remember: / Did not great Julius bleed for justice' sake? / What villain touch'd his body, that did stab, / And not for justice?'\n\nThe argument reads the ides retrospectively: we killed Caesar to prevent *this kind of corruption*. If we then commit it, the assassination was not the purification Brutus claimed it was; it was just a change of personnel. The whole moral case for the murder depends, in Brutus's reading, on the conspirators' subsequent conduct — and Cassius's conduct has failed.\n\nCassius does not deny the bribery. He threatens Brutus. Shakespeare is implying, without stating, that the accusation lands because it is true. The conspiracy has begun to rot into the thing it killed Caesar to prevent. When Brutus himself later says 'I can raise no money by vile means' (L69) and admits that he sent to Cassius for money, the scene has laid the full case: the man of principle is dependent on the man of corruption, because principle alone does not pay armies.",
+      "sources": [
+        "Plutarch, *Life of Brutus* §30, 34 (North, 1579)",
+        "Paul A. Cantor, *Shakespeare's Rome* (1976)",
+        "David Norbrook (1999)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act4_scene3_ann3",
+      "line_start": 122,
+      "line_end": 134,
+      "citation_display": "Julius Caesar 4.3.122–134",
+      "category": "structural",
+      "title": "The Poet interrupts — Shakespeare on poetry's place in war",
+      "body": "Immediately after the reconciliation, a Poet forces his way past Lucilius into the tent: 'For shame, you generals! what do you mean? / Love, and be friends.' Brutus and Cassius dismiss him together — Cassius with 'Ha, ha! how vilely doth this cynic rhyme!' and Brutus with the savage 'What should the wars do with these jigging fools?'\n\nThe scene is one of two in the play (with 3.3) in which a poet appears. Both poets are bad poets; both poets are killed or thrown out. Shakespeare, writing 'jigging fools' into the mouth of a tragic hero, has a specific target — the jig, an irreverent verse-and-dance that often followed or interrupted Elizabethan tragedies; a form that Shakespeare's company had reduced but not eliminated. The Poet is Cinna-adjacent: an irritant to the serious political business, a reminder that poetry is outside political power.\n\nYet the Poet has just, crudely, said something correct. Brutus and Cassius should love and be friends. The intrusion of crude rhyme onto refined political relationship is Shakespeare's mild self-mockery: the play itself is a poem, inserted into politics, and its claim to be taken seriously rests on refusing the Poet's rhyme while making its own version of his point. 'What should the wars do with these jigging fools?' is the play's self-critique, spoken from inside itself.",
+      "sources": [
+        "Andrew Gurr, *Playgoing in Shakespeare's London* (1987)",
+        "Richard Wilson (1993)",
+        "David Bevington, *This Wide and Universal Theater* (2007)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act4_scene3_ann4",
+      "line_start": 143,
+      "line_end": 195,
+      "citation_display": "Julius Caesar 4.3.143–195",
+      "category": "textual",
+      "title": "Portia's double death: an editorial crux",
+      "body": "Brutus announces Portia's death at L143 ('Portia is dead'). Cassius responds with grief; the two drink. Then Messala arrives with news of the proscriptions (L167ff), and at L181 Brutus asks Messala, 'Hear you aught of her in yours?' and at L183–185 hears again that Portia is dead — and reacts as if it were news.\n\nThe duplication has troubled editors since the 18th century. The most common scholarly reading (going back to George Steevens in 1778) is that the passage is a revision artifact: Shakespeare wrote one version of the announcement (the private, emotional one with Cassius), then wrote another (the public, Stoic one with Messala), and failed to remove the first when adapting. Alternatively, Brutus is performing Roman fortitude for Messala's benefit, demonstrating the Stoic mastery the news requires. Both readings have defenders; neither is certain.\n\nWhat is certain is that the second report is Brutus's most explicit Stoic performance: 'Why, farewell, Portia. We must die, Messala: / With meditating that she must die once, / I have the patience to endure it now.' Messala's response — 'Even so great men great losses should endure' — is approval of the performance, not of the emotion. The scene is made double-uncanny by being doubled: in the private register Brutus is grief-struck; in the public register he is a Stoic monument. Shakespeare may have meant both, may have revised incompletely, may have left the textual strangeness as a feature. Most modern productions play only one of the two, cutting the other.",
+      "sources": [
+        "George Steevens (ed.), Shakespeare (1778) — first scholarly note on the duplication",
+        "David Daniell (ed.), Arden 3 (1998), Appendix on textual history",
+        "Fredson Bowers, 'The Copy for Shakespeare's *Julius Caesar*', *SN&Q* 26 (1976)",
+        "John Dover Wilson, *The New Shakespeare: Julius Caesar* (1949)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act4_scene3_ann5",
+      "line_start": 213,
+      "line_end": 221,
+      "citation_display": "Julius Caesar 4.3.213–221",
+      "category": "close_reading",
+      "title": "'There is a tide in the affairs of men' — Brutus loses the argument",
+      "body": "Brutus's most-quoted speech is also his third catastrophic tactical error. Cassius's position — wait for Antony and Octavius to come to them, let the enemy exhaust himself in march — is military orthodoxy. Brutus's position, that the 'tide' favours an immediate move on Philippi, is lyrical, aphoristic, and wrong. The speech wins the argument on rhetorical force. Brutus has absorbed Cassius's 1.2 lesson ('Men at some time are masters of their fates') and turned it back at Cassius, now wielding the agency-language to argue for action. Cassius yields.\n\nThe irony is exact. Cassius was right in 1.2 to argue for agency; Brutus was right in 2.1 to join the plot; the two men's successive exercises of agency have brought them here, and now Brutus's insistence on acting once more delivers them to Philippi, where Cassius will kill himself on his own sword and Brutus will fall on Strato's. The tide metaphor is consistent with Brutus's entire philosophy — that the moment of decision matters — and consistent also with his record, which is that every decision he has made on that philosophy has lost.\n\nThe speech is taught and quoted outside its context; inside it, it is the sound of a man talking his friend into a grave.",
+      "sources": [
+        "Plutarch, *Life of Brutus* §39 (North, 1579)",
+        "Cynthia Marshall, 'Shakespeare, Crossing the Rubicon', *SQ* 50 (1999)",
+        "A. D. Nuttall (2007)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act4_scene3_ann6",
+      "line_start": 268,
+      "line_end": 282,
+      "citation_display": "Julius Caesar 4.3.268–282",
+      "category": "historical",
+      "title": "Brutus's book and the Ghost: anachronism and theatre",
+      "body": "Two details of the tent scene work in parallel. First, Brutus is reading a book — 'the leaf turn'd down / Where I left reading.' Second, the Ghost of Caesar appears to him. Both are Shakespeare's inventions against the facts.\n\nThe book is another deliberate anachronism. Roman reading was on scrolls, not codices with turning pages. The codex — a bound book with leaves — did not become common until the 2nd century CE. Brutus 'turning down a leaf' is an Elizabethan gentleman's reading practice, transposed. The anachronism works the way the clock in 2.1 works: it makes Rome legible as a place of English intellectual life. Brutus is thus one of Shakespeare's small library of reading heroes — with Hamlet and Prospero — figures defined partly by their relation to a codex.\n\nThe Ghost is more ambiguous. 'Thy evil spirit, Brutus,' it says — not 'Caesar's revenge,' not a specific person, but an emanation of Brutus himself. Plutarch's *Life of Brutus* §36 reports the ghost as a specific 'strange and monstrous shape' but does not name it; 'Brutus asked what it was, a man, or a god... The evil spirit replied, I am thy evil angel, Brutus, and thou shalt see me by the city of Philippi.' Shakespeare follows Plutarch's language closely.\n\nThe ambiguity is specific. The Ghost *is* Caesar in the stage tradition (he returns in 5.5 as 'the ghost of Caesar'), and it *is* Brutus's 'evil spirit' in its self-naming. Shakespeare is allowing both: Caesar's revenge and Brutus's haunted conscience are not two things here but one thing. The play's metaphysics insist on the identity.",
+      "sources": [
+        "Plutarch, *Life of Brutus* §36 (North, 1579)",
+        "Roger Chartier, *The Order of Books* (1994)",
+        "Stephen Greenblatt, *Hamlet in Purgatory* (2001)",
+        "Naomi Conn Liebler (1995)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "julius_caesar_act4_scene3_q1",
+      "kind": "theme",
+      "prompt": "The Brutus-Cassius quarrel is primarily:",
+      "options": [
+        "A tactical disagreement",
+        "A relationship study — the scene is about love between two men under threat; tactical content is subordinate to emotional register; the 'Give me your hand / And my heart too' exchange is among the frankest gestures of male affection in Shakespeare",
+        "Comic",
+        "A legal proceeding"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 122
+    },
+    {
+      "id": "julius_caesar_act4_scene3_q2",
+      "kind": "inference",
+      "prompt": "Brutus's 'itching palm' accusation and Cassius's non-denial imply:",
+      "options": [
+        "Cassius is innocent",
+        "The charge lands because it is true; the conspiracy has begun to rot into the corruption it killed Caesar to prevent, and Brutus's 'remember the ides of March' frames the accusation as retrospective moral reckoning on the whole assassination",
+        "The charge is a joke",
+        "Brutus is inventing the charge"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 10,
+      "anchor_line_end": 28
+    },
+    {
+      "id": "julius_caesar_act4_scene3_q3",
+      "kind": "close_reading",
+      "prompt": "'What should the wars do with these jigging fools?' is Shakespeare's:",
+      "options": [
+        "Serious metaphysics",
+        "Wry self-reference — 'jig' was a specific Elizabethan comic form that sometimes followed tragedy; the play, a poem about politics, mocks crude poems about politics while quietly making its own",
+        "Praise of Roman poets",
+        "Technical military term"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 132,
+      "anchor_line_end": 134
+    },
+    {
+      "id": "julius_caesar_act4_scene3_q4",
+      "kind": "textual",
+      "prompt": "Why does Brutus seem to learn of Portia's death twice (L143 and L183)?",
+      "options": [
+        "She actually dies twice",
+        "A long-recognised textual crux: likely a revision artifact where Shakespeare wrote the news in both a private (emotional) and a public (Stoic) register and didn't remove one; alternatively, Brutus performs Stoic fortitude for Messala's benefit",
+        "Brutus is drunk and forgets",
+        "The scribe made an error"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 143,
+      "anchor_line_end": 195
+    },
+    {
+      "id": "julius_caesar_act4_scene3_q5",
+      "kind": "theme",
+      "prompt": "'There is a tide in the affairs of men' is famous outside its context. Inside the play, it is:",
+      "options": [
+        "A victorious strategic insight",
+        "The rhetorical force by which Brutus wins the argument to march on Philippi over Cassius's militarily-correct objection — a third catastrophic decision after sparing Antony (2.1) and letting Antony speak (3.1)",
+        "A weather prediction",
+        "Unrelated to the action"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 213,
+      "anchor_line_end": 221
+    },
+    {
+      "id": "julius_caesar_act4_scene3_q6",
+      "kind": "historical",
+      "prompt": "What is anachronistic about Brutus reading a book in the tent?",
+      "options": [
+        "Nothing — Romans read books",
+        "Roman reading was on scrolls; the codex (bound book with leaves to turn) didn't become common until the 2nd century CE — another Renaissance-in-Rome anachronism, placing Brutus among Shakespeare's intellectual-hero readers (Hamlet, Prospero)",
+        "Brutus couldn't read",
+        "The book was written in Greek"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 268,
+      "anchor_line_end": 268
+    },
+    {
+      "id": "julius_caesar_act4_scene3_q7",
+      "kind": "close_reading",
+      "prompt": "The Ghost announces itself as 'Thy evil spirit, Brutus' — what is ambiguous about this?",
+      "options": [
+        "Nothing",
+        "The Ghost is both Caesar (it returns in 5.5 as Caesar's ghost) and Brutus's own evil angel (Plutarch's language); Shakespeare preserves the ambiguity, making Caesar's revenge and Brutus's haunted conscience a single phenomenon",
+        "Only that its voice is loud",
+        "Only the lighting"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 276,
+      "anchor_line_end": 278
+    },
+    {
+      "id": "julius_caesar_act4_scene3_q8",
+      "kind": "inference",
+      "prompt": "After the quarrel and reconciliation, what does Cassius concede by asking 'Hath Cassius lived / To be but mirth and laughter to his Brutus'?",
+      "options": [
+        "That he enjoys the joke",
+        "That the relationship has turned — Brutus holds the moral position, Cassius the dependent one; the man who seduced Brutus in 1.2 now pleads for warmth",
+        "That the quarrel meant nothing",
+        "That he is abandoning the alliance"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 110,
+      "anchor_line_end": 114
+    }
+  ]
+}

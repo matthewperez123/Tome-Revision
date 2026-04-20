@@ -1,0 +1,89 @@
+{
+  "section_id": "hamlet_act1_scene2",
+  "trials": [
+    {
+      "kind": "close_reading",
+      "prompt": "What rhetorical figure dominates Claudius's opening speech ('mirth in funeral,' 'dirge in marriage')?",
+      "options": [
+        "Anaphora: repeated phrases at the start of successive clauses.",
+        "Oxymoron: the pairing of contradictory terms.",
+        "Hyperbole: deliberate exaggeration for emphasis.",
+        "Chiasmus: a reversed repetition of words."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 8,
+      "anchor_line_end": 12
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "In Hamlet's first line — 'A little more than kin, and less than kind' — what does the pun on 'kind' convey?",
+      "options": [
+        "Claudius is both overly familiar and insufficiently affectionate toward him.",
+        "Claudius is related by marriage but not by blood.",
+        "He means the word only in its modern sense of 'generous.'",
+        "He is contrasting Claudius to his father's courteous manner."
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 20,
+      "anchor_line_start": 64,
+      "anchor_line_end": 64
+    },
+    {
+      "kind": "comprehension",
+      "prompt": "What does Claudius deny Hamlet at the end of their first exchange?",
+      "options": [
+        "Permission to return to his university at Wittenberg.",
+        "The right to bear arms at court.",
+        "Access to the royal treasury for mourning expenses.",
+        "Admission to the Privy Council."
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 10,
+      "anchor_line_start": 110,
+      "anchor_line_end": 118
+    },
+    {
+      "kind": "theme",
+      "prompt": "What grievance drives Hamlet's first soliloquy, 'O, that this too too solid flesh would melt'?",
+      "options": [
+        "Claudius's murder of his father, which he has just discovered.",
+        "His mother's rapid remarriage to his uncle.",
+        "The threat of invasion from young Fortinbras.",
+        "Ophelia's rejection of his love-letters."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 129,
+      "anchor_line_end": 159
+    },
+    {
+      "kind": "inference",
+      "prompt": "When Hamlet calls Claudius 'no more like my father / Than I to Hercules,' what is he asserting?",
+      "options": [
+        "That he resembles Hercules in strength.",
+        "That he, like Claudius, is unimposing — but the resemblance between the two kings is even weaker.",
+        "That Hercules is the proper Greek analog for his father.",
+        "That Claudius fancies himself a Hercules and must be disabused."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 150,
+      "anchor_line_end": 152
+    },
+    {
+      "kind": "comprehension",
+      "prompt": "What does Horatio tell Hamlet at the end of the scene?",
+      "options": [
+        "That Claudius poisoned his father's wine at a banquet.",
+        "That a figure resembling the late King has appeared on the watch platform at night.",
+        "That Ophelia has refused his gifts and letters.",
+        "That Fortinbras has crossed into Danish territory."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 185,
+      "anchor_line_end": 235
+    }
+  ]
+}

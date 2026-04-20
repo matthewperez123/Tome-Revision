@@ -1,0 +1,1995 @@
+{
+  "section_id": "henry_v_act1_scene2",
+  "work_id": "henry-v",
+  "sequence": 3,
+  "act": 1,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "London. The Presence chamber in the King's palace",
+  "line_count": 312,
+  "word_count": 2381,
+  "est_read_minutes": 12,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KING HENRY",
+      "text": "Where is my gracious Lord of Canterbury?"
+    },
+    {
+      "number": 2,
+      "speaker": "EXETER",
+      "text": "Not here in presence."
+    },
+    {
+      "number": 2,
+      "speaker": "KING HENRY",
+      "text": "Send for him, good uncle."
+    },
+    {
+      "number": 3,
+      "speaker": "WESTMORELAND",
+      "text": "Shall we call in the ambassador, my liege?"
+    },
+    {
+      "number": 4,
+      "speaker": "KING HENRY",
+      "text": "Not yet, my cousin: we would be resolved,"
+    },
+    {
+      "number": 5,
+      "speaker": "KING HENRY",
+      "text": "Before we hear him, of some things of weight"
+    },
+    {
+      "number": 6,
+      "speaker": "KING HENRY",
+      "text": "That task our thoughts, concerning us and France."
+    },
+    {
+      "number": 7,
+      "speaker": "CANTERBURY",
+      "text": "God and his angels guard your sacred throne"
+    },
+    {
+      "number": 8,
+      "speaker": "CANTERBURY",
+      "text": "And make you long become it!"
+    },
+    {
+      "number": 8,
+      "speaker": "KING HENRY",
+      "text": "Sure, we thank you."
+    },
+    {
+      "number": 9,
+      "speaker": "KING HENRY",
+      "text": "My learned lord, we pray you to proceed"
+    },
+    {
+      "number": 10,
+      "speaker": "KING HENRY",
+      "text": "And justly and religiously unfold"
+    },
+    {
+      "number": 11,
+      "speaker": "KING HENRY",
+      "text": "Why the law Salique that they have in France"
+    },
+    {
+      "number": 12,
+      "speaker": "KING HENRY",
+      "text": "Or should, or should not, bar us in our claim:"
+    },
+    {
+      "number": 13,
+      "speaker": "KING HENRY",
+      "text": "And God forbid, my dear and faithful lord,"
+    },
+    {
+      "number": 14,
+      "speaker": "KING HENRY",
+      "text": "That you should fashion, wrest, or bow your reading,"
+    },
+    {
+      "number": 15,
+      "speaker": "KING HENRY",
+      "text": "Or nicely charge your understanding soul"
+    },
+    {
+      "number": 16,
+      "speaker": "KING HENRY",
+      "text": "With opening titles miscreate, whose right"
+    },
+    {
+      "number": 17,
+      "speaker": "KING HENRY",
+      "text": "Suits not in native colours with the truth;"
+    },
+    {
+      "number": 18,
+      "speaker": "KING HENRY",
+      "text": "For God doth know how many now in health"
+    },
+    {
+      "number": 19,
+      "speaker": "KING HENRY",
+      "text": "Shall drop their blood in approbation"
+    },
+    {
+      "number": 20,
+      "speaker": "KING HENRY",
+      "text": "Of what your reverence shall incite us to."
+    },
+    {
+      "number": 21,
+      "speaker": "KING HENRY",
+      "text": "Therefore take heed how you impawn our person,"
+    },
+    {
+      "number": 22,
+      "speaker": "KING HENRY",
+      "text": "How you awake our sleeping sword of war:"
+    },
+    {
+      "number": 23,
+      "speaker": "KING HENRY",
+      "text": "We charge you, in the name of God, take heed;"
+    },
+    {
+      "number": 24,
+      "speaker": "KING HENRY",
+      "text": "For never two such kingdoms did contend"
+    },
+    {
+      "number": 25,
+      "speaker": "KING HENRY",
+      "text": "Without much fall of blood; whose guiltless drops"
+    },
+    {
+      "number": 26,
+      "speaker": "KING HENRY",
+      "text": "Are every one a woe, a sore complaint"
+    },
+    {
+      "number": 27,
+      "speaker": "KING HENRY",
+      "text": "’Gainst him whose wrongs gives edge unto the swords"
+    },
+    {
+      "number": 28,
+      "speaker": "KING HENRY",
+      "text": "That makes such waste in brief mortality."
+    },
+    {
+      "number": 29,
+      "speaker": "KING HENRY",
+      "text": "Under this conjuration speak, my lord;"
+    },
+    {
+      "number": 30,
+      "speaker": "KING HENRY",
+      "text": "For we will hear, note and believe in heart"
+    },
+    {
+      "number": 31,
+      "speaker": "KING HENRY",
+      "text": "That what you speak is in your conscience wash’d"
+    },
+    {
+      "number": 32,
+      "speaker": "KING HENRY",
+      "text": "As pure as sin with baptism."
+    },
+    {
+      "number": 33,
+      "speaker": "CANTERBURY",
+      "text": "Then hear me, gracious sovereign, and you peers,"
+    },
+    {
+      "number": 34,
+      "speaker": "CANTERBURY",
+      "text": "That owe yourselves, your lives and services"
+    },
+    {
+      "number": 35,
+      "speaker": "CANTERBURY",
+      "text": "To this imperial throne. There is no bar"
+    },
+    {
+      "number": 36,
+      "speaker": "CANTERBURY",
+      "text": "To make against your highness’ claim to France"
+    },
+    {
+      "number": 37,
+      "speaker": "CANTERBURY",
+      "text": "But this, which they produce from Pharamond,"
+    },
+    {
+      "number": 38,
+      "speaker": "CANTERBURY",
+      "text": "“In terram Salicam mulieres ne succedant:”"
+    },
+    {
+      "number": 39,
+      "speaker": "CANTERBURY",
+      "text": "“No woman shall succeed in Salique land:”"
+    },
+    {
+      "number": 40,
+      "speaker": "CANTERBURY",
+      "text": "Which Salique land the French unjustly glose"
+    },
+    {
+      "number": 41,
+      "speaker": "CANTERBURY",
+      "text": "To be the realm of France, and Pharamond"
+    },
+    {
+      "number": 42,
+      "speaker": "CANTERBURY",
+      "text": "The founder of this law and female bar."
+    },
+    {
+      "number": 43,
+      "speaker": "CANTERBURY",
+      "text": "Yet their own authors faithfully affirm"
+    },
+    {
+      "number": 44,
+      "speaker": "CANTERBURY",
+      "text": "That the land Salique is in Germany,"
+    },
+    {
+      "number": 45,
+      "speaker": "CANTERBURY",
+      "text": "Between the floods of Sala and of Elbe;"
+    },
+    {
+      "number": 46,
+      "speaker": "CANTERBURY",
+      "text": "Where Charles the Great, having subdued the Saxons,"
+    },
+    {
+      "number": 47,
+      "speaker": "CANTERBURY",
+      "text": "There left behind and settled certain French;"
+    },
+    {
+      "number": 48,
+      "speaker": "CANTERBURY",
+      "text": "Who, holding in disdain the German women"
+    },
+    {
+      "number": 49,
+      "speaker": "CANTERBURY",
+      "text": "For some dishonest manners of their life,"
+    },
+    {
+      "number": 50,
+      "speaker": "CANTERBURY",
+      "text": "Establish’d then this law; to wit, no female"
+    },
+    {
+      "number": 51,
+      "speaker": "CANTERBURY",
+      "text": "Should be inheritrix in Salique land:"
+    },
+    {
+      "number": 52,
+      "speaker": "CANTERBURY",
+      "text": "Which Salique, as I said, ’twixt Elbe and Sala,"
+    },
+    {
+      "number": 53,
+      "speaker": "CANTERBURY",
+      "text": "Is at this day in Germany call’d Meissen."
+    },
+    {
+      "number": 54,
+      "speaker": "CANTERBURY",
+      "text": "Then doth it well appear the Salique law"
+    },
+    {
+      "number": 55,
+      "speaker": "CANTERBURY",
+      "text": "Was not devised for the realm of France;"
+    },
+    {
+      "number": 56,
+      "speaker": "CANTERBURY",
+      "text": "Nor did the French possess the Salique land"
+    },
+    {
+      "number": 57,
+      "speaker": "CANTERBURY",
+      "text": "Until four hundred one and twenty years"
+    },
+    {
+      "number": 58,
+      "speaker": "CANTERBURY",
+      "text": "After defunction of King Pharamond,"
+    },
+    {
+      "number": 59,
+      "speaker": "CANTERBURY",
+      "text": "Idly supposed the founder of this law;"
+    },
+    {
+      "number": 60,
+      "speaker": "CANTERBURY",
+      "text": "Who died within the year of our redemption"
+    },
+    {
+      "number": 61,
+      "speaker": "CANTERBURY",
+      "text": "Four hundred twenty-six; and Charles the Great"
+    },
+    {
+      "number": 62,
+      "speaker": "CANTERBURY",
+      "text": "Subdued the Saxons, and did seat the French"
+    },
+    {
+      "number": 63,
+      "speaker": "CANTERBURY",
+      "text": "Beyond the river Sala, in the year"
+    },
+    {
+      "number": 64,
+      "speaker": "CANTERBURY",
+      "text": "Eight hundred five. Besides, their writers say,"
+    },
+    {
+      "number": 65,
+      "speaker": "CANTERBURY",
+      "text": "King Pepin, which deposed Childeric,"
+    },
+    {
+      "number": 66,
+      "speaker": "CANTERBURY",
+      "text": "Did, as heir general, being descended"
+    },
+    {
+      "number": 67,
+      "speaker": "CANTERBURY",
+      "text": "Of Blithild, which was daughter to King Clothair,"
+    },
+    {
+      "number": 68,
+      "speaker": "CANTERBURY",
+      "text": "Make claim and title to the crown of France."
+    },
+    {
+      "number": 69,
+      "speaker": "CANTERBURY",
+      "text": "Hugh Capet also, who usurp’d the crown"
+    },
+    {
+      "number": 70,
+      "speaker": "CANTERBURY",
+      "text": "Of Charles the duke of Lorraine, sole heir male"
+    },
+    {
+      "number": 71,
+      "speaker": "CANTERBURY",
+      "text": "Of the true line and stock of Charles the Great,"
+    },
+    {
+      "number": 72,
+      "speaker": "CANTERBURY",
+      "text": "To find his title with some shows of truth,"
+    },
+    {
+      "number": 73,
+      "speaker": "CANTERBURY",
+      "text": "Though, in pure truth, it was corrupt and naught,"
+    },
+    {
+      "number": 74,
+      "speaker": "CANTERBURY",
+      "text": "Convey’d himself as the heir to the Lady Lingare,"
+    },
+    {
+      "number": 75,
+      "speaker": "CANTERBURY",
+      "text": "Daughter to Charlemain, who was the son"
+    },
+    {
+      "number": 76,
+      "speaker": "CANTERBURY",
+      "text": "To Lewis the emperor, and Lewis the son"
+    },
+    {
+      "number": 77,
+      "speaker": "CANTERBURY",
+      "text": "Of Charles the Great. Also King Lewis the Tenth,"
+    },
+    {
+      "number": 78,
+      "speaker": "CANTERBURY",
+      "text": "Who was sole heir to the usurper Capet,"
+    },
+    {
+      "number": 79,
+      "speaker": "CANTERBURY",
+      "text": "Could not keep quiet in his conscience,"
+    },
+    {
+      "number": 80,
+      "speaker": "CANTERBURY",
+      "text": "Wearing the crown of France, till satisfied"
+    },
+    {
+      "number": 81,
+      "speaker": "CANTERBURY",
+      "text": "That fair Queen Isabel, his grandmother,"
+    },
+    {
+      "number": 82,
+      "speaker": "CANTERBURY",
+      "text": "Was lineal of the Lady Ermengare,"
+    },
+    {
+      "number": 83,
+      "speaker": "CANTERBURY",
+      "text": "Daughter to Charles the foresaid duke of Lorraine:"
+    },
+    {
+      "number": 84,
+      "speaker": "CANTERBURY",
+      "text": "By the which marriage the line of Charles the Great"
+    },
+    {
+      "number": 85,
+      "speaker": "CANTERBURY",
+      "text": "Was reunited to the crown of France."
+    },
+    {
+      "number": 86,
+      "speaker": "CANTERBURY",
+      "text": "So that, as clear as is the summer’s sun,"
+    },
+    {
+      "number": 87,
+      "speaker": "CANTERBURY",
+      "text": "King Pepin’s title and Hugh Capet’s claim,"
+    },
+    {
+      "number": 88,
+      "speaker": "CANTERBURY",
+      "text": "King Lewis his satisfaction, all appear"
+    },
+    {
+      "number": 89,
+      "speaker": "CANTERBURY",
+      "text": "To hold in right and title of the female:"
+    },
+    {
+      "number": 90,
+      "speaker": "CANTERBURY",
+      "text": "So do the kings of France unto this day;"
+    },
+    {
+      "number": 91,
+      "speaker": "CANTERBURY",
+      "text": "Howbeit they would hold up this Salique law"
+    },
+    {
+      "number": 92,
+      "speaker": "CANTERBURY",
+      "text": "To bar your highness claiming from the female,"
+    },
+    {
+      "number": 93,
+      "speaker": "CANTERBURY",
+      "text": "And rather choose to hide them in a net"
+    },
+    {
+      "number": 94,
+      "speaker": "CANTERBURY",
+      "text": "Than amply to imbar their crooked titles"
+    },
+    {
+      "number": 95,
+      "speaker": "CANTERBURY",
+      "text": "Usurp’d from you and your progenitors."
+    },
+    {
+      "number": 96,
+      "speaker": "KING HENRY",
+      "text": "May I with right and conscience make this claim?"
+    },
+    {
+      "number": 97,
+      "speaker": "CANTERBURY",
+      "text": "The sin upon my head, dread sovereign!"
+    },
+    {
+      "number": 98,
+      "speaker": "CANTERBURY",
+      "text": "For in the Book of Numbers is it writ,"
+    },
+    {
+      "number": 99,
+      "speaker": "CANTERBURY",
+      "text": "When the man dies, let the inheritance"
+    },
+    {
+      "number": 100,
+      "speaker": "CANTERBURY",
+      "text": "Descend unto the daughter. Gracious lord,"
+    },
+    {
+      "number": 101,
+      "speaker": "CANTERBURY",
+      "text": "Stand for your own; unwind your bloody flag;"
+    },
+    {
+      "number": 102,
+      "speaker": "CANTERBURY",
+      "text": "Look back into your mighty ancestors:"
+    },
+    {
+      "number": 103,
+      "speaker": "CANTERBURY",
+      "text": "Go, my dread lord, to your great-grandsire’s tomb,"
+    },
+    {
+      "number": 104,
+      "speaker": "CANTERBURY",
+      "text": "From whom you claim; invoke his warlike spirit,"
+    },
+    {
+      "number": 105,
+      "speaker": "CANTERBURY",
+      "text": "And your great-uncle’s, Edward the Black Prince,"
+    },
+    {
+      "number": 106,
+      "speaker": "CANTERBURY",
+      "text": "Who on the French ground play’d a tragedy,"
+    },
+    {
+      "number": 107,
+      "speaker": "CANTERBURY",
+      "text": "Making defeat on the full power of France,"
+    },
+    {
+      "number": 108,
+      "speaker": "CANTERBURY",
+      "text": "Whiles his most mighty father on a hill"
+    },
+    {
+      "number": 109,
+      "speaker": "CANTERBURY",
+      "text": "Stood smiling to behold his lion’s whelp"
+    },
+    {
+      "number": 110,
+      "speaker": "CANTERBURY",
+      "text": "Forage in blood of French nobility."
+    },
+    {
+      "number": 111,
+      "speaker": "CANTERBURY",
+      "text": "O noble English, that could entertain"
+    },
+    {
+      "number": 112,
+      "speaker": "CANTERBURY",
+      "text": "With half their forces the full pride of France"
+    },
+    {
+      "number": 113,
+      "speaker": "CANTERBURY",
+      "text": "And let another half stand laughing by,"
+    },
+    {
+      "number": 114,
+      "speaker": "CANTERBURY",
+      "text": "All out of work and cold for action!"
+    },
+    {
+      "number": 115,
+      "speaker": "ELY",
+      "text": "Awake remembrance of these valiant dead"
+    },
+    {
+      "number": 116,
+      "speaker": "ELY",
+      "text": "And with your puissant arm renew their feats:"
+    },
+    {
+      "number": 117,
+      "speaker": "ELY",
+      "text": "You are their heir; you sit upon their throne;"
+    },
+    {
+      "number": 118,
+      "speaker": "ELY",
+      "text": "The blood and courage that renowned them"
+    },
+    {
+      "number": 119,
+      "speaker": "ELY",
+      "text": "Runs in your veins; and my thrice-puissant liege"
+    },
+    {
+      "number": 120,
+      "speaker": "ELY",
+      "text": "Is in the very May-morn of his youth,"
+    },
+    {
+      "number": 121,
+      "speaker": "ELY",
+      "text": "Ripe for exploits and mighty enterprises."
+    },
+    {
+      "number": 122,
+      "speaker": "EXETER",
+      "text": "Your brother kings and monarchs of the earth"
+    },
+    {
+      "number": 123,
+      "speaker": "EXETER",
+      "text": "Do all expect that you should rouse yourself,"
+    },
+    {
+      "number": 124,
+      "speaker": "EXETER",
+      "text": "As did the former lions of your blood."
+    },
+    {
+      "number": 125,
+      "speaker": "WESTMORELAND",
+      "text": "They know your grace hath cause and means and might;"
+    },
+    {
+      "number": 126,
+      "speaker": "WESTMORELAND",
+      "text": "So hath your highness; never king of England"
+    },
+    {
+      "number": 127,
+      "speaker": "WESTMORELAND",
+      "text": "Had nobles richer and more loyal subjects,"
+    },
+    {
+      "number": 128,
+      "speaker": "WESTMORELAND",
+      "text": "Whose hearts have left their bodies here in England"
+    },
+    {
+      "number": 129,
+      "speaker": "WESTMORELAND",
+      "text": "And lie pavilion’d in the fields of France."
+    },
+    {
+      "number": 130,
+      "speaker": "CANTERBURY",
+      "text": "O, let their bodies follow, my dear liege,"
+    },
+    {
+      "number": 131,
+      "speaker": "CANTERBURY",
+      "text": "With blood and sword and fire to win your right;"
+    },
+    {
+      "number": 132,
+      "speaker": "CANTERBURY",
+      "text": "In aid whereof we of the spiritualty"
+    },
+    {
+      "number": 133,
+      "speaker": "CANTERBURY",
+      "text": "Will raise your highness such a mighty sum"
+    },
+    {
+      "number": 134,
+      "speaker": "CANTERBURY",
+      "text": "As never did the clergy at one time"
+    },
+    {
+      "number": 135,
+      "speaker": "CANTERBURY",
+      "text": "Bring in to any of your ancestors."
+    },
+    {
+      "number": 136,
+      "speaker": "KING HENRY",
+      "text": "We must not only arm to invade the French,"
+    },
+    {
+      "number": 137,
+      "speaker": "KING HENRY",
+      "text": "But lay down our proportions to defend"
+    },
+    {
+      "number": 138,
+      "speaker": "KING HENRY",
+      "text": "Against the Scot, who will make road upon us"
+    },
+    {
+      "number": 139,
+      "speaker": "KING HENRY",
+      "text": "With all advantages."
+    },
+    {
+      "number": 139,
+      "speaker": "CANTERBURY",
+      "text": "They of those marches, gracious sovereign,"
+    },
+    {
+      "number": 140,
+      "speaker": "CANTERBURY",
+      "text": "Shall be a wall sufficient to defend"
+    },
+    {
+      "number": 141,
+      "speaker": "CANTERBURY",
+      "text": "Our inland from the pilfering borderers."
+    },
+    {
+      "number": 142,
+      "speaker": "KING HENRY",
+      "text": "We do not mean the coursing snatchers only,"
+    },
+    {
+      "number": 143,
+      "speaker": "KING HENRY",
+      "text": "But fear the main intendment of the Scot,"
+    },
+    {
+      "number": 144,
+      "speaker": "KING HENRY",
+      "text": "Who hath been still a giddy neighbour to us;"
+    },
+    {
+      "number": 145,
+      "speaker": "KING HENRY",
+      "text": "For you shall read that my great-grandfather"
+    },
+    {
+      "number": 146,
+      "speaker": "KING HENRY",
+      "text": "Never went with his forces into France"
+    },
+    {
+      "number": 147,
+      "speaker": "KING HENRY",
+      "text": "But that the Scot on his unfurnish’d kingdom"
+    },
+    {
+      "number": 148,
+      "speaker": "KING HENRY",
+      "text": "Came pouring, like the tide into a breach,"
+    },
+    {
+      "number": 149,
+      "speaker": "KING HENRY",
+      "text": "With ample and brim fullness of his force,"
+    },
+    {
+      "number": 150,
+      "speaker": "KING HENRY",
+      "text": "Galling the gleaned land with hot assays,"
+    },
+    {
+      "number": 151,
+      "speaker": "KING HENRY",
+      "text": "Girdling with grievous siege castles and towns;"
+    },
+    {
+      "number": 152,
+      "speaker": "KING HENRY",
+      "text": "That England, being empty of defence,"
+    },
+    {
+      "number": 153,
+      "speaker": "KING HENRY",
+      "text": "Hath shook and trembled at the ill neighbourhood."
+    },
+    {
+      "number": 154,
+      "speaker": "CANTERBURY",
+      "text": "She hath been then more fear’d than harm’d, my liege;"
+    },
+    {
+      "number": 155,
+      "speaker": "CANTERBURY",
+      "text": "For hear her but exampled by herself:"
+    },
+    {
+      "number": 156,
+      "speaker": "CANTERBURY",
+      "text": "When all her chivalry hath been in France"
+    },
+    {
+      "number": 157,
+      "speaker": "CANTERBURY",
+      "text": "And she a mourning widow of her nobles,"
+    },
+    {
+      "number": 158,
+      "speaker": "CANTERBURY",
+      "text": "She hath herself not only well defended"
+    },
+    {
+      "number": 159,
+      "speaker": "CANTERBURY",
+      "text": "But taken and impounded as a stray"
+    },
+    {
+      "number": 160,
+      "speaker": "CANTERBURY",
+      "text": "The King of Scots; whom she did send to France,"
+    },
+    {
+      "number": 161,
+      "speaker": "CANTERBURY",
+      "text": "To fill King Edward’s fame with prisoner kings"
+    },
+    {
+      "number": 162,
+      "speaker": "CANTERBURY",
+      "text": "And make her chronicle as rich with praise"
+    },
+    {
+      "number": 163,
+      "speaker": "CANTERBURY",
+      "text": "As is the ooze and bottom of the sea"
+    },
+    {
+      "number": 164,
+      "speaker": "CANTERBURY",
+      "text": "With sunken wreck and sumless treasuries."
+    },
+    {
+      "number": 165,
+      "speaker": "WESTMORELAND",
+      "text": "But there’s a saying very old and true,"
+    },
+    {
+      "number": 166,
+      "speaker": "WESTMORELAND",
+      "text": "“If that you will France win,"
+    },
+    {
+      "number": 167,
+      "speaker": "WESTMORELAND",
+      "text": "Then with Scotland first begin:”"
+    },
+    {
+      "number": 168,
+      "speaker": "WESTMORELAND",
+      "text": "For once the eagle England being in prey,"
+    },
+    {
+      "number": 169,
+      "speaker": "WESTMORELAND",
+      "text": "To her unguarded nest the weasel Scot"
+    },
+    {
+      "number": 170,
+      "speaker": "WESTMORELAND",
+      "text": "Comes sneaking and so sucks her princely eggs,"
+    },
+    {
+      "number": 171,
+      "speaker": "WESTMORELAND",
+      "text": "Playing the mouse in absence of the cat,"
+    },
+    {
+      "number": 172,
+      "speaker": "WESTMORELAND",
+      "text": "To tear and havoc more than she can eat."
+    },
+    {
+      "number": 173,
+      "speaker": "EXETER",
+      "text": "It follows then the cat must stay at home:"
+    },
+    {
+      "number": 174,
+      "speaker": "EXETER",
+      "text": "Yet that is but a crush’d necessity,"
+    },
+    {
+      "number": 175,
+      "speaker": "EXETER",
+      "text": "Since we have locks to safeguard necessaries,"
+    },
+    {
+      "number": 176,
+      "speaker": "EXETER",
+      "text": "And pretty traps to catch the petty thieves."
+    },
+    {
+      "number": 177,
+      "speaker": "EXETER",
+      "text": "While that the armed hand doth fight abroad,"
+    },
+    {
+      "number": 178,
+      "speaker": "EXETER",
+      "text": "The advised head defends itself at home;"
+    },
+    {
+      "number": 179,
+      "speaker": "EXETER",
+      "text": "For government, though high and low and lower,"
+    },
+    {
+      "number": 180,
+      "speaker": "EXETER",
+      "text": "Put into parts, doth keep in one consent,"
+    },
+    {
+      "number": 181,
+      "speaker": "EXETER",
+      "text": "Congreeing in a full and natural close,"
+    },
+    {
+      "number": 182,
+      "speaker": "EXETER",
+      "text": "Like music."
+    },
+    {
+      "number": 182,
+      "speaker": "CANTERBURY",
+      "text": "Therefore doth heaven divide"
+    },
+    {
+      "number": 183,
+      "speaker": "CANTERBURY",
+      "text": "The state of man in divers functions,"
+    },
+    {
+      "number": 184,
+      "speaker": "CANTERBURY",
+      "text": "Setting endeavour in continual motion;"
+    },
+    {
+      "number": 185,
+      "speaker": "CANTERBURY",
+      "text": "To which is fixed, as an aim or butt,"
+    },
+    {
+      "number": 186,
+      "speaker": "CANTERBURY",
+      "text": "Obedience: for so work the honeybees,"
+    },
+    {
+      "number": 187,
+      "speaker": "CANTERBURY",
+      "text": "Creatures that by a rule in nature teach"
+    },
+    {
+      "number": 188,
+      "speaker": "CANTERBURY",
+      "text": "The act of order to a peopled kingdom."
+    },
+    {
+      "number": 189,
+      "speaker": "CANTERBURY",
+      "text": "They have a king and officers of sorts;"
+    },
+    {
+      "number": 190,
+      "speaker": "CANTERBURY",
+      "text": "Where some, like magistrates, correct at home,"
+    },
+    {
+      "number": 191,
+      "speaker": "CANTERBURY",
+      "text": "Others, like merchants, venture trade abroad,"
+    },
+    {
+      "number": 192,
+      "speaker": "CANTERBURY",
+      "text": "Others, like soldiers, armed in their stings,"
+    },
+    {
+      "number": 193,
+      "speaker": "CANTERBURY",
+      "text": "Make boot upon the summer’s velvet buds,"
+    },
+    {
+      "number": 194,
+      "speaker": "CANTERBURY",
+      "text": "Which pillage they with merry march bring home"
+    },
+    {
+      "number": 195,
+      "speaker": "CANTERBURY",
+      "text": "To the tent-royal of their emperor;"
+    },
+    {
+      "number": 196,
+      "speaker": "CANTERBURY",
+      "text": "Who, busied in his majesty, surveys"
+    },
+    {
+      "number": 197,
+      "speaker": "CANTERBURY",
+      "text": "The singing masons building roofs of gold,"
+    },
+    {
+      "number": 198,
+      "speaker": "CANTERBURY",
+      "text": "The civil citizens kneading up the honey,"
+    },
+    {
+      "number": 199,
+      "speaker": "CANTERBURY",
+      "text": "The poor mechanic porters crowding in"
+    },
+    {
+      "number": 200,
+      "speaker": "CANTERBURY",
+      "text": "Their heavy burdens at his narrow gate,"
+    },
+    {
+      "number": 201,
+      "speaker": "CANTERBURY",
+      "text": "The sad-eyed justice, with his surly hum,"
+    },
+    {
+      "number": 202,
+      "speaker": "CANTERBURY",
+      "text": "Delivering o’er to executors pale"
+    },
+    {
+      "number": 203,
+      "speaker": "CANTERBURY",
+      "text": "The lazy yawning drone. I this infer,"
+    },
+    {
+      "number": 204,
+      "speaker": "CANTERBURY",
+      "text": "That many things, having full reference"
+    },
+    {
+      "number": 205,
+      "speaker": "CANTERBURY",
+      "text": "To one consent, may work contrariously:"
+    },
+    {
+      "number": 206,
+      "speaker": "CANTERBURY",
+      "text": "As many arrows, loosed several ways,"
+    },
+    {
+      "number": 207,
+      "speaker": "CANTERBURY",
+      "text": "Come to one mark; as many ways meet in one town;"
+    },
+    {
+      "number": 208,
+      "speaker": "CANTERBURY",
+      "text": "As many fresh streams meet in one salt sea;"
+    },
+    {
+      "number": 209,
+      "speaker": "CANTERBURY",
+      "text": "As many lines close in the dial’s centre;"
+    },
+    {
+      "number": 210,
+      "speaker": "CANTERBURY",
+      "text": "So many a thousand actions, once afoot,"
+    },
+    {
+      "number": 211,
+      "speaker": "CANTERBURY",
+      "text": "End in one purpose, and be all well borne"
+    },
+    {
+      "number": 212,
+      "speaker": "CANTERBURY",
+      "text": "Without defeat. Therefore to France, my liege."
+    },
+    {
+      "number": 213,
+      "speaker": "CANTERBURY",
+      "text": "Divide your happy England into four;"
+    },
+    {
+      "number": 214,
+      "speaker": "CANTERBURY",
+      "text": "Whereof take you one quarter into France,"
+    },
+    {
+      "number": 215,
+      "speaker": "CANTERBURY",
+      "text": "And you withal shall make all Gallia shake."
+    },
+    {
+      "number": 216,
+      "speaker": "CANTERBURY",
+      "text": "If we, with thrice such powers left at home,"
+    },
+    {
+      "number": 217,
+      "speaker": "CANTERBURY",
+      "text": "Cannot defend our own doors from the dog,"
+    },
+    {
+      "number": 218,
+      "speaker": "CANTERBURY",
+      "text": "Let us be worried and our nation lose"
+    },
+    {
+      "number": 219,
+      "speaker": "CANTERBURY",
+      "text": "The name of hardiness and policy."
+    },
+    {
+      "number": 220,
+      "speaker": "KING HENRY",
+      "text": "Call in the messengers sent from the Dauphin."
+    },
+    {
+      "number": 221,
+      "speaker": "KING HENRY",
+      "text": "Now are we well resolved; and, by God’s help,"
+    },
+    {
+      "number": 222,
+      "speaker": "KING HENRY",
+      "text": "And yours, the noble sinews of our power,"
+    },
+    {
+      "number": 223,
+      "speaker": "KING HENRY",
+      "text": "France being ours, we’ll bend it to our awe,"
+    },
+    {
+      "number": 224,
+      "speaker": "KING HENRY",
+      "text": "Or break it all to pieces: or there we’ll sit,"
+    },
+    {
+      "number": 225,
+      "speaker": "KING HENRY",
+      "text": "Ruling in large and ample empery"
+    },
+    {
+      "number": 226,
+      "speaker": "KING HENRY",
+      "text": "O’er France and all her almost kingly dukedoms,"
+    },
+    {
+      "number": 227,
+      "speaker": "KING HENRY",
+      "text": "Or lay these bones in an unworthy urn,"
+    },
+    {
+      "number": 228,
+      "speaker": "KING HENRY",
+      "text": "Tombless, with no remembrance over them:"
+    },
+    {
+      "number": 229,
+      "speaker": "KING HENRY",
+      "text": "Either our history shall with full mouth"
+    },
+    {
+      "number": 230,
+      "speaker": "KING HENRY",
+      "text": "Speak freely of our acts, or else our grave,"
+    },
+    {
+      "number": 231,
+      "speaker": "KING HENRY",
+      "text": "Like Turkish mute, shall have a tongueless mouth,"
+    },
+    {
+      "number": 232,
+      "speaker": "KING HENRY",
+      "text": "Not worshipp’d with a waxen epitaph."
+    },
+    {
+      "number": 233,
+      "speaker": "FIRST AMBASSADOR",
+      "text": "May’t please your majesty to give us leave"
+    },
+    {
+      "number": 234,
+      "speaker": "FIRST AMBASSADOR",
+      "text": "Freely to render what we have in charge;"
+    },
+    {
+      "number": 235,
+      "speaker": "FIRST AMBASSADOR",
+      "text": "Or shall we sparingly show you far off"
+    },
+    {
+      "number": 236,
+      "speaker": "FIRST AMBASSADOR",
+      "text": "The Dauphin’s meaning and our embassy?"
+    },
+    {
+      "number": 237,
+      "speaker": "KING HENRY",
+      "text": "We are no tyrant, but a Christian king;"
+    },
+    {
+      "number": 238,
+      "speaker": "KING HENRY",
+      "text": "Unto whose grace our passion is as subject"
+    },
+    {
+      "number": 239,
+      "speaker": "KING HENRY",
+      "text": "As are our wretches fetter’d in our prisons:"
+    },
+    {
+      "number": 240,
+      "speaker": "KING HENRY",
+      "text": "Therefore with frank and with uncurbed plainness"
+    },
+    {
+      "number": 241,
+      "speaker": "KING HENRY",
+      "text": "Tell us the Dauphin’s mind."
+    },
+    {
+      "number": 241,
+      "speaker": "AMBASSADOR",
+      "text": "Thus, then, in few."
+    },
+    {
+      "number": 242,
+      "speaker": "AMBASSADOR",
+      "text": "Your highness, lately sending into France,"
+    },
+    {
+      "number": 243,
+      "speaker": "AMBASSADOR",
+      "text": "Did claim some certain dukedoms, in the right"
+    },
+    {
+      "number": 244,
+      "speaker": "AMBASSADOR",
+      "text": "Of your great predecessor, King Edward the Third."
+    },
+    {
+      "number": 245,
+      "speaker": "AMBASSADOR",
+      "text": "In answer of which claim, the prince our master"
+    },
+    {
+      "number": 246,
+      "speaker": "AMBASSADOR",
+      "text": "Says that you savour too much of your youth,"
+    },
+    {
+      "number": 247,
+      "speaker": "AMBASSADOR",
+      "text": "And bids you be advised there’s nought in France"
+    },
+    {
+      "number": 248,
+      "speaker": "AMBASSADOR",
+      "text": "That can be with a nimble galliard won;"
+    },
+    {
+      "number": 249,
+      "speaker": "AMBASSADOR",
+      "text": "You cannot revel into dukedoms there."
+    },
+    {
+      "number": 250,
+      "speaker": "AMBASSADOR",
+      "text": "He therefore sends you, meeter for your spirit,"
+    },
+    {
+      "number": 251,
+      "speaker": "AMBASSADOR",
+      "text": "This tun of treasure; and, in lieu of this,"
+    },
+    {
+      "number": 252,
+      "speaker": "AMBASSADOR",
+      "text": "Desires you let the dukedoms that you claim"
+    },
+    {
+      "number": 253,
+      "speaker": "AMBASSADOR",
+      "text": "Hear no more of you. This the Dauphin speaks."
+    },
+    {
+      "number": 254,
+      "speaker": "KING HENRY",
+      "text": "What treasure, uncle?"
+    },
+    {
+      "number": 254,
+      "speaker": "EXETER",
+      "text": "Tennis-balls, my liege."
+    },
+    {
+      "number": 255,
+      "speaker": "KING HENRY",
+      "text": "We are glad the Dauphin is so pleasant with us;"
+    },
+    {
+      "number": 256,
+      "speaker": "KING HENRY",
+      "text": "His present and your pains we thank you for:"
+    },
+    {
+      "number": 257,
+      "speaker": "KING HENRY",
+      "text": "When we have match’d our rackets to these balls,"
+    },
+    {
+      "number": 258,
+      "speaker": "KING HENRY",
+      "text": "We will, in France, by God’s grace, play a set"
+    },
+    {
+      "number": 259,
+      "speaker": "KING HENRY",
+      "text": "Shall strike his father’s crown into the hazard."
+    },
+    {
+      "number": 260,
+      "speaker": "KING HENRY",
+      "text": "Tell him he hath made a match with such a wrangler"
+    },
+    {
+      "number": 261,
+      "speaker": "KING HENRY",
+      "text": "That all the courts of France will be disturb’d"
+    },
+    {
+      "number": 262,
+      "speaker": "KING HENRY",
+      "text": "With chases. And we understand him well,"
+    },
+    {
+      "number": 263,
+      "speaker": "KING HENRY",
+      "text": "How he comes o’er us with our wilder days,"
+    },
+    {
+      "number": 264,
+      "speaker": "KING HENRY",
+      "text": "Not measuring what use we made of them."
+    },
+    {
+      "number": 265,
+      "speaker": "KING HENRY",
+      "text": "We never valued this poor seat of England;"
+    },
+    {
+      "number": 266,
+      "speaker": "KING HENRY",
+      "text": "And therefore, living hence, did give ourself"
+    },
+    {
+      "number": 267,
+      "speaker": "KING HENRY",
+      "text": "To barbarous licence; as ’tis ever common"
+    },
+    {
+      "number": 268,
+      "speaker": "KING HENRY",
+      "text": "That men are merriest when they are from home."
+    },
+    {
+      "number": 269,
+      "speaker": "KING HENRY",
+      "text": "But tell the Dauphin I will keep my state,"
+    },
+    {
+      "number": 270,
+      "speaker": "KING HENRY",
+      "text": "Be like a king and show my sail of greatness"
+    },
+    {
+      "number": 271,
+      "speaker": "KING HENRY",
+      "text": "When I do rouse me in my throne of France:"
+    },
+    {
+      "number": 272,
+      "speaker": "KING HENRY",
+      "text": "For that I have laid by my majesty"
+    },
+    {
+      "number": 273,
+      "speaker": "KING HENRY",
+      "text": "And plodded like a man for working-days,"
+    },
+    {
+      "number": 274,
+      "speaker": "KING HENRY",
+      "text": "But I will rise there with so full a glory"
+    },
+    {
+      "number": 275,
+      "speaker": "KING HENRY",
+      "text": "That I will dazzle all the eyes of France,"
+    },
+    {
+      "number": 276,
+      "speaker": "KING HENRY",
+      "text": "Yea, strike the Dauphin blind to look on us."
+    },
+    {
+      "number": 277,
+      "speaker": "KING HENRY",
+      "text": "And tell the pleasant prince this mock of his"
+    },
+    {
+      "number": 278,
+      "speaker": "KING HENRY",
+      "text": "Hath turn’d his balls to gun-stones; and his soul"
+    },
+    {
+      "number": 279,
+      "speaker": "KING HENRY",
+      "text": "Shall stand sore charged for the wasteful vengeance"
+    },
+    {
+      "number": 280,
+      "speaker": "KING HENRY",
+      "text": "That shall fly with them: for many a thousand widows"
+    },
+    {
+      "number": 281,
+      "speaker": "KING HENRY",
+      "text": "Shall this his mock mock out of their dear husbands;"
+    },
+    {
+      "number": 282,
+      "speaker": "KING HENRY",
+      "text": "Mock mothers from their sons, mock castles down;"
+    },
+    {
+      "number": 283,
+      "speaker": "KING HENRY",
+      "text": "And some are yet ungotten and unborn"
+    },
+    {
+      "number": 284,
+      "speaker": "KING HENRY",
+      "text": "That shall have cause to curse the Dauphin’s scorn."
+    },
+    {
+      "number": 285,
+      "speaker": "KING HENRY",
+      "text": "But this lies all within the will of God,"
+    },
+    {
+      "number": 286,
+      "speaker": "KING HENRY",
+      "text": "To whom I do appeal; and in whose name"
+    },
+    {
+      "number": 287,
+      "speaker": "KING HENRY",
+      "text": "Tell you the Dauphin I am coming on,"
+    },
+    {
+      "number": 288,
+      "speaker": "KING HENRY",
+      "text": "To venge me as I may and to put forth"
+    },
+    {
+      "number": 289,
+      "speaker": "KING HENRY",
+      "text": "My rightful hand in a well-hallow’d cause."
+    },
+    {
+      "number": 290,
+      "speaker": "KING HENRY",
+      "text": "So get you hence in peace; and tell the Dauphin"
+    },
+    {
+      "number": 291,
+      "speaker": "KING HENRY",
+      "text": "His jest will savour but of shallow wit,"
+    },
+    {
+      "number": 292,
+      "speaker": "KING HENRY",
+      "text": "When thousands weep more than did laugh at it."
+    },
+    {
+      "number": 293,
+      "speaker": "KING HENRY",
+      "text": "Convey them with safe conduct. Fare you well."
+    },
+    {
+      "number": 294,
+      "speaker": "EXETER",
+      "text": "This was a merry message."
+    },
+    {
+      "number": 295,
+      "speaker": "KING HENRY",
+      "text": "We hope to make the sender blush at it."
+    },
+    {
+      "number": 296,
+      "speaker": "KING HENRY",
+      "text": "Therefore, my lords, omit no happy hour"
+    },
+    {
+      "number": 297,
+      "speaker": "KING HENRY",
+      "text": "That may give furtherance to our expedition;"
+    },
+    {
+      "number": 298,
+      "speaker": "KING HENRY",
+      "text": "For we have now no thought in us but France,"
+    },
+    {
+      "number": 299,
+      "speaker": "KING HENRY",
+      "text": "Save those to God, that run before our business."
+    },
+    {
+      "number": 300,
+      "speaker": "KING HENRY",
+      "text": "Therefore let our proportions for these wars"
+    },
+    {
+      "number": 301,
+      "speaker": "KING HENRY",
+      "text": "Be soon collected and all things thought upon"
+    },
+    {
+      "number": 302,
+      "speaker": "KING HENRY",
+      "text": "That may with reasonable swiftness add"
+    },
+    {
+      "number": 303,
+      "speaker": "KING HENRY",
+      "text": "More feathers to our wings; for, God before,"
+    },
+    {
+      "number": 304,
+      "speaker": "KING HENRY",
+      "text": "We’ll chide this Dauphin at his father’s door."
+    },
+    {
+      "number": 305,
+      "speaker": "KING HENRY",
+      "text": "Therefore let every man now task his thought,"
+    },
+    {
+      "number": 306,
+      "speaker": "KING HENRY",
+      "text": "That this fair action may on foot be brought."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter King Henry, Gloucester, Bedford, Exeter, Warwick, Westmoreland, and Attendants."
+    },
+    {
+      "after_line": 6,
+      "text": "Enter the Archbishop of Canterbury and the Bishop of Ely."
+    },
+    {
+      "after_line": 220,
+      "text": "Exeunt some Attendants."
+    },
+    {
+      "after_line": 232,
+      "text": "Enter Ambassadors of France."
+    },
+    {
+      "after_line": 232,
+      "text": "Now are we well prepared to know the pleasure Of our fair cousin Dauphin; for we hear Your greeting is from him, not from the king."
+    },
+    {
+      "after_line": 293,
+      "text": "Exeunt Ambassadors."
+    },
+    {
+      "after_line": 306,
+      "text": "Exeunt. Flourish."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act1_scene2_gloss1",
+      "line": 1,
+      "phrase": "Where is my gracious Lord of Canterbury",
+      "definition": "Henry summons the Archbishop — the scene's legal consultation begins"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss2",
+      "line": 4,
+      "phrase": "resolved",
+      "definition": "fully informed; settled in mind"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss3",
+      "line": 10,
+      "phrase": "justly and religiously",
+      "definition": "in accordance with law and conscience"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss4",
+      "line": 11,
+      "phrase": "law Salique",
+      "definition": "Salic Law — the Frankish legal tradition used to bar royal inheritance through the female line, invoked here against Henry's claim"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss5",
+      "line": 14,
+      "phrase": "fashion",
+      "definition": "shape; misrepresent"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss6",
+      "line": 15,
+      "phrase": "Or nicely charge your understanding soul",
+      "definition": "or subtly burden your conscience"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss7",
+      "line": 21,
+      "phrase": "impawn",
+      "definition": "pledge; stake"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss8",
+      "line": 19,
+      "phrase": "approbation",
+      "definition": "authoritative sanction"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss9",
+      "line": 28,
+      "phrase": "waste in brief mortality",
+      "definition": "is quickly spent in short human lives"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss10",
+      "line": 29,
+      "phrase": "conjuration",
+      "definition": "solemn appeal"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss11",
+      "line": 38,
+      "phrase": "In terram Salicam mulieres ne succedant",
+      "definition": "Latin: 'Into the Salic land let no women succeed' — the legal tag at the heart of Canterbury's speech"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss12",
+      "line": 37,
+      "phrase": "Pharamond",
+      "definition": "legendary founding king of the Franks, to whom the Salic Law was fictitiously attributed"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss13",
+      "line": 45,
+      "phrase": "the floods of Sala and of Elbe",
+      "definition": "the Saale and Elbe rivers — German waterways central to Canterbury's geography lesson"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss14",
+      "line": 46,
+      "phrase": "Charles the Great",
+      "definition": "Charlemagne (742–814) — king of the Franks and Holy Roman Emperor"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss15",
+      "line": 69,
+      "phrase": "Hugh Capet",
+      "definition": "founder of the Capetian dynasty of French kings (d. 996)"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss16",
+      "line": 69,
+      "phrase": "usurp’d the crown",
+      "definition": "took the throne unlawfully — Canterbury is systematically questioning French royal legitimacy"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss17",
+      "line": 77,
+      "phrase": "Lewis the Tenth",
+      "definition": "Louis X of France (r. 1314–1316) — Canterbury's test case for inherited female right"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss18",
+      "line": 65,
+      "phrase": "Pepin",
+      "definition": "Pepin the Short — Charlemagne's father, another Carolingian claim cited"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss19",
+      "line": 98,
+      "phrase": "Book of Numbers",
+      "definition": "Old Testament citation (Numbers 27:8) permitting daughters to inherit in the absence of sons — Canterbury's biblical trump card"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss20",
+      "line": 100,
+      "phrase": "Gracious lord",
+      "definition": "formal address to the King"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss21",
+      "line": 116,
+      "phrase": "puissant",
+      "definition": "mighty"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss22",
+      "line": 244,
+      "phrase": "Edward the Third",
+      "definition": "English king (r. 1327–1377) whose French claim is the historical basis for Henry's"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss23",
+      "line": 105,
+      "phrase": "Black Prince",
+      "definition": "Edward of Woodstock, Edward III's eldest son — hero of Crécy (1346) and Poitiers (1356)"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss24",
+      "line": 138,
+      "phrase": "Scot",
+      "definition": "Scottish raider — Canterbury shifts to the problem of border defense"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss25",
+      "line": 169,
+      "phrase": "weasel Scot",
+      "definition": "the Scots pictured as a weasel — a small predator that attacks while the lion is away"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss26",
+      "line": 168,
+      "phrase": "eagle England",
+      "definition": "England as an eagle — imperial, predatory"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss27",
+      "line": 171,
+      "phrase": "cat",
+      "definition": "Canterbury's proverb: when the cat's away, the mice will play — if the king goes to France, the Scots will invade"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss28",
+      "line": 186,
+      "phrase": "honey-bees",
+      "definition": "Exeter's famous extended simile of the commonwealth as a beehive — kingdom ordered like a hive"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss29",
+      "line": 190,
+      "phrase": "magistrates",
+      "definition": "officials administering justice"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss30",
+      "line": 199,
+      "phrase": "mechanic porters",
+      "definition": "manual laborers; common workmen"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss31",
+      "line": 195,
+      "phrase": "tent-royal",
+      "definition": "royal pavilion — here, the queen bee's central cell"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss32",
+      "line": 241,
+      "phrase": "Dauphin",
+      "definition": "title of the French crown prince (pronounced DOH-fan) — equivalent to the English Prince of Wales"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss33",
+      "line": 251,
+      "phrase": "tun of treasure",
+      "definition": "a cask of valuables — the gift from the Dauphin, which turns out to be insulting"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss34",
+      "line": 254,
+      "phrase": "tennis-balls",
+      "definition": "the Dauphin's mocking gift — Henry's youthful reputation reduced to a children's game"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss35",
+      "line": 262,
+      "phrase": "chases",
+      "definition": "tennis term — a point remembered but not yet scored, awaiting a second stroke; Henry turns the Dauphin's taunt back on him"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss36",
+      "line": 260,
+      "phrase": "wrangler",
+      "definition": "disputant; opponent"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss37",
+      "line": 278,
+      "phrase": "gun-stones",
+      "definition": "cannonballs — the tennis balls reimagined as weapons"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss38",
+      "line": 275,
+      "phrase": "dazzle all the eyes of France",
+      "definition": "blind the French with English arms"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss39",
+      "line": 282,
+      "phrase": "mock mothers from their sons",
+      "definition": "widow them of their children by war"
+    },
+    {
+      "id": "henry_v_act1_scene2_gloss40",
+      "line": 289,
+      "phrase": "well-hallow’d cause",
+      "definition": "holy justification — Henry takes the Dauphin's mockery as moral license"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act1_scene2_ann1",
+      "line_start": 34,
+      "line_end": 100,
+      "citation_display": "Henry V 1.2.34–100",
+      "category": "historical",
+      "title": "The Salic Law speech — historical fact, satirical stagecraft",
+      "body": "Canterbury's sixty-line disquisition on the Salic Law is drawn directly, and in places verbatim, from Holinshed's Chronicles, which quotes the speech that Archbishop Chichele (the historical Canterbury) delivered to Parliament in 1414. Historically, the Salic Law — a 6th-century Frankish rule of inheritance — was invoked by 14th-century French jurists to bar inheritance of the French crown through the female line and thus to deny Edward III's claim. Canterbury's counter-argument is that the Salic Law applied only to the German Salian region, not to France, and that in any event the French themselves had repeatedly inherited through the female line. Whether he is right or tendentious is a genuine scholarly question; the historical arguments were and are real. But Shakespeare stages the exposition satirically. Canterbury speaks for sixty lines of tangled dynastic geography — Pharamond, Pepin, Hugh Capet, Lewis the Tenth, Louis the Ninth — and by line 88 Henry has to press him: 'May I with right and conscience make this claim?' The absurd scholarly cascade enacts the process by which a war of conquest is equipped with legal justification: laboriously, in learned Latin and medieval chronology, under pressure from a king who wants a yes.",
+      "sources": [
+        "Raphael Holinshed, Chronicles (1587)",
+        "Gary Taylor (ed.), The Oxford Shakespeare: Henry V (1982), introduction and 1.2 commentary",
+        "Jonathan Bate, The Genius of Shakespeare (1997)"
+      ]
+    },
+    {
+      "id": "henry_v_act1_scene2_ann2",
+      "line_start": 184,
+      "line_end": 220,
+      "citation_display": "Henry V 1.2.184–220",
+      "category": "close_reading",
+      "title": "Exeter's honeybee speech — the commonwealth as hive",
+      "body": "Exeter's extended simile of the kingdom as a beehive — with its magistrates, merchants, sad-eyed executioners, and idle drones all ordered under the queen bee — is a set-piece of Elizabethan political theory in verse. The hive was a commonplace figure for the ordered commonwealth, drawn from Virgil's Georgics Book IV and transmitted through Renaissance emblem books and courtesy literature. Shakespeare's particular version works as an argument: a kingdom can sustain both domestic governance and foreign expedition simultaneously, because each order of subject has its own proper work. This answers Canterbury's earlier warning about the Scots invading if the army crosses to France. The simile matters because it is the play's fullest positive vision of political order — a kind of counter-argument to the mess and improvisation that every other scene shows. Shakespeare places it here, at the war's planning moment, as if to say: this is the ideal the expedition claims to embody. Whether the play endorses the ideal or merely displays it is, again, left open.",
+      "sources": [
+        "Virgil, Georgics IV",
+        "Frank Kermode, Shakespeare's Language (2000)",
+        "Pauline Croft, King James (2003), on hive imagery in early modern political writing"
+      ]
+    },
+    {
+      "id": "henry_v_act1_scene2_ann3",
+      "line_start": 245,
+      "line_end": 300,
+      "citation_display": "Henry V 1.2.245–300",
+      "category": "historical",
+      "title": "The tennis-balls episode — a legendary insult",
+      "body": "The Dauphin's mocking gift of tennis balls, and Henry's elaborate in-kind reply, is one of the play's most famous set-pieces. It is also on historically shaky ground. The story appears in several 15th-century chronicles, including the First English Life of Henry V (c. 1513–14) and a ballad tradition that predates the chronicles themselves. But it is not in the most contemporary French sources. Most modern historians treat it as legend — a crystallizing narrative device for a diplomatic insult whose actual form, if any, is lost. What Shakespeare does with the episode is, however, historically precise in another way: he turns Henry's answer into a prophetic catalogue of French suffering ('mock mothers from their sons, / Mock castles down…'), and he locates the conversion of the insult into a war-justification at the crown-coronation moment of the play. 'His jest shall savour but of shallow wit, / When thousands weep more than did laugh at it' (lines 296–297): Henry transforms personal insult into collective retribution. Readers should notice how comfortably the rhetoric of wounded royal honour does this work — and how the Dauphin is made, in effect, to authorize the war.",
+      "sources": [
+        "The First English Life of King Henry the Fifth, ed. C. L. Kingsford (1911)",
+        "Anne Curry, Agincourt: A New History (2005)",
+        "A. R. Humphreys, The Arden Shakespeare: Henry V (1968)"
+      ]
+    },
+    {
+      "id": "henry_v_act1_scene2_ann4",
+      "line_start": 300,
+      "line_end": 312,
+      "citation_display": "Henry V 1.2.300–312",
+      "category": "thematic",
+      "title": "'Well-hallow'd cause' — how a claim becomes a crusade",
+      "body": "Henry's closing line — 'But this lies all within the will of God, / To whom I do appeal' — places the war under divine sanction. This is the characteristic rhetorical move of Henry's speeches throughout the play, and by this point in the scene we have watched it be manufactured: Canterbury's compromised legal opinion, the Church's institutional interest, the sixty lines of Salic genealogy, the lords' eager endorsement, and finally the Dauphin's tennis-balls giving Henry the moral licence to call it an affront. What begins in 1.1 as a bill against Church lands ends in 1.2 as a 'well-hallow'd cause' with God on its side. The play does not tell us that this is cynical; it merely stages the process with unusual clarity. The same providentialism will return after Agincourt, when Henry forbids any soldier to claim credit for the victory on pain of death. Readers may notice that the same rhetorical apparatus that sanctifies conquest in 1.2 will sanctify victory in 4.8.",
+      "sources": [
+        "Stephen Greenblatt, Shakespearean Negotiations (1988)",
+        "Norman Rabkin, 'Either/Or,' in Shakespeare and the Problem of Meaning (1981)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act1_scene2_q1",
+      "kind": "comprehension",
+      "prompt": "What is the 'Salic Law' that Canterbury explicates at length?",
+      "options": [
+        "A Frankish legal tradition cited by 14th-century French jurists to bar royal inheritance through the female line — which Canterbury argues does not apply to France",
+        "A tax on salt levied during Edward III's reign",
+        "A treaty that ended the Hundred Years' War in 1453",
+        "A ceremonial law requiring the king to be crowned at Rheims"
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 20,
+      "anchor_line_start": 34,
+      "anchor_line_end": 88
+    },
+    {
+      "id": "henry_v_act1_scene2_q2",
+      "kind": "inference",
+      "prompt": "Why does Shakespeare stage Canterbury's Salic Law speech at such exhausting length?",
+      "options": [
+        "Because the Elizabethan audience wanted dynastic trivia",
+        "Because Holinshed's Chronicles could not be abridged for legal reasons",
+        "The tangled scholarly exposition dramatizes the process by which a war of conquest is laboriously equipped with legal justification — the legalism is itself the satire",
+        "Because Canterbury is a bad speaker and Shakespeare wanted to show it"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 30,
+      "anchor_line_start": 34,
+      "anchor_line_end": 100
+    },
+    {
+      "id": "henry_v_act1_scene2_q3",
+      "kind": "close_reading",
+      "prompt": "Exeter's 'honey-bees' speech (lines 184–220) uses the beehive as a metaphor for —",
+      "options": [
+        "The Elizabethan court's intrigues",
+        "The ordered commonwealth — a kingdom in which magistrates, merchants, and laborers each have their proper work, an image drawn from Virgil's Georgics",
+        "The Roman Catholic Church",
+        "The guild system of London"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 184,
+      "anchor_line_end": 220
+    },
+    {
+      "id": "henry_v_act1_scene2_q4",
+      "kind": "theme",
+      "prompt": "The Dauphin's gift of tennis balls is —",
+      "options": [
+        "A well-documented historical event of 1414",
+        "A legendary insult — attested in some 15th-century chronicles but not in the contemporary French sources; Shakespeare inherited it from tradition",
+        "Shakespeare's own invention, without precedent",
+        "An actual diplomatic document preserved in the British Library"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 258,
+      "anchor_line_end": 272
+    },
+    {
+      "id": "henry_v_act1_scene2_q5",
+      "kind": "close_reading",
+      "prompt": "What rhetorical transformation does Henry perform in his reply to the tennis balls (lines 272–300)?",
+      "options": [
+        "He forgives the insult and offers the Dauphin peace",
+        "He converts a personal jest into a prophecy of mass French suffering, using the Dauphin's mockery to license collective retribution",
+        "He challenges the Dauphin to a game of tennis",
+        "He ignores the insult and goes to bed"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 272,
+      "anchor_line_end": 300
+    },
+    {
+      "id": "henry_v_act1_scene2_q6",
+      "kind": "theme",
+      "prompt": "By the end of 1.2, how has the motive for war been framed?",
+      "options": [
+        "As pure self-defense against an imminent French invasion",
+        "As a 'well-hallow'd cause' under divine sanction — the scene has staged the process by which a dynastic claim, a compromised legal opinion, and a personal insult combine into a war blessed by God",
+        "As a trade dispute over cloth exports",
+        "As a response to the killing of an English ambassador"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 300,
+      "anchor_line_end": 312
+    }
+  ]
+}

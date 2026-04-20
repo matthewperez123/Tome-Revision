@@ -1,0 +1,89 @@
+{
+  "section_id": "hamlet_act3_scene4",
+  "trials": [
+    {
+      "kind": "comprehension",
+      "prompt": "Who is killed when Hamlet stabs through the tapestry?",
+      "options": [
+        "Claudius, disguised as a courtier.",
+        "Polonius, who had hidden there to eavesdrop.",
+        "Rosencrantz, sent by the King.",
+        "A palace guard following orders."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 22,
+      "anchor_line_end": 30
+    },
+    {
+      "kind": "inference",
+      "prompt": "Why does Hamlet's killing of Polonius function as a structural pivot for the play?",
+      "options": [
+        "It removes Hamlet's chief obstacle to the throne.",
+        "It triggers Laertes's revenge plot, Ophelia's madness, and Hamlet's exile.",
+        "It convinces Claudius to repent.",
+        "It ends the war with Norway."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 22,
+      "anchor_line_end": 35
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "How does Hamlet describe his father when holding the two portraits?",
+      "options": [
+        "A 'pajock' with the mind of a fool.",
+        "'Hyperion's curls, the front of Jove himself, an eye like Mars.'",
+        "'A king of shreds and patches.'",
+        "A warrior whose glory was bought with his subjects' blood."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 55,
+      "anchor_line_end": 62
+    },
+    {
+      "kind": "theme",
+      "prompt": "What does it signify that Gertrude cannot see the ghost?",
+      "options": [
+        "The ghost has died a second time and disappeared.",
+        "It is genuinely unclear: either she lacks Hamlet's initiation into the secret, or the ghost is his hallucination.",
+        "The ghost is refusing to show himself to her out of anger.",
+        "The stage lights are dimmed to signal a dream."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 102,
+      "anchor_line_end": 140
+    },
+    {
+      "kind": "comprehension",
+      "prompt": "What does Hamlet reveal to Gertrude at the end of the scene?",
+      "options": [
+        "That Claudius murdered his father.",
+        "That he knows he is being sent to England and suspects a plot, and that he will 'hoist the engineer with his own petard.'",
+        "That he has forgiven Ophelia.",
+        "That the ghost has commanded him to spare Claudius."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 194,
+      "anchor_line_end": 205
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "What does Hamlet mean by 'I must be cruel only to be kind'?",
+      "options": [
+        "The harshness he shows Gertrude is meant to produce her moral awakening.",
+        "He will be cruel to his enemies to reward his friends.",
+        "A proverbial lament that life rewards cruelty over kindness.",
+        "An apology for his treatment of Ophelia."
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 20,
+      "anchor_line_start": 172,
+      "anchor_line_end": 173
+    }
+  ]
+}

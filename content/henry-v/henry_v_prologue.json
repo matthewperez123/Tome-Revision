@@ -1,0 +1,547 @@
+{
+  "section_id": "henry_v_prologue",
+  "work_id": "henry-v",
+  "sequence": 1,
+  "act": null,
+  "scene": null,
+  "kind": "chorus",
+  "scene_title": "Prologue",
+  "line_count": 34,
+  "word_count": 244,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CHORUS",
+      "text": "O for a Muse of fire, that would ascend"
+    },
+    {
+      "number": 2,
+      "speaker": "CHORUS",
+      "text": "The brightest heaven of invention,"
+    },
+    {
+      "number": 3,
+      "speaker": "CHORUS",
+      "text": "A kingdom for a stage, princes to act"
+    },
+    {
+      "number": 4,
+      "speaker": "CHORUS",
+      "text": "And monarchs to behold the swelling scene!"
+    },
+    {
+      "number": 5,
+      "speaker": "CHORUS",
+      "text": "Then should the warlike Harry, like himself,"
+    },
+    {
+      "number": 6,
+      "speaker": "CHORUS",
+      "text": "Assume the port of Mars; and at his heels,"
+    },
+    {
+      "number": 7,
+      "speaker": "CHORUS",
+      "text": "Leash’d in like hounds, should famine, sword and fire"
+    },
+    {
+      "number": 8,
+      "speaker": "CHORUS",
+      "text": "Crouch for employment. But pardon, gentles all,"
+    },
+    {
+      "number": 9,
+      "speaker": "CHORUS",
+      "text": "The flat unraised spirits that hath dared"
+    },
+    {
+      "number": 10,
+      "speaker": "CHORUS",
+      "text": "On this unworthy scaffold to bring forth"
+    },
+    {
+      "number": 11,
+      "speaker": "CHORUS",
+      "text": "So great an object: can this cockpit hold"
+    },
+    {
+      "number": 12,
+      "speaker": "CHORUS",
+      "text": "The vasty fields of France? or may we cram"
+    },
+    {
+      "number": 13,
+      "speaker": "CHORUS",
+      "text": "Within this wooden O the very casques"
+    },
+    {
+      "number": 14,
+      "speaker": "CHORUS",
+      "text": "That did affright the air at Agincourt?"
+    },
+    {
+      "number": 15,
+      "speaker": "CHORUS",
+      "text": "O pardon! since a crooked figure may"
+    },
+    {
+      "number": 16,
+      "speaker": "CHORUS",
+      "text": "Attest in little place a million;"
+    },
+    {
+      "number": 17,
+      "speaker": "CHORUS",
+      "text": "And let us, ciphers to this great accompt,"
+    },
+    {
+      "number": 18,
+      "speaker": "CHORUS",
+      "text": "On your imaginary forces work."
+    },
+    {
+      "number": 19,
+      "speaker": "CHORUS",
+      "text": "Suppose within the girdle of these walls"
+    },
+    {
+      "number": 20,
+      "speaker": "CHORUS",
+      "text": "Are now confined two mighty monarchies,"
+    },
+    {
+      "number": 21,
+      "speaker": "CHORUS",
+      "text": "Whose high upreared and abutting fronts"
+    },
+    {
+      "number": 22,
+      "speaker": "CHORUS",
+      "text": "The perilous narrow ocean parts asunder:"
+    },
+    {
+      "number": 23,
+      "speaker": "CHORUS",
+      "text": "Piece out our imperfections with your thoughts;"
+    },
+    {
+      "number": 24,
+      "speaker": "CHORUS",
+      "text": "Into a thousand parts divide one man,"
+    },
+    {
+      "number": 25,
+      "speaker": "CHORUS",
+      "text": "And make imaginary puissance;"
+    },
+    {
+      "number": 26,
+      "speaker": "CHORUS",
+      "text": "Think, when we talk of horses, that you see them"
+    },
+    {
+      "number": 27,
+      "speaker": "CHORUS",
+      "text": "Printing their proud hoofs i’ the receiving earth;"
+    },
+    {
+      "number": 28,
+      "speaker": "CHORUS",
+      "text": "For ’tis your thoughts that now must deck our kings,"
+    },
+    {
+      "number": 29,
+      "speaker": "CHORUS",
+      "text": "Carry them here and there; jumping o’er times,"
+    },
+    {
+      "number": 30,
+      "speaker": "CHORUS",
+      "text": "Turning the accomplishment of many years"
+    },
+    {
+      "number": 31,
+      "speaker": "CHORUS",
+      "text": "Into an hourglass: for the which supply,"
+    },
+    {
+      "number": 32,
+      "speaker": "CHORUS",
+      "text": "Admit me Chorus to this history;"
+    },
+    {
+      "number": 33,
+      "speaker": "CHORUS",
+      "text": "Who prologue-like your humble patience pray,"
+    },
+    {
+      "number": 34,
+      "speaker": "CHORUS",
+      "text": "Gently to hear, kindly to judge, our play."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Chorus."
+    },
+    {
+      "after_line": 0,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_prologue_gloss1",
+      "line": 1,
+      "phrase": "Muse of fire",
+      "definition": "highest of the classical Muses — associated with inspired, elevated poetry; the element of fire was thought the most noble"
+    },
+    {
+      "id": "henry_v_prologue_gloss2",
+      "line": 1,
+      "phrase": "ascend",
+      "definition": "rise up to"
+    },
+    {
+      "id": "henry_v_prologue_gloss3",
+      "line": 2,
+      "phrase": "brightest heaven of invention",
+      "definition": "the highest realm of creative imagination — 'invention' means poetic creation"
+    },
+    {
+      "id": "henry_v_prologue_gloss4",
+      "line": 3,
+      "phrase": "A kingdom for a stage",
+      "definition": "a whole kingdom to serve as the playing space — the wish for scale the theatre can't supply"
+    },
+    {
+      "id": "henry_v_prologue_gloss5",
+      "line": 5,
+      "phrase": "warlike Harry",
+      "definition": "Henry V — 'Harry' is the familiar form of Henry throughout the play"
+    },
+    {
+      "id": "henry_v_prologue_gloss6",
+      "line": 6,
+      "phrase": "port of Mars",
+      "definition": "bearing of Mars — the Roman god of war"
+    },
+    {
+      "id": "henry_v_prologue_gloss7",
+      "line": 7,
+      "phrase": "Leash’d in like hounds",
+      "definition": "held in check as if leashed — war's catastrophes are Henry's hunting dogs"
+    },
+    {
+      "id": "henry_v_prologue_gloss8",
+      "line": 7,
+      "phrase": "famine, sword and fire",
+      "definition": "the three calamities of invasion — starvation, slaughter, and burning"
+    },
+    {
+      "id": "henry_v_prologue_gloss9",
+      "line": 8,
+      "phrase": "Crouch for employment",
+      "definition": "wait ready to be unleashed"
+    },
+    {
+      "id": "henry_v_prologue_gloss10",
+      "line": 8,
+      "phrase": "gentles all",
+      "definition": "gentlemen all — formal address to the audience"
+    },
+    {
+      "id": "henry_v_prologue_gloss11",
+      "line": 9,
+      "phrase": "flat unraised spirits",
+      "definition": "unglorified, ordinary souls — the actors' apology for their own plainness"
+    },
+    {
+      "id": "henry_v_prologue_gloss12",
+      "line": 10,
+      "phrase": "unworthy scaffold",
+      "definition": "the stage, humbly described — 'scaffold' here = raised platform, not gallows"
+    },
+    {
+      "id": "henry_v_prologue_gloss13",
+      "line": 11,
+      "phrase": "cockpit",
+      "definition": "small enclosed arena — either a pit for cockfighting or the round theatre itself"
+    },
+    {
+      "id": "henry_v_prologue_gloss14",
+      "line": 12,
+      "phrase": "vasty fields of France",
+      "definition": "the enormous French battlefields — 'vasty' = vast"
+    },
+    {
+      "id": "henry_v_prologue_gloss15",
+      "line": 13,
+      "phrase": "wooden O",
+      "definition": "the Globe Theatre — Shakespeare's round wooden playhouse"
+    },
+    {
+      "id": "henry_v_prologue_gloss16",
+      "line": 13,
+      "phrase": "casques",
+      "definition": "helmets"
+    },
+    {
+      "id": "henry_v_prologue_gloss17",
+      "line": 14,
+      "phrase": "Agincourt",
+      "definition": "the 1415 battle where Henry defeated a much larger French army"
+    },
+    {
+      "id": "henry_v_prologue_gloss18",
+      "line": 15,
+      "phrase": "crooked figure",
+      "definition": "a zero — a curved numeral that multiplies when placed after a digit"
+    },
+    {
+      "id": "henry_v_prologue_gloss19",
+      "line": 16,
+      "phrase": "Attest in little place a million",
+      "definition": "stand in a small space for a great sum — the zero's mathematical trick"
+    },
+    {
+      "id": "henry_v_prologue_gloss20",
+      "line": 17,
+      "phrase": "ciphers",
+      "definition": "zeros; also, insignificant things"
+    },
+    {
+      "id": "henry_v_prologue_gloss21",
+      "line": 17,
+      "phrase": "accompt",
+      "definition": "account; reckoning"
+    },
+    {
+      "id": "henry_v_prologue_gloss22",
+      "line": 18,
+      "phrase": "imaginary forces",
+      "definition": "the powers of your imagination"
+    },
+    {
+      "id": "henry_v_prologue_gloss23",
+      "line": 19,
+      "phrase": "girdle",
+      "definition": "belt; encircling boundary — i.e. the theatre's walls"
+    },
+    {
+      "id": "henry_v_prologue_gloss24",
+      "line": 21,
+      "phrase": "abutting fronts",
+      "definition": "facing coastlines — England and France stare at each other across the Channel"
+    },
+    {
+      "id": "henry_v_prologue_gloss25",
+      "line": 22,
+      "phrase": "perilous narrow ocean",
+      "definition": "the dangerous, narrow sea — the English Channel"
+    },
+    {
+      "id": "henry_v_prologue_gloss26",
+      "line": 23,
+      "phrase": "Piece out our imperfections",
+      "definition": "fill in what the stage lacks"
+    },
+    {
+      "id": "henry_v_prologue_gloss27",
+      "line": 25,
+      "phrase": "puissance",
+      "definition": "military might; armed force"
+    },
+    {
+      "id": "henry_v_prologue_gloss28",
+      "line": 27,
+      "phrase": "Printing their proud hoofs i’ the receiving earth",
+      "definition": "stamping their hooves on the soft ground — one of the play's defining verbal images of imagined spectacle"
+    },
+    {
+      "id": "henry_v_prologue_gloss29",
+      "line": 28,
+      "phrase": "deck",
+      "definition": "adorn; clothe in splendor"
+    },
+    {
+      "id": "henry_v_prologue_gloss30",
+      "line": 29,
+      "phrase": "jumping o’er times",
+      "definition": "skipping across years — the chorus announces its freedom with chronology"
+    },
+    {
+      "id": "henry_v_prologue_gloss31",
+      "line": 31,
+      "phrase": "hourglass",
+      "definition": "the running-time of a stage performance"
+    },
+    {
+      "id": "henry_v_prologue_gloss32",
+      "line": 32,
+      "phrase": "Admit me Chorus",
+      "definition": "accept me as the Chorus — the classical Greek convention of a narrating voice"
+    },
+    {
+      "id": "henry_v_prologue_gloss33",
+      "line": 33,
+      "phrase": "prologue-like",
+      "definition": "in the manner of a prologue"
+    },
+    {
+      "id": "henry_v_prologue_gloss34",
+      "line": 34,
+      "phrase": "Gently to hear, kindly to judge",
+      "definition": "to listen patiently and judge with sympathy — the standard petition for indulgence"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_prologue_ann1",
+      "line_start": 1,
+      "line_end": 8,
+      "citation_display": "Henry V Prologue.1–8",
+      "category": "structural",
+      "title": "The Muse-of-fire invocation and the epic tradition it claims",
+      "body": "The opening eight lines place Henry V inside the classical epic tradition by imitating an epic invocation of the Muse — as Homer opens the Iliad, Virgil the Aeneid, Milton (later) Paradise Lost. By asking for 'a Muse of fire' (the noblest of the four elements), a kingdom-sized stage, and princes and monarchs as its actors, the Chorus stakes a claim: this is not a comedy or an ordinary history play but a poem of national destiny. Yet the invocation is immediately undercut, in lines 8–14, by the humility trope that follows. The pattern — soaring request, swift retraction — is the Chorus's governing rhythm throughout the play. It simultaneously asserts that Henry deserves epic treatment and apologizes for not being able to provide it. Readers should hear this as both reverence and knowing theatrical self-awareness: Shakespeare knows perfectly well his Globe can't stage Agincourt; the Chorus is the play's strategy for converting that limitation into a participatory virtue.",
+      "sources": [
+        "Anne Barton, 'The King Disguised,' in The Triple Bond (1975)",
+        "A. R. Humphreys, The Arden Shakespeare: Henry V (1968)"
+      ]
+    },
+    {
+      "id": "henry_v_prologue_ann2",
+      "line_start": 11,
+      "line_end": 14,
+      "citation_display": "Henry V Prologue.11–14",
+      "category": "historical",
+      "title": "The 'wooden O' and the Globe's constraints",
+      "body": "'This cockpit' and 'this wooden O' refer to the Globe Theatre, which opened in the summer of 1599 — the same season Henry V was first performed. The Chorus's apology is literal: the Globe was a wooden polygon roughly 30 metres across, open to the sky, able to hold perhaps 3,000 spectators but offering a thrust stage with almost no scenery. The play's siege at Harfleur, the night-before-battle panorama of the Act 4 Chorus, the Agincourt victory itself — none of it could be staged. Shakespeare's solution is to write an anti-spectacle: he defers the seen to the imagined and demands the audience supply the missing armies, ships, and cavalry from their own minds. The 'crooked figure' (line 15) — a zero — that can 'attest in little place a million' is a mathematical image for this theatrical trick: the actors are ciphers that the audience must multiply. It is a rhetoric of co-production that, by 1599, had no recent precedent on the English stage.",
+      "sources": [
+        "Andrew Gurr, The Shakespearean Stage 1574–1642 (3rd ed., 1992)",
+        "Stephen Greenblatt, Shakespeare's Freedom (2010)"
+      ]
+    },
+    {
+      "id": "henry_v_prologue_ann3",
+      "line_start": 15,
+      "line_end": 25,
+      "citation_display": "Henry V Prologue.15–25",
+      "category": "thematic",
+      "title": "Imagination as the play's working substance",
+      "body": "The heart of the Prologue is its contract with the audience. The Chorus does not promise to show Agincourt; it asks us to make it. 'Piece out our imperfections with your thoughts,' 'Into a thousand parts divide one man,' 'Think, when we talk of horses, that you see them / Printing their proud hoofs i' the receiving earth' — these are not decorations but working instructions. Shakespeare is asking the audience to perform a continuous act of imaginative generosity, and the whole play will depend on our willingness. This has political implications too: a play that recruits its audience into the making of national glory is a play whose ideological work is necessarily collaborative. If we stop supplying the Chorus's imagined horses, the English cause visibly shrinks to a few men in ragged costumes in a wooden ring. The play's critics (starting with the 20th-century productions that refused to collaborate) have shown how readily the epic frame can be withdrawn once one simply declines to imagine it.",
+      "sources": [
+        "Norman Rabkin, 'Either/Or: Responding to Henry V,' Shakespeare and the Problem of Meaning (1981)",
+        "Stephen Greenblatt, Shakespearean Negotiations (1988)"
+      ]
+    },
+    {
+      "id": "henry_v_prologue_ann4",
+      "line_start": 32,
+      "line_end": 34,
+      "citation_display": "Henry V Prologue.32–34",
+      "category": "thematic",
+      "title": "The Chorus's role — and the play's central interpretive problem",
+      "body": "'Admit me Chorus to this history' — the Chorus petitions the audience to be accepted as a narrative voice. This is the play's unique structural feature: of all Shakespeare's histories, only Henry V has a formal Chorus appearing six times (Prologue, before Acts II–V, and the Epilogue), relentlessly heroic and morally one-toned. Yet the action scenes the Chorus frames are frequently much darker than the Chorus prepares us for. The Prologue introduces Henry as 'warlike Harry, like himself' assuming 'the port of Mars'; the following scenes show Canterbury manipulating the king toward a war of dynastic ambition. The Chorus celebrates 'brothers, friends and countrymen' in the Act 4 Chorus; the Act 4 itself stages Williams's challenge to royal responsibility and the killing of prisoners. Norman Rabkin's 1981 essay 'Either/Or' argues this double vision is the play's point: the Chorus supplies the patriotic frame, the action supplies its critique, and Shakespeare refuses to adjudicate between them. Readers should hold both registers at once.",
+      "sources": [
+        "Norman Rabkin, 'Either/Or: Responding to Henry V,' Shakespeare and the Problem of Meaning (1981)",
+        "Lawrence Danson, Tragic Alphabet (1974)",
+        "Gary Taylor (ed.), The Oxford Shakespeare: Henry V (1982)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_prologue_q1",
+      "kind": "structural",
+      "prompt": "What is the Chorus's opening request, and why?",
+      "options": [
+        "A kingdom-sized stage and a Muse of fire — because the subject is too great for an ordinary theatre",
+        "A quiet setting — because the play is domestic",
+        "An end to dramatic convention — because the story is too true to stage",
+        "The closure of the theatres — because the play is a religious work"
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 15,
+      "anchor_line_start": 1,
+      "anchor_line_end": 8
+    },
+    {
+      "id": "henry_v_prologue_q2",
+      "kind": "close_reading",
+      "prompt": "What does the Chorus mean by 'this wooden O'?",
+      "options": [
+        "The round letter O as a symbol of nothingness",
+        "A hollow crown",
+        "The Globe Theatre — Shakespeare's round wooden playhouse",
+        "A siege-engine used at Agincourt"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 10,
+      "anchor_line_start": 13,
+      "anchor_line_end": 13
+    },
+    {
+      "id": "henry_v_prologue_q3",
+      "kind": "theme",
+      "prompt": "What does the 'crooked figure' that 'may attest in little place a million' (lines 15–16) represent?",
+      "options": [
+        "A dishonest accountant",
+        "A zero — a small numeral that multiplies larger numbers; image for how the actors, as 'ciphers,' must be multiplied by the audience's imagination",
+        "A bent sword unfit for battle",
+        "A star-shape on a military banner"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 15,
+      "anchor_line_end": 17
+    },
+    {
+      "id": "henry_v_prologue_q4",
+      "kind": "comprehension",
+      "prompt": "The Chorus asks the audience to do what specifically?",
+      "options": [
+        "Remain silent throughout the performance",
+        "Imagine the missing armies, fleets, and battlefield in their own minds ('piece out our imperfections with your thoughts')",
+        "Applaud only at the end of each act",
+        "Not bring weapons into the theatre"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 23,
+      "anchor_line_end": 27
+    },
+    {
+      "id": "henry_v_prologue_q5",
+      "kind": "inference",
+      "prompt": "Why does Shakespeare have the Prologue apologize so insistently for the theatre's limitations?",
+      "options": [
+        "He genuinely doubted the play would succeed",
+        "It was legally required by Elizabethan censors",
+        "The apologies recruit the audience into co-producing the play's epic scale — a rhetorical strategy, not mere humility",
+        "He had been forced to cut most of the script before performance"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 25,
+      "anchor_line_start": 15,
+      "anchor_line_end": 25
+    },
+    {
+      "id": "henry_v_prologue_q6",
+      "kind": "theme",
+      "prompt": "Critics often note that the Chorus presents Henry heroically while the action scenes sometimes undercut that portrait. What is this structural feature called in Norman Rabkin's classic 1981 essay?",
+      "options": [
+        "The tragic-comic blend",
+        "The 'Either/Or' double vision — the play sustains both a patriotic and a critical reading at once",
+        "The choral interlude tradition",
+        "The deus-ex-machina effect"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 32,
+      "anchor_line_end": 34
+    }
+  ]
+}

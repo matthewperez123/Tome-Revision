@@ -1,0 +1,1226 @@
+{
+  "section_id": "hamlet_act1_scene3",
+  "work_id": "hamlet",
+  "sequence": 3,
+  "act": 1,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "A room in Polonius’ house",
+  "line_count": 139,
+  "word_count": 1060,
+  "est_read_minutes": 5,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "LAERTES",
+      "text": "My necessaries are embark’d: farewell:"
+    },
+    {
+      "number": 2,
+      "speaker": "LAERTES",
+      "text": "And, sister, as the winds give benefit"
+    },
+    {
+      "number": 3,
+      "speaker": "LAERTES",
+      "text": "And convoy is assistant, do not sleep,"
+    },
+    {
+      "number": 4,
+      "speaker": "LAERTES",
+      "text": "But let me hear from you."
+    },
+    {
+      "number": 4,
+      "speaker": "OPHELIA",
+      "text": "Do you doubt that?"
+    },
+    {
+      "number": 5,
+      "speaker": "LAERTES",
+      "text": "For Hamlet and the trifling of his favour,"
+    },
+    {
+      "number": 6,
+      "speaker": "LAERTES",
+      "text": "Hold it a fashion and a toy in blood,"
+    },
+    {
+      "number": 7,
+      "speaker": "LAERTES",
+      "text": "A violet in the youth of primy nature,"
+    },
+    {
+      "number": 8,
+      "speaker": "LAERTES",
+      "text": "Forward, not permanent, sweet, not lasting,"
+    },
+    {
+      "number": 9,
+      "speaker": "LAERTES",
+      "text": "The perfume and suppliance of a minute;"
+    },
+    {
+      "number": 10,
+      "speaker": "LAERTES",
+      "text": "No more."
+    },
+    {
+      "number": 10,
+      "speaker": "OPHELIA",
+      "text": "No more but so?"
+    },
+    {
+      "number": 11,
+      "speaker": "LAERTES",
+      "text": "Think it no more:"
+    },
+    {
+      "number": 12,
+      "speaker": "LAERTES",
+      "text": "For nature, crescent, does not grow alone"
+    },
+    {
+      "number": 13,
+      "speaker": "LAERTES",
+      "text": "In thews and bulk, but, as this temple waxes,"
+    },
+    {
+      "number": 14,
+      "speaker": "LAERTES",
+      "text": "The inward service of the mind and soul"
+    },
+    {
+      "number": 15,
+      "speaker": "LAERTES",
+      "text": "Grows wide withal. Perhaps he loves you now,"
+    },
+    {
+      "number": 16,
+      "speaker": "LAERTES",
+      "text": "And now no soil nor cautel doth besmirch"
+    },
+    {
+      "number": 17,
+      "speaker": "LAERTES",
+      "text": "The virtue of his will: but you must fear,"
+    },
+    {
+      "number": 18,
+      "speaker": "LAERTES",
+      "text": "His greatness weigh’d, his will is not his own;"
+    },
+    {
+      "number": 19,
+      "speaker": "LAERTES",
+      "text": "For he himself is subject to his birth:"
+    },
+    {
+      "number": 20,
+      "speaker": "LAERTES",
+      "text": "He may not, as unvalued persons do,"
+    },
+    {
+      "number": 21,
+      "speaker": "LAERTES",
+      "text": "Carve for himself; for on his choice depends"
+    },
+    {
+      "number": 22,
+      "speaker": "LAERTES",
+      "text": "The safety and health of this whole state;"
+    },
+    {
+      "number": 23,
+      "speaker": "LAERTES",
+      "text": "And therefore must his choice be circumscribed"
+    },
+    {
+      "number": 24,
+      "speaker": "LAERTES",
+      "text": "Unto the voice and yielding of that body"
+    },
+    {
+      "number": 25,
+      "speaker": "LAERTES",
+      "text": "Whereof he is the head. Then if he says he loves you,"
+    },
+    {
+      "number": 26,
+      "speaker": "LAERTES",
+      "text": "It fits your wisdom so far to believe it"
+    },
+    {
+      "number": 27,
+      "speaker": "LAERTES",
+      "text": "As he in his particular act and place"
+    },
+    {
+      "number": 28,
+      "speaker": "LAERTES",
+      "text": "May give his saying deed; which is no further"
+    },
+    {
+      "number": 29,
+      "speaker": "LAERTES",
+      "text": "Than the main voice of Denmark goes withal."
+    },
+    {
+      "number": 30,
+      "speaker": "LAERTES",
+      "text": "Then weigh what loss your honour may sustain,"
+    },
+    {
+      "number": 31,
+      "speaker": "LAERTES",
+      "text": "If with too credent ear you list his songs,"
+    },
+    {
+      "number": 32,
+      "speaker": "LAERTES",
+      "text": "Or lose your heart, or your chaste treasure open"
+    },
+    {
+      "number": 33,
+      "speaker": "LAERTES",
+      "text": "To his unmaster’d importunity."
+    },
+    {
+      "number": 34,
+      "speaker": "LAERTES",
+      "text": "Fear it, Ophelia, fear it, my dear sister,"
+    },
+    {
+      "number": 35,
+      "speaker": "LAERTES",
+      "text": "And keep you in the rear of your affection,"
+    },
+    {
+      "number": 36,
+      "speaker": "LAERTES",
+      "text": "Out of the shot and danger of desire."
+    },
+    {
+      "number": 37,
+      "speaker": "LAERTES",
+      "text": "The chariest maid is prodigal enough,"
+    },
+    {
+      "number": 38,
+      "speaker": "LAERTES",
+      "text": "If she unmask her beauty to the moon:"
+    },
+    {
+      "number": 39,
+      "speaker": "LAERTES",
+      "text": "Virtue itself ’scapes not calumnious strokes:"
+    },
+    {
+      "number": 40,
+      "speaker": "LAERTES",
+      "text": "The canker galls the infants of the spring,"
+    },
+    {
+      "number": 41,
+      "speaker": "LAERTES",
+      "text": "Too oft before their buttons be disclosed,"
+    },
+    {
+      "number": 42,
+      "speaker": "LAERTES",
+      "text": "And in the morn and liquid dew of youth"
+    },
+    {
+      "number": 43,
+      "speaker": "LAERTES",
+      "text": "Contagious blastments are most imminent."
+    },
+    {
+      "number": 44,
+      "speaker": "LAERTES",
+      "text": "Be wary then; best safety lies in fear:"
+    },
+    {
+      "number": 45,
+      "speaker": "LAERTES",
+      "text": "Youth to itself rebels, though none else near."
+    },
+    {
+      "number": 46,
+      "speaker": "OPHELIA",
+      "text": "I shall the effect of this good lesson keep,"
+    },
+    {
+      "number": 47,
+      "speaker": "OPHELIA",
+      "text": "As watchman to my heart. But, good my brother,"
+    },
+    {
+      "number": 48,
+      "speaker": "OPHELIA",
+      "text": "Do not, as some ungracious pastors do,"
+    },
+    {
+      "number": 49,
+      "speaker": "OPHELIA",
+      "text": "Show me the steep and thorny way to heaven;"
+    },
+    {
+      "number": 50,
+      "speaker": "OPHELIA",
+      "text": "Whiles, like a puff’d and reckless libertine,"
+    },
+    {
+      "number": 51,
+      "speaker": "OPHELIA",
+      "text": "Himself the primrose path of dalliance treads,"
+    },
+    {
+      "number": 52,
+      "speaker": "OPHELIA",
+      "text": "And recks not his own rede."
+    },
+    {
+      "number": 52,
+      "speaker": "LAERTES",
+      "text": "O, fear me not."
+    },
+    {
+      "number": 53,
+      "speaker": "LAERTES",
+      "text": "I stay too long: but here my father comes."
+    },
+    {
+      "number": 54,
+      "speaker": "POLONIUS",
+      "text": "Yet here, Laertes! aboard, aboard, for shame!"
+    },
+    {
+      "number": 55,
+      "speaker": "POLONIUS",
+      "text": "The wind sits in the shoulder of your sail,"
+    },
+    {
+      "number": 56,
+      "speaker": "POLONIUS",
+      "text": "And you are stay’d for. There; my blessing with thee!"
+    },
+    {
+      "number": 57,
+      "speaker": "POLONIUS",
+      "text": "And these few precepts in thy memory"
+    },
+    {
+      "number": 58,
+      "speaker": "POLONIUS",
+      "text": "See thou character. Give thy thoughts no tongue,"
+    },
+    {
+      "number": 59,
+      "speaker": "POLONIUS",
+      "text": "Nor any unproportion’d thought his act."
+    },
+    {
+      "number": 60,
+      "speaker": "POLONIUS",
+      "text": "Be thou familiar, but by no means vulgar."
+    },
+    {
+      "number": 61,
+      "speaker": "POLONIUS",
+      "text": "Those friends thou hast, and their adoption tried,"
+    },
+    {
+      "number": 62,
+      "speaker": "POLONIUS",
+      "text": "Grapple them to thy soul with hoops of steel;"
+    },
+    {
+      "number": 63,
+      "speaker": "POLONIUS",
+      "text": "But do not dull thy palm with entertainment"
+    },
+    {
+      "number": 64,
+      "speaker": "POLONIUS",
+      "text": "Of each new-hatch’d, unfledged comrade. Beware"
+    },
+    {
+      "number": 65,
+      "speaker": "POLONIUS",
+      "text": "Of entrance to a quarrel, but being in,"
+    },
+    {
+      "number": 66,
+      "speaker": "POLONIUS",
+      "text": "Bear’t that the opposed may beware of thee."
+    },
+    {
+      "number": 67,
+      "speaker": "POLONIUS",
+      "text": "Give every man thy ear, but few thy voice;"
+    },
+    {
+      "number": 68,
+      "speaker": "POLONIUS",
+      "text": "Take each man’s censure, but reserve thy judgment."
+    },
+    {
+      "number": 69,
+      "speaker": "POLONIUS",
+      "text": "Costly thy habit as thy purse can buy,"
+    },
+    {
+      "number": 70,
+      "speaker": "POLONIUS",
+      "text": "But not express’d in fancy; rich, not gaudy;"
+    },
+    {
+      "number": 71,
+      "speaker": "POLONIUS",
+      "text": "For the apparel oft proclaims the man,"
+    },
+    {
+      "number": 72,
+      "speaker": "POLONIUS",
+      "text": "And they in France of the best rank and station"
+    },
+    {
+      "number": 73,
+      "speaker": "POLONIUS",
+      "text": "Are of a most select and generous chief in that."
+    },
+    {
+      "number": 74,
+      "speaker": "POLONIUS",
+      "text": "Neither a borrower nor a lender be;"
+    },
+    {
+      "number": 75,
+      "speaker": "POLONIUS",
+      "text": "For loan oft loses both itself and friend,"
+    },
+    {
+      "number": 76,
+      "speaker": "POLONIUS",
+      "text": "And borrowing dulls the edge of husbandry."
+    },
+    {
+      "number": 77,
+      "speaker": "POLONIUS",
+      "text": "This above all: to thine ownself be true,"
+    },
+    {
+      "number": 78,
+      "speaker": "POLONIUS",
+      "text": "And it must follow, as the night the day,"
+    },
+    {
+      "number": 79,
+      "speaker": "POLONIUS",
+      "text": "Thou canst not then be false to any man."
+    },
+    {
+      "number": 80,
+      "speaker": "POLONIUS",
+      "text": "Farewell: my blessing season this in thee!"
+    },
+    {
+      "number": 81,
+      "speaker": "LAERTES",
+      "text": "Most humbly do I take my leave, my lord."
+    },
+    {
+      "number": 82,
+      "speaker": "POLONIUS",
+      "text": "The time invites you; go; your servants tend."
+    },
+    {
+      "number": 83,
+      "speaker": "LAERTES",
+      "text": "Farewell, Ophelia; and remember well"
+    },
+    {
+      "number": 84,
+      "speaker": "LAERTES",
+      "text": "What I have said to you."
+    },
+    {
+      "number": 84,
+      "speaker": "OPHELIA",
+      "text": "’Tis in my memory lock’d,"
+    },
+    {
+      "number": 85,
+      "speaker": "OPHELIA",
+      "text": "And you yourself shall keep the key of it."
+    },
+    {
+      "number": 86,
+      "speaker": "LAERTES",
+      "text": "Farewell."
+    },
+    {
+      "number": 87,
+      "speaker": "POLONIUS",
+      "text": "What is’t, Ophelia, he hath said to you?"
+    },
+    {
+      "number": 88,
+      "speaker": "OPHELIA",
+      "text": "So please you, something touching the Lord Hamlet."
+    },
+    {
+      "number": 89,
+      "speaker": "POLONIUS",
+      "text": "Marry, well bethought:"
+    },
+    {
+      "number": 90,
+      "speaker": "POLONIUS",
+      "text": "’Tis told me, he hath very oft of late"
+    },
+    {
+      "number": 91,
+      "speaker": "POLONIUS",
+      "text": "Given private time to you; and you yourself"
+    },
+    {
+      "number": 92,
+      "speaker": "POLONIUS",
+      "text": "Have of your audience been most free and bounteous:"
+    },
+    {
+      "number": 93,
+      "speaker": "POLONIUS",
+      "text": "If it be so, as so ’tis put on me,"
+    },
+    {
+      "number": 94,
+      "speaker": "POLONIUS",
+      "text": "And that in way of caution, I must tell you,"
+    },
+    {
+      "number": 95,
+      "speaker": "POLONIUS",
+      "text": "You do not understand yourself so clearly"
+    },
+    {
+      "number": 96,
+      "speaker": "POLONIUS",
+      "text": "As it behoves my daughter and your honour."
+    },
+    {
+      "number": 97,
+      "speaker": "POLONIUS",
+      "text": "What is between you? give me up the truth."
+    },
+    {
+      "number": 98,
+      "speaker": "OPHELIA",
+      "text": "He hath, my lord, of late made many tenders"
+    },
+    {
+      "number": 99,
+      "speaker": "OPHELIA",
+      "text": "Of his affection to me."
+    },
+    {
+      "number": 100,
+      "speaker": "POLONIUS",
+      "text": "Affection! pooh! you speak like a green girl,"
+    },
+    {
+      "number": 101,
+      "speaker": "POLONIUS",
+      "text": "Unsifted in such perilous circumstance."
+    },
+    {
+      "number": 102,
+      "speaker": "POLONIUS",
+      "text": "Do you believe his tenders, as you call them?"
+    },
+    {
+      "number": 103,
+      "speaker": "OPHELIA",
+      "text": "I do not know, my lord, what I should think."
+    },
+    {
+      "number": 104,
+      "speaker": "POLONIUS",
+      "text": "Marry, I’ll teach you: think yourself a baby;"
+    },
+    {
+      "number": 105,
+      "speaker": "POLONIUS",
+      "text": "That you have ta’en these tenders for true pay,"
+    },
+    {
+      "number": 106,
+      "speaker": "POLONIUS",
+      "text": "Which are not sterling. Tender yourself more dearly;"
+    },
+    {
+      "number": 107,
+      "speaker": "POLONIUS",
+      "text": "Or—not to crack the wind of the poor phrase,"
+    },
+    {
+      "number": 108,
+      "speaker": "POLONIUS",
+      "text": "Running it thus—you’ll tender me a fool."
+    },
+    {
+      "number": 109,
+      "speaker": "OPHELIA",
+      "text": "My lord, he hath importuned me with love"
+    },
+    {
+      "number": 110,
+      "speaker": "OPHELIA",
+      "text": "In honourable fashion."
+    },
+    {
+      "number": 111,
+      "speaker": "POLONIUS",
+      "text": "Ay, fashion you may call it; go to, go to."
+    },
+    {
+      "number": 112,
+      "speaker": "OPHELIA",
+      "text": "And hath given countenance to his speech, my lord,"
+    },
+    {
+      "number": 113,
+      "speaker": "OPHELIA",
+      "text": "With almost all the holy vows of heaven."
+    },
+    {
+      "number": 114,
+      "speaker": "POLONIUS",
+      "text": "Ay, springes to catch woodcocks. I do know,"
+    },
+    {
+      "number": 115,
+      "speaker": "POLONIUS",
+      "text": "When the blood burns, how prodigal the soul"
+    },
+    {
+      "number": 116,
+      "speaker": "POLONIUS",
+      "text": "Lends the tongue vows: these blazes, daughter,"
+    },
+    {
+      "number": 117,
+      "speaker": "POLONIUS",
+      "text": "Giving more light than heat, extinct in both,"
+    },
+    {
+      "number": 118,
+      "speaker": "POLONIUS",
+      "text": "Even in their promise, as it is a-making,"
+    },
+    {
+      "number": 119,
+      "speaker": "POLONIUS",
+      "text": "You must not take for fire. From this time"
+    },
+    {
+      "number": 120,
+      "speaker": "POLONIUS",
+      "text": "Be somewhat scanter of your maiden presence;"
+    },
+    {
+      "number": 121,
+      "speaker": "POLONIUS",
+      "text": "Set your entreatments at a higher rate"
+    },
+    {
+      "number": 122,
+      "speaker": "POLONIUS",
+      "text": "Than a command to parley. For Lord Hamlet,"
+    },
+    {
+      "number": 123,
+      "speaker": "POLONIUS",
+      "text": "Believe so much in him, that he is young,"
+    },
+    {
+      "number": 124,
+      "speaker": "POLONIUS",
+      "text": "And with a larger tether may he walk"
+    },
+    {
+      "number": 125,
+      "speaker": "POLONIUS",
+      "text": "Than may be given you: in few, Ophelia,"
+    },
+    {
+      "number": 126,
+      "speaker": "POLONIUS",
+      "text": "Do not believe his vows; for they are brokers,"
+    },
+    {
+      "number": 127,
+      "speaker": "POLONIUS",
+      "text": "Not of that dye which their investments show,"
+    },
+    {
+      "number": 128,
+      "speaker": "POLONIUS",
+      "text": "But mere implorators of unholy suits,"
+    },
+    {
+      "number": 129,
+      "speaker": "POLONIUS",
+      "text": "Breathing like sanctified and pious bonds,"
+    },
+    {
+      "number": 130,
+      "speaker": "POLONIUS",
+      "text": "The better to beguile. This is for all:"
+    },
+    {
+      "number": 131,
+      "speaker": "POLONIUS",
+      "text": "I would not, in plain terms, from this time forth,"
+    },
+    {
+      "number": 132,
+      "speaker": "POLONIUS",
+      "text": "Have you so slander any moment leisure,"
+    },
+    {
+      "number": 133,
+      "speaker": "POLONIUS",
+      "text": "As to give words or talk with the Lord Hamlet."
+    },
+    {
+      "number": 134,
+      "speaker": "POLONIUS",
+      "text": "Look to’t, I charge you: come your ways."
+    },
+    {
+      "number": 135,
+      "speaker": "OPHELIA",
+      "text": "I shall obey, my lord."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Laertes and Ophelia."
+    },
+    {
+      "after_line": 53,
+      "text": "Enter Polonius."
+    },
+    {
+      "after_line": 53,
+      "text": "A double blessing is a double grace; Occasion smiles upon a second leave."
+    },
+    {
+      "after_line": 86,
+      "text": "Exit."
+    },
+    {
+      "after_line": 135,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "hamlet_act1_scene3_gloss1",
+      "line": 1,
+      "phrase": "necessaries are embark’d",
+      "definition": "belongings are loaded on the ship"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss2",
+      "line": 3,
+      "phrase": "convoy is assistant",
+      "definition": "transport is available"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss3",
+      "line": 5,
+      "phrase": "trifling of his favour",
+      "definition": "Hamlet's slight attention to you"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss4",
+      "line": 6,
+      "phrase": "fashion and a toy in blood",
+      "definition": "passing fashion and whim of youthful passion"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss5",
+      "line": 7,
+      "phrase": "primy nature",
+      "definition": "youth in its prime"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss6",
+      "line": 8,
+      "phrase": "Forward, not permanent",
+      "definition": "early-blooming but short-lived"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss7",
+      "line": 9,
+      "phrase": "perfume and suppliance",
+      "definition": "fragrance and pleasant pastime"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss8",
+      "line": 12,
+      "phrase": "crescent",
+      "definition": "growing; increasing"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss9",
+      "line": 13,
+      "phrase": "thews and bulk",
+      "definition": "sinews and size"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss10",
+      "line": 13,
+      "phrase": "temple waxes",
+      "definition": "body (the 'temple' of the soul) grows"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss11",
+      "line": 14,
+      "phrase": "inward service of the mind and soul",
+      "definition": "the inner powers of mind and spirit"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss12",
+      "line": 16,
+      "phrase": "soil nor cautel",
+      "definition": "stain nor deceit"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss13",
+      "line": 18,
+      "phrase": "his will is not his own",
+      "definition": "his choice is not his own"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss14",
+      "line": 19,
+      "phrase": "subject to his birth",
+      "definition": "bound by his royal birth"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss15",
+      "line": 20,
+      "phrase": "unvalued persons",
+      "definition": "ordinary, common people"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss16",
+      "line": 21,
+      "phrase": "carve for himself",
+      "definition": "choose (a wife) for himself"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss17",
+      "line": 24,
+      "phrase": "voice and yielding",
+      "definition": "consent and approval"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss18",
+      "line": 29,
+      "phrase": "main voice of Denmark",
+      "definition": "general will of Denmark"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss19",
+      "line": 31,
+      "phrase": "credent ear",
+      "definition": "credulous; believing ear"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss20",
+      "line": 32,
+      "phrase": "chaste treasure",
+      "definition": "virginity"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss21",
+      "line": 33,
+      "phrase": "unmaster’d importunity",
+      "definition": "uncontrolled solicitation (for sex)"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss22",
+      "line": 37,
+      "phrase": "chariest maid",
+      "definition": "most modest young woman"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss23",
+      "line": 38,
+      "phrase": "unmask her beauty to the moon",
+      "definition": "reveal her beauty even to the chaste moon (Diana)"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss24",
+      "line": 39,
+      "phrase": "Virtue itself ’scapes not calumnious strokes",
+      "definition": "even virtue is not safe from slanderous attacks"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss25",
+      "line": 40,
+      "phrase": "canker galls",
+      "definition": "worm damages"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss26",
+      "line": 40,
+      "phrase": "infants of the spring",
+      "definition": "newly opened spring buds"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss27",
+      "line": 42,
+      "phrase": "liquid dew of youth",
+      "definition": "fresh moisture of youth"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss28",
+      "line": 43,
+      "phrase": "contagious blastments",
+      "definition": "infectious blightings"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss29",
+      "line": 48,
+      "phrase": "ungracious pastor",
+      "definition": "graceless preacher"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss30",
+      "line": 51,
+      "phrase": "primrose path of dalliance",
+      "definition": "easy, pleasurable path of sin"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss31",
+      "line": 50,
+      "phrase": "puff’d and reckless libertine",
+      "definition": "bloated and careless debaucher"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss32",
+      "line": 52,
+      "phrase": "recks not his own rede",
+      "definition": "heeds not his own advice"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss33",
+      "line": 54,
+      "phrase": "aboard, aboard, for shame",
+      "definition": "get on board! the wind is waiting, shame to delay"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss34",
+      "line": 57,
+      "phrase": "precepts",
+      "definition": "maxims; pieces of advice"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss35",
+      "line": 58,
+      "phrase": "character",
+      "definition": "engrave; inscribe firmly"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss36",
+      "line": 61,
+      "phrase": "tried",
+      "definition": "tested (their) friendship"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss37",
+      "line": 62,
+      "phrase": "grapple them to thy soul with hoops of steel",
+      "definition": "hold them firmly to your soul with iron bands"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss38",
+      "line": 64,
+      "phrase": "unfledged comrade",
+      "definition": "immature companion (like a bird without feathers)"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss39",
+      "line": 68,
+      "phrase": "censure",
+      "definition": "judgment; opinion"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss40",
+      "line": 71,
+      "phrase": "proclaims the man",
+      "definition": "declares the character"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss41",
+      "line": 73,
+      "phrase": "Are of a most select and generous chief in that",
+      "definition": "are of noble rank and chiefly display refinement in dress"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss42",
+      "line": 74,
+      "phrase": "borrower nor a lender be",
+      "definition": "neither borrow nor lend"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss43",
+      "line": 75,
+      "phrase": "loan oft loses both itself and friend",
+      "definition": "a loan often costs both the money and the friendship"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss44",
+      "line": 76,
+      "phrase": "borrowing dulls the edge of husbandry",
+      "definition": "borrowing blunts the spirit of thrift"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss45",
+      "line": 79,
+      "phrase": "Thou canst not then be false to any man",
+      "definition": "you cannot then be false to anyone"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss46",
+      "line": 80,
+      "phrase": "season this in thee",
+      "definition": "cause this to take root (ripen) in you"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss47",
+      "line": 82,
+      "phrase": "tend",
+      "definition": "wait"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss48",
+      "line": 89,
+      "phrase": "Marry, well bethought",
+      "definition": "indeed, well thought of (a mild oath from 'by Mary')"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss49",
+      "line": 93,
+      "phrase": "put on me",
+      "definition": "disclosed to me"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss50",
+      "line": 100,
+      "phrase": "green girl",
+      "definition": "inexperienced young woman"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss51",
+      "line": 101,
+      "phrase": "Unsifted in such perilous circumstance",
+      "definition": "untested in such dangerous matters"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss52",
+      "line": 105,
+      "phrase": "tenders",
+      "definition": "offers (with pun on coins and promises)"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss53",
+      "line": 106,
+      "phrase": "sterling",
+      "definition": "genuine, pure coin"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss54",
+      "line": 106,
+      "phrase": "Tender yourself more dearly",
+      "definition": "value yourself more highly"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss55",
+      "line": 108,
+      "phrase": "tender me a fool",
+      "definition": "present me with a foolish daughter (or: with a bastard child)"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss56",
+      "line": 111,
+      "phrase": "fashion",
+      "definition": "manner; polite custom"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss57",
+      "line": 111,
+      "phrase": "Go to, go to",
+      "definition": "come now (dismissive)"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss58",
+      "line": 114,
+      "phrase": "springes to catch woodcocks",
+      "definition": "snares to catch foolish birds (traps for the gullible)"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss59",
+      "line": 128,
+      "phrase": "implorators of unholy suits",
+      "definition": "beggars for unholy favors"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss60",
+      "line": 132,
+      "phrase": "slander any moment leisure",
+      "definition": "waste any of your spare time by speaking with"
+    },
+    {
+      "id": "hamlet_act1_scene3_gloss61",
+      "line": 134,
+      "phrase": "Look to’t",
+      "definition": "see to it; mind what I say"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "hamlet_act1_scene3_ann1",
+      "line_start": 10,
+      "line_end": 44,
+      "citation_display": "Hamlet 1.3.10–44",
+      "category": "thematic",
+      "title": "Laertes's lecture and the economy of female chastity",
+      "body": "Laertes's warnings to Ophelia treat her virginity as a family asset subject to market risks: 'your chaste treasure,' the 'canker' that 'galls the infants of the spring.' The lecture is conventional Elizabethan doctrine — a brother's duty to police his sister's sexual conduct — but Shakespeare sharpens the ironies. Ophelia's reply, delivered with the cool grace of a younger sister who has heard the speech before, turns it back on him: 'show me the steep and thorny way to heaven / Whiles, like a puff'd and reckless libertine, / Himself the primrose path of dalliance treads.' She sees through the sermon's asymmetry. It is the last time in the play she will be permitted this much rhetorical authority over a man.",
+      "sources": [
+        "Carol Thomas Neely, Broken Nuptials in Shakespeare's Plays (1985)"
+      ]
+    },
+    {
+      "id": "hamlet_act1_scene3_ann2",
+      "line_start": 59,
+      "line_end": 82,
+      "citation_display": "Hamlet 1.3.59–82",
+      "category": "linguistic",
+      "title": "Polonius's precepts as verbal portraiture",
+      "body": "Polonius's famous advice ('Neither a borrower nor a lender be,' 'to thine own self be true') has been quoted out of context so often that readers forget its dramatic function. The maxims are recycled commonplaces from late-Tudor conduct manuals; what Shakespeare does is stitch them end-to-end without connecting logic, producing the effect of a mind that values sententious phrasing above any coherent philosophy. Modern productions often play this speech for comedy; Elizabethan audiences heard a magistrate who has mistaken the cadences of wisdom for its substance. The final line — 'This above all: to thine own self be true' — is the phrase most liable to moral inversion, since the play will show Polonius's self to be precisely the thing one ought not to be true to.",
+      "sources": [
+        "Frank Kermode, Shakespeare's Language (2000)"
+      ]
+    },
+    {
+      "id": "hamlet_act1_scene3_ann3",
+      "line_start": 90,
+      "line_end": 135,
+      "citation_display": "Hamlet 1.3.90–135",
+      "category": "thematic",
+      "title": "Ophelia's 'I do not know, my lord, what I should think'",
+      "body": "Polonius's interrogation of Ophelia about Hamlet's love-tokens is the scene's emotional crux. Ophelia begins with guarded confidence ('He hath, my lord, of late made many tenders') and ends with obedience so complete it erases her own perception: 'I shall obey, my lord.' Between these poles Polonius pries open a private experience she can barely articulate and reframes it as a family political problem. The line 'Tender yourself more dearly' puns on 'tender' as a coin, and its financial register makes clear that Ophelia's love is being appraised as capital. Janet Adelman observes that Ophelia's tragedy begins here, not with Hamlet's cruelty — she loses, in this scene, the language to think her own experience.",
+      "sources": [
+        "Janet Adelman, Suffocating Mothers (1992)"
+      ]
+    },
+    {
+      "id": "hamlet_act1_scene3_ann4",
+      "line_start": 115,
+      "line_end": 118,
+      "citation_display": "Hamlet 1.3.115–118",
+      "category": "close_reading",
+      "title": "'Springes to catch woodcocks'",
+      "body": "Polonius's phrase describing Hamlet's vows to Ophelia compares them to snares set for woodcocks — birds so proverbially stupid that they walk into the same trap twice. The image reduces Hamlet's love to predation and Ophelia to a dim bird. The spring-trap (a springe) was a familiar rural device, triggered by the victim's own footstep; Polonius's metaphor thus blames Ophelia for her susceptibility while pretending only to warn her. This is the scene's quiet cruelty: the father speaks the language of protection and performs the work of a cynic. Shakespeare's hunting imagery recurs throughout the play — the 'hawk from a handsaw,' the 'galled jade,' the pirate-ship ambush — and always accompanies characters who are being trapped or trapping.",
+      "sources": [
+        "Caroline Spurgeon, Shakespeare's Imagery (1935)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "hamlet_act1_scene3_q1",
+      "kind": "comprehension",
+      "prompt": "What does Laertes warn Ophelia about before leaving for France?",
+      "options": [
+        "The political danger of associating with Prince Hamlet.",
+        "Hamlet's affections toward her, which he calls passing and unreliable.",
+        "The rumor that Polonius intends to send her to a convent.",
+        "That the King has designs of his own on her."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 4,
+      "anchor_line_end": 44
+    },
+    {
+      "id": "hamlet_act1_scene3_q2",
+      "kind": "inference",
+      "prompt": "When Ophelia tells Laertes to show her the way to heaven while he himself treads the 'primrose path of dalliance,' what is she doing?",
+      "options": [
+        "Accepting his advice and resolving to live more chastely.",
+        "Pointing out the hypocrisy of a brother who polices her conduct while indulging his own.",
+        "Mocking him as a hypocritical Puritan.",
+        "Confessing that she has already compromised her virtue."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 46,
+      "anchor_line_end": 51
+    },
+    {
+      "id": "hamlet_act1_scene3_q3",
+      "kind": "close_reading",
+      "prompt": "Which of these is NOT a precept Polonius delivers to Laertes in this scene?",
+      "options": [
+        "'Give every man thy ear, but few thy voice.'",
+        "'Neither a borrower nor a lender be.'",
+        "'This above all: to thine own self be true.'",
+        "'Trust not a friend who praises you too much.'"
+      ],
+      "answer_index": 3,
+      "wisdom_reward": 15,
+      "anchor_line_start": 60,
+      "anchor_line_end": 82
+    },
+    {
+      "id": "hamlet_act1_scene3_q4",
+      "kind": "theme",
+      "prompt": "What does Polonius's phrase 'springes to catch woodcocks' imply about Hamlet's expressions of love?",
+      "options": [
+        "That they are genuine declarations suitable for marriage.",
+        "That they are traps set for a gullible victim.",
+        "That they are harmless jests among courtiers.",
+        "That they are Latin exercises Hamlet is practicing."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 115,
+      "anchor_line_end": 118
+    },
+    {
+      "id": "hamlet_act1_scene3_q5",
+      "kind": "comprehension",
+      "prompt": "What does Polonius order Ophelia to do at the end of the scene?",
+      "options": [
+        "Return all of Hamlet's letters and refuse to see him.",
+        "Report any meetings with Hamlet directly to the King.",
+        "Stop speaking with Hamlet and not give him any of her time.",
+        "Accept Hamlet's proposals but on her father's terms."
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 10,
+      "anchor_line_start": 131,
+      "anchor_line_end": 135
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "section_id": "julius_caesar_act5_scene2",
+  "work_id": "julius-caesar",
+  "sequence": 15,
+  "act": 5,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "The same. The field of battle",
+  "line_count": 6,
+  "word_count": 47,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "BRUTUS",
+      "text": "Ride, ride, Messala, ride, and give these bills"
+    },
+    {
+      "number": 2,
+      "speaker": "BRUTUS",
+      "text": "Unto the legions on the other side. Loud alarum."
+    },
+    {
+      "number": 3,
+      "speaker": "BRUTUS",
+      "text": "Let them set on at once; for I perceive"
+    },
+    {
+      "number": 4,
+      "speaker": "BRUTUS",
+      "text": "But cold demeanour in Octavius’ wing,"
+    },
+    {
+      "number": 5,
+      "speaker": "BRUTUS",
+      "text": "And sudden push gives them the overthrow."
+    },
+    {
+      "number": 6,
+      "speaker": "BRUTUS",
+      "text": "Ride, ride, Messala: let them all come down."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Alarum. Enter Brutus and Messala."
+    },
+    {
+      "after_line": 6,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "julius_caesar_act5_scene2_gloss1",
+      "line": 1,
+      "phrase": "bills",
+      "definition": "written orders; dispatches"
+    },
+    {
+      "id": "julius_caesar_act5_scene2_gloss2",
+      "line": 2,
+      "phrase": "alarum",
+      "definition": "a call to arms; a trumpet signal for battle"
+    },
+    {
+      "id": "julius_caesar_act5_scene2_gloss3",
+      "line": 4,
+      "phrase": "cold demeanour",
+      "definition": "lack of aggression; cold fighting spirit"
+    },
+    {
+      "id": "julius_caesar_act5_scene2_gloss4",
+      "line": 5,
+      "phrase": "sudden push",
+      "definition": "a swift charge"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "julius_caesar_act5_scene2_ann1",
+      "line_start": 1,
+      "line_end": 6,
+      "citation_display": "Julius Caesar 5.2.1–6",
+      "category": "structural",
+      "title": "Six lines: the shortest scene in the play",
+      "body": "Brutus's hurried order to Messala — attack Octavius's wing, which is showing 'cold demeanour' — is six lines. It is Shakespeare's device for the speed of battle. Where 4.3 was a 300-line tent scene in which philosophical positions were debated and relationships tested, 5.2 is the battlefield itself: commands given, riders dispatched, alarums within. Shakespeare had used this technique before (the short battlefield scenes in *Henry IV Part 1* at Shrewsbury) and would again (Agincourt in *Henry V*), but the contrast between the long rhetorical setup of 5.1 and the four-word lines of 5.2 is especially sharp. Political oratory has ended; killing has begun.\n\nThe historical note is that Brutus's perception is correct: Octavius's wing did show weakness at the first battle of Philippi, and Brutus's forces temporarily overran Octavius's camp. But Cassius's wing, attacked by Antony, broke; Cassius killed himself on the mistaken report of Titinius's death. The first battle was a tactical draw; the second, weeks later, destroyed Brutus's army.",
+      "sources": [
+        "Plutarch, *Life of Brutus* §41–44 (North, 1579)",
+        "Appian, *Civil Wars* IV.105–138"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "julius_caesar_act5_scene2_q1",
+      "kind": "structural",
+      "prompt": "Why is 5.2 only six lines?",
+      "options": [
+        "Shakespeare ran out of material",
+        "Stagecraft — after the long rhetorical 5.1, the six-line scene signals that talk has stopped and killing has begun; battlefield speed as dramatic compression",
+        "The play is unfinished",
+        "An editor cut it"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 1,
+      "anchor_line_end": 6
+    }
+  ]
+}

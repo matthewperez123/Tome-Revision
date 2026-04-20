@@ -1,0 +1,1113 @@
+{
+  "section_id": "romeo_and_juliet_act3_scene2",
+  "work_id": "romeo-and-juliet",
+  "sequence": 15,
+  "act": 3,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "Capulet's orchard",
+  "line_count": 145,
+  "word_count": 1110,
+  "est_read_minutes": 6,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "JULIET",
+      "text": "Gallop apace, you fiery-footed steeds,"
+    },
+    {
+      "number": 2,
+      "speaker": "JULIET",
+      "text": "Towards Phoebus’ lodging: such a waggoner"
+    },
+    {
+      "number": 3,
+      "speaker": "JULIET",
+      "text": "As Phaethon would whip you to the west,"
+    },
+    {
+      "number": 4,
+      "speaker": "JULIET",
+      "text": "And bring in cloudy night immediately."
+    },
+    {
+      "number": 5,
+      "speaker": "JULIET",
+      "text": "Spread thy close curtain, love-performing night,"
+    },
+    {
+      "number": 6,
+      "speaker": "JULIET",
+      "text": "That runaways’ eyes may wink, and Romeo"
+    },
+    {
+      "number": 7,
+      "speaker": "JULIET",
+      "text": "Leap to these arms, untalk’d of and unseen."
+    },
+    {
+      "number": 8,
+      "speaker": "JULIET",
+      "text": "Lovers can see to do their amorous rites"
+    },
+    {
+      "number": 9,
+      "speaker": "JULIET",
+      "text": "By their own beauties; or, if love be blind,"
+    },
+    {
+      "number": 10,
+      "speaker": "JULIET",
+      "text": "It best agrees with night. Come, civil night,"
+    },
+    {
+      "number": 11,
+      "speaker": "JULIET",
+      "text": "Thou sober-suited matron, all in black,"
+    },
+    {
+      "number": 12,
+      "speaker": "JULIET",
+      "text": "And learn me how to lose a winning match,"
+    },
+    {
+      "number": 13,
+      "speaker": "JULIET",
+      "text": "Play’d for a pair of stainless maidenhoods:"
+    },
+    {
+      "number": 14,
+      "speaker": "JULIET",
+      "text": "Hood my unmann’d blood, bating in my cheeks,"
+    },
+    {
+      "number": 15,
+      "speaker": "JULIET",
+      "text": "With thy black mantle; till strange love, grown bold,"
+    },
+    {
+      "number": 16,
+      "speaker": "JULIET",
+      "text": "Think true love acted simple modesty."
+    },
+    {
+      "number": 17,
+      "speaker": "JULIET",
+      "text": "Come, night; come, Romeo; come, thou day in night;"
+    },
+    {
+      "number": 18,
+      "speaker": "JULIET",
+      "text": "For thou wilt lie upon the wings of night"
+    },
+    {
+      "number": 19,
+      "speaker": "JULIET",
+      "text": "Whiter than new snow on a raven’s back."
+    },
+    {
+      "number": 20,
+      "speaker": "JULIET",
+      "text": "Come, gentle night, come, loving, black-brow’d night,"
+    },
+    {
+      "number": 21,
+      "speaker": "JULIET",
+      "text": "Give me my Romeo; and, when he shall die,"
+    },
+    {
+      "number": 22,
+      "speaker": "JULIET",
+      "text": "Take him and cut him out in little stars,"
+    },
+    {
+      "number": 23,
+      "speaker": "JULIET",
+      "text": "And he will make the face of heaven so fine"
+    },
+    {
+      "number": 24,
+      "speaker": "JULIET",
+      "text": "That all the world will be in love with night"
+    },
+    {
+      "number": 25,
+      "speaker": "JULIET",
+      "text": "And pay no worship to the garish sun."
+    },
+    {
+      "number": 26,
+      "speaker": "JULIET",
+      "text": "O, I have bought the mansion of a love,"
+    },
+    {
+      "number": 27,
+      "speaker": "JULIET",
+      "text": "But not possess’d it, and, though I am sold,"
+    },
+    {
+      "number": 28,
+      "speaker": "JULIET",
+      "text": "Not yet enjoy’d: so tedious is this day"
+    },
+    {
+      "number": 29,
+      "speaker": "JULIET",
+      "text": "As is the night before some festival"
+    },
+    {
+      "number": 30,
+      "speaker": "JULIET",
+      "text": "To an impatient child that hath new robes"
+    },
+    {
+      "number": 31,
+      "speaker": "JULIET",
+      "text": "And may not wear them. O, here comes my nurse,"
+    },
+    {
+      "number": 32,
+      "speaker": "JULIET",
+      "text": "And she brings news; and every tongue that speaks"
+    },
+    {
+      "number": 33,
+      "speaker": "JULIET",
+      "text": "But Romeo’s name speaks heavenly eloquence."
+    },
+    {
+      "number": 33,
+      "speaker": "NURSE",
+      "text": "Ay, ay, the cords."
+    },
+    {
+      "number": 34,
+      "speaker": "JULIET",
+      "text": "Ay me! what news? why dost thou wring thy hands?"
+    },
+    {
+      "number": 35,
+      "speaker": "NURSE",
+      "text": "Ah, well-a-day! he’s dead, he’s dead, he’s dead!"
+    },
+    {
+      "number": 36,
+      "speaker": "NURSE",
+      "text": "We are undone, lady, we are undone!"
+    },
+    {
+      "number": 37,
+      "speaker": "NURSE",
+      "text": "Alack the day! he’s gone, he’s kill’d, he’s dead!"
+    },
+    {
+      "number": 38,
+      "speaker": "JULIET",
+      "text": "Can heaven be so envious?"
+    },
+    {
+      "number": 38,
+      "speaker": "NURSE",
+      "text": "Romeo can,"
+    },
+    {
+      "number": 39,
+      "speaker": "NURSE",
+      "text": "Though heaven cannot: O Romeo, Romeo!"
+    },
+    {
+      "number": 40,
+      "speaker": "NURSE",
+      "text": "Who ever would have thought it? Romeo!"
+    },
+    {
+      "number": 41,
+      "speaker": "JULIET",
+      "text": "What devil art thou, that dost torment me thus?"
+    },
+    {
+      "number": 42,
+      "speaker": "JULIET",
+      "text": "This torture should be roar’d in dismal hell."
+    },
+    {
+      "number": 43,
+      "speaker": "JULIET",
+      "text": "Hath Romeo slain himself? say thou but “I,”"
+    },
+    {
+      "number": 44,
+      "speaker": "JULIET",
+      "text": "And that bare vowel “I” shall poison more"
+    },
+    {
+      "number": 45,
+      "speaker": "JULIET",
+      "text": "Than the death-darting eye of cockatrice:"
+    },
+    {
+      "number": 46,
+      "speaker": "JULIET",
+      "text": "I am not I, if there be such an I;"
+    },
+    {
+      "number": 47,
+      "speaker": "JULIET",
+      "text": "Or those eyes shut, that make thee answer “I.”"
+    },
+    {
+      "number": 48,
+      "speaker": "JULIET",
+      "text": "If he be slain, say “I”; or if not, no:"
+    },
+    {
+      "number": 49,
+      "speaker": "JULIET",
+      "text": "Brief sounds determine of my weal or woe."
+    },
+    {
+      "number": 50,
+      "speaker": "NURSE",
+      "text": "I saw the wound, I saw it with mine eyes—"
+    },
+    {
+      "number": 51,
+      "speaker": "NURSE",
+      "text": "God save the mark!—here on his manly breast:"
+    },
+    {
+      "number": 52,
+      "speaker": "NURSE",
+      "text": "A piteous corse, a bloody piteous corse;"
+    },
+    {
+      "number": 53,
+      "speaker": "NURSE",
+      "text": "Pale, pale as ashes, all bedaub’d in blood,"
+    },
+    {
+      "number": 54,
+      "speaker": "NURSE",
+      "text": "All in gore-blood; I swounded at the sight."
+    },
+    {
+      "number": 55,
+      "speaker": "JULIET",
+      "text": "O, break, my heart! poor bankrupt, break at once!"
+    },
+    {
+      "number": 56,
+      "speaker": "JULIET",
+      "text": "To prison, eyes, ne’er look on liberty!"
+    },
+    {
+      "number": 57,
+      "speaker": "JULIET",
+      "text": "Vile earth, to earth resign; end motion here;"
+    },
+    {
+      "number": 58,
+      "speaker": "JULIET",
+      "text": "And thou and Romeo press one heavy bier!"
+    },
+    {
+      "number": 59,
+      "speaker": "NURSE",
+      "text": "O Tybalt, Tybalt, the best friend I had!"
+    },
+    {
+      "number": 60,
+      "speaker": "NURSE",
+      "text": "O courteous Tybalt! honest gentleman!"
+    },
+    {
+      "number": 61,
+      "speaker": "NURSE",
+      "text": "That ever I should live to see thee dead!"
+    },
+    {
+      "number": 62,
+      "speaker": "JULIET",
+      "text": "What storm is this that blows so contrary?"
+    },
+    {
+      "number": 63,
+      "speaker": "JULIET",
+      "text": "Is Romeo slaughter’d, and is Tybalt dead?"
+    },
+    {
+      "number": 64,
+      "speaker": "JULIET",
+      "text": "My dear-loved cousin, and my dearer lord?"
+    },
+    {
+      "number": 65,
+      "speaker": "JULIET",
+      "text": "Then, dreadful trumpet, sound the general doom!"
+    },
+    {
+      "number": 66,
+      "speaker": "JULIET",
+      "text": "For who is living, if those two are gone?"
+    },
+    {
+      "number": 67,
+      "speaker": "NURSE",
+      "text": "Tybalt is gone, and Romeo banished;"
+    },
+    {
+      "number": 68,
+      "speaker": "NURSE",
+      "text": "Romeo that kill’d him, he is banished."
+    },
+    {
+      "number": 69,
+      "speaker": "JULIET",
+      "text": "O God! did Romeo’s hand shed Tybalt’s blood?"
+    },
+    {
+      "number": 70,
+      "speaker": "NURSE",
+      "text": "It did, it did; alas the day, it did!"
+    },
+    {
+      "number": 71,
+      "speaker": "JULIET",
+      "text": "O serpent heart, hid with a flowering face!"
+    },
+    {
+      "number": 72,
+      "speaker": "JULIET",
+      "text": "Did ever dragon keep so fair a cave?"
+    },
+    {
+      "number": 73,
+      "speaker": "JULIET",
+      "text": "Beautiful tyrant! fiend angelical!"
+    },
+    {
+      "number": 74,
+      "speaker": "JULIET",
+      "text": "Dove-feather’d raven! wolvish-ravening lamb!"
+    },
+    {
+      "number": 75,
+      "speaker": "JULIET",
+      "text": "Despised substance of divinest show!"
+    },
+    {
+      "number": 76,
+      "speaker": "JULIET",
+      "text": "Just opposite to what thou justly seem’st,"
+    },
+    {
+      "number": 77,
+      "speaker": "JULIET",
+      "text": "A damned saint, an honourable villain!"
+    },
+    {
+      "number": 78,
+      "speaker": "JULIET",
+      "text": "O nature, what hadst thou to do in hell,"
+    },
+    {
+      "number": 79,
+      "speaker": "JULIET",
+      "text": "When thou didst bower the spirit of a fiend"
+    },
+    {
+      "number": 80,
+      "speaker": "JULIET",
+      "text": "In moral paradise of such sweet flesh?"
+    },
+    {
+      "number": 81,
+      "speaker": "JULIET",
+      "text": "Was ever book containing such vile matter"
+    },
+    {
+      "number": 82,
+      "speaker": "JULIET",
+      "text": "So fairly bound? O, that deceit should dwell"
+    },
+    {
+      "number": 83,
+      "speaker": "JULIET",
+      "text": "In such a gorgeous palace!"
+    },
+    {
+      "number": 83,
+      "speaker": "NURSE",
+      "text": "There’s no trust,"
+    },
+    {
+      "number": 84,
+      "speaker": "NURSE",
+      "text": "No faith, no honesty in men; all perjured,"
+    },
+    {
+      "number": 85,
+      "speaker": "NURSE",
+      "text": "All forsworn, all naught, all dissemblers."
+    },
+    {
+      "number": 86,
+      "speaker": "NURSE",
+      "text": "Ah, where’s my man? give me some aqua vitae:"
+    },
+    {
+      "number": 87,
+      "speaker": "NURSE",
+      "text": "These griefs, these woes, these sorrows make me old."
+    },
+    {
+      "number": 88,
+      "speaker": "NURSE",
+      "text": "Shame come to Romeo!"
+    },
+    {
+      "number": 88,
+      "speaker": "JULIET",
+      "text": "Blister’d be thy tongue"
+    },
+    {
+      "number": 89,
+      "speaker": "JULIET",
+      "text": "For such a wish! he was not born to shame:"
+    },
+    {
+      "number": 90,
+      "speaker": "JULIET",
+      "text": "Upon his brow shame is ashamed to sit;"
+    },
+    {
+      "number": 91,
+      "speaker": "JULIET",
+      "text": "For ’tis a throne where honour may be crown’d"
+    },
+    {
+      "number": 92,
+      "speaker": "JULIET",
+      "text": "Sole monarch of the universal earth."
+    },
+    {
+      "number": 93,
+      "speaker": "JULIET",
+      "text": "O, what a beast was I to chide at him!"
+    },
+    {
+      "number": 94,
+      "speaker": "NURSE",
+      "text": "Will you speak well of him that kill’d your cousin?"
+    },
+    {
+      "number": 95,
+      "speaker": "JULIET",
+      "text": "Shall I speak ill of him that is my husband?"
+    },
+    {
+      "number": 96,
+      "speaker": "JULIET",
+      "text": "Ah, poor my lord, what tongue shall smooth thy name,"
+    },
+    {
+      "number": 97,
+      "speaker": "JULIET",
+      "text": "When I, thy three-hours wife, have mangled it?"
+    },
+    {
+      "number": 98,
+      "speaker": "JULIET",
+      "text": "But, wherefore, villain, didst thou kill my cousin?"
+    },
+    {
+      "number": 99,
+      "speaker": "JULIET",
+      "text": "That villain cousin would have kill’d my husband:"
+    },
+    {
+      "number": 100,
+      "speaker": "JULIET",
+      "text": "Back, foolish tears, back to your native spring;"
+    },
+    {
+      "number": 101,
+      "speaker": "JULIET",
+      "text": "Your tributary drops belong to woe,"
+    },
+    {
+      "number": 102,
+      "speaker": "JULIET",
+      "text": "Which you, mistaking, offer up to joy."
+    },
+    {
+      "number": 103,
+      "speaker": "JULIET",
+      "text": "My husband lives, that Tybalt would have slain;"
+    },
+    {
+      "number": 104,
+      "speaker": "JULIET",
+      "text": "And Tybalt’s dead, that would have slain my husband:"
+    },
+    {
+      "number": 105,
+      "speaker": "JULIET",
+      "text": "All this is comfort; wherefore weep I then?"
+    },
+    {
+      "number": 106,
+      "speaker": "JULIET",
+      "text": "Some word there was, worser than Tybalt’s death,"
+    },
+    {
+      "number": 107,
+      "speaker": "JULIET",
+      "text": "That murder’d me: I would forget it fain;"
+    },
+    {
+      "number": 108,
+      "speaker": "JULIET",
+      "text": "But, O, it presses to my memory,"
+    },
+    {
+      "number": 109,
+      "speaker": "JULIET",
+      "text": "Like damned guilty deeds to sinners’ minds:"
+    },
+    {
+      "number": 110,
+      "speaker": "JULIET",
+      "text": "“Tybalt is dead, and Romeo—banished;”"
+    },
+    {
+      "number": 111,
+      "speaker": "JULIET",
+      "text": "That “banished,” that one word “banished,”"
+    },
+    {
+      "number": 112,
+      "speaker": "JULIET",
+      "text": "Hath slain ten thousand Tybalts. Tybalt’s death"
+    },
+    {
+      "number": 113,
+      "speaker": "JULIET",
+      "text": "Was woe enough, if it had ended there:"
+    },
+    {
+      "number": 114,
+      "speaker": "JULIET",
+      "text": "Or, if sour woe delights in fellowship"
+    },
+    {
+      "number": 115,
+      "speaker": "JULIET",
+      "text": "And needly will be rank’d with other griefs,"
+    },
+    {
+      "number": 116,
+      "speaker": "JULIET",
+      "text": "Why follow’d not, when she said “Tybalt’s dead,”"
+    },
+    {
+      "number": 117,
+      "speaker": "JULIET",
+      "text": "“Thy father,” or “thy mother,” nay, or both,"
+    },
+    {
+      "number": 118,
+      "speaker": "JULIET",
+      "text": "Which modern lamentations might have moved?"
+    },
+    {
+      "number": 119,
+      "speaker": "JULIET",
+      "text": "But with a rearward following Tybalt’s death,"
+    },
+    {
+      "number": 120,
+      "speaker": "JULIET",
+      "text": "“Romeo is banished,” to speak that word,"
+    },
+    {
+      "number": 121,
+      "speaker": "JULIET",
+      "text": "Is father, mother, Tybalt, Romeo, Juliet,"
+    },
+    {
+      "number": 122,
+      "speaker": "JULIET",
+      "text": "All slain, all dead. “Romeo is banished!”"
+    },
+    {
+      "number": 123,
+      "speaker": "JULIET",
+      "text": "There is no end, no limit, measure, bound,"
+    },
+    {
+      "number": 124,
+      "speaker": "JULIET",
+      "text": "In that word’s death; no words can that woe sound."
+    },
+    {
+      "number": 125,
+      "speaker": "JULIET",
+      "text": "Where is my father, and my mother, nurse?"
+    },
+    {
+      "number": 126,
+      "speaker": "NURSE",
+      "text": "Weeping and wailing over Tybalt’s corse:"
+    },
+    {
+      "number": 127,
+      "speaker": "NURSE",
+      "text": "Will you go to them? I will bring you thither."
+    },
+    {
+      "number": 128,
+      "speaker": "JULIET",
+      "text": "Wash they his wounds with tears: mine shall be spent,"
+    },
+    {
+      "number": 129,
+      "speaker": "JULIET",
+      "text": "When theirs are dry, for Romeo’s banishment."
+    },
+    {
+      "number": 130,
+      "speaker": "JULIET",
+      "text": "Take up those cords: poor ropes, you are beguiled,"
+    },
+    {
+      "number": 131,
+      "speaker": "JULIET",
+      "text": "Both you and I; for Romeo is exiled:"
+    },
+    {
+      "number": 132,
+      "speaker": "JULIET",
+      "text": "He made you for a highway to my bed;"
+    },
+    {
+      "number": 133,
+      "speaker": "JULIET",
+      "text": "But I, a maid, die maiden-widowed."
+    },
+    {
+      "number": 134,
+      "speaker": "JULIET",
+      "text": "Come, cords, come, nurse; I’ll to my wedding-bed;"
+    },
+    {
+      "number": 135,
+      "speaker": "JULIET",
+      "text": "And death, not Romeo, take my maidenhead!"
+    },
+    {
+      "number": 136,
+      "speaker": "NURSE",
+      "text": "Hie to your chamber: I’ll find Romeo"
+    },
+    {
+      "number": 137,
+      "speaker": "NURSE",
+      "text": "To comfort you: I wot well where he is."
+    },
+    {
+      "number": 138,
+      "speaker": "NURSE",
+      "text": "Hark ye, your Romeo will be here at night:"
+    },
+    {
+      "number": 139,
+      "speaker": "NURSE",
+      "text": "I’ll to him; he is hid at Laurence’ cell."
+    },
+    {
+      "number": 140,
+      "speaker": "JULIET",
+      "text": "O, find him! give this ring to my true knight,"
+    },
+    {
+      "number": 141,
+      "speaker": "JULIET",
+      "text": "And bid him come to take his last farewell."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Juliet."
+    },
+    {
+      "after_line": 33,
+      "text": "Enter Nurse, with cords."
+    },
+    {
+      "after_line": 33,
+      "text": "Now, nurse, what news? What hast thou there? the cords That Romeo bid thee fetch?"
+    },
+    {
+      "after_line": 33,
+      "text": "Throws them down."
+    },
+    {
+      "after_line": 141,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss1",
+      "line": 1,
+      "phrase": "Gallop apace, you fiery-footed steeds",
+      "definition": "Juliet urges the sun's horses to race on — an epithalamium (wedding-night hymn)"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss2",
+      "line": 1,
+      "phrase": "fiery-footed steeds",
+      "definition": "the horses of the sun-god Phoebus, drawing his chariot"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss3",
+      "line": 2,
+      "phrase": "Phoebus’ lodging",
+      "definition": "the sun-god's resting place — the west"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss4",
+      "line": 3,
+      "phrase": "Phaethon",
+      "definition": "Apollo's son who lost control of the sun-chariot; Juliet begs for just such recklessness"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss5",
+      "line": 5,
+      "phrase": "love-performing night",
+      "definition": "the night that enacts love — when marriages are consummated"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss6",
+      "line": 6,
+      "phrase": "runaway",
+      "definition": "runaway gossips; a long-debated crux — Juliet asks their eyes to close"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss7",
+      "line": 7,
+      "phrase": "Leap to these arms, untalk’d of and unseen",
+      "definition": "come to me unnoticed"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss8",
+      "line": 8,
+      "phrase": "amorous rites",
+      "definition": "the rites of love — the marriage-bed"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss9",
+      "line": 9,
+      "phrase": "by their own beauties",
+      "definition": "by the light of their own radiance"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss10",
+      "line": 10,
+      "phrase": "civil night",
+      "definition": "sober, modest night; also civilized"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss11",
+      "line": 11,
+      "phrase": "sober-suited matron",
+      "definition": "a dignified married woman in dark dress — night personified as chaperone"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss12",
+      "line": 12,
+      "phrase": "learn me how to lose a winning match",
+      "definition": "teach me how to win by surrender — the bridal paradox"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss13",
+      "line": 13,
+      "phrase": "stainless maidenhoods",
+      "definition": "spotless virginities"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss14",
+      "line": 16,
+      "phrase": "modesty",
+      "definition": "the shyness of the virgin bride"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss15",
+      "line": 14,
+      "phrase": "hood my unmann’d blood",
+      "definition": "falconry metaphor — cover my unmastered blood with a hood, as with an untrained falcon"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss16",
+      "line": 14,
+      "phrase": "unmann’d",
+      "definition": "unbroken; untrained (of a falcon)"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss17",
+      "line": 14,
+      "phrase": "bating",
+      "definition": "fluttering; beating wings — another falconry term"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss18",
+      "line": 16,
+      "phrase": "true love acted simple modesty",
+      "definition": "married love dressed as modest innocence"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss19",
+      "line": 19,
+      "phrase": "new snow on a raven’s back",
+      "definition": "Romeo's white purity against the dark of night"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss20",
+      "line": 22,
+      "phrase": "cut him out in little stars",
+      "definition": "one of Shakespeare's most gorgeous lines — transforming the beloved into constellations"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss21",
+      "line": 25,
+      "phrase": "garish sun",
+      "definition": "gaudy, showy daytime sun"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss22",
+      "line": 27,
+      "phrase": "not possess’d it",
+      "definition": "have not yet enjoyed it — Juliet's sexual longing"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss23",
+      "line": 28,
+      "phrase": "tedious",
+      "definition": "wearisome"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss24",
+      "line": 33,
+      "phrase": "cords",
+      "definition": "rope ladder — the one Romeo will climb tonight"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss25",
+      "line": 41,
+      "phrase": "What devil art thou",
+      "definition": "the Nurse's wailing misleads Juliet into thinking Romeo is dead"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss26",
+      "line": 45,
+      "phrase": "cockatrice",
+      "definition": "a mythical serpent whose glance kills; Juliet's one look will be lethal if Romeo is dead"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss27",
+      "line": 49,
+      "phrase": "Brief sounds determine",
+      "definition": "a short 'yes' or 'no' will settle it"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss28",
+      "line": 50,
+      "phrase": "I saw the wound",
+      "definition": "the Nurse describes Tybalt's body, not Romeo's"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss29",
+      "line": 52,
+      "phrase": "corse",
+      "definition": "corpse"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss30",
+      "line": 54,
+      "phrase": "swounded",
+      "definition": "swooned; fainted"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss31",
+      "line": 55,
+      "phrase": "bankrupt",
+      "definition": "ruined; devoid of resources"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss32",
+      "line": 57,
+      "phrase": "Vile earth, to earth resign",
+      "definition": "let my body dissolve — Juliet's suicide-ideation"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss33",
+      "line": 65,
+      "phrase": "dreadful trumpet",
+      "definition": "trumpet of Judgment Day"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss34",
+      "line": 71,
+      "phrase": "O serpent heart, hid with a flowering face!",
+      "definition": "Juliet's stacked oxymorons — Romeo the beautiful killer; the Petrarchan paradox turned tragic"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss35",
+      "line": 74,
+      "phrase": "Dove-feather’d raven",
+      "definition": "black bird wearing dove-plumage — inversion of his 'dove among crows' at the ball"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss36",
+      "line": 74,
+      "phrase": "wolvish-ravening lamb",
+      "definition": "wolf disguised as lamb"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss37",
+      "line": 76,
+      "phrase": "Just opposite to what thou justly seem’st",
+      "definition": "Romeo is the exact opposite of what he appears — moral deception"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss38",
+      "line": 77,
+      "phrase": "damned saint",
+      "definition": "oxymoron; false holiness"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss39",
+      "line": 77,
+      "phrase": "honourable villain",
+      "definition": "oxymoron — the moral world has flipped"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss40",
+      "line": 83,
+      "phrase": "gorgeous palace",
+      "definition": "beauty housing treachery — Juliet on Romeo"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss41",
+      "line": 85,
+      "phrase": "naught",
+      "definition": "vile; wicked"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss42",
+      "line": 86,
+      "phrase": "aqua-vitae",
+      "definition": "strong distilled spirits — the Nurse's restorative drink"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss43",
+      "line": 100,
+      "phrase": "native spring",
+      "definition": "Juliet rebukes her own tears — they belong to joy, not mourning"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss44",
+      "line": 111,
+      "phrase": "banished",
+      "definition": "the word of catastrophe that overwhelms Juliet"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss45",
+      "line": 118,
+      "phrase": "modern lamentation",
+      "definition": "common grief; lamentation in the ordinary way"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_gloss46",
+      "line": 124,
+      "phrase": "sound",
+      "definition": "depth"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act3_scene2_ann1",
+      "line_start": 1,
+      "line_end": 31,
+      "citation_display": "Romeo and Juliet 3.2.1–31",
+      "category": "close_reading",
+      "title": "Juliet's epithalamium — 'Gallop apace, you fiery-footed steeds'",
+      "body": "While the city is still reeling from 3.1, Juliet (who does not yet know) calls on night to come quickly so Romeo can reach her. Her speech is an epithalamium, a wedding-night hymn in the Renaissance tradition (Spenser's Epithalamion, 1595, is the English masterpiece). 'Come, civil night, / Thou sober-suited matron, all in black' — night as chaperone to her first sexual experience. The speech then pivots to sublime astronomy: 'Take him and cut him out in little stars, / And he will make the face of heaven so fine / That all the world will be in love with night.' The pitch of desire here is vertical, cosmic — and the audience, knowing Tybalt is dead and Romeo is about to be banished, receives the speech as both gorgeous and devastating.",
+      "sources": [
+        "Frank Kermode, Shakespeare's Language (2000)",
+        "Heather Dubrow, A Happier Eden: The Politics of Marriage in the Stuart Epithalamium (1990)"
+      ]
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_ann2",
+      "line_start": 73,
+      "line_end": 85,
+      "citation_display": "Romeo and Juliet 3.2.73–85",
+      "category": "close_reading",
+      "title": "Juliet's stacked oxymorons — the Petrarchan mode now turned tragic",
+      "body": "When Juliet believes Romeo has killed Tybalt, she lets loose: 'O serpent heart, hid with a flowering face! / ... Dove-feather'd raven! wolvish-ravening lamb! / Despised substance of divinest show! / Just opposite to what thou justly seem'st, / A damned saint, an honourable villain!' These are the same oxymorons Romeo played with for Rosaline in 1.1 — but now they mean something. Rosaline-Petrarchism was pose; Juliet's paradoxes here are a genuine moral crisis, the lover discovering her beloved is also a killer. Shakespeare turns the rhetorical device from decoration to tragic utterance. This is the play asking: how do you speak when the person you love has done the thing you hate? The answer is oxymoron — the figure of impossible truth.",
+      "sources": [
+        "Jill L. Levenson, The Oxford Shakespeare: Romeo and Juliet (2000)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act3_scene2_q1",
+      "kind": "structural",
+      "prompt": "What Renaissance genre does Juliet's 'Gallop apace' speech belong to?",
+      "options": [
+        "The elegy (mourning poem)",
+        "The epithalamium — a wedding-night hymn celebrating the approach of consummation",
+        "The eclogue (pastoral dialogue)",
+        "The anacreontic (drinking-song)"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 31
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_q2",
+      "kind": "close_reading",
+      "prompt": "Juliet's 'serpent heart, hid with a flowering face' and 'Dove-feather'd raven' are examples of —",
+      "options": [
+        "Simple metaphor",
+        "Oxymoron — but now carrying real moral weight, unlike Romeo's earlier Petrarchan versions",
+        "Chiasmus",
+        "Metonymy"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 73,
+      "anchor_line_end": 81
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene2_q3",
+      "kind": "inference",
+      "prompt": "What is the effect of juxtaposing Juliet's 'Gallop apace' with what the audience knows (Tybalt's death, Romeo's banishment)?",
+      "options": [
+        "It is merely decorative",
+        "Dramatic irony — the audience receives the speech as both exquisite and devastating; the ecstasy is already shadowed by the catastrophe",
+        "It creates confusion in the plot",
+        "It prefigures the Nurse's betrayal"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 110
+    }
+  ]
+}

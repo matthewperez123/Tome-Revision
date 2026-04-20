@@ -1,0 +1,404 @@
+{
+  "section_id": "julius_caesar_act2_scene4",
+  "work_id": "julius-caesar",
+  "sequence": 7,
+  "act": 2,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "Another part of the same street, before the house of Brutus",
+  "line_count": 50,
+  "word_count": 381,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "PORTIA",
+      "text": "I prithee, boy, run to the senate-house;"
+    },
+    {
+      "number": 2,
+      "speaker": "PORTIA",
+      "text": "Stay not to answer me, but get thee gone:"
+    },
+    {
+      "number": 3,
+      "speaker": "PORTIA",
+      "text": "Why dost thou stay?"
+    },
+    {
+      "number": 3,
+      "speaker": "LUCIUS",
+      "text": "To know my errand, madam."
+    },
+    {
+      "number": 4,
+      "speaker": "PORTIA",
+      "text": "I would have had thee there, and here again,"
+    },
+    {
+      "number": 5,
+      "speaker": "PORTIA",
+      "text": "Ere I can tell thee what thou shouldst do there."
+    },
+    {
+      "number": 6,
+      "speaker": "PORTIA",
+      "text": "O constancy, be strong upon my side,"
+    },
+    {
+      "number": 7,
+      "speaker": "PORTIA",
+      "text": "Set a huge mountain ’tween my heart and tongue!"
+    },
+    {
+      "number": 8,
+      "speaker": "PORTIA",
+      "text": "I have a man’s mind, but a woman’s might."
+    },
+    {
+      "number": 9,
+      "speaker": "PORTIA",
+      "text": "How hard it is for women to keep counsel!"
+    },
+    {
+      "number": 10,
+      "speaker": "PORTIA",
+      "text": "Art thou here yet?"
+    },
+    {
+      "number": 10,
+      "speaker": "LUCIUS",
+      "text": "Madam, what should I do?"
+    },
+    {
+      "number": 11,
+      "speaker": "LUCIUS",
+      "text": "Run to the Capitol, and nothing else?"
+    },
+    {
+      "number": 12,
+      "speaker": "LUCIUS",
+      "text": "And so return to you, and nothing else?"
+    },
+    {
+      "number": 13,
+      "speaker": "PORTIA",
+      "text": "Yes, bring me word, boy, if thy lord look well,"
+    },
+    {
+      "number": 14,
+      "speaker": "PORTIA",
+      "text": "For he went sickly forth: and take good note"
+    },
+    {
+      "number": 15,
+      "speaker": "PORTIA",
+      "text": "What Caesar doth, what suitors press to him."
+    },
+    {
+      "number": 16,
+      "speaker": "PORTIA",
+      "text": "Hark, boy! what noise is that?"
+    },
+    {
+      "number": 16,
+      "speaker": "LUCIUS",
+      "text": "I hear none, madam."
+    },
+    {
+      "number": 17,
+      "speaker": "PORTIA",
+      "text": "Prithee, listen well;"
+    },
+    {
+      "number": 18,
+      "speaker": "PORTIA",
+      "text": "I heard a bustling rumour, like a fray,"
+    },
+    {
+      "number": 19,
+      "speaker": "PORTIA",
+      "text": "And the wind brings it from the Capitol."
+    },
+    {
+      "number": 20,
+      "speaker": "LUCIUS",
+      "text": "Sooth, madam, I hear nothing."
+    },
+    {
+      "number": 21,
+      "speaker": "PORTIA",
+      "text": "Come hither, fellow: which way hast thou been?"
+    },
+    {
+      "number": 22,
+      "speaker": "SOOTHSAYER",
+      "text": "At mine own house, good lady."
+    },
+    {
+      "number": 22,
+      "speaker": "PORTIA",
+      "text": "What is’t o’clock?"
+    },
+    {
+      "number": 23,
+      "speaker": "SOOTHSAYER",
+      "text": "About the ninth hour, lady."
+    },
+    {
+      "number": 24,
+      "speaker": "PORTIA",
+      "text": "Is Caesar yet gone to the Capitol?"
+    },
+    {
+      "number": 25,
+      "speaker": "SOOTHSAYER",
+      "text": "Madam, not yet: I go to take my stand,"
+    },
+    {
+      "number": 26,
+      "speaker": "SOOTHSAYER",
+      "text": "To see him pass on to the Capitol."
+    },
+    {
+      "number": 27,
+      "speaker": "PORTIA",
+      "text": "Thou hast some suit to Caesar, hast thou not?"
+    },
+    {
+      "number": 28,
+      "speaker": "SOOTHSAYER",
+      "text": "That I have, lady: if it will please Caesar"
+    },
+    {
+      "number": 29,
+      "speaker": "SOOTHSAYER",
+      "text": "To be so good to Caesar as to hear me,"
+    },
+    {
+      "number": 30,
+      "speaker": "SOOTHSAYER",
+      "text": "I shall beseech him to befriend himself."
+    },
+    {
+      "number": 31,
+      "speaker": "PORTIA",
+      "text": "Why, know’st thou any harm’s intended towards him?"
+    },
+    {
+      "number": 32,
+      "speaker": "SOOTHSAYER",
+      "text": "None that I know will be, much that I fear may chance."
+    },
+    {
+      "number": 33,
+      "speaker": "SOOTHSAYER",
+      "text": "Good morrow to you. Here the street is narrow:"
+    },
+    {
+      "number": 34,
+      "speaker": "SOOTHSAYER",
+      "text": "The throng that follows Caesar at the heels,"
+    },
+    {
+      "number": 35,
+      "speaker": "SOOTHSAYER",
+      "text": "Of senators, of praetors, common suitors,"
+    },
+    {
+      "number": 36,
+      "speaker": "SOOTHSAYER",
+      "text": "Will crowd a feeble man almost to death:"
+    },
+    {
+      "number": 37,
+      "speaker": "SOOTHSAYER",
+      "text": "I’ll get me to a place more void, and there"
+    },
+    {
+      "number": 38,
+      "speaker": "SOOTHSAYER",
+      "text": "Speak to great Caesar as he comes along."
+    },
+    {
+      "number": 39,
+      "speaker": "PORTIA",
+      "text": "I must go in. Ay me, how weak a thing"
+    },
+    {
+      "number": 40,
+      "speaker": "PORTIA",
+      "text": "The heart of woman is! O Brutus,"
+    },
+    {
+      "number": 41,
+      "speaker": "PORTIA",
+      "text": "The heavens speed thee in thine enterprise!"
+    },
+    {
+      "number": 42,
+      "speaker": "PORTIA",
+      "text": "Sure, the boy heard me: Brutus hath a suit"
+    },
+    {
+      "number": 43,
+      "speaker": "PORTIA",
+      "text": "That Caesar will not grant. O, I grow faint."
+    },
+    {
+      "number": 44,
+      "speaker": "PORTIA",
+      "text": "Run, Lucius, and commend me to my lord;"
+    },
+    {
+      "number": 45,
+      "speaker": "PORTIA",
+      "text": "Say I am merry: come to me again,"
+    },
+    {
+      "number": 46,
+      "speaker": "PORTIA",
+      "text": "And bring me word what he doth say to thee."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Portia and Lucius."
+    },
+    {
+      "after_line": 20,
+      "text": "Enter the Soothsayer."
+    },
+    {
+      "after_line": 38,
+      "text": "Exit."
+    },
+    {
+      "after_line": 46,
+      "text": "Exeunt severally."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "julius_caesar_act2_scene4_gloss1",
+      "line": 1,
+      "phrase": "I prithee",
+      "definition": "I pray thee; please (contracted)"
+    },
+    {
+      "id": "julius_caesar_act2_scene4_gloss2",
+      "line": 6,
+      "phrase": "O constancy, be strong upon my side",
+      "definition": "Portia invokes constancy — the Stoic virtue of steadfastness, her claim (2.1) and lineage (Cato's daughter) — to hold her tongue"
+    },
+    {
+      "id": "julius_caesar_act2_scene4_gloss3",
+      "line": 8,
+      "phrase": "man's mind, but a woman's might",
+      "definition": "a man's intelligence but a woman's (smaller) strength — Portia's gendered self-description; the play treats gender as a limit on constancy"
+    },
+    {
+      "id": "julius_caesar_act2_scene4_gloss4",
+      "line": 9,
+      "phrase": "keep counsel",
+      "definition": "keep a secret"
+    },
+    {
+      "id": "julius_caesar_act2_scene4_gloss5",
+      "line": 18,
+      "phrase": "bustling rumour, like a fray",
+      "definition": "a noise of commotion, like a scuffle"
+    },
+    {
+      "id": "julius_caesar_act2_scene4_gloss6",
+      "line": 20,
+      "phrase": "Sooth",
+      "definition": "truly; in truth"
+    },
+    {
+      "id": "julius_caesar_act2_scene4_gloss7",
+      "line": 23,
+      "phrase": "ninth hour",
+      "definition": "about 9 a.m. — the Roman and Elizabethan hour (sunrise was the first hour)"
+    },
+    {
+      "id": "julius_caesar_act2_scene4_gloss8",
+      "line": 30,
+      "phrase": "beseech him to befriend himself",
+      "definition": "beg him to act in his own interest — the Soothsayer's second warning, now obliquely stated"
+    },
+    {
+      "id": "julius_caesar_act2_scene4_gloss9",
+      "line": 35,
+      "phrase": "praetors",
+      "definition": "Roman magistrates, ranked below consuls; Brutus held a praetorship in 44 BCE"
+    },
+    {
+      "id": "julius_caesar_act2_scene4_gloss10",
+      "line": 37,
+      "phrase": "void",
+      "definition": "empty; less crowded"
+    },
+    {
+      "id": "julius_caesar_act2_scene4_gloss11",
+      "line": 42,
+      "phrase": "Brutus hath a suit",
+      "definition": "Brutus has a petition (Portia knows the truth; she disguises her outburst as concern for a business matter)"
+    },
+    {
+      "id": "julius_caesar_act2_scene4_gloss12",
+      "line": 44,
+      "phrase": "commend me to my lord",
+      "definition": "carry my greetings to my husband"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "julius_caesar_act2_scene4_ann1",
+      "line_start": 1,
+      "line_end": 46,
+      "citation_display": "Julius Caesar 2.4.1–46",
+      "category": "thematic",
+      "title": "Portia after the secret — the cost of inclusion",
+      "body": "Portia in 2.1 demanded to share her husband's burden; 2.4 shows what that sharing cost her. Having been told the conspiracy, she cannot eat, cannot sleep, cannot control her speech ('How hard it is for women to keep counsel!'). She sends Lucius on a vague errand because she cannot be alone with the knowledge. Her Stoic training — 'O constancy, be strong upon my side' — buckles under a specific load: the political knowledge she insisted on having.\n\nShakespeare does not frame this as a failure of Portia's character. He frames it as what the play has not told us before — that Stoic fortitude is a practice, not a possession, and that political knowledge imposes a real cost on whoever holds it. The scene's pathos comes from our knowing (as Portia does not yet) that her anxiety is about to be vindicated. By 4.3 we will learn Portia has killed herself by swallowing fire; the destination is already visible in this scene.\n\nThe Soothsayer's return — now fearing for Caesar without specific knowledge — completes the scene. Two figures, one knowing, one not, both waiting for the same thing to happen. The waiting is the subject.",
+      "sources": [
+        "Coppélia Kahn (1997)",
+        "Phyllis Rackin (2005)",
+        "Linda Woodbridge, *Women and the English Renaissance* (1984)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "julius_caesar_act2_scene4_q1",
+      "kind": "theme",
+      "prompt": "What does Portia's 2.4 scene show about the cost of having been told the conspiracy?",
+      "options": [
+        "Nothing — she handles it fine",
+        "That Stoic fortitude buckles under the specific load of political knowledge; she cannot eat, sleep, or control her speech, and the strain foreshadows her suicide in 4.3",
+        "That she has forgotten the secret",
+        "That she is planning to betray it"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 46
+    },
+    {
+      "id": "julius_caesar_act2_scene4_q2",
+      "kind": "close_reading",
+      "prompt": "Why does Portia send Lucius on a vague errand to the Capitol?",
+      "options": [
+        "To get him out of her hair",
+        "Because she cannot bear to be alone with the secret; the errand is a way of outsourcing her anxiety",
+        "To carry a message to Brutus",
+        "To spy on Caesar"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 1,
+      "anchor_line_end": 16
+    }
+  ]
+}

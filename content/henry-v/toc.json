@@ -1,0 +1,349 @@
+{
+  "work_id": "henry-v",
+  "entries": [
+    {
+      "type": "chorus",
+      "section_id": "henry_v_prologue",
+      "sequence": 1,
+      "act": null,
+      "scene": null,
+      "scene_title": "Prologue",
+      "line_count": 34,
+      "word_count": 244,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "act",
+      "act": 1,
+      "title": "Act I"
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act1_scene1",
+      "sequence": 2,
+      "act": 1,
+      "scene": 1,
+      "scene_title": "London. An ante-chamber in the King's palace",
+      "line_count": 102,
+      "word_count": 732,
+      "est_read_minutes": 4
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act1_scene2",
+      "sequence": 3,
+      "act": 1,
+      "scene": 2,
+      "scene_title": "London. The Presence chamber in the King's palace",
+      "line_count": 312,
+      "word_count": 2381,
+      "est_read_minutes": 12
+    },
+    {
+      "type": "act",
+      "act": 2,
+      "title": "Act II"
+    },
+    {
+      "type": "chorus",
+      "section_id": "henry_v_act2_chorus",
+      "sequence": 4,
+      "act": null,
+      "scene": null,
+      "scene_title": "Chorus",
+      "line_count": 42,
+      "word_count": 319,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act2_scene1",
+      "sequence": 5,
+      "act": 2,
+      "scene": 1,
+      "scene_title": "London. Before a tavern in Eastcheap",
+      "line_count": 112,
+      "word_count": 983,
+      "est_read_minutes": 5
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act2_scene2",
+      "sequence": 6,
+      "act": 2,
+      "scene": 2,
+      "scene_title": "Southampton. A council-chamber",
+      "line_count": 191,
+      "word_count": 1483,
+      "est_read_minutes": 7
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act2_scene3",
+      "sequence": 7,
+      "act": 2,
+      "scene": 3,
+      "scene_title": "London. Before a tavern in Eastcheap",
+      "line_count": 53,
+      "word_count": 477,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act2_scene4",
+      "sequence": 8,
+      "act": 2,
+      "scene": 4,
+      "scene_title": "France. The King's palace",
+      "line_count": 151,
+      "word_count": 1126,
+      "est_read_minutes": 6
+    },
+    {
+      "type": "act",
+      "act": 3,
+      "title": "Act III"
+    },
+    {
+      "type": "chorus",
+      "section_id": "henry_v_act3_chorus",
+      "sequence": 9,
+      "act": null,
+      "scene": null,
+      "scene_title": "Chorus",
+      "line_count": 35,
+      "word_count": 261,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act3_scene1",
+      "sequence": 10,
+      "act": 3,
+      "scene": 1,
+      "scene_title": "France. Before Harfleur",
+      "line_count": 34,
+      "word_count": 273,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act3_scene2",
+      "sequence": 11,
+      "act": 3,
+      "scene": 2,
+      "scene_title": "The same. Before the walls of Harfleur",
+      "line_count": 118,
+      "word_count": 1178,
+      "est_read_minutes": 6
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act3_scene3",
+      "sequence": 12,
+      "act": 3,
+      "scene": 3,
+      "scene_title": "The same. Before the gates of Harfleur",
+      "line_count": 58,
+      "word_count": 445,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act3_scene4",
+      "sequence": 13,
+      "act": 3,
+      "scene": 4,
+      "scene_title": "Rouen. A room in the King's palace",
+      "line_count": 47,
+      "word_count": 380,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act3_scene5",
+      "sequence": 14,
+      "act": 3,
+      "scene": 5,
+      "scene_title": "The same. Another room",
+      "line_count": 69,
+      "word_count": 519,
+      "est_read_minutes": 3
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act3_scene6",
+      "sequence": 15,
+      "act": 3,
+      "scene": 6,
+      "scene_title": "The English camp in Picardy",
+      "line_count": 151,
+      "word_count": 1409,
+      "est_read_minutes": 7
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act3_scene7",
+      "sequence": 16,
+      "act": 3,
+      "scene": 7,
+      "scene_title": "The French camp, near Agincourt",
+      "line_count": 123,
+      "word_count": 1168,
+      "est_read_minutes": 6
+    },
+    {
+      "type": "act",
+      "act": 4,
+      "title": "Act IV"
+    },
+    {
+      "type": "chorus",
+      "section_id": "henry_v_act4_chorus",
+      "sequence": 17,
+      "act": null,
+      "scene": null,
+      "scene_title": "Chorus",
+      "line_count": 53,
+      "word_count": 379,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act4_scene1",
+      "sequence": 18,
+      "act": 4,
+      "scene": 1,
+      "scene_title": "The English camp at Agincourt",
+      "line_count": 226,
+      "word_count": 2032,
+      "est_read_minutes": 10
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act4_scene2",
+      "sequence": 19,
+      "act": 4,
+      "scene": 2,
+      "scene_title": "The French camp",
+      "line_count": 62,
+      "word_count": 474,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act4_scene3",
+      "sequence": 20,
+      "act": 4,
+      "scene": 3,
+      "scene_title": "The English camp",
+      "line_count": 135,
+      "word_count": 1090,
+      "est_read_minutes": 5
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act4_scene4",
+      "sequence": 21,
+      "act": 4,
+      "scene": 4,
+      "scene_title": "The field of battle",
+      "line_count": 65,
+      "word_count": 529,
+      "est_read_minutes": 3
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act4_scene5",
+      "sequence": 22,
+      "act": 4,
+      "scene": 5,
+      "scene_title": "Another part of the field",
+      "line_count": 24,
+      "word_count": 183,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act4_scene6",
+      "sequence": 23,
+      "act": 4,
+      "scene": 6,
+      "scene_title": "Another part of the field",
+      "line_count": 39,
+      "word_count": 300,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act4_scene7",
+      "sequence": 24,
+      "act": 4,
+      "scene": 7,
+      "scene_title": "Another part of the field",
+      "line_count": 161,
+      "word_count": 1487,
+      "est_read_minutes": 7
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act4_scene8",
+      "sequence": 25,
+      "act": 4,
+      "scene": 8,
+      "scene_title": "Before King Henry's pavilion",
+      "line_count": 116,
+      "word_count": 994,
+      "est_read_minutes": 5
+    },
+    {
+      "type": "act",
+      "act": 5,
+      "title": "Act V"
+    },
+    {
+      "type": "chorus",
+      "section_id": "henry_v_act5_chorus",
+      "sequence": 26,
+      "act": null,
+      "scene": null,
+      "scene_title": "Chorus",
+      "line_count": 45,
+      "word_count": 349,
+      "est_read_minutes": 2
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act5_scene1",
+      "sequence": 27,
+      "act": 5,
+      "scene": 1,
+      "scene_title": "France. The English camp",
+      "line_count": 74,
+      "word_count": 724,
+      "est_read_minutes": 4
+    },
+    {
+      "type": "scene",
+      "section_id": "henry_v_act5_scene2",
+      "sequence": 28,
+      "act": 5,
+      "scene": 2,
+      "scene_title": "Troyes in Champagne. An apartment in the French King's palace",
+      "line_count": 332,
+      "word_count": 3068,
+      "est_read_minutes": 15
+    },
+    {
+      "type": "chorus",
+      "section_id": "henry_v_epilogue",
+      "sequence": 29,
+      "act": null,
+      "scene": null,
+      "scene_title": "Epilogue",
+      "line_count": 14,
+      "word_count": 112,
+      "est_read_minutes": 1
+    }
+  ]
+}

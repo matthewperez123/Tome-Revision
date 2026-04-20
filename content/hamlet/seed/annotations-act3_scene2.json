@@ -1,0 +1,37 @@
+{
+  "section_id": "hamlet_act3_scene2",
+  "annotations": [
+    {
+      "line_start": 1,
+      "line_end": 35,
+      "category": "biographical",
+      "title": "Hamlet's lecture on acting — Shakespeare the director",
+      "body": "Hamlet's advice to the players ('speak the speech trippingly on the tongue,' 'suit the action to the word, the word to the action') is the most sustained theory of acting in Elizabethan drama. It is also the closest Shakespeare ever comes to direct autobiography. The critic A. R. Humphreys argued that the speech reflects the working principles of the Lord Chamberlain's Men — restraint over noise, naturalism over ranting, the actor as the age's 'abstract and brief chronicle.' What Hamlet attacks — actors who 'saw the air,' 'out-herod Herod,' 'tear a passion to tatters' — is the older, bombastic style of Edward Alleyn and the Admiral's Men. Shakespeare is, through his prince, staking a claim for a new theatrical aesthetic.",
+      "sources": ["Andrew Gurr, The Shakespearean Stage 1574–1642 (3rd ed., 1992)"]
+    },
+    {
+      "line_start": 55,
+      "line_end": 85,
+      "category": "thematic",
+      "title": "Hamlet's praise of Horatio and the stoic ideal",
+      "body": "Hamlet's tribute to Horatio — 'Give me that man / That is not passion's slave' — articulates the stoic ideal the prince himself cannot achieve. The virtues Hamlet names (not being 'a pipe for fortune's finger,' being unmoved by both blessing and blow) are those of Seneca and Boethius, standard fare in the Wittenberg curriculum. The emotional force of the speech lies in its confession: Hamlet knows what he ought to be and is not. Horatio is the character the play preserves at its end, the one who will 'live behind to tell my story,' because his temperament is what the world of the play systematically destroys.",
+      "sources": ["Rhodri Lewis, Hamlet and the Vision of Darkness (2017)"]
+    },
+    {
+      "line_start": 236,
+      "line_end": 260,
+      "category": "structural",
+      "title": "'The Mousetrap' and the logic of the play-within",
+      "body": "The play Hamlet has commissioned — The Murder of Gonzago — re-enacts his father's murder: poison poured into an ear, a widow queen who remarries the murderer. Hamlet's ironic renaming ('the Mousetrap') is precise; the play is a trap, and the target is Claudius's conscience. The theory that drives the plot is one articulated by Puritan preachers and Shakespeare's own Henry V: theatrical representation has the power to prick the guilty. When Claudius rises at the poisoning scene and calls for light, the test has worked. What the test does not give Hamlet is a legally admissible confession or a path to action. The scene ends with him no closer to revenge than he began, only more certain.",
+      "sources": ["Stephen Greenblatt, Shakespearean Negotiations (1988)"]
+    },
+    {
+      "line_start": 338,
+      "line_end": 356,
+      "category": "linguistic",
+      "title": "'Play upon this pipe' — the music of being read",
+      "body": "Hamlet's image of the recorder is among the play's most precise metaphors for agency. 'It is as easy as lying,' he tells Guildenstern, who cannot play the pipe. 'Govern these ventages with your finger and thumb, give it breath with your mouth, and it will discourse most eloquent music.' The instrument, Hamlet means, is simpler than a man, and yet Guildenstern cannot make it speak; how then does he imagine he can play Hamlet? The scene ends with Hamlet's most direct accusation of his friends: 'You would seem to know my stops; you would pluck out the heart of my mystery.' The pipe image reveals the play's theory of selfhood — there is something in a man that resists being played.",
+      "sources": ["Frank Kermode, Shakespeare's Language (2000)"]
+    }
+  ]
+}

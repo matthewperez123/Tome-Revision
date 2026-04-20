@@ -1,0 +1,1318 @@
+{
+  "section_id": "hamlet_act4_scene7",
+  "work_id": "hamlet",
+  "sequence": 18,
+  "act": 4,
+  "scene": 7,
+  "kind": "scene",
+  "scene_title": "Another room in the castle",
+  "line_count": 208,
+  "word_count": 1571,
+  "est_read_minutes": 8,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KING",
+      "text": "Now must your conscience my acquittance seal,"
+    },
+    {
+      "number": 2,
+      "speaker": "KING",
+      "text": "And you must put me in your heart for friend,"
+    },
+    {
+      "number": 3,
+      "speaker": "KING",
+      "text": "Sith you have heard, and with a knowing ear,"
+    },
+    {
+      "number": 4,
+      "speaker": "KING",
+      "text": "That he which hath your noble father slain"
+    },
+    {
+      "number": 5,
+      "speaker": "KING",
+      "text": "Pursued my life."
+    },
+    {
+      "number": 5,
+      "speaker": "LAERTES",
+      "text": "It well appears: but tell me"
+    },
+    {
+      "number": 6,
+      "speaker": "LAERTES",
+      "text": "Why you proceeded not against these feats,"
+    },
+    {
+      "number": 7,
+      "speaker": "LAERTES",
+      "text": "So crimeful and so capital in nature,"
+    },
+    {
+      "number": 8,
+      "speaker": "LAERTES",
+      "text": "As by your safety, wisdom, all things else,"
+    },
+    {
+      "number": 9,
+      "speaker": "LAERTES",
+      "text": "You mainly were stirr’d up."
+    },
+    {
+      "number": 9,
+      "speaker": "KING",
+      "text": "O, for two special reasons;"
+    },
+    {
+      "number": 10,
+      "speaker": "KING",
+      "text": "Which may to you, perhaps, seem much unsinew’d,"
+    },
+    {
+      "number": 11,
+      "speaker": "KING",
+      "text": "But yet to me they are strong. The queen his mother"
+    },
+    {
+      "number": 12,
+      "speaker": "KING",
+      "text": "Lives almost by his looks; and for myself—"
+    },
+    {
+      "number": 13,
+      "speaker": "KING",
+      "text": "My virtue or my plague, be it either which—"
+    },
+    {
+      "number": 14,
+      "speaker": "KING",
+      "text": "She’s so conjunctive to my life and soul,"
+    },
+    {
+      "number": 15,
+      "speaker": "KING",
+      "text": "That, as the star moves not but in his sphere,"
+    },
+    {
+      "number": 16,
+      "speaker": "KING",
+      "text": "I could not but by her. The other motive,"
+    },
+    {
+      "number": 17,
+      "speaker": "KING",
+      "text": "Why to a public count I might not go,"
+    },
+    {
+      "number": 18,
+      "speaker": "KING",
+      "text": "Is the great love the general gender bear him;"
+    },
+    {
+      "number": 19,
+      "speaker": "KING",
+      "text": "Who, dipping all his faults in their affection,"
+    },
+    {
+      "number": 20,
+      "speaker": "KING",
+      "text": "Would, like the spring that turneth wood to stone,"
+    },
+    {
+      "number": 21,
+      "speaker": "KING",
+      "text": "Convert his gyves to graces; so that my arrows,"
+    },
+    {
+      "number": 22,
+      "speaker": "KING",
+      "text": "Too slightly timber’d for so loud a wind,"
+    },
+    {
+      "number": 23,
+      "speaker": "KING",
+      "text": "Would have reverted to my bow again,"
+    },
+    {
+      "number": 24,
+      "speaker": "KING",
+      "text": "And not where I had aim’d them."
+    },
+    {
+      "number": 25,
+      "speaker": "LAERTES",
+      "text": "And so have I a noble father lost;"
+    },
+    {
+      "number": 26,
+      "speaker": "LAERTES",
+      "text": "A sister driven into desperate terms,"
+    },
+    {
+      "number": 27,
+      "speaker": "LAERTES",
+      "text": "Whose worth, if praises may go back again,"
+    },
+    {
+      "number": 28,
+      "speaker": "LAERTES",
+      "text": "Stood challenger on mount of all the age"
+    },
+    {
+      "number": 29,
+      "speaker": "LAERTES",
+      "text": "For her perfections: but my revenge will come."
+    },
+    {
+      "number": 30,
+      "speaker": "KING",
+      "text": "Break not your sleeps for that: you must not think"
+    },
+    {
+      "number": 31,
+      "speaker": "KING",
+      "text": "That we are made of stuff so flat and dull"
+    },
+    {
+      "number": 32,
+      "speaker": "KING",
+      "text": "That we can let our beard be shook with danger"
+    },
+    {
+      "number": 33,
+      "speaker": "KING",
+      "text": "And think it pastime. You shortly shall hear more:"
+    },
+    {
+      "number": 34,
+      "speaker": "KING",
+      "text": "I loved your father, and we love ourself;"
+    },
+    {
+      "number": 35,
+      "speaker": "KING",
+      "text": "And that, I hope, will teach you to imagine—"
+    },
+    {
+      "number": 36,
+      "speaker": "MESSENGER",
+      "text": "Letters, my lord, from Hamlet:"
+    },
+    {
+      "number": 37,
+      "speaker": "MESSENGER",
+      "text": "This to your majesty; this to the queen."
+    },
+    {
+      "number": 38,
+      "speaker": "KING",
+      "text": "From Hamlet! who brought them?"
+    },
+    {
+      "number": 39,
+      "speaker": "MESSENGER",
+      "text": "Sailors, my lord, they say; I saw them not:"
+    },
+    {
+      "number": 40,
+      "speaker": "MESSENGER",
+      "text": "They were given me by Claudio; he received them"
+    },
+    {
+      "number": 41,
+      "speaker": "MESSENGER",
+      "text": "Of him that brought them."
+    },
+    {
+      "number": 42,
+      "speaker": "KING",
+      "text": "Laertes, you shall hear them. Leave us. “High and mighty, You shall"
+    },
+    {
+      "number": 43,
+      "speaker": "KING",
+      "text": "know I am set naked on your kingdom. To-morrow shall I beg"
+    },
+    {
+      "number": 44,
+      "speaker": "KING",
+      "text": "leave to see your kingly eyes: when I shall, first asking your"
+    },
+    {
+      "number": 45,
+      "speaker": "KING",
+      "text": "pardon thereunto, recount the occasion of my sudden and more strange return."
+    },
+    {
+      "number": 46,
+      "speaker": "KING",
+      "text": "What should this mean? Are all the rest come back? Or is"
+    },
+    {
+      "number": 47,
+      "speaker": "KING",
+      "text": "it some abuse, and no such thing?"
+    },
+    {
+      "number": 48,
+      "speaker": "LAERTES",
+      "text": "Know you the hand?"
+    },
+    {
+      "number": 48,
+      "speaker": "KING",
+      "text": "’Tis Hamlet’s character. “Naked!”"
+    },
+    {
+      "number": 49,
+      "speaker": "KING",
+      "text": "And in a postscript here, he says “alone.”"
+    },
+    {
+      "number": 50,
+      "speaker": "KING",
+      "text": "Can you advise me?"
+    },
+    {
+      "number": 51,
+      "speaker": "LAERTES",
+      "text": "I’m lost in it, my lord. But let him come;"
+    },
+    {
+      "number": 52,
+      "speaker": "LAERTES",
+      "text": "It warms the very sickness in my heart,"
+    },
+    {
+      "number": 53,
+      "speaker": "LAERTES",
+      "text": "That I shall live and tell him to his teeth,"
+    },
+    {
+      "number": 54,
+      "speaker": "LAERTES",
+      "text": "“Thus didest thou.”"
+    },
+    {
+      "number": 54,
+      "speaker": "KING",
+      "text": "If it be so, Laertes—"
+    },
+    {
+      "number": 55,
+      "speaker": "KING",
+      "text": "As how should it be so? how otherwise?—"
+    },
+    {
+      "number": 56,
+      "speaker": "KING",
+      "text": "Will you be ruled by me?"
+    },
+    {
+      "number": 56,
+      "speaker": "LAERTES",
+      "text": "Ay, my lord;"
+    },
+    {
+      "number": 57,
+      "speaker": "LAERTES",
+      "text": "So you will not o’errule me to a peace."
+    },
+    {
+      "number": 58,
+      "speaker": "KING",
+      "text": "To thine own peace. If he be now return’d,"
+    },
+    {
+      "number": 59,
+      "speaker": "KING",
+      "text": "As checking at his voyage, and that he means"
+    },
+    {
+      "number": 60,
+      "speaker": "KING",
+      "text": "No more to undertake it, I will work him"
+    },
+    {
+      "number": 61,
+      "speaker": "KING",
+      "text": "To an exploit, now ripe in my device,"
+    },
+    {
+      "number": 62,
+      "speaker": "KING",
+      "text": "Under the which he shall not choose but fall:"
+    },
+    {
+      "number": 63,
+      "speaker": "KING",
+      "text": "And for his death no wind of blame shall breathe,"
+    },
+    {
+      "number": 64,
+      "speaker": "KING",
+      "text": "But even his mother shall uncharge the practice"
+    },
+    {
+      "number": 65,
+      "speaker": "KING",
+      "text": "And call it accident."
+    },
+    {
+      "number": 65,
+      "speaker": "LAERTES",
+      "text": "My lord, I will be ruled;"
+    },
+    {
+      "number": 66,
+      "speaker": "LAERTES",
+      "text": "The rather, if you could devise it so"
+    },
+    {
+      "number": 67,
+      "speaker": "LAERTES",
+      "text": "That I might be the organ."
+    },
+    {
+      "number": 67,
+      "speaker": "KING",
+      "text": "It falls right."
+    },
+    {
+      "number": 68,
+      "speaker": "KING",
+      "text": "You have been talk’d of since your travel much,"
+    },
+    {
+      "number": 69,
+      "speaker": "KING",
+      "text": "And that in Hamlet’s hearing, for a quality"
+    },
+    {
+      "number": 70,
+      "speaker": "KING",
+      "text": "Wherein, they say, you shine: your sum of parts"
+    },
+    {
+      "number": 71,
+      "speaker": "KING",
+      "text": "Did not together pluck such envy from him"
+    },
+    {
+      "number": 72,
+      "speaker": "KING",
+      "text": "As did that one, and that, in my regard,"
+    },
+    {
+      "number": 73,
+      "speaker": "KING",
+      "text": "Of the unworthiest siege."
+    },
+    {
+      "number": 73,
+      "speaker": "LAERTES",
+      "text": "What part is that, my lord?"
+    },
+    {
+      "number": 74,
+      "speaker": "KING",
+      "text": "A very riband in the cap of youth,"
+    },
+    {
+      "number": 75,
+      "speaker": "KING",
+      "text": "Yet needful too; for youth no less becomes"
+    },
+    {
+      "number": 76,
+      "speaker": "KING",
+      "text": "The light and careless livery that it wears"
+    },
+    {
+      "number": 77,
+      "speaker": "KING",
+      "text": "Than settled age his sables and his weeds,"
+    },
+    {
+      "number": 78,
+      "speaker": "KING",
+      "text": "Importing health and graveness. Two months since,"
+    },
+    {
+      "number": 79,
+      "speaker": "KING",
+      "text": "Here was a gentleman of Normandy:—"
+    },
+    {
+      "number": 80,
+      "speaker": "KING",
+      "text": "I’ve seen myself, and served against, the French,"
+    },
+    {
+      "number": 81,
+      "speaker": "KING",
+      "text": "And they can well on horseback: but this gallant"
+    },
+    {
+      "number": 82,
+      "speaker": "KING",
+      "text": "Had witchcraft in’t; he grew unto his seat;"
+    },
+    {
+      "number": 83,
+      "speaker": "KING",
+      "text": "And to such wondrous doing brought his horse,"
+    },
+    {
+      "number": 84,
+      "speaker": "KING",
+      "text": "As he had been incorpsed and demi-natured"
+    },
+    {
+      "number": 85,
+      "speaker": "KING",
+      "text": "With the brave beast: so far he topp’d my thought,"
+    },
+    {
+      "number": 86,
+      "speaker": "KING",
+      "text": "That I, in forgery of shapes and tricks,"
+    },
+    {
+      "number": 87,
+      "speaker": "KING",
+      "text": "Come short of what he did."
+    },
+    {
+      "number": 87,
+      "speaker": "LAERTES",
+      "text": "A Norman was’t?"
+    },
+    {
+      "number": 88,
+      "speaker": "KING",
+      "text": "A Norman."
+    },
+    {
+      "number": 88,
+      "speaker": "LAERTES",
+      "text": "Upon my life, Lamond."
+    },
+    {
+      "number": 89,
+      "speaker": "KING",
+      "text": "The very same."
+    },
+    {
+      "number": 90,
+      "speaker": "LAERTES",
+      "text": "I know him well: he is the brooch indeed"
+    },
+    {
+      "number": 91,
+      "speaker": "LAERTES",
+      "text": "And gem of all the nation."
+    },
+    {
+      "number": 91,
+      "speaker": "KING",
+      "text": "He made confession of you,"
+    },
+    {
+      "number": 92,
+      "speaker": "KING",
+      "text": "And gave you such a masterly report"
+    },
+    {
+      "number": 93,
+      "speaker": "KING",
+      "text": "For art and exercise in your defence"
+    },
+    {
+      "number": 94,
+      "speaker": "KING",
+      "text": "And for your rapier most especial,"
+    },
+    {
+      "number": 95,
+      "speaker": "KING",
+      "text": "That he cried out, ’twould be a sight indeed,"
+    },
+    {
+      "number": 96,
+      "speaker": "KING",
+      "text": "If one could match you: the scrimers of their nation,"
+    },
+    {
+      "number": 97,
+      "speaker": "KING",
+      "text": "He swore, had had neither motion, guard, nor eye,"
+    },
+    {
+      "number": 98,
+      "speaker": "KING",
+      "text": "If you opposed them. Sir, this report of his"
+    },
+    {
+      "number": 99,
+      "speaker": "KING",
+      "text": "Did Hamlet so envenom with his envy"
+    },
+    {
+      "number": 100,
+      "speaker": "KING",
+      "text": "That he could nothing do but wish and beg"
+    },
+    {
+      "number": 101,
+      "speaker": "KING",
+      "text": "Your sudden coming o’er, to play with him."
+    },
+    {
+      "number": 102,
+      "speaker": "KING",
+      "text": "Now, out of this—"
+    },
+    {
+      "number": 102,
+      "speaker": "LAERTES",
+      "text": "What out of this, my lord?"
+    },
+    {
+      "number": 103,
+      "speaker": "KING",
+      "text": "Laertes, was your father dear to you?"
+    },
+    {
+      "number": 104,
+      "speaker": "KING",
+      "text": "Or are you like the painting of a sorrow,"
+    },
+    {
+      "number": 105,
+      "speaker": "KING",
+      "text": "A face without a heart?"
+    },
+    {
+      "number": 105,
+      "speaker": "LAERTES",
+      "text": "Why ask you this?"
+    },
+    {
+      "number": 106,
+      "speaker": "KING",
+      "text": "Not that I think you did not love your father;"
+    },
+    {
+      "number": 107,
+      "speaker": "KING",
+      "text": "But that I know love is begun by time;"
+    },
+    {
+      "number": 108,
+      "speaker": "KING",
+      "text": "And that I see, in passages of proof,"
+    },
+    {
+      "number": 109,
+      "speaker": "KING",
+      "text": "Time qualifies the spark and fire of it."
+    },
+    {
+      "number": 110,
+      "speaker": "KING",
+      "text": "There lives within the very flame of love"
+    },
+    {
+      "number": 111,
+      "speaker": "KING",
+      "text": "A kind of wick or snuff that will abate it;"
+    },
+    {
+      "number": 112,
+      "speaker": "KING",
+      "text": "And nothing is at a like goodness still;"
+    },
+    {
+      "number": 113,
+      "speaker": "KING",
+      "text": "For goodness, growing to a plurisy,"
+    },
+    {
+      "number": 114,
+      "speaker": "KING",
+      "text": "Dies in his own too much: that we would do,"
+    },
+    {
+      "number": 115,
+      "speaker": "KING",
+      "text": "We should do when we would; for this “would” changes"
+    },
+    {
+      "number": 116,
+      "speaker": "KING",
+      "text": "And hath abatements and delays as many"
+    },
+    {
+      "number": 117,
+      "speaker": "KING",
+      "text": "As there are tongues, are hands, are accidents;"
+    },
+    {
+      "number": 118,
+      "speaker": "KING",
+      "text": "And then this “should” is like a spendthrift sigh,"
+    },
+    {
+      "number": 119,
+      "speaker": "KING",
+      "text": "That hurts by easing. But, to the quick o’ the ulcer:—"
+    },
+    {
+      "number": 120,
+      "speaker": "KING",
+      "text": "Hamlet comes back: what would you undertake,"
+    },
+    {
+      "number": 121,
+      "speaker": "KING",
+      "text": "To show yourself your father’s son in deed"
+    },
+    {
+      "number": 122,
+      "speaker": "KING",
+      "text": "More than in words?"
+    },
+    {
+      "number": 123,
+      "speaker": "LAERTES",
+      "text": "To cut his throat i’ the church."
+    },
+    {
+      "number": 124,
+      "speaker": "KING",
+      "text": "No place, indeed, should murder sanctuarize;"
+    },
+    {
+      "number": 125,
+      "speaker": "KING",
+      "text": "Revenge should have no bounds. But, good Laertes,"
+    },
+    {
+      "number": 126,
+      "speaker": "KING",
+      "text": "Will you do this, keep close within your chamber."
+    },
+    {
+      "number": 127,
+      "speaker": "KING",
+      "text": "Hamlet return’d shall know you are come home:"
+    },
+    {
+      "number": 128,
+      "speaker": "KING",
+      "text": "We’ll put on those shall praise your excellence"
+    },
+    {
+      "number": 129,
+      "speaker": "KING",
+      "text": "And set a double varnish on the fame"
+    },
+    {
+      "number": 130,
+      "speaker": "KING",
+      "text": "The Frenchman gave you, bring you in fine together"
+    },
+    {
+      "number": 131,
+      "speaker": "KING",
+      "text": "And wager on your heads: he, being remiss,"
+    },
+    {
+      "number": 132,
+      "speaker": "KING",
+      "text": "Most generous and free from all contriving,"
+    },
+    {
+      "number": 133,
+      "speaker": "KING",
+      "text": "Will not peruse the foils; so that, with ease,"
+    },
+    {
+      "number": 134,
+      "speaker": "KING",
+      "text": "Or with a little shuffling, you may choose"
+    },
+    {
+      "number": 135,
+      "speaker": "KING",
+      "text": "A sword unbated, and in a pass of practice"
+    },
+    {
+      "number": 136,
+      "speaker": "KING",
+      "text": "Requite him for your father."
+    },
+    {
+      "number": 136,
+      "speaker": "LAERTES",
+      "text": "I will do’t:"
+    },
+    {
+      "number": 137,
+      "speaker": "LAERTES",
+      "text": "And, for that purpose, I’ll anoint my sword."
+    },
+    {
+      "number": 138,
+      "speaker": "LAERTES",
+      "text": "I bought an unction of a mountebank,"
+    },
+    {
+      "number": 139,
+      "speaker": "LAERTES",
+      "text": "So mortal that, but dip a knife in it,"
+    },
+    {
+      "number": 140,
+      "speaker": "LAERTES",
+      "text": "Where it draws blood no cataplasm so rare,"
+    },
+    {
+      "number": 141,
+      "speaker": "LAERTES",
+      "text": "Collected from all simples that have virtue"
+    },
+    {
+      "number": 142,
+      "speaker": "LAERTES",
+      "text": "Under the moon, can save the thing from death"
+    },
+    {
+      "number": 143,
+      "speaker": "LAERTES",
+      "text": "That is but scratch’d withal: I’ll touch my point"
+    },
+    {
+      "number": 144,
+      "speaker": "LAERTES",
+      "text": "With this contagion, that, if I gall him slightly,"
+    },
+    {
+      "number": 145,
+      "speaker": "LAERTES",
+      "text": "It may be death."
+    },
+    {
+      "number": 145,
+      "speaker": "KING",
+      "text": "Let’s further think of this;"
+    },
+    {
+      "number": 146,
+      "speaker": "KING",
+      "text": "Weigh what convenience both of time and means"
+    },
+    {
+      "number": 147,
+      "speaker": "KING",
+      "text": "May fit us to our shape: if this should fail,"
+    },
+    {
+      "number": 148,
+      "speaker": "KING",
+      "text": "And that our drift look through our bad performance,"
+    },
+    {
+      "number": 149,
+      "speaker": "KING",
+      "text": "’Twere better not assay’d: therefore this project"
+    },
+    {
+      "number": 150,
+      "speaker": "KING",
+      "text": "Should have a back or second, that might hold,"
+    },
+    {
+      "number": 151,
+      "speaker": "KING",
+      "text": "If this should blast in proof. Soft! let me see:"
+    },
+    {
+      "number": 152,
+      "speaker": "KING",
+      "text": "We’ll make a solemn wager on your cunnings:"
+    },
+    {
+      "number": 153,
+      "speaker": "KING",
+      "text": "I ha’t."
+    },
+    {
+      "number": 154,
+      "speaker": "KING",
+      "text": "When in your motion you are hot and dry—"
+    },
+    {
+      "number": 155,
+      "speaker": "KING",
+      "text": "As make your bouts more violent to that end—"
+    },
+    {
+      "number": 156,
+      "speaker": "KING",
+      "text": "And that he calls for drink, I’ll have prepared him"
+    },
+    {
+      "number": 157,
+      "speaker": "KING",
+      "text": "A chalice for the nonce, whereon but sipping,"
+    },
+    {
+      "number": 158,
+      "speaker": "KING",
+      "text": "If he by chance escape your venom’d stuck,"
+    },
+    {
+      "number": 159,
+      "speaker": "KING",
+      "text": "Our purpose may hold there."
+    },
+    {
+      "number": 160,
+      "speaker": "QUEEN",
+      "text": "One woe doth tread upon another’s heel,"
+    },
+    {
+      "number": 161,
+      "speaker": "QUEEN",
+      "text": "So fast they follow: your sister’s drown’d, Laertes."
+    },
+    {
+      "number": 162,
+      "speaker": "LAERTES",
+      "text": "Drown’d! O, where?"
+    },
+    {
+      "number": 163,
+      "speaker": "QUEEN",
+      "text": "There is a willow grows aslant a brook,"
+    },
+    {
+      "number": 164,
+      "speaker": "QUEEN",
+      "text": "That shows his hoar leaves in the glassy stream;"
+    },
+    {
+      "number": 165,
+      "speaker": "QUEEN",
+      "text": "There with fantastic garlands did she come"
+    },
+    {
+      "number": 166,
+      "speaker": "QUEEN",
+      "text": "Of crow-flowers, nettles, daisies, and long purples"
+    },
+    {
+      "number": 167,
+      "speaker": "QUEEN",
+      "text": "That liberal shepherds give a grosser name,"
+    },
+    {
+      "number": 168,
+      "speaker": "QUEEN",
+      "text": "But our cold maids do dead men’s fingers call them:"
+    },
+    {
+      "number": 169,
+      "speaker": "QUEEN",
+      "text": "There, on the pendent boughs her coronet weeds"
+    },
+    {
+      "number": 170,
+      "speaker": "QUEEN",
+      "text": "Clambering to hang, an envious sliver broke;"
+    },
+    {
+      "number": 171,
+      "speaker": "QUEEN",
+      "text": "When down her weedy trophies and herself"
+    },
+    {
+      "number": 172,
+      "speaker": "QUEEN",
+      "text": "Fell in the weeping brook. Her clothes spread wide;"
+    },
+    {
+      "number": 173,
+      "speaker": "QUEEN",
+      "text": "And, mermaid-like, awhile they bore her up:"
+    },
+    {
+      "number": 174,
+      "speaker": "QUEEN",
+      "text": "Which time she chanted snatches of old tunes;"
+    },
+    {
+      "number": 175,
+      "speaker": "QUEEN",
+      "text": "As one incapable of her own distress,"
+    },
+    {
+      "number": 176,
+      "speaker": "QUEEN",
+      "text": "Or like a creature native and indued"
+    },
+    {
+      "number": 177,
+      "speaker": "QUEEN",
+      "text": "Unto that element: but long it could not be"
+    },
+    {
+      "number": 178,
+      "speaker": "QUEEN",
+      "text": "Till that her garments, heavy with their drink,"
+    },
+    {
+      "number": 179,
+      "speaker": "QUEEN",
+      "text": "Pull’d the poor wretch from her melodious lay"
+    },
+    {
+      "number": 180,
+      "speaker": "QUEEN",
+      "text": "To muddy death."
+    },
+    {
+      "number": 180,
+      "speaker": "LAERTES",
+      "text": "Alas, then, she is drown’d?"
+    },
+    {
+      "number": 181,
+      "speaker": "QUEEN",
+      "text": "Drown’d, drown’d."
+    },
+    {
+      "number": 182,
+      "speaker": "LAERTES",
+      "text": "Too much of water hast thou, poor Ophelia,"
+    },
+    {
+      "number": 183,
+      "speaker": "LAERTES",
+      "text": "And therefore I forbid my tears: but yet"
+    },
+    {
+      "number": 184,
+      "speaker": "LAERTES",
+      "text": "It is our trick; nature her custom holds,"
+    },
+    {
+      "number": 185,
+      "speaker": "LAERTES",
+      "text": "Let shame say what it will: when these are gone,"
+    },
+    {
+      "number": 186,
+      "speaker": "LAERTES",
+      "text": "The woman will be out. Adieu, my lord:"
+    },
+    {
+      "number": 187,
+      "speaker": "LAERTES",
+      "text": "I have a speech of fire, that fain would blaze,"
+    },
+    {
+      "number": 188,
+      "speaker": "LAERTES",
+      "text": "But that this folly douts it."
+    },
+    {
+      "number": 188,
+      "speaker": "KING",
+      "text": "Let’s follow, Gertrude:"
+    },
+    {
+      "number": 189,
+      "speaker": "KING",
+      "text": "How much I had to do to calm his rage!"
+    },
+    {
+      "number": 190,
+      "speaker": "KING",
+      "text": "Now fear I this will give it start again;"
+    },
+    {
+      "number": 191,
+      "speaker": "KING",
+      "text": "Therefore let’s follow."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter King and Laertes."
+    },
+    {
+      "after_line": 35,
+      "text": "Enter a Messenger."
+    },
+    {
+      "after_line": 35,
+      "text": "How now! what news?"
+    },
+    {
+      "after_line": 47,
+      "text": "Exit Messenger."
+    },
+    {
+      "after_line": 47,
+      "text": "Reads."
+    },
+    {
+      "after_line": 159,
+      "text": "Enter Queen."
+    },
+    {
+      "after_line": 159,
+      "text": "How now, sweet queen!"
+    },
+    {
+      "after_line": 188,
+      "text": "Exit."
+    },
+    {
+      "after_line": 191,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "hamlet_act4_scene7_gloss1",
+      "line": 1,
+      "phrase": "acquittance seal",
+      "definition": "formal release; acknowledgment"
+    },
+    {
+      "id": "hamlet_act4_scene7_gloss2",
+      "line": 5,
+      "phrase": "pursued my life",
+      "definition": "sought to kill me"
+    },
+    {
+      "id": "hamlet_act4_scene7_gloss3",
+      "line": 14,
+      "phrase": "so conjunctive to my life and soul",
+      "definition": "so bonded to me"
+    },
+    {
+      "id": "hamlet_act4_scene7_gloss4",
+      "line": 15,
+      "phrase": "as the star moves not but in his sphere",
+      "definition": "as a planet cannot move outside its orbit"
+    },
+    {
+      "id": "hamlet_act4_scene7_gloss5",
+      "line": 18,
+      "phrase": "general gender",
+      "definition": "common people"
+    },
+    {
+      "id": "hamlet_act4_scene7_gloss6",
+      "line": 21,
+      "phrase": "Convert his gyves to graces",
+      "definition": "turn his chains into virtues"
+    },
+    {
+      "id": "hamlet_act4_scene7_gloss7",
+      "line": 22,
+      "phrase": "loud a wind",
+      "definition": "strong a wind (of opinion)"
+    },
+    {
+      "id": "hamlet_act4_scene7_gloss8",
+      "line": 31,
+      "phrase": "flat and dull",
+      "definition": "sluggish and dull"
+    },
+    {
+      "id": "hamlet_act4_scene7_gloss9",
+      "line": 43,
+      "phrase": "naked",
+      "definition": "alone (destitute)"
+    },
+    {
+      "id": "hamlet_act4_scene7_gloss10",
+      "line": 47,
+      "phrase": "abuse",
+      "definition": "deception"
+    },
+    {
+      "id": "hamlet_act4_scene7_gloss11",
+      "line": 48,
+      "phrase": "character",
+      "definition": "handwriting"
+    },
+    {
+      "id": "hamlet_act4_scene7_gloss12",
+      "line": 61,
+      "phrase": "device",
+      "definition": "stratagem"
+    },
+    {
+      "id": "hamlet_act4_scene7_gloss13",
+      "line": 64,
+      "phrase": "uncharge the practice",
+      "definition": "not condemn the trick"
+    },
+    {
+      "id": "hamlet_act4_scene7_gloss14",
+      "line": 67,
+      "phrase": "organ",
+      "definition": "instrument"
+    },
+    {
+      "id": "hamlet_act4_scene7_gloss15",
+      "line": 86,
+      "phrase": "in forgery of shapes and tricks",
+      "definition": "in invented figures and feats"
+    },
+    {
+      "id": "hamlet_act4_scene7_gloss16",
+      "line": 88,
+      "phrase": "Lamond",
+      "definition": "a French nobleman and horseman"
+    },
+    {
+      "id": "hamlet_act4_scene7_gloss17",
+      "line": 94,
+      "phrase": "rapier",
+      "definition": "slender thrusting sword"
+    },
+    {
+      "id": "hamlet_act4_scene7_gloss18",
+      "line": 99,
+      "phrase": "envenom with his envy",
+      "definition": "poison with his jealousy"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "hamlet_act4_scene7_ann1",
+      "line_start": 60,
+      "line_end": 140,
+      "citation_display": "Hamlet 4.7.60–140",
+      "category": "structural",
+      "title": "The plot-making scene: Claudius at his most Machiavellian",
+      "body": "The King's exchange with Laertes is a masterclass in manipulation. Claudius does not propose the murder directly; he asks leading questions ('Was your father dear to you?') and lets Laertes arrive at the solution Claudius already has in mind. The staged fencing match, the unblunted rapier, the anointing with a 'mountebank's' poison, and the backup plan of a poisoned cup — all are introduced as if Laertes is the improviser and the King merely the sounding board. Shakespeare's Claudius is not the cardboard villain of the revenge-tragedy tradition. He is the political intelligence that revenge tragedy requires to generate its catastrophes, and his technique here is nearer Iago's than to any Senecan stereotype.",
+      "sources": [
+        "Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"
+      ]
+    },
+    {
+      "id": "hamlet_act4_scene7_ann2",
+      "line_start": 140,
+      "line_end": 180,
+      "citation_display": "Hamlet 4.7.140–180",
+      "category": "thematic",
+      "title": "Gertrude's elegy for Ophelia",
+      "body": "The report of Ophelia's drowning is one of the most famous speeches in English poetry, and also one of the most theatrically strange. It is delivered in past tense, as if by an eyewitness, by a queen who was certainly not there. The language — 'crow-flowers, nettles, daisies, and long purples' — is botanically precise and visually suspended. Critics from Coleridge onward have noted that the speech behaves less like a report than like a tableau. The pastoral mode (weeping willow, garlands, mermaid-like singing) softens the violence; Ophelia 'dies' into a painting before she actually dies. Tennyson and Millais would later build their Ophelia on these very lines. What Gertrude does not say — whether the death was accident or suicide — the gravediggers will debate in 5.1.",
+      "sources": [
+        "Elaine Showalter, 'Representing Ophelia' (1985)",
+        "Linda Charnes, Hamlet's Heirs (2006)"
+      ]
+    },
+    {
+      "id": "hamlet_act4_scene7_ann3",
+      "line_start": 107,
+      "line_end": 128,
+      "citation_display": "Hamlet 4.7.107–128",
+      "category": "close_reading",
+      "title": "The poison plot and the logic of the foil",
+      "body": "Laertes's proposed poisoned rapier-tip is the scene's ethical nadir. Under Renaissance honor-code, a duel was a ritual combat that tested fate and skill; poisoning a foil turns the ritual into a secret assassination while preserving the ceremonial surface. The word 'unction,' applied to the poison, is theologically loaded — it is the word for the sacrament of anointing, here reversed into damnation. Shakespeare is noting a specific corruption of chivalry. The fallback plan — a poisoned cup, should the sword fail — represents the total betrayal of the duel's pretense. When the plan turns on its makers in Act 5, the rhetorical closure is near-surgical: poisons kill their compounders.",
+      "sources": [
+        "Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "hamlet_act4_scene7_q1",
+      "kind": "inference",
+      "prompt": "How does Claudius convert Laertes's revenge into his own instrument?",
+      "options": [
+        "By offering Laertes the throne.",
+        "By leading Laertes to propose a treacherous fencing match that Claudius in fact designed.",
+        "By forging a letter that incriminates Hamlet.",
+        "By locking Laertes in a dungeon until he agrees."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 60,
+      "anchor_line_end": 140
+    },
+    {
+      "id": "hamlet_act4_scene7_q2",
+      "kind": "comprehension",
+      "prompt": "What does Laertes propose to do to the rapier for the duel?",
+      "options": [
+        "Polish it with a secret rust remover.",
+        "Anoint its tip with a poison bought from a mountebank, so that even a scratch will kill.",
+        "Weigh it down with lead to favor him in the strike.",
+        "Have it blessed by a priest so God will favor his cause."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 118,
+      "anchor_line_end": 128
+    },
+    {
+      "id": "hamlet_act4_scene7_q3",
+      "kind": "comprehension",
+      "prompt": "What backup plan does Claudius propose if Laertes's poisoned rapier fails?",
+      "options": [
+        "A second swordsman hidden in the gallery.",
+        "A poisoned cup of wine for Hamlet to drink 'for the nonce.'",
+        "A carriage accident on the return from the duel.",
+        "A hidden pistol behind the arras."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 128,
+      "anchor_line_end": 138
+    },
+    {
+      "id": "hamlet_act4_scene7_q4",
+      "kind": "close_reading",
+      "prompt": "What peculiar aspect of Gertrude's speech reporting Ophelia's drowning has puzzled critics?",
+      "options": [
+        "It is spoken in prose rather than verse.",
+        "She describes the death in precise, pastoral detail as if she had witnessed it, though she cannot have been present.",
+        "It contains anachronistic references to modern flowers.",
+        "It is delivered in Latin."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 140,
+      "anchor_line_end": 162
+    },
+    {
+      "id": "hamlet_act4_scene7_q5",
+      "kind": "theme",
+      "prompt": "What does the metaphor of a 'tree' in Gertrude's speech — the 'envious sliver' that breaks — suggest about Ophelia's death?",
+      "options": [
+        "That the death is partly a natural accident and not clearly a suicide.",
+        "That Ophelia was deliberately pushed by an unseen assailant.",
+        "That the tree itself is a metaphor for King Hamlet's spirit.",
+        "That the willow carries biblical weight as a symbol of mourning."
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 25,
+      "anchor_line_start": 150,
+      "anchor_line_end": 160
+    }
+  ]
+}

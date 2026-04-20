@@ -1,0 +1,821 @@
+{
+  "section_id": "julius_caesar_act5_scene5",
+  "work_id": "julius-caesar",
+  "sequence": 18,
+  "act": 5,
+  "scene": 5,
+  "kind": "scene",
+  "scene_title": "Another part of the field",
+  "line_count": 86,
+  "word_count": 645,
+  "est_read_minutes": 3,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "BRUTUS",
+      "text": "Come, poor remains of friends, rest on this rock."
+    },
+    {
+      "number": 2,
+      "speaker": "CLITUS",
+      "text": "Statilius show’d the torch-light, but, my lord,"
+    },
+    {
+      "number": 3,
+      "speaker": "CLITUS",
+      "text": "He came not back: he is or ta’en or slain."
+    },
+    {
+      "number": 4,
+      "speaker": "BRUTUS",
+      "text": "Sit thee down, Clitus: slaying is the word;"
+    },
+    {
+      "number": 5,
+      "speaker": "BRUTUS",
+      "text": "It is a deed in fashion. Hark thee, Clitus."
+    },
+    {
+      "number": 6,
+      "speaker": "CLITUS",
+      "text": "What, I, my lord? No, not for all the world."
+    },
+    {
+      "number": 7,
+      "speaker": "BRUTUS",
+      "text": "Peace then! no words."
+    },
+    {
+      "number": 7,
+      "speaker": "CLITUS",
+      "text": "I’ll rather kill myself."
+    },
+    {
+      "number": 8,
+      "speaker": "BRUTUS",
+      "text": "Hark thee, Dardanius."
+    },
+    {
+      "number": 8,
+      "speaker": "DARDANIUS",
+      "text": "Shall I do such a deed?"
+    },
+    {
+      "number": 9,
+      "speaker": "CLITUS",
+      "text": "O Dardanius!"
+    },
+    {
+      "number": 9,
+      "speaker": "DARDANIUS",
+      "text": "O Clitus!"
+    },
+    {
+      "number": 10,
+      "speaker": "CLITUS",
+      "text": "What ill request did Brutus make to thee?"
+    },
+    {
+      "number": 11,
+      "speaker": "DARDANIUS",
+      "text": "To kill him, Clitus. Look, he meditates."
+    },
+    {
+      "number": 12,
+      "speaker": "CLITUS",
+      "text": "Now is that noble vessel full of grief,"
+    },
+    {
+      "number": 13,
+      "speaker": "CLITUS",
+      "text": "That it runs over even at his eyes."
+    },
+    {
+      "number": 14,
+      "speaker": "BRUTUS",
+      "text": "Come hither, good Volumnius; list a word."
+    },
+    {
+      "number": 15,
+      "speaker": "VOLUMNIUS",
+      "text": "What says my lord?"
+    },
+    {
+      "number": 15,
+      "speaker": "BRUTUS",
+      "text": "Why, this, Volumnius:"
+    },
+    {
+      "number": 16,
+      "speaker": "BRUTUS",
+      "text": "The ghost of Caesar hath appear’d to me"
+    },
+    {
+      "number": 17,
+      "speaker": "BRUTUS",
+      "text": "Two several times by night; at Sardis once,"
+    },
+    {
+      "number": 18,
+      "speaker": "BRUTUS",
+      "text": "And, this last night, here in Philippi fields:"
+    },
+    {
+      "number": 19,
+      "speaker": "BRUTUS",
+      "text": "I know my hour is come."
+    },
+    {
+      "number": 19,
+      "speaker": "VOLUMNIUS",
+      "text": "Not so, my lord."
+    },
+    {
+      "number": 20,
+      "speaker": "BRUTUS",
+      "text": "Nay, I am sure it is, Volumnius."
+    },
+    {
+      "number": 21,
+      "speaker": "BRUTUS",
+      "text": "Thou seest the world, Volumnius, how it goes;"
+    },
+    {
+      "number": 22,
+      "speaker": "BRUTUS",
+      "text": "Our enemies have beat us to the pit: Low alarums."
+    },
+    {
+      "number": 23,
+      "speaker": "BRUTUS",
+      "text": "It is more worthy to leap in ourselves,"
+    },
+    {
+      "number": 24,
+      "speaker": "BRUTUS",
+      "text": "Than tarry till they push us. Good Volumnius,"
+    },
+    {
+      "number": 25,
+      "speaker": "BRUTUS",
+      "text": "Thou know’st that we two went to school together:"
+    },
+    {
+      "number": 26,
+      "speaker": "BRUTUS",
+      "text": "Even for that our love of old, I prithee,"
+    },
+    {
+      "number": 27,
+      "speaker": "BRUTUS",
+      "text": "Hold thou my sword-hilts, whilst I run on it."
+    },
+    {
+      "number": 28,
+      "speaker": "VOLUMNIUS",
+      "text": "That’s not an office for a friend, my lord."
+    },
+    {
+      "number": 29,
+      "speaker": "CLITUS",
+      "text": "Fly, fly, my lord; there is no tarrying here."
+    },
+    {
+      "number": 30,
+      "speaker": "BRUTUS",
+      "text": "Farewell to you; and you; and you, Volumnius."
+    },
+    {
+      "number": 31,
+      "speaker": "BRUTUS",
+      "text": "Strato, thou hast been all this while asleep;"
+    },
+    {
+      "number": 32,
+      "speaker": "BRUTUS",
+      "text": "Farewell to thee too, Strato. Countrymen,"
+    },
+    {
+      "number": 33,
+      "speaker": "BRUTUS",
+      "text": "My heart doth joy that yet in all my life"
+    },
+    {
+      "number": 34,
+      "speaker": "BRUTUS",
+      "text": "I found no man but he was true to me."
+    },
+    {
+      "number": 35,
+      "speaker": "BRUTUS",
+      "text": "I shall have glory by this losing day"
+    },
+    {
+      "number": 36,
+      "speaker": "BRUTUS",
+      "text": "More than Octavius and Mark Antony"
+    },
+    {
+      "number": 37,
+      "speaker": "BRUTUS",
+      "text": "By this vile conquest shall attain unto."
+    },
+    {
+      "number": 38,
+      "speaker": "BRUTUS",
+      "text": "So fare you well at once; for Brutus’ tongue"
+    },
+    {
+      "number": 39,
+      "speaker": "BRUTUS",
+      "text": "Hath almost ended his life’s history:"
+    },
+    {
+      "number": 40,
+      "speaker": "BRUTUS",
+      "text": "Night hangs upon mine eyes; my bones would rest,"
+    },
+    {
+      "number": 41,
+      "speaker": "BRUTUS",
+      "text": "That have but labour’d to attain this hour."
+    },
+    {
+      "number": 42,
+      "speaker": "CLITUS",
+      "text": "Fly, my lord, fly."
+    },
+    {
+      "number": 42,
+      "speaker": "BRUTUS",
+      "text": "Hence! I will follow."
+    },
+    {
+      "number": 43,
+      "speaker": "BRUTUS",
+      "text": "I prithee, Strato, stay thou by thy lord:"
+    },
+    {
+      "number": 44,
+      "speaker": "BRUTUS",
+      "text": "Thou art a fellow of a good respect;"
+    },
+    {
+      "number": 45,
+      "speaker": "BRUTUS",
+      "text": "Thy life hath had some smatch of honour in it:"
+    },
+    {
+      "number": 46,
+      "speaker": "BRUTUS",
+      "text": "Hold then my sword, and turn away thy face,"
+    },
+    {
+      "number": 47,
+      "speaker": "BRUTUS",
+      "text": "While I do run upon it. Wilt thou, Strato?"
+    },
+    {
+      "number": 48,
+      "speaker": "STRATO",
+      "text": "Give me your hand first. Fare you well, my lord."
+    },
+    {
+      "number": 49,
+      "speaker": "BRUTUS",
+      "text": "Farewell, good Strato. Runs on his sword. Caesar, now be still:"
+    },
+    {
+      "number": 50,
+      "speaker": "BRUTUS",
+      "text": "I kill’d not thee with half so good a will."
+    },
+    {
+      "number": 51,
+      "speaker": "OCTAVIUS",
+      "text": "What man is that?"
+    },
+    {
+      "number": 52,
+      "speaker": "MESSALA",
+      "text": "My master’s man. Strato, where is thy master?"
+    },
+    {
+      "number": 53,
+      "speaker": "STRATO",
+      "text": "Free from the bondage you are in, Messala:"
+    },
+    {
+      "number": 54,
+      "speaker": "STRATO",
+      "text": "The conquerors can but make a fire of him;"
+    },
+    {
+      "number": 55,
+      "speaker": "STRATO",
+      "text": "For Brutus only overcame himself,"
+    },
+    {
+      "number": 56,
+      "speaker": "STRATO",
+      "text": "And no man else hath honour by his death."
+    },
+    {
+      "number": 57,
+      "speaker": "LUCILIUS",
+      "text": "So Brutus should be found. I thank thee, Brutus,"
+    },
+    {
+      "number": 58,
+      "speaker": "LUCILIUS",
+      "text": "That thou hast proved Lucilius’ saying true."
+    },
+    {
+      "number": 59,
+      "speaker": "OCTAVIUS",
+      "text": "All that served Brutus, I will entertain them."
+    },
+    {
+      "number": 60,
+      "speaker": "OCTAVIUS",
+      "text": "Fellow, wilt thou bestow thy time with me?"
+    },
+    {
+      "number": 61,
+      "speaker": "STRATO",
+      "text": "Ay, if Messala will prefer me to you."
+    },
+    {
+      "number": 62,
+      "speaker": "OCTAVIUS",
+      "text": "Do so, good Messala."
+    },
+    {
+      "number": 62,
+      "speaker": "MESSALA",
+      "text": "How died my master, Strato?"
+    },
+    {
+      "number": 63,
+      "speaker": "STRATO",
+      "text": "I held the sword, and he did run on it."
+    },
+    {
+      "number": 64,
+      "speaker": "MESSALA",
+      "text": "Octavius, then take him to follow thee,"
+    },
+    {
+      "number": 65,
+      "speaker": "MESSALA",
+      "text": "That did the latest service to my master."
+    },
+    {
+      "number": 66,
+      "speaker": "ANTONY",
+      "text": "This was the noblest Roman of them all:"
+    },
+    {
+      "number": 67,
+      "speaker": "ANTONY",
+      "text": "All the conspirators save only he"
+    },
+    {
+      "number": 68,
+      "speaker": "ANTONY",
+      "text": "Did that they did in envy of great Caesar;"
+    },
+    {
+      "number": 69,
+      "speaker": "ANTONY",
+      "text": "He only, in a general honest thought"
+    },
+    {
+      "number": 70,
+      "speaker": "ANTONY",
+      "text": "And common good to all, made one of them."
+    },
+    {
+      "number": 71,
+      "speaker": "ANTONY",
+      "text": "His life was gentle, and the elements"
+    },
+    {
+      "number": 72,
+      "speaker": "ANTONY",
+      "text": "So mix’d in him that Nature might stand up"
+    },
+    {
+      "number": 73,
+      "speaker": "ANTONY",
+      "text": "And say to all the world “This was a man!”"
+    },
+    {
+      "number": 74,
+      "speaker": "OCTAVIUS",
+      "text": "According to his virtue let us use him,"
+    },
+    {
+      "number": 75,
+      "speaker": "OCTAVIUS",
+      "text": "With all respect and rites of burial."
+    },
+    {
+      "number": 76,
+      "speaker": "OCTAVIUS",
+      "text": "Within my tent his bones to-night shall lie,"
+    },
+    {
+      "number": 77,
+      "speaker": "OCTAVIUS",
+      "text": "Most like a soldier, order’d honourably."
+    },
+    {
+      "number": 78,
+      "speaker": "OCTAVIUS",
+      "text": "So call the field to rest; and let’s away,"
+    },
+    {
+      "number": 79,
+      "speaker": "OCTAVIUS",
+      "text": "To part the glories of this happy day."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Brutus, Dardanius, Clitus, Strato, and Volumnius."
+    },
+    {
+      "after_line": 5,
+      "text": "Whispers."
+    },
+    {
+      "after_line": 8,
+      "text": "Whispers."
+    },
+    {
+      "after_line": 28,
+      "text": "Alarum still."
+    },
+    {
+      "after_line": 41,
+      "text": "Alarum. Cry within, “Fly, fly, fly!”"
+    },
+    {
+      "after_line": 42,
+      "text": "Exeunt Clitus, Dardanius, and Volumnius."
+    },
+    {
+      "after_line": 50,
+      "text": "Dies."
+    },
+    {
+      "after_line": 50,
+      "text": "Alarum. Retreat. Enter Octavius, Antony, Messala, Lucilius, and the army."
+    },
+    {
+      "after_line": 79,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "julius_caesar_act5_scene5_gloss1",
+      "line": 1,
+      "phrase": "poor remains of friends",
+      "definition": "the few friends left; the remnant"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss2",
+      "line": 2,
+      "phrase": "Statilius show'd the torch-light",
+      "definition": "Statilius signalled with a torch that the other wing of the army was still whole — his failure to return meant the news was bad"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss3",
+      "line": 4,
+      "phrase": "slaying is the word",
+      "definition": "killing is the order of the day"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss4",
+      "line": 12,
+      "phrase": "noble vessel full of grief",
+      "definition": "noble man filled with grief — Clitus's image for Brutus as a vessel overflowing"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss5",
+      "line": 16,
+      "phrase": "ghost of Caesar hath appear'd to me",
+      "definition": "Caesar's Ghost, which Brutus first saw in 4.3, has returned — at Philippi, as the Ghost foretold. The prophecy is fulfilled"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss6",
+      "line": 17,
+      "phrase": "Sardis once",
+      "definition": "the visitation in 4.3 at Sardis"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss7",
+      "line": 19,
+      "phrase": "I know my hour is come",
+      "definition": "I know my death is at hand — the Stoic's acceptance"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss8",
+      "line": 22,
+      "phrase": "beat us to the pit",
+      "definition": "driven us into the pit like hunted animals — the boar-hunt metaphor"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss9",
+      "line": 24,
+      "phrase": "more worthy to leap in ourselves / Than tarry till they push us",
+      "definition": "more honourable to kill ourselves than wait for the enemy to do it — Brutus's revised position on suicide, abandoning 5.1's stance"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss10",
+      "line": 27,
+      "phrase": "Hold thou my sword-hilts",
+      "definition": "the Roman suicide method: a friend holds the sword while you run onto the point. A ritualised, honourable death"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss11",
+      "line": 35,
+      "phrase": "glory by this losing day",
+      "definition": "honour from this day of defeat — Brutus's final Stoic claim: honour lies in the manner of losing"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss12",
+      "line": 37,
+      "phrase": "vile conquest",
+      "definition": "base victory — Brutus dismisses the triumvirs' win as dishonourable"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss13",
+      "line": 45,
+      "phrase": "smatch of honour",
+      "definition": "a taste of honour; some measure of it"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss14",
+      "line": 49,
+      "phrase": "Runs on his sword",
+      "definition": "Brutus's suicide, achieved with Strato's help — the model Roman death: honourable, voluntary, assisted by a faithful servant"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss15",
+      "line": 49,
+      "phrase": "Caesar, now be still",
+      "definition": "Caesar, now rest quiet — Brutus addresses Caesar's spirit; his death lays the ghost"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss16",
+      "line": 50,
+      "phrase": "I kill'd not thee with half so good a will",
+      "definition": "I killed you with less willingness than I now kill myself — the play's most devastating half-line; Brutus's admission at the end that Caesar's murder was the harder deed"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss17",
+      "line": 55,
+      "phrase": "Brutus only overcame himself",
+      "definition": "Brutus alone defeated Brutus — Strato's epitaph; honourable self-conquest"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss18",
+      "line": 61,
+      "phrase": "prefer me to you",
+      "definition": "recommend me to your service"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss19",
+      "line": 66,
+      "phrase": "noblest Roman of them all",
+      "definition": "Antony's epitaph for Brutus — the play's most famous closing tribute. But note: Antony is consolidating power even while eulogizing; the generosity is also political theatre, binding former enemies to the new regime"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss20",
+      "line": 68,
+      "phrase": "in envy of great Caesar",
+      "definition": "out of jealousy of Caesar — Antony exempts Brutus alone from this charge, preserving the myth of the idealistic assassin"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss21",
+      "line": 69,
+      "phrase": "general honest thought",
+      "definition": "an honest concern for the general good"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss22",
+      "line": 71,
+      "phrase": "elements / So mix'd in him",
+      "definition": "the four elements (earth, water, air, fire) were thought to compose the human constitution; 'well-mixed' meant temperamentally balanced; a Renaissance paean to the ideal man"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss23",
+      "line": 73,
+      "phrase": "This was a man!",
+      "definition": "here was a true man — Antony's closing valuation. Within fifteen years of this speech (by 27 BCE), the young Octavius will have become Augustus, first emperor; the Republic the conspirators sought to preserve will be gone. Antony's generosity to Brutus coincides with the Republic's end"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss24",
+      "line": 75,
+      "phrase": "rites of burial",
+      "definition": "proper funeral ceremonies"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss25",
+      "line": 77,
+      "phrase": "order'd honourably",
+      "definition": "arranged with honour; a soldier's funeral"
+    },
+    {
+      "id": "julius_caesar_act5_scene5_gloss26",
+      "line": 79,
+      "phrase": "part the glories",
+      "definition": "divide the spoils of victory — the triumvirs (eventually just Octavius) will carve up the Roman world. The play ends with the partition that makes Augustan rule possible"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "julius_caesar_act5_scene5_ann1",
+      "line_start": 23,
+      "line_end": 50,
+      "citation_display": "Julius Caesar 5.5.23–50",
+      "category": "thematic",
+      "title": "Brutus's suicide: the Stoic death earned",
+      "body": "Brutus's suicide on Strato's sword is Shakespeare's most fully-earned Roman death. The key elements are all present: the friend who holds the sword (Strato, like Cassius's Pindarus), the covered face (Strato turns his face away), the famous last word to the enemy ('Caesar, now be still: / I kill'd not thee with half so good a will'). Each is from the Roman suicide tradition Plutarch records for both Brutus and Cassius.\n\nThe final line — 'I kill'd not thee with half so good a will' — is Shakespeare's most devastating half-line in the play. Brutus admits, at the moment of his own death, that killing Caesar was harder for him than killing himself. The admission reverses the ideological framing. Through five acts Brutus has insisted that the assassination was a civic duty rendered with reluctant love; at the instant of his death he tells Caesar's spirit that he would rather be dead than have killed him. The Stoic case for the murder — that Brutus acted from general principle and private love — collapses into a simpler truth: he killed the man he loved and could not live with having done it.\n\nShakespeare does not underline this. He lets the line stand. But it is the play's judgment on the assassination that Brutus has finally offered, and it is the judgment he could not offer while living. The tragedy is that the clarity was available only at the cost of the life that might have acted on it.\n\nBrutus's revised position on suicide, also worth noting: in 5.1 L101–108 he called Cato's suicide 'cowardly and vile.' Here he does it, and frames it as 'glory by this losing day.' The philosophical inconsistency is not a defect of Brutus's; it is the play's argument. Theoretical Stoicism cannot survive Philippi; only the practical Stoicism of the suicide itself remains.",
+      "sources": [
+        "Plutarch, *Life of Brutus* §52 (North, 1579)",
+        "A. C. Bradley (1904)",
+        "Miriam Griffin (1986)",
+        "A. D. Nuttall (2007)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act5_scene5_ann2",
+      "line_start": 66,
+      "line_end": 73,
+      "citation_display": "Julius Caesar 5.5.66–73",
+      "category": "thematic",
+      "title": "'This was the noblest Roman of them all': the epitaph as political theatre",
+      "body": "Antony's closing eulogy — 'This was the noblest Roman of them all' — is read at the play's end as pure tribute. In context it is also consolidation. Antony has just finished defeating the last republican army; the triumvirate has been proscribing senators; Octavius is standing beside him, preparing to eclipse him. Eulogising Brutus as singular among the conspirators ('all the conspirators save only he / Did that they did in envy of great Caesar') is politically shrewd. It separates Brutus from Cassius (dead), from Casca (dead), from Decius and the rest (dead or fugitive), and preserves Brutus's reputation as an ideal that the new regime can honour without being threatened by.\n\nThe technique matters. A defeated enemy, honoured, is a precedent for how the new regime will treat former opponents. Antony's language — 'His life was gentle, and the elements / So mix'd in him that Nature might stand up / And say to all the world, This was a man!' — is warm, specific, and famously generous. It is also a political statement. The new regime honours noble losers; former conspirators who yield can expect mercy; the coming empire has room for republican memory as long as republican action is ended.\n\nOctavius's response ('With all respect and rites of burial') completes the move. The funeral will be in his tent. The burial is a performance of continuity: the man who killed Caesar will lie in state under the care of Caesar's heir. The gesture is political theatre of the highest order. It also definitively ends the Republic. The man who is honouring Brutus is the man who will, within fifteen years, rule Rome alone. The Republic the conspirators died to preserve is buried, with republican honours, by the first emperor.",
+      "sources": [
+        "Plutarch, *Life of Brutus* §53 (North, 1579)",
+        "R. Syme, *The Roman Revolution* (1939)",
+        "Paul Zanker, *The Power of Images in the Age of Augustus* (1988)",
+        "David Norbrook (1999)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act5_scene5_ann3",
+      "line_start": 71,
+      "line_end": 73,
+      "citation_display": "Julius Caesar 5.5.71–73",
+      "category": "close_reading",
+      "title": "'This was a man!': the Renaissance ideal mixed in Roman clay",
+      "body": "Antony's closing praise of Brutus — 'the elements / So mix'd in him that Nature might stand up / And say to all the world, This was a man!' — uses the Renaissance doctrine of the four elements (earth, water, air, fire) believed to compose the human constitution in varying proportions. A man 'well-mixed' was temperamentally balanced: the blood (air), phlegm (water), yellow bile (fire), and black bile (earth) in healthful ratio. The phrase is a paean to the ideal human.\n\nThe compliment is, finally, humanist rather than specifically Roman. 'This was a man!' — not 'this was a Roman', not 'this was a republican', but 'this was a man.' Shakespeare lets Antony step, for one line, outside political categories and grant Brutus the most general possible praise. The move is gracious and true. It is also the move by which Antony makes Brutus's republican commitment non-political — an aesthetic virtue rather than a programmatic one. The body politic of the old Rome is ended; the private virtue of Brutus is preserved as a beautiful example. Shakespeare's Antony has enacted, in eight lines, the precise cultural move by which empire absorbs republic: the politics die, the character becomes monumental.",
+      "sources": [
+        "E. M. W. Tillyard, *The Elizabethan World Picture* (1943)",
+        "Gail Kern Paster, *Humoring the Body* (2004)",
+        "Kahn (1997)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act5_scene5_ann4",
+      "line_start": 74,
+      "line_end": 79,
+      "citation_display": "Julius Caesar 5.5.74–79",
+      "category": "historical",
+      "title": "Octavius orders the funeral: the Republic ends with a soldier's burial",
+      "body": "The play's last speech is Octavius's. It is five lines of official language: a command for burial with 'all respect and rites of burial,' a soldier's order of honour, and a call to the field to rest. Shakespeare closes a 2,500-line play on the voice of the man who will, within fifteen years, be Augustus — the man whom Cassius mocked in 5.1 as a 'peevish schoolboy.'\n\nThe Republic is not argued dead here; it is administratively closed. Octavius speaks as if giving routine military orders, because that is what closing the Republic looked like at the time: a series of routine decisions, burial rites conducted, offices reassigned, a field called to rest. The audience leaves the theatre having watched the Republic end not with a coup but with a clean-up. The emotional force of the play has been invested in Brutus and Cassius; the administrative closure has been handed to Octavius.\n\nShakespeare's choice of how to end is specific. The older Roman-play tradition (the Senecan tradition, plays like Buchanan's *Baptistes*) would have closed on moralising choral speech. Shakespeare closes on the victor's plain order: 'So call the field to rest; and let's away, / To part the glories of this happy day.' 'Happy' is Octavius's word, not the play's. The audience feels the gap. The play argues that empire is administrative in exactly the way Octavius speaks: tidy, efficient, a little cold, the soldiers filed back to camp, the glory to be parted by the victors.",
+      "sources": [
+        "R. Syme, *The Roman Revolution* (1939)",
+        "T. S. Dorsch (ed.), Arden *Julius Caesar* (1955)",
+        "David Norbrook (1999)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act5_scene5_ann5",
+      "line_start": 49,
+      "line_end": 50,
+      "citation_display": "Julius Caesar 5.5.49–50",
+      "category": "close_reading",
+      "title": "'I kill'd not thee with half so good a will': the confession Brutus could not afford while living",
+      "body": "Brutus's dying half-line to Caesar's spirit is the play's most private and devastating admission. Through five acts Brutus has framed the assassination as civic necessity reluctantly discharged: 'Not that I loved Caesar less, but that I loved Rome more' (3.2). The justification depends on the ratio of love-to-principle coming out the right way — he had to love Rome *more* than Caesar. At the moment of his own death, Brutus inverts the ratio. Killing himself is easier than killing Caesar was. The love for Caesar was, in the end, the more weighty.\n\nShakespeare does not stage a repudiation of the assassination; Brutus does not say 'it was wrong' or 'I regret it.' He simply lets the emotional truth slip out in the one moment where performance has no further purpose. The line is private in a way the whole play has not let Brutus be private before. Every previous speech of his has been for an audience — Cassius, the conspirators, the crowd, Messala. This one is for Caesar's ghost alone, and the ghost is his own evil spirit (4.3 L276), so it is finally for Brutus himself.\n\nThe line's placement matters. It comes as Brutus is running onto Strato's sword. It is not a considered reflection; it is a confession at the instant of dying. The play is arguing that the real truth about a political act is sometimes only available at the cost of the life it took to perform the act. Stoic philosophy is supposed to provide the clarity; it doesn't. The suicide does.",
+      "sources": [
+        "A. D. Nuttall (2007)",
+        "Stanley Cavell, *Disowning Knowledge* (2003)",
+        "Harold Bloom (1998)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "julius_caesar_act5_scene5_q1",
+      "kind": "close_reading",
+      "prompt": "What does 'I kill'd not thee with half so good a will' reveal?",
+      "options": [
+        "Brutus's continued contempt for Caesar",
+        "Brutus's private admission at the instant of dying: killing himself is easier than killing Caesar was — the love for Caesar was more weighty than the republican principle; the justification of 3.2 inverts",
+        "That he killed Caesar eagerly",
+        "A stage direction"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 49,
+      "anchor_line_end": 50
+    },
+    {
+      "id": "julius_caesar_act5_scene5_q2",
+      "kind": "theme",
+      "prompt": "Antony's 'This was the noblest Roman of them all' is read at face value as tribute. In context it is also:",
+      "options": [
+        "Only tribute",
+        "Political theatre — Antony has just won; proscribing senators; eulogising Brutus as singular among the conspirators both honours Brutus and teaches the new regime how former enemies will be treated; a classic imperial move of absorbing republican virtue into personal monument while ending republican action",
+        "Praise by mistake",
+        "Sarcasm"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 66,
+      "anchor_line_end": 73
+    },
+    {
+      "id": "julius_caesar_act5_scene5_q3",
+      "kind": "historical",
+      "prompt": "The play ends with Octavius ordering Brutus's burial. What does Shakespeare achieve by closing on this voice?",
+      "options": [
+        "Nothing in particular",
+        "The Republic is administratively closed, not argued dead — the man who will be Augustus speaks in the register of routine military orders; within fifteen years he will rule Rome alone, ending the Republic the conspirators died to preserve",
+        "An unrelated plot",
+        "Octavius's election"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 74,
+      "anchor_line_end": 79
+    },
+    {
+      "id": "julius_caesar_act5_scene5_q4",
+      "kind": "comprehension",
+      "prompt": "Why does Brutus invoke Caesar ('Caesar, now be still') as he dies?",
+      "options": [
+        "He is hallucinating",
+        "He is laying the Ghost of Caesar — the spirit that appeared to him at Sardis (4.3) and returned at Philippi (5.5 L16); the suicide completes the prophecy and ends the haunting",
+        "He wants Caesar to hear him",
+        "Caesar is standing nearby"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 49,
+      "anchor_line_end": 49
+    },
+    {
+      "id": "julius_caesar_act5_scene5_q5",
+      "kind": "inference",
+      "prompt": "What has Shakespeare implied, across Acts 4 and 5, about the conspirators' political achievement?",
+      "options": [
+        "They saved the Republic",
+        "Their goal failed precisely — proscription begins in 4.1, the republican armies lose at Philippi in 5.3 and 5.5, and the Republic closes with Octavius's final speech. The assassination Brutus performed to prevent monarchy delivered exactly monarchy, in Octavius, within fifteen years",
+        "The outcome is unclear",
+        "The Republic was already gone before the play began"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 1,
+      "anchor_line_end": 79
+    },
+    {
+      "id": "julius_caesar_act5_scene5_q6",
+      "kind": "theme",
+      "prompt": "'This was a man!' as Antony's final line praises Brutus in which register?",
+      "options": [
+        "Specifically republican",
+        "Humanist / Renaissance — the four-elements doctrine of a 'well-mixed' man, temperamentally balanced; a paean to the ideal human that, by being general, makes Brutus's republican commitment non-political and safe for empire to absorb",
+        "Specifically Roman",
+        "Specifically Christian"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 71,
+      "anchor_line_end": 73
+    },
+    {
+      "id": "julius_caesar_act5_scene5_q7",
+      "kind": "structural",
+      "prompt": "What is specifically Shakespearean about closing the play with a five-line administrative speech from Octavius?",
+      "options": [
+        "It follows Senecan tradition",
+        "It refuses Senecan choral moralising and hands the final word to the victor's plain order; empire is made to look administrative rather than dramatic — the audience leaves having watched the Republic end as clean-up",
+        "It is a printer's addition",
+        "It is a standard epilogue"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 74,
+      "anchor_line_end": 79
+    }
+  ]
+}

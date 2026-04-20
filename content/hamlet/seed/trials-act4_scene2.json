@@ -1,0 +1,47 @@
+{
+  "section_id": "hamlet_act4_scene2",
+  "trials": [
+    {
+      "kind": "close_reading",
+      "prompt": "What does Hamlet mean by calling Rosencrantz a 'sponge'?",
+      "options": [
+        "That he dries up quickly under pressure.",
+        "That he absorbs the King's favor and will be squeezed dry when no longer useful.",
+        "That he is soft and easily destroyed.",
+        "That he is dishonorable like an old wet rag."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 11,
+      "anchor_line_end": 22
+    },
+    {
+      "kind": "inference",
+      "prompt": "What is Hamlet's state in this scene?",
+      "options": [
+        "Truly mad and unable to speak coherently.",
+        "Feigning madness while using riddles to insult his captors and elude their questions.",
+        "Weeping inconsolably over Polonius's death.",
+        "Preparing to surrender himself to the King's justice."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 5,
+      "anchor_line_end": 29
+    },
+    {
+      "kind": "theme",
+      "prompt": "What does the refrain 'Hide fox, and all after' invoke?",
+      "options": [
+        "A hunting call used by Danish nobility.",
+        "A children's game of hide-and-seek, casting Hamlet as the fox being chased.",
+        "A nursery rhyme about Reynard the Fox.",
+        "A proverb about cowardice."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 28,
+      "anchor_line_end": 29
+    }
+  ]
+}

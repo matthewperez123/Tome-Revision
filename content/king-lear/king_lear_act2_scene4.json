@@ -1,0 +1,2070 @@
+{
+  "section_id": "king_lear_act2_scene4",
+  "work_id": "king-lear",
+  "sequence": 9,
+  "act": 2,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "Before Gloucester's castle; Kent in the stocks",
+  "line_count": 322,
+  "word_count": 2351,
+  "est_read_minutes": 12,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KING LEAR",
+      "text": "’Tis strange that they should so depart from home,"
+    },
+    {
+      "number": 2,
+      "speaker": "KING LEAR",
+      "text": "And not send back my messenger."
+    },
+    {
+      "number": 2,
+      "speaker": "GENTLEMAN",
+      "text": "As I learn’d,"
+    },
+    {
+      "number": 3,
+      "speaker": "GENTLEMAN",
+      "text": "The night before there was no purpose in them"
+    },
+    {
+      "number": 4,
+      "speaker": "GENTLEMAN",
+      "text": "Of this remove."
+    },
+    {
+      "number": 4,
+      "speaker": "KENT",
+      "text": "Hail to thee, noble master!"
+    },
+    {
+      "number": 5,
+      "speaker": "KING LEAR",
+      "text": "Ha!"
+    },
+    {
+      "number": 6,
+      "speaker": "KING LEAR",
+      "text": "Makest thou this shame thy pastime?"
+    },
+    {
+      "number": 6,
+      "speaker": "KENT",
+      "text": "No, my lord."
+    },
+    {
+      "number": 7,
+      "speaker": "FOOL",
+      "text": "Ha, ha! he wears cruel garters. Horses are tied by the heads,"
+    },
+    {
+      "number": 8,
+      "speaker": "FOOL",
+      "text": "dogs and bears by the neck, monkeys by the loins, and men"
+    },
+    {
+      "number": 9,
+      "speaker": "FOOL",
+      "text": "by the legs: when a man’s over-lusty at legs, then he wears"
+    },
+    {
+      "number": 10,
+      "speaker": "FOOL",
+      "text": "wooden nether-stocks."
+    },
+    {
+      "number": 11,
+      "speaker": "KING LEAR",
+      "text": "What’s he that hath so much thy place mistook"
+    },
+    {
+      "number": 12,
+      "speaker": "KING LEAR",
+      "text": "To set thee here?"
+    },
+    {
+      "number": 12,
+      "speaker": "KENT",
+      "text": "It is both he and she;"
+    },
+    {
+      "number": 13,
+      "speaker": "KENT",
+      "text": "Your son and daughter."
+    },
+    {
+      "number": 13,
+      "speaker": "KING LEAR",
+      "text": "No."
+    },
+    {
+      "number": 14,
+      "speaker": "KENT",
+      "text": "Yes."
+    },
+    {
+      "number": 14,
+      "speaker": "KING LEAR",
+      "text": "No, I say."
+    },
+    {
+      "number": 15,
+      "speaker": "KENT",
+      "text": "I say, yea."
+    },
+    {
+      "number": 15,
+      "speaker": "KING LEAR",
+      "text": "No, no, they would not."
+    },
+    {
+      "number": 16,
+      "speaker": "KENT",
+      "text": "Yes, they have."
+    },
+    {
+      "number": 16,
+      "speaker": "KING LEAR",
+      "text": "By Jupiter, I swear, no."
+    },
+    {
+      "number": 17,
+      "speaker": "KENT",
+      "text": "By Juno, I swear, ay."
+    },
+    {
+      "number": 17,
+      "speaker": "KING LEAR",
+      "text": "They durst not do ’t;"
+    },
+    {
+      "number": 18,
+      "speaker": "KING LEAR",
+      "text": "They could not, would not do ’t; ’tis worse than murder,"
+    },
+    {
+      "number": 19,
+      "speaker": "KING LEAR",
+      "text": "To do upon respect such violent outrage:"
+    },
+    {
+      "number": 20,
+      "speaker": "KING LEAR",
+      "text": "Resolve me, with all modest haste, which way"
+    },
+    {
+      "number": 21,
+      "speaker": "KING LEAR",
+      "text": "Thou mightst deserve, or they impose, this usage,"
+    },
+    {
+      "number": 22,
+      "speaker": "KING LEAR",
+      "text": "Coming from us."
+    },
+    {
+      "number": 22,
+      "speaker": "KENT",
+      "text": "My lord, when at their home"
+    },
+    {
+      "number": 23,
+      "speaker": "KENT",
+      "text": "I did commend your highness’ letters to them,"
+    },
+    {
+      "number": 24,
+      "speaker": "KENT",
+      "text": "Ere I was risen from the place that show’d"
+    },
+    {
+      "number": 25,
+      "speaker": "KENT",
+      "text": "My duty kneeling, came there a reeking post,"
+    },
+    {
+      "number": 26,
+      "speaker": "KENT",
+      "text": "Stew’d in his haste, half breathless, panting forth"
+    },
+    {
+      "number": 27,
+      "speaker": "KENT",
+      "text": "From Goneril his mistress salutations;"
+    },
+    {
+      "number": 28,
+      "speaker": "KENT",
+      "text": "Deliver’d letters, spite of intermission,"
+    },
+    {
+      "number": 29,
+      "speaker": "KENT",
+      "text": "Which presently they read: on whose contents,"
+    },
+    {
+      "number": 30,
+      "speaker": "KENT",
+      "text": "They summon’d up their meiny, straight took horse;"
+    },
+    {
+      "number": 31,
+      "speaker": "KENT",
+      "text": "Commanded me to follow, and attend"
+    },
+    {
+      "number": 32,
+      "speaker": "KENT",
+      "text": "The leisure of their answer; gave me cold looks:"
+    },
+    {
+      "number": 33,
+      "speaker": "KENT",
+      "text": "And meeting here the other messenger,"
+    },
+    {
+      "number": 34,
+      "speaker": "KENT",
+      "text": "Whose welcome, I perceived, had poison’d mine—"
+    },
+    {
+      "number": 35,
+      "speaker": "KENT",
+      "text": "Being the very fellow that of late"
+    },
+    {
+      "number": 36,
+      "speaker": "KENT",
+      "text": "Display’d so saucily against your highness—"
+    },
+    {
+      "number": 37,
+      "speaker": "KENT",
+      "text": "Having more man than wit about me, drew:"
+    },
+    {
+      "number": 38,
+      "speaker": "KENT",
+      "text": "He raised the house with loud and coward cries."
+    },
+    {
+      "number": 39,
+      "speaker": "KENT",
+      "text": "Your son and daughter found this trespass worth"
+    },
+    {
+      "number": 40,
+      "speaker": "KENT",
+      "text": "The shame which here it suffers."
+    },
+    {
+      "number": 41,
+      "speaker": "FOOL",
+      "text": "Winter’s not gone yet, if the wild-geese fly that way."
+    },
+    {
+      "number": 42,
+      "speaker": "FOOL",
+      "text": "Fathers that wear rags"
+    },
+    {
+      "number": 43,
+      "speaker": "FOOL",
+      "text": "Do make their children blind;"
+    },
+    {
+      "number": 44,
+      "speaker": "FOOL",
+      "text": "But fathers that bear bags"
+    },
+    {
+      "number": 45,
+      "speaker": "FOOL",
+      "text": "Shall see their children kind."
+    },
+    {
+      "number": 46,
+      "speaker": "FOOL",
+      "text": "Fortune, that arrant whore,"
+    },
+    {
+      "number": 47,
+      "speaker": "FOOL",
+      "text": "Ne’er turns the key to the poor."
+    },
+    {
+      "number": 48,
+      "speaker": "FOOL",
+      "text": "But, for all this, thou shalt have as many dolours"
+    },
+    {
+      "number": 49,
+      "speaker": "FOOL",
+      "text": "for thy daughters as thou canst tell in a year."
+    },
+    {
+      "number": 50,
+      "speaker": "KING LEAR",
+      "text": "O, how this mother swells up toward my heart!"
+    },
+    {
+      "number": 51,
+      "speaker": "KING LEAR",
+      "text": "Hysterica passio, down, thou climbing sorrow,"
+    },
+    {
+      "number": 52,
+      "speaker": "KING LEAR",
+      "text": "Thy element’s below! Where is this daughter?"
+    },
+    {
+      "number": 53,
+      "speaker": "KENT",
+      "text": "With the earl, sir, here within."
+    },
+    {
+      "number": 53,
+      "speaker": "KING LEAR",
+      "text": "Follow me not;"
+    },
+    {
+      "number": 54,
+      "speaker": "KING LEAR",
+      "text": "Stay here."
+    },
+    {
+      "number": 55,
+      "speaker": "GENTLEMAN",
+      "text": "Made you no more offence but what you speak of?"
+    },
+    {
+      "number": 56,
+      "speaker": "KENT",
+      "text": "None."
+    },
+    {
+      "number": 57,
+      "speaker": "KENT",
+      "text": "How chance the king comes with so small a train?"
+    },
+    {
+      "number": 58,
+      "speaker": "FOOL",
+      "text": "And thou hadst been set i’ the stocks for that question, thou"
+    },
+    {
+      "number": 59,
+      "speaker": "FOOL",
+      "text": "hadst well deserved it."
+    },
+    {
+      "number": 59,
+      "speaker": "KENT",
+      "text": "Why, fool?"
+    },
+    {
+      "number": 60,
+      "speaker": "FOOL",
+      "text": "We’ll set thee to school to an ant, to teach thee there’s"
+    },
+    {
+      "number": 61,
+      "speaker": "FOOL",
+      "text": "no labouring i’ the winter. All that follow their noses are led"
+    },
+    {
+      "number": 62,
+      "speaker": "FOOL",
+      "text": "by their eyes but blind men; and there’s not a nose among"
+    },
+    {
+      "number": 63,
+      "speaker": "FOOL",
+      "text": "twenty but can smell him that’s stinking. Let go thy hold when"
+    },
+    {
+      "number": 64,
+      "speaker": "FOOL",
+      "text": "a great wheel runs down a hill, lest it break thy neck"
+    },
+    {
+      "number": 65,
+      "speaker": "FOOL",
+      "text": "with following it: but the great one that goes up the hill,"
+    },
+    {
+      "number": 66,
+      "speaker": "FOOL",
+      "text": "let him draw thee after. When a wise man gives thee better"
+    },
+    {
+      "number": 67,
+      "speaker": "FOOL",
+      "text": "counsel, give me mine again: I would have none but knaves follow"
+    },
+    {
+      "number": 68,
+      "speaker": "FOOL",
+      "text": "it, since a fool gives it."
+    },
+    {
+      "number": 68,
+      "speaker": "KENT",
+      "text": "Where learned you this, fool?"
+    },
+    {
+      "number": 69,
+      "speaker": "FOOL",
+      "text": "Not i’ the stocks, fool."
+    },
+    {
+      "number": 70,
+      "speaker": "KING LEAR",
+      "text": "Deny to speak with me? They are sick? they are weary?"
+    },
+    {
+      "number": 71,
+      "speaker": "KING LEAR",
+      "text": "They have travell’d all the night? Mere fetches;"
+    },
+    {
+      "number": 72,
+      "speaker": "KING LEAR",
+      "text": "The images of revolt and flying off."
+    },
+    {
+      "number": 73,
+      "speaker": "KING LEAR",
+      "text": "Fetch me a better answer."
+    },
+    {
+      "number": 73,
+      "speaker": "GLOUCESTER",
+      "text": "My dear lord,"
+    },
+    {
+      "number": 74,
+      "speaker": "GLOUCESTER",
+      "text": "You know the fiery quality of the duke;"
+    },
+    {
+      "number": 75,
+      "speaker": "GLOUCESTER",
+      "text": "How unremoveable and fix’d he is"
+    },
+    {
+      "number": 76,
+      "speaker": "GLOUCESTER",
+      "text": "In his own course."
+    },
+    {
+      "number": 76,
+      "speaker": "KING LEAR",
+      "text": "Vengeance! plague! death! confusion!"
+    },
+    {
+      "number": 77,
+      "speaker": "KING LEAR",
+      "text": "Fiery? what quality? Why, Gloucester, Gloucester,"
+    },
+    {
+      "number": 78,
+      "speaker": "KING LEAR",
+      "text": "I’ld speak with the Duke of Cornwall and his wife."
+    },
+    {
+      "number": 79,
+      "speaker": "GLOUCESTER",
+      "text": "Well, my good lord, I have inform’d them so."
+    },
+    {
+      "number": 80,
+      "speaker": "KING LEAR",
+      "text": "Inform’d them! Dost thou understand me, man?"
+    },
+    {
+      "number": 81,
+      "speaker": "GLOUCESTER",
+      "text": "Ay, my good lord."
+    },
+    {
+      "number": 82,
+      "speaker": "KING LEAR",
+      "text": "The king would speak with Cornwall; the dear father"
+    },
+    {
+      "number": 83,
+      "speaker": "KING LEAR",
+      "text": "Would with his daughter speak, commands her service:"
+    },
+    {
+      "number": 84,
+      "speaker": "KING LEAR",
+      "text": "Are they inform’d of this? My breath and blood!"
+    },
+    {
+      "number": 85,
+      "speaker": "KING LEAR",
+      "text": "Fiery? the fiery duke? Tell the hot duke that—"
+    },
+    {
+      "number": 86,
+      "speaker": "KING LEAR",
+      "text": "No, but not yet: may be he is not well:"
+    },
+    {
+      "number": 87,
+      "speaker": "KING LEAR",
+      "text": "Infirmity doth still neglect all office"
+    },
+    {
+      "number": 88,
+      "speaker": "KING LEAR",
+      "text": "Whereto our health is bound; we are not ourselves"
+    },
+    {
+      "number": 89,
+      "speaker": "KING LEAR",
+      "text": "When nature, being oppress’d, commands the mind"
+    },
+    {
+      "number": 90,
+      "speaker": "KING LEAR",
+      "text": "To suffer with the body: I’ll forbear;"
+    },
+    {
+      "number": 91,
+      "speaker": "KING LEAR",
+      "text": "And am fall’n out with my more headier will,"
+    },
+    {
+      "number": 92,
+      "speaker": "KING LEAR",
+      "text": "To take the indisposed and sickly fit"
+    },
+    {
+      "number": 93,
+      "speaker": "KING LEAR",
+      "text": "For the sound man. Death on my state! wherefore Looking on Kent."
+    },
+    {
+      "number": 94,
+      "speaker": "KING LEAR",
+      "text": "Should he sit here? This act persuades me"
+    },
+    {
+      "number": 95,
+      "speaker": "KING LEAR",
+      "text": "That this remotion of the duke and her"
+    },
+    {
+      "number": 96,
+      "speaker": "KING LEAR",
+      "text": "Is practise only. Give me my servant forth."
+    },
+    {
+      "number": 97,
+      "speaker": "KING LEAR",
+      "text": "Go tell the duke and ’s wife I’ld speak with them,"
+    },
+    {
+      "number": 98,
+      "speaker": "KING LEAR",
+      "text": "Now, presently: bid them come forth and hear me,"
+    },
+    {
+      "number": 99,
+      "speaker": "KING LEAR",
+      "text": "Or at their chamber-door I’ll beat the drum"
+    },
+    {
+      "number": 100,
+      "speaker": "KING LEAR",
+      "text": "Till it cry sleep to death."
+    },
+    {
+      "number": 101,
+      "speaker": "GLOUCESTER",
+      "text": "I would have all well betwixt you."
+    },
+    {
+      "number": 102,
+      "speaker": "KING LEAR",
+      "text": "O me, my heart, my rising heart! but, down!"
+    },
+    {
+      "number": 103,
+      "speaker": "FOOL",
+      "text": "Cry to it, nuncle, as the cockney did to the eels when"
+    },
+    {
+      "number": 104,
+      "speaker": "FOOL",
+      "text": "she put ’em i’ the paste alive; she knapped ’em o’ the"
+    },
+    {
+      "number": 105,
+      "speaker": "FOOL",
+      "text": "coxcombs with a stick, and cried ‘Down, wantons, down!’ ’Twas her brother"
+    },
+    {
+      "number": 106,
+      "speaker": "FOOL",
+      "text": "that, in pure kindness to his horse, buttered his hay."
+    },
+    {
+      "number": 107,
+      "speaker": "KING LEAR",
+      "text": "Good morrow to you both."
+    },
+    {
+      "number": 108,
+      "speaker": "CORNWALL",
+      "text": "Hail to your grace! Kent is set at liberty."
+    },
+    {
+      "number": 109,
+      "speaker": "REGAN",
+      "text": "I am glad to see your highness."
+    },
+    {
+      "number": 110,
+      "speaker": "KING LEAR",
+      "text": "Regan, I think you are; I know what reason"
+    },
+    {
+      "number": 111,
+      "speaker": "KING LEAR",
+      "text": "I have to think so: if thou shouldst not be glad,"
+    },
+    {
+      "number": 112,
+      "speaker": "KING LEAR",
+      "text": "I would divorce me from thy mother’s tomb,"
+    },
+    {
+      "number": 113,
+      "speaker": "KING LEAR",
+      "text": "Sepulchring an adultress."
+    },
+    {
+      "number": 114,
+      "speaker": "KING LEAR",
+      "text": "To Kent. O, are you free?"
+    },
+    {
+      "number": 115,
+      "speaker": "KING LEAR",
+      "text": "Some other time for that. Beloved Regan,"
+    },
+    {
+      "number": 116,
+      "speaker": "KING LEAR",
+      "text": "Thy sister’s naught: O Regan, she hath tied"
+    },
+    {
+      "number": 117,
+      "speaker": "KING LEAR",
+      "text": "Sharp-tooth’d unkindness, like a vulture, here:"
+    },
+    {
+      "number": 118,
+      "speaker": "KING LEAR",
+      "text": "I can scarce speak to thee; thou’lt not believe"
+    },
+    {
+      "number": 119,
+      "speaker": "KING LEAR",
+      "text": "With how depraved a quality—O Regan!"
+    },
+    {
+      "number": 120,
+      "speaker": "REGAN",
+      "text": "I pray you, sir, take patience: I have hope."
+    },
+    {
+      "number": 121,
+      "speaker": "REGAN",
+      "text": "You less know how to value her desert"
+    },
+    {
+      "number": 122,
+      "speaker": "REGAN",
+      "text": "Than she to scant her duty."
+    },
+    {
+      "number": 122,
+      "speaker": "KING LEAR",
+      "text": "Say, how is that?"
+    },
+    {
+      "number": 123,
+      "speaker": "REGAN",
+      "text": "I cannot think my sister in the least"
+    },
+    {
+      "number": 124,
+      "speaker": "REGAN",
+      "text": "Would fail her obligation: if, sir, perchance"
+    },
+    {
+      "number": 125,
+      "speaker": "REGAN",
+      "text": "She have restrain’d the riots of your followers,"
+    },
+    {
+      "number": 126,
+      "speaker": "REGAN",
+      "text": "’Tis on such ground, and to such wholesome end,"
+    },
+    {
+      "number": 127,
+      "speaker": "REGAN",
+      "text": "As clears her from all blame."
+    },
+    {
+      "number": 127,
+      "speaker": "KING LEAR",
+      "text": "My curses on her!"
+    },
+    {
+      "number": 128,
+      "speaker": "REGAN",
+      "text": "O, sir, you are old."
+    },
+    {
+      "number": 129,
+      "speaker": "REGAN",
+      "text": "Nature in you stands on the very verge"
+    },
+    {
+      "number": 130,
+      "speaker": "REGAN",
+      "text": "Of her confine: you should be ruled and led"
+    },
+    {
+      "number": 131,
+      "speaker": "REGAN",
+      "text": "By some discretion, that discerns your state"
+    },
+    {
+      "number": 132,
+      "speaker": "REGAN",
+      "text": "Better than you yourself. Therefore, I pray you,"
+    },
+    {
+      "number": 133,
+      "speaker": "REGAN",
+      "text": "That to our sister you do make return;"
+    },
+    {
+      "number": 134,
+      "speaker": "REGAN",
+      "text": "Say you have wrong’d her, sir."
+    },
+    {
+      "number": 134,
+      "speaker": "KING LEAR",
+      "text": "Ask her forgiveness?"
+    },
+    {
+      "number": 135,
+      "speaker": "KING LEAR",
+      "text": "Do you but mark how this becomes the house:"
+    },
+    {
+      "number": 136,
+      "speaker": "KING LEAR",
+      "text": "“Dear daughter, I confess that I am old;"
+    },
+    {
+      "number": 137,
+      "speaker": "KING LEAR",
+      "text": "Age is unnecessary: on my knees I beg"
+    },
+    {
+      "number": 138,
+      "speaker": "KING LEAR",
+      "text": "That you’ll vouchsafe me raiment, bed, and food.”"
+    },
+    {
+      "number": 139,
+      "speaker": "REGAN",
+      "text": "Good sir, no more; these are unsightly tricks:"
+    },
+    {
+      "number": 140,
+      "speaker": "REGAN",
+      "text": "Return you to my sister."
+    },
+    {
+      "number": 140,
+      "speaker": "KING LEAR",
+      "text": "Never, Regan:"
+    },
+    {
+      "number": 141,
+      "speaker": "KING LEAR",
+      "text": "She hath abated me of half my train;"
+    },
+    {
+      "number": 142,
+      "speaker": "KING LEAR",
+      "text": "Look’d black upon me; struck me with her tongue,"
+    },
+    {
+      "number": 143,
+      "speaker": "KING LEAR",
+      "text": "Most serpent-like, upon the very heart:"
+    },
+    {
+      "number": 144,
+      "speaker": "KING LEAR",
+      "text": "All the stored vengeances of heaven fall"
+    },
+    {
+      "number": 145,
+      "speaker": "KING LEAR",
+      "text": "On her ingrateful top! Strike her young bones,"
+    },
+    {
+      "number": 146,
+      "speaker": "KING LEAR",
+      "text": "You taking airs, with lameness!"
+    },
+    {
+      "number": 146,
+      "speaker": "CORNWALL",
+      "text": "Fie, sir, fie!"
+    },
+    {
+      "number": 147,
+      "speaker": "KING LEAR",
+      "text": "You nimble lightnings, dart your blinding flames"
+    },
+    {
+      "number": 148,
+      "speaker": "KING LEAR",
+      "text": "Into her scornful eyes! Infect her beauty,"
+    },
+    {
+      "number": 149,
+      "speaker": "KING LEAR",
+      "text": "You fen-suck’d fogs, drawn by the powerful sun,"
+    },
+    {
+      "number": 150,
+      "speaker": "KING LEAR",
+      "text": "To fall and blast her pride!"
+    },
+    {
+      "number": 151,
+      "speaker": "REGAN",
+      "text": "O the blest gods! so will you wish on me,"
+    },
+    {
+      "number": 152,
+      "speaker": "REGAN",
+      "text": "When the rash mood is on."
+    },
+    {
+      "number": 153,
+      "speaker": "KING LEAR",
+      "text": "No, Regan, thou shalt never have my curse:"
+    },
+    {
+      "number": 154,
+      "speaker": "KING LEAR",
+      "text": "Thy tender-hefted nature shall not give"
+    },
+    {
+      "number": 155,
+      "speaker": "KING LEAR",
+      "text": "Thee o’er to harshness: her eyes are fierce; but thine"
+    },
+    {
+      "number": 156,
+      "speaker": "KING LEAR",
+      "text": "Do comfort and not burn. ’Tis not in thee"
+    },
+    {
+      "number": 157,
+      "speaker": "KING LEAR",
+      "text": "To grudge my pleasures, to cut off my train,"
+    },
+    {
+      "number": 158,
+      "speaker": "KING LEAR",
+      "text": "To bandy hasty words, to scant my sizes,"
+    },
+    {
+      "number": 159,
+      "speaker": "KING LEAR",
+      "text": "And in conclusion to oppose the bolt"
+    },
+    {
+      "number": 160,
+      "speaker": "KING LEAR",
+      "text": "Against my coming in: thou better know’st"
+    },
+    {
+      "number": 161,
+      "speaker": "KING LEAR",
+      "text": "The offices of nature, bond of childhood,"
+    },
+    {
+      "number": 162,
+      "speaker": "KING LEAR",
+      "text": "Effects of courtesy, dues of gratitude;"
+    },
+    {
+      "number": 163,
+      "speaker": "KING LEAR",
+      "text": "Thy half o’ the kingdom hast thou not forgot,"
+    },
+    {
+      "number": 164,
+      "speaker": "KING LEAR",
+      "text": "Wherein I thee endow’d."
+    },
+    {
+      "number": 164,
+      "speaker": "REGAN",
+      "text": "Good sir, to the purpose."
+    },
+    {
+      "number": 165,
+      "speaker": "KING LEAR",
+      "text": "Who put my man i’ the stocks? Tucket within."
+    },
+    {
+      "number": 166,
+      "speaker": "CORNWALL",
+      "text": "What trumpet’s that?"
+    },
+    {
+      "number": 167,
+      "speaker": "REGAN",
+      "text": "I know’t, my sister’s: this approves her letter,"
+    },
+    {
+      "number": 168,
+      "speaker": "REGAN",
+      "text": "That she would soon be here."
+    },
+    {
+      "number": 169,
+      "speaker": "KING LEAR",
+      "text": "This is a slave, whose easy-borrow’d pride"
+    },
+    {
+      "number": 170,
+      "speaker": "KING LEAR",
+      "text": "Dwells in the fickle grace of her he follows."
+    },
+    {
+      "number": 171,
+      "speaker": "KING LEAR",
+      "text": "Out, varlet, from my sight!"
+    },
+    {
+      "number": 171,
+      "speaker": "CORNWALL",
+      "text": "What means your grace?"
+    },
+    {
+      "number": 172,
+      "speaker": "KING LEAR",
+      "text": "Who stock’d my servant? Regan, I have good hope"
+    },
+    {
+      "number": 173,
+      "speaker": "KING LEAR",
+      "text": "Thou didst not know on’t. Who comes here? O heavens,"
+    },
+    {
+      "number": 174,
+      "speaker": "GONERIL",
+      "text": "Why not by the hand, sir? How have I offended?"
+    },
+    {
+      "number": 175,
+      "speaker": "GONERIL",
+      "text": "All’s not offence that indiscretion finds"
+    },
+    {
+      "number": 176,
+      "speaker": "GONERIL",
+      "text": "And dotage terms so."
+    },
+    {
+      "number": 176,
+      "speaker": "KING LEAR",
+      "text": "O sides, you are too tough;"
+    },
+    {
+      "number": 177,
+      "speaker": "KING LEAR",
+      "text": "Will you yet hold? How came my man i’ the stocks?"
+    },
+    {
+      "number": 178,
+      "speaker": "CORNWALL",
+      "text": "I set him there, sir: but his own disorders"
+    },
+    {
+      "number": 179,
+      "speaker": "CORNWALL",
+      "text": "Deserved much less advancement."
+    },
+    {
+      "number": 179,
+      "speaker": "KING LEAR",
+      "text": "You! did you?"
+    },
+    {
+      "number": 180,
+      "speaker": "REGAN",
+      "text": "I pray you, father, being weak, seem so."
+    },
+    {
+      "number": 181,
+      "speaker": "REGAN",
+      "text": "If, till the expiration of your month,"
+    },
+    {
+      "number": 182,
+      "speaker": "REGAN",
+      "text": "You will return and sojourn with my sister,"
+    },
+    {
+      "number": 183,
+      "speaker": "REGAN",
+      "text": "Dismissing half your train, come then to me:"
+    },
+    {
+      "number": 184,
+      "speaker": "REGAN",
+      "text": "I am now from home, and out of that provision"
+    },
+    {
+      "number": 185,
+      "speaker": "REGAN",
+      "text": "Which shall be needful for your entertainment."
+    },
+    {
+      "number": 186,
+      "speaker": "KING LEAR",
+      "text": "Return to her, and fifty men dismiss’d?"
+    },
+    {
+      "number": 187,
+      "speaker": "KING LEAR",
+      "text": "No, rather I abjure all roofs, and choose"
+    },
+    {
+      "number": 188,
+      "speaker": "KING LEAR",
+      "text": "To wage against the enmity o’ the air;"
+    },
+    {
+      "number": 189,
+      "speaker": "KING LEAR",
+      "text": "To be a comrade with the wolf and owl—"
+    },
+    {
+      "number": 190,
+      "speaker": "KING LEAR",
+      "text": "Necessity’s sharp pinch! Return with her?"
+    },
+    {
+      "number": 191,
+      "speaker": "KING LEAR",
+      "text": "Why, the hot-blooded France, that dowerless took"
+    },
+    {
+      "number": 192,
+      "speaker": "KING LEAR",
+      "text": "Our youngest born, I could as well be brought"
+    },
+    {
+      "number": 193,
+      "speaker": "KING LEAR",
+      "text": "To knee his throne, and, squire-like; pension beg"
+    },
+    {
+      "number": 194,
+      "speaker": "KING LEAR",
+      "text": "To keep base life afoot. Return with her?"
+    },
+    {
+      "number": 195,
+      "speaker": "KING LEAR",
+      "text": "Persuade me rather to be slave and sumpter"
+    },
+    {
+      "number": 196,
+      "speaker": "KING LEAR",
+      "text": "To this detested groom."
+    },
+    {
+      "number": 196,
+      "speaker": "GONERIL",
+      "text": "At your choice, sir."
+    },
+    {
+      "number": 197,
+      "speaker": "KING LEAR",
+      "text": "I prithee, daughter, do not make me mad:"
+    },
+    {
+      "number": 198,
+      "speaker": "KING LEAR",
+      "text": "I will not trouble thee, my child; farewell:"
+    },
+    {
+      "number": 199,
+      "speaker": "KING LEAR",
+      "text": "We’ll no more meet, no more see one another:"
+    },
+    {
+      "number": 200,
+      "speaker": "KING LEAR",
+      "text": "But yet thou art my flesh, my blood, my daughter;"
+    },
+    {
+      "number": 201,
+      "speaker": "KING LEAR",
+      "text": "Or rather a disease that’s in my flesh,"
+    },
+    {
+      "number": 202,
+      "speaker": "KING LEAR",
+      "text": "Which I must needs call mine: thou art a boil,"
+    },
+    {
+      "number": 203,
+      "speaker": "KING LEAR",
+      "text": "A plague-sore, an embossed carbuncle,"
+    },
+    {
+      "number": 204,
+      "speaker": "KING LEAR",
+      "text": "In my corrupted blood. But I’ll not chide thee;"
+    },
+    {
+      "number": 205,
+      "speaker": "KING LEAR",
+      "text": "Let shame come when it will, I do not call it:"
+    },
+    {
+      "number": 206,
+      "speaker": "KING LEAR",
+      "text": "I do not bid the thunder-bearer shoot,"
+    },
+    {
+      "number": 207,
+      "speaker": "KING LEAR",
+      "text": "Nor tell tales of thee to high-judging Jove:"
+    },
+    {
+      "number": 208,
+      "speaker": "KING LEAR",
+      "text": "Mend when thou canst; be better at thy leisure:"
+    },
+    {
+      "number": 209,
+      "speaker": "KING LEAR",
+      "text": "I can be patient; I can stay with Regan,"
+    },
+    {
+      "number": 210,
+      "speaker": "KING LEAR",
+      "text": "I and my hundred knights."
+    },
+    {
+      "number": 210,
+      "speaker": "REGAN",
+      "text": "Not altogether so:"
+    },
+    {
+      "number": 211,
+      "speaker": "REGAN",
+      "text": "I look’d not for you yet, nor am provided"
+    },
+    {
+      "number": 212,
+      "speaker": "REGAN",
+      "text": "For your fit welcome. Give ear, sir, to my sister;"
+    },
+    {
+      "number": 213,
+      "speaker": "REGAN",
+      "text": "For those that mingle reason with your passion"
+    },
+    {
+      "number": 214,
+      "speaker": "REGAN",
+      "text": "Must be content to think you old, and so—"
+    },
+    {
+      "number": 215,
+      "speaker": "REGAN",
+      "text": "But she knows what she does."
+    },
+    {
+      "number": 215,
+      "speaker": "KING LEAR",
+      "text": "Is this well spoken?"
+    },
+    {
+      "number": 216,
+      "speaker": "REGAN",
+      "text": "I dare avouch it, sir: what, fifty followers?"
+    },
+    {
+      "number": 217,
+      "speaker": "REGAN",
+      "text": "Is it not well? What should you need of more?"
+    },
+    {
+      "number": 218,
+      "speaker": "REGAN",
+      "text": "Yea, or so many, sith that both charge and danger"
+    },
+    {
+      "number": 219,
+      "speaker": "REGAN",
+      "text": "Speak ’gainst so great a number? How, in one house,"
+    },
+    {
+      "number": 220,
+      "speaker": "REGAN",
+      "text": "Should many people, under two commands,"
+    },
+    {
+      "number": 221,
+      "speaker": "REGAN",
+      "text": "Hold amity? ’Tis hard; almost impossible."
+    },
+    {
+      "number": 222,
+      "speaker": "GONERIL",
+      "text": "Why might not you, my lord, receive attendance"
+    },
+    {
+      "number": 223,
+      "speaker": "GONERIL",
+      "text": "From those that she calls servants or from mine?"
+    },
+    {
+      "number": 224,
+      "speaker": "REGAN",
+      "text": "Why not, my lord? If then they chanced to slack you,"
+    },
+    {
+      "number": 225,
+      "speaker": "REGAN",
+      "text": "We could control them. If you will come to me—"
+    },
+    {
+      "number": 226,
+      "speaker": "REGAN",
+      "text": "For now I spy a danger—I entreat you"
+    },
+    {
+      "number": 227,
+      "speaker": "REGAN",
+      "text": "To bring but five and twenty: to no more"
+    },
+    {
+      "number": 228,
+      "speaker": "REGAN",
+      "text": "Will I give place or notice."
+    },
+    {
+      "number": 228,
+      "speaker": "KING LEAR",
+      "text": "I gave you all—"
+    },
+    {
+      "number": 229,
+      "speaker": "REGAN",
+      "text": "And in good time you gave it."
+    },
+    {
+      "number": 230,
+      "speaker": "KING LEAR",
+      "text": "Made you my guardians, my depositaries;"
+    },
+    {
+      "number": 231,
+      "speaker": "KING LEAR",
+      "text": "But kept a reservation to be follow’d"
+    },
+    {
+      "number": 232,
+      "speaker": "KING LEAR",
+      "text": "With such a number. What, must I come to you"
+    },
+    {
+      "number": 233,
+      "speaker": "KING LEAR",
+      "text": "With five and twenty, Regan? said you so?"
+    },
+    {
+      "number": 234,
+      "speaker": "REGAN",
+      "text": "And speak’t again, my lord; no more with me."
+    },
+    {
+      "number": 235,
+      "speaker": "KING LEAR",
+      "text": "Those wicked creatures yet do look well-favour’d,"
+    },
+    {
+      "number": 236,
+      "speaker": "KING LEAR",
+      "text": "When others are more wicked: not being the worst"
+    },
+    {
+      "number": 237,
+      "speaker": "KING LEAR",
+      "text": "Stands in some rank of praise."
+    },
+    {
+      "number": 238,
+      "speaker": "KING LEAR",
+      "text": "To Goneril. I’ll go with thee:"
+    },
+    {
+      "number": 239,
+      "speaker": "KING LEAR",
+      "text": "Thy fifty yet doth double five and twenty,"
+    },
+    {
+      "number": 240,
+      "speaker": "KING LEAR",
+      "text": "And thou art twice her love."
+    },
+    {
+      "number": 240,
+      "speaker": "GONERIL",
+      "text": "Hear me, my lord;"
+    },
+    {
+      "number": 241,
+      "speaker": "GONERIL",
+      "text": "What need you five and twenty, ten, or five,"
+    },
+    {
+      "number": 242,
+      "speaker": "GONERIL",
+      "text": "To follow in a house where twice so many"
+    },
+    {
+      "number": 243,
+      "speaker": "GONERIL",
+      "text": "Have a command to tend you?"
+    },
+    {
+      "number": 243,
+      "speaker": "REGAN",
+      "text": "What need one?"
+    },
+    {
+      "number": 244,
+      "speaker": "KING LEAR",
+      "text": "O, reason not the need: our basest beggars"
+    },
+    {
+      "number": 245,
+      "speaker": "KING LEAR",
+      "text": "Are in the poorest thing superfluous:"
+    },
+    {
+      "number": 246,
+      "speaker": "KING LEAR",
+      "text": "Allow not nature more than nature needs,"
+    },
+    {
+      "number": 247,
+      "speaker": "KING LEAR",
+      "text": "Man’s life’s as cheap as beast’s: thou art a lady;"
+    },
+    {
+      "number": 248,
+      "speaker": "KING LEAR",
+      "text": "If only to go warm were gorgeous,"
+    },
+    {
+      "number": 249,
+      "speaker": "KING LEAR",
+      "text": "Why, nature needs not what thou gorgeous wear’st,"
+    },
+    {
+      "number": 250,
+      "speaker": "KING LEAR",
+      "text": "Which scarcely keeps thee warm. But, for true need—"
+    },
+    {
+      "number": 251,
+      "speaker": "KING LEAR",
+      "text": "You heavens, give me that patience, patience I need!"
+    },
+    {
+      "number": 252,
+      "speaker": "KING LEAR",
+      "text": "You see me here, you gods, a poor old man,"
+    },
+    {
+      "number": 253,
+      "speaker": "KING LEAR",
+      "text": "As full of grief as age; wretched in both!"
+    },
+    {
+      "number": 254,
+      "speaker": "KING LEAR",
+      "text": "If it be you that stir these daughters’ hearts"
+    },
+    {
+      "number": 255,
+      "speaker": "KING LEAR",
+      "text": "Against their father, fool me not so much"
+    },
+    {
+      "number": 256,
+      "speaker": "KING LEAR",
+      "text": "To bear it tamely; touch me with noble anger,"
+    },
+    {
+      "number": 257,
+      "speaker": "KING LEAR",
+      "text": "And let not women’s weapons, water-drops,"
+    },
+    {
+      "number": 258,
+      "speaker": "KING LEAR",
+      "text": "Stain my man’s cheeks! No, you unnatural hags,"
+    },
+    {
+      "number": 259,
+      "speaker": "KING LEAR",
+      "text": "I will have such revenges on you both,"
+    },
+    {
+      "number": 260,
+      "speaker": "KING LEAR",
+      "text": "That all the world shall—I will do such things—"
+    },
+    {
+      "number": 261,
+      "speaker": "KING LEAR",
+      "text": "What they are, yet I know not: but they shall be"
+    },
+    {
+      "number": 262,
+      "speaker": "KING LEAR",
+      "text": "The terrors of the earth. You think I’ll weep"
+    },
+    {
+      "number": 263,
+      "speaker": "KING LEAR",
+      "text": "No, I’ll not weep:"
+    },
+    {
+      "number": 264,
+      "speaker": "KING LEAR",
+      "text": "I have full cause of weeping; but this heart"
+    },
+    {
+      "number": 265,
+      "speaker": "KING LEAR",
+      "text": "Shall break into a hundred thousand flaws,"
+    },
+    {
+      "number": 266,
+      "speaker": "KING LEAR",
+      "text": "Or ere I’ll weep. O fool, I shall go mad!"
+    },
+    {
+      "number": 267,
+      "speaker": "CORNWALL",
+      "text": "Let us withdraw; ’twill be a storm."
+    },
+    {
+      "number": 268,
+      "speaker": "REGAN",
+      "text": "This house is little: the old man and his people"
+    },
+    {
+      "number": 269,
+      "speaker": "REGAN",
+      "text": "Cannot be well bestow’d."
+    },
+    {
+      "number": 270,
+      "speaker": "GONERIL",
+      "text": "’Tis his own blame; hath put himself from rest,"
+    },
+    {
+      "number": 271,
+      "speaker": "GONERIL",
+      "text": "And must needs taste his folly."
+    },
+    {
+      "number": 272,
+      "speaker": "REGAN",
+      "text": "For his particular, I’ll receive him gladly,"
+    },
+    {
+      "number": 273,
+      "speaker": "REGAN",
+      "text": "But not one follower."
+    },
+    {
+      "number": 273,
+      "speaker": "GONERIL",
+      "text": "So am I purposed."
+    },
+    {
+      "number": 274,
+      "speaker": "GONERIL",
+      "text": "Where is my lord of Gloucester?"
+    },
+    {
+      "number": 275,
+      "speaker": "CORNWALL",
+      "text": "Follow’d the old man forth: he is return’d."
+    },
+    {
+      "number": 276,
+      "speaker": "GLOUCESTER",
+      "text": "The king is in high rage."
+    },
+    {
+      "number": 276,
+      "speaker": "CORNWALL",
+      "text": "Whither is he going?"
+    },
+    {
+      "number": 277,
+      "speaker": "GLOUCESTER",
+      "text": "He calls to horse; but will I know not whither."
+    },
+    {
+      "number": 278,
+      "speaker": "CORNWALL",
+      "text": "’Tis best to give him way; he leads himself."
+    },
+    {
+      "number": 279,
+      "speaker": "GONERIL",
+      "text": "My lord, entreat him by no means to stay."
+    },
+    {
+      "number": 280,
+      "speaker": "GLOUCESTER",
+      "text": "Alack, the night comes on, and the bleak winds"
+    },
+    {
+      "number": 281,
+      "speaker": "GLOUCESTER",
+      "text": "Do sorely ruffle; for many miles a bout"
+    },
+    {
+      "number": 282,
+      "speaker": "GLOUCESTER",
+      "text": "There’s scarce a bush."
+    },
+    {
+      "number": 282,
+      "speaker": "REGAN",
+      "text": "O, sir, to wilful men,"
+    },
+    {
+      "number": 283,
+      "speaker": "REGAN",
+      "text": "The injuries that they themselves procure"
+    },
+    {
+      "number": 284,
+      "speaker": "REGAN",
+      "text": "Must be their schoolmasters. Shut up your doors:"
+    },
+    {
+      "number": 285,
+      "speaker": "REGAN",
+      "text": "He is attended with a desperate train;"
+    },
+    {
+      "number": 286,
+      "speaker": "REGAN",
+      "text": "And what they may incense him to, being apt"
+    },
+    {
+      "number": 287,
+      "speaker": "REGAN",
+      "text": "To have his ear abused, wisdom bids fear."
+    },
+    {
+      "number": 288,
+      "speaker": "CORNWALL",
+      "text": "Shut up your doors, my lord; ’tis a wild night:"
+    },
+    {
+      "number": 289,
+      "speaker": "CORNWALL",
+      "text": "My Regan counsels well; come out o’ the storm."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Kent in the stocks."
+    },
+    {
+      "after_line": 0,
+      "text": "Enter King Lear, Fool, and Gentleman."
+    },
+    {
+      "after_line": 54,
+      "text": "Exit."
+    },
+    {
+      "after_line": 68,
+      "text": "That sir which serves and seeks for gain, And follows but for form, Will pack when it begins to rain, And leave thee in the storm, But I will tarry; the fool will stay, And let the wise man fly: The knave turns fool that runs away; The fool no knave, perdy."
+    },
+    {
+      "after_line": 69,
+      "text": "Reenter King Lear with Gloucester."
+    },
+    {
+      "after_line": 101,
+      "text": "Exit."
+    },
+    {
+      "after_line": 106,
+      "text": "Enter Cornwall, Regan, Gloucester, and Servants."
+    },
+    {
+      "after_line": 117,
+      "text": "Points to his heart."
+    },
+    {
+      "after_line": 136,
+      "text": "Kneeling."
+    },
+    {
+      "after_line": 140,
+      "text": "Rising."
+    },
+    {
+      "after_line": 168,
+      "text": "Enter Oswald."
+    },
+    {
+      "after_line": 168,
+      "text": "Is your lady come?"
+    },
+    {
+      "after_line": 173,
+      "text": "Enter Goneril."
+    },
+    {
+      "after_line": 173,
+      "text": "If you do love old men, if your sweet sway Allow obedience, if yourselves are old, Make it your cause; send down, and take my part! To Goneril. Art not ashamed to look upon this beard? O Regan, wilt thou take her by the hand?"
+    },
+    {
+      "after_line": 196,
+      "text": "Pointing at Oswald."
+    },
+    {
+      "after_line": 266,
+      "text": "Exeunt King Lear, Gloucester, Kent, and Fool."
+    },
+    {
+      "after_line": 266,
+      "text": "Storm and tempest."
+    },
+    {
+      "after_line": 275,
+      "text": "Reenter Gloucester."
+    },
+    {
+      "after_line": 289,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act2_scene4_gloss2",
+      "line": 7,
+      "phrase": "cruel garters",
+      "definition": "stocks — the Fool's riddle on Kent's restraint"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss4",
+      "line": 9,
+      "phrase": "over-lusty at legs",
+      "definition": "too free with his feet — wordplay on hose and stocking"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss5",
+      "line": 10,
+      "phrase": "nether-stocks",
+      "definition": "lower stockings — punning on the stocks"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss7",
+      "line": 50,
+      "phrase": "mother",
+      "definition": "hysterica passio — the rising hysterical grief"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss8",
+      "line": 51,
+      "phrase": "Hysterica passio",
+      "definition": "a condition believed to rise from the womb; 'mother' in Lear's earlier line"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss9",
+      "line": 30,
+      "phrase": "meiny",
+      "definition": "household; retinue"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss11",
+      "line": 112,
+      "phrase": "sepulchring",
+      "definition": "entombing"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss12",
+      "line": 264,
+      "phrase": "flaws",
+      "definition": "sudden gusts; violent outbursts"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss13",
+      "line": 114,
+      "phrase": "beloved Regan",
+      "definition": "Lear's desperate appeal to his second daughter"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss15",
+      "line": 87,
+      "phrase": "office",
+      "definition": "official duty"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss17",
+      "line": 87,
+      "phrase": "infirmity",
+      "definition": "weakness of age"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss19",
+      "line": 112,
+      "phrase": "Sepulchring",
+      "definition": "burying — Lear's doubled grief"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss20",
+      "line": 205,
+      "phrase": "thunder-bearer",
+      "definition": "Jupiter, with his thunderbolts"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss21",
+      "line": 153,
+      "phrase": "tender-hefted",
+      "definition": "gently hefted; gentle-natured"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss22",
+      "line": 149,
+      "phrase": "blast her pride",
+      "definition": "wither her arrogance"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss24",
+      "line": 169,
+      "phrase": "fickle grace",
+      "definition": "unstable favor"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss26",
+      "line": 284,
+      "phrase": "train",
+      "definition": "retinue — Lear's hundred knights, now under bargaining"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss28",
+      "line": 160,
+      "phrase": "offices of nature",
+      "definition": "natural filial obligations"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss29",
+      "line": 242,
+      "phrase": "What need one?",
+      "definition": "why do you need even one? — Regan's cold logic that strips Lear bare"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss30",
+      "line": 250,
+      "phrase": "patience",
+      "definition": "Lear's plea for endurance — he names what he cannot find"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss31",
+      "line": 249,
+      "phrase": "true need",
+      "definition": "real necessity — Lear's central philosophical question"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss33",
+      "line": 265,
+      "phrase": "O fool, I shall go mad!",
+      "definition": "Lear's second explicit fear of losing his reason"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss34",
+      "line": 268,
+      "phrase": "bestow’d",
+      "definition": "housed; lodged"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss35",
+      "line": 287,
+      "phrase": "Shut up your doors",
+      "definition": "Regan orders Gloucester to close the castle to Lear — the moment Lear becomes homeless in the storm"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss36",
+      "line": 1,
+      "phrase": "strange",
+      "definition": "unexpected"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss38",
+      "line": 10,
+      "phrase": "nether-stocks",
+      "definition": "lower stockings — the Fool's pun on Kent in the stocks"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss39",
+      "line": 46,
+      "phrase": "Fortune, that arrant whore",
+      "definition": "fortune personified as a strumpet — the Fool's satirical theology"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss41",
+      "line": 30,
+      "phrase": "meiny",
+      "definition": "household retinue"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss47",
+      "line": 71,
+      "phrase": "fetches",
+      "definition": "pretexts; excuses"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss48",
+      "line": 72,
+      "phrase": "images of revolt",
+      "definition": "rebel appearances"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss50",
+      "line": 145,
+      "phrase": "taking",
+      "definition": "pestilence; blasting influence"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss51",
+      "line": 146,
+      "phrase": "nimble lightnings",
+      "definition": "quick flashes"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss52",
+      "line": 148,
+      "phrase": "fen-suck’d fogs",
+      "definition": "marsh-bred miasmas — seen as disease agents"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss53",
+      "line": 149,
+      "phrase": "blast",
+      "definition": "sear with disease"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss54",
+      "line": 153,
+      "phrase": "tender-hefted",
+      "definition": "gently constituted"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss55",
+      "line": 158,
+      "phrase": "oppose the bolt",
+      "definition": "stand against the thunderbolt — hostile resistance"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss56",
+      "line": 157,
+      "phrase": "scant my sizes",
+      "definition": "cut back my allowances — Lear on Regan's imagined future meanness"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss57",
+      "line": 140,
+      "phrase": "abated",
+      "definition": "reduced"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss58",
+      "line": 160,
+      "phrase": "offices of nature",
+      "definition": "natural kinship duties"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss59",
+      "line": 243,
+      "phrase": "reason not the need",
+      "definition": "do not calculate necessity — Lear's protest"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss60",
+      "line": 244,
+      "phrase": "superfluous",
+      "definition": "having more than necessity requires — Lear's claim about human dignity"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss61",
+      "line": 250,
+      "phrase": "patience",
+      "definition": "endurance — the virtue Lear cannot muster"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss62",
+      "line": 257,
+      "phrase": "unnatural hags",
+      "definition": "Lear's final name for his daughters"
+    },
+    {
+      "id": "king_lear_act2_scene4_gloss63",
+      "line": 287,
+      "phrase": "Shut up your doors",
+      "definition": "Regan's command — the castle closes against the storm and Lear with it"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act2_scene4_ann1",
+      "line_start": 150,
+      "line_end": 170,
+      "citation_display": "King Lear 2.4.150–170",
+      "category": "close_reading",
+      "title": "'Pelican daughters' — a folk-belief turned metaphor",
+      "body": "Lear calls his daughters 'pelican daughters' in a line anticipating 3.4. The pelican was believed (incorrectly, but persistently in folk tradition) to feed its young with blood pecked from its own breast. 'Pelican daughters' inverts the image: children who drain their parents' blood rather than receive it. The pelican was a medieval emblem of Christ — self-sacrificing parental love — so the inversion has theological weight. Goneril and Regan are anti-pelicans, anti-Christs in miniature. This is one of Lear's most compressed metaphors, and it matters that the Fool must speak the play's lighter truths while Lear reaches for these darker emblems.",
+      "sources": [
+        "Henry Peacham, Minerva Britanna (1612) — contemporary emblem source on the pelican myth"
+      ]
+    },
+    {
+      "id": "king_lear_act2_scene4_ann2",
+      "line_start": 250,
+      "line_end": 300,
+      "citation_display": "King Lear 2.4.250–300",
+      "category": "thematic",
+      "title": "'O, reason not the need!' — Lear's arithmetic of dignity",
+      "body": "Regan's question 'What need one?' — why do you need even a single attendant — strips Lear to his last arithmetic. His response, 'O, reason not the need!', is one of the most important speeches in the play. 'Our basest beggars / Are in the poorest thing superfluous; / Allow not nature more than nature needs, / Man's life is cheap as beast's.' Lear's claim: human dignity requires a margin of excess. A life calibrated to pure biological necessity is not a human life. The speech is also self-wounding — Lear has just been a king who demanded 'natural' filial love while also demanding a hundred-knight retinue; his daughters are using his logic against him. The scene ends with Lear rushing out into the storm and the famous 'Shut up your doors.' The threshold between civilization and exposure literally closes on him.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)",
+        "Stanley Cavell, 'The Avoidance of Love' in Disowning Knowledge (1987)"
+      ]
+    },
+    {
+      "id": "king_lear_act2_scene4_ann3",
+      "line_start": 52,
+      "line_end": 58,
+      "citation_display": "King Lear 2.4.52–58",
+      "category": "historical",
+      "title": "'Hysterica passio' — the mother rising in a male body",
+      "body": "Lear names his rising grief 'Hysterica passio' — 'the mother' — and tells it to 'climb no more.' This draws on Edward Jorden's 1603 'A Briefe Discourse of a Disease called the Suffocation of the Mother,' which had recently argued (controversially) that 'hysteria' (from Greek 'hystera,' womb) was a medical condition with natural causes. Jorden's book was partly a response to the witchcraft panics — it argued that symptoms blamed on demons were actually bodily. Lear applying a feminine-coded diagnosis to his own rising feeling is strange, a king appropriating a medical language usually reserved for women. The effect doubles the play's interest in gender-destabilized grief: Lear crying 'the mother' reaches, involuntarily, for an anatomy not his.",
+      "sources": [
+        "Edward Jorden, A Briefe Discourse of a Disease called the Suffocation of the Mother (1603)",
+        "Janet Adelman, Suffocating Mothers (1992)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act2_scene4_q1",
+      "kind": "close_reading",
+      "prompt": "What folk-belief underlies 'pelican daughters'?",
+      "options": [
+        "Pelicans eat fish",
+        "Pelicans were believed to feed their young with blood pecked from their own breast — 'pelican daughters' inverts the image: children who drain their parents",
+        "Pelicans are lucky",
+        "Pelicans were sacred to Apollo"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 150,
+      "anchor_line_end": 160
+    },
+    {
+      "id": "king_lear_act2_scene4_q2",
+      "kind": "theme",
+      "prompt": "What does Lear's 'O, reason not the need!' argue?",
+      "options": [
+        "That he needs material comforts",
+        "That human dignity requires a margin of excess above biological necessity — a life calibrated to pure need is not a human life",
+        "That reason is overrated",
+        "That he has earned the retinue"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 260,
+      "anchor_line_end": 290
+    },
+    {
+      "id": "king_lear_act2_scene4_q3",
+      "kind": "structural",
+      "prompt": "The line 'Shut up your doors' at the end of 2.4 is important because —",
+      "options": [
+        "It ends the scene arbitrarily",
+        "The threshold between civilization and exposure literally closes on Lear — this is the moment that sends him into the storm scenes of Act 3",
+        "It is a stage direction only",
+        "It is spoken by the Fool"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 310,
+      "anchor_line_end": 322
+    },
+    {
+      "id": "king_lear_act2_scene4_q4",
+      "kind": "historical",
+      "prompt": "What is 'hysterica passio' (the mother) that Lear names rising in him?",
+      "options": [
+        "A military term",
+        "A medical diagnosis from Edward Jorden's 1603 treatise — typically associated with female bodies; Lear's appropriation of it is strange and gendered",
+        "A scriptural phrase",
+        "Court protocol"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 52,
+      "anchor_line_end": 58
+    }
+  ]
+}

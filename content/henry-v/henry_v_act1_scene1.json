@@ -1,0 +1,723 @@
+{
+  "section_id": "henry_v_act1_scene1",
+  "work_id": "henry-v",
+  "sequence": 2,
+  "act": 1,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "London. An ante-chamber in the King's palace",
+  "line_count": 102,
+  "word_count": 732,
+  "est_read_minutes": 4,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CANTERBURY",
+      "text": "My lord, I’ll tell you; that self bill is urged,"
+    },
+    {
+      "number": 2,
+      "speaker": "CANTERBURY",
+      "text": "Which in the eleventh year of the last king’s reign"
+    },
+    {
+      "number": 3,
+      "speaker": "CANTERBURY",
+      "text": "Was like, and had indeed against us pass’d,"
+    },
+    {
+      "number": 4,
+      "speaker": "CANTERBURY",
+      "text": "But that the scambling and unquiet time"
+    },
+    {
+      "number": 5,
+      "speaker": "CANTERBURY",
+      "text": "Did push it out of farther question."
+    },
+    {
+      "number": 6,
+      "speaker": "ELY",
+      "text": "But how, my lord, shall we resist it now?"
+    },
+    {
+      "number": 7,
+      "speaker": "CANTERBURY",
+      "text": "It must be thought on. If it pass against us,"
+    },
+    {
+      "number": 8,
+      "speaker": "CANTERBURY",
+      "text": "We lose the better half of our possession:"
+    },
+    {
+      "number": 9,
+      "speaker": "CANTERBURY",
+      "text": "For all the temporal lands which men devout"
+    },
+    {
+      "number": 10,
+      "speaker": "CANTERBURY",
+      "text": "By testament have given to the church"
+    },
+    {
+      "number": 11,
+      "speaker": "CANTERBURY",
+      "text": "Would they strip from us; being valued thus:"
+    },
+    {
+      "number": 12,
+      "speaker": "CANTERBURY",
+      "text": "As much as would maintain, to the King’s honour,"
+    },
+    {
+      "number": 13,
+      "speaker": "CANTERBURY",
+      "text": "Full fifteen earls and fifteen hundred knights,"
+    },
+    {
+      "number": 14,
+      "speaker": "CANTERBURY",
+      "text": "Six thousand and two hundred good esquires;"
+    },
+    {
+      "number": 15,
+      "speaker": "CANTERBURY",
+      "text": "And, to relief of lazars and weak age,"
+    },
+    {
+      "number": 16,
+      "speaker": "CANTERBURY",
+      "text": "Of indigent faint souls past corporal toil,"
+    },
+    {
+      "number": 17,
+      "speaker": "CANTERBURY",
+      "text": "A hundred almshouses right well supplied;"
+    },
+    {
+      "number": 18,
+      "speaker": "CANTERBURY",
+      "text": "And to the coffers of the King beside,"
+    },
+    {
+      "number": 19,
+      "speaker": "CANTERBURY",
+      "text": "A thousand pounds by the year: thus runs the bill."
+    },
+    {
+      "number": 20,
+      "speaker": "ELY",
+      "text": "This would drink deep."
+    },
+    {
+      "number": 20,
+      "speaker": "CANTERBURY",
+      "text": "’Twould drink the cup and all."
+    },
+    {
+      "number": 21,
+      "speaker": "ELY",
+      "text": "But what prevention?"
+    },
+    {
+      "number": 22,
+      "speaker": "CANTERBURY",
+      "text": "The King is full of grace and fair regard."
+    },
+    {
+      "number": 23,
+      "speaker": "ELY",
+      "text": "And a true lover of the holy church."
+    },
+    {
+      "number": 24,
+      "speaker": "CANTERBURY",
+      "text": "The courses of his youth promised it not."
+    },
+    {
+      "number": 25,
+      "speaker": "CANTERBURY",
+      "text": "The breath no sooner left his father’s body,"
+    },
+    {
+      "number": 26,
+      "speaker": "CANTERBURY",
+      "text": "But that his wildness, mortified in him,"
+    },
+    {
+      "number": 27,
+      "speaker": "CANTERBURY",
+      "text": "Seem’d to die too; yea, at that very moment"
+    },
+    {
+      "number": 28,
+      "speaker": "CANTERBURY",
+      "text": "Consideration, like an angel, came"
+    },
+    {
+      "number": 29,
+      "speaker": "CANTERBURY",
+      "text": "And whipped the offending Adam out of him,"
+    },
+    {
+      "number": 30,
+      "speaker": "CANTERBURY",
+      "text": "Leaving his body as a paradise,"
+    },
+    {
+      "number": 31,
+      "speaker": "CANTERBURY",
+      "text": "To envelope and contain celestial spirits."
+    },
+    {
+      "number": 32,
+      "speaker": "CANTERBURY",
+      "text": "Never was such a sudden scholar made;"
+    },
+    {
+      "number": 33,
+      "speaker": "CANTERBURY",
+      "text": "Never came reformation in a flood,"
+    },
+    {
+      "number": 34,
+      "speaker": "CANTERBURY",
+      "text": "With such a heady currance, scouring faults;"
+    },
+    {
+      "number": 35,
+      "speaker": "CANTERBURY",
+      "text": "Nor never Hydra-headed wilfulness"
+    },
+    {
+      "number": 36,
+      "speaker": "CANTERBURY",
+      "text": "So soon did lose his seat and all at once"
+    },
+    {
+      "number": 37,
+      "speaker": "CANTERBURY",
+      "text": "As in this king."
+    },
+    {
+      "number": 37,
+      "speaker": "ELY",
+      "text": "We are blessed in the change."
+    },
+    {
+      "number": 38,
+      "speaker": "CANTERBURY",
+      "text": "Hear him but reason in divinity,"
+    },
+    {
+      "number": 39,
+      "speaker": "CANTERBURY",
+      "text": "And, all-admiring with an inward wish"
+    },
+    {
+      "number": 40,
+      "speaker": "CANTERBURY",
+      "text": "You would desire the king were made a prelate:"
+    },
+    {
+      "number": 41,
+      "speaker": "CANTERBURY",
+      "text": "Hear him debate of commonwealth affairs,"
+    },
+    {
+      "number": 42,
+      "speaker": "CANTERBURY",
+      "text": "You would say it hath been all in all his study:"
+    },
+    {
+      "number": 43,
+      "speaker": "CANTERBURY",
+      "text": "List his discourse of war, and you shall hear"
+    },
+    {
+      "number": 44,
+      "speaker": "CANTERBURY",
+      "text": "A fearful battle render’d you in music:"
+    },
+    {
+      "number": 45,
+      "speaker": "CANTERBURY",
+      "text": "Turn him to any cause of policy,"
+    },
+    {
+      "number": 46,
+      "speaker": "CANTERBURY",
+      "text": "The Gordian knot of it he will unloose,"
+    },
+    {
+      "number": 47,
+      "speaker": "CANTERBURY",
+      "text": "Familiar as his garter: that, when he speaks,"
+    },
+    {
+      "number": 48,
+      "speaker": "CANTERBURY",
+      "text": "The air, a charter’d libertine, is still,"
+    },
+    {
+      "number": 49,
+      "speaker": "CANTERBURY",
+      "text": "And the mute wonder lurketh in men’s ears,"
+    },
+    {
+      "number": 50,
+      "speaker": "CANTERBURY",
+      "text": "To steal his sweet and honey’d sentences;"
+    },
+    {
+      "number": 51,
+      "speaker": "CANTERBURY",
+      "text": "So that the art and practic part of life"
+    },
+    {
+      "number": 52,
+      "speaker": "CANTERBURY",
+      "text": "Must be the mistress to this theoric:"
+    },
+    {
+      "number": 53,
+      "speaker": "CANTERBURY",
+      "text": "Which is a wonder how his grace should glean it,"
+    },
+    {
+      "number": 54,
+      "speaker": "CANTERBURY",
+      "text": "Since his addiction was to courses vain,"
+    },
+    {
+      "number": 55,
+      "speaker": "CANTERBURY",
+      "text": "His companies unletter’d, rude and shallow,"
+    },
+    {
+      "number": 56,
+      "speaker": "CANTERBURY",
+      "text": "His hours fill’d up with riots, banquets sports,"
+    },
+    {
+      "number": 57,
+      "speaker": "CANTERBURY",
+      "text": "And never noted in him any study,"
+    },
+    {
+      "number": 58,
+      "speaker": "CANTERBURY",
+      "text": "Any retirement, any sequestration"
+    },
+    {
+      "number": 59,
+      "speaker": "CANTERBURY",
+      "text": "From open haunts and popularity."
+    },
+    {
+      "number": 59,
+      "speaker": "ELY",
+      "text": "The strawberry grows underneath the nettle"
+    },
+    {
+      "number": 60,
+      "speaker": "ELY",
+      "text": "And wholesome berries thrive and ripen best"
+    },
+    {
+      "number": 61,
+      "speaker": "ELY",
+      "text": "Neighbour’d by fruit of baser quality:"
+    },
+    {
+      "number": 62,
+      "speaker": "ELY",
+      "text": "And so the prince obscured his contemplation"
+    },
+    {
+      "number": 63,
+      "speaker": "ELY",
+      "text": "Under the veil of wildness; which, no doubt,"
+    },
+    {
+      "number": 64,
+      "speaker": "ELY",
+      "text": "Grew like the summer grass, fastest by night,"
+    },
+    {
+      "number": 65,
+      "speaker": "ELY",
+      "text": "Unseen, yet crescive in his faculty."
+    },
+    {
+      "number": 66,
+      "speaker": "CANTERBURY",
+      "text": "It must be so; for miracles are ceased;"
+    },
+    {
+      "number": 67,
+      "speaker": "CANTERBURY",
+      "text": "And therefore we must needs admit the means"
+    },
+    {
+      "number": 68,
+      "speaker": "CANTERBURY",
+      "text": "How things are perfected."
+    },
+    {
+      "number": 68,
+      "speaker": "ELY",
+      "text": "But, my good lord,"
+    },
+    {
+      "number": 69,
+      "speaker": "ELY",
+      "text": "How now for mitigation of this bill"
+    },
+    {
+      "number": 70,
+      "speaker": "ELY",
+      "text": "Urged by the commons? Doth his majesty"
+    },
+    {
+      "number": 71,
+      "speaker": "ELY",
+      "text": "Incline to it, or no?"
+    },
+    {
+      "number": 71,
+      "speaker": "CANTERBURY",
+      "text": "He seems indifferent,"
+    },
+    {
+      "number": 72,
+      "speaker": "CANTERBURY",
+      "text": "Or rather swaying more upon our part"
+    },
+    {
+      "number": 73,
+      "speaker": "CANTERBURY",
+      "text": "Than cherishing the exhibitors against us;"
+    },
+    {
+      "number": 74,
+      "speaker": "CANTERBURY",
+      "text": "For I have made an offer to his majesty,"
+    },
+    {
+      "number": 75,
+      "speaker": "CANTERBURY",
+      "text": "Upon our spiritual convocation"
+    },
+    {
+      "number": 76,
+      "speaker": "CANTERBURY",
+      "text": "And in regard of causes now in hand,"
+    },
+    {
+      "number": 77,
+      "speaker": "CANTERBURY",
+      "text": "Which I have open’d to his grace at large,"
+    },
+    {
+      "number": 78,
+      "speaker": "CANTERBURY",
+      "text": "As touching France, to give a greater sum"
+    },
+    {
+      "number": 79,
+      "speaker": "CANTERBURY",
+      "text": "Than ever at one time the clergy yet"
+    },
+    {
+      "number": 80,
+      "speaker": "CANTERBURY",
+      "text": "Did to his predecessors part withal."
+    },
+    {
+      "number": 81,
+      "speaker": "ELY",
+      "text": "How did this offer seem received, my lord?"
+    },
+    {
+      "number": 82,
+      "speaker": "CANTERBURY",
+      "text": "With good acceptance of his majesty;"
+    },
+    {
+      "number": 83,
+      "speaker": "CANTERBURY",
+      "text": "Save that there was not time enough to hear,"
+    },
+    {
+      "number": 84,
+      "speaker": "CANTERBURY",
+      "text": "As I perceived his grace would fain have done,"
+    },
+    {
+      "number": 85,
+      "speaker": "CANTERBURY",
+      "text": "The severals and unhidden passages"
+    },
+    {
+      "number": 86,
+      "speaker": "CANTERBURY",
+      "text": "Of his true titles to some certain dukedoms"
+    },
+    {
+      "number": 87,
+      "speaker": "CANTERBURY",
+      "text": "And generally to the crown and seat of France"
+    },
+    {
+      "number": 88,
+      "speaker": "CANTERBURY",
+      "text": "Derived from Edward, his great-grandfather."
+    },
+    {
+      "number": 89,
+      "speaker": "ELY",
+      "text": "What was the impediment that broke this off?"
+    },
+    {
+      "number": 90,
+      "speaker": "CANTERBURY",
+      "text": "The French ambassador upon that instant"
+    },
+    {
+      "number": 91,
+      "speaker": "CANTERBURY",
+      "text": "Craved audience; and the hour, I think, is come"
+    },
+    {
+      "number": 92,
+      "speaker": "CANTERBURY",
+      "text": "To give him hearing: is it four o’clock?"
+    },
+    {
+      "number": 93,
+      "speaker": "ELY",
+      "text": "It is."
+    },
+    {
+      "number": 94,
+      "speaker": "CANTERBURY",
+      "text": "Then go we in, to know his embassy;"
+    },
+    {
+      "number": 95,
+      "speaker": "CANTERBURY",
+      "text": "Which I could with a ready guess declare,"
+    },
+    {
+      "number": 96,
+      "speaker": "CANTERBURY",
+      "text": "Before the Frenchman speak a word of it."
+    },
+    {
+      "number": 97,
+      "speaker": "ELY",
+      "text": "I’ll wait upon you, and I long to hear it."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter the Archbishop of Canterbury, and the Bishop of Ely."
+    },
+    {
+      "after_line": 97,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act1_scene1_gloss1",
+      "line": 1,
+      "phrase": "self bill",
+      "definition": "same bill — a parliamentary measure that would strip the Church of lands"
+    },
+    {
+      "id": "henry_v_act1_scene1_gloss2",
+      "line": 4,
+      "phrase": "scambling",
+      "definition": "turbulent; disorderly"
+    },
+    {
+      "id": "henry_v_act1_scene1_gloss3",
+      "line": 9,
+      "phrase": "temporal lands",
+      "definition": "secular holdings — Church-owned estates granted to the Crown"
+    },
+    {
+      "id": "henry_v_act1_scene1_gloss4",
+      "line": 13,
+      "phrase": "full fifteen earls",
+      "definition": "enough to support fifteen earls"
+    },
+    {
+      "id": "henry_v_act1_scene1_gloss5",
+      "line": 69,
+      "phrase": "mitigation",
+      "definition": "softening; relief"
+    },
+    {
+      "id": "henry_v_act1_scene1_gloss6",
+      "line": 23,
+      "phrase": "true lover of the Holy Church",
+      "definition": "a sincere defender of the Church — part of the play's early portrait of a reformed Henry"
+    },
+    {
+      "id": "henry_v_act1_scene1_gloss7",
+      "line": 28,
+      "phrase": "Consideration",
+      "definition": "moral reflection"
+    },
+    {
+      "id": "henry_v_act1_scene1_gloss8",
+      "line": 35,
+      "phrase": "Hydra-headed wilfulness",
+      "definition": "a wilfulness with many heads like the Lernaean Hydra — stubbornness that grows back when cut off"
+    },
+    {
+      "id": "henry_v_act1_scene1_gloss9",
+      "line": 46,
+      "phrase": "Gordian knot",
+      "definition": "famously intricate knot cut by Alexander the Great — an image of a problem solved by force rather than untangling"
+    },
+    {
+      "id": "henry_v_act1_scene1_gloss10",
+      "line": 45,
+      "phrase": "cause of policy",
+      "definition": "matter of statecraft"
+    },
+    {
+      "id": "henry_v_act1_scene1_gloss11",
+      "line": 53,
+      "phrase": "grace",
+      "definition": "divine favor"
+    },
+    {
+      "id": "henry_v_act1_scene1_gloss12",
+      "line": 65,
+      "phrase": "crescive in his faculty",
+      "definition": "growing through its own capacity — the medieval idea that souls develop by their own principle"
+    },
+    {
+      "id": "henry_v_act1_scene1_gloss13",
+      "line": 84,
+      "phrase": "fain",
+      "definition": "gladly"
+    },
+    {
+      "id": "henry_v_act1_scene1_gloss14",
+      "line": 91,
+      "phrase": "audience",
+      "definition": "formal hearing with the King"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act1_scene1_ann1",
+      "line_start": 1,
+      "line_end": 19,
+      "citation_display": "Henry V 1.1.1–19",
+      "category": "historical",
+      "title": "The bill that starts the war",
+      "body": "The scene opens on a parliamentary threat: a bill, first proposed in the reign of Henry IV and now revived, would strip the English Church of temporal lands worth more than half its possessions. Canterbury's calculation is precise — the confiscated revenues would maintain fifteen earls, fifteen hundred knights, six thousand two hundred esquires, a hundred almshouses, and would put £1,000 a year into the royal treasury. These figures are drawn from Raphael Holinshed's Chronicles (1587), Shakespeare's principal source. The historical bill, first raised in 1404 and revived in 1410 and 1414, was real, and so was the political logic: an ambitious Church-stripping measure was a durable threat to clerical wealth. Canterbury's counter-move — to engage the king's ambition so thoroughly in a French war that the bill cannot reach a vote — reads as realpolitik. Shakespeare shows the Church actively procuring the war. This is a materially more compromising portrait of the invasion's origins than anything Henry himself will admit in the scenes that follow.",
+      "sources": [
+        "Raphael Holinshed, Chronicles of England, Scotland, and Ireland (1587)",
+        "Gary Taylor (ed.), The Oxford Shakespeare: Henry V (1982), introduction"
+      ]
+    },
+    {
+      "id": "henry_v_act1_scene1_ann2",
+      "line_start": 24,
+      "line_end": 45,
+      "citation_display": "Henry V 1.1.24–45",
+      "category": "thematic",
+      "title": "The conversion narrative — Hal to Henry",
+      "body": "Canterbury's account of Henry's transformation — wildness that died with his father, Consideration whipping 'the offending Adam' out of him, the king now full of divinity, policy, and theology — compresses the arc of the Henry IV plays into forty lines. It is also strategically self-serving: Canterbury is flattering the king in advance of asking him to hear the Church's war-argument. Whether Henry's piety is real or performed is one of the play's open questions. The scene leaves it ambiguous on purpose: Canterbury's 'miracle' rhetoric sits beside Ely's more coolly political observation that they still need to act to prevent the bill. Audiences who have read the Henry IV plays know that Prince Hal's transformation at his coronation was public theatre; audiences who haven't hear Canterbury's speech as sincere wonder. Both readings remain available.",
+      "sources": [
+        "Stephen Greenblatt, 'Invisible Bullets,' Shakespearean Negotiations (1988)",
+        "Alexander Leggatt, Shakespeare's Political Drama (1988)"
+      ]
+    },
+    {
+      "id": "henry_v_act1_scene1_ann3",
+      "line_start": 70,
+      "line_end": 102,
+      "citation_display": "Henry V 1.1.70–102",
+      "category": "structural",
+      "title": "Canterbury's motive, made explicit",
+      "body": "The scene's most important structural feature is that Canterbury lays out his plan to divert the king before the king appears. By the time Henry enters in 1.2 and solicits Canterbury's legal judgement on the French claim, we already know the Archbishop has an institutional interest in encouraging the war. This changes what we hear in the next scene. When Canterbury speaks for forty lines about the Salic Law, we are not watching a disinterested legal consultation; we are watching a bought advocate. Shakespeare does not belabour the point, but he stages the causal sequence clearly: Church threat, political maneuver, war-justification. The play's later emphasis on Henry's providentialism and the God-fought nature of Agincourt must be read against this opening frame. The fact that the soldiers themselves debate the war's justice in 4.1 (Williams's challenge) is thus not a late innovation; the play has been keeping the question open from its first scene.",
+      "sources": [
+        "A. R. Humphreys, The Arden Shakespeare: Henry V (1968)",
+        "Andrew Gurr (ed.), King Henry V (New Cambridge Shakespeare, 1992)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act1_scene1_q1",
+      "kind": "comprehension",
+      "prompt": "What is the bill that Canterbury fears (lines 1–19)?",
+      "options": [
+        "A law that would ban English bishops from holding office",
+        "A parliamentary bill that would strip the Church of temporal lands worth more than half its wealth",
+        "A tax on monastic buildings only",
+        "A requirement that the Church pay for royal wars"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 1,
+      "anchor_line_end": 19
+    },
+    {
+      "id": "henry_v_act1_scene1_q2",
+      "kind": "inference",
+      "prompt": "Why does Canterbury encourage Henry's war on France?",
+      "options": [
+        "He believes Henry's claim is legally irrefutable, regardless of self-interest",
+        "Because the war will absorb the king's attention and political capital, preventing the bill from passing — he has an institutional motive",
+        "He personally hates the French King",
+        "Because Joan of Arc is expected to lead a counter-invasion"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 70,
+      "anchor_line_end": 102
+    },
+    {
+      "id": "henry_v_act1_scene1_q3",
+      "kind": "theme",
+      "prompt": "Canterbury describes Henry's transformation from 'wildness' to kingly virtue. What dramatic history does this summary compress?",
+      "options": [
+        "The events of Julius Caesar",
+        "Prince Hal's development in Shakespeare's earlier Henry IV Parts 1 and 2",
+        "Henry III's relationship with the Church",
+        "The boyhood of Edward III"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 24,
+      "anchor_line_end": 45
+    },
+    {
+      "id": "henry_v_act1_scene1_q4",
+      "kind": "structural",
+      "prompt": "How does 1.1 frame what happens in 1.2?",
+      "options": [
+        "It introduces Henry in person",
+        "It establishes that Canterbury has a material interest in promoting the French war BEFORE he is asked to legally justify it — the audience hears the next scene's legal opinion as compromised",
+        "It introduces the Dauphin",
+        "It sets up a love plot that the rest of the play will develop"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 70,
+      "anchor_line_end": 102
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "work_id": "hamlet",
+  "entries": [
+    {
+      "type": "act",
+      "act": 1,
+      "title": "Act I"
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act1_scene1",
+      "sequence": 1,
+      "act": 1,
+      "scene": 1,
+      "scene_title": "Elsinore. A platform before the castle",
+      "line_count": 177,
+      "word_count": 1227,
+      "est_read_minutes": 6
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act1_scene2",
+      "sequence": 2,
+      "act": 1,
+      "scene": 2,
+      "scene_title": "A room of state in the castle",
+      "line_count": 275,
+      "word_count": 2024,
+      "est_read_minutes": 10
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act1_scene3",
+      "sequence": 3,
+      "act": 1,
+      "scene": 3,
+      "scene_title": "A room in Polonius’ house",
+      "line_count": 139,
+      "word_count": 1060,
+      "est_read_minutes": 5
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act1_scene4",
+      "sequence": 4,
+      "act": 1,
+      "scene": 4,
+      "scene_title": "The platform",
+      "line_count": 101,
+      "word_count": 722,
+      "est_read_minutes": 4
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act1_scene5",
+      "sequence": 5,
+      "act": 1,
+      "scene": 5,
+      "scene_title": "Another part of the platform",
+      "line_count": 210,
+      "word_count": 1442,
+      "est_read_minutes": 7
+    },
+    {
+      "type": "act",
+      "act": 2,
+      "title": "Act II"
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act2_scene1",
+      "sequence": 6,
+      "act": 2,
+      "scene": 1,
+      "scene_title": "A room in Polonius’ house",
+      "line_count": 129,
+      "word_count": 936,
+      "est_read_minutes": 5
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act2_scene2",
+      "sequence": 7,
+      "act": 2,
+      "scene": 2,
+      "scene_title": "A room in the castle",
+      "line_count": 515,
+      "word_count": 4502,
+      "est_read_minutes": 23
+    },
+    {
+      "type": "act",
+      "act": 3,
+      "title": "Act III"
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act3_scene1",
+      "sequence": 8,
+      "act": 3,
+      "scene": 1,
+      "scene_title": "A room in the castle",
+      "line_count": 193,
+      "word_count": 1508,
+      "est_read_minutes": 8
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act3_scene2",
+      "sequence": 9,
+      "act": 3,
+      "scene": 2,
+      "scene_title": "A hall in the castle",
+      "line_count": 343,
+      "word_count": 2891,
+      "est_read_minutes": 14
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act3_scene3",
+      "sequence": 10,
+      "act": 3,
+      "scene": 3,
+      "scene_title": "A room in the castle",
+      "line_count": 101,
+      "word_count": 786,
+      "est_read_minutes": 4
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act3_scene4",
+      "sequence": 11,
+      "act": 3,
+      "scene": 4,
+      "scene_title": "The Queen’s closet",
+      "line_count": 234,
+      "word_count": 1740,
+      "est_read_minutes": 9
+    },
+    {
+      "type": "act",
+      "act": 4,
+      "title": "Act IV"
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act4_scene1",
+      "sequence": 12,
+      "act": 4,
+      "scene": 1,
+      "scene_title": "A room in the castle",
+      "line_count": 33,
+      "word_count": 250,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act4_scene2",
+      "sequence": 13,
+      "act": 4,
+      "scene": 2,
+      "scene_title": "Another room in the castle",
+      "line_count": 26,
+      "word_count": 222,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act4_scene3",
+      "sequence": 14,
+      "act": 4,
+      "scene": 3,
+      "scene_title": "Another room in the castle",
+      "line_count": 69,
+      "word_count": 526,
+      "est_read_minutes": 3
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act4_scene4",
+      "sequence": 15,
+      "act": 4,
+      "scene": 4,
+      "scene_title": "A plain in Denmark",
+      "line_count": 68,
+      "word_count": 507,
+      "est_read_minutes": 3
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act4_scene5",
+      "sequence": 16,
+      "act": 4,
+      "scene": 5,
+      "scene_title": "Elsinore. A room in the castle",
+      "line_count": 193,
+      "word_count": 1496,
+      "est_read_minutes": 7
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act4_scene6",
+      "sequence": 17,
+      "act": 4,
+      "scene": 6,
+      "scene_title": "Another room in the castle",
+      "line_count": 26,
+      "word_count": 278,
+      "est_read_minutes": 1
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act4_scene7",
+      "sequence": 18,
+      "act": 4,
+      "scene": 7,
+      "scene_title": "Another room in the castle",
+      "line_count": 208,
+      "word_count": 1571,
+      "est_read_minutes": 8
+    },
+    {
+      "type": "act",
+      "act": 5,
+      "title": "Act V"
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act5_scene1",
+      "sequence": 19,
+      "act": 5,
+      "scene": 1,
+      "scene_title": "A churchyard",
+      "line_count": 265,
+      "word_count": 2244,
+      "est_read_minutes": 11
+    },
+    {
+      "type": "scene",
+      "section_id": "hamlet_act5_scene2",
+      "sequence": 20,
+      "act": 5,
+      "scene": 2,
+      "scene_title": "A hall in the castle",
+      "line_count": 406,
+      "word_count": 3168,
+      "est_read_minutes": 16
+    }
+  ]
+}

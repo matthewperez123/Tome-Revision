@@ -1,0 +1,409 @@
+{
+  "section_id": "macbeth_act2_scene4",
+  "work_id": "macbeth",
+  "sequence": 11,
+  "act": 2,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "Outside Macbeth's castle",
+  "line_count": 50,
+  "word_count": 317,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "OLD MAN",
+      "text": "Threescore and ten I can remember well:"
+    },
+    {
+      "number": 2,
+      "speaker": "OLD MAN",
+      "text": "Within the volume of which time I have seen"
+    },
+    {
+      "number": 3,
+      "speaker": "OLD MAN",
+      "text": "Hours dreadful and things strange; but this sore night"
+    },
+    {
+      "number": 4,
+      "speaker": "OLD MAN",
+      "text": "Hath trifled former knowings."
+    },
+    {
+      "number": 4,
+      "speaker": "ROSS",
+      "text": "Ah, good father,"
+    },
+    {
+      "number": 5,
+      "speaker": "ROSS",
+      "text": "Thou seest, the heavens, as troubled with man’s act,"
+    },
+    {
+      "number": 6,
+      "speaker": "ROSS",
+      "text": "Threaten his bloody stage: by the clock, ’tis day,"
+    },
+    {
+      "number": 7,
+      "speaker": "ROSS",
+      "text": "And yet dark night strangles the travelling lamp:"
+    },
+    {
+      "number": 8,
+      "speaker": "ROSS",
+      "text": "Is’t night’s predominance, or the day’s shame,"
+    },
+    {
+      "number": 9,
+      "speaker": "ROSS",
+      "text": "That darkness does the face of earth entomb,"
+    },
+    {
+      "number": 10,
+      "speaker": "ROSS",
+      "text": "When living light should kiss it?"
+    },
+    {
+      "number": 10,
+      "speaker": "OLD MAN",
+      "text": "’Tis unnatural,"
+    },
+    {
+      "number": 11,
+      "speaker": "OLD MAN",
+      "text": "Even like the deed that’s done. On Tuesday last,"
+    },
+    {
+      "number": 12,
+      "speaker": "OLD MAN",
+      "text": "A falcon, towering in her pride of place,"
+    },
+    {
+      "number": 13,
+      "speaker": "OLD MAN",
+      "text": "Was by a mousing owl hawk’d at and kill’d."
+    },
+    {
+      "number": 14,
+      "speaker": "ROSS",
+      "text": "And Duncan’s horses—a thing most strange and certain—"
+    },
+    {
+      "number": 15,
+      "speaker": "ROSS",
+      "text": "Beauteous and swift, the minions of their race,"
+    },
+    {
+      "number": 16,
+      "speaker": "ROSS",
+      "text": "Turn’d wild in nature, broke their stalls, flung out,"
+    },
+    {
+      "number": 17,
+      "speaker": "ROSS",
+      "text": "Contending ’gainst obedience, as they would make"
+    },
+    {
+      "number": 18,
+      "speaker": "ROSS",
+      "text": "War with mankind."
+    },
+    {
+      "number": 18,
+      "speaker": "OLD MAN",
+      "text": "’Tis said they eat each other."
+    },
+    {
+      "number": 19,
+      "speaker": "ROSS",
+      "text": "They did so, to the amazement of mine eyes"
+    },
+    {
+      "number": 20,
+      "speaker": "ROSS",
+      "text": "That look’d upon’t. Here comes the good Macduff."
+    },
+    {
+      "number": 21,
+      "speaker": "MACDUFF",
+      "text": "Why, see you not?"
+    },
+    {
+      "number": 22,
+      "speaker": "ROSS",
+      "text": "Is’t known who did this more than bloody deed?"
+    },
+    {
+      "number": 23,
+      "speaker": "MACDUFF",
+      "text": "Those that Macbeth hath slain."
+    },
+    {
+      "number": 23,
+      "speaker": "ROSS",
+      "text": "Alas, the day!"
+    },
+    {
+      "number": 24,
+      "speaker": "ROSS",
+      "text": "What good could they pretend?"
+    },
+    {
+      "number": 24,
+      "speaker": "MACDUFF",
+      "text": "They were suborn’d:"
+    },
+    {
+      "number": 25,
+      "speaker": "MACDUFF",
+      "text": "Malcolm and Donalbain, the king’s two sons,"
+    },
+    {
+      "number": 26,
+      "speaker": "MACDUFF",
+      "text": "Are stol’n away and fled; which puts upon them"
+    },
+    {
+      "number": 27,
+      "speaker": "MACDUFF",
+      "text": "Suspicion of the deed."
+    },
+    {
+      "number": 27,
+      "speaker": "ROSS",
+      "text": "’Gainst nature still!"
+    },
+    {
+      "number": 28,
+      "speaker": "ROSS",
+      "text": "Thriftless ambition, that wilt ravin up"
+    },
+    {
+      "number": 29,
+      "speaker": "ROSS",
+      "text": "Thine own life’s means! Then ’tis most like"
+    },
+    {
+      "number": 30,
+      "speaker": "ROSS",
+      "text": "The sovereignty will fall upon Macbeth."
+    },
+    {
+      "number": 31,
+      "speaker": "MACDUFF",
+      "text": "He is already named, and gone to Scone"
+    },
+    {
+      "number": 32,
+      "speaker": "MACDUFF",
+      "text": "To be invested."
+    },
+    {
+      "number": 32,
+      "speaker": "ROSS",
+      "text": "Where is Duncan’s body?"
+    },
+    {
+      "number": 33,
+      "speaker": "MACDUFF",
+      "text": "Carried to Colmekill,"
+    },
+    {
+      "number": 34,
+      "speaker": "MACDUFF",
+      "text": "The sacred storehouse of his predecessors,"
+    },
+    {
+      "number": 35,
+      "speaker": "MACDUFF",
+      "text": "And guardian of their bones."
+    },
+    {
+      "number": 35,
+      "speaker": "ROSS",
+      "text": "Will you to Scone?"
+    },
+    {
+      "number": 36,
+      "speaker": "MACDUFF",
+      "text": "No, cousin, I’ll to Fife."
+    },
+    {
+      "number": 36,
+      "speaker": "ROSS",
+      "text": "Well, I will thither."
+    },
+    {
+      "number": 37,
+      "speaker": "MACDUFF",
+      "text": "Well, may you see things well done there: adieu!"
+    },
+    {
+      "number": 38,
+      "speaker": "MACDUFF",
+      "text": "Lest our old robes sit easier than our new!"
+    },
+    {
+      "number": 39,
+      "speaker": "ROSS",
+      "text": "Farewell, father."
+    },
+    {
+      "number": 40,
+      "speaker": "OLD MAN",
+      "text": "God’s benison go with you; and with those"
+    },
+    {
+      "number": 41,
+      "speaker": "OLD MAN",
+      "text": "That would make good of bad, and friends of foes!"
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Ross and an old Man."
+    },
+    {
+      "after_line": 20,
+      "text": "Enter Macduff."
+    },
+    {
+      "after_line": 20,
+      "text": "How goes the world, sir, now?"
+    },
+    {
+      "after_line": 41,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act2_scene4_gloss1",
+      "line": 2,
+      "phrase": "volume of which time",
+      "definition": "sweep of history I've lived through"
+    },
+    {
+      "id": "macbeth_act2_scene4_gloss2",
+      "line": 4,
+      "phrase": "trifled former knowings",
+      "definition": "made what I knew before seem trivial"
+    },
+    {
+      "id": "macbeth_act2_scene4_gloss3",
+      "line": 7,
+      "phrase": "travelling lamp",
+      "definition": "the sun, figured as a traveling lantern"
+    },
+    {
+      "id": "macbeth_act2_scene4_gloss4",
+      "line": 8,
+      "phrase": "predominance",
+      "definition": "astrological dominance (of dark over light)"
+    },
+    {
+      "id": "macbeth_act2_scene4_gloss5",
+      "line": 9,
+      "phrase": "entomb",
+      "definition": "bury; swallow in darkness"
+    },
+    {
+      "id": "macbeth_act2_scene4_gloss6",
+      "line": 12,
+      "phrase": "towering in her pride of place",
+      "definition": "at the peak of her flight — a falcon image"
+    },
+    {
+      "id": "macbeth_act2_scene4_gloss8",
+      "line": 13,
+      "phrase": "mousing owl",
+      "definition": "an owl that normally hunts mice — far below a falcon in the natural order"
+    },
+    {
+      "id": "macbeth_act2_scene4_gloss9",
+      "line": 15,
+      "phrase": "minions of their race",
+      "definition": "the finest of their breed — Duncan's horses"
+    },
+    {
+      "id": "macbeth_act2_scene4_gloss10",
+      "line": 16,
+      "phrase": "Turn’d wild in nature, broke their stalls",
+      "definition": "went mad, broke out of their stables"
+    },
+    {
+      "id": "macbeth_act2_scene4_gloss11",
+      "line": 18,
+      "phrase": "eat each other",
+      "definition": "Duncan's horses ate each other — the most monstrous of the portents"
+    },
+    {
+      "id": "macbeth_act2_scene4_gloss12",
+      "line": 27,
+      "phrase": "’gainst nature",
+      "definition": "unnatural"
+    },
+    {
+      "id": "macbeth_act2_scene4_gloss13",
+      "line": 31,
+      "phrase": "Scone",
+      "definition": "the traditional site of Scottish coronations"
+    },
+    {
+      "id": "macbeth_act2_scene4_gloss14",
+      "line": 36,
+      "phrase": "Fife",
+      "definition": "a region of eastern Scotland; Macduff's home"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act2_scene4_ann1",
+      "line_start": 11,
+      "line_end": 22,
+      "citation_display": "Macbeth 2.4.11–22",
+      "category": "thematic",
+      "title": "Nature's inversions",
+      "body": "The scene outside Macbeth's castle catalogs a series of impossibilities. The sun has not risen though it is day. A falcon has been killed by a mouse-eating owl ('towering in her pride of place'). Duncan's horses have broken their stalls and eaten each other. None of these is decorative; each is the natural order registering, in its own dialect, that the king has been murdered.\n\nThe Tudor and Jacobean theory of correspondence — the doctrine that the political order mirrors the natural order, and that regicide disrupts both — is given its clearest poetic expression in this scene. The mousing owl killing the falcon is a picture of a tyrant killing a king; the horses eating each other is the state turning on itself; the darkness at noon is the sun's refusal to light a disordered world.\n\nShakespeare is not being superstitious here; he is showing us the vocabulary in which his audience would have processed political crisis. When, forty lines later, Ross tells us 'Adieu, / Lest our old robes sit easier than our new,' the clothing-image returns: the state is dressed in the wrong clothes, and until the right king is found, it will not fit.",
+      "sources": [
+        "E. M. W. Tillyard, *The Elizabethan World Picture* (1943)",
+        "Stephen Greenblatt, *Renaissance Self-Fashioning* (1980)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act2_scene4_q1",
+      "kind": "theme",
+      "prompt": "The portents Ross reports (sun dark at noon, falcon killed by an owl, Duncan's horses eating each other) function as:",
+      "options": [
+        "Weather anecdotes",
+        "The natural order's registration of regicide — correspondence theory put into stage imagery",
+        "Random incidents",
+        "Mythological references"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 11,
+      "anchor_line_end": 22
+    },
+    {
+      "id": "macbeth_act2_scene4_q2",
+      "kind": "comprehension",
+      "prompt": "Who is named as the new king?",
+      "options": [
+        "Macduff",
+        "Macbeth — he will be crowned at Scone",
+        "Malcolm",
+        "Banquo"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 30,
+      "anchor_line_end": 35
+    }
+  ]
+}

@@ -1,0 +1,664 @@
+{
+  "section_id": "henry_v_act3_scene5",
+  "work_id": "henry-v",
+  "sequence": 14,
+  "act": 3,
+  "scene": 5,
+  "kind": "scene",
+  "scene_title": "The same. Another room",
+  "line_count": 69,
+  "word_count": 519,
+  "est_read_minutes": 3,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "FRENCH KING",
+      "text": "’Tis certain he hath pass’d the river Somme."
+    },
+    {
+      "number": 2,
+      "speaker": "CONSTABLE",
+      "text": "And if he be not fought withal, my lord,"
+    },
+    {
+      "number": 3,
+      "speaker": "CONSTABLE",
+      "text": "Let us not live in France; let us quit all"
+    },
+    {
+      "number": 4,
+      "speaker": "CONSTABLE",
+      "text": "And give our vineyards to a barbarous people."
+    },
+    {
+      "number": 5,
+      "speaker": "DAUPHIN",
+      "text": "O Dieu vivant! shall a few sprays of us,"
+    },
+    {
+      "number": 6,
+      "speaker": "DAUPHIN",
+      "text": "The emptying of our fathers’ luxury,"
+    },
+    {
+      "number": 7,
+      "speaker": "DAUPHIN",
+      "text": "Our scions, put in wild and savage stock,"
+    },
+    {
+      "number": 8,
+      "speaker": "DAUPHIN",
+      "text": "Spirt up so suddenly into the clouds,"
+    },
+    {
+      "number": 9,
+      "speaker": "DAUPHIN",
+      "text": "And overlook their grafters?"
+    },
+    {
+      "number": 9,
+      "speaker": "BOURBON",
+      "text": "Normans, but bastard Normans, Norman bastards!"
+    },
+    {
+      "number": 10,
+      "speaker": "BOURBON",
+      "text": "Mort de ma vie! if they march along"
+    },
+    {
+      "number": 11,
+      "speaker": "BOURBON",
+      "text": "Unfought withal, but I will sell my dukedom,"
+    },
+    {
+      "number": 12,
+      "speaker": "BOURBON",
+      "text": "To buy a slobbery and a dirty farm"
+    },
+    {
+      "number": 13,
+      "speaker": "BOURBON",
+      "text": "In that nook-shotten isle of Albion."
+    },
+    {
+      "number": 14,
+      "speaker": "CONSTABLE",
+      "text": "Dieu de batailles! where have they this mettle?"
+    },
+    {
+      "number": 15,
+      "speaker": "CONSTABLE",
+      "text": "Is not their climate foggy, raw, and dull,"
+    },
+    {
+      "number": 16,
+      "speaker": "CONSTABLE",
+      "text": "On whom, as in despite, the sun looks pale,"
+    },
+    {
+      "number": 17,
+      "speaker": "CONSTABLE",
+      "text": "Killing their fruit with frowns? Can sodden water,"
+    },
+    {
+      "number": 18,
+      "speaker": "CONSTABLE",
+      "text": "A drench for sur-rein’d jades, their barley-broth,"
+    },
+    {
+      "number": 19,
+      "speaker": "CONSTABLE",
+      "text": "Decoct their cold blood to such valiant heat?"
+    },
+    {
+      "number": 20,
+      "speaker": "CONSTABLE",
+      "text": "And shall our quick blood, spirited with wine,"
+    },
+    {
+      "number": 21,
+      "speaker": "CONSTABLE",
+      "text": "Seem frosty? O, for honour of our land,"
+    },
+    {
+      "number": 22,
+      "speaker": "CONSTABLE",
+      "text": "Let us not hang like roping icicles"
+    },
+    {
+      "number": 23,
+      "speaker": "CONSTABLE",
+      "text": "Upon our houses’ thatch, whiles a more frosty people"
+    },
+    {
+      "number": 24,
+      "speaker": "CONSTABLE",
+      "text": "Sweat drops of gallant youth in our rich fields!"
+    },
+    {
+      "number": 25,
+      "speaker": "CONSTABLE",
+      "text": "Poor we may call them in their native lords."
+    },
+    {
+      "number": 26,
+      "speaker": "DAUPHIN",
+      "text": "By faith and honour,"
+    },
+    {
+      "number": 27,
+      "speaker": "DAUPHIN",
+      "text": "Our madams mock at us, and plainly say"
+    },
+    {
+      "number": 28,
+      "speaker": "DAUPHIN",
+      "text": "Our mettle is bred out and they will give"
+    },
+    {
+      "number": 29,
+      "speaker": "DAUPHIN",
+      "text": "Their bodies to the lust of English youth"
+    },
+    {
+      "number": 30,
+      "speaker": "DAUPHIN",
+      "text": "To new-store France with bastard warriors."
+    },
+    {
+      "number": 31,
+      "speaker": "BOURBON",
+      "text": "They bid us to the English dancing-schools,"
+    },
+    {
+      "number": 32,
+      "speaker": "BOURBON",
+      "text": "And teach lavoltas high and swift corantos;"
+    },
+    {
+      "number": 33,
+      "speaker": "BOURBON",
+      "text": "Saying our grace is only in our heels,"
+    },
+    {
+      "number": 34,
+      "speaker": "BOURBON",
+      "text": "And that we are most lofty runaways."
+    },
+    {
+      "number": 35,
+      "speaker": "FRENCH KING",
+      "text": "Where is Montjoy the herald? speed him hence:"
+    },
+    {
+      "number": 36,
+      "speaker": "FRENCH KING",
+      "text": "Let him greet England with our sharp defiance."
+    },
+    {
+      "number": 37,
+      "speaker": "FRENCH KING",
+      "text": "Up, princes! and, with spirit of honour edged"
+    },
+    {
+      "number": 38,
+      "speaker": "FRENCH KING",
+      "text": "More sharper than your swords, hie to the field:"
+    },
+    {
+      "number": 39,
+      "speaker": "FRENCH KING",
+      "text": "Charles Delabreth, high constable of France;"
+    },
+    {
+      "number": 40,
+      "speaker": "FRENCH KING",
+      "text": "You Dukes of Orleans, Bourbon, and of Berri,"
+    },
+    {
+      "number": 41,
+      "speaker": "FRENCH KING",
+      "text": "Alençon, Brabant, Bar, and Burgundy;"
+    },
+    {
+      "number": 42,
+      "speaker": "FRENCH KING",
+      "text": "Jacques Chatillon, Rambures, Vaudemont,"
+    },
+    {
+      "number": 43,
+      "speaker": "FRENCH KING",
+      "text": "Beaumont, Grandpré, Roussi, and Fauconbridge,"
+    },
+    {
+      "number": 44,
+      "speaker": "FRENCH KING",
+      "text": "Foix, Lestrale, Bouciqualt, and Charolois;"
+    },
+    {
+      "number": 45,
+      "speaker": "FRENCH KING",
+      "text": "High dukes, great princes, barons, lords and knights,"
+    },
+    {
+      "number": 46,
+      "speaker": "FRENCH KING",
+      "text": "For your great seats now quit you of great shames."
+    },
+    {
+      "number": 47,
+      "speaker": "FRENCH KING",
+      "text": "Bar Harry England, that sweeps through our land"
+    },
+    {
+      "number": 48,
+      "speaker": "FRENCH KING",
+      "text": "With pennons painted in the blood of Harfleur:"
+    },
+    {
+      "number": 49,
+      "speaker": "FRENCH KING",
+      "text": "Rush on his host, as doth the melted snow"
+    },
+    {
+      "number": 50,
+      "speaker": "FRENCH KING",
+      "text": "Upon the valleys, whose low vassal seat"
+    },
+    {
+      "number": 51,
+      "speaker": "FRENCH KING",
+      "text": "The Alps doth spit and void his rheum upon:"
+    },
+    {
+      "number": 52,
+      "speaker": "FRENCH KING",
+      "text": "Go down upon him, you have power enough,"
+    },
+    {
+      "number": 53,
+      "speaker": "FRENCH KING",
+      "text": "And in a captive chariot into Rouen"
+    },
+    {
+      "number": 54,
+      "speaker": "FRENCH KING",
+      "text": "Bring him our prisoner."
+    },
+    {
+      "number": 54,
+      "speaker": "CONSTABLE",
+      "text": "This becomes the great."
+    },
+    {
+      "number": 55,
+      "speaker": "CONSTABLE",
+      "text": "Sorry am I his numbers are so few,"
+    },
+    {
+      "number": 56,
+      "speaker": "CONSTABLE",
+      "text": "His soldiers sick and famish’d in their march,"
+    },
+    {
+      "number": 57,
+      "speaker": "CONSTABLE",
+      "text": "For I am sure, when he shall see our army,"
+    },
+    {
+      "number": 58,
+      "speaker": "CONSTABLE",
+      "text": "He’ll drop his heart into the sink of fear"
+    },
+    {
+      "number": 59,
+      "speaker": "CONSTABLE",
+      "text": "And for achievement offer us his ransom."
+    },
+    {
+      "number": 60,
+      "speaker": "FRENCH KING",
+      "text": "Therefore, lord constable, haste on Montjoy,"
+    },
+    {
+      "number": 61,
+      "speaker": "FRENCH KING",
+      "text": "And let him say to England that we send"
+    },
+    {
+      "number": 62,
+      "speaker": "FRENCH KING",
+      "text": "To know what willing ransom he will give."
+    },
+    {
+      "number": 63,
+      "speaker": "FRENCH KING",
+      "text": "Prince Dauphin, you shall stay with us in Rouen."
+    },
+    {
+      "number": 64,
+      "speaker": "DAUPHIN",
+      "text": "Not so, I do beseech your majesty."
+    },
+    {
+      "number": 65,
+      "speaker": "FRENCH KING",
+      "text": "Be patient, for you shall remain with us."
+    },
+    {
+      "number": 66,
+      "speaker": "FRENCH KING",
+      "text": "Now forth, lord constable and princes all,"
+    },
+    {
+      "number": 67,
+      "speaker": "FRENCH KING",
+      "text": "And quickly bring us word of England’s fall."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter the King of France, the Dauphin, the Duke of Bourbon, the Constable of France, and others."
+    },
+    {
+      "after_line": 67,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act3_scene5_gloss1",
+      "line": 1,
+      "phrase": "river Somme",
+      "definition": "the river Henry had to cross before turning north to Calais — historically a difficult crossing"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss2",
+      "line": 2,
+      "phrase": "fought withal",
+      "definition": "given battle against"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss3",
+      "line": 4,
+      "phrase": "barbarous people",
+      "definition": "barbaric people — the Constable's view of the English"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss4",
+      "line": 5,
+      "phrase": "O Dieu vivant",
+      "definition": "French: 'O living God' — exclamation of aristocratic dismay"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss5",
+      "line": 5,
+      "phrase": "sprays of us",
+      "definition": "offshoots of us — the French see the English as scions of their Norman stock"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss6",
+      "line": 6,
+      "phrase": "emptying of our fathers’ luxury",
+      "definition": "the dregs of our ancestors' lust — Dauphin's gross image"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss7",
+      "line": 7,
+      "phrase": "scions",
+      "definition": "young shoots grafted onto another stock"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss8",
+      "line": 7,
+      "phrase": "wild and savage stock",
+      "definition": "English soil as uncultivated root-stock — French Normans grafted onto it"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss9",
+      "line": 8,
+      "phrase": "Spirt up",
+      "definition": "sprout up; shoot up"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss10",
+      "line": 9,
+      "phrase": "overlook their grafters",
+      "definition": "stand taller than those who grafted them — the English outdo the Norman ancestors"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss11",
+      "line": 9,
+      "phrase": "Normans, but bastard Normans, Norman bastards",
+      "definition": "Bourbon's insult — Anglo-Normans as illegitimate descendants"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss12",
+      "line": 10,
+      "phrase": "Mort de ma vie",
+      "definition": "French: 'Death of my life' — strong oath"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss13",
+      "line": 12,
+      "phrase": "slobbery and a dirty farm",
+      "definition": "a muddy, filthy farm"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss14",
+      "line": 13,
+      "phrase": "nook-shotten isle of Albion",
+      "definition": "angular, crook-cornered island — 'Albion' is the classical name for Britain; 'nook-shotten' = having many corners or bays"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss15",
+      "line": 14,
+      "phrase": "Dieu de batailles",
+      "definition": "French: 'God of battles'"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss16",
+      "line": 14,
+      "phrase": "mettle",
+      "definition": "spirit; temperament — metallurgical metaphor"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss17",
+      "line": 15,
+      "phrase": "foggy, raw, and dull",
+      "definition": "damp, cold, and sluggish — stereotype of English climate"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss18",
+      "line": 17,
+      "phrase": "sodden water",
+      "definition": "boiled water — for making beer"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss19",
+      "line": 18,
+      "phrase": "drench for sur-rein’d jades",
+      "definition": "medicinal drink for over-worked horses — the Constable's contempt for English ale"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss20",
+      "line": 18,
+      "phrase": "barley-broth",
+      "definition": "beer — the thin barley beer of the English"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss21",
+      "line": 19,
+      "phrase": "Decoct their cold blood",
+      "definition": "boil up their cold blood into heat — cooking metaphor for the English paradox"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss22",
+      "line": 20,
+      "phrase": "spirited with wine",
+      "definition": "animated by wine — French aristocratic drink versus English beer"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss23",
+      "line": 22,
+      "phrase": "roping icicles",
+      "definition": "icicles hanging like ropes"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss24",
+      "line": 25,
+      "phrase": "Poor we may call them in their native lords",
+      "definition": "we may call the English poor in their own nobility — i.e., lacking the French refinement"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss25",
+      "line": 27,
+      "phrase": "madams",
+      "definition": "Frenchwomen — 'our ladies'"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss26",
+      "line": 28,
+      "phrase": "mettle is bred out",
+      "definition": "our valour has died out by over-breeding"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss27",
+      "line": 30,
+      "phrase": "new-store France with bastard warriors",
+      "definition": "repopulate France with the illegitimate children of English soldiers — Dauphin's humiliation fantasy"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss28",
+      "line": 31,
+      "phrase": "English dancing-schools",
+      "definition": "Dauphin reduces French war to training in English dance-halls"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss29",
+      "line": 32,
+      "phrase": "lavoltas",
+      "definition": "the lavolta — a fashionable 16th-century dance involving a high leap"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss30",
+      "line": 32,
+      "phrase": "corantos",
+      "definition": "the coranto — a quick court dance with running steps"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss31",
+      "line": 33,
+      "phrase": "grace is only in our heels",
+      "definition": "our grace lies only in running away"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss32",
+      "line": 34,
+      "phrase": "lofty runaways",
+      "definition": "high-class fugitives — self-flattering cowardice"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss33",
+      "line": 35,
+      "phrase": "Montjoy the herald",
+      "definition": "the French royal herald — titular name, not personal; he will be the French emissary to Henry"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss34",
+      "line": 39,
+      "phrase": "Charles Delabreth",
+      "definition": "Charles d'Albret — the historical Constable of France, killed at Agincourt"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss35",
+      "line": 42,
+      "phrase": "Rambures, Vaudemont",
+      "definition": "French nobles named in the historical record of Agincourt"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss36",
+      "line": 48,
+      "phrase": "pennons painted in the blood of Harfleur",
+      "definition": "banners dyed red with Harfleur's blood"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss37",
+      "line": 51,
+      "phrase": "void his rheum",
+      "definition": "spit his phlegm — the Alps spitting on the valleys below"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss38",
+      "line": 53,
+      "phrase": "captive chariot",
+      "definition": "a chariot transporting a prisoner — the French King imagines Henry led in triumph"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss39",
+      "line": 53,
+      "phrase": "Rouen",
+      "definition": "capital of Normandy — a French seat of power"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss40",
+      "line": 58,
+      "phrase": "sink of fear",
+      "definition": "the pit of his fear — 'sink' = drain, cesspool"
+    },
+    {
+      "id": "henry_v_act3_scene5_gloss41",
+      "line": 59,
+      "phrase": "for achievement offer us his ransom",
+      "definition": "in exchange for safe-passage, offer his ransom money — the French expect Henry to buy his way out"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act3_scene5_ann1",
+      "line_start": 5,
+      "line_end": 34,
+      "citation_display": "Henry V 3.5.5–34",
+      "category": "thematic",
+      "title": "The French self-diagnosis — Norman bastards and cold blood",
+      "body": "The Dauphin and Bourbon's speech about the English is one of the most politically revealing moments in the play. Their complaint is genealogical: the English are 'Normans, but bastard Normans, Norman bastards,' i.e. the French admit that the English invaders are descendants of their own Norman ancestors (via 1066), degraded by mixing with the 'wild and savage stock' of England. The Constable's speech that follows elaborates this into a climatic argument: how can a foggy, raw, cold country, living on beer ('sur-rein'd jades' drench), produce warriors hot enough to fight? The passage is doing work on two levels. Internally, it is French panic expressed as ethnic self-regard. Externally, Shakespeare is flattering his English audience: the French themselves admit that English valour is a mystery. The anxiety about mass rape ('our mettle is bred out, and they will give / Their bodies to the lust of English youth / To new-store France with bastard warriors') is especially striking: it inverts and acknowledges the Harfleur threat. The French fear what Henry just threatened.",
+      "sources": [
+        "Andrew Gurr (ed.), King Henry V (New Cambridge Shakespeare, 1992)",
+        "Willy Maley, Nation, State, and Empire in English Renaissance Literature (2003)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act3_scene5_q1",
+      "kind": "close_reading",
+      "prompt": "What does the Constable claim distinguishes the English at line 15 onwards?",
+      "options": [
+        "They have more men",
+        "That their cold, foggy climate and beer-fed diet should disqualify them as warriors — yet they fight hot and bravely, a paradox Constable finds shameful for France",
+        "Their cavalry is superior",
+        "They have better generals"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 14,
+      "anchor_line_end": 25
+    },
+    {
+      "id": "henry_v_act3_scene5_q2",
+      "kind": "theme",
+      "prompt": "What does the Dauphin fear at lines 27–30?",
+      "options": [
+        "A French retreat",
+        "That French women will give themselves to English soldiers and repopulate France with 'bastard warriors' — mass rape as ethnic replacement, the very threat Henry made at Harfleur",
+        "That the Dauphin will be captured",
+        "That the English army lacks bread"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 27,
+      "anchor_line_end": 30
+    }
+  ]
+}

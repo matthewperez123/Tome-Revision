@@ -1,0 +1,230 @@
+{
+  "section_id": "romeo_and_juliet_act2_chorus",
+  "work_id": "romeo-and-juliet",
+  "sequence": 7,
+  "act": null,
+  "scene": null,
+  "kind": "chorus",
+  "scene_title": "Chorus",
+  "line_count": 14,
+  "word_count": 113,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CHORUS",
+      "text": "Now old desire doth in his death-bed lie,"
+    },
+    {
+      "number": 2,
+      "speaker": "CHORUS",
+      "text": "And young affection gapes to be his heir;"
+    },
+    {
+      "number": 3,
+      "speaker": "CHORUS",
+      "text": "That fair for which love groan’d for and would die,"
+    },
+    {
+      "number": 4,
+      "speaker": "CHORUS",
+      "text": "With tender Juliet match’d, is now not fair."
+    },
+    {
+      "number": 5,
+      "speaker": "CHORUS",
+      "text": "Now Romeo is beloved and loves again,"
+    },
+    {
+      "number": 6,
+      "speaker": "CHORUS",
+      "text": "Alike betwitched by the charm of looks,"
+    },
+    {
+      "number": 7,
+      "speaker": "CHORUS",
+      "text": "But to his foe supposed he must complain,"
+    },
+    {
+      "number": 8,
+      "speaker": "CHORUS",
+      "text": "And she steal love’s sweet bait from fearful hooks:"
+    },
+    {
+      "number": 9,
+      "speaker": "CHORUS",
+      "text": "Being held a foe, he may not have access"
+    },
+    {
+      "number": 10,
+      "speaker": "CHORUS",
+      "text": "To breathe such vows as lovers use to swear;"
+    },
+    {
+      "number": 11,
+      "speaker": "CHORUS",
+      "text": "And she as much in love, her means much less"
+    },
+    {
+      "number": 12,
+      "speaker": "CHORUS",
+      "text": "To meet her new-beloved any where:"
+    },
+    {
+      "number": 13,
+      "speaker": "CHORUS",
+      "text": "But passion lends them power, time means, to meet,"
+    },
+    {
+      "number": 14,
+      "speaker": "CHORUS",
+      "text": "Tempering extremities with extreme sweet."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Chorus."
+    },
+    {
+      "after_line": 0,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act2_chorus_gloss1",
+      "line": 1,
+      "phrase": "old desire doth in his death-bed lie",
+      "definition": "Romeo's old love for Rosaline is dying"
+    },
+    {
+      "id": "romeo_and_juliet_act2_chorus_gloss2",
+      "line": 2,
+      "phrase": "gapes to be his heir",
+      "definition": "young love eagerly waits to inherit — desire for Juliet succeeds desire for Rosaline"
+    },
+    {
+      "id": "romeo_and_juliet_act2_chorus_gloss3",
+      "line": 3,
+      "phrase": "That fair for which love groan’d",
+      "definition": "Rosaline, for whom Romeo sighed"
+    },
+    {
+      "id": "romeo_and_juliet_act2_chorus_gloss4",
+      "line": 5,
+      "phrase": "loves again",
+      "definition": "loves and is loved in return — this distinguishes Juliet from Rosaline"
+    },
+    {
+      "id": "romeo_and_juliet_act2_chorus_gloss5",
+      "line": 6,
+      "phrase": "Alike betwitched",
+      "definition": "equally bewitched; both hearts charmed"
+    },
+    {
+      "id": "romeo_and_juliet_act2_chorus_gloss6",
+      "line": 6,
+      "phrase": "charm of looks",
+      "definition": "the spell cast by mutual seeing"
+    },
+    {
+      "id": "romeo_and_juliet_act2_chorus_gloss7",
+      "line": 7,
+      "phrase": "foe supposed",
+      "definition": "supposed enemy — Juliet is a Capulet, Romeo's sworn enemy"
+    },
+    {
+      "id": "romeo_and_juliet_act2_chorus_gloss8",
+      "line": 7,
+      "phrase": "complain",
+      "definition": "speak his love-sorrow; plead as a courtly lover"
+    },
+    {
+      "id": "romeo_and_juliet_act2_chorus_gloss9",
+      "line": 8,
+      "phrase": "steal love’s sweet bait from fearful hooks",
+      "definition": "take the sweet lure of love from the dangerous trap it hangs on"
+    },
+    {
+      "id": "romeo_and_juliet_act2_chorus_gloss10",
+      "line": 11,
+      "phrase": "her means much less",
+      "definition": "she has even fewer opportunities than he does"
+    },
+    {
+      "id": "romeo_and_juliet_act2_chorus_gloss11",
+      "line": 13,
+      "phrase": "passion lends them power",
+      "definition": "love gives them strength to risk"
+    },
+    {
+      "id": "romeo_and_juliet_act2_chorus_gloss12",
+      "line": 14,
+      "phrase": "Tempering extremities with extreme sweet",
+      "definition": "balancing extreme hardship with extreme sweetness — the sonnet's closing paradox"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act2_chorus_ann1",
+      "line_start": 1,
+      "line_end": 14,
+      "citation_display": "Romeo and Juliet Act II Chorus.1–14",
+      "category": "structural",
+      "title": "A second sonnet — the play's triptych",
+      "body": "The Act II chorus is Shakespeare's second sonnet in the play, again spoken by CHORUS and again using the English form. Its function is narrative bridging — Rosaline is eclipsed by Juliet, Romeo's affection is reciprocated, and the obstacles are reframed. But the formal choice is not decorative: between the opening prologue-sonnet and the shared sonnet of 1.5, the Chorus's second intervention completes a triptych of sonnets punctuating the play's first half. After this, the sonnets stop — the poem gives way to the calamity. Some editors (including the 1623 Folio) omit this chorus, suggesting it may have been optional in early performances. The Quarto history makes it an editorial crux; modern editions generally retain it.",
+      "sources": [
+        "Jill L. Levenson, The Oxford Shakespeare: Romeo and Juliet (2000)",
+        "G. Blakemore Evans, The New Cambridge Shakespeare: Romeo and Juliet (1984)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act2_chorus_q1",
+      "kind": "structural",
+      "prompt": "What formal feature does the Act II chorus share with the Prologue?",
+      "options": [
+        "Both are in prose",
+        "Both are fourteen-line sonnets spoken by CHORUS",
+        "Both quote directly from Ovid",
+        "Both are shouted offstage"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 1,
+      "anchor_line_end": 14
+    },
+    {
+      "id": "romeo_and_juliet_act2_chorus_q2",
+      "kind": "comprehension",
+      "prompt": "Whose 'old desire' lies 'in his death-bed' according to the Chorus?",
+      "options": [
+        "Tybalt's desire for revenge",
+        "Romeo's previous love for Rosaline",
+        "The Friar's hope for peace",
+        "Mercutio's love of wit"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 1,
+      "anchor_line_end": 3
+    },
+    {
+      "id": "romeo_and_juliet_act2_chorus_q3",
+      "kind": "theme",
+      "prompt": "What does the chorus establish as distinctive about the new love (with Juliet) vs. the old one (with Rosaline)?",
+      "options": [
+        "The new one is with a wealthier woman",
+        "This time Romeo 'loves again' — the love is mutual, not unrequited",
+        "It is now sanctioned by both families",
+        "It is a platonic rather than romantic attachment"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 5,
+      "anchor_line_end": 6
+    }
+  ]
+}

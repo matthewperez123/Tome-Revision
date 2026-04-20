@@ -1,0 +1,1288 @@
+{
+  "section_id": "macbeth_act1_scene3",
+  "work_id": "macbeth",
+  "sequence": 3,
+  "act": 1,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "A heath near Forres",
+  "line_count": 168,
+  "word_count": 1146,
+  "est_read_minutes": 6,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "FIRST WITCH",
+      "text": "Where hast thou been, sister?"
+    },
+    {
+      "number": 1,
+      "speaker": "SECOND WITCH",
+      "text": "Killing swine."
+    },
+    {
+      "number": 2,
+      "speaker": "THIRD WITCH",
+      "text": "Sister, where thou?"
+    },
+    {
+      "number": 3,
+      "speaker": "FIRST WITCH",
+      "text": "A sailor’s wife had chestnuts in her lap,"
+    },
+    {
+      "number": 4,
+      "speaker": "FIRST WITCH",
+      "text": "And munch’d, and munch’d, and munch’d:—“Give me,” quoth I:"
+    },
+    {
+      "number": 5,
+      "speaker": "FIRST WITCH",
+      "text": "“Aroint thee, witch!” the rump-fed ronyon cries."
+    },
+    {
+      "number": 6,
+      "speaker": "FIRST WITCH",
+      "text": "Her husband’s to Aleppo gone, master o’ the Tiger:"
+    },
+    {
+      "number": 7,
+      "speaker": "FIRST WITCH",
+      "text": "But in a sieve I’ll thither sail,"
+    },
+    {
+      "number": 8,
+      "speaker": "FIRST WITCH",
+      "text": "And, like a rat without a tail,"
+    },
+    {
+      "number": 9,
+      "speaker": "FIRST WITCH",
+      "text": "I’ll do, I’ll do, and I’ll do."
+    },
+    {
+      "number": 10,
+      "speaker": "SECOND WITCH",
+      "text": "I’ll give thee a wind."
+    },
+    {
+      "number": 10,
+      "speaker": "FIRST WITCH",
+      "text": "Thou’rt kind."
+    },
+    {
+      "number": 11,
+      "speaker": "THIRD WITCH",
+      "text": "And I another."
+    },
+    {
+      "number": 11,
+      "speaker": "FIRST WITCH",
+      "text": "I myself have all the other,"
+    },
+    {
+      "number": 12,
+      "speaker": "FIRST WITCH",
+      "text": "And the very ports they blow,"
+    },
+    {
+      "number": 13,
+      "speaker": "FIRST WITCH",
+      "text": "All the quarters that they know"
+    },
+    {
+      "number": 14,
+      "speaker": "FIRST WITCH",
+      "text": "I’ the shipman’s card."
+    },
+    {
+      "number": 15,
+      "speaker": "FIRST WITCH",
+      "text": "I will drain him dry as hay:"
+    },
+    {
+      "number": 16,
+      "speaker": "FIRST WITCH",
+      "text": "Sleep shall neither night nor day"
+    },
+    {
+      "number": 17,
+      "speaker": "FIRST WITCH",
+      "text": "Hang upon his pent-house lid;"
+    },
+    {
+      "number": 18,
+      "speaker": "FIRST WITCH",
+      "text": "He shall live a man forbid:"
+    },
+    {
+      "number": 19,
+      "speaker": "FIRST WITCH",
+      "text": "Weary sennights nine times nine"
+    },
+    {
+      "number": 20,
+      "speaker": "FIRST WITCH",
+      "text": "Shall he dwindle, peak and pine:"
+    },
+    {
+      "number": 21,
+      "speaker": "FIRST WITCH",
+      "text": "Though his bark cannot be lost,"
+    },
+    {
+      "number": 22,
+      "speaker": "FIRST WITCH",
+      "text": "Yet it shall be tempest-tost."
+    },
+    {
+      "number": 23,
+      "speaker": "FIRST WITCH",
+      "text": "Look what I have."
+    },
+    {
+      "number": 23,
+      "speaker": "SECOND WITCH",
+      "text": "Show me, show me."
+    },
+    {
+      "number": 24,
+      "speaker": "FIRST WITCH",
+      "text": "Here I have a pilot’s thumb,"
+    },
+    {
+      "number": 25,
+      "speaker": "FIRST WITCH",
+      "text": "Wreck’d as homeward he did come."
+    },
+    {
+      "number": 25,
+      "speaker": "THIRD WITCH",
+      "text": "A drum, a drum!"
+    },
+    {
+      "number": 26,
+      "speaker": "THIRD WITCH",
+      "text": "Macbeth doth come."
+    },
+    {
+      "number": 26,
+      "speaker": "ALL",
+      "text": "The weird sisters, hand in hand,"
+    },
+    {
+      "number": 27,
+      "speaker": "ALL",
+      "text": "Posters of the sea and land,"
+    },
+    {
+      "number": 28,
+      "speaker": "ALL",
+      "text": "Thus do go about, about:"
+    },
+    {
+      "number": 29,
+      "speaker": "ALL",
+      "text": "Thrice to thine and thrice to mine"
+    },
+    {
+      "number": 30,
+      "speaker": "ALL",
+      "text": "And thrice again, to make up nine."
+    },
+    {
+      "number": 31,
+      "speaker": "ALL",
+      "text": "Peace! the charm’s wound up."
+    },
+    {
+      "number": 32,
+      "speaker": "MACBETH",
+      "text": "So foul and fair a day I have not seen."
+    },
+    {
+      "number": 33,
+      "speaker": "BANQUO",
+      "text": "How far is’t call’d to Forres? What are these"
+    },
+    {
+      "number": 34,
+      "speaker": "BANQUO",
+      "text": "So wither’d and so wild in their attire,"
+    },
+    {
+      "number": 35,
+      "speaker": "BANQUO",
+      "text": "That look not like the inhabitants o’ the earth,"
+    },
+    {
+      "number": 36,
+      "speaker": "BANQUO",
+      "text": "And yet are on’t? Live you? or are you aught"
+    },
+    {
+      "number": 37,
+      "speaker": "BANQUO",
+      "text": "That man may question? You seem to understand me,"
+    },
+    {
+      "number": 38,
+      "speaker": "BANQUO",
+      "text": "By each at once her choppy finger laying"
+    },
+    {
+      "number": 39,
+      "speaker": "BANQUO",
+      "text": "Upon her skinny lips: you should be women,"
+    },
+    {
+      "number": 40,
+      "speaker": "BANQUO",
+      "text": "And yet your beards forbid me to interpret"
+    },
+    {
+      "number": 41,
+      "speaker": "BANQUO",
+      "text": "That you are so."
+    },
+    {
+      "number": 42,
+      "speaker": "MACBETH",
+      "text": "Speak, if you can: what are you?"
+    },
+    {
+      "number": 43,
+      "speaker": "FIRST WITCH",
+      "text": "All hail, Macbeth! hail to thee, thane of Glamis!"
+    },
+    {
+      "number": 44,
+      "speaker": "SECOND WITCH",
+      "text": "All hail, Macbeth, hail to thee, thane of Cawdor!"
+    },
+    {
+      "number": 45,
+      "speaker": "THIRD WITCH",
+      "text": "All hail, Macbeth, thou shalt be king hereafter!"
+    },
+    {
+      "number": 46,
+      "speaker": "BANQUO",
+      "text": "Good sir, why do you start; and seem to fear"
+    },
+    {
+      "number": 47,
+      "speaker": "BANQUO",
+      "text": "Things that do sound so fair? I’ the name of truth,"
+    },
+    {
+      "number": 48,
+      "speaker": "BANQUO",
+      "text": "Are ye fantastical, or that indeed"
+    },
+    {
+      "number": 49,
+      "speaker": "BANQUO",
+      "text": "Which outwardly ye show? My noble partner"
+    },
+    {
+      "number": 50,
+      "speaker": "BANQUO",
+      "text": "You greet with present grace and great prediction"
+    },
+    {
+      "number": 51,
+      "speaker": "BANQUO",
+      "text": "Of noble having and of royal hope,"
+    },
+    {
+      "number": 52,
+      "speaker": "BANQUO",
+      "text": "That he seems rapt withal: to me you speak not."
+    },
+    {
+      "number": 53,
+      "speaker": "BANQUO",
+      "text": "If you can look into the seeds of time,"
+    },
+    {
+      "number": 54,
+      "speaker": "BANQUO",
+      "text": "And say which grain will grow and which will not,"
+    },
+    {
+      "number": 55,
+      "speaker": "BANQUO",
+      "text": "Speak then to me, who neither beg nor fear"
+    },
+    {
+      "number": 56,
+      "speaker": "BANQUO",
+      "text": "Your favours nor your hate."
+    },
+    {
+      "number": 56,
+      "speaker": "FIRST WITCH",
+      "text": "Hail!"
+    },
+    {
+      "number": 57,
+      "speaker": "SECOND WITCH",
+      "text": "Hail!"
+    },
+    {
+      "number": 57,
+      "speaker": "THIRD WITCH",
+      "text": "Hail!"
+    },
+    {
+      "number": 58,
+      "speaker": "FIRST WITCH",
+      "text": "Lesser than Macbeth, and greater."
+    },
+    {
+      "number": 58,
+      "speaker": "SECOND WITCH",
+      "text": "Not so happy, yet much happier."
+    },
+    {
+      "number": 59,
+      "speaker": "THIRD WITCH",
+      "text": "Thou shalt get kings, though thou be none:"
+    },
+    {
+      "number": 60,
+      "speaker": "THIRD WITCH",
+      "text": "So all hail, Macbeth and Banquo!"
+    },
+    {
+      "number": 60,
+      "speaker": "FIRST WITCH",
+      "text": "Banquo and Macbeth, all hail!"
+    },
+    {
+      "number": 61,
+      "speaker": "MACBETH",
+      "text": "Stay, you imperfect speakers, tell me more:"
+    },
+    {
+      "number": 62,
+      "speaker": "MACBETH",
+      "text": "By Sinel’s death I know I am thane of Glamis;"
+    },
+    {
+      "number": 63,
+      "speaker": "MACBETH",
+      "text": "But how of Cawdor? the thane of Cawdor lives,"
+    },
+    {
+      "number": 64,
+      "speaker": "MACBETH",
+      "text": "A prosperous gentleman; and to be king"
+    },
+    {
+      "number": 65,
+      "speaker": "MACBETH",
+      "text": "Stands not within the prospect of belief,"
+    },
+    {
+      "number": 66,
+      "speaker": "MACBETH",
+      "text": "No more than to be Cawdor. Say from whence"
+    },
+    {
+      "number": 67,
+      "speaker": "MACBETH",
+      "text": "You owe this strange intelligence? or why"
+    },
+    {
+      "number": 68,
+      "speaker": "MACBETH",
+      "text": "Upon this blasted heath you stop our way"
+    },
+    {
+      "number": 69,
+      "speaker": "MACBETH",
+      "text": "With such prophetic greeting? Speak, I charge you. Witches vanish."
+    },
+    {
+      "number": 70,
+      "speaker": "BANQUO",
+      "text": "The earth hath bubbles, as the water has,"
+    },
+    {
+      "number": 71,
+      "speaker": "BANQUO",
+      "text": "And these are of them. Whither are they vanish’d?"
+    },
+    {
+      "number": 72,
+      "speaker": "MACBETH",
+      "text": "Into the air; and what seem’d corporal melted"
+    },
+    {
+      "number": 73,
+      "speaker": "MACBETH",
+      "text": "As breath into the wind. Would they had stay’d!"
+    },
+    {
+      "number": 74,
+      "speaker": "BANQUO",
+      "text": "Were such things here as we do speak about?"
+    },
+    {
+      "number": 75,
+      "speaker": "BANQUO",
+      "text": "Or have we eaten on the insane root"
+    },
+    {
+      "number": 76,
+      "speaker": "BANQUO",
+      "text": "That takes the reason prisoner?"
+    },
+    {
+      "number": 76,
+      "speaker": "MACBETH",
+      "text": "Your children shall be kings."
+    },
+    {
+      "number": 77,
+      "speaker": "BANQUO",
+      "text": "You shall be king."
+    },
+    {
+      "number": 78,
+      "speaker": "MACBETH",
+      "text": "And thane of Cawdor too: went it not so?"
+    },
+    {
+      "number": 79,
+      "speaker": "BANQUO",
+      "text": "To the selfsame tune and words. Who’s here?"
+    },
+    {
+      "number": 80,
+      "speaker": "ROSS",
+      "text": "The king hath happily received, Macbeth,"
+    },
+    {
+      "number": 81,
+      "speaker": "ROSS",
+      "text": "The news of thy success; and when he reads"
+    },
+    {
+      "number": 82,
+      "speaker": "ROSS",
+      "text": "Thy personal venture in the rebels’ fight,"
+    },
+    {
+      "number": 83,
+      "speaker": "ROSS",
+      "text": "His wonders and his praises do contend"
+    },
+    {
+      "number": 84,
+      "speaker": "ROSS",
+      "text": "Which should be thine or his: silenced with that,"
+    },
+    {
+      "number": 85,
+      "speaker": "ROSS",
+      "text": "In viewing o’er the rest o’ the selfsame day,"
+    },
+    {
+      "number": 86,
+      "speaker": "ROSS",
+      "text": "He finds thee in the stout Norweyan ranks,"
+    },
+    {
+      "number": 87,
+      "speaker": "ROSS",
+      "text": "Nothing afeard of what thyself didst make,"
+    },
+    {
+      "number": 88,
+      "speaker": "ROSS",
+      "text": "Strange images of death. As thick as hail"
+    },
+    {
+      "number": 89,
+      "speaker": "ROSS",
+      "text": "Came post with post; and every one did bear"
+    },
+    {
+      "number": 90,
+      "speaker": "ROSS",
+      "text": "Thy praises in his kingdom’s great defence,"
+    },
+    {
+      "number": 91,
+      "speaker": "ROSS",
+      "text": "And pour’d them down before him."
+    },
+    {
+      "number": 91,
+      "speaker": "ANGUS",
+      "text": "We are sent"
+    },
+    {
+      "number": 92,
+      "speaker": "ANGUS",
+      "text": "To give thee from our royal master thanks;"
+    },
+    {
+      "number": 93,
+      "speaker": "ANGUS",
+      "text": "Only to herald thee into his sight,"
+    },
+    {
+      "number": 94,
+      "speaker": "ANGUS",
+      "text": "Not pay thee."
+    },
+    {
+      "number": 95,
+      "speaker": "ROSS",
+      "text": "And, for an earnest of a greater honour,"
+    },
+    {
+      "number": 96,
+      "speaker": "ROSS",
+      "text": "He bade me, from him, call thee thane of Cawdor:"
+    },
+    {
+      "number": 97,
+      "speaker": "ROSS",
+      "text": "In which addition, hail, most worthy thane!"
+    },
+    {
+      "number": 98,
+      "speaker": "ROSS",
+      "text": "For it is thine."
+    },
+    {
+      "number": 98,
+      "speaker": "BANQUO",
+      "text": "What, can the devil speak true?"
+    },
+    {
+      "number": 99,
+      "speaker": "MACBETH",
+      "text": "The thane of Cawdor lives: why do you dress me"
+    },
+    {
+      "number": 100,
+      "speaker": "MACBETH",
+      "text": "In borrow’d robes?"
+    },
+    {
+      "number": 100,
+      "speaker": "ANGUS",
+      "text": "Who was the thane lives yet;"
+    },
+    {
+      "number": 101,
+      "speaker": "ANGUS",
+      "text": "But under heavy judgment bears that life"
+    },
+    {
+      "number": 102,
+      "speaker": "ANGUS",
+      "text": "Which he deserves to lose. Whether he was combined"
+    },
+    {
+      "number": 103,
+      "speaker": "ANGUS",
+      "text": "With those of Norway, or did line the rebel"
+    },
+    {
+      "number": 104,
+      "speaker": "ANGUS",
+      "text": "With hidden help and vantage, or that with both"
+    },
+    {
+      "number": 105,
+      "speaker": "ANGUS",
+      "text": "He labour’d in his country’s wreck, I know not;"
+    },
+    {
+      "number": 106,
+      "speaker": "ANGUS",
+      "text": "But treasons capital, confess’d and proved,"
+    },
+    {
+      "number": 107,
+      "speaker": "ANGUS",
+      "text": "Have overthrown him."
+    },
+    {
+      "number": 107,
+      "speaker": "MACBETH",
+      "text": "Glamis, and thane of Cawdor!"
+    },
+    {
+      "number": 108,
+      "speaker": "MACBETH",
+      "text": "The greatest is behind. To Ross and Angus. Thanks for your pains."
+    },
+    {
+      "number": 109,
+      "speaker": "MACBETH",
+      "text": "To Banquo. Do you not hope your children shall be kings,"
+    },
+    {
+      "number": 110,
+      "speaker": "MACBETH",
+      "text": "When those that gave the thane of Cawdor to me"
+    },
+    {
+      "number": 111,
+      "speaker": "MACBETH",
+      "text": "Promised no less to them?"
+    },
+    {
+      "number": 111,
+      "speaker": "BANQUO",
+      "text": "That trusted home"
+    },
+    {
+      "number": 112,
+      "speaker": "BANQUO",
+      "text": "Might yet enkindle you unto the crown,"
+    },
+    {
+      "number": 113,
+      "speaker": "BANQUO",
+      "text": "Besides the thane of Cawdor. But ’tis strange:"
+    },
+    {
+      "number": 114,
+      "speaker": "BANQUO",
+      "text": "And oftentimes, to win us to our harm,"
+    },
+    {
+      "number": 115,
+      "speaker": "BANQUO",
+      "text": "The instruments of darkness tell us truths,"
+    },
+    {
+      "number": 116,
+      "speaker": "BANQUO",
+      "text": "Win us with honest trifles, to betray’s"
+    },
+    {
+      "number": 117,
+      "speaker": "BANQUO",
+      "text": "In deepest consequence."
+    },
+    {
+      "number": 118,
+      "speaker": "BANQUO",
+      "text": "Cousins, a word, I pray you."
+    },
+    {
+      "number": 118,
+      "speaker": "MACBETH",
+      "text": "Two truths are told,"
+    },
+    {
+      "number": 119,
+      "speaker": "MACBETH",
+      "text": "As happy prologues to the swelling act"
+    },
+    {
+      "number": 120,
+      "speaker": "MACBETH",
+      "text": "Of the imperial theme.—I thank you, gentlemen."
+    },
+    {
+      "number": 121,
+      "speaker": "MACBETH",
+      "text": "This supernatural soliciting"
+    },
+    {
+      "number": 122,
+      "speaker": "MACBETH",
+      "text": "Cannot be ill, cannot be good: if ill,"
+    },
+    {
+      "number": 123,
+      "speaker": "MACBETH",
+      "text": "Why hath it given me earnest of success,"
+    },
+    {
+      "number": 124,
+      "speaker": "MACBETH",
+      "text": "Commencing in a truth? I am thane of Cawdor:"
+    },
+    {
+      "number": 125,
+      "speaker": "MACBETH",
+      "text": "If good, why do I yield to that suggestion"
+    },
+    {
+      "number": 126,
+      "speaker": "MACBETH",
+      "text": "Whose horrid image doth unfix my hair"
+    },
+    {
+      "number": 127,
+      "speaker": "MACBETH",
+      "text": "And make my seated heart knock at my ribs,"
+    },
+    {
+      "number": 128,
+      "speaker": "MACBETH",
+      "text": "Against the use of nature? Present fears"
+    },
+    {
+      "number": 129,
+      "speaker": "MACBETH",
+      "text": "Are less than horrible imaginings:"
+    },
+    {
+      "number": 130,
+      "speaker": "MACBETH",
+      "text": "My thought, whose murder yet is but fantastical,"
+    },
+    {
+      "number": 131,
+      "speaker": "MACBETH",
+      "text": "Shakes so my single state of man that function"
+    },
+    {
+      "number": 132,
+      "speaker": "MACBETH",
+      "text": "Is smother’d in surmise, and nothing is"
+    },
+    {
+      "number": 133,
+      "speaker": "MACBETH",
+      "text": "But what is not."
+    },
+    {
+      "number": 133,
+      "speaker": "BANQUO",
+      "text": "Look, how our partner’s rapt."
+    },
+    {
+      "number": 134,
+      "speaker": "MACBETH",
+      "text": "If chance will have me king, why, chance may crown me,"
+    },
+    {
+      "number": 135,
+      "speaker": "MACBETH",
+      "text": "Without my stir."
+    },
+    {
+      "number": 135,
+      "speaker": "BANQUO",
+      "text": "New honours come upon him,"
+    },
+    {
+      "number": 136,
+      "speaker": "BANQUO",
+      "text": "Like our strange garments, cleave not to their mould"
+    },
+    {
+      "number": 137,
+      "speaker": "BANQUO",
+      "text": "But with the aid of use."
+    },
+    {
+      "number": 137,
+      "speaker": "MACBETH",
+      "text": "Come what come may,"
+    },
+    {
+      "number": 138,
+      "speaker": "MACBETH",
+      "text": "Time and the hour runs through the roughest day."
+    },
+    {
+      "number": 139,
+      "speaker": "BANQUO",
+      "text": "Worthy Macbeth, we stay upon your leisure."
+    },
+    {
+      "number": 140,
+      "speaker": "MACBETH",
+      "text": "Give me your favour: my dull brain was wrought"
+    },
+    {
+      "number": 141,
+      "speaker": "MACBETH",
+      "text": "With things forgotten. Kind gentlemen, your pains"
+    },
+    {
+      "number": 142,
+      "speaker": "MACBETH",
+      "text": "Are register’d where every day I turn"
+    },
+    {
+      "number": 143,
+      "speaker": "MACBETH",
+      "text": "The leaf to read them. Let us toward the king."
+    },
+    {
+      "number": 144,
+      "speaker": "MACBETH",
+      "text": "Think upon what hath chanced, and, at more time,"
+    },
+    {
+      "number": 145,
+      "speaker": "MACBETH",
+      "text": "The interim having weigh’d it, let us speak"
+    },
+    {
+      "number": 146,
+      "speaker": "MACBETH",
+      "text": "Our free hearts each to other."
+    },
+    {
+      "number": 146,
+      "speaker": "BANQUO",
+      "text": "Very gladly."
+    },
+    {
+      "number": 147,
+      "speaker": "MACBETH",
+      "text": "Till then, enough. Come, friends."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Thunder. Enter the three Witches."
+    },
+    {
+      "after_line": 25,
+      "text": "Drum within."
+    },
+    {
+      "after_line": 31,
+      "text": "Enter Macbeth and Banquo."
+    },
+    {
+      "after_line": 79,
+      "text": "Enter Ross and Angus."
+    },
+    {
+      "after_line": 107,
+      "text": "Aside."
+    },
+    {
+      "after_line": 118,
+      "text": "Aside."
+    },
+    {
+      "after_line": 121,
+      "text": "Aside."
+    },
+    {
+      "after_line": 134,
+      "text": "Aside."
+    },
+    {
+      "after_line": 137,
+      "text": "Aside."
+    },
+    {
+      "after_line": 147,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act1_scene3_gloss1",
+      "line": 1,
+      "phrase": "Killing swine",
+      "definition": "witches were traditionally believed to curse livestock"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss2",
+      "line": 5,
+      "phrase": "Aroint thee, witch",
+      "definition": "be gone; away with you — dialectal curse"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss3",
+      "line": 5,
+      "phrase": "rump-fed ronyon",
+      "definition": "fat-arsed scabby creature — Elizabethan insult for a low woman"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss4",
+      "line": 6,
+      "phrase": "Aleppo",
+      "definition": "a Syrian city; a major trading post on the silk road"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss5",
+      "line": 6,
+      "phrase": "Tiger",
+      "definition": "name of a real Elizabethan merchant ship"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss6",
+      "line": 7,
+      "phrase": "sieve",
+      "definition": "witches were proverbially said to sail in sieves"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss7",
+      "line": 8,
+      "phrase": "rat without a tail",
+      "definition": "another traditional witch-transformation"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss8",
+      "line": 12,
+      "phrase": "blow",
+      "definition": "strike; afflict"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss9",
+      "line": 24,
+      "phrase": "pilot’s thumb",
+      "definition": "a witch's charm ingredient — body parts of the drowned were thought to carry magical power"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss10",
+      "line": 25,
+      "phrase": "wreck’d",
+      "definition": "shipwrecked"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss11",
+      "line": 25,
+      "phrase": "A drum",
+      "definition": "offstage sound announcing Macbeth's approach"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss12",
+      "line": 26,
+      "phrase": "weird sisters",
+      "definition": "from Old English 'wyrd,' meaning fate — NOT the modern sense of 'strange'; these are the Fates, agents of destiny"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss13",
+      "line": 26,
+      "phrase": "Weird",
+      "definition": "from Old English 'wyrd,' meaning fate or destiny; NOT the modern sense of 'odd'"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss14",
+      "line": 27,
+      "phrase": "Posters of the sea and land",
+      "definition": "swift travelers by sea and land"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss15",
+      "line": 32,
+      "phrase": "So foul and fair a day",
+      "definition": "an echo of the Witches' paradox from 1.1 — Macbeth speaks their language unawares"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss16",
+      "line": 33,
+      "phrase": "Forres",
+      "definition": "a town in northeastern Scotland; Duncan's court"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss17",
+      "line": 38,
+      "phrase": "choppy",
+      "definition": "chapped; weather-beaten"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss18",
+      "line": 40,
+      "phrase": "beards",
+      "definition": "the witches have beards — the common early-modern image of the witch's ambiguous sex"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss19",
+      "line": 45,
+      "phrase": "shalt be King hereafter",
+      "definition": "the Third Witch's prophecy that sets the tragedy in motion"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss20",
+      "line": 46,
+      "phrase": "start",
+      "definition": "flinch; react with shock"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss21",
+      "line": 46,
+      "phrase": "fear",
+      "definition": "startling fear — Banquo notes Macbeth's guilty-looking reaction"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss22",
+      "line": 52,
+      "phrase": "rapt withal",
+      "definition": "absorbed, captivated by it"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss23",
+      "line": 53,
+      "phrase": "seeds of time",
+      "definition": "the future events still hidden"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss24",
+      "line": 72,
+      "phrase": "corporal",
+      "definition": "bodily; having physical form"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss25",
+      "line": 75,
+      "phrase": "insane root",
+      "definition": "henbane or hemlock — a plant said to cause madness if eaten"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss27",
+      "line": 62,
+      "phrase": "Thane of Glamis",
+      "definition": "Macbeth's hereditary title; a Highland estate"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss28",
+      "line": 62,
+      "phrase": "Sinel",
+      "definition": "Macbeth's father"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss29",
+      "line": 67,
+      "phrase": "owe",
+      "definition": "own; possess"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss30",
+      "line": 67,
+      "phrase": "this strange intelligence",
+      "definition": "this supernatural information"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss31",
+      "line": 68,
+      "phrase": "blasted heath",
+      "definition": "barren, struck moor — the witches' natural habitat"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss32",
+      "line": 75,
+      "phrase": "insane root",
+      "definition": "plant that causes madness; hemlock or henbane"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss33",
+      "line": 95,
+      "phrase": "earnest",
+      "definition": "down payment; pledge of future payment"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss34",
+      "line": 89,
+      "phrase": "post with post",
+      "definition": "messenger upon messenger"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss35",
+      "line": 103,
+      "phrase": "line",
+      "definition": "reinforce; support"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss36",
+      "line": 84,
+      "phrase": "Silenced",
+      "definition": "have been cut off by his death"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss37",
+      "line": 100,
+      "phrase": "borrow’d robes",
+      "definition": "clothes that do not belong to you — a key metaphor in the play for usurped titles"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss38",
+      "line": 118,
+      "phrase": "Cousins",
+      "definition": "a common term for any kinsman"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss39",
+      "line": 123,
+      "phrase": "earnest of success",
+      "definition": "proof of the prophecy's partial fulfillment"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss41",
+      "line": 126,
+      "phrase": "horrid image",
+      "definition": "horrifying mental picture — of murder"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss42",
+      "line": 127,
+      "phrase": "seated heart knock at my ribs",
+      "definition": "his heart pounds against his ribcage — the physical manifestation of guilty imagining"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss43",
+      "line": 131,
+      "phrase": "single state of man",
+      "definition": "unified being; integrated self"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss44",
+      "line": 131,
+      "phrase": "function",
+      "definition": "normal operation"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss45",
+      "line": 132,
+      "phrase": "surmise",
+      "definition": "speculation; imagined possibility"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss47",
+      "line": 133,
+      "phrase": "rapt",
+      "definition": "lost in thought; absorbed"
+    },
+    {
+      "id": "macbeth_act1_scene3_gloss48",
+      "line": 145,
+      "phrase": "The interim having weigh’d it",
+      "definition": "once we've had time to consider it"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act1_scene3_ann1",
+      "line_start": 19,
+      "line_end": 45,
+      "citation_display": "Macbeth 1.3.19–45",
+      "category": "linguistic",
+      "title": "Weird: not strange, but wyrd",
+      "body": "The modern English 'weird' — meaning odd or uncanny — is a sense the word only fully acquired in the 19th century, and largely because of this play. In 1606, 'weird' carried its Old English root 'wyrd': fate, destiny, the unfolding of what must be. The Norns of Norse mythology, spinners of fate, are often translated as the Weird Sisters.\n\nThis matters for the play's metaphysics. If the Sisters are *weird* in the modern sense, they are merely odd witches. If they are *wyrd*, they are agents of fate — not causes of the murder, but its annunciators. The difference determines whether *Macbeth* is a play about what Macbeth chose to do or about what he was always going to do. Shakespeare's text refuses to settle the question; the word carries both possibilities at once, and the production must choose.\n\nScholarly editors (Braunmuller's New Cambridge, Kerrigan, Clark & Mason) all flag this. When Banquo calls them 'weird sisters' (and later 'imperfect speakers'), he is invoking the Fates of classical myth, not hedge-magic.",
+      "sources": [
+        "OED, 'weird, adj. and n.'",
+        "A. R. Braunmuller (ed.), New Cambridge *Macbeth* (1997)",
+        "Janet Clark & Eric Rasmussen, Arden 3 *Macbeth* (2015)"
+      ]
+    },
+    {
+      "id": "macbeth_act1_scene3_ann2",
+      "line_start": 48,
+      "line_end": 85,
+      "citation_display": "Macbeth 1.3.48–85",
+      "category": "thematic",
+      "title": "Banquo and Macbeth: two reactions, one prophecy",
+      "body": "The prophecy arrives in the same words to both men. Their reactions differ completely. Macbeth is 'rapt withal' — absorbed, silent, visibly shaken. Banquo, seeing this, asks the Sisters for his own future and takes their words as information to be examined, not commands to be obeyed.\n\nShakespeare's staging here is moral: two men hear the same temptation and react differently. Macbeth's silence is already the murder; he has accepted the future the Sisters describe. Banquo's questions are the defense. The scene demonstrates that the prophecy does not cause the tragedy; it reveals which men will make the tragedy happen.\n\nCompare the Delphic oracle in *Oedipus Rex*: the oracle tells Oedipus he will kill his father, and his attempt to escape it enacts it. In *Macbeth* the Sisters tell a truth, and Macbeth makes it true through action. The difference between Greek fate and Shakespearean fate is the difference between the inevitable and the chosen.",
+      "sources": [
+        "A. C. Bradley, *Shakespearean Tragedy* (1904)",
+        "Harold Bloom, *Shakespeare: The Invention of the Human* (1998)",
+        "Paul A. Kottman, *Tragic Conditions in Shakespeare* (2009)"
+      ]
+    },
+    {
+      "id": "macbeth_act1_scene3_ann3",
+      "line_start": 130,
+      "line_end": 170,
+      "citation_display": "Macbeth 1.3.130–170",
+      "category": "close_reading",
+      "title": "'If chance will have me king, why, chance may crown me'",
+      "body": "Macbeth's first soliloquy after the prophecy is a masterwork of self-deception. He tells himself fate will act for him — 'If chance will have me king, why, chance may crown me, / Without my stir.' The phrase 'without my stir' is the key: Macbeth is asking whether he can have the crown without doing anything for it. The soliloquy lets us see him already considering that he might have to 'stir.'\n\nThe language is already the language of the later soliloquies. 'Horrid image,' 'seated heart knock at my ribs,' 'single state of man' — these are the images of 1.7 and 2.1, already present in miniature. Macbeth is not slowly corrupted by Iago-figures; he is visibly already there, thirty lines after meeting the Sisters.\n\nNotice the syntactical breakage. His speech in 1.2 (as reported) was coherent, military, direct. Here it fragments under the weight of the imagined deed. The play will watch this syntax continue to crack.",
+      "sources": [
+        "L. C. Knights, *Some Shakespearean Themes* (1959)",
+        "A. D. Nuttall, *Shakespeare the Thinker* (2007)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act1_scene3_q1",
+      "kind": "close_reading",
+      "prompt": "When Shakespeare calls them 'weird sisters,' what does the word 'weird' mean in 1606?",
+      "options": [
+        "Strange, odd, or uncanny (the modern sense)",
+        "From Old English 'wyrd' — fate, destiny; they are the Fates, not hedge-witches",
+        "An invented Shakespeare word with no root",
+        "A technical term for Scottish witchcraft"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 19,
+      "anchor_line_end": 45
+    },
+    {
+      "id": "macbeth_act1_scene3_q2",
+      "kind": "inference",
+      "prompt": "How do Macbeth's and Banquo's responses to the prophecy differ?",
+      "options": [
+        "They respond identically with caution",
+        "Macbeth goes silent and absorbed; Banquo questions the Sisters and examines the news rationally",
+        "Macbeth laughs; Banquo weeps",
+        "Both ignore the Sisters entirely"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 48,
+      "anchor_line_end": 85
+    },
+    {
+      "id": "macbeth_act1_scene3_q3",
+      "kind": "theme",
+      "prompt": "Shakespeare's 'weird sisters' differ from Greek fate in that:",
+      "options": [
+        "They have no causal power",
+        "The Sisters tell truths; Macbeth must act to make them true — fate is declared, choice makes it real",
+        "They act physically on their victims",
+        "They cannot see the future accurately"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 48,
+      "anchor_line_end": 160
+    },
+    {
+      "id": "macbeth_act1_scene3_q4",
+      "kind": "close_reading",
+      "prompt": "'If chance will have me king, why, chance may crown me, / Without my stir' reveals Macbeth:",
+      "options": [
+        "Is innocent of murderous intent",
+        "Is already considering that he might have to 'stir' — that is, act",
+        "Trusts God entirely",
+        "Wants to abdicate"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 154,
+      "anchor_line_end": 160
+    },
+    {
+      "id": "macbeth_act1_scene3_q5",
+      "kind": "comprehension",
+      "prompt": "What three prophecies do the Sisters deliver to Macbeth?",
+      "options": [
+        "King, thane of Cawdor, thane of Glamis",
+        "Thane of Glamis, thane of Cawdor, king hereafter",
+        "Earl, king, emperor",
+        "Soldier, father, king"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 43,
+      "anchor_line_end": 47
+    }
+  ]
+}

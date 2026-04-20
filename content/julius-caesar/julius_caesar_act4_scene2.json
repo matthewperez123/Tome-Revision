@@ -1,0 +1,458 @@
+{
+  "section_id": "julius_caesar_act4_scene2",
+  "work_id": "julius-caesar",
+  "sequence": 12,
+  "act": 4,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "Camp near Sardis. Before Brutus's tent",
+  "line_count": 57,
+  "word_count": 368,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "BRUTUS",
+      "text": "Stand, ho!"
+    },
+    {
+      "number": 1,
+      "speaker": "LUCILIUS",
+      "text": "Give the word, ho! and stand."
+    },
+    {
+      "number": 2,
+      "speaker": "BRUTUS",
+      "text": "What now, Lucilius! is Cassius near?"
+    },
+    {
+      "number": 3,
+      "speaker": "LUCILIUS",
+      "text": "He is at hand; and Pindarus is come"
+    },
+    {
+      "number": 4,
+      "speaker": "LUCILIUS",
+      "text": "To do you salutation from his master."
+    },
+    {
+      "number": 5,
+      "speaker": "BRUTUS",
+      "text": "He greets me well. Your master, Pindarus,"
+    },
+    {
+      "number": 6,
+      "speaker": "BRUTUS",
+      "text": "In his own change, or by ill officers,"
+    },
+    {
+      "number": 7,
+      "speaker": "BRUTUS",
+      "text": "Hath given me some worthy cause to wish"
+    },
+    {
+      "number": 8,
+      "speaker": "BRUTUS",
+      "text": "Things done, undone: but, if he be at hand,"
+    },
+    {
+      "number": 9,
+      "speaker": "BRUTUS",
+      "text": "I shall be satisfied."
+    },
+    {
+      "number": 9,
+      "speaker": "PINDARUS",
+      "text": "I do not doubt"
+    },
+    {
+      "number": 10,
+      "speaker": "PINDARUS",
+      "text": "But that my noble master will appear"
+    },
+    {
+      "number": 11,
+      "speaker": "PINDARUS",
+      "text": "Such as he is, full of regard and honour."
+    },
+    {
+      "number": 12,
+      "speaker": "BRUTUS",
+      "text": "He is not doubted. A word, Lucilius;"
+    },
+    {
+      "number": 13,
+      "speaker": "BRUTUS",
+      "text": "How he received you, let me be resolved."
+    },
+    {
+      "number": 14,
+      "speaker": "LUCILIUS",
+      "text": "With courtesy and with respect enough;"
+    },
+    {
+      "number": 15,
+      "speaker": "LUCILIUS",
+      "text": "But not with such familiar instances,"
+    },
+    {
+      "number": 16,
+      "speaker": "LUCILIUS",
+      "text": "Nor with such free and friendly conference,"
+    },
+    {
+      "number": 17,
+      "speaker": "LUCILIUS",
+      "text": "As he hath used of old."
+    },
+    {
+      "number": 17,
+      "speaker": "BRUTUS",
+      "text": "Thou hast described"
+    },
+    {
+      "number": 18,
+      "speaker": "BRUTUS",
+      "text": "A hot friend cooling: ever note, Lucilius,"
+    },
+    {
+      "number": 19,
+      "speaker": "BRUTUS",
+      "text": "When love begins to sicken and decay,"
+    },
+    {
+      "number": 20,
+      "speaker": "BRUTUS",
+      "text": "It useth an enforced ceremony."
+    },
+    {
+      "number": 21,
+      "speaker": "BRUTUS",
+      "text": "There are no tricks in plain and simple faith;"
+    },
+    {
+      "number": 22,
+      "speaker": "BRUTUS",
+      "text": "But hollow men, like horses hot at hand,"
+    },
+    {
+      "number": 23,
+      "speaker": "BRUTUS",
+      "text": "Make gallant show and promise of their mettle;"
+    },
+    {
+      "number": 24,
+      "speaker": "BRUTUS",
+      "text": "But when they should endure the bloody spur,"
+    },
+    {
+      "number": 25,
+      "speaker": "BRUTUS",
+      "text": "They fall their crests, and, like deceitful jades,"
+    },
+    {
+      "number": 26,
+      "speaker": "BRUTUS",
+      "text": "Sink in the trial. Comes his army on?"
+    },
+    {
+      "number": 27,
+      "speaker": "LUCILIUS",
+      "text": "They mean this night in Sardis to be quarter’d;"
+    },
+    {
+      "number": 28,
+      "speaker": "LUCILIUS",
+      "text": "The greater part, the horse in general,"
+    },
+    {
+      "number": 29,
+      "speaker": "LUCILIUS",
+      "text": "Are come with Cassius."
+    },
+    {
+      "number": 30,
+      "speaker": "BRUTUS",
+      "text": "Hark! he is arrived. Low march within."
+    },
+    {
+      "number": 31,
+      "speaker": "BRUTUS",
+      "text": "March gently on to meet him."
+    },
+    {
+      "number": 31,
+      "speaker": "CASSIUS",
+      "text": "Stand, ho!"
+    },
+    {
+      "number": 32,
+      "speaker": "BRUTUS",
+      "text": "Stand, ho! Speak the word along."
+    },
+    {
+      "number": 32,
+      "speaker": "FIRST SOLDIER",
+      "text": "Stand!"
+    },
+    {
+      "number": 33,
+      "speaker": "SECOND SOLDIER",
+      "text": "Stand!"
+    },
+    {
+      "number": 33,
+      "speaker": "THIRD SOLDIER",
+      "text": "Stand!"
+    },
+    {
+      "number": 34,
+      "speaker": "CASSIUS",
+      "text": "Most noble brother, you have done me wrong."
+    },
+    {
+      "number": 35,
+      "speaker": "BRUTUS",
+      "text": "Judge me, you gods! wrong I mine enemies?"
+    },
+    {
+      "number": 36,
+      "speaker": "BRUTUS",
+      "text": "And, if not so, how should I wrong a brother?"
+    },
+    {
+      "number": 37,
+      "speaker": "CASSIUS",
+      "text": "Brutus, this sober form of yours hides wrongs;"
+    },
+    {
+      "number": 38,
+      "speaker": "CASSIUS",
+      "text": "And when you do them—"
+    },
+    {
+      "number": 38,
+      "speaker": "BRUTUS",
+      "text": "Cassius, be content;"
+    },
+    {
+      "number": 39,
+      "speaker": "BRUTUS",
+      "text": "Speak your griefs softly: I do know you well."
+    },
+    {
+      "number": 40,
+      "speaker": "BRUTUS",
+      "text": "Before the eyes of both our armies here,"
+    },
+    {
+      "number": 41,
+      "speaker": "BRUTUS",
+      "text": "Which should perceive nothing but love from us,"
+    },
+    {
+      "number": 42,
+      "speaker": "BRUTUS",
+      "text": "Let us not wrangle: bid them move away;"
+    },
+    {
+      "number": 43,
+      "speaker": "BRUTUS",
+      "text": "Then in my tent, Cassius, enlarge your griefs,"
+    },
+    {
+      "number": 44,
+      "speaker": "BRUTUS",
+      "text": "And I will give you audience."
+    },
+    {
+      "number": 44,
+      "speaker": "CASSIUS",
+      "text": "Pindarus,"
+    },
+    {
+      "number": 45,
+      "speaker": "CASSIUS",
+      "text": "Bid our commanders lead their charges off"
+    },
+    {
+      "number": 46,
+      "speaker": "CASSIUS",
+      "text": "A little from this ground."
+    },
+    {
+      "number": 47,
+      "speaker": "BRUTUS",
+      "text": "Lucilius, do you the like; and let no man"
+    },
+    {
+      "number": 48,
+      "speaker": "BRUTUS",
+      "text": "Come to our tent till we have done our conference."
+    },
+    {
+      "number": 49,
+      "speaker": "BRUTUS",
+      "text": "Let Lucius and Titinius guard our door."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Drum. Enter Brutus, Lucilius, Lucius, and Soldiers; Titinius and Pindarus meeting them."
+    },
+    {
+      "after_line": 31,
+      "text": "Enter Cassius and his powers."
+    },
+    {
+      "after_line": 49,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "julius_caesar_act4_scene2_gloss1",
+      "line": 2,
+      "phrase": "Lucilius",
+      "definition": "a loyal officer of Brutus; he will later impersonate Brutus at Philippi (5.4) to let Brutus escape"
+    },
+    {
+      "id": "julius_caesar_act4_scene2_gloss2",
+      "line": 3,
+      "phrase": "Pindarus",
+      "definition": "Cassius's freed-slave attendant; at 5.3 he kills Cassius on order"
+    },
+    {
+      "id": "julius_caesar_act4_scene2_gloss3",
+      "line": 4,
+      "phrase": "salutation",
+      "definition": "formal greeting"
+    },
+    {
+      "id": "julius_caesar_act4_scene2_gloss4",
+      "line": 6,
+      "phrase": "in his own change, or by ill officers",
+      "definition": "either in his own altered disposition or through bad subordinates — Brutus diplomatically reserves judgment"
+    },
+    {
+      "id": "julius_caesar_act4_scene2_gloss5",
+      "line": 15,
+      "phrase": "familiar instances",
+      "definition": "intimate tokens; gestures of close friendship"
+    },
+    {
+      "id": "julius_caesar_act4_scene2_gloss6",
+      "line": 16,
+      "phrase": "free and friendly conference",
+      "definition": "open, friendly conversation"
+    },
+    {
+      "id": "julius_caesar_act4_scene2_gloss7",
+      "line": 18,
+      "phrase": "hot friend cooling",
+      "definition": "a warm friend growing cold — Brutus's diagnosis; the friendship is ending"
+    },
+    {
+      "id": "julius_caesar_act4_scene2_gloss8",
+      "line": 20,
+      "phrase": "enforced ceremony",
+      "definition": "forced formality; stiff courtesy put on when real warmth fails"
+    },
+    {
+      "id": "julius_caesar_act4_scene2_gloss9",
+      "line": 22,
+      "phrase": "horses hot at hand",
+      "definition": "horses fiery when held in (at the start) but fading under pressure"
+    },
+    {
+      "id": "julius_caesar_act4_scene2_gloss10",
+      "line": 23,
+      "phrase": "mettle",
+      "definition": "spirit; temper of character; pun on metal"
+    },
+    {
+      "id": "julius_caesar_act4_scene2_gloss11",
+      "line": 24,
+      "phrase": "bloody spur",
+      "definition": "the spur drawing blood — real test under stress"
+    },
+    {
+      "id": "julius_caesar_act4_scene2_gloss12",
+      "line": 25,
+      "phrase": "fall their crests",
+      "definition": "drop their crests (like losing horses); give up"
+    },
+    {
+      "id": "julius_caesar_act4_scene2_gloss13",
+      "line": 25,
+      "phrase": "deceitful jades",
+      "definition": "untrustworthy broken-down horses"
+    },
+    {
+      "id": "julius_caesar_act4_scene2_gloss14",
+      "line": 27,
+      "phrase": "Sardis",
+      "definition": "ancient city in Asia Minor (western Turkey); Brutus and Cassius's winter camp before Philippi"
+    },
+    {
+      "id": "julius_caesar_act4_scene2_gloss15",
+      "line": 28,
+      "phrase": "horse in general",
+      "definition": "the cavalry as a whole"
+    },
+    {
+      "id": "julius_caesar_act4_scene2_gloss16",
+      "line": 43,
+      "phrase": "enlarge your griefs",
+      "definition": "state your grievances at length (not 'make them larger')"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "julius_caesar_act4_scene2_ann1",
+      "line_start": 13,
+      "line_end": 30,
+      "citation_display": "Julius Caesar 4.2.13–30",
+      "category": "close_reading",
+      "title": "'A hot friend cooling': Brutus's diagnostic",
+      "body": "Brutus's four-line speech on the phenomenology of cooling friendship is the best short meditation on male political intimacy in Shakespeare. 'When love begins to sicken and decay, / It useth an enforced ceremony. / There are no tricks in plain and simple faith.' The image — formality as the symptom of emotional withdrawal — is one Shakespeare will use again in *Antony and Cleopatra*, but here it is put in the mouth of the warmer of the two men, and specifically as a diagnosis of the cooler.\n\nThe horse-metaphor that follows (hot-at-hand horses that 'fall their crests' under the bloody spur) is military, technical, and slightly cruel — Brutus is telling Lucilius that Cassius under pressure will fail, that the promise of mettle will not hold. The scene establishes the emotional register of 4.3: these men love each other, and they know the love is endangered, and they are saying so before they quarrel. Shakespeare's specific care here is that Brutus is not surprised by the quarrel that follows. He has been expecting it. The tent scene is the quarrel Brutus saw coming.",
+      "sources": [
+        "A. D. Nuttall (2007)",
+        "Eve Kosofsky Sedgwick, *Between Men* (1985)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "julius_caesar_act4_scene2_q1",
+      "kind": "close_reading",
+      "prompt": "What does Brutus mean by 'a hot friend cooling'?",
+      "options": [
+        "A warm drink becoming cold",
+        "A diagnosis of failing friendship — when love 'sickens and decays,' it shows up as 'enforced ceremony'; formality is the symptom of withdrawal",
+        "A weather phenomenon",
+        "A horse losing its warmth"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 18,
+      "anchor_line_end": 26
+    },
+    {
+      "id": "julius_caesar_act4_scene2_q2",
+      "kind": "inference",
+      "prompt": "4.2's emotional register prepares us for 4.3 by:",
+      "options": [
+        "Introducing new characters",
+        "Establishing that Brutus has seen the quarrel coming — he knows the warmth has begun to cool, and the tent scene that follows is the confrontation he has already diagnosed",
+        "Providing comic relief",
+        "Resolving the conflict early"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 13,
+      "anchor_line_end": 30
+    }
+  ]
+}

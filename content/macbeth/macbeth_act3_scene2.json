@@ -1,0 +1,459 @@
+{
+  "section_id": "macbeth_act3_scene2",
+  "work_id": "macbeth",
+  "sequence": 13,
+  "act": 3,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "The palace",
+  "line_count": 56,
+  "word_count": 402,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "LADY MACBETH",
+      "text": "Is Banquo gone from court?"
+    },
+    {
+      "number": 1,
+      "speaker": "SERVANT",
+      "text": "Ay, madam, but returns again to-night."
+    },
+    {
+      "number": 2,
+      "speaker": "LADY MACBETH",
+      "text": "Say to the king, I would attend his leisure"
+    },
+    {
+      "number": 3,
+      "speaker": "LADY MACBETH",
+      "text": "For a few words."
+    },
+    {
+      "number": 3,
+      "speaker": "SERVANT",
+      "text": "Madam, I will."
+    },
+    {
+      "number": 4,
+      "speaker": "LADY MACBETH",
+      "text": "Nought’s had, all’s spent,"
+    },
+    {
+      "number": 5,
+      "speaker": "LADY MACBETH",
+      "text": "Where our desire is got without content:"
+    },
+    {
+      "number": 6,
+      "speaker": "LADY MACBETH",
+      "text": "’Tis safer to be that which we destroy"
+    },
+    {
+      "number": 7,
+      "speaker": "LADY MACBETH",
+      "text": "Than by destruction dwell in doubtful joy."
+    },
+    {
+      "number": 8,
+      "speaker": "MACBETH",
+      "text": "We have scotch’d the snake, not kill’d it:"
+    },
+    {
+      "number": 9,
+      "speaker": "MACBETH",
+      "text": "She’ll close and be herself, whilst our poor malice"
+    },
+    {
+      "number": 10,
+      "speaker": "MACBETH",
+      "text": "Remains in danger of her former tooth."
+    },
+    {
+      "number": 11,
+      "speaker": "MACBETH",
+      "text": "But let the frame of things disjoint, both the worlds suffer,"
+    },
+    {
+      "number": 12,
+      "speaker": "MACBETH",
+      "text": "Ere we will eat our meal in fear and sleep"
+    },
+    {
+      "number": 13,
+      "speaker": "MACBETH",
+      "text": "In the affliction of these terrible dreams"
+    },
+    {
+      "number": 14,
+      "speaker": "MACBETH",
+      "text": "That shake us nightly: better be with the dead,"
+    },
+    {
+      "number": 15,
+      "speaker": "MACBETH",
+      "text": "Whom we, to gain our peace, have sent to peace,"
+    },
+    {
+      "number": 16,
+      "speaker": "MACBETH",
+      "text": "Than on the torture of the mind to lie"
+    },
+    {
+      "number": 17,
+      "speaker": "MACBETH",
+      "text": "In restless ecstasy. Duncan is in his grave;"
+    },
+    {
+      "number": 18,
+      "speaker": "MACBETH",
+      "text": "After life’s fitful fever he sleeps well;"
+    },
+    {
+      "number": 19,
+      "speaker": "MACBETH",
+      "text": "Treason has done his worst: nor steel, nor poison,"
+    },
+    {
+      "number": 20,
+      "speaker": "MACBETH",
+      "text": "Malice domestic, foreign levy, nothing,"
+    },
+    {
+      "number": 21,
+      "speaker": "MACBETH",
+      "text": "Can touch him further."
+    },
+    {
+      "number": 21,
+      "speaker": "LADY MACBETH",
+      "text": "Come on;"
+    },
+    {
+      "number": 22,
+      "speaker": "LADY MACBETH",
+      "text": "Gentle my lord, sleek o’er your rugged looks;"
+    },
+    {
+      "number": 23,
+      "speaker": "LADY MACBETH",
+      "text": "Be bright and jovial among your guests to-night."
+    },
+    {
+      "number": 24,
+      "speaker": "MACBETH",
+      "text": "So shall I, love; and so, I pray, be you:"
+    },
+    {
+      "number": 25,
+      "speaker": "MACBETH",
+      "text": "Let your remembrance apply to Banquo;"
+    },
+    {
+      "number": 26,
+      "speaker": "MACBETH",
+      "text": "Present him eminence, both with eye and tongue:"
+    },
+    {
+      "number": 27,
+      "speaker": "MACBETH",
+      "text": "Unsafe the while, that we"
+    },
+    {
+      "number": 28,
+      "speaker": "MACBETH",
+      "text": "Must lave our honours in these flattering streams,"
+    },
+    {
+      "number": 29,
+      "speaker": "MACBETH",
+      "text": "And make our faces vizards to our hearts,"
+    },
+    {
+      "number": 30,
+      "speaker": "MACBETH",
+      "text": "Disguising what they are."
+    },
+    {
+      "number": 30,
+      "speaker": "LADY MACBETH",
+      "text": "You must leave this."
+    },
+    {
+      "number": 31,
+      "speaker": "MACBETH",
+      "text": "O, full of scorpions is my mind, dear wife!"
+    },
+    {
+      "number": 32,
+      "speaker": "MACBETH",
+      "text": "Thou know’st that Banquo, and his Fleance, lives."
+    },
+    {
+      "number": 33,
+      "speaker": "LADY MACBETH",
+      "text": "But in them nature’s copy’s not eterne."
+    },
+    {
+      "number": 34,
+      "speaker": "MACBETH",
+      "text": "There’s comfort yet; they are assailable;"
+    },
+    {
+      "number": 35,
+      "speaker": "MACBETH",
+      "text": "Then be thou jocund: ere the bat hath flown"
+    },
+    {
+      "number": 36,
+      "speaker": "MACBETH",
+      "text": "His cloister’d flight, ere to black Hecate’s summons"
+    },
+    {
+      "number": 37,
+      "speaker": "MACBETH",
+      "text": "The shard-borne beetle with his drowsy hums"
+    },
+    {
+      "number": 38,
+      "speaker": "MACBETH",
+      "text": "Hath rung night’s yawning peal, there shall be done"
+    },
+    {
+      "number": 39,
+      "speaker": "MACBETH",
+      "text": "A deed of dreadful note."
+    },
+    {
+      "number": 39,
+      "speaker": "LADY MACBETH",
+      "text": "What’s to be done?"
+    },
+    {
+      "number": 40,
+      "speaker": "MACBETH",
+      "text": "Be innocent of the knowledge, dearest chuck,"
+    },
+    {
+      "number": 41,
+      "speaker": "MACBETH",
+      "text": "Till thou applaud the deed. Come, seeling night,"
+    },
+    {
+      "number": 42,
+      "speaker": "MACBETH",
+      "text": "Scarf up the tender eye of pitiful day;"
+    },
+    {
+      "number": 43,
+      "speaker": "MACBETH",
+      "text": "And with thy bloody and invisible hand"
+    },
+    {
+      "number": 44,
+      "speaker": "MACBETH",
+      "text": "Cancel and tear to pieces that great bond"
+    },
+    {
+      "number": 45,
+      "speaker": "MACBETH",
+      "text": "Which keeps me pale! Light thickens; and the crow"
+    },
+    {
+      "number": 46,
+      "speaker": "MACBETH",
+      "text": "Makes wing to the rooky wood:"
+    },
+    {
+      "number": 47,
+      "speaker": "MACBETH",
+      "text": "Good things of day begin to droop and drowse;"
+    },
+    {
+      "number": 48,
+      "speaker": "MACBETH",
+      "text": "Whiles night’s black agents to their preys do rouse."
+    },
+    {
+      "number": 49,
+      "speaker": "MACBETH",
+      "text": "Thou marvell’st at my words: but hold thee still:"
+    },
+    {
+      "number": 50,
+      "speaker": "MACBETH",
+      "text": "Things bad begun make strong themselves by ill."
+    },
+    {
+      "number": 51,
+      "speaker": "MACBETH",
+      "text": "So, prithee, go with me."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Lady Macbeth and a Servant."
+    },
+    {
+      "after_line": 3,
+      "text": "Exit."
+    },
+    {
+      "after_line": 7,
+      "text": "Enter Macbeth."
+    },
+    {
+      "after_line": 7,
+      "text": "How now, my lord! why do you keep alone, Of sorriest fancies your companions making, Using those thoughts which should indeed have died With them they think on? Things without all remedy Should be without regard: what’s done is done."
+    },
+    {
+      "after_line": 51,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act3_scene2_gloss1",
+      "line": 5,
+      "phrase": "content",
+      "definition": "peace; happiness"
+    },
+    {
+      "id": "macbeth_act3_scene2_gloss2",
+      "line": 7,
+      "phrase": "in doubtful joy",
+      "definition": "in troubled happiness — a better condition than she now has"
+    },
+    {
+      "id": "macbeth_act3_scene2_gloss4",
+      "line": 9,
+      "phrase": "close",
+      "definition": "close up; heal"
+    },
+    {
+      "id": "macbeth_act3_scene2_gloss5",
+      "line": 11,
+      "phrase": "frame of things disjoint",
+      "definition": "let the whole universe fall apart"
+    },
+    {
+      "id": "macbeth_act3_scene2_gloss6",
+      "line": 11,
+      "phrase": "both the worlds suffer",
+      "definition": "let heaven and earth collapse"
+    },
+    {
+      "id": "macbeth_act3_scene2_gloss8",
+      "line": 16,
+      "phrase": "on the torture of the mind",
+      "definition": "on the rack of mental anguish"
+    },
+    {
+      "id": "macbeth_act3_scene2_gloss9",
+      "line": 22,
+      "phrase": "Gentle my lord",
+      "definition": "gentle husband"
+    },
+    {
+      "id": "macbeth_act3_scene2_gloss11",
+      "line": 31,
+      "phrase": "O, full of scorpions is my mind",
+      "definition": "Macbeth's image for his poisoned thoughts"
+    },
+    {
+      "id": "macbeth_act3_scene2_gloss12",
+      "line": 46,
+      "phrase": "rooky wood",
+      "definition": "the wood where rooks gather for the night; 'rooky' also means misty/dark"
+    },
+    {
+      "id": "macbeth_act3_scene2_gloss13",
+      "line": 48,
+      "phrase": "night’s black agents",
+      "definition": "creatures that act under darkness"
+    },
+    {
+      "id": "macbeth_act3_scene2_gloss14",
+      "line": 50,
+      "phrase": "Things bad begun make strong themselves by ill",
+      "definition": "evil deeds can only be defended with more evil — Macbeth's self-doctrine"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act3_scene2_ann1",
+      "line_start": 1,
+      "line_end": 30,
+      "citation_display": "Macbeth 3.2.1–30",
+      "category": "thematic",
+      "title": "The marriage in decline",
+      "body": "Lady Macbeth opens the scene alone: 'Naught's had, all's spent, / Where our desire is got without content.' The line is the play's most economical statement of achieved ambition. They have what they wanted. It is nothing.\n\nWhen Macbeth enters, the asymmetry of their marriage has reversed. In 1.7 she drove him to the deed; here, he has already decided on Banquo's murder and will not tell her. 'Be innocent of the knowledge, dearest chuck, / Till thou applaud the deed.' The endearment — 'chuck' — is sharper than it looks. He is patronizing her, relegating her to the position she forced him out of.\n\nThe scene is the hinge of their relationship. After 2.2 they are partners; after 3.2 they are not. He does not consult her again. When she next appears in a major scene (5.1), she is sleepwalking alone, her husband at Dunsinane without her, her confessions heard only by a doctor and a gentlewoman.",
+      "sources": [
+        "Juliet Dusinberre, *Shakespeare and the Nature of Women* (1975)",
+        "Marjorie Garber, *Shakespeare After All* (2004)"
+      ]
+    },
+    {
+      "id": "macbeth_act3_scene2_ann2",
+      "line_start": 40,
+      "line_end": 56,
+      "citation_display": "Macbeth 3.2.40–56",
+      "category": "close_reading",
+      "title": "'Full of scorpions is my mind'",
+      "body": "Macbeth's image for his insomnia — 'O, full of scorpions is my mind, dear wife!' — is his most visible admission of internal rot. The scorpions are not metaphor for worry; they are presented as an infestation, creatures living in him.\n\nThe image prepares the cavern scene (4.1): the Witches' cauldron bubbling with adders, newts, slow-worms. Macbeth's mind has become what the Witches brew. The distinction between the supernatural and the psychological is dissolving. The 'rooky wood' he invokes at scene's end — 'ere to black Hecate's summons / The shard-borne beetle with his drowsy hums / Hath rung night's yawning peal' — is already the wood of the cavern.\n\nThe couplet 'Things bad begun make strong themselves by ill' is the doctrine. Evil, once undertaken, requires more evil to defend itself. The play's last three acts are the working out of this sentence.",
+      "sources": [
+        "Caroline Spurgeon (1935)",
+        "Ewan Fernie, *The Demonic* (2013)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act3_scene2_q1",
+      "kind": "inference",
+      "prompt": "Lady Macbeth's opening 'Naught's had, all's spent' reveals:",
+      "options": [
+        "Financial trouble",
+        "The play's most compact statement about achieved ambition: they have what they wanted, and it is nothing",
+        "Their house is empty",
+        "She wants a divorce"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 10
+    },
+    {
+      "id": "macbeth_act3_scene2_q2",
+      "kind": "theme",
+      "prompt": "Macbeth's decision not to tell Lady Macbeth about Banquo's planned murder means:",
+      "options": [
+        "He has forgotten her",
+        "The asymmetry of their marriage has reversed; after 3.2 they are not partners",
+        "He trusts her more",
+        "She has asked to be excluded"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 36,
+      "anchor_line_end": 50
+    },
+    {
+      "id": "macbeth_act3_scene2_q3",
+      "kind": "close_reading",
+      "prompt": "'Full of scorpions is my mind' suggests:",
+      "options": [
+        "A literal infestation",
+        "His mind has become what the Witches brew — supernatural and psychological collapsing together",
+        "He has been stung by a scorpion",
+        "A mistranslation"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 40,
+      "anchor_line_end": 45
+    }
+  ]
+}

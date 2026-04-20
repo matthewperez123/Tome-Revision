@@ -1,0 +1,448 @@
+{
+  "section_id": "henry_v_act3_scene1",
+  "work_id": "henry-v",
+  "sequence": 10,
+  "act": 3,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "France. Before Harfleur",
+  "line_count": 34,
+  "word_count": 273,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KING HENRY",
+      "text": "Once more unto the breach, dear friends, once more;"
+    },
+    {
+      "number": 2,
+      "speaker": "KING HENRY",
+      "text": "Or close the wall up with our English dead."
+    },
+    {
+      "number": 3,
+      "speaker": "KING HENRY",
+      "text": "In peace there’s nothing so becomes a man"
+    },
+    {
+      "number": 4,
+      "speaker": "KING HENRY",
+      "text": "As modest stillness and humility:"
+    },
+    {
+      "number": 5,
+      "speaker": "KING HENRY",
+      "text": "But when the blast of war blows in our ears,"
+    },
+    {
+      "number": 6,
+      "speaker": "KING HENRY",
+      "text": "Then imitate the action of the tiger;"
+    },
+    {
+      "number": 7,
+      "speaker": "KING HENRY",
+      "text": "Stiffen the sinews, summon up the blood,"
+    },
+    {
+      "number": 8,
+      "speaker": "KING HENRY",
+      "text": "Disguise fair nature with hard-favour’d rage;"
+    },
+    {
+      "number": 9,
+      "speaker": "KING HENRY",
+      "text": "Then lend the eye a terrible aspect;"
+    },
+    {
+      "number": 10,
+      "speaker": "KING HENRY",
+      "text": "Let it pry through the portage of the head"
+    },
+    {
+      "number": 11,
+      "speaker": "KING HENRY",
+      "text": "Like the brass cannon; let the brow o’erwhelm it"
+    },
+    {
+      "number": 12,
+      "speaker": "KING HENRY",
+      "text": "As fearfully as doth a galled rock"
+    },
+    {
+      "number": 13,
+      "speaker": "KING HENRY",
+      "text": "O’erhang and jutty his confounded base,"
+    },
+    {
+      "number": 14,
+      "speaker": "KING HENRY",
+      "text": "Swill’d with the wild and wasteful ocean."
+    },
+    {
+      "number": 15,
+      "speaker": "KING HENRY",
+      "text": "Now set the teeth and stretch the nostril wide,"
+    },
+    {
+      "number": 16,
+      "speaker": "KING HENRY",
+      "text": "Hold hard the breath and bend up every spirit"
+    },
+    {
+      "number": 17,
+      "speaker": "KING HENRY",
+      "text": "To his full height. On, on, you noblest English,"
+    },
+    {
+      "number": 18,
+      "speaker": "KING HENRY",
+      "text": "Whose blood is fet from fathers of war-proof!"
+    },
+    {
+      "number": 19,
+      "speaker": "KING HENRY",
+      "text": "Fathers that, like so many Alexanders,"
+    },
+    {
+      "number": 20,
+      "speaker": "KING HENRY",
+      "text": "Have in these parts from morn till even fought"
+    },
+    {
+      "number": 21,
+      "speaker": "KING HENRY",
+      "text": "And sheathed their swords for lack of argument:"
+    },
+    {
+      "number": 22,
+      "speaker": "KING HENRY",
+      "text": "Dishonour not your mothers; now attest"
+    },
+    {
+      "number": 23,
+      "speaker": "KING HENRY",
+      "text": "That those whom you call’d fathers did beget you."
+    },
+    {
+      "number": 24,
+      "speaker": "KING HENRY",
+      "text": "Be copy now to men of grosser blood,"
+    },
+    {
+      "number": 25,
+      "speaker": "KING HENRY",
+      "text": "And teach them how to war. And you, good yeomen,"
+    },
+    {
+      "number": 26,
+      "speaker": "KING HENRY",
+      "text": "Whose limbs were made in England, show us here"
+    },
+    {
+      "number": 27,
+      "speaker": "KING HENRY",
+      "text": "The mettle of your pasture; let us swear"
+    },
+    {
+      "number": 28,
+      "speaker": "KING HENRY",
+      "text": "That you are worth your breeding; which I doubt not;"
+    },
+    {
+      "number": 29,
+      "speaker": "KING HENRY",
+      "text": "For there is none of you so mean and base,"
+    },
+    {
+      "number": 30,
+      "speaker": "KING HENRY",
+      "text": "That hath not noble lustre in your eyes."
+    },
+    {
+      "number": 31,
+      "speaker": "KING HENRY",
+      "text": "I see you stand like greyhounds in the slips,"
+    },
+    {
+      "number": 32,
+      "speaker": "KING HENRY",
+      "text": "Straining upon the start. The game’s afoot:"
+    },
+    {
+      "number": 33,
+      "speaker": "KING HENRY",
+      "text": "Follow your spirit, and upon this charge"
+    },
+    {
+      "number": 34,
+      "speaker": "KING HENRY",
+      "text": "Cry, “God for Harry, England, and Saint George!”"
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Alarum. Enter King Henry, Exeter, Bedford, Gloucester and Soldiers, with scaling-ladders."
+    },
+    {
+      "after_line": 34,
+      "text": "Exeunt. Alarum, and chambers go off."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act3_scene1_gloss1",
+      "line": 1,
+      "phrase": "Once more unto the breach",
+      "definition": "once again into the gap in the walls — soldiers must renew the assault through the opening a siege-cannon has torn"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss2",
+      "line": 2,
+      "phrase": "close the wall up with our English dead",
+      "definition": "fill the breach with our corpses — either break through or die in the gap"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss3",
+      "line": 4,
+      "phrase": "modest stillness and humility",
+      "definition": "quiet restraint — Henry's theory of peacetime virtue"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss4",
+      "line": 5,
+      "phrase": "blast of war",
+      "definition": "trumpet-call of war; the din of battle"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss5",
+      "line": 6,
+      "phrase": "imitate the action of the tiger",
+      "definition": "become predatory and ferocious — the speech's keynote"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss6",
+      "line": 7,
+      "phrase": "Stiffen the sinews",
+      "definition": "harden the muscles and tendons"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss7",
+      "line": 8,
+      "phrase": "Disguise fair nature with hard-favour’d rage",
+      "definition": "mask your gentle face with ugly fury"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss8",
+      "line": 9,
+      "phrase": "terrible aspect",
+      "definition": "fearsome expression"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss9",
+      "line": 10,
+      "phrase": "portage of the head",
+      "definition": "the skull's openings (eye-sockets) treated like gun-ports in a ship"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss10",
+      "line": 11,
+      "phrase": "brass cannon",
+      "definition": "the eye as an artillery piece — warlike metamorphosis of the body"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss11",
+      "line": 12,
+      "phrase": "galled rock",
+      "definition": "a cliff weathered by the sea"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss12",
+      "line": 13,
+      "phrase": "jutty his confounded base",
+      "definition": "project over its eroded footing — 'jutty' = overhang"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss13",
+      "line": 14,
+      "phrase": "Swill’d with the wild and wasteful ocean",
+      "definition": "drenched by the destructive sea"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss14",
+      "line": 18,
+      "phrase": "fet from fathers of war-proof",
+      "definition": "drawn from battle-tested fathers — 'fet' = fetched; 'war-proof' = proven in war"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss15",
+      "line": 19,
+      "phrase": "Alexanders",
+      "definition": "Alexander the Great — Macedonian conqueror; the play's first of three invocations"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss16",
+      "line": 20,
+      "phrase": "from morn till even",
+      "definition": "from morning until evening"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss17",
+      "line": 21,
+      "phrase": "sheathed their swords for lack of argument",
+      "definition": "put their swords away for want of an opponent to fight"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss18",
+      "line": 23,
+      "phrase": "those whom you call’d fathers did beget you",
+      "definition": "the men you call father really did father you — prove your paternity in battle"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss19",
+      "line": 24,
+      "phrase": "copy now to men of grosser blood",
+      "definition": "a model for coarser-blooded men"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss20",
+      "line": 25,
+      "phrase": "yeomen",
+      "definition": "free-born English commoners of the farming class — the backbone of the English army and longbow"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss21",
+      "line": 27,
+      "phrase": "mettle of your pasture",
+      "definition": "the quality of your home soil — show what English ground produces"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss22",
+      "line": 29,
+      "phrase": "mean and base",
+      "definition": "humble and low-born"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss23",
+      "line": 30,
+      "phrase": "noble lustre",
+      "definition": "the shine of nobility in your eyes — social elevation via valour"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss24",
+      "line": 31,
+      "phrase": "greyhounds in the slips",
+      "definition": "greyhounds in their leashes — hunting dogs straining at the start"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss25",
+      "line": 32,
+      "phrase": "Straining upon the start",
+      "definition": "pulling against the leash at the starting line"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss26",
+      "line": 32,
+      "phrase": "game’s afoot",
+      "definition": "the quarry is up and running — hunting idiom, later made famous by Sherlock Holmes"
+    },
+    {
+      "id": "henry_v_act3_scene1_gloss27",
+      "line": 34,
+      "phrase": "God for Harry, England, and Saint George",
+      "definition": "the English war-cry — St. George is England's patron saint and the Garter's namesake"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act3_scene1_ann1",
+      "line_start": 1,
+      "line_end": 17,
+      "citation_display": "Henry V 3.1.1–17",
+      "category": "close_reading",
+      "title": "The rhetorical architecture of 'Once more unto the breach'",
+      "body": "Henry's speech to the soldiers at the Harfleur breach is a masterclass in siege oratory. Its structure is rigorously controlled. Lines 1–2 give the imperative and its stakes (return to the breach, or die filling it). Lines 3–5 mark the ethical pivot: what virtue is in peace is not what virtue is in war. Lines 6–14 supply the key metamorphic command: imitate the tiger, stiffen sinews, summon blood, disguise fair nature with hard-favour'd rage. The body-language is physical: teeth set, nostrils stretched, breath held, every spirit bent up. The rhetorical technique is transformation — Henry is not asking the soldiers to be braver; he is prescribing a bodily and facial reconfiguration that will make them killers. The speech is also addressed in two registers: first to the noblest ('you noblest English / Whose blood is fet from fathers of war-proof'), then to the yeomen ('good yeomen / Whose limbs were made in England'), closing with the single collective war-cry. The rhetorical care is near-liturgical.",
+      "sources": [
+        "Madeleine Doran, Shakespeare's Dramatic Language (1976)",
+        "Brian Vickers, The Artistry of Shakespeare's Prose (1968)"
+      ]
+    },
+    {
+      "id": "henry_v_act3_scene1_ann2",
+      "line_start": 17,
+      "line_end": 34,
+      "citation_display": "Henry V 3.1.17–34",
+      "category": "thematic",
+      "title": "Class-addressed oratory — the yeomen and the game",
+      "body": "Henry's speech explicitly addresses the yeomen — the free-born English farming commoners who made up the archer corps — and praises 'the mettle of your pasture.' This acknowledges a military reality: the longbow, which would decide Agincourt, was the yeoman's weapon, not the knight's. The speech flatters the social group that would actually win the battle. The closing image — 'I see you stand like greyhounds in the slips, / Straining upon the start. The game's afoot' — converts the army into a hunting pack and the French into quarry. 'The game's afoot' has become proverbial (and famously re-used by Arthur Conan Doyle's Sherlock Holmes). In context, it is the speech's decisive detheologizing move: what began as a siege-ethic ends as a blood-sport. The breach-ethic is not 'kill in the name of God' but 'chase the prey.' The closing invocation 'God for Harry, England, and Saint George' nominally rebalances this, but the hunt-image lingers.",
+      "sources": [
+        "Juliet Barker, Agincourt: The King, the Campaign, the Battle (2005)",
+        "Emrys Jones, Scenic Form in Shakespeare (1971)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act3_scene1_q1",
+      "kind": "close_reading",
+      "prompt": "What does Henry command the soldiers to do in lines 6–14?",
+      "options": [
+        "Withdraw to regroup",
+        "Undergo a bodily and facial metamorphosis — imitate the tiger, stiffen sinews, disguise fair nature with 'hard-favour'd rage' — a physical re-engineering into killers",
+        "Pray for divine aid",
+        "Sing a battle-song"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 6,
+      "anchor_line_end": 14
+    },
+    {
+      "id": "henry_v_act3_scene1_q2",
+      "kind": "theme",
+      "prompt": "Why does Henry explicitly address the yeomen?",
+      "options": [
+        "They were the lowest social class present",
+        "Because the yeoman archers — commoners with longbows — were the army's decisive force; the speech flatters the social group that will actually win the battle",
+        "Because only yeomen spoke English",
+        "Because the nobility had refused to fight"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 25,
+      "anchor_line_end": 30
+    },
+    {
+      "id": "henry_v_act3_scene1_q3",
+      "kind": "close_reading",
+      "prompt": "What is the structural function of 'I see you stand like greyhounds in the slips' (line 31)?",
+      "options": [
+        "A reference to Henry's hunting hobby",
+        "A closing simile that converts the army into a hunting pack and the French into quarry — 'The game's afoot' (line 32) makes the siege a blood-sport",
+        "A Welsh idiom from Fluellen",
+        "A misquotation of Ovid"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 31,
+      "anchor_line_end": 32
+    },
+    {
+      "id": "henry_v_act3_scene1_q4",
+      "kind": "comprehension",
+      "prompt": "The speech's final line invokes which three names?",
+      "options": [
+        "God, Queen, and Country",
+        "God, Harry, England, and Saint George (the English patron saint)",
+        "Saint Denis, Saint George, and the Virgin",
+        "Henry, Exeter, and Canterbury"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 34,
+      "anchor_line_end": 34
+    }
+  ]
+}

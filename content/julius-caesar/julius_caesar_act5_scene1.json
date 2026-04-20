@@ -1,0 +1,1021 @@
+{
+  "section_id": "julius_caesar_act5_scene1",
+  "work_id": "julius-caesar",
+  "sequence": 14,
+  "act": 5,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "The plains of Philippi",
+  "line_count": 136,
+  "word_count": 973,
+  "est_read_minutes": 5,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "OCTAVIUS",
+      "text": "Now, Antony, our hopes are answered:"
+    },
+    {
+      "number": 2,
+      "speaker": "OCTAVIUS",
+      "text": "You said the enemy would not come down,"
+    },
+    {
+      "number": 3,
+      "speaker": "OCTAVIUS",
+      "text": "But keep the hills and upper regions:"
+    },
+    {
+      "number": 4,
+      "speaker": "OCTAVIUS",
+      "text": "It proves not so: their battles are at hand;"
+    },
+    {
+      "number": 5,
+      "speaker": "OCTAVIUS",
+      "text": "They mean to warn us at Philippi here,"
+    },
+    {
+      "number": 6,
+      "speaker": "OCTAVIUS",
+      "text": "Answering before we do demand of them."
+    },
+    {
+      "number": 7,
+      "speaker": "ANTONY",
+      "text": "Tut, I am in their bosoms, and I know"
+    },
+    {
+      "number": 8,
+      "speaker": "ANTONY",
+      "text": "Wherefore they do it: they could be content"
+    },
+    {
+      "number": 9,
+      "speaker": "ANTONY",
+      "text": "To visit other places; and come down"
+    },
+    {
+      "number": 10,
+      "speaker": "ANTONY",
+      "text": "With fearful bravery, thinking by this face"
+    },
+    {
+      "number": 11,
+      "speaker": "ANTONY",
+      "text": "To fasten in our thoughts that they have courage;"
+    },
+    {
+      "number": 12,
+      "speaker": "ANTONY",
+      "text": "But ’tis not so."
+    },
+    {
+      "number": 12,
+      "speaker": "MESSENGER",
+      "text": "Prepare you, generals:"
+    },
+    {
+      "number": 13,
+      "speaker": "MESSENGER",
+      "text": "The enemy comes on in gallant show;"
+    },
+    {
+      "number": 14,
+      "speaker": "MESSENGER",
+      "text": "Their bloody sign of battle is hung out,"
+    },
+    {
+      "number": 15,
+      "speaker": "MESSENGER",
+      "text": "And something to be done immediately."
+    },
+    {
+      "number": 15,
+      "speaker": "ANTONY",
+      "text": "Octavius, lead your battle softly on,"
+    },
+    {
+      "number": 16,
+      "speaker": "ANTONY",
+      "text": "Upon the left hand of the even field."
+    },
+    {
+      "number": 17,
+      "speaker": "OCTAVIUS",
+      "text": "Upon the right hand I; keep thou the left."
+    },
+    {
+      "number": 18,
+      "speaker": "ANTONY",
+      "text": "Why do you cross me in this exigent?"
+    },
+    {
+      "number": 19,
+      "speaker": "OCTAVIUS",
+      "text": "I do not cross you; but I will do so. March."
+    },
+    {
+      "number": 20,
+      "speaker": "BRUTUS",
+      "text": "They stand, and would have parley."
+    },
+    {
+      "number": 21,
+      "speaker": "CASSIUS",
+      "text": "Stand fast, Titinius: we must out and talk."
+    },
+    {
+      "number": 22,
+      "speaker": "OCTAVIUS",
+      "text": "Mark Antony, shall we give sign of battle?"
+    },
+    {
+      "number": 23,
+      "speaker": "ANTONY",
+      "text": "No, Caesar, we will answer on their charge."
+    },
+    {
+      "number": 24,
+      "speaker": "ANTONY",
+      "text": "Make forth; the generals would have some words."
+    },
+    {
+      "number": 25,
+      "speaker": "OCTAVIUS",
+      "text": "Stir not until the signal."
+    },
+    {
+      "number": 26,
+      "speaker": "BRUTUS",
+      "text": "Words before blows: is it so, countrymen?"
+    },
+    {
+      "number": 27,
+      "speaker": "OCTAVIUS",
+      "text": "Not that we love words better, as you do."
+    },
+    {
+      "number": 28,
+      "speaker": "BRUTUS",
+      "text": "Good words are better than bad strokes, Octavius."
+    },
+    {
+      "number": 29,
+      "speaker": "ANTONY",
+      "text": "In your bad strokes, Brutus, you give good words:"
+    },
+    {
+      "number": 30,
+      "speaker": "ANTONY",
+      "text": "Witness the hole you made in Caesar’s heart,"
+    },
+    {
+      "number": 31,
+      "speaker": "ANTONY",
+      "text": "Crying “Long live! hail, Caesar!”"
+    },
+    {
+      "number": 31,
+      "speaker": "CASSIUS",
+      "text": "Antony,"
+    },
+    {
+      "number": 32,
+      "speaker": "CASSIUS",
+      "text": "The posture of your blows are yet unknown;"
+    },
+    {
+      "number": 33,
+      "speaker": "CASSIUS",
+      "text": "But for your words, they rob the Hybla bees,"
+    },
+    {
+      "number": 34,
+      "speaker": "CASSIUS",
+      "text": "And leave them honeyless."
+    },
+    {
+      "number": 34,
+      "speaker": "ANTONY",
+      "text": "Not stingless too."
+    },
+    {
+      "number": 35,
+      "speaker": "BRUTUS",
+      "text": "O, yes, and soundless too;"
+    },
+    {
+      "number": 36,
+      "speaker": "BRUTUS",
+      "text": "For you have stol’n their buzzing, Antony,"
+    },
+    {
+      "number": 37,
+      "speaker": "BRUTUS",
+      "text": "And very wisely threat before you sting."
+    },
+    {
+      "number": 38,
+      "speaker": "ANTONY",
+      "text": "Villains, you did not so, when your vile daggers"
+    },
+    {
+      "number": 39,
+      "speaker": "ANTONY",
+      "text": "Hack’d one another in the sides of Caesar:"
+    },
+    {
+      "number": 40,
+      "speaker": "ANTONY",
+      "text": "You show’d your teeth like apes, and fawn’d like hounds,"
+    },
+    {
+      "number": 41,
+      "speaker": "ANTONY",
+      "text": "And bow’d like bondmen, kissing Caesar’s feet;"
+    },
+    {
+      "number": 42,
+      "speaker": "ANTONY",
+      "text": "Whilst damned Casca, like a cur, behind"
+    },
+    {
+      "number": 43,
+      "speaker": "ANTONY",
+      "text": "Struck Caesar on the neck. O you flatterers!"
+    },
+    {
+      "number": 44,
+      "speaker": "CASSIUS",
+      "text": "Flatterers! Now, Brutus, thank yourself:"
+    },
+    {
+      "number": 45,
+      "speaker": "CASSIUS",
+      "text": "This tongue had not offended so to-day,"
+    },
+    {
+      "number": 46,
+      "speaker": "CASSIUS",
+      "text": "If Cassius might have ruled."
+    },
+    {
+      "number": 47,
+      "speaker": "OCTAVIUS",
+      "text": "Come, come, the cause: if arguing make us sweat,"
+    },
+    {
+      "number": 48,
+      "speaker": "OCTAVIUS",
+      "text": "The proof of it will turn to redder drops."
+    },
+    {
+      "number": 49,
+      "speaker": "OCTAVIUS",
+      "text": "Look;"
+    },
+    {
+      "number": 50,
+      "speaker": "OCTAVIUS",
+      "text": "I draw a sword against conspirators;"
+    },
+    {
+      "number": 51,
+      "speaker": "OCTAVIUS",
+      "text": "When think you that the sword goes up again?"
+    },
+    {
+      "number": 52,
+      "speaker": "OCTAVIUS",
+      "text": "Never, till Caesar’s three and thirty wounds"
+    },
+    {
+      "number": 53,
+      "speaker": "OCTAVIUS",
+      "text": "Be well avenged; or till another Caesar"
+    },
+    {
+      "number": 54,
+      "speaker": "OCTAVIUS",
+      "text": "Have added slaughter to the sword of traitors."
+    },
+    {
+      "number": 55,
+      "speaker": "BRUTUS",
+      "text": "Caesar, thou canst not die by traitors’ hands,"
+    },
+    {
+      "number": 56,
+      "speaker": "BRUTUS",
+      "text": "Unless thou bring’st them with thee."
+    },
+    {
+      "number": 56,
+      "speaker": "OCTAVIUS",
+      "text": "So I hope;"
+    },
+    {
+      "number": 57,
+      "speaker": "OCTAVIUS",
+      "text": "I was not born to die on Brutus’ sword."
+    },
+    {
+      "number": 58,
+      "speaker": "BRUTUS",
+      "text": "O, if thou wert the noblest of thy strain,"
+    },
+    {
+      "number": 59,
+      "speaker": "BRUTUS",
+      "text": "Young man, thou couldst not die more honourable."
+    },
+    {
+      "number": 60,
+      "speaker": "CASSIUS",
+      "text": "A peevish schoolboy, worthless of such honour,"
+    },
+    {
+      "number": 61,
+      "speaker": "CASSIUS",
+      "text": "Join’d with a masker and a reveller!"
+    },
+    {
+      "number": 62,
+      "speaker": "ANTONY",
+      "text": "Old Cassius still!"
+    },
+    {
+      "number": 62,
+      "speaker": "OCTAVIUS",
+      "text": "Come, Antony, away!"
+    },
+    {
+      "number": 63,
+      "speaker": "OCTAVIUS",
+      "text": "Defiance, traitors, hurl we in your teeth:"
+    },
+    {
+      "number": 64,
+      "speaker": "OCTAVIUS",
+      "text": "If you dare fight to-day, come to the field;"
+    },
+    {
+      "number": 65,
+      "speaker": "OCTAVIUS",
+      "text": "If not, when you have stomachs."
+    },
+    {
+      "number": 66,
+      "speaker": "CASSIUS",
+      "text": "Why, now, blow wind, swell billow and swim bark!"
+    },
+    {
+      "number": 67,
+      "speaker": "CASSIUS",
+      "text": "The storm is up, and all is on the hazard."
+    },
+    {
+      "number": 68,
+      "speaker": "BRUTUS",
+      "text": "Ho, Lucilius! hark, a word with you."
+    },
+    {
+      "number": 69,
+      "speaker": "LUCILIUS",
+      "text": "Standing forth. My lord? Brutus and Lucilius converse apart."
+    },
+    {
+      "number": 70,
+      "speaker": "CASSIUS",
+      "text": "Messala!"
+    },
+    {
+      "number": 70,
+      "speaker": "MESSALA",
+      "text": "Standing forth. What says my general?"
+    },
+    {
+      "number": 71,
+      "speaker": "CASSIUS",
+      "text": "Messala,"
+    },
+    {
+      "number": 72,
+      "speaker": "CASSIUS",
+      "text": "This is my birth-day; as this very day"
+    },
+    {
+      "number": 73,
+      "speaker": "CASSIUS",
+      "text": "Was Cassius born. Give me thy hand, Messala:"
+    },
+    {
+      "number": 74,
+      "speaker": "CASSIUS",
+      "text": "Be thou my witness that against my will,"
+    },
+    {
+      "number": 75,
+      "speaker": "CASSIUS",
+      "text": "As Pompey was, am I compell’d to set"
+    },
+    {
+      "number": 76,
+      "speaker": "CASSIUS",
+      "text": "Upon one battle all our liberties."
+    },
+    {
+      "number": 77,
+      "speaker": "CASSIUS",
+      "text": "You know that I held Epicurus strong"
+    },
+    {
+      "number": 78,
+      "speaker": "CASSIUS",
+      "text": "And his opinion: now I change my mind,"
+    },
+    {
+      "number": 79,
+      "speaker": "CASSIUS",
+      "text": "And partly credit things that do presage."
+    },
+    {
+      "number": 80,
+      "speaker": "CASSIUS",
+      "text": "Coming from Sardis, on our former ensign"
+    },
+    {
+      "number": 81,
+      "speaker": "CASSIUS",
+      "text": "Two mighty eagles fell, and there they perch’d,"
+    },
+    {
+      "number": 82,
+      "speaker": "CASSIUS",
+      "text": "Gorging and feeding from our soldiers’ hands;"
+    },
+    {
+      "number": 83,
+      "speaker": "CASSIUS",
+      "text": "Who to Philippi here consorted us:"
+    },
+    {
+      "number": 84,
+      "speaker": "CASSIUS",
+      "text": "This morning are they fled away and gone;"
+    },
+    {
+      "number": 85,
+      "speaker": "CASSIUS",
+      "text": "And in their steads do ravens, crows and kites,"
+    },
+    {
+      "number": 86,
+      "speaker": "CASSIUS",
+      "text": "Fly o’er our heads and downward look on us,"
+    },
+    {
+      "number": 87,
+      "speaker": "CASSIUS",
+      "text": "As we were sickly prey: their shadows seem"
+    },
+    {
+      "number": 88,
+      "speaker": "CASSIUS",
+      "text": "A canopy most fatal, under which"
+    },
+    {
+      "number": 89,
+      "speaker": "CASSIUS",
+      "text": "Our army lies, ready to give up the ghost."
+    },
+    {
+      "number": 90,
+      "speaker": "MESSALA",
+      "text": "Believe not so."
+    },
+    {
+      "number": 90,
+      "speaker": "CASSIUS",
+      "text": "I but believe it partly;"
+    },
+    {
+      "number": 91,
+      "speaker": "CASSIUS",
+      "text": "For I am fresh of spirit and resolved"
+    },
+    {
+      "number": 92,
+      "speaker": "CASSIUS",
+      "text": "To meet all perils very constantly."
+    },
+    {
+      "number": 92,
+      "speaker": "BRUTUS",
+      "text": "Even so, Lucilius."
+    },
+    {
+      "number": 93,
+      "speaker": "CASSIUS",
+      "text": "Now, most noble Brutus,"
+    },
+    {
+      "number": 94,
+      "speaker": "CASSIUS",
+      "text": "The gods to-day stand friendly, that we may,"
+    },
+    {
+      "number": 95,
+      "speaker": "CASSIUS",
+      "text": "Lovers in peace, lead on our days to age!"
+    },
+    {
+      "number": 96,
+      "speaker": "CASSIUS",
+      "text": "But since the affairs of men rest still incertain,"
+    },
+    {
+      "number": 97,
+      "speaker": "CASSIUS",
+      "text": "Let’s reason with the worst that may befall."
+    },
+    {
+      "number": 98,
+      "speaker": "CASSIUS",
+      "text": "If we do lose this battle, then is this"
+    },
+    {
+      "number": 99,
+      "speaker": "CASSIUS",
+      "text": "The very last time we shall speak together:"
+    },
+    {
+      "number": 100,
+      "speaker": "CASSIUS",
+      "text": "What are you then determined to do?"
+    },
+    {
+      "number": 101,
+      "speaker": "BRUTUS",
+      "text": "Even by the rule of that philosophy"
+    },
+    {
+      "number": 102,
+      "speaker": "BRUTUS",
+      "text": "By which I did blame Cato for the death"
+    },
+    {
+      "number": 103,
+      "speaker": "BRUTUS",
+      "text": "Which he did give himself, I know not how,"
+    },
+    {
+      "number": 104,
+      "speaker": "BRUTUS",
+      "text": "But I do find it cowardly and vile,"
+    },
+    {
+      "number": 105,
+      "speaker": "BRUTUS",
+      "text": "For fear of what might fall, so to prevent"
+    },
+    {
+      "number": 106,
+      "speaker": "BRUTUS",
+      "text": "The time of life: arming myself with patience"
+    },
+    {
+      "number": 107,
+      "speaker": "BRUTUS",
+      "text": "To stay the providence of some high powers"
+    },
+    {
+      "number": 108,
+      "speaker": "BRUTUS",
+      "text": "That govern us below."
+    },
+    {
+      "number": 108,
+      "speaker": "CASSIUS",
+      "text": "Then, if we lose this battle,"
+    },
+    {
+      "number": 109,
+      "speaker": "CASSIUS",
+      "text": "You are contented to be led in triumph"
+    },
+    {
+      "number": 110,
+      "speaker": "CASSIUS",
+      "text": "Thorough the streets of Rome?"
+    },
+    {
+      "number": 111,
+      "speaker": "BRUTUS",
+      "text": "No, Cassius, no: think not, thou noble Roman,"
+    },
+    {
+      "number": 112,
+      "speaker": "BRUTUS",
+      "text": "That ever Brutus will go bound to Rome;"
+    },
+    {
+      "number": 113,
+      "speaker": "BRUTUS",
+      "text": "He bears too great a mind. But this same day"
+    },
+    {
+      "number": 114,
+      "speaker": "BRUTUS",
+      "text": "Must end that work the ides of March begun;"
+    },
+    {
+      "number": 115,
+      "speaker": "BRUTUS",
+      "text": "And whether we shall meet again I know not."
+    },
+    {
+      "number": 116,
+      "speaker": "BRUTUS",
+      "text": "Therefore our everlasting farewell take:"
+    },
+    {
+      "number": 117,
+      "speaker": "BRUTUS",
+      "text": "Forever, and forever, farewell, Cassius!"
+    },
+    {
+      "number": 118,
+      "speaker": "BRUTUS",
+      "text": "If we do meet again, why, we shall smile;"
+    },
+    {
+      "number": 119,
+      "speaker": "BRUTUS",
+      "text": "If not, why then, this parting was well made."
+    },
+    {
+      "number": 120,
+      "speaker": "CASSIUS",
+      "text": "Forever, and forever, farewell, Brutus!"
+    },
+    {
+      "number": 121,
+      "speaker": "CASSIUS",
+      "text": "If we do meet again, we’ll smile indeed;"
+    },
+    {
+      "number": 122,
+      "speaker": "CASSIUS",
+      "text": "If not, ’tis true this parting was well made."
+    },
+    {
+      "number": 123,
+      "speaker": "BRUTUS",
+      "text": "Why, then, lead on. O, that a man might know"
+    },
+    {
+      "number": 124,
+      "speaker": "BRUTUS",
+      "text": "The end of this day’s business ere it come!"
+    },
+    {
+      "number": 125,
+      "speaker": "BRUTUS",
+      "text": "But it sufficeth that the day will end,"
+    },
+    {
+      "number": 126,
+      "speaker": "BRUTUS",
+      "text": "And then the end is known. Come, ho! away!"
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Octavius, Antony, and their army."
+    },
+    {
+      "after_line": 12,
+      "text": "Enter a Messenger."
+    },
+    {
+      "after_line": 19,
+      "text": "Drum. Enter Brutus, Cassius, and their Army; Lucilius, Titinius, Messala, and others."
+    },
+    {
+      "after_line": 65,
+      "text": "Exeunt Octavius, Antony, and their army."
+    },
+    {
+      "after_line": 126,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "julius_caesar_act5_scene1_gloss1",
+      "line": 5,
+      "phrase": "warn us at Philippi",
+      "definition": "challenge us at Philippi (warn = summon to battle)"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss2",
+      "line": 7,
+      "phrase": "I am in their bosoms",
+      "definition": "I am inside their confidence; I know their minds"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss3",
+      "line": 10,
+      "phrase": "fearful bravery",
+      "definition": "a bravado that masks fear"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss4",
+      "line": 14,
+      "phrase": "bloody sign of battle",
+      "definition": "the red flag (vexillum) raised before a Roman battle to announce engagement"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss5",
+      "line": 18,
+      "phrase": "exigent",
+      "definition": "a pressing moment; a critical juncture"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss6",
+      "line": 19,
+      "phrase": "I do not cross you; but I will do so",
+      "definition": "Octavius's quiet assertion of independence from Antony — a precursor of the coming rupture between triumvirs"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss7",
+      "line": 20,
+      "phrase": "parley",
+      "definition": "a formal conference between opposing commanders before battle, under flag of truce"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss8",
+      "line": 23,
+      "phrase": "answer on their charge",
+      "definition": "respond when they attack"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss9",
+      "line": 33,
+      "phrase": "Hybla bees",
+      "definition": "bees from Mount Hybla in Sicily — proverbial for producing the sweetest honey"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss10",
+      "line": 37,
+      "phrase": "threat before you sting",
+      "definition": "bees buzz before stinging — Brutus's image for Antony's rhetoric"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss11",
+      "line": 42,
+      "phrase": "damned Casca, like a cur, behind",
+      "definition": "damned Casca struck from behind like a dog — Antony's version of the assassination, emphasizing cowardice"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss12",
+      "line": 52,
+      "phrase": "three and thirty wounds",
+      "definition": "Caesar's wound-count per Plutarch (who also gives 23 in another place); Shakespeare rounds up. The precise number mattered to Roman historians as a measure of ritualised violence"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss13",
+      "line": 58,
+      "phrase": "noblest of thy strain",
+      "definition": "noblest of your family stock"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss14",
+      "line": 60,
+      "phrase": "peevish schoolboy",
+      "definition": "petulant schoolboy — Cassius's contempt for Octavius, who was 19; the dismissal proves catastrophic, as Octavius becomes Augustus"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss15",
+      "line": 61,
+      "phrase": "masker and a reveller",
+      "definition": "a party-goer and carouser — Antony's public reputation for loose living"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss16",
+      "line": 66,
+      "phrase": "swell billow and swim bark",
+      "definition": "let the wave swell and the ship sail — nautical surrender to fortune"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss17",
+      "line": 67,
+      "phrase": "all is on the hazard",
+      "definition": "everything is at stake on the throw"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss18",
+      "line": 72,
+      "phrase": "birth-day",
+      "definition": "Cassius's birthday — October 23 per Plutarch; he fights Philippi on his own birthday and dies on it"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss19",
+      "line": 75,
+      "phrase": "As Pompey was",
+      "definition": "as Pompey was at Pharsalus (48 BCE) — compelled against his tactical judgment to stake everything on a single battle against Caesar. Cassius consciously invokes the precedent of the defeated side"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss20",
+      "line": 77,
+      "phrase": "Epicurus",
+      "definition": "Greek philosopher (341–270 BCE); his school rejected divine intervention and dismissed portents as superstition. Cassius is abandoning his Epicureanism in the face of the eagles' flight"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss21",
+      "line": 80,
+      "phrase": "former ensign",
+      "definition": "the leading standard of the army"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss22",
+      "line": 81,
+      "phrase": "Two mighty eagles",
+      "definition": "eagles perching on standards were an auspicious Roman omen; their departure is disastrous. Plutarch reports this incident"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss23",
+      "line": 85,
+      "phrase": "ravens, crows and kites",
+      "definition": "carrion birds — scavengers of battlefield dead; their presence is the Roman worst omen for an army"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss24",
+      "line": 88,
+      "phrase": "canopy most fatal",
+      "definition": "a most death-bringing canopy — the shadow of carrion birds overhead"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss25",
+      "line": 89,
+      "phrase": "give up the ghost",
+      "definition": "die; yield up life"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss26",
+      "line": 95,
+      "phrase": "Lovers in peace",
+      "definition": "devoted friends in peacetime — Elizabethan 'lover' again; Cassius hopes they may live to old age as friends (not romantically)"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss27",
+      "line": 102,
+      "phrase": "Cato",
+      "definition": "Marcus Porcius Cato the Younger, Portia's father; committed suicide at Utica in 46 BCE rather than submit to Caesar. Brutus's in-law and model of Stoic self-killing"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss28",
+      "line": 104,
+      "phrase": "cowardly and vile",
+      "definition": "Brutus once considered suicide cowardly; he is about to revise his position (and does — he kills himself in 5.5)"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss29",
+      "line": 106,
+      "phrase": "arming myself with patience",
+      "definition": "steeling myself with patience — the Stoic virtue"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss30",
+      "line": 107,
+      "phrase": "stay the providence of some high powers",
+      "definition": "await the decision of higher powers — Providence rather than self-determination"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss31",
+      "line": 109,
+      "phrase": "led in triumph",
+      "definition": "paraded as a defeated general in the victor's triumphal procession through Rome — a public humiliation that preceded execution"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss32",
+      "line": 114,
+      "phrase": "end that work the ides of March begun",
+      "definition": "finish what the assassination began — Brutus expects to die, closing the circle"
+    },
+    {
+      "id": "julius_caesar_act5_scene1_gloss33",
+      "line": 117,
+      "phrase": "Forever, and forever, farewell",
+      "definition": "Brutus and Cassius's formal parting — the play's most affecting private moment between them"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "julius_caesar_act5_scene1_ann1",
+      "line_start": 19,
+      "line_end": 19,
+      "citation_display": "Julius Caesar 5.1.19",
+      "category": "structural",
+      "title": "'I do not cross you; but I will do so' — Octavius emerges",
+      "body": "The line is a single beat and a piece of political foreshadowing. Antony has just told Octavius to take the left wing; Octavius says he will take the right. Antony remonstrates; Octavius, precisely and mildly, refuses to yield: 'I do not cross you; but I will do so.' The sentence negates itself syntactically and asserts itself politically. For the first time in the play, Octavius stands as a figure who can overrule Antony.\n\nThis is the play's quietest piece of historical foreshadowing. Octavius — nineteen years old at Philippi — will by 31 BCE defeat Antony at Actium, by 27 BCE be Augustus, and rule as first emperor for 41 years. Cassius's contemptuous 'peevish schoolboy' (5.1 L60) is spoken of a teenager who will preside over the transition from Republic to Empire and survive into old age. Shakespeare gives the hinge one line. The reader who hears it hears the whole Augustan settlement turning on the words 'but I will do so.'",
+      "sources": [
+        "R. Syme, *The Roman Revolution* (1939), ch. 15",
+        "Paul Zanker, *The Power of Images in the Age of Augustus* (1988)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act5_scene1_ann2",
+      "line_start": 71,
+      "line_end": 92,
+      "citation_display": "Julius Caesar 5.1.71–92",
+      "category": "thematic",
+      "title": "Cassius on his birthday: the Epicurean who believes the eagles",
+      "body": "Cassius's birthday is 23 October; Philippi's first battle was fought on that date in 42 BCE, per Plutarch. Shakespeare preserves the coincidence and gives Cassius the Messala speech about the eagles, the ravens, and his abandoned Epicureanism. The speech is Cassius's most revealing moment of interior life.\n\nEpicureanism, in the Roman sense Cassius had professed, is philosophically committed to a world without divine intervention and to treating omens as superstition. Cassius's admission that he has changed his mind on this — 'I held Epicurus strong / And his opinion: now I change my mind, / And partly credit things that do presage' — is a philosophical defection at the eve of the decisive battle of his life. The man who mocked Roman augurers in 1.2 and 1.3 now reads bird-flights as omens, and reads them correctly: his eagles have left, the carrion birds have come, and he will be dead by nightfall.\n\nThe play's philosophical map has been complex. Brutus is a Stoic who has argued against suicide (5.1 L101–108) and will commit suicide (5.5). Cassius is an Epicurean who has mocked omens (1.3) and now reads them faithfully. Each man ends the play having partly inverted his philosophy to meet his circumstances. Shakespeare is showing that the philosophical commitments that produced the conspiracy were theoretical; the circumstances that produced its end are not. Philosophy is unable to hold the shape events force on it.",
+      "sources": [
+        "Plutarch, *Life of Brutus* §39 (North, 1579)",
+        "Paul A. Cantor, *Shakespeare's Rome* (1976)",
+        "Miriam Griffin, 'Philosophy, Cato, and Roman Suicide', *G&R* 33 (1986)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act5_scene1_ann3",
+      "line_start": 93,
+      "line_end": 122,
+      "citation_display": "Julius Caesar 5.1.93–122",
+      "category": "thematic",
+      "title": "'Forever and forever farewell' — the play's most quietly affecting moment",
+      "body": "The exchange between Brutus and Cassius just before the battle — 'Forever, and forever, farewell, Cassius! / If we do meet again, why, we shall smile; / If not, why then, this parting was well made.' — is one of Shakespeare's best short elegies between two men who know they are unlikely to live out the day. The formality carries the feeling. Neither speaks of love directly; both use the register of republican-Roman farewell.\n\nThe scene turns also on the word 'lovers' again: 'The gods to-day stand friendly, that we may, / Lovers in peace, lead on our days to age!' Cassius uses the Elizabethan sense — devoted friends, trusted allies — in the same register Brutus will use in 3.2's oration. The word tracks through the play as a marker of the male political friendship that these two men have partly achieved and are about to lose.\n\nNote also Brutus's revision on suicide. In response to Cassius's direct question — what will he do if they lose? — Brutus answers, initially, with a Stoic argument against suicide: he once blamed Cato for it and still finds it 'cowardly and vile.' But then, asked whether he will allow himself to be led in triumph through Rome, he answers 'No, Cassius, no... He bears too great a mind.' Shakespeare has him close the door on one kind of self-killing while leaving open the one he will actually choose. The position is unstable; 5.5 will resolve it.",
+      "sources": [
+        "Plutarch, *Life of Brutus* §40 (North, 1579)",
+        "A. C. Bradley (1904)",
+        "Kahn (1997)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "julius_caesar_act5_scene1_q1",
+      "kind": "structural",
+      "prompt": "What does Octavius's 'I do not cross you; but I will do so' signal?",
+      "options": [
+        "A grammatical error",
+        "The first moment Octavius overrules Antony — a one-line foreshadowing of the Augustan settlement in which the 'peevish schoolboy' of 19 will outlast Antony and become first Roman emperor",
+        "A joke",
+        "Confusion"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 19,
+      "anchor_line_end": 19
+    },
+    {
+      "id": "julius_caesar_act5_scene1_q2",
+      "kind": "close_reading",
+      "prompt": "Cassius's speech about the eagles and the ravens reveals:",
+      "options": [
+        "His interest in ornithology",
+        "His philosophical defection — the committed Epicurean who mocked omens (1.2, 1.3) is now reading bird-flight as portent; the play shows philosophy failing to hold against the circumstances of its test",
+        "Military strategy",
+        "Religious piety"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 77,
+      "anchor_line_end": 92
+    },
+    {
+      "id": "julius_caesar_act5_scene1_q3",
+      "kind": "close_reading",
+      "prompt": "'Lovers in peace, lead on our days to age' uses 'lovers' in which sense?",
+      "options": [
+        "Romantic partners",
+        "Devoted friends — the Elizabethan sense, the same usage Brutus makes in 3.2's 'Romans, countrymen, and lovers' and Artemidorus uses in 2.3",
+        "Family members",
+        "A military unit"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 94,
+      "anchor_line_end": 95
+    },
+    {
+      "id": "julius_caesar_act5_scene1_q4",
+      "kind": "theme",
+      "prompt": "Brutus's answer to 'what will you do if we lose?' is contradictory — he argues against suicide but refuses to be led in triumph. This instability foreshadows:",
+      "options": [
+        "Nothing in particular",
+        "His suicide in 5.5 — the Stoic case against self-killing that he cited against Cato is about to be revised under the actual pressure of defeat",
+        "Peace negotiations",
+        "Escape plan"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 101,
+      "anchor_line_end": 122
+    }
+  ]
+}

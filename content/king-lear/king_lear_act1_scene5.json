@@ -1,0 +1,345 @@
+{
+  "section_id": "king_lear_act1_scene5",
+  "work_id": "king-lear",
+  "sequence": 5,
+  "act": 1,
+  "scene": 5,
+  "kind": "scene",
+  "scene_title": "Court before the Duke of Albany's palace",
+  "line_count": 42,
+  "word_count": 338,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KING LEAR",
+      "text": "Go you before to Gloucester with these letters."
+    },
+    {
+      "number": 2,
+      "speaker": "KING LEAR",
+      "text": "Acquaint my daughter no further with any thing you"
+    },
+    {
+      "number": 3,
+      "speaker": "KING LEAR",
+      "text": "know than comes from her demand out of the letter."
+    },
+    {
+      "number": 4,
+      "speaker": "KING LEAR",
+      "text": "If your diligence be not speedy, I shall be there afore you."
+    },
+    {
+      "number": 5,
+      "speaker": "KENT",
+      "text": "I will not sleep, my lord, till I have delivered your letter."
+    },
+    {
+      "number": 6,
+      "speaker": "FOOL",
+      "text": "If a man’s brains were in’s heels, were’t not in danger of kibes?"
+    },
+    {
+      "number": 7,
+      "speaker": "KING LEAR",
+      "text": "Ay, boy."
+    },
+    {
+      "number": 8,
+      "speaker": "FOOL",
+      "text": "Then, I prithee, be merry; thy wit shall ne’er go slip-shod."
+    },
+    {
+      "number": 9,
+      "speaker": "KING LEAR",
+      "text": "Ha, ha, ha!"
+    },
+    {
+      "number": 10,
+      "speaker": "FOOL",
+      "text": "Shalt see thy other daughter will use thee kindly; for though she’s"
+    },
+    {
+      "number": 11,
+      "speaker": "FOOL",
+      "text": "as like this as a crab’s like an apple, yet I can"
+    },
+    {
+      "number": 12,
+      "speaker": "FOOL",
+      "text": "tell what I can tell."
+    },
+    {
+      "number": 13,
+      "speaker": "KING LEAR",
+      "text": "Why, what canst thou tell, my boy?"
+    },
+    {
+      "number": 14,
+      "speaker": "FOOL",
+      "text": "She will taste as like this as a crab does to a"
+    },
+    {
+      "number": 15,
+      "speaker": "FOOL",
+      "text": "crab. Thou canst tell why one’s nose stands i’ the middle on’s"
+    },
+    {
+      "number": 16,
+      "speaker": "FOOL",
+      "text": "face?"
+    },
+    {
+      "number": 16,
+      "speaker": "KING LEAR",
+      "text": "No."
+    },
+    {
+      "number": 17,
+      "speaker": "FOOL",
+      "text": "Why, to keep one’s eyes of either side’s nose; that what a"
+    },
+    {
+      "number": 18,
+      "speaker": "FOOL",
+      "text": "man cannot smell out, he may spy into."
+    },
+    {
+      "number": 19,
+      "speaker": "KING LEAR",
+      "text": "I did her wrong—"
+    },
+    {
+      "number": 20,
+      "speaker": "FOOL",
+      "text": "Canst tell how an oyster makes his shell?"
+    },
+    {
+      "number": 21,
+      "speaker": "KING LEAR",
+      "text": "No."
+    },
+    {
+      "number": 22,
+      "speaker": "FOOL",
+      "text": "Nor I neither; but I can tell why a snail has a house."
+    },
+    {
+      "number": 23,
+      "speaker": "KING LEAR",
+      "text": "Why?"
+    },
+    {
+      "number": 24,
+      "speaker": "FOOL",
+      "text": "Why, to put his head in; not to give it away to"
+    },
+    {
+      "number": 25,
+      "speaker": "FOOL",
+      "text": "his daughters, and leave his horns without a case."
+    },
+    {
+      "number": 26,
+      "speaker": "KING LEAR",
+      "text": "I will forget my nature. So kind a father! Be my horses ready?"
+    },
+    {
+      "number": 27,
+      "speaker": "FOOL",
+      "text": "Thy asses are gone about ’em. The reason why the seven stars"
+    },
+    {
+      "number": 28,
+      "speaker": "FOOL",
+      "text": "are no more than seven is a pretty reason."
+    },
+    {
+      "number": 29,
+      "speaker": "KING LEAR",
+      "text": "Because they are not eight?"
+    },
+    {
+      "number": 30,
+      "speaker": "FOOL",
+      "text": "Yes, indeed: thou wouldst make a good fool."
+    },
+    {
+      "number": 31,
+      "speaker": "KING LEAR",
+      "text": "To take ’t again perforce! Monster ingratitude!"
+    },
+    {
+      "number": 32,
+      "speaker": "FOOL",
+      "text": "If thou wert my fool, nuncle, I’ld have thee beaten for being"
+    },
+    {
+      "number": 33,
+      "speaker": "FOOL",
+      "text": "old before thy time."
+    },
+    {
+      "number": 33,
+      "speaker": "KING LEAR",
+      "text": "How’s that?"
+    },
+    {
+      "number": 34,
+      "speaker": "FOOL",
+      "text": "Thou shouldst not have been old till thou hadst been wise."
+    },
+    {
+      "number": 35,
+      "speaker": "KING LEAR",
+      "text": "O, let me not be mad, not mad, sweet heaven!"
+    },
+    {
+      "number": 36,
+      "speaker": "KING LEAR",
+      "text": "Keep me in temper: I would not be mad!"
+    },
+    {
+      "number": 37,
+      "speaker": "GENTLEMAN",
+      "text": "Ready, my lord."
+    },
+    {
+      "number": 37,
+      "speaker": "KING LEAR",
+      "text": "Come, boy."
+    },
+    {
+      "number": 38,
+      "speaker": "FOOL",
+      "text": "She that’s a maid now, and laughs at my departure,"
+    },
+    {
+      "number": 39,
+      "speaker": "FOOL",
+      "text": "Shall not be a maid long, unless things be cut shorter."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter King Lear, Kent, and Fool."
+    },
+    {
+      "after_line": 5,
+      "text": "Exit."
+    },
+    {
+      "after_line": 36,
+      "text": "Enter Gentleman."
+    },
+    {
+      "after_line": 36,
+      "text": "How now! are the horses ready?"
+    },
+    {
+      "after_line": 39,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act1_scene5_gloss1",
+      "line": 1,
+      "phrase": "letters",
+      "definition": "messages sent to Regan"
+    },
+    {
+      "id": "king_lear_act1_scene5_gloss2",
+      "line": 3,
+      "phrase": "demand out of the letter",
+      "definition": "question arising from the letter"
+    },
+    {
+      "id": "king_lear_act1_scene5_gloss4",
+      "line": 6,
+      "phrase": "kibes",
+      "definition": "chilblains — painful heel-sores"
+    },
+    {
+      "id": "king_lear_act1_scene5_gloss5",
+      "line": 15,
+      "phrase": "crab",
+      "definition": "crab-apple — the Fool's comparisons multiply"
+    },
+    {
+      "id": "king_lear_act1_scene5_gloss7",
+      "line": 27,
+      "phrase": "seven stars",
+      "definition": "the Pleiades — a standard riddle-cluster"
+    },
+    {
+      "id": "king_lear_act1_scene5_gloss8",
+      "line": 36,
+      "phrase": "I would not be mad",
+      "definition": "Lear's first explicit fear of losing his reason"
+    },
+    {
+      "id": "king_lear_act1_scene5_gloss9",
+      "line": 36,
+      "phrase": "keep me in temper",
+      "definition": "keep me sane; preserve my mental balance"
+    },
+    {
+      "id": "king_lear_act1_scene5_gloss10",
+      "line": 3,
+      "phrase": "demand out of the letter",
+      "definition": "any question Regan might ask based on my letter"
+    },
+    {
+      "id": "king_lear_act1_scene5_gloss14",
+      "line": 22,
+      "phrase": "snail has a house",
+      "definition": "the Fool's riddle — the snail keeps its shell; Lear gave his away"
+    },
+    {
+      "id": "king_lear_act1_scene5_gloss15",
+      "line": 27,
+      "phrase": "seven stars",
+      "definition": "the Pleiades — the Fool's riddle (why seven? because they are not eight)"
+    },
+    {
+      "id": "king_lear_act1_scene5_gloss16",
+      "line": 38,
+      "phrase": "she that's a maid now",
+      "definition": "the Fool's final parting jest — a maid who laughs at Lear's departure won't be a maid long"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act1_scene5_ann1",
+      "line_start": 36,
+      "line_end": 42,
+      "citation_display": "King Lear 1.5.36–42",
+      "category": "thematic",
+      "title": "'I would not be mad' — Lear names the fear",
+      "body": "In six lines at the end of 1.5 Lear says aloud what he has been avoiding: 'O, let me not be mad, not mad, sweet heaven! / Keep me in temper: I would not be mad.' This is the first explicit admission. Before this he has raged; now he has cognitive insight into his own trajectory. The self-awareness is not a protection — he goes mad anyway — but it is the beginning of the play's central consciousness, the king watching himself come apart. Every later madness has this moment as its root: Lear knew, and the knowing could not save him.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act1_scene5_q1",
+      "kind": "close_reading",
+      "prompt": "What does Lear recognize at the end of 1.5?",
+      "options": [
+        "That he has made a mistake with his retinue",
+        "That he fears losing his reason — 'let me not be mad, not mad, sweet heaven!' — the first explicit acknowledgment of the trajectory toward madness",
+        "That he wishes to see Cordelia",
+        "That the Fool is lying"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 36,
+      "anchor_line_end": 42
+    }
+  ]
+}

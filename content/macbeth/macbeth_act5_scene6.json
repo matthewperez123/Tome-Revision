@@ -1,0 +1,124 @@
+{
+  "section_id": "macbeth_act5_scene6",
+  "work_id": "macbeth",
+  "sequence": 26,
+  "act": 5,
+  "scene": 6,
+  "kind": "scene",
+  "scene_title": "Dunsinane. Before the castle",
+  "line_count": 11,
+  "word_count": 79,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "MALCOLM",
+      "text": "Now near enough: your leavy screens throw down,"
+    },
+    {
+      "number": 2,
+      "speaker": "MALCOLM",
+      "text": "And show like those you are. You, worthy uncle,"
+    },
+    {
+      "number": 3,
+      "speaker": "MALCOLM",
+      "text": "Shall, with my cousin, your right-noble son,"
+    },
+    {
+      "number": 4,
+      "speaker": "MALCOLM",
+      "text": "Lead our first battle: worthy Macduff and we"
+    },
+    {
+      "number": 5,
+      "speaker": "MALCOLM",
+      "text": "Shall take upon’s what else remains to do,"
+    },
+    {
+      "number": 6,
+      "speaker": "MALCOLM",
+      "text": "According to our order."
+    },
+    {
+      "number": 6,
+      "speaker": "SIWARD",
+      "text": "Fare you well."
+    },
+    {
+      "number": 7,
+      "speaker": "SIWARD",
+      "text": "Do we but find the tyrant’s power to-night,"
+    },
+    {
+      "number": 8,
+      "speaker": "SIWARD",
+      "text": "Let us be beaten, if we cannot fight."
+    },
+    {
+      "number": 9,
+      "speaker": "MACDUFF",
+      "text": "Make all our trumpets speak; give them all breath,"
+    },
+    {
+      "number": 10,
+      "speaker": "MACDUFF",
+      "text": "Those clamorous harbingers of blood and death."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Drum and colours. Enter Malcolm, old Siward, Macduff, and their Army, with boughs."
+    },
+    {
+      "after_line": 10,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act5_scene6_gloss2",
+      "line": 4,
+      "phrase": "battle",
+      "definition": "division of the army"
+    },
+    {
+      "id": "macbeth_act5_scene6_gloss4",
+      "line": 10,
+      "phrase": "harbingers of blood",
+      "definition": "announcers of the coming slaughter"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act5_scene6_ann1",
+      "line_start": 1,
+      "line_end": 10,
+      "citation_display": "Macbeth 5.6.1–10",
+      "category": "structural",
+      "title": "The order to drop the branches",
+      "body": "Eleven lines. Malcolm tells his soldiers to throw down the branches they have been carrying — the prophecy has served its purpose, and now the army must be seen. The scene is the precise inverse of 5.4 (the order to cut branches). Shakespeare frames the defeat of equivocation as two short scenes bracketing the 'tomorrow' speech: 5.4 prepares the trick, 5.6 reveals it. The pivot is Macbeth's speech in 5.5.",
+      "sources": [
+        "Harold Goddard (1951)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act5_scene6_q1",
+      "kind": "structural",
+      "prompt": "5.6's eleven lines function as:",
+      "options": [
+        "Filler",
+        "The reveal — soldiers drop the branches they used to disguise their numbers in 5.4",
+        "A banquet",
+        "A death scene"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 1,
+      "anchor_line_end": 10
+    }
+  ]
+}

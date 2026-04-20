@@ -1,0 +1,615 @@
+{
+  "section_id": "macbeth_act5_scene5",
+  "work_id": "macbeth",
+  "sequence": 25,
+  "act": 5,
+  "scene": 5,
+  "kind": "scene",
+  "scene_title": "Dunsinane. Within the castle",
+  "line_count": 54,
+  "word_count": 413,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "MACBETH",
+      "text": "Hang out our banners on the outward walls;"
+    },
+    {
+      "number": 2,
+      "speaker": "MACBETH",
+      "text": "The cry is still “They come:” our castle’s strength"
+    },
+    {
+      "number": 3,
+      "speaker": "MACBETH",
+      "text": "Will laugh a siege to scorn: here let them lie"
+    },
+    {
+      "number": 4,
+      "speaker": "MACBETH",
+      "text": "Till famine and the ague eat them up:"
+    },
+    {
+      "number": 5,
+      "speaker": "MACBETH",
+      "text": "Were they not forced with those that should be ours,"
+    },
+    {
+      "number": 6,
+      "speaker": "MACBETH",
+      "text": "We might have met them dareful, beard to beard,"
+    },
+    {
+      "number": 7,
+      "speaker": "MACBETH",
+      "text": "And beat them backward home. A cry of women within. What is that noise?"
+    },
+    {
+      "number": 8,
+      "speaker": "SEYTON",
+      "text": "It is the cry of women, my good lord."
+    },
+    {
+      "number": 9,
+      "speaker": "MACBETH",
+      "text": "I have almost forgot the taste of fears:"
+    },
+    {
+      "number": 10,
+      "speaker": "MACBETH",
+      "text": "The time has been, my senses would have cool’d"
+    },
+    {
+      "number": 11,
+      "speaker": "MACBETH",
+      "text": "To hear a night-shriek; and my fell of hair"
+    },
+    {
+      "number": 12,
+      "speaker": "MACBETH",
+      "text": "Would at a dismal treatise rouse and stir"
+    },
+    {
+      "number": 13,
+      "speaker": "MACBETH",
+      "text": "As life were in’t: I have supp’d full with horrors;"
+    },
+    {
+      "number": 14,
+      "speaker": "MACBETH",
+      "text": "Direness, familiar to my slaughterous thoughts,"
+    },
+    {
+      "number": 15,
+      "speaker": "MACBETH",
+      "text": "Cannot once start me."
+    },
+    {
+      "number": 15,
+      "speaker": "SEYTON",
+      "text": "The queen, my lord, is dead."
+    },
+    {
+      "number": 16,
+      "speaker": "MACBETH",
+      "text": "She should have died hereafter;"
+    },
+    {
+      "number": 17,
+      "speaker": "MACBETH",
+      "text": "There would have been a time for such a word."
+    },
+    {
+      "number": 18,
+      "speaker": "MACBETH",
+      "text": "To-morrow, and to-morrow, and to-morrow,"
+    },
+    {
+      "number": 19,
+      "speaker": "MACBETH",
+      "text": "Creeps in this petty pace from day to day"
+    },
+    {
+      "number": 20,
+      "speaker": "MACBETH",
+      "text": "To the last syllable of recorded time,"
+    },
+    {
+      "number": 21,
+      "speaker": "MACBETH",
+      "text": "And all our yesterdays have lighted fools"
+    },
+    {
+      "number": 22,
+      "speaker": "MACBETH",
+      "text": "The way to dusty death. Out, out, brief candle!"
+    },
+    {
+      "number": 23,
+      "speaker": "MACBETH",
+      "text": "Life’s but a walking shadow, a poor player"
+    },
+    {
+      "number": 24,
+      "speaker": "MACBETH",
+      "text": "That struts and frets his hour upon the stage"
+    },
+    {
+      "number": 25,
+      "speaker": "MACBETH",
+      "text": "And then is heard no more: it is a tale"
+    },
+    {
+      "number": 26,
+      "speaker": "MACBETH",
+      "text": "Told by an idiot, full of sound and fury,"
+    },
+    {
+      "number": 27,
+      "speaker": "MACBETH",
+      "text": "Signifying nothing."
+    },
+    {
+      "number": 27,
+      "speaker": "MESSENGER",
+      "text": "Gracious my lord,"
+    },
+    {
+      "number": 28,
+      "speaker": "MESSENGER",
+      "text": "I should report that which I say I saw,"
+    },
+    {
+      "number": 29,
+      "speaker": "MESSENGER",
+      "text": "But know not how to do it."
+    },
+    {
+      "number": 30,
+      "speaker": "MACBETH",
+      "text": "Well, say, sir."
+    },
+    {
+      "number": 31,
+      "speaker": "MESSENGER",
+      "text": "As I did stand my watch upon the hill,"
+    },
+    {
+      "number": 32,
+      "speaker": "MESSENGER",
+      "text": "I look’d toward Birnam, and anon, methought,"
+    },
+    {
+      "number": 33,
+      "speaker": "MESSENGER",
+      "text": "The wood began to move."
+    },
+    {
+      "number": 33,
+      "speaker": "MACBETH",
+      "text": "Liar and slave!"
+    },
+    {
+      "number": 34,
+      "speaker": "MESSENGER",
+      "text": "Let me endure your wrath, if’t be not so:"
+    },
+    {
+      "number": 35,
+      "speaker": "MESSENGER",
+      "text": "Within this three mile may you see it coming;"
+    },
+    {
+      "number": 36,
+      "speaker": "MESSENGER",
+      "text": "I say, a moving grove."
+    },
+    {
+      "number": 36,
+      "speaker": "MACBETH",
+      "text": "If thou speak’st false,"
+    },
+    {
+      "number": 37,
+      "speaker": "MACBETH",
+      "text": "Upon the next tree shalt thou hang alive,"
+    },
+    {
+      "number": 38,
+      "speaker": "MACBETH",
+      "text": "Till famine cling thee: if thy speech be sooth,"
+    },
+    {
+      "number": 39,
+      "speaker": "MACBETH",
+      "text": "I care not if thou dost for me as much."
+    },
+    {
+      "number": 40,
+      "speaker": "MACBETH",
+      "text": "I pull in resolution, and begin"
+    },
+    {
+      "number": 41,
+      "speaker": "MACBETH",
+      "text": "To doubt the equivocation of the fiend"
+    },
+    {
+      "number": 42,
+      "speaker": "MACBETH",
+      "text": "That lies like truth: “Fear not, till Birnam wood"
+    },
+    {
+      "number": 43,
+      "speaker": "MACBETH",
+      "text": "Do come to Dunsinane:” and now a wood"
+    },
+    {
+      "number": 44,
+      "speaker": "MACBETH",
+      "text": "Comes toward Dunsinane. Arm, arm, and out!"
+    },
+    {
+      "number": 45,
+      "speaker": "MACBETH",
+      "text": "If this which he avouches does appear,"
+    },
+    {
+      "number": 46,
+      "speaker": "MACBETH",
+      "text": "There is nor flying hence nor tarrying here."
+    },
+    {
+      "number": 47,
+      "speaker": "MACBETH",
+      "text": "I gin to be aweary of the sun,"
+    },
+    {
+      "number": 48,
+      "speaker": "MACBETH",
+      "text": "And wish the estate o’ the world were now undone."
+    },
+    {
+      "number": 49,
+      "speaker": "MACBETH",
+      "text": "Ring the alarum-bell! Blow, wind! come, wrack!"
+    },
+    {
+      "number": 50,
+      "speaker": "MACBETH",
+      "text": "At least we’ll die with harness on our back."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Macbeth, Seyton, and Soldiers, with drum and colours."
+    },
+    {
+      "after_line": 8,
+      "text": "Exit."
+    },
+    {
+      "after_line": 15,
+      "text": "Reenter Seyton."
+    },
+    {
+      "after_line": 15,
+      "text": "Wherefore was that cry?"
+    },
+    {
+      "after_line": 27,
+      "text": "Enter a Messenger."
+    },
+    {
+      "after_line": 27,
+      "text": "Thou comest to use thy tongue; thy story quickly."
+    },
+    {
+      "after_line": 50,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act5_scene5_gloss1",
+      "line": 1,
+      "phrase": "banners on the outward walls",
+      "definition": "battle flags displayed defiantly on the castle's outer walls"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss2",
+      "line": 3,
+      "phrase": "laugh a siege to scorn",
+      "definition": "mock any siege; defy it"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss3",
+      "line": 4,
+      "phrase": "ague",
+      "definition": "fever — starvation and sickness will destroy the besiegers"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss6",
+      "line": 13,
+      "phrase": "supp’d full with horrors",
+      "definition": "Macbeth's most chilling self-diagnosis: I have had my fill of horrors — they cannot move me anymore"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss7",
+      "line": 14,
+      "phrase": "Direness, familiar to my slaughterous thoughts",
+      "definition": "dreadful things have become familiar to my murderous mind"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss8",
+      "line": 15,
+      "phrase": "The queen, my lord, is dead",
+      "definition": "Seyton's terse announcement — Lady Macbeth's death delivered as a bureaucratic report"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss9",
+      "line": 16,
+      "phrase": "She should have died hereafter",
+      "definition": "she should have died some time later — Macbeth's flat, disordered response; the phrase is deliberately unanchored"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss10",
+      "line": 17,
+      "phrase": "time for such a word",
+      "definition": "a proper occasion for (announcing) such a thing"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss11",
+      "line": 18,
+      "phrase": "To-morrow, and to-morrow, and to-morrow",
+      "definition": "the play's nihilist anthem; time as mechanical repetition, drained of meaning"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss12",
+      "line": 19,
+      "phrase": "petty pace",
+      "definition": "a small, trivial pace — life figured as a minor stride across time"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss13",
+      "line": 20,
+      "phrase": "last syllable of recorded time",
+      "definition": "the very end of all history"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss14",
+      "line": 21,
+      "phrase": "all our yesterdays",
+      "definition": "every past day"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss15",
+      "line": 22,
+      "phrase": "dusty death",
+      "definition": "the extinction of death — reducing the body to dust"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss16",
+      "line": 22,
+      "phrase": "brief candle",
+      "definition": "life as a short-burning candle — a classic emblem"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss17",
+      "line": 23,
+      "phrase": "walking shadow",
+      "definition": "life as a mere shadow that walks — insubstantial, mimic of reality"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss18",
+      "line": 23,
+      "phrase": "poor player",
+      "definition": "unskilled actor; pathetic performer"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss19",
+      "line": 24,
+      "phrase": "struts and frets his hour upon the stage",
+      "definition": "swaggers and worries for his brief stage time — life as a bad theatrical performance"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss21",
+      "line": 27,
+      "phrase": "Signifying nothing",
+      "definition": "meaning nothing at all — the speech's most famous phrase; the end of meaning itself"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss22",
+      "line": 33,
+      "phrase": "The wood began to move",
+      "definition": "Birnam wood advancing to Dunsinane — the prophecy beginning to fulfill"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss23",
+      "line": 33,
+      "phrase": "Liar and slave!",
+      "definition": "Macbeth refuses the messenger's report — still in denial"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss24",
+      "line": 38,
+      "phrase": "cling thee",
+      "definition": "shrivel; waste you away (from starvation)"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss25",
+      "line": 41,
+      "phrase": "the equivocation of the fiend",
+      "definition": "the devil's double-speaking — the Witches' prophecy was literal but misleading"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss26",
+      "line": 42,
+      "phrase": "lies like truth",
+      "definition": "falsehood that has the appearance of truth"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss28",
+      "line": 48,
+      "phrase": "wish the estate o’ the world were now undone",
+      "definition": "wish the ordered state of the world undone — the Witches' 1.1 paradox completing itself"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss29",
+      "line": 49,
+      "phrase": "alarum-bell",
+      "definition": "the bell that rings the call to arms"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss30",
+      "line": 49,
+      "phrase": "wrack",
+      "definition": "destruction; ruin"
+    },
+    {
+      "id": "macbeth_act5_scene5_gloss31",
+      "line": 50,
+      "phrase": "harness",
+      "definition": "armor"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act5_scene5_ann1",
+      "line_start": 15,
+      "line_end": 17,
+      "citation_display": "Macbeth 5.5.15–17",
+      "category": "structural",
+      "title": "'The queen, my lord, is dead' — the flatness is the point",
+      "body": "Seyton delivers Lady Macbeth's death in five words. Macbeth's reply is almost as short: 'She should have died hereafter; / There would have been a time for such a word.' The couple who opened Act 1 writing to each other about glorious futures now communicates through a functionary's terse report and a husband's disordered shrug.\n\nThe flatness is the point. Macbeth does not weep; he notes. The woman who drove him to regicide, the wife whose hands he once could not look at, the mother of his unborn children (the 'babe that milks me' of 1.7) — dead, and his first response is a schedule complaint. She should have died later.\n\nShakespeare's refusal to give Macbeth any grief at this moment is not authorial coldness. It is authorial precision. The man has 'supp'd full with horrors' (L13, one line earlier). The direness his slaughterous thoughts have learned has cauterized the response to death itself. The tragedy's argument — that continued evil extinguishes feeling — has arrived at its strongest demonstration.",
+      "sources": [
+        "A. C. Bradley (1904)",
+        "Harold Bloom (1998)",
+        "Paul A. Kottman (2009)"
+      ]
+    },
+    {
+      "id": "macbeth_act5_scene5_ann2",
+      "line_start": 18,
+      "line_end": 27,
+      "citation_display": "Macbeth 5.5.18–27",
+      "category": "thematic",
+      "title": "'Tomorrow and tomorrow and tomorrow': nihilism in its context",
+      "body": "The speech's nihilism is not abstract. It arrives in a specific context: Macbeth has just learned his wife is dead, and Shakespeare immediately follows her death with his most extended meditation on meaninglessness. The 'signifying nothing' is addressed to the life that has just ended.\n\nThe speech's philosophical content has been read as precocious existentialism (Macbeth as Shakespeare's Camus), as medieval contemptus mundi (life as shadow in the tradition of Thomas à Kempis), and as characterization (the nihilism of a man who has destroyed everything he cared about). All three readings are right simultaneously.\n\nWhat makes the speech bearable, theatrically, is the precision of its grammar. 'To-morrow, and to-morrow, and to-morrow, / Creeps in this petty pace from day to day / To the last syllable of recorded time.' The future and the past collapse into one mechanical process. The iambic pentameter ticks like a clock. Time is not the enemy of meaning here; time is the absence of meaning, revealed.\n\nThe speech is where Macbeth's tragedy concentrates. He has killed Duncan for a crown, lost his wife, killed innocents, and arrived at the conclusion that it was all sound and fury. Shakespeare does not correct him. The play's conclusion — Malcolm's restoration, the healing of the state — is given to others. Macbeth's voice, in his last major speech, finds only the void.",
+      "sources": [
+        "William Hazlitt, *Characters of Shakespeare's Plays* (1817)",
+        "G. Wilson Knight, *The Wheel of Fire* (1930)",
+        "Jan Kott, *Shakespeare Our Contemporary* (1964)",
+        "Harold Bloom (1998)"
+      ]
+    },
+    {
+      "id": "macbeth_act5_scene5_ann3",
+      "line_start": 41,
+      "line_end": 50,
+      "citation_display": "Macbeth 5.5.41–50",
+      "category": "thematic",
+      "title": "'The equivocation of the fiend'",
+      "body": "Told that Birnam wood is moving, Macbeth names his defeat: 'I pull in resolution, and begin / To doubt the equivocation of the fiend, / That lies like truth.' The doctrine the Porter associated with Henry Garnet in 2.3 — swearing truly while reserving mental truths — has been applied to him by the Sisters. His own 'serpent under the flower' method has been turned.\n\nThe line closes a structural arc. The play's first great paradox ('Fair is foul') was announced by the Witches in 1.1. Its second ('Look like the innocent flower, / But be the serpent under't') was delivered by Lady Macbeth in 1.5. Now, at the end, Macbeth is the victim of the same technique he helped promulgate. The political allegory (Garnet, Gunpowder Plot, Jesuit equivocation) meets its ethical match: equivocation as a doctrine of power returns to destroy those who practiced it.",
+      "sources": [
+        "Garry Wills, *Witches and Jesuits* (1995)",
+        "William Empson (1952)",
+        "Alvin Kernan (1995)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act5_scene5_q1",
+      "kind": "structural",
+      "prompt": "Seyton's 'The queen, my lord, is dead' is followed by Macbeth's:",
+      "options": [
+        "Weeping",
+        "'She should have died hereafter' — a flat schedule complaint; the tragic point is the absence of grief",
+        "A speech of love",
+        "Prayers"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 15,
+      "anchor_line_end": 17
+    },
+    {
+      "id": "macbeth_act5_scene5_q2",
+      "kind": "theme",
+      "prompt": "The 'tomorrow' speech's nihilism arrives:",
+      "options": [
+        "Out of nowhere",
+        "Immediately after Lady Macbeth's death announcement — the meaninglessness is addressed to her life",
+        "Mid-battle",
+        "At dawn"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 15,
+      "anchor_line_end": 27
+    },
+    {
+      "id": "macbeth_act5_scene5_q3",
+      "kind": "close_reading",
+      "prompt": "'Signifying nothing' is the speech's:",
+      "options": [
+        "Opening line",
+        "Final phrase — the arrival point of the argument; the end of meaning itself",
+        "Middle quotation",
+        "Stage direction"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 26,
+      "anchor_line_end": 27
+    },
+    {
+      "id": "macbeth_act5_scene5_q4",
+      "kind": "structural",
+      "prompt": "Macbeth naming 'the equivocation of the fiend':",
+      "options": [
+        "Is random",
+        "Closes an arc — the Witches have used on him the 'serpent under the flower' technique he helped promulgate",
+        "Is incorrect",
+        "Is a compliment"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 41,
+      "anchor_line_end": 45
+    },
+    {
+      "id": "macbeth_act5_scene5_q5",
+      "kind": "close_reading",
+      "prompt": "'Life's but a walking shadow, a poor player / That struts and frets his hour upon the stage' figures life as:",
+      "options": [
+        "A dream",
+        "A bad theatrical performance — 'poor player' is an unskilled actor",
+        "A king",
+        "A flower"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 23,
+      "anchor_line_end": 26
+    },
+    {
+      "id": "macbeth_act5_scene5_q6",
+      "kind": "theme",
+      "prompt": "The speech has been read as:",
+      "options": [
+        "Only as medieval contemptus mundi",
+        "Multiple coherent readings at once: existentialism, medieval contemptus mundi, and character — Macbeth's psychological end-point",
+        "Only as Protestant theology",
+        "Only as character study"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 18,
+      "anchor_line_end": 27
+    }
+  ]
+}

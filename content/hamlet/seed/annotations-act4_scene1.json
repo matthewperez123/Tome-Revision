@@ -1,0 +1,21 @@
+{
+  "section_id": "hamlet_act4_scene1",
+  "annotations": [
+    {
+      "line_start": 1,
+      "line_end": 16,
+      "category": "thematic",
+      "title": "Gertrude's equivocal loyalty",
+      "body": "The scene opens with Gertrude reporting to Claudius in terms that protect Hamlet: his madness is 'as the sea and wind,' the killing of Polonius a 'brainish apprehension.' She does not reveal what Hamlet has told her — that Claudius murdered King Hamlet — and she does not tell the King that Hamlet is only feigning madness. Gertrude has always been one of the play's critical puzzles: is she complicit, merely survivalist, or confusedly loving both her son and her husband? This short scene contains her most decisive act of protection. Carolyn Heilbrun's influential reading argues that critics systematically underestimate Gertrude, who here emerges as the play's most skillful diplomat.",
+      "sources": ["Carolyn Heilbrun, 'The Character of Hamlet's Mother' (1957)"]
+    },
+    {
+      "line_start": 17,
+      "line_end": 38,
+      "category": "structural",
+      "title": "Claudius's political instincts",
+      "body": "Claudius's immediate concern after hearing of Polonius's death is not grief but damage control: 'to us whose providence / Should have kept short, restrain'd and out of haunt / This mad young man.' His phrasing reveals the political mind — the killing reflects poorly on his management, and the King begins already to plan the concealment. By the end of his twenty lines he has arranged for the body's disposal, anticipated the slander to come, and resolved to accelerate the England voyage. This is Claudius at his most functional: not the tortured penitent of 3.3 but the professional sovereign managing a crisis. Shakespeare lets us see the King's competence precisely so we can measure its moral hollowness.",
+      "sources": ["Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"]
+    }
+  ]
+}

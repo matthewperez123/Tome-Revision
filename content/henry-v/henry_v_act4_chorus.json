@@ -1,0 +1,571 @@
+{
+  "section_id": "henry_v_act4_chorus",
+  "work_id": "henry-v",
+  "sequence": 17,
+  "act": null,
+  "scene": null,
+  "kind": "chorus",
+  "scene_title": "Chorus",
+  "line_count": 53,
+  "word_count": 379,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CHORUS",
+      "text": "Now entertain conjecture of a time"
+    },
+    {
+      "number": 2,
+      "speaker": "CHORUS",
+      "text": "When creeping murmur and the poring dark"
+    },
+    {
+      "number": 3,
+      "speaker": "CHORUS",
+      "text": "Fills the wide vessel of the universe."
+    },
+    {
+      "number": 4,
+      "speaker": "CHORUS",
+      "text": "From camp to camp through the foul womb of night"
+    },
+    {
+      "number": 5,
+      "speaker": "CHORUS",
+      "text": "The hum of either army stilly sounds,"
+    },
+    {
+      "number": 6,
+      "speaker": "CHORUS",
+      "text": "That the fix’d sentinels almost receive"
+    },
+    {
+      "number": 7,
+      "speaker": "CHORUS",
+      "text": "The secret whispers of each other’s watch:"
+    },
+    {
+      "number": 8,
+      "speaker": "CHORUS",
+      "text": "Fire answers fire, and through their paly flames"
+    },
+    {
+      "number": 9,
+      "speaker": "CHORUS",
+      "text": "Each battle sees the other’s umber’d face;"
+    },
+    {
+      "number": 10,
+      "speaker": "CHORUS",
+      "text": "Steed threatens steed, in high and boastful neighs"
+    },
+    {
+      "number": 11,
+      "speaker": "CHORUS",
+      "text": "Piercing the night’s dull ear; and from the tents"
+    },
+    {
+      "number": 12,
+      "speaker": "CHORUS",
+      "text": "The armourers, accomplishing the knights,"
+    },
+    {
+      "number": 13,
+      "speaker": "CHORUS",
+      "text": "With busy hammers closing rivets up,"
+    },
+    {
+      "number": 14,
+      "speaker": "CHORUS",
+      "text": "Give dreadful note of preparation:"
+    },
+    {
+      "number": 15,
+      "speaker": "CHORUS",
+      "text": "The country cocks do crow, the clocks do toll,"
+    },
+    {
+      "number": 16,
+      "speaker": "CHORUS",
+      "text": "And the third hour of drowsy morning name."
+    },
+    {
+      "number": 17,
+      "speaker": "CHORUS",
+      "text": "Proud of their numbers and secure in soul,"
+    },
+    {
+      "number": 18,
+      "speaker": "CHORUS",
+      "text": "The confident and over-lusty French"
+    },
+    {
+      "number": 19,
+      "speaker": "CHORUS",
+      "text": "Do the low-rated English play at dice;"
+    },
+    {
+      "number": 20,
+      "speaker": "CHORUS",
+      "text": "And chide the cripple tardy-gaited night"
+    },
+    {
+      "number": 21,
+      "speaker": "CHORUS",
+      "text": "Who, like a foul and ugly witch, doth limp"
+    },
+    {
+      "number": 22,
+      "speaker": "CHORUS",
+      "text": "So tediously away. The poor condemned English,"
+    },
+    {
+      "number": 23,
+      "speaker": "CHORUS",
+      "text": "Like sacrifices, by their watchful fires"
+    },
+    {
+      "number": 24,
+      "speaker": "CHORUS",
+      "text": "Sit patiently and inly ruminate"
+    },
+    {
+      "number": 25,
+      "speaker": "CHORUS",
+      "text": "The morning’s danger, and their gesture sad"
+    },
+    {
+      "number": 26,
+      "speaker": "CHORUS",
+      "text": "Investing lank-lean cheeks and war-worn coats"
+    },
+    {
+      "number": 27,
+      "speaker": "CHORUS",
+      "text": "Presenteth them unto the gazing moon"
+    },
+    {
+      "number": 28,
+      "speaker": "CHORUS",
+      "text": "So many horrid ghosts. O now, who will behold"
+    },
+    {
+      "number": 29,
+      "speaker": "CHORUS",
+      "text": "The royal captain of this ruin’d band"
+    },
+    {
+      "number": 30,
+      "speaker": "CHORUS",
+      "text": "Walking from watch to watch, from tent to tent,"
+    },
+    {
+      "number": 31,
+      "speaker": "CHORUS",
+      "text": "Let him cry, “Praise and glory on his head!”"
+    },
+    {
+      "number": 32,
+      "speaker": "CHORUS",
+      "text": "For forth he goes and visits all his host,"
+    },
+    {
+      "number": 33,
+      "speaker": "CHORUS",
+      "text": "Bids them good morrow with a modest smile"
+    },
+    {
+      "number": 34,
+      "speaker": "CHORUS",
+      "text": "And calls them brothers, friends, and countrymen."
+    },
+    {
+      "number": 35,
+      "speaker": "CHORUS",
+      "text": "Upon his royal face there is no note"
+    },
+    {
+      "number": 36,
+      "speaker": "CHORUS",
+      "text": "How dread an army hath enrounded him;"
+    },
+    {
+      "number": 37,
+      "speaker": "CHORUS",
+      "text": "Nor doth he dedicate one jot of colour"
+    },
+    {
+      "number": 38,
+      "speaker": "CHORUS",
+      "text": "Unto the weary and all-watched night,"
+    },
+    {
+      "number": 39,
+      "speaker": "CHORUS",
+      "text": "But freshly looks and overbears attaint"
+    },
+    {
+      "number": 40,
+      "speaker": "CHORUS",
+      "text": "With cheerful semblance and sweet majesty;"
+    },
+    {
+      "number": 41,
+      "speaker": "CHORUS",
+      "text": "That every wretch, pining and pale before,"
+    },
+    {
+      "number": 42,
+      "speaker": "CHORUS",
+      "text": "Beholding him, plucks comfort from his looks:"
+    },
+    {
+      "number": 43,
+      "speaker": "CHORUS",
+      "text": "A largess universal like the sun"
+    },
+    {
+      "number": 44,
+      "speaker": "CHORUS",
+      "text": "His liberal eye doth give to everyone,"
+    },
+    {
+      "number": 45,
+      "speaker": "CHORUS",
+      "text": "Thawing cold fear, that mean and gentle all"
+    },
+    {
+      "number": 46,
+      "speaker": "CHORUS",
+      "text": "Behold, as may unworthiness define,"
+    },
+    {
+      "number": 47,
+      "speaker": "CHORUS",
+      "text": "A little touch of Harry in the night."
+    },
+    {
+      "number": 48,
+      "speaker": "CHORUS",
+      "text": "And so our scene must to the battle fly;"
+    },
+    {
+      "number": 49,
+      "speaker": "CHORUS",
+      "text": "Where—O for pity!—we shall much disgrace"
+    },
+    {
+      "number": 50,
+      "speaker": "CHORUS",
+      "text": "With four or five most vile and ragged foils,"
+    },
+    {
+      "number": 51,
+      "speaker": "CHORUS",
+      "text": "Right ill-disposed in brawl ridiculous,"
+    },
+    {
+      "number": 52,
+      "speaker": "CHORUS",
+      "text": "The name of Agincourt. Yet sit and see,"
+    },
+    {
+      "number": 53,
+      "speaker": "CHORUS",
+      "text": "Minding true things by what their mock’ries be."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Chorus."
+    },
+    {
+      "after_line": 0,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act4_chorus_gloss1",
+      "line": 1,
+      "phrase": "entertain conjecture",
+      "definition": "receive a guess; imagine"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss2",
+      "line": 2,
+      "phrase": "creeping murmur",
+      "definition": "quiet, spreading sound"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss3",
+      "line": 2,
+      "phrase": "poring dark",
+      "definition": "brooding, dense darkness — 'poring' = staring intently"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss4",
+      "line": 3,
+      "phrase": "wide vessel of the universe",
+      "definition": "the whole cosmos as a vast container"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss5",
+      "line": 4,
+      "phrase": "foul womb of night",
+      "definition": "night as a dark womb — productive image for the coming day's slaughter"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss6",
+      "line": 5,
+      "phrase": "stilly sounds",
+      "definition": "quietly sounds"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss7",
+      "line": 6,
+      "phrase": "fix’d sentinels",
+      "definition": "posted guards"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss8",
+      "line": 8,
+      "phrase": "paly flames",
+      "definition": "pale, wan flames — campfires seen from a distance"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss9",
+      "line": 9,
+      "phrase": "umber’d face",
+      "definition": "shadowed, darkened face — 'umber' is a brown-earth pigment"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss10",
+      "line": 10,
+      "phrase": "Steed threatens steed",
+      "definition": "warhorse challenges warhorse — the horses are more active than the men"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss11",
+      "line": 12,
+      "phrase": "armourers, accomplishing the knights",
+      "definition": "armour-smiths finishing the knights' equipment — the stanza's trademark image"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss12",
+      "line": 13,
+      "phrase": "closing rivets up",
+      "definition": "hammering the last rivets into armour-joints"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss13",
+      "line": 14,
+      "phrase": "dreadful note of preparation",
+      "definition": "fearsome sound of readiness for battle"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss14",
+      "line": 18,
+      "phrase": "over-lusty French",
+      "definition": "excessively high-spirited French"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss15",
+      "line": 19,
+      "phrase": "low-rated English play at dice",
+      "definition": "dice for the undervalued English — they gamble for prisoners before the battle"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss16",
+      "line": 20,
+      "phrase": "cripple tardy-gaited night",
+      "definition": "lame, slow-walking night — the French curse its slowness"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss17",
+      "line": 21,
+      "phrase": "foul and ugly witch",
+      "definition": "night as a hag who limps away — classic misogynist personification"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss18",
+      "line": 23,
+      "phrase": "Like sacrifices",
+      "definition": "like beasts prepared for sacrifice — the English pictured as victims"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss19",
+      "line": 24,
+      "phrase": "inly ruminate",
+      "definition": "inwardly meditate"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss20",
+      "line": 26,
+      "phrase": "Investing lank-lean cheeks",
+      "definition": "clothing their gaunt, thin cheeks"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss21",
+      "line": 26,
+      "phrase": "war-worn coats",
+      "definition": "battle-worn uniforms"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss22",
+      "line": 28,
+      "phrase": "horrid ghosts",
+      "definition": "frightful spectres — the moonlit English look already dead"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss23",
+      "line": 29,
+      "phrase": "royal captain of this ruin’d band",
+      "definition": "Henry, king of this wrecked company"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss24",
+      "line": 31,
+      "phrase": "Praise and glory on his head",
+      "definition": "the Chorus's own benediction, overheard by the audience"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss25",
+      "line": 36,
+      "phrase": "enrounded him",
+      "definition": "surrounded him"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss26",
+      "line": 37,
+      "phrase": "Nor doth he dedicate one jot of colour",
+      "definition": "he doesn't lose a particle of his complexion — showing no fear"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss27",
+      "line": 39,
+      "phrase": "overbears attaint",
+      "definition": "overpowers (the appearance of) exhaustion — 'attaint' = infection, weariness"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss28",
+      "line": 43,
+      "phrase": "largess universal like the sun",
+      "definition": "bounty given to all, as the sun gives light"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss29",
+      "line": 44,
+      "phrase": "liberal eye",
+      "definition": "generous gaze"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss30",
+      "line": 45,
+      "phrase": "mean and gentle",
+      "definition": "low-born and high-born alike"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss31",
+      "line": 47,
+      "phrase": "A little touch of Harry in the night",
+      "definition": "a brief passing contact with Henry in the dark — the stanza's famous phrase, and the scene's set-up for 4.1"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss32",
+      "line": 50,
+      "phrase": "four or five most vile and ragged foils",
+      "definition": "a handful of shabby stage-swords — the Chorus's self-deprecating confession that the battle cannot be staged"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss33",
+      "line": 52,
+      "phrase": "name of Agincourt",
+      "definition": "the name we will honour despite the stage's failure"
+    },
+    {
+      "id": "henry_v_act4_chorus_gloss34",
+      "line": 53,
+      "phrase": "Minding true things by what their mock’ries be",
+      "definition": "remembering true events through their theatrical imitation — the Chorus's final aesthetic plea"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act4_chorus_ann1",
+      "line_start": 1,
+      "line_end": 28,
+      "citation_display": "Henry V 4 Chorus.1–28",
+      "category": "close_reading",
+      "title": "The atmospheric masterwork — night between two armies",
+      "body": "The Act 4 Chorus is, for many critics, the single greatest poetic passage in Shakespeare's histories. It does not narrate events; it builds an atmosphere. The opening triplet — 'creeping murmur,' 'poring dark,' 'wide vessel of the universe' — establishes a nocturnal stillness in which the two armies are close enough to hear each other ('the fix'd sentinels almost receive / The secret whispers of each other's watch'). The visual poetry that follows — 'fire answers fire,' 'paly flames,' 'umber'd face,' 'steed threatens steed' — gives the reader a cinematic image of two camps facing each other across a dark field. The sound-world is tight: hammers closing rivets, cocks crowing, clocks tolling the third hour. The Chorus uses the stillness to set up the contrast: the 'over-lusty' French playing at dice, the 'poor condemned English' sitting like sacrifices by their watchful fires. No battle has yet begun; everything about the outcome is already ambient.",
+      "sources": [
+        "Frank Kermode, Shakespeare's Language (2000)",
+        "Emrys Jones, Scenic Form in Shakespeare (1971)",
+        "Stephen Greenblatt, Will in the World (2004)"
+      ]
+    },
+    {
+      "id": "henry_v_act4_chorus_ann2",
+      "line_start": 29,
+      "line_end": 47,
+      "citation_display": "Henry V 4 Chorus.29–47",
+      "category": "thematic",
+      "title": "'A little touch of Harry in the night' — the king as moral presence",
+      "body": "The Chorus's portrait of Henry walking among his soldiers — 'bids them good morrow with a modest smile / And calls them brothers, friends, and countrymen' — is the play's official version of the event. Henry is generous, his liberal eye a 'largess universal like the sun'; wretches 'pluck comfort from his looks.' The tableau is hagiographic. The famous phrase 'a little touch of Harry in the night' has a tender, almost monastic cadence. But the Chorus is about to hand over to the actual 4.1 scene, which will show us Henry doing what the Chorus has described — except with a specific and conflictual encounter: the Williams debate. The Chorus and the scene do not contradict each other exactly, but the Chorus's radiant-royal generosity and the scene's soldier's critique of royal responsibility do not occupy the same moral universe. Again, both are the play; readers should hold both.",
+      "sources": [
+        "Anne Barton, 'The King Disguised,' in The Triple Bond (1975)",
+        "Norman Rabkin, 'Either/Or' (1981)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act4_chorus_q1",
+      "kind": "close_reading",
+      "prompt": "What atmosphere does the Chorus build in lines 1–16?",
+      "options": [
+        "A blazing daytime battlefield",
+        "A quiet night between two armies, close enough to hear each other's sentinels — a cinematic stillness in which the hammers of armourers, the crowing of cocks, and the tolling of clocks all register",
+        "A stormy sea-crossing",
+        "A royal funeral"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 16
+    },
+    {
+      "id": "henry_v_act4_chorus_q2",
+      "kind": "theme",
+      "prompt": "What does 'A little touch of Harry in the night' (line 47) do?",
+      "options": [
+        "Introduces Harry as a character",
+        "Concludes the Chorus's hagiographic portrait of Henry as a morally radiant presence among his men — just before the 4.1 scene will complicate that portrait with Williams's challenge",
+        "Stages Henry's nightmare",
+        "Describes a battle already underway"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 47,
+      "anchor_line_end": 47
+    },
+    {
+      "id": "henry_v_act4_chorus_q3",
+      "kind": "close_reading",
+      "prompt": "How does the Chorus contrast the two armies at lines 17–28?",
+      "options": [
+        "They are equally confident",
+        "The French 'over-lusty' and 'secure in soul,' playing at dice for English prisoners; the 'poor condemned English' sitting 'like sacrifices' by their fires, 'horrid ghosts' in the moonlight",
+        "Both armies are asleep",
+        "The English play dice and the French pray"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 17,
+      "anchor_line_end": 28
+    }
+  ]
+}

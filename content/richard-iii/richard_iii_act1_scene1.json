@@ -1,0 +1,1371 @@
+{
+  "section_id": "richard_iii_act1_scene1",
+  "work_id": "richard-iii",
+  "sequence": 1,
+  "act": 1,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "London. A street",
+  "line_count": 163,
+  "word_count": 1235,
+  "est_read_minutes": 6,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "GLOUCESTER",
+      "text": "Now is the winter of our discontent"
+    },
+    {
+      "number": 2,
+      "speaker": "GLOUCESTER",
+      "text": "Made glorious summer by this sun of York;"
+    },
+    {
+      "number": 3,
+      "speaker": "GLOUCESTER",
+      "text": "And all the clouds that lour’d upon our house"
+    },
+    {
+      "number": 4,
+      "speaker": "GLOUCESTER",
+      "text": "In the deep bosom of the ocean buried."
+    },
+    {
+      "number": 5,
+      "speaker": "GLOUCESTER",
+      "text": "Now are our brows bound with victorious wreaths;"
+    },
+    {
+      "number": 6,
+      "speaker": "GLOUCESTER",
+      "text": "Our bruised arms hung up for monuments;"
+    },
+    {
+      "number": 7,
+      "speaker": "GLOUCESTER",
+      "text": "Our stern alarums changed to merry meetings,"
+    },
+    {
+      "number": 8,
+      "speaker": "GLOUCESTER",
+      "text": "Our dreadful marches to delightful measures."
+    },
+    {
+      "number": 9,
+      "speaker": "GLOUCESTER",
+      "text": "Grim-visaged war hath smooth’d his wrinkled front;"
+    },
+    {
+      "number": 10,
+      "speaker": "GLOUCESTER",
+      "text": "And now, instead of mounting barbed steeds"
+    },
+    {
+      "number": 11,
+      "speaker": "GLOUCESTER",
+      "text": "To fright the souls of fearful adversaries,"
+    },
+    {
+      "number": 12,
+      "speaker": "GLOUCESTER",
+      "text": "He capers nimbly in a lady’s chamber"
+    },
+    {
+      "number": 13,
+      "speaker": "GLOUCESTER",
+      "text": "To the lascivious pleasing of a lute."
+    },
+    {
+      "number": 14,
+      "speaker": "GLOUCESTER",
+      "text": "But I, that am not shaped for sportive tricks,"
+    },
+    {
+      "number": 15,
+      "speaker": "GLOUCESTER",
+      "text": "Nor made to court an amorous looking-glass;"
+    },
+    {
+      "number": 16,
+      "speaker": "GLOUCESTER",
+      "text": "I, that am rudely stamp’d, and want love’s majesty"
+    },
+    {
+      "number": 17,
+      "speaker": "GLOUCESTER",
+      "text": "To strut before a wanton ambling nymph;"
+    },
+    {
+      "number": 18,
+      "speaker": "GLOUCESTER",
+      "text": "I, that am curtail’d of this fair proportion,"
+    },
+    {
+      "number": 19,
+      "speaker": "GLOUCESTER",
+      "text": "Cheated of feature by dissembling nature,"
+    },
+    {
+      "number": 20,
+      "speaker": "GLOUCESTER",
+      "text": "Deform’d, unfinish’d, sent before my time"
+    },
+    {
+      "number": 21,
+      "speaker": "GLOUCESTER",
+      "text": "Into this breathing world, scarce half made up,"
+    },
+    {
+      "number": 22,
+      "speaker": "GLOUCESTER",
+      "text": "And that so lamely and unfashionable"
+    },
+    {
+      "number": 23,
+      "speaker": "GLOUCESTER",
+      "text": "That dogs bark at me as I halt by them;"
+    },
+    {
+      "number": 24,
+      "speaker": "GLOUCESTER",
+      "text": "Why, I, in this weak piping time of peace,"
+    },
+    {
+      "number": 25,
+      "speaker": "GLOUCESTER",
+      "text": "Have no delight to pass away the time,"
+    },
+    {
+      "number": 26,
+      "speaker": "GLOUCESTER",
+      "text": "Unless to spy my shadow in the sun"
+    },
+    {
+      "number": 27,
+      "speaker": "GLOUCESTER",
+      "text": "And descant on mine own deformity:"
+    },
+    {
+      "number": 28,
+      "speaker": "GLOUCESTER",
+      "text": "And therefore, since I cannot prove a lover,"
+    },
+    {
+      "number": 29,
+      "speaker": "GLOUCESTER",
+      "text": "To entertain these fair well-spoken days,"
+    },
+    {
+      "number": 30,
+      "speaker": "GLOUCESTER",
+      "text": "I am determined to prove a villain"
+    },
+    {
+      "number": 31,
+      "speaker": "GLOUCESTER",
+      "text": "And hate the idle pleasures of these days."
+    },
+    {
+      "number": 32,
+      "speaker": "GLOUCESTER",
+      "text": "Plots have I laid, inductions dangerous,"
+    },
+    {
+      "number": 33,
+      "speaker": "GLOUCESTER",
+      "text": "By drunken prophecies, libels and dreams,"
+    },
+    {
+      "number": 34,
+      "speaker": "GLOUCESTER",
+      "text": "To set my brother Clarence and the king"
+    },
+    {
+      "number": 35,
+      "speaker": "GLOUCESTER",
+      "text": "In deadly hate the one against the other:"
+    },
+    {
+      "number": 36,
+      "speaker": "GLOUCESTER",
+      "text": "And if King Edward be as true and just"
+    },
+    {
+      "number": 37,
+      "speaker": "GLOUCESTER",
+      "text": "As I am subtle, false and treacherous,"
+    },
+    {
+      "number": 38,
+      "speaker": "GLOUCESTER",
+      "text": "This day should Clarence closely be mew’d up,"
+    },
+    {
+      "number": 39,
+      "speaker": "GLOUCESTER",
+      "text": "About a prophecy, which says that G"
+    },
+    {
+      "number": 40,
+      "speaker": "GLOUCESTER",
+      "text": "Of Edward’s heirs the murderer shall be."
+    },
+    {
+      "number": 41,
+      "speaker": "GLOUCESTER",
+      "text": "Dive, thoughts, down to my soul: here Clarence comes."
+    },
+    {
+      "number": 42,
+      "speaker": "CLARENCE",
+      "text": "His majesty,"
+    },
+    {
+      "number": 43,
+      "speaker": "CLARENCE",
+      "text": "Tendering my person’s safety, hath appointed"
+    },
+    {
+      "number": 44,
+      "speaker": "CLARENCE",
+      "text": "This conduct to convey me to the Tower."
+    },
+    {
+      "number": 45,
+      "speaker": "GLOUCESTER",
+      "text": "Upon what cause?"
+    },
+    {
+      "number": 45,
+      "speaker": "CLARENCE",
+      "text": "Because my name is George."
+    },
+    {
+      "number": 46,
+      "speaker": "GLOUCESTER",
+      "text": "Alack, my lord, that fault is none of yours;"
+    },
+    {
+      "number": 47,
+      "speaker": "GLOUCESTER",
+      "text": "He should, for that, commit your godfathers:"
+    },
+    {
+      "number": 48,
+      "speaker": "GLOUCESTER",
+      "text": "O, belike his majesty hath some intent"
+    },
+    {
+      "number": 49,
+      "speaker": "GLOUCESTER",
+      "text": "That you shall be new-christen’d in the Tower."
+    },
+    {
+      "number": 50,
+      "speaker": "GLOUCESTER",
+      "text": "But what’s the matter, Clarence? may I know?"
+    },
+    {
+      "number": 51,
+      "speaker": "CLARENCE",
+      "text": "Yea, Richard, when I know; for I protest"
+    },
+    {
+      "number": 52,
+      "speaker": "CLARENCE",
+      "text": "As yet I do not: but, as I can learn,"
+    },
+    {
+      "number": 53,
+      "speaker": "CLARENCE",
+      "text": "He hearkens after prophecies and dreams;"
+    },
+    {
+      "number": 54,
+      "speaker": "CLARENCE",
+      "text": "And from the cross-row plucks the letter g,"
+    },
+    {
+      "number": 55,
+      "speaker": "CLARENCE",
+      "text": "And says a wizard told him that by g"
+    },
+    {
+      "number": 56,
+      "speaker": "CLARENCE",
+      "text": "His issue disinherited should be;"
+    },
+    {
+      "number": 57,
+      "speaker": "CLARENCE",
+      "text": "And, for my name of George begins with g,"
+    },
+    {
+      "number": 58,
+      "speaker": "CLARENCE",
+      "text": "It follows in his thought that I am he."
+    },
+    {
+      "number": 59,
+      "speaker": "CLARENCE",
+      "text": "These, as I learn, and such like toys as these"
+    },
+    {
+      "number": 60,
+      "speaker": "CLARENCE",
+      "text": "Have moved his highness to commit me now."
+    },
+    {
+      "number": 61,
+      "speaker": "GLOUCESTER",
+      "text": "Why, this it is, when men are ruled by women:"
+    },
+    {
+      "number": 62,
+      "speaker": "GLOUCESTER",
+      "text": "’Tis not the king that sends you to the Tower;"
+    },
+    {
+      "number": 63,
+      "speaker": "GLOUCESTER",
+      "text": "My Lady Grey his wife, Clarence, ’tis she"
+    },
+    {
+      "number": 64,
+      "speaker": "GLOUCESTER",
+      "text": "That tempers him to this extremity."
+    },
+    {
+      "number": 65,
+      "speaker": "GLOUCESTER",
+      "text": "Was it not she and that good man of worship,"
+    },
+    {
+      "number": 66,
+      "speaker": "GLOUCESTER",
+      "text": "Anthony Woodville, her brother there,"
+    },
+    {
+      "number": 67,
+      "speaker": "GLOUCESTER",
+      "text": "That made him send Lord Hastings to the Tower,"
+    },
+    {
+      "number": 68,
+      "speaker": "GLOUCESTER",
+      "text": "From whence this present day he is deliver’d?"
+    },
+    {
+      "number": 69,
+      "speaker": "GLOUCESTER",
+      "text": "We are not safe, Clarence; we are not safe."
+    },
+    {
+      "number": 70,
+      "speaker": "CLARENCE",
+      "text": "By heaven, I think there’s no man is secure"
+    },
+    {
+      "number": 71,
+      "speaker": "CLARENCE",
+      "text": "But the queen’s kindred and night-walking heralds"
+    },
+    {
+      "number": 72,
+      "speaker": "CLARENCE",
+      "text": "That trudge betwixt the king and Mistress Shore."
+    },
+    {
+      "number": 73,
+      "speaker": "CLARENCE",
+      "text": "Heard ye not what an humble suppliant"
+    },
+    {
+      "number": 74,
+      "speaker": "CLARENCE",
+      "text": "Lord hastings was to her for his delivery?"
+    },
+    {
+      "number": 75,
+      "speaker": "GLOUCESTER",
+      "text": "Humbly complaining to her deity"
+    },
+    {
+      "number": 76,
+      "speaker": "GLOUCESTER",
+      "text": "Got my lord chamberlain his liberty."
+    },
+    {
+      "number": 77,
+      "speaker": "GLOUCESTER",
+      "text": "I’ll tell you what; I think it is our way,"
+    },
+    {
+      "number": 78,
+      "speaker": "GLOUCESTER",
+      "text": "If we will keep in favour with the king,"
+    },
+    {
+      "number": 79,
+      "speaker": "GLOUCESTER",
+      "text": "To be her men and wear her livery:"
+    },
+    {
+      "number": 80,
+      "speaker": "GLOUCESTER",
+      "text": "The jealous o’erworn widow and herself,"
+    },
+    {
+      "number": 81,
+      "speaker": "GLOUCESTER",
+      "text": "Since that our brother dubb’d them gentlewomen."
+    },
+    {
+      "number": 82,
+      "speaker": "GLOUCESTER",
+      "text": "Are mighty gossips in this monarchy."
+    },
+    {
+      "number": 83,
+      "speaker": "BRAKENBURY",
+      "text": "I beseech your graces both to pardon me;"
+    },
+    {
+      "number": 84,
+      "speaker": "BRAKENBURY",
+      "text": "His majesty hath straitly given in charge"
+    },
+    {
+      "number": 85,
+      "speaker": "BRAKENBURY",
+      "text": "That no man shall have private conference,"
+    },
+    {
+      "number": 86,
+      "speaker": "BRAKENBURY",
+      "text": "Of what degree soever, with his brother."
+    },
+    {
+      "number": 87,
+      "speaker": "GLOUCESTER",
+      "text": "Even so; an’t please your worship, Brakenbury,"
+    },
+    {
+      "number": 88,
+      "speaker": "GLOUCESTER",
+      "text": "You may partake of any thing we say:"
+    },
+    {
+      "number": 89,
+      "speaker": "GLOUCESTER",
+      "text": "We speak no treason, man: we say the king"
+    },
+    {
+      "number": 90,
+      "speaker": "GLOUCESTER",
+      "text": "Is wise and virtuous, and his noble queen"
+    },
+    {
+      "number": 91,
+      "speaker": "GLOUCESTER",
+      "text": "Well struck in years, fair, and not jealous;"
+    },
+    {
+      "number": 92,
+      "speaker": "GLOUCESTER",
+      "text": "We say that Shore’s wife hath a pretty foot,"
+    },
+    {
+      "number": 93,
+      "speaker": "GLOUCESTER",
+      "text": "A cherry lip, a bonny eye, a passing pleasing tongue;"
+    },
+    {
+      "number": 94,
+      "speaker": "GLOUCESTER",
+      "text": "And that the queen’s kindred are made gentlefolks:"
+    },
+    {
+      "number": 95,
+      "speaker": "GLOUCESTER",
+      "text": "How say you sir? Can you deny all this?"
+    },
+    {
+      "number": 96,
+      "speaker": "BRAKENBURY",
+      "text": "With this, my lord, myself have nought to do."
+    },
+    {
+      "number": 97,
+      "speaker": "GLOUCESTER",
+      "text": "Naught to do with Mistress Shore! I tell thee, fellow,"
+    },
+    {
+      "number": 98,
+      "speaker": "GLOUCESTER",
+      "text": "He that doth naught with her, excepting one,"
+    },
+    {
+      "number": 99,
+      "speaker": "GLOUCESTER",
+      "text": "Were best he do it secretly, alone."
+    },
+    {
+      "number": 100,
+      "speaker": "BRAKENBURY",
+      "text": "What one, my lord?"
+    },
+    {
+      "number": 101,
+      "speaker": "GLOUCESTER",
+      "text": "Her husband, knave: wouldst thou betray me?"
+    },
+    {
+      "number": 102,
+      "speaker": "BRAKENBURY",
+      "text": "I beseech your grace to pardon me, and withal"
+    },
+    {
+      "number": 103,
+      "speaker": "BRAKENBURY",
+      "text": "Forbear your conference with the noble duke."
+    },
+    {
+      "number": 104,
+      "speaker": "CLARENCE",
+      "text": "We know thy charge, Brakenbury, and will obey."
+    },
+    {
+      "number": 105,
+      "speaker": "GLOUCESTER",
+      "text": "We are the queen’s abjects, and must obey."
+    },
+    {
+      "number": 106,
+      "speaker": "GLOUCESTER",
+      "text": "Brother, farewell: I will unto the king;"
+    },
+    {
+      "number": 107,
+      "speaker": "GLOUCESTER",
+      "text": "And whatsoever you will employ me in,"
+    },
+    {
+      "number": 108,
+      "speaker": "GLOUCESTER",
+      "text": "Were it to call King Edward’s widow sister,"
+    },
+    {
+      "number": 109,
+      "speaker": "GLOUCESTER",
+      "text": "I will perform it to enfranchise you."
+    },
+    {
+      "number": 110,
+      "speaker": "GLOUCESTER",
+      "text": "Meantime, this deep disgrace in brotherhood"
+    },
+    {
+      "number": 111,
+      "speaker": "GLOUCESTER",
+      "text": "Touches me deeper than you can imagine."
+    },
+    {
+      "number": 112,
+      "speaker": "CLARENCE",
+      "text": "I know it pleaseth neither of us well."
+    },
+    {
+      "number": 113,
+      "speaker": "GLOUCESTER",
+      "text": "Well, your imprisonment shall not be long;"
+    },
+    {
+      "number": 114,
+      "speaker": "GLOUCESTER",
+      "text": "I will deliver you, or else lie for you:"
+    },
+    {
+      "number": 115,
+      "speaker": "GLOUCESTER",
+      "text": "Meantime, have patience."
+    },
+    {
+      "number": 115,
+      "speaker": "CLARENCE",
+      "text": "I must perforce. Farewell."
+    },
+    {
+      "number": 116,
+      "speaker": "GLOUCESTER",
+      "text": "Go, tread the path that thou shalt ne’er return,"
+    },
+    {
+      "number": 117,
+      "speaker": "GLOUCESTER",
+      "text": "Simple, plain Clarence! I do love thee so,"
+    },
+    {
+      "number": 118,
+      "speaker": "GLOUCESTER",
+      "text": "That I will shortly send thy soul to heaven,"
+    },
+    {
+      "number": 119,
+      "speaker": "GLOUCESTER",
+      "text": "If heaven will take the present at our hands."
+    },
+    {
+      "number": 120,
+      "speaker": "GLOUCESTER",
+      "text": "But who comes here? the new-deliver’d Hastings?"
+    },
+    {
+      "number": 121,
+      "speaker": "HASTINGS",
+      "text": "Good time of day unto my gracious lord!"
+    },
+    {
+      "number": 122,
+      "speaker": "GLOUCESTER",
+      "text": "As much unto my good lord chamberlain!"
+    },
+    {
+      "number": 123,
+      "speaker": "GLOUCESTER",
+      "text": "Well are you welcome to the open air."
+    },
+    {
+      "number": 124,
+      "speaker": "GLOUCESTER",
+      "text": "How hath your lordship brook’d imprisonment?"
+    },
+    {
+      "number": 125,
+      "speaker": "HASTINGS",
+      "text": "With patience, noble lord, as prisoners must:"
+    },
+    {
+      "number": 126,
+      "speaker": "HASTINGS",
+      "text": "But I shall live, my lord, to give them thanks"
+    },
+    {
+      "number": 127,
+      "speaker": "HASTINGS",
+      "text": "That were the cause of my imprisonment."
+    },
+    {
+      "number": 128,
+      "speaker": "GLOUCESTER",
+      "text": "No doubt, no doubt; and so shall Clarence too;"
+    },
+    {
+      "number": 129,
+      "speaker": "GLOUCESTER",
+      "text": "For they that were your enemies are his,"
+    },
+    {
+      "number": 130,
+      "speaker": "GLOUCESTER",
+      "text": "And have prevail’d as much on him as you."
+    },
+    {
+      "number": 131,
+      "speaker": "HASTINGS",
+      "text": "More pity that the eagle should be mew’d,"
+    },
+    {
+      "number": 132,
+      "speaker": "HASTINGS",
+      "text": "While kites and buzzards prey at liberty."
+    },
+    {
+      "number": 133,
+      "speaker": "GLOUCESTER",
+      "text": "What news abroad?"
+    },
+    {
+      "number": 134,
+      "speaker": "HASTINGS",
+      "text": "No news so bad abroad as this at home;"
+    },
+    {
+      "number": 135,
+      "speaker": "HASTINGS",
+      "text": "The king is sickly, weak and melancholy,"
+    },
+    {
+      "number": 136,
+      "speaker": "HASTINGS",
+      "text": "And his physicians fear him mightily."
+    },
+    {
+      "number": 137,
+      "speaker": "GLOUCESTER",
+      "text": "Now, by Saint Paul, this news is bad indeed."
+    },
+    {
+      "number": 138,
+      "speaker": "GLOUCESTER",
+      "text": "O, he hath kept an evil diet long,"
+    },
+    {
+      "number": 139,
+      "speaker": "GLOUCESTER",
+      "text": "And overmuch consumed his royal person:"
+    },
+    {
+      "number": 140,
+      "speaker": "GLOUCESTER",
+      "text": "’Tis very grievous to be thought upon."
+    },
+    {
+      "number": 141,
+      "speaker": "GLOUCESTER",
+      "text": "What, is he in his bed?"
+    },
+    {
+      "number": 141,
+      "speaker": "HASTINGS",
+      "text": "He is."
+    },
+    {
+      "number": 142,
+      "speaker": "GLOUCESTER",
+      "text": "Go you before, and I will follow you."
+    },
+    {
+      "number": 143,
+      "speaker": "GLOUCESTER",
+      "text": "He cannot live, I hope; and must not die"
+    },
+    {
+      "number": 144,
+      "speaker": "GLOUCESTER",
+      "text": "Till George be pack’d with post-horse up to heaven."
+    },
+    {
+      "number": 145,
+      "speaker": "GLOUCESTER",
+      "text": "I’ll in, to urge his hatred more to Clarence,"
+    },
+    {
+      "number": 146,
+      "speaker": "GLOUCESTER",
+      "text": "With lies well steel’d with weighty arguments;"
+    },
+    {
+      "number": 147,
+      "speaker": "GLOUCESTER",
+      "text": "And, if I fall not in my deep intent,"
+    },
+    {
+      "number": 148,
+      "speaker": "GLOUCESTER",
+      "text": "Clarence hath not another day to live:"
+    },
+    {
+      "number": 149,
+      "speaker": "GLOUCESTER",
+      "text": "Which done, God take King Edward to his mercy,"
+    },
+    {
+      "number": 150,
+      "speaker": "GLOUCESTER",
+      "text": "And leave the world for me to bustle in!"
+    },
+    {
+      "number": 151,
+      "speaker": "GLOUCESTER",
+      "text": "For then I’ll marry Warwick’s youngest daughter."
+    },
+    {
+      "number": 152,
+      "speaker": "GLOUCESTER",
+      "text": "What though I kill’d her husband and her father?"
+    },
+    {
+      "number": 153,
+      "speaker": "GLOUCESTER",
+      "text": "The readiest way to make the wench amends"
+    },
+    {
+      "number": 154,
+      "speaker": "GLOUCESTER",
+      "text": "Is to become her husband and her father:"
+    },
+    {
+      "number": 155,
+      "speaker": "GLOUCESTER",
+      "text": "The which will I; not all so much for love"
+    },
+    {
+      "number": 156,
+      "speaker": "GLOUCESTER",
+      "text": "As for another secret close intent,"
+    },
+    {
+      "number": 157,
+      "speaker": "GLOUCESTER",
+      "text": "By marrying her which I must reach unto."
+    },
+    {
+      "number": 158,
+      "speaker": "GLOUCESTER",
+      "text": "But yet I run before my horse to market:"
+    },
+    {
+      "number": 159,
+      "speaker": "GLOUCESTER",
+      "text": "Clarence still breathes; Edward still lives and reigns:"
+    },
+    {
+      "number": 160,
+      "speaker": "GLOUCESTER",
+      "text": "When they are gone, then must I count my gains."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Richard, Duke of Gloucester, solus."
+    },
+    {
+      "after_line": 41,
+      "text": "Enter Clarence, guarded, and Brakenbury."
+    },
+    {
+      "after_line": 41,
+      "text": "Brother, good day: what means this armed guard That waits upon your grace?"
+    },
+    {
+      "after_line": 115,
+      "text": "Exeunt Clarence, Brakenbury, and Guard."
+    },
+    {
+      "after_line": 120,
+      "text": "Enter Lord Hastings."
+    },
+    {
+      "after_line": 142,
+      "text": "Exit Hastings."
+    },
+    {
+      "after_line": 160,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act1_scene1_gloss1",
+      "line": 1,
+      "phrase": "winter of our",
+      "definition": "as in 'winter of our discontent' — the winter of our troubles. NOTE: the line means our winter has ENDED, turned to summer; it does NOT mean 'our troubles continue.' Richard is observing that York's struggles are over"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss2",
+      "line": 2,
+      "phrase": "sun of York",
+      "definition": "Edward IV, Richard's elder brother, now king; the pun on 'son/sun' (homophones in Shakespeare's English) aligns the royal heir with the Yorkist sun-badge"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss3",
+      "line": 3,
+      "phrase": "lour’d",
+      "definition": "frowned; hung threateningly (as storm-clouds over a house)"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss4",
+      "line": 4,
+      "phrase": "deep bosom of the ocean buried",
+      "definition": "drowned in the ocean's depths — the Yorkist troubles are swallowed up like clouds falling into the sea"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss5",
+      "line": 5,
+      "phrase": "brows bound with victorious wreaths",
+      "definition": "foreheads crowned with laurel garlands — the Roman triumphal image"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss6",
+      "line": 6,
+      "phrase": "bruised arms hung up for monuments",
+      "definition": "battered weapons hung on the wall as war-trophies — arms now ornamental, not used"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss7",
+      "line": 7,
+      "phrase": "alarums",
+      "definition": "calls to arms; battle-trumpets"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss8",
+      "line": 8,
+      "phrase": "measures",
+      "definition": "stately courtly dances"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss9",
+      "line": 9,
+      "phrase": "Grim-visaged war",
+      "definition": "grim-faced war personified; war given a face"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss10",
+      "line": 9,
+      "phrase": "smooth’d his wrinkled front",
+      "definition": "smoothed his furrowed forehead — war has relaxed its scowl"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss11",
+      "line": 10,
+      "phrase": "barbed steeds",
+      "definition": "armored warhorses — 'barded' meant fitted with protective horse-armor"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss12",
+      "line": 12,
+      "phrase": "capers nimbly",
+      "definition": "leaps gracefully — war, now idle, dances"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss13",
+      "line": 13,
+      "phrase": "lascivious pleasing",
+      "definition": "suggestive, sensual pleasure-giving"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss14",
+      "line": 14,
+      "phrase": "sportive tricks",
+      "definition": "playful amorous antics"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss15",
+      "line": 15,
+      "phrase": "amorous looking-glass",
+      "definition": "a mirror used by lovers to admire themselves"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss16",
+      "line": 16,
+      "phrase": "rudely stamp’d",
+      "definition": "crudely formed (as if by a defective coin-stamp)"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss17",
+      "line": 17,
+      "phrase": "wanton ambling nymph",
+      "definition": "flirtatious, softly-walking maiden — nymph = classical nature-spirit, here a courtly beauty"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss18",
+      "line": 18,
+      "phrase": "curtail’d of this fair proportion",
+      "definition": "cut off from, deprived of a handsome shape"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss19",
+      "line": 19,
+      "phrase": "Cheated of feature by dissembling nature",
+      "definition": "cheated of good looks by a deceiving Nature — personified Nature has tricked him"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss20",
+      "line": 20,
+      "phrase": "sent before my time",
+      "definition": "born prematurely"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss21",
+      "line": 21,
+      "phrase": "scarce half made up",
+      "definition": "barely half-formed"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss22",
+      "line": 23,
+      "phrase": "halt",
+      "definition": "limp"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss23",
+      "line": 24,
+      "phrase": "piping time of peace",
+      "definition": "peaceful era marked by shepherd-pipes rather than war-trumpets"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss24",
+      "line": 27,
+      "phrase": "descant on",
+      "definition": "elaborate upon; discourse at length on (from the musical term for a counterpoint above a melody)"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss25",
+      "line": 30,
+      "phrase": "prove a villain",
+      "definition": "demonstrate myself a villain; Richard's decisive self-construction as the play's villain-protagonist"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss26",
+      "line": 32,
+      "phrase": "inductions",
+      "definition": "opening acts, preliminary schemes"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss27",
+      "line": 33,
+      "phrase": "libels",
+      "definition": "defamatory written accusations"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss28",
+      "line": 38,
+      "phrase": "mew’d up",
+      "definition": "caged up (a term from falconry — to 'mew' a hawk was to confine it during moulting)"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss29",
+      "line": 39,
+      "phrase": "about a prophecy",
+      "definition": "on account of a prophecy — King Edward is supposedly acting on a prediction"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss30",
+      "line": 54,
+      "phrase": "cross-row",
+      "definition": "the alphabet (so called because old primers placed a cross before the letters)"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss31",
+      "line": 59,
+      "phrase": "toys",
+      "definition": "trifles, silly notions"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss32",
+      "line": 63,
+      "phrase": "Lady Grey",
+      "definition": "Queen Elizabeth (Woodville), Edward IV's commoner-born wife; Richard's epithet dismisses her royal title"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss33",
+      "line": 66,
+      "phrase": "Anthony Woodville",
+      "definition": "Elizabeth's brother, Earl Rivers — Richard's scornful naming of a Woodville by first name is calculated insult"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss34",
+      "line": 72,
+      "phrase": "Mistress Shore",
+      "definition": "Jane Shore, Edward IV's favourite mistress — a London goldsmith's wife famous for her influence at court"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss35",
+      "line": 79,
+      "phrase": "wear her livery",
+      "definition": "wear her household's servant-uniform — i.e. serve the queen as retainers"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss36",
+      "line": 80,
+      "phrase": "o’erworn widow",
+      "definition": "worn-out widow — a sneer at the queen's previous marriage"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss37",
+      "line": 82,
+      "phrase": "mighty gossips",
+      "definition": "powerful godmothers; here, powerful meddlers in state affairs"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss38",
+      "line": 84,
+      "phrase": "straitly given in charge",
+      "definition": "strictly commanded"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss39",
+      "line": 91,
+      "phrase": "Well struck in years",
+      "definition": "well advanced in years — Gloucester's sarcastic praise of the still-young queen"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss40",
+      "line": 105,
+      "phrase": "abjects",
+      "definition": "things cast off; abject slaves — a coinage, pun on 'subjects'"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss41",
+      "line": 109,
+      "phrase": "enfranchise",
+      "definition": "set free, release from imprisonment"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss42",
+      "line": 114,
+      "phrase": "lie for you",
+      "definition": "take your place in prison (also: lie on your behalf)"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss43",
+      "line": 124,
+      "phrase": "brook’d",
+      "definition": "endured, tolerated"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss44",
+      "line": 131,
+      "phrase": "eagle should be mew’d",
+      "definition": "eagle should be caged — Hastings' bitter metaphor, echoing Richard's earlier 'mew'd up'"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss45",
+      "line": 132,
+      "phrase": "kites and buzzards",
+      "definition": "common birds of prey — base opportunists, here the queen's kin"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss46",
+      "line": 137,
+      "phrase": "Saint Paul",
+      "definition": "Richard's characteristic oath; by the Apostle Paul"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss47",
+      "line": 138,
+      "phrase": "kept an evil diet",
+      "definition": "lived a dissolute life; indulged immoderately (blamed for Edward's illness)"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss48",
+      "line": 144,
+      "phrase": "post-horse",
+      "definition": "relay horse used for fast travel — Richard wants George dispatched to heaven in a hurry"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss49",
+      "line": 151,
+      "phrase": "Warwick’s youngest daughter",
+      "definition": "Anne Neville, widow of the murdered Edward (son of Henry VI); Richard plans to marry her"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss50",
+      "line": 152,
+      "phrase": "kill’d her husband and her father",
+      "definition": "he killed Prince Edward (at Tewkesbury) and her father-in-law Henry VI — not her biological father; the line telegraphs the audacity of 1.2"
+    },
+    {
+      "id": "richard_iii_act1_scene1_gloss51",
+      "line": 158,
+      "phrase": "run before my horse to market",
+      "definition": "get ahead of myself (proverbial — counting one's profits before the transaction)"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act1_scene1_ann1",
+      "line_start": 1,
+      "line_end": 13,
+      "citation_display": "Richard III 1.1.1–13",
+      "category": "close_reading",
+      "title": "The opening that everyone misreads",
+      "body": "Four of the most quoted lines in English — and the most misread. \"Now is the winter of our discontent / Made glorious summer by this sun of York\" does not mean \"our troubles continue.\" It means the opposite: our winter has ENDED, turned to summer. The York dynasty has triumphed, the wars are done, and Richard is observing a world of peace. He cannot belong to it. His opening catalogue of disarmament — bruised arms hung up for monuments, stern alarums changed to merry meetings, grim-visaged war smoothing his wrinkled front — is not a lament for war but a register of his own obsolescence. When he turns at line 14 (\"But I, that am not shaped for sportive tricks\") the logic clicks: he will manufacture the conflict the world no longer provides. The speech is his explanation for everything that follows.",
+      "sources": [
+        "Janet Adelman, Suffocating Mothers (1992)",
+        "Emrys Jones, Scenic Form in Shakespeare (1971)"
+      ]
+    },
+    {
+      "id": "richard_iii_act1_scene1_ann2",
+      "line_start": 14,
+      "line_end": 31,
+      "citation_display": "Richard III 1.1.14–31",
+      "category": "thematic",
+      "title": "Shakespeare's first villain-protagonist and the audience pact",
+      "body": "Richard's direct address to us is Shakespeare's great theatrical innovation of the early 1590s. The Vice-figure of the old morality plays had winked at the audience; Richard extends the wink into a conspiracy. By the time he tells us \"I am determined to prove a villain,\" we have already agreed to watch. Each of his soliloquies and asides reaffirms the pact: he confides in us before betraying everyone onstage. The technique is the template for Iago, Edmund, and Macbeth's darker soliloquies — but Richard does it first, and most audaciously. We are not simply observing a villain; we are his accomplices. The play's moral force depends on this complicity: when the ghosts arrive in 5.3, they arrive for us too. Coleridge called the device \"a species of ventriloquism\" by which Shakespeare makes the audience imagine and desire what Richard will do.",
+      "sources": [
+        "Samuel Taylor Coleridge, Lectures on Shakespeare (1811–13)",
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)",
+        "Robert Weimann, Shakespeare and the Popular Tradition in the Theater (1967)"
+      ]
+    },
+    {
+      "id": "richard_iii_act1_scene1_ann3",
+      "line_start": 14,
+      "line_end": 27,
+      "citation_display": "Richard III 1.1.14–27",
+      "category": "historical",
+      "title": "The deformity and the Tudor portrait",
+      "body": "Richard's self-description — curtailed of fair proportion, cheated of feature by dissembling nature, halting, deformed — descends from a specific historical tradition. Thomas More's unfinished History of King Richard III (written c. 1513, published 1557) established the withered-hunchback portrait that Edward Hall (1548) and Raphael Holinshed (1577) then amplified, and which Shakespeare inherits directly. The historical Richard had severe scoliosis of the spine (confirmed in 2012 when his skeleton was rediscovered beneath a Leicester car park), but he was not the shriveled monster of the stage tradition: Tudor polemic shaped the portrait to legitimize the dynasty that had overthrown him. Virgil's job here is not to adjudicate. The dramatic Richard is inseparable from the propagandistic tradition that produced him, and Shakespeare is working with More's portrait, not the man. But readers should know that the portrait has a political origin, and that the twenty-first century has seen substantial historical revision.",
+      "sources": [
+        "Thomas More, History of King Richard III (c. 1513)",
+        "Charles Ross, Richard III (1981)",
+        "David Baldwin, Richard III (2013)"
+      ]
+    },
+    {
+      "id": "richard_iii_act1_scene1_ann4",
+      "line_start": 32,
+      "line_end": 41,
+      "citation_display": "Richard III 1.1.32–41",
+      "category": "structural",
+      "title": "The plot announced before it begins",
+      "body": "Shakespeare structures Richard III unlike any of his earlier histories: the villain lays out the plot mechanism in the first forty lines, then executes it in public view. \"Plots have I laid, inductions dangerous\" is not a boast but a prospectus. The prophecy concerning the letter G, which Richard says \"Of Edward's heirs the murderer shall be,\" is really about Gloucester himself, but he has engineered its use against Clarence (George). We are watching plotting-as-framing. This openness — the audience always knows more than the stage does — produces the play's signature tempo. Dramatic irony is not used occasionally here; it is the structural principle. Every scene until the coronation (4.2) operates under the rule that we see the instrument of Richard's next move before the characters do. The pleasure is watching them catch up, too late.",
+      "sources": [
+        "Wolfgang Clemen, A Commentary on Shakespeare's Richard III (1968)",
+        "A. P. Rossiter, Angel with Horns (1961)"
+      ]
+    },
+    {
+      "id": "richard_iii_act1_scene1_ann5",
+      "line_start": 116,
+      "line_end": 124,
+      "citation_display": "Richard III 1.1.116–124",
+      "category": "close_reading",
+      "title": "The quiet brutality of Clarence's farewell",
+      "body": "\"Go, tread the path that thou shalt ne'er return, / Simple, plain Clarence!\" Richard says as his brother exits toward the Tower. What makes the line chilling is its tone — not triumph, almost affection. \"I do love thee so, / That I will shortly send thy soul to heaven\" is the play's first fully formed example of Richard's signature: sentimentality as weapon. Murder clothed in the language of care. The pattern will recur with the princes (\"the sons of Edward sleep in Abraham's bosom\", 4.3) and in the wooing of Anne (\"He that bereft thee, lady, of thy husband, / Did it to help thee to a better husband\", 1.2). Each time, Richard uses the idiom of benevolence to describe destruction. This is not simply hypocrisy — it is a specific rhetorical strategy that would become Shakespeare's template for evil eloquence across the major tragedies.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)",
+        "Stephen Greenblatt, Shakespearean Negotiations (1988)"
+      ]
+    },
+    {
+      "id": "richard_iii_act1_scene1_ann6",
+      "line_start": 145,
+      "line_end": 160,
+      "citation_display": "Richard III 1.1.145–160",
+      "category": "textual",
+      "title": "The Q1 and F1 texts of Richard III",
+      "body": "Richard III survives in two substantively different texts: the First Quarto (Q1, 1597) and the First Folio (F1, 1623). F1 is roughly two hundred lines longer, with the \"clock scene\" (4.2) extended and several passages elsewhere expanded — including small additions to this final soliloquy. Unlike King Lear's Q1/F1 situation, which most modern editions treat as two distinct works, Richard III's variants are conventionally regarded as stages of the same play, and editors usually conflate them following F1's fuller text. Standard Ebooks uses a conflated modern-editorial text. Most passages students encounter are common to both versions, but the editorial question of which \"Richard III\" a production stages is live. Virgil raises this here as a small flag: the text is historically unstable, and that instability is part of what makes Shakespearean editing a living scholarly discipline.",
+      "sources": [
+        "John Jowett, The Oxford Shakespeare: Richard III (2000)",
+        "Antony Hammond, Arden Shakespeare: Richard III (1981)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act1_scene1_q1",
+      "kind": "close_reading",
+      "prompt": "What does \"Now is the winter of our discontent / Made glorious summer by this sun of York\" actually mean?",
+      "options": [
+        "Our troubles continue, and our house of York is suffering",
+        "Our winter has ended and turned to summer; our troubles are over",
+        "Edward IV (the sun of York) is the source of our discontent",
+        "The seasons have unnaturally reversed, signaling doom for the realm"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 1,
+      "anchor_line_end": 4
+    },
+    {
+      "id": "richard_iii_act1_scene1_q2",
+      "kind": "inference",
+      "prompt": "Why does Richard say he is \"determined to prove a villain\"?",
+      "options": [
+        "He has been slandered and wishes to live up to his bad reputation",
+        "God has predestined him to villainy and he cannot escape it",
+        "He cannot belong to the peaceful court world and will manufacture conflict for himself",
+        "He wishes to avenge the wrongs done to the House of York"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 20,
+      "anchor_line_start": 14,
+      "anchor_line_end": 31
+    },
+    {
+      "id": "richard_iii_act1_scene1_q3",
+      "kind": "theme",
+      "prompt": "What is distinctive about Richard's direct address to the audience in this scene?",
+      "options": [
+        "It follows the choral convention inherited from Greek tragedy",
+        "It is a formal aside, isolated from the surrounding dialogue",
+        "It makes the audience complicit in his schemes — we agree to watch him plot before he acts",
+        "It is a conventional prologue, informing the audience of prior events"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 41
+    },
+    {
+      "id": "richard_iii_act1_scene1_q4",
+      "kind": "comprehension",
+      "prompt": "What is Richard's plan against his brother Clarence?",
+      "options": [
+        "To have him exiled to Burgundy",
+        "To turn King Edward against him using a prophecy about the letter G, leading to Clarence's imprisonment",
+        "To challenge him openly to single combat",
+        "To force him to renounce his dukedom in exchange for safety"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 32,
+      "anchor_line_end": 41
+    },
+    {
+      "id": "richard_iii_act1_scene1_q5",
+      "kind": "close_reading",
+      "prompt": "When Richard says of Clarence \"I do love thee so, / That I will shortly send thy soul to heaven,\" what is the rhetorical effect?",
+      "options": [
+        "Genuine brotherly affection mingled with regret",
+        "Sentimentality repurposed as a weapon — the idiom of care describing murder",
+        "A sarcastic refusal of the royal order to imprison Clarence",
+        "Religious consolation offered to a condemned brother"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 116,
+      "anchor_line_end": 124
+    },
+    {
+      "id": "richard_iii_act1_scene1_q6",
+      "kind": "inference",
+      "prompt": "Why does Richard want to marry \"Warwick's youngest daughter\" (Anne)?",
+      "options": [
+        "He has loved her since childhood",
+        "Warwick's daughter will bring a large dowry",
+        "\"Not all so much for love\" but for \"another secret close intent\" — political, not romantic",
+        "His brother King Edward has commanded it as a peace-making alliance"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 20,
+      "anchor_line_start": 151,
+      "anchor_line_end": 157
+    },
+    {
+      "id": "richard_iii_act1_scene1_q7",
+      "kind": "structural",
+      "prompt": "What is unusual about how Richard III opens, compared to most Shakespeare plays?",
+      "options": [
+        "The play begins in the middle of an ongoing battle",
+        "The villain-protagonist enters alone and lays out the entire plot mechanism in advance",
+        "A chorus introduces the historical background before any character speaks",
+        "The opening is a dumb-show (mimed action without dialogue)"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 1,
+      "anchor_line_end": 41
+    },
+    {
+      "id": "richard_iii_act1_scene1_q8",
+      "kind": "historical",
+      "prompt": "The exaggerated deformity Richard ascribes to himself (\"curtail'd of fair proportion,\" \"deform'd, unfinish'd\") descends from which historical tradition?",
+      "options": [
+        "Eyewitness accounts from Richard's contemporaries, largely accurate",
+        "Tudor-era chronicles (More, Hall, Holinshed) that blackened Richard's image to legitimize the Tudor dynasty",
+        "Roman-era sources Shakespeare accessed via Plutarch",
+        "A Lancastrian propaganda tradition dating to the 1450s"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 14,
+      "anchor_line_end": 27
+    }
+  ]
+}

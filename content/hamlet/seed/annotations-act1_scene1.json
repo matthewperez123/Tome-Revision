@@ -1,0 +1,45 @@
+{
+  "section_id": "hamlet_act1_scene1",
+  "annotations": [
+    {
+      "line_start": 1,
+      "line_end": 12,
+      "category": "structural",
+      "title": "The exchange that opens a tragedy",
+      "body": "Shakespeare begins not with a king or a murder but with two frightened sentries challenging each other in the dark. The first line — 'Who's there?' — is the question the entire play will ask of ghosts, of fathers, of the self. Critics since Maynard Mack have noted that Hamlet is built on a structure of interrogation: every major scene poses a question and refuses an easy answer. The sentries' midnight, bitter-cold, and 'sick at heart' place us immediately in a world where something has gone wrong before the play began. This is the formal opposite of Shakespeare's comedies, which typically begin at court in daylight with a stated problem to be solved.",
+      "sources": ["Maynard Mack, 'The World of Hamlet' (1952)"]
+    },
+    {
+      "line_start": 37,
+      "line_end": 70,
+      "category": "historical",
+      "title": "Armed ghosts and Elizabethan belief",
+      "body": "Horatio is called to speak to the ghost because he is 'a scholar' — in Elizabethan belief, Latin was the language that bound or banished spirits, and only educated men knew it. The ghost appears in full armor, 'cap-a-pe,' which was the convention of revenant kings: the armor that killed the rival Fortinbras is the armor the ghost wears. The Protestant reforms had officially abolished purgatory, and with it the theological place from which a ghost could lawfully return. Belief persisted, however, and Elizabethan accounts distinguished between holy spirits (truthful), damned goblins (lying), and hallucinations (worthless). The question 'Is thy soul damned?' will organize the first three acts.",
+      "sources": ["Stephen Greenblatt, Hamlet in Purgatory (2001)", "Keith Thomas, Religion and the Decline of Magic (1971)"]
+    },
+    {
+      "line_start": 79,
+      "line_end": 107,
+      "category": "historical",
+      "title": "The political backstory and Fortinbras",
+      "body": "Horatio's long speech establishes the political frame: old Hamlet once killed old Fortinbras in single combat over territory, gaining lands for Denmark; now young Fortinbras is mustering an army to reclaim them. The audience will not meet Fortinbras until Act 4, but he shadows every scene — the son who acts decisively to avenge his father, against whom Hamlet is implicitly measured. The 'seal'd compact, well ratified by law and heraldry' signals that Shakespeare's Denmark observes chivalric rules; Claudius's later murder by poison is thus doubly monstrous, not just fratricide but a violation of the code that gave his predecessor his crown.",
+      "sources": ["Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"]
+    },
+    {
+      "line_start": 108,
+      "line_end": 125,
+      "category": "thematic",
+      "title": "The Roman auspices and a world out of joint",
+      "body": "Horatio invokes the portents before Julius Caesar's assassination — graves opening, comets, the moon eclipsed — to suggest that the ghost is such a warning for Denmark. The comparison is precise: both kings were killed by men close to them; both murders ushered in civil catastrophe; both produced sons who delayed their revenge. Shakespeare had staged Julius Caesar the year before Hamlet (1599), and audiences would hear the echo. The image of the dead returning as omens of political collapse sits at the heart of both plays: private crimes become public signs, and the state begins to hemorrhage meaning.",
+      "sources": ["Jonathan Bate, Soul of the Age (2008)"]
+    },
+    {
+      "line_start": 158,
+      "line_end": 165,
+      "category": "historical",
+      "title": "The 'season wherein our Saviour's birth is celebrated'",
+      "body": "Marcellus's lines about Christmas driving away spirits preserve a pre-Reformation folk belief that Shakespeare's audience still half-held. The speech's beauty — 'no spirit dare stir abroad' — is also its theological retreat: Horatio replies 'in part I do believe it,' registering the Protestant intellectual's partial dissent. Shakespeare places this devotional lyric just before daybreak, allowing the scene's dread to thin into tenderness. The tonal shift prepares the audience for Hamlet's more skeptical voice in the following scene, and for the play's unresolved tension between a Catholic cosmology that gives the ghost meaning and a Protestant one that would deny it.",
+      "sources": ["Stephen Greenblatt, Will in the World (2004)"]
+    }
+  ]
+}

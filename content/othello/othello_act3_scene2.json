@@ -1,0 +1,122 @@
+{
+  "section_id": "othello_act3_scene2",
+  "work_id": "othello",
+  "sequence": 8,
+  "act": 3,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "A room in the castle",
+  "line_count": 7,
+  "word_count": 46,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "OTHELLO",
+      "text": "These letters give, Iago, to the pilot;"
+    },
+    {
+      "number": 2,
+      "speaker": "OTHELLO",
+      "text": "And by him do my duties to the senate:"
+    },
+    {
+      "number": 3,
+      "speaker": "OTHELLO",
+      "text": "That done, I will be walking on the works;"
+    },
+    {
+      "number": 4,
+      "speaker": "OTHELLO",
+      "text": "Repair there to me."
+    },
+    {
+      "number": 4,
+      "speaker": "IAGO",
+      "text": "Well, my good lord, I’ll do’t."
+    },
+    {
+      "number": 5,
+      "speaker": "OTHELLO",
+      "text": "This fortification, gentlemen, shall we see’t?"
+    },
+    {
+      "number": 5,
+      "speaker": "GENTLEMEN",
+      "text": "We’ll wait upon your lordship."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Othello, Iago, and Gentlemen."
+    },
+    {
+      "after_line": 5,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "othello_act3_scene2_gloss1",
+      "line": 1,
+      "phrase": "pilot",
+      "definition": "ship-master who will carry dispatches"
+    },
+    {
+      "id": "othello_act3_scene2_gloss2",
+      "line": 2,
+      "phrase": "duties",
+      "definition": "respects; homage"
+    },
+    {
+      "id": "othello_act3_scene2_gloss3",
+      "line": 2,
+      "phrase": "do my duties",
+      "definition": "pay my respects"
+    },
+    {
+      "id": "othello_act3_scene2_gloss4",
+      "line": 3,
+      "phrase": "works",
+      "definition": "fortifications; defenses under construction"
+    },
+    {
+      "id": "othello_act3_scene2_gloss5",
+      "line": 5,
+      "phrase": "wait upon",
+      "definition": "attend"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "othello_act3_scene2_ann1",
+      "line_start": 1,
+      "line_end": 7,
+      "citation_display": "Othello 3.2.1–7",
+      "category": "structural",
+      "title": "The seven-line military interlude",
+      "body": "Othello's brief conferral with Iago about dispatches and fortifications is one of the play's smallest units and one of its most poignant. For the last time, we see Othello fully in command of his professional self — giving orders, organizing correspondence, touring the works. Between this scene and the next the general will disappear into the husband. Shakespeare lets us see the soldier once more before the temptation scene swallows him.",
+      "sources": [
+        "Paul Jorgensen, *Shakespeare's Military World* (1956)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "othello_act3_scene2_q1",
+      "kind": "comprehension",
+      "prompt": "What business does Othello attend to in this brief scene?",
+      "options": [
+        "He plans to dismiss Desdemona from his presence",
+        "He dispatches letters to Venice and inspects the fortifications",
+        "He orders Cassio's execution",
+        "He writes to Brabantio asking for reconciliation"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 1,
+      "anchor_line_end": 7
+    }
+  ]
+}

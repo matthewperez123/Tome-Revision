@@ -1,0 +1,1162 @@
+{
+  "section_id": "henry_v_act2_scene4",
+  "work_id": "henry-v",
+  "sequence": 8,
+  "act": 2,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "France. The King's palace",
+  "line_count": 151,
+  "word_count": 1126,
+  "est_read_minutes": 6,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "FRENCH KING",
+      "text": "Thus comes the English with full power upon us;"
+    },
+    {
+      "number": 2,
+      "speaker": "FRENCH KING",
+      "text": "And more than carefully it us concerns"
+    },
+    {
+      "number": 3,
+      "speaker": "FRENCH KING",
+      "text": "To answer royally in our defences."
+    },
+    {
+      "number": 4,
+      "speaker": "FRENCH KING",
+      "text": "Therefore the Dukes of Berri and of Brittagne,"
+    },
+    {
+      "number": 5,
+      "speaker": "FRENCH KING",
+      "text": "Of Brabant and of Orleans, shall make forth,"
+    },
+    {
+      "number": 6,
+      "speaker": "FRENCH KING",
+      "text": "And you, Prince Dauphin, with all swift dispatch,"
+    },
+    {
+      "number": 7,
+      "speaker": "FRENCH KING",
+      "text": "To line and new repair our towns of war"
+    },
+    {
+      "number": 8,
+      "speaker": "FRENCH KING",
+      "text": "With men of courage and with means defendant;"
+    },
+    {
+      "number": 9,
+      "speaker": "FRENCH KING",
+      "text": "For England his approaches makes as fierce"
+    },
+    {
+      "number": 10,
+      "speaker": "FRENCH KING",
+      "text": "As waters to the sucking of a gulf."
+    },
+    {
+      "number": 11,
+      "speaker": "FRENCH KING",
+      "text": "It fits us then to be as provident"
+    },
+    {
+      "number": 12,
+      "speaker": "FRENCH KING",
+      "text": "As fears may teach us out of late examples"
+    },
+    {
+      "number": 13,
+      "speaker": "FRENCH KING",
+      "text": "Left by the fatal and neglected English"
+    },
+    {
+      "number": 14,
+      "speaker": "FRENCH KING",
+      "text": "Upon our fields."
+    },
+    {
+      "number": 14,
+      "speaker": "DAUPHIN",
+      "text": "My most redoubted father,"
+    },
+    {
+      "number": 15,
+      "speaker": "DAUPHIN",
+      "text": "It is most meet we arm us ’gainst the foe;"
+    },
+    {
+      "number": 16,
+      "speaker": "DAUPHIN",
+      "text": "For peace itself should not so dull a kingdom,"
+    },
+    {
+      "number": 17,
+      "speaker": "DAUPHIN",
+      "text": "Though war nor no known quarrel were in question,"
+    },
+    {
+      "number": 18,
+      "speaker": "DAUPHIN",
+      "text": "But that defences, musters, preparations,"
+    },
+    {
+      "number": 19,
+      "speaker": "DAUPHIN",
+      "text": "Should be maintain’d, assembled and collected,"
+    },
+    {
+      "number": 20,
+      "speaker": "DAUPHIN",
+      "text": "As were a war in expectation."
+    },
+    {
+      "number": 21,
+      "speaker": "DAUPHIN",
+      "text": "Therefore, I say, ’tis meet we all go forth"
+    },
+    {
+      "number": 22,
+      "speaker": "DAUPHIN",
+      "text": "To view the sick and feeble parts of France:"
+    },
+    {
+      "number": 23,
+      "speaker": "DAUPHIN",
+      "text": "And let us do it with no show of fear;"
+    },
+    {
+      "number": 24,
+      "speaker": "DAUPHIN",
+      "text": "No, with no more than if we heard that England"
+    },
+    {
+      "number": 25,
+      "speaker": "DAUPHIN",
+      "text": "Were busied with a Whitsun morris-dance:"
+    },
+    {
+      "number": 26,
+      "speaker": "DAUPHIN",
+      "text": "For, my good liege, she is so idly king’d,"
+    },
+    {
+      "number": 27,
+      "speaker": "DAUPHIN",
+      "text": "Her sceptre so fantastically borne"
+    },
+    {
+      "number": 28,
+      "speaker": "DAUPHIN",
+      "text": "By a vain, giddy, shallow, humorous youth,"
+    },
+    {
+      "number": 29,
+      "speaker": "DAUPHIN",
+      "text": "That fear attends her not."
+    },
+    {
+      "number": 29,
+      "speaker": "CONSTABLE",
+      "text": "O peace, Prince Dauphin!"
+    },
+    {
+      "number": 30,
+      "speaker": "CONSTABLE",
+      "text": "You are too much mistaken in this king:"
+    },
+    {
+      "number": 31,
+      "speaker": "CONSTABLE",
+      "text": "Question your grace the late ambassadors,"
+    },
+    {
+      "number": 32,
+      "speaker": "CONSTABLE",
+      "text": "With what great state he heard their embassy,"
+    },
+    {
+      "number": 33,
+      "speaker": "CONSTABLE",
+      "text": "How well supplied with noble counsellors,"
+    },
+    {
+      "number": 34,
+      "speaker": "CONSTABLE",
+      "text": "How modest in exception, and withal"
+    },
+    {
+      "number": 35,
+      "speaker": "CONSTABLE",
+      "text": "How terrible in constant resolution,"
+    },
+    {
+      "number": 36,
+      "speaker": "CONSTABLE",
+      "text": "And you shall find his vanities forespent"
+    },
+    {
+      "number": 37,
+      "speaker": "CONSTABLE",
+      "text": "Were but the outside of the Roman Brutus,"
+    },
+    {
+      "number": 38,
+      "speaker": "CONSTABLE",
+      "text": "Covering discretion with a coat of folly;"
+    },
+    {
+      "number": 39,
+      "speaker": "CONSTABLE",
+      "text": "As gardeners do with ordure hide those roots"
+    },
+    {
+      "number": 40,
+      "speaker": "CONSTABLE",
+      "text": "That shall first spring and be most delicate."
+    },
+    {
+      "number": 41,
+      "speaker": "DAUPHIN",
+      "text": "Well, ’tis not so, my lord high constable;"
+    },
+    {
+      "number": 42,
+      "speaker": "DAUPHIN",
+      "text": "But though we think it so, it is no matter:"
+    },
+    {
+      "number": 43,
+      "speaker": "DAUPHIN",
+      "text": "In cases of defence ’tis best to weigh"
+    },
+    {
+      "number": 44,
+      "speaker": "DAUPHIN",
+      "text": "The enemy more mighty than he seems:"
+    },
+    {
+      "number": 45,
+      "speaker": "DAUPHIN",
+      "text": "So the proportions of defence are fill’d;"
+    },
+    {
+      "number": 46,
+      "speaker": "DAUPHIN",
+      "text": "Which of a weak and niggardly projection"
+    },
+    {
+      "number": 47,
+      "speaker": "DAUPHIN",
+      "text": "Doth, like a miser, spoil his coat with scanting"
+    },
+    {
+      "number": 48,
+      "speaker": "DAUPHIN",
+      "text": "A little cloth."
+    },
+    {
+      "number": 48,
+      "speaker": "FRENCH KING",
+      "text": "Think we King Harry strong;"
+    },
+    {
+      "number": 49,
+      "speaker": "FRENCH KING",
+      "text": "And, princes, look you strongly arm to meet him."
+    },
+    {
+      "number": 50,
+      "speaker": "FRENCH KING",
+      "text": "The kindred of him hath been flesh’d upon us;"
+    },
+    {
+      "number": 51,
+      "speaker": "FRENCH KING",
+      "text": "And he is bred out of that bloody strain"
+    },
+    {
+      "number": 52,
+      "speaker": "FRENCH KING",
+      "text": "That haunted us in our familiar paths:"
+    },
+    {
+      "number": 53,
+      "speaker": "FRENCH KING",
+      "text": "Witness our too much memorable shame"
+    },
+    {
+      "number": 54,
+      "speaker": "FRENCH KING",
+      "text": "When Cressy battle fatally was struck,"
+    },
+    {
+      "number": 55,
+      "speaker": "FRENCH KING",
+      "text": "And all our princes captiv’d by the hand"
+    },
+    {
+      "number": 56,
+      "speaker": "FRENCH KING",
+      "text": "Of that black name, Edward, Black Prince of Wales;"
+    },
+    {
+      "number": 57,
+      "speaker": "FRENCH KING",
+      "text": "Whiles that his mountain sire, on mountain standing,"
+    },
+    {
+      "number": 58,
+      "speaker": "FRENCH KING",
+      "text": "Up in the air, crown’d with the golden sun,"
+    },
+    {
+      "number": 59,
+      "speaker": "FRENCH KING",
+      "text": "Saw his heroical seed, and smiled to see him,"
+    },
+    {
+      "number": 60,
+      "speaker": "FRENCH KING",
+      "text": "Mangle the work of nature and deface"
+    },
+    {
+      "number": 61,
+      "speaker": "FRENCH KING",
+      "text": "The patterns that by God and by French fathers"
+    },
+    {
+      "number": 62,
+      "speaker": "FRENCH KING",
+      "text": "Had twenty years been made. This is a stem"
+    },
+    {
+      "number": 63,
+      "speaker": "FRENCH KING",
+      "text": "Of that victorious stock; and let us fear"
+    },
+    {
+      "number": 64,
+      "speaker": "FRENCH KING",
+      "text": "The native mightiness and fate of him."
+    },
+    {
+      "number": 65,
+      "speaker": "MESSENGER",
+      "text": "Ambassadors from Harry King of England"
+    },
+    {
+      "number": 66,
+      "speaker": "MESSENGER",
+      "text": "Do crave admittance to your majesty."
+    },
+    {
+      "number": 67,
+      "speaker": "FRENCH KING",
+      "text": "We’ll give them present audience. Go, and bring them."
+    },
+    {
+      "number": 68,
+      "speaker": "FRENCH KING",
+      "text": "You see this chase is hotly follow’d, friends."
+    },
+    {
+      "number": 69,
+      "speaker": "DAUPHIN",
+      "text": "Turn head, and stop pursuit; for coward dogs"
+    },
+    {
+      "number": 70,
+      "speaker": "DAUPHIN",
+      "text": "Most spend their mouths when what they seem to threaten"
+    },
+    {
+      "number": 71,
+      "speaker": "DAUPHIN",
+      "text": "Runs far before them. Good my sovereign,"
+    },
+    {
+      "number": 72,
+      "speaker": "DAUPHIN",
+      "text": "Take up the English short, and let them know"
+    },
+    {
+      "number": 73,
+      "speaker": "DAUPHIN",
+      "text": "Of what a monarchy you are the head:"
+    },
+    {
+      "number": 74,
+      "speaker": "DAUPHIN",
+      "text": "Self-love, my liege, is not so vile a sin"
+    },
+    {
+      "number": 75,
+      "speaker": "DAUPHIN",
+      "text": "As self-neglecting."
+    },
+    {
+      "number": 75,
+      "speaker": "FRENCH KING",
+      "text": "From our brother England?"
+    },
+    {
+      "number": 76,
+      "speaker": "EXETER",
+      "text": "From him; and thus he greets your majesty."
+    },
+    {
+      "number": 77,
+      "speaker": "EXETER",
+      "text": "He wills you, in the name of God Almighty,"
+    },
+    {
+      "number": 78,
+      "speaker": "EXETER",
+      "text": "That you divest yourself, and lay apart"
+    },
+    {
+      "number": 79,
+      "speaker": "EXETER",
+      "text": "The borrow’d glories that by gift of heaven,"
+    },
+    {
+      "number": 80,
+      "speaker": "EXETER",
+      "text": "By law of nature and of nations, ’long"
+    },
+    {
+      "number": 81,
+      "speaker": "EXETER",
+      "text": "To him and to his heirs; namely, the crown"
+    },
+    {
+      "number": 82,
+      "speaker": "EXETER",
+      "text": "And all wide-stretched honours that pertain"
+    },
+    {
+      "number": 83,
+      "speaker": "EXETER",
+      "text": "By custom and the ordinance of times"
+    },
+    {
+      "number": 84,
+      "speaker": "EXETER",
+      "text": "Unto the crown of France. That you may know"
+    },
+    {
+      "number": 85,
+      "speaker": "EXETER",
+      "text": "’Tis no sinister nor no awkward claim,"
+    },
+    {
+      "number": 86,
+      "speaker": "EXETER",
+      "text": "Pick’d from the wormholes of long-vanish’d days,"
+    },
+    {
+      "number": 87,
+      "speaker": "EXETER",
+      "text": "Nor from the dust of old oblivion raked,"
+    },
+    {
+      "number": 88,
+      "speaker": "EXETER",
+      "text": "He sends you this most memorable line,"
+    },
+    {
+      "number": 89,
+      "speaker": "EXETER",
+      "text": "In every branch truly demonstrative;"
+    },
+    {
+      "number": 90,
+      "speaker": "EXETER",
+      "text": "Willing you overlook this pedigree:"
+    },
+    {
+      "number": 91,
+      "speaker": "EXETER",
+      "text": "And when you find him evenly derived"
+    },
+    {
+      "number": 92,
+      "speaker": "EXETER",
+      "text": "From his most famed of famous ancestors,"
+    },
+    {
+      "number": 93,
+      "speaker": "EXETER",
+      "text": "Edward the Third, he bids you then resign"
+    },
+    {
+      "number": 94,
+      "speaker": "EXETER",
+      "text": "Your crown and kingdom, indirectly held"
+    },
+    {
+      "number": 95,
+      "speaker": "EXETER",
+      "text": "From him the native and true challenger."
+    },
+    {
+      "number": 96,
+      "speaker": "FRENCH KING",
+      "text": "Or else what follows?"
+    },
+    {
+      "number": 97,
+      "speaker": "EXETER",
+      "text": "Bloody constraint; for if you hide the crown"
+    },
+    {
+      "number": 98,
+      "speaker": "EXETER",
+      "text": "Even in your hearts, there will he rake for it:"
+    },
+    {
+      "number": 99,
+      "speaker": "EXETER",
+      "text": "Therefore in fierce tempest is he coming,"
+    },
+    {
+      "number": 100,
+      "speaker": "EXETER",
+      "text": "In thunder and in earthquake, like a Jove,"
+    },
+    {
+      "number": 101,
+      "speaker": "EXETER",
+      "text": "That, if requiring fail, he will compel;"
+    },
+    {
+      "number": 102,
+      "speaker": "EXETER",
+      "text": "And bids you, in the bowels of the Lord,"
+    },
+    {
+      "number": 103,
+      "speaker": "EXETER",
+      "text": "Deliver up the crown, and to take mercy"
+    },
+    {
+      "number": 104,
+      "speaker": "EXETER",
+      "text": "On the poor souls for whom this hungry war"
+    },
+    {
+      "number": 105,
+      "speaker": "EXETER",
+      "text": "Opens his vasty jaws; and on your head"
+    },
+    {
+      "number": 106,
+      "speaker": "EXETER",
+      "text": "Turning the widows’ tears, the orphans’ cries,"
+    },
+    {
+      "number": 107,
+      "speaker": "EXETER",
+      "text": "The dead men’s blood, the pining maidens’ groans,"
+    },
+    {
+      "number": 108,
+      "speaker": "EXETER",
+      "text": "For husbands, fathers and betrothed lovers,"
+    },
+    {
+      "number": 109,
+      "speaker": "EXETER",
+      "text": "That shall be swallow’d in this controversy."
+    },
+    {
+      "number": 110,
+      "speaker": "EXETER",
+      "text": "This is his claim, his threatening and my message;"
+    },
+    {
+      "number": 111,
+      "speaker": "EXETER",
+      "text": "Unless the Dauphin be in presence here,"
+    },
+    {
+      "number": 112,
+      "speaker": "EXETER",
+      "text": "To whom expressly I bring greeting too."
+    },
+    {
+      "number": 113,
+      "speaker": "FRENCH KING",
+      "text": "For us, we will consider of this further:"
+    },
+    {
+      "number": 114,
+      "speaker": "FRENCH KING",
+      "text": "Tomorrow shall you bear our full intent"
+    },
+    {
+      "number": 115,
+      "speaker": "FRENCH KING",
+      "text": "Back to our brother of England."
+    },
+    {
+      "number": 115,
+      "speaker": "DAUPHIN",
+      "text": "For the Dauphin,"
+    },
+    {
+      "number": 116,
+      "speaker": "DAUPHIN",
+      "text": "I stand here for him: what to him from England?"
+    },
+    {
+      "number": 117,
+      "speaker": "EXETER",
+      "text": "Scorn and defiance: slight regard, contempt,"
+    },
+    {
+      "number": 118,
+      "speaker": "EXETER",
+      "text": "And anything that may not misbecome"
+    },
+    {
+      "number": 119,
+      "speaker": "EXETER",
+      "text": "The mighty sender, doth he prize you at."
+    },
+    {
+      "number": 120,
+      "speaker": "EXETER",
+      "text": "Thus says my king; an if your father’s highness"
+    },
+    {
+      "number": 121,
+      "speaker": "EXETER",
+      "text": "Do not, in grant of all demands at large,"
+    },
+    {
+      "number": 122,
+      "speaker": "EXETER",
+      "text": "Sweeten the bitter mock you sent his majesty,"
+    },
+    {
+      "number": 123,
+      "speaker": "EXETER",
+      "text": "He’ll call you to so hot an answer of it,"
+    },
+    {
+      "number": 124,
+      "speaker": "EXETER",
+      "text": "That caves and womby vaultages of France"
+    },
+    {
+      "number": 125,
+      "speaker": "EXETER",
+      "text": "Shall chide your trespass and return your mock"
+    },
+    {
+      "number": 126,
+      "speaker": "EXETER",
+      "text": "In second accent of his ordinance."
+    },
+    {
+      "number": 127,
+      "speaker": "DAUPHIN",
+      "text": "Say, if my father render fair return,"
+    },
+    {
+      "number": 128,
+      "speaker": "DAUPHIN",
+      "text": "It is against my will; for I desire"
+    },
+    {
+      "number": 129,
+      "speaker": "DAUPHIN",
+      "text": "Nothing but odds with England: to that end,"
+    },
+    {
+      "number": 130,
+      "speaker": "DAUPHIN",
+      "text": "As matching to his youth and vanity,"
+    },
+    {
+      "number": 131,
+      "speaker": "DAUPHIN",
+      "text": "I did present him with the Paris balls."
+    },
+    {
+      "number": 132,
+      "speaker": "EXETER",
+      "text": "He’ll make your Paris Louvre shake for it,"
+    },
+    {
+      "number": 133,
+      "speaker": "EXETER",
+      "text": "Were it the mistress-court of mighty Europe:"
+    },
+    {
+      "number": 134,
+      "speaker": "EXETER",
+      "text": "And, be assured, you’ll find a difference,"
+    },
+    {
+      "number": 135,
+      "speaker": "EXETER",
+      "text": "As we his subjects have in wonder found,"
+    },
+    {
+      "number": 136,
+      "speaker": "EXETER",
+      "text": "Between the promise of his greener days"
+    },
+    {
+      "number": 137,
+      "speaker": "EXETER",
+      "text": "And these he masters now: now he weighs time"
+    },
+    {
+      "number": 138,
+      "speaker": "EXETER",
+      "text": "Even to the utmost grain: that you shall read"
+    },
+    {
+      "number": 139,
+      "speaker": "EXETER",
+      "text": "In your own losses, if he stay in France."
+    },
+    {
+      "number": 140,
+      "speaker": "FRENCH KING",
+      "text": "Tomorrow shall you know our mind at full."
+    },
+    {
+      "number": 141,
+      "speaker": "EXETER",
+      "text": "Dispatch us with all speed, lest that our king"
+    },
+    {
+      "number": 142,
+      "speaker": "EXETER",
+      "text": "Come here himself to question our delay;"
+    },
+    {
+      "number": 143,
+      "speaker": "EXETER",
+      "text": "For he is footed in this land already."
+    },
+    {
+      "number": 144,
+      "speaker": "FRENCH KING",
+      "text": "You shall be soon dispatch’d with fair conditions:"
+    },
+    {
+      "number": 145,
+      "speaker": "FRENCH KING",
+      "text": "A night is but small breath and little pause"
+    },
+    {
+      "number": 146,
+      "speaker": "FRENCH KING",
+      "text": "To answer matters of this consequence."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Flourish. Enter the French King, the Dauphin, the Dukes of Berri and Brittagne, the Constable, and others."
+    },
+    {
+      "after_line": 64,
+      "text": "Enter a Messenger."
+    },
+    {
+      "after_line": 67,
+      "text": "Exeunt Messenger and certain Lords."
+    },
+    {
+      "after_line": 75,
+      "text": "Reenter Lords, with Exeter and train."
+    },
+    {
+      "after_line": 146,
+      "text": "Flourish. Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act2_scene4_gloss1",
+      "line": 4,
+      "phrase": "Dukes of Berri and of Brittagne",
+      "definition": "Jean Duke of Berry and Jean Duke of Brittany — senior French royals commanded to muster"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss2",
+      "line": 5,
+      "phrase": "Brabant and of Orleans",
+      "definition": "the Dukes of Brabant and Orléans — more French peers"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss3",
+      "line": 7,
+      "phrase": "line and new repair",
+      "definition": "reinforce and refurbish — fortify"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss4",
+      "line": 8,
+      "phrase": "means defendant",
+      "definition": "defensive supplies and provisions"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss5",
+      "line": 10,
+      "phrase": "sucking of a gulf",
+      "definition": "the pull of a whirlpool — England draws men to war as a gulf sucks water"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss6",
+      "line": 11,
+      "phrase": "provident",
+      "definition": "foresighted"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss7",
+      "line": 13,
+      "phrase": "fatal and neglected English",
+      "definition": "deadly English, ignored at our peril"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss8",
+      "line": 14,
+      "phrase": "redoubted",
+      "definition": "deeply respected; feared"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss9",
+      "line": 15,
+      "phrase": "meet",
+      "definition": "fitting; appropriate"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss10",
+      "line": 18,
+      "phrase": "musters",
+      "definition": "assemblies of troops; roll-calls"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss11",
+      "line": 25,
+      "phrase": "Whitsun morris-dance",
+      "definition": "folk-dance performed at Whitsuntide — the Dauphin reduces England to village dancing"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss12",
+      "line": 26,
+      "phrase": "idly king’d",
+      "definition": "badly governed; ruled by an idle king — the Dauphin's insult"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss13",
+      "line": 28,
+      "phrase": "humorous youth",
+      "definition": "a young man ruled by his moods; volatile"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss14",
+      "line": 31,
+      "phrase": "late ambassadors",
+      "definition": "the recently returned ambassadors who carried the tennis-balls insult"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss15",
+      "line": 34,
+      "phrase": "modest in exception",
+      "definition": "restrained when taking offence"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss16",
+      "line": 37,
+      "phrase": "Roman Brutus",
+      "definition": "Lucius Junius Brutus — who feigned stupidity to mask the wit that would overthrow the Tarquins"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss17",
+      "line": 39,
+      "phrase": "ordure",
+      "definition": "manure; excrement used as fertilizer"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss18",
+      "line": 41,
+      "phrase": "high constable",
+      "definition": "the Constable of France — supreme commander of the French army"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss19",
+      "line": 46,
+      "phrase": "niggardly projection",
+      "definition": "stingy planning"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss20",
+      "line": 47,
+      "phrase": "miser, spoil his coat with scanting",
+      "definition": "a miser ruins his own coat by scrimping on the cloth"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss21",
+      "line": 50,
+      "phrase": "flesh’d upon us",
+      "definition": "has tasted our blood — 'flesh'd' = initiated to meat, as with hunting dogs"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss22",
+      "line": 51,
+      "phrase": "bred out of that bloody strain",
+      "definition": "descended from that bloody stock — Henry's warrior lineage"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss23",
+      "line": 54,
+      "phrase": "Cressy battle",
+      "definition": "the Battle of Crécy, 1346 — Edward III's great victory over the French"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss24",
+      "line": 56,
+      "phrase": "Edward, Black Prince of Wales",
+      "definition": "Edward of Woodstock — hero of Crécy, already invoked in 1.2"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss25",
+      "line": 57,
+      "phrase": "mountain sire, on mountain standing",
+      "definition": "Edward III, watching from a hilltop — the French King's image of the Plantagenet king surveying his son's victory"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss26",
+      "line": 60,
+      "phrase": "Mangle the work of nature",
+      "definition": "slaughter what nature had made — the French forces cut down by the English"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss27",
+      "line": 68,
+      "phrase": "chase is hotly follow’d",
+      "definition": "hunting-metaphor: the pursuit is pressing"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss28",
+      "line": 69,
+      "phrase": "coward dogs",
+      "definition": "timid hounds — the Dauphin's insult to those who fear Henry"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss29",
+      "line": 70,
+      "phrase": "spend their mouths",
+      "definition": "bay loudly — hunting term for dogs barking"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss30",
+      "line": 72,
+      "phrase": "Take up the English short",
+      "definition": "cut the English off curtly"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss31",
+      "line": 78,
+      "phrase": "divest yourself",
+      "definition": "strip yourself of — of the French crown"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss32",
+      "line": 79,
+      "phrase": "borrow’d glories",
+      "definition": "Henry's claim: the French crown is held on loan, unlawfully"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss33",
+      "line": 85,
+      "phrase": "sinister nor no awkward claim",
+      "definition": "neither an illegitimate nor an irregular claim"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss34",
+      "line": 86,
+      "phrase": "wormholes of long-vanish’d days",
+      "definition": "dusty, worm-eaten historical records"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss35",
+      "line": 88,
+      "phrase": "memorable line",
+      "definition": "notable pedigree — a genealogical chart of Edward III's descent"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss36",
+      "line": 95,
+      "phrase": "native and true challenger",
+      "definition": "the natural and rightful claimant"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss37",
+      "line": 97,
+      "phrase": "Bloody constraint",
+      "definition": "violent compulsion — i.e. war"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss38",
+      "line": 100,
+      "phrase": "thunder and in earthquake, like a Jove",
+      "definition": "like Jove (Jupiter) — the Roman king of the gods, wielding thunder"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss39",
+      "line": 102,
+      "phrase": "bowels of the Lord",
+      "definition": "biblical idiom (Philippians 1:8) for 'the tender mercy of Christ'"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss40",
+      "line": 105,
+      "phrase": "vasty jaws",
+      "definition": "vast jaws — war personified as a devouring mouth"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss41",
+      "line": 117,
+      "phrase": "Scorn and defiance",
+      "definition": "Henry's answer to the Dauphin personally — a formal challenge"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss42",
+      "line": 118,
+      "phrase": "misbecome",
+      "definition": "be unbecoming to"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss43",
+      "line": 124,
+      "phrase": "womby vaultages",
+      "definition": "cavernous vaults — France's own caves will echo Henry's cannon-fire back"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss44",
+      "line": 126,
+      "phrase": "second accent of his ordinance",
+      "definition": "the echo/reply of his artillery — 'ordinance' = ordnance, cannon"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss45",
+      "line": 131,
+      "phrase": "Paris balls",
+      "definition": "the tennis balls the Dauphin sent — named for Paris as their origin"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss46",
+      "line": 132,
+      "phrase": "Paris Louvre",
+      "definition": "the Louvre — the royal palace at Paris (before it was a museum)"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss47",
+      "line": 136,
+      "phrase": "promise of his greener days",
+      "definition": "the potential of his earlier, unripe years — the wildness of Prince Hal in Henry IV"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss48",
+      "line": 137,
+      "phrase": "weighs time / Even to the utmost grain",
+      "definition": "reckons time to the smallest measure — Henry now disciplined and precise"
+    },
+    {
+      "id": "henry_v_act2_scene4_gloss49",
+      "line": 143,
+      "phrase": "footed in this land",
+      "definition": "already set foot on French soil — Henry's landing is imminent or accomplished"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act2_scene4_ann1",
+      "line_start": 25,
+      "line_end": 48,
+      "citation_display": "Henry V 2.4.25–48",
+      "category": "thematic",
+      "title": "The French divided — two views of Henry",
+      "body": "The French council scene stages a revealing internal disagreement. The Dauphin — 'idly king'd' Henry is a 'vain, giddy, shallow, humorous youth' — dismisses the English threat as a Whitsun morris-dance (folk-dance of village England). The Constable (a more serious figure) rebukes him: Henry's reputation for wildness is the 'outside of the Roman Brutus,' a discretion disguised as folly. The Constable's parallel is literary — he invokes Lucius Junius Brutus, the founder of the Roman Republic, who feigned stupidity to mask the wit that would later overthrow the Tarquins. The French court is divided not over strategy but over Henry's character, and the Dauphin is on the wrong side. This prepares us for the Dauphin's eventual humiliation and the Constable's death at Agincourt: the serious reader of Henry is right, and he dies for his accuracy; the reductive reader of Henry is wrong, and he is disgraced.",
+      "sources": [
+        "Gary Taylor (ed.), The Oxford Shakespeare: Henry V (1982)",
+        "Joel Altman, 'Vile Participation: The Amplification of Violence in the Theater of Henry V,' Shakespeare Quarterly 42 (1991)"
+      ]
+    },
+    {
+      "id": "henry_v_act2_scene4_ann2",
+      "line_start": 78,
+      "line_end": 112,
+      "citation_display": "Henry V 2.4.78–112",
+      "category": "structural",
+      "title": "Exeter's delivery — the formal demand",
+      "body": "Exeter's speech to the French king frames the English claim in the most aggressive possible diplomatic language: 'divest yourself … of the borrow'd glories … unto the crown of France.' The threat escalates from 'bloody constraint' (line 97) to biblical thunder ('in thunder and in earthquake, like a Jove') to a grotesque inventory of the war's human cost — widows, orphans, maidens' groans for husbands, fathers, and betrothed lovers. The rhetorical work Exeter performs here is to make Henry's claim both total and inevitable. The French king answers with courtly delay ('Tomorrow shall you bear our full intent back'); the Dauphin cannot help himself and provokes Exeter further, earning a sharper secondary threat. The scene closes with Exeter's warning that Henry 'is footed in this land already' — i.e. the invasion is not a threat but an accomplished fact. Diplomacy here is theatre, with the outcome already decided.",
+      "sources": [
+        "Andrew Gurr (ed.), King Henry V (New Cambridge Shakespeare, 1992)",
+        "Robert Shaughnessy, Shakespeare in the 21st Century (2012), on diplomatic staging"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act2_scene4_q1",
+      "kind": "comprehension",
+      "prompt": "What literary parallel does the French Constable use for Henry (lines 36–38)?",
+      "options": [
+        "Hannibal of Carthage",
+        "Alexander of Macedon",
+        "Lucius Junius Brutus — the Roman who feigned stupidity to mask the wit that would overthrow the Tarquin kings",
+        "Coriolanus"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 20,
+      "anchor_line_start": 36,
+      "anchor_line_end": 40
+    },
+    {
+      "id": "henry_v_act2_scene4_q2",
+      "kind": "theme",
+      "prompt": "The scene stages a disagreement between the Dauphin and the Constable. What does it tell us?",
+      "options": [
+        "That the French court is internally divided on Henry's character, and the Dauphin's dismissive reading is the wrong one — which prefigures his humiliation and the Constable's (accurate-but-fatal) respect",
+        "That the French are planning a peace treaty",
+        "That they intend to bribe the English army",
+        "That the Dauphin plans to flee France"
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 25,
+      "anchor_line_start": 25,
+      "anchor_line_end": 48
+    },
+    {
+      "id": "henry_v_act2_scene4_q3",
+      "kind": "close_reading",
+      "prompt": "What does Exeter mean by Henry being 'footed in this land already' (line 143)?",
+      "options": [
+        "Henry is limping from an injury",
+        "Henry has already landed in France — the 'diplomatic' demand is actually a formality delivered after the invasion",
+        "Henry has arrived at the French court in disguise",
+        "Henry has taken up residence in Paris"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 143,
+      "anchor_line_end": 143
+    }
+  ]
+}

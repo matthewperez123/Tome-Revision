@@ -1,0 +1,75 @@
+{
+  "section_id": "hamlet_act4_scene4",
+  "trials": [
+    {
+      "kind": "comprehension",
+      "prompt": "Where is Fortinbras leading his army in this scene?",
+      "options": [
+        "To reclaim his father's lost lands in Denmark.",
+        "To fight the Poles over a worthless patch of ground.",
+        "To invade England with the support of Denmark.",
+        "To assist the King of Norway against a rebellion."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 14,
+      "anchor_line_end": 27
+    },
+    {
+      "kind": "inference",
+      "prompt": "What does the Captain admit about the campaign?",
+      "options": [
+        "That the Poles will surrender without a fight.",
+        "That the land is not worth five ducats to farm, yet thousands will die for it.",
+        "That Fortinbras is a secret agent of Claudius.",
+        "That the soldiers will mutiny before reaching Poland."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 16,
+      "anchor_line_end": 23
+    },
+    {
+      "kind": "theme",
+      "prompt": "What does Hamlet's final soliloquy contrast his own behavior with?",
+      "options": [
+        "The courage of Fortinbras, who acts decisively for mere honor while Hamlet delays.",
+        "The piety of Claudius, whose prayers Hamlet cannot match.",
+        "The loyalty of Rosencrantz and Guildenstern.",
+        "The cunning of Polonius, whose methods he admires."
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 20,
+      "anchor_line_start": 44,
+      "anchor_line_end": 60
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "What does Hamlet mean by 'Rightly to be great / Is not to stir without great argument, / But greatly to find quarrel in a straw'?",
+      "options": [
+        "True greatness avoids all conflict.",
+        "True greatness can turn a trifle into a cause of honor when honor is at stake.",
+        "Nobles should not quarrel over farmland.",
+        "Ambition is always a petty motive."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 53,
+      "anchor_line_end": 56
+    },
+    {
+      "kind": "comprehension",
+      "prompt": "What vow does Hamlet make at the end of the soliloquy?",
+      "options": [
+        "To return to Wittenberg and pursue his studies.",
+        "That his thoughts, from this moment, must be bloody or worthless.",
+        "To spare Claudius for his mother's sake.",
+        "To reveal all to Horatio."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 63,
+      "anchor_line_end": 66
+    }
+  ]
+}

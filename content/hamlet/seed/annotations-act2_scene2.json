@@ -1,0 +1,37 @@
+{
+  "section_id": "hamlet_act2_scene2",
+  "annotations": [
+    {
+      "line_start": 1,
+      "line_end": 40,
+      "category": "thematic",
+      "title": "Rosencrantz and Guildenstern: the instruments of friendship",
+      "body": "Claudius and Gertrude's charge to Hamlet's school-friends is a small masterpiece of political language. They are summoned 'of so young days brought up with him' — the friendship is real, which is why its weaponization will be ethically grave — but the request is surveillance with the manners of hospitality. Hamlet will later see through it instantly: 'Were you not sent for?' The scene also shows the play's mature political intelligence: Claudius does not command, he asks, and he frames the asking as a gift the young men may decline. The very shape of courtly tyranny, Stoppard's Rosencrantz and Guildenstern Are Dead would later argue, is that no one is ever quite forced.",
+      "sources": ["Stephen Greenblatt, Will in the World (2004)"]
+    },
+    {
+      "line_start": 86,
+      "line_end": 168,
+      "category": "structural",
+      "title": "Polonius's diagnosis and the politics of madness",
+      "body": "Polonius's long-winded display before the King — 'brevity is the soul of wit' delivered in the least brief speech imaginable — is a set-piece of dramatic irony. Shakespeare plays it for comedy while making the political stakes serious: the chamberlain is committing royal resources to the theory that Hamlet is lovesick, and the decision to 'loose' Ophelia as bait follows directly. Polonius's reading of the private letter to Ophelia — 'Doubt thou the stars are fire' — violates every courtesy and weaponizes a love poem for intelligence. It is Shakespeare's finest portrait of the officious counselor whose ambition to serve has eaten his conscience.",
+      "sources": ["Frank Kermode, Shakespeare's Language (2000)"]
+    },
+    {
+      "line_start": 265,
+      "line_end": 270,
+      "category": "thematic",
+      "title": "'What a piece of work is a man'",
+      "body": "Hamlet's paean to human nature — 'in action how like an angel! in apprehension how like a god!' — would be Renaissance commonplace if he left it there. The speech's power lies in its collapse: 'And yet, to me, what is this quintessence of dust?' In a handful of lines Hamlet traverses the distance from Pico della Mirandola's Oration on the Dignity of Man to Ecclesiastes's 'all is vanity.' Modern productions play the passage ironically; original Elizabethan audiences would have heard it as a genuine hymn to humanism undercut by the speaker's own grief. The speech announces a philosophical problem the play will not solve: why is a creature capable of so much unable to act even once?",
+      "sources": ["A. C. Bradley, Shakespearean Tragedy (1904)", "Tony Tanner, Prefaces to Shakespeare (2010)"]
+    },
+    {
+      "line_start": 496,
+      "line_end": 554,
+      "category": "thematic",
+      "title": "The second soliloquy: the player and the prince",
+      "body": "Hamlet's soliloquy after the player's weeping speech about Hecuba is the play's most self-lacerating. The comparison is cruel: a professional actor, prompted by nothing, can summon tears for a fiction; Hamlet, prompted by a father's murder, has summoned nothing at all. The accusation — 'rogue and peasant slave,' 'muddy-mettled rascal,' 'John-a-dreams' — is both genuine self-contempt and a kind of self-flagellating performance, an attempt to will himself into feeling by describing his insufficiency. The soliloquy's turn at 'About, my brain!' is the play's first concrete plan: the Mousetrap. Hamlet discovers, under the pressure of shame, that he cannot act immediately but he can direct a play.",
+      "sources": ["Stephen Orgel, The Illusion of Power (1975)", "Harold Bloom, Shakespeare: The Invention of the Human (1998)"]
+    }
+  ]
+}

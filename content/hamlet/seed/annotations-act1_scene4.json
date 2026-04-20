@@ -1,0 +1,37 @@
+{
+  "section_id": "hamlet_act1_scene4",
+  "annotations": [
+    {
+      "line_start": 8,
+      "line_end": 38,
+      "category": "historical",
+      "title": "The Danes as drunkards: Shakespeare's political diplomacy",
+      "body": "Hamlet's discourse on Danish drinking customs ('heavy-headed revel east and west / Makes us traduced and taxed of other nations') appears only in the Second Quarto, not in the Folio. Why the cut? One reading: by 1603 James I, married to Anne of Denmark, had drawn England into closer diplomatic relations with Denmark, and Shakespeare's company suppressed a passage that called their new queen's countrymen swine. Whether or not the cut was deliberately political, the speech is the play's most sustained meditation on the 'one defect' — how a small flaw of nature can undo a whole character. That diagnostic will become Hamlet's own self-indictment by Act 4.",
+      "sources": ["Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"]
+    },
+    {
+      "line_start": 43,
+      "line_end": 62,
+      "category": "thematic",
+      "title": "'Spirit of health or goblin damn'd'",
+      "body": "Hamlet's first address to the ghost carefully preserves the Elizabethan threefold uncertainty: he may be a holy spirit, a damned devil in disguise, or a hallucination. The phrase 'questionable shape' puts the ghost in the category of things one may legitimately interrogate. Hamlet's skepticism here is theological as much as personal — a Protestant's wariness of Catholic ghost-lore — and it prepares the ground for the 'play within a play' trap in Act 3, by which he will test the ghost's credibility. Until then, any action Hamlet might take on the ghost's word would be imprudent, possibly damnable. This is the play's first principled defense of delay.",
+      "sources": ["Stephen Greenblatt, Hamlet in Purgatory (2001)"]
+    },
+    {
+      "line_start": 65,
+      "line_end": 85,
+      "category": "structural",
+      "title": "The ghost's silence and the platform's edge",
+      "body": "The ghost will not speak in the presence of others; it beckons Hamlet away. Horatio's warning — that the spirit may 'assume some other horrible form' or tempt Hamlet toward the cliff — is the play's first suggestion that the revenant might be diabolical. The image of the cliff that 'beetles o'er his base' would have been staged with the trapdoor and gallery architecture of the Globe: the ghost leading Hamlet 'off-stage' is physically leading him upward or downward in the Elizabethan three-tiered cosmos. The geography matters because the truth the ghost is about to deliver will depend on where it comes from — purgatorial fire, hellish fraud, or the mind's own projection.",
+      "sources": ["Andrew Gurr, The Shakespearean Stage 1574–1642 (3rd ed., 1992)"]
+    },
+    {
+      "line_start": 89,
+      "line_end": 90,
+      "category": "close_reading",
+      "title": "'Something is rotten in the state of Denmark'",
+      "body": "Marcellus's line is one of the most quoted in all of Shakespeare, and its iconic status tends to strip its dramatic force. Coming at the end of the scene, after the ghost has exited and Hamlet has followed against his friends' pleas, the line serves as a choric comment: the ghost is a symptom, not a cause. The word 'state' is precise and political — not 'condition' but commonwealth, body politic. The metaphor of rot implies something dead within a living organism, corruption hidden inside a ceremonial surface. Everything that will unfold — the assassination plot, the spying, the poisoning at a royal feast — is already implied in this one sentence.",
+      "sources": ["Jonathan Dollimore, Radical Tragedy (1984)"]
+    }
+  ]
+}

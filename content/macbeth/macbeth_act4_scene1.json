@@ -1,0 +1,1215 @@
+{
+  "section_id": "macbeth_act4_scene1",
+  "work_id": "macbeth",
+  "sequence": 18,
+  "act": 4,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "A cavern. In the middle, a boiling cauldron",
+  "line_count": 167,
+  "word_count": 1060,
+  "est_read_minutes": 5,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "FIRST WITCH",
+      "text": "Thrice the brinded cat hath mew’d."
+    },
+    {
+      "number": 1,
+      "speaker": "SECOND WITCH",
+      "text": "Thrice and once the hedge-pig whined."
+    },
+    {
+      "number": 2,
+      "speaker": "THIRD WITCH",
+      "text": "Harpier cries ’Tis time, ’tis time."
+    },
+    {
+      "number": 2,
+      "speaker": "FIRST WITCH",
+      "text": "Round about the cauldron go;"
+    },
+    {
+      "number": 3,
+      "speaker": "FIRST WITCH",
+      "text": "In the poison’d entrails throw."
+    },
+    {
+      "number": 4,
+      "speaker": "FIRST WITCH",
+      "text": "Toad, that under cold stone"
+    },
+    {
+      "number": 5,
+      "speaker": "FIRST WITCH",
+      "text": "Days and nights has thirty-one"
+    },
+    {
+      "number": 6,
+      "speaker": "FIRST WITCH",
+      "text": "Swelter’d venom sleeping got,"
+    },
+    {
+      "number": 7,
+      "speaker": "FIRST WITCH",
+      "text": "Boil thou first i’ the charmed pot."
+    },
+    {
+      "number": 8,
+      "speaker": "ALL",
+      "text": "Double, double toil and trouble;"
+    },
+    {
+      "number": 9,
+      "speaker": "ALL",
+      "text": "Fire burn, and cauldron bubble."
+    },
+    {
+      "number": 9,
+      "speaker": "SECOND WITCH",
+      "text": "Fillet of a fenny snake,"
+    },
+    {
+      "number": 10,
+      "speaker": "SECOND WITCH",
+      "text": "In the cauldron boil and bake;"
+    },
+    {
+      "number": 11,
+      "speaker": "SECOND WITCH",
+      "text": "Eye of newt and toe of frog,"
+    },
+    {
+      "number": 12,
+      "speaker": "SECOND WITCH",
+      "text": "Wool of bat and tongue of dog,"
+    },
+    {
+      "number": 13,
+      "speaker": "SECOND WITCH",
+      "text": "Adder’s fork and blind-worm’s sting,"
+    },
+    {
+      "number": 14,
+      "speaker": "SECOND WITCH",
+      "text": "Lizard’s leg and howlet’s wing,"
+    },
+    {
+      "number": 15,
+      "speaker": "SECOND WITCH",
+      "text": "For a charm of powerful trouble,"
+    },
+    {
+      "number": 16,
+      "speaker": "SECOND WITCH",
+      "text": "Like a hell-broth boil and bubble."
+    },
+    {
+      "number": 16,
+      "speaker": "ALL",
+      "text": "Double, double toil and trouble;"
+    },
+    {
+      "number": 17,
+      "speaker": "ALL",
+      "text": "Fire burn and cauldron bubble."
+    },
+    {
+      "number": 17,
+      "speaker": "THIRD WITCH",
+      "text": "Scale of dragon, tooth of wolf,"
+    },
+    {
+      "number": 18,
+      "speaker": "THIRD WITCH",
+      "text": "Witches’ mummy, maw and gulf"
+    },
+    {
+      "number": 19,
+      "speaker": "THIRD WITCH",
+      "text": "Of the ravin’d salt-sea shark,"
+    },
+    {
+      "number": 20,
+      "speaker": "THIRD WITCH",
+      "text": "Root of hemlock digg’d i’ the dark,"
+    },
+    {
+      "number": 21,
+      "speaker": "THIRD WITCH",
+      "text": "Liver of blaspheming Jew,"
+    },
+    {
+      "number": 22,
+      "speaker": "THIRD WITCH",
+      "text": "Gall of goat, and slips of yew"
+    },
+    {
+      "number": 23,
+      "speaker": "THIRD WITCH",
+      "text": "Sliver’d in the moon’s eclipse,"
+    },
+    {
+      "number": 24,
+      "speaker": "THIRD WITCH",
+      "text": "Nose of Turk and Tartar’s lips,"
+    },
+    {
+      "number": 25,
+      "speaker": "THIRD WITCH",
+      "text": "Finger of birth-strangled babe"
+    },
+    {
+      "number": 26,
+      "speaker": "THIRD WITCH",
+      "text": "Ditch-deliver’d by a drab,"
+    },
+    {
+      "number": 27,
+      "speaker": "THIRD WITCH",
+      "text": "Make the gruel thick and slab:"
+    },
+    {
+      "number": 28,
+      "speaker": "THIRD WITCH",
+      "text": "Add thereto a tiger’s chaudron,"
+    },
+    {
+      "number": 29,
+      "speaker": "THIRD WITCH",
+      "text": "For the ingredients of our cauldron."
+    },
+    {
+      "number": 29,
+      "speaker": "ALL",
+      "text": "Double, double toil and trouble;"
+    },
+    {
+      "number": 30,
+      "speaker": "ALL",
+      "text": "Fire burn and cauldron bubble."
+    },
+    {
+      "number": 30,
+      "speaker": "SECOND WITCH",
+      "text": "Cool it with a baboon’s blood,"
+    },
+    {
+      "number": 31,
+      "speaker": "SECOND WITCH",
+      "text": "Then the charm is firm and good."
+    },
+    {
+      "number": 32,
+      "speaker": "HECATE",
+      "text": "O well done! I commend your pains;"
+    },
+    {
+      "number": 33,
+      "speaker": "HECATE",
+      "text": "And every one shall share i’ the gains:"
+    },
+    {
+      "number": 34,
+      "speaker": "HECATE",
+      "text": "And now about the cauldron sing,"
+    },
+    {
+      "number": 35,
+      "speaker": "HECATE",
+      "text": "Live elves and fairies in a ring,"
+    },
+    {
+      "number": 36,
+      "speaker": "HECATE",
+      "text": "Enchanting all that you put in. Hecate retires."
+    },
+    {
+      "number": 37,
+      "speaker": "SECOND WITCH",
+      "text": "By the pricking of my thumbs,"
+    },
+    {
+      "number": 38,
+      "speaker": "SECOND WITCH",
+      "text": "Something wicked this way comes."
+    },
+    {
+      "number": 39,
+      "speaker": "SECOND WITCH",
+      "text": "Open, locks,"
+    },
+    {
+      "number": 40,
+      "speaker": "SECOND WITCH",
+      "text": "Whoever knocks!"
+    },
+    {
+      "number": 41,
+      "speaker": "MACBETH",
+      "text": "How now, you secret, black, and midnight hags!"
+    },
+    {
+      "number": 42,
+      "speaker": "MACBETH",
+      "text": "What is’t you do?"
+    },
+    {
+      "number": 42,
+      "speaker": "ALL",
+      "text": "A deed without a name."
+    },
+    {
+      "number": 43,
+      "speaker": "MACBETH",
+      "text": "I conjure you, by that which you profess,"
+    },
+    {
+      "number": 44,
+      "speaker": "MACBETH",
+      "text": "Howe’er you come to know it, answer me:"
+    },
+    {
+      "number": 45,
+      "speaker": "MACBETH",
+      "text": "Though you untie the winds and let them fight"
+    },
+    {
+      "number": 46,
+      "speaker": "MACBETH",
+      "text": "Against the churches; though the yesty waves"
+    },
+    {
+      "number": 47,
+      "speaker": "MACBETH",
+      "text": "Confound and swallow navigation up;"
+    },
+    {
+      "number": 48,
+      "speaker": "MACBETH",
+      "text": "Though bladed corn be lodged and trees blown down;"
+    },
+    {
+      "number": 49,
+      "speaker": "MACBETH",
+      "text": "Though castles topple on their warders’ heads;"
+    },
+    {
+      "number": 50,
+      "speaker": "MACBETH",
+      "text": "Though palaces and pyramids do slope"
+    },
+    {
+      "number": 51,
+      "speaker": "MACBETH",
+      "text": "Their heads to their foundations; though the treasure"
+    },
+    {
+      "number": 52,
+      "speaker": "MACBETH",
+      "text": "Of nature’s germens tumble all together,"
+    },
+    {
+      "number": 53,
+      "speaker": "MACBETH",
+      "text": "Even till destruction sicken; answer me"
+    },
+    {
+      "number": 54,
+      "speaker": "MACBETH",
+      "text": "To what I ask you."
+    },
+    {
+      "number": 54,
+      "speaker": "FIRST WITCH",
+      "text": "Speak."
+    },
+    {
+      "number": 55,
+      "speaker": "SECOND WITCH",
+      "text": "Demand."
+    },
+    {
+      "number": 55,
+      "speaker": "THIRD WITCH",
+      "text": "We’ll answer."
+    },
+    {
+      "number": 56,
+      "speaker": "FIRST WITCH",
+      "text": "Say, if thou’dst rather hear it from our mouths,"
+    },
+    {
+      "number": 57,
+      "speaker": "FIRST WITCH",
+      "text": "Or from our masters?"
+    },
+    {
+      "number": 57,
+      "speaker": "MACBETH",
+      "text": "Call ’em; let me see ’em."
+    },
+    {
+      "number": 58,
+      "speaker": "FIRST WITCH",
+      "text": "Pour in sow’s blood, that hath eaten"
+    },
+    {
+      "number": 59,
+      "speaker": "FIRST WITCH",
+      "text": "Her nine farrow; grease that’s sweaten"
+    },
+    {
+      "number": 60,
+      "speaker": "FIRST WITCH",
+      "text": "From the murderer’s gibbet throw"
+    },
+    {
+      "number": 61,
+      "speaker": "FIRST WITCH",
+      "text": "Into the flame."
+    },
+    {
+      "number": 61,
+      "speaker": "ALL",
+      "text": "Come, high or low;"
+    },
+    {
+      "number": 62,
+      "speaker": "ALL",
+      "text": "Thyself and office deftly show!"
+    },
+    {
+      "number": 62,
+      "speaker": "MACBETH",
+      "text": "Tell me, thou unknown power—"
+    },
+    {
+      "number": 63,
+      "speaker": "FIRST WITCH",
+      "text": "He knows thy thought:"
+    },
+    {
+      "number": 64,
+      "speaker": "FIRST WITCH",
+      "text": "Hear his speech, but say thou nought."
+    },
+    {
+      "number": 65,
+      "speaker": "FIRST APPARITION",
+      "text": "Macbeth! Macbeth! Macbeth! beware Macduff;"
+    },
+    {
+      "number": 66,
+      "speaker": "FIRST APPARITION",
+      "text": "Beware the thane of Fife. Dismiss me. Enough. Descends."
+    },
+    {
+      "number": 67,
+      "speaker": "MACBETH",
+      "text": "Whate’er thou art, for thy good caution, thanks;"
+    },
+    {
+      "number": 68,
+      "speaker": "MACBETH",
+      "text": "Thou hast harp’d my fear aright: but one word more—"
+    },
+    {
+      "number": 69,
+      "speaker": "FIRST WITCH",
+      "text": "He will not be commanded: here’s another,"
+    },
+    {
+      "number": 70,
+      "speaker": "FIRST WITCH",
+      "text": "More potent than the first."
+    },
+    {
+      "number": 70,
+      "speaker": "SECOND APPARITION",
+      "text": "Macbeth! Macbeth! Macbeth!"
+    },
+    {
+      "number": 71,
+      "speaker": "MACBETH",
+      "text": "Had I three ears, I’ld hear thee."
+    },
+    {
+      "number": 72,
+      "speaker": "SECOND APPARITION",
+      "text": "Be bloody, bold, and resolute; laugh to scorn"
+    },
+    {
+      "number": 73,
+      "speaker": "SECOND APPARITION",
+      "text": "The power of man, for none of woman born"
+    },
+    {
+      "number": 74,
+      "speaker": "SECOND APPARITION",
+      "text": "Shall harm Macbeth. Descends."
+    },
+    {
+      "number": 75,
+      "speaker": "MACBETH",
+      "text": "Then live, Macduff: what need I fear of thee?"
+    },
+    {
+      "number": 76,
+      "speaker": "MACBETH",
+      "text": "But yet I’ll make assurance double sure,"
+    },
+    {
+      "number": 77,
+      "speaker": "MACBETH",
+      "text": "And take a bond of fate: thou shalt not live;"
+    },
+    {
+      "number": 78,
+      "speaker": "MACBETH",
+      "text": "That I may tell pale-hearted fear it lies,"
+    },
+    {
+      "number": 79,
+      "speaker": "MACBETH",
+      "text": "And sleep in spite of thunder."
+    },
+    {
+      "number": 79,
+      "speaker": "ALL",
+      "text": "Listen, but speak not to’t."
+    },
+    {
+      "number": 80,
+      "speaker": "THIRD APPARITION",
+      "text": "Be lion-mettled, proud; and take no care"
+    },
+    {
+      "number": 81,
+      "speaker": "THIRD APPARITION",
+      "text": "Who chafes, who frets, or where conspirers are:"
+    },
+    {
+      "number": 82,
+      "speaker": "THIRD APPARITION",
+      "text": "Macbeth shall never vanquish’d be until"
+    },
+    {
+      "number": 83,
+      "speaker": "THIRD APPARITION",
+      "text": "Great Birnam wood to high Dunsinane hill"
+    },
+    {
+      "number": 84,
+      "speaker": "THIRD APPARITION",
+      "text": "Shall come against him. Descends."
+    },
+    {
+      "number": 84,
+      "speaker": "MACBETH",
+      "text": "That will never be:"
+    },
+    {
+      "number": 85,
+      "speaker": "MACBETH",
+      "text": "Who can impress the forest, bid the tree"
+    },
+    {
+      "number": 86,
+      "speaker": "MACBETH",
+      "text": "Unfix his earth-bound root? Sweet bodements! good!"
+    },
+    {
+      "number": 87,
+      "speaker": "MACBETH",
+      "text": "Rebellion’s head, rise never till the wood"
+    },
+    {
+      "number": 88,
+      "speaker": "MACBETH",
+      "text": "Of Birnam rise, and our high-placed Macbeth"
+    },
+    {
+      "number": 89,
+      "speaker": "MACBETH",
+      "text": "Shall live the lease of nature, pay his breath"
+    },
+    {
+      "number": 90,
+      "speaker": "MACBETH",
+      "text": "To time and mortal custom. Yet my heart"
+    },
+    {
+      "number": 91,
+      "speaker": "MACBETH",
+      "text": "Throbs to know one thing: tell me, if your art"
+    },
+    {
+      "number": 92,
+      "speaker": "MACBETH",
+      "text": "Can tell so much: shall Banquo’s issue ever"
+    },
+    {
+      "number": 93,
+      "speaker": "MACBETH",
+      "text": "Reign in this kingdom?"
+    },
+    {
+      "number": 93,
+      "speaker": "ALL",
+      "text": "Seek to know no more."
+    },
+    {
+      "number": 94,
+      "speaker": "MACBETH",
+      "text": "I will be satisfied: deny me this,"
+    },
+    {
+      "number": 95,
+      "speaker": "MACBETH",
+      "text": "And an eternal curse fall on you! Let me know."
+    },
+    {
+      "number": 96,
+      "speaker": "MACBETH",
+      "text": "Why sinks that cauldron? and what noise is this? Hautboys."
+    },
+    {
+      "number": 97,
+      "speaker": "FIRST WITCH",
+      "text": "Show!"
+    },
+    {
+      "number": 97,
+      "speaker": "SECOND WITCH",
+      "text": "Show!"
+    },
+    {
+      "number": 98,
+      "speaker": "THIRD WITCH",
+      "text": "Show!"
+    },
+    {
+      "number": 99,
+      "speaker": "ALL",
+      "text": "Show his eyes, and grieve his heart;"
+    },
+    {
+      "number": 100,
+      "speaker": "ALL",
+      "text": "Come like shadows, so depart!"
+    },
+    {
+      "number": 101,
+      "speaker": "MACBETH",
+      "text": "Thou art too like the spirit of Banquo; down!"
+    },
+    {
+      "number": 102,
+      "speaker": "MACBETH",
+      "text": "Thy crown does sear mine eye-balls. And thy hair,"
+    },
+    {
+      "number": 103,
+      "speaker": "MACBETH",
+      "text": "Thou other gold-bound brow, is like the first."
+    },
+    {
+      "number": 104,
+      "speaker": "MACBETH",
+      "text": "A third is like the former. Filthy hags!"
+    },
+    {
+      "number": 105,
+      "speaker": "MACBETH",
+      "text": "Why do you show me this? A fourth! Start, eyes!"
+    },
+    {
+      "number": 106,
+      "speaker": "MACBETH",
+      "text": "What, will the line stretch out to the crack of doom?"
+    },
+    {
+      "number": 107,
+      "speaker": "MACBETH",
+      "text": "Another yet! A seventh! I’ll see no more:"
+    },
+    {
+      "number": 108,
+      "speaker": "MACBETH",
+      "text": "And yet the eighth appears, who bears a glass"
+    },
+    {
+      "number": 109,
+      "speaker": "MACBETH",
+      "text": "Which shows me many more; and some I see"
+    },
+    {
+      "number": 110,
+      "speaker": "MACBETH",
+      "text": "That two-fold balls and treble scepters carry:"
+    },
+    {
+      "number": 111,
+      "speaker": "MACBETH",
+      "text": "Horrible sight! Now, I see, ’tis true;"
+    },
+    {
+      "number": 112,
+      "speaker": "MACBETH",
+      "text": "For the blood-bolter’d Banquo smiles upon me,"
+    },
+    {
+      "number": 113,
+      "speaker": "MACBETH",
+      "text": "And points at them for his. Apparitions vanish. What, is this so?"
+    },
+    {
+      "number": 114,
+      "speaker": "FIRST WITCH",
+      "text": "Ay, sir, all this is so: but why"
+    },
+    {
+      "number": 115,
+      "speaker": "FIRST WITCH",
+      "text": "Stands Macbeth thus amazedly?"
+    },
+    {
+      "number": 116,
+      "speaker": "FIRST WITCH",
+      "text": "Come, sisters, cheer we up his sprites,"
+    },
+    {
+      "number": 117,
+      "speaker": "FIRST WITCH",
+      "text": "And show the best of our delights:"
+    },
+    {
+      "number": 118,
+      "speaker": "FIRST WITCH",
+      "text": "I’ll charm the air to give a sound,"
+    },
+    {
+      "number": 119,
+      "speaker": "FIRST WITCH",
+      "text": "While you perform your antic round;"
+    },
+    {
+      "number": 120,
+      "speaker": "FIRST WITCH",
+      "text": "That this great king may kindly say,"
+    },
+    {
+      "number": 121,
+      "speaker": "FIRST WITCH",
+      "text": "Our duties did his welcome pay."
+    },
+    {
+      "number": 122,
+      "speaker": "MACBETH",
+      "text": "Where are they? Gone? Let this pernicious hour"
+    },
+    {
+      "number": 123,
+      "speaker": "MACBETH",
+      "text": "Stand aye accursed in the calendar!"
+    },
+    {
+      "number": 124,
+      "speaker": "MACBETH",
+      "text": "Come in, without there!"
+    },
+    {
+      "number": 124,
+      "speaker": "LENNOX",
+      "text": "What’s your grace’s will?"
+    },
+    {
+      "number": 125,
+      "speaker": "MACBETH",
+      "text": "Saw you the weird sisters?"
+    },
+    {
+      "number": 125,
+      "speaker": "LENNOX",
+      "text": "No, my lord."
+    },
+    {
+      "number": 126,
+      "speaker": "MACBETH",
+      "text": "Came they not by you?"
+    },
+    {
+      "number": 126,
+      "speaker": "LENNOX",
+      "text": "No, indeed, my lord."
+    },
+    {
+      "number": 127,
+      "speaker": "MACBETH",
+      "text": "Infected be the air whereon they ride;"
+    },
+    {
+      "number": 128,
+      "speaker": "MACBETH",
+      "text": "And damn’d all those that trust them! I did hear"
+    },
+    {
+      "number": 129,
+      "speaker": "MACBETH",
+      "text": "The galloping of horse: who was’t came by?"
+    },
+    {
+      "number": 130,
+      "speaker": "LENNOX",
+      "text": "’Tis two or three, my lord, that bring you word"
+    },
+    {
+      "number": 131,
+      "speaker": "LENNOX",
+      "text": "Macduff is fled to England."
+    },
+    {
+      "number": 131,
+      "speaker": "MACBETH",
+      "text": "Fled to England!"
+    },
+    {
+      "number": 132,
+      "speaker": "LENNOX",
+      "text": "Ay, my good lord."
+    },
+    {
+      "number": 132,
+      "speaker": "MACBETH",
+      "text": "Time, thou anticipatest my dread exploits:"
+    },
+    {
+      "number": 133,
+      "speaker": "MACBETH",
+      "text": "The flighty purpose never is o’ertook"
+    },
+    {
+      "number": 134,
+      "speaker": "MACBETH",
+      "text": "Unless the deed go with it: from this moment"
+    },
+    {
+      "number": 135,
+      "speaker": "MACBETH",
+      "text": "The very firstlings of my heart shall be"
+    },
+    {
+      "number": 136,
+      "speaker": "MACBETH",
+      "text": "The firstlings of my hand. And even now,"
+    },
+    {
+      "number": 137,
+      "speaker": "MACBETH",
+      "text": "To crown my thoughts with acts, be it thought and done:"
+    },
+    {
+      "number": 138,
+      "speaker": "MACBETH",
+      "text": "The castle of Macduff I will surprise;"
+    },
+    {
+      "number": 139,
+      "speaker": "MACBETH",
+      "text": "Seize upon Fife; give to the edge o’ the sword"
+    },
+    {
+      "number": 140,
+      "speaker": "MACBETH",
+      "text": "His wife, his babes, and all unfortunate souls"
+    },
+    {
+      "number": 141,
+      "speaker": "MACBETH",
+      "text": "That trace him in his line. No boasting like a fool;"
+    },
+    {
+      "number": 142,
+      "speaker": "MACBETH",
+      "text": "This deed I’ll do before this purpose cool."
+    },
+    {
+      "number": 143,
+      "speaker": "MACBETH",
+      "text": "But no more sights!—Where are these gentlemen?"
+    },
+    {
+      "number": 144,
+      "speaker": "MACBETH",
+      "text": "Come, bring me where they are."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Thunder. Enter the three Witches."
+    },
+    {
+      "after_line": 31,
+      "text": "Enter Hecate to the other three Witches."
+    },
+    {
+      "after_line": 36,
+      "text": "Music and a song: “Black spirits,” etc."
+    },
+    {
+      "after_line": 40,
+      "text": "Enter Macbeth."
+    },
+    {
+      "after_line": 62,
+      "text": "Thunder. First Apparition: an armed Head."
+    },
+    {
+      "after_line": 70,
+      "text": "Thunder. Second Apparition: A bloody Child."
+    },
+    {
+      "after_line": 79,
+      "text": "Thunder. Third Apparition: a Child crowned, with a tree in his hand."
+    },
+    {
+      "after_line": 79,
+      "text": "What is this That rises like the issue of a king, And wears upon his baby-brow the round And top of sovereignty?"
+    },
+    {
+      "after_line": 100,
+      "text": "A show of Eight Kings, the last with a glass in his hand; Banquo’s Ghost following."
+    },
+    {
+      "after_line": 121,
+      "text": "Music. The Witches dance, and then vanish, with Hecate."
+    },
+    {
+      "after_line": 124,
+      "text": "Enter Lennox."
+    },
+    {
+      "after_line": 144,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act4_scene1_gloss1",
+      "line": 1,
+      "phrase": "Thrice the brinded cat hath mew’d",
+      "definition": "three times the streaked cat has cried — triple iterations are magical"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss2",
+      "line": 1,
+      "phrase": "brinded",
+      "definition": "streaked; tabby-patterned"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss3",
+      "line": 1,
+      "phrase": "hedge-pig",
+      "definition": "hedgehog"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss4",
+      "line": 2,
+      "phrase": "Harpier",
+      "definition": "the Third Witch's familiar — possibly a harpy"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss5",
+      "line": 7,
+      "phrase": "charm",
+      "definition": "enchantment; spell"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss6",
+      "line": 2,
+      "phrase": "Round about the cauldron go",
+      "definition": "the famous incantation chorus"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss8",
+      "line": 8,
+      "phrase": "Double, double toil and trouble",
+      "definition": "doubled labor, doubled trouble — the signature Witches' refrain"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss9",
+      "line": 9,
+      "phrase": "Fillet of a fenny snake",
+      "definition": "slice of a marsh-snake"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss10",
+      "line": 9,
+      "phrase": "fenny",
+      "definition": "marshy; swamp-dwelling"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss12",
+      "line": 13,
+      "phrase": "Adder’s fork",
+      "definition": "the forked tongue of an adder"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss13",
+      "line": 13,
+      "phrase": "blind-worm’s sting",
+      "definition": "slow-worm's supposed sting — a harmless reptile believed venomous"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss14",
+      "line": 14,
+      "phrase": "howlet’s wing",
+      "definition": "young owl's wing"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss15",
+      "line": 18,
+      "phrase": "Witches’ mummy",
+      "definition": "flesh of a dead witch, preserved"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss17",
+      "line": 21,
+      "phrase": "Liver of blaspheming Jew",
+      "definition": "the catalogue turns to religiously charged human-body ingredients — one of the period's ugliest moments of casual anti-Semitism, reflecting Elizabethan prejudice"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss18",
+      "line": 22,
+      "phrase": "Gall of goat",
+      "definition": "bile of a goat"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss19",
+      "line": 22,
+      "phrase": "yew",
+      "definition": "the churchyard tree; sacred to death, poisonous"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss21",
+      "line": 26,
+      "phrase": "drab",
+      "definition": "prostitute"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss22",
+      "line": 28,
+      "phrase": "tiger’s chaudron",
+      "definition": "tiger's entrails"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss24",
+      "line": 45,
+      "phrase": "yesty waves",
+      "definition": "foaming, yeasty waves — of the sea"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss25",
+      "line": 45,
+      "phrase": "yesty",
+      "definition": "yeasty; frothing"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss26",
+      "line": 51,
+      "phrase": "germens tumble",
+      "definition": "the seeds of life fall into confusion — let creation itself be destroyed"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss27",
+      "line": 51,
+      "phrase": "germens",
+      "definition": "seeds; germs of life"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss28",
+      "line": 58,
+      "phrase": "Nine farrow",
+      "definition": "a sow's nine piglets"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss29",
+      "line": 40,
+      "phrase": "secret, black, and midnight hags",
+      "definition": "repeated epithet emphasizing the Witches' darkness"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss30",
+      "line": 66,
+      "phrase": "art",
+      "definition": "magic"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss31",
+      "line": 71,
+      "phrase": "be bloody, bold, and resolute",
+      "definition": "the First Apparition's instruction — partial truth that will betray him"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss32",
+      "line": 82,
+      "phrase": "Birnam wood",
+      "definition": "a forest near Dunsinane; the Third Apparition's prophecy that it will 'come to Dunsinane' seems impossible — until Malcolm's soldiers carry branches"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss33",
+      "line": 72,
+      "phrase": "none of woman born",
+      "definition": "the Second Apparition's crucial prophecy — later betrayed by Macduff, 'from his mother's womb untimely ripp’d' (Caesarean birth)"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss34",
+      "line": 84,
+      "phrase": "impress the forest",
+      "definition": "conscript a tree"
+    },
+    {
+      "id": "macbeth_act4_scene1_gloss38",
+      "line": 111,
+      "phrase": "blood-bolter’d Banquo",
+      "definition": "Banquo with his hair matted with blood — Scottish dialect"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act4_scene1_ann1",
+      "line_start": 1,
+      "line_end": 38,
+      "citation_display": "Macbeth 4.1.1–38",
+      "category": "thematic",
+      "title": "The cauldron and the problem of the Witches",
+      "body": "The cauldron scene gives the Witches their most theatrical moment — and their most recognizable. The catalogue of ingredients ('eye of newt, and toe of frog') has become shorthand for stage witchcraft. But the scene's brilliance is the refusal to settle whether the Witches are real or theatrical.\n\nMany of the ingredients — eye of newt, toe of frog, wool of bat — are folk-names for herbs. 'Eye of newt' is mustard seed; 'toe of frog' is buttercup. An Elizabethan herbalist's handbook lets us read the scene as a recipe disguised as witchcraft — or witchcraft disguised as a recipe. Shakespeare refuses the disambiguation.\n\nAlso: the 'liver of blaspheming Jew,' 'nose of Turk,' 'Tartar's lips' belong to a catalogue of period anti-Semitism and Orientalism that a modern reader should see plainly. Early-modern English stage-magic borrowed the body parts of the religious Other as raw materials. It is not the play's most redeemable moment.",
+      "sources": [
+        "Reginald Scot, *The Discoverie of Witchcraft* (1584)",
+        "Kim F. Hall, *Things of Darkness* (1995)",
+        "Janet Clark & Eric Rasmussen, Arden 3 (2015)"
+      ]
+    },
+    {
+      "id": "macbeth_act4_scene1_ann2",
+      "line_start": 68,
+      "line_end": 100,
+      "citation_display": "Macbeth 4.1.68–100",
+      "category": "thematic",
+      "title": "The three apparitions and the equivocation trap",
+      "body": "The apparitions are equivocations. A 'bloody child' promises Macbeth cannot be harmed by 'one of woman born' — a literal truth, but Macduff was delivered by Caesarean and is therefore not 'born' in the strict sense. A 'child crowned with a tree' promises Macbeth will be safe until Birnam wood comes to Dunsinane — a literal impossibility, until Malcolm's soldiers disguise themselves as branches. An armed head warns 'beware Macduff.'\n\nThe prophecies work by giving Macbeth three facts, each of which seems to grant invulnerability and each of which is the precise wording of his defeat. Lady Macbeth's 'serpent under't' pedagogy from 1.5 has come home: the Witches have looked like innocent flowers and are serpents. What Macbeth taught himself and his wife to do to Duncan is what the Sisters do to him.\n\nThe theatrical lesson is cruel. Equivocation — the doctrine the Porter scene associated with Henry Garnet — is not a vice practiced only by Jesuits and regicides. It is the structural principle of prophecy itself.",
+      "sources": [
+        "Garry Wills, *Witches and Jesuits* (1995)",
+        "William Empson, 'Dover Wilson on Macbeth' (1952)",
+        "Stephen Orgel, *The Authentic Shakespeare* (2002)"
+      ]
+    },
+    {
+      "id": "macbeth_act4_scene1_ann3",
+      "line_start": 105,
+      "line_end": 130,
+      "citation_display": "Macbeth 4.1.105–130",
+      "category": "historical",
+      "title": "The show of eight kings: political flattery of James I",
+      "body": "The procession of eight kings is direct Jacobean flattery. James I, on the throne when *Macbeth* premiered in 1606, claimed descent from Banquo through the historical Fleance to Robert II and the Stuart kings. The eighth king in the procession holds a mirror — which, in the original Globe performance, would have reflected James himself seated in the audience.\n\nThe Stuart line ran: Robert II (r. 1371–1390), Robert III, James I of Scotland, James II, James III, James IV, James V, Mary Queen of Scots — and James VI of Scotland, who became James I of England in 1603. 'Some I see / That twofold balls and treble sceptres carry' refers to the multiple crowns James now wore: England, Scotland, and the claimed right to France.\n\nThe political reading of *Macbeth* starts here. The play is, among other things, a dramatized justification of James's legitimacy: the Stuart line survives because Fleance escapes in 3.3. The audience at Whitehall (where the play was probably performed for the Danish royal visit of August 1606) was watching the king's own genealogy be staged.",
+      "sources": [
+        "Henry N. Paul, *The Royal Play of Macbeth* (1950)",
+        "Alvin Kernan, *Shakespeare, the King's Playwright* (1995)",
+        "Jonathan Goldberg, *James I and the Politics of Literature* (1983)"
+      ]
+    },
+    {
+      "id": "macbeth_act4_scene1_ann4",
+      "line_start": 140,
+      "line_end": 155,
+      "citation_display": "Macbeth 4.1.140–155",
+      "category": "thematic",
+      "title": "The decision to murder Macduff's family",
+      "body": "Learning that Macduff has fled to England, Macbeth vows: 'The castle of Macduff I will surprise; / Seize upon Fife; give to the edge o' the sword / His wife, his babes, and all unfortunate souls / That trace him in his line.' The decision is the play's cruelest because it has no strategic logic. Killing Macduff's family cannot stop Macduff; it can only enrage him.\n\nThe murder is an unmotivated atrocity. Macbeth is no longer calculating what will secure his crown; he is simply continuing to kill. The 'in blood stepp'd in so far' doctrine of 3.4 is now operative as automatic policy. The next scene (4.2) will show the killing, and 4.3 will show Macduff's grief — a triple-panel meditation on what Macbeth's tyranny has become.",
+      "sources": [
+        "A. C. Bradley (1904)",
+        "Paul A. Kottman (2009)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act4_scene1_q1",
+      "kind": "close_reading",
+      "prompt": "Several cauldron ingredients ('eye of newt,' 'toe of frog') are:",
+      "options": [
+        "Pure nonsense",
+        "Folk-names for herbs — the catalogue can be read as a herbalist's recipe disguised as witchcraft",
+        "Imaginary",
+        "Scottish slang"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 14,
+      "anchor_line_end": 30
+    },
+    {
+      "id": "macbeth_act4_scene1_q2",
+      "kind": "theme",
+      "prompt": "The three apparitions' prophecies work by:",
+      "options": [
+        "Pure truth",
+        "Equivocation — each prophecy is literally true but grammatically misleading in ways that become his defeat",
+        "Pure falsehood",
+        "Random chance"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 68,
+      "anchor_line_end": 100
+    },
+    {
+      "id": "macbeth_act4_scene1_q3",
+      "kind": "historical",
+      "prompt": "The 'show of eight kings' with the last bearing a mirror functions as:",
+      "options": [
+        "Random pageantry",
+        "Direct flattery of James I — James claimed descent from Banquo, and the mirror reflected James himself in the 1606 performance",
+        "A comic interlude",
+        "A funeral rite"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 105,
+      "anchor_line_end": 130
+    },
+    {
+      "id": "macbeth_act4_scene1_q4",
+      "kind": "inference",
+      "prompt": "Why does Macbeth order Macduff's family killed?",
+      "options": [
+        "Strategic advantage — it will stop Macduff",
+        "No strategic logic — the murder is the 'in blood stepp'd in so far' doctrine operative as automatic policy",
+        "Macduff's wife insulted him",
+        "Malcolm ordered it"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 140,
+      "anchor_line_end": 155
+    },
+    {
+      "id": "macbeth_act4_scene1_q5",
+      "kind": "comprehension",
+      "prompt": "The Second Apparition warns that Macbeth cannot be harmed by:",
+      "options": [
+        "Steel",
+        "One of woman born — a prophecy broken by Macduff's Caesarean delivery",
+        "Iron",
+        "A gunshot"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 78,
+      "anchor_line_end": 85
+    }
+  ]
+}

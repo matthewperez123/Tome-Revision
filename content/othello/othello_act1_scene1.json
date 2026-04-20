@@ -1,0 +1,1340 @@
+{
+  "section_id": "othello_act1_scene1",
+  "work_id": "othello",
+  "sequence": 1,
+  "act": 1,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "Venice. A street",
+  "line_count": 193,
+  "word_count": 1474,
+  "est_read_minutes": 7,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "RODERIGO",
+      "text": "Tush! never tell me; I take it much unkindly"
+    },
+    {
+      "number": 2,
+      "speaker": "RODERIGO",
+      "text": "That thou, Iago, who hast had my purse"
+    },
+    {
+      "number": 3,
+      "speaker": "RODERIGO",
+      "text": "As if the strings were thine, shouldst know of this."
+    },
+    {
+      "number": 4,
+      "speaker": "IAGO",
+      "text": "’Sblood, but you will not hear me:"
+    },
+    {
+      "number": 5,
+      "speaker": "IAGO",
+      "text": "If ever I did dream of such a matter, Abhor me."
+    },
+    {
+      "number": 6,
+      "speaker": "RODERIGO",
+      "text": "Thou told’st me thou didst hold him in thy hate."
+    },
+    {
+      "number": 7,
+      "speaker": "IAGO",
+      "text": "Despise me, if I do not. Three great ones of the city,"
+    },
+    {
+      "number": 8,
+      "speaker": "IAGO",
+      "text": "In personal suit to make me his lieutenant,"
+    },
+    {
+      "number": 9,
+      "speaker": "IAGO",
+      "text": "Off-capp’d to him: and, by the faith of man,"
+    },
+    {
+      "number": 10,
+      "speaker": "IAGO",
+      "text": "I know my price, I am worth no worse a place:"
+    },
+    {
+      "number": 11,
+      "speaker": "IAGO",
+      "text": "But he; as loving his own pride and purposes,"
+    },
+    {
+      "number": 12,
+      "speaker": "IAGO",
+      "text": "Evades them, with a bombast circumstance"
+    },
+    {
+      "number": 13,
+      "speaker": "IAGO",
+      "text": "Horribly stuff’d with epithets of war;"
+    },
+    {
+      "number": 14,
+      "speaker": "IAGO",
+      "text": "And, in conclusion,"
+    },
+    {
+      "number": 15,
+      "speaker": "IAGO",
+      "text": "Nonsuits my mediators; for, “Certes,” says he,"
+    },
+    {
+      "number": 16,
+      "speaker": "IAGO",
+      "text": "“I have already chose my officer.”"
+    },
+    {
+      "number": 17,
+      "speaker": "IAGO",
+      "text": "And what was he?"
+    },
+    {
+      "number": 18,
+      "speaker": "IAGO",
+      "text": "Forsooth, a great arithmetician,"
+    },
+    {
+      "number": 19,
+      "speaker": "IAGO",
+      "text": "One Michael Cassio, a Florentine,"
+    },
+    {
+      "number": 20,
+      "speaker": "IAGO",
+      "text": "A fellow almost damn’d in a fair wife;"
+    },
+    {
+      "number": 21,
+      "speaker": "IAGO",
+      "text": "That never set a squadron in the field,"
+    },
+    {
+      "number": 22,
+      "speaker": "IAGO",
+      "text": "Nor the division of a battle knows"
+    },
+    {
+      "number": 23,
+      "speaker": "IAGO",
+      "text": "More than a spinster; unless the bookish theoric,"
+    },
+    {
+      "number": 24,
+      "speaker": "IAGO",
+      "text": "Wherein the toged consuls can propose"
+    },
+    {
+      "number": 25,
+      "speaker": "IAGO",
+      "text": "As masterly as he: mere prattle, without practise,"
+    },
+    {
+      "number": 26,
+      "speaker": "IAGO",
+      "text": "Is all his soldiership. But he, sir, had the election:"
+    },
+    {
+      "number": 27,
+      "speaker": "IAGO",
+      "text": "And I, of whom his eyes had seen the proof"
+    },
+    {
+      "number": 28,
+      "speaker": "IAGO",
+      "text": "At Rhodes, at Cyprus and on other grounds"
+    },
+    {
+      "number": 29,
+      "speaker": "IAGO",
+      "text": "Christian and heathen, must be be-lee’d and calm’d"
+    },
+    {
+      "number": 30,
+      "speaker": "IAGO",
+      "text": "By debitor and creditor: this counter-caster,"
+    },
+    {
+      "number": 31,
+      "speaker": "IAGO",
+      "text": "He, in good time, must his lieutenant be,"
+    },
+    {
+      "number": 32,
+      "speaker": "IAGO",
+      "text": "And I—God bless the mark!—his Moorship’s ancient."
+    },
+    {
+      "number": 33,
+      "speaker": "RODERIGO",
+      "text": "By heaven, I rather would have been his hangman."
+    },
+    {
+      "number": 34,
+      "speaker": "IAGO",
+      "text": "Why, there’s no remedy; ’tis the curse of service,"
+    },
+    {
+      "number": 35,
+      "speaker": "IAGO",
+      "text": "Preferment goes by letter and affection,"
+    },
+    {
+      "number": 36,
+      "speaker": "IAGO",
+      "text": "And not by old gradation, where each second"
+    },
+    {
+      "number": 37,
+      "speaker": "IAGO",
+      "text": "Stood heir to the first. Now, sir, be judge yourself,"
+    },
+    {
+      "number": 38,
+      "speaker": "IAGO",
+      "text": "Whether I in any just term am affined"
+    },
+    {
+      "number": 39,
+      "speaker": "IAGO",
+      "text": "To love the Moor."
+    },
+    {
+      "number": 39,
+      "speaker": "RODERIGO",
+      "text": "I would not follow him then."
+    },
+    {
+      "number": 40,
+      "speaker": "IAGO",
+      "text": "O, sir, content you;"
+    },
+    {
+      "number": 41,
+      "speaker": "IAGO",
+      "text": "I follow him to serve my turn upon him:"
+    },
+    {
+      "number": 42,
+      "speaker": "IAGO",
+      "text": "We cannot all be masters, nor all masters"
+    },
+    {
+      "number": 43,
+      "speaker": "IAGO",
+      "text": "Cannot be truly follow’d. You shall mark"
+    },
+    {
+      "number": 44,
+      "speaker": "IAGO",
+      "text": "Many a duteous and knee-crooking knave,"
+    },
+    {
+      "number": 45,
+      "speaker": "IAGO",
+      "text": "That, doting on his own obsequious bondage,"
+    },
+    {
+      "number": 46,
+      "speaker": "IAGO",
+      "text": "Wears out his time, much like his master’s ass,"
+    },
+    {
+      "number": 47,
+      "speaker": "IAGO",
+      "text": "For nought but provender, and when he’s old, cashier’d:"
+    },
+    {
+      "number": 48,
+      "speaker": "IAGO",
+      "text": "Whip me such honest knaves. Others there are"
+    },
+    {
+      "number": 49,
+      "speaker": "IAGO",
+      "text": "Who, trimm’d in forms and visages of duty,"
+    },
+    {
+      "number": 50,
+      "speaker": "IAGO",
+      "text": "Keep yet their hearts attending on themselves,"
+    },
+    {
+      "number": 51,
+      "speaker": "IAGO",
+      "text": "And, throwing but shows of service on their lords,"
+    },
+    {
+      "number": 52,
+      "speaker": "IAGO",
+      "text": "Do well thrive by them and when they have lined"
+    },
+    {
+      "number": 53,
+      "speaker": "IAGO",
+      "text": "their coats"
+    },
+    {
+      "number": 54,
+      "speaker": "IAGO",
+      "text": "Do themselves homage: these fellows have some soul;"
+    },
+    {
+      "number": 55,
+      "speaker": "IAGO",
+      "text": "And such a one do I profess myself. For, sir,"
+    },
+    {
+      "number": 56,
+      "speaker": "IAGO",
+      "text": "It is as sure as you are Roderigo,"
+    },
+    {
+      "number": 57,
+      "speaker": "IAGO",
+      "text": "Were I the Moor, I would not be Iago:"
+    },
+    {
+      "number": 58,
+      "speaker": "IAGO",
+      "text": "In following him, I follow but myself;"
+    },
+    {
+      "number": 59,
+      "speaker": "IAGO",
+      "text": "Heaven is my judge, not I for love and duty,"
+    },
+    {
+      "number": 60,
+      "speaker": "IAGO",
+      "text": "But seeming so, for my peculiar end:"
+    },
+    {
+      "number": 61,
+      "speaker": "IAGO",
+      "text": "For when my outward action doth demonstrate"
+    },
+    {
+      "number": 62,
+      "speaker": "IAGO",
+      "text": "The native act and figure of my heart"
+    },
+    {
+      "number": 63,
+      "speaker": "IAGO",
+      "text": "In compliment extern, ’tis not long after"
+    },
+    {
+      "number": 64,
+      "speaker": "IAGO",
+      "text": "But I will wear my heart upon my sleeve"
+    },
+    {
+      "number": 65,
+      "speaker": "IAGO",
+      "text": "For daws to peck at: I am not what I am."
+    },
+    {
+      "number": 66,
+      "speaker": "RODERIGO",
+      "text": "What a full fortune does the thicklips owe"
+    },
+    {
+      "number": 67,
+      "speaker": "RODERIGO",
+      "text": "If he can carry’t thus!"
+    },
+    {
+      "number": 67,
+      "speaker": "IAGO",
+      "text": "Call up her father,"
+    },
+    {
+      "number": 68,
+      "speaker": "IAGO",
+      "text": "Rouse him: make after him, poison his delight,"
+    },
+    {
+      "number": 69,
+      "speaker": "IAGO",
+      "text": "Proclaim him in the streets; incense her kinsmen,"
+    },
+    {
+      "number": 70,
+      "speaker": "IAGO",
+      "text": "And, though he in a fertile climate dwell,"
+    },
+    {
+      "number": 71,
+      "speaker": "IAGO",
+      "text": "Plague him with flies: though that his joy be joy,"
+    },
+    {
+      "number": 72,
+      "speaker": "IAGO",
+      "text": "Yet throw such changes of vexation on’t,"
+    },
+    {
+      "number": 73,
+      "speaker": "IAGO",
+      "text": "As it may lose some colour."
+    },
+    {
+      "number": 74,
+      "speaker": "RODERIGO",
+      "text": "Here is her father’s house; I’ll call aloud."
+    },
+    {
+      "number": 75,
+      "speaker": "IAGO",
+      "text": "Do, with like timorous accent and dire yell"
+    },
+    {
+      "number": 76,
+      "speaker": "IAGO",
+      "text": "As when, by night and negligence, the fire"
+    },
+    {
+      "number": 77,
+      "speaker": "IAGO",
+      "text": "Is spied in populous cities."
+    },
+    {
+      "number": 77,
+      "speaker": "RODERIGO",
+      "text": "What, ho, Brabantio! Signior Brabantio, ho!"
+    },
+    {
+      "number": 78,
+      "speaker": "IAGO",
+      "text": "Awake! what, ho, Brabantio! thieves! thieves! thieves!"
+    },
+    {
+      "number": 79,
+      "speaker": "IAGO",
+      "text": "Look to your house, your daughter and your bags!"
+    },
+    {
+      "number": 80,
+      "speaker": "IAGO",
+      "text": "Thieves! thieves!"
+    },
+    {
+      "number": 81,
+      "speaker": "BRABANTIO",
+      "text": "What is the reason of this terrible summons?"
+    },
+    {
+      "number": 82,
+      "speaker": "BRABANTIO",
+      "text": "What is the matter there?"
+    },
+    {
+      "number": 82,
+      "speaker": "RODERIGO",
+      "text": "Signior, is all your family within?"
+    },
+    {
+      "number": 83,
+      "speaker": "IAGO",
+      "text": "Are your doors lock’d?"
+    },
+    {
+      "number": 83,
+      "speaker": "BRABANTIO",
+      "text": "Why, wherefore ask you this?"
+    },
+    {
+      "number": 84,
+      "speaker": "IAGO",
+      "text": "’Zounds, sir, you’re robb’d; for shame, put on your gown;"
+    },
+    {
+      "number": 85,
+      "speaker": "IAGO",
+      "text": "Your heart is burst, you have lost half your soul;"
+    },
+    {
+      "number": 86,
+      "speaker": "IAGO",
+      "text": "Even now, now, very now, an old black ram"
+    },
+    {
+      "number": 87,
+      "speaker": "IAGO",
+      "text": "Is topping your white ewe. Arise, arise;"
+    },
+    {
+      "number": 88,
+      "speaker": "IAGO",
+      "text": "Awake the snorting citizens with the bell,"
+    },
+    {
+      "number": 89,
+      "speaker": "IAGO",
+      "text": "Or else the devil will make a grandsire of you:"
+    },
+    {
+      "number": 90,
+      "speaker": "IAGO",
+      "text": "Arise, I say."
+    },
+    {
+      "number": 90,
+      "speaker": "BRABANTIO",
+      "text": "What, have you lost your wits?"
+    },
+    {
+      "number": 91,
+      "speaker": "RODERIGO",
+      "text": "Most reverend signior, do you know my voice?"
+    },
+    {
+      "number": 92,
+      "speaker": "BRABANTIO",
+      "text": "Not I what are you?"
+    },
+    {
+      "number": 92,
+      "speaker": "RODERIGO",
+      "text": "My name is Roderigo."
+    },
+    {
+      "number": 93,
+      "speaker": "BRABANTIO",
+      "text": "The worser welcome:"
+    },
+    {
+      "number": 94,
+      "speaker": "BRABANTIO",
+      "text": "I have charged thee not to haunt about my doors:"
+    },
+    {
+      "number": 95,
+      "speaker": "BRABANTIO",
+      "text": "In honest plainness thou hast heard me say"
+    },
+    {
+      "number": 96,
+      "speaker": "BRABANTIO",
+      "text": "My daughter is not for thee; and now, in madness,"
+    },
+    {
+      "number": 97,
+      "speaker": "BRABANTIO",
+      "text": "Being full of supper and distempering draughts,"
+    },
+    {
+      "number": 98,
+      "speaker": "BRABANTIO",
+      "text": "Upon malicious bravery, dost thou come"
+    },
+    {
+      "number": 99,
+      "speaker": "BRABANTIO",
+      "text": "To start my quiet."
+    },
+    {
+      "number": 99,
+      "speaker": "RODERIGO",
+      "text": "Sir, sir, sir—"
+    },
+    {
+      "number": 100,
+      "speaker": "BRABANTIO",
+      "text": "But thou must needs be sure"
+    },
+    {
+      "number": 101,
+      "speaker": "BRABANTIO",
+      "text": "My spirit and my place have in them power"
+    },
+    {
+      "number": 102,
+      "speaker": "BRABANTIO",
+      "text": "To make this bitter to thee."
+    },
+    {
+      "number": 102,
+      "speaker": "RODERIGO",
+      "text": "Patience, good sir."
+    },
+    {
+      "number": 103,
+      "speaker": "BRABANTIO",
+      "text": "What tell’st thou me of robbing? this is Venice;"
+    },
+    {
+      "number": 104,
+      "speaker": "BRABANTIO",
+      "text": "My house is not a grange."
+    },
+    {
+      "number": 104,
+      "speaker": "RODERIGO",
+      "text": "Most grave Brabantio,"
+    },
+    {
+      "number": 105,
+      "speaker": "RODERIGO",
+      "text": "In simple and pure soul I come to you."
+    },
+    {
+      "number": 106,
+      "speaker": "IAGO",
+      "text": "’Zounds, sir, you are one of those that will not serve God,"
+    },
+    {
+      "number": 107,
+      "speaker": "IAGO",
+      "text": "if the devil bid you. Because we come to do you service"
+    },
+    {
+      "number": 108,
+      "speaker": "IAGO",
+      "text": "and you think we are ruffians, you’ll have your daughter covered with"
+    },
+    {
+      "number": 109,
+      "speaker": "IAGO",
+      "text": "a Barbary horse; you’ll have your nephews neigh to you; you’ll have"
+    },
+    {
+      "number": 110,
+      "speaker": "IAGO",
+      "text": "coursers for cousins and gennets for germans."
+    },
+    {
+      "number": 111,
+      "speaker": "BRABANTIO",
+      "text": "What profane wretch art thou?"
+    },
+    {
+      "number": 112,
+      "speaker": "IAGO",
+      "text": "I am one, sir, that comes to tell you your daughter and"
+    },
+    {
+      "number": 113,
+      "speaker": "IAGO",
+      "text": "the Moor are now making the beast with two backs."
+    },
+    {
+      "number": 114,
+      "speaker": "BRABANTIO",
+      "text": "Thou art a villain."
+    },
+    {
+      "number": 114,
+      "speaker": "IAGO",
+      "text": "You are—a senator."
+    },
+    {
+      "number": 115,
+      "speaker": "BRABANTIO",
+      "text": "This thou shalt answer; I know thee, Roderigo."
+    },
+    {
+      "number": 116,
+      "speaker": "RODERIGO",
+      "text": "Sir, I will answer any thing. But, I beseech you,"
+    },
+    {
+      "number": 117,
+      "speaker": "RODERIGO",
+      "text": "If’t be your pleasure and most wise consent,"
+    },
+    {
+      "number": 118,
+      "speaker": "RODERIGO",
+      "text": "As partly I find it is, that your fair daughter,"
+    },
+    {
+      "number": 119,
+      "speaker": "RODERIGO",
+      "text": "At this odd-even and dull watch o’ the night,"
+    },
+    {
+      "number": 120,
+      "speaker": "RODERIGO",
+      "text": "Transported, with no worse nor better guard"
+    },
+    {
+      "number": 121,
+      "speaker": "RODERIGO",
+      "text": "But with a knave of common hire, a gondolier,"
+    },
+    {
+      "number": 122,
+      "speaker": "RODERIGO",
+      "text": "To the gross clasps of a lascivious Moor—"
+    },
+    {
+      "number": 123,
+      "speaker": "RODERIGO",
+      "text": "If this be known to you and your allowance,"
+    },
+    {
+      "number": 124,
+      "speaker": "RODERIGO",
+      "text": "We then have done you bold and saucy wrongs;"
+    },
+    {
+      "number": 125,
+      "speaker": "RODERIGO",
+      "text": "But if you know not this, my manners tell me"
+    },
+    {
+      "number": 126,
+      "speaker": "RODERIGO",
+      "text": "We have your wrong rebuke. Do not believe"
+    },
+    {
+      "number": 127,
+      "speaker": "RODERIGO",
+      "text": "That, from the sense of all civility,"
+    },
+    {
+      "number": 128,
+      "speaker": "RODERIGO",
+      "text": "I thus would play and trifle with your reverence:"
+    },
+    {
+      "number": 129,
+      "speaker": "RODERIGO",
+      "text": "Your daughter, if you have not given her leave,"
+    },
+    {
+      "number": 130,
+      "speaker": "RODERIGO",
+      "text": "I say again, hath made a gross revolt;"
+    },
+    {
+      "number": 131,
+      "speaker": "RODERIGO",
+      "text": "Tying her duty, beauty, wit and fortunes"
+    },
+    {
+      "number": 132,
+      "speaker": "RODERIGO",
+      "text": "In an extravagant and wheeling stranger"
+    },
+    {
+      "number": 133,
+      "speaker": "RODERIGO",
+      "text": "Of here and every where. Straight satisfy yourself:"
+    },
+    {
+      "number": 134,
+      "speaker": "RODERIGO",
+      "text": "If she be in her chamber or your house,"
+    },
+    {
+      "number": 135,
+      "speaker": "RODERIGO",
+      "text": "Let loose on me the justice of the state"
+    },
+    {
+      "number": 136,
+      "speaker": "RODERIGO",
+      "text": "For thus deluding you."
+    },
+    {
+      "number": 136,
+      "speaker": "BRABANTIO",
+      "text": "Strike on the tinder, ho!"
+    },
+    {
+      "number": 137,
+      "speaker": "BRABANTIO",
+      "text": "Give me a taper! call up all my people!"
+    },
+    {
+      "number": 138,
+      "speaker": "BRABANTIO",
+      "text": "This accident is not unlike my dream:"
+    },
+    {
+      "number": 139,
+      "speaker": "BRABANTIO",
+      "text": "Belief of it oppresses me already."
+    },
+    {
+      "number": 140,
+      "speaker": "BRABANTIO",
+      "text": "Light, I say! light!"
+    },
+    {
+      "number": 140,
+      "speaker": "IAGO",
+      "text": "Farewell; for I must leave you:"
+    },
+    {
+      "number": 141,
+      "speaker": "IAGO",
+      "text": "It seems not meet, nor wholesome to my place,"
+    },
+    {
+      "number": 142,
+      "speaker": "IAGO",
+      "text": "To be produced—as, if I stay, I shall—"
+    },
+    {
+      "number": 143,
+      "speaker": "IAGO",
+      "text": "Against the Moor: for, I do know, the state,"
+    },
+    {
+      "number": 144,
+      "speaker": "IAGO",
+      "text": "However this may gall him with some cheque,"
+    },
+    {
+      "number": 145,
+      "speaker": "IAGO",
+      "text": "Cannot with safety cast him, for he’s embark’d"
+    },
+    {
+      "number": 146,
+      "speaker": "IAGO",
+      "text": "With such loud reason to the Cyprus wars,"
+    },
+    {
+      "number": 147,
+      "speaker": "IAGO",
+      "text": "Which even now stand in act, that, for their souls,"
+    },
+    {
+      "number": 148,
+      "speaker": "IAGO",
+      "text": "Another of his fathom they have none,"
+    },
+    {
+      "number": 149,
+      "speaker": "IAGO",
+      "text": "To lead their business: in which regard,"
+    },
+    {
+      "number": 150,
+      "speaker": "IAGO",
+      "text": "Though I do hate him as I do hell-pains."
+    },
+    {
+      "number": 151,
+      "speaker": "IAGO",
+      "text": "Yet, for necessity of present life,"
+    },
+    {
+      "number": 152,
+      "speaker": "IAGO",
+      "text": "I must show out a flag and sign of love,"
+    },
+    {
+      "number": 153,
+      "speaker": "IAGO",
+      "text": "Which is indeed but sign. That you shall surely find him,"
+    },
+    {
+      "number": 154,
+      "speaker": "IAGO",
+      "text": "Lead to the Sagittary the raised search;"
+    },
+    {
+      "number": 155,
+      "speaker": "IAGO",
+      "text": "And there will I be with him. So, farewell."
+    },
+    {
+      "number": 156,
+      "speaker": "BRABANTIO",
+      "text": "It is too true an evil: gone she is;"
+    },
+    {
+      "number": 157,
+      "speaker": "BRABANTIO",
+      "text": "And what’s to come of my despised time"
+    },
+    {
+      "number": 158,
+      "speaker": "BRABANTIO",
+      "text": "Is nought but bitterness. Now, Roderigo,"
+    },
+    {
+      "number": 159,
+      "speaker": "BRABANTIO",
+      "text": "Where didst thou see her? O unhappy girl!"
+    },
+    {
+      "number": 160,
+      "speaker": "BRABANTIO",
+      "text": "With the Moor, say’st thou? Who would be a father!"
+    },
+    {
+      "number": 161,
+      "speaker": "BRABANTIO",
+      "text": "How didst thou know ’twas she? O she deceives me"
+    },
+    {
+      "number": 162,
+      "speaker": "BRABANTIO",
+      "text": "Past thought! What said she to you? Get more tapers:"
+    },
+    {
+      "number": 163,
+      "speaker": "BRABANTIO",
+      "text": "Raise all my kindred. Are they married, think you?"
+    },
+    {
+      "number": 164,
+      "speaker": "RODERIGO",
+      "text": "Truly, I think they are."
+    },
+    {
+      "number": 165,
+      "speaker": "BRABANTIO",
+      "text": "O heaven! How got she out? O treason of the blood!"
+    },
+    {
+      "number": 166,
+      "speaker": "BRABANTIO",
+      "text": "Fathers, from hence trust not your daughters’ minds"
+    },
+    {
+      "number": 167,
+      "speaker": "BRABANTIO",
+      "text": "By what you see them act. Is there not charms"
+    },
+    {
+      "number": 168,
+      "speaker": "BRABANTIO",
+      "text": "By which the property of youth and maidhood"
+    },
+    {
+      "number": 169,
+      "speaker": "BRABANTIO",
+      "text": "May be abused? Have you not read, Roderigo,"
+    },
+    {
+      "number": 170,
+      "speaker": "BRABANTIO",
+      "text": "Of some such thing?"
+    },
+    {
+      "number": 170,
+      "speaker": "RODERIGO",
+      "text": "Yes, sir, I have indeed."
+    },
+    {
+      "number": 171,
+      "speaker": "BRABANTIO",
+      "text": "Call up my brother. O, would you had had her!"
+    },
+    {
+      "number": 172,
+      "speaker": "BRABANTIO",
+      "text": "Some one way, some another. Do you know"
+    },
+    {
+      "number": 173,
+      "speaker": "BRABANTIO",
+      "text": "Where we may apprehend her and the Moor?"
+    },
+    {
+      "number": 174,
+      "speaker": "RODERIGO",
+      "text": "I think I can discover him, if you please,"
+    },
+    {
+      "number": 175,
+      "speaker": "RODERIGO",
+      "text": "To get good guard and go along with me."
+    },
+    {
+      "number": 176,
+      "speaker": "BRABANTIO",
+      "text": "Pray you, lead on. At every house I’ll call;"
+    },
+    {
+      "number": 177,
+      "speaker": "BRABANTIO",
+      "text": "I may command at most. Get weapons, ho!"
+    },
+    {
+      "number": 178,
+      "speaker": "BRABANTIO",
+      "text": "And raise some special officers of night."
+    },
+    {
+      "number": 179,
+      "speaker": "BRABANTIO",
+      "text": "On, good Roderigo: I’ll deserve your pains."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Roderigo and Iago."
+    },
+    {
+      "after_line": 80,
+      "text": "Brabantio appears above, at a window."
+    },
+    {
+      "after_line": 140,
+      "text": "Exit above."
+    },
+    {
+      "after_line": 155,
+      "text": "Exit."
+    },
+    {
+      "after_line": 155,
+      "text": "Enter, below, Brabantio, and Servants with torches."
+    },
+    {
+      "after_line": 179,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "othello_act1_scene1_gloss1",
+      "line": 1,
+      "phrase": "Tush",
+      "definition": "an exclamation of impatience or dismissal; roughly 'oh please' or 'nonsense'"
+    },
+    {
+      "id": "othello_act1_scene1_gloss2",
+      "line": 4,
+      "phrase": "’Sblood",
+      "definition": "by God's blood — a strong oath, roughly 'damn it'"
+    },
+    {
+      "id": "othello_act1_scene1_gloss3",
+      "line": 5,
+      "phrase": "Abhor",
+      "definition": "loathe; despise utterly"
+    },
+    {
+      "id": "othello_act1_scene1_gloss4",
+      "line": 7,
+      "phrase": "great ones of the city",
+      "definition": "prominent citizens; members of Venice's ruling class"
+    },
+    {
+      "id": "othello_act1_scene1_gloss5",
+      "line": 8,
+      "phrase": "personal suit",
+      "definition": "a personal petition or request for advancement"
+    },
+    {
+      "id": "othello_act1_scene1_gloss6",
+      "line": 12,
+      "phrase": "bombast circumstance",
+      "definition": "inflated, evasive talk; padding meant to delay a clear answer"
+    },
+    {
+      "id": "othello_act1_scene1_gloss7",
+      "line": 13,
+      "phrase": "epithets of war",
+      "definition": "military terminology; technical terms of the soldier's trade"
+    },
+    {
+      "id": "othello_act1_scene1_gloss9",
+      "line": 18,
+      "phrase": "arithmetician",
+      "definition": "scornful: a theorist who knows war only from books and ledgers, not the field"
+    },
+    {
+      "id": "othello_act1_scene1_gloss11",
+      "line": 22,
+      "phrase": "division of a battle",
+      "definition": "how to array troops in formation for combat"
+    },
+    {
+      "id": "othello_act1_scene1_gloss12",
+      "line": 32,
+      "phrase": "Moorship",
+      "definition": "Iago's mocking coinage, substituting 'Moor' for 'Lordship' to belittle Othello"
+    },
+    {
+      "id": "othello_act1_scene1_gloss13",
+      "line": 32,
+      "phrase": "ancient",
+      "definition": "ensign; standard-bearer — the junior commissioned officer in a company"
+    },
+    {
+      "id": "othello_act1_scene1_gloss14",
+      "line": 35,
+      "phrase": "letter and affection",
+      "definition": "written recommendation and personal favoritism"
+    },
+    {
+      "id": "othello_act1_scene1_gloss15",
+      "line": 36,
+      "phrase": "old gradation",
+      "definition": "the traditional, orderly sequence of promotion by seniority"
+    },
+    {
+      "id": "othello_act1_scene1_gloss19",
+      "line": 51,
+      "phrase": "throwing but shows of service on their lords",
+      "definition": "giving only the outward display of service to their masters"
+    },
+    {
+      "id": "othello_act1_scene1_gloss20",
+      "line": 62,
+      "phrase": "native act and figure of my heart",
+      "definition": "the real actions and outward form of my true feelings"
+    },
+    {
+      "id": "othello_act1_scene1_gloss22",
+      "line": 65,
+      "phrase": "daws",
+      "definition": "jackdaws; small crow-like birds — here, fools or scavengers"
+    },
+    {
+      "id": "othello_act1_scene1_gloss24",
+      "line": 75,
+      "phrase": "timorous accent",
+      "definition": "tone of alarm; a voice raised in fear"
+    },
+    {
+      "id": "othello_act1_scene1_gloss25",
+      "line": 88,
+      "phrase": "snorting",
+      "definition": "snoring"
+    },
+    {
+      "id": "othello_act1_scene1_gloss26",
+      "line": 84,
+      "phrase": "zounds",
+      "definition": "by God's wounds — a vehement oath, roughly 'damn' or 'my God'"
+    },
+    {
+      "id": "othello_act1_scene1_gloss28",
+      "line": 98,
+      "phrase": "bravery",
+      "definition": "bravado; ostentatious defiance"
+    },
+    {
+      "id": "othello_act1_scene1_gloss29",
+      "line": 109,
+      "phrase": "Barbary horse",
+      "definition": "a North African stallion — Iago's insult comparing Othello to a foreign animal and threatening Brabantio with mixed-race descendants"
+    },
+    {
+      "id": "othello_act1_scene1_gloss30",
+      "line": 109,
+      "phrase": "nephews neigh to you",
+      "definition": "your grandchildren will be horses — continuation of the Barbary-horse slur"
+    },
+    {
+      "id": "othello_act1_scene1_gloss31",
+      "line": 110,
+      "phrase": "coursers for cousins",
+      "definition": "fast horses for kinsmen; the insult extends — your family will be a stable"
+    },
+    {
+      "id": "othello_act1_scene1_gloss33",
+      "line": 113,
+      "phrase": "making the beast with two backs",
+      "definition": "proverbial Elizabethan figure for sexual intercourse — two bodies joined, appearing as a single beast with two backs"
+    },
+    {
+      "id": "othello_act1_scene1_gloss34",
+      "line": 104,
+      "phrase": "grange",
+      "definition": "an isolated country house or outlying farm"
+    },
+    {
+      "id": "othello_act1_scene1_gloss35",
+      "line": 111,
+      "phrase": "profane",
+      "definition": "blasphemous; outrageous in speech"
+    },
+    {
+      "id": "othello_act1_scene1_gloss37",
+      "line": 121,
+      "phrase": "gondolier",
+      "definition": "a Venetian boatman — a hired man of no standing, underscoring the secret nature of the elopement"
+    },
+    {
+      "id": "othello_act1_scene1_gloss38",
+      "line": 154,
+      "phrase": "Sagittary",
+      "definition": "an inn in Venice, so named for a centaur-archer sign — where Othello lodges"
+    },
+    {
+      "id": "othello_act1_scene1_gloss39",
+      "line": 154,
+      "phrase": "raised search",
+      "definition": "a search party roused from bed"
+    },
+    {
+      "id": "othello_act1_scene1_gloss42",
+      "line": 142,
+      "phrase": "produced",
+      "definition": "brought forth as evidence"
+    },
+    {
+      "id": "othello_act1_scene1_gloss45",
+      "line": 148,
+      "phrase": "fathom",
+      "definition": "depth of capacity; scope of ability"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "othello_act1_scene1_ann1",
+      "line_start": 1,
+      "line_end": 65,
+      "citation_display": "Othello 1.1.1–65",
+      "category": "structural",
+      "title": "Beginning in the middle",
+      "body": "Shakespeare opens in medias res. Iago is already scheming, Roderigo is already the dupe, and the elopement has already happened offstage. The audience is handed consequences without premises and must infer cause from effect — a structural trick that mirrors Iago's own methods of suggestion and withheld information. The technique cultivates suspicion in the audience at the same moment Iago cultivates it on stage. The play will not stop asking us to mistrust what we think we have seen.\n\nCompare the slow exposition of *Hamlet* I.i (the ghost, the watch, the political frame) with this scene's sprint into grievance and the whispered summons to Brabantio. Othello will not appear for nearly two hundred lines; by the time he arrives we have been steeped in his enemy's version of him.",
+      "sources": [
+        "A. C. Bradley, *Shakespearean Tragedy* (1904)",
+        "Kenneth Muir, *Shakespeare's Tragic Sequence* (1979)"
+      ]
+    },
+    {
+      "id": "othello_act1_scene1_ann2",
+      "line_start": 24,
+      "line_end": 45,
+      "citation_display": "Othello 1.1.24–45",
+      "category": "historical",
+      "title": "Iago's grievance and the Venetian officer corps",
+      "body": "Iago calls Cassio an 'arithmetician' — a theorist who knows war from books and ledgers. The slur is professional as well as personal: Venice had a sophisticated military bureaucracy and promoted by commission rather than seniority, exactly as Iago complains. This was a genuine tension in early-modern European armies, and Shakespeare's audience would have recognized the type of grievance — an ensign passed over for a younger officer whose patron had weight in the signiory.\n\nThe point matters because it grounds Iago's malice in something recognizable, not diabolical. His opening move toward the audience is to sound reasonable. The play will spend much of its length revising what 'reasonable' means.",
+      "sources": [
+        "Michael Mallett & John Hale, *The Military Organization of a Renaissance State* (1984)",
+        "Paul Jorgensen, *Shakespeare's Military World* (1956)"
+      ]
+    },
+    {
+      "id": "othello_act1_scene1_ann3",
+      "line_start": 88,
+      "line_end": 115,
+      "citation_display": "Othello 1.1.88–115",
+      "category": "thematic",
+      "title": "The rhetoric of racial terror",
+      "body": "Under cover of darkness, Iago shouts a catalogue of animal and sexual images at Brabantio: the black ram, the white ewe, the Barbary horse, coursers for cousins, the beast with two backs. This is not casual color-blindness disrupted by a single slur but a sustained rhetorical program. Every image conflates blackness with bestiality, miscegenation with debasement, the body of Othello with foreign herds and breeding stock.\n\nIago does not expect Brabantio to believe these precise metaphors; he expects the metaphors to do their work below belief. Where *Titus Andronicus* and *The Merchant of Venice* had racialized villains, *Othello* begins by racializing its protagonist through the voice of his enemy — teaching the audience to see him first through Iago's lens. The play will then labor, not always successfully, to disconfirm what this opening has instilled.",
+      "sources": [
+        "Kim F. Hall, *Things of Darkness: Economies of Race and Gender in Early Modern England* (1995)",
+        "Emily Bartels, *Speaking of the Moor* (2008)",
+        "Virginia Mason Vaughan, *Performing Blackness on English Stages, 1500–1800* (2005)"
+      ]
+    },
+    {
+      "id": "othello_act1_scene1_ann4",
+      "line_start": 149,
+      "line_end": 183,
+      "citation_display": "Othello 1.1.149–183",
+      "category": "structural",
+      "title": "Iago's first exit and the play's architecture",
+      "body": "At line 160 Iago slips offstage before Brabantio sees him, reappearing in the next scene beside Othello as though he had been there all along. This will become the play's signature manoeuvre: Iago occupies every social space but commits to none, switching audiences and registers without friction. Structurally he is what Coleridge called the play's 'motiveless malignity' — but the structure itself, rather than his psychology, is what keeps him invisible to the characters while the audience sees his seams.",
+      "sources": [
+        "Samuel Taylor Coleridge, *Lectures on Shakespeare* (1818–19)",
+        "Harley Granville-Barker, *Prefaces to Shakespeare* (1930)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "othello_act1_scene1_q1",
+      "kind": "comprehension",
+      "prompt": "When Iago says 'I am not what I am' (line 65), what does he mean?",
+      "options": [
+        "He regrets a past identity he has lost",
+        "His outward appearance is a deliberate mask concealing his true nature",
+        "He is uncertain of his own feelings about Othello",
+        "He is quoting a Biblical formula to claim divine authority"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 63,
+      "anchor_line_end": 67
+    },
+    {
+      "id": "othello_act1_scene1_q2",
+      "kind": "inference",
+      "prompt": "Why does Iago choose to rouse Brabantio at midnight by shouting beneath his window rather than approaching him directly in daylight?",
+      "options": [
+        "Venice's laws forbid private citizens from visiting senators by day",
+        "Panic in the dark makes Brabantio more likely to react before thinking, spreading scandal Iago need not own",
+        "He fears Othello will intercept him if he moves openly",
+        "He is under orders from Roderigo, who pays him by the hour"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 80,
+      "anchor_line_end": 115
+    },
+    {
+      "id": "othello_act1_scene1_q3",
+      "kind": "theme",
+      "prompt": "The animal imagery Iago uses ('black ram', 'Barbary horse', 'beast with two backs') serves primarily to:",
+      "options": [
+        "Amuse Roderigo, who is a rural gentleman fond of hunting metaphors",
+        "Describe Cassio's relative youth and inexperience as a soldier",
+        "Racialize Othello's marriage as unnatural bestial coupling rather than human union",
+        "Express Iago's genuine love of animals and the outdoors"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 20,
+      "anchor_line_start": 88,
+      "anchor_line_end": 115
+    },
+    {
+      "id": "othello_act1_scene1_q4",
+      "kind": "close_reading",
+      "prompt": "Iago calls Othello's rank 'his Moorship's ancient' (line 32). What does this coinage do?",
+      "options": [
+        "Uses 'Moorship' as a formal Venetian military title",
+        "Mocks 'Lordship' by substituting 'Moor', demeaning Othello's authority through a racial pun",
+        "Reveals that Iago genuinely respects Othello's North African ancestry",
+        "Signals that Othello has been recently knighted by the Doge"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 30,
+      "anchor_line_end": 35
+    },
+    {
+      "id": "othello_act1_scene1_q5",
+      "kind": "inference",
+      "prompt": "Iago complains that Cassio was promoted ahead of him because of 'letter and affection' rather than 'the old gradation'. What is the 'old gradation'?",
+      "options": [
+        "Seniority-based promotion through ranks",
+        "Hereditary nobility passed from father to son",
+        "The exam-based promotion system of the Venetian navy",
+        "The order in which soldiers enter the battlefield"
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 15,
+      "anchor_line_start": 35,
+      "anchor_line_end": 42
+    },
+    {
+      "id": "othello_act1_scene1_q6",
+      "kind": "comprehension",
+      "prompt": "What does Iago finally advise Roderigo to do with his money?",
+      "options": [
+        "Loan it to Brabantio to secure Desdemona's hand",
+        "Buy Cassio's commission directly from him",
+        "Give it to Iago to keep and to use against Othello",
+        "Send it to his family in Verona for safekeeping"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 10,
+      "anchor_line_start": 175,
+      "anchor_line_end": 190
+    }
+  ]
+}

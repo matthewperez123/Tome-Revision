@@ -1,0 +1,45 @@
+{
+  "section_id": "hamlet_act1_scene5",
+  "annotations": [
+    {
+      "line_start": 9,
+      "line_end": 22,
+      "category": "historical",
+      "title": "The ghost's purgatorial fires",
+      "body": "The ghost's self-description — 'confined to fast in fires' until 'the foul crimes done in my days of nature / Are burnt and purged away' — places him unambiguously in purgatory, a doctrine the Church of England had officially abolished in 1547. Stephen Greenblatt argues that Hamlet is structured around this confessional impossibility: a son at a Protestant university receives a commission from a father whose very existence depends on a theology his education has taught him to reject. The ghost cannot reveal 'the secrets of my prison-house'; if he could, the fires would stop making sense within the play's official Protestant frame. Shakespeare keeps the ghost's ontology just fuzzy enough to allow both Catholic and Protestant audiences their own reading.",
+      "sources": ["Stephen Greenblatt, Hamlet in Purgatory (2001)"]
+    },
+    {
+      "line_start": 35,
+      "line_end": 80,
+      "category": "structural",
+      "title": "The murder narrated in real time",
+      "body": "The ghost does not merely report the murder; he re-enacts it. 'Sleeping within my orchard' establishes the scene; 'the juice of cursed hebenon' is poured; the poison's progress is tracked through blood, skin, and 'natural gates and alleys of the body.' The narrative takes its time — some forty lines — so that the audience experiences the murder in something close to its own duration. The technique is a Shakespearean innovation: the ghost makes his son an eyewitness to a crime he did not see. The scene Hamlet will later stage for Claudius in 3.2 is this same murder performed again, now by actors before its architect. Revenge in Hamlet is always a rehearsal of the original crime.",
+      "sources": ["Harold Bloom, Shakespeare: The Invention of the Human (1998)"]
+    },
+    {
+      "line_start": 82,
+      "line_end": 92,
+      "category": "thematic",
+      "title": "'Taint not thy mind' — the ghost's ethical commission",
+      "body": "The ghost's final instruction complicates the commission of revenge: 'But howsoever thou pursuest this act, / Taint not thy mind, nor let thy soul contrive / Against thy mother aught.' The son is to avenge the murder but spare the guilty wife, and he is to do it without corrupting himself. This ethical double-bind will drive Hamlet's behavior for four acts. Recent critics from Margreta de Grazia to Rhodri Lewis have argued that the play is less about delay than about the impossibility of carrying out this commission honorably — a truly revenging son would be a ruined man. 'Taint not thy mind' is the instruction on which the whole plot founders.",
+      "sources": ["Rhodri Lewis, Hamlet and the Vision of Darkness (2017)", "Margreta de Grazia, Hamlet without Hamlet (2007)"]
+    },
+    {
+      "line_start": 96,
+      "line_end": 112,
+      "category": "close_reading",
+      "title": "'My tables — meet it is I set it down'",
+      "body": "Hamlet's note-taking after the ghost's departure is the scene's strangest moment. He is a man who has just been commissioned by his murdered father's spirit, and his immediate response is scholarly: he reaches for his writing-tablet to record the observation that 'one may smile, and smile, and be a villain.' Elizabethan tables were small erasable booklets of plaster-coated pages, used by students and lawyers; Hamlet's reach for his is a signal that his training at Wittenberg still governs him. The dissonance is precisely what Shakespeare exploits — in the moment of purest emotion, his hero behaves like a graduate student. This comic undertone recurs throughout the play and prevents its tragedy from curdling into melodrama.",
+      "sources": ["Frank Kermode, Shakespeare's Language (2000)"]
+    },
+    {
+      "line_start": 158,
+      "line_end": 175,
+      "category": "thematic",
+      "title": "'The time is out of joint' — the tragedy of restoration",
+      "body": "Hamlet's closing couplet — 'The time is out of joint: O cursed spite, / That ever I was born to set it right!' — names the tragic task with eerie precision. 'Out of joint' is anatomical: a time dislocated from itself. 'Set it right' is reparative: to put a bone back in its socket. The tragedy will consist in Hamlet's discovery that restoration is not available to him; setting the time right will require destroying everyone who occupies it, including himself. The line is also where the play first admits that Hamlet did not choose his role — 'born to set it right' — a determinism the Wittenberg student never reconciles with his Protestant theology of free will.",
+      "sources": ["G. Wilson Knight, The Wheel of Fire (1930)"]
+    }
+  ]
+}

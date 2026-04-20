@@ -1,0 +1,717 @@
+{
+  "section_id": "romeo_and_juliet_act1_scene2",
+  "work_id": "romeo-and-juliet",
+  "sequence": 3,
+  "act": 1,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "A street",
+  "line_count": 97,
+  "word_count": 793,
+  "est_read_minutes": 4,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CAPULET",
+      "text": "But Montague is bound as well as I,"
+    },
+    {
+      "number": 2,
+      "speaker": "CAPULET",
+      "text": "In penalty alike; and ’tis not hard, I think,"
+    },
+    {
+      "number": 3,
+      "speaker": "CAPULET",
+      "text": "For men so old as we to keep the peace."
+    },
+    {
+      "number": 4,
+      "speaker": "PARIS",
+      "text": "Of honourable reckoning are you both;"
+    },
+    {
+      "number": 5,
+      "speaker": "PARIS",
+      "text": "And pity ’tis you lived at odds so long."
+    },
+    {
+      "number": 6,
+      "speaker": "PARIS",
+      "text": "But now, my lord, what say you to my suit?"
+    },
+    {
+      "number": 7,
+      "speaker": "CAPULET",
+      "text": "But saying o’er what I have said before:"
+    },
+    {
+      "number": 8,
+      "speaker": "CAPULET",
+      "text": "My child is yet a stranger in the world;"
+    },
+    {
+      "number": 9,
+      "speaker": "CAPULET",
+      "text": "She hath not seen the change of fourteen years;"
+    },
+    {
+      "number": 10,
+      "speaker": "CAPULET",
+      "text": "Let two more summers wither in their pride,"
+    },
+    {
+      "number": 11,
+      "speaker": "CAPULET",
+      "text": "Ere we may think her ripe to be a bride."
+    },
+    {
+      "number": 12,
+      "speaker": "PARIS",
+      "text": "Younger than she are happy mothers made."
+    },
+    {
+      "number": 13,
+      "speaker": "CAPULET",
+      "text": "And too soon marr’d are those so early made."
+    },
+    {
+      "number": 14,
+      "speaker": "CAPULET",
+      "text": "The earth hath swallow’d all my hopes but she,"
+    },
+    {
+      "number": 15,
+      "speaker": "CAPULET",
+      "text": "She is the hopeful lady of my earth:"
+    },
+    {
+      "number": 16,
+      "speaker": "CAPULET",
+      "text": "But woo her, gentle Paris, get her heart,"
+    },
+    {
+      "number": 17,
+      "speaker": "CAPULET",
+      "text": "My will to her consent is but a part;"
+    },
+    {
+      "number": 18,
+      "speaker": "CAPULET",
+      "text": "An she agree, within her scope of choice"
+    },
+    {
+      "number": 19,
+      "speaker": "CAPULET",
+      "text": "Lies my consent and fair according voice."
+    },
+    {
+      "number": 20,
+      "speaker": "CAPULET",
+      "text": "This night I hold an old accustom’d feast,"
+    },
+    {
+      "number": 21,
+      "speaker": "CAPULET",
+      "text": "Whereto I have invited many a guest,"
+    },
+    {
+      "number": 22,
+      "speaker": "CAPULET",
+      "text": "Such as I love; and you, among the store,"
+    },
+    {
+      "number": 23,
+      "speaker": "CAPULET",
+      "text": "One more, most welcome, makes my number more."
+    },
+    {
+      "number": 24,
+      "speaker": "CAPULET",
+      "text": "At my poor house look to behold this night"
+    },
+    {
+      "number": 25,
+      "speaker": "CAPULET",
+      "text": "Earth-treading stars that make dark heaven light:"
+    },
+    {
+      "number": 26,
+      "speaker": "CAPULET",
+      "text": "Such comfort as do lusty young men feel"
+    },
+    {
+      "number": 27,
+      "speaker": "CAPULET",
+      "text": "When well-apparell’d April on the heel"
+    },
+    {
+      "number": 28,
+      "speaker": "CAPULET",
+      "text": "Of limping winter treads, even such delight"
+    },
+    {
+      "number": 29,
+      "speaker": "CAPULET",
+      "text": "Among fresh female buds shall you this night"
+    },
+    {
+      "number": 30,
+      "speaker": "CAPULET",
+      "text": "Inherit at my house; hear all, all see,"
+    },
+    {
+      "number": 31,
+      "speaker": "CAPULET",
+      "text": "And like her most whose merit most shall be:"
+    },
+    {
+      "number": 32,
+      "speaker": "CAPULET",
+      "text": "Which on more view, of many mine being one"
+    },
+    {
+      "number": 33,
+      "speaker": "CAPULET",
+      "text": "May stand in number, though in reckoning none."
+    },
+    {
+      "number": 34,
+      "speaker": "CAPULET",
+      "text": "Come, go with me. To Servant, giving a paper. Go, sirrah, trudge about"
+    },
+    {
+      "number": 35,
+      "speaker": "CAPULET",
+      "text": "Through fair Verona; find those persons out"
+    },
+    {
+      "number": 36,
+      "speaker": "CAPULET",
+      "text": "Whose names are written there, and to them say,"
+    },
+    {
+      "number": 37,
+      "speaker": "CAPULET",
+      "text": "My house and welcome on their pleasure stay."
+    },
+    {
+      "number": 38,
+      "speaker": "SERVANT",
+      "text": "Find them out whose names are written here! It is written, that"
+    },
+    {
+      "number": 39,
+      "speaker": "SERVANT",
+      "text": "the shoemaker should meddle with his yard, and the tailor with his"
+    },
+    {
+      "number": 40,
+      "speaker": "SERVANT",
+      "text": "last, the fisher with his pencil, and the painter with his nets;"
+    },
+    {
+      "number": 41,
+      "speaker": "SERVANT",
+      "text": "but I am sent to find those persons whose names are here"
+    },
+    {
+      "number": 42,
+      "speaker": "SERVANT",
+      "text": "writ, and can never find what names the writing person hath here"
+    },
+    {
+      "number": 43,
+      "speaker": "SERVANT",
+      "text": "writ. I must to the learned.—In good time."
+    },
+    {
+      "number": 44,
+      "speaker": "BENVOLIO",
+      "text": "Tut, man, one fire burns out another’s burning,"
+    },
+    {
+      "number": 45,
+      "speaker": "BENVOLIO",
+      "text": "One pain is lessen’d by another’s anguish;"
+    },
+    {
+      "number": 46,
+      "speaker": "BENVOLIO",
+      "text": "Turn giddy, and be holp by backward turning;"
+    },
+    {
+      "number": 47,
+      "speaker": "BENVOLIO",
+      "text": "One desperate grief cures with another’s languish:"
+    },
+    {
+      "number": 48,
+      "speaker": "BENVOLIO",
+      "text": "Take thou some new infection to thy eye,"
+    },
+    {
+      "number": 49,
+      "speaker": "BENVOLIO",
+      "text": "And the rank poison of the old will die."
+    },
+    {
+      "number": 50,
+      "speaker": "ROMEO",
+      "text": "Your plantain-leaf is excellent for that."
+    },
+    {
+      "number": 50,
+      "speaker": "BENVOLIO",
+      "text": "For what, I pray thee?"
+    },
+    {
+      "number": 51,
+      "speaker": "ROMEO",
+      "text": "For your broken shin."
+    },
+    {
+      "number": 51,
+      "speaker": "BENVOLIO",
+      "text": "Why, Romeo, art thou mad?"
+    },
+    {
+      "number": 52,
+      "speaker": "ROMEO",
+      "text": "Not mad, but bound more than a madman is;"
+    },
+    {
+      "number": 53,
+      "speaker": "ROMEO",
+      "text": "Shut up in prison, kept without my food,"
+    },
+    {
+      "number": 54,
+      "speaker": "ROMEO",
+      "text": "Whipp’d and tormented and—God-den, good fellow."
+    },
+    {
+      "number": 55,
+      "speaker": "SERVANT",
+      "text": "God gi’ god-den. I pray, sir, can you read?"
+    },
+    {
+      "number": 56,
+      "speaker": "ROMEO",
+      "text": "Ay, mine own fortune in my misery."
+    },
+    {
+      "number": 57,
+      "speaker": "SERVANT",
+      "text": "Perhaps you have learned it without book: but, I pray, can you"
+    },
+    {
+      "number": 58,
+      "speaker": "SERVANT",
+      "text": "read anything you see?"
+    },
+    {
+      "number": 59,
+      "speaker": "ROMEO",
+      "text": "Ay, if I know the letters and the language."
+    },
+    {
+      "number": 60,
+      "speaker": "SERVANT",
+      "text": "Ye say honestly: rest you merry!"
+    },
+    {
+      "number": 61,
+      "speaker": "ROMEO",
+      "text": "Stay, fellow; I can read. “Signior Martino and his wife and daughters;"
+    },
+    {
+      "number": 62,
+      "speaker": "ROMEO",
+      "text": "County Anselme and his beauteous sisters; the lady widow of Vitruvio; Signior"
+    },
+    {
+      "number": 63,
+      "speaker": "ROMEO",
+      "text": "Placentio and his lovely nieces; Mercutio and his brother Valentine; mine uncle"
+    },
+    {
+      "number": 64,
+      "speaker": "ROMEO",
+      "text": "Capulet, his wife, and daughters; my fair niece Rosaline; Livia; Signior Valentio"
+    },
+    {
+      "number": 65,
+      "speaker": "ROMEO",
+      "text": "and his cousin Tybalt; Lucio and the lively Helena.” A fair assembly:"
+    },
+    {
+      "number": 66,
+      "speaker": "ROMEO",
+      "text": "whither should they come?"
+    },
+    {
+      "number": 66,
+      "speaker": "SERVANT",
+      "text": "Up."
+    },
+    {
+      "number": 67,
+      "speaker": "ROMEO",
+      "text": "Whither?"
+    },
+    {
+      "number": 67,
+      "speaker": "SERVANT",
+      "text": "To supper; to our house."
+    },
+    {
+      "number": 68,
+      "speaker": "ROMEO",
+      "text": "Whose house?"
+    },
+    {
+      "number": 68,
+      "speaker": "SERVANT",
+      "text": "My master’s."
+    },
+    {
+      "number": 69,
+      "speaker": "ROMEO",
+      "text": "Indeed, I should have ask’d you that before."
+    },
+    {
+      "number": 70,
+      "speaker": "SERVANT",
+      "text": "Now I’ll tell you without asking: my master is the great rich"
+    },
+    {
+      "number": 71,
+      "speaker": "SERVANT",
+      "text": "Capulet; and if you be not of the house of Montagues, I"
+    },
+    {
+      "number": 72,
+      "speaker": "SERVANT",
+      "text": "pray, come and crush a cup of wine. Rest you merry!"
+    },
+    {
+      "number": 73,
+      "speaker": "BENVOLIO",
+      "text": "At this same ancient feast of Capulet’s"
+    },
+    {
+      "number": 74,
+      "speaker": "BENVOLIO",
+      "text": "Sups the fair Rosaline whom thou so lovest,"
+    },
+    {
+      "number": 75,
+      "speaker": "BENVOLIO",
+      "text": "With all the admired beauties of Verona:"
+    },
+    {
+      "number": 76,
+      "speaker": "BENVOLIO",
+      "text": "Go thither; and, with unattainted eye,"
+    },
+    {
+      "number": 77,
+      "speaker": "BENVOLIO",
+      "text": "Compare her face with some that I shall show,"
+    },
+    {
+      "number": 78,
+      "speaker": "BENVOLIO",
+      "text": "And I will make thee think thy swan a crow."
+    },
+    {
+      "number": 79,
+      "speaker": "ROMEO",
+      "text": "When the devout religion of mine eye"
+    },
+    {
+      "number": 80,
+      "speaker": "ROMEO",
+      "text": "Maintains such falsehood, then turn tears to fires;"
+    },
+    {
+      "number": 81,
+      "speaker": "ROMEO",
+      "text": "And these, who often drown’d could never die,"
+    },
+    {
+      "number": 82,
+      "speaker": "ROMEO",
+      "text": "Transparent heretics, be burnt for liars!"
+    },
+    {
+      "number": 83,
+      "speaker": "ROMEO",
+      "text": "One fairer than my love! the all-seeing sun"
+    },
+    {
+      "number": 84,
+      "speaker": "ROMEO",
+      "text": "Ne’er saw her match since first the world begun."
+    },
+    {
+      "number": 85,
+      "speaker": "BENVOLIO",
+      "text": "Tut, you saw her fair, none else being by,"
+    },
+    {
+      "number": 86,
+      "speaker": "BENVOLIO",
+      "text": "Herself poised with herself in either eye:"
+    },
+    {
+      "number": 87,
+      "speaker": "BENVOLIO",
+      "text": "But in that crystal scales let there be weigh’d"
+    },
+    {
+      "number": 88,
+      "speaker": "BENVOLIO",
+      "text": "Your lady’s love against some other maid"
+    },
+    {
+      "number": 89,
+      "speaker": "BENVOLIO",
+      "text": "That I will show you shining at this feast,"
+    },
+    {
+      "number": 90,
+      "speaker": "BENVOLIO",
+      "text": "And she shall scant show well that now shows best."
+    },
+    {
+      "number": 91,
+      "speaker": "ROMEO",
+      "text": "I’ll go along, no such sight to be shown,"
+    },
+    {
+      "number": 92,
+      "speaker": "ROMEO",
+      "text": "But to rejoice in splendour of mine own."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Capulet, Paris, and Servant."
+    },
+    {
+      "after_line": 37,
+      "text": "Exeunt Capulet and Paris."
+    },
+    {
+      "after_line": 43,
+      "text": "Enter Benvolio and Romeo."
+    },
+    {
+      "after_line": 66,
+      "text": "Reads."
+    },
+    {
+      "after_line": 72,
+      "text": "Exit."
+    },
+    {
+      "after_line": 92,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss1",
+      "line": 1,
+      "phrase": "bound",
+      "definition": "obligated by the Prince's order to keep the peace"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss2",
+      "line": 4,
+      "phrase": "reckoning",
+      "definition": "reputation; esteem"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss3",
+      "line": 8,
+      "phrase": "my child is yet a stranger in the world",
+      "definition": "Juliet is still a child; Capulet's first mention of her youth"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss4",
+      "line": 9,
+      "phrase": "fourteen years",
+      "definition": "Juliet is not yet fourteen — Capulet's stated age is historically plausible for Elizabethan noble betrothal but marks her as very young"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss5",
+      "line": 13,
+      "phrase": "marr’d",
+      "definition": "ruined; spoiled by early marriage and child-bearing"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss6",
+      "line": 14,
+      "phrase": "Earth hath swallow’d all my hopes but she",
+      "definition": "Capulet has lost his other children; Juliet is his only heir"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss7",
+      "line": 15,
+      "phrase": "hopeful lady of my earth",
+      "definition": "heir to my estate; my hope on earth — with a Latin pun on 'terra' / landed property"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss8",
+      "line": 30,
+      "phrase": "inherit",
+      "definition": "take possession of; enjoy"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss9",
+      "line": 34,
+      "phrase": "sirrah",
+      "definition": "form of address to inferiors, rougher than 'sir'"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss10",
+      "line": 37,
+      "phrase": "stay",
+      "definition": "wait"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss11",
+      "line": 35,
+      "phrase": "find those persons out",
+      "definition": "find and invite these guests"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss12",
+      "line": 39,
+      "phrase": "meddle with his yard",
+      "definition": "bawdy punning — cobbler tools (last/yard) confused with tailor tools"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss13",
+      "line": 43,
+      "phrase": "in good time",
+      "definition": "at just the right moment"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss14",
+      "line": 46,
+      "phrase": "holp",
+      "definition": "helped (archaic past tense)"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss15",
+      "line": 50,
+      "phrase": "plantain leaf",
+      "definition": "a common herb used to stop bleeding and draw out poison"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss16",
+      "line": 54,
+      "phrase": "tormented",
+      "definition": "tortured — stretched on the rack"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss17",
+      "line": 72,
+      "phrase": "Rest you merry",
+      "definition": "farewell; may you stay in good cheer"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss18",
+      "line": 72,
+      "phrase": "crush a cup of wine",
+      "definition": "drink a cup of wine — casual invitation"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss19",
+      "line": 27,
+      "phrase": "well-apparell’d April",
+      "definition": "spring freshly dressed; Shakespeare's personification of April"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss20",
+      "line": 29,
+      "phrase": "female buds",
+      "definition": "fresh young women"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss21",
+      "line": 23,
+      "phrase": "number more",
+      "definition": "one beauty more"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss22",
+      "line": 76,
+      "phrase": "unattainted",
+      "definition": "impartial; unbiased"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss23",
+      "line": 86,
+      "phrase": "poise",
+      "definition": "weigh; compare"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_gloss24",
+      "line": 87,
+      "phrase": "crystal scales",
+      "definition": "the balance of the eyes — seeing other beauties will reset his judgment"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act1_scene2_ann1",
+      "line_start": 8,
+      "line_end": 16,
+      "citation_display": "Romeo and Juliet 1.2.8–16",
+      "category": "thematic",
+      "title": "Capulet on his daughter — 'the hopeful lady of my earth'",
+      "body": "Capulet's first description of Juliet is surprisingly tender: she is his 'hopeful lady of my earth,' the only surviving child in a family that has buried others. The Latinate pun on 'earth' (terra, estate) compresses the two things she is to him — the living daughter he loves and the material heir who will preserve the house. This helps explain the violence of 3.5: Capulet's rage against Juliet is not only patriarchal but dynastic. She is the only thing that keeps his line going. Whether that helps or hurts her situation, the play asks us to see both sides.",
+      "sources": [
+        "Coppélia Kahn, Man's Estate (1981)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act1_scene2_q1",
+      "kind": "comprehension",
+      "prompt": "Why is Juliet Capulet's only remaining child?",
+      "options": [
+        "She was the only one her parents wanted",
+        "Capulet says 'Earth hath swallow'd all my hopes but she' — his other children have died",
+        "The Capulets never had other children",
+        "Her siblings have been sent away to school"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 14,
+      "anchor_line_end": 16
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene2_q2",
+      "kind": "theme",
+      "prompt": "When Capulet tells Paris that Juliet is 'yet a stranger in the world,' he means:",
+      "options": [
+        "She is a foreigner",
+        "She is still young and unmarried — not yet initiated into adult society",
+        "She does not know Paris personally",
+        "She is shy at public gatherings"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 8,
+      "anchor_line_end": 11
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+{
+  "section_id": "king_lear_act3_scene1",
+  "work_id": "king-lear",
+  "sequence": 10,
+  "act": 3,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "A heath",
+  "line_count": 58,
+  "word_count": 430,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KENT",
+      "text": "Who’s there, besides foul weather?"
+    },
+    {
+      "number": 2,
+      "speaker": "GENTLEMAN",
+      "text": "One minded like the weather, most unquietly."
+    },
+    {
+      "number": 3,
+      "speaker": "KENT",
+      "text": "I know you. Where’s the king?"
+    },
+    {
+      "number": 3,
+      "speaker": "GENTLEMAN",
+      "text": "Contending with the fretful element:"
+    },
+    {
+      "number": 4,
+      "speaker": "GENTLEMAN",
+      "text": "Bids the winds blow the earth into the sea,"
+    },
+    {
+      "number": 5,
+      "speaker": "GENTLEMAN",
+      "text": "Or swell the curled water ’bove the main,"
+    },
+    {
+      "number": 6,
+      "speaker": "GENTLEMAN",
+      "text": "That things might change or cease; tears his white hair,"
+    },
+    {
+      "number": 7,
+      "speaker": "GENTLEMAN",
+      "text": "Which the impetuous blasts, with eyeless rage,"
+    },
+    {
+      "number": 8,
+      "speaker": "GENTLEMAN",
+      "text": "Catch in their fury, and make nothing of;"
+    },
+    {
+      "number": 9,
+      "speaker": "GENTLEMAN",
+      "text": "Strives in his little world of man to out-scorn"
+    },
+    {
+      "number": 10,
+      "speaker": "GENTLEMAN",
+      "text": "The to-and-fro-conflicting wind and rain."
+    },
+    {
+      "number": 11,
+      "speaker": "GENTLEMAN",
+      "text": "This night, wherein the cub-drawn bear would couch,"
+    },
+    {
+      "number": 12,
+      "speaker": "GENTLEMAN",
+      "text": "The lion and the belly-pinched wolf"
+    },
+    {
+      "number": 13,
+      "speaker": "GENTLEMAN",
+      "text": "Keep their fur dry, unbonneted he runs,"
+    },
+    {
+      "number": 14,
+      "speaker": "GENTLEMAN",
+      "text": "And bids what will take all."
+    },
+    {
+      "number": 14,
+      "speaker": "KENT",
+      "text": "But who is with him?"
+    },
+    {
+      "number": 15,
+      "speaker": "GENTLEMAN",
+      "text": "None but the fool; who labours to out-jest"
+    },
+    {
+      "number": 16,
+      "speaker": "GENTLEMAN",
+      "text": "His heart-struck injuries."
+    },
+    {
+      "number": 16,
+      "speaker": "KENT",
+      "text": "Sir, I do know you;"
+    },
+    {
+      "number": 17,
+      "speaker": "KENT",
+      "text": "And dare, upon the warrant of my note,"
+    },
+    {
+      "number": 18,
+      "speaker": "KENT",
+      "text": "Commend a dear thing to you. There is division,"
+    },
+    {
+      "number": 19,
+      "speaker": "KENT",
+      "text": "Although as yet the face of it be cover’d"
+    },
+    {
+      "number": 20,
+      "speaker": "KENT",
+      "text": "With mutual cunning, ’twixt Albany and Cornwall;"
+    },
+    {
+      "number": 21,
+      "speaker": "KENT",
+      "text": "Who have—as who have not, that their great stars"
+    },
+    {
+      "number": 22,
+      "speaker": "KENT",
+      "text": "Throned and set high?—servants, who seem no less,"
+    },
+    {
+      "number": 23,
+      "speaker": "KENT",
+      "text": "Which are to France the spies and speculations"
+    },
+    {
+      "number": 24,
+      "speaker": "KENT",
+      "text": "Intelligent of our state; what hath been seen,"
+    },
+    {
+      "number": 25,
+      "speaker": "KENT",
+      "text": "Either in snuffs and packings of the dukes,"
+    },
+    {
+      "number": 26,
+      "speaker": "KENT",
+      "text": "Or the hard rein which both of them have borne"
+    },
+    {
+      "number": 27,
+      "speaker": "KENT",
+      "text": "Against the old kind king; or something deeper,"
+    },
+    {
+      "number": 28,
+      "speaker": "KENT",
+      "text": "Whereof perchance these are but furnishings;"
+    },
+    {
+      "number": 29,
+      "speaker": "KENT",
+      "text": "But, true it is, from France there comes a power"
+    },
+    {
+      "number": 30,
+      "speaker": "KENT",
+      "text": "Into this scatter’d kingdom; who already,"
+    },
+    {
+      "number": 31,
+      "speaker": "KENT",
+      "text": "Wise in our negligence, have secret feet"
+    },
+    {
+      "number": 32,
+      "speaker": "KENT",
+      "text": "In some of our best ports, and are at point"
+    },
+    {
+      "number": 33,
+      "speaker": "KENT",
+      "text": "To show their open banner. Now to you:"
+    },
+    {
+      "number": 34,
+      "speaker": "KENT",
+      "text": "If on my credit you dare build so far"
+    },
+    {
+      "number": 35,
+      "speaker": "KENT",
+      "text": "To make your speed to Dover, you shall find"
+    },
+    {
+      "number": 36,
+      "speaker": "KENT",
+      "text": "Some that will thank you, making just report"
+    },
+    {
+      "number": 37,
+      "speaker": "KENT",
+      "text": "Of how unnatural and bemadding sorrow"
+    },
+    {
+      "number": 38,
+      "speaker": "KENT",
+      "text": "The king hath cause to plain."
+    },
+    {
+      "number": 39,
+      "speaker": "KENT",
+      "text": "I am a gentleman of blood and breeding;"
+    },
+    {
+      "number": 40,
+      "speaker": "KENT",
+      "text": "And, from some knowledge and assurance, offer"
+    },
+    {
+      "number": 41,
+      "speaker": "KENT",
+      "text": "This office to you."
+    },
+    {
+      "number": 41,
+      "speaker": "GENTLEMAN",
+      "text": "I will talk further with you."
+    },
+    {
+      "number": 42,
+      "speaker": "KENT",
+      "text": "No, do not."
+    },
+    {
+      "number": 43,
+      "speaker": "KENT",
+      "text": "For confirmation that I am much more"
+    },
+    {
+      "number": 44,
+      "speaker": "KENT",
+      "text": "Than my out-wall, open this purse, and take"
+    },
+    {
+      "number": 45,
+      "speaker": "KENT",
+      "text": "What it contains. If you shall see Cordelia—"
+    },
+    {
+      "number": 46,
+      "speaker": "KENT",
+      "text": "As fear not but you shall—show her this ring;"
+    },
+    {
+      "number": 47,
+      "speaker": "KENT",
+      "text": "And she will tell you who your fellow is"
+    },
+    {
+      "number": 48,
+      "speaker": "KENT",
+      "text": "That yet you do not know. Fie on this storm!"
+    },
+    {
+      "number": 49,
+      "speaker": "KENT",
+      "text": "I will go seek the king."
+    },
+    {
+      "number": 50,
+      "speaker": "GENTLEMAN",
+      "text": "Give me your hand: have you no more to say?"
+    },
+    {
+      "number": 51,
+      "speaker": "KENT",
+      "text": "Few words, but, to effect, more than all yet;"
+    },
+    {
+      "number": 52,
+      "speaker": "KENT",
+      "text": "That, when we have found the king—in which your pain"
+    },
+    {
+      "number": 53,
+      "speaker": "KENT",
+      "text": "That way, I’ll this—he that first lights on him"
+    },
+    {
+      "number": 54,
+      "speaker": "KENT",
+      "text": "Holla the other."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Storm still. Enter Kent and a Gentleman, meeting."
+    },
+    {
+      "after_line": 54,
+      "text": "Exeunt severally."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act3_scene1_gloss1",
+      "line": 5,
+      "phrase": "main",
+      "definition": "mainland"
+    },
+    {
+      "id": "king_lear_act3_scene1_gloss4",
+      "line": 7,
+      "phrase": "eyeless rage",
+      "definition": "blind fury — the wind as a blind beast"
+    },
+    {
+      "id": "king_lear_act3_scene1_gloss5",
+      "line": 11,
+      "phrase": "cub-drawn bear",
+      "definition": "a bear whose teats have been drained dry by cubs"
+    },
+    {
+      "id": "king_lear_act3_scene1_gloss6",
+      "line": 12,
+      "phrase": "belly-pinched",
+      "definition": "hungry; starved"
+    },
+    {
+      "id": "king_lear_act3_scene1_gloss8",
+      "line": 13,
+      "phrase": "unbonneted",
+      "definition": "bareheaded — without his cap"
+    },
+    {
+      "id": "king_lear_act3_scene1_gloss9",
+      "line": 25,
+      "phrase": "snuffs and packings",
+      "definition": "quarrels and plots"
+    },
+    {
+      "id": "king_lear_act3_scene1_gloss10",
+      "line": 26,
+      "phrase": "hard rein",
+      "definition": "strict control"
+    },
+    {
+      "id": "king_lear_act3_scene1_gloss11",
+      "line": 28,
+      "phrase": "furnishings",
+      "definition": "appearances; surface reasons"
+    },
+    {
+      "id": "king_lear_act3_scene1_gloss12",
+      "line": 29,
+      "phrase": "France",
+      "definition": "the French king, Cordelia's husband"
+    },
+    {
+      "id": "king_lear_act3_scene1_gloss13",
+      "line": 30,
+      "phrase": "scatter’d kingdom",
+      "definition": "the divided realm"
+    },
+    {
+      "id": "king_lear_act3_scene1_gloss15",
+      "line": 6,
+      "phrase": "tears his white hair",
+      "definition": "Lear ripping his own hair in the storm"
+    },
+    {
+      "id": "king_lear_act3_scene1_gloss16",
+      "line": 10,
+      "phrase": "to-and-fro-conflicting wind and rain",
+      "definition": "the storm battering from all sides"
+    },
+    {
+      "id": "king_lear_act3_scene1_gloss17",
+      "line": 22,
+      "phrase": "servants",
+      "definition": "spies among the servants"
+    },
+    {
+      "id": "king_lear_act3_scene1_gloss18",
+      "line": 23,
+      "phrase": "speculations",
+      "definition": "intelligence-gatherers"
+    },
+    {
+      "id": "king_lear_act3_scene1_gloss19",
+      "line": 30,
+      "phrase": "scatter’d kingdom",
+      "definition": "the fragmented realm"
+    },
+    {
+      "id": "king_lear_act3_scene1_gloss20",
+      "line": 31,
+      "phrase": "Wise in our negligence",
+      "definition": "clever in their secret plans"
+    },
+    {
+      "id": "king_lear_act3_scene1_gloss21",
+      "line": 29,
+      "phrase": "power",
+      "definition": "military force"
+    },
+    {
+      "id": "king_lear_act3_scene1_gloss22",
+      "line": 46,
+      "phrase": "ring",
+      "definition": "signal-ring"
+    },
+    {
+      "id": "king_lear_act3_scene1_gloss23",
+      "line": 52,
+      "phrase": "your pain",
+      "definition": "your trouble"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act3_scene1_ann1",
+      "line_start": 35,
+      "line_end": 50,
+      "citation_display": "King Lear 3.1.35–50",
+      "category": "structural",
+      "title": "France invades — the political machinery that will fail the play",
+      "body": "Kent's speech to the Gentleman announces the French invasion — the force that might redeem Lear politically if it arrives in time. Shakespeare wants the audience to register the military stakes without dwelling on them; the invasion will matter as a deadline, not as a plot-driver. By 5.3 the French will have lost, Cordelia will be captured, and the political frame will collapse back onto private grief. This scene is a setup whose payoff is its own futility: the armies matter less than whether Lear's button gets undone.",
+      "sources": [
+        "G. K. Hunter, 'The Last Tragic Heroes' in Later Shakespeare (1966)"
+      ]
+    },
+    {
+      "id": "king_lear_act3_scene1_ann2",
+      "line_start": 4,
+      "line_end": 15,
+      "citation_display": "King Lear 3.1.4–15",
+      "category": "close_reading",
+      "title": "The Gentleman's report of Lear on the heath — ekphrasis of the storm",
+      "body": "The Gentleman's description of Lear in the storm — 'Contending with the fretful elements; / Bids the wind blow the earth into the sea' — is Shakespeare's preparation for what we are about to see directly. This is the classical technique of ekphrasis: a verbal painting that primes the spectator for the scene that follows. The Gentleman gives us the storm's geography ('this night, wherein the cub-drawn bear would couch'), the weather's refusal ('the lion, and the belly-pinched wolf, / Keep their fur dry'), and Lear's specific posture (tearing his hair, running bareheaded). When the storm scenes of 3.2 and 3.4 arrive, the audience already has the image; the poetry can now do intensification rather than description. Shakespeare uses ekphrasis deliberately before his greatest staged set-pieces.",
+      "sources": [
+        "Russ McDonald, Shakespeare and the Arts of Language (2001)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act3_scene1_q1",
+      "kind": "comprehension",
+      "prompt": "What political news does Kent deliver in 3.1?",
+      "options": [
+        "Cornwall's death",
+        "France has landed an invading army — the political machinery that might redeem Lear, though the play will let it fail",
+        "Edmund's treachery",
+        "Cordelia's capture"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 35,
+      "anchor_line_end": 50
+    },
+    {
+      "id": "king_lear_act3_scene1_q2",
+      "kind": "structural",
+      "prompt": "The Gentleman's description of Lear on the heath in 3.1 uses the classical technique of —",
+      "options": [
+        "Ellipsis",
+        "Ekphrasis — verbal painting that primes the audience for the storm scene to follow, so that the staged storm can intensify rather than describe",
+        "Litotes",
+        "Parataxis"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 4,
+      "anchor_line_end": 15
+    }
+  ]
+}

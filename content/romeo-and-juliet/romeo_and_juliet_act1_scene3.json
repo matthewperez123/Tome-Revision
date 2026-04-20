@@ -1,0 +1,816 @@
+{
+  "section_id": "romeo_and_juliet_act1_scene3",
+  "work_id": "romeo-and-juliet",
+  "sequence": 4,
+  "act": 1,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "A room in Capulet's house",
+  "line_count": 108,
+  "word_count": 872,
+  "est_read_minutes": 4,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "LADY CAPULET",
+      "text": "Nurse, where’s my daughter? call her forth to me."
+    },
+    {
+      "number": 2,
+      "speaker": "NURSE",
+      "text": "Now, by my maidenhead, at twelve year old,"
+    },
+    {
+      "number": 3,
+      "speaker": "NURSE",
+      "text": "I bade her come. What, lamb! what, lady-bird!"
+    },
+    {
+      "number": 4,
+      "speaker": "NURSE",
+      "text": "God forbid! Where’s this girl? What, Juliet!"
+    },
+    {
+      "number": 5,
+      "speaker": "JULIET",
+      "text": "How now! who calls?"
+    },
+    {
+      "number": 5,
+      "speaker": "NURSE",
+      "text": "Your mother."
+    },
+    {
+      "number": 6,
+      "speaker": "JULIET",
+      "text": "Madam, I am here."
+    },
+    {
+      "number": 7,
+      "speaker": "JULIET",
+      "text": "What is your will?"
+    },
+    {
+      "number": 8,
+      "speaker": "LADY CAPULET",
+      "text": "This is the matter:—Nurse, give leave awhile,"
+    },
+    {
+      "number": 9,
+      "speaker": "LADY CAPULET",
+      "text": "We must talk in secret:—nurse, come back again;"
+    },
+    {
+      "number": 10,
+      "speaker": "LADY CAPULET",
+      "text": "I have remember’d me, thou’s hear our counsel."
+    },
+    {
+      "number": 11,
+      "speaker": "LADY CAPULET",
+      "text": "Thou know’st my daughter’s of a pretty age."
+    },
+    {
+      "number": 12,
+      "speaker": "NURSE",
+      "text": "Faith, I can tell her age unto an hour."
+    },
+    {
+      "number": 13,
+      "speaker": "LADY CAPULET",
+      "text": "She’s not fourteen."
+    },
+    {
+      "number": 13,
+      "speaker": "NURSE",
+      "text": "I’ll lay fourteen of my teeth—"
+    },
+    {
+      "number": 14,
+      "speaker": "NURSE",
+      "text": "And yet, to my teen be it spoken, I have but four—"
+    },
+    {
+      "number": 15,
+      "speaker": "NURSE",
+      "text": "She is not fourteen. How long is it now"
+    },
+    {
+      "number": 16,
+      "speaker": "NURSE",
+      "text": "To Lammas-tide?"
+    },
+    {
+      "number": 16,
+      "speaker": "LADY CAPULET",
+      "text": "A fortnight and odd days."
+    },
+    {
+      "number": 17,
+      "speaker": "NURSE",
+      "text": "Even or odd, of all days in the year,"
+    },
+    {
+      "number": 18,
+      "speaker": "NURSE",
+      "text": "Come Lammas-eve at night shall she be fourteen."
+    },
+    {
+      "number": 19,
+      "speaker": "NURSE",
+      "text": "Susan and she—God rest all Christian souls!—"
+    },
+    {
+      "number": 20,
+      "speaker": "NURSE",
+      "text": "Were of an age: well, Susan is with God;"
+    },
+    {
+      "number": 21,
+      "speaker": "NURSE",
+      "text": "She was too good for me: but, as I said,"
+    },
+    {
+      "number": 22,
+      "speaker": "NURSE",
+      "text": "On Lammas-eve at night shall she be fourteen;"
+    },
+    {
+      "number": 23,
+      "speaker": "NURSE",
+      "text": "That shall she, marry; I remember it well."
+    },
+    {
+      "number": 24,
+      "speaker": "NURSE",
+      "text": "’Tis since the earthquake now eleven years;"
+    },
+    {
+      "number": 25,
+      "speaker": "NURSE",
+      "text": "And she was wean’d—I never shall forget it—"
+    },
+    {
+      "number": 26,
+      "speaker": "NURSE",
+      "text": "Of all the days of the year, upon that day:"
+    },
+    {
+      "number": 27,
+      "speaker": "NURSE",
+      "text": "For I had then laid wormwood to my dug,"
+    },
+    {
+      "number": 28,
+      "speaker": "NURSE",
+      "text": "Sitting in the sun under the dove-house wall;"
+    },
+    {
+      "number": 29,
+      "speaker": "NURSE",
+      "text": "My lord and you were then at Mantua:—"
+    },
+    {
+      "number": 30,
+      "speaker": "NURSE",
+      "text": "Nay, I do bear a brain:—but, as I said,"
+    },
+    {
+      "number": 31,
+      "speaker": "NURSE",
+      "text": "When it did taste the wormwood on the nipple"
+    },
+    {
+      "number": 32,
+      "speaker": "NURSE",
+      "text": "Of my dug and felt it bitter, pretty fool,"
+    },
+    {
+      "number": 33,
+      "speaker": "NURSE",
+      "text": "To see it tetchy and fall out with the dug!"
+    },
+    {
+      "number": 34,
+      "speaker": "NURSE",
+      "text": "“Shake” quoth the dove-house: ’twas no need, I trow,"
+    },
+    {
+      "number": 35,
+      "speaker": "NURSE",
+      "text": "To bid me trudge:"
+    },
+    {
+      "number": 36,
+      "speaker": "NURSE",
+      "text": "And since that time it is eleven years;"
+    },
+    {
+      "number": 37,
+      "speaker": "NURSE",
+      "text": "For then she could stand alone; nay, by the rood,"
+    },
+    {
+      "number": 38,
+      "speaker": "NURSE",
+      "text": "She could have run and waddled all about;"
+    },
+    {
+      "number": 39,
+      "speaker": "NURSE",
+      "text": "For even the day before, she broke her brow:"
+    },
+    {
+      "number": 40,
+      "speaker": "NURSE",
+      "text": "And then my husband—God be with his soul!"
+    },
+    {
+      "number": 41,
+      "speaker": "NURSE",
+      "text": "A’ was a merry man—took up the child:"
+    },
+    {
+      "number": 42,
+      "speaker": "NURSE",
+      "text": "“Yea,” quoth he, “dost thou fall upon thy face?"
+    },
+    {
+      "number": 43,
+      "speaker": "NURSE",
+      "text": "Thou wilt fall backward when thou hast more wit;"
+    },
+    {
+      "number": 44,
+      "speaker": "NURSE",
+      "text": "Wilt thou not, Jule?” and, by my holidame,"
+    },
+    {
+      "number": 45,
+      "speaker": "NURSE",
+      "text": "The pretty wretch left crying and said “Ay.”"
+    },
+    {
+      "number": 46,
+      "speaker": "NURSE",
+      "text": "To see, now, how a jest shall come about!"
+    },
+    {
+      "number": 47,
+      "speaker": "NURSE",
+      "text": "I warrant, an I should live a thousand years,"
+    },
+    {
+      "number": 48,
+      "speaker": "NURSE",
+      "text": "I never should forget it: “Wilt thou not, Jule?” quoth he;"
+    },
+    {
+      "number": 49,
+      "speaker": "NURSE",
+      "text": "And, pretty fool, it stinted and said “Ay.”"
+    },
+    {
+      "number": 50,
+      "speaker": "LADY CAPULET",
+      "text": "Enough of this; I pray thee, hold thy peace."
+    },
+    {
+      "number": 51,
+      "speaker": "NURSE",
+      "text": "Yes, madam: yet I cannot choose but laugh,"
+    },
+    {
+      "number": 52,
+      "speaker": "NURSE",
+      "text": "To think it should leave crying and say “Ay.”"
+    },
+    {
+      "number": 53,
+      "speaker": "NURSE",
+      "text": "And yet, I warrant, it had upon its brow"
+    },
+    {
+      "number": 54,
+      "speaker": "NURSE",
+      "text": "A bump as big as a young cockerel’s stone;"
+    },
+    {
+      "number": 55,
+      "speaker": "NURSE",
+      "text": "A parlous knock; and it cried bitterly:"
+    },
+    {
+      "number": 56,
+      "speaker": "NURSE",
+      "text": "“Yea,” quoth my husband, “fall’st upon thy face?"
+    },
+    {
+      "number": 57,
+      "speaker": "NURSE",
+      "text": "Thou wilt fall backward when thou comest to age;"
+    },
+    {
+      "number": 58,
+      "speaker": "NURSE",
+      "text": "Wilt thou not, Jule?” it stinted and said “Ay.”"
+    },
+    {
+      "number": 59,
+      "speaker": "JULIET",
+      "text": "And stint thou too, I pray thee, nurse, say I."
+    },
+    {
+      "number": 60,
+      "speaker": "NURSE",
+      "text": "Peace, I have done. God mark thee to his grace!"
+    },
+    {
+      "number": 61,
+      "speaker": "NURSE",
+      "text": "Thou wast the prettiest babe that e’er I nursed:"
+    },
+    {
+      "number": 62,
+      "speaker": "NURSE",
+      "text": "An I might live to see thee married once,"
+    },
+    {
+      "number": 63,
+      "speaker": "NURSE",
+      "text": "I have my wish."
+    },
+    {
+      "number": 64,
+      "speaker": "LADY CAPULET",
+      "text": "Marry, that “marry” is the very theme"
+    },
+    {
+      "number": 65,
+      "speaker": "LADY CAPULET",
+      "text": "I came to talk of. Tell me, daughter Juliet,"
+    },
+    {
+      "number": 66,
+      "speaker": "LADY CAPULET",
+      "text": "How stands your disposition to be married?"
+    },
+    {
+      "number": 67,
+      "speaker": "JULIET",
+      "text": "It is an honour that I dream not of."
+    },
+    {
+      "number": 68,
+      "speaker": "NURSE",
+      "text": "An honour! were not I thine only nurse,"
+    },
+    {
+      "number": 69,
+      "speaker": "NURSE",
+      "text": "I would say thou hadst suck’d wisdom from thy teat."
+    },
+    {
+      "number": 70,
+      "speaker": "LADY CAPULET",
+      "text": "Well, think of marriage now; younger than you,"
+    },
+    {
+      "number": 71,
+      "speaker": "LADY CAPULET",
+      "text": "Here in Verona, ladies of esteem,"
+    },
+    {
+      "number": 72,
+      "speaker": "LADY CAPULET",
+      "text": "Are made already mothers: by my count,"
+    },
+    {
+      "number": 73,
+      "speaker": "LADY CAPULET",
+      "text": "I was your mother much upon these years"
+    },
+    {
+      "number": 74,
+      "speaker": "LADY CAPULET",
+      "text": "That you are now a maid. Thus then in brief:"
+    },
+    {
+      "number": 75,
+      "speaker": "LADY CAPULET",
+      "text": "The valiant Paris seeks you for his love."
+    },
+    {
+      "number": 76,
+      "speaker": "NURSE",
+      "text": "A man, young lady! lady, such a man"
+    },
+    {
+      "number": 77,
+      "speaker": "NURSE",
+      "text": "As all the world—why, he’s a man of wax."
+    },
+    {
+      "number": 78,
+      "speaker": "LADY CAPULET",
+      "text": "Verona’s summer hath not such a flower."
+    },
+    {
+      "number": 79,
+      "speaker": "NURSE",
+      "text": "Nay, he’s a flower; in faith, a very flower."
+    },
+    {
+      "number": 80,
+      "speaker": "LADY CAPULET",
+      "text": "What say you? can you love the gentleman?"
+    },
+    {
+      "number": 81,
+      "speaker": "LADY CAPULET",
+      "text": "This night you shall behold him at our feast;"
+    },
+    {
+      "number": 82,
+      "speaker": "LADY CAPULET",
+      "text": "Read o’er the volume of young Paris’ face,"
+    },
+    {
+      "number": 83,
+      "speaker": "LADY CAPULET",
+      "text": "And find delight writ there with beauty’s pen;"
+    },
+    {
+      "number": 84,
+      "speaker": "LADY CAPULET",
+      "text": "Examine every married lineament,"
+    },
+    {
+      "number": 85,
+      "speaker": "LADY CAPULET",
+      "text": "And see how one another lends content,"
+    },
+    {
+      "number": 86,
+      "speaker": "LADY CAPULET",
+      "text": "And what obscured in this fair volume lies"
+    },
+    {
+      "number": 87,
+      "speaker": "LADY CAPULET",
+      "text": "Find written in the margent of his eyes."
+    },
+    {
+      "number": 88,
+      "speaker": "LADY CAPULET",
+      "text": "This precious book of love, this unbound lover,"
+    },
+    {
+      "number": 89,
+      "speaker": "LADY CAPULET",
+      "text": "To beautify him, only lacks a cover:"
+    },
+    {
+      "number": 90,
+      "speaker": "LADY CAPULET",
+      "text": "The fish lives in the sea, and ’tis much pride"
+    },
+    {
+      "number": 91,
+      "speaker": "LADY CAPULET",
+      "text": "For fair without the fair within to hide:"
+    },
+    {
+      "number": 92,
+      "speaker": "LADY CAPULET",
+      "text": "That book in many’s eyes doth share the glory,"
+    },
+    {
+      "number": 93,
+      "speaker": "LADY CAPULET",
+      "text": "That in gold clasps locks in the golden story;"
+    },
+    {
+      "number": 94,
+      "speaker": "LADY CAPULET",
+      "text": "So shall you share all that he doth possess,"
+    },
+    {
+      "number": 95,
+      "speaker": "LADY CAPULET",
+      "text": "By having him, making yourself no less."
+    },
+    {
+      "number": 96,
+      "speaker": "NURSE",
+      "text": "No less! nay, bigger; women grow by men."
+    },
+    {
+      "number": 97,
+      "speaker": "LADY CAPULET",
+      "text": "Speak briefly, can you like of Paris’ love?"
+    },
+    {
+      "number": 98,
+      "speaker": "JULIET",
+      "text": "I’ll look to like, if looking liking move:"
+    },
+    {
+      "number": 99,
+      "speaker": "JULIET",
+      "text": "But no more deep will I endart mine eye"
+    },
+    {
+      "number": 100,
+      "speaker": "JULIET",
+      "text": "Than your consent gives strength to make it fly."
+    },
+    {
+      "number": 101,
+      "speaker": "SERVANT",
+      "text": "Madam, the guests are come, supper served up, you called, my young"
+    },
+    {
+      "number": 102,
+      "speaker": "SERVANT",
+      "text": "lady asked for, the nurse cursed in the pantry, and everything in"
+    },
+    {
+      "number": 103,
+      "speaker": "SERVANT",
+      "text": "extremity. I must hence to wait; I beseech you, follow straight."
+    },
+    {
+      "number": 104,
+      "speaker": "LADY CAPULET",
+      "text": "We follow thee. Juliet, the county stays."
+    },
+    {
+      "number": 105,
+      "speaker": "NURSE",
+      "text": "Go, girl, seek happy nights to happy days."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Lady Capulet and Nurse."
+    },
+    {
+      "after_line": 4,
+      "text": "Enter Juliet."
+    },
+    {
+      "after_line": 100,
+      "text": "Enter a Servant."
+    },
+    {
+      "after_line": 104,
+      "text": "Exit Servant."
+    },
+    {
+      "after_line": 105,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss1",
+      "line": 8,
+      "phrase": "give leave",
+      "definition": "allow us privacy; leave us"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss2",
+      "line": 13,
+      "phrase": "she’s not fourteen",
+      "definition": "Juliet is explicitly under fourteen — the play makes her extreme youth textually unavoidable"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss3",
+      "line": 16,
+      "phrase": "Lammas-tide",
+      "definition": "August 1st, a harvest festival — Juliet's birthday falls two weeks before, on July 31"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss4",
+      "line": 22,
+      "phrase": "Lammas Eve at night",
+      "definition": "July 31 — Juliet's fourteenth birthday is still two weeks away"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss5",
+      "line": 19,
+      "phrase": "Susan and she—God rest all Christian souls!",
+      "definition": "the Nurse had a daughter Susan, who died; her grief fuels her bond to Juliet"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss6",
+      "line": 24,
+      "phrase": "eleven years",
+      "definition": "the Nurse nursed Juliet — timeline hint for the Nurse's intimate bond"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss7",
+      "line": 31,
+      "phrase": "wormwood",
+      "definition": "a bitter herb applied to the nipple to repel a nursing child"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss8",
+      "line": 32,
+      "phrase": "dug",
+      "definition": "nipple; teat"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss9",
+      "line": 33,
+      "phrase": "tetchy",
+      "definition": "peevish; fretful"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss10",
+      "line": 34,
+      "phrase": "dove-house",
+      "definition": "dovecote; pigeon-house"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss11",
+      "line": 35,
+      "phrase": "trudge",
+      "definition": "walk with weary effort"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss12",
+      "line": 37,
+      "phrase": "rood",
+      "definition": "cross of Christ — mild oath"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss13",
+      "line": 48,
+      "phrase": "Jule",
+      "definition": "Juliet's baby-name"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss14",
+      "line": 58,
+      "phrase": "stinted",
+      "definition": "stopped; ceased"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss15",
+      "line": 60,
+      "phrase": "God mark thee to his grace",
+      "definition": "God take you into his favor — blessing"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss16",
+      "line": 61,
+      "phrase": "wast the prettiest babe",
+      "definition": "the Nurse's memory of Juliet as an infant"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss17",
+      "line": 44,
+      "phrase": "holidam",
+      "definition": "holy relic or lady — mild oath"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss18",
+      "line": 59,
+      "phrase": "stint",
+      "definition": "cease"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss19",
+      "line": 66,
+      "phrase": "disposition",
+      "definition": "inclination; mood"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss20",
+      "line": 68,
+      "phrase": "an honour",
+      "definition": "a great honor — Lady Capulet's word for marriage"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss21",
+      "line": 77,
+      "phrase": "a man of wax",
+      "definition": "a figure as perfectly moulded as a wax sculpture — flawless"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss22",
+      "line": 79,
+      "phrase": "flower",
+      "definition": "the finest example"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss23",
+      "line": 82,
+      "phrase": "read o’er the volume of young Paris’ face",
+      "definition": "Lady Capulet sustains a conceit of Paris as a book to be read"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss24",
+      "line": 84,
+      "phrase": "married lineament",
+      "definition": "well-matched feature"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss25",
+      "line": 85,
+      "phrase": "one another lends content",
+      "definition": "each feature complements the next"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss26",
+      "line": 88,
+      "phrase": "unbound",
+      "definition": "unbound as a book — also a pun on unmarried"
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_gloss27",
+      "line": 90,
+      "phrase": "fish lives in the sea",
+      "definition": "proverbial — fish naturally belongs in water, as a man in his proper element"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act1_scene3_ann1",
+      "line_start": 14,
+      "line_end": 22,
+      "citation_display": "Romeo and Juliet 1.3.14–22",
+      "category": "historical",
+      "title": "Juliet's age — not yet fourteen",
+      "body": "The play states Juliet's age unmistakably: she is thirteen, two weeks short of fourteen. Modern readers encounter this as disturbing, and the play does not soften it. Three contexts should be held together. First, Elizabethan aristocratic betrothal could occur young — the legal marriage age was twelve for girls, fourteen for boys, though actual marriage typically occurred in the late teens or twenties even among the nobility (Shakespeare's own wife Anne Hathaway was 26 when he married her at 18). Second, Shakespeare changed his source: Arthur Brooke's poem The Tragicall Historye of Romeus and Juliet (1562) makes Juliet sixteen; Shakespeare deliberately lowers her age. Third, the choice is dramatically freighted — Juliet's extreme youth sharpens the tragedy of her agency. She does not merely suffer events; she decides. A thirteen-year-old who insists on marrying, contrives her own fake death, and chooses suicide by her husband's side makes the play's claim about love's sovereignty more radical, not less disturbing.",
+      "sources": [
+        "Arthur Brooke, The Tragicall Historye of Romeus and Juliet (1562)",
+        "Stephen Greenblatt, Will in the World (2004)",
+        "Lawrence Stone, The Family, Sex and Marriage in England 1500-1800 (1977)"
+      ]
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_ann2",
+      "line_start": 24,
+      "line_end": 60,
+      "citation_display": "Romeo and Juliet 1.3.24–60",
+      "category": "linguistic",
+      "title": "The Nurse in prose — comic register among nobles",
+      "body": "Lady Capulet speaks in verse; the Nurse speaks in prose. Her famous weaning-story ('When it did taste the wormwood on the nipple / Of my dug, and felt it bitter') is a class-marker as much as a comic showpiece. The Nurse's earthy physicality — her dead daughter Susan, her dead husband's joke, her specific memory of breast-feeding — gives Juliet the only character in the play who has touched her body with her own. That bond makes the Nurse's betrayal of Juliet in 3.5 the most painful break in Juliet's adolescence, more than her father's rage. Notice how the Nurse's prose resists Lady Capulet's repeated attempts to return to courtly verse: it is class and intimacy reasserting themselves against formality.",
+      "sources": [
+        "Russ McDonald, Shakespeare and the Arts of Language (2001)",
+        "Carol Rutter, Enter the Body (2001)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act1_scene3_q1",
+      "kind": "comprehension",
+      "prompt": "How old is Juliet at the time of the play?",
+      "options": [
+        "Sixteen, as in Shakespeare's source (Brooke's poem)",
+        "Twelve — the legal minimum marriage age in Elizabethan England",
+        "Thirteen — 'not yet fourteen,' with Lammas Eve (July 31) marking her fourteenth birthday two weeks off",
+        "Fifteen"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 20,
+      "anchor_line_start": 14,
+      "anchor_line_end": 22
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_q2",
+      "kind": "inference",
+      "prompt": "Shakespeare changed Juliet's age from sixteen (in his source, Brooke's poem) to thirteen. What is the most likely dramatic effect?",
+      "options": [
+        "It makes the parents' urgency to marry her off seem excessive",
+        "It sharpens the tragedy — her extreme youth heightens both vulnerability and the force of her decisions",
+        "It makes her unable to legally marry",
+        "It reduces her to a passive victim"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 14,
+      "anchor_line_end": 22
+    },
+    {
+      "id": "romeo_and_juliet_act1_scene3_q3",
+      "kind": "close_reading",
+      "prompt": "Why does the Nurse speak in prose while Lady Capulet speaks in verse?",
+      "options": [
+        "It's a random authorial decision",
+        "Prose marks her class and intimacy; verse marks Lady Capulet's formality",
+        "Prose indicates she's uneducated and therefore untrustworthy",
+        "All older women in Shakespeare speak in prose"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 24,
+      "anchor_line_end": 60
+    }
+  ]
+}

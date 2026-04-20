@@ -1,0 +1,1379 @@
+{
+  "section_id": "hamlet_act1_scene1",
+  "work_id": "hamlet",
+  "sequence": 1,
+  "act": 1,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "Elsinore. A platform before the castle",
+  "line_count": 177,
+  "word_count": 1227,
+  "est_read_minutes": 6,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "BERNARDO",
+      "text": "Who’s there?"
+    },
+    {
+      "number": 2,
+      "speaker": "FRANCISCO",
+      "text": "Nay, answer me: stand, and unfold yourself."
+    },
+    {
+      "number": 3,
+      "speaker": "BERNARDO",
+      "text": "Long live the king!"
+    },
+    {
+      "number": 3,
+      "speaker": "FRANCISCO",
+      "text": "Bernardo?"
+    },
+    {
+      "number": 4,
+      "speaker": "BERNARDO",
+      "text": "He."
+    },
+    {
+      "number": 5,
+      "speaker": "FRANCISCO",
+      "text": "You come most carefully upon your hour."
+    },
+    {
+      "number": 6,
+      "speaker": "BERNARDO",
+      "text": "’Tis now struck twelve; get thee to bed, Francisco."
+    },
+    {
+      "number": 7,
+      "speaker": "FRANCISCO",
+      "text": "For this relief much thanks: ’tis bitter cold,"
+    },
+    {
+      "number": 8,
+      "speaker": "FRANCISCO",
+      "text": "And I am sick at heart."
+    },
+    {
+      "number": 8,
+      "speaker": "BERNARDO",
+      "text": "Have you had quiet guard?"
+    },
+    {
+      "number": 9,
+      "speaker": "FRANCISCO",
+      "text": "Not a mouse stirring."
+    },
+    {
+      "number": 9,
+      "speaker": "BERNARDO",
+      "text": "Well, good night."
+    },
+    {
+      "number": 10,
+      "speaker": "BERNARDO",
+      "text": "If you do meet Horatio and Marcellus,"
+    },
+    {
+      "number": 11,
+      "speaker": "BERNARDO",
+      "text": "The rivals of my watch, bid them make haste."
+    },
+    {
+      "number": 12,
+      "speaker": "FRANCISCO",
+      "text": "I think I hear them. Stand, ho! Who’s there?"
+    },
+    {
+      "number": 13,
+      "speaker": "HORATIO",
+      "text": "Friends to this ground."
+    },
+    {
+      "number": 13,
+      "speaker": "MARCELLUS",
+      "text": "And liegemen to the Dane."
+    },
+    {
+      "number": 14,
+      "speaker": "FRANCISCO",
+      "text": "Give you good night."
+    },
+    {
+      "number": 14,
+      "speaker": "MARCELLUS",
+      "text": "O, farewell, honest soldier:"
+    },
+    {
+      "number": 15,
+      "speaker": "MARCELLUS",
+      "text": "Who hath relieved you?"
+    },
+    {
+      "number": 15,
+      "speaker": "FRANCISCO",
+      "text": "Bernardo has my place."
+    },
+    {
+      "number": 16,
+      "speaker": "FRANCISCO",
+      "text": "Give you good night."
+    },
+    {
+      "number": 16,
+      "speaker": "MARCELLUS",
+      "text": "Holla! Bernardo!"
+    },
+    {
+      "number": 17,
+      "speaker": "BERNARDO",
+      "text": "Say,"
+    },
+    {
+      "number": 18,
+      "speaker": "BERNARDO",
+      "text": "What, is Horatio there?"
+    },
+    {
+      "number": 18,
+      "speaker": "HORATIO",
+      "text": "A piece of him."
+    },
+    {
+      "number": 19,
+      "speaker": "BERNARDO",
+      "text": "Welcome, Horatio: welcome, good Marcellus."
+    },
+    {
+      "number": 20,
+      "speaker": "MARCELLUS",
+      "text": "What, has this thing appear’d again to-night?"
+    },
+    {
+      "number": 21,
+      "speaker": "BERNARDO",
+      "text": "I have seen nothing."
+    },
+    {
+      "number": 21,
+      "speaker": "MARCELLUS",
+      "text": "Horatio says ’tis but our fantasy,"
+    },
+    {
+      "number": 22,
+      "speaker": "MARCELLUS",
+      "text": "And will not let belief take hold of him"
+    },
+    {
+      "number": 23,
+      "speaker": "MARCELLUS",
+      "text": "Touching this dreaded sight, twice seen of us:"
+    },
+    {
+      "number": 24,
+      "speaker": "MARCELLUS",
+      "text": "Therefore I have entreated him along"
+    },
+    {
+      "number": 25,
+      "speaker": "MARCELLUS",
+      "text": "With us to watch the minutes of this night;"
+    },
+    {
+      "number": 26,
+      "speaker": "MARCELLUS",
+      "text": "That if again this apparition come,"
+    },
+    {
+      "number": 27,
+      "speaker": "MARCELLUS",
+      "text": "He may approve our eyes and speak to it."
+    },
+    {
+      "number": 28,
+      "speaker": "HORATIO",
+      "text": "Tush, tush, ’twill not appear."
+    },
+    {
+      "number": 28,
+      "speaker": "BERNARDO",
+      "text": "Sit down awhile;"
+    },
+    {
+      "number": 29,
+      "speaker": "BERNARDO",
+      "text": "And let us once again assail your ears,"
+    },
+    {
+      "number": 30,
+      "speaker": "BERNARDO",
+      "text": "That are so fortified against our story"
+    },
+    {
+      "number": 31,
+      "speaker": "BERNARDO",
+      "text": "What we have two nights seen."
+    },
+    {
+      "number": 31,
+      "speaker": "HORATIO",
+      "text": "Well, sit we down,"
+    },
+    {
+      "number": 32,
+      "speaker": "HORATIO",
+      "text": "And let us hear Bernardo speak of this."
+    },
+    {
+      "number": 33,
+      "speaker": "BERNARDO",
+      "text": "Last night of all,"
+    },
+    {
+      "number": 34,
+      "speaker": "BERNARDO",
+      "text": "When yond same star that’s westward from the pole"
+    },
+    {
+      "number": 35,
+      "speaker": "BERNARDO",
+      "text": "Had made his course to illume that part of heaven"
+    },
+    {
+      "number": 36,
+      "speaker": "BERNARDO",
+      "text": "Where now it burns, Marcellus and myself,"
+    },
+    {
+      "number": 37,
+      "speaker": "BERNARDO",
+      "text": "The bell then beating one—"
+    },
+    {
+      "number": 38,
+      "speaker": "MARCELLUS",
+      "text": "Peace, break thee off; look, where it comes again!"
+    },
+    {
+      "number": 39,
+      "speaker": "BERNARDO",
+      "text": "In the same figure, like the king that’s dead."
+    },
+    {
+      "number": 40,
+      "speaker": "MARCELLUS",
+      "text": "Thou art a scholar; speak to it, Horatio."
+    },
+    {
+      "number": 41,
+      "speaker": "BERNARDO",
+      "text": "Looks it not like the king? mark it, Horatio."
+    },
+    {
+      "number": 42,
+      "speaker": "HORATIO",
+      "text": "Most like: it harrows me with fear and wonder."
+    },
+    {
+      "number": 43,
+      "speaker": "BERNARDO",
+      "text": "It would be spoke to."
+    },
+    {
+      "number": 43,
+      "speaker": "MARCELLUS",
+      "text": "Question it, Horatio."
+    },
+    {
+      "number": 44,
+      "speaker": "HORATIO",
+      "text": "What art thou that usurp’st this time of night,"
+    },
+    {
+      "number": 45,
+      "speaker": "HORATIO",
+      "text": "Together with that fair and warlike form"
+    },
+    {
+      "number": 46,
+      "speaker": "HORATIO",
+      "text": "In which the majesty of buried Denmark"
+    },
+    {
+      "number": 47,
+      "speaker": "HORATIO",
+      "text": "Did sometimes march? by heaven I charge thee, speak!"
+    },
+    {
+      "number": 48,
+      "speaker": "MARCELLUS",
+      "text": "It is offended."
+    },
+    {
+      "number": 48,
+      "speaker": "BERNARDO",
+      "text": "See, it stalks away!"
+    },
+    {
+      "number": 49,
+      "speaker": "HORATIO",
+      "text": "Stay! speak, speak! I charge thee, speak!"
+    },
+    {
+      "number": 50,
+      "speaker": "MARCELLUS",
+      "text": "’Tis gone, and will not answer."
+    },
+    {
+      "number": 51,
+      "speaker": "BERNARDO",
+      "text": "How now, Horatio! you tremble and look pale:"
+    },
+    {
+      "number": 52,
+      "speaker": "BERNARDO",
+      "text": "Is not this something more than fantasy?"
+    },
+    {
+      "number": 53,
+      "speaker": "BERNARDO",
+      "text": "What think you on’t?"
+    },
+    {
+      "number": 54,
+      "speaker": "HORATIO",
+      "text": "Before my God, I might not this believe"
+    },
+    {
+      "number": 55,
+      "speaker": "HORATIO",
+      "text": "Without the sensible and true avouch"
+    },
+    {
+      "number": 56,
+      "speaker": "HORATIO",
+      "text": "Of mine own eyes."
+    },
+    {
+      "number": 56,
+      "speaker": "MARCELLUS",
+      "text": "Is it not like the king?"
+    },
+    {
+      "number": 57,
+      "speaker": "HORATIO",
+      "text": "As thou art to thyself:"
+    },
+    {
+      "number": 58,
+      "speaker": "HORATIO",
+      "text": "Such was the very armour he had on"
+    },
+    {
+      "number": 59,
+      "speaker": "HORATIO",
+      "text": "When he the ambitious Norway combated;"
+    },
+    {
+      "number": 60,
+      "speaker": "HORATIO",
+      "text": "So frown’d he once, when, in an angry parle,"
+    },
+    {
+      "number": 61,
+      "speaker": "HORATIO",
+      "text": "He smote the sledded Polacks on the ice."
+    },
+    {
+      "number": 62,
+      "speaker": "HORATIO",
+      "text": "’Tis strange."
+    },
+    {
+      "number": 63,
+      "speaker": "MARCELLUS",
+      "text": "Thus twice before, and jump at this dead hour,"
+    },
+    {
+      "number": 64,
+      "speaker": "MARCELLUS",
+      "text": "With martial stalk hath he gone by our watch."
+    },
+    {
+      "number": 65,
+      "speaker": "HORATIO",
+      "text": "In what particular thought to work I know not;"
+    },
+    {
+      "number": 66,
+      "speaker": "HORATIO",
+      "text": "But in the gross and scope of my opinion,"
+    },
+    {
+      "number": 67,
+      "speaker": "HORATIO",
+      "text": "This bodes some strange eruption to our state."
+    },
+    {
+      "number": 68,
+      "speaker": "MARCELLUS",
+      "text": "Good now, sit down, and tell me, he that knows,"
+    },
+    {
+      "number": 69,
+      "speaker": "MARCELLUS",
+      "text": "Why this same strict and most observant watch"
+    },
+    {
+      "number": 70,
+      "speaker": "MARCELLUS",
+      "text": "So nightly toils the subject of the land,"
+    },
+    {
+      "number": 71,
+      "speaker": "MARCELLUS",
+      "text": "And why such daily cast of brazen cannon,"
+    },
+    {
+      "number": 72,
+      "speaker": "MARCELLUS",
+      "text": "And foreign mart for implements of war;"
+    },
+    {
+      "number": 73,
+      "speaker": "MARCELLUS",
+      "text": "Why such impress of shipwrights, whose sore task"
+    },
+    {
+      "number": 74,
+      "speaker": "MARCELLUS",
+      "text": "Does not divide the Sunday from the week;"
+    },
+    {
+      "number": 75,
+      "speaker": "MARCELLUS",
+      "text": "What might be toward, that this sweaty haste"
+    },
+    {
+      "number": 76,
+      "speaker": "MARCELLUS",
+      "text": "Doth make the night joint-labourer with the day:"
+    },
+    {
+      "number": 77,
+      "speaker": "MARCELLUS",
+      "text": "Who is’t that can inform me?"
+    },
+    {
+      "number": 77,
+      "speaker": "HORATIO",
+      "text": "That can I;"
+    },
+    {
+      "number": 78,
+      "speaker": "HORATIO",
+      "text": "At least, the whisper goes so. Our last king,"
+    },
+    {
+      "number": 79,
+      "speaker": "HORATIO",
+      "text": "Whose image even but now appear’d to us,"
+    },
+    {
+      "number": 80,
+      "speaker": "HORATIO",
+      "text": "Was, as you know, by Fortinbras of Norway,"
+    },
+    {
+      "number": 81,
+      "speaker": "HORATIO",
+      "text": "Thereto prick’d on by a most emulate pride,"
+    },
+    {
+      "number": 82,
+      "speaker": "HORATIO",
+      "text": "Dared to the combat; in which our valiant Hamlet—"
+    },
+    {
+      "number": 83,
+      "speaker": "HORATIO",
+      "text": "For so this side of our known world esteem’d him—"
+    },
+    {
+      "number": 84,
+      "speaker": "HORATIO",
+      "text": "Did slay this Fortinbras; who, by a seal’d compact,"
+    },
+    {
+      "number": 85,
+      "speaker": "HORATIO",
+      "text": "Well ratified by law and heraldry,"
+    },
+    {
+      "number": 86,
+      "speaker": "HORATIO",
+      "text": "Did forfeit, with his life, all those his lands"
+    },
+    {
+      "number": 87,
+      "speaker": "HORATIO",
+      "text": "Which he stood seized of, to the conqueror:"
+    },
+    {
+      "number": 88,
+      "speaker": "HORATIO",
+      "text": "Against the which, a moiety competent"
+    },
+    {
+      "number": 89,
+      "speaker": "HORATIO",
+      "text": "Was gaged by our king; which had return’d"
+    },
+    {
+      "number": 90,
+      "speaker": "HORATIO",
+      "text": "To the inheritance of Fortinbras,"
+    },
+    {
+      "number": 91,
+      "speaker": "HORATIO",
+      "text": "Had he been vanquisher; as, by the same covenant,"
+    },
+    {
+      "number": 92,
+      "speaker": "HORATIO",
+      "text": "And carriage of the article design’d,"
+    },
+    {
+      "number": 93,
+      "speaker": "HORATIO",
+      "text": "His fell to Hamlet. Now, sir, young Fortinbras,"
+    },
+    {
+      "number": 94,
+      "speaker": "HORATIO",
+      "text": "Of unimproved mettle hot and full,"
+    },
+    {
+      "number": 95,
+      "speaker": "HORATIO",
+      "text": "Hath in the skirts of Norway here and there"
+    },
+    {
+      "number": 96,
+      "speaker": "HORATIO",
+      "text": "Shark’d up a list of lawless resolutes,"
+    },
+    {
+      "number": 97,
+      "speaker": "HORATIO",
+      "text": "For food and diet, to some enterprise"
+    },
+    {
+      "number": 98,
+      "speaker": "HORATIO",
+      "text": "That hath a stomach in’t; which is no other—"
+    },
+    {
+      "number": 99,
+      "speaker": "HORATIO",
+      "text": "As it doth well appear unto our state—"
+    },
+    {
+      "number": 100,
+      "speaker": "HORATIO",
+      "text": "But to recover of us, by strong hand"
+    },
+    {
+      "number": 101,
+      "speaker": "HORATIO",
+      "text": "And terms compulsatory, those foresaid lands"
+    },
+    {
+      "number": 102,
+      "speaker": "HORATIO",
+      "text": "So by his father lost: and this, I take it,"
+    },
+    {
+      "number": 103,
+      "speaker": "HORATIO",
+      "text": "Is the main motive of our preparations,"
+    },
+    {
+      "number": 104,
+      "speaker": "HORATIO",
+      "text": "The source of this our watch and the chief head"
+    },
+    {
+      "number": 105,
+      "speaker": "HORATIO",
+      "text": "Of this post-haste and romage in the land."
+    },
+    {
+      "number": 106,
+      "speaker": "BERNARDO",
+      "text": "I think it be no other but e’en so:"
+    },
+    {
+      "number": 107,
+      "speaker": "BERNARDO",
+      "text": "Well may it sort that this portentous figure"
+    },
+    {
+      "number": 108,
+      "speaker": "BERNARDO",
+      "text": "Comes armed through our watch; so like the king"
+    },
+    {
+      "number": 109,
+      "speaker": "BERNARDO",
+      "text": "That was and is the question of these wars."
+    },
+    {
+      "number": 110,
+      "speaker": "HORATIO",
+      "text": "A mote it is to trouble the mind’s eye."
+    },
+    {
+      "number": 111,
+      "speaker": "HORATIO",
+      "text": "In the most high and palmy state of Rome,"
+    },
+    {
+      "number": 112,
+      "speaker": "HORATIO",
+      "text": "A little ere the mightiest Julius fell,"
+    },
+    {
+      "number": 113,
+      "speaker": "HORATIO",
+      "text": "The graves stood tenantless and the sheeted dead"
+    },
+    {
+      "number": 114,
+      "speaker": "HORATIO",
+      "text": "Did squeak and gibber in the Roman streets:"
+    },
+    {
+      "number": 115,
+      "speaker": "HORATIO",
+      "text": "As stars with trains of fire and dews of blood,"
+    },
+    {
+      "number": 116,
+      "speaker": "HORATIO",
+      "text": "Disasters in the sun; and the moist star"
+    },
+    {
+      "number": 117,
+      "speaker": "HORATIO",
+      "text": "Upon whose influence Neptune’s empire stands"
+    },
+    {
+      "number": 118,
+      "speaker": "HORATIO",
+      "text": "Was sick almost to doomsday with eclipse:"
+    },
+    {
+      "number": 119,
+      "speaker": "HORATIO",
+      "text": "And even the like precurse of fierce events,"
+    },
+    {
+      "number": 120,
+      "speaker": "HORATIO",
+      "text": "As harbingers preceding still the fates"
+    },
+    {
+      "number": 121,
+      "speaker": "HORATIO",
+      "text": "And prologue to the omen coming on,"
+    },
+    {
+      "number": 122,
+      "speaker": "HORATIO",
+      "text": "Have heaven and earth together demonstrated"
+    },
+    {
+      "number": 123,
+      "speaker": "HORATIO",
+      "text": "Unto our climatures and countrymen.—"
+    },
+    {
+      "number": 124,
+      "speaker": "HORATIO",
+      "text": "But soft, behold! lo, where it comes again!"
+    },
+    {
+      "number": 125,
+      "speaker": "MARCELLUS",
+      "text": "Shall I strike at it with my partisan?"
+    },
+    {
+      "number": 126,
+      "speaker": "HORATIO",
+      "text": "Do, if it will not stand."
+    },
+    {
+      "number": 126,
+      "speaker": "BERNARDO",
+      "text": "’Tis here!"
+    },
+    {
+      "number": 127,
+      "speaker": "HORATIO",
+      "text": "’Tis here!"
+    },
+    {
+      "number": 127,
+      "speaker": "MARCELLUS",
+      "text": "’Tis gone!"
+    },
+    {
+      "number": 128,
+      "speaker": "MARCELLUS",
+      "text": "We do it wrong, being so majestical,"
+    },
+    {
+      "number": 129,
+      "speaker": "MARCELLUS",
+      "text": "To offer it the show of violence;"
+    },
+    {
+      "number": 130,
+      "speaker": "MARCELLUS",
+      "text": "For it is, as the air, invulnerable,"
+    },
+    {
+      "number": 131,
+      "speaker": "MARCELLUS",
+      "text": "And our vain blows malicious mockery."
+    },
+    {
+      "number": 132,
+      "speaker": "BERNARDO",
+      "text": "It was about to speak, when the cock crew."
+    },
+    {
+      "number": 133,
+      "speaker": "HORATIO",
+      "text": "And then it started like a guilty thing"
+    },
+    {
+      "number": 134,
+      "speaker": "HORATIO",
+      "text": "Upon a fearful summons. I have heard,"
+    },
+    {
+      "number": 135,
+      "speaker": "HORATIO",
+      "text": "The cock, that is the trumpet to the morn,"
+    },
+    {
+      "number": 136,
+      "speaker": "HORATIO",
+      "text": "Doth with his lofty and shrill-sounding throat"
+    },
+    {
+      "number": 137,
+      "speaker": "HORATIO",
+      "text": "Awake the god of day; and, at his warning,"
+    },
+    {
+      "number": 138,
+      "speaker": "HORATIO",
+      "text": "Whether in sea or fire, in earth or air,"
+    },
+    {
+      "number": 139,
+      "speaker": "HORATIO",
+      "text": "The extravagant and erring spirit hies"
+    },
+    {
+      "number": 140,
+      "speaker": "HORATIO",
+      "text": "To his confine: and of the truth herein"
+    },
+    {
+      "number": 141,
+      "speaker": "HORATIO",
+      "text": "This present object made probation."
+    },
+    {
+      "number": 142,
+      "speaker": "MARCELLUS",
+      "text": "It faded on the crowing of the cock."
+    },
+    {
+      "number": 143,
+      "speaker": "MARCELLUS",
+      "text": "Some say that ever ’gainst that season comes"
+    },
+    {
+      "number": 144,
+      "speaker": "MARCELLUS",
+      "text": "Wherein our Saviour’s birth is celebrated,"
+    },
+    {
+      "number": 145,
+      "speaker": "MARCELLUS",
+      "text": "The bird of dawning singeth all night long:"
+    },
+    {
+      "number": 146,
+      "speaker": "MARCELLUS",
+      "text": "And then, they say, no spirit dare stir abroad;"
+    },
+    {
+      "number": 147,
+      "speaker": "MARCELLUS",
+      "text": "The nights are wholesome; then no planets strike,"
+    },
+    {
+      "number": 148,
+      "speaker": "MARCELLUS",
+      "text": "No fairy takes, nor witch hath power to charm,"
+    },
+    {
+      "number": 149,
+      "speaker": "MARCELLUS",
+      "text": "So hallow’d and so gracious is the time."
+    },
+    {
+      "number": 150,
+      "speaker": "HORATIO",
+      "text": "So have I heard and do in part believe it."
+    },
+    {
+      "number": 151,
+      "speaker": "HORATIO",
+      "text": "But, look, the morn, in russet mantle clad,"
+    },
+    {
+      "number": 152,
+      "speaker": "HORATIO",
+      "text": "Walks o’er the dew of yon high eastward hill:"
+    },
+    {
+      "number": 153,
+      "speaker": "HORATIO",
+      "text": "Break we our watch up; and by my advice,"
+    },
+    {
+      "number": 154,
+      "speaker": "HORATIO",
+      "text": "Let us impart what we have seen to-night"
+    },
+    {
+      "number": 155,
+      "speaker": "HORATIO",
+      "text": "Unto young Hamlet; for, upon my life,"
+    },
+    {
+      "number": 156,
+      "speaker": "HORATIO",
+      "text": "This spirit, dumb to us, will speak to him."
+    },
+    {
+      "number": 157,
+      "speaker": "HORATIO",
+      "text": "Do you consent we shall acquaint him with it,"
+    },
+    {
+      "number": 158,
+      "speaker": "HORATIO",
+      "text": "As needful in our loves, fitting our duty?"
+    },
+    {
+      "number": 159,
+      "speaker": "MARCELLUS",
+      "text": "Let’s do’t, I pray; and I this morning know"
+    },
+    {
+      "number": 160,
+      "speaker": "MARCELLUS",
+      "text": "Where we shall find him most conveniently."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Francisco at his post. Enter to him Bernardo."
+    },
+    {
+      "after_line": 12,
+      "text": "Enter Horatio and Marcellus."
+    },
+    {
+      "after_line": 16,
+      "text": "Exit."
+    },
+    {
+      "after_line": 37,
+      "text": "Enter Ghost."
+    },
+    {
+      "after_line": 49,
+      "text": "Exit Ghost."
+    },
+    {
+      "after_line": 124,
+      "text": "Reenter Ghost."
+    },
+    {
+      "after_line": 124,
+      "text": "I’ll cross it, though it blast me. Stay, illusion! If thou hast any sound, or use of voice, Speak to me: If there be any good thing to be done, That may to thee do ease and grace to me, Speak to me: Cock crows. If thou art privy to thy country’s fate, Which, happily, foreknowing may avoid, O, speak! Or if thou hast uphoarded in thy life Extorted treasure in the womb of earth, For which, they say, you spirits oft walk in death, Speak of it: stay, and speak! Stop it, Marcellus."
+    },
+    {
+      "after_line": 127,
+      "text": "Exit Ghost."
+    },
+    {
+      "after_line": 160,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "hamlet_act1_scene1_gloss1",
+      "line": 2,
+      "phrase": "unfold yourself",
+      "definition": "reveal your identity"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss2",
+      "line": 11,
+      "phrase": "rivals of my watch",
+      "definition": "partners sharing my watch-duty"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss3",
+      "line": 13,
+      "phrase": "liegemen to the Dane",
+      "definition": "loyal subjects to the King of Denmark"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss4",
+      "line": 20,
+      "phrase": "this thing",
+      "definition": "the ghost (a cautious, non-committal phrase)"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss5",
+      "line": 21,
+      "phrase": "fantasy",
+      "definition": "imagination; delusion"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss6",
+      "line": 23,
+      "phrase": "dreaded sight",
+      "definition": "feared apparition"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss7",
+      "line": 27,
+      "phrase": "approve our eyes",
+      "definition": "confirm what our eyes have seen"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss8",
+      "line": 27,
+      "phrase": "speak to it",
+      "definition": "address the ghost (necessary to learn its purpose)"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss9",
+      "line": 29,
+      "phrase": "assail your ears",
+      "definition": "attack (surprise) your ears with our tale"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss10",
+      "line": 30,
+      "phrase": "fortified",
+      "definition": "guarded; made resistant"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss11",
+      "line": 34,
+      "phrase": "yond same star",
+      "definition": "that same star over there"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss12",
+      "line": 40,
+      "phrase": "thou art a scholar",
+      "definition": "you are educated (scholars knew Latin, the tongue for addressing spirits)"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss13",
+      "line": 40,
+      "phrase": "speak to it, Horatio",
+      "definition": "address the ghost (Horatio's Latin learning makes him fit)"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss14",
+      "line": 42,
+      "phrase": "harrows me with fear",
+      "definition": "agitates me deeply; rends me"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss15",
+      "line": 44,
+      "phrase": "usurp’st this time of night",
+      "definition": "wrongfully take over the night hours"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss16",
+      "line": 45,
+      "phrase": "fair and warlike form",
+      "definition": "noble and martial appearance"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss17",
+      "line": 46,
+      "phrase": "majesty of buried Denmark",
+      "definition": "the royal Denmark (King Hamlet) who is buried"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss18",
+      "line": 47,
+      "phrase": "march",
+      "definition": "walk with military stride"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss19",
+      "line": 49,
+      "phrase": "charge thee",
+      "definition": "command you"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss20",
+      "line": 55,
+      "phrase": "sensible and true avouch",
+      "definition": "sense-evidence and true testimony"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss21",
+      "line": 61,
+      "phrase": "smote the sledded Polacks",
+      "definition": "struck the Poles on their sleds (a past victory)"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss22",
+      "line": 63,
+      "phrase": "jump at this dead hour",
+      "definition": "precisely at this ghostly time"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss23",
+      "line": 64,
+      "phrase": "martial stalk",
+      "definition": "soldierly stride"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss24",
+      "line": 66,
+      "phrase": "gross and scope",
+      "definition": "general sense and range"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss25",
+      "line": 67,
+      "phrase": "bodes",
+      "definition": "portends; forewarns"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss26",
+      "line": 67,
+      "phrase": "eruption",
+      "definition": "violent upheaval"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss27",
+      "line": 70,
+      "phrase": "toils the subject",
+      "definition": "makes the subjects (common people) labor"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss28",
+      "line": 71,
+      "phrase": "cast of brazen cannon",
+      "definition": "casting of bronze cannon"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss29",
+      "line": 72,
+      "phrase": "foreign mart for implements of war",
+      "definition": "overseas market for weapons"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss30",
+      "line": 73,
+      "phrase": "impress of shipwrights",
+      "definition": "conscription of shipbuilders"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss31",
+      "line": 78,
+      "phrase": "whisper goes so",
+      "definition": "the rumor goes like this"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss32",
+      "line": 81,
+      "phrase": "emulate pride",
+      "definition": "competitive ambition"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss33",
+      "line": 84,
+      "phrase": "seal’d compact",
+      "definition": "formally sealed agreement"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss34",
+      "line": 85,
+      "phrase": "heraldry",
+      "definition": "law of arms; chivalric code"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss35",
+      "line": 88,
+      "phrase": "moiety competent",
+      "definition": "adequate portion of lands"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss36",
+      "line": 94,
+      "phrase": "unimproved mettle",
+      "definition": "raw, untested courage"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss37",
+      "line": 96,
+      "phrase": "Shark’d up",
+      "definition": "gathered up rapaciously (like a shark feeds)"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss38",
+      "line": 96,
+      "phrase": "list of lawless resolutes",
+      "definition": "band of desperate, reckless men"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss39",
+      "line": 98,
+      "phrase": "stomach",
+      "definition": "courage; appetite for danger"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss40",
+      "line": 111,
+      "phrase": "palmy state of Rome",
+      "definition": "flourishing days of ancient Rome"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss41",
+      "line": 112,
+      "phrase": "mightiest Julius",
+      "definition": "Julius Caesar"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss42",
+      "line": 113,
+      "phrase": "sheeted dead",
+      "definition": "dead wrapped in their winding-sheets"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss43",
+      "line": 114,
+      "phrase": "squeak and gibber",
+      "definition": "make high-pitched, unintelligible noises"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss44",
+      "line": 115,
+      "phrase": "stars with trains of fire",
+      "definition": "comets"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss45",
+      "line": 116,
+      "phrase": "disasters in the sun",
+      "definition": "sunspots or eclipses (thought ominous)"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss46",
+      "line": 116,
+      "phrase": "moist star",
+      "definition": "the moon (ruler of tides)"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss47",
+      "line": 117,
+      "phrase": "Neptune’s empire stands",
+      "definition": "the realm of the sea-god (the oceans)"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss48",
+      "line": 118,
+      "phrase": "sick almost to doomsday with eclipse",
+      "definition": "darkened as if the Last Judgment were coming"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss49",
+      "line": 119,
+      "phrase": "precurse of fierce events",
+      "definition": "forerunner of violent happenings"
+    },
+    {
+      "id": "hamlet_act1_scene1_gloss50",
+      "line": 123,
+      "phrase": "climatures and countrymen",
+      "definition": "regions and their people"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "hamlet_act1_scene1_ann1",
+      "line_start": 1,
+      "line_end": 12,
+      "citation_display": "Hamlet 1.1.1–12",
+      "category": "structural",
+      "title": "The exchange that opens a tragedy",
+      "body": "Shakespeare begins not with a king or a murder but with two frightened sentries challenging each other in the dark. The first line — 'Who's there?' — is the question the entire play will ask of ghosts, of fathers, of the self. Critics since Maynard Mack have noted that Hamlet is built on a structure of interrogation: every major scene poses a question and refuses an easy answer. The sentries' midnight, bitter-cold, and 'sick at heart' place us immediately in a world where something has gone wrong before the play began. This is the formal opposite of Shakespeare's comedies, which typically begin at court in daylight with a stated problem to be solved.",
+      "sources": [
+        "Maynard Mack, 'The World of Hamlet' (1952)"
+      ]
+    },
+    {
+      "id": "hamlet_act1_scene1_ann2",
+      "line_start": 37,
+      "line_end": 70,
+      "citation_display": "Hamlet 1.1.37–70",
+      "category": "historical",
+      "title": "Armed ghosts and Elizabethan belief",
+      "body": "Horatio is called to speak to the ghost because he is 'a scholar' — in Elizabethan belief, Latin was the language that bound or banished spirits, and only educated men knew it. The ghost appears in full armor, 'cap-a-pe,' which was the convention of revenant kings: the armor that killed the rival Fortinbras is the armor the ghost wears. The Protestant reforms had officially abolished purgatory, and with it the theological place from which a ghost could lawfully return. Belief persisted, however, and Elizabethan accounts distinguished between holy spirits (truthful), damned goblins (lying), and hallucinations (worthless). The question 'Is thy soul damned?' will organize the first three acts.",
+      "sources": [
+        "Stephen Greenblatt, Hamlet in Purgatory (2001)",
+        "Keith Thomas, Religion and the Decline of Magic (1971)"
+      ]
+    },
+    {
+      "id": "hamlet_act1_scene1_ann3",
+      "line_start": 79,
+      "line_end": 107,
+      "citation_display": "Hamlet 1.1.79–107",
+      "category": "historical",
+      "title": "The political backstory and Fortinbras",
+      "body": "Horatio's long speech establishes the political frame: old Hamlet once killed old Fortinbras in single combat over territory, gaining lands for Denmark; now young Fortinbras is mustering an army to reclaim them. The audience will not meet Fortinbras until Act 4, but he shadows every scene — the son who acts decisively to avenge his father, against whom Hamlet is implicitly measured. The 'seal'd compact, well ratified by law and heraldry' signals that Shakespeare's Denmark observes chivalric rules; Claudius's later murder by poison is thus doubly monstrous, not just fratricide but a violation of the code that gave his predecessor his crown.",
+      "sources": [
+        "Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"
+      ]
+    },
+    {
+      "id": "hamlet_act1_scene1_ann4",
+      "line_start": 108,
+      "line_end": 125,
+      "citation_display": "Hamlet 1.1.108–125",
+      "category": "thematic",
+      "title": "The Roman auspices and a world out of joint",
+      "body": "Horatio invokes the portents before Julius Caesar's assassination — graves opening, comets, the moon eclipsed — to suggest that the ghost is such a warning for Denmark. The comparison is precise: both kings were killed by men close to them; both murders ushered in civil catastrophe; both produced sons who delayed their revenge. Shakespeare had staged Julius Caesar the year before Hamlet (1599), and audiences would hear the echo. The image of the dead returning as omens of political collapse sits at the heart of both plays: private crimes become public signs, and the state begins to hemorrhage meaning.",
+      "sources": [
+        "Jonathan Bate, Soul of the Age (2008)"
+      ]
+    },
+    {
+      "id": "hamlet_act1_scene1_ann5",
+      "line_start": 158,
+      "line_end": 165,
+      "citation_display": "Hamlet 1.1.158–165",
+      "category": "historical",
+      "title": "The 'season wherein our Saviour's birth is celebrated'",
+      "body": "Marcellus's lines about Christmas driving away spirits preserve a pre-Reformation folk belief that Shakespeare's audience still half-held. The speech's beauty — 'no spirit dare stir abroad' — is also its theological retreat: Horatio replies 'in part I do believe it,' registering the Protestant intellectual's partial dissent. Shakespeare places this devotional lyric just before daybreak, allowing the scene's dread to thin into tenderness. The tonal shift prepares the audience for Hamlet's more skeptical voice in the following scene, and for the play's unresolved tension between a Catholic cosmology that gives the ghost meaning and a Protestant one that would deny it.",
+      "sources": [
+        "Stephen Greenblatt, Will in the World (2004)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "hamlet_act1_scene1_q1",
+      "kind": "comprehension",
+      "prompt": "What do Bernardo and Marcellus want Horatio to witness?",
+      "options": [
+        "A military review of the night watch.",
+        "An apparition that has appeared to them on two previous nights.",
+        "The new king's first royal proclamation.",
+        "A strange comet passing over Elsinore."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 22,
+      "anchor_line_end": 35
+    },
+    {
+      "id": "hamlet_act1_scene1_q2",
+      "kind": "inference",
+      "prompt": "Why do the sentries want Horatio specifically to address the ghost?",
+      "options": [
+        "He is the King's personal secretary and has royal authority.",
+        "As a scholar, he knows the Latin needed to address spirits properly.",
+        "He is Hamlet's closest friend and the ghost will speak only to him.",
+        "He has seen ghosts before and knows how to drive them off."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 40,
+      "anchor_line_end": 42
+    },
+    {
+      "id": "hamlet_act1_scene1_q3",
+      "kind": "comprehension",
+      "prompt": "What does Horatio recount to explain why Denmark is arming for war?",
+      "options": [
+        "Claudius has declared a war of succession against Norway.",
+        "Young Fortinbras is assembling men to reclaim lands his father lost to King Hamlet.",
+        "A Polish invasion is expected before spring.",
+        "The English king has refused to pay his long-standing tribute."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 79,
+      "anchor_line_end": 107
+    },
+    {
+      "id": "hamlet_act1_scene1_q4",
+      "kind": "theme",
+      "prompt": "What function do Horatio's references to 'the mightiest Julius' and the omens before his assassination serve?",
+      "options": [
+        "They establish Hamlet's Roman education.",
+        "They signal that the ghost is a political warning of coming catastrophe.",
+        "They suggest Horatio is a superstitious man whom we should not trust.",
+        "They foreshadow Hamlet's own death by stabbing."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 108,
+      "anchor_line_end": 120
+    },
+    {
+      "id": "hamlet_act1_scene1_q5",
+      "kind": "close_reading",
+      "prompt": "Why does Marcellus describe the Christmas season as a time when 'no spirit dare stir abroad'?",
+      "options": [
+        "It is a reference to the cold weather driving ghosts indoors.",
+        "He invokes a folk belief that the holiness of Christmas banishes wandering spirits.",
+        "He is quoting a Latin liturgy for the feast of the Nativity.",
+        "He is reassuring Horatio that the ghost cannot harm them in December."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 158,
+      "anchor_line_end": 165
+    }
+  ]
+}

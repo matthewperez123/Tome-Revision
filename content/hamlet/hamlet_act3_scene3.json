@@ -1,0 +1,885 @@
+{
+  "section_id": "hamlet_act3_scene3",
+  "work_id": "hamlet",
+  "sequence": 10,
+  "act": 3,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "A room in the castle",
+  "line_count": 101,
+  "word_count": 786,
+  "est_read_minutes": 4,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KING",
+      "text": "I like him not, nor stands it safe with us"
+    },
+    {
+      "number": 2,
+      "speaker": "KING",
+      "text": "To let his madness range. Therefore prepare you;"
+    },
+    {
+      "number": 3,
+      "speaker": "KING",
+      "text": "I your commission will forthwith dispatch,"
+    },
+    {
+      "number": 4,
+      "speaker": "KING",
+      "text": "And he to England shall along with you:"
+    },
+    {
+      "number": 5,
+      "speaker": "KING",
+      "text": "The terms of our estate may not endure"
+    },
+    {
+      "number": 6,
+      "speaker": "KING",
+      "text": "Hazard so dangerous as doth hourly grow"
+    },
+    {
+      "number": 7,
+      "speaker": "KING",
+      "text": "Out of his lunacies."
+    },
+    {
+      "number": 7,
+      "speaker": "GUILDENSTERN",
+      "text": "We will ourselves provide:"
+    },
+    {
+      "number": 8,
+      "speaker": "GUILDENSTERN",
+      "text": "Most holy and religious fear it is"
+    },
+    {
+      "number": 9,
+      "speaker": "GUILDENSTERN",
+      "text": "To keep those many many bodies safe"
+    },
+    {
+      "number": 10,
+      "speaker": "GUILDENSTERN",
+      "text": "That live and feed upon your majesty."
+    },
+    {
+      "number": 11,
+      "speaker": "ROSENCRANTZ",
+      "text": "The single and peculiar life is bound,"
+    },
+    {
+      "number": 12,
+      "speaker": "ROSENCRANTZ",
+      "text": "With all the strength and armour of the mind,"
+    },
+    {
+      "number": 13,
+      "speaker": "ROSENCRANTZ",
+      "text": "To keep itself from noyance; but much more"
+    },
+    {
+      "number": 14,
+      "speaker": "ROSENCRANTZ",
+      "text": "That spirit upon whose weal depend and rest"
+    },
+    {
+      "number": 15,
+      "speaker": "ROSENCRANTZ",
+      "text": "The lives of many. The cease of majesty"
+    },
+    {
+      "number": 16,
+      "speaker": "ROSENCRANTZ",
+      "text": "Dies not alone; but, like a gulf, doth draw"
+    },
+    {
+      "number": 17,
+      "speaker": "ROSENCRANTZ",
+      "text": "What’s near it with it: it is a massy wheel,"
+    },
+    {
+      "number": 18,
+      "speaker": "ROSENCRANTZ",
+      "text": "Fix’d on the summit of the highest mount,"
+    },
+    {
+      "number": 19,
+      "speaker": "ROSENCRANTZ",
+      "text": "To whose huge spokes ten thousand lesser things"
+    },
+    {
+      "number": 20,
+      "speaker": "ROSENCRANTZ",
+      "text": "Are mortised and adjoin’d; which, when it falls,"
+    },
+    {
+      "number": 21,
+      "speaker": "ROSENCRANTZ",
+      "text": "Each small annexment, petty consequence,"
+    },
+    {
+      "number": 22,
+      "speaker": "ROSENCRANTZ",
+      "text": "Attends the boisterous ruin. Never alone"
+    },
+    {
+      "number": 23,
+      "speaker": "ROSENCRANTZ",
+      "text": "Did the king sigh, but with a general groan."
+    },
+    {
+      "number": 24,
+      "speaker": "KING",
+      "text": "Arm you, I pray you, to this speedy voyage;"
+    },
+    {
+      "number": 25,
+      "speaker": "KING",
+      "text": "For we will fetters put upon this fear,"
+    },
+    {
+      "number": 26,
+      "speaker": "KING",
+      "text": "Which now goes too free-footed."
+    },
+    {
+      "number": 26,
+      "speaker": "ROSENCRANTZ GUILDENSTERN",
+      "text": "We will haste us."
+    },
+    {
+      "number": 27,
+      "speaker": "POLONIUS",
+      "text": "My lord, he’s going to his mother’s closet:"
+    },
+    {
+      "number": 28,
+      "speaker": "POLONIUS",
+      "text": "Behind the arras I’ll convey myself,"
+    },
+    {
+      "number": 29,
+      "speaker": "POLONIUS",
+      "text": "To hear the process; and warrant she’ll tax him home:"
+    },
+    {
+      "number": 30,
+      "speaker": "POLONIUS",
+      "text": "And, as you said, and wisely was it said,"
+    },
+    {
+      "number": 31,
+      "speaker": "POLONIUS",
+      "text": "’Tis meet that some more audience than a mother,"
+    },
+    {
+      "number": 32,
+      "speaker": "POLONIUS",
+      "text": "Since nature makes them partial, should o’erhear"
+    },
+    {
+      "number": 33,
+      "speaker": "POLONIUS",
+      "text": "The speech, of vantage. Fare you well, my liege:"
+    },
+    {
+      "number": 34,
+      "speaker": "POLONIUS",
+      "text": "I’ll call upon you ere you go to bed,"
+    },
+    {
+      "number": 35,
+      "speaker": "POLONIUS",
+      "text": "And tell you what I know."
+    },
+    {
+      "number": 35,
+      "speaker": "KING",
+      "text": "Thanks, dear my lord."
+    },
+    {
+      "number": 36,
+      "speaker": "KING",
+      "text": "O, my offence is rank, it smells to heaven;"
+    },
+    {
+      "number": 37,
+      "speaker": "KING",
+      "text": "It hath the primal eldest curse upon’t,"
+    },
+    {
+      "number": 38,
+      "speaker": "KING",
+      "text": "A brother’s murder. Pray can I not,"
+    },
+    {
+      "number": 39,
+      "speaker": "KING",
+      "text": "Though inclination be as sharp as will:"
+    },
+    {
+      "number": 40,
+      "speaker": "KING",
+      "text": "My stronger guilt defeats my strong intent;"
+    },
+    {
+      "number": 41,
+      "speaker": "KING",
+      "text": "And, like a man to double business bound,"
+    },
+    {
+      "number": 42,
+      "speaker": "KING",
+      "text": "I stand in pause where I shall first begin,"
+    },
+    {
+      "number": 43,
+      "speaker": "KING",
+      "text": "And both neglect. What if this cursed hand"
+    },
+    {
+      "number": 44,
+      "speaker": "KING",
+      "text": "Were thicker than itself with brother’s blood,"
+    },
+    {
+      "number": 45,
+      "speaker": "KING",
+      "text": "Is there not rain enough in the sweet heavens"
+    },
+    {
+      "number": 46,
+      "speaker": "KING",
+      "text": "To wash it white as snow? Whereto serves mercy"
+    },
+    {
+      "number": 47,
+      "speaker": "KING",
+      "text": "But to confront the visage of offence?"
+    },
+    {
+      "number": 48,
+      "speaker": "KING",
+      "text": "And what’s in prayer but this two-fold force,"
+    },
+    {
+      "number": 49,
+      "speaker": "KING",
+      "text": "To be forestalled ere we come to fall,"
+    },
+    {
+      "number": 50,
+      "speaker": "KING",
+      "text": "Or pardon’d being down? Then I’ll look up;"
+    },
+    {
+      "number": 51,
+      "speaker": "KING",
+      "text": "My fault is past. But, O, what form of prayer"
+    },
+    {
+      "number": 52,
+      "speaker": "KING",
+      "text": "Can serve my turn? “Forgive me my foul murder”?"
+    },
+    {
+      "number": 53,
+      "speaker": "KING",
+      "text": "That cannot be; since I am still possess’d"
+    },
+    {
+      "number": 54,
+      "speaker": "KING",
+      "text": "Of those effects for which I did the murder,"
+    },
+    {
+      "number": 55,
+      "speaker": "KING",
+      "text": "My crown, mine own ambition and my queen."
+    },
+    {
+      "number": 56,
+      "speaker": "KING",
+      "text": "May one be pardon’d and retain the offence?"
+    },
+    {
+      "number": 57,
+      "speaker": "KING",
+      "text": "In the corrupted currents of this world"
+    },
+    {
+      "number": 58,
+      "speaker": "KING",
+      "text": "Offence’s gilded hand may shove by justice,"
+    },
+    {
+      "number": 59,
+      "speaker": "KING",
+      "text": "And oft ’tis seen the wicked prize itself"
+    },
+    {
+      "number": 60,
+      "speaker": "KING",
+      "text": "Buys out the law: but ’tis not so above;"
+    },
+    {
+      "number": 61,
+      "speaker": "KING",
+      "text": "There is no shuffling, there the action lies"
+    },
+    {
+      "number": 62,
+      "speaker": "KING",
+      "text": "In his true nature; and we ourselves compell’d,"
+    },
+    {
+      "number": 63,
+      "speaker": "KING",
+      "text": "Even to the teeth and forehead of our faults,"
+    },
+    {
+      "number": 64,
+      "speaker": "KING",
+      "text": "To give in evidence. What then? what rests?"
+    },
+    {
+      "number": 65,
+      "speaker": "KING",
+      "text": "Try what repentance can: what can it not?"
+    },
+    {
+      "number": 66,
+      "speaker": "KING",
+      "text": "Yet what can it when one can not repent?"
+    },
+    {
+      "number": 67,
+      "speaker": "KING",
+      "text": "O wretched state! O bosom black as death!"
+    },
+    {
+      "number": 68,
+      "speaker": "KING",
+      "text": "O limed soul, that, struggling to be free,"
+    },
+    {
+      "number": 69,
+      "speaker": "KING",
+      "text": "Art more engaged! Help, angels! Make assay!"
+    },
+    {
+      "number": 70,
+      "speaker": "KING",
+      "text": "Bow, stubborn knees; and, heart with strings of steel,"
+    },
+    {
+      "number": 71,
+      "speaker": "KING",
+      "text": "Be soft as sinews of the newborn babe!"
+    },
+    {
+      "number": 72,
+      "speaker": "KING",
+      "text": "All may be well."
+    },
+    {
+      "number": 73,
+      "speaker": "HAMLET",
+      "text": "Now might I do it pat, now he is praying;"
+    },
+    {
+      "number": 74,
+      "speaker": "HAMLET",
+      "text": "And now I’ll do’t. And so he goes to heaven;"
+    },
+    {
+      "number": 75,
+      "speaker": "HAMLET",
+      "text": "And so am I revenged. That would be scann’d:"
+    },
+    {
+      "number": 76,
+      "speaker": "HAMLET",
+      "text": "A villain kills my father; and for that,"
+    },
+    {
+      "number": 77,
+      "speaker": "HAMLET",
+      "text": "I, his sole son, do this same villain send"
+    },
+    {
+      "number": 78,
+      "speaker": "HAMLET",
+      "text": "To heaven."
+    },
+    {
+      "number": 79,
+      "speaker": "HAMLET",
+      "text": "O, this is hire and salary, not revenge."
+    },
+    {
+      "number": 80,
+      "speaker": "HAMLET",
+      "text": "He took my father grossly, full of bread;"
+    },
+    {
+      "number": 81,
+      "speaker": "HAMLET",
+      "text": "With all his crimes broad blown, as flush as May;"
+    },
+    {
+      "number": 82,
+      "speaker": "HAMLET",
+      "text": "And how his audit stands who knows save heaven?"
+    },
+    {
+      "number": 83,
+      "speaker": "HAMLET",
+      "text": "But in our circumstance and course of thought,"
+    },
+    {
+      "number": 84,
+      "speaker": "HAMLET",
+      "text": "’Tis heavy with him: and am I then revenged,"
+    },
+    {
+      "number": 85,
+      "speaker": "HAMLET",
+      "text": "To take him in the purging of his soul,"
+    },
+    {
+      "number": 86,
+      "speaker": "HAMLET",
+      "text": "When he is fit and season’d for his passage?"
+    },
+    {
+      "number": 87,
+      "speaker": "HAMLET",
+      "text": "No!"
+    },
+    {
+      "number": 88,
+      "speaker": "HAMLET",
+      "text": "Up, sword; and know thou a more horrid hent:"
+    },
+    {
+      "number": 89,
+      "speaker": "HAMLET",
+      "text": "When he is drunk asleep, or in his rage,"
+    },
+    {
+      "number": 90,
+      "speaker": "HAMLET",
+      "text": "Or in the incestuous pleasure of his bed;"
+    },
+    {
+      "number": 91,
+      "speaker": "HAMLET",
+      "text": "At gaming, swearing, or about some act"
+    },
+    {
+      "number": 92,
+      "speaker": "HAMLET",
+      "text": "That has no relish of salvation in’t;"
+    },
+    {
+      "number": 93,
+      "speaker": "HAMLET",
+      "text": "Then trip him, that his heels may kick at heaven,"
+    },
+    {
+      "number": 94,
+      "speaker": "HAMLET",
+      "text": "And that his soul may be as damn’d and black"
+    },
+    {
+      "number": 95,
+      "speaker": "HAMLET",
+      "text": "As hell, whereto it goes. My mother stays:"
+    },
+    {
+      "number": 96,
+      "speaker": "HAMLET",
+      "text": "This physic but prolongs thy sickly days."
+    },
+    {
+      "number": 97,
+      "speaker": "KING",
+      "text": "My words fly up, my thoughts remain below:"
+    },
+    {
+      "number": 98,
+      "speaker": "KING",
+      "text": "Words without thoughts never to heaven go."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter King, Rosencrantz, and Guildenstern."
+    },
+    {
+      "after_line": 26,
+      "text": "Exeunt Rosencrantz and Guildenstern."
+    },
+    {
+      "after_line": 26,
+      "text": "Enter Polonius."
+    },
+    {
+      "after_line": 35,
+      "text": "Exit Polonius."
+    },
+    {
+      "after_line": 72,
+      "text": "Retires and kneels."
+    },
+    {
+      "after_line": 72,
+      "text": "Enter Hamlet."
+    },
+    {
+      "after_line": 96,
+      "text": "Exit."
+    },
+    {
+      "after_line": 97,
+      "text": "Rising."
+    },
+    {
+      "after_line": 98,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "hamlet_act3_scene3_gloss1",
+      "line": 1,
+      "phrase": "I like him not",
+      "definition": "I do not like his behavior"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss2",
+      "line": 2,
+      "phrase": "range",
+      "definition": "roam unchecked"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss3",
+      "line": 3,
+      "phrase": "dispatch",
+      "definition": "prepare; order at once"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss4",
+      "line": 11,
+      "phrase": "peculiar",
+      "definition": "private"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss5",
+      "line": 11,
+      "phrase": "single and peculiar life",
+      "definition": "a private individual"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss6",
+      "line": 13,
+      "phrase": "noyance",
+      "definition": "harm"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss7",
+      "line": 14,
+      "phrase": "weal",
+      "definition": "welfare"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss8",
+      "line": 15,
+      "phrase": "cease of majesty",
+      "definition": "death of a king"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss9",
+      "line": 17,
+      "phrase": "massy wheel",
+      "definition": "massive wheel (of fortune)"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss10",
+      "line": 20,
+      "phrase": "mortised",
+      "definition": "fitted by joints"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss11",
+      "line": 22,
+      "phrase": "boisterous ruin",
+      "definition": "violent crash"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss12",
+      "line": 23,
+      "phrase": "general groan",
+      "definition": "universal lament"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss13",
+      "line": 24,
+      "phrase": "arm you",
+      "definition": "prepare yourself"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss14",
+      "line": 29,
+      "phrase": "tax him home",
+      "definition": "upbraid him sharply"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss15",
+      "line": 31,
+      "phrase": "meet",
+      "definition": "fitting"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss16",
+      "line": 36,
+      "phrase": "offence is rank",
+      "definition": "sin reeks foully"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss17",
+      "line": 36,
+      "phrase": "smells to heaven",
+      "definition": "stinks up to heaven"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss18",
+      "line": 37,
+      "phrase": "primal eldest curse",
+      "definition": "original first curse (Cain's murder of Abel)"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss19",
+      "line": 38,
+      "phrase": "A brother’s murder",
+      "definition": "Cain's killing of Abel"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss20",
+      "line": 41,
+      "phrase": "bound",
+      "definition": "tied"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss21",
+      "line": 41,
+      "phrase": "Like a man to double business bound",
+      "definition": "pulled in two directions"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss22",
+      "line": 54,
+      "phrase": "effects for which I did the murder",
+      "definition": "the fruits (crown, queen) I gained by murder"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss23",
+      "line": 58,
+      "phrase": "shove by justice",
+      "definition": "push aside justice"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss24",
+      "line": 68,
+      "phrase": "limed soul",
+      "definition": "soul caught in bird-lime (sticky trap)"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss25",
+      "line": 69,
+      "phrase": "Art more engaged",
+      "definition": "is more entrapped"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss26",
+      "line": 67,
+      "phrase": "bosom black as death",
+      "definition": "heart black as death"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss27",
+      "line": 73,
+      "phrase": "pat",
+      "definition": "right at this moment; perfectly"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss28",
+      "line": 78,
+      "phrase": "heaven",
+      "definition": "Claudius would ascend to heaven if killed praying"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss29",
+      "line": 79,
+      "phrase": "hire and salary, not revenge",
+      "definition": "a reward, not vengeance (sending him to heaven helps him)"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss30",
+      "line": 80,
+      "phrase": "full of bread",
+      "definition": "unprepared for death (feasting)"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss31",
+      "line": 82,
+      "phrase": "audit",
+      "definition": "spiritual reckoning"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss32",
+      "line": 88,
+      "phrase": "know thou a more horrid hent",
+      "definition": "await a more dreadful opportunity"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss33",
+      "line": 90,
+      "phrase": "incestuous pleasure of his bed",
+      "definition": "sinful lovemaking with Gertrude"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss34",
+      "line": 93,
+      "phrase": "kick at heaven",
+      "definition": "be cast into hell"
+    },
+    {
+      "id": "hamlet_act3_scene3_gloss35",
+      "line": 96,
+      "phrase": "physic",
+      "definition": "medicine (ironic: prayer merely prolongs his disease)"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "hamlet_act3_scene3_ann1",
+      "line_start": 36,
+      "line_end": 72,
+      "citation_display": "Hamlet 3.3.36–72",
+      "category": "thematic",
+      "title": "Claudius's prayer: the conscience that cannot repent",
+      "body": "Claudius's soliloquy is the only moment in the play where the King speaks alone, and it is Shakespeare's most searching portrait of unrepentant guilt. 'My offence is rank, it smells to heaven' — the imagery echoes the ghost's description of being poisoned through the ear with corrupting 'leperous distilment.' But Claudius cannot repent because he will not give up what the murder bought him: 'my crown, mine own ambition, and my queen.' He knows the theological logic perfectly ('May one be pardoned and retain the offence?') and knows his answer damns him. The scene gives us the first real interior of Claudius, and it is the interior of a man who sees his own damnation clearly and chooses it anyway.",
+      "sources": [
+        "Harold Goddard, The Meaning of Shakespeare (1951)"
+      ]
+    },
+    {
+      "id": "hamlet_act3_scene3_ann2",
+      "line_start": 73,
+      "line_end": 96,
+      "citation_display": "Hamlet 3.3.73–96",
+      "category": "thematic",
+      "title": "'Now might I do it pat' — Hamlet's terrible calculation",
+      "body": "Hamlet's decision not to kill the praying King is the play's most theologically fraught moment, and its most debated. The logic is precise: if he kills Claudius at prayer, the King goes to heaven; the ghost was damned at the hour of his death and confined to purgatorial fires. To send the murderer to salvation would be 'hire and salary, not revenge.' Critics from Samuel Johnson onward have found the calculation repellent — 'too horrible to be read or to be uttered,' Johnson wrote. Others, from Bradley to Lewis, have argued that Hamlet is lying to himself, that the theological reasoning is a rationalization for continued delay. Either reading, the scene is devastating because Claudius's following couplet reveals that the prayer did not reach heaven: the King would have died unforgiven.",
+      "sources": [
+        "Samuel Johnson, 'Notes on Shakespeare' (1765)",
+        "A. C. Bradley, Shakespearean Tragedy (1904)"
+      ]
+    },
+    {
+      "id": "hamlet_act3_scene3_ann3",
+      "line_start": 97,
+      "line_end": 98,
+      "citation_display": "Hamlet 3.3.97–98",
+      "category": "close_reading",
+      "title": "'My words fly up, my thoughts remain below'",
+      "body": "Claudius's closing couplet is the play's most compressed tragedy. He has just prayed, and the prayer has not worked; the words ascended, the thoughts — the penitent heart required for efficacy — stayed on earth. 'Words without thoughts never to heaven go' is at once an admission of theological failure and a piece of reformed doctrine: the Protestant reformers insisted that mere vocal prayer without an examined conscience was nothing. The audience exits the scene knowing what Hamlet did not: the revenger missed a moral opportunity. Dramatic irony rarely cuts deeper than this.",
+      "sources": [
+        "Stephen Greenblatt, Hamlet in Purgatory (2001)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "hamlet_act3_scene3_q1",
+      "kind": "comprehension",
+      "prompt": "What does Claudius instruct Rosencrantz and Guildenstern to prepare for?",
+      "options": [
+        "A banquet for the visiting ambassadors.",
+        "A speedy voyage to escort Hamlet to England.",
+        "The coronation of Prince Hamlet as heir.",
+        "A military campaign against Fortinbras."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 1,
+      "anchor_line_end": 30
+    },
+    {
+      "id": "hamlet_act3_scene3_q2",
+      "kind": "theme",
+      "prompt": "Why can Claudius not repent fully in his soliloquy?",
+      "options": [
+        "Because he believes God will forgive him regardless.",
+        "Because he refuses to give up the crown, the queen, and the ambition the murder secured.",
+        "Because he does not believe in Christianity.",
+        "Because he is convinced Hamlet will kill him anyway."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 36,
+      "anchor_line_end": 72
+    },
+    {
+      "id": "hamlet_act3_scene3_q3",
+      "kind": "close_reading",
+      "prompt": "What biblical 'primal eldest curse' does Claudius invoke to describe his crime?",
+      "options": [
+        "The fall of Adam and Eve.",
+        "The flood in the days of Noah.",
+        "Cain's murder of his brother Abel.",
+        "Judas's betrayal of Christ."
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 15,
+      "anchor_line_start": 42,
+      "anchor_line_end": 43
+    },
+    {
+      "id": "hamlet_act3_scene3_q4",
+      "kind": "inference",
+      "prompt": "Why does Hamlet decide not to kill Claudius at prayer?",
+      "options": [
+        "Because he fears divine punishment for killing in a chapel.",
+        "Because killing Claudius in a state of grace would send his soul to heaven — a reward, not a revenge.",
+        "Because he recognizes his sword is not sharp enough for armor.",
+        "Because he has promised Gertrude he will not act that night."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 73,
+      "anchor_line_end": 96
+    },
+    {
+      "id": "hamlet_act3_scene3_q5",
+      "kind": "theme",
+      "prompt": "What is the dramatic irony of Claudius's closing couplet, 'My words fly up, my thoughts remain below'?",
+      "options": [
+        "Hamlet has just spared Claudius on the assumption that his prayer has reached heaven — but the audience knows it has not.",
+        "Claudius is revealing his plan to have Hamlet killed in England.",
+        "The audience is informed that Gertrude has overheard the prayer.",
+        "Claudius is silently recanting his plan to send Hamlet away."
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 25,
+      "anchor_line_start": 97,
+      "anchor_line_end": 98
+    }
+  ]
+}

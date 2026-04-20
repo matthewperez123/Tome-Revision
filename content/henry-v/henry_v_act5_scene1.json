@@ -1,0 +1,719 @@
+{
+  "section_id": "henry_v_act5_scene1",
+  "work_id": "henry-v",
+  "sequence": 27,
+  "act": 5,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "France. The English camp",
+  "line_count": 74,
+  "word_count": 724,
+  "est_read_minutes": 4,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "GOWER",
+      "text": "Nay, that’s right; but why wear you your leek today? Saint Davy’s day is past."
+    },
+    {
+      "number": 2,
+      "speaker": "FLUELLEN",
+      "text": "There is occasions and causes why and wherefore in all things: I"
+    },
+    {
+      "number": 3,
+      "speaker": "FLUELLEN",
+      "text": "will tell you, asse my friend, Captain Gower: the rascally, scauld, beggarly,"
+    },
+    {
+      "number": 4,
+      "speaker": "FLUELLEN",
+      "text": "lousy, pragging knave, Pistol, which you and yourself and all the world"
+    },
+    {
+      "number": 5,
+      "speaker": "FLUELLEN",
+      "text": "know to be no petter than a fellow, look you now, of"
+    },
+    {
+      "number": 6,
+      "speaker": "FLUELLEN",
+      "text": "no merits, he is come to me and prings me pread and"
+    },
+    {
+      "number": 7,
+      "speaker": "FLUELLEN",
+      "text": "salt yesterday, look you, and bid me eat my leek: it was"
+    },
+    {
+      "number": 8,
+      "speaker": "FLUELLEN",
+      "text": "in a place where I could not breed no contention with him;"
+    },
+    {
+      "number": 9,
+      "speaker": "FLUELLEN",
+      "text": "but I will be so bold as to wear it in my"
+    },
+    {
+      "number": 10,
+      "speaker": "FLUELLEN",
+      "text": "cap till I see him once again, and then I will tell"
+    },
+    {
+      "number": 11,
+      "speaker": "FLUELLEN",
+      "text": "him a little piece of my desires."
+    },
+    {
+      "number": 12,
+      "speaker": "GOWER",
+      "text": "Why, here he comes, swelling like a turkey-cock."
+    },
+    {
+      "number": 13,
+      "speaker": "FLUELLEN",
+      "text": "’Tis no matter for his swellings nor his turkey-cocks. God pless you,"
+    },
+    {
+      "number": 14,
+      "speaker": "FLUELLEN",
+      "text": "Aunchient Pistol! you scurvy, lousy knave, God pless you!"
+    },
+    {
+      "number": 15,
+      "speaker": "PISTOL",
+      "text": "Ha! art thou bedlam? dost thou thirst, base Trojan,"
+    },
+    {
+      "number": 16,
+      "speaker": "PISTOL",
+      "text": "To have me fold up Parca’s fatal web?"
+    },
+    {
+      "number": 17,
+      "speaker": "PISTOL",
+      "text": "Hence! I am qualmish at the smell of leek."
+    },
+    {
+      "number": 18,
+      "speaker": "FLUELLEN",
+      "text": "I peseech you heartily, scurfy, lousy knave, at my desires, and my"
+    },
+    {
+      "number": 19,
+      "speaker": "FLUELLEN",
+      "text": "requests, and my petitions, to eat, look you, this leek: because, look"
+    },
+    {
+      "number": 20,
+      "speaker": "FLUELLEN",
+      "text": "you, you do not love it, nor your affections and your appetites"
+    },
+    {
+      "number": 21,
+      "speaker": "FLUELLEN",
+      "text": "and your digestions doo’s not agree with it, I would desire you"
+    },
+    {
+      "number": 22,
+      "speaker": "FLUELLEN",
+      "text": "to eat it."
+    },
+    {
+      "number": 23,
+      "speaker": "PISTOL",
+      "text": "Not for Cadwallader and all his goats."
+    },
+    {
+      "number": 24,
+      "speaker": "FLUELLEN",
+      "text": "There is one goat for you. Will you be so good, scauld"
+    },
+    {
+      "number": 25,
+      "speaker": "FLUELLEN",
+      "text": "knave, as eat it?"
+    },
+    {
+      "number": 25,
+      "speaker": "PISTOL",
+      "text": "Base Trojan, thou shalt die."
+    },
+    {
+      "number": 26,
+      "speaker": "FLUELLEN",
+      "text": "You say very true, scauld knave, when God’s will is: I will"
+    },
+    {
+      "number": 27,
+      "speaker": "FLUELLEN",
+      "text": "desire you to live in the meantime, and eat your victuals: come,"
+    },
+    {
+      "number": 28,
+      "speaker": "FLUELLEN",
+      "text": "there is sauce for it. You called me yesterday mountain-squire; but I"
+    },
+    {
+      "number": 29,
+      "speaker": "FLUELLEN",
+      "text": "will make you today a squire of low degree. I pray you,"
+    },
+    {
+      "number": 30,
+      "speaker": "FLUELLEN",
+      "text": "fall to: if you can mock a leek, you can eat a"
+    },
+    {
+      "number": 31,
+      "speaker": "FLUELLEN",
+      "text": "leek."
+    },
+    {
+      "number": 31,
+      "speaker": "GOWER",
+      "text": "Enough, captain: you have astonished him."
+    },
+    {
+      "number": 32,
+      "speaker": "FLUELLEN",
+      "text": "I say, I will make him eat some part of my leek,"
+    },
+    {
+      "number": 33,
+      "speaker": "FLUELLEN",
+      "text": "or I will peat his pate four days. Bite, I pray you;"
+    },
+    {
+      "number": 34,
+      "speaker": "FLUELLEN",
+      "text": "it is good for your green wound and your ploody coxcomb."
+    },
+    {
+      "number": 35,
+      "speaker": "PISTOL",
+      "text": "Must I bite?"
+    },
+    {
+      "number": 36,
+      "speaker": "FLUELLEN",
+      "text": "Yes, certainly, and out of doubt and out of question too, and ambiguities."
+    },
+    {
+      "number": 37,
+      "speaker": "PISTOL",
+      "text": "By this leek, I will most horribly revenge: I eat and eat, I swear—"
+    },
+    {
+      "number": 38,
+      "speaker": "FLUELLEN",
+      "text": "Eat, I pray you: will you have some more sauce to your"
+    },
+    {
+      "number": 39,
+      "speaker": "FLUELLEN",
+      "text": "leek? there is not enough leek to swear by."
+    },
+    {
+      "number": 40,
+      "speaker": "PISTOL",
+      "text": "Quiet thy cudgel; thou dost see I eat."
+    },
+    {
+      "number": 41,
+      "speaker": "FLUELLEN",
+      "text": "Much good do you, scauld knave, heartily. Nay, pray you, throw none"
+    },
+    {
+      "number": 42,
+      "speaker": "FLUELLEN",
+      "text": "away; the skin is good for your broken coxcomb. When you take"
+    },
+    {
+      "number": 43,
+      "speaker": "FLUELLEN",
+      "text": "occasions to see leeks hereafter, I pray you, mock at ’em; that"
+    },
+    {
+      "number": 44,
+      "speaker": "FLUELLEN",
+      "text": "is all."
+    },
+    {
+      "number": 44,
+      "speaker": "PISTOL",
+      "text": "Good."
+    },
+    {
+      "number": 45,
+      "speaker": "FLUELLEN",
+      "text": "Ay, leeks is good: hold you, there is a groat to heal your pate."
+    },
+    {
+      "number": 46,
+      "speaker": "PISTOL",
+      "text": "Me a groat!"
+    },
+    {
+      "number": 47,
+      "speaker": "FLUELLEN",
+      "text": "Yes, verily and in truth you, shall take it; or I have"
+    },
+    {
+      "number": 48,
+      "speaker": "FLUELLEN",
+      "text": "another leek in my pocket, which you shall eat."
+    },
+    {
+      "number": 49,
+      "speaker": "PISTOL",
+      "text": "I take thy groat in earnest of revenge."
+    },
+    {
+      "number": 50,
+      "speaker": "FLUELLEN",
+      "text": "If I owe you anything I will pay you in cudgels: you"
+    },
+    {
+      "number": 51,
+      "speaker": "FLUELLEN",
+      "text": "shall be a woodmonger, and buy nothing of me but cudgels. God"
+    },
+    {
+      "number": 52,
+      "speaker": "FLUELLEN",
+      "text": "b’ wi’ you, and keep you, and heal your pate."
+    },
+    {
+      "number": 53,
+      "speaker": "PISTOL",
+      "text": "All hell shall stir for this."
+    },
+    {
+      "number": 54,
+      "speaker": "GOWER",
+      "text": "Go, go; you are a counterfeit cowardly knave. Will you mock at"
+    },
+    {
+      "number": 55,
+      "speaker": "GOWER",
+      "text": "an ancient tradition, begun upon an honourable respect, and worn as a"
+    },
+    {
+      "number": 56,
+      "speaker": "GOWER",
+      "text": "memorable trophy of predeceased valour and dare not avouch in your deeds"
+    },
+    {
+      "number": 57,
+      "speaker": "GOWER",
+      "text": "any of your words? I have seen you gleeking and galling at"
+    },
+    {
+      "number": 58,
+      "speaker": "GOWER",
+      "text": "this gentleman twice or thrice. You thought, because he could not speak"
+    },
+    {
+      "number": 59,
+      "speaker": "GOWER",
+      "text": "English in the native garb, he could not therefore handle an English"
+    },
+    {
+      "number": 60,
+      "speaker": "GOWER",
+      "text": "cudgel: you find it otherwise; and henceforth let a Welsh correction teach"
+    },
+    {
+      "number": 61,
+      "speaker": "GOWER",
+      "text": "you a good English condition. Fare ye well."
+    },
+    {
+      "number": 62,
+      "speaker": "PISTOL",
+      "text": "Doth Fortune play the huswife with me now?"
+    },
+    {
+      "number": 63,
+      "speaker": "PISTOL",
+      "text": "News have I, that my Doll is dead i’ the spital"
+    },
+    {
+      "number": 64,
+      "speaker": "PISTOL",
+      "text": "Of malady of France;"
+    },
+    {
+      "number": 65,
+      "speaker": "PISTOL",
+      "text": "And there my rendezvous is quite cut off."
+    },
+    {
+      "number": 66,
+      "speaker": "PISTOL",
+      "text": "Old I do wax; and from my weary limbs"
+    },
+    {
+      "number": 67,
+      "speaker": "PISTOL",
+      "text": "Honour is cudgelled. Well, bawd I’ll turn,"
+    },
+    {
+      "number": 68,
+      "speaker": "PISTOL",
+      "text": "And something lean to cutpurse of quick hand."
+    },
+    {
+      "number": 69,
+      "speaker": "PISTOL",
+      "text": "To England will I steal, and there I’ll steal:"
+    },
+    {
+      "number": 70,
+      "speaker": "PISTOL",
+      "text": "And patches will I get unto these cudgell’d scars,"
+    },
+    {
+      "number": 71,
+      "speaker": "PISTOL",
+      "text": "And swear I got them in the Gallia wars."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Fluellen and Gower."
+    },
+    {
+      "after_line": 11,
+      "text": "Enter Pistol."
+    },
+    {
+      "after_line": 25,
+      "text": "Strikes him."
+    },
+    {
+      "after_line": 31,
+      "text": "Strikes him."
+    },
+    {
+      "after_line": 52,
+      "text": "Exit."
+    },
+    {
+      "after_line": 61,
+      "text": "Exit."
+    },
+    {
+      "after_line": 71,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act5_scene1_gloss1",
+      "line": 1,
+      "phrase": "Saint Davy’s day is past",
+      "definition": "March 1 (the Welsh national day) has already passed — why still wearing the leek? (see 4.1 and 4.7)"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss2",
+      "line": 2,
+      "phrase": "occasions and causes why and wherefore",
+      "definition": "Fluellen's pedantic triple-phrase for 'reasons'"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss3",
+      "line": 3,
+      "phrase": "scauld",
+      "definition": "scabby; scurvy (dialect)"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss4",
+      "line": 4,
+      "phrase": "pragging",
+      "definition": "bragging, in Fluellen's Welsh accent — dialect marker"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss5",
+      "line": 4,
+      "phrase": "Pistol, which you and yourself and all the world",
+      "definition": "Fluellen's over-emphatic rhetoric"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss6",
+      "line": 6,
+      "phrase": "prings me pread",
+      "definition": "brings me bread (Welsh 'b' → 'p'); dialect preserved"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss7",
+      "line": 7,
+      "phrase": "bid me eat my leek",
+      "definition": "Pistol earlier mocked the leek in front of Fluellen; now Fluellen will make him eat it, literally"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss8",
+      "line": 12,
+      "phrase": "swelling like a turkey-cock",
+      "definition": "puffed up like a turkey — Gower's classic English image of pomposity"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss9",
+      "line": 13,
+      "phrase": "God pless you",
+      "definition": "'God bless you' in Welsh accent (sarcastic)"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss10",
+      "line": 15,
+      "phrase": "bedlam",
+      "definition": "from 'Bethlem Hospital' — madhouse; Pistol calls Fluellen mad"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss11",
+      "line": 15,
+      "phrase": "base Trojan",
+      "definition": "vile scoundrel — Pistolese inflation"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss12",
+      "line": 16,
+      "phrase": "fold up Parca’s fatal web",
+      "definition": "close up Fate's doomed tapestry — 'Parcae' = the three Roman Fates"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss13",
+      "line": 17,
+      "phrase": "qualmish",
+      "definition": "nauseated"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss14",
+      "line": 18,
+      "phrase": "peseech you heartily",
+      "definition": "beseech you (Welsh 'b' → 'p')"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss15",
+      "line": 20,
+      "phrase": "affections and your appetites",
+      "definition": "Fluellen's catalogue style — listing inclinations exhaustively"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss16",
+      "line": 23,
+      "phrase": "Cadwallader",
+      "definition": "the last British-Welsh king before the Saxons (7th century) — Pistol swears by a Welsh legend"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss17",
+      "line": 24,
+      "phrase": "one goat for you",
+      "definition": "Fluellen strikes Pistol with a cudgel; 'goat' plays on Pistol's 'goats'"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss18",
+      "line": 28,
+      "phrase": "mountain-squire",
+      "definition": "mountain gentleman — a contemptuous term for a Welshman; Pistol had used it"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss19",
+      "line": 29,
+      "phrase": "squire of low degree",
+      "definition": "lowly gentleman — Fluellen's deflating retort; a 15th-century romance title"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss20",
+      "line": 33,
+      "phrase": "peat his pate four days",
+      "definition": "beat your head for four days (Welsh 'b' → 'p')"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss21",
+      "line": 34,
+      "phrase": "ploody coxcomb",
+      "definition": "bloody head (Welsh dialect); 'coxcomb' = head"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss22",
+      "line": 39,
+      "phrase": "not enough leek to swear by",
+      "definition": "there's not enough leek left to use as an oath — Fluellen will keep feeding him"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss23",
+      "line": 40,
+      "phrase": "cudgel",
+      "definition": "stout stick"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss24",
+      "line": 45,
+      "phrase": "groat",
+      "definition": "a fourpenny coin — small money"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss25",
+      "line": 51,
+      "phrase": "woodmonger",
+      "definition": "a seller of firewood — Fluellen will only pay him in cudgels"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss26",
+      "line": 54,
+      "phrase": "counterfeit cowardly knave",
+      "definition": "fake, cowardly scoundrel — Gower's dressing-down of Pistol"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss27",
+      "line": 56,
+      "phrase": "predeceased valour",
+      "definition": "the valour of earlier generations"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss28",
+      "line": 57,
+      "phrase": "gleeking and galling",
+      "definition": "mocking and jeering"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss29",
+      "line": 59,
+      "phrase": "English in the native garb",
+      "definition": "English in the native manner — the 'standard' accent"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss30",
+      "line": 60,
+      "phrase": "Welsh correction teach you a good English condition",
+      "definition": "Welsh discipline will teach you English manners — Gower's closing hit"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss31",
+      "line": 62,
+      "phrase": "huswife",
+      "definition": "harlot; strumpet — Pistol pictures Fortune as a whore who betrayed him"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss32",
+      "line": 63,
+      "phrase": "my Doll is dead i’ the spital",
+      "definition": "Doll Tearsheet has died in the hospital — 'my Doll'; the Hostess died of the same disease as was rumored"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss33",
+      "line": 64,
+      "phrase": "malady of France",
+      "definition": "syphilis — euphemistically called 'the French disease'"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss34",
+      "line": 65,
+      "phrase": "rendezvous",
+      "definition": "refuge; retreat (French term Pistol re-uses from 2.1)"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss35",
+      "line": 67,
+      "phrase": "bawd I’ll turn",
+      "definition": "I'll become a pimp — Pistol's decline to outright criminality"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss36",
+      "line": 68,
+      "phrase": "lean to cutpurse",
+      "definition": "incline toward pickpocketing"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss37",
+      "line": 70,
+      "phrase": "patches will I get unto these cudgell’d scars",
+      "definition": "I'll disguise my beating-bruises as war-wounds"
+    },
+    {
+      "id": "henry_v_act5_scene1_gloss38",
+      "line": 71,
+      "phrase": "Gallia wars",
+      "definition": "the French wars — 'Gallia' = ancient Gaul"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act5_scene1_ann1",
+      "line_start": 1,
+      "line_end": 44,
+      "citation_display": "Henry V 5.1.1–44",
+      "category": "structural",
+      "title": "Fluellen forces Pistol to eat the leek — the cycle closes",
+      "body": "The leek scene is long-setup comedy. At 4.1 Pistol mocked Fluellen's leek (not knowing he was speaking to the king's kinsman); at 5.1 Fluellen, now a veteran with Henry's acknowledgement, beats Pistol with a cudgel and forces him to eat a raw leek bite by bite. The comedy is brutal: Pistol is a known coward and a known petty criminal, and the scene gives us the satisfaction of seeing his bombast physically collapsed. But there is also a social point. Fluellen, the Welsh captain whose dialect we have been permitted to laugh at for four acts, now enforces discipline on the English braggart, and Gower (the English captain) endorses the act at length: 'henceforth let a Welsh correction teach you a good English condition.' The ethnic hierarchy the play has played with is, in this scene, upended: the Welshman teaches the Englishman manners. The scene also works as a final, unsentimental reckoning with the Eastcheap world. Pistol's closing soliloquy — Doll is dead, the rendezvous is cut off, 'bawd I'll turn, / And something lean to cutpurse of quick hand' — announces that he will go home to England and live by crime, with his 'cudgell'd scars' passed off as war-wounds. This is what the campaign has produced in the low-comic line: a criminal with a false story. The play does not soften it.",
+      "sources": [
+        "Robert Weimann, Shakespeare and the Popular Tradition in the Theater (1978)",
+        "Ann Rosalind Jones, 'The Ethnographic Present,' in Shakespeare and the Early Modern (2002)"
+      ]
+    },
+    {
+      "id": "henry_v_act5_scene1_ann2",
+      "line_start": 62,
+      "line_end": 71,
+      "citation_display": "Henry V 5.1.62–71",
+      "category": "thematic",
+      "title": "Pistol's homecoming as the play's underfoot pay-off",
+      "body": "Pistol's short closing soliloquy is the play's only honest post-war economic statement. He reports two facts: his wife Doll/Nell has died of the 'malady of France' (syphilis), and his tavern-rendezvous is therefore cut off. His plan: steal his way home to England, become a pimp ('bawd') and cut-purse, pass off his leek-beating bruises as war-wounds ('the Gallia wars'). The grim comedy is that Pistol will be one of the veterans of Agincourt the English streets soon see. The King's 'band of brothers' promise — that shared combat would 'gentle' a low soldier's condition — is falsified here by a low soldier making his own account. The speech is less than a dozen lines; it is what the victory looks like from the side of the army that had nothing to begin with. Readers should notice that Shakespeare ends his low-plot with this speech and not with the leek's beating. The beating is the comic catharsis; the soliloquy is the audit.",
+      "sources": [
+        "C. L. Barber, Shakespeare's Festive Comedy (1959)",
+        "Thomas Healy, Shakespeare, Alienation and the Early Modern Stage (1994)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act5_scene1_q1",
+      "kind": "structural",
+      "prompt": "What does the leek scene accomplish?",
+      "options": [
+        "Mere slapstick",
+        "A long-setup comic pay-off: Fluellen beats Pistol with a cudgel and forces him to eat a raw leek, inverting the play's ethnic hierarchy — the Welshman corrects the English bombast, with Gower's explicit endorsement",
+        "A political rebellion",
+        "A second glove-plot"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 60
+    },
+    {
+      "id": "henry_v_act5_scene1_q2",
+      "kind": "theme",
+      "prompt": "What does Pistol's closing soliloquy reveal?",
+      "options": [
+        "That he is reformed",
+        "That he will return to England as a pimp and cut-purse, passing off his leek-bruises as war-wounds. His honest post-war account falsifies Henry's 'band of brothers' promise of social elevation for low-born soldiers",
+        "That he plans to marry Alice",
+        "That he has enlisted again for France"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 62,
+      "anchor_line_end": 71
+    },
+    {
+      "id": "henry_v_act5_scene1_q3",
+      "kind": "comprehension",
+      "prompt": "What has happened to Pistol's wife?",
+      "options": [
+        "She has returned to Eastcheap",
+        "She has died of the 'malady of France' — syphilis — in the hospital",
+        "She is in Scotland",
+        "She has become a nun"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 63,
+      "anchor_line_end": 64
+    }
+  ]
+}

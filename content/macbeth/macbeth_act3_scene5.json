@@ -1,0 +1,328 @@
+{
+  "section_id": "macbeth_act3_scene5",
+  "work_id": "macbeth",
+  "sequence": 16,
+  "act": 3,
+  "scene": 5,
+  "kind": "scene",
+  "scene_title": "A Heath",
+  "line_count": 36,
+  "word_count": 247,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "FIRST WITCH",
+      "text": "Why, how now, Hecate! you look angerly."
+    },
+    {
+      "number": 2,
+      "speaker": "HECATE",
+      "text": "Have I not reason, beldams as you are,"
+    },
+    {
+      "number": 3,
+      "speaker": "HECATE",
+      "text": "Saucy and overbold? How did you dare"
+    },
+    {
+      "number": 4,
+      "speaker": "HECATE",
+      "text": "To trade and traffic with Macbeth"
+    },
+    {
+      "number": 5,
+      "speaker": "HECATE",
+      "text": "In riddles and affairs of death;"
+    },
+    {
+      "number": 6,
+      "speaker": "HECATE",
+      "text": "And I, the mistress of your charms,"
+    },
+    {
+      "number": 7,
+      "speaker": "HECATE",
+      "text": "The close contriver of all harms,"
+    },
+    {
+      "number": 8,
+      "speaker": "HECATE",
+      "text": "Was never call’d to bear my part,"
+    },
+    {
+      "number": 9,
+      "speaker": "HECATE",
+      "text": "Or show the glory of our art?"
+    },
+    {
+      "number": 10,
+      "speaker": "HECATE",
+      "text": "And, which is worse, all you have done"
+    },
+    {
+      "number": 11,
+      "speaker": "HECATE",
+      "text": "Hath been but for a wayward son,"
+    },
+    {
+      "number": 12,
+      "speaker": "HECATE",
+      "text": "Spiteful and wrathful, who, as others do,"
+    },
+    {
+      "number": 13,
+      "speaker": "HECATE",
+      "text": "Loves for his own ends, not for you."
+    },
+    {
+      "number": 14,
+      "speaker": "HECATE",
+      "text": "But make amends now: get you gone,"
+    },
+    {
+      "number": 15,
+      "speaker": "HECATE",
+      "text": "And at the pit of Acheron"
+    },
+    {
+      "number": 16,
+      "speaker": "HECATE",
+      "text": "Meet me i’ the morning: thither he"
+    },
+    {
+      "number": 17,
+      "speaker": "HECATE",
+      "text": "Will come to know his destiny:"
+    },
+    {
+      "number": 18,
+      "speaker": "HECATE",
+      "text": "Your vessels and your spells provide,"
+    },
+    {
+      "number": 19,
+      "speaker": "HECATE",
+      "text": "Your charms and every thing beside."
+    },
+    {
+      "number": 20,
+      "speaker": "HECATE",
+      "text": "I am for the air; this night I’ll spend"
+    },
+    {
+      "number": 21,
+      "speaker": "HECATE",
+      "text": "Unto a dismal and a fatal end:"
+    },
+    {
+      "number": 22,
+      "speaker": "HECATE",
+      "text": "Great business must be wrought ere noon:"
+    },
+    {
+      "number": 23,
+      "speaker": "HECATE",
+      "text": "Upon the corner of the moon"
+    },
+    {
+      "number": 24,
+      "speaker": "HECATE",
+      "text": "There hangs a vaporous drop profound;"
+    },
+    {
+      "number": 25,
+      "speaker": "HECATE",
+      "text": "I’ll catch it ere it come to ground:"
+    },
+    {
+      "number": 26,
+      "speaker": "HECATE",
+      "text": "And that distill’d by magic sleights"
+    },
+    {
+      "number": 27,
+      "speaker": "HECATE",
+      "text": "Shall raise such artificial sprites"
+    },
+    {
+      "number": 28,
+      "speaker": "HECATE",
+      "text": "As by the strength of their illusion"
+    },
+    {
+      "number": 29,
+      "speaker": "HECATE",
+      "text": "Shall draw him on to his confusion:"
+    },
+    {
+      "number": 30,
+      "speaker": "HECATE",
+      "text": "He shall spurn fate, scorn death, and bear"
+    },
+    {
+      "number": 31,
+      "speaker": "HECATE",
+      "text": "He hopes ’bove wisdom, grace and fear:"
+    },
+    {
+      "number": 32,
+      "speaker": "HECATE",
+      "text": "And you all know, security"
+    },
+    {
+      "number": 33,
+      "speaker": "HECATE",
+      "text": "Is mortals’ chiefest enemy."
+    },
+    {
+      "number": 34,
+      "speaker": "HECATE",
+      "text": "Hark! I am call’d; my little spirit, see,"
+    },
+    {
+      "number": 35,
+      "speaker": "HECATE",
+      "text": "Sits in a foggy cloud, and stays for me."
+    },
+    {
+      "number": 36,
+      "speaker": "FIRST WITCH",
+      "text": "Come, let’s make haste; she’ll soon be back again."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Thunder. Enter the three Witches meeting Hecate."
+    },
+    {
+      "after_line": 33,
+      "text": "Music and a song within: “Come away, come away,” etc."
+    },
+    {
+      "after_line": 35,
+      "text": "Exit."
+    },
+    {
+      "after_line": 36,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act3_scene5_gloss1",
+      "line": 1,
+      "phrase": "Hecate",
+      "definition": "Greek goddess of witchcraft and the moon; the Weird Sisters' mistress"
+    },
+    {
+      "id": "macbeth_act3_scene5_gloss2",
+      "line": 1,
+      "phrase": "angerly",
+      "definition": "angrily"
+    },
+    {
+      "id": "macbeth_act3_scene5_gloss3",
+      "line": 5,
+      "phrase": "riddles and affairs of death",
+      "definition": "mysteries and dealings concerning death"
+    },
+    {
+      "id": "macbeth_act3_scene5_gloss4",
+      "line": 7,
+      "phrase": "close contriver of all harms",
+      "definition": "the secret mastermind of all evils"
+    },
+    {
+      "id": "macbeth_act3_scene5_gloss5",
+      "line": 11,
+      "phrase": "wayward son",
+      "definition": "Macbeth, the willful human client of the Witches"
+    },
+    {
+      "id": "macbeth_act3_scene5_gloss6",
+      "line": 15,
+      "phrase": "pit of Acheron",
+      "definition": "the pit of the underworld river Acheron, in Greek myth the river of woe"
+    },
+    {
+      "id": "macbeth_act3_scene5_gloss7",
+      "line": 15,
+      "phrase": "Acheron",
+      "definition": "a river of the Greek underworld; river of woe"
+    },
+    {
+      "id": "macbeth_act3_scene5_gloss8",
+      "line": 24,
+      "phrase": "vaporous drop",
+      "definition": "a drop of charmed vapor caught from the moon"
+    },
+    {
+      "id": "macbeth_act3_scene5_gloss9",
+      "line": 24,
+      "phrase": "profound",
+      "definition": "deep-lying; pregnant with meaning"
+    },
+    {
+      "id": "macbeth_act3_scene5_gloss10",
+      "line": 27,
+      "phrase": "artificial sprites",
+      "definition": "fabricated spirits — conjured apparitions"
+    },
+    {
+      "id": "macbeth_act3_scene5_gloss11",
+      "line": 32,
+      "phrase": "security",
+      "definition": "overconfidence; false safety — the great enemy of the tragic protagonist"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act3_scene5_ann1",
+      "line_start": 1,
+      "line_end": 36,
+      "citation_display": "Macbeth 3.5.1–36",
+      "category": "textual",
+      "title": "The Hecate scenes and the Middleton question",
+      "body": "3.5 is almost certainly not by Shakespeare. The scholarly consensus — dating to Edmond Malone in the 18th century and confirmed by computer-assisted attribution studies from Gary Taylor (Oxford) and Brian Vickers — identifies Thomas Middleton as the probable author of this scene and of parts of 4.1 (the songs 'Come away, come away' and 'Black spirits'). The scenes are interpolations added after 1609, probably for a revival of the play.\n\nThe evidence is stylistic. Hecate's speeches use tetrameter couplets in a way Shakespeare avoids in this play. The songs cited in 3.5 and 4.1 also appear in Middleton's *The Witch* (c. 1614). The internal incoherence — Hecate criticizes the Sisters for acting without her, but the rest of the play gives her no role before or after — suggests a late addition that never fully integrated.\n\nPerformance traditions split. Some productions cut Hecate entirely; others play her as a deliberate stylistic break, acknowledging the text's layered authorship. Reading *Macbeth* as a 'pure' Shakespeare play means reading past these scenes; reading it as the playtext it actually is means reading Middleton, too.",
+      "sources": [
+        "Gary Taylor, 'Empirical Middleton,' *Shakespeare Quarterly* (2010)",
+        "Brian Vickers, *Shakespeare, Co-Author* (2002)",
+        "John Jowett, *Shakespeare and Text* (2007)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act3_scene5_q1",
+      "kind": "textual",
+      "prompt": "Most scholars attribute 3.5 and parts of 4.1 to:",
+      "options": [
+        "Shakespeare alone",
+        "Thomas Middleton — an interpolation added after 1609, probably for a revival",
+        "Christopher Marlowe",
+        "Ben Jonson"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 1,
+      "anchor_line_end": 36
+    },
+    {
+      "id": "macbeth_act3_scene5_q2",
+      "kind": "comprehension",
+      "prompt": "What is Hecate's complaint?",
+      "options": [
+        "She is tired",
+        "The Sisters have acted without her — traded prophecies with Macbeth unsupervised",
+        "She is in love",
+        "The cauldron is broken"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 1,
+      "anchor_line_end": 20
+    }
+  ]
+}

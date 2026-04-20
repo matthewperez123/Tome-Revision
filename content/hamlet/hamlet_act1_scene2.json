@@ -1,0 +1,2055 @@
+{
+  "section_id": "hamlet_act1_scene2",
+  "work_id": "hamlet",
+  "sequence": 2,
+  "act": 1,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "A room of state in the castle",
+  "line_count": 275,
+  "word_count": 2024,
+  "est_read_minutes": 10,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KING",
+      "text": "Though yet of Hamlet our dear brother’s death"
+    },
+    {
+      "number": 2,
+      "speaker": "KING",
+      "text": "The memory be green, and that it us befitted"
+    },
+    {
+      "number": 3,
+      "speaker": "KING",
+      "text": "To bear our hearts in grief and our whole kingdom"
+    },
+    {
+      "number": 4,
+      "speaker": "KING",
+      "text": "To be contracted in one brow of woe,"
+    },
+    {
+      "number": 5,
+      "speaker": "KING",
+      "text": "Yet so far hath discretion fought with nature"
+    },
+    {
+      "number": 6,
+      "speaker": "KING",
+      "text": "That we with wisest sorrow think on him,"
+    },
+    {
+      "number": 7,
+      "speaker": "KING",
+      "text": "Together with remembrance of ourselves."
+    },
+    {
+      "number": 8,
+      "speaker": "KING",
+      "text": "Therefore our sometime sister, now our queen,"
+    },
+    {
+      "number": 9,
+      "speaker": "KING",
+      "text": "The imperial jointress to this warlike state,"
+    },
+    {
+      "number": 10,
+      "speaker": "KING",
+      "text": "Have we, as ’twere with a defeated joy—"
+    },
+    {
+      "number": 11,
+      "speaker": "KING",
+      "text": "With an auspicious and a dropping eye,"
+    },
+    {
+      "number": 12,
+      "speaker": "KING",
+      "text": "With mirth in funeral and with dirge in marriage,"
+    },
+    {
+      "number": 13,
+      "speaker": "KING",
+      "text": "In equal scale weighing delight and dole—"
+    },
+    {
+      "number": 14,
+      "speaker": "KING",
+      "text": "Taken to wife: nor have we herein barr’d"
+    },
+    {
+      "number": 15,
+      "speaker": "KING",
+      "text": "Your better wisdoms, which have freely gone"
+    },
+    {
+      "number": 16,
+      "speaker": "KING",
+      "text": "With this affair along. For all, our thanks."
+    },
+    {
+      "number": 17,
+      "speaker": "KING",
+      "text": "Now follows, that you know, young Fortinbras,"
+    },
+    {
+      "number": 18,
+      "speaker": "KING",
+      "text": "Holding a weak supposal of our worth,"
+    },
+    {
+      "number": 19,
+      "speaker": "KING",
+      "text": "Or thinking by our late dear brother’s death"
+    },
+    {
+      "number": 20,
+      "speaker": "KING",
+      "text": "Our state to be disjoint and out of frame,"
+    },
+    {
+      "number": 21,
+      "speaker": "KING",
+      "text": "Colleagued with the dream of his advantage,"
+    },
+    {
+      "number": 22,
+      "speaker": "KING",
+      "text": "He hath not fail’d to pester us with message,"
+    },
+    {
+      "number": 23,
+      "speaker": "KING",
+      "text": "Importing the surrender of those lands"
+    },
+    {
+      "number": 24,
+      "speaker": "KING",
+      "text": "Lost by his father, with all bonds of law,"
+    },
+    {
+      "number": 25,
+      "speaker": "KING",
+      "text": "To our most valiant brother. So much for him."
+    },
+    {
+      "number": 26,
+      "speaker": "KING",
+      "text": "Now for ourself and for this time of meeting:"
+    },
+    {
+      "number": 27,
+      "speaker": "KING",
+      "text": "Thus much the business is: we have here writ"
+    },
+    {
+      "number": 28,
+      "speaker": "KING",
+      "text": "To Norway, uncle of young Fortinbras—"
+    },
+    {
+      "number": 29,
+      "speaker": "KING",
+      "text": "Who, impotent and bed-rid, scarcely hears"
+    },
+    {
+      "number": 30,
+      "speaker": "KING",
+      "text": "Of this his nephew’s purpose—to suppress"
+    },
+    {
+      "number": 31,
+      "speaker": "KING",
+      "text": "His further gait herein; in that the levies,"
+    },
+    {
+      "number": 32,
+      "speaker": "KING",
+      "text": "The lists and full proportions, are all made"
+    },
+    {
+      "number": 33,
+      "speaker": "KING",
+      "text": "Out of his subject: and we here dispatch"
+    },
+    {
+      "number": 34,
+      "speaker": "KING",
+      "text": "You, good Cornelius, and you, Voltimand,"
+    },
+    {
+      "number": 35,
+      "speaker": "KING",
+      "text": "For bearers of this greeting to old Norway;"
+    },
+    {
+      "number": 36,
+      "speaker": "KING",
+      "text": "Giving to you no further personal power"
+    },
+    {
+      "number": 37,
+      "speaker": "KING",
+      "text": "To business with the king, more than the scope"
+    },
+    {
+      "number": 38,
+      "speaker": "KING",
+      "text": "Of these delated articles allow."
+    },
+    {
+      "number": 39,
+      "speaker": "KING",
+      "text": "Farewell, and let your haste commend your duty."
+    },
+    {
+      "number": 40,
+      "speaker": "CORNELIUS VOLTIMAND",
+      "text": "In that and all things will we show our duty."
+    },
+    {
+      "number": 41,
+      "speaker": "KING",
+      "text": "We doubt it nothing: heartily farewell."
+    },
+    {
+      "number": 42,
+      "speaker": "KING",
+      "text": "And now, Laertes, what’s the news with you?"
+    },
+    {
+      "number": 43,
+      "speaker": "KING",
+      "text": "You told us of some suit; what is’t, Laertes?"
+    },
+    {
+      "number": 44,
+      "speaker": "KING",
+      "text": "You cannot speak of reason to the Dane,"
+    },
+    {
+      "number": 45,
+      "speaker": "KING",
+      "text": "And lose your voice: what wouldst thou beg, Laertes,"
+    },
+    {
+      "number": 46,
+      "speaker": "KING",
+      "text": "That shall not be my offer, not thy asking?"
+    },
+    {
+      "number": 47,
+      "speaker": "KING",
+      "text": "The head is not more native to the heart,"
+    },
+    {
+      "number": 48,
+      "speaker": "KING",
+      "text": "The hand more instrumental to the mouth,"
+    },
+    {
+      "number": 49,
+      "speaker": "KING",
+      "text": "Than is the throne of Denmark to thy father."
+    },
+    {
+      "number": 50,
+      "speaker": "KING",
+      "text": "What wouldst thou have, Laertes?"
+    },
+    {
+      "number": 50,
+      "speaker": "LAERTES",
+      "text": "My dread lord,"
+    },
+    {
+      "number": 51,
+      "speaker": "LAERTES",
+      "text": "Your leave and favour to return to France;"
+    },
+    {
+      "number": 52,
+      "speaker": "LAERTES",
+      "text": "From whence though willingly I came to Denmark,"
+    },
+    {
+      "number": 53,
+      "speaker": "LAERTES",
+      "text": "To show my duty in your coronation,"
+    },
+    {
+      "number": 54,
+      "speaker": "LAERTES",
+      "text": "Yet now, I must confess, that duty done,"
+    },
+    {
+      "number": 55,
+      "speaker": "LAERTES",
+      "text": "My thoughts and wishes bend again toward France"
+    },
+    {
+      "number": 56,
+      "speaker": "LAERTES",
+      "text": "And bow them to your gracious leave and pardon."
+    },
+    {
+      "number": 57,
+      "speaker": "KING",
+      "text": "Have you your father’s leave? What says Polonius?"
+    },
+    {
+      "number": 58,
+      "speaker": "POLONIUS",
+      "text": "He hath, my lord, wrung from me my slow leave"
+    },
+    {
+      "number": 59,
+      "speaker": "POLONIUS",
+      "text": "By laboursome petition, and at last"
+    },
+    {
+      "number": 60,
+      "speaker": "POLONIUS",
+      "text": "Upon his will I seal’d my hard consent:"
+    },
+    {
+      "number": 61,
+      "speaker": "POLONIUS",
+      "text": "I do beseech you, give him leave to go."
+    },
+    {
+      "number": 62,
+      "speaker": "KING",
+      "text": "Take thy fair hour, Laertes; time be thine,"
+    },
+    {
+      "number": 63,
+      "speaker": "KING",
+      "text": "And thy best graces spend it at thy will!"
+    },
+    {
+      "number": 64,
+      "speaker": "KING",
+      "text": "But now, my cousin Hamlet, and my son—"
+    },
+    {
+      "number": 65,
+      "speaker": "HAMLET",
+      "text": "A little more than kin, and less than kind."
+    },
+    {
+      "number": 66,
+      "speaker": "KING",
+      "text": "How is it that the clouds still hang on you?"
+    },
+    {
+      "number": 67,
+      "speaker": "HAMLET",
+      "text": "Not so, my lord; I am too much i’ the sun."
+    },
+    {
+      "number": 68,
+      "speaker": "QUEEN",
+      "text": "Good Hamlet, cast thy nighted colour off,"
+    },
+    {
+      "number": 69,
+      "speaker": "QUEEN",
+      "text": "And let thine eye look like a friend on Denmark."
+    },
+    {
+      "number": 70,
+      "speaker": "QUEEN",
+      "text": "Do not for ever with thy vailed lids"
+    },
+    {
+      "number": 71,
+      "speaker": "QUEEN",
+      "text": "Seek for thy noble father in the dust:"
+    },
+    {
+      "number": 72,
+      "speaker": "QUEEN",
+      "text": "Thou know’st ’tis common; all that lives must die,"
+    },
+    {
+      "number": 73,
+      "speaker": "QUEEN",
+      "text": "Passing through nature to eternity."
+    },
+    {
+      "number": 73,
+      "speaker": "HAMLET",
+      "text": "Ay, madam, it is common."
+    },
+    {
+      "number": 74,
+      "speaker": "QUEEN",
+      "text": "If it be,"
+    },
+    {
+      "number": 75,
+      "speaker": "QUEEN",
+      "text": "Why seems it so particular with thee?"
+    },
+    {
+      "number": 76,
+      "speaker": "HAMLET",
+      "text": "Seems, madam! nay, it is; I know not “seems.”"
+    },
+    {
+      "number": 77,
+      "speaker": "HAMLET",
+      "text": "’Tis not alone my inky cloak, good mother,"
+    },
+    {
+      "number": 78,
+      "speaker": "HAMLET",
+      "text": "Nor customary suits of solemn black,"
+    },
+    {
+      "number": 79,
+      "speaker": "HAMLET",
+      "text": "Nor windy suspiration of forced breath,"
+    },
+    {
+      "number": 80,
+      "speaker": "HAMLET",
+      "text": "No, nor the fruitful river in the eye,"
+    },
+    {
+      "number": 81,
+      "speaker": "HAMLET",
+      "text": "Nor the dejected ’havior of the visage,"
+    },
+    {
+      "number": 82,
+      "speaker": "HAMLET",
+      "text": "Together with all forms, moods, shapes of grief,"
+    },
+    {
+      "number": 83,
+      "speaker": "HAMLET",
+      "text": "That can denote me truly: these indeed seem,"
+    },
+    {
+      "number": 84,
+      "speaker": "HAMLET",
+      "text": "For they are actions that a man might play:"
+    },
+    {
+      "number": 85,
+      "speaker": "HAMLET",
+      "text": "But I have that within which passeth show;"
+    },
+    {
+      "number": 86,
+      "speaker": "HAMLET",
+      "text": "These but the trappings and the suits of woe."
+    },
+    {
+      "number": 87,
+      "speaker": "KING",
+      "text": "’Tis sweet and commendable in your nature, Hamlet,"
+    },
+    {
+      "number": 88,
+      "speaker": "KING",
+      "text": "To give these mourning duties to your father:"
+    },
+    {
+      "number": 89,
+      "speaker": "KING",
+      "text": "But, you must know, your father lost a father;"
+    },
+    {
+      "number": 90,
+      "speaker": "KING",
+      "text": "That father lost, lost his, and the survivor bound"
+    },
+    {
+      "number": 91,
+      "speaker": "KING",
+      "text": "In filial obligation for some term"
+    },
+    {
+      "number": 92,
+      "speaker": "KING",
+      "text": "To do obsequious sorrow: but to persever"
+    },
+    {
+      "number": 93,
+      "speaker": "KING",
+      "text": "In obstinate condolement is a course"
+    },
+    {
+      "number": 94,
+      "speaker": "KING",
+      "text": "Of impious stubbornness; ’tis unmanly grief;"
+    },
+    {
+      "number": 95,
+      "speaker": "KING",
+      "text": "It shows a will most incorrect to heaven,"
+    },
+    {
+      "number": 96,
+      "speaker": "KING",
+      "text": "A heart unfortified, a mind impatient,"
+    },
+    {
+      "number": 97,
+      "speaker": "KING",
+      "text": "An understanding simple and unschool’d:"
+    },
+    {
+      "number": 98,
+      "speaker": "KING",
+      "text": "For what we know must be and is as common"
+    },
+    {
+      "number": 99,
+      "speaker": "KING",
+      "text": "As any the most vulgar thing to sense,"
+    },
+    {
+      "number": 100,
+      "speaker": "KING",
+      "text": "Why should we in our peevish opposition"
+    },
+    {
+      "number": 101,
+      "speaker": "KING",
+      "text": "Take it to heart? Fie! ’tis a fault to heaven,"
+    },
+    {
+      "number": 102,
+      "speaker": "KING",
+      "text": "A fault against the dead, a fault to nature,"
+    },
+    {
+      "number": 103,
+      "speaker": "KING",
+      "text": "To reason most absurd; whose common theme"
+    },
+    {
+      "number": 104,
+      "speaker": "KING",
+      "text": "Is death of fathers, and who still hath cried,"
+    },
+    {
+      "number": 105,
+      "speaker": "KING",
+      "text": "From the first corse till he that died to-day,"
+    },
+    {
+      "number": 106,
+      "speaker": "KING",
+      "text": "“This must be so.” We pray you, throw to earth"
+    },
+    {
+      "number": 107,
+      "speaker": "KING",
+      "text": "This unprevailing woe, and think of us"
+    },
+    {
+      "number": 108,
+      "speaker": "KING",
+      "text": "As of a father: for let the world take note,"
+    },
+    {
+      "number": 109,
+      "speaker": "KING",
+      "text": "You are the most immediate to our throne;"
+    },
+    {
+      "number": 110,
+      "speaker": "KING",
+      "text": "And with no less nobility of love"
+    },
+    {
+      "number": 111,
+      "speaker": "KING",
+      "text": "Than that which dearest father bears his son,"
+    },
+    {
+      "number": 112,
+      "speaker": "KING",
+      "text": "Do I impart toward you. For your intent"
+    },
+    {
+      "number": 113,
+      "speaker": "KING",
+      "text": "In going back to school in Wittenberg,"
+    },
+    {
+      "number": 114,
+      "speaker": "KING",
+      "text": "It is most retrograde to our desire:"
+    },
+    {
+      "number": 115,
+      "speaker": "KING",
+      "text": "And we beseech you, bend you to remain"
+    },
+    {
+      "number": 116,
+      "speaker": "KING",
+      "text": "Here, in the cheer and comfort of our eye,"
+    },
+    {
+      "number": 117,
+      "speaker": "KING",
+      "text": "Our chiefest courtier, cousin, and our son."
+    },
+    {
+      "number": 118,
+      "speaker": "QUEEN",
+      "text": "Let not thy mother lose her prayers, Hamlet:"
+    },
+    {
+      "number": 119,
+      "speaker": "QUEEN",
+      "text": "I pray thee, stay with us; go not to Wittenberg."
+    },
+    {
+      "number": 120,
+      "speaker": "HAMLET",
+      "text": "I shall in all my best obey you, madam."
+    },
+    {
+      "number": 121,
+      "speaker": "KING",
+      "text": "Why, ’tis a loving and a fair reply:"
+    },
+    {
+      "number": 122,
+      "speaker": "KING",
+      "text": "Be as ourself in Denmark. Madam, come;"
+    },
+    {
+      "number": 123,
+      "speaker": "KING",
+      "text": "This gentle and unforced accord of Hamlet"
+    },
+    {
+      "number": 124,
+      "speaker": "KING",
+      "text": "Sits smiling to my heart: in grace whereof,"
+    },
+    {
+      "number": 125,
+      "speaker": "KING",
+      "text": "No jocund health that Denmark drinks to-day,"
+    },
+    {
+      "number": 126,
+      "speaker": "KING",
+      "text": "But the great cannon to the clouds shall tell,"
+    },
+    {
+      "number": 127,
+      "speaker": "KING",
+      "text": "And the king’s rouse the heavens shall bruit again,"
+    },
+    {
+      "number": 128,
+      "speaker": "KING",
+      "text": "Re-speaking earthly thunder. Come away."
+    },
+    {
+      "number": 129,
+      "speaker": "HAMLET",
+      "text": "O, that this too too solid flesh would melt,"
+    },
+    {
+      "number": 130,
+      "speaker": "HAMLET",
+      "text": "Thaw and resolve itself into a dew!"
+    },
+    {
+      "number": 131,
+      "speaker": "HAMLET",
+      "text": "Or that the Everlasting had not fix’d"
+    },
+    {
+      "number": 132,
+      "speaker": "HAMLET",
+      "text": "His canon ’gainst self-slaughter! O God! God!"
+    },
+    {
+      "number": 133,
+      "speaker": "HAMLET",
+      "text": "How weary, stale, flat and unprofitable,"
+    },
+    {
+      "number": 134,
+      "speaker": "HAMLET",
+      "text": "Seem to me all the uses of this world!"
+    },
+    {
+      "number": 135,
+      "speaker": "HAMLET",
+      "text": "Fie on’t! ah fie! ’tis an unweeded garden,"
+    },
+    {
+      "number": 136,
+      "speaker": "HAMLET",
+      "text": "That grows to seed; things rank and gross in nature"
+    },
+    {
+      "number": 137,
+      "speaker": "HAMLET",
+      "text": "Possess it merely. That it should come to this!"
+    },
+    {
+      "number": 138,
+      "speaker": "HAMLET",
+      "text": "But two months dead: nay, not so much, not two:"
+    },
+    {
+      "number": 139,
+      "speaker": "HAMLET",
+      "text": "So excellent a king; that was, to this,"
+    },
+    {
+      "number": 140,
+      "speaker": "HAMLET",
+      "text": "Hyperion to a satyr; so loving to my mother"
+    },
+    {
+      "number": 141,
+      "speaker": "HAMLET",
+      "text": "That he might not beteem the winds of heaven"
+    },
+    {
+      "number": 142,
+      "speaker": "HAMLET",
+      "text": "Visit her face too roughly. Heaven and earth!"
+    },
+    {
+      "number": 143,
+      "speaker": "HAMLET",
+      "text": "Must I remember? why, she would hang on him,"
+    },
+    {
+      "number": 144,
+      "speaker": "HAMLET",
+      "text": "As if increase of appetite had grown"
+    },
+    {
+      "number": 145,
+      "speaker": "HAMLET",
+      "text": "By what it fed on: and yet, within a month—"
+    },
+    {
+      "number": 146,
+      "speaker": "HAMLET",
+      "text": "Let me not think on’t—Frailty, thy name is woman!—"
+    },
+    {
+      "number": 147,
+      "speaker": "HAMLET",
+      "text": "A little month, or ere those shoes were old"
+    },
+    {
+      "number": 148,
+      "speaker": "HAMLET",
+      "text": "With which she follow’d my poor father’s body,"
+    },
+    {
+      "number": 149,
+      "speaker": "HAMLET",
+      "text": "Like Niobe, all tears:—why she, even she—"
+    },
+    {
+      "number": 150,
+      "speaker": "HAMLET",
+      "text": "O, God! a beast, that wants discourse of reason,"
+    },
+    {
+      "number": 151,
+      "speaker": "HAMLET",
+      "text": "Would have mourn’d longer—married with my uncle,"
+    },
+    {
+      "number": 152,
+      "speaker": "HAMLET",
+      "text": "My father’s brother, but no more like my father"
+    },
+    {
+      "number": 153,
+      "speaker": "HAMLET",
+      "text": "Than I to Hercules: within a month:"
+    },
+    {
+      "number": 154,
+      "speaker": "HAMLET",
+      "text": "Ere yet the salt of most unrighteous tears"
+    },
+    {
+      "number": 155,
+      "speaker": "HAMLET",
+      "text": "Had left the flushing in her galled eyes,"
+    },
+    {
+      "number": 156,
+      "speaker": "HAMLET",
+      "text": "She married. O, most wicked speed, to post"
+    },
+    {
+      "number": 157,
+      "speaker": "HAMLET",
+      "text": "With such dexterity to incestuous sheets!"
+    },
+    {
+      "number": 158,
+      "speaker": "HAMLET",
+      "text": "It is not nor it cannot come to good:"
+    },
+    {
+      "number": 159,
+      "speaker": "HAMLET",
+      "text": "But break, my heart; for I must hold my tongue."
+    },
+    {
+      "number": 160,
+      "speaker": "HORATIO",
+      "text": "Hail to your lordship!"
+    },
+    {
+      "number": 161,
+      "speaker": "HAMLET",
+      "text": "I am glad to see you well:"
+    },
+    {
+      "number": 162,
+      "speaker": "HAMLET",
+      "text": "Horatio—or I do forget myself."
+    },
+    {
+      "number": 163,
+      "speaker": "HORATIO",
+      "text": "The same, my lord, and your poor servant ever."
+    },
+    {
+      "number": 164,
+      "speaker": "HAMLET",
+      "text": "Sir, my good friend; I’ll change that name with you:"
+    },
+    {
+      "number": 165,
+      "speaker": "HAMLET",
+      "text": "And what make you from Wittenberg, Horatio?"
+    },
+    {
+      "number": 166,
+      "speaker": "HAMLET",
+      "text": "Marcellus?"
+    },
+    {
+      "number": 166,
+      "speaker": "MARCELLUS",
+      "text": "My good lord—"
+    },
+    {
+      "number": 167,
+      "speaker": "HAMLET",
+      "text": "I am very glad to see you. Good even, sir."
+    },
+    {
+      "number": 168,
+      "speaker": "HAMLET",
+      "text": "But what, in faith, make you from Wittenberg?"
+    },
+    {
+      "number": 169,
+      "speaker": "HORATIO",
+      "text": "A truant disposition, good my lord."
+    },
+    {
+      "number": 170,
+      "speaker": "HAMLET",
+      "text": "I would not hear your enemy say so,"
+    },
+    {
+      "number": 171,
+      "speaker": "HAMLET",
+      "text": "Nor shall you do mine ear that violence,"
+    },
+    {
+      "number": 172,
+      "speaker": "HAMLET",
+      "text": "To make it truster of your own report"
+    },
+    {
+      "number": 173,
+      "speaker": "HAMLET",
+      "text": "Against yourself: I know you are no truant."
+    },
+    {
+      "number": 174,
+      "speaker": "HAMLET",
+      "text": "But what is your affair in Elsinore?"
+    },
+    {
+      "number": 175,
+      "speaker": "HAMLET",
+      "text": "We’ll teach you to drink deep ere you depart."
+    },
+    {
+      "number": 176,
+      "speaker": "HORATIO",
+      "text": "My lord, I came to see your father’s funeral."
+    },
+    {
+      "number": 177,
+      "speaker": "HAMLET",
+      "text": "I pray thee, do not mock me, fellow-student;"
+    },
+    {
+      "number": 178,
+      "speaker": "HAMLET",
+      "text": "I think it was to see my mother’s wedding."
+    },
+    {
+      "number": 179,
+      "speaker": "HORATIO",
+      "text": "Indeed, my lord, it follow’d hard upon."
+    },
+    {
+      "number": 180,
+      "speaker": "HAMLET",
+      "text": "Thrift, thrift, Horatio! the funeral baked meats"
+    },
+    {
+      "number": 181,
+      "speaker": "HAMLET",
+      "text": "Did coldly furnish forth the marriage tables."
+    },
+    {
+      "number": 182,
+      "speaker": "HAMLET",
+      "text": "Would I had met my dearest foe in heaven"
+    },
+    {
+      "number": 183,
+      "speaker": "HAMLET",
+      "text": "Or ever I had seen that day, Horatio!"
+    },
+    {
+      "number": 184,
+      "speaker": "HAMLET",
+      "text": "My father!—methinks I see my father."
+    },
+    {
+      "number": 184,
+      "speaker": "HORATIO",
+      "text": "Where, my lord?"
+    },
+    {
+      "number": 185,
+      "speaker": "HAMLET",
+      "text": "In my mind’s eye, Horatio."
+    },
+    {
+      "number": 186,
+      "speaker": "HORATIO",
+      "text": "I saw him once; he was a goodly king."
+    },
+    {
+      "number": 187,
+      "speaker": "HAMLET",
+      "text": "He was a man, take him for all in all,"
+    },
+    {
+      "number": 188,
+      "speaker": "HAMLET",
+      "text": "I shall not look upon his like again."
+    },
+    {
+      "number": 189,
+      "speaker": "HORATIO",
+      "text": "My lord, I think I saw him yesternight."
+    },
+    {
+      "number": 190,
+      "speaker": "HAMLET",
+      "text": "Saw? who?"
+    },
+    {
+      "number": 190,
+      "speaker": "HORATIO",
+      "text": "My lord, the king your father."
+    },
+    {
+      "number": 191,
+      "speaker": "HAMLET",
+      "text": "The king my father!"
+    },
+    {
+      "number": 191,
+      "speaker": "HORATIO",
+      "text": "Season your admiration for a while"
+    },
+    {
+      "number": 192,
+      "speaker": "HORATIO",
+      "text": "With an attent ear, till I may deliver,"
+    },
+    {
+      "number": 193,
+      "speaker": "HORATIO",
+      "text": "Upon the witness of these gentlemen,"
+    },
+    {
+      "number": 194,
+      "speaker": "HORATIO",
+      "text": "This marvel to you."
+    },
+    {
+      "number": 194,
+      "speaker": "HAMLET",
+      "text": "For God’s love, let me hear."
+    },
+    {
+      "number": 195,
+      "speaker": "HORATIO",
+      "text": "Two nights together had these gentlemen,"
+    },
+    {
+      "number": 196,
+      "speaker": "HORATIO",
+      "text": "Marcellus and Bernardo, on their watch,"
+    },
+    {
+      "number": 197,
+      "speaker": "HORATIO",
+      "text": "In the dead vast and middle of the night,"
+    },
+    {
+      "number": 198,
+      "speaker": "HORATIO",
+      "text": "Been thus encounter’d. A figure like your father,"
+    },
+    {
+      "number": 199,
+      "speaker": "HORATIO",
+      "text": "Armed at point exactly, cap-a-pe,"
+    },
+    {
+      "number": 200,
+      "speaker": "HORATIO",
+      "text": "Appears before them, and with solemn march"
+    },
+    {
+      "number": 201,
+      "speaker": "HORATIO",
+      "text": "Goes slow and stately by them: thrice he walk’d"
+    },
+    {
+      "number": 202,
+      "speaker": "HORATIO",
+      "text": "By their oppress’d and fear-surprised eyes,"
+    },
+    {
+      "number": 203,
+      "speaker": "HORATIO",
+      "text": "Within his truncheon’s length; whilst they, distill’d"
+    },
+    {
+      "number": 204,
+      "speaker": "HORATIO",
+      "text": "Almost to jelly with the act of fear,"
+    },
+    {
+      "number": 205,
+      "speaker": "HORATIO",
+      "text": "Stand dumb and speak not to him. This to me"
+    },
+    {
+      "number": 206,
+      "speaker": "HORATIO",
+      "text": "In dreadful secrecy impart they did;"
+    },
+    {
+      "number": 207,
+      "speaker": "HORATIO",
+      "text": "And I with them the third night kept the watch:"
+    },
+    {
+      "number": 208,
+      "speaker": "HORATIO",
+      "text": "Where, as they had deliver’d, both in time,"
+    },
+    {
+      "number": 209,
+      "speaker": "HORATIO",
+      "text": "Form of the thing, each word made true and good,"
+    },
+    {
+      "number": 210,
+      "speaker": "HORATIO",
+      "text": "The apparition comes: I knew your father;"
+    },
+    {
+      "number": 211,
+      "speaker": "HORATIO",
+      "text": "These hands are not more like."
+    },
+    {
+      "number": 211,
+      "speaker": "HAMLET",
+      "text": "But where was this?"
+    },
+    {
+      "number": 212,
+      "speaker": "MARCELLUS",
+      "text": "My lord, upon the platform where we watch’d."
+    },
+    {
+      "number": 213,
+      "speaker": "HAMLET",
+      "text": "Did you not speak to it?"
+    },
+    {
+      "number": 213,
+      "speaker": "HORATIO",
+      "text": "My lord, I did;"
+    },
+    {
+      "number": 214,
+      "speaker": "HORATIO",
+      "text": "But answer made it none: yet once methought"
+    },
+    {
+      "number": 215,
+      "speaker": "HORATIO",
+      "text": "It lifted up its head and did address"
+    },
+    {
+      "number": 216,
+      "speaker": "HORATIO",
+      "text": "Itself to motion, like as it would speak;"
+    },
+    {
+      "number": 217,
+      "speaker": "HORATIO",
+      "text": "But even then the morning cock crew loud,"
+    },
+    {
+      "number": 218,
+      "speaker": "HORATIO",
+      "text": "And at the sound it shrunk in haste away,"
+    },
+    {
+      "number": 219,
+      "speaker": "HORATIO",
+      "text": "And vanish’d from our sight."
+    },
+    {
+      "number": 219,
+      "speaker": "HAMLET",
+      "text": "’Tis very strange."
+    },
+    {
+      "number": 220,
+      "speaker": "HORATIO",
+      "text": "As I do live, my honour’d lord, ’tis true;"
+    },
+    {
+      "number": 221,
+      "speaker": "HORATIO",
+      "text": "And we did think it writ down in our duty"
+    },
+    {
+      "number": 222,
+      "speaker": "HORATIO",
+      "text": "To let you know of it."
+    },
+    {
+      "number": 223,
+      "speaker": "HAMLET",
+      "text": "Indeed, indeed, sirs, but this troubles me."
+    },
+    {
+      "number": 224,
+      "speaker": "HAMLET",
+      "text": "Hold you the watch to-night?"
+    },
+    {
+      "number": 224,
+      "speaker": "MARCELLUS BERNARDO",
+      "text": "We do, my lord."
+    },
+    {
+      "number": 225,
+      "speaker": "HAMLET",
+      "text": "Arm’d, say you?"
+    },
+    {
+      "number": 225,
+      "speaker": "MARCELLUS BERNARDO",
+      "text": "Arm’d, my lord."
+    },
+    {
+      "number": 226,
+      "speaker": "HAMLET",
+      "text": "From top to toe?"
+    },
+    {
+      "number": 226,
+      "speaker": "MARCELLUS BERNARDO",
+      "text": "My lord, from head to foot."
+    },
+    {
+      "number": 227,
+      "speaker": "HAMLET",
+      "text": "Then saw you not his face?"
+    },
+    {
+      "number": 228,
+      "speaker": "HORATIO",
+      "text": "O, yes, my lord; he wore his beaver up."
+    },
+    {
+      "number": 229,
+      "speaker": "HAMLET",
+      "text": "What, look’d he frowningly?"
+    },
+    {
+      "number": 230,
+      "speaker": "HORATIO",
+      "text": "A countenance more in sorrow than in anger."
+    },
+    {
+      "number": 231,
+      "speaker": "HAMLET",
+      "text": "Pale or red?"
+    },
+    {
+      "number": 231,
+      "speaker": "HORATIO",
+      "text": "Nay, very pale."
+    },
+    {
+      "number": 232,
+      "speaker": "HAMLET",
+      "text": "And fix’d his eyes upon you?"
+    },
+    {
+      "number": 232,
+      "speaker": "HORATIO",
+      "text": "Most constantly."
+    },
+    {
+      "number": 233,
+      "speaker": "HAMLET",
+      "text": "I would I had been there."
+    },
+    {
+      "number": 233,
+      "speaker": "HORATIO",
+      "text": "It would have much amazed you."
+    },
+    {
+      "number": 234,
+      "speaker": "HAMLET",
+      "text": "Very like, very like. Stay’d it long?"
+    },
+    {
+      "number": 235,
+      "speaker": "HORATIO",
+      "text": "While one with moderate haste might tell a hundred."
+    },
+    {
+      "number": 236,
+      "speaker": "MARCELLUS BERNARDO",
+      "text": "Longer, longer."
+    },
+    {
+      "number": 236,
+      "speaker": "HORATIO",
+      "text": "Not when I saw’t."
+    },
+    {
+      "number": 237,
+      "speaker": "HAMLET",
+      "text": "His beard was grizzled—no?"
+    },
+    {
+      "number": 238,
+      "speaker": "HORATIO",
+      "text": "It was, as I have seen it in his life,"
+    },
+    {
+      "number": 239,
+      "speaker": "HORATIO",
+      "text": "A sable silver’d."
+    },
+    {
+      "number": 239,
+      "speaker": "HAMLET",
+      "text": "I will watch to-night;"
+    },
+    {
+      "number": 240,
+      "speaker": "HAMLET",
+      "text": "Perchance ’twill walk again."
+    },
+    {
+      "number": 240,
+      "speaker": "HORATIO",
+      "text": "I warrant it will."
+    },
+    {
+      "number": 241,
+      "speaker": "HAMLET",
+      "text": "If it assume my noble father’s person,"
+    },
+    {
+      "number": 242,
+      "speaker": "HAMLET",
+      "text": "I’ll speak to it, though hell itself should gape"
+    },
+    {
+      "number": 243,
+      "speaker": "HAMLET",
+      "text": "And bid me hold my peace. I pray you all,"
+    },
+    {
+      "number": 244,
+      "speaker": "HAMLET",
+      "text": "If you have hitherto conceal’d this sight,"
+    },
+    {
+      "number": 245,
+      "speaker": "HAMLET",
+      "text": "Let it be tenable in your silence still;"
+    },
+    {
+      "number": 246,
+      "speaker": "HAMLET",
+      "text": "And whatsoever else shall hap to-night,"
+    },
+    {
+      "number": 247,
+      "speaker": "HAMLET",
+      "text": "Give it an understanding, but no tongue:"
+    },
+    {
+      "number": 248,
+      "speaker": "HAMLET",
+      "text": "I will requite your loves. So, fare you well:"
+    },
+    {
+      "number": 249,
+      "speaker": "HAMLET",
+      "text": "Upon the platform, ’twixt eleven and twelve,"
+    },
+    {
+      "number": 250,
+      "speaker": "HAMLET",
+      "text": "I’ll visit you."
+    },
+    {
+      "number": 250,
+      "speaker": "ALL",
+      "text": "Our duty to your honour."
+    },
+    {
+      "number": 251,
+      "speaker": "HAMLET",
+      "text": "Your loves, as mine to you: farewell."
+    },
+    {
+      "number": 252,
+      "speaker": "HAMLET",
+      "text": "My father’s spirit in arms! all is not well;"
+    },
+    {
+      "number": 253,
+      "speaker": "HAMLET",
+      "text": "I doubt some foul play: would the night were come!"
+    },
+    {
+      "number": 254,
+      "speaker": "HAMLET",
+      "text": "Till then sit still, my soul: foul deeds will rise,"
+    },
+    {
+      "number": 255,
+      "speaker": "HAMLET",
+      "text": "Though all the earth o’erwhelm them, to men’s eyes."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter King, Queen, Hamlet, Polonius, Laertes, Voltimand, Cornelius, Lords, and Attendants."
+    },
+    {
+      "after_line": 41,
+      "text": "Exeunt Voltimand and Cornelius."
+    },
+    {
+      "after_line": 65,
+      "text": "Aside."
+    },
+    {
+      "after_line": 128,
+      "text": "Exeunt all but Hamlet."
+    },
+    {
+      "after_line": 159,
+      "text": "Enter Horatio, Marcellus, and Bernardo."
+    },
+    {
+      "after_line": 251,
+      "text": "Exeunt all but Hamlet."
+    },
+    {
+      "after_line": 255,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "hamlet_act1_scene2_gloss1",
+      "line": 1,
+      "phrase": "dear brother’s death",
+      "definition": "our beloved brother King Hamlet's recent death"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss2",
+      "line": 2,
+      "phrase": "green",
+      "definition": "fresh; not yet healed"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss3",
+      "line": 8,
+      "phrase": "sometime sister",
+      "definition": "former sister-in-law (Gertrude, now wife)"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss4",
+      "line": 9,
+      "phrase": "jointress",
+      "definition": "widow who holds rights to joint estate"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss5",
+      "line": 11,
+      "phrase": "auspicious and a dropping eye",
+      "definition": "one eye joyful, the other weeping"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss6",
+      "line": 12,
+      "phrase": "mirth in funeral",
+      "definition": "merriment at a funeral (paradoxical)"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss7",
+      "line": 12,
+      "phrase": "dirge in marriage",
+      "definition": "funeral song at a wedding"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss8",
+      "line": 18,
+      "phrase": "weak supposal of our worth",
+      "definition": "low estimate of our strength"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss9",
+      "line": 29,
+      "phrase": "bed-rid",
+      "definition": "bedridden; confined to bed"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss10",
+      "line": 31,
+      "phrase": "gait",
+      "definition": "progress; advance"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss11",
+      "line": 39,
+      "phrase": "commend your duty",
+      "definition": "present your respects"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss12",
+      "line": 42,
+      "phrase": "Laertes",
+      "definition": "son of Polonius, brother of Ophelia"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss13",
+      "line": 45,
+      "phrase": "lose your voice",
+      "definition": "ask in vain"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss14",
+      "line": 47,
+      "phrase": "native to the heart",
+      "definition": "intrinsically connected to the heart"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss15",
+      "line": 48,
+      "phrase": "instrumental to the mouth",
+      "definition": "as useful as the mouth"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss16",
+      "line": 56,
+      "phrase": "leave and pardon",
+      "definition": "permission and forgiveness"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss17",
+      "line": 58,
+      "phrase": "wrung from me my slow leave",
+      "definition": "extracted from me my reluctant permission"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss18",
+      "line": 60,
+      "phrase": "hard consent",
+      "definition": "grudging agreement"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss19",
+      "line": 63,
+      "phrase": "best graces spend it at thy will",
+      "definition": "my best blessings—spend (your time) as you wish"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss20",
+      "line": 64,
+      "phrase": "cousin",
+      "definition": "kinsman (general term for relative)"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss21",
+      "line": 65,
+      "phrase": "kin, and less than kind",
+      "definition": "related, but not truly of the same nature (wordplay on 'kin'/'kind')"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss22",
+      "line": 67,
+      "phrase": "too much i’ the sun",
+      "definition": "too much in the sunshine (and punning on 'son')"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss23",
+      "line": 68,
+      "phrase": "nighted colour",
+      "definition": "black (mourning) color"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss24",
+      "line": 69,
+      "phrase": "Denmark",
+      "definition": "the King of Denmark"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss25",
+      "line": 70,
+      "phrase": "vailed lids",
+      "definition": "lowered eyelids"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss26",
+      "line": 71,
+      "phrase": "noble father in the dust",
+      "definition": "buried father"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss27",
+      "line": 72,
+      "phrase": "common",
+      "definition": "universal; shared by all"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss28",
+      "line": 76,
+      "phrase": "seems, madam",
+      "definition": "appears only (Hamlet rejects 'seeming')"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss29",
+      "line": 77,
+      "phrase": "inky cloak",
+      "definition": "black mourning cloak"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss30",
+      "line": 78,
+      "phrase": "suits of solemn black",
+      "definition": "outfits of formal mourning attire"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss31",
+      "line": 79,
+      "phrase": "windy suspiration of forced breath",
+      "definition": "exaggerated sighing"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss32",
+      "line": 80,
+      "phrase": "fruitful river in the eye",
+      "definition": "abundant flow of tears"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss33",
+      "line": 86,
+      "phrase": "trappings and the suits of woe",
+      "definition": "outward show and clothing of grief"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss34",
+      "line": 92,
+      "phrase": "obsequious sorrow",
+      "definition": "sorrow that performs funeral rites"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss35",
+      "line": 93,
+      "phrase": "obstinate condolement",
+      "definition": "stubborn grief"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss36",
+      "line": 94,
+      "phrase": "impious stubbornness",
+      "definition": "irreligious obstinacy"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss37",
+      "line": 96,
+      "phrase": "unfortified",
+      "definition": "unarmed (spiritually)"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss38",
+      "line": 96,
+      "phrase": "impatient",
+      "definition": "unable to endure"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss39",
+      "line": 97,
+      "phrase": "simple and unschool’d",
+      "definition": "foolish and untaught"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss40",
+      "line": 99,
+      "phrase": "vulgar thing to sense",
+      "definition": "common thing to the senses (everyone dies)"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss41",
+      "line": 100,
+      "phrase": "peevish opposition",
+      "definition": "childish resistance"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss42",
+      "line": 107,
+      "phrase": "unprevailing",
+      "definition": "unavailing; ineffective"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss43",
+      "line": 109,
+      "phrase": "immediate to our throne",
+      "definition": "next heir to our throne"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss44",
+      "line": 113,
+      "phrase": "Wittenberg",
+      "definition": "German university town (where Hamlet studied, also Luther's)"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss45",
+      "line": 114,
+      "phrase": "retrograde to our desire",
+      "definition": "contrary to our wish"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss46",
+      "line": 115,
+      "phrase": "bend you",
+      "definition": "incline yourself"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss47",
+      "line": 125,
+      "phrase": "jocund health",
+      "definition": "cheerful toast to health"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss48",
+      "line": 127,
+      "phrase": "rouse",
+      "definition": "deep draught of liquor; toast"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss49",
+      "line": 127,
+      "phrase": "bruit again",
+      "definition": "loudly echo; re-announce"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss50",
+      "line": 129,
+      "phrase": "too too solid flesh",
+      "definition": "all too substantial body (Hamlet wishes it would melt)"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss51",
+      "line": 131,
+      "phrase": "Everlasting",
+      "definition": "God"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss52",
+      "line": 132,
+      "phrase": "canon ’gainst self-slaughter",
+      "definition": "divine law against suicide"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss53",
+      "line": 133,
+      "phrase": "weary, stale, flat and unprofitable",
+      "definition": "exhausted, tedious, dull, and useless"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss54",
+      "line": 135,
+      "phrase": "unweeded garden",
+      "definition": "neglected garden overrun with weeds"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss55",
+      "line": 136,
+      "phrase": "rank and gross in nature",
+      "definition": "coarse and corrupt by their nature"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss56",
+      "line": 140,
+      "phrase": "Hyperion to a satyr",
+      "definition": "a sun-god compared to a lustful goat-man (Hamlet's father vs. Claudius)"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss57",
+      "line": 141,
+      "phrase": "beteem",
+      "definition": "allow"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss58",
+      "line": 142,
+      "phrase": "visit her face too roughly",
+      "definition": "touch her face harshly (as with wind)"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss59",
+      "line": 143,
+      "phrase": "Must I remember?",
+      "definition": "must I keep recalling this?"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss60",
+      "line": 147,
+      "phrase": "or ere those shoes were old",
+      "definition": "before those shoes had become worn"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss61",
+      "line": 149,
+      "phrase": "Niobe, all tears",
+      "definition": "mythological mother who wept endlessly over her dead children"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss62",
+      "line": 153,
+      "phrase": "Hercules",
+      "definition": "mythic hero of prodigious strength"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss63",
+      "line": 155,
+      "phrase": "flushing in her galled eyes",
+      "definition": "redness in her sore, wept-out eyes"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss64",
+      "line": 157,
+      "phrase": "incestuous sheets",
+      "definition": "the bed of a marriage considered incestuous (brother's widow)"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss65",
+      "line": 164,
+      "phrase": "change that name with you",
+      "definition": "exchange the title 'friend' with you (equal affection)"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss66",
+      "line": 169,
+      "phrase": "truant disposition",
+      "definition": "tendency to play truant; absenteeism"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss67",
+      "line": 186,
+      "phrase": "goodly king",
+      "definition": "fine, admirable king"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss68",
+      "line": 187,
+      "phrase": "all in all",
+      "definition": "taking him altogether"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss69",
+      "line": 189,
+      "phrase": "yesternight",
+      "definition": "last night"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss70",
+      "line": 191,
+      "phrase": "Season your admiration",
+      "definition": "moderate your astonishment"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss71",
+      "line": 192,
+      "phrase": "attent",
+      "definition": "attentive"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss72",
+      "line": 192,
+      "phrase": "deliver",
+      "definition": "report; tell"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss73",
+      "line": 197,
+      "phrase": "dead vast and middle of the night",
+      "definition": "deep emptiness of midnight"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss74",
+      "line": 199,
+      "phrase": "cap-a-pe",
+      "definition": "from head to foot"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss75",
+      "line": 203,
+      "phrase": "truncheon’s length",
+      "definition": "length of a short staff"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss76",
+      "line": 206,
+      "phrase": "dreadful secrecy",
+      "definition": "fearful concealment"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss77",
+      "line": 228,
+      "phrase": "beaver up",
+      "definition": "visor raised"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss78",
+      "line": 237,
+      "phrase": "grizzled",
+      "definition": "grey-streaked (beard)"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss79",
+      "line": 245,
+      "phrase": "tenable in your silence",
+      "definition": "keep it in silence"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss80",
+      "line": 251,
+      "phrase": "loves",
+      "definition": "affections; loyalties"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss81",
+      "line": 253,
+      "phrase": "doubt some foul play",
+      "definition": "suspect foul play"
+    },
+    {
+      "id": "hamlet_act1_scene2_gloss82",
+      "line": 254,
+      "phrase": "Foul deeds will rise",
+      "definition": "evil acts will be revealed"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "hamlet_act1_scene2_ann1",
+      "line_start": 1,
+      "line_end": 16,
+      "citation_display": "Hamlet 1.2.1–16",
+      "category": "thematic",
+      "title": "The rhetoric of the usurper",
+      "body": "Claudius's opening speech is a masterclass in calculated balance: 'mirth in funeral,' 'dirge in marriage,' 'defeated joy,' 'auspicious and a dropping eye.' The rhetorical figure is oxymoron, and its density signals a speaker who needs language to do what his position cannot — reconcile mourning with celebration, legitimacy with haste. Elizabethan audiences would have heard a voice that sounds a great deal like their own Queen's accession speeches. What they would also have heard, and what Hamlet will later name, is that rhetorical poise functions here as concealment. The play's opening human voice is the voice of successful dissembling.",
+      "sources": [
+        "Harry Berger Jr., Imaginary Audition (1989)"
+      ]
+    },
+    {
+      "id": "hamlet_act1_scene2_ann2",
+      "line_start": 64,
+      "line_end": 74,
+      "citation_display": "Hamlet 1.2.64–74",
+      "category": "linguistic",
+      "title": "'A little more than kin, and less than kind'",
+      "body": "Hamlet's first line in the play is a pun that turns three times. 'Kin' means 'related,' now intensified by the incestuous marriage. 'Kind' means both 'natural' (he is too close in blood) and 'affectionate' (he feels nothing like it for Claudius). Beneath both runs the Old English sense of 'kind' as species or race: Claudius is not of Hamlet's kind. The line establishes a verbal strategy Hamlet will use for five acts: turning the simplest words against those who use them. When Claudius calls him 'son,' Hamlet hears 'sun'; when the King asks about his melancholy, Hamlet punctures 'seems' with 'I know not seems.' Wordplay is weaponry here, because open speech would be suicidal.",
+      "sources": [
+        "Frank Kermode, Shakespeare's Language (2000)"
+      ]
+    },
+    {
+      "id": "hamlet_act1_scene2_ann3",
+      "line_start": 129,
+      "line_end": 159,
+      "citation_display": "Hamlet 1.2.129–159",
+      "category": "thematic",
+      "title": "The first soliloquy: the problem of the remarriage",
+      "body": "Hamlet's first soliloquy grieves less for his father than for his mother. 'Frailty, thy name is woman' is not a general philosophical claim but a specific accusation: Gertrude's 'most wicked speed' has poisoned the mourning. The speech moves through classical analogies — Hyperion to a satyr, Niobe all tears — and arrives at the unspeakable: 'incestuous sheets.' Elizabethan canon law did forbid marriage to a deceased brother's wife; Henry VIII's divorce from Catherine of Aragon had turned precisely on this point, and Shakespeare's audience would recognize the charge. What drives the soliloquy is not yet the ghost's murder but the mother's remarriage — a private sexual grief that the public political scene has forced Hamlet to swallow.",
+      "sources": [
+        "Janet Adelman, Suffocating Mothers (1992)"
+      ]
+    },
+    {
+      "id": "hamlet_act1_scene2_ann4",
+      "line_start": 180,
+      "line_end": 258,
+      "citation_display": "Hamlet 1.2.180–258",
+      "category": "structural",
+      "title": "Hearsay and the delayed encounter",
+      "body": "Shakespeare delays Hamlet's meeting with the ghost by staging Horatio's report of it first. The effect is to make the ghost simultaneously present (Horatio's testimony is detailed, specific) and absent (Hamlet must wait until 1.4 to see for himself). The narrative technique multiplies the voices that attest to the apparition, building evidentiary pressure; it also gives Hamlet time to react to the news before the ghost makes its revelation. 'Foul deeds will rise, / Though all the earth o'erwhelm them, to men's eyes' — this is Hamlet's first articulation of a principle the play will test to destruction: that hidden truths cannot stay hidden. The plot from here will press that claim against the opposing pressure of concealment.",
+      "sources": [
+        "Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "hamlet_act1_scene2_q1",
+      "kind": "close_reading",
+      "prompt": "What rhetorical figure dominates Claudius's opening speech ('mirth in funeral,' 'dirge in marriage')?",
+      "options": [
+        "Anaphora: repeated phrases at the start of successive clauses.",
+        "Oxymoron: the pairing of contradictory terms.",
+        "Hyperbole: deliberate exaggeration for emphasis.",
+        "Chiasmus: a reversed repetition of words."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 8,
+      "anchor_line_end": 12
+    },
+    {
+      "id": "hamlet_act1_scene2_q2",
+      "kind": "close_reading",
+      "prompt": "In Hamlet's first line — 'A little more than kin, and less than kind' — what does the pun on 'kind' convey?",
+      "options": [
+        "Claudius is both overly familiar and insufficiently affectionate toward him.",
+        "Claudius is related by marriage but not by blood.",
+        "He means the word only in its modern sense of 'generous.'",
+        "He is contrasting Claudius to his father's courteous manner."
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 20,
+      "anchor_line_start": 64,
+      "anchor_line_end": 64
+    },
+    {
+      "id": "hamlet_act1_scene2_q3",
+      "kind": "comprehension",
+      "prompt": "What does Claudius deny Hamlet at the end of their first exchange?",
+      "options": [
+        "Permission to return to his university at Wittenberg.",
+        "The right to bear arms at court.",
+        "Access to the royal treasury for mourning expenses.",
+        "Admission to the Privy Council."
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 10,
+      "anchor_line_start": 110,
+      "anchor_line_end": 118
+    },
+    {
+      "id": "hamlet_act1_scene2_q4",
+      "kind": "theme",
+      "prompt": "What grievance drives Hamlet's first soliloquy, 'O, that this too too solid flesh would melt'?",
+      "options": [
+        "Claudius's murder of his father, which he has just discovered.",
+        "His mother's rapid remarriage to his uncle.",
+        "The threat of invasion from young Fortinbras.",
+        "Ophelia's rejection of his love-letters."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 129,
+      "anchor_line_end": 159
+    },
+    {
+      "id": "hamlet_act1_scene2_q5",
+      "kind": "inference",
+      "prompt": "When Hamlet calls Claudius 'no more like my father / Than I to Hercules,' what is he asserting?",
+      "options": [
+        "That he resembles Hercules in strength.",
+        "That he, like Claudius, is unimposing — but the resemblance between the two kings is even weaker.",
+        "That Hercules is the proper Greek analog for his father.",
+        "That Claudius fancies himself a Hercules and must be disabused."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 150,
+      "anchor_line_end": 152
+    },
+    {
+      "id": "hamlet_act1_scene2_q6",
+      "kind": "comprehension",
+      "prompt": "What does Horatio tell Hamlet at the end of the scene?",
+      "options": [
+        "That Claudius poisoned his father's wine at a banquet.",
+        "That a figure resembling the late King has appeared on the watch platform at night.",
+        "That Ophelia has refused his gifts and letters.",
+        "That Fortinbras has crossed into Danish territory."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 185,
+      "anchor_line_end": 235
+    }
+  ]
+}

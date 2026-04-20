@@ -1,0 +1,636 @@
+{
+  "section_id": "henry_v_act4_scene4",
+  "work_id": "henry-v",
+  "sequence": 21,
+  "act": 4,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "The field of battle",
+  "line_count": 65,
+  "word_count": 529,
+  "est_read_minutes": 3,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "PISTOL",
+      "text": "Yield, cur!"
+    },
+    {
+      "number": 2,
+      "speaker": "FRENCH SOLDIER",
+      "text": "Je pense que vous êtes le gentilhomme de bonne qualité."
+    },
+    {
+      "number": 3,
+      "speaker": "PISTOL",
+      "text": "Qualité calmie custore me! Art thou a gentleman? What is thy name? Discuss."
+    },
+    {
+      "number": 4,
+      "speaker": "FRENCH SOLDIER",
+      "text": "O Seigneur Dieu!"
+    },
+    {
+      "number": 5,
+      "speaker": "PISTOL",
+      "text": "O, Signieur Dew should be a gentleman:"
+    },
+    {
+      "number": 6,
+      "speaker": "PISTOL",
+      "text": "Perpend my words, O Signieur Dew, and mark;"
+    },
+    {
+      "number": 7,
+      "speaker": "PISTOL",
+      "text": "O Signieur Dew, thou diest on point of fox,"
+    },
+    {
+      "number": 8,
+      "speaker": "PISTOL",
+      "text": "Except, O signieur, thou do give to me"
+    },
+    {
+      "number": 9,
+      "speaker": "PISTOL",
+      "text": "Egregious ransom."
+    },
+    {
+      "number": 10,
+      "speaker": "FRENCH SOLDIER",
+      "text": "O, prenez miséricorde! ayez pitié de moi!"
+    },
+    {
+      "number": 11,
+      "speaker": "PISTOL",
+      "text": "Moy shall not serve; I will have forty moys;"
+    },
+    {
+      "number": 12,
+      "speaker": "PISTOL",
+      "text": "Or I will fetch thy rim out at thy throat"
+    },
+    {
+      "number": 13,
+      "speaker": "PISTOL",
+      "text": "In drops of crimson blood."
+    },
+    {
+      "number": 14,
+      "speaker": "FRENCH SOLDIER",
+      "text": "Est-il impossible d’échapper la force de ton bras?"
+    },
+    {
+      "number": 15,
+      "speaker": "PISTOL",
+      "text": "Brass, cur!"
+    },
+    {
+      "number": 16,
+      "speaker": "PISTOL",
+      "text": "Thou damned and luxurious mountain goat,"
+    },
+    {
+      "number": 17,
+      "speaker": "PISTOL",
+      "text": "Offer’st me brass?"
+    },
+    {
+      "number": 17,
+      "speaker": "FRENCH SOLDIER",
+      "text": "O pardonnez-moi!"
+    },
+    {
+      "number": 18,
+      "speaker": "PISTOL",
+      "text": "Say’st thou me so? is that a ton of moys?"
+    },
+    {
+      "number": 19,
+      "speaker": "PISTOL",
+      "text": "Come hither, boy: ask me this slave in French"
+    },
+    {
+      "number": 20,
+      "speaker": "PISTOL",
+      "text": "What is his name."
+    },
+    {
+      "number": 20,
+      "speaker": "BOY",
+      "text": "Écoutez: comment êtes-vous appelé?"
+    },
+    {
+      "number": 21,
+      "speaker": "FRENCH SOLDIER",
+      "text": "Monsieur le Fer."
+    },
+    {
+      "number": 22,
+      "speaker": "BOY",
+      "text": "He says his name is Master Fer."
+    },
+    {
+      "number": 23,
+      "speaker": "PISTOL",
+      "text": "Master Fer! I’ll fer him, and firk him, and ferret him: discuss"
+    },
+    {
+      "number": 24,
+      "speaker": "PISTOL",
+      "text": "the same in French unto him."
+    },
+    {
+      "number": 25,
+      "speaker": "BOY",
+      "text": "I do not know the French for fer, and ferret, and firk."
+    },
+    {
+      "number": 26,
+      "speaker": "PISTOL",
+      "text": "Bid him prepare; for I will cut his throat."
+    },
+    {
+      "number": 27,
+      "speaker": "FRENCH SOLDIER",
+      "text": "Que dit-il, monsieur?"
+    },
+    {
+      "number": 28,
+      "speaker": "BOY",
+      "text": "Il me commande de vous dire que vous faites vous prêt; car"
+    },
+    {
+      "number": 29,
+      "speaker": "BOY",
+      "text": "ce soldat ici est disposé tout à cette heure de couper votre"
+    },
+    {
+      "number": 30,
+      "speaker": "BOY",
+      "text": "gorge."
+    },
+    {
+      "number": 30,
+      "speaker": "PISTOL",
+      "text": "Owy, cuppele gorge, permafoy,"
+    },
+    {
+      "number": 31,
+      "speaker": "PISTOL",
+      "text": "Peasant, unless thou give me crowns, brave crowns;"
+    },
+    {
+      "number": 32,
+      "speaker": "PISTOL",
+      "text": "Or mangled shalt thou be by this my sword."
+    },
+    {
+      "number": 33,
+      "speaker": "FRENCH SOLDIER",
+      "text": "O, je vous supplie, pour l’amour de Dieu, me pardonner! Je suis"
+    },
+    {
+      "number": 34,
+      "speaker": "FRENCH SOLDIER",
+      "text": "le gentilhomme de bonne maison: gardez ma vie, et je vous donnerai"
+    },
+    {
+      "number": 35,
+      "speaker": "FRENCH SOLDIER",
+      "text": "deux cents écus."
+    },
+    {
+      "number": 35,
+      "speaker": "PISTOL",
+      "text": "What are his words?"
+    },
+    {
+      "number": 36,
+      "speaker": "BOY",
+      "text": "He prays you to save his life: he is a gentleman of"
+    },
+    {
+      "number": 37,
+      "speaker": "BOY",
+      "text": "a good house; and for his ransom he will give you two"
+    },
+    {
+      "number": 38,
+      "speaker": "BOY",
+      "text": "hundred crowns."
+    },
+    {
+      "number": 39,
+      "speaker": "PISTOL",
+      "text": "Tell him my fury shall abate, and I"
+    },
+    {
+      "number": 40,
+      "speaker": "PISTOL",
+      "text": "The crowns will take."
+    },
+    {
+      "number": 40,
+      "speaker": "FRENCH SOLDIER",
+      "text": "Petit monsieur, que dit-il?"
+    },
+    {
+      "number": 41,
+      "speaker": "BOY",
+      "text": "Encore qu’il est contre son jurement de pardonner aucun prisonnier, néanmoins, pour"
+    },
+    {
+      "number": 42,
+      "speaker": "BOY",
+      "text": "les écus que vous l’avez promis, il est content de vous donner"
+    },
+    {
+      "number": 43,
+      "speaker": "BOY",
+      "text": "la liberté, le franchisement."
+    },
+    {
+      "number": 44,
+      "speaker": "FRENCH SOLDIER",
+      "text": "Sur mes genoux je vous donne mille remercîments; et je m’estime heureux"
+    },
+    {
+      "number": 45,
+      "speaker": "FRENCH SOLDIER",
+      "text": "que je suis tombé entre les mains d’un chevalier, je pense, le"
+    },
+    {
+      "number": 46,
+      "speaker": "FRENCH SOLDIER",
+      "text": "plus brave, vaillant, et très distingué seigneur d’Angleterre."
+    },
+    {
+      "number": 47,
+      "speaker": "PISTOL",
+      "text": "Expound unto me, boy."
+    },
+    {
+      "number": 48,
+      "speaker": "BOY",
+      "text": "He gives you, upon his knees, a thousand thanks; and he esteems"
+    },
+    {
+      "number": 49,
+      "speaker": "BOY",
+      "text": "himself happy that he hath fallen into the hands of one, as"
+    },
+    {
+      "number": 50,
+      "speaker": "BOY",
+      "text": "he thinks, the most brave, valorous, and thrice-worthy seigneur of England."
+    },
+    {
+      "number": 51,
+      "speaker": "PISTOL",
+      "text": "As I suck blood, I will some mercy show. Follow me!"
+    },
+    {
+      "number": 52,
+      "speaker": "BOY",
+      "text": "Suivez-vous le grand capitaine. I did never know so full a voice"
+    },
+    {
+      "number": 53,
+      "speaker": "BOY",
+      "text": "issue from so empty a heart: but the saying is true, “The"
+    },
+    {
+      "number": 54,
+      "speaker": "BOY",
+      "text": "empty vessel makes the greatest sound.” Bardolph and Nym had ten times"
+    },
+    {
+      "number": 55,
+      "speaker": "BOY",
+      "text": "more valour than this roaring devil i’ the old play, that everyone"
+    },
+    {
+      "number": 56,
+      "speaker": "BOY",
+      "text": "may pare his nails with a wooden dagger; and they are both"
+    },
+    {
+      "number": 57,
+      "speaker": "BOY",
+      "text": "hanged; and so would this be, if he durst steal anything adventurously."
+    },
+    {
+      "number": 58,
+      "speaker": "BOY",
+      "text": "I must stay with the lackeys, with the luggage of our camp:"
+    },
+    {
+      "number": 59,
+      "speaker": "BOY",
+      "text": "the French might have a good prey of us, if he knew"
+    },
+    {
+      "number": 60,
+      "speaker": "BOY",
+      "text": "of it; for there is none to guard it but boys."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Alarum. Excursions. Enter Pistol, French Soldier, and Boy."
+    },
+    {
+      "after_line": 60,
+      "text": "Exeunt Pistol and French Soldier."
+    },
+    {
+      "after_line": 60,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act4_scene4_gloss1",
+      "line": 1,
+      "phrase": "cur",
+      "definition": "mongrel dog — Pistol's insult to his prisoner"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss2",
+      "line": 2,
+      "phrase": "Je pense que vous êtes le gentilhomme de bonne qualité",
+      "definition": "French: 'I think you are a gentleman of good quality' — the soldier's appeal to be spared"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss3",
+      "line": 3,
+      "phrase": "Qualité calmie custore me",
+      "definition": "Pistol's garbled mishearing of the soldier's French — he has no idea what was said"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss4",
+      "line": 4,
+      "phrase": "O Seigneur Dieu",
+      "definition": "French: 'O Lord God' — the soldier's exclamation"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss5",
+      "line": 5,
+      "phrase": "Signieur Dew",
+      "definition": "Pistol treats the French 'Seigneur Dieu' as the soldier's name — 'Mister Dew'"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss6",
+      "line": 6,
+      "phrase": "Perpend",
+      "definition": "weigh carefully; consider — Pistol's affected Latinism"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss7",
+      "line": 7,
+      "phrase": "point of fox",
+      "definition": "sword-point — 'fox' was slang for a sword, from a fox-head maker's mark"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss8",
+      "line": 9,
+      "phrase": "Egregious ransom",
+      "definition": "outstanding (large) ransom — 'egregious' retains its older sense of 'conspicuous'"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss9",
+      "line": 10,
+      "phrase": "prenez miséricorde",
+      "definition": "French: 'take mercy' — 'have mercy'"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss10",
+      "line": 10,
+      "phrase": "ayez pitié de moi",
+      "definition": "French: 'have pity on me'"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss11",
+      "line": 11,
+      "phrase": "Moy shall not serve",
+      "definition": "Pistol hears French 'moi' as a unit of measure — thinks the soldier is offering a small amount and demands forty"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss12",
+      "line": 12,
+      "phrase": "rim",
+      "definition": "the lining of the belly; entrails"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss13",
+      "line": 14,
+      "phrase": "Est-il impossible d’échapper la force de ton bras",
+      "definition": "French: 'Is it impossible to escape the force of your arm?'"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss14",
+      "line": 15,
+      "phrase": "Brass, cur!",
+      "definition": "Pistol mishears 'bras' (arm) as 'brass' (the metal) — thinks the soldier is insulting his honour by offering base metal"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss15",
+      "line": 16,
+      "phrase": "luxurious mountain goat",
+      "definition": "lecherous mountain goat — Pistol's absurd epithet"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss16",
+      "line": 17,
+      "phrase": "O pardonnez-moi",
+      "definition": "French: 'O pardon me'"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss17",
+      "line": 18,
+      "phrase": "ton of moys",
+      "definition": "a ton of (the things he calls 'moys') — Pistol's continued mis-hearing of 'moi'"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss18",
+      "line": 20,
+      "phrase": "Écoutez: comment êtes-vous appelé",
+      "definition": "French: 'Listen: what are you called?' — the Boy translating"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss19",
+      "line": 21,
+      "phrase": "Monsieur le Fer",
+      "definition": "French: 'Mr. the Iron' — his surname Le Fer means 'the iron'"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss20",
+      "line": 23,
+      "phrase": "fer him, and firk him, and ferret him",
+      "definition": "Pistol's triple pun — 'fer' plays on the name, 'firk' = beat/trounce (also sexually), 'ferret' = harass"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss21",
+      "line": 27,
+      "phrase": "Que dit-il, monsieur",
+      "definition": "French: 'What does he say, sir?'"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss22",
+      "line": 28,
+      "phrase": "Il me commande de vous dire",
+      "definition": "French: 'He orders me to tell you' — the Boy translates the threat back"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss23",
+      "line": 28,
+      "phrase": "vous faites vous prêt",
+      "definition": "French: 'make yourself ready'"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss24",
+      "line": 29,
+      "phrase": "couper votre gorge",
+      "definition": "French: 'cut your throat' — Pistol's famous 'couple a gorge' now in actual French"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss25",
+      "line": 30,
+      "phrase": "Owy, cuppele gorge, permafoy",
+      "definition": "Pistol's attempt at French — 'oui, couper la gorge, par ma foi'"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss26",
+      "line": 33,
+      "phrase": "je vous supplie, pour l’amour de Dieu",
+      "definition": "French: 'I beg you, for the love of God'"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss27",
+      "line": 34,
+      "phrase": "le gentilhomme de bonne maison",
+      "definition": "French: 'a gentleman of good family'"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss28",
+      "line": 35,
+      "phrase": "deux cents écus",
+      "definition": "French: 'two hundred crowns' — the ransom offered"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss29",
+      "line": 40,
+      "phrase": "Petit monsieur, que dit-il",
+      "definition": "French: 'Little sir, what does he say?'"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss30",
+      "line": 41,
+      "phrase": "Encore qu’il est contre son jurement",
+      "definition": "French: 'Although it is against his oath' — the Boy translates Pistol's grand face-saving reply"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss31",
+      "line": 43,
+      "phrase": "la liberté, le franchisement",
+      "definition": "French: 'liberty, freedom' — the prisoner's release"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss32",
+      "line": 44,
+      "phrase": "mille remercîments",
+      "definition": "French: 'a thousand thanks'"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss33",
+      "line": 45,
+      "phrase": "entre les mains d’un chevalier",
+      "definition": "French: 'into the hands of a knight'"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss34",
+      "line": 46,
+      "phrase": "plus brave, vaillant, et très distingué seigneur d’Angleterre",
+      "definition": "French: 'most brave, valorous, and most distinguished lord of England' — the Boy will translate this back literally"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss35",
+      "line": 52,
+      "phrase": "Suivez-vous le grand capitaine",
+      "definition": "French: 'Follow the great captain' — the Boy telling the prisoner to go with Pistol"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss36",
+      "line": 54,
+      "phrase": "empty vessel makes the greatest sound",
+      "definition": "proverb (from the Bible-era: 'empty vessels make most sound') — Pistol is noise without substance"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss37",
+      "line": 55,
+      "phrase": "roaring devil i’ the old play",
+      "definition": "the devil from medieval mystery plays — a traditional noisy stock-villain who could be beaten with a wooden dagger by any comic"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss38",
+      "line": 56,
+      "phrase": "pare his nails with a wooden dagger",
+      "definition": "the Vice-character's typical stage-business; a toothless threat"
+    },
+    {
+      "id": "henry_v_act4_scene4_gloss39",
+      "line": 58,
+      "phrase": "stay with the lackeys, with the luggage",
+      "definition": "the boys guarded the baggage — a detail that becomes fatal in 4.7 when the French sack the camp and kill the boys"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act4_scene4_ann1",
+      "line_start": 1,
+      "line_end": 50,
+      "citation_display": "Henry V 4.4.1–50",
+      "category": "linguistic",
+      "title": "Bilingual comedy — the mishearing scene",
+      "body": "The capture of Monsieur Le Fer by Pistol and the Boy is built on sustained linguistic misunderstanding. Pistol hears the French 'Seigneur Dieu' as the man's name; he hears 'moi' as a unit of currency ('forty moys'); he hears the soldier's 'bras' (arm) as English 'brass' (the metal) and takes offence at being offered base metal. The Boy, who actually knows French, works as translator between them. The scene is funny, but it is doing important structural work: it gives us our last sustained look at Pistol, the Boy, and the Eastcheap group before the French raid the baggage camp and kill the Boy offstage (reported in 4.7). The Boy's final soliloquy at lines 52–60 — that Pistol is a 'roaring devil in the old play' with more noise than valour, and that he (the Boy) must stay with the luggage because the French could raid the camp — is the audience's last notice of the Boy's situation. By the next scene-but-one, he will be dead. Shakespeare lets the Boy earn the last word, and then has him killed for being in its way.",
+      "sources": [
+        "C. L. Barber, Shakespeare's Festive Comedy (1959)",
+        "Patricia Parker, Shakespeare from the Margins (1996)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act4_scene4_q1",
+      "kind": "close_reading",
+      "prompt": "What drives the comedy of Pistol's interrogation of the French soldier?",
+      "options": [
+        "Pistol's fluent French",
+        "A series of mishearings: 'Seigneur Dieu' taken as a name, 'moi' as a unit of currency, 'bras' (arm) as 'brass' (metal). The Boy mediates",
+        "The soldier's refusal to speak",
+        "A trick by the Constable of France"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 3,
+      "anchor_line_end": 20
+    },
+    {
+      "id": "henry_v_act4_scene4_q2",
+      "kind": "structural",
+      "prompt": "The Boy's soliloquy at 4.4 lines 52–60 is the audience's last extended look at him. What does he reveal?",
+      "options": [
+        "That he's plotting with the French",
+        "That he will stay with the luggage and lackeys (standard protocol for a boy non-combatant) because the French could easily raid the camp — foreshadowing his offstage death, reported in 4.7",
+        "That he wants to marry Alice",
+        "That he is Pistol's cousin"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 52,
+      "anchor_line_end": 60
+    }
+  ]
+}

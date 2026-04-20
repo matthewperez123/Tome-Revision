@@ -1,0 +1,235 @@
+{
+  "section_id": "richard_iii_act5_scene4",
+  "work_id": "richard-iii",
+  "sequence": 24,
+  "act": 5,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "Another part of the field",
+  "line_count": 13,
+  "word_count": 110,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CATESBY",
+      "text": "Rescue, my Lord of Norfolk, rescue, rescue!"
+    },
+    {
+      "number": 2,
+      "speaker": "CATESBY",
+      "text": "The king enacts more wonders than a man,"
+    },
+    {
+      "number": 3,
+      "speaker": "CATESBY",
+      "text": "Daring an opposite to every danger:"
+    },
+    {
+      "number": 4,
+      "speaker": "CATESBY",
+      "text": "His horse is slain, and all on foot he fights,"
+    },
+    {
+      "number": 5,
+      "speaker": "CATESBY",
+      "text": "Seeking for Richmond in the throat of death."
+    },
+    {
+      "number": 6,
+      "speaker": "CATESBY",
+      "text": "Rescue, fair lord, or else the day is lost!"
+    },
+    {
+      "number": 7,
+      "speaker": "KING RICHARD",
+      "text": "A horse! a horse! my kingdom for a horse!"
+    },
+    {
+      "number": 8,
+      "speaker": "CATESBY",
+      "text": "Withdraw, my lord; I’ll help you to a horse."
+    },
+    {
+      "number": 9,
+      "speaker": "KING RICHARD",
+      "text": "Slave, I have set my life upon a cast,"
+    },
+    {
+      "number": 10,
+      "speaker": "KING RICHARD",
+      "text": "And I will stand the hazard of the die:"
+    },
+    {
+      "number": 11,
+      "speaker": "KING RICHARD",
+      "text": "I think there be six Richmonds in the field;"
+    },
+    {
+      "number": 12,
+      "speaker": "KING RICHARD",
+      "text": "Five have I slain to-day instead of him."
+    },
+    {
+      "number": 13,
+      "speaker": "KING RICHARD",
+      "text": "A horse! a horse! my kingdom for a horse!"
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Alarum: excursions. Enter Norfolk and forces fighting; to him Catesby."
+    },
+    {
+      "after_line": 6,
+      "text": "Alarums. Enter King Richard."
+    },
+    {
+      "after_line": 13,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act5_scene4_gloss1",
+      "line": 2,
+      "phrase": "enacts more wonders than a man",
+      "definition": "performs more marvels than a (mere) man can — Catesby's superhuman image of Richard at bay"
+    },
+    {
+      "id": "richard_iii_act5_scene4_gloss2",
+      "line": 3,
+      "phrase": "Daring an opposite",
+      "definition": "daringly facing an opponent"
+    },
+    {
+      "id": "richard_iii_act5_scene4_gloss3",
+      "line": 5,
+      "phrase": "Seeking for Richmond in the throat of death",
+      "definition": "hunting Richmond in the very jaws of death — Richard seeks single combat"
+    },
+    {
+      "id": "richard_iii_act5_scene4_gloss4",
+      "line": 7,
+      "phrase": "A horse! a horse! my kingdom for a horse!",
+      "definition": "the play's most famous line — spoken in desperate literal need, NOT comic bluster; Richard has been unhorsed and is offering his entire realm for a mount to continue fighting. He dies moments later"
+    },
+    {
+      "id": "richard_iii_act5_scene4_gloss5",
+      "line": 9,
+      "phrase": "set my life upon a cast",
+      "definition": "gambled my life on a throw of the dice — 'cast' = die-throw"
+    },
+    {
+      "id": "richard_iii_act5_scene4_gloss6",
+      "line": 10,
+      "phrase": "stand the hazard of the die",
+      "definition": "accept the risk of the dice — Richard's gaming-table heroism at the point of death"
+    },
+    {
+      "id": "richard_iii_act5_scene4_gloss7",
+      "line": 11,
+      "phrase": "six Richmonds in the field",
+      "definition": "six decoys dressed as Richmond — a common medieval battle tactic to protect a commander"
+    },
+    {
+      "id": "richard_iii_act5_scene4_gloss8",
+      "line": 13,
+      "phrase": "A horse! a horse! my kingdom for a horse!",
+      "definition": "repeated for emphasis — the line's desperation mounting; Richard goes to his death"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act5_scene4_ann1",
+      "line_start": 7,
+      "line_end": 13,
+      "citation_display": "Richard III 5.4.7–13",
+      "category": "thematic",
+      "title": "\"A horse! a horse!\" — restoring the line's weight",
+      "body": "The most famous line in Richard III is almost always quoted out of context. It is the death-scene. Richard has been unhorsed at Bosworth, his white Surrey has been killed, and he is fighting on foot in the centre of the battle. Catesby's preceding speech — \"The king enacts more wonders than a man... His horse is slain, and all on foot he fights\" — sets the military fact. Richard's offer \"my kingdom for a horse\" is not bluster; it is literal desperation. He is offering his entire claim to the throne for a remount to continue the fight. He is dead within minutes. Twentieth-century productions that have tried to play the line comically — with weary actors winking at the audience — have misread the scene. The line is tragic: a man who had schemed a kingdom reduced to trading it for transport. Restoring the line's seriousness is one of the play's most overdue critical adjustments.",
+      "sources": [
+        "Jan Kott, Shakespeare Our Contemporary (1964)",
+        "Stanley Wells, Shakespeare Survey 42 (1990)",
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)"
+      ]
+    },
+    {
+      "id": "richard_iii_act5_scene4_ann2",
+      "line_start": 9,
+      "line_end": 12,
+      "citation_display": "Richard III 5.4.9–12",
+      "category": "close_reading",
+      "title": "The gambler's heroism",
+      "body": "Richard's refusal of rescue — \"Slave, I have set my life upon a cast, / And I will stand the hazard of the die\" — converts his death-moment into a dice-table image. \"Cast\" is the throw of the die; \"hazard\" is the gambler's risk. The whole battle is a throw; he will see it through. The reference to \"six Richmonds in the field\" (historical: Richmond was deliberately decoyed by identically-armoured knights to confuse Richard's single-combat approach) reinforces the image of a desperate search by a man already half-dead. The repeated \"A horse! a horse! my kingdom for a horse!\" at line 13 — the exact line twice in eight lines — is not stuttering; it is the final cry of a man still trying to reach the target of his search. Then, stage direction-free, Richmond enters, and Richard is killed.",
+      "sources": [
+        "Marjorie Garber, Shakespeare and Modern Culture (2008)",
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)",
+        "Charles Ross, Richard III (1981)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act5_scene4_q1",
+      "kind": "close_reading",
+      "prompt": "\"A horse! a horse! my kingdom for a horse!\" — what is the immediate dramatic context?",
+      "options": [
+        "Richard is bargaining with a merchant for a prized stallion",
+        "Richard has been unhorsed at Bosworth, his horse killed, and is fighting on foot in the centre of the battle — the line is literal desperation, not bluster",
+        "Richard is on the coronation road, requiring a ceremonial mount",
+        "Richard is mocking the low price of horses in Leicester market"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 4,
+      "anchor_line_end": 7
+    },
+    {
+      "id": "richard_iii_act5_scene4_q2",
+      "kind": "theme",
+      "prompt": "Productions that have played \"A horse! a horse!\" comically (with weary winks at the audience) have done what?",
+      "options": [
+        "Restored the line's original theatrical tone",
+        "Misread the scene — the line is tragic, the cry of a man who had schemed a kingdom reduced to trading it for transport, dead within minutes",
+        "Followed Shakespeare's authorial intention, as preserved in the First Folio stage directions",
+        "Improved the line's reception by modern audiences"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 7,
+      "anchor_line_end": 13
+    },
+    {
+      "id": "richard_iii_act5_scene4_q3",
+      "kind": "close_reading",
+      "prompt": "Richard's refusal of rescue — \"I have set my life upon a cast, / And I will stand the hazard of the die\" — uses what image?",
+      "options": [
+        "A legal image from courtroom oath-taking",
+        "A dice-table image — \"cast\" is the throw, \"hazard\" the gambler's risk; the whole battle is a throw and he will see it through",
+        "A shipwreck image",
+        "A biblical image from the Book of Job"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 9,
+      "anchor_line_end": 10
+    },
+    {
+      "id": "richard_iii_act5_scene4_q4",
+      "kind": "historical",
+      "prompt": "\"I think there be six Richmonds in the field; / Five have I slain to-day instead of him.\" What does this refer to?",
+      "options": [
+        "A rhetorical exaggeration with no historical basis",
+        "The historical practice of decoying a commander with identically-armoured knights to confuse a single-combat approach — Richmond's men were so disguised at Bosworth",
+        "Five sons of Richmond, each named after him",
+        "A legend that Richmond had a twin brother"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 11,
+      "anchor_line_end": 12
+    }
+  ]
+}

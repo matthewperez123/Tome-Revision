@@ -1,0 +1,1543 @@
+{
+  "section_id": "othello_act4_scene2",
+  "work_id": "othello",
+  "sequence": 12,
+  "act": 4,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "A room in the castle",
+  "line_count": 252,
+  "word_count": 1948,
+  "est_read_minutes": 10,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "OTHELLO",
+      "text": "You have seen nothing then?"
+    },
+    {
+      "number": 2,
+      "speaker": "EMILIA",
+      "text": "Nor ever heard, nor ever did suspect."
+    },
+    {
+      "number": 3,
+      "speaker": "OTHELLO",
+      "text": "Yes, you have seen Cassio and she together."
+    },
+    {
+      "number": 4,
+      "speaker": "EMILIA",
+      "text": "But then I saw no harm, and then I heard"
+    },
+    {
+      "number": 5,
+      "speaker": "EMILIA",
+      "text": "Each syllable that breath made up between them."
+    },
+    {
+      "number": 6,
+      "speaker": "OTHELLO",
+      "text": "What, did they never whisper?"
+    },
+    {
+      "number": 6,
+      "speaker": "EMILIA",
+      "text": "Never, my lord."
+    },
+    {
+      "number": 7,
+      "speaker": "OTHELLO",
+      "text": "Nor send you out o’ the way?"
+    },
+    {
+      "number": 8,
+      "speaker": "EMILIA",
+      "text": "Never."
+    },
+    {
+      "number": 9,
+      "speaker": "OTHELLO",
+      "text": "To fetch her fan, her gloves, her mask, nor nothing?"
+    },
+    {
+      "number": 10,
+      "speaker": "EMILIA",
+      "text": "Never, my lord."
+    },
+    {
+      "number": 10,
+      "speaker": "OTHELLO",
+      "text": "That’s strange."
+    },
+    {
+      "number": 11,
+      "speaker": "EMILIA",
+      "text": "I durst, my lord, to wager she is honest,"
+    },
+    {
+      "number": 12,
+      "speaker": "EMILIA",
+      "text": "Lay down my soul at stake: if you think other,"
+    },
+    {
+      "number": 13,
+      "speaker": "EMILIA",
+      "text": "Remove your thought; it doth abuse your bosom."
+    },
+    {
+      "number": 14,
+      "speaker": "EMILIA",
+      "text": "If any wretch have put this in your head,"
+    },
+    {
+      "number": 15,
+      "speaker": "EMILIA",
+      "text": "Let heaven requite it with the serpent’s curse!"
+    },
+    {
+      "number": 16,
+      "speaker": "EMILIA",
+      "text": "For, if she be not honest, chaste, and true,"
+    },
+    {
+      "number": 17,
+      "speaker": "EMILIA",
+      "text": "There’s no man happy; the purest of their wives"
+    },
+    {
+      "number": 18,
+      "speaker": "EMILIA",
+      "text": "Is foul as slander."
+    },
+    {
+      "number": 18,
+      "speaker": "OTHELLO",
+      "text": "Bid her come hither: go."
+    },
+    {
+      "number": 19,
+      "speaker": "OTHELLO",
+      "text": "She says enough; yet she’s a simple bawd"
+    },
+    {
+      "number": 20,
+      "speaker": "OTHELLO",
+      "text": "That cannot say as much. This is a subtle whore,"
+    },
+    {
+      "number": 21,
+      "speaker": "OTHELLO",
+      "text": "A closet lock and key of villainous secrets"
+    },
+    {
+      "number": 22,
+      "speaker": "OTHELLO",
+      "text": "And yet she’ll kneel and pray; I have seen her do’t."
+    },
+    {
+      "number": 23,
+      "speaker": "DESDEMONA",
+      "text": "My lord, what is your will?"
+    },
+    {
+      "number": 23,
+      "speaker": "OTHELLO",
+      "text": "Pray, chuck, come hither."
+    },
+    {
+      "number": 24,
+      "speaker": "DESDEMONA",
+      "text": "What is your pleasure?"
+    },
+    {
+      "number": 24,
+      "speaker": "OTHELLO",
+      "text": "Let me see your eyes;"
+    },
+    {
+      "number": 25,
+      "speaker": "OTHELLO",
+      "text": "Look in my face."
+    },
+    {
+      "number": 25,
+      "speaker": "DESDEMONA",
+      "text": "What horrible fancy’s this?"
+    },
+    {
+      "number": 26,
+      "speaker": "OTHELLO",
+      "text": "To Emilia. Some of your function, mistress;"
+    },
+    {
+      "number": 27,
+      "speaker": "OTHELLO",
+      "text": "Leave procreants alone and shut the door;"
+    },
+    {
+      "number": 28,
+      "speaker": "OTHELLO",
+      "text": "Cough, or cry “hem,” if any body come:"
+    },
+    {
+      "number": 29,
+      "speaker": "OTHELLO",
+      "text": "Your mystery, your mystery: nay, dispatch."
+    },
+    {
+      "number": 30,
+      "speaker": "DESDEMONA",
+      "text": "Upon my knees, what doth your speech import?"
+    },
+    {
+      "number": 31,
+      "speaker": "DESDEMONA",
+      "text": "I understand a fury in your words."
+    },
+    {
+      "number": 32,
+      "speaker": "DESDEMONA",
+      "text": "But not the words."
+    },
+    {
+      "number": 32,
+      "speaker": "OTHELLO",
+      "text": "Why, what art thou?"
+    },
+    {
+      "number": 33,
+      "speaker": "DESDEMONA",
+      "text": "Your wife, my lord; your true"
+    },
+    {
+      "number": 34,
+      "speaker": "DESDEMONA",
+      "text": "And loyal wife."
+    },
+    {
+      "number": 34,
+      "speaker": "OTHELLO",
+      "text": "Come, swear it, damn thyself"
+    },
+    {
+      "number": 35,
+      "speaker": "OTHELLO",
+      "text": "Lest, being like one of heaven, the devils themselves"
+    },
+    {
+      "number": 36,
+      "speaker": "OTHELLO",
+      "text": "Should fear to seize thee: therefore be double damn’d:"
+    },
+    {
+      "number": 37,
+      "speaker": "OTHELLO",
+      "text": "Swear thou art honest."
+    },
+    {
+      "number": 37,
+      "speaker": "DESDEMONA",
+      "text": "Heaven doth truly know it."
+    },
+    {
+      "number": 38,
+      "speaker": "OTHELLO",
+      "text": "Heaven truly knows that thou art false as hell."
+    },
+    {
+      "number": 39,
+      "speaker": "DESDEMONA",
+      "text": "To whom, my lord? with whom? how am I false?"
+    },
+    {
+      "number": 40,
+      "speaker": "OTHELLO",
+      "text": "O Desdemona! away! away! away!"
+    },
+    {
+      "number": 41,
+      "speaker": "DESDEMONA",
+      "text": "Alas the heavy day! Why do you weep?"
+    },
+    {
+      "number": 42,
+      "speaker": "DESDEMONA",
+      "text": "Am I the motive of these tears, my lord?"
+    },
+    {
+      "number": 43,
+      "speaker": "DESDEMONA",
+      "text": "If haply you my father do suspect"
+    },
+    {
+      "number": 44,
+      "speaker": "DESDEMONA",
+      "text": "An instrument of this your calling back,"
+    },
+    {
+      "number": 45,
+      "speaker": "DESDEMONA",
+      "text": "Lay not your blame on me: If you have lost him,"
+    },
+    {
+      "number": 46,
+      "speaker": "DESDEMONA",
+      "text": "Why, I have lost him too."
+    },
+    {
+      "number": 46,
+      "speaker": "OTHELLO",
+      "text": "Had it pleased heaven"
+    },
+    {
+      "number": 47,
+      "speaker": "OTHELLO",
+      "text": "To try me with affliction; had they rain’d"
+    },
+    {
+      "number": 48,
+      "speaker": "OTHELLO",
+      "text": "All kinds of sores and shames on my bare head."
+    },
+    {
+      "number": 49,
+      "speaker": "OTHELLO",
+      "text": "Steep’d me in poverty to the very lips,"
+    },
+    {
+      "number": 50,
+      "speaker": "OTHELLO",
+      "text": "Given to captivity me and my utmost hopes,"
+    },
+    {
+      "number": 51,
+      "speaker": "OTHELLO",
+      "text": "I should have found in some place of my soul"
+    },
+    {
+      "number": 52,
+      "speaker": "OTHELLO",
+      "text": "A drop of patience: but, alas, to make me"
+    },
+    {
+      "number": 53,
+      "speaker": "OTHELLO",
+      "text": "A fixed figure for the time of scorn"
+    },
+    {
+      "number": 54,
+      "speaker": "OTHELLO",
+      "text": "To point his slow unmoving finger at!"
+    },
+    {
+      "number": 55,
+      "speaker": "OTHELLO",
+      "text": "Yet could I bear that too; well, very well:"
+    },
+    {
+      "number": 56,
+      "speaker": "OTHELLO",
+      "text": "But there, where I have garner’d up my heart,"
+    },
+    {
+      "number": 57,
+      "speaker": "OTHELLO",
+      "text": "Where either I must live, or bear no life;"
+    },
+    {
+      "number": 58,
+      "speaker": "OTHELLO",
+      "text": "The fountain from the which my current runs,"
+    },
+    {
+      "number": 59,
+      "speaker": "OTHELLO",
+      "text": "Or else dries up; to be discarded thence!"
+    },
+    {
+      "number": 60,
+      "speaker": "OTHELLO",
+      "text": "Or keep it as a cistern for foul toads"
+    },
+    {
+      "number": 61,
+      "speaker": "OTHELLO",
+      "text": "To knot and gender in! Turn thy complexion there,"
+    },
+    {
+      "number": 62,
+      "speaker": "OTHELLO",
+      "text": "Patience, thou young and rose-lipp’d cherubin—"
+    },
+    {
+      "number": 63,
+      "speaker": "OTHELLO",
+      "text": "Ay, there, look grim as hell!"
+    },
+    {
+      "number": 64,
+      "speaker": "DESDEMONA",
+      "text": "I hope my noble lord esteems me honest."
+    },
+    {
+      "number": 65,
+      "speaker": "OTHELLO",
+      "text": "O, ay; as summer flies are in the shambles,"
+    },
+    {
+      "number": 66,
+      "speaker": "OTHELLO",
+      "text": "That quicken even with blowing. O thou weed,"
+    },
+    {
+      "number": 67,
+      "speaker": "OTHELLO",
+      "text": "Who art so lovely fair and smell’st so sweet"
+    },
+    {
+      "number": 68,
+      "speaker": "OTHELLO",
+      "text": "That the sense aches at thee, would thou hadst ne’er been born!"
+    },
+    {
+      "number": 69,
+      "speaker": "DESDEMONA",
+      "text": "Alas, what ignorant sin have I committed?"
+    },
+    {
+      "number": 70,
+      "speaker": "OTHELLO",
+      "text": "Was this fair paper, this most goodly book,"
+    },
+    {
+      "number": 71,
+      "speaker": "OTHELLO",
+      "text": "Made to write “whore” upon? What committed!"
+    },
+    {
+      "number": 72,
+      "speaker": "OTHELLO",
+      "text": "Committed! O thou public commoner!"
+    },
+    {
+      "number": 73,
+      "speaker": "OTHELLO",
+      "text": "I should make very forges of my cheeks,"
+    },
+    {
+      "number": 74,
+      "speaker": "OTHELLO",
+      "text": "That would to cinders burn up modesty,"
+    },
+    {
+      "number": 75,
+      "speaker": "OTHELLO",
+      "text": "Did I but speak thy deeds. What committed!"
+    },
+    {
+      "number": 76,
+      "speaker": "OTHELLO",
+      "text": "Heaven stops the nose at it and the moon winks,"
+    },
+    {
+      "number": 77,
+      "speaker": "OTHELLO",
+      "text": "The bawdy wind that kisses all it meets"
+    },
+    {
+      "number": 78,
+      "speaker": "OTHELLO",
+      "text": "Is hush’d within the hollow mine of earth,"
+    },
+    {
+      "number": 79,
+      "speaker": "OTHELLO",
+      "text": "And will not hear it. What committed!"
+    },
+    {
+      "number": 80,
+      "speaker": "OTHELLO",
+      "text": "Impudent strumpet!"
+    },
+    {
+      "number": 80,
+      "speaker": "DESDEMONA",
+      "text": "By heaven, you do me wrong."
+    },
+    {
+      "number": 81,
+      "speaker": "OTHELLO",
+      "text": "Are you not a strumpet?"
+    },
+    {
+      "number": 81,
+      "speaker": "DESDEMONA",
+      "text": "No, as I am a Christian:"
+    },
+    {
+      "number": 82,
+      "speaker": "DESDEMONA",
+      "text": "If to preserve this vessel for my lord"
+    },
+    {
+      "number": 83,
+      "speaker": "DESDEMONA",
+      "text": "From any other foul unlawful touch"
+    },
+    {
+      "number": 84,
+      "speaker": "DESDEMONA",
+      "text": "Be not to be a strumpet, I am none."
+    },
+    {
+      "number": 85,
+      "speaker": "OTHELLO",
+      "text": "What, not a whore?"
+    },
+    {
+      "number": 85,
+      "speaker": "DESDEMONA",
+      "text": "No, as I shall be saved."
+    },
+    {
+      "number": 86,
+      "speaker": "OTHELLO",
+      "text": "Is’t possible?"
+    },
+    {
+      "number": 86,
+      "speaker": "DESDEMONA",
+      "text": "O, heaven forgive us!"
+    },
+    {
+      "number": 87,
+      "speaker": "OTHELLO",
+      "text": "I cry you mercy, then:"
+    },
+    {
+      "number": 88,
+      "speaker": "OTHELLO",
+      "text": "I took you for that cunning whore of Venice"
+    },
+    {
+      "number": 89,
+      "speaker": "OTHELLO",
+      "text": "That married with Othello. Raising his voice."
+    },
+    {
+      "number": 90,
+      "speaker": "OTHELLO",
+      "text": "You, mistress,"
+    },
+    {
+      "number": 91,
+      "speaker": "OTHELLO",
+      "text": "That have the office opposite to Saint Peter,"
+    },
+    {
+      "number": 92,
+      "speaker": "OTHELLO",
+      "text": "And keep the gate of hell!"
+    },
+    {
+      "number": 92,
+      "speaker": "EMILIA",
+      "text": "Alas, what does this gentleman conceive?"
+    },
+    {
+      "number": 93,
+      "speaker": "EMILIA",
+      "text": "How do you, madam? how do you, my good lady?"
+    },
+    {
+      "number": 94,
+      "speaker": "DESDEMONA",
+      "text": "’Faith, half asleep."
+    },
+    {
+      "number": 95,
+      "speaker": "EMILIA",
+      "text": "Good madam, what’s the matter with my lord?"
+    },
+    {
+      "number": 96,
+      "speaker": "DESDEMONA",
+      "text": "With who?"
+    },
+    {
+      "number": 96,
+      "speaker": "EMILIA",
+      "text": "Why, with my lord, madam."
+    },
+    {
+      "number": 97,
+      "speaker": "DESDEMONA",
+      "text": "Who is thy lord?"
+    },
+    {
+      "number": 97,
+      "speaker": "EMILIA",
+      "text": "He that is yours, sweet lady."
+    },
+    {
+      "number": 98,
+      "speaker": "DESDEMONA",
+      "text": "I have none: do not talk to me, Emilia;"
+    },
+    {
+      "number": 99,
+      "speaker": "DESDEMONA",
+      "text": "I cannot weep; nor answer have I none,"
+    },
+    {
+      "number": 100,
+      "speaker": "DESDEMONA",
+      "text": "But what should go by water. Prithee, tonight"
+    },
+    {
+      "number": 101,
+      "speaker": "DESDEMONA",
+      "text": "Lay on my bed my wedding sheets: remember;"
+    },
+    {
+      "number": 102,
+      "speaker": "DESDEMONA",
+      "text": "And call thy husband hither."
+    },
+    {
+      "number": 102,
+      "speaker": "EMILIA",
+      "text": "Here’s a change indeed!"
+    },
+    {
+      "number": 103,
+      "speaker": "DESDEMONA",
+      "text": "’Tis meet I should be used so, very meet."
+    },
+    {
+      "number": 104,
+      "speaker": "DESDEMONA",
+      "text": "How have I been behaved, that he might stick"
+    },
+    {
+      "number": 105,
+      "speaker": "DESDEMONA",
+      "text": "The small’st opinion on my least misuse?"
+    },
+    {
+      "number": 106,
+      "speaker": "IAGO",
+      "text": "What is your pleasure, madam?"
+    },
+    {
+      "number": 107,
+      "speaker": "IAGO",
+      "text": "How is’t with you?"
+    },
+    {
+      "number": 108,
+      "speaker": "DESDEMONA",
+      "text": "I cannot tell. Those that do teach young babes"
+    },
+    {
+      "number": 109,
+      "speaker": "DESDEMONA",
+      "text": "Do it with gentle means and easy tasks:"
+    },
+    {
+      "number": 110,
+      "speaker": "DESDEMONA",
+      "text": "He might have chid me so; for, in good faith,"
+    },
+    {
+      "number": 111,
+      "speaker": "DESDEMONA",
+      "text": "I am a child to chiding."
+    },
+    {
+      "number": 111,
+      "speaker": "IAGO",
+      "text": "What’s the matter, lady?"
+    },
+    {
+      "number": 112,
+      "speaker": "EMILIA",
+      "text": "Alas, Iago, my lord hath so bewhored her."
+    },
+    {
+      "number": 113,
+      "speaker": "EMILIA",
+      "text": "Thrown such despite and heavy terms upon her,"
+    },
+    {
+      "number": 114,
+      "speaker": "EMILIA",
+      "text": "As true hearts cannot bear."
+    },
+    {
+      "number": 114,
+      "speaker": "DESDEMONA",
+      "text": "Am I that name, Iago?"
+    },
+    {
+      "number": 115,
+      "speaker": "IAGO",
+      "text": "What name, fair lady?"
+    },
+    {
+      "number": 116,
+      "speaker": "DESDEMONA",
+      "text": "Such as she says my lord did say I was."
+    },
+    {
+      "number": 117,
+      "speaker": "EMILIA",
+      "text": "He call’d her whore: a beggar in his drink"
+    },
+    {
+      "number": 118,
+      "speaker": "EMILIA",
+      "text": "Could not have laid such terms upon his callat."
+    },
+    {
+      "number": 119,
+      "speaker": "IAGO",
+      "text": "Why did he so?"
+    },
+    {
+      "number": 120,
+      "speaker": "DESDEMONA",
+      "text": "I do not know; I am sure I am none such."
+    },
+    {
+      "number": 121,
+      "speaker": "IAGO",
+      "text": "Do not weep, do not weep. Alas the day!"
+    },
+    {
+      "number": 122,
+      "speaker": "EMILIA",
+      "text": "Hath she forsook so many noble matches,"
+    },
+    {
+      "number": 123,
+      "speaker": "EMILIA",
+      "text": "Her father and her country and her friends,"
+    },
+    {
+      "number": 124,
+      "speaker": "EMILIA",
+      "text": "To be call’d whore? would it not make one weep?"
+    },
+    {
+      "number": 125,
+      "speaker": "DESDEMONA",
+      "text": "It is my wretched fortune."
+    },
+    {
+      "number": 125,
+      "speaker": "IAGO",
+      "text": "Beshrew him for’t!"
+    },
+    {
+      "number": 126,
+      "speaker": "IAGO",
+      "text": "How comes this trick upon him?"
+    },
+    {
+      "number": 126,
+      "speaker": "DESDEMONA",
+      "text": "Nay, heaven doth know."
+    },
+    {
+      "number": 127,
+      "speaker": "EMILIA",
+      "text": "I will be hang’d, if some eternal villain,"
+    },
+    {
+      "number": 128,
+      "speaker": "EMILIA",
+      "text": "Some busy and insinuating rogue,"
+    },
+    {
+      "number": 129,
+      "speaker": "EMILIA",
+      "text": "Some cogging, cozening slave, to get some office,"
+    },
+    {
+      "number": 130,
+      "speaker": "EMILIA",
+      "text": "Have not devised this slander; I’ll be hang’d else."
+    },
+    {
+      "number": 131,
+      "speaker": "IAGO",
+      "text": "Fie, there is no such man; it is impossible."
+    },
+    {
+      "number": 132,
+      "speaker": "DESDEMONA",
+      "text": "If any such there be, heaven pardon him!"
+    },
+    {
+      "number": 133,
+      "speaker": "EMILIA",
+      "text": "A halter pardon him! and hell gnaw his bones!"
+    },
+    {
+      "number": 134,
+      "speaker": "EMILIA",
+      "text": "Why should he call her whore? who keeps her company?"
+    },
+    {
+      "number": 135,
+      "speaker": "EMILIA",
+      "text": "What place? what time? what form? what likelihood?"
+    },
+    {
+      "number": 136,
+      "speaker": "EMILIA",
+      "text": "The Moor’s abused by some most villainous knave,"
+    },
+    {
+      "number": 137,
+      "speaker": "EMILIA",
+      "text": "Some base notorious knave, some scurvy fellow."
+    },
+    {
+      "number": 138,
+      "speaker": "EMILIA",
+      "text": "O heaven, that such companions thou’ldst unfold,"
+    },
+    {
+      "number": 139,
+      "speaker": "EMILIA",
+      "text": "And put in every honest hand a whip"
+    },
+    {
+      "number": 140,
+      "speaker": "EMILIA",
+      "text": "To lash the rascals naked through the world"
+    },
+    {
+      "number": 141,
+      "speaker": "EMILIA",
+      "text": "Even from the east to the west!"
+    },
+    {
+      "number": 142,
+      "speaker": "IAGO",
+      "text": "Speak within door."
+    },
+    {
+      "number": 143,
+      "speaker": "EMILIA",
+      "text": "O, fie upon them! Some such squire he was"
+    },
+    {
+      "number": 144,
+      "speaker": "EMILIA",
+      "text": "That turn’d your wit the seamy side without,"
+    },
+    {
+      "number": 145,
+      "speaker": "EMILIA",
+      "text": "And made you to suspect me with the Moor."
+    },
+    {
+      "number": 146,
+      "speaker": "IAGO",
+      "text": "You are a fool; go to."
+    },
+    {
+      "number": 146,
+      "speaker": "DESDEMONA",
+      "text": "O good Iago,"
+    },
+    {
+      "number": 147,
+      "speaker": "DESDEMONA",
+      "text": "What shall I do to win my lord again?"
+    },
+    {
+      "number": 148,
+      "speaker": "DESDEMONA",
+      "text": "Good friend, go to him; for, by this light of heaven,"
+    },
+    {
+      "number": 149,
+      "speaker": "DESDEMONA",
+      "text": "I know not how I lost him. Here I kneel:"
+    },
+    {
+      "number": 150,
+      "speaker": "DESDEMONA",
+      "text": "If e’er my will did trespass ’gainst his love,"
+    },
+    {
+      "number": 151,
+      "speaker": "DESDEMONA",
+      "text": "Either in discourse of thought or actual deed,"
+    },
+    {
+      "number": 152,
+      "speaker": "DESDEMONA",
+      "text": "Or that mine eyes, mine ears, or any sense,"
+    },
+    {
+      "number": 153,
+      "speaker": "DESDEMONA",
+      "text": "Delighted them in any other form;"
+    },
+    {
+      "number": 154,
+      "speaker": "DESDEMONA",
+      "text": "Or that I do not yet, and ever did."
+    },
+    {
+      "number": 155,
+      "speaker": "DESDEMONA",
+      "text": "And ever will—though he do shake me off"
+    },
+    {
+      "number": 156,
+      "speaker": "DESDEMONA",
+      "text": "To beggarly divorcement—love him dearly,"
+    },
+    {
+      "number": 157,
+      "speaker": "DESDEMONA",
+      "text": "Comfort forswear me! Unkindness may do much;"
+    },
+    {
+      "number": 158,
+      "speaker": "DESDEMONA",
+      "text": "And his unkindness may defeat my life,"
+    },
+    {
+      "number": 159,
+      "speaker": "DESDEMONA",
+      "text": "But never taint my love. I cannot say “whore:”"
+    },
+    {
+      "number": 160,
+      "speaker": "DESDEMONA",
+      "text": "It does abhor me now I speak the word;"
+    },
+    {
+      "number": 161,
+      "speaker": "DESDEMONA",
+      "text": "To do the act that might the addition earn"
+    },
+    {
+      "number": 162,
+      "speaker": "DESDEMONA",
+      "text": "Not the world’s mass of vanity could make me."
+    },
+    {
+      "number": 163,
+      "speaker": "IAGO",
+      "text": "I pray you, be content; ’tis but his humour:"
+    },
+    {
+      "number": 164,
+      "speaker": "IAGO",
+      "text": "The business of the state does him offence,"
+    },
+    {
+      "number": 165,
+      "speaker": "IAGO",
+      "text": "And he does chide with you."
+    },
+    {
+      "number": 165,
+      "speaker": "DESDEMONA",
+      "text": "If ’twere no other—"
+    },
+    {
+      "number": 166,
+      "speaker": "IAGO",
+      "text": "’Tis but so, I warrant."
+    },
+    {
+      "number": 167,
+      "speaker": "IAGO",
+      "text": "Hark, how these instruments summon to supper!"
+    },
+    {
+      "number": 168,
+      "speaker": "IAGO",
+      "text": "The messengers of Venice stay the meat;"
+    },
+    {
+      "number": 169,
+      "speaker": "IAGO",
+      "text": "Go in, and weep not; all things shall be well."
+    },
+    {
+      "number": 170,
+      "speaker": "RODERIGO",
+      "text": "I do not find that thou dealest justly with me."
+    },
+    {
+      "number": 171,
+      "speaker": "IAGO",
+      "text": "What in the contrary?"
+    },
+    {
+      "number": 172,
+      "speaker": "RODERIGO",
+      "text": "Every day thou daffest me with some device, Iago; and rather, as"
+    },
+    {
+      "number": 173,
+      "speaker": "RODERIGO",
+      "text": "it seems to me now, keepest from me all conveniency than suppliest"
+    },
+    {
+      "number": 174,
+      "speaker": "RODERIGO",
+      "text": "me with the least advantage of hope. I will indeed no longer"
+    },
+    {
+      "number": 175,
+      "speaker": "RODERIGO",
+      "text": "endure it, nor am I yet persuaded to put up in peace"
+    },
+    {
+      "number": 176,
+      "speaker": "RODERIGO",
+      "text": "what already I have foolishly suffered."
+    },
+    {
+      "number": 176,
+      "speaker": "IAGO",
+      "text": "Will you hear me, Roderigo?"
+    },
+    {
+      "number": 177,
+      "speaker": "RODERIGO",
+      "text": "’Faith, I have heard too much, for your words and performances are no kin together."
+    },
+    {
+      "number": 178,
+      "speaker": "IAGO",
+      "text": "You charge me most unjustly."
+    },
+    {
+      "number": 179,
+      "speaker": "RODERIGO",
+      "text": "With nought but truth. I have wasted myself out of my means."
+    },
+    {
+      "number": 180,
+      "speaker": "RODERIGO",
+      "text": "The jewels you have had from me to deliver to Desdemona would"
+    },
+    {
+      "number": 181,
+      "speaker": "RODERIGO",
+      "text": "half have corrupted a votarist: you have told me she hath received"
+    },
+    {
+      "number": 182,
+      "speaker": "RODERIGO",
+      "text": "them and returned me expectations and comforts of sudden respect and acquaintance,"
+    },
+    {
+      "number": 183,
+      "speaker": "RODERIGO",
+      "text": "but I find none."
+    },
+    {
+      "number": 183,
+      "speaker": "IAGO",
+      "text": "Well; go to; very well."
+    },
+    {
+      "number": 184,
+      "speaker": "RODERIGO",
+      "text": "Very well! go to! I cannot go to, man; nor ’tis not"
+    },
+    {
+      "number": 185,
+      "speaker": "RODERIGO",
+      "text": "very well: nay, I think it is scurvy, and begin to find"
+    },
+    {
+      "number": 186,
+      "speaker": "RODERIGO",
+      "text": "myself fobbed in it."
+    },
+    {
+      "number": 186,
+      "speaker": "IAGO",
+      "text": "Very well."
+    },
+    {
+      "number": 187,
+      "speaker": "RODERIGO",
+      "text": "I tell you ’tis not very well. I will make myself known"
+    },
+    {
+      "number": 188,
+      "speaker": "RODERIGO",
+      "text": "to Desdemona: if she will return me my jewels, I will give"
+    },
+    {
+      "number": 189,
+      "speaker": "RODERIGO",
+      "text": "over my suit and repent my unlawful solicitation; if not, assure yourself"
+    },
+    {
+      "number": 190,
+      "speaker": "RODERIGO",
+      "text": "I will seek satisfaction of you."
+    },
+    {
+      "number": 190,
+      "speaker": "IAGO",
+      "text": "You have said now."
+    },
+    {
+      "number": 191,
+      "speaker": "RODERIGO",
+      "text": "Ay, and said nothing but what I protest intendment of doing."
+    },
+    {
+      "number": 192,
+      "speaker": "IAGO",
+      "text": "Why, now I see there’s mettle in thee, and even from this"
+    },
+    {
+      "number": 193,
+      "speaker": "IAGO",
+      "text": "instant to build on thee a better opinion than ever before. Give"
+    },
+    {
+      "number": 194,
+      "speaker": "IAGO",
+      "text": "me thy hand, Roderigo: thou hast taken against me a most just"
+    },
+    {
+      "number": 195,
+      "speaker": "IAGO",
+      "text": "exception; but yet, I protest, I have dealt most directly in thy"
+    },
+    {
+      "number": 196,
+      "speaker": "IAGO",
+      "text": "affair."
+    },
+    {
+      "number": 196,
+      "speaker": "RODERIGO",
+      "text": "It hath not appeared."
+    },
+    {
+      "number": 197,
+      "speaker": "IAGO",
+      "text": "I grant indeed it hath not appeared, and your suspicion is not"
+    },
+    {
+      "number": 198,
+      "speaker": "IAGO",
+      "text": "without wit and judgment. But, Roderigo, if thou hast that in thee"
+    },
+    {
+      "number": 199,
+      "speaker": "IAGO",
+      "text": "indeed, which I have greater reason to believe now than ever, I"
+    },
+    {
+      "number": 200,
+      "speaker": "IAGO",
+      "text": "mean purpose, courage and valour, this night show it: if thou the"
+    },
+    {
+      "number": 201,
+      "speaker": "IAGO",
+      "text": "next night following enjoy not Desdemona, take me from this world with"
+    },
+    {
+      "number": 202,
+      "speaker": "IAGO",
+      "text": "treachery and devise engines for my life."
+    },
+    {
+      "number": 203,
+      "speaker": "RODERIGO",
+      "text": "Well, what is it? is it within reason and compass?"
+    },
+    {
+      "number": 204,
+      "speaker": "IAGO",
+      "text": "Sir, there is especial commission come from Venice to depute Cassio in Othello’s place."
+    },
+    {
+      "number": 205,
+      "speaker": "RODERIGO",
+      "text": "Is that true? why, then Othello and Desdemona return again to Venice."
+    },
+    {
+      "number": 206,
+      "speaker": "IAGO",
+      "text": "O, no; he goes into Mauritania and takes away with him the"
+    },
+    {
+      "number": 207,
+      "speaker": "IAGO",
+      "text": "fair Desdemona, unless his abode be lingered here by some accident: wherein"
+    },
+    {
+      "number": 208,
+      "speaker": "IAGO",
+      "text": "none can be so determinate as the removing of Cassio."
+    },
+    {
+      "number": 209,
+      "speaker": "RODERIGO",
+      "text": "How do you mean, removing of him?"
+    },
+    {
+      "number": 210,
+      "speaker": "IAGO",
+      "text": "Why, by making him uncapable of Othello’s place; knocking out his brains."
+    },
+    {
+      "number": 211,
+      "speaker": "RODERIGO",
+      "text": "And that you would have me to do?"
+    },
+    {
+      "number": 212,
+      "speaker": "IAGO",
+      "text": "Ay, if you dare do yourself a profit and a right. He"
+    },
+    {
+      "number": 213,
+      "speaker": "IAGO",
+      "text": "sups to-night with a harlotry, and thither will I go to him:"
+    },
+    {
+      "number": 214,
+      "speaker": "IAGO",
+      "text": "he knows not yet of his honourable fortune. If you will watch"
+    },
+    {
+      "number": 215,
+      "speaker": "IAGO",
+      "text": "his going thence, which I will fashion to fall out between twelve"
+    },
+    {
+      "number": 216,
+      "speaker": "IAGO",
+      "text": "and one, you may take him at your pleasure: I will be"
+    },
+    {
+      "number": 217,
+      "speaker": "IAGO",
+      "text": "near to second your attempt, and he shall fall between us. Come,"
+    },
+    {
+      "number": 218,
+      "speaker": "IAGO",
+      "text": "stand not amazed at it, but go along with me; I will"
+    },
+    {
+      "number": 219,
+      "speaker": "IAGO",
+      "text": "show you such a necessity in his death that you shall think"
+    },
+    {
+      "number": 220,
+      "speaker": "IAGO",
+      "text": "yourself bound to put it on him. It is now high suppertime,"
+    },
+    {
+      "number": 221,
+      "speaker": "IAGO",
+      "text": "and the night grows to waste: about it."
+    },
+    {
+      "number": 222,
+      "speaker": "RODERIGO",
+      "text": "I will hear further reason for this."
+    },
+    {
+      "number": 223,
+      "speaker": "IAGO",
+      "text": "And you shall be satisfied."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Othello and Emilia."
+    },
+    {
+      "after_line": 18,
+      "text": "Exit Emilia."
+    },
+    {
+      "after_line": 22,
+      "text": "Enter Desdemona with Emilia."
+    },
+    {
+      "after_line": 29,
+      "text": "Exit Emilia."
+    },
+    {
+      "after_line": 92,
+      "text": "Reenter Emilia."
+    },
+    {
+      "after_line": 92,
+      "text": "You, you, ay, you! We have done our course; there’s money for your pains: I pray you, turn the key and keep our counsel. Exit."
+    },
+    {
+      "after_line": 102,
+      "text": "Exit."
+    },
+    {
+      "after_line": 105,
+      "text": "Reenter Emilia with Iago."
+    },
+    {
+      "after_line": 166,
+      "text": "Trumpets within."
+    },
+    {
+      "after_line": 169,
+      "text": "Exeunt Desdemona and Emilia."
+    },
+    {
+      "after_line": 169,
+      "text": "Enter Roderigo."
+    },
+    {
+      "after_line": 169,
+      "text": "How now, Roderigo!"
+    },
+    {
+      "after_line": 223,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "othello_act4_scene2_gloss1",
+      "line": 162,
+      "phrase": "mass",
+      "definition": "by the mass — a Catholic oath"
+    },
+    {
+      "id": "othello_act4_scene2_gloss2",
+      "line": 11,
+      "phrase": "durst",
+      "definition": "dare"
+    },
+    {
+      "id": "othello_act4_scene2_gloss3",
+      "line": 12,
+      "phrase": "stake",
+      "definition": "pledge; wager"
+    },
+    {
+      "id": "othello_act4_scene2_gloss4",
+      "line": 13,
+      "phrase": "abuse your bosom",
+      "definition": "betray your intimate confidence"
+    },
+    {
+      "id": "othello_act4_scene2_gloss5",
+      "line": 19,
+      "phrase": "bawd",
+      "definition": "procuress; keeper of prostitutes"
+    },
+    {
+      "id": "othello_act4_scene2_gloss6",
+      "line": 19,
+      "phrase": "simple bawd",
+      "definition": "a low-ranking procuress — Othello's insult to Emilia"
+    },
+    {
+      "id": "othello_act4_scene2_gloss7",
+      "line": 21,
+      "phrase": "closet lock and key of villainous secrets",
+      "definition": "concealed strongbox where secret evils are kept"
+    },
+    {
+      "id": "othello_act4_scene2_gloss8",
+      "line": 26,
+      "phrase": "some of your function",
+      "definition": "at your trade (as a procuress)"
+    },
+    {
+      "id": "othello_act4_scene2_gloss9",
+      "line": 29,
+      "phrase": "mystery",
+      "definition": "professional trade; secret craft"
+    },
+    {
+      "id": "othello_act4_scene2_gloss10",
+      "line": 42,
+      "phrase": "motive",
+      "definition": "moving cause; reason"
+    },
+    {
+      "id": "othello_act4_scene2_gloss15",
+      "line": 65,
+      "phrase": "shambles",
+      "definition": "slaughterhouse"
+    },
+    {
+      "id": "othello_act4_scene2_gloss16",
+      "line": 80,
+      "phrase": "strumpet",
+      "definition": "whore — one of the play's most frequent accusations against Desdemona"
+    },
+    {
+      "id": "othello_act4_scene2_gloss17",
+      "line": 82,
+      "phrase": "vessel",
+      "definition": "body (religious usage: the body as God's vessel)"
+    },
+    {
+      "id": "othello_act4_scene2_gloss19",
+      "line": 69,
+      "phrase": "what ignorant sin",
+      "definition": "what unwitting fault"
+    },
+    {
+      "id": "othello_act4_scene2_gloss20",
+      "line": 27,
+      "phrase": "procreants",
+      "definition": "those about to procreate"
+    },
+    {
+      "id": "othello_act4_scene2_gloss21",
+      "line": 160,
+      "phrase": "abhor me",
+      "definition": "fill me with loathing"
+    },
+    {
+      "id": "othello_act4_scene2_gloss23",
+      "line": 127,
+      "phrase": "some eternal villain",
+      "definition": "some utterly damned schemer — Emilia unknowingly names Iago"
+    },
+    {
+      "id": "othello_act4_scene2_gloss24",
+      "line": 129,
+      "phrase": "cogging, cozening slave",
+      "definition": "cheating, defrauding knave"
+    },
+    {
+      "id": "othello_act4_scene2_gloss26",
+      "line": 126,
+      "phrase": "trick",
+      "definition": "whim; fit of moodiness"
+    },
+    {
+      "id": "othello_act4_scene2_gloss28",
+      "line": 146,
+      "phrase": "O good Iago",
+      "definition": "Desdemona's heartbreaking appeal to her secret destroyer"
+    },
+    {
+      "id": "othello_act4_scene2_gloss31",
+      "line": 189,
+      "phrase": "solicitation",
+      "definition": "suit; earnest request"
+    },
+    {
+      "id": "othello_act4_scene2_gloss33",
+      "line": 203,
+      "phrase": "within reason and compass",
+      "definition": "within the bounds of reason"
+    },
+    {
+      "id": "othello_act4_scene2_gloss34",
+      "line": 202,
+      "phrase": "engines for my life",
+      "definition": "assassins; men hired to kill me"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "othello_act4_scene2_ann1",
+      "line_start": 1,
+      "line_end": 90,
+      "citation_display": "Othello 4.2.1–90",
+      "category": "thematic",
+      "title": "The brothel scene and the degradation of address",
+      "body": "Othello has Emilia escort him into the bedchamber as if it were a brothel, with Desdemona as the whore and Emilia as the procuress. The structural conceit is horrifying: a husband recasts his wife's private room as a workplace of prostitution, and rehearses his suspicions as if interrogating professionals. The language is sustained — 'simple bawd', 'this office', 'your mystery' — and refuses the consolation of metaphor. Othello means the comparison literally.\n\nThe scene reveals how completely Othello's vocabulary has been colonized. He cannot speak to Desdemona without reaching for the lexicon Iago has given him. His final insult — 'a cistern for foul toads / To knot and gender in' — displaces her body into an image of breeding vermin. Language has become his instrument of violence before the physical violence arrives.",
+      "sources": [
+        "Carol Thomas Neely, *Broken Nuptials in Shakespeare's Plays* (1985)",
+        "Patricia Parker, *Shakespeare from the Margins* (1996)"
+      ]
+    },
+    {
+      "id": "othello_act4_scene2_ann2",
+      "line_start": 115,
+      "line_end": 175,
+      "citation_display": "Othello 4.2.115–175",
+      "category": "structural",
+      "title": "Emilia's unknowing diagnosis",
+      "body": "'Some eternal villain, / Some busy and insinuating rogue, / Some cogging, cozening slave... hath devised this slander.' Emilia names Iago without knowing she names him. The speech is Shakespeare's cruelest dramatic irony: the villain's own wife assembles his character in words, while he stands by noting his next move.\n\nThis is the moment the play most clearly shows what Iago has risked and what he gambles. He is protected only by the audience's unwillingness to believe that someone so plainly visible could be invisible to those closest to him. When Emilia does finally see, in 5.2, she sees instantaneously — because the knowledge had always been available. What changed was permission.",
+      "sources": [
+        "Harold Bloom, *Shakespeare: The Invention of the Human* (1998)",
+        "Coppélia Kahn, *Man's Estate: Masculine Identity in Shakespeare* (1981)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "othello_act4_scene2_q1",
+      "kind": "inference",
+      "prompt": "Why does Othello treat his conversation with Desdemona as an interview in a brothel, casting Emilia as the procuress?",
+      "options": [
+        "Venetian law required this form of accusation",
+        "His vocabulary has been so colonized by Iago that he cannot address his wife except in the language of prostitution — violence of speech preceding physical violence",
+        "It is a recognized part of Cypriot marriage rites",
+        "Emilia has previously worked in such establishments"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 90
+    },
+    {
+      "id": "othello_act4_scene2_q2",
+      "kind": "structural",
+      "prompt": "What is the dramatic irony in Emilia's speech about 'some eternal villain, some busy and insinuating rogue'?",
+      "options": [
+        "She is secretly describing Cassio",
+        "She is describing her own husband Iago without knowing it — and the audience sees both layers",
+        "She is quoting a character from a previous Shakespeare play",
+        "She is predicting the arrival of Lodovico from Venice"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 115,
+      "anchor_line_end": 145
+    },
+    {
+      "id": "othello_act4_scene2_q3",
+      "kind": "comprehension",
+      "prompt": "What does Iago advise Roderigo to do about Cassio?",
+      "options": [
+        "Bribe him to leave Cyprus",
+        "Ambush and kill him to prevent his return to Desdemona",
+        "Challenge him to an open duel",
+        "Confess his love for Desdemona directly to him"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 210,
+      "anchor_line_end": 240
+    }
+  ]
+}

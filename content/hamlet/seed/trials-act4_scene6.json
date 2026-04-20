@@ -1,0 +1,47 @@
+{
+  "section_id": "hamlet_act4_scene6",
+  "trials": [
+    {
+      "kind": "comprehension",
+      "prompt": "How did Hamlet escape the voyage to England?",
+      "options": [
+        "A storm forced the ship back to Denmark.",
+        "He swam ashore when the ship anchored near the coast.",
+        "Pirates attacked the ship; Hamlet boarded their vessel in the fight and was returned to Denmark.",
+        "He bribed Rosencrantz and Guildenstern to turn the ship around."
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 15,
+      "anchor_line_start": 14,
+      "anchor_line_end": 25
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "What does Hamlet's phrase 'thieves of mercy' express?",
+      "options": [
+        "Thieves of pity who stole his valuables.",
+        "The pirates who spared his life and returned him home — honorable behavior from dishonorable men.",
+        "Merciful thieves who work only by night.",
+        "A metaphor for Claudius and his courtiers, who steal justice from the kingdom."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 22,
+      "anchor_line_end": 26
+    },
+    {
+      "kind": "inference",
+      "prompt": "What does Hamlet ask Horatio to do in the letter?",
+      "options": [
+        "Bring his weapons and armor immediately.",
+        "Deliver a letter to the King and bring him to Hamlet's location.",
+        "Flee to Wittenberg and await further instructions.",
+        "Tell Ophelia that Hamlet is alive."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 12,
+      "anchor_line_end": 27
+    }
+  ]
+}

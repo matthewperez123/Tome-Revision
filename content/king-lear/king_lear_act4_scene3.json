@@ -1,0 +1,469 @@
+{
+  "section_id": "king_lear_act4_scene3",
+  "work_id": "king-lear",
+  "sequence": 19,
+  "act": 4,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "The French camp near Dover",
+  "line_count": 58,
+  "word_count": 432,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KENT",
+      "text": "Why the King of France is so suddenly gone back know you the reason?"
+    },
+    {
+      "number": 2,
+      "speaker": "GENTLEMAN",
+      "text": "Something he left imperfect in the state, which since his coming forth"
+    },
+    {
+      "number": 3,
+      "speaker": "GENTLEMAN",
+      "text": "is thought of; which imports to the kingdom so much fear and"
+    },
+    {
+      "number": 4,
+      "speaker": "GENTLEMAN",
+      "text": "danger, that his personal return was most required and necessary."
+    },
+    {
+      "number": 5,
+      "speaker": "KENT",
+      "text": "Who hath he left behind him general?"
+    },
+    {
+      "number": 6,
+      "speaker": "GENTLEMAN",
+      "text": "The Marshal of France, Monsieur La Far."
+    },
+    {
+      "number": 7,
+      "speaker": "KENT",
+      "text": "Did your letters pierce the queen to any demonstration of grief?"
+    },
+    {
+      "number": 8,
+      "speaker": "GENTLEMAN",
+      "text": "Ay, sir; she took them, read them in my presence;"
+    },
+    {
+      "number": 9,
+      "speaker": "GENTLEMAN",
+      "text": "And now and then an ample tear trill’d down"
+    },
+    {
+      "number": 10,
+      "speaker": "GENTLEMAN",
+      "text": "Her delicate cheek: it seem’d she was a queen"
+    },
+    {
+      "number": 11,
+      "speaker": "GENTLEMAN",
+      "text": "Over her passion; who, most rebel-like,"
+    },
+    {
+      "number": 12,
+      "speaker": "GENTLEMAN",
+      "text": "Sought to be king o’er her."
+    },
+    {
+      "number": 12,
+      "speaker": "KENT",
+      "text": "O, then it moved her."
+    },
+    {
+      "number": 13,
+      "speaker": "GENTLEMAN",
+      "text": "Not to a rage: patience and sorrow strove"
+    },
+    {
+      "number": 14,
+      "speaker": "GENTLEMAN",
+      "text": "Who should express her goodliest. You have seen"
+    },
+    {
+      "number": 15,
+      "speaker": "GENTLEMAN",
+      "text": "Sunshine and rain at once: her smiles and tears"
+    },
+    {
+      "number": 16,
+      "speaker": "GENTLEMAN",
+      "text": "Were like a better way: those happy smilets,"
+    },
+    {
+      "number": 17,
+      "speaker": "GENTLEMAN",
+      "text": "That play’d on her ripe lip, seem’d not to know"
+    },
+    {
+      "number": 18,
+      "speaker": "GENTLEMAN",
+      "text": "What guests were in her eyes; which parted thence,"
+    },
+    {
+      "number": 19,
+      "speaker": "GENTLEMAN",
+      "text": "As pearls from diamonds dropp’d. In brief,"
+    },
+    {
+      "number": 20,
+      "speaker": "GENTLEMAN",
+      "text": "Sorrow would be a rarity most beloved,"
+    },
+    {
+      "number": 21,
+      "speaker": "GENTLEMAN",
+      "text": "If all could so become it."
+    },
+    {
+      "number": 21,
+      "speaker": "KENT",
+      "text": "Made she no verbal question?"
+    },
+    {
+      "number": 22,
+      "speaker": "GENTLEMAN",
+      "text": "’Faith, once or twice she heaved the name of “father”"
+    },
+    {
+      "number": 23,
+      "speaker": "GENTLEMAN",
+      "text": "Pantingly forth, as if it press’d her heart:"
+    },
+    {
+      "number": 24,
+      "speaker": "GENTLEMAN",
+      "text": "Cried “Sisters! sisters! Shame of ladies! sisters!"
+    },
+    {
+      "number": 25,
+      "speaker": "GENTLEMAN",
+      "text": "Kent! father! sisters! What, i’ the storm? i’ the night?"
+    },
+    {
+      "number": 26,
+      "speaker": "GENTLEMAN",
+      "text": "Let pity not be believed!” There she shook"
+    },
+    {
+      "number": 27,
+      "speaker": "GENTLEMAN",
+      "text": "The holy water from her heavenly eyes,"
+    },
+    {
+      "number": 28,
+      "speaker": "GENTLEMAN",
+      "text": "And clamour moisten’d: then away she started"
+    },
+    {
+      "number": 29,
+      "speaker": "GENTLEMAN",
+      "text": "To deal with grief alone."
+    },
+    {
+      "number": 29,
+      "speaker": "KENT",
+      "text": "It is the stars,"
+    },
+    {
+      "number": 30,
+      "speaker": "KENT",
+      "text": "The stars above us, govern our conditions;"
+    },
+    {
+      "number": 31,
+      "speaker": "KENT",
+      "text": "Else one self mate and mate could not beget"
+    },
+    {
+      "number": 32,
+      "speaker": "KENT",
+      "text": "Such different issues. You spoke not with her since?"
+    },
+    {
+      "number": 33,
+      "speaker": "GENTLEMAN",
+      "text": "No."
+    },
+    {
+      "number": 33,
+      "speaker": "KENT",
+      "text": "Was this before the king return’d?"
+    },
+    {
+      "number": 34,
+      "speaker": "GENTLEMAN",
+      "text": "No, since."
+    },
+    {
+      "number": 35,
+      "speaker": "KENT",
+      "text": "Well, sir, the poor distressed Lear’s i’ the town;"
+    },
+    {
+      "number": 36,
+      "speaker": "KENT",
+      "text": "Who sometime, in his better tune, remembers"
+    },
+    {
+      "number": 37,
+      "speaker": "KENT",
+      "text": "What we are come about, and by no means"
+    },
+    {
+      "number": 38,
+      "speaker": "KENT",
+      "text": "Will yield to see his daughter."
+    },
+    {
+      "number": 38,
+      "speaker": "GENTLEMAN",
+      "text": "Why, good sir?"
+    },
+    {
+      "number": 39,
+      "speaker": "KENT",
+      "text": "A sovereign shame so elbows him: his own unkindness,"
+    },
+    {
+      "number": 40,
+      "speaker": "KENT",
+      "text": "That stripp’d her from his benediction, turn’d her"
+    },
+    {
+      "number": 41,
+      "speaker": "KENT",
+      "text": "To foreign casualties, gave her dear rights"
+    },
+    {
+      "number": 42,
+      "speaker": "KENT",
+      "text": "To his dog-hearted daughters, these things sting"
+    },
+    {
+      "number": 43,
+      "speaker": "KENT",
+      "text": "His mind so venomously, that burning shame"
+    },
+    {
+      "number": 44,
+      "speaker": "KENT",
+      "text": "Detains him from Cordelia."
+    },
+    {
+      "number": 44,
+      "speaker": "GENTLEMAN",
+      "text": "Alack, poor gentleman!"
+    },
+    {
+      "number": 45,
+      "speaker": "KENT",
+      "text": "Of Albany’s and Cornwall’s powers you heard not?"
+    },
+    {
+      "number": 46,
+      "speaker": "GENTLEMAN",
+      "text": "’Tis so, they are afoot."
+    },
+    {
+      "number": 47,
+      "speaker": "KENT",
+      "text": "Well, sir, I’ll bring you to our master Lear,"
+    },
+    {
+      "number": 48,
+      "speaker": "KENT",
+      "text": "And leave you to attend him: some dear cause"
+    },
+    {
+      "number": 49,
+      "speaker": "KENT",
+      "text": "Will in concealment wrap me up awhile;"
+    },
+    {
+      "number": 50,
+      "speaker": "KENT",
+      "text": "When I am known aright, you shall not grieve"
+    },
+    {
+      "number": 51,
+      "speaker": "KENT",
+      "text": "Lending me this acquaintance. I pray you, go"
+    },
+    {
+      "number": 52,
+      "speaker": "KENT",
+      "text": "Along with me."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Kent and a Gentleman."
+    },
+    {
+      "after_line": 52,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act4_scene3_gloss1",
+      "line": 2,
+      "phrase": "imperfect in the state",
+      "definition": "ill-informed about politics"
+    },
+    {
+      "id": "king_lear_act4_scene3_gloss2",
+      "line": 6,
+      "phrase": "France",
+      "definition": "the French king"
+    },
+    {
+      "id": "king_lear_act4_scene3_gloss5",
+      "line": 9,
+      "phrase": "trill’d",
+      "definition": "trickled"
+    },
+    {
+      "id": "king_lear_act4_scene3_gloss6",
+      "line": 20,
+      "phrase": "rarity",
+      "definition": "extraordinary thing"
+    },
+    {
+      "id": "king_lear_act4_scene3_gloss7",
+      "line": 16,
+      "phrase": "happy smilets",
+      "definition": "pleasant little smiles"
+    },
+    {
+      "id": "king_lear_act4_scene3_gloss9",
+      "line": 22,
+      "phrase": "heaved",
+      "definition": "sighed"
+    },
+    {
+      "id": "king_lear_act4_scene3_gloss10",
+      "line": 28,
+      "phrase": "clamour moisten’d",
+      "definition": "her grief wet with tears"
+    },
+    {
+      "id": "king_lear_act4_scene3_gloss11",
+      "line": 30,
+      "phrase": "stars",
+      "definition": "fate — the stars govern character, Kent says"
+    },
+    {
+      "id": "king_lear_act4_scene3_gloss12",
+      "line": 45,
+      "phrase": "Albany and Cornwall’s powers",
+      "definition": "the British forces"
+    },
+    {
+      "id": "king_lear_act4_scene3_gloss13",
+      "line": 39,
+      "phrase": "sovereign shame",
+      "definition": "Lear's governing emotion — shame"
+    },
+    {
+      "id": "king_lear_act4_scene3_gloss14",
+      "line": 39,
+      "phrase": "unkindness",
+      "definition": "against nature — Kent's understatement for what the sisters have done"
+    },
+    {
+      "id": "king_lear_act4_scene3_gloss15",
+      "line": 48,
+      "phrase": "dear cause",
+      "definition": "important matter"
+    },
+    {
+      "id": "king_lear_act4_scene3_gloss16",
+      "line": 2,
+      "phrase": "imperfect",
+      "definition": "unfinished; partial — the French campaign Kent cannot describe in full"
+    },
+    {
+      "id": "king_lear_act4_scene3_gloss17",
+      "line": 11,
+      "phrase": "passion",
+      "definition": "grief"
+    },
+    {
+      "id": "king_lear_act4_scene3_gloss18",
+      "line": 9,
+      "phrase": "trill’d",
+      "definition": "trickled"
+    },
+    {
+      "id": "king_lear_act4_scene3_gloss21",
+      "line": 28,
+      "phrase": "moisten’d",
+      "definition": "wetted with tears"
+    },
+    {
+      "id": "king_lear_act4_scene3_gloss23",
+      "line": 39,
+      "phrase": "sovereign shame",
+      "definition": "overpowering shame — what Lear feels"
+    },
+    {
+      "id": "king_lear_act4_scene3_gloss25",
+      "line": 41,
+      "phrase": "casualties",
+      "definition": "circumstances"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act4_scene3_ann1",
+      "line_start": 8,
+      "line_end": 35,
+      "citation_display": "King Lear 4.3.8–35",
+      "category": "textual",
+      "title": "4.3 is largely a Q1-only scene — a second textual crux",
+      "body": "The Gentleman's report to Kent about Cordelia receiving the news of her father — her tears and smilets, her face like 'sunshine and rain at once' — is in many modern conflated editions (including Standard Ebooks') but is substantially ABSENT from the 1623 Folio. This is the second major Q1/F1 divergence in the play, alongside 3.6's mock trial. The scene's function is to prepare the audience emotionally for Cordelia's reappearance in 4.4: we see her grief refracted through a witness before we see her directly. The Folio's excision of this scene, if deliberate, would make Cordelia's return more abrupt; modern editorial practice overwhelmingly restores it. Readers encountering the conflated text should know that the Folio editors saw fit to cut it.",
+      "sources": [
+        "Gary Taylor and Michael Warren (eds.), The Division of the Kingdoms (1983)",
+        "R. A. Foakes, King Lear (Arden 3, 1997)"
+      ]
+    },
+    {
+      "id": "king_lear_act4_scene3_ann2",
+      "line_start": 20,
+      "line_end": 40,
+      "citation_display": "King Lear 4.3.20–40",
+      "category": "close_reading",
+      "title": "'Sunshine and rain at once' — Cordelia's composed grief",
+      "body": "The Gentleman's description of Cordelia receiving news of her father — 'You have seen / Sunshine and rain at once; her smiles and tears / Were like, a better way' — is one of Shakespeare's most compressed emotional paintings. 'A better way' qualifies the cliché: her grief is more orderly than natural weather. 'Happy smilets... Those happy smilets, / That play'd on her ripe lip, seem'd not to know / What guests were in her eyes.' The face is doing two things at once, and Shakespeare's language tracks both. The passage is largely Q1-only and one of the reasons modern conflated editions feel emotionally completer than the Folio alone.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)",
+        "Frank Kermode, Shakespeare's Language (2000)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act4_scene3_q1",
+      "kind": "structural",
+      "prompt": "What is notable about 4.3 editorially?",
+      "options": [
+        "Nothing — it is uncontroversial",
+        "It is substantially a Q1-only scene; the 1623 Folio largely omits it — the second major Q1/F1 divergence in the play (after 3.6's mock trial)",
+        "It was added by an editor in the 18th century",
+        "It is in prose"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 58
+    }
+  ]
+}

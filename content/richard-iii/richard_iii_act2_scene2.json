@@ -1,0 +1,1111 @@
+{
+  "section_id": "richard_iii_act2_scene2",
+  "work_id": "richard-iii",
+  "sequence": 6,
+  "act": 2,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "The palace",
+  "line_count": 154,
+  "word_count": 1219,
+  "est_read_minutes": 6,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "BOY",
+      "text": "Tell me, good grandam, is our father dead?"
+    },
+    {
+      "number": 2,
+      "speaker": "DUCHESS",
+      "text": "No, boy."
+    },
+    {
+      "number": 3,
+      "speaker": "BOY",
+      "text": "Why do you wring your hands, and beat your breast,"
+    },
+    {
+      "number": 4,
+      "speaker": "BOY",
+      "text": "And cry “O Clarence, my unhappy son!”"
+    },
+    {
+      "number": 5,
+      "speaker": "GIRL",
+      "text": "Why do you look on us, and shake your head,"
+    },
+    {
+      "number": 6,
+      "speaker": "GIRL",
+      "text": "And call us wretches, orphans, castaways,"
+    },
+    {
+      "number": 7,
+      "speaker": "GIRL",
+      "text": "If that our noble father be alive?"
+    },
+    {
+      "number": 8,
+      "speaker": "DUCHESS",
+      "text": "My pretty cousins, you mistake me much;"
+    },
+    {
+      "number": 9,
+      "speaker": "DUCHESS",
+      "text": "I do lament the sickness of the king,"
+    },
+    {
+      "number": 10,
+      "speaker": "DUCHESS",
+      "text": "As loath to lose him, not your father’s death;"
+    },
+    {
+      "number": 11,
+      "speaker": "DUCHESS",
+      "text": "It were lost sorrow to wail one that’s lost."
+    },
+    {
+      "number": 12,
+      "speaker": "BOY",
+      "text": "Then, grandam, you conclude that he is dead."
+    },
+    {
+      "number": 13,
+      "speaker": "BOY",
+      "text": "The king my uncle is to blame for this:"
+    },
+    {
+      "number": 14,
+      "speaker": "BOY",
+      "text": "God will revenge it; whom I will importune"
+    },
+    {
+      "number": 15,
+      "speaker": "BOY",
+      "text": "With daily prayers all to that effect."
+    },
+    {
+      "number": 16,
+      "speaker": "GIRL",
+      "text": "And so will I."
+    },
+    {
+      "number": 17,
+      "speaker": "DUCHESS",
+      "text": "Peace, children, peace! the king doth love you well:"
+    },
+    {
+      "number": 18,
+      "speaker": "DUCHESS",
+      "text": "Incapable and shallow innocents,"
+    },
+    {
+      "number": 19,
+      "speaker": "DUCHESS",
+      "text": "You cannot guess who caused your father’s death."
+    },
+    {
+      "number": 20,
+      "speaker": "BOY",
+      "text": "Grandam, we can; for my good uncle Gloucester"
+    },
+    {
+      "number": 21,
+      "speaker": "BOY",
+      "text": "Told me, the king, provoked by the queen,"
+    },
+    {
+      "number": 22,
+      "speaker": "BOY",
+      "text": "Devised impeachments to imprison him:"
+    },
+    {
+      "number": 23,
+      "speaker": "BOY",
+      "text": "And when my uncle told me so, he wept,"
+    },
+    {
+      "number": 24,
+      "speaker": "BOY",
+      "text": "And hugg’d me in his arm, and kindly kiss’d my cheek;"
+    },
+    {
+      "number": 25,
+      "speaker": "BOY",
+      "text": "Bade me rely on him as on my father,"
+    },
+    {
+      "number": 26,
+      "speaker": "BOY",
+      "text": "And he would love me dearly as his child."
+    },
+    {
+      "number": 27,
+      "speaker": "DUCHESS",
+      "text": "Oh, that deceit should steal such gentle shapes,"
+    },
+    {
+      "number": 28,
+      "speaker": "DUCHESS",
+      "text": "And with a virtuous vizard hide foul guile!"
+    },
+    {
+      "number": 29,
+      "speaker": "DUCHESS",
+      "text": "He is my son; yea, and therein my shame;"
+    },
+    {
+      "number": 30,
+      "speaker": "DUCHESS",
+      "text": "Yet from my dugs he drew not this deceit."
+    },
+    {
+      "number": 31,
+      "speaker": "BOY",
+      "text": "Think you my uncle did dissemble, grandam?"
+    },
+    {
+      "number": 32,
+      "speaker": "DUCHESS",
+      "text": "Ay, boy."
+    },
+    {
+      "number": 33,
+      "speaker": "BOY",
+      "text": "I cannot think it. Hark! what noise is this?"
+    },
+    {
+      "number": 34,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Oh, who shall hinder me to wail and weep,"
+    },
+    {
+      "number": 35,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "To chide my fortune, and torment myself?"
+    },
+    {
+      "number": 36,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "I’ll join with black despair against my soul,"
+    },
+    {
+      "number": 37,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "And to myself become an enemy."
+    },
+    {
+      "number": 38,
+      "speaker": "DUCHESS",
+      "text": "What means this scene of rude impatience?"
+    },
+    {
+      "number": 39,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "To make an act of tragic violence:"
+    },
+    {
+      "number": 40,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Edward, my lord, your son, our king, is dead."
+    },
+    {
+      "number": 41,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Why grow the branches now the root is wither’d?"
+    },
+    {
+      "number": 42,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Why wither not the leaves the sap being gone?"
+    },
+    {
+      "number": 43,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "If you will live, lament; if die, be brief,"
+    },
+    {
+      "number": 44,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "That our swift-winged souls may catch the king’s;"
+    },
+    {
+      "number": 45,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Or, like obedient subjects, follow him"
+    },
+    {
+      "number": 46,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "To his new kingdom of perpetual rest."
+    },
+    {
+      "number": 47,
+      "speaker": "DUCHESS",
+      "text": "Ah, so much interest have I in thy sorrow"
+    },
+    {
+      "number": 48,
+      "speaker": "DUCHESS",
+      "text": "As I had title in thy noble husband!"
+    },
+    {
+      "number": 49,
+      "speaker": "DUCHESS",
+      "text": "I have bewept a worthy husband’s death,"
+    },
+    {
+      "number": 50,
+      "speaker": "DUCHESS",
+      "text": "And lived by looking on his images:"
+    },
+    {
+      "number": 51,
+      "speaker": "DUCHESS",
+      "text": "But now two mirrors of his princely semblance"
+    },
+    {
+      "number": 52,
+      "speaker": "DUCHESS",
+      "text": "Are crack’d in pieces by malignant death,"
+    },
+    {
+      "number": 53,
+      "speaker": "DUCHESS",
+      "text": "And I for comfort have but one false glass,"
+    },
+    {
+      "number": 54,
+      "speaker": "DUCHESS",
+      "text": "Which grieves me when I see my shame in him."
+    },
+    {
+      "number": 55,
+      "speaker": "DUCHESS",
+      "text": "Thou art a widow; yet thou art a mother,"
+    },
+    {
+      "number": 56,
+      "speaker": "DUCHESS",
+      "text": "And hast the comfort of thy children left thee:"
+    },
+    {
+      "number": 57,
+      "speaker": "DUCHESS",
+      "text": "But death hath snatch’d my husband from mine arms,"
+    },
+    {
+      "number": 58,
+      "speaker": "DUCHESS",
+      "text": "And pluck’d two crutches from my feeble limbs,"
+    },
+    {
+      "number": 59,
+      "speaker": "DUCHESS",
+      "text": "Edward and Clarence. O, what cause have I,"
+    },
+    {
+      "number": 60,
+      "speaker": "DUCHESS",
+      "text": "Thine being but a moiety of my grief,"
+    },
+    {
+      "number": 61,
+      "speaker": "DUCHESS",
+      "text": "To overgo thy plaints and drown thy cries!"
+    },
+    {
+      "number": 62,
+      "speaker": "BOY",
+      "text": "Good aunt, you wept not for our father’s death;"
+    },
+    {
+      "number": 63,
+      "speaker": "BOY",
+      "text": "How can we aid you with our kindred tears?"
+    },
+    {
+      "number": 64,
+      "speaker": "GIRL",
+      "text": "Our fatherless distress was left unmoan’d;"
+    },
+    {
+      "number": 65,
+      "speaker": "GIRL",
+      "text": "Your widow-dolour likewise be unwept!"
+    },
+    {
+      "number": 65,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Give me no help in lamentation;"
+    },
+    {
+      "number": 66,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "I am not barren to bring forth complaints:"
+    },
+    {
+      "number": 67,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "All springs reduce their currents to mine eyes,"
+    },
+    {
+      "number": 68,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "That I, being govern’d by the watery moon,"
+    },
+    {
+      "number": 69,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "May send forth plenteous tears to drown the world!"
+    },
+    {
+      "number": 70,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Oh for my husband, for my dear lord Edward!"
+    },
+    {
+      "number": 71,
+      "speaker": "CHILDREN",
+      "text": "Oh for our father, for our dear lord Clarence!"
+    },
+    {
+      "number": 72,
+      "speaker": "DUCHESS",
+      "text": "Alas for both, both mine, Edward and Clarence!"
+    },
+    {
+      "number": 73,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "What stay had I but Edward? and he’s gone."
+    },
+    {
+      "number": 74,
+      "speaker": "CHILDREN",
+      "text": "What stay had we but Clarence? and he’s gone."
+    },
+    {
+      "number": 75,
+      "speaker": "DUCHESS",
+      "text": "What stays had I but they? and they are gone."
+    },
+    {
+      "number": 76,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Was never widow had so dear a loss!"
+    },
+    {
+      "number": 77,
+      "speaker": "CHILDREN",
+      "text": "Were never orphans had so dear a loss!"
+    },
+    {
+      "number": 78,
+      "speaker": "DUCHESS",
+      "text": "Was never mother had so dear a loss!"
+    },
+    {
+      "number": 79,
+      "speaker": "DUCHESS",
+      "text": "Alas, I am the mother of these moans!"
+    },
+    {
+      "number": 80,
+      "speaker": "DUCHESS",
+      "text": "Their woes are parcell’d, mine are general."
+    },
+    {
+      "number": 81,
+      "speaker": "DUCHESS",
+      "text": "She for an Edward weeps, and so do I;"
+    },
+    {
+      "number": 82,
+      "speaker": "DUCHESS",
+      "text": "I for a Clarence weep, so doth not she:"
+    },
+    {
+      "number": 83,
+      "speaker": "DUCHESS",
+      "text": "These babes for Clarence weep, and so do I;"
+    },
+    {
+      "number": 84,
+      "speaker": "DUCHESS",
+      "text": "I for an Edward weep, so do not they:"
+    },
+    {
+      "number": 85,
+      "speaker": "DUCHESS",
+      "text": "Alas, you three, on me, threefold distress’d,"
+    },
+    {
+      "number": 86,
+      "speaker": "DUCHESS",
+      "text": "Pour all your tears! I am your sorrow’s nurse,"
+    },
+    {
+      "number": 87,
+      "speaker": "DUCHESS",
+      "text": "And I will pamper it with lamentations."
+    },
+    {
+      "number": 88,
+      "speaker": "DORSET",
+      "text": "Comfort, dear mother: God is much displeased"
+    },
+    {
+      "number": 89,
+      "speaker": "DORSET",
+      "text": "That you take with unthankfulness his doing:"
+    },
+    {
+      "number": 90,
+      "speaker": "DORSET",
+      "text": "In common worldly things, ’tis call’d ungrateful,"
+    },
+    {
+      "number": 91,
+      "speaker": "DORSET",
+      "text": "With dull unwilligness to repay a debt"
+    },
+    {
+      "number": 92,
+      "speaker": "DORSET",
+      "text": "Which with a bounteous hand was kindly lent;"
+    },
+    {
+      "number": 93,
+      "speaker": "DORSET",
+      "text": "Much more to be thus opposite with heaven,"
+    },
+    {
+      "number": 94,
+      "speaker": "DORSET",
+      "text": "For it requires the royal debt it lent you."
+    },
+    {
+      "number": 95,
+      "speaker": "RIVERS",
+      "text": "Madam, bethink you, like a careful mother,"
+    },
+    {
+      "number": 96,
+      "speaker": "RIVERS",
+      "text": "Of the young prince your son: send straight for him;"
+    },
+    {
+      "number": 97,
+      "speaker": "RIVERS",
+      "text": "Let him be crown’d; in him your comfort lives:"
+    },
+    {
+      "number": 98,
+      "speaker": "RIVERS",
+      "text": "Drown desperate sorrow in dead Edward’s grave,"
+    },
+    {
+      "number": 99,
+      "speaker": "RIVERS",
+      "text": "And plant your joys in living Edward’s throne."
+    },
+    {
+      "number": 100,
+      "speaker": "GLOUCESTER",
+      "text": "Madam, have comfort: all of us have cause"
+    },
+    {
+      "number": 101,
+      "speaker": "GLOUCESTER",
+      "text": "To wail the dimming of our shining star;"
+    },
+    {
+      "number": 102,
+      "speaker": "GLOUCESTER",
+      "text": "But none can cure their harms by wailing them."
+    },
+    {
+      "number": 103,
+      "speaker": "GLOUCESTER",
+      "text": "Madam, my mother, I do cry you mercy;"
+    },
+    {
+      "number": 104,
+      "speaker": "GLOUCESTER",
+      "text": "I did not see your grace: humbly on my knee"
+    },
+    {
+      "number": 105,
+      "speaker": "GLOUCESTER",
+      "text": "I crave your blessing."
+    },
+    {
+      "number": 106,
+      "speaker": "DUCHESS",
+      "text": "God bless thee; and put meekness in thy mind,"
+    },
+    {
+      "number": 107,
+      "speaker": "DUCHESS",
+      "text": "Love, charity, obedience, and true duty!"
+    },
+    {
+      "number": 108,
+      "speaker": "GLOUCESTER",
+      "text": "Amen; and make me die a good old man!"
+    },
+    {
+      "number": 109,
+      "speaker": "GLOUCESTER",
+      "text": "That is the butt-end of a mother’s blessing:"
+    },
+    {
+      "number": 110,
+      "speaker": "GLOUCESTER",
+      "text": "I marvel why her grace did leave it out."
+    },
+    {
+      "number": 111,
+      "speaker": "BUCKINGHAM",
+      "text": "You cloudy princes and heart-sorrowing peers,"
+    },
+    {
+      "number": 112,
+      "speaker": "BUCKINGHAM",
+      "text": "That bear this mutual heavy load of moan,"
+    },
+    {
+      "number": 113,
+      "speaker": "BUCKINGHAM",
+      "text": "Now cheer each other in each other’s love:"
+    },
+    {
+      "number": 114,
+      "speaker": "BUCKINGHAM",
+      "text": "Though we have spent our harvest of this king,"
+    },
+    {
+      "number": 115,
+      "speaker": "BUCKINGHAM",
+      "text": "We are to reap the harvest of his son."
+    },
+    {
+      "number": 116,
+      "speaker": "BUCKINGHAM",
+      "text": "The broken rancour of your high-swoln hearts,"
+    },
+    {
+      "number": 117,
+      "speaker": "BUCKINGHAM",
+      "text": "But lately splinter’d, knit, and join’d together,"
+    },
+    {
+      "number": 118,
+      "speaker": "BUCKINGHAM",
+      "text": "Must gently be preserved, cherish’d, and kept:"
+    },
+    {
+      "number": 119,
+      "speaker": "BUCKINGHAM",
+      "text": "Me seemeth good, that, with some little train,"
+    },
+    {
+      "number": 120,
+      "speaker": "BUCKINGHAM",
+      "text": "Forthwith from Ludlow the young prince be fetch’d"
+    },
+    {
+      "number": 121,
+      "speaker": "BUCKINGHAM",
+      "text": "Hither to London, to be crown’d our king."
+    },
+    {
+      "number": 122,
+      "speaker": "RIVERS",
+      "text": "Why with some little train, my Lord of Buckingham?"
+    },
+    {
+      "number": 123,
+      "speaker": "BUCKINGHAM",
+      "text": "Marry, my lord, lest, by a multitude,"
+    },
+    {
+      "number": 124,
+      "speaker": "BUCKINGHAM",
+      "text": "The new-heal’d wound of malice should break out;"
+    },
+    {
+      "number": 125,
+      "speaker": "BUCKINGHAM",
+      "text": "Which would be so much the more dangerous,"
+    },
+    {
+      "number": 126,
+      "speaker": "BUCKINGHAM",
+      "text": "By how much the estate is green and yet ungovern’d:"
+    },
+    {
+      "number": 127,
+      "speaker": "BUCKINGHAM",
+      "text": "Where every horse bears his commanding rein,"
+    },
+    {
+      "number": 128,
+      "speaker": "BUCKINGHAM",
+      "text": "And may direct his course as please himself,"
+    },
+    {
+      "number": 129,
+      "speaker": "BUCKINGHAM",
+      "text": "As well the fear of harm, as harm apparent,"
+    },
+    {
+      "number": 130,
+      "speaker": "BUCKINGHAM",
+      "text": "In my opinion, ought to be prevented."
+    },
+    {
+      "number": 131,
+      "speaker": "GLOUCESTER",
+      "text": "I hope the king made peace with all of us;"
+    },
+    {
+      "number": 132,
+      "speaker": "GLOUCESTER",
+      "text": "And the compact is firm and true in me."
+    },
+    {
+      "number": 133,
+      "speaker": "RIVERS",
+      "text": "And so in me; and so, I think, in all:"
+    },
+    {
+      "number": 134,
+      "speaker": "RIVERS",
+      "text": "Yet, since it is but green, it should be put"
+    },
+    {
+      "number": 135,
+      "speaker": "RIVERS",
+      "text": "To no apparent likelihood of breach,"
+    },
+    {
+      "number": 136,
+      "speaker": "RIVERS",
+      "text": "Which haply by much company might be urged:"
+    },
+    {
+      "number": 137,
+      "speaker": "RIVERS",
+      "text": "Therefore I say with noble Buckingham,"
+    },
+    {
+      "number": 138,
+      "speaker": "RIVERS",
+      "text": "That it is meet so few should fetch the prince."
+    },
+    {
+      "number": 139,
+      "speaker": "HASTINGS",
+      "text": "And so say I."
+    },
+    {
+      "number": 140,
+      "speaker": "GLOUCESTER",
+      "text": "Then be it so; and go we to determine"
+    },
+    {
+      "number": 141,
+      "speaker": "GLOUCESTER",
+      "text": "Who they shall be that straight shall post to Ludlow."
+    },
+    {
+      "number": 142,
+      "speaker": "GLOUCESTER",
+      "text": "Madam, and you, my mother, will you go"
+    },
+    {
+      "number": 143,
+      "speaker": "GLOUCESTER",
+      "text": "To give your censures in this weighty business?"
+    },
+    {
+      "number": 144,
+      "speaker": "QUEEN ELIZABETH DUCHESS",
+      "text": "With all our hearts."
+    },
+    {
+      "number": 145,
+      "speaker": "BUCKINGHAM",
+      "text": "My lord, whoever journeys to the prince."
+    },
+    {
+      "number": 146,
+      "speaker": "BUCKINGHAM",
+      "text": "For God’s sake, let not us two be behind;"
+    },
+    {
+      "number": 147,
+      "speaker": "BUCKINGHAM",
+      "text": "For, by the way, I’ll sort occasion,"
+    },
+    {
+      "number": 148,
+      "speaker": "BUCKINGHAM",
+      "text": "As index to the story we late talk’d of,"
+    },
+    {
+      "number": 149,
+      "speaker": "BUCKINGHAM",
+      "text": "To part the queen’s proud kindred from the king."
+    },
+    {
+      "number": 150,
+      "speaker": "GLOUCESTER",
+      "text": "My other self, my counsel’s consistory,"
+    },
+    {
+      "number": 151,
+      "speaker": "GLOUCESTER",
+      "text": "My oracle, my prophet! My dear cousin,"
+    },
+    {
+      "number": 152,
+      "speaker": "GLOUCESTER",
+      "text": "I, like a child, will go by thy direction."
+    },
+    {
+      "number": 153,
+      "speaker": "GLOUCESTER",
+      "text": "Towards Ludlow then, for we’ll not stay behind."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter the Duchess of York, with the two children of Clarence."
+    },
+    {
+      "after_line": 33,
+      "text": "Enter Queen Elizabeth, with her hair about her ears; Rivers, and Dorset after her."
+    },
+    {
+      "after_line": 99,
+      "text": "Enter Gloucester, Buckingham, Derby, Hastings, and Ratcliff."
+    },
+    {
+      "after_line": 108,
+      "text": "Aside."
+    },
+    {
+      "after_line": 144,
+      "text": "Exeunt all but Buckingham and Gloucester."
+    },
+    {
+      "after_line": 153,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act2_scene2_gloss1",
+      "line": 1,
+      "phrase": "grandam",
+      "definition": "grandmother — here the Duchess of York"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss2",
+      "line": 8,
+      "phrase": "cousins",
+      "definition": "relatives generally — the Duchess addresses her grandchildren"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss3",
+      "line": 11,
+      "phrase": "lost sorrow",
+      "definition": "wasted grief — grief for one already gone can't bring them back"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss4",
+      "line": 22,
+      "phrase": "impeachments",
+      "definition": "formal accusations of treason"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss5",
+      "line": 27,
+      "phrase": "deceit should steal such gentle shapes",
+      "definition": "that treachery should borrow such gentle appearances"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss6",
+      "line": 28,
+      "phrase": "virtuous vizard",
+      "definition": "virtuous mask — vizard = visor/mask"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss7",
+      "line": 30,
+      "phrase": "from my dugs he drew not this deceit",
+      "definition": "he did not nurse this treachery from my breasts — the Duchess distances herself from Richard's evil"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss8",
+      "line": 36,
+      "phrase": "black despair",
+      "definition": "theological despair — the sin that precludes salvation (cf. 1.2.84 and the ghost scene)"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss9",
+      "line": 41,
+      "phrase": "Why grow the branches now the root is wither’d",
+      "definition": "Elizabeth's formal arboreal lament — why does life continue when its source is dead?"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss10",
+      "line": 46,
+      "phrase": "kingdom of perpetual rest",
+      "definition": "heaven; the afterlife"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss11",
+      "line": 51,
+      "phrase": "two mirrors of his princely semblance",
+      "definition": "Edward IV and Clarence — each reflecting the father York"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss12",
+      "line": 53,
+      "phrase": "one false glass",
+      "definition": "one deceiving mirror — Richard, the third son, who falsely reflects his father"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss13",
+      "line": 60,
+      "phrase": "moiety",
+      "definition": "half; portion — the Duchess claims greater grief"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss14",
+      "line": 61,
+      "phrase": "overgo thy plaints",
+      "definition": "exceed thy lamentations"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss15",
+      "line": 65,
+      "phrase": "widow-dolour",
+      "definition": "widow's sorrow — 'dolour' = pain"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss16",
+      "line": 68,
+      "phrase": "govern’d by the watery moon",
+      "definition": "ruled by the moon (which governs tides) — tears as tide-water"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss17",
+      "line": 80,
+      "phrase": "Their woes are parcell’d",
+      "definition": "their sorrows are partial; mine are whole"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss18",
+      "line": 86,
+      "phrase": "sorrow’s nurse",
+      "definition": "nurse to sorrow — the Duchess frames herself as grief's foster-mother"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss19",
+      "line": 88,
+      "phrase": "Comfort, dear mother",
+      "definition": "Dorset's rebuke — the queen's son urges Christian resignation"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss20",
+      "line": 94,
+      "phrase": "royal debt it lent you",
+      "definition": "heaven lent Edward's life and now calls in the loan"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss21",
+      "line": 109,
+      "phrase": "butt-end",
+      "definition": "the stock-end of a weapon; the last part — Richard's aside on his mother's blessing"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss22",
+      "line": 115,
+      "phrase": "harvest of his son",
+      "definition": "Buckingham's image — reaping the new king's bounty"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss23",
+      "line": 117,
+      "phrase": "splinter’d",
+      "definition": "splinted; held together with splints (the surgeon's term)"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss24",
+      "line": 120,
+      "phrase": "Ludlow",
+      "definition": "Ludlow Castle, Shropshire — Prince Edward's household was established there"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss25",
+      "line": 126,
+      "phrase": "estate is green",
+      "definition": "the state is new, unseasoned"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss26",
+      "line": 148,
+      "phrase": "index to the story",
+      "definition": "table-of-contents of the story — Buckingham's metaphor for their earlier plotting"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss27",
+      "line": 150,
+      "phrase": "my counsel’s consistory",
+      "definition": "my counsel's assembly — 'consistory' = ecclesiastical court; Richard elevates Buckingham's status"
+    },
+    {
+      "id": "richard_iii_act2_scene2_gloss28",
+      "line": 151,
+      "phrase": "My oracle, my prophet",
+      "definition": "Richard's flattery of Buckingham — the religious vocabulary foreshadows 3.7's staged piety"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act2_scene2_ann1",
+      "line_start": 34,
+      "line_end": 100,
+      "citation_display": "Richard III 2.2.34–100",
+      "category": "structural",
+      "title": "The first formation of the wailing-queens pattern",
+      "body": "This is the play's first great formal lament, and it rehearses the set-piece that will reach full scale in 4.4. Queen Elizabeth, the Duchess of York, and Clarence's two children (Boy and Girl) arrange themselves in a pattern of antiphonal grief: each names a dead kinsman, then each responds with parallel syntax. \"Was never widow had so dear a loss!\" / \"Were never orphans had so dear a loss!\" / \"Was never mother had so dear a loss!\" The pattern is not decorative — it is the scene's architecture, and it tells the audience how to read grief in this play. Grief is not individual but choric. The women and children of the dynasty collectively mourn a political history their male kin built, and the formal symmetry enacts the claim that their sorrow is equal and shared. Shakespeare will tighten and extend the pattern in 4.4, adding Margaret; the pattern here prepares that reach.",
+      "sources": [
+        "Phyllis Rackin, Stages of History (1990)",
+        "Jean Howard and Phyllis Rackin, Engendering a Nation (1997)"
+      ]
+    },
+    {
+      "id": "richard_iii_act2_scene2_ann2",
+      "line_start": 27,
+      "line_end": 32,
+      "citation_display": "Richard III 2.2.27–32",
+      "category": "close_reading",
+      "title": "The Duchess of York's terrible knowledge",
+      "body": "The Duchess's aside about Richard — \"He is my son; yea, and therein my shame; / Yet from my dugs he drew not this deceit\" — is the play's first frank maternal condemnation of Richard. She is saying he is her son biologically but not morally; she did not nurse him into his villainy. The line is important because Margaret's later insults will accuse the Duchess of precisely this — of having hatched \"a hell-hound\" in her womb (4.4.47) — and the Duchess will accept that judgement. Here she is still trying to separate herself from him. The theological vocabulary (\"shame,\" \"deceit\") and the emphasis on nursing (\"dugs\") set up the play's peculiar pressure on mothers: in Richard III, maternal love is the one bond Richard's rhetoric can only reach by parody.",
+      "sources": [
+        "Janet Adelman, Suffocating Mothers (1992)",
+        "Coppélia Kahn, Man's Estate: Masculine Identity in Shakespeare (1981)"
+      ]
+    },
+    {
+      "id": "richard_iii_act2_scene2_ann3",
+      "line_start": 109,
+      "line_end": 153,
+      "citation_display": "Richard III 2.2.109–153",
+      "category": "structural",
+      "title": "Buckingham moves the plot — the trip to Ludlow",
+      "body": "The scene's political hinge is Buckingham's proposal that the young prince be fetched from Ludlow to London with \"some little train\" — a minimal escort. The reasoning given is public-order prudence (a large retinue would revive faction); the real purpose, announced to Richard in aside, is to \"part the queen's proud kindred from the king.\" This is the play's first clear demonstration that Buckingham is not merely a witness to Richard's plotting but an equal designer. Richard's response — \"My other self, my counsel's consistory, / My oracle, my prophet!\" — is the most extravagant flattery he delivers to any character in the play, and the reader should notice it. In 3 Henry VI Richard had no such partner. Buckingham is new. His usefulness to Richard extends only as long as his agreement; when he hesitates in 4.2 over the princes' murder, the flattery-vocabulary evaporates and he is marked for death.",
+      "sources": [
+        "Nicholas Brooke, Shakespeare's Early Tragedies (1968)",
+        "Charles R. Forker, \"Webster's Prose and the Rhetoric of Despair\" (1977)"
+      ]
+    },
+    {
+      "id": "richard_iii_act2_scene2_ann4",
+      "line_start": 88,
+      "line_end": 98,
+      "citation_display": "Richard III 2.2.88–98",
+      "category": "thematic",
+      "title": "Dorset's Christian resignation and what the play does with it",
+      "body": "The Marquess of Dorset's rebuke to his grieving mother — \"God is much displeased / That you take with unthankfulness his doing\" — is the voice of orthodox Elizabethan piety. Death is a debt; complaint against God's taking is ingratitude. The speech is sincere, and it is also dramatically insufficient. The play does not quarrel with the theology but demonstrates its limits: Dorset will himself be in exile by Act IV (fleeing to Richmond), and the \"royal debt\" language he deploys will by 4.4 be revealed as a mask for the plot's actual mechanism, which is not God's taking but Richard's. Shakespeare is careful not to reject the theology outright. He lets it stand, and lets its inadequacy to the play's suffering reveal itself as the plot continues. Consolation is real in Richard III; it is simply not sufficient.",
+      "sources": [
+        "Debora K. Shuger, Habits of Thought in the English Renaissance (1990)",
+        "Huston Diehl, Staging Reform, Reforming the Stage (1997)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act2_scene2_q1",
+      "kind": "structural",
+      "prompt": "The formally parallel exchange (\"Was never widow had so dear a loss! / Were never orphans had so dear a loss! / Was never mother had so dear a loss!\") serves what function?",
+      "options": [
+        "Ornamental rhetoric without structural purpose",
+        "The scene's architecture — it enacts the claim that grief in this play is choric and collectively shared",
+        "A parody of orthodox prayer",
+        "A riddle whose answer the audience must infer"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 76,
+      "anchor_line_end": 79
+    },
+    {
+      "id": "richard_iii_act2_scene2_q2",
+      "kind": "comprehension",
+      "prompt": "The Duchess of York, speaking of Richard, says \"He is my son... Yet from my dugs he drew not this deceit.\" What does she mean?",
+      "options": [
+        "That he is not in fact her biological son",
+        "That he is her biological son but she did not nurse him into his villainy — she separates herself morally from his acts",
+        "That she refused to breastfeed him, and this is the reason for his character",
+        "That he was raised by a wet-nurse rather than by her"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 29,
+      "anchor_line_end": 30
+    },
+    {
+      "id": "richard_iii_act2_scene2_q3",
+      "kind": "inference",
+      "prompt": "Why does Buckingham want the young prince fetched from Ludlow with \"some little train\"?",
+      "options": [
+        "To save expense",
+        "The stated reason is public order; the private reason (announced to Richard in aside) is to separate the prince from the queen's \"proud kindred\"",
+        "To speed the journey back to London",
+        "To avoid attracting the notice of foreign ambassadors"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 119,
+      "anchor_line_end": 149
+    },
+    {
+      "id": "richard_iii_act2_scene2_q4",
+      "kind": "theme",
+      "prompt": "Richard greets Buckingham as \"My other self, my counsel's consistory, / My oracle, my prophet!\" What does this flattery signal?",
+      "options": [
+        "Sincere religious devotion",
+        "That Buckingham is Richard's equal partner in design at this moment — a relationship that will hold only until Buckingham hesitates in 4.2",
+        "That Richard has converted to Catholic piety",
+        "A casual formulaic courtesy, with no dramatic weight"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 150,
+      "anchor_line_end": 152
+    },
+    {
+      "id": "richard_iii_act2_scene2_q5",
+      "kind": "close_reading",
+      "prompt": "Dorset's counsel to his mother — \"God is much displeased that you take with unthankfulness his doing\" — represents what?",
+      "options": [
+        "Explicit blasphemy",
+        "Orthodox Elizabethan Christian consolation, which the play respects but ultimately finds insufficient to its suffering",
+        "A sarcastic mockery of piety",
+        "A legal argument against inheritance disputes"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 88,
+      "anchor_line_end": 94
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "section_id": "hamlet_act4_scene3",
+  "trials": [
+    {
+      "kind": "close_reading",
+      "prompt": "What is Hamlet's parable of the 'politic worms,' the fisherman, and the fish meant to demonstrate?",
+      "options": [
+        "That worms will inherit the earth.",
+        "That death levels kings and beggars: a monarch may end in a beggar's belly.",
+        "That fishing is a noble art.",
+        "That Denmark is being eaten away by corrupt politicians."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 19,
+      "anchor_line_end": 28
+    },
+    {
+      "kind": "comprehension",
+      "prompt": "Where does Hamlet finally say Polonius may be found?",
+      "options": [
+        "In the castle cellars, preserved in salt.",
+        "In heaven — and if the messenger does not find him there, he should check hell.",
+        "Buried beneath the orchard where old Hamlet died.",
+        "In the chapel where Claudius prays."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 30,
+      "anchor_line_end": 36
+    },
+    {
+      "kind": "inference",
+      "prompt": "What does Claudius's soliloquy at the end of the scene reveal?",
+      "options": [
+        "That he has repented of his crime and will confess.",
+        "That the sealed commission to England instructs the English king to execute Hamlet at once.",
+        "That Gertrude has joined the plot against Hamlet.",
+        "That Polonius is not dead but hiding."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 55,
+      "anchor_line_end": 70
+    },
+    {
+      "kind": "theme",
+      "prompt": "What is the function of the comparison Claudius makes between Denmark's claim on England and a 'hectic' fever?",
+      "options": [
+        "It suggests that English politics are feverishly disordered.",
+        "It frames Hamlet's execution as a kind of political medicine — a treatment for a raging illness within Claudius himself.",
+        "It is a joke at the expense of the English king's cowardice.",
+        "It indicates that Hamlet has contracted a fever in the voyage."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 66,
+      "anchor_line_end": 70
+    }
+  ]
+}

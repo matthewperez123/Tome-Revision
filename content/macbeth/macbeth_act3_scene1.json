@@ -1,0 +1,1015 @@
+{
+  "section_id": "macbeth_act3_scene1",
+  "work_id": "macbeth",
+  "sequence": 12,
+  "act": 3,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "Forres. The palace",
+  "line_count": 153,
+  "word_count": 1125,
+  "est_read_minutes": 6,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "BANQUO",
+      "text": "Thou hast it now: king, Cawdor, Glamis, all,"
+    },
+    {
+      "number": 2,
+      "speaker": "BANQUO",
+      "text": "As the weird women promised, and, I fear,"
+    },
+    {
+      "number": 3,
+      "speaker": "BANQUO",
+      "text": "Thou play’dst most foully for’t: yet it was said"
+    },
+    {
+      "number": 4,
+      "speaker": "BANQUO",
+      "text": "It should not stand in thy posterity,"
+    },
+    {
+      "number": 5,
+      "speaker": "BANQUO",
+      "text": "But that myself should be the root and father"
+    },
+    {
+      "number": 6,
+      "speaker": "BANQUO",
+      "text": "Of many kings. If there come truth from them—"
+    },
+    {
+      "number": 7,
+      "speaker": "BANQUO",
+      "text": "As upon thee, Macbeth, their speeches shine—"
+    },
+    {
+      "number": 8,
+      "speaker": "BANQUO",
+      "text": "Why, by the verities on thee made good,"
+    },
+    {
+      "number": 9,
+      "speaker": "BANQUO",
+      "text": "May they not be my oracles as well,"
+    },
+    {
+      "number": 10,
+      "speaker": "BANQUO",
+      "text": "And set me up in hope? But hush! no more."
+    },
+    {
+      "number": 11,
+      "speaker": "MACBETH",
+      "text": "Here’s our chief guest."
+    },
+    {
+      "number": 11,
+      "speaker": "LADY MACBETH",
+      "text": "If he had been forgotten,"
+    },
+    {
+      "number": 12,
+      "speaker": "LADY MACBETH",
+      "text": "It had been as a gap in our great feast,"
+    },
+    {
+      "number": 13,
+      "speaker": "LADY MACBETH",
+      "text": "And all-thing unbecoming."
+    },
+    {
+      "number": 14,
+      "speaker": "MACBETH",
+      "text": "To-night we hold a solemn supper sir,"
+    },
+    {
+      "number": 15,
+      "speaker": "MACBETH",
+      "text": "And I’ll request your presence."
+    },
+    {
+      "number": 15,
+      "speaker": "BANQUO",
+      "text": "Let your highness"
+    },
+    {
+      "number": 16,
+      "speaker": "BANQUO",
+      "text": "Command upon me; to the which my duties"
+    },
+    {
+      "number": 17,
+      "speaker": "BANQUO",
+      "text": "Are with a most indissoluble tie"
+    },
+    {
+      "number": 18,
+      "speaker": "BANQUO",
+      "text": "For ever knit."
+    },
+    {
+      "number": 18,
+      "speaker": "MACBETH",
+      "text": "Ride you this afternoon?"
+    },
+    {
+      "number": 19,
+      "speaker": "BANQUO",
+      "text": "Ay, my good lord."
+    },
+    {
+      "number": 20,
+      "speaker": "MACBETH",
+      "text": "We should have else desired your good advice,"
+    },
+    {
+      "number": 21,
+      "speaker": "MACBETH",
+      "text": "Which still hath been both grave and prosperous,"
+    },
+    {
+      "number": 22,
+      "speaker": "MACBETH",
+      "text": "In this day’s council; but we’ll take to-morrow."
+    },
+    {
+      "number": 23,
+      "speaker": "MACBETH",
+      "text": "Is’t far you ride?"
+    },
+    {
+      "number": 24,
+      "speaker": "BANQUO",
+      "text": "As far, my lord, as will fill up the time"
+    },
+    {
+      "number": 25,
+      "speaker": "BANQUO",
+      "text": "’Twixt this and supper: go not my horse the better,"
+    },
+    {
+      "number": 26,
+      "speaker": "BANQUO",
+      "text": "I must become a borrower of the night"
+    },
+    {
+      "number": 27,
+      "speaker": "BANQUO",
+      "text": "For a dark hour or twain."
+    },
+    {
+      "number": 27,
+      "speaker": "MACBETH",
+      "text": "Fail not our feast."
+    },
+    {
+      "number": 28,
+      "speaker": "BANQUO",
+      "text": "My lord, I will not."
+    },
+    {
+      "number": 29,
+      "speaker": "MACBETH",
+      "text": "We hear, our bloody cousins are bestow’d"
+    },
+    {
+      "number": 30,
+      "speaker": "MACBETH",
+      "text": "In England and in Ireland, not confessing"
+    },
+    {
+      "number": 31,
+      "speaker": "MACBETH",
+      "text": "Their cruel parricide, filling their hearers"
+    },
+    {
+      "number": 32,
+      "speaker": "MACBETH",
+      "text": "With strange invention: but of that to-morrow,"
+    },
+    {
+      "number": 33,
+      "speaker": "MACBETH",
+      "text": "When therewithal we shall have cause of state"
+    },
+    {
+      "number": 34,
+      "speaker": "MACBETH",
+      "text": "Craving us jointly. Hie you to horse: adieu,"
+    },
+    {
+      "number": 35,
+      "speaker": "MACBETH",
+      "text": "Till you return at night. Goes Fleance with you?"
+    },
+    {
+      "number": 36,
+      "speaker": "BANQUO",
+      "text": "Ay, my good lord: our time does call upon’s."
+    },
+    {
+      "number": 37,
+      "speaker": "MACBETH",
+      "text": "I wish your horses swift and sure of foot;"
+    },
+    {
+      "number": 38,
+      "speaker": "MACBETH",
+      "text": "And so I do commend you to their backs."
+    },
+    {
+      "number": 39,
+      "speaker": "MACBETH",
+      "text": "Farewell."
+    },
+    {
+      "number": 40,
+      "speaker": "MACBETH",
+      "text": "Let every man be master of his time"
+    },
+    {
+      "number": 41,
+      "speaker": "MACBETH",
+      "text": "Till seven at night: to make society"
+    },
+    {
+      "number": 42,
+      "speaker": "MACBETH",
+      "text": "The sweeter welcome, we will keep ourself"
+    },
+    {
+      "number": 43,
+      "speaker": "MACBETH",
+      "text": "Till supper-time alone: while then, God be with you!"
+    },
+    {
+      "number": 44,
+      "speaker": "MACBETH",
+      "text": "Sirrah, a word with you: attend those men"
+    },
+    {
+      "number": 45,
+      "speaker": "MACBETH",
+      "text": "Our pleasure?"
+    },
+    {
+      "number": 46,
+      "speaker": "ATTENDANT",
+      "text": "They are, my lord, without the palace gate."
+    },
+    {
+      "number": 47,
+      "speaker": "MACBETH",
+      "text": "Bring them before us. To be thus is nothing;"
+    },
+    {
+      "number": 48,
+      "speaker": "MACBETH",
+      "text": "But to be safely thus.—Our fears in Banquo"
+    },
+    {
+      "number": 49,
+      "speaker": "MACBETH",
+      "text": "Stick deep; and in his royalty of nature"
+    },
+    {
+      "number": 50,
+      "speaker": "MACBETH",
+      "text": "Reigns that which would be fear’d: ’tis much he dares;"
+    },
+    {
+      "number": 51,
+      "speaker": "MACBETH",
+      "text": "And, to that dauntless temper of his mind,"
+    },
+    {
+      "number": 52,
+      "speaker": "MACBETH",
+      "text": "He hath a wisdom that doth guide his valour"
+    },
+    {
+      "number": 53,
+      "speaker": "MACBETH",
+      "text": "To act in safety. There is none but he"
+    },
+    {
+      "number": 54,
+      "speaker": "MACBETH",
+      "text": "Whose being I do fear: and, under him,"
+    },
+    {
+      "number": 55,
+      "speaker": "MACBETH",
+      "text": "My Genius is rebuked; as, it is said,"
+    },
+    {
+      "number": 56,
+      "speaker": "MACBETH",
+      "text": "Mark Antony’s was by Caesar. He chid the sisters"
+    },
+    {
+      "number": 57,
+      "speaker": "MACBETH",
+      "text": "When first they put the name of king upon me,"
+    },
+    {
+      "number": 58,
+      "speaker": "MACBETH",
+      "text": "And bade them speak to him: then prophet-like"
+    },
+    {
+      "number": 59,
+      "speaker": "MACBETH",
+      "text": "They hail’d him father to a line of kings:"
+    },
+    {
+      "number": 60,
+      "speaker": "MACBETH",
+      "text": "Upon my head they placed a fruitless crown,"
+    },
+    {
+      "number": 61,
+      "speaker": "MACBETH",
+      "text": "And put a barren sceptre in my gripe,"
+    },
+    {
+      "number": 62,
+      "speaker": "MACBETH",
+      "text": "Thence to be wrench’d with an unlineal hand,"
+    },
+    {
+      "number": 63,
+      "speaker": "MACBETH",
+      "text": "No son of mine succeeding. If’t be so,"
+    },
+    {
+      "number": 64,
+      "speaker": "MACBETH",
+      "text": "For Banquo’s issue have I filed my mind;"
+    },
+    {
+      "number": 65,
+      "speaker": "MACBETH",
+      "text": "For them the gracious Duncan have I murder’d;"
+    },
+    {
+      "number": 66,
+      "speaker": "MACBETH",
+      "text": "Put rancours in the vessel of my peace"
+    },
+    {
+      "number": 67,
+      "speaker": "MACBETH",
+      "text": "Only for them; and mine eternal jewel"
+    },
+    {
+      "number": 68,
+      "speaker": "MACBETH",
+      "text": "Given to the common enemy of man,"
+    },
+    {
+      "number": 69,
+      "speaker": "MACBETH",
+      "text": "To make them kings, the seed of Banquo kings!"
+    },
+    {
+      "number": 70,
+      "speaker": "MACBETH",
+      "text": "Rather than so, come fate into the list,"
+    },
+    {
+      "number": 71,
+      "speaker": "MACBETH",
+      "text": "And champion me to the utterance! Who’s there!"
+    },
+    {
+      "number": 72,
+      "speaker": "FIRST MURDERER",
+      "text": "It was, so please your highness."
+    },
+    {
+      "number": 72,
+      "speaker": "MACBETH",
+      "text": "Well then, now"
+    },
+    {
+      "number": 73,
+      "speaker": "MACBETH",
+      "text": "Have you consider’d of my speeches? Know"
+    },
+    {
+      "number": 74,
+      "speaker": "MACBETH",
+      "text": "That it was he in the times past which held you"
+    },
+    {
+      "number": 75,
+      "speaker": "MACBETH",
+      "text": "So under fortune, which you thought had been"
+    },
+    {
+      "number": 76,
+      "speaker": "MACBETH",
+      "text": "Our innocent self: this I made good to you"
+    },
+    {
+      "number": 77,
+      "speaker": "MACBETH",
+      "text": "In our last conference, pass’d in probation with you,"
+    },
+    {
+      "number": 78,
+      "speaker": "MACBETH",
+      "text": "How you were borne in hand, how cross’d, the instruments,"
+    },
+    {
+      "number": 79,
+      "speaker": "MACBETH",
+      "text": "Who wrought with them, and all things else that might"
+    },
+    {
+      "number": 80,
+      "speaker": "MACBETH",
+      "text": "To half a soul and to a notion crazed"
+    },
+    {
+      "number": 81,
+      "speaker": "MACBETH",
+      "text": "Say “Thus did Banquo.”"
+    },
+    {
+      "number": 81,
+      "speaker": "FIRST MURDERER",
+      "text": "You made it known to us."
+    },
+    {
+      "number": 82,
+      "speaker": "MACBETH",
+      "text": "I did so, and went further, which is now"
+    },
+    {
+      "number": 83,
+      "speaker": "MACBETH",
+      "text": "Our point of second meeting. Do you find"
+    },
+    {
+      "number": 84,
+      "speaker": "MACBETH",
+      "text": "Your patience so predominant in your nature"
+    },
+    {
+      "number": 85,
+      "speaker": "MACBETH",
+      "text": "That you can let this go? Are you so gospell’d"
+    },
+    {
+      "number": 86,
+      "speaker": "MACBETH",
+      "text": "To pray for this good man and for his issue,"
+    },
+    {
+      "number": 87,
+      "speaker": "MACBETH",
+      "text": "Whose heavy hand hath bow’d you to the grave"
+    },
+    {
+      "number": 88,
+      "speaker": "MACBETH",
+      "text": "And beggar’d yours for ever?"
+    },
+    {
+      "number": 88,
+      "speaker": "FIRST MURDERER",
+      "text": "We are men, my liege."
+    },
+    {
+      "number": 89,
+      "speaker": "MACBETH",
+      "text": "Ay, in the catalogue ye go for men;"
+    },
+    {
+      "number": 90,
+      "speaker": "MACBETH",
+      "text": "As hounds and greyhounds, mongrels, spaniels, curs,"
+    },
+    {
+      "number": 91,
+      "speaker": "MACBETH",
+      "text": "Shoughs, water-rugs and demi-wolves, are clept"
+    },
+    {
+      "number": 92,
+      "speaker": "MACBETH",
+      "text": "All by the name of dogs: the valued file"
+    },
+    {
+      "number": 93,
+      "speaker": "MACBETH",
+      "text": "Distinguishes the swift, the slow, the subtle,"
+    },
+    {
+      "number": 94,
+      "speaker": "MACBETH",
+      "text": "The housekeeper, the hunter, every one"
+    },
+    {
+      "number": 95,
+      "speaker": "MACBETH",
+      "text": "According to the gift which bounteous nature"
+    },
+    {
+      "number": 96,
+      "speaker": "MACBETH",
+      "text": "Hath in him closed, whereby he does receive"
+    },
+    {
+      "number": 97,
+      "speaker": "MACBETH",
+      "text": "Particular addition, from the bill"
+    },
+    {
+      "number": 98,
+      "speaker": "MACBETH",
+      "text": "That writes them all alike: and so of men."
+    },
+    {
+      "number": 99,
+      "speaker": "MACBETH",
+      "text": "Now, if you have a station in the file,"
+    },
+    {
+      "number": 100,
+      "speaker": "MACBETH",
+      "text": "Not i’ the worst rank of manhood, say’t;"
+    },
+    {
+      "number": 101,
+      "speaker": "MACBETH",
+      "text": "And I will put that business in your bosoms,"
+    },
+    {
+      "number": 102,
+      "speaker": "MACBETH",
+      "text": "Whose execution takes your enemy off,"
+    },
+    {
+      "number": 103,
+      "speaker": "MACBETH",
+      "text": "Grapples you to the heart and love of us,"
+    },
+    {
+      "number": 104,
+      "speaker": "MACBETH",
+      "text": "Who wear our health but sickly in his life,"
+    },
+    {
+      "number": 105,
+      "speaker": "MACBETH",
+      "text": "Which in his death were perfect."
+    },
+    {
+      "number": 105,
+      "speaker": "SECOND MURDERER",
+      "text": "I am one, my liege,"
+    },
+    {
+      "number": 106,
+      "speaker": "SECOND MURDERER",
+      "text": "Whom the vile blows and buffets of the world"
+    },
+    {
+      "number": 107,
+      "speaker": "SECOND MURDERER",
+      "text": "Have so incensed that I am reckless what"
+    },
+    {
+      "number": 108,
+      "speaker": "SECOND MURDERER",
+      "text": "I do to spite the world."
+    },
+    {
+      "number": 108,
+      "speaker": "FIRST MURDERER",
+      "text": "And I another"
+    },
+    {
+      "number": 109,
+      "speaker": "FIRST MURDERER",
+      "text": "So weary with disasters, tugg’d with fortune,"
+    },
+    {
+      "number": 110,
+      "speaker": "FIRST MURDERER",
+      "text": "That I would set my lie on any chance,"
+    },
+    {
+      "number": 111,
+      "speaker": "FIRST MURDERER",
+      "text": "To mend it, or be rid on’t."
+    },
+    {
+      "number": 112,
+      "speaker": "MACBETH",
+      "text": "Both of you"
+    },
+    {
+      "number": 113,
+      "speaker": "MACBETH",
+      "text": "Know Banquo was your enemy."
+    },
+    {
+      "number": 113,
+      "speaker": "BOTH MURDERERS",
+      "text": "True, my lord."
+    },
+    {
+      "number": 114,
+      "speaker": "MACBETH",
+      "text": "So is he mine; and in such bloody distance,"
+    },
+    {
+      "number": 115,
+      "speaker": "MACBETH",
+      "text": "That every minute of his being thrusts"
+    },
+    {
+      "number": 116,
+      "speaker": "MACBETH",
+      "text": "Against my near’st of life: and though I could"
+    },
+    {
+      "number": 117,
+      "speaker": "MACBETH",
+      "text": "With barefaced power sweep him from my sight"
+    },
+    {
+      "number": 118,
+      "speaker": "MACBETH",
+      "text": "And bid my will avouch it, yet I must not,"
+    },
+    {
+      "number": 119,
+      "speaker": "MACBETH",
+      "text": "For certain friends that are both his and mine,"
+    },
+    {
+      "number": 120,
+      "speaker": "MACBETH",
+      "text": "Whose loves I may not drop, but wail his fall"
+    },
+    {
+      "number": 121,
+      "speaker": "MACBETH",
+      "text": "Who I myself struck down; and thence it is,"
+    },
+    {
+      "number": 122,
+      "speaker": "MACBETH",
+      "text": "That I to your assistance do make love,"
+    },
+    {
+      "number": 123,
+      "speaker": "MACBETH",
+      "text": "Masking the business from the common eye"
+    },
+    {
+      "number": 124,
+      "speaker": "MACBETH",
+      "text": "For sundry weighty reasons."
+    },
+    {
+      "number": 124,
+      "speaker": "SECOND MURDERER",
+      "text": "We shall, my lord,"
+    },
+    {
+      "number": 125,
+      "speaker": "SECOND MURDERER",
+      "text": "Perform what you command us."
+    },
+    {
+      "number": 125,
+      "speaker": "FIRST MURDERER",
+      "text": "Though our lives—"
+    },
+    {
+      "number": 126,
+      "speaker": "MACBETH",
+      "text": "Your spirits shine through you. Within this hour at most"
+    },
+    {
+      "number": 127,
+      "speaker": "MACBETH",
+      "text": "I will advise you where to plant yourselves;"
+    },
+    {
+      "number": 128,
+      "speaker": "MACBETH",
+      "text": "Acquaint you with the perfect spy o’ the time,"
+    },
+    {
+      "number": 129,
+      "speaker": "MACBETH",
+      "text": "The moment on’t; for’t must be done to-night,"
+    },
+    {
+      "number": 130,
+      "speaker": "MACBETH",
+      "text": "And something from the palace; always thought"
+    },
+    {
+      "number": 131,
+      "speaker": "MACBETH",
+      "text": "That I require a clearness: and with him—"
+    },
+    {
+      "number": 132,
+      "speaker": "MACBETH",
+      "text": "To leave no rubs nor botches in the work—"
+    },
+    {
+      "number": 133,
+      "speaker": "MACBETH",
+      "text": "Fleance his son, that keeps him company,"
+    },
+    {
+      "number": 134,
+      "speaker": "MACBETH",
+      "text": "Whose absence is no less material to me"
+    },
+    {
+      "number": 135,
+      "speaker": "MACBETH",
+      "text": "Than is his father’s, must embrace the fate"
+    },
+    {
+      "number": 136,
+      "speaker": "MACBETH",
+      "text": "Of that dark hour. Resolve yourselves apart:"
+    },
+    {
+      "number": 137,
+      "speaker": "MACBETH",
+      "text": "I’ll come to you anon."
+    },
+    {
+      "number": 137,
+      "speaker": "BOTH MURDERERS",
+      "text": "We are resolved, my lord."
+    },
+    {
+      "number": 138,
+      "speaker": "MACBETH",
+      "text": "I’ll call upon you straight: abide within."
+    },
+    {
+      "number": 139,
+      "speaker": "MACBETH",
+      "text": "It is concluded. Banquo, thy soul’s flight,"
+    },
+    {
+      "number": 140,
+      "speaker": "MACBETH",
+      "text": "If it find heaven, must find it out to-night."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Banquo."
+    },
+    {
+      "after_line": 10,
+      "text": "Sennet sounded. Enter Macbeth, as king, Lady Macbeth, as queen, Lennox, Ross, Lords, Ladies, and Attendants."
+    },
+    {
+      "after_line": 39,
+      "text": "Exit Banquo."
+    },
+    {
+      "after_line": 43,
+      "text": "Exeunt all but Macbeth, and an Attendant."
+    },
+    {
+      "after_line": 47,
+      "text": "Exit Attendant."
+    },
+    {
+      "after_line": 71,
+      "text": "Reenter Attendant, with two Murderers."
+    },
+    {
+      "after_line": 71,
+      "text": "Now go to the door, and stay there till we call. Exit Attendant. Was it not yesterday we spoke together?"
+    },
+    {
+      "after_line": 138,
+      "text": "Exeunt Murderers."
+    },
+    {
+      "after_line": 140,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act3_scene1_gloss1",
+      "line": 1,
+      "phrase": "Thou hast it now",
+      "definition": "Banquo's opening — Macbeth has received everything the Witches promised"
+    },
+    {
+      "id": "macbeth_act3_scene1_gloss2",
+      "line": 3,
+      "phrase": "play’dst most foully for’t",
+      "definition": "you cheated to get it"
+    },
+    {
+      "id": "macbeth_act3_scene1_gloss3",
+      "line": 4,
+      "phrase": "stand in thy posterity",
+      "definition": "remain in your descendants"
+    },
+    {
+      "id": "macbeth_act3_scene1_gloss5",
+      "line": 13,
+      "phrase": "all-thing unbecoming",
+      "definition": "wholly improper"
+    },
+    {
+      "id": "macbeth_act3_scene1_gloss6",
+      "line": 27,
+      "phrase": "Fail not our feast",
+      "definition": "don't miss the banquet — Macbeth's forced hospitality"
+    },
+    {
+      "id": "macbeth_act3_scene1_gloss7",
+      "line": 27,
+      "phrase": "twain",
+      "definition": "two"
+    },
+    {
+      "id": "macbeth_act3_scene1_gloss9",
+      "line": 47,
+      "phrase": "To be thus is nothing",
+      "definition": "to be king is worthless"
+    },
+    {
+      "id": "macbeth_act3_scene1_gloss10",
+      "line": 49,
+      "phrase": "royalty of nature",
+      "definition": "the regal nobility of Banquo's inherent character"
+    },
+    {
+      "id": "macbeth_act3_scene1_gloss11",
+      "line": 51,
+      "phrase": "dauntless temper",
+      "definition": "fearless disposition"
+    },
+    {
+      "id": "macbeth_act3_scene1_gloss12",
+      "line": 55,
+      "phrase": "My Genius is rebuked",
+      "definition": "my guardian spirit is made to feel inferior — a Plutarchan parallel with Antony before Octavius"
+    },
+    {
+      "id": "macbeth_act3_scene1_gloss13",
+      "line": 55,
+      "phrase": "Genius",
+      "definition": "attendant guardian spirit — a classical Roman concept"
+    },
+    {
+      "id": "macbeth_act3_scene1_gloss14",
+      "line": 60,
+      "phrase": "fruitless crown",
+      "definition": "a crown that will produce no heirs of his blood"
+    },
+    {
+      "id": "macbeth_act3_scene1_gloss15",
+      "line": 61,
+      "phrase": "barren sceptre",
+      "definition": "a royal rule that will leave no lineage"
+    },
+    {
+      "id": "macbeth_act3_scene1_gloss16",
+      "line": 62,
+      "phrase": "unlineal",
+      "definition": "not of his direct descent"
+    },
+    {
+      "id": "macbeth_act3_scene1_gloss17",
+      "line": 63,
+      "phrase": "No son of mine succeeding",
+      "definition": "Macbeth's deepest wound — Banquo's sons will reign, not his"
+    },
+    {
+      "id": "macbeth_act3_scene1_gloss20",
+      "line": 68,
+      "phrase": "common enemy of man",
+      "definition": "the devil"
+    },
+    {
+      "id": "macbeth_act3_scene1_gloss21",
+      "line": 70,
+      "phrase": "Fate",
+      "definition": "the Weird Sisters, now called the Fates"
+    },
+    {
+      "id": "macbeth_act3_scene1_gloss24",
+      "line": 123,
+      "phrase": "common eye",
+      "definition": "public observation"
+    },
+    {
+      "id": "macbeth_act3_scene1_gloss25",
+      "line": 133,
+      "phrase": "Fleance",
+      "definition": "Banquo's son — the boy who must die with him for the prophecy to fail"
+    },
+    {
+      "id": "macbeth_act3_scene1_gloss26",
+      "line": 134,
+      "phrase": "absence",
+      "definition": "the murderers' understood term: death, removal"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act3_scene1_ann1",
+      "line_start": 48,
+      "line_end": 70,
+      "citation_display": "Macbeth 3.1.48–70",
+      "category": "thematic",
+      "title": "Banquo as the second fear",
+      "body": "Macbeth's soliloquy after Banquo's exit — 'To be thus is nothing, / But to be safely thus' — reveals the irony of his situation: he has the crown and feels nothing. The crown is 'fruitless,' the sceptre 'barren'; the Sisters' promise that Banquo's descendants will rule is the wound that keeps bleeding.\n\n'My Genius is rebuked' — Macbeth invokes Plutarch's *Life of Antony*, where Antony is said to have a lesser genius than Octavius, one that shrinks in the younger man's presence. Shakespeare had dramatized the image in *Antony and Cleopatra* (probably written the next year). Here, Banquo is Macbeth's Octavius: the calmer, more legitimate rival whose presence diminishes him.\n\nThe soliloquy crystallizes the play's problem. Murder was supposed to end the anxiety; it has only relocated it. Every murder Macbeth commits from here forward will be an attempt to kill the residue of the previous one.",
+      "sources": [
+        "Plutarch, *Life of Antony* 33",
+        "A. C. Bradley (1904)",
+        "Harold Bloom (1998)"
+      ]
+    },
+    {
+      "id": "macbeth_act3_scene1_ann2",
+      "line_start": 75,
+      "line_end": 140,
+      "citation_display": "Macbeth 3.1.75–140",
+      "category": "structural",
+      "title": "The hiring of the murderers",
+      "body": "The extended scene in which Macbeth persuades two 'murderers' to kill Banquo and Fleance is usually cut or shortened in performance. It shouldn't be. The scene is the first and clearest demonstration of how Macbeth has begun to rule: by using Iago-like rhetorical manipulation on men below him in rank.\n\nHe does not order the killing. He persuades the murderers that Banquo has been their enemy — dishonest, blocking their advancement, responsible for their poverty. The manipulation is intimate and carefully graded. By the end, they believe they have reason to hate Banquo independently of Macbeth's command. They will kill him as volunteers, not as tools.\n\nThe scene rhymes with 1.7, where Lady Macbeth manipulated Macbeth into killing Duncan. Macbeth has learned her technique. He will apply it to everyone below him for the rest of the play — until, in 5.3, he can no longer bring himself to talk to servants.",
+      "sources": [
+        "Harold C. Goddard, *The Meaning of Shakespeare*, vol. 2 (1951)",
+        "Richard McCoy, *The Rites of Knighthood* (1989)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act3_scene1_q1",
+      "kind": "inference",
+      "prompt": "Why does Banquo's survival torment Macbeth even after he wears the crown?",
+      "options": [
+        "Banquo mocks him",
+        "The Sisters promised Banquo's descendants would rule — making Macbeth's crown 'fruitless' and 'barren'",
+        "Banquo refuses to eat at the banquet",
+        "Banquo is stealing from him"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 48,
+      "anchor_line_end": 70
+    },
+    {
+      "id": "macbeth_act3_scene1_q2",
+      "kind": "close_reading",
+      "prompt": "'My Genius is rebuked' references:",
+      "options": [
+        "A random phrase",
+        "Plutarch's *Life of Antony* — Antony's guardian spirit shrinks beside Octavius's; Macbeth feels diminished beside Banquo",
+        "A Bible quote",
+        "Scottish folklore"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 51,
+      "anchor_line_end": 53
+    },
+    {
+      "id": "macbeth_act3_scene1_q3",
+      "kind": "theme",
+      "prompt": "Macbeth's persuasion of the murderers shows he has:",
+      "options": [
+        "Become more honest",
+        "Learned Lady Macbeth's manipulation technique and is now applying it to men below him",
+        "Renounced murder",
+        "Gained compassion"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 75,
+      "anchor_line_end": 140
+    }
+  ]
+}

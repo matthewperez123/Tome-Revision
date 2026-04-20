@@ -1,0 +1,171 @@
+{
+  "section_id": "king_lear_act5_scene2",
+  "work_id": "king-lear",
+  "sequence": 25,
+  "act": 5,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "A field between the two camps",
+  "line_count": 13,
+  "word_count": 91,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "EDGAR",
+      "text": "Here, father, take the shadow of this tree"
+    },
+    {
+      "number": 2,
+      "speaker": "EDGAR",
+      "text": "For your good host; pray that the right may thrive:"
+    },
+    {
+      "number": 3,
+      "speaker": "EDGAR",
+      "text": "If ever I return to you again,"
+    },
+    {
+      "number": 4,
+      "speaker": "EDGAR",
+      "text": "I’ll bring you comfort."
+    },
+    {
+      "number": 4,
+      "speaker": "GLOUCESTER",
+      "text": "Grace go with you, sir!"
+    },
+    {
+      "number": 5,
+      "speaker": "EDGAR",
+      "text": "Away, old man; give me thy hand; away!"
+    },
+    {
+      "number": 6,
+      "speaker": "EDGAR",
+      "text": "King Lear hath lost, he and his daughter ta’en:"
+    },
+    {
+      "number": 7,
+      "speaker": "EDGAR",
+      "text": "Give me thy hand; come on."
+    },
+    {
+      "number": 8,
+      "speaker": "GLOUCESTER",
+      "text": "No farther, sir; a man may rot even here."
+    },
+    {
+      "number": 9,
+      "speaker": "EDGAR",
+      "text": "What, in ill thoughts again? Men must endure"
+    },
+    {
+      "number": 10,
+      "speaker": "EDGAR",
+      "text": "Their going hence, even as their coming hither;"
+    },
+    {
+      "number": 11,
+      "speaker": "EDGAR",
+      "text": "Ripeness is all: come on."
+    },
+    {
+      "number": 11,
+      "speaker": "GLOUCESTER",
+      "text": "And that’s true too."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Alarum within. Enter, with drum and colours, King Lear, Cordelia, and Soldiers, over the stage; and exeunt."
+    },
+    {
+      "after_line": 0,
+      "text": "Enter Edgar and Gloucester."
+    },
+    {
+      "after_line": 4,
+      "text": "Exit Edgar."
+    },
+    {
+      "after_line": 4,
+      "text": "Alarum and retreat within. Reenter Edgar."
+    },
+    {
+      "after_line": 11,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act5_scene2_gloss1",
+      "line": 1,
+      "phrase": "the father",
+      "definition": "Gloucester, led by Edgar"
+    },
+    {
+      "id": "king_lear_act5_scene2_gloss2",
+      "line": 11,
+      "phrase": "ripeness is all",
+      "definition": "Edgar's line — maturity / readiness to die is everything; echo of Hamlet's 'readiness is all'"
+    },
+    {
+      "id": "king_lear_act5_scene2_gloss3",
+      "line": 6,
+      "phrase": "ta’en",
+      "definition": "taken (captured)"
+    },
+    {
+      "id": "king_lear_act5_scene2_gloss4",
+      "line": 1,
+      "phrase": "colours",
+      "definition": "banners; flag"
+    },
+    {
+      "id": "king_lear_act5_scene2_gloss5",
+      "line": 10,
+      "phrase": "coming hither",
+      "definition": "birth"
+    },
+    {
+      "id": "king_lear_act5_scene2_gloss6",
+      "line": 6,
+      "phrase": "Ta’en",
+      "definition": "taken prisoner — Lear and Cordelia captured"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act5_scene2_ann1",
+      "line_start": 6,
+      "line_end": 11,
+      "citation_display": "King Lear 5.2.6–11",
+      "category": "thematic",
+      "title": "'Ripeness is all' — Edgar's Stoic minimum",
+      "body": "Edgar's line to the despairing Gloucester — 'Men must endure / Their going hence, even as their coming hither; / Ripeness is all' — is the play's most compressed Stoic formula. 'Ripeness' = readiness to die, analogous to Hamlet's 'the readiness is all' (Hamlet 5.2). The line is often quoted as a nugget of wisdom, but in context it is said to a blind man who has just tried to kill himself — it is a painful sufficiency, not a comfortable maxim. Shakespeare gives Edgar the responsibility of speaking the play's only durable consolation, and that consolation is not hope but maturity-to-die. The play's theology finally offers no heaven; it offers ripening. Readers expecting a more affirmative wisdom should notice how much the play withholds in exchange for this single phrase.",
+      "sources": [
+        "William R. Elton, King Lear and the Gods (1966)",
+        "A. C. Bradley, Shakespearean Tragedy (1904)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act5_scene2_q1",
+      "kind": "theme",
+      "prompt": "What does Edgar's 'Ripeness is all' claim?",
+      "options": [
+        "That life will reward the patient",
+        "A Stoic minimum — readiness to die is everything; the play offers no heaven, only maturity-to-die",
+        "That Gloucester will recover",
+        "That Cordelia is safe"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 6,
+      "anchor_line_end": 11
+    }
+  ]
+}

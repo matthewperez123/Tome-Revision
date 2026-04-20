@@ -1,0 +1,283 @@
+{
+  "section_id": "macbeth_act5_scene7",
+  "work_id": "macbeth",
+  "sequence": 27,
+  "act": 5,
+  "scene": 7,
+  "kind": "scene",
+  "scene_title": "Another part of the field",
+  "line_count": 35,
+  "word_count": 248,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "MACBETH",
+      "text": "They have tied me to a stake; I cannot fly,"
+    },
+    {
+      "number": 2,
+      "speaker": "MACBETH",
+      "text": "But, bear-like, I must fight the course. What’s he"
+    },
+    {
+      "number": 3,
+      "speaker": "MACBETH",
+      "text": "That was not born of woman? Such a one"
+    },
+    {
+      "number": 4,
+      "speaker": "MACBETH",
+      "text": "Am I to fear, or none."
+    },
+    {
+      "number": 4,
+      "speaker": "YOUNG SIWARD",
+      "text": "What is thy name?"
+    },
+    {
+      "number": 5,
+      "speaker": "MACBETH",
+      "text": "Thou’lt be afraid to hear it."
+    },
+    {
+      "number": 6,
+      "speaker": "YOUNG SIWARD",
+      "text": "No; though thou call’st thyself a hotter name"
+    },
+    {
+      "number": 7,
+      "speaker": "YOUNG SIWARD",
+      "text": "Than any is in hell."
+    },
+    {
+      "number": 7,
+      "speaker": "MACBETH",
+      "text": "My name’s Macbeth."
+    },
+    {
+      "number": 8,
+      "speaker": "YOUNG SIWARD",
+      "text": "The devil himself could not pronounce a title"
+    },
+    {
+      "number": 9,
+      "speaker": "YOUNG SIWARD",
+      "text": "More hateful to mine ear."
+    },
+    {
+      "number": 9,
+      "speaker": "MACBETH",
+      "text": "No, nor more fearful."
+    },
+    {
+      "number": 10,
+      "speaker": "YOUNG SIWARD",
+      "text": "Thou liest, abhorred tyrant; with my sword"
+    },
+    {
+      "number": 11,
+      "speaker": "YOUNG SIWARD",
+      "text": "I’ll prove the lie thou speak’st. They fight and Young Siward is slain."
+    },
+    {
+      "number": 12,
+      "speaker": "MACBETH",
+      "text": "Thou wast born of woman"
+    },
+    {
+      "number": 13,
+      "speaker": "MACBETH",
+      "text": "But swords I smile at, weapons laugh to scorn,"
+    },
+    {
+      "number": 14,
+      "speaker": "MACBETH",
+      "text": "Brandish’d by man that’s of a woman born."
+    },
+    {
+      "number": 15,
+      "speaker": "MACDUFF",
+      "text": "That way the noise is. Tyrant, show thy face!"
+    },
+    {
+      "number": 16,
+      "speaker": "MACDUFF",
+      "text": "If thou be’st slain and with no stroke of mine,"
+    },
+    {
+      "number": 17,
+      "speaker": "MACDUFF",
+      "text": "My wife and children’s ghosts will haunt me still."
+    },
+    {
+      "number": 18,
+      "speaker": "MACDUFF",
+      "text": "I cannot strike at wretched kerns, whose arms"
+    },
+    {
+      "number": 19,
+      "speaker": "MACDUFF",
+      "text": "Are hired to bear their staves: either thou, Macbeth,"
+    },
+    {
+      "number": 20,
+      "speaker": "MACDUFF",
+      "text": "Or else my sword with an unbatter’d edge"
+    },
+    {
+      "number": 21,
+      "speaker": "MACDUFF",
+      "text": "I sheathe again undeeded. There thou shouldst be;"
+    },
+    {
+      "number": 22,
+      "speaker": "MACDUFF",
+      "text": "By this great clatter, one of greatest note"
+    },
+    {
+      "number": 23,
+      "speaker": "MACDUFF",
+      "text": "Seems bruited. Let me find him, fortune!"
+    },
+    {
+      "number": 24,
+      "speaker": "MACDUFF",
+      "text": "And more I beg not."
+    },
+    {
+      "number": 25,
+      "speaker": "SIWARD",
+      "text": "This way, my lord; the castle’s gently render’d:"
+    },
+    {
+      "number": 26,
+      "speaker": "SIWARD",
+      "text": "The tyrant’s people on both sides do fight;"
+    },
+    {
+      "number": 27,
+      "speaker": "SIWARD",
+      "text": "The noble thanes do bravely in the war;"
+    },
+    {
+      "number": 28,
+      "speaker": "SIWARD",
+      "text": "The day almost itself professes yours,"
+    },
+    {
+      "number": 29,
+      "speaker": "SIWARD",
+      "text": "And little is to do."
+    },
+    {
+      "number": 29,
+      "speaker": "MALCOLM",
+      "text": "We have met with foes"
+    },
+    {
+      "number": 30,
+      "speaker": "MALCOLM",
+      "text": "That strike beside us."
+    },
+    {
+      "number": 30,
+      "speaker": "SIWARD",
+      "text": "Enter, sir, the castle."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Alarums. Enter Macbeth."
+    },
+    {
+      "after_line": 4,
+      "text": "Enter Young Siward."
+    },
+    {
+      "after_line": 14,
+      "text": "Exit."
+    },
+    {
+      "after_line": 14,
+      "text": "Alarums. Enter Macduff."
+    },
+    {
+      "after_line": 24,
+      "text": "Exit. Alarums."
+    },
+    {
+      "after_line": 24,
+      "text": "Enter Malcolm and old Siward."
+    },
+    {
+      "after_line": 30,
+      "text": "Exeunt. Alarums."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act5_scene7_gloss1",
+      "line": 1,
+      "phrase": "They have tied me to a stake",
+      "definition": "Macbeth figuring himself as a bear tied to a stake — a reference to bear-baiting, a popular Elizabethan entertainment"
+    },
+    {
+      "id": "macbeth_act5_scene7_gloss2",
+      "line": 2,
+      "phrase": "bear-like",
+      "definition": "like a tethered bear — forced to fight"
+    },
+    {
+      "id": "macbeth_act5_scene7_gloss5",
+      "line": 17,
+      "phrase": "kerns",
+      "definition": "Irish foot-soldiers; here, hired mercenaries Macbeth leads"
+    },
+    {
+      "id": "macbeth_act5_scene7_gloss6",
+      "line": 22,
+      "phrase": "Let me find him, fortune!",
+      "definition": "Macduff's prayer — fortune lead him to Macbeth"
+    },
+    {
+      "id": "macbeth_act5_scene7_gloss7",
+      "line": 16,
+      "phrase": "my wife and children’s ghosts",
+      "definition": "the murdered family Macduff will avenge"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act5_scene7_ann1",
+      "line_start": 1,
+      "line_end": 10,
+      "citation_display": "Macbeth 5.7.1–10",
+      "category": "thematic",
+      "title": "'They have tied me to a stake'",
+      "body": "Macbeth figures himself as a bear in a bear-baiting pit — tied to a stake, unable to flee, forced to fight the dogs. The reference is specific: bear-baiting was a Southwark spectacle staged alongside plays in Shakespeare's period, often in the same theaters. The audience knew the image literally. Macbeth has become the attraction at an entertainment.\n\nThe image is his last piece of self-knowledge. He is no longer the 'Bellona's bridegroom' of 1.2; he is the bear who cannot run. His 'charmed life' ('none of woman born') is about to be tested by Young Siward and then Macduff. The first test he passes, because Young Siward is in fact woman-born; the second will break him.",
+      "sources": [
+        "Andrew Gurr, *The Shakespearean Stage 1574–1642* (1992)",
+        "Tiffany Stern, *Documents of Performance in Early Modern England* (2009)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act5_scene7_q1",
+      "kind": "close_reading",
+      "prompt": "'They have tied me to a stake' references:",
+      "options": [
+        "A religious punishment",
+        "Bear-baiting — a spectacle staged alongside plays in Shakespeare's theaters; Macbeth is the attraction",
+        "A farming practice",
+        "A military tactic"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 1,
+      "anchor_line_end": 10
+    }
+  ]
+}

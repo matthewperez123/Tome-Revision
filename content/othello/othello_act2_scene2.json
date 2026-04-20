@@ -1,0 +1,153 @@
+{
+  "section_id": "othello_act2_scene2",
+  "work_id": "othello",
+  "sequence": 5,
+  "act": 2,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "A street",
+  "line_count": 9,
+  "word_count": 101,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "HERALD",
+      "text": "It is Othello’s pleasure, our noble and valiant general, that, upon certain"
+    },
+    {
+      "number": 2,
+      "speaker": "HERALD",
+      "text": "tidings now arrived, importing the mere perdition of the Turkish fleet, every"
+    },
+    {
+      "number": 3,
+      "speaker": "HERALD",
+      "text": "man put himself into triumph; some to dance, some to make bonfires,"
+    },
+    {
+      "number": 4,
+      "speaker": "HERALD",
+      "text": "each man to what sport and revels his addiction leads him: for,"
+    },
+    {
+      "number": 5,
+      "speaker": "HERALD",
+      "text": "besides these beneficial news, it is the celebration of his nuptial. So"
+    },
+    {
+      "number": 6,
+      "speaker": "HERALD",
+      "text": "much was his pleasure should be proclaimed. All offices are open, and"
+    },
+    {
+      "number": 7,
+      "speaker": "HERALD",
+      "text": "there is full liberty of feasting from this present hour of five"
+    },
+    {
+      "number": 8,
+      "speaker": "HERALD",
+      "text": "till the bell have told eleven. Heaven bless the isle of Cyprus"
+    },
+    {
+      "number": 9,
+      "speaker": "HERALD",
+      "text": "and our noble general Othello!"
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter a Herald with a proclamation; People following."
+    },
+    {
+      "after_line": 9,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "othello_act2_scene2_gloss1",
+      "line": 2,
+      "phrase": "mere perdition",
+      "definition": "utter destruction"
+    },
+    {
+      "id": "othello_act2_scene2_gloss2",
+      "line": 2,
+      "phrase": "Turkish fleet",
+      "definition": "the Ottoman navy, destroyed by the storm"
+    },
+    {
+      "id": "othello_act2_scene2_gloss4",
+      "line": 4,
+      "phrase": "addiction",
+      "definition": "inclination; bent"
+    },
+    {
+      "id": "othello_act2_scene2_gloss5",
+      "line": 3,
+      "phrase": "bonfires",
+      "definition": "festival fires built for public rejoicing"
+    },
+    {
+      "id": "othello_act2_scene2_gloss6",
+      "line": 5,
+      "phrase": "nuptial",
+      "definition": "wedding celebration"
+    },
+    {
+      "id": "othello_act2_scene2_gloss7",
+      "line": 6,
+      "phrase": "offices",
+      "definition": "kitchen and pantry; places where provisions are kept"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "othello_act2_scene2_ann1",
+      "line_start": 1,
+      "line_end": 9,
+      "citation_display": "Othello 2.2.1–9",
+      "category": "structural",
+      "title": "The herald's proclamation as relief hinge",
+      "body": "This is the shortest scene in the play — nine lines announcing the double cause for celebration (Turkish destruction, Othello's nuptials) and inviting the garrison to revel. Its brevity is the point. Between the dense verse of 2.1 and the long scene of Cassio's humiliation that follows, Shakespeare inserts an oasis of official joy. Structurally it is the exhalation before the drink. It also licenses what comes next: the scene wouldn't work if Cassio weren't out drinking on state occasion, so the state has to announce the occasion.",
+      "sources": [
+        "Harold C. Goddard, *The Meaning of Shakespeare*, vol. 2 (1951)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "othello_act2_scene2_q1",
+      "kind": "comprehension",
+      "prompt": "Why does the herald proclaim a general holiday in Cyprus?",
+      "options": [
+        "Othello's birthday and ascension to governor of Cyprus",
+        "The Turkish fleet's destruction and Othello's wedding celebration",
+        "A religious festival commemorating Saint Mark of Venice",
+        "The arrival of supplies from Venice after a long siege"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 1,
+      "anchor_line_end": 9
+    },
+    {
+      "id": "othello_act2_scene2_q2",
+      "kind": "structural",
+      "prompt": "Why did Shakespeare make this scene only nine lines long?",
+      "options": [
+        "He ran out of paper and stopped writing",
+        "To provide a brief official transition between Iago's plotting in 2.1 and the drunken confusion of 2.3",
+        "To give actors a rest between long scenes",
+        "To fulfill a contractual requirement of a minimum twenty scenes"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 1,
+      "anchor_line_end": 9
+    }
+  ]
+}

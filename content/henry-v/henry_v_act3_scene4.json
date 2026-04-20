@@ -1,0 +1,672 @@
+{
+  "section_id": "henry_v_act3_scene4",
+  "work_id": "henry-v",
+  "sequence": 13,
+  "act": 3,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "Rouen. A room in the King's palace",
+  "line_count": 47,
+  "word_count": 380,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KATHERINE",
+      "text": "Alice, tu as été en Angleterre, et tu parles bien le langage."
+    },
+    {
+      "number": 2,
+      "speaker": "ALICE",
+      "text": "Un peu, madame."
+    },
+    {
+      "number": 3,
+      "speaker": "KATHERINE",
+      "text": "Je te prie, m’enseignez; il faut que j’apprenne à parler. Comment appelez-vous"
+    },
+    {
+      "number": 4,
+      "speaker": "KATHERINE",
+      "text": "la main en Anglois?"
+    },
+    {
+      "number": 5,
+      "speaker": "ALICE",
+      "text": "La main? elle est appelée de hand."
+    },
+    {
+      "number": 6,
+      "speaker": "KATHERINE",
+      "text": "De hand. Et les doigts?"
+    },
+    {
+      "number": 7,
+      "speaker": "ALICE",
+      "text": "Les doigts? ma foi, j’oublie les doigts; mais je me souviendrai. Les"
+    },
+    {
+      "number": 8,
+      "speaker": "ALICE",
+      "text": "doigts? je pense qu’ils sont appelés de fingres; oui, de fingres."
+    },
+    {
+      "number": 9,
+      "speaker": "KATHERINE",
+      "text": "La main, de hand; les doigts, de fingres. Je pense que je"
+    },
+    {
+      "number": 10,
+      "speaker": "KATHERINE",
+      "text": "suis le bon écolier; j’ai gagné deux mots d’Anglois vîtement. Comment appelez-vous"
+    },
+    {
+      "number": 11,
+      "speaker": "KATHERINE",
+      "text": "les ongles?"
+    },
+    {
+      "number": 12,
+      "speaker": "ALICE",
+      "text": "Les ongles? Nous les appelons de nails."
+    },
+    {
+      "number": 13,
+      "speaker": "KATHERINE",
+      "text": "De nails. Écoutez; dites-moi, si je parle bien: de hand, de fingres, et de nails."
+    },
+    {
+      "number": 14,
+      "speaker": "ALICE",
+      "text": "C’est bien dit, madame; il est fort bon Anglois."
+    },
+    {
+      "number": 15,
+      "speaker": "KATHERINE",
+      "text": "Dites-moi l’Anglois pour le bras."
+    },
+    {
+      "number": 15,
+      "speaker": "ALICE",
+      "text": "De arm, madame."
+    },
+    {
+      "number": 16,
+      "speaker": "KATHERINE",
+      "text": "Et le coude?"
+    },
+    {
+      "number": 16,
+      "speaker": "ALICE",
+      "text": "De elbow."
+    },
+    {
+      "number": 17,
+      "speaker": "KATHERINE",
+      "text": "De elbow. Je m’en fais la répétition de tous les mots que"
+    },
+    {
+      "number": 18,
+      "speaker": "KATHERINE",
+      "text": "vous m’avez appris dès à présent."
+    },
+    {
+      "number": 19,
+      "speaker": "ALICE",
+      "text": "Il est trop difficile, madame, comme je pense."
+    },
+    {
+      "number": 20,
+      "speaker": "KATHERINE",
+      "text": "Excusez-moi, Alice; écoutez: de hand, de fingres, de nails, de arm, de bilbow."
+    },
+    {
+      "number": 21,
+      "speaker": "ALICE",
+      "text": "De elbow, madame."
+    },
+    {
+      "number": 22,
+      "speaker": "KATHERINE",
+      "text": "O Seigneur Dieu, je m’en oublie! de elbow. Comment appelez-vous le col?"
+    },
+    {
+      "number": 23,
+      "speaker": "ALICE",
+      "text": "De neck, madame."
+    },
+    {
+      "number": 23,
+      "speaker": "KATHERINE",
+      "text": "De nick. Et le menton?"
+    },
+    {
+      "number": 24,
+      "speaker": "ALICE",
+      "text": "De chin."
+    },
+    {
+      "number": 25,
+      "speaker": "KATHERINE",
+      "text": "De sin. Le col, de nick; le menton, de sin."
+    },
+    {
+      "number": 26,
+      "speaker": "ALICE",
+      "text": "Oui. Sauf votre honneur, en vérité, vous prononcez les mots aussi droit"
+    },
+    {
+      "number": 27,
+      "speaker": "ALICE",
+      "text": "que les natifs d’Angleterre."
+    },
+    {
+      "number": 28,
+      "speaker": "KATHERINE",
+      "text": "Je ne doute point d’apprendre, par la grâce de Dieu, et en peu de temps."
+    },
+    {
+      "number": 29,
+      "speaker": "ALICE",
+      "text": "N’avez-vous pas déjà oublié ce que je vous ai enseigné?"
+    },
+    {
+      "number": 30,
+      "speaker": "KATHERINE",
+      "text": "Non, je réciterai à vous promptement: d’hand, de fingres, de mails—"
+    },
+    {
+      "number": 31,
+      "speaker": "ALICE",
+      "text": "De nails, madame."
+    },
+    {
+      "number": 31,
+      "speaker": "KATHERINE",
+      "text": "De nails, de arm, de ilbow."
+    },
+    {
+      "number": 32,
+      "speaker": "ALICE",
+      "text": "Sauf votre honneur, de elbow."
+    },
+    {
+      "number": 33,
+      "speaker": "KATHERINE",
+      "text": "Ainsi dis-je; de elbow, de nick, et de sin. Comment appelez-vous le"
+    },
+    {
+      "number": 34,
+      "speaker": "KATHERINE",
+      "text": "pied et la robe?"
+    },
+    {
+      "number": 34,
+      "speaker": "ALICE",
+      "text": "De foot, madame; et de coun."
+    },
+    {
+      "number": 35,
+      "speaker": "KATHERINE",
+      "text": "De foot et de coun! O Seigneur Dieu! ce sont mots de"
+    },
+    {
+      "number": 36,
+      "speaker": "KATHERINE",
+      "text": "son mauvais, corruptible, gros, et impudique, et non pour les dames d’honneur"
+    },
+    {
+      "number": 37,
+      "speaker": "KATHERINE",
+      "text": "d’user: je ne voudrais prononcer ces mots devant les seigneurs de France"
+    },
+    {
+      "number": 38,
+      "speaker": "KATHERINE",
+      "text": "pour tout le monde. Foh! le foot et le coun! Néanmoins, je"
+    },
+    {
+      "number": 39,
+      "speaker": "KATHERINE",
+      "text": "réciterai une autre fois ma leçon ensemble: d’hand, de fingres, de nails,"
+    },
+    {
+      "number": 40,
+      "speaker": "KATHERINE",
+      "text": "de arm, de elbow, de nick, de sin, de foot, de coun."
+    },
+    {
+      "number": 41,
+      "speaker": "ALICE",
+      "text": "Excellent, madame!"
+    },
+    {
+      "number": 42,
+      "speaker": "KATHERINE",
+      "text": "C’est assez pour une fois: allons-nous à dîner."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Katharine and Alice."
+    },
+    {
+      "after_line": 42,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act3_scene4_gloss1",
+      "line": 1,
+      "phrase": "Alice, tu as été en Angleterre",
+      "definition": "French: 'Alice, you have been in England' — Katherine begins the scene asking about Alice's English"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss2",
+      "line": 1,
+      "phrase": "tu parles bien le langage",
+      "definition": "French: 'you speak the language well' — prompts Alice to give a lesson"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss3",
+      "line": 2,
+      "phrase": "Un peu, madame",
+      "definition": "French: 'A little, madam' — Alice's modest reply"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss4",
+      "line": 3,
+      "phrase": "m’enseignez",
+      "definition": "French: 'teach me' — Katherine requests tuition"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss5",
+      "line": 3,
+      "phrase": "j’apprenne à parler",
+      "definition": "French: 'I must learn to speak' — signals the political motive: she is being readied for marriage to an English king"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss6",
+      "line": 3,
+      "phrase": "Comment appelez-vous la main en Anglois",
+      "definition": "French: 'What do you call the hand in English?' — the lesson's first question"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss7",
+      "line": 5,
+      "phrase": "elle est appelée de hand",
+      "definition": "French: 'it is called hand' — Alice teaches 'hand' as the English word"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss8",
+      "line": 6,
+      "phrase": "De hand",
+      "definition": "Katherine's attempted pronunciation of English 'hand' — dialect-accurate; do not correct to 'the hand'"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss9",
+      "line": 6,
+      "phrase": "Et les doigts",
+      "definition": "French: 'And the fingers?' — next body-part question"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss10",
+      "line": 7,
+      "phrase": "ma foi",
+      "definition": "French: 'my faith' — mild oath, roughly 'goodness'"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss11",
+      "line": 7,
+      "phrase": "j’oublie",
+      "definition": "French: 'I forget' — Alice confesses a memory lapse"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss12",
+      "line": 8,
+      "phrase": "de fingres",
+      "definition": "Katherine's attempted 'fingers' — French-accented English; a dialect trace"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss13",
+      "line": 10,
+      "phrase": "le bon écolier",
+      "definition": "French: 'a good pupil' — Katherine congratulates herself"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss14",
+      "line": 10,
+      "phrase": "j’ai gagné deux mots d’Anglois vîtement",
+      "definition": "French: 'I have earned two English words quickly' — playful pride"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss15",
+      "line": 11,
+      "phrase": "les ongles",
+      "definition": "French: 'the nails' (fingernails) — next vocabulary item"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss16",
+      "line": 12,
+      "phrase": "de nails",
+      "definition": "Katherine's attempt at 'nails' — French-accented English"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss17",
+      "line": 13,
+      "phrase": "Écoutez",
+      "definition": "French: 'Listen' — Alice's instruction"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss18",
+      "line": 14,
+      "phrase": "C’est bien dit, madame; il est fort bon Anglois",
+      "definition": "French: 'Well said, madam; it is very good English'"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss19",
+      "line": 15,
+      "phrase": "le bras",
+      "definition": "French: 'the arm' — next item"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss20",
+      "line": 20,
+      "phrase": "De arm",
+      "definition": "Katherine's attempt at 'arm' — the 'De' repeats her French-accented article habit"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss21",
+      "line": 16,
+      "phrase": "le coude",
+      "definition": "French: 'the elbow' — next item"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss22",
+      "line": 17,
+      "phrase": "De elbow",
+      "definition": "Katherine's attempt at 'elbow'"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss23",
+      "line": 17,
+      "phrase": "Je m’en fais la répétition",
+      "definition": "French: 'I'm going to repeat' — Katherine recites to fix the lesson"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss24",
+      "line": 19,
+      "phrase": "Il est trop difficile",
+      "definition": "French: 'It is too difficult' — Alice's gentle protest"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss25",
+      "line": 20,
+      "phrase": "Excusez-moi",
+      "definition": "French: 'Pardon me' — Katherine presses on"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss26",
+      "line": 20,
+      "phrase": "de bilbow",
+      "definition": "Katherine's mistake for 'elbow' — she has slipped; 'bilbow' = sword"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss27",
+      "line": 22,
+      "phrase": "O Seigneur Dieu, je m’en oublie",
+      "definition": "French: 'O Lord God, I'm forgetting it' — her frustration"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss28",
+      "line": 22,
+      "phrase": "le col",
+      "definition": "French: 'the neck'"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss29",
+      "line": 23,
+      "phrase": "De neck",
+      "definition": "Alice's English"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss30",
+      "line": 25,
+      "phrase": "De nick",
+      "definition": "Katherine's attempt at 'neck' — 'nick' is her approximation"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss31",
+      "line": 25,
+      "phrase": "le menton",
+      "definition": "French: 'the chin'"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss32",
+      "line": 24,
+      "phrase": "De chin",
+      "definition": "Alice's English for chin"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss33",
+      "line": 25,
+      "phrase": "De sin",
+      "definition": "Katherine's attempt at 'chin' — 'sin' is her approximation; builds the comic crescendo toward the indecent words"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss34",
+      "line": 26,
+      "phrase": "Sauf votre honneur, en vérité",
+      "definition": "French: 'Saving your honour, truly' — Alice's courtly compliment"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss35",
+      "line": 27,
+      "phrase": "les natifs d’Angleterre",
+      "definition": "French: 'natives of England'"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss36",
+      "line": 28,
+      "phrase": "Je ne doute point d’apprendre",
+      "definition": "French: 'I don't doubt I'll learn'"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss37",
+      "line": 28,
+      "phrase": "par la grâce de Dieu",
+      "definition": "French: 'by the grace of God'"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss38",
+      "line": 29,
+      "phrase": "N’avez-vous pas déjà oublié",
+      "definition": "French: 'Haven't you already forgotten' — Alice tests her"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss39",
+      "line": 30,
+      "phrase": "je réciterai à vous promptement",
+      "definition": "French: 'I'll recite to you promptly'"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss40",
+      "line": 30,
+      "phrase": "de mails",
+      "definition": "Katherine's slip — she means 'nails'"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss41",
+      "line": 32,
+      "phrase": "Sauf votre honneur",
+      "definition": "French: 'Saving your honour' — Alice's polite correction opener"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss42",
+      "line": 33,
+      "phrase": "Ainsi dis-je",
+      "definition": "French: 'So I say'"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss43",
+      "line": 34,
+      "phrase": "pied et la robe",
+      "definition": "French: 'foot and the dress' — Katherine asks the English for these, but 'robe' is a mishearing; she probably means 'gown'"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss44",
+      "line": 35,
+      "phrase": "De foot",
+      "definition": "English 'foot' — sounds like French 'foutre' (obscenity)"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss45",
+      "line": 35,
+      "phrase": "de coun",
+      "definition": "Alice's attempt at 'gown' — sounds like French 'con' (obscenity). The scene's comic climax: English body-words become scandalous French"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss46",
+      "line": 35,
+      "phrase": "O Seigneur Dieu",
+      "definition": "French: 'O Lord God' — Katherine's scandalized reaction"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss47",
+      "line": 36,
+      "phrase": "son mauvais, corruptible, gros, et impudique",
+      "definition": "French: 'bad-sounding, corrupting, coarse, and immodest' — her list of objections"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss48",
+      "line": 36,
+      "phrase": "les dames d’honneur d’user",
+      "definition": "French: 'for ladies of honour to use' — what they should not say"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss49",
+      "line": 37,
+      "phrase": "les seigneurs de France",
+      "definition": "French: 'the lords of France' — before whom she dare not speak these words"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss50",
+      "line": 38,
+      "phrase": "pour tout le monde",
+      "definition": "French: 'for anything in the world' — idiomatic 'for anything'"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss51",
+      "line": 38,
+      "phrase": "Foh",
+      "definition": "French: exclamation of disgust — 'ugh'"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss52",
+      "line": 38,
+      "phrase": "Néanmoins",
+      "definition": "French: 'nevertheless' — she perseveres"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss53",
+      "line": 39,
+      "phrase": "ma leçon ensemble",
+      "definition": "French: 'my lesson all together'"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss54",
+      "line": 41,
+      "phrase": "Excellent, madame",
+      "definition": "French: 'Excellent, madam'"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss55",
+      "line": 42,
+      "phrase": "C’est assez pour une fois",
+      "definition": "French: 'That's enough for one time'"
+    },
+    {
+      "id": "henry_v_act3_scene4_gloss56",
+      "line": 42,
+      "phrase": "allons-nous à dîner",
+      "definition": "French: 'let's go to dinner' — scene closes on a domestic cadence"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act3_scene4_ann1",
+      "line_start": 1,
+      "line_end": 47,
+      "citation_display": "Henry V 3.4.1–47",
+      "category": "structural",
+      "title": "Katherine's English lesson — the play's quietest political scene",
+      "body": "Act 3.4 is an entire scene in French, broken only by Katherine's attempted English vocabulary words. It is a self-contained interlude: the princess of France, at her father's palace, systematically learning the body-words of the language of the man who is besieging her country. 'Le bras, le coude, le col, le menton, le pied' — the English-lesson is a domestic activity, but every word is a preparation for marriage. The scene works on two registers. The comic register is real: the accidental obscenities ('foot' and 'coun' — close to 'foutre' and 'con' in French) scandalize Katherine into an instruction-manual denial. The political register is that Katherine is being prepared for a conquest that has not yet happened but is already being arranged in the royal court. Shakespeare gives the scene no commentary, no choral frame, no English voice. It is pure preparation. When Henry finally woos her in 5.2, we will have already watched her assemble the vocabulary.",
+      "sources": [
+        "Patricia Parker, Shakespeare from the Margins (1996)",
+        "Karen Newman, Fashioning Femininity and English Renaissance Drama (1991)"
+      ]
+    },
+    {
+      "id": "henry_v_act3_scene4_ann2",
+      "line_start": 33,
+      "line_end": 42,
+      "citation_display": "Henry V 3.4.33–42",
+      "category": "linguistic",
+      "title": "The deliberate obscene pun — 'foot' and 'coun'",
+      "body": "The comic climax of the lesson is Katherine's shocked reaction to 'foot' (which sounds like the French 'foutre' — a crude word for sex) and 'coun' (Alice's attempt at English 'gown,' which sounds like the French 'con' — a crude word for female genitalia). Katherine's response is a full-scale courtly protest: these are 'mots de son mauvais, corruptible, gros, et impudique, et non pour les dames d'honneur d'user' — words of bad sound, corrupting, coarse, and immodest, not for ladies of honour to use. But she recites them anyway in her summary. The joke is that the English vocabulary of marriage-preparation is, from a French ear, a catalogue of obscenities. Shakespeare is making a very specific cross-linguistic observation about how sexual vocabulary hides in innocent words across languages. It is also a quiet comment on what marriage to the enemy king may bring.",
+      "sources": [
+        "Margaret Jones-Davies, 'Shakespeare's French,' in Shakespeare and the Middle Ages (2009)",
+        "Juliet Dusinberre, Shakespeare and the Nature of Women (1975)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act3_scene4_q1",
+      "kind": "structural",
+      "prompt": "What is unusual about 3.4 as a scene?",
+      "options": [
+        "It is in blank verse",
+        "It is performed entirely in French (with Katherine's attempted English body-words), without English choral framing — an interlude preparing Katherine for a marriage Henry has not yet won",
+        "It has only one character",
+        "It is a sonnet, like the Prologue"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 47
+    },
+    {
+      "id": "henry_v_act3_scene4_q2",
+      "kind": "close_reading",
+      "prompt": "What is the source of Katherine's comic shock at 'foot' and 'coun' (lines 34–38)?",
+      "options": [
+        "She dislikes feet",
+        "The English words 'foot' (close to French 'foutre') and 'coun' (close to French 'con') sound obscene to French ears — a cross-linguistic sexual pun",
+        "She cannot pronounce them",
+        "Alice has taught her the wrong words"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 34,
+      "anchor_line_end": 42
+    },
+    {
+      "id": "henry_v_act3_scene4_q3",
+      "kind": "theme",
+      "prompt": "What political work does the scene quietly do?",
+      "options": [
+        "None — it is comic relief only",
+        "It stages Katherine's preparation (vocabulary, by body-part) for a marriage to the conquering English king; when Henry woos her in 5.2, we have already watched her assemble the vocabulary",
+        "It introduces Alice as a new character for Act 4",
+        "It announces the French surrender at Agincourt"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 1,
+      "anchor_line_end": 47
+    }
+  ]
+}

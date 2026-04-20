@@ -1,0 +1,1399 @@
+{
+  "section_id": "richard_iii_act3_scene1",
+  "work_id": "richard-iii",
+  "sequence": 9,
+  "act": 3,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "London. A street",
+  "line_count": 201,
+  "word_count": 1586,
+  "est_read_minutes": 8,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "BUCKINGHAM",
+      "text": "Welcome, sweet prince, to London, to your chamber."
+    },
+    {
+      "number": 2,
+      "speaker": "GLOUCESTER",
+      "text": "Welcome, dear cousin, my thoughts’ sovereign:"
+    },
+    {
+      "number": 3,
+      "speaker": "GLOUCESTER",
+      "text": "The weary way hath made you melancholy."
+    },
+    {
+      "number": 4,
+      "speaker": "PRINCE",
+      "text": "No, uncle; but our crosses on the way"
+    },
+    {
+      "number": 5,
+      "speaker": "PRINCE",
+      "text": "Have made it tedious, wearisome, and heavy:"
+    },
+    {
+      "number": 6,
+      "speaker": "PRINCE",
+      "text": "I want more uncles here to welcome me."
+    },
+    {
+      "number": 7,
+      "speaker": "GLOUCESTER",
+      "text": "Sweet prince, the untainted virtue of your years"
+    },
+    {
+      "number": 8,
+      "speaker": "GLOUCESTER",
+      "text": "Hath not yet dived into the world’s deceit:"
+    },
+    {
+      "number": 9,
+      "speaker": "GLOUCESTER",
+      "text": "Nor more can you distinguish of a man"
+    },
+    {
+      "number": 10,
+      "speaker": "GLOUCESTER",
+      "text": "Than of his outward show; which, God he knows,"
+    },
+    {
+      "number": 11,
+      "speaker": "GLOUCESTER",
+      "text": "Seldom or never jumpeth with the heart."
+    },
+    {
+      "number": 12,
+      "speaker": "GLOUCESTER",
+      "text": "Those uncles which you want were dangerous;"
+    },
+    {
+      "number": 13,
+      "speaker": "GLOUCESTER",
+      "text": "Your grace attended to their sugar’d words,"
+    },
+    {
+      "number": 14,
+      "speaker": "GLOUCESTER",
+      "text": "But look’d not on the poison of their hearts:"
+    },
+    {
+      "number": 15,
+      "speaker": "GLOUCESTER",
+      "text": "God keep you from them, and from such false friends!"
+    },
+    {
+      "number": 16,
+      "speaker": "PRINCE",
+      "text": "God keep me from false friends! but they were none."
+    },
+    {
+      "number": 17,
+      "speaker": "GLOUCESTER",
+      "text": "My lord, the mayor of London comes to greet you."
+    },
+    {
+      "number": 18,
+      "speaker": "MAYOR",
+      "text": "God bless your grace with health and happy days!"
+    },
+    {
+      "number": 19,
+      "speaker": "PRINCE",
+      "text": "I thank you, good my lord; and thank you all."
+    },
+    {
+      "number": 20,
+      "speaker": "PRINCE",
+      "text": "I thought my mother, and my brother York,"
+    },
+    {
+      "number": 21,
+      "speaker": "PRINCE",
+      "text": "Would long ere this have met us on the way:"
+    },
+    {
+      "number": 22,
+      "speaker": "PRINCE",
+      "text": "Fie, what a slug is Hastings, that he comes not"
+    },
+    {
+      "number": 23,
+      "speaker": "PRINCE",
+      "text": "To tell us whether they will come or no!"
+    },
+    {
+      "number": 24,
+      "speaker": "BUCKINGHAM",
+      "text": "And, in good time, here comes the sweating lord."
+    },
+    {
+      "number": 25,
+      "speaker": "PRINCE",
+      "text": "Welcome, my lord: what, will our mother come?"
+    },
+    {
+      "number": 26,
+      "speaker": "HASTINGS",
+      "text": "On what occasion, God he knows, not I,"
+    },
+    {
+      "number": 27,
+      "speaker": "HASTINGS",
+      "text": "The queen your mother, and your brother York,"
+    },
+    {
+      "number": 28,
+      "speaker": "HASTINGS",
+      "text": "Have taken sanctuary: the tender prince"
+    },
+    {
+      "number": 29,
+      "speaker": "HASTINGS",
+      "text": "Would fain have come with me to meet your grace,"
+    },
+    {
+      "number": 30,
+      "speaker": "HASTINGS",
+      "text": "But by his mother was perforce withheld."
+    },
+    {
+      "number": 31,
+      "speaker": "BUCKINGHAM",
+      "text": "Fie, what an indirect and peevish course"
+    },
+    {
+      "number": 32,
+      "speaker": "BUCKINGHAM",
+      "text": "Is this of hers! Lord cardinal, will your grace"
+    },
+    {
+      "number": 33,
+      "speaker": "BUCKINGHAM",
+      "text": "Persuade the queen to send the Duke of York"
+    },
+    {
+      "number": 34,
+      "speaker": "BUCKINGHAM",
+      "text": "Unto his princely brother presently?"
+    },
+    {
+      "number": 35,
+      "speaker": "BUCKINGHAM",
+      "text": "If she deny, Lord Hastings, go with him,"
+    },
+    {
+      "number": 36,
+      "speaker": "BUCKINGHAM",
+      "text": "And from her jealous arms pluck him perforce."
+    },
+    {
+      "number": 37,
+      "speaker": "CARDINAL",
+      "text": "My Lord of Buckingham, if my weak oratory"
+    },
+    {
+      "number": 38,
+      "speaker": "CARDINAL",
+      "text": "Can from his mother win the Duke of York,"
+    },
+    {
+      "number": 39,
+      "speaker": "CARDINAL",
+      "text": "Anon expect him here; but if she be obdurate"
+    },
+    {
+      "number": 40,
+      "speaker": "CARDINAL",
+      "text": "To mild entreaties, God in heaven forbid"
+    },
+    {
+      "number": 41,
+      "speaker": "CARDINAL",
+      "text": "We should infringe the holy privilege"
+    },
+    {
+      "number": 42,
+      "speaker": "CARDINAL",
+      "text": "Of blessed sanctuary! not for all this land"
+    },
+    {
+      "number": 43,
+      "speaker": "CARDINAL",
+      "text": "Would I be guilty of so deep a sin."
+    },
+    {
+      "number": 44,
+      "speaker": "BUCKINGHAM",
+      "text": "You are too senseless-obstinate, my lord,"
+    },
+    {
+      "number": 45,
+      "speaker": "BUCKINGHAM",
+      "text": "Too ceremonious and traditional:"
+    },
+    {
+      "number": 46,
+      "speaker": "BUCKINGHAM",
+      "text": "Weigh it but with the grossness of this age,"
+    },
+    {
+      "number": 47,
+      "speaker": "BUCKINGHAM",
+      "text": "You break not sanctuary in seizing him."
+    },
+    {
+      "number": 48,
+      "speaker": "BUCKINGHAM",
+      "text": "The benefit thereof is always granted"
+    },
+    {
+      "number": 49,
+      "speaker": "BUCKINGHAM",
+      "text": "To those whose dealings have deserved the place,"
+    },
+    {
+      "number": 50,
+      "speaker": "BUCKINGHAM",
+      "text": "And those who have the wit to claim the place:"
+    },
+    {
+      "number": 51,
+      "speaker": "BUCKINGHAM",
+      "text": "This prince hath neither claim’d it nor deserved it;"
+    },
+    {
+      "number": 52,
+      "speaker": "BUCKINGHAM",
+      "text": "And therefore, in mine opinion, cannot have it:"
+    },
+    {
+      "number": 53,
+      "speaker": "BUCKINGHAM",
+      "text": "Then, taking him from thence that is not there,"
+    },
+    {
+      "number": 54,
+      "speaker": "BUCKINGHAM",
+      "text": "You break no privilege nor charter there."
+    },
+    {
+      "number": 55,
+      "speaker": "BUCKINGHAM",
+      "text": "Oft have I heard of sanctuary men;"
+    },
+    {
+      "number": 56,
+      "speaker": "BUCKINGHAM",
+      "text": "But sanctuary children ne’er till now."
+    },
+    {
+      "number": 57,
+      "speaker": "CARDINAL",
+      "text": "My lord, you shall o’er-rule my mind for once."
+    },
+    {
+      "number": 58,
+      "speaker": "CARDINAL",
+      "text": "Come on, Lord Hastings, will you go with me?"
+    },
+    {
+      "number": 59,
+      "speaker": "HASTINGS",
+      "text": "I go, my lord."
+    },
+    {
+      "number": 60,
+      "speaker": "PRINCE",
+      "text": "Good lords, make all the speedy haste you may."
+    },
+    {
+      "number": 61,
+      "speaker": "PRINCE",
+      "text": "Say, uncle Gloucester, if our brother come,"
+    },
+    {
+      "number": 62,
+      "speaker": "PRINCE",
+      "text": "Where shall we sojourn till our coronation?"
+    },
+    {
+      "number": 63,
+      "speaker": "GLOUCESTER",
+      "text": "Where it seems best unto your royal self."
+    },
+    {
+      "number": 64,
+      "speaker": "GLOUCESTER",
+      "text": "If I may counsel you, some day or two"
+    },
+    {
+      "number": 65,
+      "speaker": "GLOUCESTER",
+      "text": "Your highness shall repose you at the Tower:"
+    },
+    {
+      "number": 66,
+      "speaker": "GLOUCESTER",
+      "text": "Then where you please, and shall be thought most fit"
+    },
+    {
+      "number": 67,
+      "speaker": "GLOUCESTER",
+      "text": "For your best health and recreation."
+    },
+    {
+      "number": 68,
+      "speaker": "PRINCE",
+      "text": "I do not like the Tower, of any place."
+    },
+    {
+      "number": 69,
+      "speaker": "PRINCE",
+      "text": "Did Julius Caesar build that place, my lord?"
+    },
+    {
+      "number": 70,
+      "speaker": "BUCKINGHAM",
+      "text": "He did, my gracious lord, begin that place;"
+    },
+    {
+      "number": 71,
+      "speaker": "BUCKINGHAM",
+      "text": "Which, since, succeeding ages have re-edified."
+    },
+    {
+      "number": 72,
+      "speaker": "PRINCE",
+      "text": "Is it upon record, or else reported"
+    },
+    {
+      "number": 73,
+      "speaker": "PRINCE",
+      "text": "Successively from age to age, he built it?"
+    },
+    {
+      "number": 74,
+      "speaker": "BUCKINGHAM",
+      "text": "Upon record, my gracious lord."
+    },
+    {
+      "number": 75,
+      "speaker": "PRINCE",
+      "text": "But say, my lord, it were not register’d,"
+    },
+    {
+      "number": 76,
+      "speaker": "PRINCE",
+      "text": "Methinks the truth should live from age to age,"
+    },
+    {
+      "number": 77,
+      "speaker": "PRINCE",
+      "text": "As ’twere retail’d to all posterity,"
+    },
+    {
+      "number": 78,
+      "speaker": "PRINCE",
+      "text": "Even to the general all-ending day."
+    },
+    {
+      "number": 79,
+      "speaker": "GLOUCESTER",
+      "text": "So wise so young, they say, do never live long."
+    },
+    {
+      "number": 80,
+      "speaker": "PRINCE",
+      "text": "What say you, uncle?"
+    },
+    {
+      "number": 81,
+      "speaker": "GLOUCESTER",
+      "text": "I say, without characters, fame lives long."
+    },
+    {
+      "number": 82,
+      "speaker": "GLOUCESTER",
+      "text": "Thus, like the formal vice, Iniquity,"
+    },
+    {
+      "number": 83,
+      "speaker": "GLOUCESTER",
+      "text": "I moralize two meanings in one word."
+    },
+    {
+      "number": 84,
+      "speaker": "PRINCE",
+      "text": "That Julius Caesar was a famous man;"
+    },
+    {
+      "number": 85,
+      "speaker": "PRINCE",
+      "text": "With what his valour did enrich his wit,"
+    },
+    {
+      "number": 86,
+      "speaker": "PRINCE",
+      "text": "His wit set down to make his valour live:"
+    },
+    {
+      "number": 87,
+      "speaker": "PRINCE",
+      "text": "Death makes no conquest of this conqueror;"
+    },
+    {
+      "number": 88,
+      "speaker": "PRINCE",
+      "text": "For now he lives in fame, though not in life."
+    },
+    {
+      "number": 89,
+      "speaker": "PRINCE",
+      "text": "I’ll tell you what, my cousin Buckingham—"
+    },
+    {
+      "number": 90,
+      "speaker": "BUCKINGHAM",
+      "text": "What, my gracious lord?"
+    },
+    {
+      "number": 91,
+      "speaker": "PRINCE",
+      "text": "An if I live until I be a man,"
+    },
+    {
+      "number": 92,
+      "speaker": "PRINCE",
+      "text": "I’ll win our ancient right in France again,"
+    },
+    {
+      "number": 93,
+      "speaker": "PRINCE",
+      "text": "Or die a soldier, as I lived a king."
+    },
+    {
+      "number": 94,
+      "speaker": "GLOUCESTER",
+      "text": "Short summers lightly have a forward spring."
+    },
+    {
+      "number": 95,
+      "speaker": "BUCKINGHAM",
+      "text": "Now, in good time, here comes the Duke of York."
+    },
+    {
+      "number": 96,
+      "speaker": "PRINCE",
+      "text": "Richard of York! how fares our loving brother?"
+    },
+    {
+      "number": 97,
+      "speaker": "YORK",
+      "text": "Well, my dread lord; so must I call you now."
+    },
+    {
+      "number": 98,
+      "speaker": "PRINCE",
+      "text": "Ay, brother, to our grief, as it is yours:"
+    },
+    {
+      "number": 99,
+      "speaker": "PRINCE",
+      "text": "Too late he died that might have kept that title,"
+    },
+    {
+      "number": 100,
+      "speaker": "PRINCE",
+      "text": "Which by his death hath lost much majesty."
+    },
+    {
+      "number": 101,
+      "speaker": "GLOUCESTER",
+      "text": "How fares our cousin, noble Lord of York?"
+    },
+    {
+      "number": 102,
+      "speaker": "YORK",
+      "text": "I thank you, gentle uncle. O, my lord,"
+    },
+    {
+      "number": 103,
+      "speaker": "YORK",
+      "text": "You said that idle weeds are fast in growth:"
+    },
+    {
+      "number": 104,
+      "speaker": "YORK",
+      "text": "The prince my brother hath outgrown me far."
+    },
+    {
+      "number": 105,
+      "speaker": "GLOUCESTER",
+      "text": "He hath, my lord."
+    },
+    {
+      "number": 105,
+      "speaker": "YORK",
+      "text": "And therefore is he idle?"
+    },
+    {
+      "number": 106,
+      "speaker": "GLOUCESTER",
+      "text": "O, my fair cousin, I must not say so."
+    },
+    {
+      "number": 107,
+      "speaker": "YORK",
+      "text": "Then is he more beholding to you than I."
+    },
+    {
+      "number": 108,
+      "speaker": "GLOUCESTER",
+      "text": "He may command me as my sovereign;"
+    },
+    {
+      "number": 109,
+      "speaker": "GLOUCESTER",
+      "text": "But you have power in me as in a kinsman."
+    },
+    {
+      "number": 110,
+      "speaker": "YORK",
+      "text": "I pray you, uncle, give me this dagger."
+    },
+    {
+      "number": 111,
+      "speaker": "GLOUCESTER",
+      "text": "My dagger, little cousin? with all my heart."
+    },
+    {
+      "number": 112,
+      "speaker": "PRINCE",
+      "text": "A beggar, brother?"
+    },
+    {
+      "number": 113,
+      "speaker": "YORK",
+      "text": "Of my kind uncle, that I know will give;"
+    },
+    {
+      "number": 114,
+      "speaker": "YORK",
+      "text": "And being but a toy, which is no grief to give."
+    },
+    {
+      "number": 115,
+      "speaker": "GLOUCESTER",
+      "text": "A greater gift than that I’ll give my cousin."
+    },
+    {
+      "number": 116,
+      "speaker": "YORK",
+      "text": "A greater gift! O, that’s the sword to it."
+    },
+    {
+      "number": 117,
+      "speaker": "GLOUCESTER",
+      "text": "Ay, gentle cousin, were it light enough."
+    },
+    {
+      "number": 118,
+      "speaker": "YORK",
+      "text": "O, then, I see, you will part but with light gifts;"
+    },
+    {
+      "number": 119,
+      "speaker": "YORK",
+      "text": "In weightier things you’ll say a beggar nay."
+    },
+    {
+      "number": 120,
+      "speaker": "GLOUCESTER",
+      "text": "It is too heavy for your grace to wear."
+    },
+    {
+      "number": 121,
+      "speaker": "YORK",
+      "text": "I weigh it lightly, were it heavier."
+    },
+    {
+      "number": 122,
+      "speaker": "GLOUCESTER",
+      "text": "What, would you have my weapon, little lord?"
+    },
+    {
+      "number": 123,
+      "speaker": "YORK",
+      "text": "I would, that I might thank you as you call me."
+    },
+    {
+      "number": 124,
+      "speaker": "GLOUCESTER",
+      "text": "How?"
+    },
+    {
+      "number": 124,
+      "speaker": "YORK",
+      "text": "Little."
+    },
+    {
+      "number": 125,
+      "speaker": "PRINCE",
+      "text": "My Lord of York will still be cross in talk:"
+    },
+    {
+      "number": 126,
+      "speaker": "PRINCE",
+      "text": "Uncle, your grace knows how to bear with him."
+    },
+    {
+      "number": 127,
+      "speaker": "YORK",
+      "text": "You mean, to bear me, not to bear with me:"
+    },
+    {
+      "number": 128,
+      "speaker": "YORK",
+      "text": "Uncle, my brother mocks both you and me;"
+    },
+    {
+      "number": 129,
+      "speaker": "YORK",
+      "text": "Because that I am little, like an ape,"
+    },
+    {
+      "number": 130,
+      "speaker": "YORK",
+      "text": "He thinks that you should bear me on your shoulders."
+    },
+    {
+      "number": 131,
+      "speaker": "BUCKINGHAM",
+      "text": "With what a sharp-provided wit he reasons!"
+    },
+    {
+      "number": 132,
+      "speaker": "BUCKINGHAM",
+      "text": "To mitigate the scorn he gives his uncle,"
+    },
+    {
+      "number": 133,
+      "speaker": "BUCKINGHAM",
+      "text": "He prettily and aptly taunts himself:"
+    },
+    {
+      "number": 134,
+      "speaker": "BUCKINGHAM",
+      "text": "So cunning and so young is wonderful."
+    },
+    {
+      "number": 135,
+      "speaker": "GLOUCESTER",
+      "text": "My lord, will’t please you pass along?"
+    },
+    {
+      "number": 136,
+      "speaker": "GLOUCESTER",
+      "text": "Myself and my good cousin Buckingham"
+    },
+    {
+      "number": 137,
+      "speaker": "GLOUCESTER",
+      "text": "Will to your mother, to entreat of her"
+    },
+    {
+      "number": 138,
+      "speaker": "GLOUCESTER",
+      "text": "To meet you at the Tower and welcome you."
+    },
+    {
+      "number": 139,
+      "speaker": "YORK",
+      "text": "What, will you go unto the Tower, my lord?"
+    },
+    {
+      "number": 140,
+      "speaker": "PRINCE",
+      "text": "My lord protector needs will have it so."
+    },
+    {
+      "number": 141,
+      "speaker": "YORK",
+      "text": "I shall not sleep in quiet at the Tower."
+    },
+    {
+      "number": 142,
+      "speaker": "GLOUCESTER",
+      "text": "Why, what should you fear?"
+    },
+    {
+      "number": 142,
+      "speaker": "YORK",
+      "text": "Marry, my uncle Clarence’ angry ghost:"
+    },
+    {
+      "number": 143,
+      "speaker": "YORK",
+      "text": "My grandam told me he was murder’d there."
+    },
+    {
+      "number": 144,
+      "speaker": "PRINCE",
+      "text": "I fear no uncles dead."
+    },
+    {
+      "number": 144,
+      "speaker": "GLOUCESTER",
+      "text": "Nor none that live, I hope."
+    },
+    {
+      "number": 145,
+      "speaker": "PRINCE",
+      "text": "An if they live, I hope I need not fear."
+    },
+    {
+      "number": 146,
+      "speaker": "PRINCE",
+      "text": "But come, my lord; and with a heavy heart,"
+    },
+    {
+      "number": 147,
+      "speaker": "PRINCE",
+      "text": "Thinking on them, go I unto the Tower. A Sennet. Exeunt all but Gloucester, Buckingham and Catesby."
+    },
+    {
+      "number": 148,
+      "speaker": "BUCKINGHAM",
+      "text": "Think you, my lord, this little prating York"
+    },
+    {
+      "number": 149,
+      "speaker": "BUCKINGHAM",
+      "text": "Was not incensed by his subtle mother"
+    },
+    {
+      "number": 150,
+      "speaker": "BUCKINGHAM",
+      "text": "To taunt and scorn you thus opprobriously?"
+    },
+    {
+      "number": 151,
+      "speaker": "GLOUCESTER",
+      "text": "No doubt, no doubt: O, ’tis a parlous boy;"
+    },
+    {
+      "number": 152,
+      "speaker": "GLOUCESTER",
+      "text": "Bold, quick, ingenious, forward, capable:"
+    },
+    {
+      "number": 153,
+      "speaker": "GLOUCESTER",
+      "text": "He is all the mother’s, from the top to toe."
+    },
+    {
+      "number": 154,
+      "speaker": "BUCKINGHAM",
+      "text": "Well, let them rest. Come hither, Catesby."
+    },
+    {
+      "number": 155,
+      "speaker": "BUCKINGHAM",
+      "text": "Thou art sworn as deeply to effect what we intend"
+    },
+    {
+      "number": 156,
+      "speaker": "BUCKINGHAM",
+      "text": "As closely to conceal what we impart:"
+    },
+    {
+      "number": 157,
+      "speaker": "BUCKINGHAM",
+      "text": "Thou know’st our reasons urged upon the way;"
+    },
+    {
+      "number": 158,
+      "speaker": "BUCKINGHAM",
+      "text": "What think’st thou? is it not an easy matter"
+    },
+    {
+      "number": 159,
+      "speaker": "BUCKINGHAM",
+      "text": "To make William Lord Hastings of our mind,"
+    },
+    {
+      "number": 160,
+      "speaker": "BUCKINGHAM",
+      "text": "For the instalment of this noble duke"
+    },
+    {
+      "number": 161,
+      "speaker": "BUCKINGHAM",
+      "text": "In the seat royal of this famous isle?"
+    },
+    {
+      "number": 162,
+      "speaker": "CATESBY",
+      "text": "He for his father’s sake so loves the prince,"
+    },
+    {
+      "number": 163,
+      "speaker": "CATESBY",
+      "text": "That he will not be won to aught against him."
+    },
+    {
+      "number": 164,
+      "speaker": "BUCKINGHAM",
+      "text": "What think’st thou, then, of Stanley? what will he?"
+    },
+    {
+      "number": 165,
+      "speaker": "CATESBY",
+      "text": "He will do all in all as Hastings doth."
+    },
+    {
+      "number": 166,
+      "speaker": "BUCKINGHAM",
+      "text": "Well, then, no more but this: go, gentle Catesby,"
+    },
+    {
+      "number": 167,
+      "speaker": "BUCKINGHAM",
+      "text": "And, as it were far off, sound thou Lord Hastings,"
+    },
+    {
+      "number": 168,
+      "speaker": "BUCKINGHAM",
+      "text": "How doth he stand affected to our purpose;"
+    },
+    {
+      "number": 169,
+      "speaker": "BUCKINGHAM",
+      "text": "And summon him to-morrow to the Tower,"
+    },
+    {
+      "number": 170,
+      "speaker": "BUCKINGHAM",
+      "text": "To sit about the coronation."
+    },
+    {
+      "number": 171,
+      "speaker": "BUCKINGHAM",
+      "text": "If thou dost find him tractable to us,"
+    },
+    {
+      "number": 172,
+      "speaker": "BUCKINGHAM",
+      "text": "Encourage him, and show him all our reasons:"
+    },
+    {
+      "number": 173,
+      "speaker": "BUCKINGHAM",
+      "text": "If he be leaden, icy-cold, unwilling,"
+    },
+    {
+      "number": 174,
+      "speaker": "BUCKINGHAM",
+      "text": "Be thou so too; and so break off your talk,"
+    },
+    {
+      "number": 175,
+      "speaker": "BUCKINGHAM",
+      "text": "And give us notice of his inclination:"
+    },
+    {
+      "number": 176,
+      "speaker": "BUCKINGHAM",
+      "text": "For we to-morrow hold divided councils,"
+    },
+    {
+      "number": 177,
+      "speaker": "BUCKINGHAM",
+      "text": "Wherein thyself shalt highly be employ’d."
+    },
+    {
+      "number": 178,
+      "speaker": "GLOUCESTER",
+      "text": "Commend me to Lord William: tell him, Catesby,"
+    },
+    {
+      "number": 179,
+      "speaker": "GLOUCESTER",
+      "text": "His ancient knot of dangerous adversaries"
+    },
+    {
+      "number": 180,
+      "speaker": "GLOUCESTER",
+      "text": "To-morrow are let blood at Pomfret-castle;"
+    },
+    {
+      "number": 181,
+      "speaker": "GLOUCESTER",
+      "text": "And bid my friend, for joy of this good news,"
+    },
+    {
+      "number": 182,
+      "speaker": "GLOUCESTER",
+      "text": "Give Mistress Shore one gentle kiss the more."
+    },
+    {
+      "number": 183,
+      "speaker": "BUCKINGHAM",
+      "text": "Good Catesby, go, effect this business soundly."
+    },
+    {
+      "number": 184,
+      "speaker": "CATESBY",
+      "text": "My good lords both, with all the heed I may."
+    },
+    {
+      "number": 185,
+      "speaker": "GLOUCESTER",
+      "text": "Shall we hear from you, Catesby, ere we sleep?"
+    },
+    {
+      "number": 186,
+      "speaker": "CATESBY",
+      "text": "You shall, my lord."
+    },
+    {
+      "number": 187,
+      "speaker": "GLOUCESTER",
+      "text": "At Crosby Place, there shall you find us both."
+    },
+    {
+      "number": 188,
+      "speaker": "BUCKINGHAM",
+      "text": "Now, my lord, what shall we do, if we perceive"
+    },
+    {
+      "number": 189,
+      "speaker": "BUCKINGHAM",
+      "text": "Lord Hastings will not yield to our complots?"
+    },
+    {
+      "number": 190,
+      "speaker": "GLOUCESTER",
+      "text": "Chop off his head, man; somewhat we will do:"
+    },
+    {
+      "number": 191,
+      "speaker": "GLOUCESTER",
+      "text": "And, look, when I am king, claim thou of me"
+    },
+    {
+      "number": 192,
+      "speaker": "GLOUCESTER",
+      "text": "The earldom of Hereford, and the moveables"
+    },
+    {
+      "number": 193,
+      "speaker": "GLOUCESTER",
+      "text": "Whereof the king my brother stood possess’d."
+    },
+    {
+      "number": 194,
+      "speaker": "BUCKINGHAM",
+      "text": "I’ll claim that promise at your grace’s hands."
+    },
+    {
+      "number": 195,
+      "speaker": "GLOUCESTER",
+      "text": "And look to have it yielded with all willingness."
+    },
+    {
+      "number": 196,
+      "speaker": "GLOUCESTER",
+      "text": "Come, let us sup betimes, that afterwards"
+    },
+    {
+      "number": 197,
+      "speaker": "GLOUCESTER",
+      "text": "We may digest our complots in some form."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "The trumpets sound. Enter the young Prince, the Dukes ofGloucester and Buckingham, Cardinal Bourchier, Catesby, and others."
+    },
+    {
+      "after_line": 17,
+      "text": "Enter the Lord Mayor, and his train."
+    },
+    {
+      "after_line": 23,
+      "text": "Enter Lord Hastings."
+    },
+    {
+      "after_line": 60,
+      "text": "Exeunt Cardinal and Hastings."
+    },
+    {
+      "after_line": 79,
+      "text": "Aside."
+    },
+    {
+      "after_line": 82,
+      "text": "Aside."
+    },
+    {
+      "after_line": 94,
+      "text": "Aside."
+    },
+    {
+      "after_line": 94,
+      "text": "Enter young York, Hastings, and the Cardinal."
+    },
+    {
+      "after_line": 187,
+      "text": "Exit Catesby."
+    },
+    {
+      "after_line": 197,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act3_scene1_gloss1",
+      "line": 1,
+      "phrase": "your chamber",
+      "definition": "London, ceremonially called 'the king's chamber' — Camera Regis, a title of honour"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss2",
+      "line": 4,
+      "phrase": "crosses",
+      "definition": "hardships, troubles (literal crosses borne on the way)"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss3",
+      "line": 11,
+      "phrase": "jumpeth with the heart",
+      "definition": "matches, corresponds to the heart"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss4",
+      "line": 22,
+      "phrase": "slug",
+      "definition": "sluggish fellow; lazy person"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss5",
+      "line": 31,
+      "phrase": "indirect and peevish",
+      "definition": "perverse and willful"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss6",
+      "line": 36,
+      "phrase": "pluck him perforce",
+      "definition": "seize him by force"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss7",
+      "line": 39,
+      "phrase": "obdurate",
+      "definition": "hardened, unyielding"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss8",
+      "line": 41,
+      "phrase": "infringe the holy privilege / Of blessed sanctuary",
+      "definition": "violate the sacred right of sanctuary — church ground that barred civil arrest"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss9",
+      "line": 44,
+      "phrase": "senseless-obstinate",
+      "definition": "stubbornly stupid"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss10",
+      "line": 56,
+      "phrase": "sanctuary children",
+      "definition": "Buckingham's novelty — a coinage for his argument that children can't claim sanctuary; theologically dubious"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss11",
+      "line": 69,
+      "phrase": "Julius Caesar build that place",
+      "definition": "the White Tower — tradition attributed its foundations to Caesar; actually built by William the Conqueror"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss12",
+      "line": 71,
+      "phrase": "re-edified",
+      "definition": "rebuilt; re-built upon"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss13",
+      "line": 78,
+      "phrase": "general all-ending day",
+      "definition": "the Day of Judgement; doomsday"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss14",
+      "line": 79,
+      "phrase": "So wise so young, they say, do never live long",
+      "definition": "proverbial; Gloucester's aside, telegraphing the boy's fate"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss15",
+      "line": 81,
+      "phrase": "without characters",
+      "definition": "without written letters — fame lives in memory, not just script"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss16",
+      "line": 82,
+      "phrase": "formal vice, Iniquity",
+      "definition": "the Vice-figure 'Iniquity' of the old morality plays — moral abstraction turned stage character. Gloucester names his dramatic ancestry"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss17",
+      "line": 83,
+      "phrase": "moralize two meanings in one word",
+      "definition": "make one word bear double meaning — the Vice's signature equivocation"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss18",
+      "line": 94,
+      "phrase": "Short summers lightly have a forward spring",
+      "definition": "brief summers are apt to have an early spring — proverbial; precocity portends early death"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss19",
+      "line": 97,
+      "phrase": "dread lord",
+      "definition": "lord to be feared; standard address to a king"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss20",
+      "line": 103,
+      "phrase": "idle weeds are fast in growth",
+      "definition": "York throws Gloucester's own proverb back at him — cf. 2.4.13"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss21",
+      "line": 129,
+      "phrase": "like an ape",
+      "definition": "York's punning insult about being carried on shoulders — an ape on a fool's back was a common fool-figure"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss22",
+      "line": 131,
+      "phrase": "sharp-provided wit",
+      "definition": "readily-furnished, quick intelligence"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss23",
+      "line": 142,
+      "phrase": "Clarence’ angry ghost",
+      "definition": "the boy anticipates his uncle Clarence's vengeful spirit — more telegraph of coming Tower deaths"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss24",
+      "line": 147,
+      "phrase": "Sennet",
+      "definition": "stage direction — a ceremonial fanfare of trumpets"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss25",
+      "line": 148,
+      "phrase": "prating",
+      "definition": "chattering, talkative"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss26",
+      "line": 150,
+      "phrase": "opprobriously",
+      "definition": "with reproach; scornfully"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss27",
+      "line": 151,
+      "phrase": "parlous",
+      "definition": "dangerously precocious"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss28",
+      "line": 176,
+      "phrase": "divided councils",
+      "definition": "two separate meetings held at once — Richard's tactic to sift Hastings' loyalty"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss29",
+      "line": 179,
+      "phrase": "ancient knot of dangerous adversaries",
+      "definition": "long-standing group of enemies — Rivers, Grey, Vaughan"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss30",
+      "line": 180,
+      "phrase": "let blood at Pomfret-castle",
+      "definition": "bled (killed) at Pomfret — surgical/medical euphemism for execution"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss31",
+      "line": 189,
+      "phrase": "complots",
+      "definition": "conspiracies, secret plots"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss32",
+      "line": 190,
+      "phrase": "Chop off his head",
+      "definition": "Gloucester's notorious casual sentence on Hastings — the line's brutality is the point"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss33",
+      "line": 192,
+      "phrase": "earldom of Hereford",
+      "definition": "Buckingham's promised reward — historically claimed by Buckingham through a maternal line"
+    },
+    {
+      "id": "richard_iii_act3_scene1_gloss34",
+      "line": 197,
+      "phrase": "digest our complots",
+      "definition": "work out, arrange our plots — 'digest' = organize (from rhetoric)"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act3_scene1_ann1",
+      "line_start": 44,
+      "line_end": 56,
+      "citation_display": "Richard III 3.1.44–56",
+      "category": "historical",
+      "title": "\"Sanctuary children\" — Buckingham's innovation",
+      "body": "Buckingham's argument that Prince York can be taken from Westminster sanctuary because \"sanctuary children\" are a novel and unsupportable category is dramaturgically audacious and historically consequential. The right of sanctuary at Westminster Abbey, established by Edward the Confessor's charter and confirmed by successive kings, was a live and contested legal question in 1483. The Cardinal's hesitation (\"God in heaven forbid / We should infringe the holy privilege / Of blessed sanctuary!\") represents the orthodox position; Buckingham's counter that only those with \"wit to claim\" the place can hold it overturns centuries of precedent. Historically the boy was indeed removed from sanctuary under these arguments, a decision that led directly to the princes' deaths in the Tower. Shakespeare compresses the theological and legal dispute into eight lines and lets Buckingham win — because the argument's success on the stage is the fact that produces the murder.",
+      "sources": [
+        "Thomas More, History of King Richard III (c. 1513)",
+        "Charles Ross, Richard III (1981)",
+        "A. R. Myers, England in the Late Middle Ages (1952)"
+      ]
+    },
+    {
+      "id": "richard_iii_act3_scene1_ann2",
+      "line_start": 79,
+      "line_end": 94,
+      "citation_display": "Richard III 3.1.79–94",
+      "category": "close_reading",
+      "title": "\"So wise so young, they say, do never live long\"",
+      "body": "Richard's aside as the young prince reflects on history — \"So wise so young, they say, do never live long\" — is the play's most chilling aphoristic sentence of prediction. The young Edward V has just delivered a compressed meditation on historical memory: Julius Caesar's wit set down his valour to make it \"live,\" so death \"makes no conquest of this conqueror.\" The speech is a twelve-year-old's theory of posterity, and it is well done. Richard's response is to note that children who speak like this are marked. The aside is then doubled a moment later when Gloucester tells the audience directly — in a further aside — that he speaks \"like the formal vice, Iniquity / I moralize two meanings in one word.\" The self-naming as Vice-figure is explicit, and it is paired with a line that functions as the boy's death-sentence.",
+      "sources": [
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)",
+        "Bernard Spivack, Shakespeare and the Allegory of Evil (1958)"
+      ]
+    },
+    {
+      "id": "richard_iii_act3_scene1_ann3",
+      "line_start": 100,
+      "line_end": 135,
+      "citation_display": "Richard III 3.1.100–135",
+      "category": "structural",
+      "title": "York's wit and the play's rehearsal of the princes' intelligence",
+      "body": "The exchange between Richard and the Duke of York is a deliberate showcase: Shakespeare makes the younger prince, like the elder, visibly clever. York teases Richard about his dagger, about small herbs and great weeds (turning Richard's own 2.4 proverb back on him), and about being carried like an ape on shoulders. Buckingham's aside — \"So cunning and so young is wonderful\" — is the scene's most quietly devastating line. In a court where political survival depends on obscurity, these boys have shown themselves brilliantly in conversation. The scene thereby completes the indictment implicit in 2.4: the princes are too conspicuous to survive. Richard's plan, announced to Buckingham and Catesby in the remainder of the scene, is the logical consequence of a political order in which a clever child is a threat.",
+      "sources": [
+        "Ann Blake, \"Children and Suffering in Shakespeare's Plays\" (1998)",
+        "Emrys Jones, Scenic Form in Shakespeare (1971)"
+      ]
+    },
+    {
+      "id": "richard_iii_act3_scene1_ann4",
+      "line_start": 188,
+      "line_end": 197,
+      "citation_display": "Richard III 3.1.188–197",
+      "category": "thematic",
+      "title": "\"Chop off his head\" — the casualness of the new regime",
+      "body": "Richard's instruction to Buckingham about Hastings — \"Chop off his head, man; somewhat we will do\" — is the play's bluntest sentence of political killing, and its placement is deliberate. We have just watched Richard charm and condescend to two boys in measured iambs; he pivots to casual dismembership in a single line. The tonal whiplash is the characterization. Richard governs by emotional range: tenderness, legalism, piety, mock-humility, and dismissal each available at will. The command's casualness — \"somewhat we will do\" — is what marks the new regime. Kingship under Edward IV had required ceremony; Richard has stripped ceremony from the act of killing while preserving it for public display. This is the play's theory of tyranny in miniature.",
+      "sources": [
+        "A. P. Rossiter, Angel with Horns (1961)",
+        "Stephen Greenblatt, Tyrant: Shakespeare on Politics (2018)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act3_scene1_q1",
+      "kind": "historical",
+      "prompt": "Buckingham's argument that the young Duke of York can be removed from Westminster sanctuary because he is a child turns on what claim?",
+      "options": [
+        "That no sanctuary has ever existed in English law",
+        "That sanctuary protects only adults with \"the wit to claim\" it, making \"sanctuary children\" a novel category without legal precedent",
+        "That Westminster Abbey has lost its sanctuary privilege under a recent statute",
+        "That the boy is not in fact in sanctuary because he has already left the grounds"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 48,
+      "anchor_line_end": 56
+    },
+    {
+      "id": "richard_iii_act3_scene1_q2",
+      "kind": "close_reading",
+      "prompt": "Richard's aside \"So wise so young, they say, do never live long\" functions as what?",
+      "options": [
+        "An idle proverbial observation with no plot consequence",
+        "A death-sentence delivered in the form of aphorism — Richard predicting (and effectively confirming) the boy's fate",
+        "A genuine expression of concern for his nephew's health",
+        "A prayer that the prince be long-lived"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 79,
+      "anchor_line_end": 79
+    },
+    {
+      "id": "richard_iii_act3_scene1_q3",
+      "kind": "comprehension",
+      "prompt": "Which figure does Gloucester explicitly compare himself to in his aside?",
+      "options": [
+        "The Roman general Coriolanus",
+        "The \"formal Vice, Iniquity\" of the old morality plays, who \"moralizes two meanings in one word\"",
+        "The biblical Cain",
+        "The conqueror Tamerlane"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 82,
+      "anchor_line_end": 83
+    },
+    {
+      "id": "richard_iii_act3_scene1_q4",
+      "kind": "theme",
+      "prompt": "The princes' visible cleverness in this scene serves what dramatic function?",
+      "options": [
+        "It establishes them as comic relief before the tragic turn",
+        "It completes the indictment begun in 2.4: the boys are too conspicuous to survive in Richard's political order",
+        "It suggests they will outwit Richard in a later scene",
+        "It demonstrates the high quality of Tudor royal education"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 100,
+      "anchor_line_end": 135
+    },
+    {
+      "id": "richard_iii_act3_scene1_q5",
+      "kind": "close_reading",
+      "prompt": "Richard's line \"Chop off his head, man; somewhat we will do\" about Hastings achieves what tonal effect?",
+      "options": [
+        "It is a quotation from a legal statute",
+        "Tonal whiplash: the measured iambs of the prior exchange pivot to casual dismembership, revealing a regime in which killing requires no ceremony",
+        "A misheard line that the audience would have mistaken for courtly politeness",
+        "An attempt at humour to defuse tension"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 190,
+      "anchor_line_end": 190
+    }
+  ]
+}

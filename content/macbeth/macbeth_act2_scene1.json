@@ -1,0 +1,639 @@
+{
+  "section_id": "macbeth_act2_scene1",
+  "work_id": "macbeth",
+  "sequence": 8,
+  "act": 2,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "Court of Macbeth's castle",
+  "line_count": 70,
+  "word_count": 515,
+  "est_read_minutes": 3,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "BANQUO",
+      "text": "How goes the night, boy?"
+    },
+    {
+      "number": 2,
+      "speaker": "FLEANCE",
+      "text": "The moon is down; I have not heard the clock."
+    },
+    {
+      "number": 3,
+      "speaker": "BANQUO",
+      "text": "And she goes down at twelve."
+    },
+    {
+      "number": 3,
+      "speaker": "FLEANCE",
+      "text": "I take’t, ’tis later, sir."
+    },
+    {
+      "number": 4,
+      "speaker": "BANQUO",
+      "text": "Hold, take my sword. There’s husbandry in heaven;"
+    },
+    {
+      "number": 5,
+      "speaker": "BANQUO",
+      "text": "Their candles are all out. Take thee that too."
+    },
+    {
+      "number": 6,
+      "speaker": "BANQUO",
+      "text": "A heavy summons lies like lead upon me,"
+    },
+    {
+      "number": 7,
+      "speaker": "BANQUO",
+      "text": "And yet I would not sleep: merciful powers,"
+    },
+    {
+      "number": 8,
+      "speaker": "BANQUO",
+      "text": "Restrain in me the cursed thoughts that nature"
+    },
+    {
+      "number": 9,
+      "speaker": "BANQUO",
+      "text": "Gives way to in repose!"
+    },
+    {
+      "number": 9,
+      "speaker": "MACBETH",
+      "text": "A friend."
+    },
+    {
+      "number": 10,
+      "speaker": "BANQUO",
+      "text": "What, sir, not yet at rest? The king’s a-bed:"
+    },
+    {
+      "number": 11,
+      "speaker": "BANQUO",
+      "text": "He hath been in unusual pleasure, and"
+    },
+    {
+      "number": 12,
+      "speaker": "BANQUO",
+      "text": "Sent forth great largess to your offices."
+    },
+    {
+      "number": 13,
+      "speaker": "BANQUO",
+      "text": "This diamond he greets your wife withal,"
+    },
+    {
+      "number": 14,
+      "speaker": "BANQUO",
+      "text": "By the name of most kind hostess; and shut up"
+    },
+    {
+      "number": 15,
+      "speaker": "BANQUO",
+      "text": "In measureless content."
+    },
+    {
+      "number": 15,
+      "speaker": "MACBETH",
+      "text": "Being unprepared,"
+    },
+    {
+      "number": 16,
+      "speaker": "MACBETH",
+      "text": "Our will became the servant to defect;"
+    },
+    {
+      "number": 17,
+      "speaker": "MACBETH",
+      "text": "Which else should free have wrought."
+    },
+    {
+      "number": 17,
+      "speaker": "BANQUO",
+      "text": "All’s well."
+    },
+    {
+      "number": 18,
+      "speaker": "BANQUO",
+      "text": "I dreamt last night of the three weird sisters:"
+    },
+    {
+      "number": 19,
+      "speaker": "BANQUO",
+      "text": "To you they have show’d some truth."
+    },
+    {
+      "number": 20,
+      "speaker": "MACBETH",
+      "text": "I think not of them:"
+    },
+    {
+      "number": 21,
+      "speaker": "MACBETH",
+      "text": "Yet, when we can entreat an hour to serve,"
+    },
+    {
+      "number": 22,
+      "speaker": "MACBETH",
+      "text": "We would spend it in some words upon that business,"
+    },
+    {
+      "number": 23,
+      "speaker": "MACBETH",
+      "text": "If you would grant the time."
+    },
+    {
+      "number": 23,
+      "speaker": "BANQUO",
+      "text": "At your kind’st leisure."
+    },
+    {
+      "number": 24,
+      "speaker": "MACBETH",
+      "text": "If you shall cleave to my consent, when ’tis,"
+    },
+    {
+      "number": 25,
+      "speaker": "MACBETH",
+      "text": "It shall make honour for you."
+    },
+    {
+      "number": 25,
+      "speaker": "BANQUO",
+      "text": "So I lose none"
+    },
+    {
+      "number": 26,
+      "speaker": "BANQUO",
+      "text": "In seeking to augment it, but still keep"
+    },
+    {
+      "number": 27,
+      "speaker": "BANQUO",
+      "text": "My bosom franchised and allegiance clear,"
+    },
+    {
+      "number": 28,
+      "speaker": "BANQUO",
+      "text": "I shall be counsell’d."
+    },
+    {
+      "number": 28,
+      "speaker": "MACBETH",
+      "text": "Good repose the while!"
+    },
+    {
+      "number": 29,
+      "speaker": "BANQUO",
+      "text": "Thanks, sir: the like to you!"
+    },
+    {
+      "number": 30,
+      "speaker": "MACBETH",
+      "text": "Go bid thy mistress, when my drink is ready,"
+    },
+    {
+      "number": 31,
+      "speaker": "MACBETH",
+      "text": "She strike upon the bell. Get thee to bed."
+    },
+    {
+      "number": 32,
+      "speaker": "MACBETH",
+      "text": "Is this a dagger which I see before me,"
+    },
+    {
+      "number": 33,
+      "speaker": "MACBETH",
+      "text": "The handle toward my hand? Come, let me clutch thee."
+    },
+    {
+      "number": 34,
+      "speaker": "MACBETH",
+      "text": "I have thee not, and yet I see thee still."
+    },
+    {
+      "number": 35,
+      "speaker": "MACBETH",
+      "text": "Art thou not, fatal vision, sensible"
+    },
+    {
+      "number": 36,
+      "speaker": "MACBETH",
+      "text": "To feeling as to sight? or art thou but"
+    },
+    {
+      "number": 37,
+      "speaker": "MACBETH",
+      "text": "A dagger of the mind, a false creation,"
+    },
+    {
+      "number": 38,
+      "speaker": "MACBETH",
+      "text": "Proceeding from the heat-oppressed brain?"
+    },
+    {
+      "number": 39,
+      "speaker": "MACBETH",
+      "text": "I see thee yet, in form as palpable"
+    },
+    {
+      "number": 40,
+      "speaker": "MACBETH",
+      "text": "As this which now I draw."
+    },
+    {
+      "number": 41,
+      "speaker": "MACBETH",
+      "text": "Thou marshall’st me the way that I was going;"
+    },
+    {
+      "number": 42,
+      "speaker": "MACBETH",
+      "text": "And such an instrument I was to use."
+    },
+    {
+      "number": 43,
+      "speaker": "MACBETH",
+      "text": "Mine eyes are made the fools o’ the other senses,"
+    },
+    {
+      "number": 44,
+      "speaker": "MACBETH",
+      "text": "Or else worth all the rest; I see thee still,"
+    },
+    {
+      "number": 45,
+      "speaker": "MACBETH",
+      "text": "And on thy blade and dudgeon gouts of blood,"
+    },
+    {
+      "number": 46,
+      "speaker": "MACBETH",
+      "text": "Which was not so before. There’s no such thing:"
+    },
+    {
+      "number": 47,
+      "speaker": "MACBETH",
+      "text": "It is the bloody business which informs"
+    },
+    {
+      "number": 48,
+      "speaker": "MACBETH",
+      "text": "Thus to mine eyes. Now o’er the one half-world"
+    },
+    {
+      "number": 49,
+      "speaker": "MACBETH",
+      "text": "Nature seems dead, and wicked dreams abuse"
+    },
+    {
+      "number": 50,
+      "speaker": "MACBETH",
+      "text": "The curtain’d sleep; witchcraft celebrates"
+    },
+    {
+      "number": 51,
+      "speaker": "MACBETH",
+      "text": "Pale Hecate’s offerings, and wither’d murder,"
+    },
+    {
+      "number": 52,
+      "speaker": "MACBETH",
+      "text": "Alarum’d by his sentinel, the wolf,"
+    },
+    {
+      "number": 53,
+      "speaker": "MACBETH",
+      "text": "Whose howl’s his watch, thus with his stealthy pace,"
+    },
+    {
+      "number": 54,
+      "speaker": "MACBETH",
+      "text": "With Tarquin’s ravishing strides, towards his design"
+    },
+    {
+      "number": 55,
+      "speaker": "MACBETH",
+      "text": "Moves like a ghost. Thou sure and firm-set earth,"
+    },
+    {
+      "number": 56,
+      "speaker": "MACBETH",
+      "text": "Hear not my steps, which way they walk, for fear"
+    },
+    {
+      "number": 57,
+      "speaker": "MACBETH",
+      "text": "Thy very stones prate of my whereabout,"
+    },
+    {
+      "number": 58,
+      "speaker": "MACBETH",
+      "text": "And take the present horror from the time,"
+    },
+    {
+      "number": 59,
+      "speaker": "MACBETH",
+      "text": "Which now suits with it. Whiles I threat, he lives:"
+    },
+    {
+      "number": 60,
+      "speaker": "MACBETH",
+      "text": "Words to the heat of deeds too cold breath gives. A bell rings."
+    },
+    {
+      "number": 61,
+      "speaker": "MACBETH",
+      "text": "I go, and it is done; the bell invites me."
+    },
+    {
+      "number": 62,
+      "speaker": "MACBETH",
+      "text": "Hear it not, Duncan; for it is a knell"
+    },
+    {
+      "number": 63,
+      "speaker": "MACBETH",
+      "text": "That summons thee to heaven or to hell."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Banquo, and Fleance bearing a torch before him."
+    },
+    {
+      "after_line": 9,
+      "text": "Enter Macbeth, and a Servant with a torch."
+    },
+    {
+      "after_line": 9,
+      "text": "Give me my sword. Who’s there?"
+    },
+    {
+      "after_line": 29,
+      "text": "Exeunt Banquo and Fleance."
+    },
+    {
+      "after_line": 31,
+      "text": "Exit Servant."
+    },
+    {
+      "after_line": 63,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act2_scene1_gloss1",
+      "line": 3,
+      "phrase": "She goes down at twelve",
+      "definition": "the moon sets at midnight"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss2",
+      "line": 4,
+      "phrase": "husbandry in heaven",
+      "definition": "economy in heaven — the stars have been 'saved' like candles"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss3",
+      "line": 6,
+      "phrase": "heavy summons",
+      "definition": "a sleepiness as weighty as an arrest warrant"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss4",
+      "line": 8,
+      "phrase": "cursed thoughts",
+      "definition": "sinful thoughts that come in sleep"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss5",
+      "line": 12,
+      "phrase": "largess to your offices",
+      "definition": "generous gifts to the household staff"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss6",
+      "line": 13,
+      "phrase": "withal",
+      "definition": "with it"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss7",
+      "line": 14,
+      "phrase": "most kind hostess",
+      "definition": "Duncan's courtesy, expressed moments before his murder — the dramatic irony is unbearable"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss8",
+      "line": 27,
+      "phrase": "franchised",
+      "definition": "free; unfettered"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss9",
+      "line": 27,
+      "phrase": "clear",
+      "definition": "unstained; pure"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss11",
+      "line": 32,
+      "phrase": "Is this a dagger which I see before me",
+      "definition": "Macbeth's famous vision — the air forms a dagger pointing toward Duncan's chamber; the reality of the weapon is the play's core epistemological question"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss12",
+      "line": 33,
+      "phrase": "handle toward my hand",
+      "definition": "the handle turned toward my grasp"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss13",
+      "line": 35,
+      "phrase": "fatal vision",
+      "definition": "a vision that announces death; a prophecy"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss14",
+      "line": 37,
+      "phrase": "A dagger of the mind",
+      "definition": "the dagger may be a product of his own mind — Macbeth's self-interrogation"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss15",
+      "line": 37,
+      "phrase": "false creation",
+      "definition": "a deceptive fabrication"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss16",
+      "line": 38,
+      "phrase": "heat-oppressed brain",
+      "definition": "a brain overheated by anxious thought — fever was believed to cause hallucinations"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss17",
+      "line": 45,
+      "phrase": "gouts of blood",
+      "definition": "drops of blood; the dagger begins to appear bloodied"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss18",
+      "line": 45,
+      "phrase": "gouts",
+      "definition": "drops; large splashes"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss19",
+      "line": 47,
+      "phrase": "informs",
+      "definition": "takes sensory shape; forms itself visibly"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss20",
+      "line": 48,
+      "phrase": "one half-world",
+      "definition": "the half of the globe currently in night"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss23",
+      "line": 51,
+      "phrase": "Hecate",
+      "definition": "Greek goddess of witchcraft, crossroads, and the moon; patron of the Weird Sisters"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss25",
+      "line": 52,
+      "phrase": "Alarum’d by his sentinel, the wolf",
+      "definition": "woken by his own watchdog, the wolf — whose howl signals the hour"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss26",
+      "line": 53,
+      "phrase": "stealthy pace",
+      "definition": "silent, creeping step"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss27",
+      "line": 54,
+      "phrase": "Tarquin’s ravishing strides",
+      "definition": "like Tarquin, the Roman rapist of Lucrece — silent advance toward a bed"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss28",
+      "line": 55,
+      "phrase": "sure and firm-set earth",
+      "definition": "solid ground — Macbeth begs it not to report his steps"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss29",
+      "line": 57,
+      "phrase": "very stones prate of my whereabout",
+      "definition": "the stones may tell tales of where I am"
+    },
+    {
+      "id": "macbeth_act2_scene1_gloss30",
+      "line": 62,
+      "phrase": "knell",
+      "definition": "funeral bell — the signal Lady Macbeth will ring"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act2_scene1_ann1",
+      "line_start": 33,
+      "line_end": 64,
+      "citation_display": "Macbeth 2.1.33–64",
+      "category": "thematic",
+      "title": "The dagger and the epistemology of guilt",
+      "body": "'Is this a dagger which I see before me, / The handle toward my hand?' The soliloquy's grammar is an interrogation. Macbeth asks the vision for its credentials: is it real, is it a 'dagger of the mind,' is it a 'false creation / Proceeding from the heat-oppressed brain?' The play will not answer. The dagger may be objective (a demonic apparition), subjective (a guilty hallucination), or both at once.\n\nThe uncertainty is the point. *Macbeth* is a play about the interpretability of the world — the witches whose prophecies are true but deceptive, the faces that cannot be read (1.4), the ghost that only Macbeth sees (3.4). The dagger scene stages the epistemological crisis in one long speech: a man cannot trust what his senses report, and must nevertheless act on what they show him.\n\nMacbeth resolves the question by declaring 'there's no such thing' and proceeding anyway. The dagger has done its work: real or imagined, it has pointed him at the bedroom. Whether matter causes mind or mind causes matter, the deed happens either way.",
+      "sources": [
+        "Stanley Cavell, *Disowning Knowledge* (2003)",
+        "A. D. Nuttall, *Shakespeare the Thinker* (2007)",
+        "Harold Bloom (1998)"
+      ]
+    },
+    {
+      "id": "macbeth_act2_scene1_ann2",
+      "line_start": 49,
+      "line_end": 64,
+      "citation_display": "Macbeth 2.1.49–64",
+      "category": "thematic",
+      "title": "Night as accomplice",
+      "body": "The second half of the soliloquy summons a night of murder: 'Now o'er the one half-world / Nature seems dead, and wicked dreams abuse / The curtain'd sleep.' Hecate, witchcraft, the wolf, 'withered Murder' like Tarquin — an iconography of the classical and folk supernatural all gathered to assist him.\n\nThe speech rhymes with Lady Macbeth's 'blanket of the dark' in 1.5 and with Macbeth's 'Stars, hide your fires' in 1.4. The three invocations build: where she asked for cover, he now asks for assistance. 'Thou sure and firm-set earth, / Hear not my steps.' The earth itself is being drafted into the conspiracy.\n\nThe Tarquin reference is precise. Tarquin — whose rape of Lucrece Shakespeare told in his earlier narrative poem — is the play's analogue for this night: a silent approach to a sleeping victim's bed, ending in a death that will outlast the perpetrator.",
+      "sources": [
+        "Catherine Belsey, *Shakespeare and the Loss of Eden* (1999)",
+        "Shakespeare, *The Rape of Lucrece* (1594)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act2_scene1_q1",
+      "kind": "theme",
+      "prompt": "The dagger soliloquy refuses to resolve whether the dagger is:",
+      "options": [
+        "Hot or cold",
+        "Real (supernatural) or imagined (hallucination) — the play leaves both possibilities open",
+        "Steel or bronze",
+        "A sword or a knife"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 33,
+      "anchor_line_end": 49
+    },
+    {
+      "id": "macbeth_act2_scene1_q2",
+      "kind": "close_reading",
+      "prompt": "Macbeth compares his approach to Duncan's chamber to:",
+      "options": [
+        "A battlefield charge",
+        "Tarquin's ravishing strides — the Roman rapist's silent advance toward a sleeping bed",
+        "A church procession",
+        "A hunting party"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 55,
+      "anchor_line_end": 60
+    },
+    {
+      "id": "macbeth_act2_scene1_q3",
+      "kind": "inference",
+      "prompt": "Macbeth ends the soliloquy by:",
+      "options": [
+        "Deciding not to commit murder",
+        "Declaring 'there's no such thing' and proceeding anyway — acting without settling whether the vision is real",
+        "Calling for the guards",
+        "Weeping"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 47,
+      "anchor_line_end": 64
+    },
+    {
+      "id": "macbeth_act2_scene1_q4",
+      "kind": "structural",
+      "prompt": "Duncan's closing line in 2.1 ('goes off' to bed peacefully thanking Macbeth for his hospitality) functions as:",
+      "options": [
+        "Routine pleasantry",
+        "Unbearable dramatic irony — Duncan's kindness to his host is delivered moments before his murder",
+        "A joke",
+        "Political protocol"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 13,
+      "anchor_line_end": 16
+    }
+  ]
+}

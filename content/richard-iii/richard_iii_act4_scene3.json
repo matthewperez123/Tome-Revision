@@ -1,0 +1,640 @@
+{
+  "section_id": "richard_iii_act4_scene3",
+  "work_id": "richard-iii",
+  "sequence": 18,
+  "act": 4,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "The same",
+  "line_count": 59,
+  "word_count": 431,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "TYRREL",
+      "text": "The tyrannous and bloody deed is done,"
+    },
+    {
+      "number": 2,
+      "speaker": "TYRREL",
+      "text": "The most arch of piteous massacre"
+    },
+    {
+      "number": 3,
+      "speaker": "TYRREL",
+      "text": "That ever yet this land was guilty of."
+    },
+    {
+      "number": 4,
+      "speaker": "TYRREL",
+      "text": "Dighton and Forrest, whom I did suborn"
+    },
+    {
+      "number": 5,
+      "speaker": "TYRREL",
+      "text": "To do this ruthless piece of butchery,"
+    },
+    {
+      "number": 6,
+      "speaker": "TYRREL",
+      "text": "Although they were flesh’d villains, bloody dogs,"
+    },
+    {
+      "number": 7,
+      "speaker": "TYRREL",
+      "text": "Melting with tenderness and kind compassion"
+    },
+    {
+      "number": 8,
+      "speaker": "TYRREL",
+      "text": "Wept like two children in their deaths’ sad stories."
+    },
+    {
+      "number": 9,
+      "speaker": "TYRREL",
+      "text": "“Lo, thus,” quoth Dighton, “lay those tender babes:”"
+    },
+    {
+      "number": 10,
+      "speaker": "TYRREL",
+      "text": "“Thus, thus,” quoth Forrest, “girdling one another"
+    },
+    {
+      "number": 11,
+      "speaker": "TYRREL",
+      "text": "Within their innocent alabaster arms:"
+    },
+    {
+      "number": 12,
+      "speaker": "TYRREL",
+      "text": "Their lips were four red roses on a stalk,"
+    },
+    {
+      "number": 13,
+      "speaker": "TYRREL",
+      "text": "Which in their summer beauty kiss’d each other."
+    },
+    {
+      "number": 14,
+      "speaker": "TYRREL",
+      "text": "A book of prayers on their pillow lay;"
+    },
+    {
+      "number": 15,
+      "speaker": "TYRREL",
+      "text": "Which once,” quoth Forrest, “almost changed my mind;"
+    },
+    {
+      "number": 16,
+      "speaker": "TYRREL",
+      "text": "But O! the devil’—there the villain stopp’d;"
+    },
+    {
+      "number": 17,
+      "speaker": "TYRREL",
+      "text": "Whilst Dighton thus told on: “We smothered"
+    },
+    {
+      "number": 18,
+      "speaker": "TYRREL",
+      "text": "The most replenished sweet work of nature,"
+    },
+    {
+      "number": 19,
+      "speaker": "TYRREL",
+      "text": "That from the prime creation e’er she framed.”"
+    },
+    {
+      "number": 20,
+      "speaker": "TYRREL",
+      "text": "Thus both are gone with conscience and remorse;"
+    },
+    {
+      "number": 21,
+      "speaker": "TYRREL",
+      "text": "They could not speak; and so I left them both,"
+    },
+    {
+      "number": 22,
+      "speaker": "TYRREL",
+      "text": "To bring this tidings to the bloody king."
+    },
+    {
+      "number": 23,
+      "speaker": "TYRREL",
+      "text": "And here he comes."
+    },
+    {
+      "number": 24,
+      "speaker": "KING RICHARD",
+      "text": "Kind Tyrrel, am I happy in thy news?"
+    },
+    {
+      "number": 25,
+      "speaker": "TYRREL",
+      "text": "If to have done the thing you gave in charge"
+    },
+    {
+      "number": 26,
+      "speaker": "TYRREL",
+      "text": "Beget your happiness, be happy then,"
+    },
+    {
+      "number": 27,
+      "speaker": "TYRREL",
+      "text": "For it is done, my lord."
+    },
+    {
+      "number": 27,
+      "speaker": "KING RICHARD",
+      "text": "But didst thou see them dead?"
+    },
+    {
+      "number": 28,
+      "speaker": "TYRREL",
+      "text": "I did, my lord."
+    },
+    {
+      "number": 28,
+      "speaker": "KING RICHARD",
+      "text": "And buried, gentle Tyrrel?"
+    },
+    {
+      "number": 29,
+      "speaker": "TYRREL",
+      "text": "The chaplain of the Tower hath buried them;"
+    },
+    {
+      "number": 30,
+      "speaker": "TYRREL",
+      "text": "But how or in what place I do not know."
+    },
+    {
+      "number": 31,
+      "speaker": "KING RICHARD",
+      "text": "Come to me, Tyrrel, soon at after supper,"
+    },
+    {
+      "number": 32,
+      "speaker": "KING RICHARD",
+      "text": "And thou shalt tell the process of their death."
+    },
+    {
+      "number": 33,
+      "speaker": "KING RICHARD",
+      "text": "Meantime, but think how I may do thee good,"
+    },
+    {
+      "number": 34,
+      "speaker": "KING RICHARD",
+      "text": "And be inheritor of thy desire."
+    },
+    {
+      "number": 35,
+      "speaker": "KING RICHARD",
+      "text": "Farewell till soon."
+    },
+    {
+      "number": 36,
+      "speaker": "KING RICHARD",
+      "text": "The son of Clarence have I pent up close;"
+    },
+    {
+      "number": 37,
+      "speaker": "KING RICHARD",
+      "text": "His daughter meanly have I match’d in marriage;"
+    },
+    {
+      "number": 38,
+      "speaker": "KING RICHARD",
+      "text": "The sons of Edward sleep in Abraham’s bosom,"
+    },
+    {
+      "number": 39,
+      "speaker": "KING RICHARD",
+      "text": "And Anne my wife hath bid the world good night."
+    },
+    {
+      "number": 40,
+      "speaker": "KING RICHARD",
+      "text": "Now, for I know the Breton Richmond aims"
+    },
+    {
+      "number": 41,
+      "speaker": "KING RICHARD",
+      "text": "At young Elizabeth, my brother’s daughter,"
+    },
+    {
+      "number": 42,
+      "speaker": "KING RICHARD",
+      "text": "And, by that knot, looks proudly o’er the crown,"
+    },
+    {
+      "number": 43,
+      "speaker": "KING RICHARD",
+      "text": "To her I go, a jolly thriving wooer."
+    },
+    {
+      "number": 44,
+      "speaker": "CATESBY",
+      "text": "My lord!"
+    },
+    {
+      "number": 45,
+      "speaker": "KING RICHARD",
+      "text": "Good news or bad, that thou comest in so bluntly?"
+    },
+    {
+      "number": 46,
+      "speaker": "CATESBY",
+      "text": "Bad news, my lord: Ely is fled to Richmond;"
+    },
+    {
+      "number": 47,
+      "speaker": "CATESBY",
+      "text": "And Buckingham, back’d with the hardy Welshmen,"
+    },
+    {
+      "number": 48,
+      "speaker": "CATESBY",
+      "text": "Is in the field, and still his power increaseth."
+    },
+    {
+      "number": 49,
+      "speaker": "KING RICHARD",
+      "text": "Ely with Richmond troubles me more near"
+    },
+    {
+      "number": 50,
+      "speaker": "KING RICHARD",
+      "text": "Than Buckingham and his rash-levied army."
+    },
+    {
+      "number": 51,
+      "speaker": "KING RICHARD",
+      "text": "Come, I have heard that fearful commenting"
+    },
+    {
+      "number": 52,
+      "speaker": "KING RICHARD",
+      "text": "Is leaden servitor to dull delay;"
+    },
+    {
+      "number": 53,
+      "speaker": "KING RICHARD",
+      "text": "Delay leads impotent and snail-paced beggary:"
+    },
+    {
+      "number": 54,
+      "speaker": "KING RICHARD",
+      "text": "Then fiery expedition be my wing,"
+    },
+    {
+      "number": 55,
+      "speaker": "KING RICHARD",
+      "text": "Jove’s Mercury, and herald for a king!"
+    },
+    {
+      "number": 56,
+      "speaker": "KING RICHARD",
+      "text": "Come, muster men: my counsel is my shield;"
+    },
+    {
+      "number": 57,
+      "speaker": "KING RICHARD",
+      "text": "We must be brief when traitors brave the field."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Tyrrel."
+    },
+    {
+      "after_line": 23,
+      "text": "Enter King Richard."
+    },
+    {
+      "after_line": 23,
+      "text": "All hail, my sovereign liege!"
+    },
+    {
+      "after_line": 35,
+      "text": "Exit Tyrrel."
+    },
+    {
+      "after_line": 43,
+      "text": "Enter Catesby."
+    },
+    {
+      "after_line": 57,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act4_scene3_gloss1",
+      "line": 1,
+      "phrase": "tyrannous and bloody deed",
+      "definition": "Tyrrel's opening phrase — naming the murder without euphemism, Shakespeare insists on its gravity"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss2",
+      "line": 2,
+      "phrase": "most arch of piteous massacre",
+      "definition": "most extreme of pitiful massacres — 'arch' = chief"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss3",
+      "line": 4,
+      "phrase": "Dighton and Forrest",
+      "definition": "the actual hired killers — Thomas More names them as Miles Forrest and John Dighton, one of whom reportedly confessed later"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss4",
+      "line": 4,
+      "phrase": "suborn",
+      "definition": "bribe to commit a crime"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss5",
+      "line": 6,
+      "phrase": "flesh’d villains",
+      "definition": "hardened killers; men made callous by previous violence ('flesh'd' = inured to bloodshed)"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss6",
+      "line": 11,
+      "phrase": "innocent alabaster arms",
+      "definition": "alabaster = white stone used for carved monuments; the princes' arms already statue-like in death"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss7",
+      "line": 12,
+      "phrase": "four red roses on a stalk",
+      "definition": "their lips like four roses — image both tender and dynastically charged (red rose = Lancaster)"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss8",
+      "line": 14,
+      "phrase": "book of prayers on their pillow",
+      "definition": "a detail from More's History — the children saying their prayers before bed; the moral centerpiece of the account"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss9",
+      "line": 18,
+      "phrase": "most replenished sweet work of nature",
+      "definition": "most fully-formed sweet creature of nature — the princes as nature's perfect handiwork, destroyed"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss10",
+      "line": 36,
+      "phrase": "son of Clarence have I pent up close",
+      "definition": "Clarence's son (Edward, Earl of Warwick) confined — historical fact; he was executed under Henry VII in 1499"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss11",
+      "line": 37,
+      "phrase": "His daughter meanly have I match’d",
+      "definition": "Clarence's daughter Margaret married to a low-born gentleman — dynastic neutralization"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss12",
+      "line": 38,
+      "phrase": "Abraham’s bosom",
+      "definition": "heaven (Luke 16:22) — Richard's theological euphemism for where he sent the boys"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss13",
+      "line": 39,
+      "phrase": "Anne my wife hath bid the world good night",
+      "definition": "Anne is dead — reported as if an aside, no cause given; history records poisoning suspicions"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss14",
+      "line": 40,
+      "phrase": "Breton Richmond",
+      "definition": "Henry Tudor, exiled in Brittany; Richard's sneer"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss15",
+      "line": 41,
+      "phrase": "young Elizabeth",
+      "definition": "Elizabeth of York, to whom Richmond will later be betrothed (and in fact married, 1486)"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss16",
+      "line": 43,
+      "phrase": "jolly thriving wooer",
+      "definition": "merrily successful suitor — Richard's sardonic self-description, about to woo his niece"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss17",
+      "line": 47,
+      "phrase": "hardy Welshmen",
+      "definition": "Buckingham's Welsh infantry — historically unreliable for him"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss18",
+      "line": 48,
+      "phrase": "his power increaseth",
+      "definition": "his military force grows"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss19",
+      "line": 51,
+      "phrase": "fearful commenting / Is leaden servitor to dull delay",
+      "definition": "fearful commentary is the sluggish servant of delay — deliberation slows action"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss20",
+      "line": 55,
+      "phrase": "Jove’s Mercury",
+      "definition": "Jupiter's messenger — Richard casts himself as divinely-speeded agent"
+    },
+    {
+      "id": "richard_iii_act4_scene3_gloss21",
+      "line": 56,
+      "phrase": "muster men",
+      "definition": "gather troops"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act4_scene3_ann1",
+      "line_start": 1,
+      "line_end": 23,
+      "citation_display": "Richard III 4.3.1–23",
+      "category": "thematic",
+      "title": "Tyrrel's report — grief kept close to the murder",
+      "body": "Tyrrel's opening speech is the play's most morally composed description of violence. \"The tyrannous and bloody deed is done, / The most arch of piteous massacre / That ever yet this land was guilty of.\" He names it massacre without qualification. His hirelings, Dighton and Forrest, \"flesh'd villains, bloody dogs,\" wept as they described the boys in each other's \"innocent alabaster arms,\" lips \"four red roses on a stalk\" (red for Lancaster, though these are York children — Shakespeare's symbolic compression), a \"book of prayers on their pillow.\" The detail of the prayer-book comes directly from More's History. What Shakespeare achieves here is a stage-convention almost unique to this play: the murderer who remains a moral witness. Tyrrel reports the deaths with specific grief he cannot himself share, and the scene's authority comes from the fact that even the paid killer cannot disconnect the act from its image.",
+      "sources": [
+        "Thomas More, History of King Richard III (c. 1513)",
+        "Ann Blake, \"Children and Suffering in Shakespeare's Plays\" (1998)",
+        "Wolfgang Clemen, A Commentary on Shakespeare's Richard III (1968)"
+      ]
+    },
+    {
+      "id": "richard_iii_act4_scene3_ann2",
+      "line_start": 1,
+      "line_end": 23,
+      "citation_display": "Richard III 4.3.1–23",
+      "category": "historical",
+      "title": "The princes in the Tower: a question the play closes and history does not",
+      "body": "Shakespeare's play names Richard as the author of the princes' deaths and identifies Tyrrel as his commissioned agent. This follows More's History directly, which was the dominant Tudor-era account. The historical question, however, is unsettled and remains so. The princes (Edward V, aged 12, and Richard of York, aged 9) disappeared from Tower records in the summer of 1483. No bodies were definitively identified: the 1674 discovery of a chest with two children's skeletons, now interred in Westminster Abbey, has never been DNA-tested. Alternative theories have argued that Buckingham may have been responsible (he had custody of the Tower during the relevant months), that Henry VII may have ordered the deaths after Bosworth, or that one or both boys survived (the Perkin Warbeck claim of 1491–99 rested on such a story). The Richard III Society (founded 1924) has campaigned for historical reassessment, and the 2012 rediscovery of Richard's remains beneath a Leicester car park reopened the question in public. The play's treatment is not the historical verdict; it is Tudor tradition treated with dramatic seriousness.",
+      "sources": [
+        "Charles Ross, Richard III (1981)",
+        "Michael Hicks, Richard III (2000)",
+        "David Horspool, Richard III: A Ruler and His Reputation (2015)",
+        "Alison Weir, The Princes in the Tower (1992)",
+        "A. J. Pollard, Richard III and the Princes in the Tower (1991)"
+      ]
+    },
+    {
+      "id": "richard_iii_act4_scene3_ann3",
+      "line_start": 14,
+      "line_end": 19,
+      "citation_display": "Richard III 4.3.14–19",
+      "category": "close_reading",
+      "title": "\"A book of prayers on their pillow\"",
+      "body": "The detail is Tyrrel's hinge — the image that \"almost changed my mind,\" as Dighton reports Forrest saying. The prayer-book is what momentarily broke the killers. It is also what confirms to the audience that what is being killed is specifically a child, in a child's ordinary end-of-day act. Shakespeare uses the device of interrupted testimony — \"But O! the devil' — there the villain stopp'd\" — to let silence do work rhetoric cannot do. The killer cannot finish naming what he could not finish doing. Shakespeare learned the technique from medieval religious drama (moments of rupture before the worst) and refines it here for secular tragedy. The scene gives the audience the fact of the murder without its enactment; what it cannot give us is reconciled to the fact.",
+      "sources": [
+        "Thomas More, History of King Richard III (c. 1513)",
+        "Huston Diehl, Staging Reform, Reforming the Stage (1997)"
+      ]
+    },
+    {
+      "id": "richard_iii_act4_scene3_ann4",
+      "line_start": 36,
+      "line_end": 43,
+      "citation_display": "Richard III 4.3.36–43",
+      "category": "thematic",
+      "title": "Richard's catalogue of the disposed",
+      "body": "Richard's soliloquy after Tyrrel exits — \"The son of Clarence have I pent up close; / His daughter meanly have I match'd in marriage; / The sons of Edward sleep in Abraham's bosom, / And Anne my wife hath bid the world good night\" — inventories the dynastic clean-up in four lines. Clarence's son Edward Earl of Warwick confined, his daughter Margaret (later Countess of Salisbury) married off to a nobody, Edward's sons dead, Anne dead. Richard has eliminated or neutralized every collateral claim to the throne. The speech's casualness is characteristic: he is reviewing a political balance sheet. \"Abraham's bosom\" is Richard's particular blasphemy — borrowing the New Testament image of heaven (Luke 16:22) for children he commissioned murdered. The line sets up the pivot to the Elizabeth-of-York wooing: with the inventory complete, Richard turns to the next conquest.",
+      "sources": [
+        "Hannibal Hamlin, The Bible in Shakespeare (2013)",
+        "A. P. Rossiter, Angel with Horns (1961)"
+      ]
+    },
+    {
+      "id": "richard_iii_act4_scene3_ann5",
+      "line_start": 40,
+      "line_end": 43,
+      "citation_display": "Richard III 4.3.40–43",
+      "category": "historical",
+      "title": "Richmond and the historical race for Elizabeth of York",
+      "body": "Richard's recognition that \"the Breton Richmond aims / At young Elizabeth\" is historically precise. In Christmas 1483, exiled in Rennes Cathedral, Henry Tudor had sworn publicly to marry Elizabeth of York if he won the throne; the union would join the Lancastrian and Yorkist claims and neutralize dynastic opposition. Richard's plan to marry his niece himself is the counter-move: if Elizabeth is already married, Richmond's political claim evaporates. Historically Richard did pursue this (rumours during Anne's final illness in early 1485 alarmed the court so severely that Richard was forced to deny the plan publicly at St. John's Clerkenwell). The Shakespeare scene compresses the historical race and gives it to Richard in a single aside, but the political logic is exact. The wooing of the mother-queen in 4.4 is not comic virtuosity; it is a specific political response to an external threat.",
+      "sources": [
+        "Charles Ross, Richard III (1981)",
+        "Stanley B. Chrimes, Henry VII (1972)",
+        "Polydore Vergil, Anglica Historia (c. 1513)"
+      ]
+    },
+    {
+      "id": "richard_iii_act4_scene3_ann6",
+      "line_start": 51,
+      "line_end": 56,
+      "citation_display": "Richard III 4.3.51–56",
+      "category": "close_reading",
+      "title": "Richard's compressed self-exhortation",
+      "body": "The scene's closing couplets — \"Come, I have heard that fearful commenting / Is leaden servitor to dull delay; / Delay leads impotent and snail-paced beggary: / Then fiery expedition be my wing, / Jove's Mercury, and herald for a king!\" — reveal Richard in his new register: the hurried executive. Where in Acts I–III his method was patience (waiting for reconciliations to collapse, inciting factions to exhaust one another), in Act V he operates by speed. The change is partly circumstance — Richmond is at sea, Buckingham in revolt — but it is also psychological. Richard post-coronation is no longer the plotter. He is the defender of a crown under immediate pressure. The metaphor \"Jove's Mercury\" is ironic: Mercury the messenger carried Jove's instructions; Richard is casting himself as both source and agent, which is the new tyranny's characteristic self-contradiction.",
+      "sources": [
+        "Stephen Greenblatt, Tyrant: Shakespeare on Politics (2018)",
+        "A. P. Rossiter, Angel with Horns (1961)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act4_scene3_q1",
+      "kind": "close_reading",
+      "prompt": "Tyrrel reports that the hired killers Dighton and Forrest described the murdered princes as lying with \"A book of prayers on their pillow.\" What does this detail do dramaturgically?",
+      "options": [
+        "It provides comic relief",
+        "It marks the moment that \"almost changed\" the killer's mind — confirming to the audience that what is being killed is a child in a child's ordinary end-of-day act",
+        "It indicates the princes were Jesuit recusants",
+        "It is a stage property mentioned in the First Folio only"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 14,
+      "anchor_line_end": 16
+    },
+    {
+      "id": "richard_iii_act4_scene3_q2",
+      "kind": "historical",
+      "prompt": "What is the historical status of Shakespeare's identification of Richard III as the author of the princes' deaths?",
+      "options": [
+        "It is confirmed by contemporary legal records and DNA evidence",
+        "It follows Thomas More's History and the dominant Tudor-era account, but the historical question remains open: alternative theories (Buckingham, Henry VII, natural causes) are seriously entertained by modern historians",
+        "It is universally rejected by modern historians",
+        "It was invented by Shakespeare without any prior source"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 1,
+      "anchor_line_end": 35
+    },
+    {
+      "id": "richard_iii_act4_scene3_q3",
+      "kind": "inference",
+      "prompt": "Why does Richard say \"the sons of Edward sleep in Abraham's bosom\"?",
+      "options": [
+        "He sincerely believes their souls are in heaven",
+        "It is characteristic blasphemy — borrowing the New Testament image of heaven for children he commissioned murdered",
+        "He is quoting from a contemporary sermon at Paul's Cross",
+        "He is signaling that they died in their sleep"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 38,
+      "anchor_line_end": 38
+    },
+    {
+      "id": "richard_iii_act4_scene3_q4",
+      "kind": "theme",
+      "prompt": "Richard's four-line inventory (\"The son of Clarence have I pent up close...\") reveals what about the post-coronation political program?",
+      "options": [
+        "Richard is reconsidering his course of action",
+        "He has systematically eliminated or neutralized every collateral claim to the throne — a dynastic clean-up enumerated with casual precision",
+        "He has surrendered control to Buckingham",
+        "He has reconciled with the surviving Woodvilles"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 36,
+      "anchor_line_end": 43
+    },
+    {
+      "id": "richard_iii_act4_scene3_q5",
+      "kind": "historical",
+      "prompt": "Why does Richard plan to marry his niece Elizabeth of York?",
+      "options": [
+        "He is in love with her",
+        "Richmond (Henry Tudor), exiled in Brittany, has sworn to marry her — joining Lancastrian and Yorkist claims; Richard's counter-move is to marry her first",
+        "It is required by the Titulus Regius statute",
+        "To repair his reputation with Elizabeth's mother"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 40,
+      "anchor_line_end": 43
+    },
+    {
+      "id": "richard_iii_act4_scene3_q6",
+      "kind": "close_reading",
+      "prompt": "Tyrrel's line \"The tyrannous and bloody deed is done\" functions in the play how?",
+      "options": [
+        "As a euphemism softening the murder",
+        "As the play's refusal to use euphemism: the deed is named massacre (\"the most arch of piteous massacre\") without qualification — moral weight preserved",
+        "As a formal legal proclamation in Latin",
+        "As an accidental slip in the paid killer's report"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 3
+    }
+  ]
+}

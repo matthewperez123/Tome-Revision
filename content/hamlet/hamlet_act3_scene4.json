@@ -1,0 +1,1744 @@
+{
+  "section_id": "hamlet_act3_scene4",
+  "work_id": "hamlet",
+  "sequence": 11,
+  "act": 3,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "The Queen’s closet",
+  "line_count": 234,
+  "word_count": 1740,
+  "est_read_minutes": 9,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "POLONIUS",
+      "text": "He will come straight. Look you lay home to him:"
+    },
+    {
+      "number": 2,
+      "speaker": "POLONIUS",
+      "text": "Tell him his pranks have been too broad to bear with,"
+    },
+    {
+      "number": 3,
+      "speaker": "POLONIUS",
+      "text": "And that your grace hath screen’d and stood between"
+    },
+    {
+      "number": 4,
+      "speaker": "POLONIUS",
+      "text": "Much heat and him. I’ll sconce me even here."
+    },
+    {
+      "number": 5,
+      "speaker": "POLONIUS",
+      "text": "Pray you, be round with him."
+    },
+    {
+      "number": 5,
+      "speaker": "HAMLET",
+      "text": "Mother, mother, mother!"
+    },
+    {
+      "number": 6,
+      "speaker": "QUEEN",
+      "text": "I’ll warrant you,"
+    },
+    {
+      "number": 7,
+      "speaker": "QUEEN",
+      "text": "Fear me not: withdraw, I hear him coming. Polonius hides behind the arras."
+    },
+    {
+      "number": 8,
+      "speaker": "HAMLET",
+      "text": "Now, mother, what’s the matter?"
+    },
+    {
+      "number": 9,
+      "speaker": "QUEEN",
+      "text": "Hamlet, thou hast thy father much offended."
+    },
+    {
+      "number": 10,
+      "speaker": "HAMLET",
+      "text": "Mother, you have my father much offended."
+    },
+    {
+      "number": 11,
+      "speaker": "QUEEN",
+      "text": "Come, come, you answer with an idle tongue."
+    },
+    {
+      "number": 12,
+      "speaker": "HAMLET",
+      "text": "Go, go, you question with a wicked tongue."
+    },
+    {
+      "number": 13,
+      "speaker": "QUEEN",
+      "text": "Why, how now, Hamlet!"
+    },
+    {
+      "number": 13,
+      "speaker": "HAMLET",
+      "text": "What’s the matter now?"
+    },
+    {
+      "number": 14,
+      "speaker": "QUEEN",
+      "text": "Have you forgot me?"
+    },
+    {
+      "number": 14,
+      "speaker": "HAMLET",
+      "text": "No, by the rood, not so:"
+    },
+    {
+      "number": 15,
+      "speaker": "HAMLET",
+      "text": "You are the queen, your husband’s brother’s wife;"
+    },
+    {
+      "number": 16,
+      "speaker": "HAMLET",
+      "text": "And—would it were not so!—you are my mother."
+    },
+    {
+      "number": 17,
+      "speaker": "QUEEN",
+      "text": "Nay, then, I’ll set those to you that can speak."
+    },
+    {
+      "number": 18,
+      "speaker": "HAMLET",
+      "text": "Come, come, and sit you down; you shall not budge;"
+    },
+    {
+      "number": 19,
+      "speaker": "HAMLET",
+      "text": "You go not till I set you up a glass"
+    },
+    {
+      "number": 20,
+      "speaker": "HAMLET",
+      "text": "Where you may see the inmost part of you."
+    },
+    {
+      "number": 21,
+      "speaker": "QUEEN",
+      "text": "What wilt thou do? thou wilt not murder me?"
+    },
+    {
+      "number": 22,
+      "speaker": "QUEEN",
+      "text": "Help, help, ho!"
+    },
+    {
+      "number": 22,
+      "speaker": "POLONIUS",
+      "text": "Behind. What, ho! help, help, help!"
+    },
+    {
+      "number": 23,
+      "speaker": "HAMLET",
+      "text": "How now! a rat? Dead, for a ducat, dead! Makes a pass through the arras."
+    },
+    {
+      "number": 24,
+      "speaker": "POLONIUS",
+      "text": "Behind. O, I am slain!"
+    },
+    {
+      "number": 24,
+      "speaker": "QUEEN",
+      "text": "O me, what hast thou done?"
+    },
+    {
+      "number": 25,
+      "speaker": "HAMLET",
+      "text": "Nay, I know not:"
+    },
+    {
+      "number": 26,
+      "speaker": "HAMLET",
+      "text": "Is it the king?"
+    },
+    {
+      "number": 27,
+      "speaker": "QUEEN",
+      "text": "O, what a rash and bloody deed is this!"
+    },
+    {
+      "number": 28,
+      "speaker": "HAMLET",
+      "text": "A bloody deed! almost as bad, good mother,"
+    },
+    {
+      "number": 29,
+      "speaker": "HAMLET",
+      "text": "As kill a king, and marry with his brother."
+    },
+    {
+      "number": 30,
+      "speaker": "QUEEN",
+      "text": "As kill a king!"
+    },
+    {
+      "number": 31,
+      "speaker": "HAMLET",
+      "text": "Ay, lady, ’twas my word. Lifts up the arras and discovers Polonius."
+    },
+    {
+      "number": 32,
+      "speaker": "HAMLET",
+      "text": "Thou wretched, rash, intruding fool, farewell!"
+    },
+    {
+      "number": 33,
+      "speaker": "HAMLET",
+      "text": "I took thee for thy better: take thy fortune;"
+    },
+    {
+      "number": 34,
+      "speaker": "HAMLET",
+      "text": "Thou find’st to be too busy is some danger."
+    },
+    {
+      "number": 35,
+      "speaker": "HAMLET",
+      "text": "Leave wringing of your hands: peace! sit you down,"
+    },
+    {
+      "number": 36,
+      "speaker": "HAMLET",
+      "text": "And let me wring your heart; for so I shall,"
+    },
+    {
+      "number": 37,
+      "speaker": "HAMLET",
+      "text": "If it be made of penetrable stuff,"
+    },
+    {
+      "number": 38,
+      "speaker": "HAMLET",
+      "text": "If damned custom have not brass’d it so"
+    },
+    {
+      "number": 39,
+      "speaker": "HAMLET",
+      "text": "That it be proof and bulwark against sense."
+    },
+    {
+      "number": 40,
+      "speaker": "QUEEN",
+      "text": "What have I done, that thou darest wag thy tongue"
+    },
+    {
+      "number": 41,
+      "speaker": "QUEEN",
+      "text": "In noise so rude against me?"
+    },
+    {
+      "number": 41,
+      "speaker": "HAMLET",
+      "text": "Such an act"
+    },
+    {
+      "number": 42,
+      "speaker": "HAMLET",
+      "text": "That blurs the grace and blush of modesty,"
+    },
+    {
+      "number": 43,
+      "speaker": "HAMLET",
+      "text": "Calls virtue hypocrite, takes off the rose"
+    },
+    {
+      "number": 44,
+      "speaker": "HAMLET",
+      "text": "From the fair forehead of an innocent love"
+    },
+    {
+      "number": 45,
+      "speaker": "HAMLET",
+      "text": "And sets a blister there, makes marriage-vows"
+    },
+    {
+      "number": 46,
+      "speaker": "HAMLET",
+      "text": "As false as dicers’ oaths: O, such a deed"
+    },
+    {
+      "number": 47,
+      "speaker": "HAMLET",
+      "text": "As from the body of contraction plucks"
+    },
+    {
+      "number": 48,
+      "speaker": "HAMLET",
+      "text": "The very soul, and sweet religion makes"
+    },
+    {
+      "number": 49,
+      "speaker": "HAMLET",
+      "text": "A rhapsody of words: heaven’s face doth glow;"
+    },
+    {
+      "number": 50,
+      "speaker": "HAMLET",
+      "text": "Yea, this solidity and compound mass,"
+    },
+    {
+      "number": 51,
+      "speaker": "HAMLET",
+      "text": "With tristful visage, as against the doom,"
+    },
+    {
+      "number": 52,
+      "speaker": "HAMLET",
+      "text": "Is thought-sick at the act."
+    },
+    {
+      "number": 52,
+      "speaker": "QUEEN",
+      "text": "Ay me, what act,"
+    },
+    {
+      "number": 53,
+      "speaker": "QUEEN",
+      "text": "That roars so loud, and thunders in the index?"
+    },
+    {
+      "number": 54,
+      "speaker": "HAMLET",
+      "text": "Look here, upon this picture, and on this,"
+    },
+    {
+      "number": 55,
+      "speaker": "HAMLET",
+      "text": "The counterfeit presentment of two brothers."
+    },
+    {
+      "number": 56,
+      "speaker": "HAMLET",
+      "text": "See, what a grace was seated on this brow;"
+    },
+    {
+      "number": 57,
+      "speaker": "HAMLET",
+      "text": "Hyperion’s curls; the front of Jove himself;"
+    },
+    {
+      "number": 58,
+      "speaker": "HAMLET",
+      "text": "An eye like Mars, to threaten and command;"
+    },
+    {
+      "number": 59,
+      "speaker": "HAMLET",
+      "text": "A station like the herald Mercury"
+    },
+    {
+      "number": 60,
+      "speaker": "HAMLET",
+      "text": "New-lighted on a heaven-kissing hill;"
+    },
+    {
+      "number": 61,
+      "speaker": "HAMLET",
+      "text": "A combination and a form indeed,"
+    },
+    {
+      "number": 62,
+      "speaker": "HAMLET",
+      "text": "Where every god did seem to set his seal,"
+    },
+    {
+      "number": 63,
+      "speaker": "HAMLET",
+      "text": "To give the world assurance of a man:"
+    },
+    {
+      "number": 64,
+      "speaker": "HAMLET",
+      "text": "This was your husband. Look you now, what follows:"
+    },
+    {
+      "number": 65,
+      "speaker": "HAMLET",
+      "text": "Here is your husband; like a mildew’d ear,"
+    },
+    {
+      "number": 66,
+      "speaker": "HAMLET",
+      "text": "Blasting his wholesome brother. Have you eyes?"
+    },
+    {
+      "number": 67,
+      "speaker": "HAMLET",
+      "text": "Could you on this fair mountain leave to feed,"
+    },
+    {
+      "number": 68,
+      "speaker": "HAMLET",
+      "text": "And batten on this moor? Ha! have you eyes?"
+    },
+    {
+      "number": 69,
+      "speaker": "HAMLET",
+      "text": "You cannot call it love; for at your age"
+    },
+    {
+      "number": 70,
+      "speaker": "HAMLET",
+      "text": "The hey-day in the blood is tame, it’s humble,"
+    },
+    {
+      "number": 71,
+      "speaker": "HAMLET",
+      "text": "And waits upon the judgment: and what judgment"
+    },
+    {
+      "number": 72,
+      "speaker": "HAMLET",
+      "text": "Would step from this to this? Sense, sure, you have,"
+    },
+    {
+      "number": 73,
+      "speaker": "HAMLET",
+      "text": "Else could you not have motion; but sure, that sense"
+    },
+    {
+      "number": 74,
+      "speaker": "HAMLET",
+      "text": "Is apoplex’d; for madness would not err,"
+    },
+    {
+      "number": 75,
+      "speaker": "HAMLET",
+      "text": "Nor sense to ecstasy was ne’er so thrall’d"
+    },
+    {
+      "number": 76,
+      "speaker": "HAMLET",
+      "text": "But it reserved some quantity of choice,"
+    },
+    {
+      "number": 77,
+      "speaker": "HAMLET",
+      "text": "To serve in such a difference. What devil was’t"
+    },
+    {
+      "number": 78,
+      "speaker": "HAMLET",
+      "text": "That thus hath cozen’d you at hoodman-blind?"
+    },
+    {
+      "number": 79,
+      "speaker": "HAMLET",
+      "text": "Eyes without feeling, feeling without sight,"
+    },
+    {
+      "number": 80,
+      "speaker": "HAMLET",
+      "text": "Ears without hands or eyes, smelling sans all,"
+    },
+    {
+      "number": 81,
+      "speaker": "HAMLET",
+      "text": "Or but a sickly part of one true sense"
+    },
+    {
+      "number": 82,
+      "speaker": "HAMLET",
+      "text": "Could not so mope."
+    },
+    {
+      "number": 83,
+      "speaker": "HAMLET",
+      "text": "O shame! where is thy blush? Rebellious hell,"
+    },
+    {
+      "number": 84,
+      "speaker": "HAMLET",
+      "text": "If thou canst mutine in a matron’s bones,"
+    },
+    {
+      "number": 85,
+      "speaker": "HAMLET",
+      "text": "To flaming youth let virtue be as wax,"
+    },
+    {
+      "number": 86,
+      "speaker": "HAMLET",
+      "text": "And melt in her own fire: proclaim no shame"
+    },
+    {
+      "number": 87,
+      "speaker": "HAMLET",
+      "text": "When the compulsive ardour gives the charge,"
+    },
+    {
+      "number": 88,
+      "speaker": "HAMLET",
+      "text": "Since frost itself as actively doth burn"
+    },
+    {
+      "number": 89,
+      "speaker": "HAMLET",
+      "text": "And reason panders will."
+    },
+    {
+      "number": 89,
+      "speaker": "QUEEN",
+      "text": "O Hamlet, speak no more:"
+    },
+    {
+      "number": 90,
+      "speaker": "QUEEN",
+      "text": "Thou turn’st mine eyes into my very soul;"
+    },
+    {
+      "number": 91,
+      "speaker": "QUEEN",
+      "text": "And there I see such black and grained spots"
+    },
+    {
+      "number": 92,
+      "speaker": "QUEEN",
+      "text": "As will not leave their tinct."
+    },
+    {
+      "number": 92,
+      "speaker": "HAMLET",
+      "text": "Nay, but to live"
+    },
+    {
+      "number": 93,
+      "speaker": "HAMLET",
+      "text": "In the rank sweat of an enseamed bed,"
+    },
+    {
+      "number": 94,
+      "speaker": "HAMLET",
+      "text": "Stew’d in corruption, honeying and making love"
+    },
+    {
+      "number": 95,
+      "speaker": "HAMLET",
+      "text": "Over the nasty sty—"
+    },
+    {
+      "number": 95,
+      "speaker": "QUEEN",
+      "text": "O, speak to me no more;"
+    },
+    {
+      "number": 96,
+      "speaker": "QUEEN",
+      "text": "These words, like daggers, enter in mine ears;"
+    },
+    {
+      "number": 97,
+      "speaker": "QUEEN",
+      "text": "No more, sweet Hamlet!"
+    },
+    {
+      "number": 97,
+      "speaker": "HAMLET",
+      "text": "A murderer and a villain;"
+    },
+    {
+      "number": 98,
+      "speaker": "HAMLET",
+      "text": "A slave that is not twentieth part the tithe"
+    },
+    {
+      "number": 99,
+      "speaker": "HAMLET",
+      "text": "Of your precedent lord; a vice of kings;"
+    },
+    {
+      "number": 100,
+      "speaker": "HAMLET",
+      "text": "A cutpurse of the empire and the rule,"
+    },
+    {
+      "number": 101,
+      "speaker": "HAMLET",
+      "text": "That from a shelf the precious diadem stole,"
+    },
+    {
+      "number": 102,
+      "speaker": "HAMLET",
+      "text": "And put it in his pocket!"
+    },
+    {
+      "number": 102,
+      "speaker": "QUEEN",
+      "text": "No more!"
+    },
+    {
+      "number": 103,
+      "speaker": "HAMLET",
+      "text": "A king of shreds and patches—"
+    },
+    {
+      "number": 103,
+      "speaker": "QUEEN",
+      "text": "Alas, he’s mad!"
+    },
+    {
+      "number": 104,
+      "speaker": "HAMLET",
+      "text": "Do you not come your tardy son to chide,"
+    },
+    {
+      "number": 105,
+      "speaker": "HAMLET",
+      "text": "That, lapsed in time and passion, lets go by"
+    },
+    {
+      "number": 106,
+      "speaker": "HAMLET",
+      "text": "The important acting of your dread command?"
+    },
+    {
+      "number": 107,
+      "speaker": "HAMLET",
+      "text": "O, say!"
+    },
+    {
+      "number": 107,
+      "speaker": "GHOST",
+      "text": "Do not forget: this visitation"
+    },
+    {
+      "number": 108,
+      "speaker": "GHOST",
+      "text": "Is but to whet thy almost blunted purpose."
+    },
+    {
+      "number": 109,
+      "speaker": "GHOST",
+      "text": "But, look, amazement on thy mother sits:"
+    },
+    {
+      "number": 110,
+      "speaker": "GHOST",
+      "text": "O, step between her and her fighting soul:"
+    },
+    {
+      "number": 111,
+      "speaker": "GHOST",
+      "text": "Conceit in weakest bodies strongest works:"
+    },
+    {
+      "number": 112,
+      "speaker": "GHOST",
+      "text": "Speak to her, Hamlet."
+    },
+    {
+      "number": 112,
+      "speaker": "HAMLET",
+      "text": "How is it with you, lady?"
+    },
+    {
+      "number": 113,
+      "speaker": "QUEEN",
+      "text": "Alas, how is’t with you,"
+    },
+    {
+      "number": 114,
+      "speaker": "QUEEN",
+      "text": "That you do bend your eye on vacancy"
+    },
+    {
+      "number": 115,
+      "speaker": "QUEEN",
+      "text": "And with the incorporal air do hold discourse?"
+    },
+    {
+      "number": 116,
+      "speaker": "QUEEN",
+      "text": "Forth at your eyes your spirits wildly peep;"
+    },
+    {
+      "number": 117,
+      "speaker": "QUEEN",
+      "text": "And, as the sleeping soldiers in the alarm,"
+    },
+    {
+      "number": 118,
+      "speaker": "QUEEN",
+      "text": "Your bedded hair, like life in excrements,"
+    },
+    {
+      "number": 119,
+      "speaker": "QUEEN",
+      "text": "Start up, and stand an end. O gentle son,"
+    },
+    {
+      "number": 120,
+      "speaker": "QUEEN",
+      "text": "Upon the heat and flame of thy distemper"
+    },
+    {
+      "number": 121,
+      "speaker": "QUEEN",
+      "text": "Sprinkle cool patience. Whereon do you look?"
+    },
+    {
+      "number": 122,
+      "speaker": "HAMLET",
+      "text": "On him, on him! Look you, how pale he glares!"
+    },
+    {
+      "number": 123,
+      "speaker": "HAMLET",
+      "text": "His form and cause conjoin’d, preaching to stones,"
+    },
+    {
+      "number": 124,
+      "speaker": "HAMLET",
+      "text": "Would make them capable. Do not look upon me;"
+    },
+    {
+      "number": 125,
+      "speaker": "HAMLET",
+      "text": "Lest with this piteous action you convert"
+    },
+    {
+      "number": 126,
+      "speaker": "HAMLET",
+      "text": "My stern effects: then what I have to do"
+    },
+    {
+      "number": 127,
+      "speaker": "HAMLET",
+      "text": "Will want true colour; tears perchance for blood."
+    },
+    {
+      "number": 128,
+      "speaker": "QUEEN",
+      "text": "To whom do you speak this?"
+    },
+    {
+      "number": 128,
+      "speaker": "HAMLET",
+      "text": "Do you see nothing there?"
+    },
+    {
+      "number": 129,
+      "speaker": "QUEEN",
+      "text": "Nothing at all; yet all that is I see."
+    },
+    {
+      "number": 130,
+      "speaker": "HAMLET",
+      "text": "Nor did you nothing hear?"
+    },
+    {
+      "number": 130,
+      "speaker": "QUEEN",
+      "text": "No, nothing but ourselves."
+    },
+    {
+      "number": 131,
+      "speaker": "HAMLET",
+      "text": "Why, look you there! look, how it steals away!"
+    },
+    {
+      "number": 132,
+      "speaker": "HAMLET",
+      "text": "My father, in his habit as he lived!"
+    },
+    {
+      "number": 133,
+      "speaker": "HAMLET",
+      "text": "Look, where he goes, even now, out at the portal!"
+    },
+    {
+      "number": 134,
+      "speaker": "QUEEN",
+      "text": "This the very coinage of your brain:"
+    },
+    {
+      "number": 135,
+      "speaker": "QUEEN",
+      "text": "This bodiless creation ecstasy"
+    },
+    {
+      "number": 136,
+      "speaker": "QUEEN",
+      "text": "Is very cunning in."
+    },
+    {
+      "number": 136,
+      "speaker": "HAMLET",
+      "text": "Ecstasy!"
+    },
+    {
+      "number": 137,
+      "speaker": "HAMLET",
+      "text": "My pulse, as yours, doth temperately keep time,"
+    },
+    {
+      "number": 138,
+      "speaker": "HAMLET",
+      "text": "And makes as healthful music: it is not madness"
+    },
+    {
+      "number": 139,
+      "speaker": "HAMLET",
+      "text": "That I have utter’d: bring me to the test,"
+    },
+    {
+      "number": 140,
+      "speaker": "HAMLET",
+      "text": "And I the matter will re-word; which madness"
+    },
+    {
+      "number": 141,
+      "speaker": "HAMLET",
+      "text": "Would gambol from. Mother, for love of grace,"
+    },
+    {
+      "number": 142,
+      "speaker": "HAMLET",
+      "text": "Lay not that flattering unction to your soul,"
+    },
+    {
+      "number": 143,
+      "speaker": "HAMLET",
+      "text": "That not your trespass, but my madness speaks:"
+    },
+    {
+      "number": 144,
+      "speaker": "HAMLET",
+      "text": "It will but skin and film the ulcerous place,"
+    },
+    {
+      "number": 145,
+      "speaker": "HAMLET",
+      "text": "Whilst rank corruption, mining all within,"
+    },
+    {
+      "number": 146,
+      "speaker": "HAMLET",
+      "text": "Infects unseen. Confess yourself to heaven;"
+    },
+    {
+      "number": 147,
+      "speaker": "HAMLET",
+      "text": "Repent what’s past; avoid what is to come;"
+    },
+    {
+      "number": 148,
+      "speaker": "HAMLET",
+      "text": "And do not spread the compost on the weeds,"
+    },
+    {
+      "number": 149,
+      "speaker": "HAMLET",
+      "text": "To make them ranker. Forgive me this my virtue;"
+    },
+    {
+      "number": 150,
+      "speaker": "HAMLET",
+      "text": "For in the fatness of these pursy times"
+    },
+    {
+      "number": 151,
+      "speaker": "HAMLET",
+      "text": "Virtue itself of vice must pardon beg,"
+    },
+    {
+      "number": 152,
+      "speaker": "HAMLET",
+      "text": "Yea, curb and woo for leave to do him good."
+    },
+    {
+      "number": 153,
+      "speaker": "QUEEN",
+      "text": "O Hamlet, thou hast cleft my heart in twain."
+    },
+    {
+      "number": 154,
+      "speaker": "HAMLET",
+      "text": "O, throw away the worser part of it,"
+    },
+    {
+      "number": 155,
+      "speaker": "HAMLET",
+      "text": "And live the purer with the other half."
+    },
+    {
+      "number": 156,
+      "speaker": "HAMLET",
+      "text": "Good night: but go not to mine uncle’s bed;"
+    },
+    {
+      "number": 157,
+      "speaker": "HAMLET",
+      "text": "Assume a virtue, if you have it not."
+    },
+    {
+      "number": 158,
+      "speaker": "HAMLET",
+      "text": "That monster, custom, who all sense doth eat,"
+    },
+    {
+      "number": 159,
+      "speaker": "HAMLET",
+      "text": "Of habits devil, is angel yet in this,"
+    },
+    {
+      "number": 160,
+      "speaker": "HAMLET",
+      "text": "That to the use of actions fair and good"
+    },
+    {
+      "number": 161,
+      "speaker": "HAMLET",
+      "text": "He likewise gives a frock or livery,"
+    },
+    {
+      "number": 162,
+      "speaker": "HAMLET",
+      "text": "That aptly is put on. Refrain to-night,"
+    },
+    {
+      "number": 163,
+      "speaker": "HAMLET",
+      "text": "And that shall lend a kind of easiness"
+    },
+    {
+      "number": 164,
+      "speaker": "HAMLET",
+      "text": "To the next abstinence: the next more easy;"
+    },
+    {
+      "number": 165,
+      "speaker": "HAMLET",
+      "text": "For use almost can change the stamp of nature,"
+    },
+    {
+      "number": 166,
+      "speaker": "HAMLET",
+      "text": "And either master1 the devil, or throw him out"
+    },
+    {
+      "number": 167,
+      "speaker": "HAMLET",
+      "text": "With wondrous potency. Once more, good night:"
+    },
+    {
+      "number": 168,
+      "speaker": "HAMLET",
+      "text": "And when you are desirous to be bless’d,"
+    },
+    {
+      "number": 169,
+      "speaker": "HAMLET",
+      "text": "I’ll blessing beg of you. For this same lord,"
+    },
+    {
+      "number": 170,
+      "speaker": "HAMLET",
+      "text": "I do repent: but heaven hath pleased it so,"
+    },
+    {
+      "number": 171,
+      "speaker": "HAMLET",
+      "text": "To punish me with this and this with me,"
+    },
+    {
+      "number": 172,
+      "speaker": "HAMLET",
+      "text": "That I must be their scourge and minister."
+    },
+    {
+      "number": 173,
+      "speaker": "HAMLET",
+      "text": "I will bestow him, and will answer well"
+    },
+    {
+      "number": 174,
+      "speaker": "HAMLET",
+      "text": "The death I gave him. So, again, good night."
+    },
+    {
+      "number": 175,
+      "speaker": "HAMLET",
+      "text": "I must be cruel, only to be kind:"
+    },
+    {
+      "number": 176,
+      "speaker": "HAMLET",
+      "text": "Thus bad begins and worse remains behind."
+    },
+    {
+      "number": 177,
+      "speaker": "HAMLET",
+      "text": "One word more, good lady."
+    },
+    {
+      "number": 177,
+      "speaker": "QUEEN",
+      "text": "What shall I do?"
+    },
+    {
+      "number": 178,
+      "speaker": "HAMLET",
+      "text": "Not this, by no means, that I bid you do:"
+    },
+    {
+      "number": 179,
+      "speaker": "HAMLET",
+      "text": "Let the bloat king tempt you again to bed;"
+    },
+    {
+      "number": 180,
+      "speaker": "HAMLET",
+      "text": "Pinch wanton on your cheek; call you his mouse;"
+    },
+    {
+      "number": 181,
+      "speaker": "HAMLET",
+      "text": "And let him, for a pair of reechy kisses,"
+    },
+    {
+      "number": 182,
+      "speaker": "HAMLET",
+      "text": "Or paddling in your neck with his damn’d fingers,"
+    },
+    {
+      "number": 183,
+      "speaker": "HAMLET",
+      "text": "Make you to ravel all this matter out,"
+    },
+    {
+      "number": 184,
+      "speaker": "HAMLET",
+      "text": "That I essentially am not in madness,"
+    },
+    {
+      "number": 185,
+      "speaker": "HAMLET",
+      "text": "But mad in craft. ’Twere good you let him know;"
+    },
+    {
+      "number": 186,
+      "speaker": "HAMLET",
+      "text": "For who, that’s but a queen, fair, sober, wise,"
+    },
+    {
+      "number": 187,
+      "speaker": "HAMLET",
+      "text": "Would from a paddock, from a bat, a gib,"
+    },
+    {
+      "number": 188,
+      "speaker": "HAMLET",
+      "text": "Such dear concernings hide? who would do so?"
+    },
+    {
+      "number": 189,
+      "speaker": "HAMLET",
+      "text": "No, in despite of sense and secrecy,"
+    },
+    {
+      "number": 190,
+      "speaker": "HAMLET",
+      "text": "Unpeg the basket on the house’s top,"
+    },
+    {
+      "number": 191,
+      "speaker": "HAMLET",
+      "text": "Let the birds fly, and, like the famous ape,"
+    },
+    {
+      "number": 192,
+      "speaker": "HAMLET",
+      "text": "To try conclusions, in the basket creep,"
+    },
+    {
+      "number": 193,
+      "speaker": "HAMLET",
+      "text": "And break your own neck down."
+    },
+    {
+      "number": 194,
+      "speaker": "QUEEN",
+      "text": "Be thou assured, if words be made of breath,"
+    },
+    {
+      "number": 195,
+      "speaker": "QUEEN",
+      "text": "And breath of life, I have no life to breathe"
+    },
+    {
+      "number": 196,
+      "speaker": "QUEEN",
+      "text": "What thou hast said to me."
+    },
+    {
+      "number": 197,
+      "speaker": "HAMLET",
+      "text": "I must to England; you know that?"
+    },
+    {
+      "number": 198,
+      "speaker": "QUEEN",
+      "text": "Alack,"
+    },
+    {
+      "number": 199,
+      "speaker": "QUEEN",
+      "text": "I had forgot: ’tis so concluded on."
+    },
+    {
+      "number": 200,
+      "speaker": "HAMLET",
+      "text": "There’s letters seal’d: and my two schoolfellows,"
+    },
+    {
+      "number": 201,
+      "speaker": "HAMLET",
+      "text": "Whom I will trust as I will adders fang’d,"
+    },
+    {
+      "number": 202,
+      "speaker": "HAMLET",
+      "text": "They bear the mandate; they must sweep my way,"
+    },
+    {
+      "number": 203,
+      "speaker": "HAMLET",
+      "text": "And marshal me to knavery. Let it work;"
+    },
+    {
+      "number": 204,
+      "speaker": "HAMLET",
+      "text": "For ’tis the sport to have the enginer"
+    },
+    {
+      "number": 205,
+      "speaker": "HAMLET",
+      "text": "Hoist with his own petar: and’t shall go hard"
+    },
+    {
+      "number": 206,
+      "speaker": "HAMLET",
+      "text": "But I will delve one yard below their mines,"
+    },
+    {
+      "number": 207,
+      "speaker": "HAMLET",
+      "text": "And blow them at the moon: O, ’tis most sweet,"
+    },
+    {
+      "number": 208,
+      "speaker": "HAMLET",
+      "text": "When in one line two crafts directly meet."
+    },
+    {
+      "number": 209,
+      "speaker": "HAMLET",
+      "text": "This man shall set me packing:"
+    },
+    {
+      "number": 210,
+      "speaker": "HAMLET",
+      "text": "I’ll lug the guts into the neighbour room."
+    },
+    {
+      "number": 211,
+      "speaker": "HAMLET",
+      "text": "Mother, good night. Indeed this counsellor"
+    },
+    {
+      "number": 212,
+      "speaker": "HAMLET",
+      "text": "Is now most still, most secret and most grave,"
+    },
+    {
+      "number": 213,
+      "speaker": "HAMLET",
+      "text": "Who was in life a foolish prating knave."
+    },
+    {
+      "number": 214,
+      "speaker": "HAMLET",
+      "text": "Come, sir, to draw toward an end with you."
+    },
+    {
+      "number": 215,
+      "speaker": "HAMLET",
+      "text": "Good night, mother."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Queen and Polonius."
+    },
+    {
+      "after_line": 5,
+      "text": "Within."
+    },
+    {
+      "after_line": 7,
+      "text": "Enter Hamlet."
+    },
+    {
+      "after_line": 23,
+      "text": "Drawing."
+    },
+    {
+      "after_line": 24,
+      "text": "Falls and dies."
+    },
+    {
+      "after_line": 103,
+      "text": "Enter Ghost."
+    },
+    {
+      "after_line": 103,
+      "text": "Save me, and hover o’er me with your wings, You heavenly guards! What would your gracious figure?"
+    },
+    {
+      "after_line": 133,
+      "text": "Exit Ghost."
+    },
+    {
+      "after_line": 169,
+      "text": "Pointing to Polonius."
+    },
+    {
+      "after_line": 215,
+      "text": "Exeunt severally; Hamlet dragging in Polonius."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "hamlet_act3_scene4_gloss1",
+      "line": 1,
+      "phrase": "lay home to him",
+      "definition": "rebuke him sharply"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss2",
+      "line": 2,
+      "phrase": "pranks",
+      "definition": "outrageous behavior"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss3",
+      "line": 2,
+      "phrase": "broad to bear",
+      "definition": "excessive to endure"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss4",
+      "line": 3,
+      "phrase": "screen’d and stood between",
+      "definition": "shielded"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss5",
+      "line": 5,
+      "phrase": "round",
+      "definition": "blunt; direct"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss6",
+      "line": 9,
+      "phrase": "thy father much offended",
+      "definition": "insulted your father (Claudius)"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss7",
+      "line": 10,
+      "phrase": "my father",
+      "definition": "my real father (dead King Hamlet)"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss8",
+      "line": 11,
+      "phrase": "idle tongue",
+      "definition": "foolish speech"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss9",
+      "line": 14,
+      "phrase": "Have you forgot me?",
+      "definition": "have you forgotten who I am?"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss10",
+      "line": 19,
+      "phrase": "glass",
+      "definition": "mirror"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss11",
+      "line": 23,
+      "phrase": "How now! a rat?",
+      "definition": "what's this? a rat? (hearing Polonius)"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss12",
+      "line": 23,
+      "phrase": "Dead, for a ducat",
+      "definition": "wagered dead for a gold coin"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss13",
+      "line": 24,
+      "phrase": "I am slain",
+      "definition": "I am killed (Polonius's dying cry)"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss14",
+      "line": 31,
+      "phrase": "rash, intruding fool",
+      "definition": "reckless, meddling fool"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss15",
+      "line": 39,
+      "phrase": "wag thy tongue",
+      "definition": "move your tongue (in speech)"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss16",
+      "line": 37,
+      "phrase": "brass’d",
+      "definition": "brazened; hardened"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss17",
+      "line": 38,
+      "phrase": "proof and bulwark against sense",
+      "definition": "armor against feeling"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss18",
+      "line": 44,
+      "phrase": "blister there",
+      "definition": "brand as harlot"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss19",
+      "line": 46,
+      "phrase": "contraction",
+      "definition": "marriage contract"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss20",
+      "line": 48,
+      "phrase": "rhapsody of words",
+      "definition": "string of empty verbiage"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss21",
+      "line": 49,
+      "phrase": "solidity and compound mass",
+      "definition": "solid substance of the earth"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss22",
+      "line": 51,
+      "phrase": "thought-sick at the act",
+      "definition": "sickened in thought by this deed"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss23",
+      "line": 56,
+      "phrase": "Hyperion’s curls",
+      "definition": "sun-god's locks (the dead King Hamlet)"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss24",
+      "line": 56,
+      "phrase": "front of Jove",
+      "definition": "forehead of Jupiter"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss25",
+      "line": 57,
+      "phrase": "Mars",
+      "definition": "god of war"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss26",
+      "line": 58,
+      "phrase": "Mercury",
+      "definition": "messenger god (agile and swift)"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss27",
+      "line": 64,
+      "phrase": "mildew’d ear",
+      "definition": "diseased ear of grain (Claudius)"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss28",
+      "line": 77,
+      "phrase": "cozen’d you at hoodman-blind",
+      "definition": "cheated you at blind-man's-bluff"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss29",
+      "line": 79,
+      "phrase": "sans",
+      "definition": "without (French)"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss30",
+      "line": 83,
+      "phrase": "mutine in a matron’s bones",
+      "definition": "rebel in a mature woman's body"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss31",
+      "line": 84,
+      "phrase": "flaming youth",
+      "definition": "ardent young person"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss32",
+      "line": 90,
+      "phrase": "grained spots",
+      "definition": "dyed-in stains"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss33",
+      "line": 91,
+      "phrase": "tinct",
+      "definition": "color"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss34",
+      "line": 92,
+      "phrase": "enseamed bed",
+      "definition": "greasy, sweaty bed"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss35",
+      "line": 93,
+      "phrase": "Stew’d in corruption",
+      "definition": "simmering in filth"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss36",
+      "line": 97,
+      "phrase": "tithe",
+      "definition": "tenth part"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss37",
+      "line": 98,
+      "phrase": "vice of kings",
+      "definition": "buffoon of royalty (Claudius is a parody of a king)"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss38",
+      "line": 99,
+      "phrase": "cutpurse",
+      "definition": "pickpocket"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss39",
+      "line": 100,
+      "phrase": "diadem",
+      "definition": "crown"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss40",
+      "line": 102,
+      "phrase": "king of shreds and patches",
+      "definition": "king made of scraps (unworthy of his office)"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss41",
+      "line": 103,
+      "phrase": "tardy son",
+      "definition": "slow, delaying son"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss42",
+      "line": 104,
+      "phrase": "lapsed in time and passion",
+      "definition": "failed in timely action"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss43",
+      "line": 107,
+      "phrase": "whet thy almost blunted purpose",
+      "definition": "sharpen your nearly-dulled resolve"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss44",
+      "line": 108,
+      "phrase": "amazement on thy mother sits",
+      "definition": "bewilderment weighs upon your mother"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss45",
+      "line": 110,
+      "phrase": "conceit",
+      "definition": "imagination"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss46",
+      "line": 114,
+      "phrase": "incorporal air",
+      "definition": "bodiless air"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss47",
+      "line": 116,
+      "phrase": "sleeping soldiers",
+      "definition": "awaken, asleep spirit"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss48",
+      "line": 117,
+      "phrase": "bedded hair, like life in excrements",
+      "definition": "flat hair (excrement = outgrowth) rising as if alive"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss49",
+      "line": 124,
+      "phrase": "piteous action",
+      "definition": "pitiable gestures"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss50",
+      "line": 123,
+      "phrase": "capable",
+      "definition": "receptive (would make even stones weep)"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss51",
+      "line": 149,
+      "phrase": "fatness of these pursy times",
+      "definition": "flabbiness of these bloated, corrupt times"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss52",
+      "line": 151,
+      "phrase": "curb and woo",
+      "definition": "bow down and beg"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss53",
+      "line": 178,
+      "phrase": "bloat king",
+      "definition": "bloated king (Claudius)"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss54",
+      "line": 179,
+      "phrase": "wanton",
+      "definition": "lascivious"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss55",
+      "line": 181,
+      "phrase": "paddling in your neck",
+      "definition": "fondling your neck"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss56",
+      "line": 180,
+      "phrase": "reechy",
+      "definition": "foul; stinking"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss57",
+      "line": 182,
+      "phrase": "ravel all this matter out",
+      "definition": "unravel this whole affair"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss58",
+      "line": 190,
+      "phrase": "famous ape",
+      "definition": "a fable's ape (who climbed into a cage and was trapped)"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss59",
+      "line": 201,
+      "phrase": "mandate",
+      "definition": "royal command"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss60",
+      "line": 201,
+      "phrase": "sweep my way",
+      "definition": "clear my path (to trap me)"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss61",
+      "line": 205,
+      "phrase": "delve one yard below their mines",
+      "definition": "dig a yard deeper than their tunnels"
+    },
+    {
+      "id": "hamlet_act3_scene4_gloss62",
+      "line": 213,
+      "phrase": "draw toward an end",
+      "definition": "conclude"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "hamlet_act3_scene4_ann1",
+      "line_start": 22,
+      "line_end": 34,
+      "citation_display": "Hamlet 3.4.22–34",
+      "category": "structural",
+      "title": "The killing of Polonius: catastrophe as reflex",
+      "body": "Hamlet's stabbing of the man behind the arras is the play's central structural pivot. For three acts Hamlet has been unable to act; now he acts impulsively and kills the wrong man. The moment is the tragic inverse of the prayer scene moments before: there Hamlet reasoned himself out of a killing he could have done, here he kills without reasoning. Freud's famous reading — that the delayed revenge masks an unconscious identification with Claudius that Polonius accidentally triggers — is one way to read the inconsistency. Another, more structural reading: Shakespeare needed the accident to set in motion Laertes's parallel revenge plot, Ophelia's madness, and Hamlet's exile. The play's second half depends on this one impulsive thrust.",
+      "sources": [
+        "Sigmund Freud, The Interpretation of Dreams (1900)",
+        "Harold Jenkins, Hamlet (Arden 2nd ed., 1982)"
+      ]
+    },
+    {
+      "id": "hamlet_act3_scene4_ann2",
+      "line_start": 53,
+      "line_end": 104,
+      "citation_display": "Hamlet 3.4.53–104",
+      "category": "thematic",
+      "title": "The closet scene: portraits and the ethics of remarriage",
+      "body": "Hamlet confronts his mother with what appears to be two miniature portraits (some productions use life-size wall paintings) — his father's and Claudius's. The comparison uses a Renaissance technique: Hamlet reads virtues out of faces. His father has 'Hyperion's curls; the front of Jove himself; / An eye like Mars'; Claudius is 'a mildew'd ear / Blasting his wholesome brother.' The passage is Shakespeare's sharpest treatment of the marriage's illegitimacy — not legal but aesthetic and ethical. Janet Adelman has argued that the scene's force comes from its Oedipal charge: Hamlet's rage at the remarriage is inseparable from his horror at his mother's sexuality. 'Stew'd in corruption, honeying and making love / Over the nasty sty' is not the language of political indignation.",
+      "sources": [
+        "Janet Adelman, Suffocating Mothers (1992)"
+      ]
+    },
+    {
+      "id": "hamlet_act3_scene4_ann3",
+      "line_start": 102,
+      "line_end": 135,
+      "citation_display": "Hamlet 3.4.102–135",
+      "category": "textual",
+      "title": "Does Gertrude see the ghost?",
+      "body": "The ghost's re-entry in 3.4, visible only to Hamlet, is one of the play's most contested textual cruxes. Some critics read Gertrude's blindness as evidence that the ghost is a hallucination projected by Hamlet's guilt about his mother; others see it as a sign that Gertrude, unlike Hamlet, has not been inducted into the secret knowledge. The First Quarto (Q1) has a different stage direction — the ghost appears 'in his night-gown' — suggesting a more domestic, private apparition than the armored figure of 1.1. In performance, a director must decide whether to let the audience see the ghost (affirming his reality) or to stage him as Hamlet's subjective experience (suggesting madness). Either choice reshapes the scene.",
+      "sources": [
+        "Paul Werstine, 'The Textual Mystery of Hamlet' (1988)",
+        "Margreta de Grazia, Hamlet without Hamlet (2007)"
+      ]
+    },
+    {
+      "id": "hamlet_act3_scene4_ann4",
+      "line_start": 172,
+      "line_end": 173,
+      "citation_display": "Hamlet 3.4.172–173",
+      "category": "thematic",
+      "title": "'I must be cruel only to be kind'",
+      "body": "Hamlet's line to Gertrude — 'I must be cruel only to be kind' — sums up the ethical logic he has been attempting since 1.5: the violence is therapeutic, the harshness serves a larger good. The argument is essentially pastoral: a physician's pain for a patient's healing. But the scene has not produced Gertrude's redemption — it has produced Polonius's corpse and Gertrude's pragmatic survival instinct ('Be thou assured, if words be made of breath... I have no life to breathe what thou hast said to me'). The gap between Hamlet's theory of cruelty and its practice is the gap the whole second half of the play opens onto.",
+      "sources": [
+        "Stanley Cavell, Disowning Knowledge (1987)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "hamlet_act3_scene4_q1",
+      "kind": "comprehension",
+      "prompt": "Who is killed when Hamlet stabs through the tapestry?",
+      "options": [
+        "Claudius, disguised as a courtier.",
+        "Polonius, who had hidden there to eavesdrop.",
+        "Rosencrantz, sent by the King.",
+        "A palace guard following orders."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 22,
+      "anchor_line_end": 30
+    },
+    {
+      "id": "hamlet_act3_scene4_q2",
+      "kind": "inference",
+      "prompt": "Why does Hamlet's killing of Polonius function as a structural pivot for the play?",
+      "options": [
+        "It removes Hamlet's chief obstacle to the throne.",
+        "It triggers Laertes's revenge plot, Ophelia's madness, and Hamlet's exile.",
+        "It convinces Claudius to repent.",
+        "It ends the war with Norway."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 22,
+      "anchor_line_end": 35
+    },
+    {
+      "id": "hamlet_act3_scene4_q3",
+      "kind": "close_reading",
+      "prompt": "How does Hamlet describe his father when holding the two portraits?",
+      "options": [
+        "A 'pajock' with the mind of a fool.",
+        "'Hyperion's curls, the front of Jove himself, an eye like Mars.'",
+        "'A king of shreds and patches.'",
+        "A warrior whose glory was bought with his subjects' blood."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 55,
+      "anchor_line_end": 62
+    },
+    {
+      "id": "hamlet_act3_scene4_q4",
+      "kind": "theme",
+      "prompt": "What does it signify that Gertrude cannot see the ghost?",
+      "options": [
+        "The ghost has died a second time and disappeared.",
+        "It is genuinely unclear: either she lacks Hamlet's initiation into the secret, or the ghost is his hallucination.",
+        "The ghost is refusing to show himself to her out of anger.",
+        "The stage lights are dimmed to signal a dream."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 102,
+      "anchor_line_end": 140
+    },
+    {
+      "id": "hamlet_act3_scene4_q5",
+      "kind": "comprehension",
+      "prompt": "What does Hamlet reveal to Gertrude at the end of the scene?",
+      "options": [
+        "That Claudius murdered his father.",
+        "That he knows he is being sent to England and suspects a plot, and that he will 'hoist the engineer with his own petard.'",
+        "That he has forgiven Ophelia.",
+        "That the ghost has commanded him to spare Claudius."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 194,
+      "anchor_line_end": 205
+    },
+    {
+      "id": "hamlet_act3_scene4_q6",
+      "kind": "close_reading",
+      "prompt": "What does Hamlet mean by 'I must be cruel only to be kind'?",
+      "options": [
+        "The harshness he shows Gertrude is meant to produce her moral awakening.",
+        "He will be cruel to his enemies to reward his friends.",
+        "A proverbial lament that life rewards cruelty over kindness.",
+        "An apology for his treatment of Ophelia."
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 20,
+      "anchor_line_start": 172,
+      "anchor_line_end": 173
+    }
+  ]
+}

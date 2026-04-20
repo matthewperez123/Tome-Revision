@@ -1,0 +1,229 @@
+{
+  "section_id": "macbeth_act5_scene4",
+  "work_id": "macbeth",
+  "sequence": 24,
+  "act": 5,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "Country near Birnam wood",
+  "line_count": 27,
+  "word_count": 166,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "MALCOLM",
+      "text": "Cousins, I hope the days are near at hand"
+    },
+    {
+      "number": 2,
+      "speaker": "MALCOLM",
+      "text": "That chambers will be safe."
+    },
+    {
+      "number": 2,
+      "speaker": "MENTEITH",
+      "text": "We doubt it nothing."
+    },
+    {
+      "number": 3,
+      "speaker": "SIWARD",
+      "text": "What wood is this before us?"
+    },
+    {
+      "number": 3,
+      "speaker": "MENTEITH",
+      "text": "The wood of Birnam."
+    },
+    {
+      "number": 4,
+      "speaker": "MALCOLM",
+      "text": "Let every soldier hew him down a bough"
+    },
+    {
+      "number": 5,
+      "speaker": "MALCOLM",
+      "text": "And bear’t before him: thereby shall we shadow"
+    },
+    {
+      "number": 6,
+      "speaker": "MALCOLM",
+      "text": "The numbers of our host and make discovery"
+    },
+    {
+      "number": 7,
+      "speaker": "MALCOLM",
+      "text": "Err in report of us."
+    },
+    {
+      "number": 7,
+      "speaker": "SOLDIERS",
+      "text": "It shall be done."
+    },
+    {
+      "number": 8,
+      "speaker": "SIWARD",
+      "text": "We learn no other but the confident tyrant"
+    },
+    {
+      "number": 9,
+      "speaker": "SIWARD",
+      "text": "Keeps still in Dunsinane, and will endure"
+    },
+    {
+      "number": 10,
+      "speaker": "SIWARD",
+      "text": "Our setting down before’t."
+    },
+    {
+      "number": 10,
+      "speaker": "MALCOLM",
+      "text": "’Tis his main hope:"
+    },
+    {
+      "number": 11,
+      "speaker": "MALCOLM",
+      "text": "For where there is advantage to be given,"
+    },
+    {
+      "number": 12,
+      "speaker": "MALCOLM",
+      "text": "Both more and less have given him the revolt,"
+    },
+    {
+      "number": 13,
+      "speaker": "MALCOLM",
+      "text": "And none serve with him but constrained things"
+    },
+    {
+      "number": 14,
+      "speaker": "MALCOLM",
+      "text": "Whose hearts are absent too."
+    },
+    {
+      "number": 14,
+      "speaker": "MACDUFF",
+      "text": "Let our just censures"
+    },
+    {
+      "number": 15,
+      "speaker": "MACDUFF",
+      "text": "Attend the true event, and put we on"
+    },
+    {
+      "number": 16,
+      "speaker": "MACDUFF",
+      "text": "Industrious soldiership."
+    },
+    {
+      "number": 16,
+      "speaker": "SIWARD",
+      "text": "The time approaches"
+    },
+    {
+      "number": 17,
+      "speaker": "SIWARD",
+      "text": "That will with due decision make us know"
+    },
+    {
+      "number": 18,
+      "speaker": "SIWARD",
+      "text": "What we shall say we have and what we owe."
+    },
+    {
+      "number": 19,
+      "speaker": "SIWARD",
+      "text": "Thoughts speculative their unsure hopes relate,"
+    },
+    {
+      "number": 20,
+      "speaker": "SIWARD",
+      "text": "But certain issue strokes must arbitrate:"
+    },
+    {
+      "number": 21,
+      "speaker": "SIWARD",
+      "text": "Towards which advance the war."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Drum and colours. Enter Malcolm, old Siward and his Son, Macduff, Menteith, Caithness, Angus, Lennox, Ross, and Soldiers, marching."
+    },
+    {
+      "after_line": 21,
+      "text": "Exeunt, marching."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act5_scene4_gloss1",
+      "line": 2,
+      "phrase": "chambers",
+      "definition": "private rooms — where Scots will sleep safely once Macbeth is deposed"
+    },
+    {
+      "id": "macbeth_act5_scene4_gloss2",
+      "line": 4,
+      "phrase": "Let every soldier hew him down a bough",
+      "definition": "Malcolm's masterstroke — each soldier cuts a branch to disguise the army's numbers; Birnam wood will literally come to Dunsinane"
+    },
+    {
+      "id": "macbeth_act5_scene4_gloss3",
+      "line": 5,
+      "phrase": "bear’t before him",
+      "definition": "carry it in front of him"
+    },
+    {
+      "id": "macbeth_act5_scene4_gloss4",
+      "line": 6,
+      "phrase": "discovery",
+      "definition": "observation; reconnaissance"
+    },
+    {
+      "id": "macbeth_act5_scene4_gloss5",
+      "line": 10,
+      "phrase": "setting down before’t",
+      "definition": "beginning a siege"
+    },
+    {
+      "id": "macbeth_act5_scene4_gloss6",
+      "line": 20,
+      "phrase": "rate",
+      "definition": "reason"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act5_scene4_ann1",
+      "line_start": 1,
+      "line_end": 10,
+      "citation_display": "Macbeth 5.4.1–10",
+      "category": "structural",
+      "title": "Birnam wood, literally",
+      "body": "Malcolm's order — 'Let every soldier hew him down a bough, / And bear't before him' — is the prophecy's literal fulfillment. The Sisters promised Macbeth could not be vanquished until Birnam wood came to Dunsinane; Malcolm's soldiers carry branches, and the wood moves. The equivocation the apparitions relied on — a literal impossibility becoming a literal truth — is here reversed by military strategy.\n\nThe tactic is real. Ancient and medieval armies used boughs to disguise troop numbers — there is a plausible historical precedent, though the particular incident is Shakespeare's invention (or Holinshed's, from whose *Chronicles* Shakespeare drew). The scene is ten lines long. It is the shortest scene in the play. Its function is to let the audience see the prophecy break, before Macbeth does.",
+      "sources": [
+        "Raphael Holinshed, *Chronicles of Scotland* (1577)",
+        "Geoffrey Bullough, *Narrative and Dramatic Sources of Shakespeare* vol. 7 (1973)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act5_scene4_q1",
+      "kind": "structural",
+      "prompt": "Malcolm's 'hew him down a bough' tactic:",
+      "options": [
+        "Is decorative",
+        "Is the literal fulfillment of the Birnam-wood prophecy — military strategy defeats equivocation",
+        "Is a hunting technique",
+        "Is a religious ritual"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 10
+    }
+  ]
+}

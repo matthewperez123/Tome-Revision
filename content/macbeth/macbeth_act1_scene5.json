@@ -1,0 +1,656 @@
+{
+  "section_id": "macbeth_act1_scene5",
+  "work_id": "macbeth",
+  "sequence": 5,
+  "act": 1,
+  "scene": 5,
+  "kind": "scene",
+  "scene_title": "Inverness. Macbeth's castle",
+  "line_count": 68,
+  "word_count": 567,
+  "est_read_minutes": 3,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "LADY MACBETH",
+      "text": "“They met me in the day of success: and I have learned"
+    },
+    {
+      "number": 2,
+      "speaker": "LADY MACBETH",
+      "text": "by the perfectest report, they have more in them than mortal knowledge."
+    },
+    {
+      "number": 3,
+      "speaker": "LADY MACBETH",
+      "text": "When I burned in desire to question them further, they made themselves"
+    },
+    {
+      "number": 4,
+      "speaker": "LADY MACBETH",
+      "text": "air, into which they vanished. Whiles I stood rapt in the wonder"
+    },
+    {
+      "number": 5,
+      "speaker": "LADY MACBETH",
+      "text": "of it, came missives from the king, who all-hailed me ‘Thane of"
+    },
+    {
+      "number": 6,
+      "speaker": "LADY MACBETH",
+      "text": "Cawdor;’ by which title, before, these weird sisters saluted me, and referred"
+    },
+    {
+      "number": 7,
+      "speaker": "LADY MACBETH",
+      "text": "me to the coming on of time, with ‘Hail, king that shalt"
+    },
+    {
+      "number": 8,
+      "speaker": "LADY MACBETH",
+      "text": "be!’ This have I thought good to deliver thee, my dearest partner"
+    },
+    {
+      "number": 9,
+      "speaker": "LADY MACBETH",
+      "text": "of greatness, that thou mightst not lose the dues of rejoicing, by"
+    },
+    {
+      "number": 10,
+      "speaker": "LADY MACBETH",
+      "text": "being ignorant of what greatness is promised thee. Lay it to thy"
+    },
+    {
+      "number": 11,
+      "speaker": "LADY MACBETH",
+      "text": "heart, and farewell.” Glamis thou art, and Cawdor; and shalt be What"
+    },
+    {
+      "number": 12,
+      "speaker": "LADY MACBETH",
+      "text": "thou art promised: yet do I fear thy nature; It is too"
+    },
+    {
+      "number": 13,
+      "speaker": "LADY MACBETH",
+      "text": "full o’ the milk of human kindness To catch the nearest way:"
+    },
+    {
+      "number": 14,
+      "speaker": "LADY MACBETH",
+      "text": "thou wouldst be great; Art not without ambition, but without The illness"
+    },
+    {
+      "number": 15,
+      "speaker": "LADY MACBETH",
+      "text": "should attend it: what thou wouldst highly, That wouldst thou holily; wouldst"
+    },
+    {
+      "number": 16,
+      "speaker": "LADY MACBETH",
+      "text": "not play false, And yet wouldst wrongly win: thou’ldst have, great Glamis,"
+    },
+    {
+      "number": 17,
+      "speaker": "LADY MACBETH",
+      "text": "That which cries “Thus thou must do, if thou have it; And"
+    },
+    {
+      "number": 18,
+      "speaker": "LADY MACBETH",
+      "text": "that which rather thou dost fear to do Than wishest should be"
+    },
+    {
+      "number": 19,
+      "speaker": "LADY MACBETH",
+      "text": "undone.” Hie thee hither, That I may pour my spirits in thine"
+    },
+    {
+      "number": 20,
+      "speaker": "LADY MACBETH",
+      "text": "ear; And chastise with the valour of my tongue All that impedes"
+    },
+    {
+      "number": 21,
+      "speaker": "LADY MACBETH",
+      "text": "thee from the golden round, Which fate and metaphysical aid doth seem"
+    },
+    {
+      "number": 22,
+      "speaker": "LADY MACBETH",
+      "text": "To have thee crown’d withal."
+    },
+    {
+      "number": 22,
+      "speaker": "MESSENGER",
+      "text": "The king comes here to-night."
+    },
+    {
+      "number": 23,
+      "speaker": "LADY MACBETH",
+      "text": "Thou’rt mad to say it:"
+    },
+    {
+      "number": 24,
+      "speaker": "LADY MACBETH",
+      "text": "Is not thy master with him? who, were’t so,"
+    },
+    {
+      "number": 25,
+      "speaker": "LADY MACBETH",
+      "text": "Would have inform’d for preparation."
+    },
+    {
+      "number": 26,
+      "speaker": "MESSENGER",
+      "text": "So please you, it is true: our thane is coming:"
+    },
+    {
+      "number": 27,
+      "speaker": "MESSENGER",
+      "text": "One of my fellows had the speed of him,"
+    },
+    {
+      "number": 28,
+      "speaker": "MESSENGER",
+      "text": "Who, almost dead for breath, had scarcely more"
+    },
+    {
+      "number": 29,
+      "speaker": "MESSENGER",
+      "text": "Than would make up his message."
+    },
+    {
+      "number": 29,
+      "speaker": "LADY MACBETH",
+      "text": "Give him tending;"
+    },
+    {
+      "number": 30,
+      "speaker": "LADY MACBETH",
+      "text": "He brings great news."
+    },
+    {
+      "number": 31,
+      "speaker": "LADY MACBETH",
+      "text": "The raven himself is hoarse"
+    },
+    {
+      "number": 32,
+      "speaker": "LADY MACBETH",
+      "text": "That croaks the fatal entrance of Duncan"
+    },
+    {
+      "number": 33,
+      "speaker": "LADY MACBETH",
+      "text": "Under my battlements. Come, you spirits"
+    },
+    {
+      "number": 34,
+      "speaker": "LADY MACBETH",
+      "text": "That tend on mortal thoughts, unsex me here,"
+    },
+    {
+      "number": 35,
+      "speaker": "LADY MACBETH",
+      "text": "And fill me from the crown to the toe top-full"
+    },
+    {
+      "number": 36,
+      "speaker": "LADY MACBETH",
+      "text": "Of direst cruelty! make thick my blood;"
+    },
+    {
+      "number": 37,
+      "speaker": "LADY MACBETH",
+      "text": "Stop up the access and passage to remorse,"
+    },
+    {
+      "number": 38,
+      "speaker": "LADY MACBETH",
+      "text": "That no compunctious visitings of nature"
+    },
+    {
+      "number": 39,
+      "speaker": "LADY MACBETH",
+      "text": "Shake my fell purpose, nor keep peace between"
+    },
+    {
+      "number": 40,
+      "speaker": "LADY MACBETH",
+      "text": "The effect and it! Come to my woman’s breasts,"
+    },
+    {
+      "number": 41,
+      "speaker": "LADY MACBETH",
+      "text": "And take my milk for gall, you murdering ministers,"
+    },
+    {
+      "number": 42,
+      "speaker": "LADY MACBETH",
+      "text": "Wherever in your sightless substances"
+    },
+    {
+      "number": 43,
+      "speaker": "LADY MACBETH",
+      "text": "You wait on nature’s mischief! Come, thick night,"
+    },
+    {
+      "number": 44,
+      "speaker": "LADY MACBETH",
+      "text": "And pall thee in the dunnest smoke of hell,"
+    },
+    {
+      "number": 45,
+      "speaker": "LADY MACBETH",
+      "text": "That my keen knife see not the wound it makes,"
+    },
+    {
+      "number": 46,
+      "speaker": "LADY MACBETH",
+      "text": "Nor heaven peep through the blanket of the dark,"
+    },
+    {
+      "number": 47,
+      "speaker": "LADY MACBETH",
+      "text": "To cry “Hold, hold!”"
+    },
+    {
+      "number": 47,
+      "speaker": "MACBETH",
+      "text": "My dearest love,"
+    },
+    {
+      "number": 48,
+      "speaker": "MACBETH",
+      "text": "Duncan comes here to-night."
+    },
+    {
+      "number": 48,
+      "speaker": "LADY MACBETH",
+      "text": "And when goes hence?"
+    },
+    {
+      "number": 49,
+      "speaker": "MACBETH",
+      "text": "To-morrow, as he purposes."
+    },
+    {
+      "number": 49,
+      "speaker": "LADY MACBETH",
+      "text": "O, never"
+    },
+    {
+      "number": 50,
+      "speaker": "LADY MACBETH",
+      "text": "Shall sun that morrow see!"
+    },
+    {
+      "number": 51,
+      "speaker": "LADY MACBETH",
+      "text": "Your face, my thane, is as a book where men"
+    },
+    {
+      "number": 52,
+      "speaker": "LADY MACBETH",
+      "text": "May read strange matters. To beguile the time,"
+    },
+    {
+      "number": 53,
+      "speaker": "LADY MACBETH",
+      "text": "Look like the time; bear welcome in your eye,"
+    },
+    {
+      "number": 54,
+      "speaker": "LADY MACBETH",
+      "text": "Your hand, your tongue: look like the innocent flower,"
+    },
+    {
+      "number": 55,
+      "speaker": "LADY MACBETH",
+      "text": "But be the serpent under’t. He that’s coming"
+    },
+    {
+      "number": 56,
+      "speaker": "LADY MACBETH",
+      "text": "Must be provided for: and you shall put"
+    },
+    {
+      "number": 57,
+      "speaker": "LADY MACBETH",
+      "text": "This night’s great business into my dispatch;"
+    },
+    {
+      "number": 58,
+      "speaker": "LADY MACBETH",
+      "text": "Which shall to all our nights and days to come"
+    },
+    {
+      "number": 59,
+      "speaker": "LADY MACBETH",
+      "text": "Give solely sovereign sway and masterdom."
+    },
+    {
+      "number": 59,
+      "speaker": "MACBETH",
+      "text": "We will speak further."
+    },
+    {
+      "number": 60,
+      "speaker": "LADY MACBETH",
+      "text": "Only look up clear;"
+    },
+    {
+      "number": 61,
+      "speaker": "LADY MACBETH",
+      "text": "To alter favour ever is to fear:"
+    },
+    {
+      "number": 62,
+      "speaker": "LADY MACBETH",
+      "text": "Leave all the rest to me."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Lady Macbeth, reading a letter."
+    },
+    {
+      "after_line": 22,
+      "text": "Enter a Messenger."
+    },
+    {
+      "after_line": 22,
+      "text": "What is your tidings?"
+    },
+    {
+      "after_line": 30,
+      "text": "Exit Messenger."
+    },
+    {
+      "after_line": 47,
+      "text": "Enter Macbeth."
+    },
+    {
+      "after_line": 47,
+      "text": "Great Glamis! worthy Cawdor! Greater than both, by the all-hail hereafter! Thy letters have transported me beyond This ignorant present, and I feel now The future in the instant."
+    },
+    {
+      "after_line": 62,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act1_scene5_gloss1",
+      "line": 2,
+      "phrase": "perfectest report",
+      "definition": "the most reliable information"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss2",
+      "line": 2,
+      "phrase": "mortal knowledge",
+      "definition": "human understanding"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss3",
+      "line": 5,
+      "phrase": "missives",
+      "definition": "messengers"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss4",
+      "line": 7,
+      "phrase": "coming on of time",
+      "definition": "the future that is approaching"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss5",
+      "line": 8,
+      "phrase": "deliver thee",
+      "definition": "report to you"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss6",
+      "line": 13,
+      "phrase": "milk of human kindness",
+      "definition": "Lady Macbeth's famous phrase: the gentle, nurturing compassion that makes one human — and that she thinks disqualifies Macbeth from murder"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss8",
+      "line": 15,
+      "phrase": "holily",
+      "definition": "in a holy, scrupulous manner"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss9",
+      "line": 21,
+      "phrase": "metaphysical aid",
+      "definition": "supernatural help — 'metaphysical' here means 'beyond the physical,' NOT the modern philosophical sense"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss10",
+      "line": 21,
+      "phrase": "metaphysical",
+      "definition": "supernatural; beyond the physical — 'metaphysical' in the Elizabethan sense, NOT today's philosophical usage"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss12",
+      "line": 31,
+      "phrase": "raven",
+      "definition": "bird of ill omen, announcing death"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss13",
+      "line": 34,
+      "phrase": "unsex me here",
+      "definition": "strip me of my femininity — Lady Macbeth's plea to be made capable of murder; the speech imagines womanhood itself as a barrier to cruelty"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss14",
+      "line": 37,
+      "phrase": "Stop up the access and passage to remorse",
+      "definition": "block every channel through which conscience might enter"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss15",
+      "line": 38,
+      "phrase": "compunctious visitings of nature",
+      "definition": "natural stirrings of remorse or pity — the instinctive human recoil from cruelty"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss16",
+      "line": 38,
+      "phrase": "compunctious",
+      "definition": "of pity, conscience, or remorse"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss17",
+      "line": 39,
+      "phrase": "fell purpose",
+      "definition": "cruel, deadly intent"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss18",
+      "line": 39,
+      "phrase": "fell",
+      "definition": "cruel; deadly"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss20",
+      "line": 41,
+      "phrase": "take my milk for gall",
+      "definition": "replace my mother's milk with bile — reversing nurture into poison"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss21",
+      "line": 42,
+      "phrase": "sightless substances",
+      "definition": "invisible beings; unseen spirits that attend on murder"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss23",
+      "line": 43,
+      "phrase": "wait on nature’s mischief",
+      "definition": "attend on natural disasters or moral wrongs"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss24",
+      "line": 44,
+      "phrase": "dunnest smoke of hell",
+      "definition": "darkest smoke of hell — Lady M's prayer for concealing darkness"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss25",
+      "line": 44,
+      "phrase": "pall thee",
+      "definition": "cover yourself; dress yourself as if in a funeral shroud"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss26",
+      "line": 46,
+      "phrase": "blanket of the dark",
+      "definition": "the covering of darkness — the night figured as a bed-blanket hiding sin"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss28",
+      "line": 52,
+      "phrase": "beguile the time",
+      "definition": "deceive everyone looking; make the hours pass without suspicion"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss29",
+      "line": 55,
+      "phrase": "serpent under’t",
+      "definition": "Lady Macbeth's key instruction to Macbeth on deception — look harmless, be poisonous"
+    },
+    {
+      "id": "macbeth_act1_scene5_gloss30",
+      "line": 59,
+      "phrase": "solely sovereign sway",
+      "definition": "absolute royal power"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act1_scene5_ann1",
+      "line_start": 15,
+      "line_end": 30,
+      "citation_display": "Macbeth 1.5.15–30",
+      "category": "thematic",
+      "title": "Milk of human kindness",
+      "body": "Lady Macbeth's first characterization of her husband is the play's most famous phrase about him: 'too full o' the milk of human kindness.' The metaphor is precise and insulting. 'Milk' is maternal nurture — the substance that makes human beings human. Her complaint is that Macbeth has too much of it: he has retained the infant's dependency on care, the compassion that prevents atrocity.\n\nThe metaphor's intimacy matters. She does not figure him as weak or cowardly; she figures him as nursed. And in the next twelve lines she will speak her own 'unsex me here' speech, in which she asks to have her own milk replaced with gall. The two speeches are paired: his nurture is the problem, and her self-cancellation is the solution.\n\nReading *Macbeth* alongside Janet Adelman's *Suffocating Mothers*, this is the play's founding metaphor: the household has too much mother-substance, and the tragedy will unfold as an attempt to purge it. The witches are mothers without children; the Macbeths are a marriage without visible children (L. C. Knights's famous essay question); and the murders are committed in rooms where breast-feeding ought to happen.",
+      "sources": [
+        "Janet Adelman, *Suffocating Mothers* (1992)",
+        "L. C. Knights, 'How Many Children Had Lady Macbeth?' (1933)",
+        "Cleanth Brooks, 'The Naked Babe and the Cloak of Manliness' (1947)"
+      ]
+    },
+    {
+      "id": "macbeth_act1_scene5_ann2",
+      "line_start": 31,
+      "line_end": 48,
+      "citation_display": "Macbeth 1.5.31–48",
+      "category": "thematic",
+      "title": "'Unsex me here': the speech and its failure",
+      "body": "Lady Macbeth's invocation — 'unsex me here,' 'take my milk for gall,' 'make thick my blood' — is the play's most famous request for self-transformation. It asks the 'spirits / That tend on mortal thoughts' to strip her of everything that makes her a woman as the period understood the category: compassion, nurture, the possibility of regret.\n\nThe speech succeeds theatrically and fails metaphysically. She gets what she asks for in the short term — the resolve to plan the murder, the cold practicality of 2.2 ('a little water clears us of this deed'). But the play grants her no lasting transformation. By 5.1 she is sleepwalking in a nightdress, rubbing her hands and smelling blood on them. The 'compunctious visitings of nature' she prayed to stop have returned, deferred but not denied.\n\nShakespeare is quietly refusing her request. The speech is the play's strongest argument that the moral architecture of a human being cannot be dismantled by incantation. You can postpone conscience. You cannot delete it.",
+      "sources": [
+        "Janet Adelman (1992)",
+        "Carol Chillington Rutter, *Enter the Body* (2001)",
+        "A. C. Bradley (1904)"
+      ]
+    },
+    {
+      "id": "macbeth_act1_scene5_ann3",
+      "line_start": 56,
+      "line_end": 68,
+      "citation_display": "Macbeth 1.5.56–68",
+      "category": "close_reading",
+      "title": "'Look like the innocent flower, / But be the serpent under't'",
+      "body": "Lady Macbeth's instruction to Macbeth — look innocent, be poisonous — is the play's second paradox, paired with the Witches' 'Fair is foul' from 1.1. The two paradoxes frame the tragedy: the supernatural has announced that appearances deceive, and the wife has now given the husband a practical manual for deception.\n\nThe flower/serpent image will echo through the play. In 3.2 Macbeth will tell Lady Macbeth 'we have scotched the snake, not killed it' — and by then they are the snake. The couple who weaponize deception will be destroyed by the equivocations of the Sisters, whose prophecies 'palter with us in a double sense' (5.8). What Lady Macbeth teaches Macbeth in this scene, the Sisters will do to them both.",
+      "sources": [
+        "Harold Goddard, *The Meaning of Shakespeare*, vol. 2 (1951)",
+        "Paul Jorgensen, *Our Naked Frailties* (1971)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act1_scene5_q1",
+      "kind": "close_reading",
+      "prompt": "Lady Macbeth calls Macbeth 'too full o' the milk of human kindness.' What is she accusing him of?",
+      "options": [
+        "Being cowardly",
+        "Retaining the compassionate, nurturing nature that prevents him from committing murder",
+        "Drinking too much",
+        "Being religious"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 15,
+      "anchor_line_end": 22
+    },
+    {
+      "id": "macbeth_act1_scene5_q2",
+      "kind": "theme",
+      "prompt": "In her 'unsex me here' speech, Lady Macbeth is:",
+      "options": [
+        "Praying to Christian angels",
+        "Invoking spirits to strip her of compassion and maternal instinct so she can commit murder",
+        "Declaring her love",
+        "Cursing Macbeth"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 31,
+      "anchor_line_end": 48
+    },
+    {
+      "id": "macbeth_act1_scene5_q3",
+      "kind": "inference",
+      "prompt": "What does the play do with Lady Macbeth's 'unsex me' request?",
+      "options": [
+        "She is transformed permanently",
+        "She gets short-term resolve, but 5.1's sleepwalking shows the transformation failed — conscience returns",
+        "She dies instantly",
+        "She becomes a witch"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 31,
+      "anchor_line_end": 48
+    },
+    {
+      "id": "macbeth_act1_scene5_q4",
+      "kind": "close_reading",
+      "prompt": "'Look like the innocent flower, / But be the serpent under't' continues what earlier pattern?",
+      "options": [
+        "A love poem",
+        "The 'Fair is foul' paradox from 1.1 — deceptive appearance is now a practical instruction",
+        "A religious lesson",
+        "A military tactic"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 60,
+      "anchor_line_end": 68
+    },
+    {
+      "id": "macbeth_act1_scene5_q5",
+      "kind": "comprehension",
+      "prompt": "Why does Lady Macbeth learn Duncan will sleep at her castle?",
+      "options": [
+        "Macbeth tells her in person",
+        "A letter from Macbeth, followed by a messenger announcing Duncan's arrival",
+        "She learns from the Witches",
+        "She has a vision"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 1,
+      "anchor_line_end": 15
+    }
+  ]
+}

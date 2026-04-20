@@ -1,0 +1,322 @@
+{
+  "section_id": "king_lear_act4_scene4",
+  "work_id": "king-lear",
+  "sequence": 20,
+  "act": 4,
+  "scene": 4,
+  "kind": "scene",
+  "scene_title": "The same. A tent",
+  "line_count": 32,
+  "word_count": 210,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CORDELIA",
+      "text": "Alack, ’tis he: why, he was met even now"
+    },
+    {
+      "number": 2,
+      "speaker": "CORDELIA",
+      "text": "As mad as the vex’d sea; singing aloud;"
+    },
+    {
+      "number": 3,
+      "speaker": "CORDELIA",
+      "text": "Crown’d with rank fumiter and furrow-weeds,"
+    },
+    {
+      "number": 4,
+      "speaker": "CORDELIA",
+      "text": "With bur-docks, hemlock, nettles, cuckoo-flowers,"
+    },
+    {
+      "number": 5,
+      "speaker": "CORDELIA",
+      "text": "Darnel, and all the idle weeds that grow"
+    },
+    {
+      "number": 6,
+      "speaker": "CORDELIA",
+      "text": "In our sustaining corn. A century send forth;"
+    },
+    {
+      "number": 7,
+      "speaker": "CORDELIA",
+      "text": "Search every acre in the high-grown field,"
+    },
+    {
+      "number": 8,
+      "speaker": "CORDELIA",
+      "text": "And bring him to our eye."
+    },
+    {
+      "number": 9,
+      "speaker": "CORDELIA",
+      "text": "What can man’s wisdom"
+    },
+    {
+      "number": 10,
+      "speaker": "CORDELIA",
+      "text": "In the restoring his bereaved sense?"
+    },
+    {
+      "number": 11,
+      "speaker": "CORDELIA",
+      "text": "He that helps him take all my outward worth."
+    },
+    {
+      "number": 12,
+      "speaker": "DOCTOR",
+      "text": "There is means, madam:"
+    },
+    {
+      "number": 13,
+      "speaker": "DOCTOR",
+      "text": "Our foster-nurse of nature is repose,"
+    },
+    {
+      "number": 14,
+      "speaker": "DOCTOR",
+      "text": "The which he lacks; that to provoke in him,"
+    },
+    {
+      "number": 15,
+      "speaker": "DOCTOR",
+      "text": "Are many simples operative, whose power"
+    },
+    {
+      "number": 16,
+      "speaker": "DOCTOR",
+      "text": "Will close the eye of anguish."
+    },
+    {
+      "number": 16,
+      "speaker": "CORDELIA",
+      "text": "All blest secrets,"
+    },
+    {
+      "number": 17,
+      "speaker": "CORDELIA",
+      "text": "All you unpublish’d virtues of the earth,"
+    },
+    {
+      "number": 18,
+      "speaker": "CORDELIA",
+      "text": "Spring with my tears! be aidant and remediate"
+    },
+    {
+      "number": 19,
+      "speaker": "CORDELIA",
+      "text": "In the good man’s distress! Seek, seek for him;"
+    },
+    {
+      "number": 20,
+      "speaker": "CORDELIA",
+      "text": "Lest his ungovern’d rage dissolve the life"
+    },
+    {
+      "number": 21,
+      "speaker": "CORDELIA",
+      "text": "That wants the means to lead it."
+    },
+    {
+      "number": 22,
+      "speaker": "MESSENGER",
+      "text": "News, madam;"
+    },
+    {
+      "number": 23,
+      "speaker": "MESSENGER",
+      "text": "The British powers are marching hitherward."
+    },
+    {
+      "number": 23,
+      "speaker": "CORDELIA",
+      "text": "’Tis known before; our preparation stands"
+    },
+    {
+      "number": 24,
+      "speaker": "CORDELIA",
+      "text": "In expectation of them. O dear father,"
+    },
+    {
+      "number": 25,
+      "speaker": "CORDELIA",
+      "text": "It is thy business that I go about;"
+    },
+    {
+      "number": 26,
+      "speaker": "CORDELIA",
+      "text": "Therefore great France"
+    },
+    {
+      "number": 27,
+      "speaker": "CORDELIA",
+      "text": "My mourning and important tears hath pitied."
+    },
+    {
+      "number": 28,
+      "speaker": "CORDELIA",
+      "text": "No blown ambition doth our arms incite,"
+    },
+    {
+      "number": 29,
+      "speaker": "CORDELIA",
+      "text": "But love, dear love, and our aged father’s right:"
+    },
+    {
+      "number": 30,
+      "speaker": "CORDELIA",
+      "text": "Soon may I hear and see him!"
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter, with drum and colours, Cordelia, Doctor, and Soldiers."
+    },
+    {
+      "after_line": 8,
+      "text": "Exit an Officer."
+    },
+    {
+      "after_line": 21,
+      "text": "Enter a Messenger."
+    },
+    {
+      "after_line": 30,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act4_scene4_gloss1",
+      "line": 1,
+      "phrase": "Alack",
+      "definition": "alas"
+    },
+    {
+      "id": "king_lear_act4_scene4_gloss2",
+      "line": 3,
+      "phrase": "fumiter",
+      "definition": "fumitory — a weed-like plant"
+    },
+    {
+      "id": "king_lear_act4_scene4_gloss4",
+      "line": 4,
+      "phrase": "hemlock",
+      "definition": "poisonous herb — traditional symbol of death"
+    },
+    {
+      "id": "king_lear_act4_scene4_gloss5",
+      "line": 4,
+      "phrase": "cuckoo-flowers",
+      "definition": "lady's smock; fool's parsley — flowers associated with cuckoldry"
+    },
+    {
+      "id": "king_lear_act4_scene4_gloss6",
+      "line": 5,
+      "phrase": "Darnel",
+      "definition": "a weed-grass"
+    },
+    {
+      "id": "king_lear_act4_scene4_gloss7",
+      "line": 5,
+      "phrase": "idle weeds",
+      "definition": "worthless plants — the crown of weeds Lear now wears in his madness"
+    },
+    {
+      "id": "king_lear_act4_scene4_gloss8",
+      "line": 15,
+      "phrase": "simples operative",
+      "definition": "medicinal herbs"
+    },
+    {
+      "id": "king_lear_act4_scene4_gloss9",
+      "line": 13,
+      "phrase": "our foster-nurse of nature",
+      "definition": "sleep as mother-nature's nurse"
+    },
+    {
+      "id": "king_lear_act4_scene4_gloss11",
+      "line": 29,
+      "phrase": "our aged father’s right",
+      "definition": "Cordelia's pledge — she fights for Lear's restoration, not conquest"
+    },
+    {
+      "id": "king_lear_act4_scene4_gloss12",
+      "line": 3,
+      "phrase": "rank fumiter",
+      "definition": "luxuriant fumitory — a weed in the wreath on Lear's head"
+    },
+    {
+      "id": "king_lear_act4_scene4_gloss13",
+      "line": 7,
+      "phrase": "high-grown field",
+      "definition": "tall crops"
+    },
+    {
+      "id": "king_lear_act4_scene4_gloss14",
+      "line": 6,
+      "phrase": "century",
+      "definition": "company of a hundred soldiers"
+    },
+    {
+      "id": "king_lear_act4_scene4_gloss15",
+      "line": 10,
+      "phrase": "bereaved sense",
+      "definition": "lost reason"
+    },
+    {
+      "id": "king_lear_act4_scene4_gloss16",
+      "line": 14,
+      "phrase": "provoke",
+      "definition": "summon; call forth"
+    },
+    {
+      "id": "king_lear_act4_scene4_gloss17",
+      "line": 11,
+      "phrase": "outward worth",
+      "definition": "external greatness — Cordelia's army is not for gain but for Lear"
+    },
+    {
+      "id": "king_lear_act4_scene4_gloss18",
+      "line": 28,
+      "phrase": "blown ambition",
+      "definition": "bloated ambition"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act4_scene4_ann1",
+      "line_start": 1,
+      "line_end": 20,
+      "citation_display": "King Lear 4.4.1–20",
+      "category": "close_reading",
+      "title": "Cordelia entering crowned with weeds — the plant-catalogue of Lear's madness",
+      "body": "Cordelia enters describing Lear 'As mad as the vex'd sea; singing aloud; / Crown'd with rank fumiter and furrow-weeds, / With hardoks, hemlock, nettles, cuckoo-flowers, / Darnel, and all the idle weeds that grow / In our sustaining corn.' The catalogue is both botanical and symbolic: fumitory (smoke / self-deception), hemlock (poison / Socratic death), nettles (burning), cuckoo-flowers (cuckoldry), darnel (drunkenness in folk medicine). Every plant in the crown has a moral valence. Shakespeare is signaling that Lear's madness is legible — you can read his crown of weeds. The line-count is small but the image is among the play's densest. Pre-Raphaelite painters (Ford Madox Brown, for instance) returned to it repeatedly.",
+      "sources": [
+        "Henry Peacham, Minerva Britanna (1612)",
+        "Jonathan Bate, Soul of the Age (2008)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act4_scene4_q1",
+      "kind": "close_reading",
+      "prompt": "What is symbolic about the weeds that crown Lear in his madness?",
+      "options": [
+        "They are random plants",
+        "Each is legible — fumitory (self-deception), hemlock (poison/Socratic death), nettles (burning), cuckoo-flowers (cuckoldry), darnel (drunkenness) — his crown is a readable moral emblem",
+        "They represent royal heraldry",
+        "They identify the time of year"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 3,
+      "anchor_line_end": 7
+    }
+  ]
+}

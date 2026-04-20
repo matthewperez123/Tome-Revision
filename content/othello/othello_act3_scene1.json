@@ -1,0 +1,454 @@
+{
+  "section_id": "othello_act3_scene1",
+  "work_id": "othello",
+  "sequence": 7,
+  "act": 3,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "Before the castle",
+  "line_count": 58,
+  "word_count": 433,
+  "est_read_minutes": 2,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CASSIO",
+      "text": "Masters, play here; I will content your pains;"
+    },
+    {
+      "number": 2,
+      "speaker": "CASSIO",
+      "text": "Something that’s brief; and bid “Good morrow, general.”"
+    },
+    {
+      "number": 3,
+      "speaker": "CLOWN",
+      "text": "Why masters, have your instruments been in Naples, that they speak i’ the nose thus?"
+    },
+    {
+      "number": 4,
+      "speaker": "FIRST MUSICIAN",
+      "text": "How, sir, how!"
+    },
+    {
+      "number": 4,
+      "speaker": "CLOWN",
+      "text": "Are these, I pray you, wind-instruments?"
+    },
+    {
+      "number": 5,
+      "speaker": "FIRST MUSICIAN",
+      "text": "Ay, marry, are they, sir."
+    },
+    {
+      "number": 5,
+      "speaker": "CLOWN",
+      "text": "O, thereby hangs a tail."
+    },
+    {
+      "number": 6,
+      "speaker": "FIRST MUSICIAN",
+      "text": "Whereby hangs a tale, sir?"
+    },
+    {
+      "number": 7,
+      "speaker": "CLOWN",
+      "text": "Marry, sir, by many a wind-instrument that I know. But, masters, here’s"
+    },
+    {
+      "number": 8,
+      "speaker": "CLOWN",
+      "text": "money for you: and the general so likes your music, that he"
+    },
+    {
+      "number": 9,
+      "speaker": "CLOWN",
+      "text": "desires you, for love’s sake, to make no more noise with it."
+    },
+    {
+      "number": 10,
+      "speaker": "FIRST MUSICIAN",
+      "text": "Well, sir, we will not."
+    },
+    {
+      "number": 11,
+      "speaker": "CLOWN",
+      "text": "If you have any music that may not be heard, to’t again:"
+    },
+    {
+      "number": 12,
+      "speaker": "CLOWN",
+      "text": "but, as they say to hear music the general does not greatly"
+    },
+    {
+      "number": 13,
+      "speaker": "CLOWN",
+      "text": "care."
+    },
+    {
+      "number": 13,
+      "speaker": "FIRST MUSICIAN",
+      "text": "We have none such, sir."
+    },
+    {
+      "number": 14,
+      "speaker": "CLOWN",
+      "text": "Then put up your pipes in your bag, for I’ll away: go;"
+    },
+    {
+      "number": 15,
+      "speaker": "CLOWN",
+      "text": "vanish into air; away!"
+    },
+    {
+      "number": 15,
+      "speaker": "CASSIO",
+      "text": "Dost thou hear, my honest friend?"
+    },
+    {
+      "number": 16,
+      "speaker": "CLOWN",
+      "text": "No, I hear not your honest friend; I hear you."
+    },
+    {
+      "number": 17,
+      "speaker": "CASSIO",
+      "text": "Prithee, keep up thy quillets. There’s a poor piece of gold for"
+    },
+    {
+      "number": 18,
+      "speaker": "CASSIO",
+      "text": "thee: if the gentlewoman that attends the general’s wife be stirring, tell"
+    },
+    {
+      "number": 19,
+      "speaker": "CASSIO",
+      "text": "her there’s one Cassio entreats her a little favour of speech: wilt"
+    },
+    {
+      "number": 20,
+      "speaker": "CASSIO",
+      "text": "thou do this?"
+    },
+    {
+      "number": 21,
+      "speaker": "CLOWN",
+      "text": "She is stirring, sir: if she will stir hither, I shall seem"
+    },
+    {
+      "number": 22,
+      "speaker": "CLOWN",
+      "text": "to notify unto her."
+    },
+    {
+      "number": 22,
+      "speaker": "CASSIO",
+      "text": "Do, good my friend."
+    },
+    {
+      "number": 23,
+      "speaker": "IAGO",
+      "text": "You have not been a-bed, then?"
+    },
+    {
+      "number": 23,
+      "speaker": "CASSIO",
+      "text": "Why, no; the day had broke"
+    },
+    {
+      "number": 24,
+      "speaker": "CASSIO",
+      "text": "Before we parted. I have made bold, Iago,"
+    },
+    {
+      "number": 25,
+      "speaker": "CASSIO",
+      "text": "To send in to your wife: my suit to her"
+    },
+    {
+      "number": 26,
+      "speaker": "CASSIO",
+      "text": "Is, that she will to virtuous Desdemona"
+    },
+    {
+      "number": 27,
+      "speaker": "CASSIO",
+      "text": "Procure me some access."
+    },
+    {
+      "number": 27,
+      "speaker": "IAGO",
+      "text": "I’ll send her to you presently;"
+    },
+    {
+      "number": 28,
+      "speaker": "IAGO",
+      "text": "And I’ll devise a mean to draw the Moor"
+    },
+    {
+      "number": 29,
+      "speaker": "IAGO",
+      "text": "Out of the way, that your converse and business"
+    },
+    {
+      "number": 30,
+      "speaker": "IAGO",
+      "text": "May be more free."
+    },
+    {
+      "number": 30,
+      "speaker": "CASSIO",
+      "text": "I humbly thank you for’t."
+    },
+    {
+      "number": 31,
+      "speaker": "CASSIO",
+      "text": "I never knew"
+    },
+    {
+      "number": 32,
+      "speaker": "CASSIO",
+      "text": "A Florentine more kind and honest."
+    },
+    {
+      "number": 33,
+      "speaker": "EMILIA",
+      "text": "Good morrow, good Lieutenant: I am sorry"
+    },
+    {
+      "number": 34,
+      "speaker": "EMILIA",
+      "text": "For your displeasure; but all will sure be well."
+    },
+    {
+      "number": 35,
+      "speaker": "EMILIA",
+      "text": "The general and his wife are talking of it;"
+    },
+    {
+      "number": 36,
+      "speaker": "EMILIA",
+      "text": "And she speaks for you stoutly: the Moor replies,"
+    },
+    {
+      "number": 37,
+      "speaker": "EMILIA",
+      "text": "That he you hurt is of great fame in Cyprus,"
+    },
+    {
+      "number": 38,
+      "speaker": "EMILIA",
+      "text": "And great affinity, and that in wholesome wisdom"
+    },
+    {
+      "number": 39,
+      "speaker": "EMILIA",
+      "text": "He might not but refuse you; but he protests he loves you"
+    },
+    {
+      "number": 40,
+      "speaker": "EMILIA",
+      "text": "And needs no other suitor but his likings"
+    },
+    {
+      "number": 41,
+      "speaker": "EMILIA",
+      "text": "To take the safest occasion by the front"
+    },
+    {
+      "number": 42,
+      "speaker": "EMILIA",
+      "text": "To bring you in again."
+    },
+    {
+      "number": 42,
+      "speaker": "CASSIO",
+      "text": "Yet, I beseech you,"
+    },
+    {
+      "number": 43,
+      "speaker": "CASSIO",
+      "text": "If you think fit, or that it may be done,"
+    },
+    {
+      "number": 44,
+      "speaker": "CASSIO",
+      "text": "Give me advantage of some brief discourse"
+    },
+    {
+      "number": 45,
+      "speaker": "CASSIO",
+      "text": "With Desdemona alone."
+    },
+    {
+      "number": 45,
+      "speaker": "EMILIA",
+      "text": "Pray you, come in;"
+    },
+    {
+      "number": 46,
+      "speaker": "EMILIA",
+      "text": "I will bestow you where you shall have time"
+    },
+    {
+      "number": 47,
+      "speaker": "EMILIA",
+      "text": "To speak your bosom freely."
+    },
+    {
+      "number": 47,
+      "speaker": "CASSIO",
+      "text": "I am much bound to you."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Cassio and some Musicians."
+    },
+    {
+      "after_line": 2,
+      "text": "Music."
+    },
+    {
+      "after_line": 2,
+      "text": "Enter Clown."
+    },
+    {
+      "after_line": 15,
+      "text": "Exeunt Musicians."
+    },
+    {
+      "after_line": 22,
+      "text": "Exit Clown."
+    },
+    {
+      "after_line": 22,
+      "text": "Enter Iago."
+    },
+    {
+      "after_line": 22,
+      "text": "In happy time, Iago."
+    },
+    {
+      "after_line": 30,
+      "text": "Exit Iago."
+    },
+    {
+      "after_line": 32,
+      "text": "Enter Emilia."
+    },
+    {
+      "after_line": 47,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "othello_act3_scene1_gloss1",
+      "line": 1,
+      "phrase": "content your pains",
+      "definition": "reward your labor"
+    },
+    {
+      "id": "othello_act3_scene1_gloss2",
+      "line": 3,
+      "phrase": "masters, have your instruments been in Naples",
+      "definition": "the Clown jokes that the musicians' instruments sound nasal, as if they caught a Neapolitan disease (syphilis was nicknamed 'the Naples bone-ache')"
+    },
+    {
+      "id": "othello_act3_scene1_gloss4",
+      "line": 5,
+      "phrase": "tail",
+      "definition": "a bawdy quibble — with anatomical innuendo"
+    },
+    {
+      "id": "othello_act3_scene1_gloss5",
+      "line": 15,
+      "phrase": "vanish into air",
+      "definition": "go; depart"
+    },
+    {
+      "id": "othello_act3_scene1_gloss6",
+      "line": 17,
+      "phrase": "keep up thy quillets",
+      "definition": "keep your quibbles to yourself"
+    },
+    {
+      "id": "othello_act3_scene1_gloss7",
+      "line": 21,
+      "phrase": "stir",
+      "definition": "rouse; disturb"
+    },
+    {
+      "id": "othello_act3_scene1_gloss8",
+      "line": 36,
+      "phrase": "stoutly",
+      "definition": "boldly; firmly"
+    },
+    {
+      "id": "othello_act3_scene1_gloss9",
+      "line": 38,
+      "phrase": "affinity",
+      "definition": "family connections"
+    },
+    {
+      "id": "othello_act3_scene1_gloss10",
+      "line": 38,
+      "phrase": "wholesome wisdom",
+      "definition": "sound prudence"
+    },
+    {
+      "id": "othello_act3_scene1_gloss11",
+      "line": 41,
+      "phrase": "front",
+      "definition": "forehead; front position"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "othello_act3_scene1_ann1",
+      "line_start": 1,
+      "line_end": 33,
+      "citation_display": "Othello 3.1.1–33",
+      "category": "structural",
+      "title": "The Clown as interval",
+      "body": "Shakespeare inserts a brief comic interlude with a Clown between the scene of Cassio's fall and the temptation scene to come. The quibbles on wind instruments and Neapolitan ailments (syphilis was known in England as 'the Naples disease') buy an interval of lightness that makes what follows land harder. The Clown also scales the play's musical register down from Iago's songs in 2.3 to mundane morning jokes — a way of announcing that the pastoral island has resumed its ordinary life while the tragedy is quietly organizing itself in the next room.",
+      "sources": [
+        "Robert H. Bell, *Shakespeare's Great Stage of Fools* (2011)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "othello_act3_scene1_q1",
+      "kind": "comprehension",
+      "prompt": "What does the Clown joke about when discussing the musicians' instruments?",
+      "options": [
+        "Their cost and the guild pricing system",
+        "That the instruments sound nasal, as if infected with 'the Naples disease' (syphilis)",
+        "That they are out of tune for the Venetian scale",
+        "That the musicians are all deaf"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 3,
+      "anchor_line_end": 20
+    },
+    {
+      "id": "othello_act3_scene1_q2",
+      "kind": "inference",
+      "prompt": "Why does Emilia tell Cassio that Desdemona is already pleading his cause?",
+      "options": [
+        "Because Othello has already agreed to reinstate him",
+        "Because Desdemona has reviewed evidence exonerating Cassio",
+        "Because her generous nature leads her to advocate for him even before being asked",
+        "Because Iago has asked her to lobby on Cassio's behalf"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 15,
+      "anchor_line_start": 44,
+      "anchor_line_end": 58
+    }
+  ]
+}

@@ -1,0 +1,2509 @@
+{
+  "section_id": "henry_v_act5_scene2",
+  "work_id": "henry-v",
+  "sequence": 28,
+  "act": 5,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "Troyes in Champagne. An apartment in the French King's palace",
+  "line_count": 332,
+  "word_count": 3068,
+  "est_read_minutes": 15,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KING HENRY",
+      "text": "Peace to this meeting, wherefore we are met!"
+    },
+    {
+      "number": 2,
+      "speaker": "KING HENRY",
+      "text": "Unto our brother France, and to our sister,"
+    },
+    {
+      "number": 3,
+      "speaker": "KING HENRY",
+      "text": "Health and fair time of day; joy and good wishes"
+    },
+    {
+      "number": 4,
+      "speaker": "KING HENRY",
+      "text": "To our most fair and princely cousin Katharine;"
+    },
+    {
+      "number": 5,
+      "speaker": "KING HENRY",
+      "text": "And, as a branch and member of this royalty,"
+    },
+    {
+      "number": 6,
+      "speaker": "KING HENRY",
+      "text": "By whom this great assembly is contrived,"
+    },
+    {
+      "number": 7,
+      "speaker": "KING HENRY",
+      "text": "We do salute you, Duke of Burgundy;"
+    },
+    {
+      "number": 8,
+      "speaker": "KING HENRY",
+      "text": "And, princes French, and peers, health to you all!"
+    },
+    {
+      "number": 9,
+      "speaker": "FRENCH KING",
+      "text": "Right joyous are we to behold your face,"
+    },
+    {
+      "number": 10,
+      "speaker": "FRENCH KING",
+      "text": "Most worthy brother England; fairly met:"
+    },
+    {
+      "number": 11,
+      "speaker": "FRENCH KING",
+      "text": "So are you, princes English, every one."
+    },
+    {
+      "number": 12,
+      "speaker": "QUEEN ISABEL",
+      "text": "So happy be the issue, brother England,"
+    },
+    {
+      "number": 13,
+      "speaker": "QUEEN ISABEL",
+      "text": "Of this good day and of this gracious meeting,"
+    },
+    {
+      "number": 14,
+      "speaker": "QUEEN ISABEL",
+      "text": "As we are now glad to behold your eyes;"
+    },
+    {
+      "number": 15,
+      "speaker": "QUEEN ISABEL",
+      "text": "Your eyes, which hitherto have borne in them"
+    },
+    {
+      "number": 16,
+      "speaker": "QUEEN ISABEL",
+      "text": "Against the French, that met them in their bent,"
+    },
+    {
+      "number": 17,
+      "speaker": "QUEEN ISABEL",
+      "text": "The fatal balls of murdering basilisks:"
+    },
+    {
+      "number": 18,
+      "speaker": "QUEEN ISABEL",
+      "text": "The venom of such looks, we fairly hope,"
+    },
+    {
+      "number": 19,
+      "speaker": "QUEEN ISABEL",
+      "text": "Have lost their quality, and that this day"
+    },
+    {
+      "number": 20,
+      "speaker": "QUEEN ISABEL",
+      "text": "Shall change all griefs and quarrels into love."
+    },
+    {
+      "number": 21,
+      "speaker": "KING HENRY",
+      "text": "To cry amen to that, thus we appear."
+    },
+    {
+      "number": 22,
+      "speaker": "QUEEN ISABEL",
+      "text": "You English princes all, I do salute you."
+    },
+    {
+      "number": 23,
+      "speaker": "BURGUNDY",
+      "text": "My duty to you both, on equal love,"
+    },
+    {
+      "number": 24,
+      "speaker": "BURGUNDY",
+      "text": "Great Kings of France and England! That I have labour’d,"
+    },
+    {
+      "number": 25,
+      "speaker": "BURGUNDY",
+      "text": "With all my wits, my pains and strong endeavours,"
+    },
+    {
+      "number": 26,
+      "speaker": "BURGUNDY",
+      "text": "To bring your most imperial majesties"
+    },
+    {
+      "number": 27,
+      "speaker": "BURGUNDY",
+      "text": "Unto this bar and royal interview,"
+    },
+    {
+      "number": 28,
+      "speaker": "BURGUNDY",
+      "text": "Your mightiness on both parts best can witness."
+    },
+    {
+      "number": 29,
+      "speaker": "BURGUNDY",
+      "text": "Since then my office hath so far prevail’d"
+    },
+    {
+      "number": 30,
+      "speaker": "BURGUNDY",
+      "text": "That, face to face and royal eye to eye,"
+    },
+    {
+      "number": 31,
+      "speaker": "BURGUNDY",
+      "text": "You have congreeted, let it not disgrace me,"
+    },
+    {
+      "number": 32,
+      "speaker": "BURGUNDY",
+      "text": "If I demand, before this royal view,"
+    },
+    {
+      "number": 33,
+      "speaker": "BURGUNDY",
+      "text": "What rub or what impediment there is,"
+    },
+    {
+      "number": 34,
+      "speaker": "BURGUNDY",
+      "text": "Why that the naked, poor and mangled Peace,"
+    },
+    {
+      "number": 35,
+      "speaker": "BURGUNDY",
+      "text": "Dear nurse of arts, plenties and joyful births,"
+    },
+    {
+      "number": 36,
+      "speaker": "BURGUNDY",
+      "text": "Should not in this best garden of the world"
+    },
+    {
+      "number": 37,
+      "speaker": "BURGUNDY",
+      "text": "Our fertile France, put up her lovely visage?"
+    },
+    {
+      "number": 38,
+      "speaker": "BURGUNDY",
+      "text": "Alas, she hath from France too long been chased,"
+    },
+    {
+      "number": 39,
+      "speaker": "BURGUNDY",
+      "text": "And all her husbandry doth lie on heaps,"
+    },
+    {
+      "number": 40,
+      "speaker": "BURGUNDY",
+      "text": "Corrupting in it own fertility."
+    },
+    {
+      "number": 41,
+      "speaker": "BURGUNDY",
+      "text": "Her vine, the merry cheerer of the heart,"
+    },
+    {
+      "number": 42,
+      "speaker": "BURGUNDY",
+      "text": "Unpruned dies; her hedges even-pleach’d,"
+    },
+    {
+      "number": 43,
+      "speaker": "BURGUNDY",
+      "text": "Like prisoners wildly overgrown with hair,"
+    },
+    {
+      "number": 44,
+      "speaker": "BURGUNDY",
+      "text": "Put forth disorder’d twigs; her fallow leas"
+    },
+    {
+      "number": 45,
+      "speaker": "BURGUNDY",
+      "text": "The darnel, hemlock and rank fumitory"
+    },
+    {
+      "number": 46,
+      "speaker": "BURGUNDY",
+      "text": "Doth root upon, while that the coulter rusts"
+    },
+    {
+      "number": 47,
+      "speaker": "BURGUNDY",
+      "text": "That should deracinate such savagery;"
+    },
+    {
+      "number": 48,
+      "speaker": "BURGUNDY",
+      "text": "The even mead, that erst brought sweetly forth"
+    },
+    {
+      "number": 49,
+      "speaker": "BURGUNDY",
+      "text": "The freckled cowslip, burnet and green clover,"
+    },
+    {
+      "number": 50,
+      "speaker": "BURGUNDY",
+      "text": "Wanting the scythe, all uncorrected, rank,"
+    },
+    {
+      "number": 51,
+      "speaker": "BURGUNDY",
+      "text": "Conceives by idleness, and nothing teems"
+    },
+    {
+      "number": 52,
+      "speaker": "BURGUNDY",
+      "text": "But hateful docks, rough thistles, kecksies, burs,"
+    },
+    {
+      "number": 53,
+      "speaker": "BURGUNDY",
+      "text": "Losing both beauty and utility."
+    },
+    {
+      "number": 54,
+      "speaker": "BURGUNDY",
+      "text": "And as our vineyards, fallows, meads and hedges,"
+    },
+    {
+      "number": 55,
+      "speaker": "BURGUNDY",
+      "text": "Defective in their natures, grow to wildness,"
+    },
+    {
+      "number": 56,
+      "speaker": "BURGUNDY",
+      "text": "Even so our houses and ourselves and children"
+    },
+    {
+      "number": 57,
+      "speaker": "BURGUNDY",
+      "text": "Have lost, or do not learn for want of time,"
+    },
+    {
+      "number": 58,
+      "speaker": "BURGUNDY",
+      "text": "The sciences that should become our country;"
+    },
+    {
+      "number": 59,
+      "speaker": "BURGUNDY",
+      "text": "But grow like savages—as soldiers will"
+    },
+    {
+      "number": 60,
+      "speaker": "BURGUNDY",
+      "text": "That nothing do but meditate on blood—"
+    },
+    {
+      "number": 61,
+      "speaker": "BURGUNDY",
+      "text": "To swearing and stern looks, diffused attire"
+    },
+    {
+      "number": 62,
+      "speaker": "BURGUNDY",
+      "text": "And everything that seems unnatural."
+    },
+    {
+      "number": 63,
+      "speaker": "BURGUNDY",
+      "text": "Which to reduce into our former favour"
+    },
+    {
+      "number": 64,
+      "speaker": "BURGUNDY",
+      "text": "You are assembled: and my speech entreats"
+    },
+    {
+      "number": 65,
+      "speaker": "BURGUNDY",
+      "text": "That I may know the let, why gentle Peace"
+    },
+    {
+      "number": 66,
+      "speaker": "BURGUNDY",
+      "text": "Should not expel these inconveniences"
+    },
+    {
+      "number": 67,
+      "speaker": "BURGUNDY",
+      "text": "And bless us with her former qualities."
+    },
+    {
+      "number": 68,
+      "speaker": "KING HENRY",
+      "text": "If, Duke of Burgundy, you would the peace,"
+    },
+    {
+      "number": 69,
+      "speaker": "KING HENRY",
+      "text": "Whose want gives growth to the imperfections"
+    },
+    {
+      "number": 70,
+      "speaker": "KING HENRY",
+      "text": "Which you have cited, you must buy that peace"
+    },
+    {
+      "number": 71,
+      "speaker": "KING HENRY",
+      "text": "With full accord to all our just demands;"
+    },
+    {
+      "number": 72,
+      "speaker": "KING HENRY",
+      "text": "Whose tenours and particular effects"
+    },
+    {
+      "number": 73,
+      "speaker": "KING HENRY",
+      "text": "You have enscheduled briefly in your hands."
+    },
+    {
+      "number": 74,
+      "speaker": "BURGUNDY",
+      "text": "The king hath heard them; to the which as yet"
+    },
+    {
+      "number": 75,
+      "speaker": "BURGUNDY",
+      "text": "There is no answer made."
+    },
+    {
+      "number": 75,
+      "speaker": "KING HENRY",
+      "text": "Well, then, the peace,"
+    },
+    {
+      "number": 76,
+      "speaker": "KING HENRY",
+      "text": "Which you before so urged, lies in his answer."
+    },
+    {
+      "number": 77,
+      "speaker": "FRENCH KING",
+      "text": "I have but with a cursorary eye"
+    },
+    {
+      "number": 78,
+      "speaker": "FRENCH KING",
+      "text": "O’erglanced the articles: pleaseth your grace"
+    },
+    {
+      "number": 79,
+      "speaker": "FRENCH KING",
+      "text": "To appoint some of your council presently"
+    },
+    {
+      "number": 80,
+      "speaker": "FRENCH KING",
+      "text": "To sit with us once more, with better heed"
+    },
+    {
+      "number": 81,
+      "speaker": "FRENCH KING",
+      "text": "To resurvey them, we will suddenly"
+    },
+    {
+      "number": 82,
+      "speaker": "FRENCH KING",
+      "text": "Pass our accept and peremptory answer."
+    },
+    {
+      "number": 82,
+      "speaker": "KING HENRY",
+      "text": "Brother, we shall. Go, uncle Exeter,"
+    },
+    {
+      "number": 83,
+      "speaker": "KING HENRY",
+      "text": "And brother Clarence, and you, brother Gloucester,"
+    },
+    {
+      "number": 84,
+      "speaker": "KING HENRY",
+      "text": "Warwick and Huntington, go with the king;"
+    },
+    {
+      "number": 85,
+      "speaker": "KING HENRY",
+      "text": "And take with you free power to ratify,"
+    },
+    {
+      "number": 86,
+      "speaker": "KING HENRY",
+      "text": "Augment, or alter, as your wisdoms best"
+    },
+    {
+      "number": 87,
+      "speaker": "KING HENRY",
+      "text": "Shall see advantageable for our dignity,"
+    },
+    {
+      "number": 88,
+      "speaker": "KING HENRY",
+      "text": "Anything in or out of our demands,"
+    },
+    {
+      "number": 89,
+      "speaker": "KING HENRY",
+      "text": "And we’ll consign thereto. Will you, fair sister,"
+    },
+    {
+      "number": 90,
+      "speaker": "KING HENRY",
+      "text": "Go with the princes, or stay here with us?"
+    },
+    {
+      "number": 91,
+      "speaker": "QUEEN ISABEL",
+      "text": "Our gracious brother, I will go with them:"
+    },
+    {
+      "number": 92,
+      "speaker": "QUEEN ISABEL",
+      "text": "Haply a woman’s voice may do some good,"
+    },
+    {
+      "number": 93,
+      "speaker": "QUEEN ISABEL",
+      "text": "When articles too nicely urg’d be stood on."
+    },
+    {
+      "number": 94,
+      "speaker": "KING HENRY",
+      "text": "Yet leave our cousin Katharine here with us:"
+    },
+    {
+      "number": 95,
+      "speaker": "KING HENRY",
+      "text": "She is our capital demand, comprised"
+    },
+    {
+      "number": 96,
+      "speaker": "KING HENRY",
+      "text": "Within the fore-rank of our articles."
+    },
+    {
+      "number": 96,
+      "speaker": "QUEEN ISABEL",
+      "text": "She hath good leave."
+    },
+    {
+      "number": 97,
+      "speaker": "KING HENRY",
+      "text": "Fair Katharine, and most fair,"
+    },
+    {
+      "number": 98,
+      "speaker": "KING HENRY",
+      "text": "Will you vouchsafe to teach a soldier terms"
+    },
+    {
+      "number": 99,
+      "speaker": "KING HENRY",
+      "text": "Such as will enter at a lady’s ear"
+    },
+    {
+      "number": 100,
+      "speaker": "KING HENRY",
+      "text": "And plead his love-suit to her gentle heart?"
+    },
+    {
+      "number": 101,
+      "speaker": "KATHERINE",
+      "text": "Your majesty shall mock me; I cannot speak your England."
+    },
+    {
+      "number": 102,
+      "speaker": "KING HENRY",
+      "text": "O fair Katharine, if you will love me soundly with your French"
+    },
+    {
+      "number": 103,
+      "speaker": "KING HENRY",
+      "text": "heart, I will be glad to hear you confess it brokenly with"
+    },
+    {
+      "number": 104,
+      "speaker": "KING HENRY",
+      "text": "your English tongue. Do you like me, Kate?"
+    },
+    {
+      "number": 105,
+      "speaker": "KATHERINE",
+      "text": "Pardonnez-moi, I cannot tell vat is “like me.”"
+    },
+    {
+      "number": 106,
+      "speaker": "KING HENRY",
+      "text": "An angel is like you, Kate, and you are like an angel."
+    },
+    {
+      "number": 107,
+      "speaker": "KATHERINE",
+      "text": "Que dit-il? Que je suis semblable à les anges?"
+    },
+    {
+      "number": 108,
+      "speaker": "ALICE",
+      "text": "Oui, vraiment, sauf votre grâce, ainsi dit-il."
+    },
+    {
+      "number": 109,
+      "speaker": "KING HENRY",
+      "text": "I said so, dear Katharine; and I must not blush to affirm it."
+    },
+    {
+      "number": 110,
+      "speaker": "KATHERINE",
+      "text": "O bon Dieu! les langues des hommes sont pleines de tromperies."
+    },
+    {
+      "number": 111,
+      "speaker": "KING HENRY",
+      "text": "What says she, fair one? that the tongues of men are full of deceits?"
+    },
+    {
+      "number": 112,
+      "speaker": "ALICE",
+      "text": "Oui, dat de tongues of de mans is be full of deceits:"
+    },
+    {
+      "number": 113,
+      "speaker": "ALICE",
+      "text": "dat is de princess."
+    },
+    {
+      "number": 114,
+      "speaker": "KING HENRY",
+      "text": "The princess is the better Englishwoman. I’ faith, Kate, my wooing is"
+    },
+    {
+      "number": 115,
+      "speaker": "KING HENRY",
+      "text": "fit for thy understanding: I am glad thou canst speak no better"
+    },
+    {
+      "number": 116,
+      "speaker": "KING HENRY",
+      "text": "English; for, if thou couldst, thou wouldst find me such a plain"
+    },
+    {
+      "number": 117,
+      "speaker": "KING HENRY",
+      "text": "king that thou wouldst think I had sold my farm to buy"
+    },
+    {
+      "number": 118,
+      "speaker": "KING HENRY",
+      "text": "my crown. I know no ways to mince it in love, but"
+    },
+    {
+      "number": 119,
+      "speaker": "KING HENRY",
+      "text": "directly to say “I love you:” then if you urge me farther"
+    },
+    {
+      "number": 120,
+      "speaker": "KING HENRY",
+      "text": "than to say “do you in faith?” I wear out my suit."
+    },
+    {
+      "number": 121,
+      "speaker": "KING HENRY",
+      "text": "Give me your answer; i’ faith, do: and so clap hands and"
+    },
+    {
+      "number": 122,
+      "speaker": "KING HENRY",
+      "text": "a bargain: how say you, lady?"
+    },
+    {
+      "number": 122,
+      "speaker": "KATHERINE",
+      "text": "Sauf votre honneur, me understand vell."
+    },
+    {
+      "number": 123,
+      "speaker": "KING HENRY",
+      "text": "Marry, if you would put me to verses or to dance for"
+    },
+    {
+      "number": 124,
+      "speaker": "KING HENRY",
+      "text": "your sake, Kate, why you undid me: for the one, I have"
+    },
+    {
+      "number": 125,
+      "speaker": "KING HENRY",
+      "text": "neither words nor measure, and for the other, I have no strength"
+    },
+    {
+      "number": 126,
+      "speaker": "KING HENRY",
+      "text": "in measure, yet a reasonable measure in strength. If I could win"
+    },
+    {
+      "number": 127,
+      "speaker": "KING HENRY",
+      "text": "a lady at leap-frog, or by vaulting into my saddle with my"
+    },
+    {
+      "number": 128,
+      "speaker": "KING HENRY",
+      "text": "armour on my back, under the correction of bragging be it spoken,"
+    },
+    {
+      "number": 129,
+      "speaker": "KING HENRY",
+      "text": "I should quickly leap into a wife. Or if I might buffet"
+    },
+    {
+      "number": 130,
+      "speaker": "KING HENRY",
+      "text": "for my love, or bound my horse for her favours, I could"
+    },
+    {
+      "number": 131,
+      "speaker": "KING HENRY",
+      "text": "lay on like a butcher and sit like a jack-an-apes, never off."
+    },
+    {
+      "number": 132,
+      "speaker": "KING HENRY",
+      "text": "But, before God, Kate, I cannot look greenly nor gasp out my"
+    },
+    {
+      "number": 133,
+      "speaker": "KING HENRY",
+      "text": "eloquence, nor I have no cunning in protestation; only downright oaths, which"
+    },
+    {
+      "number": 134,
+      "speaker": "KING HENRY",
+      "text": "I never use till urged, nor never break for urging. If thou"
+    },
+    {
+      "number": 135,
+      "speaker": "KING HENRY",
+      "text": "canst love a fellow of this temper, Kate, whose face is not"
+    },
+    {
+      "number": 136,
+      "speaker": "KING HENRY",
+      "text": "worth sun-burning, that never looks in his glass for love of anything"
+    },
+    {
+      "number": 137,
+      "speaker": "KING HENRY",
+      "text": "he sees there, let thine eye be thy cook. I speak to"
+    },
+    {
+      "number": 138,
+      "speaker": "KING HENRY",
+      "text": "thee plain soldier: if thou canst love me for this, take me;"
+    },
+    {
+      "number": 139,
+      "speaker": "KING HENRY",
+      "text": "if not, to say to thee that I shall die, is true;"
+    },
+    {
+      "number": 140,
+      "speaker": "KING HENRY",
+      "text": "but for thy love, by the Lord, no; yet I love thee"
+    },
+    {
+      "number": 141,
+      "speaker": "KING HENRY",
+      "text": "too. And while thou livest, dear Kate, take a fellow of plain"
+    },
+    {
+      "number": 142,
+      "speaker": "KING HENRY",
+      "text": "and uncoined constancy; for he perforce must do thee right, because he"
+    },
+    {
+      "number": 143,
+      "speaker": "KING HENRY",
+      "text": "hath not the gift to woo in other places: for these fellows"
+    },
+    {
+      "number": 144,
+      "speaker": "KING HENRY",
+      "text": "of infinite tongue, that can rhyme themselves into ladies’ favours, they do"
+    },
+    {
+      "number": 145,
+      "speaker": "KING HENRY",
+      "text": "always reason themselves out again. What! a speaker is but a prater;"
+    },
+    {
+      "number": 146,
+      "speaker": "KING HENRY",
+      "text": "a rhyme is but a ballad. A good leg will fall; a"
+    },
+    {
+      "number": 147,
+      "speaker": "KING HENRY",
+      "text": "straight back will stoop; a black beard will turn white; a curled"
+    },
+    {
+      "number": 148,
+      "speaker": "KING HENRY",
+      "text": "pate will grow bald; a fair face will wither; a full eye"
+    },
+    {
+      "number": 149,
+      "speaker": "KING HENRY",
+      "text": "will wax hollow: but a good heart, Kate, is the sun and"
+    },
+    {
+      "number": 150,
+      "speaker": "KING HENRY",
+      "text": "the moon; or rather the sun and not the moon; for it"
+    },
+    {
+      "number": 151,
+      "speaker": "KING HENRY",
+      "text": "shines bright and never changes, but keeps his course truly. If thou"
+    },
+    {
+      "number": 152,
+      "speaker": "KING HENRY",
+      "text": "would have such a one, take me; and take me, take a"
+    },
+    {
+      "number": 153,
+      "speaker": "KING HENRY",
+      "text": "soldier; take a soldier, take a king. And what sayest thou then"
+    },
+    {
+      "number": 154,
+      "speaker": "KING HENRY",
+      "text": "to my love? speak, my fair, and fairly, I pray thee."
+    },
+    {
+      "number": 155,
+      "speaker": "KATHERINE",
+      "text": "Is it possible dat I sould love de enemy of France?"
+    },
+    {
+      "number": 156,
+      "speaker": "KING HENRY",
+      "text": "No; it is not possible you should love the enemy of France,"
+    },
+    {
+      "number": 157,
+      "speaker": "KING HENRY",
+      "text": "Kate: but, in loving me, you should love the friend of France;"
+    },
+    {
+      "number": 158,
+      "speaker": "KING HENRY",
+      "text": "for I love France so well that I will not part with"
+    },
+    {
+      "number": 159,
+      "speaker": "KING HENRY",
+      "text": "a village of it; I will have it all mine: and, Kate,"
+    },
+    {
+      "number": 160,
+      "speaker": "KING HENRY",
+      "text": "when France is mine and I am yours, then yours is France"
+    },
+    {
+      "number": 161,
+      "speaker": "KING HENRY",
+      "text": "and you are mine."
+    },
+    {
+      "number": 161,
+      "speaker": "KATHERINE",
+      "text": "I cannot tell vat is dat."
+    },
+    {
+      "number": 162,
+      "speaker": "KING HENRY",
+      "text": "No, Kate? I will tell thee in French; which I am sure"
+    },
+    {
+      "number": 163,
+      "speaker": "KING HENRY",
+      "text": "will hang upon my tongue like a new-married wife about her husband’s"
+    },
+    {
+      "number": 164,
+      "speaker": "KING HENRY",
+      "text": "neck, hardly to be shook off. Je quand sur le possession de"
+    },
+    {
+      "number": 165,
+      "speaker": "KING HENRY",
+      "text": "France, et quand vous avez le possession de moi—let me see, what"
+    },
+    {
+      "number": 166,
+      "speaker": "KING HENRY",
+      "text": "then? Saint Denis be my speed!—donc votre est France et vous êtes"
+    },
+    {
+      "number": 167,
+      "speaker": "KING HENRY",
+      "text": "mienne. It is as easy for me, Kate, to conquer the kingdom"
+    },
+    {
+      "number": 168,
+      "speaker": "KING HENRY",
+      "text": "as to speak so much more French: I shall never move thee"
+    },
+    {
+      "number": 169,
+      "speaker": "KING HENRY",
+      "text": "in French, unless it be to laugh at me."
+    },
+    {
+      "number": 170,
+      "speaker": "KATHERINE",
+      "text": "Sauf votre honneur, le françois que vous parlez, il est meilleur que"
+    },
+    {
+      "number": 171,
+      "speaker": "KATHERINE",
+      "text": "l’Anglois lequel je parle."
+    },
+    {
+      "number": 172,
+      "speaker": "KING HENRY",
+      "text": "No, faith, is’t not, Kate: but thy speaking of my tongue, and"
+    },
+    {
+      "number": 173,
+      "speaker": "KING HENRY",
+      "text": "I thine, most truly-falsely, must needs be granted to be much at"
+    },
+    {
+      "number": 174,
+      "speaker": "KING HENRY",
+      "text": "one. But, Kate, dost thou understand thus much English, canst thou love"
+    },
+    {
+      "number": 175,
+      "speaker": "KING HENRY",
+      "text": "me?"
+    },
+    {
+      "number": 175,
+      "speaker": "KATHERINE",
+      "text": "I cannot tell."
+    },
+    {
+      "number": 176,
+      "speaker": "KING HENRY",
+      "text": "Can any of your neighbours tell, Kate? I’ll ask them. Come, I"
+    },
+    {
+      "number": 177,
+      "speaker": "KING HENRY",
+      "text": "know thou lovest me: and at night, when you come into your"
+    },
+    {
+      "number": 178,
+      "speaker": "KING HENRY",
+      "text": "closet, you’ll question this gentlewoman about me; and I know, Kate, you"
+    },
+    {
+      "number": 179,
+      "speaker": "KING HENRY",
+      "text": "will to her dispraise those parts in me that you love with"
+    },
+    {
+      "number": 180,
+      "speaker": "KING HENRY",
+      "text": "your heart: but, good Kate, mock me mercifully; the rather, gentle princess,"
+    },
+    {
+      "number": 181,
+      "speaker": "KING HENRY",
+      "text": "because I love thee cruelly. If ever thou beest mine, Kate, as"
+    },
+    {
+      "number": 182,
+      "speaker": "KING HENRY",
+      "text": "I have a saving faith within me tells me thou shalt, I"
+    },
+    {
+      "number": 183,
+      "speaker": "KING HENRY",
+      "text": "get thee with scambling, and thou must therefore needs prove a good"
+    },
+    {
+      "number": 184,
+      "speaker": "KING HENRY",
+      "text": "soldier-breeder: shall not thou and I, between Saint Denis and Saint George,"
+    },
+    {
+      "number": 185,
+      "speaker": "KING HENRY",
+      "text": "compound a boy, half French, half English, that shall go to Constantinople"
+    },
+    {
+      "number": 186,
+      "speaker": "KING HENRY",
+      "text": "and take the Turk by the beard? shall we not? what sayest"
+    },
+    {
+      "number": 187,
+      "speaker": "KING HENRY",
+      "text": "thou, my fair flower-de-luce?"
+    },
+    {
+      "number": 187,
+      "speaker": "KATHERINE",
+      "text": "I do not know dat."
+    },
+    {
+      "number": 188,
+      "speaker": "KING HENRY",
+      "text": "No; ’tis hereafter to know, but now to promise: do but now"
+    },
+    {
+      "number": 189,
+      "speaker": "KING HENRY",
+      "text": "promise, Kate, you will endeavour for your French part of such a"
+    },
+    {
+      "number": 190,
+      "speaker": "KING HENRY",
+      "text": "boy; and for my English moiety take the word of a king"
+    },
+    {
+      "number": 191,
+      "speaker": "KING HENRY",
+      "text": "and a bachelor. How answer you, la plus belle Katherine du monde,"
+    },
+    {
+      "number": 192,
+      "speaker": "KING HENRY",
+      "text": "mon très cher et divin déesse?"
+    },
+    {
+      "number": 193,
+      "speaker": "KATHERINE",
+      "text": "Your majestee ave fausse French enough to deceive de most sage demoiselle"
+    },
+    {
+      "number": 194,
+      "speaker": "KATHERINE",
+      "text": "dat is en France."
+    },
+    {
+      "number": 195,
+      "speaker": "KING HENRY",
+      "text": "Now, fie upon my false French! By mine honour, in true English,"
+    },
+    {
+      "number": 196,
+      "speaker": "KING HENRY",
+      "text": "I love thee, Kate: by which honour I dare not swear thou"
+    },
+    {
+      "number": 197,
+      "speaker": "KING HENRY",
+      "text": "lovest me; yet my blood begins to flatter me that thou dost,"
+    },
+    {
+      "number": 198,
+      "speaker": "KING HENRY",
+      "text": "notwithstanding the poor and untempering effect of my visage. Now, beshrew my"
+    },
+    {
+      "number": 199,
+      "speaker": "KING HENRY",
+      "text": "father’s ambition! he was thinking of civil wars when he got me:"
+    },
+    {
+      "number": 200,
+      "speaker": "KING HENRY",
+      "text": "therefore was I created with a stubborn outside, with an aspect of"
+    },
+    {
+      "number": 201,
+      "speaker": "KING HENRY",
+      "text": "iron, that, when I come to woo ladies, I fright them. But,"
+    },
+    {
+      "number": 202,
+      "speaker": "KING HENRY",
+      "text": "in faith, Kate, the elder I wax, the better I shall appear:"
+    },
+    {
+      "number": 203,
+      "speaker": "KING HENRY",
+      "text": "my comfort is, that old age, that ill layer up of beauty,"
+    },
+    {
+      "number": 204,
+      "speaker": "KING HENRY",
+      "text": "can do no more spoil upon my face: thou hast me, if"
+    },
+    {
+      "number": 205,
+      "speaker": "KING HENRY",
+      "text": "thou hast me, at the worst; and thou shalt wear me, if"
+    },
+    {
+      "number": 206,
+      "speaker": "KING HENRY",
+      "text": "thou wear me, better and better: and therefore tell me, most fair"
+    },
+    {
+      "number": 207,
+      "speaker": "KING HENRY",
+      "text": "Katharine, will you have me? Put off your maiden blushes; avouch the"
+    },
+    {
+      "number": 208,
+      "speaker": "KING HENRY",
+      "text": "thoughts of your heart with the looks of an empress; take me"
+    },
+    {
+      "number": 209,
+      "speaker": "KING HENRY",
+      "text": "by the hand, and say “Harry of England, I am thine:” which"
+    },
+    {
+      "number": 210,
+      "speaker": "KING HENRY",
+      "text": "word thou shalt no sooner bless mine ear withal, but I will"
+    },
+    {
+      "number": 211,
+      "speaker": "KING HENRY",
+      "text": "tell thee aloud “England is thine, Ireland is thine, France is thine,"
+    },
+    {
+      "number": 212,
+      "speaker": "KING HENRY",
+      "text": "and Henry Plantagenet is thine;” who, though I speak it before his"
+    },
+    {
+      "number": 213,
+      "speaker": "KING HENRY",
+      "text": "face, if he be not fellow with the best king, thou shalt"
+    },
+    {
+      "number": 214,
+      "speaker": "KING HENRY",
+      "text": "find the best king of good fellows. Come, your answer in broken"
+    },
+    {
+      "number": 215,
+      "speaker": "KING HENRY",
+      "text": "music; for thy voice is music and thy English broken; therefore, queen"
+    },
+    {
+      "number": 216,
+      "speaker": "KING HENRY",
+      "text": "of all, Katharine, break thy mind to me in broken English; wilt"
+    },
+    {
+      "number": 217,
+      "speaker": "KING HENRY",
+      "text": "thou have me?"
+    },
+    {
+      "number": 218,
+      "speaker": "KATHERINE",
+      "text": "Dat is as it shall please le roi mon père."
+    },
+    {
+      "number": 219,
+      "speaker": "KING HENRY",
+      "text": "Nay, it will please him well, Kate; it shall please him, Kate."
+    },
+    {
+      "number": 220,
+      "speaker": "KATHERINE",
+      "text": "Den it sall also content me."
+    },
+    {
+      "number": 221,
+      "speaker": "KING HENRY",
+      "text": "Upon that I kiss your hand, and call you my queen."
+    },
+    {
+      "number": 222,
+      "speaker": "KATHERINE",
+      "text": "Laissez, mon seigneur, laissez, laissez: ma foi, je ne veux point que"
+    },
+    {
+      "number": 223,
+      "speaker": "KATHERINE",
+      "text": "vous abaissiez votre grandeur en baisant la main d’une votre seigneurie indigne"
+    },
+    {
+      "number": 224,
+      "speaker": "KATHERINE",
+      "text": "serviteur: excusez-moi, je vous supplie, mon très-puissant seigneur."
+    },
+    {
+      "number": 225,
+      "speaker": "KING HENRY",
+      "text": "Then I will kiss your lips, Kate."
+    },
+    {
+      "number": 226,
+      "speaker": "KATHERINE",
+      "text": "Les dames et demoiselles pour être baisées devant leurs noces, il n’est"
+    },
+    {
+      "number": 227,
+      "speaker": "KATHERINE",
+      "text": "pas la coutume de France."
+    },
+    {
+      "number": 227,
+      "speaker": "KING HENRY",
+      "text": "Madame my interpreter, what says she?"
+    },
+    {
+      "number": 228,
+      "speaker": "ALICE",
+      "text": "Dat it is not be de fashion pour les ladies of France—I"
+    },
+    {
+      "number": 229,
+      "speaker": "ALICE",
+      "text": "cannot tell vat is baiser en Anglish."
+    },
+    {
+      "number": 230,
+      "speaker": "KING HENRY",
+      "text": "To kiss."
+    },
+    {
+      "number": 230,
+      "speaker": "ALICE",
+      "text": "Your majestee entend bettre que moi."
+    },
+    {
+      "number": 231,
+      "speaker": "KING HENRY",
+      "text": "It is not a fashion for the maids in France to kiss"
+    },
+    {
+      "number": 232,
+      "speaker": "KING HENRY",
+      "text": "before they are married, would she say?"
+    },
+    {
+      "number": 233,
+      "speaker": "ALICE",
+      "text": "Oui, vraiment."
+    },
+    {
+      "number": 234,
+      "speaker": "KING HENRY",
+      "text": "O Kate, nice customs curtsy to great kings. Dear Kate, you and"
+    },
+    {
+      "number": 235,
+      "speaker": "KING HENRY",
+      "text": "I cannot be confined within the weak list of a country’s fashion:"
+    },
+    {
+      "number": 236,
+      "speaker": "KING HENRY",
+      "text": "we are the makers of manners, Kate; and the liberty that follows"
+    },
+    {
+      "number": 237,
+      "speaker": "KING HENRY",
+      "text": "our places stops the mouth of all find-faults; as I will do"
+    },
+    {
+      "number": 238,
+      "speaker": "KING HENRY",
+      "text": "yours, for upholding the nice fashion of your country in denying me"
+    },
+    {
+      "number": 239,
+      "speaker": "KING HENRY",
+      "text": "a kiss: therefore, patiently and yielding. Kissing her. You have witchcraft in"
+    },
+    {
+      "number": 240,
+      "speaker": "KING HENRY",
+      "text": "your lips, Kate: there is more eloquence in a sugar touch of"
+    },
+    {
+      "number": 241,
+      "speaker": "KING HENRY",
+      "text": "them than in the tongues of the French council; and they should"
+    },
+    {
+      "number": 242,
+      "speaker": "KING HENRY",
+      "text": "sooner persuade Harry of England than a general petition of monarchs. Here"
+    },
+    {
+      "number": 243,
+      "speaker": "KING HENRY",
+      "text": "comes your father."
+    },
+    {
+      "number": 244,
+      "speaker": "BURGUNDY",
+      "text": "God save your majesty! my royal cousin, teach you our princess English?"
+    },
+    {
+      "number": 245,
+      "speaker": "KING HENRY",
+      "text": "I would have her learn, my fair cousin, how perfectly I love"
+    },
+    {
+      "number": 246,
+      "speaker": "KING HENRY",
+      "text": "her; and that is good English."
+    },
+    {
+      "number": 246,
+      "speaker": "BURGUNDY",
+      "text": "Is she not apt?"
+    },
+    {
+      "number": 247,
+      "speaker": "KING HENRY",
+      "text": "Our tongue is rough, coz, and my condition is not smooth; so"
+    },
+    {
+      "number": 248,
+      "speaker": "KING HENRY",
+      "text": "that, having neither the voice nor the heart of flattery about me,"
+    },
+    {
+      "number": 249,
+      "speaker": "KING HENRY",
+      "text": "I cannot so conjure up the spirit of love in her, that"
+    },
+    {
+      "number": 250,
+      "speaker": "KING HENRY",
+      "text": "he will appear in his true likeness."
+    },
+    {
+      "number": 251,
+      "speaker": "BURGUNDY",
+      "text": "Pardon the frankness of my mirth, if I answer you for that."
+    },
+    {
+      "number": 252,
+      "speaker": "BURGUNDY",
+      "text": "If you would conjure in her, you must make a circle; if"
+    },
+    {
+      "number": 253,
+      "speaker": "BURGUNDY",
+      "text": "conjure up love in her in his true likeness, he must appear"
+    },
+    {
+      "number": 254,
+      "speaker": "BURGUNDY",
+      "text": "naked and blind. Can you blame her then, being a maid yet"
+    },
+    {
+      "number": 255,
+      "speaker": "BURGUNDY",
+      "text": "ros’d over with the virgin crimson of modesty, if she deny the"
+    },
+    {
+      "number": 256,
+      "speaker": "BURGUNDY",
+      "text": "appearance of a naked blind boy in her naked seeing self? It"
+    },
+    {
+      "number": 257,
+      "speaker": "BURGUNDY",
+      "text": "were, my lord, a hard condition for a maid to consign to."
+    },
+    {
+      "number": 258,
+      "speaker": "KING HENRY",
+      "text": "Yet they do wink and yield, as love is blind and enforces."
+    },
+    {
+      "number": 259,
+      "speaker": "BURGUNDY",
+      "text": "They are then excused, my lord, when they see not what they do."
+    },
+    {
+      "number": 260,
+      "speaker": "KING HENRY",
+      "text": "Then, good my lord, teach your cousin to consent winking."
+    },
+    {
+      "number": 261,
+      "speaker": "BURGUNDY",
+      "text": "I will wink on her to consent, my lord, if you will"
+    },
+    {
+      "number": 262,
+      "speaker": "BURGUNDY",
+      "text": "teach her to know my meaning: for maids, well summered and warm"
+    },
+    {
+      "number": 263,
+      "speaker": "BURGUNDY",
+      "text": "kept, are like flies at Bartholomew-tide, blind, though they have their eyes;"
+    },
+    {
+      "number": 264,
+      "speaker": "BURGUNDY",
+      "text": "and then they will endure handling, which before would not abide looking"
+    },
+    {
+      "number": 265,
+      "speaker": "BURGUNDY",
+      "text": "on."
+    },
+    {
+      "number": 266,
+      "speaker": "KING HENRY",
+      "text": "This moral ties me over to time and a hot summer; and"
+    },
+    {
+      "number": 267,
+      "speaker": "KING HENRY",
+      "text": "so I shall catch the fly, your cousin, in the latter end"
+    },
+    {
+      "number": 268,
+      "speaker": "KING HENRY",
+      "text": "and she must be blind too."
+    },
+    {
+      "number": 269,
+      "speaker": "BURGUNDY",
+      "text": "As love is, my lord, before it loves."
+    },
+    {
+      "number": 270,
+      "speaker": "KING HENRY",
+      "text": "It is so: and you may, some of you, thank love for"
+    },
+    {
+      "number": 271,
+      "speaker": "KING HENRY",
+      "text": "my blindness, who cannot see many a fair French city for one"
+    },
+    {
+      "number": 272,
+      "speaker": "KING HENRY",
+      "text": "fair French maid that stands in my way."
+    },
+    {
+      "number": 273,
+      "speaker": "FRENCH KING",
+      "text": "Yes, my lord, you see them perspectively, the cities turned into a"
+    },
+    {
+      "number": 274,
+      "speaker": "FRENCH KING",
+      "text": "maid; for they are all girdled with maiden walls that no war"
+    },
+    {
+      "number": 275,
+      "speaker": "FRENCH KING",
+      "text": "hath entered."
+    },
+    {
+      "number": 275,
+      "speaker": "KING HENRY",
+      "text": "Shall Kate be my wife?"
+    },
+    {
+      "number": 276,
+      "speaker": "FRENCH KING",
+      "text": "So please you."
+    },
+    {
+      "number": 277,
+      "speaker": "KING HENRY",
+      "text": "I am content; so the maiden cities you talk of may wait"
+    },
+    {
+      "number": 278,
+      "speaker": "KING HENRY",
+      "text": "on her: so the maid that stood in the way for my"
+    },
+    {
+      "number": 279,
+      "speaker": "KING HENRY",
+      "text": "wish shall show me the way to my will."
+    },
+    {
+      "number": 280,
+      "speaker": "FRENCH KING",
+      "text": "We have consented to all terms of reason."
+    },
+    {
+      "number": 281,
+      "speaker": "KING HENRY",
+      "text": "Is’t so, my lords of England?"
+    },
+    {
+      "number": 281,
+      "speaker": "WESTMORELAND",
+      "text": "The king hath granted every article:"
+    },
+    {
+      "number": 282,
+      "speaker": "WESTMORELAND",
+      "text": "His daughter first, and then in sequel all,"
+    },
+    {
+      "number": 283,
+      "speaker": "WESTMORELAND",
+      "text": "According to their firm proposed natures."
+    },
+    {
+      "number": 284,
+      "speaker": "EXETER",
+      "text": "Only he hath not yet subscribed this: Where your majesty demands, that"
+    },
+    {
+      "number": 285,
+      "speaker": "EXETER",
+      "text": "the King of France, having any occasion to write for matter of"
+    },
+    {
+      "number": 286,
+      "speaker": "EXETER",
+      "text": "grant, shall name your highness in this form and with this addition,"
+    },
+    {
+      "number": 287,
+      "speaker": "EXETER",
+      "text": "in French, Notre très-cher fils Henri, Roi d’Angleterre, Héritier de France; and"
+    },
+    {
+      "number": 288,
+      "speaker": "EXETER",
+      "text": "thus in Latin, Praeclarissimus filius noster Henricus, Rex Angliae, et Haeres Franciae."
+    },
+    {
+      "number": 289,
+      "speaker": "FRENCH KING",
+      "text": "Nor this I have not, brother, so denied"
+    },
+    {
+      "number": 290,
+      "speaker": "FRENCH KING",
+      "text": "But our request shall make me let it pass."
+    },
+    {
+      "number": 291,
+      "speaker": "KING HENRY",
+      "text": "I pray you then, in love and dear alliance,"
+    },
+    {
+      "number": 292,
+      "speaker": "KING HENRY",
+      "text": "Let that one article rank with the rest;"
+    },
+    {
+      "number": 293,
+      "speaker": "KING HENRY",
+      "text": "And thereupon give me your daughter."
+    },
+    {
+      "number": 294,
+      "speaker": "FRENCH KING",
+      "text": "Take her, fair son, and from her blood raise up"
+    },
+    {
+      "number": 295,
+      "speaker": "FRENCH KING",
+      "text": "Issue to me; that the contending kingdoms"
+    },
+    {
+      "number": 296,
+      "speaker": "FRENCH KING",
+      "text": "Of France and England, whose very shores look pale"
+    },
+    {
+      "number": 297,
+      "speaker": "FRENCH KING",
+      "text": "With envy of each other’s happiness,"
+    },
+    {
+      "number": 298,
+      "speaker": "FRENCH KING",
+      "text": "May cease their hatred, and this dear conjunction"
+    },
+    {
+      "number": 299,
+      "speaker": "FRENCH KING",
+      "text": "Plant neighbourhood and Christian-like accord"
+    },
+    {
+      "number": 300,
+      "speaker": "FRENCH KING",
+      "text": "In their sweet bosoms, that never war advance"
+    },
+    {
+      "number": 301,
+      "speaker": "FRENCH KING",
+      "text": "His bleeding sword ’twixt England and fair France."
+    },
+    {
+      "number": 302,
+      "speaker": "ALL",
+      "text": "Amen!"
+    },
+    {
+      "number": 303,
+      "speaker": "KING HENRY",
+      "text": "Now, welcome, Kate: and bear me witness all,"
+    },
+    {
+      "number": 304,
+      "speaker": "KING HENRY",
+      "text": "That here I kiss her as my sovereign queen."
+    },
+    {
+      "number": 305,
+      "speaker": "QUEEN ISABEL",
+      "text": "God, the best maker of all marriages,"
+    },
+    {
+      "number": 306,
+      "speaker": "QUEEN ISABEL",
+      "text": "Combine your hearts in one, your realms in one!"
+    },
+    {
+      "number": 307,
+      "speaker": "QUEEN ISABEL",
+      "text": "As man and wife, being two, are one in love,"
+    },
+    {
+      "number": 308,
+      "speaker": "QUEEN ISABEL",
+      "text": "So be there ’twixt your kingdoms such a spousal,"
+    },
+    {
+      "number": 309,
+      "speaker": "QUEEN ISABEL",
+      "text": "That never may ill office, or fell jealousy,"
+    },
+    {
+      "number": 310,
+      "speaker": "QUEEN ISABEL",
+      "text": "Which troubles oft the bed of blessed marriage,"
+    },
+    {
+      "number": 311,
+      "speaker": "QUEEN ISABEL",
+      "text": "Thrust in between the paction of these kingdoms,"
+    },
+    {
+      "number": 312,
+      "speaker": "QUEEN ISABEL",
+      "text": "To make divorce of their incorporate league;"
+    },
+    {
+      "number": 313,
+      "speaker": "QUEEN ISABEL",
+      "text": "That English may as French, French Englishmen,"
+    },
+    {
+      "number": 314,
+      "speaker": "QUEEN ISABEL",
+      "text": "Receive each other. God speak this Amen!"
+    },
+    {
+      "number": 315,
+      "speaker": "ALL",
+      "text": "Amen!"
+    },
+    {
+      "number": 316,
+      "speaker": "KING HENRY",
+      "text": "Prepare we for our marriage: on which day,"
+    },
+    {
+      "number": 317,
+      "speaker": "KING HENRY",
+      "text": "My Lord of Burgundy, we’ll take your oath,"
+    },
+    {
+      "number": 318,
+      "speaker": "KING HENRY",
+      "text": "And all the peers’, for surety of our leagues."
+    },
+    {
+      "number": 319,
+      "speaker": "KING HENRY",
+      "text": "Then shall I swear to Kate, and you to me;"
+    },
+    {
+      "number": 320,
+      "speaker": "KING HENRY",
+      "text": "And may our oaths well kept and prosperous be! Sennet. Exeunt."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter, at one door, King Henry, Exeter, Bedford, Gloucester, Warwick, Westmoreland, and other Lords; at another, the French King, Queen Isabel, the Princess Katharine, Alice, and other Ladies; the Duke of Burgundy, and his train."
+    },
+    {
+      "after_line": 96,
+      "text": "Exeunt all except Henry, Katharine, and Alice."
+    },
+    {
+      "after_line": 243,
+      "text": "Reenter the French King and his Queen, Burgundy, and other Lords."
+    },
+    {
+      "after_line": 304,
+      "text": "Flourish."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act5_scene2_gloss1",
+      "line": 1,
+      "phrase": "wherefore we are met",
+      "definition": "for which we are gathered — Henry opens with formal diplomatic language"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss2",
+      "line": 2,
+      "phrase": "brother France",
+      "definition": "fellow king of France — 'brother' is the standard royal address between kings"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss3",
+      "line": 2,
+      "phrase": "sister",
+      "definition": "Queen Isabel of Bavaria, Charles VI's wife"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss4",
+      "line": 4,
+      "phrase": "cousin Katharine",
+      "definition": "Princess Catherine of Valois — the betrothed"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss5",
+      "line": 7,
+      "phrase": "Duke of Burgundy",
+      "definition": "Philip III 'the Good' of Burgundy — historically not at Troyes; Shakespeare conflates him with his father John the Fearless"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss6",
+      "line": 12,
+      "phrase": "issue",
+      "definition": "outcome; offspring — Queen Isabel's diplomatic pun"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss7",
+      "line": 17,
+      "phrase": "fatal balls of murdering basilisks",
+      "definition": "deadly cannonballs of killing serpents — a basilisk is both a mythical serpent whose look kills AND a large cannon"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss8",
+      "line": 18,
+      "phrase": "venom of such looks",
+      "definition": "the poison of such glances — continuing the basilisk image"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss9",
+      "line": 27,
+      "phrase": "bar",
+      "definition": "court-of-justice / meeting-place"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss10",
+      "line": 31,
+      "phrase": "congreeted",
+      "definition": "greeted each other (a Shakespearean coinage)"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss11",
+      "line": 33,
+      "phrase": "rub or what impediment",
+      "definition": "obstacle or hindrance — 'rub' from bowls, already used in 2.2"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss12",
+      "line": 34,
+      "phrase": "naked, poor and mangled Peace",
+      "definition": "Peace personified as a ravaged woman — Burgundy's celebrated pastoral lament"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss13",
+      "line": 35,
+      "phrase": "Dear nurse of arts",
+      "definition": "Peace nurses the arts, agriculture, and childbirth"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss14",
+      "line": 36,
+      "phrase": "best garden of the world",
+      "definition": "France as Eden — the phrase the Epilogue will echo with bitter irony"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss15",
+      "line": 40,
+      "phrase": "Corrupting in it own fertility",
+      "definition": "rotting in its own abundance — neglected farmland goes to weed"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss16",
+      "line": 42,
+      "phrase": "hedges even-pleach’d",
+      "definition": "hedges evenly braided (maintained by pleaching) — but now overgrown"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss17",
+      "line": 44,
+      "phrase": "fallow leas",
+      "definition": "fallow fields; unploughed meadows"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss18",
+      "line": 45,
+      "phrase": "darnel, hemlock and rank fumitory",
+      "definition": "weeds — rye-grass (darnel), poisonous hemlock, smoky-looking fumitory; Shakespeare's catalogue of agricultural neglect"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss19",
+      "line": 46,
+      "phrase": "coulter",
+      "definition": "the blade of a plough that cuts the furrow"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss20",
+      "line": 47,
+      "phrase": "deracinate",
+      "definition": "uproot; eradicate — a Latinate verb"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss21",
+      "line": 48,
+      "phrase": "even mead",
+      "definition": "level meadow"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss22",
+      "line": 49,
+      "phrase": "freckled cowslip, burnet and green clover",
+      "definition": "wildflowers and pasture-grass — what the meadow used to produce"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss23",
+      "line": 52,
+      "phrase": "docks, rough thistles, kecksies, burs",
+      "definition": "weeds replacing wildflowers; 'kecksies' = dry hollow stalks of cow-parsley"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss24",
+      "line": 59,
+      "phrase": "grow like savages",
+      "definition": "grow wild, uncivilized — the soldier becomes the barbarian"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss25",
+      "line": 60,
+      "phrase": "meditate on blood",
+      "definition": "think only of bloodshed"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss26",
+      "line": 61,
+      "phrase": "diffused attire",
+      "definition": "disordered, slovenly clothing"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss27",
+      "line": 65,
+      "phrase": "let",
+      "definition": "obstacle; hindrance (archaic)"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss28",
+      "line": 73,
+      "phrase": "enscheduled",
+      "definition": "listed in a schedule; written in document form"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss29",
+      "line": 77,
+      "phrase": "cursorary",
+      "definition": "cursory; hasty (archaic variant)"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss30",
+      "line": 82,
+      "phrase": "peremptory answer",
+      "definition": "definitive, final answer"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss31",
+      "line": 95,
+      "phrase": "capital demand",
+      "definition": "chief/principal demand — Katherine heads the list of terms"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss32",
+      "line": 96,
+      "phrase": "fore-rank",
+      "definition": "front rank; first place in a list"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss33",
+      "line": 98,
+      "phrase": "vouchsafe to teach a soldier terms",
+      "definition": "Henry's wooing opener — he frames himself as a plain soldier rather than a court poet"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss34",
+      "line": 101,
+      "phrase": "Your majesty shall mock me",
+      "definition": "Katherine's worry — she thinks the king is mocking her broken English"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss35",
+      "line": 105,
+      "phrase": "Pardonnez-moi",
+      "definition": "French: 'Forgive me' — Katherine's polite refusal phrase"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss36",
+      "line": 105,
+      "phrase": "vat is “like me”",
+      "definition": "Katherine mishears 'do you like me' as a pronoun — her comic misunderstanding drives the wooing"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss37",
+      "line": 107,
+      "phrase": "Que dit-il? Que je suis semblable à les anges?",
+      "definition": "French: 'What does he say? That I am similar to the angels?'"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss38",
+      "line": 108,
+      "phrase": "Oui, vraiment, sauf votre grâce, ainsi dit-il",
+      "definition": "French: 'Yes, truly, with all respect, that's what he says' — Alice's courtly confirmation"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss39",
+      "line": 110,
+      "phrase": "O bon Dieu! les langues des hommes sont pleines de tromperies",
+      "definition": "French: 'O good God! the tongues of men are full of deceits'"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss40",
+      "line": 112,
+      "phrase": "dat de tongues of de mans is be full of deceits",
+      "definition": "Alice's French-accented English — a back-translation joke"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss41",
+      "line": 116,
+      "phrase": "plain king",
+      "definition": "a straightforward king — Henry's rhetorical pose throughout the scene"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss42",
+      "line": 117,
+      "phrase": "sold my farm to buy my crown",
+      "definition": "bought a throne by selling a farm — Henry's mock-commoner identification"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss43",
+      "line": 118,
+      "phrase": "mince it in love",
+      "definition": "speak delicately about love"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss44",
+      "line": 123,
+      "phrase": "Marry",
+      "definition": "mild oath (from 'by the Virgin Mary') — 'why, indeed'"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss45",
+      "line": 127,
+      "phrase": "leap-frog",
+      "definition": "the children's game — Henry offers athletic courtship"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss46",
+      "line": 129,
+      "phrase": "buffet for my love",
+      "definition": "box (fight with fists) for love"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss47",
+      "line": 130,
+      "phrase": "bound my horse",
+      "definition": "make my horse leap"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss48",
+      "line": 131,
+      "phrase": "lay on like a butcher",
+      "definition": "lay into it like a butcher at work"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss49",
+      "line": 131,
+      "phrase": "jack-an-apes",
+      "definition": "a monkey — 'Jack-an-apes' was a common fairground monkey-in-costume"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss50",
+      "line": 132,
+      "phrase": "look greenly",
+      "definition": "look love-sick; turn pale-green with longing"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss51",
+      "line": 132,
+      "phrase": "gasp out my eloquence",
+      "definition": "deliver rehearsed flourishes of speech — Henry disclaims courtly poetry"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss52",
+      "line": 135,
+      "phrase": "fellow of this temper",
+      "definition": "man of this disposition"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss53",
+      "line": 137,
+      "phrase": "let thine eye be thy cook",
+      "definition": "let your eye doctor up my appearance — make me look tasty to you"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss54",
+      "line": 138,
+      "phrase": "plain soldier",
+      "definition": "Henry's self-ascribed register — the speech's governing pose, simultaneously sincere and rhetorical"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss55",
+      "line": 142,
+      "phrase": "uncoined constancy",
+      "definition": "unminted (unforged) fidelity — plain sincerity, not the currency of court"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss56",
+      "line": 143,
+      "phrase": "fellows of infinite tongue",
+      "definition": "men of unending talk — Henry dismisses courtly lovers"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss57",
+      "line": 145,
+      "phrase": "speaker is but a prater",
+      "definition": "a talker is just a chatter"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss58",
+      "line": 146,
+      "phrase": "rhyme is but a ballad",
+      "definition": "rhyming verse is just a popular song"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss59",
+      "line": 147,
+      "phrase": "curled pate will grow bald",
+      "definition": "curly hair will fall out — the catalogue of age's ruin"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss60",
+      "line": 148,
+      "phrase": "full eye will wax hollow",
+      "definition": "bright eye will grow sunken with age"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss61",
+      "line": 155,
+      "phrase": "enemy of France",
+      "definition": "Katherine's key question — can she love France's conqueror? The political and personal merge"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss62",
+      "line": 158,
+      "phrase": "not part with a village of it",
+      "definition": "Henry jokes he loves France so much he won't give up any of it — fuses conquest with romance"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss63",
+      "line": 163,
+      "phrase": "hang upon my tongue like a new-married wife",
+      "definition": "cling to my tongue like a bride to her husband"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss64",
+      "line": 164,
+      "phrase": "Je quand sur le possession de France",
+      "definition": "Henry's bungled French for 'when I am in possession of France' — the comedy of his 'plain soldier' pose"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss65",
+      "line": 166,
+      "phrase": "Saint Denis",
+      "definition": "St. Denis — patron saint of France; Henry's apotropaic invocation"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss66",
+      "line": 166,
+      "phrase": "donc votre est France et vous êtes mienne",
+      "definition": "Henry's bad French for 'so yours is France and you are mine' — grammatically tangled, as he admits"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss67",
+      "line": 170,
+      "phrase": "le françois que vous parlez, il est meilleur que l’Anglois lequel je parle",
+      "definition": "French: 'the French you speak is better than the English I speak' — Katherine's gallant courtesy"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss68",
+      "line": 173,
+      "phrase": "truly-falsely",
+      "definition": "true-ly false-ly — Henry's coinage for bilingual lovers' half-accurate speech"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss69",
+      "line": 178,
+      "phrase": "closet",
+      "definition": "private chamber"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss70",
+      "line": 183,
+      "phrase": "get thee with scambling",
+      "definition": "conceive a child by rough wooing — 'scambling' = disorderly, struggling"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss71",
+      "line": 184,
+      "phrase": "Saint Denis and Saint George",
+      "definition": "French and English patron saints — the mixed-blood son's dual patronage"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss72",
+      "line": 185,
+      "phrase": "boy, half French, half English",
+      "definition": "the future Henry VI — born 1421; Henry predicts him to Katherine here"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss73",
+      "line": 186,
+      "phrase": "take the Turk by the beard",
+      "definition": "humble the Turks (a dig at the Ottoman Empire) — Henry fantasizes a crusade against Constantinople"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss74",
+      "line": 187,
+      "phrase": "flower-de-luce",
+      "definition": "fleur-de-lis — the heraldic lily of French royalty"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss75",
+      "line": 190,
+      "phrase": "English moiety",
+      "definition": "English half"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss76",
+      "line": 191,
+      "phrase": "la plus belle Katherine du monde",
+      "definition": "French: 'the most beautiful Katherine in the world'"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss77",
+      "line": 192,
+      "phrase": "mon très cher et divin déesse",
+      "definition": "French: 'my most dear and divine goddess' — 'déesse' is feminine, though Henry's grammar is imperfect"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss78",
+      "line": 193,
+      "phrase": "Your majestee ave fausse French enough to deceive de most sage demoiselle",
+      "definition": "Katherine's broken English: 'your majesty has false French enough to deceive the wisest young lady'"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss79",
+      "line": 198,
+      "phrase": "beshrew my father’s ambition",
+      "definition": "curse my father's political ambition — Henry blames Henry IV's scheming for his unromantic appearance"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss80",
+      "line": 200,
+      "phrase": "aspect of iron",
+      "definition": "iron-like expression"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss81",
+      "line": 203,
+      "phrase": "ill layer up of beauty",
+      "definition": "poor preserver of beauty — old age doesn't preserve well"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss82",
+      "line": 209,
+      "phrase": "Harry of England, I am thine",
+      "definition": "the formula Henry wants Katherine to speak — formally yielding"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss83",
+      "line": 211,
+      "phrase": "England is thine, Ireland is thine, France is thine",
+      "definition": "Henry's dowry list — the three kingdoms he wishes to settle on her"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss84",
+      "line": 214,
+      "phrase": "broken music",
+      "definition": "music played on incomplete consorts — 'broken' = mixed instruments; Henry puns on Katherine's broken English"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss85",
+      "line": 218,
+      "phrase": "Dat is as it shall please le roi mon père",
+      "definition": "Katherine's broken English with French: 'that is as it shall please the king my father'"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss86",
+      "line": 220,
+      "phrase": "Den it sall also content me",
+      "definition": "Katherine's broken English: 'then it shall also content me' — her assent"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss87",
+      "line": 222,
+      "phrase": "Laissez, mon seigneur",
+      "definition": "French: 'Let be, my lord' — Katherine politely refuses the hand-kiss"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss88",
+      "line": 223,
+      "phrase": "vous abaissiez votre grandeur",
+      "definition": "French: 'you lower your greatness'"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss89",
+      "line": 226,
+      "phrase": "Les dames et demoiselles pour être baisées devant leurs noces",
+      "definition": "French: 'ladies and maidens to be kissed before their wedding' — Katherine cites French marriage custom"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss90",
+      "line": 228,
+      "phrase": "pour les ladies of France",
+      "definition": "Alice's French-English mix: 'for the ladies of France'"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss91",
+      "line": 229,
+      "phrase": "baiser en Anglish",
+      "definition": "Alice's mix: 'to kiss in English' — she doesn't know the English word"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss92",
+      "line": 230,
+      "phrase": "Your majestee entend bettre que moi",
+      "definition": "Alice's broken English: 'Your majesty understands better than me'"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss93",
+      "line": 234,
+      "phrase": "nice customs curtsy to great kings",
+      "definition": "fussy etiquette bows to royal prerogative — Henry's smooth, self-authorizing logic"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss94",
+      "line": 235,
+      "phrase": "weak list of a country’s fashion",
+      "definition": "the flimsy limit of a country's convention"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss95",
+      "line": 236,
+      "phrase": "makers of manners",
+      "definition": "Henry's regal claim — kings don't follow custom, they create it"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss96",
+      "line": 239,
+      "phrase": "You have witchcraft in your lips",
+      "definition": "Henry's flattery — after kissing her"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss97",
+      "line": 249,
+      "phrase": "conjure up the spirit of love",
+      "definition": "summon the love-spirit — Burgundy will run this ritual-magic joke"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss98",
+      "line": 254,
+      "phrase": "naked and blind",
+      "definition": "the iconography of Cupid — naked, blindfolded"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss99",
+      "line": 255,
+      "phrase": "ros’d over with the virgin crimson of modesty",
+      "definition": "blushed over with virginal pink modesty — Burgundy's courtly euphemism"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss100",
+      "line": 258,
+      "phrase": "they do wink and yield",
+      "definition": "close their eyes and give in — the courtly cliché of female consent"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss101",
+      "line": 262,
+      "phrase": "well summered and warm kept",
+      "definition": "kept warm through summer — ripening"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss102",
+      "line": 263,
+      "phrase": "flies at Bartholomew-tide",
+      "definition": "flies in late August — drowsy, easy to catch; Bartholomew's Day = August 24"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss103",
+      "line": 274,
+      "phrase": "girdled with maiden walls",
+      "definition": "encircled with virgin walls — French cities still unentered, compared to Katherine"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss104",
+      "line": 287,
+      "phrase": "Notre très-cher fils Henri, Roi d’Angleterre, Héritier de France",
+      "definition": "French: 'Our most dear son Henry, King of England, Heir of France' — the key clause of the Treaty of Troyes (1420), making Henry heir to the French throne"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss105",
+      "line": 288,
+      "phrase": "Praeclarissimus filius noster Henricus",
+      "definition": "Latin: 'Our most illustrious son Henry' — parallel Latin text of the same article"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss106",
+      "line": 295,
+      "phrase": "contending kingdoms",
+      "definition": "the rival kingdoms of France and England"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss107",
+      "line": 308,
+      "phrase": "spousal",
+      "definition": "marriage"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss108",
+      "line": 311,
+      "phrase": "paction",
+      "definition": "covenant; pact"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss109",
+      "line": 312,
+      "phrase": "incorporate league",
+      "definition": "unified alliance — one body politic"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss110",
+      "line": 317,
+      "phrase": "take your oath",
+      "definition": "the formal swearing of treaty-oaths — Henry's political closing"
+    },
+    {
+      "id": "henry_v_act5_scene2_gloss111",
+      "line": 320,
+      "phrase": "Sennet",
+      "definition": "a set of notes played on a trumpet, often signaling entry/exit of a royal party"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act5_scene2_ann1",
+      "line_start": 23,
+      "line_end": 67,
+      "citation_display": "Henry V 5.2.23–67",
+      "category": "close_reading",
+      "title": "Burgundy's lament for France — the garden-pastoral as political argument",
+      "body": "The Duke of Burgundy's forty-five-line plea for peace is the scene's opening rhetorical set-piece, and one of the play's most celebrated passages. It is also a political argument disguised as pastoral description. Burgundy catalogues, at length, what war has done to the French countryside: the 'naked, poor and mangled Peace' exiled; vines unpruned and dying; hedges grown wild; meadows overrun with weeds ('darnel, hemlock and rank fumitory'); and — extending the image — houses, children, and citizens 'grow like savages' for want of the 'sciences that should become our country.' The passage is beautiful and persuasive. It is also politically precise: Burgundy, historically a key mediator between the English and French crowns, is arguing that peace at any price is necessary for French civic life. This is the kind of speech Henry needs to hear in order to move forward with the treaty. The scene's structural logic is that Burgundy's lyrical diplomacy softens the French, and Henry can then extract his terms (marriage, heir-status to the crown, Katherine as capital demand) against a background of visibly ravaged France. The garden-pastoral rhetoric is not neutral; it is a lever.",
+      "sources": [
+        "Patricia Parker, Shakespeare from the Margins (1996)",
+        "Frank Kermode, Shakespeare's Language (2000)",
+        "Peter Saccio, Shakespeare's English Kings (2nd ed., 2000)"
+      ]
+    },
+    {
+      "id": "henry_v_act5_scene2_ann2",
+      "line_start": 97,
+      "line_end": 221,
+      "citation_display": "Henry V 5.2.97–221",
+      "category": "thematic",
+      "title": "The wooing scene — Henry's 'plain soldier' pose as political performance",
+      "body": "Henry's courtship of Katherine is the play's longest sustained scene and its most heavily choreographed prose passage. Henry casts himself repeatedly as a 'plain soldier' — unable to dance, unable to rhyme, unable to 'look greenly' or 'gasp out [his] eloquence' — and offers Katherine only 'downright oaths' and a 'good heart.' The rhetoric is, however, anything but plain. Henry delivers long, polished prose paragraphs; he demonstrates competent (if deliberately awkward) French; he cites Saint Denis and Saint George; he prophesies a 'boy, half French, half English' who will 'take the Turk by the beard.' The 'plain soldier' pose is itself a carefully composed rhetorical mode — one more register in a king who has been speaking in different registers to different audiences throughout the play. At the same time, the scene has genuine local charm. Katherine's 'Is it possible dat I sould love de enemy of France?' (line 155) cuts through the flirtation to the unresolved political heart of the marriage. Henry's answer is a conquering-king's joke ('I love France so well that I will not part with a village of it; I will have it all mine'). The mixing of the political and the erotic is the point: Katherine is explicitly 'our capital demand,' the head of the articles, and the wooing scene is a ceremony for terms already arranged. Readers should notice who does the talking (Henry almost entirely), how much of the scene is in Henry's voice, and how carefully the 'plain soldier' pose is kept up. The pose is convincing; it is also work.",
+      "sources": [
+        "Karen Newman, Fashioning Femininity and English Renaissance Drama (1991)",
+        "Juliet Dusinberre, Shakespeare and the Nature of Women (1975)",
+        "Lisa Jardine, Reading Shakespeare Historically (1996)"
+      ]
+    },
+    {
+      "id": "henry_v_act5_scene2_ann3",
+      "line_start": 233,
+      "line_end": 242,
+      "citation_display": "Henry V 5.2.233–242",
+      "category": "close_reading",
+      "title": "'Nice customs curtsy to great kings' — the wooing scene's operative phrase",
+      "body": "When Katherine politely cites the French custom that ladies are not kissed before their wedding, Henry's response is one of the most quietly revealing lines in the play: 'O Kate, nice customs curtsy to great kings. Dear Kate, you and I cannot be confined within the weak list of a country's fashion: we are the makers of manners, Kate; and the liberty that follows our places stops the mouth of all find-faults.' The phrase 'makers of manners' is operative. Henry is declaring that royal prerogative overrides national custom — his and Katherine's, jointly. The line works as wooing (it assimilates Katherine to his royal freedom), as conquest (it overrides French custom with English-king prerogative), and as political theory (kings are not subject to cultural norms, they make them). The kiss that follows is both a romantic gesture and a small constitutional act. Critics sometimes hear the scene as charming; Shakespeare also gives us this line. Both hearings are correct; the scene is doing both kinds of work at once.",
+      "sources": [
+        "Stephen Greenblatt, Will in the World (2004)",
+        "Graham Holderness, Shakespeare: The Histories (2000)"
+      ]
+    },
+    {
+      "id": "henry_v_act5_scene2_ann4",
+      "line_start": 285,
+      "line_end": 302,
+      "citation_display": "Henry V 5.2.285–302",
+      "category": "historical",
+      "title": "The Treaty of Troyes — what the wooing scene is serving",
+      "body": "The scene's formal conclusion records the effective terms of the Treaty of Troyes (1420). Exeter reads out the one article the French king has balked at: Henry is to be named in all future French royal documents as 'Notre très-cher fils Henri, Roi d'Angleterre, Héritier de France' — 'Our most dear son Henry, King of England, Heir of France.' The French king is to disinherit his own son (the Dauphin of the play, historically the future Charles VII) and acknowledge Henry as heir to the French throne. This was the Treaty's actual most important clause. The wooing scene is thus ornamental around this political fact: Katherine is given to Henry as the dynastic seal of an agreement that makes Henry the next king of France. Historically, the Treaty held for barely two years: Henry V died of dysentery in August 1422, and his infant son Henry VI's regency promptly collapsed, enabling Charles VII's eventual reconquest (the era of Joan of Arc) and the loss of all French territory by 1453. The play does not mention any of this within the scene — it is reserved for the Epilogue. But the reader who holds the Treaty's actual history alongside Henry's closing 'Prepare we for our marriage' will hear the scene's final lines differently from a reader who does not.",
+      "sources": [
+        "Anne Curry, The Hundred Years War (2nd ed., 2003)",
+        "Peter Saccio, Shakespeare's English Kings (2nd ed., 2000)",
+        "Christopher Allmand, Henry V (1992)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act5_scene2_q1",
+      "kind": "close_reading",
+      "prompt": "What is Burgundy doing rhetorically in his long lament for France (lines 23–67)?",
+      "options": [
+        "Genuinely grieving for French agriculture only",
+        "Delivering a political argument in pastoral disguise: the 'naked, poor and mangled Peace' and the overgrown vineyards are a plea that justifies French concessions on any terms. The beauty of the rhetoric is the lever",
+        "Confessing to treason",
+        "Proposing a Crusade"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 23,
+      "anchor_line_end": 67
+    },
+    {
+      "id": "henry_v_act5_scene2_q2",
+      "kind": "theme",
+      "prompt": "How should we read Henry's 'plain soldier' pose in the wooing scene?",
+      "options": [
+        "As literally plain, unrehearsed speech",
+        "As a carefully composed rhetorical register — Henry delivers long polished prose paragraphs while claiming plainness; the pose is one more audience-calibrated register in a king whose speech varies by audience throughout the play",
+        "As evidence he had no eloquence",
+        "As a sign of his youthful nerves"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 114,
+      "anchor_line_end": 142
+    },
+    {
+      "id": "henry_v_act5_scene2_q3",
+      "kind": "close_reading",
+      "prompt": "What is the force of Henry's 'nice customs curtsy to great kings … we are the makers of manners' (lines 234–236)?",
+      "options": [
+        "A tactful compliment to French tradition",
+        "An assertion of royal prerogative over cultural norm: kings aren't subject to custom, they create it. The line overrides Katherine's objection to pre-marriage kissing and doubles as political theory",
+        "A quotation from Chaucer",
+        "A piece of Welsh dialect"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 234,
+      "anchor_line_end": 236
+    },
+    {
+      "id": "henry_v_act5_scene2_q4",
+      "kind": "historical",
+      "prompt": "What does Exeter read out at lines 285–288?",
+      "options": [
+        "A prayer in French",
+        "The key clause of the Treaty of Troyes (1420): that Henry is to be named 'Héritier de France' — heir to the French throne — in all future French royal documents. The wooing scene ornaments this treaty-clause",
+        "Katherine's dowry inventory",
+        "A list of French prisoners still held in England"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 285,
+      "anchor_line_end": 288
+    },
+    {
+      "id": "henry_v_act5_scene2_q5",
+      "kind": "inference",
+      "prompt": "What does the wooing scene's place in the play's argument invite us to see?",
+      "options": [
+        "That love conquers all political conflict",
+        "That the marriage is a dynastic settlement dressed as romance: Katherine is the 'capital demand' of the treaty; the wooing scene is a ceremony for terms already arranged. Romance and conquest are not separable here",
+        "That Henry has given up his French claim",
+        "That Katherine was secretly Welsh"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 94,
+      "anchor_line_end": 96
+    },
+    {
+      "id": "henry_v_act5_scene2_q6",
+      "kind": "theme",
+      "prompt": "Why does Katherine's 'Is it possible dat I sould love de enemy of France?' (line 155) matter?",
+      "options": [
+        "It introduces Katherine as a minor character",
+        "It is the one moment the scene's underlying political question surfaces in Katherine's own voice. Henry's reply — loving him means loving France's conqueror, who will have 'all' of it — doesn't resolve the question so much as absorb it",
+        "It shows Katherine does not actually speak French",
+        "It is a quotation from Chaucer"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 155,
+      "anchor_line_end": 161
+    }
+  ]
+}

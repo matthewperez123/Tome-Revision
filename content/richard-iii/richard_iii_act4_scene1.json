@@ -1,0 +1,772 @@
+{
+  "section_id": "richard_iii_act4_scene1",
+  "work_id": "richard-iii",
+  "sequence": 16,
+  "act": 4,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "Before the Tower",
+  "line_count": 102,
+  "word_count": 835,
+  "est_read_minutes": 4,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "DUCHESS",
+      "text": "Who meets us here? my niece Plantagenet"
+    },
+    {
+      "number": 2,
+      "speaker": "DUCHESS",
+      "text": "Led in the hand of her kind aunt of Gloucester?"
+    },
+    {
+      "number": 3,
+      "speaker": "DUCHESS",
+      "text": "Now, for my life, she’s wandering to the Tower,"
+    },
+    {
+      "number": 4,
+      "speaker": "DUCHESS",
+      "text": "On pure heart’s love to greet the tender princes."
+    },
+    {
+      "number": 5,
+      "speaker": "DUCHESS",
+      "text": "Daughter, well met."
+    },
+    {
+      "number": 5,
+      "speaker": "ANNE",
+      "text": "God give your graces both"
+    },
+    {
+      "number": 6,
+      "speaker": "ANNE",
+      "text": "A happy and a joyful time of day!"
+    },
+    {
+      "number": 7,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "As much to you, good sister! Whither away?"
+    },
+    {
+      "number": 8,
+      "speaker": "ANNE",
+      "text": "No farther than the Tower; and, as I guess,"
+    },
+    {
+      "number": 9,
+      "speaker": "ANNE",
+      "text": "Upon the like devotion as yourselves,"
+    },
+    {
+      "number": 10,
+      "speaker": "ANNE",
+      "text": "To gratulate the gentle princes there."
+    },
+    {
+      "number": 11,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Kind sister, thanks: we’ll enter all together."
+    },
+    {
+      "number": 12,
+      "speaker": "BRAKENBURY",
+      "text": "Right well, dear madam. By your patience,"
+    },
+    {
+      "number": 13,
+      "speaker": "BRAKENBURY",
+      "text": "I may not suffer you to visit them;"
+    },
+    {
+      "number": 14,
+      "speaker": "BRAKENBURY",
+      "text": "The king hath straitly charged the contrary."
+    },
+    {
+      "number": 15,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "The king! why, who’s that?"
+    },
+    {
+      "number": 16,
+      "speaker": "BRAKENBURY",
+      "text": "I cry you mercy: I mean the lord protector."
+    },
+    {
+      "number": 17,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "The Lord protect him from that kingly title!"
+    },
+    {
+      "number": 18,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Hath he set bounds betwixt their love and me?"
+    },
+    {
+      "number": 19,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "I am their mother; who should keep me from them?"
+    },
+    {
+      "number": 20,
+      "speaker": "DUCHESS",
+      "text": "I am their fathers mother; I will see them."
+    },
+    {
+      "number": 21,
+      "speaker": "ANNE",
+      "text": "Their aunt I am in law, in love their mother:"
+    },
+    {
+      "number": 22,
+      "speaker": "ANNE",
+      "text": "Then bring me to their sights; I’ll bear thy blame"
+    },
+    {
+      "number": 23,
+      "speaker": "ANNE",
+      "text": "And take thy office from thee, on my peril."
+    },
+    {
+      "number": 24,
+      "speaker": "BRAKENBURY",
+      "text": "No, madam, no; I may not leave it so:"
+    },
+    {
+      "number": 25,
+      "speaker": "BRAKENBURY",
+      "text": "I am bound by oath, and therefore pardon me."
+    },
+    {
+      "number": 26,
+      "speaker": "STANLEY",
+      "text": "Let me but meet you, ladies, one hour hence,"
+    },
+    {
+      "number": 27,
+      "speaker": "STANLEY",
+      "text": "And I’ll salute your grace of York as mother,"
+    },
+    {
+      "number": 28,
+      "speaker": "STANLEY",
+      "text": "And reverend looker on, of two fair queens."
+    },
+    {
+      "number": 29,
+      "speaker": "STANLEY",
+      "text": "To Anne. Come, madam, you must straight to Westminster,"
+    },
+    {
+      "number": 30,
+      "speaker": "STANLEY",
+      "text": "There to be crowned Richard’s royal queen."
+    },
+    {
+      "number": 31,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "O, cut my lace in sunder, that my pent heart"
+    },
+    {
+      "number": 32,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "May have some scope to beat, or else I swoon"
+    },
+    {
+      "number": 33,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "With this dead-killing news!"
+    },
+    {
+      "number": 33,
+      "speaker": "ANNE",
+      "text": "Despiteful tidings! O unpleasing news!"
+    },
+    {
+      "number": 34,
+      "speaker": "DORSET",
+      "text": "Be of good cheer: mother, how fares your grace?"
+    },
+    {
+      "number": 35,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "O Dorset, speak not to me, get thee hence!"
+    },
+    {
+      "number": 36,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Death and destruction dog thee at the heels;"
+    },
+    {
+      "number": 37,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Thy mother’s name is ominous to children."
+    },
+    {
+      "number": 38,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "If thou wilt outstrip death, go cross the seas,"
+    },
+    {
+      "number": 39,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "And live with Richmond, from the reach of hell:"
+    },
+    {
+      "number": 40,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Go, hie thee, hie thee from this slaughter-house,"
+    },
+    {
+      "number": 41,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Lest thou increase the number of the dead;"
+    },
+    {
+      "number": 42,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "And make me die the thrall of Margaret’s curse,"
+    },
+    {
+      "number": 43,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Nor mother, wife, nor England’s counted queen."
+    },
+    {
+      "number": 44,
+      "speaker": "STANLEY",
+      "text": "Full of wise care is this your counsel, madam."
+    },
+    {
+      "number": 45,
+      "speaker": "STANLEY",
+      "text": "Take all the swift advantage of the hours;"
+    },
+    {
+      "number": 46,
+      "speaker": "STANLEY",
+      "text": "You shall have letters from me to my son"
+    },
+    {
+      "number": 47,
+      "speaker": "STANLEY",
+      "text": "To meet you on the way, and welcome you."
+    },
+    {
+      "number": 48,
+      "speaker": "STANLEY",
+      "text": "Be not ta’en tardy by unwise delay."
+    },
+    {
+      "number": 49,
+      "speaker": "DUCHESS",
+      "text": "O ill-dispersing wind of misery!"
+    },
+    {
+      "number": 50,
+      "speaker": "DUCHESS",
+      "text": "O my accursed womb, the bed of death!"
+    },
+    {
+      "number": 51,
+      "speaker": "DUCHESS",
+      "text": "A cockatrice hast thou hatch’d to the world,"
+    },
+    {
+      "number": 52,
+      "speaker": "DUCHESS",
+      "text": "Whose unavoided eye is murderous."
+    },
+    {
+      "number": 53,
+      "speaker": "STANLEY",
+      "text": "Come, madam, come; I in all haste was sent."
+    },
+    {
+      "number": 54,
+      "speaker": "ANNE",
+      "text": "And I in all unwillingness will go."
+    },
+    {
+      "number": 55,
+      "speaker": "ANNE",
+      "text": "I would to God that the inclusive verge"
+    },
+    {
+      "number": 56,
+      "speaker": "ANNE",
+      "text": "Of golden metal that must round my brow"
+    },
+    {
+      "number": 57,
+      "speaker": "ANNE",
+      "text": "Were red-hot steel, to sear me to the brain!"
+    },
+    {
+      "number": 58,
+      "speaker": "ANNE",
+      "text": "Anointed let me be with deadly venom,"
+    },
+    {
+      "number": 59,
+      "speaker": "ANNE",
+      "text": "And die, ere men can say, God save the queen!"
+    },
+    {
+      "number": 60,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Go, go, poor soul, I envy not thy glory;"
+    },
+    {
+      "number": 61,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "To feed my humour, wish thyself no harm."
+    },
+    {
+      "number": 62,
+      "speaker": "ANNE",
+      "text": "No! why? When he that is my husband now"
+    },
+    {
+      "number": 63,
+      "speaker": "ANNE",
+      "text": "Came to me, as I follow’d Henry’s corse,"
+    },
+    {
+      "number": 64,
+      "speaker": "ANNE",
+      "text": "When scarce the blood was well wash’d from his hands"
+    },
+    {
+      "number": 65,
+      "speaker": "ANNE",
+      "text": "Which issued from my other angel husband"
+    },
+    {
+      "number": 66,
+      "speaker": "ANNE",
+      "text": "And that dead saint which then I weeping follow’d;"
+    },
+    {
+      "number": 67,
+      "speaker": "ANNE",
+      "text": "O, when, I say, I look’d on Richard’s face,"
+    },
+    {
+      "number": 68,
+      "speaker": "ANNE",
+      "text": "This was my wish: “Be thou,” quoth I, “accursed,"
+    },
+    {
+      "number": 69,
+      "speaker": "ANNE",
+      "text": "For making me, so young, so old a widow!"
+    },
+    {
+      "number": 70,
+      "speaker": "ANNE",
+      "text": "And, when thou wed’st, let sorrow haunt thy bed;"
+    },
+    {
+      "number": 71,
+      "speaker": "ANNE",
+      "text": "And be thy wife—if any be so mad—"
+    },
+    {
+      "number": 72,
+      "speaker": "ANNE",
+      "text": "As miserable by the life of thee"
+    },
+    {
+      "number": 73,
+      "speaker": "ANNE",
+      "text": "As thou hast made me by my dear lord’s death!”"
+    },
+    {
+      "number": 74,
+      "speaker": "ANNE",
+      "text": "Lo, ere I can repeat this curse again,"
+    },
+    {
+      "number": 75,
+      "speaker": "ANNE",
+      "text": "Even in so short a space, my woman’s heart"
+    },
+    {
+      "number": 76,
+      "speaker": "ANNE",
+      "text": "Grossly grew captive to his honey words"
+    },
+    {
+      "number": 77,
+      "speaker": "ANNE",
+      "text": "And proved the subject of my own soul’s curse,"
+    },
+    {
+      "number": 78,
+      "speaker": "ANNE",
+      "text": "Which ever since hath kept my eyes from rest;"
+    },
+    {
+      "number": 79,
+      "speaker": "ANNE",
+      "text": "For never yet one hour in his bed"
+    },
+    {
+      "number": 80,
+      "speaker": "ANNE",
+      "text": "Have I enjoy’d the golden dew of sleep,"
+    },
+    {
+      "number": 81,
+      "speaker": "ANNE",
+      "text": "But have been waked by his timorous dreams."
+    },
+    {
+      "number": 82,
+      "speaker": "ANNE",
+      "text": "Besides, he hates me for my father Warwick;"
+    },
+    {
+      "number": 83,
+      "speaker": "ANNE",
+      "text": "And will, no doubt, shortly be rid of me."
+    },
+    {
+      "number": 84,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Poor heart, adieu! I pity thy complaining."
+    },
+    {
+      "number": 85,
+      "speaker": "ANNE",
+      "text": "No more than from my soul I mourn for yours."
+    },
+    {
+      "number": 86,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Farewell, thou woeful welcomer of glory!"
+    },
+    {
+      "number": 87,
+      "speaker": "ANNE",
+      "text": "Adieu, poor soul, that takest thy leave of it!"
+    },
+    {
+      "number": 88,
+      "speaker": "DUCHESS",
+      "text": "To Dorset. Go thou to Richmond, and good fortune guide thee!"
+    },
+    {
+      "number": 89,
+      "speaker": "DUCHESS",
+      "text": "To Anne. Go thou to Richard, and good angels guard thee!"
+    },
+    {
+      "number": 90,
+      "speaker": "DUCHESS",
+      "text": "To Queen Elizabeth. Go thou to sanctuary, and good thoughts possess thee!"
+    },
+    {
+      "number": 91,
+      "speaker": "DUCHESS",
+      "text": "I to my grave, where peace and rest lie with me!"
+    },
+    {
+      "number": 92,
+      "speaker": "DUCHESS",
+      "text": "Eighty odd years of sorrow have I seen,"
+    },
+    {
+      "number": 93,
+      "speaker": "DUCHESS",
+      "text": "And each hour’s joy wreck’d with a week of teen."
+    },
+    {
+      "number": 94,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Stay, yet look back with me unto the Tower."
+    },
+    {
+      "number": 95,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Pity, you ancient stones, those tender babes"
+    },
+    {
+      "number": 96,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Whom envy hath immured within your walls!"
+    },
+    {
+      "number": 97,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Rough cradle for such little pretty ones!"
+    },
+    {
+      "number": 98,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "Rude ragged nurse, old sullen playfellow"
+    },
+    {
+      "number": 99,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "For tender princes, use my babies well!"
+    },
+    {
+      "number": 100,
+      "speaker": "QUEEN ELIZABETH",
+      "text": "So foolish sorrow bids your stones farewell."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter, on one side, Queen Elizabeth, Duchess of York, and Marquess of Dorset; on the other, Anne, Duchess of Gloucester, leading Lady Margaret Plantagenet, Clarence’s young Daughter."
+    },
+    {
+      "after_line": 11,
+      "text": "Enter Brakenbury."
+    },
+    {
+      "after_line": 11,
+      "text": "And, in good time, here the lieutenant comes. Master lieutenant, pray you, by your leave, How doth the prince, and my young son of York?"
+    },
+    {
+      "after_line": 25,
+      "text": "Exit."
+    },
+    {
+      "after_line": 25,
+      "text": "Enter Lord Stanley."
+    },
+    {
+      "after_line": 100,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act4_scene1_gloss1",
+      "line": 1,
+      "phrase": "niece Plantagenet",
+      "definition": "Clarence's daughter Margaret, later Countess of Salisbury — executed under Henry VIII"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss2",
+      "line": 10,
+      "phrase": "gratulate",
+      "definition": "greet; offer congratulations to"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss3",
+      "line": 14,
+      "phrase": "straitly charged",
+      "definition": "strictly commanded"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss4",
+      "line": 16,
+      "phrase": "lord protector",
+      "definition": "Richard's pre-coronation title — Brakenbury corrects himself mid-sentence"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss5",
+      "line": 29,
+      "phrase": "Westminster",
+      "definition": "Westminster Abbey — site of English coronations"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss6",
+      "line": 31,
+      "phrase": "cut my lace in sunder",
+      "definition": "cut my bodice-lace in two — Elizabeth's faintness at the news"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss7",
+      "line": 39,
+      "phrase": "live with Richmond",
+      "definition": "join Henry Tudor in exile — Dorset's safe harbor in Brittany"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss8",
+      "line": 42,
+      "phrase": "thrall of Margaret’s curse",
+      "definition": "Elizabeth recognizes herself as the fulfilled target of Margaret's 1.3 curse"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss9",
+      "line": 49,
+      "phrase": "ill-dispersing wind of misery",
+      "definition": "misery-scattering wind — the Duchess's lament-image"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss10",
+      "line": 51,
+      "phrase": "cockatrice",
+      "definition": "legendary serpent hatched from a cock's egg, whose gaze killed — the Duchess's image of Richard"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss11",
+      "line": 55,
+      "phrase": "inclusive verge / Of golden metal",
+      "definition": "the encircling rim of gold — the crown"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss12",
+      "line": 57,
+      "phrase": "red-hot steel, to sear me",
+      "definition": "the crown become torture-iron — Anne's despair"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss13",
+      "line": 63,
+      "phrase": "as I follow’d Henry’s corse",
+      "definition": "Anne recalls 1.2 — her first encounter with Richard, when she cursed any woman who would marry him"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss14",
+      "line": 69,
+      "phrase": "old a widow",
+      "definition": "aged as a widow — Anne was still young but worn out by widowhood"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss15",
+      "line": 76,
+      "phrase": "Grossly grew captive to his honey words",
+      "definition": "was crudely taken captive by his sweet words — Anne's self-reckoning"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss16",
+      "line": 81,
+      "phrase": "timorous dreams",
+      "definition": "fearful dreams — Richard's; Anne is already sleeping with a nightmare-ridden tyrant"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss17",
+      "line": 83,
+      "phrase": "shortly be rid of me",
+      "definition": "Anne accurately predicts her own disposal (4.2–4.3)"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss18",
+      "line": 86,
+      "phrase": "woeful welcomer of glory",
+      "definition": "sorrowful greeter of glory — Elizabeth's oxymoron for Anne's new title"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss19",
+      "line": 92,
+      "phrase": "Eighty odd years of sorrow",
+      "definition": "the Duchess's dramatic age — historically about 68 at this point (b. 1415)"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss20",
+      "line": 93,
+      "phrase": "teen",
+      "definition": "grief, trouble (archaic)"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss21",
+      "line": 96,
+      "phrase": "immured",
+      "definition": "walled up, imprisoned"
+    },
+    {
+      "id": "richard_iii_act4_scene1_gloss22",
+      "line": 98,
+      "phrase": "Rude ragged nurse",
+      "definition": "harsh rough nurse — Elizabeth's apostrophe to the Tower as child-keeper"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act4_scene1_ann1",
+      "line_start": 62,
+      "line_end": 83,
+      "citation_display": "Richard III 4.1.62–83",
+      "category": "thematic",
+      "title": "Anne's retrospect — the self-curse she has lived",
+      "body": "Anne's speech — \"When he that is my husband now / Came to me, as I follow'd Henry's corse... / When, I say, I look'd on Richard's face, / This was my wish: 'Be thou,' quoth I, 'accursed'\" — recalls the audience directly to 1.2. Anne tells Elizabeth the curse she laid on Richard's wife-to-be in the wooing scene has fallen on herself: she became that wife. The speech is the play's most searing piece of retrospective self-knowledge, more frank than anything Richard delivers about himself until 5.3. Anne names the mechanism plainly: \"my woman's heart / Grossly grew captive to his honey words\" — she was won, she knows she was won, she has suffered for it, and she now says so aloud to another doomed woman. The scene pairs with 1.2 as before-and-after: the scene of the seduction, and the scene in which the seduced woman testifies to what the seduction cost.",
+      "sources": [
+        "Janet Adelman, Suffocating Mothers (1992)",
+        "Madonne M. Miner, \"'Neither mother, wife, nor England's queen'\" (1980)"
+      ]
+    },
+    {
+      "id": "richard_iii_act4_scene1_ann2",
+      "line_start": 93,
+      "line_end": 100,
+      "citation_display": "Richard III 4.1.93–100",
+      "category": "close_reading",
+      "title": "Elizabeth's apostrophe to the Tower as nursery",
+      "body": "Elizabeth's closing speech — \"Pity, you ancient stones, those tender babes / Whom envy hath immured within your walls! / Rough cradle for such little pretty ones! / Rude ragged nurse, old sullen playfellow / For tender princes, use my babies well!\" — converts the Tower of London from fortress to child-care metaphor. The Tower becomes simultaneously cradle, nurse, and playfellow — maternal offices grotesquely misapplied to stone walls. The figure is not decoration; it enacts the specific horror of the princes' situation, which is that the institution charged with keeping them is the institution that will kill them. Shakespeare compresses the moral scandal into four lines of apostrophe. The speech is one of the play's emotional peaks before 4.4.",
+      "sources": [
+        "Caroline Spurgeon, Shakespeare's Imagery (1935)",
+        "Ann Blake, \"Children and Suffering in Shakespeare's Plays\" (1998)"
+      ]
+    },
+    {
+      "id": "richard_iii_act4_scene1_ann3",
+      "line_start": 49,
+      "line_end": 58,
+      "citation_display": "Richard III 4.1.49–58",
+      "category": "thematic",
+      "title": "The Duchess of York's accursed womb",
+      "body": "The Duchess's speech — \"O ill-dispersing wind of misery! / O my accursed womb, the bed of death! / A cockatrice hast thou hatch'd to the world, / Whose unavoided eye is murderous\" — escalates 2.2's maternal self-reproach into full denunciation. The cockatrice is a legendary basilisk-creature, hatched from a cock's egg by a serpent, whose gaze killed. The Duchess has moved from \"he is my son; yea, and therein my shame\" (2.2.29) to naming her own womb the instrument of monster-production. Shakespeare does not ask us to accept the metaphysics of monstrous birth — the play is clear that Richard is a product of historical and political violence, not congenital malice — but the Duchess's language registers a particular kind of grief only a mother can carry. In 4.4 she will curse Richard to his face with the play's most terrible maternal curse. This is the speech in which she begins to claim that right.",
+      "sources": [
+        "Janet Adelman, Suffocating Mothers (1992)",
+        "Phyllis Rackin, Stages of History (1990)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act4_scene1_q1",
+      "kind": "close_reading",
+      "prompt": "Anne's long speech to Elizabeth (62–83) recalls which earlier scene?",
+      "options": [
+        "Clarence's dream in 1.4",
+        "The wooing scene in 1.2 — Anne admits that her curse on Richard's wife-to-be has fallen on herself",
+        "Margaret's curse in 1.3",
+        "Edward IV's reconciliation in 2.1"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 62,
+      "anchor_line_end": 83
+    },
+    {
+      "id": "richard_iii_act4_scene1_q2",
+      "kind": "theme",
+      "prompt": "Elizabeth's apostrophe \"Rough cradle for such little pretty ones! / Rude ragged nurse, old sullen playfellow\" does what?",
+      "options": [
+        "Praises the Tower for its protection of royal children",
+        "Converts the Tower into maternal offices grotesquely misapplied, compressing the specific horror of the princes' situation into apostrophe",
+        "Mourns the loss of her late husband Edward IV",
+        "Requests formal permission to visit her sons"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 95,
+      "anchor_line_end": 99
+    },
+    {
+      "id": "richard_iii_act4_scene1_q3",
+      "kind": "close_reading",
+      "prompt": "The Duchess of York calls her womb \"the bed of death\" and says she has \"hatch'd a cockatrice.\" A cockatrice is:",
+      "options": [
+        "A type of songbird",
+        "A legendary basilisk-creature whose gaze was thought to kill — an emblem of monstrous, killing birth",
+        "A heraldic insignia of the House of York",
+        "A common Elizabethan cooking implement"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 51,
+      "anchor_line_end": 52
+    }
+  ]
+}

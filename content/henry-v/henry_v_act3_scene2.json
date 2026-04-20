@@ -1,0 +1,1078 @@
+{
+  "section_id": "henry_v_act3_scene2",
+  "work_id": "henry-v",
+  "sequence": 11,
+  "act": 3,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "The same. Before the walls of Harfleur",
+  "line_count": 118,
+  "word_count": 1178,
+  "est_read_minutes": 6,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "BARDOLPH",
+      "text": "On, on, on, on, on! to the breach, to the breach!"
+    },
+    {
+      "number": 2,
+      "speaker": "NYM",
+      "text": "Pray thee, corporal, stay: the knocks are too hot; and, for mine"
+    },
+    {
+      "number": 3,
+      "speaker": "NYM",
+      "text": "own part, I have not a case of lives: the humour of"
+    },
+    {
+      "number": 4,
+      "speaker": "NYM",
+      "text": "it is too hot, that is the very plainsong of it."
+    },
+    {
+      "number": 5,
+      "speaker": "PISTOL",
+      "text": "The plain-song is most just; for humours do abound:"
+    },
+    {
+      "number": 6,
+      "speaker": "PISTOL",
+      "text": "Knocks go and come; God’s vassals drop and die;"
+    },
+    {
+      "number": 7,
+      "speaker": "PISTOL",
+      "text": "And sword and shield,"
+    },
+    {
+      "number": 8,
+      "speaker": "PISTOL",
+      "text": "In bloody field,"
+    },
+    {
+      "number": 9,
+      "speaker": "PISTOL",
+      "text": "Doth win immortal fame."
+    },
+    {
+      "number": 10,
+      "speaker": "BOY",
+      "text": "Would I were in an alehouse in London! I would give all"
+    },
+    {
+      "number": 11,
+      "speaker": "BOY",
+      "text": "my fame for a pot of ale and safety."
+    },
+    {
+      "number": 12,
+      "speaker": "PISTOL",
+      "text": "And I:"
+    },
+    {
+      "number": 13,
+      "speaker": "PISTOL",
+      "text": "If wishes would prevail with me,"
+    },
+    {
+      "number": 14,
+      "speaker": "PISTOL",
+      "text": "My purpose should not fail with me,"
+    },
+    {
+      "number": 15,
+      "speaker": "PISTOL",
+      "text": "But thither would I hie."
+    },
+    {
+      "number": 15,
+      "speaker": "BOY",
+      "text": "As duly, but not as truly,"
+    },
+    {
+      "number": 16,
+      "speaker": "BOY",
+      "text": "As bird doth sing on bough."
+    },
+    {
+      "number": 17,
+      "speaker": "FLUELLEN",
+      "text": "Up to the breach, you dogs! avaunt, you cullions! Driving them forward."
+    },
+    {
+      "number": 18,
+      "speaker": "PISTOL",
+      "text": "Be merciful, great duke, to men of mould."
+    },
+    {
+      "number": 19,
+      "speaker": "PISTOL",
+      "text": "Abate thy rage, abate thy manly rage,"
+    },
+    {
+      "number": 20,
+      "speaker": "PISTOL",
+      "text": "Abate thy rage, great duke!"
+    },
+    {
+      "number": 21,
+      "speaker": "PISTOL",
+      "text": "Good bawcock, bate thy rage; use lenity, sweet chuck!"
+    },
+    {
+      "number": 22,
+      "speaker": "NYM",
+      "text": "These be good humours! your honour wins bad humours."
+    },
+    {
+      "number": 23,
+      "speaker": "BOY",
+      "text": "As young as I am, I have observ’d these three swashers. I"
+    },
+    {
+      "number": 24,
+      "speaker": "BOY",
+      "text": "am boy to them all three: but all they three, though they"
+    },
+    {
+      "number": 25,
+      "speaker": "BOY",
+      "text": "would serve me, could not be man to me; for indeed three"
+    },
+    {
+      "number": 26,
+      "speaker": "BOY",
+      "text": "such antics do not amount to a man. For Bardolph, he is"
+    },
+    {
+      "number": 27,
+      "speaker": "BOY",
+      "text": "white-livered and red-faced; by the means whereof a’ faces it out, but"
+    },
+    {
+      "number": 28,
+      "speaker": "BOY",
+      "text": "fights not. For Pistol, he hath a killing tongue and a quiet"
+    },
+    {
+      "number": 29,
+      "speaker": "BOY",
+      "text": "sword; by the means whereof a’ breaks words, and keeps whole weapons."
+    },
+    {
+      "number": 30,
+      "speaker": "BOY",
+      "text": "For Nym, he hath heard that men of few words are the"
+    },
+    {
+      "number": 31,
+      "speaker": "BOY",
+      "text": "best men; and therefore he scorns to say his prayers, lest a’"
+    },
+    {
+      "number": 32,
+      "speaker": "BOY",
+      "text": "should be thought a coward: but his few bad words are matched"
+    },
+    {
+      "number": 33,
+      "speaker": "BOY",
+      "text": "with as few good deeds; for a’ never broke any man’s head"
+    },
+    {
+      "number": 34,
+      "speaker": "BOY",
+      "text": "but his own, and that was against a post when he was"
+    },
+    {
+      "number": 35,
+      "speaker": "BOY",
+      "text": "drunk. They will steal anything, and call it purchase. Bardolph stole a"
+    },
+    {
+      "number": 36,
+      "speaker": "BOY",
+      "text": "lute-case, bore it twelve leagues, and sold it for three half-pence. Nym"
+    },
+    {
+      "number": 37,
+      "speaker": "BOY",
+      "text": "and Bardolph are sworn brothers in filching, and in Calais they stole"
+    },
+    {
+      "number": 38,
+      "speaker": "BOY",
+      "text": "a fire-shovel: I knew by that piece of service the men would"
+    },
+    {
+      "number": 39,
+      "speaker": "BOY",
+      "text": "carry coals. They would have me as familiar with men’s pockets as"
+    },
+    {
+      "number": 40,
+      "speaker": "BOY",
+      "text": "their gloves or their handkerchers: which makes much against my manhood, if"
+    },
+    {
+      "number": 41,
+      "speaker": "BOY",
+      "text": "I should take from another’s pocket to put into mine; for it"
+    },
+    {
+      "number": 42,
+      "speaker": "BOY",
+      "text": "is plain pocketing up of wrongs. I must leave them, and seek"
+    },
+    {
+      "number": 43,
+      "speaker": "BOY",
+      "text": "some better service: their villainy goes against my weak stomach, and therefore"
+    },
+    {
+      "number": 44,
+      "speaker": "BOY",
+      "text": "I must cast it up."
+    },
+    {
+      "number": 45,
+      "speaker": "GOWER",
+      "text": "Captain Fluellen, you must come presently to the mines; the Duke of"
+    },
+    {
+      "number": 46,
+      "speaker": "GOWER",
+      "text": "Gloucester would speak with you."
+    },
+    {
+      "number": 47,
+      "speaker": "FLUELLEN",
+      "text": "To the mines! tell you the duke, it is not so good"
+    },
+    {
+      "number": 48,
+      "speaker": "FLUELLEN",
+      "text": "to come to the mines; for, look you, the mines is not"
+    },
+    {
+      "number": 49,
+      "speaker": "FLUELLEN",
+      "text": "according to the disciplines of the war: the concavities of it is"
+    },
+    {
+      "number": 50,
+      "speaker": "FLUELLEN",
+      "text": "not sufficient; for, look you, th’ athversary, you may discuss unto the"
+    },
+    {
+      "number": 51,
+      "speaker": "FLUELLEN",
+      "text": "duke, look you, is digt himself four yard under the countermines: by"
+    },
+    {
+      "number": 52,
+      "speaker": "FLUELLEN",
+      "text": "Cheshu, I think a’ will plow up all, if there is not"
+    },
+    {
+      "number": 53,
+      "speaker": "FLUELLEN",
+      "text": "better directions."
+    },
+    {
+      "number": 54,
+      "speaker": "GOWER",
+      "text": "The Duke of Gloucester, to whom the order of the siege is"
+    },
+    {
+      "number": 55,
+      "speaker": "GOWER",
+      "text": "given, is altogether directed by an Irishman, a very valiant gentleman, i’"
+    },
+    {
+      "number": 56,
+      "speaker": "GOWER",
+      "text": "faith."
+    },
+    {
+      "number": 57,
+      "speaker": "FLUELLEN",
+      "text": "It is Captain Macmorris, is it not?"
+    },
+    {
+      "number": 58,
+      "speaker": "GOWER",
+      "text": "I think it be."
+    },
+    {
+      "number": 59,
+      "speaker": "FLUELLEN",
+      "text": "By Cheshu, he is an ass, as in the world: I will"
+    },
+    {
+      "number": 60,
+      "speaker": "FLUELLEN",
+      "text": "verify as much in his beard: he has no more directions in"
+    },
+    {
+      "number": 61,
+      "speaker": "FLUELLEN",
+      "text": "the true disciplines of the wars, look you, of the Roman disciplines,"
+    },
+    {
+      "number": 62,
+      "speaker": "FLUELLEN",
+      "text": "than is a puppy-dog."
+    },
+    {
+      "number": 63,
+      "speaker": "GOWER",
+      "text": "Here a’ comes; and the Scots captain, Captain Jamy, with him."
+    },
+    {
+      "number": 64,
+      "speaker": "FLUELLEN",
+      "text": "Captain Jamy is a marvellous falorous gentleman, that is certain; and of"
+    },
+    {
+      "number": 65,
+      "speaker": "FLUELLEN",
+      "text": "great expedition and knowledge in th’ aunchient wars, upon my particular knowledge"
+    },
+    {
+      "number": 66,
+      "speaker": "FLUELLEN",
+      "text": "of his directions: by Cheshu, he will maintain his argument as well"
+    },
+    {
+      "number": 67,
+      "speaker": "FLUELLEN",
+      "text": "as any military man in the world, in the disciplines of the"
+    },
+    {
+      "number": 68,
+      "speaker": "FLUELLEN",
+      "text": "pristine wars of the Romans."
+    },
+    {
+      "number": 68,
+      "speaker": "JAMY",
+      "text": "I say gud-day, Captain Fluellen."
+    },
+    {
+      "number": 69,
+      "speaker": "FLUELLEN",
+      "text": "God-den to your worship, good Captain James."
+    },
+    {
+      "number": 70,
+      "speaker": "GOWER",
+      "text": "How now, Captain Macmorris! have you quit the mines? have the pioneers given o’er?"
+    },
+    {
+      "number": 71,
+      "speaker": "MACMORRIS",
+      "text": "By Chrish, la! tish ill done: the work ish give over, the"
+    },
+    {
+      "number": 72,
+      "speaker": "MACMORRIS",
+      "text": "trompet sound the retreat. By my hand, I swear, and my father’s"
+    },
+    {
+      "number": 73,
+      "speaker": "MACMORRIS",
+      "text": "soul, the work ish ill done; it ish give over: I would"
+    },
+    {
+      "number": 74,
+      "speaker": "MACMORRIS",
+      "text": "have blowed up the town, so Chrish save me, la! in an"
+    },
+    {
+      "number": 75,
+      "speaker": "MACMORRIS",
+      "text": "hour: O, tish ill done, tish ill done; by my hand, tish"
+    },
+    {
+      "number": 76,
+      "speaker": "MACMORRIS",
+      "text": "ill done!"
+    },
+    {
+      "number": 77,
+      "speaker": "FLUELLEN",
+      "text": "Captain Macmorris, I beseech you now, will you voutsafe me, look you,"
+    },
+    {
+      "number": 78,
+      "speaker": "FLUELLEN",
+      "text": "a few disputations with you, as partly touching or concerning the disciplines"
+    },
+    {
+      "number": 79,
+      "speaker": "FLUELLEN",
+      "text": "of the war, the Roman wars, in the way of argument, look"
+    },
+    {
+      "number": 80,
+      "speaker": "FLUELLEN",
+      "text": "you, and friendly communication; partly to satisfy my opinion, and partly for"
+    },
+    {
+      "number": 81,
+      "speaker": "FLUELLEN",
+      "text": "the satisfaction, look you, of my mind, as touching the direction of"
+    },
+    {
+      "number": 82,
+      "speaker": "FLUELLEN",
+      "text": "the military discipline; that is the point."
+    },
+    {
+      "number": 83,
+      "speaker": "JAMY",
+      "text": "It sall be vary gud, gud feith, gud captains bath: and I"
+    },
+    {
+      "number": 84,
+      "speaker": "JAMY",
+      "text": "sall quit you with gud leve, as I may pick occasion; that"
+    },
+    {
+      "number": 85,
+      "speaker": "JAMY",
+      "text": "sall I, marry."
+    },
+    {
+      "number": 86,
+      "speaker": "MACMORRIS",
+      "text": "It is no time to discourse, so Chrish save me: the day"
+    },
+    {
+      "number": 87,
+      "speaker": "MACMORRIS",
+      "text": "is hot, and the weather, and the wars, and the king, and"
+    },
+    {
+      "number": 88,
+      "speaker": "MACMORRIS",
+      "text": "the dukes: it is no time to discourse. The town is beseeched,"
+    },
+    {
+      "number": 89,
+      "speaker": "MACMORRIS",
+      "text": "and the trumpet call us to the breach; and we talk, and,"
+    },
+    {
+      "number": 90,
+      "speaker": "MACMORRIS",
+      "text": "be Chrish, do nothing: ’tis shame for us all: so God sa’"
+    },
+    {
+      "number": 91,
+      "speaker": "MACMORRIS",
+      "text": "me, ’tis shame to stand still; it is shame, by my hand:"
+    },
+    {
+      "number": 92,
+      "speaker": "MACMORRIS",
+      "text": "and there is throats to be cut, and works to be done;"
+    },
+    {
+      "number": 93,
+      "speaker": "MACMORRIS",
+      "text": "and there ish nothing done, so Chrish sa’ me, la!"
+    },
+    {
+      "number": 94,
+      "speaker": "JAMY",
+      "text": "By the mess, ere theise eyes of mine take themselves to slomber,"
+    },
+    {
+      "number": 95,
+      "speaker": "JAMY",
+      "text": "ay’ll de gud service, or ay’ll lig i’ the grund for it;"
+    },
+    {
+      "number": 96,
+      "speaker": "JAMY",
+      "text": "ay, or go to death; and ay’ll pay’t as valorously as I"
+    },
+    {
+      "number": 97,
+      "speaker": "JAMY",
+      "text": "may, that sall I suerly do, that is the breff and the"
+    },
+    {
+      "number": 98,
+      "speaker": "JAMY",
+      "text": "long. Marry, I wad full fain heard some question ’tween you tway."
+    },
+    {
+      "number": 99,
+      "speaker": "FLUELLEN",
+      "text": "Captain Macmorris, I think, look you, under your correction, there is not"
+    },
+    {
+      "number": 100,
+      "speaker": "FLUELLEN",
+      "text": "many of your nation—"
+    },
+    {
+      "number": 101,
+      "speaker": "MACMORRIS",
+      "text": "Of my nation! What ish my nation? Ish a villain, and a"
+    },
+    {
+      "number": 102,
+      "speaker": "MACMORRIS",
+      "text": "bastard, and a knave, and a rascal—What ish my nation? Who talks"
+    },
+    {
+      "number": 103,
+      "speaker": "MACMORRIS",
+      "text": "of my nation?"
+    },
+    {
+      "number": 104,
+      "speaker": "FLUELLEN",
+      "text": "Look you, if you take the matter otherwise than is meant, Captain"
+    },
+    {
+      "number": 105,
+      "speaker": "FLUELLEN",
+      "text": "Macmorris, peradventure I shall think you do not use me with that"
+    },
+    {
+      "number": 106,
+      "speaker": "FLUELLEN",
+      "text": "affability as in discretion you ought to use me, look you; being"
+    },
+    {
+      "number": 107,
+      "speaker": "FLUELLEN",
+      "text": "as good a man as yourself, both in the disciplines of war,"
+    },
+    {
+      "number": 108,
+      "speaker": "FLUELLEN",
+      "text": "and in the derivation of my birth, and in other particularities."
+    },
+    {
+      "number": 109,
+      "speaker": "MACMORRIS",
+      "text": "I do not know you so good a man as myself: so"
+    },
+    {
+      "number": 110,
+      "speaker": "MACMORRIS",
+      "text": "Chrish save me, I will cut off your head."
+    },
+    {
+      "number": 111,
+      "speaker": "GOWER",
+      "text": "Gentlemen both, you will mistake each other."
+    },
+    {
+      "number": 112,
+      "speaker": "JAMY",
+      "text": "A! that’s a foul fault. A parley sounded."
+    },
+    {
+      "number": 113,
+      "speaker": "GOWER",
+      "text": "The town sounds a parley."
+    },
+    {
+      "number": 114,
+      "speaker": "FLUELLEN",
+      "text": "Captain Macmorris, when there is more better opportunity to be required, look"
+    },
+    {
+      "number": 115,
+      "speaker": "FLUELLEN",
+      "text": "you, I will be so bold as to tell you I know"
+    },
+    {
+      "number": 116,
+      "speaker": "FLUELLEN",
+      "text": "the disciplines of war; and there is an end."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Nym, Bardolph, Pistol and Boy."
+    },
+    {
+      "after_line": 16,
+      "text": "Enter Fluellen."
+    },
+    {
+      "after_line": 22,
+      "text": "Exeunt all but Boy."
+    },
+    {
+      "after_line": 44,
+      "text": "Exit."
+    },
+    {
+      "after_line": 44,
+      "text": "Reenter Fluellen, Gower following."
+    },
+    {
+      "after_line": 62,
+      "text": "Enter Macmorris and Captain Jamy."
+    },
+    {
+      "after_line": 116,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "henry_v_act3_scene2_gloss1",
+      "line": 2,
+      "phrase": "knocks",
+      "definition": "blows; cannon-shots"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss2",
+      "line": 3,
+      "phrase": "case of lives",
+      "definition": "a pair of lives — Nym complains he has only one"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss3",
+      "line": 4,
+      "phrase": "plainsong",
+      "definition": "the unembellished melody; the plain truth — musical metaphor for bluntness"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss4",
+      "line": 6,
+      "phrase": "God’s vassals",
+      "definition": "God's subjects — soldiers as servants of providence"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss5",
+      "line": 10,
+      "phrase": "alehouse in London",
+      "definition": "a London pub — the Boy's wish for home and safety"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss6",
+      "line": 15,
+      "phrase": "hie",
+      "definition": "hurry; go quickly"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss7",
+      "line": 17,
+      "phrase": "avaunt",
+      "definition": "begone! get out of here!"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss8",
+      "line": 17,
+      "phrase": "cullions",
+      "definition": "rascals; base fellows (also a crude term for testicles)"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss9",
+      "line": 18,
+      "phrase": "men of mould",
+      "definition": "men of earth; mortal clay — Pistol's inflated plea"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss10",
+      "line": 21,
+      "phrase": "bawcock",
+      "definition": "fine fellow (from French 'beau coq' — fine cock)"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss11",
+      "line": 21,
+      "phrase": "lenity",
+      "definition": "mildness; mercy"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss12",
+      "line": 21,
+      "phrase": "sweet chuck",
+      "definition": "term of endearment — 'chuck' = chicken, dear"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss13",
+      "line": 23,
+      "phrase": "swashers",
+      "definition": "swaggering braggarts"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss14",
+      "line": 26,
+      "phrase": "antics",
+      "definition": "clowns; grotesques"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss15",
+      "line": 27,
+      "phrase": "white-livered",
+      "definition": "cowardly — a pale liver was thought to indicate cowardice"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss16",
+      "line": 27,
+      "phrase": "faces it out",
+      "definition": "brazens it out with his face; bluffs"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss17",
+      "line": 28,
+      "phrase": "killing tongue and a quiet sword",
+      "definition": "deadly in speech, silent in arms — all bluster"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss18",
+      "line": 29,
+      "phrase": "breaks words, and keeps whole weapons",
+      "definition": "uses up words, not weapons"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss19",
+      "line": 35,
+      "phrase": "call it purchase",
+      "definition": "theft renamed as acquisition"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss20",
+      "line": 36,
+      "phrase": "lute-case",
+      "definition": "instrument-case — Bardolph's petty theft"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss21",
+      "line": 36,
+      "phrase": "twelve leagues",
+      "definition": "about 36 miles — a league is roughly 3 miles"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss22",
+      "line": 37,
+      "phrase": "Calais",
+      "definition": "English-held port on the French Channel coast from 1347–1558"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss23",
+      "line": 38,
+      "phrase": "fire-shovel",
+      "definition": "a shovel for moving coals on a hearth — pettiest possible theft"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss24",
+      "line": 39,
+      "phrase": "carry coals",
+      "definition": "endure indignity — proverbial for demeaning work (same as R&J 1.1)"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss25",
+      "line": 42,
+      "phrase": "pocketing up of wrongs",
+      "definition": "tucking away of grievances — pun on literal pocket-picking"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss26",
+      "line": 44,
+      "phrase": "cast it up",
+      "definition": "vomit; throw it up — the Boy rejects the thieves' company"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss27",
+      "line": 45,
+      "phrase": "presently",
+      "definition": "immediately; right now"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss28",
+      "line": 45,
+      "phrase": "mines",
+      "definition": "tunnels dug beneath siege walls to collapse them"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss29",
+      "line": 49,
+      "phrase": "disciplines of the war",
+      "definition": "Fluellen's pedantic catchphrase — the classical 'military science' he keeps citing"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss30",
+      "line": 49,
+      "phrase": "concavities",
+      "definition": "the hollow excavations — the mine-tunnels"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss31",
+      "line": 50,
+      "phrase": "th’ athversary",
+      "definition": "the adversary, in Fluellen's Welsh accent — 'th' for 'the'; dialect marker, not a typo"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss32",
+      "line": 51,
+      "phrase": "digt himself",
+      "definition": "dug himself — Welsh-dialect form, preserved as characterization"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss33",
+      "line": 51,
+      "phrase": "countermines",
+      "definition": "counter-tunnels dug to intercept enemy mines"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss34",
+      "line": 52,
+      "phrase": "Cheshu",
+      "definition": "Fluellen's Welsh oath 'Jesu' — 'Cheshu' = Jesus; dialect marker throughout"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss35",
+      "line": 55,
+      "phrase": "Irishman",
+      "definition": "Captain Macmorris — Shakespeare's only Irish character; the four-captains scene stages the emerging British Isles identity"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss36",
+      "line": 57,
+      "phrase": "Captain Macmorris",
+      "definition": "the Irish captain; his accent ('ish' for 'is') is Shakespeare's only extended Irish dialect"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss37",
+      "line": 64,
+      "phrase": "falorous",
+      "definition": "valorous, in Fluellen's pronunciation"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss38",
+      "line": 65,
+      "phrase": "aunchient",
+      "definition": "ancient — Fluellen's pronunciation; used as noun = ensign (lowest officer)"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss39",
+      "line": 68,
+      "phrase": "pristine wars of the Romans",
+      "definition": "the wars of ancient Rome — Fluellen's obsession with classical military theory"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss40",
+      "line": 68,
+      "phrase": "gud-day",
+      "definition": "'good day' in Jamy's Scottish accent — another dialect marker"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss41",
+      "line": 69,
+      "phrase": "God-den",
+      "definition": "'good-even', contracted — Fluellen's return greeting"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss42",
+      "line": 70,
+      "phrase": "pioneers",
+      "definition": "military engineers who dig trenches and tunnels"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss43",
+      "line": 71,
+      "phrase": "By Chrish",
+      "definition": "'by Christ' in Macmorris's Irish pronunciation — dialect marker"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss44",
+      "line": 71,
+      "phrase": "tish ill done",
+      "definition": "'it is ill done' — 'tish' = 'tis, with Irish intonation"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss45",
+      "line": 72,
+      "phrase": "trompet",
+      "definition": "trumpet (dialect spelling)"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss46",
+      "line": 77,
+      "phrase": "voutsafe",
+      "definition": "vouchsafe; grant — Fluellen's pronunciation"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss47",
+      "line": 80,
+      "phrase": "friendly communication",
+      "definition": "Fluellen's comic formality — he is asking to quarrel theoretically"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss48",
+      "line": 83,
+      "phrase": "sall",
+      "definition": "shall, in Jamy's Scottish accent"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss49",
+      "line": 83,
+      "phrase": "gud feith",
+      "definition": "'good faith' — Jamy's Scottish oath"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss50",
+      "line": 94,
+      "phrase": "By the mess",
+      "definition": "by the mass — mild Scottish oath"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss51",
+      "line": 95,
+      "phrase": "ay’ll de gud service",
+      "definition": "'I'll do good service' — Jamy's Scots"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss52",
+      "line": 95,
+      "phrase": "lig i’ the grund",
+      "definition": "lie in the ground — Scottish dialect for 'die'"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss53",
+      "line": 98,
+      "phrase": "wad full fain heard",
+      "definition": "would very much like to have heard — Scottish dialect"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss54",
+      "line": 98,
+      "phrase": "tway",
+      "definition": "two — Scottish dialect"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss55",
+      "line": 101,
+      "phrase": "What ish my nation?",
+      "definition": "Macmorris's defensive outburst — the play's most-discussed Irish line; a challenge to Fluellen's presumption about 'his nation'"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss56",
+      "line": 105,
+      "phrase": "peradventure",
+      "definition": "perhaps"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss57",
+      "line": 106,
+      "phrase": "affability",
+      "definition": "friendly courtesy"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss58",
+      "line": 108,
+      "phrase": "derivation of my birth",
+      "definition": "pedigree; ancestry"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss59",
+      "line": 110,
+      "phrase": "cut off your head",
+      "definition": "Macmorris's blunt threat — the captains' scholarly dispute collapses into violence"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss60",
+      "line": 112,
+      "phrase": "parley",
+      "definition": "trumpet-call for a negotiation truce — signals the Harfleur governor's offer to talk"
+    },
+    {
+      "id": "henry_v_act3_scene2_gloss61",
+      "line": 116,
+      "phrase": "there is an end",
+      "definition": "Fluellen's dignified close — 'that's that'"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "henry_v_act3_scene2_ann1",
+      "line_start": 23,
+      "line_end": 44,
+      "citation_display": "Henry V 3.2.23–44",
+      "category": "structural",
+      "title": "The Boy's soliloquy — the war seen from below",
+      "body": "The Boy's long speech assessing Pistol, Bardolph, and Nym is one of the play's most important counter-frames. The Chorus has just shown us 'our swift scene' flying 'with imagined wing' to Harfleur; Henry has just delivered the breach oration. The Boy, aged perhaps twelve, walks onstage and gives us an adult appraisal: the three older men who are his masters are cowards, thieves, and frauds. The speech is clear-eyed ('I must leave them, and seek some better service'); it is also delivered directly to the audience, without irony. Later, at 4.4 and 4.7, the Boy will be revealed to have been left with the camp's luggage and killed by the French during their raid. The play thus frames the war with the perspective of an intelligent child whom the play allows to speak truly once, and then allows to die. Readers should notice whom Shakespeare trusts with clarity and whom he rewards with survival.",
+      "sources": [
+        "C. L. Barber, Shakespeare's Festive Comedy (1959)",
+        "Thomas Healy, Shakespeare, Alienation and the Early Modern Stage (1994)"
+      ]
+    },
+    {
+      "id": "henry_v_act3_scene2_ann2",
+      "line_start": 68,
+      "line_end": 110,
+      "citation_display": "Henry V 3.2.68–110",
+      "category": "thematic",
+      "title": "The four captains — a British Isles tableau, under stress",
+      "body": "This is Shakespeare's four-captains scene: Gower (English), Fluellen (Welsh), Jamy (Scottish), and Macmorris (Irish) serving together before Harfleur. It stages the emerging idea of a British Isles identity united in foreign war — the nationalist premise that would later underwrite the Stuart union of crowns. But the scene does not smooth the union. Fluellen's classical pedantry, Jamy's Scots-cadenced courtesy, and Macmorris's explosive defensiveness — 'What ish my nation? Who talks of my nation?' — stage the identity as contested at the moment of its formation. Macmorris is Shakespeare's only Irish character in the canon, and this is the most-discussed Irish line in Renaissance drama. It can be read as comic (an Irishman over-reacting to a routine Welsh observation) or as politically serious (an Irishman interrupting the construction of 'Britishness' to demand whose nation is being talked about). Modern productions and critics (especially post-1980 Irish scholarship) tend to the latter. The scene's unresolved tension — the parley sounds and the captains have to abandon their dispute — is the point: British identity is assembled under the pressure of a common French enemy, and unresolved by the assembly.",
+      "sources": [
+        "David Cairns & Shaun Richards, Writing Ireland (1988)",
+        "Philip Edwards, Threshold of a Nation (1979)",
+        "Andrew Murphy, But the Irish Sea Betwixt Us (1999)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "henry_v_act3_scene2_q1",
+      "kind": "inference",
+      "prompt": "What is the structural purpose of the Boy's speech (lines 23–44)?",
+      "options": [
+        "Pure comic relief",
+        "To introduce a child character who will survive the play",
+        "To provide a clear-eyed, adult-level critique of Pistol/Bardolph/Nym from below — delivered in the voice of a child the play will later permit to be killed offstage. The audience's only fully honest narrator is disposable",
+        "To translate Fluellen's Welsh for the audience"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 30,
+      "anchor_line_start": 23,
+      "anchor_line_end": 44
+    },
+    {
+      "id": "henry_v_act3_scene2_q2",
+      "kind": "theme",
+      "prompt": "Macmorris's line 'What ish my nation? Who talks of my nation?' is famous because —",
+      "options": [
+        "It is a nonsense line inserted for comedy only",
+        "Macmorris is Shakespeare's only Irish character; the line has become the most-cited Renaissance-drama passage in Irish studies, staging the contested nature of emergent British identity at the moment of its formation",
+        "It is a quotation from Holinshed",
+        "It is the longest line in the play"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 100,
+      "anchor_line_end": 103
+    },
+    {
+      "id": "henry_v_act3_scene2_q3",
+      "kind": "close_reading",
+      "prompt": "Fluellen's repeated phrase 'the disciplines of the war' signals what?",
+      "options": [
+        "His Welsh heritage",
+        "A serious critique of Henry's strategy",
+        "His pedantic preoccupation with classical military theory — especially the 'Roman' and 'pristine' wars he keeps citing; the catchphrase becomes a running comic signature",
+        "His religious beliefs"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 20,
+      "anchor_line_start": 49,
+      "anchor_line_end": 115
+    }
+  ]
+}

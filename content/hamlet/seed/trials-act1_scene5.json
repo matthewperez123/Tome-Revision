@@ -1,0 +1,89 @@
+{
+  "section_id": "hamlet_act1_scene5",
+  "trials": [
+    {
+      "kind": "comprehension",
+      "prompt": "According to the ghost, how did he die?",
+      "options": [
+        "A serpent bit him while he slept in his orchard — the official story.",
+        "Claudius poured poison into his ear while he slept in his orchard.",
+        "He was stabbed in the night by an unknown assailant.",
+        "He died of an illness Claudius had secretly encouraged."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 35,
+      "anchor_line_end": 80
+    },
+    {
+      "kind": "historical",
+      "prompt": "The ghost's description of being 'confined to fast in fires' most precisely places him in which theological location?",
+      "options": [
+        "Hell, the Catholic place of damnation.",
+        "Purgatory, the Catholic place of purification — officially abolished in the Church of England.",
+        "Limbo, the place of unbaptized souls.",
+        "Sheol, the Old Testament place of the dead."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 9,
+      "anchor_line_end": 22
+    },
+    {
+      "kind": "inference",
+      "prompt": "What specific constraint does the ghost place on how Hamlet should carry out his revenge?",
+      "options": [
+        "He must do it publicly before the whole court.",
+        "He must not harm his mother and must not corrupt his own mind in the process.",
+        "He must do it within the month or the ghost will return to haunt him.",
+        "He must do it without the help of any friends."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 82,
+      "anchor_line_end": 92
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "What does Hamlet mean by reaching for his 'tables' immediately after the ghost's departure?",
+      "options": [
+        "He is about to write a letter to Ophelia.",
+        "He is taking out a small writing-tablet to record his observations — a scholar's instinct in a moment of tragedy.",
+        "He is preparing to cast a spell to summon the ghost back.",
+        "He is setting up a table for Horatio's interrogation."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 107,
+      "anchor_line_end": 110
+    },
+    {
+      "kind": "theme",
+      "prompt": "What strategy does Hamlet announce he will adopt for the rest of the play?",
+      "options": [
+        "Open rebellion against the King.",
+        "Secret flight to Wittenberg to gather allies.",
+        "An 'antic disposition' — a put-on madness — to disguise his intentions.",
+        "Waiting silently until the ghost returns with further instructions."
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 15,
+      "anchor_line_start": 162,
+      "anchor_line_end": 170
+    },
+    {
+      "kind": "close_reading",
+      "prompt": "What does the image 'the time is out of joint' suggest?",
+      "options": [
+        "That winter has come unseasonably early.",
+        "That time is dislocated like a bone out of its socket, and Hamlet is called to reset it.",
+        "That Hamlet's wristwatch has broken.",
+        "That Denmark has abandoned the Christian calendar."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 174,
+      "anchor_line_end": 175
+    }
+  ]
+}

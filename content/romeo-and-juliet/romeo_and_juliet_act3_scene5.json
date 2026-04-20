@@ -1,0 +1,1784 @@
+{
+  "section_id": "romeo_and_juliet_act3_scene5",
+  "work_id": "romeo-and-juliet",
+  "sequence": 18,
+  "act": 3,
+  "scene": 5,
+  "kind": "scene",
+  "scene_title": "Capulet's orchard",
+  "line_count": 254,
+  "word_count": 1990,
+  "est_read_minutes": 10,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "JULIET",
+      "text": "Wilt thou be gone? it is not yet near day:"
+    },
+    {
+      "number": 2,
+      "speaker": "JULIET",
+      "text": "It was the nightingale, and not the lark,"
+    },
+    {
+      "number": 3,
+      "speaker": "JULIET",
+      "text": "That pierced the fearful hollow of thine ear;"
+    },
+    {
+      "number": 4,
+      "speaker": "JULIET",
+      "text": "Nightly she sings on yon pomegranate-tree:"
+    },
+    {
+      "number": 5,
+      "speaker": "JULIET",
+      "text": "Believe me, love, it was the nightingale."
+    },
+    {
+      "number": 6,
+      "speaker": "ROMEO",
+      "text": "It was the lark, the herald of the morn,"
+    },
+    {
+      "number": 7,
+      "speaker": "ROMEO",
+      "text": "No nightingale: look, love, what envious streaks"
+    },
+    {
+      "number": 8,
+      "speaker": "ROMEO",
+      "text": "Do lace the severing clouds in yonder east:"
+    },
+    {
+      "number": 9,
+      "speaker": "ROMEO",
+      "text": "Night’s candles are burnt out, and jocund day"
+    },
+    {
+      "number": 10,
+      "speaker": "ROMEO",
+      "text": "Stands tiptoe on the misty mountain tops."
+    },
+    {
+      "number": 11,
+      "speaker": "ROMEO",
+      "text": "I must be gone and live, or stay and die."
+    },
+    {
+      "number": 12,
+      "speaker": "JULIET",
+      "text": "Yon light is not day-light, I know it, I:"
+    },
+    {
+      "number": 13,
+      "speaker": "JULIET",
+      "text": "It is some meteor that the sun exhales,"
+    },
+    {
+      "number": 14,
+      "speaker": "JULIET",
+      "text": "To be to thee this night a torch-bearer,"
+    },
+    {
+      "number": 15,
+      "speaker": "JULIET",
+      "text": "And light thee on thy way to Mantua:"
+    },
+    {
+      "number": 16,
+      "speaker": "JULIET",
+      "text": "Therefore stay yet; thou need’st not to be gone."
+    },
+    {
+      "number": 17,
+      "speaker": "ROMEO",
+      "text": "Let me be ta’en, let me be put to death;"
+    },
+    {
+      "number": 18,
+      "speaker": "ROMEO",
+      "text": "I am content, so thou wilt have it so."
+    },
+    {
+      "number": 19,
+      "speaker": "ROMEO",
+      "text": "I’ll say yon grey is not the morning’s eye,"
+    },
+    {
+      "number": 20,
+      "speaker": "ROMEO",
+      "text": "’Tis but the pale reflex of Cynthia’s brow;"
+    },
+    {
+      "number": 21,
+      "speaker": "ROMEO",
+      "text": "Nor that is not the lark, whose notes do beat"
+    },
+    {
+      "number": 22,
+      "speaker": "ROMEO",
+      "text": "The vaulty heaven so high above our heads:"
+    },
+    {
+      "number": 23,
+      "speaker": "ROMEO",
+      "text": "I have more care to stay than will to go:"
+    },
+    {
+      "number": 24,
+      "speaker": "ROMEO",
+      "text": "Come, death, and welcome! Juliet wills it so."
+    },
+    {
+      "number": 25,
+      "speaker": "ROMEO",
+      "text": "How is’t, my soul? let’s talk; it is not day."
+    },
+    {
+      "number": 26,
+      "speaker": "JULIET",
+      "text": "It is, it is: hie hence, be gone, away!"
+    },
+    {
+      "number": 27,
+      "speaker": "JULIET",
+      "text": "It is the lark that sings so out of tune,"
+    },
+    {
+      "number": 28,
+      "speaker": "JULIET",
+      "text": "Straining harsh discords and unpleasing sharps."
+    },
+    {
+      "number": 29,
+      "speaker": "JULIET",
+      "text": "Some say the lark makes sweet division;"
+    },
+    {
+      "number": 30,
+      "speaker": "JULIET",
+      "text": "This doth not so, for she divideth us:"
+    },
+    {
+      "number": 31,
+      "speaker": "JULIET",
+      "text": "Some say the lark and loathed toad change eyes;"
+    },
+    {
+      "number": 32,
+      "speaker": "JULIET",
+      "text": "O, now I would they had changed voices too!"
+    },
+    {
+      "number": 33,
+      "speaker": "JULIET",
+      "text": "Since arm from arm that voice doth us affray,"
+    },
+    {
+      "number": 34,
+      "speaker": "JULIET",
+      "text": "Hunting thee hence with hunt’s-up to the day."
+    },
+    {
+      "number": 35,
+      "speaker": "JULIET",
+      "text": "O, now be gone; more light and light it grows."
+    },
+    {
+      "number": 36,
+      "speaker": "ROMEO",
+      "text": "More light and light; more dark and dark our woes!"
+    },
+    {
+      "number": 37,
+      "speaker": "NURSE",
+      "text": "Madam!"
+    },
+    {
+      "number": 37,
+      "speaker": "JULIET",
+      "text": "Nurse?"
+    },
+    {
+      "number": 38,
+      "speaker": "NURSE",
+      "text": "Your lady mother is coming to your chamber:"
+    },
+    {
+      "number": 39,
+      "speaker": "NURSE",
+      "text": "The day is broke; be wary, look about."
+    },
+    {
+      "number": 40,
+      "speaker": "JULIET",
+      "text": "Then, window, let day in, and let life out."
+    },
+    {
+      "number": 41,
+      "speaker": "ROMEO",
+      "text": "Farewell, farewell! one kiss, and I’ll descend. He goeth down."
+    },
+    {
+      "number": 42,
+      "speaker": "JULIET",
+      "text": "Art thou gone so? love, lord, ay, husband, friend!"
+    },
+    {
+      "number": 43,
+      "speaker": "JULIET",
+      "text": "I must hear from thee every day in the hour,"
+    },
+    {
+      "number": 44,
+      "speaker": "JULIET",
+      "text": "For in a minute there are many days:"
+    },
+    {
+      "number": 45,
+      "speaker": "JULIET",
+      "text": "O, by this count I shall be much in years"
+    },
+    {
+      "number": 46,
+      "speaker": "JULIET",
+      "text": "Ere I again behold my Romeo!"
+    },
+    {
+      "number": 46,
+      "speaker": "ROMEO",
+      "text": "Farewell!"
+    },
+    {
+      "number": 47,
+      "speaker": "ROMEO",
+      "text": "I will omit no opportunity"
+    },
+    {
+      "number": 48,
+      "speaker": "ROMEO",
+      "text": "That may convey my greetings, love, to thee."
+    },
+    {
+      "number": 49,
+      "speaker": "JULIET",
+      "text": "O think’st thou we shall ever meet again?"
+    },
+    {
+      "number": 50,
+      "speaker": "ROMEO",
+      "text": "I doubt it not; and all these woes shall serve"
+    },
+    {
+      "number": 51,
+      "speaker": "ROMEO",
+      "text": "For sweet discourses in our time to come."
+    },
+    {
+      "number": 52,
+      "speaker": "JULIET",
+      "text": "O God, I have an ill-divining soul!"
+    },
+    {
+      "number": 53,
+      "speaker": "JULIET",
+      "text": "Methinks I see thee, now thou art below,"
+    },
+    {
+      "number": 54,
+      "speaker": "JULIET",
+      "text": "As one dead in the bottom of a tomb:"
+    },
+    {
+      "number": 55,
+      "speaker": "JULIET",
+      "text": "Either my eyesight fails, or thou look’st pale."
+    },
+    {
+      "number": 56,
+      "speaker": "ROMEO",
+      "text": "And trust me, love, in my eye so do you:"
+    },
+    {
+      "number": 57,
+      "speaker": "ROMEO",
+      "text": "Dry sorrow drinks our blood. Adieu, adieu!"
+    },
+    {
+      "number": 58,
+      "speaker": "JULIET",
+      "text": "O fortune, fortune! all men call thee fickle:"
+    },
+    {
+      "number": 59,
+      "speaker": "JULIET",
+      "text": "If thou art fickle, what dost thou with him"
+    },
+    {
+      "number": 60,
+      "speaker": "JULIET",
+      "text": "That is renown’d for faith? Be fickle, fortune;"
+    },
+    {
+      "number": 61,
+      "speaker": "JULIET",
+      "text": "For then, I hope, thou wilt not keep him long,"
+    },
+    {
+      "number": 62,
+      "speaker": "JULIET",
+      "text": "But send him back."
+    },
+    {
+      "number": 62,
+      "speaker": "LADY CAPULET",
+      "text": "Ho, daughter! are you up?"
+    },
+    {
+      "number": 63,
+      "speaker": "JULIET",
+      "text": "Who is’t that calls? is it my lady mother?"
+    },
+    {
+      "number": 64,
+      "speaker": "JULIET",
+      "text": "Is she not down so late, or up so early?"
+    },
+    {
+      "number": 65,
+      "speaker": "JULIET",
+      "text": "What unaccustom’d cause procures her hither?"
+    },
+    {
+      "number": 65,
+      "speaker": "LADY CAPULET",
+      "text": "Why, how now, Juliet!"
+    },
+    {
+      "number": 66,
+      "speaker": "JULIET",
+      "text": "Madam, I am not well."
+    },
+    {
+      "number": 66,
+      "speaker": "LADY CAPULET",
+      "text": "Evermore weeping for your cousin’s death?"
+    },
+    {
+      "number": 67,
+      "speaker": "LADY CAPULET",
+      "text": "What, wilt thou wash him from his grave with tears?"
+    },
+    {
+      "number": 68,
+      "speaker": "LADY CAPULET",
+      "text": "An if thou couldst, thou couldst not make him live;"
+    },
+    {
+      "number": 69,
+      "speaker": "LADY CAPULET",
+      "text": "Therefore, have done: some grief shows much of love;"
+    },
+    {
+      "number": 70,
+      "speaker": "LADY CAPULET",
+      "text": "But much of grief shows still some want of wit."
+    },
+    {
+      "number": 71,
+      "speaker": "JULIET",
+      "text": "Yet let me weep for such a feeling loss."
+    },
+    {
+      "number": 72,
+      "speaker": "LADY CAPULET",
+      "text": "So shall you feel the loss, but not the friend"
+    },
+    {
+      "number": 73,
+      "speaker": "LADY CAPULET",
+      "text": "Which you weep for."
+    },
+    {
+      "number": 73,
+      "speaker": "JULIET",
+      "text": "Feeling so the loss,"
+    },
+    {
+      "number": 74,
+      "speaker": "JULIET",
+      "text": "I cannot choose but ever weep the friend."
+    },
+    {
+      "number": 75,
+      "speaker": "LADY CAPULET",
+      "text": "Well, girl, thou weep’st not so much for his death,"
+    },
+    {
+      "number": 76,
+      "speaker": "LADY CAPULET",
+      "text": "As that the villain lives which slaughter’d him."
+    },
+    {
+      "number": 77,
+      "speaker": "JULIET",
+      "text": "What villain, madam?"
+    },
+    {
+      "number": 77,
+      "speaker": "LADY CAPULET",
+      "text": "That same villain, Romeo."
+    },
+    {
+      "number": 78,
+      "speaker": "JULIET",
+      "text": "Villain and he be many miles asunder.—"
+    },
+    {
+      "number": 79,
+      "speaker": "JULIET",
+      "text": "God Pardon him! I do, with all my heart;"
+    },
+    {
+      "number": 80,
+      "speaker": "JULIET",
+      "text": "And yet no man like he doth grieve my heart."
+    },
+    {
+      "number": 81,
+      "speaker": "LADY CAPULET",
+      "text": "That is, because the traitor murderer lives."
+    },
+    {
+      "number": 82,
+      "speaker": "JULIET",
+      "text": "Ay, madam, from the reach of these my hands:"
+    },
+    {
+      "number": 83,
+      "speaker": "JULIET",
+      "text": "Would none but I might venge my cousin’s death!"
+    },
+    {
+      "number": 84,
+      "speaker": "LADY CAPULET",
+      "text": "We will have vengeance for it, fear thou not:"
+    },
+    {
+      "number": 85,
+      "speaker": "LADY CAPULET",
+      "text": "Then weep no more. I’ll send to one in Mantua,"
+    },
+    {
+      "number": 86,
+      "speaker": "LADY CAPULET",
+      "text": "Where that same banish’d runagate doth live,"
+    },
+    {
+      "number": 87,
+      "speaker": "LADY CAPULET",
+      "text": "Shall give him such an unaccustom’d dram,"
+    },
+    {
+      "number": 88,
+      "speaker": "LADY CAPULET",
+      "text": "That he shall soon keep Tybalt company:"
+    },
+    {
+      "number": 89,
+      "speaker": "LADY CAPULET",
+      "text": "And then, I hope, thou wilt be satisfied."
+    },
+    {
+      "number": 90,
+      "speaker": "JULIET",
+      "text": "Indeed, I never shall be satisfied"
+    },
+    {
+      "number": 91,
+      "speaker": "JULIET",
+      "text": "With Romeo, till I behold him—dead—"
+    },
+    {
+      "number": 92,
+      "speaker": "JULIET",
+      "text": "Is my poor heart so for a kinsman vex’d:"
+    },
+    {
+      "number": 93,
+      "speaker": "JULIET",
+      "text": "Madam, if you could find out but a man"
+    },
+    {
+      "number": 94,
+      "speaker": "JULIET",
+      "text": "To bear a poison, I would temper it;"
+    },
+    {
+      "number": 95,
+      "speaker": "JULIET",
+      "text": "That Romeo should, upon receipt thereof,"
+    },
+    {
+      "number": 96,
+      "speaker": "JULIET",
+      "text": "Soon sleep in quiet. O, how my heart abhors"
+    },
+    {
+      "number": 97,
+      "speaker": "JULIET",
+      "text": "To hear him named, and cannot come to him,"
+    },
+    {
+      "number": 98,
+      "speaker": "JULIET",
+      "text": "To wreak the love I bore my cousin"
+    },
+    {
+      "number": 99,
+      "speaker": "JULIET",
+      "text": "Upon his body that hath slaughter’d him!"
+    },
+    {
+      "number": 100,
+      "speaker": "LADY CAPULET",
+      "text": "Find thou the means, and I’ll find such a man."
+    },
+    {
+      "number": 101,
+      "speaker": "LADY CAPULET",
+      "text": "But now I’ll tell thee joyful tidings, girl."
+    },
+    {
+      "number": 102,
+      "speaker": "JULIET",
+      "text": "And joy comes well in such a needy time:"
+    },
+    {
+      "number": 103,
+      "speaker": "JULIET",
+      "text": "What are they, I beseech your ladyship?"
+    },
+    {
+      "number": 104,
+      "speaker": "LADY CAPULET",
+      "text": "Well, well, thou hast a careful father, child;"
+    },
+    {
+      "number": 105,
+      "speaker": "LADY CAPULET",
+      "text": "One who, to put thee from thy heaviness,"
+    },
+    {
+      "number": 106,
+      "speaker": "LADY CAPULET",
+      "text": "Hath sorted out a sudden day of joy,"
+    },
+    {
+      "number": 107,
+      "speaker": "LADY CAPULET",
+      "text": "That thou expect’st not nor I look’d not for."
+    },
+    {
+      "number": 108,
+      "speaker": "JULIET",
+      "text": "Madam, in happy time, what day is that?"
+    },
+    {
+      "number": 109,
+      "speaker": "LADY CAPULET",
+      "text": "Marry, my child, early next Thursday morn,"
+    },
+    {
+      "number": 110,
+      "speaker": "LADY CAPULET",
+      "text": "The gallant, young and noble gentleman,"
+    },
+    {
+      "number": 111,
+      "speaker": "LADY CAPULET",
+      "text": "The County Paris, at Saint Peter’s Church,"
+    },
+    {
+      "number": 112,
+      "speaker": "LADY CAPULET",
+      "text": "Shall happily make thee there a joyful bride."
+    },
+    {
+      "number": 113,
+      "speaker": "JULIET",
+      "text": "Now, by Saint Peter’s Church and Peter too,"
+    },
+    {
+      "number": 114,
+      "speaker": "JULIET",
+      "text": "He shall not make me there a joyful bride."
+    },
+    {
+      "number": 115,
+      "speaker": "JULIET",
+      "text": "I wonder at this haste; that I must wed"
+    },
+    {
+      "number": 116,
+      "speaker": "JULIET",
+      "text": "Ere he, that should be husband, comes to woo."
+    },
+    {
+      "number": 117,
+      "speaker": "JULIET",
+      "text": "I pray you, tell my lord and father, madam,"
+    },
+    {
+      "number": 118,
+      "speaker": "JULIET",
+      "text": "I will not marry yet; and, when I do, I swear,"
+    },
+    {
+      "number": 119,
+      "speaker": "JULIET",
+      "text": "It shall be Romeo, whom you know I hate,"
+    },
+    {
+      "number": 120,
+      "speaker": "JULIET",
+      "text": "Rather than Paris. These are news indeed!"
+    },
+    {
+      "number": 121,
+      "speaker": "LADY CAPULET",
+      "text": "Here comes your father; tell him so yourself,"
+    },
+    {
+      "number": 122,
+      "speaker": "LADY CAPULET",
+      "text": "And see how he will take it at your hands."
+    },
+    {
+      "number": 123,
+      "speaker": "CAPULET",
+      "text": "When the sun sets, the air doth drizzle dew;"
+    },
+    {
+      "number": 124,
+      "speaker": "CAPULET",
+      "text": "But for the sunset of my brother’s son"
+    },
+    {
+      "number": 125,
+      "speaker": "CAPULET",
+      "text": "It rains downright."
+    },
+    {
+      "number": 126,
+      "speaker": "CAPULET",
+      "text": "How now! a conduit, girl? what, still in tears?"
+    },
+    {
+      "number": 127,
+      "speaker": "CAPULET",
+      "text": "Evermore showering? In one little body"
+    },
+    {
+      "number": 128,
+      "speaker": "CAPULET",
+      "text": "Thou counterfeit’st a bark, a sea, a wind;"
+    },
+    {
+      "number": 129,
+      "speaker": "CAPULET",
+      "text": "For still thy eyes, which I may call the sea,"
+    },
+    {
+      "number": 130,
+      "speaker": "CAPULET",
+      "text": "Do ebb and flow with tears; the bark thy body is,"
+    },
+    {
+      "number": 131,
+      "speaker": "CAPULET",
+      "text": "Sailing in this salt flood; the winds, thy sighs;"
+    },
+    {
+      "number": 132,
+      "speaker": "CAPULET",
+      "text": "Who, raging with thy tears, and they with them,"
+    },
+    {
+      "number": 133,
+      "speaker": "CAPULET",
+      "text": "Without a sudden calm, will overset"
+    },
+    {
+      "number": 134,
+      "speaker": "CAPULET",
+      "text": "Thy tempest-tossed body. How now, wife!"
+    },
+    {
+      "number": 135,
+      "speaker": "CAPULET",
+      "text": "Have you deliver’d to her our decree?"
+    },
+    {
+      "number": 136,
+      "speaker": "LADY CAPULET",
+      "text": "Ay, sir; but she will none, she gives you thanks."
+    },
+    {
+      "number": 137,
+      "speaker": "LADY CAPULET",
+      "text": "I would the fool were married to her grave!"
+    },
+    {
+      "number": 138,
+      "speaker": "CAPULET",
+      "text": "Soft! take me with you, take me with you, wife."
+    },
+    {
+      "number": 139,
+      "speaker": "CAPULET",
+      "text": "How! will she none? doth she not give us thanks?"
+    },
+    {
+      "number": 140,
+      "speaker": "CAPULET",
+      "text": "Is she not proud? doth she not count her blest,"
+    },
+    {
+      "number": 141,
+      "speaker": "CAPULET",
+      "text": "Unworthy as she is, that we have wrought"
+    },
+    {
+      "number": 142,
+      "speaker": "CAPULET",
+      "text": "So worthy a gentleman to be her bridegroom?"
+    },
+    {
+      "number": 143,
+      "speaker": "JULIET",
+      "text": "Not proud, you have; but thankful, that you have:"
+    },
+    {
+      "number": 144,
+      "speaker": "JULIET",
+      "text": "Proud can I never be of what I hate;"
+    },
+    {
+      "number": 145,
+      "speaker": "JULIET",
+      "text": "But thankful even for hate, that is meant love."
+    },
+    {
+      "number": 146,
+      "speaker": "CAPULET",
+      "text": "How now, how now, chop-logic! What is this?"
+    },
+    {
+      "number": 147,
+      "speaker": "CAPULET",
+      "text": "“Proud,” and “I thank you,” and “I thank you not;”"
+    },
+    {
+      "number": 148,
+      "speaker": "CAPULET",
+      "text": "And yet “not proud:” mistress minion, you,"
+    },
+    {
+      "number": 149,
+      "speaker": "CAPULET",
+      "text": "Thank me no thankings, nor proud me no prouds,"
+    },
+    {
+      "number": 150,
+      "speaker": "CAPULET",
+      "text": "But fettle your fine joints ’gainst Thursday next,"
+    },
+    {
+      "number": 151,
+      "speaker": "CAPULET",
+      "text": "To go with Paris to Saint Peter’s Church,"
+    },
+    {
+      "number": 152,
+      "speaker": "CAPULET",
+      "text": "Or I will drag thee on a hurdle thither."
+    },
+    {
+      "number": 153,
+      "speaker": "CAPULET",
+      "text": "Out, you green-sickness carrion! out, you baggage!"
+    },
+    {
+      "number": 154,
+      "speaker": "CAPULET",
+      "text": "You tallow-face!"
+    },
+    {
+      "number": 154,
+      "speaker": "LADY CAPULET",
+      "text": "Fie, fie! what, are you mad?"
+    },
+    {
+      "number": 155,
+      "speaker": "JULIET",
+      "text": "Good father, I beseech you on my knees,"
+    },
+    {
+      "number": 156,
+      "speaker": "JULIET",
+      "text": "Hear me with patience but to speak a word."
+    },
+    {
+      "number": 157,
+      "speaker": "CAPULET",
+      "text": "Hang thee, young baggage! disobedient wretch!"
+    },
+    {
+      "number": 158,
+      "speaker": "CAPULET",
+      "text": "I tell thee what: get thee to church o’ Thursday,"
+    },
+    {
+      "number": 159,
+      "speaker": "CAPULET",
+      "text": "Or never after look me in the face:"
+    },
+    {
+      "number": 160,
+      "speaker": "CAPULET",
+      "text": "Speak not, reply not, do not answer me;"
+    },
+    {
+      "number": 161,
+      "speaker": "CAPULET",
+      "text": "My fingers itch. Wife, we scarce thought us blest"
+    },
+    {
+      "number": 162,
+      "speaker": "CAPULET",
+      "text": "That God had lent us but this only child;"
+    },
+    {
+      "number": 163,
+      "speaker": "CAPULET",
+      "text": "But now I see this one is one too much,"
+    },
+    {
+      "number": 164,
+      "speaker": "CAPULET",
+      "text": "And that we have a curse in having her:"
+    },
+    {
+      "number": 165,
+      "speaker": "CAPULET",
+      "text": "Out on her, hilding!"
+    },
+    {
+      "number": 165,
+      "speaker": "NURSE",
+      "text": "God in heaven bless her!"
+    },
+    {
+      "number": 166,
+      "speaker": "NURSE",
+      "text": "You are to blame, my lord, to rate her so."
+    },
+    {
+      "number": 167,
+      "speaker": "CAPULET",
+      "text": "And why, my lady wisdom? hold your tongue,"
+    },
+    {
+      "number": 168,
+      "speaker": "CAPULET",
+      "text": "Good prudence; smatter with your gossips, go."
+    },
+    {
+      "number": 169,
+      "speaker": "NURSE",
+      "text": "I speak no treason."
+    },
+    {
+      "number": 169,
+      "speaker": "CAPULET",
+      "text": "O, God ye god-den."
+    },
+    {
+      "number": 170,
+      "speaker": "NURSE",
+      "text": "May not one speak?"
+    },
+    {
+      "number": 170,
+      "speaker": "CAPULET",
+      "text": "Peace, you mumbling fool!"
+    },
+    {
+      "number": 171,
+      "speaker": "CAPULET",
+      "text": "Utter your gravity o’er a gossip’s bowl;"
+    },
+    {
+      "number": 172,
+      "speaker": "CAPULET",
+      "text": "For here we need it not."
+    },
+    {
+      "number": 172,
+      "speaker": "LADY CAPULET",
+      "text": "You are too hot."
+    },
+    {
+      "number": 173,
+      "speaker": "CAPULET",
+      "text": "God’s bread! it makes me mad:"
+    },
+    {
+      "number": 174,
+      "speaker": "CAPULET",
+      "text": "Day, night, hour, tide, time, work, play,"
+    },
+    {
+      "number": 175,
+      "speaker": "CAPULET",
+      "text": "Alone, in company, still my care hath been"
+    },
+    {
+      "number": 176,
+      "speaker": "CAPULET",
+      "text": "To have her match’d: and having now provided"
+    },
+    {
+      "number": 177,
+      "speaker": "CAPULET",
+      "text": "A gentleman of noble parentage,"
+    },
+    {
+      "number": 178,
+      "speaker": "CAPULET",
+      "text": "Of fair demesnes, youthful, and nobly train’d,"
+    },
+    {
+      "number": 179,
+      "speaker": "CAPULET",
+      "text": "Stuff’d, as they say, with honourable parts,"
+    },
+    {
+      "number": 180,
+      "speaker": "CAPULET",
+      "text": "Proportion’d as one’s thought would wish a man;"
+    },
+    {
+      "number": 181,
+      "speaker": "CAPULET",
+      "text": "And then to have a wretched puling fool,"
+    },
+    {
+      "number": 182,
+      "speaker": "CAPULET",
+      "text": "A whining mammet, in her fortune’s tender,"
+    },
+    {
+      "number": 183,
+      "speaker": "CAPULET",
+      "text": "To answer “I’ll not wed; I cannot love,"
+    },
+    {
+      "number": 184,
+      "speaker": "CAPULET",
+      "text": "I am too young; I pray you, pardon me.”"
+    },
+    {
+      "number": 185,
+      "speaker": "CAPULET",
+      "text": "But, an you will not wed, I’ll pardon you:"
+    },
+    {
+      "number": 186,
+      "speaker": "CAPULET",
+      "text": "Graze where you will, you shall not house with me:"
+    },
+    {
+      "number": 187,
+      "speaker": "CAPULET",
+      "text": "Look to’t, think on’t, I do not use to jest."
+    },
+    {
+      "number": 188,
+      "speaker": "CAPULET",
+      "text": "Thursday is near; lay hand on heart, advise:"
+    },
+    {
+      "number": 189,
+      "speaker": "CAPULET",
+      "text": "An you be mine, I’ll give you to my friend;"
+    },
+    {
+      "number": 190,
+      "speaker": "CAPULET",
+      "text": "An you be not, hang, beg, starve, die in the streets,"
+    },
+    {
+      "number": 191,
+      "speaker": "CAPULET",
+      "text": "For, by my soul, I’ll ne’er acknowledge thee,"
+    },
+    {
+      "number": 192,
+      "speaker": "CAPULET",
+      "text": "Nor what is mine shall never do thee good:"
+    },
+    {
+      "number": 193,
+      "speaker": "CAPULET",
+      "text": "Trust to’t, bethink you; I’ll not be forsworn."
+    },
+    {
+      "number": 194,
+      "speaker": "JULIET",
+      "text": "Is there no pity sitting in the clouds,"
+    },
+    {
+      "number": 195,
+      "speaker": "JULIET",
+      "text": "That sees into the bottom of my grief?"
+    },
+    {
+      "number": 196,
+      "speaker": "JULIET",
+      "text": "O, sweet my mother, cast me not away!"
+    },
+    {
+      "number": 197,
+      "speaker": "JULIET",
+      "text": "Delay this marriage for a month, a week;"
+    },
+    {
+      "number": 198,
+      "speaker": "JULIET",
+      "text": "Or, if you do not, make the bridal bed"
+    },
+    {
+      "number": 199,
+      "speaker": "JULIET",
+      "text": "In that dim monument where Tybalt lies."
+    },
+    {
+      "number": 200,
+      "speaker": "LADY CAPULET",
+      "text": "Talk not to me, for I’ll not speak a word:"
+    },
+    {
+      "number": 201,
+      "speaker": "LADY CAPULET",
+      "text": "Do as thou wilt, for I have done with thee."
+    },
+    {
+      "number": 202,
+      "speaker": "JULIET",
+      "text": "O God!—O nurse, how shall this be prevented?"
+    },
+    {
+      "number": 203,
+      "speaker": "JULIET",
+      "text": "My husband is on earth, my faith in heaven;"
+    },
+    {
+      "number": 204,
+      "speaker": "JULIET",
+      "text": "How shall that faith return again to earth,"
+    },
+    {
+      "number": 205,
+      "speaker": "JULIET",
+      "text": "Unless that husband send it me from heaven"
+    },
+    {
+      "number": 206,
+      "speaker": "JULIET",
+      "text": "By leaving earth? comfort me, counsel me."
+    },
+    {
+      "number": 207,
+      "speaker": "JULIET",
+      "text": "Alack, alack, that heaven should practise stratagems"
+    },
+    {
+      "number": 208,
+      "speaker": "JULIET",
+      "text": "Upon so soft a subject as myself!"
+    },
+    {
+      "number": 209,
+      "speaker": "JULIET",
+      "text": "What say’st thou? hast thou not a word of joy?"
+    },
+    {
+      "number": 210,
+      "speaker": "JULIET",
+      "text": "Some comfort, nurse."
+    },
+    {
+      "number": 210,
+      "speaker": "NURSE",
+      "text": "Faith, here it is."
+    },
+    {
+      "number": 211,
+      "speaker": "NURSE",
+      "text": "Romeo is banish’d; and all the world to nothing,"
+    },
+    {
+      "number": 212,
+      "speaker": "NURSE",
+      "text": "That he dares ne’er come back to challenge you;"
+    },
+    {
+      "number": 213,
+      "speaker": "NURSE",
+      "text": "Or, if he do, it needs must be by stealth."
+    },
+    {
+      "number": 214,
+      "speaker": "NURSE",
+      "text": "Then, since the case so stands as now it doth,"
+    },
+    {
+      "number": 215,
+      "speaker": "NURSE",
+      "text": "I think it best you married with the county."
+    },
+    {
+      "number": 216,
+      "speaker": "NURSE",
+      "text": "O, he’s a lovely gentleman!"
+    },
+    {
+      "number": 217,
+      "speaker": "NURSE",
+      "text": "Romeo’s a dishclout to him: an eagle, madam,"
+    },
+    {
+      "number": 218,
+      "speaker": "NURSE",
+      "text": "Hath not so green, so quick, so fair an eye"
+    },
+    {
+      "number": 219,
+      "speaker": "NURSE",
+      "text": "As Paris hath. Beshrew my very heart,"
+    },
+    {
+      "number": 220,
+      "speaker": "NURSE",
+      "text": "I think you are happy in this second match,"
+    },
+    {
+      "number": 221,
+      "speaker": "NURSE",
+      "text": "For it excels your first; or if it did not,"
+    },
+    {
+      "number": 222,
+      "speaker": "NURSE",
+      "text": "Your first is dead; or ’twere as good he were,"
+    },
+    {
+      "number": 223,
+      "speaker": "NURSE",
+      "text": "As living here and you no use of him."
+    },
+    {
+      "number": 224,
+      "speaker": "JULIET",
+      "text": "Speakest thou from thy heart?"
+    },
+    {
+      "number": 224,
+      "speaker": "NURSE",
+      "text": "And from my soul too;"
+    },
+    {
+      "number": 225,
+      "speaker": "NURSE",
+      "text": "Or else beshrew them both."
+    },
+    {
+      "number": 225,
+      "speaker": "JULIET",
+      "text": "Amen!"
+    },
+    {
+      "number": 226,
+      "speaker": "NURSE",
+      "text": "What?"
+    },
+    {
+      "number": 227,
+      "speaker": "JULIET",
+      "text": "Well, thou hast comforted me marvellous much."
+    },
+    {
+      "number": 228,
+      "speaker": "JULIET",
+      "text": "Go in; and tell my lady I am gone,"
+    },
+    {
+      "number": 229,
+      "speaker": "JULIET",
+      "text": "Having displeased my father, to Laurence’ cell,"
+    },
+    {
+      "number": 230,
+      "speaker": "JULIET",
+      "text": "To make confession and to be absolved."
+    },
+    {
+      "number": 231,
+      "speaker": "NURSE",
+      "text": "Marry, I will; and this is wisely done."
+    },
+    {
+      "number": 232,
+      "speaker": "JULIET",
+      "text": "Ancient damnation! O most wicked fiend!"
+    },
+    {
+      "number": 233,
+      "speaker": "JULIET",
+      "text": "Is it more sin to wish me thus forsworn,"
+    },
+    {
+      "number": 234,
+      "speaker": "JULIET",
+      "text": "Or to dispraise my lord with that same tongue"
+    },
+    {
+      "number": 235,
+      "speaker": "JULIET",
+      "text": "Which she hath praised him with above compare"
+    },
+    {
+      "number": 236,
+      "speaker": "JULIET",
+      "text": "So many thousand times? Go, counsellor;"
+    },
+    {
+      "number": 237,
+      "speaker": "JULIET",
+      "text": "Thou and my bosom henceforth shall be twain."
+    },
+    {
+      "number": 238,
+      "speaker": "JULIET",
+      "text": "I’ll to the friar, to know his remedy:"
+    },
+    {
+      "number": 239,
+      "speaker": "JULIET",
+      "text": "If all else fail, myself have power to die."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Romeo and Juliet above, at the window."
+    },
+    {
+      "after_line": 36,
+      "text": "Enter Nurse, to the chamber."
+    },
+    {
+      "after_line": 39,
+      "text": "Exit."
+    },
+    {
+      "after_line": 57,
+      "text": "Exit."
+    },
+    {
+      "after_line": 62,
+      "text": "Within."
+    },
+    {
+      "after_line": 65,
+      "text": "Enter Lady Capulet."
+    },
+    {
+      "after_line": 78,
+      "text": "Aside."
+    },
+    {
+      "after_line": 122,
+      "text": "Enter Capulet and Nurse."
+    },
+    {
+      "after_line": 193,
+      "text": "Exit."
+    },
+    {
+      "after_line": 201,
+      "text": "Exit."
+    },
+    {
+      "after_line": 231,
+      "text": "Exit."
+    },
+    {
+      "after_line": 239,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss1",
+      "line": 1,
+      "phrase": "Wilt thou be gone?",
+      "definition": "Juliet's opening line of the dawn-parting — the play's aubade"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss2",
+      "line": 2,
+      "phrase": "nightingale",
+      "definition": "the bird of night — lovers' bird"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss3",
+      "line": 3,
+      "phrase": "fearful",
+      "definition": "frightened; anxious"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss4",
+      "line": 2,
+      "phrase": "lark",
+      "definition": "bird of dawn — the morning's announcer"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss5",
+      "line": 4,
+      "phrase": "pomegranate-tree",
+      "definition": "the fruit tree in Capulet's orchard"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss6",
+      "line": 9,
+      "phrase": "jocund day",
+      "definition": "cheerful day"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss7",
+      "line": 13,
+      "phrase": "meteor that the sun exhales",
+      "definition": "the dawn light is a meteor, not dawn itself — Juliet's desperate astronomy"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss8",
+      "line": 20,
+      "phrase": "Cynthia’s brow",
+      "definition": "the moon (Cynthia = Diana, goddess of the moon) — Romeo yields to Juliet by naming dawn as moonlight"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss9",
+      "line": 23,
+      "phrase": "more care to stay than will to go",
+      "definition": "Romeo's willingness to die for her"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss10",
+      "line": 28,
+      "phrase": "sharps",
+      "definition": "high, shrill notes"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss11",
+      "line": 29,
+      "phrase": "division",
+      "definition": "a rapid run of musical notes"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss12",
+      "line": 30,
+      "phrase": "This doth not so",
+      "definition": "this lark, however, does not separate us kindly"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss13",
+      "line": 34,
+      "phrase": "hunting thee",
+      "definition": "chasing you from me"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss14",
+      "line": 33,
+      "phrase": "affray",
+      "definition": "frighten away"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss15",
+      "line": 31,
+      "phrase": "toad",
+      "definition": "the toad swallowed the lark's eye in folk belief — an ugly exchange"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss16",
+      "line": 34,
+      "phrase": "hunt’s up",
+      "definition": "morning horn-call announcing the hunt — and, by extension, dawn itself"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss17",
+      "line": 35,
+      "phrase": "More light and light it grows",
+      "definition": "the dawn wins the argument"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss18",
+      "line": 36,
+      "phrase": "More light and light; more dark and dark our woes!",
+      "definition": "brighter day = darker sorrow; the pivot of the scene"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss19",
+      "line": 103,
+      "phrase": "Ladyship",
+      "definition": "Juliet, addressed formally"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss20",
+      "line": 233,
+      "phrase": "thus",
+      "definition": "by descending the rope ladder"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss21",
+      "line": 52,
+      "phrase": "ill-divining soul",
+      "definition": "a soul with a gift for foreseeing ill — Juliet's prophetic dread"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss22",
+      "line": 54,
+      "phrase": "As one dead in the bottom of a tomb",
+      "definition": "Juliet imagines Romeo entombed — the vision of 5.3"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss23",
+      "line": 57,
+      "phrase": "Dry sorrow drinks our blood",
+      "definition": "dry sorrow = grief without tears; popular belief that grief literally drained the blood"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss24",
+      "line": 60,
+      "phrase": "fortune",
+      "definition": "fickle fortune — its inconstancy"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss25",
+      "line": 71,
+      "phrase": "feeling loss",
+      "definition": "grief that can be felt; real bereavement"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss26",
+      "line": 78,
+      "phrase": "villain",
+      "definition": "peasant; rogue — Lady Capulet's word for Romeo"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss27",
+      "line": 96,
+      "phrase": "My heart abhors",
+      "definition": "Lady Capulet bitterly vows revenge on Romeo"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss28",
+      "line": 86,
+      "phrase": "runagate",
+      "definition": "vagabond; fugitive"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss29",
+      "line": 87,
+      "phrase": "unaccustom’d dram",
+      "definition": "a dose of poison such as he's not used to"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss30",
+      "line": 107,
+      "phrase": "thou expect’st not nor I look’d not for",
+      "definition": "the surprise announcement of the Paris wedding"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss31",
+      "line": 109,
+      "phrase": "Thursday",
+      "definition": "Capulet's chosen date for Juliet's wedding to Paris"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss32",
+      "line": 172,
+      "phrase": "too hot",
+      "definition": "too early"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss33",
+      "line": 143,
+      "phrase": "Not proud, you have; but thankful, that you have",
+      "definition": "Juliet's threadbare courtesy — she declines Paris but thanks them"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss34",
+      "line": 148,
+      "phrase": "minion",
+      "definition": "hussy; spoiled one — Capulet's bitter word for his daughter"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss35",
+      "line": 150,
+      "phrase": "fettle your fine joints",
+      "definition": "prepare yourself; get ready"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss36",
+      "line": 152,
+      "phrase": "hurdle",
+      "definition": "the sled on which traitors were dragged to execution"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss37",
+      "line": 153,
+      "phrase": "green-sickness carrion",
+      "definition": "pale, chlorotic flesh — Capulet's vicious insult"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss38",
+      "line": 153,
+      "phrase": "baggage",
+      "definition": "loose woman; worthless girl"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss39",
+      "line": 165,
+      "phrase": "hilding",
+      "definition": "good-for-nothing wretch"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss40",
+      "line": 146,
+      "phrase": "chop-logic",
+      "definition": "hair-splitting reasoner"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss41",
+      "line": 157,
+      "phrase": "disobedient wretch",
+      "definition": "rebellious child"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss42",
+      "line": 173,
+      "phrase": "God’s bread",
+      "definition": "by the Eucharist — Capulet's oath"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss43",
+      "line": 178,
+      "phrase": "demesnes",
+      "definition": "estates"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss44",
+      "line": 179,
+      "phrase": "parts",
+      "definition": "qualities"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss45",
+      "line": 190,
+      "phrase": "beg",
+      "definition": "beg for bread"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss46",
+      "line": 199,
+      "phrase": "monument",
+      "definition": "family tomb — the one Juliet will soon enter"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss47",
+      "line": 167,
+      "phrase": "lady wisdom",
+      "definition": "sarcasm — the Nurse turned advisor"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss48",
+      "line": 219,
+      "phrase": "Beshrew",
+      "definition": "curse — the Nurse's mild oath"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss49",
+      "line": 217,
+      "phrase": "eagle",
+      "definition": "Paris's gaze, quick and sharp"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss50",
+      "line": 217,
+      "phrase": "dishclout",
+      "definition": "dishcloth — the Nurse's dismissal of Romeo"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss51",
+      "line": 224,
+      "phrase": "Speakest thou from thy heart?",
+      "definition": "Juliet's dawning recognition of the Nurse's betrayal"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss52",
+      "line": 225,
+      "phrase": "Amen!",
+      "definition": "Juliet bitterly agrees — but to a different prayer"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss53",
+      "line": 232,
+      "phrase": "ancient damnation",
+      "definition": "aged devil — Juliet's verdict on the Nurse who once nursed her"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss54",
+      "line": 237,
+      "phrase": "Thou and my bosom henceforth shall be twain",
+      "definition": "you and my heart are now severed — Juliet's final break with her nurse"
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_gloss55",
+      "line": 239,
+      "phrase": "If all else fail, myself have power to die",
+      "definition": "Juliet's turn to self-agency — the potion or the dagger"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_act3_scene5_ann1",
+      "line_start": 1,
+      "line_end": 36,
+      "citation_display": "Romeo and Juliet 3.5.1–36",
+      "category": "structural",
+      "title": "The aubade — a dawn-song sung in the wrong direction",
+      "body": "The aubade is the lyric tradition of lovers parting at dawn — typically she wishes the night would continue; he acknowledges that it must not. Shakespeare runs the convention with a twist. Juliet argues that the bird they hear is the nightingale (night's bird) rather than the lark (dawn's); Romeo at first concedes ('Let me be ta'en, let me be put to death'), accepting the fiction for the sake of one more hour. Then Juliet relents: 'It is the lark that sings so out of tune.' The reversal is devastating — once Juliet admits the dawn, it is real, and Romeo must go. The aubade tradition is courtly and erotic; here it is saturated with dread ('More light and light; more dark and dark our woes!'). Juliet's prophetic vision of Romeo 'As one dead in the bottom of a tomb' extends the tragedy's inexorable forward motion.",
+      "sources": [
+        "Jonathan Saville, The Medieval Erotic Alba (1972)",
+        "Jill L. Levenson, The Oxford Shakespeare: Romeo and Juliet (2000)"
+      ]
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_ann2",
+      "line_start": 126,
+      "line_end": 195,
+      "citation_display": "Romeo and Juliet 3.5.126–195",
+      "category": "thematic",
+      "title": "Capulet's rage — the patriarch's extreme response",
+      "body": "When Juliet refuses to marry Paris, Capulet's response is terrifying: 'Out, you green-sickness carrion! out, you baggage! / You tallow-face!' He threatens to drag her to the church 'on a hurdle' (the sled used for traitors' executions), disown her, starve her: 'Hang, beg, starve, die in the streets!' The violence is startling partly because Capulet has been genial elsewhere (1.2, 1.5). Shakespeare shows a father whose dynastic investment in his daughter (see 1.2's 'hopeful lady of my earth') curdles into rage the moment she asserts will. Lady Capulet's 'I would the fool were married to her grave' compounds the horror. This is not a study of uniquely bad parents but of the Elizabethan household under pressure: a patriarchal house discovering that its dynasty depends on the consent of a child.",
+      "sources": [
+        "Lawrence Stone, The Family, Sex and Marriage in England 1500–1800 (1977)",
+        "Coppélia Kahn, Man's Estate (1981)"
+      ]
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_ann3",
+      "line_start": 211,
+      "line_end": 246,
+      "citation_display": "Romeo and Juliet 3.5.211–246",
+      "category": "structural",
+      "title": "The Nurse's betrayal — 'ancient damnation'",
+      "body": "Facing the catastrophe her parents have delivered, Juliet turns to the Nurse who has loved her since the breast. The Nurse's counsel is pragmatic: marry Paris ('He's a lovely gentleman! / Romeo's a dishclout to him'). For Juliet this is betrayal absolute. Her aside — 'Ancient damnation! O most wicked fiend!' and 'Thou and my bosom henceforth shall be twain' — is the play's most painful break in adolescent relationship. She does not show the Nurse her shock; she protects the pretense and reserves her judgment for soliloquy. This is the moment Juliet is fully alone. From here, she will decide things on her own — the Friar becomes her only adviser, and her final decisions (the potion, the dagger) are her own. The Nurse does not reappear substantively after this scene.",
+      "sources": [
+        "Jill L. Levenson, The Oxford Shakespeare: Romeo and Juliet (2000)",
+        "Carol Rutter, Enter the Body (2001)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_act3_scene5_q1",
+      "kind": "structural",
+      "prompt": "The opening of 3.5 is a dawn-scene in a traditional lyric form. What is it?",
+      "options": [
+        "An elegy",
+        "An aubade — the medieval/Renaissance dawn-parting lyric of lovers",
+        "A pastoral dialogue",
+        "A prothalamion"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 36
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_q2",
+      "kind": "comprehension",
+      "prompt": "Why does Juliet initially insist the bird they hear is the nightingale, not the lark?",
+      "options": [
+        "She cannot tell birds apart",
+        "The nightingale sings by night; she is asking for more night — to keep Romeo from having to leave",
+        "She thinks the lark is sick",
+        "The lark cannot sing in the orchard"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 2,
+      "anchor_line_end": 20
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_q3",
+      "kind": "theme",
+      "prompt": "Capulet's rage against Juliet ('Hang, beg, starve, die in the streets!') reveals —",
+      "options": [
+        "That he has never loved her",
+        "A patriarchal dynasty's crisis when its only heir refuses to consent — his affection (1.2) turns to fury when his line depends on her will",
+        "That he is drunk",
+        "That he does not know who Juliet is"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 161,
+      "anchor_line_end": 175
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_q4",
+      "kind": "inference",
+      "prompt": "Juliet's response to the Nurse's advice (marry Paris, forget Romeo) is —",
+      "options": [
+        "Relieved agreement",
+        "A total break — 'Ancient damnation!' 'Thou and my bosom henceforth shall be twain' — Juliet is now alone in her decisions",
+        "Anger she shows openly to the Nurse",
+        "Indifference"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 235,
+      "anchor_line_end": 246
+    },
+    {
+      "id": "romeo_and_juliet_act3_scene5_q5",
+      "kind": "close_reading",
+      "prompt": "'More light and light; more dark and dark our woes!' — what rhetorical figure organises this line?",
+      "options": [
+        "Simile",
+        "Parallel structure with antithesis (the repetition 'more light and light' mirrored by 'more dark and dark')",
+        "Metonymy",
+        "Hendiadys"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 36,
+      "anchor_line_end": 37
+    }
+  ]
+}

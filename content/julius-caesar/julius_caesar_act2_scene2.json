@@ -1,0 +1,1025 @@
+{
+  "section_id": "julius_caesar_act2_scene2",
+  "work_id": "julius-caesar",
+  "sequence": 5,
+  "act": 2,
+  "scene": 2,
+  "kind": "scene",
+  "scene_title": "Caesar's house",
+  "line_count": 136,
+  "word_count": 1023,
+  "est_read_minutes": 5,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CAESAR",
+      "text": "Nor heaven nor earth have been at peace to-night:"
+    },
+    {
+      "number": 2,
+      "speaker": "CAESAR",
+      "text": "Thrice hath Calpurnia in her sleep cried out,"
+    },
+    {
+      "number": 3,
+      "speaker": "CAESAR",
+      "text": "“Help, ho! they murder Caesar!” Who’s within?"
+    },
+    {
+      "number": 4,
+      "speaker": "SERVANT",
+      "text": "My lord?"
+    },
+    {
+      "number": 5,
+      "speaker": "CAESAR",
+      "text": "Go bid the priests do present sacrifice"
+    },
+    {
+      "number": 6,
+      "speaker": "CAESAR",
+      "text": "And bring me their opinions of success."
+    },
+    {
+      "number": 7,
+      "speaker": "SERVANT",
+      "text": "I will, my lord."
+    },
+    {
+      "number": 8,
+      "speaker": "CALPURNIA",
+      "text": "What mean you, Caesar, think you to walk forth?"
+    },
+    {
+      "number": 9,
+      "speaker": "CALPURNIA",
+      "text": "You shall not stir out of your house to-day."
+    },
+    {
+      "number": 10,
+      "speaker": "CAESAR",
+      "text": "Caesar shall forth: the things that threaten’d me"
+    },
+    {
+      "number": 11,
+      "speaker": "CAESAR",
+      "text": "Ne’er look’d but on my back; when they shall see"
+    },
+    {
+      "number": 12,
+      "speaker": "CAESAR",
+      "text": "The face of Caesar, they are vanished."
+    },
+    {
+      "number": 13,
+      "speaker": "CALPURNIA",
+      "text": "Caesar, I never stood on ceremonies,"
+    },
+    {
+      "number": 14,
+      "speaker": "CALPURNIA",
+      "text": "Yet now they fright me. There is one within,"
+    },
+    {
+      "number": 15,
+      "speaker": "CALPURNIA",
+      "text": "Besides the things that we have heard and seen,"
+    },
+    {
+      "number": 16,
+      "speaker": "CALPURNIA",
+      "text": "Recounts most horrid sights seen by the watch."
+    },
+    {
+      "number": 17,
+      "speaker": "CALPURNIA",
+      "text": "A lioness hath whelped in the streets;"
+    },
+    {
+      "number": 18,
+      "speaker": "CALPURNIA",
+      "text": "And graves have yawn’d, and yielded up their dead;"
+    },
+    {
+      "number": 19,
+      "speaker": "CALPURNIA",
+      "text": "Fierce fiery warriors fought upon the clouds,"
+    },
+    {
+      "number": 20,
+      "speaker": "CALPURNIA",
+      "text": "In ranks and squadrons and right form of war,"
+    },
+    {
+      "number": 21,
+      "speaker": "CALPURNIA",
+      "text": "Which drizzled blood upon the Capitol;"
+    },
+    {
+      "number": 22,
+      "speaker": "CALPURNIA",
+      "text": "The noise of battle hurtled in the air,"
+    },
+    {
+      "number": 23,
+      "speaker": "CALPURNIA",
+      "text": "Horses did neigh, and dying men did groan,"
+    },
+    {
+      "number": 24,
+      "speaker": "CALPURNIA",
+      "text": "And ghosts did shriek and squeal about the streets."
+    },
+    {
+      "number": 25,
+      "speaker": "CALPURNIA",
+      "text": "O Caesar! these things are beyond all use,"
+    },
+    {
+      "number": 26,
+      "speaker": "CALPURNIA",
+      "text": "And I do fear them."
+    },
+    {
+      "number": 26,
+      "speaker": "CAESAR",
+      "text": "What can be avoided"
+    },
+    {
+      "number": 27,
+      "speaker": "CAESAR",
+      "text": "Whose end is purposed by the mighty gods?"
+    },
+    {
+      "number": 28,
+      "speaker": "CAESAR",
+      "text": "Yet Caesar shall go forth; for these predictions"
+    },
+    {
+      "number": 29,
+      "speaker": "CAESAR",
+      "text": "Are to the world in general as to Caesar."
+    },
+    {
+      "number": 30,
+      "speaker": "CALPURNIA",
+      "text": "When beggars die, there are no comets seen;"
+    },
+    {
+      "number": 31,
+      "speaker": "CALPURNIA",
+      "text": "The heavens themselves blaze forth the death of princes."
+    },
+    {
+      "number": 32,
+      "speaker": "CAESAR",
+      "text": "Cowards die many times before their deaths;"
+    },
+    {
+      "number": 33,
+      "speaker": "CAESAR",
+      "text": "The valiant never taste of death but once."
+    },
+    {
+      "number": 34,
+      "speaker": "CAESAR",
+      "text": "Of all the wonders that I yet have heard,"
+    },
+    {
+      "number": 35,
+      "speaker": "CAESAR",
+      "text": "It seems to me most strange that men should fear;"
+    },
+    {
+      "number": 36,
+      "speaker": "CAESAR",
+      "text": "Seeing that death, a necessary end,"
+    },
+    {
+      "number": 37,
+      "speaker": "CAESAR",
+      "text": "Will come when it will come."
+    },
+    {
+      "number": 38,
+      "speaker": "CAESAR",
+      "text": "What say the augurers?"
+    },
+    {
+      "number": 39,
+      "speaker": "SERVANT",
+      "text": "They would not have you to stir forth to-day."
+    },
+    {
+      "number": 40,
+      "speaker": "SERVANT",
+      "text": "Plucking the entrails of an offering forth,"
+    },
+    {
+      "number": 41,
+      "speaker": "SERVANT",
+      "text": "They could not find a heart within the beast."
+    },
+    {
+      "number": 42,
+      "speaker": "CAESAR",
+      "text": "The gods do this in shame of cowardice:"
+    },
+    {
+      "number": 43,
+      "speaker": "CAESAR",
+      "text": "Caesar should be a beast without a heart,"
+    },
+    {
+      "number": 44,
+      "speaker": "CAESAR",
+      "text": "If he should stay at home to-day for fear."
+    },
+    {
+      "number": 45,
+      "speaker": "CAESAR",
+      "text": "No, Caesar shall not: danger knows full well"
+    },
+    {
+      "number": 46,
+      "speaker": "CAESAR",
+      "text": "That Caesar is more dangerous than he:"
+    },
+    {
+      "number": 47,
+      "speaker": "CAESAR",
+      "text": "We are two lions litter’d in one day,"
+    },
+    {
+      "number": 48,
+      "speaker": "CAESAR",
+      "text": "And I the elder and more terrible:"
+    },
+    {
+      "number": 49,
+      "speaker": "CAESAR",
+      "text": "And Caesar shall go forth."
+    },
+    {
+      "number": 49,
+      "speaker": "CALPURNIA",
+      "text": "Alas, my lord,"
+    },
+    {
+      "number": 50,
+      "speaker": "CALPURNIA",
+      "text": "Your wisdom is consumed in confidence."
+    },
+    {
+      "number": 51,
+      "speaker": "CALPURNIA",
+      "text": "Do not go forth to-day: call it my fear"
+    },
+    {
+      "number": 52,
+      "speaker": "CALPURNIA",
+      "text": "That keeps you in the house, and not your own."
+    },
+    {
+      "number": 53,
+      "speaker": "CALPURNIA",
+      "text": "We’ll send Mark Antony to the senate-house;"
+    },
+    {
+      "number": 54,
+      "speaker": "CALPURNIA",
+      "text": "And he shall say you are not well to-day:"
+    },
+    {
+      "number": 55,
+      "speaker": "CALPURNIA",
+      "text": "Let me, upon my knee, prevail in this."
+    },
+    {
+      "number": 56,
+      "speaker": "CAESAR",
+      "text": "Mark Antony shall say I am not well;"
+    },
+    {
+      "number": 57,
+      "speaker": "CAESAR",
+      "text": "And, for thy humour, I will stay at home."
+    },
+    {
+      "number": 58,
+      "speaker": "CAESAR",
+      "text": "Here’s Decius Brutus, he shall tell them so."
+    },
+    {
+      "number": 59,
+      "speaker": "DECIUS",
+      "text": "Caesar, all hail! good morrow, worthy Caesar:"
+    },
+    {
+      "number": 60,
+      "speaker": "DECIUS",
+      "text": "I come to fetch you to the senate-house."
+    },
+    {
+      "number": 61,
+      "speaker": "CAESAR",
+      "text": "And you are come in very happy time,"
+    },
+    {
+      "number": 62,
+      "speaker": "CAESAR",
+      "text": "To bear my greeting to the senators"
+    },
+    {
+      "number": 63,
+      "speaker": "CAESAR",
+      "text": "And tell them that I will not come to-day:"
+    },
+    {
+      "number": 64,
+      "speaker": "CAESAR",
+      "text": "Cannot, is false, and that I dare not, falser:"
+    },
+    {
+      "number": 65,
+      "speaker": "CAESAR",
+      "text": "I will not come to-day: tell them so, Decius."
+    },
+    {
+      "number": 66,
+      "speaker": "CALPURNIA",
+      "text": "Say he is sick."
+    },
+    {
+      "number": 66,
+      "speaker": "CAESAR",
+      "text": "Shall Caesar send a lie?"
+    },
+    {
+      "number": 67,
+      "speaker": "CAESAR",
+      "text": "Have I in conquest stretch’d mine arm so far,"
+    },
+    {
+      "number": 68,
+      "speaker": "CAESAR",
+      "text": "To be afraid to tell graybeards the truth?"
+    },
+    {
+      "number": 69,
+      "speaker": "CAESAR",
+      "text": "Decius, go tell them Caesar will not come."
+    },
+    {
+      "number": 70,
+      "speaker": "DECIUS",
+      "text": "Most mighty Caesar, let me know some cause,"
+    },
+    {
+      "number": 71,
+      "speaker": "DECIUS",
+      "text": "Lest I be laugh’d at when I tell them so."
+    },
+    {
+      "number": 72,
+      "speaker": "CAESAR",
+      "text": "The cause is in my will: I will not come;"
+    },
+    {
+      "number": 73,
+      "speaker": "CAESAR",
+      "text": "That is enough to satisfy the senate."
+    },
+    {
+      "number": 74,
+      "speaker": "CAESAR",
+      "text": "But for your private satisfaction,"
+    },
+    {
+      "number": 75,
+      "speaker": "CAESAR",
+      "text": "Because I love you, I will let you know:"
+    },
+    {
+      "number": 76,
+      "speaker": "CAESAR",
+      "text": "Calpurnia here, my wife, stays me at home:"
+    },
+    {
+      "number": 77,
+      "speaker": "CAESAR",
+      "text": "She dreamt to-night she saw my statua,"
+    },
+    {
+      "number": 78,
+      "speaker": "CAESAR",
+      "text": "Which, like a fountain with an hundred spouts,"
+    },
+    {
+      "number": 79,
+      "speaker": "CAESAR",
+      "text": "Did run pure blood; and many lusty Romans"
+    },
+    {
+      "number": 80,
+      "speaker": "CAESAR",
+      "text": "Came smiling, and did bathe their hands in it:"
+    },
+    {
+      "number": 81,
+      "speaker": "CAESAR",
+      "text": "And these does she apply for warnings, and portents,"
+    },
+    {
+      "number": 82,
+      "speaker": "CAESAR",
+      "text": "And evils imminent; and on her knee"
+    },
+    {
+      "number": 83,
+      "speaker": "CAESAR",
+      "text": "Hath begg’d that I will stay at home to-day."
+    },
+    {
+      "number": 84,
+      "speaker": "DECIUS",
+      "text": "This dream is all amiss interpreted;"
+    },
+    {
+      "number": 85,
+      "speaker": "DECIUS",
+      "text": "It was a vision fair and fortunate:"
+    },
+    {
+      "number": 86,
+      "speaker": "DECIUS",
+      "text": "Your statue spouting blood in many pipes,"
+    },
+    {
+      "number": 87,
+      "speaker": "DECIUS",
+      "text": "In which so many smiling Romans bathed,"
+    },
+    {
+      "number": 88,
+      "speaker": "DECIUS",
+      "text": "Signifies that from you great Rome shall suck"
+    },
+    {
+      "number": 89,
+      "speaker": "DECIUS",
+      "text": "Reviving blood, and that great men shall press"
+    },
+    {
+      "number": 90,
+      "speaker": "DECIUS",
+      "text": "For tinctures, stains, relics and cognizance."
+    },
+    {
+      "number": 91,
+      "speaker": "DECIUS",
+      "text": "This by Calpurnia’s dream is signified."
+    },
+    {
+      "number": 92,
+      "speaker": "CAESAR",
+      "text": "And this way have you well expounded it."
+    },
+    {
+      "number": 93,
+      "speaker": "DECIUS",
+      "text": "I have, when you have heard what I can say:"
+    },
+    {
+      "number": 94,
+      "speaker": "DECIUS",
+      "text": "And know it now: the senate have concluded"
+    },
+    {
+      "number": 95,
+      "speaker": "DECIUS",
+      "text": "To give this day a crown to mighty Caesar."
+    },
+    {
+      "number": 96,
+      "speaker": "DECIUS",
+      "text": "If you shall send them word you will not come,"
+    },
+    {
+      "number": 97,
+      "speaker": "DECIUS",
+      "text": "Their minds may change. Besides, it were a mock"
+    },
+    {
+      "number": 98,
+      "speaker": "DECIUS",
+      "text": "Apt to be render’d, for someone to say"
+    },
+    {
+      "number": 99,
+      "speaker": "DECIUS",
+      "text": "“Break up the senate till another time,"
+    },
+    {
+      "number": 100,
+      "speaker": "DECIUS",
+      "text": "When Caesar’s wife shall meet with better dreams.”"
+    },
+    {
+      "number": 101,
+      "speaker": "DECIUS",
+      "text": "If Caesar hide himself, shall they not whisper"
+    },
+    {
+      "number": 102,
+      "speaker": "DECIUS",
+      "text": "“Lo, Caesar is afraid”?"
+    },
+    {
+      "number": 103,
+      "speaker": "DECIUS",
+      "text": "Pardon me, Caesar; for my dear dear love"
+    },
+    {
+      "number": 104,
+      "speaker": "DECIUS",
+      "text": "To our proceeding bids me tell you this;"
+    },
+    {
+      "number": 105,
+      "speaker": "DECIUS",
+      "text": "And reason to my love is liable."
+    },
+    {
+      "number": 106,
+      "speaker": "CAESAR",
+      "text": "How foolish do your fears seem now, Calpurnia!"
+    },
+    {
+      "number": 107,
+      "speaker": "CAESAR",
+      "text": "I am ashamed I did yield to them."
+    },
+    {
+      "number": 108,
+      "speaker": "CAESAR",
+      "text": "Give me my robe, for I will go."
+    },
+    {
+      "number": 109,
+      "speaker": "CAESAR",
+      "text": "And look where Publius is come to fetch me."
+    },
+    {
+      "number": 110,
+      "speaker": "PUBLIUS",
+      "text": "Good morrow, Caesar."
+    },
+    {
+      "number": 110,
+      "speaker": "CAESAR",
+      "text": "Welcome, Publius."
+    },
+    {
+      "number": 111,
+      "speaker": "CAESAR",
+      "text": "What, Brutus, are you stirr’d so early too?"
+    },
+    {
+      "number": 112,
+      "speaker": "CAESAR",
+      "text": "Good morrow, Casca. Caius Ligarius,"
+    },
+    {
+      "number": 113,
+      "speaker": "CAESAR",
+      "text": "Caesar was ne’er so much your enemy"
+    },
+    {
+      "number": 114,
+      "speaker": "CAESAR",
+      "text": "As that same ague which hath made you lean."
+    },
+    {
+      "number": 115,
+      "speaker": "CAESAR",
+      "text": "What is’t o’clock?"
+    },
+    {
+      "number": 115,
+      "speaker": "BRUTUS",
+      "text": "Caesar, ’tis strucken eight."
+    },
+    {
+      "number": 116,
+      "speaker": "CAESAR",
+      "text": "I thank you for your pains and courtesy."
+    },
+    {
+      "number": 117,
+      "speaker": "CAESAR",
+      "text": "See! Antony, that revels long o’ nights,"
+    },
+    {
+      "number": 118,
+      "speaker": "CAESAR",
+      "text": "Is notwithstanding up. Good morrow, Antony."
+    },
+    {
+      "number": 118,
+      "speaker": "ANTONY",
+      "text": "So to most noble Caesar."
+    },
+    {
+      "number": 119,
+      "speaker": "CAESAR",
+      "text": "Bid them prepare within:"
+    },
+    {
+      "number": 120,
+      "speaker": "CAESAR",
+      "text": "I am to blame to be thus waited for."
+    },
+    {
+      "number": 121,
+      "speaker": "CAESAR",
+      "text": "Now, Cinna: now, Metellus: what, Trebonius!"
+    },
+    {
+      "number": 122,
+      "speaker": "CAESAR",
+      "text": "I have an hour’s talk in store for you;"
+    },
+    {
+      "number": 123,
+      "speaker": "CAESAR",
+      "text": "Remember that you call on me to-day:"
+    },
+    {
+      "number": 124,
+      "speaker": "CAESAR",
+      "text": "Be near me, that I may remember you."
+    },
+    {
+      "number": 125,
+      "speaker": "TREBONIUS",
+      "text": "Caesar, I will: aside and so near will I be,"
+    },
+    {
+      "number": 126,
+      "speaker": "TREBONIUS",
+      "text": "That your best friends shall wish I had been further."
+    },
+    {
+      "number": 127,
+      "speaker": "CAESAR",
+      "text": "Good friends, go in, and taste some wine with me;"
+    },
+    {
+      "number": 128,
+      "speaker": "CAESAR",
+      "text": "And we, like friends, will straightway go together."
+    },
+    {
+      "number": 129,
+      "speaker": "BRUTUS",
+      "text": "That every like is not the same, O Caesar,"
+    },
+    {
+      "number": 130,
+      "speaker": "BRUTUS",
+      "text": "The heart of Brutus yearns to think upon!"
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Thunder and lightning. Enter Caesar, in his night-gown."
+    },
+    {
+      "after_line": 3,
+      "text": "Enter a Servant."
+    },
+    {
+      "after_line": 7,
+      "text": "Exit."
+    },
+    {
+      "after_line": 7,
+      "text": "Enter Calpurnia."
+    },
+    {
+      "after_line": 37,
+      "text": "Reenter Servant."
+    },
+    {
+      "after_line": 57,
+      "text": "Enter Decius."
+    },
+    {
+      "after_line": 108,
+      "text": "Enter Publius, Brutus, Ligarius, Metellus, Casca, Trebonius, and Cinna."
+    },
+    {
+      "after_line": 116,
+      "text": "Enter Antony."
+    },
+    {
+      "after_line": 129,
+      "text": "Aside."
+    },
+    {
+      "after_line": 130,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "julius_caesar_act2_scene2_gloss1",
+      "line": 2,
+      "phrase": "Thrice hath Calpurnia in her sleep cried out",
+      "definition": "three times in sleep Calpurnia has shouted — a significant number in Roman augury"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss2",
+      "line": 5,
+      "phrase": "present sacrifice",
+      "definition": "immediate ritual offering — to read omens from the victim's entrails"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss3",
+      "line": 13,
+      "phrase": "stood on ceremonies",
+      "definition": "insisted on ritual observances; been superstitious"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss4",
+      "line": 17,
+      "phrase": "lioness hath whelped in the streets",
+      "definition": "a lioness has given birth in the streets — a Roman prodigy; such unnatural events portended disaster"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss5",
+      "line": 18,
+      "phrase": "graves have yawn'd",
+      "definition": "graves have opened wide (yawned) and given up their dead — the standard apocalyptic prodigy"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss6",
+      "line": 19,
+      "phrase": "fiery warriors fought upon the clouds",
+      "definition": "armies seen battling in the air — a portent recorded in Plutarch and classical historians for Caesar's death"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss7",
+      "line": 22,
+      "phrase": "hurtled",
+      "definition": "crashed; clashed noisily"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss8",
+      "line": 25,
+      "phrase": "beyond all use",
+      "definition": "beyond all common experience; outside the natural order"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss9",
+      "line": 30,
+      "phrase": "When beggars die, there are no comets seen",
+      "definition": "the heavens do not mark commoners' deaths with portents — only princes'. Calpurnia's political cosmology justifies her fear"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss10",
+      "line": 32,
+      "phrase": "Cowards die many times before their deaths",
+      "definition": "the cowardly imagine their death often before it comes — Caesar's famous line justifying reckless valour"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss11",
+      "line": 38,
+      "phrase": "augurers",
+      "definition": "Roman priests (augurs) who read signs from bird-flight, animal entrails, and weather"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss12",
+      "line": 40,
+      "phrase": "Plucking the entrails of an offering",
+      "definition": "tearing out the guts of a sacrificial animal — haruspicy, Roman divination from entrails"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss13",
+      "line": 41,
+      "phrase": "could not find a heart within the beast",
+      "definition": "the sacrificial animal had no heart — the worst possible omen in Roman augury; the heart was the seat of life"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss14",
+      "line": 47,
+      "phrase": "two lions litter'd in one day",
+      "definition": "twin lions born the same day — Caesar figures himself and Danger as twins, himself the elder"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss15",
+      "line": 50,
+      "phrase": "wisdom is consumed in confidence",
+      "definition": "your wisdom is swallowed up by overconfidence"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss16",
+      "line": 57,
+      "phrase": "for thy humour",
+      "definition": "to humour you; for your mood"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss17",
+      "line": 59,
+      "phrase": "all hail",
+      "definition": "formal greeting — 'hail to you all'"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss18",
+      "line": 68,
+      "phrase": "graybeards",
+      "definition": "old men (the senators)"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss19",
+      "line": 77,
+      "phrase": "statua",
+      "definition": "statue (Elizabethan Latinate variant spelling)"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss20",
+      "line": 79,
+      "phrase": "lusty",
+      "definition": "vigorous; hearty"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss21",
+      "line": 85,
+      "phrase": "vision fair and fortunate",
+      "definition": "a lucky, favourable dream"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss22",
+      "line": 88,
+      "phrase": "from you great Rome shall suck / Reviving blood",
+      "definition": "Rome will draw revitalising blood from Caesar — Decius's deliberate misreading, flattering Caesar as a saintly source of national life"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss23",
+      "line": 90,
+      "phrase": "tinctures, stains, relics and cognizance",
+      "definition": "colours, blood-marks, keepsakes and badges of office — the tokens believers took from a martyr's body; Decius turns the dream into sanctification"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss24",
+      "line": 97,
+      "phrase": "mock / Apt to be render'd",
+      "definition": "a mockery that is likely to be made"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss25",
+      "line": 114,
+      "phrase": "ague",
+      "definition": "fever, especially a malarial one with alternating chills"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss26",
+      "line": 117,
+      "phrase": "revels long o' nights",
+      "definition": "stays up late partying"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss27",
+      "line": 125,
+      "phrase": "aside and so near will I be",
+      "definition": "I will be aside but so near — Trebonius's ominous aside; he plans to detain Antony outside during the murder"
+    },
+    {
+      "id": "julius_caesar_act2_scene2_gloss28",
+      "line": 129,
+      "phrase": "That every like is not the same",
+      "definition": "a friend in appearance is not always a friend in fact — Brutus's mournful aside"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "julius_caesar_act2_scene2_ann1",
+      "line_start": 1,
+      "line_end": 56,
+      "citation_display": "Julius Caesar 2.2.1–56",
+      "category": "structural",
+      "title": "Calpurnia's plea: 2.1 inverted",
+      "body": "The scene is the exact structural mirror of Portia's in 2.1. A wife pleads with her husband to share his state of mind and to change his course. The husband initially resists. Here Calpurnia reports dream-prodigies and physical signs — the lioness whelping, graves yawning, warriors in the clouds — all taken from Plutarch and from stock Roman lists of assassination-year portents. She is, briefly, successful: Caesar yields ('Mark Antony shall say I am not well').\n\nAnd then Decius arrives and reinterprets the dream. Shakespeare's stagecraft is merciless: Calpurnia's correct reading is displaced by Decius's flattering one, and Caesar dies within the hour. The scene enacts the reversal that 2.1 only set up. Portia wins her plea and is simply forgotten in the rush of plot; Calpurnia wins hers and is overridden by a skilled flatterer. Both wives are correct. Neither saves her husband.\n\nPlutarch's *Life of Caesar* §63 records the dream, Caesar's initial yielding, and the manipulation that reverses it. Shakespeare adds the specific rhetoric — 'tinctures, stains, relics and cognizance' — which reads Calpurnia's nightmare as saintly martyrdom rather than murder.",
+      "sources": [
+        "Plutarch, *Life of Caesar* §63 (North, 1579)",
+        "Phyllis Rackin, *Shakespeare and Women* (2005)",
+        "Coppélia Kahn, *Roman Shakespeare* (1997)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act2_scene2_ann2",
+      "line_start": 32,
+      "line_end": 37,
+      "citation_display": "Julius Caesar 2.2.32–37",
+      "category": "thematic",
+      "title": "'Cowards die many times before their deaths' — Caesar's philosophy",
+      "body": "Caesar's famous couplet offers a Stoic-inflected theory of fortitude: the fearful rehearse death constantly, the brave face it only once. The lines are rhetorically magnificent and philosophically coherent. They are also the words of a man who, moments earlier, sent priests to sacrifice and read entrails; whose wife's three nightmares have unnerved him; who has been half-argued out of attending the Senate.\n\nShakespeare is not exposing Caesar as hypocrite — that would be too small. He is showing that the public philosophical self-image and the private superstitious reality coexist in the same man, and that the Caesar who will walk into the Senate in 3.1 is the Caesar holding both at once. The valiant-coward distinction is sincerely held; it is also, at the moment it is spoken, already a disavowal of the Caesar who was about to stay home.",
+      "sources": [
+        "A. D. Nuttall, *Shakespeare the Thinker* (2007)",
+        "Paul A. Cantor (1976)"
+      ]
+    },
+    {
+      "id": "julius_caesar_act2_scene2_ann3",
+      "line_start": 84,
+      "line_end": 100,
+      "citation_display": "Julius Caesar 2.2.84–100",
+      "category": "close_reading",
+      "title": "Decius's re-reading: the dream turned inside out",
+      "body": "Calpurnia's dream of a statue running blood with Romans bathing their hands in it is clearly a premonition of the assassination. Decius reinterprets it as sanctification: Rome shall 'suck / Reviving blood' from Caesar, and men shall preserve 'tinctures, stains, relics and cognizance' — the vocabulary of relic-hunting at a martyr's shrine.\n\nThe reinterpretation works because Caesar wants it to. Decius tells Caesar what he most desires to hear: that the crowd will crown him today. The flattery is baited with just enough mockery ('it were a mock / Apt to be render'd' that Caesar's wife has bad dreams) to sting Caesar's honour. The three-step technique — flatter the ambition, shame the hesitation, rewrite the ominous sign — is as old as courtly politics and as current as contemporary demagoguery. Antony will use the same technique on the crowd in 3.2. Decius rehearses it here, in miniature, on Caesar.",
+      "sources": [
+        "Stephen Greenblatt, *Shakespearean Negotiations* (1988)",
+        "Wayne A. Rebhorn (1990)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "julius_caesar_act2_scene2_q1",
+      "kind": "theme",
+      "prompt": "The Calpurnia scene (2.2) functions structurally as:",
+      "options": [
+        "A subplot",
+        "A mirror of Portia's 2.1 scene — the same wife-plea structure, the same dismissal, the same husband's death following shortly after",
+        "A comic interlude",
+        "Exposition for new characters"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 56
+    },
+    {
+      "id": "julius_caesar_act2_scene2_q2",
+      "kind": "close_reading",
+      "prompt": "'Cowards die many times before their deaths' reveals:",
+      "options": [
+        "Caesar's military strategy",
+        "A Stoic-ish public self-image held by a Caesar who has nonetheless already been rattled by his wife's dreams and sent priests to sacrifice — the public philosophy and private superstition coexist in him",
+        "Shakespeare's own philosophy",
+        "Caesar's cowardice"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 32,
+      "anchor_line_end": 37
+    },
+    {
+      "id": "julius_caesar_act2_scene2_q3",
+      "kind": "inference",
+      "prompt": "Decius successfully reinterprets Calpurnia's dream because:",
+      "options": [
+        "His interpretation is more accurate",
+        "He tells Caesar exactly what Caesar wants to hear — that the dream foretells sanctification and that the Senate will crown him today — and mixes in just enough shame at being cowed by a wife's fear",
+        "He is a priest",
+        "Calpurnia wavers on her own reading"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 84,
+      "anchor_line_end": 100
+    },
+    {
+      "id": "julius_caesar_act2_scene2_q4",
+      "kind": "comprehension",
+      "prompt": "What is the worst omen the augurers deliver to Caesar?",
+      "options": [
+        "A comet at noon",
+        "A sacrificial animal with no heart — the worst possible haruspicial omen in Roman religion",
+        "Thunder without cloud",
+        "A crow on the Capitol"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 39,
+      "anchor_line_end": 41
+    },
+    {
+      "id": "julius_caesar_act2_scene2_q5",
+      "kind": "close_reading",
+      "prompt": "Trebonius's aside 'so near will I be, / That your best friends shall wish I had been further' functions as:",
+      "options": [
+        "Pledge of loyalty",
+        "Ominous foreshadowing — Trebonius is planning to detain Antony outside during the murder",
+        "A joke",
+        "A prayer"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 125,
+      "anchor_line_end": 126
+    }
+  ]
+}

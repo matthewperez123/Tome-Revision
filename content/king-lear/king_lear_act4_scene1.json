@@ -1,0 +1,737 @@
+{
+  "section_id": "king_lear_act4_scene1",
+  "work_id": "king-lear",
+  "sequence": 17,
+  "act": 4,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "The heath",
+  "line_count": 85,
+  "word_count": 639,
+  "est_read_minutes": 3,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "EDGAR",
+      "text": "Yet better thus, and known to be contemn’d,"
+    },
+    {
+      "number": 2,
+      "speaker": "EDGAR",
+      "text": "Than still contemn’d and flatter’d. To be worst,"
+    },
+    {
+      "number": 3,
+      "speaker": "EDGAR",
+      "text": "The lowest and most dejected thing of fortune,"
+    },
+    {
+      "number": 4,
+      "speaker": "EDGAR",
+      "text": "Stands still in esperance, lives not in fear:"
+    },
+    {
+      "number": 5,
+      "speaker": "EDGAR",
+      "text": "The lamentable change is from the best;"
+    },
+    {
+      "number": 6,
+      "speaker": "EDGAR",
+      "text": "The worst returns to laughter. Welcome, then,"
+    },
+    {
+      "number": 7,
+      "speaker": "EDGAR",
+      "text": "Thou unsubstantial air that I embrace!"
+    },
+    {
+      "number": 8,
+      "speaker": "EDGAR",
+      "text": "The wretch that thou hast blown unto the worst"
+    },
+    {
+      "number": 9,
+      "speaker": "EDGAR",
+      "text": "Owes nothing to thy blasts. But who comes here?"
+    },
+    {
+      "number": 10,
+      "speaker": "EDGAR",
+      "text": "My father, poorly led? World, world, O world!"
+    },
+    {
+      "number": 11,
+      "speaker": "EDGAR",
+      "text": "But that thy strange mutations make us hate thee,"
+    },
+    {
+      "number": 12,
+      "speaker": "EDGAR",
+      "text": "Lie would not yield to age."
+    },
+    {
+      "number": 13,
+      "speaker": "OLD MAN",
+      "text": "O, my good lord, I have been your tenant, and your father’s"
+    },
+    {
+      "number": 14,
+      "speaker": "OLD MAN",
+      "text": "tenant, these fourscore years."
+    },
+    {
+      "number": 15,
+      "speaker": "GLOUCESTER",
+      "text": "Away, get thee away; good friend, be gone:"
+    },
+    {
+      "number": 16,
+      "speaker": "GLOUCESTER",
+      "text": "Thy comforts can do me no good at all;"
+    },
+    {
+      "number": 17,
+      "speaker": "GLOUCESTER",
+      "text": "Thee they may hurt."
+    },
+    {
+      "number": 18,
+      "speaker": "OLD MAN",
+      "text": "Alack, sir, you cannot see your way."
+    },
+    {
+      "number": 19,
+      "speaker": "GLOUCESTER",
+      "text": "I have no way, and therefore want no eyes;"
+    },
+    {
+      "number": 20,
+      "speaker": "GLOUCESTER",
+      "text": "I stumbled when I saw: full oft ’tis seen,"
+    },
+    {
+      "number": 21,
+      "speaker": "GLOUCESTER",
+      "text": "Our means secure us, and our mere defects"
+    },
+    {
+      "number": 22,
+      "speaker": "GLOUCESTER",
+      "text": "Prove our commodities. O dear son Edgar,"
+    },
+    {
+      "number": 23,
+      "speaker": "GLOUCESTER",
+      "text": "The food of thy abused father’s wrath!"
+    },
+    {
+      "number": 24,
+      "speaker": "GLOUCESTER",
+      "text": "Might I but live to see thee in my touch,"
+    },
+    {
+      "number": 25,
+      "speaker": "GLOUCESTER",
+      "text": "I’ld say I had eyes again!"
+    },
+    {
+      "number": 25,
+      "speaker": "OLD MAN",
+      "text": "How now! Who’s there?"
+    },
+    {
+      "number": 26,
+      "speaker": "EDGAR",
+      "text": "O gods! Who is’t can say “I am at the worst”?"
+    },
+    {
+      "number": 27,
+      "speaker": "EDGAR",
+      "text": "I am worse than e’er I was."
+    },
+    {
+      "number": 28,
+      "speaker": "OLD MAN",
+      "text": "’Tis poor mad Tom."
+    },
+    {
+      "number": 29,
+      "speaker": "EDGAR",
+      "text": "And worse I may be yet: the worst is not"
+    },
+    {
+      "number": 30,
+      "speaker": "EDGAR",
+      "text": "So long as we can say “This is the worst.”"
+    },
+    {
+      "number": 31,
+      "speaker": "OLD MAN",
+      "text": "Fellow, where goest?"
+    },
+    {
+      "number": 31,
+      "speaker": "GLOUCESTER",
+      "text": "Is it a beggar-man?"
+    },
+    {
+      "number": 32,
+      "speaker": "OLD MAN",
+      "text": "Madman and beggar too."
+    },
+    {
+      "number": 33,
+      "speaker": "GLOUCESTER",
+      "text": "He has some reason, else he could not beg."
+    },
+    {
+      "number": 34,
+      "speaker": "GLOUCESTER",
+      "text": "I’ the last night’s storm I such a fellow saw;"
+    },
+    {
+      "number": 35,
+      "speaker": "GLOUCESTER",
+      "text": "Which made me think a man a worm: my son"
+    },
+    {
+      "number": 36,
+      "speaker": "GLOUCESTER",
+      "text": "Came then into my mind; and yet my mind"
+    },
+    {
+      "number": 37,
+      "speaker": "GLOUCESTER",
+      "text": "Was then scarce friends with him: I have heard more since."
+    },
+    {
+      "number": 38,
+      "speaker": "GLOUCESTER",
+      "text": "As flies to wanton boys, are we to the gods."
+    },
+    {
+      "number": 39,
+      "speaker": "GLOUCESTER",
+      "text": "They kill us for their sport."
+    },
+    {
+      "number": 39,
+      "speaker": "EDGAR",
+      "text": "How should this be?"
+    },
+    {
+      "number": 40,
+      "speaker": "EDGAR",
+      "text": "Bad is the trade that must play fool to sorrow,"
+    },
+    {
+      "number": 41,
+      "speaker": "EDGAR",
+      "text": "Angering itself and others.—Bless thee, master!"
+    },
+    {
+      "number": 41,
+      "speaker": "GLOUCESTER",
+      "text": "Is that the naked fellow?"
+    },
+    {
+      "number": 42,
+      "speaker": "OLD MAN",
+      "text": "Ay, my lord."
+    },
+    {
+      "number": 43,
+      "speaker": "GLOUCESTER",
+      "text": "Then, prithee, get thee gone: if, for my sake,"
+    },
+    {
+      "number": 44,
+      "speaker": "GLOUCESTER",
+      "text": "Thou wilt o’ertake us, hence a mile or twain,"
+    },
+    {
+      "number": 45,
+      "speaker": "GLOUCESTER",
+      "text": "I’ the way toward Dover, do it for ancient love;"
+    },
+    {
+      "number": 46,
+      "speaker": "GLOUCESTER",
+      "text": "And bring some covering for this naked soul,"
+    },
+    {
+      "number": 47,
+      "speaker": "GLOUCESTER",
+      "text": "Who I’ll entreat to lead me."
+    },
+    {
+      "number": 47,
+      "speaker": "OLD MAN",
+      "text": "Alack, sir, he is mad."
+    },
+    {
+      "number": 48,
+      "speaker": "GLOUCESTER",
+      "text": "’Tis the times’ plague, when madmen lead the blind."
+    },
+    {
+      "number": 49,
+      "speaker": "GLOUCESTER",
+      "text": "Do as I bid thee, or rather do thy pleasure;"
+    },
+    {
+      "number": 50,
+      "speaker": "GLOUCESTER",
+      "text": "Above the rest, be gone."
+    },
+    {
+      "number": 51,
+      "speaker": "OLD MAN",
+      "text": "I’ll bring him the best ’parel that I have,"
+    },
+    {
+      "number": 52,
+      "speaker": "OLD MAN",
+      "text": "Come on’t what will."
+    },
+    {
+      "number": 52,
+      "speaker": "GLOUCESTER",
+      "text": "Sirrah, naked fellow—"
+    },
+    {
+      "number": 53,
+      "speaker": "EDGAR",
+      "text": "Poor Tom’s a-cold. I cannot daub it further."
+    },
+    {
+      "number": 54,
+      "speaker": "GLOUCESTER",
+      "text": "Come hither, fellow."
+    },
+    {
+      "number": 55,
+      "speaker": "EDGAR",
+      "text": "And yet I must.—Bless thy sweet eyes, they bleed."
+    },
+    {
+      "number": 56,
+      "speaker": "GLOUCESTER",
+      "text": "Know’st thou the way to Dover?"
+    },
+    {
+      "number": 57,
+      "speaker": "EDGAR",
+      "text": "Both stile and gate, horse-way and foot-path. Poor Tom hath been scared"
+    },
+    {
+      "number": 58,
+      "speaker": "EDGAR",
+      "text": "out of his good wits: bless thee, good man’s son, from the"
+    },
+    {
+      "number": 59,
+      "speaker": "EDGAR",
+      "text": "foul fiend! five fiends have been in poor Tom at once; of"
+    },
+    {
+      "number": 60,
+      "speaker": "EDGAR",
+      "text": "lust, as Obidicut; Hobbididence, prince of dumbness; Mahu, of stealing; Modo, of"
+    },
+    {
+      "number": 61,
+      "speaker": "EDGAR",
+      "text": "murder; Flibbertigibbet, of mopping and mowing, who since possesses chambermaids and waiting-women."
+    },
+    {
+      "number": 62,
+      "speaker": "EDGAR",
+      "text": "So, bless thee, master!"
+    },
+    {
+      "number": 63,
+      "speaker": "GLOUCESTER",
+      "text": "Here, take this purse, thou whom the heavens’ plagues"
+    },
+    {
+      "number": 64,
+      "speaker": "GLOUCESTER",
+      "text": "Have humbled to all strokes: that I am wretched"
+    },
+    {
+      "number": 65,
+      "speaker": "GLOUCESTER",
+      "text": "Makes thee the happier: heavens, deal so still!"
+    },
+    {
+      "number": 66,
+      "speaker": "GLOUCESTER",
+      "text": "Let the superfluous and lust-dieted man,"
+    },
+    {
+      "number": 67,
+      "speaker": "GLOUCESTER",
+      "text": "That slaves your ordinance, that will not see"
+    },
+    {
+      "number": 68,
+      "speaker": "GLOUCESTER",
+      "text": "Because he doth not feel, feel your power quickly;"
+    },
+    {
+      "number": 69,
+      "speaker": "GLOUCESTER",
+      "text": "So distribution should undo excess,"
+    },
+    {
+      "number": 70,
+      "speaker": "GLOUCESTER",
+      "text": "And each man have enough. Dost thou know Dover?"
+    },
+    {
+      "number": 71,
+      "speaker": "EDGAR",
+      "text": "Ay, master."
+    },
+    {
+      "number": 72,
+      "speaker": "GLOUCESTER",
+      "text": "There is a cliff, whose high and bending head"
+    },
+    {
+      "number": 73,
+      "speaker": "GLOUCESTER",
+      "text": "Looks fearfully in the confined deep:"
+    },
+    {
+      "number": 74,
+      "speaker": "GLOUCESTER",
+      "text": "Bring me but to the very brim of it,"
+    },
+    {
+      "number": 75,
+      "speaker": "GLOUCESTER",
+      "text": "And I’ll repair the misery thou dost bear"
+    },
+    {
+      "number": 76,
+      "speaker": "GLOUCESTER",
+      "text": "With something rich about me: from that place"
+    },
+    {
+      "number": 77,
+      "speaker": "GLOUCESTER",
+      "text": "I shall no leading need."
+    },
+    {
+      "number": 77,
+      "speaker": "EDGAR",
+      "text": "Give me thy arm:"
+    },
+    {
+      "number": 78,
+      "speaker": "EDGAR",
+      "text": "Poor Tom shall lead thee."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Edgar."
+    },
+    {
+      "after_line": 0,
+      "text": "Enter Gloucester, led by an Old Man."
+    },
+    {
+      "after_line": 26,
+      "text": "Aside."
+    },
+    {
+      "after_line": 29,
+      "text": "Aside."
+    },
+    {
+      "after_line": 39,
+      "text": "Aside."
+    },
+    {
+      "after_line": 52,
+      "text": "Exit."
+    },
+    {
+      "after_line": 53,
+      "text": "Aside."
+    },
+    {
+      "after_line": 55,
+      "text": "Aside."
+    },
+    {
+      "after_line": 78,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act4_scene1_gloss1",
+      "line": 1,
+      "phrase": "contemn’d",
+      "definition": "despised"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss2",
+      "line": 3,
+      "phrase": "dejected thing of fortune",
+      "definition": "object abased by fortune"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss3",
+      "line": 6,
+      "phrase": "laughter",
+      "definition": "a subject for laughter — darkly ironic"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss6",
+      "line": 21,
+      "phrase": "Our means secure us",
+      "definition": "our comforts make us careless"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss8",
+      "line": 29,
+      "phrase": "worse",
+      "definition": "we are not at the worst / as long as we can say / 'This is the worst'"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss10",
+      "line": 38,
+      "phrase": "wanton",
+      "definition": "wanton in the old sense — undisciplined, cruel-playful"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss11",
+      "line": 45,
+      "phrase": "ancient love",
+      "definition": "long-standing affection"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss12",
+      "line": 15,
+      "phrase": "Get thee away",
+      "definition": "Gloucester's command — concerned for Tom's safety"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss13",
+      "line": 61,
+      "phrase": "Flibbertigibbet",
+      "definition": "demon from Harsnett's 1603 Declaration — recurs here from 3.4"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss14",
+      "line": 60,
+      "phrase": "Obidicut",
+      "definition": "demon from Harsnett's 1603 Declaration — a devil of lust"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss16",
+      "line": 60,
+      "phrase": "Mahu",
+      "definition": "demon from Harsnett's 1603 Declaration — recurs from 3.4"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss17",
+      "line": 60,
+      "phrase": "Modo",
+      "definition": "demon from Harsnett's 1603 Declaration — recurs from 3.4"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss18",
+      "line": 66,
+      "phrase": "lust-dieted",
+      "definition": "lust-fed — the luxurious who live on desire"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss19",
+      "line": 67,
+      "phrase": "slaves your ordinance",
+      "definition": "enslaves God's ordained order"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss20",
+      "line": 66,
+      "phrase": "superfluous and lust-dieted man",
+      "definition": "the over-fed rich — Gloucester's echo of Lear's 3.4 speech"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss21",
+      "line": 69,
+      "phrase": "Distribution should undo excess",
+      "definition": "wealth-sharing should erase excess — Gloucester's second echo of Lear"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss22",
+      "line": 1,
+      "phrase": "to be contemn’d",
+      "definition": "to be openly despised"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss23",
+      "line": 2,
+      "phrase": "still contemn’d and flatter’d",
+      "definition": "caught between contempt and flattery"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss24",
+      "line": 5,
+      "phrase": "lamentable change",
+      "definition": "pitiful reversal"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss25",
+      "line": 4,
+      "phrase": "esperance",
+      "definition": "hope"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss27",
+      "line": 23,
+      "phrase": "abused father",
+      "definition": "wronged father (Gloucester)"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss31",
+      "line": 45,
+      "phrase": "ancient love",
+      "definition": "old tenant-loyalty"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss33",
+      "line": 29,
+      "phrase": "worse",
+      "definition": "even worse now than at first"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss35",
+      "line": 63,
+      "phrase": "purse",
+      "definition": "Gloucester's gift to Tom"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss36",
+      "line": 64,
+      "phrase": "wretch",
+      "definition": "piteous creature"
+    },
+    {
+      "id": "king_lear_act4_scene1_gloss37",
+      "line": 66,
+      "phrase": "the superfluous and lust-dieted man",
+      "definition": "the overrich — Gloucester's echo of Lear's 3.4 speech"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act4_scene1_ann1",
+      "line_start": 36,
+      "line_end": 38,
+      "citation_display": "King Lear 4.1.36–38",
+      "category": "thematic",
+      "title": "'As flies to wanton boys' — the play's theological centerpiece",
+      "body": "Gloucester's 'As flies to wanton boys are we to the gods; / They kill us for their sport' is the most direct theological statement in Shakespeare. The image is borrowed from Plutarch and Montaigne, but Shakespeare's concentration is new: the gods are not merely indifferent, they are cruel-playful, like boys tearing the wings off insects. This is theological skepticism in its sharpest Jacobean form. Gloucester has just been blinded; he has lost his son through his own folly; he is being led across an open country by a beggar he does not recognise as Edgar. The image is earned. Critics have read Lear as Shakespeare's most religious play and as his most secular. Gloucester's line is a test case: a character in extremity voicing a cosmology in which the divine order is hostile. The play does not refute him. Gloucester's restoration in 5.3 (his heart 'burst smilingly') happens offstage, and even that is ambiguous. Virgil's verdict: Shakespeare does not finally arbitrate, but the weight of the line is that of a real question, not a rhetorical flourish.",
+      "sources": [
+        "William R. Elton, King Lear and the Gods (1966)",
+        "Stephen Greenblatt, Hamlet in Purgatory (2001)",
+        "Montaigne, 'Apology for Raymond Sebond' (trans. Florio, 1603)"
+      ]
+    },
+    {
+      "id": "king_lear_act4_scene1_ann2",
+      "line_start": 56,
+      "line_end": 65,
+      "citation_display": "King Lear 4.1.56–65",
+      "category": "historical",
+      "title": "The demons return — Flibbertigibbet, Obidicut, Hobbididance, Mahu, Modo",
+      "body": "Edgar's recital of demon-names here extends the Harsnett catalogue from 3.4. Five devils named in six lines: Flibbertigibbet (from 3.4), Obidicut (of lust), Hobbididance (dumbness), Mahu (stealing), Modo (murder), plus 'of mopping and mowing' (grimacing). This is the full taxonomy from Harsnett's Declaration, which Shakespeare is using to give Poor Tom a consistent demonological vocabulary. The demons are assigned specific sins, making Tom's ravings a mock-catechism of vice. Edgar is playing along with Gloucester's belief that a demon led him to the cliff; by naming demons from an exposed-fraud source, Shakespeare doubles the irony — the demons are theatrical props all the way down.",
+      "sources": [
+        "Samuel Harsnett, A Declaration of Egregious Popish Impostures (1603)",
+        "Stephen Greenblatt, 'Shakespeare and the Exorcists' in Shakespearean Negotiations (1988)"
+      ]
+    },
+    {
+      "id": "king_lear_act4_scene1_ann3",
+      "line_start": 66,
+      "line_end": 80,
+      "citation_display": "King Lear 4.1.66–80",
+      "category": "thematic",
+      "title": "Gloucester's redistributive ethics — 'Distribution should undo excess'",
+      "body": "Blind Gloucester, giving Tom his purse: 'Heavens, deal so still! / Let the superfluous and lust-dieted man, / That slaves your ordinance, that will not see / Because he does not feel, feel your power quickly; / So distribution should undo excess, / And each man have enough.' Gloucester's speech rhymes almost verbatim with Lear's 'Poor naked wretches' in 3.4. Both blind men (Lear in his madness, Gloucester in his eyes) reach the same redistributive conclusion: luxury should be redistributed to need, not hoarded. This is the play's most compressed political theology. Shakespeare has made the argument available in both plots: it is the moral conclusion drawn by the play's most radically suffering figures, in parallel, independently.",
+      "sources": [
+        "Terry Eagleton, William Shakespeare (1986)",
+        "Kiernan Ryan, Shakespeare (1989)"
+      ]
+    },
+    {
+      "id": "king_lear_act4_scene1_ann4",
+      "line_start": 18,
+      "line_end": 30,
+      "citation_display": "King Lear 4.1.18–30",
+      "category": "close_reading",
+      "title": "'The worst is not / So long as we can say, This is the worst'",
+      "body": "Edgar's aside — 'O gods! Who is't can say I am at the worst? / I am worse than e'er I was.... / The worst is not / So long as we can say, this is the worst' — is the play's most painfully recursive thought. Language can always name a new bottom, which means the bottom has not been reached. This is the inverse of consolation: the very capacity to articulate one's condition proves it is not yet final. Edgar has just seen his blinded father led by an old man; he has nowhere lower left to go, except that by saying so he demonstrates he does. The paradox is a gloss on the play's entire progression — each time we think the worst has come, another worse arrives. Cordelia's death in 5.3 is what finally silences the capacity to articulate; there is no this is the worst after her body appears.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)",
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act4_scene1_q1",
+      "kind": "theme",
+      "prompt": "What does Gloucester's 'As flies to wanton boys' claim?",
+      "options": [
+        "That the gods are just",
+        "That the gods are not merely indifferent but cruel-playful, treating humans as boys treat insects — the play's sharpest statement of theological skepticism",
+        "That there are no gods",
+        "That the gods sleep"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 36,
+      "anchor_line_end": 38
+    },
+    {
+      "id": "king_lear_act4_scene1_q2",
+      "kind": "structural",
+      "prompt": "How does Gloucester's 'distribution should undo excess' speech relate to Lear's 'poor naked wretches' speech?",
+      "options": [
+        "They have no relation",
+        "They are parallel — both blind men reaching the same redistributive conclusion independently; Shakespeare doubles the moral argument across both plots",
+        "Gloucester is quoting Lear",
+        "Lear later retracts his"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 66,
+      "anchor_line_end": 80
+    },
+    {
+      "id": "king_lear_act4_scene1_q3",
+      "kind": "close_reading",
+      "prompt": "What paradox does Edgar articulate in his 'the worst is not so long as we can say this is the worst' aside?",
+      "options": [
+        "That the worst is always behind us",
+        "Language's capacity to name a condition proves that condition is not final — the bottom has not been reached while we can still say so; the inverse of consolation",
+        "That speech is worthless",
+        "That only actions matter"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 30,
+      "anchor_line_start": 27,
+      "anchor_line_end": 32
+    }
+  ]
+}

@@ -1,0 +1,591 @@
+{
+  "section_id": "hamlet_act4_scene3",
+  "work_id": "hamlet",
+  "sequence": 14,
+  "act": 4,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "Another room in the castle",
+  "line_count": 69,
+  "word_count": 526,
+  "est_read_minutes": 3,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "KING",
+      "text": "I have sent to seek him, and to find the body."
+    },
+    {
+      "number": 2,
+      "speaker": "KING",
+      "text": "How dangerous is it that this man goes loose!"
+    },
+    {
+      "number": 3,
+      "speaker": "KING",
+      "text": "Yet must not we put the strong law on him:"
+    },
+    {
+      "number": 4,
+      "speaker": "KING",
+      "text": "He’s loved of the distracted multitude,"
+    },
+    {
+      "number": 5,
+      "speaker": "KING",
+      "text": "Who like not in their judgment, but their eyes:"
+    },
+    {
+      "number": 6,
+      "speaker": "KING",
+      "text": "And where ’tis so, the offender’s scourge is weigh’d,"
+    },
+    {
+      "number": 7,
+      "speaker": "KING",
+      "text": "But never the offence. To bear all smooth and even,"
+    },
+    {
+      "number": 8,
+      "speaker": "KING",
+      "text": "This sudden sending him away must seem"
+    },
+    {
+      "number": 9,
+      "speaker": "KING",
+      "text": "Deliberate pause: diseases desperate grown"
+    },
+    {
+      "number": 10,
+      "speaker": "KING",
+      "text": "By desperate appliance are relieved,"
+    },
+    {
+      "number": 11,
+      "speaker": "KING",
+      "text": "Or not at all."
+    },
+    {
+      "number": 12,
+      "speaker": "ROSENCRANTZ",
+      "text": "Where the dead body is bestow’d, my lord,"
+    },
+    {
+      "number": 13,
+      "speaker": "ROSENCRANTZ",
+      "text": "We cannot get from him."
+    },
+    {
+      "number": 13,
+      "speaker": "KING",
+      "text": "But where is he?"
+    },
+    {
+      "number": 14,
+      "speaker": "ROSENCRANTZ",
+      "text": "Without, my lord; guarded, to know your pleasure."
+    },
+    {
+      "number": 15,
+      "speaker": "KING",
+      "text": "Bring him before us."
+    },
+    {
+      "number": 15,
+      "speaker": "ROSENCRANTZ",
+      "text": "Ho, Guildenstern! bring in my lord."
+    },
+    {
+      "number": 16,
+      "speaker": "KING",
+      "text": "Now, Hamlet, where’s Polonius?"
+    },
+    {
+      "number": 16,
+      "speaker": "HAMLET",
+      "text": "At supper."
+    },
+    {
+      "number": 17,
+      "speaker": "KING",
+      "text": "At supper! where?"
+    },
+    {
+      "number": 18,
+      "speaker": "HAMLET",
+      "text": "Not where he eats, but where he is eaten: a certain convocation"
+    },
+    {
+      "number": 19,
+      "speaker": "HAMLET",
+      "text": "of politic worms are e’en at him. Your worm is your only"
+    },
+    {
+      "number": 20,
+      "speaker": "HAMLET",
+      "text": "emperor for diet: we fat all creatures else to fat us, and"
+    },
+    {
+      "number": 21,
+      "speaker": "HAMLET",
+      "text": "we fat ourselves for maggots: your fat king and your lean beggar"
+    },
+    {
+      "number": 22,
+      "speaker": "HAMLET",
+      "text": "is but variable service, two dishes, but to one table: that’s the"
+    },
+    {
+      "number": 23,
+      "speaker": "HAMLET",
+      "text": "end."
+    },
+    {
+      "number": 23,
+      "speaker": "KING",
+      "text": "Alas, alas!"
+    },
+    {
+      "number": 24,
+      "speaker": "HAMLET",
+      "text": "A man may fish with the worm that hath eat of a"
+    },
+    {
+      "number": 25,
+      "speaker": "HAMLET",
+      "text": "king, and eat of the fish that hath fed of that worm."
+    },
+    {
+      "number": 26,
+      "speaker": "KING",
+      "text": "What dost you mean by this?"
+    },
+    {
+      "number": 27,
+      "speaker": "HAMLET",
+      "text": "Nothing but to show you how a king may go a progress"
+    },
+    {
+      "number": 28,
+      "speaker": "HAMLET",
+      "text": "through the guts of a beggar."
+    },
+    {
+      "number": 28,
+      "speaker": "KING",
+      "text": "Where is Polonius?"
+    },
+    {
+      "number": 29,
+      "speaker": "HAMLET",
+      "text": "In heaven; send hither to see: if your messenger find him not"
+    },
+    {
+      "number": 30,
+      "speaker": "HAMLET",
+      "text": "there, seek him i’ the other place yourself. But indeed, if you"
+    },
+    {
+      "number": 31,
+      "speaker": "HAMLET",
+      "text": "find him not within this month, you shall nose him as you"
+    },
+    {
+      "number": 32,
+      "speaker": "HAMLET",
+      "text": "go up the stairs into the lobby."
+    },
+    {
+      "number": 33,
+      "speaker": "KING",
+      "text": "Go seek him there. To some Attendants."
+    },
+    {
+      "number": 34,
+      "speaker": "HAMLET",
+      "text": "He will stay till ye come."
+    },
+    {
+      "number": 35,
+      "speaker": "KING",
+      "text": "Hamlet, this deed, for thine especial safety—"
+    },
+    {
+      "number": 36,
+      "speaker": "KING",
+      "text": "Which we do tender, as we dearly grieve"
+    },
+    {
+      "number": 37,
+      "speaker": "KING",
+      "text": "For that which thou hast done—must send thee hence"
+    },
+    {
+      "number": 38,
+      "speaker": "KING",
+      "text": "With fiery quickness: therefore prepare thyself;"
+    },
+    {
+      "number": 39,
+      "speaker": "KING",
+      "text": "The bark is ready, and the wind at help,"
+    },
+    {
+      "number": 40,
+      "speaker": "KING",
+      "text": "The associates tend, and every thing is bent"
+    },
+    {
+      "number": 41,
+      "speaker": "KING",
+      "text": "For England."
+    },
+    {
+      "number": 41,
+      "speaker": "HAMLET",
+      "text": "For England!"
+    },
+    {
+      "number": 42,
+      "speaker": "KING",
+      "text": "Ay, Hamlet."
+    },
+    {
+      "number": 42,
+      "speaker": "HAMLET",
+      "text": "Good."
+    },
+    {
+      "number": 43,
+      "speaker": "KING",
+      "text": "So is it, if thou knew’st our purposes."
+    },
+    {
+      "number": 44,
+      "speaker": "HAMLET",
+      "text": "I see a cherub that sees them. But, come; for England! Farewell, dear mother."
+    },
+    {
+      "number": 45,
+      "speaker": "KING",
+      "text": "Thy loving father, Hamlet."
+    },
+    {
+      "number": 46,
+      "speaker": "HAMLET",
+      "text": "My mother: father and mother is man and wife; man and wife"
+    },
+    {
+      "number": 47,
+      "speaker": "HAMLET",
+      "text": "is one flesh; and so, my mother. Come, for England!"
+    },
+    {
+      "number": 48,
+      "speaker": "KING",
+      "text": "Follow him at foot; tempt him with speed aboard;"
+    },
+    {
+      "number": 49,
+      "speaker": "KING",
+      "text": "Delay it not; I’ll have him hence to-night:"
+    },
+    {
+      "number": 50,
+      "speaker": "KING",
+      "text": "Away! for every thing is seal’d and done"
+    },
+    {
+      "number": 51,
+      "speaker": "KING",
+      "text": "That else leans on the affair: pray you, make haste."
+    },
+    {
+      "number": 52,
+      "speaker": "KING",
+      "text": "And, England, if my love thou hold’st at aught—"
+    },
+    {
+      "number": 53,
+      "speaker": "KING",
+      "text": "As my great power thereof may give thee sense,"
+    },
+    {
+      "number": 54,
+      "speaker": "KING",
+      "text": "Since yet thy cicatrice looks raw and red"
+    },
+    {
+      "number": 55,
+      "speaker": "KING",
+      "text": "After the Danish sword, and thy free awe"
+    },
+    {
+      "number": 56,
+      "speaker": "KING",
+      "text": "Pays homage to us—thou mayst not coldly set"
+    },
+    {
+      "number": 57,
+      "speaker": "KING",
+      "text": "Our sovereign process; which imports at full,"
+    },
+    {
+      "number": 58,
+      "speaker": "KING",
+      "text": "By letters congruing to that effect,"
+    },
+    {
+      "number": 59,
+      "speaker": "KING",
+      "text": "The present death of Hamlet. Do it, England;"
+    },
+    {
+      "number": 60,
+      "speaker": "KING",
+      "text": "For like the hectic in my blood he rages,"
+    },
+    {
+      "number": 61,
+      "speaker": "KING",
+      "text": "And thou must cure me: till I know ’tis done,"
+    },
+    {
+      "number": 62,
+      "speaker": "KING",
+      "text": "Howe’er my haps, my joys were ne’er begun."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter King, attended."
+    },
+    {
+      "after_line": 11,
+      "text": "Enter Rosencrantz."
+    },
+    {
+      "after_line": 11,
+      "text": "How now! what hath befall’n?"
+    },
+    {
+      "after_line": 15,
+      "text": "Enter Hamlet and Guildenstern."
+    },
+    {
+      "after_line": 34,
+      "text": "Exeunt Attendants."
+    },
+    {
+      "after_line": 47,
+      "text": "Exit."
+    },
+    {
+      "after_line": 51,
+      "text": "Exeunt Rosencrantz and Guildenstern."
+    },
+    {
+      "after_line": 62,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "hamlet_act4_scene3_gloss1",
+      "line": 2,
+      "phrase": "loose",
+      "definition": "release; free"
+    },
+    {
+      "id": "hamlet_act4_scene3_gloss2",
+      "line": 4,
+      "phrase": "distracted multitude",
+      "definition": "confused mob"
+    },
+    {
+      "id": "hamlet_act4_scene3_gloss3",
+      "line": 5,
+      "phrase": "Who like not in their judgment, but their eyes",
+      "definition": "who judge by appearance, not thought"
+    },
+    {
+      "id": "hamlet_act4_scene3_gloss4",
+      "line": 7,
+      "phrase": "bear all smooth and even",
+      "definition": "keep everything running smoothly"
+    },
+    {
+      "id": "hamlet_act4_scene3_gloss5",
+      "line": 8,
+      "phrase": "sudden",
+      "definition": "swift; impulsive"
+    },
+    {
+      "id": "hamlet_act4_scene3_gloss6",
+      "line": 9,
+      "phrase": "deliberate pause",
+      "definition": "thoughtful delay"
+    },
+    {
+      "id": "hamlet_act4_scene3_gloss7",
+      "line": 9,
+      "phrase": "Diseases desperate grown",
+      "definition": "diseases that have become dangerous"
+    },
+    {
+      "id": "hamlet_act4_scene3_gloss8",
+      "line": 10,
+      "phrase": "appliance",
+      "definition": "treatment"
+    },
+    {
+      "id": "hamlet_act4_scene3_gloss9",
+      "line": 19,
+      "phrase": "worm",
+      "definition": "the worm that eats corpses (memento mori)"
+    },
+    {
+      "id": "hamlet_act4_scene3_gloss10",
+      "line": 19,
+      "phrase": "politic worms are e’en at him",
+      "definition": "worms that govern like politicians are at him now"
+    },
+    {
+      "id": "hamlet_act4_scene3_gloss11",
+      "line": 22,
+      "phrase": "two dishes, but to one table",
+      "definition": "two courses at one feast (for worms)"
+    },
+    {
+      "id": "hamlet_act4_scene3_gloss12",
+      "line": 22,
+      "phrase": "variable service",
+      "definition": "different courses"
+    },
+    {
+      "id": "hamlet_act4_scene3_gloss13",
+      "line": 35,
+      "phrase": "tender",
+      "definition": "hold dear"
+    },
+    {
+      "id": "hamlet_act4_scene3_gloss14",
+      "line": 38,
+      "phrase": "bark",
+      "definition": "ship"
+    },
+    {
+      "id": "hamlet_act4_scene3_gloss15",
+      "line": 39,
+      "phrase": "bent",
+      "definition": "set; directed"
+    },
+    {
+      "id": "hamlet_act4_scene3_gloss16",
+      "line": 38,
+      "phrase": "at help",
+      "definition": "favorable"
+    },
+    {
+      "id": "hamlet_act4_scene3_gloss17",
+      "line": 39,
+      "phrase": "associates tend",
+      "definition": "companions await you"
+    },
+    {
+      "id": "hamlet_act4_scene3_gloss18",
+      "line": 58,
+      "phrase": "England",
+      "definition": "the King of England (addressed as a vassal)"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "hamlet_act4_scene3_ann1",
+      "line_start": 17,
+      "line_end": 32,
+      "citation_display": "Hamlet 4.3.17–32",
+      "category": "thematic",
+      "title": "'Your worm is your only emperor for diet'",
+      "body": "Hamlet's lecture to Claudius on worms, kings, and beggars is one of the play's great meditations on mortality: 'we fat all creatures else to fat us, and we fat ourselves for maggots.' The argument moves through the food chain and arrives at a leveling truth: a king may travel, via a fish, through the guts of a beggar. The rhetoric is grotesque but philosophically precise — it dismantles the doctrine of the king's two bodies. A king is meat like any other meat. The speech is Hamlet's cruelest to Claudius, because it is delivered in the code of madness the King must accept while understanding perfectly its content. Only in Act 5, in the graveyard, will Hamlet return to this meditation with a different spirit.",
+      "sources": [
+        "Harold Bloom, Shakespeare: The Invention of the Human (1998)"
+      ]
+    },
+    {
+      "id": "hamlet_act4_scene3_ann2",
+      "line_start": 55,
+      "line_end": 70,
+      "citation_display": "Hamlet 4.3.55–70",
+      "category": "structural",
+      "title": "The sealed commission and the secret plot",
+      "body": "Claudius's final soliloquy reveals what the audience has suspected and the play has not yet confirmed: the letter Hamlet carries to England is a death warrant. The monarch who in 3.3 could not pray effectively now directs the pen with cold efficiency. The lines 'thou must cure me: till I know 'tis done, / Howe'er my haps, my joys were ne'er begun' are a small masterpiece of compromised hope. Shakespeare holds two portraits of Claudius in superposition throughout the play — the penitent and the manager — and the second is what we see here. The commission will become the hinge of Act 5, when Hamlet, aboard ship, discovers and rewrites it.",
+      "sources": [
+        "Geoffrey Bullough, Narrative and Dramatic Sources of Shakespeare, vol. 7 (1973)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "hamlet_act4_scene3_q1",
+      "kind": "close_reading",
+      "prompt": "What is Hamlet's parable of the 'politic worms,' the fisherman, and the fish meant to demonstrate?",
+      "options": [
+        "That worms will inherit the earth.",
+        "That death levels kings and beggars: a monarch may end in a beggar's belly.",
+        "That fishing is a noble art.",
+        "That Denmark is being eaten away by corrupt politicians."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 19,
+      "anchor_line_end": 28
+    },
+    {
+      "id": "hamlet_act4_scene3_q2",
+      "kind": "comprehension",
+      "prompt": "Where does Hamlet finally say Polonius may be found?",
+      "options": [
+        "In the castle cellars, preserved in salt.",
+        "In heaven — and if the messenger does not find him there, he should check hell.",
+        "Buried beneath the orchard where old Hamlet died.",
+        "In the chapel where Claudius prays."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 10,
+      "anchor_line_start": 30,
+      "anchor_line_end": 36
+    },
+    {
+      "id": "hamlet_act4_scene3_q3",
+      "kind": "inference",
+      "prompt": "What does Claudius's soliloquy at the end of the scene reveal?",
+      "options": [
+        "That he has repented of his crime and will confess.",
+        "That the sealed commission to England instructs the English king to execute Hamlet at once.",
+        "That Gertrude has joined the plot against Hamlet.",
+        "That Polonius is not dead but hiding."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 55,
+      "anchor_line_end": 70
+    },
+    {
+      "id": "hamlet_act4_scene3_q4",
+      "kind": "theme",
+      "prompt": "What is the function of the comparison Claudius makes between Denmark's claim on England and a 'hectic' fever?",
+      "options": [
+        "It suggests that English politics are feverishly disordered.",
+        "It frames Hamlet's execution as a kind of political medicine — a treatment for a raging illness within Claudius himself.",
+        "It is a joke at the expense of the English king's cowardice.",
+        "It indicates that Hamlet has contracted a fever in the voyage."
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 66,
+      "anchor_line_end": 70
+    }
+  ]
+}

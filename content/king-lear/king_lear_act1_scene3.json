@@ -1,0 +1,258 @@
+{
+  "section_id": "king_lear_act1_scene3",
+  "work_id": "king-lear",
+  "sequence": 3,
+  "act": 1,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "The Duke of Albany's palace",
+  "line_count": 27,
+  "word_count": 219,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "GONERIL",
+      "text": "Did my father strike my gentleman for chiding of his fool?"
+    },
+    {
+      "number": 2,
+      "speaker": "OSWALD",
+      "text": "Yes, madam."
+    },
+    {
+      "number": 3,
+      "speaker": "GONERIL",
+      "text": "By day and night he wrongs me; every hour"
+    },
+    {
+      "number": 4,
+      "speaker": "GONERIL",
+      "text": "He flashes into one gross crime or other,"
+    },
+    {
+      "number": 5,
+      "speaker": "GONERIL",
+      "text": "That sets us all at odds: I’ll not endure it:"
+    },
+    {
+      "number": 6,
+      "speaker": "GONERIL",
+      "text": "His knights grow riotous, and himself upbraids us"
+    },
+    {
+      "number": 7,
+      "speaker": "GONERIL",
+      "text": "On every trifle. When he returns from hunting,"
+    },
+    {
+      "number": 8,
+      "speaker": "GONERIL",
+      "text": "I will not speak with him; say I am sick:"
+    },
+    {
+      "number": 9,
+      "speaker": "GONERIL",
+      "text": "If you come slack of former services,"
+    },
+    {
+      "number": 10,
+      "speaker": "GONERIL",
+      "text": "You shall do well; the fault of it I’ll answer."
+    },
+    {
+      "number": 11,
+      "speaker": "OSWALD",
+      "text": "He’s coming, madam; I hear him. Horns within."
+    },
+    {
+      "number": 12,
+      "speaker": "GONERIL",
+      "text": "Put on what weary negligence you please,"
+    },
+    {
+      "number": 13,
+      "speaker": "GONERIL",
+      "text": "You and your fellows; I’ll have it come to question:"
+    },
+    {
+      "number": 14,
+      "speaker": "GONERIL",
+      "text": "If he dislike it, let him to our sister,"
+    },
+    {
+      "number": 15,
+      "speaker": "GONERIL",
+      "text": "Whose mind and mine, I know, in that are one,"
+    },
+    {
+      "number": 16,
+      "speaker": "GONERIL",
+      "text": "Not to be over-ruled. Idle old man,"
+    },
+    {
+      "number": 17,
+      "speaker": "GONERIL",
+      "text": "That still would manage those authorities"
+    },
+    {
+      "number": 18,
+      "speaker": "GONERIL",
+      "text": "That he hath given away! Now, by my life,"
+    },
+    {
+      "number": 19,
+      "speaker": "GONERIL",
+      "text": "Old fools are babes again; and must be used"
+    },
+    {
+      "number": 20,
+      "speaker": "GONERIL",
+      "text": "With cheques as flatteries—when they are seen abused."
+    },
+    {
+      "number": 21,
+      "speaker": "GONERIL",
+      "text": "Remember what I tell you."
+    },
+    {
+      "number": 21,
+      "speaker": "OSWALD",
+      "text": "Well, madam."
+    },
+    {
+      "number": 22,
+      "speaker": "GONERIL",
+      "text": "And let his knights have colder looks among you;"
+    },
+    {
+      "number": 23,
+      "speaker": "GONERIL",
+      "text": "What grows of it, no matter; advise your fellows so:"
+    },
+    {
+      "number": 24,
+      "speaker": "GONERIL",
+      "text": "I would breed from hence occasions, and I shall,"
+    },
+    {
+      "number": 25,
+      "speaker": "GONERIL",
+      "text": "That I may speak: I’ll write straight to my sister,"
+    },
+    {
+      "number": 26,
+      "speaker": "GONERIL",
+      "text": "To hold my very course. Prepare for dinner."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Goneril, and Oswald, her steward."
+    },
+    {
+      "after_line": 26,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act1_scene3_gloss1",
+      "line": 1,
+      "phrase": "chiding",
+      "definition": "scolding — Lear's fool is punished"
+    },
+    {
+      "id": "king_lear_act1_scene3_gloss2",
+      "line": 6,
+      "phrase": "riotous",
+      "definition": "unruly; disorderly"
+    },
+    {
+      "id": "king_lear_act1_scene3_gloss3",
+      "line": 3,
+      "phrase": "By day and night",
+      "definition": "oath — constantly"
+    },
+    {
+      "id": "king_lear_act1_scene3_gloss4",
+      "line": 4,
+      "phrase": "flashes",
+      "definition": "outbursts"
+    },
+    {
+      "id": "king_lear_act1_scene3_gloss5",
+      "line": 9,
+      "phrase": "come slack of former services",
+      "definition": "fall short of the service we used to give"
+    },
+    {
+      "id": "king_lear_act1_scene3_gloss7",
+      "line": 16,
+      "phrase": "idle old man",
+      "definition": "doting old man — Goneril's cold formula for her father"
+    },
+    {
+      "id": "king_lear_act1_scene3_gloss8",
+      "line": 17,
+      "phrase": "still would manage those authorities",
+      "definition": "still wants to wield the powers"
+    },
+    {
+      "id": "king_lear_act1_scene3_gloss12",
+      "line": 1,
+      "phrase": "his fool",
+      "definition": "the Fool — Lear's licensed jester"
+    },
+    {
+      "id": "king_lear_act1_scene3_gloss13",
+      "line": 6,
+      "phrase": "to-night",
+      "definition": "tonight"
+    },
+    {
+      "id": "king_lear_act1_scene3_gloss14",
+      "line": 20,
+      "phrase": "abused",
+      "definition": "wronged; mistreated"
+    },
+    {
+      "id": "king_lear_act1_scene3_gloss16",
+      "line": 19,
+      "phrase": "old fools are babes again",
+      "definition": "proverb — the old become children a second time"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act1_scene3_ann1",
+      "line_start": 1,
+      "line_end": 27,
+      "citation_display": "King Lear 1.3.1–27",
+      "category": "structural",
+      "title": "Goneril's strategy — speed, provocation, documented grievance",
+      "body": "Goneril's brief twenty-seven-line scene with Oswald is a compressed study in practical politics. She orders the household to slack service to Lear, encourages grievances, tells Oswald she 'would breed from hence occasions' — manufactured provocations. The plan is to make Lear angry enough that his anger itself will provide cover for the retinue-reduction she has already decided to impose. This is Shakespeare's quickest demonstration of how the sisters operate: by creating the appearance of Lear's instability so that the punishment they intend can be framed as response rather than premeditation. Goneril anticipates modern PR.",
+      "sources": [
+        "Marilyn French, Shakespeare's Division of Experience (1981)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act1_scene3_q1",
+      "kind": "inference",
+      "prompt": "What is Goneril's strategy in 1.3?",
+      "options": [
+        "To patiently care for her father",
+        "To instruct her household to provoke Lear — manufacturing grievances so that her planned retinue-reduction can appear to respond to his bad behavior rather than precede it",
+        "To beg Lear to leave",
+        "To consult with Regan first"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 1,
+      "anchor_line_end": 27
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "section_id": "romeo_and_juliet_prologue",
+  "work_id": "romeo-and-juliet",
+  "sequence": 1,
+  "act": null,
+  "scene": null,
+  "kind": "chorus",
+  "scene_title": "Prologue",
+  "line_count": 14,
+  "word_count": 106,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CHORUS",
+      "text": "Two households, both alike in dignity,"
+    },
+    {
+      "number": 2,
+      "speaker": "CHORUS",
+      "text": "In fair Verona, where we lay our scene,"
+    },
+    {
+      "number": 3,
+      "speaker": "CHORUS",
+      "text": "From ancient grudge break to new mutiny,"
+    },
+    {
+      "number": 4,
+      "speaker": "CHORUS",
+      "text": "Where civil blood makes civil hands unclean."
+    },
+    {
+      "number": 5,
+      "speaker": "CHORUS",
+      "text": "From forth the fatal loins of these two foes"
+    },
+    {
+      "number": 6,
+      "speaker": "CHORUS",
+      "text": "A pair of star-cross’d lovers take their life;"
+    },
+    {
+      "number": 7,
+      "speaker": "CHORUS",
+      "text": "Whose misadventured piteous overthrows"
+    },
+    {
+      "number": 8,
+      "speaker": "CHORUS",
+      "text": "Do with their death bury their parents’ strife."
+    },
+    {
+      "number": 9,
+      "speaker": "CHORUS",
+      "text": "The fearful passage of their death-mark’d love,"
+    },
+    {
+      "number": 10,
+      "speaker": "CHORUS",
+      "text": "And the continuance of their parents’ rage,"
+    },
+    {
+      "number": 11,
+      "speaker": "CHORUS",
+      "text": "Which, but their children’s end, nought could remove,"
+    },
+    {
+      "number": 12,
+      "speaker": "CHORUS",
+      "text": "Is now the two hours’ traffic of our stage;"
+    },
+    {
+      "number": 13,
+      "speaker": "CHORUS",
+      "text": "The which if you with patient ears attend,"
+    },
+    {
+      "number": 14,
+      "speaker": "CHORUS",
+      "text": "What here shall miss, our toil shall strive to mend."
+    }
+  ],
+  "stage_directions": [],
+  "glosses": [
+    {
+      "id": "romeo_and_juliet_prologue_gloss1",
+      "line": 1,
+      "phrase": "dignity",
+      "definition": "social rank; noble status"
+    },
+    {
+      "id": "romeo_and_juliet_prologue_gloss2",
+      "line": 3,
+      "phrase": "ancient grudge",
+      "definition": "long-standing feud — the hostility predates the play"
+    },
+    {
+      "id": "romeo_and_juliet_prologue_gloss3",
+      "line": 3,
+      "phrase": "mutiny",
+      "definition": "civil strife; public disorder — not military rebellion"
+    },
+    {
+      "id": "romeo_and_juliet_prologue_gloss4",
+      "line": 4,
+      "phrase": "civil blood makes civil hands unclean",
+      "definition": "the blood of citizens stains the hands of fellow citizens — kinsmen killing kinsmen"
+    },
+    {
+      "id": "romeo_and_juliet_prologue_gloss5",
+      "line": 5,
+      "phrase": "forth the fatal loins",
+      "definition": "from the doomed reproductive line — the lovers are fated from conception"
+    },
+    {
+      "id": "romeo_and_juliet_prologue_gloss6",
+      "line": 6,
+      "phrase": "star-cross’d",
+      "definition": "fated by the stars to misfortune — Elizabethans believed the stars at birth determined destiny"
+    },
+    {
+      "id": "romeo_and_juliet_prologue_gloss7",
+      "line": 7,
+      "phrase": "misadventured",
+      "definition": "unfortunate; ill-fated"
+    },
+    {
+      "id": "romeo_and_juliet_prologue_gloss8",
+      "line": 7,
+      "phrase": "piteous overthrows",
+      "definition": "pitiable ruin; tragic downfalls"
+    },
+    {
+      "id": "romeo_and_juliet_prologue_gloss9",
+      "line": 8,
+      "phrase": "bury their parents’ strife",
+      "definition": "their deaths end the feud — only the children's death could stop the parents' quarrel"
+    },
+    {
+      "id": "romeo_and_juliet_prologue_gloss10",
+      "line": 9,
+      "phrase": "death-mark’d",
+      "definition": "marked for death; doomed"
+    },
+    {
+      "id": "romeo_and_juliet_prologue_gloss11",
+      "line": 11,
+      "phrase": "nought",
+      "definition": "nothing"
+    },
+    {
+      "id": "romeo_and_juliet_prologue_gloss12",
+      "line": 12,
+      "phrase": "two hours’ traffic",
+      "definition": "two hours' business — the play's running time on the Elizabethan stage"
+    },
+    {
+      "id": "romeo_and_juliet_prologue_gloss13",
+      "line": 13,
+      "phrase": "patient ears attend",
+      "definition": "listen patiently"
+    },
+    {
+      "id": "romeo_and_juliet_prologue_gloss14",
+      "line": 14,
+      "phrase": "What here shall miss, our toil shall strive to mend",
+      "definition": "what the prologue fails to convey, our performance will try to supply"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "romeo_and_juliet_prologue_ann1",
+      "line_start": 1,
+      "line_end": 14,
+      "citation_display": "Romeo and Juliet Prologue.1–14",
+      "category": "structural",
+      "title": "The prologue is a sonnet",
+      "body": "The opening fourteen lines form a complete English sonnet — three quatrains (ABAB CDCD EFEF) and a final rhyming couplet (GG). That Shakespeare opens his great love-tragedy with a sonnet is not decoration: the sonnet is the Renaissance form for unrequited and idealized love, inherited from Petrarch and domesticated by the English sonneteers. By putting this form in the mouth of a CHORUS describing civil violence and death, Shakespeare announces that the love to come will be inseparable from the feud, that its vocabulary will be the sonnet's, and that even its ending is already written. The play will produce two more sonnets — the Act II chorus and, most remarkably, the shared sonnet between Romeo and Juliet at their first meeting in 1.5. A reader who hears the formal echo finds that the whole play is structured around a sequence of sonnets.",
+      "sources": [
+        "Frank Kermode, Shakespeare's Language (2000)",
+        "Jill L. Levenson, The Oxford Shakespeare: Romeo and Juliet (2000)"
+      ]
+    },
+    {
+      "id": "romeo_and_juliet_prologue_ann2",
+      "line_start": 6,
+      "line_end": 9,
+      "citation_display": "Romeo and Juliet Prologue.6–9",
+      "category": "thematic",
+      "title": "Spoiler by design — 'star-cross'd lovers take their life'",
+      "body": "Shakespeare makes the astonishing choice of disclosing his ending in the prologue: the lovers die, and their deaths end the feud. This is not a failure of suspense but a deliberate inversion. Classical tragedy presumed audience knowledge of its myths; Shakespeare manufactures that knowledge for Verona. Once the end is known, the play's urgency shifts from 'what happens' to 'how it happens' — from plot to pathos, from outcome to the thickening web of accident, haste, and structural bad luck that binds the lovers to their grave. The word 'star-cross'd' inscribes Elizabethan astrology into that doom: the stars at birth were thought to govern destiny, and the couple's horoscopes have collided. This is a pre-scientific worldview, but the play does not wholly endorse it; Romeo in 5.1 will defy it ('Then I defy you, stars!'), and his suicide becomes a paradoxical act of will against the fate the prologue announced.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)",
+        "Jonathan Bate, Shakespeare and Ovid (1993)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "romeo_and_juliet_prologue_q1",
+      "kind": "close_reading",
+      "prompt": "What verse form is the Prologue?",
+      "options": [
+        "A Petrarchan sonnet (octave-sestet)",
+        "An English (Shakespearean) sonnet — three quatrains and a couplet",
+        "Blank verse (unrhymed iambic pentameter)",
+        "A terza-rima canto adapted from Dante"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 1,
+      "anchor_line_end": 14
+    },
+    {
+      "id": "romeo_and_juliet_prologue_q2",
+      "kind": "comprehension",
+      "prompt": "What does 'star-cross'd' mean in the phrase 'A pair of star-cross'd lovers'?",
+      "options": [
+        "They live in different regions of Italy",
+        "Their love crosses social boundaries",
+        "They are fated by the stars (i.e., by astrology) to misfortune",
+        "They are born under the same zodiac sign"
+      ],
+      "answer_index": 2,
+      "wisdom_reward": 10,
+      "anchor_line_start": 6,
+      "anchor_line_end": 6
+    },
+    {
+      "id": "romeo_and_juliet_prologue_q3",
+      "kind": "theme",
+      "prompt": "Why does Shakespeare reveal the ending of the play in the prologue?",
+      "options": [
+        "He assumed audiences wouldn't stay for the full performance",
+        "It shifts the audience's attention from plot outcome to how events unfold — from 'what' to 'how'",
+        "He wanted to warn parents about the tragic content",
+        "It was required by Elizabethan censors"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 6,
+      "anchor_line_end": 9
+    },
+    {
+      "id": "romeo_and_juliet_prologue_q4",
+      "kind": "close_reading",
+      "prompt": "What does the word 'mutiny' mean in 'From ancient grudge break to new mutiny'?",
+      "options": [
+        "A naval rebellion against a captain",
+        "Civil strife and public disorder (not military rebellion)",
+        "A workers' strike",
+        "A family dispute over inheritance"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 15,
+      "anchor_line_start": 3,
+      "anchor_line_end": 3
+    },
+    {
+      "id": "romeo_and_juliet_prologue_q5",
+      "kind": "inference",
+      "prompt": "The line 'Do with their death bury their parents' strife' suggests that —",
+      "options": [
+        "The parents will die shortly after their children",
+        "Only the lovers' deaths can end the feud — no lesser cost will suffice",
+        "The children were the actual cause of the feud",
+        "The parents are already dying"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 8,
+      "anchor_line_end": 8
+    }
+  ]
+}

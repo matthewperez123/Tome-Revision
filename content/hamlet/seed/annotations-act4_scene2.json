@@ -1,0 +1,21 @@
+{
+  "section_id": "hamlet_act4_scene2",
+  "annotations": [
+    {
+      "line_start": 10,
+      "line_end": 22,
+      "category": "thematic",
+      "title": "'A sponge that soaks up the king's countenance'",
+      "body": "Hamlet's accusation of Rosencrantz — 'you shall be dry again' — uses one of the play's cleanest political metaphors. Courtiers are sponges: they absorb royal favor and are squeezed dry when the King has had his use of them. The image reduces the technique of flattery to a fluid mechanics. It is also a warning Rosencrantz cannot hear: Hamlet knows the King's ambassadors are disposable, as we will learn when the sealed commission turns out to contain their own death warrants. The short scene is otherwise almost entirely comic, the corpse-hide-and-seek played for grotesque laughter. Shakespeare allows himself this tonal variety because the tragedy's center has already tilted toward inevitability.",
+      "sources": ["Harold Bloom, Shakespeare: The Invention of the Human (1998)"]
+    },
+    {
+      "line_start": 24,
+      "line_end": 29,
+      "category": "close_reading",
+      "title": "'The body is with the king, but the king is not with the body'",
+      "body": "Hamlet's cryptic reply to Rosencrantz — about Polonius's body, addressed to Claudius — is more than madman's evasion. 'The body is with the king, but the king is not with the body' plays simultaneously on the medieval doctrine of the king's two bodies (the immortal body politic and the mortal body natural) and on the fact that Polonius's corpse is somewhere in the castle but the King it served is no longer honored by it. The phrase 'a thing, my lord... of nothing' prefigures the meditations on death and dust in the graveyard scene. Hamlet's madness here is intellectual — each line a small riddle the audience is asked to decode.",
+      "sources": ["Ernst Kantorowicz, The King's Two Bodies (1957)"]
+    }
+  ]
+}

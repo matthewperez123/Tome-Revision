@@ -1,0 +1,326 @@
+{
+  "section_id": "richard_iii_act5_scene1",
+  "work_id": "richard-iii",
+  "sequence": 21,
+  "act": 5,
+  "scene": 1,
+  "kind": "scene",
+  "scene_title": "Salisbury. An open place",
+  "line_count": 29,
+  "word_count": 225,
+  "est_read_minutes": 1,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "BUCKINGHAM",
+      "text": "Will not King Richard let me speak with him?"
+    },
+    {
+      "number": 2,
+      "speaker": "SHERIFF",
+      "text": "No, my good lord; therefore be patient."
+    },
+    {
+      "number": 3,
+      "speaker": "BUCKINGHAM",
+      "text": "Hastings, and Edward’s children, Rivers, Grey,"
+    },
+    {
+      "number": 4,
+      "speaker": "BUCKINGHAM",
+      "text": "Holy King Henry, and thy fair son Edward,"
+    },
+    {
+      "number": 5,
+      "speaker": "BUCKINGHAM",
+      "text": "Vaughan, and all that have miscarried"
+    },
+    {
+      "number": 6,
+      "speaker": "BUCKINGHAM",
+      "text": "By underhand corrupted foul injustice,"
+    },
+    {
+      "number": 7,
+      "speaker": "BUCKINGHAM",
+      "text": "If that your moody discontented souls"
+    },
+    {
+      "number": 8,
+      "speaker": "BUCKINGHAM",
+      "text": "Do through the clouds behold this present hour,"
+    },
+    {
+      "number": 9,
+      "speaker": "BUCKINGHAM",
+      "text": "Even for revenge mock my destruction!"
+    },
+    {
+      "number": 10,
+      "speaker": "BUCKINGHAM",
+      "text": "This is All-Souls’ day, fellows, is it not?"
+    },
+    {
+      "number": 11,
+      "speaker": "SHERIFF",
+      "text": "It is, my lord."
+    },
+    {
+      "number": 12,
+      "speaker": "BUCKINGHAM",
+      "text": "Why, then All-Souls’ day is my body’s doomsday."
+    },
+    {
+      "number": 13,
+      "speaker": "BUCKINGHAM",
+      "text": "This is the day that, in King Edward’s time,"
+    },
+    {
+      "number": 14,
+      "speaker": "BUCKINGHAM",
+      "text": "I wish’d might fall on me, when I was found"
+    },
+    {
+      "number": 15,
+      "speaker": "BUCKINGHAM",
+      "text": "False to his children or his wife’s allies;"
+    },
+    {
+      "number": 16,
+      "speaker": "BUCKINGHAM",
+      "text": "This is the day wherein I wish’d to fall"
+    },
+    {
+      "number": 17,
+      "speaker": "BUCKINGHAM",
+      "text": "By the false faith of him I trusted most;"
+    },
+    {
+      "number": 18,
+      "speaker": "BUCKINGHAM",
+      "text": "This, this All-Souls’ day to my fearful soul"
+    },
+    {
+      "number": 19,
+      "speaker": "BUCKINGHAM",
+      "text": "Is the determined respite of my wrongs:"
+    },
+    {
+      "number": 20,
+      "speaker": "BUCKINGHAM",
+      "text": "That high All-Seer that I dallied with"
+    },
+    {
+      "number": 21,
+      "speaker": "BUCKINGHAM",
+      "text": "Hath turn’d my feigned prayer on my head"
+    },
+    {
+      "number": 22,
+      "speaker": "BUCKINGHAM",
+      "text": "And given in earnest what I begg’d in jest."
+    },
+    {
+      "number": 23,
+      "speaker": "BUCKINGHAM",
+      "text": "Thus doth he force the swords of wicked men"
+    },
+    {
+      "number": 24,
+      "speaker": "BUCKINGHAM",
+      "text": "To turn their own points on their masters’ bosoms:"
+    },
+    {
+      "number": 25,
+      "speaker": "BUCKINGHAM",
+      "text": "Now Margaret’s curse is fallen upon my head;"
+    },
+    {
+      "number": 26,
+      "speaker": "BUCKINGHAM",
+      "text": "“When he,” quoth she, “shall split thy heart with sorrow,"
+    },
+    {
+      "number": 27,
+      "speaker": "BUCKINGHAM",
+      "text": "Remember Margaret was a prophetess.”"
+    },
+    {
+      "number": 28,
+      "speaker": "BUCKINGHAM",
+      "text": "Come, sirs, convey me to the block of shame;"
+    },
+    {
+      "number": 29,
+      "speaker": "BUCKINGHAM",
+      "text": "Wrong hath but wrong, and blame the due of blame."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter the Sheriff, and Buckingham, with halberds, led to execution."
+    },
+    {
+      "after_line": 29,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "richard_iii_act5_scene1_gloss1",
+      "line": 5,
+      "phrase": "miscarried",
+      "definition": "perished, died (not 'failed')"
+    },
+    {
+      "id": "richard_iii_act5_scene1_gloss2",
+      "line": 6,
+      "phrase": "underhand corrupted foul injustice",
+      "definition": "secretly corrupted, foul injustice — Buckingham's indictment of Richard's regime"
+    },
+    {
+      "id": "richard_iii_act5_scene1_gloss3",
+      "line": 9,
+      "phrase": "mock my destruction",
+      "definition": "laugh at my downfall — Buckingham invokes his victims as spectators"
+    },
+    {
+      "id": "richard_iii_act5_scene1_gloss4",
+      "line": 10,
+      "phrase": "All-Souls’ day",
+      "definition": "2 November — the feast commemorating all the faithful departed; historically Buckingham's actual execution date, 1483"
+    },
+    {
+      "id": "richard_iii_act5_scene1_gloss5",
+      "line": 12,
+      "phrase": "All-Souls’ day is my body’s doomsday",
+      "definition": "the day of the dead is the day of my death — Buckingham's theological pun"
+    },
+    {
+      "id": "richard_iii_act5_scene1_gloss6",
+      "line": 14,
+      "phrase": "wish’d might fall on me",
+      "definition": "wished might befall me — Buckingham's remembered self-curse (cf. 2.1.32–40) now returning"
+    },
+    {
+      "id": "richard_iii_act5_scene1_gloss7",
+      "line": 19,
+      "phrase": "determined respite of my wrongs",
+      "definition": "the appointed reckoning for my crimes — 'respite' = delay before payment due"
+    },
+    {
+      "id": "richard_iii_act5_scene1_gloss8",
+      "line": 20,
+      "phrase": "high All-Seer",
+      "definition": "God; the all-seeing judge"
+    },
+    {
+      "id": "richard_iii_act5_scene1_gloss9",
+      "line": 21,
+      "phrase": "feigned prayer",
+      "definition": "pretended prayer — Buckingham's false 2.1 reconciliation oath"
+    },
+    {
+      "id": "richard_iii_act5_scene1_gloss10",
+      "line": 22,
+      "phrase": "given in earnest what I begg’d in jest",
+      "definition": "granted seriously what I begged playfully — the god of 2.1's oath takes him at his word"
+    },
+    {
+      "id": "richard_iii_act5_scene1_gloss11",
+      "line": 25,
+      "phrase": "Margaret’s curse is fallen upon my head",
+      "definition": "second confirmation of Margaret's 1.3 prophecies (cf. Grey at 3.3.15)"
+    },
+    {
+      "id": "richard_iii_act5_scene1_gloss12",
+      "line": 27,
+      "phrase": "Margaret was a prophetess",
+      "definition": "quoting Margaret's own words back to her — Buckingham completes her curse's structure"
+    },
+    {
+      "id": "richard_iii_act5_scene1_gloss13",
+      "line": 29,
+      "phrase": "Wrong hath but wrong",
+      "definition": "wrong is paid only with wrong — Buckingham's closing moral arithmetic"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "richard_iii_act5_scene1_ann1",
+      "line_start": 1,
+      "line_end": 29,
+      "citation_display": "Richard III 5.1.1–29",
+      "category": "structural",
+      "title": "Buckingham's All-Souls speech and the closure of the curse-chain",
+      "body": "Buckingham's last soliloquy is the play's most precisely calibrated moment of curse-recognition. He is executed on All-Souls' Day — 2 November, the feast of the dead — and the date was both historical fact and dramaturgical gift. The speech works on three registers simultaneously. First, he recalls the elaborate self-curse he swore in 2.1 during Edward's forced reconciliation (\"When I am cold in zeal to yours\") and names it as now executed against him. Second, he closes Margaret's 1.3 curse-chain by quoting her directly: \"'When he,' quoth she, 'shall split thy heart with sorrow, / Remember Margaret was a prophetess.'\" Third, he articulates the play's theology of providence: \"Thus doth he force the swords of wicked men / To turn their own points on their masters' bosoms.\" The speech is the clearest statement in the play of what the curses have meant. Buckingham dies understanding the system he enabled.",
+      "sources": [
+        "A. P. Rossiter, Angel with Horns (1961)",
+        "Wolfgang Clemen, A Commentary on Shakespeare's Richard III (1968)",
+        "Bernard Spivack, Shakespeare and the Allegory of Evil (1958)"
+      ]
+    },
+    {
+      "id": "richard_iii_act5_scene1_ann2",
+      "line_start": 10,
+      "line_end": 29,
+      "citation_display": "Richard III 5.1.10–29",
+      "category": "historical",
+      "title": "All-Souls' Day as fact and metaphor",
+      "body": "Buckingham was in fact executed on All-Souls' Day, 2 November 1483, in Salisbury market square. The historical coincidence gives the scene its layered theological weight. All Souls (from the medieval tradition established c. 998 at Cluny) was the day set aside for prayer for all the faithful departed — particularly those in purgatory. Buckingham's \"All-Souls' day is my body's doomsday\" plays on the feast's day-of-reckoning connotation while acknowledging what the chronicles record. Shakespeare's audiences — still living inside decades of post-Reformation religious argument — would have heard the All-Souls reference with particular attention. The speech lets a Catholic calendar-detail carry a play's providential argument without committing the play to any specific doctrinal position. The dead, on the day of the dead, come for their witness.",
+      "sources": [
+        "Eamon Duffy, The Stripping of the Altars (1992)",
+        "Holinshed, Chronicles (1587)",
+        "Charles Ross, Richard III (1981)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "richard_iii_act5_scene1_q1",
+      "kind": "historical",
+      "prompt": "On what date does Buckingham's execution take place, and why does the play emphasize it?",
+      "options": [
+        "Good Friday — Christ's crucifixion day",
+        "All-Souls' Day (2 November), the medieval feast for prayer for the faithful departed — the day-of-reckoning connotation gives the scene its theological weight (and matches historical fact)",
+        "St. George's Day — England's patron saint",
+        "Christmas Eve — a date Shakespeare invented for dramatic effect"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 10,
+      "anchor_line_end": 12
+    },
+    {
+      "id": "richard_iii_act5_scene1_q2",
+      "kind": "close_reading",
+      "prompt": "Buckingham's line \"Thus doth he force the swords of wicked men / To turn their own points on their masters' bosoms\" articulates what?",
+      "options": [
+        "A military strategy for turning enemy weapons",
+        "The play's providential theology: God uses the wicked's own instruments against them — the clearest statement of what the curse-chain has meant",
+        "A secret weapons-making technique",
+        "A specific Senecan dramatic convention"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 23,
+      "anchor_line_end": 24
+    },
+    {
+      "id": "richard_iii_act5_scene1_q3",
+      "kind": "structural",
+      "prompt": "Whose earlier curse does Buckingham explicitly quote back in his final speech?",
+      "options": [
+        "The Duchess of York's curse on Richard",
+        "Margaret's 1.3 warning to Buckingham himself: \"Remember Margaret was a prophetess\"",
+        "Hastings' prophecy in 3.4",
+        "The scrivener's indictment-curse in 3.6"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 20,
+      "anchor_line_start": 25,
+      "anchor_line_end": 27
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "section_id": "hamlet_act4_scene1",
+  "glosses": [
+    { "line": 1, "phrase": "matter in these sighs", "definition": "significance in these sighs" },
+    { "line": 2, "phrase": "translate", "definition": "explain" },
+    { "line": 2, "phrase": "understand them", "definition": "make them comprehensible" },
+    { "line": 3, "phrase": "Bestow this place on us", "definition": "leave us alone here" },
+    { "line": 8, "phrase": "Mad as the sea and wind", "definition": "raging as sea and wind together" },
+    { "line": 9, "phrase": "lawless fit", "definition": "uncontrolled frenzy" },
+    { "line": 10, "phrase": "arras", "definition": "wall tapestry" },
+    { "line": 11, "phrase": "whips out his rapier", "definition": "whips out his sword" },
+    { "line": 11, "phrase": "A rat, a rat!", "definition": "a rat, a rat! (Hamlet's cry at Polonius)" },
+    { "line": 12, "phrase": "brainish apprehension", "definition": "wild imagination" },
+    { "line": 13, "phrase": "the unseen good old man", "definition": "the hidden, honest Polonius" },
+    { "line": 16, "phrase": "us, whose providence", "definition": "us, whose foresight" },
+    { "line": 18, "phrase": "out of haunt", "definition": "away from company" },
+    { "line": 22, "phrase": "pure ore", "definition": "pure metal (his innate goodness)" },
+    { "line": 23, "phrase": "mineral of metals base", "definition": "vein of common ores (his madness)" },
+    { "line": 28, "phrase": "foolish body", "definition": "lifeless body" },
+    { "line": 31, "phrase": "Friends both, go join you with some further aid", "definition": "both of you, get more help" },
+    { "line": 33, "phrase": "chapel", "definition": "small church" },
+    { "line": 38, "phrase": "countenance and excuse", "definition": "sanction and justify" }
+  ]
+}

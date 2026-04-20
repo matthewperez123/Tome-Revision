@@ -1,0 +1,761 @@
+{
+  "section_id": "king_lear_act4_scene7",
+  "work_id": "king-lear",
+  "sequence": 23,
+  "act": 4,
+  "scene": 7,
+  "kind": "scene",
+  "scene_title": "A tent in the French camp",
+  "line_count": 106,
+  "word_count": 793,
+  "est_read_minutes": 4,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "CORDELIA",
+      "text": "O thou good Kent, how shall I live and work,"
+    },
+    {
+      "number": 2,
+      "speaker": "CORDELIA",
+      "text": "To match thy goodness? My life will be too short,"
+    },
+    {
+      "number": 3,
+      "speaker": "CORDELIA",
+      "text": "And every measure fail me."
+    },
+    {
+      "number": 3,
+      "speaker": "KENT",
+      "text": "To be acknowledged, madam, is o’erpaid."
+    },
+    {
+      "number": 4,
+      "speaker": "KENT",
+      "text": "All my reports go with the modest truth;"
+    },
+    {
+      "number": 5,
+      "speaker": "KENT",
+      "text": "Nor more nor clipp’d, but so."
+    },
+    {
+      "number": 5,
+      "speaker": "CORDELIA",
+      "text": "Be better suited:"
+    },
+    {
+      "number": 6,
+      "speaker": "CORDELIA",
+      "text": "These weeds are memories of those worser hours:"
+    },
+    {
+      "number": 7,
+      "speaker": "CORDELIA",
+      "text": "I prithee, put them off."
+    },
+    {
+      "number": 7,
+      "speaker": "KENT",
+      "text": "Pardon me, dear madam;"
+    },
+    {
+      "number": 8,
+      "speaker": "KENT",
+      "text": "Yet to be known shortens my made intent:"
+    },
+    {
+      "number": 9,
+      "speaker": "KENT",
+      "text": "My boon I make it, that you know me not"
+    },
+    {
+      "number": 10,
+      "speaker": "KENT",
+      "text": "Till time and I think meet."
+    },
+    {
+      "number": 10,
+      "speaker": "CORDELIA",
+      "text": "Then be’t so, my good lord."
+    },
+    {
+      "number": 11,
+      "speaker": "CORDELIA",
+      "text": "To the Doctor. How does the king?"
+    },
+    {
+      "number": 12,
+      "speaker": "DOCTOR",
+      "text": "Madam, sleeps still."
+    },
+    {
+      "number": 12,
+      "speaker": "CORDELIA",
+      "text": "O you kind gods,"
+    },
+    {
+      "number": 13,
+      "speaker": "CORDELIA",
+      "text": "Cure this great breach in his abused nature!"
+    },
+    {
+      "number": 14,
+      "speaker": "CORDELIA",
+      "text": "The untuned and jarring senses, O, wind up"
+    },
+    {
+      "number": 15,
+      "speaker": "CORDELIA",
+      "text": "Of this child-changed father!"
+    },
+    {
+      "number": 15,
+      "speaker": "DOCTOR",
+      "text": "So please your majesty"
+    },
+    {
+      "number": 16,
+      "speaker": "DOCTOR",
+      "text": "That we may wake the king: he hath slept long."
+    },
+    {
+      "number": 17,
+      "speaker": "CORDELIA",
+      "text": "Be govern’d by your knowledge, and proceed"
+    },
+    {
+      "number": 18,
+      "speaker": "CORDELIA",
+      "text": "I’ the sway of your own will. Is he array’d?"
+    },
+    {
+      "number": 19,
+      "speaker": "GENTLEMAN",
+      "text": "Ay, madam; in the heaviness of his sleep"
+    },
+    {
+      "number": 20,
+      "speaker": "GENTLEMAN",
+      "text": "We put fresh garments on him."
+    },
+    {
+      "number": 21,
+      "speaker": "DOCTOR",
+      "text": "Be by, good madam, when we do awake him;"
+    },
+    {
+      "number": 22,
+      "speaker": "DOCTOR",
+      "text": "I doubt not of his temperance."
+    },
+    {
+      "number": 22,
+      "speaker": "CORDELIA",
+      "text": "Very well."
+    },
+    {
+      "number": 23,
+      "speaker": "DOCTOR",
+      "text": "Please you, draw near. Louder the music there!"
+    },
+    {
+      "number": 24,
+      "speaker": "CORDELIA",
+      "text": "O my dear father! Restoration hang"
+    },
+    {
+      "number": 25,
+      "speaker": "CORDELIA",
+      "text": "Thy medicine on my lips; and let this kiss"
+    },
+    {
+      "number": 26,
+      "speaker": "CORDELIA",
+      "text": "Repair those violent harms that my two sisters"
+    },
+    {
+      "number": 27,
+      "speaker": "CORDELIA",
+      "text": "Have in thy reverence made!"
+    },
+    {
+      "number": 27,
+      "speaker": "KENT",
+      "text": "Kind and dear princess!"
+    },
+    {
+      "number": 28,
+      "speaker": "CORDELIA",
+      "text": "Had you not been their father, these white flakes"
+    },
+    {
+      "number": 29,
+      "speaker": "CORDELIA",
+      "text": "Had challenged pity of them. Was this a face"
+    },
+    {
+      "number": 30,
+      "speaker": "CORDELIA",
+      "text": "To be opposed against the warring winds?"
+    },
+    {
+      "number": 31,
+      "speaker": "CORDELIA",
+      "text": "To stand against the deep dread-bolted thunder?"
+    },
+    {
+      "number": 32,
+      "speaker": "CORDELIA",
+      "text": "In the most terrible and nimble stroke"
+    },
+    {
+      "number": 33,
+      "speaker": "CORDELIA",
+      "text": "Of quick, cross lightning? to watch—poor perdu!—"
+    },
+    {
+      "number": 34,
+      "speaker": "CORDELIA",
+      "text": "With this thin helm? Mine enemy’s dog,"
+    },
+    {
+      "number": 35,
+      "speaker": "CORDELIA",
+      "text": "Though he had bit me, should have stood that night"
+    },
+    {
+      "number": 36,
+      "speaker": "CORDELIA",
+      "text": "Against my fire; and wast thou fain, poor father,"
+    },
+    {
+      "number": 37,
+      "speaker": "CORDELIA",
+      "text": "To hovel thee with swine, and rogues forlorn,"
+    },
+    {
+      "number": 38,
+      "speaker": "CORDELIA",
+      "text": "In short and musty straw? Alack, alack!"
+    },
+    {
+      "number": 39,
+      "speaker": "CORDELIA",
+      "text": "’Tis wonder that thy life and wits at once"
+    },
+    {
+      "number": 40,
+      "speaker": "CORDELIA",
+      "text": "Had not concluded all. He wakes; speak to him."
+    },
+    {
+      "number": 41,
+      "speaker": "DOCTOR",
+      "text": "Madam, do you; ’tis fittest."
+    },
+    {
+      "number": 42,
+      "speaker": "CORDELIA",
+      "text": "How does my royal lord? How fares your majesty?"
+    },
+    {
+      "number": 43,
+      "speaker": "KING LEAR",
+      "text": "You do me wrong to take me out o’ the grave:"
+    },
+    {
+      "number": 44,
+      "speaker": "KING LEAR",
+      "text": "Thou art a soul in bliss; but I am bound"
+    },
+    {
+      "number": 45,
+      "speaker": "KING LEAR",
+      "text": "Upon a wheel of fire, that mine own tears"
+    },
+    {
+      "number": 46,
+      "speaker": "KING LEAR",
+      "text": "Do scald like moulten lead."
+    },
+    {
+      "number": 46,
+      "speaker": "CORDELIA",
+      "text": "Sir, do you know me?"
+    },
+    {
+      "number": 47,
+      "speaker": "KING LEAR",
+      "text": "You are a spirit, I know: when did you die?"
+    },
+    {
+      "number": 48,
+      "speaker": "CORDELIA",
+      "text": "Still, still, far wide!"
+    },
+    {
+      "number": 49,
+      "speaker": "DOCTOR",
+      "text": "He’s scarce awake: let him alone awhile."
+    },
+    {
+      "number": 50,
+      "speaker": "KING LEAR",
+      "text": "Where have I been? Where am I? Fair daylight?"
+    },
+    {
+      "number": 51,
+      "speaker": "KING LEAR",
+      "text": "I am mightily abused. I should e’en die with pity,"
+    },
+    {
+      "number": 52,
+      "speaker": "KING LEAR",
+      "text": "To see another thus. I know not what to say."
+    },
+    {
+      "number": 53,
+      "speaker": "KING LEAR",
+      "text": "I will not swear these are my hands: let’s see;"
+    },
+    {
+      "number": 54,
+      "speaker": "KING LEAR",
+      "text": "I feel this pin prick. Would I were assured"
+    },
+    {
+      "number": 55,
+      "speaker": "KING LEAR",
+      "text": "Of my condition!"
+    },
+    {
+      "number": 55,
+      "speaker": "CORDELIA",
+      "text": "O, look upon me, sir,"
+    },
+    {
+      "number": 56,
+      "speaker": "CORDELIA",
+      "text": "And hold your hands in benediction o’er me:"
+    },
+    {
+      "number": 57,
+      "speaker": "CORDELIA",
+      "text": "No, sir, you must not kneel."
+    },
+    {
+      "number": 57,
+      "speaker": "KING LEAR",
+      "text": "Pray, do not mock me:"
+    },
+    {
+      "number": 58,
+      "speaker": "KING LEAR",
+      "text": "I am a very foolish fond old man,"
+    },
+    {
+      "number": 59,
+      "speaker": "KING LEAR",
+      "text": "Fourscore and upward, not an hour more nor less;"
+    },
+    {
+      "number": 60,
+      "speaker": "KING LEAR",
+      "text": "And, to deal plainly,"
+    },
+    {
+      "number": 61,
+      "speaker": "KING LEAR",
+      "text": "I fear I am not in my perfect mind."
+    },
+    {
+      "number": 62,
+      "speaker": "KING LEAR",
+      "text": "Methinks I should know you, and know this man;"
+    },
+    {
+      "number": 63,
+      "speaker": "KING LEAR",
+      "text": "Yet I am doubtful for I am mainly ignorant"
+    },
+    {
+      "number": 64,
+      "speaker": "KING LEAR",
+      "text": "What place this is; and all the skill I have"
+    },
+    {
+      "number": 65,
+      "speaker": "KING LEAR",
+      "text": "Remembers not these garments; nor I know not"
+    },
+    {
+      "number": 66,
+      "speaker": "KING LEAR",
+      "text": "Where I did lodge last night. Do not laugh at me;"
+    },
+    {
+      "number": 67,
+      "speaker": "KING LEAR",
+      "text": "For, as I am a man, I think this lady"
+    },
+    {
+      "number": 68,
+      "speaker": "KING LEAR",
+      "text": "To be my child Cordelia."
+    },
+    {
+      "number": 68,
+      "speaker": "CORDELIA",
+      "text": "And so I am, I am."
+    },
+    {
+      "number": 69,
+      "speaker": "KING LEAR",
+      "text": "Be your tears wet? yes, ’faith. I pray, weep not:"
+    },
+    {
+      "number": 70,
+      "speaker": "KING LEAR",
+      "text": "If you have poison for me, I will drink it."
+    },
+    {
+      "number": 71,
+      "speaker": "KING LEAR",
+      "text": "I know you do not love me; for your sisters"
+    },
+    {
+      "number": 72,
+      "speaker": "KING LEAR",
+      "text": "Have, as I do remember, done me wrong:"
+    },
+    {
+      "number": 73,
+      "speaker": "KING LEAR",
+      "text": "You have some cause, they have not."
+    },
+    {
+      "number": 74,
+      "speaker": "CORDELIA",
+      "text": "No cause, no cause."
+    },
+    {
+      "number": 74,
+      "speaker": "KING LEAR",
+      "text": "Am I in France?"
+    },
+    {
+      "number": 75,
+      "speaker": "KENT",
+      "text": "In your own kingdom, sir."
+    },
+    {
+      "number": 75,
+      "speaker": "KING LEAR",
+      "text": "Do not abuse me."
+    },
+    {
+      "number": 76,
+      "speaker": "DOCTOR",
+      "text": "Be comforted, good madam: the great rage,"
+    },
+    {
+      "number": 77,
+      "speaker": "DOCTOR",
+      "text": "You see, is kill’d in him: and yet it is danger"
+    },
+    {
+      "number": 78,
+      "speaker": "DOCTOR",
+      "text": "To make him even o’er the time he has lost."
+    },
+    {
+      "number": 79,
+      "speaker": "DOCTOR",
+      "text": "Desire him to go in; trouble him no more"
+    },
+    {
+      "number": 80,
+      "speaker": "DOCTOR",
+      "text": "Till further settling."
+    },
+    {
+      "number": 80,
+      "speaker": "CORDELIA",
+      "text": "Will’t please your highness walk?"
+    },
+    {
+      "number": 81,
+      "speaker": "KING LEAR",
+      "text": "You must bear with me:"
+    },
+    {
+      "number": 82,
+      "speaker": "KING LEAR",
+      "text": "Pray you now, forget and forgive: I am old and foolish."
+    },
+    {
+      "number": 83,
+      "speaker": "GENTLEMAN",
+      "text": "Holds it true, sir, that the Duke of Cornwall was so slain?"
+    },
+    {
+      "number": 84,
+      "speaker": "KENT",
+      "text": "Most certain, sir."
+    },
+    {
+      "number": 84,
+      "speaker": "GENTLEMAN",
+      "text": "Who is conductor of his people?"
+    },
+    {
+      "number": 85,
+      "speaker": "KENT",
+      "text": "As ’tis said, the bastard son of Gloucester."
+    },
+    {
+      "number": 86,
+      "speaker": "GENTLEMAN",
+      "text": "They say Edgar, his banished son, is with the Earl of Kent in Germany."
+    },
+    {
+      "number": 87,
+      "speaker": "KENT",
+      "text": "Report is changeable. ’Tis time to look about; the powers of the kingdom approach apace."
+    },
+    {
+      "number": 88,
+      "speaker": "GENTLEMAN",
+      "text": "The arbitrement is like to be bloody. Fare you well, sir."
+    },
+    {
+      "number": 89,
+      "speaker": "KENT",
+      "text": "My point and period will be throughly wrought,"
+    },
+    {
+      "number": 90,
+      "speaker": "KENT",
+      "text": "Or well or ill, as this day’s battle’s fought."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Cordelia, Kent, and Doctor."
+    },
+    {
+      "after_line": 82,
+      "text": "Exeunt all but Kent and Gentleman."
+    },
+    {
+      "after_line": 88,
+      "text": "Exit."
+    },
+    {
+      "after_line": 90,
+      "text": "Exit."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "king_lear_act4_scene7_gloss1",
+      "line": 1,
+      "phrase": "O thou good Kent",
+      "definition": "Cordelia's thanks to the disguised Kent"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss2",
+      "line": 8,
+      "phrase": "meet to be known",
+      "definition": "fit to be revealed"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss3",
+      "line": 14,
+      "phrase": "untuned and jarring senses",
+      "definition": "Lear's mental discord figured as musical disharmony"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss4",
+      "line": 15,
+      "phrase": "child-changed father",
+      "definition": "a father transformed by his children's cruelty"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss6",
+      "line": 30,
+      "phrase": "warring winds",
+      "definition": "the storm — recalled"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss8",
+      "line": 33,
+      "phrase": "poor perdu",
+      "definition": "forlorn sentinel — soldier on a lost post"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss9",
+      "line": 52,
+      "phrase": "I know not what to say",
+      "definition": "Lear, waking, cannot place himself"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss10",
+      "line": 45,
+      "phrase": "wheel of fire",
+      "definition": "Lear's vision of his punishment — the pagan/Christian image of a soul's eternal torment"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss11",
+      "line": 57,
+      "phrase": "mock me not",
+      "definition": "Lear cannot believe Cordelia is real"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss12",
+      "line": 55,
+      "phrase": "O, look upon me, sir",
+      "definition": "Cordelia's restraint — she lets Lear find her at his own pace"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss13",
+      "line": 82,
+      "phrase": "Pray you now, forget and forgive",
+      "definition": "Lear's most wounded line of self-knowledge"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss15",
+      "line": 10,
+      "phrase": "meet",
+      "definition": "fit; proper"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss17",
+      "line": 15,
+      "phrase": "child-changed father",
+      "definition": "father transformed by his children's cruelty"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss19",
+      "line": 27,
+      "phrase": "Kind and dear princess",
+      "definition": "Doctor's address to Cordelia"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss20",
+      "line": 24,
+      "phrase": "restoration",
+      "definition": "cure"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss21",
+      "line": 26,
+      "phrase": "violent harm",
+      "definition": "the bodily abuse Lear suffered"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss22",
+      "line": 33,
+      "phrase": "perdu",
+      "definition": "lost sentinel — a soldier on a hopeless post"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss24",
+      "line": 58,
+      "phrase": "fond",
+      "definition": "foolish; doting"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss25",
+      "line": 59,
+      "phrase": "fourscore and upward",
+      "definition": "eighty or more years old — Lear's reported age"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss26",
+      "line": 52,
+      "phrase": "I know not what to say",
+      "definition": "Lear finding no speech"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss27",
+      "line": 51,
+      "phrase": "abused",
+      "definition": "mistreated"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss28",
+      "line": 82,
+      "phrase": "forget and forgive",
+      "definition": "his only plea — the play's most disarming phrase"
+    },
+    {
+      "id": "king_lear_act4_scene7_gloss29",
+      "line": 87,
+      "phrase": "kingdom",
+      "definition": "realm — Lear does not remember what he did with it"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "king_lear_act4_scene7_ann1",
+      "line_start": 45,
+      "line_end": 85,
+      "citation_display": "King Lear 4.7.45–85",
+      "category": "thematic",
+      "title": "Lear wakes — 'You do me wrong to take me out o' the grave'",
+      "body": "Lear waking to Cordelia is the play's most tender scene. He does not immediately recognise her; he thinks he is dead and bound on 'a wheel of fire.' 'Pray, do not mock me: / I am a very foolish fond old man.' The vocabulary is minimized — almost no Latinate words, almost all monosyllables. Shakespeare strips Lear's language in precise proportion to how far he is from his 1.1 grandeur. 'I think this lady / To be my child Cordelia.' 'And so I am, I am.' Reunion delivered through uncertainty — Lear finding identity through recognising hers first. The Folio cuts some lines from this scene that Q1 preserves (another textual divergence); modern editions restore them because they make Lear's humility more complete. This is the play's closest approach to redemption, and Shakespeare will destroy it in 5.3. But while it lasts, it is perfect.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)",
+        "Stanley Cavell, 'The Avoidance of Love' in Disowning Knowledge (1987)"
+      ]
+    },
+    {
+      "id": "king_lear_act4_scene7_ann2",
+      "line_start": 55,
+      "line_end": 75,
+      "citation_display": "King Lear 4.7.55–75",
+      "category": "close_reading",
+      "title": "'Pray, do not mock me' — the simplicity of restoration",
+      "body": "Lear waking to Cordelia says 'Pray, do not mock me: / I am a very foolish fond old man, / Fourscore and upward, not an hour more nor less; / And, to deal plainly, / I fear I am not in my perfect mind.' The speech is built from monosyllables and plain structure — no subordinate clauses, no Latinate vocabulary, no rhetorical figures. Shakespeare is matching syntax to self. The Lear of 1.1 spoke in elaborate subordinations; the Lear of 4.7 speaks in hesitation and plain fact. The humility is structural. Cordelia says 'No cause, no cause' — three syllables answering 'Have I caused you to suffer?' — and the exchange settles the play's quietest minute. Only the play's catastrophe in 5.3 can undo this tenderness. This is Shakespeare at his most economical.",
+      "sources": [
+        "A. C. Bradley, Shakespearean Tragedy (1904)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "king_lear_act4_scene7_q1",
+      "kind": "close_reading",
+      "prompt": "What is distinctive about Lear's language when he wakes to Cordelia in 4.7?",
+      "options": [
+        "It is grand and operatic",
+        "Stripped to near-monosyllables ('a very foolish fond old man,' 'I am, I am') — Shakespeare minimises diction in proportion to Lear's distance from his 1.1 grandeur",
+        "It is in Latin",
+        "It is highly rhymed"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 60,
+      "anchor_line_end": 85
+    },
+    {
+      "id": "king_lear_act4_scene7_q2",
+      "kind": "close_reading",
+      "prompt": "What does Shakespeare achieve in 4.7 by stripping Lear's speech to monosyllables and plain fact?",
+      "options": [
+        "Simplicity for young readers",
+        "Syntax matches self — the elaborate Lear of 1.1 contracts to plain hesitation; the humility is structural, not only emotional",
+        "Imitation of Bible translation",
+        "Accidental flatness"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 55,
+      "anchor_line_end": 75
+    }
+  ]
+}

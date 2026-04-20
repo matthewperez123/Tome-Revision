@@ -1,0 +1,1750 @@
+{
+  "section_id": "macbeth_act4_scene3",
+  "work_id": "macbeth",
+  "sequence": 20,
+  "act": 4,
+  "scene": 3,
+  "kind": "scene",
+  "scene_title": "England. Before the King's palace",
+  "line_count": 278,
+  "word_count": 1911,
+  "est_read_minutes": 10,
+  "lines": [
+    {
+      "number": 1,
+      "speaker": "MALCOLM",
+      "text": "Let us seek out some desolate shade, and there"
+    },
+    {
+      "number": 2,
+      "speaker": "MALCOLM",
+      "text": "Weep our sad bosoms empty."
+    },
+    {
+      "number": 2,
+      "speaker": "MACDUFF",
+      "text": "Let us rather"
+    },
+    {
+      "number": 3,
+      "speaker": "MACDUFF",
+      "text": "Hold fast the mortal sword, and like good men"
+    },
+    {
+      "number": 4,
+      "speaker": "MACDUFF",
+      "text": "Bestride our down-fall’n birthdom: each new morn"
+    },
+    {
+      "number": 5,
+      "speaker": "MACDUFF",
+      "text": "New widows howl, new orphans cry, new sorrows"
+    },
+    {
+      "number": 6,
+      "speaker": "MACDUFF",
+      "text": "Strike heaven on the face, that it resounds"
+    },
+    {
+      "number": 7,
+      "speaker": "MACDUFF",
+      "text": "As if it felt with Scotland and yell’d out"
+    },
+    {
+      "number": 8,
+      "speaker": "MACDUFF",
+      "text": "Like syllable of dolour."
+    },
+    {
+      "number": 8,
+      "speaker": "MALCOLM",
+      "text": "What I believe I’ll wail,"
+    },
+    {
+      "number": 9,
+      "speaker": "MALCOLM",
+      "text": "What know believe, and what I can redress,"
+    },
+    {
+      "number": 10,
+      "speaker": "MALCOLM",
+      "text": "As I shall find the time to friend, I will."
+    },
+    {
+      "number": 11,
+      "speaker": "MALCOLM",
+      "text": "What you have spoke, it may be so perchance."
+    },
+    {
+      "number": 12,
+      "speaker": "MALCOLM",
+      "text": "This tyrant, whose sole name blisters our tongues,"
+    },
+    {
+      "number": 13,
+      "speaker": "MALCOLM",
+      "text": "Was once thought honest: you have loved him well:"
+    },
+    {
+      "number": 14,
+      "speaker": "MALCOLM",
+      "text": "He hath not touch’d you yet. I am young; but something"
+    },
+    {
+      "number": 15,
+      "speaker": "MALCOLM",
+      "text": "You may deserve of him through me, and wisdom"
+    },
+    {
+      "number": 16,
+      "speaker": "MALCOLM",
+      "text": "To offer up a weak poor innocent lamb"
+    },
+    {
+      "number": 17,
+      "speaker": "MALCOLM",
+      "text": "To appease an angry god."
+    },
+    {
+      "number": 17,
+      "speaker": "MACDUFF",
+      "text": "I am not treacherous."
+    },
+    {
+      "number": 18,
+      "speaker": "MALCOLM",
+      "text": "But Macbeth is."
+    },
+    {
+      "number": 19,
+      "speaker": "MALCOLM",
+      "text": "A good and virtuous nature may recoil"
+    },
+    {
+      "number": 20,
+      "speaker": "MALCOLM",
+      "text": "In an imperial charge. But I shall crave your pardon;"
+    },
+    {
+      "number": 21,
+      "speaker": "MALCOLM",
+      "text": "That which you are my thoughts cannot transpose:"
+    },
+    {
+      "number": 22,
+      "speaker": "MALCOLM",
+      "text": "Angels are bright still, though the brightest fell:"
+    },
+    {
+      "number": 23,
+      "speaker": "MALCOLM",
+      "text": "Though all things foul would wear the brows of grace,"
+    },
+    {
+      "number": 24,
+      "speaker": "MALCOLM",
+      "text": "Yet grace must still look so."
+    },
+    {
+      "number": 24,
+      "speaker": "MACDUFF",
+      "text": "I have lost my hopes."
+    },
+    {
+      "number": 25,
+      "speaker": "MALCOLM",
+      "text": "Perchance even there where I did find my doubts."
+    },
+    {
+      "number": 26,
+      "speaker": "MALCOLM",
+      "text": "Why in that rawness left you wife and child,"
+    },
+    {
+      "number": 27,
+      "speaker": "MALCOLM",
+      "text": "Those precious motives, those strong knots of love,"
+    },
+    {
+      "number": 28,
+      "speaker": "MALCOLM",
+      "text": "Without leave-taking? I pray you,"
+    },
+    {
+      "number": 29,
+      "speaker": "MALCOLM",
+      "text": "Let not my jealousies be your dishonours,"
+    },
+    {
+      "number": 30,
+      "speaker": "MALCOLM",
+      "text": "But mine own safeties. You may be rightly just,"
+    },
+    {
+      "number": 31,
+      "speaker": "MALCOLM",
+      "text": "Whatever I shall think."
+    },
+    {
+      "number": 31,
+      "speaker": "MACDUFF",
+      "text": "Bleed, bleed, poor country!"
+    },
+    {
+      "number": 32,
+      "speaker": "MACDUFF",
+      "text": "Great tyranny! lay thou thy basis sure,"
+    },
+    {
+      "number": 33,
+      "speaker": "MACDUFF",
+      "text": "For goodness dare not cheque thee: wear thou thy wrongs;"
+    },
+    {
+      "number": 34,
+      "speaker": "MACDUFF",
+      "text": "The title is affeer’d! Fare thee well, lord:"
+    },
+    {
+      "number": 35,
+      "speaker": "MACDUFF",
+      "text": "I would not be the villain that thou think’st"
+    },
+    {
+      "number": 36,
+      "speaker": "MACDUFF",
+      "text": "For the whole space that’s in the tyrant’s grasp,"
+    },
+    {
+      "number": 37,
+      "speaker": "MACDUFF",
+      "text": "And the rich East to boot."
+    },
+    {
+      "number": 37,
+      "speaker": "MALCOLM",
+      "text": "Be not offended:"
+    },
+    {
+      "number": 38,
+      "speaker": "MALCOLM",
+      "text": "I speak not as in absolute fear of you."
+    },
+    {
+      "number": 39,
+      "speaker": "MALCOLM",
+      "text": "I think our country sinks beneath the yoke;"
+    },
+    {
+      "number": 40,
+      "speaker": "MALCOLM",
+      "text": "It weeps, it bleeds; and each new day a gash"
+    },
+    {
+      "number": 41,
+      "speaker": "MALCOLM",
+      "text": "Is added to her wounds: I think withal"
+    },
+    {
+      "number": 42,
+      "speaker": "MALCOLM",
+      "text": "There would be hands uplifted in my right;"
+    },
+    {
+      "number": 43,
+      "speaker": "MALCOLM",
+      "text": "And here from gracious England have I offer"
+    },
+    {
+      "number": 44,
+      "speaker": "MALCOLM",
+      "text": "Of goodly thousands: but, for all this,"
+    },
+    {
+      "number": 45,
+      "speaker": "MALCOLM",
+      "text": "When I shall tread upon the tyrant’s head,"
+    },
+    {
+      "number": 46,
+      "speaker": "MALCOLM",
+      "text": "Or wear it on my sword, yet my poor country"
+    },
+    {
+      "number": 47,
+      "speaker": "MALCOLM",
+      "text": "Shall have more vices than it had before,"
+    },
+    {
+      "number": 48,
+      "speaker": "MALCOLM",
+      "text": "More suffer and more sundry ways than ever,"
+    },
+    {
+      "number": 49,
+      "speaker": "MALCOLM",
+      "text": "By him that shall succeed."
+    },
+    {
+      "number": 49,
+      "speaker": "MACDUFF",
+      "text": "What should he be?"
+    },
+    {
+      "number": 50,
+      "speaker": "MALCOLM",
+      "text": "It is myself I mean: in whom I know"
+    },
+    {
+      "number": 51,
+      "speaker": "MALCOLM",
+      "text": "All the particulars of vice so grafted"
+    },
+    {
+      "number": 52,
+      "speaker": "MALCOLM",
+      "text": "That, when they shall be open’d, black Macbeth"
+    },
+    {
+      "number": 53,
+      "speaker": "MALCOLM",
+      "text": "Will seem as pure as snow, and the poor state"
+    },
+    {
+      "number": 54,
+      "speaker": "MALCOLM",
+      "text": "Esteem him as a lamb, being compared"
+    },
+    {
+      "number": 55,
+      "speaker": "MALCOLM",
+      "text": "With my confineless harms."
+    },
+    {
+      "number": 55,
+      "speaker": "MACDUFF",
+      "text": "Not in the legions"
+    },
+    {
+      "number": 56,
+      "speaker": "MACDUFF",
+      "text": "Of horrid hell can come a devil more damn’d"
+    },
+    {
+      "number": 57,
+      "speaker": "MACDUFF",
+      "text": "In evils to top Macbeth."
+    },
+    {
+      "number": 57,
+      "speaker": "MALCOLM",
+      "text": "I grant him bloody,"
+    },
+    {
+      "number": 58,
+      "speaker": "MALCOLM",
+      "text": "Luxurious, avaricious, false, deceitful,"
+    },
+    {
+      "number": 59,
+      "speaker": "MALCOLM",
+      "text": "Sudden, malicious, smacking of every sin"
+    },
+    {
+      "number": 60,
+      "speaker": "MALCOLM",
+      "text": "That has a name: but there’s no bottom, none,"
+    },
+    {
+      "number": 61,
+      "speaker": "MALCOLM",
+      "text": "In my voluptuousness: your wives, your daughters,"
+    },
+    {
+      "number": 62,
+      "speaker": "MALCOLM",
+      "text": "Your matrons and your maids, could not fill up"
+    },
+    {
+      "number": 63,
+      "speaker": "MALCOLM",
+      "text": "The cistern of my lust, and my desire"
+    },
+    {
+      "number": 64,
+      "speaker": "MALCOLM",
+      "text": "All continent impediments would o’erbear"
+    },
+    {
+      "number": 65,
+      "speaker": "MALCOLM",
+      "text": "That did oppose my will: better Macbeth"
+    },
+    {
+      "number": 66,
+      "speaker": "MALCOLM",
+      "text": "Than such an one to reign."
+    },
+    {
+      "number": 66,
+      "speaker": "MACDUFF",
+      "text": "Boundless intemperance"
+    },
+    {
+      "number": 67,
+      "speaker": "MACDUFF",
+      "text": "In nature is a tyranny; it hath been"
+    },
+    {
+      "number": 68,
+      "speaker": "MACDUFF",
+      "text": "The untimely emptying of the happy throne"
+    },
+    {
+      "number": 69,
+      "speaker": "MACDUFF",
+      "text": "And fall of many kings. But fear not yet"
+    },
+    {
+      "number": 70,
+      "speaker": "MACDUFF",
+      "text": "To take upon you what is yours: you may"
+    },
+    {
+      "number": 71,
+      "speaker": "MACDUFF",
+      "text": "Convey your pleasures in a spacious plenty,"
+    },
+    {
+      "number": 72,
+      "speaker": "MACDUFF",
+      "text": "And yet seem cold, the time you may so hoodwink."
+    },
+    {
+      "number": 73,
+      "speaker": "MACDUFF",
+      "text": "We have willing dames enough; there cannot be"
+    },
+    {
+      "number": 74,
+      "speaker": "MACDUFF",
+      "text": "That vulture in you, to devour so many"
+    },
+    {
+      "number": 75,
+      "speaker": "MACDUFF",
+      "text": "As will to greatness dedicate themselves,"
+    },
+    {
+      "number": 76,
+      "speaker": "MACDUFF",
+      "text": "Finding it so inclined."
+    },
+    {
+      "number": 76,
+      "speaker": "MALCOLM",
+      "text": "With this there grows"
+    },
+    {
+      "number": 77,
+      "speaker": "MALCOLM",
+      "text": "In my most ill-composed affection such"
+    },
+    {
+      "number": 78,
+      "speaker": "MALCOLM",
+      "text": "A stanchless avarice that, were I king,"
+    },
+    {
+      "number": 79,
+      "speaker": "MALCOLM",
+      "text": "I should cut off the nobles for their lands,"
+    },
+    {
+      "number": 80,
+      "speaker": "MALCOLM",
+      "text": "Desire his jewels and this other’s house:"
+    },
+    {
+      "number": 81,
+      "speaker": "MALCOLM",
+      "text": "And my more-having would be as a sauce"
+    },
+    {
+      "number": 82,
+      "speaker": "MALCOLM",
+      "text": "To make me hunger more; that I should forge"
+    },
+    {
+      "number": 83,
+      "speaker": "MALCOLM",
+      "text": "Quarrels unjust against the good and loyal,"
+    },
+    {
+      "number": 84,
+      "speaker": "MALCOLM",
+      "text": "Destroying them for wealth."
+    },
+    {
+      "number": 84,
+      "speaker": "MACDUFF",
+      "text": "This avarice"
+    },
+    {
+      "number": 85,
+      "speaker": "MACDUFF",
+      "text": "Sticks deeper, grows with more pernicious root"
+    },
+    {
+      "number": 86,
+      "speaker": "MACDUFF",
+      "text": "Than summer-seeming lust, and it hath been"
+    },
+    {
+      "number": 87,
+      "speaker": "MACDUFF",
+      "text": "The sword of our slain kings: yet do not fear;"
+    },
+    {
+      "number": 88,
+      "speaker": "MACDUFF",
+      "text": "Scotland hath foisons to fill up your will,"
+    },
+    {
+      "number": 89,
+      "speaker": "MACDUFF",
+      "text": "Of your mere own: all these are portable,"
+    },
+    {
+      "number": 90,
+      "speaker": "MACDUFF",
+      "text": "With other graces weigh’d."
+    },
+    {
+      "number": 91,
+      "speaker": "MALCOLM",
+      "text": "But I have none: the king-becoming graces,"
+    },
+    {
+      "number": 92,
+      "speaker": "MALCOLM",
+      "text": "As justice, verity, temperance, stableness,"
+    },
+    {
+      "number": 93,
+      "speaker": "MALCOLM",
+      "text": "Bounty, perseverance, mercy, lowliness,"
+    },
+    {
+      "number": 94,
+      "speaker": "MALCOLM",
+      "text": "Devotion, patience, courage, fortitude,"
+    },
+    {
+      "number": 95,
+      "speaker": "MALCOLM",
+      "text": "I have no relish of them, but abound"
+    },
+    {
+      "number": 96,
+      "speaker": "MALCOLM",
+      "text": "In the division of each several crime,"
+    },
+    {
+      "number": 97,
+      "speaker": "MALCOLM",
+      "text": "Acting it many ways. Nay, had I power, I should"
+    },
+    {
+      "number": 98,
+      "speaker": "MALCOLM",
+      "text": "Pour the sweet milk of concord into hell,"
+    },
+    {
+      "number": 99,
+      "speaker": "MALCOLM",
+      "text": "Uproar the universal peace, confound"
+    },
+    {
+      "number": 100,
+      "speaker": "MALCOLM",
+      "text": "All unity on earth."
+    },
+    {
+      "number": 100,
+      "speaker": "MACDUFF",
+      "text": "O Scotland, Scotland!"
+    },
+    {
+      "number": 101,
+      "speaker": "MALCOLM",
+      "text": "If such a one be fit to govern, speak:"
+    },
+    {
+      "number": 102,
+      "speaker": "MALCOLM",
+      "text": "I am as I have spoken."
+    },
+    {
+      "number": 102,
+      "speaker": "MACDUFF",
+      "text": "Fit to govern!"
+    },
+    {
+      "number": 103,
+      "speaker": "MACDUFF",
+      "text": "No, not to live. O nation miserable,"
+    },
+    {
+      "number": 104,
+      "speaker": "MACDUFF",
+      "text": "With an untitled tyrant bloody-scepter’d,"
+    },
+    {
+      "number": 105,
+      "speaker": "MACDUFF",
+      "text": "When shalt thou see thy wholesome days again,"
+    },
+    {
+      "number": 106,
+      "speaker": "MACDUFF",
+      "text": "Since that the truest issue of thy throne"
+    },
+    {
+      "number": 107,
+      "speaker": "MACDUFF",
+      "text": "By his own interdiction stands accursed,"
+    },
+    {
+      "number": 108,
+      "speaker": "MACDUFF",
+      "text": "And does blaspheme his breed? Thy royal father"
+    },
+    {
+      "number": 109,
+      "speaker": "MACDUFF",
+      "text": "Was a most sainted king: the queen that bore thee,"
+    },
+    {
+      "number": 110,
+      "speaker": "MACDUFF",
+      "text": "Oftener upon her knees than on her feet,"
+    },
+    {
+      "number": 111,
+      "speaker": "MACDUFF",
+      "text": "Died every day she lived. Fare thee well!"
+    },
+    {
+      "number": 112,
+      "speaker": "MACDUFF",
+      "text": "These evils thou repeat’st upon thyself"
+    },
+    {
+      "number": 113,
+      "speaker": "MACDUFF",
+      "text": "Have banish’d me from Scotland. O my breast,"
+    },
+    {
+      "number": 114,
+      "speaker": "MACDUFF",
+      "text": "Thy hope ends here!"
+    },
+    {
+      "number": 114,
+      "speaker": "MALCOLM",
+      "text": "Macduff, this noble passion,"
+    },
+    {
+      "number": 115,
+      "speaker": "MALCOLM",
+      "text": "Child of integrity, hath from my soul"
+    },
+    {
+      "number": 116,
+      "speaker": "MALCOLM",
+      "text": "Wiped the black scruples, reconciled my thoughts"
+    },
+    {
+      "number": 117,
+      "speaker": "MALCOLM",
+      "text": "To thy good truth and honour. Devilish Macbeth"
+    },
+    {
+      "number": 118,
+      "speaker": "MALCOLM",
+      "text": "By many of these trains hath sought to win me"
+    },
+    {
+      "number": 119,
+      "speaker": "MALCOLM",
+      "text": "Into his power, and modest wisdom plucks me"
+    },
+    {
+      "number": 120,
+      "speaker": "MALCOLM",
+      "text": "From over-credulous haste: but God above"
+    },
+    {
+      "number": 121,
+      "speaker": "MALCOLM",
+      "text": "Deal between thee and me! for even now"
+    },
+    {
+      "number": 122,
+      "speaker": "MALCOLM",
+      "text": "I put myself to thy direction, and"
+    },
+    {
+      "number": 123,
+      "speaker": "MALCOLM",
+      "text": "Unspeak mine own detraction, here abjure"
+    },
+    {
+      "number": 124,
+      "speaker": "MALCOLM",
+      "text": "The taints and blames I laid upon myself,"
+    },
+    {
+      "number": 125,
+      "speaker": "MALCOLM",
+      "text": "For strangers to my nature. I am yet"
+    },
+    {
+      "number": 126,
+      "speaker": "MALCOLM",
+      "text": "Unknown to woman, never was forsworn,"
+    },
+    {
+      "number": 127,
+      "speaker": "MALCOLM",
+      "text": "Scarcely have coveted what was mine own,"
+    },
+    {
+      "number": 128,
+      "speaker": "MALCOLM",
+      "text": "At no time broke my faith, would not betray"
+    },
+    {
+      "number": 129,
+      "speaker": "MALCOLM",
+      "text": "The devil to his fellow and delight"
+    },
+    {
+      "number": 130,
+      "speaker": "MALCOLM",
+      "text": "No less in truth than life: my first false speaking"
+    },
+    {
+      "number": 131,
+      "speaker": "MALCOLM",
+      "text": "Was this upon myself: what I am truly,"
+    },
+    {
+      "number": 132,
+      "speaker": "MALCOLM",
+      "text": "Is thine and my poor country’s to command:"
+    },
+    {
+      "number": 133,
+      "speaker": "MALCOLM",
+      "text": "Whither indeed, before thy here-approach,"
+    },
+    {
+      "number": 134,
+      "speaker": "MALCOLM",
+      "text": "Old Siward, with ten thousand warlike men,"
+    },
+    {
+      "number": 135,
+      "speaker": "MALCOLM",
+      "text": "Already at a point, was setting forth."
+    },
+    {
+      "number": 136,
+      "speaker": "MALCOLM",
+      "text": "Now we’ll together; and the chance of goodness"
+    },
+    {
+      "number": 137,
+      "speaker": "MALCOLM",
+      "text": "Be like our warranted quarrel! Why are you silent?"
+    },
+    {
+      "number": 138,
+      "speaker": "MACDUFF",
+      "text": "Such welcome and unwelcome things at once"
+    },
+    {
+      "number": 139,
+      "speaker": "MACDUFF",
+      "text": "’Tis hard to reconcile."
+    },
+    {
+      "number": 140,
+      "speaker": "MALCOLM",
+      "text": "Well; more anon.—Comes the king forth, I pray you?"
+    },
+    {
+      "number": 141,
+      "speaker": "DOCTOR",
+      "text": "Ay, sir; there are a crew of wretched souls"
+    },
+    {
+      "number": 142,
+      "speaker": "DOCTOR",
+      "text": "That stay his cure: their malady convinces"
+    },
+    {
+      "number": 143,
+      "speaker": "DOCTOR",
+      "text": "The great assay of art; but at his touch—"
+    },
+    {
+      "number": 144,
+      "speaker": "DOCTOR",
+      "text": "Such sanctity hath heaven given his hand—"
+    },
+    {
+      "number": 145,
+      "speaker": "DOCTOR",
+      "text": "They presently amend."
+    },
+    {
+      "number": 145,
+      "speaker": "MALCOLM",
+      "text": "I thank you, doctor."
+    },
+    {
+      "number": 146,
+      "speaker": "MACDUFF",
+      "text": "What’s the disease he means?"
+    },
+    {
+      "number": 146,
+      "speaker": "MALCOLM",
+      "text": "’Tis call’d the evil:"
+    },
+    {
+      "number": 147,
+      "speaker": "MALCOLM",
+      "text": "A most miraculous work in this good king;"
+    },
+    {
+      "number": 148,
+      "speaker": "MALCOLM",
+      "text": "Which often, since my here-remain in England,"
+    },
+    {
+      "number": 149,
+      "speaker": "MALCOLM",
+      "text": "I have seen him do. How he solicits heaven,"
+    },
+    {
+      "number": 150,
+      "speaker": "MALCOLM",
+      "text": "Himself best knows: but strangely-visited people,"
+    },
+    {
+      "number": 151,
+      "speaker": "MALCOLM",
+      "text": "All swoln and ulcerous, pitiful to the eye,"
+    },
+    {
+      "number": 152,
+      "speaker": "MALCOLM",
+      "text": "The mere despair of surgery, he cures,"
+    },
+    {
+      "number": 153,
+      "speaker": "MALCOLM",
+      "text": "Hanging a golden stamp about their necks,"
+    },
+    {
+      "number": 154,
+      "speaker": "MALCOLM",
+      "text": "Put on with holy prayers: and ’tis spoken,"
+    },
+    {
+      "number": 155,
+      "speaker": "MALCOLM",
+      "text": "To the succeeding royalty he leaves"
+    },
+    {
+      "number": 156,
+      "speaker": "MALCOLM",
+      "text": "The healing benediction. With this strange virtue,"
+    },
+    {
+      "number": 157,
+      "speaker": "MALCOLM",
+      "text": "He hath a heavenly gift of prophecy,"
+    },
+    {
+      "number": 158,
+      "speaker": "MALCOLM",
+      "text": "And sundry blessings hang about his throne,"
+    },
+    {
+      "number": 159,
+      "speaker": "MALCOLM",
+      "text": "That speak him full of grace."
+    },
+    {
+      "number": 159,
+      "speaker": "MACDUFF",
+      "text": "See, who comes here?"
+    },
+    {
+      "number": 160,
+      "speaker": "MALCOLM",
+      "text": "My countryman; but yet I know him not."
+    },
+    {
+      "number": 161,
+      "speaker": "MACDUFF",
+      "text": "My ever-gentle cousin, welcome hither."
+    },
+    {
+      "number": 162,
+      "speaker": "MALCOLM",
+      "text": "I know him now. Good God, betimes remove"
+    },
+    {
+      "number": 163,
+      "speaker": "MALCOLM",
+      "text": "The means that makes us strangers!"
+    },
+    {
+      "number": 163,
+      "speaker": "ROSS",
+      "text": "Sir, amen."
+    },
+    {
+      "number": 164,
+      "speaker": "MACDUFF",
+      "text": "Stands Scotland where it did?"
+    },
+    {
+      "number": 164,
+      "speaker": "ROSS",
+      "text": "Alas, poor country!"
+    },
+    {
+      "number": 165,
+      "speaker": "ROSS",
+      "text": "Almost afraid to know itself. It cannot"
+    },
+    {
+      "number": 166,
+      "speaker": "ROSS",
+      "text": "Be call’d our mother, but our grave; where nothing,"
+    },
+    {
+      "number": 167,
+      "speaker": "ROSS",
+      "text": "But who knows nothing, is once seen to smile;"
+    },
+    {
+      "number": 168,
+      "speaker": "ROSS",
+      "text": "Where sighs and groans and shrieks that rend the air"
+    },
+    {
+      "number": 169,
+      "speaker": "ROSS",
+      "text": "Are made, not mark’d; where violent sorrow seems"
+    },
+    {
+      "number": 170,
+      "speaker": "ROSS",
+      "text": "A modern ecstasy: the dead man’s knell"
+    },
+    {
+      "number": 171,
+      "speaker": "ROSS",
+      "text": "Is there scarce ask’d for who; and good men’s lives"
+    },
+    {
+      "number": 172,
+      "speaker": "ROSS",
+      "text": "Expire before the flowers in their caps,"
+    },
+    {
+      "number": 173,
+      "speaker": "ROSS",
+      "text": "Dying or ere they sicken."
+    },
+    {
+      "number": 173,
+      "speaker": "MACDUFF",
+      "text": "O, relation"
+    },
+    {
+      "number": 174,
+      "speaker": "MACDUFF",
+      "text": "Too nice, and yet too true!"
+    },
+    {
+      "number": 174,
+      "speaker": "MALCOLM",
+      "text": "What’s the newest grief?"
+    },
+    {
+      "number": 175,
+      "speaker": "ROSS",
+      "text": "That of an hour’s age doth hiss the speaker:"
+    },
+    {
+      "number": 176,
+      "speaker": "ROSS",
+      "text": "Each minute teems a new one."
+    },
+    {
+      "number": 176,
+      "speaker": "MACDUFF",
+      "text": "How does my wife?"
+    },
+    {
+      "number": 177,
+      "speaker": "ROSS",
+      "text": "Why, well."
+    },
+    {
+      "number": 177,
+      "speaker": "MACDUFF",
+      "text": "And all my children?"
+    },
+    {
+      "number": 178,
+      "speaker": "ROSS",
+      "text": "Well too."
+    },
+    {
+      "number": 179,
+      "speaker": "MACDUFF",
+      "text": "The tyrant has not batter’d at their peace?"
+    },
+    {
+      "number": 180,
+      "speaker": "ROSS",
+      "text": "No; they were well at peace when I did leave ’em."
+    },
+    {
+      "number": 181,
+      "speaker": "MACDUFF",
+      "text": "But not a niggard of your speech: how goes’t?"
+    },
+    {
+      "number": 182,
+      "speaker": "ROSS",
+      "text": "When I came hither to transport the tidings,"
+    },
+    {
+      "number": 183,
+      "speaker": "ROSS",
+      "text": "Which I have heavily borne, there ran a rumour"
+    },
+    {
+      "number": 184,
+      "speaker": "ROSS",
+      "text": "Of many worthy fellows that were out;"
+    },
+    {
+      "number": 185,
+      "speaker": "ROSS",
+      "text": "Which was to my belief witness’d the rather,"
+    },
+    {
+      "number": 186,
+      "speaker": "ROSS",
+      "text": "For that I saw the tyrant’s power a-foot:"
+    },
+    {
+      "number": 187,
+      "speaker": "ROSS",
+      "text": "Now is the time of help; your eye in Scotland"
+    },
+    {
+      "number": 188,
+      "speaker": "ROSS",
+      "text": "Would create soldiers, make our women fight,"
+    },
+    {
+      "number": 189,
+      "speaker": "ROSS",
+      "text": "To doff their dire distresses."
+    },
+    {
+      "number": 189,
+      "speaker": "MALCOLM",
+      "text": "Be’t their comfort"
+    },
+    {
+      "number": 190,
+      "speaker": "MALCOLM",
+      "text": "We are coming thither: gracious England hath"
+    },
+    {
+      "number": 191,
+      "speaker": "MALCOLM",
+      "text": "Lent us good Siward and ten thousand men;"
+    },
+    {
+      "number": 192,
+      "speaker": "MALCOLM",
+      "text": "An older and a better soldier none"
+    },
+    {
+      "number": 193,
+      "speaker": "MALCOLM",
+      "text": "That Christendom gives out."
+    },
+    {
+      "number": 193,
+      "speaker": "ROSS",
+      "text": "Would I could answer"
+    },
+    {
+      "number": 194,
+      "speaker": "ROSS",
+      "text": "This comfort with the like! But I have words"
+    },
+    {
+      "number": 195,
+      "speaker": "ROSS",
+      "text": "That would be howl’d out in the desert air,"
+    },
+    {
+      "number": 196,
+      "speaker": "ROSS",
+      "text": "Where hearing should not latch them."
+    },
+    {
+      "number": 196,
+      "speaker": "MACDUFF",
+      "text": "What concern they?"
+    },
+    {
+      "number": 197,
+      "speaker": "MACDUFF",
+      "text": "The general cause? or is it a fee-grief"
+    },
+    {
+      "number": 198,
+      "speaker": "MACDUFF",
+      "text": "Due to some single breast?"
+    },
+    {
+      "number": 198,
+      "speaker": "ROSS",
+      "text": "No mind that’s honest"
+    },
+    {
+      "number": 199,
+      "speaker": "ROSS",
+      "text": "But in it shares some woe; though the main part"
+    },
+    {
+      "number": 200,
+      "speaker": "ROSS",
+      "text": "Pertains to you alone."
+    },
+    {
+      "number": 200,
+      "speaker": "MACDUFF",
+      "text": "If it be mine,"
+    },
+    {
+      "number": 201,
+      "speaker": "MACDUFF",
+      "text": "Keep it not from me, quickly let me have it."
+    },
+    {
+      "number": 202,
+      "speaker": "ROSS",
+      "text": "Let not your ears despise my tongue for ever,"
+    },
+    {
+      "number": 203,
+      "speaker": "ROSS",
+      "text": "Which shall possess them with the heaviest sound"
+    },
+    {
+      "number": 204,
+      "speaker": "ROSS",
+      "text": "That ever yet they heard."
+    },
+    {
+      "number": 204,
+      "speaker": "MACDUFF",
+      "text": "Hum! I guess at it."
+    },
+    {
+      "number": 205,
+      "speaker": "ROSS",
+      "text": "Your castle is surprised; your wife and babes"
+    },
+    {
+      "number": 206,
+      "speaker": "ROSS",
+      "text": "Savagely slaughter’d: to relate the manner,"
+    },
+    {
+      "number": 207,
+      "speaker": "ROSS",
+      "text": "Were, on the quarry of these murder’d deer,"
+    },
+    {
+      "number": 208,
+      "speaker": "ROSS",
+      "text": "To add the death of you."
+    },
+    {
+      "number": 208,
+      "speaker": "MALCOLM",
+      "text": "Merciful heaven!"
+    },
+    {
+      "number": 209,
+      "speaker": "MALCOLM",
+      "text": "What, man! ne’er pull your hat upon your brows;"
+    },
+    {
+      "number": 210,
+      "speaker": "MALCOLM",
+      "text": "Give sorrow words: the grief that does not speak"
+    },
+    {
+      "number": 211,
+      "speaker": "MALCOLM",
+      "text": "Whispers the o’er-fraught heart and bids it break."
+    },
+    {
+      "number": 212,
+      "speaker": "MACDUFF",
+      "text": "My children too?"
+    },
+    {
+      "number": 212,
+      "speaker": "ROSS",
+      "text": "Wife, children, servants, all"
+    },
+    {
+      "number": 213,
+      "speaker": "ROSS",
+      "text": "That could be found."
+    },
+    {
+      "number": 213,
+      "speaker": "MACDUFF",
+      "text": "And I must be from thence!"
+    },
+    {
+      "number": 214,
+      "speaker": "MACDUFF",
+      "text": "My wife kill’d too?"
+    },
+    {
+      "number": 214,
+      "speaker": "ROSS",
+      "text": "I have said."
+    },
+    {
+      "number": 215,
+      "speaker": "MALCOLM",
+      "text": "Be comforted:"
+    },
+    {
+      "number": 216,
+      "speaker": "MALCOLM",
+      "text": "Let’s make us medicines of our great revenge,"
+    },
+    {
+      "number": 217,
+      "speaker": "MALCOLM",
+      "text": "To cure this deadly grief."
+    },
+    {
+      "number": 218,
+      "speaker": "MACDUFF",
+      "text": "He has no children. All my pretty ones?"
+    },
+    {
+      "number": 219,
+      "speaker": "MACDUFF",
+      "text": "Did you say all? O hell-kite! All?"
+    },
+    {
+      "number": 220,
+      "speaker": "MACDUFF",
+      "text": "What, all my pretty chickens and their dam"
+    },
+    {
+      "number": 221,
+      "speaker": "MACDUFF",
+      "text": "At one fell swoop?"
+    },
+    {
+      "number": 221,
+      "speaker": "MALCOLM",
+      "text": "Dispute it like a man."
+    },
+    {
+      "number": 222,
+      "speaker": "MACDUFF",
+      "text": "I shall do so;"
+    },
+    {
+      "number": 223,
+      "speaker": "MACDUFF",
+      "text": "But I must also feel it as a man:"
+    },
+    {
+      "number": 224,
+      "speaker": "MACDUFF",
+      "text": "I cannot but remember such things were,"
+    },
+    {
+      "number": 225,
+      "speaker": "MACDUFF",
+      "text": "That were most precious to me. Did heaven look on,"
+    },
+    {
+      "number": 226,
+      "speaker": "MACDUFF",
+      "text": "And would not take their part? Sinful Macduff,"
+    },
+    {
+      "number": 227,
+      "speaker": "MACDUFF",
+      "text": "They were all struck for thee! naught that I am,"
+    },
+    {
+      "number": 228,
+      "speaker": "MACDUFF",
+      "text": "Not for their own demerits, but for mine,"
+    },
+    {
+      "number": 229,
+      "speaker": "MACDUFF",
+      "text": "Fell slaughter on their souls. Heaven rest them now!"
+    },
+    {
+      "number": 230,
+      "speaker": "MALCOLM",
+      "text": "Be this the whetstone of your sword: let grief"
+    },
+    {
+      "number": 231,
+      "speaker": "MALCOLM",
+      "text": "Convert to anger; blunt not the heart, enrage it."
+    },
+    {
+      "number": 232,
+      "speaker": "MACDUFF",
+      "text": "O, I could play the woman with mine eyes"
+    },
+    {
+      "number": 233,
+      "speaker": "MACDUFF",
+      "text": "And braggart with my tongue! But, gentle heavens,"
+    },
+    {
+      "number": 234,
+      "speaker": "MACDUFF",
+      "text": "Cut short all intermission; front to front"
+    },
+    {
+      "number": 235,
+      "speaker": "MACDUFF",
+      "text": "Bring thou this fiend of Scotland and myself;"
+    },
+    {
+      "number": 236,
+      "speaker": "MACDUFF",
+      "text": "Within my sword’s length set him; if he ’scape,"
+    },
+    {
+      "number": 237,
+      "speaker": "MACDUFF",
+      "text": "Heaven forgive him too!"
+    },
+    {
+      "number": 237,
+      "speaker": "MALCOLM",
+      "text": "This tune goes manly."
+    },
+    {
+      "number": 238,
+      "speaker": "MALCOLM",
+      "text": "Come, go we to the king; our power is ready;"
+    },
+    {
+      "number": 239,
+      "speaker": "MALCOLM",
+      "text": "Our lack is nothing but our leave: Macbeth"
+    },
+    {
+      "number": 240,
+      "speaker": "MALCOLM",
+      "text": "Is ripe for shaking, and the powers above"
+    },
+    {
+      "number": 241,
+      "speaker": "MALCOLM",
+      "text": "Put on their instruments. Receive what cheer you may:"
+    },
+    {
+      "number": 242,
+      "speaker": "MALCOLM",
+      "text": "The night is long that never finds the day."
+    }
+  ],
+  "stage_directions": [
+    {
+      "after_line": 0,
+      "text": "Enter Malcolm and Macduff."
+    },
+    {
+      "after_line": 139,
+      "text": "Enter a Doctor."
+    },
+    {
+      "after_line": 145,
+      "text": "Exit Doctor."
+    },
+    {
+      "after_line": 159,
+      "text": "Enter Ross."
+    },
+    {
+      "after_line": 242,
+      "text": "Exeunt."
+    }
+  ],
+  "glosses": [
+    {
+      "id": "macbeth_act4_scene3_gloss1",
+      "line": 3,
+      "phrase": "mortal sword",
+      "definition": "deadly weapon"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss2",
+      "line": 4,
+      "phrase": "Bestride our down-fall’n birthdom",
+      "definition": "stand astride our fallen homeland — defend it"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss3",
+      "line": 4,
+      "phrase": "birthdom",
+      "definition": "birthplace; native land"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss4",
+      "line": 5,
+      "phrase": "new widows howl, new orphans cry",
+      "definition": "the daily cost of Macbeth's tyranny"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss5",
+      "line": 9,
+      "phrase": "redress",
+      "definition": "remedy; put right"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss6",
+      "line": 13,
+      "phrase": "honest",
+      "definition": "faithful; true"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss7",
+      "line": 26,
+      "phrase": "rawness",
+      "definition": "exposed vulnerability — Malcolm questions why Macduff left his family unprotected"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss8",
+      "line": 34,
+      "phrase": "affeer’d",
+      "definition": "confirmed; ratified"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss9",
+      "line": 24,
+      "phrase": "I have lost my hopes",
+      "definition": "Macduff's despair that Malcolm mistrusts him"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss11",
+      "line": 34,
+      "phrase": "Fare thee well, lord",
+      "definition": "Macduff preparing to leave in disgust"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss13",
+      "line": 51,
+      "phrase": "grafted",
+      "definition": "ingrained; implanted"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss14",
+      "line": 55,
+      "phrase": "confineless harms",
+      "definition": "boundless evils"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss15",
+      "line": 57,
+      "phrase": "grant him bloody",
+      "definition": "admit that he is bloody — Malcolm's argument that he himself has worse vices than Macbeth (a test of Macduff's loyalty)"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss16",
+      "line": 58,
+      "phrase": "Luxurious, avaricious, false, deceitful",
+      "definition": "lustful, greedy, lying, deceptive — Malcolm's false self-portrait"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss17",
+      "line": 63,
+      "phrase": "cistern of my lust",
+      "definition": "my lust's reservoir — Malcolm's hyperbolic self-accusation"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss20",
+      "line": 59,
+      "phrase": "sudden",
+      "definition": "violent; headlong"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss21",
+      "line": 78,
+      "phrase": "stanchless avarice",
+      "definition": "unstoppable greed"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss22",
+      "line": 86,
+      "phrase": "summer-seeming lust",
+      "definition": "the lust of summer — youthful and passing"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss23",
+      "line": 89,
+      "phrase": "Of your mere own",
+      "definition": "from your own estates alone"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss24",
+      "line": 91,
+      "phrase": "king-becoming graces",
+      "definition": "the virtues proper to a king"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss26",
+      "line": 99,
+      "phrase": "Uproar the universal peace",
+      "definition": "throw the world's peace into chaos"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss28",
+      "line": 116,
+      "phrase": "black scruples",
+      "definition": "dark doubts"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss29",
+      "line": 116,
+      "phrase": "reconciled my thoughts",
+      "definition": "brought my thinking into harmony"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss30",
+      "line": 126,
+      "phrase": "Unknown to woman",
+      "definition": "never slept with a woman"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss31",
+      "line": 134,
+      "phrase": "Old Siward",
+      "definition": "the English earl leading the forces against Macbeth"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss32",
+      "line": 137,
+      "phrase": "warranted quarrel",
+      "definition": "legitimate cause"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss34",
+      "line": 152,
+      "phrase": "mere despair",
+      "definition": "utter hopelessness"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss35",
+      "line": 153,
+      "phrase": "Hanging a golden stamp about their necks",
+      "definition": "hanging the 'angel' coin on threads — the ritual of royal touch-healing"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss37",
+      "line": 197,
+      "phrase": "fee-grief",
+      "definition": "a private, personal grief"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss38",
+      "line": 218,
+      "phrase": "all my pretty ones",
+      "definition": "Macduff's cry over his murdered children — one of Shakespeare's most piercing lines"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss39",
+      "line": 220,
+      "phrase": "dam",
+      "definition": "mother bird (or animal)"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss40",
+      "line": 218,
+      "phrase": "He has no children",
+      "definition": "famously ambiguous: said of Malcolm (who cannot understand) or of Macbeth (no retribution by death of sons possible)"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss41",
+      "line": 227,
+      "phrase": "Naught that I am",
+      "definition": "wretch that I am"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss43",
+      "line": 221,
+      "phrase": "Dispute it like a man",
+      "definition": "endure it with a man's fortitude — Malcolm's bracing advice"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss44",
+      "line": 223,
+      "phrase": "feel it as a man",
+      "definition": "Macduff's famous reply — grief demands a man's feeling, not a man's stoicism"
+    },
+    {
+      "id": "macbeth_act4_scene3_gloss45",
+      "line": 239,
+      "phrase": "Our lack is nothing but our leave",
+      "definition": "we lack nothing but permission to depart"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "macbeth_act4_scene3_ann1",
+      "line_start": 1,
+      "line_end": 140,
+      "citation_display": "Macbeth 4.3.1–140",
+      "category": "thematic",
+      "title": "Malcolm's test",
+      "body": "The long scene in England is frequently cut in performance, which is a mistake. Its length is its point. Malcolm tests Macduff's loyalty by falsely accusing himself of every royal vice he can name — lust, avarice, lying, the whole negation of 'king-becoming graces.' The test is cruel: Macduff, who has just lost Scotland to one tyrant, is made to learn (he thinks) that the next king will be worse.\n\nThe test succeeds because Macduff finally breaks: 'Fit to govern! / No, not to live! O nation miserable...' His refusal to serve a man as corrupt as Malcolm has described is the proof that he is not a spy. Malcolm reveals the test, declares his virtue, and the scene becomes an extended meditation on the royal qualities that Scotland requires.\n\nThe scene is structural as well as political. It establishes the moral grounds on which Macbeth will be opposed — not merely as a usurper, but as the opposite of what kingship should be. The catalog of 'king-becoming graces' (justice, verity, temp'rance, stableness, bounty, perseverance, mercy, lowliness, devotion, patience, courage, fortitude) is the play's positive political theology, against which Macbeth's reign will be measured and found wanting.",
+      "sources": [
+        "Alan Sinfield (1992)",
+        "Peter Holland (2016)",
+        "James Shapiro, *The Year of Lear* (2015)"
+      ]
+    },
+    {
+      "id": "macbeth_act4_scene3_ann2",
+      "line_start": 140,
+      "line_end": 175,
+      "citation_display": "Macbeth 4.3.140–175",
+      "category": "historical",
+      "title": "Edward the Confessor's royal touch",
+      "body": "The Doctor's report of Edward's healing ceremony ('strangely-visited people... the mere despair of surgery, he cures') is deliberate political topicality. James I, who had restored the royal touch ceremony after Elizabeth's intermittent practice, touched thousands of subjects during his reign; the coin ('stamp') Edward hangs around their necks was a real Jacobean medal. The scene is a direct advertisement for James's practice of the rite.\n\nSet dramatically against Macbeth's reign, it is argument: Edward's touch heals by divine legitimacy, Macbeth's touch kills. The power of kingship is not political but theological in this framing, and only the rightful king can access it. Malcolm, associated with Edward, inherits the healing power; Macbeth, in Scotland, is the principle's opposite.",
+      "sources": [
+        "Marc Bloch, *The Royal Touch* (1924, tr. 1973)",
+        "Stephen Greenblatt, *Shakespearean Negotiations* (1988)",
+        "Garry Wills (1995)"
+      ]
+    },
+    {
+      "id": "macbeth_act4_scene3_ann3",
+      "line_start": 200,
+      "line_end": 240,
+      "citation_display": "Macbeth 4.3.200–240",
+      "category": "thematic",
+      "title": "'He has no children'",
+      "body": "Macduff's reply to Ross's report of his family's slaughter — 'He has no children' — is one of the most argued three-word lines in Shakespeare. The options are: (a) 'Malcolm has no children; he cannot understand my grief'; (b) 'Macbeth has no children; I cannot take revenge on his equivalently'; (c) some combination.\n\nThe line functions either way. If it is about Malcolm, it makes Macduff's grief the measure of what political counsel can and cannot understand — no speech about 'dispute it like a man' can reach him. If it is about Macbeth, it registers the wound of asymmetrical revenge: killing Macbeth will not restore Macduff's children.\n\nMalcolm's counsel — 'Dispute it like a man' — is met by Macduff's most cited reply: 'I shall do so; / But I must also feel it as a man.' Grief is redefined: manhood is not the suppression of feeling but the capacity to endure it.",
+      "sources": [
+        "A. C. Bradley (1904)",
+        "Harold Bloom (1998)",
+        "Edward Dowden, *Shakespeare* (1881)"
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "macbeth_act4_scene3_q1",
+      "kind": "structural",
+      "prompt": "Malcolm's false self-accusations function as:",
+      "options": [
+        "Honest confession",
+        "A loyalty test for Macduff — his final break ('Fit to govern! / No, not to live!') proves he is not a spy",
+        "A confession to the priest",
+        "Comic relief"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 50,
+      "anchor_line_end": 115
+    },
+    {
+      "id": "macbeth_act4_scene3_q2",
+      "kind": "historical",
+      "prompt": "Edward the Confessor's healing touch is:",
+      "options": [
+        "Fiction",
+        "Topical — James I revived the ceremony, making this a political advertisement for divine right",
+        "A modern invention",
+        "A Jewish ritual"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 140,
+      "anchor_line_end": 175
+    },
+    {
+      "id": "macbeth_act4_scene3_q3",
+      "kind": "close_reading",
+      "prompt": "Macduff's 'He has no children' (L198) is ambiguous. The two main readings are:",
+      "options": [
+        "'Malcolm has no children (can't understand)' OR 'Macbeth has no children (revenge is asymmetrical)' — either works",
+        "A simple factual statement",
+        "A joke",
+        "A mistranslation"
+      ],
+      "answer_index": 0,
+      "wisdom_reward": 25,
+      "anchor_line_start": 196,
+      "anchor_line_end": 200
+    },
+    {
+      "id": "macbeth_act4_scene3_q4",
+      "kind": "theme",
+      "prompt": "Macduff redefines manhood when he says:",
+      "options": [
+        "'Dispute it like a man'",
+        "'I must also feel it as a man' — manhood is not suppression of feeling but capacity to endure it",
+        "'I will avenge them all'",
+        "'Let us rage'"
+      ],
+      "answer_index": 1,
+      "wisdom_reward": 25,
+      "anchor_line_start": 220,
+      "anchor_line_end": 225
+    }
+  ]
+}

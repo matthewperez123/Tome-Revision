@@ -1,0 +1,37 @@
+{
+  "section_id": "hamlet_act1_scene3",
+  "annotations": [
+    {
+      "line_start": 10,
+      "line_end": 44,
+      "category": "thematic",
+      "title": "Laertes's lecture and the economy of female chastity",
+      "body": "Laertes's warnings to Ophelia treat her virginity as a family asset subject to market risks: 'your chaste treasure,' the 'canker' that 'galls the infants of the spring.' The lecture is conventional Elizabethan doctrine — a brother's duty to police his sister's sexual conduct — but Shakespeare sharpens the ironies. Ophelia's reply, delivered with the cool grace of a younger sister who has heard the speech before, turns it back on him: 'show me the steep and thorny way to heaven / Whiles, like a puff'd and reckless libertine, / Himself the primrose path of dalliance treads.' She sees through the sermon's asymmetry. It is the last time in the play she will be permitted this much rhetorical authority over a man.",
+      "sources": ["Carol Thomas Neely, Broken Nuptials in Shakespeare's Plays (1985)"]
+    },
+    {
+      "line_start": 59,
+      "line_end": 82,
+      "category": "linguistic",
+      "title": "Polonius's precepts as verbal portraiture",
+      "body": "Polonius's famous advice ('Neither a borrower nor a lender be,' 'to thine own self be true') has been quoted out of context so often that readers forget its dramatic function. The maxims are recycled commonplaces from late-Tudor conduct manuals; what Shakespeare does is stitch them end-to-end without connecting logic, producing the effect of a mind that values sententious phrasing above any coherent philosophy. Modern productions often play this speech for comedy; Elizabethan audiences heard a magistrate who has mistaken the cadences of wisdom for its substance. The final line — 'This above all: to thine own self be true' — is the phrase most liable to moral inversion, since the play will show Polonius's self to be precisely the thing one ought not to be true to.",
+      "sources": ["Frank Kermode, Shakespeare's Language (2000)"]
+    },
+    {
+      "line_start": 90,
+      "line_end": 135,
+      "category": "thematic",
+      "title": "Ophelia's 'I do not know, my lord, what I should think'",
+      "body": "Polonius's interrogation of Ophelia about Hamlet's love-tokens is the scene's emotional crux. Ophelia begins with guarded confidence ('He hath, my lord, of late made many tenders') and ends with obedience so complete it erases her own perception: 'I shall obey, my lord.' Between these poles Polonius pries open a private experience she can barely articulate and reframes it as a family political problem. The line 'Tender yourself more dearly' puns on 'tender' as a coin, and its financial register makes clear that Ophelia's love is being appraised as capital. Janet Adelman observes that Ophelia's tragedy begins here, not with Hamlet's cruelty — she loses, in this scene, the language to think her own experience.",
+      "sources": ["Janet Adelman, Suffocating Mothers (1992)"]
+    },
+    {
+      "line_start": 115,
+      "line_end": 118,
+      "category": "close_reading",
+      "title": "'Springes to catch woodcocks'",
+      "body": "Polonius's phrase describing Hamlet's vows to Ophelia compares them to snares set for woodcocks — birds so proverbially stupid that they walk into the same trap twice. The image reduces Hamlet's love to predation and Ophelia to a dim bird. The spring-trap (a springe) was a familiar rural device, triggered by the victim's own footstep; Polonius's metaphor thus blames Ophelia for her susceptibility while pretending only to warn her. This is the scene's quiet cruelty: the father speaks the language of protection and performs the work of a cynic. Shakespeare's hunting imagery recurs throughout the play — the 'hawk from a handsaw,' the 'galled jade,' the pirate-ship ambush — and always accompanies characters who are being trapped or trapping.",
+      "sources": ["Caroline Spurgeon, Shakespeare's Imagery (1935)"]
+    }
+  ]
+}
