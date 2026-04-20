@@ -1,136 +1,199 @@
 "use client"
 
 import { motion, AnimatePresence } from "motion/react"
+import { Send, Sparkles } from "lucide-react"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { useAnimationLoop } from "./useAnimationLoop"
 
+// Reader-side loop target: ~5s per cycle.
 const PHASES = [
-  { name: "reading", duration: 4000 },
-  { name: "hover", duration: 2500 },
-  { name: "annotate", duration: 4000 },
-  { name: "reading2", duration: 3500 },
-  { name: "hover2", duration: 2500 },
-  { name: "annotate2", duration: 4000 },
-  { name: "reset", duration: 600 },
+  { name: "read", duration: 900 },
+  { name: "tap", duration: 800 },
+  { name: "drawer", duration: 1400 },
+  { name: "ask", duration: 1600 },
+  { name: "reset", duration: 400 },
 ]
 
 const PASSAGE_LINES = [
   "Sing, O goddess, the anger of Achilles",
   "son of Peleus, that brought countless ills",
-  "upon the Achaeans. Many a brave soul",
-  "did it send hurrying down to Hades,",
-  "and many a hero did it yield a prey to dogs",
-  "and vultures, for so were the counsels",
-  "of Jove fulfilled from the day on which",
+  "upon the Achaeans.",
 ]
 
-const ANNOTATIONS = [
-  { line: 1, label: "Patronymic", text: "\u201cSon of Peleus\u201d is a patronymic \u2014 an epithet identifying Achilles by his father. Homer uses patronymics to place heroes within their lineage and remind the audience of inherited glory or doom." },
-  { line: 3, label: "Hades", text: "Hades refers both to the god of the underworld and to the underworld itself. Homer\u2019s listeners understood death not as an end but as a passage into a shadowy existence \u2014 a fate worse than glory in battle." },
-]
+const ANNOTATION = {
+  label: "Patronymic",
+  body:
+    "\u201cSon of Peleus\u201d is a patronymic \u2014 an epithet identifying Achilles by his father. Homer uses patronymics to place heroes within their lineage and remind the audience of inherited glory or doom.",
+}
+
+const CHAT_Q = "Why open with Achilles' anger?"
+const CHAT_A =
+  "The anger is the engine of the epic. Homer frames the entire Iliad around a single wound to honor."
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1]
 
 export function AnnotationShowcase() {
   const { phase, containerRef, isReduced } = useAnimationLoop(PHASES)
 
-  const showHighlight1 = phase === "hover" || phase === "annotate" || phase === "reading2"
-  const showAnnotation1 = phase === "annotate"
-  const showHighlight2 = phase === "hover2" || phase === "annotate2"
-  const showAnnotation2 = phase === "annotate2"
+  const showHighlight = phase === "tap" || phase === "drawer" || phase === "ask"
+  const showDrawer = phase === "drawer" || phase === "ask"
+  const showChat = phase === "ask"
 
   if (isReduced) {
     return (
-      <AnnotationShell>
-        <div className="bg-card rounded-xl border border-border p-6">
-          <p className="text-xs text-muted-foreground mb-3">The Iliad &middot; Book I</p>
-          <div className="font-serif text-sm text-foreground leading-[1.9]">
-            {PASSAGE_LINES.map((line, i) => <p key={i}>{line}</p>)}
-          </div>
-        </div>
-      </AnnotationShell>
+      <Shell>
+        <StaticMockup />
+      </Shell>
     )
   }
 
   return (
-    <AnnotationShell>
+    <Shell>
       <div
         ref={containerRef}
-        className="bg-card rounded-xl border border-border p-6 min-h-[300px] relative overflow-hidden"
-        style={{ willChange: "transform" }}
-        aria-label="Animated annotation demonstration"
+        className="bg-card rounded-xl border border-border min-h-[340px] relative overflow-hidden"
+        aria-label="Unified Virgil drawer demonstration"
       >
-        <p className="text-xs text-muted-foreground mb-3">The Iliad &middot; Book I</p>
-
-        <div className="font-serif text-sm text-foreground leading-[1.9] mb-4">
-          {PASSAGE_LINES.map((line, i) => (
-            <motion.p
-              key={i}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: phase === "reading" ? i * 0.12 : 0, duration: 0.35, ease: EASE }}
-              style={{ willChange: "transform, opacity" }}
-            >
-              {i === ANNOTATIONS[0].line && showHighlight1 ? (
-                <HighlightSpan text={line} />
-              ) : i === ANNOTATIONS[1].line && showHighlight2 ? (
-                <HighlightSpan text={line} />
-              ) : line}
-            </motion.p>
-          ))}
+        {/* Passage */}
+        <div className="p-6">
+          <p className="text-[10px] text-muted-foreground mb-3 uppercase tracking-wider">
+            The Iliad &middot; Book I
+          </p>
+          <div className="font-serif text-sm text-foreground leading-[1.9] space-y-0.5">
+            {PASSAGE_LINES.map((line, i) => (
+              <p key={i}>
+                {i === 1 && showHighlight ? (
+                  <>
+                    <motion.span
+                      initial={{ backgroundColor: "transparent" }}
+                      animate={{ backgroundColor: "rgba(99,102,241,0.18)" }}
+                      transition={{ duration: 0.25, ease: EASE }}
+                      className="underline decoration-indigo-500 underline-offset-4 rounded"
+                    >
+                      son of Peleus
+                    </motion.span>
+                    , that brought countless ills
+                  </>
+                ) : (
+                  line
+                )}
+              </p>
+            ))}
+          </div>
         </div>
 
+        {/* Bottom sheet drawer */}
         <AnimatePresence>
-          {showAnnotation1 && (
-            <VirgilCard label={ANNOTATIONS[0].label} text={ANNOTATIONS[0].text} />
-          )}
-          {showAnnotation2 && (
-            <VirgilCard label={ANNOTATIONS[1].label} text={ANNOTATIONS[1].text} />
+          {showDrawer && (
+            <motion.div
+              key="drawer"
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "100%" }}
+              transition={{ duration: 0.35, ease: EASE }}
+              className="absolute inset-x-0 bottom-0 rounded-t-xl bg-background border-t border-border shadow-[0_-8px_24px_rgba(0,0,0,0.08)]"
+              style={{ willChange: "transform" }}
+            >
+              {/* Drawer header — annotation */}
+              <div className="px-5 pt-4 pb-3 border-b border-border">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="size-5 rounded-full bg-indigo-500/15 border border-indigo-500/40 flex items-center justify-center text-[10px] font-serif font-bold text-indigo-500">
+                    V
+                  </div>
+                  <span className="text-xs font-semibold text-indigo-500">
+                    Virgil
+                  </span>
+                  <span className="text-[10px] text-muted-foreground">
+                    &middot; {ANNOTATION.label}
+                  </span>
+                </div>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  {ANNOTATION.body}
+                </p>
+              </div>
+
+              {/* Chat footer */}
+              <div className="p-3">
+                <AnimatePresence>
+                  {showChat && (
+                    <motion.div
+                      key="chat"
+                      initial={{ opacity: 0, y: 6 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.3, ease: EASE }}
+                      className="mb-3 space-y-2"
+                      style={{ willChange: "transform, opacity" }}
+                    >
+                      <div className="flex justify-end">
+                        <div className="rounded-2xl rounded-br-sm bg-indigo-500/10 border border-indigo-500/20 px-3 py-1.5 text-[11px] text-foreground max-w-[80%]">
+                          {CHAT_Q}
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <div className="size-5 rounded-full bg-indigo-500/15 border border-indigo-500/40 flex items-center justify-center text-[9px] font-serif font-bold text-indigo-500 shrink-0 mt-0.5">
+                          V
+                        </div>
+                        <div className="rounded-2xl rounded-tl-sm bg-muted border border-border px-3 py-1.5 text-[11px] text-muted-foreground leading-relaxed max-w-[85%]">
+                          {CHAT_A}
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+
+                <div className="flex items-center gap-2 rounded-full border border-border bg-muted px-3 py-1.5">
+                  <Sparkles className="size-3 text-indigo-500 shrink-0" />
+                  <span className="text-[11px] text-muted-foreground flex-1 truncate">
+                    Ask Virgil about this passage…
+                  </span>
+                  <button
+                    type="button"
+                    className="size-5 rounded-full bg-indigo-500 flex items-center justify-center"
+                    aria-hidden
+                  >
+                    <Send className="size-2.5 text-white" />
+                  </button>
+                </div>
+              </div>
+            </motion.div>
           )}
         </AnimatePresence>
-
       </div>
-    </AnnotationShell>
+    </Shell>
   )
 }
 
-function HighlightSpan({ text }: { text: string }) {
+function StaticMockup() {
   return (
-    <motion.span
-      initial={{ backgroundColor: "transparent" }}
-      animate={{ backgroundColor: "rgba(99,102,241,0.15)" }}
-      className="underline decoration-indigo-500 underline-offset-4 px-0.5 rounded"
-      transition={{ duration: 0.35, ease: EASE }}
-      style={{ willChange: "background-color" }}
-    >
-      {text}
-    </motion.span>
-  )
-}
-
-function VirgilCard({ label, text }: { label: string; text: string }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 8 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 8 }}
-      transition={{ duration: 0.4, ease: EASE }}
-      className="rounded-lg border-l-2 border-indigo-500 bg-indigo-500/5 p-4 mt-2"
-      style={{ willChange: "transform, opacity" }}
-    >
-      <div className="flex items-center gap-2 mb-2">
-        <div className="size-5 rounded-full bg-indigo-500/20 border border-indigo-500/40 flex items-center justify-center text-[10px] font-serif font-bold text-indigo-500">
-          V
+    <div className="bg-card rounded-xl border border-border p-6">
+      <p className="text-[10px] text-muted-foreground mb-3 uppercase tracking-wider">
+        The Iliad &middot; Book I
+      </p>
+      <div className="font-serif text-sm text-foreground leading-[1.9] space-y-0.5 mb-4">
+        {PASSAGE_LINES.map((line, i) => (
+          <p key={i}>{line}</p>
+        ))}
+      </div>
+      <div className="rounded-lg border-l-2 border-indigo-500 bg-indigo-500/5 p-3">
+        <div className="flex items-center gap-2 mb-1">
+          <div className="size-5 rounded-full bg-indigo-500/15 border border-indigo-500/40 flex items-center justify-center text-[10px] font-serif font-bold text-indigo-500">
+            V
+          </div>
+          <span className="text-xs font-semibold text-indigo-500">Virgil</span>
+          <span className="text-[10px] text-muted-foreground">
+            &middot; {ANNOTATION.label}
+          </span>
         </div>
-        <span className="text-xs text-indigo-500 font-semibold">Virgil</span>
-        <span className="text-[10px] text-muted-foreground">&middot; {label}</span>
+        <p className="text-xs text-muted-foreground leading-relaxed">
+          {ANNOTATION.body}
+        </p>
       </div>
-      <p className="text-xs text-muted-foreground leading-relaxed">{text}</p>
-    </motion.div>
+    </div>
   )
 }
 
-function AnnotationShell({ children }: { children: React.ReactNode }) {
+function Shell({ children }: { children: React.ReactNode }) {
   return (
     <section className="bg-background py-24 px-6 md:px-12">
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-10 items-center">
@@ -140,10 +203,12 @@ function AnnotationShell({ children }: { children: React.ReactNode }) {
         <div>
           <BlurFade delay={0.15} inView>
             <h2 className="font-[var(--font-display)] text-3xl md:text-4xl font-bold text-foreground mb-2">
-              Read with a scholar beside you.
+              A scholar in the margin.
             </h2>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
-              Virgil&apos;s footnote annotations appear inline as you read &mdash; explaining unfamiliar words, historical context, and literary devices exactly when you need them.
+              Tap any annotation to open Virgil&apos;s drawer: a scholarly
+              note at the top, a live chat footer at the bottom. Read the
+              footnote, ask a follow-up, keep reading.
             </p>
           </BlurFade>
         </div>
