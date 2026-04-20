@@ -5,14 +5,19 @@ import { useAudience } from "@/contexts/AudienceContext"
 
 import { CarouselSection } from "./CarouselSection"
 import { ReaderSection } from "./ReaderSection"
-import { GamificationSection } from "./GamificationSection"
-import { WorldMapSection } from "./WorldMapSection"
+import { VerseFormattingShowcase } from "./VerseFormattingShowcase"
+import { PlaysFormattingShowcase } from "./PlaysFormattingShowcase"
+import { MiddleEnglishGlossesShowcase } from "./MiddleEnglishGlossesShowcase"
 import { AnnotationShowcase } from "./AnnotationShowcase"
+import { PersonalAnnotationsShowcase } from "./PersonalAnnotationsShowcase"
 import { TrialsShowcase } from "./TrialsShowcase"
+import { GamificationSection } from "./GamificationSection"
 import { LibraryShowcase } from "./LibraryShowcase"
+import { WorldMapSection } from "./WorldMapSection"
 import { TimelinesShowcase } from "./TimelinesShowcase"
 import { AuthorShowcase } from "./AuthorShowcase"
 import { BookClubsShowcase } from "./BookClubsShowcase"
+import { FriendsProfilesShowcase } from "./FriendsProfilesShowcase"
 import { SearchShowcase } from "./SearchShowcase"
 import { ReadingInsightsShowcase } from "./ReadingInsightsShowcase"
 import { ReaderPricingSection } from "./ReaderPricingSection"
@@ -31,6 +36,7 @@ import { StudentProfileShowcase } from "./teacher/StudentProfileShowcase"
 import { EssayGradingShowcase } from "./teacher/EssayGradingShowcase"
 import { ParentsShowcase } from "./teacher/ParentsShowcase"
 import { StudyGroupsShowcase } from "./teacher/StudyGroupsShowcase"
+import { GuidedLearningShowcase } from "./teacher/GuidedLearningShowcase"
 import { TeacherPricingSection } from "./TeacherPricingSection"
 import { TeacherCTA } from "./teacher/TeacherCTA"
 
@@ -51,6 +57,7 @@ export function HomepageContent() {
         <ClassRosterShowcase />
         <AssignmentBuilderShowcase />
         <CustomTrialsShowcase />
+        <GuidedLearningShowcase />
         <GradebookShowcase />
         <StudentDashboardShowcase />
         <DiscussionThreadsShowcase />
@@ -61,6 +68,8 @@ export function HomepageContent() {
         <EssayGradingShowcase />
         <ParentsShowcase />
         <StudyGroupsShowcase />
+        <TimelinesShowcase audience="teacher" />
+        <AuthorShowcase audience="teacher" />
         <TeacherPricingSection />
         <TeacherCTA />
       </>
@@ -71,7 +80,11 @@ export function HomepageContent() {
     <>
       <CarouselSection />
       <ReaderSection />
+      <VerseFormattingShowcase />
+      <PlaysFormattingShowcase />
+      <MiddleEnglishGlossesShowcase />
       <AnnotationShowcase />
+      <PersonalAnnotationsShowcase />
       <TrialsShowcase />
       <GamificationSection />
       <LibraryShowcase />
@@ -79,6 +92,7 @@ export function HomepageContent() {
       <TimelinesShowcase />
       <AuthorShowcase />
       <BookClubsShowcase />
+      <FriendsProfilesShowcase />
       <SearchShowcase />
       <ReadingInsightsShowcase />
       <ReaderPricingSection />

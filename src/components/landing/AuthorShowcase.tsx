@@ -18,15 +18,31 @@ const BOOKS = ["The Odyssey", "The Iliad", "Hymns"]
 const INFLUENCES = ["Oral tradition", "Hesiod", "Near Eastern myths"]
 const INFLUENCED = ["Virgil", "Dante", "Joyce", "Walcott"]
 
-export function AuthorShowcase() {
+type Audience = "reader" | "teacher"
+
+const COPY: Record<Audience, { heading: string; subcopy: string }> = {
+  reader: {
+    heading: "Every author, in depth",
+    subcopy:
+      "Biographies, literary context, influences, and complete bibliographies \u2014 a scholar's dossier for every voice in the canon.",
+  },
+  teacher: {
+    heading: "A dossier per voice",
+    subcopy:
+      "Hand students a vetted author page instead of a Wikipedia tab. Biographies, influences, works, and movement context \u2014 the background reading, already written.",
+  },
+}
+
+export function AuthorShowcase({ audience = "reader" }: { audience?: Audience } = {}) {
   const { phase, containerRef, isReduced } = useAnimationLoop(PHASES)
   const showProfile = phase !== "idle"
   const showBooks = phase === "books" || phase === "influences"
   const showInfluences = phase === "influences"
+  const { heading, subcopy } = COPY[audience]
 
   if (isReduced) {
     return (
-      <TeacherShowcaseShell heading="Every author, in depth" subcopy="Biographies, literary context, influences, and complete bibliographies — a scholar's dossier for every voice in the canon." layout="mockup-right" bgClass="bg-muted">
+      <TeacherShowcaseShell heading={heading} subcopy={subcopy} layout="mockup-right" bgClass="bg-muted">
         <div className="bg-card rounded-xl border border-border p-6">
           <div className="flex items-center gap-4 mb-4">
             <div className="size-14 rounded-full bg-[#0EA5E9] flex items-center justify-center text-lg font-bold text-white">H</div>
@@ -44,7 +60,7 @@ export function AuthorShowcase() {
   }
 
   return (
-    <TeacherShowcaseShell heading="Every author, in depth" subcopy="Biographies, literary context, influences, and complete bibliographies — a scholar's dossier for every voice in the canon." layout="mockup-right" bgClass="bg-muted">
+    <TeacherShowcaseShell heading={heading} subcopy={subcopy} layout="mockup-right" bgClass="bg-muted">
       <div ref={containerRef} className="bg-card rounded-xl border border-border p-6 min-h-[280px] relative overflow-hidden" style={{ willChange: "transform" }}>
         <motion.div animate={{ opacity: showProfile ? 1 : 0, y: showProfile ? 0 : 15 }} transition={{ duration: 0.5, ease: EASE }} style={{ willChange: "transform, opacity" }}>
           <div className="flex items-center gap-4 mb-4">

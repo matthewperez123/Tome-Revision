@@ -23,14 +23,30 @@ const AUTHORS = [
   { initials: "T", name: "Tolstoy", year: "1828", color: "#3B82F6" },
 ]
 
-export function TimelinesShowcase() {
+type Audience = "reader" | "teacher"
+
+const COPY: Record<Audience, { heading: string; subcopy: string }> = {
+  reader: {
+    heading: "The canon, charted through time",
+    subcopy:
+      "Follow each tradition from its first masters to its latest voices. Every author lives in context.",
+  },
+  teacher: {
+    heading: "Context for every assignment",
+    subcopy:
+      "Pin any author or work on a timeline and hand students the same scholarly context you bring to a lecture. Great for period units, movement surveys, and pre-reading.",
+  },
+}
+
+export function TimelinesShowcase({ audience = "reader" }: { audience?: Audience } = {}) {
   const { phase, containerRef, isReduced } = useAnimationLoop(PHASES)
   const showAuthors = phase === "authors" || phase === "hover"
   const showHover = phase === "hover"
+  const { heading, subcopy } = COPY[audience]
 
   if (isReduced) {
     return (
-      <TeacherShowcaseShell heading="The canon, charted through time" subcopy="Follow each tradition from its first masters to its latest voices. Every author lives in context." layout="mockup-left" bgClass="bg-background">
+      <TeacherShowcaseShell heading={heading} subcopy={subcopy} layout="mockup-left" bgClass="bg-background">
         <div className="bg-card rounded-xl border border-border p-6">
           <div className="flex items-center gap-4">
             {AUTHORS.map(a => (
@@ -46,7 +62,7 @@ export function TimelinesShowcase() {
   }
 
   return (
-    <TeacherShowcaseShell heading="The canon, charted through time" subcopy="Follow each tradition from its first masters to its latest voices. Every author lives in context." layout="mockup-left" bgClass="bg-background">
+    <TeacherShowcaseShell heading={heading} subcopy={subcopy} layout="mockup-left" bgClass="bg-background">
       <div ref={containerRef} className="bg-card rounded-xl border border-border p-6 min-h-[220px] relative overflow-hidden" style={{ willChange: "transform" }}>
         <p className="text-[10px] text-muted-foreground mb-4 uppercase tracking-wider font-medium">Ancient Greek Tradition</p>
         <div className="relative h-1 bg-muted rounded-full mb-8 mt-2">
