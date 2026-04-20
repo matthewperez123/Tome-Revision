@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import { useEffect, useState } from "react"
 import { usePathname } from "next/navigation"
 import { motion } from "framer-motion"
 import { useVirgil } from "@/lib/virgil-context"
@@ -9,6 +10,15 @@ import { getPoseImage } from "@/lib/virgil-poses"
 export function VirgilCompanion() {
   const { toggleChat, isOpen, currentPose, hasNotification } = useVirgil()
   const pathname = usePathname()
+
+  // Fade-in guard: while the button is still transparent, keep it out
+  // of the tab order and hidden from assistive tech. Once opacity
+  // animation completes (~300ms), reveal fully.
+  const [revealed, setRevealed] = useState(false)
+  useEffect(() => {
+    const t = setTimeout(() => setRevealed(true), 320)
+    return () => clearTimeout(t)
+  }, [])
 
   // Hide on landing page (has its own Virgil presence) and when chat is open
   if (isOpen || pathname === "/") return null
@@ -27,8 +37,11 @@ export function VirgilCompanion() {
       }}
       whileHover={{ scale: 1.12 }}
       whileTap={{ scale: 0.9 }}
-      className="fixed bottom-6 right-6 z-50 size-10 rounded-full bg-[#C9A84C] ring-2 ring-[#C9A84C]/50 shadow-lg overflow-hidden cursor-pointer outline-none flex items-center justify-center font-semibold leading-none tracking-tight text-xs"
+      className="fixed bottom-6 right-6 z-50 size-10 rounded-full bg-[#C9A84C] ring-2 ring-[#C9A84C]/50 shadow-lg overflow-hidden cursor-pointer outline-none flex items-center justify-center font-semibold leading-none tracking-tight text-xs focus-visible:ring-4 focus-visible:ring-[#C9A84C]/60"
       aria-label="Open Virgil chat"
+      aria-hidden={!revealed}
+      tabIndex={revealed ? 0 : -1}
+      style={{ pointerEvents: revealed ? "auto" : "none" }}
     >
       <span className="text-[#1a1a2e]">V</span>
       {hasNotification && (
