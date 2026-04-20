@@ -2,78 +2,90 @@
   "bookId": "idylls-of-the-king",
   "title": "Idylls of the King",
   "author": "Alfred, Lord Tennyson",
-  "chapterCount": 12,
-  "totalWordCount": 72543,
-  "totalMinutes": 291,
+  "chapterCount": 14,
+  "totalWordCount": 84726,
+  "totalMinutes": 340,
   "chapters": [
     {
       "index": 0,
+      "title": "Dedication",
+      "wordCount": 401,
+      "estimatedMinutes": 2
+    },
+    {
+      "index": 1,
       "title": "The Coming of Arthur",
       "wordCount": 4294,
       "estimatedMinutes": 17
     },
     {
-      "index": 1,
+      "index": 2,
       "title": "Gareth and Lynette",
       "wordCount": 11417,
       "estimatedMinutes": 46
     },
     {
-      "index": 2,
+      "index": 3,
       "title": "The Marriage of Geraint",
       "wordCount": 6865,
       "estimatedMinutes": 27
     },
     {
-      "index": 3,
+      "index": 4,
       "title": "Geraint and Enid",
       "wordCount": 7963,
       "estimatedMinutes": 32
     },
     {
-      "index": 4,
+      "index": 5,
       "title": "Balin and Balan",
       "wordCount": 5029,
       "estimatedMinutes": 20
     },
     {
-      "index": 5,
+      "index": 6,
       "title": "Merlin and Vivien",
       "wordCount": 7946,
       "estimatedMinutes": 32
     },
     {
-      "index": 6,
+      "index": 7,
+      "title": "Lancelot and Elaine",
+      "wordCount": 11782,
+      "estimatedMinutes": 47
+    },
+    {
+      "index": 8,
       "title": "The Holy Grail",
       "wordCount": 7630,
       "estimatedMinutes": 31
     },
     {
-      "index": 7,
+      "index": 9,
       "title": "Pelleas and Ettarre",
       "wordCount": 5025,
       "estimatedMinutes": 20
     },
     {
-      "index": 8,
+      "index": 10,
       "title": "The Last Tournament",
       "wordCount": 6232,
       "estimatedMinutes": 25
     },
     {
-      "index": 9,
+      "index": 11,
       "title": "Guinevere",
       "wordCount": 5736,
       "estimatedMinutes": 23
     },
     {
-      "index": 10,
+      "index": 12,
       "title": "The Passing of Arthur",
       "wordCount": 3878,
       "estimatedMinutes": 16
     },
     {
-      "index": 11,
+      "index": 13,
       "title": "To the Queen",
       "wordCount": 528,
       "estimatedMinutes": 2
