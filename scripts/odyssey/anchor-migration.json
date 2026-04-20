@@ -1,0 +1,134 @@
+[
+  {
+    "id": "odyssey-1-invocation",
+    "bookNumber": 1,
+    "oldAnchorText": "Tell me, O Muse, of that ingenious hero",
+    "newBookNumber": 1,
+    "newLineNumber": 1,
+    "newAnchorText": "Tell me, O Muse, of that sagacious man",
+    "newAnchorContext": "     1: Tell me, O Muse, of that sagacious man\n     2: Who, having overthrown the sacred town",
+    "matchedBy": "Tell me, O Muse",
+    "sceneDescription": "Book I opening invocation — polytropos / the Muse"
+  },
+  {
+    "id": "odyssey-1-xenia-athena",
+    "bookNumber": 1,
+    "oldAnchorText": "Telemachus saw her long before any one else did",
+    "newBookNumber": 1,
+    "newLineNumber": 140,
+    "newAnchorText": "The banquet forth and carved the meats for all.",
+    "newAnchorContext": "   139: The tables with light sponges, and who set\n   140: The banquet forth and carved the meats for all.\n   141: Telemachus the godlike was the first",
+    "matchedBy": "Telemachus + first + see the goddess",
+    "sceneDescription": "Telemachus first sees Athena (as Mentes) at the palace door"
+  },
+  {
+    "id": "odyssey-9-cave-entry",
+    "bookNumber": 9,
+    "oldAnchorText": "My men begged me",
+    "newBookNumber": 9,
+    "newLineNumber": 251,
+    "newAnchorText": "Begged me with many pressing words to take",
+    "newAnchorContext": "   250: He milked the cattle. My companions then\n   251: Begged me with many pressing words to take\n   252: Part of the cheeses, and, returning, drive",
+    "matchedBy": "lambs + kids + drive",
+    "sceneDescription": "Companions urge Odysseus to take cheeses and flee before the Cyclops returns"
+  },
+  {
+    "id": "odyssey-9-guest-gift",
+    "bookNumber": 9,
+    "oldAnchorText": "I will eat Nobody last",
+    "newBookNumber": 9,
+    "newLineNumber": 428,
+    "newAnchorText": "And Noman am I called by all my friends.’",
+    "newAnchorContext": "   427: My father and my mother gave it me,\n   428: And Noman am I called by all my friends.’\n   429: “I ended, and he answered savagely:﻿—",
+    "matchedBy": "Noman + last",
+    "sceneDescription": "Cyclops promises to eat Noman last as a guest-gift"
+  },
+  {
+    "id": "odyssey-9-nobody-pun",
+    "bookNumber": 9,
+    "oldAnchorText": "My name is Nobody",
+    "newBookNumber": 9,
+    "newLineNumber": 424,
+    "newAnchorText": "Men know me. I will tell thee, but do thou",
+    "newAnchorContext": "   423: “ ‘Thou hast inquired, O Cyclops, by what name\n   424: Men know me. I will tell thee, but do thou\n   425: Bestow in turn some hospitable gift,",
+    "matchedBy": "Noman is my name",
+    "sceneDescription": "Odysseus tells the Cyclops his name is Noman"
+  },
+  {
+    "id": "odyssey-9-blinding",
+    "bookNumber": 9,
+    "oldAnchorText": "I drove it full into his eye",
+    "newBookNumber": 9,
+    "newLineNumber": 382,
+    "newAnchorText": "Which of them all should dare, along with me,",
+    "newAnchorContext": "   381: I bade my comrades now decide by lot\n   382: Which of them all should dare, along with me,\n   383: To lift the stake, and with its point bore out",
+    "matchedBy": "eye + stake",
+    "sceneDescription": "Odysseus drives the heated olive stake into Polyphemus's eye"
+  },
+  {
+    "id": "odyssey-9-hubris",
+    "bookNumber": 9,
+    "oldAnchorText": "tell them it was Odysseus",
+    "newBookNumber": 9,
+    "newLineNumber": 594,
+    "newAnchorText": "Ulysses, the destroyer of walled towns,",
+    "newAnchorContext": "   593: The occasion, tell him that Laertes’ son,\n   594: Ulysses, the destroyer of walled towns,\n   595: Whose home is Ithaca, put out thine eye.’",
+    "matchedBy": "manual — Bryant uses \"destroyer of walled towns\" for Homer's ptoliporthos",
+    "sceneDescription": "Odysseus shouts his real name back at blinded Polyphemus"
+  },
+  {
+    "id": "odyssey-9-poseidon-prayer",
+    "bookNumber": 9,
+    "oldAnchorText": "hear me, Poseidon",
+    "newBookNumber": 9,
+    "newLineNumber": 625,
+    "newAnchorText": "Hear, dark-haired Neptune, who dost swathe the earth!",
+    "newAnchorContext": "   624: Prayed to the deity who rules the deep:﻿—\n   625: “ ‘Hear, dark-haired Neptune, who dost swathe the earth!\n   626: If I am thine, and thou dost own thyself",
+    "matchedBy": "manual — Bryant renders Poseidon as \"dark-haired Neptune\" / earth-encircler",
+    "sceneDescription": "Polyphemus prays to his father Poseidon for vengeance"
+  },
+  {
+    "id": "odyssey-9-rams",
+    "bookNumber": 9,
+    "oldAnchorText": "I fastened them silently together",
+    "newBookNumber": 9,
+    "newLineNumber": 497,
+    "newAnchorText": "“The rams were plump and beautiful, and large",
+    "newAnchorContext": "   496: The danger was. At last I fixed on this.\n   497: “The rams were plump and beautiful, and large\n   498: With thick dark fleeces. These I silently",
+    "matchedBy": "rams + three",
+    "sceneDescription": "Odysseus binds three rams together for the escape beneath them"
+  },
+  {
+    "id": "odyssey-9-cyclops-primitive",
+    "bookNumber": 9,
+    "oldAnchorText": "They have no laws nor assemblies",
+    "newBookNumber": 9,
+    "newLineNumber": 134,
+    "newAnchorText": "For them untended﻿—barley, wheat, and vines",
+    "newAnchorContext": "   133: Plant not, nor plough the fields, but all things spring\n   134: For them untended﻿—barley, wheat, and vines\n   135: Yielding large clusters filled with wine, and nursed",
+    "matchedBy": "no laws",
+    "sceneDescription": "Homer's ethnography of the lawless Cyclopes"
+  },
+  {
+    "id": "odyssey-23-bed",
+    "bookNumber": 23,
+    "oldAnchorText": "who has been taking my bed",
+    "newBookNumber": 23,
+    "newLineNumber": 245,
+    "newAnchorText": "Whether my bed remains as then it was,",
+    "newAnchorContext": "   244: In purple. Now, O wife, I cannot know\n   245: Whether my bed remains as then it was,\n   246: Or whether someone from the root has hewn",
+    "matchedBy": "olive + bed",
+    "sceneDescription": "Odysseus reveals the secret of the olive-rooted marriage bed"
+  },
+  {
+    "id": "odyssey-23-reunion",
+    "bookNumber": 23,
+    "oldAnchorText": "threw her arms about his neck",
+    "newBookNumber": 23,
+    "newLineNumber": 249,
+    "newAnchorText": "Was melted as she heard her lord recount",
+    "newAnchorContext": "   248: He spake, and her knees faltered and her heart\n   249: Was melted as she heard her lord recount\n   250: The tokens all so truly; and she wept,",
+    "matchedBy": "flung + arms",
+    "sceneDescription": "Penelope's wordless embrace of the recognized Odysseus"
+  }
+]

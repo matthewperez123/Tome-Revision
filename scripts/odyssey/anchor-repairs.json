@@ -1,0 +1,1050 @@
+[
+  {
+    "id": "odyssey-2-assembly-summoned",
+    "bookNumber": 2,
+    "oldAnchor": "He bade the clear-voiced heralds call",
+    "newAnchor": "At once he bade the clear-voiced heralds call",
+    "newLineNumber": 7,
+    "matchedBy": "keyword-score 5"
+  },
+  {
+    "id": "odyssey-2-shroud-ruse",
+    "bookNumber": 2,
+    "oldAnchor": "She set a mighty web within her hall",
+    "newAnchor": "She planned; she laid upon the loom a web,",
+    "newLineNumber": 117,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-2-halitherses-prophecy",
+    "bookNumber": 2,
+    "oldAnchor": "Halitherses, Mastor's son",
+    "newAnchor": "Named Halitherses, Mastor’s son. He knew",
+    "newLineNumber": 201,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-2-athena-as-mentor",
+    "bookNumber": 2,
+    "oldAnchor": "In voice and likeness, Mentor",
+    "newAnchor": "In form and voice like Mentor, by his side,",
+    "newLineNumber": 339,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-2-departure-by-night",
+    "bookNumber": 2,
+    "oldAnchor": "All night and through the dawn they held their way",
+    "newAnchor": "And all the ensuing morn they held their way.",
+    "newLineNumber": 545,
+    "matchedBy": "keyword-score 5"
+  },
+  {
+    "id": "odyssey-2-antinous-portrait",
+    "bookNumber": 2,
+    "oldAnchor": "Antinoüs answered him, Eupeithes' son",
+    "newAnchor": "Slew him for his last meal. Three other sons",
+    "newLineNumber": 23,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-2-eurycleia-loyalty",
+    "bookNumber": 2,
+    "oldAnchor": "She swore as he desired",
+    "newAnchor": "Greatly as she desired it. He would draw",
+    "newLineNumber": 316,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-2-ship-provisioned",
+    "bookNumber": 2,
+    "oldAnchor": "Wine drawn in casks, and grain the strength of men",
+    "newAnchor": "In vessels—wine in jars, and meal, the strength",
+    "newLineNumber": 366,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-3-pylos-sacrifice",
+    "bookNumber": 3,
+    "oldAnchor": "Nine benches, and five hundred sat at each",
+    "newAnchor": "Five hundred on each seat; nine steers were slain",
+    "newLineNumber": 9,
+    "matchedBy": "keyword-score 4"
+  },
+  {
+    "id": "odyssey-3-nestor-speaks",
+    "bookNumber": 3,
+    "oldAnchor": "Strangers, who are ye",
+    "newAnchor": "Say then, O strangers, who ye are, and whence",
+    "newLineNumber": 94,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-3-agamemnon-story",
+    "bookNumber": 3,
+    "oldAnchor": "Aegisthus planned an evil thing",
+    "newAnchor": "Men of strange speech. Aegisthus meantime planned",
+    "newLineNumber": 393,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-3-nestor-old-age",
+    "bookNumber": 3,
+    "oldAnchor": "Three generations of the sons of men",
+    "newAnchor": "A worthy fame among the sons of men:—",
+    "newLineNumber": 103,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-3-athena-reveals-self",
+    "bookNumber": 3,
+    "oldAnchor": "In likeness of a sea-eagle",
+    "newAnchor": "Pallas, the blue-eyed goddess, spake again:—",
+    "newLineNumber": 33,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-3-peisistratus-companion",
+    "bookNumber": 3,
+    "oldAnchor": "Peisistratus, with reins in either hand",
+    "newAnchor": "Came brave Peisistratus, the sixth and last.",
+    "newLineNumber": 534,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-3-golden-cup-libation",
+    "bookNumber": 3,
+    "oldAnchor": "A golden cup to honor first with wine",
+    "newAnchor": "Will give the golden goblet first to thee.”",
+    "newLineNumber": 66,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-3-bathing-polycaste",
+    "bookNumber": 3,
+    "oldAnchor": "Polycaste, the fair youngest child",
+    "newAnchor": "Meantime, fair Polycastè, youngest born",
+    "newLineNumber": 597,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-4-sparta-arrival",
+    "bookNumber": 4,
+    "oldAnchor": "A double marriage-feast Atrides held",
+    "newAnchor": "Fulfilled it by the marriage. He was now",
+    "newLineNumber": 10,
+    "matchedBy": "keyword-score 1"
+  },
+  {
+    "id": "odyssey-4-helen-enters",
+    "bookNumber": 4,
+    "oldAnchor": "Helen came from her high-roofed fragrant chamber",
+    "newAnchor": "Her high-roofed chamber, where the air was sweet",
+    "newLineNumber": 161,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-4-nepenthe",
+    "bookNumber": 4,
+    "oldAnchor": "A drug of potent virtue",
+    "newAnchor": "Mingled a drug, an antidote to grief",
+    "newLineNumber": 287,
+    "matchedBy": "keyword-score 1"
+  },
+  {
+    "id": "odyssey-4-wooden-horse",
+    "bookNumber": 4,
+    "oldAnchor": "Ulysses bade us sit within the horse",
+    "newAnchor": "The wooden horse, about to bring to Troy",
+    "newLineNumber": 354,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-4-proteus",
+    "bookNumber": 4,
+    "oldAnchor": "The ancient of the deep, unerring Proteus",
+    "newAnchor": "To the great Proteus, Ancient of the Deep.",
+    "newLineNumber": 476,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-4-agamemnon-death",
+    "bookNumber": 4,
+    "oldAnchor": "Unhappy chief, felled like an ox",
+    "newAnchor": "To Troy. Deiphobus, the godlike chief,",
+    "newLineNumber": 358,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-4-suitors-plot",
+    "bookNumber": 4,
+    "oldAnchor": "We will lay an ambush for him",
+    "newAnchor": "And slew him at the board as men might slay",
+    "newLineNumber": 683,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-4-penelope-fears",
+    "bookNumber": 4,
+    "oldAnchor": "As is a lion in a crowd of men",
+    "newAnchor": "When, midst a crowd of men, he sees with dread",
+    "newLineNumber": 1004,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-4-helen-prophecy",
+    "bookNumber": 4,
+    "oldAnchor": "As in his own house now the eagle stooped",
+    "newAnchor": "Is it yet known what lineage these men claim—",
+    "newLineNumber": 180,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-5-hero-first-seen",
+    "bookNumber": 5,
+    "oldAnchor": "Him she beheld on the seashore",
+    "newAnchor": "Him kindly I received; I cherished him,",
+    "newLineNumber": 166,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-5-calypso-immortality",
+    "bookNumber": 5,
+    "oldAnchor": "I could promise him that he should live",
+    "newAnchor": "And promised him a life that ne’er should know",
+    "newLineNumber": 167,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-5-calypso-complaint",
+    "bookNumber": 5,
+    "oldAnchor": "Hard-hearted are ye, gods",
+    "newAnchor": "To men and to immortals. Then the gods",
+    "newLineNumber": 3,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-5-raft-building",
+    "bookNumber": 5,
+    "oldAnchor": "He felled the trees, and twenty were cast down",
+    "newAnchor": "Dismiss thee hence. Rise, hew down trees, and bind",
+    "newLineNumber": 198,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-5-poseidon-storm",
+    "bookNumber": 5,
+    "oldAnchor": "Then Neptune, who shakes the shore",
+    "newAnchor": "The power who shakes the shores is wroth with me.”",
+    "newLineNumber": 507,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-5-ino-veil",
+    "bookNumber": 5,
+    "oldAnchor": "Leucothea, the white goddess",
+    "newAnchor": "The veil that Ino gave him from his breast,",
+    "newLineNumber": 551,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-5-octopus-simile",
+    "bookNumber": 5,
+    "oldAnchor": "As when the polypus is dragged from out",
+    "newAnchor": "But when, in swimming, he had reached the mouth",
+    "newLineNumber": 527,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-5-washed-ashore",
+    "bookNumber": 5,
+    "oldAnchor": "As when a brand some traveller has dropped",
+    "newAnchor": "As when some builder, skilful in his art,",
+    "newLineNumber": 300,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-6-phaeacian-prehistory",
+    "bookNumber": 6,
+    "oldAnchor": "Nausithoüs, whom the gods had given",
+    "newAnchor": "To Hades, and Alcinoüs, whom the gods",
+    "newLineNumber": 14,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-6-nausicaa-dream",
+    "bookNumber": 6,
+    "oldAnchor": "She entered, like a breath of air",
+    "newAnchor": "As comes a breath of air, and stood beside",
+    "newLineNumber": 26,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-6-odysseus-emerges",
+    "bookNumber": 6,
+    "oldAnchor": "As some grim lion of the mountain comes",
+    "newAnchor": "Then like a mountain lion he went forth,",
+    "newLineNumber": 163,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-6-artemis-simile",
+    "bookNumber": 6,
+    "oldAnchor": "As when the archer Dian roves the hills",
+    "newAnchor": "Began a song. As when the archer-queen",
+    "newLineNumber": 128,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-6-supplication-speech",
+    "bookNumber": 6,
+    "oldAnchor": "Queen, I implore thee",
+    "newAnchor": "Her purpose to her father and the queen.",
+    "newLineNumber": 66,
+    "matchedBy": "keyword-score 1"
+  },
+  {
+    "id": "odyssey-6-nausicaa-prudence",
+    "bookNumber": 6,
+    "oldAnchor": "It would not be seemly",
+    "newAnchor": "I too would blame another who should do",
+    "newLineNumber": 361,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-7-the-palace",
+    "bookNumber": 7,
+    "oldAnchor": "Bronze walls, crown'd with a cornice blue as steel",
+    "newAnchor": "With blue steel cornices. The doors within",
+    "newLineNumber": 105,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-7-arete-addressed",
+    "bookNumber": 7,
+    "oldAnchor": "Arete, daughter of Rhexenor",
+    "newAnchor": "And soon my own dear country. I have passed",
+    "newLineNumber": 187,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-7-guest-questioned-tactfully",
+    "bookNumber": 7,
+    "oldAnchor": "What is thy country",
+    "newAnchor": "Whatever, when his mother brought him forth,",
+    "newLineNumber": 236,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-7-calypso-recounted",
+    "bookNumber": 7,
+    "oldAnchor": "Within Calypso's cave, the goddess-nymph",
+    "newAnchor": "Raised by the goddess vanished. All within",
+    "newLineNumber": 175,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-7-arete-quiet-question",
+    "bookNumber": 7,
+    "oldAnchor": "Stranger, this question I will ask thee first",
+    "newAnchor": "“Stranger, I first must ask thee who thou art,",
+    "newLineNumber": 285,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-7-passage-promised",
+    "bookNumber": 7,
+    "oldAnchor": "Our mariners shall take thee home",
+    "newAnchor": "Is over, take your rest within your homes.",
+    "newLineNumber": 224,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-8-demodocus-blind",
+    "bookNumber": 8,
+    "oldAnchor": "Whom the Muse loved much and gave him",
+    "newAnchor": "Him whom the Muse with an exceeding love",
+    "newLineNumber": 75,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-8-song-of-troy",
+    "bookNumber": 8,
+    "oldAnchor": "The quarrel of Ulysses and of Peleus' son",
+    "newAnchor": "Between Ulysses and Achilles, son",
+    "newLineNumber": 90,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-8-weeping-woman-simile",
+    "bookNumber": 8,
+    "oldAnchor": "As when a woman weeps above her husband",
+    "newAnchor": "Weeps her beloved husband, slain before",
+    "newLineNumber": 643,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-8-phaeacian-games",
+    "bookNumber": 8,
+    "oldAnchor": "Euryalus, a youth whose wit was less than meet",
+    "newAnchor": "Then spake Euryalus with chiding words:—",
+    "newLineNumber": 196,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-8-ares-aphrodite",
+    "bookNumber": 8,
+    "oldAnchor": "The loves of Mars and Venus",
+    "newAnchor": "Began the lay: he sang the loves of Mars",
+    "newLineNumber": 330,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-8-naming-moment",
+    "bookNumber": 8,
+    "oldAnchor": "Wherefore weepest thou with such deep groans",
+    "newAnchor": "The deep has come where wise Alcinoüs holds",
+    "newLineNumber": 17,
+    "matchedBy": "keyword-score 1"
+  },
+  {
+    "id": "odyssey-9-naming",
+    "bookNumber": 9,
+    "oldAnchor": "I am Ulysses, son of Laertes",
+    "newAnchor": "The occasion, tell him that Laertes’ son,",
+    "newLineNumber": 593,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-9-lotus-eaters",
+    "bookNumber": 9,
+    "oldAnchor": "The lotus-eaters, living on the fruit",
+    "newAnchor": "The Lotus-eaters, men whose food is flowers.",
+    "newLineNumber": 105,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-9-oar-hint",
+    "bookNumber": 9,
+    "oldAnchor": "Cyclops, the destroyer of walled towns",
+    "newAnchor": "Ulysses, the destroyer of walled towns,",
+    "newLineNumber": 594,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-10-aeolus-bag",
+    "bookNumber": 10,
+    "oldAnchor": "He gave me a great ox-skin bag",
+    "newAnchor": "He gave, in which he had compressed and bound",
+    "newLineNumber": 24,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-10-lestrigonians",
+    "bookNumber": 10,
+    "oldAnchor": "The Lestrigonians, those huge cannibals",
+    "newAnchor": "And cries of those who perished and the crash",
+    "newLineNumber": 149,
+    "matchedBy": "keyword-score 1"
+  },
+  {
+    "id": "odyssey-10-circe-pigs",
+    "bookNumber": 10,
+    "oldAnchor": "She changed them into swine",
+    "newAnchor": "She led them in and seated them on thrones.",
+    "newLineNumber": 282,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-10-moly",
+    "bookNumber": 10,
+    "oldAnchor": "The gods call moly",
+    "newAnchor": "To dig it up; the gods find nothing hard.",
+    "newLineNumber": 369,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-10-circe-bed",
+    "bookNumber": 10,
+    "oldAnchor": "Sworn the great oath",
+    "newAnchor": "We marvelled greatly; long we questioned him,",
+    "newLineNumber": 300,
+    "matchedBy": "keyword-score 1"
+  },
+  {
+    "id": "odyssey-10-elpenor-fall",
+    "bookNumber": 10,
+    "oldAnchor": "Elpenor, the youngest of my band",
+    "newAnchor": "Elpenor was the youngest of our band,",
+    "newLineNumber": 667,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-10-going-to-hades",
+    "bookNumber": 10,
+    "oldAnchor": "Return, brave friend",
+    "newAnchor": "And my own luckless slumber. Yet, my friends,",
+    "newLineNumber": 86,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-11-elpenor-burial",
+    "bookNumber": 11,
+    "oldAnchor": "First the soul of my companion came",
+    "newAnchor": "“And first the soul of my companion came,",
+    "newLineNumber": 63,
+    "matchedBy": "keyword-score 4"
+  },
+  {
+    "id": "odyssey-11-anticleia",
+    "bookNumber": 11,
+    "oldAnchor": "The soul of Anticleia came",
+    "newAnchor": "“And then the soul of Anticleia came—",
+    "newLineNumber": 102,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-11-catalogue-women",
+    "bookNumber": 11,
+    "oldAnchor": "Then came the daughter of Salmoneus",
+    "newAnchor": "“And then the soul of Anticleia came—",
+    "newLineNumber": 102,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-11-agamemnon-shade",
+    "bookNumber": 11,
+    "oldAnchor": "The soul of Agamemnon, Atreus' son",
+    "newAnchor": "The soul of Agamemnon, Atreus’ son.",
+    "newLineNumber": 480,
+    "matchedBy": "keyword-score 4"
+  },
+  {
+    "id": "odyssey-11-achilles-great-reversal",
+    "bookNumber": 11,
+    "oldAnchor": "Better to be the hireling of a stranger",
+    "newAnchor": "It is for those who breathe the breath of life",
+    "newLineNumber": 192,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-11-ajax-silence",
+    "bookNumber": 11,
+    "oldAnchor": "The soul of Ajax, Telamon's great son",
+    "newAnchor": "But that of Ajax, son of Telamon,",
+    "newLineNumber": 674,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-11-minos-rhadamanthys",
+    "bookNumber": 11,
+    "oldAnchor": "Minos the glorious son of Jupiter",
+    "newAnchor": "“ ‘Most glorious son of Atreus, king of men!",
+    "newLineNumber": 491,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-11-tantalus-sisyphus",
+    "bookNumber": 11,
+    "oldAnchor": "Tantalus in dreadful torment stood",
+    "newAnchor": "Seasoned with salt, nor ever have beheld",
+    "newLineNumber": 152,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-11-heracles-shade",
+    "bookNumber": 11,
+    "oldAnchor": "The shadow of Alcides vast",
+    "newAnchor": "While yet a living man, among thy friends.’",
+    "newLineNumber": 99,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-11-nekyia-closes",
+    "bookNumber": 11,
+    "oldAnchor": "Pale Fear then laid upon me",
+    "newAnchor": "White meal upon them. Then I offered prayer",
+    "newLineNumber": 34,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-12-elpenor-buried",
+    "bookNumber": 12,
+    "oldAnchor": "We gave Elpenor's body to the pyre",
+    "newAnchor": "To bring from Circè’s halls Elpenor’s corse.",
+    "newLineNumber": 11,
+    "matchedBy": "keyword-score 1"
+  },
+  {
+    "id": "odyssey-12-sirens-song",
+    "bookNumber": 12,
+    "oldAnchor": "Stay, mighty Greek, renowned Ulysses",
+    "newAnchor": "“ ‘O world-renowned Ulysses! thou who art",
+    "newLineNumber": 221,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-12-scylla-charybdis",
+    "bookNumber": 12,
+    "oldAnchor": "Scylla within her cave",
+    "newAnchor": "Just to the cavern’s mouth. There Scylla dwells,",
+    "newLineNumber": 100,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-12-cattle-of-helios",
+    "bookNumber": 12,
+    "oldAnchor": "Cattle of Helios, and sheep",
+    "newAnchor": "Or on the water, to your grievous harm.’",
+    "newLineNumber": 32,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-12-hero-alone",
+    "bookNumber": 12,
+    "oldAnchor": "I alone, left on the broken plank",
+    "newAnchor": "“Now when our barque had left Océanus",
+    "newLineNumber": 1,
+    "matchedBy": "keyword-score 1"
+  },
+  {
+    "id": "odyssey-13-silent-audience",
+    "bookNumber": 13,
+    "oldAnchor": "Held in stillness the long hall",
+    "newAnchor": "“O Father Jove! I shall no more be held",
+    "newLineNumber": 154,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-13-phaeacians-punished",
+    "bookNumber": 13,
+    "oldAnchor": "Turned to a rock",
+    "newAnchor": "The ship a rock, fast rooted in the bed",
+    "newLineNumber": 199,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-13-cretan-lie",
+    "bookNumber": 13,
+    "oldAnchor": "I heard of Ithaca in Crete",
+    "newAnchor": "Beyond the sea, I heard of Ithaca,",
+    "newLineNumber": 316,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-13-athena-drops-disguise",
+    "bookNumber": 13,
+    "oldAnchor": "She stood revealed to him at length",
+    "newAnchor": "To others, and that she might tell him first",
+    "newLineNumber": 236,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-13-disguise-planned",
+    "bookNumber": 13,
+    "oldAnchor": "Thy limbs she withered",
+    "newAnchor": "On his slow limbs, and the fair hair to fall,",
+    "newLineNumber": 540,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-14-eumaeus-xenia",
+    "bookNumber": 14,
+    "oldAnchor": "A stranger, even the lowliest",
+    "newAnchor": "He feared the wrath of Jove, the stranger’s friend",
+    "newLineNumber": 348,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-14-you-eumaeus",
+    "bookNumber": 14,
+    "oldAnchor": "Thou gavest answer",
+    "newAnchor": "And then, Eumaeus, thou didst answer thus:",
+    "newLineNumber": 65,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-14-false-cretan-tale",
+    "bookNumber": 14,
+    "oldAnchor": "My father was Castor, the son of Hylax",
+    "newAnchor": "Famed for its coursers, fought the sons of Troy.”",
+    "newLineNumber": 84,
+    "matchedBy": "keyword-score 1"
+  },
+  {
+    "id": "odyssey-14-swineherd-distrust",
+    "bookNumber": 14,
+    "oldAnchor": "Many a vagabond for food and clothes",
+    "newAnchor": "Were store of food, and wine for many days,",
+    "newLineNumber": 242,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-14-odysseus-tests-cloak",
+    "bookNumber": 14,
+    "oldAnchor": "I will relate a tale of Ulysses",
+    "newAnchor": "Ulysses will return. Let this reward",
+    "newLineNumber": 187,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-15-athena-to-telemachus",
+    "bookNumber": 15,
+    "oldAnchor": "Return, Telemachus, without delay",
+    "newAnchor": "His wife and maidens spread without delay",
+    "newLineNumber": 120,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-15-menelaus-parting-gift",
+    "bookNumber": 15,
+    "oldAnchor": "Helen took with her own hand",
+    "newAnchor": "The work of Helen’s hands, which thou shalt keep,",
+    "newLineNumber": 158,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-15-theoclymenus",
+    "bookNumber": 15,
+    "oldAnchor": "Theoclymenus, a prophet born",
+    "newAnchor": "A lofty pile; and there to him were born Antiphate",
+    "newLineNumber": 309,
+    "matchedBy": "keyword-score 1"
+  },
+  {
+    "id": "odyssey-15-eumaeus-backstory",
+    "bookNumber": 15,
+    "oldAnchor": "Son of the godlike Ctesius",
+    "newAnchor": "The godlike Ctesias, son of Ormenus,",
+    "newLineNumber": 523,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-15-hawk-omen",
+    "bookNumber": 15,
+    "oldAnchor": "A hawk from the right",
+    "newAnchor": "Flew by, Apollo’s messenger. A dove",
+    "newLineNumber": 651,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-16-weeping-like-eagles",
+    "bookNumber": 16,
+    "oldAnchor": "As when two falcons, strong of wing",
+    "newAnchor": "Whose young the hinds have stolen, yet unfledged.",
+    "newLineNumber": 266,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-16-plan-the-slaughter",
+    "bookNumber": 16,
+    "oldAnchor": "Count up the suitors. Tell me of their numbers",
+    "newAnchor": "The suitors, left their ambush and returned,",
+    "newLineNumber": 559,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-16-secrecy-command",
+    "bookNumber": 16,
+    "oldAnchor": "Let not thy mother know",
+    "newAnchor": "To him; but let my mother send at once",
+    "newLineNumber": 186,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-16-suitors-ambush-returns",
+    "bookNumber": 16,
+    "oldAnchor": "The ship came back empty-handed",
+    "newAnchor": "The dogs, so apt to bark, came fawning round,",
+    "newLineNumber": 5,
+    "matchedBy": "keyword-score 1"
+  },
+  {
+    "id": "odyssey-17-melanthius-kick",
+    "bookNumber": 17,
+    "oldAnchor": "Melanthius, of Dolius born",
+    "newAnchor": "There did Melanthius, son of Dolius, meet",
+    "newLineNumber": 256,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-17-argos",
+    "bookNumber": 17,
+    "oldAnchor": "A dog that lay upon a pile of dung",
+    "newAnchor": "That lies upon the dunghill, beautiful",
+    "newLineNumber": 374,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-17-antinous-stool",
+    "bookNumber": 17,
+    "oldAnchor": "Antinoüs seized a footstool",
+    "newAnchor": "Antinoüs flings a footstool, and the blow",
+    "newLineNumber": 610,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-17-penelope-hears",
+    "bookNumber": 17,
+    "oldAnchor": "She heard the stranger's voice",
+    "newAnchor": "Heard of the stranger smitten in her halls,",
+    "newLineNumber": 596,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-18-irus-beggar-beaten",
+    "bookNumber": 18,
+    "oldAnchor": "Irus they called him",
+    "newAnchor": "His mother gave him, but the young men called",
+    "newLineNumber": 7,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-18-warning-to-amphinomus",
+    "bookNumber": 18,
+    "oldAnchor": "Of all that breathe and creep",
+    "newAnchor": "No being whom earth nourishes to breathe",
+    "newLineNumber": 166,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-18-penelope-appears",
+    "bookNumber": 18,
+    "oldAnchor": "Penelope the wise now went",
+    "newAnchor": "Thy thought was wiser. Now that thou art grown,",
+    "newLineNumber": 273,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-18-melantho-mockery",
+    "bookNumber": 18,
+    "oldAnchor": "Vagabond, thou still art here",
+    "newAnchor": "There came a common beggar, wont to ask",
+    "newLineNumber": 1,
+    "matchedBy": "keyword-score 1"
+  },
+  {
+    "id": "odyssey-19-penelope-interview",
+    "bookNumber": 19,
+    "oldAnchor": "Stranger, first I would ask thee who thou art",
+    "newAnchor": "“First will I ask thee who thou art, and whence,",
+    "newLineNumber": 129,
+    "matchedBy": "keyword-score 4"
+  },
+  {
+    "id": "odyssey-19-tears-like-snow",
+    "bookNumber": 19,
+    "oldAnchor": "As snow upon the lofty mountain sides",
+    "newAnchor": "That flowed as when on mountain height the snow,",
+    "newLineNumber": 257,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-19-autolycus-naming",
+    "bookNumber": 19,
+    "oldAnchor": "Autolycus, his mother's father",
+    "newAnchor": "His mother’s noble father, who excelled",
+    "newLineNumber": 485,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-19-odysseus-grips-throat",
+    "bookNumber": 19,
+    "oldAnchor": "Seized her throat",
+    "newAnchor": "Laid his right hand, and with the other drew",
+    "newLineNumber": 585,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-19-penelope-dream",
+    "bookNumber": 19,
+    "oldAnchor": "Twenty geese about my house",
+    "newAnchor": "Within these courts are twenty geese that eat",
+    "newLineNumber": 651,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-19-gates-of-horn",
+    "bookNumber": 19,
+    "oldAnchor": "Two gates there are for unsubstantial dreams",
+    "newAnchor": "Two portals are there for their shadowy shapes,",
+    "newLineNumber": 681,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-19-bow-contest-announced",
+    "bookNumber": 19,
+    "oldAnchor": "The bow of Ulysses",
+    "newAnchor": "Ulysses in a row set up twelve stakes,",
+    "newLineNumber": 694,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-20-sleepless-night",
+    "bookNumber": 20,
+    "oldAnchor": "He lay awake and pondered",
+    "newAnchor": "A cloak above him. There he lay awake,",
+    "newLineNumber": 6,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-20-athena-visits",
+    "bookNumber": 20,
+    "oldAnchor": "Athenè came / In semblance of a woman",
+    "newAnchor": "From heaven, in form a woman, came, and there",
+    "newLineNumber": 35,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-20-theoclymenus-vision",
+    "bookNumber": 20,
+    "oldAnchor": "Your cheeks, your knees are sheathed in night",
+    "newAnchor": "And moans arise, and tears are on your cheeks.",
+    "newLineNumber": 432,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-20-ctesippus-insult",
+    "bookNumber": 20,
+    "oldAnchor": "He flung the foot at Ulysses",
+    "newAnchor": "The noble chief, Ulysses, in the porch",
+    "newLineNumber": 1,
+    "matchedBy": "keyword-score 1"
+  },
+  {
+    "id": "odyssey-20-maenad-laughter",
+    "bookNumber": 20,
+    "oldAnchor": "They laughed with strange involuntary laughter",
+    "newAnchor": "He spake, and loud they laughed. Eurymachus,",
+    "newLineNumber": 439,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-21-bow-biography",
+    "bookNumber": 21,
+    "oldAnchor": "The great bow of Ulysses from his house",
+    "newAnchor": "The mighty bow that great Ulysses bore.",
+    "newLineNumber": 93,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-21-the-suitors-try",
+    "bookNumber": 21,
+    "oldAnchor": "Not one of them could bend the tough-grained bow",
+    "newAnchor": "Shall bend this bow, and send through these twelve",
+    "newLineNumber": 95,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-21-eumaeus-philoetius-told",
+    "bookNumber": 21,
+    "oldAnchor": "He drew them both apart",
+    "newAnchor": "And thus an insolent youth among them spake:—",
+    "newLineNumber": 443,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-21-stringing-the-bow",
+    "bookNumber": 21,
+    "oldAnchor": "As easily as an experienced bard",
+    "newAnchor": "Made fast at either end, so easily",
+    "newLineNumber": 502,
+    "matchedBy": "keyword-score 1"
+  },
+  {
+    "id": "odyssey-21-arrow-flies",
+    "bookNumber": 21,
+    "oldAnchor": "The bronze-tipped arrow through the rings",
+    "newAnchor": "An arrow through the rings. He would have drawn",
+    "newLineNumber": 157,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-22-naming-kill",
+    "bookNumber": 22,
+    "oldAnchor": "Thought ye that I should not return",
+    "newAnchor": "The gods who dwell in the great heaven, nor feared",
+    "newLineNumber": 49,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-22-eurymachus-deflection",
+    "bookNumber": 22,
+    "oldAnchor": "Blame Antinoüs",
+    "newAnchor": "Who was the cause of all. Antinoüs first",
+    "newLineNumber": 60,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-22-athena-swallow",
+    "bookNumber": 22,
+    "oldAnchor": "Athenè took the form of a swallow",
+    "newAnchor": "And, leaping to the threshold, took his stand",
+    "newLineNumber": 2,
+    "matchedBy": "keyword-score 1"
+  },
+  {
+    "id": "odyssey-22-maidens-hanged",
+    "bookNumber": 22,
+    "oldAnchor": "As thrushes in a snare",
+    "newAnchor": "Close to the fields among the snares they dread,",
+    "newLineNumber": 371,
+    "matchedBy": "keyword-score 1"
+  },
+  {
+    "id": "odyssey-23-narrative-night",
+    "bookNumber": 23,
+    "oldAnchor": "Then in the well-framed chamber",
+    "newAnchor": "Of that well-vaulted chamber; the firm doors",
+    "newLineNumber": 47,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-23-tiresias-prophecy-retold",
+    "bookNumber": 23,
+    "oldAnchor": "The oar upon my shoulder",
+    "newAnchor": "Upon those violent men their guilty deeds.”",
+    "newLineNumber": 35,
+    "matchedBy": "keyword-score 1"
+  },
+  {
+    "id": "odyssey-24-suitors-descend",
+    "bookNumber": 24,
+    "oldAnchor": "Cyllenian Hermes called the souls",
+    "newAnchor": "Cyllenian Hermes summoned forth the souls",
+    "newLineNumber": 1,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-24-achilles-posthumous-fame",
+    "bookNumber": 24,
+    "oldAnchor": "The Greeks, thy mother's kin, thy peers",
+    "newAnchor": "The Muses’ song so moved them. Seventeen days",
+    "newLineNumber": 79,
+    "matchedBy": "keyword-score 2"
+  },
+  {
+    "id": "odyssey-24-laertes-orchard",
+    "bookNumber": 24,
+    "oldAnchor": "Thirteen pear-trees thou didst give",
+    "newAnchor": "And thou didst name them. Of the pear thirteen,",
+    "newLineNumber": 412,
+    "matchedBy": "keyword-score 3"
+  },
+  {
+    "id": "odyssey-24-vendetta-gathering",
+    "bookNumber": 24,
+    "oldAnchor": "Eupeithes, father of Antinoüs",
+    "newAnchor": "Around him, and laid King Antinoüs dead,",
+    "newLineNumber": 220,
+    "matchedBy": "keyword-score 1"
+  },
+  {
+    "id": "odyssey-24-poem-ends",
+    "bookNumber": 24,
+    "oldAnchor": "They made a covenant",
+    "newAnchor": "The ghostly rout; they followed, uttering",
+    "newLineNumber": 6,
+    "matchedBy": "keyword-score 1"
+  }
+]

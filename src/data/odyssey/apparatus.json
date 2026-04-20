@@ -1,0 +1,776 @@
+{
+  "generatedAt": "2026-04-18T15:53:43.278Z",
+  "generatedBy": "scripts/odyssey/detect-features.ts",
+  "epithets": [
+    {
+      "id": "polytropos",
+      "greek": "πολύτροπος",
+      "transliteration": "polytropos",
+      "gloss": "\"of many turns / wiles\" — the first word Homer applies to Odysseus (opens Book I). The Greek fuses the turns of the road with the turns of the mind; no English word captures both. Bryant reaches for \"sagacious\"; Butler has \"ingenious\"; Fagles \"the man of twists and turns.\" First-occurrence marker signals the formulaic system itself — Homeric verse is a lattice of reusable epithets.",
+      "subject": "Odysseus",
+      "bryantRenderings": [
+        "sagacious",
+        "much-wandering",
+        "the sagacious chief"
+      ],
+      "firstByBook": {
+        "1": {
+          "bookNumber": 1,
+          "lineNumber": 1,
+          "matchedText": "sagacious man",
+          "context": "Tell me, O Muse, of that sagacious man / Who, having overthrown the sacred town"
+        },
+        "5": {
+          "bookNumber": 5,
+          "lineNumber": 258,
+          "matchedText": "Ulysses, the sagacious",
+          "context": "Of mortal dames in form or face compare.” / Ulysses, the sagacious, answered her:— / “Bear with me, gracious goddess; well I know"
+        },
+        "7": {
+          "bookNumber": 7,
+          "lineNumber": 248,
+          "matchedText": "Ulysses the sagacious",
+          "context": "Of Cyclops and the savage giant brood.” / Ulysses the sagacious answered him:— / “Nay, think not so, Alcinoüs. I am not"
+        },
+        "8": {
+          "bookNumber": 8,
+          "lineNumber": 189,
+          "matchedText": "Ulysses, the sagacious",
+          "context": "Thy barque is launched; the crew are ready here.” / Ulysses, the sagacious, answered thus:— / “Why press me, O Laodamas! to try"
+        },
+        "9": {
+          "bookNumber": 9,
+          "lineNumber": 1,
+          "matchedText": "Ulysses, the sagacious",
+          "context": "Ulysses, the sagacious, answered thus:— / “O King Alcinoüs, most renowned of men!"
+        },
+        "13": {
+          "bookNumber": 13,
+          "lineNumber": 385,
+          "matchedText": "Ulysses, the sagacious",
+          "context": "And bear indignities from violent men.” / Ulysses, the sagacious, thus rejoined: / “O goddess, it is hard for mortal man"
+        },
+        "14": {
+          "bookNumber": 14,
+          "lineNumber": 240,
+          "matchedText": "Ulysses, the sagacious",
+          "context": "Thou hast not come to Ithaca on foot.” / Ulysses, the sagacious, answered him: / “I will tell all and truly. Yet if here"
+        },
+        "15": {
+          "bookNumber": 15,
+          "lineNumber": 485,
+          "matchedText": "Ulysses, the sagacious",
+          "context": "Some gift, for gifts delight a servant’s heart.” / Again Ulysses, the sagacious, spake: / “Swineherd Eumaeus, thou, while yet a child,"
+        },
+        "16": {
+          "bookNumber": 16,
+          "lineNumber": 245,
+          "matchedText": "Ulysses, the sagacious",
+          "context": "And now art like the gods of the wide heaven.” / Ulysses, the sagacious, answered thus: / “It is not well, Telemachus, to greet"
+        },
+        "17": {
+          "bookNumber": 17,
+          "lineNumber": 18,
+          "matchedText": "Ulysses, the sagacious",
+          "context": "The worse for him. I like to speak my mind.” / And thus Ulysses, the sagacious, spake: / “Nor do I wish, my friend, to loiter here."
+        },
+        "18": {
+          "bookNumber": 18,
+          "lineNumber": 19,
+          "matchedText": "Ulysses, the sagacious",
+          "context": "Else haply we may have a strife of blows.” / Ulysses, the sagacious, frowned and said: / “Wretch! there is nothing that I do or say"
+        },
+        "19": {
+          "bookNumber": 19,
+          "lineNumber": 50,
+          "matchedText": "Ulysses, the sagacious",
+          "context": "Who make their dwelling in the high broad heaven.” / Ulysses, the sagacious, answered thus: / “Keep silence; give thy thought no speech, nor ask"
+        },
+        "20": {
+          "bookNumber": 20,
+          "lineNumber": 41,
+          "matchedText": "Ulysses, the sagacious",
+          "context": "Whom any man might covet for his own.” / Ulysses, the sagacious, answered thus: / “Truly, O goddess, all that thou hast said"
+        },
+        "22": {
+          "bookNumber": 22,
+          "lineNumber": 203,
+          "matchedText": "Ulysses, the sagacious",
+          "context": "Plotted by him against thee in these halls?” / Ulysses, the sagacious, answered thus: / “Telemachus and I will keep at bay"
+        },
+        "23": {
+          "bookNumber": 23,
+          "lineNumber": 156,
+          "matchedText": "Ulysses, the sagacious",
+          "context": "I think, in aught that lies within our power.” / Ulysses, the sagacious, answered thus: / “Then will I tell thee what I deem most wise."
+        },
+        "24": {
+          "bookNumber": 24,
+          "lineNumber": 364,
+          "matchedText": "Ulysses, the sagacious",
+          "context": "Which put thee on the shore and left the isle?” / Ulysses, the sagacious, answered thus: / “I will tell all and truly. I am come"
+        }
+      },
+      "totalCount": 47
+    },
+    {
+      "id": "polymetis",
+      "greek": "πολύμητις",
+      "transliteration": "polymētis",
+      "gloss": "\"of many counsels / many-wiled\" — the epithet's second appearance in Greek, marking Odysseus specifically for mental resource. Shares the *mētis* root with the Outis pun (see Book IX). Bryant most often renders this as \"wise\" or \"full of wiles.\"",
+      "subject": "Odysseus",
+      "bryantRenderings": [
+        "wise Ulysses",
+        "full of wiles",
+        "of many wiles"
+      ],
+      "firstByBook": {
+        "1": {
+          "bookNumber": 1,
+          "lineNumber": 105,
+          "matchedText": "wise Ulysses",
+          "context": "If such the pleasure of the blessed gods / That now the wise Ulysses shall return / To his own land, let us at once despatch"
+        },
+        "4": {
+          "bookNumber": 4,
+          "lineNumber": 971,
+          "matchedText": "wise Ulysses",
+          "context": "The Aegis-bearer, hear me. If within / Thy courts the wise Ulysses ever burned / Fat thighs of beeves or sheep, remember it,"
+        },
+        "11": {
+          "bookNumber": 11,
+          "lineNumber": 441,
+          "matchedText": "wise Ulysses",
+          "context": "Since mine it is to hold the sovereign power.” / And then the wise Ulysses said: “O King / Alcinoüs, eminent o’er all thy race!"
+        },
+        "14": {
+          "bookNumber": 14,
+          "lineNumber": 520,
+          "matchedText": "wise Ulysses",
+          "context": "Into the flames, and prayed to all the gods / For wise Ulysses and his safe return. / Next, with a fragment of the oaken trunk"
+        },
+        "20": {
+          "bookNumber": 20,
+          "lineNumber": 291,
+          "matchedText": "wise Ulysses",
+          "context": "Eumaeus also prayed to all the gods, / That now the wise Ulysses might return. / So talked they with each other, while apart"
+        },
+        "21": {
+          "bookNumber": 21,
+          "lineNumber": 250,
+          "matchedText": "wise Ulysses",
+          "context": "To all the deities, that speedily / The wise Ulysses might return; and when / The chief perceived in all its truth the thought"
+        },
+        "22": {
+          "bookNumber": 22,
+          "lineNumber": 43,
+          "matchedText": "wise Ulysses",
+          "context": "Was closing round them all. Then with a frown / The wise Ulysses looked on them, and said:— / “Dogs! ye had thought I never would come back"
+        }
+      },
+      "totalCount": 14
+    },
+    {
+      "id": "glaukopis",
+      "greek": "γλαυκῶπις",
+      "transliteration": "glaukōpis",
+      "gloss": "\"gray-eyed\" or \"owl-eyed\" — the glaux (owl) is Athena's sacred bird. Bryant regularizes to \"blue-eyed.\" Appears reliably at the opening of every Athena speech in Bryant's translation, one of the oral-formulaic system's most visible joints.",
+      "subject": "Athena",
+      "bryantRenderings": [
+        "blue-eyed Pallas",
+        "blue-eyed goddess",
+        "blue-eyed Minerva"
+      ],
+      "firstByBook": {
+        "1": {
+          "bookNumber": 1,
+          "lineNumber": 59,
+          "matchedText": "blue-eyed goddess",
+          "context": "The forfeit of his many crimes at once.” / Pallas, the blue-eyed goddess, thus replied:— / “O father, son of Saturn, king of kings!"
+        },
+        "2": {
+          "bookNumber": 2,
+          "lineNumber": 480,
+          "matchedText": "blue-eyed goddess",
+          "context": "Entered the hall and joined the suitor train. / Then did the blue-eyed goddess turn her thoughts / To other plans, and taking on herself"
+        },
+        "3": {
+          "bookNumber": 3,
+          "lineNumber": 17,
+          "matchedText": "blue-eyed Pallas",
+          "context": "Telemachus, the goddess guiding him, / And thus to him the blue-eyed Pallas said:— / “Telemachus, there now is no excuse,"
+        },
+        "5": {
+          "bookNumber": 5,
+          "lineNumber": 511,
+          "matchedText": "blue-eyed maid",
+          "context": "Then had his limbs been flayed, and all his bones / Broken at once, had not the blue-eyed maid, / Minerva, prompted him. Borne toward the rock,"
+        },
+        "6": {
+          "bookNumber": 6,
+          "lineNumber": 18,
+          "matchedText": "blue-eyed goddess",
+          "context": "Of the magnanimous Ulysses, came / The blue-eyed goddess Pallas, entering / The gorgeous chamber where a damsel slept—"
+        },
+        "7": {
+          "bookNumber": 7,
+          "lineNumber": 23,
+          "matchedText": "blue-eyed Pallas",
+          "context": "And just as he was entering that fair town / The blue-eyed Pallas met him, in the form / Of a young virgin with an urn. She stood"
+        },
+        "11": {
+          "bookNumber": 11,
+          "lineNumber": 779,
+          "matchedText": "blue-eyed Pallas",
+          "context": "I led him up from Hades, with such aid / As Hermes and the blue-eyed Pallas gave.’ / “Thus having spoken, he withdrew again"
+        },
+        "13": {
+          "bookNumber": 13,
+          "lineNumber": 291,
+          "matchedText": "blue-eyed Pallas",
+          "context": "Of fruitful mainland shelving to the sea?” / And then the goddess, blue-eyed Pallas, said: / “Of simple mind art thou, unless perchance"
+        },
+        "15": {
+          "bookNumber": 15,
+          "lineNumber": 12,
+          "matchedText": "blue-eyed Pallas",
+          "context": "Dwelt on his father. Now beside his bed / The blue-eyed Pallas took her stand and spake:— / “Telemachus, it is no longer well"
+        },
+        "16": {
+          "bookNumber": 16,
+          "lineNumber": 544,
+          "matchedText": "blue-eyed Pallas",
+          "context": "Ulysses, her dear spouse, till o’er her lids / The blue-eyed Pallas poured the balm of sleep. / At evening to Ulysses and his son"
+        },
+        "18": {
+          "bookNumber": 18,
+          "lineNumber": 203,
+          "matchedText": "blue-eyed Pallas",
+          "context": "And took the seat from which he lately rose. / Then blue-eyed Pallas moved Penelope, / Sage daughter of Icarius, to appear"
+        },
+        "19": {
+          "bookNumber": 19,
+          "lineNumber": 731,
+          "matchedText": "blue-eyed Pallas",
+          "context": "She wept for her dear husband, till at length / The blue-eyed Pallas graciously distilled / Upon her closing lids the balm of sleep."
+        },
+        "20": {
+          "bookNumber": 20,
+          "lineNumber": 50,
+          "matchedText": "blue-eyed Pallas",
+          "context": "Be safe thereafter? Think, I pray, of this.” / And thus in turn the blue-eyed Pallas said: / “O faint of spirit! in an humbler friend"
+        },
+        "21": {
+          "bookNumber": 21,
+          "lineNumber": 438,
+          "matchedText": "blue-eyed Pallas",
+          "context": "Her maids, she wept her well-beloved lord, / Ulysses, till the blue-eyed Pallas came, / And poured upon her lids the balm of sleep."
+        },
+        "23": {
+          "bookNumber": 23,
+          "lineNumber": 292,
+          "matchedText": "blue-eyed Pallas",
+          "context": "And there would rosy-fingered Morn have found / Both weeping, but the blue-eyed Pallas planned / That thus it should not be; she stayed the night"
+        },
+        "24": {
+          "bookNumber": 24,
+          "lineNumber": 635,
+          "matchedText": "blue-eyed Pallas",
+          "context": "And grandson rivals on the battlefield.” / And then the blue-eyed Pallas, drawing near / Laertes, said: “Son of Arcesias, loved"
+        }
+      },
+      "totalCount": 52
+    },
+    {
+      "id": "rhododaktylos",
+      "greek": "ῥοδοδάκτυλος",
+      "transliteration": "rhododaktylos",
+      "gloss": "\"rosy-fingered\" — the canonical Homeric epithet for Eos / Dawn. One of the most-quoted formulas in world literature. The mere fact that Homer marks *each day* of Odysseus's return with a fresh dawn-formula tells you something about the poem's rhythmic structure.",
+      "subject": "Dawn (Eos)",
+      "bryantRenderings": [
+        "rosy-fingered"
+      ],
+      "firstByBook": {
+        "3": {
+          "bookNumber": 3,
+          "lineNumber": 522,
+          "matchedText": "rosy-fingered",
+          "context": "Soon as the daughter of the dawn appeared, / The rosy-fingered Morning, Nestor left / His bed and went abroad, and took his seat"
+        },
+        "4": {
+          "bookNumber": 4,
+          "lineNumber": 395,
+          "matchedText": "rosy-fingered",
+          "context": "But when at length the daughter of the Dawn, / The rosy-fingered Morning, brought her light, / Then Menelaus, great in battle, rose,"
+        },
+        "5": {
+          "bookNumber": 5,
+          "lineNumber": 149,
+          "matchedText": "rosy-fingered",
+          "context": "A mortal man her consort. Thus it was / When once Aurora, rosy-fingered, took / Orion for her husband; ye were stung,"
+        },
+        "8": {
+          "bookNumber": 8,
+          "lineNumber": 1,
+          "matchedText": "rosy-fingered",
+          "context": "When Morn appeared, the rosy-fingered child / Of Dawn, Alcinoüs, mighty and revered,"
+        },
+        "9": {
+          "bookNumber": 9,
+          "lineNumber": 183,
+          "matchedText": "rosy-fingered",
+          "context": "“And when at length the daughter of the Dawn, / The rosy-fingered Morn, appeared, we walked / Around the isle, admiring as we went."
+        },
+        "10": {
+          "bookNumber": 10,
+          "lineNumber": 226,
+          "matchedText": "rosy-fingered",
+          "context": "We slept upon the shore. But when the Morn, / The rosy-fingered child of Dawn, looked forth, / I called a council of my men and spake:—"
+        },
+        "12": {
+          "bookNumber": 12,
+          "lineNumber": 9,
+          "matchedText": "rosy-fingered",
+          "context": "And waited for the holy Morn to rise. / “Then when the rosy-fingered Morn appeared, / The child of Dawn, I sent my comrades forth"
+        },
+        "13": {
+          "bookNumber": 13,
+          "lineNumber": 21,
+          "matchedText": "rosy-fingered",
+          "context": "Their homes to sleep, but when the child of Dawn, / The rosy-fingered Morn, appeared, they came, / All bringing to the ship their gifts of brass"
+        },
+        "15": {
+          "bookNumber": 15,
+          "lineNumber": 245,
+          "matchedText": "rosy-fingered",
+          "context": "But when appeared the daughter of the Dawn, / The rosy-fingered Morn, they yoked the steeds / And climbed the sumptuous car, and drove afield"
+        },
+        "17": {
+          "bookNumber": 17,
+          "lineNumber": 1,
+          "matchedText": "rosy-fingered",
+          "context": "Now when the rosy-fingered Morn looked forth— / The daughter of the Dawn—Telemachus,"
+        },
+        "19": {
+          "bookNumber": 19,
+          "lineNumber": 523,
+          "matchedText": "rosy-fingered",
+          "context": "They laid them down, and took the gift of sleep. / But when the rosy-fingered Morn appeared, / Born of the Dawn, forth issued the young men,"
+        },
+        "23": {
+          "bookNumber": 23,
+          "lineNumber": 291,
+          "matchedText": "rosy-fingered",
+          "context": "Nor would her fair white arms release his neck, / And there would rosy-fingered Morn have found / Both weeping, but the blue-eyed Pallas planned"
+        }
+      },
+      "totalCount": 20
+    },
+    {
+      "id": "oinops-pontos",
+      "greek": "οἶνοψ πόντος",
+      "transliteration": "oinops pontos",
+      "gloss": "\"wine-faced sea\" (literally: \"wine-eyed\"). The precise color Homer means has been debated since antiquity — the Greeks had no discrete word for blue. Bryant typically softens to \"dark\" or \"dark-blue,\" occasionally \"purple\" when following the archaic register. The phrase has given every subsequent epic its sea: *wine-dark* is the default hue of poetic ocean.",
+      "subject": "the sea",
+      "bryantRenderings": [
+        "wine-dark",
+        "dark-blue sea",
+        "purple deep"
+      ],
+      "firstByBook": {
+        "1": {
+          "bookNumber": 1,
+          "lineNumber": 225,
+          "matchedText": "dark blue deep",
+          "context": "To wield the oar, the Taphians, and I come / With ship and crew across the dark blue deep / To Temesè, and to a race whose speech"
+        },
+        "3": {
+          "bookNumber": 3,
+          "lineNumber": 375,
+          "matchedText": "dark-blue sea",
+          "context": "But setting sail again with all his fleet / Upon the dark-blue sea, all-seeing Jove / Decreed a perilous voyage. He sent forth"
+        },
+        "4": {
+          "bookNumber": 4,
+          "lineNumber": 610,
+          "matchedText": "dark-blue deep",
+          "context": "And shouldst have then embarked to reach with speed / Thy native land across the dark-blue deep. / Now it is not thy fate to see again"
+        },
+        "5": {
+          "bookNumber": 5,
+          "lineNumber": 70,
+          "matchedText": "dark-blue ocean",
+          "context": "But when he reached that island, far away, / Forth from the dark-blue ocean-swell he stepped / Upon the sea-beach, walking till he came"
+        }
+      },
+      "totalCount": 6
+    },
+    {
+      "id": "periphron",
+      "greek": "περίφρων",
+      "transliteration": "periphrōn",
+      "gloss": "\"of circumspect mind\" — Penelope's defining epithet. The word is cognate with *periphrasis* (roundabout speech); Homer paints her as someone whose every utterance is indirect and careful. Bryant reaches most often for \"sage,\" occasionally \"prudent\" or \"wary.\"",
+      "subject": "Penelope",
+      "bryantRenderings": [
+        "sage Penelope",
+        "prudent Penelope",
+        "sage queen"
+      ],
+      "firstByBook": {
+        "1": {
+          "bookNumber": 1,
+          "lineNumber": 405,
+          "matchedText": "sage queen",
+          "context": "Of Pallas. From her chamber o’er the hall / The daughter of Icarius, the sage queen / Penelope, had heard the heavenly strain,"
+        },
+        "4": {
+          "bookNumber": 4,
+          "lineNumber": 146,
+          "matchedText": "sage queen",
+          "context": "And whether he be living now or dead / We know not. Old Laertes, the sage queen / Penelope, and young Telemachus,"
+        },
+        "5": {
+          "bookNumber": 5,
+          "lineNumber": 260,
+          "matchedText": "sage Penelope",
+          "context": "“Bear with me, gracious goddess; well I know / All thou couldst say. The sage Penelope / In feature and in stature comes not nigh"
+        },
+        "14": {
+          "bookNumber": 14,
+          "lineNumber": 457,
+          "matchedText": "sage Penelope",
+          "context": "Go never to the town, unless, perchance, / The sage Penelope requires me there, / When someone comes with tidings from abroad."
+        },
+        "15": {
+          "bookNumber": 15,
+          "lineNumber": 55,
+          "matchedText": "sage Penelope",
+          "context": "With him that night, and send him to the town / With tidings to the sage Penelope / That thou art come from Pylos and art safe.”"
+        },
+        "16": {
+          "bookNumber": 16,
+          "lineNumber": 397,
+          "matchedText": "sage Penelope",
+          "context": "Went forward to the palace of the king / With tidings to the sage Penelope / That now her son was come and in the fields,"
+        },
+        "17": {
+          "bookNumber": 17,
+          "lineNumber": 120,
+          "matchedText": "sage Penelope",
+          "context": "And when the calls of hunger and of thirst / Had ceased, thus spake the sage Penelope:— / “Telemachus, when I again go up"
+        },
+        "18": {
+          "bookNumber": 18,
+          "lineNumber": 225,
+          "matchedText": "sage Penelope",
+          "context": "That he might yet become, a bearded man.” / And then the sage Penelope rejoined: / “Though anxious for my sake, persuade me not,"
+        },
+        "19": {
+          "bookNumber": 19,
+          "lineNumber": 65,
+          "matchedText": "sage Penelope",
+          "context": "Death to the suitors with Minerva’s aid. / The sage Penelope now left her bower; / Like Dian or like golden Venus came"
+        },
+        "21": {
+          "bookNumber": 21,
+          "lineNumber": 2,
+          "matchedText": "sage Penelope",
+          "context": "Pallas, the goddess of the azure eyes, / Woke in the mind of sage Penelope, / The daughter of Icarius, this design—"
+        },
+        "23": {
+          "bookNumber": 23,
+          "lineNumber": 66,
+          "matchedText": "sage Penelope",
+          "context": "Who under his own roof have done him wrong.” / Then spake the sage Penelope again: / “Beloved nurse, exult not overmuch,"
+        },
+        "24": {
+          "bookNumber": 24,
+          "lineNumber": 245,
+          "matchedText": "sage Penelope",
+          "context": "Themselves shall frame, for those who dwell on earth, / Sweet strains in praise of sage Penelope. / Not such was she who treacherously slew"
+        }
+      },
+      "totalCount": 38
+    }
+  ],
+  "similes": [
+    {
+      "bookNumber": 1,
+      "startLine": 47,
+      "endLine": 56,
+      "opener": "As late Aegisthus, unconstrained by fate,",
+      "resolver": "So Hermes said; his prudent words moved not",
+      "preview": "As late Aegisthus, unconstrained by fate, Married the queen of Atreus’ son and slew The husband just returned from war. Yet well He knew the bitter penalty, for we Warned him. We sent the herald Argicide, Bidding him neither slay the chief ",
+      "tenor": null
+    },
+    {
+      "bookNumber": 3,
+      "startLine": 449,
+      "endLine": 452,
+      "opener": "As from some half-clad wretch, too poor to own",
+      "resolver": null,
+      "preview": "As from some half-clad wretch, too poor to own Mantles and blankets in whose soft warm folds He and his guests might sleep; but I have both— Mantles and blankets—beautifully wrought,",
+      "tenor": null
+    },
+    {
+      "bookNumber": 4,
+      "startLine": 779,
+      "endLine": 787,
+      "opener": "As well I may. Of all that in my house",
+      "resolver": "So talked they with each other. Meantime came",
+      "preview": "As well I may. Of all that in my house Are treasured up, the choicest I will give, And the most precious. I will give a cup Wrought all of silver save its brim of gold. It is the work of Vulcan. Phaedimus The hero, King of Sidon, gave it me",
+      "tenor": null
+    },
+    {
+      "bookNumber": 5,
+      "startLine": 65,
+      "endLine": 68,
+      "opener": "Like hovering seamew, that on the broad gulfs",
+      "resolver": "So Hermes flew along the waste of waves.",
+      "preview": "Like hovering seamew, that on the broad gulfs Of the unfruitful ocean seeks her prey, And often dips her pinions in the brine; So Hermes flew along the waste of waves.",
+      "tenor": null
+    },
+    {
+      "bookNumber": 5,
+      "startLine": 300,
+      "endLine": 303,
+      "opener": "As when some builder, skilful in his art,",
+      "resolver": null,
+      "preview": "As when some builder, skilful in his art, Frames for a ship of burden the broad keel, Such ample breadth Ulysses gave the raft. Upon the massy beams he reared a deck,",
+      "tenor": null
+    },
+    {
+      "bookNumber": 5,
+      "startLine": 436,
+      "endLine": 442,
+      "opener": "As he revolved this purpose in his mind,",
+      "resolver": "So did that wave fling loose the ponderous beams.",
+      "preview": "As he revolved this purpose in his mind, Earthshaking Neptune sent a mighty wave, Horrid and huge and high, and where he sat It smote him. As a violent wind uplifts The dry chaff heaped upon a threshing-floor, And sends it scattered through",
+      "tenor": null
+    },
+    {
+      "bookNumber": 5,
+      "startLine": 586,
+      "endLine": 591,
+      "opener": "As one who, dwelling in the distant fields,",
+      "resolver": "So did Ulysses in that pile of leaves",
+      "preview": "As one who, dwelling in the distant fields, Without a neighbor near him, hides a brand In the dark ashes, keeping carefully The seeds of fire alive, lest he, perforce, To light his hearth must bring them from afar; So did Ulysses in that pi",
+      "tenor": null
+    },
+    {
+      "bookNumber": 6,
+      "startLine": 295,
+      "endLine": 298,
+      "opener": "As when some skilful workman trained and taught",
+      "resolver": null,
+      "preview": "As when some skilful workman trained and taught By Vulcan and Minerva in his art Binds the bright silver with a verge of gold, And graceful is his handiwork, such grace",
+      "tenor": null
+    },
+    {
+      "bookNumber": 7,
+      "startLine": 129,
+      "endLine": 131,
+      "opener": "As far as the Phaeacian race excel",
+      "resolver": "So far the women in their woven work",
+      "preview": "As far as the Phaeacian race excel In guiding their swift galleys o’er the deep, So far the women in their woven work",
+      "tenor": null
+    },
+    {
+      "bookNumber": 9,
+      "startLine": 458,
+      "endLine": 461,
+      "opener": "As when a smith, in forging axe or adze,",
+      "resolver": "So hissed the eyeball of the Cyclops round",
+      "preview": "As when a smith, in forging axe or adze, Plunges, to temper it, the hissing blade Into cold water, strengthening thus the steel, So hissed the eyeball of the Cyclops round",
+      "tenor": null
+    },
+    {
+      "bookNumber": 9,
+      "startLine": 578,
+      "endLine": 581,
+      "opener": "As when I spake before, and then again",
+      "resolver": null,
+      "preview": "As when I spake before, and then again I shouted to the Cyclops, though my crew Strove to prevent it with beseeching words, And one man first and then another said:—",
+      "tenor": null
+    },
+    {
+      "bookNumber": 10,
+      "startLine": 492,
+      "endLine": 497,
+      "opener": "As in some grange the calves come leaping round",
+      "resolver": "So when my comrades saw me through their tears,",
+      "preview": "As in some grange the calves come leaping round A herd of kine returning to the stall From grassy fields where they have grazed their fill, Nor can the stall contain the young which spring Around their mothers with continual bleat; So when ",
+      "tenor": null
+    },
+    {
+      "bookNumber": 11,
+      "startLine": 458,
+      "endLine": 467,
+      "opener": "Even as a minstrel might, the history",
+      "resolver": "So long to speak of hardships thou hast borne.”",
+      "preview": "Even as a minstrel might, the history Of all thy Argive brethren and thy own. Now say, and frankly, didst thou also see Any of those heroic men who went With thee to Troy, and in that region met Their fate? A night immeasurably long Is yet ",
+      "tenor": null
+    },
+    {
+      "bookNumber": 12,
+      "startLine": 300,
+      "endLine": 303,
+      "opener": "As when an angler on a jutting rock",
+      "resolver": null,
+      "preview": "As when an angler on a jutting rock Sits with his taper rod, and casts his bait To snare the smaller fish, he sends the horn Of a wild bull that guards his line afar",
+      "tenor": null
+    },
+    {
+      "bookNumber": 12,
+      "startLine": 528,
+      "endLine": 530,
+      "opener": "As clings a bat—for I could neither find",
+      "resolver": "So distant were the roots, so far apart",
+      "preview": "As clings a bat—for I could neither find A place to plant my feet, nor could I climb, So distant were the roots, so far apart",
+      "tenor": null
+    },
+    {
+      "bookNumber": 14,
+      "startLine": 124,
+      "endLine": 133,
+      "opener": "As many droves; as many flocks of goats",
+      "resolver": "So spake the swineherd, while Ulysses ate",
+      "preview": "As many droves; as many flocks of goats Are tended there by strangers, and by hinds, His servants. Here moreover, in the fields Beyond us, graze eleven numerous flocks Of goats, attended by his trusty men, Each one of whom brings daily home",
+      "tenor": null
+    },
+    {
+      "bookNumber": 17,
+      "startLine": 153,
+      "endLine": 158,
+      "opener": "As when a hart hath left two suckling fawns,",
+      "resolver": "So will Ulysses bring a sudden doom",
+      "preview": "As when a hart hath left two suckling fawns, Just born, asleep in a strong lion’s lair, And roams for pasturage the mountain slopes And grassy lawns, the lion suddenly Comes back, and makes a cruel end of both, So will Ulysses bring a sudde",
+      "tenor": null
+    },
+    {
+      "bookNumber": 17,
+      "startLine": 492,
+      "endLine": 494,
+      "opener": "As much as I will, he would not be seen",
+      "resolver": "So speaking, he brought forward to the sight,",
+      "preview": "As much as I will, he would not be seen Within these halls for three months yet to come.” So speaking, he brought forward to the sight,",
+      "tenor": null
+    },
+    {
+      "bookNumber": 18,
+      "startLine": 301,
+      "endLine": 305,
+      "opener": "As Irus sits beside the gate and nods,",
+      "resolver": "So talked the twain awhile; then interposed",
+      "preview": "As Irus sits beside the gate and nods, Like one o’ercome with wine, nor can he stand Upon his feet, nor go to where he dwells, If home he has, so feeble are his limbs.” So talked the twain awhile; then interposed",
+      "tenor": null
+    },
+    {
+      "bookNumber": 19,
+      "startLine": 439,
+      "endLine": 448,
+      "opener": "As thy own master’s; such is doubtless now",
+      "resolver": "So reverent to the gods? No man on earth",
+      "preview": "As thy own master’s; such is doubtless now Ulysses, with such wrinkled feet and hands. For quickly doth misfortune make men old.” She spake; the aged handmaid hid her face With both her hands, and, shedding bitter tears, Thus sorrowfully to",
+      "tenor": null
+    },
+    {
+      "bookNumber": 20,
+      "startLine": 358,
+      "endLine": 367,
+      "opener": "As is becoming; for it were not just",
+      "resolver": "So speaking, with his strong right hand he flung",
+      "preview": "As is becoming; for it were not just Nor seemly to pass by, in such a feast, The guests, whoe’er they may be, that resort To this fair mansion of Telemachus. I also will bestow on him a gift Of hospitality, and he in turn May give it to the",
+      "tenor": null
+    },
+    {
+      "bookNumber": 22,
+      "startLine": 494,
+      "endLine": 497,
+      "opener": "As when a lion, who has just devoured",
+      "resolver": null,
+      "preview": "As when a lion, who has just devoured A bullock of the pasture, moves away, A terror to the sight, with breast and cheeks All bathed in blood; so did Ulysses seem,",
+      "tenor": null
+    },
+    {
+      "bookNumber": 23,
+      "startLine": 192,
+      "endLine": 195,
+      "opener": "As when a workman skilled in many arts,",
+      "resolver": null,
+      "preview": "As when a workman skilled in many arts, And taught by Pallas and Minerva, twines A golden border round the silver mass, A glorious work; so did the goddess shed",
+      "tenor": null
+    },
+    {
+      "bookNumber": 23,
+      "startLine": 281,
+      "endLine": 289,
+      "opener": "As in his arms he held his dearly loved",
+      "resolver": "So welcome was her husband to her eyes.",
+      "preview": "As in his arms he held his dearly loved And faithful wife. As welcome as the land To those who swim the deep, of whose stout barque Neptune has made a wreck amidst the waves, Tossed by the billow and the blast, and few Are those who from th",
+      "tenor": null
+    },
+    {
+      "bookNumber": 24,
+      "startLine": 630,
+      "endLine": 640,
+      "opener": "As thou hast said, dishonor on thy race.”",
+      "resolver": "So Pallas spake, and breathed into his frame",
+      "preview": "As thou hast said, dishonor on thy race.” Laertes heard them, and rejoiced, and said: “O what a day for me, ye blessed gods, Is this! With what delight I see my son And grandson rivals on the battlefield.” And then the blue-eyed Pallas, dra",
+      "tenor": null
+    }
+  ],
+  "recognitionScenes": [
+    {
+      "bookNumber": 16,
+      "anchor": {
+        "lineNumber": 229,
+        "anchorText": "“I am no god; how am I like the gods?"
+      },
+      "title": "Telemachus recognizes Odysseus",
+      "description": "The first anagnorisis of the poem, and the only voluntary one — Odysseus drops his beggar's disguise at Athena's touch and discloses himself to his son in the swineherd's hut. Father and son weep together like eagles robbed of their young."
+    },
+    {
+      "bookNumber": 19,
+      "anchor": {
+        "lineNumber": 480,
+        "anchorText": "His secret would be known. She came and bathed"
+      },
+      "title": "Eurycleia recognizes the scar",
+      "description": "The oldest recognition trope in Western literature — the nurse washes the beggar's feet, her hand finds the ridged scar on his thigh, the bronze basin clangs, and Odysseus seizes her throat to keep the household's secret. Auerbach opens *Mimesis* with this scene."
+    },
+    {
+      "bookNumber": 23,
+      "anchor": {
+        "lineNumber": 244,
+        "anchorText": "In purple. Now, O wife, I cannot know"
+      },
+      "title": "Penelope recognizes Odysseus by the bed",
+      "description": "Penelope's matching mētis: she tests him with the secret of the olive-rooted bed, and his explosion ('who has moved my bed?') is the tally. The poem's deepest recognition — two intelligent people at last admitting that they know each other."
+    },
+    {
+      "bookNumber": 24,
+      "anchor": {
+        "lineNumber": 413,
+        "anchorText": "And of the apple ten thou gavest me,"
+      },
+      "title": "Laertes recognizes his son",
+      "description": "In the orchard, Odysseus lists the trees his father gave him as a boy — thirteen pears, ten apples, forty figs. The inventory is the proof. Homer ends the poem where it began, with a son establishing his place in the line of his father."
+    }
+  ],
+  "counts": {
+    "epithets": {
+      "total": 177,
+      "distinctBookCoverage": {
+        "polytropos": 16,
+        "polymētis": 7,
+        "glaukōpis": 16,
+        "rhododaktylos": 12,
+        "oinops pontos": 4,
+        "periphrōn": 12
+      }
+    },
+    "similes": 25,
+    "recognitionScenes": 4
+  }
+}
