@@ -40,6 +40,7 @@
 
 import { useEffect } from "react"
 import { getAnnotationsForChapter } from "@/lib/virgil/annotations"
+import { getFaerieQueeneGlossesForChapter } from "@/lib/virgil/faerie-queene-glosses"
 
 interface FaerieQueeneAnnotationsProps {
   bookId: string
@@ -48,6 +49,7 @@ interface FaerieQueeneAnnotationsProps {
 }
 
 const MARKER_ATTR = "data-fq-anchor"
+const GLOSS_CLASS = "tome-gloss"
 
 export function FaerieQueeneAnnotations({
   bookId,
@@ -58,7 +60,8 @@ export function FaerieQueeneAnnotations({
     if (bookId !== "the-faerie-queene") return
 
     const anns = getAnnotationsForChapter(bookId, currentChapter)
-    if (anns.length === 0) return
+    const glosses = getFaerieQueeneGlossesForChapter(currentChapter)
+    if (anns.length === 0 && glosses.length === 0) return
 
     let cancelled = false
     let clickHandlerRoot: HTMLElement | null = null
@@ -94,6 +97,10 @@ export function FaerieQueeneAnnotations({
 
       // Clean up any prior-pass decorations.
       root.querySelectorAll(`[${MARKER_ATTR}]`).forEach((el) => el.remove())
+      root.querySelectorAll(`.${GLOSS_CLASS}`).forEach((el) => {
+        const t = document.createTextNode(el.textContent ?? "")
+        el.parentNode?.replaceChild(t, el)
+      })
       root.normalize()
 
       function collectTextNodes(): Text[] {
@@ -241,6 +248,41 @@ export function FaerieQueeneAnnotations({
         parent.insertBefore(marker, chosen.node)
         parent.insertBefore(afterNode, chosen.node)
         parent.removeChild(chosen.node)
+      }
+
+      // ── Pass 2: gloss decorations (dotted-underline w/ tooltip) ────
+      // Sort longest phrase first so multi-word glosses don't fragment
+      // beneath overlapping shorter ones ("Red Cross Knight" before
+      // "Redcrosse").
+      const sortedGlosses = [...glosses].sort(
+        (a, b) => b.phrase.length - a.phrase.length,
+      )
+      for (const g of sortedGlosses) {
+        const needle = g.phrase
+        if (!needle) continue
+        const textNodes2 = collectTextNodes()
+        for (const tn of textNodes2) {
+          const raw = tn.nodeValue ?? ""
+          const idx = raw.indexOf(needle)
+          if (idx < 0) continue
+          const before = raw.slice(0, idx)
+          const matched = raw.slice(idx, idx + needle.length)
+          const after = raw.slice(idx + needle.length)
+          const parent = tn.parentNode
+          if (!parent) continue
+          const wrap = document.createElement("span")
+          wrap.className = GLOSS_CLASS
+          wrap.setAttribute("data-definition", g.definition)
+          wrap.setAttribute("tabindex", "0")
+          wrap.textContent = matched
+          const beforeNode = document.createTextNode(before)
+          const afterNode = document.createTextNode(after)
+          parent.insertBefore(beforeNode, tn)
+          parent.insertBefore(wrap, tn)
+          parent.insertBefore(afterNode, tn)
+          parent.removeChild(tn)
+          break // first occurrence per phrase only
+        }
       }
 
       root.addEventListener("click", onClick)
