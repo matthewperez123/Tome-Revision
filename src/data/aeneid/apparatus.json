@@ -1,0 +1,463 @@
+{
+  "generatedAt": "2026-04-18T17:40:41.461Z",
+  "generatedBy": "scripts/aeneid/detect-features.ts",
+  "epithets": [
+    {
+      "id": "pius-aeneas",
+      "latin": "pius Aenēās",
+      "transliteration": "pius Aeneas",
+      "gloss": "Virgil's signature epithet, used some twenty times across the poem. *Pius* is untranslatable in English: it fuses duty to the gods, duty to parents, duty to country, and duty to the unborn future into one word. Dryden reaches most often for \"pious\" but also \"good,\" \"the pious chief,\" or \"the good Aeneas.\" The formulaic first-occurrence marker signals the Virgilian system Aeneas lives inside — he is not simply a man named Aeneas, he is always *pius* Aeneas, as Achilles is always *swift-footed* in Homer.",
+      "subject": "Aeneas",
+      "drydenRenderings": [
+        "pious Aeneas",
+        "pious chief",
+        "pious prince",
+        "good Aeneas",
+        "the pious hero"
+      ],
+      "firstByBook": {
+        "1": {
+          "bookNumber": 1,
+          "lineNumber": 146,
+          "matchedText": "pious prince",
+          "context": "The dart aloft, and clench the pointed spear!” / Thus while the pious prince his fate bewails, / Fierce Boreas drove against his flying sails,"
+        },
+        "4": {
+          "bookNumber": 4,
+          "lineNumber": 404,
+          "matchedText": "pious prince",
+          "context": "Involv’d in clouds, and vanish’d out of sight. / The pious prince was seiz’d with sudden fear; / Mute was his tongue, and upright stood his hair."
+        },
+        "5": {
+          "bookNumber": 5,
+          "lineNumber": 125,
+          "matchedText": "pious prince",
+          "context": "Within the hollow tomb retir’d to rest. / The pious prince, surpris’d at what he view’d, / The fun’ral honours with more zeal renew’d,"
+        },
+        "6": {
+          "bookNumber": 6,
+          "lineNumber": 11,
+          "matchedText": "pious prince",
+          "context": "Thus, while their sev’ral charges they fulfil, / The pious prince ascends the sacred hill / Where Phoebus is ador’d; and seeks the shade"
+        },
+        "7": {
+          "bookNumber": 7,
+          "lineNumber": 203,
+          "matchedText": "pious chief",
+          "context": "Here warlike Latins hold the happy lands. / The pious chief, who sought by peaceful ways / To found his empire, and his town to raise,"
+        },
+        "10": {
+          "bookNumber": 10,
+          "lineNumber": 1111,
+          "matchedText": "pious Trojan",
+          "context": "He cast to heav’n, on Argos thinks, and dies. / The pious Trojan then his jav’lin sent; / The shield gave way; thro’ treble plates it went"
+        },
+        "11": {
+          "bookNumber": 11,
+          "lineNumber": 3,
+          "matchedText": "pious chief",
+          "context": "Above the waves, and left her wat’ry bed; / The pious chief, whom double cares attend / For his unburied soldiers and his friend,"
+        },
+        "12": {
+          "bookNumber": 12,
+          "lineNumber": 482,
+          "matchedText": "pious prince",
+          "context": "Thus while he spoke, unmindful of defence, / A winged arrow struck the pious prince. / But, whether from some human hand it came,"
+        }
+      },
+      "totalCount": 18
+    },
+    {
+      "id": "pater-aeneas",
+      "latin": "pater Aenēās",
+      "transliteration": "pater Aeneas",
+      "gloss": "\"Father Aeneas\" — used only after he becomes paterfamilias of the Trojan remnant. Dryden renders as \"the father\" or \"father Aeneas.\" Its appearance marks the moment Aeneas ceases to be a young warrior and becomes the ancestor Virgil is building toward.",
+      "subject": "Aeneas",
+      "drydenRenderings": [
+        "father Aeneas",
+        "the father",
+        "Father Aeneas"
+      ],
+      "firstByBook": {},
+      "totalCount": 0
+    },
+    {
+      "id": "infelix-dido",
+      "latin": "īnfēlix Dīdō",
+      "transliteration": "infelix Dido",
+      "gloss": "The tragic formula — \"unhappy,\" \"ill-fated.\" *Infelix* is the same word Virgil uses elsewhere for the doomed or marked-by-death; it is Dido's name on the poem's lips from the moment she falls in love. Dryden spreads the sense across \"unhappy,\" \"unhappy queen,\" \"unhappy Dido,\" and \"the hapless queen.\"",
+      "subject": "Dido",
+      "drydenRenderings": [
+        "unhappy queen",
+        "unhappy Dido",
+        "the hapless queen",
+        "the unhappy dame"
+      ],
+      "firstByBook": {
+        "1": {
+          "bookNumber": 1,
+          "lineNumber": 1004,
+          "matchedText": "Unhappy Dido",
+          "context": "With greedy pleasure, and devour’d his charms. / Unhappy Dido little thought what guest, / How dire a god, she drew so near her breast;"
+        },
+        "2": {
+          "bookNumber": 2,
+          "lineNumber": 682,
+          "matchedText": "unhappy queen",
+          "context": "These eyes beheld him when he march’d between / The brother kings: I saw th’ unhappy queen, / The hundred wives, and where old Priam stood,"
+        },
+        "4": {
+          "bookNumber": 4,
+          "lineNumber": 768,
+          "matchedText": "Unhappy Dido",
+          "context": "All else of nature’s common gift partake: / Unhappy Dido was alone awake. / Nor sleep nor ease the furious queen can find;"
+        },
+        "6": {
+          "bookNumber": 6,
+          "lineNumber": 618,
+          "matchedText": "Unhappy queen",
+          "context": "And, as his love inspir’d him, thus he said: / “Unhappy queen! then is the common breath / Of rumour true, in your reported death,"
+        },
+        "7": {
+          "bookNumber": 7,
+          "lineNumber": 560,
+          "matchedText": "unhappy queen",
+          "context": "“Io, ye Latian dames! if any here / Hold your unhappy queen, Amata, dear; / If there be here,” she said, “who dare maintain"
+        }
+      },
+      "totalCount": 6
+    },
+    {
+      "id": "saeva-iuno",
+      "latin": "saevae memorem Iūnōnis ob īram",
+      "transliteration": "saevae memorem Iunonis ob iram",
+      "gloss": "Book I, line 4: \"because of cruel Juno's unforgetting wrath.\" The phrase that opens the poem's plot. Dryden: \"haughty Juno's unrelenting hate.\" Juno's *memor* (remembering) anger drives the whole Trojan war-in-Italy and is the largest structural fact of the poem.",
+      "subject": "Juno",
+      "drydenRenderings": [
+        "haughty Juno",
+        "unrelenting hate",
+        "Juno's hate",
+        "Juno's rage"
+      ],
+      "firstByBook": {
+        "1": {
+          "bookNumber": 1,
+          "lineNumber": 2,
+          "matchedText": "haughty Juno",
+          "context": "Arms, and the man I sing, who, forc’d by fate, / And haughty Juno’s unrelenting hate, / Expell’d and exil’d, left the Trojan shore."
+        },
+        "8": {
+          "bookNumber": 8,
+          "lineNumber": 58,
+          "matchedText": "haughty Juno",
+          "context": "Fear not! The war shall end in lasting peace, / And all the rage of haughty Juno cease. / And that this nightly vision may not seem"
+        },
+        "10": {
+          "bookNumber": 10,
+          "lineNumber": 70,
+          "matchedText": "haughty Juno",
+          "context": "Which may my wand’ring fugitives receive; / (Since haughty Juno will not give you leave;) / Then, father, (if I still may use that name,)"
+        }
+      },
+      "totalCount": 4
+    },
+    {
+      "id": "alma-venus",
+      "latin": "alma Venus",
+      "transliteration": "alma Venus",
+      "gloss": "\"Gracious / nourishing Venus\" — Venus in her maternal aspect, as the mother of Aeneas and through him the mother of Rome. Dryden: \"the gracious queen,\" \"the goddess-mother.\"",
+      "subject": "Venus",
+      "drydenRenderings": [
+        "goddess-mother",
+        "gracious Venus",
+        "fair Cytherea"
+      ],
+      "firstByBook": {
+        "1": {
+          "bookNumber": 1,
+          "lineNumber": 434,
+          "matchedText": "goddess mother",
+          "context": "Lo! in the deep recesses of the wood, / Before his eyes his goddess mother stood: / A huntress in her habit and her mien;"
+        },
+        "2": {
+          "bookNumber": 2,
+          "lineNumber": 901,
+          "matchedText": "goddess mother",
+          "context": "And then the sire himself to the dire altar drew. / O goddess mother, give me back to Fate; / Your gift was undesir’d, and came too late!"
+        },
+        "8": {
+          "bookNumber": 8,
+          "lineNumber": 708,
+          "matchedText": "goddess mother",
+          "context": "Is giv’n of promis’d aid, and arms divine. / My goddess mother, whose indulgent care / Foresaw the dangers of the growing war,"
+        },
+        "12": {
+          "bookNumber": 12,
+          "lineNumber": 82,
+          "matchedText": "goddess mother",
+          "context": "And the blood follows, where the weapon flies. / His goddess mother is not near, to shroud / The flying coward with an empty cloud.”"
+        }
+      },
+      "totalCount": 6
+    },
+    {
+      "id": "fidus-achates",
+      "latin": "fīdus Achātēs",
+      "transliteration": "fidus Achates",
+      "gloss": "\"Loyal Achates\" — *fidelitas* personified. Achates is Aeneas's companion throughout; his epithet is so durable it entered English as a figure for a faithful friend (\"a true Achates\"). Dryden: \"faithful\" or \"trusty.\"",
+      "subject": "Achates",
+      "drydenRenderings": [
+        "faithful Achates",
+        "trusty Achates",
+        "loyal Achates"
+      ],
+      "firstByBook": {},
+      "totalCount": 0
+    }
+  ],
+  "similes": [
+    {
+      "bookNumber": 1,
+      "startLine": 221,
+      "endLine": 224,
+      "opener": "So, when the Father of the Flood appears,",
+      "resolver": null,
+      "preview": "So, when the Father of the Flood appears, And o’er the seas his sov’reign trident rears, Their fury falls: he skims the liquid plains, High on his chariot, and, with loosen’d reins,"
+    },
+    {
+      "bookNumber": 1,
+      "startLine": 550,
+      "endLine": 552,
+      "opener": "As they, with joy returning, clap their wings,",
+      "resolver": "Not otherwise your ships, and ev’ry friend,",
+      "preview": "As they, with joy returning, clap their wings, And ride the circuit of the skies in rings; Not otherwise your ships, and ev’ry friend,"
+    },
+    {
+      "bookNumber": 2,
+      "startLine": 479,
+      "endLine": 483,
+      "opener": "“As hungry wolves, with raging appetite,",
+      "resolver": "So rush’d we forth at once; resolv’d to die,",
+      "preview": "“As hungry wolves, with raging appetite, Scour thro’ the fields, nor fear the stormy night— Their whelps at home expect the promis’d food, And long to temper their dry chaps in blood— So rush’d we forth at once; resolv’d to die,"
+    },
+    {
+      "bookNumber": 2,
+      "startLine": 510,
+      "endLine": 514,
+      "opener": "As when some peasant, in a bushy brake,",
+      "resolver": "So from our arms surpris’d Androgeos flies.",
+      "preview": "As when some peasant, in a bushy brake, Has with unwary footing press’d a snake; He starts aside, astonish’d, when he spies His rising crest, blue neck, and rolling eyes; So from our arms surpris’d Androgeos flies."
+    },
+    {
+      "bookNumber": 5,
+      "startLine": 251,
+      "endLine": 254,
+      "opener": "As when you stemm’d the strong Malean flood,",
+      "resolver": null,
+      "preview": "As when you stemm’d the strong Malean flood, And o’er the Syrtes’ broken billows row’d. I seek not now the foremost palm to gain; Though yet—But, ah! that haughty wish is vain!"
+    },
+    {
+      "bookNumber": 5,
+      "startLine": 359,
+      "endLine": 367,
+      "opener": "As when a snake, surpris’d upon the road,",
+      "resolver": "So slowly to the port the Centaur tends,",
+      "preview": "As when a snake, surpris’d upon the road, Is crush’d athwart her body by the load Of heavy wheels; or with a mortal wound Her belly bruis’d, and trodden to the ground: In vain, with loosen’d curls, she crawls along; Yet, fierce above, she b"
+    },
+    {
+      "bookNumber": 6,
+      "startLine": 662,
+      "endLine": 665,
+      "opener": "As when his thund’ring sword and pointed spear",
+      "resolver": null,
+      "preview": "As when his thund’ring sword and pointed spear Drove headlong to their ships, and glean’d the routed rear. They rais’d a feeble cry, with trembling notes; But the weak voice deceiv’d their gasping throats."
+    },
+    {
+      "bookNumber": 7,
+      "startLine": 644,
+      "endLine": 647,
+      "opener": "So, when with crackling flames a cauldron fries,",
+      "resolver": null,
+      "preview": "So, when with crackling flames a cauldron fries, The bubbling waters from the bottom rise: Above the brims they force their fiery way; Black vapours climb aloft, and cloud the day."
+    },
+    {
+      "bookNumber": 7,
+      "startLine": 965,
+      "endLine": 968,
+      "opener": "Like a long team of snowy swans on high,",
+      "resolver": null,
+      "preview": "Like a long team of snowy swans on high, Which clap their wings, and cleave the liquid sky, When, homeward from their wat’ry pastures borne, They sing, and Asia’s lakes their notes return."
+    },
+    {
+      "bookNumber": 8,
+      "startLine": 34,
+      "endLine": 37,
+      "opener": "So, when the sun by day, or moon by night,",
+      "resolver": null,
+      "preview": "So, when the sun by day, or moon by night, Strike on the polish’d brass their trembling light, The glitt’ring species here and there divide, And cast their dubious beams from side to side;"
+    },
+    {
+      "bookNumber": 8,
+      "startLine": 778,
+      "endLine": 781,
+      "opener": "So, from the seas, exerts his radiant head",
+      "resolver": null,
+      "preview": "So, from the seas, exerts his radiant head The star by whom the lights of heav’n are led; Shakes from his rosy locks the pearly dews, Dispels the darkness, and the day renews."
+    },
+    {
+      "bookNumber": 9,
+      "startLine": 582,
+      "endLine": 585,
+      "opener": "Like a fair flow’r by the keen share oppress’d;",
+      "resolver": null,
+      "preview": "Like a fair flow’r by the keen share oppress’d; Like a white poppy sinking on the plain, Whose heavy head is overcharg’d with rain. Despair, and rage, and vengeance justly vow’d,"
+    },
+    {
+      "bookNumber": 9,
+      "startLine": 986,
+      "endLine": 989,
+      "opener": "Like a fierce tiger pent amid the fold.",
+      "resolver": null,
+      "preview": "Like a fierce tiger pent amid the fold. Too late his blazing buckler they descry, And sparkling fires that shot from either eye, His mighty members, and his ample breast,"
+    },
+    {
+      "bookNumber": 10,
+      "startLine": 566,
+      "endLine": 575,
+      "opener": "As when, in summer, welcome winds arise,",
+      "resolver": "So Pallas’ troops their scatter’d strength unite,",
+      "preview": "As when, in summer, welcome winds arise, The watchful shepherd to the forest flies, And fires the midmost plants; contagion spreads, And catching flames infect the neighb’ring heads; Around the forest flies the furious blast, And all the le"
+    },
+    {
+      "bookNumber": 11,
+      "startLine": 520,
+      "endLine": 528,
+      "opener": "As strike the sense, and all replies are vain;",
+      "resolver": "So many valiant heroes bite the ground;",
+      "preview": "As strike the sense, and all replies are vain; Nor are your loyal subjects now to seek What common needs require, but fear to speak. Let him give leave of speech, that haughty man, Whose pride this unauspicious war began; For whose ambition"
+    },
+    {
+      "bookNumber": 11,
+      "startLine": 919,
+      "endLine": 929,
+      "opener": "As with an engine’s force, or lightning’s blast:",
+      "resolver": "So swelling surges, with a thund’ring roar,",
+      "preview": "As with an engine’s force, or lightning’s blast: He rolls along in blood, and breathes his last. The Latin squadrons take a sudden fright, And sling their shields behind, to save their backs in flight Spurring at speed to their own walls th"
+    },
+    {
+      "bookNumber": 11,
+      "startLine": 1297,
+      "endLine": 1300,
+      "opener": "Like a resistless flood, come rolling on:",
+      "resolver": null,
+      "preview": "Like a resistless flood, come rolling on: The cry goes off the plain, and thickens to the town.” Inflam’d with rage, (for so the Furies fire The Daunian’s breast, and so the Fates require,)"
+    },
+    {
+      "bookNumber": 12,
+      "startLine": 542,
+      "endLine": 546,
+      "opener": "As when loud Boreas, with his blust’ring train,",
+      "resolver": "So, where resistless Turnus takes his course,",
+      "preview": "As when loud Boreas, with his blust’ring train, Stoops from above, incumbent on the main; Where’er he flies, he drives the rack before, And rolls the billows on th’ Aegaean shore: So, where resistless Turnus takes his course,"
+    },
+    {
+      "bookNumber": 12,
+      "startLine": 667,
+      "endLine": 670,
+      "opener": "As when a whirlwind, rushing to the shore",
+      "resolver": null,
+      "preview": "As when a whirlwind, rushing to the shore From the mid ocean, drives the waves before; The painful hind with heavy heart foresees The flatted fields, and slaughter of the trees;"
+    },
+    {
+      "bookNumber": 12,
+      "startLine": 691,
+      "endLine": 695,
+      "opener": "As the black swallow near the palace plies;",
+      "resolver": "So drives the rapid goddess o’er the plains;",
+      "preview": "As the black swallow near the palace plies; O’er empty courts, and under arches, flies; Now hawks aloft, now skims along the flood, To furnish her loquacious nest with food: So drives the rapid goddess o’er the plains;"
+    },
+    {
+      "bookNumber": 12,
+      "startLine": 991,
+      "endLine": 999,
+      "opener": "As when a fragment, from a mountain torn",
+      "resolver": "So Turnus, hasting headlong to the town,",
+      "preview": "As when a fragment, from a mountain torn By raging tempests, or by torrents borne, Or sapp’d by time, or loosen’d from the roots— Prone thro’ the void the rocky ruin shoots, Rolling from crag to crag, from steep to steep; Down sink, at once"
+    },
+    {
+      "bookNumber": 12,
+      "startLine": 1042,
+      "endLine": 1052,
+      "opener": "As when two bulls for their fair female fight",
+      "resolver": "Such was the combat in the listed ground;",
+      "preview": "As when two bulls for their fair female fight In Sila’s shades, or on Taburnus’ height; With horns adverse they meet; the keeper flies; Mute stands the herd; the heifers roll their eyes, And wait th’ event; which victor they shall bear, And"
+    }
+  ],
+  "apostrophes": [
+    {
+      "id": "caieta-invocation",
+      "bookNumber": 7,
+      "lineNumber": 1,
+      "anchorText": "And thou, O matron of immortal fame,",
+      "title": "Apostrophe to Caieta",
+      "latinTag": "Tū quoque litoribus nostrīs…",
+      "latinLine": "Tū quoque lītoribus nostrīs, Aenēia nūtrīx, / aeternam moriēns fāmam, Caiēta, dedistī.",
+      "description": "The opening lines of Book VII. Virgil turns from his narrative to address Caieta, Aeneas's nurse, whose death has just given a name to the place on the Italian coast where she was buried. The gesture is typically Virgilian — the poet stepping forward to confer immortality on a character the plot would otherwise pass over."
+    },
+    {
+      "id": "tu-marcellus-eris",
+      "bookNumber": 6,
+      "lineNumber": 1221,
+      "anchorText": "A new Marcellus shall arise in thee!",
+      "title": "Tu Marcellus eris",
+      "latinTag": "Tū Marcellus eris",
+      "latinLine": "Heu, miserande puer, sī quā fāta aspera rumpās, / tū Marcellus eris.",
+      "description": "The most famous apostrophe in Latin poetry. In Elysium, Anchises shows Aeneas the shade of a beautiful youth who will not live — Marcellus, Augustus's heir, dead in 23 BC. Virgil, addressing the unborn dead boy directly, promises him immortality through the verse the reader is reading. Servius records that when Virgil recited this passage to Octavia (Marcellus's mother), she fainted."
+    },
+    {
+      "id": "fortunati-ambo",
+      "bookNumber": 9,
+      "lineNumber": 597,
+      "anchorText": "O happy friends! for, if my verse can give",
+      "title": "Fortunati ambo",
+      "latinTag": "Fortunātī ambō!",
+      "latinLine": "Fortūnātī ambō! Sī quid mea carmina possunt, / nūlla diēs umquam memorī vōs eximet aevō.",
+      "description": "After the night-raid of Nisus and Euryalus ends in their deaths, Virgil addresses the two dead youths directly: \"Happy both! If my songs have any power, no day will ever erase you from mindful time.\" The apostrophe is the poem consciously promising what it will deliver — and has delivered, for two thousand years."
+    },
+    {
+      "id": "lausus-apostrophe",
+      "bookNumber": 10,
+      "lineNumber": 1123,
+      "anchorText": "And here, heroic youth, ’tis here I must",
+      "title": "Apostrophe to Lausus",
+      "latinTag": "Hīc mortis dūrae cāsum tuaque optima facta…",
+      "latinLine": "Hīc mortis dūrae cāsum tuaque optima facta, / sī qua fidem tantō est operī lātūra vetustās, / nōn equidem nec tē, iuvenis memorande, silēbō.",
+      "description": "At the death of Lausus, son of Mezentius, Virgil breaks his own third-person narrative to promise the young warrior — killed defending his tyrant father — that he will not be silenced by the poet. The pattern is the same as Nisus-Euryalus: apostrophe as the moral judgment the narration refuses to make in its own voice."
+    },
+    {
+      "id": "two-gates-of-sleep",
+      "bookNumber": 6,
+      "lineNumber": 1236,
+      "anchorText": "Of polish’d ivory this, that of transparent horn:",
+      "title": "The Two Gates of Sleep",
+      "latinTag": "Sunt geminae Somnī portae",
+      "latinLine": "Sunt geminae Somnī portae, quārum altera fertur / cornea, quā vēris facilis datur exitus umbrīs…",
+      "description": "Book VI ends with Aeneas and the Sibyl leaving the underworld through the Gate of Ivory — the gate, Virgil says, through which false dreams are sent up to the living. Scholars have debated for two thousand years why Virgil sends his hero out through the gate of falsehood. Servius was already puzzled in the fourth century. The annotation elsewhere in this apparatus lays out the honest state of the debate without resolving it."
+    }
+  ],
+  "counts": {
+    "epithets": {
+      "total": 34,
+      "distinctBookCoverage": {
+        "pius Aeneas": 8,
+        "pater Aeneas": 0,
+        "infelix Dido": 5,
+        "saevae memorem Iunonis ob iram": 3,
+        "alma Venus": 4,
+        "fidus Achates": 0
+      }
+    },
+    "similes": 22,
+    "apostrophes": 5
+  }
+}
