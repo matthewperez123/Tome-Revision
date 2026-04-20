@@ -1,9 +1,27 @@
-import { createClient } from "@supabase/supabase-js"
+import { createClient, type SupabaseClient } from "@supabase/supabase-js"
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey)
+// Cache the browser client on globalThis so HMR re-evaluation of this
+// module does not create additional GoTrueClient instances per tab.
+// Next.js dev server re-evaluates this file on every edit; without the
+// guard we end up with duplicate auth singletons fighting over the same
+// localStorage key.
+const GLOBAL_KEY = "__tomeSupabaseClient" as const
+type GlobalWithSupabase = typeof globalThis & {
+  [GLOBAL_KEY]?: SupabaseClient
+}
+
+function getSupabaseClient(): SupabaseClient {
+  const g = globalThis as GlobalWithSupabase
+  if (!g[GLOBAL_KEY]) {
+    g[GLOBAL_KEY] = createClient(supabaseUrl, supabaseAnonKey)
+  }
+  return g[GLOBAL_KEY]
+}
+
+export const supabase = getSupabaseClient()
 
 // Admin client for server-side operations (bypasses RLS)
 export function createAdminClient() {
