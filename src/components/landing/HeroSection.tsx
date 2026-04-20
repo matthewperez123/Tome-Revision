@@ -13,7 +13,7 @@ const HERO_VARIANTS = {
     attribution: "Michelangelo, The Creation of Adam, c.1512",
     headline: "Read the books that shaped the world.",
     subcopy:
-      "Explore the canon of world literature with an AI scholar at your side. Annotations, quizzes, and progress tracking \u2014 all in your browser.",
+      "Explore the canon of world literature with Virgil, your scholar in the margin. Annotations, Trials, and your own Library \u2014 all in your browser.",
   },
   teacher: {
     src: "/paintings/school-of-athens.jpg",
@@ -21,7 +21,7 @@ const HERO_VARIANTS = {
     attribution: "Raphael, The School of Athens, c.1511",
     headline: "A scholar for every student",
     subcopy:
-      "Bring the canon of world literature into your classroom. Tome handles the reading, the annotations, the quizzes, and the grading \u2014 so you can focus on the conversation.",
+      "Bring the canon of world literature into your classroom. Tome handles the reading, the annotations, the Trials, and the grading \u2014 so you can focus on the conversation.",
   },
 } as const
 

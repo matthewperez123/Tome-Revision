@@ -39,7 +39,7 @@ export function ReadingInsightsShowcase() {
 
   if (isReduced) {
     return (
-      <TeacherShowcaseShell heading="Know your reading life" subcopy="Time on the page, books finished, streaks kept, Seals earned — your reading becomes visible." layout="mockup-right" bgClass="bg-muted">
+      <TeacherShowcaseShell heading="Know your reading life" subcopy="Time on the page, books finished, Flames kept, Seals earned — your reading becomes visible." layout="mockup-right" bgClass="bg-muted">
         <div className="bg-card rounded-xl border border-border p-5">
           <div className="flex items-end gap-1.5 h-16 mb-3">
             {DAYS.map(d => (
@@ -58,7 +58,7 @@ export function ReadingInsightsShowcase() {
   }
 
   return (
-    <TeacherShowcaseShell heading="Know your reading life" subcopy="Time on the page, books finished, streaks kept, Seals earned — your reading becomes visible." layout="mockup-right" bgClass="bg-muted">
+    <TeacherShowcaseShell heading="Know your reading life" subcopy="Time on the page, books finished, Flames kept, Seals earned — your reading becomes visible." layout="mockup-right" bgClass="bg-muted">
       <div ref={containerRef} className="bg-card rounded-xl border border-border p-5 min-h-[260px]" style={{ willChange: "transform" }}>
         <p className="text-[10px] text-muted-foreground mb-3 uppercase tracking-wider font-medium">This Week</p>
 
@@ -77,7 +77,7 @@ export function ReadingInsightsShowcase() {
           <div className="flex items-center gap-1.5">
             <Flame className="size-4 text-orange-500" />
             <motion.span className="text-lg font-bold" animate={{ opacity: showStreak ? 1 : 0 }}>14</motion.span>
-            <span className="text-[10px] text-muted-foreground">day streak</span>
+            <span className="text-[10px] text-muted-foreground">day Flame</span>
           </div>
           <div className="flex items-center gap-1.5 ml-auto">
             <span className="text-lg font-bold">233</span>

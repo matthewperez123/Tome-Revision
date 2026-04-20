@@ -12,7 +12,7 @@ export function CarouselSection() {
     <section className="py-16 overflow-hidden">
       <div className="text-center mb-8 px-6">
         <p className="font-[var(--font-display)] text-sm text-muted-foreground tracking-[0.15em] uppercase">
-          {BOOKS.length.toLocaleString()} books from 16 literary traditions
+          {BOOKS.length.toLocaleString()} books from 36 literary traditions
         </p>
       </div>
       <Marquee pauseOnHover className="[--duration:60s] [--gap:0.75rem] mb-3">

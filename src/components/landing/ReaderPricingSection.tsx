@@ -26,7 +26,7 @@ export function ReaderPricingSection() {
               features={[
                 "Access to 20 foundational books",
                 "Virgil annotations in the reader",
-                "Daily Flame streaks",
+                "Daily Flame and Seal tracking",
                 "Basic Trials after each chapter",
                 "Personal library and progress tracking",
               ]}
@@ -41,7 +41,7 @@ export function ReaderPricingSection() {
               description="Unlimited access to the full canon and Virgil's deeper scholarship."
               features={[
                 "All 256 books across 36 literary traditions",
-                "Unlimited Virgil AI tutor conversations",
+                "Unlimited Virgil conversations",
                 "Advanced Trials and Seals",
                 "Custom reading lists and collections",
                 "Offline reading",

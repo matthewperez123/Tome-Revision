@@ -71,7 +71,7 @@ function FlameCounter({ target }: { target: number }) {
       >
         {target}
       </motion.span>
-      <span className="text-xs text-muted-foreground">7-day streak</span>
+      <span className="text-xs text-muted-foreground">7-day Flame</span>
     </div>
   )
 }
@@ -143,7 +143,7 @@ export function StudentDashboardShowcase() {
           <div className="flex items-center gap-3">
             <Flame className="size-6 text-orange-500" />
             <span className="text-2xl font-bold text-foreground">7</span>
-            <span className="text-xs text-muted-foreground">7-day streak</span>
+            <span className="text-xs text-muted-foreground">7-day Flame</span>
           </div>
         </div>
       </TeacherShowcaseShell>

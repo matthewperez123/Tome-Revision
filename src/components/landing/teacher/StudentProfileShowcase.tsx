@@ -40,7 +40,7 @@ export function StudentProfileShowcase() {
           </div>
           <div className="grid grid-cols-3 gap-2">
             <div className="rounded-lg border p-2 text-center"><p className="text-lg font-bold">2,340</p><p className="text-[8px] text-muted-foreground">Wisdom</p></div>
-            <div className="rounded-lg border p-2 text-center"><p className="text-lg font-bold">14</p><p className="text-[8px] text-muted-foreground">Streak</p></div>
+            <div className="rounded-lg border p-2 text-center"><p className="text-lg font-bold">14</p><p className="text-[8px] text-muted-foreground">Flame</p></div>
             <div className="rounded-lg border p-2 text-center"><p className="text-lg font-bold">5</p><p className="text-[8px] text-muted-foreground">Seals</p></div>
           </div>
         </div>
@@ -63,7 +63,7 @@ export function StudentProfileShowcase() {
           <motion.div animate={{ opacity: showStats ? 1 : 0, y: showStats ? 0 : 8 }} transition={{ duration: 0.4, ease: EASE }} className="grid grid-cols-3 gap-2 mb-4" style={{ willChange: "transform, opacity" }}>
             {[
               { icon: <Brain className="size-3 text-indigo-500" />, value: "2,340", label: "Wisdom" },
-              { icon: <Flame className="size-3 text-orange-500" />, value: "14", label: "Day streak" },
+              { icon: <Flame className="size-3 text-orange-500" />, value: "14", label: "Day Flame" },
               { icon: <Trophy className="size-3 text-amber-500" />, value: "5", label: "Seals" },
             ].map((s, i) => (
               <motion.div key={s.label} initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: showStats ? 1 : 0, scale: showStats ? 1 : 0.9 }} transition={{ delay: i * 0.1, duration: 0.3, ease: EASE }} className="rounded-lg border p-2.5 text-center" style={{ willChange: "transform, opacity" }}>

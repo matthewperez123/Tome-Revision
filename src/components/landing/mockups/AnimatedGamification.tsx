@@ -26,7 +26,7 @@ export function AnimatedGamification() {
       <div className="bg-card rounded-xl border border-border p-6">
         <div className="grid grid-cols-2 gap-4">
           <StatCard icon={<Trophy className="size-5 text-primary" />} label="Wisdom" value="450" />
-          <StatCard icon={<Flame className="size-5 text-primary" />} label="Streak" value="14 days" />
+          <StatCard icon={<Flame className="size-5 text-primary" />} label="Flame" value="14 days" />
           <StatCard icon={<Shield className="size-5 text-primary" />} label="Seals" value="3 / 21" />
           <StatCard icon={<Trophy className="size-5 text-primary" />} label="Level" value="Scholar 7" />
         </div>
@@ -81,7 +81,7 @@ export function AnimatedGamification() {
             </motion.div>
             <div>
               <p className="text-2xl font-bold text-foreground font-[var(--font-display)]">14 days</p>
-              <p className="text-xs text-muted-foreground">Reading streak</p>
+              <p className="text-xs text-muted-foreground">Flame</p>
             </div>
           </motion.div>
         )}

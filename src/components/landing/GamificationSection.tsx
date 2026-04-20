@@ -12,7 +12,7 @@ export function GamificationSection() {
             Every page earns its reward.
           </h2>
           <p className="text-sm text-muted-foreground leading-relaxed max-w-xl mx-auto">
-            Wisdom replaces XP. Flames replace streaks. Seals replace badges. The language is classical, but the psychology is Duolingo.
+            Earn Wisdom for every chapter you master. Keep your Flame alive with daily reading. Collect Seals for the milestones that matter. The language is classical; the motivation is real.
           </p>
         </BlurFade>
       </div>
