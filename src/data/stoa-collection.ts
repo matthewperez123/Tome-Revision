@@ -2947,7 +2947,7 @@ export const STOA_COLLECTION: StoaEntry[] = [
     painter: "Gustave Doré",
     year: 1877,
     sourceInstitution: "Hachette (1877 Orlando Furioso illustrated edition)",
-    sourceUrl: "",
+    sourceUrl: "https://en.wikipedia.org/wiki/Gustave_Dor%C3%A9",
     imageUrl: "/paintings/orlando-madness-dore.jpg",
     publicDomainStatus: "PD-Old",
     curationTier: 1,
