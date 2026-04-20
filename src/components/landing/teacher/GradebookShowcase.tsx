@@ -5,11 +5,11 @@ import { useAnimationLoop } from "../useAnimationLoop"
 import { TeacherShowcaseShell } from "./TeacherShowcaseShell"
 
 const PHASES = [
-  { name: "idle", duration: 2000 },
-  { name: "fillRows", duration: 3000 },
-  { name: "hoverRow", duration: 2000 },
-  { name: "expand", duration: 3500 },
-  { name: "reset", duration: 600 },
+  { name: "idle", duration: 600 },
+  { name: "fillRows", duration: 900 },
+  { name: "hoverRow", duration: 600 },
+  { name: "expand", duration: 1050 },
+  { name: "reset", duration: 200 },
 ]
 
 const STUDENTS = [

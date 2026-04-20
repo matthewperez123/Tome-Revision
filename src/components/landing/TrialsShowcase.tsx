@@ -7,10 +7,10 @@ import { BlurFade } from "@/components/ui/blur-fade"
 import { useAnimationLoop } from "./useAnimationLoop"
 
 const PHASES = [
-  { name: "question", duration: 3500 },
-  { name: "select", duration: 2500 },
-  { name: "correct", duration: 3500 },
-  { name: "wisdom", duration: 3000 },
+  { name: "question", duration: 1400 },
+  { name: "select", duration: 1000 },
+  { name: "correct", duration: 1400 },
+  { name: "wisdom", duration: 1200 },
 ]
 
 const QUESTION = {

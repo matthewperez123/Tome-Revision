@@ -6,11 +6,11 @@ import { useAnimationLoop } from "../useAnimationLoop"
 import { TeacherShowcaseShell } from "./TeacherShowcaseShell"
 
 const PHASES = [
-  { name: "idle", duration: 600 },
-  { name: "profile", duration: 1200 },
-  { name: "stats", duration: 1800 },
-  { name: "tabs", duration: 2200 },
-  { name: "reset", duration: 500 },
+  { name: "idle", duration: 300 },
+  { name: "profile", duration: 650 },
+  { name: "stats", duration: 950 },
+  { name: "tabs", duration: 1200 },
+  { name: "reset", duration: 250 },
 ]
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1]
@@ -18,7 +18,7 @@ const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1]
 const TRIALS = [
   { date: "Apr 8", book: "The Odyssey", score: 95, diff: "Scholar" },
   { date: "Apr 5", book: "The Odyssey", score: 90, diff: "Scholar" },
-  { date: "Mar 28", book: "The Odyssey", score: 85, diff: "Foundational" },
+  { date: "Mar 28", book: "The Odyssey", score: 85, diff: "Apprentice" },
 ]
 
 export function StudentProfileShowcase() {

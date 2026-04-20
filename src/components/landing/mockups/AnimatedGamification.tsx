@@ -6,10 +6,10 @@ import { cn } from "@/lib/utils"
 import { useAnimationLoop } from "../useAnimationLoop"
 
 const PHASES = [
-  { name: "xpFill", duration: 4000 },
-  { name: "streak", duration: 3500 },
-  { name: "seal", duration: 3500 },
-  { name: "leaderboard", duration: 3500 },
+  { name: "xpFill", duration: 1400 },
+  { name: "streak", duration: 1200 },
+  { name: "seal", duration: 1200 },
+  { name: "leaderboard", duration: 1200 },
 ]
 
 const LEADERBOARD = [

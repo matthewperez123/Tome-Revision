@@ -5,13 +5,13 @@ import { useAnimationLoop } from "../useAnimationLoop"
 import { TeacherShowcaseShell } from "./TeacherShowcaseShell"
 
 const PHASES = [
-  { name: "idle", duration: 2000 },
-  { name: "highlight", duration: 2500 },
-  { name: "generate", duration: 2000 },
-  { name: "question1", duration: 2000 },
-  { name: "question2", duration: 2000 },
-  { name: "question3", duration: 2500 },
-  { name: "reset", duration: 600 },
+  { name: "idle", duration: 500 },
+  { name: "highlight", duration: 600 },
+  { name: "generate", duration: 500 },
+  { name: "question1", duration: 500 },
+  { name: "question2", duration: 500 },
+  { name: "question3", duration: 600 },
+  { name: "reset", duration: 200 },
 ]
 
 const PASSAGE_LINES = [

@@ -5,11 +5,11 @@ import { useAnimationLoop } from "./useAnimationLoop"
 import { TeacherShowcaseShell } from "./teacher/TeacherShowcaseShell"
 
 const PHASES = [
-  { name: "idle", duration: 800 },
-  { name: "profile", duration: 1500 },
-  { name: "books", duration: 1800 },
-  { name: "influences", duration: 2200 },
-  { name: "reset", duration: 500 },
+  { name: "idle", duration: 600 },
+  { name: "profile", duration: 1100 },
+  { name: "books", duration: 1300 },
+  { name: "influences", duration: 1600 },
+  { name: "reset", duration: 350 },
 ]
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1]

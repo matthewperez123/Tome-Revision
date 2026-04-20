@@ -75,11 +75,11 @@ const EUROPE_VIEW = { center: [15, 54] as [number, number], scale: 700 }
 
 // Animation: world → zoom Europe → select Greece → show authors → reset
 const PHASES = [
-  { name: "world", duration: 4000 },
-  { name: "zoomEurope", duration: 3500 },
-  { name: "selectGreece", duration: 3500 },
-  { name: "showAuthors", duration: 5000 },
-  { name: "reset", duration: 600 },
+  { name: "world", duration: 1200 },
+  { name: "zoomEurope", duration: 1050 },
+  { name: "selectGreece", duration: 1050 },
+  { name: "showAuthors", duration: 1500 },
+  { name: "reset", duration: 200 },
 ]
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1]

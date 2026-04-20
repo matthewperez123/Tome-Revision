@@ -80,7 +80,7 @@ export function SemesterPlanShowcase() {
             <p className="text-[9px] font-bold mb-1">Week 1 — Books 1–4</p>
             <div className="space-y-1">
               <div className="flex items-center gap-1.5 text-[8px]"><span className="size-1.5 rounded-full bg-stone-400" />Reading: Books 1–4 (Telemachy)</div>
-              <div className="flex items-center gap-1.5 text-[8px]"><span className="size-1.5 rounded-full bg-indigo-500" />Trial: Books 1–4 (Foundational)</div>
+              <div className="flex items-center gap-1.5 text-[8px]"><span className="size-1.5 rounded-full bg-indigo-500" />Trial: Books 1–4 (Apprentice)</div>
               <div className="flex items-center gap-1.5 text-[8px]"><span className="size-1.5 rounded-full bg-green-500" />Discussion: Xenia in Books 1–4</div>
             </div>
           </motion.div>

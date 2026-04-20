@@ -5,11 +5,11 @@ import { useAnimationLoop } from "../useAnimationLoop"
 import { TeacherShowcaseShell } from "./TeacherShowcaseShell"
 
 const PHASES = [
-  { name: "idle", duration: 2000 },
-  { name: "tapGC", duration: 2000 },
-  { name: "loading", duration: 2500 },
-  { name: "imported", duration: 3500 },
-  { name: "reset", duration: 600 },
+  { name: "idle", duration: 650 },
+  { name: "tapGC", duration: 650 },
+  { name: "loading", duration: 800 },
+  { name: "imported", duration: 1100 },
+  { name: "reset", duration: 200 },
 ]
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1]
