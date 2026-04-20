@@ -94,7 +94,7 @@ const SAMPLE_QUESTIONS: Omit<Question, "quiz_id">[] = [
   { id: "q4", type: "multiple_choice", prompt: "How many Bennet sisters are there?", options: ["Three", "Four", "Five", "Six"], correct_answer: "Five", explanation: "Jane, Elizabeth, Mary, Kitty, and Lydia.", order: 4 },
   { id: "q5", type: "true_false", prompt: "Mr. Wickham is a trustworthy character.", options: ["True", "False"], correct_answer: "False", explanation: "Wickham is revealed to be deceptive and unscrupulous.", order: 5 },
   { id: "q6", type: "multiple_choice", prompt: "Where does Mr. Darcy's estate, Pemberley, reside?", options: ["Kent", "Hertfordshire", "Derbyshire", "London"], correct_answer: "Derbyshire", explanation: "Pemberley is in Derbyshire.", order: 6 },
-  { id: "q7", type: "short_answer", prompt: "What is the name of the clergyman who proposes to Elizabeth?", options: [], correct_answer: "Collins|Mr. Collins|William Collins", explanation: "Mr. Collins is the obsequious clergyman.", order: 7 },
+  { id: "q7", type: "fill_blank", prompt: "What is the name of the clergyman who proposes to Elizabeth?", options: [], correct_answer: "Collins", explanation: "Mr. Collins is the obsequious clergyman.", order: 7, acceptedVariants: ["Mr. Collins", "William Collins"] },
   { id: "q8", type: "multiple_choice", prompt: "Who does Jane Bennet eventually marry?", options: ["Mr. Darcy", "Mr. Bingley", "Mr. Wickham", "Colonel Fitzwilliam"], correct_answer: "Mr. Bingley", explanation: "Jane and Bingley's romance parallels Elizabeth and Darcy's.", order: 8 },
   { id: "q9", type: "true_false", prompt: "Lady Catherine approves of Darcy's relationship with Elizabeth.", options: ["True", "False"], correct_answer: "False", explanation: "Lady Catherine strongly opposes the match.", order: 9 },
   { id: "q10", type: "fill_blank", prompt: "Mr. Darcy's first name is _____.", options: [], correct_answer: "Fitzwilliam", explanation: "His full name is Fitzwilliam Darcy.", order: 10 },
@@ -156,7 +156,7 @@ export default function QuizPage() {
     function handleKey(e: KeyboardEvent) {
       if (!state || state.status !== "active" || showExplanation) return
       const question = state.questions[state.currentIndex]
-      if (question.type === "fill_blank" || question.type === "short_answer") return
+      if (question.type === "fill_blank") return
 
       const options = question.options.length > 0 ? question.options : ["True", "False"]
       const num = parseInt(e.key)
@@ -178,9 +178,6 @@ export default function QuizPage() {
       const isCorrect = (() => {
         const c = question.correct_answer.toLowerCase().trim()
         const a = answer.toLowerCase().trim()
-        if (question.type === "short_answer") {
-          return c.split(/[,;|]/).some((kw) => a.includes(kw.trim()))
-        }
         return a === c
       })()
 
@@ -433,7 +430,7 @@ export default function QuizPage() {
             </TextAnimate>
 
             <div className="mt-6">
-              {question.type === "fill_blank" || question.type === "short_answer" ? (
+              {question.type === "fill_blank" ? (
                 <FreeTextInput onSubmit={handleAnswer} disabled={showExplanation} result={currentResult} />
               ) : (
                 <div className="grid grid-cols-1 gap-2">
