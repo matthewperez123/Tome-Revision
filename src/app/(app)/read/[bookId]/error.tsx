@@ -37,11 +37,12 @@ export default function ReaderError({
         <Button onClick={() => reset()} variant="default">
           <RotateCcw className="mr-2 size-4" aria-hidden="true" /> Try again
         </Button>
-        <Button asChild variant="ghost">
-          <Link href="/library">
-            <Library className="mr-2 size-4" aria-hidden="true" /> Open library
-          </Link>
-        </Button>
+        <Link
+          href="/library"
+          className="inline-flex items-center gap-2 rounded-md px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--tome-accent)]"
+        >
+          <Library className="size-4" aria-hidden="true" /> Open library
+        </Link>
       </div>
     </div>
   )

@@ -38,11 +38,12 @@ export default function AppError({
         <Button onClick={() => reset()} variant="default">
           <RotateCcw className="mr-2 size-4" aria-hidden="true" /> Try again
         </Button>
-        <Button asChild variant="ghost">
-          <Link href="/dashboard">
-            <Home className="mr-2 size-4" aria-hidden="true" /> Back to dashboard
-          </Link>
-        </Button>
+        <Link
+          href="/dashboard"
+          className="inline-flex items-center gap-2 rounded-md px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--tome-accent)]"
+        >
+          <Home className="size-4" aria-hidden="true" /> Back to dashboard
+        </Link>
       </div>
     </div>
   )
