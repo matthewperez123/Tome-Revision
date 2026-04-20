@@ -81,7 +81,7 @@ export default function ClubDetailPage() {
       parentId: null,
       anchorQuote: null,
       anchorUnit: null,
-      body: "**Virgil's Response** 🪶\n\nGreat question! Let me offer some context from the broader literary tradition. The themes you're discussing connect to fundamental questions about human nature that writers have explored for millennia. Consider how this passage reflects the cultural values of its time while also speaking to universal experiences.\n\nI'd encourage everyone to look closely at the specific language choices the author makes here — they reveal much about the intended meaning.",
+      body: "**Virgil's Response**\n\nGreat question! Let me offer some context from the broader literary tradition. The themes you're discussing connect to fundamental questions about human nature that writers have explored for millennia. Consider how this passage reflects the cultural values of its time while also speaking to universal experiences.\n\nI'd encourage everyone to look closely at the specific language choices the author makes here — they reveal much about the intended meaning.",
       createdAt: new Date().toISOString(),
       isPinned: true,
       isVirgil: true,

@@ -521,19 +521,19 @@ export const BOOKS: TomeBook[] = [
     source: "standard-ebooks",
     standardEbooksUrl: "https://standardebooks.org/ebooks/geoffrey-chaucer/the-canterbury-tales",
     // ── Ingestion status: Phase 1 foundation (2026-04-19) ────────────────
-    //   ✅ Pilgrim palette and roster (22 pilgrims + Host + Chaucer-pilgrim)
+    //   [x] Pilgrim palette and roster (22 pilgrims + Host + Chaucer-pilgrim)
     //      at src/data/canterbury-tales/pilgrims.ts
-    //   ✅ Ellesmere fragment structure (10 fragments, dramatic-link notes)
+    //   [x] Ellesmere fragment structure (10 fragments, dramatic-link notes)
     //      at src/data/canterbury-tales/fragments.ts
-    //   ✅ Per-tale metadata (verse form, argument, content flags)
+    //   [x] Per-tale metadata (verse form, argument, content flags)
     //      at src/data/canterbury-tales/tales.ts
-    //   ✅ Starter Middle English glossary (~80 entries)
+    //   [x] Starter Middle English glossary (~80 entries)
     //      at src/lib/virgil/canterbury-tales-glosses.ts
-    //   ✅ Starter annotations (GP opening, Knight's verray-parfit line,
+    //   [x] Starter annotations (GP opening, Knight's verray-parfit line,
     //      Prioress's brooch, Wife of Bath entry, Pardoner's sexual coding,
     //      Clerk/Griselda cross-reference to Decameron X.10, Sir Thopas
     //      parody, Retractions) at src/lib/virgil/canterbury-tales-annotations.ts
-    //   ✅ Reader enhancement + annotation overlay components wired
+    //   [x] Reader enhancement + annotation overlay components wired
     //      into src/app/(app)/read/[bookId]/page.tsx
     //   ⏳ FacingGlossBlock two-column UI (Phase 2 — the Chaucer-specific
     //      accessibility innovation; Phase 1 uses the legacy dotted-underline)
@@ -5598,30 +5598,30 @@ export const BOOKS: TomeBook[] = [
     standardEbooksUrl: "https://standardebooks.org/ebooks/edmund-spenser/the-faerie-queene",
     // ── Ingestion status: draft_complete (Faerie Queene ingestion spec, Part 9) ─
     // Full 15-item verification gate status:
-    //   ✅  1. All 6 books + Mutabilitie load; four-level anchor (book/canto/stanza/line) via query
-    //   ✅  2. Spenserian-stanza detection (ABABBCBCC + alexandrine) + alexandrine-highlight toggle
-    //   ✅  3. Letter to Ralegh renders as front matter with 8-annotation Opus cluster
+    //   [x]  1. All 6 books + Mutabilitie load; four-level anchor (book/canto/stanza/line) via query
+    //   [x]  2. Spenserian-stanza detection (ABABBCBCC + alexandrine) + alexandrine-highlight toggle
+    //   [x]  3. Letter to Ralegh renders as front matter with 8-annotation Opus cluster
     //   ⏳  4. CantoArgumentBlock — SE strips Spenser's 4-line verse Arguments; needs
     //         Wikisource supplementary sourcing + reader-component rendering
     //   ⏳  5. Speaker-palette application — palette data complete in speakers.ts
     //         (39 speakers, 10 groups, BRITOMART_BRADAMANTE_CONTINUITY exported); a
     //         FaerieQueeneSpeakerPalette reader component remains to wire
-    //   ✅  6. Britomart ← Bradamante continuity documented and cross-referenced in
+    //   [x]  6. Britomart ← Bradamante continuity documented and cross-referenced in
     //         Book III canto ii annotations (fq-3-2-bradamante-continuity)
     //   ⏳  7. AllegoryNote drawer UI — data + seeds in allegory-notes.ts (4 seeds
     //         on Book I canto i); reader-component drawer pending
-    //   ✅  8. Ten Opus clusters render (Letter + 9 cantos = 124 annotations total)
-    //   ✅  9. Climactic-canto chips display in FaerieQueeneEnhancements header
-    //   ✅ 10. Cross-reference cluster → Orlando Furioso (Bradamante, Alcina→Acrasia,
+    //   [x]  8. Ten Opus clusters render (Letter + 9 cantos = 124 annotations total)
+    //   [x]  9. Climactic-canto chips display in FaerieQueeneEnhancements header
+    //   [x] 10. Cross-reference cluster → Orlando Furioso (Bradamante, Alcina→Acrasia,
     //         ottava rima ancestry — wired in Opus annotations)
-    //   ✅ 11. Cross-reference cluster → Paradise Lost (Bower→Eden, Mammon→Mammon,
+    //   [x] 11. Cross-reference cluster → Paradise Lost (Bower→Eden, Mammon→Mammon,
     //         Archimago→Satan, Areopagitica acknowledgment — wired)
     //   ⏳ 12. Glosses tappable — Part 5 glossary not yet generated (targeting ~3,500
     //         entries at 45–65 per canto; requires generative pipeline)
     //   ⏳ 13. Archaism-cluster marker — depends on Part 5 glossary
-    //   ✅ 14. Book I Trial functional (ch-13, 9 questions); Master Trial scaffolds
+    //   [x] 14. Book I Trial functional (ch-13, 9 questions); Master Trial scaffolds
     //         at ch-76; Full Epic Succession scaffolds at ch-78
-    //   ✅ 15. Cover: Armada Portrait (1588) wired via coverPaintingId on front-matter
+    //   [x] 15. Cover: Armada Portrait (1588) wired via coverPaintingId on front-matter
     //         BookPart, PD-Old Stoa entry paired 1:1 with this book (audit PASSED),
     //         jewel-tone coverColors match portrait; chronological placement between
     //         Orlando Furioso (1516) and Paradise Lost (1667) handled by `year: 1590`

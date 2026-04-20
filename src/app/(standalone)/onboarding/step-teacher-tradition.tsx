@@ -1,20 +1,31 @@
 "use client"
 
-import { useState } from "react"
+import { useState, type ComponentType } from "react"
 import { motion } from "framer-motion"
+import {
+  Landmark,
+  Crown,
+  Flower2,
+  Star,
+  Flag,
+  BookOpen,
+  Globe,
+  Brain,
+  type LucideProps,
+} from "lucide-react"
 import { springs } from "@/lib/design-tokens"
 import { Button } from "@/components/ui/button"
 import { saveOnboardingData } from "@/lib/onboarding"
 
-const traditions = [
-  { id: "ancient-greek", label: "Ancient Greek", emoji: "🏛️" },
-  { id: "latin", label: "Latin / Roman", emoji: "🦅" },
-  { id: "english", label: "English", emoji: "🌹" },
-  { id: "american", label: "American", emoji: "🗽" },
-  { id: "french", label: "French", emoji: "🇫🇷" },
-  { id: "russian", label: "Russian", emoji: "📖" },
-  { id: "world", label: "World Literature", emoji: "🌍" },
-  { id: "philosophy", label: "Philosophy", emoji: "🤔" },
+const traditions: { id: string; label: string; Icon: ComponentType<LucideProps> }[] = [
+  { id: "ancient-greek", label: "Ancient Greek", Icon: Landmark },
+  { id: "latin", label: "Latin / Roman", Icon: Crown },
+  { id: "english", label: "English", Icon: Flower2 },
+  { id: "american", label: "American", Icon: Star },
+  { id: "french", label: "French", Icon: Flag },
+  { id: "russian", label: "Russian", Icon: BookOpen },
+  { id: "world", label: "World Literature", Icon: Globe },
+  { id: "philosophy", label: "Philosophy", Icon: Brain },
 ]
 
 export function StepTeacherTradition({ onNext, onBack }: { onNext: () => void; onBack: () => void }) {
@@ -58,7 +69,7 @@ export function StepTeacherTradition({ onNext, onBack }: { onNext: () => void; o
                   : "border-border text-muted-foreground hover:border-foreground/20"
               }`}
             >
-              <span className="text-base">{t.emoji}</span>
+              <t.Icon className="size-4 shrink-0" aria-hidden="true" />
               {t.label}
             </motion.button>
           )
