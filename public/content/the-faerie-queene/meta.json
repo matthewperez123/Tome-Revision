@@ -2,9 +2,9 @@
   "bookId": "the-faerie-queene",
   "title": "The Faerie Queene",
   "author": "Edmund Spenser",
-  "chapterCount": 9,
-  "totalWordCount": 276264,
-  "totalMinutes": 1105,
+  "chapterCount": 76,
+  "totalWordCount": 276641,
+  "totalMinutes": 1114,
   "chapters": [
     {
       "index": 0,
@@ -20,45 +20,669 @@
     },
     {
       "index": 2,
-      "title": "Book I: The Legend of the Knight of the Red Cross, or of Holiness",
-      "wordCount": 44485,
-      "estimatedMinutes": 178
+      "title": "Book I \u00b7 Canto I",
+      "wordCount": 4284,
+      "estimatedMinutes": 17,
+      "partId": "book-i",
+      "bookNumber": 1,
+      "cantoNumber": 1
     },
     {
       "index": 3,
-      "title": "Book II: The Legend of Sir Guyon, or of Temperance",
-      "wordCount": 48310,
-      "estimatedMinutes": 193
+      "title": "Book I \u00b7 Canto II",
+      "wordCount": 3266,
+      "estimatedMinutes": 13,
+      "partId": "book-i",
+      "bookNumber": 1,
+      "cantoNumber": 2
     },
     {
       "index": 4,
-      "title": "Book III: The Legend of Britomartis, or of Chastity",
-      "wordCount": 47995,
-      "estimatedMinutes": 192
+      "title": "Book I \u00b7 Canto III",
+      "wordCount": 3210,
+      "estimatedMinutes": 13,
+      "partId": "book-i",
+      "bookNumber": 1,
+      "cantoNumber": 3
     },
     {
       "index": 5,
-      "title": "Book IV: The Legend of Cambel and Triamond, or of Friendship",
-      "wordCount": 42843,
-      "estimatedMinutes": 171
+      "title": "Book I \u00b7 Canto IV",
+      "wordCount": 3628,
+      "estimatedMinutes": 15,
+      "partId": "book-i",
+      "bookNumber": 1,
+      "cantoNumber": 4
     },
     {
       "index": 6,
-      "title": "Book V: The Legend of Artegall, or of Justice",
-      "wordCount": 41676,
-      "estimatedMinutes": 167
+      "title": "Book I \u00b7 Canto V",
+      "wordCount": 3704,
+      "estimatedMinutes": 15,
+      "partId": "book-i",
+      "bookNumber": 1,
+      "cantoNumber": 5
     },
     {
       "index": 7,
-      "title": "Book VI: The Legend of Calidore, or of Courtesy",
-      "wordCount": 40672,
-      "estimatedMinutes": 163
+      "title": "Book I \u00b7 Canto VI",
+      "wordCount": 3421,
+      "estimatedMinutes": 14,
+      "partId": "book-i",
+      "bookNumber": 1,
+      "cantoNumber": 6
     },
     {
       "index": 8,
-      "title": "Mutability: The Legend of Constancy",
-      "wordCount": 8446,
-      "estimatedMinutes": 34
+      "title": "Book I \u00b7 Canto VII",
+      "wordCount": 3691,
+      "estimatedMinutes": 15,
+      "partId": "book-i",
+      "bookNumber": 1,
+      "cantoNumber": 7
+    },
+    {
+      "index": 9,
+      "title": "Book I \u00b7 Canto VIII",
+      "wordCount": 3600,
+      "estimatedMinutes": 14,
+      "partId": "book-i",
+      "bookNumber": 1,
+      "cantoNumber": 8
+    },
+    {
+      "index": 10,
+      "title": "Book I \u00b7 Canto IX",
+      "wordCount": 3927,
+      "estimatedMinutes": 16,
+      "partId": "book-i",
+      "bookNumber": 1,
+      "cantoNumber": 9
+    },
+    {
+      "index": 11,
+      "title": "Book I \u00b7 Canto X",
+      "wordCount": 4890,
+      "estimatedMinutes": 20,
+      "partId": "book-i",
+      "bookNumber": 1,
+      "cantoNumber": 10
+    },
+    {
+      "index": 12,
+      "title": "Book I \u00b7 Canto XI",
+      "wordCount": 3953,
+      "estimatedMinutes": 16,
+      "partId": "book-i",
+      "bookNumber": 1,
+      "cantoNumber": 11
+    },
+    {
+      "index": 13,
+      "title": "Book I \u00b7 Canto XII",
+      "wordCount": 2969,
+      "estimatedMinutes": 12,
+      "partId": "book-i",
+      "bookNumber": 1,
+      "cantoNumber": 12
+    },
+    {
+      "index": 14,
+      "title": "Book II \u00b7 Canto I",
+      "wordCount": 4751,
+      "estimatedMinutes": 19,
+      "partId": "book-ii",
+      "bookNumber": 2,
+      "cantoNumber": 1
+    },
+    {
+      "index": 15,
+      "title": "Book II \u00b7 Canto II",
+      "wordCount": 3242,
+      "estimatedMinutes": 13,
+      "partId": "book-ii",
+      "bookNumber": 2,
+      "cantoNumber": 2
+    },
+    {
+      "index": 16,
+      "title": "Book II \u00b7 Canto III",
+      "wordCount": 3318,
+      "estimatedMinutes": 13,
+      "partId": "book-ii",
+      "bookNumber": 2,
+      "cantoNumber": 3
+    },
+    {
+      "index": 17,
+      "title": "Book II \u00b7 Canto IV",
+      "wordCount": 3317,
+      "estimatedMinutes": 13,
+      "partId": "book-ii",
+      "bookNumber": 2,
+      "cantoNumber": 4
+    },
+    {
+      "index": 18,
+      "title": "Book II \u00b7 Canto V",
+      "wordCount": 2648,
+      "estimatedMinutes": 11,
+      "partId": "book-ii",
+      "bookNumber": 2,
+      "cantoNumber": 5
+    },
+    {
+      "index": 19,
+      "title": "Book II \u00b7 Canto VI",
+      "wordCount": 3659,
+      "estimatedMinutes": 15,
+      "partId": "book-ii",
+      "bookNumber": 2,
+      "cantoNumber": 6
+    },
+    {
+      "index": 20,
+      "title": "Book II \u00b7 Canto VII",
+      "wordCount": 4642,
+      "estimatedMinutes": 19,
+      "partId": "book-ii",
+      "bookNumber": 2,
+      "cantoNumber": 7
+    },
+    {
+      "index": 21,
+      "title": "Book II \u00b7 Canto VIII",
+      "wordCount": 4024,
+      "estimatedMinutes": 16,
+      "partId": "book-ii",
+      "bookNumber": 2,
+      "cantoNumber": 8
+    },
+    {
+      "index": 22,
+      "title": "Book II \u00b7 Canto IX",
+      "wordCount": 4221,
+      "estimatedMinutes": 17,
+      "partId": "book-ii",
+      "bookNumber": 2,
+      "cantoNumber": 9
+    },
+    {
+      "index": 23,
+      "title": "Book II \u00b7 Canto X",
+      "wordCount": 5152,
+      "estimatedMinutes": 21,
+      "partId": "book-ii",
+      "bookNumber": 2,
+      "cantoNumber": 10
+    },
+    {
+      "index": 24,
+      "title": "Book II \u00b7 Canto XI",
+      "wordCount": 3443,
+      "estimatedMinutes": 14,
+      "partId": "book-ii",
+      "bookNumber": 2,
+      "cantoNumber": 11
+    },
+    {
+      "index": 25,
+      "title": "Book II \u00b7 Canto XII",
+      "wordCount": 5955,
+      "estimatedMinutes": 24,
+      "partId": "book-ii",
+      "bookNumber": 2,
+      "cantoNumber": 12
+    },
+    {
+      "index": 26,
+      "title": "Book III \u00b7 Canto I",
+      "wordCount": 5025,
+      "estimatedMinutes": 20,
+      "partId": "book-iii",
+      "bookNumber": 3,
+      "cantoNumber": 1
+    },
+    {
+      "index": 27,
+      "title": "Book III \u00b7 Canto II",
+      "wordCount": 3734,
+      "estimatedMinutes": 15,
+      "partId": "book-iii",
+      "bookNumber": 3,
+      "cantoNumber": 2
+    },
+    {
+      "index": 28,
+      "title": "Book III \u00b7 Canto III",
+      "wordCount": 4245,
+      "estimatedMinutes": 17,
+      "partId": "book-iii",
+      "bookNumber": 3,
+      "cantoNumber": 3
+    },
+    {
+      "index": 29,
+      "title": "Book III \u00b7 Canto IV",
+      "wordCount": 4320,
+      "estimatedMinutes": 17,
+      "partId": "book-iii",
+      "bookNumber": 3,
+      "cantoNumber": 4
+    },
+    {
+      "index": 30,
+      "title": "Book III \u00b7 Canto V",
+      "wordCount": 3926,
+      "estimatedMinutes": 16,
+      "partId": "book-iii",
+      "bookNumber": 3,
+      "cantoNumber": 5
+    },
+    {
+      "index": 31,
+      "title": "Book III \u00b7 Canto VI",
+      "wordCount": 3740,
+      "estimatedMinutes": 15,
+      "partId": "book-iii",
+      "bookNumber": 3,
+      "cantoNumber": 6
+    },
+    {
+      "index": 32,
+      "title": "Book III \u00b7 Canto VII",
+      "wordCount": 4379,
+      "estimatedMinutes": 18,
+      "partId": "book-iii",
+      "bookNumber": 3,
+      "cantoNumber": 7
+    },
+    {
+      "index": 33,
+      "title": "Book III \u00b7 Canto VIII",
+      "wordCount": 3695,
+      "estimatedMinutes": 15,
+      "partId": "book-iii",
+      "bookNumber": 3,
+      "cantoNumber": 8
+    },
+    {
+      "index": 34,
+      "title": "Book III \u00b7 Canto IX",
+      "wordCount": 3690,
+      "estimatedMinutes": 15,
+      "partId": "book-iii",
+      "bookNumber": 3,
+      "cantoNumber": 9
+    },
+    {
+      "index": 35,
+      "title": "Book III \u00b7 Canto X",
+      "wordCount": 4310,
+      "estimatedMinutes": 17,
+      "partId": "book-iii",
+      "bookNumber": 3,
+      "cantoNumber": 10
+    },
+    {
+      "index": 36,
+      "title": "Book III \u00b7 Canto XI",
+      "wordCount": 3864,
+      "estimatedMinutes": 15,
+      "partId": "book-iii",
+      "bookNumber": 3,
+      "cantoNumber": 11
+    },
+    {
+      "index": 37,
+      "title": "Book III \u00b7 Canto XII",
+      "wordCount": 3130,
+      "estimatedMinutes": 13,
+      "partId": "book-iii",
+      "bookNumber": 3,
+      "cantoNumber": 12
+    },
+    {
+      "index": 38,
+      "title": "Book IV \u00b7 Canto I",
+      "wordCount": 4257,
+      "estimatedMinutes": 17,
+      "partId": "book-iv",
+      "bookNumber": 4,
+      "cantoNumber": 1
+    },
+    {
+      "index": 39,
+      "title": "Book IV \u00b7 Canto II",
+      "wordCount": 3869,
+      "estimatedMinutes": 15,
+      "partId": "book-iv",
+      "bookNumber": 4,
+      "cantoNumber": 2
+    },
+    {
+      "index": 40,
+      "title": "Book IV \u00b7 Canto III",
+      "wordCount": 3309,
+      "estimatedMinutes": 13,
+      "partId": "book-iv",
+      "bookNumber": 4,
+      "cantoNumber": 3
+    },
+    {
+      "index": 41,
+      "title": "Book IV \u00b7 Canto IV",
+      "wordCount": 3453,
+      "estimatedMinutes": 14,
+      "partId": "book-iv",
+      "bookNumber": 4,
+      "cantoNumber": 4
+    },
+    {
+      "index": 42,
+      "title": "Book IV \u00b7 Canto V",
+      "wordCount": 3266,
+      "estimatedMinutes": 13,
+      "partId": "book-iv",
+      "bookNumber": 4,
+      "cantoNumber": 5
+    },
+    {
+      "index": 43,
+      "title": "Book IV \u00b7 Canto VI",
+      "wordCount": 3360,
+      "estimatedMinutes": 13,
+      "partId": "book-iv",
+      "bookNumber": 4,
+      "cantoNumber": 6
+    },
+    {
+      "index": 44,
+      "title": "Book IV \u00b7 Canto VII",
+      "wordCount": 3428,
+      "estimatedMinutes": 14,
+      "partId": "book-iv",
+      "bookNumber": 4,
+      "cantoNumber": 7
+    },
+    {
+      "index": 45,
+      "title": "Book IV \u00b7 Canto VIII",
+      "wordCount": 4632,
+      "estimatedMinutes": 19,
+      "partId": "book-iv",
+      "bookNumber": 4,
+      "cantoNumber": 8
+    },
+    {
+      "index": 46,
+      "title": "Book IV \u00b7 Canto IX",
+      "wordCount": 2930,
+      "estimatedMinutes": 12,
+      "partId": "book-iv",
+      "bookNumber": 4,
+      "cantoNumber": 9
+    },
+    {
+      "index": 47,
+      "title": "Book IV \u00b7 Canto X",
+      "wordCount": 4160,
+      "estimatedMinutes": 17,
+      "partId": "book-iv",
+      "bookNumber": 4,
+      "cantoNumber": 10
+    },
+    {
+      "index": 48,
+      "title": "Book IV \u00b7 Canto XI",
+      "wordCount": 3688,
+      "estimatedMinutes": 15,
+      "partId": "book-iv",
+      "bookNumber": 4,
+      "cantoNumber": 11
+    },
+    {
+      "index": 49,
+      "title": "Book IV \u00b7 Canto XII",
+      "wordCount": 2552,
+      "estimatedMinutes": 10,
+      "partId": "book-iv",
+      "bookNumber": 4,
+      "cantoNumber": 12
+    },
+    {
+      "index": 50,
+      "title": "Book V \u00b7 Canto I",
+      "wordCount": 3000,
+      "estimatedMinutes": 12,
+      "partId": "book-v",
+      "bookNumber": 5,
+      "cantoNumber": 1
+    },
+    {
+      "index": 51,
+      "title": "Book V \u00b7 Canto II",
+      "wordCount": 3953,
+      "estimatedMinutes": 16,
+      "partId": "book-v",
+      "bookNumber": 5,
+      "cantoNumber": 2
+    },
+    {
+      "index": 52,
+      "title": "Book V \u00b7 Canto III",
+      "wordCount": 2841,
+      "estimatedMinutes": 11,
+      "partId": "book-v",
+      "bookNumber": 5,
+      "cantoNumber": 3
+    },
+    {
+      "index": 53,
+      "title": "Book V \u00b7 Canto IV",
+      "wordCount": 3735,
+      "estimatedMinutes": 15,
+      "partId": "book-v",
+      "bookNumber": 5,
+      "cantoNumber": 4
+    },
+    {
+      "index": 54,
+      "title": "Book V \u00b7 Canto V",
+      "wordCount": 4125,
+      "estimatedMinutes": 17,
+      "partId": "book-v",
+      "bookNumber": 5,
+      "cantoNumber": 5
+    },
+    {
+      "index": 55,
+      "title": "Book V \u00b7 Canto VI",
+      "wordCount": 2954,
+      "estimatedMinutes": 12,
+      "partId": "book-v",
+      "bookNumber": 5,
+      "cantoNumber": 6
+    },
+    {
+      "index": 56,
+      "title": "Book V \u00b7 Canto VII",
+      "wordCount": 3184,
+      "estimatedMinutes": 13,
+      "partId": "book-v",
+      "bookNumber": 5,
+      "cantoNumber": 7
+    },
+    {
+      "index": 57,
+      "title": "Book V \u00b7 Canto VIII",
+      "wordCount": 3667,
+      "estimatedMinutes": 15,
+      "partId": "book-v",
+      "bookNumber": 5,
+      "cantoNumber": 8
+    },
+    {
+      "index": 58,
+      "title": "Book V \u00b7 Canto IX",
+      "wordCount": 3615,
+      "estimatedMinutes": 14,
+      "partId": "book-v",
+      "bookNumber": 5,
+      "cantoNumber": 9
+    },
+    {
+      "index": 59,
+      "title": "Book V \u00b7 Canto X",
+      "wordCount": 2784,
+      "estimatedMinutes": 11,
+      "partId": "book-v",
+      "bookNumber": 5,
+      "cantoNumber": 10
+    },
+    {
+      "index": 60,
+      "title": "Book V \u00b7 Canto XI",
+      "wordCount": 4754,
+      "estimatedMinutes": 19,
+      "partId": "book-v",
+      "bookNumber": 5,
+      "cantoNumber": 11
+    },
+    {
+      "index": 61,
+      "title": "Book V \u00b7 Canto XII",
+      "wordCount": 3127,
+      "estimatedMinutes": 13,
+      "partId": "book-v",
+      "bookNumber": 5,
+      "cantoNumber": 12
+    },
+    {
+      "index": 62,
+      "title": "Book VI \u00b7 Canto I",
+      "wordCount": 3889,
+      "estimatedMinutes": 16,
+      "partId": "book-vi",
+      "bookNumber": 6,
+      "cantoNumber": 1
+    },
+    {
+      "index": 63,
+      "title": "Book VI \u00b7 Canto II",
+      "wordCount": 3577,
+      "estimatedMinutes": 14,
+      "partId": "book-vi",
+      "bookNumber": 6,
+      "cantoNumber": 2
+    },
+    {
+      "index": 64,
+      "title": "Book VI \u00b7 Canto III",
+      "wordCount": 3678,
+      "estimatedMinutes": 15,
+      "partId": "book-vi",
+      "bookNumber": 6,
+      "cantoNumber": 3
+    },
+    {
+      "index": 65,
+      "title": "Book VI \u00b7 Canto IV",
+      "wordCount": 2926,
+      "estimatedMinutes": 12,
+      "partId": "book-vi",
+      "bookNumber": 6,
+      "cantoNumber": 4
+    },
+    {
+      "index": 66,
+      "title": "Book VI \u00b7 Canto V",
+      "wordCount": 2943,
+      "estimatedMinutes": 12,
+      "partId": "book-vi",
+      "bookNumber": 6,
+      "cantoNumber": 5
+    },
+    {
+      "index": 67,
+      "title": "Book VI \u00b7 Canto VI",
+      "wordCount": 3178,
+      "estimatedMinutes": 13,
+      "partId": "book-vi",
+      "bookNumber": 6,
+      "cantoNumber": 6
+    },
+    {
+      "index": 68,
+      "title": "Book VI \u00b7 Canto VII",
+      "wordCount": 3653,
+      "estimatedMinutes": 15,
+      "partId": "book-vi",
+      "bookNumber": 6,
+      "cantoNumber": 7
+    },
+    {
+      "index": 69,
+      "title": "Book VI \u00b7 Canto VIII",
+      "wordCount": 3706,
+      "estimatedMinutes": 15,
+      "partId": "book-vi",
+      "bookNumber": 6,
+      "cantoNumber": 8
+    },
+    {
+      "index": 70,
+      "title": "Book VI \u00b7 Canto IX",
+      "wordCount": 3337,
+      "estimatedMinutes": 13,
+      "partId": "book-vi",
+      "bookNumber": 6,
+      "cantoNumber": 9
+    },
+    {
+      "index": 71,
+      "title": "Book VI \u00b7 Canto X",
+      "wordCount": 3172,
+      "estimatedMinutes": 13,
+      "partId": "book-vi",
+      "bookNumber": 6,
+      "cantoNumber": 10
+    },
+    {
+      "index": 72,
+      "title": "Book VI \u00b7 Canto XI",
+      "wordCount": 3757,
+      "estimatedMinutes": 15,
+      "partId": "book-vi",
+      "bookNumber": 6,
+      "cantoNumber": 11
+    },
+    {
+      "index": 73,
+      "title": "Book VI \u00b7 Canto XII",
+      "wordCount": 2919,
+      "estimatedMinutes": 12,
+      "partId": "book-vi",
+      "bookNumber": 6,
+      "cantoNumber": 12
+    },
+    {
+      "index": 74,
+      "title": "Book VII \u00b7 Canto VI",
+      "wordCount": 3988,
+      "estimatedMinutes": 16,
+      "partId": "mutabilitie",
+      "bookNumber": 7,
+      "cantoNumber": 6
+    },
+    {
+      "index": 75,
+      "title": "Book VII \u00b7 Canto VII",
+      "wordCount": 4465,
+      "estimatedMinutes": 18,
+      "partId": "mutabilitie",
+      "bookNumber": 7,
+      "cantoNumber": 7
     }
   ]
 }
