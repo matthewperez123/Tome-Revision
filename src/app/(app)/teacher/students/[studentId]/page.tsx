@@ -294,7 +294,7 @@ function TrialsTab({ studentId }: { studentId: string }) {
     return [...trials].sort((a, b) => {
       if (sortBy === "date") return new Date(b.date).getTime() - new Date(a.date).getTime()
       if (sortBy === "score") return b.score - a.score
-      const diffOrder: Record<string, number> = { Foundational: 1, Scholar: 2, Sage: 3 }
+      const diffOrder: Record<string, number> = { Apprentice: 1, Foundational: 1, Scholar: 2, Master: 3, Sage: 3 }
       return (diffOrder[a.difficulty] ?? 0) - (diffOrder[b.difficulty] ?? 0)
     })
   }, [trials, sortBy])
@@ -308,7 +308,7 @@ function TrialsTab({ studentId }: { studentId: string }) {
     }))
   }, [trials])
 
-  const diffColors: Record<string, string> = { Foundational: "bg-green-100 text-green-700 dark:bg-green-950/30 dark:text-green-400", Scholar: "bg-indigo-100 text-indigo-700 dark:bg-indigo-950/30 dark:text-indigo-400", Sage: "bg-purple-100 text-purple-700 dark:bg-purple-950/30 dark:text-purple-400" }
+  const diffColors: Record<string, string> = { Apprentice: "bg-green-100 text-green-700 dark:bg-green-950/30 dark:text-green-400", Foundational: "bg-green-100 text-green-700 dark:bg-green-950/30 dark:text-green-400", Scholar: "bg-indigo-100 text-indigo-700 dark:bg-indigo-950/30 dark:text-indigo-400", Master: "bg-purple-100 text-purple-700 dark:bg-purple-950/30 dark:text-purple-400", Sage: "bg-purple-100 text-purple-700 dark:bg-purple-950/30 dark:text-purple-400" }
 
   return (
     <div className="space-y-4 pt-4">

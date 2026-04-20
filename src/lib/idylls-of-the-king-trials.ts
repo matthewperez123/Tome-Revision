@@ -23,12 +23,12 @@ import type { ChapterQuestion } from "./chapter-questions"
 export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
   // ── Dedication (ch-0) ────────────────────────────────────────────
   0: [
-    { id: "iotk-0-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-0-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Tennyson's Dedication was composed after whose death in December 1861?",
       options: ["Queen Victoria", "Prince Albert", "Arthur Hallam", "Lord Palmerston"],
       correctIndex: 1,
       explanation: "Prince Albert, Victoria's consort, died 14 December 1861. Tennyson composed the Dedication in winter 1861–62 and placed it at the head of the collected Idylls, framing Arthur as Albert's legendary analogue." },
-    { id: "iotk-0-2", type: "true_false", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-0-2", type: "true_false", difficulty: "Apprentice", xpReward: 5,
       text: "The phrase \"the white flower of a blameless life\" is Tennyson's description of Prince Albert.",
       correctBool: true,
       explanation: "The Dedication's most famous image — \"Wearing the white flower of a blameless life\" — became the Victorian imagination's summary of Albert. It passed immediately into sermons, obituaries, and public speech." },
@@ -36,12 +36,12 @@ export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── The Coming of Arthur (ch-1) ──────────────────────────────────
   1: [
-    { id: "iotk-1-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-1-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "In Bellicent's mystic account, how does the infant Arthur arrive at Merlin's feet?",
       options: ["Carried by three queens", "Borne on the ninth great wave in flame", "Found sleeping in a hollow oak", "Delivered by Uther on his deathbed"],
       correctIndex: 1,
       explanation: "Bellicent tells Leodogran of a fiery ninth wave bearing a naked babe to Merlin, who catches him and cries 'The King!' This mystic birth is wholly Tennyson's invention, replacing Malory's plainly-narrated adulterous conception." },
-    { id: "iotk-1-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-1-2", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Which famous Tennysonian line appears in \"The Coming of Arthur\" and returns at \"The Passing of Arthur\"?",
       options: ["Theirs not to reason why", "The old order changeth, yielding place to new", "Break, break, break, on thy cold gray stones", "More things are wrought by prayer"],
       correctIndex: 1,
@@ -59,17 +59,17 @@ export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Gareth and Lynette (ch-2) ────────────────────────────────────
   2: [
-    { id: "iotk-2-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-2-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "What promise does Gareth give his mother Bellicent before going to court?",
       options: ["To avenge her dead husband", "To serve a year in the kitchen without revealing his name", "To return in three years", "To marry no lady without her consent"],
       correctIndex: 1,
       explanation: "Bellicent, unwilling to let Gareth go, extracts the kitchen-vow. It is Tennyson's invention — Malory's Gareth serves in the kitchen by his own choice." },
-    { id: "iotk-2-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-2-2", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Tennyson renames Malory's four opposing knights as stages of:",
       options: ["The four seasons", "The four classical elements", "The four times of day (Morning-Star, Noon-Sun, Evening-Star, Night)", "The four cardinal virtues"],
       correctIndex: 2,
       explanation: "Tennyson's allegorical superimposition. Malory's colors (Black, Green, Red, Blue) become cosmological stages; the final knight \"Night\" unhelms to reveal a boy's face — the idyll's comic deflation." },
-    { id: "iotk-2-3", type: "true_false", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-2-3", type: "true_false", difficulty: "Apprentice", xpReward: 5,
       text: "Gareth and Lynette, published in 1872, was one of the last-composed major idylls.",
       correctBool: true,
       explanation: "The cycle's bright-morning idyll was written after Tennyson had already completed the dark late-idylls (Grail 1869, Passing of Arthur 1869). The older poet wrote the youth." },
@@ -82,12 +82,12 @@ export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── The Marriage of Geraint (ch-3) ───────────────────────────────
   3: [
-    { id: "iotk-3-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-3-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "The Geraint/Enid material derives from which source?",
       options: ["Malory's Le Morte d'Arthur", "The Welsh Mabinogion (via Lady Charlotte Guest)", "Chrétien de Troyes's Lancelot", "Tennyson's own invention"],
       correctIndex: 1,
       explanation: "Tennyson worked from Lady Charlotte Guest's 1838–45 English translation of the Mabinogion tale \"Geraint son of Erbin.\" This is the cycle's primary exception to Malory-sourcing." },
-    { id: "iotk-3-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-3-2", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "What is the prize at the central tournament of the idyll?",
       options: ["A golden falcon", "A sparrow-hawk", "Excalibur's twin sword", "The seat at Arthur's right hand"],
       correctIndex: 1,
@@ -105,12 +105,12 @@ export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Geraint and Enid (ch-4) ──────────────────────────────────────
   4: [
-    { id: "iotk-4-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-4-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "The idyll opens with a seven-line reflection on what?",
       options: ["The ideal of chivalric marriage", "The folly of taking true for false, or false for true", "The beauty of the Welsh landscape", "Arthur's rising realm"],
       correctIndex: 1,
       explanation: "\"O purblind race of miserable men\" — Tennyson's rare direct editorial preface frames Geraint's coming misunderstanding of Enid as human error, not authority." },
-    { id: "iotk-4-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-4-2", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "At Earl Doorm's hall, what finally breaks Geraint's pretended unconsciousness?",
       options: ["Doorm striking Enid", "The sound of Guinevere's voice", "Doorm ordering wine", "A messenger from Arthur"],
       correctIndex: 0,
@@ -128,12 +128,12 @@ export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Balin and Balan (ch-5) ───────────────────────────────────────
   5: [
-    { id: "iotk-5-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-5-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "How do Balin and Balan die?",
       options: ["Killed by Modred in ambush", "Both slain by Vivien's charm", "At each other's hands, not recognizing each other in armor", "Defending Arthur at Camlann"],
       correctIndex: 2,
       explanation: "The recognition-in-death combat is preserved from Malory II.18–19 — the one Malory element Tennyson kept largely intact because it fit his cycle's moral frame." },
-    { id: "iotk-5-2", type: "true_false", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-5-2", type: "true_false", difficulty: "Apprentice", xpReward: 5,
       text: "Balin and Balan was added in 1885 as the latest-composed idyll.",
       correctBool: true,
       explanation: "Tennyson at 76 added the idyll to bridge the middle-cycle success to the dark end. It prepares the reader for Vivien's full-scale appearance in Idyll VI." },
@@ -151,12 +151,12 @@ export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Merlin and Vivien (ch-6) ─────────────────────────────────────
   6: [
-    { id: "iotk-6-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-6-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Where does Vivien seal Merlin after extracting the charm from him?",
       options: ["Beneath a great stone", "Inside a hollow oak", "On an island in the lake", "In a mountain cave"],
       correctIndex: 1,
       explanation: "Tennyson's setting is the hollow oak in the wild woods of Broceliande — the traditional Breton-Arthurian site of Merlin's imprisonment." },
-    { id: "iotk-6-2", type: "true_false", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-6-2", type: "true_false", difficulty: "Apprentice", xpReward: 5,
       text: "Critical consensus identifies \"Merlin and Vivien\" as the cycle's weakest idyll in character-handling.",
       correctBool: true,
       explanation: "Tennyson's Vivien is a flattening of Malory's ambiguous Nimuë; the idyll lacks the psychological complexity of Guinevere, Lancelot, or Elaine. Reading her honestly requires naming the compositional problem." },
@@ -174,12 +174,12 @@ export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Lancelot and Elaine (ch-7) ───────────────────────────────────
   7: [
-    { id: "iotk-7-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-7-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "How does Elaine's body travel to Camelot at the idyll's close?",
       options: ["Carried on a horse-drawn bier", "On a funeral barge down the Thames", "Buried at Astolat, then exhumed", "In a sealed casket by ship"],
       correctIndex: 1,
       explanation: "The funeral-barge passage — composed with sustained sound-painting — is one of the most-imitated in Victorian poetry. Malory has the same figure; Tennyson lingers on its ekphrastic detail." },
-    { id: "iotk-7-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-7-2", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "The \"Diamond Jousts\" — nine annual tournaments whose diamonds Lancelot gives Guinevere — are:",
       options: ["Directly from Malory, unchanged", "Tennyson's invention", "From the Welsh Mabinogion", "Added by Burne-Jones as a visual source"],
       correctIndex: 1,
@@ -197,12 +197,12 @@ export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── The Holy Grail (ch-8) ────────────────────────────────────────
   8: [
-    { id: "iotk-8-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-8-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Who narrates \"The Holy Grail\" in Tennyson's version?",
       options: ["Arthur", "Percivale, now a monk", "Merlin from his oak prison", "Galahad before ascending"],
       correctIndex: 1,
       explanation: "Tennyson's retrospective frame has Percivale (now retired to the monastery) telling the quest to the monk Ambrosius — a radical departure from Malory's omniscient narration." },
-    { id: "iotk-8-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-8-2", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "How is Galahad's Grail-attainment rendered?",
       options: ["In Catholic Eucharistic detail", "Compressed to an Elijah-type chariot of fire translation", "As a shared vision with Arthur", "Through a long prayer at Corbenic"],
       correctIndex: 1,
@@ -220,12 +220,12 @@ export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Pelleas and Ettarre (ch-9) ───────────────────────────────────
   9: [
-    { id: "iotk-9-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-9-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "What does Pelleas find when he returns to Ettarre's castle and discovers Gawain with her?",
       options: ["He kills them both in a rage", "He lays his sword across their sleeping throats and leaves", "He challenges Gawain to a duel at dawn", "He burns the castle"],
       correctIndex: 1,
       explanation: "The sword-across-throats gesture is one of the cycle's most restrained and devastating scenes. Pelleas's chivalric mercy outstrips the wrongdoers'; his subsequent disillusionment is total." },
-    { id: "iotk-9-2", type: "true_false", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-9-2", type: "true_false", difficulty: "Apprentice", xpReward: 5,
       text: "Tennyson preserves Malory's ending, in which Nimuë magically rescues Pelleas and marries him.",
       correctBool: false,
       explanation: "Tennyson omits Nimuë's rescue entirely. Pelleas rides off in disillusion — unresolved, unrescued — becoming the cycle's tonal turning-point into despair." },
@@ -243,12 +243,12 @@ export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── The Last Tournament (ch-10) ──────────────────────────────────
   10: [
-    { id: "iotk-10-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-10-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "What is the name of the tournament around which the idyll is structured?",
       options: ["The Diamond Jousts", "The Tournament of the Dead Innocence", "The Tournament of the Holy Grail", "The Last Joust of Camelot"],
       correctIndex: 1,
       explanation: "The name (Tennyson's invention) comes from an infant found dead with a necklace of rubies, whose rubies become the tournament-prize. The name also allegorizes the court's own dead innocence." },
-    { id: "iotk-10-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-10-2", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Who murders Tristram on his return to Isolt at Tintagel?",
       options: ["Modred", "Lancelot, mistaking him for Gawain", "King Mark of Cornwall, Isolt's husband", "Arthur, in defense of the realm"],
       correctIndex: 2,
@@ -266,12 +266,12 @@ export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Guinevere (ch-11) ────────────────────────────────────────────
   11: [
-    { id: "iotk-11-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-11-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Where does Guinevere take refuge after the adultery becomes public?",
       options: ["With Lancelot in Joyous Gard", "The nunnery at Almesbury", "Her father Leodogran's court", "A hermit's cell in the northern wilderness"],
       correctIndex: 1,
       explanation: "Almesbury (real place: Amesbury in Wiltshire) is the site of the idyll's action. The opening pluperfect — \"Queen Guinevere had fled the court\" — places the flight before the narrative begins." },
-    { id: "iotk-11-2", type: "true_false", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-11-2", type: "true_false", difficulty: "Apprentice", xpReward: 5,
       text: "In Malory, Arthur and Guinevere meet one last time at the nunnery; Tennyson preserves this scene.",
       correctBool: false,
       explanation: "The confrontation is Tennyson's invention — in Malory, Arthur and Guinevere never meet again after her flight. Tennyson's invention is load-bearing: it gives the cycle its moral climax and generates its central critical controversy." },
@@ -289,12 +289,12 @@ export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── The Passing of Arthur (ch-12) ────────────────────────────────
   12: [
-    { id: "iotk-12-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-12-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "What does Arthur order Bedivere to do with Excalibur?",
       options: ["Carry it to Guinevere as final gift", "Fling it into the middle mere", "Bury it with his own body", "Bring it to Modred as challenge"],
       correctIndex: 1,
       explanation: "Bedivere twice hesitates before finally throwing Excalibur back into the lake, where an arm rises to catch and withdraw it. The scene is from Tennyson's 1833 \"Morte d'Arthur,\" the oldest passage in the cycle." },
-    { id: "iotk-12-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-12-2", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "The phrase \"from the great deep to the great deep he goes\" describes:",
       options: ["Lancelot's return to France", "Modred's death in battle", "Arthur's departure for Avalon", "The dead Tristram's soul"],
       correctIndex: 2,
@@ -312,7 +312,7 @@ export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── To the Queen (ch-13) ─────────────────────────────────────────
   13: [
-    { id: "iotk-13-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-13-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "When was \"To the Queen\" composed as the cycle's closing coda?",
       options: ["1859", "1862, immediately after the Dedication", "1872, ten years after the Dedication, after the Prince of Wales's recovery", "1885, as Tennyson's last major addition"],
       correctIndex: 2,
@@ -325,7 +325,7 @@ export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── 14: Mid-cycle Trial A — First four idylls (Hope & Establishment)
   14: [
-    { id: "iotk-c1-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-c1-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Which four idylls trace the Round Table's bright establishment phase?",
       options: ["Dedication, Coming of Arthur, Gareth, Holy Grail", "Coming of Arthur, Gareth and Lynette, Marriage of Geraint, Geraint and Enid", "Coming of Arthur, Balin, Merlin and Vivien, Lancelot and Elaine", "Dedication, Coming of Arthur, Gareth, To the Queen"],
       correctIndex: 1,
@@ -343,7 +343,7 @@ export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── 15: Mid-cycle Trial B — Middle four idylls (Corruption phase)
   15: [
-    { id: "iotk-c2-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "iotk-c2-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Which idyll centers on the sage's silencing, which removes the kingdom's prophetic intelligence?",
       options: ["Balin and Balan", "Merlin and Vivien", "The Holy Grail", "Pelleas and Ettarre"],
       correctIndex: 1,
@@ -394,17 +394,17 @@ export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
       text: "The Passing of Arthur incorporates Tennyson's 1833 \"Morte d'Arthur,\" making the cycle's ending also its oldest compositional material.",
       correctBool: true,
       explanation: "Tennyson spent fifty-two years writing toward his own earliest vision. The older poet (60, in 1869) wrapped the 24-year-old poet's work in new framing — the cycle's architectural recursion." },
-    { id: "iotk-m-8", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+    { id: "iotk-m-8", type: "multiple_choice", difficulty: "Master", xpReward: 25,
       text: "Arthur's critique of the Grail quest — \"wandering fires, lost in the quagmire\" — reveals which theological position?",
       options: ["Endorsement of Catholic mysticism", "Civic-faith: active work in the world over otherworldly visionary withdrawal", "Rejection of all religious experience as illusion", "Affirmation of the cloister over the court"],
       correctIndex: 1,
       explanation: "Arthur's position is continuous with Tennyson's \"In Memoriam\" register — honest doubt, civic virtue, suspicion of visionary absorption that abandons the realm. The idyll holds both pious and skeptical readings honestly." },
-    { id: "iotk-m-9", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+    { id: "iotk-m-9", type: "multiple_choice", difficulty: "Master", xpReward: 25,
       text: "Lancelot's partial Grail-vision (\"Not for thee, O knight of sin\") connects which two idylls architecturally?",
       options: ["Idylls I and XII", "Idylls VII (Lancelot and Elaine) and VIII (Holy Grail)", "Idylls VI (Merlin and Vivien) and XI (Guinevere)", "Idylls III (Marriage of Geraint) and IV (Geraint and Enid)"],
       correctIndex: 1,
       explanation: "Idyll VII's \"honour rooted in dishonour\" soliloquy (adultery as interior state) and Idyll VIII's chapel-scene (adultery as barrier to Grail) are architectural pair. The sin at two scales — inward and cosmic." },
-    { id: "iotk-m-10", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+    { id: "iotk-m-10", type: "multiple_choice", difficulty: "Master", xpReward: 25,
       text: "Which of these passages is most-often cited as the cycle's sustained technical peak in sound-painting?",
       options: ["The opening of The Coming of Arthur", "The Diamond Jousts passage", "Elaine's funeral-barge voyage", "Vivien's seduction-speeches"],
       correctIndex: 2,
@@ -413,7 +413,7 @@ export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
       text: "The confrontation between Arthur and Guinevere at Almesbury is invented by Tennyson; Malory never has them meet again after her flight.",
       correctBool: true,
       explanation: "Malory's Arthur and Guinevere die separately; no confrontation-and-forgiveness. Tennyson's invention is the cycle's most morally contested passage and critical-debate generator." },
-    { id: "iotk-m-12", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+    { id: "iotk-m-12", type: "multiple_choice", difficulty: "Master", xpReward: 25,
       text: "The cycle's \"three queens\" appear twice. At the opening (Bellicent's account) they are adjacent to Arthur's arrival; at the close they:",
       options: ["Kill Modred in the final battle", "Appear to Guinevere at Almesbury", "Bear the dying Arthur on the barge to Avalon", "Crown a new king at Camelot"],
       correctIndex: 2,
@@ -428,7 +428,7 @@ export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
       options: ["Yeats's Byzantium poems", "Eliot's The Waste Land", "Pound's Cantos", "Auden's The Age of Anxiety"],
       correctIndex: 1,
       explanation: "Eliot's 1922 poem re-activates the Grail-and-wasted-land pattern, read via Jessie Weston's scholarship. Tennyson is an acknowledged antecedent — the Idylls' wasted-land-framed opening and Grail-departed-closing are part of the pattern's long inheritance." },
-    { id: "iotk-m-15", type: "multiple_choice", difficulty: "Sage", xpReward: 25,
+    { id: "iotk-m-15", type: "multiple_choice", difficulty: "Master", xpReward: 25,
       text: "Arthur's final question to Bedivere — asking if the old wound still bleeds — receives what answer?",
       options: ["No direct answer; Arthur is borne away", "Yes, the wound bleeds still", "The wound has closed in peace", "Arthur himself answers: \"Never again\""],
       correctIndex: 0,
@@ -447,7 +447,7 @@ export const IDYLLS_OF_THE_KING_TRIALS: Record<number, ChapterQuestion[]> = {
       options: ["Beowulf and Faerie Queene", "Faerie Queene and Idylls of the King", "Paradise Lost and Idylls", "Beowulf and Don Juan"],
       correctIndex: 1,
       explanation: "Spenser's Faerie Queene (1590s) and Tennyson's Idylls (1859–85) are the two monumental English-language Arthurian epics. Their cross-reference cluster in the Tome catalog includes the Arthur-figure, the allegorical-moral framing, and the Merlin-seduction motif." },
-    { id: "iotk-epl-3", type: "true_false", difficulty: "Sage", xpReward: 25,
+    { id: "iotk-epl-3", type: "true_false", difficulty: "Master", xpReward: 25,
       text: "Tennyson's closing — \"from the great deep to the great deep he goes\" — is tonally opposite to Virgil's Aeneid closing (Turnus's indignant shade) and more closely echoes Milton's Paradise Lost closing (\"the world was all before them\").",
       correctBool: true,
       explanation: "The tonal contrast is the Idylls' deliberate positioning inside the epic tradition: rejecting Virgilian violence-closure, embracing Miltonian forward-facing renewal. The 1,900-year trajectory from Roman civic violence to Victorian providentialism." },

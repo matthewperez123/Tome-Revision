@@ -20,7 +20,7 @@ import type { ChapterQuestion } from "./chapter-questions"
 export const DON_JUAN_TRIALS: Record<number, ChapterQuestion[]> = {
   // ── Canto I (ch-2) ───────────────────────────────────────────────────
   2: [
-    { id: "dj-1-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "dj-1-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Byron opens Don Juan with \"I want a hero: an uncommon want.\" In what sense is he using \"want\"?",
       options: [
         "To desire — he longs for a hero",
@@ -30,7 +30,7 @@ export const DON_JUAN_TRIALS: Record<number, ChapterQuestion[]> = {
       ],
       correctIndex: 1,
       explanation: "*Want* is 17c–18c English for *lack*, and the joke of the opening is that the canto treats finding a hero as a practical problem of supply — the modern gazettes have consumed all the candidates, so Byron reaches for a stage-pantomime legend. The plain-English register is itself the satirical move: every previous major epic opens with an invocation; Byron opens with a shortage complaint." },
-    { id: "dj-1-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "dj-1-2", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Don Juan is written in which verse form?",
       options: [
         "Terza rima (ABA BCB CDC …)",
@@ -68,7 +68,7 @@ export const DON_JUAN_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Canto II (ch-3) ──────────────────────────────────────────────────
   3: [
-    { id: "dj-2-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "dj-2-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Canto II opens with the shipwreck. After the lifeboat runs out of food, the sailors draw lots. Whom does the lot fall on?",
       options: [
         "Don Juan himself",
@@ -78,7 +78,7 @@ export const DON_JUAN_TRIALS: Record<number, ChapterQuestion[]> = {
       ],
       correctIndex: 1,
       explanation: "Pedrillo — the language-learned Spanish tutor introduced comically seasick at the canto's opening. Byron researched the cannibalism scene from real incidents (the *Peggy*, 1765; the *Nautilus*, 1807) and wrote the lot-drawing with ritual formality (\"The lots were made, and marked, and mixed, and handed, / In silent horror\"). Five stanzas later Byron names Dante's Ugolino as his defence: the greatest Christian poem also ate people." },
-    { id: "dj-2-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "dj-2-2", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "The young woman who finds Juan washed up on the beach is named:",
       options: [
         "Donna Julia",
@@ -112,7 +112,7 @@ export const DON_JUAN_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Canto III (ch-4) ─────────────────────────────────────────────────
   4: [
-    { id: "dj-3-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "dj-3-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Canto III opens with \"Hail, Muse! et cetera.\" What is Byron doing?",
       options: [
         "Apologizing for losing his place",
@@ -122,7 +122,7 @@ export const DON_JUAN_TRIALS: Record<number, ChapterQuestion[]> = {
       ],
       correctIndex: 1,
       explanation: "Every previous serious epic required an invocation, and every previous reader submitted to the formula. Byron's three words acknowledge the convention and refuse the submission. The joke is precise: the reader is asked to supply the rest of the formula, and the poem moves on without it. Within the same stanza Byron modulates to the tenderest register yet about Haidée (\"a young heart, too deeply blest\"), demonstrating that the comic dismissal does not compromise the seriousness of what follows." },
-    { id: "dj-3-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "dj-3-2", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Embedded in Canto III is a 16-stanza lyric in a different meter from the surrounding ottava rima, sung by a wandering bard at Haidée's feast. Its title is:",
       options: [
         "\"The Prophecy of Dante\"",
@@ -168,7 +168,7 @@ export const DON_JUAN_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Canto V (ch-6) ───────────────────────────────────────────────────
   6: [
-    { id: "dj-5-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "dj-5-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Who buys Juan in the Constantinople slave market?",
       options: [
         "The Sultan himself",
@@ -200,7 +200,7 @@ export const DON_JUAN_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Canto VII (ch-8) ─────────────────────────────────────────────────
   8: [
-    { id: "dj-7-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "dj-7-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Cantos VII and VIII depict which historical military event?",
       options: [
         "The Battle of Waterloo (1815)",
@@ -228,7 +228,7 @@ export const DON_JUAN_TRIALS: Record<number, ChapterQuestion[]> = {
       text: "Canto VIII's anti-war argument is pacifist — Byron rejects all military action as unjustifiable.",
       correctBool: false,
       explanation: "False. Byron's position is consequentialist just-war, not pacifist. Canto VIII stanza 5 names Leonidas (at Thermopylae) and Washington (the American Revolution) as counter-examples whose battlefields are \"holy ground\" — wars of national defence and liberation. Ismail is condemned as a war of dynastic aggrandizement, not warfare as such. Byron died under arms at Missolonghi fighting for Greek independence — precisely the kind of war he categorizes as just." },
-    { id: "dj-8-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "dj-8-2", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "In the middle of the sack of Ismail, Juan rescues a small Tatar girl whose name is:",
       options: [
         "Haidée",
@@ -242,7 +242,7 @@ export const DON_JUAN_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Canto IX (ch-10) ─────────────────────────────────────────────────
   10: [
-    { id: "dj-9-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "dj-9-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Canto IX opens with one of the most sustained personal attacks ever published on a living British public figure. Who?",
       options: [
         "William Pitt the Younger",
@@ -308,7 +308,7 @@ export const DON_JUAN_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Canto XIII (ch-14) ───────────────────────────────────────────────
   14: [
-    { id: "dj-13-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "dj-13-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "The English cantos (XIII–XVII) are set at Norman Abbey, the country seat of:",
       options: [
         "Lord and Lady Henry Amundeville",
@@ -336,7 +336,7 @@ export const DON_JUAN_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Canto XV (ch-16) ─────────────────────────────────────────────────
   16: [
-    { id: "dj-15-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "dj-15-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "The Catholic orphan introduced at Canto XV as the only character in the late cantos who genuinely interests Juan is named:",
       options: [
         "Lady Adeline",
@@ -368,7 +368,7 @@ export const DON_JUAN_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Canto XVII fragment (ch-18) ──────────────────────────────────────
   18: [
-    { id: "dj-17-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "dj-17-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Canto XVII is a fragment. How many stanzas exist?",
       options: [
         "14 stanzas",

@@ -23,12 +23,12 @@ import type { ChapterQuestion } from "./chapter-questions"
 export const BEOWULF_TRIALS: Record<number, ChapterQuestion[]> = {
   // ── Fitts I–III: Opening, Grendel's arrival (chapters 2–4) ──────────
   2: [
-    { id: "beo-1-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "beo-1-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "The first word of the poem in Hall's translation is 'Lo!' — translating what Old English word?",
       options: ["*Hwæt*", "*Wæs*", "*Þā*", "*Gē*"],
       correctIndex: 0,
       explanation: "*Hwæt!* is the poem's opening — traditionally rendered 'Lo!' or 'Listen!' or (Heaney) 'So.' It is the scop's call to attention, the mead-hall opening of performance." },
-    { id: "beo-1-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "beo-1-2", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "In which single manuscript does the poem survive?",
       options: ["Ellesmere MS", "Vercelli Book", "Cotton Vitellius A.xv", "Exeter Book"],
       correctIndex: 2,
@@ -41,7 +41,7 @@ export const BEOWULF_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Fitts IV–VII: Beowulf arrives at Heorot (chapters 5–8) ─────────
   5: [
-    { id: "beo-4-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "beo-4-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Beowulf's lord, to whom he is nephew and thane, is:",
       options: ["Hrothgar", "Hygelac", "Ecgtheow", "Heardred"],
       correctIndex: 1,
@@ -55,7 +55,7 @@ export const BEOWULF_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Fitts VIII–XI: Feast, flyting, Beowulf's vow (chapters 9–12) ───
   9: [
-    { id: "beo-8-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "beo-8-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "At the feast before the Grendel fight, Beowulf vows to:",
       options: ["Cut off Grendel's head before morning", "Fight Grendel without a sword", "Give away all the gold he has earned in Denmark", "Never return to Geatland"],
       correctIndex: 1,
@@ -68,7 +68,7 @@ export const BEOWULF_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Fitts XII–XV: The Grendel fight (chapters 13–16) ───────────────
   13: [
-    { id: "beo-12-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "beo-12-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "How does Beowulf kill Grendel?",
       options: ["Cuts off his head with Hrunting", "Stabs him in the heart with a spear", "Tears the arm from his shoulder; Grendel flees to die in the mere", "Drowns him in the mead-hall fire"],
       correctIndex: 2,
@@ -82,7 +82,7 @@ export const BEOWULF_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Fitts XVI–XIX: Celebration, Finnsburg lay (chapters 17–20) ─────
   17: [
-    { id: "beo-16-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "beo-16-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "The 'Finnsburg Episode' is:",
       options: ["A historical raid Beowulf joined", "An embedded lay sung by the scop at Hrothgar's victory feast", "The battle where Hygelac died", "Grendel's origin story"],
       correctIndex: 1,
@@ -95,7 +95,7 @@ export const BEOWULF_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Fitts XX–XXIV: Grendel's mother & the mere (chapters 21–25) ────
   21: [
-    { id: "beo-20-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "beo-20-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Grendel's mother kills only Aeschere because:",
       options: ["She is too weak to kill more than one", "She is operating under the feud-law of wergild — one life for one life", "She mistakes him for Beowulf", "The Danes drive her off"],
       correctIndex: 1,
@@ -113,7 +113,7 @@ export const BEOWULF_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Fitts XXV–XXVIII: Hrothgar's sermon & return (chapters 26–29) ──
   27: [
-    { id: "beo-26-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "beo-26-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Hrothgar's long speech to Beowulf (Fitt XXVI), widely called 'Hrothgar's sermon', warns him especially against:",
       options: ["Leaving Hrothgar's court too soon", "The complacency that follows heroic success", "Trusting women in the hall", "Fighting dragons"],
       correctIndex: 1,
@@ -126,7 +126,7 @@ export const BEOWULF_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Fitts XXIX–XXXI: Return to Geatland (chapters 30–32) ───────────
   30: [
-    { id: "beo-29-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "beo-29-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "On returning to Geatland, Beowulf retells his adventures to Hygelac at court. What new material does he introduce?",
       options: ["A confession of having run from the mere-fight", "The Freawaru-Ingeld prophecy — the foreseen re-eruption of the Heathobard feud", "A different version of the Grendel fight blaming Unferth", "A marriage proposal to Hygd"],
       correctIndex: 1,
@@ -135,7 +135,7 @@ export const BEOWULF_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Fitts XXXII–XXXV: The dragon appears (chapters 33–36) ──────────
   33: [
-    { id: "beo-32-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "beo-32-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "What rouses the dragon from its 300-year sleep on the hoard?",
       options: ["Beowulf invades the barrow", "A fleeing slave takes a single golden cup", "Lightning strikes the barrow", "Wiglaf fails a test"],
       correctIndex: 1,
@@ -148,7 +148,7 @@ export const BEOWULF_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Fitts XXXVI–XXXIX: The dragon fight (chapters 37–40) ──────────
   37: [
-    { id: "beo-36-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "beo-36-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "How many of Beowulf's twelve picked thanes stay beside him at the dragon fight?",
       options: ["All twelve", "Six", "One (Wiglaf)", "None"],
       correctIndex: 2,
@@ -162,7 +162,7 @@ export const BEOWULF_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Fitts XL–XLIII: Death, funeral, lament (chapters 41–44) ────────
   41: [
-    { id: "beo-40-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "beo-40-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "The Geats do what with the dragon's hoard?",
       options: ["Distribute it among the thanes as Beowulf's last gift", "Send it back to the king who originally buried it", "Bury all of it, accursed, in Beowulf's barrow", "Use it to ransom captives from the Swedes"],
       correctIndex: 2,
@@ -171,7 +171,7 @@ export const BEOWULF_TRIALS: Record<number, ChapterQuestion[]> = {
       text: "The poem ends with a funeral that deliberately echoes its opening funeral of Scyld Scefing.",
       correctBool: true,
       explanation: "Ring composition: Scyld's ship-burial at the start, Beowulf's pyre at the close. The two funerals frame the entire epic and invite the reader to compare the Danish line's founding (mysterious origin, heroic glory) with the Geatish line's ending (grief, prophesied doom)." },
-    { id: "beo-40-3", type: "passage_id", difficulty: "Sage", xpReward: 25,
+    { id: "beo-40-3", type: "passage_id", difficulty: "Master", xpReward: 25,
       text: "In his last speech, Beowulf specifically claims that he has not:",
       options: ["Fled from a battle", "Killed his own kin", "Lied under oath", "Refused gold to a deserving warrior"],
       correctIndex: 1,
@@ -180,61 +180,61 @@ export const BEOWULF_TRIALS: Record<number, ChapterQuestion[]> = {
 
   // ── Master Trial: 'Hall-Friend' Seal ───────────────────────────────
   45: [
-    { id: "beo-master-1", type: "multiple_choice", difficulty: "Sage", xpReward: 50,
+    { id: "beo-master-1", type: "multiple_choice", difficulty: "Master", xpReward: 50,
       text: "Which manuscript tradition does Beowulf survive in, and what nearly destroyed it?",
       options: ["Vercelli Book; a flood in 1640", "Cotton Vitellius A.xv; the 1731 Cotton Library fire", "Exeter Book; Viking raid 897", "Ellesmere MS; the Great Fire of London 1666"],
       correctIndex: 1,
       explanation: "One manuscript, one fire. Cotton Vitellius A.xv was scorched in the 1731 blaze at Ashburnham House; earlier transcripts preserve what the vellum has since flaked away." },
-    { id: "beo-master-2", type: "multiple_choice", difficulty: "Sage", xpReward: 50,
+    { id: "beo-master-2", type: "multiple_choice", difficulty: "Master", xpReward: 50,
       text: "J.R.R. Tolkien's 1936 British Academy lecture argued that:",
       options: ["The monsters are regrettable folklore intrusions on serious history", "Beowulf should be rewritten in modern English verse", "The monsters are the poem's true subject — a meditation on mortality", "The manuscript is a forgery"],
       correctIndex: 2,
       explanation: "*Beowulf: The Monsters and the Critics* reversed a century of scholarship. The monsters *are* the poem; Beowulf confronts three figures of what must undo a hero. This reading is now canonical." },
-    { id: "beo-master-3", type: "multiple_choice", difficulty: "Sage", xpReward: 50,
+    { id: "beo-master-3", type: "multiple_choice", difficulty: "Master", xpReward: 50,
       text: "Which term names the bond between a Germanic warrior-lord and his retainers?",
       options: ["*Wyrd*", "*Comitatus*", "*Lof*", "*Wergild*"],
       correctIndex: 1,
       explanation: "*Comitatus*: the thanes swear to die with their lord, the lord gives gold and protection. Wiglaf's staying at the dragon fight, against eleven thanes who flee, is the poem's clearest embodiment." },
-    { id: "beo-master-4", type: "multiple_choice", difficulty: "Sage", xpReward: 50,
+    { id: "beo-master-4", type: "multiple_choice", difficulty: "Master", xpReward: 50,
       text: "The giants' sword Beowulf finds in Grendel's mother's lair:",
       options: ["Is the heirloom Hrunting returned to its owner", "Kills the mother, then the blade melts in Grendel's venomous blood", "Is cursed and destroys any warrior who wields it", "Is forged on the spot by Wayland the Smith"],
       correctIndex: 1,
       explanation: "Pre-Flood giant-forged; lifted only because Beowulf has the strength of thirty in his grip; dissolves in Grendel's venom after beheading his corpse. Only the runic hilt returns to the surface." },
-    { id: "beo-master-5", type: "true_false", difficulty: "Sage", xpReward: 50,
+    { id: "beo-master-5", type: "true_false", difficulty: "Master", xpReward: 50,
       text: "The poem's first and last scenes are both funerals.",
       correctBool: true,
       explanation: "Scyld Scefing's ship-burial opens the poem; Beowulf's pyre on Hronesness closes it. Ring composition at epic scale — the poem brackets an entire heroic career between graves." },
-    { id: "beo-master-6", type: "multiple_choice", difficulty: "Sage", xpReward: 50,
+    { id: "beo-master-6", type: "multiple_choice", difficulty: "Master", xpReward: 50,
       text: "Grendel is described as descended from:",
       options: ["Nimrod", "Cain", "Lucifer", "Esau"],
       correctIndex: 1,
       explanation: "Cain — the biblical first murderer. His curse is inherited; Grendel's monstrosity is not appetite alone but the exile's specific grief. This is why Tolkien says the poem grants Grendel an inner life the Greek monsters never have." },
-    { id: "beo-master-7", type: "multiple_choice", difficulty: "Sage", xpReward: 50,
+    { id: "beo-master-7", type: "multiple_choice", difficulty: "Master", xpReward: 50,
       text: "A 'kenning' is:",
       options: ["A formal vow spoken at a feast", "A compressed metaphorical compound — two nouns forming a third meaning", "A legal settlement of a blood-feud", "A kind of Old English rhyme pattern"],
       correctIndex: 1,
       explanation: "*Whale-road* = sea; *bone-house* = body; *ring-giver* = lord. Not decoration — the kenning is how the Old English poet thinks. Hall's translation preserves many literally." },
-    { id: "beo-master-8", type: "multiple_choice", difficulty: "Sage", xpReward: 50,
+    { id: "beo-master-8", type: "multiple_choice", difficulty: "Master", xpReward: 50,
       text: "The Beowulf-poet's characters are pre-Christian pagans, but the poet is Christian. This creates:",
       options: ["A theological error that modern editors correct", "A deliberate stylistic tension the poem never fully resolves", "A translator's interpolation that can be stripped out", "Contradictions only apparent in Old English"],
       correctIndex: 1,
       explanation: "The Christian frame on pagan material is the poem's signature layering. Scholarship has gone back and forth for over a century on whether it is coherent or additive; the modern consensus is that the layering is *original* and constitutive." },
-    { id: "beo-master-9", type: "multiple_choice", difficulty: "Sage", xpReward: 50,
+    { id: "beo-master-9", type: "multiple_choice", difficulty: "Master", xpReward: 50,
       text: "What triggers the dragon's three-hundred-year rage at the poem's opening of Fitt XXXII?",
       options: ["Beowulf desecrating the barrow", "A fleeing slave taking a single golden cup", "Wiglaf's unsworn vow", "The death of Hygelac"],
       correctIndex: 1,
       explanation: "The hero's end is triggered by the *smallest* human action. Not a moral adversary — a frightened nobody. Time in dragon-shape, not villainy, ends him." },
-    { id: "beo-master-10", type: "multiple_choice", difficulty: "Sage", xpReward: 50,
+    { id: "beo-master-10", type: "multiple_choice", difficulty: "Master", xpReward: 50,
       text: "The poem's most formidable adversary, per Tolkien, is:",
       options: ["Grendel", "Grendel's mother", "The dragon", "Unferth"],
       correctIndex: 1,
       explanation: "Tolkien argued Grendel's mother is the more formidable of the two Grendels — precisely because her violence is not monstrous but *lawful* (one life for one in the wergild code). She is the Germanic feud-world meeting an implacable avenger." },
-    { id: "beo-master-11", type: "multiple_choice", difficulty: "Sage", xpReward: 50,
+    { id: "beo-master-11", type: "multiple_choice", difficulty: "Master", xpReward: 50,
       text: "The messenger's prophecy at the poem's close says that, with Beowulf dead:",
       options: ["The Geats will divide the hoard and prosper", "The Franks and Swedes will return to ruin the kingdom", "Heorot will burn", "Wiglaf will rule for sixty years"],
       correctIndex: 1,
       explanation: "The Geatish kingdom dies with its king. The old feuds — contained only by Beowulf's reputation — return. Tolkien called the poem an *elegy*; this moment is why." },
-    { id: "beo-master-12", type: "fill_blank", difficulty: "Sage", xpReward: 50,
+    { id: "beo-master-12", type: "fill_blank", difficulty: "Master", xpReward: 50,
       text: "The last word of the Old English text praises Beowulf as most eager for ______.",
       correctText: "glory",
       explanation: "*Lof-geornost* — 'most eager for praise/glory.' The hero's last human legacy is the word for the virtue he spent his life pursuing: the reputation that survives death." },

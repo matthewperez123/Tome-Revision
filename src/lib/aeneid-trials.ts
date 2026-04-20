@@ -15,12 +15,12 @@ import type { ChapterQuestion } from "./chapter-questions"
 export const AENEID_TRIALS: Record<number, ChapterQuestion[]> = {
   // ── Book I ───────────────────────────────────────────────────────────
   0: [
-    { id: "aeneid-1-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "aeneid-1-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Virgil's opening three words — *Arma virumque canō* — compress which two Homeric poems into a single literary claim?",
       options: ["Works and Days + Theogony", "Iliad + Odyssey", "Catullus + Horace", "Aeschylus + Sophocles"],
       correctIndex: 1,
       explanation: "*Arma* (war) is the Iliad's subject; *virum* (the man) is the Odyssey's subject; *canō* (I sing) collapses the Homeric invocation formula. Virgil names both predecessors in three words." },
-    { id: "aeneid-1-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "aeneid-1-2", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Who or what causes the Book I storm that wrecks the Trojan fleet on the Libyan coast?",
       options: ["Poseidon in a rage", "Juno, by bribing Aeolus", "An accident of weather", "Athena punishing the Trojans"],
       correctIndex: 1,
@@ -32,12 +32,12 @@ export const AENEID_TRIALS: Record<number, ChapterQuestion[]> = {
   ],
   // ── Book II ──────────────────────────────────────────────────────────
   1: [
-    { id: "aeneid-2-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "aeneid-2-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Who warns the Trojans against the wooden horse with the line 'I fear the Greeks, even when they bring gifts'?",
       options: ["Cassandra", "Laocoön", "Hector's ghost", "Sinon"],
       correctIndex: 1,
       explanation: "Laocoön's *Timeō Danaōs et dōna ferentēs* is one of the four most-quoted Latin phrases. The truth-teller is immediately killed by divine serpents — one of the Aeneid's sharpest theological puzzles." },
-    { id: "aeneid-2-2", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "aeneid-2-2", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Who kills Priam at the altar on Troy's last night?",
       options: ["Agamemnon", "Odysseus", "Pyrrhus (son of Achilles)", "Diomedes"],
       correctIndex: 2,
@@ -50,7 +50,7 @@ export const AENEID_TRIALS: Record<number, ChapterQuestion[]> = {
   ],
   // ── Book III ─────────────────────────────────────────────────────────
   2: [
-    { id: "aeneid-3-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "aeneid-3-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Whom do the Trojans find at Buthrotum, living in a miniature replica of Troy?",
       options: ["Cassandra", "Helen and Menelaus", "Andromache, now married to Helenus", "Aeneas's mother Venus"],
       correctIndex: 2,
@@ -67,7 +67,7 @@ export const AENEID_TRIALS: Record<number, ChapterQuestion[]> = {
   ],
   // ── Book IV ──────────────────────────────────────────────────────────
   3: [
-    { id: "aeneid-4-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "aeneid-4-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Which pair of goddesses arranges the storm that drives Dido and Aeneas into the same cave?",
       options: ["Juno and Venus", "Minerva and Diana", "Juno and Diana", "Venus and Aphrodite"],
       correctIndex: 0,
@@ -85,7 +85,7 @@ export const AENEID_TRIALS: Record<number, ChapterQuestion[]> = {
   ],
   // ── Book V ───────────────────────────────────────────────────────────
   4: [
-    { id: "aeneid-5-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "aeneid-5-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Book V's funeral games are held for whom?",
       options: ["Palinurus", "Dido", "Anchises (one-year anniversary)", "Creusa"],
       correctIndex: 2,
@@ -97,7 +97,7 @@ export const AENEID_TRIALS: Record<number, ChapterQuestion[]> = {
   ],
   // ── Book VI ──────────────────────────────────────────────────────────
   5: [
-    { id: "aeneid-6-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "aeneid-6-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Whom does Aeneas meet in the Fields of Mourning, and how does she respond?",
       options: ["Creusa, who warmly greets him", "Dido, who turns away in silence", "Helen, who begs his forgiveness", "Andromache, who weeps with him"],
       correctIndex: 1,
@@ -120,7 +120,7 @@ export const AENEID_TRIALS: Record<number, ChapterQuestion[]> = {
   ],
   // ── Book VII ─────────────────────────────────────────────────────────
   6: [
-    { id: "aeneid-7-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "aeneid-7-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Which goddess sends the Fury Allecto to Italy to provoke the war?",
       options: ["Venus", "Minerva", "Juno", "Diana"],
       correctIndex: 2,
@@ -133,7 +133,7 @@ export const AENEID_TRIALS: Record<number, ChapterQuestion[]> = {
   ],
   // ── Book VIII ────────────────────────────────────────────────────────
   7: [
-    { id: "aeneid-8-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "aeneid-8-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Where does Aeneas travel upriver in Book VIII?",
       options: ["To Cumae, to meet the Sibyl", "To Pallanteum, to meet Evander — the future site of Rome", "To Carthage, to ask Dido for allies", "To Troy, for reinforcements"],
       correctIndex: 1,
@@ -146,7 +146,7 @@ export const AENEID_TRIALS: Record<number, ChapterQuestion[]> = {
   ],
   // ── Book IX ──────────────────────────────────────────────────────────
   8: [
-    { id: "aeneid-9-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "aeneid-9-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "The night-raid in Book IX is Virgil's rewriting of which Iliadic episode?",
       options: ["The chariot race in Iliad XXIII", "The Doloneia in Iliad X", "The killing of Patroclus in Iliad XVI", "Priam's ransoming of Hector in Iliad XXIV"],
       correctIndex: 1,
@@ -159,7 +159,7 @@ export const AENEID_TRIALS: Record<number, ChapterQuestion[]> = {
   ],
   // ── Book X ───────────────────────────────────────────────────────────
   9: [
-    { id: "aeneid-10-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "aeneid-10-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Turnus kills Pallas (son of Evander) and strips which object from the corpse?",
       options: ["Pallas's helmet", "Pallas's sword-belt (baldric)", "Pallas's bow", "Pallas's armor"],
       correctIndex: 1,
@@ -172,7 +172,7 @@ export const AENEID_TRIALS: Record<number, ChapterQuestion[]> = {
   ],
   // ── Book XI ──────────────────────────────────────────────────────────
   10: [
-    { id: "aeneid-11-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "aeneid-11-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "Camilla's death in Book XI is caused by what?",
       options: ["A javelin from Aeneas", "A treacherous arrow from the archer Arruns while Camilla pursues the gold-armored Chloreus", "A sword-thrust from Turnus", "A fall from her horse"],
       correctIndex: 1,
@@ -184,7 +184,7 @@ export const AENEID_TRIALS: Record<number, ChapterQuestion[]> = {
   ],
   // ── Book XII ─────────────────────────────────────────────────────────
   11: [
-    { id: "aeneid-12-1", type: "multiple_choice", difficulty: "Foundational", xpReward: 5,
+    { id: "aeneid-12-1", type: "multiple_choice", difficulty: "Apprentice", xpReward: 5,
       text: "The Iliadic model for the Book XII single combat between Aeneas and Turnus is which Homeric scene?",
       options: ["Iliad I: the quarrel of Achilles and Agamemnon", "Iliad VI: Hector and Andromache's farewell", "Iliad XXII: Achilles killing Hector", "Iliad XXIV: Priam ransoming Hector"],
       correctIndex: 2,

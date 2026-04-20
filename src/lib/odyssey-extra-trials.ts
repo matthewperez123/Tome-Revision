@@ -15,7 +15,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-5-1",
       type: "multiple_choice",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "How does Odysseus first appear to the reader in Book V?",
       options: [
@@ -31,7 +31,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-5-2",
       type: "true_false",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Odysseus's refusal of Calypso's offer of immortality is the Odyssey's deepest ethical choice — he chooses mortality, an aging wife, and Ithaca over eternal life.",
       correctBool: true,
@@ -61,7 +61,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-6-1",
       type: "multiple_choice",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Who finds the naked, shipwrecked Odysseus at the river mouth?",
       options: [
@@ -93,7 +93,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-6-3",
       type: "true_false",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Nausicaä ultimately marries Odysseus, and the two sail back to Ithaca together.",
       correctBool: false,
@@ -107,7 +107,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-7-1",
       type: "multiple_choice",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Following Nausicaä's instruction, whom does Odysseus supplicate first upon entering the palace of the Phaeacians?",
       options: [
@@ -134,7 +134,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-7-3",
       type: "true_false",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Alcinoüs demands Odysseus reveal his name as soon as he arrives at the palace.",
       correctBool: false,
@@ -148,7 +148,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-8-1",
       type: "multiple_choice",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Demodocus, the Phaeacian bard, sings three songs in Book VIII. What does the first song recount?",
       options: [
@@ -164,7 +164,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-8-2",
       type: "multiple_choice",
-      difficulty: "Sage",
+      difficulty: "Master",
       xpReward: 25,
       text: "Homer compares Odysseus weeping at Demodocus's song to a woman weeping over her husband killed before a besieged city. Why is this simile ethically extraordinary?",
       options: [
@@ -180,7 +180,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-8-3",
       type: "true_false",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Odysseus names himself to the Phaeacian court at the start of Book VIII.",
       correctBool: false,
@@ -194,7 +194,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-9-1",
       type: "multiple_choice",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "When Odysseus first enters the Cyclops's cave with twelve crewmen, what do they ask him to do?",
       options: [
@@ -221,7 +221,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-9-3",
       type: "true_false",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "After escaping under the rams, Odysseus shouts his real name back at the blinded Cyclops from the ship.",
       correctBool: true,
@@ -235,7 +235,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-10-1",
       type: "multiple_choice",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "What does Aeolus, keeper of the winds, give Odysseus?",
       options: [
@@ -262,7 +262,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-10-3",
       type: "true_false",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Circe tells Odysseus he must first travel to the land of the dead and consult the shade of Tiresias before he can return home.",
       correctBool: true,
@@ -276,7 +276,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-11-1",
       type: "multiple_choice",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Who is the first shade to speak with Odysseus in the Nekyia?",
       options: [
@@ -308,7 +308,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-11-3",
       type: "passage_id",
-      difficulty: "Sage",
+      difficulty: "Master",
       xpReward: 25,
       text: "Odysseus tries three times to embrace the shade of his mother Anticlea. What happens?",
       options: [
@@ -328,7 +328,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-12-1",
       type: "multiple_choice",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "How does Odysseus protect himself and his crew from the Sirens?",
       options: [
@@ -360,7 +360,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-12-3",
       type: "true_false",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Odysseus is the only member of his original crew who survives the wanderings.",
       correctBool: true,
@@ -374,7 +374,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-13-1",
       type: "multiple_choice",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "How does Odysseus arrive back on Ithaca?",
       options: [
@@ -406,7 +406,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-13-3",
       type: "true_false",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Athena disguises Odysseus as an aged beggar before he approaches his own palace.",
       correctBool: true,
@@ -420,7 +420,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-14-1",
       type: "multiple_choice",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Who welcomes the disguised Odysseus with perfect xenia when he first arrives on Ithaca?",
       options: [
@@ -466,7 +466,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-15-1",
       type: "multiple_choice",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Athena appears to Telemachus at Sparta with what urgent message?",
       options: [
@@ -498,7 +498,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-15-3",
       type: "true_false",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Eumaeus was born a prince on the island of Syrie and stolen by Phoenician slavers as a child.",
       correctBool: true,
@@ -512,7 +512,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-16-1",
       type: "multiple_choice",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Where does the reunion of Odysseus and Telemachus take place?",
       options: [
@@ -544,7 +544,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-16-3",
       type: "true_false",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Odysseus instructs Telemachus to tell Penelope of his return immediately upon returning to the palace.",
       correctBool: false,
@@ -558,7 +558,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-17-1",
       type: "multiple_choice",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Which animal recognizes the disguised Odysseus when he finally approaches his own palace?",
       options: [
@@ -590,7 +590,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-17-3",
       type: "true_false",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Penelope asks Eumaeus to bring the mysterious beggar to her so she can question him about Odysseus.",
       correctBool: true,
@@ -604,7 +604,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-18-1",
       type: "multiple_choice",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Who challenges the disguised Odysseus to a fistfight in the palace hall?",
       options: ["The suitor Antinoüs", "The beggar Irus", "The goatherd Melanthius", "A Phoenician merchant"],
@@ -645,7 +645,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-19-1",
       type: "multiple_choice",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "What physical token does Eurycleia find that confirms the beggar's identity as Odysseus?",
       options: [
@@ -707,7 +707,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-20-2",
       type: "multiple_choice",
-      difficulty: "Sage",
+      difficulty: "Master",
       xpReward: 25,
       text: "The seer Theoclymenus suddenly sees the suitors as they will look in hours. What is the vision?",
       options: [
@@ -723,7 +723,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-20-3",
       type: "true_false",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "The suitors end Book XX with uncontrolled, god-sent laughter — meat in their mouths dripping blood, tears in their eyes.",
       correctBool: true,
@@ -737,7 +737,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-21-1",
       type: "multiple_choice",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "What is the contest Penelope sets for her suitors?",
       options: [
@@ -769,7 +769,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-21-3",
       type: "true_false",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Before the contest, Odysseus reveals his true identity to the swineherd Eumaeus and the cowherd Philoetius.",
       correctBool: true,
@@ -783,7 +783,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-22-1",
       type: "multiple_choice",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Who is the first suitor Odysseus kills?",
       options: ["Eurymachus", "Antinoüs", "Amphinomus", "Ctesippus"],
@@ -824,7 +824,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-23-1",
       type: "multiple_choice",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "How does Penelope test the stranger claiming to be her husband?",
       options: [
@@ -856,7 +856,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-23-3",
       type: "true_false",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "Athena prolongs the night at Odysseus's request so that the reunited husband and wife can have a full night together.",
       correctBool: true,
@@ -870,7 +870,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-24-1",
       type: "multiple_choice",
-      difficulty: "Foundational",
+      difficulty: "Apprentice",
       xpReward: 5,
       text: "How does Odysseus prove his identity to his father Laertes in the orchard?",
       options: [
@@ -916,7 +916,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-master-1",
       type: "multiple_choice",
-      difficulty: "Sage",
+      difficulty: "Master",
       xpReward: 50,
       text: "The Odyssey opens with Zeus addressing the gods about Aegisthus, who killed Agamemnon and was killed in turn by Orestes. What is the thematic purpose of this opening?",
       options: [
@@ -932,7 +932,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-master-2",
       type: "multiple_choice",
-      difficulty: "Sage",
+      difficulty: "Master",
       xpReward: 50,
       text: "What are the four formal recognition scenes of the Odyssey, in order?",
       options: [
@@ -948,7 +948,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-master-3",
       type: "multiple_choice",
-      difficulty: "Sage",
+      difficulty: "Master",
       xpReward: 50,
       text: "Which of Odysseus's companions survives the wanderings to return home with him?",
       options: ["Eurylochus alone", "Elpenor alone", "None — Odysseus is the sole survivor", "Three men and a boy"],
@@ -959,7 +959,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-master-4",
       type: "multiple_choice",
-      difficulty: "Sage",
+      difficulty: "Master",
       xpReward: 50,
       text: "The shade of Achilles tells Odysseus in Book XI that he would rather be a penniless farmhand than 'king among the dead.' Why is this remark so important?",
       options: [
@@ -975,7 +975,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-master-5",
       type: "multiple_choice",
-      difficulty: "Sage",
+      difficulty: "Master",
       xpReward: 50,
       text: "What is the structural function of the Phaeacian court (Books VII–XIII) in the Odyssey?",
       options: [
@@ -991,7 +991,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-master-6",
       type: "multiple_choice",
-      difficulty: "Sage",
+      difficulty: "Master",
       xpReward: 50,
       text: "What makes Odysseus's bed in Book XXIII impossible to move?",
       options: [
@@ -1007,7 +1007,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-master-7",
       type: "multiple_choice",
-      difficulty: "Sage",
+      difficulty: "Master",
       xpReward: 50,
       text: "The three great temptations to forget home in the Odyssey are the Lotus-Eaters, Circe's pig-transformation, and —",
       options: [
@@ -1023,7 +1023,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-master-8",
       type: "multiple_choice",
-      difficulty: "Sage",
+      difficulty: "Master",
       xpReward: 50,
       text: "The epithet *polytropos* — opening the first line of the Odyssey — most literally means:",
       options: [
@@ -1039,7 +1039,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-master-9",
       type: "multiple_choice",
-      difficulty: "Sage",
+      difficulty: "Master",
       xpReward: 50,
       text: "Which recognition scene does NOT require a physical token?",
       options: [
@@ -1055,7 +1055,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-master-10",
       type: "multiple_choice",
-      difficulty: "Sage",
+      difficulty: "Master",
       xpReward: 50,
       text: "When Odysseus shouts his real name back at the blinded Polyphemus from the departing ship, what is the consequence?",
       options: [
@@ -1071,7 +1071,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-master-11",
       type: "multiple_choice",
-      difficulty: "Sage",
+      difficulty: "Master",
       xpReward: 50,
       text: "The 'weeping-woman' simile in Book VIII compares Odysseus to —",
       options: [
@@ -1087,7 +1087,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-master-12",
       type: "multiple_choice",
-      difficulty: "Sage",
+      difficulty: "Master",
       xpReward: 50,
       text: "The 'Cretan lies' are:",
       options: [
@@ -1103,7 +1103,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-master-13",
       type: "multiple_choice",
-      difficulty: "Sage",
+      difficulty: "Master",
       xpReward: 50,
       text: "Dante's Inferno XXVI places Ulysses in the eighth circle of Hell for 'false counsel.' What specific act is Dante condemning?",
       options: [
@@ -1119,7 +1119,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-master-14",
       type: "multiple_choice",
-      difficulty: "Sage",
+      difficulty: "Master",
       xpReward: 50,
       text: "The poem ends on the word —",
       options: ["'homecoming'", "'covenant'", "'peace'", "'kleos'"],
@@ -1130,7 +1130,7 @@ export const ODYSSEY_EXTRA_TRIALS: Record<number, ChapterQuestion[]> = {
     {
       id: "odyssey-master-15",
       type: "multiple_choice",
-      difficulty: "Sage",
+      difficulty: "Master",
       xpReward: 50,
       text: "Tiresias's prophecy in Book XI predicts that after killing the suitors, Odysseus must —",
       options: [

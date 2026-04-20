@@ -10,7 +10,30 @@ export interface ChapterQuizResult {
   completedAt: string
 }
 
-export type QuizDifficulty = 'Foundational' | 'Scholar' | 'Sage'
+export type QuizDifficulty = 'Apprentice' | 'Scholar' | 'Master'
+
+// Legacy tier names used in localStorage prior to the Trials overhaul.
+// Kept as a type union for the migration helper only.
+export type LegacyQuizDifficulty = 'Foundational' | 'Scholar' | 'Sage'
+
+/** Map a legacy tier name to the current canonical name. */
+export function migrateTierName(
+  input: string | null | undefined
+): QuizDifficulty | null {
+  if (!input) return null
+  switch (input) {
+    case 'Foundational':
+    case 'Apprentice':
+      return 'Apprentice'
+    case 'Scholar':
+      return 'Scholar'
+    case 'Sage':
+    case 'Master':
+      return 'Master'
+    default:
+      return null
+  }
+}
 
 export interface BookProgress {
   bookId: string
