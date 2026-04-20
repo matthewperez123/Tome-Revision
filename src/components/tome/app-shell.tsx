@@ -10,6 +10,7 @@ import { TopBar } from "@/components/tome/top-bar"
 import { PageTransition } from "@/components/tome/page-transition"
 import { ErrorBoundary } from "@/components/tome/error-boundary"
 import { VirgilWrapper } from "@/components/tome/virgil/VirgilWrapper"
+import { MobileDock } from "@/components/tome/mobile-dock"
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
@@ -45,10 +46,11 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           <TopBar />
           <div className="flex flex-1 overflow-hidden">
             <AppSidebar />
-            <main className="flex-1 overflow-y-auto">
+            <main className="flex-1 overflow-y-auto pb-[calc(56px+env(safe-area-inset-bottom,0px))] min-[480px]:pb-0">
               <PageTransition>{children}</PageTransition>
             </main>
           </div>
+          <MobileDock />
         </div>
       </SidebarProvider>
     </VirgilWrapper>
