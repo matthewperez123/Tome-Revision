@@ -3,6 +3,11 @@
 import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 
+// 200ms matches durations.fast in design-tokens. Using the raw numeric
+// value here because Framer Motion expects seconds as a number, not a
+// CSS string. Kept in sync with src/lib/design-tokens.ts.
+const FAST_SEC = 0.2
+
 interface VirgilTriggerProps {
   onClick: () => void
   visible: boolean
@@ -17,7 +22,7 @@ export function VirgilTrigger({ onClick, visible, className }: VirgilTriggerProp
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: 20 }}
-      transition={{ duration: 0.2 }}
+      transition={{ duration: FAST_SEC }}
       onClick={onClick}
       className={cn(
         "fixed right-4 top-1/2 -translate-y-1/2 z-30",

@@ -10,6 +10,7 @@ import { CrossReferenceCard } from "./CrossReferenceCard"
 import { VirgilChatFooter } from "./VirgilChatFooter"
 import type { Annotation } from "@/lib/virgil/types"
 import { cn } from "@/lib/utils"
+import { easeArray } from "@/lib/design-tokens"
 
 interface VirgilDrawerProps {
   annotationId: string | null
@@ -76,7 +77,7 @@ export function VirgilDrawer({ annotationId, onClose }: VirgilDrawerProps) {
             initial="hidden"
             animate="visible"
             exit="exit"
-            transition={{ duration: 0.35, ease: [0.32, 0.72, 0, 1] }}
+            transition={{ duration: 0.35, ease: easeArray.sheet }}
             className={cn(
               "fixed bottom-0 left-0 right-0 z-50 flex flex-col",
               "h-[55vh] sm:h-[42vh]",

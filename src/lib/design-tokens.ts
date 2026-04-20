@@ -136,6 +136,15 @@ export const spacing = {
 export const ease = {
   scholarly: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
   "out-expo": "cubic-bezier(0.16, 1, 0.3, 1)",
+  /** Sheet/drawer physics curve — sharp exit, slow settle. Used by VirgilDrawer. */
+  sheet: "cubic-bezier(0.32, 0.72, 0, 1)",
+} as const;
+
+/** Framer-motion style tuple form of the same easings. */
+export const easeArray = {
+  scholarly: [0.25, 0.46, 0.45, 0.94] as const,
+  outExpo: [0.16, 1, 0.3, 1] as const,
+  sheet: [0.32, 0.72, 0, 1] as const,
 } as const;
 
 // ── Motion: Spring Configs (for framer-motion) ─
