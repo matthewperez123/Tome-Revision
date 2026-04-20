@@ -79,6 +79,8 @@ import { LeMorteDarthurAnnotations } from "@/components/reader/le-morte-darthur-
 import { DecameronEnhancements } from "@/components/reader/decameron-enhancements"
 import { DecameronAnnotations } from "@/components/reader/decameron-annotations"
 import { AeneidAnnotations } from "@/components/reader/aeneid-annotations"
+import { OdysseyAnnotations } from "@/components/reader/odyssey-annotations"
+import { IliadAnnotations } from "@/components/reader/iliad-annotations"
 import { CanticleHero } from "@/components/reader/canticle-hero"
 
 /** Books that have structured-content enhancements available (glosses,
@@ -923,6 +925,25 @@ export default function ReaderPage() {
                         authorial-apostrophe markers. Mirror of the
                         Commedia overlay; only fires for the-aeneid. */}
                     <AeneidAnnotations
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                      onOpenAnnotation={setActiveAnnotationId}
+                    />
+
+                    {/* Odyssey — ✦ annotation markers + dotted-underline
+                        gloss decorations. Mirror of the Aeneid / Paradise
+                        Lost overlays; only fires for the-odyssey. */}
+                    <OdysseyAnnotations
+                      bookId={bookId}
+                      currentChapter={currentChapter}
+                      onOpenAnnotation={setActiveAnnotationId}
+                    />
+
+                    {/* Iliad — ✦ annotation markers + dotted-underline
+                        gloss decorations for flagship books (I, VI, XVI,
+                        XXII, XXIV). Mirror of Odyssey / Aeneid overlays;
+                        only fires for the-iliad. */}
+                    <IliadAnnotations
                       bookId={bookId}
                       currentChapter={currentChapter}
                       onOpenAnnotation={setActiveAnnotationId}
