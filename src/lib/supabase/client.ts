@@ -7,9 +7,14 @@
 
 import { createBrowserClient } from "@supabase/ssr"
 
+// Build-time-safe placeholders so static prerender doesn't throw when
+// env vars are not in scope (e.g. preview build without Vercel env).
+// Real env vars are required at runtime for any actual API call to succeed.
+const SUPABASE_URL =
+  process.env.NEXT_PUBLIC_SUPABASE_URL || "https://placeholder.supabase.co"
+const SUPABASE_ANON_KEY =
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "placeholder-anon-key"
+
 export function createClient() {
-  return createBrowserClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-  )
+  return createBrowserClient(SUPABASE_URL, SUPABASE_ANON_KEY)
 }
