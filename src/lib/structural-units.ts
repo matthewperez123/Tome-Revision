@@ -10,6 +10,8 @@ const LABELS: Record<StructuralUnitType, [string, string]> = {
   book:        ["Book", "Books"],
   essay:       ["Essay", "Essays"],
   letter:      ["Letter", "Letters"],
+  act_scene:   ["Scene", "Scenes"],
+  fitt:        ["Fitt", "Fitts"],
 }
 
 /** Returns the human-readable label for a structural unit type. */
@@ -52,6 +54,8 @@ export function getUnitNumber(type: StructuralUnitType, number: number, title?: 
       return `Canto ${toRoman(number)}`
     case "book":
       return `Book ${toRoman(number)}`
+    case "fitt":
+      return `Fitt ${toRoman(number)}`
     case "poem":
       return title || `Poem ${number}`
     case "short_story":
@@ -60,6 +64,8 @@ export function getUnitNumber(type: StructuralUnitType, number: number, title?: 
       return title || `Essay ${number}`
     case "letter":
       return title || `Letter ${number}`
+    case "act_scene":
+      return title || `Scene ${number}`
     case "chapter":
     default:
       return `Chapter ${number}`
@@ -71,7 +77,7 @@ export function getUnitNumber(type: StructuralUnitType, number: number, title?: 
  */
 export function getProgressLabel(type: StructuralUnitType, done: number, total: number): string {
   const label = getUnitLabel(type, true).toLowerCase()
-  if (type === "canto" || type === "book") {
+  if (type === "canto" || type === "book" || type === "fitt") {
     return `${toRoman(done)} of ${toRoman(total)} ${label}`
   }
   return `${done} of ${total} ${label}`
@@ -87,6 +93,8 @@ export function getShortProgress(type: StructuralUnitType, done: number, total: 
       return `Canto ${toRoman(done)}/${toRoman(total)}`
     case "book":
       return `Bk ${toRoman(done)}/${toRoman(total)}`
+    case "fitt":
+      return `Fitt ${toRoman(done)}/${toRoman(total)}`
     case "poem":
       return `Poem ${done}/${total}`
     case "short_story":
@@ -95,6 +103,8 @@ export function getShortProgress(type: StructuralUnitType, done: number, total: 
       return `Essay ${done}/${total}`
     case "letter":
       return `Letter ${done}/${total}`
+    case "act_scene":
+      return `Scene ${done}/${total}`
     case "chapter":
     default:
       return `Ch ${done}/${total}`

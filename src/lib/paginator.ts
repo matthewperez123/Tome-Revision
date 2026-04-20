@@ -10,6 +10,7 @@ export interface PaginateOptions {
   pageWidth: number   // usable content width in px (after subtracting padding)
   fontSize: number
   lineHeight?: number // default 1.8
+  contentTypeClass?: string // "content-drama" | "content-verse" | "content-prose"
 }
 
 // Module-level cache — max 20 entries
@@ -37,7 +38,7 @@ export function getPaginationCacheKey(
 
 /** Normalize raw HTML childNodes into block-level Elements */
 function normalizeToBlocks(nodes: NodeListOf<ChildNode>): Element[] {
-  const BLOCK_TAGS = new Set(["P","H1","H2","H3","H4","H5","H6","BLOCKQUOTE","HR","UL","OL","PRE","DIV","SECTION","ARTICLE"])
+  const BLOCK_TAGS = new Set(["P","H1","H2","H3","H4","H5","H6","BLOCKQUOTE","HR","UL","OL","PRE","DIV","SECTION","ARTICLE","TABLE","TBODY","THEAD","TFOOT","TR","FIGURE","FIGCAPTION"])
   const result: Element[] = []
   for (const node of Array.from(nodes)) {
     if (node.nodeType === Node.TEXT_NODE) {
@@ -63,7 +64,7 @@ function normalizeToBlocks(nodes: NodeListOf<ChildNode>): Element[] {
 }
 
 export async function paginateHTML(options: PaginateOptions): Promise<string[]> {
-  const { html, pageHeight, pageWidth, fontSize, lineHeight = 1.8 } = options
+  const { html, pageHeight, pageWidth, fontSize, lineHeight = 1.8, contentTypeClass = "content-prose" } = options
 
   // Guard: SSR or invalid dimensions
   if (typeof window === "undefined") return [html]
@@ -82,7 +83,7 @@ export async function paginateHTML(options: PaginateOptions): Promise<string[]> 
   // Create hidden probe element with exact reader styles
   const probe = document.createElement("div")
   probe.setAttribute("aria-hidden", "true")
-  probe.className = "font-serif prose-reader"
+  probe.className = `font-serif prose-reader ${contentTypeClass}`
   Object.assign(probe.style, {
     position: "fixed",
     top: "-9999px",

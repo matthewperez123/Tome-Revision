@@ -26,6 +26,7 @@ export type EconomyEvent =
   | { type: "reading_minutes"; minutes: number }
   | { type: "buy_streak_freeze" }
   | { type: "use_streak_freeze" }
+  | { type: "achievement_unlock"; achievementId: string; wisdomReward: number }
 
 export type EconomyResult = {
   stats: UserStats
@@ -215,6 +216,13 @@ export function applyEvent(
         s.streak_freeze_available = false
         notifications.push("Streak freeze used!")
       }
+      break
+    }
+
+    case "achievement_unlock": {
+      xpGained = event.wisdomReward
+      s.xp_total += xpGained
+      notifications.push(`Seal earned! +${xpGained} wisdom`)
       break
     }
   }

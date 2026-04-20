@@ -57,7 +57,13 @@ export function CrossReferenceCard({ crossRef, bookmarked, onToggleBookmark }: C
 
         {crossRef.targetBookId && (
           <Link
-            href={`/read/${crossRef.targetBookId}`}
+            href={
+              // Deep-link into the target chapter when we know the index.
+              // The reader page reads `?ch=N` to jump; omit when null.
+              typeof crossRef.targetChapterNumber === "number"
+                ? `/read/${crossRef.targetBookId}?ch=${crossRef.targetChapterNumber}`
+                : `/read/${crossRef.targetBookId}`
+            }
             className="flex items-center gap-1 text-[10px] font-medium transition-colors hover:opacity-80"
             style={{ color: "#D4A04C" }}
           >

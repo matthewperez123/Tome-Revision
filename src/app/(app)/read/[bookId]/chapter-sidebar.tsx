@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { springs } from "@/lib/design-tokens"
 import { cn } from "@/lib/utils"
 import { getUnitLabel } from "@/lib/structural-units"
-import type { StructuralUnitType } from "@/data/books"
+import type { StructuralUnitType, BookPart } from "@/data/books"
 
 // ── Chapter type classification ──
 
@@ -124,6 +124,45 @@ interface ContainerNode {
 
 type TOCNode = LeafNode | ContainerNode
 
+// ── Build a tree from explicit parts + per-chapter partId map ──
+// This path is used by books with structured multi-part layouts (e.g. the
+// Divine Comedy's three canticles). Synthetic negative container indices
+// avoid collision with real chapter indices used for expand-tracking.
+
+function buildPartsTree(
+  chapters: string[],
+  parts: BookPart[],
+  chapterPartIds: (string | undefined)[],
+): { frontMatter: LeafNode[]; body: TOCNode[]; backMatter: LeafNode[] } {
+  const frontMatter: LeafNode[] = []
+  const backMatter: LeafNode[] = []
+  const sortedParts = [...parts].sort((a, b) => a.order - b.order)
+  const partLeaves = new Map<string, LeafNode[]>()
+  sortedParts.forEach(p => partLeaves.set(p.id, []))
+  const orphanLeaves: LeafNode[] = []
+
+  chapters.forEach((title, i) => {
+    const type = classifyChapter(title)
+    const leaf: LeafNode = { kind: "leaf", index: i, title, type }
+    if (type === "front-matter") { frontMatter.push(leaf); return }
+    if (type === "back-matter") { backMatter.push(leaf); return }
+    const pid = chapterPartIds[i]
+    if (pid && partLeaves.has(pid)) partLeaves.get(pid)!.push(leaf)
+    else orphanLeaves.push(leaf)
+  })
+
+  const body: TOCNode[] = sortedParts.map((part, idx) => ({
+    kind: "container",
+    index: -(idx + 1),           // synthetic, negative, stable across renders
+    title: part.title,
+    children: partLeaves.get(part.id) ?? [],
+  }))
+  // Any chapter without a matching partId falls into the flat body so it's
+  // still navigable rather than silently dropped.
+  orphanLeaves.forEach(l => body.push(l))
+  return { frontMatter, body, backMatter }
+}
+
 // ── Build a two-level tree from flat chapter list ──
 
 function buildTOCTree(chapters: string[]): { frontMatter: LeafNode[]; body: TOCNode[]; backMatter: LeafNode[] } {
@@ -235,6 +274,14 @@ interface ChapterSidebarProps {
   onToggle: () => void
   completedChapterIndices?: number[]
   structuralUnitType?: StructuralUnitType
+  /**
+   * Optional canticle / book / part grouping. When both `parts` and
+   * `chapterPartIds` are supplied the sidebar switches to explicit-parts
+   * rendering (each part becomes an expandable container) and bypasses
+   * the title-pattern-based container detection used for other books.
+   */
+  parts?: BookPart[]
+  chapterPartIds?: (string | undefined)[]
 }
 
 // ── Component ──
@@ -248,8 +295,13 @@ export function ChapterSidebar({
   onToggle,
   completedChapterIndices = [],
   structuralUnitType,
+  parts,
+  chapterPartIds,
 }: ChapterSidebarProps) {
-  const { frontMatter, body, backMatter } = buildTOCTree(chapters)
+  const useParts = !!(parts && parts.length > 0 && chapterPartIds && chapterPartIds.length === chapters.length)
+  const { frontMatter, body, backMatter } = useParts
+    ? buildPartsTree(chapters, parts!, chapterPartIds!)
+    : buildTOCTree(chapters)
 
   // Track which containers are expanded — auto-expand the one containing the current chapter
   const [expandedContainers, setExpandedContainers] = useState<Set<number>>(() => {

@@ -18,6 +18,7 @@ export interface PaginatedReaderProps {
   fontSize: number
   accentColor: string        // genre color for progress bar
   onToggleToolbar: () => void
+  contentTypeClass?: string  // "content-drama" | "content-verse" | "content-prose"
 }
 
 // ─── Theme Map ───────────────────────────────────────────────────────────────
@@ -107,6 +108,7 @@ export function PaginatedReader({
   fontSize,
   accentColor,
   onToggleToolbar,
+  contentTypeClass = "content-prose",
 }: PaginatedReaderProps) {
   const t = themeMap[theme]
   const [direction, setDirection] = useState<1 | -1>(1)
@@ -214,7 +216,7 @@ export function PaginatedReader({
             <PageSkeleton />
           ) : (
             <div
-              className="font-serif prose-reader flex-1"
+              className={cn("font-serif prose-reader flex-1", contentTypeClass)}
               style={contentStyle}
               data-reader-text
               dangerouslySetInnerHTML={{ __html: pages[pageIndex] ?? "" }}
