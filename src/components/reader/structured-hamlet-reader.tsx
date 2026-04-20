@@ -526,7 +526,7 @@ export function StructuredHamletReader({ workId }: { workId: string }) {
           min-height: calc(100vh - 56px);
           background: var(--background, #fbf8f3);
           color: var(--foreground, #1a1611);
-          font-family: ui-serif, Georgia, serif;
+          font-family: var(--font-serif, ui-serif, Georgia, serif);
         }
         .shr-loading {
           padding: 48px;

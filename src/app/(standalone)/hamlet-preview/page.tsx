@@ -66,7 +66,7 @@ export default function HamletPreviewIndex() {
       maxWidth: 780,
       margin: "0 auto",
       padding: "48px 24px",
-      fontFamily: "ui-serif, Georgia, serif",
+      fontFamily: "var(--font-serif, ui-serif, Georgia, serif)",
       color: "#1a1611",
       background: "#fbf8f3",
       minHeight: "100vh",

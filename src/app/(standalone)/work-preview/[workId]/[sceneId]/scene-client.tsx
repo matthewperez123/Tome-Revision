@@ -371,7 +371,7 @@ export function SceneClient({
         body { background: #fbf8f3; margin: 0; }
         .preview-page {
           max-width: 780px; margin: 0 auto; padding: 24px 24px 96px;
-          font-family: ui-serif, Georgia, serif; color: #1a1611; line-height: 1.7;
+          font-family: var(--font-serif, ui-serif, Georgia, serif); color: #1a1611; line-height: 1.7;
         }
         .scene-nav {
           display: flex; align-items: center; gap: 16px; padding: 12px 0;

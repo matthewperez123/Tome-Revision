@@ -774,7 +774,7 @@ export function StructuredEnhancements({
         .tome-trials-heading {
           margin: 0 0 4px;
           font-size: 22px;
-          font-family: ui-serif, Georgia, serif;
+          font-family: var(--font-serif, ui-serif, Georgia, serif);
           letter-spacing: -0.3px;
         }
         .tome-trials-intro {
@@ -947,13 +947,13 @@ export function StructuredEnhancements({
           font-size: 24px;
           margin: 0 0 16px;
           letter-spacing: -0.3px;
-          font-family: ui-serif, Georgia, serif;
+          font-family: var(--font-serif, ui-serif, Georgia, serif);
         }
         .tome-annotation-body p {
           font-size: 15px;
           line-height: 1.7;
           margin: 0 0 14px;
-          font-family: ui-serif, Georgia, serif;
+          font-family: var(--font-serif, ui-serif, Georgia, serif);
         }
         .tome-annotation-sources {
           margin-top: 28px;

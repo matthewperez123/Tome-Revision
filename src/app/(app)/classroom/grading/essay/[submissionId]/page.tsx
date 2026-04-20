@@ -126,7 +126,7 @@ export default function EssayGradingPage({ params }: { params: Promise<{ submiss
               <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">Prompt</p>
               <p className="text-sm italic text-muted-foreground">{assignment.prompt}</p>
             </div>
-            <div className="prose prose-sm max-w-none" style={{ fontFamily: "'Literata', Georgia, serif", lineHeight: 1.8 }}>
+            <div className="prose prose-sm max-w-none" style={{ fontFamily: "var(--font-serif, 'Literata', Georgia, serif)", lineHeight: 1.8 }}>
               {submission.body.split("\n\n").map((paragraph, i) => (
                 <p key={i} className="mb-4 text-sm leading-relaxed">{paragraph}</p>
               ))}

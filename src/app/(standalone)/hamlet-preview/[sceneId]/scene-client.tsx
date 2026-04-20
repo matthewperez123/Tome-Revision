@@ -391,7 +391,7 @@ export function SceneClient({
           max-width: 780px;
           margin: 0 auto;
           padding: 24px 24px 96px;
-          font-family: ui-serif, Georgia, serif;
+          font-family: var(--font-serif, ui-serif, Georgia, serif);
           color: #1a1611;
           line-height: 1.7;
         }
