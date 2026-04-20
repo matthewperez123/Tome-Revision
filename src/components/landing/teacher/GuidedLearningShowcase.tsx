@@ -31,7 +31,7 @@ export function GuidedLearningShowcase() {
     <TeacherShowcaseShell
       heading="Read together, in real time."
       subcopy="Pace your class through a passage. Navigation locks to the instructor, a live marker shows which paragraph is in focus, and student clocks resync automatically if they drift."
-      layout="mockup-left"
+      layout="mockup-right"
       bgClass="bg-background"
     >
       <div

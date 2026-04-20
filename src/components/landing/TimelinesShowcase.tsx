@@ -46,7 +46,7 @@ export function TimelinesShowcase({ audience = "reader" }: { audience?: Audience
 
   if (isReduced) {
     return (
-      <TeacherShowcaseShell heading={heading} subcopy={subcopy} layout="mockup-left" bgClass="bg-background">
+      <TeacherShowcaseShell heading={heading} subcopy={subcopy} layout={audience === "teacher" ? "mockup-right" : "mockup-left"} bgClass="bg-background">
         <div className="bg-card rounded-xl border border-border p-6">
           <div className="flex items-center gap-4">
             {AUTHORS.map(a => (
@@ -62,7 +62,7 @@ export function TimelinesShowcase({ audience = "reader" }: { audience?: Audience
   }
 
   return (
-    <TeacherShowcaseShell heading={heading} subcopy={subcopy} layout="mockup-left" bgClass="bg-background">
+    <TeacherShowcaseShell heading={heading} subcopy={subcopy} layout={audience === "teacher" ? "mockup-right" : "mockup-left"} bgClass="bg-background">
       <div ref={containerRef} className="bg-card rounded-xl border border-border p-6 min-h-[220px] relative overflow-hidden" style={{ willChange: "transform" }}>
         <p className="text-[10px] text-muted-foreground mb-4 uppercase tracking-wider font-medium">Ancient Greek Tradition</p>
         <div className="relative h-1 bg-muted rounded-full mb-8 mt-2">

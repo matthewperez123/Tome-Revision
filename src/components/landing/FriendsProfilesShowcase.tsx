@@ -39,7 +39,7 @@ export function FriendsProfilesShowcase() {
     <TeacherShowcaseShell
       heading="Read with friends."
       subcopy="Follow other readers, share the book that just cracked you open, and see what the people around you are working through. Public profiles are opt-in and mock-social by default."
-      layout="mockup-left"
+      layout="mockup-right"
       bgClass="bg-background"
     >
       <div

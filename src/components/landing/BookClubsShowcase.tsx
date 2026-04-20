@@ -29,7 +29,7 @@ export function BookClubsShowcase() {
 
   if (isReduced) {
     return (
-      <TeacherShowcaseShell heading="Read together" subcopy="Join readers around the world in shared conversations about the books that matter." layout="mockup-right" bgClass="bg-muted">
+      <TeacherShowcaseShell heading="Read together" subcopy="Join readers around the world in shared conversations about the books that matter." layout="mockup-left" bgClass="bg-muted">
         <div className="bg-card rounded-xl border border-border p-5">
           <div className="flex items-center gap-3 mb-3">
             <div className="size-10 rounded-lg bg-[#0EA5E9] flex items-center justify-center text-white"><BookOpen className="size-5" /></div>
@@ -45,7 +45,7 @@ export function BookClubsShowcase() {
   }
 
   return (
-    <TeacherShowcaseShell heading="Read together" subcopy="Join readers around the world in shared conversations about the books that matter." layout="mockup-right" bgClass="bg-muted">
+    <TeacherShowcaseShell heading="Read together" subcopy="Join readers around the world in shared conversations about the books that matter." layout="mockup-left" bgClass="bg-muted">
       <div ref={containerRef} className="min-h-[280px]" style={{ willChange: "transform" }}>
         <motion.div animate={{ opacity: showCard ? 1 : 0, y: showCard ? 0 : 15 }} transition={{ duration: 0.5, ease: EASE }} className="bg-card rounded-xl border border-border p-5" style={{ willChange: "transform, opacity" }}>
           <div className="flex items-center gap-3 mb-3">

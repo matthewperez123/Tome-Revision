@@ -42,7 +42,7 @@ export function AuthorShowcase({ audience = "reader" }: { audience?: Audience } 
 
   if (isReduced) {
     return (
-      <TeacherShowcaseShell heading={heading} subcopy={subcopy} layout="mockup-right" bgClass="bg-muted">
+      <TeacherShowcaseShell heading={heading} subcopy={subcopy} layout={audience === "teacher" ? "mockup-left" : "mockup-right"} bgClass="bg-muted">
         <div className="bg-card rounded-xl border border-border p-6">
           <div className="flex items-center gap-4 mb-4">
             <div className="size-14 rounded-full bg-[#0EA5E9] flex items-center justify-center text-lg font-bold text-white">H</div>
@@ -60,7 +60,7 @@ export function AuthorShowcase({ audience = "reader" }: { audience?: Audience } 
   }
 
   return (
-    <TeacherShowcaseShell heading={heading} subcopy={subcopy} layout="mockup-right" bgClass="bg-muted">
+    <TeacherShowcaseShell heading={heading} subcopy={subcopy} layout={audience === "teacher" ? "mockup-left" : "mockup-right"} bgClass="bg-muted">
       <div ref={containerRef} className="bg-card rounded-xl border border-border p-6 min-h-[280px] relative overflow-hidden" style={{ willChange: "transform" }}>
         <motion.div animate={{ opacity: showProfile ? 1 : 0, y: showProfile ? 0 : 15 }} transition={{ duration: 0.5, ease: EASE }} style={{ willChange: "transform, opacity" }}>
           <div className="flex items-center gap-4 mb-4">

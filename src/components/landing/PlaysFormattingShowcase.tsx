@@ -48,7 +48,7 @@ export function PlaysFormattingShowcase() {
     <TeacherShowcaseShell
       heading="Plays, staged on the page."
       subcopy="Speaker names in distinct colors, stage directions italicized, scene breaks preserved. The rhythm of a performance, held in type."
-      layout="mockup-right"
+      layout="mockup-left"
       bgClass="bg-muted"
     >
       <div

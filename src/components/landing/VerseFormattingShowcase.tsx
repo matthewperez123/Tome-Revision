@@ -33,7 +33,7 @@ export function VerseFormattingShowcase() {
     <TeacherShowcaseShell
       heading="Verse, laid out as verse."
       subcopy="Block-style line breaks, preserved indentation, numbered stanzas. Toggle rhyme-scheme view to see the pattern the poet composed in."
-      layout="mockup-left"
+      layout="mockup-right"
       bgClass="bg-background"
     >
       <div

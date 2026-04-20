@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { useRouter } from "next/navigation"
 import { Heart, Flame, TrendingUp, BookOpen } from "lucide-react"
 import { toggleFavorite, isFavorite } from "@/lib/shelves/store"
 import { cn } from "@/lib/utils"
@@ -106,6 +107,7 @@ export interface BookCardProps {
 }
 
 export function BookCard({ book, progress, size = "sm", className, activeSort }: BookCardProps) {
+  const router = useRouter()
   const coverParams = getCoverParams(book)
   const tradColor  = TRADITION_COLORS[book.tradition]  ?? { bg: "rgba(99,102,241,0.14)", text: "#4338ca", dot: "#6366F1" }
   const diffColor  = DIFFICULTY_COLORS[book.difficulty] ?? { bg: "rgba(99,102,241,0.14)", text: "#4338ca" }
@@ -119,13 +121,32 @@ export function BookCard({ book, progress, size = "sm", className, activeSort }:
     : 0
   const hasProgress   = progressPct > 0 || !!progress
 
+  const bookHref = `/book/${book.id}`
+
+  function handleCardActivate(e: React.MouseEvent | React.KeyboardEvent) {
+    // Don't steal clicks from inner interactive elements (AuthorLink, HeartButton).
+    const target = e.target as HTMLElement
+    if (target.closest("a, button")) return
+    if ("key" in e) {
+      if (e.key !== "Enter" && e.key !== " ") return
+      e.preventDefault()
+    }
+    router.push(bookHref)
+  }
+
   return (
-    <a
-      href={`/book/${book.id}`}
+    <div
+      role="link"
+      tabIndex={0}
+      aria-label={`${book.title} by ${book.author}`}
+      onClick={handleCardActivate}
+      onKeyDown={handleCardActivate}
+      data-href={bookHref}
       className={cn(
-        "group flex flex-col rounded-xl border border-border bg-card overflow-hidden",
+        "group flex flex-col rounded-xl border border-border bg-card overflow-hidden cursor-pointer",
         "transition-[transform,box-shadow] duration-[var(--tome-duration-fast)] ease-[var(--tome-ease-scholarly)]",
         "hover:scale-[1.02] hover:shadow-md motion-reduce:hover:scale-100",
+        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--tome-accent,#6366f1)] focus-visible:ring-offset-2",
         className
       )}
     >
@@ -179,16 +200,13 @@ export function BookCard({ book, progress, size = "sm", className, activeSort }:
           {book.title}
         </h3>
 
-        {/* Intercept click so AuthorLink doesn't also trigger the outer <a> */}
-        <span onClick={(e) => e.preventDefault()}>
-          <AuthorLink
-            name={book.author}
-            className={cn(
-              "text-muted-foreground hover:text-[var(--tome-accent)] transition-colors",
-              size === "lg" ? "text-xs" : "text-[10px]"
-            )}
-          />
-        </span>
+        <AuthorLink
+          name={book.author}
+          className={cn(
+            "text-muted-foreground hover:text-[var(--tome-accent)] transition-colors",
+            size === "lg" ? "text-xs" : "text-[10px]"
+          )}
+        />
 
         {/* Difficulty badge */}
         <span
@@ -231,6 +249,6 @@ export function BookCard({ book, progress, size = "sm", className, activeSort }:
           </div>
         )}
       </div>
-    </a>
+    </div>
   )
 }

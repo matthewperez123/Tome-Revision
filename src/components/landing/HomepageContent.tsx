@@ -85,10 +85,10 @@ export function HomepageContent() {
       <MiddleEnglishGlossesShowcase />
       <AnnotationShowcase />
       <PersonalAnnotationsShowcase />
-      <TrialsShowcase />
       <GamificationSection />
-      <LibraryShowcase />
+      <TrialsShowcase />
       <WorldMapSection />
+      <LibraryShowcase />
       <TimelinesShowcase />
       <AuthorShowcase />
       <BookClubsShowcase />
