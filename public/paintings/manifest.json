@@ -34,7 +34,7 @@
     "filename": "barque-of-dante.jpg",
     "src": "/paintings/barque-of-dante.jpg",
     "title": "The Barque of Dante",
-    "artist": "Eugène Delacroix",
+    "artist": "Eug\u00e8ne Delacroix",
     "year": "1822",
     "focalPoint": "center",
     "tradition": "romantic",
@@ -93,7 +93,7 @@
     "id": "moby-dick-turner",
     "filename": "moby-dick-turner.jpg",
     "src": "/paintings/moby-dick-turner.jpg",
-    "title": "Snow Storm — Steam-Boat off a Harbour's Mouth",
+    "title": "Snow Storm \u2014 Steam-Boat off a Harbour's Mouth",
     "artist": "J.M.W. Turner",
     "year": "1842",
     "focalPoint": "center",
@@ -146,7 +146,7 @@
     "filename": "liberty-leading-the-people.jpg",
     "src": "/paintings/liberty-leading-the-people.jpg",
     "title": "Liberty Leading the People",
-    "artist": "Eugène Delacroix",
+    "artist": "Eug\u00e8ne Delacroix",
     "year": "1830",
     "focalPoint": "center",
     "tradition": "romantic",
@@ -460,7 +460,7 @@
     "filename": "don-quixote-dore.jpg",
     "src": "/paintings/don-quixote-dore.jpg",
     "title": "Don Quixote and Sancho Panza",
-    "artist": "Gustave Doré",
+    "artist": "Gustave Dor\u00e9",
     "year": "1863",
     "focalPoint": "center",
     "medium": "Oil on canvas",
@@ -842,7 +842,7 @@
     "year": "1784",
     "focalPoint": "center",
     "medium": "Oil on canvas",
-    "institution": "Musée du Louvre",
+    "institution": "Mus\u00e9e du Louvre",
     "license": "PD-Art",
     "tradition": "neoclassical",
     "themes": [
@@ -1165,7 +1165,7 @@
     "year": "1850",
     "focalPoint": "center",
     "medium": "Oil on canvas",
-    "institution": "Musée d'Orsay",
+    "institution": "Mus\u00e9e d'Orsay",
     "license": "PD-Art",
     "tradition": "academic",
     "themes": [
@@ -1336,11 +1336,11 @@
   {
     "id": "raft-of-the-medusa",
     "title": "The Raft of the Medusa",
-    "artist": "Théodore Géricault",
+    "artist": "Th\u00e9odore G\u00e9ricault",
     "year": "1819",
     "focalPoint": "center",
     "medium": "Oil on canvas",
-    "institution": "Musée du Louvre",
+    "institution": "Mus\u00e9e du Louvre",
     "license": "PD-Art",
     "tradition": "romantic",
     "themes": [
@@ -1354,7 +1354,7 @@
     ],
     "era": "19th-century",
     "mood": "dramatic",
-    "caption": "Géricault's monumental canvas of shipwreck survivors scandalized France and launched Romantic painting.",
+    "caption": "G\u00e9ricault's monumental canvas of shipwreck survivors scandalized France and launched Romantic painting.",
     "filename": "raft-of-the-medusa.jpg",
     "src": "/paintings/raft-of-the-medusa.jpg",
     "imageUrl": "",
@@ -1485,7 +1485,7 @@
     "year": "1668",
     "focalPoint": "center",
     "medium": "Oil on canvas",
-    "institution": "Musée du Louvre",
+    "institution": "Mus\u00e9e du Louvre",
     "license": "PD-Art",
     "tradition": "dutch-golden-age",
     "themes": [
@@ -1514,7 +1514,7 @@
     "year": "1632",
     "focalPoint": "center",
     "medium": "Oil on panel",
-    "institution": "Musée du Louvre",
+    "institution": "Mus\u00e9e du Louvre",
     "license": "PD-Art",
     "tradition": "baroque",
     "themes": [
@@ -1659,7 +1659,7 @@
   {
     "id": "isle-of-the-dead",
     "title": "Isle of the Dead",
-    "artist": "Arnold Böcklin",
+    "artist": "Arnold B\u00f6cklin",
     "year": "1880",
     "focalPoint": "center",
     "medium": "Oil on canvas",
@@ -1677,7 +1677,7 @@
     ],
     "era": "19th-century",
     "mood": "sublime",
-    "caption": "Böcklin's mysterious island sanctuary, approached by a shrouded figure, became the supreme Symbolist image of death.",
+    "caption": "B\u00f6cklin's mysterious island sanctuary, approached by a shrouded figure, became the supreme Symbolist image of death.",
     "filename": "isle-of-the-dead.jpg",
     "src": "/paintings/isle-of-the-dead.jpg",
     "imageUrl": "",
@@ -3544,7 +3544,7 @@
     "id": "beguiling-of-merlin",
     "title": "The Beguiling of Merlin",
     "artist": "Edward Burne-Jones",
-    "year": "1877",
+    "year": "1874",
     "tradition": "pre-raphaelite",
     "category": "pre-raphaelite-victorian",
     "mood": "contemplative",
@@ -3555,7 +3555,7 @@
       "magic"
     ],
     "pairedBooks": [
-      "le-morte-darthur"
+      "idylls-of-the-king"
     ],
     "dominantColor": "#3A5A3A",
     "aspectRatio": 0.56,
@@ -6165,5 +6165,159 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/El_Greco%2C_The_Vision_of_Saint_John_%281608-1614%29.jpg/1280px-El_Greco%2C_The_Vision_of_Saint_John_%281608-1614%29.jpg",
     "license": "PD-Art",
     "caption": ""
+  },
+  {
+    "id": "morning-of-agincourt-gilbert",
+    "filename": "morning-of-agincourt-gilbert.jpg",
+    "src": "/paintings/morning-of-agincourt-gilbert.jpg",
+    "title": "The Morning of the Battle of Agincourt, 25th October 1415",
+    "artist": "Sir John Gilbert",
+    "year": "1884",
+    "focalPoint": "center",
+    "tradition": "victorian-history",
+    "themes": [
+      "war",
+      "dawn",
+      "weariness",
+      "fate"
+    ],
+    "pairedBooks": [
+      "henry-v"
+    ],
+    "era": "19th-century",
+    "mood": "atmospheric",
+    "caption": "Gilbert paints the pre-dawn hours before Agincourt \u2014 Henry's rain-soaked army in the mud on St. Crispin's morning, atmosphere weighted between glory and catastrophe.",
+    "medium": "Oil on canvas",
+    "institution": "Guildhall Art Gallery, City of London",
+    "sourceUrl": "https://artuk.org/discover/artworks/the-morning-of-the-battle-of-agincourt-25th-october-1415-51323",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Sir_John_Gilbert_-_The_Morning_of_the_Battle_of_Agincourt%2C_25th_October_1415_-_Google_Art_Project.jpg",
+    "license": "PD-Old",
+    "dominantColor": "#3A3A4A",
+    "aspectRatio": 1.4,
+    "category": "pre-raphaelite-victorian"
+  },
+  {
+    "id": "richard-iii-portrait-npg",
+    "filename": "richard-iii-portrait.jpg",
+    "src": "/paintings/richard-iii-portrait.jpg",
+    "title": "Portrait of King Richard III",
+    "artist": "Unknown, English School",
+    "year": "c. 1520",
+    "focalPoint": "center",
+    "tradition": "tudor-portraiture",
+    "themes": [
+      "kingship",
+      "portraiture",
+      "tyranny",
+      "historiography"
+    ],
+    "pairedBooks": [
+      "richard-iii"
+    ],
+    "era": "16th-century",
+    "mood": "psychological",
+    "caption": "The earliest surviving portrait of Richard III \u2014 a posthumous Tudor-era copy of a lost original. The face Shakespeare inherited, filtered through the same dynasty whose propaganda the play works inside.",
+    "medium": "Oil on panel",
+    "institution": "National Portrait Gallery, London (NPG 148)",
+    "sourceUrl": "https://www.npg.org.uk/collections/search/portrait/mw05304/King-Richard-III",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/King_Richard_III.jpg",
+    "license": "PD-Art",
+    "dominantColor": "#3A2A1C",
+    "aspectRatio": 0.8,
+    "category": "tudor-portraiture"
+  },
+  {
+    "id": "byron-in-albanian-dress",
+    "filename": "byron-in-albanian-dress.jpg",
+    "src": "/paintings/byron-in-albanian-dress.jpg",
+    "title": "Lord Byron in Albanian Dress",
+    "artist": "Thomas Phillips",
+    "year": "1813",
+    "focalPoint": "center",
+    "isDefault": true,
+    "tradition": "romantic-portraiture",
+    "themes": [
+      "portraiture",
+      "romanticism",
+      "exile",
+      "orientalism"
+    ],
+    "pairedBooks": [
+      "don-juan"
+    ],
+    "era": "19th-century",
+    "mood": "intimate",
+    "caption": "Phillips's iconic portrait of the young Byron in the Albanian costume he bought in Epirus \u2014 the image that fixed Byron as a Romantic type. For Don Juan the painting is more than period decoration: the poem is about Byron-the-narrator more than about Juan-the-character, and this is the face of that narrator.",
+    "medium": "Oil on canvas",
+    "institution": "National Portrait Gallery, London (NPG 142)",
+    "sourceUrl": "https://www.npg.org.uk/collections/search/portrait/mw00977/George-Gordon-Byron-6th-Baron-Byron",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Lord_Byron_in_Albanian_Dress_by_Thomas_Phillips%2C_1813.jpg",
+    "license": "PD-Art",
+    "dominantColor": "#5C1A1B",
+    "aspectRatio": 0.78,
+    "category": "romantic-portraiture"
+  },
+  {
+    "id": "orlando-madness-dore",
+    "filename": "orlando-madness-dore.jpg",
+    "src": "/paintings/orlando-madness-dore.jpg",
+    "title": "Orlando's Madness",
+    "artist": "Gustave Dor\u00e9",
+    "year": "1877",
+    "focalPoint": "center",
+    "isDefault": true,
+    "tradition": "romantic",
+    "themes": [
+      "madness",
+      "love",
+      "chivalry",
+      "forest",
+      "wilderness"
+    ],
+    "pairedBooks": [
+      "orlando-furioso"
+    ],
+    "era": "19th-century",
+    "mood": "dramatic",
+    "caption": "Dor\u00e9's plate for the 1877 edition depicts the poem's titular moment \u2014 Orlando, on discovering the forest carvings that prove Angelica's love for Medoro, stripped of his armor and uprooting trees in his madness. The 1877 Hachette edition's engravings are the canonical Western visual tradition for Ariosto, the same project that produced Dor\u00e9's Dante and Milton work.",
+    "medium": "Wood engraving (1877 Hachette edition)",
+    "institution": "",
+    "sourceUrl": "",
+    "imageUrl": "",
+    "license": "PD-Old",
+    "dominantColor": "#1F3A2E",
+    "aspectRatio": 0.72,
+    "category": "romantic-sublime"
+  },
+  {
+    "id": "armada-portrait",
+    "filename": "armada-portrait.jpg",
+    "src": "/paintings/armada-portrait.jpg",
+    "title": "Elizabeth I (The Armada Portrait)",
+    "artist": "formerly attributed to George Gower; workshop",
+    "year": "1588",
+    "focalPoint": "center",
+    "tradition": "tudor-portraiture",
+    "themes": [
+      "sovereignty",
+      "empire",
+      "elizabeth",
+      "armada",
+      "allegory"
+    ],
+    "pairedBooks": [
+      "the-faerie-queene"
+    ],
+    "era": "16th-century",
+    "mood": "sovereign",
+    "caption": "Painted to celebrate the defeat of the Spanish Armada in August 1588, the portrait shows Elizabeth I in jewel-heavy imperial pomp, her hand resting on a globe at the Americas, the Spanish fleet wrecking on the storms visible through the windows behind her. Spenser's Gloriana is this queen under allegorical veil; the cover acknowledges that The Faerie Queene is inextricable from the sovereign it addresses.",
+    "medium": "Oil on panel",
+    "institution": "Three contemporary versions survive: Woburn Abbey (Bedford), the National Museum of the Royal Navy (Greenwich, bequeathed by the Tyrwhitt-Drake family), and the National Portrait Gallery (London). The Greenwich version is the one most often reproduced; source here is a composite public-domain scan.",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elizabeth_I_(Armada_Portrait).jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Elizabeth_I_%28Armada_Portrait%29.jpg",
+    "license": "PD-Old",
+    "dominantColor": "#5E1126",
+    "aspectRatio": 1.248,
+    "category": "tudor-portraiture"
   }
 ]
