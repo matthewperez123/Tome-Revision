@@ -101,15 +101,12 @@ function countWords(html: string): number {
 }
 
 function cleanHtml(html: string): string {
-  // Remove SE-specific attributes
+  // Remove SE-specific attributes but preserve <i>/<b> tags
+  // (used for stage directions and character names in drama)
   return html
     .replace(/\s*epub:type="[^"]*"/g, "")
     .replace(/\s*xml:lang="[^"]*"/g, "")
-    .replace(/\s*xmlns:[a-z]+="[^"]*"/g, "")
-    .replace(/<i>/g, "<em>")
-    .replace(/<\/i>/g, "</em>")
-    .replace(/<b>/g, "<strong>")
-    .replace(/<\/b>/g, "</strong>");
+    .replace(/\s*xmlns:[a-z]+="[^"]*"/g, "");
 }
 
 async function fetchGitHub(repoSlug: string, filePath: string): Promise<string | null> {

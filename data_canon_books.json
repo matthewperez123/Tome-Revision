@@ -1,0 +1,2562 @@
+[
+  {
+    "id": "the-iliad",
+    "title": "The Iliad",
+    "author": "Homer",
+    "authorId": "homer",
+    "tradition": "Ancient Greek",
+    "difficulty": "Intermediate",
+    "year": -750,
+    "primaryGenre": "Epic Poetry"
+  },
+  {
+    "id": "the-odyssey",
+    "title": "The Odyssey",
+    "author": "Homer",
+    "authorId": "homer",
+    "tradition": "Ancient Greek",
+    "difficulty": "Intermediate",
+    "year": -725,
+    "primaryGenre": "Epic Poetry"
+  },
+  {
+    "id": "oedipus-rex",
+    "title": "Oedipus Rex",
+    "author": "Sophocles",
+    "authorId": "sophocles",
+    "tradition": "Ancient Greek",
+    "difficulty": "Beginner",
+    "year": -429,
+    "primaryGenre": "Tragedy"
+  },
+  {
+    "id": "antigone",
+    "title": "Antigone",
+    "author": "Sophocles",
+    "authorId": "sophocles",
+    "tradition": "Ancient Greek",
+    "difficulty": "Beginner",
+    "year": -441,
+    "primaryGenre": "Tragedy"
+  },
+  {
+    "id": "the-republic",
+    "title": "The Republic",
+    "author": "Plato",
+    "authorId": "plato",
+    "tradition": "Ancient Greek",
+    "difficulty": "Advanced",
+    "year": -380,
+    "primaryGenre": "Philosophy"
+  },
+  {
+    "id": "symposium",
+    "title": "Symposium",
+    "author": "Plato",
+    "authorId": "plato",
+    "tradition": "Ancient Greek",
+    "difficulty": "Intermediate",
+    "year": -385,
+    "primaryGenre": "Philosophy"
+  },
+  {
+    "id": "apology",
+    "title": "Apology",
+    "author": "Plato",
+    "authorId": "plato",
+    "tradition": "Ancient Greek",
+    "difficulty": "Beginner",
+    "year": -399,
+    "primaryGenre": "Philosophy"
+  },
+  {
+    "id": "nicomachean-ethics",
+    "title": "Nicomachean Ethics",
+    "author": "Aristotle",
+    "authorId": "aristotle",
+    "tradition": "Ancient Greek",
+    "difficulty": "Advanced",
+    "year": -350,
+    "primaryGenre": "Philosophy"
+  },
+  {
+    "id": "the-histories",
+    "title": "The Histories",
+    "author": "Herodotus",
+    "authorId": "herodotus",
+    "tradition": "Ancient Greek",
+    "difficulty": "Intermediate",
+    "year": -440,
+    "primaryGenre": "History"
+  },
+  {
+    "id": "the-aeneid",
+    "title": "The Aeneid",
+    "author": "Virgil",
+    "authorId": "virgil",
+    "tradition": "Roman",
+    "difficulty": "Intermediate",
+    "year": -19,
+    "primaryGenre": "Epic Poetry"
+  },
+  {
+    "id": "metamorphoses",
+    "title": "Metamorphoses",
+    "author": "Ovid",
+    "authorId": "ovid",
+    "tradition": "Roman",
+    "difficulty": "Intermediate",
+    "year": 8,
+    "primaryGenre": "Mythological Poetry"
+  },
+  {
+    "id": "meditations",
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "authorId": "marcus-aurelius",
+    "tradition": "Roman",
+    "difficulty": "Beginner",
+    "year": 180,
+    "primaryGenre": "Philosophy"
+  },
+  {
+    "id": "the-divine-comedy",
+    "title": "The Divine Comedy",
+    "author": "Dante Alighieri",
+    "authorId": "dante-alighieri",
+    "tradition": "Medieval European",
+    "difficulty": "Intermediate",
+    "year": 1320,
+    "primaryGenre": "Epic Poetry"
+  },
+  {
+    "id": "the-canterbury-tales",
+    "title": "The Canterbury Tales",
+    "author": "Geoffrey Chaucer",
+    "authorId": "geoffrey-chaucer",
+    "tradition": "Medieval European",
+    "difficulty": "Intermediate",
+    "year": 1400,
+    "primaryGenre": "Poetry"
+  },
+  {
+    "id": "beowulf",
+    "title": "Beowulf",
+    "author": "Unknown",
+    "authorId": "unknown-beowulf",
+    "tradition": "Medieval European",
+    "difficulty": "Intermediate",
+    "year": 1000,
+    "primaryGenre": "Epic Poetry"
+  },
+  {
+    "id": "the-decameron",
+    "title": "The Decameron",
+    "author": "Giovanni Boccaccio",
+    "authorId": "giovanni-boccaccio",
+    "tradition": "Medieval European",
+    "difficulty": "Intermediate",
+    "year": 1353,
+    "primaryGenre": "Frame Narrative"
+  },
+  {
+    "id": "le-morte-darthur",
+    "title": "Le Morte d'Arthur",
+    "author": "Thomas Malory",
+    "authorId": "thomas-malory",
+    "tradition": "Medieval European",
+    "difficulty": "Intermediate",
+    "year": 1485,
+    "primaryGenre": "Chivalric Romance"
+  },
+  {
+    "id": "hamlet",
+    "title": "Hamlet",
+    "author": "William Shakespeare",
+    "authorId": "william-shakespeare",
+    "tradition": "Renaissance",
+    "difficulty": "Intermediate",
+    "year": 1603,
+    "primaryGenre": "Tragedy"
+  },
+  {
+    "id": "macbeth",
+    "title": "Macbeth",
+    "author": "William Shakespeare",
+    "authorId": "william-shakespeare",
+    "tradition": "Renaissance",
+    "difficulty": "Beginner",
+    "year": 1606,
+    "primaryGenre": "Tragedy"
+  },
+  {
+    "id": "othello",
+    "title": "Othello",
+    "author": "William Shakespeare",
+    "authorId": "william-shakespeare",
+    "tradition": "Renaissance",
+    "difficulty": "Intermediate",
+    "year": 1622,
+    "primaryGenre": "Tragedy"
+  },
+  {
+    "id": "the-tempest",
+    "title": "The Tempest",
+    "author": "William Shakespeare",
+    "authorId": "william-shakespeare",
+    "tradition": "Renaissance",
+    "difficulty": "Beginner",
+    "year": 1611,
+    "primaryGenre": "Romance"
+  },
+  {
+    "id": "don-quixote",
+    "title": "Don Quixote",
+    "author": "Miguel de Cervantes",
+    "authorId": "miguel-de-cervantes",
+    "tradition": "Renaissance",
+    "difficulty": "Intermediate",
+    "year": 1615,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-prince",
+    "title": "The Prince",
+    "author": "Niccolò Machiavelli",
+    "authorId": "niccolo-machiavelli",
+    "tradition": "Renaissance",
+    "difficulty": "Beginner",
+    "year": 1532,
+    "primaryGenre": "Political Philosophy"
+  },
+  {
+    "id": "paradise-lost",
+    "title": "Paradise Lost",
+    "author": "John Milton",
+    "authorId": "john-milton",
+    "tradition": "Renaissance",
+    "difficulty": "Advanced",
+    "year": 1667,
+    "primaryGenre": "Epic Poetry"
+  },
+  {
+    "id": "candide",
+    "title": "Candide",
+    "author": "Voltaire",
+    "authorId": "voltaire",
+    "tradition": "Enlightenment",
+    "difficulty": "Beginner",
+    "year": 1759,
+    "primaryGenre": "Satire"
+  },
+  {
+    "id": "gullivers-travels",
+    "title": "Gulliver's Travels",
+    "author": "Jonathan Swift",
+    "authorId": "jonathan-swift",
+    "tradition": "Enlightenment",
+    "difficulty": "Beginner",
+    "year": 1726,
+    "primaryGenre": "Satire"
+  },
+  {
+    "id": "the-social-contract",
+    "title": "The Social Contract",
+    "author": "Jean-Jacques Rousseau",
+    "authorId": "jean-jacques-rousseau",
+    "tradition": "Enlightenment",
+    "difficulty": "Advanced",
+    "year": 1762,
+    "primaryGenre": "Political Philosophy"
+  },
+  {
+    "id": "discourse-on-method",
+    "title": "Discourse on Method",
+    "author": "René Descartes",
+    "authorId": "rene-descartes",
+    "tradition": "Enlightenment",
+    "difficulty": "Intermediate",
+    "year": 1637,
+    "primaryGenre": "Philosophy"
+  },
+  {
+    "id": "the-wealth-of-nations",
+    "title": "The Wealth of Nations",
+    "author": "Adam Smith",
+    "authorId": "adam-smith",
+    "tradition": "Enlightenment",
+    "difficulty": "Scholar",
+    "year": 1776,
+    "primaryGenre": "Economics"
+  },
+  {
+    "id": "pride-and-prejudice",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "authorId": "jane-austen",
+    "tradition": "Romantic",
+    "difficulty": "Beginner",
+    "year": 1813,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "frankenstein",
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "authorId": "mary-shelley",
+    "tradition": "Romantic",
+    "difficulty": "Beginner",
+    "year": 1818,
+    "primaryGenre": "Gothic Fiction"
+  },
+  {
+    "id": "jane-eyre",
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "authorId": "charlotte-bronte",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1847,
+    "primaryGenre": "Gothic Novel"
+  },
+  {
+    "id": "wuthering-heights",
+    "title": "Wuthering Heights",
+    "author": "Emily Brontë",
+    "authorId": "emily-bronte",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1847,
+    "primaryGenre": "Gothic Novel"
+  },
+  {
+    "id": "great-expectations",
+    "title": "Great Expectations",
+    "author": "Charles Dickens",
+    "authorId": "charles-dickens",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1861,
+    "primaryGenre": "Bildungsroman"
+  },
+  {
+    "id": "a-tale-of-two-cities",
+    "title": "A Tale of Two Cities",
+    "author": "Charles Dickens",
+    "authorId": "charles-dickens",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1859,
+    "primaryGenre": "Historical Novel"
+  },
+  {
+    "id": "moby-dick",
+    "title": "Moby-Dick",
+    "author": "Herman Melville",
+    "authorId": "herman-melville",
+    "tradition": "American",
+    "difficulty": "Advanced",
+    "year": 1851,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "les-miserables",
+    "title": "Les Misérables",
+    "author": "Victor Hugo",
+    "authorId": "victor-hugo",
+    "tradition": "Romantic",
+    "difficulty": "Intermediate",
+    "year": 1862,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-count-of-monte-cristo",
+    "title": "The Count of Monte Cristo",
+    "author": "Alexandre Dumas",
+    "authorId": "alexandre-dumas",
+    "tradition": "Romantic",
+    "difficulty": "Beginner",
+    "year": 1846,
+    "primaryGenre": "Adventure Novel"
+  },
+  {
+    "id": "madame-bovary",
+    "title": "Madame Bovary",
+    "author": "Gustave Flaubert",
+    "authorId": "gustave-flaubert",
+    "tradition": "French",
+    "difficulty": "Intermediate",
+    "year": 1857,
+    "primaryGenre": "Realist Novel"
+  },
+  {
+    "id": "the-scarlet-letter",
+    "title": "The Scarlet Letter",
+    "author": "Nathaniel Hawthorne",
+    "authorId": "nathaniel-hawthorne",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1850,
+    "primaryGenre": "Gothic Novel"
+  },
+  {
+    "id": "little-women",
+    "title": "Little Women",
+    "author": "Louisa May Alcott",
+    "authorId": "louisa-may-alcott",
+    "tradition": "American",
+    "difficulty": "Beginner",
+    "year": 1868,
+    "primaryGenre": "Bildungsroman"
+  },
+  {
+    "id": "the-picture-of-dorian-gray",
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "authorId": "oscar-wilde",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1891,
+    "primaryGenre": "Gothic Novel"
+  },
+  {
+    "id": "war-and-peace",
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "authorId": "leo-tolstoy",
+    "tradition": "Russian",
+    "difficulty": "Scholar",
+    "year": 1869,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "anna-karenina",
+    "title": "Anna Karenina",
+    "author": "Leo Tolstoy",
+    "authorId": "leo-tolstoy",
+    "tradition": "Russian",
+    "difficulty": "Intermediate",
+    "year": 1878,
+    "primaryGenre": "Realist Novel"
+  },
+  {
+    "id": "crime-and-punishment",
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "authorId": "fyodor-dostoevsky",
+    "tradition": "Russian",
+    "difficulty": "Intermediate",
+    "year": 1866,
+    "primaryGenre": "Psychological Novel"
+  },
+  {
+    "id": "the-brothers-karamazov",
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "authorId": "fyodor-dostoevsky",
+    "tradition": "Russian",
+    "difficulty": "Advanced",
+    "year": 1880,
+    "primaryGenre": "Philosophical Novel"
+  },
+  {
+    "id": "eugene-onegin",
+    "title": "Eugene Onegin",
+    "author": "Alexander Pushkin",
+    "authorId": "alexander-pushkin",
+    "tradition": "Russian",
+    "difficulty": "Intermediate",
+    "year": 1833,
+    "primaryGenre": "Novel in Verse"
+  },
+  {
+    "id": "the-cherry-orchard",
+    "title": "The Cherry Orchard",
+    "author": "Anton Chekhov",
+    "authorId": "anton-chekhov",
+    "tradition": "Russian",
+    "difficulty": "Beginner",
+    "year": 1904,
+    "primaryGenre": "Drama"
+  },
+  {
+    "id": "notes-from-underground",
+    "title": "Notes from Underground",
+    "author": "Fyodor Dostoevsky",
+    "authorId": "fyodor-dostoevsky",
+    "tradition": "Russian",
+    "difficulty": "Intermediate",
+    "year": 1864,
+    "primaryGenre": "Philosophical Fiction"
+  },
+  {
+    "id": "walden",
+    "title": "Walden",
+    "author": "Henry David Thoreau",
+    "authorId": "henry-david-thoreau",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1854,
+    "primaryGenre": "Essay"
+  },
+  {
+    "id": "the-great-gatsby",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "authorId": "f-scott-fitzgerald",
+    "tradition": "American",
+    "difficulty": "Beginner",
+    "year": 1925,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-call-of-the-wild",
+    "title": "The Call of the Wild",
+    "author": "Jack London",
+    "authorId": "jack-london",
+    "tradition": "American",
+    "difficulty": "Beginner",
+    "year": 1903,
+    "primaryGenre": "Adventure Novel"
+  },
+  {
+    "id": "the-adventures-of-tom-sawyer",
+    "title": "The Adventures of Tom Sawyer",
+    "author": "Mark Twain",
+    "authorId": "mark-twain",
+    "tradition": "American",
+    "difficulty": "Beginner",
+    "year": 1876,
+    "primaryGenre": "Adventure Novel"
+  },
+  {
+    "id": "germinal",
+    "title": "Germinal",
+    "author": "Émile Zola",
+    "authorId": "emile-zola",
+    "tradition": "French",
+    "difficulty": "Intermediate",
+    "year": 1885,
+    "primaryGenre": "Realist Novel"
+  },
+  {
+    "id": "the-three-musketeers",
+    "title": "The Three Musketeers",
+    "author": "Alexandre Dumas",
+    "authorId": "alexandre-dumas",
+    "tradition": "French",
+    "difficulty": "Beginner",
+    "year": 1844,
+    "primaryGenre": "Adventure Novel"
+  },
+  {
+    "id": "ulysses",
+    "title": "Ulysses",
+    "author": "James Joyce",
+    "authorId": "james-joyce",
+    "tradition": "Modernist",
+    "difficulty": "Scholar",
+    "year": 1922,
+    "primaryGenre": "Modernist Novel"
+  },
+  {
+    "id": "mrs-dalloway",
+    "title": "Mrs. Dalloway",
+    "author": "Virginia Woolf",
+    "authorId": "virginia-woolf",
+    "tradition": "Modernist",
+    "difficulty": "Advanced",
+    "year": 1925,
+    "primaryGenre": "Modernist Novel"
+  },
+  {
+    "id": "heart-of-darkness",
+    "title": "Heart of Darkness",
+    "author": "Joseph Conrad",
+    "authorId": "joseph-conrad",
+    "tradition": "Modernist",
+    "difficulty": "Intermediate",
+    "year": 1899,
+    "primaryGenre": "Novella"
+  },
+  {
+    "id": "to-the-lighthouse",
+    "title": "To the Lighthouse",
+    "author": "Virginia Woolf",
+    "authorId": "virginia-woolf",
+    "tradition": "Modernist",
+    "difficulty": "Advanced",
+    "year": 1927,
+    "primaryGenre": "Modernist Novel"
+  },
+  {
+    "id": "the-art-of-war",
+    "title": "The Art of War",
+    "author": "Sun Tzu",
+    "authorId": "sun-tzu",
+    "tradition": "Eastern",
+    "difficulty": "Beginner",
+    "year": -500,
+    "primaryGenre": "Military Strategy"
+  },
+  {
+    "id": "tao-te-ching",
+    "title": "Tao Te Ching",
+    "author": "Laozi",
+    "authorId": "laozi",
+    "tradition": "Eastern",
+    "difficulty": "Intermediate",
+    "year": -400,
+    "primaryGenre": "Philosophy"
+  },
+  {
+    "id": "the-importance-of-being-earnest",
+    "title": "The Importance of Being Earnest",
+    "author": "Oscar Wilde",
+    "authorId": "oscar-wilde",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1895,
+    "primaryGenre": "Comedy"
+  },
+  {
+    "id": "a-dolls-house",
+    "title": "A Doll's House",
+    "author": "Henrik Ibsen",
+    "authorId": "henrik-ibsen",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1879,
+    "primaryGenre": "Drama"
+  },
+  {
+    "id": "the-adventures-of-huckleberry-finn",
+    "title": "The Adventures of Huckleberry Finn",
+    "author": "Mark Twain",
+    "authorId": "mark-twain",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1884,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-scarlet-pimpernel",
+    "title": "The Scarlet Pimpernel",
+    "author": "Baroness Orczy",
+    "authorId": "baroness-orczy",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1905,
+    "primaryGenre": "Adventure"
+  },
+  {
+    "id": "dracula",
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "authorId": "bram-stoker",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1897,
+    "primaryGenre": "Gothic"
+  },
+  {
+    "id": "emma",
+    "title": "Emma",
+    "author": "Jane Austen",
+    "authorId": "jane-austen",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1815,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "sense-and-sensibility",
+    "title": "Sense and Sensibility",
+    "author": "Jane Austen",
+    "authorId": "jane-austen",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1811,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "persuasion",
+    "title": "Persuasion",
+    "author": "Jane Austen",
+    "authorId": "jane-austen",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1817,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "mansfield-park",
+    "title": "Mansfield Park",
+    "author": "Jane Austen",
+    "authorId": "jane-austen",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1814,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "northanger-abbey",
+    "title": "Northanger Abbey",
+    "author": "Jane Austen",
+    "authorId": "jane-austen",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1817,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-turn-of-the-screw",
+    "title": "The Turn of the Screw",
+    "author": "Henry James",
+    "authorId": "henry-james",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1898,
+    "primaryGenre": "Gothic"
+  },
+  {
+    "id": "the-portrait-of-a-lady",
+    "title": "The Portrait of a Lady",
+    "author": "Henry James",
+    "authorId": "henry-james",
+    "tradition": "Victorian",
+    "difficulty": "Advanced",
+    "year": 1881,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "david-copperfield",
+    "title": "David Copperfield",
+    "author": "Charles Dickens",
+    "authorId": "charles-dickens",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1850,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "oliver-twist",
+    "title": "Oliver Twist",
+    "author": "Charles Dickens",
+    "authorId": "charles-dickens",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1838,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "a-christmas-carol",
+    "title": "A Christmas Carol",
+    "author": "Charles Dickens",
+    "authorId": "charles-dickens",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1843,
+    "primaryGenre": "Novella"
+  },
+  {
+    "id": "bleak-house",
+    "title": "Bleak House",
+    "author": "Charles Dickens",
+    "authorId": "charles-dickens",
+    "tradition": "Victorian",
+    "difficulty": "Advanced",
+    "year": 1853,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "hard-times",
+    "title": "Hard Times",
+    "author": "Charles Dickens",
+    "authorId": "charles-dickens",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1854,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-strange-case-of-dr-jekyll-and-mr-hyde",
+    "title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
+    "author": "Robert Louis Stevenson",
+    "authorId": "robert-louis-stevenson",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1886,
+    "primaryGenre": "Gothic"
+  },
+  {
+    "id": "treasure-island",
+    "title": "Treasure Island",
+    "author": "Robert Louis Stevenson",
+    "authorId": "robert-louis-stevenson",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1883,
+    "primaryGenre": "Adventure"
+  },
+  {
+    "id": "the-hound-of-the-baskervilles",
+    "title": "The Hound of the Baskervilles",
+    "author": "Arthur Conan Doyle",
+    "authorId": "arthur-conan-doyle",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1902,
+    "primaryGenre": "Mystery"
+  },
+  {
+    "id": "a-study-in-scarlet",
+    "title": "A Study in Scarlet",
+    "author": "Arthur Conan Doyle",
+    "authorId": "arthur-conan-doyle",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1887,
+    "primaryGenre": "Mystery"
+  },
+  {
+    "id": "the-sign-of-the-four",
+    "title": "The Sign of the Four",
+    "author": "Arthur Conan Doyle",
+    "authorId": "arthur-conan-doyle",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1890,
+    "primaryGenre": "Mystery"
+  },
+  {
+    "id": "the-time-machine",
+    "title": "The Time Machine",
+    "author": "H. G. Wells",
+    "authorId": "h-g-wells",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1895,
+    "primaryGenre": "Science Fiction"
+  },
+  {
+    "id": "the-war-of-the-worlds",
+    "title": "The War of the Worlds",
+    "author": "H. G. Wells",
+    "authorId": "h-g-wells",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1898,
+    "primaryGenre": "Science Fiction"
+  },
+  {
+    "id": "the-invisible-man",
+    "title": "The Invisible Man",
+    "author": "H. G. Wells",
+    "authorId": "h-g-wells",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1897,
+    "primaryGenre": "Science Fiction"
+  },
+  {
+    "id": "the-jungle-book",
+    "title": "The Jungle Book",
+    "author": "Rudyard Kipling",
+    "authorId": "rudyard-kipling",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1894,
+    "primaryGenre": "Short Stories"
+  },
+  {
+    "id": "kim",
+    "title": "Kim",
+    "author": "Rudyard Kipling",
+    "authorId": "rudyard-kipling",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1901,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "siddhartha",
+    "title": "Siddhartha",
+    "author": "Hermann Hesse",
+    "authorId": "hermann-hesse",
+    "tradition": "Germanic",
+    "difficulty": "Beginner",
+    "year": 1922,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "a-room-with-a-view",
+    "title": "A Room with a View",
+    "author": "E. M. Forster",
+    "authorId": "e-m-forster",
+    "tradition": "Modernist",
+    "difficulty": "Intermediate",
+    "year": 1908,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "howards-end",
+    "title": "Howards End",
+    "author": "E. M. Forster",
+    "authorId": "e-m-forster",
+    "tradition": "Modernist",
+    "difficulty": "Advanced",
+    "year": 1910,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-age-of-innocence",
+    "title": "The Age of Innocence",
+    "author": "Edith Wharton",
+    "authorId": "edith-wharton",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1920,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "ethan-frome",
+    "title": "Ethan Frome",
+    "author": "Edith Wharton",
+    "authorId": "edith-wharton",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1911,
+    "primaryGenre": "Novella"
+  },
+  {
+    "id": "main-street",
+    "title": "Main Street",
+    "author": "Sinclair Lewis",
+    "authorId": "sinclair-lewis",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1920,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "arrowsmith",
+    "title": "Arrowsmith",
+    "author": "Sinclair Lewis",
+    "authorId": "sinclair-lewis",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1925,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "babbitt",
+    "title": "Babbitt",
+    "author": "Sinclair Lewis",
+    "authorId": "sinclair-lewis",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1922,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-sun-also-rises",
+    "title": "The Sun Also Rises",
+    "author": "Ernest Hemingway",
+    "authorId": "ernest-hemingway",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1926,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "this-side-of-paradise",
+    "title": "This Side of Paradise",
+    "author": "F. Scott Fitzgerald",
+    "authorId": "f-scott-fitzgerald",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1920,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-beautiful-and-damned",
+    "title": "The Beautiful and Damned",
+    "author": "F. Scott Fitzgerald",
+    "authorId": "f-scott-fitzgerald",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1922,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "look-homeward-angel",
+    "title": "Look Homeward, Angel",
+    "author": "Thomas Wolfe",
+    "authorId": "thomas-wolfe",
+    "tradition": "American",
+    "difficulty": "Advanced",
+    "year": 1929,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "sons-and-lovers",
+    "title": "Sons and Lovers",
+    "author": "D. H. Lawrence",
+    "authorId": "d-h-lawrence",
+    "tradition": "Modernist",
+    "difficulty": "Intermediate",
+    "year": 1913,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "women-in-love",
+    "title": "Women in Love",
+    "author": "D. H. Lawrence",
+    "authorId": "d-h-lawrence",
+    "tradition": "Modernist",
+    "difficulty": "Advanced",
+    "year": 1920,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-rainbow",
+    "title": "The Rainbow",
+    "author": "D. H. Lawrence",
+    "authorId": "d-h-lawrence",
+    "tradition": "Modernist",
+    "difficulty": "Advanced",
+    "year": 1915,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-sound-and-the-fury",
+    "title": "The Sound and the Fury",
+    "author": "William Faulkner",
+    "authorId": "william-faulkner",
+    "tradition": "American",
+    "difficulty": "Scholar",
+    "year": 1929,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-good-soldier",
+    "title": "The Good Soldier",
+    "author": "Ford Madox Ford",
+    "authorId": "ford-madox-ford",
+    "tradition": "Modernist",
+    "difficulty": "Advanced",
+    "year": 1915,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "lord-jim",
+    "title": "Lord Jim",
+    "author": "Joseph Conrad",
+    "authorId": "joseph-conrad",
+    "tradition": "Modernist",
+    "difficulty": "Advanced",
+    "year": 1900,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-secret-agent",
+    "title": "The Secret Agent",
+    "author": "Joseph Conrad",
+    "authorId": "joseph-conrad",
+    "tradition": "Modernist",
+    "difficulty": "Advanced",
+    "year": 1907,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "nostromo",
+    "title": "Nostromo",
+    "author": "Joseph Conrad",
+    "authorId": "joseph-conrad",
+    "tradition": "Modernist",
+    "difficulty": "Scholar",
+    "year": 1904,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "a-passage-to-india",
+    "title": "A Passage to India",
+    "author": "E. M. Forster",
+    "authorId": "e-m-forster",
+    "tradition": "Modernist",
+    "difficulty": "Advanced",
+    "year": 1924,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "middlemarch",
+    "title": "Middlemarch",
+    "author": "George Eliot",
+    "authorId": "george-eliot",
+    "tradition": "Victorian",
+    "difficulty": "Advanced",
+    "year": 1871,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-mill-on-the-floss",
+    "title": "The Mill on the Floss",
+    "author": "George Eliot",
+    "authorId": "george-eliot",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1860,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "silas-marner",
+    "title": "Silas Marner",
+    "author": "George Eliot",
+    "authorId": "george-eliot",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1861,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "tess-of-the-durbervilles",
+    "title": "Tess of the d'Urbervilles",
+    "author": "Thomas Hardy",
+    "authorId": "thomas-hardy",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1891,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "far-from-the-madding-crowd",
+    "title": "Far from the Madding Crowd",
+    "author": "Thomas Hardy",
+    "authorId": "thomas-hardy",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1874,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-mayor-of-casterbridge",
+    "title": "The Mayor of Casterbridge",
+    "author": "Thomas Hardy",
+    "authorId": "thomas-hardy",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1886,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-moonstone",
+    "title": "The Moonstone",
+    "author": "Wilkie Collins",
+    "authorId": "wilkie-collins",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1868,
+    "primaryGenre": "Mystery"
+  },
+  {
+    "id": "the-woman-in-white",
+    "title": "The Woman in White",
+    "author": "Wilkie Collins",
+    "authorId": "wilkie-collins",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1859,
+    "primaryGenre": "Gothic"
+  },
+  {
+    "id": "vanity-fair",
+    "title": "Vanity Fair",
+    "author": "William Makepeace Thackeray",
+    "authorId": "william-makepeace-thackeray",
+    "tradition": "Victorian",
+    "difficulty": "Advanced",
+    "year": 1848,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "north-and-south",
+    "title": "North and South",
+    "author": "Elizabeth Gaskell",
+    "authorId": "elizabeth-gaskell",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1854,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "dead-souls",
+    "title": "Dead Souls",
+    "author": "Nikolai Gogol",
+    "authorId": "nikolai-gogol",
+    "tradition": "Russian",
+    "difficulty": "Intermediate",
+    "year": 1842,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "fathers-and-children",
+    "title": "Fathers and Children",
+    "author": "Ivan Turgenev",
+    "authorId": "ivan-turgenev",
+    "tradition": "Russian",
+    "difficulty": "Intermediate",
+    "year": 1862,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-idiot",
+    "title": "The Idiot",
+    "author": "Fyodor Dostoevsky",
+    "authorId": "fyodor-dostoevsky",
+    "tradition": "Russian",
+    "difficulty": "Advanced",
+    "year": 1869,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "resurrection",
+    "title": "Resurrection",
+    "author": "Leo Tolstoy",
+    "authorId": "leo-tolstoy",
+    "tradition": "Russian",
+    "difficulty": "Advanced",
+    "year": 1899,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "uncle-toms-cabin",
+    "title": "Uncle Tom's Cabin",
+    "author": "Harriet Beecher Stowe",
+    "authorId": "harriet-beecher-stowe",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1852,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "narrative-of-the-life-of-frederick-douglass",
+    "title": "Narrative of the Life of Frederick Douglass",
+    "author": "Frederick Douglass",
+    "authorId": "frederick-douglass",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1845,
+    "primaryGenre": "Autobiography"
+  },
+  {
+    "id": "the-souls-of-black-folk",
+    "title": "The Souls of Black Folk",
+    "author": "W. E. B. Du Bois",
+    "authorId": "w-e-b-du-bois",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1903,
+    "primaryGenre": "Essays"
+  },
+  {
+    "id": "up-from-slavery",
+    "title": "Up from Slavery",
+    "author": "Booker T. Washington",
+    "authorId": "booker-t-washington",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1901,
+    "primaryGenre": "Autobiography"
+  },
+  {
+    "id": "twelve-years-a-slave",
+    "title": "Twelve Years a Slave",
+    "author": "Solomon Northup",
+    "authorId": "solomon-northup",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1853,
+    "primaryGenre": "Autobiography"
+  },
+  {
+    "id": "the-autobiography-of-benjamin-franklin",
+    "title": "The Autobiography of Benjamin Franklin",
+    "author": "Benjamin Franklin",
+    "authorId": "benjamin-franklin",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1791,
+    "primaryGenre": "Autobiography"
+  },
+  {
+    "id": "leaves-of-grass",
+    "title": "Leaves of Grass",
+    "author": "Walt Whitman",
+    "authorId": "walt-whitman",
+    "tradition": "American",
+    "difficulty": "Advanced",
+    "year": 1855,
+    "primaryGenre": "Poetry"
+  },
+  {
+    "id": "the-house-of-mirth",
+    "title": "The House of Mirth",
+    "author": "Edith Wharton",
+    "authorId": "edith-wharton",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1905,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "my-antonia",
+    "title": "My Antonia",
+    "author": "Willa Cather",
+    "authorId": "willa-cather",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1918,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "o-pioneers",
+    "title": "O Pioneers!",
+    "author": "Willa Cather",
+    "authorId": "willa-cather",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1913,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-awakening",
+    "title": "The Awakening",
+    "author": "Kate Chopin",
+    "authorId": "kate-chopin",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1899,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-phantom-of-the-opera",
+    "title": "The Phantom of the Opera",
+    "author": "Gaston Leroux",
+    "authorId": "gaston-leroux",
+    "tradition": "French",
+    "difficulty": "Beginner",
+    "year": 1910,
+    "primaryGenre": "Gothic"
+  },
+  {
+    "id": "around-the-world-in-eighty-days",
+    "title": "Around the World in Eighty Days",
+    "author": "Jules Verne",
+    "authorId": "jules-verne",
+    "tradition": "French",
+    "difficulty": "Beginner",
+    "year": 1873,
+    "primaryGenre": "Adventure"
+  },
+  {
+    "id": "journey-to-the-center-of-the-earth",
+    "title": "Journey to the Center of the Earth",
+    "author": "Jules Verne",
+    "authorId": "jules-verne",
+    "tradition": "French",
+    "difficulty": "Beginner",
+    "year": 1864,
+    "primaryGenre": "Science Fiction"
+  },
+  {
+    "id": "the-prince-and-the-pauper",
+    "title": "The Prince and the Pauper",
+    "author": "Mark Twain",
+    "authorId": "mark-twain",
+    "tradition": "American",
+    "difficulty": "Beginner",
+    "year": 1881,
+    "primaryGenre": "Historical Fiction"
+  },
+  {
+    "id": "a-connecticut-yankee-in-king-arthurs-court",
+    "title": "A Connecticut Yankee in King Arthur's Court",
+    "author": "Mark Twain",
+    "authorId": "mark-twain",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1889,
+    "primaryGenre": "Satire"
+  },
+  {
+    "id": "the-wonderful-wizard-of-oz",
+    "title": "The Wonderful Wizard of Oz",
+    "author": "L. Frank Baum",
+    "authorId": "l-frank-baum",
+    "tradition": "American",
+    "difficulty": "Beginner",
+    "year": 1900,
+    "primaryGenre": "Fantasy"
+  },
+  {
+    "id": "peter-and-wendy",
+    "title": "Peter and Wendy",
+    "author": "J. M. Barrie",
+    "authorId": "j-m-barrie",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1911,
+    "primaryGenre": "Fantasy"
+  },
+  {
+    "id": "alices-adventures-in-wonderland",
+    "title": "Alice's Adventures in Wonderland",
+    "author": "Lewis Carroll",
+    "authorId": "lewis-carroll",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1865,
+    "primaryGenre": "Fantasy"
+  },
+  {
+    "id": "through-the-looking-glass",
+    "title": "Through the Looking-Glass",
+    "author": "Lewis Carroll",
+    "authorId": "lewis-carroll",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1871,
+    "primaryGenre": "Fantasy"
+  },
+  {
+    "id": "the-wind-in-the-willows",
+    "title": "The Wind in the Willows",
+    "author": "Kenneth Grahame",
+    "authorId": "kenneth-grahame",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1908,
+    "primaryGenre": "Children's Literature"
+  },
+  {
+    "id": "the-secret-garden",
+    "title": "The Secret Garden",
+    "author": "Frances Hodgson Burnett",
+    "authorId": "frances-hodgson-burnett",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1911,
+    "primaryGenre": "Children's Literature"
+  },
+  {
+    "id": "anne-of-green-gables",
+    "title": "Anne of Green Gables",
+    "author": "L. M. Montgomery",
+    "authorId": "l-m-montgomery",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1908,
+    "primaryGenre": "Children's Literature"
+  },
+  {
+    "id": "black-beauty",
+    "title": "Black Beauty",
+    "author": "Anna Sewell",
+    "authorId": "anna-sewell",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1877,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "heidi",
+    "title": "Heidi",
+    "author": "Johanna Spyri",
+    "authorId": "johanna-spyri",
+    "tradition": "Germanic",
+    "difficulty": "Beginner",
+    "year": 1881,
+    "primaryGenre": "Children's Literature"
+  },
+  {
+    "id": "romeo-and-juliet",
+    "title": "Romeo and Juliet",
+    "author": "William Shakespeare",
+    "authorId": "william-shakespeare",
+    "tradition": "Renaissance",
+    "difficulty": "Intermediate",
+    "year": 1597,
+    "primaryGenre": "Tragedy"
+  },
+  {
+    "id": "king-lear",
+    "title": "King Lear",
+    "author": "William Shakespeare",
+    "authorId": "william-shakespeare",
+    "tradition": "Renaissance",
+    "difficulty": "Advanced",
+    "year": 1606,
+    "primaryGenre": "Tragedy"
+  },
+  {
+    "id": "a-midsummer-nights-dream",
+    "title": "A Midsummer Night's Dream",
+    "author": "William Shakespeare",
+    "authorId": "william-shakespeare",
+    "tradition": "Renaissance",
+    "difficulty": "Beginner",
+    "year": 1596,
+    "primaryGenre": "Comedy"
+  },
+  {
+    "id": "julius-caesar",
+    "title": "Julius Caesar",
+    "author": "William Shakespeare",
+    "authorId": "william-shakespeare",
+    "tradition": "Renaissance",
+    "difficulty": "Intermediate",
+    "year": 1599,
+    "primaryGenre": "Tragedy"
+  },
+  {
+    "id": "the-merchant-of-venice",
+    "title": "The Merchant of Venice",
+    "author": "William Shakespeare",
+    "authorId": "william-shakespeare",
+    "tradition": "Renaissance",
+    "difficulty": "Intermediate",
+    "year": 1596,
+    "primaryGenre": "Comedy"
+  },
+  {
+    "id": "the-taming-of-the-shrew",
+    "title": "The Taming of the Shrew",
+    "author": "William Shakespeare",
+    "authorId": "william-shakespeare",
+    "tradition": "Renaissance",
+    "difficulty": "Beginner",
+    "year": 1593,
+    "primaryGenre": "Comedy"
+  },
+  {
+    "id": "twelfth-night",
+    "title": "Twelfth Night",
+    "author": "William Shakespeare",
+    "authorId": "william-shakespeare",
+    "tradition": "Renaissance",
+    "difficulty": "Intermediate",
+    "year": 1601,
+    "primaryGenre": "Comedy"
+  },
+  {
+    "id": "as-you-like-it",
+    "title": "As You Like It",
+    "author": "William Shakespeare",
+    "authorId": "william-shakespeare",
+    "tradition": "Renaissance",
+    "difficulty": "Beginner",
+    "year": 1599,
+    "primaryGenre": "Comedy"
+  },
+  {
+    "id": "much-ado-about-nothing",
+    "title": "Much Ado About Nothing",
+    "author": "William Shakespeare",
+    "authorId": "william-shakespeare",
+    "tradition": "Renaissance",
+    "difficulty": "Beginner",
+    "year": 1598,
+    "primaryGenre": "Comedy"
+  },
+  {
+    "id": "a-confession",
+    "title": "A Confession",
+    "author": "Leo Tolstoy",
+    "authorId": "leo-tolstoy",
+    "tradition": "Russian",
+    "difficulty": "Intermediate",
+    "year": 1882,
+    "primaryGenre": "Autobiography"
+  },
+  {
+    "id": "a-farewell-to-arms",
+    "title": "A Farewell to Arms",
+    "author": "Ernest Hemingway",
+    "authorId": "ernest-hemingway",
+    "tradition": "Modernist",
+    "difficulty": "Intermediate",
+    "year": 1929,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "a-portrait-of-the-artist-as-a-young-man",
+    "title": "A Portrait of the Artist as a Young Man",
+    "author": "James Joyce",
+    "authorId": "james-joyce",
+    "tradition": "Modernist",
+    "difficulty": "Advanced",
+    "year": 1916,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "a-vindication-of-the-rights-of-woman",
+    "title": "A Vindication of the Rights of Woman",
+    "author": "Mary Wollstonecraft",
+    "authorId": "mary-wollstonecraft",
+    "tradition": "Enlightenment",
+    "difficulty": "Advanced",
+    "year": 1792,
+    "primaryGenre": "Philosophy"
+  },
+  {
+    "id": "agamemnon",
+    "title": "Agamemnon",
+    "author": "Aeschylus",
+    "authorId": "aeschylus",
+    "tradition": "Ancient Greek",
+    "difficulty": "Advanced",
+    "year": -458,
+    "primaryGenre": "Tragedy"
+  },
+  {
+    "id": "agnes-grey",
+    "title": "Agnes Grey",
+    "author": "Anne Brontë",
+    "authorId": "anne-bront",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1847,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "all-quiet-on-the-western-front",
+    "title": "All Quiet on the Western Front",
+    "author": "Erich Maria Remarque",
+    "authorId": "erich-maria-remarque",
+    "tradition": "Germanic",
+    "difficulty": "Intermediate",
+    "year": 1929,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "an-enquiry-concerning-human-understanding",
+    "title": "An Enquiry Concerning Human Understanding",
+    "author": "David Hume",
+    "authorId": "david-hume",
+    "tradition": "Enlightenment",
+    "difficulty": "Advanced",
+    "year": 1748,
+    "primaryGenre": "Philosophy"
+  },
+  {
+    "id": "antony-and-cleopatra",
+    "title": "Antony and Cleopatra",
+    "author": "William Shakespeare",
+    "authorId": "william-shakespeare",
+    "tradition": "Renaissance",
+    "difficulty": "Intermediate",
+    "year": 1607,
+    "primaryGenre": "Tragedy"
+  },
+  {
+    "id": "arms-and-the-man",
+    "title": "Arms and the Man",
+    "author": "George Bernard Shaw",
+    "authorId": "george-bernard-shaw",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1894,
+    "primaryGenre": "Comedy"
+  },
+  {
+    "id": "barchester-towers",
+    "title": "Barchester Towers",
+    "author": "Anthony Trollope",
+    "authorId": "anthony-trollope",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1857,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "beyond-good-and-evil",
+    "title": "Beyond Good and Evil",
+    "author": "Friedrich Nietzsche",
+    "authorId": "friedrich-nietzsche",
+    "tradition": "Germanic",
+    "difficulty": "Scholar",
+    "year": 1886,
+    "primaryGenre": "Philosophy"
+  },
+  {
+    "id": "buddenbrooks",
+    "title": "Buddenbrooks",
+    "author": "Thomas Mann",
+    "authorId": "thomas-mann",
+    "tradition": "Germanic",
+    "difficulty": "Advanced",
+    "year": 1901,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "candida",
+    "title": "Candida",
+    "author": "George Bernard Shaw",
+    "authorId": "george-bernard-shaw",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1898,
+    "primaryGenre": "Comedy"
+  },
+  {
+    "id": "cane",
+    "title": "Cane",
+    "author": "Jean Toomer",
+    "authorId": "jean-toomer",
+    "tradition": "Modernist",
+    "difficulty": "Advanced",
+    "year": 1923,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "castle-rackrent",
+    "title": "Castle Rackrent",
+    "author": "Maria Edgeworth",
+    "authorId": "maria-edgeworth",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1800,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "clarissa",
+    "title": "Clarissa",
+    "author": "Samuel Richardson",
+    "authorId": "samuel-richardson",
+    "tradition": "Enlightenment",
+    "difficulty": "Scholar",
+    "year": 1748,
+    "primaryGenre": "Epistolary Novel"
+  },
+  {
+    "id": "coriolanus",
+    "title": "Coriolanus",
+    "author": "William Shakespeare",
+    "authorId": "william-shakespeare",
+    "tradition": "Renaissance",
+    "difficulty": "Intermediate",
+    "year": 1608,
+    "primaryGenre": "Tragedy"
+  },
+  {
+    "id": "dangerous-liaisons",
+    "title": "Dangerous Liaisons",
+    "author": "Pierre Choderlos de Laclos",
+    "authorId": "pierre-choderlos-de-laclos",
+    "tradition": "French",
+    "difficulty": "Advanced",
+    "year": 1782,
+    "primaryGenre": "Epistolary Novel"
+  },
+  {
+    "id": "daniel-deronda",
+    "title": "Daniel Deronda",
+    "author": "George Eliot",
+    "authorId": "george-eliot",
+    "tradition": "Victorian",
+    "difficulty": "Advanced",
+    "year": 1876,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "death-comes-for-the-archbishop",
+    "title": "Death Comes for the Archbishop",
+    "author": "Willa Cather",
+    "authorId": "willa-cather",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1927,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "demons",
+    "title": "Demons",
+    "author": "Fyodor Dostoevsky",
+    "authorId": "fyodor-dostoevsky",
+    "tradition": "Russian",
+    "difficulty": "Scholar",
+    "year": 1872,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "dialogues",
+    "title": "Dialogues",
+    "author": "Seneca",
+    "authorId": "seneca",
+    "tradition": "Ancient Greek",
+    "difficulty": "Advanced",
+    "year": 65,
+    "primaryGenre": "Philosophy"
+  },
+  {
+    "id": "discourses-on-livy",
+    "title": "Discourses on Livy",
+    "author": "Niccolò Machiavelli",
+    "authorId": "niccol-machiavelli",
+    "tradition": "Renaissance",
+    "difficulty": "Advanced",
+    "year": 1531,
+    "primaryGenre": "Political Theory"
+  },
+  {
+    "id": "dodsworth",
+    "title": "Dodsworth",
+    "author": "Sinclair Lewis",
+    "authorId": "sinclair-lewis",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1929,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "dombey-and-son",
+    "title": "Dombey and Son",
+    "author": "Charles Dickens",
+    "authorId": "charles-dickens",
+    "tradition": "Victorian",
+    "difficulty": "Advanced",
+    "year": 1848,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "dubliners",
+    "title": "Dubliners",
+    "author": "James Joyce",
+    "authorId": "james-joyce",
+    "tradition": "Modernist",
+    "difficulty": "Intermediate",
+    "year": 1914,
+    "primaryGenre": "Short Stories"
+  },
+  {
+    "id": "elmer-gantry",
+    "title": "Elmer Gantry",
+    "author": "Sinclair Lewis",
+    "authorId": "sinclair-lewis",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1927,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "eugenie-grandet",
+    "title": "Eugénie Grandet",
+    "author": "Honoré de Balzac",
+    "authorId": "honor-de-balzac",
+    "tradition": "French",
+    "difficulty": "Intermediate",
+    "year": 1833,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "evelina",
+    "title": "Evelina",
+    "author": "Fanny Burney",
+    "authorId": "fanny-burney",
+    "tradition": "Enlightenment",
+    "difficulty": "Intermediate",
+    "year": 1778,
+    "primaryGenre": "Epistolary Novel"
+  },
+  {
+    "id": "father-goriot",
+    "title": "Father Goriot",
+    "author": "Honoré de Balzac",
+    "authorId": "honor-de-balzac",
+    "tradition": "French",
+    "difficulty": "Intermediate",
+    "year": 1835,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "flatland",
+    "title": "Flatland",
+    "author": "Edwin A. Abbott",
+    "authorId": "edwin-a-abbott",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1884,
+    "primaryGenre": "Novella"
+  },
+  {
+    "id": "gentlemen-prefer-blondes",
+    "title": "Gentlemen Prefer Blondes",
+    "author": "Anita Loos",
+    "authorId": "anita-loos",
+    "tradition": "American",
+    "difficulty": "Beginner",
+    "year": 1925,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "ghosts",
+    "title": "Ghosts",
+    "author": "Henrik Ibsen",
+    "authorId": "henrik-ibsen",
+    "tradition": "Scandinavian",
+    "difficulty": "Intermediate",
+    "year": 1881,
+    "primaryGenre": "Drama"
+  },
+  {
+    "id": "gitanjali",
+    "title": "Gitanjali",
+    "author": "Rabindranath Tagore",
+    "authorId": "rabindranath-tagore",
+    "tradition": "Eastern",
+    "difficulty": "Beginner",
+    "year": 1912,
+    "primaryGenre": "Poetry"
+  },
+  {
+    "id": "hadji-murad",
+    "title": "Hadji Murád",
+    "author": "Leo Tolstoy",
+    "authorId": "leo-tolstoy",
+    "tradition": "Russian",
+    "difficulty": "Intermediate",
+    "year": 1912,
+    "primaryGenre": "Novella"
+  },
+  {
+    "id": "heartbreak-house",
+    "title": "Heartbreak House",
+    "author": "George Bernard Shaw",
+    "authorId": "george-bernard-shaw",
+    "tradition": "Modernist",
+    "difficulty": "Intermediate",
+    "year": 1919,
+    "primaryGenre": "Drama"
+  },
+  {
+    "id": "hedda-gabler",
+    "title": "Hedda Gabler",
+    "author": "Henrik Ibsen",
+    "authorId": "henrik-ibsen",
+    "tradition": "Scandinavian",
+    "difficulty": "Intermediate",
+    "year": 1891,
+    "primaryGenre": "Drama"
+  },
+  {
+    "id": "henry-iv-part-i",
+    "title": "Henry IV, Part I",
+    "author": "William Shakespeare",
+    "authorId": "william-shakespeare",
+    "tradition": "Renaissance",
+    "difficulty": "Intermediate",
+    "year": 1597,
+    "primaryGenre": "History Play"
+  },
+  {
+    "id": "henry-iv-part-ii",
+    "title": "Henry IV, Part II",
+    "author": "William Shakespeare",
+    "authorId": "william-shakespeare",
+    "tradition": "Renaissance",
+    "difficulty": "Intermediate",
+    "year": 1600,
+    "primaryGenre": "History Play"
+  },
+  {
+    "id": "henry-v",
+    "title": "Henry V",
+    "author": "William Shakespeare",
+    "authorId": "william-shakespeare",
+    "tradition": "Renaissance",
+    "difficulty": "Intermediate",
+    "year": 1599,
+    "primaryGenre": "History Play"
+  },
+  {
+    "id": "history-of-the-peloponnesian-war",
+    "title": "History of the Peloponnesian War",
+    "author": "Thucydides",
+    "authorId": "thucydides",
+    "tradition": "Ancient Greek",
+    "difficulty": "Scholar",
+    "year": -411,
+    "primaryGenre": "History"
+  },
+  {
+    "id": "idylls-of-the-king",
+    "title": "Idylls of the King",
+    "author": "Alfred, Lord Tennyson",
+    "authorId": "alfred-lord-tennyson",
+    "tradition": "Victorian",
+    "difficulty": "Advanced",
+    "year": 1859,
+    "primaryGenre": "Poetry"
+  },
+  {
+    "id": "in-search-of-lost-time",
+    "title": "In Search of Lost Time",
+    "author": "Marcel Proust",
+    "authorId": "marcel-proust",
+    "tradition": "French",
+    "difficulty": "Scholar",
+    "year": 1913,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "incidents-in-the-life-of-a-slave-girl",
+    "title": "Incidents in the Life of a Slave Girl",
+    "author": "Harriet Jacobs",
+    "authorId": "harriet-jacobs",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1861,
+    "primaryGenre": "Autobiography"
+  },
+  {
+    "id": "jacobs-room",
+    "title": "Jacob's Room",
+    "author": "Virginia Woolf",
+    "authorId": "virginia-woolf",
+    "tradition": "Modernist",
+    "difficulty": "Advanced",
+    "year": 1922,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "jude-the-obscure",
+    "title": "Jude the Obscure",
+    "author": "Thomas Hardy",
+    "authorId": "thomas-hardy",
+    "tradition": "Victorian",
+    "difficulty": "Advanced",
+    "year": 1895,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "kidnapped",
+    "title": "Kidnapped",
+    "author": "Robert Louis Stevenson",
+    "authorId": "robert-louis-stevenson",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1886,
+    "primaryGenre": "Adventure"
+  },
+  {
+    "id": "king-solomons-mines",
+    "title": "King Solomon's Mines",
+    "author": "H. Rider Haggard",
+    "authorId": "h-rider-haggard",
+    "tradition": "Victorian",
+    "difficulty": "Beginner",
+    "year": 1885,
+    "primaryGenre": "Adventure"
+  },
+  {
+    "id": "kusamakura",
+    "title": "Kusamakura",
+    "author": "Natsume Sōseki",
+    "authorId": "natsume-s-seki",
+    "tradition": "Eastern",
+    "difficulty": "Advanced",
+    "year": 1906,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "lady-chatterleys-lover",
+    "title": "Lady Chatterley's Lover",
+    "author": "D. H. Lawrence",
+    "authorId": "d-h-lawrence",
+    "tradition": "Modernist",
+    "difficulty": "Intermediate",
+    "year": 1928,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "leviathan",
+    "title": "Leviathan",
+    "author": "Thomas Hobbes",
+    "authorId": "thomas-hobbes",
+    "tradition": "Enlightenment",
+    "difficulty": "Scholar",
+    "year": 1651,
+    "primaryGenre": "Political Theory"
+  },
+  {
+    "id": "looking-backward",
+    "title": "Looking Backward",
+    "author": "Edward Bellamy",
+    "authorId": "edward-bellamy",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1888,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "lyrical-ballads",
+    "title": "Lyrical Ballads",
+    "author": "William Wordsworth",
+    "authorId": "william-wordsworth",
+    "tradition": "Romantic",
+    "difficulty": "Intermediate",
+    "year": 1798,
+    "primaryGenre": "Poetry"
+  },
+  {
+    "id": "manhattan-transfer",
+    "title": "Manhattan Transfer",
+    "author": "John Dos Passos",
+    "authorId": "john-dos-passos",
+    "tradition": "Modernist",
+    "difficulty": "Advanced",
+    "year": 1925,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "mcteague",
+    "title": "McTeague",
+    "author": "Frank Norris",
+    "authorId": "frank-norris",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1899,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "measure-for-measure",
+    "title": "Measure for Measure",
+    "author": "William Shakespeare",
+    "authorId": "william-shakespeare",
+    "tradition": "Renaissance",
+    "difficulty": "Intermediate",
+    "year": 1604,
+    "primaryGenre": "Drama"
+  },
+  {
+    "id": "moll-flanders",
+    "title": "Moll Flanders",
+    "author": "Daniel Defoe",
+    "authorId": "daniel-defoe",
+    "tradition": "Enlightenment",
+    "difficulty": "Intermediate",
+    "year": 1722,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-maltese-falcon",
+    "title": "The Maltese Falcon",
+    "author": "Dashiell Hammett",
+    "authorId": "dashiell-hammett",
+    "tradition": "American",
+    "difficulty": "Beginner",
+    "year": 1930,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "as-i-lay-dying",
+    "title": "As I Lay Dying",
+    "author": "William Faulkner",
+    "authorId": "william-faulkner",
+    "tradition": "Modernist",
+    "difficulty": "Advanced",
+    "year": 1930,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-magic-mountain",
+    "title": "The Magic Mountain",
+    "author": "Thomas Mann",
+    "authorId": "thomas-mann",
+    "tradition": "Germanic",
+    "difficulty": "Scholar",
+    "year": 1924,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-castle",
+    "title": "The Castle",
+    "author": "Franz Kafka",
+    "authorId": "franz-kafka",
+    "tradition": "Modernist",
+    "difficulty": "Advanced",
+    "year": 1926,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "demian",
+    "title": "Demian",
+    "author": "Hermann Hesse",
+    "authorId": "hermann-hesse",
+    "tradition": "Germanic",
+    "difficulty": "Intermediate",
+    "year": 1919,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-house-of-the-dead",
+    "title": "The House of the Dead",
+    "author": "Fyodor Dostoevsky",
+    "authorId": "fyodor-dostoevsky",
+    "tradition": "Russian",
+    "difficulty": "Intermediate",
+    "year": 1862,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "sir-gawain-and-the-green-knight",
+    "title": "Sir Gawain and the Green Knight",
+    "author": "Anonymous",
+    "authorId": "anonymous",
+    "tradition": "Medieval European",
+    "difficulty": "Advanced",
+    "year": 1400,
+    "primaryGenre": "Poetry"
+  },
+  {
+    "id": "vile-bodies",
+    "title": "Vile Bodies",
+    "author": "Evelyn Waugh",
+    "authorId": "evelyn-waugh",
+    "tradition": "Modernist",
+    "difficulty": "Intermediate",
+    "year": 1930,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-counterfeiters",
+    "title": "The Counterfeiters",
+    "author": "André Gide",
+    "authorId": "andr-gide",
+    "tradition": "French",
+    "difficulty": "Advanced",
+    "year": 1925,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-lusiads",
+    "title": "The Lusiads",
+    "author": "Luís de Camões",
+    "authorId": "lu-s-de-cam-es",
+    "tradition": "Renaissance",
+    "difficulty": "Advanced",
+    "year": 1572,
+    "primaryGenre": "Epic Poetry"
+  },
+  {
+    "id": "the-pilgrim-kamanita",
+    "title": "The Pilgrim Kamanita",
+    "author": "Karl Gjellerup",
+    "authorId": "karl-gjellerup",
+    "tradition": "Scandinavian",
+    "difficulty": "Intermediate",
+    "year": 1906,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "after-the-divorce",
+    "title": "After the Divorce",
+    "author": "Grazia Deledda",
+    "authorId": "grazia-deledda",
+    "tradition": "French",
+    "difficulty": "Intermediate",
+    "year": 1902,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "clerambault",
+    "title": "Clerambault",
+    "author": "Romain Rolland",
+    "authorId": "romain-rolland",
+    "tradition": "French",
+    "difficulty": "Intermediate",
+    "year": 1920,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-consolation-of-philosophy",
+    "title": "The Consolation of Philosophy",
+    "author": "Boethius",
+    "authorId": "boethius",
+    "tradition": "Ancient",
+    "difficulty": "Advanced",
+    "year": 524,
+    "primaryGenre": "Philosophy"
+  },
+  {
+    "id": "the-adventurous-simplicissimus",
+    "title": "The Adventurous Simplicissimus",
+    "author": "Hans Jakob Christoffel von Grimmelshausen",
+    "authorId": "hans-jakob-christoffel-von-grimmelshausen",
+    "tradition": "Germanic",
+    "difficulty": "Advanced",
+    "year": 1668,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "germinie-lacerteux",
+    "title": "Germinie Lacerteux",
+    "author": "Edmond de Goncourt and Jules de Goncourt",
+    "authorId": "edmond-de-goncourt-and-jules-de-goncourt",
+    "tradition": "French",
+    "difficulty": "Intermediate",
+    "year": 1865,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-night-land",
+    "title": "The Night Land",
+    "author": "William Hope Hodgson",
+    "authorId": "william-hope-hodgson",
+    "tradition": "Victorian",
+    "difficulty": "Advanced",
+    "year": 1912,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-purple-cloud",
+    "title": "The Purple Cloud",
+    "author": "M. P. Shiel",
+    "authorId": "m-p-shiel",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1901,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "last-and-first-men",
+    "title": "Last and First Men",
+    "author": "Olaf Stapledon",
+    "authorId": "olaf-stapledon",
+    "tradition": "Victorian",
+    "difficulty": "Advanced",
+    "year": 1930,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-king-of-elflands-daughter",
+    "title": "The King of Elfland's Daughter",
+    "author": "Lord Dunsany",
+    "authorId": "lord-dunsany",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1924,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "pan-tadeusz",
+    "title": "Pan Tadeusz",
+    "author": "Adam Mickiewicz",
+    "authorId": "adam-mickiewicz",
+    "tradition": "Germanic",
+    "difficulty": "Advanced",
+    "year": 1834,
+    "primaryGenre": "Epic Poetry"
+  },
+  {
+    "id": "black-no-more",
+    "title": "Black No More",
+    "author": "George S. Schuyler",
+    "authorId": "george-s-schuyler",
+    "tradition": "American",
+    "difficulty": "Intermediate",
+    "year": 1931,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "mary-olivier-a-life",
+    "title": "Mary Olivier: A Life",
+    "author": "May Sinclair",
+    "authorId": "may-sinclair",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1919,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "progress-and-poverty",
+    "title": "Progress and Poverty",
+    "author": "Henry George",
+    "authorId": "henry-george",
+    "tradition": "American",
+    "difficulty": "Advanced",
+    "year": 1879,
+    "primaryGenre": "Economics"
+  },
+  {
+    "id": "the-swiss-family-robinson",
+    "title": "The Swiss Family Robinson",
+    "author": "Johann David Wyss",
+    "authorId": "johann-david-wyss",
+    "tradition": "Germanic",
+    "difficulty": "Beginner",
+    "year": 1812,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "fantomas",
+    "title": "Fantômas",
+    "author": "Pierre Souvestre and Marcel Allain",
+    "authorId": "pierre-souvestre-and-marcel-allain",
+    "tradition": "French",
+    "difficulty": "Intermediate",
+    "year": 1911,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "english-as-she-is-spoke",
+    "title": "English as She Is Spoke",
+    "author": "Pedro Carolino",
+    "authorId": "pedro-carolino",
+    "tradition": "French",
+    "difficulty": "Beginner",
+    "year": 1855,
+    "primaryGenre": "Humor"
+  },
+  {
+    "id": "hudibras",
+    "title": "Hudibras",
+    "author": "Samuel Butler",
+    "authorId": "samuel-butler-1613-1680",
+    "tradition": "Victorian",
+    "difficulty": "Scholar",
+    "year": 1663,
+    "primaryGenre": "Poetry"
+  },
+  {
+    "id": "a-house-of-gentlefolk",
+    "title": "A House of Gentlefolk",
+    "author": "Ivan Turgenev",
+    "authorId": "ivan-turgenev",
+    "tradition": "Russian",
+    "difficulty": "Intermediate",
+    "year": 1859,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "on-the-eve",
+    "title": "On the Eve",
+    "author": "Ivan Turgenev",
+    "authorId": "ivan-turgenev",
+    "tradition": "Russian",
+    "difficulty": "Intermediate",
+    "year": 1860,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-seagull",
+    "title": "The Seagull",
+    "author": "Anton Chekhov",
+    "authorId": "anton-chekhov",
+    "tradition": "Russian",
+    "difficulty": "Intermediate",
+    "year": 1896,
+    "primaryGenre": "Drama"
+  },
+  {
+    "id": "ajax",
+    "title": "Ajax",
+    "author": "Sophocles",
+    "authorId": "sophocles",
+    "tradition": "Ancient Greek",
+    "difficulty": "Intermediate",
+    "year": -440,
+    "primaryGenre": "Drama"
+  },
+  {
+    "id": "the-old-english-baron",
+    "title": "The Old English Baron",
+    "author": "Clara Reeve",
+    "authorId": "clara-reeve",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1778,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "the-documents-in-the-case",
+    "title": "The Documents in the Case",
+    "author": "Dorothy L. Sayers and Robert Eustace",
+    "authorId": "dorothy-l-sayers-and-robert-eustace",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1930,
+    "primaryGenre": "Novel"
+  },
+  {
+    "id": "aspects-of-the-novel",
+    "title": "Aspects of the Novel",
+    "author": "E. M. Forster",
+    "authorId": "e-m-forster",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1927,
+    "primaryGenre": "Literary Criticism"
+  },
+  {
+    "id": "democracy-and-education",
+    "title": "Democracy and Education",
+    "author": "John Dewey",
+    "authorId": "john-dewey",
+    "tradition": "American",
+    "difficulty": "Advanced",
+    "year": 1916,
+    "primaryGenre": "Philosophy"
+  },
+  {
+    "id": "culture-and-anarchy",
+    "title": "Culture and Anarchy",
+    "author": "Matthew Arnold",
+    "authorId": "matthew-arnold",
+    "tradition": "Victorian",
+    "difficulty": "Advanced",
+    "year": 1869,
+    "primaryGenre": "Essays"
+  },
+  {
+    "id": "the-crowd",
+    "title": "The Crowd",
+    "author": "Gustave Le Bon",
+    "authorId": "gustave-le-bon",
+    "tradition": "French",
+    "difficulty": "Intermediate",
+    "year": 1895,
+    "primaryGenre": "Psychology"
+  },
+  {
+    "id": "what-is-property",
+    "title": "What Is Property?",
+    "author": "Pierre-Joseph Proudhon",
+    "authorId": "pierre-joseph-proudhon",
+    "tradition": "French",
+    "difficulty": "Advanced",
+    "year": 1840,
+    "primaryGenre": "Political Philosophy"
+  },
+  {
+    "id": "the-inspector-general",
+    "title": "The Inspector General",
+    "author": "Nikolai Gogol",
+    "authorId": "nikolai-gogol",
+    "tradition": "Russian",
+    "difficulty": "Intermediate",
+    "year": 1836,
+    "primaryGenre": "Drama"
+  },
+  {
+    "id": "the-conscious-lovers",
+    "title": "The Conscious Lovers",
+    "author": "Richard Steele",
+    "authorId": "richard-steele",
+    "tradition": "Victorian",
+    "difficulty": "Intermediate",
+    "year": 1722,
+    "primaryGenre": "Drama"
+  }
+]
