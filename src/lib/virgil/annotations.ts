@@ -13,6 +13,7 @@
 import type { Annotation } from "./types"
 import { COMMEDIA_ANNOTATIONS } from "./commedia-annotations"
 import { GENERATED_ODYSSEY_ANNOTATIONS } from "./odyssey-annotations"
+import { GENERATED_ILIAD_ANNOTATIONS } from "./iliad-annotations"
 import { GENERATED_AENEID_ANNOTATIONS } from "./aeneid-annotations"
 import { GENERATED_PARADISE_LOST_ANNOTATIONS } from "./paradise-lost-annotations"
 import { GENERATED_DON_JUAN_ANNOTATIONS } from "./don-juan-annotations"
@@ -458,6 +459,7 @@ const ALL_ANNOTATIONS: Annotation[] = [
   ...CORE_ANNOTATIONS,
   ...COMMEDIA_ANNOTATIONS,
   ...GENERATED_ODYSSEY_ANNOTATIONS,
+  ...GENERATED_ILIAD_ANNOTATIONS,
   ...GENERATED_AENEID_ANNOTATIONS,
   ...GENERATED_PARADISE_LOST_ANNOTATIONS,
   ...GENERATED_DON_JUAN_ANNOTATIONS,
