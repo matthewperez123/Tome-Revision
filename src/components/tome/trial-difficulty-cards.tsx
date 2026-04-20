@@ -1,59 +1,74 @@
 "use client"
 
-import { motion } from "framer-motion"
-import { BookOpen, Scroll, Crown } from "lucide-react"
+import type { FC } from "react"
+import { motion, useReducedMotion } from "framer-motion"
 import { springs } from "@/lib/design-tokens"
 import type { QuizDifficulty } from "@/lib/book-progress"
+import {
+  ApprenticeSigil,
+  ScholarSigil,
+  MasterSigil,
+  type SigilProps,
+} from "@/components/trials/sigils"
+import { trialColors } from "@/lib/animations/trial-tokens"
 
 // ─────────────────────────────────────────────
-// Difficulty tier definitions
+// Tier definitions — canonical Apprentice / Scholar / Master.
+// Wisdom rewards are per-correct-answer (5/10/15 per spec).
 // ─────────────────────────────────────────────
 
-export const TRIAL_TIERS: {
+export interface TrialTierDef {
   key: QuizDifficulty
   label: string
   subcopy: string
-  icon: typeof BookOpen
+  sigil: FC<SigilProps>
   accentColor: string
   accentBg: string
   borderColor: string
   questions: number
-  xpReward: number
-}[] = [
+  /** Wisdom per correct answer */
+  wisdomPerCorrect: number
+}
+
+export const TRIAL_TIERS: TrialTierDef[] = [
   {
-    key: "Foundational",
-    label: "Foundational",
+    key: "Apprentice",
+    label: "Apprentice",
     subcopy: "Check your understanding.",
-    icon: BookOpen,
-    accentColor: "#78716C",      // warm stone
+    sigil: ApprenticeSigil,
+    accentColor: trialColors.stone500,
     accentBg: "rgba(120,113,108,0.08)",
     borderColor: "rgba(120,113,108,0.25)",
     questions: 5,
-    xpReward: 10,
+    wisdomPerCorrect: 5,
   },
   {
     key: "Scholar",
     label: "Scholar",
     subcopy: "Read between the lines.",
-    icon: Scroll,
-    accentColor: "#6366F1",      // indigo
+    sigil: ScholarSigil,
+    accentColor: trialColors.indigo,
     accentBg: "rgba(99,102,241,0.08)",
     borderColor: "rgba(99,102,241,0.25)",
     questions: 8,
-    xpReward: 25,
+    wisdomPerCorrect: 10,
   },
   {
-    key: "Sage",
-    label: "Sage",
+    key: "Master",
+    label: "Master",
     subcopy: "Prove your mastery.",
-    icon: Crown,
-    accentColor: "#D4AF37",      // laurel gold
+    sigil: MasterSigil,
+    accentColor: trialColors.laurelGold,
     accentBg: "rgba(212,175,55,0.08)",
     borderColor: "rgba(212,175,55,0.25)",
     questions: 10,
-    xpReward: 50,
+    wisdomPerCorrect: 15,
   },
 ]
+
+export function getTierDef(tier: QuizDifficulty): TrialTierDef {
+  return TRIAL_TIERS.find((t) => t.key === tier) ?? TRIAL_TIERS[0]
+}
 
 // ─────────────────────────────────────────────
 // Component
@@ -71,11 +86,13 @@ export function TrialDifficultyCards({
   onSelectDifficulty,
   onSkip,
 }: TrialDifficultyCardsProps) {
+  const reduced = useReducedMotion()
+
   return (
     <div className="flex flex-col items-center justify-center h-full gap-8 px-6 text-center">
       {/* Headline */}
       <motion.div
-        initial={{ opacity: 0, y: 16 }}
+        initial={reduced ? false : { opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="space-y-2"
@@ -90,58 +107,52 @@ export function TrialDifficultyCards({
 
       {/* Three cards */}
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={reduced ? false : { opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.15, duration: 0.5 }}
         className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-3xl"
       >
         {TRIAL_TIERS.map((tier, i) => {
-          const Icon = tier.icon
+          const Sigil = tier.sigil
           return (
             <motion.button
               key={tier.key}
-              initial={{ opacity: 0, y: 16 }}
+              initial={reduced ? false : { opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 + i * 0.08, ...springs.gentle }}
-              whileHover={{ y: -4, borderColor: tier.accentColor }}
-              whileTap={{ scale: 0.98 }}
+              whileHover={reduced ? undefined : { y: -4, borderColor: tier.accentColor }}
+              whileTap={reduced ? undefined : { scale: 0.98 }}
               onClick={() => onSelectDifficulty(tier.key)}
-              className="group flex flex-col items-center gap-4 rounded-2xl border-2 p-6 text-center transition-all bg-card shadow-sm"
+              aria-label={`Choose ${tier.label} tier: ${tier.subcopy}. ${tier.questions} questions, ${tier.wisdomPerCorrect} Wisdom per correct answer.`}
+              className="group flex flex-col items-center gap-4 rounded-2xl border-2 p-6 text-center transition-all bg-card shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
               style={{
                 borderColor: tier.borderColor,
+                // @ts-expect-error — CSS custom property for ring
+                "--tw-ring-color": tier.accentColor,
               }}
             >
-              {/* Icon */}
+              {/* Sigil */}
               <div
-                className="flex size-12 items-center justify-center rounded-xl"
+                className="flex size-14 items-center justify-center rounded-xl"
                 style={{ background: tier.accentBg }}
               >
-                <Icon className="size-5" style={{ color: tier.accentColor }} />
+                <Sigil size={28} color={tier.accentColor} />
               </div>
 
               {/* Name */}
               <div className="space-y-1">
-                <h3 className="font-serif text-xl font-bold text-ink">
-                  {tier.label}
-                </h3>
-                <p className="text-sm text-muted-foreground leading-snug">
-                  {tier.subcopy}
-                </p>
+                <h3 className="font-serif text-xl font-bold text-ink">{tier.label}</h3>
+                <p className="text-sm text-muted-foreground leading-snug">{tier.subcopy}</p>
               </div>
 
               {/* Meta */}
               <div className="flex flex-col items-center gap-1.5 mt-auto pt-2">
-                <span className="text-xs text-muted-foreground">
-                  {tier.questions} questions
-                </span>
+                <span className="text-xs text-muted-foreground">{tier.questions} questions</span>
                 <span
                   className="inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold"
-                  style={{
-                    background: tier.accentBg,
-                    color: tier.accentColor,
-                  }}
+                  style={{ background: tier.accentBg, color: tier.accentColor }}
                 >
-                  +{tier.xpReward} Wisdom
+                  +{tier.wisdomPerCorrect} Wisdom per correct
                 </span>
               </div>
 
@@ -159,11 +170,11 @@ export function TrialDifficultyCards({
 
       {/* Skip link */}
       <motion.button
-        initial={{ opacity: 0 }}
+        initial={reduced ? false : { opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.55 }}
         onClick={onSkip}
-        className="text-sm text-muted-foreground hover:text-ink underline underline-offset-2 transition-colors"
+        className="text-sm text-muted-foreground hover:text-ink underline underline-offset-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 rounded"
       >
         Skip and continue reading
       </motion.button>

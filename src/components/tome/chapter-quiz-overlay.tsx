@@ -1,71 +1,128 @@
 "use client"
 
-import { useEffect, useReducer, useRef, useCallback, useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { Heart, ChevronRight, RotateCcw, X, Trophy } from "lucide-react"
-import { Confetti, type ConfettiRef } from "@/components/ui/confetti"
+import { useCallback, useEffect, useMemo, useReducer, useState } from "react"
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion"
+import { ChevronRight, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { quizReducer, createQuizState, type Quiz, type Question } from "@/lib/quiz-engine"
+import {
+  quizReducer,
+  createQuizState,
+  wisdomForQuestion,
+  type Quiz,
+  type Question,
+} from "@/lib/quiz-engine"
 import type { ChapterQuestion } from "@/lib/chapter-questions"
-import { TrialDifficultyCards } from "./trial-difficulty-cards"
 import type { Book } from "@/lib/supabase"
+import type { QuizDifficulty } from "@/lib/book-progress"
 import { springs } from "@/lib/design-tokens"
+import {
+  trialEnter,
+  trialExit,
+  explanationRise,
+  wisdomFloat,
+  wrongShakeKeyframes,
+  wrongShakeTransition,
+  reduced as reducedTokens,
+} from "@/lib/animations/trial-tokens"
+import {
+  QUESTION_RENDERERS,
+  QUESTION_TYPE_ICONS,
+  QUESTION_TYPE_LABELS,
+} from "@/components/trials/questions"
+import { tierSigils } from "@/components/trials/sigils"
+import { getTierDef, TrialDifficultyCards } from "./trial-difficulty-cards"
+import { TrialProgressBar } from "@/components/trials/TrialProgressBar"
+import { HeartsDisplay } from "@/components/trials/HeartsDisplay"
+import { TrialIntroCard } from "@/components/trials/TrialIntroCard"
+import { HeartsZeroModal } from "@/components/trials/HeartsZeroModal"
+import { KeyboardHints } from "@/components/trials/KeyboardHints"
+import { TrialResultsScreen } from "@/components/trials/TrialResultsScreen"
+import { WisdomStar } from "@/components/trials/sigils/WisdomStar"
 
 // ─────────────────────────────────────────────
 // Types
 // ─────────────────────────────────────────────
 
-type OverlayPhase = "difficulty-select" | "quiz" | "results"
+type OverlayPhase = "difficulty-select" | "intro" | "quiz" | "results"
 
 export interface ChapterQuizOverlayProps {
   book: Book
   chapterTitle: string
   chapterIndex: number
-  /** Unit display string, e.g. "Canto III" or "Chapter 5" */
   unitDisplay: string
   hearts: number
   isOpen: boolean
   onPass: (xpEarned: number, coinsEarned: number) => void
   onFail: () => void
   onClose: () => void
-  /** Called when user selects a trial difficulty */
-  onSelectDifficulty: (difficulty: import("@/lib/book-progress").QuizDifficulty) => void
-  /** Called when user skips the trial */
+  onSelectDifficulty: (difficulty: QuizDifficulty) => void
   onSkip: () => void
-  /** Questions for the currently selected difficulty (empty until selected) */
   questions: ChapterQuestion[]
 }
 
 // ─────────────────────────────────────────────
-// Helpers: ChapterQuestion → quiz-engine Question
+// Mapping: ChapterQuestion → engine Question
 // ─────────────────────────────────────────────
 
-function mapToEngineQuestion(q: ChapterQuestion, quizId: string, order: number): Question {
-  if (q.type === "true_false") {
-    return {
-      id: q.id,
-      quiz_id: quizId,
-      type: "true_false",
-      prompt: q.text,
-      options: ["True", "False"],
-      correct_answer: q.correctBool ? "true" : "false",
-      explanation: q.explanation,
-      order,
-    }
-  }
-
-  // multiple_choice and passage_id both map to multiple_choice
-  const options = q.options ?? []
-  const correctAnswer = options[q.correctIndex ?? 0] ?? options[0] ?? ""
-  return {
+function mapToEngineQuestion(
+  q: ChapterQuestion,
+  quizId: string,
+  order: number
+): Question {
+  const base: Question = {
     id: q.id,
     quiz_id: quizId,
-    type: "multiple_choice",
+    type: q.type,
     prompt: q.text,
-    options,
-    correct_answer: correctAnswer,
+    options: q.options ?? [],
+    correct_answer: "",
     explanation: q.explanation,
     order,
+    difficulty: q.difficulty,
+    citation: q.citation ?? null,
+    passage: q.passage ?? null,
+    passageHighlight: q.passageHighlight ?? null,
+    acceptedVariants: q.acceptedVariants,
+    correctPairs: q.correctPairs,
+    matchingLeft: q.matchingLeft,
+    matchingRight: q.matchingRight,
+    correctOrder: q.correctOrder,
+    vocabWord: q.vocabWord,
+    etymology: q.etymology,
+    crossRefBookId: q.crossRefBookId,
+    crossRefLabel: q.crossRefLabel,
+  }
+
+  switch (q.type) {
+    case "true_false":
+      return {
+        ...base,
+        options: ["true", "false"],
+        correct_answer: q.correctBool ? "true" : "false",
+      }
+    case "fill_blank":
+      return { ...base, correct_answer: q.correctText ?? "" }
+    case "ordering":
+      return {
+        ...base,
+        options: q.options ?? [],
+        correctOrder: q.correctOrder ?? [],
+        correct_answer: JSON.stringify(q.correctOrder ?? []),
+      }
+    case "matching":
+      return {
+        ...base,
+        options: [],
+        correctPairs: q.correctPairs ?? {},
+        correct_answer: JSON.stringify(q.correctPairs ?? {}),
+      }
+    default: {
+      // multiple_choice, passage_id, theme_analysis, vocabulary_in_context,
+      // cross_reference, close_reading — all option-based
+      const opts = q.options ?? []
+      const correct = opts[q.correctIndex ?? 0] ?? opts[0] ?? ""
+      return { ...base, options: opts, correct_answer: correct }
+    }
   }
 }
 
@@ -75,7 +132,7 @@ function buildQuizObjects(
   chapterIndex: number,
   questions: ChapterQuestion[]
 ): { quiz: Quiz; engineQuestions: Question[] } {
-  const quizId = `chapter-quiz-${book.id}-${chapterIndex}`
+  const quizId = `chapter-trial-${book.id}-${chapterIndex}`
   const quiz: Quiz = {
     id: quizId,
     book_id: book.id,
@@ -87,23 +144,23 @@ function buildQuizObjects(
 }
 
 // ─────────────────────────────────────────────
-// Sub-components
+// Floating "+N Wisdom" element
 // ─────────────────────────────────────────────
 
-/** Animated "+N Wisdom" float-up badge */
-function WisdomFloat({ amount, show }: { amount: number; show: boolean }) {
+function WisdomFloat({ amount, show, reduced }: { amount: number; show: boolean; reduced: boolean }) {
   return (
     <AnimatePresence>
       {show && (
         <motion.div
           key="wisdom-float"
-          initial={{ opacity: 0, y: 0, scale: 0.8 }}
-          animate={{ opacity: 1, y: -48, scale: 1 }}
-          exit={{ opacity: 0, y: -80, scale: 0.9 }}
-          transition={{ ...springs.interactive, duration: 0.6 }}
-          className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10"
+          variants={reduced ? reducedTokens.wisdomFloat : wisdomFloat}
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
+          className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 z-10 flex items-center gap-1 select-none"
         >
-          <span className="text-emerald-600 font-bold text-xl drop-shadow-sm select-none">
+          <WisdomStar size={20} />
+          <span className="font-semibold text-sm" style={{ color: "#D4AF37" }}>
             +{amount} Wisdom
           </span>
         </motion.div>
@@ -112,371 +169,327 @@ function WisdomFloat({ amount, show }: { amount: number; show: boolean }) {
   )
 }
 
-/** Hearts row */
-function HeartsDisplay({
-  current,
-  max,
-  pulse,
-}: {
-  current: number
-  max: number
-  pulse: boolean
-}) {
-  return (
-    <div className="flex items-center gap-1">
-      {Array.from({ length: max }).map((_, i) => (
-        <motion.div
-          key={i}
-          animate={pulse && i === current ? { scale: [1, 1.4, 1] } : { scale: 1 }}
-          transition={{ duration: 0.3 }}
-        >
-          <Heart
-            className={`w-5 h-5 transition-colors duration-200 ${
-              i < current
-                ? "fill-rose-500 text-rose-500"
-                : "fill-transparent text-stone-400 dark:text-stone-300"
-            }`}
-          />
-        </motion.div>
-      ))}
-    </div>
-  )
-}
-
-/** Progress dots */
-function ProgressDots({ total, answered }: { total: number; answered: number }) {
-  return (
-    <div className="flex items-center gap-1.5">
-      {Array.from({ length: total }).map((_, i) => (
-        <div
-          key={i}
-          className={`h-2 w-2 rounded-full transition-all duration-300 ${
-            i < answered
-              ? "bg-[var(--tome-accent)] scale-110"
-              : i === answered
-                ? "bg-muted-foreground/30 ring-2 ring-[var(--tome-accent)]/40"
-                : "bg-muted-foreground/30"
-          }`}
-        />
-      ))}
-    </div>
-  )
-}
-
-/** Option button (A B C D / True / False) */
-function OptionButton({
-  label,
-  text,
-  state,
-  disabled,
-  onClick,
-}: {
-  label: string
-  text: string
-  state: "idle" | "correct" | "wrong" | "disabled"
-  disabled: boolean
-  onClick: () => void
-}) {
-  const stateClasses = {
-    idle: "border-stone-300 bg-stone-100 dark:border-[#333333] dark:bg-[#222222] text-foreground hover:border-[var(--tome-accent)]",
-    correct: "border-green-400 bg-green-50 text-green-700 dark:border-[#5A9A5A] dark:bg-[#1A2E1A] dark:text-[#6EAA6E]",
-    wrong: "border-red-400 bg-red-50 text-red-700 dark:border-[#A04444] dark:bg-[#2E1A1A] dark:text-[#C87272]",
-    disabled: "border-stone-300 bg-stone-100 dark:border-[#333333] dark:bg-[#1A1A1A] text-muted-foreground opacity-50",
-  }
-
-  const badgeClasses = {
-    idle: "border-stone-300 bg-stone-200 text-stone-600 dark:border-[#444444] dark:bg-[#2A2A2A] dark:text-[#B0A898]",
-    correct: "border-green-400 bg-green-50 text-green-700 dark:border-[#5A9A5A] dark:bg-[#1A2E1A] dark:text-[#6EAA6E]",
-    wrong: "border-red-400 bg-red-50 text-red-700 dark:border-[#A04444] dark:bg-[#2E1A1A] dark:text-[#C87272]",
-    disabled: "border-stone-300 bg-stone-100 text-stone-400 dark:border-[#333333] dark:bg-[#1A1A1A] dark:text-[#666666]",
-  }
-
-  return (
-    <motion.button
-      whileTap={disabled ? {} : { scale: 0.97 }}
-      onClick={disabled ? undefined : onClick}
-      className={`w-full flex items-center gap-3 px-4 py-3.5 rounded-xl border-2 transition-all duration-200 text-left cursor-pointer ${stateClasses[state]} ${disabled && state === "idle" ? stateClasses.disabled : ""} ${disabled ? "cursor-default" : ""}`}
-    >
-      <span
-        className={`flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold border ${
-          disabled && state === "idle" ? badgeClasses.disabled : badgeClasses[state]
-        }`}
-      >
-        {label}
-      </span>
-      <span className="text-sm leading-snug">{text}</span>
-    </motion.button>
-  )
-}
-
 // ─────────────────────────────────────────────
-// Phase: Celebration
+// Quiz phase
 // ─────────────────────────────────────────────
 
-function CelebrationPhase({
-  chapterTitle,
-  onStart,
-}: {
-  chapterTitle: string
-  onStart: () => void
-}) {
-  const confettiRef = useRef<ConfettiRef>(null)
-  const [showWisdom, setShowWisdom] = useState(false)
-
-  useEffect(() => {
-    const t = setTimeout(() => {
-      confettiRef.current?.fire({
-        particleCount: 120,
-        spread: 80,
-        origin: { y: 0.4 },
-        colors: ["#4F46E5", "#F59E0B", "#EAB308", "#8B5CF6", "#22C55E"],
-      })
-      setShowWisdom(true)
-    }, 200)
-    return () => clearTimeout(t)
-  }, [])
-
-  return (
-    <div className="flex flex-col items-center justify-center h-full gap-6 text-center px-6 relative">
-      {/* Confetti canvas (fills overlay) */}
-      <Confetti
-        ref={confettiRef}
-        manualstart
-        className="pointer-events-none absolute inset-0 w-full h-full"
-      />
-
-      {/* Big celebration emoji */}
-      <motion.div
-        initial={{ scale: 0.5, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ ...springs.interactive, delay: 0.1 }}
-        className="relative"
-      >
-        <motion.span
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ ...springs.interactive, delay: 0.25 }}
-          className="block"
-        >
-          <Trophy className="size-10 text-[#D4B37A]" />
-        </motion.span>
-        {/* Wisdom float anchored near the emoji */}
-        <div className="absolute inset-0">
-          <WisdomFloat amount={5} show={showWisdom} />
-        </div>
-      </motion.div>
-
-      {/* Title */}
-      <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3, duration: 0.5 }}
-        className="space-y-2"
-      >
-        <h2 className="font-serif text-3xl font-bold text-ink tracking-tight">
-          Chapter Complete!
-        </h2>
-        <p className="text-muted-foreground text-base">{chapterTitle}</p>
-      </motion.div>
-
-      {/* CTA button */}
-      <motion.div
-        initial={{ opacity: 0, y: 12 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 0.4 }}
-      >
-        <Button
-          onClick={onStart}
-          className="bg-[var(--tome-accent)] hover:bg-[#E0C48A] text-[#111111] px-8 py-3 rounded-xl text-base font-semibold gap-2 shadow-lg shadow-black/20"
-        >
-          Start the Trial
-          <ChevronRight className="w-4 h-4" />
-        </Button>
-      </motion.div>
-    </div>
-  )
-}
-
-// ─────────────────────────────────────────────
-// Phase: Quiz
-// ─────────────────────────────────────────────
-
-const OPTION_LABELS = ["A", "B", "C", "D"]
-
-function QuizPhase({
-  book,
-  chapterTitle,
-  quizState,
-  maxHearts,
-  onAnswer,
-  onNext,
-}: {
+interface QuizRunnerProps {
   book: Book
   chapterTitle: string
-  quizState: ReturnType<typeof createQuizState>
-  maxHearts: number
-  onAnswer: (answer: string) => void
-  onNext: () => void
-}) {
-  const { questions, currentIndex, hearts, results, status } = quizState
-  const question = questions[currentIndex]
-  if (!question) return null
+  chapterIndex: number
+  questions: ChapterQuestion[]
+  tier: QuizDifficulty
+  hearts: number
+  onComplete: () => void
+  onPauseStateChange: (paused: boolean) => void
+  onFeedback: (msg: string) => void
+  quizStateOut: (state: ReturnType<typeof createQuizState>) => void
+  resumeToken: number
+}
 
-  const answered = results[currentIndex] !== null
-  const isCorrect = results[currentIndex] === "correct"
-  const isWrong = results[currentIndex] === "wrong"
-  const [showWisdom, setShowWisdom] = useState(false)
-  const [heartPulse, setHeartPulse] = useState(false)
-  const [shake, setShake] = useState(false)
-  const selectedAnswer = quizState.answers[currentIndex]
+function QuizRunner({
+  book,
+  chapterTitle,
+  chapterIndex,
+  questions,
+  tier,
+  hearts,
+  onComplete,
+  onPauseStateChange,
+  onFeedback,
+  quizStateOut,
+  resumeToken,
+}: QuizRunnerProps) {
+  const reduced = useReducedMotion() ?? false
 
-  const handleAnswer = useCallback(
-    (answer: string) => {
-      if (answered) return
-      onAnswer(answer)
-    },
-    [answered, onAnswer]
+  const { quiz, engineQuestions } = useMemo(
+    () => buildQuizObjects(book, chapterTitle, chapterIndex, questions),
+    [book, chapterTitle, chapterIndex, questions]
   )
 
-  // React to answer result
+  const [state, dispatch] = useReducer(
+    quizReducer,
+    { quiz, engineQuestions, hearts },
+    ({ quiz: q, engineQuestions: eqs, hearts: h }) => {
+      const s = createQuizState(q, eqs, h)
+      return { ...s, status: "active" as const }
+    }
+  )
+
+  // Publish state to parent for results screen
+  useEffect(() => {
+    quizStateOut(state)
+  }, [state, quizStateOut])
+
+  // Handle paused / review transitions
+  useEffect(() => {
+    if (state.status === "paused") onPauseStateChange(true)
+    else onPauseStateChange(false)
+
+    if (state.status === "review" || state.status === "complete") {
+      const t = setTimeout(onComplete, 400)
+      return () => clearTimeout(t)
+    }
+  }, [state.status, onComplete, onPauseStateChange])
+
+  // Resume when hearts regenerate / refill
+  useEffect(() => {
+    if (state.status === "paused" && hearts > 0 && resumeToken > 0) {
+      dispatch({ type: "RESUME" })
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [resumeToken, hearts])
+
+  const currentIdx = state.currentIndex
+  const q = state.questions[currentIdx]
+  const answered = state.results[currentIdx] !== null
+  const isCorrect = state.results[currentIdx] === "correct"
+  const isWrong = state.results[currentIdx] === "wrong"
+  const selectedAnswer = state.answers[currentIdx]
+
+  const [showWisdom, setShowWisdom] = useState(false)
+  const [shake, setShake] = useState(false)
+  const [lostIndex, setLostIndex] = useState<number | null>(null)
+
+  // Feedback effects after answer
   useEffect(() => {
     if (!answered) return
     if (isCorrect) {
       setShowWisdom(true)
-      const t = setTimeout(() => setShowWisdom(false), 1200)
+      onFeedback(
+        `Correct. +${wisdomForQuestion(q)} Wisdom. ${q.explanation ?? ""}`
+      )
+      const t = setTimeout(() => setShowWisdom(false), 1000)
       return () => clearTimeout(t)
     }
     if (isWrong) {
       setShake(true)
-      setHeartPulse(true)
+      setLostIndex(state.hearts) // heart that was just lost
+      onFeedback(
+        `Wrong. Correct answer: ${q.correct_answer}. ${q.explanation ?? ""}`
+      )
       const t1 = setTimeout(() => setShake(false), 500)
-      const t2 = setTimeout(() => setHeartPulse(false), 600)
+      const t2 = setTimeout(() => setLostIndex(null), 800)
       return () => {
         clearTimeout(t1)
         clearTimeout(t2)
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [answered, isCorrect, isWrong])
 
-  const isTrueFalse = question.type === "true_false"
-  const options = isTrueFalse ? ["True", "False"] : question.options
+  // Keyboard shortcuts
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      const target = e.target as HTMLElement | null
+      if (
+        target &&
+        (target.tagName === "INPUT" ||
+          target.tagName === "TEXTAREA" ||
+          target.isContentEditable)
+      )
+        return
 
-  function getOptionState(opt: string): "idle" | "correct" | "wrong" | "disabled" {
-    if (!answered) return "idle"
-    const normalizedOpt = isTrueFalse ? opt.toLowerCase() : opt
-    const normalizedCorrect = question.correct_answer.toLowerCase()
-    const normalizedSelected = selectedAnswer?.toLowerCase() ?? ""
-    if (normalizedOpt === normalizedCorrect) return "correct"
-    if (normalizedOpt === normalizedSelected && normalizedOpt !== normalizedCorrect) return "wrong"
-    return "disabled"
+      if (answered) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault()
+          dispatch({ type: "NEXT" })
+        }
+        return
+      }
+
+      if (!q) return
+      const opts = q.options ?? []
+
+      if (q.type === "true_false") {
+        if (e.key.toLowerCase() === "t") {
+          e.preventDefault()
+          dispatch({ type: "ANSWER", answer: "true" })
+        } else if (e.key.toLowerCase() === "f") {
+          e.preventDefault()
+          dispatch({ type: "ANSWER", answer: "false" })
+        }
+        return
+      }
+
+      if (
+        q.type === "multiple_choice" ||
+        q.type === "passage_id" ||
+        q.type === "theme_analysis" ||
+        q.type === "vocabulary_in_context" ||
+        q.type === "cross_reference" ||
+        q.type === "close_reading"
+      ) {
+        const n = parseInt(e.key, 10)
+        if (!Number.isNaN(n) && n >= 1 && n <= opts.length) {
+          e.preventDefault()
+          dispatch({ type: "ANSWER", answer: opts[n - 1] })
+        }
+      }
+    }
+
+    window.addEventListener("keydown", onKey)
+    return () => window.removeEventListener("keydown", onKey)
+  }, [q, answered])
+
+  if (!q) return null
+
+  const Renderer = QUESTION_RENDERERS[q.type]
+  const TypeIcon = QUESTION_TYPE_ICONS[q.type]
+  const tierDef = getTierDef(tier)
+  const TierSigil = tierSigils[tier]
+
+  const handleSubmit = (answer: string) => {
+    if (answered) return
+    dispatch({ type: "ANSWER", answer })
+  }
+
+  const handleNext = () => {
+    dispatch({ type: "NEXT" })
   }
 
   return (
     <div className="flex flex-col h-full">
-      {/* Header bar */}
-      <div className="flex items-center justify-between px-6 py-4 bg-card border-b border-border">
-        <div className="flex flex-col gap-0.5">
-          <span className="text-xs text-muted-foreground font-medium truncate max-w-[180px]">{book.title}</span>
-          <span className="text-xs text-muted-foreground truncate max-w-[180px]">{chapterTitle}</span>
+      {/* Header */}
+      <div className="flex items-center justify-between px-6 py-3 bg-card border-b border-border">
+        <div className="flex items-center gap-2 min-w-0">
+          <TierSigil size={18} color={tierDef.accentColor} />
+          <div className="flex flex-col gap-0.5 min-w-0">
+            <span className="text-[11px] font-sans text-muted-foreground truncate max-w-[220px]">
+              {book.title}
+            </span>
+            <span className="text-[11px] font-sans text-muted-foreground truncate max-w-[220px]">
+              {chapterTitle}
+            </span>
+          </div>
         </div>
-        <ProgressDots total={questions.length} answered={currentIndex + (answered ? 1 : 0)} />
-        <HeartsDisplay current={hearts} max={maxHearts} pulse={heartPulse} />
+        <HeartsDisplay current={state.hearts} max={hearts} lostIndex={lostIndex} />
+      </div>
+
+      <TrialProgressBar current={currentIdx} total={state.questions.length} />
+
+      {/* Screen-reader live region */}
+      <div role="status" aria-live="polite" className="sr-only">
+        {/* populated via onFeedback callback at parent level */}
       </div>
 
       {/* Question area */}
-      <div className="flex-1 flex items-center justify-center px-6 py-8 overflow-y-auto">
-        <div className="w-full max-w-xl">
-          {/* Question card */}
-          <motion.div
-            key={question.id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={shake ? { x: [-8, 8, -6, 6, -3, 3, 0] } : { opacity: 1, y: 0, x: 0 }}
-            transition={shake ? { duration: 0.45 } : { duration: 0.3 }}
-            className="rounded-2xl border-2 border-border bg-card p-6 space-y-5 shadow-sm transition-colors duration-300"
-          >
-            {/* Question meta */}
-            <div className="flex items-center justify-between">
-              <span className="text-xs text-muted-foreground font-medium uppercase tracking-widest">
-                Question {currentIndex + 1} of {questions.length}
-              </span>
-              {answered && (
-                <motion.span
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  className={`text-xs font-semibold px-2 py-0.5 rounded-full ${
-                    isCorrect
-                      ? "bg-emerald-50 text-emerald-600 dark:bg-emerald-950/50 dark:text-emerald-400"
-                      : "bg-rose-50 text-rose-600 dark:bg-rose-950/50 dark:text-rose-400"
-                  }`}
-                >
-                  {isCorrect ? "+10 Wisdom" : "Wrong — lost 1 heart"}
-                </motion.span>
-              )}
-            </div>
-
-            {/* Question text */}
-            <div className="relative">
-              <p className="text-ink text-lg leading-relaxed font-serif">{question.prompt}</p>
-              <div className="absolute -right-2 -top-2">
-                <WisdomFloat amount={10} show={showWisdom} />
-              </div>
-            </div>
-
-            {/* Options */}
-            <div
-              className={`space-y-2.5 ${isTrueFalse ? "grid grid-cols-2 gap-3 space-y-0" : ""}`}
+      <div className="flex-1 overflow-y-auto">
+        <div className="px-6 py-6 max-w-xl mx-auto">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={q.id + state.resumeCount}
+              variants={reduced ? reducedTokens.trialEnter : trialEnter}
+              initial="hidden"
+              animate={shake ? "visible" : "visible"}
+              exit={reduced ? undefined : "hidden"}
+              className="rounded-2xl border-2 border-border bg-card p-6 space-y-5 shadow-sm relative"
             >
-              {options.map((opt, i) => {
-                const label = isTrueFalse ? opt : OPTION_LABELS[i] ?? String(i + 1)
-                const answerValue = isTrueFalse ? opt.toLowerCase() : opt
-                return (
-                  <OptionButton
-                    key={opt}
-                    label={label}
-                    text={opt}
-                    state={getOptionState(opt)}
-                    disabled={answered}
-                    onClick={() => handleAnswer(answerValue)}
-                  />
-                )
-              })}
-            </div>
-
-            {/* Explanation */}
-            <AnimatePresence>
-              {answered && question.explanation && (
+              {/* Shake overlay when wrong */}
+              {shake && !reduced && (
                 <motion.div
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: "auto" }}
-                  transition={{ duration: 0.35 }}
-                  className={`rounded-xl p-4 text-sm leading-relaxed border ${
-                    isCorrect
-                      ? "bg-emerald-50 border-emerald-200 text-emerald-700 dark:bg-emerald-950/30 dark:border-emerald-800 dark:text-emerald-300"
-                      : "bg-rose-50 border-rose-200 text-rose-700 dark:bg-rose-950/30 dark:border-rose-800 dark:text-rose-300"
-                  }`}
-                >
-                  <span className="font-semibold mr-1">{isCorrect ? "Exactly." : "Not quite."}</span>
-                  {question.explanation}
-                </motion.div>
+                  className="absolute inset-0 pointer-events-none"
+                  animate={wrongShakeKeyframes}
+                  transition={wrongShakeTransition}
+                />
               )}
-            </AnimatePresence>
-          </motion.div>
 
-          {/* Next button */}
+              {/* Type + tier meta */}
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2 text-[11px] uppercase tracking-wider font-semibold font-sans text-muted-foreground">
+                  <TypeIcon className="w-3.5 h-3.5" />
+                  {QUESTION_TYPE_LABELS[q.type]}
+                </div>
+                <span className="text-[11px] font-sans text-muted-foreground">
+                  Question {currentIdx + 1} of {state.questions.length}
+                </span>
+              </div>
+
+              {/* Prompt — unless the renderer owns it (fill_blank, passage_id, close_reading, vocab) */}
+              {q.type !== "fill_blank" &&
+                q.type !== "passage_id" &&
+                q.type !== "close_reading" &&
+                q.type !== "vocabulary_in_context" && (
+                  <p className="text-ink text-lg leading-relaxed font-serif">{q.prompt}</p>
+                )}
+
+              {/* Renderer */}
+              <Renderer
+                question={q}
+                answered={answered}
+                isCorrect={isCorrect}
+                isWrong={isWrong}
+                selectedAnswer={selectedAnswer}
+                onSubmit={handleSubmit}
+                reduced={reduced}
+              />
+
+              {/* Wisdom float */}
+              {answered && isCorrect && (
+                <div className="absolute right-4 top-4 h-0 w-0">
+                  <WisdomFloat
+                    amount={wisdomForQuestion(q)}
+                    show={showWisdom}
+                    reduced={reduced}
+                  />
+                </div>
+              )}
+
+              {/* Explanation card */}
+              <AnimatePresence>
+                {answered && (
+                  <motion.div
+                    variants={reduced ? reducedTokens.explanationRise : explanationRise}
+                    initial="hidden"
+                    animate="visible"
+                    exit="hidden"
+                    className={`rounded-xl border-2 px-4 py-3 space-y-1.5 ${
+                      isCorrect
+                        ? "border-emerald-300 bg-emerald-50/60 dark:border-emerald-800 dark:bg-emerald-950/20"
+                        : "border-rose-300 bg-rose-50/60 dark:border-rose-800 dark:bg-rose-950/20"
+                    }`}
+                  >
+                    <div className="flex items-center gap-2 font-sans text-sm font-bold">
+                      <TierSigil size={16} color={tierDef.accentColor} />
+                      {isCorrect ? "Correct" : "Not quite"}
+                    </div>
+                    {!isCorrect && q.correct_answer && q.type !== "fill_blank" && (
+                      <p className="text-sm text-ink font-serif">
+                        The correct answer is:{" "}
+                        <span className="font-semibold">{q.correct_answer}</span>
+                      </p>
+                    )}
+                    {q.explanation && (
+                      <p className="text-sm text-ink font-serif leading-relaxed">
+                        {q.explanation}
+                      </p>
+                    )}
+                    {q.citation && (
+                      <p className="text-xs italic text-stone-500 font-serif pt-1">
+                        — {q.citation}
+                      </p>
+                    )}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
+          </AnimatePresence>
+
+          {/* Next / Continue */}
           <AnimatePresence>
             {answered && (
               <motion.div
-                initial={{ opacity: 0, y: 12 }}
+                initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 8 }}
-                transition={{ duration: 0.25 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.2 }}
                 className="mt-4 flex justify-end"
               >
                 <Button
-                  onClick={onNext}
-                  className="bg-[var(--tome-accent)] hover:bg-[#E0C48A] text-[#111111] px-6 py-2.5 rounded-xl font-semibold gap-2 shadow-lg shadow-black/20"
+                  onClick={handleNext}
+                  className="rounded-xl font-semibold gap-2"
                 >
-                  {currentIndex < questions.length - 1 ? (
+                  {currentIdx < state.questions.length - 1 ? (
                     <>
                       Next Question
                       <ChevronRight className="w-4 h-4" />
@@ -498,252 +511,7 @@ function QuizPhase({
 }
 
 // ─────────────────────────────────────────────
-// Phase: Results
-// ─────────────────────────────────────────────
-
-function ResultsPhase({
-  quizState,
-  maxHearts,
-  onPass,
-  onRetry,
-  onClose,
-}: {
-  quizState: ReturnType<typeof createQuizState>
-  maxHearts: number
-  onPass: (xp: number, coins: number) => void
-  onRetry: () => void
-  onClose: () => void
-}) {
-  const { questions, score, hearts, xpEarned, coinsEarned } = quizState
-  const total = questions.length
-  const percentage = total > 0 ? Math.round((score / total) * 100) : 0
-  const passed = percentage >= 60
-  const confettiRef = useRef<ConfettiRef>(null)
-
-  useEffect(() => {
-    if (passed) {
-      const t = setTimeout(() => {
-        confettiRef.current?.fire({
-          particleCount: 80,
-          spread: 60,
-          origin: { y: 0.5 },
-          colors: ["#D4B37A", "#6EAA6E", "#6E9AC8", "#C87272", "#E0C48A"],
-        })
-      }, 400)
-      return () => clearTimeout(t)
-    }
-  }, [passed])
-
-  return (
-    <div className="flex flex-col items-center justify-center h-full gap-8 px-6 text-center relative">
-      {passed && (
-        <Confetti
-          ref={confettiRef}
-          manualstart
-          className="pointer-events-none absolute inset-0 w-full h-full"
-        />
-      )}
-
-      {/* Title */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4 }}
-        className="space-y-2"
-      >
-        {passed && <span className="block mb-2"><Trophy className="size-10 text-[#D4B37A] mx-auto" /></span>}
-        <h2 className="font-serif text-3xl font-bold tracking-tight text-ink">
-          {passed ? "Trial Passed!" : "Not quite..."}
-        </h2>
-        <p className="text-muted-foreground text-sm">
-          {passed ? "Your knowledge grows stronger." : "Every scholar learns from difficulty."}
-        </p>
-      </motion.div>
-
-      {/* Score card */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ ...springs.gentle, delay: 0.15 }}
-        className={`rounded-2xl border-2 px-10 py-8 space-y-6 w-full max-w-sm bg-card shadow-sm ${
-          passed ? "border-[var(--tome-accent)]/20" : "border-border"
-        }`}
-      >
-        {/* Score fraction */}
-        <div className="space-y-1">
-          <div className="text-5xl font-bold text-ink">
-            {score}
-            <span className="text-2xl text-muted-foreground font-normal"> / {total}</span>
-          </div>
-          <div className="text-muted-foreground text-sm">
-            {percentage}% correct
-          </div>
-        </div>
-
-        {/* XP earned */}
-        <div className="flex items-center justify-center gap-2">
-          <span className="text-emerald-600 text-xl font-bold">+{xpEarned}</span>
-          <span className="text-muted-foreground text-sm">Wisdom earned</span>
-        </div>
-
-        {/* Hearts remaining */}
-        <div className="flex items-center justify-center gap-3">
-          <span className="text-muted-foreground text-sm">Hearts:</span>
-          <HeartsDisplay current={hearts} max={maxHearts} pulse={false} />
-        </div>
-      </motion.div>
-
-      {/* Pass actions */}
-      {passed && (
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.35, duration: 0.35 }}
-          className="space-y-3 w-full max-w-sm"
-        >
-          <Button
-            onClick={() => onPass(xpEarned, coinsEarned)}
-            className="w-full bg-[var(--tome-accent)] hover:bg-[#E0C48A] text-[#111111] py-3 rounded-xl text-base font-semibold gap-2 shadow-lg shadow-black/20"
-          >
-            Continue Reading
-            <ChevronRight className="w-4 h-4" />
-          </Button>
-        </motion.div>
-      )}
-
-      {/* Fail actions */}
-      {!passed && (
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.35, duration: 0.35 }}
-          className="space-y-4 w-full max-w-sm"
-        >
-          <Button
-            onClick={onRetry}
-            className="w-full bg-stone-200 hover:bg-stone-300 dark:bg-stone-800 dark:hover:bg-stone-700 text-ink py-3 rounded-xl text-base font-semibold gap-2"
-          >
-            <RotateCcw className="w-4 h-4" />
-            Try Again
-          </Button>
-          <button
-            onClick={onClose}
-            className="text-muted-foreground hover:text-ink text-sm underline underline-offset-2 transition-colors"
-          >
-            Skip and continue reading
-          </button>
-        </motion.div>
-      )}
-    </div>
-  )
-}
-
-// ─────────────────────────────────────────────
-// Quiz Controller — owns quiz state, keyed on attempt
-// ─────────────────────────────────────────────
-
-function QuizController({
-  book,
-  chapterTitle,
-  chapterIndex,
-  questions,
-  hearts,
-  onPhaseChange,
-  onPass,
-  onRetry,
-  onClose,
-  currentPhase,
-}: {
-  book: Book
-  chapterTitle: string
-  chapterIndex: number
-  questions: ChapterQuestion[]
-  hearts: number
-  onPhaseChange: (phase: OverlayPhase) => void
-  onPass: (xp: number, coins: number) => void
-  onRetry: () => void
-  onClose: () => void
-  currentPhase: OverlayPhase
-}) {
-  const { quiz, engineQuestions } = buildQuizObjects(book, chapterTitle, chapterIndex, questions)
-  const [quizState, dispatch] = useReducer(
-    quizReducer,
-    { quiz, engineQuestions, hearts },
-    ({ quiz: q, engineQuestions: eqs, hearts: h }) => {
-      const s = createQuizState(q, eqs, h)
-      return { ...s, status: "active" as const }
-    }
-  )
-
-  // Advance to results when quiz engine finishes
-  useEffect(() => {
-    if (
-      currentPhase === "quiz" &&
-      (quizState.status === "review" || quizState.status === "complete")
-    ) {
-      const t = setTimeout(() => onPhaseChange("results"), 300)
-      return () => clearTimeout(t)
-    }
-  }, [currentPhase, quizState.status, onPhaseChange])
-
-  const handleAnswer = useCallback((answer: string) => {
-    dispatch({ type: "ANSWER", answer })
-  }, [])
-
-  const handleNext = useCallback(() => {
-    if (quizState.status === "review" || quizState.status === "complete") {
-      onPhaseChange("results")
-    } else {
-      dispatch({ type: "NEXT" })
-    }
-  }, [quizState.status, onPhaseChange])
-
-  return (
-    <AnimatePresence mode="wait">
-      {currentPhase === "quiz" && (
-        <motion.div
-          key="quiz"
-          initial={{ opacity: 0, x: 30 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -30 }}
-          transition={{ duration: 0.3 }}
-          className="flex-1 flex flex-col overflow-hidden"
-        >
-          <QuizPhase
-            book={book}
-            chapterTitle={chapterTitle}
-            quizState={quizState}
-            maxHearts={hearts}
-            onAnswer={handleAnswer}
-            onNext={handleNext}
-          />
-        </motion.div>
-      )}
-
-      {currentPhase === "results" && (
-        <motion.div
-          key="results"
-          initial={{ opacity: 0, scale: 0.96 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.35 }}
-          className="flex-1 flex flex-col overflow-hidden"
-        >
-          <ResultsPhase
-            quizState={quizState}
-            maxHearts={hearts}
-            onPass={onPass}
-            onRetry={onRetry}
-            onClose={onClose}
-          />
-        </motion.div>
-      )}
-    </AnimatePresence>
-  )
-}
-
-// ─────────────────────────────────────────────
-// Main Overlay Component
+// Main overlay
 // ─────────────────────────────────────────────
 
 export function ChapterQuizOverlay({
@@ -760,43 +528,100 @@ export function ChapterQuizOverlay({
   onSelectDifficulty,
   onSkip,
 }: ChapterQuizOverlayProps) {
+  const reduced = useReducedMotion()
   const [phase, setPhase] = useState<OverlayPhase>("difficulty-select")
-  // quizAttempt increments on retry; keyed on QuizController to force full state reset
-  const [quizAttempt, setQuizAttempt] = useState(0)
+  const [selectedTier, setSelectedTier] = useState<QuizDifficulty | null>(null)
+  const [attempt, setAttempt] = useState(0)
+  const [paused, setPaused] = useState(false)
+  const [resumeToken, setResumeToken] = useState(0)
+  const [finalState, setFinalState] = useState<ReturnType<typeof createQuizState> | null>(
+    null
+  )
+  const [liveMessage, setLiveMessage] = useState("")
 
-  // Reset phase when overlay opens
+  // Reset when the overlay opens
   useEffect(() => {
     if (isOpen) {
       setPhase("difficulty-select")
-      setQuizAttempt(0)
+      setSelectedTier(null)
+      setAttempt(0)
+      setPaused(false)
+      setFinalState(null)
+      setResumeToken(0)
     }
   }, [isOpen])
 
-  // When questions are provided (after difficulty selection), transition to quiz
+  // Advance from difficulty-select → intro when questions arrive
   useEffect(() => {
-    if (phase === "difficulty-select" && questions.length > 0) {
-      setPhase("quiz")
+    if (phase === "difficulty-select" && selectedTier && questions.length > 0) {
+      setPhase("intro")
     }
-  }, [phase, questions.length])
+  }, [phase, selectedTier, questions.length])
+
+  const handleSelectDifficulty = useCallback(
+    (tier: QuizDifficulty) => {
+      setSelectedTier(tier)
+      onSelectDifficulty(tier)
+    },
+    [onSelectDifficulty]
+  )
+
+  const handleIntroBegin = useCallback(() => {
+    setPhase("quiz")
+  }, [])
+
+  const handleQuizComplete = useCallback(() => {
+    setPhase("results")
+  }, [])
 
   const handleRetry = useCallback(() => {
-    setQuizAttempt((n) => n + 1)
+    setAttempt((n) => n + 1)
     setPhase("quiz")
+    setFinalState(null)
     onFail()
   }, [onFail])
+
+  const handleReturn = useCallback(() => {
+    onClose()
+  }, [onClose])
+
+  // Escape key exit confirmation
+  useEffect(() => {
+    if (!isOpen) return
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape" && phase !== "results") {
+        const target = e.target as HTMLElement | null
+        if (
+          target &&
+          (target.tagName === "INPUT" ||
+            target.tagName === "TEXTAREA" ||
+            target.isContentEditable)
+        )
+          return
+        if (window.confirm("Exit Trial? Progress will not be saved.")) {
+          onClose()
+        }
+      }
+    }
+    window.addEventListener("keydown", onKey)
+    return () => window.removeEventListener("keydown", onKey)
+  }, [isOpen, phase, onClose])
 
   return (
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          key="chapter-quiz-overlay"
-          initial={{ y: "100%" }}
-          animate={{ y: 0 }}
-          exit={{ y: "100%" }}
-          transition={{ ...springs.gentle, duration: 0.55 }}
+          key="trial-overlay"
+          initial={reduced ? { opacity: 0 } : { y: "100%" }}
+          animate={reduced ? { opacity: 1 } : { y: 0 }}
+          exit={reduced ? { opacity: 0 } : { y: "100%" }}
+          transition={reduced ? { duration: 0.2 } : { ...springs.gentle, duration: 0.55 }}
           className="fixed inset-0 z-50 bg-background flex flex-col"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Chapter Trial"
         >
-          {/* Close button (visible in all phases except difficulty-select) */}
+          {/* Exit button (hidden on difficulty-select) */}
           <AnimatePresence>
             {phase !== "difficulty-select" && (
               <motion.button
@@ -805,7 +630,7 @@ export function ChapterQuizOverlay({
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.2 }}
                 onClick={onClose}
-                className="absolute top-4 right-4 z-10 p-2 rounded-full bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground transition-colors"
+                className="absolute top-4 right-4 z-10 p-2 rounded-full bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400"
                 aria-label="Exit trial"
               >
                 <X className="w-4 h-4" />
@@ -813,14 +638,17 @@ export function ChapterQuizOverlay({
             )}
           </AnimatePresence>
 
-          {/* Phase content */}
+          {/* Screen-reader live region for answer feedback */}
+          <div role="status" aria-live="polite" className="sr-only">
+            {liveMessage}
+          </div>
+
           <div className="flex-1 flex flex-col overflow-hidden relative">
-            {/* Difficulty selection phase */}
             <AnimatePresence mode="wait">
               {phase === "difficulty-select" && (
                 <motion.div
                   key="difficulty-select"
-                  initial={{ opacity: 0 }}
+                  initial={reduced ? false : { opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.3 }}
@@ -828,30 +656,89 @@ export function ChapterQuizOverlay({
                 >
                   <TrialDifficultyCards
                     unitDisplay={unitDisplay}
-                    onSelectDifficulty={onSelectDifficulty}
+                    onSelectDifficulty={handleSelectDifficulty}
                     onSkip={onSkip}
+                  />
+                </motion.div>
+              )}
+
+              {phase === "intro" && selectedTier && (
+                <motion.div
+                  key="intro"
+                  initial={reduced ? false : { opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="absolute inset-0 flex flex-col"
+                >
+                  <TrialIntroCard
+                    tier={selectedTier}
+                    unitDisplay={unitDisplay}
+                    questionCount={questions.length}
+                    hearts={hearts}
+                    onBegin={handleIntroBegin}
+                  />
+                </motion.div>
+              )}
+
+              {phase === "quiz" && selectedTier && questions.length > 0 && (
+                <motion.div
+                  key={`quiz-${attempt}`}
+                  initial={reduced ? false : { opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -20 }}
+                  transition={{ duration: 0.3 }}
+                  className="absolute inset-0 flex flex-col"
+                >
+                  <QuizRunner
+                    book={book}
+                    chapterTitle={chapterTitle}
+                    chapterIndex={chapterIndex}
+                    questions={questions}
+                    tier={selectedTier}
+                    hearts={hearts}
+                    onComplete={handleQuizComplete}
+                    onPauseStateChange={setPaused}
+                    onFeedback={setLiveMessage}
+                    quizStateOut={setFinalState}
+                    resumeToken={resumeToken}
+                  />
+                </motion.div>
+              )}
+
+              {phase === "results" && finalState && selectedTier && (
+                <motion.div
+                  key="results"
+                  initial={reduced ? false : { opacity: 0, scale: 0.96 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.35 }}
+                  className="absolute inset-0 flex flex-col"
+                >
+                  <TrialResultsScreen
+                    quizState={finalState}
+                    tier={selectedTier}
+                    maxHearts={hearts}
+                    onPass={onPass}
+                    onRetry={handleRetry}
+                    onReturn={handleReturn}
                   />
                 </motion.div>
               )}
             </AnimatePresence>
 
-            {/* Quiz + Results — QuizController manages both, keyed on quizAttempt for clean resets */}
-            {(phase === "quiz" || phase === "results") && (
-              <QuizController
-                key={quizAttempt}
-                book={book}
-                chapterTitle={chapterTitle}
-                chapterIndex={chapterIndex}
-                questions={questions}
-                hearts={hearts}
-                currentPhase={phase}
-                onPhaseChange={setPhase}
-                onPass={onPass}
-                onRetry={handleRetry}
-                onClose={onClose}
-              />
-            )}
+            {phase === "quiz" && <KeyboardHints />}
           </div>
+
+          {/* Hearts-zero pause modal */}
+          <HeartsZeroModal
+            open={paused}
+            onResume={() => {
+              setPaused(false)
+              setResumeToken((n) => n + 1)
+            }}
+            onReviewChapter={onClose}
+          />
         </motion.div>
       )}
     </AnimatePresence>
