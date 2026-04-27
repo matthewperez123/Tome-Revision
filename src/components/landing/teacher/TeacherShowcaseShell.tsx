@@ -6,6 +6,8 @@ interface TeacherShowcaseShellProps {
   subcopy: string
   layout: "mockup-left" | "mockup-right"
   bgClass?: string
+  /** Tailwind padding-y class. Defaults to "py-24"; teacher stack uses "py-20" for compactness. */
+  paddingClass?: string
 }
 
 export function TeacherShowcaseShell({
@@ -14,11 +16,12 @@ export function TeacherShowcaseShell({
   subcopy,
   layout,
   bgClass = "bg-background",
+  paddingClass = "py-24",
 }: TeacherShowcaseShellProps) {
   const isLeft = layout === "mockup-left"
 
   return (
-    <section className={`${bgClass} py-24 px-6 md:px-12`}>
+    <section className={`${bgClass} ${paddingClass} px-6 md:px-12`}>
       <div
         className={`max-w-5xl mx-auto grid grid-cols-1 ${
           isLeft ? "md:grid-cols-[3fr_2fr]" : "md:grid-cols-[2fr_3fr]"

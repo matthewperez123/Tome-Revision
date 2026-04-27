@@ -36,6 +36,7 @@ export function TrialResultsScreen({
   onPass,
   onRetry,
   onReturn,
+  isLastChapter = false,
 }: {
   quizState: QuizState
   tier: QuizDifficulty
@@ -43,6 +44,8 @@ export function TrialResultsScreen({
   onPass: (xp: number, coins: number) => void
   onRetry: () => void
   onReturn: () => void
+  /** When true, the pass-CTA reads "Finish book" instead of "Next chapter". */
+  isLastChapter?: boolean
 }) {
   const reduced = useReducedMotion()
   const summary = getQuizSummary(quizState)
@@ -274,7 +277,7 @@ export function TrialResultsScreen({
               style={{ background: tierDef.accentColor, color: "#111" }}
             >
               {summary.perfect && <Sparkles className="w-4 h-4" />}
-              Continue reading
+              {isLastChapter ? "Finish book" : "Next chapter"}
               <ChevronRight className="w-4 h-4" />
             </Button>
           ) : (

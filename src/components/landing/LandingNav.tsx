@@ -2,11 +2,20 @@
 
 import { useCallback, useEffect, useState } from "react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { BookOpen } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { ThemeToggle } from "@/components/tome/ThemeToggle"
+import { TomeWordmark } from "@/components/brand/tome-wordmark"
+
+// Marketing / landing routes that suppress the Beta superscript so the
+// wordmark reads cleanly on hero-style chrome. Authenticated app surfaces
+// (TopBar) keep the Beta indicator.
+const LANDING_PATHS = new Set(["/", "/readers", "/educators"])
 
 export function LandingNav() {
+  const pathname = usePathname()
+  const isLandingPath = LANDING_PATHS.has(pathname)
   const [scrolled, setScrolled] = useState(false)
   const handleScroll = useCallback(() => {
     setScrolled(window.scrollY > 60)
@@ -15,6 +24,11 @@ export function LandingNav() {
     window.addEventListener("scroll", handleScroll, { passive: true })
     return () => window.removeEventListener("scroll", handleScroll)
   }, [handleScroll])
+
+  const linkClass = cn(
+    "text-sm font-medium transition-colors px-3 py-1.5 rounded-full",
+    scrolled ? "text-foreground hover:bg-accent" : "text-white hover:bg-white/10"
+  )
 
   return (
     <nav
@@ -27,30 +41,29 @@ export function LandingNav() {
     >
       <Link
         href="/"
-        className="flex items-center gap-2 transition-opacity duration-[var(--tome-duration-fast)] hover:opacity-70"
+        className="flex items-center gap-2 transition-opacity duration-[var(--tome-duration-fast)] hover:opacity-70 pr-3"
       >
         <BookOpen className="size-5 shrink-0" />
-        <span className="text-base font-[var(--font-display)] font-semibold tracking-tight">
-          Tome
-        </span>
+        <TomeWordmark
+          showBeta={!isLandingPath}
+          betaPx={9}
+          className="text-base font-[var(--font-display)] font-semibold tracking-tight"
+        />
       </Link>
-      <div className="flex items-center gap-3">
-        <Link
-          href="/dashboard"
-          className={cn(
-            "text-sm font-medium transition-colors px-3 py-1.5 rounded-full",
-            scrolled ? "text-foreground hover:bg-accent" : "text-white hover:bg-white/10"
-          )}
-        >
+      <div className="flex items-center gap-1 sm:gap-3">
+        <Link href="/readers" className={cn("hidden sm:inline-flex", linkClass)}>
+          Readers
+        </Link>
+        <Link href="/educators" className={cn("hidden sm:inline-flex", linkClass)}>
+          Educators
+        </Link>
+        <Link href="/library" className={cn("hidden sm:inline-flex", linkClass)}>
+          Library
+        </Link>
+        <Link href="/dashboard" className={linkClass}>
           Log in
         </Link>
-        <Link
-          href="/onboarding"
-          className={cn(
-            "text-sm font-medium transition-colors px-3 py-1.5 rounded-full",
-            scrolled ? "text-foreground hover:bg-accent" : "text-white hover:bg-white/10"
-          )}
-        >
+        <Link href="/onboarding" className={linkClass}>
           Sign Up
         </Link>
         <ThemeToggle

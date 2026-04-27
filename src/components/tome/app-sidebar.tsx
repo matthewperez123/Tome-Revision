@@ -21,14 +21,22 @@ import { ProfileSwitcher } from "@/components/tome/profile-switcher"
 import { AnimatedIconWrapper } from "@/components/sidebar/animations/AnimatedIconWrapper"
 import { studentIconRegistry } from "@/components/sidebar/animations/student/registry"
 import { teacherIconRegistry } from "@/components/sidebar/animations/teacher/registry"
+import { useFriendsData } from "@/hooks/use-friends-data"
 
 export function AppSidebar() {
   const pathname = usePathname()
   const { state } = useSidebar()
   const collapsed = state === "collapsed"
 
+  // Layering fix: shadcn's container ships `z-20`, which sits BELOW every
+  // drawer in the app (Virgil, annotation, bookmark all at z-30/40). When
+  // collapsed we keep the sidebar above drawers; when expanded we push it
+  // above the drawer layer entirely so the panel can never be visually
+  // clipped by a drawer that opened underneath it.
+  const zClass = collapsed ? "!z-50" : "!z-[60]"
+
   return (
-    <Sidebar collapsible="icon" overlayExpand className="border-r-0 !top-12 !h-[calc(100svh-3rem)] [&_[data-sidebar=sidebar]]:bg-background">
+    <Sidebar collapsible="icon" overlayExpand className={`border-r-0 !top-12 !h-[calc(100svh-3rem)] [&_[data-sidebar=sidebar]]:bg-background ${zClass}`}>
       <SidebarContent className="pt-1">
         <SidebarGroup>
           <SidebarGroupContent>
@@ -98,6 +106,10 @@ function SidebarNav({ pathname }: { pathname: string }) {
     return pathname
   })()
 
+  // Pending friend-request count powers the gold badge on the Friends entry.
+  const { requests } = useFriendsData()
+  const pendingFriendRequests = requests.length
+
   return (
     <SidebarMenu ref={listRef}>
       {navItems.map((item, index) => {
@@ -130,9 +142,26 @@ function SidebarNav({ pathname }: { pathname: string }) {
                   )}
                 </AnimatedIconWrapper>
               ) : (
-                <item.icon className="size-4" aria-hidden="true" />
+                /* Fallback (lucide-react) icon — kept deliberate even when the
+                 * animated registry has no entry for an item. 1.75px stroke
+                 * reads scholarly rather than utilitarian; parchment-70%
+                 * inactive lifts to 100% on hover, and the SidebarMenuButton's
+                 * data-[active=true] state already swaps to the gold accent. */
+                <item.icon
+                  className="size-4 transition-opacity opacity-70 group-hover/menu-button:opacity-100 group-data-active/menu-button:opacity-100"
+                  strokeWidth={1.75}
+                  aria-hidden="true"
+                />
               )}
               <span>{item.label}</span>
+              {item.label === "Friends" && pendingFriendRequests > 0 && (
+                <span
+                  aria-label={`${pendingFriendRequests} pending friend ${pendingFriendRequests === 1 ? "request" : "requests"}`}
+                  className="ml-auto flex size-4 items-center justify-center rounded-full bg-[#D4A04C] text-[9px] font-bold text-[#1a1a2e]"
+                >
+                  {pendingFriendRequests > 9 ? "9+" : pendingFriendRequests}
+                </span>
+              )}
             </SidebarMenuButton>
           </SidebarMenuItem>
         )

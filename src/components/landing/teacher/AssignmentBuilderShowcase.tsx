@@ -52,8 +52,8 @@ export function AssignmentBuilderShowcase() {
   if (isReduced) {
     return (
       <TeacherShowcaseShell
-        heading="Assign any text, any chapter"
-        subcopy="Five assignment types \u2014 Reading, Trial, Discussion, Essay, Annotation. Pick a book, select chapters, set a due date. Tome handles the rest."
+        heading="Assign chapters, Trials, and reflections."
+        subcopy="Five assignment types \u2014 chapter readings, Trials, Virgil-graded reflections, annotation prompts, and quote collections. Set due dates, scope to a class or a student, attach a rubric."
         layout="mockup-right"
         bgClass="bg-muted"
       >
@@ -109,10 +109,11 @@ export function AssignmentBuilderShowcase() {
 
   return (
     <TeacherShowcaseShell
-      heading="Assign any text, any chapter"
-      subcopy="Pick a book, select chapters, set a due date. Tome handles the rest."
+      heading="Assign chapters, Trials, and reflections."
+      subcopy="Five assignment types \u2014 chapter readings, Trials, Virgil-graded reflections, annotation prompts, and quote collections. Set due dates, scope to a class or a student, attach a rubric."
       layout="mockup-right"
       bgClass="bg-muted"
+      paddingClass="py-20"
     >
       <div
         ref={containerRef}

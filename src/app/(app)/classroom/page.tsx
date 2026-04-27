@@ -13,6 +13,8 @@ import {
   getCompletionColor,
 } from "@/lib/classroom"
 
+type ClassroomRole = "owner" | "co_teacher" | "ta" | "student"
+
 interface ClassroomData {
   id: string
   name: string
@@ -20,6 +22,8 @@ interface ClassroomData {
   join_code: string
   student_count: number
   active_assignments: number
+  /** Viewer's role in this classroom. Demo data defaults to "owner". */
+  my_role: ClassroomRole
 }
 
 function mapDemoToClassroomData(): ClassroomData[] {
@@ -32,8 +36,23 @@ function mapDemoToClassroomData(): ClassroomData[] {
       join_code: c.joinCode,
       student_count: c.studentCount,
       active_assignments: stats.activeAssignments,
+      my_role: "owner",
     }
   })
+}
+
+const ROLE_LABEL: Record<ClassroomRole, string> = {
+  owner: "Owner",
+  co_teacher: "Co-teacher",
+  ta: "TA",
+  student: "Student",
+}
+
+const ROLE_BADGE_STYLE: Record<ClassroomRole, string> = {
+  owner: "bg-[#D4A04C]/15 text-[#9c6e2b] dark:text-[#D4A04C]",
+  co_teacher: "bg-indigo-500/15 text-indigo-700 dark:text-indigo-300",
+  ta: "bg-purple-500/15 text-purple-700 dark:text-purple-300",
+  student: "bg-muted text-muted-foreground",
 }
 
 export default function ClassroomDashboard() {
@@ -52,59 +71,69 @@ export default function ClassroomDashboard() {
     async function fetchClassrooms() {
       const supabase = createClient()
 
-      if (role === "teacher") {
-        const { data } = await supabase
-          .from("classrooms")
-          .select("id, name, subject, join_code")
-          .eq("teacher_id", user!.id)
-          .eq("archived", false)
-          .order("created_at", { ascending: false })
+      // Unified path: query all classroom_members rows for this user,
+      // joined to the parent classroom. Role-per-classroom (not the
+      // user's profile role) is the source of truth for what they see.
+      const { data: memberships } = await supabase
+        .from("classroom_members")
+        .select(
+          `
+          role,
+          classroom:classrooms!inner(id, name, subject, join_code, archived)
+        `,
+        )
+        .eq("student_id", user!.id)
 
-        if (data?.length) {
-          const withCounts = await Promise.all(
-            data.map(async (c) => {
-              const { count: studentCount } = await supabase
-                .from("classroom_members")
-                .select("*", { count: "exact", head: true })
-                .eq("classroom_id", c.id)
-              const { count: assignmentCount } = await supabase
-                .from("assignments")
-                .select("*", { count: "exact", head: true })
-                .eq("classroom_id", c.id)
-                .eq("status", "active")
-              return {
-                ...c,
-                student_count: studentCount ?? 0,
-                active_assignments: assignmentCount ?? 0,
-              }
-            }),
-          )
-          setClassrooms(withCounts)
-        } else {
-          // No real classrooms yet — show demo data
-          setClassrooms(mapDemoToClassroomData())
-        }
-      } else {
-        const { data: memberships } = await supabase
-          .from("classroom_members")
-          .select("classroom_id, classrooms(id, name, subject, join_code)")
-          .eq("student_id", user!.id)
-
-        if (memberships?.length) {
-          const items = memberships
-            .map((m) => {
-              const c = (m as any).classrooms as { id: string; name: string; subject: string | null; join_code: string } | null
-              if (!c) return null
-              return { ...c, student_count: 0, active_assignments: 0 }
-            })
-            .filter(Boolean) as ClassroomData[]
-          setClassrooms(items)
-        } else {
-          // No real classrooms — show demo for students too
-          setClassrooms(mapDemoToClassroomData())
-        }
+      type Row = {
+        role: ClassroomRole
+        classroom: {
+          id: string
+          name: string
+          subject: string | null
+          join_code: string
+          archived: boolean | null
+        } | null
       }
 
+      const rows = ((memberships ?? []) as unknown as Row[])
+        .filter((r) => r.classroom && !r.classroom.archived)
+
+      if (rows.length === 0) {
+        setClassrooms([])
+        setLoading(false)
+        return
+      }
+
+      // Hydrate counts in parallel — student_count from classroom_members,
+      // active_assignments from assignments where status='active'.
+      const withCounts: ClassroomData[] = await Promise.all(
+        rows.map(async (r) => {
+          const c = r.classroom!
+          const [{ count: studentCount }, { count: assignmentCount }] = await Promise.all([
+            supabase
+              .from("classroom_members")
+              .select("*", { count: "exact", head: true })
+              .eq("classroom_id", c.id)
+              .eq("role", "student"),
+            supabase
+              .from("assignments")
+              .select("*", { count: "exact", head: true })
+              .eq("classroom_id", c.id)
+              .eq("status", "active"),
+          ])
+          return {
+            id: c.id,
+            name: c.name,
+            subject: c.subject,
+            join_code: c.join_code,
+            student_count: studentCount ?? 0,
+            active_assignments: assignmentCount ?? 0,
+            my_role: r.role,
+          }
+        }),
+      )
+
+      setClassrooms(withCounts)
       setLoading(false)
     }
 
@@ -179,6 +208,11 @@ export default function ClassroomDashboard() {
                       </span>
                     )}
                   </div>
+                  <span
+                    className={`text-[10px] font-medium uppercase tracking-wider px-2 py-0.5 rounded-full shrink-0 ${ROLE_BADGE_STYLE[cls.my_role]}`}
+                  >
+                    {ROLE_LABEL[cls.my_role]}
+                  </span>
                 </div>
 
                 <div className="mt-4 flex items-center gap-6 text-sm text-muted-foreground">
@@ -192,7 +226,9 @@ export default function ClassroomDashboard() {
                   </span>
                 </div>
 
-                {isTeacher && <JoinCodeBadge code={cls.join_code} />}
+                {(cls.my_role === "owner" || cls.my_role === "co_teacher") && (
+                  <JoinCodeBadge code={cls.join_code} />
+                )}
               </Link>
             </motion.div>
           ))}

@@ -3,7 +3,6 @@
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { Marquee } from "@/components/ui/marquee"
-import { BOOKS } from "@/data/books"
 import { GalleryCard } from "./GalleryCard"
 import { ROW_1, ROW_2 } from "./carousel-data"
 
@@ -12,15 +11,24 @@ export function CarouselSection() {
     <section className="py-16 overflow-hidden">
       <div className="text-center mb-8 px-6">
         <p className="font-[var(--font-display)] text-sm text-muted-foreground tracking-[0.15em] uppercase">
-          {BOOKS.length.toLocaleString()} books from 36 literary traditions
+          Over a thousand books, charted across the canon.
         </p>
       </div>
-      <Marquee pauseOnHover className="[--duration:60s] [--gap:0.75rem] mb-3">
+      <Marquee
+        pauseOnHover
+        repeat={2}
+        className="[--duration:60s] [--gap:0.75rem] mb-3"
+      >
         {ROW_1.map((p) => (
           <GalleryCard key={p.slug} card={p} />
         ))}
       </Marquee>
-      <Marquee pauseOnHover reverse className="[--duration:65s] [--gap:0.75rem]">
+      <Marquee
+        pauseOnHover
+        reverse
+        repeat={2}
+        className="[--duration:65s] [--gap:0.75rem]"
+      >
         {ROW_2.map((p) => (
           <GalleryCard key={p.slug} card={p} />
         ))}

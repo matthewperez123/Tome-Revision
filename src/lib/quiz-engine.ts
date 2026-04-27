@@ -21,6 +21,7 @@ export type QuestionType =
   | "vocabulary_in_context"
   | "cross_reference"
   | "close_reading"
+  | "reflection"
 
 export type Question = {
   id: string
@@ -46,6 +47,13 @@ export type Question = {
   etymology?: string
   crossRefBookId?: string
   crossRefLabel?: string
+  /** Reflection (Virgil-graded). Engine treats response as always "correct"; the
+   *  numeric grade lives on the attempt, not on the question result. */
+  reflectionPrompt?: string
+  reflectionWordMin?: number
+  reflectionWordMax?: number
+  reflectionRubric?: string
+  reflectionExpectedThemes?: string[]
 }
 
 export type Quiz = {
@@ -72,6 +80,9 @@ export type QuizState = {
   timeRemaining: number
   startedAt: number
   endedAt: number | null
+  /** Virgil-grade outputs for reflection questions, keyed by question id.
+   *  Populated asynchronously by the placeholder grader server action. */
+  reflectionGrades?: Record<string, { score: number; feedback: string; status: "pending" | "graded" | "failed" }>
 }
 
 export type QuizAction =
@@ -81,6 +92,7 @@ export type QuizAction =
   | { type: "TICK" }
   | { type: "RESUME" }
   | { type: "FINISH" }
+  | ReflectionGradeAction
 
 // ── Wisdom scaling ──────────────────────────────
 
@@ -119,8 +131,15 @@ export function createQuizState(
     timeRemaining: 0,
     startedAt: Date.now(),
     endedAt: null,
+    reflectionGrades: {},
   }
 }
+
+// ── Reflection grading actions ─────────────────
+export type ReflectionGradeAction =
+  | { type: "REFLECTION_PENDING"; questionId: string }
+  | { type: "REFLECTION_GRADED"; questionId: string; score: number; feedback: string }
+  | { type: "REFLECTION_FAILED"; questionId: string }
 
 // ── Answer Checking ────────────────────────────
 
@@ -171,6 +190,14 @@ export function checkAnswer(question: Question, answer: string): boolean {
       } catch {
         return false
       }
+    }
+
+    case "reflection": {
+      // Virgil-graded asynchronously; the engine accepts any response that
+      // meets the minimum word threshold so the user isn't penalised hearts.
+      const min = q.reflectionWordMin ?? 30
+      const wc = answer.trim().split(/\s+/).filter(Boolean).length
+      return wc >= min
     }
 
     default:
@@ -272,6 +299,40 @@ export function quizReducer(state: QuizState, action: QuizAction): QuizState {
 
     case "FINISH": {
       return { ...state, status: "complete", endedAt: state.endedAt ?? Date.now() }
+    }
+
+    case "REFLECTION_PENDING": {
+      return {
+        ...state,
+        reflectionGrades: {
+          ...(state.reflectionGrades ?? {}),
+          [action.questionId]: { score: 0, feedback: "", status: "pending" },
+        },
+      }
+    }
+
+    case "REFLECTION_GRADED": {
+      return {
+        ...state,
+        reflectionGrades: {
+          ...(state.reflectionGrades ?? {}),
+          [action.questionId]: {
+            score: action.score,
+            feedback: action.feedback,
+            status: "graded",
+          },
+        },
+      }
+    }
+
+    case "REFLECTION_FAILED": {
+      return {
+        ...state,
+        reflectionGrades: {
+          ...(state.reflectionGrades ?? {}),
+          [action.questionId]: { score: 0, feedback: "", status: "failed" },
+        },
+      }
     }
 
     default:

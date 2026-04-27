@@ -14,7 +14,7 @@ import { MobileDock } from "@/components/tome/mobile-dock"
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
-  const isLanding = pathname === "/"
+  const isLanding = pathname === "/" || pathname === "/readers" || pathname === "/educators"
 
   // Landing page has its own navbar — hide app chrome
   if (isLanding) {

@@ -13,6 +13,7 @@ export type QuestionType =
   | 'vocabulary_in_context'
   | 'cross_reference'
   | 'close_reading'
+  | 'reflection'
 
 export type QuizDifficulty = 'Apprentice' | 'Scholar' | 'Master'
 
@@ -46,6 +47,12 @@ export interface ChapterQuestion {
   /** For cross_reference — target book id + optional chapter/passage ref */
   crossRefBookId?: string
   crossRefLabel?: string
+  /** For reflection — Virgil-graded open response. */
+  reflectionPrompt?: string
+  reflectionWordMin?: number
+  reflectionWordMax?: number
+  reflectionRubric?: string
+  reflectionExpectedThemes?: string[]
   explanation: string
   /** Optional passage citation shown in the explanation card */
   citation?: string

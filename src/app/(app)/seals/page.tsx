@@ -33,7 +33,6 @@ import { getAllAchievements } from "@/data/achievements"
 import { loadAchievementState } from "@/lib/achievements/engine"
 import { VirgilReflection } from "@/components/tome/virgil-reflection"
 import { BlurFade } from "@/components/ui/blur-fade"
-import { SparklesText } from "@/components/ui/sparkles-text"
 import { getAllBookProgress } from "@/lib/book-progress"
 import { springs } from "@/lib/design-tokens"
 import { cn } from "@/lib/utils"
@@ -149,9 +148,7 @@ export default function SealsPage() {
           Your Seals
         </h1>
         <span className="mt-1 text-sm text-muted-foreground block">
-          <SparklesText className="inline text-sm font-semibold text-foreground" sparklesCount={4}>
-            {earnedCount}
-          </SparklesText>
+          <span className="text-sm font-semibold text-foreground">{earnedCount}</span>
           <span className="ml-1">/ {allAchievements.length} earned</span>
         </span>
       </BlurFade>

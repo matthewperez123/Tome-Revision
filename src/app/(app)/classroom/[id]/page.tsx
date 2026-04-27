@@ -7,6 +7,8 @@ import { Users, BookOpen, TrendingUp, Activity, Copy, Check, Sparkles, ChevronLe
 import { Button } from "@/components/ui/button"
 import { useAuth } from "@/hooks/use-auth"
 import { StudentClassroomView } from "@/components/classroom/student-classroom-view"
+import { TeacherAnnouncementComposer } from "@/components/classroom/teacher-announcement-composer"
+import { TeacherAssignmentComposer } from "@/components/classroom/teacher-assignment-composer"
 import {
   getClassroom,
   getAssignmentsForClass,
@@ -97,8 +99,20 @@ function DemoClassroomView({ classroomId }: { classroomId: string }) {
         </Link>
       </div>
 
+      {/* Real-mode owner/co_teacher composers — invisible in demo or to non-staff */}
+      <div className="mt-6 space-y-2">
+        <TeacherAnnouncementComposer classroomId={classroomId} />
+        <TeacherAssignmentComposer classroomId={classroomId} />
+        <Link
+          href={`/classroom/${classroomId}/gradebook`}
+          className="inline-flex items-center gap-1.5 rounded-full border border-border px-3 py-1 text-xs text-muted-foreground transition-colors hover:border-foreground/30 hover:text-foreground"
+        >
+          Open gradebook →
+        </Link>
+      </div>
+
       {/* Stats */}
-      <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
         {[
           { icon: Users, label: "Students", value: stats.students, color: "text-[#D4A04C]" },
           { icon: BookOpen, label: "Assignments", value: stats.assignments, color: "text-teal-500" },

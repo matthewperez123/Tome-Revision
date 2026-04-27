@@ -18,14 +18,23 @@ const AudienceContext = createContext<AudienceContextValue>(DEFAULT_VALUE)
 
 const STORAGE_KEY = "tome-audience"
 
-export function AudienceProvider({ children }: { children: ReactNode }) {
-  const [audience, setAudienceRaw] = useState<Audience>("reader")
+export function AudienceProvider({
+  children,
+  initial,
+}: {
+  children: ReactNode
+  /** When provided, skips sessionStorage hydration and locks the initial audience to this value (route-driven). */
+  initial?: Audience
+}) {
+  const [audience, setAudienceRaw] = useState<Audience>(initial ?? "reader")
 
-  // Hydrate from sessionStorage after mount to avoid SSR mismatch
+  // Hydrate from sessionStorage after mount to avoid SSR mismatch.
+  // Skip when an `initial` prop is provided — the route owns the audience in that case.
   useEffect(() => {
+    if (initial) return
     const stored = sessionStorage.getItem(STORAGE_KEY)
     if (stored === "teacher") setAudienceRaw("teacher")
-  }, [])
+  }, [initial])
 
   const setAudience = useCallback((a: Audience) => {
     setAudienceRaw(a)

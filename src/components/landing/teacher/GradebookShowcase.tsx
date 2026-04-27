@@ -31,8 +31,8 @@ export function GradebookShowcase() {
   if (isReduced) {
     return (
       <TeacherShowcaseShell
-        heading="See how they&rsquo;re really reading"
-        subcopy="Scores, time on page, Virgil conversations, and annotation density &mdash; all in one gradebook."
+        heading="Trials grade themselves. Reflections grade with Virgil."
+        subcopy="Multiple-choice, fill-in-the-blank, and sequencing Trials are auto-scored. Reflection responses come back with a Virgil rubric draft you can accept or override. Export to CSV or your LMS."
         layout="mockup-right"
         bgClass="bg-muted"
       >
@@ -56,6 +56,7 @@ export function GradebookShowcase() {
       subcopy="Scores, time on page, Virgil conversations, and annotation density &mdash; all in one gradebook."
       layout="mockup-right"
       bgClass="bg-muted"
+      paddingClass="py-20"
     >
       <div
         ref={containerRef}

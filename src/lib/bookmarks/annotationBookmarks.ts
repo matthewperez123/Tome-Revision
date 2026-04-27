@@ -26,6 +26,15 @@ export function isAnnotationBookmarked(annotationId: string): boolean {
   return getAll().some((b) => b.annotationId === annotationId && b.type === "annotation")
 }
 
+export function isCrossRefBookmarked(annotationId: string, crossRefIndex: number): boolean {
+  return getAll().some(
+    (b) =>
+      b.annotationId === annotationId &&
+      b.type === "cross-reference" &&
+      b.crossReferenceIndex === crossRefIndex
+  )
+}
+
 export function toggleAnnotationBookmark(annotationId: string): boolean {
   const all = getAll()
   const existing = all.findIndex((b) => b.annotationId === annotationId && b.type === "annotation")

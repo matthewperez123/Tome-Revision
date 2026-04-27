@@ -920,6 +920,20 @@ export default function ProfilePage() {
                 </div>
               </div>
 
+              {/* Account & data */}
+              <div className="px-5 py-4">
+                <Link
+                  href="/account"
+                  className="flex items-center justify-between text-sm font-medium hover:text-foreground transition-colors group"
+                >
+                  <span>Account &amp; data</span>
+                  <ChevronRight className="size-4 text-muted-foreground group-hover:text-foreground transition-colors" />
+                </Link>
+                <p className="text-[11px] text-muted-foreground mt-0.5">
+                  Email, password, delete your account
+                </p>
+              </div>
+
               {/* Sign out */}
               <div className="px-5 py-4">
                 <button className="flex items-center gap-2 text-sm text-rose-500 hover:text-rose-600 font-medium transition-colors">

@@ -48,6 +48,7 @@ import type { Author } from "@/data/authors"
 import { cn } from "@/lib/utils"
 import { toggleFavorite as toggleShelfFavorite, isFavorite as isShelfFavorite } from "@/lib/shelves/store"
 import { BookRating } from "@/components/books/BookRating"
+import { RecommendBookButton } from "@/components/book/recommend-book-button"
 
 // ── Constants ──────────────────────────────────
 
@@ -324,6 +325,8 @@ export default function BookDetailPage() {
                       : <Bookmark className="size-3.5" />}
                     {isBookmarked ? "Bookmarked" : "Add to Shelf"}
                   </button>
+                  {/* Real-mode-only: send a recommendation to a friend */}
+                  <RecommendBookButton bookId={bookId} bookTitle={book.title} />
                 </div>
               </div>
             </div>
@@ -604,7 +607,11 @@ export default function BookDetailPage() {
       </div>
 
       {/* ── Mobile sticky CTA ── */}
-      <div className="fixed bottom-0 inset-x-0 sm:hidden z-30 border-t border-border bg-background/95 backdrop-blur-sm px-4 py-3 flex items-center gap-2">
+      {/* Sits ABOVE the bottom MobileDock (fixed bottom-0 z-50 at < 480px).
+          The dock is ~56-60px tall including its safe-area inset, so we lift
+          the CTA by `bottom-14` on small viewports. At >= 480px the dock is
+          hidden, so the CTA drops back to bottom-0. */}
+      <div className="fixed inset-x-0 sm:hidden z-40 bottom-14 min-[480px]:bottom-0 border-t border-border bg-background/95 backdrop-blur-sm px-4 py-3 flex items-center gap-2">
         <button
           onClick={handleStartReading}
           className="flex-1 flex items-center justify-center gap-2 h-10 rounded-full bg-foreground text-background text-sm font-semibold"
@@ -616,7 +623,7 @@ export default function BookDetailPage() {
           onClick={toggleBookmark}
           aria-label={isBookmarked ? "Remove bookmark" : "Bookmark"}
           className={cn(
-            "size-10 rounded-full border flex items-center justify-center transition-colors",
+            "size-10 rounded-full border flex items-center justify-center transition-colors shrink-0",
             isBookmarked
               ? "border-[var(--tome-accent)] text-[var(--tome-accent)]"
               : "border-border text-muted-foreground"
@@ -624,6 +631,7 @@ export default function BookDetailPage() {
         >
           {isBookmarked ? <BookmarkCheck className="size-4" /> : <Bookmark className="size-4" />}
         </button>
+        <RecommendBookButton bookId={bookId} bookTitle={book.title} className="shrink-0" />
       </div>
     </>
   )

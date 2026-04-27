@@ -52,7 +52,7 @@ export const ROW_2: PaintingCard[] = [
   { slug: "the-great-gatsby", title: "The Great Gatsby", author: "F. Scott Fitzgerald", painting: "Nocturne in Blue and Gold", artist: "Whistler, c.1872", cover: "/paintings/nocturne-blue-gold.jpg" },
   { slug: "heart-of-darkness", title: "Heart of Darkness", author: "Joseph Conrad", painting: "The Fighting Temeraire", artist: "Turner, 1839", cover: "/paintings/fighting-temeraire.jpg" },
   { slug: "dracula", title: "Dracula", author: "Bram Stoker", painting: "The Sea of Ice", artist: "Friedrich, 1824", cover: "/paintings/sea-of-ice.jpg" },
-  { slug: "moby-dick-turner", title: "The Scarlet Pimpernel", author: "Baroness Orczy", painting: "Snow Storm \u2014 Steam-Boat", artist: "Turner, 1842", cover: "/paintings/moby-dick-turner.jpg" },
+  { slug: "the-scarlet-pimpernel", title: "The Scarlet Pimpernel", author: "Baroness Orczy", painting: "Madame X", artist: "Sargent, 1884", cover: "/paintings/madame-x.jpg" },
   { slug: "the-school-of-athens", title: "Nicomachean Ethics", author: "Aristotle", painting: "The School of Athens", artist: "Raphael, 1511", cover: "/paintings/school-of-athens.jpg" },
   { slug: "heart-of-the-andes", title: "Leaves of Grass", author: "Walt Whitman", painting: "Heart of the Andes", artist: "Church, 1859", cover: "/paintings/heart-of-the-andes.jpg" },
 ]

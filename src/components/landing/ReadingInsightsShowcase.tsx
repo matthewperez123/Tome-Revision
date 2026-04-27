@@ -39,7 +39,7 @@ export function ReadingInsightsShowcase() {
 
   if (isReduced) {
     return (
-      <TeacherShowcaseShell heading="Know your reading life" subcopy="Time on the page, books finished, Flames kept, Seals earned — your reading becomes visible." layout="mockup-right" bgClass="bg-muted">
+      <TeacherShowcaseShell heading="Know your reading life." subcopy="Time on the page, books finished, Flames kept, Seals earned. Your reading, made visible." layout="mockup-right" bgClass="bg-muted">
         <div className="bg-card rounded-xl border border-border p-5">
           <div className="flex items-end gap-1.5 h-16 mb-3">
             {DAYS.map(d => (
@@ -58,7 +58,7 @@ export function ReadingInsightsShowcase() {
   }
 
   return (
-    <TeacherShowcaseShell heading="Know your reading life" subcopy="Time on the page, books finished, Flames kept, Seals earned — your reading becomes visible." layout="mockup-right" bgClass="bg-muted">
+    <TeacherShowcaseShell heading="Know your reading life." subcopy="Time on the page, books finished, Flames kept, Seals earned. Your reading, made visible." layout="mockup-right" bgClass="bg-muted">
       <div ref={containerRef} className="bg-card rounded-xl border border-border p-5 min-h-[260px]" style={{ willChange: "transform" }}>
         <p className="text-[10px] text-muted-foreground mb-3 uppercase tracking-wider font-medium">This Week</p>
 

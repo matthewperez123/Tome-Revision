@@ -35,13 +35,18 @@ export function ClassRosterShowcase() {
   if (isReduced) {
     return (
       <TeacherShowcaseShell
-        heading="Your class, in one place"
-        subcopy="Add students, organize them into sections, and track every reader at a glance."
+        heading="Set up your classroom in minutes."
+        subcopy="Create classes, invite students by code or roster import, organize by section or period. Bulk import from CSV or your SIS."
         layout="mockup-left"
         bgClass="bg-background"
       >
         <div className="bg-card rounded-xl border border-border p-6">
-          <p className="text-xs text-muted-foreground mb-4">Class Roster &middot; Section A</p>
+          <div className="flex items-start justify-between mb-4 gap-2">
+          <div>
+            <p className="text-sm font-semibold text-foreground">AP Literature &middot; Period 3</p>
+            <p className="text-[10px] text-muted-foreground">28 students &middot; Join code <span className="font-mono text-foreground">TOME-7Q4</span></p>
+          </div>
+        </div>
           <div className="space-y-3">
             {STUDENTS.map((s, i) => (
               <div key={i} className="flex items-center gap-3">
@@ -66,6 +71,7 @@ export function ClassRosterShowcase() {
       subcopy="Add students, organize them into sections, and track every reader at a glance."
       layout="mockup-left"
       bgClass="bg-background"
+      paddingClass="py-20"
     >
       <div
         ref={containerRef}
@@ -73,7 +79,12 @@ export function ClassRosterShowcase() {
         style={{ willChange: "transform" }}
         aria-label="Animated class roster demonstration"
       >
-        <p className="text-xs text-muted-foreground mb-4">Class Roster &middot; Section A</p>
+        <div className="flex items-start justify-between mb-4 gap-2">
+          <div>
+            <p className="text-sm font-semibold text-foreground">AP Literature &middot; Period 3</p>
+            <p className="text-[10px] text-muted-foreground">28 students &middot; Join code <span className="font-mono text-foreground">TOME-7Q4</span></p>
+          </div>
+        </div>
 
         <div className="space-y-1">
           {STUDENTS.map((s, i) => (

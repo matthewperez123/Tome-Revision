@@ -18,7 +18,7 @@
 import { useEffect, useState, useRef, useCallback } from "react"
 import { useParams, useRouter } from "next/navigation"
 import { AnimatePresence, motion } from "framer-motion"
-import { MessageSquare, BookCheck, Bookmark, BookMarked, Palette } from "lucide-react"
+import { MessageSquare, BookCheck, Bookmark, BookMarked, Palette, Quote } from "lucide-react"
 import { toast } from "sonner"
 import { supabase } from "@/lib/supabase"
 import type { Book } from "@/lib/supabase"
@@ -40,10 +40,12 @@ import { useBookProgress } from "@/components/tome/book-progress-provider"
 import { useEconomy } from "@/components/tome/economy-provider"
 // ReadingModeModal removed — users go straight to reading
 import { ChapterQuizOverlay } from "@/components/tome/chapter-quiz-overlay"
+import { DifficultyDropUp } from "@/components/tome/DifficultyDropUp"
 import { PaginatedReader } from "@/components/tome/paginated-reader"
 import { getQuestionsForChapter } from "@/lib/chapter-questions"
 import { isFrontOrBackMatter } from "@/lib/book-progress"
 import type { QuizDifficulty } from "@/lib/book-progress"
+import { findAttemptForChapter, isAttemptResumable } from "@/lib/trial-attempts"
 import { getUnitNumber, getUnitLabel } from "@/lib/structural-units"
 import type { StructuralUnitType, BookPart } from "@/data/books"
 import { paginateHTML } from "@/lib/paginator"
@@ -192,13 +194,50 @@ export default function ReaderPage() {
   // ── Guided / Free flow state ──
   // showModeModal removed — auto-start with guided/Apprentice
   const [showQuizOverlay, setShowQuizOverlay] = useState(false)
+  const [showDifficultyDropUp, setShowDifficultyDropUp] = useState(false)
   const [trialQuestions, setTrialQuestions] = useState<import("@/lib/chapter-questions").ChapterQuestion[]>([])
   const [selectedDifficulty, setSelectedDifficulty] = useState<QuizDifficulty | null>(null)
   const [chapterEndReached, setChapterEndReached] = useState(false)
 
   // ── Virgil drawer (annotations) ──
+  // Marginalia visibility is split into two independent toggles:
+  // `virgilEnabled` controls inline annotation markers in the chapter,
+  // `showEchoes` controls cross-reference cards inside the drawer.
+  // Both persist to localStorage so the reader keeps the user's setting
+  // across sessions.
   const [virgilEnabled, setVirgilEnabled] = useState(true)
+  const [showEchoes, setShowEchoes] = useState(true)
   const [activeAnnotationId, setActiveAnnotationId] = useState<string | null>(null)
+
+  // Hydrate marginalia preferences from localStorage on mount.
+  useEffect(() => {
+    try {
+      const a = localStorage.getItem("tome:reader:show_annotations")
+      if (a !== null) setVirgilEnabled(a === "true")
+      const e = localStorage.getItem("tome:reader:show_echoes")
+      if (e !== null) setShowEchoes(e === "true")
+    } catch { /* localStorage may be unavailable in some contexts */ }
+  }, [])
+
+  // Persist + apply the annotations-hidden attribute on <body> so the
+  // global selector in tome.css can hide every inline marker class at
+  // once, regardless of which book's overlay produced it.
+  useEffect(() => {
+    try { localStorage.setItem("tome:reader:show_annotations", String(virgilEnabled)) } catch {}
+    if (typeof document !== "undefined") {
+      if (virgilEnabled) document.body.removeAttribute("data-annotations-hidden")
+      else document.body.setAttribute("data-annotations-hidden", "true")
+    }
+    return () => {
+      // Clean up when leaving the reader so the attribute doesn't leak
+      // into other pages that don't render markers.
+      if (typeof document !== "undefined") document.body.removeAttribute("data-annotations-hidden")
+    }
+  }, [virgilEnabled])
+
+  useEffect(() => {
+    try { localStorage.setItem("tome:reader:show_echoes", String(showEchoes)) } catch {}
+  }, [showEchoes])
 
   // ── Refs ──
   const scrollContentRef       = useRef<HTMLDivElement>(null)
@@ -591,9 +630,12 @@ export default function ReaderPage() {
       if (currentChapter < totalCount - 1) setTimeout(() => handleChapterSelect(currentChapter + 1), 100)
       return
     }
-    setTrialQuestions([]) // Reset questions; they'll be loaded on difficulty selection
+    // Open the compact drop-up toast; difficulty selection inside the
+    // toast triggers the full overlay with tier pre-selected.
+    setTrialQuestions([])
     setSelectedDifficulty(null)
-    setShowQuizOverlay(true)
+    setShowQuizOverlay(false)
+    setShowDifficultyDropUp(true)
   }, [bookId, currentChapter, chapters, handleChapterSelect, completeChapter])
 
   const handleTrialDifficultySelect = useCallback((difficulty: QuizDifficulty) => {
@@ -601,11 +643,16 @@ export default function ReaderPage() {
     setSelectedDifficulty(difficulty)
     const qs = getQuestionsForChapter(book.title, currentChapter, difficulty)
     setTrialQuestions(qs)
+    // Close toast, open the full trial overlay starting at intro with
+    // the chosen tier already applied.
+    setShowDifficultyDropUp(false)
+    setShowQuizOverlay(true)
   }, [book, currentChapter])
 
   const handleTrialSkip = useCallback(() => {
     // Skip trial — mark chapter complete with 0 XP and advance
     completeChapter(bookId, currentChapter, 0)
+    setShowDifficultyDropUp(false)
     setShowQuizOverlay(false)
     const totalCount = chapters.length || 1
     if (currentChapter < totalCount - 1) {
@@ -723,7 +770,36 @@ export default function ReaderPage() {
 
   return (
     <WordTooltipProvider>
-      {/* Quiz Overlay */}
+      {/* Difficulty drop-up toast (appears first) */}
+      {book && (() => {
+        // Resume detection — runs only while the toast is open so we
+        // pick up the latest snapshot.
+        const snap = showDifficultyDropUp
+          ? findAttemptForChapter(book.id, currentChapter)
+          : null
+        const resumable = snap && isAttemptResumable(snap) ? snap : null
+        const answered = resumable
+          ? resumable.answers.filter((a) => a !== null).length
+          : 0
+        const total = resumable?.answers.length ?? 0
+        return (
+          <DifficultyDropUp
+            isOpen={showDifficultyDropUp}
+            unitDisplay={unitDisplay}
+            onSelect={handleTrialDifficultySelect}
+            onSkip={handleTrialSkip}
+            onClose={() => setShowDifficultyDropUp(false)}
+            resumeTier={resumable?.tier ?? null}
+            resumeCopy={
+              resumable
+                ? `${resumable.tier} · question ${Math.min(answered + 1, total)} of ${total}`
+                : undefined
+            }
+          />
+        )
+      })()}
+
+      {/* Quiz Overlay (opens post-difficulty with tier preselected) */}
       {book && (
         <ChapterQuizOverlay
           book={book as Book}
@@ -738,6 +814,8 @@ export default function ReaderPage() {
           onClose={() => setShowQuizOverlay(false)}
           onSelectDifficulty={handleTrialDifficultySelect}
           onSkip={handleTrialSkip}
+          initialTier={selectedDifficulty}
+          isLastChapter={currentChapter === (chapters.length || 1) - 1}
         />
       )}
 
@@ -809,17 +887,31 @@ export default function ReaderPage() {
               />
             </div>
             <div className="flex items-center gap-1">
-              {/* Virgil annotations toggle */}
+              {/* Annotation markers toggle — hides/shows the inline ✦
+                  markers throughout the chapter. */}
               <button
                 onClick={() => setVirgilEnabled(!virgilEnabled)}
                 className={cn(
                   "flex size-7 items-center justify-center rounded-md transition-colors",
                   virgilEnabled ? "text-[#D4A04C]" : "text-muted-foreground hover:opacity-70"
                 )}
-                aria-label={virgilEnabled ? "Hide Virgil" : "Show Virgil"}
-                title={virgilEnabled ? "Hide Virgil annotations" : "Show Virgil annotations"}
+                aria-label={virgilEnabled ? "Hide annotations" : "Show annotations"}
+                title={virgilEnabled ? "Hide annotation markers" : "Show annotation markers"}
               >
                 <BookMarked className="size-3.5" />
+              </button>
+              {/* Echoes toggle — hides/shows the "See also" cross-reference
+                  cards inside the Virgil drawer. */}
+              <button
+                onClick={() => setShowEchoes(!showEchoes)}
+                className={cn(
+                  "flex size-7 items-center justify-center rounded-md transition-colors",
+                  showEchoes ? "text-[#D4A04C]" : "text-muted-foreground hover:opacity-70"
+                )}
+                aria-label={showEchoes ? "Hide echoes" : "Show echoes"}
+                title={showEchoes ? "Hide echoes (cross-references)" : "Show echoes (cross-references)"}
+              >
+                <Quote className="size-3.5" />
               </button>
               {/* Character color coding toggle — drama books only */}
               {isDrama && (
@@ -1243,9 +1335,11 @@ export default function ReaderPage() {
 
                     {/* Chapter Navigation — Quiz gate between prev/next */}
                     <div className="mt-16 border-t pt-6" style={{ borderColor: t.border }}>
-                      {/* Chapter end CTA — complete chapter */}
+                      {/* Chapter end CTA — complete chapter (quiz gate).
+                          Shown on every chapter, including the last, so readers
+                          always reach the end-of-chapter trial. */}
                       <AnimatePresence>
-                        {chapterEndReached && currentChapter < totalChapters - 1 && (
+                        {chapterEndReached && (
                           <motion.div
                             initial={{ opacity: 0, y: 16 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -1259,7 +1353,9 @@ export default function ReaderPage() {
                               style={{ background: "linear-gradient(135deg, #D4A04C, #B8862D)" }}
                             >
                               <BookCheck className="size-4" />
-                              Complete {getUnitLabel(structuralUnitType)}
+                              {currentChapter === totalChapters - 1
+                                ? "Begin Final Quiz"
+                                : "Begin Quiz"}
                             </button>
                           </motion.div>
                         )}
@@ -1362,6 +1458,7 @@ export default function ReaderPage() {
       <VirgilDrawer
         annotationId={activeAnnotationId}
         onClose={() => setActiveAnnotationId(null)}
+        hideEchoes={!showEchoes}
       />
     </WordTooltipProvider>
   )

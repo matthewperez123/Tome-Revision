@@ -12,6 +12,7 @@ import {
   Link2,
   BookMarked,
   ScanLine,
+  Feather,
 } from "lucide-react"
 import type { QuestionType } from "@/lib/quiz-engine"
 import { MultipleChoice } from "./MultipleChoice"
@@ -24,6 +25,7 @@ import { Matching } from "./Matching"
 import { VocabularyInContext } from "./VocabularyInContext"
 import { CrossReference } from "./CrossReference"
 import { CloseReading } from "./CloseReading"
+import { Reflection } from "./Reflection"
 import type { QuestionRendererProps } from "./shared"
 
 export const QUESTION_RENDERERS: Record<
@@ -40,6 +42,7 @@ export const QUESTION_RENDERERS: Record<
   vocabulary_in_context: VocabularyInContext,
   cross_reference: CrossReference,
   close_reading: CloseReading,
+  reflection: Reflection,
 }
 
 export const QUESTION_TYPE_ICONS: Record<
@@ -56,6 +59,7 @@ export const QUESTION_TYPE_ICONS: Record<
   vocabulary_in_context: BookMarked,
   cross_reference: Link2,
   close_reading: ScanLine,
+  reflection: Feather,
 }
 
 export const QUESTION_TYPE_LABELS: Record<QuestionType, string> = {
@@ -69,4 +73,5 @@ export const QUESTION_TYPE_LABELS: Record<QuestionType, string> = {
   vocabulary_in_context: "Vocabulary in Context",
   cross_reference: "Cross-Reference",
   close_reading: "Close Reading",
+  reflection: "Reflection",
 }

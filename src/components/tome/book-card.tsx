@@ -1,15 +1,18 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Link from "next/link"
 import { useRouter } from "next/navigation"
-import { Heart, Flame, TrendingUp, BookOpen } from "lucide-react"
+import { Heart, Flame, TrendingUp, BookOpen, Sparkles } from "lucide-react"
 import { toggleFavorite, isFavorite } from "@/lib/shelves/store"
 import { cn } from "@/lib/utils"
 import { type TomeBook, type StructuralUnitType } from "@/data/books"
 import { getShortProgress } from "@/lib/structural-units"
 import { getCoverParams } from "@/components/tome/book-cover"
 import { ClassicsCover } from "@/components/tome/ClassicsCover"
+import { ComingSoonCover } from "@/components/tome/ComingSoonCover"
 import { AuthorLink } from "@/components/tome/author-link"
+import { isBookRecommended } from "@/lib/book-apparatus"
 import type { getAllBookProgress } from "@/lib/book-progress"
 
 // ── Helpers ────────────────────────────────────
@@ -104,9 +107,11 @@ export interface BookCardProps {
   className?: string
   /** When set to "year", show the publication year below the author */
   activeSort?: string
+  /** When set, renders a small gold "Recommended by X" pill in the meta area. */
+  recommendedBy?: { displayName: string; username: string } | null
 }
 
-export function BookCard({ book, progress, size = "sm", className, activeSort }: BookCardProps) {
+export function BookCard({ book, progress, size = "sm", className, activeSort, recommendedBy }: BookCardProps) {
   const router = useRouter()
   const coverParams = getCoverParams(book)
   const tradColor  = TRADITION_COLORS[book.tradition]  ?? { bg: "rgba(99,102,241,0.14)", text: "#4338ca", dot: "#6366F1" }
@@ -152,20 +157,32 @@ export function BookCard({ book, progress, size = "sm", className, activeSort }:
     >
       {/* ── Cover ── */}
       <div className="relative overflow-hidden">
-        <ClassicsCover
-          bookId={book.id}
-          title={book.title}
-          author={book.author}
-          tradition={book.tradition}
-          fallbackColors={book.coverColors}
-          showTomeWordmark={size === "lg"}
-          hideBand
-          aspectRatio="3/4"
-          className={cn(
-            "w-full transition-transform duration-[var(--tome-duration-fast)] group-hover:-translate-y-0.5 rounded-none",
-            size === "lg" && "min-h-[160px]"
-          )}
-        />
+        {isBookRecommended(book) ? (
+          <ClassicsCover
+            bookId={book.id}
+            title={book.title}
+            author={book.author}
+            tradition={book.tradition}
+            fallbackColors={book.coverColors}
+            showTomeWordmark={size === "lg"}
+            hideBand
+            aspectRatio="3/4"
+            className={cn(
+              "w-full transition-transform duration-[var(--tome-duration-fast)] group-hover:-translate-y-0.5 rounded-none",
+              size === "lg" && "min-h-[160px]"
+            )}
+          />
+        ) : (
+          <ComingSoonCover
+            tradition={book.tradition}
+            fallbackColors={book.coverColors}
+            aspectRatio="3/4"
+            className={cn(
+              "w-full transition-transform duration-[var(--tome-duration-fast)] group-hover:-translate-y-0.5 rounded-none",
+              size === "lg" && "min-h-[160px]"
+            )}
+          />
+        )}
 
         {/* Trending badge — bottom-right */}
         {book.trending && (
@@ -190,6 +207,20 @@ export function BookCard({ book, progress, size = "sm", className, activeSort }:
             {book.tradition}
           </span>
         </div>
+
+        {/* "Recommended by X" pill — links to recommender's profile. */}
+        {recommendedBy && (
+          <Link
+            href={`/profile/${recommendedBy.username}`}
+            onClick={(e) => e.stopPropagation()}
+            className="mt-0.5 inline-flex w-fit items-center gap-1 rounded-full bg-[#D4A04C]/15 px-2 py-0.5 text-[9px] font-medium text-[#9c6e2b] transition-colors hover:bg-[#D4A04C]/25 dark:text-[#D4A04C]"
+          >
+            <Sparkles className="size-2.5" />
+            <span className="truncate max-w-[120px]">
+              Rec. by {recommendedBy.displayName}
+            </span>
+          </Link>
+        )}
 
         <h3
           className={cn(

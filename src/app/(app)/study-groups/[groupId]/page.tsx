@@ -1,13 +1,17 @@
 "use client"
 
-import { use, useState } from "react"
+import { use, useCallback, useEffect, useState, useTransition } from "react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { motion } from "framer-motion"
 import {
   ChevronLeft, Brain, BookOpen, Calendar, Users2, PenLine, Plus,
-  Pin, Clock, MapPin, CheckCircle2, XCircle, ChevronDown, ChevronUp
+  Pin, Clock, MapPin, CheckCircle2, XCircle, ChevronDown, ChevronUp,
+  GraduationCap, Copy, Check, MessageCircle, LogOut
 } from "lucide-react"
+import { toast } from "sonner"
 import { springs } from "@/lib/design-tokens"
+import { BlurFade } from "@/components/ui/blur-fade"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
@@ -16,9 +20,22 @@ import {
   getStudyGroup, getStudyGroupMembers, getStudySessions,
   getStudyNotes, getPracticeQuizzes
 } from "@/lib/study-groups-data"
+import { useAuth } from "@/hooks/use-auth"
+import { createClient } from "@/lib/supabase/client"
+import {
+  leaveStudyGroup,
+  deleteStudyGroup,
+} from "@/lib/actions/study-groups"
 
+// Default export: dispatch by auth state. Demo UI is preserved verbatim.
 export default function StudyGroupDetailPage({ params }: { params: Promise<{ groupId: string }> }) {
   const { groupId } = use(params)
+  const { user, isDemoMode } = useAuth()
+  if (!user || isDemoMode) return <DemoStudyGroupDetail groupId={groupId} />
+  return <RealStudyGroupDetail groupId={groupId} />
+}
+
+function DemoStudyGroupDetail({ groupId }: { groupId: string }) {
   const group = getStudyGroup(groupId)
   const members = getStudyGroupMembers(groupId)
   const sessions = getStudySessions(groupId)
@@ -252,6 +269,279 @@ function PracticeQuizCard({ quiz }: { quiz: ReturnType<typeof getPracticeQuizzes
           </div>
         </div>
       )}
+    </div>
+  )
+}
+
+// ── Real-mode detail page ─────────────────────────────────────────────────
+
+interface RealMember {
+  id: string
+  displayName: string
+  username: string
+  avatarUrl: string | null
+  role: "admin" | "member"
+}
+
+interface RealGroup {
+  id: string
+  name: string
+  description: string | null
+  joinCode: string
+  isTeacherLed: boolean
+  creatorId: string
+}
+
+function RealStudyGroupDetail({ groupId }: { groupId: string }) {
+  const router = useRouter()
+  const { user } = useAuth()
+  const [group, setGroup] = useState<RealGroup | null>(null)
+  const [members, setMembers] = useState<RealMember[]>([])
+  const [loading, setLoading] = useState(true)
+  const [pending, startTransition] = useTransition()
+  const [copied, setCopied] = useState(false)
+
+  const fetchAll = useCallback(async () => {
+    if (!user) return
+    const supabase = createClient()
+    const [groupRes, membersRes] = await Promise.all([
+      supabase
+        .from("study_groups")
+        .select("id, name, description, join_code, is_teacher_led, creator_id")
+        .eq("id", groupId)
+        .maybeSingle(),
+      supabase
+        .from("study_group_members")
+        .select(
+          `
+          role,
+          user:profiles!study_group_members_user_id_fkey(id, display_name, username, avatar_url)
+        `,
+        )
+        .eq("group_id", groupId),
+    ])
+
+    type GroupRow = {
+      id: string
+      name: string
+      description: string | null
+      join_code: string
+      is_teacher_led: boolean
+      creator_id: string
+    }
+    type MemberRow = {
+      role: "admin" | "member"
+      user: {
+        id: string
+        display_name: string | null
+        username: string | null
+        avatar_url: string | null
+      } | null
+    }
+
+    const g = groupRes.data as unknown as GroupRow | null
+    if (g) {
+      setGroup({
+        id: g.id,
+        name: g.name,
+        description: g.description,
+        joinCode: g.join_code,
+        isTeacherLed: g.is_teacher_led,
+        creatorId: g.creator_id,
+      })
+    }
+    setMembers(
+      ((membersRes.data ?? []) as unknown as MemberRow[])
+        .filter((r) => r.user)
+        .map((r) => ({
+          id: r.user!.id,
+          displayName: r.user!.display_name ?? r.user!.username ?? "Reader",
+          username: r.user!.username ?? r.user!.id.slice(0, 8),
+          avatarUrl: r.user!.avatar_url,
+          role: r.role,
+        })),
+    )
+    setLoading(false)
+  }, [groupId, user])
+
+  useEffect(() => { fetchAll() }, [fetchAll])
+
+  function copyCode() {
+    if (!group) return
+    navigator.clipboard.writeText(group.joinCode)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 1200)
+  }
+
+  if (loading) {
+    return (
+      <div className="mx-auto max-w-2xl p-4 md:p-6">
+        <div className="h-32 animate-pulse rounded-2xl border border-border bg-muted/30" />
+      </div>
+    )
+  }
+  if (!group) {
+    return (
+      <div className="flex flex-col items-center justify-center gap-3 py-20">
+        <p className="text-sm text-muted-foreground">Study group not found</p>
+        <Link href="/study-groups" className="text-xs text-muted-foreground hover:text-foreground">
+          ← Back
+        </Link>
+      </div>
+    )
+  }
+
+  const myMembership = members.find((m) => m.id === user?.id)
+  const isCreator = user?.id === group.creatorId
+
+  return (
+    <div className="mx-auto max-w-2xl space-y-6 p-4 md:p-6">
+      <Link
+        href="/study-groups"
+        className="flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-foreground"
+      >
+        <ChevronLeft className="size-4" /> Study Groups
+      </Link>
+
+      <BlurFade delay={0.04} inView>
+        <div className="flex items-start justify-between gap-4">
+          <div className="min-w-0 flex-1">
+            <h1
+              className="font-serif text-xl font-semibold tracking-tight md:text-2xl"
+              style={{ letterSpacing: "-0.02em" }}
+            >
+              {group.name}
+            </h1>
+            {group.description && (
+              <p className="mt-1 text-sm text-muted-foreground">{group.description}</p>
+            )}
+            <div className="mt-2 flex items-center gap-2">
+              {group.isTeacherLed && (
+                <span className="inline-flex w-fit items-center gap-1 rounded-full bg-[#D4A04C]/15 px-2 py-0.5 text-[10px] font-medium text-[#9c6e2b] dark:text-[#D4A04C]">
+                  <GraduationCap className="size-2.5" /> Teacher-led
+                </span>
+              )}
+              <span className="text-[10px] text-muted-foreground">
+                {members.length} {members.length === 1 ? "member" : "members"}
+              </span>
+            </div>
+          </div>
+          {myMembership && (
+            <button
+              type="button"
+              onClick={copyCode}
+              className="flex shrink-0 items-center gap-2 rounded-lg border border-border bg-card px-3 py-2 transition-colors hover:bg-muted/50"
+              aria-label="Copy join code"
+            >
+              <span className="font-mono text-xs tracking-wider">{group.joinCode}</span>
+              {copied ? (
+                <Check className="size-3.5 text-[#22C55E]" />
+              ) : (
+                <Copy className="size-3.5 text-muted-foreground" />
+              )}
+            </button>
+          )}
+        </div>
+      </BlurFade>
+
+      <BlurFade delay={0.08} inView>
+        <section className="rounded-xl border border-border bg-card p-4">
+          <div className="mb-3 flex items-center gap-2">
+            <Users2 className="size-4 text-purple-500" />
+            <h2 className="text-sm font-semibold">Members</h2>
+          </div>
+          <div className="space-y-2">
+            {members.map((m) => (
+              <div key={m.id} className="flex items-center gap-3 rounded-lg px-1 py-1.5">
+                {m.avatarUrl ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={m.avatarUrl} alt="" className="size-8 rounded-full border border-[#D4A04C]/20" />
+                ) : (
+                  <div className="flex size-8 items-center justify-center rounded-full bg-indigo-500 text-[10px] font-bold text-white">
+                    {m.displayName.charAt(0).toUpperCase()}
+                  </div>
+                )}
+                <div className="flex-1 min-w-0">
+                  <Link
+                    href={`/profile/${m.username}`}
+                    className="text-sm font-medium hover:text-[var(--tome-accent)]"
+                  >
+                    {m.displayName}
+                  </Link>
+                </div>
+                {m.role === "admin" && (
+                  <span className="text-[10px] uppercase tracking-wider text-muted-foreground">
+                    Admin
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      </BlurFade>
+
+      {/* Discussion stub */}
+      <BlurFade delay={0.12} inView>
+        <section className="rounded-xl border border-dashed border-border bg-muted/20 p-4">
+          <div className="mb-2 flex items-center gap-2">
+            <MessageCircle className="size-4 text-muted-foreground/60" />
+            <h2 className="text-sm font-semibold">Discussions</h2>
+          </div>
+          <p className="text-xs italic text-muted-foreground">
+            Threaded discussion is coming next. The bones are here — talk to your group elsewhere for now.
+          </p>
+        </section>
+      </BlurFade>
+
+      {/* Shared annotations stub */}
+      <BlurFade delay={0.14} inView>
+        <section className="rounded-xl border border-dashed border-border bg-muted/20 p-4">
+          <div className="mb-2 flex items-center gap-2">
+            <PenLine className="size-4 text-muted-foreground/60" />
+            <h2 className="text-sm font-semibold">Shared annotations</h2>
+          </div>
+          <p className="text-xs italic text-muted-foreground">
+            When members highlight a passage, it'll appear here for the whole group.
+          </p>
+        </section>
+      </BlurFade>
+
+      {/* Actions */}
+      <BlurFade delay={0.16} inView>
+        <div className="flex items-center justify-end gap-2">
+          {myMembership && !isCreator && (
+            <Button
+              size="sm"
+              variant="outline"
+              className="gap-1.5 text-xs"
+              disabled={pending}
+              onClick={() => startTransition(async () => {
+                const r = await leaveStudyGroup(group.id)
+                if (r.ok) { toast.success("Left the group"); router.push("/study-groups") }
+                else toast.error(r.error)
+              })}
+            >
+              <LogOut className="size-3.5" /> Leave group
+            </Button>
+          )}
+          {isCreator && (
+            <Button
+              size="sm"
+              variant="outline"
+              className="gap-1.5 border-rose-500/30 text-xs text-rose-500/80 hover:bg-rose-500/10"
+              disabled={pending}
+              onClick={() => startTransition(async () => {
+                if (!confirm("Delete this group? This cannot be undone.")) return
+                const r = await deleteStudyGroup(group.id)
+                if (r.ok) { toast.success("Group deleted"); router.push("/study-groups") }
+                else toast.error(r.error)
+              })}
+            >
+              Delete group
+            </Button>
+          )}
+        </div>
+      </BlurFade>
     </div>
   )
 }

@@ -4,39 +4,21 @@ import { useEffect, useRef } from "react"
 import { useAudience } from "@/contexts/AudienceContext"
 
 import { CarouselSection } from "./CarouselSection"
-import { ReaderSection } from "./ReaderSection"
-import { VerseFormattingShowcase } from "./VerseFormattingShowcase"
-import { PlaysFormattingShowcase } from "./PlaysFormattingShowcase"
-import { MiddleEnglishGlossesShowcase } from "./MiddleEnglishGlossesShowcase"
-import { AnnotationShowcase } from "./AnnotationShowcase"
-import { PersonalAnnotationsShowcase } from "./PersonalAnnotationsShowcase"
-import { TrialsShowcase } from "./TrialsShowcase"
-import { GamificationSection } from "./GamificationSection"
-import { LibraryShowcase } from "./LibraryShowcase"
+import { MergedReaderBlock } from "./MergedReaderBlock"
+import { MergedVirgilBlock } from "./MergedVirgilBlock"
+import { MergedTrialsBlock } from "./MergedTrialsBlock"
 import { WorldMapSection } from "./WorldMapSection"
-import { TimelinesShowcase } from "./TimelinesShowcase"
-import { AuthorShowcase } from "./AuthorShowcase"
-import { BookClubsShowcase } from "./BookClubsShowcase"
-import { FriendsProfilesShowcase } from "./FriendsProfilesShowcase"
-import { SearchShowcase } from "./SearchShowcase"
+import { MergedLibraryTimelineBlock } from "./MergedLibraryTimelineBlock"
+import { MergedSocialBlock } from "./MergedSocialBlock"
 import { ReadingInsightsShowcase } from "./ReadingInsightsShowcase"
 import { ReaderPricingSection } from "./ReaderPricingSection"
 import { FinalCTA } from "./FinalCTA"
 
 import { ClassRosterShowcase } from "./teacher/ClassRosterShowcase"
 import { AssignmentBuilderShowcase } from "./teacher/AssignmentBuilderShowcase"
-import { CustomTrialsShowcase } from "./teacher/CustomTrialsShowcase"
 import { GradebookShowcase } from "./teacher/GradebookShowcase"
-import { StudentDashboardShowcase } from "./teacher/StudentDashboardShowcase"
-import { DiscussionThreadsShowcase } from "./teacher/DiscussionThreadsShowcase"
-import { StandardsAlignmentShowcase } from "./teacher/StandardsAlignmentShowcase"
-import { RosterImportShowcase } from "./teacher/RosterImportShowcase"
-import { SemesterPlanShowcase } from "./teacher/SemesterPlanShowcase"
-import { StudentProfileShowcase } from "./teacher/StudentProfileShowcase"
-import { EssayGradingShowcase } from "./teacher/EssayGradingShowcase"
-import { ParentsShowcase } from "./teacher/ParentsShowcase"
-import { StudyGroupsShowcase } from "./teacher/StudyGroupsShowcase"
-import { GuidedLearningShowcase } from "./teacher/GuidedLearningShowcase"
+import { ClassProgressShowcase } from "./teacher/ClassProgressShowcase"
+import { CoTeachersShowcase } from "./teacher/CoTeachersShowcase"
 import { TeacherPricingSection } from "./TeacherPricingSection"
 import { TeacherCTA } from "./teacher/TeacherCTA"
 
@@ -54,22 +36,12 @@ export function HomepageContent() {
   if (audience === "teacher") {
     return (
       <>
+        {/* 5 teacher feature blocks + pricing band */}
         <ClassRosterShowcase />
         <AssignmentBuilderShowcase />
-        <CustomTrialsShowcase />
-        <GuidedLearningShowcase />
         <GradebookShowcase />
-        <StudentDashboardShowcase />
-        <DiscussionThreadsShowcase />
-        <StandardsAlignmentShowcase />
-        <RosterImportShowcase />
-        <SemesterPlanShowcase />
-        <StudentProfileShowcase />
-        <EssayGradingShowcase />
-        <ParentsShowcase />
-        <StudyGroupsShowcase />
-        <TimelinesShowcase audience="teacher" />
-        <AuthorShowcase audience="teacher" />
+        <ClassProgressShowcase />
+        <CoTeachersShowcase />
         <TeacherPricingSection />
         <TeacherCTA />
       </>
@@ -78,23 +50,19 @@ export function HomepageContent() {
 
   return (
     <>
+      {/* Carousel sits above the 7 student feature blocks */}
       <CarouselSection />
-      <ReaderSection />
-      <VerseFormattingShowcase />
-      <PlaysFormattingShowcase />
-      <MiddleEnglishGlossesShowcase />
-      <AnnotationShowcase />
-      <PersonalAnnotationsShowcase />
-      <GamificationSection />
-      <TrialsShowcase />
+
+      {/* 7 student feature blocks */}
+      <MergedReaderBlock />
+      <MergedVirgilBlock />
+      <MergedTrialsBlock />
       <WorldMapSection />
-      <LibraryShowcase />
-      <TimelinesShowcase />
-      <AuthorShowcase />
-      <BookClubsShowcase />
-      <FriendsProfilesShowcase />
-      <SearchShowcase />
+      <MergedLibraryTimelineBlock />
+      <MergedSocialBlock />
       <ReadingInsightsShowcase />
+
+      {/* Student pricing band */}
       <ReaderPricingSection />
       <FinalCTA />
     </>

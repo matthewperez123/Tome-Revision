@@ -9,6 +9,7 @@ import { SidebarTrigger } from "@/components/ui/sidebar"
 import { cn } from "@/lib/utils"
 import { ThemeToggle } from "@/components/tome/ThemeToggle"
 import { NotificationBell } from "@/components/tome/notification-bell"
+import { TomeWordmark } from "@/components/brand/tome-wordmark"
 import { UserAvatar } from "@/components/tome/avatar/UserAvatar"
 import { getCurrentAvatar } from "@/lib/avatar-state"
 import type { BookCharacter } from "@/data/character-avatars"
@@ -46,10 +47,14 @@ export function TopBar({ className }: { className?: string }) {
       <SidebarTrigger className="shrink-0" />
       <Link
         href="/"
-        className="flex items-center gap-1.5 text-foreground shrink-0 hover:opacity-70 transition-opacity"
+        className="flex items-center gap-1.5 text-foreground shrink-0 hover:opacity-70 transition-opacity pr-3"
       >
         <BookOpen className="size-4" />
-        <span className="text-sm font-semibold tracking-tight">Tome</span>
+        <TomeWordmark
+          showBeta
+          betaPx={8}
+          className="text-sm font-semibold tracking-tight"
+        />
       </Link>
 
       {/* Search */}

@@ -1,75 +1,77 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
-import Image from "next/image"
-import { Users, Search, UserPlus, Check, X, BookOpen, Flame } from "lucide-react"
+import { Search, UserPlus, Check, X, BookOpen, Flame } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { toast } from "sonner"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import {
-  getFriends,
-  getFriendRequests,
-  acceptFriendRequest,
-  declineFriendRequest,
-  getSuggestedProfiles,
-  sendFriendRequest,
-  searchProfiles,
-  getProfile,
-  subscribe,
-  type MockProfile,
-  type FriendRequest,
-} from "@/lib/mock/social"
+  useFriendsData,
+  type FriendProfile,
+} from "@/hooks/use-friends-data"
 import { cn } from "@/lib/utils"
 
 export default function FriendsPage() {
+  const {
+    mode,
+    friends,
+    requests,
+    suggested,
+    searchProfiles,
+    sendRequest,
+    accept,
+    decline,
+  } = useFriendsData()
+
   const [tab, setTab] = useState<"friends" | "requests">("friends")
-  const [friends, setFriends] = useState<MockProfile[]>([])
-  const [requests, setRequests] = useState<FriendRequest[]>([])
   const [query, setQuery] = useState("")
-  const [searchResults, setSearchResults] = useState<MockProfile[] | null>(null)
+  const [searchResults, setSearchResults] = useState<FriendProfile[] | null>(null)
   const [showSuggestions, setShowSuggestions] = useState(false)
-  const [suggested, setSuggested] = useState<MockProfile[]>([])
   const [pendingAdd, setPendingAdd] = useState<Set<string>>(new Set())
 
-  const refresh = useCallback(() => {
-    setFriends(getFriends())
-    setRequests(getFriendRequests())
-    setSuggested(getSuggestedProfiles())
-  }, [])
-
-  useEffect(() => {
-    refresh()
-    return subscribe(refresh)
-  }, [refresh])
-
+  // Debounced search. In demo mode the search hits the mock module
+  // synchronously; in real mode it queries Supabase profiles by name.
   useEffect(() => {
     if (query.trim().length >= 2) {
-      const timeout = setTimeout(() => {
-        setSearchResults(searchProfiles(query))
+      const timeout = setTimeout(async () => {
+        const results = await searchProfiles(query)
+        setSearchResults(results)
       }, 200)
       return () => clearTimeout(timeout)
     } else {
       setSearchResults(null)
     }
-  }, [query])
+  }, [query, searchProfiles])
 
   async function handleAddFriend(userId: string) {
     setPendingAdd((s) => new Set(s).add(userId))
-    await sendFriendRequest(userId)
-    setPendingAdd((s) => { const n = new Set(s); n.delete(userId); return n })
+    try {
+      await sendRequest(userId)
+      // In demo mode the mock auto-accepts after 2s; in real mode the
+      // recipient sees a notification and decides. Match each mode's wording.
+      toast.success(mode === "demo" ? "Friend request accepted!" : "Request sent")
+    } catch (err) {
+      toast.error("Couldn't send friend request.")
+      console.error(err)
+    } finally {
+      setPendingAdd((s) => {
+        const n = new Set(s)
+        n.delete(userId)
+        return n
+      })
+    }
+  }
+
+  async function handleAccept(reqId: string) {
+    await accept(reqId)
     toast.success("Friend request accepted!")
   }
 
-  function handleAccept(reqId: string) {
-    acceptFriendRequest(reqId)
-    toast.success("Friend request accepted!")
-  }
-
-  function handleDecline(reqId: string) {
-    declineFriendRequest(reqId)
+  async function handleDecline(reqId: string) {
+    await decline(reqId)
   }
 
   const displayList = searchResults ?? friends
@@ -189,14 +191,18 @@ export default function FriendsPage() {
                     {friend.displayName}
                   </p>
                   <p className="text-[10px] text-muted-foreground">@{friend.username}</p>
-                  <div className="mt-2 flex items-center gap-1.5 text-[10px] text-muted-foreground">
-                    <BookOpen className="size-3 shrink-0" />
-                    <span className="truncate">{friend.currentlyReading.bookTitle}</span>
-                  </div>
-                  <div className="mt-1 flex items-center gap-3 text-[9px] text-muted-foreground/70">
-                    <span>{friend.stats.booksCompleted} books</span>
-                    <span className="flex items-center gap-0.5"><Flame className="size-2.5" />{friend.stats.flames}</span>
-                  </div>
+                  {friend.currentlyReading && (
+                    <div className="mt-2 flex items-center gap-1.5 text-[10px] text-muted-foreground">
+                      <BookOpen className="size-3 shrink-0" />
+                      <span className="truncate">{friend.currentlyReading.bookTitle}</span>
+                    </div>
+                  )}
+                  {friend.stats && (
+                    <div className="mt-1 flex items-center gap-3 text-[9px] text-muted-foreground/70">
+                      <span>{friend.stats.booksCompleted} books</span>
+                      <span className="flex items-center gap-0.5"><Flame className="size-2.5" />{friend.stats.flames}</span>
+                    </div>
+                  )}
                 </div>
               </Link>
             </BlurFade>
@@ -212,29 +218,28 @@ export default function FriendsPage() {
               <p className="text-sm text-muted-foreground">No pending requests</p>
             </div>
           ) : (
-            requests.map((req) => {
-              const sender = getProfile(req.fromUserId)
-              if (!sender) return null
-              return (
-                <BlurFade key={req.id} delay={0.05} inView>
-                  <div className="flex items-center gap-3 rounded-xl border border-border bg-card p-4">
-                    <img src={sender.avatarUrl} alt="" className="size-11 rounded-full border border-[#D4A04C]/20" />
-                    <div className="flex-1 min-w-0">
-                      <p className="text-sm font-semibold">{sender.displayName}</p>
-                      <p className="text-[10px] text-muted-foreground">@{sender.username} · {sender.bio}</p>
-                    </div>
-                    <div className="flex items-center gap-1.5">
-                      <Button size="sm" className="h-7 text-[10px] gap-1" onClick={() => handleAccept(req.id)}>
-                        <Check className="size-3" /> Accept
-                      </Button>
-                      <Button size="sm" variant="ghost" className="h-7 text-[10px]" onClick={() => handleDecline(req.id)}>
-                        <X className="size-3" />
-                      </Button>
-                    </div>
+            requests.map((req) => (
+              <BlurFade key={req.id} delay={0.05} inView>
+                <div className="flex items-center gap-3 rounded-xl border border-border bg-card p-4">
+                  <img src={req.from.avatarUrl} alt="" className="size-11 rounded-full border border-[#D4A04C]/20" />
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-semibold">{req.from.displayName}</p>
+                    <p className="text-[10px] text-muted-foreground truncate">
+                      @{req.from.username}
+                      {req.from.bio ? ` · ${req.from.bio}` : ""}
+                    </p>
                   </div>
-                </BlurFade>
-              )
-            })
+                  <div className="flex items-center gap-1.5">
+                    <Button size="sm" className="h-7 text-[10px] gap-1" onClick={() => handleAccept(req.id)}>
+                      <Check className="size-3" /> Accept
+                    </Button>
+                    <Button size="sm" variant="ghost" className="h-7 text-[10px]" onClick={() => handleDecline(req.id)}>
+                      <X className="size-3" />
+                    </Button>
+                  </div>
+                </div>
+              </BlurFade>
+            ))
           )}
         </div>
       )}

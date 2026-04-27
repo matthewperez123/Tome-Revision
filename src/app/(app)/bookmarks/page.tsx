@@ -13,8 +13,67 @@ import {
   updateBookmark,
 } from "@/lib/bookmarks/store"
 import { BOOKMARK_COLORS, COLOR_ORDER, type Bookmark, type BookmarkColor } from "@/lib/bookmarks/types"
+import {
+  getAnnotationBookmarks,
+  toggleAnnotationBookmark,
+  toggleCrossRefBookmark,
+} from "@/lib/bookmarks/annotationBookmarks"
+import { getAnnotation } from "@/lib/virgil/annotations"
+import type { AnnotationBookmark, Annotation, CrossReference } from "@/lib/virgil/types"
 import { getBooks } from "@/lib/content"
 import { cn } from "@/lib/utils"
+
+const CROSS_REF_TYPE_LABELS: Record<string, string> = {
+  echo: "ECHO",
+  source: "SOURCE",
+  parody: "PARODY",
+  allusion: "ALLUSION",
+  compare: "COMPARE",
+  typological: "TYPOLOGICAL",
+}
+
+// ── Virgil bookmark types ─────────────────────────────────────────────────
+
+type VirgilBookmarkRow =
+  | {
+      kind: "annotation"
+      bookmark: AnnotationBookmark
+      annotation: Annotation
+    }
+  | {
+      kind: "cross-reference"
+      bookmark: AnnotationBookmark
+      annotation: Annotation
+      crossRef: CrossReference
+      crossRefIndex: number
+    }
+
+function loadVirgilRows(): VirgilBookmarkRow[] {
+  const rows: VirgilBookmarkRow[] = []
+  for (const bm of getAnnotationBookmarks()) {
+    const annotation = getAnnotation(bm.annotationId)
+    if (!annotation) continue // annotation may have been removed in a content update
+    if (bm.type === "annotation") {
+      rows.push({ kind: "annotation", bookmark: bm, annotation })
+    } else if (bm.type === "cross-reference" && typeof bm.crossReferenceIndex === "number") {
+      const crossRef = annotation.crossReferences[bm.crossReferenceIndex]
+      if (!crossRef) continue
+      rows.push({
+        kind: "cross-reference",
+        bookmark: bm,
+        annotation,
+        crossRef,
+        crossRefIndex: bm.crossReferenceIndex,
+      })
+    }
+  }
+  // Newest first
+  return rows.sort(
+    (a, b) =>
+      new Date(b.bookmark.bookmarkedAt).getTime() -
+      new Date(a.bookmark.bookmarkedAt).getTime()
+  )
+}
 
 // ── Helpers ───────────────────────────────────────────────────────────────
 
@@ -291,6 +350,112 @@ function BookAccordion({
   )
 }
 
+// ── Virgil bookmark card ──────────────────────────────────────────────────
+
+function VirgilBookmarkCard({
+  row,
+  onRemove,
+}: {
+  row: VirgilBookmarkRow
+  onRemove: () => void
+}) {
+  if (row.kind === "annotation") {
+    const { annotation } = row
+    return (
+      <div className="rounded-lg border border-border bg-card p-3.5 hover:bg-accent/20 transition-colors">
+        <div className="flex items-start justify-between gap-3">
+          <div className="min-w-0 flex-1">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.1em] text-[#D4A04C]">
+              ANNOTATION
+            </p>
+            <h3 className="mt-1 font-serif text-base font-semibold tracking-tight">
+              {annotation.title}
+            </h3>
+            <p className="mt-0.5 text-[11px] text-muted-foreground">
+              {annotation.passageReference}
+            </p>
+            <p className="mt-2 font-serif italic text-sm leading-relaxed text-foreground/75 line-clamp-3">
+              "{annotation.quotedPassage}"
+            </p>
+          </div>
+          <div className="flex flex-col items-end gap-1.5 shrink-0">
+            <Link
+              href={`/read/${annotation.bookId}?ch=${annotation.chapterNumber}`}
+              className="p-1 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+              title="Read in context"
+            >
+              <ArrowRight className="size-3.5" />
+            </Link>
+            <button
+              onClick={onRemove}
+              className="p-1 rounded-md text-muted-foreground hover:text-destructive hover:bg-destructive/10 transition-colors"
+              title="Remove bookmark"
+            >
+              <Trash2 className="size-3.5" />
+            </button>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  // Cross-reference (echo / source / allusion / parody / compare / typological)
+  const { crossRef, annotation } = row
+  const typeLabel = CROSS_REF_TYPE_LABELS[crossRef.type] ?? crossRef.type.toUpperCase()
+  const target =
+    crossRef.targetBookId
+      ? typeof crossRef.targetChapterNumber === "number"
+        ? `/read/${crossRef.targetBookId}?ch=${crossRef.targetChapterNumber}`
+        : `/read/${crossRef.targetBookId}`
+      : null
+
+  return (
+    <div className="rounded-lg border border-border bg-card p-3.5 hover:bg-accent/20 transition-colors">
+      <div className="flex items-start justify-between gap-3">
+        <div className="min-w-0 flex-1">
+          <div className="flex items-center gap-2 flex-wrap">
+            <span
+              className="text-[9px] font-semibold uppercase tracking-[0.1em] px-1.5 py-0.5 rounded"
+              style={{ color: "#D4A04C", backgroundColor: "rgba(212,160,76,0.1)" }}
+            >
+              {typeLabel}
+            </span>
+            <span className="text-[10px] text-muted-foreground">
+              from <span className="font-serif italic">{annotation.title}</span>
+            </span>
+          </div>
+          <p className="mt-2 font-serif text-sm leading-relaxed text-foreground/85">
+            {crossRef.description}
+          </p>
+          <p className="mt-1.5 text-[11px] text-muted-foreground">
+            <span className="font-serif italic">{crossRef.workTitle}</span>
+            <span> · {crossRef.workAuthor}</span>
+            {crossRef.passageReference && <span> · {crossRef.passageReference}</span>}
+          </p>
+        </div>
+        <div className="flex flex-col items-end gap-1.5 shrink-0">
+          {target && (
+            <Link
+              href={target}
+              className="p-1 rounded-md text-muted-foreground hover:text-[#D4A04C] hover:bg-muted transition-colors"
+              title="Read this"
+            >
+              <ArrowRight className="size-3.5" />
+            </Link>
+          )}
+          <button
+            onClick={onRemove}
+            className="p-1 rounded-md text-muted-foreground hover:text-destructive hover:bg-destructive/10 transition-colors"
+            title="Remove bookmark"
+          >
+            <Trash2 className="size-3.5" />
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 // ── Main Page ─────────────────────────────────────────────────────────────
 
 type ViewMode = "by-book" | "all"
@@ -298,6 +463,7 @@ type ViewMode = "by-book" | "all"
 export default function BookmarksPage() {
   const [mounted,         setMounted]         = useState(false)
   const [bookmarks,       setBookmarks]       = useState<Bookmark[]>([])
+  const [virgilRows,      setVirgilRows]      = useState<VirgilBookmarkRow[]>([])
   const [viewMode,        setViewMode]        = useState<ViewMode>("by-book")
   const [filterBookId,    setFilterBookId]    = useState<string>("all")
   const [filterColor,     setFilterColor]     = useState<BookmarkColor | "all">("all")
@@ -307,8 +473,18 @@ export default function BookmarksPage() {
   // Load on mount
   useEffect(() => {
     setBookmarks(getAllBookmarks())
+    setVirgilRows(loadVirgilRows())
     setMounted(true)
   }, [])
+
+  function handleRemoveVirgil(row: VirgilBookmarkRow) {
+    if (row.kind === "annotation") {
+      toggleAnnotationBookmark(row.annotation.id)
+    } else {
+      toggleCrossRefBookmark(row.annotation.id, row.crossRefIndex)
+    }
+    setVirgilRows(loadVirgilRows())
+  }
 
   // All books that have bookmarks
   const booksWithBookmarks = useMemo(() => {
@@ -419,6 +595,31 @@ export default function BookmarksPage() {
             )}
           </div>
         </div>
+
+        {/* Virgil bookmarks — annotations and individual cross-references
+            saved from inside the Virgil drawer in the reader. Distinct
+            from the passage bookmarks below because they carry scholarly
+            commentary and cross-book pointers, and live in a separate
+            localStorage store (`tome:annotation-bookmarks`). */}
+        {mounted && virgilRows.length > 0 && (
+          <section className="space-y-3">
+            <div className="flex items-center justify-between">
+              <h2 className="text-sm font-semibold tracking-tight">From Virgil</h2>
+              <span className="text-[11px] text-muted-foreground">
+                {virgilRows.length} saved
+              </span>
+            </div>
+            <div className="space-y-2">
+              {virgilRows.map((row) => (
+                <VirgilBookmarkCard
+                  key={row.bookmark.id}
+                  row={row}
+                  onRemove={() => handleRemoveVirgil(row)}
+                />
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Filters row */}
         <div className="space-y-3">

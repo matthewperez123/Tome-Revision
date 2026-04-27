@@ -1159,6 +1159,26 @@
 }
 .dark .prose-reader .tome-gloss { border-bottom-color: #c9a670; }
 
+/* Marginalia toggle — when [data-annotations-hidden="true"] is set on a
+ * reader-content container, every inline annotation marker (regardless of
+ * which book it belongs to) is hidden. Class names enumerated below match
+ * those produced by the per-book annotation overlays in
+ * src/components/reader/*-annotations.tsx. */
+[data-annotations-hidden="true"] .commedia-anchor,
+[data-annotations-hidden="true"] .aeneid-anchor,
+[data-annotations-hidden="true"] .aeneid-apostrophe,
+[data-annotations-hidden="true"] .pl-anchor-marker,
+[data-annotations-hidden="true"] .iliad-anchor-marker,
+[data-annotations-hidden="true"] .odyssey-anchor-marker,
+[data-annotations-hidden="true"] .beowulf-anchor-marker,
+[data-annotations-hidden="true"] .iotk-anchor-marker,
+[data-annotations-hidden="true"] .ct-anchor-marker,
+[data-annotations-hidden="true"] .malory-anchor-marker,
+[data-annotations-hidden="true"] .dec-anchor-marker,
+[data-annotations-hidden="true"] .tome-annotation-anchor {
+  display: none !important;
+}
+
 /* Commedia annotation anchors — small gold ✦ inserted before each passage
  * that carries a scholarly note. Kept visually quiet so verse takes
  * precedence; the marker is interactive and opens the Virgil drawer. */

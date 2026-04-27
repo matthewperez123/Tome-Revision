@@ -6,6 +6,8 @@ import { motion } from "framer-motion"
 import { ChevronLeft, BookOpen, Users, BarChart2, MessageCircle } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
+import { TeacherAnnouncementComposer } from "@/components/classroom/teacher-announcement-composer"
+import { TeacherAssignmentComposer } from "@/components/classroom/teacher-assignment-composer"
 
 type Tab = "feed" | "assignments" | "classmates" | "progress"
 
@@ -181,8 +183,20 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
         </span>
       )}
 
+      {/* Real-mode owner/co_teacher composers — invisible to students. */}
+      <div className="mt-6 space-y-2">
+        <TeacherAnnouncementComposer classroomId={classroomId} />
+        <TeacherAssignmentComposer classroomId={classroomId} />
+        <Link
+          href={`/classroom/${classroomId}/gradebook`}
+          className="inline-flex items-center gap-1.5 rounded-full border border-border px-3 py-1 text-xs text-muted-foreground transition-colors hover:border-foreground/30 hover:text-foreground"
+        >
+          Open gradebook →
+        </Link>
+      </div>
+
       {/* Tab bar */}
-      <div className="mt-6 flex gap-1 overflow-x-auto border-b">
+      <div className="mt-2 flex gap-1 overflow-x-auto border-b">
         {tabs.map((t) => (
           <button
             key={t.key}

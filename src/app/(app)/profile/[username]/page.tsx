@@ -16,6 +16,7 @@ import {
   subscribe,
   type MockProfile,
 } from "@/lib/mock/social"
+import { ProfileSocialSections } from "@/components/profile/profile-social-sections"
 import { cn } from "@/lib/utils"
 
 function timeAgo(date: Date): string {
@@ -232,6 +233,9 @@ export default function UserProfilePage() {
           </div>
         </BlurFade>
       )}
+
+      {/* Real-mode social sections — invisible in demo mode */}
+      <ProfileSocialSections username={username} />
     </div>
   )
 }

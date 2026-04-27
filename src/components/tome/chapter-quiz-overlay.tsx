@@ -29,6 +29,13 @@ import {
   QUESTION_TYPE_ICONS,
   QUESTION_TYPE_LABELS,
 } from "@/components/trials/questions"
+import { gradeReflection } from "@/lib/actions/grade-reflection"
+import {
+  saveAttempt,
+  loadAttempt,
+  clearAttempt,
+  type TrialAttemptSnapshot,
+} from "@/lib/trial-attempts"
 import { tierSigils } from "@/components/trials/sigils"
 import { getTierDef, TrialDifficultyCards } from "./trial-difficulty-cards"
 import { TrialProgressBar } from "@/components/trials/TrialProgressBar"
@@ -58,6 +65,14 @@ export interface ChapterQuizOverlayProps {
   onSelectDifficulty: (difficulty: QuizDifficulty) => void
   onSkip: () => void
   questions: ChapterQuestion[]
+  /**
+   * If provided, the overlay opens directly on the intro/quiz phase with
+   * this tier preselected — skipping the in-overlay difficulty-select
+   * screen (which is now handled by the DifficultyDropUp toast).
+   */
+  initialTier?: QuizDifficulty | null
+  /** When true, the results CTA reads "Finish book" instead of "Next chapter". */
+  isLastChapter?: boolean
 }
 
 // ─────────────────────────────────────────────
@@ -91,6 +106,11 @@ function mapToEngineQuestion(
     etymology: q.etymology,
     crossRefBookId: q.crossRefBookId,
     crossRefLabel: q.crossRefLabel,
+    reflectionPrompt: q.reflectionPrompt,
+    reflectionWordMin: q.reflectionWordMin,
+    reflectionWordMax: q.reflectionWordMax,
+    reflectionRubric: q.reflectionRubric,
+    reflectionExpectedThemes: q.reflectionExpectedThemes,
   }
 
   switch (q.type) {
@@ -115,6 +135,13 @@ function mapToEngineQuestion(
         options: [],
         correctPairs: q.correctPairs ?? {},
         correct_answer: JSON.stringify(q.correctPairs ?? {}),
+      }
+    case "reflection":
+      return {
+        ...base,
+        options: [],
+        // Engine accepts any response meeting word_min; no canonical answer.
+        correct_answer: "",
       }
     default: {
       // multiple_choice, passage_id, theme_analysis, vocabulary_in_context,
@@ -209,10 +236,30 @@ function QuizRunner({
 
   const [state, dispatch] = useReducer(
     quizReducer,
-    { quiz, engineQuestions, hearts },
-    ({ quiz: q, engineQuestions: eqs, hearts: h }) => {
-      const s = createQuizState(q, eqs, h)
-      return { ...s, status: "active" as const }
+    { quiz, engineQuestions, hearts, book, chapterIndex, tier },
+    ({ quiz: q, engineQuestions: eqs, hearts: h, book: b, chapterIndex: ci, tier: t }) => {
+      const fresh = createQuizState(q, eqs, h)
+      // Hydrate from any in-progress saved attempt for this book/chapter/tier.
+      const snap = loadAttempt(b.id, ci, t)
+      if (
+        snap &&
+        snap.answers.length === eqs.length &&
+        snap.results.length === eqs.length
+      ) {
+        return {
+          ...fresh,
+          currentIndex: snap.currentIndex,
+          answers: snap.answers,
+          results: snap.results,
+          score: snap.score,
+          hearts: Math.min(snap.hearts, h),
+          xpEarned: snap.xpEarned,
+          coinsEarned: snap.coinsEarned,
+          reflectionGrades: snap.reflectionGrades ?? {},
+          status: "active" as const,
+        }
+      }
+      return { ...fresh, status: "active" as const }
     }
   )
 
@@ -220,6 +267,46 @@ function QuizRunner({
   useEffect(() => {
     quizStateOut(state)
   }, [state, quizStateOut])
+
+  // ── Auto-save ────────────────────────────────
+  // Persist progress on every meaningful state change. When the trial
+  // completes (review / complete) clear the saved attempt.
+  useEffect(() => {
+    if (state.status === "review" || state.status === "complete") {
+      clearAttempt(book.id, chapterIndex, tier)
+      return
+    }
+    const snap: TrialAttemptSnapshot = {
+      bookId: book.id,
+      chapterIndex,
+      tier,
+      currentIndex: state.currentIndex,
+      answers: state.answers,
+      results: state.results,
+      score: state.score,
+      hearts: state.hearts,
+      xpEarned: state.xpEarned,
+      coinsEarned: state.coinsEarned,
+      reflectionGrades: state.reflectionGrades ?? {},
+      lastSavedAt: new Date().toISOString(),
+      startedAt: new Date(state.startedAt).toISOString(),
+    }
+    saveAttempt(snap)
+  }, [
+    state.status,
+    state.currentIndex,
+    state.answers,
+    state.results,
+    state.score,
+    state.hearts,
+    state.xpEarned,
+    state.coinsEarned,
+    state.reflectionGrades,
+    state.startedAt,
+    book.id,
+    chapterIndex,
+    tier,
+  ])
 
   // Handle paused / review transitions
   useEffect(() => {
@@ -342,6 +429,34 @@ function QuizRunner({
   const handleSubmit = (answer: string) => {
     if (answered) return
     dispatch({ type: "ANSWER", answer })
+
+    // Reflection: kick off Virgil grading (placeholder action). The engine
+    // already accepted the answer; we only attach a 0–10 score + feedback.
+    if (q.type === "reflection") {
+      dispatch({ type: "REFLECTION_PENDING", questionId: q.id })
+      void (async () => {
+        try {
+          const res = await gradeReflection({
+            questionId: q.id,
+            attemptId: quiz.id,
+            response: answer,
+            rubric: q.reflectionRubric,
+            expectedThemes: q.reflectionExpectedThemes,
+            wordMin: q.reflectionWordMin,
+          })
+          dispatch({
+            type: "REFLECTION_GRADED",
+            questionId: q.id,
+            score: res.score,
+            feedback: res.feedback,
+          })
+          onFeedback(`Virgil: ${res.feedback}`)
+        } catch {
+          dispatch({ type: "REFLECTION_FAILED", questionId: q.id })
+          onFeedback("Virgil will review this shortly.")
+        }
+      })()
+    }
   }
 
   const handleNext = () => {
@@ -405,11 +520,12 @@ function QuizRunner({
                 </span>
               </div>
 
-              {/* Prompt — unless the renderer owns it (fill_blank, passage_id, close_reading, vocab) */}
+              {/* Prompt — unless the renderer owns it (fill_blank, passage_id, close_reading, vocab, reflection) */}
               {q.type !== "fill_blank" &&
                 q.type !== "passage_id" &&
                 q.type !== "close_reading" &&
-                q.type !== "vocabulary_in_context" && (
+                q.type !== "vocabulary_in_context" &&
+                q.type !== "reflection" && (
                   <p className="text-ink text-lg leading-relaxed font-serif">{q.prompt}</p>
                 )}
 
@@ -435,9 +551,57 @@ function QuizRunner({
                 </div>
               )}
 
-              {/* Explanation card */}
+              {/* Explanation / Virgil feedback card */}
               <AnimatePresence>
-                {answered && (
+                {answered && q.type === "reflection" ? (
+                  (() => {
+                    const grade = state.reflectionGrades?.[q.id]
+                    const pending = !grade || grade.status === "pending"
+                    const failed = grade?.status === "failed"
+                    return (
+                      <motion.div
+                        variants={reduced ? reducedTokens.explanationRise : explanationRise}
+                        initial="hidden"
+                        animate="visible"
+                        exit="hidden"
+                        className="rounded-xl border-2 px-4 py-3 space-y-1.5"
+                        style={{
+                          borderColor: "rgba(212,175,55,0.40)",
+                          background: "rgba(212,175,55,0.06)",
+                        }}
+                      >
+                        <div className="flex items-center gap-2 font-sans text-sm font-bold">
+                          <span
+                            className="grid place-items-center size-5 rounded-full"
+                            style={{
+                              background: "rgba(212,175,55,0.15)",
+                              border: "1px solid rgba(212,175,55,0.5)",
+                              color: "#D4AF37",
+                            }}
+                            aria-hidden
+                          >
+                            ✦
+                          </span>
+                          {pending
+                            ? "Virgil is reading your reflection…"
+                            : failed
+                              ? "Virgil will review this shortly"
+                              : `Virgil — ${grade!.score} / 10`}
+                        </div>
+                        {!pending && !failed && (
+                          <p className="text-sm text-ink font-serif leading-relaxed">
+                            {grade!.feedback}
+                          </p>
+                        )}
+                        {q.explanation && !pending && !failed && (
+                          <p className="text-xs italic text-stone-500 font-serif pt-1">
+                            {q.explanation}
+                          </p>
+                        )}
+                      </motion.div>
+                    )
+                  })()
+                ) : answered ? (
                   <motion.div
                     variants={reduced ? reducedTokens.explanationRise : explanationRise}
                     initial="hidden"
@@ -470,7 +634,7 @@ function QuizRunner({
                       </p>
                     )}
                   </motion.div>
-                )}
+                ) : null}
               </AnimatePresence>
             </motion.div>
           </AnimatePresence>
@@ -527,10 +691,16 @@ export function ChapterQuizOverlay({
   onClose,
   onSelectDifficulty,
   onSkip,
+  initialTier = null,
+  isLastChapter = false,
 }: ChapterQuizOverlayProps) {
   const reduced = useReducedMotion()
-  const [phase, setPhase] = useState<OverlayPhase>("difficulty-select")
-  const [selectedTier, setSelectedTier] = useState<QuizDifficulty | null>(null)
+  const [phase, setPhase] = useState<OverlayPhase>(
+    initialTier ? "intro" : "difficulty-select"
+  )
+  const [selectedTier, setSelectedTier] = useState<QuizDifficulty | null>(
+    initialTier
+  )
   const [attempt, setAttempt] = useState(0)
   const [paused, setPaused] = useState(false)
   const [resumeToken, setResumeToken] = useState(0)
@@ -542,14 +712,14 @@ export function ChapterQuizOverlay({
   // Reset when the overlay opens
   useEffect(() => {
     if (isOpen) {
-      setPhase("difficulty-select")
-      setSelectedTier(null)
+      setPhase(initialTier ? "intro" : "difficulty-select")
+      setSelectedTier(initialTier)
       setAttempt(0)
       setPaused(false)
       setFinalState(null)
       setResumeToken(0)
     }
-  }, [isOpen])
+  }, [isOpen, initialTier])
 
   // Advance from difficulty-select → intro when questions arrive
   useEffect(() => {
@@ -722,6 +892,7 @@ export function ChapterQuizOverlay({
                     onPass={onPass}
                     onRetry={handleRetry}
                     onReturn={handleReturn}
+                    isLastChapter={isLastChapter}
                   />
                 </motion.div>
               )}
