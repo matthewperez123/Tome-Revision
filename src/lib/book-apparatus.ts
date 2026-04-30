@@ -30,7 +30,18 @@ export const PARTIAL_INGESTED_BOOK_IDS: ReadonlySet<string> = new Set([
   "orlando-furioso",
   "idylls-of-the-king",
   "don-juan",
+  // Shakespeare plays with full structured-content apparatus
+  // (per-scene line arrays + glosses + annotations + trials in
+  // content/<play>/, rendered through the shared StructuredEnhancements
+  // pipeline so formatting matches the canonical works).
   "hamlet",
+  "macbeth",
+  "othello",
+  "king-lear",
+  "romeo-and-juliet",
+  "julius-caesar",
+  "henry-v",
+  "richard-iii",
 ])
 
 export function isBookComplete(book: Pick<TomeBook, "apparatusStatus">): boolean {

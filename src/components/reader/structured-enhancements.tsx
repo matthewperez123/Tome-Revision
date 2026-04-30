@@ -157,6 +157,65 @@ const RICHARD_III_CHAPTER_TO_SCENE: Record<number, string> = {
   30: "richard_iii_act5_scene5",
 }
 
+// Julius Caesar: 24 chapters. ch-0 Dramatis Personae, Act title pages at
+// ch-1/5/10/14/18. 18 scenes (3-4-3-3-5).
+const JULIUS_CAESAR_CHAPTER_TO_SCENE: Record<number, string> = {
+  2: "julius_caesar_act1_scene1",
+  3: "julius_caesar_act1_scene2",
+  4: "julius_caesar_act1_scene3",
+  6: "julius_caesar_act2_scene1",
+  7: "julius_caesar_act2_scene2",
+  8: "julius_caesar_act2_scene3",
+  9: "julius_caesar_act2_scene4",
+  11: "julius_caesar_act3_scene1",
+  12: "julius_caesar_act3_scene2",
+  13: "julius_caesar_act3_scene3",
+  15: "julius_caesar_act4_scene1",
+  16: "julius_caesar_act4_scene2",
+  17: "julius_caesar_act4_scene3",
+  19: "julius_caesar_act5_scene1",
+  20: "julius_caesar_act5_scene2",
+  21: "julius_caesar_act5_scene3",
+  22: "julius_caesar_act5_scene4",
+  23: "julius_caesar_act5_scene5",
+}
+
+// Henry V: 31 chapters. ch-0 Dramatis Personae, ch-1 standalone Prologue,
+// Act title pages at ch-2/5/10/18/27 — Acts II–V bundle their chorus
+// into the act title chapter (the same pattern Romeo's Act II uses).
+// ch-30 is the standalone Epilogue. 28 scene/chorus sections total.
+const HENRY_V_CHAPTER_TO_SCENE: Record<number, string> = {
+  1: "henry_v_prologue",
+  3: "henry_v_act1_scene1",
+  4: "henry_v_act1_scene2",
+  5: "henry_v_act2_chorus",
+  6: "henry_v_act2_scene1",
+  7: "henry_v_act2_scene2",
+  8: "henry_v_act2_scene3",
+  9: "henry_v_act2_scene4",
+  10: "henry_v_act3_chorus",
+  11: "henry_v_act3_scene1",
+  12: "henry_v_act3_scene2",
+  13: "henry_v_act3_scene3",
+  14: "henry_v_act3_scene4",
+  15: "henry_v_act3_scene5",
+  16: "henry_v_act3_scene6",
+  17: "henry_v_act3_scene7",
+  18: "henry_v_act4_chorus",
+  19: "henry_v_act4_scene1",
+  20: "henry_v_act4_scene2",
+  21: "henry_v_act4_scene3",
+  22: "henry_v_act4_scene4",
+  23: "henry_v_act4_scene5",
+  24: "henry_v_act4_scene6",
+  25: "henry_v_act4_scene7",
+  26: "henry_v_act4_scene8",
+  27: "henry_v_act5_chorus",
+  28: "henry_v_act5_scene1",
+  29: "henry_v_act5_scene2",
+  30: "henry_v_epilogue",
+}
+
 // Romeo and Juliet: 31 chapters. ch-0 Dramatis Personae, ch-1 Prologue
 // (standalone CHORUS sonnet), Act title pages at ch-2/8/15/21/27. Note that
 // the Act II chorus is bundled into ch-8 (the Act II title chapter itself).
@@ -362,6 +421,8 @@ export function StructuredEnhancements({
     if (workId === "romeo-and-juliet") return ROMEO_AND_JULIET_CHAPTER_TO_SCENE[chapterIndex] || null
     if (workId === "king-lear") return KING_LEAR_CHAPTER_TO_SCENE[chapterIndex] || null
     if (workId === "richard-iii") return RICHARD_III_CHAPTER_TO_SCENE[chapterIndex] || null
+    if (workId === "julius-caesar") return JULIUS_CAESAR_CHAPTER_TO_SCENE[chapterIndex] || null
+    if (workId === "henry-v") return HENRY_V_CHAPTER_TO_SCENE[chapterIndex] || null
     return null
   }, [workId, chapterIndex])
 

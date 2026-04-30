@@ -14,6 +14,8 @@ export type QuestionType =
   | 'cross_reference'
   | 'close_reading'
   | 'reflection'
+  | 'identification'
+  | 'tf_with_reason'
 
 export type QuizDifficulty = 'Apprentice' | 'Scholar' | 'Master'
 
@@ -53,6 +55,12 @@ export interface ChapterQuestion {
   reflectionWordMax?: number
   reflectionRubric?: string
   reflectionExpectedThemes?: string[]
+  /** For identification — what the prompt is asking the user to name. */
+  identificationSubject?: 'speaker' | 'book' | 'character'
+  /** For tf_with_reason — list of follow-up reasons; user picks one. */
+  tfReasons?: string[]
+  /** For tf_with_reason — index into `tfReasons` of the correct reason. */
+  tfCorrectReason?: number
   explanation: string
   /** Optional passage citation shown in the explanation card */
   citation?: string
@@ -2126,10 +2134,61 @@ export function getQuestionsForChapter(
     bankKey = 'canterbury-tales'
   } else if (title.includes('morte')) {
     bankKey = 'le-morte-darthur'
+  } else if (title.includes('republic')) {
+    bankKey = 'republic'
+  } else if (title.includes('meditations')) {
+    bankKey = 'meditations'
   } else if (title.includes('moby')) {
     bankKey = null
   } else if (title.includes('quixote')) {
     bankKey = null
+  }
+
+  // ─────────────────────────────────────────────────────────────────────
+  // Curated I–III trial banks for the dashboard's "Recommended for You"
+  // books. These take precedence over older inline content so that the
+  // first three chapters of each surfaced book carry the polished,
+  // text-grounded 15+ Q tier-balanced trials.
+  // ─────────────────────────────────────────────────────────────────────
+  const curatedExtras = (() => {
+    if (bankKey === 'iliad') {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const { ILIAD_I_III_TRIALS } = require('./trials/iliad-i-iii-trials') as typeof import('./trials/iliad-i-iii-trials')
+      return ILIAD_I_III_TRIALS[chapterIndex]
+    }
+    if (bankKey === 'odyssey') {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const { ODYSSEY_I_III_TRIALS } = require('./trials/odyssey-i-iii-trials') as typeof import('./trials/odyssey-i-iii-trials')
+      return ODYSSEY_I_III_TRIALS[chapterIndex]
+    }
+    if (bankKey === 'divine comedy') {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const { INFERNO_I_III_TRIALS } = require('./trials/inferno-i-iii-trials') as typeof import('./trials/inferno-i-iii-trials')
+      return INFERNO_I_III_TRIALS[chapterIndex]
+    }
+    if (bankKey === 'hamlet') {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const { HAMLET_I_III_TRIALS } = require('./trials/hamlet-i-iii-trials') as typeof import('./trials/hamlet-i-iii-trials')
+      return HAMLET_I_III_TRIALS[chapterIndex]
+    }
+    if (bankKey === 'meditations') {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const { MEDITATIONS_I_III_TRIALS } = require('./trials/meditations-i-iii-trials') as typeof import('./trials/meditations-i-iii-trials')
+      return MEDITATIONS_I_III_TRIALS[chapterIndex]
+    }
+    if (bankKey === 'republic') {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const { REPUBLIC_TRIALS } = require('./trials/republic-trials') as typeof import('./trials/republic-trials')
+      return REPUBLIC_TRIALS[chapterIndex]
+    }
+    return undefined
+  })()
+
+  if (curatedExtras && curatedExtras.length > 0) {
+    const byDifficulty = curatedExtras.filter(q => q.difficulty === difficulty)
+    return byDifficulty.length > 0
+      ? byDifficulty
+      : curatedExtras.filter(q => q.difficulty === 'Apprentice')
   }
 
   if (bankKey !== null) {
