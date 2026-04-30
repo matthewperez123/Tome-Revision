@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion"
+import { motion, useReducedMotion } from "framer-motion"
 import { X, Bookmark, BookmarkCheck } from "lucide-react"
 import { toast } from "sonner"
 import { getAnnotation } from "@/lib/virgil/annotations"
@@ -20,12 +20,9 @@ import { easeArray } from "@/lib/design-tokens"
 interface VirgilDrawerProps {
   annotationId: string | null
   onClose: () => void
-  /** When true, the "See also" cross-reference section is hidden. Driven
-   *  by the reader's "Show echoes" toolbar toggle. */
-  hideEchoes?: boolean
 }
 
-export function VirgilDrawer({ annotationId, onClose, hideEchoes = false }: VirgilDrawerProps) {
+export function VirgilDrawer({ annotationId, onClose }: VirgilDrawerProps) {
   const [annotation, setAnnotation] = useState<Annotation | null>(null)
   const [bookmarked, setBookmarked] = useState(false)
   // Per-cross-reference bookmark state — keyed by cross-reference index.
@@ -86,34 +83,44 @@ export function VirgilDrawer({ annotationId, onClose, hideEchoes = false }: Virg
     : { hidden: { y: "100%", opacity: 0 }, visible: { y: 0, opacity: 1 }, exit: { y: "100%", opacity: 0 } }
 
   return (
-    <AnimatePresence>
+    <>
+      {/* Backdrop — transparent, click-to-close only. Plain
+          conditional render (no AnimatePresence): the backdrop has
+          no visual transition and previous attempts with
+          AnimatePresence left an invisible full-screen layer behind
+          after exit that blocked every click on the page. */}
       {annotation && (
-        <>
-          {/* Backdrop — transparent, click-to-close only.
-              Previously this dimmed the page with bg-black/20 at z-40,
-              which visually occluded inline annotation markers (z-10) and
-              made them appear to "disappear" once the drawer opened. The
-              fix: keep an outside-click target so users can dismiss the
-              drawer by clicking off it, but draw nothing — the markers
-              stay fully visible underneath. */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-40 bg-transparent"
-            onClick={onClose}
-          />
+        <div
+          className="fixed inset-0 z-[70] bg-transparent"
+          onClick={onClose}
+          aria-hidden="true"
+        />
+      )}
 
-          {/* Drawer */}
+      {/* Drawer — also rendered conditionally rather than via
+          AnimatePresence. With our setup of multiple per-book overlay
+          components forwarding into a single shared toggle, any
+          intra-event re-render was confusing AnimatePresence enough
+          that the motion child never completed its entry animation
+          (stuck at the hidden variant) and never unmounted on exit.
+          Plain conditional rendering with the existing variants on
+          the motion.div still yields the slide-up entry on mount and
+          a clean unmount on close. z-[70] sits above the AppSidebar
+          (collapsed !z-50, expanded !z-[60]) so the panel is never
+          visually clipped by the side nav at any viewport width. */}
+      {annotation && (
           <motion.div
+            id="tome-echo-panel"
+            role="dialog"
+            aria-modal="false"
+            aria-label="Annotation"
             variants={variants}
             initial="hidden"
             animate="visible"
             exit="exit"
             transition={{ duration: 0.35, ease: easeArray.sheet }}
             className={cn(
-              "fixed bottom-0 left-0 right-0 z-40 flex flex-col",
+              "fixed bottom-0 left-0 right-0 z-[70] flex flex-col",
               "h-[55vh] sm:h-[42vh]",
               "bg-card border-t rounded-t-xl",
               "shadow-2xl shadow-black/30"
@@ -191,9 +198,12 @@ export function VirgilDrawer({ annotationId, onClose, hideEchoes = false }: Virg
                 </div>
               </div>
 
-              {/* Cross-references — suppressed when the reader has the
-                  "Show echoes" toggle off. */}
-              {!hideEchoes && annotation.crossReferences.length > 0 && (
+              {/* Cross-references — always rendered when the annotation
+                  has any. The master echoes toggle controls whether
+                  markers are clickable in the first place, so by the
+                  time this drawer is open the user has already opted in
+                  to seeing related passages. */}
+              {annotation.crossReferences.length > 0 && (
                 <div className="mt-6">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="h-px flex-1" style={{ backgroundColor: "rgba(212,160,76,0.2)" }} />
@@ -234,9 +244,8 @@ export function VirgilDrawer({ annotationId, onClose, hideEchoes = false }: Virg
             {/* Chat footer (disabled) */}
             <VirgilChatFooter />
           </motion.div>
-        </>
       )}
-    </AnimatePresence>
+    </>
   )
 }
 

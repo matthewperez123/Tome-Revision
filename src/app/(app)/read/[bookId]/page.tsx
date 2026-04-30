@@ -15,10 +15,10 @@
  */
 "use client"
 
-import { useEffect, useState, useRef, useCallback } from "react"
+import { useEffect, useState, useRef, useCallback, useMemo } from "react"
 import { useParams, useRouter } from "next/navigation"
 import { AnimatePresence, motion } from "framer-motion"
-import { MessageSquare, BookCheck, Bookmark, BookMarked, Palette, Quote } from "lucide-react"
+import { MessageSquare, BookCheck, Bookmark, Palette, Quote } from "lucide-react"
 import { toast } from "sonner"
 import { supabase } from "@/lib/supabase"
 import type { Book } from "@/lib/supabase"
@@ -89,7 +89,7 @@ import { CanticleHero } from "@/components/reader/canticle-hero"
  *  scholarly annotations, Trials) layered over the standard HTML reader.
  *  The existing chapter rendering is unchanged; enhancements attach via DOM
  *  scanning once the chapter mounts. */
-const STRUCTURED_ENHANCEMENT_WORKS = new Set(["hamlet", "othello", "macbeth", "romeo-and-juliet", "king-lear", "richard-iii"])
+const STRUCTURED_ENHANCEMENT_WORKS = new Set(["hamlet", "othello", "macbeth", "romeo-and-juliet", "king-lear", "richard-iii", "julius-caesar", "henry-v"])
 
 // ── Types ──
 
@@ -199,45 +199,109 @@ export default function ReaderPage() {
   const [selectedDifficulty, setSelectedDifficulty] = useState<QuizDifficulty | null>(null)
   const [chapterEndReached, setChapterEndReached] = useState(false)
 
-  // ── Virgil drawer (annotations) ──
-  // Marginalia visibility is split into two independent toggles:
-  // `virgilEnabled` controls inline annotation markers in the chapter,
-  // `showEchoes` controls cross-reference cards inside the drawer.
-  // Both persist to localStorage so the reader keeps the user's setting
-  // across sessions.
-  const [virgilEnabled, setVirgilEnabled] = useState(true)
-  const [showEchoes, setShowEchoes] = useState(true)
+  // ── Echoes (cross-text annotations) ──
+  // A single master toggle, default OFF, governs whether echo markers
+  // are visible in the chapter. When OFF: every inline ✦ marker is
+  // hidden (via the body[data-annotations-hidden] selector in tome.css)
+  // and any open echo panel is closed. When ON: markers fade in and
+  // become clickable. The user's choice is persisted to localStorage
+  // so the calm default doesn't override an explicit opt-in across
+  // sessions. New key (echoes_visible) is intentionally separate from
+  // the legacy show_annotations / show_echoes keys so the spec's
+  // default-OFF semantic isn't poisoned by old default-ON values.
+  const [echoesVisible, setEchoesVisible] = useState(false)
   const [activeAnnotationId, setActiveAnnotationId] = useState<string | null>(null)
 
-  // Hydrate marginalia preferences from localStorage on mount.
+  // Hydrate echoesVisible from localStorage on mount.
   useEffect(() => {
     try {
-      const a = localStorage.getItem("tome:reader:show_annotations")
-      if (a !== null) setVirgilEnabled(a === "true")
-      const e = localStorage.getItem("tome:reader:show_echoes")
-      if (e !== null) setShowEchoes(e === "true")
+      const v = localStorage.getItem("tome:reader:echoes_visible")
+      if (v !== null) setEchoesVisible(v === "true")
     } catch { /* localStorage may be unavailable in some contexts */ }
   }, [])
 
-  // Persist + apply the annotations-hidden attribute on <body> so the
-  // global selector in tome.css can hide every inline marker class at
-  // once, regardless of which book's overlay produced it.
+  // Persist + apply the annotations-hidden attribute on <body>. The
+  // attribute drives a global CSS selector in tome.css that hides every
+  // per-book marker class at once, so we don't need each overlay to
+  // know about visibility itself. When echoes are toggled OFF while a
+  // panel is open, close the panel too — no orphan drawers.
   useEffect(() => {
-    try { localStorage.setItem("tome:reader:show_annotations", String(virgilEnabled)) } catch {}
+    try { localStorage.setItem("tome:reader:echoes_visible", String(echoesVisible)) } catch {}
     if (typeof document !== "undefined") {
-      if (virgilEnabled) document.body.removeAttribute("data-annotations-hidden")
+      if (echoesVisible) document.body.removeAttribute("data-annotations-hidden")
       else document.body.setAttribute("data-annotations-hidden", "true")
     }
+    if (!echoesVisible) setActiveAnnotationId(null)
     return () => {
       // Clean up when leaving the reader so the attribute doesn't leak
       // into other pages that don't render markers.
       if (typeof document !== "undefined") document.body.removeAttribute("data-annotations-hidden")
     }
-  }, [virgilEnabled])
+  }, [echoesVisible])
 
-  useEffect(() => {
-    try { localStorage.setItem("tome:reader:show_echoes", String(showEchoes)) } catch {}
-  }, [showEchoes])
+  // Toggle wrapper for marker clicks. The 13+ per-book overlays each
+  // forward marker clicks here as `onOpenAnnotation(id)`. Two things
+  // were broken before:
+  //   1. Direct `setActiveAnnotationId(id)` was a no-op on re-click,
+  //      because the new id matched the current state.
+  //   2. The retry-and-attach pattern in those overlays plus
+  //      StrictMode in dev means the same click can fan out to several
+  //      listeners. A naive `prev => prev === id ? null : id` updater
+  //      composed with multiple queued calls flips the panel an even
+  //      number of times and ends up where it started.
+  // Reading the live state from a ref decouples the toggle decision
+  // from React's batched-updater chain: every call within one event
+  // reads the same committed state and dispatches the same intent, so
+  // duplicate listener invocations collapse to one effective toggle.
+  const activeAnnotationIdRef = useRef<string | null>(null)
+  useEffect(() => { activeAnnotationIdRef.current = activeAnnotationId }, [activeAnnotationId])
+  // The same physical click can fan out to several setState calls in
+  // dev (StrictMode + the per-book overlay's retry-attach pattern can
+  // leave more than one delegated listener on the chapter root). With
+  // multiple calls in one event, the toggle ends up flipping an even
+  // number of times and lands back where it started. A short guard
+  // collapses those to one effective call per real click without
+  // rejecting legitimate rapid clicks across different markers.
+  const lastClickRef = useRef<{ id: string; time: number }>({ id: "", time: 0 })
+  const handleOpenAnnotation = useCallback(
+    (id: string) => {
+      const now = (typeof performance !== "undefined" ? performance.now() : Date.now())
+      if (lastClickRef.current.id === id && now - lastClickRef.current.time < 100) return
+      lastClickRef.current = { id, time: now }
+      setActiveAnnotationId(activeAnnotationIdRef.current === id ? null : id)
+    },
+    []
+  )
+
+  // ── Chapter body memo ──
+  // Every per-book overlay (commedia-annotations, aeneid-annotations,
+  // etc.) decorates the rendered chapter HTML by inserting marker
+  // buttons and gloss spans into the DOM after mount. Those injected
+  // nodes don't exist in the chapterHTML state string, so any
+  // unrelated parent re-render (opening a panel, toggling a setting,
+  // even loading a bookmark) caused React to re-reconcile this
+  // dangerouslySetInnerHTML and silently wipe the injected
+  // enhancements — which the user perceived as "the marker lost its
+  // click handler." Memoizing the body element keeps the same React
+  // element instance across unrelated re-renders, so the reconciler
+  // short-circuits and the injected DOM survives.
+  const chapterBodyElement = useMemo(() => {
+    const contentTypeClass = book && "genres" in book
+      ? getContentTypeClass((book as TomeBook).genres)
+      : "content-prose"
+    return (
+      <div
+        className={cn("mt-8 font-serif prose-reader", contentTypeClass)}
+        style={{
+          fontSize:   `${fontSize}px`,
+          lineHeight: 1.8,
+          color:      "var(--foreground)",
+        }}
+        data-reader-text
+        dangerouslySetInnerHTML={{ __html: stripLeadingHeading(chapterHTML) }}
+      />
+    )
+  }, [chapterHTML, fontSize, book])
 
   // ── Refs ──
   const scrollContentRef       = useRef<HTMLDivElement>(null)
@@ -707,6 +771,11 @@ export default function ReaderPage() {
         e.preventDefault()
         if (currentChapter > 0) handleChapterSelect(currentChapter - 1)
       } else if (e.key === "Escape") {
+        // Defer to the echo drawer when one is open — Escape closes the
+        // drawer rather than navigating away. The drawer registers its
+        // own keydown listener that runs alongside this one, so we just
+        // bail out and let it handle the close.
+        if (activeAnnotationIdRef.current) return
         router.back()
       }
     }
@@ -887,29 +956,22 @@ export default function ReaderPage() {
               />
             </div>
             <div className="flex items-center gap-1">
-              {/* Annotation markers toggle — hides/shows the inline ✦
-                  markers throughout the chapter. */}
+              {/* Echoes master toggle — single source of truth for whether
+                  the chapter shows its inline ✦ markers. Default is OFF
+                  so a fresh chapter reads clean; flipping ON fades in
+                  every echo marker and unlocks click-to-open. Active
+                  state uses laurel gold (#C9A84C), reserved for earned
+                  / active moments per the design rubric. */}
               <button
-                onClick={() => setVirgilEnabled(!virgilEnabled)}
+                role="switch"
+                aria-checked={echoesVisible}
+                onClick={() => setEchoesVisible(prev => !prev)}
                 className={cn(
                   "flex size-7 items-center justify-center rounded-md transition-colors",
-                  virgilEnabled ? "text-[#D4A04C]" : "text-muted-foreground hover:opacity-70"
+                  echoesVisible ? "text-[#D4A04C]" : "text-muted-foreground hover:opacity-70"
                 )}
-                aria-label={virgilEnabled ? "Hide annotations" : "Show annotations"}
-                title={virgilEnabled ? "Hide annotation markers" : "Show annotation markers"}
-              >
-                <BookMarked className="size-3.5" />
-              </button>
-              {/* Echoes toggle — hides/shows the "See also" cross-reference
-                  cards inside the Virgil drawer. */}
-              <button
-                onClick={() => setShowEchoes(!showEchoes)}
-                className={cn(
-                  "flex size-7 items-center justify-center rounded-md transition-colors",
-                  showEchoes ? "text-[#D4A04C]" : "text-muted-foreground hover:opacity-70"
-                )}
-                aria-label={showEchoes ? "Hide echoes" : "Show echoes"}
-                title={showEchoes ? "Hide echoes (cross-references)" : "Show echoes (cross-references)"}
+                aria-label={echoesVisible ? "Hide echo markers" : "Show echo markers"}
+                title={echoesVisible ? "Hide echo markers" : "Show echo markers"}
               >
                 <Quote className="size-3.5" />
               </button>
@@ -1010,7 +1072,7 @@ export default function ReaderPage() {
                     <CommediaAnnotations
                       bookId={bookId}
                       currentChapter={currentChapter}
-                      onOpenAnnotation={setActiveAnnotationId}
+                      onOpenAnnotation={handleOpenAnnotation}
                     />
 
                     {/* Aeneid — ✦ annotation markers and V. monogram
@@ -1019,7 +1081,7 @@ export default function ReaderPage() {
                     <AeneidAnnotations
                       bookId={bookId}
                       currentChapter={currentChapter}
-                      onOpenAnnotation={setActiveAnnotationId}
+                      onOpenAnnotation={handleOpenAnnotation}
                     />
 
                     {/* Odyssey — ✦ annotation markers + dotted-underline
@@ -1028,7 +1090,7 @@ export default function ReaderPage() {
                     <OdysseyAnnotations
                       bookId={bookId}
                       currentChapter={currentChapter}
-                      onOpenAnnotation={setActiveAnnotationId}
+                      onOpenAnnotation={handleOpenAnnotation}
                     />
 
                     {/* Iliad — ✦ annotation markers + dotted-underline
@@ -1038,7 +1100,7 @@ export default function ReaderPage() {
                     <IliadAnnotations
                       bookId={bookId}
                       currentChapter={currentChapter}
-                      onOpenAnnotation={setActiveAnnotationId}
+                      onOpenAnnotation={handleOpenAnnotation}
                     />
 
                     {/* Iliad — translation note and faction palette legend.
@@ -1079,7 +1141,7 @@ export default function ReaderPage() {
                     <ParadiseLostAnnotations
                       bookId={bookId}
                       currentChapter={currentChapter}
-                      onOpenAnnotation={setActiveAnnotationId}
+                      onOpenAnnotation={handleOpenAnnotation}
                     />
 
                     {/* Don Juan — Byron's ottava rima counter-epic.
@@ -1118,7 +1180,7 @@ export default function ReaderPage() {
                     <BeowulfAnnotations
                       bookId={bookId}
                       currentChapter={currentChapter}
-                      onOpenAnnotation={setActiveAnnotationId}
+                      onOpenAnnotation={handleOpenAnnotation}
                     />
 
                     <BeowulfEnhancements
@@ -1163,7 +1225,7 @@ export default function ReaderPage() {
                     <IdyllsOfTheKingAnnotations
                       bookId={bookId}
                       currentChapter={currentChapter}
-                      onOpenAnnotation={setActiveAnnotationId}
+                      onOpenAnnotation={handleOpenAnnotation}
                     />
 
                     {/* Le Morte d'Arthur — Caxton's argumentum header,
@@ -1187,7 +1249,7 @@ export default function ReaderPage() {
                     <LeMorteDarthurAnnotations
                       bookId={bookId}
                       currentChapter={currentChapter}
-                      onOpenAnnotation={setActiveAnnotationId}
+                      onOpenAnnotation={handleOpenAnnotation}
                     />
 
                     {/* Canterbury Tales — scholarly header chrome for
@@ -1216,7 +1278,7 @@ export default function ReaderPage() {
                     <CanterburyTalesAnnotations
                       bookId={bookId}
                       currentChapter={currentChapter}
-                      onOpenAnnotation={setActiveAnnotationId}
+                      onOpenAnnotation={handleOpenAnnotation}
                     />
 
                     {/* The Decameron — chapter-kind-aware header (Proem,
@@ -1242,7 +1304,7 @@ export default function ReaderPage() {
                     <DecameronAnnotations
                       bookId={bookId}
                       currentChapter={currentChapter}
-                      onOpenAnnotation={setActiveAnnotationId}
+                      onOpenAnnotation={handleOpenAnnotation}
                     />
 
                     {/* Orlando Furioso — ✦ markers + gloss decorations.
@@ -1253,7 +1315,7 @@ export default function ReaderPage() {
                     <OrlandoFuriosoAnnotations
                       bookId={bookId}
                       currentChapter={currentChapter}
-                      onOpenAnnotation={setActiveAnnotationId}
+                      onOpenAnnotation={handleOpenAnnotation}
                     />
 
                     {/* Don Juan — ✦ annotation markers + gloss
@@ -1265,7 +1327,7 @@ export default function ReaderPage() {
                     <DonJuanAnnotations
                       bookId={bookId}
                       currentChapter={currentChapter}
-                      onOpenAnnotation={setActiveAnnotationId}
+                      onOpenAnnotation={handleOpenAnnotation}
                     />
 
                     {/* The Faerie Queene — canto header chrome with the
@@ -1291,23 +1353,15 @@ export default function ReaderPage() {
                     <FaerieQueeneAnnotations
                       bookId={bookId}
                       currentChapter={currentChapter}
-                      onOpenAnnotation={setActiveAnnotationId}
+                      onOpenAnnotation={handleOpenAnnotation}
                     />
                     <div className="mt-2 h-px w-16" style={{ backgroundColor: t.border }} />
 
-                    {/* Body Text — strip leading heading that duplicates the chapter title */}
-                    <div
-                      className={cn("mt-8 font-serif prose-reader", book && "genres" in book ? getContentTypeClass((book as TomeBook).genres) : "content-prose")}
-                      style={{
-                        fontSize:   `${fontSize}px`,
-                        lineHeight: 1.8,
-                        color:      "var(--foreground)",
-                      }}
-                      data-reader-text
-                      dangerouslySetInnerHTML={{
-                        __html: stripLeadingHeading(chapterHTML),
-                      }}
-                    />
+                    {/* Body Text — strip leading heading that duplicates the
+                        chapter title. Memoized via `chapterBodyElement` so
+                        unrelated parent re-renders don't reset innerHTML and
+                        wipe injected markers / glosses. */}
+                    {chapterBodyElement}
 
                     {/* Structured-content enhancements: glosses, scholarly
                         annotations, and Trials for works ingested via the
@@ -1454,11 +1508,13 @@ export default function ReaderPage() {
         />
       </div>
 
-      {/* Virgil Drawer — unified annotations + chat stub */}
+      {/* Virgil Drawer — unified annotations + chat stub. The master
+          echoes toggle gates whether markers are clickable at all, so
+          if this drawer is ever open the cross-references section is
+          relevant by definition; no hideEchoes prop needed. */}
       <VirgilDrawer
         annotationId={activeAnnotationId}
         onClose={() => setActiveAnnotationId(null)}
-        hideEchoes={!showEchoes}
       />
     </WordTooltipProvider>
   )
