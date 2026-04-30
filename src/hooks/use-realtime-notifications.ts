@@ -3,6 +3,10 @@
 import { useEffect, useState, useCallback } from "react"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
+import {
+  DEMO_READER_NOTIFICATIONS,
+  type DemoNotification,
+} from "@/lib/notifications/seed"
 
 export interface DbNotification {
   id: string
@@ -12,6 +16,11 @@ export interface DbNotification {
   action_url: string | null
   read: boolean
   created_at: string
+  // Optional fields that come from the demo seed; ignored when rows are
+  // returned from Supabase directly.
+  category?: DemoNotification["category"]
+  bookmarkBookId?: string
+  bookmarkTitle?: string
 }
 
 // Demo notifications for teacher preview
@@ -108,36 +117,9 @@ const DEMO_TEACHER_NOTIFICATIONS: DbNotification[] = [
   },
 ]
 
-// Demo notifications for student/reader preview
-const DEMO_READER_NOTIFICATIONS: DbNotification[] = [
-  {
-    id: "rn-1",
-    type: "chapter_completed",
-    title: "Chapter completed: The Odyssey, Book 5",
-    body: "+5 XP earned",
-    action_url: "/read/the-odyssey",
-    read: false,
-    created_at: new Date(Date.now() - 30 * 60000).toISOString(),
-  },
-  {
-    id: "rn-2",
-    type: "flame_milestone",
-    title: "5-day reading streak!",
-    body: "Keep it going — read today to maintain your streak",
-    action_url: "/dashboard",
-    read: false,
-    created_at: new Date(Date.now() - 3 * 3600000).toISOString(),
-  },
-  {
-    id: "rn-3",
-    type: "seal_earned",
-    title: "Achievement unlocked: Odyssey Explorer",
-    body: "Read 5 chapters of The Odyssey",
-    action_url: "/achievements",
-    read: true,
-    created_at: new Date(Date.now() - 24 * 3600000).toISOString(),
-  },
-]
+// Reader demo notifications now live in `lib/notifications/seed.ts` and are
+// imported above. Keeping the teacher set inline because it's tightly
+// coupled to mock student names used elsewhere in the teacher dashboard.
 
 export function useRealtimeNotifications() {
   const { user, isDemoMode, role } = useAuth()

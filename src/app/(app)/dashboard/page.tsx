@@ -43,6 +43,7 @@ import { VirgilReflection } from "@/components/tome/virgil-reflection"
 import { getTipOfTheDay } from "@/lib/virgil-tips"
 import { cn } from "@/lib/utils"
 import { StoaBanner } from "@/components/dashboard/StoaBanner"
+import { DailyCard } from "@/components/tome/daily-card"
 import { TeacherDashboard } from "@/components/classroom/teacher-dashboard"
 import { UpcomingAssignments } from "@/components/classroom/upcoming-assignments"
 import { ClassLeaderboardMini } from "@/components/classroom/class-leaderboard-mini"
@@ -334,7 +335,7 @@ function StudentDashboard() {
                   <AlertTriangle className="size-4 shrink-0 text-amber-500" />
                   <span>
                     Your <strong>{streak}-day</strong> Flame expires tonight!{" "}
-                    <Link href="/library" className="underline underline-offset-2 hover:no-underline">
+                    <Link href="/library/browse" className="underline underline-offset-2 hover:no-underline">
                       Read now →
                     </Link>
                   </span>
@@ -351,8 +352,13 @@ function StudentDashboard() {
           </BlurFade>
         )}
 
-        {/* ── 2. Daily Challenge ─────────────────── */}
+        {/* ── 2. Daily Card (Quote · Passage · Character · Book) ── */}
         <BlurFade delay={0.08} inView>
+          <DailyCard />
+        </BlurFade>
+
+        {/* ── 2b. Daily Challenge (original MCQ card, restored) ── */}
+        <BlurFade delay={0.10} inView>
           <div
             className="relative rounded-2xl overflow-hidden border"
             style={{
@@ -393,7 +399,7 @@ function StudentDashboard() {
                     <Check className="size-5 text-emerald-500" />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-emerald-700">+{challenge.xp} Wisdom earned!</p>
+                    <p className="text-sm font-semibold text-emerald-700">+{challenge.xp} Wisdom earned</p>
                     <p className="text-xs text-muted-foreground">Come back tomorrow for a new challenge.</p>
                   </div>
                 </div>
@@ -596,12 +602,12 @@ function StudentDashboard() {
               color="#22C55E"
               title="Continue Reading"
               action="Library"
-              actionHref="/library"
+              actionHref="/library/browse"
             />
 
             {continueBooks.length === 0 ? (
               <Link
-                href="/library"
+                href="/library/browse"
                 className="flex items-center justify-center gap-2 rounded-xl border-2 border-dashed border-border py-10 text-sm text-muted-foreground hover:border-[var(--tome-accent)] hover:text-[var(--tome-accent)] transition-colors"
               >
                 Start your first book →
@@ -698,7 +704,7 @@ function StudentDashboard() {
               color="#E8734A"
               title="Trending This Week"
               action="Library"
-              actionHref="/library"
+              actionHref="/library/browse"
             />
             <div className="flex gap-3 overflow-x-auto pb-2 -mx-1 px-1 snap-x snap-mandatory">
               {(allBooks.filter(b => ["the-iliad", "the-divine-comedy", "the-republic", "hamlet", "moby-dick", "pride-and-prejudice"].includes(b.id)).slice(0, 6)).map((book) => {
@@ -742,7 +748,7 @@ function StudentDashboard() {
               color="#A78BFA"
               title="Recommended for You"
               action="Browse all"
-              actionHref="/library"
+              actionHref="/library/browse"
             />
 
             <div className="flex gap-3 overflow-x-auto pb-2 -mx-1 px-1 snap-x snap-mandatory">
@@ -866,3 +872,4 @@ function StudentDashboard() {
     </div>
   )
 }
+

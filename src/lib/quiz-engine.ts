@@ -22,6 +22,8 @@ export type QuestionType =
   | "cross_reference"
   | "close_reading"
   | "reflection"
+  | "identification"
+  | "tf_with_reason"
 
 export type Question = {
   id: string
@@ -54,6 +56,12 @@ export type Question = {
   reflectionWordMax?: number
   reflectionRubric?: string
   reflectionExpectedThemes?: string[]
+  /** For identification — what the prompt is asking the user to name. */
+  identificationSubject?: "speaker" | "book" | "character"
+  /** For tf_with_reason — list of follow-up reasons; user picks one. */
+  tfReasons?: string[]
+  /** For tf_with_reason — index into `tfReasons` of the correct reason. */
+  tfCorrectReason?: number
 }
 
 export type Quiz = {

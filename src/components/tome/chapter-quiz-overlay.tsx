@@ -111,6 +111,9 @@ function mapToEngineQuestion(
     reflectionWordMax: q.reflectionWordMax,
     reflectionRubric: q.reflectionRubric,
     reflectionExpectedThemes: q.reflectionExpectedThemes,
+    identificationSubject: q.identificationSubject,
+    tfReasons: q.tfReasons,
+    tfCorrectReason: q.tfCorrectReason,
   }
 
   switch (q.type) {
@@ -143,6 +146,25 @@ function mapToEngineQuestion(
         // Engine accepts any response meeting word_min; no canonical answer.
         correct_answer: "",
       }
+    case "identification": {
+      // Like multiple_choice — options + correctIndex — but the renderer
+      // shows a small subject prefix ("Who said this?" / "From which
+      // book?" / "Which character?").
+      const opts = q.options ?? []
+      const correct = opts[q.correctIndex ?? 0] ?? opts[0] ?? ""
+      return { ...base, options: opts, correct_answer: correct }
+    }
+    case "tf_with_reason": {
+      // Composite answer "<bool>|<reasonIndex>". Engine compares as a
+      // single string; renderer composes the value before submit.
+      const correctBool = q.correctBool ? "true" : "false"
+      const correctReason = q.tfCorrectReason ?? 0
+      return {
+        ...base,
+        options: ["true", "false"],
+        correct_answer: `${correctBool}|${correctReason}`,
+      }
+    }
     default: {
       // multiple_choice, passage_id, theme_analysis, vocabulary_in_context,
       // cross_reference, close_reading — all option-based
@@ -405,7 +427,8 @@ function QuizRunner({
         q.type === "theme_analysis" ||
         q.type === "vocabulary_in_context" ||
         q.type === "cross_reference" ||
-        q.type === "close_reading"
+        q.type === "close_reading" ||
+        q.type === "identification"
       ) {
         const n = parseInt(e.key, 10)
         if (!Number.isNaN(n) && n >= 1 && n <= opts.length) {

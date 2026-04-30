@@ -13,6 +13,8 @@ import {
   BookMarked,
   ScanLine,
   Feather,
+  Search,
+  Scale,
 } from "lucide-react"
 import type { QuestionType } from "@/lib/quiz-engine"
 import { MultipleChoice } from "./MultipleChoice"
@@ -26,6 +28,8 @@ import { VocabularyInContext } from "./VocabularyInContext"
 import { CrossReference } from "./CrossReference"
 import { CloseReading } from "./CloseReading"
 import { Reflection } from "./Reflection"
+import { Identification } from "./Identification"
+import { TrueFalseReason } from "./TrueFalseReason"
 import type { QuestionRendererProps } from "./shared"
 
 export const QUESTION_RENDERERS: Record<
@@ -43,6 +47,8 @@ export const QUESTION_RENDERERS: Record<
   cross_reference: CrossReference,
   close_reading: CloseReading,
   reflection: Reflection,
+  identification: Identification,
+  tf_with_reason: TrueFalseReason,
 }
 
 export const QUESTION_TYPE_ICONS: Record<
@@ -60,6 +66,8 @@ export const QUESTION_TYPE_ICONS: Record<
   cross_reference: Link2,
   close_reading: ScanLine,
   reflection: Feather,
+  identification: Search,
+  tf_with_reason: Scale,
 }
 
 export const QUESTION_TYPE_LABELS: Record<QuestionType, string> = {
@@ -74,4 +82,6 @@ export const QUESTION_TYPE_LABELS: Record<QuestionType, string> = {
   cross_reference: "Cross-Reference",
   close_reading: "Close Reading",
   reflection: "Reflection",
+  identification: "Identification",
+  tf_with_reason: "True/False with Reason",
 }
