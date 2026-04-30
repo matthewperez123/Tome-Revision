@@ -445,3 +445,92 @@ Edited files:
 - `src/components/trials/questions/index.tsx` (renderer registry)
 - `src/app/(app)/dashboard/page.tsx` (DailyCard slot + footer subcomp,
   trim unused import)
+
+## Tome Beta Demo — Audit, commit, deploy, domain (2026-04-30)
+
+Closed out the Tome beta demo polish session: audited the five prior change
+sets, fixed the CS2 LandingNav regression (PROGRESS.md described a Use Beta
+swap that had never been applied), fixed a sidebar duplicate icon
+(Parents/UserCircle vs Profile/CircleUser → Parents now uses Users), shipped
+four logical commits, deployed to Vercel as a fresh project, and connected
+usetome.app.
+
+### Commits on `tome-beta-demo`
+
+1. `50298b53 feat(reader): echo system toggle, sidenav clipping, master
+   visibility toggle` — CS1
+2. `62a291f8 feat(marketing): minimalist sidenav, beta pill, Use Beta button,
+   public library page` — CS2 (includes the late LandingNav fix and the
+   Parents-icon de-duplication)
+3. `b341c923 feat(dashboard): expanded notifications, route loading fixes,
+   Daily card, Trial variety` — CS3
+4. `5aee67bc feat(trials,shakespeare): curated I-III trial banks +
+   Shakespeare pipeline unification (partial)` — CS4 + CS5 partial; PROGRESS
+   captures the deferred work for a follow-up session
+
+Pushed to `github/tome-beta-demo` cleanly (fast-forward).
+
+### Deferred to a follow-up session
+
+- **CS4 — Take Quiz button gating.** Button currently shows on every chapter;
+  spec says gate on `trialQuestions.length > 0`. One-line fix.
+- **CS4 — per-book seeds for the remaining 5 featured books.** Don Quixote,
+  Pride & Prejudice, Frankenstein, Crime & Punishment, Great Gatsby.
+- **CS5 — per-play curated trials for 7 of 8 Shakespeare plays.** Macbeth,
+  Othello, King Lear, Richard III, Romeo & Juliet, Julius Caesar, Henry V.
+- **CS5 — recommended-section surfacing for finished Shakespeare plays.**
+  `getFeaturedBooks()` is a flat `b.featured` filter; only Hamlet currently
+  has `featured: true` of the 8 ingested plays. Need either a Shakespeare-
+  first sort or featured-flag flips, plus your editorial review.
+- **CS5 — drift audit + spot-check report.** Not run.
+
+### Vercel deployment
+
+- **Project:** `tome-beta-demo` (`prj_bnVvoWnQFbwIplwYrdAPMIGPwSgY`),
+  team `team_VoPXql6glfQBBOJwInA7o5jK`. Created fresh via `vercel link`
+  (CLI auto-detected Next.js, auto-connected the GitHub repo
+  `matthewperez123/Tome`). `tome-recovery` and `priceless-borg` were not
+  touched.
+- **Production deployment:** `dpl_75VPA2sRqkcUysTSvss8WodLsp3V`, status
+  READY. Available at `https://tome-beta-demo.vercel.app` and the
+  per-deploy URL `https://tome-beta-demo-hfyjhnv45-matthew-perezs-projects.vercel.app`.
+- **Env vars:** `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+  copied from tome-recovery's production environment via `vercel env pull`.
+  No other env vars were promoted (auto-set Vercel system vars excluded).
+- **Verification (curl):** `/`, `/library`, `/dashboard` all return 200 on
+  the Vercel-aliased URL. `/library` HTML contains the Caspar David
+  Friedrich "Wanderer" hero painting and "Library" title from
+  `PublicLibraryPage`. Top nav contains a single `Use Beta` link to
+  `/dashboard`.
+
+### Primary domain
+
+- **`usetome.app` connected.** Already registered through Vercel itself
+  (registrar: Vercel, NS: `ns1.vercel-dns.com` / `ns2.vercel-dns.com`),
+  so DNS is internal — no external registrar config required. SSL was
+  auto-provisioned. `https://usetome.app` returns 200 and serves the
+  tome-beta-demo HTML (confirmed: "Use Beta" present, no "Log in" / "Sign
+  Up").
+- **`www.usetome.app` also added.** Returns 200 with valid SSL. Per Vercel
+  defaults both apex and www serve the production deployment. If you want
+  www → apex (or apex → www) as a hard redirect, that's a Vercel
+  dashboard config (Project → Domains → set primary + redirect target);
+  not exposed via the CLI/MCP I had access to.
+
+### Vercel dashboard ordering
+
+- The Vercel public API does not expose `favorite` / `starred` /
+  ordering attributes on projects. The MCP server doesn't expose them
+  either. **Manual UI step:** in the Vercel dashboard, click the star
+  icon on the `tome-beta-demo` project tile to favorite it; this plus
+  the recent deployment timestamp will surface it above
+  `tome-recovery` in the default sort.
+
+### Local Vercel link
+
+- The repo's `.vercel/project.json` is restored to its prior
+  `tome-recovery` link so future `vercel deploy` calls in this
+  directory don't accidentally hit `tome-beta-demo`. The
+  `tome-beta-demo` link is preserved as `.vercel/project.json.tome-beta-demo`
+  in case you want to re-link.
+
