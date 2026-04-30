@@ -165,7 +165,7 @@ export default function BookDetailPage() {
     <div className="flex flex-col items-center justify-center min-h-[60vh] gap-4 text-center p-8">
       <BookOpen className="size-12 text-muted-foreground/30" />
       <p className="text-sm font-medium">Book not found</p>
-      <Link href="/library" className="text-xs text-[var(--tome-accent)] hover:underline">
+      <Link href="/library/browse" className="text-xs text-[var(--tome-accent)] hover:underline">
         ← Back to Library
       </Link>
     </div>
@@ -189,10 +189,10 @@ export default function BookDetailPage() {
           aria-label="Breadcrumb"
           className="flex items-center gap-1 px-4 pt-4 pb-2 text-[11px] text-muted-foreground"
         >
-          <Link href="/library" className="hover:text-foreground transition-colors">Library</Link>
+          <Link href="/library/browse" className="hover:text-foreground transition-colors">Library</Link>
           <ChevronRight className="size-3 shrink-0" />
           <Link
-            href={`/library?tradition=${encodeURIComponent(book.tradition)}`}
+            href={`/library/browse?tradition=${encodeURIComponent(book.tradition)}`}
             className="hover:text-foreground transition-colors truncate max-w-[120px]"
           >
             {book.tradition}
@@ -568,7 +568,7 @@ export default function BookDetailPage() {
                     More {book.tradition} Literature
                   </h2>
                   <Link
-                    href={`/library?tradition=${encodeURIComponent(book.tradition)}`}
+                    href={`/library/browse?tradition=${encodeURIComponent(book.tradition)}`}
                     className="text-xs text-muted-foreground hover:text-foreground flex items-center gap-0.5 transition-colors"
                   >
                     See all <ChevronRight className="size-3" />

@@ -34,7 +34,7 @@ export default async function VerifiedPage() {
         </p>
 
         <div className="mt-8 flex flex-col gap-3">
-          <Button render={<Link href="/library" />} className="w-full">
+          <Button render={<Link href="/library/browse" />} className="w-full">
             Open my library
           </Button>
           <Button

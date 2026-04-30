@@ -11,10 +11,18 @@ import { PageTransition } from "@/components/tome/page-transition"
 import { ErrorBoundary } from "@/components/tome/error-boundary"
 import { VirgilWrapper } from "@/components/tome/virgil/VirgilWrapper"
 import { MobileDock } from "@/components/tome/mobile-dock"
+import { Toaster } from "@/components/ui/sonner"
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
-  const isLanding = pathname === "/" || pathname === "/readers" || pathname === "/educators"
+  // Public marketing surfaces. The bare /library route is now a public
+  // preview of the catalog (with hero + static cards); the authenticated
+  // catalog lives at /library/browse and uses the full app chrome.
+  const isLanding =
+    pathname === "/" ||
+    pathname === "/readers" ||
+    pathname === "/educators" ||
+    pathname === "/library"
 
   // Landing page has its own navbar — hide app chrome
   if (isLanding) {
@@ -27,6 +35,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <main className="min-h-screen">
           <PageTransition>{children}</PageTransition>
         </main>
+        <Toaster />
       </VirgilWrapper>
       </TooltipProvider>
       </BookProgressProvider>
@@ -51,6 +60,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             </main>
           </div>
           <MobileDock />
+          <Toaster />
         </div>
       </SidebarProvider>
     </VirgilWrapper>

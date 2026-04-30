@@ -20,7 +20,7 @@ export function VirgilPageContext() {
       setPageContext({ page: "dashboard" })
       setSuggestions(["What should I read today?", "How am I doing?", "Recommend a book"])
       setPose("idle")
-    } else if (path === "/library") {
+    } else if (path === "/library/browse" || path === "/library") {
       setPageContext({ page: "library" })
       setSuggestions(["What should I read first?", "Recommend a Greek classic", "What's the easiest book?"])
       setPose("idle")

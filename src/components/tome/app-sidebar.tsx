@@ -18,9 +18,6 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar"
 import { ProfileSwitcher } from "@/components/tome/profile-switcher"
-import { AnimatedIconWrapper } from "@/components/sidebar/animations/AnimatedIconWrapper"
-import { studentIconRegistry } from "@/components/sidebar/animations/student/registry"
-import { teacherIconRegistry } from "@/components/sidebar/animations/teacher/registry"
 import { useFriendsData } from "@/hooks/use-friends-data"
 
 export function AppSidebar() {
@@ -88,7 +85,8 @@ function SidebarNav({ pathname }: { pathname: string }) {
   // Teacher-specific classroom sub-routes get their own active states
   // to avoid multiple items highlighting at once.
   const activeHref = (() => {
-    if (pathname.startsWith("/book/"))    return "/library"
+    if (pathname.startsWith("/book/"))    return "/library/browse"
+    if (pathname === "/library")          return "/library/browse"
     if (pathname.startsWith("/author/") && !pathname.startsWith("/authors")) return "/authors"
     if (pathname.startsWith("/profile"))  return "/profile"
     if (pathname.startsWith("/clubs/"))   return "/clubs"
@@ -112,7 +110,7 @@ function SidebarNav({ pathname }: { pathname: string }) {
 
   return (
     <SidebarMenu ref={listRef}>
-      {navItems.map((item, index) => {
+      {navItems.map((item) => {
         // Exact match for the home route
         // For other routes, match activeHref exactly to prevent
         // multiple items highlighting (e.g. /classroom and /classroom/quiz-builder)
@@ -121,9 +119,6 @@ function SidebarNav({ pathname }: { pathname: string }) {
             ? pathname === "/"
             : activeHref === item.href
 
-        const registry = role === "reader" ? studentIconRegistry : role === "teacher" ? teacherIconRegistry : undefined
-        const AnimatedIcon = registry?.[item.label]
-
         return (
           <SidebarMenuItem key={`${item.label}-${item.href}`}>
             <SidebarMenuButton
@@ -131,28 +126,16 @@ function SidebarNav({ pathname }: { pathname: string }) {
               tooltip={item.label}
               render={<Link href={item.href} onClick={() => { setOpen(false); setOpenMobile(false) }} />}
             >
-              {AnimatedIcon ? (
-                <AnimatedIconWrapper isActive={isActive} index={index}>
-                  {(hovered) => (
-                    <AnimatedIcon
-                      isHovered={hovered}
-                      isActive={isActive}
-                      className="size-4"
-                    />
-                  )}
-                </AnimatedIconWrapper>
-              ) : (
-                /* Fallback (lucide-react) icon — kept deliberate even when the
-                 * animated registry has no entry for an item. 1.75px stroke
-                 * reads scholarly rather than utilitarian; parchment-70%
-                 * inactive lifts to 100% on hover, and the SidebarMenuButton's
-                 * data-[active=true] state already swaps to the gold accent. */
-                <item.icon
-                  className="size-4 transition-opacity opacity-70 group-hover/menu-button:opacity-100 group-data-active/menu-button:opacity-100"
-                  strokeWidth={1.75}
-                  aria-hidden="true"
-                />
-              )}
+              {/* Minimalist Lucide line icon — no animations, no entrance,
+               * no hover scale. 1.5 stroke reads scholarly. The
+               * SidebarMenuButton's data-[active=true] state handles the
+               * laurel-gold active swap; inactive items use a basic
+               * transition-colors only. */}
+              <item.icon
+                className="size-4 transition-colors duration-200"
+                strokeWidth={1.5}
+                aria-hidden="true"
+              />
               <span>{item.label}</span>
               {item.label === "Friends" && pendingFriendRequests > 0 && (
                 <span

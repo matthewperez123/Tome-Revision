@@ -14,7 +14,7 @@ import {
   GraduationCap,
   ShoppingBag,
   CircleUser,
-  UserCircle,
+  Users,
   Bookmark,
   BookMarked,
   ClipboardCheck,
@@ -41,7 +41,9 @@ export const sidebarNav: NavItem[] = [
   // Core — all roles
   { label: "Home", href: "/", icon: Home },
   { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
-  { label: "Library", href: "/library", icon: Library },
+  // The bare /library route is now the public marketing/preview page.
+  // The authenticated catalog lives at /library/browse.
+  { label: "Library", href: "/library/browse", icon: Library },
   { label: "Bookmarks", href: "/bookmarks", icon: Bookmark },
   { label: "My Shelves", href: "/shelves", icon: BookMarked },
   { label: "Authors", href: "/authors", icon: PenTool },
@@ -51,7 +53,7 @@ export const sidebarNav: NavItem[] = [
 
   // Teacher-only classroom tools
   { label: "My Classrooms", href: "/classroom", icon: GraduationCap, roles: ["teacher"], section: "teaching" },
-  { label: "Parents", href: "/teacher/parents", icon: UserCircle, roles: ["teacher"], section: "teaching" },
+  { label: "Parents", href: "/teacher/parents", icon: Users, roles: ["teacher"], section: "teaching" },
   { label: "Quiz Builder", href: "/classroom/quiz-builder", icon: Feather, roles: ["teacher"], section: "teaching" },
   { label: "Grading", href: "/classroom/grading", icon: ClipboardCheck, roles: ["teacher"], section: "teaching" },
   { label: "Guided Sessions", href: "/teacher/guided-learning", icon: Compass, roles: ["teacher"], section: "teaching" },
@@ -86,7 +88,7 @@ export function getNavForRole(role: UserRole | null): NavItem[] {
 
 export const dockNav: NavItem[] = [
   { label: "Home", href: "/", icon: Home },
-  { label: "Library", href: "/library", icon: Library },
+  { label: "Library", href: "/library/browse", icon: Library },
   { label: "Read", href: "/reading", icon: BookOpen },
   { label: "Quiz", href: "/quizzes", icon: Brain },
   { label: "Profile", href: "/profile", icon: CircleUser },

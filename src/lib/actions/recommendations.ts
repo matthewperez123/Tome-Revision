@@ -73,11 +73,11 @@ export async function recommendBook(
       body: parsed.data.message ?? undefined,
       // Encode the rec id into the URL so the notification bell can offer
       // inline accept/reject without an extra round-trip to look it up.
-      actionUrl: `/library?rec=${row.id}`,
+      actionUrl: `/library/browse?rec=${row.id}`,
       sourceUserId: user.id,
     })
 
-    revalidatePath("/library")
+    revalidatePath("/library/browse")
     return ok({ id: row.id })
   } catch (e) {
     return fail((e as Error).message)
@@ -131,11 +131,11 @@ export async function acceptRecommendation(
       userId: rec.sender_id,
       type: "book_recommendation_accepted",
       title: `${profile?.display_name ?? "Someone"} added ${book?.title ?? "your recommendation"} to their library`,
-      actionUrl: "/library",
+      actionUrl: "/library/browse",
       sourceUserId: user.id,
     })
 
-    revalidatePath("/library")
+    revalidatePath("/library/browse")
     return ok(undefined)
   } catch (e) {
     return fail((e as Error).message)
@@ -155,7 +155,7 @@ export async function rejectRecommendation(
       .eq("id", parsed.data)
       .eq("recipient_id", user.id)
     if (error) return fail(error.message)
-    revalidatePath("/library")
+    revalidatePath("/library/browse")
     return ok(undefined)
   } catch (e) {
     return fail((e as Error).message)

@@ -30,10 +30,15 @@ export function StickyMobileCTA() {
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
+  // "Use Beta" replaces the previous reader/educator-specific labels for the
+  // beta demo. Routes directly into the authenticated app shell at
+  // /dashboard, mirroring the desktop top-nav behavior. The audience-aware
+  // icon is preserved so the CTA still telegraphs which path the visitor
+  // was reading. /signup and /demo route files remain on disk.
   const isReader = audience === "reader"
-  const label = isReader ? "Start reading" : "Book a demo"
+  const label = "Use Beta"
   const Icon = isReader ? BookOpen : GraduationCap
-  const href = isReader ? "/signup" : "/demo"
+  const href = "/dashboard"
 
   return (
     <div

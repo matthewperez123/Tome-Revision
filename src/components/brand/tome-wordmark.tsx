@@ -9,39 +9,48 @@ export interface TomeWordmarkProps {
    *  tracking, etc. The component does NOT impose its own typography so the
    *  call site can keep whatever style the previous hardcoded `<span>` had. */
   className?: string
-  /** Pixel size of the Beta superscript. Defaults to 8px (sized to sit
-   *  comfortably above a `text-sm` wordmark; tune per use site if needed). */
+  /**
+   * @deprecated kept for backwards compatibility with existing call sites; the
+   * Beta indicator is now a flat pill rather than a sized superscript so this
+   * prop is a no-op.
+   */
   betaPx?: number
 }
 
 /**
- * Tome wordmark with optional indigo italic "Beta" superscript.
+ * Tome wordmark with optional laurel-gold "Beta" pill.
  *
- * The component intentionally does not impose font / size / colour — those are
- * inherited from the parent so each nav surface keeps its own treatment. The
- * only opinion this component has is where the "Beta" sits and how it looks.
+ * The pill replaces the previous indigo italic superscript ("blue exponent").
+ * It sits at the visual midline of the wordmark, gold fill (#C9A84C) with
+ * white text, flat — no animation, glow, or gradient. The wordmark itself
+ * inherits typography from the parent so each nav surface keeps its own
+ * treatment.
  */
 export function TomeWordmark({
   showBeta = true,
   color = "currentColor",
   className,
-  betaPx = 8,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  betaPx: _betaPx,
 }: TomeWordmarkProps) {
   return (
     <span
-      className={cn("relative inline-flex leading-none", className)}
+      className={cn("inline-flex items-center gap-1.5 leading-none", className)}
       style={{ color }}
+      aria-label={showBeta ? "Tome Beta" : undefined}
     >
-      Tome
+      <span>Tome</span>
       {showBeta && (
         <span
-          aria-label="Beta"
-          className="pointer-events-none absolute italic font-serif leading-none"
+          aria-hidden="true"
+          className="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium tracking-wide leading-none"
           style={{
-            top: -Math.round(betaPx * 0.35),
-            right: -Math.round(betaPx * 1.9),
-            fontSize: betaPx,
-            color: "#6366F1",
+            backgroundColor: "#C9A84C",
+            color: "#FFFFFF",
+            // Lock the pill's own typography so it never inherits the
+            // parent's display font / italic / weight settings.
+            fontFamily: "var(--font-sans)",
+            fontStyle: "normal",
           }}
         >
           Beta

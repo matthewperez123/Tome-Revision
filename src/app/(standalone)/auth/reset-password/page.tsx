@@ -54,7 +54,7 @@ export default function ResetPasswordPage() {
       return
     }
 
-    router.push("/library")
+    router.push("/library/browse")
     router.refresh()
   }
 

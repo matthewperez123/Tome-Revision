@@ -73,7 +73,7 @@ export default function OnboardingPage() {
 
   // Skip if already completed
   useEffect(() => {
-    if (isOnboardingComplete()) router.push("/library")
+    if (isOnboardingComplete()) router.push("/library/browse")
   }, [router])
 
   // Compute steps directly (no useMemo) to avoid stale closures

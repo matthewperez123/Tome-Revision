@@ -326,7 +326,7 @@ export default function ShelvesPage() {
             icon={Bookmark}
             title="Your reading list is empty"
             subtitle="Browse the Library to discover your next book."
-            action={<Link href="/library" className="text-xs px-3 py-1.5 rounded-lg border border-border hover:bg-muted transition-colors">Browse Library</Link>}
+            action={<Link href="/library/browse" className="text-xs px-3 py-1.5 rounded-lg border border-border hover:bg-muted transition-colors">Browse Library</Link>}
           />
         ) : (
           <div className="space-y-2">
@@ -389,7 +389,7 @@ export default function ShelvesPage() {
             icon={BookOpen}
             title="No books in progress"
             subtitle="Start reading from the Library."
-            action={<Link href="/library" className="text-xs px-3 py-1.5 rounded-lg border border-border hover:bg-muted transition-colors">Browse Library</Link>}
+            action={<Link href="/library/browse" className="text-xs px-3 py-1.5 rounded-lg border border-border hover:bg-muted transition-colors">Browse Library</Link>}
           />
         ) : (
           <div className="space-y-3">

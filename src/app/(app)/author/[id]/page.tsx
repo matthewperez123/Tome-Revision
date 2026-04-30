@@ -160,7 +160,7 @@ export default function AuthorProfilePage() {
 
   // Not found redirect
   useEffect(() => {
-    if (notFound) router.replace("/library")
+    if (notFound) router.replace("/library/browse")
   }, [notFound, router])
 
   if (!author) {
@@ -195,7 +195,7 @@ export default function AuthorProfilePage() {
       <nav className="max-w-4xl mx-auto px-4 sm:px-6 pt-4 pb-0" aria-label="Breadcrumb">
         <ol className="flex items-center gap-1 text-[11px] text-muted-foreground">
           <li>
-            <Link href="/library" className="hover:text-foreground transition-colors flex items-center gap-1">
+            <Link href="/library/browse" className="hover:text-foreground transition-colors flex items-center gap-1">
               <Library className="size-3" />
               Library
             </Link>

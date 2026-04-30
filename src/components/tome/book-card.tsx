@@ -109,9 +109,18 @@ export interface BookCardProps {
   activeSort?: string
   /** When set, renders a small gold "Recommended by X" pill in the meta area. */
   recommendedBy?: { displayName: string; username: string } | null
+  /**
+   * When `false`, the card renders as static content — no click handler, no
+   * keyboard activation, no role/tabIndex, no hover-lift, no focus ring,
+   * no cursor-pointer. Used by the public /library marketing page where
+   * cards are display-only previews rather than navigable controls. The
+   * inner author link and heart button still suppress their own
+   * navigation when interactive is false. Defaults to `true`.
+   */
+  interactive?: boolean
 }
 
-export function BookCard({ book, progress, size = "sm", className, activeSort, recommendedBy }: BookCardProps) {
+export function BookCard({ book, progress, size = "sm", className, activeSort, recommendedBy, interactive = true }: BookCardProps) {
   const router = useRouter()
   const coverParams = getCoverParams(book)
   const tradColor  = TRADITION_COLORS[book.tradition]  ?? { bg: "rgba(99,102,241,0.14)", text: "#4338ca", dot: "#6366F1" }
@@ -139,19 +148,34 @@ export function BookCard({ book, progress, size = "sm", className, activeSort, r
     router.push(bookHref)
   }
 
+  // Static / display-only mode for the public /library page. Strips every
+  // affordance that suggests the card is a control (role, tabIndex, click
+  // handler, focus ring, cursor, hover-lift). The cover and meta still
+  // render identically.
+  const interactiveProps = interactive
+    ? {
+        role: "link" as const,
+        tabIndex: 0,
+        "aria-label": `${book.title} by ${book.author}`,
+        onClick: handleCardActivate,
+        onKeyDown: handleCardActivate,
+        "data-href": bookHref,
+      }
+    : {
+        "aria-hidden": false,
+      }
+
   return (
     <div
-      role="link"
-      tabIndex={0}
-      aria-label={`${book.title} by ${book.author}`}
-      onClick={handleCardActivate}
-      onKeyDown={handleCardActivate}
-      data-href={bookHref}
+      {...interactiveProps}
       className={cn(
-        "group flex flex-col rounded-xl border border-border bg-card overflow-hidden cursor-pointer",
-        "transition-[transform,box-shadow] duration-[var(--tome-duration-fast)] ease-[var(--tome-ease-scholarly)]",
-        "hover:scale-[1.02] hover:shadow-md motion-reduce:hover:scale-100",
-        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--tome-accent,#6366f1)] focus-visible:ring-offset-2",
+        "group flex flex-col rounded-xl border border-border bg-card overflow-hidden",
+        interactive && [
+          "cursor-pointer",
+          "transition-[transform,box-shadow] duration-[var(--tome-duration-fast)] ease-[var(--tome-ease-scholarly)]",
+          "hover:scale-[1.02] hover:shadow-md motion-reduce:hover:scale-100",
+          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--tome-accent,#6366f1)] focus-visible:ring-offset-2",
+        ],
         className
       )}
     >
@@ -168,7 +192,8 @@ export function BookCard({ book, progress, size = "sm", className, activeSort, r
             hideBand
             aspectRatio="3/4"
             className={cn(
-              "w-full transition-transform duration-[var(--tome-duration-fast)] group-hover:-translate-y-0.5 rounded-none",
+              "w-full rounded-none",
+              interactive && "transition-transform duration-[var(--tome-duration-fast)] group-hover:-translate-y-0.5",
               size === "lg" && "min-h-[160px]"
             )}
           />
@@ -178,7 +203,8 @@ export function BookCard({ book, progress, size = "sm", className, activeSort, r
             fallbackColors={book.coverColors}
             aspectRatio="3/4"
             className={cn(
-              "w-full transition-transform duration-[var(--tome-duration-fast)] group-hover:-translate-y-0.5 rounded-none",
+              "w-full rounded-none",
+              interactive && "transition-transform duration-[var(--tome-duration-fast)] group-hover:-translate-y-0.5",
               size === "lg" && "min-h-[160px]"
             )}
           />
@@ -191,8 +217,9 @@ export function BookCard({ book, progress, size = "sm", className, activeSort, r
           </span>
         )}
 
-        {/* Heart / favorite button — bottom-left */}
-        <HeartButton bookId={book.id} />
+        {/* Heart / favorite button — bottom-left. Hidden in static mode
+            since the public /library cards must not mutate localStorage. */}
+        {interactive && <HeartButton bookId={book.id} />}
       </div>
 
       {/* ── Meta ── */}
@@ -231,13 +258,24 @@ export function BookCard({ book, progress, size = "sm", className, activeSort, r
           {book.title}
         </h3>
 
-        <AuthorLink
-          name={book.author}
-          className={cn(
-            "text-muted-foreground hover:text-[var(--tome-accent)] transition-colors",
-            size === "lg" ? "text-xs" : "text-[10px]"
-          )}
-        />
+        {interactive ? (
+          <AuthorLink
+            name={book.author}
+            className={cn(
+              "text-muted-foreground hover:text-[var(--tome-accent)] transition-colors",
+              size === "lg" ? "text-xs" : "text-[10px]"
+            )}
+          />
+        ) : (
+          <span
+            className={cn(
+              "text-muted-foreground",
+              size === "lg" ? "text-xs" : "text-[10px]"
+            )}
+          >
+            {book.author}
+          </span>
+        )}
 
         {/* Difficulty badge */}
         <span

@@ -49,7 +49,7 @@ export function WelcomeEmail({
         keep your Flame, collect Seals.
       </EmailParagraph>
 
-      <EmailButton href={`${appUrl}/library`}>Open my library</EmailButton>
+      <EmailButton href={`${appUrl}/library/browse`}>Open my library</EmailButton>
 
       <EmailDivider />
 

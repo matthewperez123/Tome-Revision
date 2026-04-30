@@ -47,8 +47,8 @@ export function SearchDropdown({ results, query, isOpen, onClose }: SearchDropdo
     for (const r of results.authors) list.push({ type: "author", id: r.author.id, route: `/author/${r.author.id}` })
     for (const r of results.characters) list.push({ type: "character", id: r.character.name, route: `/book/${r.character.bookId}` })
     for (const r of results.quotes) list.push({ type: "quote", id: r.quote.text.slice(0, 20), route: r.quote.bookId ? `/book/${r.quote.bookId}` : "#" })
-    for (const r of results.genres) list.push({ type: "genre", id: r.name, route: `/library?genre=${encodeURIComponent(r.name)}` })
-    for (const r of results.traditions) list.push({ type: "tradition", id: r.name, route: `/library?tradition=${encodeURIComponent(r.name)}` })
+    for (const r of results.genres) list.push({ type: "genre", id: r.name, route: `/library/browse?genre=${encodeURIComponent(r.name)}` })
+    for (const r of results.traditions) list.push({ type: "tradition", id: r.name, route: `/library/browse?tradition=${encodeURIComponent(r.name)}` })
     return list
   }, [results])
 
@@ -239,7 +239,7 @@ export function SearchDropdown({ results, query, isOpen, onClose }: SearchDropdo
                       return (
                         <button
                           key={r.name}
-                          onClick={() => navigate(`/library?genre=${encodeURIComponent(r.name)}`)}
+                          onClick={() => navigate(`/library/browse?genre=${encodeURIComponent(r.name)}`)}
                           className={cn(
                             "w-full text-left px-4 py-2.5 flex items-center gap-3 border-b border-border/50 last:border-0 transition-colors",
                             idx === focusIdx ? "bg-accent" : "hover:bg-accent/50"
@@ -264,7 +264,7 @@ export function SearchDropdown({ results, query, isOpen, onClose }: SearchDropdo
                       return (
                         <button
                           key={r.name}
-                          onClick={() => navigate(`/library?tradition=${encodeURIComponent(r.name)}`)}
+                          onClick={() => navigate(`/library/browse?tradition=${encodeURIComponent(r.name)}`)}
                           className={cn(
                             "w-full text-left px-4 py-2.5 flex items-center gap-3 border-b border-border/50 last:border-0 transition-colors",
                             idx === focusIdx ? "bg-accent" : "hover:bg-accent/50"

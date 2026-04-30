@@ -291,7 +291,7 @@ export function notifyTraditionCompleted(traditionName: string) {
     title: `${traditionName} tradition complete!`,
     body: `You've read every book in the ${traditionName} collection. A true scholar.`,
     icon: "Landmark",
-    link: `/library?tradition=${encodeURIComponent(traditionName)}`,
+    link: `/library/browse?tradition=${encodeURIComponent(traditionName)}`,
     priority: "celebration",
     metadata: { traditionName, confetti: true },
   })

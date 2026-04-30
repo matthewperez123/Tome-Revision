@@ -672,7 +672,7 @@ export default function ExplorePage() {
             {/* Panel footer */}
             <div className="px-5 py-4 border-t border-border">
               <Link
-                href="/library"
+                href="/library/browse"
                 className="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg
                   bg-[#D4A04C] text-white font-semibold text-sm
                   hover:bg-[#c99540] transition-colors"

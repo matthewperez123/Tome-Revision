@@ -60,7 +60,7 @@ export default function ReadingPage() {
                   Browse the library and start reading. Your progress will appear here.
                 </p>
                 <Link
-                  href="/library"
+                  href="/library/browse"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[var(--gold-default)] text-[var(--primary-foreground)] font-semibold text-sm hover:opacity-90 transition-opacity"
                 >
                   <BookOpen className="size-4" />

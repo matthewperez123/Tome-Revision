@@ -426,7 +426,7 @@ export default function BookCompletePage() {
     <div className="flex flex-col items-center justify-center min-h-[60vh] gap-4 text-center p-8">
       <BookOpen className="size-12 text-muted-foreground/30" />
       <p className="text-sm font-medium">Book not found</p>
-      <Link href="/library" className="text-xs text-[var(--tome-accent)] hover:underline">
+      <Link href="/library/browse" className="text-xs text-[var(--tome-accent)] hover:underline">
         Back to Library
       </Link>
     </div>
@@ -526,7 +526,7 @@ export default function BookCompletePage() {
               <p className="text-sm text-muted-foreground">
                 by{" "}
                 <Link
-                  href={`/library?author=${encodeURIComponent(book.author)}`}
+                  href={`/library/browse?author=${encodeURIComponent(book.author)}`}
                   className="text-[var(--tome-accent)] hover:underline"
                 >
                   {book.author}
@@ -725,7 +725,7 @@ export default function BookCompletePage() {
               <SectionHeading
                 aside={
                   <Link
-                    href={`/library?author=${encodeURIComponent(book.author)}`}
+                    href={`/library/browse?author=${encodeURIComponent(book.author)}`}
                     className="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-0.5"
                   >
                     View all →
@@ -807,7 +807,7 @@ export default function BookCompletePage() {
               <SectionHeading
                 aside={
                   <Link
-                    href={`/library?tradition=${encodeURIComponent(book.tradition)}`}
+                    href={`/library/browse?tradition=${encodeURIComponent(book.tradition)}`}
                     className="text-xs text-muted-foreground hover:text-foreground transition-colors flex items-center gap-0.5"
                   >
                     See all →
@@ -873,7 +873,7 @@ export default function BookCompletePage() {
               Read Next: {topRec.book.title}
             </Link>
             <Link
-              href="/library"
+              href="/library/browse"
               className="rounded-lg border border-border px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap"
             >
               Library

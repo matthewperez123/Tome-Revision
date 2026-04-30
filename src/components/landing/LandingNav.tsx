@@ -60,11 +60,13 @@ export function LandingNav() {
         <Link href="/library" className={cn("hidden sm:inline-flex", linkClass)}>
           Library
         </Link>
+        {/* Beta-demo nav: single "Use Beta" button replaces the previous
+            Log in / Sign Up pair. Reuses linkClass exactly so the button
+            visually matches the Readers / Educators / Library siblings.
+            The (standalone)/login and (standalone)/signup route files
+            still exist on disk — they just aren't linked from here. */}
         <Link href="/dashboard" className={linkClass}>
-          Log in
-        </Link>
-        <Link href="/onboarding" className={linkClass}>
-          Sign Up
+          Use Beta
         </Link>
         <ThemeToggle
           className={cn(

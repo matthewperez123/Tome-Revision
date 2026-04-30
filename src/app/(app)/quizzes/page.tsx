@@ -94,7 +94,7 @@ export default function QuizzesPage() {
         {/* Browse more */}
         <div className="text-center py-4">
           <p className="text-xs text-muted-foreground mb-2">Start reading a book to unlock its chapter quizzes</p>
-          <Link href="/library" className="inline-flex items-center gap-1.5 text-sm text-[var(--gold-default)] hover:opacity-80 transition-opacity">
+          <Link href="/library/browse" className="inline-flex items-center gap-1.5 text-sm text-[var(--gold-default)] hover:opacity-80 transition-opacity">
             Browse Library <ArrowRight className="size-3.5" />
           </Link>
         </div>
