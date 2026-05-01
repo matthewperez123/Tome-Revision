@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "motion/react"
-import { BlurFade } from "@/components/ui/blur-fade"
+import { TeacherShowcaseShell } from "./teacher/TeacherShowcaseShell"
 
 type TabKey = "prose" | "verse" | "play" | "middle"
 
@@ -56,81 +56,55 @@ export function MergedReaderBlock() {
   const [tab, setTab] = useState<TabKey>("prose")
 
   return (
-    <section className="bg-background py-24 px-6 md:px-12">
-      <div className="max-w-5xl mx-auto">
-        <BlurFade delay={0.1} inView>
-          <div className="text-center mb-10">
-            <h2 className="font-[var(--font-display)] text-3xl md:text-4xl font-bold text-foreground mb-3">
-              The reader, shaped to the work.
-            </h2>
-            <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Epic, verse, drama, or Middle English &mdash; each form rendered the way it was meant to be read. No summaries, no abridgements, complete texts in Literata.
-            </p>
-          </div>
-        </BlurFade>
-
-        <BlurFade delay={0.2} inView>
-          <div className="max-w-2xl mx-auto">
-            {/* Tab strip */}
-            <div className="flex items-center justify-center mb-4">
-              <div className="inline-flex rounded-full border border-border bg-muted p-0.5 text-[11px] font-medium">
-                {TABS.map((t) => {
-                  const active = tab === t.key
-                  return (
-                    <button
-                      key={t.key}
-                      type="button"
-                      onClick={() => setTab(t.key)}
-                      className={`px-3 py-1 rounded-full transition-colors ${
-                        active
-                          ? "bg-card text-foreground shadow-sm"
-                          : "text-muted-foreground hover:text-foreground"
-                      }`}
-                    >
-                      {t.label}
-                    </button>
-                  )
-                })}
-              </div>
-            </div>
-
-            {/* Panel */}
-            <div className="relative bg-card rounded-xl border border-border min-h-[300px] p-6 overflow-hidden">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={tab}
-                  initial={{ opacity: 0, y: 6 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -4 }}
-                  transition={{ duration: 0.3, ease: EASE }}
+    <TeacherShowcaseShell
+      heading="The reader, shaped to the work."
+      subcopy="Epic, verse, drama, or Middle English — each form rendered the way it was meant to be read. No summaries, no abridgements, complete texts in Literata."
+      layout="mockup-left"
+      bgClass="bg-background"
+    >
+      <div>
+        {/* Tab strip */}
+        <div className="flex items-center mb-4">
+          <div className="inline-flex rounded-full border border-border bg-muted p-0.5 text-[11px] font-medium">
+            {TABS.map((t) => {
+              const active = tab === t.key
+              return (
+                <button
+                  key={t.key}
+                  type="button"
+                  onClick={() => setTab(t.key)}
+                  className={`px-3 py-1 rounded-full transition-colors ${
+                    active
+                      ? "bg-card text-foreground shadow-sm"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
                 >
-                  {tab === "prose" && <ProseSample />}
-                  {tab === "verse" && <VerseSample />}
-                  {tab === "play" && <PlaySample />}
-                  {tab === "middle" && <MiddleSample />}
-                </motion.div>
-              </AnimatePresence>
-            </div>
-
-            {/* Caption rows */}
-            <div className="mt-6 space-y-2 text-center">
-              <CaptionRow text="Three themes &middot; Light, parchment, Night Scholar" />
-              <CaptionRow text="Tunable type &middot; adjustable size and line height" />
-              <CaptionRow text="Resume across devices &middot; your position is saved automatically" />
-            </div>
+                  {t.label}
+                </button>
+              )
+            })}
           </div>
-        </BlurFade>
-      </div>
-    </section>
-  )
-}
+        </div>
 
-function CaptionRow({ text }: { text: string }) {
-  return (
-    <p
-      className="text-xs text-muted-foreground"
-      dangerouslySetInnerHTML={{ __html: text }}
-    />
+        {/* Panel */}
+        <div className="relative bg-card rounded-xl border border-border min-h-[300px] p-6 overflow-hidden">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={tab}
+              initial={{ opacity: 0, y: 6 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -4 }}
+              transition={{ duration: 0.3, ease: EASE }}
+            >
+              {tab === "prose" && <ProseSample />}
+              {tab === "verse" && <VerseSample />}
+              {tab === "play" && <PlaySample />}
+              {tab === "middle" && <MiddleSample />}
+            </motion.div>
+          </AnimatePresence>
+        </div>
+      </div>
+    </TeacherShowcaseShell>
   )
 }
 

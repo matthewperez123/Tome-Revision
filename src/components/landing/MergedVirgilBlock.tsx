@@ -1,7 +1,7 @@
 "use client"
 
 import { Send, Sparkles, Highlighter, StickyNote } from "lucide-react"
-import { BlurFade } from "@/components/ui/blur-fade"
+import { TeacherShowcaseShell } from "./teacher/TeacherShowcaseShell"
 
 const PASSAGE_LINES = [
   "Sing, O goddess, the anger of Achilles",
@@ -27,21 +27,14 @@ const AMBER = "#D97706"
 
 export function MergedVirgilBlock() {
   return (
-    <section className="bg-muted py-24 px-6 md:px-12">
-      <div className="max-w-5xl mx-auto">
-        <BlurFade delay={0.1} inView>
-          <div className="text-center mb-10">
-            <h2 className="font-[var(--font-display)] text-3xl md:text-4xl font-bold text-foreground mb-3">
-              A scholar in the margin. Your marks beside his.
-            </h2>
-            <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Tap any annotation to open Virgil&apos;s drawer &mdash; a scholarly note up top, a live chat at the bottom. Highlight what stops you, leave a note for your future self. Virgil is indigo; you are amber. Every mark is indexed and searchable.
-            </p>
-          </div>
-        </BlurFade>
-
-        <BlurFade delay={0.2} inView>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <TeacherShowcaseShell
+      heading="A scholar in the margin. Your marks beside his."
+      subcopy="Tap any annotation to open Virgil's drawer — a scholarly note up top, a live chat at the bottom. Highlight what stops you, leave a note for your future self. Virgil is indigo; you are amber."
+      layout="mockup-right"
+      bgClass="bg-muted"
+    >
+      <div>
+        <div className="grid grid-cols-1 gap-4">
             {/* Left: Virgil drawer */}
             <div className="bg-card rounded-xl border border-border min-h-[360px] relative overflow-hidden">
               <div className="p-6">
@@ -166,13 +159,8 @@ export function MergedVirgilBlock() {
                 <span>Amber = your marks &middot; Indigo = Virgil</span>
               </div>
             </div>
-          </div>
-
-          <p className="mt-4 text-center text-xs text-muted-foreground">
-            Amber = your marks &middot; Indigo = Virgil
-          </p>
-        </BlurFade>
+        </div>
       </div>
-    </section>
+    </TeacherShowcaseShell>
   )
 }

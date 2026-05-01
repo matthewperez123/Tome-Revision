@@ -3,7 +3,6 @@
 import { useEffect, useRef } from "react"
 import { useAudience } from "@/contexts/AudienceContext"
 
-import { CarouselSection } from "./CarouselSection"
 import { MergedReaderBlock } from "./MergedReaderBlock"
 import { MergedVirgilBlock } from "./MergedVirgilBlock"
 import { MergedTrialsBlock } from "./MergedTrialsBlock"
@@ -50,9 +49,6 @@ export function HomepageContent() {
 
   return (
     <>
-      {/* Carousel sits above the 7 student feature blocks */}
-      <CarouselSection />
-
       {/* 7 student feature blocks */}
       <MergedReaderBlock />
       <MergedVirgilBlock />

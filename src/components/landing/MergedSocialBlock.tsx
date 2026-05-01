@@ -1,7 +1,7 @@
 "use client"
 
 import { Users, BookOpen, UserPlus } from "lucide-react"
-import { BlurFade } from "@/components/ui/blur-fade"
+import { TeacherShowcaseShell } from "./teacher/TeacherShowcaseShell"
 
 const POSTS = [
   { author: "Sofia R.", text: "The Nobody trick is pure metis \u2014 cunning over strength." },
@@ -26,21 +26,14 @@ const PROFILE = {
 
 export function MergedSocialBlock() {
   return (
-    <section className="bg-background py-24 px-6 md:px-12">
-      <div className="max-w-5xl mx-auto">
-        <BlurFade delay={0.1} inView>
-          <div className="text-center mb-10">
-            <h2 className="font-[var(--font-display)] text-3xl md:text-4xl font-bold text-foreground mb-3">
-              Read with others.
-            </h2>
-            <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Join a Circle for the book you&rsquo;re working through, or follow a friend and see what&rsquo;s cracking them open this week. Public profiles are opt-in; everything else is quiet by default.
-            </p>
-          </div>
-        </BlurFade>
-
-        <BlurFade delay={0.2} inView>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <TeacherShowcaseShell
+      heading="Read with others."
+      subcopy="Join a Circle for the book you're working through, or follow a friend and see what's cracking them open this week. Public profiles are opt-in; everything else is quiet by default."
+      layout="mockup-left"
+      bgClass="bg-background"
+    >
+      <div>
+          <div className="grid grid-cols-1 gap-4">
             {/* Circle / Book Club card */}
             <div className="bg-card rounded-xl border border-border p-5">
               <div className="flex items-center gap-3 mb-3">
@@ -140,9 +133,8 @@ export function MergedSocialBlock() {
               </div>
             </div>
           </div>
-        </BlurFade>
       </div>
-    </section>
+    </TeacherShowcaseShell>
   )
 }
 

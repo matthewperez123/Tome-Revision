@@ -3,8 +3,8 @@
 import { motion, AnimatePresence } from "motion/react"
 import { Check, Flame, Trophy } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { BlurFade } from "@/components/ui/blur-fade"
 import { useAnimationLoop } from "./useAnimationLoop"
+import { TeacherShowcaseShell } from "./teacher/TeacherShowcaseShell"
 
 const PHASES = [
   { name: "question", duration: 1400 },
@@ -29,21 +29,14 @@ export function MergedTrialsBlock() {
   const showWisdom = phase === "wisdom"
 
   return (
-    <section className="bg-background py-24 px-6 md:px-12">
-      <div className="max-w-3xl mx-auto">
-        <BlurFade delay={0.1} inView>
-          <div className="text-center mb-10">
-            <h2 className="font-[var(--font-display)] text-3xl md:text-4xl font-bold text-foreground mb-3">
-              Every chapter is a Trial.
-            </h2>
-            <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Earn Wisdom by completing Trials at the end of each chapter &mdash; comprehension, vocabulary, critical thinking, and a Virgil-graded reflection. Keep your Flame alive with daily reading. Collect Seals for the milestones that matter.
-            </p>
-          </div>
-        </BlurFade>
-
-        <BlurFade delay={0.2} inView>
-          {/* Trial card */}
+    <TeacherShowcaseShell
+      heading="Every chapter is a Trial."
+      subcopy="Earn Wisdom by completing Trials at the end of each chapter — comprehension, vocabulary, critical thinking, and a Virgil-graded reflection. Keep your Flame alive with daily reading."
+      layout="mockup-left"
+      bgClass="bg-background"
+    >
+      <div>
+        {/* Trial card */}
           <div
             ref={isReduced ? undefined : containerRef}
             className="bg-card rounded-xl border border-border p-6 min-h-[300px] relative overflow-hidden"
@@ -148,8 +141,7 @@ export function MergedTrialsBlock() {
               +110 Wisdom
             </span>
           </div>
-        </BlurFade>
       </div>
-    </section>
+    </TeacherShowcaseShell>
   )
 }

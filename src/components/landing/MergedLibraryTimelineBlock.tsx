@@ -1,8 +1,8 @@
 "use client"
 
 import { motion } from "motion/react"
-import { BlurFade } from "@/components/ui/blur-fade"
 import { useAnimationLoop } from "./useAnimationLoop"
+import { TeacherShowcaseShell } from "./teacher/TeacherShowcaseShell"
 
 const PHASES = [
   { name: "recent", duration: 1600 },
@@ -47,23 +47,16 @@ export function MergedLibraryTimelineBlock() {
   const books = isChrono ? CHRONO_ORDER : RECENT_ORDER
 
   return (
-    <section className="bg-muted py-24 px-6 md:px-12">
-      <div className="max-w-5xl mx-auto">
-        <BlurFade delay={0.1} inView>
-          <div className="text-center mb-10">
-            <h2 className="font-[var(--font-display)] text-3xl md:text-4xl font-bold text-foreground mb-3">
-              Your library, in your order or history&rsquo;s.
-            </h2>
-            <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Every book you&rsquo;ve started, finished, and annotated. Sort by your reading order, or reshuffle chronologically and watch three thousand years of literature line up in sequence.
-            </p>
-          </div>
-        </BlurFade>
-
-        <BlurFade delay={0.2} inView>
+    <TeacherShowcaseShell
+      heading="Your library, in your order or history's."
+      subcopy="Every book you've started, finished, and annotated. Sort by your reading order, or reshuffle chronologically and watch three thousand years of literature line up in sequence."
+      layout="mockup-right"
+      bgClass="bg-muted"
+    >
+      <div>
           <div
             ref={isReduced ? undefined : containerRef}
-            className="bg-card rounded-xl border border-border p-6 max-w-3xl mx-auto"
+            className="bg-card rounded-xl border border-border p-6"
           >
             <div className="flex items-center justify-between mb-3">
               <p className="text-xs text-muted-foreground">My Library &middot; 6 books</p>
@@ -72,7 +65,7 @@ export function MergedLibraryTimelineBlock() {
                 <Pill label="Chronological" active={isChrono} />
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 gap-3">
               {books.map((book, i) => (
                 <motion.div
                   key={book.title}
@@ -84,11 +77,9 @@ export function MergedLibraryTimelineBlock() {
               ))}
             </div>
           </div>
-        </BlurFade>
 
         {/* Timeline strip */}
-        <BlurFade delay={0.3} inView>
-          <div className="mt-6 max-w-3xl mx-auto bg-card rounded-xl border border-border p-6">
+          <div className="mt-4 bg-card rounded-xl border border-border p-6">
             <p className="text-[10px] text-muted-foreground mb-4 uppercase tracking-wider font-medium">
               The canon, in chronological order
             </p>
@@ -114,9 +105,8 @@ export function MergedLibraryTimelineBlock() {
               ))}
             </div>
           </div>
-        </BlurFade>
       </div>
-    </section>
+    </TeacherShowcaseShell>
   )
 }
 
