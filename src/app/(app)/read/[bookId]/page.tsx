@@ -1389,31 +1389,24 @@ export default function ReaderPage() {
 
                     {/* Chapter Navigation — Quiz gate between prev/next */}
                     <div className="mt-16 border-t pt-6" style={{ borderColor: t.border }}>
-                      {/* Chapter end CTA — complete chapter (quiz gate).
-                          Shown on every chapter, including the last, so readers
-                          always reach the end-of-chapter trial. */}
-                      <AnimatePresence>
-                        {chapterEndReached && (
-                          <motion.div
-                            initial={{ opacity: 0, y: 16 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: 8 }}
-                            transition={springs.gentle}
-                            className="mb-6 flex flex-col items-center gap-3"
+                      {/* Chapter end CTA — Begin Quiz button is now persistent
+                          at the bottom of every chapter that has a quiz
+                          (i.e. everything except front/back matter). It does
+                          not animate in/out based on scroll position. */}
+                      {!isFrontOrBackMatter(chapter.title) && (
+                        <div className="mb-6 flex flex-col items-center gap-3">
+                          <button
+                            onClick={handleFinishChapter}
+                            className="flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold text-[#1a1a2e] transition-all hover:opacity-90 active:scale-95"
+                            style={{ background: "linear-gradient(135deg, #D4A04C, #B8862D)" }}
                           >
-                            <button
-                              onClick={handleFinishChapter}
-                              className="flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold text-[#1a1a2e] transition-all hover:opacity-90 active:scale-95"
-                              style={{ background: "linear-gradient(135deg, #D4A04C, #B8862D)" }}
-                            >
-                              <BookCheck className="size-4" />
-                              {currentChapter === totalChapters - 1
-                                ? "Begin Final Quiz"
-                                : "Begin Quiz"}
-                            </button>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
+                            <BookCheck className="size-4" />
+                            {currentChapter === totalChapters - 1
+                              ? "Begin Final Quiz"
+                              : "Begin Quiz"}
+                          </button>
+                        </div>
+                      )}
 
                       {/* Prev / counter / Next row */}
                       <div className="flex items-center justify-between">
