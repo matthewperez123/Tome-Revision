@@ -43,7 +43,6 @@ import { VirgilReflection } from "@/components/tome/virgil-reflection"
 import { getTipOfTheDay } from "@/lib/virgil-tips"
 import { cn } from "@/lib/utils"
 import { StoaBanner } from "@/components/dashboard/StoaBanner"
-import { DailyCard } from "@/components/tome/daily-card"
 import { TeacherDashboard } from "@/components/classroom/teacher-dashboard"
 import { UpcomingAssignments } from "@/components/classroom/upcoming-assignments"
 import { ClassLeaderboardMini } from "@/components/classroom/class-leaderboard-mini"
@@ -352,12 +351,7 @@ function StudentDashboard() {
           </BlurFade>
         )}
 
-        {/* ── 2. Daily Card (Quote · Passage · Character · Book) ── */}
-        <BlurFade delay={0.08} inView>
-          <DailyCard />
-        </BlurFade>
-
-        {/* ── 2b. Daily Challenge (original MCQ card, restored) ── */}
+        {/* ── 2. Daily Challenge (MCQ) ── */}
         <BlurFade delay={0.10} inView>
           <div
             className="relative rounded-2xl overflow-hidden border"
