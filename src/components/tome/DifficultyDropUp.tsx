@@ -155,7 +155,7 @@ export function DifficultyDropUp({
                   <span className="shrink-0 text-right">
                     <span
                       className="block text-[10px] font-medium uppercase tracking-wider"
-                      style={{ color: "#D4AF37" }}
+                      style={{ color: "var(--trial-laureate-text)" }}
                     >
                       Continue
                     </span>
@@ -184,14 +184,14 @@ export function DifficultyDropUp({
                         isRecommended && "ring-1 ring-offset-0"
                       )}
                       style={{
-                        borderColor: tier.borderColor,
+                        borderColor: `color-mix(in srgb, ${tier.accentColor} 30%, transparent)`,
                         backgroundColor: "transparent",
                       }}
                       aria-label={`${tier.label}${isRecommended ? " (recommended)" : ""}: ${tier.subcopy}`}
                     >
                       <span
                         className="flex size-10 shrink-0 items-center justify-center rounded-lg"
-                        style={{ backgroundColor: tier.accentBg }}
+                        style={{ backgroundColor: tier.accentSoft }}
                       >
                         <Sigil size={22} color={tier.accentColor} />
                       </span>

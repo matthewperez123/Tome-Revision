@@ -40,8 +40,8 @@ export function CrossReference({
         <div
           className="rounded-r-lg border-l-4 pl-4 pr-3 py-3"
           style={{
-            borderColor: "#D4AF37",
-            background: "rgba(248, 240, 220, 0.35)",
+            borderColor: "var(--trial-laureate)",
+            background: "var(--trial-laureate-soft)",
           }}
         >
           <p className="font-serif text-[18px] leading-[1.8] text-ink italic">{passage}</p>
@@ -58,22 +58,23 @@ export function CrossReference({
               ? "selected"
               : "idle"
           const baseCls =
-            "flex items-center gap-3 rounded-xl border-2 p-3 text-left transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400"
-          const stateCls =
+            "flex items-center gap-3 rounded-xl border-2 p-3 text-left transition-[background-color,border-color] cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--trial-select)]"
+          const tokenStyle =
             state === "correct"
-              ? "border-emerald-500 bg-emerald-50 dark:bg-emerald-950/30"
+              ? { borderColor: "var(--trial-correct)", background: "var(--trial-correct-soft)" }
               : state === "wrong"
-                ? "border-rose-500 bg-rose-50 dark:bg-rose-950/30"
+                ? { borderColor: "var(--trial-incorrect)", background: "var(--trial-incorrect-soft)" }
                 : state === "selected"
-                  ? "border-indigo-500 bg-indigo-50 dark:bg-indigo-950/30"
-                  : "border-stone-300 hover:border-indigo-400"
+                  ? { borderColor: "var(--trial-select)", background: "var(--trial-select-soft)" }
+                  : { borderColor: "var(--border)", background: "var(--card)" }
           return (
             <button
               key={opt + i}
               type="button"
               onClick={() => !answered && !pending && setPending(opt)}
               disabled={answered || pending !== null}
-              className={`${baseCls} ${stateCls}`}
+              style={tokenStyle}
+              className={`${baseCls} ${state === "idle" ? "hover:border-[var(--trial-select)]" : ""}`}
               aria-pressed={state === "selected" || state === "correct" || state === "wrong"}
             >
               <span

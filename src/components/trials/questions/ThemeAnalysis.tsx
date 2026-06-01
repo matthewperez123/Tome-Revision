@@ -26,8 +26,8 @@ export function ThemeAnalysis({
         <div
           className="rounded-r-lg border-l-4 pl-4 pr-3 py-3"
           style={{
-            borderColor: "#D4AF37",
-            background: "rgba(248, 240, 220, 0.35)",
+            borderColor: "var(--trial-laureate)",
+            background: "var(--trial-laureate-soft)",
           }}
         >
           <p className="font-serif text-[18px] leading-[1.8] text-ink">{passage}</p>

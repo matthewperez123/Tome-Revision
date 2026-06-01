@@ -3,14 +3,19 @@
 import { motion, useReducedMotion } from "framer-motion"
 
 /**
- * Thin laurel-gold progress bar shown at the top of the Trial viewport.
+ * Thin progress bar shown at the top of the Trial viewport. The fill is
+ * tinted with the active tier accent (cool indigo for Initiate/Adept, warm
+ * gold for Laureate) — all token-driven, no hardcoded color.
  */
 export function TrialProgressBar({
   current,
   total,
+  accentColor = "var(--trial-select)",
 }: {
   current: number
   total: number
+  /** Tier accent token used to tint the fill. */
+  accentColor?: string
 }) {
   const reduced = useReducedMotion()
   const pct = total > 0 ? Math.min(100, (current / total) * 100) : 0
@@ -28,7 +33,7 @@ export function TrialProgressBar({
         aria-valuemin={0}
         aria-valuemax={total}
         aria-valuenow={current}
-        className="flex-1 h-1.5 rounded-full bg-stone-200 dark:bg-stone-800 overflow-hidden"
+        className="flex-1 h-1.5 rounded-full bg-muted overflow-hidden"
       >
         <motion.div
           initial={reduced ? { width: `${pct}%` } : { width: "0%" }}
@@ -40,8 +45,7 @@ export function TrialProgressBar({
           }
           className="h-full rounded-full"
           style={{
-            background:
-              "linear-gradient(90deg, #D4AF37 0%, #F0C850 100%)",
+            background: `linear-gradient(90deg, color-mix(in srgb, ${accentColor} 78%, transparent) 0%, ${accentColor} 100%)`,
           }}
         />
       </div>

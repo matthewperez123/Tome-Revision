@@ -87,7 +87,7 @@ export function TrialIntroCard({
       <Button
         onClick={handleBegin}
         className="mt-2 rounded-xl px-8 py-3 text-base font-semibold gap-2"
-        style={{ background: tierDef.accentColor, color: "#FFF" }}
+        style={{ background: tierDef.accentColor, color: tierDef.onAccent }}
       >
         Begin
         <ChevronRight className="w-4 h-4" />

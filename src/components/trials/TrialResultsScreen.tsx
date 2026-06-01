@@ -59,12 +59,20 @@ export function TrialResultsScreen({
   useEffect(() => {
     if (!summary.passed) return
     const t = setTimeout(() => {
+      // Resolve confetti colors from the active theme's tier tokens.
+      const cs = getComputedStyle(document.documentElement)
+      const tok = (name: string) => cs.getPropertyValue(name).trim()
       confettiRef.current?.fire({
         particleCount: summary.perfect ? perfectSparkle.particleCount * 8 : 80,
         spread: summary.perfect ? 100 : 70,
         startVelocity: summary.perfect ? 55 : 40,
         origin: { y: 0.4 },
-        colors: ["#D4AF37", "#F0C850", "#16A34A", "#6366F1"],
+        colors: [
+          tok("--trial-laureate"),
+          tok("--trial-laureate-bright"),
+          tok("--trial-correct"),
+          tok("--trial-select"),
+        ],
       })
     }, 300)
     return () => clearTimeout(t)
@@ -93,7 +101,9 @@ export function TrialResultsScreen({
     return () => cancelAnimationFrame(raf)
   }, [summary.xpEarned, reduced])
 
-  const pctColor = summary.passed ? "#D4AF37" : "#DC2626"
+  const pctColor = summary.passed
+    ? "var(--trial-laureate-text)"
+    : "var(--trial-incorrect-text)"
 
   return (
     <div className="flex flex-col items-center justify-center h-full gap-6 px-6 text-center relative overflow-y-auto py-8">
@@ -151,7 +161,8 @@ export function TrialResultsScreen({
                 }
                 className="absolute inset-0 -m-2 rounded-full"
                 style={{
-                  boxShadow: "0 0 24px rgba(212,175,55,0.55), inset 0 0 16px rgba(240,200,80,0.35)",
+                  boxShadow:
+                    "0 0 24px color-mix(in srgb, var(--trial-laureate) 55%, transparent), inset 0 0 16px color-mix(in srgb, var(--trial-laureate-bright) 35%, transparent)",
                 }}
                 aria-hidden
               />
@@ -176,7 +187,9 @@ export function TrialResultsScreen({
         <motion.div
           variants={reduced ? reducedTokens.resultsChild : resultsChild}
           className="rounded-xl border-2 bg-card px-4 py-3 flex items-center justify-between"
-          style={{ borderColor: "rgba(212,175,55,0.25)" }}
+          style={{
+            borderColor: "color-mix(in srgb, var(--trial-laureate) 30%, transparent)",
+          }}
           aria-live="polite"
         >
           <span className="text-xs uppercase tracking-wider text-muted-foreground font-sans">
@@ -184,7 +197,7 @@ export function TrialResultsScreen({
           </span>
           <span
             className="font-serif text-2xl font-bold tabular-nums"
-            style={{ color: "#D4AF37" }}
+            style={{ color: "var(--trial-laureate-text)" }}
           >
             +{wisdomDisplay}
           </span>
@@ -274,7 +287,7 @@ export function TrialResultsScreen({
             <Button
               onClick={() => onPass(summary.xpEarned, summary.coinsEarned)}
               className="w-full rounded-xl py-3 text-base font-semibold gap-2"
-              style={{ background: tierDef.accentColor, color: "#111" }}
+              style={{ background: tierDef.accentColor, color: tierDef.onAccent }}
             >
               {summary.perfect && <Sparkles className="w-4 h-4" />}
               {isLastChapter ? "Finish book" : "Next chapter"}

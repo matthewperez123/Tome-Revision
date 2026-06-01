@@ -17,14 +17,14 @@ export function WisdomStar({ size = 16, color, ...rest }: SigilProps) {
     >
       <defs>
         <radialGradient id={gradId} cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#F0C850" />
-          <stop offset="100%" stopColor={color ?? "#D4AF37"} />
+          <stop offset="0%" stopColor="var(--trial-laureate-bright)" />
+          <stop offset="100%" stopColor={color ?? "var(--trial-laureate)"} />
         </radialGradient>
       </defs>
       <path
         d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z"
         fill={`url(#${gradId})`}
-        stroke={color ?? "#D4AF37"}
+        stroke={color ?? "var(--trial-laureate)"}
         strokeWidth={0.75}
         strokeLinejoin="round"
       />

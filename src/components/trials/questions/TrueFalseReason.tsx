@@ -67,6 +67,19 @@ export function TrueFalseReason({
     { value: "false", label: "False", Icon: XSquare },
   ]
 
+  function stateStyle(state: "correct" | "wrong" | "selected" | "idle") {
+    switch (state) {
+      case "correct":
+        return { borderColor: "var(--trial-correct)", background: "var(--trial-correct-soft)", color: "var(--foreground)" }
+      case "wrong":
+        return { borderColor: "var(--trial-incorrect)", background: "var(--trial-incorrect-soft)", color: "var(--foreground)" }
+      case "selected":
+        return { borderColor: "var(--trial-select)", background: "var(--trial-select-soft)", color: "var(--foreground)" }
+      default:
+        return { borderColor: "var(--border)", background: "var(--card)", color: "var(--foreground)" }
+    }
+  }
+
   return (
     <div className="space-y-5">
       <fieldset>
@@ -78,20 +91,15 @@ export function TrueFalseReason({
             const selected = tf === value
             const isCorrect = answered && value === correctBool
             const isWrong = answered && selected && value !== correctBool
-            const cls = isCorrect
-              ? "border-emerald-500 bg-emerald-50 text-emerald-800 dark:bg-emerald-950/30 dark:text-emerald-200"
-              : isWrong
-                ? "border-rose-500 bg-rose-50 text-rose-800 dark:bg-rose-950/30 dark:text-rose-200"
-                : selected
-                  ? "border-indigo-500 bg-indigo-50 text-indigo-800 dark:bg-indigo-950/30 dark:text-indigo-200"
-                  : "border-stone-300 bg-stone-100 hover:border-indigo-400 dark:bg-[#222222]"
+            const state = isCorrect ? "correct" : isWrong ? "wrong" : selected ? "selected" : "idle"
             return (
               <button
                 key={value}
                 type="button"
                 onClick={() => pickTf(value)}
                 disabled={answered}
-                className={`flex flex-col items-center justify-center gap-2 rounded-2xl border-2 py-6 px-4 font-serif font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2 ${cls}`}
+                style={stateStyle(state)}
+                className={`flex flex-col items-center justify-center gap-2 rounded-2xl border-2 py-6 px-4 font-serif font-bold transition-[background-color,border-color] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--trial-select)] focus-visible:ring-offset-2 ${state === "idle" ? "hover:border-[var(--trial-select)] hover:bg-[var(--trial-select-soft)]" : ""}`}
                 aria-pressed={selected}
               >
                 <Icon className="size-6" aria-hidden="true" />
@@ -112,20 +120,15 @@ export function TrueFalseReason({
               const selected = reason === i
               const isCorrect = answered && i === correctReason
               const isWrong = answered && selected && i !== correctReason
-              const cls = isCorrect
-                ? "border-emerald-500 bg-emerald-50 text-emerald-800 dark:bg-emerald-950/30 dark:text-emerald-200"
-                : isWrong
-                  ? "border-rose-500 bg-rose-50 text-rose-800 dark:bg-rose-950/30 dark:text-rose-200"
-                  : selected
-                    ? "border-indigo-500 bg-indigo-50 dark:bg-indigo-950/30"
-                    : "border-stone-300 bg-stone-100 hover:border-indigo-400 dark:bg-[#222222]"
+              const state = isCorrect ? "correct" : isWrong ? "wrong" : selected ? "selected" : "idle"
               return (
                 <button
                   key={i}
                   type="button"
                   onClick={() => pickReason(i)}
                   disabled={answered}
-                  className={`block w-full rounded-xl border-2 px-4 py-3 text-left text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2 ${cls}`}
+                  style={stateStyle(state)}
+                  className={`block w-full rounded-xl border-2 px-4 py-3 text-left text-sm transition-[background-color,border-color] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--trial-select)] focus-visible:ring-offset-2 ${state === "idle" ? "hover:border-[var(--trial-select)] hover:bg-[var(--trial-select-soft)]" : ""}`}
                   aria-pressed={selected}
                 >
                   {r}

@@ -40,7 +40,7 @@ export function CloseReading({
           transition={{ duration: reduced ? 0.1 : 0.4, ease: "easeOut" }}
           style={{
             backgroundImage:
-              "linear-gradient(to right, #D4AF37 0%, #D4AF37 100%)",
+              "linear-gradient(to right, var(--trial-laureate) 0%, var(--trial-laureate) 100%)",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "0 100%",
             paddingBottom: "2px",
@@ -59,8 +59,8 @@ export function CloseReading({
       <div
         className="rounded-r-lg border-l-4 pl-4 pr-3 py-3"
         style={{
-          borderColor: "#D4AF37",
-          background: "rgba(248, 240, 220, 0.35)",
+          borderColor: "var(--trial-laureate)",
+          background: "var(--trial-laureate-soft)",
         }}
       >
         <p className="font-serif text-[18px] leading-[1.8] text-ink">{rendered}</p>

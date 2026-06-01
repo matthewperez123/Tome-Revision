@@ -10,10 +10,13 @@ import {
   MasterSigil,
   type SigilProps,
 } from "@/components/trials/sigils"
-import { trialColors } from "@/lib/animations/trial-tokens"
 
 // ─────────────────────────────────────────────
-// Tier definitions — canonical Apprentice / Scholar / Master.
+// Tier definitions. The data/storage keys stay canonical
+// (Apprentice / Scholar / Master) so saved attempts and per-question
+// difficulty tags are untouched; only the user-facing `label`, sigils and
+// colors change. Colors escalate up the cool-indigo ramp, with gold
+// reserved for the Laureate (mastery) tier. All driven by tier tokens.
 // Wisdom rewards are per-correct-answer (5/10/15 per spec).
 // ─────────────────────────────────────────────
 
@@ -22,9 +25,14 @@ export interface TrialTierDef {
   label: string
   subcopy: string
   sigil: FC<SigilProps>
+  /** Solid accent — AA against `onAccent` text. */
   accentColor: string
-  accentBg: string
-  borderColor: string
+  /** Text/label color for the accent on light/soft surfaces (AA). */
+  accentText: string
+  /** Text color to place on top of a solid `accentColor` fill (AA). */
+  onAccent: string
+  /** Soft tint background for the accent. */
+  accentSoft: string
   questions: number
   /** Wisdom per correct answer */
   wisdomPerCorrect: number
@@ -33,34 +41,37 @@ export interface TrialTierDef {
 export const TRIAL_TIERS: TrialTierDef[] = [
   {
     key: "Apprentice",
-    label: "Apprentice",
+    label: "Initiate",
     subcopy: "Check your understanding.",
     sigil: ApprenticeSigil,
-    accentColor: trialColors.stone500,
-    accentBg: "rgba(120,113,108,0.08)",
-    borderColor: "rgba(120,113,108,0.25)",
+    accentColor: "var(--trial-initiate)",
+    accentText: "var(--trial-initiate-text)",
+    onAccent: "var(--trial-initiate-on)",
+    accentSoft: "var(--trial-initiate-soft)",
     questions: 5,
     wisdomPerCorrect: 5,
   },
   {
     key: "Scholar",
-    label: "Scholar",
+    label: "Adept",
     subcopy: "Read between the lines.",
     sigil: ScholarSigil,
-    accentColor: trialColors.indigo,
-    accentBg: "rgba(99,102,241,0.08)",
-    borderColor: "rgba(99,102,241,0.25)",
+    accentColor: "var(--trial-adept)",
+    accentText: "var(--trial-adept-text)",
+    onAccent: "var(--trial-adept-on)",
+    accentSoft: "var(--trial-adept-soft)",
     questions: 8,
     wisdomPerCorrect: 10,
   },
   {
     key: "Master",
-    label: "Master",
+    label: "Laureate",
     subcopy: "Prove your mastery.",
     sigil: MasterSigil,
-    accentColor: trialColors.laurelGold,
-    accentBg: "rgba(212,175,55,0.08)",
-    borderColor: "rgba(212,175,55,0.25)",
+    accentColor: "var(--trial-laureate)",
+    accentText: "var(--trial-laureate-text)",
+    onAccent: "var(--trial-laureate-on)",
+    accentSoft: "var(--trial-laureate-soft)",
     questions: 10,
     wisdomPerCorrect: 15,
   },
@@ -126,7 +137,7 @@ export function TrialDifficultyCards({
               aria-label={`Choose ${tier.label} tier: ${tier.subcopy}. ${tier.questions} questions, ${tier.wisdomPerCorrect} Wisdom per correct answer.`}
               className="group flex flex-col items-center gap-4 rounded-2xl border-2 p-6 text-center transition-all bg-card shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
               style={{
-                borderColor: tier.borderColor,
+                borderColor: `color-mix(in srgb, ${tier.accentColor} 30%, transparent)`,
                 // @ts-expect-error — CSS custom property for ring
                 "--tw-ring-color": tier.accentColor,
               }}
@@ -134,7 +145,7 @@ export function TrialDifficultyCards({
               {/* Sigil */}
               <div
                 className="flex size-14 items-center justify-center rounded-xl"
-                style={{ background: tier.accentBg }}
+                style={{ background: tier.accentSoft }}
               >
                 <Sigil size={28} color={tier.accentColor} />
               </div>
@@ -150,7 +161,7 @@ export function TrialDifficultyCards({
                 <span className="text-xs text-muted-foreground">{tier.questions} questions</span>
                 <span
                   className="inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold"
-                  style={{ background: tier.accentBg, color: tier.accentColor }}
+                  style={{ background: tier.accentSoft, color: tier.accentText }}
                 >
                   +{tier.wisdomPerCorrect} Wisdom per correct
                 </span>
@@ -158,8 +169,8 @@ export function TrialDifficultyCards({
 
               {/* CTA */}
               <span
-                className="mt-2 inline-flex items-center justify-center rounded-xl px-6 py-2.5 text-sm font-semibold text-white transition-colors"
-                style={{ background: tier.accentColor }}
+                className="mt-2 inline-flex items-center justify-center rounded-xl px-6 py-2.5 text-sm font-semibold transition-colors"
+                style={{ background: tier.accentColor, color: tier.onAccent }}
               >
                 Begin
               </span>

@@ -6,8 +6,12 @@ export interface SigilProps extends SVGProps<SVGSVGElement> {
 }
 
 /**
- * Apprentice sigil — a single laurel leaf, stroked.
- * One-color, flat vector, stroke-width 1.5.
+ * Initiate sigil (tier key "Apprentice") — a single upright laurel leaf.
+ *
+ * Tier 1 of the coherent Trials sigil family: one leaf → paired sprig
+ * (Adept) → laurel crown (Laureate). Shared geometry: viewBox 24, stroke
+ * 1.5, round caps/joins, a symmetric rounded-vesica leaf primitive, and a
+ * half-opacity midrib. Color is driven by a tier token (var(--trial-*)).
  */
 export function ApprenticeSigil({
   size = 24,
@@ -28,12 +32,11 @@ export function ApprenticeSigil({
       {...rest}
     >
       {/* Stem */}
-      <path d="M12 21 L12 6" />
-      {/* Leaf blade — teardrop arch around stem */}
-      <path d="M12 6 C 7 7, 5.5 11.5, 7.5 16 C 9 17, 11 16.5, 12 15" />
-      <path d="M12 6 C 17 7, 18.5 11.5, 16.5 16 C 15 17, 13 16.5, 12 15" />
-      {/* Central vein */}
-      <path d="M12 7.5 L12 14.5" opacity={0.5} />
+      <path d="M12 21V12" />
+      {/* Symmetric leaf blade (rounded vesica) */}
+      <path d="M12 3.5C9 6 9 10 12 12C15 10 15 6 12 3.5Z" />
+      {/* Midrib */}
+      <path d="M12 5.2V11" opacity={0.45} />
     </svg>
   )
 }

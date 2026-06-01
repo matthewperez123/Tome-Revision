@@ -99,6 +99,10 @@
   --color-tome-error: var(--tome-error);
   --color-tome-accent: var(--tome-accent);
 
+  /* ── Virgil mark — AI tutor identity (cool indigo) ── */
+  --color-virgil: var(--virgil);
+  --color-virgil-foreground: var(--virgil-foreground);
+
   /* ── Tome: Motion Easings ────────────────── */
   --ease-scholarly: var(--tome-ease-scholarly);
   --ease-out-expo: var(--tome-ease-out-expo);
@@ -237,6 +241,9 @@
   --indigo-default: #6366F1;
   --indigo-hover: #4F46E5;
   --indigo-muted: #EEF0FB;
+  /* Virgil mark — deepened cool indigo (OKLCH ~62% chroma, hue 264) */
+  --virgil: #2B59C3;
+  --virgil-foreground: #FFFFFF;
   --green-default: #2D9A47;
   --green-muted: #ECFAEE;
   --red-default: #C84A52;
@@ -246,6 +253,34 @@
   --amber-default: #C8801F;
   --amber-muted: #FBF4E8;
   --flame-streak: #D14820;
+
+  /* ── Trials — difficulty tier ramp (cool indigo → gold mastery) ── */
+  --trial-initiate: #5457E0;
+  --trial-initiate-on: #FFFFFF;
+  --trial-initiate-soft: #ECEDFB;
+  --trial-initiate-text: #4338CA;
+  --trial-adept: #4338CA;
+  --trial-adept-on: #FFFFFF;
+  --trial-adept-soft: #E5E5FA;
+  --trial-adept-text: #3730A3;
+  --trial-laureate: #B8924A;
+  --trial-laureate-on: #1A1816;
+  --trial-laureate-soft: #F2EAD0;
+  --trial-laureate-text: #7A5F26;
+  --trial-laureate-bright: #D8B45C;
+
+  /* ── Trials — answer / interaction states ── */
+  --trial-select: #4F46E5;
+  --trial-select-on: #FFFFFF;
+  --trial-select-soft: #EEF0FB;
+  --trial-correct: #2D9A47;
+  --trial-correct-on: #FFFFFF;
+  --trial-correct-soft: #ECFAEE;
+  --trial-correct-text: #1B6B30;
+  --trial-incorrect: #C84A52;
+  --trial-incorrect-on: #FFFFFF;
+  --trial-incorrect-soft: #FBEEEF;
+  --trial-incorrect-text: #9A2F36;
 }
 
 .dark {
@@ -298,6 +333,9 @@
   --indigo-default: #6366F1;
   --indigo-hover: #818CF8;
   --indigo-muted: #1A1B2E;
+  /* Virgil mark — lightened on dark surfaces for AA (3:1+) contrast */
+  --virgil: #3D6BD6;
+  --virgil-foreground: #FFFFFF;
   --green-default: #6EAA6E;
   --green-muted: #0F1A12;
   --red-default: #C85858;
@@ -307,6 +345,34 @@
   --amber-default: #C8A04A;
   --amber-muted: #1A1208;
   --flame-streak: #E8734A;
+
+  /* ── Trials — difficulty tier ramp (cool indigo → gold mastery) ── */
+  --trial-initiate: #8E94F2;
+  --trial-initiate-on: #15151E;
+  --trial-initiate-soft: #1E1F33;
+  --trial-initiate-text: #8E94F2;
+  --trial-adept: #A5B4FC;
+  --trial-adept-on: #15151E;
+  --trial-adept-soft: #20223A;
+  --trial-adept-text: #A5B4FC;
+  --trial-laureate: #C8A96E;
+  --trial-laureate-on: #1A1208;
+  --trial-laureate-soft: #2A2218;
+  --trial-laureate-text: #C8A96E;
+  --trial-laureate-bright: #E0C384;
+
+  /* ── Trials — answer / interaction states ── */
+  --trial-select: #818CF8;
+  --trial-select-on: #15151E;
+  --trial-select-soft: #1A1B2E;
+  --trial-correct: #6EAA6E;
+  --trial-correct-on: #0A0A0A;
+  --trial-correct-soft: #0F1A12;
+  --trial-correct-text: #8FD08F;
+  --trial-incorrect: #C85858;
+  --trial-incorrect-on: #0A0A0A;
+  --trial-incorrect-soft: #1A0F10;
+  --trial-incorrect-text: #E89090;
 }
 
 @layer base {

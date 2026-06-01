@@ -197,19 +197,3 @@ export const reduced = {
     visible: { opacity: 1, transition: { duration: 0.15 } },
   } satisfies Variants,
 } as const
-
-// ── Colour tokens local to Trials ────────────
-// Semantic names so the overlay doesn't hardcode hex.
-
-export const trialColors = {
-  laurelGold: "#D4AF37",
-  brightGold: "#F0C850",
-  laurelGreen: "#16A34A",
-  ember: "#DC2626",
-  indigo: "#6366F1",
-  parchment: "#F8F0DC",
-  ink: "var(--tome-ink, #1C1917)",
-  stone400: "#A8A29E",
-  stone500: "#78716C",
-  stone100: "#F5F5F4",
-} as const

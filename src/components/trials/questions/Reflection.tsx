@@ -40,10 +40,10 @@ export function Reflection({
   const overMax = wordCount > wordMax
 
   const counterColor = overMax
-    ? "#6366F1"
+    ? "var(--trial-select)"
     : meetsMin
-    ? "#D4AF37"
-    : "rgba(168,162,158,0.9)"
+    ? "var(--trial-laureate-text)"
+    : "var(--muted-foreground)"
 
   function submit() {
     if (answered) return
@@ -69,13 +69,13 @@ export function Reflection({
           }
           className="shrink-0 grid place-items-center size-9 rounded-full"
           style={{
-            background: "rgba(212,175,55,0.10)",
-            border: "1px solid rgba(212,175,55,0.40)",
+            background: "color-mix(in srgb, var(--trial-laureate) 12%, transparent)",
+            border: "1px solid color-mix(in srgb, var(--trial-laureate) 40%, transparent)",
           }}
         >
           <span
             className="font-serif text-lg leading-none"
-            style={{ color: "#D4AF37" }}
+            style={{ color: "var(--trial-laureate-text)" }}
           >
             ✦
           </span>
@@ -83,7 +83,7 @@ export function Reflection({
         <div className="min-w-0">
           <p
             className="text-[11px] uppercase tracking-wider font-sans font-semibold"
-            style={{ color: "#D4AF37" }}
+            style={{ color: "var(--trial-laureate-text)" }}
           >
             Reflection · Virgil grades
           </p>
@@ -104,7 +104,7 @@ export function Reflection({
           disabled={answered}
           rows={12}
           placeholder="Write thoughtfully — your own reading, in your own words."
-          className="w-full resize-y rounded-xl border-2 border-border bg-card px-4 py-3 font-serif text-[17px] leading-relaxed text-ink placeholder:text-muted-foreground/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:[--tw-ring-color:#D4AF37] disabled:opacity-80"
+          className="w-full resize-y rounded-xl border-2 border-border bg-card px-4 py-3 font-serif text-[17px] leading-relaxed text-ink placeholder:text-muted-foreground/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:[--tw-ring-color:var(--trial-laureate)] disabled:opacity-80"
           aria-label="Reflection response"
           aria-describedby={`${question.id}-counter`}
         />
@@ -131,7 +131,10 @@ export function Reflection({
             className="rounded-xl font-semibold"
             style={
               meetsMin
-                ? { background: "#D4AF37", color: "#111" }
+                ? {
+                    background: "var(--trial-laureate)",
+                    color: "var(--trial-laureate-on)",
+                  }
                 : undefined
             }
           >

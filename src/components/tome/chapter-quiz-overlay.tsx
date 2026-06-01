@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useReducer, useState } from "react"
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion"
-import { ChevronRight, X } from "lucide-react"
+import { ChevronRight, Flame, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   quizReducer,
@@ -209,7 +209,10 @@ function WisdomFloat({ amount, show, reduced }: { amount: number; show: boolean;
           className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 z-10 flex items-center gap-1 select-none"
         >
           <WisdomStar size={20} />
-          <span className="font-semibold text-sm" style={{ color: "#D4AF37" }}>
+          <span
+            className="font-semibold text-sm"
+            style={{ color: "var(--trial-laureate-text)" }}
+          >
             +{amount} Wisdom
           </span>
         </motion.div>
@@ -486,25 +489,59 @@ function QuizRunner({
     dispatch({ type: "NEXT" })
   }
 
+  // Current consecutive-correct run, derived from results (no engine field).
+  const streak = state.results.reduce(
+    (acc, r) => (r === "correct" ? acc + 1 : r === "wrong" ? 0 : acc),
+    0
+  )
+
   return (
     <div className="flex flex-col h-full">
-      {/* Header */}
-      <div className="flex items-center justify-between px-6 py-3 bg-card border-b border-border">
-        <div className="flex items-center gap-2 min-w-0">
-          <TierSigil size={18} color={tierDef.accentColor} />
-          <div className="flex flex-col gap-0.5 min-w-0">
-            <span className="text-[11px] font-sans text-muted-foreground truncate max-w-[220px]">
-              {book.title}
-            </span>
-            <span className="text-[11px] font-sans text-muted-foreground truncate max-w-[220px]">
-              {chapterTitle}
-            </span>
-          </div>
+      {/* HUD — difficulty · score · streak · hearts */}
+      <div className="flex items-center justify-between gap-3 px-6 py-2.5 bg-card border-b border-border">
+        {/* Difficulty + context */}
+        <div className="flex items-center gap-2.5 min-w-0">
+          <span
+            className="flex items-center gap-1.5 rounded-full pl-1.5 pr-2.5 py-1 text-xs font-semibold font-sans"
+            style={{ background: tierDef.accentSoft, color: tierDef.accentText }}
+          >
+            <TierSigil size={16} color={tierDef.accentColor} />
+            {tierDef.label}
+          </span>
+          <span className="text-[11px] font-sans text-muted-foreground truncate hidden sm:block max-w-[200px]">
+            {book.title} · {chapterTitle}
+          </span>
         </div>
-        <HeartsDisplay current={state.hearts} max={hearts} lostIndex={lostIndex} />
+
+        {/* Stats */}
+        <div className="flex items-center gap-3 shrink-0">
+          {/* Wisdom score */}
+          <span
+            className="flex items-center gap-1 text-xs font-semibold tabular-nums font-sans"
+            style={{ color: "var(--trial-laureate-text)" }}
+            aria-label={`${state.xpEarned} Wisdom earned`}
+          >
+            <WisdomStar size={14} />
+            {state.xpEarned}
+          </span>
+          {/* Streak */}
+          <span
+            className={`flex items-center gap-1 text-xs font-semibold tabular-nums font-sans transition-opacity ${streak > 1 ? "opacity-100" : "opacity-40"}`}
+            style={{ color: "var(--flame-streak)" }}
+            aria-label={`${streak} correct in a row`}
+          >
+            <Flame size={14} className="fill-current" />
+            {streak}
+          </span>
+          <HeartsDisplay current={state.hearts} max={hearts} lostIndex={lostIndex} />
+        </div>
       </div>
 
-      <TrialProgressBar current={currentIdx} total={state.questions.length} />
+      <TrialProgressBar
+        current={currentIdx}
+        total={state.questions.length}
+        accentColor={tierDef.accentColor}
+      />
 
       {/* Screen-reader live region */}
       <div role="status" aria-live="polite" className="sr-only">
@@ -549,7 +586,9 @@ function QuizRunner({
                 q.type !== "close_reading" &&
                 q.type !== "vocabulary_in_context" &&
                 q.type !== "reflection" && (
-                  <p className="text-ink text-lg leading-relaxed font-serif">{q.prompt}</p>
+                  <p className="text-ink text-2xl leading-snug font-serif tracking-tight">
+                    {q.prompt}
+                  </p>
                 )}
 
               {/* Renderer */}
@@ -589,17 +628,23 @@ function QuizRunner({
                         exit="hidden"
                         className="rounded-xl border-2 px-4 py-3 space-y-1.5"
                         style={{
-                          borderColor: "rgba(212,175,55,0.40)",
-                          background: "rgba(212,175,55,0.06)",
+                          borderColor:
+                            "color-mix(in srgb, var(--trial-laureate) 40%, transparent)",
+                          background: "var(--trial-laureate-soft)",
                         }}
                       >
-                        <div className="flex items-center gap-2 font-sans text-sm font-bold">
+                        <div
+                          className="flex items-center gap-2 font-sans text-sm font-bold"
+                          style={{ color: "var(--trial-laureate-text)" }}
+                        >
                           <span
                             className="grid place-items-center size-5 rounded-full"
                             style={{
-                              background: "rgba(212,175,55,0.15)",
-                              border: "1px solid rgba(212,175,55,0.5)",
-                              color: "#D4AF37",
+                              background:
+                                "color-mix(in srgb, var(--trial-laureate) 18%, transparent)",
+                              border:
+                                "1px solid color-mix(in srgb, var(--trial-laureate) 50%, transparent)",
+                              color: "var(--trial-laureate-text)",
                             }}
                             aria-hidden
                           >
@@ -630,14 +675,30 @@ function QuizRunner({
                     initial="hidden"
                     animate="visible"
                     exit="hidden"
-                    className={`rounded-xl border-2 px-4 py-3 space-y-1.5 ${
-                      isCorrect
-                        ? "border-emerald-300 bg-emerald-50/60 dark:border-emerald-800 dark:bg-emerald-950/20"
-                        : "border-rose-300 bg-rose-50/60 dark:border-rose-800 dark:bg-rose-950/20"
-                    }`}
+                    className="rounded-xl border-2 px-4 py-3 space-y-1.5"
+                    style={{
+                      borderColor: isCorrect
+                        ? "color-mix(in srgb, var(--trial-correct) 45%, transparent)"
+                        : "color-mix(in srgb, var(--trial-incorrect) 45%, transparent)",
+                      background: isCorrect
+                        ? "var(--trial-correct-soft)"
+                        : "var(--trial-incorrect-soft)",
+                    }}
                   >
-                    <div className="flex items-center gap-2 font-sans text-sm font-bold">
-                      <TierSigil size={16} color={tierDef.accentColor} />
+                    <div
+                      className="flex items-center gap-2 font-sans text-sm font-bold"
+                      style={{
+                        color: isCorrect
+                          ? "var(--trial-correct-text)"
+                          : "var(--trial-incorrect-text)",
+                      }}
+                    >
+                      <TierSigil
+                        size={16}
+                        color={
+                          isCorrect ? "var(--trial-correct)" : "var(--trial-incorrect)"
+                        }
+                      />
                       {isCorrect ? "Correct" : "Not quite"}
                     </div>
                     {!isCorrect && q.correct_answer && q.type !== "fill_blank" && (
