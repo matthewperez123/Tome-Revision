@@ -37,13 +37,13 @@ export function VirgilCompanion() {
       }}
       whileHover={{ scale: 1.12 }}
       whileTap={{ scale: 0.9 }}
-      className="fixed bottom-6 right-6 z-50 size-10 rounded-full bg-[#C9A84C] ring-2 ring-[#C9A84C]/50 shadow-lg overflow-hidden cursor-pointer outline-none flex items-center justify-center font-semibold leading-none tracking-tight text-xs focus-visible:ring-4 focus-visible:ring-[#C9A84C]/60"
+      className="fixed bottom-6 right-6 z-50 size-10 rounded-full bg-virgil ring-2 ring-virgil/50 shadow-lg overflow-hidden cursor-pointer outline-none flex items-center justify-center font-semibold leading-none tracking-tight text-xs focus-visible:ring-4 focus-visible:ring-virgil/60"
       aria-label="Open Virgil chat"
       aria-hidden={!revealed}
       tabIndex={revealed ? 0 : -1}
       style={{ pointerEvents: revealed ? "auto" : "none" }}
     >
-      <span className="text-[#1a1a2e]">V</span>
+      <span className="text-virgil-foreground">V</span>
       {hasNotification && (
         <motion.span
           animate={{ scale: [1, 1.4, 1] }}

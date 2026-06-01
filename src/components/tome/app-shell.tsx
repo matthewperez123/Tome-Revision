@@ -24,19 +24,19 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     pathname === "/educators" ||
     pathname === "/library"
 
-  // Landing page has its own navbar — hide app chrome
+  // Landing page has its own navbar — hide app chrome. Marketing surfaces
+  // also omit the floating Virgil companion (no VirgilWrapper here); the
+  // companion only belongs to authenticated app surfaces below.
   if (isLanding) {
     return (
       <ErrorBoundary>
       <TomeEconomyProvider>
       <BookProgressProvider>
       <TooltipProvider>
-      <VirgilWrapper>
         <main className="min-h-screen">
           <PageTransition>{children}</PageTransition>
         </main>
         <Toaster />
-      </VirgilWrapper>
       </TooltipProvider>
       </BookProgressProvider>
       </TomeEconomyProvider>
