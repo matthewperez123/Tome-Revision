@@ -183,11 +183,11 @@ export default function BookDetailPage() {
 
   return (
     <>
-      <div className="flex flex-col min-h-full">
+      <div className="flex flex-col min-h-full max-w-4xl w-full mx-auto px-4 sm:px-6">
         {/* ── Breadcrumb ── */}
         <nav
           aria-label="Breadcrumb"
-          className="flex items-center gap-1 px-4 pt-4 pb-2 text-[11px] text-muted-foreground"
+          className="flex items-center gap-1 pt-4 pb-2 text-xs text-muted-foreground"
         >
           <Link href="/library/browse" className="hover:text-foreground transition-colors">Library</Link>
           <ChevronRight className="size-3 shrink-0" />
@@ -203,10 +203,10 @@ export default function BookDetailPage() {
 
         {/* ── Hero ── */}
         <BlurFade delay={0.05} inView>
-          <section className="px-4 py-4">
+          <section className="py-4">
             <div className="flex gap-5 md:gap-8 items-start">
               {/* Cover */}
-              <div className="w-28 shrink-0 sm:w-36 md:w-44">
+              <div className="w-32 shrink-0 sm:w-40 md:w-48">
                 <ClassicsCover
                   bookId={book.id}
                   title={book.title}
@@ -224,28 +224,25 @@ export default function BookDetailPage() {
                 {/* Tradition + difficulty badges */}
                 <div className="flex flex-wrap items-center gap-1.5 mb-2">
                   <span
-                    className="rounded-full px-2 py-0.5 text-[10px] font-semibold"
+                    className="rounded-full px-2 py-0.5 text-xs font-semibold"
                     style={{ background: tradColor.bg, color: tradColor.text }}
                   >
                     {book.tradition}
                   </span>
                   <span
-                    className="rounded-full px-2 py-0.5 text-[10px] font-semibold"
+                    className="rounded-full px-2 py-0.5 text-xs font-semibold"
                     style={{ background: diffColor.bg, color: diffColor.text }}
                   >
                     {book.difficulty}
                   </span>
-                  <span className="flex items-center gap-1 text-[10px] text-muted-foreground">
+                  <span className="flex items-center gap-1 text-xs text-muted-foreground">
                     <Globe className="size-2.5" />
                     {book.country}
                   </span>
                 </div>
 
                 {/* Title */}
-                <h1
-                  className="font-serif text-xl font-bold leading-tight tracking-tight sm:text-2xl md:text-3xl"
-                  style={{ letterSpacing: "-0.02em" }}
-                >
+                <h1 className="font-serif text-xl font-bold leading-tight tracking-tight sm:text-2xl md:text-3xl">
                   {book.title}
                 </h1>
 
@@ -259,7 +256,7 @@ export default function BookDetailPage() {
                 </div>
 
                 {/* Stats row */}
-                <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-muted-foreground">
+                <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground">
                   <span className="flex items-center gap-1">
                     <LayoutList className="size-3" />
                     {book.chapters} {getUnitLabel(book.structuralUnitType ?? 'chapter', book.chapters !== 1)}
@@ -285,7 +282,7 @@ export default function BookDetailPage() {
                 {/* Progress bar (if reading) */}
                 {progress && progressPct > 0 && (
                   <div className="mt-3 w-full max-w-[260px]">
-                    <div className="flex items-center justify-between text-[10px] text-muted-foreground mb-1">
+                    <div className="flex items-center justify-between text-xs text-muted-foreground mb-1">
                       <span>{getShortProgress(book.structuralUnitType ?? 'chapter', chaptersDone, book.chapters)}</span>
                       <span>{progressPct}%</span>
                     </div>
@@ -334,7 +331,7 @@ export default function BookDetailPage() {
         </BlurFade>
 
         {/* ── Body ── */}
-        <div className="flex-1 px-4 pb-24 sm:pb-8 space-y-8 mt-4 max-w-3xl w-full mx-auto">
+        <div className="flex-1 pb-24 sm:pb-8 space-y-8 mt-4">
 
           {/* ── Synopsis ── */}
           <BlurFade delay={0.1} inView>
@@ -511,10 +508,10 @@ export default function BookDetailPage() {
           <BlurFade delay={0.16} inView>
             <section>
               <div className="flex items-center justify-between mb-3">
-                <h2 className="text-sm font-semibold tracking-tight flex items-center gap-2">
-                  <LayoutList className="size-4 text-muted-foreground" />
+                <h2 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground flex items-center gap-2">
+                  <LayoutList className="size-4" />
                   {getUnitLabel(book.structuralUnitType ?? 'chapter', true)}
-                  <span className="text-xs text-muted-foreground font-normal">({chapters.length})</span>
+                  <span className="font-normal normal-case tracking-normal">({chapters.length})</span>
                 </h2>
               </div>
 
@@ -564,7 +561,7 @@ export default function BookDetailPage() {
             <BlurFade delay={0.18} inView>
               <section>
                 <div className="flex items-center justify-between mb-3">
-                  <h2 className="text-sm font-semibold tracking-tight">
+                  <h2 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
                     More {book.tradition} Literature
                   </h2>
                   <Link
@@ -574,7 +571,7 @@ export default function BookDetailPage() {
                     See all <ChevronRight className="size-3" />
                   </Link>
                 </div>
-                <div className="flex gap-3 overflow-x-auto scrollbar-none pb-1 -mx-4 px-4">
+                <div className="flex gap-3 overflow-x-auto scrollbar-none pb-1 -mx-4 px-4 sm:-mx-6 sm:px-6">
                   {relatedBooks.map((b) => (
                     <div key={b.id} className="w-32 shrink-0">
                       <BookCard book={b} size="sm" />
@@ -589,10 +586,10 @@ export default function BookDetailPage() {
           {authorBooks.length > 0 && (
             <BlurFade delay={0.2} inView>
               <section>
-                <h2 className="text-sm font-semibold tracking-tight mb-3">
+                <h2 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">
                   More by {book.author}
                 </h2>
-                <div className="flex gap-3 overflow-x-auto scrollbar-none pb-1 -mx-4 px-4">
+                <div className="flex gap-3 overflow-x-auto scrollbar-none pb-1 -mx-4 px-4 sm:-mx-6 sm:px-6">
                   {authorBooks.map((b) => (
                     <div key={b.id} className="w-32 shrink-0">
                       <BookCard book={b} size="sm" />
@@ -716,13 +713,13 @@ function ChapterRow({ chapter, index, status, bookId, tradColor }: ChapterRowPro
 
 function BookDetailSkeleton() {
   return (
-    <div className="px-4 py-4 max-w-3xl mx-auto space-y-8">
+    <div className="max-w-4xl w-full mx-auto px-4 sm:px-6 py-4 space-y-8">
       {/* Breadcrumb */}
       <Skeleton className="h-3 w-48" />
 
       {/* Hero */}
-      <div className="flex gap-5">
-        <Skeleton className="w-36 shrink-0 rounded-lg" style={{ aspectRatio: "200/280" }} />
+      <div className="flex gap-5 md:gap-8">
+        <Skeleton className="w-32 shrink-0 sm:w-40 md:w-48 rounded-lg" style={{ aspectRatio: "200/280" }} />
         <div className="flex-1 space-y-3 pt-2">
           <Skeleton className="h-3 w-32" />
           <Skeleton className="h-7 w-4/5" />
