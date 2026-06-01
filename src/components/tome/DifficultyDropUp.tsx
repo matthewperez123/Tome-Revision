@@ -77,7 +77,7 @@ export function DifficultyDropUp({
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
             onClick={onClose}
-            className="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm"
+            className="fixed inset-0 z-[70] bg-black/40 backdrop-blur-sm"
             aria-hidden="true"
           />
 
@@ -88,7 +88,7 @@ export function DifficultyDropUp({
             animate={reduced ? { opacity: 1 } : { y: 0 }}
             exit={reduced ? { opacity: 0 } : { y: "100%" }}
             transition={reduced ? { duration: 0.2 } : springs.gentle}
-            className="fixed inset-x-0 bottom-0 z-50 mx-auto max-w-2xl rounded-t-2xl border border-b-0 border-border bg-background shadow-[0_-8px_40px_rgba(0,0,0,0.25)]"
+            className="fixed inset-x-0 bottom-0 z-[80] mx-auto max-w-2xl rounded-t-2xl border border-b-0 border-border bg-background shadow-[0_-8px_40px_rgba(0,0,0,0.25)]"
             role="dialog"
             aria-modal="true"
             aria-label="Choose a trial difficulty"
