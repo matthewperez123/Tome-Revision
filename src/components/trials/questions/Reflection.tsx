@@ -40,9 +40,9 @@ export function Reflection({
   const overMax = wordCount > wordMax
 
   const counterColor = overMax
-    ? "var(--trial-select)"
+    ? "var(--codex-primary)"
     : meetsMin
-    ? "var(--trial-laureate-text)"
+    ? "var(--codex-tier-laureate-text)"
     : "var(--muted-foreground)"
 
   function submit() {
@@ -69,13 +69,13 @@ export function Reflection({
           }
           className="shrink-0 grid place-items-center size-9 rounded-full"
           style={{
-            background: "color-mix(in srgb, var(--trial-laureate) 12%, transparent)",
-            border: "1px solid color-mix(in srgb, var(--trial-laureate) 40%, transparent)",
+            background: "color-mix(in srgb, var(--codex-tier-laureate) 12%, transparent)",
+            border: "1px solid color-mix(in srgb, var(--codex-tier-laureate) 40%, transparent)",
           }}
         >
           <span
             className="font-serif text-lg leading-none"
-            style={{ color: "var(--trial-laureate-text)" }}
+            style={{ color: "var(--codex-tier-laureate-text)" }}
           >
             ✦
           </span>
@@ -83,7 +83,7 @@ export function Reflection({
         <div className="min-w-0">
           <p
             className="text-[11px] uppercase tracking-wider font-sans font-semibold"
-            style={{ color: "var(--trial-laureate-text)" }}
+            style={{ color: "var(--codex-tier-laureate-text)" }}
           >
             Reflection · Virgil grades
           </p>
@@ -104,7 +104,7 @@ export function Reflection({
           disabled={answered}
           rows={12}
           placeholder="Write thoughtfully — your own reading, in your own words."
-          className="w-full resize-y rounded-xl border-2 border-border bg-card px-4 py-3 font-serif text-[17px] leading-relaxed text-ink placeholder:text-muted-foreground/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:[--tw-ring-color:var(--trial-laureate)] disabled:opacity-80"
+          className="w-full resize-y rounded-xl border-2 border-border bg-card px-4 py-3 font-serif text-[17px] leading-relaxed text-ink placeholder:text-muted-foreground/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:[--tw-ring-color:var(--codex-tier-laureate)] disabled:opacity-80"
           aria-label="Reflection response"
           aria-describedby={`${question.id}-counter`}
         />
@@ -132,8 +132,8 @@ export function Reflection({
             style={
               meetsMin
                 ? {
-                    background: "var(--trial-laureate)",
-                    color: "var(--trial-laureate-on)",
+                    background: "var(--codex-tier-laureate)",
+                    color: "var(--codex-tier-laureate-on)",
                   }
                 : undefined
             }

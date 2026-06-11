@@ -1397,8 +1397,12 @@ export default function ReaderPage() {
                         <div className="mb-6 flex flex-col items-center gap-3">
                           <button
                             onClick={handleFinishChapter}
-                            className="flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold text-[#1a1a2e] transition-all hover:opacity-90 active:scale-95"
-                            style={{ background: "linear-gradient(135deg, #D4A04C, #B8862D)" }}
+                            className="codex-pressable flex min-h-[48px] items-center gap-2 px-8 text-sm font-bold"
+                            style={{
+                              background: "var(--codex-primary)",
+                              color: "var(--codex-on-primary)",
+                              borderRadius: "var(--codex-radius-btn)",
+                            }}
                           >
                             <BookCheck className="size-4" />
                             {currentChapter === totalChapters - 1

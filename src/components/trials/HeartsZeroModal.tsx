@@ -68,10 +68,19 @@ export function HeartsZeroModal({
             animate={{ scale: 1, y: 0 }}
             exit={{ scale: 0.95, opacity: 0 }}
             transition={{ type: "spring", stiffness: 260, damping: 22 }}
-            className="w-full max-w-md rounded-2xl bg-card border border-border p-8 space-y-6 text-center shadow-xl"
+            className="w-full max-w-md bg-card border-2 p-8 space-y-6 text-center shadow-xl"
+            style={{
+              borderRadius: "var(--codex-radius-card)",
+              borderColor:
+                "color-mix(in srgb, var(--codex-danger) 35%, var(--border))",
+            }}
           >
             <div className="flex justify-center">
-              <HeartCrack className="w-16 h-16 text-rose-500" aria-hidden />
+              <HeartCrack
+                className="w-16 h-16"
+                style={{ color: "var(--codex-danger)" }}
+                aria-hidden
+              />
             </div>
 
             <div className="space-y-2">
@@ -101,7 +110,16 @@ export function HeartsZeroModal({
                 type="button"
                 onClick={handleRefill}
                 disabled={!canRefill}
-                className="w-full rounded-xl gap-2"
+                className="codex-pressable-danger w-full min-h-[44px] gap-2"
+                style={
+                  canRefill
+                    ? {
+                        background: "var(--codex-danger)",
+                        color: "var(--codex-danger-on)",
+                        borderRadius: "var(--codex-radius-btn)",
+                      }
+                    : { borderRadius: "var(--codex-radius-btn)" }
+                }
               >
                 <Coins className="w-4 h-4" />
                 Use {HEART_REFILL_COIN_COST} coins to refill (you have {stats.coins})
@@ -111,7 +129,8 @@ export function HeartsZeroModal({
                 type="button"
                 variant="secondary"
                 onClick={onReviewChapter}
-                className="w-full rounded-xl"
+                className="w-full"
+                style={{ borderRadius: "var(--codex-radius-btn)" }}
               >
                 Review chapter
               </Button>

@@ -24,6 +24,55 @@
   background: rgba(212,160,76,0.6);
 }
 
+/* ── Codex design-port: pressed-edge interactive surfaces ──────
+   Scoped helper for Daily/Weekly Challenge + Continue Reading +
+   Leagues. Duolingo-style 3D bottom edge that depresses on press. */
+.codex-pressable {
+  box-shadow: var(--codex-edge-primary);
+  transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease, border-color 120ms ease;
+}
+.codex-pressable:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 0 var(--codex-primary-edge);
+}
+.codex-pressable-success {
+  box-shadow: var(--codex-edge-success);
+}
+.codex-pressable-success:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 0 var(--codex-success-edge);
+}
+.codex-pressable-danger {
+  box-shadow: var(--codex-edge-danger);
+}
+.codex-pressable-danger:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 0 var(--codex-danger-edge);
+}
+/* Tier-aware variant: element sets its own --codex-edge inline. */
+.codex-pressable-edge {
+  box-shadow: 0 4px 0 0 var(--codex-edge, var(--codex-primary-edge));
+  transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease, border-color 120ms ease;
+}
+.codex-pressable-edge:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 0 var(--codex-edge, var(--codex-primary-edge));
+}
+@media (prefers-reduced-motion: reduce) {
+  .codex-pressable,
+  .codex-pressable-success,
+  .codex-pressable-danger,
+  .codex-pressable-edge {
+    transition: background-color 120ms ease, border-color 120ms ease;
+  }
+  .codex-pressable:active:not(:disabled),
+  .codex-pressable-success:active:not(:disabled),
+  .codex-pressable-danger:active:not(:disabled),
+  .codex-pressable-edge:active:not(:disabled) {
+    transform: none;
+  }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -281,6 +330,55 @@
   --trial-incorrect-on: #FFFFFF;
   --trial-incorrect-soft: #FBEEEF;
   --trial-incorrect-text: #9A2F36;
+
+  /* ── Codex design-port tokens — APPROXIMATED (light) ──────────
+     Scoped to Daily Challenge, Weekly Challenge/Scores, Continue
+     Reading. Approximated from pensive-tu.vercel.app — replace with
+     exact Codex repo values when the source is confirmed. */
+  --codex-primary: #6C63FF;
+  --codex-primary-hover: #5A51E6;
+  --codex-primary-edge: #4A40C2;
+  --codex-primary-soft: #EEEDFE;
+  --codex-primary-text: #4A40C2;
+  --codex-on-primary: #FFFFFF;
+  --codex-reward: #FFC800;
+  --codex-reward-soft: #FFF6D6;
+  --codex-reward-text: #9A7B00;
+  --codex-success: #58CC02;
+  --codex-success-edge: #46A302;
+  --codex-success-soft: #E7F8D8;
+  --codex-success-text: #3C8500;
+  --codex-success-on: #FFFFFF;
+  --codex-danger: #FF4B4B;
+  --codex-danger-edge: #D63A3A;
+  --codex-danger-soft: #FFE5E5;
+  --codex-danger-text: #C62B2B;
+  --codex-danger-on: #FFFFFF;
+  --codex-surface: #FFFFFF;
+  --codex-border: #E3E1F0;
+  --codex-track: #ECEAF6;
+  --codex-radius-card: 1rem;
+  --codex-radius-btn: 0.75rem;
+  --codex-border-w: 2px;
+  --codex-edge-primary: 0 4px 0 0 var(--codex-primary-edge);
+  --codex-edge-success: 0 4px 0 0 var(--codex-success-edge);
+  --codex-edge-danger: 0 4px 0 0 var(--codex-danger-edge);
+  /* Trial tier ramp in Codex language: indigo → deeper indigo → gold mastery */
+  --codex-tier-initiate: #8B83FF;
+  --codex-tier-initiate-soft: #EEEDFE;
+  --codex-tier-initiate-text: #5A51E6;
+  --codex-tier-initiate-on: #FFFFFF;
+  --codex-tier-initiate-edge: #6C63FF;
+  --codex-tier-adept: #6C63FF;
+  --codex-tier-adept-soft: #E6E4FD;
+  --codex-tier-adept-text: #4A40C2;
+  --codex-tier-adept-on: #FFFFFF;
+  --codex-tier-adept-edge: #4A40C2;
+  --codex-tier-laureate: #FFC800;
+  --codex-tier-laureate-soft: #FFF6D6;
+  --codex-tier-laureate-text: #9A7B00;
+  --codex-tier-laureate-on: #3A2E00;
+  --codex-tier-laureate-edge: #C99E00;
 }
 
 .dark {
@@ -373,6 +471,53 @@
   --trial-incorrect-on: #0A0A0A;
   --trial-incorrect-soft: #1A0F10;
   --trial-incorrect-text: #E89090;
+
+  /* ── Codex design-port tokens — APPROXIMATED (dark) ──────────
+     Lightened primary/accents for contrast on dark surfaces. */
+  --codex-primary: #8B83FF;
+  --codex-primary-hover: #9A93FF;
+  --codex-primary-edge: #4A40C2;
+  --codex-primary-soft: #1E1C33;
+  --codex-primary-text: #B5AFFF;
+  --codex-on-primary: #15151E;
+  --codex-reward: #FFD23F;
+  --codex-reward-soft: #2A2208;
+  --codex-reward-text: #FFD23F;
+  --codex-success: #79E05A;
+  --codex-success-edge: #4E9E2E;
+  --codex-success-soft: #102008;
+  --codex-success-text: #9BEB80;
+  --codex-success-on: #0A1505;
+  --codex-danger: #FF6B6B;
+  --codex-danger-edge: #C63A3A;
+  --codex-danger-soft: #2A1010;
+  --codex-danger-text: #FF9B9B;
+  --codex-danger-on: #2A0808;
+  --codex-surface: #161616;
+  --codex-border: #2C2A3A;
+  --codex-track: #232130;
+  --codex-radius-card: 1rem;
+  --codex-radius-btn: 0.75rem;
+  --codex-border-w: 2px;
+  --codex-edge-primary: 0 4px 0 0 var(--codex-primary-edge);
+  --codex-edge-success: 0 4px 0 0 var(--codex-success-edge);
+  --codex-edge-danger: 0 4px 0 0 var(--codex-danger-edge);
+  /* Trial tier ramp (dark): lightened indigo → indigo → gold mastery */
+  --codex-tier-initiate: #A5A0FF;
+  --codex-tier-initiate-soft: #1E1C33;
+  --codex-tier-initiate-text: #A5A0FF;
+  --codex-tier-initiate-on: #15151E;
+  --codex-tier-initiate-edge: #6C63FF;
+  --codex-tier-adept: #8B83FF;
+  --codex-tier-adept-soft: #1E1C33;
+  --codex-tier-adept-text: #8B83FF;
+  --codex-tier-adept-on: #15151E;
+  --codex-tier-adept-edge: #5A51E6;
+  --codex-tier-laureate: #FFD23F;
+  --codex-tier-laureate-soft: #2A2208;
+  --codex-tier-laureate-text: #FFD23F;
+  --codex-tier-laureate-on: #15120A;
+  --codex-tier-laureate-edge: #C99E00;
 }
 
 @layer base {

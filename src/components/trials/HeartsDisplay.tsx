@@ -44,16 +44,20 @@ export function HeartsDisplay({
                   }}
                   className="absolute inset-0"
                 >
-                  <HeartCrack className="w-5 h-5 fill-rose-500 text-rose-500" />
+                  <HeartCrack
+                    className="w-5 h-5"
+                    style={{ fill: "var(--codex-danger)", color: "var(--codex-danger)" }}
+                  />
                 </motion.div>
               )}
             </AnimatePresence>
             <Heart
-              className={`w-5 h-5 transition-colors duration-200 ${
+              className="w-5 h-5 transition-colors duration-200"
+              style={
                 filled
-                  ? "fill-rose-500 text-rose-500"
-                  : "fill-transparent text-stone-400 dark:text-stone-300"
-              }`}
+                  ? { fill: "var(--codex-danger)", color: "var(--codex-danger)" }
+                  : { fill: "transparent", color: "var(--muted-foreground)" }
+              }
             />
           </div>
         )

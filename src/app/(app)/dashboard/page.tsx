@@ -28,16 +28,13 @@ import { getAllBookProgress } from "@/lib/book-progress"
 import { getBooks, getFeaturedBooks } from "@/lib/content"
 import type { TomeBook } from "@/data/books"
 import { TRADITION_COLORS } from "@/components/tome/book-card"
-import { BookCover, getCoverParams } from "@/components/tome/book-cover"
 import { ClassicsCover } from "@/components/tome/ClassicsCover"
 import { AuthorLink } from "@/components/tome/author-link"
 import { springs } from "@/lib/design-tokens"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { NumberTicker } from "@/components/ui/number-ticker"
 import { AnimatedCircularProgressBar } from "@/components/ui/animated-circular-progress-bar"
-import { BorderBeam } from "@/components/ui/border-beam"
 import { AnimatedGridPattern } from "@/components/ui/animated-grid-pattern"
-import { Button } from "@/components/ui/button"
 import { X } from "lucide-react"
 import { VirgilReflection } from "@/components/tome/virgil-reflection"
 import { getTipOfTheDay } from "@/lib/virgil-tips"
@@ -55,6 +52,7 @@ import { useAuth } from "@/hooks/use-auth"
 const CHALLENGES = [
   {
     type: "Famous First Lines",
+    subject: "Dickens",
     question: "'It was the best of times, it was the worst of times.' Who wrote this?",
     options: ["Victor Hugo", "Charles Dickens", "Leo Tolstoy", "Thomas Hardy"],
     correct: 1,
@@ -62,6 +60,7 @@ const CHALLENGES = [
   },
   {
     type: "Who Said It?",
+    subject: "Shakespeare",
     question: "'To be, or not to be, that is the question.' This is from which play?",
     options: ["Macbeth", "King Lear", "Hamlet", "Othello"],
     correct: 2,
@@ -69,6 +68,7 @@ const CHALLENGES = [
   },
   {
     type: "Literary Trivia",
+    subject: "Ancient Greek",
     question: "Which Ancient Greek epic poem tells the story of Odysseus's journey home?",
     options: ["The Iliad", "The Aeneid", "The Odyssey", "The Argonautica"],
     correct: 2,
@@ -76,6 +76,7 @@ const CHALLENGES = [
   },
   {
     type: "Famous First Lines",
+    subject: "Melville",
     question: "'Call me Ishmael.' This opens which great American novel?",
     options: ["Huckleberry Finn", "The Scarlet Letter", "Moby-Dick", "The Great Gatsby"],
     correct: 2,
@@ -83,6 +84,7 @@ const CHALLENGES = [
   },
   {
     type: "Who Said It?",
+    subject: "Tolstoy",
     question: "Who wrote 'All happy families are alike; each unhappy family is unhappy in its own way'?",
     options: ["Dostoevsky", "Chekhov", "Turgenev", "Tolstoy"],
     correct: 3,
@@ -90,6 +92,7 @@ const CHALLENGES = [
   },
   {
     type: "Literary Trivia",
+    subject: "Dante",
     question: "The Divine Comedy was written by which Italian poet?",
     options: ["Petrarch", "Boccaccio", "Virgil", "Dante Alighieri"],
     correct: 3,
@@ -97,6 +100,7 @@ const CHALLENGES = [
   },
   {
     type: "Famous First Lines",
+    subject: "Austen",
     question: "'It is a truth universally acknowledged…' opens which novel?",
     options: ["Jane Eyre", "Wuthering Heights", "Pride and Prejudice", "Sense and Sensibility"],
     correct: 2,
@@ -112,6 +116,13 @@ const CHALLENGES = [
 const WEEK_DAYS  = ["M", "T", "W", "T", "F", "S", "S"]
 const TODAY_DOW  = new Date().getDay() // 0=Sun; convert to 0=Mon
 const DOW_MON    = TODAY_DOW === 0 ? 6 : TODAY_DOW - 1 // 0=Mon…6=Sun
+
+// Date numeral for each weekday disc (Mon → Sun of the current week)
+const WEEK_DATES = WEEK_DAYS.map((_, i) => {
+  const d = new Date()
+  d.setDate(d.getDate() - DOW_MON + i)
+  return d.getDate()
+})
 
 // ─────────────────────────────────────────────
 // Recent activity seed
@@ -253,6 +264,14 @@ function StudentDashboard() {
     }).filter(Boolean) as { book: TomeBook; prog: null; pct: number }[]
   }, [inProgress, allBooks])
 
+  // Completed-book count for the Continue Reading subline
+  const completedCount = useMemo(() => {
+    return Object.entries(allProgress).filter(([id, p]) => {
+      const b = allBooks.find((x) => x.id === id)
+      return b && p.completedChapterIndices.length >= b.chapters
+    }).length
+  }, [allProgress, allBooks])
+
   const dailyPercent = Math.min(100, Math.round(
     (stats.daily_progress_minutes / stats.daily_goal_minutes) * 100
   ))
@@ -351,84 +370,110 @@ function StudentDashboard() {
           </BlurFade>
         )}
 
-        {/* ── 2. Daily Challenge (MCQ) ── */}
+        {/* ── 2. Daily Challenge (Codex-ported MCQ) ── */}
         <BlurFade delay={0.10} inView>
           <div
-            className="relative rounded-2xl overflow-hidden border"
+            className="relative overflow-hidden"
             style={{
-              background: challengeDone
-                ? "linear-gradient(135deg, rgba(34,197,94,0.08) 0%, transparent 100%)"
-                : "linear-gradient(135deg, rgba(99,102,241,0.10) 0%, rgba(99,102,241,0.04) 100%)",
-              borderColor: challengeDone ? "rgba(34,197,94,0.3)" : "rgba(99,102,241,0.25)",
+              background: "var(--codex-surface)",
+              borderRadius: "var(--codex-radius-card)",
+              border: `var(--codex-border-w) solid ${challengeDone ? "var(--codex-success)" : "var(--codex-primary)"}`,
             }}
           >
-            {!challengeDone && <BorderBeam size={80} duration={12} colorFrom="#6366F1" colorTo="#A78BFA" />}
-
             <div className="p-5">
-              {/* Header */}
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center gap-2">
-                  <div className="size-7 rounded-lg bg-[#6366F1]/15 flex items-center justify-center">
-                    <Zap className="size-4 text-[#6366F1]" />
-                  </div>
-                  <div>
-                    <h2 className="text-sm font-bold leading-none">Daily Challenge</h2>
-                    <p className="text-[10px] text-muted-foreground mt-0.5">{challenge.type}</p>
-                  </div>
-                </div>
+              {/* Header row: title + current-day pill */}
+              <div className="flex items-center justify-between mb-3">
+                <h2 className="text-base font-extrabold tracking-tight">Daily Challenge</h2>
                 <span
-                  className="text-[10px] font-bold px-2 py-1 rounded-full"
-                  style={{
-                    background: challengeDone ? "rgba(34,197,94,0.15)" : "rgba(245,158,11,0.15)",
-                    color: challengeDone ? "#16a34a" : "#b45309",
-                  }}
+                  className="text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide tabular-nums"
+                  style={{ background: "var(--codex-primary-soft)", color: "var(--codex-primary-text)" }}
                 >
-                  {challengeDone ? <><Check className="size-3 inline" /> Done</> : `+${challenge.xp} Wisdom`}
+                  {new Date().toLocaleDateString("en-US", { weekday: "short" })}
                 </span>
               </div>
 
+              {/* Meta row: type label + subject chip + reward badge */}
+              <div className="flex items-center gap-2 flex-wrap mb-4">
+                <span className="text-xs font-bold" style={{ color: "var(--codex-primary)" }}>
+                  {challenge.type}
+                </span>
+                <span
+                  className="text-[11px] font-semibold px-2 py-0.5 rounded-full"
+                  style={{
+                    background: "var(--codex-track)",
+                    color: "var(--foreground)",
+                    border: "1px solid var(--codex-border)",
+                  }}
+                >
+                  {challenge.subject}
+                </span>
+                {!challengeDone && (
+                  <span
+                    className="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-full"
+                    style={{ background: "var(--codex-reward-soft)", color: "var(--codex-reward-text)" }}
+                  >
+                    <Zap className="size-3" /> Bonus XP for speed!
+                  </span>
+                )}
+              </div>
+
               {challengeDone ? (
-                <div className="flex items-center gap-3 py-2">
-                  <div className="size-10 rounded-full bg-emerald-500/15 flex items-center justify-center">
-                    <Check className="size-5 text-emerald-500" />
+                <div
+                  className="flex items-center gap-3 rounded-[var(--codex-radius-btn)] px-4 py-3"
+                  style={{ background: "var(--codex-success-soft)" }}
+                >
+                  <div
+                    className="size-9 rounded-full flex items-center justify-center shrink-0"
+                    style={{ background: "var(--codex-success)" }}
+                  >
+                    <Check className="size-5" style={{ color: "var(--codex-on-primary)" }} />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-emerald-700">+{challenge.xp} Wisdom earned</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--codex-success-text)" }}>
+                      ✓ Completed — +{challenge.xp} Wisdom earned
+                    </p>
                     <p className="text-xs text-muted-foreground">Come back tomorrow for a new challenge.</p>
                   </div>
                 </div>
               ) : (
                 <>
-                  <p className="text-sm font-medium leading-snug mb-4">
+                  <p className="text-sm font-semibold leading-snug mb-1">
                     {challenge.question}
                   </p>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  <p className="text-xs text-muted-foreground mb-4">Tap an answer below:</p>
+                  <div className="grid grid-cols-1 gap-2.5">
                     {challenge.options.map((opt, i) => {
                       const answered = challengeAnswer !== null
                       const isSelected = challengeAnswer === i
                       const isCorrect  = i === challenge.correct
+                      const stateStyle: React.CSSProperties = !answered
+                        ? { borderColor: "var(--codex-border)", background: "var(--codex-surface)" }
+                        : isCorrect
+                        ? { borderColor: "var(--codex-success)", background: "var(--codex-success-soft)", color: "var(--codex-success-text)" }
+                        : isSelected
+                        ? { borderColor: "var(--codex-danger)", background: "var(--codex-danger-soft)", color: "var(--codex-danger-text)" }
+                        : { borderColor: "var(--codex-border)", opacity: 0.5 }
                       return (
                         <button
                           key={i}
                           onClick={() => handleChallengeAnswer(i)}
                           disabled={answered}
                           className={cn(
-                            "text-left rounded-xl border px-3.5 py-2.5 text-sm font-medium transition-all duration-200",
+                            "codex-pressable w-full text-left min-h-[44px] px-4 py-3 text-sm font-bold",
+                            "rounded-[var(--codex-radius-btn)] outline-none",
+                            "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:[outline-color:var(--codex-primary)]",
                             !answered
-                              ? "border-border hover:border-[#6366F1] hover:bg-[#6366F1]/5 cursor-pointer"
-                              : isCorrect
-                              ? "border-emerald-500 bg-emerald-50 text-emerald-700"
-                              : isSelected
-                              ? "border-rose-400 bg-rose-50 text-rose-700"
-                              : "border-border opacity-50 cursor-not-allowed"
+                              ? "cursor-pointer hover:[border-color:var(--codex-primary)] hover:[background-color:var(--codex-primary-soft)]"
+                              : "cursor-not-allowed"
                           )}
+                          style={{ borderWidth: "var(--codex-border-w)", borderStyle: "solid", ...stateStyle }}
                         >
-                          <span className="mr-2 text-muted-foreground text-xs font-normal">
+                          <span className="mr-2 text-xs font-bold opacity-50">
                             {String.fromCharCode(65 + i)}.
                           </span>
                           {opt}
                           {answered && isCorrect && (
-                            <Check className="inline-block size-3.5 ml-1.5 text-emerald-500" />
+                            <Check className="inline-block size-4 ml-1.5" style={{ color: "var(--codex-success)" }} />
                           )}
                         </button>
                       )
@@ -509,29 +554,35 @@ function StudentDashboard() {
           </div>
         </BlurFade>
 
-        {/* ── 4. Weekly Challenge ────────────────── */}
+        {/* ── 4. Weekly Challenge (Codex-ported) ───── */}
         <BlurFade delay={0.15} inView>
-          <div className="rounded-xl border border-border bg-card p-4">
+          <div
+            className="p-5"
+            style={{
+              background: "var(--codex-surface)",
+              borderRadius: "var(--codex-radius-card)",
+              border: "var(--codex-border-w) solid var(--codex-border)",
+            }}
+          >
             <div className="flex items-center justify-between mb-3">
-              <div className="flex items-center gap-2">
-                <div className="size-6 rounded-md bg-[#0EA5E9]/15 flex items-center justify-center">
-                  <TrendingUp className="size-3.5 text-[#0EA5E9]" />
-                </div>
-                <h2 className="font-serif text-base font-semibold">Weekly Challenge</h2>
-              </div>
+              <h2 className="text-base font-extrabold tracking-tight">Weekly Challenge</h2>
               <span className="text-[10px] text-muted-foreground/60">Resets Monday</span>
             </div>
 
-            {/* Challenge description */}
-            <div className="flex items-center justify-between mb-3">
+            {/* Goal line + books progress bar */}
+            <div className="flex items-center justify-between mb-2">
               <p className="text-sm text-muted-foreground">
                 Read <strong className="text-foreground">3 books</strong> this week
               </p>
-              <span className="text-[11px] font-semibold text-[#0EA5E9]">1/3</span>
+              <span className="text-xs font-bold" style={{ color: "var(--codex-primary)" }}>1 / 3 books</span>
             </div>
-            <div className="h-2 bg-muted rounded-full overflow-hidden mb-4">
+            <div
+              className="h-2.5 rounded-full overflow-hidden mb-5"
+              style={{ background: "var(--codex-track)" }}
+            >
               <motion.div
-                className="h-full rounded-full bg-[#0EA5E9]"
+                className="h-full rounded-full"
+                style={{ background: "var(--codex-primary)" }}
                 initial={{ width: 0 }}
                 animate={{ width: "33%" }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
@@ -539,42 +590,40 @@ function StudentDashboard() {
             </div>
 
             {/* Day-by-day tracker */}
-            <div className="flex gap-1.5">
+            <div className="flex gap-1.5 mb-4">
               {WEEK_DAYS.map((label, i) => {
                 const isPast    = i < DOW_MON
                 const isToday   = i === DOW_MON
-                const isFuture  = i > DOW_MON
                 const isDone    = i <= 2 // Mon, Tue, Wed done in demo
                 const isMissed  = isPast && !isDone
+
+                const discStyle: React.CSSProperties = isDone
+                  ? { background: "var(--codex-primary)", borderColor: "var(--codex-primary)", color: "var(--codex-on-primary)" }
+                  : isMissed
+                  ? { background: "var(--codex-track)", borderColor: "var(--codex-border)", color: "var(--muted-foreground)" }
+                  : { background: "var(--codex-surface)", borderColor: "var(--codex-border)", color: "var(--muted-foreground)" }
 
                 return (
                   <div key={i} className="flex-1 flex flex-col items-center gap-1">
                     <div
                       className={cn(
-                        "w-full aspect-square rounded-lg flex items-center justify-center text-xs font-bold border transition-all",
-                        isToday && "ring-2 ring-offset-1 ring-[#0EA5E9]",
-                        isDone
-                          ? "bg-[#0EA5E9]/15 border-[#0EA5E9]/40 text-[#0EA5E9]"
-                          : isMissed
-                          ? "bg-rose-500/10 border-rose-400/30 text-rose-400"
-                          : isFuture || (!isDone && isToday)
-                          ? "bg-muted/50 border-border text-muted-foreground/40"
-                          : "bg-muted border-border"
+                        "w-full aspect-square min-h-[44px] rounded-full flex items-center justify-center text-xs font-bold transition-all",
+                        isToday && "ring-2 ring-offset-2 ring-offset-[color:var(--codex-surface)] [--tw-ring-color:var(--codex-primary)]"
                       )}
+                      style={{ borderWidth: "var(--codex-border-w)", borderStyle: "solid", ...discStyle }}
+                      aria-current={isToday ? "date" : undefined}
                     >
                       {isDone ? (
-                        <Check className="size-3" />
+                        <Check className="size-4" />
                       ) : isMissed ? (
-                        <X className="size-3" />
+                        <X className="size-3.5" style={{ color: "var(--codex-danger)" }} />
                       ) : (
-                        <span className="text-[10px]">{label}</span>
+                        <span className="text-[11px] tabular-nums">{WEEK_DATES[i]}</span>
                       )}
                     </div>
                     <span
-                      className={cn(
-                        "text-[9px]",
-                        isToday ? "font-bold text-[#0EA5E9]" : "text-muted-foreground/50"
-                      )}
+                      className="text-[9px] font-bold"
+                      style={{ color: isToday ? "var(--codex-primary)" : "var(--muted-foreground)" }}
                     >
                       {label}
                     </span>
@@ -582,49 +631,78 @@ function StudentDashboard() {
                 )
               })}
             </div>
+
+            {/* Footer stat pair */}
+            <div
+              className="flex items-center justify-center gap-2 text-xs font-semibold pt-3"
+              style={{ borderTop: "1px solid var(--codex-border)" }}
+            >
+              <span className="inline-flex items-center gap-1">
+                <Flame className="size-3.5" style={{ color: "var(--flame-streak)" }} />
+                {streak} day streak
+              </span>
+              <span className="text-muted-foreground/40">·</span>
+              <span className="inline-flex items-center gap-1">
+                <Zap className="size-3.5" style={{ color: "var(--codex-primary)" }} />
+                {stats.xp_total} XP
+              </span>
+            </div>
           </div>
         </BlurFade>
 
         {/* ── Virgil Reflection ─────────────────── */}
         <VirgilReflection type="progress" context={{ booksRead: Object.keys(allProgress), chaptersCompleted: Object.values(allProgress).reduce((sum, p) => sum + p.completedChapterIndices.length, 0), streakDays: streak }} />
 
-        {/* ── 5. Continue Reading ────────────────── */}
+        {/* ── 5. Continue Reading (Codex-ported) ───── */}
         <BlurFade delay={0.18} inView>
           <section>
-            <SectionHeading
-              icon={BookOpen}
-              color="#22C55E"
-              title="Continue Reading"
-              action="Library"
-              actionHref="/library/browse"
-            />
+            {/* Header with count subline */}
+            <div className="flex items-end justify-between mb-3">
+              <div className="flex items-center gap-2">
+                <div className="size-6 rounded-md flex items-center justify-center" style={{ background: "var(--codex-primary-soft)" }}>
+                  <BookOpen className="size-3.5" style={{ color: "var(--codex-primary)" }} />
+                </div>
+                <div>
+                  <h2 className="font-serif text-base font-semibold leading-none">Continue Reading</h2>
+                  <p className="text-[11px] text-muted-foreground mt-1">
+                    {continueBooks.length} in progress · {completedCount} completed
+                  </p>
+                </div>
+              </div>
+              <Link href="/library/browse"
+                className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors">
+                Library <ChevronRight className="size-3.5" />
+              </Link>
+            </div>
 
             {continueBooks.length === 0 ? (
               <Link
                 href="/library/browse"
-                className="flex items-center justify-center gap-2 rounded-xl border-2 border-dashed border-border py-10 text-sm text-muted-foreground hover:border-[var(--tome-accent)] hover:text-[var(--tome-accent)] transition-colors"
+                className="codex-pressable flex items-center justify-center gap-2 py-5 min-h-[44px] text-sm font-bold rounded-[var(--codex-radius-btn)]"
+                style={{
+                  background: "var(--codex-primary)",
+                  color: "var(--codex-on-primary)",
+                  border: "var(--codex-border-w) solid var(--codex-primary)",
+                }}
               >
                 Start your first book →
               </Link>
             ) : (
               <div className="space-y-3">
                 {continueBooks.map(({ book, prog, pct }) => {
-                  const coverParams = getCoverParams(book)
                   const tradColor   = TRADITION_COLORS[book.tradition]
                   const chapters    = prog?.completedChapterIndices.length ?? Math.round((pct / 100) * book.chapters)
 
                   return (
                     <div
                       key={book.id}
-                      className="relative flex items-center gap-4 rounded-xl border border-border bg-card p-4 overflow-hidden"
+                      className="relative flex items-center gap-4 p-4"
+                      style={{
+                        background: "var(--codex-surface)",
+                        borderRadius: "var(--codex-radius-card)",
+                        border: "var(--codex-border-w) solid var(--codex-border)",
+                      }}
                     >
-                      <BorderBeam
-                        size={50}
-                        duration={10}
-                        colorFrom={coverParams.primaryColor}
-                        colorTo={coverParams.secondaryColor}
-                      />
-
                       {/* Cover */}
                       <div className="shrink-0 w-12 rounded-md overflow-hidden shadow-sm">
                         <ClassicsCover
@@ -642,20 +720,20 @@ function StudentDashboard() {
                       {/* Info */}
                       <div className="flex-1 min-w-0">
                         <Link href={`/book/${book.id}`}
-                          className="text-sm font-semibold leading-snug line-clamp-1 hover:text-[var(--tome-accent)] transition-colors">
+                          className="text-sm font-semibold leading-snug line-clamp-1 hover:[color:var(--codex-primary)] transition-colors">
                           {book.title}
                         </Link>
                         <span onClick={(e) => e.preventDefault()}>
                           <AuthorLink
                             name={book.author}
-                            className="text-[10px] text-muted-foreground hover:text-[var(--tome-accent)] transition-colors"
+                            className="text-[10px] text-muted-foreground hover:[color:var(--codex-primary)] transition-colors"
                           />
                         </span>
 
                         {/* Tradition badge */}
                         <span
                           className="inline-block text-[9px] font-semibold px-1.5 py-0.5 rounded-full mt-1"
-                          style={{ background: tradColor?.bg ?? "rgba(99,102,241,0.12)", color: tradColor?.text ?? "#4338ca" }}
+                          style={{ background: tradColor?.bg ?? "var(--codex-primary-soft)", color: tradColor?.text ?? "var(--codex-primary-text)" }}
                         >
                           {book.tradition}
                         </span>
@@ -663,24 +741,30 @@ function StudentDashboard() {
                         {/* Progress */}
                         <div className="mt-1.5">
                           <div className="flex items-center justify-between text-[9px] text-muted-foreground mb-1">
-                            <span>Ch {chapters}/{book.chapters}</span>
-                            <span>{pct}%</span>
+                            <span>Chapter {chapters}/{book.chapters}</span>
+                            <span className="tabular-nums">{pct}%</span>
                           </div>
-                          <div className="h-1.5 bg-muted rounded-full overflow-hidden">
+                          <div className="h-2 rounded-full overflow-hidden" style={{ background: "var(--codex-track)" }}>
                             <div
                               className="h-full rounded-full"
-                              style={{ width: `${pct}%`, backgroundColor: tradColor?.dot ?? "#6366F1" }}
+                              style={{ width: `${pct}%`, background: "var(--codex-primary)" }}
                             />
                           </div>
                         </div>
                       </div>
 
-                      {/* CTA */}
-                      <Link href={`/read/${book.id}`} className="shrink-0">
-                        <Button size="sm" className="text-xs gap-1">
-                          Continue
-                          <ChevronRight className="size-3" />
-                        </Button>
+                      {/* Continue chip — deep-links to saved reader position */}
+                      <Link
+                        href={`/read/${book.id}`}
+                        className="codex-pressable shrink-0 inline-flex items-center gap-1 px-3.5 min-h-[44px] text-xs font-bold rounded-[var(--codex-radius-btn)] outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:[outline-color:var(--codex-primary)]"
+                        style={{
+                          background: "var(--codex-primary)",
+                          color: "var(--codex-on-primary)",
+                          border: "var(--codex-border-w) solid var(--codex-primary)",
+                        }}
+                      >
+                        Continue
+                        <ChevronRight className="size-3.5" />
                       </Link>
                     </div>
                   )

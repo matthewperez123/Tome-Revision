@@ -10,6 +10,7 @@ import {
   MasterSigil,
   type SigilProps,
 } from "@/components/trials/sigils"
+import { DifficultyBars } from "@/components/trials/DifficultyBars"
 
 // ─────────────────────────────────────────────
 // Tier definitions. The data/storage keys stay canonical
@@ -24,6 +25,8 @@ export interface TrialTierDef {
   key: QuizDifficulty
   label: string
   subcopy: string
+  /** Filled-bar count for the volume-style difficulty logo (Easy 1 → Hard 3). */
+  level: 1 | 2 | 3
   sigil: FC<SigilProps>
   /** Solid accent — AA against `onAccent` text. */
   accentColor: string
@@ -33,6 +36,8 @@ export interface TrialTierDef {
   onAccent: string
   /** Soft tint background for the accent. */
   accentSoft: string
+  /** Darker edge color for the Codex pressed-edge button. */
+  accentEdge: string
   questions: number
   /** Wisdom per correct answer */
   wisdomPerCorrect: number
@@ -41,37 +46,43 @@ export interface TrialTierDef {
 export const TRIAL_TIERS: TrialTierDef[] = [
   {
     key: "Apprentice",
-    label: "Initiate",
+    label: "Easy",
     subcopy: "Check your understanding.",
+    level: 1,
     sigil: ApprenticeSigil,
-    accentColor: "var(--trial-initiate)",
-    accentText: "var(--trial-initiate-text)",
-    onAccent: "var(--trial-initiate-on)",
-    accentSoft: "var(--trial-initiate-soft)",
+    accentColor: "var(--codex-tier-initiate)",
+    accentText: "var(--codex-tier-initiate-text)",
+    onAccent: "var(--codex-tier-initiate-on)",
+    accentSoft: "var(--codex-tier-initiate-soft)",
+    accentEdge: "var(--codex-tier-initiate-edge)",
     questions: 5,
     wisdomPerCorrect: 5,
   },
   {
     key: "Scholar",
-    label: "Adept",
+    label: "Medium",
     subcopy: "Read between the lines.",
+    level: 2,
     sigil: ScholarSigil,
-    accentColor: "var(--trial-adept)",
-    accentText: "var(--trial-adept-text)",
-    onAccent: "var(--trial-adept-on)",
-    accentSoft: "var(--trial-adept-soft)",
+    accentColor: "var(--codex-tier-adept)",
+    accentText: "var(--codex-tier-adept-text)",
+    onAccent: "var(--codex-tier-adept-on)",
+    accentSoft: "var(--codex-tier-adept-soft)",
+    accentEdge: "var(--codex-tier-adept-edge)",
     questions: 8,
     wisdomPerCorrect: 10,
   },
   {
     key: "Master",
-    label: "Laureate",
+    label: "Hard",
     subcopy: "Prove your mastery.",
+    level: 3,
     sigil: MasterSigil,
-    accentColor: "var(--trial-laureate)",
-    accentText: "var(--trial-laureate-text)",
-    onAccent: "var(--trial-laureate-on)",
-    accentSoft: "var(--trial-laureate-soft)",
+    accentColor: "var(--codex-tier-laureate)",
+    accentText: "var(--codex-tier-laureate-text)",
+    onAccent: "var(--codex-tier-laureate-on)",
+    accentSoft: "var(--codex-tier-laureate-soft)",
+    accentEdge: "var(--codex-tier-laureate-edge)",
     questions: 10,
     wisdomPerCorrect: 15,
   },
@@ -124,7 +135,6 @@ export function TrialDifficultyCards({
         className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-3xl"
       >
         {TRIAL_TIERS.map((tier, i) => {
-          const Sigil = tier.sigil
           return (
             <motion.button
               key={tier.key}
@@ -135,9 +145,11 @@ export function TrialDifficultyCards({
               whileTap={reduced ? undefined : { scale: 0.98 }}
               onClick={() => onSelectDifficulty(tier.key)}
               aria-label={`Choose ${tier.label} tier: ${tier.subcopy}. ${tier.questions} questions, ${tier.wisdomPerCorrect} Wisdom per correct answer.`}
-              className="group flex flex-col items-center gap-4 rounded-2xl border-2 p-6 text-center transition-all bg-card shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+              className="group flex flex-col items-center gap-4 border-2 p-6 text-center transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
               style={{
+                borderRadius: "var(--codex-radius-card)",
                 borderColor: `color-mix(in srgb, ${tier.accentColor} 30%, transparent)`,
+                background: "var(--codex-surface)",
                 // @ts-expect-error — CSS custom property for ring
                 "--tw-ring-color": tier.accentColor,
               }}
@@ -147,7 +159,7 @@ export function TrialDifficultyCards({
                 className="flex size-14 items-center justify-center rounded-xl"
                 style={{ background: tier.accentSoft }}
               >
-                <Sigil size={28} color={tier.accentColor} />
+                <DifficultyBars level={tier.level} size={28} color={tier.accentColor} />
               </div>
 
               {/* Name */}
@@ -169,8 +181,14 @@ export function TrialDifficultyCards({
 
               {/* CTA */}
               <span
-                className="mt-2 inline-flex items-center justify-center rounded-xl px-6 py-2.5 text-sm font-semibold transition-colors"
-                style={{ background: tier.accentColor, color: tier.onAccent }}
+                className="codex-pressable-edge mt-2 inline-flex min-h-[44px] items-center justify-center px-6 py-2.5 text-sm font-semibold"
+                style={{
+                  background: tier.accentColor,
+                  color: tier.onAccent,
+                  borderRadius: "var(--codex-radius-btn)",
+                  // @ts-expect-error — CSS custom property for pressed edge
+                  "--codex-edge": tier.accentEdge,
+                }}
               >
                 Begin
               </span>

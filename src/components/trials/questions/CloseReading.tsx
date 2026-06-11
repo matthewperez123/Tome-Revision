@@ -40,7 +40,7 @@ export function CloseReading({
           transition={{ duration: reduced ? 0.1 : 0.4, ease: "easeOut" }}
           style={{
             backgroundImage:
-              "linear-gradient(to right, var(--trial-laureate) 0%, var(--trial-laureate) 100%)",
+              "linear-gradient(to right, var(--codex-tier-laureate) 0%, var(--codex-tier-laureate) 100%)",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "0 100%",
             paddingBottom: "2px",
@@ -59,8 +59,8 @@ export function CloseReading({
       <div
         className="rounded-r-lg border-l-4 pl-4 pr-3 py-3"
         style={{
-          borderColor: "var(--trial-laureate)",
-          background: "var(--trial-laureate-soft)",
+          borderColor: "var(--codex-tier-laureate)",
+          background: "var(--codex-tier-laureate-soft)",
         }}
       >
         <p className="font-serif text-[18px] leading-[1.8] text-ink">{rendered}</p>
@@ -96,7 +96,16 @@ export function CloseReading({
             type="button"
             onClick={() => selected && onSubmit(selected)}
             disabled={!selected}
-            className="rounded-xl font-semibold"
+            className="codex-pressable-edge min-h-[44px] font-semibold"
+            style={
+              selected
+                ? {
+                    background: "var(--codex-primary)",
+                    color: "var(--codex-on-primary)",
+                    borderRadius: "var(--codex-radius-btn)",
+                  }
+                : { borderRadius: "var(--codex-radius-btn)" }
+            }
           >
             Check Answer
           </Button>

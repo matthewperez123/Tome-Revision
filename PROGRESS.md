@@ -534,3 +534,195 @@ Pushed to `github/tome-beta-demo` cleanly (fast-forward).
   `tome-beta-demo` link is preserved as `.vercel/project.json.tome-beta-demo`
   in case you want to re-link.
 
+## Codex design port — Daily/Weekly Challenge + Weekly Scores + Continue Reading (2026-06-11)
+
+Visual + interaction-pattern port of Codex's `/learn` and `/leagues` card
+language onto three Tome surfaces. Data wiring, routes, gamification logic
+(XP/Wisdom, hearts, streaks, day tracker, reward amounts) unchanged.
+
+### Codex source resolution
+
+The prompt's placeholder path `~/Projects/codex` does NOT exist. Candidate
+local repos were found (`~/Codex Revision /codex`, the pruned `pensive-tu`
+worktree) but none could be confirmed as the authoritative source of the
+deployed `pensive-tu.vercel.app` reference. **Per user direction, tokens are
+APPROXIMATED from the deployed site's observable character.** Every value
+below is approximated and marked `[APPROX]` — replace with exact repo values
+when the Codex source is confirmed.
+
+### Codex design tokens — APPROXIMATED [APPROX]
+
+Ported to `src/styles/globals.css` under a scoped `--codex-*` namespace in
+both `:root` (light) and `.dark`, following the existing `--trial-*`
+precedent. They do NOT override any Tome global token and are used only by
+the three target surfaces.
+
+- Primary family `[APPROX]`: `--codex-primary #6C63FF` (stated in prompt),
+  `--codex-primary-hover #5A51E6`, `--codex-primary-edge #4A40C2` (pressed
+  bottom-edge), `--codex-primary-soft` tinted surface, `--codex-primary-text`
+  on-soft text, `--codex-on-primary #FFFFFF`.
+- Reward/XP accent `[APPROX]`: `--codex-reward #FFC800` gold (Duolingo-style),
+  soft `--codex-reward-soft`, text `--codex-reward-text`.
+- Promotion/success `[APPROX]`: `--codex-success #58CC02` (Duolingo green),
+  soft + edge variants.
+- Demotion/danger `[APPROX]`: `--codex-danger #FF4B4B` (Duolingo red),
+  soft + edge variants.
+- Surfaces/borders `[APPROX]`: `--codex-surface`, `--codex-border` (used at
+  2px), `--codex-track` (progress-bar track).
+- Radii `[APPROX]`: `--codex-radius-card 1rem`, `--codex-radius-btn 0.75rem`,
+  chips fully rounded (pill).
+- Border width `[APPROX]`: `--codex-border-w 2px`.
+- Pressed-edge shadow recipe `[APPROX]`: `--codex-edge-primary`,
+  `--codex-edge-success` = `0 4px 0 <edge-color>`; active state translates
+  +2px and halves the edge. Disabled under `prefers-reduced-motion`.
+
+### Tome components audited (PART 1)
+
+All three target surfaces live inline in existing files — no new components
+needed; restyle in place.
+
+1. **Daily Challenge** — `src/app/(app)/dashboard/page.tsx` (StudentDashboard,
+   the "2. Daily Challenge (MCQ)" block ~L354). Data: `CHALLENGES` pool
+   rotated by `dayOfYear()`. State: `challengeAnswer`, `challengeDone`.
+   MUST SURVIVE: answering correct → `localStorage tome-challenge-done-<key>`
+   + completed state; `+25` reward copy. Currently MCQ with 4 option buttons.
+2. **Weekly Challenge** — same file, "4. Weekly Challenge" block ~L512.
+   Data: `WEEK_DAYS`, `DOW_MON` (today), demo done = Mon/Tue/Wed. MUST
+   SURVIVE: day tracker past/today/future/done/missed logic; 1/3 progress.
+3. **Continue Reading** — same file, "5. Continue Reading" block ~L591.
+   Data: `getAllBookProgress()` → `inProgress`, demo fallback `continueBooks`.
+   MUST SURVIVE: `/read/<id>` deep-link (reader route confirmed present at
+   `src/app/(app)/read/[bookId]/page.tsx` — NOT a blocker); AuthorLink stays
+   a working link; empty state "Start your first book →".
+4. **Weekly scores / leagues** — `src/app/(app)/social/page.tsx`, Leaderboard
+   tab (~L308). Already has `TIERS` (Novice→Luminary), `CURRENT_TIER_IDX`,
+   `PROMOTION_CUTOFF 10`, `DEMOTION_CUTOFF 26`, 30-user `LEADERBOARD` demo
+   data, league header, tier strip, top-3 medals, zone legend, "You" row.
+   Tome tier names differ from Codex (Bronze→Diamond) — keep Tome's names.
+
+### Behaviors confirmed to keep unchanged
+
+Reward amounts, streak logic, day-tracker math, `/read/<id>` deep-links,
+`localStorage` persistence keys, all data sources.
+
+---
+
+## Quiz port — tokens & patterns (Trials) — 2026-06-11
+
+### Part 0 — Codex source resolution
+
+- Repo NOT at `~/Projects/codex` (doesn't exist). Two on-disk "codex" dirs are
+  NOT the source: `/Users/matthewperez/codex` (parent of this Tome app) and
+  `/Users/matthewperez/Codex Revision /codex` (a separate `tome-app` copy).
+- An editorial **studio case-study** exists at
+  `/Users/matthewperez/Codex Revision /studio/src/app/work/codex/_screens/`
+  (`CodexQuiz/Reader/Learn.tsx`). It is a *scholarly* design (mono labels,
+  serif text, bottom-border answer rows, "Read correctly / Read again"
+  feedback, `--codex`/`--signal`/`--ink-*` tokens). This is a portfolio
+  reimagining, **NOT** the deployed app — recorded but not used as the source.
+- Per user direction, source = deployed **https://pensive-tu.vercel.app/learn**.
+  Verified via WebFetch: Duolingo-style app, brand `#6C63FF`,
+  `surface-primary`/`text-primary` theme tokens, inter/literata/jetbrains_mono
+  fonts, `max-w-[640px]` centered column + `md:ml-[220px]` sidebar, "Passage
+  Puzzle" tap-to-place exercise, "Bonus XP for speed!" badge. **This matches the
+  `--codex-*` Duolingo tokens already shipped in the dashboard port** — so the
+  quiz port reuses that same token system (consistency confirmed).
+- `/review` flashcards (for future Part 5 only — Tome has no live review surface
+  yet): term, context quote, "Learning" status tag, "Tap to flip · 1 / 6"
+  counter, back face (translation, part-of-speech, "from De Bello Gallico"),
+  "Still learning" / "I know this" action pair.
+- Quiz **feedback/hearts/results render client-side**; not capturable via
+  WebFetch, and the preview browser is sandboxed to localhost so the live
+  interactive quiz could not be driven. Feedback-state anatomy is therefore
+  reused from the in-repo Daily Challenge port (codex-* correct/incorrect option
+  states + success/danger banner + pressed-edge button), which is faithful to
+  the deployed Duolingo design.
+
+### Part 1 — Tome Trials audit
+
+- **Routes / launchers:** `/quiz/[quizId]/page.tsx` (619 lines, standalone
+  session) and `src/components/tome/chapter-quiz-overlay.tsx` (1001 lines,
+  in-reader overlay — the primary quiz shell w/ HUD + option render + feedback).
+  Launched from reader chapter-end via `DifficultyDropUp` (bottom-sheet "take
+  quiz" selector) and `trial-difficulty-cards.tsx` (full-screen selector).
+- **Session-shell components:** `trials/TrialIntroCard.tsx`,
+  `trials/TrialProgressBar.tsx`, `trials/TrialResultsScreen.tsx` (318),
+  `trials/HeartsDisplay.tsx`, `trials/HeartsZeroModal.tsx`,
+  `trials/KeyboardHints.tsx`.
+- **Difficulty logos (sigils):** `trials/sigils/{ApprenticeSigil,ScholarSigil,
+  MasterSigil,WisdomStar}.tsx` + `index.ts` (`tierSigils`). Tiers:
+  Apprentice→"Initiate" (5Q, +5), Scholar→"Adept" (8Q, +10), Master→"Laureate"
+  (10Q, +15). Storage keys stay canonical (Apprentice/Scholar/Master).
+- **Existing design tokens:** `--trial-*` (globals.css ~287-312 light, ~409-433
+  dark): cool-indigo ramp (initiate #5457E0, adept #4338CA, select #4F46E5) +
+  gold laureate (#B8924A) + correct #2D9A47 / incorrect #C84A52. The Codex port
+  re-skins these surfaces to the brighter `--codex-*` Duolingo palette
+  (primary #6C63FF, success #58CC02, danger #FF4B4B) and anatomy.
+- **Question types** (`mapToEngineQuestion`): multiple_choice, true_false (and
+  tf-with-reason `true|reasonIdx`), short_answer/reflection (server-graded via
+  `gradeReflection`), ordering (`correctOrder`), matching (`correctPairs`),
+  cross_reference, close_reading.
+- **Mechanics that MUST survive unchanged:** hearts depletion + `lostIndex`
+  shake/animation + `HeartsZeroModal` + regen/`resumeToken` flow; Wisdom per
+  correct (5/10/15); score % via `getQuizSummary`; quiz-engine store snapshot
+  persistence; reflection server-grading (`gradeReflection`); keyboard (number
+  keys select, Enter check/continue — already implemented).
+- **IMPORTANT grading caveat:** Tome grades **MCQ client-side** —
+  `mapToEngineQuestion` builds `correct_answer` into the client payload; only
+  free-text reflection is graded server-side. So VERIFY step #4 ("no
+  correct-answer reaches the client before submit") does **not** hold in Tome
+  today. Per spec ("do not move grading / preserve the current flow exactly")
+  this is left as-is and flagged, not changed.
+
+### Implementation — Codex quiz port (complete) — 2026-06-11
+
+Pure visual + token port; **no** quiz mechanics, grading, rewards, heart logic,
+or score storage touched. New CSS only; no new deps.
+
+- **Tokens (`globals.css`):** added `--codex-tier-{initiate,adept,laureate}`
+  ramp (+`-soft/-text/-on/-edge`) in light & dark; added `--codex-success-on` /
+  `--codex-danger-on` badge-text tokens (white on light, dark-ink on the lighter
+  dark-mode fills); added `.codex-pressable-edge` / `.codex-pressable-danger`
+  utilities (reduced-motion-guarded).
+- **Tier source of truth (`trial-difficulty-cards.tsx`):** `TRIAL_TIERS`
+  relabeled Apprentice→**Initiate**, Scholar→**Adept**, Master→**Laureate**
+  (storage keys unchanged); accents remapped to `--codex-tier-*` + `accentEdge`.
+  Feeds both the cards and the drop-up, so logos recolor automatically.
+- **Selectors:** `DifficultyDropUp` + `TrialDifficultyCards` → codex accents,
+  pressed-edge CTAs.
+- **In-quiz shell (`chapter-quiz-overlay.tsx`):** HUD wisdom, question-card
+  radius, reflection + correct/incorrect feedback cards, WisdomFloat, and the
+  Next/See-Results CTA all on `--codex-*`; CTA uses tier-accent pressed-edge.
+- **Shared option primitive (`questions/OptionButton.tsx`):** selected→
+  `--codex-primary`, correct→`--codex-success`, wrong→`--codex-danger`
+  (border/soft-bg/badge), radius = `--codex-radius-btn`, focus ring + hover →
+  primary. Used by MC/Theme/Vocab/Passage/CrossRef/CloseReading.
+- **Renderers:** TrueFalse, TrueFalseReason, CrossReference, ThemeAnalysis,
+  CloseReading, PassageIdentification, VocabularyInContext, Reflection ported off
+  `--trial-*`; ThemeAnalysis/CloseReading "Check Answer" → primary pressed-edge
+  when armed.
+- **Results / failure:** `TrialResultsScreen` (done earlier) + `HeartsZeroModal`
+  (codex-danger crack, danger-edge refill CTA) + `TrialIntroCard` (tier
+  pressed-edge Begin, codex-danger hearts) + `HeartsDisplay`
+  (`fill-rose-500`→`--codex-danger`).
+- **Sigils:** recolor via `color` prop (now codex tokens); `WisdomStar` gradient
+  → `--codex-reward`/`--codex-tier-laureate`. `TrialProgressBar` default accent →
+  `--codex-primary`.
+- **Out of scope (left untouched):** standalone `/quiz/[quizId]` route — it uses
+  a self-contained `--tome-*` token system (tome-success/error/accent), is not
+  part of the in-reader Trial flow, and is already coherent. No review/flashcard
+  surface exists in Tome (Part 5 → future).
+
+**Verify:** `tsc --noEmit` clean across all touched files (only pre-existing
+`vitest`-types errors remain in a sidebar test); lint shows only **pre-existing**
+`set-state-in-effect`/unused-`trialExit` errors on lines not edited here. Runtime
+(dev server): no console errors; all new tokens resolve in light **and** dark;
+drop-up shows Initiate/Adept/Laureate; in-quiz shell renders progress bar +
+"Question N of M" + 4 option buttons at 12px radius (idle border `--border`);
+answering shows correct badge `--codex-success`, feedback label
+`--codex-success-text`, feedback card border success-mix-45%, Next CTA
+`--codex-primary` — all at codex radii. `next build` could not run **in the
+worktree** (no local `node_modules`; symlinking the main repo's copy trips a
+Turbopack "symlink points outside root" panic) — an infra limitation, not a code
+issue; type-check + runtime stand in.
+

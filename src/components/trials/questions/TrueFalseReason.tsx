@@ -70,11 +70,11 @@ export function TrueFalseReason({
   function stateStyle(state: "correct" | "wrong" | "selected" | "idle") {
     switch (state) {
       case "correct":
-        return { borderColor: "var(--trial-correct)", background: "var(--trial-correct-soft)", color: "var(--foreground)" }
+        return { borderColor: "var(--codex-success)", background: "var(--codex-success-soft)", color: "var(--foreground)" }
       case "wrong":
-        return { borderColor: "var(--trial-incorrect)", background: "var(--trial-incorrect-soft)", color: "var(--foreground)" }
+        return { borderColor: "var(--codex-danger)", background: "var(--codex-danger-soft)", color: "var(--foreground)" }
       case "selected":
-        return { borderColor: "var(--trial-select)", background: "var(--trial-select-soft)", color: "var(--foreground)" }
+        return { borderColor: "var(--codex-primary)", background: "var(--codex-primary-soft)", color: "var(--foreground)" }
       default:
         return { borderColor: "var(--border)", background: "var(--card)", color: "var(--foreground)" }
     }
@@ -99,7 +99,7 @@ export function TrueFalseReason({
                 onClick={() => pickTf(value)}
                 disabled={answered}
                 style={stateStyle(state)}
-                className={`flex flex-col items-center justify-center gap-2 rounded-2xl border-2 py-6 px-4 font-serif font-bold transition-[background-color,border-color] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--trial-select)] focus-visible:ring-offset-2 ${state === "idle" ? "hover:border-[var(--trial-select)] hover:bg-[var(--trial-select-soft)]" : ""}`}
+                className={`flex flex-col items-center justify-center gap-2 rounded-2xl border-2 py-6 px-4 font-serif font-bold transition-[background-color,border-color] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--codex-primary)] focus-visible:ring-offset-2 ${state === "idle" ? "hover:border-[var(--codex-primary)] hover:bg-[var(--codex-primary-soft)]" : ""}`}
                 aria-pressed={selected}
               >
                 <Icon className="size-6" aria-hidden="true" />
@@ -128,7 +128,7 @@ export function TrueFalseReason({
                   onClick={() => pickReason(i)}
                   disabled={answered}
                   style={stateStyle(state)}
-                  className={`block w-full rounded-xl border-2 px-4 py-3 text-left text-sm transition-[background-color,border-color] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--trial-select)] focus-visible:ring-offset-2 ${state === "idle" ? "hover:border-[var(--trial-select)] hover:bg-[var(--trial-select-soft)]" : ""}`}
+                  className={`block w-full rounded-xl border-2 px-4 py-3 text-left text-sm transition-[background-color,border-color] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--codex-primary)] focus-visible:ring-offset-2 ${state === "idle" ? "hover:border-[var(--codex-primary)] hover:bg-[var(--codex-primary-soft)]" : ""}`}
                   aria-pressed={selected}
                 >
                   {r}

@@ -26,8 +26,8 @@ export function ThemeAnalysis({
         <div
           className="rounded-r-lg border-l-4 pl-4 pr-3 py-3"
           style={{
-            borderColor: "var(--trial-laureate)",
-            background: "var(--trial-laureate-soft)",
+            borderColor: "var(--codex-tier-laureate)",
+            background: "var(--codex-tier-laureate-soft)",
           }}
         >
           <p className="font-serif text-[18px] leading-[1.8] text-ink">{passage}</p>
@@ -62,7 +62,16 @@ export function ThemeAnalysis({
             type="button"
             onClick={() => selected && onSubmit(selected)}
             disabled={!selected}
-            className="rounded-xl font-semibold"
+            className="codex-pressable-edge min-h-[44px] font-semibold"
+            style={
+              selected
+                ? {
+                    background: "var(--codex-primary)",
+                    color: "var(--codex-on-primary)",
+                    borderRadius: "var(--codex-radius-btn)",
+                  }
+                : { borderRadius: "var(--codex-radius-btn)" }
+            }
           >
             Check Answer
           </Button>

@@ -39,16 +39,16 @@ export function TrueFalse({
             ? "selected"
             : "idle"
         const base =
-          "flex flex-col items-center justify-center gap-3 rounded-2xl border-2 py-10 px-6 text-lg font-serif font-bold transition-[background-color,border-color] cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--trial-select)] focus-visible:ring-offset-2"
+          "flex flex-col items-center justify-center gap-3 rounded-2xl border-2 py-10 px-6 text-lg font-serif font-bold transition-[background-color,border-color] cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--codex-primary)] focus-visible:ring-offset-2"
         const tokenStyle =
           state === "correct"
-            ? { borderColor: "var(--trial-correct)", background: "var(--trial-correct-soft)", color: "var(--foreground)" }
+            ? { borderColor: "var(--codex-success)", background: "var(--codex-success-soft)", color: "var(--foreground)" }
             : state === "wrong"
-              ? { borderColor: "var(--trial-incorrect)", background: "var(--trial-incorrect-soft)", color: "var(--foreground)" }
+              ? { borderColor: "var(--codex-danger)", background: "var(--codex-danger-soft)", color: "var(--foreground)" }
               : state === "disabled"
                 ? { borderColor: "var(--border)", background: "var(--muted)", color: "var(--muted-foreground)" }
                 : state === "selected"
-                  ? { borderColor: "var(--trial-select)", background: "var(--trial-select-soft)", color: "var(--foreground)" }
+                  ? { borderColor: "var(--codex-primary)", background: "var(--codex-primary-soft)", color: "var(--foreground)" }
                   : { borderColor: "var(--border)", background: "var(--card)", color: "var(--foreground)" }
         return (
           <button
@@ -59,7 +59,7 @@ export function TrueFalse({
             }}
             disabled={answered || pending !== null}
             style={tokenStyle}
-            className={`${base} ${state === "idle" ? "hover:border-[var(--trial-select)] hover:bg-[var(--trial-select-soft)]" : ""} ${state === "disabled" ? "opacity-60" : ""}`}
+            className={`${base} ${state === "idle" ? "hover:border-[var(--codex-primary)] hover:bg-[var(--codex-primary-soft)]" : ""} ${state === "disabled" ? "opacity-60" : ""}`}
           >
             <Icon className="w-8 h-8" aria-hidden />
             {label}

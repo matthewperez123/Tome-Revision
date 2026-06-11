@@ -18,7 +18,7 @@ import {
   getQuizSummary,
   type QuizState,
 } from "@/lib/quiz-engine"
-import { tierSigils } from "@/components/trials/sigils"
+import { DifficultyBars } from "@/components/trials/DifficultyBars"
 import { getTierDef } from "@/components/tome/trial-difficulty-cards"
 import type { QuizDifficulty } from "@/lib/book-progress"
 import {
@@ -50,7 +50,6 @@ export function TrialResultsScreen({
   const reduced = useReducedMotion()
   const summary = getQuizSummary(quizState)
   const tierDef = getTierDef(tier)
-  const Sigil = tierSigils[tier]
   const confettiRef = useRef<ConfettiRef>(null)
   const [wisdomDisplay, setWisdomDisplay] = useState(0)
   const [reviewOpen, setReviewOpen] = useState(false)
@@ -68,10 +67,10 @@ export function TrialResultsScreen({
         startVelocity: summary.perfect ? 55 : 40,
         origin: { y: 0.4 },
         colors: [
-          tok("--trial-laureate"),
-          tok("--trial-laureate-bright"),
-          tok("--trial-correct"),
-          tok("--trial-select"),
+          tok("--codex-tier-laureate"),
+          tok("--codex-reward"),
+          tok("--codex-success"),
+          tok("--codex-primary"),
         ],
       })
     }, 300)
@@ -102,8 +101,8 @@ export function TrialResultsScreen({
   }, [summary.xpEarned, reduced])
 
   const pctColor = summary.passed
-    ? "var(--trial-laureate-text)"
-    : "var(--trial-incorrect-text)"
+    ? "var(--codex-success-text)"
+    : "var(--codex-danger-text)"
 
   return (
     <div className="flex flex-col items-center justify-center h-full gap-6 px-6 text-center relative overflow-y-auto py-8">
@@ -150,7 +149,7 @@ export function TrialResultsScreen({
             transition={{ type: "spring", stiffness: 200, damping: 18 }}
             className="relative"
           >
-            <Sigil size={80} color={tierDef.accentColor} />
+            <DifficultyBars level={tierDef.level} size={72} color={tierDef.accentColor} />
             {summary.perfect && (
               <motion.div
                 animate={reduced ? undefined : { rotate: 360 }}
@@ -162,7 +161,7 @@ export function TrialResultsScreen({
                 className="absolute inset-0 -m-2 rounded-full"
                 style={{
                   boxShadow:
-                    "0 0 24px color-mix(in srgb, var(--trial-laureate) 55%, transparent), inset 0 0 16px color-mix(in srgb, var(--trial-laureate-bright) 35%, transparent)",
+                    "0 0 24px color-mix(in srgb, var(--codex-tier-laureate) 55%, transparent), inset 0 0 16px color-mix(in srgb, var(--codex-reward) 35%, transparent)",
                 }}
                 aria-hidden
               />
@@ -186,9 +185,10 @@ export function TrialResultsScreen({
         {/* Wisdom ticker */}
         <motion.div
           variants={reduced ? reducedTokens.resultsChild : resultsChild}
-          className="rounded-xl border-2 bg-card px-4 py-3 flex items-center justify-between"
+          className="border-2 bg-card px-4 py-3 flex items-center justify-between"
           style={{
-            borderColor: "color-mix(in srgb, var(--trial-laureate) 30%, transparent)",
+            borderRadius: "var(--codex-radius-btn)",
+            borderColor: "color-mix(in srgb, var(--codex-tier-laureate) 30%, transparent)",
           }}
           aria-live="polite"
         >
@@ -197,7 +197,7 @@ export function TrialResultsScreen({
           </span>
           <span
             className="font-serif text-2xl font-bold tabular-nums"
-            style={{ color: "var(--trial-laureate-text)" }}
+            style={{ color: "var(--codex-tier-laureate-text)" }}
           >
             +{wisdomDisplay}
           </span>
@@ -252,9 +252,9 @@ export function TrialResultsScreen({
                     >
                       <div className="flex items-start gap-2">
                         {ok ? (
-                          <CheckCircle2 className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
+                          <CheckCircle2 className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: "var(--codex-success)" }} />
                         ) : (
-                          <XCircle className="w-4 h-4 text-rose-500 mt-0.5 flex-shrink-0" />
+                          <XCircle className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: "var(--codex-danger)" }} />
                         )}
                         <div className="min-w-0 flex-1">
                           <p className="font-serif text-ink">{q.prompt}</p>
@@ -286,8 +286,14 @@ export function TrialResultsScreen({
           {summary.passed ? (
             <Button
               onClick={() => onPass(summary.xpEarned, summary.coinsEarned)}
-              className="w-full rounded-xl py-3 text-base font-semibold gap-2"
-              style={{ background: tierDef.accentColor, color: tierDef.onAccent }}
+              className="codex-pressable-edge w-full min-h-[44px] py-3 text-base font-semibold gap-2"
+              style={{
+                background: tierDef.accentColor,
+                color: tierDef.onAccent,
+                borderRadius: "var(--codex-radius-btn)",
+                // @ts-expect-error — CSS custom property for pressed edge
+                "--codex-edge": tierDef.accentEdge,
+              }}
             >
               {summary.perfect && <Sparkles className="w-4 h-4" />}
               {isLastChapter ? "Finish book" : "Next chapter"}

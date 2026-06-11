@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { ChevronRight, Heart } from "lucide-react"
 import type { QuizDifficulty } from "@/lib/book-progress"
 import { getTierDef } from "@/components/tome/trial-difficulty-cards"
-import { tierSigils } from "@/components/trials/sigils"
+import { DifficultyBars } from "@/components/trials/DifficultyBars"
 import { trialDurations } from "@/lib/animations/trial-tokens"
 import { MAX_HEARTS } from "@/lib/economy"
 
@@ -30,7 +30,6 @@ export function TrialIntroCard({
   const reduced = useReducedMotion()
   const [begun, setBegun] = useState(false)
   const tierDef = getTierDef(tier)
-  const Sigil = tierSigils[tier]
 
   useEffect(() => {
     if (begun) return
@@ -55,7 +54,7 @@ export function TrialIntroCard({
         transition={{ type: "spring", stiffness: 200, damping: 22 }}
         className="flex items-center justify-center"
       >
-        <Sigil size={80} color={tierDef.accentColor} />
+        <DifficultyBars level={tierDef.level} size={72} color={tierDef.accentColor} />
       </motion.div>
 
       <div className="space-y-1">
@@ -74,11 +73,15 @@ export function TrialIntroCard({
           {Array.from({ length: MAX_HEARTS }).map((_, i) => (
             <Heart
               key={i}
-              className={`w-4 h-4 ${
+              className="w-4 h-4"
+              style={
                 i < hearts
-                  ? "fill-rose-500 text-rose-500"
-                  : "fill-transparent text-stone-400"
-              }`}
+                  ? {
+                      fill: "var(--codex-danger)",
+                      color: "var(--codex-danger)",
+                    }
+                  : { fill: "transparent", color: "var(--muted-foreground)" }
+              }
             />
           ))}
         </div>
@@ -86,8 +89,14 @@ export function TrialIntroCard({
 
       <Button
         onClick={handleBegin}
-        className="mt-2 rounded-xl px-8 py-3 text-base font-semibold gap-2"
-        style={{ background: tierDef.accentColor, color: tierDef.onAccent }}
+        className="codex-pressable-edge mt-2 min-h-[44px] px-8 py-3 text-base font-semibold gap-2"
+        style={{
+          background: tierDef.accentColor,
+          color: tierDef.onAccent,
+          borderRadius: "var(--codex-radius-btn)",
+          // @ts-expect-error — CSS custom property for pressed edge
+          "--codex-edge": tierDef.accentEdge,
+        }}
       >
         Begin
         <ChevronRight className="w-4 h-4" />

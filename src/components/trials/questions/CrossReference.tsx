@@ -40,8 +40,8 @@ export function CrossReference({
         <div
           className="rounded-r-lg border-l-4 pl-4 pr-3 py-3"
           style={{
-            borderColor: "var(--trial-laureate)",
-            background: "var(--trial-laureate-soft)",
+            borderColor: "var(--codex-tier-laureate)",
+            background: "var(--codex-tier-laureate-soft)",
           }}
         >
           <p className="font-serif text-[18px] leading-[1.8] text-ink italic">{passage}</p>
@@ -58,14 +58,14 @@ export function CrossReference({
               ? "selected"
               : "idle"
           const baseCls =
-            "flex items-center gap-3 rounded-xl border-2 p-3 text-left transition-[background-color,border-color] cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--trial-select)]"
+            "flex items-center gap-3 rounded-xl border-2 p-3 text-left transition-[background-color,border-color] cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--codex-primary)]"
           const tokenStyle =
             state === "correct"
-              ? { borderColor: "var(--trial-correct)", background: "var(--trial-correct-soft)" }
+              ? { borderColor: "var(--codex-success)", background: "var(--codex-success-soft)" }
               : state === "wrong"
-                ? { borderColor: "var(--trial-incorrect)", background: "var(--trial-incorrect-soft)" }
+                ? { borderColor: "var(--codex-danger)", background: "var(--codex-danger-soft)" }
                 : state === "selected"
-                  ? { borderColor: "var(--trial-select)", background: "var(--trial-select-soft)" }
+                  ? { borderColor: "var(--codex-primary)", background: "var(--codex-primary-soft)" }
                   : { borderColor: "var(--border)", background: "var(--card)" }
           return (
             <button
@@ -74,7 +74,7 @@ export function CrossReference({
               onClick={() => !answered && !pending && setPending(opt)}
               disabled={answered || pending !== null}
               style={tokenStyle}
-              className={`${baseCls} ${state === "idle" ? "hover:border-[var(--trial-select)]" : ""}`}
+              className={`${baseCls} ${state === "idle" ? "hover:border-[var(--codex-primary)]" : ""}`}
               aria-pressed={state === "selected" || state === "correct" || state === "wrong"}
             >
               <span

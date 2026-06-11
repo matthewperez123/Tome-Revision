@@ -5,6 +5,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion"
 import { RotateCcw, X } from "lucide-react"
 import type { QuizDifficulty } from "@/lib/book-progress"
 import { TRIAL_TIERS } from "@/components/tome/trial-difficulty-cards"
+import { DifficultyBars } from "@/components/trials/DifficultyBars"
 import { springs } from "@/lib/design-tokens"
 import { cn } from "@/lib/utils"
 
@@ -81,37 +82,32 @@ export function DifficultyDropUp({
             aria-hidden="true"
           />
 
-          {/* Drop-up sheet */}
+          {/* Centered search-style command panel */}
           <motion.div
             key="difficulty-dropup"
-            initial={reduced ? { opacity: 0 } : { y: "100%" }}
-            animate={reduced ? { opacity: 1 } : { y: 0 }}
-            exit={reduced ? { opacity: 0 } : { y: "100%" }}
-            transition={reduced ? { duration: 0.2 } : springs.gentle}
-            className="fixed inset-x-0 bottom-0 z-[80] mx-auto max-w-2xl rounded-t-2xl border border-b-0 border-border bg-background shadow-[0_-8px_40px_rgba(0,0,0,0.25)]"
+            initial={reduced ? { opacity: 0 } : { opacity: 0, scale: 0.96, y: -8 }}
+            animate={reduced ? { opacity: 1 } : { opacity: 1, scale: 1, y: 0 }}
+            exit={reduced ? { opacity: 0 } : { opacity: 0, scale: 0.96, y: -8 }}
+            transition={reduced ? { duration: 0.15 } : springs.gentle}
+            className="fixed left-1/2 top-[15vh] z-[80] w-[calc(100%-2rem)] max-w-sm -translate-x-1/2 overflow-hidden rounded-2xl border border-border bg-background shadow-[0_24px_60px_-12px_rgba(0,0,0,0.45)]"
             role="dialog"
             aria-modal="true"
             aria-label="Choose a trial difficulty"
           >
-            {/* Drag handle */}
-            <div className="flex justify-center pt-3 pb-1" aria-hidden="true">
-              <span className="h-1 w-10 rounded-full bg-border" />
-            </div>
-
             {/* Header */}
-            <div className="flex items-center justify-between px-5 pt-1 pb-2">
+            <div className="flex items-center justify-between gap-2 px-4 pt-3.5 pb-2.5">
               <div className="min-w-0">
                 <p className="text-[10px] font-medium uppercase tracking-[0.14em] text-muted-foreground">
                   End of {unitDisplay}
                 </p>
-                <h3 className="mt-0.5 font-serif text-lg font-semibold leading-tight tracking-tight">
-                  Choose your trial
+                <h3 className="mt-0.5 font-serif text-base font-semibold leading-tight tracking-tight">
+                  Choose your difficulty
                 </h3>
               </div>
               <button
                 type="button"
                 onClick={onClose}
-                className="flex size-8 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--tome-accent,#6366f1)]"
+                className="flex size-7 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--codex-primary)]"
                 aria-label="Close"
               >
                 <X className="size-4" />
@@ -120,54 +116,51 @@ export function DifficultyDropUp({
 
             {/* Resume row — shown when a saved in-progress attempt exists */}
             {resumeTier && (
-              <div className="px-3 pt-1 pb-2">
+              <div className="px-2 pb-1.5">
                 <button
                   type="button"
                   onClick={() => onSelect(resumeTier)}
                   className={cn(
-                    "group flex w-full items-center gap-3 rounded-xl border px-3 py-3 text-left transition-[background-color,border-color] duration-150",
+                    "group flex w-full items-center gap-2.5 rounded-xl border px-2.5 py-2 text-left transition-[background-color,border-color] duration-150",
                     "hover:bg-[var(--tome-surface-elevated)]",
                     "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1"
                   )}
                   style={{
-                    borderColor: "rgba(212,175,55,0.45)",
-                    backgroundColor: "rgba(212,175,55,0.06)",
+                    borderColor: "color-mix(in srgb, var(--codex-tier-laureate) 45%, transparent)",
+                    backgroundColor: "var(--codex-tier-laureate-soft)",
                   }}
                   aria-label={`Resume your ${resumeTier} trial${resumeCopy ? `, ${resumeCopy}` : ""}`}
                 >
                   <span
-                    className="flex size-10 shrink-0 items-center justify-center rounded-lg"
-                    style={{ backgroundColor: "rgba(212,175,55,0.10)" }}
+                    className="flex size-8 shrink-0 items-center justify-center rounded-lg"
+                    style={{ backgroundColor: "color-mix(in srgb, var(--codex-tier-laureate) 18%, transparent)" }}
                   >
-                    <RotateCcw className="size-[18px]" style={{ color: "#D4AF37" }} />
+                    <RotateCcw className="size-4" style={{ color: "var(--codex-tier-laureate-text)" }} />
                   </span>
                   <span className="flex min-w-0 flex-1 flex-col">
                     <span
                       className="text-sm font-semibold tracking-tight"
-                      style={{ color: "#D4AF37" }}
+                      style={{ color: "var(--codex-tier-laureate-text)" }}
                     >
-                      Resuming where you left off
+                      Resume where you left off
                     </span>
-                    <span className="text-[11px] text-muted-foreground">
+                    <span className="truncate text-[11px] text-muted-foreground">
                       {resumeCopy ?? `${resumeTier} trial — pick up where you stopped.`}
                     </span>
                   </span>
-                  <span className="shrink-0 text-right">
-                    <span
-                      className="block text-[10px] font-medium uppercase tracking-wider"
-                      style={{ color: "var(--trial-laureate-text)" }}
-                    >
-                      Continue
-                    </span>
+                  <span
+                    className="shrink-0 text-[10px] font-semibold uppercase tracking-wider"
+                    style={{ color: "var(--codex-tier-laureate-text)" }}
+                  >
+                    Continue
                   </span>
                 </button>
               </div>
             )}
 
             {/* Tier rows */}
-            <ul className="px-3 pb-2">
+            <ul className="px-2 pb-1.5">
               {TRIAL_TIERS.map((tier) => {
-                const Sigil = tier.sigil
                 const isRecommended = tier.key === recommendedTier
                 return (
                   <li key={tier.key}>
@@ -178,31 +171,34 @@ export function DifficultyDropUp({
                       type="button"
                       onClick={() => onSelect(tier.key)}
                       className={cn(
-                        "group flex w-full items-center gap-3 rounded-xl border px-3 py-3 text-left transition-[background-color,border-color] duration-150",
+                        "group flex w-full items-center gap-2.5 rounded-xl border border-transparent px-2.5 py-2 text-left transition-[background-color,border-color] duration-150",
                         "hover:bg-[var(--tome-surface-elevated)]",
-                        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1",
-                        isRecommended && "ring-1 ring-offset-0"
+                        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1"
                       )}
-                      style={{
-                        borderColor: `color-mix(in srgb, ${tier.accentColor} 30%, transparent)`,
-                        backgroundColor: "transparent",
-                      }}
+                      style={
+                        isRecommended
+                          ? {
+                              borderColor: `color-mix(in srgb, ${tier.accentColor} 35%, transparent)`,
+                              backgroundColor: tier.accentSoft,
+                            }
+                          : undefined
+                      }
                       aria-label={`${tier.label}${isRecommended ? " (recommended)" : ""}: ${tier.subcopy}`}
                     >
                       <span
-                        className="flex size-10 shrink-0 items-center justify-center rounded-lg"
+                        className="flex size-8 shrink-0 items-center justify-center rounded-lg"
                         style={{ backgroundColor: tier.accentSoft }}
                       >
-                        <Sigil size={22} color={tier.accentColor} />
+                        <DifficultyBars level={tier.level} size={16} color={tier.accentColor} />
                       </span>
-                      <span className="flex min-w-0 flex-1 flex-col">
+                      <span className="flex min-w-0 flex-1 items-center gap-2">
                         <span
                           className="text-sm font-semibold tracking-tight"
                           style={{ color: tier.accentColor }}
                         >
                           {tier.label}
                         </span>
-                        <span className="text-[11px] text-muted-foreground">
+                        <span className="truncate text-[11px] text-muted-foreground">
                           {tier.subcopy}
                         </span>
                       </span>
@@ -214,7 +210,7 @@ export function DifficultyDropUp({
                           className="block text-[10px] font-medium tabular-nums"
                           style={{ color: tier.accentColor }}
                         >
-                          +{tier.wisdomPerCorrect}/ans
+                          +{tier.wisdomPerCorrect}
                         </span>
                       </span>
                     </button>
@@ -224,21 +220,18 @@ export function DifficultyDropUp({
             </ul>
 
             {/* Footer */}
-            <div className="flex items-center justify-between gap-3 border-t border-border px-5 py-3">
-              <p className="text-[10px] text-muted-foreground/80">
-                Hearts regenerate over time — pick the tier that matches your focus.
+            <div className="flex items-center justify-between gap-3 border-t border-border px-4 py-2.5">
+              <p className="truncate text-[10px] text-muted-foreground/80">
+                Hearts regenerate over time.
               </p>
               <button
                 type="button"
                 onClick={onSkip}
-                className="shrink-0 rounded-md px-2.5 py-1 text-[11px] font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--tome-accent,#6366f1)]"
+                className="shrink-0 rounded-md px-2.5 py-1 text-[11px] font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--codex-primary)]"
               >
                 Skip trial
               </button>
             </div>
-
-            {/* Safe-area bottom padding on mobile */}
-            <div className="h-[env(safe-area-inset-bottom,0px)]" aria-hidden="true" />
           </motion.div>
         </>
       )}

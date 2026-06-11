@@ -374,21 +374,7 @@ export default function SocialPage() {
                 </div>
               </BlurFade>
 
-              {/* Zone legend */}
-              <BlurFade delay={0.08} inView>
-                <div className="flex gap-3 text-xs">
-                  <div className="flex items-center gap-1.5 text-emerald-600">
-                    <ChevronUp className="size-3.5" />
-                    <span>Top 10 advance to Philosopher</span>
-                  </div>
-                  <div className="flex items-center gap-1.5 text-rose-500 ml-auto">
-                    <ChevronDown className="size-3.5" />
-                    <span>Bottom 5 drop to Apprentice</span>
-                  </div>
-                </div>
-              </BlurFade>
-
-              {/* Leaderboard rows */}
+              {/* Leaderboard rows with Codex-style zone bands */}
               <div className="space-y-1">
                 {LEADERBOARD.map((user, i) => {
                   const rank       = i + 1
@@ -396,25 +382,47 @@ export default function SocialPage() {
                   const isPromo    = rank <= PROMOTION_CUTOFF
                   const isDemotion = rank >= DEMOTION_CUTOFF
                   const isTop3     = rank <= 3
+                  const nextTier   = TIERS[CURRENT_TIER_IDX + 1]?.label ?? "next tier"
+                  const prevTier   = TIERS[CURRENT_TIER_IDX - 1]?.label ?? "previous tier"
 
                   return (
                     <BlurFade key={user.id} delay={0.03 + i * 0.018} inView>
+                      {/* Promotion Zone band */}
+                      {rank === 1 && (
+                        <div
+                          className="flex items-center gap-2 px-3 py-1.5 mb-1 rounded-lg text-[10px] font-bold uppercase tracking-wide"
+                          style={{ background: "var(--codex-success-soft)", color: "var(--codex-success-text)" }}
+                        >
+                          <ChevronUp className="size-3.5" />
+                          Promotion Zone — Top {PROMOTION_CUTOFF} — Advance to {nextTier}
+                        </div>
+                      )}
+                      {/* Demotion Zone band */}
+                      {rank === DEMOTION_CUTOFF && (
+                        <div
+                          className="flex items-center gap-2 px-3 py-1.5 mt-2 mb-1 rounded-lg text-[10px] font-bold uppercase tracking-wide"
+                          style={{ background: "var(--codex-danger-soft)", color: "var(--codex-danger-text)" }}
+                        >
+                          <ChevronDown className="size-3.5" />
+                          Demotion Zone — Bottom 5 — Drop to {prevTier}
+                        </div>
+                      )}
                       <div
                         className={cn(
-                          "relative flex items-center gap-3 rounded-xl border bg-card px-3 py-2.5 transition-colors",
-                          isYou
-                            ? "border-[var(--tome-accent,#6366f1)]/40 bg-[var(--tome-accent,#6366f1)]/[0.04]"
-                            : "border-border",
+                          "relative flex items-center gap-3 border bg-card px-3 py-2.5 transition-colors",
                           isTop3 && "bg-muted/30"
                         )}
                         style={{
-                          borderLeftWidth: 3,
+                          borderRadius: "var(--codex-radius-btn)",
+                          borderColor: isYou ? "var(--codex-primary)" : "var(--border)",
+                          background: isYou ? "var(--codex-primary-soft)" : undefined,
+                          borderLeftWidth: "var(--codex-border-w)",
                           borderLeftColor: isYou
-                            ? "#6366F1"
+                            ? "var(--codex-primary)"
                             : isPromo
-                            ? "rgba(34,197,94,0.5)"
+                            ? "var(--codex-success)"
                             : isDemotion
-                            ? "rgba(239,68,68,0.5)"
+                            ? "var(--codex-danger)"
                             : "transparent",
                         }}
                       >
@@ -447,7 +455,7 @@ export default function SocialPage() {
                             {isYou && (
                               <span
                                 className="text-[9px] font-bold px-1.5 py-0.5 rounded-full shrink-0"
-                                style={{ background: "#6366F1", color: "#fff" }}
+                                style={{ background: "var(--codex-primary)", color: "var(--codex-on-primary)" }}
                               >
                                 You
                               </span>
@@ -469,7 +477,7 @@ export default function SocialPage() {
                               <span className="tabular-nums">{user.streak}</span>
                             </div>
                           )}
-                          <div className="flex items-center gap-1 text-sm font-semibold" style={{ color: "#6366F1" }}>
+                          <div className="flex items-center gap-1 text-sm font-semibold" style={{ color: "var(--codex-primary)" }}>
                             <Zap className="size-3.5" />
                             <NumberTicker value={user.xp} className="tabular-nums" />
                           </div>

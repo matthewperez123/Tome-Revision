@@ -11,7 +11,7 @@ export interface SigilProps extends SVGProps<SVGSVGElement> {
  * Tier 1 of the coherent Trials sigil family: one leaf → paired sprig
  * (Adept) → laurel crown (Laureate). Shared geometry: viewBox 24, stroke
  * 1.5, round caps/joins, a symmetric rounded-vesica leaf primitive, and a
- * half-opacity midrib. Color is driven by a tier token (var(--trial-*)).
+ * half-opacity midrib. Color is driven by a tier token (var(--codex-tier-*)).
  */
 export function ApprenticeSigil({
   size = 24,

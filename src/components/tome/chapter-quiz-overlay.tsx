@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useReducer, useState } from "react"
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion"
-import { ChevronRight, Flame, X } from "lucide-react"
+import { CheckCircle2, ChevronRight, Flame, X, XCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   quizReducer,
@@ -18,7 +18,6 @@ import { springs } from "@/lib/design-tokens"
 import {
   trialEnter,
   trialExit,
-  explanationRise,
   wisdomFloat,
   wrongShakeKeyframes,
   wrongShakeTransition,
@@ -36,9 +35,8 @@ import {
   clearAttempt,
   type TrialAttemptSnapshot,
 } from "@/lib/trial-attempts"
-import { tierSigils } from "@/components/trials/sigils"
+import { DifficultyBars } from "@/components/trials/DifficultyBars"
 import { getTierDef, TrialDifficultyCards } from "./trial-difficulty-cards"
-import { TrialProgressBar } from "@/components/trials/TrialProgressBar"
 import { HeartsDisplay } from "@/components/trials/HeartsDisplay"
 import { TrialIntroCard } from "@/components/trials/TrialIntroCard"
 import { HeartsZeroModal } from "@/components/trials/HeartsZeroModal"
@@ -211,7 +209,7 @@ function WisdomFloat({ amount, show, reduced }: { amount: number; show: boolean;
           <WisdomStar size={20} />
           <span
             className="font-semibold text-sm"
-            style={{ color: "var(--trial-laureate-text)" }}
+            style={{ color: "var(--codex-tier-laureate-text)" }}
           >
             +{amount} Wisdom
           </span>
@@ -237,6 +235,7 @@ interface QuizRunnerProps {
   onFeedback: (msg: string) => void
   quizStateOut: (state: ReturnType<typeof createQuizState>) => void
   resumeToken: number
+  onClose: () => void
 }
 
 function QuizRunner({
@@ -251,6 +250,7 @@ function QuizRunner({
   onFeedback,
   quizStateOut,
   resumeToken,
+  onClose,
 }: QuizRunnerProps) {
   const reduced = useReducedMotion() ?? false
 
@@ -450,7 +450,6 @@ function QuizRunner({
   const Renderer = QUESTION_RENDERERS[q.type]
   const TypeIcon = QUESTION_TYPE_ICONS[q.type]
   const tierDef = getTierDef(tier)
-  const TierSigil = tierSigils[tier]
 
   const handleSubmit = (answer: string) => {
     if (answered) return
@@ -495,53 +494,80 @@ function QuizRunner({
     0
   )
 
+  const progressPct =
+    state.questions.length > 0
+      ? Math.min(100, (currentIdx / state.questions.length) * 100)
+      : 0
+
   return (
     <div className="flex flex-col h-full">
-      {/* HUD — difficulty · score · streak · hearts */}
-      <div className="flex items-center justify-between gap-3 px-6 py-2.5 bg-card border-b border-border">
-        {/* Difficulty + context */}
-        <div className="flex items-center gap-2.5 min-w-0">
-          <span
-            className="flex items-center gap-1.5 rounded-full pl-1.5 pr-2.5 py-1 text-xs font-semibold font-sans"
-            style={{ background: tierDef.accentSoft, color: tierDef.accentText }}
+      {/* Codex-style top bar — close · progress · hearts */}
+      <div className="shrink-0 bg-card border-b border-border">
+        <div className="flex items-center gap-3 px-4 pt-3 pb-2 max-w-[640px] mx-auto">
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Exit trial"
+            className="shrink-0 -ml-1 p-1.5 rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--codex-primary)]"
           >
-            <TierSigil size={16} color={tierDef.accentColor} />
-            {tierDef.label}
-          </span>
-          <span className="text-[11px] font-sans text-muted-foreground truncate hidden sm:block max-w-[200px]">
-            {book.title} · {chapterTitle}
-          </span>
-        </div>
+            <X className="size-5" aria-hidden="true" />
+          </button>
 
-        {/* Stats */}
-        <div className="flex items-center gap-3 shrink-0">
-          {/* Wisdom score */}
-          <span
-            className="flex items-center gap-1 text-xs font-semibold tabular-nums font-sans"
-            style={{ color: "var(--trial-laureate-text)" }}
-            aria-label={`${state.xpEarned} Wisdom earned`}
+          {/* Progress bar */}
+          <div
+            role="progressbar"
+            aria-valuemin={0}
+            aria-valuemax={state.questions.length}
+            aria-valuenow={currentIdx}
+            className="flex-1 h-3.5 rounded-full bg-muted overflow-hidden"
           >
-            <WisdomStar size={14} />
-            {state.xpEarned}
-          </span>
-          {/* Streak */}
-          <span
-            className={`flex items-center gap-1 text-xs font-semibold tabular-nums font-sans transition-opacity ${streak > 1 ? "opacity-100" : "opacity-40"}`}
-            style={{ color: "var(--flame-streak)" }}
-            aria-label={`${streak} correct in a row`}
-          >
-            <Flame size={14} className="fill-current" />
-            {streak}
-          </span>
+            <motion.div
+              initial={reduced ? { width: `${progressPct}%` } : { width: "0%" }}
+              animate={{ width: `${progressPct}%` }}
+              transition={
+                reduced
+                  ? { duration: 0.15 }
+                  : { type: "spring", stiffness: 160, damping: 24 }
+              }
+              className="h-full rounded-full"
+              style={{
+                background: `linear-gradient(90deg, color-mix(in srgb, ${tierDef.accentColor} 78%, transparent) 0%, ${tierDef.accentColor} 100%)`,
+              }}
+            />
+          </div>
+
           <HeartsDisplay current={state.hearts} max={hearts} lostIndex={lostIndex} />
         </div>
-      </div>
 
-      <TrialProgressBar
-        current={currentIdx}
-        total={state.questions.length}
-        accentColor={tierDef.accentColor}
-      />
+        {/* Meta row — difficulty · wisdom · streak */}
+        <div className="flex items-center justify-between gap-3 px-4 pb-2.5 max-w-[640px] mx-auto">
+          <span
+            className="flex items-center gap-1.5 rounded-full pl-1.5 pr-2.5 py-0.5 text-[11px] font-semibold font-sans"
+            style={{ background: tierDef.accentSoft, color: tierDef.accentText }}
+          >
+            <DifficultyBars level={tierDef.level} size={12} color={tierDef.accentColor} />
+            {tierDef.label}
+          </span>
+          <div className="flex items-center gap-3">
+            <span
+              className="flex items-center gap-1 text-[11px] font-semibold tabular-nums font-sans"
+              style={{ color: "var(--codex-tier-laureate-text)" }}
+              aria-label={`${state.xpEarned} Wisdom earned`}
+            >
+              <WisdomStar size={13} />
+              {state.xpEarned}
+            </span>
+            <span
+              className={`flex items-center gap-1 text-[11px] font-semibold tabular-nums font-sans transition-opacity ${streak > 1 ? "opacity-100" : "opacity-40"}`}
+              style={{ color: "var(--flame-streak)" }}
+              aria-label={`${streak} correct in a row`}
+            >
+              <Flame size={13} className="fill-current" />
+              {streak}
+            </span>
+          </div>
+        </div>
+      </div>
 
       {/* Screen-reader live region */}
       <div role="status" aria-live="polite" className="sr-only">
@@ -550,7 +576,7 @@ function QuizRunner({
 
       {/* Question area */}
       <div className="flex-1 overflow-y-auto">
-        <div className="px-6 py-6 max-w-xl mx-auto">
+        <div className="px-4 py-6 max-w-[640px] mx-auto">
           <AnimatePresence mode="wait">
             <motion.div
               key={q.id + state.resumeCount}
@@ -558,7 +584,7 @@ function QuizRunner({
               initial="hidden"
               animate={shake ? "visible" : "visible"}
               exit={reduced ? undefined : "hidden"}
-              className="rounded-2xl border-2 border-border bg-card p-6 space-y-5 shadow-sm relative"
+              className="space-y-6 relative"
             >
               {/* Shake overlay when wrong */}
               {shake && !reduced && (
@@ -586,7 +612,7 @@ function QuizRunner({
                 q.type !== "close_reading" &&
                 q.type !== "vocabulary_in_context" &&
                 q.type !== "reflection" && (
-                  <p className="text-ink text-2xl leading-snug font-serif tracking-tight">
+                  <p className="text-ink text-[1.6rem] leading-snug font-serif font-semibold tracking-tight">
                     {q.prompt}
                   </p>
                 )}
@@ -613,147 +639,155 @@ function QuizRunner({
                 </div>
               )}
 
-              {/* Explanation / Virgil feedback card */}
-              <AnimatePresence>
-                {answered && q.type === "reflection" ? (
-                  (() => {
-                    const grade = state.reflectionGrades?.[q.id]
-                    const pending = !grade || grade.status === "pending"
-                    const failed = grade?.status === "failed"
-                    return (
-                      <motion.div
-                        variants={reduced ? reducedTokens.explanationRise : explanationRise}
-                        initial="hidden"
-                        animate="visible"
-                        exit="hidden"
-                        className="rounded-xl border-2 px-4 py-3 space-y-1.5"
-                        style={{
-                          borderColor:
-                            "color-mix(in srgb, var(--trial-laureate) 40%, transparent)",
-                          background: "var(--trial-laureate-soft)",
-                        }}
-                      >
-                        <div
-                          className="flex items-center gap-2 font-sans text-sm font-bold"
-                          style={{ color: "var(--trial-laureate-text)" }}
-                        >
-                          <span
-                            className="grid place-items-center size-5 rounded-full"
-                            style={{
-                              background:
-                                "color-mix(in srgb, var(--trial-laureate) 18%, transparent)",
-                              border:
-                                "1px solid color-mix(in srgb, var(--trial-laureate) 50%, transparent)",
-                              color: "var(--trial-laureate-text)",
-                            }}
-                            aria-hidden
-                          >
-                            ✦
-                          </span>
-                          {pending
-                            ? "Virgil is reading your reflection…"
-                            : failed
-                              ? "Virgil will review this shortly"
-                              : `Virgil — ${grade!.score} / 10`}
-                        </div>
-                        {!pending && !failed && (
-                          <p className="text-sm text-ink font-serif leading-relaxed">
-                            {grade!.feedback}
-                          </p>
-                        )}
-                        {q.explanation && !pending && !failed && (
-                          <p className="text-xs italic text-stone-500 font-serif pt-1">
-                            {q.explanation}
-                          </p>
-                        )}
-                      </motion.div>
-                    )
-                  })()
-                ) : answered ? (
-                  <motion.div
-                    variants={reduced ? reducedTokens.explanationRise : explanationRise}
-                    initial="hidden"
-                    animate="visible"
-                    exit="hidden"
-                    className="rounded-xl border-2 px-4 py-3 space-y-1.5"
-                    style={{
-                      borderColor: isCorrect
-                        ? "color-mix(in srgb, var(--trial-correct) 45%, transparent)"
-                        : "color-mix(in srgb, var(--trial-incorrect) 45%, transparent)",
-                      background: isCorrect
-                        ? "var(--trial-correct-soft)"
-                        : "var(--trial-incorrect-soft)",
-                    }}
-                  >
-                    <div
-                      className="flex items-center gap-2 font-sans text-sm font-bold"
-                      style={{
-                        color: isCorrect
-                          ? "var(--trial-correct-text)"
-                          : "var(--trial-incorrect-text)",
-                      }}
-                    >
-                      <TierSigil
-                        size={16}
-                        color={
-                          isCorrect ? "var(--trial-correct)" : "var(--trial-incorrect)"
-                        }
-                      />
-                      {isCorrect ? "Correct" : "Not quite"}
-                    </div>
-                    {!isCorrect && q.correct_answer && q.type !== "fill_blank" && (
-                      <p className="text-sm text-ink font-serif">
-                        The correct answer is:{" "}
-                        <span className="font-semibold">{q.correct_answer}</span>
-                      </p>
-                    )}
-                    {q.explanation && (
-                      <p className="text-sm text-ink font-serif leading-relaxed">
-                        {q.explanation}
-                      </p>
-                    )}
-                    {q.citation && (
-                      <p className="text-xs italic text-stone-500 font-serif pt-1">
-                        — {q.citation}
-                      </p>
-                    )}
-                  </motion.div>
-                ) : null}
-              </AnimatePresence>
             </motion.div>
           </AnimatePresence>
 
-          {/* Next / Continue */}
-          <AnimatePresence>
-            {answered && (
-              <motion.div
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.2 }}
-                className="mt-4 flex justify-end"
-              >
-                <Button
-                  onClick={handleNext}
-                  className="rounded-xl font-semibold gap-2"
-                >
-                  {currentIdx < state.questions.length - 1 ? (
-                    <>
-                      Next Question
-                      <ChevronRight className="w-4 h-4" />
-                    </>
-                  ) : (
-                    <>
-                      See Results
-                      <ChevronRight className="w-4 h-4" />
-                    </>
-                  )}
-                </Button>
-              </motion.div>
-            )}
-          </AnimatePresence>
         </div>
       </div>
+
+      {/* Duolingo-style feedback bar — slides up from the bottom on grade,
+          tinted by outcome, with a full-height Continue CTA. */}
+      <AnimatePresence>
+        {answered &&
+          (() => {
+            const isReflection = q.type === "reflection"
+            const grade = state.reflectionGrades?.[q.id]
+            const refPending =
+              isReflection && (!grade || grade.status === "pending")
+            const refFailed = isReflection && grade?.status === "failed"
+            const isLast = currentIdx >= state.questions.length - 1
+
+            const tint = isReflection
+              ? {
+                  soft: "var(--codex-tier-laureate-soft)",
+                  line: "var(--codex-tier-laureate)",
+                  text: "var(--codex-tier-laureate-text)",
+                }
+              : isCorrect
+                ? {
+                    soft: "var(--codex-success-soft)",
+                    line: "var(--codex-success)",
+                    text: "var(--codex-success-text)",
+                  }
+                : {
+                    soft: "var(--codex-danger-soft)",
+                    line: "var(--codex-danger)",
+                    text: "var(--codex-danger-text)",
+                  }
+
+            const heading = isReflection
+              ? refPending
+                ? "Virgil is reading your reflection…"
+                : refFailed
+                  ? "Virgil will review this shortly"
+                  : `Virgil — ${grade!.score} / 10`
+              : isCorrect
+                ? "Correct"
+                : "Not quite"
+
+            return (
+              <motion.div
+                key="feedback-bar"
+                initial={reduced ? { opacity: 0 } : { y: 120, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={reduced ? { opacity: 0 } : { y: 120, opacity: 0 }}
+                transition={
+                  reduced
+                    ? { duration: 0.15 }
+                    : { type: "spring", stiffness: 340, damping: 34 }
+                }
+                className="shrink-0 border-t-2"
+                style={{ background: tint.soft, borderColor: tint.line }}
+                role="status"
+                aria-live="polite"
+              >
+                <div className="max-w-[640px] mx-auto px-4 py-4 flex items-center justify-between gap-4">
+                  <div className="min-w-0 space-y-1">
+                    <div
+                      className="flex items-center gap-2 font-sans text-base font-bold"
+                      style={{ color: tint.text }}
+                    >
+                      {isReflection ? (
+                        <WisdomStar size={18} />
+                      ) : isCorrect ? (
+                        <CheckCircle2 className="w-5 h-5" />
+                      ) : (
+                        <XCircle className="w-5 h-5" />
+                      )}
+                      {heading}
+                    </div>
+
+                    {isReflection
+                      ? !refPending &&
+                        !refFailed &&
+                        grade!.feedback && (
+                          <p className="text-sm text-ink font-serif leading-relaxed line-clamp-3">
+                            {grade!.feedback}
+                          </p>
+                        )
+                      : (
+                          <>
+                            {!isCorrect &&
+                              q.correct_answer &&
+                              q.type !== "fill_blank" && (
+                                <p className="text-sm text-ink font-serif">
+                                  Answer:{" "}
+                                  <span className="font-semibold">
+                                    {q.correct_answer}
+                                  </span>
+                                </p>
+                              )}
+                            {q.explanation && (
+                              <p className="text-sm text-ink font-serif leading-relaxed line-clamp-3">
+                                {q.explanation}
+                              </p>
+                            )}
+                            {q.citation && (
+                              <p className="text-xs italic text-stone-500 font-serif">
+                                — {q.citation}
+                              </p>
+                            )}
+                          </>
+                        )}
+                  </div>
+
+                  <Button
+                    onClick={handleNext}
+                    className={`${
+                      isReflection
+                        ? "codex-pressable-edge"
+                        : isCorrect
+                          ? "codex-pressable-success"
+                          : "codex-pressable-danger"
+                    } min-h-[48px] px-8 font-bold shrink-0 gap-2`}
+                    style={
+                      isReflection
+                        ? {
+                            background: tierDef.accentColor,
+                            color: tierDef.onAccent,
+                            borderRadius: "var(--codex-radius-btn)",
+                            // @ts-expect-error — CSS custom property for pressed edge
+                            "--codex-edge": tierDef.accentEdge,
+                          }
+                        : {
+                            background: isCorrect
+                              ? "var(--codex-success)"
+                              : "var(--codex-danger)",
+                            color: isCorrect
+                              ? "var(--codex-success-on)"
+                              : "var(--codex-danger-on)",
+                            borderRadius: "var(--codex-radius-btn)",
+                          }
+                    }
+                  >
+                    {isLast ? "See Results" : "Continue"}
+                    <ChevronRight className="w-4 h-4" />
+                  </Button>
+                </div>
+              </motion.div>
+            )
+          })()}
+      </AnimatePresence>
     </div>
   )
 }
@@ -875,9 +909,9 @@ export function ChapterQuizOverlay({
           aria-modal="true"
           aria-label="Chapter Trial"
         >
-          {/* Exit button (hidden on difficulty-select) */}
+          {/* Exit button (hidden on difficulty-select; quiz renders its own inline) */}
           <AnimatePresence>
-            {phase !== "difficulty-select" && (
+            {phase !== "difficulty-select" && phase !== "quiz" && (
               <motion.button
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -956,6 +990,7 @@ export function ChapterQuizOverlay({
                     onFeedback={setLiveMessage}
                     quizStateOut={setFinalState}
                     resumeToken={resumeToken}
+                    onClose={onClose}
                   />
                 </motion.div>
               )}

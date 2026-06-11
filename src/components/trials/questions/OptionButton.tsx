@@ -27,18 +27,18 @@ const STATE_STYLE: Record<
     color: "var(--foreground)",
   },
   selected: {
-    borderColor: "var(--trial-select)",
-    background: "var(--trial-select-soft)",
+    borderColor: "var(--codex-primary)",
+    background: "var(--codex-primary-soft)",
     color: "var(--foreground)",
   },
   correct: {
-    borderColor: "var(--trial-correct)",
-    background: "var(--trial-correct-soft)",
+    borderColor: "var(--codex-success)",
+    background: "var(--codex-success-soft)",
     color: "var(--foreground)",
   },
   wrong: {
-    borderColor: "var(--trial-incorrect)",
-    background: "var(--trial-incorrect-soft)",
+    borderColor: "var(--codex-danger)",
+    background: "var(--codex-danger-soft)",
     color: "var(--foreground)",
   },
   disabled: {
@@ -53,9 +53,9 @@ const BADGE_STYLE: Record<
   { background: string; color: string }
 > = {
   idle: { background: "var(--muted)", color: "var(--muted-foreground)" },
-  selected: { background: "var(--trial-select)", color: "var(--trial-select-on)" },
-  correct: { background: "var(--trial-correct)", color: "var(--trial-correct-on)" },
-  wrong: { background: "var(--trial-incorrect)", color: "var(--trial-incorrect-on)" },
+  selected: { background: "var(--codex-primary)", color: "var(--codex-on-primary)" },
+  correct: { background: "var(--codex-success)", color: "var(--codex-success-on)" },
+  wrong: { background: "var(--codex-danger)", color: "var(--codex-danger-on)" },
   disabled: { background: "var(--muted)", color: "var(--muted-foreground)" },
 }
 
@@ -85,8 +85,8 @@ export function OptionButton({
       onClick={disabled ? undefined : onClick}
       disabled={disabled}
       aria-pressed={state === "selected" || state === "correct" || state === "wrong"}
-      style={STATE_STYLE[state]}
-      className={`w-full min-h-[44px] flex items-center rounded-xl border-2 transition-[background-color,border-color,box-shadow] duration-200 text-left cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--trial-select)] focus-visible:ring-offset-2 ${sizeCls} ${isHoverable ? "hover:border-[var(--trial-select)] hover:bg-[var(--trial-select-soft)]" : ""} ${disabled ? "cursor-default" : ""} ${state === "disabled" ? "opacity-60" : ""}`}
+      style={{ ...STATE_STYLE[state], borderRadius: "var(--codex-radius-btn)" }}
+      className={`w-full min-h-[44px] flex items-center border-2 transition-[background-color,border-color,box-shadow] duration-200 text-left cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--codex-primary)] focus-visible:ring-offset-2 ${sizeCls} ${isHoverable ? "hover:border-[var(--codex-primary)] hover:bg-[var(--codex-primary-soft)]" : ""} ${disabled ? "cursor-default" : ""} ${state === "disabled" ? "opacity-60" : ""}`}
     >
       <span
         style={BADGE_STYLE[state]}

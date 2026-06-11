@@ -36,13 +36,13 @@ export function PassageIdentification({
       <div
         className="rounded-r-lg border-l-4 pl-4 pr-3 py-3"
         style={{
-          borderColor: "var(--trial-laureate)",
-          background: "var(--trial-laureate-soft)",
+          borderColor: "var(--codex-tier-laureate)",
+          background: "var(--codex-tier-laureate-soft)",
         }}
       >
         <Quote
           className="w-4 h-4 mb-1"
-          style={{ color: "var(--trial-laureate-text)" }}
+          style={{ color: "var(--codex-tier-laureate-text)" }}
           aria-hidden
         />
         <p className="font-serif text-[18px] leading-[1.8] text-ink italic">

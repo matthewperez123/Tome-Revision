@@ -49,7 +49,7 @@ export function VocabularyInContext({
           key={i}
           onClick={() => speak(word)}
           className="font-serif font-semibold underline decoration-2 underline-offset-4 transition-colors"
-          style={{ color: "var(--trial-laureate-text)" }}
+          style={{ color: "var(--codex-tier-laureate-text)" }}
           aria-label={`Pronounce ${word}`}
         >
           {part}

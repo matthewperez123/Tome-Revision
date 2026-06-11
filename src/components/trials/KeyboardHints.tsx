@@ -36,7 +36,7 @@ export function KeyboardHints() {
         onClick={() => setOpen((o) => !o)}
         aria-label="Keyboard shortcuts"
         aria-expanded={open}
-        className="fixed bottom-4 right-4 z-40 inline-flex items-center gap-1.5 rounded-full bg-stone-800/80 text-stone-100 backdrop-blur-sm px-3 py-1.5 text-[11px] font-sans shadow-lg hover:bg-stone-700/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400"
+        className="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 inline-flex items-center gap-1.5 rounded-full bg-stone-800/80 text-stone-100 backdrop-blur-sm px-3 py-1.5 text-[11px] font-sans shadow-lg hover:bg-stone-700/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400"
       >
         <Keyboard className="w-3.5 h-3.5" />
         Shortcuts
@@ -45,11 +45,11 @@ export function KeyboardHints() {
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 10, x: "-50%" }}
+            animate={{ opacity: 1, y: 0, x: "-50%" }}
+            exit={{ opacity: 0, y: 10, x: "-50%" }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-16 right-4 z-40 w-72 rounded-xl bg-card border border-border shadow-xl p-4"
+            className="fixed bottom-16 left-1/2 z-40 w-72 rounded-xl bg-card border border-border shadow-xl p-4"
             role="dialog"
             aria-label="Keyboard shortcuts"
           >

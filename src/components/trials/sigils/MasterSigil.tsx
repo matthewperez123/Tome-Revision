@@ -5,7 +5,7 @@ import type { SigilProps } from "./ApprenticeSigil"
  *
  * Tier 3 / apex of the Trials sigil family: the paired Adept sprig closed
  * into a full wreath, crowning a mastery star. Rendered in the warm gold
- * tier token (var(--trial-laureate)); shares stroke 1.5 + round joins with
+ * tier token (var(--codex-tier-laureate)); shares stroke 1.5 + round joins with
  * the lower tiers. The leaf ticks reuse the family's blade curvature.
  */
 export function MasterSigil({

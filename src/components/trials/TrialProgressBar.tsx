@@ -10,7 +10,7 @@ import { motion, useReducedMotion } from "framer-motion"
 export function TrialProgressBar({
   current,
   total,
-  accentColor = "var(--trial-select)",
+  accentColor = "var(--codex-primary)",
 }: {
   current: number
   total: number
