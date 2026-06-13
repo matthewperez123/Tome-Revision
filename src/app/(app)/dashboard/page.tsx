@@ -15,7 +15,7 @@
  */
 "use client"
 
-import { useEffect, useMemo, useState } from "react"
+import { useEffect, useMemo, useState, useSyncExternalStore } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import {
@@ -114,16 +114,6 @@ const CHALLENGES = [
 
 // Days since epoch → use for seeding; demo: Mon ✓, Tue ✓, Wed ✓, Thu = today, Fri-Sun future
 const WEEK_DAYS  = ["M", "T", "W", "T", "F", "S", "S"]
-const TODAY_DOW  = new Date().getDay() // 0=Sun; convert to 0=Mon
-const DOW_MON    = TODAY_DOW === 0 ? 6 : TODAY_DOW - 1 // 0=Mon…6=Sun
-
-// Date numeral for each weekday disc (Mon → Sun of the current week)
-const WEEK_DATES = WEEK_DAYS.map((_, i) => {
-  const d = new Date()
-  d.setDate(d.getDate() - DOW_MON + i)
-  return d.getDate()
-})
-
 // ─────────────────────────────────────────────
 // Recent activity seed
 // ─────────────────────────────────────────────
@@ -208,6 +198,23 @@ export default function DashboardPage() {
 
 function StudentDashboard() {
   const { stats, level, dailyGoalMet } = useEconomy()
+
+  // Local time is only read after hydration so Vercel's server timezone cannot
+  // produce different greeting/date text from the browser's first render.
+  const isHydrated = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false
+  )
+  const now = isHydrated ? new Date() : null
+  const todayDow = now?.getDay() ?? 1
+  const dowMon = todayDow === 0 ? 6 : todayDow - 1
+  const weekDates = WEEK_DAYS.map((_, i) => {
+    if (!now) return null
+    const date = new Date(now)
+    date.setDate(date.getDate() - dowMon + i)
+    return date.getDate()
+  })
 
   const [challengeAnswer,  setChallengeAnswer]  = useState<number | null>(null)
   const [challengeDone,    setChallengeDone]    = useState(false)
@@ -311,10 +318,12 @@ function StudentDashboard() {
           <div className="flex items-start justify-between gap-4">
             <div>
               <h1 className="font-serif text-2xl font-bold tracking-tight">
-                {greeting()}, Reader
+                {now ? `${greeting()}, Reader` : "Welcome back, Reader"}
               </h1>
               <p className="text-sm text-muted-foreground mt-0.5">
-                {new Date().toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" })}
+                {now
+                  ? now.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" })
+                  : "Your reading journey continues"}
               </p>
             </div>
             <div className="shrink-0 text-right">
@@ -400,7 +409,7 @@ function StudentDashboard() {
                     ["--accent" as string]: challengeDone ? "var(--green-default)" : "var(--gold-default)",
                   }}
                 >
-                  {new Date().toLocaleDateString("en-US", { weekday: "short" })}
+                  {now ? now.toLocaleDateString("en-US", { weekday: "short" }) : "Today"}
                 </span>
               </div>
 
@@ -602,8 +611,8 @@ function StudentDashboard() {
             {/* Day-by-day tracker */}
             <div className="flex gap-1.5 mb-4">
               {WEEK_DAYS.map((label, i) => {
-                const isPast    = i < DOW_MON
-                const isToday   = i === DOW_MON
+                const isPast    = i < dowMon
+                const isToday   = i === dowMon
                 const isDone    = i <= 2 // Mon, Tue, Wed done in demo
                 const isMissed  = isPast && !isDone
 
@@ -628,7 +637,7 @@ function StudentDashboard() {
                       ) : isMissed ? (
                         <X className="size-3.5" style={{ color: "var(--codex-danger)" }} />
                       ) : (
-                        <span className="text-[11px] tabular-nums">{WEEK_DATES[i]}</span>
+                        <span className="text-[11px] tabular-nums">{weekDates[i] ?? "·"}</span>
                       )}
                     </div>
                     <span

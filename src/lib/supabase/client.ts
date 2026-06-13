@@ -15,6 +15,12 @@ const SUPABASE_URL =
 const SUPABASE_ANON_KEY =
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "placeholder-anon-key"
 
+const createSupabaseBrowserClient = () =>
+  createBrowserClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+
+let browserClient: ReturnType<typeof createSupabaseBrowserClient> | undefined
+
 export function createClient() {
-  return createBrowserClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+  browserClient ??= createSupabaseBrowserClient()
+  return browserClient
 }
