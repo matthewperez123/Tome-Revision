@@ -18,9 +18,14 @@ const SUPABASE_ANON_KEY =
 const createSupabaseBrowserClient = () =>
   createBrowserClient(SUPABASE_URL, SUPABASE_ANON_KEY)
 
-let browserClient: ReturnType<typeof createSupabaseBrowserClient> | undefined
+type BrowserClient = ReturnType<typeof createSupabaseBrowserClient>
 
 export function createClient() {
-  browserClient ??= createSupabaseBrowserClient()
-  return browserClient
+  if (typeof window === "undefined") return createSupabaseBrowserClient()
+
+  const browserWindow = window as typeof window & {
+    __tomeSupabaseClient?: BrowserClient
+  }
+  browserWindow.__tomeSupabaseClient ??= createSupabaseBrowserClient()
+  return browserWindow.__tomeSupabaseClient
 }
