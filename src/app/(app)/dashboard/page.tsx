@@ -373,20 +373,32 @@ function StudentDashboard() {
         {/* ── 2. Daily Challenge (Codex-ported MCQ) ── */}
         <BlurFade delay={0.10} inView>
           <div
-            className="relative overflow-hidden"
+            className="tactile-card relative overflow-hidden"
             style={{
-              background: "var(--codex-surface)",
-              borderRadius: "var(--codex-radius-card)",
-              border: `var(--codex-border-w) solid ${challengeDone ? "var(--codex-success)" : "var(--codex-primary)"}`,
+              // Daily Challenge owns the reward / gold-leaf accent.
+              ["--accent" as string]: "var(--gold-default)",
+              background: challengeDone
+                ? "linear-gradient(135deg, color-mix(in srgb, var(--green-default) 10%, transparent) 0%, transparent 100%)"
+                : "linear-gradient(135deg, var(--gold-muted) 0%, transparent 100%)",
             }}
           >
             <div className="p-5">
-              {/* Header row: title + current-day pill */}
-              <div className="flex items-center justify-between mb-3">
-                <h2 className="text-base font-extrabold tracking-tight">Daily Challenge</h2>
+              {/* Header */}
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-2">
+                  <div className="size-7 rounded-lg flex items-center justify-center" style={{ background: "color-mix(in srgb, var(--gold-default) 16%, transparent)" }}>
+                    <Zap className="size-4" style={{ color: "var(--gold-default)" }} />
+                  </div>
+                  <div>
+                    <h2 className="text-sm font-bold leading-none">Daily Challenge</h2>
+                    <p className="text-[10px] text-muted-foreground mt-0.5">{challenge.type}</p>
+                  </div>
+                </div>
                 <span
-                  className="text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide tabular-nums"
-                  style={{ background: "var(--codex-primary-soft)", color: "var(--codex-primary-text)" }}
+                  className="chip-accent text-[10px] font-bold px-2 py-1"
+                  style={{
+                    ["--accent" as string]: challengeDone ? "var(--green-default)" : "var(--gold-default)",
+                  }}
                 >
                   {new Date().toLocaleDateString("en-US", { weekday: "short" })}
                 </span>
@@ -418,19 +430,13 @@ function StudentDashboard() {
               </div>
 
               {challengeDone ? (
-                <div
-                  className="flex items-center gap-3 rounded-[var(--codex-radius-btn)] px-4 py-3"
-                  style={{ background: "var(--codex-success-soft)" }}
-                >
-                  <div
-                    className="size-9 rounded-full flex items-center justify-center shrink-0"
-                    style={{ background: "var(--codex-success)" }}
-                  >
-                    <Check className="size-5" style={{ color: "var(--codex-on-primary)" }} />
+                <div className="accent-bloom relative flex items-center gap-3 py-2" style={{ ["--accent" as string]: "var(--gold-default)" }}>
+                  <div className="seal-stamp relative z-10 size-10" style={{ ["--accent" as string]: "var(--gold-default)" }}>
+                    <Check className="size-5" />
                   </div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: "var(--codex-success-text)" }}>
-                      ✓ Completed — +{challenge.xp} Wisdom earned
+                  <div className="relative z-10">
+                    <p className="text-sm font-semibold" style={{ color: "var(--trial-correct-text)" }}>
+                      Completed — +{challenge.xp} Wisdom earned
                     </p>
                     <p className="text-xs text-muted-foreground">Come back tomorrow for a new challenge.</p>
                   </div>
@@ -463,8 +469,12 @@ function StudentDashboard() {
                             "rounded-[var(--codex-radius-btn)] outline-none",
                             "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:[outline-color:var(--codex-primary)]",
                             !answered
-                              ? "cursor-pointer hover:[border-color:var(--codex-primary)] hover:[background-color:var(--codex-primary-soft)]"
-                              : "cursor-not-allowed"
+                              ? "border-border hover:border-[var(--gold-default)] hover:bg-[color-mix(in_srgb,var(--gold-default)_7%,transparent)] hover:-translate-y-px cursor-pointer"
+                              : isCorrect
+                              ? "border-[var(--trial-correct)] bg-[var(--trial-correct-soft)] text-[var(--trial-correct-text)]"
+                              : isSelected
+                              ? "border-[var(--trial-incorrect)] bg-[var(--trial-incorrect-soft)] text-[var(--trial-incorrect-text)]"
+                              : "border-border opacity-50 cursor-not-allowed"
                           )}
                           style={{ borderWidth: "var(--codex-border-w)", borderStyle: "solid", ...stateStyle }}
                         >
@@ -950,4 +960,3 @@ function StudentDashboard() {
     </div>
   )
 }
-
