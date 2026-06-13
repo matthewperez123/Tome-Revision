@@ -45,3 +45,6 @@ next-env.d.ts
 
 # pitch deck assets (locally-generated, do not commit)
 /pitch-deck-assets/
+
+# claude code local run profiles (machine-specific, auto-rewritten by tooling)
+/.claude/launch.json
