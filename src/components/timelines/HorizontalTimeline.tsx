@@ -121,14 +121,17 @@ function AuthorIcon({
           const rect = e.currentTarget.getBoundingClientRect()
           onAuthorClick(author.id, rect)
         }}
-        className="absolute left-1/2 -translate-x-1/2 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+        className="absolute left-1/2 -translate-x-1/2 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
         style={{
           top: iconTop,
           width: ICON_SIZE,
           height: ICON_SIZE,
           backgroundColor: geoColor,
-          border: `2px solid ${geoColor}`,
-          filter: isSelected ? "brightness(1.2)" : undefined,
+          color: "#fff",
+          boxShadow: isSelected
+            ? `0 6px 18px ${geoColor}59, 0 0 0 4px ${geoColor}30`
+            : `0 4px 12px ${geoColor}40`,
+          filter: isSelected ? "brightness(1.08)" : undefined,
         }}
         title={`${author.authorName} — ${author.mostFamousWork}`}
       >
@@ -186,17 +189,27 @@ function TimelineRow({
 
   return (
     <div className="relative" style={{ height: ROW_HEIGHT }}>
-      {/* Axis line spanning the full inset width */}
-      <div
-        className="absolute"
-        style={{
-          left: leftOffset,
-          width: usableWidth,
-          top: axisY,
-          height: 1,
-          backgroundColor: `${accentColor}44`,
-        }}
-      />
+      {/* Axis line — Codex animated dashed connector */}
+      <svg
+        className="absolute pointer-events-none"
+        width={usableWidth}
+        height={4}
+        style={{ left: leftOffset, top: axisY - 2, overflow: "visible" }}
+        preserveAspectRatio="none"
+      >
+        <line
+          x1={0}
+          y1={2}
+          x2={usableWidth}
+          y2={2}
+          stroke={accentColor}
+          strokeWidth={2}
+          strokeDasharray="4 6"
+          strokeLinecap="round"
+          strokeOpacity={0.5}
+          className="animated-dotted-path"
+        />
+      </svg>
 
       {/* Author nodes */}
       {authors.map((author, i) => {

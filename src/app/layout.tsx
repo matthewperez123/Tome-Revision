@@ -1,9 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans, Literata, Playfair_Display } from "next/font/google";
+import { Inter, Literata, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "@/styles/globals.css";
 
-const plusJakartaSans = Plus_Jakarta_Sans({
+// Codex design language: Inter for UI + headings, Literata for literary
+// content, JetBrains Mono for code/numerals.
+const inter = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -17,10 +19,10 @@ const literata = Literata({
   display: "swap",
 });
 
-const playfairDisplay = Playfair_Display({
-  variable: "--font-display",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-mono",
   subsets: ["latin"],
-  weight: ["400", "700", "800"],
+  weight: ["400", "500"],
   display: "swap",
 });
 
@@ -94,7 +96,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${plusJakartaSans.variable} ${literata.variable} ${playfairDisplay.variable}`}
+      className={`${inter.variable} ${literata.variable} ${jetbrainsMono.variable}`}
       suppressHydrationWarning
     >
       <body>
