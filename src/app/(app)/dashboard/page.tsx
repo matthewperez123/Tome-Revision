@@ -52,7 +52,6 @@ import { useAuth } from "@/hooks/use-auth"
 const CHALLENGES = [
   {
     type: "Famous First Lines",
-    subject: "Dickens",
     question: "'It was the best of times, it was the worst of times.' Who wrote this?",
     options: ["Victor Hugo", "Charles Dickens", "Leo Tolstoy", "Thomas Hardy"],
     correct: 1,
@@ -60,7 +59,6 @@ const CHALLENGES = [
   },
   {
     type: "Who Said It?",
-    subject: "Shakespeare",
     question: "'To be, or not to be, that is the question.' This is from which play?",
     options: ["Macbeth", "King Lear", "Hamlet", "Othello"],
     correct: 2,
@@ -68,7 +66,6 @@ const CHALLENGES = [
   },
   {
     type: "Literary Trivia",
-    subject: "Ancient Greek",
     question: "Which Ancient Greek epic poem tells the story of Odysseus's journey home?",
     options: ["The Iliad", "The Aeneid", "The Odyssey", "The Argonautica"],
     correct: 2,
@@ -76,7 +73,6 @@ const CHALLENGES = [
   },
   {
     type: "Famous First Lines",
-    subject: "Melville",
     question: "'Call me Ishmael.' This opens which great American novel?",
     options: ["Huckleberry Finn", "The Scarlet Letter", "Moby-Dick", "The Great Gatsby"],
     correct: 2,
@@ -84,7 +80,6 @@ const CHALLENGES = [
   },
   {
     type: "Who Said It?",
-    subject: "Tolstoy",
     question: "Who wrote 'All happy families are alike; each unhappy family is unhappy in its own way'?",
     options: ["Dostoevsky", "Chekhov", "Turgenev", "Tolstoy"],
     correct: 3,
@@ -92,7 +87,6 @@ const CHALLENGES = [
   },
   {
     type: "Literary Trivia",
-    subject: "Dante",
     question: "The Divine Comedy was written by which Italian poet?",
     options: ["Petrarch", "Boccaccio", "Virgil", "Dante Alighieri"],
     correct: 3,
@@ -100,7 +94,6 @@ const CHALLENGES = [
   },
   {
     type: "Famous First Lines",
-    subject: "Austen",
     question: "'It is a truth universally acknowledged…' opens which novel?",
     options: ["Jane Eyre", "Wuthering Heights", "Pride and Prejudice", "Sense and Sensibility"],
     correct: 2,
@@ -379,134 +372,98 @@ function StudentDashboard() {
           </BlurFade>
         )}
 
-        {/* ── 2. Daily Challenge (Codex-ported MCQ) ── */}
+        {/* ── 2. Daily Challenge (MCQ) ── */}
         <BlurFade delay={0.10} inView>
           <div
-            className="tactile-card relative overflow-hidden"
+            className="p-5"
             style={{
-              // Daily Challenge owns the reward / gold-leaf accent.
-              ["--accent" as string]: "var(--gold-default)",
-              background: challengeDone
-                ? "linear-gradient(135deg, color-mix(in srgb, var(--green-default) 10%, transparent) 0%, transparent 100%)"
-                : "linear-gradient(135deg, var(--gold-muted) 0%, transparent 100%)",
+              background: "var(--codex-surface)",
+              borderRadius: "var(--codex-radius-card)",
+              border: "var(--codex-border-w) solid var(--codex-border)",
             }}
           >
-            <div className="p-5">
-              {/* Header */}
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center gap-2">
-                  <div className="size-7 rounded-lg flex items-center justify-center" style={{ background: "color-mix(in srgb, var(--gold-default) 16%, transparent)" }}>
-                    <Zap className="size-4" style={{ color: "var(--gold-default)" }} />
-                  </div>
-                  <div>
-                    <h2 className="text-sm font-bold leading-none">Daily Challenge</h2>
-                    <p className="text-[10px] text-muted-foreground mt-0.5">{challenge.type}</p>
-                  </div>
-                </div>
-                <span
-                  className="chip-accent text-[10px] font-bold px-2 py-1"
-                  style={{
-                    ["--accent" as string]: challengeDone ? "var(--green-default)" : "var(--gold-default)",
-                  }}
-                >
-                  {now ? now.toLocaleDateString("en-US", { weekday: "short" }) : "Today"}
-                </span>
-              </div>
-
-              {/* Meta row: type label + subject chip + reward badge */}
-              <div className="flex items-center gap-2 flex-wrap mb-4">
-                <span className="text-xs font-bold" style={{ color: "var(--codex-primary)" }}>
-                  {challenge.type}
-                </span>
-                <span
-                  className="text-[11px] font-semibold px-2 py-0.5 rounded-full"
-                  style={{
-                    background: "var(--codex-track)",
-                    color: "var(--foreground)",
-                    border: "1px solid var(--codex-border)",
-                  }}
-                >
-                  {challenge.subject}
-                </span>
-                {!challengeDone && (
-                  <span
-                    className="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-full"
-                    style={{ background: "var(--codex-reward-soft)", color: "var(--codex-reward-text)" }}
-                  >
-                    <Zap className="size-3" /> Bonus XP for speed!
-                  </span>
-                )}
-              </div>
-
-              {challengeDone ? (
-                <div className="accent-bloom relative flex items-center gap-3 py-2" style={{ ["--accent" as string]: "var(--gold-default)" }}>
-                  <div className="seal-stamp relative z-10 size-10" style={{ ["--accent" as string]: "var(--gold-default)" }}>
-                    <Check className="size-5" />
-                  </div>
-                  <div className="relative z-10">
-                    <p className="text-sm font-semibold" style={{ color: "var(--trial-correct-text)" }}>
-                      Completed — +{challenge.xp} Wisdom earned
-                    </p>
-                    <p className="text-xs text-muted-foreground">Come back tomorrow for a new challenge.</p>
-                  </div>
-                </div>
-              ) : (
-                <>
-                  <p className="text-sm font-semibold leading-snug mb-1">
-                    {challenge.question}
-                  </p>
-                  <p className="text-xs text-muted-foreground mb-4">Tap an answer below:</p>
-                  <div className="grid grid-cols-1 gap-2.5">
-                    {challenge.options.map((opt, i) => {
-                      const answered = challengeAnswer !== null
-                      const isSelected = challengeAnswer === i
-                      const isCorrect  = i === challenge.correct
-                      const stateStyle: React.CSSProperties = !answered
-                        ? { borderColor: "var(--codex-border)", background: "var(--codex-surface)" }
-                        : isCorrect
-                        ? { borderColor: "var(--codex-success)", background: "var(--codex-success-soft)", color: "var(--codex-success-text)" }
-                        : isSelected
-                        ? { borderColor: "var(--codex-danger)", background: "var(--codex-danger-soft)", color: "var(--codex-danger-text)" }
-                        : { borderColor: "var(--codex-border)", opacity: 0.5 }
-                      return (
-                        <button
-                          key={i}
-                          onClick={() => handleChallengeAnswer(i)}
-                          disabled={answered}
-                          className={cn(
-                            "codex-pressable w-full text-left min-h-[44px] px-4 py-3 text-sm font-bold",
-                            "rounded-[var(--codex-radius-btn)] outline-none",
-                            "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:[outline-color:var(--codex-primary)]",
-                            !answered
-                              ? "border-border hover:border-[var(--gold-default)] hover:bg-[color-mix(in_srgb,var(--gold-default)_7%,transparent)] hover:-translate-y-px cursor-pointer"
-                              : isCorrect
-                              ? "border-[var(--trial-correct)] bg-[var(--trial-correct-soft)] text-[var(--trial-correct-text)]"
-                              : isSelected
-                              ? "border-[var(--trial-incorrect)] bg-[var(--trial-incorrect-soft)] text-[var(--trial-incorrect-text)]"
-                              : "border-border opacity-50 cursor-not-allowed"
-                          )}
-                          style={{ borderWidth: "var(--codex-border-w)", borderStyle: "solid", ...stateStyle }}
-                        >
-                          <span className="mr-2 text-xs font-bold opacity-50">
-                            {String.fromCharCode(65 + i)}.
-                          </span>
-                          {opt}
-                          {answered && isCorrect && (
-                            <Check className="inline-block size-4 ml-1.5" style={{ color: "var(--codex-success)" }} />
-                          )}
-                        </button>
-                      )
-                    })}
-                  </div>
-                  {challengeAnswer !== null && challengeAnswer !== challenge.correct && (
-                    <p className="text-xs text-muted-foreground mt-3">
-                      The correct answer was{" "}
-                      <strong>{challenge.options[challenge.correct]}</strong>.
-                    </p>
-                  )}
-                </>
-              )}
+            {/* Header — mirrors Weekly Challenge */}
+            <div className="flex items-center justify-between mb-3">
+              <h2 className="text-base font-extrabold tracking-tight">Daily Challenge</h2>
+              <span
+                className="text-[10px] font-bold px-2 py-1 rounded-full"
+                style={
+                  challengeDone
+                    ? { background: "var(--codex-success-soft)", color: "var(--codex-success-text)" }
+                    : { background: "var(--codex-reward-soft)", color: "var(--codex-reward-text)" }
+                }
+              >
+                {challengeDone ? <><Check className="size-3 inline" /> Done</> : `+${challenge.xp} Wisdom`}
+              </span>
             </div>
+
+            {challengeDone ? (
+              <div
+                className="flex items-center justify-center gap-2 text-xs font-semibold pt-3"
+                style={{ borderTop: "1px solid var(--codex-border)" }}
+              >
+                <span className="inline-flex items-center gap-1">
+                  <Check className="size-3.5" style={{ color: "var(--codex-success)" }} />
+                  +{challenge.xp} Wisdom earned
+                </span>
+                <span className="text-muted-foreground/40">·</span>
+                <span className="text-muted-foreground">Back tomorrow for a new one</span>
+              </div>
+            ) : (
+              <>
+                <p className="text-[10px] text-muted-foreground/60 mb-3">{challenge.type}</p>
+                <p className="text-sm font-medium leading-relaxed mb-4">
+                  {challenge.question}
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {challenge.options.map((opt, i) => {
+                    const answered = challengeAnswer !== null
+                    const isSelected = challengeAnswer === i
+                    const isCorrect  = i === challenge.correct
+                    const optStyle: React.CSSProperties = !answered
+                      ? { borderColor: "var(--codex-border)", background: "var(--codex-surface)" }
+                      : isCorrect
+                      ? { borderColor: "var(--codex-success)", background: "var(--codex-success-soft)", color: "var(--codex-success-text)" }
+                      : isSelected
+                      ? { borderColor: "var(--codex-danger)", background: "var(--codex-danger-soft)", color: "var(--codex-danger-text)" }
+                      : { borderColor: "var(--codex-border)", opacity: 0.5 }
+                    return (
+                      <button
+                        key={i}
+                        onClick={() => handleChallengeAnswer(i)}
+                        disabled={answered}
+                        className={cn(
+                          "text-left px-4 py-3 text-sm font-medium transition-all duration-200 min-h-[44px]",
+                          !answered
+                            ? "cursor-pointer hover:[border-color:var(--codex-primary)] hover:[background:var(--codex-primary-soft)]"
+                            : !isCorrect && !isSelected && "cursor-not-allowed"
+                        )}
+                        style={{
+                          borderWidth: "var(--codex-border-w)",
+                          borderStyle: "solid",
+                          borderRadius: "var(--codex-radius-btn)",
+                          ...optStyle,
+                        }}
+                      >
+                        <span className="mr-2 text-muted-foreground text-xs font-normal">
+                          {String.fromCharCode(65 + i)}.
+                        </span>
+                        {opt}
+                        {answered && isCorrect && (
+                          <Check className="inline-block size-3.5 ml-1.5" style={{ color: "var(--codex-success)" }} />
+                        )}
+                      </button>
+                    )
+                  })}
+                </div>
+                {challengeAnswer !== null && challengeAnswer !== challenge.correct && (
+                  <p className="text-xs text-muted-foreground mt-3">
+                    The correct answer was{" "}
+                    <strong>{challenge.options[challenge.correct]}</strong>.
+                  </p>
+                )}
+              </>
+            )}
           </div>
         </BlurFade>
 
@@ -807,8 +764,17 @@ function StudentDashboard() {
               {(allBooks.filter(b => ["the-iliad", "the-divine-comedy", "the-republic", "hamlet", "moby-dick", "pride-and-prejudice"].includes(b.id)).slice(0, 6)).map((book) => {
                 const tradColor = TRADITION_COLORS[book.tradition]
                 return (
-                  <Link key={book.id} href={`/book/${book.id}`} className="w-32 shrink-0 snap-start group">
-                    <div className="relative rounded-lg overflow-hidden mb-1.5">
+                  <Link
+                    key={book.id}
+                    href={`/book/${book.id}`}
+                    className="w-36 shrink-0 snap-start group p-3"
+                    style={{
+                      background: "var(--codex-surface)",
+                      borderRadius: "var(--codex-radius-card)",
+                      border: "var(--codex-border-w) solid var(--codex-border)",
+                    }}
+                  >
+                    <div className="relative rounded-md overflow-hidden shadow-sm mb-2">
                       <ClassicsCover
                         bookId={book.id}
                         title={book.title}
@@ -819,17 +785,21 @@ function StudentDashboard() {
                         hideBand
                         className="w-full transition-transform group-hover:scale-[1.02] rounded-none"
                       />
-                      <span className="absolute top-1 right-1 flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[8px] font-medium bg-[#E8734A20] text-[#E8734A]">
+                      <span
+                        className="absolute top-1 right-1 flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[8px] font-medium"
+                        style={{ background: "var(--codex-reward-soft)", color: "var(--codex-reward-text)" }}
+                      >
                         <Flame className="size-2.5" /> Trending
                       </span>
                     </div>
-                    <p className="text-[11px] font-semibold leading-snug line-clamp-2">{book.title}</p>
+                    <p className="text-[11px] font-semibold leading-snug line-clamp-2 group-hover:[color:var(--codex-primary)] transition-colors">{book.title}</p>
                     <p className="text-[9px] text-muted-foreground mt-0.5 truncate">{book.author}</p>
-                    {tradColor && (
-                      <span className="mt-1 inline-block rounded-full px-1.5 py-px text-[7px] font-medium" style={{ background: tradColor.bg, color: tradColor.text }}>
-                        {book.tradition}
-                      </span>
-                    )}
+                    <span
+                      className="mt-1 inline-block rounded-full px-1.5 py-0.5 text-[7px] font-semibold"
+                      style={{ background: tradColor?.bg ?? "var(--codex-primary-soft)", color: tradColor?.text ?? "var(--codex-primary-text)" }}
+                    >
+                      {book.tradition}
+                    </span>
                   </Link>
                 )
               })}
@@ -854,9 +824,17 @@ function StudentDashboard() {
                 const reasonTag   = book.trending ? REASON_TAGS[book.trending.trend] : <><BookOpen className="size-3 inline-block align-middle" /> Classic pick</>
 
                 return (
-                  <div key={book.id} className="shrink-0 snap-start w-36">
+                  <div
+                    key={book.id}
+                    className="shrink-0 snap-start w-36 p-3"
+                    style={{
+                      background: "var(--codex-surface)",
+                      borderRadius: "var(--codex-radius-card)",
+                      border: "var(--codex-border-w) solid var(--codex-border)",
+                    }}
+                  >
                     <Link href={`/book/${book.id}`} className="group block">
-                      <div className="relative rounded-xl overflow-hidden shadow-sm group-hover:shadow-md transition-shadow mb-2">
+                      <div className="relative rounded-md overflow-hidden shadow-sm group-hover:shadow-md transition-shadow mb-2">
                         <ClassicsCover
                           bookId={book.id}
                           title={book.title}
@@ -878,23 +856,23 @@ function StudentDashboard() {
                           {book.difficulty}
                         </span>
                       </div>
-                      <p className="text-[11px] font-medium leading-tight line-clamp-2 group-hover:text-[var(--tome-accent)] transition-colors">
+                      <p className="text-[11px] font-semibold leading-snug line-clamp-2 group-hover:[color:var(--codex-primary)] transition-colors">
                         {book.title}
                       </p>
                     </Link>
                     <span onClick={(e) => e.preventDefault()}>
                       <AuthorLink
                         name={book.author}
-                        className="text-[10px] text-muted-foreground hover:text-[var(--tome-accent)] transition-colors"
+                        className="text-[10px] text-muted-foreground hover:[color:var(--codex-primary)] transition-colors"
                       />
                     </span>
                     <span
                       className="inline-block text-[8px] font-semibold px-1.5 py-0.5 rounded-full mt-1"
-                      style={{ background: tradColor?.bg ?? "rgba(99,102,241,0.12)", color: tradColor?.text ?? "#4338ca" }}
+                      style={{ background: tradColor?.bg ?? "var(--codex-primary-soft)", color: tradColor?.text ?? "var(--codex-primary-text)" }}
                     >
                       {book.tradition}
                     </span>
-                    <p className="text-[9px] text-muted-foreground/60 mt-0.5 leading-tight">
+                    <p className="text-[9px] text-muted-foreground/60 mt-1 leading-tight">
                       {reasonTag}
                     </p>
                   </div>

@@ -78,7 +78,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
   --font-serif: var(--font-serif);
-  --font-display: var(--font-sans);
+  --font-display: var(--font-display);
   --font-mono: var(--font-mono);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -148,6 +148,42 @@
   --color-tome-warning: var(--tome-warning);
   --color-tome-error: var(--tome-error);
   --color-tome-accent: var(--tome-accent);
+
+  /* ── Modern system: primary ramp ─────────── */
+  --color-primary-50: var(--primary-50);
+  --color-primary-100: var(--primary-100);
+  --color-primary-200: var(--primary-200);
+  --color-primary-300: var(--primary-300);
+  --color-primary-400: var(--primary-400);
+  --color-primary-500: var(--primary-500);
+  --color-primary-600: var(--primary-600);
+  --color-primary-700: var(--primary-700);
+
+  /* ── Modern system: neutral gray ramp ────── */
+  --color-gray-50: var(--gray-50);
+  --color-gray-100: var(--gray-100);
+  --color-gray-200: var(--gray-200);
+  --color-gray-300: var(--gray-300);
+  --color-gray-400: var(--gray-400);
+  --color-gray-500: var(--gray-500);
+  --color-gray-600: var(--gray-600);
+  --color-gray-700: var(--gray-700);
+  --color-gray-800: var(--gray-800);
+  --color-gray-900: var(--gray-900);
+
+  /* ── Modern system: functional palette ───── */
+  --color-success: var(--success);
+  --color-success-edge: var(--success-edge);
+  --color-success-soft: var(--success-soft);
+  --color-error: var(--error);
+  --color-error-edge: var(--error-edge);
+  --color-error-soft: var(--error-soft);
+  --color-warning: var(--warning);
+  --color-warning-edge: var(--warning-edge);
+  --color-warning-soft: var(--warning-soft);
+  --color-reward: var(--reward);
+  --color-reward-edge: var(--reward-edge);
+  --color-reward-soft: var(--reward-soft);
 
   /* ── Virgil mark — AI tutor identity (cool indigo) ── */
   --color-virgil: var(--virgil);
@@ -241,36 +277,69 @@
    Gold = brand accent. Indigo = navigation/AI. Full spectrum for semantics. */
 
 :root {
-  /* Neutrals — light mode (Codex shell: snow / linen / ink) */
-  --background: #FAFAF8;
-  --foreground: #1C1B19;
+  /* ── Modern type + color system (Codex × Duolingo × Brilliant) ──────
+     Indigo-violet anchor (#6C63FF), clean neutral gray ramp (no warm
+     linen), Duolingo-functional success/error/warning, gold reserved for
+     gamification rewards only. Single source of truth. */
+
+  /* Primary — indigo-violet ramp */
+  --primary-50: #EEEDFE;
+  --primary-100: #E0DEFC;
+  --primary-200: #C7C2FA;
+  --primary-300: #A8A1FF;
+  --primary-400: #8B83FF;
+  --primary-500: #6C63FF;
+  --primary-600: #5A51E6;
+  --primary-700: #4A40C2;
+
+  /* Neutral gray ramp (cool, clean) */
+  --gray-50: #F8F9FB;
+  --gray-100: #F1F3F7;
+  --gray-200: #E4E7EE;
+  --gray-300: #D2D7E0;
+  --gray-400: #9CA3B0;
+  --gray-500: #6B7280;
+  --gray-600: #4B5563;
+  --gray-700: #374151;
+  --gray-800: #1F2430;
+  --gray-900: #14171F;
+
+  /* Functional palette */
+  --success: #58CC02;  --success-edge: #46A302;  --success-soft: #E7F8D8;
+  --error:   #FF4B4B;  --error-edge:   #D63A3A;  --error-soft:   #FFE5E5;
+  --warning: #F5A623;  --warning-edge: #D4881A;  --warning-soft: #FFF1D6;
+  --reward:  #FFC800;  --reward-edge:  #C99E00;  --reward-soft:  #FFF6D6;
+
+  /* Neutrals — light mode */
+  --background: var(--gray-50);
+  --foreground: var(--gray-900);
   --card: #FFFFFF;
-  --card-foreground: #1C1B19;
+  --card-foreground: var(--gray-900);
   --popover: #FFFFFF;
-  --popover-foreground: #1C1B19;
-  --primary: #6C63FF;
+  --popover-foreground: var(--gray-900);
+  --primary: var(--primary-500);
   --primary-foreground: #FFFFFF;
-  --secondary: #F5F0E8;
-  --secondary-foreground: #1C1B19;
-  --muted: #F5F0E8;
-  --muted-foreground: #6B6966;
-  --accent: #EBE9FF;
-  --accent-foreground: #1C1B19;
-  --destructive: #EF4444;
-  --border: #E0DBD2;
-  --input: #F5F5F5;
-  --ring: #6C63FF;
-  --radius: 0.875rem;
+  --secondary: var(--gray-100);
+  --secondary-foreground: var(--gray-900);
+  --muted: var(--gray-100);
+  --muted-foreground: var(--gray-500);
+  --accent: var(--primary-50);
+  --accent-foreground: var(--gray-900);
+  --destructive: var(--error);
+  --border: var(--gray-200);
+  --input: var(--gray-100);
+  --ring: var(--primary-500);
+  --radius: 1rem;
 
   /* Sidebar — light */
-  --sidebar: #F5F0E8;
-  --sidebar-foreground: #1C1B19;
-  --sidebar-primary: #6C63FF;
+  --sidebar: var(--gray-100);
+  --sidebar-foreground: var(--gray-900);
+  --sidebar-primary: var(--primary-500);
   --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #EBE9FF;
-  --sidebar-accent-foreground: #1C1B19;
-  --sidebar-border: #E0DBD2;
-  --sidebar-ring: #6C63FF;
+  --sidebar-accent: var(--primary-50);
+  --sidebar-accent-foreground: var(--gray-900);
+  --sidebar-border: var(--gray-200);
+  --sidebar-ring: var(--primary-500);
 
   /* Chart colors */
   --chart-1: #B8924A;
@@ -383,6 +452,22 @@
 }
 
 .dark {
+  /* Primary — indigo-violet ramp (lifted for dark surfaces) */
+  --primary-50: #1E1C33;
+  --primary-100: #262240;
+  --primary-200: #332E5C;
+  --primary-300: #4A40C2;
+  --primary-400: #6C63FF;
+  --primary-500: #8B83FF;
+  --primary-600: #9A93FF;
+  --primary-700: #B5AFFF;
+
+  /* Functional palette — dark */
+  --success: #79E05A;  --success-edge: #4E9E2E;  --success-soft: #102008;
+  --error:   #FF6B6B;  --error-edge:   #C63A3A;  --error-soft:   #2A1010;
+  --warning: #F5B544;  --warning-edge: #C98A1A;  --warning-soft: #2A1E08;
+  --reward:  #FFD23F;  --reward-edge:  #C99E00;  --reward-soft:  #2A2208;
+
   /* Neutrals — dark mode (Codex shell) */
   --background: #0A0A0A;
   --foreground: #F5F5F5;
@@ -551,19 +636,24 @@
   --codex-edge-alpha: 0.5;
 }
 
-/* Pressed-edge 3D button (Duolingo anatomy, Tome accent). */
+/* Pressed-edge 3D button (Duolingo anatomy, indigo primary by default).
+   Chunky tactile primary: rounded 12px, bold rounded display label, 4px
+   pressable bottom edge that depresses on :active. Recolor via variants. */
 .tactile-btn {
-  --accent: var(--gold-default);
-  --accent-edge: color-mix(in srgb, var(--accent) 62%, #000);
+  --accent: var(--primary-500);
+  --accent-edge: var(--primary-700);
+  --accent-on: #fff;
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  border-radius: var(--radius-lg, 0.875rem);
+  min-height: 48px;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md, 0.75rem);
   background: var(--accent);
-  color: #fff;
-  font-weight: 700;
+  color: var(--accent-on);
+  font-weight: 800;
   box-shadow: 0 4px 0 0 var(--accent-edge), var(--codex-shadow-contact);
   transform: translateY(0);
   transition: transform 120ms var(--tome-ease-out-expo, ease),
@@ -584,6 +674,19 @@
 .tactile-btn:disabled {
   opacity: 0.5;
   pointer-events: none;
+}
+.tactile-btn-success {
+  --accent: var(--success);
+  --accent-edge: var(--success-edge);
+}
+.tactile-btn-danger {
+  --accent: var(--error);
+  --accent-edge: var(--error-edge);
+}
+.tactile-btn-secondary {
+  --accent: var(--gray-100);
+  --accent-edge: var(--gray-300);
+  --accent-on: var(--gray-700);
 }
 
 /* Tactile card — ambient lift + accent-tinted hairline. */

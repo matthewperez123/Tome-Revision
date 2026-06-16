@@ -13,15 +13,8 @@
  *   2. An edition note acknowledging the 1674 second edition and
  *      English blank verse (no "translation note" — the poem is in
  *      the reader's language by nature).
- *   3. A togglable palette legend for the speaker colors. Satan's
- *      crimson, the Son's pale gold, Eve's dawn-rose, Raphael's
- *      rose-gold, and the rest, grouped by Hell / Heaven / Humanity /
- *      Allegorical.
  *
- * Per-line speaker color coding is baked into the HTML by
- * scripts/paradise-lost/transform-book.ts as `data-pl-speaker`
- * attributes and styled via CSS in src/styles/tome.css. This
- * component does not touch the verse body.
+ * This component does not touch the verse body.
  *
  * Only active for `bookId === "paradise-lost"`. Silently no-ops
  * otherwise.
@@ -34,11 +27,6 @@ import {
   BOOK_ROMAN_NUMERALS,
   BOOK_INVOCATIONS,
 } from "@/data/paradise-lost/book-metadata"
-import {
-  LEGEND_GROUPS,
-  PARADISE_LOST_SPEAKERS,
-  SPEAKERS_BY_ID,
-} from "@/data/paradise-lost/speakers"
 
 interface ParadiseLostEnhancementsProps {
   bookId: string
@@ -53,7 +41,6 @@ export function ParadiseLostEnhancements({
   bookId,
   currentChapter,
 }: ParadiseLostEnhancementsProps) {
-  const [legendOpen, setLegendOpen] = useState(false)
   const [showParagraphs, setShowParagraphs] = useState(false)
   const [highlightEnjambment, setHighlightEnjambment] = useState(false)
 
@@ -206,15 +193,7 @@ export function ParadiseLostEnhancements({
             English blank verse — unrhymed iambic pentameter. Milton's own prose
             Argument precedes each book; the four invocations (I, III, VII, IX)
             carry a subtle indigo accent.
-          </span>{" "}
-          <button
-            type="button"
-            onClick={() => setLegendOpen((v) => !v)}
-            className="not-italic underline underline-offset-2 hover:no-underline"
-            style={{ color: "var(--muted-foreground)" }}
-          >
-            {legendOpen ? "hide palette" : "show palette"}
-          </button>
+          </span>
           {/* ── Milton-specific reading toggles ──
                Verse paragraphs: Milton's most innovative formal feature is
                the long suspended period; revealing the paragraph boundary
@@ -260,78 +239,8 @@ export function ParadiseLostEnhancements({
               enjambment
             </label>
           </span>
-          {legendOpen && (
-            <div className="mt-2 not-italic">
-              {LEGEND_GROUPS.map((group) => (
-                <div key={group.heading} className="mb-1.5 last:mb-0">
-                  <div
-                    className="mb-1 text-[10px] uppercase tracking-wider"
-                    style={{ color: "var(--muted-foreground)", opacity: 0.6 }}
-                  >
-                    {group.heading}
-                  </div>
-                  <div className="grid grid-cols-2 gap-x-4 gap-y-1 sm:grid-cols-3">
-                    {group.ids.map((id) => {
-                      const sp = SPEAKERS_BY_ID[id]
-                      if (!sp) return null
-                      return (
-                        <LegendSwatch
-                          key={id}
-                          label={sp.name}
-                          color={sp.color === "inherit" ? "var(--foreground)" : sp.color}
-                          darkColor={
-                            sp.darkColor === "inherit"
-                              ? "var(--foreground)"
-                              : sp.darkColor
-                          }
-                        />
-                      )
-                    })}
-                  </div>
-                </div>
-              ))}
-              <div
-                className="mt-2 text-[10px]"
-                style={{ color: "var(--muted-foreground)", opacity: 0.65 }}
-              >
-                {PARADISE_LOST_SPEAKERS.length} voices — the narrator (Milton)
-                takes the base text.
-              </div>
-            </div>
-          )}
         </div>
       </div>
     </div>
-  )
-}
-
-function LegendSwatch({
-  label,
-  color,
-  darkColor,
-}: {
-  label: string
-  color: string
-  darkColor: string
-}) {
-  return (
-    <span className="flex items-center gap-1.5 text-[11px]">
-      <span
-        aria-hidden
-        className="inline-block size-2 rounded-full dark:hidden"
-        style={{ background: color }}
-      />
-      <span
-        aria-hidden
-        className="hidden size-2 rounded-full dark:inline-block"
-        style={{ background: darkColor }}
-      />
-      <span style={{ color }} className="dark:[&]:hidden">
-        {label}
-      </span>
-      <span style={{ color: darkColor }} className="hidden dark:[&]:inline">
-        {label}
-      </span>
-    </span>
   )
 }

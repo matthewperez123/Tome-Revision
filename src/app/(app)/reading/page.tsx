@@ -6,6 +6,7 @@ import { BookOpen, ArrowRight, Clock, ChevronRight } from "lucide-react"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { getAllBookProgress, type BookProgress } from "@/lib/book-progress"
 import { getBook } from "@/lib/content"
+import { BookCoverThumb } from "@/components/tome/book-cover-thumb"
 import type { TomeBook } from "@/data/books"
 
 interface ReadingEntry {
@@ -84,6 +85,7 @@ export default function ReadingPage() {
                     href={`/read/${entry.book.id}`}
                     className="flex items-center gap-4 rounded-lg border border-border bg-card p-4 hover:border-[var(--gold-default)]/40 transition-colors group"
                   >
+                    <BookCoverThumb book={entry.book} />
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-semibold text-foreground truncate">{entry.book.title}</p>
                       <p className="text-xs text-muted-foreground truncate">{entry.book.author}</p>

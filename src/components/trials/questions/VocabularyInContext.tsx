@@ -92,7 +92,7 @@ export function VocabularyInContext({
       </div>
 
       {answered && isCorrect && question.etymology && (
-        <div className="rounded-lg border border-stone-200 bg-stone-50 dark:border-stone-700 dark:bg-stone-900/40 px-3 py-2 text-xs font-serif italic text-muted-foreground">
+        <div className="rounded-lg border border-[var(--codex-border)] bg-muted px-3 py-2 text-xs font-serif italic text-muted-foreground">
           <span className="font-semibold not-italic text-ink mr-1">Etymology:</span>
           {question.etymology}
         </div>

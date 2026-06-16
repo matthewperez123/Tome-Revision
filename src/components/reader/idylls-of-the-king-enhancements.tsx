@@ -10,24 +10,21 @@
  *      sentence scholarly argument, an emotional-register line for
  *      cycle-arc orientation, and Tennyson's opening as epigraph.
  *   2. An edition note.
- *   3. Three togglable panels: speaker palette legend, the Malory-
- *      source tracker (Part 3A — the signature pedagogical feature
- *      tracking Tennyson's interventions against his primary Malory
- *      and Mabinogion sources), and the cycle-arc sidebar (Part 3C —
- *      showing all twelve idylls in reading order with emotional
- *      registers so the non-linear cycle's downward curve is legible).
+ *   3. Togglable panels: the Malory-source tracker (Part 3A — the
+ *      signature pedagogical feature tracking Tennyson's interventions
+ *      against his primary Malory and Mabinogion sources), and the
+ *      cycle-arc sidebar (Part 3C — showing all twelve idylls in
+ *      reading order with emotional registers so the non-linear
+ *      cycle's downward curve is legible).
  *
- * Per-line speaker color-coding is baked into the HTML by
- * scripts/idylls/transform-book.ts as `data-iotk-speaker` attributes
- * and styled via CSS in src/styles/tome.css. Line numbers are
- * rendered from `data-iotk-line-mark` on every 5th line.
+ * Line numbers are rendered from `data-iotk-line-mark` on every 5th
+ * line.
  *
  * Only active for `bookId === "idylls-of-the-king"`.
  */
 
 import { useEffect, useState } from "react"
 import { IDYLL_METADATA, FRAMING_UNITS } from "@/data/idylls-of-the-king/book-metadata"
-import { LEGEND_GROUPS, IDYLLS_OF_THE_KING_SPEAKERS } from "@/data/idylls-of-the-king/speakers"
 import { IDYLL_MALORY_SOURCES } from "@/data/idylls-of-the-king/malory-sources"
 import { PROSODY_BY_CHAPTER, PROSODY_PASSAGES } from "@/data/idylls-of-the-king/prosody-passages"
 import { VICTORIAN_CONTEXT } from "@/data/idylls-of-the-king/victorian-context"
@@ -138,7 +135,7 @@ interface IdyllsOfTheKingEnhancementsProps {
   onNavigateToChapter?: (chapterIndex: number) => void
 }
 
-type OpenPanel = "none" | "palette" | "sources" | "cycle" | "prosody"
+type OpenPanel = "none" | "sources" | "cycle" | "prosody"
 
 const SOURCE_LABEL: Record<string, string> = {
   "malory-morte-darthur": "Malory · Le Morte d'Arthur",
@@ -186,14 +183,6 @@ export function IdyllsOfTheKingEnhancements({
   const isFraming = FRAMING_UNITS.has(currentChapter)
   const source = IDYLL_MALORY_SOURCES[currentChapter]
   const victorianContext = VICTORIAN_CONTEXT[currentChapter]
-
-  // Pre-group speakers for the palette legend.
-  const speakersByGroup = new Map<string, typeof IDYLLS_OF_THE_KING_SPEAKERS>()
-  for (const s of IDYLLS_OF_THE_KING_SPEAKERS) {
-    const arr = speakersByGroup.get(s.group) ?? []
-    arr.push(s)
-    speakersByGroup.set(s.group, arr)
-  }
 
   function toggle(panel: OpenPanel) {
     setOpenPanel((p) => (p === panel ? "none" : panel))
@@ -317,14 +306,6 @@ export function IdyllsOfTheKingEnhancements({
           Tennyson's <em>Idylls of the King</em> — 1891 Macmillan collected
           edition. English blank verse, composed 1833–1885.
         </span>
-        <button
-          type="button"
-          onClick={() => toggle("palette")}
-          className="underline underline-offset-2 decoration-dotted hover:opacity-80"
-          style={{ color: "var(--tome-accent)" }}
-        >
-          {openPanel === "palette" ? "Hide palette" : "Show palette"}
-        </button>
         {source && (
           <button
             type="button"
@@ -353,61 +334,6 @@ export function IdyllsOfTheKingEnhancements({
           {openPanel === "prosody" ? "Hide sound" : "Sound"}
         </button>
       </div>
-
-      {/* ── Palette legend panel ────────────────────────────────────── */}
-      {openPanel === "palette" && (
-        <div
-          className="text-xs rounded border p-3 mb-2"
-          style={{
-            borderColor: "color-mix(in srgb, currentColor 15%, transparent)",
-            background: "color-mix(in srgb, var(--tome-accent) 3%, transparent)",
-            lineHeight: 1.7,
-          }}
-        >
-          {LEGEND_GROUPS.map((grp) => {
-            const group = speakersByGroup.get(grp.id) ?? []
-            if (group.length === 0) return null
-            return (
-              <div key={grp.id} className="mb-2 last:mb-0">
-                <div className="mb-1">
-                  <span
-                    className="font-semibold"
-                    style={{ color: "var(--foreground)" }}
-                  >
-                    {grp.label}
-                  </span>
-                  <span className="ml-2" style={{ color: "var(--muted-foreground)" }}>
-                    — {grp.note}
-                  </span>
-                </div>
-                <div className="flex flex-wrap gap-x-3 gap-y-1">
-                  {group.map((s) => (
-                    <span
-                      key={s.id}
-                      style={{ color: s.color }}
-                      className="whitespace-nowrap"
-                      title={s.note ?? s.name}
-                    >
-                      {s.name}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )
-          })}
-          <div
-            className="mt-2 pt-2 italic"
-            style={{
-              color: "var(--muted-foreground)",
-              borderTop: "1px dotted color-mix(in srgb, currentColor 15%, transparent)",
-            }}
-          >
-            Speaker colors for Arthur, Guinevere, Lancelot, Vivien, Merlin, and
-            the rest attach to specific speeches in a later pass; the full
-            cycle currently renders in the narrator's heathered-gold.
-          </div>
-        </div>
-      )}
 
       {/* ── Malory-source tracker panel (Part 3A) ───────────────────── */}
       {openPanel === "sources" && source && (

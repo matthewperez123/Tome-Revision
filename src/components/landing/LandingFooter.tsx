@@ -27,7 +27,7 @@ export function LandingFooter() {
             <Link href="/library" className={footerLink}>Library</Link>
             <Link href="/explore" className={footerLink}>Explore</Link>
             <Link href="/authors" className={footerLink}>Authors</Link>
-            <Link href="/quiz" className={footerLink}>Trials</Link>
+            <Link href="/quizzes" className={footerLink}>Trials</Link>
           </div>
         </div>
 

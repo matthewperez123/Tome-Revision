@@ -33,7 +33,12 @@
   --tome-success: #2D9A47;
   --tome-warning: #C8801F;
   --tome-error: #C84A52;
-  --tome-accent: #D4A04C;
+  /* Generic UI accent now rides the indigo-violet primary (gold survives only
+     as the gamification `reward` token). */
+  --tome-accent: var(--primary-500, #6C63FF);
+
+  /* ── Reader highlight (swappable) ───────── */
+  --tome-highlight: #FFE08A;
 
   /* ── Typography ──────────────────────────── */
   --tome-fs-display: 40px;
@@ -55,6 +60,18 @@
   --tome-fs-body: 16px;
   --tome-fw-body: 400;
   --tome-ls-body: 0em;
+
+  /* Line-heights for the modern scale */
+  --tome-lh-display: 1.1;
+  --tome-lh-h1: 1.15;
+  --tome-lh-h2: 1.25;
+  --tome-lh-h3: 1.3;
+  --tome-lh-body: 1.6;
+  --tome-lh-small: 1.5;
+
+  /* Reader body — comfortable long-form reading (Inter, 19/1.75) */
+  --tome-fs-reader: 19px;
+  --tome-lh-reader: 1.75;
 
   --tome-fs-body-strong: 16px;
   --tome-fw-body-strong: 500;
@@ -138,7 +155,7 @@
   --tome-success: #6EAA6E;
   --tome-warning: #C8A04A;
   --tome-error: #C85858;
-  --tome-accent: #D4A04C;
+  --tome-accent: var(--primary-500, #8B83FF);
 }
 
 .dark * {
@@ -451,57 +468,6 @@
   box-shadow: inset 2px 0 0 0 rgba(170, 160, 230, 0.38);
 }
 
-/* Speaker palette — reader-time, applied against baked-in data-pl-speaker
- * attributes. Colors align with src/data/paradise-lost/speakers.ts; the
- * dark-theme variants live in `.dark .prose-reader ...`. */
-.prose-reader [data-pl-speaker="Satan"]      { color: #8B1A1A; }
-.prose-reader [data-pl-speaker="Beelzebub"]  { color: #7A2828; }
-.prose-reader [data-pl-speaker="Moloch"]     { color: #6B1818; }
-.prose-reader [data-pl-speaker="Belial"]     { color: #A86268; }
-.prose-reader [data-pl-speaker="Mammon"]     { color: #A05828; }
-.prose-reader [data-pl-speaker="Mulciber"]   { color: #B8652A; }
-.prose-reader [data-pl-speaker="Serpent"]    { color: #3E6B3E; }
-.prose-reader [data-pl-speaker="Father"]     { color: #44403C; }
-.prose-reader [data-pl-speaker="Son"]        { color: #B8862C; }
-.prose-reader [data-pl-speaker="Raphael"]    { color: #B8642E; }
-.prose-reader [data-pl-speaker="Michael"]    { color: #4E5A6E; }
-.prose-reader [data-pl-speaker="Gabriel"]    { color: #6B7A6E; }
-.prose-reader [data-pl-speaker="Uriel"]      { color: #A8965A; }
-.prose-reader [data-pl-speaker="Abdiel"]     { color: #8A7A3C; }
-.prose-reader [data-pl-speaker="Zephon"]     { color: #8C8A6A; }
-.prose-reader [data-pl-speaker="Ithuriel"]   { color: #8E8962; }
-.prose-reader [data-pl-speaker="Uzziel"]     { color: #8E8E72; }
-.prose-reader [data-pl-speaker="Sin"]        { color: #7A7770; }
-.prose-reader [data-pl-speaker="Death"]      { color: #9C988C; }
-.prose-reader [data-pl-speaker="Chaos"]      { color: #4E5568; }
-.prose-reader [data-pl-speaker="Night"]      { color: #2C3048; }
-.prose-reader [data-pl-speaker="Adam"]       { color: #7A5A2E; }
-.prose-reader [data-pl-speaker="Eve"]        { color: #A85E6E; }
-
-.dark .prose-reader [data-pl-speaker="Satan"]      { color: #DD5252; }
-.dark .prose-reader [data-pl-speaker="Beelzebub"]  { color: #C85E5E; }
-.dark .prose-reader [data-pl-speaker="Moloch"]     { color: #B84040; }
-.dark .prose-reader [data-pl-speaker="Belial"]     { color: #D48A90; }
-.dark .prose-reader [data-pl-speaker="Mammon"]     { color: #D98A58; }
-.dark .prose-reader [data-pl-speaker="Mulciber"]   { color: #E09050; }
-.dark .prose-reader [data-pl-speaker="Serpent"]    { color: #70A070; }
-.dark .prose-reader [data-pl-speaker="Father"]     { color: #E7E5E4; }
-.dark .prose-reader [data-pl-speaker="Son"]        { color: #E8C778; }
-.dark .prose-reader [data-pl-speaker="Raphael"]    { color: #E09060; }
-.dark .prose-reader [data-pl-speaker="Michael"]    { color: #9AA6BC; }
-.dark .prose-reader [data-pl-speaker="Gabriel"]    { color: #A8B8AC; }
-.dark .prose-reader [data-pl-speaker="Uriel"]      { color: #D4C080; }
-.dark .prose-reader [data-pl-speaker="Abdiel"]     { color: #BFA860; }
-.dark .prose-reader [data-pl-speaker="Zephon"]     { color: #BAB690; }
-.dark .prose-reader [data-pl-speaker="Ithuriel"]   { color: #BEB788; }
-.dark .prose-reader [data-pl-speaker="Uzziel"]     { color: #BCBCA0; }
-.dark .prose-reader [data-pl-speaker="Sin"]        { color: #BAB6AD; }
-.dark .prose-reader [data-pl-speaker="Death"]      { color: #D6D1C0; }
-.dark .prose-reader [data-pl-speaker="Chaos"]      { color: #8E96AC; }
-.dark .prose-reader [data-pl-speaker="Night"]      { color: #7078A0; }
-.dark .prose-reader [data-pl-speaker="Adam"]       { color: #C49860; }
-.dark .prose-reader [data-pl-speaker="Eve"]        { color: #D88898; }
-
 /* ── Idylls of the King — scholarly apparatus ────────────────────────
  * The transform script (scripts/idylls/transform-book.ts) bakes line
  * anchors (data-iotk-line) and a narrator-baseline speaker tag
@@ -536,75 +502,6 @@
     display: none;
   }
 }
-
-/* Speaker palette — reader-time, applied against baked-in
- * data-iotk-speaker attributes. Colors align with
- * src/data/idylls-of-the-king/speakers.ts. */
-.prose-reader [data-iotk-speaker="narrator"]      { color: #8C7A3A; }
-.prose-reader [data-iotk-speaker="Arthur"]        { color: #B8A87A; }
-.prose-reader [data-iotk-speaker="Guinevere"]     { color: #B86878; }
-.prose-reader [data-iotk-speaker="Leodogran"]     { color: #8E7E56; }
-.prose-reader [data-iotk-speaker="Bellicent"]     { color: #9A7264; }
-.prose-reader [data-iotk-speaker="Lancelot"]      { color: #9C5E2E; }
-.prose-reader [data-iotk-speaker="Gareth"]        { color: #C8A050; }
-.prose-reader [data-iotk-speaker="Geraint"]       { color: #8B6038; }
-.prose-reader [data-iotk-speaker="Balin"]         { color: #8E4E3A; }
-.prose-reader [data-iotk-speaker="Balan"]         { color: #7E5C4A; }
-.prose-reader [data-iotk-speaker="Pelleas"]       { color: #9E7838; }
-.prose-reader [data-iotk-speaker="Tristram"]      { color: #876B4A; }
-.prose-reader [data-iotk-speaker="Kay"]           { color: #6B6E5E; }
-.prose-reader [data-iotk-speaker="Bedivere"]      { color: #7E7062; }
-.prose-reader [data-iotk-speaker="Gawain"]        { color: #9A7A48; }
-.prose-reader [data-iotk-speaker="Modred"]        { color: #4E5852; }
-.prose-reader [data-iotk-speaker="Elaine"]        { color: #C6B8A6; }
-.prose-reader [data-iotk-speaker="Enid"]          { color: #C68872; }
-.prose-reader [data-iotk-speaker="Lynette"]       { color: #B29AB0; }
-.prose-reader [data-iotk-speaker="Ettarre"]       { color: #A66882; }
-.prose-reader [data-iotk-speaker="Isolt"]         { color: #8F6A74; }
-.prose-reader [data-iotk-speaker="Yniol"]         { color: #8E6E52; }
-.prose-reader [data-iotk-speaker="Galahad"]       { color: #D8D4C0; }
-.prose-reader [data-iotk-speaker="Percivale"]     { color: #9E9380; }
-.prose-reader [data-iotk-speaker="Bors"]          { color: #8E7A4E; }
-.prose-reader [data-iotk-speaker="AmbrosiusTheMonk"] { color: #796E54; }
-.prose-reader [data-iotk-speaker="Merlin"]        { color: #6C7A96; }
-.prose-reader [data-iotk-speaker="Vivien"]        { color: #7A8860; }
-.prose-reader [data-iotk-speaker="MarkOfCornwall"] { color: #4A4E46; }
-.prose-reader [data-iotk-speaker="LadyOfTheLake"] { color: #7A98A8; }
-.prose-reader [data-iotk-speaker="Nimue"]         { color: #84A4A8; }
-.prose-reader [data-iotk-speaker="ThreeQueens"]   { color: #8994A8; }
-
-.dark .prose-reader [data-iotk-speaker="narrator"]      { color: #C6B273; }
-.dark .prose-reader [data-iotk-speaker="Arthur"]        { color: #E8DAAE; }
-.dark .prose-reader [data-iotk-speaker="Guinevere"]     { color: #E09AA8; }
-.dark .prose-reader [data-iotk-speaker="Leodogran"]     { color: #BAAA88; }
-.dark .prose-reader [data-iotk-speaker="Bellicent"]     { color: #C8A294; }
-.dark .prose-reader [data-iotk-speaker="Lancelot"]      { color: #D0946A; }
-.dark .prose-reader [data-iotk-speaker="Gareth"]        { color: #EACE80; }
-.dark .prose-reader [data-iotk-speaker="Geraint"]       { color: #BA8E68; }
-.dark .prose-reader [data-iotk-speaker="Balin"]         { color: #C48676; }
-.dark .prose-reader [data-iotk-speaker="Balan"]         { color: #B69684; }
-.dark .prose-reader [data-iotk-speaker="Pelleas"]       { color: #C8A46E; }
-.dark .prose-reader [data-iotk-speaker="Tristram"]      { color: #B69C7C; }
-.dark .prose-reader [data-iotk-speaker="Kay"]           { color: #9EA294; }
-.dark .prose-reader [data-iotk-speaker="Bedivere"]      { color: #AEA298; }
-.dark .prose-reader [data-iotk-speaker="Gawain"]        { color: #C8A878; }
-.dark .prose-reader [data-iotk-speaker="Modred"]        { color: #8A968E; }
-.dark .prose-reader [data-iotk-speaker="Elaine"]        { color: #E8DCC4; }
-.dark .prose-reader [data-iotk-speaker="Enid"]          { color: #E8B49E; }
-.dark .prose-reader [data-iotk-speaker="Lynette"]       { color: #D4C0D6; }
-.dark .prose-reader [data-iotk-speaker="Ettarre"]       { color: #D096AA; }
-.dark .prose-reader [data-iotk-speaker="Isolt"]         { color: #C49AA4; }
-.dark .prose-reader [data-iotk-speaker="Yniol"]         { color: #BE9E82; }
-.dark .prose-reader [data-iotk-speaker="Galahad"]       { color: #F0ECD8; }
-.dark .prose-reader [data-iotk-speaker="Percivale"]     { color: #C6BBA8; }
-.dark .prose-reader [data-iotk-speaker="Bors"]          { color: #BEA87A; }
-.dark .prose-reader [data-iotk-speaker="AmbrosiusTheMonk"] { color: #AC9E80; }
-.dark .prose-reader [data-iotk-speaker="Merlin"]        { color: #A8B6D2; }
-.dark .prose-reader [data-iotk-speaker="Vivien"]        { color: #B0C094; }
-.dark .prose-reader [data-iotk-speaker="MarkOfCornwall"] { color: #848A80; }
-.dark .prose-reader [data-iotk-speaker="LadyOfTheLake"] { color: #B4CCDE; }
-.dark .prose-reader [data-iotk-speaker="Nimue"]         { color: #BCD6DA; }
-.dark .prose-reader [data-iotk-speaker="ThreeQueens"]   { color: #BEC8DC; }
 
 /* Idylls prosody toggle — alliterating syllable accent and curated
  * sound-rich passage margin-mark. Both appear only when the reader
@@ -672,104 +569,6 @@
   font-style: normal;
   pointer-events: none;
   user-select: none;
-}
-
-/* Paradise Lost ✦ annotation marker — inserted by
- * ParadiseLostAnnotations. Clicking opens the shared VirgilDrawer. */
-.prose-reader .pl-anchor-marker {
-  display: inline-block;
-  color: #8B1A1A;
-  font-size: 0.72em;
-  margin-right: 0.2em;
-  vertical-align: super;
-  cursor: pointer;
-  opacity: 0.72;
-  transition: opacity 0.15s ease, transform 0.15s ease;
-  user-select: none;
-  font-style: normal;
-}
-.dark .prose-reader .pl-anchor-marker {
-  color: #DD5252;
-}
-.prose-reader .pl-anchor-marker:hover,
-.prose-reader .pl-anchor-marker:focus {
-  opacity: 1;
-  transform: scale(1.15);
-  outline: none;
-}
-
-/* Decameron anchor markers — amber ✦ matching Boccaccio's author-voice
- * register in the Decameron enhancements component. Clickable to open
- * the annotation drawer. Parallel of .pl-anchor-marker. */
-.prose-reader .dec-anchor-marker {
-  display: inline-block;
-  color: #B45309;
-  font-size: 0.72em;
-  margin-right: 0.2em;
-  vertical-align: super;
-  cursor: pointer;
-  opacity: 0.78;
-  transition: opacity 0.15s ease, transform 0.15s ease;
-  user-select: none;
-  font-style: normal;
-}
-.dark .prose-reader .dec-anchor-marker {
-  color: #F59E0B;
-}
-.prose-reader .dec-anchor-marker:hover,
-.prose-reader .dec-anchor-marker:focus {
-  opacity: 1;
-  transform: scale(1.15);
-  outline: none;
-}
-
-/* Idylls of the King anchor markers — heathered-gold ✦ (Tennyson
- * narrator palette), clickable to open the annotation drawer. Parallel
- * of .pl-anchor-marker. */
-.prose-reader .iotk-anchor-marker {
-  display: inline-block;
-  color: #8C7A3A;
-  font-size: 0.72em;
-  margin-right: 0.2em;
-  vertical-align: super;
-  cursor: pointer;
-  opacity: 0.72;
-  transition: opacity 0.15s ease, transform 0.15s ease;
-  user-select: none;
-  font-style: normal;
-}
-.dark .prose-reader .iotk-anchor-marker {
-  color: #C6B273;
-}
-.prose-reader .iotk-anchor-marker:hover,
-.prose-reader .iotk-anchor-marker:focus {
-  opacity: 1;
-  transform: scale(1.15);
-  outline: none;
-}
-
-/* Beowulf anchor markers — mead-hall-gold ✦ in the body text, clickable
- * to open the annotation drawer. Parallel of .pl-anchor-marker. */
-.prose-reader .beowulf-anchor-marker {
-  display: inline-block;
-  color: var(--beowulf-gold, #B8864D);
-  font-size: 0.72em;
-  margin-right: 0.2em;
-  vertical-align: super;
-  cursor: pointer;
-  opacity: 0.78;
-  transition: opacity 0.15s ease, transform 0.15s ease;
-  user-select: none;
-  font-style: normal;
-}
-.dark .prose-reader .beowulf-anchor-marker {
-  color: var(--beowulf-gold, #E2B578);
-}
-.prose-reader .beowulf-anchor-marker:hover,
-.prose-reader .beowulf-anchor-marker:focus {
-  opacity: 1;
-  transform: scale(1.15);
-  outline: none;
 }
 
 /* ── Don Juan — scholarly apparatus ────────────────────────────────
@@ -1115,144 +914,17 @@
 }
 .dark .prose-reader .tome-canto-superheader { color: #D8A05A; }
 
-/* Glossed words — dotted underline with a hover tooltip showing the
- * definition. Mirrors the Shakespeare structured-enhancement styles so
- * the Commedia reader (which doesn't mount StructuredEnhancements) has
- * the same gloss UX. */
-.prose-reader .tome-gloss {
-  border-bottom: 1px dotted #b08d57;
-  cursor: help;
-  position: relative;
-}
-.prose-reader .tome-gloss:hover::after,
-.prose-reader .tome-gloss:focus::after {
-  content: attr(data-definition);
-  position: absolute;
-  bottom: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%);
-  background: #1a1611;
-  color: #fbf8f3;
-  padding: 8px 12px;
-  border-radius: 6px;
-  font-size: 13px;
-  font-style: normal;
-  font-family: ui-sans-serif, system-ui, sans-serif;
-  line-height: 1.4;
-  width: max-content;
-  max-width: 320px;
-  white-space: normal;
-  z-index: 50;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
-  pointer-events: none;
-}
-.prose-reader .tome-gloss:hover::before,
-.prose-reader .tome-gloss:focus::before {
-  content: "";
-  position: absolute;
-  bottom: calc(100% + 2px);
-  left: 50%;
-  transform: translateX(-50%);
-  border: 6px solid transparent;
-  border-top-color: #1a1611;
-  z-index: 50;
-}
-.dark .prose-reader .tome-gloss { border-bottom-color: #c9a670; }
-
-/* Marginalia toggle — when [data-annotations-hidden="true"] is set on a
- * reader-content container, every inline annotation marker (regardless of
- * which book it belongs to) is hidden. Class names enumerated below match
- * those produced by the per-book annotation overlays in
- * src/components/reader/*-annotations.tsx. */
-[data-annotations-hidden="true"] .commedia-anchor,
-[data-annotations-hidden="true"] .aeneid-anchor,
-[data-annotations-hidden="true"] .aeneid-apostrophe,
-[data-annotations-hidden="true"] .pl-anchor-marker,
-[data-annotations-hidden="true"] .iliad-anchor-marker,
-[data-annotations-hidden="true"] .odyssey-anchor-marker,
-[data-annotations-hidden="true"] .beowulf-anchor-marker,
-[data-annotations-hidden="true"] .iotk-anchor-marker,
-[data-annotations-hidden="true"] .ct-anchor-marker,
-[data-annotations-hidden="true"] .malory-anchor-marker,
-[data-annotations-hidden="true"] .dec-anchor-marker,
-[data-annotations-hidden="true"] .tome-annotation-anchor {
-  display: none !important;
-}
-
-/* Commedia annotation anchors — small gold ✦ inserted before each passage
- * that carries a scholarly note. Kept visually quiet so verse takes
- * precedence; the marker is interactive and opens the Virgil drawer. */
-.prose-reader .commedia-anchor {
-  display: inline-block;
-  margin-right: 0.3em;
-  vertical-align: 0.05em;
-  font-size: 0.82em;
-  line-height: 1;
-  color: #D4A04C;
-  background: transparent;
-  border: none;
-  padding: 0 0.15em;
-  cursor: pointer;
-  opacity: 0.55;
-  transition: opacity 120ms ease-out, transform 120ms ease-out;
-}
-.prose-reader .commedia-anchor:hover,
-.prose-reader .commedia-anchor:focus-visible {
-  opacity: 1;
-  transform: translateY(-1px);
-  outline: none;
-}
-
-/* Aeneid annotation anchor (✦) — matches commedia-anchor chrome but
- * tinted bronze to pair with the Aeneid book-header palette. */
-.prose-reader .aeneid-anchor {
-  display: inline-block;
-  margin-right: 0.3em;
-  vertical-align: 0.05em;
-  font-size: 0.82em;
-  line-height: 1;
-  color: #7A5A1F;
-  background: transparent;
-  border: none;
-  padding: 0 0.15em;
-  cursor: pointer;
-  opacity: 0.6;
-  transition: opacity 120ms ease-out, transform 120ms ease-out;
-}
-.dark .prose-reader .aeneid-anchor { color: #D6B06A; }
-.prose-reader .aeneid-anchor:hover,
-.prose-reader .aeneid-anchor:focus-visible {
-  opacity: 1;
-  transform: translateY(-1px);
-  outline: none;
-}
-
-/* Aeneid authorial-apostrophe marker — a small italic "V." monogram
- * in the margin at each of the five canonical Virgilian address
- * sites (tu Marcellus eris, fortunati ambo, the Caieta invocation,
- * the Lausus apostrophe, the two gates of sleep). Subtle by default;
- * brightens on hover. */
-.prose-reader .aeneid-apostrophe {
-  display: inline-block;
-  margin-right: 0.35em;
-  vertical-align: 0.08em;
-  font-family: var(--font-serif, Georgia, "Times New Roman", serif);
-  font-style: italic;
-  font-size: 0.78em;
-  font-weight: 500;
-  line-height: 1;
-  color: #7A5A1F;
-  opacity: 0.45;
-  letter-spacing: 0.02em;
-  cursor: pointer;
-  user-select: none;
-  transition: opacity 120ms ease-out;
-}
-.dark .prose-reader .aeneid-apostrophe { color: #D6B06A; }
-.prose-reader .aeneid-apostrophe:hover,
-.prose-reader .aeneid-apostrophe:focus-visible {
-  opacity: 1;
-  outline: none;
+/* Reader highlights — crisp warm-yellow mark; highlighted text forced to
+ * black for legibility. Color is swappable via the --tome-highlight token
+ * (overridable per-mark by an inline backgroundColor). */
+.prose-reader mark.tome-highlight,
+mark.tome-highlight {
+  background-color: var(--tome-highlight);
+  color: #000;
+  border-radius: 2px;
+  padding: 0 0.04em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 /* Mobile: drama table adjustments */
@@ -1263,223 +935,6 @@
     font-size: 0.8em;
   }
 }
-
-/* ════════════════════════════════════════════════════════════════════
- * Iliad — scholarly apparatus for Homer (Bryant, 1870)
- * ═══════════════════════════════════════════════════════════════════ */
-
-/* Book header (Greek glyph + argument) is rendered by the React
- * IliadEnhancements component outside the verse body; its styles are
- * inline. Only the per-line speaker colors below are driven by CSS
- * against the baked-in `data-iliad-speaker` attributes. */
-
-/* Speaker color coding — inline on every verse line carrying a speech.
- * Each canonical speaker has a light-mode and dark-mode value keyed to
- * the palette in src/lib/virgil/iliad-speakers.ts. When speaker is null
- * (narrator), no rule matches and the base text color applies.
- *
- * The `data-iliad-speech-start="true"` flag marks the first line of a
- * speech — useful if later UI wants to prefix a subtle marker. For now
- * we give it a slightly stronger weight only. */
-
-.prose-reader [data-iliad-speech-start="true"] {
-  /* Keep identical weight; reserved hook for future attribution styling. */
-}
-
-/* — Greeks (warm bronze palette) — */
-.prose-reader [data-iliad-speaker="Achilles"]    { color: #9C3A1E; }
-.dark .prose-reader [data-iliad-speaker="Achilles"]    { color: #E26A46; }
-.prose-reader [data-iliad-speaker="Agamemnon"]   { color: #A8782C; }
-.dark .prose-reader [data-iliad-speaker="Agamemnon"]   { color: #D4A04A; }
-.prose-reader [data-iliad-speaker="Odysseus"]    { color: #B89556; }
-.dark .prose-reader [data-iliad-speaker="Odysseus"]    { color: #D9B97A; }
-.prose-reader [data-iliad-speaker="Nestor"]      { color: #6B4A2E; }
-.dark .prose-reader [data-iliad-speaker="Nestor"]      { color: #A88560; }
-.prose-reader [data-iliad-speaker="Diomedes"]    { color: #8C5A3D; }
-.dark .prose-reader [data-iliad-speaker="Diomedes"]    { color: #B88A6E; }
-.prose-reader [data-iliad-speaker="Ajax"]        { color: #8C6B3D; }
-.dark .prose-reader [data-iliad-speaker="Ajax"]        { color: #B8966C; }
-.prose-reader [data-iliad-speaker="Patroclus"]   { color: #A8782C; }
-.dark .prose-reader [data-iliad-speaker="Patroclus"]   { color: #D4A04A; }
-.prose-reader [data-iliad-speaker="Menelaus"]    { color: #8C4A3D; }
-.dark .prose-reader [data-iliad-speaker="Menelaus"]    { color: #B87A6E; }
-.prose-reader [data-iliad-speaker="Calchas"]     { color: #6E5A3D; }
-.dark .prose-reader [data-iliad-speaker="Calchas"]     { color: #A8926C; }
-
-/* — Trojans (cool rose / terracotta palette) — */
-.prose-reader [data-iliad-speaker="Hector"]      { color: #8C4A3D; }
-.dark .prose-reader [data-iliad-speaker="Hector"]      { color: #C97160; }
-.prose-reader [data-iliad-speaker="Priam"]       { color: #6E7A8C; }
-.dark .prose-reader [data-iliad-speaker="Priam"]       { color: #9AA8B8; }
-.prose-reader [data-iliad-speaker="Paris"]       { color: #8C6B7E; }
-.dark .prose-reader [data-iliad-speaker="Paris"]       { color: #B89AAA; }
-.prose-reader [data-iliad-speaker="Aeneas"]      { color: #8C5A5A; }
-.dark .prose-reader [data-iliad-speaker="Aeneas"]      { color: #B88A8A; }
-.prose-reader [data-iliad-speaker="Sarpedon"]    { color: #6E3A5A; }
-.dark .prose-reader [data-iliad-speaker="Sarpedon"]    { color: #A87A94; }
-.prose-reader [data-iliad-speaker="Helen"]       { color: #A8782C; }
-.dark .prose-reader [data-iliad-speaker="Helen"]       { color: #D4A070; }
-.prose-reader [data-iliad-speaker="Andromache"]  { color: #6E3A3D; }
-.dark .prose-reader [data-iliad-speaker="Andromache"]  { color: #A87A7E; }
-.prose-reader [data-iliad-speaker="Hecuba"]      { color: #5C3A5C; }
-.dark .prose-reader [data-iliad-speaker="Hecuba"]      { color: #9C7A9C; }
-.prose-reader [data-iliad-speaker="Glaucus"]     { color: #8C6B5A; }
-.dark .prose-reader [data-iliad-speaker="Glaucus"]     { color: #B8967E; }
-
-/* — Gods (each one a distinct mythic color) — */
-.prose-reader [data-iliad-speaker="Zeus"]        { color: #8C7A2C; }
-.dark .prose-reader [data-iliad-speaker="Zeus"]        { color: #E6D27A; }
-.prose-reader [data-iliad-speaker="Hera"]        { color: #2E5F6E; }
-.dark .prose-reader [data-iliad-speaker="Hera"]        { color: #6BA0B2; }
-.prose-reader [data-iliad-speaker="Athena"]      { color: #5A6040; }
-.dark .prose-reader [data-iliad-speaker="Athena"]      { color: #A0A874; }
-.prose-reader [data-iliad-speaker="Apollo"]      { color: #C8912A; }
-.dark .prose-reader [data-iliad-speaker="Apollo"]      { color: #F0C058; }
-.prose-reader [data-iliad-speaker="Aphrodite"]   { color: #B86B88; }
-.dark .prose-reader [data-iliad-speaker="Aphrodite"]   { color: #E09AB0; }
-.prose-reader [data-iliad-speaker="Poseidon"]    { color: #2E5A7A; }
-.dark .prose-reader [data-iliad-speaker="Poseidon"]    { color: #6895B5; }
-.prose-reader [data-iliad-speaker="Ares"]        { color: #8C2E2E; }
-.dark .prose-reader [data-iliad-speaker="Ares"]        { color: #C96464; }
-.prose-reader [data-iliad-speaker="Hephaestus"]  { color: #B8652A; }
-.dark .prose-reader [data-iliad-speaker="Hephaestus"]  { color: #E09050; }
-.prose-reader [data-iliad-speaker="Thetis"]      { color: #7A8C9C; }
-.dark .prose-reader [data-iliad-speaker="Thetis"]      { color: #B0BFCE; }
-.prose-reader [data-iliad-speaker="Iris"]        { color: #8C6B7E; }
-.dark .prose-reader [data-iliad-speaker="Iris"]        { color: #B89AAA; }
-.prose-reader [data-iliad-speaker="Hermes"]      { color: #6B8560; }
-.dark .prose-reader [data-iliad-speaker="Hermes"]      { color: #9EBE94; }
-.prose-reader [data-iliad-speaker="Artemis"]     { color: #5F8070; }
-.dark .prose-reader [data-iliad-speaker="Artemis"]     { color: #92B0A0; }
-.prose-reader [data-iliad-speaker="Dione"]       { color: #A88AA8; }
-.dark .prose-reader [data-iliad-speaker="Dione"]       { color: #C8B0C8; }
-
-/* ── Aeneid speaker color coding ─────────────────────────────────────────
- * Mirror of the Iliad block. Roman god names share Homer's exact hues
- * (Juno == Hera peacock, Venus == Aphrodite rose, Jove == Zeus white-gold)
- * so the classical triad reads as one continuous palette.
- * Applied via CSS attribute selectors against the baked-in
- * `data-aeneid-speaker` attributes produced by
- * scripts/aeneid/transform-book.ts.
- */
-
-/* — Trojan exiles (imperial bronze, duty-weighted) — */
-.prose-reader [data-aeneid-speaker="Aeneas"]     { color: #7A5A1F; }
-.dark .prose-reader [data-aeneid-speaker="Aeneas"]     { color: #D6B06A; }
-.prose-reader [data-aeneid-speaker="Anchises"]   { color: #6E6B5A; }
-.dark .prose-reader [data-aeneid-speaker="Anchises"]   { color: #C8C2A8; }
-.prose-reader [data-aeneid-speaker="Ascanius"]   { color: #B88A3C; }
-.dark .prose-reader [data-aeneid-speaker="Ascanius"]   { color: #E8C070; }
-.prose-reader [data-aeneid-speaker="Creusa"]     { color: #8A8898; }
-.dark .prose-reader [data-aeneid-speaker="Creusa"]     { color: #BEBCCA; }
-.prose-reader [data-aeneid-speaker="Achates"]    { color: #7C6B48; }
-.dark .prose-reader [data-aeneid-speaker="Achates"]    { color: #BDA878; }
-.prose-reader [data-aeneid-speaker="Ilioneus"]   { color: #6E5A3C; }
-.dark .prose-reader [data-aeneid-speaker="Ilioneus"]   { color: #B69670; }
-.prose-reader [data-aeneid-speaker="Palinurus"]  { color: #4A5A6E; }
-.dark .prose-reader [data-aeneid-speaker="Palinurus"]  { color: #8EA2B8; }
-.prose-reader [data-aeneid-speaker="Panthus"]    { color: #6B5A4A; }
-.dark .prose-reader [data-aeneid-speaker="Panthus"]    { color: #B09A82; }
-.prose-reader [data-aeneid-speaker="Deiphobus"]  { color: #7C4A52; }
-.dark .prose-reader [data-aeneid-speaker="Deiphobus"]  { color: #BE8890; }
-
-/* — Carthaginians (burning carmine, regal and doomed) — */
-.prose-reader [data-aeneid-speaker="Dido"]       { color: #8E1F2F; }
-.dark .prose-reader [data-aeneid-speaker="Dido"]       { color: #E05068; }
-.prose-reader [data-aeneid-speaker="Anna"]       { color: #A85060; }
-.dark .prose-reader [data-aeneid-speaker="Anna"]       { color: #D88898; }
-.prose-reader [data-aeneid-speaker="Iarbas"]     { color: #7A3A28; }
-.dark .prose-reader [data-aeneid-speaker="Iarbas"]     { color: #C2725A; }
-.prose-reader [data-aeneid-speaker="Sychaeus"]   { color: #4A3040; }
-.dark .prose-reader [data-aeneid-speaker="Sychaeus"]   { color: #8E7080; }
-
-/* — Italians (iron and laurel) — */
-.prose-reader [data-aeneid-speaker="Turnus"]     { color: #8B1A1A; }
-.dark .prose-reader [data-aeneid-speaker="Turnus"]     { color: #DD5252; }
-.prose-reader [data-aeneid-speaker="Latinus"]    { color: #4E3E6C; }
-.dark .prose-reader [data-aeneid-speaker="Latinus"]    { color: #9A8AC8; }
-.prose-reader [data-aeneid-speaker="Amata"]      { color: #6C2C48; }
-.dark .prose-reader [data-aeneid-speaker="Amata"]      { color: #B06A88; }
-.prose-reader [data-aeneid-speaker="Lavinia"]    { color: #C8A2B0; }
-.dark .prose-reader [data-aeneid-speaker="Lavinia"]    { color: #E8C8D4; }
-.prose-reader [data-aeneid-speaker="Mezentius"]  { color: #4E4E54; }
-.dark .prose-reader [data-aeneid-speaker="Mezentius"]  { color: #9A9AA2; }
-.prose-reader [data-aeneid-speaker="Lausus"]     { color: #A88848; }
-.dark .prose-reader [data-aeneid-speaker="Lausus"]     { color: #E0BC74; }
-.prose-reader [data-aeneid-speaker="Camilla"]    { color: #8E8C9E; }
-.dark .prose-reader [data-aeneid-speaker="Camilla"]    { color: #C4C2D6; }
-.prose-reader [data-aeneid-speaker="Drances"]    { color: #5C5248; }
-.dark .prose-reader [data-aeneid-speaker="Drances"]    { color: #A89888; }
-.prose-reader [data-aeneid-speaker="Evander"]    { color: #4A6838; }
-.dark .prose-reader [data-aeneid-speaker="Evander"]    { color: #8CB07A; }
-.prose-reader [data-aeneid-speaker="Pallas"]     { color: #D4B03A; }
-.dark .prose-reader [data-aeneid-speaker="Pallas"]     { color: #F0D878; }
-.prose-reader [data-aeneid-speaker="Nisus"]      { color: #4A3A2C; }
-.dark .prose-reader [data-aeneid-speaker="Nisus"]      { color: #8A7058; }
-.prose-reader [data-aeneid-speaker="Euryalus"]   { color: #A8784C; }
-.dark .prose-reader [data-aeneid-speaker="Euryalus"]   { color: #E0B078; }
-.prose-reader [data-aeneid-speaker="Messapus"]   { color: #6E503A; }
-.dark .prose-reader [data-aeneid-speaker="Messapus"]   { color: #B08870; }
-.prose-reader [data-aeneid-speaker="Juturna"]    { color: #5A7888; }
-.dark .prose-reader [data-aeneid-speaker="Juturna"]    { color: #9EBCCE; }
-.prose-reader [data-aeneid-speaker="Tiberinus"]  { color: #3E5C68; }
-.dark .prose-reader [data-aeneid-speaker="Tiberinus"]  { color: #86A4B2; }
-
-/* — Underworld — */
-.prose-reader [data-aeneid-speaker="Sibyl"]      { color: #5A3A6A; }
-.dark .prose-reader [data-aeneid-speaker="Sibyl"]      { color: #A482BA; }
-.prose-reader [data-aeneid-speaker="Charon"]     { color: #302A2E; }
-.dark .prose-reader [data-aeneid-speaker="Charon"]     { color: #8C8488; }
-
-/* — Gods (Roman names; Homeric hues shared with Iliad/Odyssey) — */
-.prose-reader [data-aeneid-speaker="Jove"]       { color: #8C7A2C; }
-.dark .prose-reader [data-aeneid-speaker="Jove"]       { color: #E6D27A; }
-.prose-reader [data-aeneid-speaker="Juno"]       { color: #2E5F6E; }
-.dark .prose-reader [data-aeneid-speaker="Juno"]       { color: #6BA0B2; }
-.prose-reader [data-aeneid-speaker="Venus"]      { color: #B86B88; }
-.dark .prose-reader [data-aeneid-speaker="Venus"]      { color: #E09AB0; }
-.prose-reader [data-aeneid-speaker="Neptune"]    { color: #2E5A7A; }
-.dark .prose-reader [data-aeneid-speaker="Neptune"]    { color: #6895B5; }
-.prose-reader [data-aeneid-speaker="Mercury"]    { color: #6B8560; }
-.dark .prose-reader [data-aeneid-speaker="Mercury"]    { color: #9EBE94; }
-.prose-reader [data-aeneid-speaker="Apollo"]     { color: #C8912A; }
-.dark .prose-reader [data-aeneid-speaker="Apollo"]     { color: #F0C058; }
-.prose-reader [data-aeneid-speaker="Mars"]       { color: #8C2E2E; }
-.dark .prose-reader [data-aeneid-speaker="Mars"]       { color: #C96464; }
-.prose-reader [data-aeneid-speaker="Vulcan"]     { color: #B8652A; }
-.dark .prose-reader [data-aeneid-speaker="Vulcan"]     { color: #E09050; }
-.prose-reader [data-aeneid-speaker="Minerva"]    { color: #5A6040; }
-.dark .prose-reader [data-aeneid-speaker="Minerva"]    { color: #A0A874; }
-.prose-reader [data-aeneid-speaker="Diana"]      { color: #7A8898; }
-.dark .prose-reader [data-aeneid-speaker="Diana"]      { color: #BCC8D4; }
-.prose-reader [data-aeneid-speaker="Aeolus"]     { color: #5A6070; }
-.dark .prose-reader [data-aeneid-speaker="Aeolus"]     { color: #9EA4B4; }
-.prose-reader [data-aeneid-speaker="Allecto"]    { color: #3E1C28; }
-.dark .prose-reader [data-aeneid-speaker="Allecto"]    { color: #7E505C; }
-.prose-reader [data-aeneid-speaker="Cupid"]      { color: #B86B88; }
-.dark .prose-reader [data-aeneid-speaker="Cupid"]      { color: #E09AB0; }
-.prose-reader [data-aeneid-speaker="Fame"]       { color: #5A4E3A; }
-.dark .prose-reader [data-aeneid-speaker="Fame"]       { color: #A89878; }
-
-/* — Homeric cameos (reuse Iliad palette) — */
-.prose-reader [data-aeneid-speaker="Priam"]      { color: #6E7A8C; }
-.dark .prose-reader [data-aeneid-speaker="Priam"]      { color: #9AA8B8; }
-.prose-reader [data-aeneid-speaker="Hecuba"]     { color: #5C3A5C; }
-.dark .prose-reader [data-aeneid-speaker="Hecuba"]     { color: #9C7A9C; }
-.prose-reader [data-aeneid-speaker="Andromache"] { color: #6E3A3D; }
-.dark .prose-reader [data-aeneid-speaker="Andromache"] { color: #A87A7E; }
-.prose-reader [data-aeneid-speaker="Helenus"]    { color: #6A5A78; }
-.dark .prose-reader [data-aeneid-speaker="Helenus"]    { color: #B0A0BE; }
-.prose-reader [data-aeneid-speaker="Helen"]      { color: #A8782C; }
-.dark .prose-reader [data-aeneid-speaker="Helen"]      { color: #D4A070; }
-.prose-reader [data-aeneid-speaker="Pyrrhus"]    { color: #5E7A2E; }
-.dark .prose-reader [data-aeneid-speaker="Pyrrhus"]    { color: #A2BE68; }
-.prose-reader [data-aeneid-speaker="Ulysses"]    { color: #B89556; }
-.dark .prose-reader [data-aeneid-speaker="Ulysses"]    { color: #D9B97A; }
-.prose-reader [data-aeneid-speaker="Achilles"]   { color: #9C3A1E; }
-.dark .prose-reader [data-aeneid-speaker="Achilles"]   { color: #E26A46; }
-.prose-reader [data-aeneid-speaker="Sinon"]      { color: #6B6228; }
-.dark .prose-reader [data-aeneid-speaker="Sinon"]      { color: #AFA462; }
 
 /* ── Reduced Motion ──────────────────────────── */
 
@@ -1651,56 +1106,6 @@
   font-style: italic;
 }
 
-/* Speaker palette — reader-time CSS attribute selectors against baked-in
- * data-beowulf-speaker markup (baked by a later transform script, Part 4
- * scope). Colors align with src/data/beowulf/speakers.ts; dark variants
- * follow. */
-.prose-reader [data-beowulf-speaker="Beowulf"]        { color: #8B6B2F; }
-.prose-reader [data-beowulf-speaker="Wiglaf"]         { color: #A58A5A; }
-.prose-reader [data-beowulf-speaker="Hygelac"]        { color: #8C6840; }
-.prose-reader [data-beowulf-speaker="Hygd"]           { color: #A6876A; }
-.prose-reader [data-beowulf-speaker="Ecgtheow"]       { color: #7A5B3A; }
-.prose-reader [data-beowulf-speaker="Hrothgar"]       { color: #5A6373; }
-.prose-reader [data-beowulf-speaker="Wealhtheow"]     { color: #8F7F63; }
-.prose-reader [data-beowulf-speaker="Unferth"]        { color: #6B4A4A; }
-.prose-reader [data-beowulf-speaker="Aeschere"]       { color: #7A7F8B; }
-.prose-reader [data-beowulf-speaker="Hrothulf"]       { color: #525A66; }
-.prose-reader [data-beowulf-speaker="Grendel"]        { color: #2B1E1E; }
-.prose-reader [data-beowulf-speaker="GrendelsMother"] { color: #2A2E28; }
-.prose-reader [data-beowulf-speaker="Dragon"]         { color: #9C4F1F; }
-.prose-reader [data-beowulf-speaker="Scop"]           { color: #A17B3E; }
-.prose-reader [data-beowulf-speaker="Sigemund"]       { color: #8F6A3E; }
-.prose-reader [data-beowulf-speaker="Heremod"]        { color: #6B4E2B; }
-.prose-reader [data-beowulf-speaker="Finn"]           { color: #7F5E36; }
-.prose-reader [data-beowulf-speaker="Hildeburh"]      { color: #937B5E; }
-.prose-reader [data-beowulf-speaker="Ongentheow"]     { color: #674A2A; }
-.prose-reader [data-beowulf-speaker="Heardred"]       { color: #8E7A5A; }
-.prose-reader [data-beowulf-speaker="Freawaru"]       { color: #A68A6A; }
-.prose-reader [data-beowulf-speaker="Messenger"]      { color: #5E5146; }
-
-.dark .prose-reader [data-beowulf-speaker="Beowulf"]        { color: #D4A74E; }
-.dark .prose-reader [data-beowulf-speaker="Wiglaf"]         { color: #C7B189; }
-.dark .prose-reader [data-beowulf-speaker="Hygelac"]        { color: #BF9669; }
-.dark .prose-reader [data-beowulf-speaker="Hygd"]           { color: #CFB395; }
-.dark .prose-reader [data-beowulf-speaker="Ecgtheow"]       { color: #B89465; }
-.dark .prose-reader [data-beowulf-speaker="Hrothgar"]       { color: #A8B0BE; }
-.dark .prose-reader [data-beowulf-speaker="Wealhtheow"]     { color: #D6C79E; }
-.dark .prose-reader [data-beowulf-speaker="Unferth"]        { color: #B08585; }
-.dark .prose-reader [data-beowulf-speaker="Aeschere"]       { color: #B6BCCB; }
-.dark .prose-reader [data-beowulf-speaker="Hrothulf"]       { color: #9CA5B5; }
-.dark .prose-reader [data-beowulf-speaker="Grendel"]        { color: #7A3030; }
-.dark .prose-reader [data-beowulf-speaker="GrendelsMother"] { color: #5E7A63; }
-.dark .prose-reader [data-beowulf-speaker="Dragon"]         { color: #E28A3C; }
-.dark .prose-reader [data-beowulf-speaker="Scop"]           { color: #D5A85F; }
-.dark .prose-reader [data-beowulf-speaker="Sigemund"]       { color: #C29659; }
-.dark .prose-reader [data-beowulf-speaker="Heremod"]        { color: #A58150; }
-.dark .prose-reader [data-beowulf-speaker="Finn"]           { color: #B68B5B; }
-.dark .prose-reader [data-beowulf-speaker="Hildeburh"]      { color: #C5AC86; }
-.dark .prose-reader [data-beowulf-speaker="Ongentheow"]     { color: #A17F53; }
-.dark .prose-reader [data-beowulf-speaker="Heardred"]       { color: #C5AD85; }
-.dark .prose-reader [data-beowulf-speaker="Freawaru"]       { color: #D1B48F; }
-.dark .prose-reader [data-beowulf-speaker="Messenger"]      { color: #9A8A79; }
-
 /* ═══════════════════════════════════════════════════════════════════════
  * Le Morte d'Arthur — Caxton's argumentum header, orientation banner,
  * speaker colors, storylines sidebar, anchor marker.
@@ -1789,41 +1194,6 @@
 .dark .prose-reader .malory-toggle[aria-pressed="true"] { background: rgba(245, 198, 117, 0.12); color: #FBD58D; }
 .dark .prose-reader .malory-toggle:hover   { background: rgba(245, 198, 117, 0.18); }
 
-/* Anchor marker — laurel-gold ✦ (Arthur palette). */
-.prose-reader .malory-anchor-marker {
-  display: inline-block;
-  color: #D4A04C;
-  font-size: 0.72em;
-  margin-right: 0.2em;
-  vertical-align: super;
-  cursor: pointer;
-  opacity: 0.78;
-  transition: opacity 0.15s ease, transform 0.15s ease;
-  user-select: none;
-  font-style: normal;
-}
-.prose-reader .malory-anchor-marker:hover,
-.prose-reader .malory-anchor-marker:focus {
-  opacity: 1;
-  transform: scale(1.15);
-  outline: none;
-}
-.dark .prose-reader .malory-anchor-marker { color: #F5C675; }
-
-/* Glosses default-ON for Malory; the enhancements component sets
- * data-malory-glosses="off" on [data-reader-text] when the user
- * toggles them. In that state the dotted underline disappears. */
-[data-reader-text][data-malory-glosses="off"] .prose-reader .tome-gloss {
-  border-bottom: none;
-  cursor: text;
-}
-[data-reader-text][data-malory-glosses="off"] .prose-reader .tome-gloss:hover::after,
-[data-reader-text][data-malory-glosses="off"] .prose-reader .tome-gloss:focus::after,
-[data-reader-text][data-malory-glosses="off"] .prose-reader .tome-gloss:hover::before,
-[data-reader-text][data-malory-glosses="off"] .prose-reader .tome-gloss:focus::before {
-  display: none;
-}
-
 /* Storylines sidebar. */
 .prose-reader .malory-storylines {
   margin: 0 0 1.75rem 0;
@@ -1863,7 +1233,3 @@
 .dark .prose-reader .malory-pivot-mark         { color: #F5C675; }
 .dark .prose-reader .malory-storyline-span-note{ color: #A8A29E; }
 .dark .prose-reader .malory-storylines-footer  { color: #A8A29E; }
-
-/* Speaker-name color tinting (the enhancement walks paragraphs and
- * colorizes the name in each `said/quoth/answered Sir X` attribution). */
-.prose-reader .malory-speaker { font-weight: 500; }
