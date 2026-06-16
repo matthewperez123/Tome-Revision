@@ -91,21 +91,22 @@ export function Matching({
           {left.map((item) => {
             const s = stateFor(item)
             const pair = pairedRightFor(item)
-            const cls =
+            const style: React.CSSProperties =
               s === "correct"
-                ? "border-emerald-500 bg-emerald-50 dark:bg-emerald-950/30"
+                ? { borderColor: "var(--codex-success)", background: "var(--codex-success-soft)", color: "var(--codex-success-text)" }
                 : s === "wrong"
-                  ? "border-rose-500 bg-rose-50 dark:bg-rose-950/30"
+                  ? { borderColor: "var(--codex-danger)", background: "var(--codex-danger-soft)", color: "var(--codex-danger-text)" }
                   : s === "selected"
-                    ? "border-indigo-500 bg-indigo-50 dark:bg-indigo-950/30"
-                    : "border-stone-300 hover:border-indigo-400 bg-card"
+                    ? { borderColor: "var(--codex-primary)", background: "var(--codex-primary-soft)", color: "var(--codex-primary-text)" }
+                    : { borderColor: "var(--codex-border)", background: "var(--card)" }
             return (
               <button
                 key={item}
                 type="button"
                 onClick={() => handleLeftClick(item)}
                 disabled={answered}
-                className={`w-full rounded-xl border-2 px-3 py-3 font-serif text-ink text-left transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 flex items-center justify-between gap-2 ${cls}`}
+                className={`w-full border-2 px-4 py-3.5 min-h-[44px] font-serif text-ink text-left transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:[--tw-ring-color:var(--codex-primary)] flex items-center justify-between gap-2 ${s === "idle" ? "hover:[border-color:var(--codex-primary)] hover:[background:var(--codex-primary-soft)]" : ""}`}
+                style={{ borderRadius: "var(--codex-radius-btn)", ...style }}
               >
                 <span className="flex-1 min-w-0">{item}</span>
                 {pair && !answered && (
@@ -116,9 +117,9 @@ export function Matching({
                 {answered && (
                   <span aria-hidden>
                     {s === "correct" ? (
-                      <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                      <CheckCircle2 className="w-4 h-4" style={{ color: "var(--codex-success)" }} />
                     ) : (
-                      <XCircle className="w-4 h-4 text-rose-600" />
+                      <XCircle className="w-4 h-4" style={{ color: "var(--codex-danger)" }} />
                     )}
                   </span>
                 )}
@@ -128,22 +129,23 @@ export function Matching({
         </div>
 
         {/* Spacer column */}
-        <div className="hidden sm:block h-full w-px bg-stone-200" aria-hidden />
+        <div className="hidden sm:block h-full w-px" style={{ background: "var(--codex-border)" }} aria-hidden />
 
         {/* Right column */}
         <div className="space-y-2">
           {right.map((item) => {
             const taken = isRightTaken(item)
-            const cls = taken
-              ? "border-stone-400 bg-stone-50 text-stone-500 dark:bg-stone-900/50 opacity-70"
-              : "border-stone-300 hover:border-indigo-400 bg-card text-ink"
+            const style: React.CSSProperties = taken
+              ? { borderColor: "var(--codex-border)", background: "var(--muted)", color: "var(--muted-foreground)", opacity: 0.7 }
+              : { borderColor: "var(--codex-border)", background: "var(--card)" }
             return (
               <button
                 key={item}
                 type="button"
                 onClick={() => handleRightClick(item)}
                 disabled={answered || (!selectedLeft && !taken)}
-                className={`w-full rounded-xl border-2 px-3 py-3 font-serif text-left transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 ${cls}`}
+                className={`w-full border-2 px-4 py-3.5 min-h-[44px] font-serif text-ink text-left transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:[--tw-ring-color:var(--codex-primary)] ${taken ? "" : "hover:[border-color:var(--codex-primary)] hover:[background:var(--codex-primary-soft)]"}`}
+                style={{ borderRadius: "var(--codex-radius-btn)", ...style }}
               >
                 {item}
               </button>
@@ -153,7 +155,7 @@ export function Matching({
       </div>
 
       {answered && (
-        <div className="text-sm text-stone-500 italic">
+        <div className="text-sm text-muted-foreground italic">
           Correct pairs:
           <ul className="mt-1 list-disc list-inside font-serif not-italic">
             {Object.entries(correctPairs).map(([l, r]) => (
@@ -171,7 +173,8 @@ export function Matching({
             type="button"
             onClick={submit}
             disabled={!allPaired}
-            className="rounded-xl font-semibold"
+            className="codex-pressable min-h-[48px] px-8 font-bold rounded-[var(--codex-radius-btn)]"
+            style={{ background: "var(--codex-primary)", color: "var(--codex-on-primary)", border: "var(--codex-border-w) solid var(--codex-primary)" }}
           >
             Check Matches
           </Button>

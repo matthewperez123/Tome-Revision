@@ -7,7 +7,6 @@ import { Users, Plus, BookOpen, Search, Globe, Lock, Mail, BookHeart, Check } fr
 import { supabase } from "@/lib/supabase"
 import { springs } from "@/lib/design-tokens"
 import { BlurFade } from "@/components/ui/blur-fade"
-import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Skeleton } from "@/components/ui/skeleton"
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
@@ -71,15 +70,16 @@ export default function ClubsPage() {
   const visibilityIcon = (v: string) => v === "public" ? <Globe className="size-3" /> : v === "private" ? <Lock className="size-3" /> : <Mail className="size-3" />
 
   return (
-    <div className="p-4 md:p-6">
-      <div className="flex items-center justify-between mb-4">
-        <div>
-          <h1 className="text-xl font-serif font-semibold tracking-tight md:text-2xl">Book Clubs</h1>
-          <p className="mt-0.5 text-sm text-muted-foreground">Join a club and read together.</p>
-        </div>
-      </div>
+    <div className="min-h-screen pb-20">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 space-y-6">
 
-      <Tabs defaultValue="discover">
+        {/* Header */}
+        <div>
+          <h1 className="text-2xl font-bold tracking-tight">Book Clubs</h1>
+          <p className="text-sm text-muted-foreground mt-0.5">Join a club and read together.</p>
+        </div>
+
+        <Tabs defaultValue="discover">
         <TabsList>
           <TabsTrigger value="discover">Discover</TabsTrigger>
           <TabsTrigger value="my-clubs">My Clubs</TabsTrigger>
@@ -93,7 +93,7 @@ export default function ClubsPage() {
             <div className="flex gap-3 overflow-x-auto pb-2 snap-x">
               {discoverClubs.slice(0, 3).map(club => (
                 <Link key={club.id} href={`/clubs/${club.id}`} className="shrink-0 w-64 snap-start">
-                  <div className="rounded-xl border overflow-hidden hover:shadow-md transition-shadow">
+                  <div className="rounded-xl border border-border overflow-hidden hover:bg-accent/20 transition-colors">
                     <div className="h-20 flex items-center justify-center" style={{ backgroundColor: club.coverColor }}>
                       <BookHeart className="size-8 text-white/80" />
                     </div>
@@ -112,9 +112,9 @@ export default function ClubsPage() {
                 <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 size-3.5 text-muted-foreground" />
                 <input type="text" placeholder="Search clubs..." value={search} onChange={e => setSearch(e.target.value)} className="w-full h-8 rounded-md border bg-background pl-8 pr-3 text-xs placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring" />
               </div>
-              <div className="flex gap-1">
+              <div className="flex gap-1 p-1 bg-muted rounded-lg">
                 {(["all", "book", "theme", "popular"] as const).map(f => (
-                  <button key={f} onClick={() => setFilter(f)} className={cn("rounded-full px-2.5 py-0.5 text-[10px] font-medium transition-colors capitalize", filter === f ? "bg-[var(--tome-accent)] text-[#111]" : "bg-muted text-muted-foreground hover:text-foreground")}>
+                  <button key={f} onClick={() => setFilter(f)} className={cn("px-2.5 py-1 rounded-md text-xs font-medium transition-colors capitalize", filter === f ? "bg-background text-foreground shadow-sm" : "text-muted-foreground hover:text-foreground")}>
                     {f === "all" ? "All" : f === "book" ? "Book-based" : f === "theme" ? "Theme-based" : "Popular"}
                   </button>
                 ))}
@@ -126,7 +126,7 @@ export default function ClubsPage() {
               {filteredDiscover.map((club, i) => (
                 <BlurFade key={club.id} delay={0.05 * i} inView>
                   <Link href={`/clubs/${club.id}`}>
-                    <motion.div whileHover={{ scale: 1.02 }} transition={springs.interactive} className="flex gap-4 rounded-xl border border-border bg-card p-4 cursor-pointer transition-shadow hover:shadow-sm motion-reduce:hover:scale-100">
+                    <motion.div whileHover={{ scale: 1.02 }} transition={springs.interactive} className="flex gap-4 rounded-xl border border-border bg-card p-4 cursor-pointer transition-colors hover:bg-accent/20 motion-reduce:hover:scale-100">
                       <div className="flex size-14 shrink-0 items-center justify-center rounded-xl text-white" style={{ backgroundColor: club.coverColor }}>
                         <BookOpen className="size-6" />
                       </div>
@@ -162,7 +162,7 @@ export default function ClubsPage() {
             ) : (
               userClubs.map(club => (
                 <Link key={club.id} href={`/clubs/${club.id}`}>
-                  <div className="flex items-center gap-4 rounded-xl border bg-card p-4 hover:bg-muted/30 transition-colors">
+                  <div className="flex items-center gap-4 rounded-xl border border-border bg-card p-4 hover:bg-accent/20 transition-colors">
                     <div className="flex size-10 shrink-0 items-center justify-center rounded-lg text-white" style={{ backgroundColor: club.coverColor }}>
                       <BookOpen className="size-5" />
                     </div>
@@ -207,12 +207,17 @@ export default function ClubsPage() {
                 <input type="number" value={createMax} onChange={e => setCreateMax(Number(e.target.value))} min={2} max={100} className="w-full h-8 rounded-md border bg-background px-3 text-sm focus:outline-none focus:ring-2 focus:ring-ring" />
               </div>
             </div>
-            <Button onClick={handleCreate} disabled={!createName || created} className="w-full gap-1.5">
+            <button
+              onClick={handleCreate}
+              disabled={!createName || created}
+              className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg bg-foreground text-background text-xs font-semibold hover:opacity-90 transition-opacity disabled:pointer-events-none disabled:opacity-50"
+            >
               {created ? <><Check className="size-3.5" /> Club Created!</> : <><Plus className="size-3.5" /> Create Club</>}
-            </Button>
+            </button>
           </div>
         </TabsContent>
-      </Tabs>
+        </Tabs>
+      </div>
     </div>
   )
 }

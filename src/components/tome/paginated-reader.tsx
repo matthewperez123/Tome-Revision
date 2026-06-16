@@ -16,7 +16,6 @@ export interface PaginatedReaderProps {
   mode: "book"
   theme: ReaderTheme
   fontSize: number
-  accentColor: string        // genre color for progress bar
   onToggleToolbar: () => void
   contentTypeClass?: string  // "content-drama" | "content-verse" | "content-prose"
 }
@@ -70,11 +69,10 @@ interface ProgressStripProps {
   mode: "book"
   currentPage: number  // 0-indexed
   totalPages: number
-  accentColor: string
   textColor: string
 }
 
-function ProgressStrip({ mode, currentPage, totalPages, accentColor, textColor }: ProgressStripProps) {
+function ProgressStrip({ mode, currentPage, totalPages, textColor }: ProgressStripProps) {
   const displayLeft  = currentPage + 1
   const displayRight = currentPage + 2
   const label = currentPage + 1 < totalPages
@@ -85,10 +83,10 @@ function ProgressStrip({ mode, currentPage, totalPages, accentColor, textColor }
   return (
     <div className="absolute bottom-0 inset-x-0 flex flex-col items-center gap-1 pb-3 pointer-events-none">
       <p className="text-[10px] tabular-nums" style={{ color: textColor }}>{label}</p>
-      <div className="w-48 h-[3px] rounded-full overflow-hidden" style={{ backgroundColor: `${accentColor}30` }}>
+      <div className="w-48 h-[3px] rounded-full overflow-hidden" style={{ backgroundColor: "var(--border)" }}>
         <div
           className="h-full rounded-full transition-all duration-300"
-          style={{ width: `${Math.min(100, pct)}%`, backgroundColor: accentColor }}
+          style={{ width: `${Math.min(100, pct)}%`, backgroundColor: "var(--foreground)" }}
         />
       </div>
     </div>
@@ -106,7 +104,6 @@ export function PaginatedReader({
   mode,
   theme,
   fontSize,
-  accentColor,
   onToggleToolbar,
   contentTypeClass = "content-prose",
 }: PaginatedReaderProps) {
@@ -289,7 +286,6 @@ export function PaginatedReader({
           mode="book"
           currentPage={currentPage}
           totalPages={pages.length}
-          accentColor={accentColor}
           textColor={t.muted}
         />
       </div>

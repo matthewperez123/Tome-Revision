@@ -22,7 +22,7 @@ import { motion } from "framer-motion"
 import { BookOpen, Lightbulb, MapPin, Calendar, ChevronRight, Library } from "lucide-react"
 import { getAuthorById, getAuthorsByTradition, type Author } from "@/data/authors"
 import { getBooksByAuthor } from "@/lib/content"
-import type { TomeBook } from "@/data/books"
+import { BOOKS, type TomeBook } from "@/data/books"
 import { springs } from "@/lib/design-tokens"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { Badge } from "@/components/ui/badge"
@@ -73,6 +73,35 @@ function getInitials(name: string): string {
 
 function getTraditionColor(traditions: string[]): string {
   return TRADITION_COLORS[traditions[0]] ?? "#6366F1"
+}
+
+// Slug derived from a book's display author name — mirrors the formula the
+// /authors listing uses to build its card links, so every author card resolves.
+function authorIdFromName(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/, "")
+}
+
+// Build a minimal author profile from the static book catalogue for authors
+// that have no curated entry in authors.ts. Returns null if no books match,
+// so the page can fall through to its not-found handling.
+function deriveAuthorFromBooks(id: string): { author: Author; books: TomeBook[] } | null {
+  const books = BOOKS.filter((b) => authorIdFromName(b.author) === id)
+  if (books.length === 0) return null
+  const traditions = [...new Set(books.map((b) => b.tradition).filter(Boolean))]
+  const author: Author = {
+    id,
+    name: books[0].author,
+    nationality: "",
+    era: "",
+    traditions,
+    bio: "",
+    notableWorks: [],
+    themes: [],
+    influence: "",
+    quotes: [],
+    worksInLibrary: books.map((b) => b.id),
+  }
+  return { author, books }
 }
 
 // ── Sub-components ─────────────────────────────
@@ -150,11 +179,19 @@ export default function AuthorProfilePage() {
   useEffect(() => {
     const id = typeof params.id === "string" ? params.id : params.id?.[0] ?? ""
     const found = getAuthorById(id)
-    if (!found) {
-      setNotFound(true)
-    } else {
+    if (found) {
       setAuthor(found)
       setBooks(getBooksByAuthor(found.id))
+      return
+    }
+    // No curated profile — derive one from the book catalogue so the
+    // Author → Books pathway still resolves instead of dead-ending.
+    const derived = deriveAuthorFromBooks(id)
+    if (derived) {
+      setAuthor(derived.author)
+      setBooks(derived.books)
+    } else {
+      setNotFound(true)
     }
   }, [params.id])
 

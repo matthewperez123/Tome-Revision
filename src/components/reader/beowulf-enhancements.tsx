@@ -12,9 +12,7 @@
  *      digression-aware callout.
  *   2. An edition note acknowledging the Hall translation, the alliterative
  *      form, and the manuscript's single-survivor status.
- *   3. A togglable speaker-palette legend (narrator / Geats / Danes /
- *      monsters / scop / northern kings).
- *   4. Reader toggles:
+ *   3. Reader toggles:
  *        • "Highlight alliteration" — subtle gold accent on alliterating
  *          stressed syllables. Default OFF. Off by spec: marked alliteration
  *          on every line is visual noise.
@@ -23,18 +21,9 @@
  *          OE source alignment comes from a later ingestion step.
  *
  * Only active for `bookId === "beowulf"`. Silently no-ops otherwise.
- *
- * Per-line speaker color coding is applied via CSS attribute selectors
- * against `data-beowulf-speaker` markup baked in by a later transform
- * script (not yet run — Part 2 establishes the scaffolding; per-line
- * speaker assignment is a Part 4 concern).
  */
 
 import { useEffect, useRef, useState } from "react"
-import {
-  BEOWULF_LEGEND_GROUPS,
-  BEOWULF_SPEAKERS,
-} from "@/data/beowulf/speakers"
 import { FITT_METADATA } from "@/data/beowulf/fitt-metadata"
 import {
   BEOWULF_KENNINGS_BY_ID,
@@ -60,7 +49,6 @@ export function BeowulfEnhancements({
   bookId,
   currentChapter,
 }: BeowulfEnhancementsProps) {
-  const [legendOpen, setLegendOpen] = useState(false)
   const [highlightAlliteration, setHighlightAlliteration] = useState(false)
   const [showOldEnglish, setShowOldEnglish] = useState(false)
 
@@ -232,7 +220,7 @@ export function BeowulfEnhancements({
         </div>
       )}
 
-      {/* ── Edition + palette note ─────────────────────────────────── */}
+      {/* ── Edition note ───────────────────────────────────────────── */}
       <div className="beowulf-edition-note text-xs opacity-70 leading-relaxed">
         <strong>Edition:</strong> John Lesslie Hall, 1892 alliterative-verse
         translation, via Standard Ebooks (2019). Hall preserves four-stress
@@ -243,7 +231,7 @@ export function BeowulfEnhancements({
         lecture.
       </div>
 
-      {/* ── Toggles + palette legend ───────────────────────────────── */}
+      {/* ── Toggles ────────────────────────────────────────────────── */}
       <div className="beowulf-toggles mt-3 flex flex-wrap items-center gap-3 text-xs">
         <button
           type="button"
@@ -273,51 +261,7 @@ export function BeowulfEnhancements({
         >
           {showOldEnglish ? "✓ " : ""}Show Old English
         </button>
-        <button
-          type="button"
-          className="beowulf-toggle rounded border px-2 py-1 opacity-80 hover:opacity-100"
-          onClick={() => setLegendOpen((v) => !v)}
-          aria-expanded={legendOpen}
-        >
-          {legendOpen ? "Hide" : "Show"} speaker palette
-        </button>
       </div>
-
-      {legendOpen && (
-        <div className="beowulf-legend mt-3 rounded border p-3 text-xs">
-          {BEOWULF_LEGEND_GROUPS.map((group) => {
-            const members = BEOWULF_SPEAKERS.filter((s) => s.group === group.id)
-            if (members.length === 0) return null
-            return (
-              <div key={group.id} className="mb-2 last:mb-0">
-                <div className="font-semibold">{group.label}</div>
-                <div className="opacity-70 mb-1">{group.description}</div>
-                <div className="flex flex-wrap gap-x-3 gap-y-1">
-                  {members.map((m) => (
-                    <span
-                      key={m.id}
-                      className="inline-flex items-center gap-1"
-                      title={m.note}
-                    >
-                      <span
-                        aria-hidden
-                        style={{
-                          background: m.color,
-                          width: 10,
-                          height: 10,
-                          borderRadius: 2,
-                          display: "inline-block",
-                        }}
-                      />
-                      {m.name}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )
-          })}
-        </div>
-      )}
 
       {/* ── Kenning tooltip (portal via fixed positioning) ─────────── */}
       {activeKenning && tooltipPos && (

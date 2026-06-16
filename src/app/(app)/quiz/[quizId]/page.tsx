@@ -52,7 +52,7 @@ const shakeVariants = {
 
 function AnimatedCheck() {
   return (
-    <svg viewBox="0 0 24 24" className="size-5 text-[var(--tome-success)]">
+    <svg viewBox="0 0 24 24" className="size-5 text-[var(--codex-success)]">
       <motion.path
         d="M5 13l4 4L19 7"
         fill="none"
@@ -70,7 +70,7 @@ function AnimatedCheck() {
 
 function AnimatedX() {
   return (
-    <svg viewBox="0 0 24 24" className="size-5 text-[var(--tome-error)]">
+    <svg viewBox="0 0 24 24" className="size-5 text-[var(--codex-danger)]">
       <motion.path
         d="M6 6l12 12M18 6l-12 12"
         fill="none"
@@ -467,8 +467,8 @@ export default function QuizPage() {
                 className={cn(
                   "mt-6 rounded-lg border p-4 flex gap-3",
                   currentResult === "correct"
-                    ? "border-[var(--tome-success)]/30 bg-[var(--tome-success)]/5"
-                    : "border-[var(--tome-error)]/30 bg-[var(--tome-error)]/5"
+                    ? "border-[var(--codex-success)]/30 bg-[var(--codex-success)]/5"
+                    : "border-[var(--codex-danger)]/30 bg-[var(--codex-danger)]/5"
                 )}
               >
                 <div className="shrink-0 pt-0.5">
@@ -477,7 +477,7 @@ export default function QuizPage() {
                 <div>
                   <p className={cn(
                     "text-xs font-semibold",
-                    currentResult === "correct" ? "text-[var(--tome-success)]" : "text-[var(--tome-error)]"
+                    currentResult === "correct" ? "text-[var(--codex-success)]" : "text-[var(--codex-danger)]"
                   )}>
                     {currentResult === "correct" ? "Correct!" : "Incorrect"}
                     {currentResult === "correct" && (
@@ -493,7 +493,11 @@ export default function QuizPage() {
 
             {showExplanation && (
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-6">
-                <Button onClick={handleNext} className="w-full">
+                <Button
+                  onClick={handleNext}
+                  className="codex-pressable w-full min-h-[48px] font-bold rounded-[var(--codex-radius-btn)]"
+                  style={{ background: "var(--codex-primary)", color: "var(--codex-on-primary)", border: "var(--codex-border-w) solid var(--codex-primary)" }}
+                >
                   {state.currentIndex === state.questions.length - 1 ? "See Results" : "Next Question"}
                   <ChevronRight className="size-4 ml-1" />
                 </Button>
@@ -552,8 +556,8 @@ function OptionCard({
       transition={springs.interactive}
       className={cn(
         "flex items-center gap-3 rounded-xl border p-3.5 text-left text-sm transition-all",
-        result === "correct" && "border-[var(--tome-success)] bg-[var(--tome-success)]/5",
-        result === "wrong" && selected && "border-[var(--tome-error)] bg-[var(--tome-error)]/5",
+        result === "correct" && "border-[var(--codex-success)] bg-[var(--codex-success)]/5",
+        result === "wrong" && selected && "border-[var(--codex-danger)] bg-[var(--codex-danger)]/5",
         !result && selected && "border-[var(--flame-streak)] bg-[color-mix(in_srgb,var(--flame-streak)_6%,transparent)]",
         !result && !selected && "border-border hover:border-[color-mix(in_srgb,var(--flame-streak)_45%,var(--border))] hover:-translate-y-px",
         disabled && !result && "opacity-50"
@@ -562,8 +566,8 @@ function OptionCard({
       <span
         className={cn(
           "flex size-7 shrink-0 items-center justify-center rounded-lg text-xs font-semibold transition-colors",
-          result === "correct" && "bg-[var(--tome-success)] text-white",
-          result === "wrong" && selected && "bg-[var(--tome-error)] text-white",
+          result === "correct" && "bg-[var(--codex-success)] text-white",
+          result === "wrong" && selected && "bg-[var(--codex-danger)] text-white",
           !result && selected && "bg-[var(--flame-streak)] text-white",
           !result && !selected && "bg-muted text-muted-foreground"
         )}
@@ -603,8 +607,8 @@ function FreeTextInput({
         className={cn(
           "flex-1 rounded-xl border bg-[var(--tome-surface-recessed)] px-4 py-3 text-sm outline-none transition-colors",
           "focus:border-[var(--flame-streak)]",
-          result === "correct" && "border-[var(--tome-success)]",
-          result === "wrong" && "border-[var(--tome-error)]",
+          result === "correct" && "border-[var(--codex-success)]",
+          result === "wrong" && "border-[var(--codex-danger)]",
           !result && "border-border"
         )}
         onKeyDown={(e) => {

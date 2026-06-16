@@ -10,20 +10,13 @@
  *      English literal (the opening of Book I — Arma virumque cano —
  *      is the most famous line in Latin poetry, so it is surfaced
  *      intentionally).
- *   2. A translation note (Dryden / heroic couplets) with a togglable
- *      palette legend. Roman god names (Juno, Venus, Jove) share the
- *      exact Homeric hues of Hera, Aphrodite, Zeus — so the Classical
- *      Triad reads as one continuous palette across the library.
+ *   2. A translation note (Dryden / heroic couplets).
  *
- * Per-line speaker color coding itself is baked into the HTML by
- * scripts/aeneid/transform-book.ts as `data-aeneid-speaker` attributes,
- * and styled via CSS in src/styles/tome.css. This component does not
- * touch the verse body.
+ * This component does not touch the verse body.
  *
  * Only active for `bookId === "the-aeneid"`. Silently no-ops otherwise.
  */
 
-import { useState } from "react"
 import { BOOK_ARGUMENTS, BOOK_ROMAN_NUMERALS, BOOK_INCIPITS } from "@/data/aeneid/book-metadata"
 
 interface AeneidEnhancementsProps {
@@ -32,7 +25,6 @@ interface AeneidEnhancementsProps {
 }
 
 export function AeneidEnhancements({ bookId, currentChapter }: AeneidEnhancementsProps) {
-  const [legendOpen, setLegendOpen] = useState(false)
   if (bookId !== "the-aeneid") return null
 
   // ch-N.json files are zero-indexed: ch-0 is Book I.
@@ -94,7 +86,7 @@ export function AeneidEnhancements({ bookId, currentChapter }: AeneidEnhancement
         )}
       </div>
 
-      {/* ── Translation note + palette legend ───────────────────────────── */}
+      {/* ── Translation note ────────────────────────────────────────────── */}
       <div
         className="flex items-start gap-2 rounded-md border px-3 py-2 text-[11px] italic leading-snug"
         style={{
@@ -114,72 +106,10 @@ export function AeneidEnhancements({ bookId, currentChapter }: AeneidEnhancement
           <span>
             <strong className="not-italic">Original:</strong> dactylic hexameter.{" "}
             <strong className="not-italic">This translation</strong> (John
-            Dryden, 1697): heroic couplets. Speakers are tinted — Trojan exiles
-            in imperial bronze, Carthaginians in carmine, Italians in iron and
-            laurel, gods in their Homeric hues under Roman names.
-          </span>{" "}
-          <button
-            type="button"
-            onClick={() => setLegendOpen((v) => !v)}
-            className="not-italic underline underline-offset-2 hover:no-underline"
-            style={{ color: "var(--muted-foreground)" }}
-          >
-            {legendOpen ? "hide palette" : "show palette"}
-          </button>
-          {legendOpen && (
-            <div className="mt-2 grid grid-cols-2 gap-x-4 gap-y-1 not-italic sm:grid-cols-3">
-              <LegendSwatch label="Aeneas"    color="#7A5A1F" darkColor="#D6B06A" />
-              <LegendSwatch label="Anchises"  color="#6E6B5A" darkColor="#C8C2A8" />
-              <LegendSwatch label="Ascanius"  color="#B88A3C" darkColor="#E8C070" />
-              <LegendSwatch label="Dido"      color="#8E1F2F" darkColor="#E05068" />
-              <LegendSwatch label="Turnus"    color="#8B1A1A" darkColor="#DD5252" />
-              <LegendSwatch label="Latinus"   color="#4E3E6C" darkColor="#9A8AC8" />
-              <LegendSwatch label="Camilla"   color="#8E8C9E" darkColor="#C4C2D6" />
-              <LegendSwatch label="Evander"   color="#4A6838" darkColor="#8CB07A" />
-              <LegendSwatch label="Pallas"    color="#D4B03A" darkColor="#F0D878" />
-              <LegendSwatch label="Mezentius" color="#4E4E54" darkColor="#9A9AA2" />
-              <LegendSwatch label="Sibyl"     color="#5A3A6A" darkColor="#A482BA" />
-              <LegendSwatch label="Jove"      color="#8C7A2C" darkColor="#E6D27A" />
-              <LegendSwatch label="Juno"      color="#2E5F6E" darkColor="#6BA0B2" />
-              <LegendSwatch label="Venus"     color="#B86B88" darkColor="#E09AB0" />
-              <LegendSwatch label="Neptune"   color="#2E5A7A" darkColor="#6895B5" />
-              <LegendSwatch label="Mercury"   color="#6B8560" darkColor="#9EBE94" />
-              <LegendSwatch label="Vulcan"    color="#B8652A" darkColor="#E09050" />
-            </div>
-          )}
+            Dryden, 1697): heroic couplets.
+          </span>
         </div>
       </div>
     </div>
-  )
-}
-
-function LegendSwatch({
-  label,
-  color,
-  darkColor,
-}: {
-  label: string
-  color: string
-  darkColor: string
-}) {
-  return (
-    <span className="flex items-center gap-1.5">
-      <span
-        aria-hidden
-        className="inline-block size-2 rounded-full dark:hidden"
-        style={{ background: color }}
-      />
-      <span
-        aria-hidden
-        className="hidden size-2 rounded-full dark:inline-block"
-        style={{ background: darkColor }}
-      />
-      <span style={{ color }} className="dark:[&]:hidden">
-        {label}
-      </span>
-      <span style={{ color: darkColor }} className="hidden dark:[&]:inline">
-        {label}
-      </span>
-    </span>
   )
 }

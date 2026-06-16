@@ -1,14 +1,21 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Literata, JetBrains_Mono } from "next/font/google";
+import { Inter, Fraunces, Literata, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "@/styles/globals.css";
 
-// Codex design language: Inter for UI + headings, Literata for literary
-// content, JetBrains Mono for code/numerals.
+// RUBRIC type system: Fraunces for display/headings, Literata for literary
+// reading content, Inter for UI/sans, JetBrains Mono for code/numerals.
 const inter = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
+  display: "swap",
+});
+
+const fraunces = Fraunces({
+  variable: "--font-display",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
   display: "swap",
 });
 
@@ -96,7 +103,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${literata.variable} ${jetbrainsMono.variable}`}
+      className={`${inter.variable} ${fraunces.variable} ${literata.variable} ${jetbrainsMono.variable}`}
       suppressHydrationWarning
     >
       <body>

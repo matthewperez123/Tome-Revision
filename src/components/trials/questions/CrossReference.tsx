@@ -78,7 +78,7 @@ export function CrossReference({
               aria-pressed={state === "selected" || state === "correct" || state === "wrong"}
             >
               <span
-                className="flex-shrink-0 size-10 rounded-md bg-stone-200 dark:bg-stone-800 flex items-center justify-center text-xs font-bold font-sans text-stone-700 dark:text-stone-300"
+                className="flex-shrink-0 size-10 rounded-md bg-muted flex items-center justify-center text-xs font-bold font-sans text-muted-foreground"
                 aria-hidden
               >
                 <BookOpen className="w-4 h-4" />

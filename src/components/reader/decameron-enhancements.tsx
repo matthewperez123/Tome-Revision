@@ -17,9 +17,6 @@
  *      any chapter inside the ten days: day number, theme, governor,
  *      current narrator (if a tale), and a 10-slot row coloring the tales
  *      already heard today.
- *   3. A vocabulary-gloss decoration pass over the rendered HTML (like
- *      the Commedia / Idylls glosses): matches DECAMERON_GLOSSES phrases
- *      inside [data-reader-text] and wraps them with tooltip markup.
  *
  * Only active for `bookId === "the-decameron"`. Silently no-ops otherwise.
  */
@@ -33,7 +30,6 @@ import {
 import { BRIGATA, AUTHOR_VOICE_ID, getVoiceColor, getVoiceLabel } from "@/data/the-decameron/brigata"
 import { DAYS, dayForChapter } from "@/data/the-decameron/days"
 import { talesForDay } from "@/data/the-decameron/tales"
-import { DECAMERON_GLOSSES } from "@/lib/virgil/decameron-glosses"
 
 interface DecameronEnhancementsProps {
   bookId: string
@@ -48,138 +44,18 @@ const PLAGUE_MUTED        = "#4B5563"
 const PLAGUE_MUTED_BG     = "rgba(75, 85, 99, 0.06)"
 
 const LS_TRACKER_OPEN = "decameron:trackerOpen"
-const LS_GLOSSES      = "decameron:glossesOn"
 
 export function DecameronEnhancements({
   bookId,
   currentChapter,
 }: DecameronEnhancementsProps) {
   const [trackerOpen, setTrackerOpen] = useState(false)
-  const [glossesOn,   setGlossesOn]   = useState(true)
 
   useEffect(() => {
     if (typeof window === "undefined") return
     const t = window.localStorage.getItem(LS_TRACKER_OPEN)
     if (t !== null) setTrackerOpen(t === "1")
-    const g = window.localStorage.getItem(LS_GLOSSES)
-    if (g !== null) setGlossesOn(g === "1")
   }, [])
-
-  // Gloss decoration pass over the rendered prose. Wait for the
-  // chapter HTML (injected via dangerouslySetInnerHTML by the paginated
-  // reader) to be present, then wrap matching phrases with a tooltip
-  // span. Scoped with a data-dec-gloss attribute so repeat passes are
-  // idempotent.
-  useEffect(() => {
-    if (bookId !== "the-decameron") return
-    if (!glossesOn) {
-      // Strip any existing gloss wrappers on toggle-off.
-      const root = document.querySelector<HTMLElement>("[data-reader-text]")
-      if (root) {
-        root.querySelectorAll("span[data-dec-gloss]").forEach((el) => {
-          const parent = el.parentNode
-          if (parent) {
-            while (el.firstChild) parent.insertBefore(el.firstChild, el)
-            parent.removeChild(el)
-          }
-        })
-      }
-      return
-    }
-
-    let cancelled = false
-    let timeoutId: ReturnType<typeof setTimeout> | null = null
-
-    // Phrases that apply to every Decameron chapter + phrases scoped to
-    // this specific flat chapter index.
-    const phrases = DECAMERON_GLOSSES.filter(
-      (g) => g.flatChapter === null || g.flatChapter === currentChapter,
-    )
-
-    let attempts = 0
-    const tryDecorate = () => {
-      if (cancelled) return
-      const root = document.querySelector<HTMLElement>("[data-reader-text]")
-      // Wait until the actual chapter body is injected, not just the
-      // placeholder. The paginated reader injects via dangerouslySetInnerHTML
-      // — if we decorate the placeholder, React's subsequent innerHTML write
-      // destroys our wrappers.
-      const chapterReady = !!root?.querySelector(
-        "section[role='doc-chapter'], section[role='doc-preface'], section[role='doc-conclusion']",
-      )
-      if (!root || !chapterReady) {
-        attempts += 1
-        if (attempts > 30) return // 30 * 100ms = 3s cap
-        timeoutId = setTimeout(tryDecorate, 100)
-        return
-      }
-
-      // Walk text nodes that aren't already inside a gloss wrapper.
-      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT)
-      const targets: Text[] = []
-      let node = walker.nextNode() as Text | null
-      while (node) {
-        if (node.parentElement?.closest("[data-dec-gloss]")) {
-          node = walker.nextNode() as Text | null
-          continue
-        }
-        if (node.textContent && node.textContent.trim().length > 0) {
-          targets.push(node)
-        }
-        node = walker.nextNode() as Text | null
-      }
-
-      // Build one combined alternation regex, longest phrase first so
-      // "erstwhile" wins over "erst" at the same position. Applying all
-      // phrases in a single pass is important — doing per-phrase
-      // sequential replacements causes later phrases to match inside
-      // earlier phrases' injected attribute markup (e.g. a gloss whose
-      // definition happens to contain another gloss phrase).
-      if (phrases.length === 0) return
-      const sorted = [...phrases].sort((a, b) => b.phrase.length - a.phrase.length)
-      const escapeRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
-      const escapeAttr = (s: string) =>
-        s
-          .replace(/&/g, "&amp;")
-          .replace(/"/g, "&quot;")
-          .replace(/</g, "&lt;")
-          .replace(/>/g, "&gt;")
-      // Word-boundary guards so "wis" doesn't match inside "wise",
-      // "fain" not inside "faint", etc. Using (?<![A-Za-z]) / (?![A-Za-z])
-      // rather than \b because phrases may start or end with punctuation
-      // (e.g. "Ser ") where \b misbehaves. Apostrophes, hyphens, and
-      // spaces inside phrases still match fine.
-      const combinedRe = new RegExp(`(?<![A-Za-z])(${sorted.map((g) => escapeRe(g.phrase)).join("|")})(?![A-Za-z])`, "g")
-      const byPhrase = new Map<string, (typeof sorted)[number]>()
-      for (const g of sorted) if (!byPhrase.has(g.phrase)) byPhrase.set(g.phrase, g)
-
-      for (const text of targets) {
-        const original = text.textContent ?? ""
-        // replace() on a global regex finds all non-overlapping matches;
-        // no guard .test() — that would leave lastIndex stale across
-        // text nodes and cause intermittent misses.
-        combinedRe.lastIndex = 0
-        const decorated = original.replace(combinedRe, (match) => {
-          const g = byPhrase.get(match)
-          if (!g) return match
-          return `<span data-dec-gloss="1" title="${escapeAttr(g.definition)}" style="border-bottom: 1px dotted currentColor; cursor: help;">${match}</span>`
-        })
-        if (decorated !== original && text.parentNode) {
-          const wrapper = document.createElement("span")
-          wrapper.innerHTML = decorated
-          while (wrapper.firstChild) text.parentNode.insertBefore(wrapper.firstChild, text)
-          text.parentNode.removeChild(text)
-        }
-      }
-    }
-
-    // First-attempt delay to let the reader mount.
-    timeoutId = setTimeout(tryDecorate, 150)
-    return () => {
-      cancelled = true
-      if (timeoutId) clearTimeout(timeoutId)
-    }
-  }, [bookId, currentChapter, glossesOn])
 
   if (bookId !== "the-decameron") return null
 
@@ -277,32 +153,12 @@ export function DecameronEnhancements({
         />
       )}
 
-      {/* ── Toggles ────────────────────────────────────────────────── */}
-      <div className="decameron-toggles mt-3 flex flex-wrap items-center gap-3 text-xs">
-        <button
-          type="button"
-          className="rounded border px-2 py-1 opacity-80 hover:opacity-100"
-          onClick={() => {
-            const next = !glossesOn
-            setGlossesOn(next)
-            if (typeof window !== "undefined") {
-              window.localStorage.setItem(LS_GLOSSES, next ? "1" : "0")
-            }
-          }}
-          aria-pressed={glossesOn}
-          title="Tap a dotted-underlined word to see its definition. Payne's translation preserves many archaisms."
-        >
-          {glossesOn ? "✓ " : ""}Vocabulary glosses
-        </button>
-      </div>
-
       {/* ── Edition note, surfaced in front-matter chapters only ───── */}
       {(meta.kind === "proem" || meta.kind === "plague-intro") && (
         <div className="decameron-edition-note mt-4 text-xs opacity-70 leading-relaxed">
           <strong>Edition:</strong> John Payne, 1886 translation, via Standard
           Ebooks. Payne's deliberately archaic register preserves the Latinate
-          shape of Boccaccio's Tuscan but imposes a Victorian surface — tap
-          any dotted-underlined word for a modern gloss.
+          shape of Boccaccio's Tuscan but imposes a Victorian surface.
           {isAuthorIntervention(currentChapter) && (
             <> Day IV's Introduction is rendered here with a distinct amber
               register because it is, uniquely in the work, Boccaccio's

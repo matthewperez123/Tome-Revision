@@ -57,24 +57,31 @@ function SortableItem({
     zIndex: isDragging ? 2 : 1,
   }
 
-  const stateCls =
+  const stateStyle: React.CSSProperties =
     state === "correct"
-      ? "border-emerald-500 bg-emerald-50 dark:bg-emerald-950/30"
+      ? { borderColor: "var(--codex-success)", background: "var(--codex-success-soft)" }
       : state === "wrong"
-        ? "border-rose-500 bg-rose-50 dark:bg-rose-950/30"
-        : "border-stone-300 bg-card"
+        ? { borderColor: "var(--codex-danger)", background: "var(--codex-danger-soft)" }
+        : { borderColor: "var(--codex-border)", background: "var(--card)" }
+
+  const badgeStyle: React.CSSProperties =
+    state === "correct"
+      ? { background: "var(--codex-success)", color: "var(--codex-success-on)" }
+      : state === "wrong"
+        ? { background: "var(--codex-danger)", color: "var(--codex-danger-on)" }
+        : { background: "var(--muted)", color: "var(--muted-foreground)" }
 
   return (
     <div
       ref={setNodeRef}
-      style={style}
-      className={`flex items-center gap-3 rounded-xl border-2 px-3 py-3 ${stateCls} ${
+      style={{ ...style, ...stateStyle, borderRadius: "var(--codex-radius-btn)" }}
+      className={`flex items-center gap-3 border-2 px-4 py-3.5 min-h-[44px] ${
         isDragging ? "shadow-lg scale-[1.02]" : "shadow-sm"
       }`}
     >
       <button
         type="button"
-        className="flex-shrink-0 h-11 w-11 sm:h-8 sm:w-8 -ml-1 rounded-md flex items-center justify-center text-stone-500 hover:text-stone-700 cursor-grab active:cursor-grabbing touch-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400"
+        className="flex-shrink-0 h-11 w-11 sm:h-8 sm:w-8 -ml-1 rounded-md flex items-center justify-center text-muted-foreground hover:text-foreground cursor-grab active:cursor-grabbing touch-none focus-visible:outline-none focus-visible:ring-2 focus-visible:[--tw-ring-color:var(--codex-primary)]"
         aria-label="Drag to reorder"
         {...attributes}
         {...listeners}
@@ -83,13 +90,8 @@ function SortableItem({
       </button>
       <span className="flex-1 font-serif text-ink">{text}</span>
       <span
-        className={`flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold font-sans ${
-          state === "correct"
-            ? "bg-emerald-500 text-white"
-            : state === "wrong"
-              ? "bg-rose-500 text-white"
-              : "bg-stone-200 text-stone-700"
-        }`}
+        className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold font-sans"
+        style={badgeStyle}
         aria-label={`Position ${index + 1}`}
       >
         {state === "correct" ? (
@@ -181,7 +183,8 @@ export function Ordering({
           <Button
             type="button"
             onClick={submit}
-            className="rounded-xl font-semibold"
+            className="codex-pressable min-h-[48px] px-8 font-bold rounded-[var(--codex-radius-btn)]"
+            style={{ background: "var(--codex-primary)", color: "var(--codex-on-primary)", border: "var(--codex-border-w) solid var(--codex-primary)" }}
           >
             Check Order
           </Button>

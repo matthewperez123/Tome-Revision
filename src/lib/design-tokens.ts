@@ -29,18 +29,19 @@ export const hues = {
 
 export const surfaces = {
   white: "#FFFFFF",
-  elevated: "#F9FAFB",
-  recessed: "#F3F4F6",
-  spotlight: "#111827",
+  elevated: "#F8F9FB",
+  recessed: "#F1F3F7",
+  spotlight: "#14171F",
 } as const;
 
-// ── Semantic Colors ──────────────────────────
+// ── Semantic Colors (modern functional palette) ──
 
 export const semantic = {
-  success: "#22C55E",
-  warning: "#F59E0B",
-  error: "#EF4444",
-  accent: "#6366F1",
+  success: "#58CC02",
+  warning: "#F5A623",
+  error: "#FF4B4B",
+  reward: "#FFC800",
+  accent: "#6C63FF",
 } as const;
 
 // ── Typography Scale ─────────────────────────

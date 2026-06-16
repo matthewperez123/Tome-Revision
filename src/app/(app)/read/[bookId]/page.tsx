@@ -18,7 +18,7 @@
 import { useEffect, useState, useRef, useCallback, useMemo } from "react"
 import { useParams, useRouter } from "next/navigation"
 import { AnimatePresence, motion } from "framer-motion"
-import { MessageSquare, BookCheck, Bookmark, Palette, Quote } from "lucide-react"
+import { BookCheck, Palette } from "lucide-react"
 import { toast } from "sonner"
 import { supabase } from "@/lib/supabase"
 import type { Book } from "@/lib/supabase"
@@ -27,13 +27,8 @@ import type { TomeBook } from "@/data/books"
 import type { TomeChapter } from "@/data/chapters"
 // QuizDifficulty import removed — difficulty chosen at trial time (Phase E)
 import { springs } from "@/lib/design-tokens"
-import { getCoverParams } from "@/components/tome/book-cover"
-import { Particles } from "@/components/ui/particles"
 import { Skeleton } from "@/components/ui/skeleton"
 import { ChapterSidebar } from "./chapter-sidebar"
-import { HighlightMenu } from "./highlight-menu"
-import { AnnotationSidebar } from "./annotation-sidebar"
-import { BookmarkPanel } from "./bookmark-panel"
 import { ReaderSettings, type ReaderTheme, type ReaderLayout, type FontSize } from "./reader-settings"
 import { WordTooltipProvider } from "./word-tooltip"
 import { useBookProgress } from "@/components/tome/book-progress-provider"
@@ -54,36 +49,22 @@ import { AuthorLink } from "@/components/tome/author-link"
 import { cn } from "@/lib/utils"
 import { useTheme } from "next-themes"
 import { notifyChapterCompleted, notifyBookCompleted } from "@/lib/notifications"
-import { VirgilDrawer } from "@/components/reader/VirgilDrawer"
-import { getAnnotationsForChapter } from "@/lib/virgil/annotations"
 import { assignCharacterColors, getCharacterColor, type BookColorAssignments } from "@/lib/character-colors"
 import { StructuredEnhancements } from "@/components/reader/structured-enhancements"
 import { VerseEnhancements } from "@/components/reader/verse-enhancements"
-import { CommediaAnnotations } from "@/components/reader/commedia-annotations"
 import { IliadEnhancements } from "@/components/reader/iliad-enhancements"
 import { AeneidEnhancements } from "@/components/reader/aeneid-enhancements"
 import { ParadiseLostEnhancements } from "@/components/reader/paradise-lost-enhancements"
 import { BeowulfEnhancements } from "@/components/reader/beowulf-enhancements"
-import { BeowulfAnnotations } from "@/components/reader/beowulf-annotations"
-import { ParadiseLostAnnotations } from "@/components/reader/paradise-lost-annotations"
 import { DonJuanEnhancements } from "@/components/reader/don-juan-enhancements"
-import { DonJuanAnnotations } from "@/components/reader/don-juan-annotations"
 import { OrlandoFuriosoEnhancements } from "@/components/reader/orlando-furioso-enhancements"
-import { OrlandoFuriosoAnnotations } from "@/components/reader/orlando-furioso-annotations"
-import { FaerieQueeneAnnotations } from "@/components/reader/faerie-queene-annotations"
 import { FaerieQueeneEnhancements } from "@/components/reader/faerie-queene-enhancements"
 import { IdyllsOfTheKingEnhancements } from "@/components/reader/idylls-of-the-king-enhancements"
-import { IdyllsOfTheKingAnnotations } from "@/components/reader/idylls-of-the-king-annotations"
 import { CanterburyTalesEnhancements } from "@/components/reader/canterbury-tales-enhancements"
-import { CanterburyTalesAnnotations } from "@/components/reader/canterbury-tales-annotations"
 import { LeMorteDarthurEnhancements } from "@/components/reader/le-morte-darthur-enhancements"
-import { LeMorteDarthurAnnotations } from "@/components/reader/le-morte-darthur-annotations"
 import { DecameronEnhancements } from "@/components/reader/decameron-enhancements"
-import { DecameronAnnotations } from "@/components/reader/decameron-annotations"
-import { AeneidAnnotations } from "@/components/reader/aeneid-annotations"
-import { OdysseyAnnotations } from "@/components/reader/odyssey-annotations"
-import { IliadAnnotations } from "@/components/reader/iliad-annotations"
 import { CanticleHero } from "@/components/reader/canticle-hero"
+import { ReaderHighlights } from "@/components/reader/reader-highlights"
 
 /** Books that have structured-content enhancements available (glosses,
  *  scholarly annotations, Trials) layered over the standard HTML reader.
@@ -176,8 +157,6 @@ export default function ReaderPage() {
   const [loading, setLoading]         = useState(true)
   const [currentChapter, setCurrentChapter] = useState(0)
   const [sidebarOpen, setSidebarOpen] = useState(true)
-  const [annotationOpen, setAnnotationOpen] = useState(false)
-  const [bookmarkOpen, setBookmarkOpen] = useState(false)
   // Reader uses the global next-themes toggle
   const { theme: resolvedTheme, setTheme: setGlobalTheme } = useTheme()
   const theme: ReaderTheme = (resolvedTheme as ReaderTheme) ?? "dark"
@@ -198,80 +177,6 @@ export default function ReaderPage() {
   const [trialQuestions, setTrialQuestions] = useState<import("@/lib/chapter-questions").ChapterQuestion[]>([])
   const [selectedDifficulty, setSelectedDifficulty] = useState<QuizDifficulty | null>(null)
   const [chapterEndReached, setChapterEndReached] = useState(false)
-
-  // ── Echoes (cross-text annotations) ──
-  // A single master toggle, default OFF, governs whether echo markers
-  // are visible in the chapter. When OFF: every inline ✦ marker is
-  // hidden (via the body[data-annotations-hidden] selector in tome.css)
-  // and any open echo panel is closed. When ON: markers fade in and
-  // become clickable. The user's choice is persisted to localStorage
-  // so the calm default doesn't override an explicit opt-in across
-  // sessions. New key (echoes_visible) is intentionally separate from
-  // the legacy show_annotations / show_echoes keys so the spec's
-  // default-OFF semantic isn't poisoned by old default-ON values.
-  const [echoesVisible, setEchoesVisible] = useState(false)
-  const [activeAnnotationId, setActiveAnnotationId] = useState<string | null>(null)
-
-  // Hydrate echoesVisible from localStorage on mount.
-  useEffect(() => {
-    try {
-      const v = localStorage.getItem("tome:reader:echoes_visible")
-      if (v !== null) setEchoesVisible(v === "true")
-    } catch { /* localStorage may be unavailable in some contexts */ }
-  }, [])
-
-  // Persist + apply the annotations-hidden attribute on <body>. The
-  // attribute drives a global CSS selector in tome.css that hides every
-  // per-book marker class at once, so we don't need each overlay to
-  // know about visibility itself. When echoes are toggled OFF while a
-  // panel is open, close the panel too — no orphan drawers.
-  useEffect(() => {
-    try { localStorage.setItem("tome:reader:echoes_visible", String(echoesVisible)) } catch {}
-    if (typeof document !== "undefined") {
-      if (echoesVisible) document.body.removeAttribute("data-annotations-hidden")
-      else document.body.setAttribute("data-annotations-hidden", "true")
-    }
-    if (!echoesVisible) setActiveAnnotationId(null)
-    return () => {
-      // Clean up when leaving the reader so the attribute doesn't leak
-      // into other pages that don't render markers.
-      if (typeof document !== "undefined") document.body.removeAttribute("data-annotations-hidden")
-    }
-  }, [echoesVisible])
-
-  // Toggle wrapper for marker clicks. The 13+ per-book overlays each
-  // forward marker clicks here as `onOpenAnnotation(id)`. Two things
-  // were broken before:
-  //   1. Direct `setActiveAnnotationId(id)` was a no-op on re-click,
-  //      because the new id matched the current state.
-  //   2. The retry-and-attach pattern in those overlays plus
-  //      StrictMode in dev means the same click can fan out to several
-  //      listeners. A naive `prev => prev === id ? null : id` updater
-  //      composed with multiple queued calls flips the panel an even
-  //      number of times and ends up where it started.
-  // Reading the live state from a ref decouples the toggle decision
-  // from React's batched-updater chain: every call within one event
-  // reads the same committed state and dispatches the same intent, so
-  // duplicate listener invocations collapse to one effective toggle.
-  const activeAnnotationIdRef = useRef<string | null>(null)
-  useEffect(() => { activeAnnotationIdRef.current = activeAnnotationId }, [activeAnnotationId])
-  // The same physical click can fan out to several setState calls in
-  // dev (StrictMode + the per-book overlay's retry-attach pattern can
-  // leave more than one delegated listener on the chapter root). With
-  // multiple calls in one event, the toggle ends up flipping an even
-  // number of times and lands back where it started. A short guard
-  // collapses those to one effective call per real click without
-  // rejecting legitimate rapid clicks across different markers.
-  const lastClickRef = useRef<{ id: string; time: number }>({ id: "", time: 0 })
-  const handleOpenAnnotation = useCallback(
-    (id: string) => {
-      const now = (typeof performance !== "undefined" ? performance.now() : Date.now())
-      if (lastClickRef.current.id === id && now - lastClickRef.current.time < 100) return
-      lastClickRef.current = { id, time: now }
-      setActiveAnnotationId(activeAnnotationIdRef.current === id ? null : id)
-    },
-    []
-  )
 
   // ── Chapter body memo ──
   // Every per-book overlay (commedia-annotations, aeneid-annotations,
@@ -771,11 +676,6 @@ export default function ReaderPage() {
         e.preventDefault()
         if (currentChapter > 0) handleChapterSelect(currentChapter - 1)
       } else if (e.key === "Escape") {
-        // Defer to the echo drawer when one is open — Escape closes the
-        // drawer rather than navigating away. The drawer registers its
-        // own keydown listener that runs alongside this one, so we just
-        // bail out and let it handle the close.
-        if (activeAnnotationIdRef.current) return
         router.back()
       }
     }
@@ -800,10 +700,8 @@ export default function ReaderPage() {
   // Derived values
   // ────────────────────────────────────────────────────
 
-  const coverParams          = getCoverParams(book as Parameters<typeof getCoverParams>[0])
   const totalChapters        = chapters.length || 1
   const chapter              = (chapters[currentChapter] ?? { id: "0", title: getUnitNumber(structuralUnitType, 1) }) as { id: string; title: string }
-  const genreColor           = coverParams.primaryColor
   // Theme colors now come from CSS variables via Tailwind classes.
   // Keeping a simple lookup for inline styles that can't easily use Tailwind.
   const t = {
@@ -893,7 +791,7 @@ export default function ReaderPage() {
         <div
           className="fixed inset-x-0 top-12 z-50 h-0.5 origin-left motion-reduce:transition-none"
           style={{
-            background:  `linear-gradient(90deg, ${genreColor}, ${coverParams.secondaryColor})`,
+            background:  "var(--foreground)",
             transform:   `scaleX(${progressFraction})`,
             transition:  "transform 0.5s var(--tome-ease-scholarly)",
           }}
@@ -922,24 +820,6 @@ export default function ReaderPage() {
           )}
           style={{ backgroundColor: t.bg, color: t.text }}
         >
-          {/* Ambient Particles */}
-          <Particles
-            className="pointer-events-none absolute inset-0 z-0"
-            quantity={25}
-            color={genreColor}
-            ease={80}
-            staticity={60}
-            size={0.4}
-          />
-
-          {/* Cool tint overlay */}
-          <div
-            className="pointer-events-none absolute inset-0 z-0"
-            style={{
-              background: "radial-gradient(ellipse at 50% 30%, rgba(234,179,8,0.015), transparent 70%)",
-            }}
-          />
-
           {/* Reader Toolbar */}
           <div
             className="sticky top-0 z-20 flex shrink-0 items-center justify-between border-b border-border px-4 py-1.5 backdrop-blur-sm bg-background/90"
@@ -956,25 +836,6 @@ export default function ReaderPage() {
               />
             </div>
             <div className="flex items-center gap-1">
-              {/* Echoes master toggle — single source of truth for whether
-                  the chapter shows its inline ✦ markers. Default is OFF
-                  so a fresh chapter reads clean; flipping ON fades in
-                  every echo marker and unlocks click-to-open. Active
-                  state uses laurel gold (#C9A84C), reserved for earned
-                  / active moments per the design rubric. */}
-              <button
-                role="switch"
-                aria-checked={echoesVisible}
-                onClick={() => setEchoesVisible(prev => !prev)}
-                className={cn(
-                  "flex size-7 items-center justify-center rounded-md transition-colors",
-                  echoesVisible ? "text-[#D4A04C]" : "text-muted-foreground hover:opacity-70"
-                )}
-                aria-label={echoesVisible ? "Hide echo markers" : "Show echo markers"}
-                title={echoesVisible ? "Hide echo markers" : "Show echo markers"}
-              >
-                <Quote className="size-3.5" />
-              </button>
               {/* Character color coding toggle — drama books only */}
               {isDrama && (
                 <button
@@ -989,22 +850,6 @@ export default function ReaderPage() {
                   <Palette className="size-3.5" />
                 </button>
               )}
-              <button
-                onClick={() => setAnnotationOpen(!annotationOpen)}
-                className="flex size-7 items-center justify-center rounded-md transition-colors hover:opacity-70"
-                style={{ color: t.muted }}
-                aria-label="Toggle annotations sidebar"
-              >
-                <MessageSquare className="size-3.5" />
-              </button>
-              <button
-                onClick={() => setBookmarkOpen(!bookmarkOpen)}
-                className="flex size-7 items-center justify-center rounded-md transition-colors hover:opacity-70"
-                style={{ color: t.muted }}
-                aria-label="Bookmarks"
-              >
-                <Bookmark className="size-3.5" />
-              </button>
               {/* Reading mode toggle removed — all chapters unlocked */}
               <ReaderSettings
                 theme={theme}
@@ -1066,43 +911,6 @@ export default function ReaderPage() {
                       currentPartId={currentPartId}
                     />
 
-                    {/* Scholarly annotation markers (✦) for the Commedia.
-                        Inserts after the canto HTML renders and routes
-                        clicks to the shared VirgilDrawer. */}
-                    <CommediaAnnotations
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                      onOpenAnnotation={handleOpenAnnotation}
-                    />
-
-                    {/* Aeneid — ✦ annotation markers and V. monogram
-                        authorial-apostrophe markers. Mirror of the
-                        Commedia overlay; only fires for the-aeneid. */}
-                    <AeneidAnnotations
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                      onOpenAnnotation={handleOpenAnnotation}
-                    />
-
-                    {/* Odyssey — ✦ annotation markers + dotted-underline
-                        gloss decorations. Mirror of the Aeneid / Paradise
-                        Lost overlays; only fires for the-odyssey. */}
-                    <OdysseyAnnotations
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                      onOpenAnnotation={handleOpenAnnotation}
-                    />
-
-                    {/* Iliad — ✦ annotation markers + dotted-underline
-                        gloss decorations for flagship books (I, VI, XVI,
-                        XXII, XXIV). Mirror of Odyssey / Aeneid overlays;
-                        only fires for the-iliad. */}
-                    <IliadAnnotations
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                      onOpenAnnotation={handleOpenAnnotation}
-                    />
-
                     {/* Iliad — translation note and faction palette legend.
                         Speaker color coding itself is applied via CSS
                         attribute selectors against baked-in data-iliad-*
@@ -1135,15 +943,6 @@ export default function ReaderPage() {
                       currentChapter={currentChapter}
                     />
 
-                    {/* Paradise Lost — ✦ annotation markers + gloss
-                        decorations. Mirror of the Commedia / Aeneid
-                        overlay; only fires for paradise-lost. */}
-                    <ParadiseLostAnnotations
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                      onOpenAnnotation={handleOpenAnnotation}
-                    />
-
                     {/* Don Juan — Byron's ottava rima counter-epic.
                         Canto header (Roman numeral + one-sentence
                         argument + opening line as epigraph), edition
@@ -1169,20 +968,6 @@ export default function ReaderPage() {
                         by scripts/beowulf/ingest-beowulf-lines.ts as
                         data-beowulf-line / data-beowulf-poem-line /
                         data-beowulf-fitt attributes. */}
-                    {/* Beowulf — ✦ annotation markers against the five
-                        Opus clusters (opening, Grendel fight, mere,
-                        Hrothgar's sermon, dragon+death+lament).
-                        Mirrors ParadiseLostAnnotations. Only active for
-                        bookId === "beowulf". MUST render BEFORE
-                        BeowulfEnhancements so annotation markers are
-                        placed against whole text nodes before the
-                        alliteration pass splits them. */}
-                    <BeowulfAnnotations
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                      onOpenAnnotation={handleOpenAnnotation}
-                    />
-
                     <BeowulfEnhancements
                       bookId={bookId}
                       currentChapter={currentChapter}
@@ -1217,39 +1002,15 @@ export default function ReaderPage() {
                       currentChapter={currentChapter}
                     />
 
-                    {/* Idylls of the King — ✦ annotation markers (glosses
-                        added in Part 5). Mirror of the Paradise Lost /
-                        Aeneid overlay; only fires for idylls-of-the-king.
-                        Anchors match against data-iotk-line-tagged verse
-                        spans. */}
-                    <IdyllsOfTheKingAnnotations
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                      onOpenAnnotation={handleOpenAnnotation}
-                    />
-
                     {/* Le Morte d'Arthur — Caxton's argumentum header,
                         per-book orientation banner (Book VIII = Tristram
                         opens, Book XIII = Grail opens), speaker-color
-                        attribution decoration, a Storylines sidebar
-                        adapted from Orlando Furioso, and a persistent
-                        "vocabulary glosses" toggle (default ON for
-                        Malory only). Only fires for le-morte-darthur. */}
+                        attribution decoration, and a Storylines sidebar
+                        adapted from Orlando Furioso. Only fires for
+                        le-morte-darthur. */}
                     <LeMorteDarthurEnhancements
                       bookId={bookId}
                       currentChapter={currentChapter}
-                    />
-
-                    {/* Le Morte d'Arthur — ✦ annotation markers and
-                        inline archaic-vocabulary glosses (dotted
-                        underline + tooltip). Glosses cover ~116 recurring
-                        Malorisms (wit, worship, hight, orgulous, etc.).
-                        Header/argumentum text is excluded from matching
-                        to avoid false positives inside Caxton's rubrics. */}
-                    <LeMorteDarthurAnnotations
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                      onOpenAnnotation={handleOpenAnnotation}
                     />
 
                     {/* Canterbury Tales — scholarly header chrome for
@@ -1269,65 +1030,15 @@ export default function ReaderPage() {
                       currentChapter={currentChapter}
                     />
 
-                    {/* Canterbury Tales — ✦ annotation markers + Middle
-                        English gloss decorations (dotted-underline model
-                        in Phase 1; replaced by the FacingGlossBlock
-                        two-column layout in Phase 2). Mirrors the
-                        Idylls / Paradise Lost overlay; only fires for
-                        the-canterbury-tales. */}
-                    <CanterburyTalesAnnotations
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                      onOpenAnnotation={handleOpenAnnotation}
-                    />
-
                     {/* The Decameron — chapter-kind-aware header (Proem,
                         Plague Introduction, day openings, tale headers
                         with narrator signature color, Day IV author-
-                        intervention register, Author's Conclusion);
-                        collapsible narrator tracker; vocabulary gloss
-                        decoration pass over Payne's archaic register.
-                        Annotation markers are inserted by the shared
-                        annotation-overlay path via the global
-                        annotations registry. Only active for bookId ===
-                        "the-decameron". */}
+                        intervention register, Author's Conclusion) and a
+                        collapsible narrator tracker. Only active for
+                        bookId === "the-decameron". */}
                     <DecameronEnhancements
                       bookId={bookId}
                       currentChapter={currentChapter}
-                    />
-
-                    {/* Decameron — ✦ annotation markers. Only fires for
-                        the-decameron. Waits for the chapter body to be
-                        injected (section role="doc-chapter" / doc-preface
-                        / doc-conclusion) before running. Glosses are
-                        handled by DecameronEnhancements' own pass. */}
-                    <DecameronAnnotations
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                      onOpenAnnotation={handleOpenAnnotation}
-                    />
-
-                    {/* Orlando Furioso — ✦ markers + gloss decorations.
-                        Mirrors DonJuanAnnotations. Waits for the
-                        enhancements component's stanza-tagging pass
-                        (data-of-stanza) before running so anchor
-                        matching runs against the finalized DOM. */}
-                    <OrlandoFuriosoAnnotations
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                      onOpenAnnotation={handleOpenAnnotation}
-                    />
-
-                    {/* Don Juan — ✦ annotation markers + gloss
-                        decorations. Mirror of the Paradise Lost /
-                        Aeneid / Commedia overlay; only fires for
-                        don-juan. Waits for the enhancement component's
-                        stanza-tagging pass before running so anchor
-                        matching sees a stable DOM. */}
-                    <DonJuanAnnotations
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                      onOpenAnnotation={handleOpenAnnotation}
                     />
 
                     {/* The Faerie Queene — canto header chrome with the
@@ -1341,19 +1052,6 @@ export default function ReaderPage() {
                     <FaerieQueeneEnhancements
                       bookId={bookId}
                       currentChapter={currentChapter}
-                    />
-
-                    {/* The Faerie Queene — ✦ annotation markers.
-                        Mirror of the Orlando Furioso / Don Juan overlay;
-                        only fires for the-faerie-queene. Decorates as
-                        soon as [data-reader-text] has non-placeholder
-                        content. The Letter to Ralegh cluster ships;
-                        canto-level clusters land with subsequent
-                        Opus/Sonnet passes. */}
-                    <FaerieQueeneAnnotations
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                      onOpenAnnotation={handleOpenAnnotation}
                     />
                     <div className="mt-2 h-px w-16" style={{ backgroundColor: t.border }} />
 
@@ -1470,7 +1168,6 @@ export default function ReaderPage() {
                 mode="book"
                 theme={theme}
                 fontSize={fontSize}
-                accentColor={genreColor}
                 onToggleToolbar={() => setSidebarOpen(s => !s)}
                 contentTypeClass={book && "genres" in book ? getContentTypeClass((book as TomeBook).genres) : "content-prose"}
               />
@@ -1478,41 +1175,16 @@ export default function ReaderPage() {
           )}
         </div>
 
-        {/* Annotation Sidebar */}
-        <AnnotationSidebar
-          bookId={bookId}
-          chapterIndex={currentChapter}
-          open={annotationOpen}
-          onClose={() => setAnnotationOpen(false)}
-        />
-
-        {/* Bookmark Panel */}
-        <BookmarkPanel
+        {/* Highlights — text-selection popover (Highlight + Ask Virgil)
+            plus re-render of saved highlights for this book + chapter. */}
+        <ReaderHighlights
           bookId={bookId}
           bookTitle={book.title}
-          isOpen={bookmarkOpen}
-          onClose={() => setBookmarkOpen(false)}
-        />
-
-        {/* Highlight Menu */}
-        <HighlightMenu
-          bookId={bookId}
-          bookTitle={book.title}
-          chapterId={chapter.id}
+          bookAuthor={book.author}
           chapterIndex={currentChapter}
           chapterTitle={chapter.title}
-          onBookmarkAdded={() => setBookmarkOpen(true)}
         />
       </div>
-
-      {/* Virgil Drawer — unified annotations + chat stub. The master
-          echoes toggle gates whether markers are clickable at all, so
-          if this drawer is ever open the cross-references section is
-          relevant by definition; no hideEchoes prop needed. */}
-      <VirgilDrawer
-        annotationId={activeAnnotationId}
-        onClose={() => setActiveAnnotationId(null)}
-      />
     </WordTooltipProvider>
   )
 }

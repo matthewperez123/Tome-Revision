@@ -12,7 +12,6 @@ interface LockedReaderProps {
   onProgress: (pct: number) => void
   onComplete: () => void
   theme?: "light" | "dark"
-  accentColor?: string
 }
 
 /**
@@ -26,7 +25,6 @@ export function LockedReader({
   onProgress,
   onComplete,
   theme = "light",
-  accentColor = "#6366F1",
 }: LockedReaderProps) {
   const [pages, setPages] = useState<string[]>([])
   const [currentPage, setCurrentPage] = useState(0)
@@ -96,7 +94,6 @@ export function LockedReader({
         mode="book"
         theme={theme}
         fontSize={18}
-        accentColor={accentColor}
         onToggleToolbar={() => {}} // No toolbar in lockdown
       />
     </div>

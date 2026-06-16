@@ -6,6 +6,7 @@ import { Target, ChevronRight, BookOpen, ArrowRight, Check } from "lucide-react"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { getAllBookProgress, type BookProgress } from "@/lib/book-progress"
 import { getBook } from "@/lib/content"
+import { BookCoverThumb } from "@/components/tome/book-cover-thumb"
 import type { TomeBook } from "@/data/books"
 
 // Books with quiz content available
@@ -117,9 +118,7 @@ function QuizCard({ entry, highlighted }: { entry: QuizEntry; highlighted?: bool
         highlighted ? "border-[var(--gold-default)]/40 bg-[var(--gold-default)]/5" : "border-border bg-card hover:border-[var(--gold-default)]/30"
       }`}
     >
-      <div className="size-10 rounded-lg bg-[var(--indigo-muted)] flex items-center justify-center shrink-0">
-        <Target className="size-5 text-[var(--indigo-default)]" />
-      </div>
+      <BookCoverThumb book={entry.book} />
       <div className="flex-1 min-w-0">
         <p className="text-sm font-semibold text-foreground truncate">{entry.book.title}</p>
         <p className="text-xs text-muted-foreground">{entry.book.author} &middot; {totalQuizzes} chapter quizzes</p>
