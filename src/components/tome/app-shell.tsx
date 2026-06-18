@@ -12,6 +12,7 @@ import { ErrorBoundary } from "@/components/tome/error-boundary"
 import { VirgilWrapper } from "@/components/tome/virgil/VirgilWrapper"
 import { MobileDock } from "@/components/tome/mobile-dock"
 import { Toaster } from "@/components/ui/sonner"
+import { IntercomMessenger } from "@/components/support/IntercomMessenger"
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
@@ -22,6 +23,9 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     pathname === "/" ||
     pathname === "/readers" ||
     pathname === "/educators" ||
+    pathname === "/virgil" ||
+    pathname === "/pricing" ||
+    pathname === "/faq" ||
     pathname === "/library"
 
   // Landing page has its own navbar — hide app chrome. Marketing surfaces
@@ -37,6 +41,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           <PageTransition>{children}</PageTransition>
         </main>
         <Toaster />
+        <IntercomMessenger />
       </TooltipProvider>
       </BookProgressProvider>
       </TomeEconomyProvider>
@@ -61,6 +66,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           </div>
           <MobileDock />
           <Toaster />
+          <IntercomMessenger />
         </div>
       </SidebarProvider>
     </VirgilWrapper>

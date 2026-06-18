@@ -92,8 +92,10 @@ export default function OnboardingPage() {
       setStepIndex((s) => s + 1)
     } else {
       completeOnboarding()
-      // Sync onboarding data to Supabase (fire-and-forget)
-      syncOnboardingToSupabase().catch(() => {})
+      // Persist to Supabase BEFORE navigating: the middleware gates /dashboard
+      // on the DB `onboarding_completed` column, so a fire-and-forget write
+      // races the redirect and bounces the user back to /onboarding.
+      await syncOnboardingToSupabase().catch(() => {})
       router.push("/dashboard")
     }
   }

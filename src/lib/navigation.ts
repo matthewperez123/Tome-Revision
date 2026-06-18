@@ -67,7 +67,8 @@ export const sidebarNav: NavItem[] = [
   { label: "Timelines", href: "/timelines", icon: History },
   { label: "Seals", href: "/seals", icon: Trophy },
   { label: "Friends", href: "/friends", icon: HeartHandshake },
-  { label: "Community", href: "/social", icon: MessageCircle },
+  { label: "Messages", href: "/messages", icon: MessageCircle },
+  { label: "Community", href: "/social", icon: Globe2 },
   { label: "Shop", href: "/shop", icon: ShoppingBag },
   { label: "Profile", href: "/profile", icon: CircleUser },
 ]

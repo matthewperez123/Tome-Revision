@@ -29,6 +29,36 @@
   --tome-surface-recessed: #F2F0EC;
   --tome-surface-spotlight: #F7F5F1;
 
+  /* ── Living Archive pilot palette ──────────
+     Kept on archive-specific aliases where names collide with the app's
+     existing hue spectrum. */
+  --tome-paper: #F2EAD8;
+  --tome-ink: #21304B;
+  --tome-dusk: #5C7AA6;
+  --tome-pine: #33584C;
+  --tome-mustard: #D9A03C;
+  --tome-butter: #F2CF8B;
+  --tome-berry: #AE4656;
+  --tome-plum: #7C5A77;
+  --tome-lavender: #A9A3CC;
+  --tome-chestnut: #8A5F43;
+  --tome-warm-black: #171B26;
+  --tome-mist: #D8D8D0;
+  --tome-living-paper: #F2EAD8;
+  --tome-living-ink: #21304B;
+  --tome-living-dusk: #5C7AA6;
+  --tome-living-teal: #3E7B72;
+  --tome-living-pine: #33584C;
+  --tome-living-mustard: #D9A03C;
+  --tome-living-butter: #F2CF8B;
+  --tome-living-coral: #E2684A;
+  --tome-living-berry: #AE4656;
+  --tome-living-plum: #7C5A77;
+  --tome-living-lavender: #A9A3CC;
+  --tome-living-chestnut: #8A5F43;
+  --tome-living-warm-black: #171B26;
+  --tome-living-mist: #D8D8D0;
+
   /* ── Semantic ──────────────────────────── */
   --tome-success: #2D9A47;
   --tome-warning: #C8801F;
@@ -236,6 +266,73 @@
 
 .prose-reader span {
   display: inline;
+}
+
+/* ── Pagination integrity ───────────────────────────
+   The JS paginator keeps each block atomic, but these guards keep headings,
+   figures, blockquotes, epigraphs and verse from ever splitting mid-element and
+   prevent single dangling lines. */
+.prose-reader p {
+  orphans: 2;
+  widows: 2;
+}
+.prose-reader h1,
+.prose-reader h2,
+.prose-reader h3,
+.prose-reader h4,
+.prose-reader h5,
+.prose-reader h6,
+.prose-reader figure,
+.prose-reader img,
+.prose-reader blockquote,
+.prose-reader .reader-chapter-header,
+.prose-reader hgroup,
+.content-verse p {
+  break-inside: avoid;
+}
+/* Keep a heading attached to the text that follows it. */
+.prose-reader h1,
+.prose-reader h2,
+.prose-reader h3,
+.prose-reader h4 {
+  break-after: avoid;
+}
+
+/* ── Paginated chapter header ───────────────────────
+   Parity with the scroll reader's React header (page.tsx eyebrow + h1 title +
+   subtitle). Prepended into the paginated content as an atomic <figure> so the
+   first page of each chapter opens with the same chrome. Values mirror scroll:
+   eyebrow = text-xs uppercase muted; title = font-serif text-3xl/600 (Literata,
+   NOT Fraunces — matches scroll); subtitle = text-sm italic muted. */
+.prose-reader .reader-chapter-header {
+  margin: 0 0 2rem;
+  padding: 0;
+}
+.prose-reader .reader-chapter-eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+  text-indent: 0;
+  color: var(--reader-muted);
+}
+.prose-reader .reader-chapter-title {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--reader-ink);
+}
+.prose-reader .reader-chapter-subtitle {
+  margin: 0.25rem 0 0;
+  font-size: 0.875rem;
+  font-style: italic;
+  text-indent: 0;
+  color: var(--reader-muted);
 }
 
 /* ── Drama Formatting — character tables ────────── */
@@ -927,6 +1024,19 @@ mark.tome-highlight {
   -webkit-box-decoration-break: clone;
 }
 
+/* Shared annotations — a classmate's shared passage. Distinct from your own
+ * highlights: no fill, just an accent-colored dotted underline so the
+ * underlying text stays legible and it never reads as your own mark. */
+.prose-reader mark.tome-shared-annotation,
+mark.tome-shared-annotation {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: underline dotted var(--tome-accent, #D4A04C);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
+  cursor: help;
+}
+
 /* Mobile: drama table adjustments */
 @media (max-width: 640px) {
   .prose-reader.content-drama table td:first-child {
@@ -1233,3 +1343,153 @@ mark.tome-highlight {
 .dark .prose-reader .malory-pivot-mark         { color: #F5C675; }
 .dark .prose-reader .malory-storyline-span-note{ color: #A8A29E; }
 .dark .prose-reader .malory-storylines-footer  { color: #A8A29E; }
+
+/* ══════════════════════════════════════════════════════════════════════
+   KINDLE-STYLE READER — surface themes, typography controls, paginated UI
+   Form styling keys off the REAL markup in this repo (role=doc-chapter,
+   hgroup, <table> drama, blockquote>p>span verse). There is no data-epub-type
+   in the content, so no rule depends on it.
+   ══════════════════════════════════════════════════════════════════════ */
+
+/* ── Surface color modes — Day / Night only ─────────────────────────────
+   Applied via [data-reader-theme] on the reading surface. Only colors —
+   never affects pagination measurement. ALL three reading layouts (scroll,
+   single page, two-page spread) descend from this one surface, so flipping
+   the attribute recolors every layout at once with no per-mode forks. Soft
+   ink in both modes (no pure black-on-white or white-on-black) for AA comfort.
+
+   Day = the original light reading appearance — the app's own surface
+   (white), NOT a cream/parchment tint. Sourced from the semantic tokens so it
+   is identical to the pre-e-reader scroll reader.
+   Night = the established warm dark reading surface (gold accent), derived
+   from the existing RUBRIC tokens — no invented brand colors. */
+[data-reader-theme="day"] {
+  --reader-bg: var(--background);
+  --reader-ink: var(--foreground);
+  --reader-muted: var(--muted-foreground);
+  --reader-edge: var(--border);
+  --reader-accent: var(--tome-accent, #6C63FF);
+  --reader-shadow: rgba(0, 0, 0, 0.08);
+}
+[data-reader-theme="night"] {
+  --reader-bg: #1C1914;
+  --reader-ink: #E8DCC8;
+  --reader-muted: #8B7E6A;
+  --reader-edge: rgba(255, 255, 255, 0.08);
+  --reader-accent: #D4A04C;
+  --reader-shadow: rgba(0, 0, 0, 0.5);
+}
+
+/* The reading surface wrapper paints with the theme vars. Smooth crossfade
+   when the theme changes; instant under reduced motion.
+
+   It is also the single source of truth for the reading TYPOGRAPHY tokens.
+   Scroll mode and the paginated (single / spread) surface are both descendants
+   of one `.reader-surface`, so these cascade to both — guaranteeing identical
+   coloring, fonts, spacing, and sizing across modes. Per-mode CSS is limited to
+   LAYOUT (scroll overflow vs. fixed-height columns + page-turn). The concrete
+   values are set inline from the user's reader prefs on the wrapper element;
+   the fallbacks below keep the surface sane if a token is ever absent. */
+.reader-surface {
+  --reader-font-size: 19px;
+  --reader-line-height: 1.8;
+  --reader-measure: 68ch;
+  --reader-pad-x: 2rem;   /* 32px — matches scroll md:px-8 */
+  --reader-pad-y: 4rem;   /* 64px — matches scroll md:py-16 */
+
+  background: var(--reader-bg);
+  color: var(--reader-ink);
+  transition: background-color 0.3s var(--tome-ease-scholarly, ease),
+    color 0.3s var(--tome-ease-scholarly, ease);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reader-surface {
+    transition: none;
+  }
+}
+.reader-surface .prose-reader {
+  color: var(--reader-ink);
+}
+
+/* ── Line length (measure) ──────────────────────────────────────────────
+   Canonical token is --reader-measure (set on .reader-surface from the user's
+   setting); --measure kept as a back-compat fallback. */
+.reader-measure {
+  max-width: var(--reader-measure, var(--measure, 68ch));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── Justification toggle (prose only) ──────────────────────────────────
+   Verse and drama speeches must NEVER justify or hyphenate. */
+.prose-reader.reader-justify p {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+.prose-reader.reader-ragged p {
+  text-align: left;
+  -webkit-hyphens: none;
+  hyphens: none;
+}
+/* Hard guards: verse blocks, drama speech cells, and any blockquote verse
+   stay left-aligned & un-hyphenated even when the prose justify flag is on. */
+.prose-reader.content-verse p,
+.prose-reader.content-drama td p,
+.prose-reader blockquote p {
+  text-align: left !important;
+  -webkit-hyphens: none !important;
+  hyphens: none !important;
+}
+
+/* ── Accessibility reading face ─────────────────────────────────────────
+   Opt-in swap of Literata for the UI sans face (Inter) for readers who find
+   it easier. RUBRIC keeps Literata as the default reading face. */
+.prose-reader.reader-a11y-face {
+  font-family: var(--font-sans, Inter, system-ui, sans-serif);
+}
+
+/* ── Single-page mode paper ─────────────────────────────────────────────
+   One centered page that still reads like a leaf of a book (soft edge +
+   rounded corners), distinct from the two-page spread. */
+.reader-single-paper {
+  background: var(--reader-bg);
+  color: var(--reader-ink);
+  border-radius: 6px;
+  box-shadow: 0 8px 40px var(--reader-shadow), 0 1px 4px var(--reader-shadow);
+}
+
+/* ── Designed title page (front matter) ─────────────────────────────────
+   Rendered in place of the raw titlepage/halftitle markup. */
+.reader-title-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 60vh;
+  gap: 1.25rem;
+  padding: 2rem 1rem;
+}
+.reader-title-page .rtp-title {
+  font-family: var(--font-display, Fraunces, Georgia, serif);
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--reader-ink);
+}
+.reader-title-page .rtp-author {
+  font-family: var(--font-display, Fraunces, Georgia, serif);
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(1rem, 2.4vw, 1.4rem);
+  color: var(--reader-muted);
+}
+.reader-title-page .rtp-rule {
+  width: 64px;
+  height: 2px;
+  background: var(--reader-accent);
+  opacity: 0.6;
+  border-radius: 2px;
+}

@@ -1,0 +1,21 @@
+Use case: historical-scene
+Asset type: Tome app cover-art exploration contact sheet
+Primary request: Create a second polished contact sheet with 8 separate portrait 2:3 textless book-cover tests for classics we have not focused on yet. Use the latest user-provided reference images as the main visual guide: pastel atmospheric painterly scenes, golden haze, teal-blue shadows, moonlit skies, mist, textured aged paper, small narrative figures, luminous water or windows, and modern classics-publisher seriousness. Forget cubism and bright pop color entirely.
+
+Aesthetic name: Pastel Atmospheric Classics.
+Style/medium: soft painterly literary poster illustration, detailed but not busy, misty luminous realism but not photorealistic, refined grain and worn-paper surface. Not cubist, not Art Deco, not 3D.
+Palette: parchment ivory, pale gold, smoky teal, muted blue-gray, dusty lavender, moss green, soft rose dusk, moon cream, tiny restrained ember accents.
+Layout: 4 columns by 2 rows, each cell a distinct vertical cover. No titles, no author names, no logos, no fake text, no labels.
+Composition rules: scenery carries the cover; people appear as small dignified figures or silhouettes within a famous scene; no detailed faces; readable as Tome app thumbnails; one strong scenic motif per cover: manor, road, river, mill, station, market, white dress, moonlit house, or stormy field.
+
+Create these 8 covers:
+1. Tess of the d'Urbervilles: dawn field and distant Wessex hills, a small woman in pale dress on a lane, warm sun breaking through mist, no melodrama.
+2. Far from the Madding Crowd: sheep pasture and storm-lit barn at sunset, tiny shepherd and woman near a gate, golden sky and teal shadows.
+3. The Mill on the Floss: river bend with old mill and willow trees under soft evening light, two small childhood figures on the bank.
+4. North and South: smoky mill town meeting a bright country road, two small figures divided by a bridge, pale gold industrial haze.
+5. Vanity Fair: glowing fairground tents and Regency crowd silhouettes under a lavender-gold sky, one poised woman in small foreground silhouette, no caricature.
+6. David Copperfield: moonlit road from a coastal town toward a warm cottage window, small boy with bundle walking alone, hopeful not grim.
+7. Oliver Twist: misty London alley opening to a golden-lit street, small child silhouette near a lamppost, no menace or grotesque faces.
+8. The Woman in White: moonlit garden path and dark manor, a distant woman in pale dress by a gate, suspenseful but elegant, no horror.
+
+Avoid completely: readable text, letters, watermark, cubism, bright pop palette, photorealism, 3D, Art Deco, gore, bodies, monsters, vulgarity, grotesque imagery, detailed faces, dense ornamental borders, brand-copy layouts.

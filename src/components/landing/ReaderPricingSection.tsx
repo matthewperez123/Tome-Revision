@@ -1,7 +1,14 @@
+import Link from "next/link"
+import { ArrowRight } from "lucide-react"
 import { BlurFade } from "@/components/ui/blur-fade"
+import { READER_TRIAL_COPY, readerPlansForPeriod } from "@/lib/pricing"
 import { PricingCard } from "./PricingCard"
 
+// Teaser only — full plans, billing toggle, and comparison live on /pricing.
+// Numbers are sourced from lib/pricing so they never drift.
 export function ReaderPricingSection() {
+  const plans = readerPlansForPeriod("monthly")
+
   return (
     <section className="bg-muted py-24 px-6 md:px-12">
       <div className="max-w-5xl mx-auto">
@@ -18,62 +25,35 @@ export function ReaderPricingSection() {
 
         <BlurFade delay={0.2} inView>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-            <PricingCard
-              tier="Free"
-              price="$0"
-              cadence="forever"
-              description="Everything you need to start reading the canon."
-              features={[
-                "Access to 20 foundational books",
-                "Virgil annotations in the reader",
-                "Daily Flame and Seal tracking",
-                "Basic Trials after each chapter",
-                "Personal library and progress tracking",
-              ]}
-              ctaLabel="Begin reading"
-              ctaHref="/signup"
-            />
-
-            <PricingCard
-              tier="Pro"
-              price="$9"
-              cadence="per month"
-              description="Unlimited access to the full canon and Virgil's deeper scholarship."
-              features={[
-                "All 256 books across 36 literary traditions",
-                "Unlimited Virgil conversations",
-                "Advanced Trials and Seals",
-                "Custom reading lists and collections",
-                "Offline reading",
-                "Priority support",
-              ]}
-              ctaLabel="Start Pro"
-              ctaHref="/signup?tier=pro"
-              featured
-            />
-
-            <PricingCard
-              tier="Scholar"
-              price="$90"
-              cadence="per year"
-              description="Pro at two months free, for the committed reader."
-              features={[
-                "Everything in Pro",
-                "Two months free versus monthly",
-                "Early access to new books",
-                "Scholar Seal on your profile",
-                "Annual reading review and insights",
-              ]}
-              ctaLabel="Go annual"
-              ctaHref="/signup?tier=scholar"
-            />
+            {plans.map((plan) => {
+              const pricing = plan.monthly!
+              return (
+                <PricingCard
+                  key={plan.id}
+                  tier={plan.name}
+                  price={pricing.price}
+                  cadence={pricing.cadence}
+                  description={plan.description}
+                  features={plan.features}
+                  ctaLabel={plan.ctaLabel}
+                  ctaHref={plan.ctaHref}
+                  featured={plan.featured}
+                />
+              )
+            })}
           </div>
         </BlurFade>
 
         <BlurFade delay={0.3} inView>
-          <p className="text-center text-xs text-muted-foreground mt-8">
-            All plans include a seven-day free trial of Pro. Cancel anytime.
-          </p>
+          <div className="mt-8 text-center">
+            <p className="text-xs text-muted-foreground">{READER_TRIAL_COPY}</p>
+            <Link
+              href="/pricing?for=readers"
+              className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors hover:opacity-80"
+            >
+              Compare all plans <ArrowRight className="size-4" />
+            </Link>
+          </div>
         </BlurFade>
       </div>
     </section>

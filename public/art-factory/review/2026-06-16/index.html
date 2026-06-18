@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tome Art Factory Review - 2026-06-16</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --paper: #f2ead8;
+        --ink: #21304b;
+        --dusk: #5c7aa6;
+        --gold: #d9a03c;
+        --coral: #e2684a;
+        --teal: #3e7b72;
+        --line: rgba(33, 48, 75, 0.16);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--paper);
+        color: var(--ink);
+        font-family:
+          Inter,
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+      }
+
+      main {
+        width: min(1180px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 40px 0 56px;
+      }
+
+      header {
+        display: grid;
+        gap: 12px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 5vw, 4rem);
+        line-height: 0.95;
+        letter-spacing: 0;
+      }
+
+      p {
+        margin: 0;
+        max-width: 760px;
+        color: rgba(33, 48, 75, 0.78);
+        font-size: 1rem;
+        line-height: 1.65;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 8px;
+      }
+
+      .tag {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 6px 10px;
+        background: rgba(255, 255, 255, 0.35);
+        font-size: 0.82rem;
+        font-weight: 700;
+      }
+
+      section {
+        padding-top: 32px;
+      }
+
+      h2 {
+        margin: 0 0 16px;
+        font-size: 1.15rem;
+        letter-spacing: 0;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 18px;
+      }
+
+      figure {
+        margin: 0;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.4);
+      }
+
+      figure.production {
+        background: rgba(33, 48, 75, 0.04);
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        background: rgba(33, 48, 75, 0.06);
+      }
+
+      figcaption {
+        display: grid;
+        gap: 6px;
+        padding: 12px;
+        border-top: 1px solid var(--line);
+      }
+
+      strong {
+        font-size: 0.92rem;
+      }
+
+      small {
+        color: rgba(33, 48, 75, 0.68);
+        font-size: 0.82rem;
+        line-height: 1.45;
+      }
+
+      .notes {
+        display: grid;
+        gap: 10px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.36);
+      }
+
+      .notes ul {
+        margin: 0;
+        padding-left: 20px;
+        color: rgba(33, 48, 75, 0.78);
+        line-height: 1.55;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Tome Art Factory Review</h1>
+        <p>
+          Live calibration batch for the Tome cover and Stoa art engine. The
+          newest direction moves away from the older cream Meridian covers, Art
+          Deco tests, and busy character scenes toward Quiet Scenic Classics:
+          minimal scenery-first covers with pale underlays, one symbolic clue,
+          bright disciplined accents, and quiet UI-safe space.
+        </p>
+        <div class="tags" aria-label="Style tags">
+          <span class="tag">modern minimalism</span>
+          <span class="tag">quiet scenic classics</span>
+          <span class="tag">pale underlay</span>
+          <span class="tag">scenery first</span>
+          <span class="tag">wide UI-safe stoas</span>
+          <span class="tag">no text</span>
+        </div>
+      </header>
+
+      <section aria-labelledby="chronology">
+        <h2 id="chronology">Meridian Chronology References</h2>
+        <div class="grid">
+          <figure>
+            <img src="/art-factory/reference/meridian/meridian-sample-sheet.jpg" alt="Older Meridian Classics cream typographic cover sample sheet" />
+            <figcaption>
+              <strong>Older Repo Meridian Covers</strong>
+              <small>Cream/typographic production line; useful history, but not the requested newer direction.</small>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/art-factory/reference/meridian-marble/meridian-marble-downloads-sheet.jpg" alt="Downloaded May 2025 Meridian minimalist cover samples" />
+            <figcaption>
+              <strong>May 2025 Downloads</strong>
+              <small>Most recent saved cover-like files found locally; still cream/front-cover typography.</small>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/art-factory/reference/meridian-marble/recent-image-exports-sheet.jpg" alt="Recent June 2026 local image exports" />
+            <figcaption>
+              <strong>Recent Image Exports</strong>
+              <small>June 2026 exports were mood/UI assets, not Meridian cover archives.</small>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/art-factory/reference/meridian-marble/may-screenshots-sheet.jpg" alt="May 2026 desktop screenshots checked for cover references" />
+            <figcaption>
+              <strong>May 2026 Screenshots</strong>
+              <small>Checked for newer cover references; mostly Tome app and dashboard screens.</small>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/art-factory/reference/recent-editions/tome-asset-inspirations-upload.png" alt="Recent Tome aesthetic inspiration upload with blue, white, gold mythic scenery" />
+            <figcaption>
+              <strong>Recent Tome Inspiration Upload</strong>
+              <small>Stronger recent direction: blue/white/gold, scenic, high-negative-space, fine-press storybook tone.</small>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section aria-labelledby="calibration">
+        <h2 id="calibration">Calibration Sheets</h2>
+        <div class="grid">
+          <figure>
+            <img src="01-cover-calibration-v1.png" alt="Six first-pass Tome cover concepts" />
+            <figcaption>
+              <strong>01 - Cover Calibration v1</strong>
+              <small>First broad pass across six benchmark books.</small>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="02-stoa-calibration-v1.png" alt="Six first-pass Tome Stoa background concepts" />
+            <figcaption>
+              <strong>02 - Stoa Calibration v1</strong>
+              <small>Strong world entry, but too painterly and detailed.</small>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="03-cover-calibration-v2.png" alt="Six refined Tome cover concepts" />
+            <figcaption>
+              <strong>03 - Cover Calibration v2</strong>
+              <small>Flatter and more app-native; best current cover direction.</small>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="04-stoa-calibration-v2.png" alt="Six refined Tome Stoa background concepts" />
+            <figcaption>
+              <strong>04 - Stoa Calibration v2</strong>
+              <small>Better UI quiet zones and closer to the cover language.</small>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section aria-labelledby="meridian-signal">
+        <h2 id="meridian-signal">Meridian Signal Covers - New Template Proof</h2>
+        <div class="grid">
+          <figure class="production">
+            <img src="35-meridian-signal-covers-white-underlay-v2.png" alt="Eight flat symbolic Tome cover tests inspired by recent Meridian white-underlay covers" />
+            <figcaption>
+              <strong>35 - White Underlay Symbols v2</strong>
+              <small>Current style-lock candidate: recent Meridian white-underlay discipline, flat symbolic vignettes, restrained color, low detail.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="34-meridian-signal-covers-template-proof.png" alt="Eight scenic symbolic Tome cover tests inspired by Meridian and Quiet Scenic Classics" />
+            <figcaption>
+              <strong>34 - Scenic Signal Proof v1</strong>
+              <small>Useful scenic variant, but more painterly and detailed than the current white-underlay target.</small>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section aria-labelledby="production">
+        <h2 id="production">Production Tests</h2>
+        <div class="grid">
+          <figure class="production">
+            <img src="05-macbeth-cover-production-test.png" alt="Macbeth production test cover" />
+            <figcaption>
+              <strong>05 - Macbeth Cover</strong>
+              <small>Best style-lock candidate: iconic, readable, and app-like.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="06-macbeth-stoa-production-test.png" alt="Macbeth production test Stoa background" />
+            <figcaption>
+              <strong>06 - Macbeth Stoa</strong>
+              <small>Pairs well with cover; keep the left-object/right-quiet layout.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="07-moby-dick-cover-production-test.png" alt="Moby-Dick production test cover" />
+            <figcaption>
+              <strong>07 - Moby-Dick Cover</strong>
+              <small>Strong whale-as-symbol system; good thumbnail clarity.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="08-moby-dick-stoa-production-test.png" alt="Moby-Dick production test Stoa background" />
+            <figcaption>
+              <strong>08 - Moby-Dick Stoa</strong>
+              <small>Good world scale; preserve broad sea/sky UI space.</small>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section aria-labelledby="cover-tests">
+        <h2 id="cover-tests">Archived 25 Cover Tests - Superseded Art Deco System</h2>
+        <div class="grid">
+          <figure class="production">
+            <img src="09-art-deco-cover-tests-epic-canon.png" alt="Five Art Deco Tome cover tests for epic and classical canon books" />
+            <figcaption>
+              <strong>09 - Epic Canon</strong>
+              <small>Iliad, Odyssey, Aeneid, Divine Comedy, Paradise Lost.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="10-art-deco-cover-tests-shakespeare.png" alt="Five Art Deco Tome cover tests for Shakespeare plays" />
+            <figcaption>
+              <strong>10 - Shakespeare</strong>
+              <small>Hamlet, Macbeth, Julius Caesar, Othello, The Tempest.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="11-art-deco-cover-tests-gothic.png" alt="Five Art Deco Tome cover tests for gothic and psychological novels" />
+            <figcaption>
+              <strong>11 - Scholarly Gothic</strong>
+              <small>Frankenstein, Dracula, Dorian Gray, Jane Eyre, Wuthering Heights.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="12-art-deco-cover-tests-adventure.png" alt="Five Art Deco Tome cover tests for adventure classics" />
+            <figcaption>
+              <strong>12 - Adventure Canon</strong>
+              <small>Moby-Dick, Treasure Island, Monte Cristo, Don Quixote, Ben-Hur.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="13-art-deco-cover-tests-social-modern.png" alt="Five Art Deco Tome cover tests for social and modern classics" />
+            <figcaption>
+              <strong>13 - Social / Modern</strong>
+              <small>Pride and Prejudice, Alice, Gatsby, Heart of Darkness, Jungle Book.</small>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section aria-labelledby="quiet-scenic">
+        <h2 id="quiet-scenic">Quiet Scenic Classics - Active Direction</h2>
+        <div class="grid">
+          <figure class="production">
+            <img src="24-quiet-scenic-classics-cover-tests-v1.png" alt="Eight quiet scenic minimalist Tome cover tests" />
+            <figcaption>
+              <strong>24 - Quiet Scenic Classics v1</strong>
+              <small>First scenery-first alternative: calmer, less detailed, less people-driven, and book-cover plausible.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="25-quiet-scenic-classics-cover-tests-v2.png" alt="Eight stricter ultra-minimal quiet scenic Tome cover tests" />
+            <figcaption>
+              <strong>25 - Quiet Scenic Classics v2</strong>
+              <small>Current best direction: flatter fields, more negative space, tiny/no figures, no grotesque imagery.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="26-quiet-scenic-classics-expansion-stage-adventure.png" alt="Eight quiet scenic stage, adventure, and social classic cover tests" />
+            <figcaption>
+              <strong>26 - Stage / Adventure Expansion</strong>
+              <small>Hamlet, Caesar, Othello, Tempest, Don Quixote, Treasure Island, Alice, Gatsby.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="27-quiet-scenic-classics-expansion-gothic-modern.png" alt="Eight quiet scenic gothic and modern classic cover tests" />
+            <figcaption>
+              <strong>27 - Gothic / Modern Expansion</strong>
+              <small>Shows the darker branch can stay safe: no monsters, gore, skulls, or detailed faces.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="28-quiet-scenic-classics-expansion-bright-pastoral.png" alt="Eight brighter quiet scenic pastoral and social classic cover tests" />
+            <figcaption>
+              <strong>28 - Bright Pastoral Expansion</strong>
+              <small>Warmer app-facing branch for domestic, pastoral, children's, and speculative classics.</small>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section aria-labelledby="marble-redo">
+        <h2 id="marble-redo">Archived Modern Marble Scene Attempts</h2>
+        <div class="grid">
+          <figure class="production">
+            <img src="20-modern-marble-scene-cover-tests-v1.png" alt="Eight modern minimalist white marble Tome cover tests" />
+            <figcaption>
+              <strong>20 - Marble Scene Covers v1</strong>
+              <small>First redo after chronology review: textless, scene-led, white-marble base, no Art Deco.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="21-modern-marble-scene-cover-tests-v2.png" alt="Twelve brighter modern minimalist white marble Tome cover tests" />
+            <figcaption>
+              <strong>21 - Marble Scene Covers v2</strong>
+              <small>Better app direction: stronger silhouettes, brighter accents, more consistent negative space.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="22-classical-scene-collage-cover-tests-v1.png" alt="Twelve classical scenery collage Tome cover tests" />
+            <figcaption>
+              <strong>22 - Classical Scene Collage v1</strong>
+              <small>More Penguin/Oxford-like scene seriousness; still slightly too painterly and detailed.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="23-classical-scene-cubist-cover-tests-v2.png" alt="Eight simplified cubist classical scene Tome cover tests" />
+            <figcaption>
+              <strong>23 - Cubist Scene Covers v2</strong>
+              <small>Useful comparison, but too character/scene-heavy for the quieter scenic direction.</small>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section aria-labelledby="finalists">
+        <h2 id="finalists">Individual Finalist Covers</h2>
+        <div class="grid">
+          <figure class="production">
+            <img src="14-finalist-divine-comedy-cover.png" alt="The Divine Comedy finalist Art Deco Tome cover" />
+            <figcaption>
+              <strong>14 - The Divine Comedy</strong>
+              <small>Strongest poster-system proof: vertical ascent, three realms, scholarly structure.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="15-finalist-macbeth-cover-art-deco.png" alt="Macbeth finalist Art Deco Tome cover" />
+            <figcaption>
+              <strong>15 - Macbeth</strong>
+              <small>Best theatrical cover language: crown, dagger, branch columns, stage threshold.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="16-finalist-frankenstein-cover.png" alt="Frankenstein finalist Art Deco Tome cover" />
+            <figcaption>
+              <strong>16 - Frankenstein</strong>
+              <small>Scientific and alpine rather than monster-coded; needs one simplification pass.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="17-finalist-count-of-monte-cristo-cover.png" alt="The Count of Monte Cristo finalist Art Deco Tome cover" />
+            <figcaption>
+              <strong>17 - Monte Cristo</strong>
+              <small>Excellent prison/sea/chain hierarchy; elegant adventure-canon direction.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="18-finalist-great-gatsby-cover.png" alt="The Great Gatsby finalist Art Deco Tome cover" />
+            <figcaption>
+              <strong>18 - The Great Gatsby</strong>
+              <small>Period-sensitive Art Deco without copying the famous face/eyes imagery.</small>
+            </figcaption>
+          </figure>
+          <figure class="production">
+            <img src="19-finalist-jane-eyre-cover.png" alt="Jane Eyre finalist Art Deco Tome cover" />
+            <figcaption>
+              <strong>19 - Jane Eyre</strong>
+              <small>Emotionally strong and literary; next pass should reduce leafy detail.</small>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section aria-labelledby="notes">
+        <h2 id="notes">Current Aesthetic Read</h2>
+        <div class="notes">
+          <p>The current direction is Quiet Scenic Classics: minimal literary landscapes and architectural thresholds on pale paper / marble-white underlays. The Art Deco and character-heavy scene explorations are now superseded.</p>
+          <ul>
+            <li>Use Penguin/Oxford-like canonical seriousness for motif selection, without copying their layouts or branding.</li>
+            <li>Build covers around scenery, horizons, buildings, roads, seas, gates, windows, moons, stars, and one symbolic clue.</li>
+            <li>Keep people absent or tiny; use them only as scale marks, with no detailed faces or dramatic bodies.</li>
+            <li>Use 3-5 large flat shapes, one warm accent, and strong blank title-safe space.</li>
+            <li>Keep covers textless for Tome, with large calm negative space for mobile readability.</li>
+            <li>Use pale paper / marble-white / warm ivory underlay instead of cream parchment dominance.</li>
+            <li>Use bright disciplined accents and avoid beige drift, purple cast, and dark monotone palettes.</li>
+            <li>Avoid vulgarity, grotesque imagery, gore, monsters, Art Deco, photorealism, 3D, ornate frames, and fake typography.</li>
+            <li>Use Stoa backgrounds as left-weighted symbolic worlds with large quiet UI zones.</li>
+            <li>Use sheets 25-28 as the current reference family, then make individual scenic finalists and map approved assets into Tome book records.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

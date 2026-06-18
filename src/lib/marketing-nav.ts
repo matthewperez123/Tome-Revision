@@ -1,0 +1,96 @@
+/**
+ * Single source of truth for the MARKETING navigation + footer (LandingNav,
+ * its mobile menu, and LandingFooter) so those links never drift. This is
+ * separate from `navigation.ts`, which drives the authenticated app sidebar
+ * and dock. Routes stay /readers and /educators; only the labels read
+ * "For Students" / "For Teachers" per the site IA.
+ */
+
+export interface NavLink {
+  label: string
+  href: string
+}
+
+/** Primary nav (and mobile menu) — kept deliberately short. */
+export const PRIMARY_NAV: NavLink[] = [
+  { label: "For Students", href: "/readers" },
+  { label: "For Teachers", href: "/educators" },
+  { label: "Library", href: "/library" },
+  { label: "Virgil", href: "/virgil" },
+  { label: "Pricing", href: "/pricing" },
+]
+
+export const AUTH_LINKS = {
+  signIn: { label: "Sign in", href: "/login" },
+  signUp: { label: "Sign up", href: "/signup" },
+} as const
+
+/**
+ * Marketing routes that suppress the Beta superscript on the wordmark so it
+ * reads cleanly on hero chrome. Authenticated surfaces keep the indicator.
+ */
+export const LANDING_PATHS = new Set<string>([
+  "/",
+  "/readers",
+  "/educators",
+  "/virgil",
+  "/library",
+  "/pricing",
+  "/faq",
+])
+
+/**
+ * Footer items resolve to one of three kinds so we never render a
+ * fake-clickable dead link:
+ *  - `href`   → a real route or in-page anchor
+ *  - `action: "support"` → opens the Intercom messenger (or mailto fallback)
+ *  - neither  → plain label for a surface that doesn't exist yet
+ */
+export type FooterItem =
+  | { label: string; href: string }
+  | { label: string; action: "support" }
+  | { label: string }
+
+export interface FooterColumn {
+  heading: string
+  items: FooterItem[]
+}
+
+export const FOOTER_COLUMNS: FooterColumn[] = [
+  {
+    heading: "Product",
+    items: [
+      { label: "Library", href: "/library" },
+      { label: "Virgil", href: "/virgil" },
+      { label: "Trials", href: "/quizzes" },
+      { label: "Authors", href: "/authors" },
+    ],
+  },
+  {
+    heading: "For Teachers",
+    items: [
+      { label: "Classroom", href: "/educators" },
+      { label: "Gradebook", href: "/educators#gradebook" },
+      { label: "Curriculum", href: "/educators#curriculum" },
+      { label: "Parent Directory", href: "/educators#parent-directory" },
+    ],
+  },
+  {
+    heading: "Resources",
+    items: [
+      { label: "FAQ", href: "/faq" },
+      { label: "Support", action: "support" },
+      { label: "Getting Started", href: "/faq#readers" },
+      { label: "Accessibility" },
+    ],
+  },
+  {
+    heading: "Company",
+    items: [
+      { label: "About", href: "/" },
+      { label: "Contact", action: "support" },
+      { label: "Privacy" },
+      { label: "Terms" },
+    ],
+  },
+]

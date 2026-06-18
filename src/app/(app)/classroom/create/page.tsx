@@ -14,8 +14,7 @@ import { motion } from "framer-motion"
 import { GraduationCap, Copy, Check, ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { createClient } from "@/lib/supabase/client"
-import { generateJoinCode } from "@/lib/classroom-utils"
+import { createClassroom } from "@/lib/actions/classrooms"
 import { useAuth } from "@/hooks/use-auth"
 import Link from "next/link"
 
@@ -58,31 +57,27 @@ export default function CreateClassroomPage() {
     setError(null)
 
     try {
-      const supabase = createClient()
-      const joinCode = generateJoinCode()
+      // Route through the server action: it bootstraps the owner
+      // classroom_members row (RLS can't create the first owner row from the
+      // browser) and guarantees a unique join code. A direct client insert
+      // would orphan the classroom — no membership row means it never shows
+      // up in the dashboard, which queries classroom_members.
+      const result = await createClassroom({
+        name: name.trim(),
+        description: description.trim() || undefined,
+        subject: subject || undefined,
+        gradeLevel: gradeLevel || undefined,
+        maxStudents,
+        leaderboardEnabled,
+      })
 
-      const { data, error: insertError } = await supabase
-        .from("classrooms")
-        .insert({
-          teacher_id: user.id,
-          name: name.trim(),
-          description: description.trim() || null,
-          subject: subject || null,
-          grade_level: gradeLevel || null,
-          join_code: joinCode,
-          max_students: maxStudents,
-          leaderboard_enabled: leaderboardEnabled,
-        })
-        .select("id, join_code")
-        .single()
-
-      if (insertError) {
-        setError(insertError.message)
+      if (!result.ok) {
+        setError(result.error)
         return
       }
 
-      setCreatedCode(data.join_code)
-      setCreatedId(data.id)
+      setCreatedCode(result.data.joinCode)
+      setCreatedId(result.data.id)
     } catch {
       setError("Failed to create classroom")
     } finally {

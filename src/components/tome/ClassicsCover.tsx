@@ -1,5 +1,9 @@
 "use client"
 
+import Image from "next/image"
+import { useMemo, useState } from "react"
+import { getBookCoverArt, type BookCoverArt } from "@/data/cover-art"
+import { getTomeGeneratedCoverPaths } from "@/data/generated/tome-generated-cover-paths"
 import { cn } from "@/lib/utils"
 
 // ── Tradition band colors ───────────────────────────────────────────────────
@@ -36,6 +40,36 @@ function getFallbackGradient(
   accent: string
 ): string {
   return `linear-gradient(160deg, ${secondary} 0%, ${primary} 45%, ${accent} 100%)`
+}
+
+function getWorkspaceCoverPath(src?: string): string | undefined {
+  if (!src?.startsWith("/covers/museum/")) return undefined
+  return src.replace("/covers/museum/", "/covers/covers/museum/")
+}
+
+function getCoverImageSources(bookId: string, art?: BookCoverArt): string[] {
+  const sources: string[] = []
+  const push = (src?: string) => {
+    if (src && !sources.includes(src)) sources.push(src)
+  }
+
+  const tomeGeneratedCover = getTomeGeneratedCoverPaths(bookId)
+  push(tomeGeneratedCover?.image)
+  push(tomeGeneratedCover?.thumbnail)
+
+  if (!art) return sources
+
+  push(getWorkspaceCoverPath(art.localPath))
+  push(getWorkspaceCoverPath(art.localThumbnailPath))
+  push(art.localPath)
+  push(art.localThumbnailPath)
+  push(`/covers/covers/museum/${bookId}.jpg`)
+  push(`/covers/covers/museum/${bookId}.webp`)
+  push(`/covers/covers/museum/thumbs/${bookId}.jpg`)
+  push(art.imageUrl)
+  push(art.thumbnailUrl)
+
+  return sources
 }
 
 // ── Tradition SVG motifs for fallback covers ───────────────────────────────
@@ -138,6 +172,9 @@ export function ClassicsCover({
 }: ClassicsCoverProps) {
   const bandColor = getBandColor(tradition)
   const accentGold = "#C9A84C"
+  const coverArt = getBookCoverArt(bookId)
+  const imageSources = useMemo(() => getCoverImageSources(bookId, coverArt), [bookId, coverArt])
+  const [imageSourceState, setImageSourceState] = useState({ bookId, index: 0 })
 
   const containerStyle: React.CSSProperties = {
     aspectRatio,
@@ -147,6 +184,11 @@ export function ClassicsCover({
 
   const motifSvg = getTraditionMotif(tradition, fallbackColors.primary, fallbackColors.accent)
   const fallbackGradient = getFallbackGradient(fallbackColors.primary, fallbackColors.secondary, fallbackColors.accent)
+  const imageSourceIndex = imageSourceState.bookId === bookId ? imageSourceState.index : 0
+  const coverImageSrc = imageSourceIndex < imageSources.length ? imageSources[imageSourceIndex] : undefined
+  const coverImageAlt = coverArt
+    ? `${title} cover artwork: ${coverArt.title}${coverArt.artist ? ` by ${coverArt.artist}` : ""}`
+    : `${title} cover`
 
   return (
     <div
@@ -170,6 +212,25 @@ export function ClassicsCover({
           <g dangerouslySetInnerHTML={{ __html: motifSvg }} />
         </svg>
       </div>
+
+      {coverImageSrc && (
+        <Image
+          key={coverImageSrc}
+          src={coverImageSrc}
+          alt={coverImageAlt}
+          fill
+          priority={priority}
+          sizes="(max-width: 640px) 38vw, (max-width: 1024px) 22vw, 220px"
+          className="absolute inset-0 z-[2] h-full w-full object-cover"
+          unoptimized={coverImageSrc.startsWith("/")}
+          onError={() => {
+            setImageSourceState((current) => ({
+              bookId,
+              index: Math.min((current.bookId === bookId ? current.index : 0) + 1, imageSources.length),
+            }))
+          }}
+        />
+      )}
 
       {!hideBand && (
         <>

@@ -6,9 +6,9 @@ import { motion } from "framer-motion"
 import { LogIn, Check, AlertTriangle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
 import { isValidJoinCode } from "@/lib/classroom-utils"
+import { lookupClassroomByCode, joinClassroomByCode } from "@/lib/actions/classrooms"
 import Link from "next/link"
 
 export default function JoinClassroomPage() {
@@ -29,21 +29,18 @@ export default function JoinClassroomPage() {
     }
 
     setError(null)
-    const supabase = createClient()
 
-    const { data } = await supabase
-      .from("classrooms")
-      .select("id, name, subject")
-      .eq("join_code", normalized)
-      .single()
-
-    if (!data) {
+    // The classrooms SELECT policy only returns rooms you already belong to,
+    // so previewing a room by its code has to go through the server action
+    // (admin-backed lookup).
+    const result = await lookupClassroomByCode(normalized)
+    if (!result.ok) {
       setError("Classroom not found. Check the code and try again.")
       return
     }
 
-    setClassroomName(data.name)
-    setClassroomId(data.id)
+    setClassroomName(result.data.name)
+    setClassroomId(result.data.id)
   }, [code])
 
   const handleJoin = useCallback(async () => {
@@ -51,37 +48,21 @@ export default function JoinClassroomPage() {
     setJoining(true)
     setError(null)
 
-    const supabase = createClient()
-
-    // Check if already a member
-    const { data: existing } = await supabase
-      .from("classroom_members")
-      .select("id")
-      .eq("classroom_id", classroomId)
-      .eq("student_id", user.id)
-      .single()
-
-    if (existing) {
-      router.push(`/classroom/${classroomId}`)
-      return
-    }
-
-    const { error: insertError } = await supabase
-      .from("classroom_members")
-      .insert({
-        classroom_id: classroomId,
-        student_id: user.id,
-      })
-
-    if (insertError) {
-      setError(insertError.message)
+    const result = await joinClassroomByCode(code.trim().toUpperCase())
+    if (!result.ok) {
+      // Already-enrolled users land here too — send them straight in.
+      if (/already/i.test(result.error)) {
+        router.push(`/classroom/${classroomId}`)
+        return
+      }
+      setError(result.error)
       setJoining(false)
       return
     }
 
     setJoined(true)
-    setTimeout(() => router.push(`/classroom/${classroomId}`), 1500)
-  }, [user, classroomId, router])
+    setTimeout(() => router.push(`/classroom/${result.data.classroomId}`), 1500)
+  }, [user, classroomId, code, router])
 
   if (joined) {
     return (

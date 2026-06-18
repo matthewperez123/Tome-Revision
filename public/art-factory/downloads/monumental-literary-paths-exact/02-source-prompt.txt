@@ -1,0 +1,18 @@
+Use case: stylized-concept
+Asset type: Tome app book cover exploration contact sheet
+Primary request: Create a second polished contact sheet with 8 separate portrait 2:3 textless classic-book cover tests. Use the eight user-provided reference images in this chat only as visual style references: monumental scenery, tiny relevant figures, large calm negative space, warm cream aged paper, ink navy/deep teal/mustard palette, tiny coral accents, grainy screenprint texture, scholarly classics-publisher seriousness. This second sheet should be slightly more modern-minimal and less detailed than the prior one: larger flat masses, fewer small motifs, stronger silhouette, clearer thumbnail read.
+Aesthetic name: Monumental Literary Paths, Minimal Variant.
+Layout: 4 columns by 2 rows, each cell a distinct vertical cover with clean spacing between covers. No titles, no author names, no logos, no fake text, no frame labels.
+Style/medium: modern minimalist literary poster illustration, flat editorial shapes, restrained cubist compression, matte risograph/screenprint grain; not photorealistic, not 3D, not Art Deco.
+Composition rules for every cover: one huge scenic/architectural symbol dominates; one path, road, window, gate, moon, sea line, mountain, tower, or light source guides the eye; people are tiny iconic silhouettes only; no detailed faces; safe, elegant, app-readable.
+Color palette: warm ivory paper, deep ink navy, dark teal, weathered blue, mustard/ochre, one small coral/red accent.
+Covers to create:
+1. Hamlet: Elsinore castle as a dark block against sea and moon, tiny figure on a battlement, no skull.
+2. Jane Eyre: vast moor and distant Thornfield with one warm window, tiny woman on a pale path, wind-shaped tree.
+3. Wuthering Heights: dark house on a hill, sweeping teal moor, enormous blank sky/moon, one tiny figure in wind.
+4. Dracula: castle ridge and winding road under a huge moon, tiny carriage/lamp, no vampire, no bats, no blood.
+5. The Count of Monte Cristo: island fortress rising from dark sea, tiny boat and lit prison window, coral lantern accent.
+6. Treasure Island: tropical cove simplified into three flat shapes, ship silhouette, compass-like ochre sun, no skulls.
+7. Alice's Adventures in Wonderland: hedge wall and tiny door, winding garden path, small gold key accent, no character crowd.
+8. The Great Gatsby: dark bay, distant mansion lights, single green-gold light across water, tiny pier silhouette.
+Avoid: readable text, letters, watermarks, photoreal faces, grotesque imagery, gore, monsters, vulgarity, dense decorative detail, ornate frames, branded Penguin or Oxford layouts, purple cast, beige-only palette.

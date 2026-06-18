@@ -1,0 +1,512 @@
+{
+  "generatedAt": "2026-06-18T20:05:17.117Z",
+  "style": "Monumental Literary Paths v1",
+  "sourceDir": "public/covers/tome/source",
+  "artDir": "public/art-factory/generated/monumental-literary-paths-v1",
+  "overwrite": false,
+  "count": 48,
+  "generatedCount": 40,
+  "skippedExistingCount": 8,
+  "reviewSheetPath": "public/art-factory/generated/monumental-literary-paths-v1/review-sheet.jpg",
+  "publicReviewSheetPath": "/art-factory/generated/monumental-literary-paths-v1/review-sheet.jpg",
+  "palettes": [
+    "ochrePlain",
+    "inkSea",
+    "alpineBlue",
+    "cypressEstate",
+    "moonCastle",
+    "stormMoor",
+    "oxbloodCity",
+    "frostRussia",
+    "emberNight",
+    "mossGarden",
+    "mineralTeal",
+    "plumDusk",
+    "roseFog",
+    "slateGold",
+    "lampBlack",
+    "saffronJade"
+  ],
+  "entries": [
+    {
+      "bookId": "don-quixote",
+      "title": "Don Quixote",
+      "palette": "ochrePlain",
+      "motif": "windmills",
+      "celestial": "sun",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/don-quixote.png",
+      "publicSourcePath": "/covers/tome/source/don-quixote.png"
+    },
+    {
+      "bookId": "the-divine-comedy",
+      "title": "The Divine Comedy",
+      "palette": "alpineBlue",
+      "motif": "terracedMountain",
+      "celestial": "star",
+      "status": "skipped-existing",
+      "sourcePath": "public/covers/tome/source/the-divine-comedy.png",
+      "publicSourcePath": "/covers/tome/source/the-divine-comedy.png"
+    },
+    {
+      "bookId": "the-odyssey",
+      "title": "The Odyssey",
+      "palette": "inkSea",
+      "motif": "moonSea",
+      "celestial": "moon",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/the-odyssey.png",
+      "publicSourcePath": "/covers/tome/source/the-odyssey.png"
+    },
+    {
+      "bookId": "the-iliad",
+      "title": "The Iliad",
+      "palette": "roseFog",
+      "motif": "shoreWall",
+      "celestial": "sun",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/the-iliad.png",
+      "publicSourcePath": "/covers/tome/source/the-iliad.png"
+    },
+    {
+      "bookId": "macbeth",
+      "title": "Macbeth",
+      "palette": "moonCastle",
+      "motif": "battlement",
+      "celestial": "moon",
+      "status": "skipped-existing",
+      "sourcePath": "public/covers/tome/source/macbeth.png",
+      "publicSourcePath": "/covers/tome/source/macbeth.png"
+    },
+    {
+      "bookId": "frankenstein",
+      "title": "Frankenstein",
+      "palette": "alpineBlue",
+      "motif": "alpineLaboratory",
+      "celestial": "lightning",
+      "status": "skipped-existing",
+      "sourcePath": "public/covers/tome/source/frankenstein.png",
+      "publicSourcePath": "/covers/tome/source/frankenstein.png"
+    },
+    {
+      "bookId": "moby-dick",
+      "title": "Moby-Dick",
+      "palette": "inkSea",
+      "motif": "whaleCurve",
+      "celestial": "none",
+      "status": "skipped-existing",
+      "sourcePath": "public/covers/tome/source/moby-dick.png",
+      "publicSourcePath": "/covers/tome/source/moby-dick.png"
+    },
+    {
+      "bookId": "pride-and-prejudice",
+      "title": "Pride and Prejudice",
+      "palette": "cypressEstate",
+      "motif": "estateRoad",
+      "celestial": "sun",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/pride-and-prejudice.png",
+      "publicSourcePath": "/covers/tome/source/pride-and-prejudice.png"
+    },
+    {
+      "bookId": "hamlet",
+      "title": "Hamlet",
+      "palette": "moonCastle",
+      "motif": "elsinore",
+      "celestial": "moon",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/hamlet.png",
+      "publicSourcePath": "/covers/tome/source/hamlet.png"
+    },
+    {
+      "bookId": "jane-eyre",
+      "title": "Jane Eyre",
+      "palette": "stormMoor",
+      "motif": "moorHouse",
+      "celestial": "window",
+      "status": "skipped-existing",
+      "sourcePath": "public/covers/tome/source/jane-eyre.png",
+      "publicSourcePath": "/covers/tome/source/jane-eyre.png"
+    },
+    {
+      "bookId": "wuthering-heights",
+      "title": "Wuthering Heights",
+      "palette": "stormMoor",
+      "motif": "moorRidge",
+      "celestial": "moon",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/wuthering-heights.png",
+      "publicSourcePath": "/covers/tome/source/wuthering-heights.png"
+    },
+    {
+      "bookId": "dracula",
+      "title": "Dracula",
+      "palette": "emberNight",
+      "motif": "gothicRoad",
+      "celestial": "moon",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/dracula.png",
+      "publicSourcePath": "/covers/tome/source/dracula.png"
+    },
+    {
+      "bookId": "the-count-of-monte-cristo",
+      "title": "The Count of Monte Cristo",
+      "palette": "inkSea",
+      "motif": "islandFortress",
+      "celestial": "window",
+      "status": "skipped-existing",
+      "sourcePath": "public/covers/tome/source/the-count-of-monte-cristo.png",
+      "publicSourcePath": "/covers/tome/source/the-count-of-monte-cristo.png"
+    },
+    {
+      "bookId": "treasure-island",
+      "title": "Treasure Island",
+      "palette": "saffronJade",
+      "motif": "tropicalCove",
+      "celestial": "compass",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/treasure-island.png",
+      "publicSourcePath": "/covers/tome/source/treasure-island.png"
+    },
+    {
+      "bookId": "alices-adventures-in-wonderland",
+      "title": "Alice's Adventures in Wonderland",
+      "palette": "mossGarden",
+      "motif": "hedgeDoor",
+      "celestial": "key",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/alices-adventures-in-wonderland.png",
+      "publicSourcePath": "/covers/tome/source/alices-adventures-in-wonderland.png"
+    },
+    {
+      "bookId": "the-great-gatsby",
+      "title": "The Great Gatsby",
+      "palette": "lampBlack",
+      "motif": "bayLight",
+      "celestial": "beacon",
+      "status": "skipped-existing",
+      "sourcePath": "public/covers/tome/source/the-great-gatsby.png",
+      "publicSourcePath": "/covers/tome/source/the-great-gatsby.png"
+    },
+    {
+      "bookId": "war-and-peace",
+      "title": "War and Peace",
+      "palette": "frostRussia",
+      "motif": "warPlain",
+      "celestial": "sun",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/war-and-peace.png",
+      "publicSourcePath": "/covers/tome/source/war-and-peace.png"
+    },
+    {
+      "bookId": "anna-karenina",
+      "title": "Anna Karenina",
+      "palette": "roseFog",
+      "motif": "winterStation",
+      "celestial": "lamp",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/anna-karenina.png",
+      "publicSourcePath": "/covers/tome/source/anna-karenina.png"
+    },
+    {
+      "bookId": "crime-and-punishment",
+      "title": "Crime and Punishment",
+      "palette": "frostRussia",
+      "motif": "canalCity",
+      "celestial": "lamp",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/crime-and-punishment.png",
+      "publicSourcePath": "/covers/tome/source/crime-and-punishment.png"
+    },
+    {
+      "bookId": "les-miserables",
+      "title": "Les Miserables",
+      "palette": "oxbloodCity",
+      "motif": "barricadeCity",
+      "celestial": "sun",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/les-miserables.png",
+      "publicSourcePath": "/covers/tome/source/les-miserables.png"
+    },
+    {
+      "bookId": "a-tale-of-two-cities",
+      "title": "A Tale of Two Cities",
+      "palette": "oxbloodCity",
+      "motif": "twoCities",
+      "celestial": "sun",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/a-tale-of-two-cities.png",
+      "publicSourcePath": "/covers/tome/source/a-tale-of-two-cities.png"
+    },
+    {
+      "bookId": "a-christmas-carol",
+      "title": "A Christmas Carol",
+      "palette": "frostRussia",
+      "motif": "winterStreet",
+      "celestial": "star",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/a-christmas-carol.png",
+      "publicSourcePath": "/covers/tome/source/a-christmas-carol.png"
+    },
+    {
+      "bookId": "middlemarch",
+      "title": "Middlemarch",
+      "palette": "mossGarden",
+      "motif": "provincialRoads",
+      "celestial": "sun",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/middlemarch.png",
+      "publicSourcePath": "/covers/tome/source/middlemarch.png"
+    },
+    {
+      "bookId": "great-expectations",
+      "title": "Great Expectations",
+      "palette": "slateGold",
+      "motif": "marshHouse",
+      "celestial": "moon",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/great-expectations.png",
+      "publicSourcePath": "/covers/tome/source/great-expectations.png"
+    },
+    {
+      "bookId": "oliver-twist",
+      "title": "Oliver Twist",
+      "palette": "oxbloodCity",
+      "motif": "workhouseLane",
+      "celestial": "window",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/oliver-twist.png",
+      "publicSourcePath": "/covers/tome/source/oliver-twist.png"
+    },
+    {
+      "bookId": "the-time-machine",
+      "title": "The Time Machine",
+      "palette": "mineralTeal",
+      "motif": "timePortal",
+      "celestial": "portal",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/the-time-machine.png",
+      "publicSourcePath": "/covers/tome/source/the-time-machine.png"
+    },
+    {
+      "bookId": "the-war-of-the-worlds",
+      "title": "The War of the Worlds",
+      "palette": "emberNight",
+      "motif": "redPlanetRoad",
+      "celestial": "planet",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/the-war-of-the-worlds.png",
+      "publicSourcePath": "/covers/tome/source/the-war-of-the-worlds.png"
+    },
+    {
+      "bookId": "the-origin-of-species",
+      "title": "The Origin of Species",
+      "palette": "mossGarden",
+      "motif": "evolutionTree",
+      "celestial": "sun",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/the-origin-of-species.png",
+      "publicSourcePath": "/covers/tome/source/the-origin-of-species.png"
+    },
+    {
+      "bookId": "the-republic",
+      "title": "The Republic",
+      "palette": "slateGold",
+      "motif": "caveRoad",
+      "celestial": "sun",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/the-republic.png",
+      "publicSourcePath": "/covers/tome/source/the-republic.png"
+    },
+    {
+      "bookId": "meditations",
+      "title": "Meditations",
+      "palette": "saffronJade",
+      "motif": "stoicColumn",
+      "celestial": "sun",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/meditations.png",
+      "publicSourcePath": "/covers/tome/source/meditations.png"
+    },
+    {
+      "bookId": "the-aeneid",
+      "title": "The Aeneid",
+      "palette": "roseFog",
+      "motif": "romanHarbor",
+      "celestial": "star",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/the-aeneid.png",
+      "publicSourcePath": "/covers/tome/source/the-aeneid.png"
+    },
+    {
+      "bookId": "beowulf",
+      "title": "Beowulf",
+      "palette": "lampBlack",
+      "motif": "meadHall",
+      "celestial": "fire",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/beowulf.png",
+      "publicSourcePath": "/covers/tome/source/beowulf.png"
+    },
+    {
+      "bookId": "the-canterbury-tales",
+      "title": "The Canterbury Tales",
+      "palette": "mossGarden",
+      "motif": "pilgrimRoad",
+      "celestial": "sun",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/the-canterbury-tales.png",
+      "publicSourcePath": "/covers/tome/source/the-canterbury-tales.png"
+    },
+    {
+      "bookId": "le-morte-darthur",
+      "title": "Le Morte d'Arthur",
+      "palette": "plumDusk",
+      "motif": "arthurLake",
+      "celestial": "moon",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/le-morte-darthur.png",
+      "publicSourcePath": "/covers/tome/source/le-morte-darthur.png"
+    },
+    {
+      "bookId": "paradise-lost",
+      "title": "Paradise Lost",
+      "palette": "emberNight",
+      "motif": "cosmicGate",
+      "celestial": "star",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/paradise-lost.png",
+      "publicSourcePath": "/covers/tome/source/paradise-lost.png"
+    },
+    {
+      "bookId": "the-tempest",
+      "title": "The Tempest",
+      "palette": "inkSea",
+      "motif": "stormIsland",
+      "celestial": "lightning",
+      "status": "skipped-existing",
+      "sourcePath": "public/covers/tome/source/the-tempest.png",
+      "publicSourcePath": "/covers/tome/source/the-tempest.png"
+    },
+    {
+      "bookId": "the-faerie-queene",
+      "title": "The Faerie Queene",
+      "palette": "plumDusk",
+      "motif": "fairyTower",
+      "celestial": "star",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/the-faerie-queene.png",
+      "publicSourcePath": "/covers/tome/source/the-faerie-queene.png"
+    },
+    {
+      "bookId": "orlando-furioso",
+      "title": "Orlando Furioso",
+      "palette": "mineralTeal",
+      "motif": "moonValley",
+      "celestial": "moon",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/orlando-furioso.png",
+      "publicSourcePath": "/covers/tome/source/orlando-furioso.png"
+    },
+    {
+      "bookId": "don-juan",
+      "title": "Don Juan",
+      "palette": "saffronJade",
+      "motif": "satireSea",
+      "celestial": "sun",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/don-juan.png",
+      "publicSourcePath": "/covers/tome/source/don-juan.png"
+    },
+    {
+      "bookId": "gullivers-travels",
+      "title": "Gulliver's Travels",
+      "palette": "saffronJade",
+      "motif": "giantCoast",
+      "celestial": "sun",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/gullivers-travels.png",
+      "publicSourcePath": "/covers/tome/source/gullivers-travels.png"
+    },
+    {
+      "bookId": "candide",
+      "title": "Candide",
+      "palette": "ochrePlain",
+      "motif": "gardenWorld",
+      "celestial": "sun",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/candide.png",
+      "publicSourcePath": "/covers/tome/source/candide.png"
+    },
+    {
+      "bookId": "heart-of-darkness",
+      "title": "Heart of Darkness",
+      "palette": "lampBlack",
+      "motif": "riverMouth",
+      "celestial": "sun",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/heart-of-darkness.png",
+      "publicSourcePath": "/covers/tome/source/heart-of-darkness.png"
+    },
+    {
+      "bookId": "the-art-of-war",
+      "title": "The Art of War",
+      "palette": "slateGold",
+      "motif": "militaryPass",
+      "celestial": "sun",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/the-art-of-war.png",
+      "publicSourcePath": "/covers/tome/source/the-art-of-war.png"
+    },
+    {
+      "bookId": "the-call-of-the-wild",
+      "title": "The Call of the Wild",
+      "palette": "frostRussia",
+      "motif": "snowTrail",
+      "celestial": "moon",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/the-call-of-the-wild.png",
+      "publicSourcePath": "/covers/tome/source/the-call-of-the-wild.png"
+    },
+    {
+      "bookId": "a-dolls-house",
+      "title": "A Doll's House",
+      "palette": "roseFog",
+      "motif": "houseDoor",
+      "celestial": "window",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/a-dolls-house.png",
+      "publicSourcePath": "/covers/tome/source/a-dolls-house.png"
+    },
+    {
+      "bookId": "the-secret-garden",
+      "title": "The Secret Garden",
+      "palette": "mossGarden",
+      "motif": "gardenWall",
+      "celestial": "key",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/the-secret-garden.png",
+      "publicSourcePath": "/covers/tome/source/the-secret-garden.png"
+    },
+    {
+      "bookId": "siddhartha",
+      "title": "Siddhartha",
+      "palette": "saffronJade",
+      "motif": "riverTree",
+      "celestial": "sun",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/siddhartha.png",
+      "publicSourcePath": "/covers/tome/source/siddhartha.png"
+    },
+    {
+      "bookId": "the-picture-of-dorian-gray",
+      "title": "The Picture of Dorian Gray",
+      "palette": "plumDusk",
+      "motif": "portraitHall",
+      "celestial": "window",
+      "status": "generated",
+      "sourcePath": "public/covers/tome/source/the-picture-of-dorian-gray.png",
+      "publicSourcePath": "/covers/tome/source/the-picture-of-dorian-gray.png"
+    }
+  ]
+}

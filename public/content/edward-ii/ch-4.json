@@ -1,8 +1,1 @@
-{
-  "bookId": "edward-ii",
-  "chapterIndex": 4,
-  "title": "Scene III",
-  "wordCount": 52,
-  "estimatedMinutes": 1,
-  "html": "<h3> <span>Scene</span> <span>III</span> </h3> <p>A street in London.</p> <table> <tbody> <tr> <td/> <td> <i>Enter <b>Gaveston</b> and <b>Kent</b>.</i> </td> </tr> <tr> <td>Gaveston</td> <td> <p> <span>Edmund, the mighty prince of Lancaster,</span> <br> <span>That hath more earldoms than an ass can bear,</span> <br> <span>And both the Mortimers, two goodly men,</span> <br> <span>With Guy of Warwick, that redoubted knight,</span> <br> <span>Are gone towards Lambeth﻿—</span> </p> </td> </tr> <tr> <td>Kent</td> <td>There let them remain.</td> </tr> <tr> <td/> <td> <i>Exeunt.</i> </td> </tr> </tbody> </table> </section> <section>"
-}
+{"bookId":"edward-ii","chapterIndex":4,"title":"Scene III","wordCount":52,"estimatedMinutes":1,"html":"<h3> <span>Scene</span> <span>III</span> </h3> <p>A street in London.</p> <table> <tbody> <tr> <td/> <td> <em>Enter <strong>Gaveston</strong> and <strong>Kent</strong>.</em> </td> </tr> <tr> <td>Gaveston</td> <td> <p> <span>Edmund, the mighty prince of Lancaster,</span> <br> <span>That hath more earldoms than an ass can bear,</span> <br> <span>And both the Mortimers, two goodly men,</span> <br> <span>With Guy of Warwick, that redoubted knight,</span> <br> <span>Are gone towards Lambeth﻿—</span> </p> </td> </tr> <tr> <td>Kent</td> <td>There let them remain.</td> </tr> <tr> <td/> <td> <em>Exeunt.</em> </td> </tr> </tbody> </table> </section> <section>"}

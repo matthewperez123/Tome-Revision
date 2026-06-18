@@ -1,0 +1,18 @@
+Use case: stylized-concept
+Asset type: Tome app book cover exploration contact sheet
+Primary request: Create one polished contact sheet with 8 separate portrait 2:3 textless classic-book cover tests. Use the eight user-provided reference images in this chat only as visual style references: monumental scenery, warm cream aged-paper fields, ink navy/deep teal/mustard ochre palette, tiny relevant figures, vast negative space, grainy screenprint texture, scholarly modern-classics seriousness. Do not copy any exact reference composition; derive a new coherent aesthetic.
+New aesthetic name: Monumental Literary Paths.
+Layout: 4 columns by 2 rows, each cell a distinct vertical cover with clean spacing between covers. No titles, no author names, no logos, no fake text, no frame labels.
+Style/medium: modern minimalist literary poster illustration, flat editorial shapes, subtly cubist compressed scenery, matte risograph/screenprint grain, not photorealistic, not 3D, not Art Deco.
+Composition rules for every cover: one huge scenic/architectural symbol dominates; one path, road, window, gate, moon, sea line, mountain, tower, or light source guides the eye; figures are tiny iconic silhouettes only, with no detailed faces; high thumbnail readability for a mobile app.
+Color palette: warm ivory paper, deep ink navy, dark teal, weathered blue, mustard/ochre, tiny coral/red accent used sparingly.
+Covers to create:
+1. Don Quixote: enormous windmills across an ochre plain, tiny rider and companion as scale marks, small red plume accent.
+2. The Divine Comedy: terraced mountain ascent with two tiny pilgrims and a gold star above, ivory sky.
+3. The Odyssey: vast dark teal sea, winding moonlit water path, tiny ship/mast silhouette, gold sun/star accent.
+4. The Iliad: distant Trojan wall and shore of ships under bronze dawn, tiny figures near a gate, no battle gore.
+5. Macbeth: castle battlement under a huge pale moon, lone cloaked figure, one small red flame or crown-like accent, no skulls.
+6. Frankenstein: alpine ice and a remote lit laboratory/window, tiny traveler, one restrained lightning line, no monster horror.
+7. Moby-Dick: immense abstract white whale curve in dark water, tiny boat, small coral lantern/harpoon accent, no gore.
+8. Pride and Prejudice: long garden road to a distant estate, two tiny figures apart on the path, soft ochre sun.
+Avoid: readable text, letters, watermarks, photoreal faces, grotesque imagery, gore, monsters, vulgarity, dense decorative detail, ornate frames, branded Penguin or Oxford layouts, purple cast, beige-only palette.

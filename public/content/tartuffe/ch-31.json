@@ -1,8 +1,1 @@
-{
-  "bookId": "tartuffe",
-  "chapterIndex": 31,
-  "title": "Act V",
-  "wordCount": 0,
-  "estimatedMinutes": 0,
-  "html": "<section id=\"act-5\">\n\t\t\t<h2>\n\t\t\t\t<span>Act</span>\n\t\t\t\t<span>V</span>\n\t\t\t</h2>\n\t\t\t<section id=\"scene-5-1\">"
-}
+{"bookId":"tartuffe","chapterIndex":31,"title":"Act V","wordCount":0,"estimatedMinutes":0,"html":"<section>\n\t\t\t<h2>\n\t\t\t\t<span>Act</span>\n\t\t\t\t<span>V</span>\n\t\t\t</h2>\n\t\t\t<section>"}

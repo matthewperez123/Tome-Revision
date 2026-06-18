@@ -148,15 +148,12 @@ export function useRealtimeNotifications() {
         .order("created_at", { ascending: false })
         .limit(20)
 
-      if (data?.length) {
-        setNotifications(data)
-        setUnreadCount(data.filter((n) => !n.read).length)
-      } else {
-        // Fallback to demo if no real notifications
-        const demoData = role === "teacher" ? DEMO_TEACHER_NOTIFICATIONS : DEMO_READER_NOTIFICATIONS
-        setNotifications(demoData)
-        setUnreadCount(demoData.filter((n) => !n.read).length)
-      }
+      // A signed-in user sees only their own real notifications — an empty
+      // inbox stays empty. Demo data is reserved for the unauthenticated
+      // preview branch above.
+      const rows = data ?? []
+      setNotifications(rows)
+      setUnreadCount(rows.filter((n) => !n.read).length)
 
       setLoading(false)
     }

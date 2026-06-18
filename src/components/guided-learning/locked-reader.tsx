@@ -84,16 +84,22 @@ export function LockedReader({
   }, [onProgress, queueEvent, onComplete])
 
   return (
-    <div className="h-full w-full">
+    <div
+      className="reader-surface h-full w-full"
+      data-reader-theme={theme === "dark" ? "night" : "day"}
+    >
       <PaginatedReader
         pages={pages}
         currentPage={currentPage}
         onPageChange={handlePageChange}
         onChapterEnd={handleChapterEnd}
         isPaginating={isPaginating}
-        mode="book"
-        theme={theme}
+        mode="single"
         fontSize={18}
+        lineHeight={1.8}
+        justify={false}
+        a11yFace={false}
+        turnStyle="slide"
         onToggleToolbar={() => {}} // No toolbar in lockdown
       />
     </div>

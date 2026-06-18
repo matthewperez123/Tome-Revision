@@ -4,6 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
 import type { TomeBook } from "@/data/books"
+import { getTomeGeneratedCoverPaths } from "@/data/generated/tome-generated-cover-paths"
 import { isBookRecommended } from "@/lib/book-apparatus"
 import { ClassicsCover } from "./ClassicsCover"
 import { ComingSoonCover } from "./ComingSoonCover"
@@ -27,7 +28,8 @@ interface BookCoverThumbProps {
  */
 export function BookCoverThumb({ book, className }: BookCoverThumbProps) {
   const [imgFailed, setImgFailed] = useState(false)
-  const showImage = Boolean(book.coverImagePath) && !imgFailed
+  const hasTomeGeneratedCover = Boolean(getTomeGeneratedCoverPaths(book.id))
+  const showImage = !hasTomeGeneratedCover && Boolean(book.coverImagePath) && !imgFailed
 
   return (
     <div
@@ -46,7 +48,7 @@ export function BookCoverThumb({ book, className }: BookCoverThumbProps) {
           onError={() => setImgFailed(true)}
           unoptimized
         />
-      ) : isBookRecommended(book) ? (
+      ) : hasTomeGeneratedCover || isBookRecommended(book) ? (
         <ClassicsCover
           bookId={book.id}
           title={book.title}

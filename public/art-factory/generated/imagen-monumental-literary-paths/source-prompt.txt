@@ -1,0 +1,18 @@
+Use case: stylized-concept
+Asset type: Tome app book cover exploration contact sheet
+Primary request: Create one polished raster contact sheet with 8 separate portrait 2:3 textless classic-book cover tests for a scalable Tome book-cover style. Use the two provided Monumental Literary Paths reference sheets only as style references: monumental literary scenery, tiny relevant silhouettes, vast negative space, warm aged-paper fields, ink navy/deep teal/mustard ochre foundation, grainy screenprint texture, scholarly modern-classics seriousness. Do not copy any exact reference composition.
+Aesthetic name: Monumental Literary Paths, Expanded Palette Test.
+Layout: 4 columns by 2 rows, each cell a distinct vertical cover with clean cream spacing between covers. No titles, no author names, no logos, no fake text, no labels.
+Style/medium: modern minimalist literary poster illustration, flat editorial shapes, subtly cubist compressed scenery, matte risograph/screenprint grain, richly printed bitmap illustration, not photorealistic, not 3D, not Art Deco.
+Composition rules for every cover: one huge scenic or architectural symbol dominates; one path, road, window, gate, moon, river, rail line, sea line, mountain, tower, or light source guides the eye; figures are tiny iconic silhouettes only, with no detailed faces; high thumbnail readability for a mobile app.
+Expanded color palette: warm ivory paper base plus deep ink navy, dark teal, weathered blue, moss green, oxblood red, frosted slate, muted plum, saffron gold, tarnished copper, storm gray, small coral or flame accents used sparingly. Avoid beige-only sameness; each cover should feel related but have a distinct color climate.
+Covers to create:
+1. War and Peace: vast snow-frosted plain, distant army-crossing silhouettes as tiny marks, pale road through blue-gray hills, muted gold winter sun.
+2. Crime and Punishment: St. Petersburg canal and narrow bridge at night, tall oppressive building masses, one tiny solitary figure, single amber lamp reflection.
+3. Les Miserables: Paris barricade as a monumental dark diagonal, narrow street path between blocky buildings, tiny red flag accent, no gore.
+4. Alice's Adventures in Wonderland: immense hedge wall split by a tiny glowing door, winding garden path, small gold key accent, strange oversized moonlike shapes.
+5. Great Expectations: marsh road in mist, distant dark house, pale moon, tiny child silhouette, slate green and fog ivory palette.
+6. The Time Machine: circular brass-and-teal portal standing in a quiet future meadow, road converging into it, tiny machine silhouette, no readable numerals.
+7. Paradise Lost: enormous cosmic gate or arch in a dark starless field, two tiny figures below, gold linework and ember accent, no demons or explicit religious iconography.
+8. Beowulf: dark mead hall on a ridge with one warm doorway, deep night landscape, tiny lone warrior silhouette approaching, fire accent, no monster.
+Avoid: readable text, letters, watermarks, photoreal faces, grotesque imagery, gore, monsters, vulgarity, dense decorative detail, ornate frames, branded Penguin/Oxford layouts, heavy purple cast, beige-only palette.
