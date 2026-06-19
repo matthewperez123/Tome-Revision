@@ -1,0 +1,318 @@
+{
+  "generatedAt": "2026-06-18T20:05:29.176Z",
+  "sourceDir": "public/covers/tome/source",
+  "outputDir": "public/covers/tome/generated",
+  "dataFile": "src/data/generated/tome-generated-cover-paths.ts",
+  "targetSize": {
+    "width": 1024,
+    "height": 1536
+  },
+  "thumbnailSize": {
+    "width": 512,
+    "height": 768
+  },
+  "count": 50,
+  "reviewSheetPath": "public/covers/tome/generated/review-sheet.jpg",
+  "entries": [
+    {
+      "bookId": "a-christmas-carol",
+      "sourcePath": "public/covers/tome/source/a-christmas-carol.png",
+      "publicPath": "/covers/tome/generated/images/a-christmas-carol.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/a-christmas-carol.jpg"
+    },
+    {
+      "bookId": "a-dolls-house",
+      "sourcePath": "public/covers/tome/source/a-dolls-house.png",
+      "publicPath": "/covers/tome/generated/images/a-dolls-house.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/a-dolls-house.jpg"
+    },
+    {
+      "bookId": "a-tale-of-two-cities",
+      "sourcePath": "public/covers/tome/source/a-tale-of-two-cities.png",
+      "publicPath": "/covers/tome/generated/images/a-tale-of-two-cities.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/a-tale-of-two-cities.jpg"
+    },
+    {
+      "bookId": "alices-adventures-in-wonderland",
+      "sourcePath": "public/covers/tome/source/alices-adventures-in-wonderland.png",
+      "publicPath": "/covers/tome/generated/images/alices-adventures-in-wonderland.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/alices-adventures-in-wonderland.jpg"
+    },
+    {
+      "bookId": "anna-karenina",
+      "sourcePath": "public/covers/tome/source/anna-karenina.png",
+      "publicPath": "/covers/tome/generated/images/anna-karenina.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/anna-karenina.jpg"
+    },
+    {
+      "bookId": "ben-hur",
+      "sourcePath": "public/covers/tome/source/ben-hur.png",
+      "publicPath": "/covers/tome/generated/images/ben-hur.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/ben-hur.jpg"
+    },
+    {
+      "bookId": "beowulf",
+      "sourcePath": "public/covers/tome/source/beowulf.png",
+      "publicPath": "/covers/tome/generated/images/beowulf.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/beowulf.jpg"
+    },
+    {
+      "bookId": "candide",
+      "sourcePath": "public/covers/tome/source/candide.png",
+      "publicPath": "/covers/tome/generated/images/candide.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/candide.jpg"
+    },
+    {
+      "bookId": "crime-and-punishment",
+      "sourcePath": "public/covers/tome/source/crime-and-punishment.png",
+      "publicPath": "/covers/tome/generated/images/crime-and-punishment.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/crime-and-punishment.jpg"
+    },
+    {
+      "bookId": "don-juan",
+      "sourcePath": "public/covers/tome/source/don-juan.png",
+      "publicPath": "/covers/tome/generated/images/don-juan.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/don-juan.jpg"
+    },
+    {
+      "bookId": "don-quixote",
+      "sourcePath": "public/covers/tome/source/don-quixote.png",
+      "publicPath": "/covers/tome/generated/images/don-quixote.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/don-quixote.jpg"
+    },
+    {
+      "bookId": "dracula",
+      "sourcePath": "public/covers/tome/source/dracula.png",
+      "publicPath": "/covers/tome/generated/images/dracula.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/dracula.jpg"
+    },
+    {
+      "bookId": "frankenstein",
+      "sourcePath": "public/covers/tome/source/frankenstein.png",
+      "publicPath": "/covers/tome/generated/images/frankenstein.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/frankenstein.jpg"
+    },
+    {
+      "bookId": "great-expectations",
+      "sourcePath": "public/covers/tome/source/great-expectations.png",
+      "publicPath": "/covers/tome/generated/images/great-expectations.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/great-expectations.jpg"
+    },
+    {
+      "bookId": "gullivers-travels",
+      "sourcePath": "public/covers/tome/source/gullivers-travels.png",
+      "publicPath": "/covers/tome/generated/images/gullivers-travels.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/gullivers-travels.jpg"
+    },
+    {
+      "bookId": "hamlet",
+      "sourcePath": "public/covers/tome/source/hamlet.png",
+      "publicPath": "/covers/tome/generated/images/hamlet.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/hamlet.jpg"
+    },
+    {
+      "bookId": "heart-of-darkness",
+      "sourcePath": "public/covers/tome/source/heart-of-darkness.png",
+      "publicPath": "/covers/tome/generated/images/heart-of-darkness.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/heart-of-darkness.jpg"
+    },
+    {
+      "bookId": "jane-eyre",
+      "sourcePath": "public/covers/tome/source/jane-eyre.png",
+      "publicPath": "/covers/tome/generated/images/jane-eyre.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/jane-eyre.jpg"
+    },
+    {
+      "bookId": "julius-caesar",
+      "sourcePath": "public/covers/tome/source/julius-caesar.png",
+      "publicPath": "/covers/tome/generated/images/julius-caesar.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/julius-caesar.jpg"
+    },
+    {
+      "bookId": "le-morte-darthur",
+      "sourcePath": "public/covers/tome/source/le-morte-darthur.png",
+      "publicPath": "/covers/tome/generated/images/le-morte-darthur.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/le-morte-darthur.jpg"
+    },
+    {
+      "bookId": "les-miserables",
+      "sourcePath": "public/covers/tome/source/les-miserables.png",
+      "publicPath": "/covers/tome/generated/images/les-miserables.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/les-miserables.jpg"
+    },
+    {
+      "bookId": "macbeth",
+      "sourcePath": "public/covers/tome/source/macbeth.png",
+      "publicPath": "/covers/tome/generated/images/macbeth.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/macbeth.jpg"
+    },
+    {
+      "bookId": "meditations",
+      "sourcePath": "public/covers/tome/source/meditations.png",
+      "publicPath": "/covers/tome/generated/images/meditations.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/meditations.jpg"
+    },
+    {
+      "bookId": "middlemarch",
+      "sourcePath": "public/covers/tome/source/middlemarch.png",
+      "publicPath": "/covers/tome/generated/images/middlemarch.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/middlemarch.jpg"
+    },
+    {
+      "bookId": "moby-dick",
+      "sourcePath": "public/covers/tome/source/moby-dick.png",
+      "publicPath": "/covers/tome/generated/images/moby-dick.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/moby-dick.jpg"
+    },
+    {
+      "bookId": "oliver-twist",
+      "sourcePath": "public/covers/tome/source/oliver-twist.png",
+      "publicPath": "/covers/tome/generated/images/oliver-twist.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/oliver-twist.jpg"
+    },
+    {
+      "bookId": "orlando-furioso",
+      "sourcePath": "public/covers/tome/source/orlando-furioso.png",
+      "publicPath": "/covers/tome/generated/images/orlando-furioso.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/orlando-furioso.jpg"
+    },
+    {
+      "bookId": "paradise-lost",
+      "sourcePath": "public/covers/tome/source/paradise-lost.png",
+      "publicPath": "/covers/tome/generated/images/paradise-lost.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/paradise-lost.jpg"
+    },
+    {
+      "bookId": "pride-and-prejudice",
+      "sourcePath": "public/covers/tome/source/pride-and-prejudice.png",
+      "publicPath": "/covers/tome/generated/images/pride-and-prejudice.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/pride-and-prejudice.jpg"
+    },
+    {
+      "bookId": "siddhartha",
+      "sourcePath": "public/covers/tome/source/siddhartha.png",
+      "publicPath": "/covers/tome/generated/images/siddhartha.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/siddhartha.jpg"
+    },
+    {
+      "bookId": "the-aeneid",
+      "sourcePath": "public/covers/tome/source/the-aeneid.png",
+      "publicPath": "/covers/tome/generated/images/the-aeneid.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/the-aeneid.jpg"
+    },
+    {
+      "bookId": "the-art-of-war",
+      "sourcePath": "public/covers/tome/source/the-art-of-war.png",
+      "publicPath": "/covers/tome/generated/images/the-art-of-war.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/the-art-of-war.jpg"
+    },
+    {
+      "bookId": "the-call-of-the-wild",
+      "sourcePath": "public/covers/tome/source/the-call-of-the-wild.png",
+      "publicPath": "/covers/tome/generated/images/the-call-of-the-wild.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/the-call-of-the-wild.jpg"
+    },
+    {
+      "bookId": "the-canterbury-tales",
+      "sourcePath": "public/covers/tome/source/the-canterbury-tales.png",
+      "publicPath": "/covers/tome/generated/images/the-canterbury-tales.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/the-canterbury-tales.jpg"
+    },
+    {
+      "bookId": "the-count-of-monte-cristo",
+      "sourcePath": "public/covers/tome/source/the-count-of-monte-cristo.png",
+      "publicPath": "/covers/tome/generated/images/the-count-of-monte-cristo.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/the-count-of-monte-cristo.jpg"
+    },
+    {
+      "bookId": "the-divine-comedy",
+      "sourcePath": "public/covers/tome/source/the-divine-comedy.png",
+      "publicPath": "/covers/tome/generated/images/the-divine-comedy.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/the-divine-comedy.jpg"
+    },
+    {
+      "bookId": "the-faerie-queene",
+      "sourcePath": "public/covers/tome/source/the-faerie-queene.png",
+      "publicPath": "/covers/tome/generated/images/the-faerie-queene.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/the-faerie-queene.jpg"
+    },
+    {
+      "bookId": "the-great-gatsby",
+      "sourcePath": "public/covers/tome/source/the-great-gatsby.png",
+      "publicPath": "/covers/tome/generated/images/the-great-gatsby.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/the-great-gatsby.jpg"
+    },
+    {
+      "bookId": "the-iliad",
+      "sourcePath": "public/covers/tome/source/the-iliad.png",
+      "publicPath": "/covers/tome/generated/images/the-iliad.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/the-iliad.jpg"
+    },
+    {
+      "bookId": "the-odyssey",
+      "sourcePath": "public/covers/tome/source/the-odyssey.png",
+      "publicPath": "/covers/tome/generated/images/the-odyssey.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/the-odyssey.jpg"
+    },
+    {
+      "bookId": "the-origin-of-species",
+      "sourcePath": "public/covers/tome/source/the-origin-of-species.png",
+      "publicPath": "/covers/tome/generated/images/the-origin-of-species.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/the-origin-of-species.jpg"
+    },
+    {
+      "bookId": "the-picture-of-dorian-gray",
+      "sourcePath": "public/covers/tome/source/the-picture-of-dorian-gray.png",
+      "publicPath": "/covers/tome/generated/images/the-picture-of-dorian-gray.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/the-picture-of-dorian-gray.jpg"
+    },
+    {
+      "bookId": "the-republic",
+      "sourcePath": "public/covers/tome/source/the-republic.png",
+      "publicPath": "/covers/tome/generated/images/the-republic.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/the-republic.jpg"
+    },
+    {
+      "bookId": "the-secret-garden",
+      "sourcePath": "public/covers/tome/source/the-secret-garden.png",
+      "publicPath": "/covers/tome/generated/images/the-secret-garden.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/the-secret-garden.jpg"
+    },
+    {
+      "bookId": "the-tempest",
+      "sourcePath": "public/covers/tome/source/the-tempest.png",
+      "publicPath": "/covers/tome/generated/images/the-tempest.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/the-tempest.jpg"
+    },
+    {
+      "bookId": "the-time-machine",
+      "sourcePath": "public/covers/tome/source/the-time-machine.png",
+      "publicPath": "/covers/tome/generated/images/the-time-machine.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/the-time-machine.jpg"
+    },
+    {
+      "bookId": "the-war-of-the-worlds",
+      "sourcePath": "public/covers/tome/source/the-war-of-the-worlds.png",
+      "publicPath": "/covers/tome/generated/images/the-war-of-the-worlds.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/the-war-of-the-worlds.jpg"
+    },
+    {
+      "bookId": "treasure-island",
+      "sourcePath": "public/covers/tome/source/treasure-island.png",
+      "publicPath": "/covers/tome/generated/images/treasure-island.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/treasure-island.jpg"
+    },
+    {
+      "bookId": "war-and-peace",
+      "sourcePath": "public/covers/tome/source/war-and-peace.png",
+      "publicPath": "/covers/tome/generated/images/war-and-peace.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/war-and-peace.jpg"
+    },
+    {
+      "bookId": "wuthering-heights",
+      "sourcePath": "public/covers/tome/source/wuthering-heights.png",
+      "publicPath": "/covers/tome/generated/images/wuthering-heights.jpg",
+      "publicThumbPath": "/covers/tome/generated/thumbs/wuthering-heights.jpg"
+    }
+  ]
+}

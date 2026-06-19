@@ -7,6 +7,7 @@ import { ChevronDown, BookOpen, GraduationCap } from "lucide-react"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { LandingNav } from "@/components/landing/LandingNav"
 import { LandingFooter } from "@/components/landing/LandingFooter"
+import { HomeHub } from "@/components/landing/home/HomeHub"
 
 const heroGlassButton =
   "inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-sm font-semibold border border-white/30 bg-white/10 backdrop-blur-md text-white transition-all hover:bg-white/20 hover:scale-[1.03]"
@@ -18,7 +19,7 @@ export function AboutPage() {
     <div className="min-h-screen bg-background text-foreground">
       <LandingNav />
 
-      {/* ── HERO (the only content on /) ─────────────────────────── */}
+      {/* ── HERO ─────────────────────────────────────────────────── */}
       <section className="relative h-screen w-full overflow-hidden">
         <Image
           src="/paintings/barque-of-dante.jpg"
@@ -75,6 +76,9 @@ export function AboutPage() {
           <ChevronDown className="size-6" />
         </motion.div>
       </section>
+
+      {/* ── OVERVIEW HUB (8 condensed teasers → deep pages) ───────── */}
+      <HomeHub />
 
       <LandingFooter />
     </div>

@@ -3,6 +3,8 @@ import { redirect } from "next/navigation"
 import { ChevronLeft, ShieldAlert } from "lucide-react"
 import { createClient } from "@/lib/supabase/server"
 import { DeleteAccountDialog } from "@/components/auth/delete-account-dialog"
+import { NotificationPreferencesForm } from "@/components/account/notification-preferences-form"
+import { getNotificationPreferences } from "@/lib/actions/notification-preferences"
 
 export const dynamic = "force-dynamic"
 
@@ -19,6 +21,8 @@ export default async function AccountPage() {
   const meta = (user.user_metadata ?? {}) as Record<string, unknown>
   const fullName =
     typeof meta.full_name === "string" ? (meta.full_name as string) : null
+
+  const notificationPrefs = await getNotificationPreferences()
 
   return (
     <div className="min-h-screen pb-32">
@@ -66,6 +70,14 @@ export default async function AccountPage() {
               </Link>
             </div>
           </div>
+        </section>
+
+        {/* Email notifications */}
+        <section>
+          <h2 className="font-serif text-xl font-semibold tracking-tight mb-4">
+            Email notifications
+          </h2>
+          <NotificationPreferencesForm initial={notificationPrefs} />
         </section>
 
         {/* Danger zone */}

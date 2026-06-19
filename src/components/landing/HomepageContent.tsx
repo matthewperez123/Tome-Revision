@@ -3,20 +3,24 @@
 import { useEffect, useRef } from "react"
 import { useAudience } from "@/contexts/AudienceContext"
 
-import { MergedReaderBlock } from "./MergedReaderBlock"
-import { MergedVirgilBlock } from "./MergedVirgilBlock"
-import { MergedTrialsBlock } from "./MergedTrialsBlock"
+import { ReaderFormDemo } from "./demo/ReaderFormDemo"
+import { VirgilDrawerDemo } from "./demo/VirgilDrawerDemo"
+import { TrialDemo } from "./demo/TrialDemo"
 import { WorldMapSection } from "./WorldMapSection"
-import { MergedLibraryTimelineBlock } from "./MergedLibraryTimelineBlock"
+import { LibraryControlsDemo } from "./demo/LibraryControlsDemo"
+import { TrendingBooksShowcase, RecommendationsShowcase } from "./ReaderDiscoveryShowcase"
 import { MergedSocialBlock } from "./MergedSocialBlock"
 import { ReadingInsightsShowcase } from "./ReadingInsightsShowcase"
 import { ReaderPricingSection } from "./ReaderPricingSection"
 import { FinalCTA } from "./FinalCTA"
 
 import { ClassRosterShowcase } from "./teacher/ClassRosterShowcase"
-import { AssignmentBuilderShowcase } from "./teacher/AssignmentBuilderShowcase"
-import { GradebookShowcase } from "./teacher/GradebookShowcase"
-import { ClassProgressShowcase } from "./teacher/ClassProgressShowcase"
+import { AssignmentBuilderDemo } from "./demo/AssignmentBuilderDemo"
+import { CustomTrialsShowcase } from "./teacher/CustomTrialsShowcase"
+import { GradebookDemo } from "./demo/GradebookDemo"
+import { ClassProgressDemo } from "./demo/ClassProgressDemo"
+import { ParentDirectoryShowcase } from "./teacher/ParentDirectoryShowcase"
+import { SemesterPlanShowcase } from "./teacher/SemesterPlanShowcase"
 import { CoTeachersShowcase } from "./teacher/CoTeachersShowcase"
 import { TeacherPricingSection } from "./TeacherPricingSection"
 import { TeacherCTA } from "./teacher/TeacherCTA"
@@ -35,11 +39,21 @@ export function HomepageContent() {
   if (audience === "teacher") {
     return (
       <>
-        {/* 5 teacher feature blocks + pricing band */}
+        {/* Teacher feature blocks: roster → assign → quiz builder → grading →
+            progress → parent directory → curriculum → co-teachers → pricing */}
         <ClassRosterShowcase />
-        <AssignmentBuilderShowcase />
-        <GradebookShowcase />
-        <ClassProgressShowcase />
+        <AssignmentBuilderDemo />
+        <CustomTrialsShowcase />
+        <div id="gradebook" className="scroll-mt-20">
+          <GradebookDemo />
+        </div>
+        <ClassProgressDemo />
+        <div id="parent-directory" className="scroll-mt-20">
+          <ParentDirectoryShowcase />
+        </div>
+        <div id="curriculum" className="scroll-mt-20">
+          <SemesterPlanShowcase />
+        </div>
         <CoTeachersShowcase />
         <TeacherPricingSection />
         <TeacherCTA />
@@ -49,12 +63,14 @@ export function HomepageContent() {
 
   return (
     <>
-      {/* 7 student feature blocks */}
-      <MergedReaderBlock />
-      <MergedVirgilBlock />
-      <MergedTrialsBlock />
+      {/* Student feature blocks */}
+      <ReaderFormDemo />
+      <VirgilDrawerDemo />
+      <TrialDemo />
       <WorldMapSection />
-      <MergedLibraryTimelineBlock />
+      <LibraryControlsDemo />
+      <TrendingBooksShowcase />
+      <RecommendationsShowcase />
       <MergedSocialBlock />
       <ReadingInsightsShowcase />
 

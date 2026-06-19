@@ -1,8 +1,1 @@
-{
-  "bookId": "othello",
-  "chapterIndex": 11,
-  "title": "Scene II",
-  "wordCount": 65,
-  "estimatedMinutes": 1,
-  "html": "<h3> <span>Scene</span> <span>II</span> </h3> <p>A room in the castle.</p> <table> <tbody> <tr> <td/> <td> <i>Enter <b>Othello</b>, <b>Iago</b>, and <b>Gentlemen.</b></i> </td> </tr> <tr> <td>Othello</td> <td> <p> <span>These letters give, Iago, to the pilot;</span> <br> <span>And by him do my duties to the senate:</span> <br> <span>That done, I will be walking on the works;</span> <br> <span>Repair there to me.</span> </p> </td> </tr> <tr> <td>Iago</td> <td>Well, my good lord, I’ll do’t.</td> </tr> <tr> <td>Othello</td> <td>This fortification, gentlemen, shall we see’t?</td> </tr> <tr> <td>Gentlemen</td> <td>We’ll wait upon your lordship. <i>Exeunt.</i></td> </tr> </tbody> </table> </section> <section>"
-}
+{"bookId":"othello","chapterIndex":11,"title":"Scene II","wordCount":65,"estimatedMinutes":1,"html":"<h3> <span>Scene</span> <span>II</span> </h3> <p>A room in the castle.</p> <table> <tbody> <tr> <td/> <td> <em>Enter <strong>Othello</strong>, <strong>Iago</strong>, and <strong>Gentlemen.</strong></em> </td> </tr> <tr> <td>Othello</td> <td> <p> <span>These letters give, Iago, to the pilot;</span> <br> <span>And by him do my duties to the senate:</span> <br> <span>That done, I will be walking on the works;</span> <br> <span>Repair there to me.</span> </p> </td> </tr> <tr> <td>Iago</td> <td>Well, my good lord, I’ll do’t.</td> </tr> <tr> <td>Othello</td> <td>This fortification, gentlemen, shall we see’t?</td> </tr> <tr> <td>Gentlemen</td> <td>We’ll wait upon your lordship. <em>Exeunt.</em></td> </tr> </tbody> </table> </section> <section>"}

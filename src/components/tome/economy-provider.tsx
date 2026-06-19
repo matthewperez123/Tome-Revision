@@ -40,7 +40,7 @@ import type { Achievement, AchievementState } from "@/types/achievement"
 
 // ── Context Types ──────────────────────────────
 
-type EconomyContextValue = {
+export type EconomyContextValue = {
   stats: UserStats
   level: { level: number; xpInLevel: number; xpForNext: number }
   dailyGoalMet: boolean
@@ -51,7 +51,10 @@ type EconomyContextValue = {
   dismissUnlock: () => void
 }
 
-const EconomyContext = createContext<EconomyContextValue | null>(null)
+// Exported so sandboxed surfaces (e.g. marketing demos) can supply an
+// in-memory economy value that satisfies `useEconomy()` without ever touching
+// the real localStorage stats. See components/demo/DemoEconomyProvider.
+export const EconomyContext = createContext<EconomyContextValue | null>(null)
 
 // ── Hook ───────────────────────────────────────
 

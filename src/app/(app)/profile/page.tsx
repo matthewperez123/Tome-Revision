@@ -2,11 +2,11 @@
 
 import { useEffect, useMemo, useState } from "react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { motion } from "framer-motion"
 import {
   Sparkles, Flame, BookOpen, Bookmark, ChevronRight,
-  Trophy, Target, Share2, BarChart2, LogOut,
-  Check, Lock, Zap, BookMarked, Pencil,
+  Target, Share2, BarChart2, LogOut, Check, Pencil,
 } from "lucide-react"
 import { VirgilReflection } from "@/components/tome/virgil-reflection"
 import { getAllBookProgress } from "@/lib/book-progress"
@@ -18,10 +18,15 @@ import { BlurFade } from "@/components/ui/blur-fade"
 import { cn } from "@/lib/utils"
 import { useTheme } from "next-themes"
 import { UserAvatar } from "@/components/tome/avatar/UserAvatar"
-import { getCurrentAvatar, getSelectedCharacterId } from "@/lib/avatar-state"
+import { getCurrentAvatar } from "@/lib/avatar-state"
 import type { BookCharacter } from "@/data/character-avatars"
 import { CHARACTER_MAP, RARITY_COLORS } from "@/data/character-avatars"
 import { AvatarPickerModal } from "@/components/tome/avatar/AvatarPickerModal"
+import { useAuth } from "@/hooks/use-auth"
+import { useEconomy } from "@/components/tome/economy-provider"
+import { getAllAchievements } from "@/data/achievements"
+import { loadAchievementState } from "@/lib/achievements/engine"
+import { RARITY_WAX_COLORS } from "@/types/achievement"
 
 // ── Level system ───────────────────────────────
 
@@ -46,77 +51,7 @@ function getLevelInfo(xp: number) {
   return { current, next, progressXp, rangeXp, pct }
 }
 
-// ── Demo seed data ─────────────────────────────
-
-const DEMO_XP        = 1285
-const DEMO_STREAK    = 12
-const DEMO_BEST      = 19
-const DEMO_JOIN_DATE = "January 2025"
-
-const WEEKLY_XP = [45, 80, 30, 120, 95, 60, 40] // Mon–Sun
-const DAYS_LABEL = ["M", "T", "W", "T", "F", "S", "S"]
-const DAILY_GOAL = 80
-
-// 12-week heatmap: 0 = none, 1 = light, 2 = medium, 3 = heavy
-const HEATMAP: number[][] = [
-  [0,0,1,0,2,1,0],
-  [1,2,0,1,3,2,1],
-  [0,1,2,3,2,1,0],
-  [0,0,0,1,2,3,2],
-  [1,2,3,3,2,1,0],
-  [0,1,2,3,3,2,1],
-  [1,1,0,2,3,3,2],
-  [0,0,1,2,3,3,2],
-  [0,1,1,2,3,2,1],
-  [1,2,2,3,3,2,1],
-  [2,3,3,2,3,3,2],
-  [1,2,3,3,2,3,3],
-]
-
-const TRADITION_PROGRESS = [
-  { tradition: "Ancient Greek", done: 8,  total: 24 },
-  { tradition: "Victorian",     done: 5,  total: 15 },
-  { tradition: "Modernist",     done: 3,  total: 10 },
-  { tradition: "Russian",       done: 2,  total: 8  },
-  { tradition: "Enlightenment", done: 1,  total: 5  },
-]
-
-const ACHIEVEMENTS_EARNED = 7
-const ACHIEVEMENTS_TOTAL  = 21
-const ACHIEVEMENT_BADGES = [
-  { id: "first-book",   icon: BookOpen,  name: "First Page",   color: "#0EA5E9" },
-  { id: "3-day-streak", icon: Flame,     name: "On Fire",      color: "#F97316" },
-  { id: "scholar",      icon: Zap,       name: "Fast Scholar", color: "#F59E0B" },
-  { id: "greek",        icon: BookMarked,name: "Hellenic",     color: "#0EA5E9" },
-  { id: "5-chapters",   icon: Bookmark,  name: "Deep Reader",  color: "#8B5CF6" },
-  { id: "night-owl",    icon: Sparkles,  name: "Night Owl",    color: "#6366F1" },
-  { id: "quiz-ace",     icon: Trophy,    name: "Quiz Ace",     color: "#F59E0B" },
-]
-
-const CHALLENGES = [
-  {
-    id: "monthly-books",
-    label: "Read 5 books this month",
-    icon: BookOpen,
-    done: 1, total: 5,
-    color: "#0EA5E9",
-  },
-  {
-    id: "all-traditions",
-    label: "Complete a book in every tradition",
-    icon: Trophy,
-    done: 2, total: 14,
-    color: "#F59E0B",
-  },
-  {
-    id: "streak-7",
-    label: "7-day reading streak",
-    icon: Flame,
-    done: 7, total: 7,
-    color: "#F97316",
-  },
-]
-
+// Static literary quotes for the shareable card (not user data).
 const READING_QUOTES = [
   { text: "A reader lives a thousand lives before he dies.", author: "George R.R. Martin" },
   { text: "Not all those who wander are lost.", author: "J.R.R. Tolkien" },
@@ -125,27 +60,24 @@ const READING_QUOTES = [
   { text: "All that is gold does not glitter.", author: "J.R.R. Tolkien" },
 ]
 
-// Demo bookshelf: use IDs from books.ts
-const SHELF_IN_PROGRESS = [
-  { bookId: "the-odyssey",        pct: 62, lastRead: "2 days ago" },
-  { bookId: "crime-and-punishment", pct: 28, lastRead: "1 week ago" },
-  { bookId: "hamlet",             pct: 45, lastRead: "3 days ago" },
-  { bookId: "pride-and-prejudice",pct: 80, lastRead: "Yesterday" },
-  { bookId: "the-great-gatsby",   pct: 15, lastRead: "10 days ago" },
-]
-const SHELF_COMPLETED = [
-  { bookId: "the-iliad",          completedOn: "Mar 2025" },
-  { bookId: "meditations",        completedOn: "Feb 2025" },
-  { bookId: "frankenstein",       completedOn: "Jan 2025" },
-]
-
 // ── Helpers ────────────────────────────────────
 
-function heatColor(v: number): string {
-  if (v === 0) return "var(--tome-surface-recessed, #e5e7eb)"
-  if (v === 1) return "rgba(99,102,241,0.25)"
-  if (v === 2) return "rgba(99,102,241,0.55)"
-  return "rgba(99,102,241,0.90)"
+function relativeTime(iso: string): string {
+  const diff = Date.now() - new Date(iso).getTime()
+  const day = 86_400_000
+  if (diff < day) return "Today"
+  const days = Math.floor(diff / day)
+  if (days === 1) return "Yesterday"
+  if (days < 7) return `${days} days ago`
+  const weeks = Math.floor(days / 7)
+  if (weeks === 1) return "1 week ago"
+  if (weeks < 5) return `${weeks} weeks ago`
+  const months = Math.floor(days / 30)
+  return months <= 1 ? "1 month ago" : `${months} months ago`
+}
+
+function monthYear(iso: string): string {
+  return new Date(iso).toLocaleDateString(undefined, { month: "short", year: "numeric" })
 }
 
 function OrnamentalDivider({ color }: { color: string }) {
@@ -165,6 +97,10 @@ function OrnamentalDivider({ color }: { color: string }) {
 // ── Main Page ──────────────────────────────────
 
 export default function ProfilePage() {
+  const router = useRouter()
+  const { user, profile, isDemoMode, signOut } = useAuth()
+  const { stats } = useEconomy()
+
   const [allProgress, setAllProgress]   = useState<ReturnType<typeof getAllBookProgress>>({})
   const [shelfTab,    setShelfTab]       = useState<"progress" | "completed">("progress")
   const [settingMode, _setSettingMode]    = useState<"guided" | "free">(() => {
@@ -184,11 +120,13 @@ export default function ProfilePage() {
   const [shareOpen,   setShareOpen]      = useState(false)
   const [avatarCharacter, setAvatarCharacter] = useState<BookCharacter | null>(null)
   const [pickerOpen, setPickerOpen] = useState(false)
+  const [achState, setAchState] = useState<ReturnType<typeof loadAchievementState>>({ unlocks: {} })
 
   const refreshAvatar = () => setAvatarCharacter(getCurrentAvatar())
 
   useEffect(() => {
     setAllProgress(getAllBookProgress())
+    setAchState(loadAchievementState())
     refreshAvatar()
   }, [])
 
@@ -196,39 +134,86 @@ export default function ProfilePage() {
 
   const allBooks = useMemo(() => getBooks(), [])
 
-  // Compute stats from live progress, fall back to demo seed
-  const totalXp = useMemo(() => {
-    const live = Object.values(allProgress).reduce((s, p) => s + p.totalXpEarned, 0)
-    return live > 0 ? live : DEMO_XP
-  }, [allProgress])
+  // ── Real identity ──────────────────────────────
+  const displayName = profile?.display_name || displayCharacter?.name || "Reader"
+  const accountEmail = user?.email ?? (profile?.username ? `@${profile.username}` : null)
+  const memberSince = user?.created_at
+    ? new Date(user.created_at).toLocaleDateString(undefined, { month: "long", year: "numeric" })
+    : null
 
-  const totalChapters = useMemo(() => {
-    const live = Object.values(allProgress).reduce((s, p) => s + p.completedChapterIndices.length, 0)
-    return live > 0 ? live : 23
-  }, [allProgress])
+  // ── Real stats (economy + reading progress) ────
+  const totalXp = stats.xp_total
+  const streak = stats.current_streak
+  const bestStreak = stats.longest_streak
 
-  const booksStarted = useMemo(() => {
-    const live = Object.keys(allProgress).length
-    return live > 0 ? live : 4
-  }, [allProgress])
+  const totalChapters = useMemo(
+    () => Object.values(allProgress).reduce((s, p) => s + p.completedChapterIndices.length, 0),
+    [allProgress],
+  )
+  const booksStarted = useMemo(() => Object.keys(allProgress).length, [allProgress])
 
   const levelInfo = getLevelInfo(totalXp)
   const accentColor = "#6366F1"
   const quoteIdx = Math.floor(Date.now() / 86_400_000) % READING_QUOTES.length
   const quote    = READING_QUOTES[quoteIdx]
 
-  // Build bookshelf book data
-  const shelfInProgress = SHELF_IN_PROGRESS.map(({ bookId, pct, lastRead }) => ({
-    book: allBooks.find((b) => b.id === bookId),
-    pct, lastRead,
-  })).filter((x) => x.book != null) as { book: NonNullable<typeof allBooks[0]>; pct: number; lastRead: string }[]
+  // ── Real bookshelf, derived from saved progress ─
+  const shelfEntries = useMemo(() => {
+    return Object.values(allProgress)
+      .map((p) => ({ p, book: allBooks.find((b) => b.id === p.bookId) }))
+      .filter((x): x is { p: typeof x.p; book: NonNullable<typeof x.book> } => x.book != null)
+  }, [allProgress, allBooks])
 
-  const shelfCompleted = SHELF_COMPLETED.map(({ bookId, completedOn }) => ({
-    book: allBooks.find((b) => b.id === bookId),
-    completedOn,
-  })).filter((x) => x.book != null) as { book: NonNullable<typeof allBooks[0]>; completedOn: string }[]
+  const shelfInProgress = useMemo(() =>
+    shelfEntries
+      .filter(({ p, book }) => p.completedChapterIndices.length < book.chapters)
+      .sort((a, b) => new Date(b.p.lastReadAt).getTime() - new Date(a.p.lastReadAt).getTime())
+      .map(({ p, book }) => ({
+        book,
+        pct: Math.min(100, Math.round((p.completedChapterIndices.length / Math.max(1, book.chapters)) * 100)),
+        lastRead: relativeTime(p.lastReadAt),
+      })),
+    [shelfEntries],
+  )
 
-  const maxWeeklyXp = Math.max(...WEEKLY_XP, DAILY_GOAL)
+  const shelfCompleted = useMemo(() =>
+    shelfEntries
+      .filter(({ p, book }) => p.completedChapterIndices.length >= book.chapters)
+      .sort((a, b) => new Date(b.p.lastReadAt).getTime() - new Date(a.p.lastReadAt).getTime())
+      .map(({ p, book }) => ({ book, completedOn: monthYear(p.lastReadAt) })),
+    [shelfEntries],
+  )
+
+  // ── Real progress by tradition (over started books) ─
+  const traditionProgress = useMemo(() => {
+    const byTradition: Record<string, { done: number; total: number }> = {}
+    for (const { p, book } of shelfEntries) {
+      const t = book.tradition
+      if (!byTradition[t]) byTradition[t] = { done: 0, total: 0 }
+      byTradition[t].done += p.completedChapterIndices.length
+      byTradition[t].total += book.chapters
+    }
+    return Object.entries(byTradition)
+      .map(([tradition, v]) => ({ tradition, ...v }))
+      .sort((a, b) => b.done - a.done)
+  }, [shelfEntries])
+
+  // ── Real achievements ──────────────────────────
+  const { earnedBadges, earnedCount, totalAchievements } = useMemo(() => {
+    const all = getAllAchievements()
+    const earned = all.filter((a) => achState.unlocks[a.id])
+    return {
+      earnedBadges: earned,
+      earnedCount: earned.length,
+      totalAchievements: all.length,
+    }
+  }, [achState])
+
+  async function handleSignOut() {
+    await signOut()
+    router.push("/")
+    router.refresh()
+  }
 
   return (
     <div className="min-h-screen pb-32">
@@ -298,10 +283,15 @@ export default function ProfilePage() {
 
             {/* Info */}
             <div className="flex-1 min-w-0 text-center sm:text-left">
-              <h1 className="font-serif text-3xl font-bold tracking-tight">Matthew</h1>
-              <p className="text-sm text-muted-foreground mt-0.5">reader@tome.app</p>
+              <h1 className="font-serif text-3xl font-bold tracking-tight">{displayName}</h1>
+              {accountEmail && (
+                <p className="text-sm text-muted-foreground mt-0.5">{accountEmail}</p>
+              )}
               <p className="text-sm font-medium mt-1" style={{ color: accentColor }}>
                 {levelInfo.current.title}
+                {isDemoMode && (
+                  <span className="ml-2 text-[10px] text-muted-foreground/70">· demo mode</span>
+                )}
               </p>
 
               {/* XP bar */}
@@ -323,7 +313,9 @@ export default function ProfilePage() {
                 </div>
               </div>
 
-              <p className="text-[11px] text-muted-foreground/60 mt-2">Member since {DEMO_JOIN_DATE}</p>
+              {memberSince && (
+                <p className="text-[11px] text-muted-foreground/60 mt-2">Member since {memberSince}</p>
+              )}
             </div>
           </section>
         </BlurFade>
@@ -333,7 +325,7 @@ export default function ProfilePage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {[
               { label: "Total Wisdom",      value: totalXp.toLocaleString(),       icon: Sparkles, color: "#F59E0B", sub: "XP" },
-              { label: "Day Streak",         value: DEMO_STREAK,                    icon: Flame,    color: "#F97316", sub: `Best: ${DEMO_BEST}` },
+              { label: "Day Streak",         value: streak,                         icon: Flame,    color: "#F97316", sub: `Best: ${bestStreak}` },
               { label: "Books Started",      value: booksStarted,                   icon: BookOpen, color: "#0EA5E9", sub: "in library" },
               { label: "Chapters Done",      value: totalChapters,                  icon: Bookmark, color: "#8B5CF6", sub: "completed" },
             ].map(({ label, value, icon: Icon, color, sub }) => (
@@ -354,148 +346,48 @@ export default function ProfilePage() {
           </div>
         </BlurFade>
 
-        {/* ── 3. Weekly Activity Chart ──────────── */}
-        <BlurFade delay={0.12} inView>
-          <section>
-            <h2 className="font-serif text-xl font-semibold tracking-tight mb-1">This Week</h2>
-            <OrnamentalDivider color={accentColor} />
+        {/* ── Virgil Reflection ─────────────────── */}
+        <VirgilReflection type="progress" context={{ booksRead: Object.keys(allProgress), chaptersCompleted: totalChapters, streakDays: streak }} />
 
-            <div className="rounded-xl border border-border bg-card p-5">
-              <div className="flex items-end gap-2 h-28 relative">
-                {/* Goal reference line */}
-                <div
-                  className="absolute left-0 right-0 border-t border-dashed"
-                  style={{
-                    bottom: `${(DAILY_GOAL / maxWeeklyXp) * 100}%`,
-                    borderColor: `${accentColor}44`,
-                  }}
-                >
-                  <span
-                    className="absolute right-0 -top-4 text-[9px] font-medium px-1"
-                    style={{ color: `${accentColor}99` }}
-                  >
-                    Goal
-                  </span>
-                </div>
+        {/* ── 3. Tradition Progress ─────────────── */}
+        {traditionProgress.length > 0 && (
+          <BlurFade delay={0.16} inView>
+            <section>
+              <h2 className="font-serif text-xl font-semibold tracking-tight mb-1">
+                Progress by Tradition
+              </h2>
+              <OrnamentalDivider color={accentColor} />
 
-                {WEEKLY_XP.map((xp, i) => {
-                  const pct   = (xp / maxWeeklyXp) * 100
-                  const isToday = i === 4 // Friday demo
+              <div className="rounded-xl border border-border bg-card p-5 space-y-4">
+                {traditionProgress.map(({ tradition, done, total }) => {
+                  const pct   = Math.round((done / Math.max(1, total)) * 100)
+                  const tcolor = TRADITION_COLORS[tradition]?.dot ?? accentColor
                   return (
-                    <div key={i} className="flex-1 flex flex-col items-center gap-1">
-                      {xp > 0 && (
-                        <span className="text-[9px] text-muted-foreground">{xp}</span>
-                      )}
-                      <div className="w-full rounded-t-sm overflow-hidden" style={{ height: "80px" }}>
+                    <div key={tradition}>
+                      <div className="flex items-center justify-between text-xs mb-1.5">
+                        <span className="font-medium">{tradition}</span>
+                        <span className="text-muted-foreground">
+                          {done} / {total} chapters
+                        </span>
+                      </div>
+                      <div className="h-1.5 bg-muted rounded-full overflow-hidden">
                         <motion.div
-                          className="w-full rounded-t-sm mt-auto"
-                          style={{
-                            backgroundColor: isToday ? accentColor : `${accentColor}66`,
-                            marginTop: `${100 - pct}%`,
-                            height: `${pct}%`,
-                          }}
-                          initial={{ scaleY: 0, originY: 1 }}
-                          animate={{ scaleY: 1 }}
-                          transition={{ delay: i * 0.05, duration: 0.4, ease: "easeOut" }}
+                          className="h-full rounded-full"
+                          style={{ backgroundColor: tcolor }}
+                          initial={{ width: 0 }}
+                          animate={{ width: `${pct}%` }}
+                          transition={{ duration: 0.6, ease: "easeOut" }}
                         />
                       </div>
-                      <span
-                        className={cn("text-[10px]", isToday ? "font-bold" : "text-muted-foreground/60")}
-                        style={isToday ? { color: accentColor } : {}}
-                      >
-                        {DAYS_LABEL[i]}
-                      </span>
                     </div>
                   )
                 })}
               </div>
-              <p className="text-[11px] text-muted-foreground/60 mt-3 text-right">
-                Daily goal: {DAILY_GOAL} XP
-              </p>
-            </div>
-          </section>
-        </BlurFade>
+            </section>
+          </BlurFade>
+        )}
 
-        {/* ── Virgil Reflection ─────────────────── */}
-        <VirgilReflection type="progress" context={{ booksRead: Object.keys(allProgress), chaptersCompleted: totalChapters, streakDays: DEMO_STREAK }} />
-
-        {/* ── 4. Streak Calendar ────────────────── */}
-        <BlurFade delay={0.14} inView>
-          <section>
-            <div className="flex items-center justify-between mb-1">
-              <h2 className="font-serif text-xl font-semibold tracking-tight">Reading Streak</h2>
-              <div className="flex items-center gap-1.5 text-sm font-semibold" style={{ color: "#F97316" }}>
-                <Flame className="size-4" />
-                {DEMO_STREAK} days
-              </div>
-            </div>
-            <OrnamentalDivider color={accentColor} />
-
-            <div className="rounded-xl border border-border bg-card p-5">
-              {/* Grid: 12 cols (weeks) × 7 rows (days) */}
-              <div className="flex gap-1 overflow-x-auto pb-2">
-                {HEATMAP.map((week, wi) => (
-                  <div key={wi} className="flex flex-col gap-1">
-                    {week.map((v, di) => (
-                      <div
-                        key={di}
-                        className="size-3 rounded-[2px] shrink-0"
-                        style={{ backgroundColor: heatColor(v) }}
-                        title={v === 0 ? "No activity" : v === 1 ? "Light" : v === 2 ? "Active" : "Heavy"}
-                      />
-                    ))}
-                  </div>
-                ))}
-              </div>
-              {/* Legend */}
-              <div className="flex items-center gap-1.5 mt-3 text-[10px] text-muted-foreground/60">
-                <span>Less</span>
-                {[0, 1, 2, 3].map((v) => (
-                  <div key={v} className="size-3 rounded-[2px]" style={{ backgroundColor: heatColor(v) }} />
-                ))}
-                <span>More</span>
-              </div>
-            </div>
-          </section>
-        </BlurFade>
-
-        {/* ── 5. Tradition Progress ─────────────── */}
-        <BlurFade delay={0.16} inView>
-          <section>
-            <h2 className="font-serif text-xl font-semibold tracking-tight mb-1">
-              Progress by Tradition
-            </h2>
-            <OrnamentalDivider color={accentColor} />
-
-            <div className="rounded-xl border border-border bg-card p-5 space-y-4">
-              {TRADITION_PROGRESS.map(({ tradition, done, total }) => {
-                const pct   = Math.round((done / total) * 100)
-                const tcolor = TRADITION_COLORS[tradition]?.dot ?? accentColor
-                return (
-                  <div key={tradition}>
-                    <div className="flex items-center justify-between text-xs mb-1.5">
-                      <span className="font-medium">{tradition}</span>
-                      <span className="text-muted-foreground">
-                        {done} / {total} chapters
-                      </span>
-                    </div>
-                    <div className="h-1.5 bg-muted rounded-full overflow-hidden">
-                      <motion.div
-                        className="h-full rounded-full"
-                        style={{ backgroundColor: tcolor }}
-                        initial={{ width: 0 }}
-                        animate={{ width: `${pct}%` }}
-                        transition={{ duration: 0.6, ease: "easeOut" }}
-                      />
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
-          </section>
-        </BlurFade>
-
-        {/* ── 6. Achievements ───────────────────── */}
+        {/* ── 4. Achievements ───────────────────── */}
         <BlurFade delay={0.18} inView>
           <section>
             <div className="flex items-center justify-between mb-1">
@@ -511,96 +403,43 @@ export default function ProfilePage() {
 
             <div className="rounded-xl border border-border bg-card p-5">
               <p className="text-sm text-muted-foreground mb-4">
-                <span className="font-semibold text-foreground">{ACHIEVEMENTS_EARNED}</span> of{" "}
-                {ACHIEVEMENTS_TOTAL} earned
+                <span className="font-semibold text-foreground">{earnedCount}</span> of{" "}
+                {totalAchievements} earned
               </p>
-              <div className="flex gap-3 overflow-x-auto pb-1">
-                {ACHIEVEMENT_BADGES.map(({ id, icon: Icon, name, color }) => (
-                  <div key={id} className="shrink-0 flex flex-col items-center gap-1.5 group">
-                    <div
-                      className="size-12 rounded-full flex items-center justify-center"
-                      style={{
-                        background: `${color}20`,
-                        border: `1.5px solid ${color}55`,
-                      }}
-                      title={name}
-                    >
-                      <Icon className="size-5" style={{ color }} />
-                    </div>
-                    <span className="text-[9px] text-muted-foreground text-center w-12 leading-tight truncate">
-                      {name}
-                    </span>
-                  </div>
-                ))}
-                {/* Locked placeholder */}
-                {Array.from({ length: 3 }).map((_, i) => (
-                  <div key={`lock-${i}`} className="shrink-0 flex flex-col items-center gap-1.5 opacity-30">
-                    <div className="size-12 rounded-full flex items-center justify-center bg-muted border border-border">
-                      <Lock className="size-4 text-muted-foreground" />
-                    </div>
-                    <span className="text-[9px] text-muted-foreground text-center">???</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-        </BlurFade>
-
-        {/* ── 7. Challenges ─────────────────────── */}
-        <BlurFade delay={0.2} inView>
-          <section>
-            <div className="flex items-center justify-between mb-1">
-              <h2 className="font-serif text-xl font-semibold tracking-tight">Challenges</h2>
-              <span className="text-[11px] text-muted-foreground/60">This period</span>
-            </div>
-            <OrnamentalDivider color={accentColor} />
-
-            <div className="space-y-3">
-              {CHALLENGES.map(({ id, label, icon: Icon, done, total, color }) => {
-                const pct       = Math.round((done / total) * 100)
-                const completed = done >= total
-                return (
-                  <div
-                    key={id}
-                    className="rounded-xl border border-border bg-card p-4 flex items-start gap-3"
-                  >
-                    <div
-                      className="mt-0.5 shrink-0 size-8 rounded-full flex items-center justify-center"
-                      style={{ background: `${color}20` }}
-                    >
-                      <Icon className="size-4" style={{ color }} />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center justify-between gap-2 mb-1.5">
-                        <p className="text-sm font-medium leading-tight">{label}</p>
-                        {completed ? (
-                          <span
-                            className="flex items-center gap-0.5 text-[10px] font-semibold shrink-0"
-                            style={{ color: "#22C55E" }}
-                          >
-                            <Check className="size-3" /> Complete
-                          </span>
-                        ) : (
-                          <span className="text-[11px] text-muted-foreground shrink-0">
-                            {done}/{total}
-                          </span>
-                        )}
-                      </div>
-                      <div className="h-1.5 bg-muted rounded-full overflow-hidden">
+              {earnedBadges.length > 0 ? (
+                <div className="flex gap-3 overflow-x-auto pb-1">
+                  {earnedBadges.map((a) => {
+                    const color = RARITY_WAX_COLORS[a.rarity]
+                    return (
+                      <Link
+                        key={a.id}
+                        href={`/seals/${a.slug}`}
+                        className="shrink-0 flex flex-col items-center gap-1.5 group"
+                      >
                         <div
-                          className="h-full rounded-full transition-all duration-500"
-                          style={{ width: `${pct}%`, backgroundColor: completed ? "#22C55E" : color }}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                )
-              })}
+                          className="size-12 rounded-full flex items-center justify-center text-white font-serif text-sm font-bold"
+                          style={{ background: color, border: `1.5px solid ${color}` }}
+                          title={a.name}
+                        >
+                          {a.name.charAt(0)}
+                        </div>
+                        <span className="text-[9px] text-muted-foreground text-center w-14 leading-tight truncate">
+                          {a.name}
+                        </span>
+                      </Link>
+                    )
+                  })}
+                </div>
+              ) : (
+                <p className="text-sm text-muted-foreground/70">
+                  No seals earned yet. Finish a book to claim your first.
+                </p>
+              )}
             </div>
           </section>
         </BlurFade>
 
-        {/* ── 8. Bookshelf ──────────────────────── */}
+        {/* ── 5. Bookshelf ──────────────────────── */}
         <BlurFade delay={0.22} inView>
           <section>
             <h2 className="font-serif text-xl font-semibold tracking-tight mb-1">My Bookshelf</h2>
@@ -625,96 +464,107 @@ export default function ProfilePage() {
             </div>
 
             {shelfTab === "progress" && (
-              <div className="flex gap-3 overflow-x-auto pb-3 -mx-1 px-1 snap-x snap-mandatory">
-                {shelfInProgress.map(({ book, pct, lastRead }) => {
-                  const tradColor    = TRADITION_COLORS[book.tradition]
-                  return (
-                    <div key={book.id} className="shrink-0 snap-start w-32">
-                      <Link href={`/book/${book.id}`} className="group block">
-                        <div className="relative rounded-lg overflow-hidden shadow-sm group-hover:shadow-md transition-shadow mb-2">
-                          <ClassicsCover
-                            bookId={book.id}
-                            title={book.title}
-                            author={book.author}
-                            tradition={book.tradition}
-                            fallbackColors={book.coverColors}
-                            showTomeWordmark={false}
-                            className="w-full rounded-none"
-                          />
-                          {/* Progress overlay */}
-                          <div
-                            className="absolute bottom-0 left-0 right-0 h-1"
-                            style={{ background: "rgba(0,0,0,0.3)" }}
-                          >
-                            <div
-                              className="h-full"
-                              style={{
-                                width: `${pct}%`,
-                                backgroundColor: tradColor?.dot ?? accentColor,
-                              }}
+              shelfInProgress.length > 0 ? (
+                <div className="flex gap-3 overflow-x-auto pb-3 -mx-1 px-1 snap-x snap-mandatory">
+                  {shelfInProgress.map(({ book, pct, lastRead }) => {
+                    const tradColor    = TRADITION_COLORS[book.tradition]
+                    return (
+                      <div key={book.id} className="shrink-0 snap-start w-32">
+                        <Link href={`/book/${book.id}`} className="group block">
+                          <div className="relative rounded-lg overflow-hidden shadow-sm group-hover:shadow-md transition-shadow mb-2">
+                            <ClassicsCover
+                              bookId={book.id}
+                              title={book.title}
+                              author={book.author}
+                              tradition={book.tradition}
+                              fallbackColors={book.coverColors}
+                              showTomeWordmark={false}
+                              className="w-full rounded-none"
                             />
+                            {/* Progress overlay */}
+                            <div
+                              className="absolute bottom-0 left-0 right-0 h-1"
+                              style={{ background: "rgba(0,0,0,0.3)" }}
+                            >
+                              <div
+                                className="h-full"
+                                style={{
+                                  width: `${pct}%`,
+                                  backgroundColor: tradColor?.dot ?? accentColor,
+                                }}
+                              />
+                            </div>
                           </div>
-                        </div>
-                        <p className="text-[11px] font-medium leading-tight line-clamp-2 group-hover:text-[color:var(--tome-accent)] transition-colors mb-0.5">
-                          {book.title}
-                        </p>
-                      </Link>
-                      <span onClick={(e) => e.preventDefault()}>
-                        <AuthorLink
-                          name={book.author}
-                          className="text-[10px] text-muted-foreground hover:text-[var(--tome-accent)] transition-colors"
-                        />
-                      </span>
-                      <p className="text-[10px] text-muted-foreground/60 mt-0.5">{pct}% · {lastRead}</p>
-                    </div>
-                  )
-                })}
-              </div>
+                          <p className="text-[11px] font-medium leading-tight line-clamp-2 group-hover:text-[color:var(--tome-accent)] transition-colors mb-0.5">
+                            {book.title}
+                          </p>
+                        </Link>
+                        <span onClick={(e) => e.preventDefault()}>
+                          <AuthorLink
+                            name={book.author}
+                            className="text-[10px] text-muted-foreground hover:text-[var(--tome-accent)] transition-colors"
+                          />
+                        </span>
+                        <p className="text-[10px] text-muted-foreground/60 mt-0.5">{pct}% · {lastRead}</p>
+                      </div>
+                    )
+                  })}
+                </div>
+              ) : (
+                <p className="text-sm text-muted-foreground/70">
+                  Nothing in progress.{" "}
+                  <Link href="/library" className="text-[var(--tome-accent)] hover:underline">Browse the library</Link> to begin.
+                </p>
+              )
             )}
 
             {shelfTab === "completed" && (
-              <div className="flex gap-3 overflow-x-auto pb-3 -mx-1 px-1 snap-x snap-mandatory">
-                {shelfCompleted.map(({ book, completedOn }) => {
-                  return (
-                    <div key={book.id} className="shrink-0 snap-start w-32">
-                      <Link href={`/book/${book.id}`} className="group block">
-                        <div className="relative rounded-lg overflow-hidden shadow-sm mb-2">
-                          <ClassicsCover
-                            bookId={book.id}
-                            title={book.title}
-                            author={book.author}
-                            tradition={book.tradition}
-                            fallbackColors={book.coverColors}
-                            showTomeWordmark={false}
-                            className="w-full rounded-none"
-                          />
-                          {/* Checkmark overlay */}
-                          <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                            <div className="size-8 rounded-full bg-emerald-500/90 flex items-center justify-center">
-                              <Check className="size-4 text-white" />
+              shelfCompleted.length > 0 ? (
+                <div className="flex gap-3 overflow-x-auto pb-3 -mx-1 px-1 snap-x snap-mandatory">
+                  {shelfCompleted.map(({ book, completedOn }) => {
+                    return (
+                      <div key={book.id} className="shrink-0 snap-start w-32">
+                        <Link href={`/book/${book.id}`} className="group block">
+                          <div className="relative rounded-lg overflow-hidden shadow-sm mb-2">
+                            <ClassicsCover
+                              bookId={book.id}
+                              title={book.title}
+                              author={book.author}
+                              tradition={book.tradition}
+                              fallbackColors={book.coverColors}
+                              showTomeWordmark={false}
+                              className="w-full rounded-none"
+                            />
+                            {/* Checkmark overlay */}
+                            <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                              <div className="size-8 rounded-full bg-emerald-500/90 flex items-center justify-center">
+                                <Check className="size-4 text-white" />
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <p className="text-[11px] font-medium leading-tight line-clamp-2 group-hover:text-[color:var(--tome-accent)] transition-colors mb-0.5">
-                          {book.title}
-                        </p>
-                      </Link>
-                      <span onClick={(e) => e.preventDefault()}>
-                        <AuthorLink
-                          name={book.author}
-                          className="text-[10px] text-muted-foreground hover:text-[var(--tome-accent)] transition-colors"
-                        />
-                      </span>
-                      <p className="text-[10px] text-muted-foreground/60 mt-0.5"><Check className="size-3 inline" /> {completedOn}</p>
-                    </div>
-                  )
-                })}
-              </div>
+                          <p className="text-[11px] font-medium leading-tight line-clamp-2 group-hover:text-[color:var(--tome-accent)] transition-colors mb-0.5">
+                            {book.title}
+                          </p>
+                        </Link>
+                        <span onClick={(e) => e.preventDefault()}>
+                          <AuthorLink
+                            name={book.author}
+                            className="text-[10px] text-muted-foreground hover:text-[var(--tome-accent)] transition-colors"
+                          />
+                        </span>
+                        <p className="text-[10px] text-muted-foreground/60 mt-0.5"><Check className="size-3 inline" /> {completedOn}</p>
+                      </div>
+                    )
+                  })}
+                </div>
+              ) : (
+                <p className="text-sm text-muted-foreground/70">No completed books yet.</p>
+              )
             )}
           </section>
         </BlurFade>
 
-        {/* ── 9. Analytics Link ─────────────────── */}
+        {/* ── 6. Analytics Link ─────────────────── */}
         <BlurFade delay={0.24} inView>
           <Link
             href="/profile/stats"
@@ -736,7 +586,7 @@ export default function ProfilePage() {
           </Link>
         </BlurFade>
 
-        {/* ── 10. Shareable Progress Card ───────── */}
+        {/* ── 7. Shareable Progress Card ────────── */}
         <BlurFade delay={0.26} inView>
           <section>
             <div className="flex items-center justify-between mb-1">
@@ -773,7 +623,7 @@ export default function ProfilePage() {
                 </div>
 
                 {/* User name */}
-                <p className="font-serif text-white text-2xl font-bold mb-1">Matthew</p>
+                <p className="font-serif text-white text-2xl font-bold mb-1">{displayName}</p>
                 <p className="text-[#D4A04C]/70 text-sm mb-6">
                   {levelInfo.current.title} · Level {levelInfo.current.level}
                 </p>
@@ -782,9 +632,9 @@ export default function ProfilePage() {
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
                   {[
                     { label: "Wisdom", value: totalXp.toLocaleString() + " XP", icon: Sparkles },
-                    { label: "Streak",  value: `${DEMO_STREAK} days`,           icon: Flame },
-                    { label: "Books",   value: `${booksStarted}`,               icon: BookOpen },
-                    { label: "Chapters",value: `${totalChapters}`,              icon: Bookmark },
+                    { label: "Streak",  value: `${streak} days`,               icon: Flame },
+                    { label: "Books",   value: `${booksStarted}`,              icon: BookOpen },
+                    { label: "Chapters",value: `${totalChapters}`,             icon: Bookmark },
                   ].map(({ label, value, icon: Icon }) => (
                     <div key={label} className="rounded-xl bg-white/10 px-3 py-2.5">
                       <Icon className="size-3.5 text-[#D4A04C]/70 mb-1" />
@@ -810,8 +660,9 @@ export default function ProfilePage() {
             <div className="flex gap-3 mt-4">
               <button
                 onClick={() => {
+                  const handle = profile?.username ?? user?.id ?? "me"
                   if (navigator.clipboard) {
-                    navigator.clipboard.writeText("https://tome.app/profile/matthew")
+                    navigator.clipboard.writeText(`https://tome.app/profile/${handle}`)
                   }
                   setShareOpen(true)
                   setTimeout(() => setShareOpen(false), 2000)
@@ -830,7 +681,7 @@ export default function ProfilePage() {
           </section>
         </BlurFade>
 
-        {/* ── 11. Settings ──────────────────────── */}
+        {/* ── 8. Settings ───────────────────────── */}
         <BlurFade delay={0.28} inView>
           <section>
             <h2 className="font-serif text-xl font-semibold tracking-tight mb-1">Settings</h2>
@@ -936,7 +787,10 @@ export default function ProfilePage() {
 
               {/* Sign out */}
               <div className="px-5 py-4">
-                <button className="flex items-center gap-2 text-sm text-rose-500 hover:text-rose-600 font-medium transition-colors">
+                <button
+                  onClick={handleSignOut}
+                  className="flex items-center gap-2 text-sm text-rose-500 hover:text-rose-600 font-medium transition-colors"
+                >
                   <LogOut className="size-4" />
                   Sign Out
                 </button>

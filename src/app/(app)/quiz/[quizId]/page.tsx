@@ -100,6 +100,43 @@ const SAMPLE_QUESTIONS: Omit<Question, "quiz_id">[] = [
   { id: "q10", type: "fill_blank", prompt: "Mr. Darcy's first name is _____.", options: [], correct_answer: "Fitzwilliam", explanation: "His full name is Fitzwilliam Darcy.", order: 10 },
 ]
 
+// ── DB row → engine Question adapter ───────────
+// The `questions` table carries both the legacy MCQ columns
+// (question_text / option_a–d / correct_option) and the typed columns
+// (type / options / correct_answer / "order" / meta). This maps either shape
+// onto the engine's Question, so multiple_choice, true_false, fill_blank,
+// vocabulary_in_context, etc. all render correctly.
+function mapQuestionRow(row: Record<string, unknown>): Question {
+  const r = row as Record<string, unknown> & {
+    option_a?: string; option_b?: string; option_c?: string; option_d?: string
+    correct_option?: string; question_text?: string; meta?: Record<string, unknown> | null
+  }
+  const legacyOptions = [r.option_a, r.option_b, r.option_c, r.option_d].filter(
+    (o): o is string => typeof o === "string" && o.length > 0
+  )
+  const options: string[] = Array.isArray(r.options)
+    ? (r.options as string[])
+    : legacyOptions
+  const correctFromLetter =
+    r.correct_option === "A" ? r.option_a
+    : r.correct_option === "B" ? r.option_b
+    : r.correct_option === "C" ? r.option_c
+    : r.correct_option === "D" ? r.option_d
+    : undefined
+  const meta = (r.meta && typeof r.meta === "object" ? r.meta : {}) as Record<string, unknown>
+  return {
+    id: String(r.id),
+    quiz_id: String(r.quiz_id),
+    type: ((r.type as Question["type"]) ?? "multiple_choice"),
+    prompt: (r.prompt as string) ?? r.question_text ?? "",
+    options,
+    correct_answer: (r.correct_answer as string) ?? correctFromLetter ?? "",
+    explanation: (r.explanation as string) ?? null,
+    order: typeof r.order === "number" ? r.order : 0,
+    ...meta,
+  } as Question
+}
+
 // ── Main Component ─────────────────────────────
 
 export default function QuizPage() {
@@ -133,7 +170,7 @@ export default function QuizPage() {
       if (quizData) {
         const { data: qData } = await supabase
           .from("questions").select("*").eq("quiz_id", quizId).order("order")
-        questions = (qData ?? []) as Question[]
+        questions = (qData ?? []).map((row) => mapQuestionRow(row as Record<string, unknown>))
       }
       if (questions.length === 0) {
         questions = SAMPLE_QUESTIONS.map((q) => ({ ...q, quiz_id: quizId })) as Question[]

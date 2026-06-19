@@ -2,6 +2,7 @@
 
 import { revalidatePath } from "next/cache"
 import { z } from "zod"
+import { sendClassroomInviteEmail } from "@/lib/email/classroom-invite"
 import {
   type ActionResult,
   createAdminClient,
@@ -18,6 +19,10 @@ const Role = z.enum(["owner", "co_teacher", "ta", "student"])
 const CreateInput = z.object({
   name: z.string().trim().min(1).max(120),
   description: z.string().trim().max(2000).optional(),
+  subject: z.string().trim().max(120).optional(),
+  gradeLevel: z.string().trim().max(120).optional(),
+  maxStudents: z.number().int().min(1).max(100).optional(),
+  leaderboardEnabled: z.boolean().optional(),
 })
 
 // ── Mutations ─────────────────────────────────────────────────────────────
@@ -48,6 +53,10 @@ export async function createClassroom(
       .insert({
         name: parsed.data.name,
         description: parsed.data.description ?? null,
+        subject: parsed.data.subject ?? null,
+        grade_level: parsed.data.gradeLevel ?? null,
+        max_students: parsed.data.maxStudents ?? null,
+        leaderboard_enabled: parsed.data.leaderboardEnabled ?? true,
         teacher_id: user.id,
         join_code: joinCode,
       })
@@ -74,6 +83,36 @@ export async function createClassroom(
 
     revalidatePath("/classroom")
     return ok({ id: classroom.id, joinCode: classroom.join_code })
+  } catch (e) {
+    return fail((e as Error).message)
+  }
+}
+
+export async function lookupClassroomByCode(
+  code: string,
+): Promise<ActionResult<{ id: string; name: string; subject: string | null }>> {
+  const parsed = z
+    .string()
+    .trim()
+    .toUpperCase()
+    .min(1)
+    .max(20)
+    .safeParse(code)
+  if (!parsed.success) return fail("Invalid code.")
+  try {
+    // Must run as admin: the classrooms SELECT policy only returns rooms the
+    // viewer already belongs to, so a prospective student can't preview a
+    // room by its code through the user client.
+    await requireUser()
+    const admin = createAdminClient()
+    const { data, error } = await admin
+      .from("classrooms")
+      .select("id, name, subject")
+      .eq("join_code", parsed.data)
+      .maybeSingle()
+    if (error) return fail(error.message)
+    if (!data) return fail("No classroom found for that code.")
+    return ok({ id: data.id, name: data.name, subject: data.subject ?? null })
   } catch (e) {
     return fail((e as Error).message)
   }
@@ -159,14 +198,29 @@ export async function inviteToClassroom(
       .select("name")
       .eq("id", cParsed.data)
       .single()
+    const classroomName = classroom?.name ?? "a classroom"
 
     await notify({
       userId: uParsed.data,
       type: "classroom_invite",
-      title: `You were added to ${classroom?.name ?? "a classroom"}`,
+      title: `You were added to ${classroomName}`,
       actionUrl: `/classroom/${cParsed.data}`,
       sourceUserId: user.id,
       classroomId: cParsed.data,
+    })
+
+    // Best-effort invite email (preference-gated in the helper).
+    const { data: inviter } = await supabase
+      .from("profiles")
+      .select("display_name")
+      .eq("id", user.id)
+      .maybeSingle()
+    await sendClassroomInviteEmail({
+      inviteeId: uParsed.data,
+      classroomId: cParsed.data,
+      classroomName,
+      inviterName: inviter?.display_name ?? "Your teacher",
+      role: rParsed.data,
     })
 
     revalidatePath(`/classroom/${cParsed.data}`)

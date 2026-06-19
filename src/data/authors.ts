@@ -2814,11 +2814,11 @@ His plays — The Seagull, Uncle Vanya, Three Sisters, The Cherry Orchard — ga
  */
 export function authorSlug(name: string): string {
   return name
+    .normalize("NFD")                 // decompose accented letters (é → e + ◌́)
+    .replace(/[\u0300-\u036f]/g, "")  // strip the combining diacritic marks
     .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, "")   // remove non-alphanumeric except spaces and hyphens
-    .trim()
-    .replace(/\s+/g, "-")            // spaces → hyphens
-    .replace(/-+/g, "-")             // collapse multiple hyphens
+    .replace(/[^a-z0-9]+/g, "-")      // any run of non-alphanumerics → single hyphen
+    .replace(/^-+|-+$/g, "")          // trim leading/trailing hyphens
 }
 
 /**

@@ -5,6 +5,7 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { Safari } from "@/components/ui/safari"
+import { CANONICAL_BOOK_COUNT } from "@/lib/pricing"
 
 const ExploreDemoLoop = dynamic(
   () => import("./demos/ExploreDemoLoop").then((m) => ({ default: m.ExploreDemoLoop })),
@@ -25,7 +26,7 @@ export function ExploreSection() {
               36 traditions. Every continent.
             </h2>
             <p className="text-sm text-[#C4BFB6] leading-relaxed mb-6 max-w-sm">
-              From ancient Greece to modern Japan &mdash; explore 1,000+ books by region, era, and tradition. Click any country to discover its authors.
+              From ancient Greece to modern Japan &mdash; explore {CANONICAL_BOOK_COUNT} books by region, era, and tradition. Click any country to discover its authors.
             </p>
             <Link
               href="/explore"

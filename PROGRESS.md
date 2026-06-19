@@ -1,5 +1,37 @@
 # Progress
 
+## E-Reader — Quality Pass 2 (2026-06-16)
+
+All three reading modes (scroll, single, spread) consume one shared reading
+token layer on `.reader-surface`; modes differ only in layout, never type/color.
+
+- **Day color reverted to original (not cream).** `[data-reader-theme="day"]`
+  now sources `--reader-bg/-ink/-muted/-edge` from the app's semantic tokens
+  (`var(--background)` etc. → white `#f8f9fb`), matching the pre-e-reader scroll
+  reader instead of the parchment `#FAF6EC` tint. Night keeps the established
+  warm-dark surface (`#1C1914` bg, `#E8DCC8` ink, gold `#D4A04C` accent — no
+  invented brand colors). `src/styles/tome.css`.
+- **Spread no longer stretches edge-to-edge.** The paginator measured each
+  spread column at the full half-container width (~635px on a 1440px viewport)
+  while the rendered paper was capped at `min(45vw, 500px)` — a mismatch that
+  reflowed text too wide. Both the live driver and the pre-measure pass now cap
+  the column at `Math.min(500, (w - SPREAD_SPINE)/2) - PAGE_PADDING_H` so
+  measurement == render. Single stays at 680px (scroll parity).
+  `src/app/(app)/read/[bookId]/page.tsx`.
+- **Over-tall blocks split across pages (no clip).** `src/lib/paginator.ts`
+  rewritten: a block taller than a page (e.g. the multi-paragraph "Interlude"
+  letter `<blockquote>`) is recursively split into its block children via
+  `paginateBlocks(blocks, pageHeight, makeProbe, wrapTemplate)`. Each page-slice
+  is re-wrapped in a shallow clone of the block so the blockquote's left rule /
+  list markers survive the break; a fresh probe per recursion keeps nested
+  measurements from disturbing parent offsets; truly atomic over-tall blocks
+  (lone image) still get their own page. Verified live: the letter now flows
+  across pages with 0 vertical overflow on every page; horizontal overflow 0.
+- **Subtitle once, day/night persistence.** stripLeadingHeading strips leading
+  `<hgroup>` so SE inline headings don't duplicate the metadata header. Day/night
+  is a single `prefs.theme` key independent of `prefs.mode`, so switching layout
+  never resets the color choice; persists to localStorage + survives reload.
+
 ## Tome Beta Demo — Marketing surface polish (2026-04-30)
 
 Four coordinated changes to ready Tome's public surface for the YC beta demo.
@@ -827,3 +859,128 @@ Added to src/styles/globals.css (appended after @layer base). All accept a
    available). CTA currently bg-foreground (ink). Owns Reader/lapis for
    the primary CTA + Catalogue/tyrian for chrome (breadcrumb/section
    accents). Keep per-tradition tradColor for covers/badges (identity).
+
+## Kindle-style paginated reader — Single · Spread · Scroll (2026-06-16)
+
+A form-aware paginated e-reader layered onto the existing `/read/[bookId]`
+route. **Scroll stays the default** and is untouched as a reading mode;
+Single page and Two-page Spread are new, width-gated additions.
+
+### New infrastructure (dependency-free)
+- `src/lib/reader/reader-prefs.ts` — global prefs store via React
+  `useSyncExternalStore` (no zustand), mirrored to `localStorage`
+  (`tome-reader-prefs`). Fields: mode/theme/fontSizePx/lineHeight/measureCh/
+  justify/turnStyle/a11yFace/showFrontMatter. `coerce()` clamps + validates
+  all input. `DARK_SURFACE_THEMES` pairs dark/night surfaces with next-themes
+  dark chrome.
+- `src/lib/reader/sanitize.ts` — DOMParser allowlist sanitizer (no
+  isomorphic-dompurify dep). All loaded chapter HTML passes through it.
+- `src/lib/reader/reader-sync.ts` — additive Supabase account sync.
+  `useReaderPrefsSync()` (remote load + 800ms debounced upsert),
+  `saveReadingPosition()` / `fetchReadingPosition()` (1200ms debounce).
+  All calls auth-gated + try/catch — a missing table never breaks reading.
+- `src/components/reader/reader-settings-panel.tsx` — Kindle-style controls:
+  Mode (Scroll/Single/Spread, spread disabled <1024px), Theme (Parchment
+  default/Sepia/Dark/Night), Font size, Line spacing, Line length, Justify,
+  Page turn (Slide/Fade/None), Accessible reading face. All from `--codex-*`
+  tokens.
+
+### Engine & integration
+- `src/lib/paginator.ts` — DOM-measurement block-accumulation paginator
+  (off-DOM probe; a leaf block taller than a page is emitted alone).
+  **Fix:** `normalizeToBlocks` now descends into transparent structural
+  containers (`article`/`section`/`div`/`main`/`header`/`footer`/`aside`)
+  and flattens to their block children. Real chapters are wrapped in a
+  single top-level `<article>`; previously the whole chapter measured as
+  one atomic block → one giant page. Leaf blocks (p, headings, blockquote,
+  lists, table, figure) stay atomic.
+- `src/app/(app)/read/[bookId]/page.tsx` — integrated prefs/sanitize/sync.
+  **Two pagination fixes:**
+  1. Container measurement moved from an `[isScroll]`-keyed effect (which
+     raced the scroll→paginated mount and left `containerDims` stuck at
+     `{0,0}`, blocking the driver) to a **callback ref**
+     (`setPaginationContainer`) that measures on attach (post-layout) and
+     re-measures via ResizeObserver (200ms debounce).
+  2. Added `chapterHTML` to the pagination driver deps so the driver
+     re-runs when chapter content loads asynchronously (placeholder →
+     real); previously pagination stayed stuck on the placeholder stub.
+- `src/components/guided-learning/locked-reader.tsx` — updated to the new
+  PaginatedReader props (mode="single", lineHeight/justify/a11yFace/turnStyle).
+
+### Verified in preview (single + spread, parchment)
+- Non-fiction — The Republic (1.3 MB / one `<article>`): 1697 spread pages.
+- Poetry — Paradise Lost Book I: 22 pages, verse line breaks preserved.
+- Drama — Hamlet ch-0 (short `<section>`): 1 page (correct; descent finds
+  H2/UL/P).
+- Novel — A Tale of Two Cities: paginates; runtime scroll→spread switch
+  re-measures correctly via the callback ref.
+- `npx tsc --noEmit` clean.
+
+### Pending — DB migration (NOT yet applied)
+`supabase/migrations/20260618000000_reading_sync.sql` proposed:
+`reading_preferences` (user_id PK, prefs jsonb) + `reading_progress`
+(PK user_id,book_id; page/scroll_ratio nullable), both owner-only RLS
+(`auth.uid() = user_id`), insert+update policies so upserts pass RLS.
+Awaiting approval before applying to live DB (vjaezrcuuzmbmnsfrtwt).
+
+## Reader parity — paginated matches scroll (2026-06-16)
+Single-page and two-page (spread) modes now render with **scroll's exact
+typography** — differing only in layout. See `READER_PARITY.md` for the full
+drift table.
+
+- Shared reading-token layer on `.reader-surface` (set from prefs in
+  `read/[bookId]/page.tsx`): `--reader-font-size`, `--reader-line-height`,
+  `--reader-measure`, `--reader-pad-x`, `--reader-pad-y`. Both the scroll body
+  and the paginated surface descend from this one ancestor and consume the
+  tokens — no per-mode typography values.
+- Scroll body switched from inline `font-size`/`line-height`/`--measure` to the
+  cascading tokens (identical resolved values → scroll unchanged, verified
+  19px / 34.2px / 616px text / Literata / ink before and after).
+- `paginated-reader.tsx`: content div gained `.reader-measure mx-auto` and now
+  reads `var(--reader-font-size)`/`var(--reader-line-height)`; per-page padding
+  routed through `var(--reader-pad-x)` (32px/side); single paper widened
+  `min(92vw,640px)` → `min(92vw,680px)` to match scroll's `max-w-[680px]`.
+- Paginator measurement moved in lockstep: `PAGE_PADDING_H` 96→64, single
+  `usableW` clamp 640→680. Single-page text width now **616px = scroll**.
+- Colors were already 100% token-derived (no literal hex on the paginated
+  component) — verified, no change needed.
+- Vertical per-page padding kept at 40px (deliberate page-layout constant; not
+  drift). Spread columns are narrower (436px) by physical necessity — layout,
+  not typography.
+- Verified live across single + spread (1440px viewport for true spread);
+  `npx tsc --noEmit` clean.
+
+## E-Reader overhaul — whole-book folios + chapter header (2026-06-16)
+Paginated modes (single + spread) now carry true page numbering and
+scroll-matched chapter chrome. Verified live on *A Tale of Two Cities*.
+
+- **Whole-book folio map** (`folioMap` state in `read/[bookId]/page.tsx`):
+  pre-measures every chapter off-screen on open (Approach A) and recomputes on
+  mode / font-size / viewport / prefs change. Reuses `paginateHTML`'s module
+  cache so the live chapter is measured once. `counts[i]` = page count,
+  `matter[i]` = front|body.
+- **Front vs body matter** derived from the leading `role="doc-*"` in the
+  content HTML (Standard Ebooks `epub:type`). `FRONT_MATTER_ROLES` =
+  preface/foreword/introduction/dedication/epigraph/prologue/acknowledgments/
+  colophon. Front matter → **lowercase roman** (i, ii, iii…); body matter →
+  **arabic restarting at 1** on the first body page. Cumulative across chapters
+  within the same matter class (`folioLabel`). Verified: Preface → i/ii; "Book
+  the First" (first body) → 1/2; chapter 13 → 207/208.
+- **Outer-corner placement** (`paginated-reader.tsx` `renderPage(idx, side)`):
+  verso → bottom-LEFT, recto/single → bottom-RIGHT, inset `var(--reader-pad-x)`,
+  never centered, never in the gutter. Removed the centered "{pageIndex+1}" and
+  ProgressStrip's centered "Page X of Y" text (bar kept).
+- **Paginated chapter header** prepended as an atomic `<figure
+  class="reader-chapter-header">` (eyebrow + Literata title + optional
+  subtitle) so it lands on page 1 without leaking into the `p+p` indent chain.
+  Same eyebrow/title/subtitle logic as the scroll header
+  (`chapterHeaderPartsFor`). Header height is included in the pre-measure so
+  page counts stay accurate. Verified Literata 30px, first para un-indented,
+  subsequent paras indented.
+- `npx tsc --noEmit` clean.
+
+### Open sign-off
+- **Chapter title font**: in-reader titles render in **Literata** (parity with
+  scroll, which the spec locks as the source of truth). RUBRIC reserves Fraunces
+  for display chrome. Left as Literata to honor "do not touch scroll"; flag if
+  you want in-reader titles switched to Fraunces in BOTH modes.

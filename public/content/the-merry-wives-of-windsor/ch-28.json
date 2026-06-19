@@ -1,8 +1,1 @@
-{
-  "bookId": "the-merry-wives-of-windsor",
-  "chapterIndex": 28,
-  "title": "Scene IV",
-  "wordCount": 85,
-  "estimatedMinutes": 1,
-  "html": "<h3> <span>Scene</span> <span>IV</span> </h3> <p>Windsor Park.</p> <table> <tbody> <tr> <td/> <td> <i>The Fairies approach, dancing, with masked lights; <b>Sir Hugh Evans</b>, disguised as a satyr in frieze and horns, <b>Pistol</b> attired as Puck, <b>Mistress Quickly</b> in white as Fairy Queen, <b>Anne Page</b> with <b>William</b> and many others in red, black, grey, green and white.</i> </td> </tr> <tr> <td>Sir Hugh Evans</td> <td>Trib, trib, fairies; come; and remember your parts. Be pold, I pray you; follow me into the pit; and when I give the watch-ords, do as I pid you. Come, come; trib, trib.</td> </tr> <tr> <td/> <td> <i>Exeunt.</i> </td> </tr> </tbody> </table> </section> <section>"
-}
+{"bookId":"the-merry-wives-of-windsor","chapterIndex":28,"title":"Scene IV","wordCount":85,"estimatedMinutes":1,"html":"<h3> <span>Scene</span> <span>IV</span> </h3> <p>Windsor Park.</p> <table> <tbody> <tr> <td/> <td> <em>The Fairies approach, dancing, with masked lights; <strong>Sir Hugh Evans</strong>, disguised as a satyr in frieze and horns, <strong>Pistol</strong> attired as Puck, <strong>Mistress Quickly</strong> in white as Fairy Queen, <strong>Anne Page</strong> with <strong>William</strong> and many others in red, black, grey, green and white.</em> </td> </tr> <tr> <td>Sir Hugh Evans</td> <td>Trib, trib, fairies; come; and remember your parts. Be pold, I pray you; follow me into the pit; and when I give the watch-ords, do as I pid you. Come, come; trib, trib.</td> </tr> <tr> <td/> <td> <em>Exeunt.</em> </td> </tr> </tbody> </table> </section> <section>"}

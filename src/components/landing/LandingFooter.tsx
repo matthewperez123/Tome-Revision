@@ -1,7 +1,32 @@
+"use client"
+
 import Link from "next/link"
 import { BookOpen } from "lucide-react"
+import { FOOTER_COLUMNS, type FooterItem } from "@/lib/marketing-nav"
+import { openSupport } from "@/lib/support"
 
-const footerLink = "block text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+const linkClass =
+  "block text-sm text-muted-foreground hover:text-foreground transition-colors text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
+// Plain labels for surfaces that don't exist yet — not fake-clickable.
+const plainClass = "block text-sm text-muted-foreground/70"
+
+function FooterEntry({ item }: { item: FooterItem }) {
+  if ("href" in item) {
+    return (
+      <Link href={item.href} className={linkClass}>
+        {item.label}
+      </Link>
+    )
+  }
+  if ("action" in item) {
+    return (
+      <button type="button" onClick={openSupport} className={linkClass}>
+        {item.label}
+      </button>
+    )
+  }
+  return <span className={plainClass}>{item.label}</span>
+}
 
 export function LandingFooter() {
   return (
@@ -20,55 +45,25 @@ export function LandingFooter() {
           </p>
         </div>
 
-        {/* Product */}
-        <div>
-          <h4 className="text-xs text-muted-foreground uppercase tracking-wider mb-3">Product</h4>
-          <div className="space-y-2">
-            <Link href="/library" className={footerLink}>Library</Link>
-            <Link href="/explore" className={footerLink}>Explore</Link>
-            <Link href="/authors" className={footerLink}>Authors</Link>
-            <Link href="/quizzes" className={footerLink}>Trials</Link>
+        {FOOTER_COLUMNS.map((column) => (
+          <div key={column.heading}>
+            <h4 className="text-xs text-muted-foreground uppercase tracking-wider mb-3">
+              {column.heading}
+            </h4>
+            <div className="space-y-2">
+              {column.items.map((item) => (
+                <FooterEntry key={item.label} item={item} />
+              ))}
+            </div>
           </div>
-        </div>
-
-        {/* For Teachers */}
-        <div>
-          <h4 className="text-xs text-muted-foreground uppercase tracking-wider mb-3">For Teachers</h4>
-          <div className="space-y-2">
-            <Link href="/classroom" className={footerLink}>Classroom</Link>
-            <span className={footerLink}>Gradebook</span>
-            <span className={footerLink}>Standards</span>
-            <span className={footerLink}>Roster Import</span>
-          </div>
-        </div>
-
-        {/* Resources */}
-        <div>
-          <h4 className="text-xs text-muted-foreground uppercase tracking-wider mb-3">Resources</h4>
-          <div className="space-y-2">
-            <span className={footerLink}>Help Center</span>
-            <span className={footerLink}>Getting Started</span>
-            <span className={footerLink}>Accessibility</span>
-          </div>
-        </div>
-
-        {/* Company */}
-        <div>
-          <h4 className="text-xs text-muted-foreground uppercase tracking-wider mb-3">Company</h4>
-          <div className="space-y-2">
-            <span className={footerLink}>About</span>
-            <span className={footerLink}>Contact</span>
-            <span className={footerLink}>Privacy</span>
-            <span className={footerLink}>Terms</span>
-          </div>
-        </div>
+        ))}
       </div>
 
       <div className="max-w-5xl mx-auto mt-10 pt-6 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-2">
         <span className="text-xs text-muted-foreground/50">&copy; 2026 Tome</span>
         <div className="flex items-center gap-4">
-          <span className="text-xs text-muted-foreground/50 hover:text-muted-foreground transition-colors cursor-pointer">Privacy Policy</span>
-          <span className="text-xs text-muted-foreground/50 hover:text-muted-foreground transition-colors cursor-pointer">Terms of Service</span>
+          <span className="text-xs text-muted-foreground/50">Privacy Policy</span>
+          <span className="text-xs text-muted-foreground/50">Terms of Service</span>
         </div>
       </div>
     </footer>

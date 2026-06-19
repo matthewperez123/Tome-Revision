@@ -1,7 +1,18 @@
+import Link from "next/link"
+import { ArrowRight } from "lucide-react"
 import { BlurFade } from "@/components/ui/blur-fade"
+import {
+  EDUCATOR_FINE_PRINT_DEV,
+  EDUCATOR_FINE_PRINT_FINAL,
+  SCHOOL_PRICING_IS_FINAL,
+  educatorPlansForPeriod,
+} from "@/lib/pricing"
 import { PricingCard } from "./PricingCard"
 
+// Teaser only — full plans live on /pricing. Numbers sourced from lib/pricing.
 export function TeacherPricingSection() {
+  const plans = educatorPlansForPeriod("monthly")
+
   return (
     <section className="bg-muted py-20 px-6 md:px-12">
       <div className="max-w-5xl mx-auto">
@@ -18,64 +29,39 @@ export function TeacherPricingSection() {
 
         <BlurFade delay={0.2} inView>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-            <PricingCard
-              tier="Classroom"
-              price="$0"
-              cadence="forever"
-              description="Free for individual teachers, up to 30 students."
-              features={[
-                "1 class",
-                "Up to 30 students",
-                "Basic assignments",
-                "Auto-graded Trials",
-                "Gradebook export",
-              ]}
-              ctaLabel="Start free"
-              ctaHref="/signup?plan=classroom"
-            />
-
-            <PricingCard
-              tier="School"
-              price="$TBD"
-              cadence="per teacher / month"
-              description="For departments and schools."
-              features={[
-                "Unlimited classes and students",
-                "All assignment types",
-                "Virgil reflection grading",
-                "Class progress dashboard",
-                "Co-teacher sharing",
-                "LMS export",
-                "Priority support",
-              ]}
-              ctaLabel="Book a demo"
-              ctaHref="/demo?plan=school"
-              featured
-            />
-
-            <PricingCard
-              tier="District"
-              price="Contact us"
-              cadence=""
-              description="For districts and large institutions."
-              features={[
-                "Everything in School",
-                "SSO",
-                "Roster sync (Clever, ClassLink, Google Classroom)",
-                "Admin dashboard",
-                "Custom standards alignment",
-                "Dedicated success manager",
-              ]}
-              ctaLabel="Contact sales"
-              ctaHref="/demo?plan=district"
-            />
+            {plans.map((plan) => {
+              const pricing = plan.monthly!
+              return (
+                <PricingCard
+                  key={plan.id}
+                  tier={plan.name}
+                  price={pricing.price}
+                  cadence={pricing.cadence}
+                  description={plan.description}
+                  features={plan.features}
+                  ctaLabel={plan.ctaLabel}
+                  ctaHref={plan.ctaHref}
+                  featured={plan.featured}
+                />
+              )
+            })}
           </div>
         </BlurFade>
 
         <BlurFade delay={0.3} inView>
-          <p className="text-center text-xs text-muted-foreground mt-8">
-            Pricing in development &mdash; final tiers and rates announced at launch.
-          </p>
+          <div className="mt-8 text-center">
+            <p className="text-xs text-muted-foreground">
+              {SCHOOL_PRICING_IS_FINAL
+                ? EDUCATOR_FINE_PRINT_FINAL
+                : EDUCATOR_FINE_PRINT_DEV}
+            </p>
+            <Link
+              href="/pricing?for=educators"
+              className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors hover:opacity-80"
+            >
+              Compare all plans <ArrowRight className="size-4" />
+            </Link>
+          </div>
         </BlurFade>
       </div>
     </section>

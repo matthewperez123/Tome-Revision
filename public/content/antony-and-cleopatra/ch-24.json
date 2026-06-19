@@ -1,8 +1,1 @@
-{
-  "bookId": "antony-and-cleopatra",
-  "chapterIndex": 24,
-  "title": "Scene IX",
-  "wordCount": 44,
-  "estimatedMinutes": 1,
-  "html": "<h3> <span>Scene</span> <span>IX</span> </h3> <p>Another part of the plain.</p> <table> <tbody> <tr> <td/> <td> <i>Enter <b>Antony</b> and <b>Enobarbas</b>.</i> </td> </tr> <tr> <td>Antony</td> <td> <p> <span>Set we our squadrons on yond side o’ the hill,</span> <br> <span>In eye of Caesar’s battle; from which place</span> <br> <span>We may the number of the ships behold,</span> <br> <span>And so proceed accordingly. <i>Exeunt.</i></span> </p> </td> </tr> </tbody> </table> </section> <section>"
-}
+{"bookId":"antony-and-cleopatra","chapterIndex":24,"title":"Scene IX","wordCount":44,"estimatedMinutes":1,"html":"<h3> <span>Scene</span> <span>IX</span> </h3> <p>Another part of the plain.</p> <table> <tbody> <tr> <td/> <td> <em>Enter <strong>Antony</strong> and <strong>Enobarbas</strong>.</em> </td> </tr> <tr> <td>Antony</td> <td> <p> <span>Set we our squadrons on yond side o’ the hill,</span> <br> <span>In eye of Caesar’s battle; from which place</span> <br> <span>We may the number of the ships behold,</span> <br> <span>And so proceed accordingly. <em>Exeunt.</em></span> </p> </td> </tr> </tbody> </table> </section> <section>"}

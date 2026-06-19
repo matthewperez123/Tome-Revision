@@ -1,1 +1,1 @@
-{"html":"<section id=\"frontispiece\">\n\t\t\t<figure class=\"full-page\" id=\"illustration-1\">\n\t\t\t\t<img alt=\"A photographic portrait of Jane Addams.\" src=\"../images/illustration-1.jpg\"/>\n\t\t\t\t<figcaption>Jane Addams.</figcaption>\n\t\t\t</figure>\n\t\t</section>"}
+{"html":"<section>\n\t\t\t<figure>\n\t\t\t\t<img alt=\"A photographic portrait of Jane Addams.\" src=\"../images/illustration-1.jpg\"/>\n\t\t\t\t<figcaption>Jane Addams.</figcaption>\n\t\t\t</figure>\n\t\t</section>"}

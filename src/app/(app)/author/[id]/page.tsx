@@ -20,7 +20,7 @@ import { useParams, useRouter } from "next/navigation"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { BookOpen, Lightbulb, MapPin, Calendar, ChevronRight, Library } from "lucide-react"
-import { getAuthorById, getAuthorsByTradition, type Author } from "@/data/authors"
+import { getAuthorById, getAuthorsByTradition, authorSlug, type Author } from "@/data/authors"
 import { getBooksByAuthor } from "@/lib/content"
 import { BOOKS, type TomeBook } from "@/data/books"
 import { springs } from "@/lib/design-tokens"
@@ -77,9 +77,9 @@ function getTraditionColor(traditions: string[]): string {
 
 // Slug derived from a book's display author name — mirrors the formula the
 // /authors listing uses to build its card links, so every author card resolves.
-function authorIdFromName(name: string): string {
-  return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+$/, "")
-}
+// Use the SAME slugifier as AuthorLink (authorSlug) so a /author/<slug> link
+// built from a display name always resolves back to the same catalogue books.
+const authorIdFromName = authorSlug
 
 // Build a minimal author profile from the static book catalogue for authors
 // that have no curated entry in authors.ts. Returns null if no books match,
@@ -181,7 +181,17 @@ export default function AuthorProfilePage() {
     const found = getAuthorById(id)
     if (found) {
       setAuthor(found)
-      setBooks(getBooksByAuthor(found.id))
+      // Match works by authorId AND by name-slug: many catalogue books carry an
+      // authorId that doesn't equal the curated slug, so an authorId-only lookup
+      // leaves curated author pages with an empty "Works in Library" list.
+      const slugs = new Set(
+        [found.id, found.name, (found as Author & { fullName?: string }).fullName]
+          .filter(Boolean)
+          .map((n) => authorSlug(n as string)),
+      )
+      const byId = getBooksByAuthor(found.id)
+      const bySlug = BOOKS.filter((b) => b.author && slugs.has(authorSlug(b.author)))
+      setBooks([...new Map([...byId, ...bySlug].map((b) => [b.id, b])).values()])
       return
     }
     // No curated profile — derive one from the book catalogue so the
