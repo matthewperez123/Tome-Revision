@@ -44,10 +44,16 @@ export function HomepageContent() {
         <ClassRosterShowcase />
         <AssignmentBuilderDemo />
         <CustomTrialsShowcase />
-        <GradebookDemo />
+        <div id="gradebook" className="scroll-mt-20">
+          <GradebookDemo />
+        </div>
         <ClassProgressDemo />
-        <ParentDirectoryShowcase />
-        <SemesterPlanShowcase />
+        <div id="parent-directory" className="scroll-mt-20">
+          <ParentDirectoryShowcase />
+        </div>
+        <div id="curriculum" className="scroll-mt-20">
+          <SemesterPlanShowcase />
+        </div>
         <CoTeachersShowcase />
         <TeacherPricingSection />
         <TeacherCTA />

@@ -68,7 +68,7 @@ export function AuthorDropdown({
             {books.map((book) => (
               <Link
                 key={book.id}
-                href={`/reader/${book.id}`}
+                href={`/read/${book.id}`}
                 onClick={onClose}
                 className="block py-2 px-2 -mx-2 rounded-lg hover:bg-muted/50 transition-colors group"
               >
