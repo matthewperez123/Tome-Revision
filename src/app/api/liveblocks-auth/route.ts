@@ -13,14 +13,17 @@ import { createClient } from "@/lib/supabase/server"
  * Co-readers can broadcast/observe presence but cannot mutate shared storage,
  * which is all live reader presence needs.
  */
-const liveblocks = new Liveblocks({
-  secret: process.env.LIVEBLOCKS_SECRET_KEY ?? "",
-})
-
 export async function POST() {
+  // Construct lazily inside the handler: the Liveblocks constructor validates
+  // the secret eagerly, so a module-level instance throws during `next build`
+  // page-data collection when LIVEBLOCKS_SECRET_KEY is absent (e.g. on Vercel).
   if (!process.env.LIVEBLOCKS_SECRET_KEY) {
     return new NextResponse("Liveblocks not configured", { status: 501 })
   }
+
+  const liveblocks = new Liveblocks({
+    secret: process.env.LIVEBLOCKS_SECRET_KEY,
+  })
 
   const supabase = await createClient()
   const {
