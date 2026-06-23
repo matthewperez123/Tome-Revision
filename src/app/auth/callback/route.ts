@@ -32,9 +32,17 @@ export async function GET(request: Request) {
   const code = searchParams.get("code")
   const next = searchParams.get("next") ?? "/dashboard"
 
+  // On Vercel the load balancer rewrites the host; `origin` (from request.url)
+  // becomes the internal host and breaks the post-auth redirect. Honor
+  // `x-forwarded-host` in deployed environments, fall back to `origin` locally.
+  const forwardedHost = request.headers.get("x-forwarded-host")
+  const isLocalEnv = process.env.NODE_ENV === "development"
+  const base =
+    isLocalEnv || !forwardedHost ? origin : `https://${forwardedHost}`
+
   if (!code) {
     return NextResponse.redirect(
-      `${origin}/auth/error?code=auth_callback_failed`,
+      `${base}/auth/error?code=auth_callback_failed`,
     )
   }
 
@@ -43,7 +51,7 @@ export async function GET(request: Request) {
 
   if (error) {
     return NextResponse.redirect(
-      `${origin}/auth/error?code=auth_callback_failed`,
+      `${base}/auth/error?code=auth_callback_failed`,
     )
   }
 
@@ -52,7 +60,7 @@ export async function GET(request: Request) {
   } = await supabase.auth.getUser()
 
   if (!user) {
-    return NextResponse.redirect(`${origin}/auth/error?code=session_missing`)
+    return NextResponse.redirect(`${base}/auth/error?code=session_missing`)
   }
 
   // First-time Google OAuth signup detection: created_at === last_sign_in_at
@@ -76,7 +84,7 @@ export async function GET(request: Request) {
   // /auth/verified page will (idempotently) send the welcome email.
   // For everything else, route via onboarding gate.
   if (next === "/auth/verified") {
-    return NextResponse.redirect(`${origin}/auth/verified`)
+    return NextResponse.redirect(`${base}/auth/verified`)
   }
 
   // Onboarding check (preserved from original behavior).
@@ -87,8 +95,8 @@ export async function GET(request: Request) {
     .single()
 
   if (!profile?.onboarding_completed) {
-    return NextResponse.redirect(`${origin}/onboarding`)
+    return NextResponse.redirect(`${base}/onboarding`)
   }
 
-  return NextResponse.redirect(`${origin}${next}`)
+  return NextResponse.redirect(`${base}${next}`)
 }
