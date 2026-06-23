@@ -8,10 +8,15 @@ import { cn } from "@/lib/utils"
 import { ThemeToggle } from "@/components/tome/ThemeToggle"
 import { TomeWordmark } from "@/components/brand/tome-wordmark"
 import { PRIMARY_NAV, AUTH_LINKS, LANDING_PATHS } from "@/lib/marketing-nav"
+import { useAuth } from "@/hooks/use-auth"
 
 export function LandingNav() {
   const pathname = usePathname()
   const isLandingPath = LANDING_PATHS.has(pathname)
+  // Marketing pages stay statically rendered; this client nav reads auth on
+  // mount and re-renders the instant `onAuthStateChange` fires (see useAuth),
+  // swapping the Sign in / Sign up CTAs for an "Open Tome" entry point.
+  const { isAuthenticated } = useAuth()
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -69,23 +74,39 @@ export function LandingNav() {
             </Link>
           ))}
 
-          {/* Real auth entry points. "Sign in" matches the nav siblings;
-              "Sign up" is the primary CTA — a solid pill that adapts to the
-              scrolled / hero chrome. */}
-          <Link href={AUTH_LINKS.signIn.href} className={cn("hidden sm:inline-flex", linkClass)}>
-            {AUTH_LINKS.signIn.label}
-          </Link>
-          <Link
-            href={AUTH_LINKS.signUp.href}
-            className={cn(
-              "text-sm font-semibold px-4 py-1.5 rounded-full transition-colors",
-              solid
-                ? "bg-foreground text-background hover:opacity-90"
-                : "bg-white text-black hover:bg-white/90"
-            )}
-          >
-            {AUTH_LINKS.signUp.label}
-          </Link>
+          {/* Real auth entry points. Once a session exists they collapse to a
+              single "Open Tome" pill. While auth is resolving we keep the
+              signed-out CTAs (the static default). */}
+          {isAuthenticated ? (
+            <Link
+              href="/dashboard"
+              className={cn(
+                "text-sm font-semibold px-4 py-1.5 rounded-full transition-colors",
+                solid
+                  ? "bg-foreground text-background hover:opacity-90"
+                  : "bg-white text-black hover:bg-white/90"
+              )}
+            >
+              Open Tome
+            </Link>
+          ) : (
+            <>
+              <Link href={AUTH_LINKS.signIn.href} className={cn("hidden sm:inline-flex", linkClass)}>
+                {AUTH_LINKS.signIn.label}
+              </Link>
+              <Link
+                href={AUTH_LINKS.signUp.href}
+                className={cn(
+                  "text-sm font-semibold px-4 py-1.5 rounded-full transition-colors",
+                  solid
+                    ? "bg-foreground text-background hover:opacity-90"
+                    : "bg-white text-black hover:bg-white/90"
+                )}
+              >
+                {AUTH_LINKS.signUp.label}
+              </Link>
+            </>
+          )}
 
           <ThemeToggle
             className={cn(
@@ -122,12 +143,21 @@ export function LandingNav() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href={AUTH_LINKS.signIn.href}
-              className="sm:hidden rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
-            >
-              {AUTH_LINKS.signIn.label}
-            </Link>
+            {isAuthenticated ? (
+              <Link
+                href="/dashboard"
+                className="rounded-lg px-3 py-2.5 text-sm font-semibold text-foreground hover:bg-accent transition-colors"
+              >
+                Open Tome
+              </Link>
+            ) : (
+              <Link
+                href={AUTH_LINKS.signIn.href}
+                className="sm:hidden rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
+              >
+                {AUTH_LINKS.signIn.label}
+              </Link>
+            )}
           </div>
         </div>
       )}
