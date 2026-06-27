@@ -16,7 +16,6 @@ import { SearchBar } from "@/components/tome/SearchBar"
 import { FilterDropdown } from "@/components/tome/FilterDropdown"
 import { isBookRecommended, isBookComplete } from "@/lib/book-apparatus"
 import { RecommendationsInbox } from "@/components/library/recommendations-inbox"
-import { TomeLibraryGrid } from "@/components/living-archive/TomeLibraryGrid"
 import { useLibraryRecommendations } from "@/hooks/use-library-recommendations"
 import { cn } from "@/lib/utils"
 
@@ -336,11 +335,6 @@ export default function LibraryPage() {
 
               {/* ── Pending book recommendations from friends/classmates ── */}
               <RecommendationsInbox />
-
-              {/* ── Living Archive production pilot ── */}
-              {showDiscovery && (
-                <TomeLibraryGrid progressByBookId={allProgress} />
-              )}
 
               {/* ── Recommended: fully-ingested books ── */}
               {showDiscovery && recommendedBooks.length > 0 && (

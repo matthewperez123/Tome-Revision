@@ -5,9 +5,7 @@ import Image from "next/image"
 import { cn } from "@/lib/utils"
 import type { TomeBook } from "@/data/books"
 import { getTomeGeneratedCoverPaths } from "@/data/generated/tome-generated-cover-paths"
-import { isBookRecommended } from "@/lib/book-apparatus"
 import { ClassicsCover } from "./ClassicsCover"
-import { ComingSoonCover } from "./ComingSoonCover"
 
 interface BookCoverThumbProps {
   book: TomeBook
@@ -48,7 +46,7 @@ export function BookCoverThumb({ book, className }: BookCoverThumbProps) {
           onError={() => setImgFailed(true)}
           unoptimized
         />
-      ) : hasTomeGeneratedCover || isBookRecommended(book) ? (
+      ) : (
         <ClassicsCover
           bookId={book.id}
           title={book.title}
@@ -56,13 +54,6 @@ export function BookCoverThumb({ book, className }: BookCoverThumbProps) {
           tradition={book.tradition}
           fallbackColors={book.coverColors}
           hideBand
-          aspectRatio="3/4"
-          className="h-full w-full rounded-none"
-        />
-      ) : (
-        <ComingSoonCover
-          tradition={book.tradition}
-          fallbackColors={book.coverColors}
           aspectRatio="3/4"
           className="h-full w-full rounded-none"
         />

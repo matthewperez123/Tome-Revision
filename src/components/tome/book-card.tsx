@@ -10,9 +10,7 @@ import { type TomeBook, type StructuralUnitType } from "@/data/books"
 import { getShortProgress } from "@/lib/structural-units"
 import { getCoverParams } from "@/components/tome/book-cover"
 import { ClassicsCover } from "@/components/tome/ClassicsCover"
-import { ComingSoonCover } from "@/components/tome/ComingSoonCover"
 import { AuthorLink } from "@/components/tome/author-link"
-import { isBookRecommended } from "@/lib/book-apparatus"
 import type { getAllBookProgress } from "@/lib/book-progress"
 
 // ── Helpers ────────────────────────────────────
@@ -181,34 +179,21 @@ export function BookCard({ book, progress, size = "sm", className, activeSort, r
     >
       {/* ── Cover ── */}
       <div className="relative overflow-hidden">
-        {isBookRecommended(book) ? (
-          <ClassicsCover
-            bookId={book.id}
-            title={book.title}
-            author={book.author}
-            tradition={book.tradition}
-            fallbackColors={book.coverColors}
-            showTomeWordmark={size === "lg"}
-            hideBand
-            aspectRatio="3/4"
-            className={cn(
-              "w-full rounded-none",
-              interactive && "transition-transform duration-[var(--tome-duration-fast)] group-hover:-translate-y-0.5",
-              size === "lg" && "min-h-[160px]"
-            )}
-          />
-        ) : (
-          <ComingSoonCover
-            tradition={book.tradition}
-            fallbackColors={book.coverColors}
-            aspectRatio="3/4"
-            className={cn(
-              "w-full rounded-none",
-              interactive && "transition-transform duration-[var(--tome-duration-fast)] group-hover:-translate-y-0.5",
-              size === "lg" && "min-h-[160px]"
-            )}
-          />
-        )}
+        <ClassicsCover
+          bookId={book.id}
+          title={book.title}
+          author={book.author}
+          tradition={book.tradition}
+          fallbackColors={book.coverColors}
+          showTomeWordmark={size === "lg"}
+          hideBand
+          aspectRatio="3/4"
+          className={cn(
+            "w-full rounded-none",
+            interactive && "transition-transform duration-[var(--tome-duration-fast)] group-hover:-translate-y-0.5",
+            size === "lg" && "min-h-[160px]"
+          )}
+        />
 
         {/* Trending badge — bottom-right */}
         {book.trending && (

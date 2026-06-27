@@ -94,7 +94,7 @@ export default function QuizBuilderPage() {
     <div className="mx-auto max-w-3xl px-4 py-8">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Feather className="size-6 text-white" />
+          <Feather className="size-6 text-foreground" />
           <h1 className="text-2xl font-bold">Quiz Builder</h1>
         </div>
         <Button onClick={createNewQuiz} className="gap-1.5">

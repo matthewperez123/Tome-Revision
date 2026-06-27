@@ -18,7 +18,7 @@
 import { useEffect, useState, useRef, useCallback, useMemo } from "react"
 import { useParams, useRouter } from "next/navigation"
 import { AnimatePresence, motion } from "framer-motion"
-import { BookCheck, Palette, Sun, Moon } from "lucide-react"
+import { BookCheck, Palette } from "lucide-react"
 import { toast } from "sonner"
 import { supabase } from "@/lib/supabase"
 import type { Book } from "@/lib/supabase"
@@ -33,7 +33,6 @@ import { ReaderSettingsPanel } from "@/components/reader/reader-settings-panel"
 import {
   useReaderPrefs,
   setReaderPrefs,
-  DARK_SURFACE_THEMES,
 } from "@/lib/reader/reader-prefs"
 import { useReaderPrefsSync, saveReadingPosition } from "@/lib/reader/reader-sync"
 import { sanitizeReaderHtml } from "@/lib/reader/sanitize"
@@ -44,7 +43,8 @@ import { useEconomy } from "@/components/tome/economy-provider"
 import { ChapterQuizOverlay } from "@/components/tome/chapter-quiz-overlay"
 import { DifficultyDropUp } from "@/components/tome/DifficultyDropUp"
 import { PaginatedReader } from "@/components/tome/paginated-reader"
-import { getQuestionsForChapter } from "@/lib/chapter-questions"
+import { getQuestionsForChapter, getCuratedQuestionsForChapter } from "@/lib/chapter-questions"
+import { dbRowsToChapterQuestions, type QuestionRow } from "@/lib/db-chapter-questions"
 import { isFrontOrBackMatter } from "@/lib/book-progress"
 import type { QuizDifficulty } from "@/lib/book-progress"
 import { findAttemptForChapter, isAttemptResumable } from "@/lib/trial-attempts"
@@ -57,29 +57,9 @@ import { cn } from "@/lib/utils"
 import { useTheme } from "next-themes"
 import { notifyChapterCompleted, notifyBookCompleted } from "@/lib/notifications"
 import { assignCharacterColors, getCharacterColor, type BookColorAssignments } from "@/lib/character-colors"
-import { StructuredEnhancements } from "@/components/reader/structured-enhancements"
-import { VerseEnhancements } from "@/components/reader/verse-enhancements"
-import { IliadEnhancements } from "@/components/reader/iliad-enhancements"
-import { AeneidEnhancements } from "@/components/reader/aeneid-enhancements"
-import { ParadiseLostEnhancements } from "@/components/reader/paradise-lost-enhancements"
-import { BeowulfEnhancements } from "@/components/reader/beowulf-enhancements"
-import { DonJuanEnhancements } from "@/components/reader/don-juan-enhancements"
-import { OrlandoFuriosoEnhancements } from "@/components/reader/orlando-furioso-enhancements"
-import { FaerieQueeneEnhancements } from "@/components/reader/faerie-queene-enhancements"
-import { IdyllsOfTheKingEnhancements } from "@/components/reader/idylls-of-the-king-enhancements"
-import { CanterburyTalesEnhancements } from "@/components/reader/canterbury-tales-enhancements"
-import { LeMorteDarthurEnhancements } from "@/components/reader/le-morte-darthur-enhancements"
-import { DecameronEnhancements } from "@/components/reader/decameron-enhancements"
 import { CanticleHero } from "@/components/reader/canticle-hero"
 import { ReaderHighlights } from "@/components/reader/reader-highlights"
 import { ReaderPresence } from "@/components/reader/reader-presence"
-import { SharedAnnotationsLayer } from "@/components/reader/shared-annotations-layer"
-
-/** Books that have structured-content enhancements available (glosses,
- *  scholarly annotations, Trials) layered over the standard HTML reader.
- *  The existing chapter rendering is unchanged; enhancements attach via DOM
- *  scanning once the chapter mounts. */
-const STRUCTURED_ENHANCEMENT_WORKS = new Set(["hamlet", "othello", "macbeth", "romeo-and-juliet", "king-lear", "richard-iii", "julius-caesar", "henry-v"])
 
 // ── Types ──
 
@@ -245,12 +225,17 @@ export default function ReaderPage() {
     prefs.mode === "spread" && !canSpread ? "single" : prefs.mode
   const isScroll = effectiveMode === "scroll"
 
-  // Mirror the reader surface theme onto the global next-themes toggle so the
-  // surrounding app chrome (sidebar, toolbar) tracks light/dark with the page.
-  const { setTheme: setGlobalTheme } = useTheme()
+  // Single day / night control: the global top-bar toggle (next-themes) drives
+  // the reading surface. When the app theme flips, mirror it onto prefs.theme so
+  // data-reader-theme recolors scroll / single / spread at once. No second
+  // in-reader toggle — the top bar is the one and only switch.
+  const { resolvedTheme } = useTheme()
   useEffect(() => {
-    setGlobalTheme(DARK_SURFACE_THEMES.has(prefs.theme) ? "dark" : "light")
-  }, [prefs.theme, setGlobalTheme])
+    if (!resolvedTheme) return
+    const want = resolvedTheme === "dark" ? "night" : "day"
+    if (prefs.theme !== want) setReaderPrefs({ theme: want })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [resolvedTheme])
 
   // ── Paginated mode state ──
   const [pages, setPages]               = useState<string[]>([])
@@ -306,6 +291,9 @@ export default function ReaderPage() {
   const paginationRoRef        = useRef<ResizeObserver | null>(null)
   const paginationDebounceRef  = useRef<ReturnType<typeof setTimeout> | null>(null)
   const sessionStartRef        = useRef(Date.now())
+  // Monotonic token so a slow DB-quiz fetch from a previous difficulty/chapter
+  // selection can't clobber a newer one (last-selected wins).
+  const trialReqRef            = useRef(0)
   const sentinelRef            = useRef<HTMLDivElement>(null)
   const anchorTextRef          = useRef<string | null>(null)
 
@@ -821,12 +809,48 @@ export default function ReaderPage() {
   const handleTrialDifficultySelect = useCallback((difficulty: QuizDifficulty) => {
     if (!book) return
     setSelectedDifficulty(difficulty)
-    const qs = getQuestionsForChapter(book.title, currentChapter, difficulty)
-    setTrialQuestions(qs)
-    // Close toast, open the full trial overlay starting at intro with
-    // the chosen tier already applied.
+
+    // Reader → DB bridge (static wins). Resolution order:
+    //   1. Curated hand-authored static bank for this book/chapter/tier.
+    //   2. Platform-authored DB quiz keyed on book_id + chapter_index + tier.
+    //   3. Generic FALLBACK questions (always present), so the overlay never
+    //      opens empty.
+    const curated = getCuratedQuestionsForChapter(book.title, currentChapter, difficulty)
+    if (curated && curated.length > 0) {
+      setTrialQuestions(curated)
+      setShowDifficultyDropUp(false)
+      setShowQuizOverlay(true)
+      return
+    }
+
+    // Open the overlay immediately with the generic fallback so the UI is
+    // responsive, then upgrade to the DB-backed set if one exists.
+    setTrialQuestions(getQuestionsForChapter(book.title, currentChapter, difficulty))
     setShowDifficultyDropUp(false)
     setShowQuizOverlay(true)
+
+    const reqId = ++trialReqRef.current
+    ;(async () => {
+      const { data: quizRow } = await supabase
+        .from("quizzes")
+        .select("id")
+        .eq("book_id", book.id)
+        .eq("chapter_index", currentChapter)
+        .eq("difficulty", difficulty)
+        .limit(1)
+        .maybeSingle()
+      if (reqId !== trialReqRef.current || !quizRow?.id) return
+
+      const { data: rows } = await supabase
+        .from("questions")
+        .select("*")
+        .eq("quiz_id", quizRow.id)
+        .order("order")
+      if (reqId !== trialReqRef.current || !rows?.length) return
+
+      const adapted = dbRowsToChapterQuestions(rows as QuestionRow[], difficulty)
+      if (adapted.length > 0) setTrialQuestions(adapted)
+    })()
   }, [book, currentChapter])
 
   const handleTrialSkip = useCallback(() => {
@@ -937,11 +961,6 @@ export default function ReaderPage() {
     ? getUnitNumber(structuralUnitType, cantoNumberInPart, chapter.title)
     : getUnitNumber(structuralUnitType, currentChapter + 1, chapter.title)
 
-  // Progress bar fraction (sub-chapter granularity in paginated modes)
-  const progressFraction = isScroll
-    ? (currentChapter + 1) / totalChapters
-    : (currentChapter + currentPage / Math.max(1, pages.length)) / totalChapters
-
   // ────────────────────────────────────────────────────
   // Render
   // ────────────────────────────────────────────────────
@@ -998,16 +1017,6 @@ export default function ReaderPage() {
       )}
 
       <div className="relative flex h-[calc(100vh-3rem)] overflow-hidden bg-background text-foreground">
-        {/* Chapter progress bar */}
-        <div
-          className="fixed inset-x-0 top-12 z-50 h-0.5 origin-left motion-reduce:transition-none"
-          style={{
-            background:  "var(--foreground)",
-            transform:   `scaleX(${progressFraction})`,
-            transition:  "transform 0.5s var(--tome-ease-scholarly)",
-          }}
-        />
-
         {/* Chapter Sidebar */}
         <ChapterSidebar
           bookTitle={book.title}
@@ -1073,19 +1082,7 @@ export default function ReaderPage() {
                   <Palette className="size-3.5" />
                 </button>
               )}
-              {/* Day / Night — one shared toggle for all three reading modes.
-                  Writes prefs.theme (the single source of truth); the surface's
-                  data-reader-theme cascades the recolor to scroll, single, and
-                  spread at once, and the choice persists across reload. */}
-              <button
-                onClick={() => setReaderPrefs({ theme: prefs.theme === "night" ? "day" : "night" })}
-                className="flex size-7 items-center justify-center rounded-md text-muted-foreground transition-colors hover:text-foreground"
-                aria-label={prefs.theme === "night" ? "Switch to day mode" : "Switch to night mode"}
-                aria-pressed={prefs.theme === "night"}
-                title={prefs.theme === "night" ? "Day mode" : "Night mode"}
-              >
-                {prefs.theme === "night" ? <Sun className="size-3.5" /> : <Moon className="size-3.5" />}
-              </button>
+              {/* Day / Night lives only in the global top bar now. */}
               {/* Reading mode toggle removed — all chapters unlocked */}
               <ReaderSettingsPanel canSpread={canSpread} />
             </div>
@@ -1130,177 +1127,12 @@ export default function ReaderPage() {
                       </p>
                     )}
 
-                    {/* Translation note + tercet rhythm enhancement for
-                        multi-canticle verse works (Commedia). Silently
-                        no-ops for books that don't opt in. */}
-                    <VerseEnhancements
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                      parts={bookParts}
-                      currentPartId={currentPartId}
-                    />
-
-                    {/* Iliad — translation note and faction palette legend.
-                        Speaker color coding itself is applied via CSS
-                        attribute selectors against baked-in data-iliad-*
-                        markup in the chapter HTML. */}
-                    <IliadEnhancements
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                    />
-
-                    {/* Aeneid — Dryden heroic couplets. Book header with the
-                        Roman numeral and the Latin incipit; translation note
-                        and faction palette legend. Per-line speaker color
-                        coding itself is applied via CSS attribute selectors
-                        against baked-in data-aeneid-* markup. */}
-                    <AeneidEnhancements
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                    />
-
-                    {/* Paradise Lost — English blank verse, 1674 second
-                        edition. Book header with Roman numeral + one-sentence
-                        argument + Milton's opening lines as epigraph, plus
-                        edition note and speaker-palette legend. Per-line
-                        speaker colors, line numbers every 5 lines, invocation
-                        accents, and Milton's prose Arguments are all baked
-                        into the HTML by scripts/paradise-lost/transform-book.ts
-                        and styled via CSS attribute selectors. */}
-                    <ParadiseLostEnhancements
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                    />
-
-                    {/* Don Juan — Byron's ottava rima counter-epic.
-                        Canto header (Roman numeral + one-sentence
-                        argument + opening line as epigraph), edition
-                        note, Byron-narrator palette legend, and reader
-                        toggles for stanza numbering and closing-couplet
-                        highlighting. Stanza tagging is done by a
-                        post-mount DOM walk — the SE source wraps each
-                        ottava rima stanza in an inner <section><p> with
-                        eight <br>-separated <span> lines. */}
-                    <DonJuanEnhancements
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                    />
-
-                    {/* Beowulf — anonymous Old English epic in Hall's 1892
-                        alliterative-verse translation (SE 2019). Renders a
-                        fitt header with Roman numeral + scholarly argument
-                        + digression flag, an edition note, reader toggles
-                        for alliteration highlighting and Old English bilingual
-                        display, and a speaker-palette legend grouped narrator /
-                        Geats / Danes / monsters / scop / northern kings.
-                        Per-line line-number anchors are baked into the HTML
-                        by scripts/beowulf/ingest-beowulf-lines.ts as
-                        data-beowulf-line / data-beowulf-poem-line /
-                        data-beowulf-fitt attributes. */}
-                    <BeowulfEnhancements
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                    />
-
-                    {/* Orlando Furioso — canto header chrome, stanza
-                        numbers toggle, ABABABCC rhyme-scheme toggle,
-                        proem flagging, and the Storylines sidebar that
-                        this book needs to be readable at scale.
-                        Stanza tagging is done by a post-mount DOM walk
-                        — the Rose SE source wraps the canto in
-                        <section role="doc-chapter"> whose direct <p>
-                        children each hold one 8-span stanza. Only
-                        active for bookId === "orlando-furioso". */}
-                    <OrlandoFuriosoEnhancements
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                    />
-
-                    {/* Idylls of the King — Tennyson's Victorian Arthurian
-                        cycle (1891 collected edition). Idyll header with
-                        Roman numeral + scholarly argument + emotional-
-                        register + Tennyson's opening as epigraph, plus
-                        edition note and speaker-palette legend grouped
-                        narrator / sovereignty / round-table / ladies /
-                        grail / villainy / numinous. Line-number anchors
-                        are baked into the HTML by
-                        scripts/idylls/transform-book.ts as
-                        data-iotk-line / data-iotk-speaker attributes. */}
-                    <IdyllsOfTheKingEnhancements
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                    />
-
-                    {/* Le Morte d'Arthur — Caxton's argumentum header,
-                        per-book orientation banner (Book VIII = Tristram
-                        opens, Book XIII = Grail opens), speaker-color
-                        attribution decoration, and a Storylines sidebar
-                        adapted from Orlando Furioso. Only fires for
-                        le-morte-darthur. */}
-                    <LeMorteDarthurEnhancements
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                    />
-
-                    {/* Canterbury Tales — scholarly header chrome for
-                        each fragment and tale: fragment Roman numeral,
-                        teller's pilgrim identity with signature color,
-                        verse-form indicator (heroic couplets / rime royal
-                        / tail-rhyme / prose / Monk's stanza), dramatic-
-                        link note explaining why this tale follows the
-                        previous one, incomplete-tale banner (Cook's,
-                        Squire's), and content notes for the Prioress's
-                        blood-libel tale, the Pardoner's coded portrait,
-                        and the bawdy fabliaux. Phase 1 foundation —
-                        per-line rhyme-scheme tagging and the FacingGloss
-                        two-column layout are Phase 2. */}
-                    <CanterburyTalesEnhancements
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                    />
-
-                    {/* The Decameron — chapter-kind-aware header (Proem,
-                        Plague Introduction, day openings, tale headers
-                        with narrator signature color, Day IV author-
-                        intervention register, Author's Conclusion) and a
-                        collapsible narrator tracker. Only active for
-                        bookId === "the-decameron". */}
-                    <DecameronEnhancements
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                    />
-
-                    {/* The Faerie Queene — canto header chrome with the
-                        book + virtue + canto Roman + scholarly summary +
-                        climactic-canto chip, stanza-tagging post-mount
-                        DOM walk (data-fq-stanza, data-fq-line,
-                        data-fq-rhyme ABABBCBCC, data-fq-alexandrine on
-                        line 9), and reader toggles for stanza numbering,
-                        alexandrine highlighting, and rhyme-scheme display.
-                        No-ops on front matter (Forward, Letter). */}
-                    <FaerieQueeneEnhancements
-                      bookId={bookId}
-                      currentChapter={currentChapter}
-                    />
                     <div className="mt-2 h-px w-16" style={{ backgroundColor: t.border }} />
 
                     {/* Body Text — strip leading heading that duplicates the
                         chapter title. Memoized via `chapterBodyElement` so
-                        unrelated parent re-renders don't reset innerHTML and
-                        wipe injected markers / glosses. */}
+                        unrelated parent re-renders don't reset innerHTML. */}
                     {chapterBodyElement}
-
-                    {/* Structured-content enhancements: glosses, scholarly
-                        annotations, and Trials for works ingested via the
-                        structured pipeline. Attaches to the rendered DOM
-                        without changing the chapter HTML itself. */}
-                    {STRUCTURED_ENHANCEMENT_WORKS.has(bookId) && (
-                      <StructuredEnhancements
-                        workId={bookId}
-                        chapterIndex={currentChapter}
-                        chapterEndReached={chapterEndReached}
-                      />
-                    )}
 
                     {/* Virgil Reflection */}
                     {chapterEndReached && (
@@ -1418,7 +1250,6 @@ export default function ReaderPage() {
           chapterIndex={currentChapter}
           chapterTitle={chapter.title}
         />
-        <SharedAnnotationsLayer bookId={bookId} chapterIndex={currentChapter} />
       </div>
     </WordTooltipProvider>
   )

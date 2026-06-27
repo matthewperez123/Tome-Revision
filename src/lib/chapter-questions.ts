@@ -2097,11 +2097,18 @@ const FALLBACK_QUESTIONS: ChapterQuestion[] = [
 
 // ── Lookup Function ────────────────────────────
 
-export function getQuestionsForChapter(
+/**
+ * Returns hand-authored, curated trial questions for a chapter, or `null`
+ * when this book/chapter has no curated bank. Distinguished from
+ * `getQuestionsForChapter`, which substitutes the generic FALLBACK set when
+ * nothing curated exists. The reader→DB bridge keys off this null: curated
+ * static banks win; the DB fills only where curated content is absent.
+ */
+export function getCuratedQuestionsForChapter(
   bookTitle: string,
   chapterIndex: number,
   difficulty: QuizDifficulty = 'Apprentice'
-): ChapterQuestion[] {
+): ChapterQuestion[] | null {
   const title = bookTitle.toLowerCase()
 
   let bankKey: string | null = null
@@ -2354,5 +2361,21 @@ export function getQuestionsForChapter(
     }
   }
 
-  return FALLBACK_QUESTIONS
+  return null
+}
+
+/**
+ * Reader-facing lookup. Returns curated questions when present, else the
+ * generic FALLBACK set so the in-reading overlay always has something to show.
+ * The DB bridge lives in the reader, between these two: curated → DB → fallback.
+ */
+export function getQuestionsForChapter(
+  bookTitle: string,
+  chapterIndex: number,
+  difficulty: QuizDifficulty = 'Apprentice'
+): ChapterQuestion[] {
+  return (
+    getCuratedQuestionsForChapter(bookTitle, chapterIndex, difficulty) ??
+    FALLBACK_QUESTIONS
+  )
 }
