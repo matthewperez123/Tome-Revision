@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import type { QuestionRendererProps } from "./shared"
-import { OPTION_LABELS, optionState } from "./shared"
+import { OPTION_LABELS, optionState, norm } from "./shared"
 import { OptionButton } from "./OptionButton"
 
 /**
@@ -15,8 +15,10 @@ export function MultipleChoice({
   selectedAnswer,
   onSubmit,
   reduced,
+  eliminatedOptions,
 }: QuestionRendererProps) {
   const [pending, setPending] = useState<string | null>(null)
+  const eliminated = new Set((eliminatedOptions ?? []).map(norm))
 
   useEffect(() => {
     if (!pending || answered) return
@@ -34,18 +36,21 @@ export function MultipleChoice({
   return (
     <div className="space-y-2.5">
       {question.options.map((opt, i) => {
+        const isEliminated = !answered && eliminated.has(norm(opt))
         const state = answered
           ? optionState(opt, question.correct_answer, selectedAnswer, answered)
-          : pending === opt
-            ? "selected"
-            : "idle"
+          : isEliminated
+            ? "disabled"
+            : pending === opt
+              ? "selected"
+              : "idle"
         return (
           <OptionButton
             key={opt + i}
             label={OPTION_LABELS[i] ?? String(i + 1)}
             text={opt}
             state={state}
-            disabled={answered || pending !== null}
+            disabled={answered || pending !== null || isEliminated}
             onClick={() => setPending(opt)}
             reduced={reduced}
           />

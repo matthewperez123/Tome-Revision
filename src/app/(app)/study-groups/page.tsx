@@ -53,9 +53,12 @@ function DemoStudyGroupsPage() {
   return (
     <div className="p-4 md:p-6">
       <div className="flex items-center justify-between mb-4">
-        <div>
-          <h1 className="text-xl font-serif font-semibold tracking-tight md:text-2xl">Study Groups</h1>
-          <p className="mt-0.5 text-sm text-muted-foreground">Collaborate with classmates on assignments and exams.</p>
+        <div className="flex items-center gap-2.5">
+          <UsersRound className="size-6 shrink-0 text-foreground" />
+          <div>
+            <h1 className="text-2xl font-bold tracking-tight">Study Groups</h1>
+            <p className="mt-0.5 text-sm text-muted-foreground">Collaborate with classmates on assignments and exams.</p>
+          </div>
         </div>
       </div>
 

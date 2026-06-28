@@ -21,6 +21,7 @@ import { StepStations } from "./step-stations"
 import { StepRoster } from "./step-roster"
 import { StepSettings } from "./step-settings"
 import { StepReview } from "./step-review"
+import { VirgilSessionAssistant } from "./virgil-session-assistant"
 
 // ── Wizard State ──────────────────────────────────────────────────────────────
 
@@ -38,6 +39,10 @@ export interface WizardState {
   selectedStudentIds: Set<string>
   // Step 4: Settings
   settings: SessionSettings
+  // Step 4: Collaborative annotations
+  annotationsEnabled: boolean
+  annotationVisibility: "collaborative" | "private_to_teacher"
+  presenceEnabled: boolean
 }
 
 function getInitialState(): WizardState {
@@ -51,6 +56,9 @@ function getInitialState(): WizardState {
     stations: [],
     selectedStudentIds: new Set(),
     settings: getDefaultSessionSettings(),
+    annotationsEnabled: true,
+    annotationVisibility: "collaborative",
+    presenceEnabled: true,
   }
 }
 
@@ -80,6 +88,10 @@ export function CreateSessionWizard({
       durationMinutes: editSession.duration_minutes ?? editSession.time_limit_minutes,
       mode: editSession.mode,
       settings: editSession.settings ?? getDefaultSessionSettings(),
+      annotationsEnabled: editSession.annotations_enabled ?? true,
+      annotationVisibility:
+        editSession.annotation_visibility ?? "collaborative",
+      presenceEnabled: editSession.presence_enabled ?? true,
       stations: (editSession.stations ?? []).map((s) => ({
         id: s.id,
         type: s.type,
@@ -89,6 +101,7 @@ export function CreateSessionWizard({
         chapter_end: s.chapter_end,
         section_range: s.section_range,
         quiz_id: s.quiz_id,
+        teacher_quiz_id: s.teacher_quiz_id,
         quiz_config: s.quiz_config,
         reflection_prompt: s.reflection_prompt,
         min_words: s.min_words,
@@ -102,6 +115,12 @@ export function CreateSessionWizard({
 
   const updateState = useCallback((partial: Partial<WizardState>) => {
     setState((prev) => ({ ...prev, ...partial }))
+  }, [])
+
+  // Virgil chatbot drops a ready-made quiz station into the queue.
+  const handleAttachQuiz = useCallback((station: DraftStation) => {
+    setState((prev) => ({ ...prev, stations: [...prev.stations, station] }))
+    setCurrentStep("stations")
   }, [])
 
   const canGoNext = useCallback(() => {
@@ -174,6 +193,9 @@ export function CreateSessionWizard({
           mode: state.mode,
           status,
           settings: state.settings,
+          annotations_enabled: state.annotationsEnabled,
+          annotation_visibility: state.annotationVisibility,
+          presence_enabled: state.presenceEnabled,
           stations: state.stations.map((s, i) => ({
             station_index: i,
             type: s.type,
@@ -183,6 +205,7 @@ export function CreateSessionWizard({
             chapter_end: s.chapter_end,
             section_range: s.section_range || undefined,
             quiz_id: s.quiz_id || undefined,
+            teacher_quiz_id: s.teacher_quiz_id || undefined,
             quiz_config: s.quiz_config || undefined,
             reflection_prompt: s.reflection_prompt || undefined,
             min_words: s.min_words,
@@ -230,6 +253,9 @@ export function CreateSessionWizard({
           Build a multi-station study session for your students.
         </p>
       </div>
+
+      {/* Virgil quiz assistant — ask in plain language, no toggles */}
+      <VirgilSessionAssistant onAttachQuiz={handleAttachQuiz} />
 
       {/* Step indicator */}
       <div className="mb-8 flex items-center gap-1">

@@ -1,9 +1,11 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
+import { useState, useEffect, useCallback, useRef } from "react"
 import { PaginatedReader } from "@/components/tome/paginated-reader"
+import { AnnotationLayer } from "@/components/guided-learning/annotations/annotation-layer"
 import { useEventQueue } from "@/hooks/use-event-queue"
 import { paginateHTML } from "@/lib/paginator"
+import { cn } from "@/lib/utils"
 
 interface LockedReaderProps {
   sessionId: string
@@ -12,6 +14,12 @@ interface LockedReaderProps {
   onProgress: (pct: number) => void
   onComplete: () => void
   theme?: "light" | "dark"
+  /** When true, overlay collaborative margin annotations on the reading. */
+  annotationsEnabled?: boolean
+  /** Annotation privacy topology (collaborative vs private-to-teacher rooms). */
+  annotationVisibility?: "collaborative" | "private_to_teacher"
+  /** Show live presence avatars of others on the same passage. */
+  presenceEnabled?: boolean
 }
 
 /**
@@ -25,10 +33,14 @@ export function LockedReader({
   onProgress,
   onComplete,
   theme = "light",
+  annotationsEnabled = false,
+  annotationVisibility = "collaborative",
+  presenceEnabled = false,
 }: LockedReaderProps) {
   const [pages, setPages] = useState<string[]>([])
   const [currentPage, setCurrentPage] = useState(0)
   const [isPaginating, setIsPaginating] = useState(true)
+  const regionRef = useRef<HTMLDivElement | null>(null)
   const { queueEvent } = useEventQueue(sessionId)
 
   // Load chapter content
@@ -88,20 +100,39 @@ export function LockedReader({
       className="reader-surface h-full w-full"
       data-reader-theme={theme === "dark" ? "night" : "day"}
     >
-      <PaginatedReader
-        pages={pages}
-        currentPage={currentPage}
-        onPageChange={handlePageChange}
-        onChapterEnd={handleChapterEnd}
-        isPaginating={isPaginating}
-        mode="single"
-        fontSize={18}
-        lineHeight={1.8}
-        justify={false}
-        a11yFace={false}
-        turnStyle="slide"
-        onToggleToolbar={() => {}} // No toolbar in lockdown
-      />
+      <div
+        ref={regionRef}
+        className={cn(
+          "relative h-full w-full",
+          annotationsEnabled && "reader-annotatable",
+        )}
+      >
+        <PaginatedReader
+          pages={pages}
+          currentPage={currentPage}
+          onPageChange={handlePageChange}
+          onChapterEnd={handleChapterEnd}
+          isPaginating={isPaginating}
+          mode="single"
+          fontSize={18}
+          lineHeight={1.8}
+          justify={false}
+          a11yFace={false}
+          turnStyle="slide"
+          onToggleToolbar={() => {}} // No toolbar in lockdown
+        />
+        {annotationsEnabled && (
+          <AnnotationLayer
+            roomId={`gs:${sessionId}:${bookId}:${chapterIndex}`}
+            chapterIndex={chapterIndex}
+            regionRef={regionRef}
+            currentPage={currentPage}
+            visibility={annotationVisibility}
+            presenceEnabled={presenceEnabled}
+            enabled
+          />
+        )}
+      </div>
     </div>
   )
 }

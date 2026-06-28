@@ -74,9 +74,12 @@ export default function ClubsPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 space-y-6">
 
         {/* Header */}
-        <div>
-          <h1 className="text-2xl font-bold tracking-tight">Book Clubs</h1>
-          <p className="text-sm text-muted-foreground mt-0.5">Join a club and read together.</p>
+        <div className="flex items-center gap-2.5">
+          <BookHeart className="size-6 shrink-0 text-foreground" />
+          <div>
+            <h1 className="text-2xl font-bold tracking-tight">Book Clubs</h1>
+            <p className="text-sm text-muted-foreground mt-0.5">Join a club and read together.</p>
+          </div>
         </div>
 
         <Tabs defaultValue="discover">

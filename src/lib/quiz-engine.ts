@@ -7,6 +7,7 @@
 
 import { COIN_REWARDS } from "@/lib/economy"
 import type { QuizDifficulty } from "@/lib/book-progress"
+import type { Hint } from "@/lib/quiz-hints"
 
 // ── Types ──────────────────────────────────────
 
@@ -62,6 +63,10 @@ export type Question = {
   tfReasons?: string[]
   /** For tf_with_reason — index into `tfReasons` of the correct reason. */
   tfCorrectReason?: number
+  /** Progressive hint ladder (leak-checked at authoring time). */
+  hints?: Hint[]
+  /** MC-only incorrect option texts safe to grey out, in reveal order. */
+  distractorEliminations?: string[]
 }
 
 export type Quiz = {
@@ -166,7 +171,12 @@ export function checkAnswer(question: Question, answer: string): boolean {
     case "theme_analysis":
     case "vocabulary_in_context":
     case "cross_reference":
-    case "close_reading": {
+    case "close_reading":
+    case "identification":
+    case "tf_with_reason": {
+      // All option/exact-match types — including identification (the chosen
+      // option text) and tf_with_reason (the composite "<bool>|<reasonIndex>"
+      // string the renderer commits). Compared verbatim against correct_answer.
       return given === norm(q.correct_answer)
     }
 

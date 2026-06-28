@@ -10,6 +10,7 @@ import { getPoseImage } from "@/lib/virgil-poses"
 export function VirgilCompanion() {
   const { toggleChat, isOpen, currentPose, hasNotification } = useVirgil()
   const pathname = usePathname()
+  const poseImage = getPoseImage(currentPose)
 
   // Fade-in guard: while the button is still transparent, keep it out
   // of the tab order and hidden from assistive tech. Once opacity
@@ -37,13 +38,21 @@ export function VirgilCompanion() {
       }}
       whileHover={{ scale: 1.12 }}
       whileTap={{ scale: 0.9 }}
-      className="fixed bottom-6 right-6 z-50 size-10 rounded-full bg-virgil ring-2 ring-virgil/50 shadow-lg overflow-hidden cursor-pointer outline-none flex items-center justify-center font-semibold leading-none tracking-tight text-xs focus-visible:ring-4 focus-visible:ring-virgil/60"
+      className="fixed bottom-6 right-6 z-50 size-12 rounded-full bg-background ring-2 ring-virgil/50 shadow-lg overflow-hidden cursor-pointer outline-none flex items-center justify-center focus-visible:ring-4 focus-visible:ring-virgil/60"
       aria-label="Open Virgil chat"
       aria-hidden={!revealed}
       tabIndex={revealed ? 0 : -1}
       style={{ pointerEvents: revealed ? "auto" : "none" }}
     >
-      <span className="text-virgil-foreground">V</span>
+      <Image
+        src={poseImage}
+        alt=""
+        width={768}
+        height={768}
+        sizes="48px"
+        className="size-full object-cover"
+        priority
+      />
       {hasNotification && (
         <motion.span
           animate={{ scale: [1, 1.4, 1] }}

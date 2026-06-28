@@ -18,7 +18,30 @@ declare global {
         // Liveblocks' IUserInfo types `avatar` as `string` (optional) — use
         // undefined (not null) when the profile has no avatar.
         avatar?: string
+        // Server-derived (NEVER client-supplied) role for guided-annotation
+        // rooms. The UI keys moderation affordances off this; the auth
+        // endpoint sets it from session ownership. Absent on reader rooms.
+        role?: "teacher" | "student"
       }
+    }
+    // Per-thread metadata for guided-session margin annotations. Liveblocks
+    // thread metadata only accepts string | number | boolean, so the W3C
+    // text anchor is stored flattened (exact quote + a few chars of
+    // prefix/suffix for disambiguation, plus char offsets as a fallback).
+    // This is what the reader uses to re-find the highlighted span on each
+    // paginated page after reflow. See src/lib/annotations/anchor.ts.
+    ThreadMetadata: {
+      quote: string
+      prefix: string
+      suffix: string
+      startOffset: number
+      endOffset: number
+      chapterIndex: number
+      // Teacher moderation / Virgil flags (rendered distinctly — gold-leaf
+      // for endorsed/official, iridescent for Virgil). Optional; PR2/PR4.
+      endorsed?: boolean
+      teacherNote?: boolean
+      virgil?: boolean
     }
   }
 }

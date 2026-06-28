@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS guided_session_stations (
   station_index     integer NOT NULL,
   type              text NOT NULL CHECK (type IN ('reading', 'quiz', 'reflection')),
   title             text,
-  book_id           uuid REFERENCES books(id) ON DELETE SET NULL,
+  book_id           text REFERENCES books(id) ON DELETE SET NULL,
   chapter_start     integer,
   chapter_end       integer,
   section_range     jsonb,             -- { startSection: string, endSection: string }

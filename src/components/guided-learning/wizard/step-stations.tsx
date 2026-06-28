@@ -153,6 +153,7 @@ export function StepStations({ state, onChange }: Props) {
       chapter_end: null,
       section_range: null,
       quiz_id: null,
+      teacher_quiz_id: null,
       quiz_config: null,
       reflection_prompt: null,
       min_words: null,

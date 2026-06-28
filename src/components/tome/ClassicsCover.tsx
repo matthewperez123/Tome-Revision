@@ -4,6 +4,7 @@ import Image from "next/image"
 import { useMemo, useState } from "react"
 import { getBookCoverArt, type BookCoverArt } from "@/data/cover-art"
 import { getTomeGeneratedCoverPaths } from "@/data/generated/tome-generated-cover-paths"
+import { getMonumentalLiteraryPathsAssets } from "@/data/monumental-literary-paths"
 import { cn } from "@/lib/utils"
 
 // ── Tradition band colors ───────────────────────────────────────────────────
@@ -47,10 +48,28 @@ function getWorkspaceCoverPath(src?: string): string | undefined {
   return src.replace("/covers/museum/", "/covers/covers/museum/")
 }
 
-function getCoverImageSources(bookId: string, art?: BookCoverArt): string[] {
+function getCoverImageSources(
+  bookId: string,
+  art: BookCoverArt | undefined,
+  aspectRatio: ClassicsCoverProps["aspectRatio"],
+): string[] {
   const sources: string[] = []
   const push = (src?: string) => {
     if (src && !sources.includes(src)) sources.push(src)
+  }
+
+  const monumentalAssets = getMonumentalLiteraryPathsAssets(bookId)
+  if (monumentalAssets) {
+    if (aspectRatio === "1/1") {
+      push(monumentalAssets.coverSquare)
+      push(monumentalAssets.coverThumbnail)
+    } else if (aspectRatio === "3/4") {
+      push(monumentalAssets.coverApp3x4)
+      push(monumentalAssets.coverThumbnail)
+    } else {
+      push(monumentalAssets.coverMaster2x3)
+      push(monumentalAssets.coverApp3x4)
+    }
   }
 
   const tomeGeneratedCover = getTomeGeneratedCoverPaths(bookId)
@@ -173,7 +192,11 @@ export function ClassicsCover({
   const bandColor = getBandColor(tradition)
   const accentGold = "#C9A84C"
   const coverArt = getBookCoverArt(bookId)
-  const imageSources = useMemo(() => getCoverImageSources(bookId, coverArt), [bookId, coverArt])
+  const monumentalAssets = getMonumentalLiteraryPathsAssets(bookId)
+  const imageSources = useMemo(
+    () => getCoverImageSources(bookId, coverArt, aspectRatio),
+    [bookId, coverArt, aspectRatio]
+  )
   const [imageSourceState, setImageSourceState] = useState({ bookId, index: 0 })
 
   const containerStyle: React.CSSProperties = {
@@ -186,7 +209,9 @@ export function ClassicsCover({
   const fallbackGradient = getFallbackGradient(fallbackColors.primary, fallbackColors.secondary, fallbackColors.accent)
   const imageSourceIndex = imageSourceState.bookId === bookId ? imageSourceState.index : 0
   const coverImageSrc = imageSourceIndex < imageSources.length ? imageSources[imageSourceIndex] : undefined
-  const coverImageAlt = coverArt
+  const coverImageAlt = monumentalAssets
+    ? monumentalAssets.coverAlt
+    : coverArt
     ? `${title} cover artwork: ${coverArt.title}${coverArt.artist ? ` by ${coverArt.artist}` : ""}`
     : `${title} cover`
 

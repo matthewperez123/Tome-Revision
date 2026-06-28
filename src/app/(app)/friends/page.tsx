@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { Search, UserPlus, Check, X, BookOpen, Flame } from "lucide-react"
+import { Search, UserPlus, Check, X, BookOpen, Flame, HeartHandshake } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { toast } from "sonner"
 import { BlurFade } from "@/components/ui/blur-fade"
@@ -80,11 +80,14 @@ export default function FriendsPage() {
     <div className="p-4 md:p-6 max-w-4xl mx-auto">
       <BlurFade delay={0.04} inView>
         <div className="flex items-center justify-between mb-6">
-          <div>
-            <h1 className="font-serif text-xl font-semibold tracking-tight md:text-2xl" style={{ letterSpacing: "-0.02em" }}>
-              Friends
-            </h1>
-            <p className="text-sm text-muted-foreground mt-0.5">{friends.length} friends</p>
+          <div className="flex items-center gap-2.5">
+            <HeartHandshake className="size-6 shrink-0 text-foreground" />
+            <div>
+              <h1 className="text-2xl font-bold tracking-tight">
+                Friends
+              </h1>
+              <p className="text-sm text-muted-foreground mt-0.5">{friends.length} friends</p>
+            </div>
           </div>
           <div className="flex items-center gap-2">
             <div className="relative w-48">

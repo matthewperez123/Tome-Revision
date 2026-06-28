@@ -7,8 +7,7 @@ export type VirgilPose =
   | "presenting"
   | "sleeping"
 
-// Virgil avatar now uses a "V" placeholder — no image file needed
-const VIRGIL_IMAGE = ""
+const VIRGIL_IMAGE = "/virgil/virgil-idle.png"
 
 // All poses use the same image for now — the single complete Virgil illustration.
 // When individual pose images are added, update paths here.

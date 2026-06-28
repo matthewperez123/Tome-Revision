@@ -1,3 +1,10 @@
+import {
+  getMonumentalLiteraryPathsAssets,
+  getMonumentalLiteraryPathsBooks,
+  hasCompleteMonumentalLiteraryPathsPack,
+  type BookVisualBible,
+} from "@/data/monumental-literary-paths"
+
 export type TomeTemplateFamily =
   | "emblem"
   | "horizon"
@@ -59,7 +66,35 @@ function assetsFor(
   }
 }
 
-export const TOME_LIVING_ARCHIVE_BOOKS: TomeBookVisualBible[] = [
+function templateFamilyFromBible(bible: BookVisualBible): TomeTemplateFamily {
+  if (bible.coverArchetype.includes("horizon")) return "horizon"
+  if (bible.coverArchetype.includes("threshold") || bible.coverArchetype.includes("window")) return "threshold"
+  if (bible.coverArchetype.includes("ascent")) return "ascent"
+  if (bible.coverArchetype.includes("constellation")) return "constellation"
+  return "emblem"
+}
+
+function livingArchiveBookFromBible(bible: BookVisualBible): TomeBookVisualBible {
+  const assets = getMonumentalLiteraryPathsAssets(bible.bookId)
+  if (!assets) {
+    throw new Error(`Missing Monumental Literary Paths assets for ${bible.bookId}`)
+  }
+
+  return {
+    slug: bible.slug,
+    title: bible.title,
+    author: bible.author,
+    templateFamily: templateFamilyFromBible(bible),
+    archetypeLabel: bible.coverArchetype,
+    artistPrinciple: `${bible.heroSymbol}; ${bible.pathGeometry}.`,
+    description: bible.centralConflict ?? bible.environment,
+    accent: bible.paletteHex[4] ?? bible.paletteHex[2] ?? "#D2A86A",
+    palette: bible.paletteHex,
+    assets,
+  }
+}
+
+const TOME_LIVING_ARCHIVE_PILOT_BOOKS: TomeBookVisualBible[] = [
   {
     slug: "macbeth",
     title: "Macbeth",
@@ -122,7 +157,17 @@ export const TOME_LIVING_ARCHIVE_BOOKS: TomeBookVisualBible[] = [
   },
 ]
 
-export const TOME_LIVING_ARCHIVE_DEFAULT_SLUG = "macbeth"
+const generatedBooks = getMonumentalLiteraryPathsBooks()
+  .filter((book) => hasCompleteMonumentalLiteraryPathsPack(book.bookId))
+  .map(livingArchiveBookFromBible)
+const pilotSlugs = new Set(TOME_LIVING_ARCHIVE_PILOT_BOOKS.map((book) => book.slug))
+
+export const TOME_LIVING_ARCHIVE_BOOKS: TomeBookVisualBible[] = [
+  ...generatedBooks,
+  ...TOME_LIVING_ARCHIVE_PILOT_BOOKS.filter((book) => !generatedBooks.some((item) => item.slug === book.slug)),
+]
+
+export const TOME_LIVING_ARCHIVE_DEFAULT_SLUG = "the-republic"
 
 export function getLivingArchiveBooks(): TomeBookVisualBible[] {
   return TOME_LIVING_ARCHIVE_BOOKS
@@ -135,5 +180,5 @@ export function getLivingArchiveBookBySlug(
 }
 
 export function isLivingArchivePilotBook(slug: string): boolean {
-  return TOME_LIVING_ARCHIVE_BOOKS.some((book) => book.slug === slug)
+  return pilotSlugs.has(slug)
 }

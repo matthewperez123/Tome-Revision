@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState, useMemo, useCallback } from "react"
-import { BookOpen, TrendingUp, Search, Flame, SlidersHorizontal, ChevronLeft, ChevronRight, Sparkles } from "lucide-react"
+import { BookOpen, TrendingUp, Search, Flame, SlidersHorizontal, ChevronLeft, ChevronRight, Sparkles, Library } from "lucide-react"
 import { type TomeBook } from "@/data/books"
 import { getBooks, getTrendingBooks, searchBooks } from "@/lib/content"
 // supabase removed — library uses local BOOKS data as the canonical source
@@ -16,6 +16,7 @@ import { SearchBar } from "@/components/tome/SearchBar"
 import { FilterDropdown } from "@/components/tome/FilterDropdown"
 import { isBookRecommended, isBookComplete } from "@/lib/book-apparatus"
 import { RecommendationsInbox } from "@/components/library/recommendations-inbox"
+import { SectionVirgilPanel } from "@/components/virgil/SectionVirgilPanel"
 import { useLibraryRecommendations } from "@/hooks/use-library-recommendations"
 import { cn } from "@/lib/utils"
 
@@ -298,13 +299,16 @@ export default function LibraryPage() {
         {/* Sticky Header — identical structure to /authors */}
         <div className="sticky top-0 z-10 border-b border-border bg-background px-4 py-2.5">
           <div className="flex items-center gap-3">
-            <div className="flex flex-col min-w-0 mr-auto">
-              <h1 className="text-sm font-serif font-semibold leading-none tracking-tight">
-                Library
-              </h1>
-              <p className="text-[10px] text-muted-foreground mt-0.5">
-                {filtered.length} book{filtered.length !== 1 ? "s" : ""} across {allTraditions.length} traditions
-              </p>
+            <div className="flex items-center gap-2.5 min-w-0 mr-auto">
+              <Library className="size-6 shrink-0 text-foreground" />
+              <div className="flex flex-col min-w-0">
+                <h1 className="text-2xl font-bold tracking-tight">
+                  Library
+                </h1>
+                <p className="text-sm text-muted-foreground mt-0.5">
+                  {filtered.length} book{filtered.length !== 1 ? "s" : ""} across {allTraditions.length} traditions
+                </p>
+              </div>
             </div>
 
             <div className="flex items-center gap-1">
@@ -325,6 +329,14 @@ export default function LibraryPage() {
             </div>
           </div>
         </div>
+
+        {/* Virgil search assistant — mirrors the Explore section */}
+        <SectionVirgilPanel
+          className="m-3 shrink-0"
+          title="Search the library with Virgil"
+          placeholder="Ask Virgil for a book…"
+          hint="Tell me what you're in the mood for, and I'll point you to something in the library."
+        />
 
         {/* Content */}
         <div className="p-4">

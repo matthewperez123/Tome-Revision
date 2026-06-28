@@ -9,6 +9,7 @@ import { FocusGuard } from "@/components/guided-learning/focus-guard"
 import { LockedReader } from "@/components/guided-learning/locked-reader"
 import { TimerRing } from "@/components/guided-learning/timer-ring"
 import { StudentStationView } from "@/components/guided-learning/student-station-view"
+import { GuidedSessionVirgilDock } from "@/components/guided-learning/guided-session-virgil-dock"
 import { Loader2, CheckCircle } from "lucide-react"
 import type { GuidedSessionMode, Station, SessionMessage } from "@/lib/guided-learning-types"
 
@@ -237,6 +238,7 @@ export default function GuidedSessionPage() {
           onExit={handleExit}
           onSessionExpire={handleSessionExpire}
         />
+        <GuidedSessionVirgilDock sessionId={sessionId} role="student" />
       </FocusGuard>
     )
   }
@@ -275,6 +277,9 @@ export default function GuidedSessionPage() {
             chapterIndex={session.chapter_index}
             onProgress={handleProgress}
             onComplete={handleComplete}
+            annotationsEnabled={session.annotations_enabled !== false}
+            annotationVisibility={session.annotation_visibility ?? "collaborative"}
+            presenceEnabled={session.presence_enabled !== false}
           />
         )}
 
@@ -285,6 +290,8 @@ export default function GuidedSessionPage() {
             </p>
           </div>
         )}
+
+        <GuidedSessionVirgilDock sessionId={sessionId} role="student" />
       </div>
     </FocusGuard>
   )

@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS guided_sessions (
   classroom_id  uuid REFERENCES classrooms(id) ON DELETE SET NULL,
   join_code     text UNIQUE NOT NULL,
   type          text NOT NULL CHECK (type IN ('chapter', 'trial')),
-  book_id       uuid REFERENCES books(id) ON DELETE SET NULL,
+  book_id       text REFERENCES books(id) ON DELETE SET NULL,
   chapter_index integer,
   trial_id      text,
   time_limit_minutes integer NOT NULL CHECK (time_limit_minutes > 0),

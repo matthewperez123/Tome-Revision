@@ -8,6 +8,7 @@ import { getAllBookProgress, type BookProgress } from "@/lib/book-progress"
 import { getBook } from "@/lib/content"
 import { BookCoverThumb } from "@/components/tome/book-cover-thumb"
 import type { TomeBook } from "@/data/books"
+import { SectionVirgilPanel } from "@/components/virgil/SectionVirgilPanel"
 
 interface ReadingEntry {
   book: TomeBook
@@ -35,16 +36,23 @@ export default function ReadingPage() {
   return (
     <div className="flex flex-col min-h-full">
       <div className="sticky top-0 z-10 border-b border-border bg-background/80 backdrop-blur-sm px-4 py-2.5">
-        <div className="flex items-center gap-2">
-          <BookOpen className="size-4 text-[var(--gold-default)]" />
-          <h1 className="text-sm font-serif font-semibold leading-none tracking-tight">Reading</h1>
+        <div className="flex items-center gap-2.5">
+          <BookOpen className="size-6 shrink-0 text-foreground" />
+          <h1 className="text-2xl font-bold tracking-tight">Reading</h1>
           {hasBooks && (
-            <p className="text-[10px] text-muted-foreground ml-auto">{entries.length} {entries.length === 1 ? "book" : "books"} in progress</p>
+            <p className="text-sm text-muted-foreground ml-auto">{entries.length} {entries.length === 1 ? "book" : "books"} in progress</p>
           )}
         </div>
       </div>
 
-      <div className="flex-1 overflow-y-auto p-4">
+      <div className="flex-1 overflow-y-auto p-4 space-y-4">
+        {/* Virgil search assistant */}
+        <SectionVirgilPanel
+          title="Find your next read with Virgil"
+          placeholder="Ask Virgil what to pick up next…"
+          hint="Tell me what you just finished or the mood you're after, and I'll suggest where to go next."
+        />
+
         {loading ? (
           <div className="space-y-3">
             {Array.from({ length: 3 }).map((_, i) => (

@@ -25,6 +25,7 @@ import {
 } from "lucide-react"
 import { useEconomy } from "@/components/tome/economy-provider"
 import { getAllBookProgress } from "@/lib/book-progress"
+import { getWeeklyChallenge } from "@/lib/weekly-challenge"
 import { getBooks, getFeaturedBooks } from "@/lib/content"
 import type { TomeBook } from "@/data/books"
 import { TRADITION_COLORS } from "@/components/tome/book-card"
@@ -164,7 +165,7 @@ function SectionHeading({
         <div className="size-6 rounded-md flex items-center justify-center" style={{ background: `${color}20` }}>
           <Icon className="size-3.5" style={{ color }} />
         </div>
-        <h2 className="font-serif text-base font-semibold">{title}</h2>
+        <h2 className="text-base font-bold tracking-tight">{title}</h2>
       </div>
       {action && actionHref && (
         <Link href={actionHref}
@@ -276,6 +277,16 @@ function StudentDashboard() {
     (stats.daily_progress_minutes / stats.daily_goal_minutes) * 100
   ))
 
+  // Weekly Challenge — real activity scoped to the current Mon–Sun week, so it
+  // changes as you read and resets automatically each Monday.
+  const WEEKLY_GOAL = 3
+  const weekly = useMemo(
+    () => (now ? getWeeklyChallenge(allProgress, now) : { readDays: [], booksRead: 0 }),
+    [allProgress, now]
+  )
+  const weeklyReadDays = useMemo(() => new Set(weekly.readDays), [weekly.readDays])
+  const weeklyPercent = Math.min(100, Math.round((weekly.booksRead / WEEKLY_GOAL) * 100))
+
   // Streak status
   const streak      = stats.current_streak
   const streakAtRisk = streak > 0 && stats.daily_progress_minutes < 5 // hasn't read today
@@ -310,7 +321,7 @@ function StudentDashboard() {
         <BlurFade delay={0.04} inView>
           <div className="flex items-start justify-between gap-4">
             <div>
-              <h1 className="font-serif text-2xl font-bold tracking-tight">
+              <h1 className="text-2xl font-bold tracking-tight">
                 {now ? `${greeting()}, Reader` : "Welcome back, Reader"}
               </h1>
               <p className="text-sm text-muted-foreground mt-0.5">
@@ -321,7 +332,7 @@ function StudentDashboard() {
             </div>
             <div className="shrink-0 text-right">
               <p className="text-[11px] text-muted-foreground">Level {level.level}</p>
-              <p className="font-serif text-lg font-bold" style={{ color: "#6366F1" }}>
+              <p className="text-lg font-bold tracking-tight" style={{ color: "#6366F1" }}>
                 {stats.xp_total} Wisdom
               </p>
               <div className="h-1.5 w-24 bg-muted rounded-full overflow-hidden mt-1">
@@ -372,6 +383,32 @@ function StudentDashboard() {
           </BlurFade>
         )}
 
+        {/* ── Virgil's Tip ───────────────────────── */}
+        <BlurFade delay={0.08} inView>
+          <div
+            className="rounded-xl p-4 flex gap-3 items-start"
+            style={{
+              background: "color-mix(in srgb, #6366f1 6%, transparent)",
+              border: "1px solid color-mix(in srgb, #6366f1 20%, transparent)",
+            }}
+          >
+            <div
+              className="mt-0.5 shrink-0 size-8 rounded-full flex items-center justify-center"
+              style={{ background: "rgba(212,160,76,0.15)" }}
+            >
+              <Bookmark className="size-4 text-[#D4A04C]" />
+            </div>
+            <div>
+              <p className="text-xs font-bold text-[#D4A04C] uppercase tracking-widest mb-1">
+                Virgil&rsquo;s Tip
+              </p>
+              <p className="text-sm leading-relaxed text-foreground/80 font-serif italic">
+                &ldquo;{getTipOfTheDay()}&rdquo;
+              </p>
+            </div>
+          </div>
+        </BlurFade>
+
         {/* ── 2. Daily Challenge (MCQ) ── */}
         <BlurFade delay={0.10} inView>
           <div
@@ -384,7 +421,12 @@ function StudentDashboard() {
           >
             {/* Header — mirrors Weekly Challenge */}
             <div className="flex items-center justify-between mb-3">
-              <h2 className="text-base font-extrabold tracking-tight">Daily Challenge</h2>
+              <div className="flex items-center gap-2">
+                <div className="size-6 rounded-md flex items-center justify-center" style={{ background: "#F59E0B20" }}>
+                  <Zap className="size-3.5" style={{ color: "#F59E0B" }} />
+                </div>
+                <h2 className="text-base font-bold tracking-tight">Daily Challenge</h2>
+              </div>
               <span
                 className="text-[10px] font-bold px-2 py-1 rounded-full"
                 style={
@@ -541,16 +583,23 @@ function StudentDashboard() {
             }}
           >
             <div className="flex items-center justify-between mb-3">
-              <h2 className="text-base font-extrabold tracking-tight">Weekly Challenge</h2>
+              <div className="flex items-center gap-2">
+                <div className="size-6 rounded-md flex items-center justify-center" style={{ background: "#6366F120" }}>
+                  <Trophy className="size-3.5" style={{ color: "#6366F1" }} />
+                </div>
+                <h2 className="text-base font-bold tracking-tight">Weekly Challenge</h2>
+              </div>
               <span className="text-[10px] text-muted-foreground/60">Resets Monday</span>
             </div>
 
             {/* Goal line + books progress bar */}
             <div className="flex items-center justify-between mb-2">
               <p className="text-sm text-muted-foreground">
-                Read <strong className="text-foreground">3 books</strong> this week
+                Read <strong className="text-foreground">{WEEKLY_GOAL} books</strong> this week
               </p>
-              <span className="text-xs font-bold" style={{ color: "var(--codex-primary)" }}>1 / 3 books</span>
+              <span className="text-xs font-bold" style={{ color: "var(--codex-primary)" }}>
+                {weekly.booksRead} / {WEEKLY_GOAL} books
+              </span>
             </div>
             <div
               className="h-2.5 rounded-full overflow-hidden mb-5"
@@ -560,7 +609,7 @@ function StudentDashboard() {
                 className="h-full rounded-full"
                 style={{ background: "var(--codex-primary)" }}
                 initial={{ width: 0 }}
-                animate={{ width: "33%" }}
+                animate={{ width: `${weeklyPercent}%` }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
               />
             </div>
@@ -570,7 +619,7 @@ function StudentDashboard() {
               {WEEK_DAYS.map((label, i) => {
                 const isPast    = i < dowMon
                 const isToday   = i === dowMon
-                const isDone    = i <= 2 // Mon, Tue, Wed done in demo
+                const isDone    = weeklyReadDays.has(i)
                 const isMissed  = isPast && !isDone
 
                 const discStyle: React.CSSProperties = isDone
@@ -639,7 +688,7 @@ function StudentDashboard() {
                   <BookOpen className="size-3.5" style={{ color: "var(--codex-primary)" }} />
                 </div>
                 <div>
-                  <h2 className="font-serif text-base font-semibold leading-none">Continue Reading</h2>
+                  <h2 className="text-base font-bold tracking-tight leading-none">Continue Reading</h2>
                   <p className="text-[11px] text-muted-foreground mt-1">
                     {continueBooks.length} in progress · {completedCount} completed
                   </p>
@@ -915,32 +964,6 @@ function StudentDashboard() {
               })}
             </div>
           </section>
-        </BlurFade>
-
-        {/* ── Virgil's Tip ───────────────────────── */}
-        <BlurFade delay={0.25} inView>
-          <div
-            className="rounded-xl p-4 flex gap-3 items-start"
-            style={{
-              background: "color-mix(in srgb, #6366f1 6%, transparent)",
-              border: "1px solid color-mix(in srgb, #6366f1 20%, transparent)",
-            }}
-          >
-            <div
-              className="mt-0.5 shrink-0 size-8 rounded-full flex items-center justify-center"
-              style={{ background: "rgba(212,160,76,0.15)" }}
-            >
-              <Bookmark className="size-4 text-[#D4A04C]" />
-            </div>
-            <div>
-              <p className="text-xs font-bold text-[#D4A04C] uppercase tracking-widest mb-1">
-                Virgil&rsquo;s Tip
-              </p>
-              <p className="text-sm leading-relaxed text-foreground/80 font-serif italic">
-                &ldquo;{getTipOfTheDay()}&rdquo;
-              </p>
-            </div>
-          </div>
         </BlurFade>
 
       </div>
