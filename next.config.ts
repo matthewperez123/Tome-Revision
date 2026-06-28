@@ -31,7 +31,13 @@ const nextConfig: NextConfig = {
   // serverless function (982mb > 250mb limit). It only needs node:fs/node:path,
   // so exclude node_modules and public from its trace.
   outputFileTracingExcludes: {
-    "/api/covers/references/*": ["node_modules/**", "public/**"],
+    "/api/covers/references/*": [
+      "node_modules/**",
+      "public/**",
+      "archive/**",
+      "content/**",
+      "scripts/**",
+    ],
   },
 
   // Compress responses
