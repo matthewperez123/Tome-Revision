@@ -158,8 +158,15 @@ export function VirgilChat() {
           >
             {/* Header */}
             <div className="flex items-center gap-3 px-4 py-3 border-b border-border shrink-0">
-              <div className="size-9 rounded-full ring-1 ring-virgil/50 bg-virgil shrink-0 flex items-center justify-center">
-                <span className="text-sm font-semibold text-virgil-foreground">V</span>
+              <div className="size-9 rounded-full overflow-hidden ring-1 ring-virgil/50 bg-background shrink-0">
+                <Image
+                  src={getPoseImage("idle")}
+                  alt="Virgil"
+                  width={768}
+                  height={768}
+                  sizes="36px"
+                  className="size-full object-cover"
+                />
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-sm font-semibold">Virgil</p>
@@ -185,11 +192,6 @@ export function VirgilChat() {
                   transition={{ duration: 0.2 }}
                   className={cn("flex gap-2", msg.role === "user" && "justify-end")}
                 >
-                  {msg.role === "virgil" && (
-                    <div className="size-6 rounded-full overflow-hidden ring-1 ring-virgil/50 bg-virgil shrink-0 mt-1 flex items-center justify-center">
-                      <span className="text-[8px] font-semibold text-virgil-foreground">V</span>
-                    </div>
-                  )}
                   <div
                     className={cn(
                       "max-w-[85%] px-4 py-2.5 text-sm leading-relaxed",
@@ -206,9 +208,6 @@ export function VirgilChat() {
               {/* Streaming response */}
               {streamingContent && (
                 <div className="flex gap-2">
-                  <div className="size-6 rounded-full overflow-hidden ring-1 ring-virgil/25 shrink-0 mt-1">
-                    <span className="text-[10px] font-serif font-bold text-virgil">V</span>
-                  </div>
                   <div className="max-w-[85%] px-4 py-2.5 text-sm leading-relaxed bg-virgil/10 text-foreground rounded-2xl rounded-bl-md">
                     {streamingContent}
                   </div>
@@ -218,9 +217,6 @@ export function VirgilChat() {
               {/* Thinking indicator */}
               {isThinking && !streamingContent && (
                 <div className="flex gap-2">
-                  <div className="size-6 rounded-full overflow-hidden ring-1 ring-virgil/25 shrink-0 mt-1">
-                    <span className="text-[10px] font-serif font-bold text-virgil">V</span>
-                  </div>
                   <div className="bg-virgil/10 rounded-2xl rounded-bl-md">
                     <ThinkingDots />
                   </div>

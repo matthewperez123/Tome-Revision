@@ -11,8 +11,9 @@
  */
 
 import { useEffect, useRef, useState } from "react"
+import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Send, Sparkles, Users, GraduationCap, Check } from "lucide-react"
+import { ArrowRight, Sparkles, Users, GraduationCap, Check, HelpCircle } from "lucide-react"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { BookCard } from "@/components/tome/book-card"
 import { DEMO_LIBRARY_BOOKS } from "@/lib/demo/data"
@@ -24,6 +25,7 @@ import { getAchievementById } from "@/data/achievements"
 import { DEMO_PASSAGE, DEMO_EXCHANGES, streamScriptedReply } from "@/lib/demo/virgil"
 import { AvatarCircles } from "@/components/ui/avatar-circles"
 import { readerPlans, educatorPlans } from "@/lib/pricing"
+import { marketingMasterImages } from "@/lib/marketing-images"
 
 // ── Section shell ───────────────────────────────────────────────────
 
@@ -81,6 +83,37 @@ function SectionShell({
         </BlurFade>
       </div>
     </section>
+  )
+}
+
+function MasterHomeImage({
+  image,
+  priority = false,
+  aspectClassName = "aspect-[21/9]",
+}: {
+  image: (typeof marketingMasterImages)[keyof typeof marketingMasterImages]
+  priority?: boolean
+  aspectClassName?: string
+}) {
+  // Full-bleed cover banner: breaks out of the section's horizontal padding
+  // and crops to fill the frame (object-cover) so it bleeds to every edge,
+  // matching the hero's edge-to-edge cover treatment.
+  return (
+    <div
+      className={
+        "relative -mx-6 overflow-hidden border-y border-border bg-card md:-mx-12 " +
+        aspectClassName
+      }
+    >
+      <Image
+        src={image.src}
+        alt={image.alt}
+        fill
+        priority={priority}
+        sizes="100vw"
+        className="object-cover"
+      />
+    </div>
   )
 }
 
@@ -164,7 +197,7 @@ function EarnAchievements() {
     <SectionShell
       eyebrow="Seals"
       title="Earn a Seal for every work you finish."
-      subline="Each book completed presses a unique wax Seal — its rarity, motif, and color drawn from the work itself. Hover to read what each one commemorates."
+      subline="Each book completed lights up a unique neon Seal — its rarity, motif, and color drawn from the work itself. Hover to read what each one commemorates."
       bg="background"
       cta={{ label: "Explore the Seals", href: "/readers" }}
     >
@@ -380,7 +413,8 @@ function PricingTeaser() {
       bg="background"
       cta={{ label: "See full pricing", href: "/pricing" }}
     >
-      <div className="grid gap-4 sm:grid-cols-3">
+      <MasterHomeImage image={marketingMasterImages.pricing} aspectClassName="aspect-[21/8]" />
+      <div className="mt-8 grid gap-4 sm:grid-cols-3">
         {cards.map((plan) => (
           <div
             key={plan.id}
@@ -425,6 +459,40 @@ function PricingTeaser() {
   )
 }
 
+// ── 9 · FAQ teaser ─────────────────────────────────────────────────
+
+const FAQ_POINTS = [
+  "Reading and getting started",
+  "Plans, billing, and trials",
+  "Classroom and school use",
+  "Texts, trust, and sources",
+]
+
+function FaqTeaser() {
+  return (
+    <SectionShell
+      eyebrow="FAQ"
+      title="Questions, answered before you begin."
+      subline="A quiet place for the practical details: how Tome works, what is free, how classrooms start, and where the texts come from."
+      bg="muted"
+      cta={{ label: "Read the FAQ", href: "/faq" }}
+    >
+      <MasterHomeImage image={marketingMasterImages.faq} aspectClassName="aspect-[16/7]" />
+      <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+        {FAQ_POINTS.map((point) => (
+          <li
+            key={point}
+            className="flex items-start gap-2.5 rounded-lg border border-border bg-card p-4 text-sm font-medium text-foreground"
+          >
+            <HelpCircle className="mt-0.5 size-4 shrink-0 text-primary" />
+            {point}
+          </li>
+        ))}
+      </ul>
+    </SectionShell>
+  )
+}
+
 // ── Hub ─────────────────────────────────────────────────────────────
 
 export function HomeHub() {
@@ -437,6 +505,7 @@ export function HomeHub() {
       <InviteFriends />
       <TeachClasses />
       <PricingTeaser />
+      <FaqTeaser />
     </>
   )
 }
