@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { Users, BookOpen, Copy, Plus, Check, LogIn } from "lucide-react"
+import { Users, BookOpen, Copy, Plus, Check, LogIn, GraduationCap } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
@@ -146,9 +146,12 @@ export default function ClassroomDashboard() {
     <div className="mx-auto max-w-4xl px-4 py-8">
       {/* Header */}
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold">
-          {isTeacher ? "Your Classrooms" : "My Classes"}
-        </h1>
+        <div className="flex items-center gap-2.5">
+          <GraduationCap className="size-6 shrink-0 text-foreground" />
+          <h1 className="text-2xl font-bold tracking-tight">
+            {isTeacher ? "Your Classrooms" : "My Classes"}
+          </h1>
+        </div>
         {isTeacher ? (
           <Link href="/classroom/create">
             <Button size="sm" className="gap-1.5">

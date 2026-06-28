@@ -24,6 +24,7 @@ import {
   MessageSquare, CalendarDays, TrendingUp,
   ChevronUp, ChevronDown, Plus,
   PenTool, GraduationCap, Landmark, Sparkles, Leaf,
+  Globe2,
 } from "lucide-react"
 import { springs } from "@/lib/design-tokens"
 import { BlurFade } from "@/components/ui/blur-fade"
@@ -279,10 +280,15 @@ export default function SocialPage() {
   return (
     <div className="p-4 md:p-6 max-w-3xl mx-auto">
       <BlurFade delay={0.04} inView>
-        <h1 className="font-serif text-2xl font-bold tracking-tight">Community</h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Compete in literary leagues, follow fellow readers, and join book clubs.
-        </p>
+        <div className="flex items-center gap-2.5">
+          <Globe2 className="size-6 shrink-0 text-foreground" />
+          <div>
+            <h1 className="text-2xl font-bold tracking-tight">Community</h1>
+            <p className="mt-0.5 text-sm text-muted-foreground">
+              Compete in literary leagues, follow fellow readers, and join book clubs.
+            </p>
+          </div>
+        </div>
       </BlurFade>
 
       <div className="mt-6">

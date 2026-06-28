@@ -56,6 +56,9 @@ export async function POST(request: Request) {
       mode = "strict",
       status = "draft",
       settings = {},
+      annotations_enabled = true,
+      annotation_visibility = "collaborative",
+      presence_enabled = true,
       stations,
       student_ids,
     } = body
@@ -74,6 +77,13 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "status must be draft, scheduled, or lobby" }, { status: 400 })
     }
 
+    if (!["collaborative", "private_to_teacher"].includes(annotation_visibility)) {
+      return NextResponse.json(
+        { error: "annotation_visibility must be 'collaborative' or 'private_to_teacher'" },
+        { status: 400 },
+      )
+    }
+
     // Insert session
     const { data: session, error: sessionError } = await supabase
       .from("guided_sessions")
@@ -90,6 +100,9 @@ export async function POST(request: Request) {
         scheduled_start_at: scheduled_start_at ?? null,
         duration_minutes,
         settings,
+        annotations_enabled: annotations_enabled !== false,
+        annotation_visibility,
+        presence_enabled: presence_enabled !== false,
         current_station_index: 0,
       })
       .select()
@@ -111,6 +124,7 @@ export async function POST(request: Request) {
       chapter_end: s.chapter_end ?? null,
       section_range: s.section_range ?? null,
       quiz_id: s.quiz_id ?? null,
+      teacher_quiz_id: s.teacher_quiz_id ?? null,
       quiz_config: s.quiz_config ?? null,
       reflection_prompt: s.reflection_prompt ?? null,
       min_words: s.min_words ?? null,

@@ -1,0 +1,130 @@
+{
+  "bookId": "the-eye-of-osiris",
+  "title": "The Eye of Osiris",
+  "author": "R. Austin Freeman",
+  "chapterCount": 20,
+  "totalWordCount": 93794,
+  "totalMinutes": 386,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "I: The Vanishing Man",
+      "wordCount": 2066,
+      "estimatedMinutes": 9
+    },
+    {
+      "index": 1,
+      "title": "II: The Eavesdropper",
+      "wordCount": 3877,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 2,
+      "title": "III: John Thorndyke",
+      "wordCount": 3733,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 3,
+      "title": "IV: Legal Complications and a Jackal",
+      "wordCount": 3967,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 4,
+      "title": "V: The Watercress-Bed",
+      "wordCount": 3665,
+      "estimatedMinutes": 15
+    },
+    {
+      "index": 5,
+      "title": "VI: Sidelights",
+      "wordCount": 4571,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 6,
+      "title": "VII: John Bellingham’s Will",
+      "wordCount": 5467,
+      "estimatedMinutes": 22
+    },
+    {
+      "index": 7,
+      "title": "VIII: A Museum Idyll",
+      "wordCount": 3772,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 8,
+      "title": "IX: The Sphynx of Lincoln’s Inn",
+      "wordCount": 4500,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 9,
+      "title": "X: The New Alliance",
+      "wordCount": 4524,
+      "estimatedMinutes": 19
+    },
+    {
+      "index": 10,
+      "title": "XI: The Evidence Reviewed",
+      "wordCount": 3801,
+      "estimatedMinutes": 16
+    },
+    {
+      "index": 11,
+      "title": "XII: A Voyage of Discovery",
+      "wordCount": 5198,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 12,
+      "title": "XIII: The Coroner’s Quest",
+      "wordCount": 3466,
+      "estimatedMinutes": 14
+    },
+    {
+      "index": 13,
+      "title": "XIV: Which Carries the Reader Into the Probate Court",
+      "wordCount": 7754,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 14,
+      "title": "XV: Circumstantial Evidence",
+      "wordCount": 4317,
+      "estimatedMinutes": 18
+    },
+    {
+      "index": 15,
+      "title": "XVI: O Artemidorus, Farewell!",
+      "wordCount": 4019,
+      "estimatedMinutes": 17
+    },
+    {
+      "index": 16,
+      "title": "XVII: The Accusing Finger",
+      "wordCount": 5028,
+      "estimatedMinutes": 21
+    },
+    {
+      "index": 17,
+      "title": "XVIII: John Bellingham",
+      "wordCount": 7346,
+      "estimatedMinutes": 30
+    },
+    {
+      "index": 18,
+      "title": "XIX: A Strange Symposium",
+      "wordCount": 7968,
+      "estimatedMinutes": 32
+    },
+    {
+      "index": 19,
+      "title": "XX: The End of the Case",
+      "wordCount": 4755,
+      "estimatedMinutes": 20
+    }
+  ]
+}

@@ -18,6 +18,12 @@ export interface QuestionRendererProps {
   selectedAnswer: string | null
   onSubmit: (answer: string) => void
   reduced: boolean
+  /**
+   * Option texts ruled out by a revealed hint (distractor elimination). Greyed
+   * and non-selectable before the answer is committed. Consumed by MC-style
+   * renderers; ignored by the rest.
+   */
+  eliminatedOptions?: string[]
 }
 
 export const OPTION_LABELS = ["A", "B", "C", "D", "E"] as const

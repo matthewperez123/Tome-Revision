@@ -1,0 +1,22 @@
+{
+  "bookId": "the-old-english-baron",
+  "title": "The Old English Baron",
+  "author": "Clara Reeve",
+  "chapterCount": 2,
+  "totalWordCount": 54795,
+  "totalMinutes": 220,
+  "chapters": [
+    {
+      "index": 0,
+      "title": "Preface",
+      "wordCount": 870,
+      "estimatedMinutes": 4
+    },
+    {
+      "index": 1,
+      "title": "The Old English Baron",
+      "wordCount": 53925,
+      "estimatedMinutes": 216
+    }
+  ]
+}

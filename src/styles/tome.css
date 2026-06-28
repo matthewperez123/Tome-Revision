@@ -1493,3 +1493,37 @@ mark.tome-shared-annotation {
   opacity: 0.6;
   border-radius: 2px;
 }
+
+/* ── Guided-session collaborative annotations ──────────────────────────────
+ * The locked reader sets `select-none` on the paginator root to keep page
+ * turns from selecting text. When annotations are on we re-enable selection
+ * on the reading text ONLY (so a passage can be highlighted) — this does not
+ * touch the global copy/paste guards, which stay installed in FocusGuard. */
+.reader-annotatable [data-reader-text] {
+  user-select: text;
+  -webkit-user-select: text;
+  cursor: text;
+}
+
+/* Liveblocks Comments, themed to RUBRIC: Literata for the reading-adjacent
+ * annotation body, Inter (the repo's sans) for composer chrome and buttons,
+ * a flat lapis accent. Peer annotations are never iridescent. */
+.rubric-annotations {
+  --lb-accent: #2a4b8d;
+  --lb-accent-foreground: #ffffff;
+  --lb-radius: 0.625rem;
+  font-family: var(--font-sans, Inter, system-ui, sans-serif);
+}
+.rubric-annotations .lb-comment-body,
+.rubric-annotations .lb-comment-body p {
+  font-family: var(--font-serif, Literata, Georgia, serif);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+.rubric-annotations .lb-composer-editor {
+  font-family: var(--font-serif, Literata, Georgia, serif);
+}
+.rubric-annotations .lb-button[data-variant="primary"] {
+  font-family: var(--font-sans, Inter, system-ui, sans-serif);
+  font-weight: 600;
+}

@@ -5,7 +5,7 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import {
   Heart, Bookmark, BookOpen, Check, GripVertical,
-  Star, Quote, ArrowRight, Clock,
+  Star, Quote, ArrowRight, Clock, BookMarked,
 } from "lucide-react"
 import {
   getShelf,
@@ -23,6 +23,7 @@ import { getBook, getBooks } from "@/lib/content"
 import { ClassicsCover } from "@/components/tome/ClassicsCover"
 import { getAllBookProgress } from "@/lib/book-progress"
 import { CHARACTERS_BY_BOOK } from "@/data/character-avatars"
+import { SectionVirgilPanel } from "@/components/virgil/SectionVirgilPanel"
 import { cn } from "@/lib/utils"
 
 // ── Helpers ───────────────────────────────────────────────────────────────
@@ -536,10 +537,20 @@ export default function ShelvesPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 space-y-6">
 
         {/* Header */}
-        <div>
-          <h1 className="text-2xl font-bold tracking-tight">My Shelves</h1>
-          <p className="text-sm text-muted-foreground mt-0.5">Your personal reading collection</p>
+        <div className="flex items-center gap-2.5">
+          <BookMarked className="size-6 shrink-0 text-foreground" />
+          <div>
+            <h1 className="text-2xl font-bold tracking-tight">My Shelves</h1>
+            <p className="text-sm text-muted-foreground mt-0.5">Your personal reading collection</p>
+          </div>
         </div>
+
+        {/* Virgil search assistant */}
+        <SectionVirgilPanel
+          title="Curate your shelves with Virgil"
+          placeholder="Ask Virgil what to read next…"
+          hint="Tell me a shelf you want to grow, and I'll suggest titles worth adding."
+        />
 
         {/* Tabs */}
         <div className="flex gap-1 p-1 bg-muted rounded-xl overflow-x-auto">

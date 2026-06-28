@@ -17,7 +17,7 @@
 
 import { useEffect, useState, useCallback, useRef } from "react"
 import { useParams, useRouter } from "next/navigation"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, useReducedMotion } from "framer-motion"
 import { Heart, Zap, Trophy, ChevronRight, X, Check, BookOpen, Landmark } from "lucide-react"
 import { supabase } from "@/lib/supabase"
 import { useEconomy } from "@/components/tome/economy-provider"
@@ -27,7 +27,38 @@ import {
   createQuizState,
   quizReducer,
   getQuizSummary,
+  checkAnswer,
+  wisdomForQuestion,
 } from "@/lib/quiz-engine"
+import {
+  QUESTION_RENDERERS,
+  QUESTION_TYPE_LABELS,
+} from "@/components/trials/questions"
+import { HintPanel } from "@/components/trials/HintPanel"
+import { QuestionNavigator, type QuestionStatus } from "@/components/trials/QuestionNavigator"
+import { parseHints } from "@/lib/quiz-hints"
+
+// Types whose renderer draws its own prompt/passage, so the page must not
+// also print question.prompt above it.
+const RENDERER_OWNS_PROMPT = new Set([
+  "fill_blank",
+  "passage_id",
+  "close_reading",
+  "vocabulary_in_context",
+  "reflection",
+])
+
+// Types the 1–4 number-key shortcut applies to (single-select option grids).
+const KEYBOARD_SELECTABLE = new Set([
+  "multiple_choice",
+  "true_false",
+  "passage_id",
+  "theme_analysis",
+  "vocabulary_in_context",
+  "cross_reference",
+  "close_reading",
+  "identification",
+])
 import { springs } from "@/lib/design-tokens"
 import { TextAnimate } from "@/components/ui/text-animate"
 import { NumberTicker } from "@/components/ui/number-ticker"
@@ -38,6 +69,10 @@ import { OrbitingCircles } from "@/components/ui/orbiting-circles"
 import { Button } from "@/components/ui/button"
 import { Skeleton } from "@/components/ui/skeleton"
 import { cn } from "@/lib/utils"
+
+// Hint budget for the whole attempt — a consumable pool, like hearts. One hint
+// per question; once the pool is spent, the affordance locks until Try Again.
+const HINT_BUDGET = 3
 
 // ── Shake animation for wrong answers ──
 
@@ -124,6 +159,9 @@ function mapQuestionRow(row: Record<string, unknown>): Question {
     : r.correct_option === "D" ? r.option_d
     : undefined
   const meta = (r.meta && typeof r.meta === "object" ? r.meta : {}) as Record<string, unknown>
+  const distractorEliminations = Array.isArray(r.distractor_eliminations)
+    ? (r.distractor_eliminations as unknown[]).filter((o): o is string => typeof o === "string")
+    : undefined
   return {
     id: String(r.id),
     quiz_id: String(r.quiz_id),
@@ -133,6 +171,8 @@ function mapQuestionRow(row: Record<string, unknown>): Question {
     correct_answer: (r.correct_answer as string) ?? correctFromLetter ?? "",
     explanation: (r.explanation as string) ?? null,
     order: typeof r.order === "number" ? r.order : 0,
+    hints: parseHints(r.hints),
+    distractorEliminations,
     ...meta,
   } as Question
 }
@@ -146,20 +186,32 @@ export default function QuizPage() {
   const { stats, dispatch: economyDispatch } = useEconomy()
   const confettiRef = useRef<ConfettiRef>(null)
   const startTimeRef = useRef(Date.now())
+  const reduced = useReducedMotion() ?? false
 
   const [loading, setLoading] = useState(true)
   const [quiz, setQuiz] = useState<Quiz | null>(null)
   const [state, setState] = useState<ReturnType<typeof createQuizState> | null>(null)
-  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null)
-  const [showExplanation, setShowExplanation] = useState(false)
   const [heartFlash, setHeartFlash] = useState(false)
+  // The question stem to move focus to after a jump (a11y), and a flag so we
+  // only steal focus on navigation — not on initial load or on answering.
+  const stemRef = useRef<HTMLDivElement>(null)
+  const pendingFocusRef = useRef(false)
+  // Hint system — config from the quiz row; per-question reveal + friction gate.
+  const [hintConfig, setHintConfig] = useState({ enabled: false, penalty: 0 })
+  const [hintRevealed, setHintRevealed] = useState(false)
+  const [hintUnlocked, setHintUnlocked] = useState(false)
+  const [hintsUsedTotal, setHintsUsedTotal] = useState(0)
+  const [hintsRemaining, setHintsRemaining] = useState(HINT_BUDGET)
 
-  const dispatch = useCallback(
-    (action: Parameters<typeof quizReducer>[1]) => {
-      setState((s) => (s ? quizReducer(s, action) : s))
-    },
-    []
-  )
+  // After a navigation action commits, move focus to the new question stem so
+  // keyboard / screen-reader users land on it. Runs every render; the flag is
+  // only set by goToQuestion / handleNext.
+  useEffect(() => {
+    if (pendingFocusRef.current) {
+      pendingFocusRef.current = false
+      stemRef.current?.focus()
+    }
+  })
 
   useEffect(() => {
     async function fetchQuiz() {
@@ -180,6 +232,12 @@ export default function QuizPage() {
         ? (quizData as Quiz)
         : { id: quizId, book_id: "", title: "Sample Quiz", difficulty: "intermediate" }
 
+      const qcfg = quizData as Record<string, unknown> | null
+      setHintConfig({
+        enabled: qcfg?.hints_enabled !== false,
+        penalty: typeof qcfg?.hint_point_penalty === "number" ? qcfg.hint_point_penalty : 0,
+      })
+
       setQuiz(q)
       setState({ ...createQuizState(q, questions, stats.hearts), status: "active" })
       startTimeRef.current = Date.now()
@@ -191,9 +249,11 @@ export default function QuizPage() {
   // Number key shortcuts for answer selection (1-4)
   useEffect(() => {
     function handleKey(e: KeyboardEvent) {
-      if (!state || state.status !== "active" || showExplanation) return
+      if (!state || state.status !== "active") return
+      // Already answered? (answers persist per index) — don't re-grade.
+      if (state.results[state.currentIndex] !== null) return
       const question = state.questions[state.currentIndex]
-      if (question.type === "fill_blank") return
+      if (!KEYBOARD_SELECTABLE.has(question.type)) return
 
       const options = question.options.length > 0 ? question.options : ["True", "False"]
       const num = parseInt(e.key)
@@ -203,22 +263,51 @@ export default function QuizPage() {
     }
     window.addEventListener("keydown", handleKey)
     return () => window.removeEventListener("keydown", handleKey)
-  }, [state, showExplanation]) // handleAnswer added below
+  }, [state]) // handleAnswer added below
+
+  // Reset hint reveal per question and gate the affordance behind a short beat
+  // (friction: a help, not a reflex). Reduced-motion users skip the wait.
+  useEffect(() => {
+    setHintRevealed(false)
+    setHintUnlocked(false)
+    if (reduced) {
+      setHintUnlocked(true)
+      return
+    }
+    const t = setTimeout(() => setHintUnlocked(true), 4000)
+    return () => clearTimeout(t)
+  }, [state?.currentIndex, reduced])
+
+  // Spend one hint from the attempt's pool to reveal this question's hint.
+  const revealHint = useCallback(() => {
+    if (hintRevealed || hintsRemaining <= 0) return
+    setHintRevealed(true)
+    setHintsRemaining((n) => Math.max(0, n - 1))
+    setHintsUsedTotal((n) => n + 1)
+  }, [hintRevealed, hintsRemaining])
 
   const handleAnswer = useCallback(
     (answer: string) => {
       if (!state || state.status !== "active") return
-      setSelectedAnswer(answer)
-      setShowExplanation(true)
+      // Answers persist per index; never re-grade a question on revisit.
+      if (state.results[state.currentIndex] !== null) return
 
       const question = state.questions[state.currentIndex]
-      const isCorrect = (() => {
-        const c = question.correct_answer.toLowerCase().trim()
-        const a = answer.toLowerCase().trim()
-        return a === c
-      })()
+      // Grade through the engine so every type (ordering/matching/reflection/
+      // tf_with_reason composites, fill_blank accepted-variants, …) is judged
+      // by the same logic that updates score/hearts in the reducer.
+      const isCorrect = checkAnswer(question, answer)
 
-      dispatch({ type: "ANSWER", answer })
+      setState((prev) => {
+        if (!prev) return prev
+        const next = quizReducer(prev, { type: "ANSWER", answer })
+        // Random-access: answering the final question out of order must not end
+        // the attempt while earlier questions remain unanswered.
+        if (next.status === "review" && next.results.some((r) => r === null)) {
+          return { ...next, status: "active", endedAt: null }
+        }
+        return next
+      })
       economyDispatch({ type: isCorrect ? "quiz_correct" : "quiz_wrong" })
 
       if (isCorrect) {
@@ -235,18 +324,31 @@ export default function QuizPage() {
         setTimeout(() => setHeartFlash(false), 600)
       }
     },
-    [state, economyDispatch, dispatch]
+    [state, economyDispatch]
   )
 
+  // Single source of truth for the active index — bounds-checked. The strip
+  // and the forward button both delegate here.
+  const goToQuestion = useCallback((index: number) => {
+    setState((prev) => {
+      if (!prev) return prev
+      const clamped = Math.max(0, Math.min(prev.questions.length - 1, index))
+      if (clamped === prev.currentIndex) return prev
+      pendingFocusRef.current = true
+      return { ...prev, currentIndex: clamped }
+    })
+  }, [])
+
   const handleNext = useCallback(() => {
-    setSelectedAnswer(null)
-    setShowExplanation(false)
-    if (state?.status === "review") {
-      dispatch({ type: "FINISH" })
-    } else {
-      dispatch({ type: "NEXT" })
-    }
-  }, [state?.status, dispatch])
+    setState((prev) => {
+      if (!prev) return prev
+      if (prev.currentIndex >= prev.questions.length - 1) {
+        return { ...prev, status: "complete", endedAt: prev.endedAt ?? Date.now() }
+      }
+      pendingFocusRef.current = true
+      return { ...prev, currentIndex: prev.currentIndex + 1, status: "active" }
+    })
+  }, [])
 
   if (loading || !state) {
     return (
@@ -290,6 +392,8 @@ export default function QuizPage() {
             <PulsatingButton
               onClick={() => {
                 setState({ ...createQuizState(state.quiz, state.questions, 5), status: "active" })
+                setHintsUsedTotal(0)
+                setHintsRemaining(HINT_BUDGET)
                 startTimeRef.current = Date.now()
               }}
               className="bg-[var(--tome-accent)]"
@@ -386,6 +490,12 @@ export default function QuizPage() {
             </div>
           </div>
 
+          {hintsUsedTotal > 0 && (
+            <p className="mt-4 text-xs text-muted-foreground">
+              Answered with {hintsUsedTotal} hint{hintsUsedTotal === 1 ? "" : "s"}
+            </p>
+          )}
+
           <div className="mt-8 flex gap-3 justify-center">
             <Button variant="ghost" onClick={() => router.back()}>
               Back to Book
@@ -401,13 +511,26 @@ export default function QuizPage() {
 
   // ── Active Quiz ──
   const question = state.questions[state.currentIndex]
-  const progress = ((state.currentIndex + (showExplanation ? 1 : 0)) / state.questions.length) * 100
   const currentResult = state.results[state.currentIndex]
+  // Derived from engine state so answers persist across arbitrary navigation
+  // (grading is immediate, so an answered question always has a result here).
+  const selectedAnswer = state.answers[state.currentIndex]
+  const answered = currentResult !== null
+  const progress = ((state.currentIndex + (answered ? 1 : 0)) / state.questions.length) * 100
+
+  // Persistent per-question status for the navigator strip. "current" is
+  // derived inside the navigator from currentIndex, so it isn't reported here.
+  const getStatus = (index: number): QuestionStatus => {
+    const r = state.results[index]
+    if (r === "correct") return "correct"
+    if (r === "wrong") return "incorrect"
+    if (state.answers[index] != null) return "answered"
+    return "unanswered"
+  }
 
   return (
     <div className="relative mx-auto max-w-lg px-6 py-6 overflow-hidden">
       <Confetti ref={confettiRef} className="absolute inset-0 size-full pointer-events-none z-50" />
-      <RetroGrid className="opacity-[0.02]" />
 
       <div className="relative z-10">
         {/* Header */}
@@ -450,53 +573,107 @@ export default function QuizPage() {
           />
         </div>
 
-        {/* Question */}
-        <AnimatePresence mode="wait">
+        {/* Random-access question navigator — jump to any question in any order */}
+        <QuestionNavigator
+          count={state.questions.length}
+          currentIndex={state.currentIndex}
+          getStatus={getStatus}
+          onSelect={goToQuestion}
+        />
+
+        {/* Question — stable focus target so jumps land here for SR/keyboard */}
+        <div
+          ref={stemRef}
+          tabIndex={-1}
+          role="group"
+          aria-label={`Question ${state.currentIndex + 1} of ${state.questions.length}`}
+          className="focus-visible:outline-none"
+        >
+          {/* Keyed (not AnimatePresence) so a jump mounts the target question
+              synchronously — no exit-then-wait that can stall on random access. */}
           <motion.div
             key={state.currentIndex}
-            initial={{ opacity: 0, x: 20 }}
+            initial={reduced ? false : { opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -20 }}
             transition={springs.interactive}
           >
             <p className="chip-accent mb-2 text-[10px] font-semibold uppercase tracking-wider" style={{ ["--accent" as string]: "var(--flame-streak)" }}>
-              {question.type.replace("_", " ")}
+              {QUESTION_TYPE_LABELS[question.type] ?? question.type.replace(/_/g, " ")}
             </p>
 
-            <TextAnimate animation="fadeIn" by="word" className="text-lg font-medium leading-relaxed">
-              {question.prompt}
-            </TextAnimate>
+            {/* The page prints the prompt only for option-grid types; renderers
+                that draw their own prompt/passage (fill_blank, passage_id,
+                close_reading, vocabulary_in_context, reflection) own it. */}
+            {!RENDERER_OWNS_PROMPT.has(question.type) && (
+              <TextAnimate animation="fadeIn" by="word" className="text-lg font-medium leading-relaxed">
+                {question.prompt}
+              </TextAnimate>
+            )}
 
             <div className="mt-6">
-              {question.type === "fill_blank" ? (
-                <FreeTextInput onSubmit={handleAnswer} disabled={showExplanation} result={currentResult} />
-              ) : (
-                <div className="grid grid-cols-1 gap-2">
-                  {(question.options.length > 0 ? question.options : ["True", "False"]).map((opt, i) => {
-                    const isCorrectOpt = opt.toLowerCase() === question.correct_answer.toLowerCase()
-                    const isSelectedOpt = selectedAnswer === opt
-                    const optResult = showExplanation
-                      ? isCorrectOpt ? "correct" : isSelectedOpt ? "wrong" : null
-                      : null
+              {(() => {
+                const Renderer = QUESTION_RENDERERS[question.type]
+                // Distractor elimination: the revealed hint greys one distractor.
+                const eliminatedOptions = hintRevealed
+                  ? question.distractorEliminations?.slice(0, 1)
+                  : []
+                if (Renderer) {
+                  return (
+                    <Renderer
+                      question={question}
+                      answered={answered}
+                      isCorrect={currentResult === "correct"}
+                      isWrong={currentResult === "wrong"}
+                      selectedAnswer={selectedAnswer}
+                      onSubmit={handleAnswer}
+                      reduced={reduced}
+                      eliminatedOptions={eliminatedOptions}
+                    />
+                  )
+                }
+                // Fallback for any unmapped type — simple option grid.
+                return (
+                  <div className="grid grid-cols-1 gap-2">
+                    {(question.options.length > 0 ? question.options : ["True", "False"]).map((opt, i) => {
+                      const isCorrectOpt = opt.toLowerCase() === question.correct_answer.toLowerCase()
+                      const isSelectedOpt = selectedAnswer === opt
+                      const optResult = answered
+                        ? isCorrectOpt ? "correct" : isSelectedOpt ? "wrong" : null
+                        : null
 
-                    return (
-                      <OptionCard
-                        key={i}
-                        label={opt}
-                        index={i}
-                        selected={isSelectedOpt}
-                        disabled={showExplanation}
-                        result={optResult}
-                        onSelect={() => handleAnswer(opt)}
-                      />
-                    )
-                  })}
-                </div>
-              )}
+                      return (
+                        <OptionCard
+                          key={i}
+                          label={opt}
+                          index={i}
+                          selected={isSelectedOpt}
+                          disabled={answered}
+                          result={optResult}
+                          onSelect={() => handleAnswer(opt)}
+                        />
+                      )
+                    })}
+                  </div>
+                )
+              })()}
             </div>
 
+            {/* Hint affordance — a Virgil surface (iridescent). Pre-answer only. */}
+            {!answered && hintConfig.enabled && (question.hints?.length ?? 0) > 0 && (
+              <HintPanel
+                hint={question.hints?.[0] ?? null}
+                revealed={hintRevealed}
+                onReveal={revealHint}
+                unlocked={hintUnlocked}
+                hintsRemaining={hintsRemaining}
+                hintBudget={HINT_BUDGET}
+                pointPenalty={hintConfig.penalty}
+                reduced={reduced}
+              />
+            )}
+
             {/* Explanation with animated icon */}
-            {showExplanation && (
+            {answered && (
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -518,7 +695,7 @@ export default function QuizPage() {
                   )}>
                     {currentResult === "correct" ? "Correct!" : "Incorrect"}
                     {currentResult === "correct" && (
-                      <span className="ml-2 text-muted-foreground font-normal">+10 XP</span>
+                      <span className="ml-2 text-muted-foreground font-normal">+{wisdomForQuestion(question)} XP</span>
                     )}
                   </p>
                   {question.explanation && (
@@ -528,7 +705,7 @@ export default function QuizPage() {
               </motion.div>
             )}
 
-            {showExplanation && (
+            {answered && (
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-6">
                 <Button
                   onClick={handleNext}
@@ -541,7 +718,7 @@ export default function QuizPage() {
               </motion.div>
             )}
           </motion.div>
-        </AnimatePresence>
+        </div>
       </div>
     </div>
   )
@@ -616,47 +793,6 @@ function OptionCard({
   )
 }
 
-// ── Free Text Input ────────────────────────────
-
-function FreeTextInput({
-  onSubmit,
-  disabled,
-  result,
-}: {
-  onSubmit: (answer: string) => void
-  disabled: boolean
-  result: "correct" | "wrong" | null
-}) {
-  const [value, setValue] = useState("")
-
-  return (
-    <motion.div
-      className="flex gap-2"
-      animate={result === "wrong" ? "shake" : undefined}
-      variants={shakeVariants}
-    >
-      <input
-        type="text"
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-        disabled={disabled}
-        placeholder="Type your answer…"
-        className={cn(
-          "flex-1 rounded-xl border bg-[var(--tome-surface-recessed)] px-4 py-3 text-sm outline-none transition-colors",
-          "focus:border-[var(--flame-streak)]",
-          result === "correct" && "border-[var(--codex-success)]",
-          result === "wrong" && "border-[var(--codex-danger)]",
-          !result && "border-border"
-        )}
-        onKeyDown={(e) => {
-          if (e.key === "Enter" && value.trim() && !disabled) onSubmit(value.trim())
-        }}
-      />
-      {!disabled && (
-        <Button onClick={() => value.trim() && onSubmit(value.trim())} disabled={!value.trim()}>
-          Submit
-        </Button>
-      )}
-    </motion.div>
-  )
-}
+// FreeTextInput was removed — fill_blank now routes through the shared
+// FillBlank renderer in @/components/trials/questions, so the page no longer
+// owns a bespoke text input.

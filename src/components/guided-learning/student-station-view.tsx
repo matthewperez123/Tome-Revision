@@ -199,6 +199,9 @@ export function StudentStationView({
                 chapterIndex={currentStation.chapter_start}
                 onProgress={handleReadingProgress}
                 onComplete={handleStationComplete}
+                annotationsEnabled={session.annotations_enabled !== false}
+                annotationVisibility={session.annotation_visibility ?? "collaborative"}
+                presenceEnabled={session.presence_enabled !== false}
               />
             )}
 

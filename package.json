@@ -10,6 +10,19 @@
     "lint": "eslint",
     "covers:prepare": "node scripts/prepare-cover-library.mjs",
     "covers:tome": "node scripts/prepare-tome-generated-covers.mjs",
+    "covers:analyze-references": "npx tsx scripts/covers/cover-factory.ts analyze-references",
+    "covers:validate-imagen": "npx tsx scripts/covers/cover-factory.ts validate-imagen",
+    "covers:import": "npx tsx scripts/covers/cover-factory.ts import",
+    "covers:brief": "npx tsx scripts/covers/cover-factory.ts brief",
+    "covers:rebalance": "npx tsx scripts/covers/cover-factory.ts rebalance",
+    "covers:generate": "npx tsx scripts/covers/cover-factory.ts generate --mock",
+    "covers:status": "npx tsx scripts/covers/cover-factory.ts status",
+    "covers:qa": "npx tsx scripts/covers/cover-factory.ts qa",
+    "covers:contact-sheet": "npx tsx scripts/covers/cover-factory.ts contact-sheet",
+    "covers:compose": "npx tsx scripts/covers/cover-factory.ts compose",
+    "covers:publish": "npx tsx scripts/covers/cover-factory.ts publish --dry-run",
+    "test:covers": "npx tsx scripts/covers/cover-factory.test.ts",
+    "typecheck": "tsc --noEmit",
     "audit:stoa": "npx tsx scripts/audit-stoa-collection.ts",
     "validate:achievements": "npx tsx scripts/validate-achievements.ts"
   },
@@ -22,6 +35,7 @@
     "@liveblocks/client": "^3.20.0",
     "@liveblocks/node": "^3.20.0",
     "@liveblocks/react": "^3.20.0",
+    "@liveblocks/react-ui": "^3.20.0",
     "@next/env": "^16.2.0",
     "@radix-ui/react-slot": "^1.2.4",
     "@react-email/components": "^1.0.12",
@@ -55,6 +69,7 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@esbuild/darwin-arm64": "^0.25.12",
     "@playwright/test": "^1.59.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
@@ -69,6 +84,7 @@
     "playwright": "^1.59.1",
     "sharp": "^0.34.5",
     "tailwindcss": "^4",
+    "tsx": "^4.22.4",
     "typescript": "^5"
   }
 }

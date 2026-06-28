@@ -94,7 +94,16 @@ function DemoClassroomView({ classroomId }: { classroomId: string }) {
         </button>
         <Link href={`/classroom/${classroomId}/manage`}>
           <Button variant="outline" size="sm" className="gap-1.5">
-            <Calendar className="size-3.5" /> Manage Semester Plan
+            <Calendar className="size-3.5" /> Manage
+          </Button>
+        </Link>
+        <Link href={`/classroom/${classroomId}/semester-plan`}>
+          <Button
+            size="sm"
+            className="gap-1.5 text-white"
+            style={{ backgroundImage: "linear-gradient(110deg, #6366F1 0%, #8B5CF6 35%, #06B6D4 70%, #6366F1 100%)" }}
+          >
+            <Sparkles className="size-3.5" /> Semester Planning
           </Button>
         </Link>
       </div>

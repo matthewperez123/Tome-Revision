@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { LandingNav } from "@/components/landing/LandingNav"
@@ -6,6 +7,7 @@ import { LandingFooter } from "@/components/landing/LandingFooter"
 import { FaqAccordion } from "@/components/faq/FaqAccordion"
 import { FaqCategoryNav } from "@/components/faq/FaqCategoryNav"
 import { faqCategories, faqJsonLd } from "@/lib/faqs"
+import { marketingMasterImages } from "@/lib/marketing-images"
 
 export const metadata: Metadata = {
   title: { absolute: "FAQ — Tome" },
@@ -34,14 +36,27 @@ export default function FaqPage() {
 
       <main className="px-6 pb-24 pt-32 md:px-12">
         {/* Hero */}
-        <section className="mx-auto max-w-3xl text-center">
-          <h1 className="font-[var(--font-display)] text-4xl font-bold text-foreground md:text-5xl">
-            Questions, answered.
-          </h1>
-          <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted-foreground">
-            Everything about reading on Tome, plans and billing, classroom use,
-            and where the texts come from.
-          </p>
+        <section className="mx-auto grid max-w-5xl gap-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:items-center">
+          <div className="text-center lg:text-left">
+            <h1 className="font-[var(--font-display)] text-4xl font-bold text-foreground md:text-5xl">
+              Questions, answered.
+            </h1>
+            <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted-foreground lg:mx-0">
+              Everything about reading on Tome, plans and billing, classroom use,
+              and where the texts come from.
+            </p>
+          </div>
+          <div className="overflow-hidden rounded-lg border border-border bg-card shadow-sm">
+            <Image
+              src={marketingMasterImages.faq.src}
+              alt={marketingMasterImages.faq.alt}
+              width={marketingMasterImages.faq.width}
+              height={marketingMasterImages.faq.height}
+              priority
+              sizes="(min-width: 1024px) 560px, 100vw"
+              className="h-auto w-full object-cover"
+            />
+          </div>
         </section>
 
         {/* Nav + sections */}
@@ -64,7 +79,7 @@ export default function FaqPage() {
                 >
                   {category.label}
                 </h2>
-                <FaqAccordion categoryId={category.id} items={category.items} />
+                <FaqAccordion items={category.items} />
               </section>
             ))}
 

@@ -29,6 +29,7 @@ import {
 import { getCountryColor } from "@/lib/country-colors"
 import { BOOKS } from "@/data/books"
 import { authorSlug } from "@/data/authors"
+import { SectionVirgilPanel } from "@/components/virgil/SectionVirgilPanel"
 
 // ── Constants ────────────────────────────────────────────────────────────────
 
@@ -334,9 +335,9 @@ export default function ExplorePage() {
       {/* ── Header ─────────────────────────────────────────────────────── */}
       <div className="sticky top-0 z-20 border-b border-border bg-background/80 backdrop-blur-sm px-4 py-2.5">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Globe2 className="size-4 text-[#D4A04C]" />
-            <h1 className="text-sm font-serif font-semibold leading-none tracking-tight">
+          <div className="flex items-center gap-2.5">
+            <Globe2 className="size-6 shrink-0 text-foreground" />
+            <h1 className="text-2xl font-bold tracking-tight">
               Explore the World of Literature
             </h1>
           </div>
@@ -356,6 +357,14 @@ export default function ExplorePage() {
           </div>
         </div>
       </div>
+
+      {/* Virgil search assistant */}
+      <SectionVirgilPanel
+        className="m-3 shrink-0"
+        title="Explore literature with Virgil"
+        placeholder="Ask Virgil about a country or tradition…"
+        hint="Name a place or culture and I'll guide you to the authors and works that shaped it."
+      />
 
       {/* ── Map container ──────────────────────────────────────────────── */}
       <div

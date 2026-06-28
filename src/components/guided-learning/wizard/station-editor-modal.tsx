@@ -1,7 +1,7 @@
 "use client"
 
-import { useState, useEffect, useMemo } from "react"
-import { X, BookOpen, Brain, PenTool, Search, Check } from "lucide-react"
+import { useState, useEffect, useMemo, useRef } from "react"
+import { X, BookOpen, Brain, PenTool, Search, Check, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import type { DraftStation, StationType } from "@/lib/guided-learning-types"
@@ -20,6 +20,7 @@ export function StationEditorModal({ station: initial, onSave, onClose }: Props)
   const [books, setBooks] = useState<SupabaseBook[]>([])
   const [bookQuery, setBookQuery] = useState("")
   const [bookDropdownOpen, setBookDropdownOpen] = useState(false)
+  const bookBoxRef = useRef<HTMLDivElement>(null)
 
   // Load books
   useEffect(() => {
@@ -32,6 +33,18 @@ export function StationEditorModal({ station: initial, onSave, onClose }: Props)
         if (data) setBooks(data as SupabaseBook[])
       })
   }, [])
+
+  // Close the book dropdown on any click outside the search box.
+  useEffect(() => {
+    if (!bookDropdownOpen) return
+    const onDown = (e: MouseEvent) => {
+      if (bookBoxRef.current && !bookBoxRef.current.contains(e.target as Node)) {
+        setBookDropdownOpen(false)
+      }
+    }
+    document.addEventListener("mousedown", onDown)
+    return () => document.removeEventListener("mousedown", onDown)
+  }, [bookDropdownOpen])
 
   const filteredBooks = useMemo(() => {
     if (!bookQuery.trim()) return books.slice(0, 20)
@@ -99,7 +112,7 @@ export function StationEditorModal({ station: initial, onSave, onClose }: Props)
           {(station.type === "reading" || station.type === "quiz") && (
             <div className="space-y-1.5">
               <label className="text-xs font-semibold">Book</label>
-              <div className="relative">
+              <div className="relative" ref={bookBoxRef}>
                 <Search className="absolute left-3 top-1/2 size-3.5 -translate-y-1/2 text-muted-foreground pointer-events-none" />
                 <input
                   type="text"
@@ -107,6 +120,7 @@ export function StationEditorModal({ station: initial, onSave, onClose }: Props)
                   value={bookQuery}
                   onChange={(e) => { setBookQuery(e.target.value); setBookDropdownOpen(true) }}
                   onFocus={() => setBookDropdownOpen(true)}
+                  onKeyDown={(e) => { if (e.key === "Escape") setBookDropdownOpen(false) }}
                   className="h-9 w-full rounded-full border border-transparent bg-[var(--tome-surface-elevated)] pl-9 pr-3 text-xs focus:border-[var(--tome-accent)] focus:outline-none"
                 />
                 {bookDropdownOpen && (
@@ -165,16 +179,50 @@ export function StationEditorModal({ station: initial, onSave, onClose }: Props)
 
           {/* Quiz config */}
           {station.type === "quiz" && (
-            <div className="space-y-1.5">
-              <label className="text-xs font-semibold">
-                Trial ID <span className="font-normal opacity-40">(or leave empty for auto-generated)</span>
-              </label>
-              <Input
-                value={station.quiz_id ?? ""}
-                onChange={(e) => update({ quiz_id: e.target.value || null })}
-                placeholder="e.g., odyssey-book-9-trial"
-                className="text-sm"
-              />
+            <div className="space-y-3">
+              {station.teacher_quiz_id ? (
+                <div
+                  className="flex items-center justify-between rounded-xl border p-3"
+                  style={{ borderColor: "rgba(99,102,241,0.35)" }}
+                >
+                  <div className="flex items-center gap-2">
+                    <Sparkles className="size-4" style={{ color: "var(--tome-indigo,#6366F1)" }} />
+                    <div>
+                      <p className="text-sm font-semibold">Virgil quiz attached</p>
+                      <p className="text-xs opacity-60">{station.teacher_quiz_summary ?? "Quiz ready"}</p>
+                    </div>
+                  </div>
+                  <Button
+                    variant="ghost"
+                    onClick={() => update({ teacher_quiz_id: null, teacher_quiz_summary: undefined })}
+                    className="text-xs"
+                  >
+                    Remove
+                  </Button>
+                </div>
+              ) : (
+                <div
+                  className="flex items-start gap-2 rounded-xl border border-dashed p-3 text-xs opacity-70"
+                  style={{ borderColor: "rgba(99,102,241,0.3)" }}
+                >
+                  <Sparkles className="mt-0.5 size-3.5 shrink-0" style={{ color: "var(--tome-indigo,#6366F1)" }} />
+                  <span>
+                    Ask <strong>Virgil</strong> at the top of the wizard to build a grounded quiz, then it lands here as a station.
+                  </span>
+                </div>
+              )}
+
+              <div className="space-y-1.5">
+                <label className="text-xs font-semibold">
+                  Or paste a Trial ID <span className="font-normal opacity-40">(advanced)</span>
+                </label>
+                <Input
+                  value={station.quiz_id ?? ""}
+                  onChange={(e) => update({ quiz_id: e.target.value || null, teacher_quiz_id: null })}
+                  placeholder="e.g., odyssey-book-9-trial"
+                  className="text-sm"
+                />
+              </div>
             </div>
           )}
 

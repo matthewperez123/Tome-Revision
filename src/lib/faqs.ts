@@ -15,6 +15,8 @@ import {
 } from "./pricing"
 
 export interface FaqItem {
+  /** Stable slug for deep links, e.g. /faq#who-is-virgil. */
+  id: string
   q: string
   a: string
   /** True when the answer contains a [CONFIRM] placeholder pending sign-off. */
@@ -33,45 +35,55 @@ export const faqCategories: FaqCategory[] = [
     label: "Reading & getting started",
     items: [
       {
+        id: "what-is-tome",
         q: "What is Tome?",
         a: "Tome is a guided reading platform for the canon of world literature. You read complete, unabridged texts alongside Virgil — an AI scholar in the margin who annotates passages, answers questions, and grades your reflections — while earning Wisdom, keeping a daily Flame, and collecting Seals as you go.",
       },
       {
+        id: "how-tome-is-different",
         q: "How is this different from reading free public-domain books elsewhere?",
         a: "The texts are free; the scholarship, structure, and accountability are what Tome adds. Margin-by-margin annotation, end-of-chapter Trials, progress tracking, and Circles (book clubs) are built to help you actually finish the hard books instead of abandoning them on chapter three.",
       },
       {
+        id: "who-is-virgil",
         q: "Who is Virgil, and is he accurate?",
         a: "Virgil is Tome's AI reading companion, named for Dante's guide. His annotations are generated against the specific passage in front of you and kept close to the text; he's a scholarly aid, not an infallible authority, so treat him as a brilliant tutor rather than a citation.",
         confirm: true,
       },
       {
+        id: "are-texts-complete",
         q: "Are the texts complete?",
         a: "Yes — every book is the full, unabridged work. No summaries, no excerpts, rendered in Literata and formatted to its form, whether that's prose, verse, drama, or Middle English.",
       },
       {
+        id: "how-many-books",
         q: "How many books are in the library?",
         a: `${CANONICAL_BOOK_COUNT} books spanning every major literary tradition — roughly three thousand years and every continent, browsable by tradition on a single map.`,
       },
       {
+        id: "trials-wisdom-flames-seals",
         q: "What are Trials, Wisdom, Flames, and Seals?",
         a: "Trials are short assessments at the end of each chapter — comprehension, vocabulary, critical thinking, and a Virgil-graded reflection. Completing them earns Wisdom (which raises your level), reading daily keeps your Flame (your streak) alive, and milestones earn Seals (badges).",
       },
       {
+        id: "need-credit-card",
         q: "Do I need a credit card to start?",
         a: "No. The Free plan is free forever and needs no card — you only add payment if you choose to upgrade.",
       },
       {
+        id: "read-offline",
         q: "Can I read offline?",
         a: "Offline reading is included on Pro, Scholar, and Household.",
         confirm: true,
       },
       {
+        id: "supported-devices",
         q: "What devices does Tome work on?",
         a: "Tome runs in any modern browser on desktop, tablet, and phone.",
         confirm: true,
       },
       {
+        id: "reading-privacy",
         q: "Is my reading private?",
         a: "Yes. Public profiles and Circles are opt-in; by default everything you read, highlight, and note stays private to you.",
       },
@@ -82,38 +94,46 @@ export const faqCategories: FaqCategory[] = [
     label: "Plans & billing",
     items: [
       {
+        id: "annual-billing",
         q: "How does annual billing work?",
         a: `Solo is ${SOLO_ANNUAL_PRICE} per year when you switch the billing toggle to annual — the same plan as monthly Solo, just billed yearly for roughly two months free.`,
       },
       {
+        id: "free-trial",
         q: "Is there a free trial?",
         a: "Yes. Every paid plan starts with a 7-day free trial of Pro. Cancel before it ends and you won't be charged.",
       },
       {
+        id: "cancel-anytime",
         q: "Can I cancel anytime?",
         a: "Yes, right from your account settings. You keep full access through the end of the period you've already paid for.",
       },
       {
+        id: "keep-progress-after-cancel",
         q: "What happens to my library and progress if I cancel?",
         a: "Nothing is deleted. Your highlights, notes, Wisdom, and reading history stay on your account — you just return to Free-plan access until you resubscribe.",
       },
       {
+        id: "household-plan",
         q: "Is there a household or family plan?",
         a: HOUSEHOLD_ENABLED
           ? `Yes — the Family plan covers up to ${HOUSEHOLD_SEATS} readers under one subscription, built for families reading the Great Books together.`
           : "Not yet — family plans are coming soon. For now, each reader needs their own account.",
       },
       {
+        id: "payment-methods",
         q: "What payment methods do you accept?",
         a: "All major credit and debit cards, processed securely through Stripe.",
         confirm: true,
       },
       {
+        id: "refunds",
         q: "Do you offer refunds?",
         a: "If something isn't right, contact us within 14 days of a charge and we'll make it right.",
         confirm: true,
       },
       {
+        id: "student-educator-discounts",
         q: "Do you offer student or educator discounts?",
         a: "Individual teachers use Tome free in their classroom — see the Educators section below.",
         confirm: true,
@@ -125,31 +145,38 @@ export const faqCategories: FaqCategory[] = [
     label: "For educators",
     items: [
       {
+        id: "free-for-teachers",
         q: "Is Tome really free for individual teachers?",
         a: "Yes. The Classroom plan is free forever for one teacher with up to 30 students — real assignments, auto-graded Trials, and a gradebook export, no credit card required.",
       },
       {
+        id: "how-students-join",
         q: "How do students join my class?",
         a: "You share a join code (for example, TOME-7Q4) and students enter it to land directly in your roster — no manual account setup.",
       },
       {
+        id: "what-can-i-assign",
         q: "What can I assign?",
         a: "Five assignment types: chapter readings, Trials, Virgil-graded reflections, annotation prompts, and quote collections — each with due dates and the option to scope to a whole class or a single student.",
       },
       {
+        id: "how-grading-works",
         q: "How does grading work?",
         a: "Trials auto-grade instantly. On paid plans, Virgil drafts grades and feedback for written reflections, which you review and adjust before they're final.",
       },
       {
+        id: "lms-integration",
         q: "Does Tome integrate with my LMS or Google Classroom?",
         a: "Gradebook and LMS export are available on the School plan; automatic roster sync with Clever, ClassLink, and Google Classroom, plus single sign-on, comes with District.",
       },
       {
+        id: "student-data-safe",
         q: "Is student data safe?",
         a: "Protecting student data is a priority. We follow FERPA- and COPPA-aligned practices and never sell student data.",
         confirm: true,
       },
       {
+        id: "bring-tome-to-school",
         q: "How do I bring Tome to my whole department or school?",
         a: "The School and District plans add unlimited classes, every assignment type, co-teacher sharing, dashboards, and integrations. Book a demo and we'll set up a pilot for your team.",
       },
@@ -160,14 +187,17 @@ export const faqCategories: FaqCategory[] = [
     label: "The texts & trust",
     items: [
       {
+        id: "where-books-come-from",
         q: "Where do the books come from?",
         a: "Every text is in the public domain, sourced and cleaned from high-quality digital editions and reformatted for Tome's reader so the typography and structure do the work justice.",
       },
       {
+        id: "how-books-are-chosen",
         q: "How do you decide which books are chosen for readers?",
         a: `Every title belongs to the established canon of world literature, chosen for its lasting influence across traditions — and every book is in the public domain, sourced from high-quality digital editions. The library spans ${CANONICAL_BOOK_COUNT} works across ${TRADITIONS_LABEL}, and Virgil can suggest where to start based on what you already love.`,
       },
       {
+        id: "religious-affiliation",
         q: "Is Tome tied to a particular religion or school of thought?",
         a: "Tome is for anyone serious about the canon of world literature — used by independent readers, homeschoolers, and both faith-based and secular schools alike.",
         confirm: true,
@@ -179,8 +209,9 @@ export const faqCategories: FaqCategory[] = [
     label: "Support",
     items: [
       {
+        id: "how-to-get-support",
         q: "How do I get support?",
-        a: "Reach a person anytime through the messenger in the corner of the app — real help, not just docs. [CONFIRM: also list a support email.]",
+        a: "Reach a person anytime through the messenger in the corner of the app — real help, not just docs.",
         confirm: true,
       },
     ],

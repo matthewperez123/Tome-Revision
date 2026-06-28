@@ -2,12 +2,13 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { Target, ChevronRight, BookOpen, ArrowRight, Check } from "lucide-react"
+import { Brain, ChevronRight, BookOpen, ArrowRight, Check } from "lucide-react"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { getAllBookProgress, type BookProgress } from "@/lib/book-progress"
 import { getBook } from "@/lib/content"
 import { BookCoverThumb } from "@/components/tome/book-cover-thumb"
 import type { TomeBook } from "@/data/books"
+import { SectionVirgilPanel } from "@/components/virgil/SectionVirgilPanel"
 
 // Books with quiz content available
 const QUIZ_BOOKS = [
@@ -50,14 +51,21 @@ export default function QuizzesPage() {
   return (
     <div className="flex flex-col min-h-full">
       <div className="sticky top-0 z-10 border-b border-border bg-background/80 backdrop-blur-sm px-4 py-2.5">
-        <div className="flex items-center gap-2">
-          <Target className="size-4 text-[var(--gold-default)]" />
-          <h1 className="text-sm font-serif font-semibold leading-none tracking-tight">Quizzes</h1>
-          <p className="text-[10px] text-muted-foreground ml-auto">{QUIZ_BOOKS.length} books with quizzes</p>
+        <div className="flex items-center gap-2.5">
+          <Brain className="size-6 shrink-0 text-foreground" />
+          <h1 className="text-2xl font-bold tracking-tight">Quizzes</h1>
+          <p className="text-sm text-muted-foreground ml-auto">{QUIZ_BOOKS.length} books with quizzes</p>
         </div>
       </div>
 
       <div className="flex-1 overflow-y-auto p-4 space-y-6">
+        {/* Virgil search assistant */}
+        <SectionVirgilPanel
+          title="Find a quiz with Virgil"
+          placeholder="Ask Virgil which quiz to take…"
+          hint="Tell me a book or theme you want to test yourself on, and I'll point you to the right quiz."
+        />
+
         {/* In-progress quizzes */}
         {inProgress.length > 0 && (
           <BlurFade delay={0.1} inView>

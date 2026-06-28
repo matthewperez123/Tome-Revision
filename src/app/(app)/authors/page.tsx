@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState, useCallback } from "react"
 import Link from "next/link"
-import { Search, Users2, SlidersHorizontal, ChevronLeft } from "lucide-react"
+import { Search, Users2, SlidersHorizontal, ChevronLeft, PenTool } from "lucide-react"
 import { AUTHORS } from "@/data/authors"
 import { BOOKS } from "@/data/books"
 import { Skeleton } from "@/components/ui/skeleton"
@@ -312,13 +312,16 @@ export default function AuthorsPage() {
         {/* Sticky Header — matches Library (no search bar, no difficulty pills) */}
         <div className="sticky top-0 z-10 border-b border-border bg-background px-4 py-2.5">
           <div className="flex items-center gap-3">
-            <div className="flex flex-col min-w-0 mr-auto">
-              <h1 className="text-sm font-serif font-semibold leading-none tracking-tight">
-                Authors
-              </h1>
-              <p className="text-[10px] text-muted-foreground mt-0.5">
-                {filtered.length} author{filtered.length !== 1 ? "s" : ""} across {allTraditions.length} traditions
-              </p>
+            <div className="flex items-center gap-2.5 min-w-0 mr-auto">
+              <PenTool className="size-6 shrink-0 text-foreground" />
+              <div className="flex flex-col min-w-0">
+                <h1 className="text-2xl font-bold tracking-tight">
+                  Authors
+                </h1>
+                <p className="text-sm text-muted-foreground mt-0.5">
+                  {filtered.length} author{filtered.length !== 1 ? "s" : ""} across {allTraditions.length} traditions
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useMemo } from "react"
 import { AnimatePresence, motion } from "framer-motion"
-import { ChevronRight } from "lucide-react"
+import { ChevronRight, History } from "lucide-react"
 import { Skeleton } from "@/components/ui/skeleton"
 import { HorizontalTimeline } from "@/components/timelines/HorizontalTimeline"
 import { AuthorDropdown } from "@/components/timelines/AuthorDropdown"
@@ -14,6 +14,7 @@ import {
 } from "@/data/timelines"
 import { BOOKS } from "@/data/books"
 import type { TomeBook } from "@/data/books"
+import { SectionVirgilPanel } from "@/components/virgil/SectionVirgilPanel"
 
 // ── Accordion persistence ───────────────────────────────────────────────────
 
@@ -162,19 +163,24 @@ export default function TimelinesPage() {
   return (
     <div className="space-y-6 px-4 py-6 sm:px-6" style={{ ["--accent" as string]: "var(--codex-primary)" }}>
       {/* Header — Timeline owns the Catalogue / tyrian accent (chrome only) */}
-      <div className="relative pl-3">
-        <span
-          aria-hidden
-          className="absolute left-0 top-1 bottom-1 w-1 rounded-full"
-          style={{ background: "var(--codex-primary)" }}
-        />
-        <h1 className="font-[var(--font-display)] text-3xl font-bold text-foreground">
-          Timelines
-        </h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          The canon, charted through time.
-        </p>
+      <div className="flex items-center gap-2.5">
+        <History className="size-6 shrink-0 text-foreground" />
+        <div>
+          <h1 className="text-2xl font-bold tracking-tight text-foreground">
+            Timelines
+          </h1>
+          <p className="mt-0.5 text-sm text-muted-foreground">
+            The canon, charted through time.
+          </p>
+        </div>
       </div>
+
+      {/* Virgil search assistant */}
+      <SectionVirgilPanel
+        title="Trace an era with Virgil"
+        placeholder="Ask Virgil about a period or author…"
+        hint="Name a century, movement, or author and I'll point you to the works that define it."
+      />
 
       {/* Region accordions — Level 1 */}
       {REGION_ORDER.map((region) => {

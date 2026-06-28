@@ -18,6 +18,7 @@ export const PRIMARY_NAV: NavLink[] = [
   { label: "Library", href: "/library" },
   { label: "Virgil", href: "/virgil" },
   { label: "Pricing", href: "/pricing" },
+  { label: "FAQ", href: "/faq" },
 ]
 
 export const AUTH_LINKS = {

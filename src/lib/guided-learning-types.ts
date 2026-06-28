@@ -39,6 +39,10 @@ export interface GuidedSession {
   created_at: string
   ended_at: string | null
   summary_data: SessionSummary
+  // ── Collaborative annotations (added in 20260625 migration) ──
+  annotations_enabled?: boolean
+  annotation_visibility?: "collaborative" | "private_to_teacher"
+  presence_enabled?: boolean
   // ── Multi-station fields (added in 20260415 migration) ──
   title?: string
   description?: string
@@ -84,6 +88,8 @@ export interface Station {
   chapter_end: number | null
   section_range: { startSection: string; endSection: string } | null
   quiz_id: string | null
+  /** Reference to a Virgil-authored teacher_quiz (quiz stations). */
+  teacher_quiz_id: string | null
   quiz_config: QuizConfig | null
   reflection_prompt: string | null
   min_words: number | null
@@ -278,6 +284,10 @@ export interface DraftStation {
   chapter_end: number | null
   section_range: { startSection: string; endSection: string } | null
   quiz_id: string | null
+  /** Reference to a Virgil-authored teacher_quiz (quiz stations). */
+  teacher_quiz_id: string | null
+  /** Display-only summary of the generated quiz, e.g. "8 questions · scholar". */
+  teacher_quiz_summary?: string
   quiz_config: QuizConfig | null
   reflection_prompt: string | null
   min_words: number | null
