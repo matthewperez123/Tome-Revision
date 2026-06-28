@@ -26,6 +26,14 @@ const nextConfig: NextConfig = {
     return config;
   },
 
+  // The cover reference route reads files via a dynamic process.cwd() path,
+  // which makes Next.js conservatively trace the entire project root into the
+  // serverless function (982mb > 250mb limit). It only needs node:fs/node:path,
+  // so exclude node_modules and public from its trace.
+  outputFileTracingExcludes: {
+    "/api/covers/references/*": ["node_modules/**", "public/**"],
+  },
+
   // Compress responses
   compress: true,
 
