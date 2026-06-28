@@ -20,7 +20,7 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 import {
   Lock, Sparkles, BookOpen, PenTool, BookMarked,
-  Globe2, Trophy, Filter, Flame, BrainCircuit,
+  Globe2, Trophy, Filter, Flame, BrainCircuit, Bookmark,
   Sword, Ship, Compass, Crown, Mountain, Moon,
   Star, Eye, Key, Feather, TreePine, Waves,
   Skull, Scale, Sun, Columns, FlameKindling,
@@ -28,10 +28,9 @@ import {
   BookMarked as BookIcon, Globe, Lightbulb,
   type LucideIcon,
 } from "lucide-react"
-import { useEconomy } from "@/components/tome/economy-provider"
 import { getAllAchievements } from "@/data/achievements"
 import { loadAchievementState } from "@/lib/achievements/engine"
-import { VirgilReflection } from "@/components/tome/virgil-reflection"
+import { getTipOfTheDay } from "@/lib/virgil-tips"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { getAllBookProgress } from "@/lib/book-progress"
 import { springs } from "@/lib/design-tokens"
@@ -88,7 +87,6 @@ function getCollectionProgress(
 // ── Page ────────────────────────────────────────
 
 export default function SealsPage() {
-  const { stats } = useEconomy()
   const [categoryFilter, setCategoryFilter] = useState<CategoryFilter>("all")
   const [rarityFilter, setRarityFilter] = useState<AchievementRarity | "all">("all")
   const [achievementState, setAchievementState] = useState(() => loadAchievementState())
@@ -144,27 +142,45 @@ export default function SealsPage() {
     <div className="relative p-4 md:p-6">
       {/* Header */}
       <BlurFade delay={0.05} inView>
-        <h1 className="font-playfair text-xl font-semibold tracking-tight md:text-2xl" style={{ letterSpacing: "-0.02em" }}>
-          Your Seals
-        </h1>
-        <span className="mt-1 text-sm text-muted-foreground block">
-          <span className="text-sm font-semibold text-foreground">{earnedCount}</span>
-          <span className="ml-1">/ {allAchievements.length} earned</span>
-        </span>
+        <div className="flex items-center gap-2.5">
+          <Trophy className="size-6 shrink-0 text-foreground" />
+          <div>
+            <h1 className="text-2xl font-bold tracking-tight">
+              Your Seals
+            </h1>
+            <span className="mt-0.5 text-sm text-muted-foreground block">
+              <span className="text-sm font-semibold text-foreground">{earnedCount}</span>
+              <span className="ml-1">/ {allAchievements.length} earned</span>
+            </span>
+          </div>
+        </div>
       </BlurFade>
 
-      {/* Virgil Reflection */}
-      <VirgilReflection
-        type="progress"
-        context={{
-          booksRead: Object.keys(allProgress),
-          chaptersCompleted: Object.values(allProgress).reduce(
-            (sum, p) => sum + p.completedChapterIndices.length,
-            0,
-          ),
-          streakDays: stats.current_streak,
-        }}
-      />
+      {/* Virgil's Tip — matches the dashboard styling */}
+      <BlurFade delay={0.08} inView>
+        <div
+          className="mt-4 rounded-xl p-4 flex gap-3 items-start"
+          style={{
+            background: "color-mix(in srgb, #6366f1 6%, transparent)",
+            border: "1px solid color-mix(in srgb, #6366f1 20%, transparent)",
+          }}
+        >
+          <div
+            className="mt-0.5 shrink-0 size-8 rounded-full flex items-center justify-center"
+            style={{ background: "rgba(212,160,76,0.15)" }}
+          >
+            <Bookmark className="size-4 text-[#D4A04C]" />
+          </div>
+          <div>
+            <p className="text-xs font-bold text-[#D4A04C] uppercase tracking-widest mb-1">
+              Virgil&rsquo;s Tip
+            </p>
+            <p className="text-sm leading-relaxed text-foreground/80 font-serif italic">
+              &ldquo;{getTipOfTheDay()}&rdquo;
+            </p>
+          </div>
+        </div>
+      </BlurFade>
 
       {/* Filters */}
       <div className="mt-4 flex flex-wrap items-center gap-3">
