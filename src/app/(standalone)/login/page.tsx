@@ -7,7 +7,6 @@ import { motion } from "framer-motion"
 import { BookOpen, Mail, Lock, Eye, EyeOff } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { GoogleButton } from "@/components/auth/google-button"
 import { createClient } from "@/lib/supabase/client"
 
 function LoginContent() {
@@ -59,19 +58,6 @@ function LoginContent() {
           <p className="mt-1 text-sm text-muted-foreground">
             Sign in to continue your journey
           </p>
-        </div>
-
-        {/* Google OAuth */}
-        <GoogleButton />
-
-        {/* Divider */}
-        <div className="relative my-6">
-          <div className="absolute inset-0 flex items-center">
-            <div className="w-full border-t" />
-          </div>
-          <div className="relative flex justify-center text-xs">
-            <span className="bg-background px-2 text-muted-foreground">or</span>
-          </div>
         </div>
 
         {/* Email form */}
