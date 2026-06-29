@@ -35,12 +35,21 @@ export function GoogleButton({
     setError(null)
     setLoading(true)
 
-    const redirectTo = new URL("/auth/callback", window.location.origin)
+    // SITE_URL from env (stable across previews/prod), falling back to the
+    // current origin for local dev where the env var may be absent.
+    const siteUrl =
+      process.env.NEXT_PUBLIC_SITE_URL || window.location.origin
+    const redirectTo = new URL("/auth/callback", siteUrl)
     if (next) redirectTo.searchParams.set("next", next)
 
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
-      options: { redirectTo: redirectTo.toString() },
+      options: {
+        redirectTo: redirectTo.toString(),
+        // access_type:offline + prompt:consent guarantees Google returns a
+        // refresh token (needed for long-lived sessions / provider re-auth).
+        queryParams: { access_type: "offline", prompt: "consent" },
+      },
     })
     if (error) {
       setError(error.message)
