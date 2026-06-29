@@ -7,7 +7,6 @@ import { motion } from "framer-motion"
 import { BookOpen, Mail, Lock, User, Eye, EyeOff } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { GoogleButton } from "@/components/auth/google-button"
 import { createClient } from "@/lib/supabase/client"
 
 export default function SignupPage() {
@@ -51,8 +50,8 @@ export default function SignupPage() {
       return
     }
 
-    // Email confirmation off: session is live, treat like a verified user.
-    router.push("/auth/verified")
+    // Email confirmation off: session is live, go straight into the app.
+    router.push("/dashboard")
     router.refresh()
   }
 
@@ -73,19 +72,6 @@ export default function SignupPage() {
           <p className="mt-1 text-sm text-muted-foreground">
             Start your journey through the classics
           </p>
-        </div>
-
-        {/* Google OAuth */}
-        <GoogleButton />
-
-        {/* Divider */}
-        <div className="relative my-6">
-          <div className="absolute inset-0 flex items-center">
-            <div className="w-full border-t" />
-          </div>
-          <div className="relative flex justify-center text-xs">
-            <span className="bg-background px-2 text-muted-foreground">or</span>
-          </div>
         </div>
 
         {/* Signup form */}
