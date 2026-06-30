@@ -30,6 +30,7 @@ import { StepTeacherWelcome } from "./step-teacher-welcome"
 import { StepFirstBook } from "./step-first-book"
 import { StepGoal } from "./step-goal"
 import { StepVirgil } from "./step-virgil"
+import { StepJoinClass } from "./step-join-class"
 import { isOnboardingComplete, completeOnboarding, syncOnboardingToSupabase } from "@/lib/onboarding"
 
 // Step keys for the branching flow
@@ -47,9 +48,14 @@ type StepKey =
   | "virgil"
   | "first-book"
   | "goal"
+  // Student-only steps
+  | "join-class"
 
 // Reader path: a short Virgil welcome → pick a first book → set a daily goal
 const READER_STEPS: StepKey[] = ["role", "virgil", "first-book", "goal"]
+
+// Student path: join a class with a code → set a daily goal
+const STUDENT_STEPS: StepKey[] = ["role", "join-class", "goal"]
 
 // Teacher path: fully separate classroom-focused flow
 const TEACHER_STEPS: StepKey[] = [
@@ -67,7 +73,7 @@ export default function OnboardingPage() {
   const router = useRouter()
   const [stepIndex, setStepIndex] = useState(0)
   const [direction, setDirection] = useState(1)
-  const [userType, setUserType] = useState<"reader" | "teacher" | null>(null)
+  const [userType, setUserType] = useState<"reader" | "teacher" | "student" | null>(null)
 
   // Skip if already completed
   useEffect(() => {
@@ -77,6 +83,8 @@ export default function OnboardingPage() {
   // Compute steps directly (no useMemo) to avoid stale closures
   const steps: StepKey[] = userType === "teacher"
     ? TEACHER_STEPS
+    : userType === "student"
+    ? STUDENT_STEPS
     : userType === "reader"
     ? READER_STEPS
     : ["role"]
@@ -101,15 +109,15 @@ export default function OnboardingPage() {
   function back() {
     if (stepIndex > 0) {
       setDirection(-1)
-      // If going back to role from teacher path step 1, reset userType
-      if (stepIndex === 1 && userType === "teacher") {
+      // If going back to role from a branched path step 1, reset userType
+      if (stepIndex === 1 && userType !== "reader") {
         setUserType(null)
       }
       setStepIndex((s) => s - 1)
     }
   }
 
-  function handleRoleSelect(role: "reader" | "teacher") {
+  function handleRoleSelect(role: "reader" | "teacher" | "student") {
     setUserType(role)
     // Both paths have "role" as step 0, so advance to step 1
     setDirection(1)
@@ -131,6 +139,8 @@ export default function OnboardingPage() {
     "virgil": <StepVirgil onComplete={next} />,
     "first-book": <StepFirstBook onNext={next} onBack={back} />,
     "goal": <StepGoal onNext={next} onBack={back} />,
+    // Student-only steps
+    "join-class": <StepJoinClass onNext={next} onSkip={next} />,
   }
 
   const variants = {

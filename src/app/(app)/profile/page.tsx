@@ -24,6 +24,7 @@ import type { BookCharacter } from "@/data/character-avatars"
 import { CHARACTER_MAP, RARITY_COLORS } from "@/data/character-avatars"
 import { AvatarPickerModal } from "@/components/tome/avatar/AvatarPickerModal"
 import { useAuth } from "@/hooks/use-auth"
+import { useEntitlement } from "@/hooks/use-entitlement"
 import { useEconomy } from "@/components/tome/economy-provider"
 import { CheckoutButton } from "@/components/pricing/CheckoutButton"
 import { SOLO_ANNUAL_PRICE } from "@/lib/pricing"
@@ -78,8 +79,25 @@ function OrnamentalDivider({ color }: { color: string }) {
 
 export default function ProfilePage() {
   const router = useRouter()
-  const { user, profile, isDemoMode, signOut } = useAuth()
+  const { user, profile, isDemoMode, signOut, role } = useAuth()
+  const { tier } = useEntitlement()
   const { stats, rank } = useEconomy()
+
+  const [billingLoading, setBillingLoading] = useState(false)
+  async function openBillingPortal() {
+    setBillingLoading(true)
+    try {
+      const res = await fetch("/api/billing/portal", { method: "POST" })
+      const data = (await res.json()) as { url?: string; error?: string }
+      if (res.ok && data.url) {
+        window.location.href = data.url
+        return
+      }
+    } catch {
+      // fall through
+    }
+    setBillingLoading(false)
+  }
 
   const [allProgress, setAllProgress]   = useState<ReturnType<typeof getAllBookProgress>>({})
   const [shelfTab,    setShelfTab]       = useState<"progress" | "completed">("progress")
@@ -807,6 +825,40 @@ export default function ProfilePage() {
                   Email, password, delete your account
                 </p>
               </div>
+
+              {/* Subscription — readers only */}
+              {role === "reader" && (
+                <div className="px-5 py-4">
+                  {tier === "free" ? (
+                    <Link
+                      href="/pricing"
+                      className="flex items-center justify-between text-sm font-medium hover:text-foreground transition-colors group"
+                    >
+                      <span>Upgrade to Tome Solo</span>
+                      <ChevronRight className="size-4 text-muted-foreground group-hover:text-foreground transition-colors" />
+                    </Link>
+                  ) : (
+                    <button
+                      onClick={openBillingPortal}
+                      disabled={billingLoading}
+                      className="flex w-full items-center justify-between text-sm font-medium hover:text-foreground transition-colors group disabled:opacity-60"
+                    >
+                      <span>
+                        Manage subscription
+                        <span className="ml-2 text-[11px] font-normal text-muted-foreground capitalize">
+                          Tome {tier}
+                        </span>
+                      </span>
+                      <ChevronRight className="size-4 text-muted-foreground group-hover:text-foreground transition-colors" />
+                    </button>
+                  )}
+                  <p className="text-[11px] text-muted-foreground mt-0.5">
+                    {tier === "free"
+                      ? "Unlock the full library and Virgil"
+                      : "Update payment, change plan, or cancel"}
+                  </p>
+                </div>
+              )}
 
               {/* Sign out */}
               <div className="px-5 py-4">

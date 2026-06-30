@@ -62,6 +62,10 @@ import { CanticleHero } from "@/components/reader/canticle-hero"
 import { ReaderHighlights } from "@/components/reader/reader-highlights"
 import { ReaderPresence } from "@/components/reader/reader-presence"
 import { GuidedReadingLauncher } from "@/components/virgil/guided/guided-reading-launcher"
+import { useAuth } from "@/hooks/use-auth"
+import { useEntitlement } from "@/hooks/use-entitlement"
+import { canReadBook } from "@/lib/stripe/entitlements"
+import { UpgradeGate } from "@/components/pricing/UpgradeGate"
 
 // ── Types ──
 
@@ -206,6 +210,10 @@ export default function ReaderPage() {
   const [loading, setLoading]         = useState(true)
   const [currentChapter, setCurrentChapter] = useState(0)
   const [sidebarOpen, setSidebarOpen] = useState(true)
+
+  // ── Entitlement gate (readers only; teachers/students unaffected) ──
+  const { role } = useAuth()
+  const { tier, loading: entitlementLoading } = useEntitlement()
 
   // ── Reading preferences (dependency-free store, localStorage + Supabase) ──
   const prefs = useReaderPrefs()
@@ -952,6 +960,14 @@ export default function ReaderPage() {
         <p className="text-sm text-muted-foreground">Book not found.</p>
       </div>
     )
+  }
+
+  // Reader paywall: free-tier readers can only open the free sampler.
+  // Wait for the entitlement read to settle to avoid a flash of the gate.
+  if (!entitlementLoading && !canReadBook(tier, role, bookId)) {
+    const gateTitle =
+      ("title" in book ? book.title : undefined) ?? "This book"
+    return <UpgradeGate bookTitle={gateTitle} />
   }
 
   // ────────────────────────────────────────────────────

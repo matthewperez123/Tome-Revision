@@ -2,48 +2,49 @@
 
 import * as React from "react"
 import { createPortal } from "react-dom"
-import { useRouter } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
-import { GraduationCap, BookOpen, ChevronUp, Check, LogOut } from "lucide-react"
+import { GraduationCap, BookOpen, Backpack, ChevronUp, LogOut } from "lucide-react"
 import { useAuth } from "@/hooks/use-auth"
 import { UserAvatar } from "@/components/tome/avatar/UserAvatar"
 import { getCurrentAvatar } from "@/lib/avatar-state"
 import { CHARACTER_MAP, type BookCharacter } from "@/data/character-avatars"
-import { saveOnboardingData, getOnboardingData } from "@/lib/onboarding"
 import { useSidebar } from "@/components/ui/sidebar"
 import Link from "next/link"
 
-interface ProfileOption {
-  role: "reader" | "teacher"
+interface RoleMeta {
   label: string
   subtitle: string
   icon: typeof BookOpen
   accentColor: string
 }
 
-const PROFILES: ProfileOption[] = [
-  {
-    role: "teacher",
+// Account type is permanent — set once during onboarding, never switchable here.
+const ROLE_META: Record<"reader" | "teacher" | "student", RoleMeta> = {
+  teacher: {
     label: "Teacher",
     subtitle: "Classroom management",
     icon: GraduationCap,
     accentColor: "#D4A04C",
   },
-  {
-    role: "reader",
+  student: {
+    label: "Student",
+    subtitle: "Enrolled in a class",
+    icon: Backpack,
+    accentColor: "#2A4B8D",
+  },
+  reader: {
     label: "Reader",
     subtitle: "Personal reading",
     icon: BookOpen,
     accentColor: "#6366F1",
   },
-]
+}
 
 /** Width of the portal popup */
 const POPUP_WIDTH = 240
 
 export function ProfileSwitcher() {
-  const router = useRouter()
-  const { role, profile } = useAuth()
+  const { role, profile, signOut } = useAuth()
   const { state } = useSidebar()
   const collapsed = state === "collapsed"
   const [isOpen, setIsOpen] = React.useState(false)
@@ -92,27 +93,8 @@ export function ProfileSwitcher() {
   }, [isOpen])
 
   const displayCharacter = character ?? CHARACTER_MAP["virgil"]
-  const currentProfile = PROFILES.find((p) => p.role === role) ?? PROFILES[1]
+  const currentRole = ROLE_META[role ?? "reader"]
   const displayName = profile?.display_name ?? "Matthew"
-
-  function switchRole(newRole: "reader" | "teacher") {
-    if (newRole === role) {
-      setIsOpen(false)
-      return
-    }
-
-    // Update localStorage onboarding data — ensure completedAt exists
-    // so getDemoProfile() recognises the profile on reload
-    const current = getOnboardingData()
-    saveOnboardingData({
-      userType: newRole,
-      completedAt: current.completedAt ?? new Date().toISOString(),
-    })
-    setIsOpen(false)
-
-    // Navigate to dashboard and reload to pick up the new role
-    window.location.href = "/dashboard"
-  }
 
   // Render popup via portal so it escapes sidebar overflow constraints
   const popupContent = (
@@ -131,37 +113,18 @@ export function ProfileSwitcher() {
             width: POPUP_WIDTH,
           }}
         >
-          {/* Profile options */}
-          <div className="p-1.5">
-            {PROFILES.map((p) => {
-              const isActive = p.role === role
-              const Icon = p.icon
-              return (
-                <button
-                  key={p.role}
-                  onClick={() => switchRole(p.role)}
-                  className={`flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left transition-colors ${
-                    isActive
-                      ? "bg-muted"
-                      : "hover:bg-muted/50"
-                  }`}
-                >
-                  <div
-                    className="flex size-8 items-center justify-center rounded-lg"
-                    style={{ backgroundColor: `${p.accentColor}15` }}
-                  >
-                    <Icon className="size-4" style={{ color: p.accentColor }} />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium">{p.label}</p>
-                    <p className="text-[10px] text-muted-foreground">{p.subtitle}</p>
-                  </div>
-                  {isActive && (
-                    <Check className="size-4 text-green-500 shrink-0" />
-                  )}
-                </button>
-              )
-            })}
+          {/* Account identity (read-only — role is fixed at onboarding) */}
+          <div className="flex items-center gap-3 p-3">
+            <div
+              className="flex size-8 items-center justify-center rounded-lg"
+              style={{ backgroundColor: `${currentRole.accentColor}15` }}
+            >
+              <currentRole.icon className="size-4" style={{ color: currentRole.accentColor }} />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-medium truncate">{displayName}</p>
+              <p className="text-[10px] text-muted-foreground">{currentRole.label} account</p>
+            </div>
           </div>
 
           {/* Divider + links */}
@@ -180,6 +143,16 @@ export function ProfileSwitcher() {
             >
               Change Avatar
             </Link>
+            <button
+              onClick={() => {
+                setIsOpen(false)
+                void signOut()
+              }}
+              className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm text-muted-foreground hover:bg-muted/50 hover:text-foreground"
+            >
+              <LogOut className="size-3.5" />
+              Sign out
+            </button>
           </div>
         </motion.div>
       )}
@@ -191,7 +164,7 @@ export function ProfileSwitcher() {
       {/* Portal the popup to document.body so it escapes sidebar clipping */}
       {typeof document !== "undefined" && createPortal(popupContent, document.body)}
 
-      {/* Current profile button */}
+      {/* Current account button */}
       <button
         ref={buttonRef}
         onClick={() => setIsOpen(!isOpen)}
@@ -207,8 +180,8 @@ export function ProfileSwitcher() {
             <div className="flex-1 min-w-0 text-left">
               <p className="text-xs font-medium truncate leading-tight">{displayName}</p>
               <p className="text-[10px] text-muted-foreground leading-tight flex items-center gap-1">
-                <currentProfile.icon className="size-2.5" />
-                {currentProfile.label}
+                <currentRole.icon className="size-2.5" />
+                {currentRole.label}
               </p>
             </div>
             <ChevronUp

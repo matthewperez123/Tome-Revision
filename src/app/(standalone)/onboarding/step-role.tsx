@@ -2,12 +2,12 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { BookOpen, GraduationCap } from "lucide-react"
+import { BookOpen, GraduationCap, Backpack } from "lucide-react"
 import { springs } from "@/lib/design-tokens"
 import { Button } from "@/components/ui/button"
 import { saveOnboardingData } from "@/lib/onboarding"
 
-type UserType = "reader" | "teacher"
+type UserType = "reader" | "teacher" | "student"
 
 const options: { id: UserType; label: string; subtitle: string; Icon: typeof BookOpen }[] = [
   {
@@ -15,6 +15,12 @@ const options: { id: UserType; label: string; subtitle: string; Icon: typeof Boo
     label: "I'm a reader",
     subtitle: "Reading the great books for myself",
     Icon: BookOpen,
+  },
+  {
+    id: "student",
+    label: "I'm a student",
+    subtitle: "Joining a class with a code",
+    Icon: Backpack,
   },
   {
     id: "teacher",
