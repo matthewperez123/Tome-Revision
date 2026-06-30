@@ -413,10 +413,10 @@ function buildTargets(baseUrl: string): Target[] {
 
     // -------- LIBRARY -----------------------------------------------------
     { out: '04-app-ui/06-library-grid.png',
-      url: `${baseUrl}/library`, description: 'Library / book catalog grid', mode: 'fullpage' },
+      url: `${baseUrl}/library/browse`, description: 'Library / book catalog grid', mode: 'fullpage' },
 
     { out: '04-app-ui/07-book-card.png',
-      url: `${baseUrl}/library`, description: 'Single book card (first in grid)',
+      url: `${baseUrl}/library/browse`, description: 'Single book card (first in grid)',
       mode: 'locator', selector: '[data-href^="/book/"]',
       preAction: async (p) => {
         // wait for client-rendered grid to populate (BookCard uses data-href, not <a>)

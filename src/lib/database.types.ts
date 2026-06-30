@@ -856,47 +856,32 @@ export type Database = {
         }
         Relationships: []
       }
-      connections: {
+      friendships: {
         Row: {
+          addressee_id: string
           created_at: string
           id: string
-          recipient_id: string
           requester_id: string
           responded_at: string | null
-          status: string
+          status: Database["public"]["Enums"]["friendship_status"]
         }
         Insert: {
+          addressee_id: string
           created_at?: string
           id?: string
-          recipient_id: string
           requester_id: string
           responded_at?: string | null
-          status: string
+          status?: Database["public"]["Enums"]["friendship_status"]
         }
         Update: {
+          addressee_id?: string
           created_at?: string
           id?: string
-          recipient_id?: string
           requester_id?: string
           responded_at?: string | null
-          status?: string
+          status?: Database["public"]["Enums"]["friendship_status"]
         }
-        Relationships: [
-          {
-            foreignKeyName: "connections_recipient_id_fkey"
-            columns: ["recipient_id"]
-            isOneToOne: false
-            referencedRelation: "profiles"
-            referencedColumns: ["id"]
-          },
-          {
-            foreignKeyName: "connections_requester_id_fkey"
-            columns: ["requester_id"]
-            isOneToOne: false
-            referencedRelation: "profiles"
-            referencedColumns: ["id"]
-          },
-        ]
+        Relationships: []
       }
       conversation_participants: {
         Row: {
@@ -973,66 +958,41 @@ export type Database = {
           },
         ]
       }
-      db_notifications: {
+      notifications: {
         Row: {
-          action_url: string | null
-          body: string | null
-          classroom_id: string | null
-          created_at: string | null
+          actor_id: string | null
+          created_at: string
+          entity_id: string | null
+          entity_type: string | null
           id: string
-          read: boolean | null
-          source_user_id: string | null
-          title: string
-          type: string
-          user_id: string
+          payload: Json
+          read_at: string | null
+          recipient_id: string
+          type: Database["public"]["Enums"]["notification_type"]
         }
         Insert: {
-          action_url?: string | null
-          body?: string | null
-          classroom_id?: string | null
-          created_at?: string | null
+          actor_id?: string | null
+          created_at?: string
+          entity_id?: string | null
+          entity_type?: string | null
           id?: string
-          read?: boolean | null
-          source_user_id?: string | null
-          title: string
-          type: string
-          user_id: string
+          payload?: Json
+          read_at?: string | null
+          recipient_id: string
+          type: Database["public"]["Enums"]["notification_type"]
         }
         Update: {
-          action_url?: string | null
-          body?: string | null
-          classroom_id?: string | null
-          created_at?: string | null
+          actor_id?: string | null
+          created_at?: string
+          entity_id?: string | null
+          entity_type?: string | null
           id?: string
-          read?: boolean | null
-          source_user_id?: string | null
-          title?: string
-          type?: string
-          user_id?: string
+          payload?: Json
+          read_at?: string | null
+          recipient_id?: string
+          type?: Database["public"]["Enums"]["notification_type"]
         }
-        Relationships: [
-          {
-            foreignKeyName: "db_notifications_classroom_id_fkey"
-            columns: ["classroom_id"]
-            isOneToOne: false
-            referencedRelation: "classrooms"
-            referencedColumns: ["id"]
-          },
-          {
-            foreignKeyName: "db_notifications_source_user_id_fkey"
-            columns: ["source_user_id"]
-            isOneToOne: false
-            referencedRelation: "profiles"
-            referencedColumns: ["id"]
-          },
-          {
-            foreignKeyName: "db_notifications_user_id_fkey"
-            columns: ["user_id"]
-            isOneToOne: false
-            referencedRelation: "profiles"
-            referencedColumns: ["id"]
-          },
-        ]
+        Relationships: []
       }
       glosses: {
         Row: {
@@ -1515,7 +1475,9 @@ export type Database = {
         Row: {
           avatar_url: string | null
           created_at: string | null
+          discoverable: boolean
           display_name: string | null
+          friend_code: string
           grade_levels: string[] | null
           id: string
           onboarding_completed: boolean | null
@@ -1529,7 +1491,9 @@ export type Database = {
         Insert: {
           avatar_url?: string | null
           created_at?: string | null
+          discoverable?: boolean
           display_name?: string | null
+          friend_code?: string
           grade_levels?: string[] | null
           id: string
           onboarding_completed?: boolean | null
@@ -1543,7 +1507,9 @@ export type Database = {
         Update: {
           avatar_url?: string | null
           created_at?: string | null
+          discoverable?: boolean
           display_name?: string | null
+          friend_code?: string
           grade_levels?: string[] | null
           id?: string
           onboarding_completed?: boolean | null
@@ -2461,6 +2427,17 @@ export type Database = {
         Args: { p_recipient: string; p_sender: string }
         Returns: boolean
       }
+      create_notification: {
+        Args: {
+          p_recipient: string
+          p_type: Database["public"]["Enums"]["notification_type"]
+          p_actor?: string
+          p_entity_type?: string
+          p_entity_id?: string
+          p_payload?: Json
+        }
+        Returns: string
+      }
       claim_email_slot: {
         Args: {
           _conversation_id: string
@@ -2468,6 +2445,24 @@ export type Database = {
           _profile_id: string
         }
         Returns: boolean
+      }
+      find_friend_candidate_by_code: {
+        Args: { p_code: string }
+        Returns: {
+          id: string
+          display_name: string | null
+          username: string | null
+          avatar_url: string | null
+        }[]
+      }
+      find_friend_candidate_by_handle: {
+        Args: { p_handle: string }
+        Returns: {
+          id: string
+          display_name: string | null
+          username: string | null
+          avatar_url: string | null
+        }[]
       }
       is_conversation_participant: {
         Args: { _conversation_id: string; _uid: string }
@@ -2489,6 +2484,19 @@ export type Database = {
       }
     }
     Enums: {
+      friendship_status: "pending" | "accepted" | "declined" | "blocked"
+      notification_type:
+        | "friend_request"
+        | "friend_accepted"
+        | "group_invite"
+        | "group_post"
+        | "class_assignment"
+        | "assignment_graded"
+        | "parent_link_request"
+        | "session_summary"
+        | "peer_review"
+        | "book_recommendation"
+        | "system"
       trial_question_type:
         | "fill_the_line"
         | "find_the_evidence"

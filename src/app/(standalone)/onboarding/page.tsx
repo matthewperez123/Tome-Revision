@@ -27,8 +27,7 @@ import { StepFirstClassroom } from "./step-first-classroom"
 import { StepTeacherIntent } from "./step-teacher-intent"
 import { StepTeacherTradition } from "./step-teacher-tradition"
 import { StepTeacherWelcome } from "./step-teacher-welcome"
-import { StepIntent } from "./step-intent"
-import { StepTradition } from "./step-tradition"
+import { StepFirstBook } from "./step-first-book"
 import { StepGoal } from "./step-goal"
 import { StepVirgil } from "./step-virgil"
 import { isOnboardingComplete, completeOnboarding, syncOnboardingToSupabase } from "@/lib/onboarding"
@@ -45,13 +44,12 @@ type StepKey =
   | "teacher-tradition"
   | "teacher-welcome"
   // Reader-only steps
-  | "intent"
-  | "tradition"
-  | "goal"
   | "virgil"
+  | "first-book"
+  | "goal"
 
-// Reader path: personal reading journey
-const READER_STEPS: StepKey[] = ["role", "intent", "tradition", "goal", "virgil"]
+// Reader path: a short Virgil welcome → pick a first book → set a daily goal
+const READER_STEPS: StepKey[] = ["role", "virgil", "first-book", "goal"]
 
 // Teacher path: fully separate classroom-focused flow
 const TEACHER_STEPS: StepKey[] = [
@@ -130,10 +128,9 @@ export default function OnboardingPage() {
     "first-classroom": <StepFirstClassroom onNext={next} onBack={back} onSkip={next} />,
     "teacher-welcome": <StepTeacherWelcome onComplete={next} />,
     // Reader-only steps
-    "intent": <StepIntent onNext={next} onBack={undefined} />,
-    "tradition": <StepTradition onNext={next} onBack={back} />,
-    "goal": <StepGoal onNext={next} onBack={back} />,
     "virgil": <StepVirgil onComplete={next} />,
+    "first-book": <StepFirstBook onNext={next} onBack={back} />,
+    "goal": <StepGoal onNext={next} onBack={back} />,
   }
 
   const variants = {

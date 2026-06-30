@@ -77,10 +77,12 @@ export async function autoGradeTrialSubmission(
       .eq("id", parsed.data)
 
     await notify({
-      userId: sub.student_id,
-      type: "submission_graded",
+      recipientId: sub.student_id,
+      type: "assignment_graded",
       title: `Your submission was auto-graded: ${rawScore}/${max}`,
       actionUrl: `/classroom`,
+      entityType: "submission",
+      entityId: parsed.data,
     })
 
     return ok({ gradeId: grade.id })
@@ -149,15 +151,16 @@ export async function manualGrade(
       .eq("id", parsed.data.submissionId)
 
     await notify({
-      userId: sub.student_id,
-      type: "submission_graded",
+      recipientId: sub.student_id,
+      type: "assignment_graded",
       title: `Your submission was graded: ${sub.assignments?.title ?? "Assignment"}`,
       body: `Score: ${parsed.data.score} / ${sub.assignments?.points_available ?? 100}`,
       actionUrl: sub.assignments?.classroom_id
         ? `/classroom/${sub.assignments.classroom_id}`
         : "/classroom",
-      sourceUserId: user.id,
-      classroomId: sub.assignments?.classroom_id,
+      actorId: user.id,
+      entityType: "submission",
+      entityId: parsed.data.submissionId,
     })
 
     if (sub.assignments?.classroom_id) {

@@ -9,6 +9,7 @@ import {
   Target, Share2, BarChart2, LogOut, Check, Pencil,
 } from "lucide-react"
 import { VirgilReflection } from "@/components/tome/virgil-reflection"
+import { GuidedReadingProfileSection } from "@/components/virgil/guided/guided-reading-profile-section"
 import { getAllBookProgress } from "@/lib/book-progress"
 import { getBooks } from "@/lib/content"
 import { TRADITION_COLORS } from "@/components/tome/book-card"
@@ -24,32 +25,11 @@ import { CHARACTER_MAP, RARITY_COLORS } from "@/data/character-avatars"
 import { AvatarPickerModal } from "@/components/tome/avatar/AvatarPickerModal"
 import { useAuth } from "@/hooks/use-auth"
 import { useEconomy } from "@/components/tome/economy-provider"
+import { CheckoutButton } from "@/components/pricing/CheckoutButton"
+import { SOLO_ANNUAL_PRICE } from "@/lib/pricing"
 import { getAllAchievements } from "@/data/achievements"
 import { loadAchievementState } from "@/lib/achievements/engine"
 import { RARITY_WAX_COLORS } from "@/types/achievement"
-
-// ── Level system ───────────────────────────────
-
-const LEVELS = [
-  { level: 1, title: "Novice",     minXp: 0    },
-  { level: 2, title: "Apprentice", minXp: 300  },
-  { level: 3, title: "Scholar",    minXp: 700  },
-  { level: 4, title: "Sage",       minXp: 1500 },
-  { level: 5, title: "Luminary",   minXp: 3000 },
-]
-
-function getLevelInfo(xp: number) {
-  let current = LEVELS[0]
-  for (const l of LEVELS) {
-    if (xp >= l.minXp) current = l
-    else break
-  }
-  const next = LEVELS[LEVELS.indexOf(current) + 1]
-  const progressXp = xp - current.minXp
-  const rangeXp    = next ? next.minXp - current.minXp : 1000
-  const pct        = Math.min(100, Math.round((progressXp / rangeXp) * 100))
-  return { current, next, progressXp, rangeXp, pct }
-}
 
 // Static literary quotes for the shareable card (not user data).
 const READING_QUOTES = [
@@ -99,7 +79,7 @@ function OrnamentalDivider({ color }: { color: string }) {
 export default function ProfilePage() {
   const router = useRouter()
   const { user, profile, isDemoMode, signOut } = useAuth()
-  const { stats } = useEconomy()
+  const { stats, rank } = useEconomy()
 
   const [allProgress, setAllProgress]   = useState<ReturnType<typeof getAllBookProgress>>({})
   const [shelfTab,    setShelfTab]       = useState<"progress" | "completed">("progress")
@@ -152,7 +132,6 @@ export default function ProfilePage() {
   )
   const booksStarted = useMemo(() => Object.keys(allProgress).length, [allProgress])
 
-  const levelInfo = getLevelInfo(totalXp)
   const accentColor = "#6366F1"
   const quoteIdx = Math.floor(Date.now() / 86_400_000) % READING_QUOTES.length
   const quote    = READING_QUOTES[quoteIdx]
@@ -270,7 +249,7 @@ export default function ProfilePage() {
                 className="rounded-full px-2 py-0.5 text-[10px] font-bold leading-tight"
                 style={{ background: accentColor, color: "#fff" }}
               >
-                Lv {levelInfo.current.level}
+                Lv {rank.rank.level}
               </div>
             </div>
 
@@ -288,18 +267,22 @@ export default function ProfilePage() {
                 <p className="text-sm text-muted-foreground mt-0.5">{accountEmail}</p>
               )}
               <p className="text-sm font-medium mt-1" style={{ color: accentColor }}>
-                {levelInfo.current.title}
+                {rank.rank.name}
                 {isDemoMode && (
                   <span className="ml-2 text-[10px] text-muted-foreground/70">· demo mode</span>
                 )}
               </p>
 
-              {/* XP bar */}
+              {/* Wisdom bar */}
               <div className="mt-3 max-w-xs mx-auto sm:mx-0">
                 <div className="flex items-center justify-between text-[11px] text-muted-foreground mb-1">
-                  <span>{levelInfo.progressXp.toLocaleString()} / {levelInfo.rangeXp.toLocaleString()} XP</span>
-                  {levelInfo.next && (
-                    <span>→ {levelInfo.next.title}</span>
+                  <span>
+                    {rank.next
+                      ? `${rank.wisdomIntoRank.toLocaleString()} / ${rank.wisdomForNext.toLocaleString()} Wisdom`
+                      : `${totalXp.toLocaleString()} Wisdom`}
+                  </span>
+                  {rank.next && (
+                    <span>→ {rank.next.name}</span>
                   )}
                 </div>
                 <div className="h-2 bg-muted rounded-full overflow-hidden">
@@ -307,7 +290,7 @@ export default function ProfilePage() {
                     className="h-full rounded-full"
                     style={{ backgroundColor: accentColor }}
                     initial={{ width: 0 }}
-                    animate={{ width: `${levelInfo.pct}%` }}
+                    animate={{ width: `${rank.pct}%` }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                   />
                 </div>
@@ -324,7 +307,7 @@ export default function ProfilePage() {
         <BlurFade delay={0.1} inView>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {[
-              { label: "Total Wisdom",      value: totalXp.toLocaleString(),       icon: Sparkles, color: "#F59E0B", sub: "XP" },
+              { label: "Total Wisdom",      value: totalXp.toLocaleString(),       icon: Sparkles, color: "#F59E0B", sub: "Wisdom" },
               { label: "Day Streak",         value: streak,                         icon: Flame,    color: "#F97316", sub: `Best: ${bestStreak}` },
               { label: "Books Started",      value: booksStarted,                   icon: BookOpen, color: "#0EA5E9", sub: "in library" },
               { label: "Chapters Done",      value: totalChapters,                  icon: Bookmark, color: "#8B5CF6", sub: "completed" },
@@ -344,6 +327,41 @@ export default function ProfilePage() {
               </div>
             ))}
           </div>
+        </BlurFade>
+
+        {/* ── Upgrade to Solo (Stripe checkout) ──── */}
+        <BlurFade delay={0.13} inView>
+          <section className="relative overflow-hidden rounded-xl border border-primary/40 bg-gradient-to-br from-primary/10 via-card to-card p-5 sm:p-6">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <div className="min-w-0">
+                <div className="flex items-center gap-2">
+                  <Sparkles className="size-4 shrink-0 text-primary" />
+                  <h2 className="font-serif text-xl font-bold tracking-tight">
+                    Unlock Tome Solo
+                  </h2>
+                </div>
+                <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                  All 1,200+ books, unlimited Virgil conversations, advanced
+                  Trials, and unlimited Hearts. Starts with a 7-day free trial.
+                </p>
+              </div>
+              <div className="flex shrink-0 flex-col items-stretch gap-2 sm:items-end">
+                <CheckoutButton
+                  tier="solo"
+                  period="annual"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:opacity-70"
+                >
+                  Upgrade — {SOLO_ANNUAL_PRICE}/yr
+                </CheckoutButton>
+                <Link
+                  href="/pricing"
+                  className="text-center text-xs font-medium text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  Compare all plans
+                </Link>
+              </div>
+            </div>
+          </section>
         </BlurFade>
 
         {/* ── Virgil Reflection ─────────────────── */}
@@ -513,7 +531,7 @@ export default function ProfilePage() {
               ) : (
                 <p className="text-sm text-muted-foreground/70">
                   Nothing in progress.{" "}
-                  <Link href="/library" className="text-[var(--tome-accent)] hover:underline">Browse the library</Link> to begin.
+                  <Link href="/library/browse" className="text-[var(--tome-accent)] hover:underline">Browse the library</Link> to begin.
                 </p>
               )
             )}
@@ -625,13 +643,13 @@ export default function ProfilePage() {
                 {/* User name */}
                 <p className="font-serif text-white text-2xl font-bold mb-1">{displayName}</p>
                 <p className="text-[#D4A04C]/70 text-sm mb-6">
-                  {levelInfo.current.title} · Level {levelInfo.current.level}
+                  {rank.rank.name} · Level {rank.rank.level}
                 </p>
 
                 {/* Stats grid */}
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
                   {[
-                    { label: "Wisdom", value: totalXp.toLocaleString() + " XP", icon: Sparkles },
+                    { label: "Wisdom", value: totalXp.toLocaleString(), icon: Sparkles },
                     { label: "Streak",  value: `${streak} days`,               icon: Flame },
                     { label: "Books",   value: `${booksStarted}`,              icon: BookOpen },
                     { label: "Chapters",value: `${totalChapters}`,             icon: Bookmark },
@@ -679,6 +697,11 @@ export default function ProfilePage() {
               </button>
             </div>
           </section>
+        </BlurFade>
+
+        {/* ── Reading with Virgil (guided session reflections) ── */}
+        <BlurFade delay={0.26} inView>
+          <GuidedReadingProfileSection />
         </BlurFade>
 
         {/* ── 8. Settings ───────────────────────── */}

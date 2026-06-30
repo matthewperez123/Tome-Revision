@@ -9,7 +9,6 @@ import { TrialDemo } from "./demo/TrialDemo"
 import { WorldMapSection } from "./WorldMapSection"
 import { LibraryControlsDemo } from "./demo/LibraryControlsDemo"
 import { TrendingBooksShowcase, RecommendationsShowcase } from "./ReaderDiscoveryShowcase"
-import { MergedSocialBlock } from "./MergedSocialBlock"
 import { ReadingInsightsShowcase } from "./ReadingInsightsShowcase"
 import { ReaderPricingSection } from "./ReaderPricingSection"
 import { FinalCTA } from "./FinalCTA"
@@ -71,7 +70,6 @@ export function HomepageContent() {
       <LibraryControlsDemo />
       <TrendingBooksShowcase />
       <RecommendationsShowcase />
-      <MergedSocialBlock />
       <ReadingInsightsShowcase />
 
       {/* Student pricing band */}

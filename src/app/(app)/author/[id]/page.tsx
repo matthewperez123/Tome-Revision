@@ -2,31 +2,19 @@
  * TOME DESIGN RUBRIC — Author Profile
  * Reference: Britannica + A24 press kits + The Paris Review
  * ─────────────────────────────────
- * 1. Reference fidelity:    5/5
- * 2. Color temperature:     5/5
- * 3. Typography scale:      5/5
- * 4. Motion easing tokens:  5/5
- * 5. Component selection:   5/5
- * 6. Virgil presence:       5/5
- * 7. Density restraint:     5/5
- * 8. Accessibility:         5/5
- * ─────────────────────────────────
- * Total: 40/40 | Grade: A+
+ * Server Component: name, biography, themes, and the works grid ship in the
+ * initial HTML for SEO. BlurFade section reveals stay (they render their server
+ * children then hydrate); per-item entrance staggers are dropped.
  */
-"use client"
-
-import { useEffect, useState } from "react"
-import { useParams, useRouter } from "next/navigation"
+import type { Metadata } from "next"
 import Link from "next/link"
-import { motion } from "framer-motion"
+import { notFound } from "next/navigation"
 import { BookOpen, Lightbulb, MapPin, Calendar, ChevronRight, Library } from "lucide-react"
-import { getAuthorById, getAuthorsByTradition, authorSlug, type Author } from "@/data/authors"
+import { AUTHORS, getAuthorById, getAuthorsByTradition, authorSlug, type Author } from "@/data/authors"
 import { getBooksByAuthor } from "@/lib/content"
 import { BOOKS, type TomeBook } from "@/data/books"
-import { springs } from "@/lib/design-tokens"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { Badge } from "@/components/ui/badge"
-import { Skeleton } from "@/components/ui/skeleton"
 import { BookCard } from "@/components/tome/book-card"
 import { cn } from "@/lib/utils"
 
@@ -77,13 +65,10 @@ function getTraditionColor(traditions: string[]): string {
 
 // Slug derived from a book's display author name — mirrors the formula the
 // /authors listing uses to build its card links, so every author card resolves.
-// Use the SAME slugifier as AuthorLink (authorSlug) so a /author/<slug> link
-// built from a display name always resolves back to the same catalogue books.
 const authorIdFromName = authorSlug
 
 // Build a minimal author profile from the static book catalogue for authors
-// that have no curated entry in authors.ts. Returns null if no books match,
-// so the page can fall through to its not-found handling.
+// that have no curated entry in authors.ts. Returns null if no books match.
 function deriveAuthorFromBooks(id: string): { author: Author; books: TomeBook[] } | null {
   const books = BOOKS.filter((b) => authorIdFromName(b.author) === id)
   if (books.length === 0) return null
@@ -102,6 +87,74 @@ function deriveAuthorFromBooks(id: string): { author: Author; books: TomeBook[] 
     worksInLibrary: books.map((b) => b.id),
   }
   return { author, books }
+}
+
+// Resolve an author + their works from a slug/id, matching curated entries
+// first and falling back to a catalogue-derived profile.
+function resolveAuthor(id: string): { author: Author; books: TomeBook[] } | null {
+  const found = getAuthorById(id)
+  if (found) {
+    // Match works by authorId AND by name-slug: many catalogue books carry an
+    // authorId that doesn't equal the curated slug.
+    const slugs = new Set(
+      [found.id, found.name, (found as Author & { fullName?: string }).fullName]
+        .filter(Boolean)
+        .map((n) => authorSlug(n as string)),
+    )
+    const byId = getBooksByAuthor(found.id)
+    const bySlug = BOOKS.filter((b) => b.author && slugs.has(authorSlug(b.author)))
+    const books = [...new Map([...byId, ...bySlug].map((b) => [b.id, b])).values()]
+    return { author: found, books }
+  }
+  return deriveAuthorFromBooks(id)
+}
+
+// ── Static generation + metadata ───────────────
+
+export function generateStaticParams() {
+  const ids = new Set<string>()
+  for (const a of AUTHORS) ids.add(a.id)
+  for (const b of BOOKS) if (b.author) ids.add(authorSlug(b.author))
+  return [...ids].map((id) => ({ id }))
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>
+}): Promise<Metadata> {
+  const { id } = await params
+  const resolved = resolveAuthor(id)
+  if (!resolved) {
+    return { title: { absolute: "Author not found — Tome" } }
+  }
+  const { author, books } = resolved
+  const title = `${author.name} — Author profile on Tome`
+  const bioLead = author.bio.split(/\n+/).filter(Boolean)[0]
+  const description = bioLead
+    ? bioLead.replace(/\s+/g, " ").trim().slice(0, 155)
+    : `Read ${books.length} ${books.length === 1 ? "work" : "works"} by ${author.name} free on Tome${
+        author.traditions[0] ? ` — ${author.traditions[0]} literature` : ""
+      }.`
+  const canonical = `/author/${author.id}`
+  return {
+    title: { absolute: title },
+    description,
+    alternates: { canonical },
+    openGraph: {
+      type: "profile",
+      title,
+      description,
+      url: canonical,
+      images: [{ url: "/og-image.png" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/og-image.png"],
+    },
+  }
 }
 
 // ── Sub-components ─────────────────────────────
@@ -168,62 +221,16 @@ function AuthorAvatar({
 
 // ── Main Page ──────────────────────────────────
 
-export default function AuthorProfilePage() {
-  const params = useParams()
-  const router = useRouter()
-  const [author, setAuthor] = useState<Author | null>(null)
-  const [books, setBooks] = useState<TomeBook[]>([])
-  const [notFound, setNotFound] = useState(false)
+export default async function AuthorProfilePage({
+  params,
+}: {
+  params: Promise<{ id: string }>
+}) {
+  const { id } = await params
+  const resolved = resolveAuthor(id)
+  if (!resolved) notFound()
 
-  // Resolve author from slug/id
-  useEffect(() => {
-    const id = typeof params.id === "string" ? params.id : params.id?.[0] ?? ""
-    const found = getAuthorById(id)
-    if (found) {
-      setAuthor(found)
-      // Match works by authorId AND by name-slug: many catalogue books carry an
-      // authorId that doesn't equal the curated slug, so an authorId-only lookup
-      // leaves curated author pages with an empty "Works in Library" list.
-      const slugs = new Set(
-        [found.id, found.name, (found as Author & { fullName?: string }).fullName]
-          .filter(Boolean)
-          .map((n) => authorSlug(n as string)),
-      )
-      const byId = getBooksByAuthor(found.id)
-      const bySlug = BOOKS.filter((b) => b.author && slugs.has(authorSlug(b.author)))
-      setBooks([...new Map([...byId, ...bySlug].map((b) => [b.id, b])).values()])
-      return
-    }
-    // No curated profile — derive one from the book catalogue so the
-    // Author → Books pathway still resolves instead of dead-ending.
-    const derived = deriveAuthorFromBooks(id)
-    if (derived) {
-      setAuthor(derived.author)
-      setBooks(derived.books)
-    } else {
-      setNotFound(true)
-    }
-  }, [params.id])
-
-  // Not found redirect
-  useEffect(() => {
-    if (notFound) router.replace("/library/browse")
-  }, [notFound, router])
-
-  if (!author) {
-    return (
-      <div className="max-w-4xl mx-auto px-4 py-12 space-y-8 animate-pulse">
-        <div className="flex gap-6 items-start">
-          <Skeleton className="size-32 rounded-full shrink-0" />
-          <div className="flex-1 space-y-3">
-            <Skeleton className="h-12 w-2/3" />
-            <Skeleton className="h-5 w-1/3" />
-            <Skeleton className="h-4 w-1/4" />
-          </div>
-        </div>
-      </div>
-    )
-  }
+  const { author, books } = resolved
 
   const accentColor = getTraditionColor(author.traditions)
   const relatedAuthors = getAuthorsByTradition(author.traditions[0])
@@ -278,13 +285,7 @@ export default function AuthorProfilePage() {
           <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-12 md:py-16">
             <div className="flex flex-col sm:flex-row gap-8 items-start sm:items-center">
               {/* Avatar */}
-              <motion.div
-                initial={{ scale: 0.85, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={springs.interactive}
-              >
-                <AuthorAvatar name={author.name} color={accentColor} size="lg" />
-              </motion.div>
+              <AuthorAvatar name={author.name} color={accentColor} size="lg" />
 
               {/* Info */}
               <div className="flex-1 min-w-0">
@@ -353,35 +354,37 @@ export default function AuthorProfilePage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 space-y-14">
 
         {/* Biography */}
-        <BlurFade delay={0.1} inView>
-          <section>
-            <h2 className="font-serif text-2xl font-semibold tracking-tight mb-1">Biography</h2>
-            <OrnamentalDivider color={accentColor} />
+        {bioMain && (
+          <BlurFade delay={0.1} inView>
+            <section>
+              <h2 className="font-serif text-2xl font-semibold tracking-tight mb-1">Biography</h2>
+              <OrnamentalDivider color={accentColor} />
 
-            <p className="font-serif text-lg leading-relaxed text-foreground max-w-2xl">
-              {bioMain}
-            </p>
+              <p className="font-serif text-lg leading-relaxed text-foreground max-w-2xl">
+                {bioMain}
+              </p>
 
-            {bioQuote && (
-              <blockquote
-                className="relative mt-8 max-w-2xl pl-6 py-2"
-                style={{ borderLeft: `3px solid ${accentColor}` }}
-              >
-                {/* Decorative large opening quote */}
-                <span
-                  className="absolute -top-4 -left-2 font-serif text-7xl leading-none select-none pointer-events-none"
-                  style={{ color: `${accentColor}20` }}
-                  aria-hidden
+              {bioQuote && (
+                <blockquote
+                  className="relative mt-8 max-w-2xl pl-6 py-2"
+                  style={{ borderLeft: `3px solid ${accentColor}` }}
                 >
-                  &ldquo;
-                </span>
-                <p className="font-serif text-lg italic leading-relaxed text-foreground/85 relative z-10">
-                  {bioQuote}
-                </p>
-              </blockquote>
-            )}
-          </section>
-        </BlurFade>
+                  {/* Decorative large opening quote */}
+                  <span
+                    className="absolute -top-4 -left-2 font-serif text-7xl leading-none select-none pointer-events-none"
+                    style={{ color: `${accentColor}20` }}
+                    aria-hidden
+                  >
+                    &ldquo;
+                  </span>
+                  <p className="font-serif text-lg italic leading-relaxed text-foreground/85 relative z-10">
+                    {bioQuote}
+                  </p>
+                </blockquote>
+              )}
+            </section>
+          </BlurFade>
+        )}
 
         {/* Pull Quote */}
         {author.quotes[0] && (
@@ -419,41 +422,47 @@ export default function AuthorProfilePage() {
         )}
 
         {/* Themes & Influence */}
-        <BlurFade delay={0.2} inView>
-          <section className="grid sm:grid-cols-2 gap-8">
-            {/* Key Themes */}
-            <div>
-              <h2 className="font-serif text-2xl font-semibold tracking-tight mb-1">Key Themes</h2>
-              <OrnamentalDivider color={accentColor} />
-              <div className="flex flex-wrap gap-2">
-                {author.themes.map((theme) => (
-                  <span
-                    key={theme}
-                    className="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium"
-                    style={{
-                      background: `${accentColor}15`,
-                      color: accentColor,
-                      border: `1px solid ${accentColor}30`,
-                    }}
-                  >
-                    {theme}
-                  </span>
-                ))}
-              </div>
-            </div>
+        {(author.themes.length > 0 || author.influence) && (
+          <BlurFade delay={0.2} inView>
+            <section className="grid sm:grid-cols-2 gap-8">
+              {/* Key Themes */}
+              {author.themes.length > 0 && (
+                <div>
+                  <h2 className="font-serif text-2xl font-semibold tracking-tight mb-1">Key Themes</h2>
+                  <OrnamentalDivider color={accentColor} />
+                  <div className="flex flex-wrap gap-2">
+                    {author.themes.map((theme) => (
+                      <span
+                        key={theme}
+                        className="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium"
+                        style={{
+                          background: `${accentColor}15`,
+                          color: accentColor,
+                          border: `1px solid ${accentColor}30`,
+                        }}
+                      >
+                        {theme}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
 
-            {/* Literary Legacy */}
-            <div>
-              <h2 className="font-serif text-2xl font-semibold tracking-tight mb-1">Literary Legacy</h2>
-              <OrnamentalDivider color={accentColor} />
-              <div className="bg-muted rounded-xl p-4">
-                <p className="text-sm leading-relaxed text-muted-foreground">
-                  {author.influence}
-                </p>
-              </div>
-            </div>
-          </section>
-        </BlurFade>
+              {/* Literary Legacy */}
+              {author.influence && (
+                <div>
+                  <h2 className="font-serif text-2xl font-semibold tracking-tight mb-1">Literary Legacy</h2>
+                  <OrnamentalDivider color={accentColor} />
+                  <div className="bg-muted rounded-xl p-4">
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      {author.influence}
+                    </p>
+                  </div>
+                </div>
+              )}
+            </section>
+          </BlurFade>
+        )}
 
         {/* Works in Library */}
         <BlurFade delay={0.25} inView>
@@ -480,15 +489,8 @@ export default function AuthorProfilePage() {
               </div>
             ) : (
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-5">
-                {books.map((book, i) => (
-                  <motion.div
-                    key={book.id}
-                    initial={{ opacity: 0, y: 12 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ ...springs.gentle, delay: i * 0.06 }}
-                  >
-                    <BookCard book={book} />
-                  </motion.div>
+                {books.map((book) => (
+                  <BookCard key={book.id} book={book} />
                 ))}
               </div>
             )}
@@ -585,18 +587,12 @@ export default function AuthorProfilePage() {
               <OrnamentalDivider color={accentColor} />
 
               <div className="flex gap-4 overflow-x-auto pb-4 -mx-1 px-1 scrollbar-none snap-x snap-mandatory">
-                {relatedAuthors.map((relAuthor, i) => {
+                {relatedAuthors.map((relAuthor) => {
                   const relColor = getTraditionColor(relAuthor.traditions)
                   const relLifespan = formatLifespan(relAuthor.birthYear, relAuthor.deathYear)
 
                   return (
-                    <motion.div
-                      key={relAuthor.id}
-                      initial={{ opacity: 0, x: 16 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ ...springs.gentle, delay: 0.3 + i * 0.06 }}
-                      className="shrink-0 snap-start"
-                    >
+                    <div key={relAuthor.id} className="shrink-0 snap-start">
                       <Link
                         href={`/author/${relAuthor.id}`}
                         className="group flex flex-col items-center gap-3 w-28 text-center rounded-xl p-3 transition-colors hover:bg-muted/60"
@@ -611,7 +607,7 @@ export default function AuthorProfilePage() {
                           )}
                         </div>
                       </Link>
-                    </motion.div>
+                    </div>
                   )
                 })}
               </div>

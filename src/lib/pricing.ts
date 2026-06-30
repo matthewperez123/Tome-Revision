@@ -171,7 +171,7 @@ export const educatorPlans: EducatorPlan[] = [
       "Up to 30 students",
       "Basic assignments",
       "Auto-graded Trials",
-      "Gradebook export",
+      "Live gradebook",
     ],
     ctaLabel: "Start free",
     ctaHref: HREFS.signupClassroom,

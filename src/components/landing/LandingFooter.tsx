@@ -62,8 +62,18 @@ export function LandingFooter() {
       <div className="max-w-5xl mx-auto mt-10 pt-6 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-2">
         <span className="text-xs text-muted-foreground/50">&copy; 2026 Tome</span>
         <div className="flex items-center gap-4">
-          <span className="text-xs text-muted-foreground/50">Privacy Policy</span>
-          <span className="text-xs text-muted-foreground/50">Terms of Service</span>
+          <Link
+            href="/privacy"
+            className="text-xs text-muted-foreground/50 hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
+          >
+            Privacy Policy
+          </Link>
+          <Link
+            href="/terms"
+            className="text-xs text-muted-foreground/50 hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
+          >
+            Terms of Service
+          </Link>
         </div>
       </div>
     </footer>

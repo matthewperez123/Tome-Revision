@@ -91,11 +91,13 @@ export async function assignPeerReviewers(
 
     await notify(
       chosen.map((rid) => ({
-        userId: rid,
-        type: "peer_review_assigned",
+        recipientId: rid,
+        type: "peer_review" as const,
         title: "You have a peer review to complete",
         actionUrl: `/classroom/${sub.assignments?.classroom_id}`,
-        classroomId: sub.assignments?.classroom_id,
+        entityType: "submission",
+        entityId: parsed.data,
+        payload: { status: "assigned" },
       })),
     )
 
@@ -153,11 +155,13 @@ export async function submitPeerReview(
       }>()
     if (pra?.assignment_submissions) {
       await notify({
-        userId: pra.assignment_submissions.student_id,
-        type: "peer_review_received",
+        recipientId: pra.assignment_submissions.student_id,
+        type: "peer_review",
         title: "Someone reviewed your work",
         actionUrl: `/classroom/${pra.assignment_submissions.assignments?.classroom_id ?? ""}`,
-        classroomId: pra.assignment_submissions.assignments?.classroom_id,
+        entityType: "submission",
+        entityId: pra.submission_id,
+        payload: { status: "received" },
       })
     }
 

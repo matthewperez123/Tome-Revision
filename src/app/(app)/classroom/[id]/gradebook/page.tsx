@@ -1,6 +1,6 @@
 "use client"
 
-import { use, useCallback, useEffect, useState, useTransition } from "react"
+import { use, useCallback, useEffect, useMemo, useState, useTransition } from "react"
 import Link from "next/link"
 import { ChevronLeft, GraduationCap } from "lucide-react"
 import { toast } from "sonner"
@@ -11,30 +11,46 @@ import { useAuth } from "@/hooks/use-auth"
 import { createClient } from "@/lib/supabase/client"
 import { manualGrade, overrideGrade } from "@/lib/actions/grades"
 
-interface Assignment {
-  id: string
-  title: string
-  points_available: number
+/** One row of the classroom_gradebook RPC — a single (assignment, student) cell. */
+interface GradebookRow {
+  assignment_id: string
+  assignment_title: string
+  assignment_type: string
+  book_id: string | null
+  chapter_start: number | null
+  chapter_end: number | null
+  points_available: number | null
+  due_date: string | null
+  student_id: string
+  student_name: string | null
+  student_username: string | null
+  submission_id: string | null
+  status: string
+  score: number | null
+  max_score: number | null
+  completed_at: string | null
+  /** manual | reading | trial | submission | none */
+  source: string
 }
 
-interface Student {
+interface AssignmentCol {
   id: string
-  display_name: string
+  title: string
+  points: number
+}
+
+interface StudentRow {
+  id: string
+  name: string
   username: string | null
 }
 
-interface Submission {
-  id: string
-  assignment_id: string
-  student_id: string
-  status: string
-}
-
-interface Grade {
-  submission_id: string
-  score: number | null
-  max_score: number
-  was_overridden: boolean
+const STATUS_LABEL: Record<string, string> = {
+  graded: "Graded",
+  completed: "Done",
+  submitted: "Submitted",
+  in_progress: "In progress",
+  not_started: "—",
 }
 
 export default function GradebookPage({
@@ -46,10 +62,7 @@ export default function GradebookPage({
   const { user, isDemoMode } = useAuth()
   const [allowed, setAllowed] = useState<boolean | null>(null)
   const [classroomName, setClassroomName] = useState("")
-  const [assignments, setAssignments] = useState<Assignment[]>([])
-  const [students, setStudents] = useState<Student[]>([])
-  const [submissions, setSubmissions] = useState<Submission[]>([])
-  const [grades, setGrades] = useState<Map<string, Grade>>(new Map())
+  const [rows, setRows] = useState<GradebookRow[]>([])
   const [loading, setLoading] = useState(true)
   const [editingCell, setEditingCell] = useState<{
     submissionId: string
@@ -82,76 +95,58 @@ export default function GradebookPage({
       return
     }
 
-    // Pull classroom name + assignments + members + submissions + grades.
-    const [{ data: cls }, { data: assignsData }, { data: membersData }] =
-      await Promise.all([
-        supabase
-          .from("classrooms")
-          .select("name")
-          .eq("id", classroomId)
-          .single(),
-        supabase
-          .from("assignments")
-          .select("id, title, points_available")
-          .eq("classroom_id", classroomId)
-          .order("created_at", { ascending: true }),
-        supabase
-          .from("classroom_members")
-          .select(
-            `
-            role,
-            student:profiles!classroom_members_student_id_fkey(id, display_name, username)
-          `,
-          )
-          .eq("classroom_id", classroomId)
-          .eq("role", "student"),
-      ])
+    // Classroom name + the live derived gradebook (reading/trial completion
+    // pulled straight from reading_progress / quiz_results, manual grades on
+    // top) in one staff-only SECURITY DEFINER call.
+    const [{ data: cls }, { data: gb }] = await Promise.all([
+      supabase.from("classrooms").select("name").eq("id", classroomId).single(),
+      supabase.rpc("classroom_gradebook", { p_classroom: classroomId }),
+    ])
 
     if (cls) setClassroomName((cls as { name: string }).name)
-    setAssignments((assignsData as Assignment[] | null) ?? [])
-
-    type MemberRow = {
-      role: string
-      student: { id: string; display_name: string | null; username: string | null } | null
-    }
-    const studentList: Student[] = ((membersData ?? []) as unknown as MemberRow[])
-      .filter((m) => m.student)
-      .map((m) => ({
-        id: m.student!.id,
-        display_name: m.student!.display_name ?? "Reader",
-        username: m.student!.username,
-      }))
-    setStudents(studentList)
-
-    if ((assignsData ?? []).length > 0) {
-      const assignmentIds = (assignsData as { id: string }[]).map((a) => a.id)
-      const { data: subs } = await supabase
-        .from("assignment_submissions")
-        .select("id, assignment_id, student_id, status")
-        .in("assignment_id", assignmentIds)
-      const subRows = (subs as Submission[] | null) ?? []
-      setSubmissions(subRows)
-
-      const submissionIds = subRows.map((s) => s.id)
-      if (submissionIds.length > 0) {
-        const { data: gradesData } = await supabase
-          .from("grades")
-          .select("submission_id, score, max_score, was_overridden")
-          .in("submission_id", submissionIds)
-        const gMap = new Map<string, Grade>()
-        for (const g of (gradesData as Grade[] | null) ?? []) {
-          gMap.set(g.submission_id, g)
-        }
-        setGrades(gMap)
-      }
-    }
-
+    setRows((gb as GradebookRow[] | null) ?? [])
     setLoading(false)
   }, [user, isDemoMode, classroomId])
 
   useEffect(() => {
     fetchAll()
   }, [fetchAll])
+
+  // Derive columns (assignments) and rows (students) + a cell lookup from the
+  // flat RPC result. The RPC already cross-joins every assignment × student.
+  const assignments = useMemo<AssignmentCol[]>(() => {
+    const seen = new Map<string, AssignmentCol>()
+    for (const r of rows) {
+      if (!seen.has(r.assignment_id)) {
+        seen.set(r.assignment_id, {
+          id: r.assignment_id,
+          title: r.assignment_title,
+          points: r.points_available ?? 100,
+        })
+      }
+    }
+    return [...seen.values()]
+  }, [rows])
+
+  const students = useMemo<StudentRow[]>(() => {
+    const seen = new Map<string, StudentRow>()
+    for (const r of rows) {
+      if (!seen.has(r.student_id)) {
+        seen.set(r.student_id, {
+          id: r.student_id,
+          name: r.student_name ?? "Reader",
+          username: r.student_username,
+        })
+      }
+    }
+    return [...seen.values()].sort((a, b) => a.name.localeCompare(b.name))
+  }, [rows])
+
+  const cellMap = useMemo(() => {
+    const map = new Map<string, GradebookRow>()
+    for (const r of rows) map.set(`${r.assignment_id}:${r.student_id}`, r)
+    return map
+  }, [rows])
 
   // ── Renders ─────────────────────────────────────────────────────────────
 
@@ -181,12 +176,6 @@ export default function GradebookPage({
     )
   }
 
-  function findSubmission(assignmentId: string, studentId: string) {
-    return submissions.find(
-      (s) => s.assignment_id === assignmentId && s.student_id === studentId,
-    )
-  }
-
   function saveCell() {
     if (!editingCell) return
     const score = parseFloat(editingCell.score)
@@ -194,23 +183,17 @@ export default function GradebookPage({
       toast.error("Enter a number")
       return
     }
-    const sub = submissions.find((s) => s.id === editingCell.submissionId)
-    const existingGrade = grades.get(editingCell.submissionId)
-    if (!sub) return
+    // Override when a manual grade already exists; otherwise create one.
+    const isOverride = rows.some(
+      (r) => r.submission_id === editingCell.submissionId && r.source === "manual",
+    )
 
     startTransition(async () => {
-      const action = existingGrade
-        ? overrideGrade({
-            submissionId: sub.id,
-            score,
-          })
-        : manualGrade({
-            submissionId: sub.id,
-            score,
-          })
-      const result = await action
+      const result = isOverride
+        ? await overrideGrade({ submissionId: editingCell.submissionId, score })
+        : await manualGrade({ submissionId: editingCell.submissionId, score })
       if (result.ok) {
-        toast.success(existingGrade ? "Grade updated" : "Grade saved")
+        toast.success(isOverride ? "Grade updated" : "Grade saved")
         setEditingCell(null)
         await fetchAll()
       } else {
@@ -264,7 +247,7 @@ export default function GradebookPage({
                     >
                       <div className="font-medium">{a.title}</div>
                       <div className="text-[10px] font-normal text-muted-foreground">
-                        / {a.points_available}
+                        / {a.points}
                       </div>
                     </th>
                   ))}
@@ -278,21 +261,22 @@ export default function GradebookPage({
                         href={`/profile/${s.username ?? s.id}`}
                         className="hover:text-[var(--tome-accent)]"
                       >
-                        {s.display_name}
+                        {s.name}
                       </Link>
                     </td>
                     {assignments.map((a) => {
-                      const sub = findSubmission(a.id, s.id)
-                      const grade = sub ? grades.get(sub.id) : null
+                      const cell = cellMap.get(`${a.id}:${s.id}`)
+                      const isManual = cell?.source === "manual"
+                      const hasScore = cell?.score != null
+                      const canEdit = !!cell?.submission_id
                       const isEditing =
-                        sub && editingCell?.submissionId === sub.id
+                        cell?.submission_id != null &&
+                        editingCell?.submissionId === cell.submission_id
                       return (
                         <td
                           key={a.id}
                           className={`px-3 py-2 text-xs ${
-                            grade?.was_overridden
-                              ? "bg-amber-50/50 dark:bg-amber-950/20"
-                              : ""
+                            isManual ? "bg-amber-50/50 dark:bg-amber-950/20" : ""
                           }`}
                         >
                           {isEditing ? (
@@ -323,47 +307,58 @@ export default function GradebookPage({
                                 Save
                               </Button>
                             </div>
-                          ) : grade ? (
+                          ) : hasScore && canEdit ? (
                             <button
                               type="button"
                               onClick={() =>
                                 setEditingCell({
-                                  submissionId: sub!.id,
-                                  score: String(grade.score ?? ""),
+                                  submissionId: cell!.submission_id!,
+                                  score: String(cell!.score ?? ""),
                                 })
                               }
                               className="rounded px-1.5 py-0.5 hover:bg-muted"
                               title={
-                                grade.was_overridden
-                                  ? "Override — click to change"
-                                  : "Click to override"
+                                isManual
+                                  ? "Manual grade — click to change"
+                                  : `${cell!.source} — click to override`
                               }
                             >
-                              {grade.score ?? "—"}
-                              {grade.was_overridden && (
+                              {cell!.score}
+                              {isManual && (
                                 <span className="ml-1 text-[9px] text-amber-600">
                                   ⚙
                                 </span>
                               )}
                             </button>
-                          ) : sub ? (
+                          ) : hasScore ? (
+                            // Derived score (reading/trial) without a submission
+                            // row to override against — show read-only.
+                            <span
+                              className="rounded px-1.5 py-0.5 text-[var(--tome-accent)]"
+                              title={`Derived from ${cell!.source}`}
+                            >
+                              {cell!.score}
+                            </span>
+                          ) : canEdit ? (
                             <button
                               type="button"
                               onClick={() =>
                                 setEditingCell({
-                                  submissionId: sub.id,
+                                  submissionId: cell!.submission_id!,
                                   score: "",
                                 })
                               }
                               className="rounded px-1.5 py-0.5 text-muted-foreground hover:bg-muted hover:text-foreground"
-                              title={`Status: ${sub.status} — click to grade`}
+                              title={`Status: ${cell!.status} — click to grade`}
                             >
-                              {sub.status === "submitted"
+                              {cell!.status === "completed"
                                 ? "Grade"
-                                : sub.status === "not_started"
-                                  ? "—"
-                                  : sub.status}
+                                : STATUS_LABEL[cell!.status] ?? cell!.status}
                             </button>
+                          ) : cell && cell.status !== "not_started" ? (
+                            <span className="text-muted-foreground">
+                              {STATUS_LABEL[cell.status] ?? cell.status}
+                            </span>
                           ) : (
                             <span className="text-muted-foreground/40">—</span>
                           )}
@@ -379,8 +374,9 @@ export default function GradebookPage({
       )}
 
       <p className="text-[10px] italic text-muted-foreground">
-        Click a cell to grade or override. Overridden grades are highlighted;
-        the original score is preserved in the audit trail.
+        Reading and Trial progress fills in automatically as students work.
+        Click a cell to enter or override a manual grade; overrides are
+        highlighted and the original score is kept in the audit trail.
       </p>
     </div>
   )

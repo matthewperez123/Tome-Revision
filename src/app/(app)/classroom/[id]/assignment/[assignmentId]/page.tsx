@@ -6,9 +6,12 @@ import { ChevronLeft, BookOpen, Brain, MessageCircle, PenTool, Highlighter, Chec
 import { Button } from "@/components/ui/button"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
+import { startAssignment } from "@/lib/actions/assignments"
 
 const TYPE_ICONS: Record<string, typeof BookOpen> = {
+  chapter_read: BookOpen,
   reading: BookOpen,
+  trial: Brain,
   quiz: Brain,
   discussion: MessageCircle,
   essay: PenTool,
@@ -187,20 +190,60 @@ export default function AssignmentDetailPage({
       )}
 
       {/* Type-specific content */}
-      {(assignment.type === "reading" || assignment.type === "annotation") && assignment.book_id && (
-        <div className="mt-4 rounded-xl border bg-card p-4">
-          <p className="text-sm font-medium">
-            Read chapters {assignment.chapter_range_start}–{assignment.chapter_range_end}
-          </p>
-          <Link
-            href={`/read/${assignment.book_id}`}
-            className="mt-2 inline-flex items-center gap-1.5 text-sm text-indigo-600 hover:text-indigo-500"
-          >
-            <BookOpen className="size-3.5" />
-            Open in reader
-          </Link>
-        </div>
-      )}
+      {(assignment.type === "chapter_read" ||
+        assignment.type === "reading" ||
+        assignment.type === "annotation") &&
+        assignment.book_id && (
+          <div className="mt-4 rounded-xl border bg-card p-4">
+            <p className="text-sm font-medium">
+              {assignment.chapter_range_start != null
+                ? assignment.chapter_range_end != null &&
+                  assignment.chapter_range_end !== assignment.chapter_range_start
+                  ? `Read chapters ${assignment.chapter_range_start}–${assignment.chapter_range_end}`
+                  : `Read chapter ${assignment.chapter_range_start}`
+                : "Read the assigned passage"}
+            </p>
+            <Link
+              href={
+                assignment.chapter_range_start != null
+                  ? `/read/${assignment.book_id}?ch=${assignment.chapter_range_start}`
+                  : `/read/${assignment.book_id}`
+              }
+              onClick={() => {
+                if (role === "reader") void startAssignment(assignment.id)
+              }}
+              className="mt-2 inline-flex items-center gap-1.5 text-sm text-indigo-600 hover:text-indigo-500"
+            >
+              <BookOpen className="size-3.5" />
+              Open in reader
+            </Link>
+          </div>
+        )}
+
+      {(assignment.type === "trial" || assignment.type === "quiz") &&
+        assignment.book_id && (
+          <div className="mt-4 rounded-xl border bg-card p-4">
+            <p className="text-sm font-medium">
+              {assignment.chapter_range_start != null
+                ? `Pass the Trial for chapter ${assignment.chapter_range_start}`
+                : "Pass the assigned Trial"}
+            </p>
+            <Link
+              href={
+                assignment.chapter_range_start != null
+                  ? `/read/${assignment.book_id}?ch=${assignment.chapter_range_start}&trial=1`
+                  : `/read/${assignment.book_id}?trial=1`
+              }
+              onClick={() => {
+                if (role === "reader") void startAssignment(assignment.id)
+              }}
+              className="mt-2 inline-flex items-center gap-1.5 text-sm text-indigo-600 hover:text-indigo-500"
+            >
+              <Brain className="size-3.5" />
+              Launch Trial
+            </Link>
+          </div>
+        )}
 
       {assignment.type === "discussion" && assignment.discussion_prompt && (
         <div className="mt-4 rounded-xl border-l-4 border-l-amber-500 bg-card p-4">

@@ -66,15 +66,16 @@ export async function createAnnouncement(
         members
           .filter((m) => m.student_id !== user.id)
           .map((m) => ({
-            userId: m.student_id,
-            type: "classroom_announcement",
+            recipientId: m.student_id,
+            type: "group_post" as const,
             title: parsed.data.title
               ? `New announcement: ${parsed.data.title}`
               : `${profile?.display_name ?? "Your teacher"} posted in ${classroom?.name ?? "your classroom"}`,
             body: parsed.data.body.slice(0, 200),
             actionUrl: `/classroom/${parsed.data.classroomId}`,
-            sourceUserId: user.id,
-            classroomId: parsed.data.classroomId,
+            actorId: user.id,
+            entityType: "classroom",
+            entityId: parsed.data.classroomId,
           })),
       )
     }

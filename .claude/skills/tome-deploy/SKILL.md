@@ -146,9 +146,9 @@ migration (NOT yet applied)" pattern is the norm: migrations wait for approval.
    `NEXT_PUBLIC_SUPABASE_ANON_KEY`) — a deploy missing these renders a broken app.
 
 ### Stage 7 — Verify — GATE
-- Hit the key routes and assert HTTP 200 + expected content: `/`, `/library`,
+- Hit the key routes and assert HTTP 200 + expected content: `/`, `/library/browse`,
   `/dashboard`, plus a `/read/{bookId}` for anything just ingested. Use WebFetch
-  on the deployment URL.
+  on the deployment URL. (Note: `/library` 308-redirects to `/library/browse`.)
 - For DB changes, run a read-only `execute_sql` count (e.g.
   `select count(*) from quizzes`) to confirm rows landed.
 - Re-run `get_advisors` post-deploy if a migration was applied.

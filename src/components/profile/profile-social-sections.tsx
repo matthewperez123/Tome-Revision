@@ -16,7 +16,6 @@ interface SharedClassroom {
 interface StudyGroupSummary {
   id: string
   name: string
-  isTeacherLed: boolean
 }
 
 interface RecentRec {
@@ -106,27 +105,24 @@ export function ProfileSocialSections({ username }: { username: string }) {
         )
         .filter((c): c is SharedClassroom => c !== null)
 
-      // 3. Study groups the target belongs to.
+      // 3. Study groups the target belongs to (groups foundation, kind=study_group).
       const { data: groupRows } = await supabase
-        .from("study_group_members")
+        .from("group_members")
         .select(
           `
-          group:study_groups!inner(id, name, is_teacher_led)
+          group:groups!inner(id, name, kind)
         `,
         )
         .eq("user_id", profile.id)
+        .eq("status", "active")
 
       type GroupRow = {
-        group: { id: string; name: string; is_teacher_led: boolean } | null
+        group: { id: string; name: string; kind: string } | null
       }
       const groupList: StudyGroupSummary[] = ((groupRows ?? []) as unknown as GroupRow[])
         .map((r) =>
-          r.group
-            ? {
-                id: r.group.id,
-                name: r.group.name,
-                isTeacherLed: r.group.is_teacher_led,
-              }
+          r.group && r.group.kind === "study_group"
+            ? { id: r.group.id, name: r.group.name }
             : null,
         )
         .filter((g): g is StudyGroupSummary => g !== null)
@@ -228,12 +224,12 @@ export function ProfileSocialSections({ username }: { username: string }) {
                   key={g.id}
                   className="flex items-center justify-between rounded-lg px-2 py-1.5"
                 >
-                  <span className="text-sm">{g.name}</span>
-                  {g.isTeacherLed && (
-                    <span className="text-[10px] uppercase tracking-wider text-[#D4A04C]">
-                      Teacher-led
-                    </span>
-                  )}
+                  <Link
+                    href={`/study-groups/${g.id}`}
+                    className="text-sm hover:underline"
+                  >
+                    {g.name}
+                  </Link>
                 </div>
               ))}
             </div>

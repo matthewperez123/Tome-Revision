@@ -47,6 +47,7 @@ import { getQuestionsForChapter, getCuratedQuestionsForChapter } from "@/lib/cha
 import { dbRowsToChapterQuestions, type QuestionRow } from "@/lib/db-chapter-questions"
 import { isFrontOrBackMatter } from "@/lib/book-progress"
 import type { QuizDifficulty } from "@/lib/book-progress"
+import { emitActivity } from "@/lib/actions/activities"
 import { findAttemptForChapter, isAttemptResumable } from "@/lib/trial-attempts"
 import { getUnitNumber, getUnitLabel } from "@/lib/structural-units"
 import type { StructuralUnitType, BookPart } from "@/data/books"
@@ -60,6 +61,7 @@ import { assignCharacterColors, getCharacterColor, type BookColorAssignments } f
 import { CanticleHero } from "@/components/reader/canticle-hero"
 import { ReaderHighlights } from "@/components/reader/reader-highlights"
 import { ReaderPresence } from "@/components/reader/reader-presence"
+import { GuidedReadingLauncher } from "@/components/virgil/guided/guided-reading-launcher"
 
 // ── Types ──
 
@@ -388,6 +390,9 @@ export default function ReaderPage() {
     if (!existingProgress) {
       // Auto-start progress — no modal prompt
       startBook(bookId)
+      // Emit the book_started social milestone (best-effort; guests get a
+      // rejected promise we ignore). Idempotent server-side per (actor, book).
+      void emitActivity({ type: "book_started", entityType: "book", entityId: bookId })
     } else {
       setCurrentChapter(existingProgress.currentChapterIndex)
     }
@@ -878,15 +883,33 @@ export default function ReaderPage() {
     if (isLastChapter) dispatchEconomy({ type: "book_complete" })
 
     completeChapter(bookId, currentChapter, xpEarned)
+    const scorePct = Math.round((xpEarned / Math.max(1, trialQuestions.length * 15)) * 100)
     saveQuizResult(bookId, {
       chapterId:       chapterData.id,
       chapterIndex:    currentChapter,
-      score:           Math.round((xpEarned / Math.max(1, trialQuestions.length * 15)) * 100),
+      score:           scorePct,
       totalQuestions:  trialQuestions.length,
       passed:          true,
       xpEarned,
       completedAt:     new Date().toISOString(),
     })
+
+    // Best-effort server mirror so Wisdom/Flames persist for signed-in readers
+    // and feed the weekly digest. localStorage above stays the instant source;
+    // guests (no session) get a 401 and simply keep their local progress.
+    void fetch("/api/progress/quiz", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        bookId,
+        chapterIndex: currentChapter,
+        score: scorePct,
+        totalQuestions: trialQuestions.length,
+        wisdomEarned: xpEarned,
+        currentStreak: stats.current_streak,
+        isLastChapter,
+      }),
+    }).catch(() => {})
 
     // Fire notifications
     const bookTitle = book?.title ?? bookId
@@ -897,7 +920,7 @@ export default function ReaderPage() {
 
     setShowQuizOverlay(false)
     if (!isLastChapter) setTimeout(() => handleChapterSelect(currentChapter + 1), 300)
-  }, [bookId, currentChapter, chapters, trialQuestions.length, dispatchEconomy, completeChapter, saveQuizResult, handleChapterSelect])
+  }, [bookId, currentChapter, chapters, trialQuestions.length, dispatchEconomy, completeChapter, saveQuizResult, handleChapterSelect, stats.current_streak])
 
 
   // Keyboard navigation (scroll mode only — PaginatedReader owns keyboard in capture phase)
@@ -1084,6 +1107,13 @@ export default function ReaderPage() {
               )}
               {/* Day / Night lives only in the global top bar now. */}
               {/* Reading mode toggle removed — all chapters unlocked */}
+              {/* Guided reading — launch (or resume) a 1:1 session with Virgil */}
+              <GuidedReadingLauncher
+                bookId={bookId}
+                bookTitle={book.title}
+                chapter={currentChapter}
+                chapterTitle={chapter.title}
+              />
               <ReaderSettingsPanel canSpread={canSpread} />
             </div>
           </div>
@@ -1257,7 +1287,13 @@ export default function ReaderPage() {
 
 function ReaderSkeleton() {
   return (
-    <div className="flex h-[calc(100vh-3rem)]">
+    <div
+      role="status"
+      aria-busy="true"
+      aria-live="polite"
+      className="flex h-[calc(100vh-3rem)]"
+    >
+      <span className="sr-only">Loading the reader…</span>
       <div className="w-56 border-r border-border p-4 space-y-3">
         <Skeleton className="h-4 w-24" />
         {Array.from({ length: 8 }).map((_, i) => (

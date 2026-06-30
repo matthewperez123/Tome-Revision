@@ -50,13 +50,12 @@ export const metadata: Metadata = {
     template: "%s | Tome",
   },
   description:
-    "The gamified platform for classical literature. 1,200+ public domain books with AI-guided reading, quizzes, and book clubs.",
+    "The gamified platform for classical literature. 1,200+ public domain books with AI-guided reading and end-of-chapter quizzes.",
   keywords: [
     "classical literature",
     "reading app",
     "public domain books",
     "gamified reading",
-    "book clubs",
   ],
   authors: [{ name: "Tome" }],
   openGraph: {

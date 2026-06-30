@@ -122,7 +122,7 @@ export function calculateStreak(
       // Check milestones
       for (const milestone of STREAK_MILESTONES) {
         if (newStreak === milestone) {
-          notifications.push(`Streak milestone: ${milestone} days! +${STREAK_MILESTONE_XP} XP`)
+          notifications.push(`Streak milestone: ${milestone} days! +${STREAK_MILESTONE_XP} Wisdom`)
         }
       }
 
@@ -262,22 +262,83 @@ export function isDailyGoalMet(stats: UserStats): boolean {
   return stats.daily_progress_minutes >= stats.daily_goal_minutes
 }
 
-// ── XP Level Calculation ───────────────────────
+// ── Wisdom Ranks (the single, canonical progression ladder) ────
+//
+// Wisdom is the one primary progression currency — it is the value stored in
+// `xp_total`. "XP" is NOT a separate currency; it is a legacy field name for the
+// same number. Every surface (dashboard, profile, …) must derive a reader's rank
+// from `getRank(stats.xp_total)` so the tier name, threshold, and progress all
+// agree. Trial *difficulty* (Apprentice/Scholar/Master) and *Seals*
+// (Initiate/Adept/Sage/…) are separate axes — do not conflate them with ranks.
 
-export function getLevel(xp: number): { level: number; xpInLevel: number; xpForNext: number } {
-  // Each level requires progressively more XP: level N needs N * 100 XP
-  let level = 1
-  let remaining = xp
+export interface WisdomRank {
+  /** 1-based position in the ladder (for "Rank N" / badge displays). */
+  level: number
+  name: string
+  minWisdom: number
+}
 
-  while (remaining >= level * 100) {
-    remaining -= level * 100
-    level++
+export const WISDOM_RANKS: WisdomRank[] = [
+  { level: 1, name: "Novice", minWisdom: 0 },
+  { level: 2, name: "Reader", minWisdom: 300 },
+  { level: 3, name: "Scholar", minWisdom: 700 },
+  { level: 4, name: "Sage", minWisdom: 1500 },
+  { level: 5, name: "Luminary", minWisdom: 3000 },
+  { level: 6, name: "Laureate", minWisdom: 6000 },
+]
+
+export interface RankProgress {
+  /** Current rank. */
+  rank: WisdomRank
+  /** Next rank, or null when at the top of the ladder. */
+  next: WisdomRank | null
+  /** Wisdom earned past the current rank's floor. */
+  wisdomIntoRank: number
+  /** Wisdom span from current floor to the next rank's floor. */
+  wisdomForNext: number
+  /** Wisdom remaining until the next rank (0 when maxed). */
+  wisdomToNext: number
+  /** Progress to the next rank, 0–100 (100 when maxed). */
+  pct: number
+}
+
+export function getRank(wisdom: number): RankProgress {
+  let index = 0
+  for (let i = 0; i < WISDOM_RANKS.length; i++) {
+    if (wisdom >= WISDOM_RANKS[i].minWisdom) index = i
+    else break
   }
 
-  return {
-    level,
-    xpInLevel: remaining,
-    xpForNext: level * 100,
+  const rank = WISDOM_RANKS[index]
+  const next = WISDOM_RANKS[index + 1] ?? null
+  const wisdomIntoRank = wisdom - rank.minWisdom
+  const wisdomForNext = next ? next.minWisdom - rank.minWisdom : 0
+  const wisdomToNext = next ? next.minWisdom - wisdom : 0
+  const pct = next ? Math.min(100, Math.round((wisdomIntoRank / wisdomForNext) * 100)) : 100
+
+  return { rank, next, wisdomIntoRank, wisdomForNext, wisdomToNext, pct }
+}
+
+// ── Stats persistence helpers ──────────────────
+// Mirrors the keys used by EconomyProvider so surfaces outside the provider
+// (e.g. the standalone onboarding flow) can seed stats before navigation.
+export const STATS_STORAGE_KEY = "tome-user-stats"
+const GUEST_USER_ID = "00000000-0000-0000-0000-000000000000"
+
+/**
+ * Persist the daily reading goal directly to the economy stats blob. Used by
+ * the onboarding goal step, which runs in the (standalone) route group with no
+ * EconomyProvider, so it patches localStorage that the dashboard reads on mount.
+ */
+export function setStoredDailyGoal(minutes: number): void {
+  if (typeof window === "undefined") return
+  try {
+    const raw = localStorage.getItem(STATS_STORAGE_KEY)
+    const stats: UserStats = raw ? JSON.parse(raw) : createDefaultStats(GUEST_USER_ID)
+    stats.daily_goal_minutes = minutes
+    localStorage.setItem(STATS_STORAGE_KEY, JSON.stringify(stats))
+  } catch {
+    // localStorage unavailable — non-fatal; dashboard falls back to defaults.
   }
 }
 

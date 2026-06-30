@@ -201,12 +201,13 @@ export async function inviteToClassroom(
     const classroomName = classroom?.name ?? "a classroom"
 
     await notify({
-      userId: uParsed.data,
-      type: "classroom_invite",
+      recipientId: uParsed.data,
+      type: "group_invite",
       title: `You were added to ${classroomName}`,
       actionUrl: `/classroom/${cParsed.data}`,
-      sourceUserId: user.id,
-      classroomId: cParsed.data,
+      actorId: user.id,
+      entityType: "classroom",
+      entityId: cParsed.data,
     })
 
     // Best-effort invite email (preference-gated in the helper).

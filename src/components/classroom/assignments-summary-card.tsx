@@ -6,7 +6,6 @@ import { ClipboardCheck, AlertTriangle, Clock, ChevronRight, Plus } from "lucide
 import { Button } from "@/components/ui/button"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
-import { DEMO_ASSIGNMENTS } from "@/lib/classroom"
 
 interface AssignmentSummary {
   needsGrading: number
@@ -14,23 +13,19 @@ interface AssignmentSummary {
   overdue: number
 }
 
-const DEMO_SUMMARIES: Record<string, AssignmentSummary> = {
-  all: { needsGrading: 3, dueThisWeek: 2, overdue: 1 },
-  "class-1": { needsGrading: 2, dueThisWeek: 1, overdue: 0 },
-  "class-2": { needsGrading: 1, dueThisWeek: 1, overdue: 1 },
-}
-
-function getDemoSummary(classroomId?: string): AssignmentSummary {
-  return DEMO_SUMMARIES[classroomId ?? "all"] ?? DEMO_SUMMARIES.all
+const EMPTY_SUMMARY: AssignmentSummary = {
+  needsGrading: 0,
+  dueThisWeek: 0,
+  overdue: 0,
 }
 
 export function AssignmentsSummaryCard({ classroomId }: { classroomId?: string }) {
   const { user, isDemoMode } = useAuth()
-  const [summary, setSummary] = useState<AssignmentSummary>(getDemoSummary(classroomId))
+  const [summary, setSummary] = useState<AssignmentSummary>(EMPTY_SUMMARY)
 
   useEffect(() => {
     if (isDemoMode || !user) {
-      setSummary(getDemoSummary(classroomId))
+      setSummary(EMPTY_SUMMARY)
       return
     }
 
@@ -50,7 +45,7 @@ export function AssignmentsSummaryCard({ classroomId }: { classroomId?: string }
       }
 
       if (!classroomIds.length) {
-        setSummary(getDemoSummary(classroomId))
+        setSummary(EMPTY_SUMMARY)
         return
       }
 

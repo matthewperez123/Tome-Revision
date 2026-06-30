@@ -88,13 +88,29 @@ export function TeacherActivityFeed({ classroomId }: { classroomId?: string }) {
       const supabase = createClient()
 
       const { data } = await supabase
-        .from("db_notifications")
-        .select("id, type, title, body, action_url, created_at")
-        .eq("user_id", user!.id)
+        .from("notifications")
+        .select("id, type, payload, created_at")
+        .eq("recipient_id", user!.id)
         .order("created_at", { ascending: false })
         .limit(8)
 
-      setItems(data?.length ? data : getDemoActivity(classroomId))
+      const rows: ActivityItem[] | undefined = data?.map((n) => {
+        const p = (n.payload ?? {}) as {
+          title?: string
+          body?: string | null
+          action_url?: string | null
+        }
+        return {
+          id: n.id,
+          type: n.type,
+          title: p.title ?? "",
+          body: p.body ?? null,
+          action_url: p.action_url ?? null,
+          created_at: n.created_at,
+        }
+      })
+
+      setItems(rows?.length ? rows : getDemoActivity(classroomId))
       setLoading(false)
     }
 

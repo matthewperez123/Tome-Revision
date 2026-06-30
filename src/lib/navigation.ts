@@ -21,6 +21,7 @@ import {
   Feather,
   History,
   Compass,
+  Sparkles,
   type LucideIcon,
 } from "lucide-react"
 
@@ -48,6 +49,7 @@ export const sidebarNav: NavItem[] = [
   { label: "My Shelves", href: "/shelves", icon: BookMarked },
   { label: "Authors", href: "/authors", icon: PenTool },
   { label: "Reading", href: "/reading", icon: BookOpen },
+  { label: "Guided Reading", href: "/guided", icon: Sparkles },
   { label: "Quizzes", href: "/quizzes", icon: Brain },
   { label: "Book Clubs", href: "/clubs", icon: BookHeart },
 
@@ -67,6 +69,7 @@ export const sidebarNav: NavItem[] = [
   { label: "Timelines", href: "/timelines", icon: History },
   { label: "Seals", href: "/seals", icon: Trophy },
   { label: "Friends", href: "/friends", icon: HeartHandshake },
+  { label: "Family", href: "/family", icon: Users },
   { label: "Messages", href: "/messages", icon: MessageCircle },
   { label: "Community", href: "/social", icon: Globe2 },
   { label: "Shop", href: "/shop", icon: ShoppingBag },

@@ -40,6 +40,19 @@ const nextConfig: NextConfig = {
     ],
   },
 
+  // The legacy /library marketing surface was consolidated into the single
+  // functional catalog at /library/browse. Permanently (308) redirect the bare
+  // route so old links, bookmarks, and search engines land on the canonical one.
+  async redirects() {
+    return [
+      {
+        source: "/library",
+        destination: "/library/browse",
+        permanent: true,
+      },
+    ];
+  },
+
   // Compress responses
   compress: true,
 

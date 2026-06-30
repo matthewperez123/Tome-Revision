@@ -67,14 +67,17 @@ export async function recommendBook(
     ])
 
     await notify({
-      userId: parsed.data.recipientId,
-      type: "book_recommendation_received",
+      recipientId: parsed.data.recipientId,
+      type: "book_recommendation",
       title: `${profile?.display_name ?? "Someone"} recommends ${book?.title ?? "a book"}`,
       body: parsed.data.message ?? undefined,
-      // Encode the rec id into the URL so the notification bell can offer
-      // inline accept/reject without an extra round-trip to look it up.
-      actionUrl: `/library/browse?rec=${row.id}`,
-      sourceUserId: user.id,
+      actionUrl: "/library/browse",
+      actorId: user.id,
+      // entity_id carries the rec id so the bell can offer inline
+      // accept/reject without an extra round-trip to look it up.
+      entityType: "recommendation",
+      entityId: row.id,
+      payload: { status: "received", bookId: parsed.data.bookId, bookTitle: book?.title ?? null },
     })
 
     revalidatePath("/library/browse")
@@ -128,11 +131,14 @@ export async function acceptRecommendation(
     ])
 
     await notify({
-      userId: rec.sender_id,
-      type: "book_recommendation_accepted",
+      recipientId: rec.sender_id,
+      type: "book_recommendation",
       title: `${profile?.display_name ?? "Someone"} added ${book?.title ?? "your recommendation"} to their library`,
       actionUrl: "/library/browse",
-      sourceUserId: user.id,
+      actorId: user.id,
+      entityType: "recommendation",
+      entityId: rec.id,
+      payload: { status: "accepted" },
     })
 
     revalidatePath("/library/browse")
