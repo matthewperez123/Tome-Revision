@@ -26,7 +26,7 @@ import {
 } from "lucide-react"
 
 
-export type UserRole = "reader" | "teacher"
+export type UserRole = "reader" | "teacher" | "student"
 
 export type NavItem = {
   label: string
@@ -51,7 +51,8 @@ export const sidebarNav: NavItem[] = [
   { label: "Reading", href: "/reading", icon: BookOpen },
   { label: "Guided Reading", href: "/guided", icon: Sparkles },
   { label: "Quizzes", href: "/quizzes", icon: Brain },
-  { label: "Book Clubs", href: "/clubs", icon: BookHeart },
+  // Consumer/open-social — readers and teachers only (students stay classroom-scoped)
+  { label: "Book Clubs", href: "/clubs", icon: BookHeart, roles: ["reader", "teacher"] },
 
   // Teacher-only classroom tools
   { label: "My Classrooms", href: "/classroom", icon: GraduationCap, roles: ["teacher"], section: "teaching" },
@@ -60,19 +61,20 @@ export const sidebarNav: NavItem[] = [
   { label: "Grading", href: "/classroom/grading", icon: ClipboardCheck, roles: ["teacher"], section: "teaching" },
   { label: "Guided Sessions", href: "/teacher/guided-learning", icon: Compass, roles: ["teacher"], section: "teaching" },
 
-  // Student classroom access (only if they have joined classrooms)
-  { label: "My Classes", href: "/classroom", icon: GraduationCap, roles: ["reader"] },
-  { label: "Study Groups", href: "/study-groups", icon: UsersRound, roles: ["reader"] },
+  // Classroom access — students and readers who have joined classes
+  { label: "My Classes", href: "/classroom", icon: GraduationCap, roles: ["reader", "student"] },
+  { label: "Study Groups", href: "/study-groups", icon: UsersRound, roles: ["reader", "student"] },
 
   // Discovery & social — all roles
   { label: "Explore", href: "/explore", icon: Globe2 },
   { label: "Timelines", href: "/timelines", icon: History },
   { label: "Seals", href: "/seals", icon: Trophy },
-  { label: "Friends", href: "/friends", icon: HeartHandshake },
-  { label: "Family", href: "/family", icon: Users },
-  { label: "Messages", href: "/messages", icon: MessageCircle },
-  { label: "Community", href: "/social", icon: Globe2 },
-  { label: "Shop", href: "/shop", icon: ShoppingBag },
+  // Open social + consumer surfaces — hidden from classroom-scoped students
+  { label: "Friends", href: "/friends", icon: HeartHandshake, roles: ["reader", "teacher"] },
+  { label: "Family", href: "/family", icon: Users, roles: ["reader", "teacher"] },
+  { label: "Messages", href: "/messages", icon: MessageCircle, roles: ["reader", "teacher"] },
+  { label: "Community", href: "/social", icon: Globe2, roles: ["reader", "teacher"] },
+  { label: "Shop", href: "/shop", icon: ShoppingBag, roles: ["reader", "teacher"] },
   { label: "Profile", href: "/profile", icon: CircleUser },
 ]
 

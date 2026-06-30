@@ -6,7 +6,7 @@ import type { User } from "@supabase/supabase-js"
 
 export interface Profile {
   id: string
-  role: "reader" | "teacher"
+  role: "reader" | "teacher" | "student"
   display_name: string | null
   username: string | null
   avatar_url: string | null
@@ -19,7 +19,7 @@ export interface Profile {
 interface AuthState {
   user: User | null
   profile: Profile | null
-  role: "reader" | "teacher" | null
+  role: "reader" | "teacher" | "student" | null
   isLoading: boolean
   isAuthenticated: boolean
   /** True when using localStorage fallback instead of real auth */
@@ -38,9 +38,15 @@ function getDemoProfile(): Profile | null {
     if (!stored) return null
     const data = JSON.parse(stored)
     if (!data.completedAt) return null
+    const role: Profile["role"] =
+      data.userType === "teacher"
+        ? "teacher"
+        : data.userType === "student"
+        ? "student"
+        : "reader"
     return {
       id: DEMO_USER_ID,
-      role: data.userType === "teacher" ? "teacher" : "reader",
+      role,
       display_name: "Matthew",
       username: "matthew",
       avatar_url: null,

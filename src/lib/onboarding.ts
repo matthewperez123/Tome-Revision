@@ -4,7 +4,8 @@
 import { createClient } from "@/lib/supabase/client"
 
 export interface OnboardingData {
-  userType: "reader" | "teacher" | null
+  userType: "reader" | "teacher" | "student" | null
+  classCode: string | null
   teacherSubject: string | null
   teacherLevel: string | null
   teacherClassSize: string | null
@@ -22,6 +23,7 @@ const STORAGE_KEY = "tome-onboarding"
 
 const DEFAULT_DATA: OnboardingData = {
   userType: null,
+  classCode: null,
   teacherSubject: null,
   teacherLevel: null,
   teacherClassSize: null,
