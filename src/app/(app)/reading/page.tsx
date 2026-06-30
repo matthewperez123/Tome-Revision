@@ -7,6 +7,7 @@ import { BlurFade } from "@/components/ui/blur-fade"
 import { getAllBookProgress, type BookProgress } from "@/lib/book-progress"
 import { getBook } from "@/lib/content"
 import { BookCoverThumb } from "@/components/tome/book-cover-thumb"
+import { Skeleton } from "@/components/ui/skeleton"
 import type { TomeBook } from "@/data/books"
 import { SectionVirgilPanel } from "@/components/virgil/SectionVirgilPanel"
 
@@ -54,9 +55,10 @@ export default function ReadingPage() {
         />
 
         {loading ? (
-          <div className="space-y-3">
+          <div role="status" aria-busy="true" aria-live="polite" className="space-y-3">
+            <span className="sr-only">Loading your books in progress…</span>
             {Array.from({ length: 3 }).map((_, i) => (
-              <div key={i} className="h-20 rounded-lg bg-muted animate-pulse" />
+              <Skeleton key={i} className="h-20 w-full rounded-lg" />
             ))}
           </div>
         ) : !hasBooks ? (

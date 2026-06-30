@@ -137,23 +137,23 @@ export function RecommendBookButton({
                 <div className="max-h-56 space-y-1 overflow-y-auto">
                   {friends.map((f) => (
                     <button
-                      key={f.id}
+                      key={f.friendshipId}
                       type="button"
-                      onClick={() => setPicked(f)}
+                      onClick={() => setPicked(f.profile)}
                       className="flex w-full items-center gap-2 rounded-lg px-1.5 py-1.5 text-left transition-colors hover:bg-muted/50"
                     >
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
-                        src={f.avatarUrl}
+                        src={f.profile.avatarUrl}
                         alt=""
                         className="size-7 rounded-full border border-[#D4A04C]/20"
                       />
                       <div className="min-w-0 flex-1">
                         <p className="truncate text-sm font-medium">
-                          {f.displayName}
+                          {f.profile.displayName}
                         </p>
                         <p className="truncate text-[10px] text-muted-foreground">
-                          @{f.username}
+                          @{f.profile.username}
                         </p>
                       </div>
                     </button>

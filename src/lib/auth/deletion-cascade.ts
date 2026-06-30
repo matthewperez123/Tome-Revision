@@ -54,7 +54,34 @@ export const USER_OWNED_TABLES: readonly UserOwnedTable[] = [
   { name: "highlights", userColumn: "user_id" },
   { name: "library_entries", userColumn: "user_id" },
   { name: "book_circle_memberships", userColumn: "user_id" },
-  { name: "notifications", userColumn: "user_id" },
+  { name: "notifications", userColumn: "recipient_id" },
+
+  // Community feed: remove my reactions first, then my activities (which
+  // cascade-delete anyone's reactions on them), plus any reports I filed.
+  // (All three FKs are also ON DELETE CASCADE on auth.users.)
+  { name: "activity_reactions", userColumn: "user_id" },
+  { name: "activities", userColumn: "actor_id" },
+  { name: "reports", userColumn: "reporter_id" },
+
+  // Friendships hold two user FK columns; delete rows on either side so no
+  // half of a reciprocal pair survives. (Both FKs also ON DELETE CASCADE.)
+  { name: "friendships", userColumn: "requester_id" },
+  { name: "friendships", userColumn: "addressee_id" },
+
+  // Parent/guardian consent links hold two user FK columns; delete rows on
+  // either side. (Both FKs are also ON DELETE CASCADE on auth.users.)
+  { name: "parent_links", userColumn: "parent_id" },
+  { name: "parent_links", userColumn: "student_id" },
+
+  // Groups (book clubs / study groups): wipe my posts, invites I sent or was
+  // sent, my memberships, then any group I own (which cascade-deletes its
+  // members/posts/invites/schedule). All FKs are also ON DELETE CASCADE on
+  // auth.users — this is a best-effort explicit wipe.
+  { name: "group_posts", userColumn: "author_id" },
+  { name: "group_invites", userColumn: "inviter_id" },
+  { name: "group_invites", userColumn: "invitee_id" },
+  { name: "group_members", userColumn: "user_id" },
+  { name: "groups", userColumn: "owner_id" },
 
   // Profile last — many things FK to it.
   { name: "profiles", userColumn: "id" },

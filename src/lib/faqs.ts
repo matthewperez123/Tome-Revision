@@ -42,7 +42,7 @@ export const faqCategories: FaqCategory[] = [
       {
         id: "how-tome-is-different",
         q: "How is this different from reading free public-domain books elsewhere?",
-        a: "The texts are free; the scholarship, structure, and accountability are what Tome adds. Margin-by-margin annotation, end-of-chapter Trials, progress tracking, and Circles (book clubs) are built to help you actually finish the hard books instead of abandoning them on chapter three.",
+        a: "The texts are free; the scholarship, structure, and accountability are what Tome adds. Margin-by-margin annotation, end-of-chapter Trials, and progress tracking are built to help you actually finish the hard books instead of abandoning them on chapter three.",
       },
       {
         id: "who-is-virgil",
@@ -147,7 +147,7 @@ export const faqCategories: FaqCategory[] = [
       {
         id: "free-for-teachers",
         q: "Is Tome really free for individual teachers?",
-        a: "Yes. The Classroom plan is free forever for one teacher with up to 30 students — real assignments, auto-graded Trials, and a gradebook export, no credit card required.",
+        a: "Yes. The Classroom plan is free forever for one teacher with up to 30 students — real assignments, auto-graded Trials, and a live gradebook, no credit card required.",
       },
       {
         id: "how-students-join",
@@ -167,7 +167,8 @@ export const faqCategories: FaqCategory[] = [
       {
         id: "lms-integration",
         q: "Does Tome integrate with my LMS or Google Classroom?",
-        a: "Gradebook and LMS export are available on the School plan; automatic roster sync with Clever, ClassLink, and Google Classroom, plus single sign-on, comes with District.",
+        a: "Not yet — gradebook and LMS export are planned for the School plan, and automatic roster sync with Clever, ClassLink, and Google Classroom, plus single sign-on, is on the roadmap for District. Today you can run a full classroom with join codes, assignments, and the live gradebook.",
+        confirm: true,
       },
       {
         id: "student-data-safe",

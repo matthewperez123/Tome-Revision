@@ -79,7 +79,7 @@ test.describe("Sidebar icon hover animations", () => {
   })
 
   test("sidebar animated icons render in actual sidebar", async ({ page }) => {
-    await page.goto("/library")
+    await page.goto("/library/browse")
     await page.waitForLoadState("networkidle")
 
     // Open sidebar if collapsed

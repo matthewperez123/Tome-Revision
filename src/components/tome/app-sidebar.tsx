@@ -86,7 +86,6 @@ function SidebarNav({ pathname }: { pathname: string }) {
   // to avoid multiple items highlighting at once.
   const activeHref = (() => {
     if (pathname.startsWith("/book/"))    return "/library/browse"
-    if (pathname === "/library")          return "/library/browse"
     if (pathname.startsWith("/author/") && !pathname.startsWith("/authors")) return "/authors"
     if (pathname.startsWith("/profile"))  return "/profile"
     if (pathname.startsWith("/clubs/"))   return "/clubs"
@@ -105,8 +104,8 @@ function SidebarNav({ pathname }: { pathname: string }) {
   })()
 
   // Pending friend-request count powers the gold badge on the Friends entry.
-  const { requests } = useFriendsData()
-  const pendingFriendRequests = requests.length
+  const { incoming } = useFriendsData()
+  const pendingFriendRequests = incoming.length
 
   return (
     <SidebarMenu ref={listRef}>

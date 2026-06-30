@@ -5,7 +5,6 @@ import Link from "next/link"
 import { AlertTriangle, ChevronRight } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
-import { DEMO_STUDENTS } from "@/lib/classroom"
 
 interface AtRiskStudent {
   id: string
@@ -15,23 +14,13 @@ interface AtRiskStudent {
   severity: "warning" | "critical"
 }
 
-const DEMO_AT_RISK: AtRiskStudent[] = DEMO_STUDENTS
-  .filter((s) => s.status === "behind" || s.status === "not-started")
-  .map((s) => ({
-    id: s.id,
-    display_name: s.studentName,
-    reason: s.status === "behind" ? `Behind on The Odyssey (${s.chaptersCompleted}/${s.totalChapters})` : "Hasn't started The Odyssey",
-    classroom_id: s.classroomId,
-    severity: s.status === "not-started" ? "critical" as const : "warning" as const,
-  }))
-
 export function StudentsAtRiskCard({ classroomId }: { classroomId?: string }) {
   const { user, isDemoMode } = useAuth()
   const [students, setStudents] = useState<AtRiskStudent[]>([])
 
   useEffect(() => {
     if (isDemoMode || !user) {
-      setStudents(DEMO_AT_RISK)
+      setStudents([])
       return
     }
 
@@ -52,7 +41,7 @@ export function StudentsAtRiskCard({ classroomId }: { classroomId?: string }) {
       }
 
       if (!classroomIds.length) {
-        setStudents(DEMO_AT_RISK)
+        setStudents([])
         return
       }
 
@@ -65,7 +54,7 @@ export function StudentsAtRiskCard({ classroomId }: { classroomId?: string }) {
         .lt("due_date", now.toISOString())
 
       if (!overdueAssignments?.length) {
-        setStudents(DEMO_AT_RISK)
+        setStudents([])
         return
       }
 
@@ -108,7 +97,7 @@ export function StudentsAtRiskCard({ classroomId }: { classroomId?: string }) {
         return true
       })
 
-      setStudents(unique.length > 0 ? unique.slice(0, 5) : DEMO_AT_RISK)
+      setStudents(unique.slice(0, 5))
     }
 
     fetchAtRisk()

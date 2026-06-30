@@ -7,7 +7,6 @@ import { ChevronLeft, Copy, Check, Users, BookOpen, TrendingUp, Plus, Settings }
 import { Button } from "@/components/ui/button"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
-import { DEMO_CLASSROOMS, DEMO_STUDENTS } from "@/lib/classroom"
 
 import { SemesterPlanTab } from "@/components/classroom/semester-timeline"
 
@@ -89,16 +88,6 @@ export default function ClassroomManagePage({ params }: { params: Promise<{ id: 
         .order("created_at", { ascending: false })
 
       if (assignmentData) setAssignments(assignmentData)
-
-      // Fallback to demo data if no Supabase classroom found
-      if (!cls) {
-        const demo = DEMO_CLASSROOMS.find(c => c.id === id)
-        if (demo) {
-          setClassroom({ id: demo.id, name: demo.name, subject: demo.subject, join_code: demo.joinCode, description: null, leaderboard_enabled: true })
-          const demoMembers = DEMO_STUDENTS.filter(s => s.classroomId === id)
-          setMembers(demoMembers.map(s => ({ student_id: s.id, display_name: s.studentName, avatar_url: null, joined_at: "2026-01-15" })))
-        }
-      }
 
       setLoading(false)
     }

@@ -44,7 +44,7 @@ export function TrendingBooksShowcase() {
           ))}
         </div>
         <Link
-          href="/library"
+          href="/library/browse"
           className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors hover:text-primary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
         >
           Explore the full library

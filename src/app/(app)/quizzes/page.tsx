@@ -7,6 +7,7 @@ import { BlurFade } from "@/components/ui/blur-fade"
 import { getAllBookProgress, type BookProgress } from "@/lib/book-progress"
 import { getBook } from "@/lib/content"
 import { BookCoverThumb } from "@/components/tome/book-cover-thumb"
+import { Skeleton } from "@/components/ui/skeleton"
 import type { TomeBook } from "@/data/books"
 import { SectionVirgilPanel } from "@/components/virgil/SectionVirgilPanel"
 
@@ -86,9 +87,12 @@ export default function QuizzesPage() {
             <h2 className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-3">All quizzes</h2>
             <div className="space-y-2">
               {loading ? (
-                Array.from({ length: 4 }).map((_, i) => (
-                  <div key={i} className="h-20 rounded-lg bg-muted animate-pulse" />
-                ))
+                <div role="status" aria-busy="true" aria-live="polite" className="space-y-2">
+                  <span className="sr-only">Loading your quizzes…</span>
+                  {Array.from({ length: 4 }).map((_, i) => (
+                    <Skeleton key={i} className="h-20 w-full rounded-lg" />
+                  ))}
+                </div>
               ) : (
                 entries.map((entry, i) => (
                   <BlurFade key={entry.bookKey} delay={0.03 + i * 0.02} inView>

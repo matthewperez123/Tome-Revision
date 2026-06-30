@@ -126,7 +126,7 @@ function DiscoverCanon() {
       title="Discover the canon of world literature."
       subline="Over a thousand foundational works, every one in the public domain, from Homer to the moderns — organized by the traditions that shaped them."
       bg="background"
-      cta={{ label: "Browse the library", href: "/library" }}
+      cta={{ label: "Browse the library", href: "/library/browse" }}
     >
       <div
         className="-mx-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-3 md:-mx-12 md:px-12 [scrollbar-width:thin]"
@@ -290,9 +290,13 @@ function GuideWithVirgil() {
 
         <div className="border-t border-border bg-card p-4">
           <div className="mb-2 flex items-center gap-2">
-            <div className="flex size-5 items-center justify-center rounded-full border border-primary/40 bg-primary/15 font-serif text-[10px] font-bold text-primary">
-              V
-            </div>
+            <Image
+              src={marketingMasterImages.virgil.src}
+              alt={marketingMasterImages.virgil.alt}
+              width={marketingMasterImages.virgil.width}
+              height={marketingMasterImages.virgil.height}
+              className="size-6 rounded-full border border-primary/40 object-cover"
+            />
             <span className="text-xs font-semibold text-primary">Virgil</span>
             <span className="text-[10px] text-muted-foreground">
               &middot; {DEMO_PASSAGE.annotationLabel}

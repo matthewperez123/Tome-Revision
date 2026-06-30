@@ -1,4 +1,5 @@
 import type { BillingPeriod, EducatorPlan, ReaderPlan } from "@/lib/pricing"
+import { isPaidTier } from "@/lib/stripe/plans"
 import { PricingCard } from "./PricingCard"
 
 interface PricingGridProps {
@@ -29,6 +30,9 @@ export function PricingGrid({ plans, period }: PricingGridProps) {
             ctaHref={plan.ctaHref}
             featured={plan.featured}
             badge={plan.badge}
+            checkout={
+              isPaidTier(plan.id) ? { tier: plan.id, period } : undefined
+            }
           />
         )
       })}

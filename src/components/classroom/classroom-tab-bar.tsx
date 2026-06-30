@@ -5,7 +5,6 @@ import { motion } from "framer-motion"
 import { springs } from "@/lib/design-tokens"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
-import { DEMO_CLASSROOMS } from "@/lib/classroom"
 
 interface ClassroomTab {
   id: string
@@ -25,13 +24,7 @@ export function ClassroomTabBar({
 
   useEffect(() => {
     if (isDemoMode || !user) {
-      setClassrooms(
-        DEMO_CLASSROOMS.map((c) => ({
-          id: c.id,
-          name: c.name,
-          studentCount: c.studentCount,
-        })),
-      )
+      setClassrooms([])
       return
     }
 
@@ -46,14 +39,7 @@ export function ClassroomTabBar({
         .order("created_at", { ascending: true })
 
       if (!data?.length) {
-        // Fall back to demo classrooms
-        setClassrooms(
-          DEMO_CLASSROOMS.map((c) => ({
-            id: c.id,
-            name: c.name,
-            studentCount: c.studentCount,
-          })),
-        )
+        setClassrooms([])
         return
       }
 

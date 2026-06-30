@@ -26,6 +26,7 @@ import {
 import { useEconomy } from "@/components/tome/economy-provider"
 import { getAllBookProgress } from "@/lib/book-progress"
 import { getWeeklyChallenge } from "@/lib/weekly-challenge"
+import { formatNotificationTime } from "@/lib/notifications"
 import { getBooks, getFeaturedBooks } from "@/lib/content"
 import type { TomeBook } from "@/data/books"
 import { TRADITION_COLORS } from "@/components/tome/book-card"
@@ -45,6 +46,7 @@ import { TeacherDashboard } from "@/components/classroom/teacher-dashboard"
 import { UpcomingAssignments } from "@/components/classroom/upcoming-assignments"
 import { ClassLeaderboardMini } from "@/components/classroom/class-leaderboard-mini"
 import { useAuth } from "@/hooks/use-auth"
+import { CheckoutResultToast } from "@/components/pricing/CheckoutResultToast"
 
 // ─────────────────────────────────────────────
 // Daily challenge pool (rotates by day-of-year)
@@ -106,19 +108,7 @@ const CHALLENGES = [
 // Weekly challenge
 // ─────────────────────────────────────────────
 
-// Days since epoch → use for seeding; demo: Mon ✓, Tue ✓, Wed ✓, Thu = today, Fri-Sun future
 const WEEK_DAYS  = ["M", "T", "W", "T", "F", "S", "S"]
-// ─────────────────────────────────────────────
-// Recent activity seed
-// ─────────────────────────────────────────────
-
-const RECENT_ACTIVITY = [
-  { id: "r1", icon: BookOpen, color: "#22C55E", text: "Completed Chapter 3 of Pride and Prejudice", time: "2h ago" },
-  { id: "r2", icon: Star,     color: "#A78BFA", text: "Earned 'Week Warrior' seal",                  time: "1d ago" },
-  { id: "r3", icon: Trophy,   color: "#F59E0B", text: "Scored 80% on The Odyssey Book I quiz",       time: "2d ago" },
-  { id: "r4", icon: Flame,    color: "#F97316", text: "7-day Flame achieved — personal milestone",  time: "3d ago" },
-  { id: "r5", icon: BookOpen, color: "#0EA5E9", text: "Started Crime and Punishment by Dostoevsky",  time: "4d ago" },
-]
 
 // ─────────────────────────────────────────────
 // Helpers
@@ -184,14 +174,16 @@ function SectionHeading({
 export default function DashboardPage() {
   const { role } = useAuth()
 
-  // Teachers get a completely different dashboard
-  if (role === "teacher") return <TeacherDashboard />
-
-  return <StudentDashboard />
+  return (
+    <>
+      <CheckoutResultToast />
+      {role === "teacher" ? <TeacherDashboard /> : <StudentDashboard />}
+    </>
+  )
 }
 
 function StudentDashboard() {
-  const { stats, level, dailyGoalMet } = useEconomy()
+  const { stats, rank, dailyGoalMet } = useEconomy()
 
   // Local time is only read after hydration so Vercel's server timezone cannot
   // produce different greeting/date text from the browser's first render.
@@ -254,23 +246,60 @@ function StudentDashboard() {
       .slice(0, 3) as { book: TomeBook; prog: ReturnType<typeof getAllBookProgress>[string]; pct: number }[]
   }, [allProgress, allBooks])
 
-  // Demo "continue reading" when localStorage is empty
-  const continueBooks = useMemo(() => {
-    if (inProgress.length > 0) return inProgress
-    const demoIds = ["the-odyssey", "pride-and-prejudice", "crime-and-punishment"]
-    return demoIds.map((id) => {
-      const book = allBooks.find((b) => b.id === id)
-      if (!book) return null
-      return { book, prog: null, pct: book.readProgress ?? 30 }
-    }).filter(Boolean) as { book: TomeBook; prog: null; pct: number }[]
-  }, [inProgress, allBooks])
-
   // Completed-book count for the Continue Reading subline
   const completedCount = useMemo(() => {
     return Object.entries(allProgress).filter(([id, p]) => {
       const b = allBooks.find((x) => x.id === id)
       return b && p.completedChapterIndices.length >= b.chapters
     }).length
+  }, [allProgress, allBooks])
+
+  // Recent activity — derived from the same localStorage book progress the
+  // profile reads. Each book contributes real events (started, quiz scores,
+  // book completed) with their stored timestamps; newest first. Empty when the
+  // account has no reading history.
+  const recentActivity = useMemo(() => {
+    type Activity = { id: string; icon: typeof BookOpen; color: string; text: string; at: number }
+    const events: Activity[] = []
+
+    for (const [bookId, prog] of Object.entries(allProgress)) {
+      const book = allBooks.find((b) => b.id === bookId)
+      const title = book?.title ?? bookId
+
+      events.push({
+        id: `start-${bookId}`,
+        icon: BookOpen,
+        color: "#0EA5E9",
+        text: `Started ${title}`,
+        at: new Date(prog.startedAt).getTime(),
+      })
+
+      for (const q of prog.quizResults) {
+        const pct = q.totalQuestions > 0 ? Math.round((q.score / q.totalQuestions) * 100) : 0
+        events.push({
+          id: `quiz-${bookId}-${q.chapterId}-${q.completedAt}`,
+          icon: Trophy,
+          color: "#F59E0B",
+          text: `Scored ${pct}% on ${title} — Chapter ${q.chapterIndex + 1} quiz`,
+          at: new Date(q.completedAt).getTime(),
+        })
+      }
+
+      if (book && prog.completedChapterIndices.length >= book.chapters) {
+        events.push({
+          id: `done-${bookId}`,
+          icon: Star,
+          color: "#A78BFA",
+          text: `Finished ${title}`,
+          at: new Date(prog.lastReadAt).getTime(),
+        })
+      }
+    }
+
+    return events
+      .filter((e) => Number.isFinite(e.at))
+      .sort((a, b) => b.at - a.at)
+      .slice(0, 6)
   }, [allProgress, allBooks])
 
   const dailyPercent = Math.min(100, Math.round(
@@ -331,7 +360,7 @@ function StudentDashboard() {
               </p>
             </div>
             <div className="shrink-0 text-right">
-              <p className="text-[11px] text-muted-foreground">Level {level.level}</p>
+              <p className="text-[11px] text-muted-foreground">{rank.rank.name}</p>
               <p className="text-lg font-bold tracking-tight" style={{ color: "#6366F1" }}>
                 {stats.xp_total} Wisdom
               </p>
@@ -339,12 +368,14 @@ function StudentDashboard() {
                 <motion.div
                   className="h-full rounded-full bg-[#6366F1]"
                   initial={{ width: 0 }}
-                  animate={{ width: `${(level.xpInLevel / level.xpForNext) * 100}%` }}
+                  animate={{ width: `${rank.pct}%` }}
                   transition={springs.gentle}
                 />
               </div>
               <p className="text-[9px] text-muted-foreground/60 mt-0.5">
-                {level.xpInLevel} / {level.xpForNext} to next level
+                {rank.next
+                  ? `${rank.wisdomToNext} Wisdom to ${rank.next.name}`
+                  : "Highest rank reached"}
               </p>
             </div>
           </div>
@@ -669,7 +700,7 @@ function StudentDashboard() {
               <span className="text-muted-foreground/40">·</span>
               <span className="inline-flex items-center gap-1">
                 <Zap className="size-3.5" style={{ color: "var(--codex-primary)" }} />
-                {stats.xp_total} XP
+                {stats.xp_total} Wisdom
               </span>
             </div>
           </div>
@@ -690,7 +721,7 @@ function StudentDashboard() {
                 <div>
                   <h2 className="text-base font-bold tracking-tight leading-none">Continue Reading</h2>
                   <p className="text-[11px] text-muted-foreground mt-1">
-                    {continueBooks.length} in progress · {completedCount} completed
+                    {inProgress.length} in progress · {completedCount} completed
                   </p>
                 </div>
               </div>
@@ -700,7 +731,7 @@ function StudentDashboard() {
               </Link>
             </div>
 
-            {continueBooks.length === 0 ? (
+            {inProgress.length === 0 ? (
               <Link
                 href="/library/browse"
                 className="codex-pressable flex items-center justify-center gap-2 py-5 min-h-[44px] text-sm font-bold rounded-[var(--codex-radius-btn)]"
@@ -714,9 +745,9 @@ function StudentDashboard() {
               </Link>
             ) : (
               <div className="space-y-3">
-                {continueBooks.map(({ book, prog, pct }) => {
+                {inProgress.map(({ book, prog, pct }) => {
                   const tradColor   = TRADITION_COLORS[book.tradition]
-                  const chapters    = prog?.completedChapterIndices.length ?? Math.round((pct / 100) * book.chapters)
+                  const chapters    = prog.completedChapterIndices.length
 
                   return (
                     <div
@@ -942,27 +973,35 @@ function StudentDashboard() {
               actionHref="/profile"
             />
 
-            <div className="space-y-2">
-              {RECENT_ACTIVITY.map((item) => {
-                const Icon = item.icon
-                return (
-                  <div key={item.id} className="flex items-center gap-3 rounded-xl border border-border bg-card px-3.5 py-3">
-                    <div
-                      className="shrink-0 size-7 rounded-lg flex items-center justify-center"
-                      style={{ background: `${item.color}18` }}
-                    >
-                      <Icon className="size-3.5" style={{ color: item.color }} />
+            {recentActivity.length === 0 ? (
+              <div className="rounded-xl border border-dashed border-border bg-card px-4 py-6 text-center">
+                <p className="text-xs text-muted-foreground">
+                  No activity yet. Start reading to build your history.
+                </p>
+              </div>
+            ) : (
+              <div className="space-y-2">
+                {recentActivity.map((item) => {
+                  const Icon = item.icon
+                  return (
+                    <div key={item.id} className="flex items-center gap-3 rounded-xl border border-border bg-card px-3.5 py-3">
+                      <div
+                        className="shrink-0 size-7 rounded-lg flex items-center justify-center"
+                        style={{ background: `${item.color}18` }}
+                      >
+                        <Icon className="size-3.5" style={{ color: item.color }} />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-xs font-medium leading-snug truncate">{item.text}</p>
+                      </div>
+                      <span className="text-[10px] text-muted-foreground/50 shrink-0 tabular-nums">
+                        {formatNotificationTime(new Date(item.at).toISOString())}
+                      </span>
                     </div>
-                    <div className="flex-1 min-w-0">
-                      <p className="text-xs font-medium leading-snug truncate">{item.text}</p>
-                    </div>
-                    <span className="text-[10px] text-muted-foreground/50 shrink-0 tabular-nums">
-                      {item.time}
-                    </span>
-                  </div>
-                )
-              })}
-            </div>
+                  )
+                })}
+              </div>
+            )}
           </section>
         </BlurFade>
 

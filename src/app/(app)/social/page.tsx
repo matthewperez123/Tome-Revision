@@ -15,17 +15,18 @@
  */
 "use client"
 
-import { useMemo, useState } from "react"
+import { useState } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import {
   Crown, Medal, Trophy, Flame, Zap,
-  BookOpen, Star, Users, Clock, Filter,
+  BookOpen, Star, Users, Clock,
   MessageSquare, CalendarDays, TrendingUp,
   ChevronUp, ChevronDown, Plus,
   PenTool, GraduationCap, Landmark, Sparkles, Leaf,
   Globe2,
 } from "lucide-react"
+import { CommunityFeed } from "@/components/social/community-feed"
 import { springs } from "@/lib/design-tokens"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { NumberTicker } from "@/components/ui/number-ticker"
@@ -101,49 +102,6 @@ const LEADERBOARD: LeaderboardUser[] = [
   { id: "29",  name: "Oberon",       initials: "Ob", xp: 268,  streak: 0,  level: 1, book: "Midsummer Night",      color: "#A78BFA" },
   { id: "30",  name: "Titania",      initials: "Ti", xp: 225,  streak: 0,  level: 1, book: "Midsummer Night",      color: "#D946EF" },
 ]
-
-// ─────────────────────────────────────────────
-// Activity feed seed data
-// ─────────────────────────────────────────────
-
-type ActionType = "book_started" | "chapter_done" | "quiz_score" | "achievement" | "book_finished" | "streak"
-
-interface ActivityItem {
-  id: string
-  name: string
-  color: string
-  initials: string
-  action: ActionType
-  description: string
-  hoursAgo: number
-}
-
-const ACTIVITY: ActivityItem[] = [
-  { id: "a1",  name: "Scheherazade", initials: "Sc", color: "#F43F5E", action: "book_finished",  description: "finished The Arabian Nights — all 1001 tales",       hoursAgo: 2  },
-  { id: "a2",  name: "Beatrice",     initials: "Be", color: "#F59E0B", action: "streak",         description: "completed a 14-day reading streak",               hoursAgo: 5  },
-  { id: "a3",  name: "Ishmael",      initials: "Is", color: "#14B8A6", action: "quiz_score",     description: "scored 100% on the Moby-Dick Ch. 1 quiz",           hoursAgo: 8  },
-  { id: "a4",  name: "Natasha",      initials: "Na", color: "#EC4899", action: "book_started",   description: "started reading War and Peace by Tolstoy",           hoursAgo: 12 },
-  { id: "a5",  name: "Gatsby",       initials: "Ga", color: "#14B8A6", action: "achievement",    description: "earned the 'American Dream Reader' seal 🏅",         hoursAgo: 18 },
-  { id: "a6",  name: "Murasaki",     initials: "Mu", color: "#EC4899", action: "chapter_done",   description: "completed Chapter 3 of The Tale of Genji",           hoursAgo: 24 },
-  { id: "a7",  name: "Raskolnikov",  initials: "Ra", color: "#6366F1", action: "quiz_score",     description: "scored 90% on Crime and Punishment Part I quiz",     hoursAgo: 30 },
-  { id: "a8",  name: "Arjuna",       initials: "Ar", color: "#F97316", action: "book_started",   description: "began the Bhagavad Gita",                            hoursAgo: 36 },
-  { id: "a9",  name: "Hypatia",      initials: "Hy", color: "#0EA5E9", action: "achievement",    description: "unlocked 'Hellenic Scholar' — 5 Ancient Greek books", hoursAgo: 42 },
-  { id: "a10", name: "Atticus",      initials: "At", color: "#22C55E", action: "streak",         description: "reached a 10-day streak — 'Night Owl' badge earned",  hoursAgo: 48 },
-  { id: "a11", name: "Estella",      initials: "Es", color: "#D946EF", action: "chapter_done",   description: "finished Chapter 7 of Great Expectations",           hoursAgo: 54 },
-  { id: "a12", name: "Prospero",     initials: "Pr", color: "#8B5CF6", action: "book_finished",  description: "completed The Tempest in a single weekend",          hoursAgo: 60 },
-  { id: "a13", name: "Aurelius",     initials: "Au", color: "#F97316", action: "quiz_score",     description: "scored 95% on Meditations Book II quiz",            hoursAgo: 72 },
-  { id: "a14", name: "Penelope",     initials: "Pe", color: "#EC4899", action: "book_started",   description: "started reading The Odyssey — welcome to Ithaca",    hoursAgo: 80 },
-  { id: "a15", name: "Cornelia",     initials: "Co", color: "#0EA5E9", action: "achievement",    description: "earned 'Philosophia' — read 3 Platonic dialogues",   hoursAgo: 96 },
-]
-
-const ACTION_META: Record<ActionType, { icon: typeof BookOpen; color: string; label: string }> = {
-  book_started:  { icon: BookOpen,    color: "#0EA5E9", label: "Started"    },
-  chapter_done:  { icon: BookOpen,    color: "#22C55E", label: "Chapter"    },
-  quiz_score:    { icon: Trophy,      color: "#F59E0B", label: "Quiz"       },
-  achievement:   { icon: Star,        color: "#A78BFA", label: "Badge"      },
-  book_finished: { icon: Star,        color: "#F43F5E", label: "Finished"   },
-  streak:        { icon: Flame,       color: "#F97316", label: "Streak"     },
-}
 
 // ─────────────────────────────────────────────
 // Book clubs seed data
@@ -228,12 +186,6 @@ const BOOK_CLUBS: BookClub[] = [
 // Helpers
 // ─────────────────────────────────────────────
 
-function fmtTime(hoursAgo: number): string {
-  if (hoursAgo < 24) return `${hoursAgo}h ago`
-  const days = Math.floor(hoursAgo / 24)
-  return `${days}d ago`
-}
-
 function weeksUntilMonday(): number {
   const now = new Date()
   const day = now.getDay() // 0 = Sun, 1 = Mon…
@@ -264,18 +216,10 @@ function UserAvatar({ initials, color, size = "sm" }: {
 // ─────────────────────────────────────────────
 
 export default function SocialPage() {
-  const [activityFilter, setActivityFilter] = useState<"all" | "quiz" | "reading" | "achievement">("all")
   const [expandedClub, setExpandedClub]     = useState<string | null>(null)
 
   const currentTier = TIERS[CURRENT_TIER_IDX]
   const daysLeft    = weeksUntilMonday()
-
-  const filteredActivity = useMemo(() => {
-    if (activityFilter === "all")         return ACTIVITY
-    if (activityFilter === "quiz")        return ACTIVITY.filter((a) => a.action === "quiz_score")
-    if (activityFilter === "reading")     return ACTIVITY.filter((a) => ["book_started", "chapter_done", "book_finished"].includes(a.action))
-    return ACTIVITY.filter((a) => ["achievement", "streak"].includes(a.action))
-  }, [activityFilter])
 
   return (
     <div className="p-4 md:p-6 max-w-3xl mx-auto">
@@ -497,63 +441,11 @@ export default function SocialPage() {
           </TabsContent>
 
           {/* ════════════════════════════════════
-              ACTIVITY TAB
+              ACTIVITY TAB — real privacy-scoped feed
           ════════════════════════════════════ */}
           <TabsContent value="activity">
-            <div className="mt-5 space-y-4">
-
-              {/* Filter pills */}
-              <div className="flex items-center gap-2 flex-wrap">
-                <Filter className="size-3.5 text-muted-foreground shrink-0" />
-                {(["all", "reading", "quiz", "achievement"] as const).map((f) => (
-                  <button
-                    key={f}
-                    onClick={() => setActivityFilter(f)}
-                    className={cn(
-                      "rounded-full px-3 py-1 text-[11px] font-medium transition-colors capitalize",
-                      activityFilter === f
-                        ? "bg-[var(--tome-accent,#6366f1)] text-white"
-                        : "bg-muted text-muted-foreground hover:text-foreground"
-                    )}
-                  >
-                    {f === "all" ? "All" : f === "reading" ? "Reading" : f === "quiz" ? "Quizzes" : "Badges"}
-                  </button>
-                ))}
-              </div>
-
-              {/* Feed */}
-              <div className="space-y-2">
-                {filteredActivity.map((item, i) => {
-                  const meta = ACTION_META[item.action]
-                  const Icon = meta.icon
-                  return (
-                    <BlurFade key={item.id} delay={0.03 + i * 0.03} inView>
-                      <div className="flex items-start gap-3 rounded-xl border border-border bg-card p-3">
-                        {/* User avatar */}
-                        <UserAvatar initials={item.initials} color={item.color} size="sm" />
-
-                        {/* Content */}
-                        <div className="flex-1 min-w-0">
-                          <p className="text-xs leading-relaxed">
-                            <span className="font-semibold">{item.name}</span>
-                            {" "}
-                            <span className="text-muted-foreground">{item.description}</span>
-                          </p>
-                          <div className="flex items-center gap-1.5 mt-1">
-                            <div
-                              className="flex size-4 items-center justify-center rounded"
-                              style={{ backgroundColor: `${meta.color}20` }}
-                            >
-                              <Icon className="size-2.5" style={{ color: meta.color }} />
-                            </div>
-                            <span className="text-[10px] text-muted-foreground/60">{fmtTime(item.hoursAgo)}</span>
-                          </div>
-                        </div>
-                      </div>
-                    </BlurFade>
-                  )
-                })}
-              </div>
+            <div className="mt-5">
+              <CommunityFeed />
             </div>
           </TabsContent>
 

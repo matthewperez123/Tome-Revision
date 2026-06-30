@@ -16,9 +16,8 @@ import { IntercomMessenger } from "@/components/support/IntercomMessenger"
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
-  // Public marketing surfaces. The bare /library route is now a public
-  // preview of the catalog (with hero + static cards); the authenticated
-  // catalog lives at /library/browse and uses the full app chrome.
+  // Public marketing surfaces. The bare /library route now 308-redirects to the
+  // single functional catalog at /library/browse, which uses the full app chrome.
   const isLanding =
     pathname === "/" ||
     pathname === "/readers" ||
@@ -26,7 +25,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     pathname === "/virgil" ||
     pathname === "/pricing" ||
     pathname === "/faq" ||
-    pathname === "/library"
+    pathname === "/privacy" ||
+    pathname === "/terms" ||
+    pathname === "/contact" ||
+    pathname === "/accessibility"
 
   // Landing page has its own navbar — hide app chrome. Marketing surfaces
   // also omit the floating Virgil companion (no VirgilWrapper here); the

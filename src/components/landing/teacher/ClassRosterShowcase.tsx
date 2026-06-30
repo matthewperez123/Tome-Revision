@@ -36,7 +36,7 @@ export function ClassRosterShowcase() {
     return (
       <TeacherShowcaseShell
         heading="Set up your classroom in minutes."
-        subcopy="Create classes, invite students by code or roster import, organize by section or period. Bulk import from CSV or your SIS."
+        subcopy="Create classes, invite students with a join code, and organize them by section or period — everyone lands directly in your roster."
         layout="mockup-left"
         bgClass="bg-background"
       >

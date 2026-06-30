@@ -220,7 +220,7 @@ custom build command — Vercel runs `pnpm build`, which runs the stoa audit.
 
 - **Routes** (WebFetch the deployment URL, assert 200 + expected markers):
   - `/` — landing.
-  - `/library` — public preview; should contain the hero painting + "Library".
+  - `/library/browse` — the functional catalog (`/library` 308-redirects here).
   - `/dashboard` — app shell.
   - `/read/<bookId>` — for anything just ingested.
 - **DB** (read-only `execute_sql`): confirm rows landed, e.g.

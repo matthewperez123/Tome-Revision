@@ -18,7 +18,8 @@ import {
   calculateHearts,
   calculateStreak,
   isDailyGoalMet,
-  getLevel,
+  getRank,
+  type RankProgress,
   createDefaultStats,
   MAX_HEARTS,
   HEART_REGEN_INTERVAL_MS,
@@ -42,7 +43,7 @@ import type { Achievement, AchievementState } from "@/types/achievement"
 
 export type EconomyContextValue = {
   stats: UserStats
-  level: { level: number; xpInLevel: number; xpForNext: number }
+  rank: RankProgress
   dailyGoalMet: boolean
   heartsRegenAt: Date | null
   dispatch: (event: EconomyEvent) => EconomyResult
@@ -232,7 +233,7 @@ export function TomeEconomyProvider({ children }: { children: ReactNode }) {
   }, [])
 
   // Derived values
-  const level = useMemo(() => getLevel(stats.xp_total), [stats.xp_total])
+  const rank = useMemo(() => getRank(stats.xp_total), [stats.xp_total])
   const dailyGoalMet = useMemo(() => isDailyGoalMet(stats), [stats])
   const heartsRegenAt = useMemo(() => {
     if (stats.hearts >= MAX_HEARTS) return null
@@ -241,8 +242,8 @@ export function TomeEconomyProvider({ children }: { children: ReactNode }) {
   }, [stats.hearts, stats.hearts_last_regen])
 
   const value = useMemo<EconomyContextValue>(
-    () => ({ stats, level, dailyGoalMet, heartsRegenAt, dispatch, refreshHearts, pendingUnlocks, dismissUnlock }),
-    [stats, level, dailyGoalMet, heartsRegenAt, dispatch, refreshHearts, pendingUnlocks, dismissUnlock]
+    () => ({ stats, rank, dailyGoalMet, heartsRegenAt, dispatch, refreshHearts, pendingUnlocks, dismissUnlock }),
+    [stats, rank, dailyGoalMet, heartsRegenAt, dispatch, refreshHearts, pendingUnlocks, dismissUnlock]
   )
 
   return (

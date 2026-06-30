@@ -1,5 +1,8 @@
 import { Check } from "lucide-react"
 import Link from "next/link"
+import { CheckoutButton } from "./CheckoutButton"
+import type { BillingPeriod } from "@/lib/pricing"
+import type { PaidTier } from "@/lib/stripe/plans"
 
 export interface PricingCardProps {
   name: string
@@ -11,6 +14,8 @@ export interface PricingCardProps {
   ctaHref: string
   featured?: boolean
   badge?: string
+  /** When set, the CTA opens Stripe checkout instead of linking to ctaHref. */
+  checkout?: { tier: PaidTier; period: BillingPeriod }
 }
 
 const baseBtn =
@@ -26,7 +31,13 @@ export function PricingCard({
   ctaHref,
   featured = false,
   badge,
+  checkout,
 }: PricingCardProps) {
+  const btnClass = `${baseBtn} ${
+    featured
+      ? "border-primary bg-primary text-primary-foreground hover:opacity-90"
+      : "border-border bg-card text-foreground hover:border-primary/40"
+  }`
   return (
     <div
       className={`relative flex h-full flex-col rounded-xl p-6 ${
@@ -72,16 +83,19 @@ export function PricingCard({
         ))}
       </ul>
 
-      <Link
-        href={ctaHref}
-        className={`${baseBtn} ${
-          featured
-            ? "border-primary bg-primary text-primary-foreground hover:opacity-90"
-            : "border-border bg-card text-foreground hover:border-primary/40"
-        }`}
-      >
-        {ctaLabel}
-      </Link>
+      {checkout ? (
+        <CheckoutButton
+          tier={checkout.tier}
+          period={checkout.period}
+          className={btnClass}
+        >
+          {ctaLabel}
+        </CheckoutButton>
+      ) : (
+        <Link href={ctaHref} className={btnClass}>
+          {ctaLabel}
+        </Link>
+      )}
     </div>
   )
 }

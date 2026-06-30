@@ -17,7 +17,7 @@ import {
   type EconomyEvent,
   type EconomyResult,
   applyEvent,
-  getLevel,
+  getRank,
   isDailyGoalMet,
   createDefaultStats,
   MAX_HEARTS,
@@ -57,7 +57,7 @@ export function DemoEconomyProvider({
     return result
   }, [stats])
 
-  const level = useMemo(() => getLevel(stats.xp_total), [stats.xp_total])
+  const rank = useMemo(() => getRank(stats.xp_total), [stats.xp_total])
   const dailyGoalMet = useMemo(() => isDailyGoalMet(stats), [stats])
   const heartsRegenAt = useMemo(() => {
     if (stats.hearts >= MAX_HEARTS) return null
@@ -68,7 +68,7 @@ export function DemoEconomyProvider({
   const value = useMemo<EconomyContextValue>(
     () => ({
       stats,
-      level,
+      rank,
       dailyGoalMet,
       heartsRegenAt,
       dispatch,
@@ -76,7 +76,7 @@ export function DemoEconomyProvider({
       pendingUnlocks: [],
       dismissUnlock: () => {},
     }),
-    [stats, level, dailyGoalMet, heartsRegenAt, dispatch]
+    [stats, rank, dailyGoalMet, heartsRegenAt, dispatch]
   )
 
   return (

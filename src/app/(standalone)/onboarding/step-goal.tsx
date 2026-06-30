@@ -5,11 +5,15 @@ import { motion } from "framer-motion"
 import { springs } from "@/lib/design-tokens"
 import { Button } from "@/components/ui/button"
 import { AnimatedCircularProgressBar } from "@/components/ui/animated-circular-progress-bar"
+import { setStoredDailyGoal } from "@/lib/economy"
+import { saveOnboardingData } from "@/lib/onboarding"
 
+// Mirrors the daily-goal tiers in profile settings.
 const goals = [
-  { id: "casual", label: "Casual", minutes: 10, progress: 33 },
-  { id: "regular", label: "Regular", minutes: 20, progress: 66 },
-  { id: "ambitious", label: "Ambitious", minutes: 30, progress: 100 },
+  { id: "casual", label: "Casual", minutes: 10, progress: 25 },
+  { id: "regular", label: "Regular", minutes: 20, progress: 50 },
+  { id: "ambitious", label: "Ambitious", minutes: 30, progress: 75 },
+  { id: "intense", label: "Intense", minutes: 60, progress: 100 },
 ]
 
 export function StepGoal({
@@ -20,6 +24,19 @@ export function StepGoal({
   onBack: () => void
 }) {
   const [selected, setSelected] = useState<string | null>(null)
+
+  const handleContinue = () => {
+    const goal = goals.find((g) => g.id === selected)
+    if (!goal) return
+    // Persist to all three goal stores: the economy stats blob the dashboard
+    // reads, the profile setting key, and the onboarding record.
+    setStoredDailyGoal(goal.minutes)
+    try {
+      localStorage.setItem("tome:setting-goal", String(goal.minutes))
+    } catch {}
+    saveOnboardingData({ dailyGoalMinutes: goal.minutes })
+    onNext()
+  }
 
   return (
     <div className="flex flex-col items-center text-center">
@@ -33,7 +50,7 @@ export function StepGoal({
         How much time do you want to read each day?
       </p>
 
-      <div className="mt-8 grid w-full grid-cols-3 gap-3">
+      <div className="mt-8 grid w-full grid-cols-2 gap-3 sm:grid-cols-4">
         {goals.map((g) => {
           const isSelected = selected === g.id
           return (
@@ -72,7 +89,7 @@ export function StepGoal({
         <Button
           className="flex-1"
           disabled={!selected}
-          onClick={onNext}
+          onClick={handleContinue}
         >
           Continue
         </Button>

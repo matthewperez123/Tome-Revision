@@ -15,7 +15,7 @@ export interface NavLink {
 export const PRIMARY_NAV: NavLink[] = [
   { label: "For Students", href: "/readers" },
   { label: "For Teachers", href: "/educators" },
-  { label: "Library", href: "/library" },
+  { label: "Library", href: "/library/browse" },
   { label: "Virgil", href: "/virgil" },
   { label: "Pricing", href: "/pricing" },
   { label: "FAQ", href: "/faq" },
@@ -35,9 +35,12 @@ export const LANDING_PATHS = new Set<string>([
   "/readers",
   "/educators",
   "/virgil",
-  "/library",
   "/pricing",
   "/faq",
+  "/privacy",
+  "/terms",
+  "/contact",
+  "/accessibility",
 ])
 
 /**
@@ -61,7 +64,7 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
   {
     heading: "Product",
     items: [
-      { label: "Library", href: "/library" },
+      { label: "Library", href: "/library/browse" },
       { label: "Virgil", href: "/virgil" },
       { label: "Trials", href: "/quizzes" },
       { label: "Authors", href: "/authors" },
@@ -82,16 +85,16 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
       { label: "FAQ", href: "/faq" },
       { label: "Support", action: "support" },
       { label: "Getting Started", href: "/faq#readers" },
-      { label: "Accessibility" },
+      { label: "Accessibility", href: "/accessibility" },
     ],
   },
   {
     heading: "Company",
     items: [
       { label: "About", href: "/" },
-      { label: "Contact", action: "support" },
-      { label: "Privacy" },
-      { label: "Terms" },
+      { label: "Contact", href: "/contact" },
+      { label: "Privacy", href: "/privacy" },
+      { label: "Terms", href: "/terms" },
     ],
   },
 ]

@@ -56,19 +56,43 @@ export function generateJoinCode(): string {
 }
 
 // ── Notification helper ───────────────────────────────────────────────────
-// Writes into db_notifications. Uses the service-role client because the
-// actor and recipient are usually different users (RLS would otherwise
-// block cross-user inserts). Best-effort: failures are logged but never
-// abort the calling action.
+// Writes into public.notifications. Uses the service-role client because the
+// actor and recipient are usually different users (RLS denies all client
+// inserts by design — the only write paths are this helper and the
+// SECURITY DEFINER create_notification RPC). Best-effort: failures are logged
+// but never abort the calling action.
+//
+// The table is normalized (recipient/actor/type/entity_*/payload). The
+// human-readable title/body/action_url are presentational and live inside
+// `payload` so the bell can render a message without extra joins.
+
+export type NotificationType =
+  | "friend_request"
+  | "friend_accepted"
+  | "group_invite"
+  | "group_post"
+  | "class_assignment"
+  | "assignment_graded"
+  | "parent_link_request"
+  | "session_summary"
+  | "peer_review"
+  | "book_recommendation"
+  | "system"
 
 export interface NotifyParams {
-  userId: string
-  type: string
+  recipientId: string
+  type: NotificationType
+  /** The user who caused the notification (nullable for system events). */
+  actorId?: string
+  /** What the notification points at, e.g. "assignment", "connection". */
+  entityType?: string
+  entityId?: string
+  /** Presentational fields folded into payload. */
   title: string
   body?: string
   actionUrl?: string
-  sourceUserId?: string
-  classroomId?: string
+  /** Extra structured fields merged into payload (e.g. { status: "received" }). */
+  payload?: Record<string, unknown>
 }
 
 export async function notify(params: NotifyParams | NotifyParams[]) {
@@ -76,15 +100,19 @@ export async function notify(params: NotifyParams | NotifyParams[]) {
   if (list.length === 0) return
   const admin = createAdminClient()
   const rows = list.map((p) => ({
-    user_id: p.userId,
+    recipient_id: p.recipientId,
+    actor_id: p.actorId ?? null,
     type: p.type,
-    title: p.title,
-    body: p.body ?? null,
-    action_url: p.actionUrl ?? null,
-    source_user_id: p.sourceUserId ?? null,
-    classroom_id: p.classroomId ?? null,
+    entity_type: p.entityType ?? null,
+    entity_id: p.entityId ?? null,
+    payload: {
+      title: p.title,
+      body: p.body ?? null,
+      action_url: p.actionUrl ?? null,
+      ...(p.payload ?? {}),
+    },
   }))
-  const { error } = await admin.from("db_notifications").insert(rows)
+  const { error } = await admin.from("notifications").insert(rows)
   if (error) {
     console.error("[notify] insert failed:", error.message, {
       count: rows.length,

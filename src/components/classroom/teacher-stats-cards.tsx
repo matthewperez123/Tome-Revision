@@ -2,52 +2,38 @@
 
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
-import { Users, Activity, BookOpen, Brain } from "lucide-react"
+import { Users, BookOpen, ClipboardCheck, Brain } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
-import { DEMO_CLASSROOMS, DEMO_STUDENTS } from "@/lib/classroom"
 
 interface StatsData {
   totalStudents: number
-  activeToday: number
-  readingNow: number
-  avgQuizScore: number
+  activeAssignments: number
+  needsGrading: number
+  avgGrade: number | null
 }
 
-const DEMO_STATS_ALL: StatsData = {
-  totalStudents: DEMO_CLASSROOMS.reduce((sum, c) => sum + c.studentCount, 0),
-  activeToday: 12,
-  readingNow: 5,
-  avgQuizScore: Math.round(
-    DEMO_STUDENTS.filter((s) => s.quizScore !== null).reduce((sum, s) => sum + (s.quizScore ?? 0), 0) /
-    DEMO_STUDENTS.filter((s) => s.quizScore !== null).length,
-  ),
-}
-
-const DEMO_STATS_BY_CLASS: Record<string, StatsData> = {
-  "class-1": { totalStudents: 24, activeToday: 8, readingNow: 3, avgQuizScore: 88 },
-  "class-2": { totalStudents: 18, activeToday: 4, readingNow: 2, avgQuizScore: 79 },
-}
-
-function getDemoStats(classroomId?: string): StatsData {
-  if (classroomId && DEMO_STATS_BY_CLASS[classroomId]) return DEMO_STATS_BY_CLASS[classroomId]
-  return DEMO_STATS_ALL
+const EMPTY_STATS: StatsData = {
+  totalStudents: 0,
+  activeAssignments: 0,
+  needsGrading: 0,
+  avgGrade: null,
 }
 
 const STAT_CONFIG = [
   { key: "totalStudents" as const, label: "Total Students", icon: Users, color: "text-indigo-500", bg: "bg-indigo-50 dark:bg-indigo-950/30" },
-  { key: "activeToday" as const, label: "Active Today", icon: Activity, color: "text-green-500", bg: "bg-green-50 dark:bg-green-950/30" },
-  { key: "readingNow" as const, label: "Reading Now", icon: BookOpen, color: "text-amber-500", bg: "bg-amber-50 dark:bg-amber-950/30" },
-  { key: "avgQuizScore" as const, label: "Avg Quiz Score", icon: Brain, color: "text-blue-500", bg: "bg-blue-50 dark:bg-blue-950/30" },
+  { key: "activeAssignments" as const, label: "Active Assignments", icon: BookOpen, color: "text-amber-500", bg: "bg-amber-50 dark:bg-amber-950/30" },
+  { key: "needsGrading" as const, label: "Needs Grading", icon: ClipboardCheck, color: "text-green-500", bg: "bg-green-50 dark:bg-green-950/30" },
+  { key: "avgGrade" as const, label: "Avg Grade", icon: Brain, color: "text-blue-500", bg: "bg-blue-50 dark:bg-blue-950/30" },
 ]
 
 export function TeacherStatsCards({ classroomId }: { classroomId?: string }) {
   const { user, isDemoMode } = useAuth()
-  const [stats, setStats] = useState<StatsData>(getDemoStats(classroomId))
+  const [stats, setStats] = useState<StatsData>(EMPTY_STATS)
 
   useEffect(() => {
     if (isDemoMode || !user) {
-      setStats(getDemoStats(classroomId))
+      setStats(EMPTY_STATS)
       return
     }
 
@@ -63,34 +49,55 @@ export function TeacherStatsCards({ classroomId }: { classroomId?: string }) {
           .select("id")
           .eq("teacher_id", user!.id)
           .eq("archived", false)
-
         classroomIds = (classrooms ?? []).map((c) => c.id)
       }
 
       if (!classroomIds.length) {
-        setStats(getDemoStats(classroomId))
+        setStats(EMPTY_STATS)
         return
       }
 
-      const { count: studentCount } = await supabase
-        .from("classroom_members")
-        .select("*", { count: "exact", head: true })
-        .in("classroom_id", classroomIds)
+      const [
+        { count: studentCount },
+        { count: activeCount },
+        { count: gradingCount },
+        { data: gradedRows },
+      ] = await Promise.all([
+        supabase
+          .from("classroom_members")
+          .select("*", { count: "exact", head: true })
+          .in("classroom_id", classroomIds)
+          .eq("role", "student"),
+        supabase
+          .from("assignments")
+          .select("*", { count: "exact", head: true })
+          .in("classroom_id", classroomIds)
+          .eq("status", "active"),
+        supabase
+          .from("assignment_submissions")
+          .select("*, assignments!inner(classroom_id)", { count: "exact", head: true })
+          .eq("status", "submitted")
+          .in("assignments.classroom_id", classroomIds),
+        supabase
+          .from("assignment_submissions")
+          .select("score, assignments!inner(classroom_id)")
+          .eq("status", "graded")
+          .in("assignments.classroom_id", classroomIds),
+      ])
 
-      const { data: quizResults } = await supabase
-        .from("teacher_quiz_results")
-        .select("percentage")
-        .in("classroom_id", classroomIds)
-
-      const avgScore = quizResults?.length
-        ? Math.round(quizResults.reduce((sum, r) => sum + Number(r.percentage), 0) / quizResults.length)
-        : 87
+      const scores = ((gradedRows ?? []) as { score: number | null }[])
+        .map((r) => r.score)
+        .filter((s): s is number => typeof s === "number")
+      const avgGrade =
+        scores.length > 0
+          ? Math.round(scores.reduce((sum, s) => sum + s, 0) / scores.length)
+          : null
 
       setStats({
-        totalStudents: studentCount ?? getDemoStats(classroomId).totalStudents,
-        activeToday: getDemoStats(classroomId).activeToday,
-        readingNow: getDemoStats(classroomId).readingNow,
-        avgQuizScore: avgScore,
+        totalStudents: studentCount ?? 0,
+        activeAssignments: activeCount ?? 0,
+        needsGrading: gradingCount ?? 0,
+        avgGrade,
       })
     }
 
@@ -102,7 +109,12 @@ export function TeacherStatsCards({ classroomId }: { classroomId?: string }) {
       {STAT_CONFIG.map((config, i) => {
         const Icon = config.icon
         const value = stats[config.key]
-        const displayValue = config.key === "avgQuizScore" ? `${value}%` : value
+        const displayValue =
+          config.key === "avgGrade"
+            ? value === null
+              ? "—"
+              : `${value}%`
+            : value
 
         return (
           <motion.div

@@ -10,6 +10,7 @@ export interface OnboardingData {
   teacherClassSize: string | null
   intent: string | null
   traditions: string[]
+  firstBookId: string | null
   dailyGoalMinutes: number
   completedAt: string | null
   // Teacher onboarding: first classroom
@@ -26,6 +27,7 @@ const DEFAULT_DATA: OnboardingData = {
   teacherClassSize: null,
   intent: null,
   traditions: [],
+  firstBookId: null,
   dailyGoalMinutes: 15,
   completedAt: null,
   firstClassroomName: null,
@@ -83,6 +85,7 @@ export async function syncOnboardingToSupabase(): Promise<void> {
       onboarding_data: {
         intent: data.intent,
         traditions: data.traditions,
+        firstBookId: data.firstBookId,
         dailyGoalMinutes: data.dailyGoalMinutes,
         teacherClassSize: data.teacherClassSize,
       },

@@ -188,13 +188,14 @@ export async function createAssignment(
 
       await notify(
         eligibleIds.map((sid) => ({
-          userId: sid,
-          type: "assignment_created",
+          recipientId: sid,
+          type: "class_assignment" as const,
           title: `New assignment: ${i.title}`,
           body: classroom?.name ?? undefined,
           actionUrl: `/classroom/${i.classroomId}/assignment/${assignment.id}`,
-          sourceUserId: user.id,
-          classroomId: i.classroomId,
+          actorId: user.id,
+          entityType: "assignment",
+          entityId: assignment.id,
         })),
       )
     }
@@ -306,6 +307,61 @@ export async function submitAssignment(
           status: "submitted",
           submitted_at: new Date().toISOString(),
           annotations: parsed.data.payload,
+        })
+        .select("id")
+        .single()
+      if (error) return fail(error.message)
+      submissionId = data.id
+    }
+
+    return ok({ submissionId })
+  } catch (e) {
+    return fail((e as Error).message)
+  }
+}
+
+// ── Launch (student opens the reading/Trial) ──────────────────────────────
+// Marks the student's submission in_progress so the roster reflects that they
+// have begun. Actual completion stays derived live from reading_progress /
+// quiz_results via the classroom_gradebook RPC — we never fake a score here.
+
+export async function startAssignment(
+  assignmentId: string,
+): Promise<ActionResult<{ submissionId: string }>> {
+  const parsed = Uuid.safeParse(assignmentId)
+  if (!parsed.success) return fail("Invalid assignment id.")
+  try {
+    const { supabase, user } = await requireUser()
+
+    const eligible = await isStudentEligibleForAssignment(parsed.data, user.id)
+    if (!eligible) return fail("You are not an eligible target for this assignment.")
+
+    const { data: existing } = await supabase
+      .from("assignment_submissions")
+      .select("id, status")
+      .eq("assignment_id", parsed.data)
+      .eq("student_id", user.id)
+      .maybeSingle<{ id: string; status: string }>()
+
+    let submissionId: string
+    if (existing) {
+      submissionId = existing.id
+      // Only advance from not_started → in_progress; never regress a
+      // submitted/graded row.
+      if (existing.status === "not_started") {
+        const { error } = await supabase
+          .from("assignment_submissions")
+          .update({ status: "in_progress" })
+          .eq("id", existing.id)
+        if (error) return fail(error.message)
+      }
+    } else {
+      const { data, error } = await supabase
+        .from("assignment_submissions")
+        .insert({
+          assignment_id: parsed.data,
+          student_id: user.id,
+          status: "in_progress",
         })
         .select("id")
         .single()

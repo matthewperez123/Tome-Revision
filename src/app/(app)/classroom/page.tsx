@@ -7,11 +7,6 @@ import { Users, BookOpen, Copy, Plus, Check, LogIn, GraduationCap } from "lucide
 import { Button } from "@/components/ui/button"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
-import {
-  DEMO_CLASSROOMS,
-  getClassStats,
-  getCompletionColor,
-} from "@/lib/classroom"
 
 type ClassroomRole = "owner" | "co_teacher" | "ta" | "student"
 
@@ -22,23 +17,8 @@ interface ClassroomData {
   join_code: string
   student_count: number
   active_assignments: number
-  /** Viewer's role in this classroom. Demo data defaults to "owner". */
+  /** Viewer's role in this classroom. */
   my_role: ClassroomRole
-}
-
-function mapDemoToClassroomData(): ClassroomData[] {
-  return DEMO_CLASSROOMS.map((c) => {
-    const stats = getClassStats(c.id)
-    return {
-      id: c.id,
-      name: c.name,
-      subject: c.subject,
-      join_code: c.joinCode,
-      student_count: c.studentCount,
-      active_assignments: stats.activeAssignments,
-      my_role: "owner",
-    }
-  })
 }
 
 const ROLE_LABEL: Record<ClassroomRole, string> = {
@@ -61,9 +41,8 @@ export default function ClassroomDashboard() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    // In demo mode or when role is set via localStorage, use demo data
     if (isDemoMode || !user) {
-      setClassrooms(mapDemoToClassroomData())
+      setClassrooms([])
       setLoading(false)
       return
     }

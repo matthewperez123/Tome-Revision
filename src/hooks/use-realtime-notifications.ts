@@ -3,184 +3,143 @@
 import { useEffect, useState, useCallback } from "react"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
-import {
-  DEMO_READER_NOTIFICATIONS,
-  type DemoNotification,
-} from "@/lib/notifications/seed"
 
-export interface DbNotification {
+/**
+ * A notification as consumed by the bell. Flattened from the normalized
+ * `public.notifications` row: the human-readable title/body/action_url live
+ * in `payload`; `read` is derived from `read_at`.
+ */
+export interface AppNotification {
   id: string
   type: string
   title: string
   body: string | null
-  action_url: string | null
+  actionUrl: string | null
   read: boolean
-  created_at: string
-  // Optional fields that come from the demo seed; ignored when rows are
-  // returned from Supabase directly.
-  category?: DemoNotification["category"]
-  bookmarkBookId?: string
-  bookmarkTitle?: string
+  createdAt: string
+  actorId: string | null
+  entityType: string | null
+  entityId: string | null
+  payload: Record<string, unknown>
 }
 
-// Demo notifications for teacher preview
-const DEMO_TEACHER_NOTIFICATIONS: DbNotification[] = [
-  {
-    id: "dn-1",
-    type: "quiz_completed",
-    title: "Sofia Rodriguez scored 97% on Odyssey Trial",
-    body: "Books 1–6 Quiz · AP Literature — Period 3",
-    action_url: "/classroom/class-1",
-    read: false,
-    created_at: new Date(Date.now() - 12 * 60000).toISOString(),
-  },
-  {
-    id: "dn-2",
-    type: "assignment_submitted",
-    title: "Marcus Williams submitted Discussion Response",
-    body: "The Odyssey — Books 1–6 · Hospitality theme analysis",
-    action_url: "/classroom/grading",
-    read: false,
-    created_at: new Date(Date.now() - 45 * 60000).toISOString(),
-  },
-  {
-    id: "dn-3",
-    type: "quiz_completed",
-    title: "Liam Foster scored 88% on Odyssey Trial",
-    body: "Books 1–6 Quiz · AP Literature — Period 3",
-    action_url: "/classroom/class-1",
-    read: false,
-    created_at: new Date(Date.now() - 2 * 3600000).toISOString(),
-  },
-  {
-    id: "dn-4",
-    type: "student_joined",
-    title: "New student joined AP Literature — Period 3",
-    body: "Aisha Patel joined using code TOME42",
-    action_url: "/classroom/class-1",
-    read: false,
-    created_at: new Date(Date.now() - 4 * 3600000).toISOString(),
-  },
-  {
-    id: "dn-5",
-    type: "book_completed",
-    title: "Emma Chen finished The Odyssey",
-    body: "First student in AP Lit to complete all 24 books!",
-    action_url: "/classroom/class-1",
-    read: true,
-    created_at: new Date(Date.now() - 6 * 3600000).toISOString(),
-  },
-  {
-    id: "dn-6",
-    type: "student_at_risk",
-    title: "3 students behind on The Republic assignment",
-    body: "Overdue since Apr 8 · World Literature",
-    action_url: "/classroom/class-2",
-    read: true,
-    created_at: new Date(Date.now() - 8 * 3600000).toISOString(),
-  },
-  {
-    id: "dn-7",
-    type: "all_submitted",
-    title: "All students submitted Pride & Prejudice essay",
-    body: "24/24 submissions received · Ready to grade",
-    action_url: "/classroom/grading",
-    read: true,
-    created_at: new Date(Date.now() - 24 * 3600000).toISOString(),
-  },
-  {
-    id: "dn-8",
-    type: "streak_milestone",
-    title: "Marcus Williams hit a 14-day reading streak",
-    body: "AP Literature — Period 3",
-    action_url: "/classroom/class-1",
-    read: true,
-    created_at: new Date(Date.now() - 36 * 3600000).toISOString(),
-  },
-  {
-    id: "dn-9",
-    type: "assignment_submitted",
-    title: "Aisha Patel submitted Annotation Assignment",
-    body: "The Odyssey Books 1–6 · 8 annotations",
-    action_url: "/classroom/grading",
-    read: true,
-    created_at: new Date(Date.now() - 48 * 3600000).toISOString(),
-  },
-  {
-    id: "dn-10",
-    type: "quiz_completed",
-    title: "James O'Brien scored 72% on Odyssey Trial",
-    body: "Books 1–6 Quiz · Below passing threshold",
-    action_url: "/classroom/class-1",
-    read: true,
-    created_at: new Date(Date.now() - 72 * 3600000).toISOString(),
-  },
-]
+interface NotificationRow {
+  id: string
+  type: string
+  actor_id: string | null
+  entity_type: string | null
+  entity_id: string | null
+  payload: Record<string, unknown> | null
+  read_at: string | null
+  created_at: string
+}
 
-// Reader demo notifications now live in `lib/notifications/seed.ts` and are
-// imported above. Keeping the teacher set inline because it's tightly
-// coupled to mock student names used elsewhere in the teacher dashboard.
+function toAppNotification(row: NotificationRow): AppNotification {
+  const payload = (row.payload ?? {}) as {
+    title?: string
+    body?: string | null
+    action_url?: string | null
+  }
+  return {
+    id: row.id,
+    type: row.type,
+    title: payload.title ?? "",
+    body: payload.body ?? null,
+    actionUrl: payload.action_url ?? null,
+    read: row.read_at != null,
+    createdAt: row.created_at,
+    actorId: row.actor_id,
+    entityType: row.entity_type,
+    entityId: row.entity_id,
+    payload: (row.payload ?? {}) as Record<string, unknown>,
+  }
+}
 
 export function useRealtimeNotifications() {
-  const { user, isDemoMode, role } = useAuth()
-  const [notifications, setNotifications] = useState<DbNotification[]>([])
+  const { user, isDemoMode } = useAuth()
+  const [notifications, setNotifications] = useState<AppNotification[]>([])
   const [unreadCount, setUnreadCount] = useState(0)
   const [loading, setLoading] = useState(true)
 
-  // Fetch initial notifications
+  // Fetch initial notifications. A signed-out / demo session has no inbox —
+  // it shows a true empty state, never mock rows.
   useEffect(() => {
-    // Demo mode: use demo notifications
     if (isDemoMode || !user) {
-      const demoData = role === "teacher" ? DEMO_TEACHER_NOTIFICATIONS : DEMO_READER_NOTIFICATIONS
-      setNotifications(demoData)
-      setUnreadCount(demoData.filter((n) => !n.read).length)
+      setNotifications([])
+      setUnreadCount(0)
       setLoading(false)
       return
     }
 
+    let cancelled = false
+
     async function fetchNotifications() {
       const supabase = createClient()
-
       const { data } = await supabase
-        .from("db_notifications")
-        .select("id, type, title, body, action_url, read, created_at")
-        .eq("user_id", user!.id)
+        .from("notifications")
+        .select(
+          "id, type, actor_id, entity_type, entity_id, payload, read_at, created_at",
+        )
+        .eq("recipient_id", user!.id)
         .order("created_at", { ascending: false })
-        .limit(20)
+        .limit(30)
 
-      // A signed-in user sees only their own real notifications — an empty
-      // inbox stays empty. Demo data is reserved for the unauthenticated
-      // preview branch above.
-      const rows = data ?? []
+      if (cancelled) return
+      const rows = (data ?? []).map((r) =>
+        toAppNotification(r as NotificationRow),
+      )
       setNotifications(rows)
       setUnreadCount(rows.filter((n) => !n.read).length)
-
       setLoading(false)
     }
 
     fetchNotifications()
-  }, [user, isDemoMode, role])
+    return () => {
+      cancelled = true
+    }
+  }, [user, isDemoMode])
 
-  // Subscribe to real-time inserts (only when authenticated)
+  // Subscribe to realtime changes for a live unread badge. RLS guarantees the
+  // user only ever receives rows where recipient_id = their own id.
   useEffect(() => {
     if (!user || isDemoMode) return
 
     const supabase = createClient()
-
     const channel = supabase
-      .channel("notifications-realtime")
+      .channel(`notifications:${user.id}`)
       .on(
         "postgres_changes",
         {
           event: "INSERT",
           schema: "public",
-          table: "db_notifications",
-          filter: `user_id=eq.${user.id}`,
+          table: "notifications",
+          filter: `recipient_id=eq.${user.id}`,
         },
         (payload) => {
-          const newNotification = payload.new as DbNotification
-          setNotifications((prev) => [newNotification, ...prev].slice(0, 50))
-          setUnreadCount((prev) => prev + 1)
+          const next = toAppNotification(payload.new as NotificationRow)
+          setNotifications((prev) =>
+            prev.some((n) => n.id === next.id)
+              ? prev
+              : [next, ...prev].slice(0, 50),
+          )
+          if (!next.read) setUnreadCount((prev) => prev + 1)
+        },
+      )
+      .on(
+        "postgres_changes",
+        {
+          event: "UPDATE",
+          schema: "public",
+          table: "notifications",
+          filter: `recipient_id=eq.${user.id}`,
+        },
+        (payload) => {
+          const next = toAppNotification(payload.new as NotificationRow)
+          setNotifications((prev) => {
+            const updated = prev.map((n) => (n.id === next.id ? next : n))
+            setUnreadCount(updated.filter((n) => !n.read).length)
+            return updated
+          })
         },
       )
       .subscribe()
@@ -190,30 +149,38 @@ export function useRealtimeNotifications() {
     }
   }, [user, isDemoMode])
 
-  const markAsRead = useCallback(async (id: string) => {
-    if (!isDemoMode && user) {
-      const supabase = createClient()
-      await supabase.from("db_notifications").update({ read: true }).eq("id", id)
-    }
-
-    setNotifications((prev) =>
-      prev.map((n) => (n.id === id ? { ...n, read: true } : n)),
-    )
-    setUnreadCount((prev) => Math.max(0, prev - 1))
-  }, [user, isDemoMode])
+  const markAsRead = useCallback(
+    async (id: string) => {
+      setNotifications((prev) => {
+        const updated = prev.map((n) =>
+          n.id === id ? { ...n, read: true } : n,
+        )
+        setUnreadCount(updated.filter((n) => !n.read).length)
+        return updated
+      })
+      if (!isDemoMode && user) {
+        const supabase = createClient()
+        await supabase
+          .from("notifications")
+          .update({ read_at: new Date().toISOString() })
+          .eq("id", id)
+          .is("read_at", null)
+      }
+    },
+    [user, isDemoMode],
+  )
 
   const markAllAsRead = useCallback(async () => {
+    setNotifications((prev) => prev.map((n) => ({ ...n, read: true })))
+    setUnreadCount(0)
     if (!isDemoMode && user) {
       const supabase = createClient()
       await supabase
-        .from("db_notifications")
-        .update({ read: true })
-        .eq("user_id", user.id)
-        .eq("read", false)
+        .from("notifications")
+        .update({ read_at: new Date().toISOString() })
+        .eq("recipient_id", user.id)
+        .is("read_at", null)
     }
-
-    setNotifications((prev) => prev.map((n) => ({ ...n, read: true })))
-    setUnreadCount(0)
   }, [user, isDemoMode])
 
   return { notifications, unreadCount, loading, markAsRead, markAllAsRead }
