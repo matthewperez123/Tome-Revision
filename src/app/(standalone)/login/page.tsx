@@ -9,11 +9,21 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { createClient } from "@/lib/supabase/client"
 
+/**
+ * Only follow same-origin relative targets (a single leading "/") so a crafted
+ * ?redirect= can't bounce the user to another site after sign-in.
+ */
+function safeRedirectTarget(raw: string | null): string {
+  if (raw && raw.startsWith("/") && !raw.startsWith("//")) return raw
+  return "/dashboard"
+}
+
 function LoginContent() {
   const router = useRouter()
   const params = useSearchParams()
   const supabase = createClient()
   const initialError = params.get("error")
+  const redirectTo = safeRedirectTarget(params.get("redirect"))
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [showPassword, setShowPassword] = useState(false)
@@ -37,7 +47,7 @@ function LoginContent() {
       return
     }
 
-    router.push("/dashboard")
+    router.push(redirectTo)
     router.refresh()
   }
 

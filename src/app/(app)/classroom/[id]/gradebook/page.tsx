@@ -2,14 +2,14 @@
 
 import { use, useCallback, useEffect, useMemo, useState, useTransition } from "react"
 import Link from "next/link"
-import { ChevronLeft, GraduationCap } from "lucide-react"
+import { ChevronLeft, Download, GraduationCap } from "lucide-react"
 import { toast } from "sonner"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { useAuth } from "@/hooks/use-auth"
 import { createClient } from "@/lib/supabase/client"
-import { manualGrade, overrideGrade } from "@/lib/actions/grades"
+import { gradeSubmission } from "@/lib/actions/grades"
 
 /** One row of the classroom_gradebook RPC — a single (assignment, student) cell. */
 interface GradebookRow {
@@ -148,6 +148,68 @@ export default function GradebookPage({
     return map
   }, [rows])
 
+  // Per-assignment average % (over graded/scored cells only) + overall class
+  // average across every scored cell.
+  const { assignmentAvg, classAvg } = useMemo(() => {
+    const byAssignment = new Map<string, number | null>()
+    let classSum = 0
+    let classCount = 0
+    for (const a of assignments) {
+      let sum = 0
+      let count = 0
+      for (const s of students) {
+        const cell = cellMap.get(`${a.id}:${s.id}`)
+        if (cell?.score != null) {
+          const max = cell.max_score ?? a.points ?? 100
+          const pct = max > 0 ? (cell.score / max) * 100 : 0
+          sum += pct
+          count += 1
+          classSum += pct
+          classCount += 1
+        }
+      }
+      byAssignment.set(a.id, count > 0 ? Math.round(sum / count) : null)
+    }
+    return {
+      assignmentAvg: byAssignment,
+      classAvg: classCount > 0 ? Math.round(classSum / classCount) : null,
+    }
+  }, [assignments, students, cellMap])
+
+  const exportCsv = useCallback(() => {
+    const esc = (v: string | number | null) => {
+      const s = v == null ? "" : String(v)
+      return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s
+    }
+    const header = ["Student", "Username", ...assignments.map((a) => `${a.title} (/${a.points})`)]
+    const lines = [header.map(esc).join(",")]
+    for (const s of students) {
+      const cells = assignments.map((a) => {
+        const cell = cellMap.get(`${a.id}:${s.id}`)
+        return cell?.score != null ? cell.score : ""
+      })
+      lines.push([esc(s.name), esc(s.username ?? ""), ...cells.map(esc)].join(","))
+    }
+    lines.push(
+      [
+        esc("Average %"),
+        esc(""),
+        ...assignments.map((a) => {
+          const avg = assignmentAvg.get(a.id)
+          return esc(avg == null ? "" : `${avg}%`)
+        }),
+      ].join(","),
+    )
+    const blob = new Blob([lines.join("\n")], { type: "text/csv;charset=utf-8" })
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement("a")
+    link.href = url
+    const safeName = (classroomName || "gradebook").replace(/[^a-z0-9]+/gi, "-").toLowerCase()
+    link.download = `${safeName}-gradebook.csv`
+    link.click()
+    URL.revokeObjectURL(url)
+  }, [assignments, students, cellMap, assignmentAvg, classroomName])
+
   // ── Renders ─────────────────────────────────────────────────────────────
 
   if (allowed === null || loading) {
@@ -183,17 +245,13 @@ export default function GradebookPage({
       toast.error("Enter a number")
       return
     }
-    // Override when a manual grade already exists; otherwise create one.
-    const isOverride = rows.some(
-      (r) => r.submission_id === editingCell.submissionId && r.source === "manual",
-    )
-
     startTransition(async () => {
-      const result = isOverride
-        ? await overrideGrade({ submissionId: editingCell.submissionId, score })
-        : await manualGrade({ submissionId: editingCell.submissionId, score })
+      const result = await gradeSubmission({
+        submissionId: editingCell.submissionId,
+        score,
+      })
       if (result.ok) {
-        toast.success(isOverride ? "Grade updated" : "Grade saved")
+        toast.success(result.data.wasRegrade ? "Grade updated" : "Grade saved")
         setEditingCell(null)
         await fetchAll()
       } else {
@@ -212,7 +270,7 @@ export default function GradebookPage({
       </Link>
 
       <BlurFade delay={0.04} inView>
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-3">
           <GraduationCap className="size-5 text-indigo-500" />
           <h1
             className="font-serif text-xl font-semibold tracking-tight md:text-2xl"
@@ -220,6 +278,21 @@ export default function GradebookPage({
           >
             Gradebook
           </h1>
+          {classAvg != null && (
+            <span className="rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium text-muted-foreground">
+              Class average {classAvg}%
+            </span>
+          )}
+          {students.length > 0 && assignments.length > 0 && (
+            <Button
+              variant="outline"
+              size="sm"
+              className="ml-auto gap-1.5"
+              onClick={exportCsv}
+            >
+              <Download className="size-3.5" /> Export CSV
+            </Button>
+          )}
         </div>
       </BlurFade>
 
@@ -368,6 +441,25 @@ export default function GradebookPage({
                   </tr>
                 ))}
               </tbody>
+              <tfoot className="border-t border-border bg-muted/30">
+                <tr>
+                  <td className="sticky left-0 z-10 bg-muted/30 px-3 py-2 text-xs font-semibold">
+                    Average
+                  </td>
+                  {assignments.map((a) => {
+                    const avg = assignmentAvg.get(a.id)
+                    return (
+                      <td key={a.id} className="px-3 py-2 text-xs font-semibold tabular-nums">
+                        {avg == null ? (
+                          <span className="text-muted-foreground/40">—</span>
+                        ) : (
+                          `${avg}%`
+                        )}
+                      </td>
+                    )
+                  })}
+                </tr>
+              </tfoot>
             </table>
           </div>
         </BlurFade>

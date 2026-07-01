@@ -23,7 +23,6 @@ import { getBook, getBooks } from "@/lib/content"
 import { ClassicsCover } from "@/components/tome/ClassicsCover"
 import { getAllBookProgress } from "@/lib/book-progress"
 import { CHARACTERS_BY_BOOK } from "@/data/character-avatars"
-import { SectionVirgilPanel } from "@/components/virgil/SectionVirgilPanel"
 import { cn } from "@/lib/utils"
 
 // ── Helpers ───────────────────────────────────────────────────────────────
@@ -544,13 +543,6 @@ export default function ShelvesPage() {
             <p className="text-sm text-muted-foreground mt-0.5">Your personal reading collection</p>
           </div>
         </div>
-
-        {/* Virgil search assistant */}
-        <SectionVirgilPanel
-          title="Curate your shelves with Virgil"
-          placeholder="Ask Virgil what to read next…"
-          hint="Tell me a shelf you want to grow, and I'll suggest titles worth adding."
-        />
 
         {/* Tabs */}
         <div className="flex gap-1 p-1 bg-muted rounded-xl overflow-x-auto">

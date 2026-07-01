@@ -8,8 +8,6 @@ import {
   Sparkles, Flame, BookOpen, Bookmark, ChevronRight,
   Target, Share2, BarChart2, LogOut, Check, Pencil,
 } from "lucide-react"
-import { VirgilReflection } from "@/components/tome/virgil-reflection"
-import { GuidedReadingProfileSection } from "@/components/virgil/guided/guided-reading-profile-section"
 import { getAllBookProgress } from "@/lib/book-progress"
 import { getBooks } from "@/lib/content"
 import { TRADITION_COLORS } from "@/components/tome/book-card"
@@ -27,7 +25,7 @@ import { useAuth } from "@/hooks/use-auth"
 import { useEntitlement } from "@/hooks/use-entitlement"
 import { useEconomy } from "@/components/tome/economy-provider"
 import { CheckoutButton } from "@/components/pricing/CheckoutButton"
-import { SOLO_ANNUAL_PRICE } from "@/lib/pricing"
+import { SOLO_ANNUAL_PRICE } from "@/lib/marketing/plans"
 import { getAllAchievements } from "@/data/achievements"
 import { loadAchievementState } from "@/lib/achievements/engine"
 import { RARITY_WAX_COLORS } from "@/types/achievement"
@@ -87,7 +85,7 @@ export default function ProfilePage() {
   async function openBillingPortal() {
     setBillingLoading(true)
     try {
-      const res = await fetch("/api/billing/portal", { method: "POST" })
+      const res = await fetch("/api/stripe/portal", { method: "POST" })
       const data = (await res.json()) as { url?: string; error?: string }
       if (res.ok && data.url) {
         window.location.href = data.url
@@ -381,9 +379,6 @@ export default function ProfilePage() {
             </div>
           </section>
         </BlurFade>
-
-        {/* ── Virgil Reflection ─────────────────── */}
-        <VirgilReflection type="progress" context={{ booksRead: Object.keys(allProgress), chaptersCompleted: totalChapters, streakDays: streak }} />
 
         {/* ── 3. Tradition Progress ─────────────── */}
         {traditionProgress.length > 0 && (
@@ -715,11 +710,6 @@ export default function ProfilePage() {
               </button>
             </div>
           </section>
-        </BlurFade>
-
-        {/* ── Reading with Virgil (guided session reflections) ── */}
-        <BlurFade delay={0.26} inView>
-          <GuidedReadingProfileSection />
         </BlurFade>
 
         {/* ── 8. Settings ───────────────────────── */}

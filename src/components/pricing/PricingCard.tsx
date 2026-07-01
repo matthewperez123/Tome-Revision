@@ -1,7 +1,7 @@
 import { Check } from "lucide-react"
 import Link from "next/link"
 import { CheckoutButton } from "./CheckoutButton"
-import type { BillingPeriod } from "@/lib/pricing"
+import type { BillingPeriod } from "@/lib/marketing/plans"
 import type { PaidTier } from "@/lib/stripe/plans"
 
 export interface PricingCardProps {

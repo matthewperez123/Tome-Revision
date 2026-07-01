@@ -7,12 +7,17 @@
  * launch, never invented beyond the brief.
  */
 import {
-  CANONICAL_BOOK_COUNT,
   HOUSEHOLD_ENABLED,
   HOUSEHOLD_SEATS,
+  READER_TRIAL_COPY,
   SOLO_ANNUAL_PRICE,
-  TRADITIONS_LABEL,
-} from "./pricing"
+} from "./marketing/plans"
+import {
+  catalogSummary,
+  formatBookCount,
+  formatTraditionCount,
+  type CatalogStats,
+} from "./marketing/catalog-stats"
 
 export interface FaqItem {
   /** Stable slug for deep links, e.g. /faq#who-is-virgil. */
@@ -29,7 +34,13 @@ export interface FaqCategory {
   items: FaqItem[]
 }
 
-export const faqCategories: FaqCategory[] = [
+/**
+ * FAQ copy is a function of the live catalog stats so the book/tradition
+ * numbers never drift from the homepage and pricing surfaces. Pass the
+ * server-resolved `CatalogStats`; everything else is static copy.
+ */
+export function getFaqCategories(stats: CatalogStats): FaqCategory[] {
+  return [
   {
     id: "readers",
     label: "Reading & getting started",
@@ -58,7 +69,9 @@ export const faqCategories: FaqCategory[] = [
       {
         id: "how-many-books",
         q: "How many books are in the library?",
-        a: `${CANONICAL_BOOK_COUNT} books spanning every major literary tradition — roughly three thousand years and every continent, browsable by tradition on a single map.`,
+        a: `${formatBookCount(stats.bookCount)} books spanning ${formatTraditionCount(
+          stats.traditionCount,
+        )} — roughly three thousand years and every continent, browsable by tradition on a single map.`,
       },
       {
         id: "trials-wisdom-flames-seals",
@@ -73,7 +86,9 @@ export const faqCategories: FaqCategory[] = [
       {
         id: "read-offline",
         q: "Can I read offline?",
-        a: "Offline reading is included on Pro, Scholar, and Household.",
+        a: HOUSEHOLD_ENABLED
+          ? "Offline reading is included on Solo and Family."
+          : "Offline reading is included on Solo.",
         confirm: true,
       },
       {
@@ -101,7 +116,7 @@ export const faqCategories: FaqCategory[] = [
       {
         id: "free-trial",
         q: "Is there a free trial?",
-        a: "Yes. Every paid plan starts with a 7-day free trial of Pro. Cancel before it ends and you won't be charged.",
+        a: `Yes — ${READER_TRIAL_COPY}`,
       },
       {
         id: "cancel-anytime",
@@ -167,14 +182,13 @@ export const faqCategories: FaqCategory[] = [
       {
         id: "lms-integration",
         q: "Does Tome integrate with my LMS or Google Classroom?",
-        a: "Not yet — gradebook and LMS export are planned for the School plan, and automatic roster sync with Clever, ClassLink, and Google Classroom, plus single sign-on, is on the roadmap for District. Today you can run a full classroom with join codes, assignments, and the live gradebook.",
+        a: "Not yet — LMS export is on the roadmap for the School plan, and automatic roster sync with Clever, ClassLink, and Google Classroom, plus single sign-on, is on the roadmap for District. Today you can run a full classroom with join codes, assignments, and the live gradebook.",
         confirm: true,
       },
       {
         id: "student-data-safe",
         q: "Is student data safe?",
-        a: "Protecting student data is a priority. We follow FERPA- and COPPA-aligned practices and never sell student data.",
-        confirm: true,
+        a: "Protecting student data is a priority. We follow FERPA- and COPPA-aligned practices, never sell student data, and never use it for advertising. See our Privacy & Security for Schools page for what we collect, our sub-processors, data deletion, and a DPA for schools.",
       },
       {
         id: "bring-tome-to-school",
@@ -195,7 +209,9 @@ export const faqCategories: FaqCategory[] = [
       {
         id: "how-books-are-chosen",
         q: "How do you decide which books are chosen for readers?",
-        a: `Every title belongs to the established canon of world literature, chosen for its lasting influence across traditions — and every book is in the public domain, sourced from high-quality digital editions. The library spans ${CANONICAL_BOOK_COUNT} works across ${TRADITIONS_LABEL}, and Virgil can suggest where to start based on what you already love.`,
+        a: `Every title belongs to the established canon of world literature, chosen for its lasting influence across traditions — and every book is in the public domain, sourced from high-quality digital editions. The library spans ${catalogSummary(
+          stats,
+        )}, and Virgil can suggest where to start based on what you already love.`,
       },
       {
         id: "religious-affiliation",
@@ -212,12 +228,12 @@ export const faqCategories: FaqCategory[] = [
       {
         id: "how-to-get-support",
         q: "How do I get support?",
-        a: "Reach a person anytime through the messenger in the corner of the app — real help, not just docs.",
-        confirm: true,
+        a: "Reach a real person from the Support link in the app, or email support@usetome.app — real help, not just docs.",
       },
     ],
   },
-]
+  ]
+}
 
 /** Strip markdown/HTML so JSON-LD answer strings are plain text. */
 export function plainText(input: string): string {
@@ -229,11 +245,11 @@ export function plainText(input: string): string {
 }
 
 /** schema.org FAQPage structured data generated from the visible copy. */
-export function faqJsonLd() {
+export function faqJsonLd(categories: FaqCategory[]) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqCategories.flatMap((category) =>
+    mainEntity: categories.flatMap((category) =>
       category.items.map((item) => ({
         "@type": "Question",
         name: plainText(item.q),

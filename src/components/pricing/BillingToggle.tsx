@@ -1,6 +1,6 @@
 "use client"
 
-import type { BillingPeriod } from "@/lib/pricing"
+import type { BillingPeriod } from "@/lib/marketing/plans"
 
 interface BillingToggleProps {
   value: BillingPeriod

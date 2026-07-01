@@ -173,6 +173,14 @@ export function NotificationBell() {
                 ))
               )}
             </div>
+
+            <Link
+              href="/notifications"
+              onClick={() => setIsOpen(false)}
+              className="block border-t border-border px-4 py-2.5 text-center text-xs font-medium text-muted-foreground transition-colors hover:bg-muted/50 hover:text-foreground"
+            >
+              See all notifications
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>

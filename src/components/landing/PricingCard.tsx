@@ -10,6 +10,8 @@ interface PricingCardProps {
   ctaLabel: string
   ctaHref: string
   featured?: boolean
+  /** Badge copy (e.g. "Most popular") — sourced from the plan, not hardcoded. */
+  badge?: string
 }
 
 const baseBtn =
@@ -24,6 +26,7 @@ export function PricingCard({
   ctaLabel,
   ctaHref,
   featured = false,
+  badge,
 }: PricingCardProps) {
   return (
     <div
@@ -33,9 +36,9 @@ export function PricingCard({
           : "border border-border bg-card"
       }`}
     >
-      {featured && (
+      {featured && badge && (
         <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#D4AF37] text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap">
-          Most popular
+          {badge}
         </span>
       )}
 

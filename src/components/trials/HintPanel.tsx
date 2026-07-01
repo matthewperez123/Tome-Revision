@@ -6,10 +6,10 @@ import { IRIDESCENT } from "@/lib/semester-plan/rubric"
 import type { Hint } from "@/lib/quiz-hints"
 
 /**
- * Single-hint affordance — a Virgil surface, so it carries the iridescent
- * treatment (reserved for Virgil). Each question has one hint; revealing it
- * spends one from the attempt-wide hint pool (a consumable budget, like hearts).
- * MC distractor elimination is driven separately by `revealed` in the parent.
+ * Single-hint affordance — a precomputed study aid rendered plainly as "Hint".
+ * Each question has one hint; revealing it spends one from the attempt-wide hint
+ * pool (a consumable budget, like hearts). MC distractor elimination is driven
+ * separately by `revealed` in the parent.
  *
  * Hint text is Literata (--font-serif); it is reading. Labels use the app sans.
  */

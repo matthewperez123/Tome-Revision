@@ -3,13 +3,11 @@
 /**
  * ReaderHighlights — minimal text-selection highlight flow for the reader.
  *
- * On selecting text inside `[data-reader-text]`, a small popover offers two
- * actions:
- *   • Highlight  — wraps the selection in <mark class="tome-highlight">
- *                  (warm-yellow background, black text) and persists it to
- *                  Supabase scoped to user + book + chapter + character range.
- *   • Ask Virgil — opens the existing Virgil chat with the selected passage
- *                  seeded as page context (reuses useVirgil()).
+ * On selecting text inside `[data-reader-text]`, a small popover offers a
+ * colour dot per RUBRIC hue that wraps the selection in
+ * <mark class="tome-highlight"> and persists it to Supabase scoped to
+ * user + book + chapter + character range. Clicking a saved highlight opens an
+ * editor to add a note or share it to a classroom.
  *
  * Saved highlights are re-applied to the rendered chapter on load. Anchoring
  * uses character offsets into the chapter's concatenated text content, which
@@ -19,23 +17,24 @@
 
 import { useCallback, useEffect, useRef, useState } from "react"
 import { createClient } from "@/lib/supabase/client"
-import { useVirgil } from "@/lib/virgil-context"
 import {
   listMyClassrooms,
   type MyClassroomItem,
 } from "@/lib/actions/classrooms"
 import {
-  shareHighlight,
-  unshareHighlight,
+  createHighlight,
+  deleteHighlight,
+  toggleShared,
   updateHighlightNote,
 } from "@/lib/actions/highlights"
 
 interface ReaderHighlightsProps {
   bookId: string
-  bookTitle: string
-  bookAuthor: string
   chapterIndex: number
-  chapterTitle: string
+  // When the reader is opened inside a classroom, classmates' shared
+  // highlights for this (book, chapter, classroom) are also painted — visually
+  // distinct from the reader's own marks — and kept live via realtime.
+  classroomId?: string | null
 }
 
 interface HighlightRow {
@@ -46,6 +45,16 @@ interface HighlightRow {
   note: string | null
   shared: boolean
   classroom_id: string | null
+}
+
+/** A classmate's shared highlight, painted as a peer annotation. */
+interface PeerHighlightRow {
+  id: string
+  user_id: string
+  start_offset: number
+  end_offset: number
+  note: string | null
+  authorName: string
 }
 
 interface EditorState {
@@ -64,6 +73,14 @@ interface PopoverState {
 
 const READER_SELECTOR = "[data-reader-text]"
 const DEFAULT_COLOR = "#FFE08A"
+
+// RUBRIC highlight palette offered in the selection popover.
+const HIGHLIGHT_COLORS: { name: string; hex: string }[] = [
+  { name: "Lapis", hex: "#2A4B8D" },
+  { name: "Gold", hex: "#C8A24B" },
+  { name: "Verdigris", hex: "#2E7D6F" },
+  { name: "Vermilion", hex: "#C8553D" },
+]
 
 // ── Offset / DOM helpers ──────────────────────────────────────────────
 
@@ -134,16 +151,78 @@ function applyHighlight(
   }
 }
 
+/** Initials for the peer-highlight hover label. */
+function initialsOf(name: string): string {
+  const parts = name.trim().split(/\s+/).filter(Boolean)
+  if (parts.length === 0) return "?"
+  if (parts.length === 1) return parts[0]!.slice(0, 2).toUpperCase()
+  return (parts[0]![0]! + parts[parts.length - 1]![0]!).toUpperCase()
+}
+
+/**
+ * Paint a classmate's shared highlight as a thin dotted underline (never a
+ * fill — that's reserved for the reader's own marks, and never iridescent —
+ * that's Virgil's). The author's name + note surface on hover via `title`.
+ */
+function applyPeerHighlight(root: HTMLElement, peer: PeerHighlightRow) {
+  const { id, start_offset: start, end_offset: end } = peer
+  if (end <= start) return
+  if (root.querySelector(`mark.tome-shared-annotation[data-shared-id="${id}"]`)) return
+
+  const label = peer.note
+    ? `${peer.authorName} (${initialsOf(peer.authorName)}) — ${peer.note}`
+    : `${peer.authorName} (${initialsOf(peer.authorName)})`
+
+  const targets: { node: Text; from: number; to: number }[] = []
+  let acc = 0
+  for (const node of textNodesIn(root)) {
+    const len = node.nodeValue?.length ?? 0
+    const nodeStart = acc
+    const nodeEnd = acc + len
+    acc = nodeEnd
+    if (nodeEnd <= start || nodeStart >= end) continue
+    // Don't wrap inside the reader's own highlight mark.
+    if (node.parentElement?.closest("mark.tome-highlight")) continue
+    const from = Math.max(start, nodeStart) - nodeStart
+    const to = Math.min(end, nodeEnd) - nodeStart
+    if (to > from) targets.push({ node, from, to })
+  }
+
+  for (let i = targets.length - 1; i >= 0; i--) {
+    const { node, from, to } = targets[i]
+    const range = document.createRange()
+    range.setStart(node, from)
+    range.setEnd(node, to)
+    const mark = document.createElement("mark")
+    mark.className = "tome-shared-annotation"
+    mark.dataset.sharedId = id
+    mark.title = label
+    try {
+      range.surroundContents(mark)
+    } catch {
+      // Crossed a non-text boundary in this slice; skip it.
+    }
+  }
+}
+
+/** Unwrap every <mark> matching `selector` under `root`, restoring the text. */
+function unwrapMarks(root: HTMLElement, selector: string) {
+  root.querySelectorAll<HTMLElement>(selector).forEach((mark) => {
+    const parent = mark.parentNode
+    if (!parent) return
+    while (mark.firstChild) parent.insertBefore(mark.firstChild, mark)
+    parent.removeChild(mark)
+    parent.normalize()
+  })
+}
+
 // ── Component ─────────────────────────────────────────────────────────
 
 export function ReaderHighlights({
   bookId,
-  bookTitle,
-  bookAuthor,
   chapterIndex,
-  chapterTitle,
+  classroomId,
 }: ReaderHighlightsProps) {
-  const { openChat, setPageContext, addMessage } = useVirgil()
   const [popover, setPopover] = useState<PopoverState | null>(null)
   const [editor, setEditor] = useState<EditorState | null>(null)
   const [classrooms, setClassrooms] = useState<MyClassroomItem[] | null>(null)
@@ -151,6 +230,8 @@ export function ReaderHighlights({
   // Persisted own-highlight rows for this chapter, keyed by id, so a click on
   // a <mark> can open the note/share editor with the current state.
   const ownRowsRef = useRef<Map<string, HighlightRow>>(new Map())
+  // Classmates' shared highlights painted in this chapter (classroom only).
+  const peerRowsRef = useRef<Map<string, PeerHighlightRow>>(new Map())
 
   // Resolve the signed-in user once.
   useEffect(() => {
@@ -209,6 +290,162 @@ export function ReaderHighlights({
       cancelled = true
     }
   }, [bookId, chapterIndex])
+
+  // ── Classmates' shared highlights + realtime fanout (classroom only) ──
+  // Paints peer annotations for this (book, chapter, classroom) and keeps them
+  // live: subscribes to highlights changes filtered by classroom_id and
+  // adds/removes marks as classmates share/unshare. RLS (highlights_shared_read)
+  // means we only ever receive rows we're allowed to see.
+  useEffect(() => {
+    if (!classroomId) return
+    let cancelled = false
+    const supabase = createClient()
+
+    // Paint once the reader HTML has mounted (retry until it has).
+    function paintWhenReady(peer: PeerHighlightRow) {
+      let attempts = 0
+      const tick = () => {
+        if (cancelled) return
+        const root = document.querySelector<HTMLElement>(READER_SELECTOR)
+        if (root && root.textContent && root.textContent.length > 0) {
+          applyPeerHighlight(root, peer)
+          return
+        }
+        attempts += 1
+        if (attempts > 25) return
+        setTimeout(tick, 80)
+      }
+      tick()
+    }
+
+    function removePeer(id: string) {
+      peerRowsRef.current.delete(id)
+      const root = document.querySelector<HTMLElement>(READER_SELECTOR)
+      if (root) {
+        unwrapMarks(root, `mark.tome-shared-annotation[data-shared-id="${id}"]`)
+      }
+    }
+
+    async function resolveName(userId: string): Promise<string> {
+      const { data } = await supabase
+        .from("profiles")
+        .select("display_name")
+        .eq("id", userId)
+        .maybeSingle<{ display_name: string | null }>()
+      return data?.display_name ?? "Classmate"
+    }
+
+    async function load() {
+      const { data: userData } = await supabase.auth.getUser()
+      const me = userData.user?.id ?? null
+      userIdRef.current = me
+
+      const { data, error } = await supabase
+        .from("highlights")
+        .select("id, user_id, start_offset, end_offset, note")
+        .eq("classroom_id", classroomId)
+        .eq("book_id", bookId)
+        .eq("chapter_index", chapterIndex)
+        .eq("shared", true)
+      if (cancelled || error || !data) return
+
+      const others = (
+        data as {
+          id: string
+          user_id: string
+          start_offset: number
+          end_offset: number
+          note: string | null
+        }[]
+      ).filter((h) => h.user_id !== me)
+      if (others.length === 0) return
+
+      // Resolve author display names in one batch for hover attribution.
+      const ids = [...new Set(others.map((h) => h.user_id))]
+      const { data: profiles } = await supabase
+        .from("profiles")
+        .select("id, display_name")
+        .in("id", ids)
+      const nameById = new Map(
+        (
+          (profiles as { id: string; display_name: string | null }[] | null) ?? []
+        ).map((p) => [p.id, p.display_name ?? "Classmate"]),
+      )
+
+      for (const h of others) {
+        const peer: PeerHighlightRow = {
+          ...h,
+          authorName: nameById.get(h.user_id) ?? "Classmate",
+        }
+        peerRowsRef.current.set(peer.id, peer)
+        paintWhenReady(peer)
+      }
+    }
+
+    load()
+
+    const channel = supabase
+      .channel(`highlights:classroom:${classroomId}`)
+      .on(
+        "postgres_changes",
+        {
+          event: "*",
+          schema: "public",
+          table: "highlights",
+          filter: `classroom_id=eq.${classroomId}`,
+        },
+        (payload) => {
+          if (cancelled) return
+          const next = payload.new as {
+            id?: string
+            user_id?: string
+            book_id?: string
+            chapter_index?: number
+            start_offset?: number
+            end_offset?: number
+            note?: string | null
+            shared?: boolean
+          } | null
+          const prev = payload.old as { id?: string } | null
+          const id = next?.id ?? prev?.id
+          if (!id) return
+
+          // Removal: deleted, or updated to no-longer-shared.
+          if (payload.eventType === "DELETE" || next?.shared !== true) {
+            removePeer(id)
+            return
+          }
+          // Only this chapter's passages, never our own row.
+          if (next.book_id !== bookId || next.chapter_index !== chapterIndex) return
+          if (next.user_id === userIdRef.current) return
+
+          // (Re)paint — strip any stale mark first (e.g. offsets changed).
+          removePeer(id)
+          void resolveName(next.user_id!).then((authorName) => {
+            if (cancelled) return
+            const peer: PeerHighlightRow = {
+              id,
+              user_id: next.user_id!,
+              start_offset: next.start_offset!,
+              end_offset: next.end_offset!,
+              note: next.note ?? null,
+              authorName,
+            }
+            peerRowsRef.current.set(peer.id, peer)
+            paintWhenReady(peer)
+          })
+        },
+      )
+      .subscribe()
+
+    return () => {
+      cancelled = true
+      const root = document.querySelector<HTMLElement>(READER_SELECTOR)
+      if (root) unwrapMarks(root, "mark.tome-shared-annotation")
+      peerRowsRef.current.clear()
+      void supabase.removeChannel(channel)
+    }
+  }, [classroomId, bookId, chapterIndex])
 
   // Show the popover when there is a non-empty selection inside the reader.
   const refreshPopover = useCallback(() => {
@@ -283,58 +520,41 @@ export function ReaderHighlights({
     }
   }, [editor, classrooms])
 
-  const handleHighlight = useCallback(async () => {
-    if (!popover) return
-    const root = document.querySelector<HTMLElement>(READER_SELECTOR)
-    if (!root) return
+  const handleHighlight = useCallback(
+    async (color: string) => {
+      if (!popover) return
+      const root = document.querySelector<HTMLElement>(READER_SELECTOR)
+      if (!root) return
 
-    const tempId = `pending-${Date.now()}`
-    applyHighlight(root, popover.start, popover.end, DEFAULT_COLOR, tempId)
-    window.getSelection()?.removeAllRanges()
-    setPopover(null)
+      const tempId = `pending-${Date.now()}`
+      applyHighlight(root, popover.start, popover.end, color, tempId)
+      const text = popover.text
+      const start = popover.start
+      const end = popover.end
+      window.getSelection()?.removeAllRanges()
+      setPopover(null)
 
-    const userId = userIdRef.current
-    if (!userId) return
-
-    const { data, error } = await createClient()
-      .from("highlights")
-      .insert({
-        user_id: userId,
-        book_id: bookId,
-        chapter_index: chapterIndex,
-        selected_text: popover.text,
-        start_offset: popover.start,
-        end_offset: popover.end,
-        color: DEFAULT_COLOR,
+      const res = await createHighlight({
+        bookId,
+        chapterIndex,
+        selectedText: text,
+        startOffset: start,
+        endOffset: end,
+        color,
+        note: "",
       })
-      .select("id")
-      .single()
 
-    // Swap the optimistic id for the persisted one so a later reload matches.
-    if (!error && data) {
-      root
-        .querySelectorAll<HTMLElement>(`mark.tome-highlight[data-highlight-id="${tempId}"]`)
-        .forEach((el) => {
-          el.dataset.highlightId = data.id
-        })
-    }
-  }, [popover, bookId, chapterIndex])
-
-  const handleAskVirgil = useCallback(() => {
-    if (!popover) return
-    const passage = popover.text
-    setPageContext({
-      page: "reader",
-      bookTitle,
-      bookAuthor,
-      chapterTitle,
-      chapterContent: passage,
-    })
-    addMessage("user", `About this passage:\n\n"${passage}"`)
-    openChat()
-    window.getSelection()?.removeAllRanges()
-    setPopover(null)
-  }, [popover, bookTitle, bookAuthor, chapterTitle, setPageContext, addMessage, openChat])
+      // Swap the optimistic id for the persisted one so a later reload matches.
+      if (res.ok) {
+        root
+          .querySelectorAll<HTMLElement>(`mark.tome-highlight[data-highlight-id="${tempId}"]`)
+          .forEach((el) => {
+            el.dataset.highlightId = res.data.id
+          })
+      }
+    },
+    [popover, bookId, chapterIndex],
+  )
 
   // ── Editor (note + share) for own highlights ──────────────────────────
 
@@ -358,7 +578,7 @@ export function ReaderHighlights({
   const handleShare = useCallback(
     async (id: string, classroomId: string) => {
       patchRow(id, { shared: true, classroom_id: classroomId })
-      const res = await shareHighlight({ highlightId: id, classroomId })
+      const res = await toggleShared({ id, shared: true, classroomId })
       if (!res.ok) patchRow(id, { shared: false, classroom_id: null })
     },
     [patchRow],
@@ -366,8 +586,9 @@ export function ReaderHighlights({
 
   const handleUnshare = useCallback(
     async (id: string) => {
-      patchRow(id, { shared: false, classroom_id: null })
-      await unshareHighlight({ highlightId: id })
+      // Keep classroom_id (see toggleShared) — only the shared flag changes.
+      patchRow(id, { shared: false })
+      await toggleShared({ id, shared: false })
     },
     [patchRow],
   )
@@ -385,7 +606,7 @@ export function ReaderHighlights({
       })
     ownRowsRef.current.delete(id)
     setEditor(null)
-    await createClient().from("highlights").delete().eq("id", id)
+    await deleteHighlight({ id })
   }, [])
 
   if (!popover && !editor) return null
@@ -405,31 +626,25 @@ export function ReaderHighlights({
         />
       ) : null}
       {popover ? (
-        <SelectionPopover
-          popover={popover}
-          onHighlight={handleHighlight}
-          onAskVirgil={handleAskVirgil}
-        />
+        <SelectionPopover popover={popover} onHighlight={handleHighlight} />
       ) : null}
     </>
   )
 }
 
-// ── Selection popover (Highlight + Ask Virgil) ────────────────────────
+// ── Selection popover (colour dots) ───────────────────────────────────
 
 function SelectionPopover({
   popover,
   onHighlight,
-  onAskVirgil,
 }: {
   popover: PopoverState
-  onHighlight: () => void
-  onAskVirgil: () => void
+  onHighlight: (color: string) => void
 }) {
   return (
     <div
       role="menu"
-      aria-label="Selection actions"
+      aria-label="Highlight colours"
       style={{
         position: "fixed",
         top: popover.top,
@@ -443,31 +658,35 @@ function SelectionPopover({
       <div
         style={{
           display: "flex",
-          gap: 2,
-          padding: 4,
+          alignItems: "center",
+          gap: 6,
+          padding: "6px 8px",
           borderRadius: 10,
           background: "var(--popover, #1a1611)",
           border: "1px solid var(--border, rgba(0,0,0,0.12))",
           boxShadow: "0 6px 20px rgba(0,0,0,0.22)",
         }}
       >
-        <button
-          type="button"
-          onClick={onHighlight}
-          className="reader-highlight-action"
-          style={popoverButtonStyle}
-        >
-          Highlight
-        </button>
-        <span style={{ width: 1, background: "var(--border, rgba(255,255,255,0.15))" }} />
-        <button
-          type="button"
-          onClick={onAskVirgil}
-          className="reader-highlight-action"
-          style={popoverButtonStyle}
-        >
-          Ask Virgil
-        </button>
+        <div style={{ display: "flex", gap: 5, padding: "0 2px" }}>
+          {HIGHLIGHT_COLORS.map((c) => (
+            <button
+              key={c.hex}
+              type="button"
+              onClick={() => onHighlight(c.hex)}
+              title={`Highlight — ${c.name}`}
+              aria-label={`Highlight in ${c.name}`}
+              style={{
+                width: 16,
+                height: 16,
+                borderRadius: "50%",
+                background: c.hex,
+                border: "1.5px solid rgba(255,255,255,0.6)",
+                cursor: "pointer",
+                padding: 0,
+              }}
+            />
+          ))}
+        </div>
       </div>
     </div>
   )

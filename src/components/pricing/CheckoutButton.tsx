@@ -3,23 +3,28 @@
 import { useState } from "react"
 import { Loader2 } from "lucide-react"
 import { toast } from "sonner"
-import type { BillingPeriod } from "@/lib/pricing"
+import type { BillingPeriod } from "@/lib/marketing/plans"
 import type { PaidTier } from "@/lib/stripe/plans"
 
 interface CheckoutButtonProps {
   tier: PaidTier
   period?: BillingPeriod
+  /** Teacher seats for the School plan (line-item quantity). Ignored otherwise. */
+  seats?: number
   className?: string
   children: React.ReactNode
 }
 
 /**
- * Posts to /api/checkout, then redirects the browser to the Stripe-hosted
- * checkout URL. Shows inline loading + surfaces server errors as a toast.
+ * Posts to /api/stripe/checkout, then redirects the browser to the
+ * Stripe-hosted checkout URL. Sends tier + period (the server resolves the
+ * Stripe price id from env, so price ids never ship to the client); the School
+ * CTA also sends `seats`. Shows inline loading + surfaces errors as a toast.
  */
 export function CheckoutButton({
   tier,
   period = "monthly",
+  seats,
   className,
   children,
 }: CheckoutButtonProps) {
@@ -28,10 +33,10 @@ export function CheckoutButton({
   async function startCheckout() {
     setLoading(true)
     try {
-      const res = await fetch("/api/checkout", {
+      const res = await fetch("/api/stripe/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ tier, period }),
+        body: JSON.stringify({ tier, period, seats }),
       })
       const data = (await res.json()) as { url?: string; error?: string }
       if (!res.ok || !data.url) {

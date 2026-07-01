@@ -1,7 +1,7 @@
 "use client"
 
-import { useState, useCallback } from "react"
-import { useRouter } from "next/navigation"
+import { Suspense, useEffect, useState, useCallback } from "react"
+import { useRouter, useSearchParams } from "next/navigation"
 import { motion } from "framer-motion"
 import { LogIn, Check, AlertTriangle } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -12,7 +12,16 @@ import { lookupClassroomByCode, joinClassroomByCode } from "@/lib/actions/classr
 import Link from "next/link"
 
 export default function JoinClassroomPage() {
+  return (
+    <Suspense fallback={null}>
+      <JoinClassroomInner />
+    </Suspense>
+  )
+}
+
+function JoinClassroomInner() {
   const router = useRouter()
+  const searchParams = useSearchParams()
   const { user } = useAuth()
   const [code, setCode] = useState("")
   const [classroomName, setClassroomName] = useState<string | null>(null)
@@ -42,6 +51,22 @@ export default function JoinClassroomPage() {
     setClassroomName(result.data.name)
     setClassroomId(result.data.id)
   }, [code])
+
+  // Prefill + auto-resolve a code arriving from an invite link (/join?code=).
+  useEffect(() => {
+    const incoming = searchParams.get("code")?.trim().toUpperCase()
+    if (!incoming || !isValidJoinCode(incoming)) return
+    setCode(incoming)
+    void (async () => {
+      const result = await lookupClassroomByCode(incoming)
+      if (result.ok) {
+        setClassroomName(result.data.name)
+        setClassroomId(result.data.id)
+      }
+    })()
+    // Resolve once, on mount / when the query param changes.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchParams])
 
   const handleJoin = useCallback(async () => {
     if (!user || !classroomId) return

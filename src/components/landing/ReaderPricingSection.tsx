@@ -1,13 +1,17 @@
+"use client"
+
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { BlurFade } from "@/components/ui/blur-fade"
-import { READER_TRIAL_COPY, readerPlansForPeriod } from "@/lib/pricing"
+import { READER_TRIAL_COPY, readerPlansForPeriod } from "@/lib/marketing/plans"
+import { useCatalogStats } from "@/lib/marketing/catalog-stats-context"
 import { PricingCard } from "./PricingCard"
 
 // Teaser only — full plans, billing toggle, and comparison live on /pricing.
-// Numbers are sourced from lib/pricing so they never drift.
+// Numbers are sourced from lib/marketing/plans so they never drift.
 export function ReaderPricingSection() {
-  const plans = readerPlansForPeriod("monthly")
+  const stats = useCatalogStats()
+  const plans = readerPlansForPeriod("monthly", stats)
 
   return (
     <section className="bg-muted py-24 px-6 md:px-12">
@@ -38,6 +42,7 @@ export function ReaderPricingSection() {
                   ctaLabel={plan.ctaLabel}
                   ctaHref={plan.ctaHref}
                   featured={plan.featured}
+                  badge={plan.badge}
                 />
               )
             })}

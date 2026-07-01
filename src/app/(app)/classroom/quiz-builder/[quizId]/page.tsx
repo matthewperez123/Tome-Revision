@@ -5,16 +5,21 @@ import { useRouter } from "next/navigation"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import {
-  ArrowLeft, Plus, Trash2, GripVertical, Save, Eye, Sparkles,
-  ChevronDown, ChevronUp, Check, Feather, Clock, Target,
+  ArrowLeft, Plus, Trash2, Save, Eye, Sparkles,
+  ChevronDown, ChevronUp, Check, Feather, Clock, Target, Send, BarChart2,
 } from "lucide-react"
+import { toast } from "sonner"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
 import { getBooks } from "@/lib/content"
+import { publishTeacherQuiz, assignQuiz } from "@/lib/actions/teacher-quizzes"
 
-type QuestionType = "multiple_choice" | "true_false" | "short_answer" | "passage_id" | "vocabulary"
+// Kept as a broad string so Virgil-authored types (multiple_select,
+// vocabulary_in_context, tf_with_reason, fill_blank, free_response, …) round-trip
+// through the editor even though the manual "add" buttons only cover a few.
+type QuestionType = string
 
 interface QuizQuestion {
   id: string
@@ -25,6 +30,49 @@ interface QuizQuestion {
   explanation: string
   points: number
   sort_order: number
+  // Passthrough metadata — Virgil-generated free-response questions carry a
+  // rubric / reference_answer / max_points that MUST survive a save cycle so
+  // they stay auto-gradable. Manually-added questions leave these null.
+  rubric?: unknown
+  reference_answer?: string | null
+  max_points?: number | null
+  difficulty?: string | null
+  category?: string | null
+  hints?: unknown
+  distractor_eliminations?: unknown
+  source_anchor?: unknown
+}
+
+const OPEN_ENDED = new Set(["free_response", "tf_with_reason", "short_answer"])
+
+// Rubric <-> textarea. Virgil authors rubric as
+// { max_points, criteria: [{ name, points, descriptor }] }; teachers edit the
+// criteria as one-line-per-criterion text. Untouched rubrics keep their full
+// object (onChange never fires) so points/descriptors survive a save.
+function rubricToText(rubric: unknown): string {
+  if (rubric == null) return ""
+  if (typeof rubric === "string") return rubric
+  if (Array.isArray(rubric)) {
+    return rubric.map((c) => (typeof c === "string" ? c : String((c as { name?: string; criterion?: string }).name ?? (c as { criterion?: string }).criterion ?? ""))).filter(Boolean).join("\n")
+  }
+  const criteria = (rubric as { criteria?: unknown }).criteria
+  if (Array.isArray(criteria)) {
+    return criteria
+      .map((c) => {
+        if (typeof c === "string") return c
+        const o = c as { name?: string; descriptor?: string }
+        return o.descriptor ? `${o.name ?? ""} — ${o.descriptor}` : (o.name ?? "")
+      })
+      .filter(Boolean)
+      .join("\n")
+  }
+  return ""
+}
+
+function textToRubric(text: string): { criteria: { name: string }[] } | null {
+  const lines = text.split("\n").map((l) => l.trim()).filter(Boolean)
+  if (lines.length === 0) return null
+  return { criteria: lines.map((name) => ({ name })) }
 }
 
 interface QuizSettings {
@@ -41,60 +89,8 @@ const QUESTION_TYPES: { key: QuestionType; label: string; icon: string }[] = [
   { key: "short_answer", label: "Short Answer", icon: "?" },
   { key: "passage_id", label: "Passage ID", icon: '"' },
   { key: "vocabulary", label: "Vocabulary", icon: "V" },
+  { key: "free_response", label: "Free Response", icon: "¶" },
 ]
-
-// ── Demo Data ──────────────────────────────────────────────
-
-interface DemoQuiz {
-  title: string
-  bookId: string
-  difficulty: string
-  questions: QuizQuestion[]
-}
-
-const DEMO_QUIZ_DATA: Record<string, DemoQuiz> = {
-  "demo-quiz-1": {
-    title: "The Odyssey — Books 1–6 Trial",
-    bookId: "the-odyssey",
-    difficulty: "scholar",
-    questions: [
-      { id: "q1", question_type: "multiple_choice", question_text: "Who is the goddess that helps Odysseus throughout his journey?", options: ["Hera", "Athena", "Aphrodite", "Artemis"], correct_answer: "Athena", explanation: "Athena is Odysseus' divine patron who repeatedly intervenes on his behalf.", points: 10, sort_order: 0 },
-      { id: "q2", question_type: "multiple_choice", question_text: "What is Telemachus doing at the start of the epic?", options: ["Searching for Odysseus", "Hosting the suitors", "Sailing to Troy", "Training for battle"], correct_answer: "Hosting the suitors", explanation: "Telemachus is at home in Ithaca, helpless as suitors consume his father's estate.", points: 10, sort_order: 1 },
-      { id: "q3", question_type: "true_false", question_text: "Calypso willingly releases Odysseus from her island.", options: ["True", "False"], correct_answer: "False", explanation: "Calypso only releases Odysseus after Zeus sends Hermes to command her to let him go.", points: 10, sort_order: 2 },
-      { id: "q4", question_type: "multiple_choice", question_text: "Which king tells Odysseus about the Trojan Horse?", options: ["Nestor", "Menelaus", "Alcinous", "Priam"], correct_answer: "Menelaus", explanation: "Menelaus recounts the Trojan Horse story to Telemachus during his visit to Sparta.", points: 10, sort_order: 3 },
-      { id: "q5", question_type: "vocabulary", question_text: "What does the Greek concept of 'xenia' refer to in The Odyssey?", options: ["Warfare", "Hospitality", "Revenge", "Navigation"], correct_answer: "Hospitality", explanation: "Xenia is the ancient Greek concept of hospitality and guest-friendship, a central theme in the epic.", points: 10, sort_order: 4 },
-      { id: "q6", question_type: "short_answer", question_text: "Name the island where Calypso holds Odysseus captive.", options: null, correct_answer: "Ogygia", explanation: "Calypso's island home is called Ogygia, where Odysseus is trapped for seven years.", points: 10, sort_order: 5 },
-      { id: "q7", question_type: "multiple_choice", question_text: "What disguise does Athena use when she first visits Telemachus?", options: ["An old beggar", "Mentes, a family friend", "A shepherd", "A sailor"], correct_answer: "Mentes, a family friend", explanation: "Athena disguises herself as Mentes, a Taphian chief and friend of Odysseus' family.", points: 10, sort_order: 6 },
-      { id: "q8", question_type: "true_false", question_text: "Nestor provides Telemachus with information about Odysseus' whereabouts.", options: ["True", "False"], correct_answer: "False", explanation: "Nestor has no direct news of Odysseus but sends Telemachus onward to Menelaus in Sparta.", points: 10, sort_order: 7 },
-      { id: "q9", question_type: "passage_id", question_text: "'Tell me, O Muse, of that ingenious hero who travelled far and wide...' — Who is the narrator invoking?", options: ["Zeus", "The Muse", "Athena", "Homer himself"], correct_answer: "The Muse", explanation: "The epic invocation at the opening of The Odyssey calls upon the Muse for inspiration.", points: 10, sort_order: 8 },
-      { id: "q10", question_type: "multiple_choice", question_text: "What does Odysseus build to leave Calypso's island?", options: ["A chariot", "A raft", "A bridge", "A ship"], correct_answer: "A raft", explanation: "Calypso provides Odysseus with tools and materials to build a raft for his departure.", points: 10, sort_order: 9 },
-    ],
-  },
-  "demo-quiz-2": {
-    title: "Meditations — Full Book Quiz",
-    bookId: "meditations",
-    difficulty: "apprentice",
-    questions: [
-      { id: "mq1", question_type: "multiple_choice", question_text: "Who is the author of Meditations?", options: ["Seneca", "Epictetus", "Marcus Aurelius", "Cicero"], correct_answer: "Marcus Aurelius", explanation: "Meditations was written by Roman Emperor Marcus Aurelius as personal philosophical reflections.", points: 10, sort_order: 0 },
-      { id: "mq2", question_type: "true_false", question_text: "Meditations was intended for public publication.", options: ["True", "False"], correct_answer: "False", explanation: "The Meditations were private notes Marcus Aurelius wrote to himself, never intended for publication.", points: 10, sort_order: 1 },
-      { id: "mq3", question_type: "vocabulary", question_text: "What philosophical school does Marcus Aurelius follow in Meditations?", options: ["Epicureanism", "Stoicism", "Cynicism", "Platonism"], correct_answer: "Stoicism", explanation: "Marcus Aurelius was a Stoic philosopher, and Meditations is one of the foundational Stoic texts.", points: 10, sort_order: 2 },
-      { id: "mq4", question_type: "short_answer", question_text: "What was Marcus Aurelius' role in the Roman Empire?", options: null, correct_answer: "Emperor", explanation: "Marcus Aurelius served as Roman Emperor from 161 to 180 AD.", points: 10, sort_order: 3 },
-      { id: "mq5", question_type: "multiple_choice", question_text: "What is the central teaching about external events in Meditations?", options: ["Avoid all hardship", "Control what you can, accept what you cannot", "Seek pleasure above all", "Trust in the gods completely"], correct_answer: "Control what you can, accept what you cannot", explanation: "A core Stoic principle: focus on your own actions and judgments, not external circumstances.", points: 10, sort_order: 4 },
-    ],
-  },
-  "demo-quiz-3": {
-    title: "Pride and Prejudice — Chapters 1–12",
-    bookId: "pride-and-prejudice",
-    difficulty: "master",
-    questions: [
-      { id: "pp1", question_type: "multiple_choice", question_text: "What is Mrs. Bennet's primary concern throughout the novel?", options: ["Her health", "Marrying off her daughters", "The family estate", "Social reform"], correct_answer: "Marrying off her daughters", explanation: "Mrs. Bennet's singular focus is finding wealthy husbands for her five daughters.", points: 10, sort_order: 0 },
-      { id: "pp2", question_type: "passage_id", question_text: "'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.' — What literary device is Austen using here?", options: ["Metaphor", "Irony", "Alliteration", "Hyperbole"], correct_answer: "Irony", explanation: "Austen opens with ironic understatement — the 'truth' is actually the perspective of matchmaking mothers, not a universal law.", points: 10, sort_order: 1 },
-      { id: "pp3", question_type: "true_false", question_text: "Mr. Darcy makes a favorable first impression at the Meryton ball.", options: ["True", "False"], correct_answer: "False", explanation: "Darcy is perceived as proud and disagreeable at the first ball, notably snubbing Elizabeth.", points: 10, sort_order: 2 },
-      { id: "pp4", question_type: "vocabulary", question_text: "What does 'entailment' mean in the context of the Bennet estate?", options: ["A type of tax", "A legal restriction on inheritance", "A marriage contract", "A social obligation"], correct_answer: "A legal restriction on inheritance", explanation: "The entail means the Bennet estate must pass to the nearest male heir (Mr. Collins), not to the daughters.", points: 10, sort_order: 3 },
-      { id: "pp5", question_type: "multiple_choice", question_text: "Why does Mr. Bingley's sisters disapprove of Jane?", options: ["Her appearance", "Her low social connections", "Her intelligence", "Her age"], correct_answer: "Her low social connections", explanation: "The Bingley sisters view the Bennets as beneath their social station due to their connections to trade.", points: 10, sort_order: 4 },
-    ],
-  },
-}
 
 // ── Component ──────────────────────────────────────────────
 
@@ -120,6 +116,10 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
   const [saved, setSaved] = useState(false)
   const [showSettings, setShowSettings] = useState(false)
   const [loading, setLoading] = useState(true)
+  const [status, setStatus] = useState<string>("draft")
+  const [classrooms, setClassrooms] = useState<{ id: string; name: string }[]>([])
+  const [assignClassroom, setAssignClassroom] = useState("")
+  const [assigning, setAssigning] = useState(false)
 
   const books = getBooks()
   const selectedBook = books.find((b) => b.id === bookId)
@@ -132,15 +132,7 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
 
   // Load quiz data
   useEffect(() => {
-    // Demo mode: load from DEMO_QUIZ_DATA
     if (isDemoMode || !user) {
-      const demo = DEMO_QUIZ_DATA[quizId]
-      if (demo) {
-        setTitle(demo.title)
-        setBookId(demo.bookId)
-        setDifficulty(demo.difficulty)
-        setQuestions(demo.questions)
-      }
       setLoading(false)
       return
     }
@@ -159,6 +151,7 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
         setTitle(quiz.title)
         setBookId(quiz.book_id ?? "")
         setDifficulty(quiz.difficulty ?? "scholar")
+        setStatus(quiz.status ?? "draft")
         setSettings({
           timeLimit: quiz.time_limit_minutes,
           passingScore: quiz.passing_score ?? 60,
@@ -175,6 +168,9 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
         .order("sort_order", { ascending: true })
 
       if (questionData) {
+        // `...q` carries the passthrough metadata (rubric / reference_answer /
+        // max_points / hints / …) so a Virgil-generated free-response question
+        // survives a load → save round-trip and stays auto-gradable.
         setQuestions(
           questionData.map((q) => ({
             ...q,
@@ -182,6 +178,15 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
           })),
         )
       }
+
+      // Teacher's own classrooms, for the "Assign to class" picker.
+      const { data: classData } = await supabase
+        .from("classrooms")
+        .select("id, name")
+        .eq("teacher_id", user!.id)
+        .order("created_at", { ascending: false })
+
+      if (classData) setClassrooms(classData)
 
       setLoading(false)
     }
@@ -199,6 +204,7 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
       explanation: "",
       points: 10,
       sort_order: questions.length,
+      ...(OPEN_ENDED.has(type) ? { reference_answer: "", rubric: null, max_points: 10 } : {}),
     }
     setQuestions((prev) => [...prev, newQ])
     setExpandedQuestion(newQ.id)
@@ -265,6 +271,16 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
           explanation: q.explanation || null,
           points: q.points,
           sort_order: i,
+          // Preserve the grading metadata Virgil (or a teacher) authored so a
+          // save cycle never strips a free-response question's gradeability.
+          rubric: q.rubric ?? null,
+          reference_answer: q.reference_answer ?? null,
+          max_points: q.max_points ?? q.points,
+          difficulty: q.difficulty ?? null,
+          category: q.category ?? null,
+          hints: q.hints ?? null,
+          distractor_eliminations: q.distractor_eliminations ?? null,
+          source_anchor: q.source_anchor ?? null,
         })),
       )
     }
@@ -276,12 +292,37 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
 
   const handlePublish = useCallback(async () => {
     await handleSave()
-    if (!isDemoMode && user) {
-      const supabase = createClient()
-      await supabase.from("teacher_quizzes").update({ status: "published" }).eq("id", quizId)
+    if (isDemoMode || !user) {
+      router.push("/classroom/quiz-builder")
+      return
     }
-    router.push("/classroom/quiz-builder")
+    // Server action enforces teacher ownership + ≥1 question under RLS.
+    const res = await publishTeacherQuiz(quizId)
+    if (!res.ok) {
+      toast.error(res.error)
+      return
+    }
+    setStatus("published")
+    toast.success("Quiz published")
   }, [handleSave, quizId, router, isDemoMode, user])
+
+  const handleAssign = useCallback(async () => {
+    if (!assignClassroom) return
+    setAssigning(true)
+    const points = questions.reduce((sum, q) => sum + q.points, 0)
+    const res = await assignQuiz({
+      quizId,
+      classroomId: assignClassroom,
+      points,
+    })
+    setAssigning(false)
+    if (!res.ok) {
+      toast.error(res.error)
+      return
+    }
+    toast.success("Assigned to class")
+    setAssignClassroom("")
+  }, [assignClassroom, quizId, questions])
 
   const handleAIGenerate = useCallback(async () => {
     if (!bookId) return
@@ -640,6 +681,32 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
                     </>
                   )}
 
+                  {/* Free response — Virgil grades against the rubric + reference answer */}
+                  {OPEN_ENDED.has(q.question_type) && q.question_type !== "short_answer" && (
+                    <div className="space-y-3">
+                      <div>
+                        <label className="text-xs font-medium text-muted-foreground">Reference answer (guides Virgil's grading)</label>
+                        <textarea
+                          value={q.reference_answer ?? ""}
+                          onChange={(e) => updateQuestion(q.id, { reference_answer: e.target.value })}
+                          placeholder="A model answer for Virgil to grade against..."
+                          rows={3}
+                          className="mt-1 w-full rounded-md border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
+                        />
+                      </div>
+                      <div>
+                        <label className="text-xs font-medium text-muted-foreground">Rubric (one criterion per line)</label>
+                        <textarea
+                          value={rubricToText(q.rubric)}
+                          onChange={(e) => updateQuestion(q.id, { rubric: textToRubric(e.target.value) })}
+                          placeholder={"Identifies the central theme\nCites textual evidence\nExplains significance"}
+                          rows={3}
+                          className="mt-1 w-full rounded-md border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
+                        />
+                      </div>
+                    </div>
+                  )}
+
                   {/* Explanation */}
                   <div>
                     <label className="text-xs font-medium text-muted-foreground">Explanation (shown after answering)</label>
@@ -699,15 +766,55 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
       )}
 
       {/* Action bar */}
-      <div className="mt-8 flex gap-3 border-t pt-6">
-        <Button variant="outline" onClick={handleSave} disabled={saving} className="gap-1.5">
-          {saved ? <Check className="size-3.5 text-green-500" /> : <Save className="size-3.5" />}
-          {saving ? "Saving..." : saved ? "Saved!" : "Save Draft"}
-        </Button>
-        <Button onClick={handlePublish} disabled={questions.length === 0} className="flex-1 gap-1.5 bg-[var(--tome-accent)] hover:bg-[color-mix(in_srgb,var(--tome-accent)_85%,black)] text-white">
-          <Eye className="size-3.5" />
-          Publish Quiz
-        </Button>
+      <div className="mt-8 space-y-4 border-t pt-6">
+        <div className="flex gap-3">
+          <Button variant="outline" onClick={handleSave} disabled={saving} className="gap-1.5">
+            {saved ? <Check className="size-3.5 text-green-500" /> : <Save className="size-3.5" />}
+            {saving ? "Saving..." : saved ? "Saved!" : "Save Draft"}
+          </Button>
+          <Button onClick={handlePublish} disabled={questions.length === 0} className="flex-1 gap-1.5 bg-[var(--tome-accent)] hover:bg-[color-mix(in_srgb,var(--tome-accent)_85%,black)] text-white">
+            <Eye className="size-3.5" />
+            {status === "published" ? "Save & Re-publish" : "Publish Quiz"}
+          </Button>
+        </div>
+
+        {/* Assign + results — only once the quiz is published */}
+        {status === "published" && !isDemoMode && (
+          <div className="rounded-xl border bg-card p-4 space-y-3">
+            <div className="flex items-center justify-between">
+              <p className="text-sm font-medium">Assign to a class</p>
+              <Link
+                href={`/classroom/quiz-builder/${quizId}/results`}
+                className="flex items-center gap-1.5 text-xs text-[var(--tome-accent)] hover:underline"
+              >
+                <BarChart2 className="size-3.5" />
+                View results
+              </Link>
+            </div>
+            {classrooms.length === 0 ? (
+              <p className="text-xs text-muted-foreground">
+                You have no classes yet. Create one to assign this quiz.
+              </p>
+            ) : (
+              <div className="flex gap-2">
+                <select
+                  value={assignClassroom}
+                  onChange={(e) => setAssignClassroom(e.target.value)}
+                  className="flex-1 rounded-md border bg-background px-3 py-2 text-sm"
+                >
+                  <option value="">Choose a class…</option>
+                  {classrooms.map((c) => (
+                    <option key={c.id} value={c.id}>{c.name}</option>
+                  ))}
+                </select>
+                <Button onClick={handleAssign} disabled={!assignClassroom || assigning} className="gap-1.5">
+                  <Send className="size-3.5" />
+                  {assigning ? "Assigning…" : "Assign"}
+                </Button>
+              </div>
+            )}
+          </div>
+        )}
       </div>
     </div>
   )

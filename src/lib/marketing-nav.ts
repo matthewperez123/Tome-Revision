@@ -39,8 +39,10 @@ export const LANDING_PATHS = new Set<string>([
   "/faq",
   "/privacy",
   "/terms",
+  "/security",
   "/contact",
   "/accessibility",
+  "/demo",
 ])
 
 /**
@@ -77,6 +79,7 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
       { label: "Gradebook", href: "/educators#gradebook" },
       { label: "Curriculum", href: "/educators#curriculum" },
       { label: "Parent Directory", href: "/educators#parent-directory" },
+      { label: "Privacy for Schools", href: "/security" },
     ],
   },
   {

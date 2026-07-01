@@ -1,14 +1,15 @@
 import { z } from "zod"
 import { createClient } from "@/lib/supabase/server"
+import { getEntitlement, getUserRole } from "@/lib/entitlements/server"
 
 export const dynamic = "force-dynamic"
 
 /**
- * Mirror a passed Trial to Supabase so Wisdom (XP) and Flames (streak) persist
- * server-side and survive sign-out/sign-in. localStorage remains the instant
- * source of truth (economy-provider); this write is additive and best-effort —
- * the reader fires it and forgets. Anonymous/guest readers (no session) get a
- * 401 and simply keep their localStorage progress.
+ * Record a passed Trial server-side: persist the quiz_results row and emit the
+ * Community-feed milestone(s). Wisdom (XP) and Flames (streak) are NOT written
+ * here — the economy-provider awards them through the SECURITY DEFINER
+ * economy_* RPCs (user_stats is the single source of truth). Anonymous/guest
+ * readers (no session) get a 401 and simply keep their localStorage progress.
  */
 const bodySchema = z.object({
   bookId: z.string().min(1).max(200),
@@ -17,7 +18,6 @@ const bodySchema = z.object({
   score: z.number().int().min(0).max(100),
   totalQuestions: z.number().int().min(0).max(500),
   wisdomEarned: z.number().int().min(0).max(100000),
-  currentStreak: z.number().int().min(0).max(100000).optional(),
   isLastChapter: z.boolean().optional(),
 })
 
@@ -42,13 +42,35 @@ export async function POST(request: Request) {
     score,
     totalQuestions,
     wisdomEarned,
-    currentStreak,
     isLastChapter,
   } = parsed.data
 
-  // quiz_results / profiles.total_xp are introduced by a migration not yet
-  // reflected in the generated database.types — cast through `any` so the build
-  // stays clean while the row still inserts under the user's RLS context.
+  // Advanced Trials (Scholar / Master) are a paid feature. Enforce it on the
+  // server so a free account can't bank credit for an assessment its plan
+  // doesn't include. Classroom roles (teacher/student) are exempt.
+  const difficultyLevel = (difficulty ?? "").toLowerCase()
+  const isAdvancedTrial = difficultyLevel === "scholar" || difficultyLevel === "master"
+  if (isAdvancedTrial) {
+    const role = await getUserRole(user.id)
+    const isClassroomRole = role === "teacher" || role === "student"
+    if (!isClassroomRole) {
+      const entitlement = await getEntitlement(user.id)
+      if (!entitlement.features.advancedTrials) {
+        return Response.json(
+          {
+            error: "advanced_trials",
+            message:
+              "Scholar and Master Trials are part of Tome Solo. Upgrade to take advanced Trials.",
+          },
+          { status: 402 },
+        )
+      }
+    }
+  }
+
+  // quiz_results is introduced by a migration not yet reflected in the
+  // generated database.types — cast through `any` so the build stays clean
+  // while the row still inserts under the user's RLS context.
   const db = supabase as unknown as {
     from: (t: string) => any
   }
@@ -67,20 +89,9 @@ export async function POST(request: Request) {
     return Response.json({ error: insertError.message }, { status: 500 })
   }
 
-  // Accumulate Wisdom and carry the highest known Flame count onto the profile.
-  const { data: profile } = await db
-    .from("profiles")
-    .select("total_xp, current_streak")
-    .eq("id", user.id)
-    .single()
-
-  const nextXp = (profile?.total_xp ?? 0) + wisdomEarned
-  const nextStreak = Math.max(profile?.current_streak ?? 0, currentStreak ?? 0)
-
-  await db
-    .from("profiles")
-    .update({ total_xp: nextXp, current_streak: nextStreak })
-    .eq("id", user.id)
+  // Wisdom / coins / Flames are awarded by the economy-provider via the
+  // economy_award RPC (user_stats = single source of truth). This route no
+  // longer writes gamification state, so a Trial's Wisdom is never counted twice.
 
   // Emit the social milestone(s) for the Community feed. Best-effort — the
   // SECURITY DEFINER record_activity() dedupes per (actor, type, entity) so a
@@ -101,5 +112,5 @@ export async function POST(request: Request) {
     })
   }
 
-  return Response.json({ ok: true, total_xp: nextXp, current_streak: nextStreak })
+  return Response.json({ ok: true })
 }

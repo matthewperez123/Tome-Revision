@@ -15,7 +15,6 @@ import { SearchBar } from "@/components/tome/SearchBar"
 import { FilterDropdown } from "@/components/tome/FilterDropdown"
 import { isBookRecommended, isBookComplete } from "@/lib/book-apparatus"
 import { RecommendationsInbox } from "@/components/library/recommendations-inbox"
-import { SectionVirgilPanel } from "@/components/virgil/SectionVirgilPanel"
 import { useLibraryRecommendations } from "@/hooks/use-library-recommendations"
 import { cn } from "@/lib/utils"
 
@@ -324,14 +323,6 @@ export function LibraryBrowseClient() {
             </div>
           </div>
         </div>
-
-        {/* Virgil search assistant — mirrors the Explore section */}
-        <SectionVirgilPanel
-          className="m-3 shrink-0"
-          title="Search the library with Virgil"
-          placeholder="Ask Virgil for a book…"
-          hint="Tell me what you're in the mood for, and I'll point you to something in the library."
-        />
 
         {/* Content */}
         <div className="p-4">

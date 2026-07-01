@@ -11,10 +11,21 @@ export const metadata: Metadata = {
   title: { absolute: "Virgil — Your AI Scholar — Tome" },
   description:
     "Meet Virgil, the AI scholar inside Tome. He annotates the text as you read, offers scaffolded hints during Trials, explains any passage on request, and learns your taste — privately.",
+  alternates: { canonical: "/virgil" },
   openGraph: {
+    type: "website",
+    url: "/virgil",
     title: "Virgil — Your AI Scholar — Tome",
     description:
       "Annotations in the margin, hints during quizzes, help with any passage, and recommendations that learn your taste. A scholar at your side, grounded in the text.",
+    images: [{ url: "/og-image.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Virgil — Your AI Scholar — Tome",
+    description:
+      "Annotations in the margin, hints during quizzes, help with any passage, and recommendations that learn your taste. A scholar at your side, grounded in the text.",
+    images: ["/og-image.png"],
   },
 }
 

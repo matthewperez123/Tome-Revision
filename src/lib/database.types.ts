@@ -1529,6 +1529,7 @@ export type Database = {
         Row: {
           cancel_at_period_end: boolean
           current_period_end: string | null
+          seats: number | null
           status: string | null
           stripe_customer_id: string | null
           stripe_subscription_id: string | null
@@ -1539,6 +1540,7 @@ export type Database = {
         Insert: {
           cancel_at_period_end?: boolean
           current_period_end?: string | null
+          seats?: number | null
           status?: string | null
           stripe_customer_id?: string | null
           stripe_subscription_id?: string | null
@@ -1549,12 +1551,129 @@ export type Database = {
         Update: {
           cancel_at_period_end?: boolean
           current_period_end?: string | null
+          seats?: number | null
           status?: string | null
           stripe_customer_id?: string | null
           stripe_subscription_id?: string | null
           tier?: string | null
           updated_at?: string
           user_id?: string
+        }
+        Relationships: []
+      }
+      school_seats: {
+        Row: {
+          id: string
+          subscription_user_id: string
+          teacher_id: string
+          seat_role: string
+          added_at: string
+        }
+        Insert: {
+          id?: string
+          subscription_user_id: string
+          teacher_id: string
+          seat_role?: string
+          added_at?: string
+        }
+        Update: {
+          id?: string
+          subscription_user_id?: string
+          teacher_id?: string
+          seat_role?: string
+          added_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "school_seats_subscription_user_id_fkey"
+            columns: ["subscription_user_id"]
+            isOneToOne: false
+            referencedRelation: "subscriptions"
+            referencedColumns: ["user_id"]
+          },
+        ]
+      }
+      demo_requests: {
+        Row: {
+          id: string
+          created_at: string
+          name: string
+          email: string
+          organization: string | null
+          role: string | null
+          plan_interest: string | null
+          student_count: number | null
+          teacher_count: number | null
+          message: string | null
+          status: string
+          ip: string | null
+          user_agent: string | null
+        }
+        Insert: {
+          id?: string
+          created_at?: string
+          name: string
+          email: string
+          organization?: string | null
+          role?: string | null
+          plan_interest?: string | null
+          student_count?: number | null
+          teacher_count?: number | null
+          message?: string | null
+          status?: string
+          ip?: string | null
+          user_agent?: string | null
+        }
+        Update: {
+          id?: string
+          created_at?: string
+          name?: string
+          email?: string
+          organization?: string | null
+          role?: string | null
+          plan_interest?: string | null
+          student_count?: number | null
+          teacher_count?: number | null
+          message?: string | null
+          status?: string
+          ip?: string | null
+          user_agent?: string | null
+        }
+        Relationships: []
+      }
+      stripe_events: {
+        Row: {
+          id: string
+          received_at: string
+          type: string
+        }
+        Insert: {
+          id: string
+          received_at?: string
+          type: string
+        }
+        Update: {
+          id?: string
+          received_at?: string
+          type?: string
+        }
+        Relationships: []
+      }
+      virgil_usage: {
+        Row: {
+          user_id: string
+          usage_date: string
+          message_count: number
+        }
+        Insert: {
+          user_id: string
+          usage_date?: string
+          message_count?: number
+        }
+        Update: {
+          user_id?: string
+          usage_date?: string
+          message_count?: number
         }
         Relationships: []
       }
@@ -2463,6 +2582,14 @@ export type Database = {
         Args: { p_recipient: string; p_sender: string }
         Returns: boolean
       }
+      consume_virgil_message: {
+        Args: { p_daily_limit: number }
+        Returns: boolean
+      }
+      is_school_member: {
+        Args: { p_user: string; p_subscription_user: string }
+        Returns: boolean
+      }
       create_notification: {
         Args: {
           p_recipient: string
@@ -2473,6 +2600,38 @@ export type Database = {
           p_payload?: Json
         }
         Returns: string
+      }
+      classroom_reading_board: {
+        Args: { p_classroom: string }
+        Returns: {
+          student_id: string
+          student_name: string | null
+          student_username: string | null
+          avatar_url: string | null
+          last_active: string | null
+          current_book_id: string | null
+          current_chapter: number | null
+          furthest_chapter: number | null
+          books_started: number
+          trials_attempted: number
+          trials_passed: number
+          avg_score_pct: number | null
+          last_trial_at: string | null
+        }[]
+      }
+      staff_can_view_student: {
+        Args: { p_student_id: string }
+        Returns: boolean
+      }
+      classroom_wisdom_leaderboard: {
+        Args: { p_classroom: string }
+        Returns: {
+          student_id: string
+          display_name: string | null
+          avatar_url: string | null
+          wisdom: number
+          trials_passed: number
+        }[]
       }
       claim_email_slot: {
         Args: {

@@ -9,28 +9,27 @@
  * `/content/*.json` chapter files are publicly fetchable. Real enforcement
  * would require moving content behind an authenticated endpoint.
  */
-import { getFeaturedBooks } from "@/lib/content"
+import { isFreeSample, FREE_SAMPLE_BOOK_IDS } from "@/lib/stripe/free-books"
 import type { UserRole } from "@/lib/navigation"
 
-export type Tier = "free" | "solo" | "family"
+export type Tier = "free" | "solo" | "family" | "school"
 
-/**
- * The free sampler: every featured book is readable without a subscription.
- * Derived from the static catalog so it stays in sync with curation.
- */
-export const FREE_BOOK_IDS: string[] = getFeaturedBooks().map((b) => b.id)
-
-const FREE_BOOK_SET = new Set(FREE_BOOK_IDS)
+/** The free sampler ids (explicit foundational-20; see `free-books.ts`). */
+export const FREE_BOOK_IDS: readonly string[] = FREE_SAMPLE_BOOK_IDS
 
 /** Whether `tier` is a paid reader plan. */
 export function isPaid(tier: Tier): boolean {
-  return tier === "solo" || tier === "family"
+  return tier === "solo" || tier === "family" || tier === "school"
 }
 
 /**
  * Can this account read `bookId`?
  * - Teachers & students: always (their reading is classroom-scoped).
  * - Readers: yes if subscribed, or the book is part of the free sampler.
+ *
+ * NOTE: this is the pure decision shared by the client gate and the server
+ * gate. The authoritative call site is the server (`canUserReadBook` in
+ * `entitlements/server.ts`); the client uses it only to reflect state in the UI.
  */
 export function canReadBook(
   tier: Tier,
@@ -39,5 +38,5 @@ export function canReadBook(
 ): boolean {
   if (role === "teacher" || role === "student") return true
   if (isPaid(tier)) return true
-  return FREE_BOOK_SET.has(bookId)
+  return isFreeSample(bookId)
 }

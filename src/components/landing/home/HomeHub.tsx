@@ -24,7 +24,12 @@ import { SealBase } from "@/components/achievements/seals/SealBase"
 import { getAchievementById } from "@/data/achievements"
 import { DEMO_PASSAGE, DEMO_EXCHANGES, streamScriptedReply } from "@/lib/demo/virgil"
 import { AvatarCircles } from "@/components/ui/avatar-circles"
-import { readerPlans, educatorPlans } from "@/lib/pricing"
+import { getReaderPlans, getEducatorPlans, READER_TRIAL_COPY } from "@/lib/marketing/plans"
+import {
+  formatBookCount,
+  formatTraditionCount,
+} from "@/lib/marketing/catalog-stats"
+import { useCatalogStats } from "@/lib/marketing/catalog-stats-context"
 import { marketingMasterImages } from "@/lib/marketing-images"
 
 // ── Section shell ───────────────────────────────────────────────────
@@ -120,11 +125,16 @@ function MasterHomeImage({
 // ── 2 · Discover the Canon ──────────────────────────────────────────
 
 function DiscoverCanon() {
+  const stats = useCatalogStats()
   return (
     <SectionShell
       eyebrow="The Library"
       title="Discover the canon of world literature."
-      subline="Over a thousand foundational works, every one in the public domain, from Homer to the moderns — organized by the traditions that shaped them."
+      subline={`${formatBookCount(
+        stats.bookCount,
+      )} foundational works, every one in the public domain, from Homer to the moderns — organized by the ${formatTraditionCount(
+        stats.traditionCount,
+      )} that shaped them.`}
       bg="background"
       cta={{ label: "Browse the library", href: "/library/browse" }}
     >
@@ -402,6 +412,9 @@ function TeachClasses() {
 // ── 8 · Pricing teaser ──────────────────────────────────────────────
 
 function PricingTeaser() {
+  const stats = useCatalogStats()
+  const readerPlans = getReaderPlans(stats)
+  const educatorPlans = getEducatorPlans()
   const solo = readerPlans.find((p) => p.id === "solo")
   const family = readerPlans.find((p) => p.id === "family")
   const school = educatorPlans.find((p) => p.id === "school")
@@ -413,7 +426,7 @@ function PricingTeaser() {
     <SectionShell
       eyebrow="Pricing"
       title="Start free. Upgrade when you're ready."
-      subline="Solo and Family for readers, plans for schools and districts. Every paid plan includes a 7-day free trial of Solo."
+      subline={`Solo and Family for readers, plans for schools and districts. ${READER_TRIAL_COPY}`}
       bg="background"
       cta={{ label: "See full pricing", href: "/pricing" }}
     >

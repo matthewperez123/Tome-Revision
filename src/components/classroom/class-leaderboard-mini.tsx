@@ -42,29 +42,32 @@ export function ClassLeaderboardMini() {
 
       setClassroomName(classroom.name)
 
-      // Get all members of this classroom with their profiles
-      const { data: members } = await supabase
-        .from("classroom_members")
-        .select("student_id, profiles(id, display_name, avatar_url)")
-        .eq("classroom_id", membership.classroom_id)
+      // Real class ranking: member-gated SECURITY DEFINER RPC sums each
+      // student's quiz_results.wisdom_earned. No fabricated numbers.
+      const { data: board } = await supabase.rpc("classroom_wisdom_leaderboard", {
+        p_classroom: membership.classroom_id,
+      })
 
-      if (!members?.length) { setLoading(false); return }
+      const rows =
+        (board as {
+          student_id: string
+          display_name: string | null
+          avatar_url: string | null
+          wisdom: number
+          trials_passed: number
+        }[] | null) ?? []
 
-      // For now, use a simple ranking based on profile data
-      // In production, this would query quiz results and XP from the classroom
-      const ranked = members
-        .map((m, i) => {
-          const profile = (m as any).profiles as { id: string; display_name: string; avatar_url: string | null } | null
-          return {
-            id: profile?.id ?? m.student_id,
-            display_name: profile?.display_name ?? "Student",
-            avatar_url: profile?.avatar_url ?? null,
-            wisdom: Math.floor(Math.random() * 500) + 100, // Placeholder until real XP tracking
-            rank: 0,
-            isCurrentUser: m.student_id === user!.id,
-          }
-        })
-        .sort((a, b) => b.wisdom - a.wisdom)
+      if (rows.length === 0) { setLoading(false); return }
+
+      const ranked = rows
+        .map((r) => ({
+          id: r.student_id,
+          display_name: r.display_name ?? "Student",
+          avatar_url: r.avatar_url,
+          wisdom: Number(r.wisdom),
+          rank: 0,
+          isCurrentUser: r.student_id === user!.id,
+        }))
         .map((entry, i) => ({ ...entry, rank: i + 1 }))
         .slice(0, 5)
 
@@ -110,7 +113,7 @@ export function ClassLeaderboardMini() {
                 {entry.isCurrentUser && <span className="ml-1 text-xs text-muted-foreground">(you)</span>}
               </span>
               <span className="text-xs font-medium text-muted-foreground">
-                {entry.wisdom} XP
+                {entry.wisdom.toLocaleString()} Wisdom
               </span>
             </div>
           ))}

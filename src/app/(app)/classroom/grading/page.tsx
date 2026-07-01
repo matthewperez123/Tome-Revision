@@ -1,12 +1,13 @@
 "use client"
 
 import { useEffect, useState, useCallback } from "react"
-import Link from "next/link"
-import { ClipboardCheck, ChevronRight, Send, Sparkles } from "lucide-react"
+import { ClipboardCheck, ChevronRight, Send } from "lucide-react"
+import { toast } from "sonner"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
+import { gradeSubmission } from "@/lib/actions/grades"
 
 interface GradingItem {
   submission_id: string
@@ -16,79 +17,11 @@ interface GradingItem {
   classroom_name: string
   response_text: string | null
   submitted_at: string
+  points_available: number
   // grading fields
   score: number | null
   feedback: string
 }
-
-const DEMO_GRADING: GradingItem[] = [
-  {
-    submission_id: "demo-1",
-    student_name: "Marcus Williams",
-    assignment_title: "The Odyssey — Books 1–6 Discussion",
-    assignment_type: "discussion",
-    classroom_name: "AP Literature — Period 3",
-    response_text: "The theme of hospitality (xenia) in The Odyssey serves as both a moral compass and a narrative device. Homer uses the contrast between proper hosts like Nestor and Menelaus versus the Cyclops to illustrate the civilization–barbarism divide. The elaborate feasting scenes aren't just filler — they establish a code of conduct that Odysseus relies on throughout his journey. When Polyphemus violates xenia, it's not just rude — it's an affront to Zeus himself. This connects to the broader theme of divine justice that runs through the epic.",
-    submitted_at: new Date(Date.now() - 3 * 3600000).toISOString(),
-    score: null,
-    feedback: "",
-  },
-  {
-    submission_id: "demo-2",
-    student_name: "Aisha Patel",
-    assignment_title: "The Odyssey — Books 1–6 Discussion",
-    assignment_type: "discussion",
-    classroom_name: "AP Literature — Period 3",
-    response_text: "I think the most interesting part of Books 1-6 is how Telemachus grows up. At the start he's basically helpless against the suitors, but by the time Athena sends him on his journey, he's starting to become more like his father. The parallel between father and son's journeys is really effective storytelling.",
-    submitted_at: new Date(Date.now() - 8 * 3600000).toISOString(),
-    score: null,
-    feedback: "",
-  },
-  {
-    submission_id: "es-1",
-    student_name: "Emma Chen",
-    assignment_title: "The Odyssey — Metis vs. Bie Essay",
-    assignment_type: "essay",
-    classroom_name: "AP Literature — Period 3",
-    response_text: "In Homer's Odyssey, the concept of heroism undergoes a fundamental transformation...",
-    submitted_at: new Date(Date.now() - 24 * 3600000).toISOString(),
-    score: null,
-    feedback: "",
-  },
-  {
-    submission_id: "es-2",
-    student_name: "James O'Brien",
-    assignment_title: "The Odyssey — Metis vs. Bie Essay",
-    assignment_type: "essay",
-    classroom_name: "AP Literature — Period 3",
-    response_text: "The Odyssey by Homer is about Odysseus trying to get home after the Trojan War...",
-    submitted_at: new Date(Date.now() - 20 * 3600000).toISOString(),
-    score: null,
-    feedback: "",
-  },
-  {
-    submission_id: "es-3",
-    student_name: "Sofia Rodriguez",
-    assignment_title: "Pride and Prejudice — Irony Analysis Essay",
-    assignment_type: "essay",
-    classroom_name: "AP Literature — Period 3",
-    response_text: "Jane Austen opens Pride and Prejudice with one of literature's most celebrated examples of verbal irony...",
-    submitted_at: new Date(Date.now() - 18 * 3600000).toISOString(),
-    score: null,
-    feedback: "",
-  },
-  {
-    submission_id: "es-4",
-    student_name: "Olivia Kim",
-    assignment_title: "Pride and Prejudice — Irony Analysis Essay",
-    assignment_type: "essay",
-    classroom_name: "AP Literature — Period 3",
-    response_text: "Pride and Prejudice uses irony a lot. The first sentence is ironic...",
-    submitted_at: new Date(Date.now() - 16 * 3600000).toISOString(),
-    score: null,
-    feedback: "",
-  },
-]
 
 export default function GradingQueuePage() {
   const { user, isDemoMode } = useAuth()
@@ -99,8 +32,7 @@ export default function GradingQueuePage() {
 
   useEffect(() => {
     if (isDemoMode || !user) {
-      setItems(DEMO_GRADING)
-      setSelectedIndex(0)
+      setItems([])
       setLoading(false)
       return
     }
@@ -117,60 +49,56 @@ export default function GradingQueuePage() {
           score,
           student_id,
           profiles!assignment_submissions_student_id_fkey(display_name),
-          assignments!inner(title, type, classroom_id, teacher_id, classrooms(name))
+          assignments!inner(title, type, classroom_id, teacher_id, points_available, classrooms(name))
         `)
         .eq("status", "submitted")
         .eq("assignments.teacher_id", user!.id)
         .order("submitted_at", { ascending: false })
 
-      if (data?.length) {
-        setItems(
-          data.map((d) => ({
-            submission_id: d.id,
-            student_name: ((d as any).profiles as { display_name: string } | null)?.display_name ?? "Student",
-            assignment_title: ((d as any).assignments as { title: string })?.title ?? "",
-            assignment_type: ((d as any).assignments as { type: string })?.type ?? "",
-            classroom_name: (((d as any).assignments as { classrooms: { name: string } })?.classrooms as { name: string })?.name ?? "",
-            response_text: d.response_text,
-            submitted_at: d.submitted_at,
-            score: d.score,
-            feedback: "",
-          })),
-        )
-      } else {
-        setItems(DEMO_GRADING)
-        setSelectedIndex(0)
-      }
+      setItems(
+        (data ?? []).map((d) => ({
+          submission_id: d.id,
+          student_name: ((d as any).profiles as { display_name: string } | null)?.display_name ?? "Student",
+          assignment_title: ((d as any).assignments as { title: string })?.title ?? "",
+          assignment_type: ((d as any).assignments as { type: string })?.type ?? "",
+          classroom_name: (((d as any).assignments as { classrooms: { name: string } })?.classrooms as { name: string })?.name ?? "",
+          response_text: d.response_text,
+          submitted_at: d.submitted_at,
+          points_available: ((d as any).assignments as { points_available: number })?.points_available ?? 100,
+          score: d.score,
+          feedback: "",
+        })),
+      )
 
       setLoading(false)
     }
 
     fetchQueue()
-  }, [user])
+  }, [user, isDemoMode])
 
   const handleGrade = useCallback(async (index: number) => {
     const item = items[index]
     if (!item || item.score === null) return
     setGrading(true)
 
-    const supabase = createClient()
-
-    await supabase
-      .from("assignment_submissions")
-      .update({
-        status: "graded",
-        score: item.score,
-        feedback: item.feedback || null,
-        graded_at: new Date().toISOString(),
-        graded_by: user!.id,
-      })
-      .eq("id", item.submission_id)
-
+    // Canonical write: grades table (+ grade_history audit on re-grade) with the
+    // denormalized submission cache mirrored and the student notified — all via
+    // the grader-gated server action, never a direct client write.
+    const res = await gradeSubmission({
+      submissionId: item.submission_id,
+      score: item.score,
+      feedback: item.feedback.trim() || undefined,
+    })
+    setGrading(false)
+    if (!res.ok) {
+      toast.error(res.error)
+      return
+    }
+    toast.success("Grade saved")
     // Remove from queue
     setItems((prev) => prev.filter((_, i) => i !== index))
     setSelectedIndex(null)
-    setGrading(false)
-  }, [items, user])
+  }, [items])
 
   const updateItem = (index: number, updates: Partial<GradingItem>) => {
     setItems((prev) => prev.map((item, i) => (i === index ? { ...item, ...updates } : item)))
@@ -249,25 +177,18 @@ export default function GradingQueuePage() {
                 </p>
               </div>
 
-              {/* AI essay grading link */}
-              {items[selectedIndex].assignment_type === "essay" && (
-                <Link href={`/classroom/grading/essay/${items[selectedIndex].submission_id}`}>
-                  <Button variant="outline" className="w-full mt-3 gap-1.5 border-[var(--tome-accent)]/30 text-[var(--tome-accent)] hover:bg-[var(--tome-accent)]/5">
-                    <Sparkles className="size-3.5" /> Open AI Grading Assistant
-                  </Button>
-                </Link>
-              )}
-
               <div className="mt-4 space-y-3">
                 <div>
-                  <label className="mb-1 block text-sm font-medium">Score</label>
+                  <label className="mb-1 block text-sm font-medium">
+                    Score (of {items[selectedIndex].points_available})
+                  </label>
                   <Input
                     type="number"
                     min={0}
-                    max={100}
+                    max={items[selectedIndex].points_available}
                     value={items[selectedIndex].score ?? ""}
                     onChange={(e) => updateItem(selectedIndex, { score: Number(e.target.value) })}
-                    placeholder="0-100"
+                    placeholder={`0-${items[selectedIndex].points_available}`}
                     className="w-24"
                   />
                 </div>

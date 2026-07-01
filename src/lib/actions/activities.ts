@@ -3,26 +3,19 @@
 import { revalidatePath } from "next/cache"
 import { z } from "zod"
 import { type ActionResult, fail, ok, requireUser } from "./_shared"
+import {
+  ACTIVITY_TYPES,
+  ACTIVITY_VISIBILITY,
+  REACTION_KINDS,
+} from "./activity-constants"
 
-// ── Activity types ──────────────────────────────────────────────────────────
-// Must mirror the public.activity_type enum exactly.
-
-export const ACTIVITY_TYPES = [
-  "book_started",
-  "book_completed",
-  "trial_passed",
-  "seal_earned",
-  "club_joined",
-  "session_completed",
-] as const
-export type ActivityType = (typeof ACTIVITY_TYPES)[number]
-
-export const ACTIVITY_VISIBILITY = ["private", "friends", "public"] as const
-export type ActivityVisibility = (typeof ACTIVITY_VISIBILITY)[number]
-
-// Reaction kinds mirror the activity_reactions_kind_check constraint.
-export const REACTION_KINDS = ["cheer", "insight", "same", "inspired"] as const
-export type ReactionKind = (typeof REACTION_KINDS)[number]
+// Re-export the types so existing import sites keep resolving from this module.
+// (Type re-exports are erased at build, so they don't violate "use server".)
+export type {
+  ActivityType,
+  ActivityVisibility,
+  ReactionKind,
+} from "./activity-constants"
 
 const EmitInput = z.object({
   type: z.enum(ACTIVITY_TYPES),

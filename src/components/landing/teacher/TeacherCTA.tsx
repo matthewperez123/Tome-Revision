@@ -39,6 +39,16 @@ export function TeacherCTA() {
             I&apos;m a reader
           </button>
         </div>
+        <p className="mt-6 text-sm text-muted-foreground">
+          Reviewing Tome for your school?{" "}
+          <Link
+            href="/security"
+            className="font-semibold text-foreground underline underline-offset-2 hover:opacity-80"
+          >
+            See how we handle student data
+          </Link>
+          .
+        </p>
       </BlurFade>
     </section>
   )

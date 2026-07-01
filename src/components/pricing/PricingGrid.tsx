@@ -1,4 +1,4 @@
-import type { BillingPeriod, EducatorPlan, ReaderPlan } from "@/lib/pricing"
+import type { BillingPeriod, EducatorPlan, ReaderPlan } from "@/lib/marketing/plans"
 import { isPaidTier } from "@/lib/stripe/plans"
 import { PricingCard } from "./PricingCard"
 

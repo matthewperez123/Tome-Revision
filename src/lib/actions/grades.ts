@@ -8,6 +8,7 @@ import {
   fail,
   notify,
   ok,
+  requireSchoolTools,
   requireUser,
 } from "./_shared"
 
@@ -91,7 +92,14 @@ export async function autoGradeTrialSubmission(
   }
 }
 
-// ── Manual grade (first-time) ────────────────────────────────────────────
+// ── Grade a submission (canonical write path) ─────────────────────────────
+// `grades` is the single source of truth (one row per submission). This handles
+// both the first grade and every re-grade: on re-grade it snapshots the current
+// grade into grade_history first (no DB trigger does this), then overwrites and
+// flags was_overridden. It mirrors the numeric score onto the denormalized
+// assignment_submissions cache (which the grading queue + rosters still read)
+// and notifies the student. Grader-gated by the grades RLS policy, which only
+// admits owner/co_teacher/ta of the submission's classroom.
 
 const GradeInput = z.object({
   submissionId: Uuid,
@@ -99,13 +107,15 @@ const GradeInput = z.object({
   feedback: z.string().trim().max(5000).optional(),
 })
 
-export async function manualGrade(
+export async function gradeSubmission(
   input: z.infer<typeof GradeInput>,
-): Promise<ActionResult<{ gradeId: string }>> {
+): Promise<ActionResult<{ gradeId: string; wasRegrade: boolean }>> {
   const parsed = GradeInput.safeParse(input)
   if (!parsed.success) return fail("Invalid input.")
   try {
-    const { supabase, user } = await requireUser()
+    const gate = await requireSchoolTools()
+    if (!gate.ok) return fail(gate.error)
+    const { supabase, user } = gate
 
     // Pull max_score from the assignment via the submission.
     const { data: sub } = await supabase
@@ -123,28 +133,74 @@ export async function manualGrade(
       }>()
     if (!sub) return fail("Submission not found.")
 
-    const { data: grade, error } = await supabase
-      .from("grades")
-      .insert({
-        submission_id: parsed.data.submissionId,
-        score: parsed.data.score,
-        max_score: sub.assignments?.points_available ?? 100,
-        feedback: parsed.data.feedback ?? null,
-        is_auto_graded: false,
-        graded_by: user.id,
-      })
-      .select("id")
-      .single()
-    if (error) return fail(error.message)
+    const maxScore = sub.assignments?.points_available ?? 100
+    const score = Math.max(0, Math.min(parsed.data.score, maxScore))
+    const feedback = parsed.data.feedback ?? null
 
-    // Mirror onto the submission.
+    // One grade per submission (UNIQUE submission_id). Re-grade => snapshot then
+    // overwrite; first grade => insert.
+    const { data: existing } = await supabase
+      .from("grades")
+      .select("id, score, feedback, graded_by")
+      .eq("submission_id", parsed.data.submissionId)
+      .maybeSingle<{
+        id: string
+        score: number | null
+        feedback: string | null
+        graded_by: string | null
+      }>()
+
+    let gradeId: string
+    if (existing) {
+      const { error: histErr } = await supabase.from("grade_history").insert({
+        grade_id: existing.id,
+        previous_score: existing.score,
+        previous_feedback: existing.feedback,
+        previous_graded_by: existing.graded_by,
+        changed_by: user.id,
+      })
+      if (histErr) return fail(histErr.message)
+
+      const { error: updErr } = await supabase
+        .from("grades")
+        .update({
+          score,
+          max_score: maxScore,
+          feedback,
+          graded_by: user.id,
+          is_auto_graded: false,
+          was_overridden: true,
+          graded_at: new Date().toISOString(),
+        })
+        .eq("id", existing.id)
+      if (updErr) return fail(updErr.message)
+      gradeId = existing.id
+    } else {
+      const { data: grade, error } = await supabase
+        .from("grades")
+        .insert({
+          submission_id: parsed.data.submissionId,
+          score,
+          max_score: maxScore,
+          feedback,
+          is_auto_graded: false,
+          graded_by: user.id,
+        })
+        .select("id")
+        .single()
+      if (error) return fail(error.message)
+      gradeId = grade.id
+    }
+
+    // Mirror onto the denormalized submission cache (read by the grading queue
+    // + student progress). grades stays canonical.
     const admin = createAdminClient()
     await admin
       .from("assignment_submissions")
       .update({
         status: "graded",
-        score: Math.round(parsed.data.score),
-        feedback: parsed.data.feedback ?? null,
+        score: Math.round(score),
+        feedback,
         graded_at: new Date().toISOString(),
         graded_by: user.id,
       })
@@ -154,7 +210,7 @@ export async function manualGrade(
       recipientId: sub.student_id,
       type: "assignment_graded",
       title: `Your submission was graded: ${sub.assignments?.title ?? "Assignment"}`,
-      body: `Score: ${parsed.data.score} / ${sub.assignments?.points_available ?? 100}`,
+      body: `Score: ${score} / ${maxScore}`,
       actionUrl: sub.assignments?.classroom_id
         ? `/classroom/${sub.assignments.classroom_id}`
         : "/classroom",
@@ -166,52 +222,7 @@ export async function manualGrade(
     if (sub.assignments?.classroom_id) {
       revalidatePath(`/classroom/${sub.assignments.classroom_id}`)
     }
-    return ok({ gradeId: grade.id })
-  } catch (e) {
-    return fail((e as Error).message)
-  }
-}
-
-// ── Override an existing grade (writes to grade_history) ──────────────────
-
-export async function overrideGrade(
-  input: z.infer<typeof GradeInput>,
-): Promise<ActionResult<{ gradeId: string }>> {
-  const parsed = GradeInput.safeParse(input)
-  if (!parsed.success) return fail("Invalid input.")
-  try {
-    const { supabase, user } = await requireUser()
-
-    const { data: existing } = await supabase
-      .from("grades")
-      .select("id, score, feedback, graded_by")
-      .eq("submission_id", parsed.data.submissionId)
-      .single()
-    if (!existing) return fail("No existing grade to override.")
-
-    // Audit: snapshot the previous state.
-    const { error: histErr } = await supabase.from("grade_history").insert({
-      grade_id: existing.id,
-      previous_score: existing.score,
-      previous_feedback: existing.feedback,
-      previous_graded_by: existing.graded_by,
-      changed_by: user.id,
-    })
-    if (histErr) return fail(histErr.message)
-
-    const { error: updErr } = await supabase
-      .from("grades")
-      .update({
-        score: parsed.data.score,
-        feedback: parsed.data.feedback ?? null,
-        graded_by: user.id,
-        was_overridden: true,
-        graded_at: new Date().toISOString(),
-      })
-      .eq("id", existing.id)
-    if (updErr) return fail(updErr.message)
-
-    return ok({ gradeId: existing.id })
+    return ok({ gradeId, wasRegrade: !!existing })
   } catch (e) {
     return fail((e as Error).message)
   }

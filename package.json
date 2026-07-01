@@ -24,7 +24,9 @@
     "test:covers": "npx tsx scripts/covers/cover-factory.test.ts",
     "typecheck": "tsc --noEmit",
     "audit:stoa": "npx tsx scripts/audit-stoa-collection.ts",
-    "validate:achievements": "npx tsx scripts/validate-achievements.ts"
+    "validate:achievements": "npx tsx scripts/validate-achievements.ts",
+    "verify:billing": "node --conditions=react-server --import tsx scripts/verify-billing-entitlements.ts",
+    "verify:billing:stripe": "node --import tsx scripts/verify-billing-stripe.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.90.0",

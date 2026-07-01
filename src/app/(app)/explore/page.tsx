@@ -29,7 +29,6 @@ import {
 import { getCountryColor } from "@/lib/country-colors"
 import { BOOKS } from "@/data/books"
 import { authorSlug } from "@/data/authors"
-import { SectionVirgilPanel } from "@/components/virgil/SectionVirgilPanel"
 
 // ── Constants ────────────────────────────────────────────────────────────────
 
@@ -357,14 +356,6 @@ export default function ExplorePage() {
           </div>
         </div>
       </div>
-
-      {/* Virgil search assistant */}
-      <SectionVirgilPanel
-        className="m-3 shrink-0"
-        title="Explore literature with Virgil"
-        placeholder="Ask Virgil about a country or tradition…"
-        hint="Name a place or culture and I'll guide you to the authors and works that shaped it."
-      />
 
       {/* ── Map container ──────────────────────────────────────────────── */}
       <div

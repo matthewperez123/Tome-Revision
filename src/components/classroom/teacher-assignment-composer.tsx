@@ -2,25 +2,54 @@
 
 import { useEffect, useState, useTransition } from "react"
 import { useRouter } from "next/navigation"
-import { ClipboardList, Sparkles, Users, UserPlus, Layers } from "lucide-react"
+import {
+  ClipboardList,
+  Sparkles,
+  Users,
+  UserPlus,
+  Layers,
+  BookOpen,
+  Brain,
+  Highlighter,
+  MessageCircle,
+  PenTool,
+} from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { toast } from "sonner"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { useAuth } from "@/hooks/use-auth"
 import { createClient } from "@/lib/supabase/client"
-import { createAssignment } from "@/lib/actions/assignments"
+import { createAssignment, publishAssignment } from "@/lib/actions/assignments"
 
 type Scope = "classroom" | "group" | "individuals"
-type Type = "chapter_read" | "trial"
+type Type = "reading" | "trial" | "annotation" | "discussion" | "essay"
+
+const TYPE_META: { v: Type; label: string; Icon: typeof BookOpen }[] = [
+  { v: "reading", label: "Reading", Icon: BookOpen },
+  { v: "trial", label: "Trial", Icon: Brain },
+  { v: "annotation", label: "Annotation", Icon: Highlighter },
+  { v: "discussion", label: "Discussion", Icon: MessageCircle },
+  { v: "essay", label: "Essay", Icon: PenTool },
+]
+
+interface Member {
+  id: string
+  name: string
+}
+interface Group {
+  id: string
+  name: string
+}
 
 /**
  * "New assignment" composer for the classroom detail page.
  *
- * Renders only for real-mode owner/co_teacher of THIS classroom. Activates
- * the new `scope` (classroom/group/individuals) and peer-review fields on
- * the assignments table — features the existing /classroom/[id]/assignments/
- * create flow doesn't yet expose. Demo mode and student members never see it.
+ * Renders only for real-mode owner/co_teacher of THIS classroom. Covers all
+ * five assignment types (reading / trial / annotation / discussion / essay),
+ * targeting (whole class / group / individuals → assignment_targets), and the
+ * draft → publish flow: "Save draft" creates a hidden draft; "Publish" creates
+ * then publishes (eager submissions + class_assignment notifications).
  */
 export function TeacherAssignmentComposer({
   classroomId,
@@ -34,14 +63,26 @@ export function TeacherAssignmentComposer({
 
   // Form state
   const [title, setTitle] = useState("")
-  const [instructions, setInstructions] = useState("")
-  const [type, setType] = useState<Type>("chapter_read")
+  const [description, setDescription] = useState("")
+  const [type, setType] = useState<Type>("reading")
   const [bookId, setBookId] = useState("")
-  const [chapterNumber, setChapterNumber] = useState<string>("")
+  const [chapterStart, setChapterStart] = useState("")
+  const [chapterEnd, setChapterEnd] = useState("")
   const [trialId, setTrialId] = useState("")
+  const [discussionPrompt, setDiscussionPrompt] = useState("")
+  const [essayPrompt, setEssayPrompt] = useState("")
+  const [essayWordMin, setEssayWordMin] = useState("")
+  const [essayWordMax, setEssayWordMax] = useState("")
+  const [annotationTarget, setAnnotationTarget] = useState("3")
   const [dueAt, setDueAt] = useState("")
+  const [gracePeriodDays, setGracePeriodDays] = useState("0")
+  const [latePenaltyPercent, setLatePenaltyPercent] = useState("0")
   const [points, setPoints] = useState(100)
   const [scope, setScope] = useState<Scope>("classroom")
+  const [members, setMembers] = useState<Member[]>([])
+  const [groups, setGroups] = useState<Group[]>([])
+  const [targetUserIds, setTargetUserIds] = useState<string[]>([])
+  const [targetGroupIds, setTargetGroupIds] = useState<string[]>([])
   const [peerReviewEnabled, setPeerReviewEnabled] = useState(false)
   const [reviewersPer, setReviewersPer] = useState(2)
   const [pending, startTransition] = useTransition()
@@ -68,50 +109,152 @@ export function TeacherAssignmentComposer({
     }
   }, [classroomId, user, isDemoMode])
 
+  // Load the roster + groups once the composer opens, so targeting is real.
+  useEffect(() => {
+    if (!open || !allowed) return
+    let cancelled = false
+    ;(async () => {
+      const supabase = createClient()
+      const [{ data: memberData }, { data: groupData }] = await Promise.all([
+        supabase
+          .from("classroom_members")
+          .select("student_id, profiles(id, display_name)")
+          .eq("classroom_id", classroomId)
+          .eq("role", "student"),
+        supabase
+          .from("classroom_groups")
+          .select("id, name")
+          .eq("classroom_id", classroomId),
+      ])
+      if (cancelled) return
+      setMembers(
+        (memberData ?? []).map((m) => {
+          const row = m as unknown as {
+            student_id: string
+            profiles?: { id: string; display_name: string } | null
+          }
+          return {
+            id: row.profiles?.id ?? row.student_id,
+            name: row.profiles?.display_name ?? "Student",
+          }
+        }),
+      )
+      setGroups((groupData as Group[] | null) ?? [])
+    })()
+    return () => {
+      cancelled = true
+    }
+  }, [open, allowed, classroomId])
+
   if (!allowed) return null
 
   function reset() {
     setTitle("")
-    setInstructions("")
-    setType("chapter_read")
+    setDescription("")
+    setType("reading")
     setBookId("")
-    setChapterNumber("")
+    setChapterStart("")
+    setChapterEnd("")
     setTrialId("")
+    setDiscussionPrompt("")
+    setEssayPrompt("")
+    setEssayWordMin("")
+    setEssayWordMax("")
+    setAnnotationTarget("3")
     setDueAt("")
+    setGracePeriodDays("0")
+    setLatePenaltyPercent("0")
     setPoints(100)
     setScope("classroom")
+    setTargetUserIds([])
+    setTargetGroupIds([])
     setPeerReviewEnabled(false)
     setReviewersPer(2)
   }
 
-  function submit() {
+  function buildInput() {
+    return {
+      classroomId,
+      title: title.trim(),
+      description: description.trim() || undefined,
+      type,
+      bookId:
+        type === "reading" || type === "annotation"
+          ? bookId.trim() || undefined
+          : undefined,
+      chapterRangeStart: chapterStart ? parseInt(chapterStart, 10) : undefined,
+      chapterRangeEnd: chapterEnd ? parseInt(chapterEnd, 10) : undefined,
+      trialId: type === "trial" ? trialId.trim() || undefined : undefined,
+      discussionPrompt:
+        type === "discussion" ? discussionPrompt.trim() || undefined : undefined,
+      essayPrompt: type === "essay" ? essayPrompt.trim() || undefined : undefined,
+      essayWordMin:
+        type === "essay" && essayWordMin ? parseInt(essayWordMin, 10) : undefined,
+      essayWordMax:
+        type === "essay" && essayWordMax ? parseInt(essayWordMax, 10) : undefined,
+      annotationTarget:
+        type === "annotation" && annotationTarget
+          ? parseInt(annotationTarget, 10)
+          : undefined,
+      dueAt: dueAt ? new Date(dueAt).toISOString() : undefined,
+      gracePeriodDays: parseInt(gracePeriodDays || "0", 10),
+      latePenaltyPercent: parseInt(latePenaltyPercent || "0", 10),
+      points,
+      scope,
+      targetGroupIds: scope === "group" ? targetGroupIds : undefined,
+      targetUserIds: scope === "individuals" ? targetUserIds : undefined,
+      peerReviewEnabled,
+      peerReviewersPerSubmission: reviewersPer,
+    }
+  }
+
+  function save(publish: boolean) {
     if (title.trim().length === 0) return
     startTransition(async () => {
-      const result = await createAssignment({
-        classroomId,
-        title: title.trim(),
-        instructions: instructions.trim() || undefined,
-        type,
-        bookId: type === "chapter_read" ? bookId.trim() || undefined : undefined,
-        chapterNumber: chapterNumber ? parseInt(chapterNumber, 10) : undefined,
-        trialId: type === "trial" ? trialId.trim() || undefined : undefined,
-        dueAt: dueAt ? new Date(dueAt).toISOString() : undefined,
-        points,
-        scope,
-        targetGroupIds: undefined,
-        targetUserIds: undefined,
-        peerReviewEnabled,
-        peerReviewersPerSubmission: reviewersPer,
-      })
-      if (result.ok) {
-        toast.success("Assignment created")
-        reset()
-        setOpen(false)
-        router.refresh()
-      } else {
+      const result = await createAssignment(buildInput())
+      if (!result.ok) {
         toast.error(result.error)
+        return
       }
+      if (publish) {
+        const pub = await publishAssignment(result.data.id)
+        if (!pub.ok) {
+          toast.error(pub.error)
+          router.refresh()
+          return
+        }
+        toast.success(
+          pub.data.published > 0
+            ? `Published to ${pub.data.published} student${pub.data.published === 1 ? "" : "s"}`
+            : "Assignment published",
+        )
+      } else {
+        toast.success("Draft saved")
+      }
+      reset()
+      setOpen(false)
+      router.refresh()
     })
+  }
+
+  const canSubmit =
+    title.trim().length > 0 &&
+    !((type === "reading" || type === "annotation") && !bookId.trim()) &&
+    !(type === "trial" && !trialId.trim()) &&
+    !(type === "discussion" && !discussionPrompt.trim()) &&
+    !(type === "essay" && !essayPrompt.trim()) &&
+    !(scope === "group" && targetGroupIds.length === 0) &&
+    !(scope === "individuals" && targetUserIds.length === 0)
+
+  function toggleUser(id: string) {
+    setTargetUserIds((prev) =>
+      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id],
+    )
+  }
+  function toggleGroup(id: string) {
+    setTargetGroupIds((prev) =>
+      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id],
+    )
   }
 
   return (
@@ -147,39 +290,39 @@ export function TeacherAssignmentComposer({
               />
 
               <textarea
-                value={instructions}
-                onChange={(e) => setInstructions(e.target.value)}
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
                 placeholder="Instructions (optional)"
                 rows={2}
                 className="w-full resize-none rounded-md border border-border bg-background px-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--tome-accent)]"
               />
 
               {/* Type picker */}
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2">
                 <label className="text-xs font-medium text-muted-foreground">
                   Type:
                 </label>
-                <div className="flex gap-1">
-                  {(["chapter_read", "trial"] as const).map((t) => (
+                <div className="flex flex-wrap gap-1">
+                  {TYPE_META.map(({ v, label, Icon }) => (
                     <button
-                      key={t}
+                      key={v}
                       type="button"
-                      onClick={() => setType(t)}
-                      className={`rounded-full px-3 py-1 text-xs ${
-                        type === t
+                      onClick={() => setType(v)}
+                      className={`flex items-center gap-1 rounded-full px-3 py-1 text-xs ${
+                        type === v
                           ? "bg-foreground text-background"
                           : "bg-muted text-muted-foreground hover:text-foreground"
                       }`}
                     >
-                      {t === "chapter_read" ? "Chapter read" : "Trial"}
+                      <Icon className="size-3" /> {label}
                     </button>
                   ))}
                 </div>
               </div>
 
               {/* Conditional content fields */}
-              {type === "chapter_read" && (
-                <div className="grid grid-cols-2 gap-2">
+              {(type === "reading" || type === "annotation") && (
+                <div className="grid grid-cols-3 gap-2">
                   <Input
                     value={bookId}
                     onChange={(e) => setBookId(e.target.value)}
@@ -187,12 +330,34 @@ export function TeacherAssignmentComposer({
                     className="h-9 text-sm"
                   />
                   <Input
-                    value={chapterNumber}
-                    onChange={(e) => setChapterNumber(e.target.value)}
-                    placeholder="Chapter #"
+                    value={chapterStart}
+                    onChange={(e) => setChapterStart(e.target.value)}
+                    placeholder="From ch."
                     type="number"
                     min={1}
                     className="h-9 text-sm"
+                  />
+                  <Input
+                    value={chapterEnd}
+                    onChange={(e) => setChapterEnd(e.target.value)}
+                    placeholder="To ch. (opt)"
+                    type="number"
+                    min={1}
+                    className="h-9 text-sm"
+                  />
+                </div>
+              )}
+              {type === "annotation" && (
+                <div className="flex items-center gap-2">
+                  <label className="text-xs font-medium text-muted-foreground">
+                    Annotations required:
+                  </label>
+                  <Input
+                    value={annotationTarget}
+                    onChange={(e) => setAnnotationTarget(e.target.value)}
+                    type="number"
+                    min={1}
+                    className="h-9 w-20 text-sm"
                   />
                 </div>
               )}
@@ -203,6 +368,44 @@ export function TeacherAssignmentComposer({
                   placeholder="Trial id"
                   className="h-9 text-sm"
                 />
+              )}
+              {type === "discussion" && (
+                <textarea
+                  value={discussionPrompt}
+                  onChange={(e) => setDiscussionPrompt(e.target.value)}
+                  placeholder="Discussion prompt"
+                  rows={2}
+                  className="w-full resize-none rounded-md border border-border bg-background px-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--tome-accent)]"
+                />
+              )}
+              {type === "essay" && (
+                <div className="space-y-2">
+                  <textarea
+                    value={essayPrompt}
+                    onChange={(e) => setEssayPrompt(e.target.value)}
+                    placeholder="Essay prompt"
+                    rows={2}
+                    className="w-full resize-none rounded-md border border-border bg-background px-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--tome-accent)]"
+                  />
+                  <div className="grid grid-cols-2 gap-2">
+                    <Input
+                      value={essayWordMin}
+                      onChange={(e) => setEssayWordMin(e.target.value)}
+                      placeholder="Min words (opt)"
+                      type="number"
+                      min={0}
+                      className="h-9 text-sm"
+                    />
+                    <Input
+                      value={essayWordMax}
+                      onChange={(e) => setEssayWordMax(e.target.value)}
+                      placeholder="Max words (opt)"
+                      type="number"
+                      min={1}
+                      className="h-9 text-sm"
+                    />
+                  </div>
+                </div>
               )}
 
               {/* Due + points */}
@@ -224,7 +427,37 @@ export function TeacherAssignmentComposer({
                 />
               </div>
 
-              {/* Scope picker — the new field */}
+              {/* Grace + late penalty */}
+              <div className="grid grid-cols-2 gap-2">
+                <div className="flex items-center gap-1.5">
+                  <label className="whitespace-nowrap text-[10px] text-muted-foreground">
+                    Grace (days)
+                  </label>
+                  <Input
+                    value={gracePeriodDays}
+                    onChange={(e) => setGracePeriodDays(e.target.value)}
+                    type="number"
+                    min={0}
+                    max={60}
+                    className="h-9 text-sm"
+                  />
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <label className="whitespace-nowrap text-[10px] text-muted-foreground">
+                    Late penalty %
+                  </label>
+                  <Input
+                    value={latePenaltyPercent}
+                    onChange={(e) => setLatePenaltyPercent(e.target.value)}
+                    type="number"
+                    min={0}
+                    max={100}
+                    className="h-9 text-sm"
+                  />
+                </div>
+              </div>
+
+              {/* Scope picker */}
               <div>
                 <label className="mb-1 block text-xs font-medium text-muted-foreground">
                   Who gets this assignment?
@@ -251,10 +484,54 @@ export function TeacherAssignmentComposer({
                     </button>
                   ))}
                 </div>
-                {scope !== "classroom" && (
-                  <p className="mt-1 text-[10px] italic text-muted-foreground">
-                    Pick groups/individuals after creating — coming next session.
-                  </p>
+
+                {scope === "individuals" && (
+                  <div className="mt-2 max-h-40 space-y-1 overflow-y-auto rounded-md border border-border p-2">
+                    {members.length === 0 ? (
+                      <p className="text-[11px] text-muted-foreground">
+                        No students enrolled yet.
+                      </p>
+                    ) : (
+                      members.map((m) => (
+                        <label
+                          key={m.id}
+                          className="flex cursor-pointer items-center gap-2 text-xs"
+                        >
+                          <input
+                            type="checkbox"
+                            checked={targetUserIds.includes(m.id)}
+                            onChange={() => toggleUser(m.id)}
+                            className="size-3.5 rounded border-border"
+                          />
+                          {m.name}
+                        </label>
+                      ))
+                    )}
+                  </div>
+                )}
+                {scope === "group" && (
+                  <div className="mt-2 max-h-40 space-y-1 overflow-y-auto rounded-md border border-border p-2">
+                    {groups.length === 0 ? (
+                      <p className="text-[11px] text-muted-foreground">
+                        No groups yet — create one from Manage.
+                      </p>
+                    ) : (
+                      groups.map((g) => (
+                        <label
+                          key={g.id}
+                          className="flex cursor-pointer items-center gap-2 text-xs"
+                        >
+                          <input
+                            type="checkbox"
+                            checked={targetGroupIds.includes(g.id)}
+                            onChange={() => toggleGroup(g.id)}
+                            className="size-3.5 rounded border-border"
+                          />
+                          {g.name}
+                        </label>
+                      ))
+                    )}
+                  </div>
                 )}
               </div>
 
@@ -303,16 +580,20 @@ export function TeacherAssignmentComposer({
                 </Button>
                 <Button
                   size="sm"
+                  variant="outline"
                   className="text-xs"
-                  onClick={submit}
-                  disabled={
-                    pending ||
-                    title.trim().length === 0 ||
-                    (type === "chapter_read" && !bookId.trim()) ||
-                    (type === "trial" && !trialId.trim())
-                  }
+                  onClick={() => save(false)}
+                  disabled={pending || !canSubmit}
                 >
-                  {pending ? "Creating…" : "Create assignment"}
+                  {pending ? "Saving…" : "Save draft"}
+                </Button>
+                <Button
+                  size="sm"
+                  className="text-xs"
+                  onClick={() => save(true)}
+                  disabled={pending || !canSubmit}
+                >
+                  {pending ? "Publishing…" : "Publish"}
                 </Button>
               </div>
             </div>

@@ -98,11 +98,24 @@ export default function PrivacyPage() {
               <p>
                 Tome is used in educational settings. Where Tome is used by
                 students under the direction of a school or teacher, we act as a
-                service provider and process student data only to provide the
-                service. We do not sell student personal information or use it
-                for targeted advertising. Schools are responsible for obtaining
-                any consents required under applicable law, including COPPA and
-                FERPA.
+                service provider / school official and process student data only
+                to provide the service under the school&apos;s direction. We{" "}
+                <strong>never sell student personal information</strong>, do not
+                share it for targeted advertising, and do not use it to build
+                advertising profiles. We follow FERPA- and COPPA-aligned
+                practices for student data.
+              </p>
+              <p>
+                Schools remain responsible for obtaining any consents required
+                under applicable law, including COPPA and FERPA. For students
+                under 13, we support the school-consent model, in which the
+                school provides consent for educational use on behalf of parents.
+              </p>
+              <p>
+                For a plain-language summary of how we handle student data —
+                including our sub-processors, deletion, and a Data Processing
+                Addendum for schools — see{" "}
+                <a href="/security">Privacy &amp; Security for Schools</a>.
               </p>
             </section>
 
@@ -114,10 +127,15 @@ export default function PrivacyPage() {
               </p>
               <ul>
                 <li>
-                  <strong>Service providers</strong> who process data on our
-                  behalf (for example, Stripe for payments and our hosting and
-                  database providers) under contractual confidentiality and
-                  security obligations;
+                  <strong>Service providers (sub-processors)</strong> who
+                  process data on our behalf under contractual confidentiality
+                  and security obligations — Supabase (database, authentication,
+                  and hosting), Vercel (application hosting), Stripe (payments),
+                  Resend (transactional email), and Anthropic (which powers
+                  Virgil&apos;s annotations and grading). The current list is
+                  maintained on our{" "}
+                  <a href="/security">Privacy &amp; Security for Schools</a>{" "}
+                  page;
                 </li>
                 <li>
                   <strong>Your school or teacher</strong>, where you use Tome as

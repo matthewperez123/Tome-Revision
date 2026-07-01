@@ -2,19 +2,29 @@
 
 import { revalidatePath } from "next/cache"
 import { z } from "zod"
-import { sendClassroomInviteEmail } from "@/lib/email/classroom-invite"
+import {
+  sendClassroomInviteEmail,
+  sendClassroomJoinInvite,
+} from "@/lib/email/classroom-invite"
 import {
   type ActionResult,
   createAdminClient,
   fail,
-  generateJoinCode,
   notify,
   ok,
   requireUser,
 } from "./_shared"
+// Classroom join codes are the 6-char uppercase alphanumeric format the student
+// join UI (isValidJoinCode) and invite links expect — NOT the 4-4 group code.
+import { generateJoinCode } from "@/lib/classroom-utils"
+import { hasActiveSchoolEntitlement } from "@/lib/entitlements/server"
 
 const Uuid = z.string().uuid()
 const Role = z.enum(["owner", "co_teacher", "ta", "student"])
+
+/** Free Classroom tier: one class, capped at this many students. */
+const FREE_CLASS_LIMIT = 1
+const FREE_STUDENT_CAP = 30
 
 const CreateInput = z.object({
   name: z.string().trim().min(1).max(120),
@@ -34,6 +44,26 @@ export async function createClassroom(
   if (!parsed.success) return fail("Invalid input.")
   try {
     const { supabase, user } = await requireUser()
+
+    // Free Classroom tier = one class, ≤30 students. An active School plan
+    // lifts both caps. The cap is enforced on owned (teacher_id) classrooms.
+    const hasSchool = await hasActiveSchoolEntitlement(user.id)
+    let maxStudents = parsed.data.maxStudents ?? null
+    if (!hasSchool) {
+      const admin = createAdminClient()
+      const { count: owned } = await admin
+        .from("classrooms")
+        .select("*", { count: "exact", head: true })
+        .eq("teacher_id", user.id)
+      if ((owned ?? 0) >= FREE_CLASS_LIMIT) {
+        return fail(
+          "The free Classroom tier includes one class. Upgrade to School for more.",
+        )
+      }
+      if (maxStudents == null || maxStudents > FREE_STUDENT_CAP) {
+        maxStudents = FREE_STUDENT_CAP
+      }
+    }
 
     // Generate a unique join code (retry on collision).
     let joinCode = generateJoinCode()
@@ -55,7 +85,7 @@ export async function createClassroom(
         description: parsed.data.description ?? null,
         subject: parsed.data.subject ?? null,
         grade_level: parsed.data.gradeLevel ?? null,
-        max_students: parsed.data.maxStudents ?? null,
+        max_students: maxStudents,
         leaderboard_enabled: parsed.data.leaderboardEnabled ?? true,
         teacher_id: user.id,
         join_code: joinCode,
@@ -135,20 +165,34 @@ export async function joinClassroomByCode(
 
     const { data: classroom, error: lookupErr } = await admin
       .from("classrooms")
-      .select("id, name")
+      .select("id, name, archived, max_students")
       .eq("join_code", parsed.data)
       .maybeSingle()
     if (lookupErr) return fail(lookupErr.message)
     if (!classroom) return fail("No classroom found for that code.")
+    if (classroom.archived) {
+      return fail("This classroom is archived and no longer accepting students.")
+    }
 
-    // Check existing membership.
+    // Idempotent: already-enrolled users just get sent in.
     const { data: existing } = await admin
       .from("classroom_members")
       .select("id")
       .eq("classroom_id", classroom.id)
       .eq("student_id", user.id)
       .maybeSingle()
-    if (existing) return fail("You're already in this classroom.")
+    if (existing) return ok({ classroomId: classroom.id })
+
+    // Enforce the capacity cap against the live member count.
+    if (classroom.max_students != null) {
+      const { count } = await admin
+        .from("classroom_members")
+        .select("*", { count: "exact", head: true })
+        .eq("classroom_id", classroom.id)
+      if ((count ?? 0) >= classroom.max_students) {
+        return fail("This classroom is full.")
+      }
+    }
 
     const { error: insertErr } = await admin
       .from("classroom_members")
@@ -167,64 +211,150 @@ export async function joinClassroomByCode(
   }
 }
 
+const InviteInput = z.object({
+  classroomId: Uuid,
+  emails: z.array(z.string().trim().email()).min(1).max(50),
+  role: z.enum(["student", "co_teacher", "ta"]).default("student"),
+})
+
+/**
+ * COPPA-safe email invite. Sends each address a link to /join?code=<join_code>;
+ * students self-join through the link after authenticating, so NO member row
+ * (and no student PII) is created here. Teacher-only (owner/co_teacher).
+ */
 export async function inviteToClassroom(
-  classroomId: string,
-  userId: string,
-  role: z.infer<typeof Role>,
-): Promise<ActionResult<void>> {
-  const cParsed = Uuid.safeParse(classroomId)
-  const uParsed = Uuid.safeParse(userId)
-  const rParsed = Role.safeParse(role)
-  if (!cParsed.success || !uParsed.success || !rParsed.success) {
-    return fail("Invalid input.")
-  }
-  if (rParsed.data === "owner") {
-    return fail("Cannot invite as owner. Use transfer-ownership instead.")
-  }
+  input: z.input<typeof InviteInput>,
+): Promise<ActionResult<{ sent: number }>> {
+  const parsed = InviteInput.safeParse(input)
+  if (!parsed.success) return fail("Enter one or more valid email addresses.")
+  const { classroomId, emails, role } = parsed.data
   try {
     const { supabase, user } = await requireUser()
 
-    // RLS will block this if the actor isn't owner/co_teacher; we still
-    // try via the user client so the policy is exercised.
-    const { error } = await supabase.from("classroom_members").insert({
-      classroom_id: cParsed.data,
-      student_id: uParsed.data,
-      role: rParsed.data,
+    // Only owners/co-teachers may invite. The RPC is the canonical role gate.
+    const { data: allowed } = await supabase.rpc("user_has_classroom_role", {
+      p_user_id: user.id,
+      p_classroom_id: classroomId,
+      p_roles: ["owner", "co_teacher"],
     })
-    if (error) return fail(error.message)
+    if (!allowed) return fail("Only classroom staff can send invites.")
 
     const { data: classroom } = await supabase
       .from("classrooms")
-      .select("name")
-      .eq("id", cParsed.data)
-      .single()
-    const classroomName = classroom?.name ?? "a classroom"
+      .select("name, join_code, archived")
+      .eq("id", classroomId)
+      .maybeSingle()
+    if (!classroom) return fail("Classroom not found.")
+    if (classroom.archived) return fail("This classroom is archived.")
 
-    await notify({
-      recipientId: uParsed.data,
-      type: "group_invite",
-      title: `You were added to ${classroomName}`,
-      actionUrl: `/classroom/${cParsed.data}`,
-      actorId: user.id,
-      entityType: "classroom",
-      entityId: cParsed.data,
-    })
-
-    // Best-effort invite email (preference-gated in the helper).
     const { data: inviter } = await supabase
       .from("profiles")
       .select("display_name")
       .eq("id", user.id)
       .maybeSingle()
-    await sendClassroomInviteEmail({
-      inviteeId: uParsed.data,
-      classroomId: cParsed.data,
-      classroomName,
-      inviterName: inviter?.display_name ?? "Your teacher",
-      role: rParsed.data,
+
+    const appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://usetome.app"
+    const joinUrl = `${appUrl}/join?code=${encodeURIComponent(classroom.join_code)}`
+
+    // De-dupe addresses (case-insensitive) before sending.
+    const unique = Array.from(
+      new Map(emails.map((e) => [e.toLowerCase(), e])).values(),
+    )
+
+    let sent = 0
+    for (const email of unique) {
+      const res = await sendClassroomJoinInvite({
+        toEmail: email,
+        classroomName: classroom.name,
+        inviterName: inviter?.display_name ?? "Your teacher",
+        roleLabel: role === "student" ? "student" : role.replace("_", "-"),
+        joinCode: classroom.join_code,
+        joinUrl,
+      })
+      if (res.ok) sent++
+    }
+
+    return ok({ sent })
+  } catch (e) {
+    return fail((e as Error).message)
+  }
+}
+
+const CoTeacherInput = z.object({
+  classroomId: Uuid,
+  profileId: Uuid,
+  role: z.enum(["co_teacher", "ta"]),
+})
+
+/**
+ * Add an existing user as staff (co-teacher or TA). Owner-only. Inserts the
+ * classroom_members row directly (they're already a Tome account, so this is
+ * not a COPPA self-join path) and notifies them.
+ */
+export async function addCoTeacher(
+  input: z.infer<typeof CoTeacherInput>,
+): Promise<ActionResult<void>> {
+  const parsed = CoTeacherInput.safeParse(input)
+  if (!parsed.success) return fail("Invalid input.")
+  const { classroomId, profileId, role } = parsed.data
+  try {
+    const { supabase, user } = await requireUser()
+
+    const { data: isOwner } = await supabase.rpc("user_has_classroom_role", {
+      p_user_id: user.id,
+      p_classroom_id: classroomId,
+      p_roles: ["owner"],
+    })
+    if (!isOwner) return fail("Only the classroom owner can add staff.")
+
+    // RLS (members_owner_coteacher_insert) also enforces staff-only insert.
+    const { error } = await supabase.from("classroom_members").insert({
+      classroom_id: classroomId,
+      student_id: profileId,
+      role,
+    })
+    if (error) {
+      if (/duplicate key/i.test(error.message)) {
+        return fail("That person is already a member of this classroom.")
+      }
+      return fail(error.message)
+    }
+
+    const { data: classroom } = await supabase
+      .from("classrooms")
+      .select("name")
+      .eq("id", classroomId)
+      .maybeSingle()
+    const classroomName = classroom?.name ?? "a classroom"
+    const inviterName = (
+      await supabase
+        .from("profiles")
+        .select("display_name")
+        .eq("id", user.id)
+        .maybeSingle()
+    ).data?.display_name
+
+    await notify({
+      recipientId: profileId,
+      type: "group_invite",
+      title: `You were added to ${classroomName}`,
+      body: `You're now a ${role === "co_teacher" ? "co-teacher" : "teaching assistant"}.`,
+      actionUrl: `/classroom/${classroomId}`,
+      actorId: user.id,
+      entityType: "classroom",
+      entityId: classroomId,
     })
 
-    revalidatePath(`/classroom/${cParsed.data}`)
+    // Best-effort in-app/email notice (preference-gated in the helper).
+    await sendClassroomInviteEmail({
+      inviteeId: profileId,
+      classroomId,
+      classroomName,
+      inviterName: inviterName ?? "Your teacher",
+      role,
+    })
+
+    revalidatePath(`/classroom/${classroomId}`)
     return ok(undefined)
   } catch (e) {
     return fail((e as Error).message)

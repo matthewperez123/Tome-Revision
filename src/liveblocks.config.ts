@@ -4,10 +4,24 @@
 // writer) and the /api/liveblocks-auth route (where userInfo is minted).
 declare global {
   interface Liveblocks {
-    // Per-connection presence broadcast to others in the room.
+    // Per-connection presence broadcast to others in the room. All ephemeral
+    // (never persisted) — highlights/notes live in Supabase, not here.
     Presence: {
       // Which chapter index the reader is currently on (-1 before known).
       chapterIndex: number
+      // Live pointer position, expressed as a fraction (0..1) of the reader
+      // surface so it maps across viewports. `chapterIndex` on the cursor lets
+      // peers ignore a cursor authored on a different chapter than they're on.
+      // Null when the pointer is outside the reader surface. Optional so
+      // annotation rooms (guided sessions) can omit it in initialPresence.
+      cursor?: { xPct: number; yPct: number; chapterIndex: number } | null
+      // Active text selection as fractional bounding rects of the reader
+      // surface (one per client rect). Null when nothing is selected. Optional
+      // so annotation rooms (guided sessions) can omit it in initialPresence.
+      selection?: {
+        chapterIndex: number
+        rects: { xPct: number; yPct: number; wPct: number; hPct: number }[]
+      } | null
     }
     // Immutable metadata the auth endpoint attaches to the session. Mirrors
     // the public profile fields safe to surface to co-readers.
