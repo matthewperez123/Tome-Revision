@@ -220,19 +220,29 @@ export function BookCard({ book, progress, size = "sm", className, activeSort, r
           </span>
         </div>
 
-        {/* "Recommended by X" pill — links to recommender's profile. */}
-        {recommendedBy && (
-          <Link
-            href={`/profile/${recommendedBy.username}`}
-            onClick={(e) => e.stopPropagation()}
-            className="mt-0.5 inline-flex w-fit items-center gap-1 rounded-full bg-[#D4A04C]/15 px-2 py-0.5 text-[9px] font-medium text-[#9c6e2b] transition-colors hover:bg-[#D4A04C]/25 dark:text-[#D4A04C]"
-          >
-            <Sparkles className="size-2.5" />
-            <span className="truncate max-w-[120px]">
-              Rec. by {recommendedBy.displayName}
+        {/* "Recommended by X" pill — links to recommender's profile in the
+            real app, but renders as plain text in display-only mode (marketing
+            showcases use demo recommenders with no real profile page). */}
+        {recommendedBy &&
+          (interactive ? (
+            <Link
+              href={`/profile/${recommendedBy.username}`}
+              onClick={(e) => e.stopPropagation()}
+              className="mt-0.5 inline-flex w-fit items-center gap-1 rounded-full bg-[#D4A04C]/15 px-2 py-0.5 text-[9px] font-medium text-[#9c6e2b] transition-colors hover:bg-[#D4A04C]/25 dark:text-[#D4A04C]"
+            >
+              <Sparkles className="size-2.5" />
+              <span className="truncate max-w-[120px]">
+                Rec. by {recommendedBy.displayName}
+              </span>
+            </Link>
+          ) : (
+            <span className="mt-0.5 inline-flex w-fit items-center gap-1 rounded-full bg-[#D4A04C]/15 px-2 py-0.5 text-[9px] font-medium text-[#9c6e2b] dark:text-[#D4A04C]">
+              <Sparkles className="size-2.5" />
+              <span className="truncate max-w-[120px]">
+                Rec. by {recommendedBy.displayName}
+              </span>
             </span>
-          </Link>
-        )}
+          ))}
 
         <h3
           className={cn(

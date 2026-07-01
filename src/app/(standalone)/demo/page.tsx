@@ -1,23 +1,60 @@
-import Link from "next/link"
+import type { Metadata } from "next"
+import { LandingNav } from "@/components/landing/LandingNav"
+import { LandingFooter } from "@/components/landing/LandingFooter"
+import { DemoRequestForm } from "./demo-request-form"
 
-export default function DemoPage() {
+export const metadata: Metadata = {
+  title: { absolute: "Book a demo — Tome for Schools" },
+  description:
+    "See how Tome brings the classics to your classroom. Tell us about your school and we'll set up a walkthrough.",
+  alternates: { canonical: "/demo" },
+}
+
+export default async function DemoPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ plan?: string }>
+}) {
+  const { plan } = await searchParams
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-6">
-      <div className="text-center max-w-sm">
-        <h1 className="font-[var(--font-display)] text-3xl font-bold text-foreground mb-3">
-          Coming soon
-        </h1>
-        <p className="text-sm text-muted-foreground mb-6">
-          We&apos;re building the demo booking experience. In the meantime,
-          reach out to us directly.
-        </p>
-        <Link
-          href="/"
-          className="inline-flex items-center px-5 py-2.5 rounded-full border border-border bg-card text-foreground text-sm font-semibold hover:shadow-[0_0_20px_rgba(99,102,241,0.35)] hover:border-indigo-400/40 transition-all duration-200"
-        >
-          Back to home
-        </Link>
-      </div>
+    <div className="min-h-screen bg-background text-foreground">
+      <LandingNav />
+      <main className="px-6 pb-24 pt-32 md:px-12">
+        <div className="mx-auto max-w-3xl">
+          <header className="mb-10 text-center">
+            <p
+              className="mb-3 text-sm font-semibold uppercase tracking-wide"
+              style={{ color: "#C8A24B" }}
+            >
+              Tome for Schools
+            </p>
+            <h1 className="font-[var(--font-display)] text-4xl font-bold text-foreground md:text-5xl">
+              Book a demo
+            </h1>
+            <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted-foreground">
+              See how Tome brings three thousand years of literature into your
+              classroom — with classrooms, a live gradebook, AI-assisted quizzes,
+              and Virgil to guide every reader. Tell us about your school and
+              we&apos;ll be in touch.
+            </p>
+          </header>
+
+          <DemoRequestForm initialPlan={plan} />
+
+          <p className="mt-8 text-center text-sm text-muted-foreground">
+            Prefer email? Reach us at{" "}
+            <a
+              href="/contact"
+              className="text-foreground underline underline-offset-2"
+            >
+              our contact page
+            </a>
+            .
+          </p>
+        </div>
+      </main>
+      <LandingFooter />
     </div>
   )
 }

@@ -10,7 +10,7 @@ import type { GuidedSessionType } from "@/lib/guided-learning-types"
 import type { SupabaseBook } from "@/lib/supabase"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
-import { DEMO_STUDENT_DETAILS } from "@/lib/classroom-students"
+import { useTeacherStudents, type TeacherStudent } from "@/hooks/use-teacher-students"
 import { createDemoSession } from "@/lib/guided-learning-demo"
 
 // ── Assignment type options ─────────────────────────────────────────────────
@@ -131,11 +131,15 @@ function BookSearchPicker({
 // ── Student Roster Selector ─────────────────────────────────────────────────
 
 function StudentRosterSelector({
+  roster,
+  rosterLoading,
   selectedIds,
   onToggle,
   onSelectAll,
   onDeselectAll,
 }: {
+  roster: TeacherStudent[]
+  rosterLoading: boolean
   selectedIds: Set<string>
   onToggle: (id: string) => void
   onSelectAll: () => void
@@ -144,10 +148,36 @@ function StudentRosterSelector({
   const [searchQuery, setSearchQuery] = useState("")
 
   const students = useMemo(() => {
-    if (!searchQuery.trim()) return DEMO_STUDENT_DETAILS
+    if (!searchQuery.trim()) return roster
     const q = searchQuery.toLowerCase()
-    return DEMO_STUDENT_DETAILS.filter((s) => s.name.toLowerCase().includes(q))
-  }, [searchQuery])
+    return roster.filter((s) => s.name.toLowerCase().includes(q))
+  }, [searchQuery, roster])
+
+  if (rosterLoading) {
+    return (
+      <div className="flex items-center justify-center py-10">
+        <div className="size-5 animate-spin rounded-full border-2 border-muted border-t-foreground" />
+      </div>
+    )
+  }
+
+  if (roster.length === 0) {
+    return (
+      <div
+        className="rounded-xl border px-4 py-10 text-center"
+        style={{ borderColor: "rgba(128, 128, 128, 0.12)" }}
+      >
+        <Users className="mx-auto mb-2 size-6 opacity-30" />
+        <p className="text-sm font-medium">No students yet</p>
+        <p className="mt-1 text-xs opacity-50">
+          Students appear here once they join one of your classrooms with your
+          join code.
+        </p>
+      </div>
+    )
+  }
+
+  const allSelected = selectedIds.size === roster.length
 
   return (
     <div className="space-y-3">
@@ -164,17 +194,17 @@ function StudentRosterSelector({
           />
         </div>
         <button
-          onClick={selectedIds.size === DEMO_STUDENT_DETAILS.length ? onDeselectAll : onSelectAll}
+          onClick={allSelected ? onDeselectAll : onSelectAll}
           className="shrink-0 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors hover:bg-muted/50"
           style={{ color: "var(--tome-indigo, #6366F1)" }}
         >
-          {selectedIds.size === DEMO_STUDENT_DETAILS.length ? "Deselect All" : "Select All"}
+          {allSelected ? "Deselect All" : "Select All"}
         </button>
       </div>
 
       {/* Selected count */}
       <p className="text-xs opacity-50">
-        {selectedIds.size} of {DEMO_STUDENT_DETAILS.length} students selected
+        {selectedIds.size} of {roster.length} students selected
       </p>
 
       {/* Student list */}
@@ -212,9 +242,11 @@ function StudentRosterSelector({
               {/* Info */}
               <div className="flex-1 min-w-0">
                 <p className="text-sm font-medium truncate">{s.name}</p>
-                <p className="text-[10px] text-muted-foreground">
-                  {s.gradeLevel} &middot; {s.rank} &middot; Avg {s.avgTrialScore}%
-                </p>
+                {s.classroomNames.length > 0 && (
+                  <p className="text-[10px] text-muted-foreground truncate">
+                    {s.classroomNames.join(" · ")}
+                  </p>
+                )}
               </div>
             </button>
           )
@@ -229,6 +261,7 @@ function StudentRosterSelector({
 export function CreateSessionForm() {
   const router = useRouter()
   const { user, isDemoMode } = useAuth()
+  const { students: roster, loading: rosterLoading } = useTeacherStudents()
   const [type, setType] = useState<AssignmentType>("chapter")
   const [bookId, setBookId] = useState("")
   const [chapterIndex, setChapterIndex] = useState(0)
@@ -270,8 +303,8 @@ export function CreateSessionForm() {
   }, [])
 
   const handleSelectAll = useCallback(() => {
-    setSelectedStudentIds(new Set(DEMO_STUDENT_DETAILS.map((s) => s.id)))
-  }, [])
+    setSelectedStudentIds(new Set(roster.map((s) => s.id)))
+  }, [roster])
 
   const handleDeselectAll = useCallback(() => {
     setSelectedStudentIds(new Set())
@@ -291,8 +324,9 @@ export function CreateSessionForm() {
 
     try {
       if (isDemoMode || !user) {
-        // Demo mode: create session locally
-        const students = DEMO_STUDENT_DETAILS
+        // Demo mode: create session locally. Roster is empty in demo mode
+        // (no fabricated students).
+        const students = roster
           .filter((s) => selectedStudentIds.has(s.id))
           .map((s) => ({ id: s.id, name: s.name, avatarColor: s.avatarColor }))
 
@@ -336,7 +370,7 @@ export function CreateSessionForm() {
     } finally {
       setIsSubmitting(false)
     }
-  }, [type, bookId, chapterIndex, trialId, timeLimit, customTime, needsBook, needsTrial, selectedStudentIds, selectedBook, isDemoMode, user, router])
+  }, [type, bookId, chapterIndex, trialId, timeLimit, customTime, needsBook, needsTrial, selectedStudentIds, selectedBook, isDemoMode, user, router, roster])
 
   const canSubmit = (() => {
     if (isSubmitting) return false
@@ -420,6 +454,8 @@ export function CreateSessionForm() {
           Students
         </label>
         <StudentRosterSelector
+          roster={roster}
+          rosterLoading={rosterLoading}
           selectedIds={selectedStudentIds}
           onToggle={handleToggleStudent}
           onSelectAll={handleSelectAll}

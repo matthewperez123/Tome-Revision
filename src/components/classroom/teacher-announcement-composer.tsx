@@ -35,6 +35,7 @@ export function TeacherAnnouncementComposer({
   const [body, setBody] = useState("")
   const [pinned, setPinned] = useState(false)
   const [pending, startTransition] = useTransition()
+  const [drafting, setDrafting] = useState(false)
 
   // Resolve the viewer's role in this classroom.
   useEffect(() => {
@@ -62,6 +63,39 @@ export function TeacherAnnouncementComposer({
   }, [classroomId, user, isDemoMode])
 
   if (!allowed) return null
+
+  // Ask Virgil to expand the teacher's brief into a polished title + body.
+  // Virgil never posts — it fills the composer for the teacher to review.
+  async function draftWithVirgil() {
+    const brief = body.trim() || title.trim()
+    if (brief.length === 0) {
+      toast.error("Jot a quick brief first, then let Virgil polish it.")
+      return
+    }
+    setDrafting(true)
+    try {
+      const res = await fetch("/api/virgil", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          task: "announcement_draft",
+          input: { classroomId, brief },
+        }),
+      })
+      const data = await res.json()
+      if (!res.ok) {
+        toast.error(data.error ?? "Virgil couldn't draft that. Try again.")
+        return
+      }
+      if (data.title) setTitle(String(data.title))
+      if (data.content) setBody(String(data.content))
+      toast.success("Virgil drafted your announcement — review and post.")
+    } catch {
+      toast.error("Virgil couldn't be reached. Try again.")
+    } finally {
+      setDrafting(false)
+    }
+  }
 
   function handleSubmit() {
     const trimmed = body.trim()
@@ -145,15 +179,25 @@ export function TeacherAnnouncementComposer({
                       setBody("")
                       setPinned(false)
                     }}
-                    disabled={pending}
+                    disabled={pending || drafting}
                   >
                     Cancel
                   </Button>
                   <Button
                     size="sm"
+                    variant="outline"
+                    className="gap-1.5 text-xs"
+                    onClick={draftWithVirgil}
+                    disabled={pending || drafting || (body.trim().length === 0 && title.trim().length === 0)}
+                  >
+                    <Sparkles className="size-3 text-[#D4A04C]" />
+                    {drafting ? "Drafting…" : "Draft with Virgil"}
+                  </Button>
+                  <Button
+                    size="sm"
                     className="text-xs"
                     onClick={handleSubmit}
-                    disabled={pending || body.trim().length === 0}
+                    disabled={pending || drafting || body.trim().length === 0}
                   >
                     {pending ? "Posting…" : "Post"}
                   </Button>

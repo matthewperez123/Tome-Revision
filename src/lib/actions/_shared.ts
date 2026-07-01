@@ -3,6 +3,7 @@ import "server-only"
 import type { SupabaseClient, User } from "@supabase/supabase-js"
 import { createClient } from "@/lib/supabase/server"
 import { createAdminClient as createAdminClientUntyped } from "@/lib/supabase/admin"
+import { hasActiveSchoolEntitlement } from "@/lib/entitlements/server"
 
 // Loose-typed Supabase client alias. Until `supabase gen types typescript`
 // is wired into the build, the action layer cannot get strict insert/select
@@ -41,6 +42,35 @@ export async function requireUser(): Promise<{
 
 export function createAdminClient(): SupaClient {
   return createAdminClientUntyped() as unknown as SupaClient
+}
+
+// ── Paid educator-tool gate ───────────────────────────────────────────────
+// The free Classroom tier (1 class, ≤30 students) is open to any teacher, but
+// the paid educator tools — creating assignments, the gradebook, AI quiz/plan
+// generation, and Virgil reflection grading — require an active School
+// entitlement (as the plan admin OR a covered teacher seat). Call this at the
+// top of every such action; it resolves the signed-in user and verifies the
+// entitlement server-side so it can't be spoofed from the client.
+
+export async function requireSchoolTools(): Promise<
+  | { ok: true; supabase: SupaClient; user: User }
+  | { ok: false; error: string }
+> {
+  let user: User
+  let supabase: SupaClient
+  try {
+    ;({ supabase, user } = await requireUser())
+  } catch {
+    return { ok: false, error: "Sign in to use educator tools." }
+  }
+  const allowed = await hasActiveSchoolEntitlement(user.id)
+  if (!allowed) {
+    return {
+      ok: false,
+      error: "This tool requires an active School plan. Upgrade to unlock educator tools.",
+    }
+  }
+  return { ok: true, supabase, user }
 }
 
 // ── Join-code generator ───────────────────────────────────────────────────

@@ -14,7 +14,6 @@ import {
 } from "@/data/timelines"
 import { BOOKS } from "@/data/books"
 import type { TomeBook } from "@/data/books"
-import { SectionVirgilPanel } from "@/components/virgil/SectionVirgilPanel"
 
 // ── Accordion persistence ───────────────────────────────────────────────────
 
@@ -174,13 +173,6 @@ export default function TimelinesPage() {
           </p>
         </div>
       </div>
-
-      {/* Virgil search assistant */}
-      <SectionVirgilPanel
-        title="Trace an era with Virgil"
-        placeholder="Ask Virgil about a period or author…"
-        hint="Name a century, movement, or author and I'll point you to the works that define it."
-      />
 
       {/* Region accordions — Level 1 */}
       {REGION_ORDER.map((region) => {

@@ -15,7 +15,7 @@ import {
 } from "@/lib/guided-learning-types"
 import { getDefaultSessionSettings } from "@/lib/guided-station-utils"
 import { createDemoSession } from "@/lib/guided-learning-demo"
-import { DEMO_STUDENT_DETAILS } from "@/lib/classroom-students"
+import { useTeacherStudents } from "@/hooks/use-teacher-students"
 import { StepBasics } from "./step-basics"
 import { StepStations } from "./step-stations"
 import { StepRoster } from "./step-roster"
@@ -71,6 +71,7 @@ export function CreateSessionWizard({
 }) {
   const router = useRouter()
   const { user, isDemoMode } = useAuth()
+  const { students: roster, loading: rosterLoading } = useTeacherStudents()
   const [currentStep, setCurrentStep] = useState<WizardStep>("basics")
   const [state, setState] = useState<WizardState>(getInitialState)
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -159,8 +160,9 @@ export function CreateSessionWizard({
 
       try {
         if (isDemoMode || !user) {
-          // Demo mode: save locally and redirect
-          const students = DEMO_STUDENT_DETAILS
+          // Demo mode: save locally and redirect. Roster is empty in demo mode
+          // (no fabricated students) — the session simply starts with none.
+          const students = roster
             .filter((s) => state.selectedStudentIds.has(s.id))
             .map((s) => ({ id: s.id, name: s.name, avatarColor: s.avatarColor }))
 
@@ -239,7 +241,7 @@ export function CreateSessionWizard({
         setIsSubmitting(false)
       }
     },
-    [state, isDemoMode, user, router, editSession],
+    [state, isDemoMode, user, router, editSession, roster],
   )
 
   return (
@@ -324,7 +326,12 @@ export function CreateSessionWizard({
           <StepStations state={state} onChange={updateState} />
         )}
         {currentStep === "roster" && (
-          <StepRoster state={state} onChange={updateState} />
+          <StepRoster
+            state={state}
+            onChange={updateState}
+            roster={roster}
+            rosterLoading={rosterLoading}
+          />
         )}
         {currentStep === "settings" && (
           <StepSettings state={state} onChange={updateState} />

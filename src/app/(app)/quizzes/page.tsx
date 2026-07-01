@@ -9,7 +9,6 @@ import { getBook } from "@/lib/content"
 import { BookCoverThumb } from "@/components/tome/book-cover-thumb"
 import { Skeleton } from "@/components/ui/skeleton"
 import type { TomeBook } from "@/data/books"
-import { SectionVirgilPanel } from "@/components/virgil/SectionVirgilPanel"
 
 // Books with quiz content available
 const QUIZ_BOOKS = [
@@ -60,13 +59,6 @@ export default function QuizzesPage() {
       </div>
 
       <div className="flex-1 overflow-y-auto p-4 space-y-6">
-        {/* Virgil search assistant */}
-        <SectionVirgilPanel
-          title="Find a quiz with Virgil"
-          placeholder="Ask Virgil which quiz to take…"
-          hint="Tell me a book or theme you want to test yourself on, and I'll point you to the right quiz."
-        />
-
         {/* In-progress quizzes */}
         {inProgress.length > 0 && (
           <BlurFade delay={0.1} inView>

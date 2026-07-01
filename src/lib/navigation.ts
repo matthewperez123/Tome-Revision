@@ -17,11 +17,11 @@ import {
   Users,
   Bookmark,
   BookMarked,
+  Bell,
   ClipboardCheck,
   Feather,
   History,
   Compass,
-  Sparkles,
   type LucideIcon,
 } from "lucide-react"
 
@@ -49,7 +49,6 @@ export const sidebarNav: NavItem[] = [
   { label: "My Shelves", href: "/shelves", icon: BookMarked },
   { label: "Authors", href: "/authors", icon: PenTool },
   { label: "Reading", href: "/reading", icon: BookOpen },
-  { label: "Guided Reading", href: "/guided", icon: Sparkles },
   { label: "Quizzes", href: "/quizzes", icon: Brain },
   // Consumer/open-social — readers and teachers only (students stay classroom-scoped)
   { label: "Book Clubs", href: "/clubs", icon: BookHeart, roles: ["reader", "teacher"] },
@@ -69,6 +68,7 @@ export const sidebarNav: NavItem[] = [
   { label: "Explore", href: "/explore", icon: Globe2 },
   { label: "Timelines", href: "/timelines", icon: History },
   { label: "Seals", href: "/seals", icon: Trophy },
+  { label: "Notifications", href: "/notifications", icon: Bell },
   // Open social + consumer surfaces — hidden from classroom-scoped students
   { label: "Friends", href: "/friends", icon: HeartHandshake, roles: ["reader", "teacher"] },
   { label: "Family", href: "/family", icon: Users, roles: ["reader", "teacher"] },

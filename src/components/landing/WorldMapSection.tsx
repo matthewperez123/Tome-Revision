@@ -17,6 +17,8 @@ import {
   CONTINENT_COUNTRIES,
 } from "@/data/author-countries"
 import { getCountryColor } from "@/lib/country-colors"
+import { formatBookCount } from "@/lib/marketing/catalog-stats"
+import { useCatalogStats } from "@/lib/marketing/catalog-stats-context"
 import { useAnimationLoop } from "./useAnimationLoop"
 
 const GEO_URL =
@@ -92,6 +94,8 @@ function formatYear(year?: number): string {
 }
 
 export function WorldMapSection() {
+  const stats = useCatalogStats()
+  const headline = `${formatBookCount(stats.bookCount)} books. Every continent. 3,000 years.`
   const { resolvedTheme } = useTheme()
   const mode = resolvedTheme === "dark" ? "dark" : "light"
   const countriesWithAuthors = useMemo(() => new Set(getCountriesWithAuthors()), [])
@@ -176,7 +180,7 @@ export function WorldMapSection() {
         <div className="max-w-5xl mx-auto">
           <BlurFade delay={0.1} inView>
             <h2 className="font-[var(--font-display)] text-3xl md:text-4xl font-bold text-center text-foreground mb-3">
-              Over a thousand books. Every continent. 3,000 years.
+              {headline}
             </h2>
             <p className="text-sm text-muted-foreground leading-relaxed text-center max-w-xl mx-auto mb-6">
               Browse the canon by tradition &mdash; from Mesopotamia to Modernism, every region of world literature charted on a single Ortelius-style map.

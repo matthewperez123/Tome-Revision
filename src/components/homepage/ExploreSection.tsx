@@ -5,7 +5,11 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { Safari } from "@/components/ui/safari"
-import { CANONICAL_BOOK_COUNT } from "@/lib/pricing"
+import {
+  formatBookCount,
+  formatTraditionCount,
+} from "@/lib/marketing/catalog-stats"
+import { useCatalogStats } from "@/lib/marketing/catalog-stats-context"
 
 const ExploreDemoLoop = dynamic(
   () => import("./demos/ExploreDemoLoop").then((m) => ({ default: m.ExploreDemoLoop })),
@@ -13,6 +17,7 @@ const ExploreDemoLoop = dynamic(
 )
 
 export function ExploreSection() {
+  const stats = useCatalogStats()
   return (
     <section id="explore" className="py-24 px-6 md:px-12" style={{ background: "#1E1B2E" }}>
       <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-12 items-center">
@@ -23,10 +28,14 @@ export function ExploreSection() {
               Explore the World
             </p>
             <h2 className="font-[var(--font-display)] text-3xl md:text-4xl font-bold text-[#FAF7F2] mb-4">
-              36 traditions. Every continent.
+              {formatTraditionCount(stats.traditionCount)
+                .charAt(0)
+                .toUpperCase() +
+                formatTraditionCount(stats.traditionCount).slice(1)}
+              . Every continent.
             </h2>
             <p className="text-sm text-[#C4BFB6] leading-relaxed mb-6 max-w-sm">
-              From ancient Greece to modern Japan &mdash; explore {CANONICAL_BOOK_COUNT} books by region, era, and tradition. Click any country to discover its authors.
+              From ancient Greece to modern Japan &mdash; explore {formatBookCount(stats.bookCount)} books by region, era, and tradition. Click any country to discover its authors.
             </p>
             <Link
               href="/explore"

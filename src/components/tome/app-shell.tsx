@@ -27,6 +27,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     pathname === "/faq" ||
     pathname === "/privacy" ||
     pathname === "/terms" ||
+    pathname === "/security" ||
     pathname === "/contact" ||
     pathname === "/accessibility"
 

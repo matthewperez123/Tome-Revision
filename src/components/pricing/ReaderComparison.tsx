@@ -1,5 +1,11 @@
+"use client"
+
 import { Check, Minus } from "lucide-react"
-import { readerComparison, readerComparisonTiers } from "@/lib/pricing"
+import {
+  getReaderComparison,
+  readerComparisonTiers,
+} from "@/lib/marketing/plans"
+import { useCatalogStats } from "@/lib/marketing/catalog-stats-context"
 
 function Cell({ value }: { value: boolean | string }) {
   if (value === true) {
@@ -22,6 +28,8 @@ function Cell({ value }: { value: boolean | string }) {
 }
 
 export function ReaderComparison() {
+  const stats = useCatalogStats()
+  const readerComparison = getReaderComparison(stats)
   return (
     <div className="overflow-x-auto">
       <table className="w-full min-w-[36rem] border-collapse text-left">

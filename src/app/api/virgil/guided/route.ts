@@ -56,6 +56,14 @@ export async function POST(request: Request) {
   } = await supabase.auth.getUser()
   if (!user) return Response.json({ error: "Unauthorized" }, { status: 401 })
 
+  // Virgil is a teacher-only system; the student 1:1 guided-reading surface is
+  // retired. This gate matches /api/virgil so no non-teacher can invoke Virgil
+  // through this route by direct URL.
+  const { data: profileRow } = await supabase.from("profiles").select("role").eq("id", user.id).single()
+  if (profileRow?.role !== "teacher") {
+    return Response.json({ error: "Virgil is available to teachers only." }, { status: 403 })
+  }
+
   const parsed = bodySchema.safeParse(await request.json().catch(() => null))
   if (!parsed.success) {
     return Response.json({ error: "Invalid request", details: parsed.error.flatten() }, { status: 400 })

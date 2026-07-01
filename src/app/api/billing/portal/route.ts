@@ -29,14 +29,15 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Sign in to manage billing." }, { status: 401 })
   }
 
+  // `subscriptions` is the canonical store for the Stripe customer id.
   const admin = createAdminClient()
-  const { data: profileRow } = await admin
-    .from("profiles")
+  const { data: subRow } = await admin
+    .from("subscriptions")
     .select("stripe_customer_id")
-    .eq("id", user.id)
+    .eq("user_id", user.id)
     .maybeSingle()
 
-  const customerId = (profileRow?.stripe_customer_id as string | null) ?? null
+  const customerId = (subRow?.stripe_customer_id as string | null) ?? null
   if (!customerId) {
     return NextResponse.json({ error: "No subscription found." }, { status: 404 })
   }

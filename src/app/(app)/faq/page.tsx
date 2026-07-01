@@ -6,21 +6,35 @@ import { LandingNav } from "@/components/landing/LandingNav"
 import { LandingFooter } from "@/components/landing/LandingFooter"
 import { FaqAccordion } from "@/components/faq/FaqAccordion"
 import { FaqCategoryNav } from "@/components/faq/FaqCategoryNav"
-import { faqCategories, faqJsonLd } from "@/lib/faqs"
+import { getFaqCategories, faqJsonLd } from "@/lib/faqs"
+import { getCatalogStats } from "@/lib/marketing/catalog-stats"
 import { marketingMasterImages } from "@/lib/marketing-images"
 
 export const metadata: Metadata = {
   title: { absolute: "FAQ — Tome" },
   description:
     "Answers about reading on Tome, plans and billing, classroom and school use, and where the texts come from.",
+  alternates: { canonical: "/faq" },
   openGraph: {
+    type: "website",
+    url: "/faq",
     title: "FAQ — Tome",
     description:
       "Reading & getting started, plans & billing, for educators, and the texts & trust — answered.",
+    images: [{ url: "/og-image.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FAQ — Tome",
+    description:
+      "Reading & getting started, plans & billing, for educators, and the texts & trust — answered.",
+    images: ["/og-image.png"],
   },
 }
 
-export default function FaqPage() {
+export default async function FaqPage() {
+  const stats = await getCatalogStats()
+  const faqCategories = getFaqCategories(stats)
   const navCategories = faqCategories.map(({ id, label }) => ({ id, label }))
 
   return (
@@ -31,7 +45,7 @@ export default function FaqPage() {
         type="application/ld+json"
         // Generated from lib/faqs.ts so structured data never drifts from the
         // visible copy.
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd()) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqCategories)) }}
       />
 
       <main className="px-6 pb-24 pt-32 md:px-12">
@@ -90,15 +104,23 @@ export default function FaqPage() {
               </h2>
               <p className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-muted-foreground">
                 We&apos;re happy to help — reach out or tell us about your
-                school and we&apos;ll set up a pilot.
+                school and we&apos;ll set up a pilot. Evaluating Tome for a
+                school? See{" "}
+                <Link
+                  href="/security"
+                  className="font-semibold text-primary underline underline-offset-2 hover:opacity-80"
+                >
+                  Privacy &amp; Security for Schools
+                </Link>
+                .
               </p>
               <div className="mt-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
-                <a
-                  href="https://claude.ai/contact"
+                <Link
+                  href="/contact"
                   className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 >
                   Contact us
-                </a>
+                </Link>
                 <Link
                   href="/demo"
                   className="inline-flex items-center justify-center gap-1.5 rounded-full border border-border px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"

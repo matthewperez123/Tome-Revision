@@ -1,10 +1,11 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { ChevronLeft, BookOpen, Users, BarChart2, MessageCircle } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
+import { getBook } from "@/lib/content"
 import { useAuth } from "@/hooks/use-auth"
 import { TeacherAnnouncementComposer } from "@/components/classroom/teacher-announcement-composer"
 import { TeacherAssignmentComposer } from "@/components/classroom/teacher-assignment-composer"
@@ -29,6 +30,7 @@ interface AssignmentItem {
   id: string
   title: string
   type: string
+  book_id: string | null
   due_date: string
   status: string // submission status
 }
@@ -39,6 +41,16 @@ interface Classmate {
   avatar_url: string | null
 }
 
+interface GradeItem {
+  id: string
+  title: string
+  score: number | null
+  max_score: number | null
+  feedback: string | null
+  was_overridden: boolean
+  graded_at: string
+}
+
 export function StudentClassroomView({ classroomId }: { classroomId: string }) {
   const { user } = useAuth()
   const [classroom, setClassroom] = useState<ClassroomInfo | null>(null)
@@ -46,10 +58,70 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
   const [announcements, setAnnouncements] = useState<AnnouncementItem[]>([])
   const [assignments, setAssignments] = useState<AssignmentItem[]>([])
   const [classmates, setClassmates] = useState<Classmate[]>([])
+  const [grades, setGrades] = useState<GradeItem[]>([])
   const [loading, setLoading] = useState(true)
+
+  // Student reads ONLY their own grades (grades_student_select RLS), scoped to
+  // this classroom's assignments. Feedback + score come straight off the
+  // canonical grades table.
+  const fetchGrades = useCallback(async () => {
+    if (!user) return
+    const supabase = createClient()
+    const { data } = await supabase
+      .from("grades")
+      .select(
+        `id, score, max_score, feedback, was_overridden, graded_at,
+         submission:assignment_submissions!inner(
+           student_id,
+           assignment:assignments!inner(title, classroom_id)
+         )`,
+      )
+      .eq("submission.student_id", user.id)
+      .eq("submission.assignment.classroom_id", classroomId)
+      .order("graded_at", { ascending: false })
+
+    setGrades(
+      (data ?? []).map((g) => ({
+        id: g.id,
+        title:
+          (((g as any).submission as { assignment: { title: string } })?.assignment
+            ?.title) ?? "Assignment",
+        score: g.score,
+        max_score: g.max_score,
+        feedback: g.feedback,
+        was_overridden: g.was_overridden,
+        graded_at: g.graded_at,
+      })),
+    )
+  }, [user, classroomId])
+
+  // Live: when a grade lands (mirror updates the student's own submission), the
+  // grades list refreshes so the score/feedback appears without a reload.
+  useEffect(() => {
+    if (!user) return
+    const supabase = createClient()
+    const channel = supabase
+      .channel(`my-grades:${classroomId}:${user.id}`)
+      .on(
+        "postgres_changes",
+        {
+          event: "*",
+          schema: "public",
+          table: "assignment_submissions",
+          filter: `student_id=eq.${user.id}`,
+        },
+        () => void fetchGrades(),
+      )
+      .subscribe()
+    return () => {
+      void supabase.removeChannel(channel)
+    }
+  }, [user, classroomId, fetchGrades])
 
   useEffect(() => {
     if (!user) return
+
+    void fetchGrades()
 
     async function fetchData() {
       const supabase = createClient()
@@ -86,7 +158,7 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
       // Assignments
       const { data: assignmentData } = await supabase
         .from("assignments")
-        .select("id, title, type, due_date")
+        .select("id, title, type, book_id, due_date")
         .eq("classroom_id", classroomId)
         .eq("status", "active")
         .order("due_date", { ascending: true })
@@ -132,7 +204,7 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
     }
 
     fetchData()
-  }, [user, classroomId])
+  }, [user, classroomId, fetchGrades])
 
   if (loading) {
     return (
@@ -271,7 +343,11 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
                   <div className="flex-1">
                     <p className="text-sm font-medium">{a.title}</p>
                     <p className="text-xs text-muted-foreground">
-                      {a.type} · Due {new Date(a.due_date).toLocaleDateString("en-US", { month: "short", day: "numeric" })}
+                      <span className="capitalize">{a.type.replace("_", " ")}</span>
+                      {a.book_id ? ` · ${getBook(a.book_id)?.title ?? a.book_id}` : ""}
+                      {a.due_date
+                        ? ` · Due ${new Date(a.due_date).toLocaleDateString("en-US", { month: "short", day: "numeric" })}`
+                        : ""}
                     </p>
                   </div>
                   <span className={`rounded-full px-2 py-0.5 text-[10px] font-medium capitalize ${statusColors[a.status] ?? ""}`}>
@@ -308,17 +384,79 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
           <div className="space-y-4">
             <div className="grid grid-cols-2 gap-3">
               <div className="rounded-xl border bg-card p-4">
-                <p className="text-2xl font-bold">{assignments.filter((a) => a.status === "graded" || a.status === "submitted").length}</p>
-                <p className="text-xs text-muted-foreground">Assignments completed</p>
+                <p className="text-2xl font-bold">{grades.length}</p>
+                <p className="text-xs text-muted-foreground">Grades received</p>
               </div>
               <div className="rounded-xl border bg-card p-4">
-                <p className="text-2xl font-bold">{assignments.filter((a) => a.status === "not_started").length}</p>
-                <p className="text-xs text-muted-foreground">Not started</p>
+                <p className="text-2xl font-bold">
+                  {(() => {
+                    const scored = grades.filter(
+                      (g) => g.score != null && (g.max_score ?? 0) > 0,
+                    )
+                    if (scored.length === 0) return "—"
+                    const avg =
+                      scored.reduce(
+                        (s, g) => s + (g.score! / (g.max_score || 1)) * 100,
+                        0,
+                      ) / scored.length
+                    return `${Math.round(avg)}%`
+                  })()}
+                </p>
+                <p className="text-xs text-muted-foreground">Average</p>
               </div>
             </div>
-            <p className="text-center text-sm text-muted-foreground py-4">
-              Detailed progress charts coming soon
-            </p>
+
+            <div>
+              <h3 className="text-sm font-semibold">My grades</h3>
+              {grades.length === 0 ? (
+                <p className="py-8 text-center text-sm text-muted-foreground">
+                  No grades yet. They&apos;ll appear here as your teacher grades your work.
+                </p>
+              ) : (
+                <div className="mt-3 space-y-2">
+                  {grades.map((g) => {
+                    const pct =
+                      g.score != null && (g.max_score ?? 0) > 0
+                        ? Math.round((g.score / g.max_score!) * 100)
+                        : null
+                    return (
+                      <div key={g.id} className="rounded-xl border bg-card p-4">
+                        <div className="flex items-center justify-between gap-3">
+                          <p className="text-sm font-medium">{g.title}</p>
+                          <div className="text-right">
+                            <span className="text-sm font-semibold tabular-nums">
+                              {g.score ?? "—"}
+                              {g.max_score != null ? `/${g.max_score}` : ""}
+                            </span>
+                            {pct != null && (
+                              <span className="ml-1.5 text-xs text-muted-foreground">
+                                ({pct}%)
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                        {g.feedback && (
+                          <div className="mt-2 rounded-lg bg-muted/50 p-3">
+                            <p className="text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
+                              Feedback
+                            </p>
+                            <p className="mt-1 whitespace-pre-wrap text-sm">{g.feedback}</p>
+                          </div>
+                        )}
+                        <p className="mt-2 text-[10px] text-muted-foreground">
+                          Graded{" "}
+                          {new Date(g.graded_at).toLocaleDateString("en-US", {
+                            month: "short",
+                            day: "numeric",
+                          })}
+                          {g.was_overridden ? " · adjusted by teacher" : ""}
+                        </p>
+                      </div>
+                    )
+                  })}
+                </div>
+              )}
+            </div>
           </div>
         )}
       </div>

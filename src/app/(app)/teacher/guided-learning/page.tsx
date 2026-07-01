@@ -9,52 +9,6 @@ import { createClient } from "@/lib/supabase/client"
 import type { GuidedSession } from "@/lib/guided-learning-types"
 import { getAllDemoSessions } from "@/lib/guided-learning-demo"
 
-// Demo sessions for preview when not authenticated
-const DEMO_SESSIONS: (GuidedSession & { book_title?: string; participant_count: number })[] = [
-  {
-    id: "demo-1",
-    teacher_id: "demo",
-    classroom_id: null,
-    join_code: "LAUREL-7K2",
-    type: "chapter",
-    book_id: "pride-and-prejudice",
-    chapter_index: 3,
-    trial_id: null,
-    time_limit_minutes: 30,
-    mode: "strict",
-    status: "ended",
-    starts_at: new Date(Date.now() - 3600000).toISOString(),
-    ends_at: new Date(Date.now() - 1800000).toISOString(),
-    paused_at: null,
-    created_at: new Date(Date.now() - 7200000).toISOString(),
-    ended_at: new Date(Date.now() - 1800000).toISOString(),
-    summary_data: { total_participants: 24, completed_count: 22, avg_progress_pct: 94, avg_score: 87, total_violations: 3, duration_seconds: 1800 },
-    book_title: "Pride and Prejudice",
-    participant_count: 24,
-  },
-  {
-    id: "demo-2",
-    teacher_id: "demo",
-    classroom_id: null,
-    join_code: "LAUREL-9MX",
-    type: "trial",
-    book_id: null,
-    chapter_index: null,
-    trial_id: "hamlet-act3",
-    time_limit_minutes: 15,
-    mode: "lenient",
-    status: "ended",
-    starts_at: new Date(Date.now() - 86400000).toISOString(),
-    ends_at: new Date(Date.now() - 85500000).toISOString(),
-    paused_at: null,
-    created_at: new Date(Date.now() - 90000000).toISOString(),
-    ended_at: new Date(Date.now() - 85500000).toISOString(),
-    summary_data: { total_participants: 18, completed_count: 18, avg_progress_pct: 100, avg_score: 76, total_violations: 0, duration_seconds: 900 },
-    book_title: "Hamlet — Act III Trial",
-    participant_count: 18,
-  },
-]
-
 export default function GuidedLearningListPage() {
   const { user, isDemoMode } = useAuth()
   const [sessions, setSessions] = useState<(GuidedSession & { book_title?: string; participant_count: number })[]>([])
@@ -62,21 +16,13 @@ export default function GuidedLearningListPage() {
 
   useEffect(() => {
     if (isDemoMode || !user) {
-      // Merge hardcoded demos with any localStorage sessions
+      // Show only sessions the teacher created locally — no fabricated data
       const localSessions = getAllDemoSessions().map((d) => ({
         ...d.session,
         book_title: d.bookTitle,
         participant_count: d.participants.length,
       }))
-      const combined = [...localSessions, ...DEMO_SESSIONS]
-      // Deduplicate by id
-      const seen = new Set<string>()
-      const deduped = combined.filter((s) => {
-        if (seen.has(s.id)) return false
-        seen.add(s.id)
-        return true
-      })
-      setSessions(deduped)
+      setSessions(localSessions)
       setIsLoading(false)
       return
     }

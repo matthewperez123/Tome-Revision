@@ -1,8 +1,9 @@
 import "server-only"
 
 import { createAdminClient } from "@/lib/actions/_shared"
-import { sendEmail } from "@/lib/email/send"
+import { sendEmail, type SendEmailResult } from "@/lib/email/send"
 import { ClassroomInviteEmail } from "@/lib/email/templates/classroom-invite"
+import { ClassroomJoinInviteEmail } from "@/lib/email/templates/classroom-join-invite"
 
 const ROLE_LABELS: Record<string, string> = {
   co_teacher: "co-teacher",
@@ -55,5 +56,41 @@ export async function sendClassroomInviteEmail(params: {
     })
   } catch (err) {
     console.error("[classroom-invite-email] failed:", (err as Error).message)
+  }
+}
+
+/**
+ * Email a self-serve invite to JOIN a classroom via /join?code=. Sent to a raw
+ * address (no account required) — the recipient enrolls themselves through the
+ * link, so no membership row or student PII is created by sending this.
+ * Returns the send result so the caller can count successful sends.
+ */
+export async function sendClassroomJoinInvite(params: {
+  toEmail: string
+  classroomName: string
+  inviterName: string
+  roleLabel: string
+  joinCode: string
+  joinUrl: string
+}): Promise<SendEmailResult> {
+  const { toEmail, classroomName, inviterName, roleLabel, joinCode, joinUrl } =
+    params
+  try {
+    return await sendEmail({
+      to: toEmail,
+      subject: `${inviterName} invited you to join ${classroomName}`,
+      react: ClassroomJoinInviteEmail({
+        classroomName,
+        inviterName,
+        roleLabel,
+        joinCode,
+        joinUrl,
+        recipient: toEmail,
+      }),
+    })
+  } catch (err) {
+    const message = (err as Error).message
+    console.error("[classroom-join-invite] failed:", message)
+    return { ok: false, error: message }
   }
 }

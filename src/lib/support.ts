@@ -7,8 +7,10 @@
 // Empty string when unset → messenger never boots.
 export const INTERCOM_APP_ID = process.env.NEXT_PUBLIC_INTERCOM_APP_ID ?? ""
 
-// [CONFIRM] real support address — placeholder until sign-off.
-export const SUPPORT_EMAIL = "support@tome.app"
+// Support inbox on our verified sending domain (usetome.app — the same domain
+// Resend sends from). tome.app is NOT a domain we control or can route, so we
+// use usetome.app consistently across footer, /contact, and outbound email.
+export const SUPPORT_EMAIL = "support@usetome.app"
 export const SUPPORT_MAILTO = `mailto:${SUPPORT_EMAIL}`
 
 export function isIntercomConfigured(): boolean {

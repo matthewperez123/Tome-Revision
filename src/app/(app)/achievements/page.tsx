@@ -26,7 +26,6 @@ import {
 } from "lucide-react"
 import { useEconomy } from "@/components/tome/economy-provider"
 import { getAllBookProgress } from "@/lib/book-progress"
-import { VirgilReflection } from "@/components/tome/virgil-reflection"
 import { springs } from "@/lib/design-tokens"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { SparklesText } from "@/components/ui/sparkles-text"
@@ -144,9 +143,6 @@ export default function AchievementsPage() {
           {earned.length}/{total} unlocked
         </p>
       </BlurFade>
-
-      {/* Virgil Reflection */}
-      <VirgilReflection type="progress" context={{ booksRead: Object.keys(allProgress), chaptersCompleted: Object.values(allProgress).reduce((sum, p) => sum + p.completedChapterIndices.length, 0), streakDays: stats.current_streak }} />
 
       {/* Filter tabs */}
       <div className="flex gap-1.5 mt-4 overflow-x-auto">

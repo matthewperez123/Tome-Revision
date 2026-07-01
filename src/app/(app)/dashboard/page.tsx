@@ -21,14 +21,11 @@ import { motion } from "framer-motion"
 import {
   Flame, Heart, Zap, BookOpen, Trophy, Clock,
   ChevronRight, Star, Check, Sparkles, AlertTriangle,
-  TrendingUp, Bookmark,
+  TrendingUp,
 } from "lucide-react"
-import { useEconomy } from "@/components/tome/economy-provider"
-import { getAllBookProgress } from "@/lib/book-progress"
-import { getWeeklyChallenge } from "@/lib/weekly-challenge"
+import { useDashboardData } from "@/hooks/use-dashboard-data"
 import { formatNotificationTime } from "@/lib/notifications"
 import { getBooks, getFeaturedBooks } from "@/lib/content"
-import type { TomeBook } from "@/data/books"
 import { TRADITION_COLORS } from "@/components/tome/book-card"
 import { ClassicsCover } from "@/components/tome/ClassicsCover"
 import { AuthorLink } from "@/components/tome/author-link"
@@ -38,8 +35,6 @@ import { NumberTicker } from "@/components/ui/number-ticker"
 import { AnimatedCircularProgressBar } from "@/components/ui/animated-circular-progress-bar"
 import { AnimatedGridPattern } from "@/components/ui/animated-grid-pattern"
 import { X } from "lucide-react"
-import { VirgilReflection } from "@/components/tome/virgil-reflection"
-import { getTipOfTheDay } from "@/lib/virgil-tips"
 import { cn } from "@/lib/utils"
 import { StoaBanner } from "@/components/dashboard/StoaBanner"
 import { TeacherDashboard } from "@/components/classroom/teacher-dashboard"
@@ -183,7 +178,19 @@ export default function DashboardPage() {
 }
 
 function StudentDashboard() {
-  const { stats, rank, dailyGoalMet } = useEconomy()
+  // Account-scoped, DB-backed dashboard data. A fresh account resolves to zeroed
+  // stats + empty lists (welcoming first-run state); a populated dashboard comes
+  // only from a real, seeded account — never from browser localStorage.
+  const {
+    stats,
+    rank,
+    dailyGoalMet,
+    continueReading,
+    completedCount,
+    recentActivity,
+    weeklyReadDays: weeklyReadDayList,
+    weeklyBooksRead,
+  } = useDashboardData()
 
   // Local time is only read after hydration so Vercel's server timezone cannot
   // produce different greeting/date text from the browser's first render.
@@ -204,16 +211,12 @@ function StudentDashboard() {
 
   const [challengeAnswer,  setChallengeAnswer]  = useState<number | null>(null)
   const [challengeDone,    setChallengeDone]    = useState(false)
-  const [allProgress,      setAllProgress]      = useState<ReturnType<typeof getAllBookProgress>>({})
 
   const allBooks      = useMemo(() => getBooks(), [])
   const featuredBooks = useMemo(() => getFeaturedBooks().slice(0, 6), [])
 
-  // Load localStorage data on mount
+  // Daily-challenge "done today" flag is a lightweight per-browser toggle.
   useEffect(() => {
-    const prog = getAllBookProgress()
-    setAllProgress(prog)
-
     const key = `tome-challenge-done-${todayKey()}`
     if (localStorage.getItem(key)) setChallengeDone(true)
   }, [])
@@ -231,93 +234,27 @@ function StudentDashboard() {
     }
   }
 
-  // Build "continue reading" from progress
-  const inProgress = useMemo(() => {
-    return Object.entries(allProgress)
-      .map(([bookId, prog]) => {
-        const book = allBooks.find((b) => b.id === bookId)
-        if (!book) return null
-        const pct = Math.min(100, Math.round(
-          (prog.completedChapterIndices.length / Math.max(book.chapters, 1)) * 100
-        ))
-        return { book, prog, pct }
-      })
-      .filter(Boolean)
-      .slice(0, 3) as { book: TomeBook; prog: ReturnType<typeof getAllBookProgress>[string]; pct: number }[]
-  }, [allProgress, allBooks])
-
-  // Completed-book count for the Continue Reading subline
-  const completedCount = useMemo(() => {
-    return Object.entries(allProgress).filter(([id, p]) => {
-      const b = allBooks.find((x) => x.id === id)
-      return b && p.completedChapterIndices.length >= b.chapters
-    }).length
-  }, [allProgress, allBooks])
-
-  // Recent activity — derived from the same localStorage book progress the
-  // profile reads. Each book contributes real events (started, quiz scores,
-  // book completed) with their stored timestamps; newest first. Empty when the
-  // account has no reading history.
-  const recentActivity = useMemo(() => {
-    type Activity = { id: string; icon: typeof BookOpen; color: string; text: string; at: number }
-    const events: Activity[] = []
-
-    for (const [bookId, prog] of Object.entries(allProgress)) {
-      const book = allBooks.find((b) => b.id === bookId)
-      const title = book?.title ?? bookId
-
-      events.push({
-        id: `start-${bookId}`,
-        icon: BookOpen,
-        color: "#0EA5E9",
-        text: `Started ${title}`,
-        at: new Date(prog.startedAt).getTime(),
-      })
-
-      for (const q of prog.quizResults) {
-        const pct = q.totalQuestions > 0 ? Math.round((q.score / q.totalQuestions) * 100) : 0
-        events.push({
-          id: `quiz-${bookId}-${q.chapterId}-${q.completedAt}`,
-          icon: Trophy,
-          color: "#F59E0B",
-          text: `Scored ${pct}% on ${title} — Chapter ${q.chapterIndex + 1} quiz`,
-          at: new Date(q.completedAt).getTime(),
-        })
-      }
-
-      if (book && prog.completedChapterIndices.length >= book.chapters) {
-        events.push({
-          id: `done-${bookId}`,
-          icon: Star,
-          color: "#A78BFA",
-          text: `Finished ${title}`,
-          at: new Date(prog.lastReadAt).getTime(),
-        })
-      }
-    }
-
-    return events
-      .filter((e) => Number.isFinite(e.at))
-      .sort((a, b) => b.at - a.at)
-      .slice(0, 6)
-  }, [allProgress, allBooks])
+  const inProgress = continueReading
 
   const dailyPercent = Math.min(100, Math.round(
-    (stats.daily_progress_minutes / stats.daily_goal_minutes) * 100
+    (stats.daily_progress_minutes / Math.max(stats.daily_goal_minutes, 1)) * 100
   ))
 
-  // Weekly Challenge — real activity scoped to the current Mon–Sun week, so it
-  // changes as you read and resets automatically each Monday.
+  // Weekly Challenge — real activity scoped to the current Mon–Sun week.
   const WEEKLY_GOAL = 3
-  const weekly = useMemo(
-    () => (now ? getWeeklyChallenge(allProgress, now) : { readDays: [], booksRead: 0 }),
-    [allProgress, now]
-  )
-  const weeklyReadDays = useMemo(() => new Set(weekly.readDays), [weekly.readDays])
-  const weeklyPercent = Math.min(100, Math.round((weekly.booksRead / WEEKLY_GOAL) * 100))
+  const weeklyReadDays = useMemo(() => new Set(weeklyReadDayList), [weeklyReadDayList])
+  const weeklyPercent = Math.min(100, Math.round((weeklyBooksRead / WEEKLY_GOAL) * 100))
 
   // Streak status
   const streak      = stats.current_streak
+
+  // A brand-new account has no reading history at all — show a welcoming
+  // first-run hero instead of empty zeroed widgets that look broken.
+  const isFresh =
+    inProgress.length === 0 &&
+    completedCount === 0 &&
+    recentActivity.length === 0 &&
+    stats.xp_total === 0
   const streakAtRisk = streak > 0 && stats.daily_progress_minutes < 5 // hasn't read today
 
   // Reason tags for recommended books
@@ -381,6 +318,52 @@ function StudentDashboard() {
           </div>
         </BlurFade>
 
+        {/* ── Welcome hero (brand-new account) ───── */}
+        {isFresh && (
+          <BlurFade delay={0.05} inView>
+            <div
+              className="relative overflow-hidden p-6 sm:p-8 text-center"
+              style={{
+                background: "var(--codex-primary-soft)",
+                borderRadius: "var(--codex-radius-card)",
+                border: "var(--codex-border-w) solid var(--codex-border)",
+              }}
+            >
+              <div
+                className="mx-auto mb-4 flex size-12 items-center justify-center rounded-full"
+                style={{ background: "var(--codex-surface)" }}
+              >
+                <BookOpen className="size-6" style={{ color: "var(--codex-primary)" }} />
+              </div>
+              <h2 className="text-xl font-bold tracking-tight">Welcome to Tome</h2>
+              <p className="mx-auto mt-2 max-w-md text-sm text-muted-foreground leading-relaxed">
+                Your reading journey starts here. Open your first book to begin
+                earning Wisdom, building a streak, and unlocking Seals — your
+                progress will fill this dashboard.
+              </p>
+              <div className="mt-5 flex flex-col items-center justify-center gap-2 sm:flex-row">
+                <Link
+                  href="/library/browse"
+                  className="codex-pressable inline-flex items-center justify-center gap-1.5 px-5 min-h-[44px] text-sm font-bold rounded-[var(--codex-radius-btn)]"
+                  style={{
+                    background: "var(--codex-primary)",
+                    color: "var(--codex-on-primary)",
+                    border: "var(--codex-border-w) solid var(--codex-primary)",
+                  }}
+                >
+                  Browse the library <ChevronRight className="size-4" />
+                </Link>
+                <Link
+                  href="/library/browse"
+                  className="inline-flex items-center justify-center gap-1.5 px-5 min-h-[44px] text-sm font-semibold rounded-[var(--codex-radius-btn)] border border-border text-foreground transition-colors hover:[border-color:var(--codex-primary)]"
+                >
+                  Pick a starter classic
+                </Link>
+              </div>
+            </div>
+          </BlurFade>
+        )}
+
         {/* ── Streak motivation banner ───────────── */}
         {streak > 0 && (
           <BlurFade delay={0.06} inView>
@@ -413,32 +396,6 @@ function StudentDashboard() {
             </div>
           </BlurFade>
         )}
-
-        {/* ── Virgil's Tip ───────────────────────── */}
-        <BlurFade delay={0.08} inView>
-          <div
-            className="rounded-xl p-4 flex gap-3 items-start"
-            style={{
-              background: "color-mix(in srgb, #6366f1 6%, transparent)",
-              border: "1px solid color-mix(in srgb, #6366f1 20%, transparent)",
-            }}
-          >
-            <div
-              className="mt-0.5 shrink-0 size-8 rounded-full flex items-center justify-center"
-              style={{ background: "rgba(212,160,76,0.15)" }}
-            >
-              <Bookmark className="size-4 text-[#D4A04C]" />
-            </div>
-            <div>
-              <p className="text-xs font-bold text-[#D4A04C] uppercase tracking-widest mb-1">
-                Virgil&rsquo;s Tip
-              </p>
-              <p className="text-sm leading-relaxed text-foreground/80 font-serif italic">
-                &ldquo;{getTipOfTheDay()}&rdquo;
-              </p>
-            </div>
-          </div>
-        </BlurFade>
 
         {/* ── 2. Daily Challenge (MCQ) ── */}
         <BlurFade delay={0.10} inView>
@@ -629,7 +586,7 @@ function StudentDashboard() {
                 Read <strong className="text-foreground">{WEEKLY_GOAL} books</strong> this week
               </p>
               <span className="text-xs font-bold" style={{ color: "var(--codex-primary)" }}>
-                {weekly.booksRead} / {WEEKLY_GOAL} books
+                {weeklyBooksRead} / {WEEKLY_GOAL} books
               </span>
             </div>
             <div
@@ -706,9 +663,6 @@ function StudentDashboard() {
           </div>
         </BlurFade>
 
-        {/* ── Virgil Reflection ─────────────────── */}
-        <VirgilReflection type="progress" context={{ booksRead: Object.keys(allProgress), chaptersCompleted: Object.values(allProgress).reduce((sum, p) => sum + p.completedChapterIndices.length, 0), streakDays: streak }} />
-
         {/* ── 5. Continue Reading (Codex-ported) ───── */}
         <BlurFade delay={0.18} inView>
           <section>
@@ -745,9 +699,9 @@ function StudentDashboard() {
               </Link>
             ) : (
               <div className="space-y-3">
-                {inProgress.map(({ book, prog, pct }) => {
+                {inProgress.map(({ book, chapterIndex, pct }) => {
                   const tradColor   = TRADITION_COLORS[book.tradition]
-                  const chapters    = prog.completedChapterIndices.length
+                  const chapters    = chapterIndex + 1
 
                   return (
                     <div

@@ -52,7 +52,6 @@ import { findAttemptForChapter, isAttemptResumable } from "@/lib/trial-attempts"
 import { getUnitNumber, getUnitLabel } from "@/lib/structural-units"
 import type { StructuralUnitType, BookPart } from "@/data/books"
 import { paginateHTML } from "@/lib/paginator"
-import { VirgilReflection } from "@/components/tome/virgil-reflection"
 import { AuthorLink } from "@/components/tome/author-link"
 import { cn } from "@/lib/utils"
 import { useTheme } from "next-themes"
@@ -60,12 +59,11 @@ import { notifyChapterCompleted, notifyBookCompleted } from "@/lib/notifications
 import { assignCharacterColors, getCharacterColor, type BookColorAssignments } from "@/lib/character-colors"
 import { CanticleHero } from "@/components/reader/canticle-hero"
 import { ReaderHighlights } from "@/components/reader/reader-highlights"
-import { ReaderPresence } from "@/components/reader/reader-presence"
-import { GuidedReadingLauncher } from "@/components/virgil/guided/guided-reading-launcher"
+import { ReaderPresenceRoom, ReaderPresenceAvatars } from "@/components/reader/reader-presence"
 import { useAuth } from "@/hooks/use-auth"
 import { useEntitlement } from "@/hooks/use-entitlement"
 import { canReadBook } from "@/lib/stripe/entitlements"
-import { UpgradeGate } from "@/components/pricing/UpgradeGate"
+import { PaywallGate } from "@/components/pricing/PaywallGate"
 
 // ── Types ──
 
@@ -210,6 +208,8 @@ export default function ReaderPage() {
   const [loading, setLoading]         = useState(true)
   const [currentChapter, setCurrentChapter] = useState(0)
   const [sidebarOpen, setSidebarOpen] = useState(true)
+  // Classroom context (?classroom=<id>) scopes live presence to the class room.
+  const [classroomId, setClassroomId] = useState<string | null>(null)
 
   // ── Entitlement gate (readers only; teachers/students unaffected) ──
   const { role } = useAuth()
@@ -298,6 +298,8 @@ export default function ReaderPage() {
 
   // ── Refs ──
   const scrollContentRef       = useRef<HTMLDivElement>(null)
+  // Always-set ref to the reader surface (both modes) for presence overlays.
+  const readerSurfaceRef       = useRef<HTMLDivElement>(null)
   const paginationRoRef        = useRef<ResizeObserver | null>(null)
   const paginationDebounceRef  = useRef<ReturnType<typeof setTimeout> | null>(null)
   const sessionStartRef        = useRef(Date.now())
@@ -414,6 +416,9 @@ export default function ReaderPage() {
         const n = parseInt(chParam, 10)
         if (!Number.isNaN(n) && n >= 0) setCurrentChapter(n)
       }
+      // Classroom context for scoping live co-reader presence to a class room.
+      const classroomParam = search.get("classroom")?.trim()
+      if (classroomParam) setClassroomId(classroomParam)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [bookId])
@@ -914,7 +919,6 @@ export default function ReaderPage() {
         score: scorePct,
         totalQuestions: trialQuestions.length,
         wisdomEarned: xpEarned,
-        currentStreak: stats.current_streak,
         isLastChapter,
       }),
     }).catch(() => {})
@@ -928,7 +932,7 @@ export default function ReaderPage() {
 
     setShowQuizOverlay(false)
     if (!isLastChapter) setTimeout(() => handleChapterSelect(currentChapter + 1), 300)
-  }, [bookId, currentChapter, chapters, trialQuestions.length, dispatchEconomy, completeChapter, saveQuizResult, handleChapterSelect, stats.current_streak])
+  }, [bookId, currentChapter, chapters, trialQuestions.length, dispatchEconomy, completeChapter, saveQuizResult, handleChapterSelect])
 
 
   // Keyboard navigation (scroll mode only — PaginatedReader owns keyboard in capture phase)
@@ -965,9 +969,8 @@ export default function ReaderPage() {
   // Reader paywall: free-tier readers can only open the free sampler.
   // Wait for the entitlement read to settle to avoid a flash of the gate.
   if (!entitlementLoading && !canReadBook(tier, role, bookId)) {
-    const gateTitle =
-      ("title" in book ? book.title : undefined) ?? "This book"
-    return <UpgradeGate bookTitle={gateTitle} />
+    const gateTitle = ("title" in book ? book.title : undefined) ?? undefined
+    return <PaywallGate reason="book" subject={gateTitle} />
   }
 
   // ────────────────────────────────────────────────────
@@ -1072,7 +1075,10 @@ export default function ReaderPage() {
 
         {/* Main Reader Area */}
         <div
-          ref={isScroll ? scrollContentRef : undefined}
+          ref={(node) => {
+            readerSurfaceRef.current = node
+            if (isScroll) scrollContentRef.current = node
+          }}
           data-reader-theme={prefs.theme}
           className={cn(
             "reader-surface relative flex flex-col flex-1 transition-colors duration-[var(--tome-duration-normal)] motion-reduce:transition-none",
@@ -1089,6 +1095,12 @@ export default function ReaderPage() {
             ["--reader-measure" as string]:     `${prefs.measureCh}ch`,
           }}
         >
+          <ReaderPresenceRoom
+            bookId={bookId}
+            classroomId={classroomId}
+            chapterIndex={currentChapter}
+            surfaceRef={readerSurfaceRef}
+          >
           {/* Reader Toolbar */}
           <div
             className="sticky top-0 z-20 flex shrink-0 items-center justify-between border-b border-border px-4 py-1.5 backdrop-blur-sm bg-background/90"
@@ -1106,7 +1118,7 @@ export default function ReaderPage() {
             </div>
             <div className="flex items-center gap-1">
               {/* Live co-reader presence — only renders for signed-in users */}
-              <ReaderPresence bookId={bookId} chapterIndex={currentChapter} />
+              <ReaderPresenceAvatars chapterIndex={currentChapter} />
               {/* Character color coding toggle — drama books only */}
               {isDrama && (
                 <button
@@ -1123,13 +1135,6 @@ export default function ReaderPage() {
               )}
               {/* Day / Night lives only in the global top bar now. */}
               {/* Reading mode toggle removed — all chapters unlocked */}
-              {/* Guided reading — launch (or resume) a 1:1 session with Virgil */}
-              <GuidedReadingLauncher
-                bookId={bookId}
-                bookTitle={book.title}
-                chapter={currentChapter}
-                chapterTitle={chapter.title}
-              />
               <ReaderSettingsPanel canSpread={canSpread} />
             </div>
           </div>
@@ -1179,18 +1184,6 @@ export default function ReaderPage() {
                         chapter title. Memoized via `chapterBodyElement` so
                         unrelated parent re-renders don't reset innerHTML. */}
                     {chapterBodyElement}
-
-                    {/* Virgil Reflection */}
-                    {chapterEndReached && (
-                      <VirgilReflection
-                        type="progress"
-                        context={{
-                          chaptersCompleted: completedChapterIndices.length,
-                          booksRead: [],
-                        }}
-                        className="mt-8"
-                      />
-                    )}
 
                     {/* Chapter Navigation — Quiz gate between prev/next */}
                     <div className="mt-16 border-t pt-6" style={{ borderColor: t.border }}>
@@ -1285,16 +1278,15 @@ export default function ReaderPage() {
               />
             </div>
           )}
+          </ReaderPresenceRoom>
         </div>
 
-        {/* Highlights — text-selection popover (Highlight + Ask Virgil)
-            plus re-render of saved highlights for this book + chapter. */}
+        {/* Highlights — text-selection colour popover plus re-render of
+            saved highlights for this book + chapter. */}
         <ReaderHighlights
           bookId={bookId}
-          bookTitle={book.title}
-          bookAuthor={book.author}
           chapterIndex={currentChapter}
-          chapterTitle={chapter.title}
+          classroomId={classroomId}
         />
       </div>
     </WordTooltipProvider>

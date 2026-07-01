@@ -1,10 +1,11 @@
 import { NextResponse } from "next/server"
 import { getStripe } from "@/lib/stripe/server"
-import { getPriceId, isPaidTier } from "@/lib/stripe/plans"
+import { isPaidTier } from "@/lib/stripe/plans"
+import { getPriceId, assertPriceMatchesKeyMode } from "@/lib/stripe/prices"
 import { createClient } from "@/lib/supabase/server"
 import { createAdminClient as createAdminClientUntyped } from "@/lib/supabase/admin"
 import type { SupabaseClient } from "@supabase/supabase-js"
-import type { BillingPeriod } from "@/lib/pricing"
+import type { BillingPeriod } from "@/lib/marketing/plans"
 
 const createAdminClient = () =>
   createAdminClientUntyped() as unknown as SupabaseClient<any, "public", any>
@@ -17,10 +18,11 @@ export const runtime = "nodejs"
  *
  * Body: { tier: "solo" | "family"; period?: "monthly" | "annual" }
  *
- * The signed-in user is attached as the Stripe customer (created + persisted
- * to profiles.stripe_customer_id on first checkout) plus `client_reference_id`
- * and `subscription_data.metadata.user_id`, so the webhook can map the
- * resulting subscription back to the account.
+ * The signed-in user is attached as the Stripe customer (resolved from the
+ * canonical `subscriptions` row, then a metadata search, else created) plus
+ * `client_reference_id` and `subscription_data.metadata.user_id`, so the
+ * webhook can map the resulting subscription back to the account. The customer
+ * id is persisted to `subscriptions` by the webhook — never to `profiles`.
  */
 export async function POST(req: Request) {
   const stripe = getStripe()
@@ -42,6 +44,14 @@ export async function POST(req: Request) {
   if (!isPaidTier(tier)) {
     return NextResponse.json({ error: "Unknown plan." }, { status: 400 })
   }
+  // School is seat-based (quantity = teacher seats) — it has its own checkout
+  // at /api/checkout/school so the seat count is always set.
+  if (tier === "school") {
+    return NextResponse.json(
+      { error: "Use the School checkout for seat-based billing." },
+      { status: 400 },
+    )
+  }
   const period: BillingPeriod = body.period === "annual" ? "annual" : "monthly"
 
   const priceId = getPriceId(tier, period)
@@ -56,15 +66,31 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Sign in to subscribe." }, { status: 401 })
   }
 
-  // Reuse or create the Stripe customer, persisting the id on the profile.
+  // Resolve the Stripe customer for this user. `subscriptions` is the canonical
+  // store; fall back to a metadata search (avoids duplicate customers across
+  // repeated pre-subscription checkouts), then create. The id is persisted to
+  // `subscriptions` by the webhook — never to `profiles`.
   const admin = createAdminClient()
-  const { data: profileRow } = await admin
-    .from("profiles")
+  const { data: subRow } = await admin
+    .from("subscriptions")
     .select("stripe_customer_id")
-    .eq("id", user.id)
+    .eq("user_id", user.id)
     .maybeSingle()
 
-  let customerId = (profileRow?.stripe_customer_id as string | null) ?? null
+  let customerId = (subRow?.stripe_customer_id as string | null) ?? null
+
+  if (!customerId) {
+    try {
+      const found = await stripe.customers.search({
+        query: `metadata['user_id']:'${user.id}'`,
+        limit: 1,
+      })
+      customerId = found.data[0]?.id ?? null
+    } catch {
+      // Search index unavailable — fall through to create.
+    }
+  }
+
   if (!customerId) {
     try {
       const customer = await stripe.customers.create({
@@ -72,14 +98,23 @@ export async function POST(req: Request) {
         metadata: { user_id: user.id },
       })
       customerId = customer.id
-      await admin
-        .from("profiles")
-        .update({ stripe_customer_id: customerId })
-        .eq("id", user.id)
     } catch (err) {
       const message = err instanceof Error ? err.message : "Could not create customer."
       return NextResponse.json({ error: message }, { status: 500 })
     }
+  }
+
+  // Fail loudly if the resolved price's mode doesn't match the secret key's
+  // mode (e.g. a live key paired with a test price). Authoritative: checks
+  // Stripe's `livemode` flag, since price IDs don't encode their mode.
+  try {
+    await assertPriceMatchesKeyMode(stripe, priceId)
+  } catch (err) {
+    console.error("[checkout] Stripe mode guard failed:", err)
+    return NextResponse.json(
+      { error: "Billing is misconfigured. Please contact support." },
+      { status: 500 },
+    )
   }
 
   const origin =

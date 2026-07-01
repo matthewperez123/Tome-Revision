@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { Trophy, BookOpen, Brain, UserPlus, AlertTriangle, Flame } from "lucide-react"
+import { Trophy, BookOpen, Brain, UserPlus, AlertTriangle, Flame, Inbox } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
 
@@ -33,34 +33,6 @@ const TYPE_COLORS: Record<string, string> = {
   streak_milestone: "text-orange-500 bg-orange-50 dark:bg-orange-950/30",
 }
 
-const DEMO_ACTIVITY_CLASS1: ActivityItem[] = [
-  { id: "d1", type: "quiz_completed", title: "Sofia Rodriguez scored 97% on Odyssey Trial", body: "Books 1–6 Quiz", action_url: "/classroom/class-1", created_at: new Date(Date.now() - 30 * 60000).toISOString() },
-  { id: "d2", type: "assignment_submitted", title: "Liam Foster completed The Odyssey Books 1–6", body: null, action_url: "/classroom/class-1", created_at: new Date(Date.now() - 2 * 3600000).toISOString() },
-  { id: "d4", type: "book_completed", title: "Emma Chen finished The Odyssey", body: "First student to complete!", action_url: "/classroom/class-1", created_at: new Date(Date.now() - 8 * 3600000).toISOString() },
-  { id: "d5", type: "streak_milestone", title: "Marcus Williams hit a 14-day streak", body: null, action_url: "/classroom/class-1", created_at: new Date(Date.now() - 24 * 3600000).toISOString() },
-  { id: "d7", type: "quiz_completed", title: "James O'Brien scored 72% on Odyssey Trial", body: "Below passing threshold", action_url: "/classroom/class-1", created_at: new Date(Date.now() - 36 * 3600000).toISOString() },
-]
-
-const DEMO_ACTIVITY_CLASS2: ActivityItem[] = [
-  { id: "d3", type: "student_at_risk", title: "3 students haven't started The Republic", body: "Books I–IV overdue", action_url: "/classroom/class-2", created_at: new Date(Date.now() - 5 * 3600000).toISOString() },
-  { id: "d6", type: "student_joined", title: "New student joined World Literature", body: "Aisha Patel", action_url: "/classroom/class-2", created_at: new Date(Date.now() - 48 * 3600000).toISOString() },
-  { id: "d8", type: "assignment_submitted", title: "Tobias Grant submitted Republic essay", body: "1,200 words", action_url: "/classroom/class-2", created_at: new Date(Date.now() - 4 * 3600000).toISOString() },
-  { id: "d9", type: "quiz_completed", title: "Linnaeus Park scored 84% on Republic Quiz", body: "Books I–IV", action_url: "/classroom/class-2", created_at: new Date(Date.now() - 12 * 3600000).toISOString() },
-  { id: "d10", type: "book_completed", title: "Cordelia Shaw finished The Republic", body: null, action_url: "/classroom/class-2", created_at: new Date(Date.now() - 72 * 3600000).toISOString() },
-]
-
-const DEMO_ACTIVITY_ALL: ActivityItem[] = [
-  ...DEMO_ACTIVITY_CLASS1.slice(0, 3),
-  ...DEMO_ACTIVITY_CLASS2.slice(0, 2),
-  ...DEMO_ACTIVITY_CLASS1.slice(3),
-].sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
-
-function getDemoActivity(classroomId?: string): ActivityItem[] {
-  if (classroomId === "class-1") return DEMO_ACTIVITY_CLASS1
-  if (classroomId === "class-2") return DEMO_ACTIVITY_CLASS2
-  return DEMO_ACTIVITY_ALL
-}
-
 function formatTimeAgo(dateStr: string): string {
   const diff = Date.now() - new Date(dateStr).getTime()
   const minutes = Math.floor(diff / 60000)
@@ -79,11 +51,12 @@ export function TeacherActivityFeed({ classroomId }: { classroomId?: string }) {
 
   useEffect(() => {
     if (isDemoMode || !user) {
-      setItems(getDemoActivity(classroomId))
+      setItems([])
       setLoading(false)
       return
     }
 
+    let cancelled = false
     async function fetchActivity() {
       const supabase = createClient()
 
@@ -94,7 +67,9 @@ export function TeacherActivityFeed({ classroomId }: { classroomId?: string }) {
         .order("created_at", { ascending: false })
         .limit(8)
 
-      const rows: ActivityItem[] | undefined = data?.map((n) => {
+      if (cancelled) return
+
+      const rows: ActivityItem[] = (data ?? []).map((n) => {
         const p = (n.payload ?? {}) as {
           title?: string
           body?: string | null
@@ -110,11 +85,14 @@ export function TeacherActivityFeed({ classroomId }: { classroomId?: string }) {
         }
       })
 
-      setItems(rows?.length ? rows : getDemoActivity(classroomId))
+      setItems(rows)
       setLoading(false)
     }
 
     fetchActivity()
+    return () => {
+      cancelled = true
+    }
   }, [user, isDemoMode, classroomId])
 
   return (
@@ -132,6 +110,15 @@ export function TeacherActivityFeed({ classroomId }: { classroomId?: string }) {
               </div>
             </div>
           ))}
+        </div>
+      ) : items.length === 0 ? (
+        <div className="mt-4 flex flex-col items-center gap-2 py-8 text-center">
+          <Inbox className="size-6 text-muted-foreground/30" />
+          <p className="text-sm text-muted-foreground">No activity yet</p>
+          <p className="max-w-xs text-xs text-muted-foreground/70">
+            As your students read, pass Trials, and submit work, their activity
+            will appear here.
+          </p>
         </div>
       ) : (
         <div className="mt-3 space-y-1.5">

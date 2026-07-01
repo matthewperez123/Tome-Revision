@@ -6,10 +6,10 @@ import {
   EDUCATOR_FINE_PRINT_FINAL,
   SCHOOL_PRICING_IS_FINAL,
   educatorPlansForPeriod,
-} from "@/lib/pricing"
+} from "@/lib/marketing/plans"
 import { PricingCard } from "./PricingCard"
 
-// Teaser only — full plans live on /pricing. Numbers sourced from lib/pricing.
+// Teaser only — full plans live on /pricing. Numbers sourced from lib/marketing/plans.
 export function TeacherPricingSection() {
   const plans = educatorPlansForPeriod("monthly")
 
@@ -42,6 +42,7 @@ export function TeacherPricingSection() {
                   ctaLabel={plan.ctaLabel}
                   ctaHref={plan.ctaHref}
                   featured={plan.featured}
+                  badge={plan.badge}
                 />
               )
             })}

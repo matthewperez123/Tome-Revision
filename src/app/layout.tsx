@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     template: "%s | Tome",
   },
   description:
-    "The gamified platform for classical literature. 1,200+ public domain books with AI-guided reading and end-of-chapter quizzes.",
+    "The gamified platform for the canon of world literature — public-domain classics with AI-guided reading and end-of-chapter Trials.",
   keywords: [
     "classical literature",
     "reading app",

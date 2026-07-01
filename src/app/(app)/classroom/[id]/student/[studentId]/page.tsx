@@ -2,7 +2,8 @@
 
 import { use, useEffect, useState } from "react"
 import Link from "next/link"
-import { ChevronLeft, BookOpen, Brain, Flame, Trophy } from "lucide-react"
+import { ChevronLeft, BookOpen, Brain, Flame, Trophy, Sparkles } from "lucide-react"
+import { toast } from "sonner"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
 
@@ -32,6 +33,38 @@ export default function StudentDetailPage({
   const [student, setStudent] = useState<StudentDetail | null>(null)
   const [assignments, setAssignments] = useState<AssignmentStatus[]>([])
   const [loading, setLoading] = useState(true)
+  const [notes, setNotes] = useState("")
+  const [notesDrafting, setNotesDrafting] = useState(false)
+
+  // Ask Virgil to summarize this student's recent scores + reading into a
+  // short private note. Virgil never persists it — it fills the box for the
+  // teacher to keep or edit.
+  async function draftNoteWithVirgil() {
+    setNotesDrafting(true)
+    try {
+      const res = await fetch("/api/virgil", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          task: "student_note",
+          input: { studentId, classroomId },
+        }),
+      })
+      const data = await res.json()
+      if (!res.ok) {
+        toast.error(data.error ?? "Virgil couldn't summarize this student.")
+        return
+      }
+      if (data.content) {
+        setNotes((prev) => (prev.trim() ? `${prev.trim()}\n\n${data.content}` : String(data.content)))
+        toast.success("Virgil drafted a note — review and edit as needed.")
+      }
+    } catch {
+      toast.error("Virgil couldn't be reached. Try again.")
+    } finally {
+      setNotesDrafting(false)
+    }
+  }
 
   useEffect(() => {
     if (!user) return
@@ -182,9 +215,22 @@ export default function StudentDetailPage({
         ))}
       </div>
 
-      {/* Teacher notes placeholder */}
-      <h2 className="mt-8 text-lg font-semibold">Private Notes</h2>
+      {/* Teacher notes */}
+      <div className="mt-8 flex items-center justify-between gap-3">
+        <h2 className="text-lg font-semibold">Private Notes</h2>
+        <button
+          type="button"
+          onClick={draftNoteWithVirgil}
+          disabled={notesDrafting}
+          className="inline-flex items-center gap-1.5 rounded-full border border-border px-3 py-1 text-xs text-muted-foreground transition-colors hover:border-[var(--tome-accent)]/40 hover:text-foreground disabled:opacity-60"
+        >
+          <Sparkles className="size-3 text-[#D4A04C]" />
+          {notesDrafting ? "Drafting…" : "Ask Virgil"}
+        </button>
+      </div>
       <textarea
+        value={notes}
+        onChange={(e) => setNotes(e.target.value)}
         placeholder="Add private notes about this student (only visible to you)..."
         className="mt-2 w-full rounded-xl border bg-card p-4 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
         rows={4}

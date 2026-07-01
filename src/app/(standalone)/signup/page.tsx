@@ -1,17 +1,23 @@
 "use client"
 
-import { useState } from "react"
+import { Suspense, useState } from "react"
 import Link from "next/link"
-import { useRouter } from "next/navigation"
+import { useRouter, useSearchParams } from "next/navigation"
 import { motion } from "framer-motion"
 import { BookOpen, Mail, Lock, User, Eye, EyeOff } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { createClient } from "@/lib/supabase/client"
 
-export default function SignupPage() {
+function SignupForm() {
   const router = useRouter()
+  const searchParams = useSearchParams()
   const supabase = createClient()
+  // The chosen plan from the CTA, e.g. /signup?plan=solo. Paid reader plans
+  // (solo, family) resume at checkout once the account exists; everything else
+  // lands in the app. The intent is carried through email verification too.
+  const plan = searchParams.get("plan")
+  const wantsCheckout = plan === "solo" || plan === "family"
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -46,12 +52,16 @@ export default function SignupPage() {
     // (Even if confirmation is off, going to the interstitial is fine — they
     // can resend or proceed.)
     if (!data.session) {
-      router.push(`/auth/verify-email?email=${encodeURIComponent(email)}`)
+      const planQuery = plan ? `&plan=${encodeURIComponent(plan)}` : ""
+      router.push(
+        `/auth/verify-email?email=${encodeURIComponent(email)}${planQuery}`,
+      )
       return
     }
 
-    // Email confirmation off: session is live, go straight into the app.
-    router.push("/dashboard")
+    // Email confirmation off: session is live. Paid reader plans resume at
+    // checkout; everyone else goes straight into the app.
+    router.push(wantsCheckout ? `/pricing?plan=${plan}` : "/dashboard")
     router.refresh()
   }
 
@@ -136,5 +146,13 @@ export default function SignupPage() {
         </p>
       </motion.div>
     </div>
+  )
+}
+
+export default function SignupPage() {
+  return (
+    <Suspense fallback={null}>
+      <SignupForm />
+    </Suspense>
   )
 }

@@ -9,12 +9,21 @@ import { createClient } from "@/lib/supabase/server"
  * server-side, decide what (if anything) the user may do in that room, and
  * hand back a signed token scoped accordingly.
  *
- * Two room families:
+ * Room families:
  *
- *  reader:{bookId}
- *    Live co-reader presence. Any authenticated reader gets READ_ACCESS
- *    (read + presence:write only) — they can broadcast/observe presence but
- *    cannot mutate shared storage. Unchanged from the original behavior.
+ *  book:{bookId}
+ *    Live co-reader presence in the open library. Any authenticated reader
+ *    gets READ_ACCESS (read + presence:write only) — broadcast/observe
+ *    presence, never mutate shared storage.
+ *
+ *  classroom:{classroomId}:book:{bookId}
+ *    Live co-reader presence scoped to a class. Authorized ONLY if the user is
+ *    a member of that classroom (SECURITY DEFINER user_is_classroom_member)
+ *    AND the classroom has live_presence_enabled — otherwise 403. READ_ACCESS.
+ *
+ *  reader:{bookId}  (legacy)
+ *    Original co-reader room prefix. Still granted READ_ACCESS for any
+ *    authenticated user so older links keep working.
  *
  *  gs:{sessionId}:{bookId}:{chapterIndex}[:{studentId}]
  *    Guided-session margin annotations (Liveblocks Comments). Privacy is
@@ -89,17 +98,94 @@ export async function POST(request: Request) {
     return new NextResponse(body, { status })
   }
 
-  // ── Reader co-presence rooms (and anything else) — READ_ACCESS only ──────
+  // ── Classroom co-reader rooms — membership + live_presence_enabled gated ──
+  if (requestedRoom?.startsWith("classroom:")) {
+    const decision = await authorizeClassroomRoom(
+      supabase,
+      requestedRoom,
+      user.id,
+    )
+    if (!decision.ok) {
+      return new NextResponse(decision.reason, { status: decision.status })
+    }
+
+    const session = liveblocks.prepareSession(user.id, {
+      userInfo: {
+        name: profile?.display_name ?? "Reader",
+        avatar: profile?.avatar_url ?? undefined,
+        role: decision.role,
+      },
+    })
+    session.allow(requestedRoom, session.READ_ACCESS)
+
+    const { status, body } = await session.authorize()
+    return new NextResponse(body, { status })
+  }
+
+  // ── Reader co-presence rooms (book:* and legacy reader:*) — READ_ACCESS ───
   const session = liveblocks.prepareSession(user.id, {
     userInfo: {
       name: profile?.display_name ?? "Reader",
       avatar: profile?.avatar_url ?? undefined,
     },
   })
+  session.allow("book:*", session.READ_ACCESS)
   session.allow("reader:*", session.READ_ACCESS)
 
   const { status, body } = await session.authorize()
   return new NextResponse(body, { status })
+}
+
+type ClassroomAuthResult =
+  | { ok: true; role: "teacher" | "student" }
+  | { ok: false; status: number; reason: string }
+
+/**
+ * Decide whether `userId` may enter a `classroom:{cid}:book:{bid}` co-reader
+ * room. Requires classroom membership AND live_presence_enabled. Fails closed.
+ * The role placed in userInfo is derived server-side from the member row.
+ */
+async function authorizeClassroomRoom(
+  supabase: Awaited<ReturnType<typeof createClient>>,
+  room: string,
+  userId: string,
+): Promise<ClassroomAuthResult> {
+  // classroom : classroomId : book : bookId  (bookId may itself contain no ':')
+  const parts = room.split(":")
+  if (parts.length !== 4 || parts[2] !== "book") {
+    return { ok: false, status: 400, reason: "Malformed room" }
+  }
+  const classroomId = parts[1]
+  const bookId = parts[3]
+  if (!classroomId || !bookId) {
+    return { ok: false, status: 400, reason: "Malformed room" }
+  }
+
+  const { data: isMember, error } = await supabase.rpc(
+    "user_is_classroom_member",
+    { p_user: userId, p_classroom: classroomId },
+  )
+  if (error || isMember !== true) {
+    return { ok: false, status: 403, reason: "Not a classroom member" }
+  }
+
+  // Presence is a per-classroom setting; when off, mint nothing.
+  const { data: classroom } = await supabase
+    .from("classrooms")
+    .select("live_presence_enabled")
+    .eq("id", classroomId)
+    .maybeSingle()
+  if (classroom?.live_presence_enabled === false) {
+    return { ok: false, status: 403, reason: "Live presence disabled" }
+  }
+
+  // Role is informational for the avatar UI; owner/co_teacher/ta => teacher.
+  const isStaff = await supabase.rpc("user_has_classroom_role", {
+    p_user_id: userId,
+    p_classroom_id: classroomId,
+    p_roles: ["owner", "co_teacher", "ta"],
+  })
+  return { ok: true, role: isStaff.data === true ? "teacher" : "student" }
 }
 
 type GuidedAuthResult =

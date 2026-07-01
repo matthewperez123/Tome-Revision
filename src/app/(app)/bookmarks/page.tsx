@@ -5,7 +5,6 @@ import Link from "next/link"
 import { BookOpen, Trash2, ArrowRight, ChevronDown, ChevronRight } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
 import { getBooks } from "@/lib/content"
-import { SectionVirgilPanel } from "@/components/virgil/SectionVirgilPanel"
 
 interface Highlight {
   id: string
@@ -221,13 +220,6 @@ export default function BookmarksPage() {
             )}
           </p>
         </div>
-
-        {/* Virgil search assistant */}
-        <SectionVirgilPanel
-          title="Search your highlights with Virgil"
-          placeholder="Ask Virgil to find a passage or theme…"
-          hint="Describe a quote or idea you saved, and I'll help you trace it back to its book."
-        />
 
         {!mounted ? (
           <div className="space-y-3">

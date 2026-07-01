@@ -10,7 +10,8 @@ import {
   educatorPlansForPeriod,
   readerPlansForPeriod,
   type BillingPeriod,
-} from "@/lib/pricing"
+} from "@/lib/marketing/plans"
+import { useCatalogStats } from "@/lib/marketing/catalog-stats-context"
 import { AudienceToggle, type PricingAudience } from "./AudienceToggle"
 import { BillingToggle } from "./BillingToggle"
 import { PricingGrid } from "./PricingGrid"
@@ -25,6 +26,7 @@ export function PricingView() {
   const pathname = usePathname()
   const searchParams = useSearchParams()
 
+  const stats = useCatalogStats()
   const audience = coerceAudience(searchParams.get("for"))
   const [billing, setBilling] = useState<BillingPeriod>("monthly")
 
@@ -53,7 +55,10 @@ export function PricingView() {
             />
           </div>
 
-          <PricingGrid plans={readerPlansForPeriod(billing)} period={billing} />
+          <PricingGrid
+            plans={readerPlansForPeriod(billing, stats)}
+            period={billing}
+          />
 
           <p className="text-center text-xs text-muted-foreground">
             {READER_TRIAL_COPY}

@@ -1,0 +1,13 @@
+-- Shared highlights realtime: deliver the "unshare" transition to classmates.
+--
+-- When a student retracts a share (shared true -> false), classmates lose their
+-- RLS visibility of the row (highlights_shared_read requires shared = true).
+-- With the default replica identity only the primary key is present in the old
+-- tuple, so Realtime cannot evaluate the pre-update SELECT policy and silently
+-- drops the UPDATE event — classmates keep the stale margin mark until reload.
+--
+-- REPLICA IDENTITY FULL emits every old column, so Realtime can authorize the
+-- change against the old (still-visible) row and push it. The unshare action
+-- keeps classroom_id set so the row also stays within the client's
+-- `classroom_id=eq.<class>` subscription filter and the removal propagates live.
+alter table public.highlights replica identity full;

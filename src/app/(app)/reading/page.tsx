@@ -9,7 +9,6 @@ import { getBook } from "@/lib/content"
 import { BookCoverThumb } from "@/components/tome/book-cover-thumb"
 import { Skeleton } from "@/components/ui/skeleton"
 import type { TomeBook } from "@/data/books"
-import { SectionVirgilPanel } from "@/components/virgil/SectionVirgilPanel"
 
 interface ReadingEntry {
   book: TomeBook
@@ -47,13 +46,6 @@ export default function ReadingPage() {
       </div>
 
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
-        {/* Virgil search assistant */}
-        <SectionVirgilPanel
-          title="Find your next read with Virgil"
-          placeholder="Ask Virgil what to pick up next…"
-          hint="Tell me what you just finished or the mood you're after, and I'll suggest where to go next."
-        />
-
         {loading ? (
           <div role="status" aria-busy="true" aria-live="polite" className="space-y-3">
             <span className="sr-only">Loading your books in progress…</span>

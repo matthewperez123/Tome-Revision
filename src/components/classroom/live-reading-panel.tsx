@@ -28,44 +28,6 @@ const STATUS_DOT: Record<ReaderStatus, string> = {
   disconnected: "bg-gray-400",
 }
 
-// Demo readers per classroom
-const DEMO_READERS_CLASS1: ActiveReader[] = [
-  {
-    studentId: "s1", studentName: "Sofia Rodriguez", bookId: "the-odyssey", bookTitle: "The Odyssey",
-    chapterTitle: "Book 5", chapterIndex: 4, pageProgress: 67, startedAt: new Date(Date.now() - 45 * 60000).toISOString(),
-    lastActivity: new Date(Date.now() - 30000).toISOString(), status: "active", sessionMinutes: 45,
-  },
-  {
-    studentId: "s2", studentName: "James O'Brien", bookId: "pride-and-prejudice", bookTitle: "Pride & Prejudice",
-    chapterTitle: "Chapter 12", chapterIndex: 11, pageProgress: 34, startedAt: new Date(Date.now() - 20 * 60000).toISOString(),
-    lastActivity: new Date(Date.now() - 60000).toISOString(), status: "active", sessionMinutes: 20,
-  },
-  {
-    studentId: "s3", studentName: "Aisha Patel", bookId: "the-odyssey", bookTitle: "The Odyssey",
-    chapterTitle: "Book 3", chapterIndex: 2, pageProgress: 89, startedAt: new Date(Date.now() - 60 * 60000).toISOString(),
-    lastActivity: new Date(Date.now() - 4 * 60000).toISOString(), status: "idle", sessionMinutes: 60,
-  },
-]
-
-const DEMO_READERS_CLASS2: ActiveReader[] = [
-  {
-    studentId: "s10", studentName: "Tobias Grant", bookId: "the-republic", bookTitle: "The Republic",
-    chapterTitle: "Book III", chapterIndex: 2, pageProgress: 45, startedAt: new Date(Date.now() - 30 * 60000).toISOString(),
-    lastActivity: new Date(Date.now() - 90000).toISOString(), status: "active", sessionMinutes: 30,
-  },
-  {
-    studentId: "s11", studentName: "Linnaeus Park", bookId: "the-republic", bookTitle: "The Republic",
-    chapterTitle: "Book II", chapterIndex: 1, pageProgress: 78, startedAt: new Date(Date.now() - 55 * 60000).toISOString(),
-    lastActivity: new Date(Date.now() - 3 * 60000).toISOString(), status: "idle", sessionMinutes: 55,
-  },
-]
-
-function getDemoReaders(classroomId?: string): ActiveReader[] {
-  if (classroomId === "class-1") return DEMO_READERS_CLASS1
-  if (classroomId === "class-2") return DEMO_READERS_CLASS2
-  return [...DEMO_READERS_CLASS1, ...DEMO_READERS_CLASS2]
-}
-
 export function LiveReadingPanel({ classroomId }: { classroomId?: string }) {
   const { user, isDemoMode } = useAuth()
   const [readers, setReaders] = useState<ActiveReader[]>([])
@@ -73,7 +35,7 @@ export function LiveReadingPanel({ classroomId }: { classroomId?: string }) {
 
   useEffect(() => {
     if (isDemoMode || !user) {
-      setReaders(getDemoReaders(classroomId))
+      setReaders([])
       return
     }
 
@@ -95,7 +57,7 @@ export function LiveReadingPanel({ classroomId }: { classroomId?: string }) {
       }
 
       if (!classroomIds.length || !mounted) {
-        setReaders(getDemoReaders(classroomId))
+        setReaders([])
         return
       }
 
@@ -113,7 +75,7 @@ export function LiveReadingPanel({ classroomId }: { classroomId?: string }) {
             .filter((r) => r.status !== "disconnected")
             .sort((a, b) => (a.status === "active" ? -1 : 1))
 
-          setReaders(mapped.length > 0 ? mapped : getDemoReaders(classroomId))
+          setReaders(mapped)
         }),
       )
 

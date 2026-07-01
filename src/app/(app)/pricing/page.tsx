@@ -2,33 +2,83 @@ import { Suspense } from "react"
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Lock } from "lucide-react"
 import { LandingNav } from "@/components/landing/LandingNav"
 import { LandingFooter } from "@/components/landing/LandingFooter"
 import { PricingView } from "@/components/pricing/PricingView"
-import { faqCategories } from "@/lib/faqs"
+import { getFaqCategories } from "@/lib/faqs"
+import { getCatalogStats } from "@/lib/marketing/catalog-stats"
+import { CatalogStatsProvider } from "@/lib/marketing/catalog-stats-context"
 import { marketingMasterImages } from "@/lib/marketing-images"
+import { getBook } from "@/lib/content"
 
 export const metadata: Metadata = {
   title: { absolute: "Pricing — Tome" },
   description:
     "Tome plans for readers and educators. Read the canon free forever, go deeper with Solo or Family, or bring guided reading to your classroom, school, or district.",
+  alternates: { canonical: "/pricing" },
   openGraph: {
+    type: "website",
+    url: "/pricing",
     title: "Pricing — Tome",
     description:
       "Plans for readers and educators — Free, Solo, and Family for readers; Classroom, School, and District for educators.",
+    images: [{ url: "/og-image.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pricing — Tome",
+    description:
+      "Plans for readers and educators — Free, Solo, and Family for readers; Classroom, School, and District for educators.",
+    images: ["/og-image.png"],
   },
 }
 
-const billingFaqs =
-  faqCategories.find((category) => category.id === "billing")?.items.slice(0, 3) ?? []
+/** Contextual line shown when a server paywall redirected the reader here. */
+function gateMessage(gate: string | undefined, book: string | undefined): string | null {
+  switch (gate) {
+    case "book": {
+      const title = book ? getBook(book)?.title : undefined
+      return title
+        ? `${title} is part of Tome Solo. Subscribe to keep reading the full library.`
+        : "That book is part of Tome Solo. Subscribe to read the full library."
+    }
+    case "virgil":
+      return "You've reached today's free Virgil limit. Upgrade for unlimited conversations."
+    case "advanced-trials":
+      return "Scholar and Master Trials are part of Tome Solo. Upgrade to take advanced Trials."
+    default:
+      return null
+  }
+}
 
-export default function PricingPage() {
+export default async function PricingPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ gate?: string; book?: string }>
+}) {
+  const { gate, book } = await searchParams
+  const banner = gateMessage(gate, book)
+
+  const stats = await getCatalogStats()
+  const billingFaqs =
+    getFaqCategories(stats)
+      .find((category) => category.id === "billing")
+      ?.items.slice(0, 3) ?? []
+
   return (
+    <CatalogStatsProvider value={stats}>
     <div className="min-h-screen bg-background text-foreground">
       <LandingNav />
 
       <main className="px-6 pb-24 pt-32 md:px-12">
+        {banner ? (
+          <div className="mx-auto mb-10 flex max-w-3xl items-start gap-3 rounded-lg border border-primary/30 bg-primary/5 px-5 py-4">
+            <Lock className="mt-0.5 size-5 shrink-0 text-primary" />
+            <p className="text-sm font-medium text-foreground">{banner}</p>
+          </div>
+        ) : null}
+
         {/* Hero */}
         <section className="mx-auto grid max-w-5xl gap-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:items-center">
           <div className="text-center lg:text-left">
@@ -90,5 +140,6 @@ export default function PricingPage() {
 
       <LandingFooter />
     </div>
+    </CatalogStatsProvider>
   )
 }

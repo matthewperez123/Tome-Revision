@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState, useCallback } from "react"
+import { useEffect, useId, useState, useCallback } from "react"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
 
@@ -55,7 +55,13 @@ function toAppNotification(row: NotificationRow): AppNotification {
   }
 }
 
-export function useRealtimeNotifications() {
+export function useRealtimeNotifications(options?: { limit?: number }) {
+  const limit = options?.limit ?? 30
+  // Unique per hook instance: several components (bell + inbox page) can mount
+  // this hook at once. supabase-js dedupes channels by topic, so a shared
+  // `notifications:${uid}` topic would make the second mount call `.on()` on an
+  // already-subscribed channel → "cannot add postgres_changes after subscribe()".
+  const instanceId = useId()
   const { user, isDemoMode } = useAuth()
   const [notifications, setNotifications] = useState<AppNotification[]>([])
   const [unreadCount, setUnreadCount] = useState(0)
@@ -82,7 +88,7 @@ export function useRealtimeNotifications() {
         )
         .eq("recipient_id", user!.id)
         .order("created_at", { ascending: false })
-        .limit(30)
+        .limit(limit)
 
       if (cancelled) return
       const rows = (data ?? []).map((r) =>
@@ -97,7 +103,7 @@ export function useRealtimeNotifications() {
     return () => {
       cancelled = true
     }
-  }, [user, isDemoMode])
+  }, [user, isDemoMode, limit])
 
   // Subscribe to realtime changes for a live unread badge. RLS guarantees the
   // user only ever receives rows where recipient_id = their own id.
@@ -106,7 +112,7 @@ export function useRealtimeNotifications() {
 
     const supabase = createClient()
     const channel = supabase
-      .channel(`notifications:${user.id}`)
+      .channel(`notifications:${user.id}:${instanceId}`)
       .on(
         "postgres_changes",
         {
@@ -120,7 +126,7 @@ export function useRealtimeNotifications() {
           setNotifications((prev) =>
             prev.some((n) => n.id === next.id)
               ? prev
-              : [next, ...prev].slice(0, 50),
+              : [next, ...prev].slice(0, Math.max(limit, 50)),
           )
           if (!next.read) setUnreadCount((prev) => prev + 1)
         },
@@ -147,7 +153,7 @@ export function useRealtimeNotifications() {
     return () => {
       supabase.removeChannel(channel)
     }
-  }, [user, isDemoMode])
+  }, [user, isDemoMode, limit, instanceId])
 
   const markAsRead = useCallback(
     async (id: string) => {
