@@ -45,7 +45,7 @@ export async function POST(req: Request) {
   }
 
   if (!customerId) {
-    return NextResponse.json({ error: "No subscription found." }, { status: 404 })
+    return NextResponse.json({ error: "No billing account found." }, { status: 403 })
   }
 
   const origin =

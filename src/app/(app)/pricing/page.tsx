@@ -1,35 +1,32 @@
-import { Suspense } from "react"
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Lock } from "lucide-react"
 import { LandingNav } from "@/components/landing/LandingNav"
 import { LandingFooter } from "@/components/landing/LandingFooter"
-import { PricingView } from "@/components/pricing/PricingView"
+import { BillingPlans, type BillingPlanCard } from "@/components/pricing/BillingPlans"
+import { getBillingTiers } from "@/lib/billing/prices"
 import { getFaqCategories } from "@/lib/faqs"
 import { getCatalogStats } from "@/lib/marketing/catalog-stats"
-import { CatalogStatsProvider } from "@/lib/marketing/catalog-stats-context"
 import { marketingMasterImages } from "@/lib/marketing-images"
 import { getBook } from "@/lib/content"
 
 export const metadata: Metadata = {
   title: { absolute: "Pricing — Tome" },
   description:
-    "Tome plans for readers and educators. Read the canon free forever, go deeper with Solo or Family, or bring guided reading to your classroom, school, or district.",
+    "Tome plans: read the canon, go deeper with Solo or Family, or bring per-teacher seats to your school.",
   alternates: { canonical: "/pricing" },
   openGraph: {
     type: "website",
     url: "/pricing",
     title: "Pricing — Tome",
-    description:
-      "Plans for readers and educators — Free, Solo, and Family for readers; Classroom, School, and District for educators.",
+    description: "Plans for readers and schools — Solo, Family, and School.",
     images: [{ url: "/og-image.png" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Pricing — Tome",
-    description:
-      "Plans for readers and educators — Free, Solo, and Family for readers; Classroom, School, and District for educators.",
+    description: "Plans for readers and schools — Solo, Family, and School.",
     images: ["/og-image.png"],
   },
 }
@@ -52,6 +49,36 @@ function gateMessage(gate: string | undefined, book: string | undefined): string
   }
 }
 
+// CTA wiring per tier. All three open Stripe checkout (the server resolves the
+// price from the tier so price ids never ship to the browser). School is
+// seat-based — its card renders a seat-count input and buys with that quantity.
+const CTA: Record<string, { label: string; href: string; checkout: boolean }> = {
+  solo: { label: "Start Solo", href: "/signup?plan=solo", checkout: true },
+  family: { label: "Start Family", href: "/signup?plan=family", checkout: true },
+  school: { label: "Buy seats", href: "/demo?plan=school", checkout: true },
+}
+
+/** Build serializable cards from the canonical tier table (single source). */
+function toCards(): BillingPlanCard[] {
+  return getBillingTiers().map((plan) => {
+    const cta = CTA[plan.tier]
+    return {
+      tier: plan.tier,
+      name: plan.name,
+      blurb: plan.blurb,
+      featured: Boolean(plan.featured),
+      badge: plan.badge,
+      ctaLabel: cta.label,
+      ctaHref: cta.href,
+      checkoutTier: cta.checkout ? plan.tier : null,
+      monthly: plan.monthly
+        ? { price: plan.monthly.amount, cadence: plan.monthly.cadence }
+        : null,
+      annual: { price: plan.yearly.amount, cadence: plan.yearly.cadence },
+    }
+  })
+}
+
 export default async function PricingPage({
   searchParams,
 }: {
@@ -60,6 +87,8 @@ export default async function PricingPage({
   const { gate, book } = await searchParams
   const banner = gateMessage(gate, book)
 
+  const cards = toCards()
+
   const stats = await getCatalogStats()
   const billingFaqs =
     getFaqCategories(stats)
@@ -67,7 +96,6 @@ export default async function PricingPage({
       ?.items.slice(0, 3) ?? []
 
   return (
-    <CatalogStatsProvider value={stats}>
     <div className="min-h-screen bg-background text-foreground">
       <LandingNav />
 
@@ -86,8 +114,9 @@ export default async function PricingPage({
               Read the canon. Choose how you go deeper.
             </h1>
             <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted-foreground lg:mx-0">
-              Start free and stay free forever, or unlock the full library and
-              Virgil&apos;s deeper scholarship when you&apos;re ready.
+              Unlock the full library and Virgil&apos;s deeper scholarship with
+              Solo, bring the whole household in with Family, or give your school
+              per-teacher seats.
             </p>
           </div>
           <div className="overflow-hidden rounded-lg border border-border bg-card shadow-sm">
@@ -103,11 +132,13 @@ export default async function PricingPage({
           </div>
         </section>
 
-        {/* Plans + toggles */}
+        {/* Plans */}
         <section className="mx-auto mt-16 max-w-5xl">
-          <Suspense fallback={null}>
-            <PricingView />
-          </Suspense>
+          <BillingPlans plans={cards} />
+          <p className="mt-8 text-center text-xs text-muted-foreground">
+            All plans include a 7-day free trial. Cancel anytime. School pricing
+            is in development — final rates confirmed at launch.
+          </p>
         </section>
 
         {/* FAQ teaser strip */}
@@ -140,6 +171,5 @@ export default async function PricingPage({
 
       <LandingFooter />
     </div>
-    </CatalogStatsProvider>
   )
 }

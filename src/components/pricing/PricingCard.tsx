@@ -1,8 +1,14 @@
+"use client"
+
+import { useState } from "react"
 import { Check } from "lucide-react"
 import Link from "next/link"
 import { CheckoutButton } from "./CheckoutButton"
 import type { BillingPeriod } from "@/lib/marketing/plans"
 import type { PaidTier } from "@/lib/stripe/plans"
+
+/** School is billed per teacher seat; a department needs at least two. */
+const MIN_SEATS = 2
 
 export interface PricingCardProps {
   name: string
@@ -33,6 +39,8 @@ export function PricingCard({
   badge,
   checkout,
 }: PricingCardProps) {
+  const seatBased = checkout?.tier === "school"
+  const [seats, setSeats] = useState(MIN_SEATS)
   const btnClass = `${baseBtn} ${
     featured
       ? "border-primary bg-primary text-primary-foreground hover:opacity-90"
@@ -83,10 +91,29 @@ export function PricingCard({
         ))}
       </ul>
 
+      {checkout && seatBased && (
+        <label className="mb-3 flex items-center justify-between gap-3 text-sm text-foreground">
+          <span className="font-medium">Teacher seats</span>
+          <input
+            type="number"
+            min={MIN_SEATS}
+            step={1}
+            value={seats}
+            onChange={(e) => {
+              const next = Math.floor(Number(e.target.value))
+              setSeats(Number.isFinite(next) && next >= MIN_SEATS ? next : MIN_SEATS)
+            }}
+            aria-label="Number of teacher seats"
+            className="w-20 rounded-lg border border-border bg-background px-3 py-1.5 text-right font-semibold text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          />
+        </label>
+      )}
+
       {checkout ? (
         <CheckoutButton
           tier={checkout.tier}
           period={checkout.period}
+          seats={seatBased ? seats : undefined}
           className={btnClass}
         >
           {ctaLabel}

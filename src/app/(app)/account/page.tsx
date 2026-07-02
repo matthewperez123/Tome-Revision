@@ -4,6 +4,7 @@ import { ChevronLeft, ShieldAlert } from "lucide-react"
 import { createClient } from "@/lib/supabase/server"
 import { DeleteAccountDialog } from "@/components/auth/delete-account-dialog"
 import { NotificationPreferencesForm } from "@/components/account/notification-preferences-form"
+import { ManageBillingButton } from "@/components/account/manage-billing-button"
 import { getNotificationPreferences } from "@/lib/actions/notification-preferences"
 
 export const dynamic = "force-dynamic"
@@ -23,6 +24,13 @@ export default async function AccountPage() {
     typeof meta.full_name === "string" ? (meta.full_name as string) : null
 
   const notificationPrefs = await getNotificationPreferences()
+
+  const { data: profileRow } = await supabase
+    .from("profiles")
+    .select("stripe_customer_id")
+    .eq("id", user.id)
+    .maybeSingle()
+  const hasBilling = Boolean(profileRow?.stripe_customer_id)
 
   return (
     <div className="min-h-screen pb-32">
@@ -79,6 +87,25 @@ export default async function AccountPage() {
           </h2>
           <NotificationPreferencesForm initial={notificationPrefs} />
         </section>
+
+        {/* Billing */}
+        {hasBilling && (
+          <section>
+            <h2 className="font-serif text-xl font-semibold tracking-tight mb-4">
+              Billing
+            </h2>
+            <div className="rounded-xl border border-border bg-card p-5">
+              <p className="text-sm font-medium">Subscription &amp; payment</p>
+              <p className="text-xs text-muted-foreground mt-1 leading-relaxed">
+                Update your payment method, switch plans, or cancel in the Stripe
+                billing portal. Changes take effect right away.
+              </p>
+              <div className="mt-4">
+                <ManageBillingButton />
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Danger zone */}
         <section>

@@ -142,6 +142,26 @@ export async function sendTrialEndingEmail(
   }
 }
 
+/**
+ * School seat invitation — called from `inviteTeacherSeat`. P4 will send a real
+ * email; for now this logs the claim link so the invite flow is testable
+ * end-to-end without an email provider. Never throws.
+ */
+export async function sendSeatInvite(
+  email: string,
+  opts: { token: string; adminId: string; inviterName?: string | null },
+): Promise<void> {
+  try {
+    const url = `${APP_URL}/join/seat/${opts.token}`
+    console.log(`[billing-email] seat invite (stub) → ${email}: ${url} (from ${opts.adminId})`)
+  } catch (err) {
+    console.error(
+      "[billing-email] seat-invite stub failed:",
+      err instanceof Error ? err.message : err,
+    )
+  }
+}
+
 /** Dunning — on invoice.payment_failed. */
 export async function sendPaymentFailedEmail(
   admin: Admin,

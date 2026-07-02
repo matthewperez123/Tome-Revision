@@ -2,6 +2,7 @@ import "server-only"
 
 import { createAdminClient as createAdminClientUntyped } from "@/lib/supabase/admin"
 import type { SupabaseClient } from "@supabase/supabase-js"
+import { getEntitlement, type EntitlementTier } from "@/lib/entitlements/server"
 
 const createAdminClient = () =>
   createAdminClientUntyped() as unknown as SupabaseClient<any, "public", any>
@@ -88,4 +89,40 @@ export async function hasLibraryAccess(userId: string): Promise<boolean> {
   return (owning ?? []).some(
     (s) => (s.tier as string | null) === "school" && isActive(s.status as string | null),
   )
+}
+
+// ── Canonical entitlement helpers ─────────────────────────────────────────
+// The ONLY entitlement helpers billing paths should call. Prefer these over
+// re-implementing tier/role checks inline.
+
+/** Minimal profile shape the role predicates need. */
+export interface ProfileLike {
+  role?: string | null
+}
+
+/** Thrown by `assertVirgilAccess` when the profile isn't a teacher. */
+export class VirgilAccessError extends Error {
+  constructor(message = "Virgil is available to teacher accounts only.") {
+    super(message)
+    this.name = "VirgilAccessError"
+  }
+}
+
+/** The account's resolved billing tier (`free` when no active plan). */
+export async function getTier(userId: string): Promise<EntitlementTier> {
+  const entitlement = await getEntitlement(userId)
+  return entitlement.tier
+}
+
+/** Whether a profile holds the teacher role. */
+export function isTeacher(profile: ProfileLike | null | undefined): boolean {
+  return profile?.role === "teacher"
+}
+
+/**
+ * Guard for Virgil surfaces (teacher-only). Throws `VirgilAccessError` when the
+ * profile isn't a teacher so callers can map it to a 403.
+ */
+export function assertVirgilAccess(profile: ProfileLike | null | undefined): void {
+  if (!isTeacher(profile)) throw new VirgilAccessError()
 }
