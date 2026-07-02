@@ -2,15 +2,15 @@ import { NextResponse } from "next/server"
 import type Stripe from "stripe"
 import { getStripe } from "@/lib/stripe/server"
 import { isPaidTier, type PaidTier } from "@/lib/stripe/plans"
+import { assertPriceMatchesKeyMode } from "@/lib/stripe/prices"
 import {
-  getPriceId,
-  tierForPriceId,
-  assertPriceMatchesKeyMode,
-} from "@/lib/stripe/prices"
+  getBillingPriceId,
+  tierForBillingPriceId,
+  type BillingInterval,
+} from "@/lib/billing/prices"
 import { createClient } from "@/lib/supabase/server"
 import { createAdminClient as createAdminClientUntyped } from "@/lib/supabase/admin"
 import type { SupabaseClient } from "@supabase/supabase-js"
-import type { BillingPeriod } from "@/lib/marketing/plans"
 
 const createAdminClient = () =>
   createAdminClientUntyped() as unknown as SupabaseClient<any, "public", any>
@@ -22,14 +22,15 @@ export const runtime = "nodejs"
  * hosted-checkout URL for the client to redirect to.
  *
  * Body (either form):
- *   { priceId: string, seats?: number }        — canonical (any API caller)
- *   { tier, period?, seats? }                   — first-party UI convenience;
+ *   { priceId: string, quantity?: number }      — canonical (any API caller)
+ *   { tier, period?, quantity? }                 — first-party UI convenience;
  *     the server resolves the price id from env so price ids never ship to the
  *     browser.
  *
- * The tier is read authoritatively from the resolved Stripe price's
- * `metadata.tier`, falling back to the env price→tier map (`tierForPriceId`) —
- * never hardcoded to a price id.
+ * The tier is resolved from `@/lib/billing/prices` (the single source of plan
+ * facts): forward (tier + interval → price id) for the first-party form, and
+ * reverse (`tierForBillingPriceId`) when an explicit price id is supplied.
+ * `metadata.tier` on the session comes from that lookup — never hardcoded.
  *
  * The signed-in user is attached as the Stripe customer (reused from the
  * canonical `subscriptions` row → profiles → a metadata search, else created),
@@ -47,34 +48,52 @@ export async function POST(req: Request) {
     )
   }
 
-  let body: { priceId?: string; tier?: string; period?: string; seats?: unknown }
+  let body: {
+    priceId?: string
+    tier?: string
+    period?: string
+    quantity?: unknown
+    seats?: unknown
+  }
   try {
     body = await req.json()
   } catch {
     return NextResponse.json({ error: "Invalid request body." }, { status: 400 })
   }
 
-  // Resolve the price id: explicit priceId wins; otherwise derive from
-  // tier + period via the env map (keeps price ids off the client).
-  const period: BillingPeriod = body.period === "annual" ? "annual" : "monthly"
+  // Resolve price id + tier from the canonical tier table. An explicit priceId
+  // reverse-resolves its tier; otherwise tier + period resolves the price id
+  // (keeps price ids off the client). School is annual-only.
+  const wantsYearly = body.period === "annual" || body.period === "yearly"
   let priceId = typeof body.priceId === "string" ? body.priceId.trim() : ""
-  if (!priceId) {
+  let tier: PaidTier | null = null
+
+  if (priceId) {
+    tier = tierForBillingPriceId(priceId)
+  } else {
     if (!body.tier || !isPaidTier(body.tier)) {
       return NextResponse.json(
         { error: "Provide a priceId or a known tier." },
         { status: 400 },
       )
     }
-    const resolved = getPriceId(body.tier, period)
+    tier = body.tier
+    const interval: BillingInterval =
+      tier === "school" || wantsYearly ? "yearly" : "monthly"
+    const resolved = getBillingPriceId(tier, interval)
     if (!resolved) {
       return NextResponse.json({ error: "Plan price not configured." }, { status: 500 })
     }
     priceId = resolved
   }
+  if (!tier) {
+    return NextResponse.json({ error: "Unknown plan for that price." }, { status: 400 })
+  }
 
-  // Seats = line-item quantity (only meaningful for School). Default 1.
-  const seatsRaw = Math.floor(Number(body.seats))
-  const seats = Number.isFinite(seatsRaw) && seatsRaw >= 1 ? seatsRaw : 1
+  // Quantity = line-item quantity (only meaningful for School seats, min 2).
+  const qtyRaw = Math.floor(Number(body.quantity ?? body.seats))
+  const requested = Number.isFinite(qtyRaw) && qtyRaw >= 1 ? qtyRaw : 1
+  const seats = tier === "school" ? Math.max(2, requested) : 1
 
   // Require a signed-in user so the subscription can be mapped to an account.
   const supabase = await createClient()
@@ -83,26 +102,16 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Sign in to subscribe." }, { status: 401 })
   }
 
-  // Authoritative test/live mode guard, and retrieve the price so we can read
-  // its metadata.tier. A test-mode key cannot see a live price (and vice versa).
-  let price: Stripe.Price
+  // Authoritative test/live mode guard: a test-mode key cannot see a live
+  // price (and vice versa). Refuses to start a cross-mode Checkout Session.
   try {
     await assertPriceMatchesKeyMode(stripe, priceId)
-    price = await stripe.prices.retrieve(priceId)
   } catch (err) {
     console.error("[stripe/checkout] price resolution failed:", err)
     return NextResponse.json(
       { error: "Billing is misconfigured. Please contact support." },
       { status: 500 },
     )
-  }
-
-  // Tier: price.metadata.tier is authoritative; fall back to the env map.
-  const tier: PaidTier | null =
-    (isPaidTier(price.metadata?.tier ?? "") ? (price.metadata!.tier as PaidTier) : null) ??
-    tierForPriceId(priceId)
-  if (!tier) {
-    return NextResponse.json({ error: "Unknown plan for that price." }, { status: 400 })
   }
 
   // Resolve the Stripe customer: subscriptions row → profiles → metadata search
@@ -120,8 +129,7 @@ export async function POST(req: Request) {
     req.headers.get("origin") ??
     "http://localhost:3000"
 
-  const successPath =
-    tier === "school" ? "/classroom/school?checkout=success" : `/dashboard?checkout=success&tier=${tier}`
+  const successPath = `/billing/success?tier=${tier}`
 
   try {
     const session = await stripe.checkout.sessions.create({

@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache"
 import { z } from "zod"
 import {
   type ActionResult,
+  type SupaClient,
   createAdminClient,
   fail,
   notify,
@@ -11,6 +12,7 @@ import {
   requireUser,
 } from "./_shared"
 import { getEntitlement } from "@/lib/entitlements/server"
+import { sendSeatInvite } from "@/lib/email/billing"
 
 /**
  * School seat roster management. The School subscription owner (the "admin")
@@ -157,29 +159,9 @@ export async function addTeacherToSchool(
     return fail("You already hold the admin seat.")
   }
 
-  // Enforce the purchased seat count (admin seat included in `used`).
-  const { count: used } = await admin
-    .from("school_seats")
-    .select("*", { count: "exact", head: true })
-    .eq("subscription_user_id", guard.userId)
-  if (guard.seats != null && (used ?? 0) >= guard.seats) {
-    return fail(
-      `All ${guard.seats} seats are assigned. Add more seats before inviting another teacher.`,
-    )
-  }
-
-  const { error } = await admin.from("school_seats").insert({
-    subscription_user_id: guard.userId,
-    teacher_id: profile.id,
-    seat_role: "teacher",
-  })
-  if (error) {
-    // Global unique(teacher_id) → already seated in some school.
-    if (error.code === "23505") {
-      return fail("That teacher already holds a seat in a School plan.")
-    }
-    return fail(error.message)
-  }
+  // Claim one of the plan's purchased (pending) seats for this teacher.
+  const claim = await claimPendingSeatFor(admin, guard.userId, profile.id)
+  if (!claim.ok) return fail(claim.error)
 
   await notify({
     recipientId: profile.id,
@@ -213,9 +195,17 @@ export async function removeTeacherFromSchool(
   }
 
   const admin = createAdminClient()
+  // Release the seat back to the pool (pending) rather than deleting it, so the
+  // roster stays sized to the purchased quantity and can be re-invited.
   const { error } = await admin
     .from("school_seats")
-    .delete()
+    .update({
+      teacher_id: null,
+      status: "pending",
+      invite_email: null,
+      invite_token: null,
+      invited_at: null,
+    })
     .eq("subscription_user_id", guard.userId)
     .eq("teacher_id", parsed.data.teacherId)
     .eq("seat_role", "teacher")
@@ -223,4 +213,171 @@ export async function removeTeacherFromSchool(
 
   revalidatePath("/classroom/school")
   return ok(undefined)
+}
+
+const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/
+
+/** A random URL-safe single-use invite token. */
+function randomInviteToken(): string {
+  return (crypto.randomUUID() + crypto.randomUUID()).replace(/-/g, "")
+}
+
+/**
+ * Claim one open pending seat for `teacherId` (pending → active). Prefers a seat
+ * with no outstanding invite so a live invitation isn't clobbered. Returns a
+ * friendly error when no seat is available or the teacher already holds one.
+ */
+async function claimPendingSeatFor(
+  admin: SupaClient,
+  ownerId: string,
+  teacherId: string,
+): Promise<{ ok: true } | { ok: false; error: string }> {
+  const { data: seat } = await admin
+    .from("school_seats")
+    .select("id")
+    .eq("subscription_user_id", ownerId)
+    .eq("status", "pending")
+    .order("invite_token", { ascending: true, nullsFirst: true })
+    .order("added_at", { ascending: true })
+    .limit(1)
+    .maybeSingle<{ id: string }>()
+  if (!seat) {
+    return {
+      ok: false,
+      error: "All seats are assigned. Add more seats before inviting another teacher.",
+    }
+  }
+
+  const { error } = await admin
+    .from("school_seats")
+    .update({
+      teacher_id: teacherId,
+      status: "active",
+      invite_email: null,
+      invite_token: null,
+      invited_at: null,
+    })
+    .eq("id", seat.id)
+    .eq("status", "pending")
+  if (error) {
+    // Global unique(teacher_id) → already seated in some school.
+    if (error.code === "23505") {
+      return { ok: false, error: "That teacher already holds a seat in a School plan." }
+    }
+    return { ok: false, error: error.message }
+  }
+  return { ok: true }
+}
+
+const InviteInput = z.object({ email: z.string().trim().min(3).max(200) })
+
+/**
+ * Invite a teacher to the caller's School plan by email. Reserves an open
+ * pending seat with a single-use token and hands off to `sendSeatInvite` (a P4
+ * stub for now). The invitee claims the seat via `/join/seat/[token]`.
+ */
+export async function inviteTeacherSeat(
+  input: z.infer<typeof InviteInput>,
+): Promise<ActionResult<{ email: string }>> {
+  const parsed = InviteInput.safeParse(input)
+  if (!parsed.success) return fail("Enter a valid email address.")
+  const email = parsed.data.email.toLowerCase()
+  if (!EMAIL_RE.test(email)) return fail("Enter a valid email address.")
+
+  const guard = await requireSchoolAdmin()
+  if (!guard.ok) return fail(guard.error)
+
+  const admin = createAdminClient()
+
+  // Reserve an OPEN pending seat (one with no outstanding invite).
+  const { data: seat } = await admin
+    .from("school_seats")
+    .select("id")
+    .eq("subscription_user_id", guard.userId)
+    .eq("status", "pending")
+    .is("invite_token", null)
+    .order("added_at", { ascending: true })
+    .limit(1)
+    .maybeSingle<{ id: string }>()
+  if (!seat) {
+    return fail("No open seats. Add more seats before inviting another teacher.")
+  }
+
+  const token = randomInviteToken()
+  const { error } = await admin
+    .from("school_seats")
+    .update({
+      invite_email: email,
+      invite_token: token,
+      invited_at: new Date().toISOString(),
+    })
+    .eq("id", seat.id)
+    .is("invite_token", null)
+  if (error) return fail(error.message)
+
+  await sendSeatInvite(email, { token, adminId: guard.userId })
+
+  revalidatePath("/classroom/school")
+  return ok({ email })
+}
+
+/**
+ * Accept a seat invitation. The signed-in user claims the pending seat tied to
+ * `token` (pending → active) and is granted the teacher role. Idempotency: an
+ * already-consumed token is simply "no longer valid".
+ */
+export async function claimSeatInvite(
+  token: string,
+): Promise<ActionResult<{ ownerId: string }>> {
+  const t = typeof token === "string" ? token.trim() : ""
+  if (!t) return fail("This invitation link is invalid.")
+
+  let userId: string
+  try {
+    const { user } = await requireUser()
+    userId = user.id
+  } catch {
+    return fail("Sign in to accept your seat invitation.")
+  }
+
+  const admin = createAdminClient()
+  const { data: seat } = await admin
+    .from("school_seats")
+    .select("id, subscription_user_id")
+    .eq("invite_token", t)
+    .eq("status", "pending")
+    .maybeSingle<{ id: string; subscription_user_id: string }>()
+  if (!seat) return fail("This invitation is no longer valid.")
+
+  const { error } = await admin
+    .from("school_seats")
+    .update({
+      teacher_id: userId,
+      status: "active",
+      invite_token: null,
+    })
+    .eq("id", seat.id)
+    .eq("status", "pending")
+  if (error) {
+    if (error.code === "23505") {
+      return fail("You already hold a seat in a School plan.")
+    }
+    return fail(error.message)
+  }
+
+  await admin.from("profiles").update({ role: "teacher" }).eq("id", userId)
+
+  await notify({
+    recipientId: seat.subscription_user_id,
+    type: "system",
+    title: "A teacher joined your School plan",
+    body: "Your invitation was accepted and their seat is now active.",
+    actionUrl: "/classroom/school",
+    actorId: userId,
+    entityType: "school_seat",
+    entityId: seat.subscription_user_id,
+  })
+
+  revalidatePath("/classroom/school")
+  return ok({ ownerId: seat.subscription_user_id })
 }

@@ -5,6 +5,7 @@ import { tierForPriceId } from "@/lib/stripe/prices"
 import { isPaidTier, type PaidTier } from "@/lib/stripe/plans"
 import { createAdminClient as createAdminClientUntyped } from "@/lib/supabase/admin"
 import type { SupabaseClient } from "@supabase/supabase-js"
+import { getEntitlement } from "@/lib/entitlements/server"
 import {
   sendReceiptEmail,
   sendTrialEndingEmail,
@@ -57,15 +58,22 @@ export async function POST(req: Request) {
 
   const admin = createAdminClient()
 
-  // ── Idempotency gate: skip events we've already processed ──────────
-  const { data: seen } = await admin
+  // ── Idempotency: CLAIM the event id before doing any work ──────────
+  // Inserting the primary key first makes the claim atomic — a replayed or
+  // concurrently-delivered event hits the pk conflict (23505) and returns 200
+  // so Stripe stops retrying. If processing then fails, the claim is released
+  // (below) so Stripe's next retry can reprocess.
+  const { error: claimErr } = await admin
     .from("stripe_events")
-    .select("id")
-    .eq("id", event.id)
-    .maybeSingle()
-  if (seen) {
-    console.log(`[stripe-webhook] duplicate ${event.type} (${event.id}) — skipping`)
-    return NextResponse.json({ received: true, duplicate: true })
+    .insert({ id: event.id, type: event.type })
+  if (claimErr) {
+    if (claimErr.code === "23505") {
+      console.log(`[stripe-webhook] duplicate ${event.type} (${event.id}) — skipping`)
+      return NextResponse.json({ received: true, duplicate: true })
+    }
+    // A transient claim failure — let Stripe retry the whole event.
+    console.error(`[stripe-webhook] could not claim ${event.id}: ${claimErr.message}`)
+    return NextResponse.json({ error: "Could not record event." }, { status: 500 })
   }
 
   try {
@@ -95,6 +103,11 @@ export async function POST(req: Request) {
           userId: subscription.metadata?.user_id ?? null,
           tier: subscription.metadata?.tier ?? null,
         })
+        // A fully deleted subscription no longer confers a paid teacher plan —
+        // step the buyer back down to `reader` unless they still teach.
+        if (event.type === "customer.subscription.deleted" && result.userId) {
+          await maybeDowngradeRole(admin, result.userId)
+        }
         console.log(`[stripe-webhook] handled ${event.type} (${event.id}): ${result.log}`)
         break
       }
@@ -165,16 +178,12 @@ export async function POST(req: Request) {
         break
     }
   } catch (err) {
-    // Do NOT record the event — let Stripe retry a transient failure.
+    // Release the claim so Stripe's retry can reprocess a transient failure.
+    await admin.from("stripe_events").delete().eq("id", event.id)
     const message = err instanceof Error ? err.message : "Webhook handler failed."
     console.error(`[stripe-webhook] error handling ${event.type} (${event.id}): ${message}`)
     return NextResponse.json({ error: message }, { status: 500 })
   }
-
-  // Mark processed (idempotency). ignoreDuplicates guards a concurrent delivery.
-  await admin
-    .from("stripe_events")
-    .upsert({ id: event.id, type: event.type }, { onConflict: "id", ignoreDuplicates: true })
 
   return NextResponse.json({ received: true })
 }
@@ -233,6 +242,10 @@ async function syncSubscription(
   )
   if (error) throw new Error(`subscriptions upsert failed: ${error.message}`)
 
+  // Mirror the Stripe customer id onto the profile so the account page can
+  // surface the billing portal even before the entitlement is read.
+  await persistProfileCustomerId(admin, userId, customerId)
+
   // Family & School are teacher-capable plans: grant the teacher role so the
   // Virgil gate (role='teacher') and educator tools unlock. Only ever SETS the
   // role — never strips it, so a mid-period cancel doesn't yank access.
@@ -240,11 +253,11 @@ async function syncSubscription(
     await ensureTeacherRole(admin, userId)
   }
 
-  // The purchasing admin always occupies seat #1 of their own School plan.
-  // Idempotent: ignore the duplicate on replay. Skipped once the subscription
-  // is no longer live so a canceled plan stops conferring teacher tools.
+  // Provision one School seat per purchased quantity: seat #1 is the buying
+  // admin (active), the rest are `pending` placeholders the admin fills by
+  // inviting teachers. Idempotent — tops up only the missing rows on replay.
   if (tier === "school" && isLiveStatus(subscription.status)) {
-    await ensureSchoolAdminSeat(admin, userId)
+    await ensureSchoolSeats(admin, userId, quantity ?? 1)
   }
 
   return {
@@ -276,19 +289,117 @@ async function ensureTeacherRole(admin: Admin, userId: string): Promise<void> {
   }
 }
 
-/** Ensure the School admin holds seat #1 (seat_role='admin'). Idempotent. */
-async function ensureSchoolAdminSeat(admin: Admin, ownerId: string): Promise<void> {
-  const { error } = await admin.from("school_seats").upsert(
+/** Persist the Stripe customer id onto the profile. Best-effort. */
+async function persistProfileCustomerId(
+  admin: Admin,
+  userId: string,
+  customerId: string,
+): Promise<void> {
+  const { error } = await admin
+    .from("profiles")
+    .update({ stripe_customer_id: customerId })
+    .eq("id", userId)
+  if (error) {
+    console.error(`[stripe-webhook] could not set stripe_customer_id for ${userId}: ${error.message}`)
+  }
+}
+
+/**
+ * Provision the School seat roster to match the purchased quantity. Seat #1 is
+ * the admin (active); each remaining seat is a `pending` placeholder (no
+ * teacher yet) that an invite later claims. Idempotent — creates only the
+ * shortfall, never removes seats (a downward change is handled elsewhere).
+ */
+async function ensureSchoolSeats(
+  admin: Admin,
+  ownerId: string,
+  quantity: number,
+): Promise<void> {
+  // Seat #1 — the purchasing admin.
+  const { error: adminErr } = await admin.from("school_seats").upsert(
     {
       subscription_user_id: ownerId,
       teacher_id: ownerId,
       seat_role: "admin",
+      status: "active",
     },
     { onConflict: "subscription_user_id,teacher_id", ignoreDuplicates: true },
   )
-  if (error) {
-    console.error(`[stripe-webhook] could not bootstrap admin seat for ${ownerId}: ${error.message}`)
+  if (adminErr) {
+    console.error(`[stripe-webhook] could not bootstrap admin seat for ${ownerId}: ${adminErr.message}`)
   }
+
+  const target = Math.max(1, Math.floor(quantity))
+  const { count } = await admin
+    .from("school_seats")
+    .select("id", { count: "exact", head: true })
+    .eq("subscription_user_id", ownerId)
+  const missing = target - (count ?? 0)
+  if (missing <= 0) return
+
+  const rows = Array.from({ length: missing }, () => ({
+    subscription_user_id: ownerId,
+    teacher_id: null,
+    seat_role: "teacher",
+    status: "pending",
+  }))
+  const { error } = await admin.from("school_seats").insert(rows)
+  if (error) {
+    console.error(`[stripe-webhook] could not provision ${missing} pending seat(s) for ${ownerId}: ${error.message}`)
+  }
+}
+
+/**
+ * Step a former teacher back down to `reader` after their paid plan is deleted,
+ * UNLESS they still teach: they own/co-teach a classroom, or a still-active
+ * School seat covers them. Never touches a non-teacher role.
+ */
+async function maybeDowngradeRole(admin: Admin, userId: string): Promise<void> {
+  const { data: profile } = await admin
+    .from("profiles")
+    .select("role")
+    .eq("id", userId)
+    .maybeSingle()
+  if ((profile?.role as string | null) !== "teacher") return
+
+  // Still entitled as a paid teacher (a covered School seat or Family plan)?
+  const entitlement = await getEntitlement(userId)
+  if (entitlement.isActive && (entitlement.tier === "school" || entitlement.tier === "family")) {
+    console.log(`[stripe-webhook] keep teacher role for ${userId}: still entitled (${entitlement.tier})`)
+    return
+  }
+
+  // Owns or co-teaches a classroom → keep the teacher role (and log the skip).
+  if (await teachesAnyClassroom(admin, userId)) {
+    console.log(`[stripe-webhook] keep teacher role for ${userId}: owns/co-teaches a classroom`)
+    return
+  }
+
+  const { error } = await admin
+    .from("profiles")
+    .update({ role: "reader" })
+    .eq("id", userId)
+  if (error) {
+    console.error(`[stripe-webhook] could not downgrade role for ${userId}: ${error.message}`)
+  } else {
+    console.log(`[stripe-webhook] downgraded ${userId} to reader (plan deleted, no classroom)`)
+  }
+}
+
+/** True when the user creates or co-teaches at least one classroom. */
+async function teachesAnyClassroom(admin: Admin, userId: string): Promise<boolean> {
+  const { count: owned } = await admin
+    .from("classrooms")
+    .select("id", { count: "exact", head: true })
+    .eq("teacher_id", userId)
+  if ((owned ?? 0) > 0) return true
+
+  const { count: staffed } = await admin
+    .from("classroom_members")
+    .select("id", { count: "exact", head: true })
+    .eq("student_id", userId)
+    .in("role", ["owner", "co_teacher"])
+  return (staffed ?? 0) > 0
 }
 
 /**
