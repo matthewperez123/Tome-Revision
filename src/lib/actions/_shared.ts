@@ -155,7 +155,7 @@ export async function notify(params: NotifyParams | NotifyParams[]) {
 // alias). Use it for privileged bootstraps that RLS can't express
 // ergonomically:
 //   * inserting the owner classroom_members row at classroom-create time
-//   * inserting the admin study_group_members row at group-create time
+//   * bootstrapping the owner group_members row at group-create time
 //   * pre-creating assignment_submissions for students at assignment-create
-//   * looking up classrooms / study_groups by join_code before membership
+//   * looking up classrooms / groups by join_code before membership
 // Always pair with explicit ownership checks in the action.

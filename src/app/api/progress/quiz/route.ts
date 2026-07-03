@@ -5,19 +5,20 @@ import { getEntitlement, getUserRole } from "@/lib/entitlements/server"
 export const dynamic = "force-dynamic"
 
 /**
- * Record a passed Trial server-side: persist the quiz_results row and emit the
- * Community-feed milestone(s). Wisdom (XP) and Flames (streak) are NOT written
- * here — the economy-provider awards them through the SECURITY DEFINER
- * economy_* RPCs (user_stats is the single source of truth). Anonymous/guest
- * readers (no session) get a 401 and simply keep their localStorage progress.
+ * Record a passed Trial server-side through the single authoritative path:
+ * record_trial_result (SECURITY DEFINER) inserts the quiz_results row AND awards
+ * the Wisdom/coins to user_stats, both from a server-computed amount (tier rate ×
+ * correct answers). The client no longer names the Wisdom number, and direct
+ * INSERT on quiz_results is revoked — so no account can mint Wisdom or poison a
+ * classroom leaderboard. Anonymous/guest readers (no session) get a 401 and
+ * simply keep their localStorage progress.
  */
 const bodySchema = z.object({
   bookId: z.string().min(1).max(200),
   chapterIndex: z.number().int().min(0),
   difficulty: z.string().max(40).optional(),
-  score: z.number().int().min(0).max(100),
+  correct: z.number().int().min(0).max(500),
   totalQuestions: z.number().int().min(0).max(500),
-  wisdomEarned: z.number().int().min(0).max(100000),
   isLastChapter: z.boolean().optional(),
 })
 
@@ -39,9 +40,8 @@ export async function POST(request: Request) {
     bookId,
     chapterIndex,
     difficulty,
-    score,
+    correct,
     totalQuestions,
-    wisdomEarned,
     isLastChapter,
   } = parsed.data
 
@@ -68,30 +68,27 @@ export async function POST(request: Request) {
     }
   }
 
-  // quiz_results is introduced by a migration not yet reflected in the
-  // generated database.types — cast through `any` so the build stays clean
-  // while the row still inserts under the user's RLS context.
-  const db = supabase as unknown as {
-    from: (t: string) => any
+  // record_trial_result / user_stats are introduced by migrations not yet
+  // reflected in the generated database.types — cast through `any` so the build
+  // stays clean while the RPC (SECURITY DEFINER) records the row and awards the
+  // server-computed Wisdom under the user's auth context.
+  const rpc = supabase as unknown as {
+    rpc: (fn: string, args: Record<string, unknown>) => Promise<{ data: any; error: any }>
   }
 
-  const { error: insertError } = await db.from("quiz_results").insert({
-    user_id: user.id,
-    book_id: bookId,
-    chapter_index: chapterIndex,
-    difficulty: difficulty ?? null,
-    score,
-    total_questions: totalQuestions,
-    wisdom_earned: wisdomEarned,
-    passed: true,
+  const { data: statsRow, error: recordError } = await rpc.rpc("record_trial_result", {
+    p_book_id: bookId,
+    p_chapter_index: chapterIndex,
+    p_difficulty: difficulty ?? null,
+    p_correct: correct,
+    p_total: totalQuestions,
   })
-  if (insertError) {
-    return Response.json({ error: insertError.message }, { status: 500 })
+  if (recordError) {
+    return Response.json({ error: recordError.message }, { status: 500 })
   }
-
-  // Wisdom / coins / Flames are awarded by the economy-provider via the
-  // economy_award RPC (user_stats = single source of truth). This route no
-  // longer writes gamification state, so a Trial's Wisdom is never counted twice.
+  // The RPC returns the reconciled user_stats row; the reader syncs its economy
+  // display from this authoritative value rather than a client-minted amount.
+  const stats = Array.isArray(statsRow) ? statsRow[0] : statsRow
 
   // Emit the social milestone(s) for the Community feed. Best-effort — the
   // SECURITY DEFINER record_activity() dedupes per (actor, type, entity) so a
@@ -112,5 +109,5 @@ export async function POST(request: Request) {
     })
   }
 
-  return Response.json({ ok: true })
+  return Response.json({ ok: true, stats: stats ?? null })
 }

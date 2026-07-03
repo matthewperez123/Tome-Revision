@@ -95,6 +95,31 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
     )
   }, [user, classroomId])
 
+  // Announcement stream — read side of the classroom feed. Pinned rows float to
+  // the top (order pinned desc, then newest first).
+  const fetchAnnouncements = useCallback(async () => {
+    const supabase = createClient()
+    const { data: announcementData } = await supabase
+      .from("classroom_announcements")
+      .select("id, content, pinned, created_at, teacher_id, profiles!classroom_announcements_teacher_id_fkey(display_name)")
+      .eq("classroom_id", classroomId)
+      .order("pinned", { ascending: false })
+      .order("created_at", { ascending: false })
+      .limit(10)
+
+    if (announcementData) {
+      setAnnouncements(
+        announcementData.map((a) => ({
+          id: a.id,
+          content: a.content,
+          pinned: a.pinned,
+          created_at: a.created_at,
+          teacher_name: ((a as any).profiles as { display_name: string } | null)?.display_name ?? "Teacher",
+        })),
+      )
+    }
+  }, [classroomId])
+
   // Live: when a grade lands (mirror updates the student's own submission), the
   // grades list refreshes so the score/feedback appears without a reload.
   useEffect(() => {
@@ -118,6 +143,27 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
     }
   }, [user, classroomId, fetchGrades])
 
+  // Live: new/edited/pinned announcements land in the feed without a reload.
+  useEffect(() => {
+    const supabase = createClient()
+    const channel = supabase
+      .channel(`class-announcements:${classroomId}`)
+      .on(
+        "postgres_changes",
+        {
+          event: "*",
+          schema: "public",
+          table: "classroom_announcements",
+          filter: `classroom_id=eq.${classroomId}`,
+        },
+        () => void fetchAnnouncements(),
+      )
+      .subscribe()
+    return () => {
+      void supabase.removeChannel(channel)
+    }
+  }, [classroomId, fetchAnnouncements])
+
   useEffect(() => {
     if (!user) return
 
@@ -135,25 +181,7 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
       if (cls) setClassroom(cls)
 
       // Announcements
-      const { data: announcementData } = await supabase
-        .from("classroom_announcements")
-        .select("id, content, pinned, created_at, teacher_id, profiles!classroom_announcements_teacher_id_fkey(display_name)")
-        .eq("classroom_id", classroomId)
-        .order("pinned", { ascending: false })
-        .order("created_at", { ascending: false })
-        .limit(10)
-
-      if (announcementData) {
-        setAnnouncements(
-          announcementData.map((a) => ({
-            id: a.id,
-            content: a.content,
-            pinned: a.pinned,
-            created_at: a.created_at,
-            teacher_name: ((a as any).profiles as { display_name: string } | null)?.display_name ?? "Teacher",
-          })),
-        )
-      }
+      await fetchAnnouncements()
 
       // Assignments
       const { data: assignmentData } = await supabase
@@ -204,7 +232,7 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
     }
 
     fetchData()
-  }, [user, classroomId, fetchGrades])
+  }, [user, classroomId, fetchGrades, fetchAnnouncements])
 
   if (loading) {
     return (
