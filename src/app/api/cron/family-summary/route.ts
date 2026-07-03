@@ -30,6 +30,15 @@ interface ExistingNotif {
 }
 
 export async function GET(request: Request) {
+  // ── Double-execution guard ──
+  // Vercel schedules this cron on every deployment that ships this vercel.json.
+  // Only the primary project (Tome-Revision) sets CRON_ENABLED=true; forks that
+  // share this Supabase DB (e.g. tome-consumer) leave it unset so the job no-ops
+  // here instead of processing every row twice.
+  if (process.env.CRON_ENABLED !== "true") {
+    return Response.json({ skipped: true, reason: "cron disabled on this deployment" })
+  }
+
   // ── Auth: only the cron may call this ──
   const secret = process.env.CRON_SECRET
   const auth = request.headers.get("authorization")
