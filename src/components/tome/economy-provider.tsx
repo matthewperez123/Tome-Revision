@@ -51,6 +51,9 @@ export type EconomyContextValue = {
   dailyGoalMet: boolean
   heartsRegenAt: Date | null
   dispatch: (event: EconomyEvent) => EconomyResult
+  /** Reconcile the local display from an authoritative user_stats row returned
+   *  by a server award path (e.g. record_trial_result). No-op for guests. */
+  syncStats: (row: Record<string, unknown> | null) => void
   refreshHearts: () => void
   pendingUnlocks: Achievement[]
   dismissUnlock: () => void
@@ -335,6 +338,13 @@ export function TomeEconomyProvider({ children }: { children: ReactNode }) {
     return result
   }, [stats, evaluateAfterEvent, userId])
 
+  // Reconcile the display from an authoritative server row (record_trial_result
+  // returns the reconciled user_stats). Guests have no server row → ignore.
+  const syncStats = useCallback((row: Record<string, unknown> | null) => {
+    if (!userId || !row) return
+    setStats(rowToStats(row, userId))
+  }, [userId])
+
   // Dismiss the front of the unlock queue
   const dismissUnlock = useCallback(() => {
     setPendingUnlocks((prev) => prev.slice(1))
@@ -358,8 +368,8 @@ export function TomeEconomyProvider({ children }: { children: ReactNode }) {
   }, [stats.hearts, stats.hearts_last_regen])
 
   const value = useMemo<EconomyContextValue>(
-    () => ({ stats, rank, dailyGoalMet, heartsRegenAt, dispatch, refreshHearts, pendingUnlocks, dismissUnlock }),
-    [stats, rank, dailyGoalMet, heartsRegenAt, dispatch, refreshHearts, pendingUnlocks, dismissUnlock]
+    () => ({ stats, rank, dailyGoalMet, heartsRegenAt, dispatch, syncStats, refreshHearts, pendingUnlocks, dismissUnlock }),
+    [stats, rank, dailyGoalMet, heartsRegenAt, dispatch, syncStats, refreshHearts, pendingUnlocks, dismissUnlock]
   )
 
   return (

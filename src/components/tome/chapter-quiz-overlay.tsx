@@ -57,7 +57,7 @@ export interface ChapterQuizOverlayProps {
   unitDisplay: string
   hearts: number
   isOpen: boolean
-  onPass: (xpEarned: number, coinsEarned: number) => void
+  onPass: (xpEarned: number, coinsEarned: number, correct: number, total: number) => void
   onFail: () => void
   onClose: () => void
   onSelectDifficulty: (difficulty: QuizDifficulty) => void

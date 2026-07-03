@@ -41,7 +41,7 @@ export function TrialResultsScreen({
   quizState: QuizState
   tier: QuizDifficulty
   maxHearts: number
-  onPass: (xp: number, coins: number) => void
+  onPass: (xp: number, coins: number, correct: number, total: number) => void
   onRetry: () => void
   onReturn: () => void
   /** When true, the pass-CTA reads "Finish book" instead of "Next chapter". */
@@ -285,7 +285,7 @@ export function TrialResultsScreen({
         <motion.div variants={reduced ? reducedTokens.resultsChild : resultsChild} className="space-y-2 pt-2">
           {summary.passed ? (
             <Button
-              onClick={() => onPass(summary.xpEarned, summary.coinsEarned)}
+              onClick={() => onPass(summary.xpEarned, summary.coinsEarned, summary.correct, summary.total)}
               className="codex-pressable-edge w-full min-h-[44px] py-3 text-base font-semibold gap-2"
               style={{
                 background: tierDef.accentColor,

@@ -43,7 +43,7 @@ import { useEconomy } from "@/components/tome/economy-provider"
 import { ChapterQuizOverlay } from "@/components/tome/chapter-quiz-overlay"
 import { DifficultyDropUp } from "@/components/tome/DifficultyDropUp"
 import { PaginatedReader } from "@/components/tome/paginated-reader"
-import { getQuestionsForChapter, getCuratedQuestionsForChapter } from "@/lib/chapter-questions"
+import { getCuratedQuestionsForChapter } from "@/lib/chapter-questions"
 import { dbRowsToChapterQuestions, type QuestionRow } from "@/lib/db-chapter-questions"
 import { isFrontOrBackMatter } from "@/lib/book-progress"
 import type { QuizDifficulty } from "@/lib/book-progress"
@@ -259,6 +259,9 @@ export default function ReaderPage() {
   const [showDifficultyDropUp, setShowDifficultyDropUp] = useState(false)
   const [trialQuestions, setTrialQuestions] = useState<import("@/lib/chapter-questions").ChapterQuestion[]>([])
   const [selectedDifficulty, setSelectedDifficulty] = useState<QuizDifficulty | null>(null)
+  // Resolution state for the drop-up while the Trial ladder is walked
+  // (curated → chapter DB quiz → book-level DB quiz → unavailable).
+  const [trialResolveStatus, setTrialResolveStatus] = useState<"select" | "resolving" | "unavailable">("select")
   const [chapterEndReached, setChapterEndReached] = useState(false)
 
   // ── Chapter body memo ──
@@ -311,7 +314,7 @@ export default function ReaderPage() {
 
   // ── Providers ──
   const { getProgress, startBook, completeChapter, saveQuizResult } = useBookProgress()
-  const { stats, dispatch: dispatchEconomy } = useEconomy()
+  const { stats, dispatch: dispatchEconomy, syncStats } = useEconomy()
 
   // ── Structural unit type (for dynamic labels) ──
   const structuralUnitType: StructuralUnitType = (book as TomeBook & { structuralUnitType?: StructuralUnitType })?.structuralUnitType ?? "chapter"
@@ -803,6 +806,13 @@ export default function ReaderPage() {
     if (isScroll) {
       scrollContentRef.current?.scrollTo({ top: 0, behavior: "smooth" })
     }
+    // Keep the URL in sync so the reader always deep-links to its chapter
+    // (shareable, reload-safe). Preserves other params (e.g. ?classroom).
+    if (typeof window !== "undefined") {
+      const url = new URL(window.location.href)
+      url.searchParams.set("ch", String(index))
+      window.history.replaceState(null, "", url.toString())
+    }
   }, [isScroll])
 
   // handleModeSelect removed — modal no longer used
@@ -821,55 +831,74 @@ export default function ReaderPage() {
     setTrialQuestions([])
     setSelectedDifficulty(null)
     setShowQuizOverlay(false)
+    setTrialResolveStatus("select")
     setShowDifficultyDropUp(true)
   }, [bookId, currentChapter, chapters, handleChapterSelect, completeChapter])
 
-  const handleTrialDifficultySelect = useCallback((difficulty: QuizDifficulty) => {
-    if (!book) return
-    setSelectedDifficulty(difficulty)
-
-    // Reader → DB bridge (static wins). Resolution order:
-    //   1. Curated hand-authored static bank for this book/chapter/tier.
-    //   2. Platform-authored DB quiz keyed on book_id + chapter_index + tier.
-    //   3. Generic FALLBACK questions (always present), so the overlay never
-    //      opens empty.
-    const curated = getCuratedQuestionsForChapter(book.title, currentChapter, difficulty)
-    if (curated && curated.length > 0) {
-      setTrialQuestions(curated)
-      setShowDifficultyDropUp(false)
-      setShowQuizOverlay(true)
-      return
-    }
-
-    // Open the overlay immediately with the generic fallback so the UI is
-    // responsive, then upgrade to the DB-backed set if one exists.
-    setTrialQuestions(getQuestionsForChapter(book.title, currentChapter, difficulty))
-    setShowDifficultyDropUp(false)
-    setShowQuizOverlay(true)
-
-    const reqId = ++trialReqRef.current
-    ;(async () => {
-      const { data: quizRow } = await supabase
+  // Load + adapt a DB quiz's questions for a book/tier. When `chapterIndex` is a
+  // number we ask for that chapter's quiz; when null we ask for the book-level
+  // quiz (chapter_index IS NULL). Returns [] when no such quiz exists.
+  const loadDbQuestions = useCallback(
+    async (bookIdent: string, chapterIndex: number | null, difficulty: QuizDifficulty) => {
+      let q = supabase
         .from("quizzes")
         .select("id")
-        .eq("book_id", book.id)
-        .eq("chapter_index", currentChapter)
+        .eq("book_id", bookIdent)
         .eq("difficulty", difficulty)
-        .limit(1)
-        .maybeSingle()
-      if (reqId !== trialReqRef.current || !quizRow?.id) return
-
+      q = chapterIndex === null ? q.is("chapter_index", null) : q.eq("chapter_index", chapterIndex)
+      const { data: quizRow } = await q.limit(1).maybeSingle()
+      if (!quizRow?.id) return []
       const { data: rows } = await supabase
         .from("questions")
         .select("*")
         .eq("quiz_id", quizRow.id)
         .order("order")
-      if (reqId !== trialReqRef.current || !rows?.length) return
+      if (!rows?.length) return []
+      return dbRowsToChapterQuestions(rows as QuestionRow[], difficulty)
+    },
+    [],
+  )
 
-      const adapted = dbRowsToChapterQuestions(rows as QuestionRow[], difficulty)
-      if (adapted.length > 0) setTrialQuestions(adapted)
+  const handleTrialDifficultySelect = useCallback((difficulty: QuizDifficulty) => {
+    if (!book) return
+    setSelectedDifficulty(difficulty)
+
+    // Trial resolution ladder — keyed on (book, chapter, tier). Correct at ANY
+    // coverage level; it never falls back to generic filler questions (that would
+    // "lie") and never opens a dead/empty overlay:
+    //   1. Curated hand-authored static bank for this book/chapter/tier.
+    //   2. Platform DB quiz for this chapter (book_id + chapter_index + tier).
+    //   3. Book-level DB quiz (book_id + chapter_index IS NULL + tier).
+    //   4. None of the above → an honest "being forged" empty state.
+    const curated = getCuratedQuestionsForChapter(book.title, currentChapter, difficulty)
+    if (curated && curated.length > 0) {
+      setTrialQuestions(curated)
+      setTrialResolveStatus("select")
+      setShowDifficultyDropUp(false)
+      setShowQuizOverlay(true)
+      return
+    }
+
+    // Walk the DB tiers while the drop-up shows a resolving state. We only open
+    // the full overlay once a real question set is in hand.
+    setTrialResolveStatus("resolving")
+    const reqId = ++trialReqRef.current
+    ;(async () => {
+      let adapted = await loadDbQuestions(book.id, currentChapter, difficulty)
+      if (adapted.length === 0) {
+        adapted = await loadDbQuestions(book.id, null, difficulty)
+      }
+      if (reqId !== trialReqRef.current) return
+      if (adapted.length > 0) {
+        setTrialQuestions(adapted)
+        setTrialResolveStatus("select")
+        setShowDifficultyDropUp(false)
+        setShowQuizOverlay(true)
+      } else {
+        setTrialResolveStatus("unavailable")
+      }
     })()
-  }, [book, currentChapter])
+  }, [book, currentChapter, loadDbQuestions])
 
   const handleTrialSkip = useCallback(() => {
     // Skip trial — mark chapter complete with 0 XP and advance
@@ -882,46 +911,48 @@ export default function ReaderPage() {
     }
   }, [bookId, currentChapter, chapters, completeChapter, handleChapterSelect])
 
-  const handleQuizPass = useCallback((xpEarned: number, coinsEarned: number) => {
+  const handleQuizPass = useCallback((xpEarned: number, coinsEarned: number, correct: number, total: number) => {
     const totalCount    = chapters.length || 1
     const isLastChapter = currentChapter === totalCount - 1
     const chapterData   = (chapters[currentChapter] ?? { id: `ch-${currentChapter}`, title: getUnitNumber(structuralUnitType, 1) }) as { id: string; title: string }
 
-    // Credit tier-scaled Wisdom to global stats via a single quiz_correct event
-    // with explicit xp override (the overlay already summed per-tier wisdom).
-    if (xpEarned > 0 || coinsEarned > 0) {
-      dispatchEconomy({ type: "quiz_correct", xp: xpEarned, coins: coinsEarned })
-    }
+    // Trial Wisdom is NO LONGER minted client-side. The server (record_trial_result)
+    // is the sole authority: it computes the Wisdom from the tier rate × correct
+    // answers, writes quiz_results, and awards user_stats. We only dispatch the
+    // separate chapter/book completion bonuses locally.
     dispatchEconomy({ type: "chapter_complete" })
     if (isLastChapter) dispatchEconomy({ type: "book_complete" })
 
     completeChapter(bookId, currentChapter, xpEarned)
-    const scorePct = Math.round((xpEarned / Math.max(1, trialQuestions.length * 15)) * 100)
+    const scorePct = total > 0 ? Math.round((correct / total) * 100) : 0
     saveQuizResult(bookId, {
       chapterId:       chapterData.id,
       chapterIndex:    currentChapter,
       score:           scorePct,
-      totalQuestions:  trialQuestions.length,
+      totalQuestions:  total,
       passed:          true,
       xpEarned,
       completedAt:     new Date().toISOString(),
     })
 
-    // Best-effort server mirror so Wisdom/Flames persist for signed-in readers
-    // and feed the weekly digest. localStorage above stays the instant source;
-    // guests (no session) get a 401 and simply keep their local progress.
+    // Authoritative server award. The route recomputes Wisdom itself (ignoring any
+    // client number) and returns the reconciled user_stats row, which we sync into
+    // the economy display. Guests (no session) get a 401 and keep local progress.
     void fetch("/api/progress/quiz", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         bookId,
         chapterIndex: currentChapter,
-        score: scorePct,
-        totalQuestions: trialQuestions.length,
-        wisdomEarned: xpEarned,
+        difficulty: selectedDifficulty ?? undefined,
+        correct,
+        totalQuestions: total,
         isLastChapter,
       }),
-    }).catch(() => {})
+    })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => { if (data?.stats) syncStats(data.stats) })
+      .catch(() => {})
 
     // Fire notifications
     const bookTitle = book?.title ?? bookId
@@ -932,7 +963,7 @@ export default function ReaderPage() {
 
     setShowQuizOverlay(false)
     if (!isLastChapter) setTimeout(() => handleChapterSelect(currentChapter + 1), 300)
-  }, [bookId, currentChapter, chapters, trialQuestions.length, dispatchEconomy, completeChapter, saveQuizResult, handleChapterSelect])
+  }, [bookId, currentChapter, chapters, selectedDifficulty, dispatchEconomy, syncStats, completeChapter, saveQuizResult, handleChapterSelect])
 
 
   // Keyboard navigation (scroll mode only — PaginatedReader owns keyboard in capture phase)
@@ -1025,9 +1056,13 @@ export default function ReaderPage() {
           <DifficultyDropUp
             isOpen={showDifficultyDropUp}
             unitDisplay={unitDisplay}
+            status={trialResolveStatus}
             onSelect={handleTrialDifficultySelect}
             onSkip={handleTrialSkip}
-            onClose={() => setShowDifficultyDropUp(false)}
+            onClose={() => {
+              setShowDifficultyDropUp(false)
+              setTrialResolveStatus("select")
+            }}
             resumeTier={resumable?.tier ?? null}
             resumeCopy={
               resumable

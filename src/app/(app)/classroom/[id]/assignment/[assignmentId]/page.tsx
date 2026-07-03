@@ -74,7 +74,7 @@ export default function AssignmentDetailPage({
       if (assignmentData) setAssignment(assignmentData)
 
       // Fetch student's submission (if student)
-      if (role === "reader") {
+      if (role === "student") {
         const { data: sub } = await supabase
           .from("assignment_submissions")
           .select("*")
@@ -220,7 +220,7 @@ export default function AssignmentDetailPage({
                   : `/read/${assignment.book_id}?classroom=${classroomId}`
               }
               onClick={() => {
-                if (role === "reader") void startAssignment(assignment.id)
+                if (role === "student") void startAssignment(assignment.id)
               }}
               className="mt-2 inline-flex items-center gap-1.5 text-sm text-indigo-600 hover:text-indigo-500"
             >
@@ -244,7 +244,7 @@ export default function AssignmentDetailPage({
                 : `/read/${assignment.book_id}?trial=1&classroom=${classroomId}`
             }
             onClick={() => {
-              if (role === "reader") void startAssignment(assignment.id)
+              if (role === "student") void startAssignment(assignment.id)
             }}
             className="mt-2 inline-flex items-center gap-1.5 text-sm text-indigo-600 hover:text-indigo-500"
           >
@@ -259,7 +259,7 @@ export default function AssignmentDetailPage({
           <p className="text-sm font-medium">
             {isSubmitted ? "You've completed this quiz." : "Ready when you are."}
           </p>
-          {role === "reader" && (
+          {role === "student" && (
             <Link
               href={`/classroom/${classroomId}/quiz/${assignment.quiz_id}`}
               className="mt-2 inline-flex items-center gap-1.5 text-sm text-indigo-600 hover:text-indigo-500"
@@ -286,7 +286,7 @@ export default function AssignmentDetailPage({
       )}
 
       {/* Student submission area */}
-      {role === "reader" && (assignment.type === "discussion" || assignment.type === "essay") && (
+      {role === "student" && (assignment.type === "discussion" || assignment.type === "essay") && (
         <div className="mt-6">
           <h2 className="text-sm font-semibold">Your Response</h2>
 

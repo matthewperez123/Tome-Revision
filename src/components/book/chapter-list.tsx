@@ -106,7 +106,7 @@ function ChapterRow({
   bookId: string
 }) {
   return (
-    <a href={`/read/${bookId}`}>
+    <a href={`/read/${bookId}?ch=${index}`}>
       <div
         className={cn(
           "flex items-start gap-3 rounded-xl border p-3 transition-all duration-150",
