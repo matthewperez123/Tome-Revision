@@ -61,3 +61,27 @@ Palette: lapis, vermilion, gold, tyrian, verdigris. No new fonts, no new accents
 LIVEBLOCKS: auth at /api/liveblocks-auth; rooms 'classroom:{classroomId}' (roster presence) and
 'reader:{bookId}:{classroomId}' (reading presence). Gate room grants with the existing
 user_has_classroom_role(uid, classroom_id, roles[]) helper — reuse, don't reinvent.
+
+## Consumer fork rules
+
+This folder is the `consumer` branch and deploys as the SEPARATE **tome-consumer**
+Vercel project. It shares the SAME Supabase DB (vjaezrcuuzmbmnsfrtwt) and the SAME
+Stripe account as the primary Tome-Revision site. Treat it as a second reader of
+shared production state, not a private sandbox.
+
+- **NEVER run migrations, SQL, or any schema change from this worktree.** The
+  Supabase DB is shared with production — a schema edit here hits the live site.
+  Schema changes land on `main` (the primary line) FIRST, are applied to Supabase
+  out-of-band, then arrive here via `git merge origin/main`.
+- **No new Stripe products, prices, or webhook endpoints from this worktree.** The
+  primary site owns the single Stripe webhook (`/api/stripe/webhook`). A second
+  registered endpoint would process every checkout event twice against the shared
+  DB. Do not point Stripe at the tome-consumer domain.
+- **Do not enable crons here.** Cron handlers are gated behind `CRON_ENABLED`,
+  which is set ONLY on Tome-Revision. Leave it unset on tome-consumer so scheduled
+  jobs (weekly-digest, due-soon, family-summary) run exactly once, on the primary.
+- **RUBRIC applies unchanged**: Fraunces (display) / Literata (body) / Switzer (UI),
+  the locked palette (lapis, vermilion, gold, tyrian, verdigris — no new fonts or
+  accents), and iridescence reserved EXCLUSIVELY for Virgil surfaces.
+- Consumer-facing product changes belong on THIS branch. Anything touching shared
+  infrastructure (DB, Stripe, cron, migrations) belongs on `main` first.
