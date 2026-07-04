@@ -37,6 +37,7 @@ import { X } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { TeacherDashboard } from "@/components/classroom/teacher-dashboard"
 import { UpcomingAssignments } from "@/components/classroom/upcoming-assignments"
+import { RecentlyGraded } from "@/components/classroom/recently-graded"
 import { useAuth } from "@/hooks/use-auth"
 import { CheckoutResultToast } from "@/components/pricing/CheckoutResultToast"
 
@@ -271,6 +272,7 @@ function StudentDashboard() {
 
         {/* ── Classroom Widgets (only if student is in a classroom) ── */}
         <UpcomingAssignments />
+        <RecentlyGraded />
 
         {/* ── 1. Header ──────────────────────────── */}
         <BlurFade delay={0.04} inView>
