@@ -7,7 +7,9 @@ import { VIRGIL_REGISTRY } from "@/lib/virgil/registry"
 import { runVirgilToolLoop } from "@/lib/virgil/tools"
 import { MODEL_BY_TIER, VIRGIL_VOICE } from "@/lib/virgil/types"
 import { isTeacherTask, handleTeacherTask } from "@/lib/virgil/teacher-tasks"
+import { isOverTaskCap, CAP_MESSAGE } from "@/lib/virgil/task-config"
 
+export const runtime = "nodejs"
 export const maxDuration = 60
 
 /** Abuse-prevention cap on daily Virgil calls per teacher. Teacher cost is
@@ -103,27 +105,46 @@ export async function POST(request: Request) {
     return Response.json({ error: "Virgil is available to teachers only." }, { status: 403 })
   }
 
+  const raw = await request.json().catch(() => null)
+
+  // Teacher task pipeline (quiz builder, grader, etc.), distinguished from the
+  // chat surface by a `task` field. The envelope is STRICT: only `{ task, input }`
+  // is permitted. Any other top-level key (model, system, max_tokens,
+  // temperature, …) is rejected with 400 — the task registry is the SOLE
+  // authority for the model, token ceiling, and temperature, so the client can
+  // never influence them through the request body.
+  if (raw && typeof raw === "object" && "task" in raw) {
+    const extra = Object.keys(raw as Record<string, unknown>).filter(
+      (k) => k !== "task" && k !== "input",
+    )
+    if (extra.length > 0) {
+      return Response.json(
+        { error: `Unexpected field(s): ${extra.join(", ")}. Send only { task, input }.` },
+        { status: 400 },
+      )
+    }
+    const task = (raw as { task?: unknown }).task
+    if (!isTeacherTask(task)) {
+      return Response.json({ error: "Unknown task" }, { status: 400 })
+    }
+    // Per-task daily cap, checked BEFORE any model call so cost is bounded at
+    // the door regardless of what the task goes on to do.
+    if (await isOverTaskCap(user.id, task)) {
+      return Response.json({ error: CAP_MESSAGE }, { status: 429 })
+    }
+    return handleTeacherTask(task, raw, {
+      userId: user.id,
+      supabase,
+      signal: request.signal,
+    })
+  }
+
+  // Chat surface (library / guided-session) — global abuse-prevention cap.
   if (await isOverDailyCap(user.id)) {
     return Response.json(
       { error: `You've reached today's Virgil limit of ${MAX_DAILY_VIRGIL_CALLS} requests.` },
       { status: 429 },
     )
-  }
-
-  const raw = await request.json().catch(() => null)
-
-  // Teacher task pipeline (quiz builder, semester planner, grader, etc.).
-  // Distinguished from the chat surface by the presence of a `task` field.
-  if (raw && typeof raw === "object" && "task" in raw) {
-    const task = (raw as { task?: unknown }).task
-    if (isTeacherTask(task)) {
-      return handleTeacherTask(task, raw, {
-        userId: user.id,
-        supabase,
-        record: () => recordTaskUsage(user.id),
-      })
-    }
-    return Response.json({ error: "Unknown task" }, { status: 400 })
   }
 
   const parsed = bodySchema.safeParse(raw)
