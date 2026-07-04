@@ -60,6 +60,7 @@ import { CanticleHero } from "@/components/reader/canticle-hero"
 import { ReaderHighlights } from "@/components/reader/reader-highlights"
 import { ReaderPresenceRoom, ReaderPresenceAvatars } from "@/components/reader/reader-presence"
 import { useAuth } from "@/hooks/use-auth"
+import { useActivityBeacon } from "@/hooks/use-activity-beacon"
 import { autoFinalizeReadingForBook } from "@/lib/actions/grades"
 import { RUBRIC } from "@/lib/semester-plan/rubric"
 import { useEntitlement } from "@/hooks/use-entitlement"
@@ -224,6 +225,16 @@ export default function ReaderPage() {
   // ── Entitlement gate (readers only; teachers/students unaffected) ──
   const { role, user } = useAuth()
   const { tier, loading: entitlementLoading } = useEntitlement()
+
+  // Live-presence heartbeat for the teacher's Lectern (students in a class only).
+  useActivityBeacon({
+    classroomId,
+    surface: "reading",
+    bookId,
+    chapterIndex: currentChapter,
+    assignmentId,
+    detail: chapters[currentChapter]?.title ?? null,
+  })
 
   // ── Reading preferences (dependency-free store, localStorage + Supabase) ──
   const prefs = useReaderPrefs()

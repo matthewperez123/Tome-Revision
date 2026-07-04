@@ -12,6 +12,7 @@ import {
   type AttemptResult,
 } from "@/lib/actions/teacher-quizzes"
 import { IRIDESCENT } from "@/lib/semester-plan/rubric"
+import { useActivityBeacon } from "@/hooks/use-activity-beacon"
 
 const MULTI = new Set(["multiple_choice", "vocabulary_in_context"])
 const TEXT = new Set(["fill_blank", "short_answer"])
@@ -94,6 +95,14 @@ export default function QuizTakePage({
     () => (quiz ? quiz.questions.filter((q) => hasAnswer(answers[q.id])).length : 0),
     [quiz, answers],
   )
+
+  // Beacon quiz-takers to the teacher's Lectern while the attempt is open.
+  useActivityBeacon({
+    classroomId: quiz && !result ? classroomId : null,
+    surface: "quiz",
+    assignmentId: null,
+    detail: quiz?.title ?? null,
+  })
 
   if (loading) {
     return (

@@ -14,6 +14,7 @@ import {
   ChevronLeft,
   Calendar,
   Highlighter,
+  Radio,
 } from "lucide-react"
 import { toast } from "sonner"
 import { Button } from "@/components/ui/button"
@@ -294,6 +295,17 @@ function TeacherClassroomView({ classroomId }: { classroomId: string }) {
         <TeacherAssignmentComposer classroomId={classroomId} />
         <AssignmentDraftWithVirgil classroomId={classroomId} onCreated={fetchAll} />
         <div className="flex flex-wrap gap-2">
+          <Link
+            href={`/classroom/${classroomId}/lectern`}
+            className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium transition-colors"
+            style={{
+              color: "#3E7C6A",
+              backgroundColor: "#3E7C6A14",
+              border: "1px solid #3E7C6A33",
+            }}
+          >
+            <Radio className="size-3.5" /> The Lectern
+          </Link>
           <Link
             href={`/classroom/${classroomId}/progress`}
             className="inline-flex items-center gap-1.5 rounded-full border border-border px-3 py-1 text-xs text-muted-foreground transition-colors hover:border-foreground/30 hover:text-foreground"

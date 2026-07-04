@@ -1683,6 +1683,39 @@ export type Database = {
         }
         Relationships: []
       }
+      student_activity: {
+        Row: {
+          user_id: string
+          classroom_id: string
+          surface: string
+          book_id: string | null
+          chapter_index: number | null
+          assignment_id: string | null
+          detail: string | null
+          last_seen_at: string
+        }
+        Insert: {
+          user_id: string
+          classroom_id: string
+          surface: string
+          book_id?: string | null
+          chapter_index?: number | null
+          assignment_id?: string | null
+          detail?: string | null
+          last_seen_at?: string
+        }
+        Update: {
+          user_id?: string
+          classroom_id?: string
+          surface?: string
+          book_id?: string | null
+          chapter_index?: number | null
+          assignment_id?: string | null
+          detail?: string | null
+          last_seen_at?: string
+        }
+        Relationships: []
+      }
       questions: {
         Row: {
           category: string | null

@@ -7,6 +7,7 @@ import { toast } from "sonner"
 import { Button } from "@/components/ui/button"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
+import { useActivityBeacon } from "@/hooks/use-activity-beacon"
 import { startAssignment, submitAssignment, saveDraft } from "@/lib/actions/assignments"
 import { RUBRIC } from "@/lib/semester-plan/rubric"
 
@@ -165,6 +166,19 @@ export default function AssignmentDetailPage({
     }, 10000)
     return () => clearTimeout(t)
   }, [responseText, assignment, user, role, submission?.status])
+
+  // Beacon essay writers to the teacher's Lectern while they're still drafting.
+  const isEssayInProgress =
+    assignment?.type === "essay" &&
+    submission?.status !== "submitted" &&
+    submission?.status !== "graded"
+  useActivityBeacon({
+    classroomId: isEssayInProgress ? classroomId : null,
+    surface: "essay",
+    bookId: assignment?.book_id ?? null,
+    assignmentId,
+    detail: assignment?.title ?? null,
+  })
 
   if (loading) {
     return (
