@@ -3,7 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { getNavForRole } from "@/lib/navigation"
+import { getNavGroupsForRole } from "@/lib/navigation"
 import { useAuth } from "@/hooks/use-auth"
 import {
   Sidebar,
@@ -11,6 +11,7 @@ import {
   SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
+  SidebarGroupLabel,
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuButton,
@@ -33,13 +34,7 @@ export function AppSidebar() {
 
   return (
     <Sidebar collapsible="icon" overlayExpand className={`border-r-0 !top-12 !h-[calc(100svh-3rem)] [&_[data-sidebar=sidebar]]:bg-background ${zClass}`}>
-      <SidebarContent className="pt-1">
-        <SidebarGroup>
-          <SidebarGroupContent>
-            <SidebarNav pathname={pathname} />
-          </SidebarGroupContent>
-        </SidebarGroup>
-      </SidebarContent>
+      <SidebarNav pathname={pathname} />
       <SidebarFooter className="px-1.5 py-2 border-t border-border">
         <ProfileSwitcher />
       </SidebarFooter>
@@ -51,9 +46,9 @@ export function AppSidebar() {
 function SidebarNav({ pathname }: { pathname: string }) {
   const { setOpen, setOpenMobile } = useSidebar()
   const { role } = useAuth()
-  const listRef = React.useRef<HTMLUListElement>(null)
+  const listRef = React.useRef<HTMLDivElement>(null)
 
-  const navItems = React.useMemo(() => getNavForRole(role), [role])
+  const navGroups = React.useMemo(() => getNavGroupsForRole(role), [role])
 
   React.useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
@@ -86,9 +81,16 @@ function SidebarNav({ pathname }: { pathname: string }) {
   const activeHref = (() => {
     if (pathname.startsWith("/book/"))    return "/library/browse"
     if (pathname.startsWith("/library"))  return "/library/browse"
+    if (pathname.startsWith("/read/"))    return "/reading"
+    if (pathname.startsWith("/reading"))  return "/reading"
+    if (pathname.startsWith("/bookmarks")) return "/bookmarks"
+    if (pathname.startsWith("/shelves"))  return "/shelves"
+    if (pathname.startsWith("/author"))   return "/authors"
+    if (pathname.startsWith("/explore"))  return "/explore"
+    if (pathname.startsWith("/timelines")) return "/timelines"
+    if (pathname.startsWith("/quiz"))     return "/quizzes"
     if (pathname.startsWith("/dashboard")) return "/dashboard"
     if (pathname.startsWith("/account"))  return "/account"
-    if (pathname.startsWith("/read/"))    return "/library/browse"
     if (pathname.startsWith("/teacher/guided-learning")) return "/teacher/guided-learning"
     // Teacher sub-routes: keep their exact prefixes so they don't
     // also highlight the parent "/classroom" item
@@ -99,38 +101,41 @@ function SidebarNav({ pathname }: { pathname: string }) {
   })()
 
   return (
-    <SidebarMenu ref={listRef}>
-      {navItems.map((item) => {
-        // Exact match for the home route
-        // For other routes, match activeHref exactly to prevent
-        // multiple items highlighting (e.g. /classroom and /classroom/quiz-builder)
-        const isActive =
-          item.href === "/"
-            ? pathname === "/"
-            : activeHref === item.href
+    <SidebarContent ref={listRef} className="pt-1">
+      {navGroups.map((group) => (
+        <SidebarGroup key={group.label ?? group.items[0]?.href}>
+          {group.label && <SidebarGroupLabel>{group.label}</SidebarGroupLabel>}
+          <SidebarGroupContent>
+            <SidebarMenu>
+              {group.items.map((item) => {
+                const isActive =
+                  item.href === "/"
+                    ? pathname === "/"
+                    : activeHref === item.href
 
-        return (
-          <SidebarMenuItem key={`${item.label}-${item.href}`}>
-            <SidebarMenuButton
-              isActive={isActive}
-              tooltip={item.label}
-              render={<Link href={item.href} onClick={() => { setOpen(false); setOpenMobile(false) }} />}
-            >
-              {/* Minimalist Lucide line icon — no animations, no entrance,
-               * no hover scale. 1.5 stroke reads scholarly. The
-               * SidebarMenuButton's data-[active=true] state handles the
-               * laurel-gold active swap; inactive items use a basic
-               * transition-colors only. */}
-              <item.icon
-                className="size-4 transition-colors duration-200"
-                strokeWidth={1.5}
-                aria-hidden="true"
-              />
-              <span>{item.label}</span>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-        )
-      })}
-    </SidebarMenu>
+                return (
+                  <SidebarMenuItem key={`${item.label}-${item.href}`}>
+                    <SidebarMenuButton
+                      isActive={isActive}
+                      tooltip={item.label}
+                      render={<Link href={item.href} onClick={() => { setOpen(false); setOpenMobile(false) }} />}
+                    >
+                      {/* Minimalist Lucide line icon — no animations, no entrance,
+                       * no hover scale. 1.5 stroke reads scholarly. */}
+                      <item.icon
+                        className="size-4 transition-colors duration-200"
+                        strokeWidth={1.5}
+                        aria-hidden="true"
+                      />
+                      <span>{item.label}</span>
+                    </SidebarMenuButton>
+                  </SidebarMenuItem>
+                )
+              })}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+      ))}
+    </SidebarContent>
   )
 }
