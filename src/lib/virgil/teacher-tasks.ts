@@ -13,9 +13,14 @@ import {
   TEACHER_QUIZ_DIFFICULTIES,
   type GenerateQuizRequest,
 } from "@/lib/teacher-quiz-types"
-import { TASK_CONFIG, recordTaskEvent, type TeacherTaskKey } from "@/lib/virgil/task-config"
+import {
+  TASK_CONFIG,
+  recordTaskEvent,
+  isOverRegenCap,
+  REGEN_DAILY_CAP,
+  type TeacherTaskKey,
+} from "@/lib/virgil/task-config"
 import { assertOwnership } from "@/lib/virgil/ownership"
-import { notify } from "@/lib/actions/_shared"
 
 /**
  * Teacher-only Virgil task handlers. Every task here is reachable only after the
@@ -311,6 +316,19 @@ async function handleGradeResponse(raw: unknown, ctx: TaskCtx): Promise<Response
   const own = await assertOwnership("grade_response", input as Record<string, unknown>, ctx)
   if (!own.ok) return own.response
 
+  // Grading is a DRAFT: each call proposes a score + feedback and is repeatable
+  // (Regenerate), so it's bounded per-object per day. The teacher finalizes the
+  // draft separately via gradeSubmission, which is where the grade is written.
+  const objectId = "submissionId" in input ? input.submissionId : input.responseId
+  if (await isOverRegenCap(ctx.userId, "grade_response", objectId)) {
+    return Response.json(
+      {
+        error: `Virgil has drafted this ${REGEN_DAILY_CAP} times today — review the last draft or grade it yourself.`,
+      },
+      { status: 429 },
+    )
+  }
+
   if ("submissionId" in input) {
     return gradeEssaySubmission(input.submissionId, ctx)
   }
@@ -382,28 +400,23 @@ async function handleGradeResponse(raw: unknown, ctx: TaskCtx): Promise<Response
 /**
  * Essay variant of grade_response. Ownership is already proven (the assignment's
  * classroom is owned by this teacher). Grades the student's `response_text`
- * against the essay prompt via the same shared grader, then writes the canonical
- * `grades` row (single source of truth) and mirrors the numeric score onto the
- * denormalized assignment_submissions cache through the service-role client.
- * The teacher stays the grader of record (graded_by = teacher), Virgil only
- * proposes the score + feedback.
+ * against the essay prompt via the same shared grader and returns the proposal
+ * WITHOUT persisting anything — this is a DRAFT. The teacher reviews it, edits
+ * inline, and finalizes through `gradeSubmission` (the single write path), which
+ * records the model's draft score vs the teacher's confirmed score in
+ * grade_history. Metered into the per-object regen ledger so drafts are bounded.
  */
 async function gradeEssaySubmission(submissionId: string, ctx: TaskCtx): Promise<Response> {
   const { data: sub } = await ctx.supabase
     .from("assignment_submissions")
-    .select(
-      "id, student_id, response_text, assignment:assignments(title, essay_prompt, points_available, classroom_id)",
-    )
+    .select("id, response_text, assignment:assignments(essay_prompt, points_available)")
     .eq("id", submissionId)
     .maybeSingle<{
       id: string
-      student_id: string
       response_text: string | null
       assignment: {
-        title: string | null
         essay_prompt: string | null
         points_available: number | null
-        classroom_id: string | null
       } | null
     }>()
   if (!sub?.assignment) return Response.json({ error: "Not found." }, { status: 404 })
@@ -434,79 +447,14 @@ async function gradeEssaySubmission(submissionId: string, ctx: TaskCtx): Promise
     return Response.json({ error: "Virgil couldn't grade this essay. Try again." }, { status: 502 })
   }
 
-  const score = Math.round(Math.max(0, Math.min(grade.score, maxPoints)))
-  const nowIso = new Date().toISOString()
-  const admin = createAdminClient()
-
-  const { data: existing } = await admin
-    .from("grades")
-    .select("id, score, feedback, graded_by")
-    .eq("submission_id", submissionId)
-    .maybeSingle<{ id: string; score: number | null; feedback: string | null; graded_by: string | null }>()
-
-  if (existing) {
-    await admin.from("grade_history").insert({
-      grade_id: existing.id,
-      previous_score: existing.score,
-      previous_feedback: existing.feedback,
-      previous_graded_by: existing.graded_by,
-      changed_by: ctx.userId,
-    })
-    const { error: updErr } = await admin
-      .from("grades")
-      .update({
-        score,
-        max_score: maxPoints,
-        feedback: grade.feedback,
-        graded_by: ctx.userId,
-        is_auto_graded: false,
-        was_overridden: true,
-        graded_at: nowIso,
-      })
-      .eq("id", existing.id)
-    if (updErr) return Response.json({ error: "Failed to save grade" }, { status: 500 })
-  } else {
-    const { error: insErr } = await admin.from("grades").insert({
-      submission_id: submissionId,
-      score,
-      max_score: maxPoints,
-      feedback: grade.feedback,
-      is_auto_graded: false,
-      graded_by: ctx.userId,
-      graded_at: nowIso,
-    })
-    if (insErr) return Response.json({ error: "Failed to save grade" }, { status: 500 })
-  }
-
-  await admin
-    .from("assignment_submissions")
-    .update({
-      status: "graded",
-      score,
-      feedback: grade.feedback,
-      graded_at: nowIso,
-      graded_by: ctx.userId,
-    })
-    .eq("id", submissionId)
-
-  await notify({
-    recipientId: sub.student_id,
-    type: "assignment_graded",
-    title: `Your essay was graded: ${sub.assignment.title ?? "Essay"}`,
-    body: `Score: ${score} / ${maxPoints}`,
-    actionUrl: sub.assignment.classroom_id
-      ? `/classroom/${sub.assignment.classroom_id}`
-      : "/classroom",
-    actorId: ctx.userId,
-    entityType: "submission",
-    entityId: submissionId,
-  })
-
   await recordTaskEvent(ctx.userId, "grade_response", submissionId)
   return Response.json({
-    score: grade.score,
+    score: Math.round(Math.max(0, Math.min(grade.score, maxPoints))),
+    max_points: maxPoints,
     is_correct: grade.isCorrect,
     feedback: grade.feedback,
+    strengths: grade.strengths,
+    improvements: grade.improvements,
     truncated: grade.truncated,
   })
 }

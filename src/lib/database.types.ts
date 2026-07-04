@@ -1028,8 +1028,10 @@ export type Database = {
       }
       grade_history: {
         Row: {
+          ai_draft_score: number | null
           changed_at: string
           changed_by: string
+          final_score: number | null
           grade_id: string
           id: string
           previous_feedback: string | null
@@ -1037,8 +1039,10 @@ export type Database = {
           previous_score: number | null
         }
         Insert: {
+          ai_draft_score?: number | null
           changed_at?: string
           changed_by: string
+          final_score?: number | null
           grade_id: string
           id?: string
           previous_feedback?: string | null
@@ -1046,8 +1050,10 @@ export type Database = {
           previous_score?: number | null
         }
         Update: {
+          ai_draft_score?: number | null
           changed_at?: string
           changed_by?: string
+          final_score?: number | null
           grade_id?: string
           id?: string
           previous_feedback?: string | null
