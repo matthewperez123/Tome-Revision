@@ -3,14 +3,14 @@
 import { useCallback, useEffect, useState } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { ChevronLeft, BookOpen, Users, BarChart2, MessageCircle } from "lucide-react"
+import { ChevronLeft, BookOpen, BarChart2, MessageCircle } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
 import { getBook } from "@/lib/content"
 import { useAuth } from "@/hooks/use-auth"
 import { TeacherAnnouncementComposer } from "@/components/classroom/teacher-announcement-composer"
 import { TeacherAssignmentComposer } from "@/components/classroom/teacher-assignment-composer"
 
-type Tab = "feed" | "assignments" | "classmates" | "progress"
+type Tab = "feed" | "assignments" | "progress"
 
 interface ClassroomInfo {
   id: string
@@ -35,12 +35,6 @@ interface AssignmentItem {
   status: string // submission status
 }
 
-interface Classmate {
-  id: string
-  display_name: string
-  avatar_url: string | null
-}
-
 interface GradeItem {
   id: string
   title: string
@@ -57,7 +51,6 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
   const [tab, setTab] = useState<Tab>("feed")
   const [announcements, setAnnouncements] = useState<AnnouncementItem[]>([])
   const [assignments, setAssignments] = useState<AssignmentItem[]>([])
-  const [classmates, setClassmates] = useState<Classmate[]>([])
   const [grades, setGrades] = useState<GradeItem[]>([])
   const [loading, setLoading] = useState(true)
 
@@ -211,23 +204,6 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
         )
       }
 
-      // Classmates
-      const { data: memberData } = await supabase
-        .from("classroom_members")
-        .select("student_id, profiles(id, display_name, avatar_url)")
-        .eq("classroom_id", classroomId)
-
-      if (memberData) {
-        setClassmates(
-          memberData
-            .map((m) => {
-              const p = (m as any).profiles as { id: string; display_name: string; avatar_url: string | null } | null
-              return { id: p?.id ?? m.student_id, display_name: p?.display_name ?? "Student", avatar_url: p?.avatar_url ?? null }
-            })
-            .filter((c) => c.id !== user!.id), // exclude self
-        )
-      }
-
       setLoading(false)
     }
 
@@ -256,7 +232,6 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
   const tabs: { key: Tab; label: string; icon: typeof BookOpen }[] = [
     { key: "feed", label: "Feed", icon: MessageCircle },
     { key: "assignments", label: "Assignments", icon: BookOpen },
-    { key: "classmates", label: "Classmates", icon: Users },
     { key: "progress", label: "My Progress", icon: BarChart2 },
   ]
 
@@ -382,26 +357,6 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
                     {a.status.replace("_", " ")}
                   </span>
                 </Link>
-              ))
-            )}
-          </div>
-        )}
-
-        {/* Classmates Tab */}
-        {tab === "classmates" && (
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-            {classmates.length === 0 ? (
-              <p className="col-span-full py-8 text-center text-sm text-muted-foreground">
-                No classmates yet
-              </p>
-            ) : (
-              classmates.map((c) => (
-                <div key={c.id} className="flex items-center gap-3 rounded-xl border bg-card p-3">
-                  <div className="flex size-9 items-center justify-center rounded-full bg-muted text-sm font-medium">
-                    {c.display_name.charAt(0).toUpperCase()}
-                  </div>
-                  <span className="text-sm font-medium truncate">{c.display_name}</span>
-                </div>
               ))
             )}
           </div>
