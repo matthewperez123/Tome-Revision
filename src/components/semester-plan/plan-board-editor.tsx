@@ -7,9 +7,11 @@ import {
   ChevronDown,
   ChevronUp,
   Clock,
+  ExternalLink,
   Loader2,
   Plus,
   RefreshCw,
+  SquarePen,
   Trash2,
   X,
 } from "lucide-react"
@@ -135,6 +137,21 @@ export function EditablePlanBoard({ plan }: { plan: SemesterPlan }) {
     [plan.id, router],
   )
 
+  const provision = useCallback(
+    async (itemId: string): Promise<string | null> => {
+      const res = await fetch(`/api/classroom/semester-plan/${plan.id}/provision`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ itemId }),
+      })
+      const data = (await res.json().catch(() => ({}))) as { error?: string }
+      if (!res.ok) return data.error ?? "Could not create the assignment."
+      startTransition(() => router.refresh())
+      return null
+    },
+    [plan.id, router],
+  )
+
   const orderedIds = plan.week_list.map((w) => w.id)
   const moveWeek = (index: number, dir: -1 | 1) => {
     const next = [...orderedIds]
@@ -193,12 +210,14 @@ export function EditablePlanBoard({ plan }: { plan: SemesterPlan }) {
             key={week.id}
             week={week}
             cap={cap}
+            classId={plan.class_id}
             isFirst={i === 0}
             isLast={i === plan.week_list.length - 1}
             virgilBusy={virgilBusy}
             candidates={candidates}
             onLoadCandidates={loadCandidates}
             onMutate={mutate}
+            onProvision={provision}
             onMoveUp={() => moveWeek(i, -1)}
             onMoveDown={() => moveWeek(i, 1)}
             onRegenerate={() => runVirgil({ action: "regenerate_week", weekIndex: week.week_index })}
@@ -214,24 +233,28 @@ export function EditablePlanBoard({ plan }: { plan: SemesterPlan }) {
 function WeekEditor({
   week,
   cap,
+  classId,
   isFirst,
   isLast,
   virgilBusy,
   candidates,
   onLoadCandidates,
   onMutate,
+  onProvision,
   onMoveUp,
   onMoveDown,
   onRegenerate,
 }: {
   week: PlanWeek
   cap: number | null
+  classId: string | null
   isFirst: boolean
   isLast: boolean
   virgilBusy: boolean
   candidates: CandidateBook[] | null
   onLoadCandidates: () => void
   onMutate: (m: Mutation) => void
+  onProvision: (itemId: string) => Promise<string | null>
   onMoveUp: () => void
   onMoveDown: () => void
   onRegenerate: () => void
@@ -331,9 +354,11 @@ function WeekEditor({
           <ItemEditor
             key={item.id}
             item={item}
+            classId={classId}
             candidates={candidates}
             onLoadCandidates={onLoadCandidates}
             onMutate={onMutate}
+            onProvision={onProvision}
           />
         ))}
         {week.items.length === 0 ? (
@@ -369,21 +394,45 @@ function WeekEditor({
 
 // ── Item ────────────────────────────────────────────────────────────────────
 
+const ASSIGNABLE_TYPES = new Set<PlanItemType>(["reading", "essay", "discussion"])
+
 function ItemEditor({
   item,
+  classId,
   candidates,
   onLoadCandidates,
   onMutate,
+  onProvision,
 }: {
   item: PlanItem
+  classId: string | null
   candidates: CandidateBook[] | null
   onLoadCandidates: () => void
   onMutate: (m: Mutation) => void
+  onProvision: (itemId: string) => Promise<string | null>
 }) {
   const [swapping, setSwapping] = useState(false)
+  const [provisioning, setProvisioning] = useState(false)
+  const [provisionError, setProvisionError] = useState<string | null>(null)
   const accent = ITEM_ACCENT[item.type]
   const notReadable =
     CONTENT_DEPENDENT_TYPES.has(item.type) && item.book_id && item.has_content === false
+
+  // The bridge to coursework: a reading/essay/discussion item can become a draft
+  // classroom assignment. Reading needs a book; the plan must be class-attached.
+  const canProvision =
+    !!classId &&
+    !item.assignment_id &&
+    ASSIGNABLE_TYPES.has(item.type) &&
+    !(item.type === "reading" && !item.book_id)
+
+  const provision = async () => {
+    setProvisioning(true)
+    setProvisionError(null)
+    const err = await onProvision(item.id)
+    if (err) setProvisionError(err)
+    setProvisioning(false)
+  }
 
   return (
     <div className="rounded-xl px-3 py-2.5" style={{ backgroundColor: accent.bg }}>
@@ -505,6 +554,35 @@ function ItemEditor({
       ) : null}
       {item.type === "custom_reading" ? (
         <span className="mt-1 block text-[11px] italic text-muted-foreground">outside reading · metadata only</span>
+      ) : null}
+
+      {item.assignment_id && classId ? (
+        <a
+          href={`/classroom/${classId}/assignment/${item.assignment_id}`}
+          className="mt-1.5 inline-flex items-center gap-1 text-[11px] font-semibold"
+          style={{ color: RUBRIC.verdigris }}
+        >
+          <ExternalLink className="size-3" />
+          Assignment created — open draft
+        </a>
+      ) : canProvision ? (
+        <div className="mt-1.5 flex items-center gap-2">
+          <button
+            onClick={provision}
+            disabled={provisioning}
+            title="Create a draft classroom assignment from this item"
+            className="inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11px] font-medium disabled:opacity-50"
+            style={{ borderColor: RUBRIC.lapis, color: RUBRIC.lapis }}
+          >
+            {provisioning ? <Loader2 className="size-3 animate-spin" /> : <SquarePen className="size-3" />}
+            Create assignment
+          </button>
+          {provisionError ? (
+            <span className="text-[11px] font-medium" style={{ color: RUBRIC.vermilion }}>
+              {provisionError}
+            </span>
+          ) : null}
+        </div>
       ) : null}
     </div>
   )
