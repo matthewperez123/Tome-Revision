@@ -13,6 +13,7 @@ import { VirgilWrapper } from "@/components/tome/virgil/VirgilWrapper"
 import { MobileDock } from "@/components/tome/mobile-dock"
 import { Toaster } from "@/components/ui/sonner"
 import { IntercomMessenger } from "@/components/support/IntercomMessenger"
+import { AuthProvider } from "@/hooks/use-auth"
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
@@ -36,6 +37,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   // companion only belongs to authenticated app surfaces below.
   if (isLanding) {
     return (
+      <AuthProvider>
       <ErrorBoundary>
       <TomeEconomyProvider>
       <BookProgressProvider>
@@ -49,10 +51,12 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       </BookProgressProvider>
       </TomeEconomyProvider>
       </ErrorBoundary>
+      </AuthProvider>
     )
   }
 
   return (
+    <AuthProvider>
     <ErrorBoundary>
     <TomeEconomyProvider>
     <BookProgressProvider>
@@ -77,5 +81,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     </BookProgressProvider>
     </TomeEconomyProvider>
     </ErrorBoundary>
+    </AuthProvider>
   )
 }
