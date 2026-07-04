@@ -94,8 +94,12 @@ export function LandingNav() {
               <Link href={AUTH_LINKS.signIn.href} className={cn("hidden sm:inline-flex", linkClass)}>
                 {AUTH_LINKS.signIn.label}
               </Link>
+              {/* Beta demo entry — drops visitors straight into the app shell
+                  in demo mode (no auth required), where the sidebar profile
+                  switcher lets them preview the Reader / Teacher / Student
+                  experiences. Mirrors the authenticated "Open Tome" pill. */}
               <Link
-                href={AUTH_LINKS.signUp.href}
+                href="/dashboard"
                 className={cn(
                   "text-sm font-semibold px-4 py-1.5 rounded-full transition-colors",
                   solid
@@ -103,7 +107,7 @@ export function LandingNav() {
                     : "bg-white text-black hover:bg-white/90"
                 )}
               >
-                {AUTH_LINKS.signUp.label}
+                Use Beta
               </Link>
             </>
           )}
@@ -151,12 +155,20 @@ export function LandingNav() {
                 Open Tome
               </Link>
             ) : (
-              <Link
-                href={AUTH_LINKS.signIn.href}
-                className="sm:hidden rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
-              >
-                {AUTH_LINKS.signIn.label}
-              </Link>
+              <>
+                <Link
+                  href={AUTH_LINKS.signIn.href}
+                  className="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
+                >
+                  {AUTH_LINKS.signIn.label}
+                </Link>
+                <Link
+                  href="/dashboard"
+                  className="rounded-lg px-3 py-2.5 text-sm font-semibold text-foreground hover:bg-accent transition-colors"
+                >
+                  Use Beta
+                </Link>
+              </>
             )}
           </div>
         </div>
