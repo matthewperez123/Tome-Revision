@@ -18,7 +18,7 @@
 import { useEffect, useState, useRef, useCallback, useMemo } from "react"
 import { useParams, useRouter } from "next/navigation"
 import { AnimatePresence, motion } from "framer-motion"
-import { BookCheck, Palette } from "lucide-react"
+import { BookCheck, BookOpen, Palette, X } from "lucide-react"
 import { toast } from "sonner"
 import { supabase } from "@/lib/supabase"
 import type { Book } from "@/lib/supabase"
@@ -34,7 +34,7 @@ import {
   useReaderPrefs,
   setReaderPrefs,
 } from "@/lib/reader/reader-prefs"
-import { useReaderPrefsSync, saveReadingPosition } from "@/lib/reader/reader-sync"
+import { useReaderPrefsSync, saveReadingPosition, fetchReadingPosition } from "@/lib/reader/reader-sync"
 import { sanitizeReaderHtml } from "@/lib/reader/sanitize"
 import { WordTooltipProvider } from "./word-tooltip"
 import { useBookProgress } from "@/components/tome/book-progress-provider"
@@ -221,6 +221,9 @@ export default function ReaderPage() {
   } | null>(null)
   const [ribbonDismissed, setRibbonDismissed] = useState(false)
   const [assignmentDone, setAssignmentDone] = useState(false)
+  // Cross-device resume: set when the account's saved chapter is ahead of the
+  // chapter we opened at (e.g. progress made on another device).
+  const [serverResume, setServerResume] = useState<{ chapterIndex: number } | null>(null)
 
   // ── Entitlement gate (readers only; teachers/students unaffected) ──
   const { role, user } = useAuth()
@@ -778,12 +781,41 @@ export default function ReaderPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [chapterHTML, effectiveMode, currentChapter, fontSize, containerDims, prefs.lineHeight, prefs.justify, prefs.a11yFace])
 
-  // Save page position to localStorage in paginated mode (+ Supabase mirror)
+  // Save page position to localStorage in paginated mode (instant per-chapter restore)
   useEffect(() => {
     if (isScroll) return
     localStorage.setItem(`tome-page-${bookId}-${currentChapter}`, String(currentPage))
-    saveReadingPosition(bookId, { chapterIndex: currentChapter, page: currentPage, scrollRatio: null })
   }, [currentPage, isScroll, bookId, currentChapter])
+
+  // Mirror reading position to the account (debounced ~3s) for cross-device
+  // resume. Chapter + percent in both modes; page only in paginated mode.
+  useEffect(() => {
+    const total = chapters.length || 1
+    saveReadingPosition(bookId, {
+      chapterIndex: currentChapter,
+      page: isScroll ? null : currentPage,
+      scrollRatio: null,
+      percent: Math.round(((currentChapter + 1) / total) * 100),
+    })
+  }, [bookId, currentChapter, currentPage, isScroll, chapters.length])
+
+  // Cross-device resume detection. On mount (and whenever the tab regains
+  // focus) fetch the account position; if it is ahead of where we are, surface
+  // a quiet affordance. The visibilitychange refetch lets a stale tab pick up
+  // progress made on another device without a manual refresh.
+  useEffect(() => {
+    if (!user) return
+    let cancelled = false
+    const check = async () => {
+      const remote = await fetchReadingPosition(bookId)
+      if (cancelled || !remote) return
+      setServerResume(remote.chapterIndex > currentChapter ? { chapterIndex: remote.chapterIndex } : null)
+    }
+    void check()
+    const onVis = () => { if (!document.hidden) void check() }
+    document.addEventListener("visibilitychange", onVis)
+    return () => { cancelled = true; document.removeEventListener("visibilitychange", onVis) }
+  }, [user, bookId, currentChapter])
 
   // ── Pre-measure the whole book → folio map (paginated modes only) ──
   // Approach A: lay every chapter out off-screen at the current layout and cache
@@ -1192,6 +1224,43 @@ export default function ReaderPage() {
             chapterIndex={currentChapter}
             surfaceRef={readerSurfaceRef}
           >
+          {/* Cross-device resume affordance (gold, dismissible) */}
+          {serverResume && (
+            <div
+              className="flex shrink-0 items-center gap-2.5 px-4 py-2 text-sm"
+              style={{
+                backgroundColor: `${RUBRIC.goldLeaf}14`,
+                borderBottom: `1px solid ${RUBRIC.goldLeaf}33`,
+              }}
+            >
+              <BookOpen className="size-4 shrink-0" style={{ color: RUBRIC.goldLeaf }} />
+              <span className="min-w-0 flex-1 truncate">
+                Resume where you left off —{" "}
+                <span className="font-medium">
+                  {chapters[serverResume.chapterIndex]?.title ?? `Chapter ${serverResume.chapterIndex + 1}`}
+                </span>
+              </span>
+              <button
+                type="button"
+                onClick={() => {
+                  handleChapterSelect(serverResume.chapterIndex)
+                  setServerResume(null)
+                }}
+                className="shrink-0 rounded-full px-3 py-1 text-xs font-semibold"
+                style={{ backgroundColor: RUBRIC.goldLeaf, color: "#fff" }}
+              >
+                Resume
+              </button>
+              <button
+                type="button"
+                onClick={() => setServerResume(null)}
+                aria-label="Dismiss"
+                className="shrink-0 rounded-full p-1 text-muted-foreground hover:text-foreground"
+              >
+                <X className="size-4" />
+              </button>
+            </div>
+          )}
           {/* Reading-assignment ribbon (dismissible) */}
           {assignmentMeta && !ribbonDismissed && (
             <div

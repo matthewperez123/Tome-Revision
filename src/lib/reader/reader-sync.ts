@@ -15,6 +15,7 @@
 
 import { useEffect, useRef } from "react"
 import { supabase } from "@/lib/supabase"
+import { fetchReadingProgress } from "@/lib/reading/positions"
 import {
   applyRemoteReaderPrefs,
   getReaderPrefs,
@@ -114,11 +115,13 @@ export interface ReadingPosition {
   chapterIndex: number
   page: number | null
   scrollRatio: number | null
+  paragraphAnchor?: string | null
+  percent?: number | null
 }
 
 let positionTimer: ReturnType<typeof setTimeout> | null = null
 
-/** Debounced upsert of reading position for the logged-in user. */
+/** Debounced upsert of reading position for the logged-in user (~3s). */
 export function saveReadingPosition(bookId: string, pos: ReadingPosition): void {
   if (positionTimer) clearTimeout(positionTimer)
   positionTimer = setTimeout(async () => {
@@ -132,6 +135,8 @@ export function saveReadingPosition(bookId: string, pos: ReadingPosition): void 
           chapter_index: pos.chapterIndex,
           page: pos.page,
           scroll_ratio: pos.scrollRatio,
+          paragraph_anchor: pos.paragraphAnchor ?? null,
+          percent: pos.percent ?? null,
           updated_at: new Date().toISOString(),
         },
         { onConflict: "user_id,book_id" }
@@ -139,27 +144,18 @@ export function saveReadingPosition(bookId: string, pos: ReadingPosition): void 
     } catch {
       /* non-fatal */
     }
-  }, 1200)
+  }, 3000)
 }
 
 /** Fetch the last saved reading position for the logged-in user, if any. */
 export async function fetchReadingPosition(bookId: string): Promise<ReadingPosition | null> {
-  const uid = await getUserId()
-  if (!uid) return null
-  try {
-    const { data } = await supabase
-      .from("reading_progress")
-      .select("chapter_index, page, scroll_ratio")
-      .eq("user_id", uid)
-      .eq("book_id", bookId)
-      .maybeSingle()
-    if (!data) return null
-    return {
-      chapterIndex: data.chapter_index ?? 0,
-      page: data.page ?? null,
-      scrollRatio: data.scroll_ratio ?? null,
-    }
-  } catch {
-    return null
+  const entry = await fetchReadingProgress(bookId)
+  if (!entry) return null
+  return {
+    chapterIndex: entry.chapterIndex,
+    page: entry.page,
+    scrollRatio: entry.scrollRatio,
+    paragraphAnchor: entry.paragraphAnchor,
+    percent: entry.percent,
   }
 }
