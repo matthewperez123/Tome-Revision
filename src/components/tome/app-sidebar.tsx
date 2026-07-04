@@ -85,20 +85,16 @@ function SidebarNav({ pathname }: { pathname: string }) {
   // to avoid multiple items highlighting at once.
   const activeHref = (() => {
     if (pathname.startsWith("/book/"))    return "/library/browse"
-    if (pathname.startsWith("/author/") && !pathname.startsWith("/authors")) return "/authors"
-    if (pathname.startsWith("/profile"))  return "/profile"
-    if (pathname.startsWith("/clubs/"))   return "/clubs"
-    if (pathname.startsWith("/study-groups/")) return "/study-groups"
-    if (pathname.startsWith("/quiz/"))    return "/quizzes"
-    if (pathname.startsWith("/read/"))    return "/reading"
+    if (pathname.startsWith("/library"))  return "/library/browse"
+    if (pathname.startsWith("/dashboard")) return "/dashboard"
+    if (pathname.startsWith("/account"))  return "/account"
+    if (pathname.startsWith("/read/"))    return "/library/browse"
+    if (pathname.startsWith("/teacher/guided-learning")) return "/teacher/guided-learning"
     // Teacher sub-routes: keep their exact prefixes so they don't
     // also highlight the parent "/classroom" item
-    if (pathname.startsWith("/teacher/parents"))          return "/teacher/parents"
-    if (pathname.startsWith("/teacher/students"))        return "/classroom"
     if (pathname.startsWith("/classroom/quiz-builder")) return "/classroom/quiz-builder"
     if (pathname.startsWith("/classroom/grading"))      return "/classroom/grading"
-    if (pathname.startsWith("/classroom/create"))       return "/classroom"
-    if (pathname.startsWith("/classroom/"))             return "/classroom"
+    if (pathname.startsWith("/classroom"))              return "/classroom"
     return pathname
   })()
 

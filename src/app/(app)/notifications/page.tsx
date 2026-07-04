@@ -5,18 +5,10 @@ import Link from "next/link"
 import {
   Bell,
   BookOpen,
-  UserPlus,
-  Heart,
-  Users,
-  Megaphone,
   GraduationCap,
   Check,
   PenSquare,
-  BookHeart,
-  ShieldQuestion,
-  MessageCircle,
   CheckCheck,
-  X,
 } from "lucide-react"
 import {
   useRealtimeNotifications,
@@ -29,42 +21,26 @@ import { useAuth } from "@/hooks/use-auth"
 // verdigris #2E7D6F. Iridescence is reserved for Virgil — never used here.
 
 const TYPE_ICONS: Record<string, typeof Bell> = {
-  friend_request: UserPlus,
-  friend_accepted: Heart,
-  group_invite: Users,
-  group_post: Megaphone,
   class_assignment: GraduationCap,
   assignment_graded: Check,
-  parent_link_request: ShieldQuestion,
   session_summary: BookOpen,
   peer_review: PenSquare,
-  book_recommendation: BookHeart,
-  message: MessageCircle,
   system: Bell,
 }
 
 const LAPIS = "text-[#2A4B8D] dark:text-[#7BA0E0]"
-const GOLD = "text-[#C8A24B]"
-const VERMILION = "text-[#C8553D]"
 const VERDIGRIS = "text-[#2E7D6F] dark:text-[#5FB3A1]"
 
 const TYPE_COLORS: Record<string, string> = {
-  friend_request: LAPIS,
-  friend_accepted: VERMILION,
-  group_invite: LAPIS,
-  group_post: GOLD,
   class_assignment: LAPIS,
   assignment_graded: VERDIGRIS,
-  parent_link_request: GOLD,
   session_summary: LAPIS,
   peer_review: LAPIS,
-  book_recommendation: GOLD,
-  message: VERDIGRIS,
   system: "text-muted-foreground",
 }
 
 // Grouping buckets for the filter chips.
-type FilterId = "all" | "unread" | "classroom" | "social" | "family"
+type FilterId = "all" | "unread" | "classroom"
 
 const FILTERS: { id: FilterId; label: string; types: string[] | null }[] = [
   { id: "all", label: "All", types: null },
@@ -74,12 +50,6 @@ const FILTERS: { id: FilterId; label: string; types: string[] | null }[] = [
     label: "Classroom",
     types: ["class_assignment", "assignment_graded", "peer_review", "session_summary"],
   },
-  {
-    id: "social",
-    label: "Social",
-    types: ["friend_request", "friend_accepted", "group_invite", "group_post", "book_recommendation", "message"],
-  },
-  { id: "family", label: "Family", types: ["parent_link_request"] },
 ]
 
 function timeAgo(dateStr: string): string {
@@ -107,12 +77,6 @@ function deepLink(n: AppNotification): string | null {
     case "submission":
     case "assignment":
       return "/classroom"
-    case "friendship":
-      return "/friends"
-    case "group":
-      return `/clubs/${n.entityId}`
-    case "conversation":
-      return `/messages/${n.entityId}`
     case "session":
       return "/reading"
     default:
@@ -144,7 +108,7 @@ export default function NotificationsPage() {
           <Bell className="size-8 text-muted-foreground/40" />
           <p className="mt-3 text-sm font-medium">Sign in to see your notifications</p>
           <p className="mt-1 text-xs text-muted-foreground">
-            Friend requests, grades, and class updates will appear here.
+            Grades and class updates will appear here.
           </p>
         </div>
       </div>
@@ -212,7 +176,7 @@ export default function NotificationsPage() {
               {filter === "unread" ? "No unread notifications" : "You're all caught up"}
             </p>
             <p className="mt-1 text-xs text-muted-foreground">
-              Friend requests, grades, and class updates will appear here.
+              Grades and class updates will appear here.
             </p>
           </div>
         ) : (
