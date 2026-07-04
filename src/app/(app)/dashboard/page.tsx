@@ -36,10 +36,8 @@ import { AnimatedCircularProgressBar } from "@/components/ui/animated-circular-p
 import { AnimatedGridPattern } from "@/components/ui/animated-grid-pattern"
 import { X } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { StoaBanner } from "@/components/dashboard/StoaBanner"
 import { TeacherDashboard } from "@/components/classroom/teacher-dashboard"
 import { UpcomingAssignments } from "@/components/classroom/upcoming-assignments"
-import { ClassLeaderboardMini } from "@/components/classroom/class-leaderboard-mini"
 import { useAuth } from "@/hooks/use-auth"
 import { CheckoutResultToast } from "@/components/pricing/CheckoutResultToast"
 
@@ -274,14 +272,8 @@ function StudentDashboard() {
 
       <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 py-6 space-y-8">
 
-        {/* ── Stoa Banner ─────────────────────────── */}
-        <BlurFade delay={0.02} inView>
-          <StoaBanner />
-        </BlurFade>
-
         {/* ── Classroom Widgets (only if student is in a classroom) ── */}
         <UpcomingAssignments />
-        <ClassLeaderboardMini />
 
         {/* ── 1. Header ──────────────────────────── */}
         <BlurFade delay={0.04} inView>

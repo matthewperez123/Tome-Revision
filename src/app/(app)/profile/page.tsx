@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation"
 import { motion } from "framer-motion"
 import {
   Sparkles, Flame, BookOpen, Bookmark, ChevronRight,
-  Target, Share2, BarChart2, LogOut, Check, Pencil,
+  Target, Share2, LogOut, Check,
 } from "lucide-react"
 import { getAllBookProgress } from "@/lib/book-progress"
 import { getBooks } from "@/lib/content"
@@ -16,19 +16,11 @@ import { AuthorLink } from "@/components/tome/author-link"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { cn } from "@/lib/utils"
 import { useTheme } from "next-themes"
-import { UserAvatar } from "@/components/tome/avatar/UserAvatar"
-import { getCurrentAvatar } from "@/lib/avatar-state"
-import type { BookCharacter } from "@/data/character-avatars"
-import { CHARACTER_MAP, RARITY_COLORS } from "@/data/character-avatars"
-import { AvatarPickerModal } from "@/components/tome/avatar/AvatarPickerModal"
 import { useAuth } from "@/hooks/use-auth"
 import { useEntitlement } from "@/hooks/use-entitlement"
 import { useEconomy } from "@/components/tome/economy-provider"
 import { CheckoutButton } from "@/components/pricing/CheckoutButton"
 import { SOLO_ANNUAL_PRICE } from "@/lib/marketing/plans"
-import { getAllAchievements } from "@/data/achievements"
-import { loadAchievementState } from "@/lib/achievements/engine"
-import { RARITY_WAX_COLORS } from "@/types/achievement"
 
 // Static literary quotes for the shareable card (not user data).
 const READING_QUOTES = [
@@ -114,24 +106,16 @@ export default function ProfilePage() {
   const setSettingGoal = (v: number) => { _setSettingGoal(v); localStorage.setItem("tome:setting-goal", String(v)) }
   const setSettingTheme = (v: string) => { setGlobalTheme(v === "night" ? "dark" : "light") }
   const [shareOpen,   setShareOpen]      = useState(false)
-  const [avatarCharacter, setAvatarCharacter] = useState<BookCharacter | null>(null)
-  const [pickerOpen, setPickerOpen] = useState(false)
-  const [achState, setAchState] = useState<ReturnType<typeof loadAchievementState>>({ unlocks: {} })
-
-  const refreshAvatar = () => setAvatarCharacter(getCurrentAvatar())
 
   useEffect(() => {
     setAllProgress(getAllBookProgress())
-    setAchState(loadAchievementState())
-    refreshAvatar()
   }, [])
-
-  const displayCharacter = avatarCharacter ?? CHARACTER_MAP["virgil"]
 
   const allBooks = useMemo(() => getBooks(), [])
 
   // ── Real identity ──────────────────────────────
-  const displayName = profile?.display_name || displayCharacter?.name || "Reader"
+  const displayName = profile?.display_name || "Reader"
+  const initial = displayName.trim().charAt(0).toUpperCase() || "R"
   const accountEmail = user?.email ?? (profile?.username ? `@${profile.username}` : null)
   const memberSince = user?.created_at
     ? new Date(user.created_at).toLocaleDateString(undefined, { month: "long", year: "numeric" })
@@ -193,17 +177,6 @@ export default function ProfilePage() {
       .sort((a, b) => b.done - a.done)
   }, [shelfEntries])
 
-  // ── Real achievements ──────────────────────────
-  const { earnedBadges, earnedCount, totalAchievements } = useMemo(() => {
-    const all = getAllAchievements()
-    const earned = all.filter((a) => achState.unlocks[a.id])
-    return {
-      earnedBadges: earned,
-      earnedCount: earned.length,
-      totalAchievements: all.length,
-    }
-  }, [achState])
-
   async function handleSignOut() {
     await signOut()
     router.push("/")
@@ -218,63 +191,14 @@ export default function ProfilePage() {
         <BlurFade delay={0.05} inView>
           <section className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
             {/* Avatar */}
-            <div className="relative shrink-0 flex flex-col items-center gap-1.5">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.97 }}
-                onClick={() => setPickerOpen(true)}
-                className="cursor-pointer outline-none"
-              >
-                {displayCharacter && (
-                  <UserAvatar
-                    character={displayCharacter}
-                    size="lg"
-                    showRarityRing={true}
-                  />
-                )}
-              </motion.button>
-              {displayCharacter && (
-                <>
-                  <span className="text-sm font-semibold text-foreground text-center max-w-[120px] truncate leading-tight">
-                    {displayCharacter.name}
-                  </span>
-                  <span className="text-[10px] text-muted-foreground text-center max-w-[120px] truncate leading-tight">
-                    {displayCharacter.bookTitle}
-                  </span>
-                  <span
-                    className="inline-flex items-center rounded-full px-1.5 py-0.5 text-[9px] font-semibold leading-none"
-                    style={{
-                      color: RARITY_COLORS[displayCharacter.rarity].text,
-                      backgroundColor: RARITY_COLORS[displayCharacter.rarity].bg,
-                      border: `1px solid ${RARITY_COLORS[displayCharacter.rarity].border}`,
-                    }}
-                  >
-                    {displayCharacter.rarity}
-                  </span>
-                </>
-              )}
-              <button
-                onClick={() => setPickerOpen(true)}
-                className="inline-flex items-center gap-1 text-[11px] text-muted-foreground/70 hover:text-foreground transition-colors"
-              >
-                <Pencil className="size-3" />
-                Change Avatar
-              </button>
-              {/* Level badge */}
+            <div className="relative shrink-0">
               <div
-                className="rounded-full px-2 py-0.5 text-[10px] font-bold leading-tight"
-                style={{ background: accentColor, color: "#fff" }}
+                className="size-20 rounded-full flex items-center justify-center font-serif text-3xl font-bold text-white"
+                style={{ background: accentColor }}
               >
-                Lv {rank.rank.level}
+                {initial}
               </div>
             </div>
-
-            {/* Avatar picker modal */}
-            <AvatarPickerModal
-              open={pickerOpen}
-              onOpenChange={setPickerOpen}
-              onAvatarChanged={refreshAvatar}
-            />
 
             {/* Info */}
             <div className="flex-1 min-w-0 text-center sm:text-left">
@@ -418,58 +342,6 @@ export default function ProfilePage() {
           </BlurFade>
         )}
 
-        {/* ── 4. Achievements ───────────────────── */}
-        <BlurFade delay={0.18} inView>
-          <section>
-            <div className="flex items-center justify-between mb-1">
-              <h2 className="font-serif text-xl font-semibold tracking-tight">Achievements</h2>
-              <Link
-                href="/achievements"
-                className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
-              >
-                View all <ChevronRight className="size-3" />
-              </Link>
-            </div>
-            <OrnamentalDivider color={accentColor} />
-
-            <div className="rounded-xl border border-border bg-card p-5">
-              <p className="text-sm text-muted-foreground mb-4">
-                <span className="font-semibold text-foreground">{earnedCount}</span> of{" "}
-                {totalAchievements} earned
-              </p>
-              {earnedBadges.length > 0 ? (
-                <div className="flex gap-3 overflow-x-auto pb-1">
-                  {earnedBadges.map((a) => {
-                    const color = RARITY_WAX_COLORS[a.rarity]
-                    return (
-                      <Link
-                        key={a.id}
-                        href={`/seals/${a.slug}`}
-                        className="shrink-0 flex flex-col items-center gap-1.5 group"
-                      >
-                        <div
-                          className="size-12 rounded-full flex items-center justify-center text-white font-serif text-sm font-bold"
-                          style={{ background: color, border: `1.5px solid ${color}` }}
-                          title={a.name}
-                        >
-                          {a.name.charAt(0)}
-                        </div>
-                        <span className="text-[9px] text-muted-foreground text-center w-14 leading-tight truncate">
-                          {a.name}
-                        </span>
-                      </Link>
-                    )
-                  })}
-                </div>
-              ) : (
-                <p className="text-sm text-muted-foreground/70">
-                  No seals earned yet. Finish a book to claim your first.
-                </p>
-              )}
-            </div>
-          </section>
-        </BlurFade>
-
         {/* ── 5. Bookshelf ──────────────────────── */}
         <BlurFade delay={0.22} inView>
           <section>
@@ -593,28 +465,6 @@ export default function ProfilePage() {
               )
             )}
           </section>
-        </BlurFade>
-
-        {/* ── 6. Analytics Link ─────────────────── */}
-        <BlurFade delay={0.24} inView>
-          <Link
-            href="/profile/stats"
-            className="flex items-center justify-between rounded-xl border border-border bg-card px-5 py-4 hover:bg-muted/50 transition-colors group"
-          >
-            <div className="flex items-center gap-3">
-              <div
-                className="size-9 rounded-full flex items-center justify-center"
-                style={{ background: `${accentColor}18` }}
-              >
-                <BarChart2 className="size-4.5" style={{ color: accentColor }} />
-              </div>
-              <div>
-                <p className="text-sm font-semibold">Reading Analytics</p>
-                <p className="text-[11px] text-muted-foreground">Charts, speed stats, milestones</p>
-              </div>
-            </div>
-            <ChevronRight className="size-4 text-muted-foreground group-hover:text-foreground transition-colors" />
-          </Link>
         </BlurFade>
 
         {/* ── 7. Shareable Progress Card ────────── */}

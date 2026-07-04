@@ -47,7 +47,6 @@ import { getCuratedQuestionsForChapter } from "@/lib/chapter-questions"
 import { dbRowsToChapterQuestions, type QuestionRow } from "@/lib/db-chapter-questions"
 import { isFrontOrBackMatter } from "@/lib/book-progress"
 import type { QuizDifficulty } from "@/lib/book-progress"
-import { emitActivity } from "@/lib/actions/activities"
 import { findAttemptForChapter, isAttemptResumable } from "@/lib/trial-attempts"
 import { getUnitNumber, getUnitLabel } from "@/lib/structural-units"
 import type { StructuralUnitType, BookPart } from "@/data/books"
@@ -403,9 +402,6 @@ export default function ReaderPage() {
     if (!existingProgress) {
       // Auto-start progress — no modal prompt
       startBook(bookId)
-      // Emit the book_started social milestone (best-effort; guests get a
-      // rejected promise we ignore). Idempotent server-side per (actor, book).
-      void emitActivity({ type: "book_started", entityType: "book", entityId: bookId })
     } else {
       setCurrentChapter(existingProgress.currentChapterIndex)
     }

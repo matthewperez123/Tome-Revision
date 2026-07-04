@@ -22,7 +22,6 @@ import {
 import { getBook, getBooks } from "@/lib/content"
 import { ClassicsCover } from "@/components/tome/ClassicsCover"
 import { getAllBookProgress } from "@/lib/book-progress"
-import { CHARACTERS_BY_BOOK } from "@/data/character-avatars"
 import { cn } from "@/lib/utils"
 
 // ── Helpers ───────────────────────────────────────────────────────────────
@@ -130,24 +129,6 @@ function TraditionBadge({ tradition }: { tradition: string }) {
   return (
     <span className="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium bg-muted text-muted-foreground border border-border">
       {tradition}
-    </span>
-  )
-}
-
-// ── Character initials badge ──────────────────────────────────────────────
-
-function CharacterBadge({ bookId }: { bookId: string }) {
-  const chars = CHARACTERS_BY_BOOK[bookId]
-  if (!chars || chars.length === 0) return null
-  const char = chars[0]
-  const initials = char.name.split(" ").map((w) => w[0]).join("").slice(0, 2).toUpperCase()
-  return (
-    <span
-      className="inline-flex items-center justify-center size-5 rounded-full text-[9px] font-bold text-white"
-      style={{ backgroundColor: char.accentColor ?? "#6366F1" }}
-      title={`${char.name} unlocked`}
-    >
-      {initials}
     </span>
   )
 }
@@ -488,10 +469,6 @@ export default function ShelvesPage() {
                         className="w-full"
                         showTomeWordmark={false}
                       />
-                      {/* Character badge */}
-                      <div className="absolute bottom-1.5 left-1.5">
-                        <CharacterBadge bookId={book.id} />
-                      </div>
                       {/* Reflection indicator */}
                       {entry.reflection && (
                         <div className="absolute bottom-1.5 right-1.5">

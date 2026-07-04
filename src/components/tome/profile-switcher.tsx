@@ -5,9 +5,6 @@ import { createPortal } from "react-dom"
 import { motion, AnimatePresence } from "framer-motion"
 import { GraduationCap, BookOpen, Backpack, ChevronUp, LogOut } from "lucide-react"
 import { useAuth } from "@/hooks/use-auth"
-import { UserAvatar } from "@/components/tome/avatar/UserAvatar"
-import { getCurrentAvatar } from "@/lib/avatar-state"
-import { CHARACTER_MAP, type BookCharacter } from "@/data/character-avatars"
 import { useSidebar } from "@/components/ui/sidebar"
 import Link from "next/link"
 
@@ -48,14 +45,9 @@ export function ProfileSwitcher() {
   const { state } = useSidebar()
   const collapsed = state === "collapsed"
   const [isOpen, setIsOpen] = React.useState(false)
-  const [character, setCharacter] = React.useState<BookCharacter | null>(null)
   const buttonRef = React.useRef<HTMLButtonElement>(null)
   const popupRef = React.useRef<HTMLDivElement>(null)
   const [popupPos, setPopupPos] = React.useState<{ left: number; bottom: number } | null>(null)
-
-  React.useEffect(() => {
-    setCharacter(getCurrentAvatar())
-  }, [])
 
   // Position the portal popup above the button
   React.useEffect(() => {
@@ -92,9 +84,9 @@ export function ProfileSwitcher() {
     return () => document.removeEventListener("keydown", handleKey)
   }, [isOpen])
 
-  const displayCharacter = character ?? CHARACTER_MAP["virgil"]
   const currentRole = ROLE_META[role ?? "reader"]
-  const displayName = profile?.display_name ?? "Matthew"
+  const displayName = profile?.display_name ?? "Reader"
+  const initial = displayName.trim().charAt(0).toUpperCase() || "R"
 
   // Render popup via portal so it escapes sidebar overflow constraints
   const popupContent = (
@@ -136,13 +128,6 @@ export function ProfileSwitcher() {
             >
               View Profile
             </Link>
-            <Link
-              href="/profile/avatar"
-              onClick={() => setIsOpen(false)}
-              className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm text-muted-foreground hover:bg-muted/50 hover:text-foreground"
-            >
-              Change Avatar
-            </Link>
             <button
               onClick={() => {
                 setIsOpen(false)
@@ -170,11 +155,13 @@ export function ProfileSwitcher() {
         onClick={() => setIsOpen(!isOpen)}
         className={`flex w-full items-center gap-2 rounded-md p-1.5 hover:bg-accent/50 transition-colors ${collapsed ? "justify-center" : ""}`}
       >
-        <UserAvatar
-          character={displayCharacter}
-          size="sm"
-          showRarityRing={true}
-        />
+        <span
+          className="flex size-8 shrink-0 items-center justify-center rounded-full text-xs font-semibold text-white"
+          style={{ backgroundColor: currentRole.accentColor }}
+          aria-hidden="true"
+        >
+          {initial}
+        </span>
         {!collapsed && (
           <>
             <div className="flex-1 min-w-0 text-left">

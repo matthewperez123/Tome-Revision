@@ -10,7 +10,6 @@ import {
 import type { StructuralUnitType } from "@/data/books"
 import { getUnitNumber, getShortProgress } from "@/lib/structural-units"
 import { isFavorite as isShelfFavorite, toggleFavorite as toggleShelfFavorite } from "@/lib/shelves/store"
-import { RecommendBookButton } from "@/components/book/recommend-book-button"
 import { cn } from "@/lib/utils"
 
 /**
@@ -116,8 +115,6 @@ export function BookActions({
             : <Bookmark className="size-3.5" />}
           {isBookmarked ? "Bookmarked" : "Add to Shelf"}
         </button>
-        {/* Real-mode-only: send a recommendation to a friend */}
-        <RecommendBookButton bookId={bookId} bookTitle={bookTitle} />
       </div>
 
       {/* ── Mobile sticky CTA ── */}
@@ -146,7 +143,6 @@ export function BookActions({
         >
           {isBookmarked ? <BookmarkCheck className="size-4" /> : <Bookmark className="size-4" />}
         </button>
-        <RecommendBookButton bookId={bookId} bookTitle={bookTitle} className="shrink-0" />
       </div>
     </>
   )

@@ -3,7 +3,6 @@ import { sharedIconRegistry } from "../shared/registry"
 
 // Nav-mapped teacher icons (match sidebar nav labels)
 import ClassroomsIcon from "./ClassroomsIcon"
-import ParentsIcon from "./ParentsIcon"
 import QuizBuilderIcon from "./QuizBuilderIcon"
 import GradingIcon from "./GradingIcon"
 import GuidedSessionsIcon from "./GuidedSessionsIcon"
@@ -22,7 +21,6 @@ import SettingsIcon from "./SettingsIcon"
 // Nav-mapped icons (active in sidebar)
 const teacherNavIcons: Record<string, AnimatedIconComponent> = {
   "My Classrooms": ClassroomsIcon,
-  Parents: ParentsIcon,
   "Quiz Builder": QuizBuilderIcon,
   Grading: GradingIcon,
   "Guided Sessions": GuidedSessionsIcon,

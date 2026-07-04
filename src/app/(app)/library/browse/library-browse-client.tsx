@@ -14,7 +14,6 @@ import { AuthorLink } from "@/components/tome/author-link"
 import { SearchBar } from "@/components/tome/SearchBar"
 import { FilterDropdown } from "@/components/tome/FilterDropdown"
 import { isBookRecommended, isBookComplete } from "@/lib/book-apparatus"
-import { RecommendationsInbox } from "@/components/library/recommendations-inbox"
 import { useLibraryRecommendations } from "@/hooks/use-library-recommendations"
 import { cn } from "@/lib/utils"
 
@@ -327,9 +326,6 @@ export function LibraryBrowseClient() {
         {/* Content */}
         <div className="p-4">
             <div className="space-y-8">
-
-              {/* ── Pending book recommendations from friends/classmates ── */}
-              <RecommendationsInbox />
 
               {/* ── Recommended: fully-ingested books ── */}
               {showDiscovery && recommendedBooks.length > 0 && (

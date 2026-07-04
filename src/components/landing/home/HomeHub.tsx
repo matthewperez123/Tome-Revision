@@ -20,8 +20,6 @@ import { DEMO_LIBRARY_BOOKS } from "@/lib/demo/data"
 import { DemoEconomyProvider } from "@/components/demo/DemoEconomyProvider"
 import { QuestionCard } from "@/components/trials/QuestionCard"
 import { DEMO_TRIAL_QUESTIONS } from "@/lib/trials/demo-questions"
-import { SealBase } from "@/components/achievements/seals/SealBase"
-import { getAchievementById } from "@/data/achievements"
 import { DEMO_PASSAGE, DEMO_EXCHANGES, streamScriptedReply } from "@/lib/demo/virgil"
 import { AvatarCircles } from "@/components/ui/avatar-circles"
 import { getReaderPlans, getEducatorPlans, READER_TRIAL_COPY } from "@/lib/marketing/plans"
@@ -183,56 +181,6 @@ function AnswerQuizzes() {
           </DemoEconomyProvider>
         </div>
       </div>
-    </SectionShell>
-  )
-}
-
-// ── 4 · Earn Achievements (real Seals) ──────────────────────────────
-
-const SEAL_PICKS = [
-  "the-iliad-completed",
-  "the-odyssey-completed",
-  "the-republic-completed",
-  "oedipus-rex-completed",
-  "antigone-completed",
-  "symposium-completed",
-]
-
-function EarnAchievements() {
-  const seals = SEAL_PICKS.map((id) => getAchievementById(id)).filter(
-    (a): a is NonNullable<typeof a> => Boolean(a),
-  )
-
-  return (
-    <SectionShell
-      eyebrow="Seals"
-      title="Earn a Seal for every work you finish."
-      subline="Each book completed lights up a unique neon Seal — its rarity, motif, and color drawn from the work itself. Hover to read what each one commemorates."
-      bg="background"
-      cta={{ label: "Explore the Seals", href: "/readers" }}
-    >
-      <ul className="flex flex-wrap gap-6">
-        {seals.map((a) => (
-          <li key={a.id} className="group relative flex flex-col items-center gap-2 text-center w-24">
-            <SealBase
-              rarity={a.rarity}
-              sealDesignKey={a.sealDesignKey}
-              category={a.category}
-              achievementId={a.id}
-              initial={a.name}
-              size="lg"
-              earned
-              animate={false}
-            />
-            <span className="text-xs font-semibold text-foreground leading-tight">
-              {a.name}
-            </span>
-            <span className="pointer-events-none absolute -bottom-1 left-1/2 z-10 w-48 -translate-x-1/2 translate-y-full rounded-lg border border-border bg-card p-2.5 text-[11px] leading-snug text-muted-foreground opacity-0 shadow-md transition-opacity duration-150 group-hover:opacity-100 group-focus-within:opacity-100">
-              {a.description}
-            </span>
-          </li>
-        ))}
-      </ul>
     </SectionShell>
   )
 }
@@ -517,7 +465,6 @@ export function HomeHub() {
     <>
       <DiscoverCanon />
       <AnswerQuizzes />
-      <EarnAchievements />
       <GuideWithVirgil />
       <InviteFriends />
       <TeachClasses />

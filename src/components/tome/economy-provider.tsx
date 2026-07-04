@@ -7,7 +7,6 @@ import {
   useCallback,
   useEffect,
   useMemo,
-  useRef,
   type ReactNode,
 } from "react"
 import {
@@ -28,20 +27,6 @@ import {
 } from "@/lib/economy"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
-import {
-  loadAchievementState,
-  saveAchievementState,
-  unlockAchievement,
-  evaluateAchievements,
-  getRelevantAchievements,
-} from "@/lib/achievements/engine"
-import {
-  getAllAchievements,
-  getBookIdIndex,
-} from "@/data/achievements"
-import { getAllBookProgress } from "@/lib/book-progress"
-import { UnlockAnimation } from "@/components/achievements/UnlockAnimation"
-import type { Achievement, AchievementState } from "@/types/achievement"
 
 // ── Context Types ──────────────────────────────
 
@@ -55,8 +40,6 @@ export type EconomyContextValue = {
    *  by a server award path (e.g. record_trial_result). No-op for guests. */
   syncStats: (row: Record<string, unknown> | null) => void
   refreshHearts: () => void
-  pendingUnlocks: Achievement[]
-  dismissUnlock: () => void
 }
 
 // Exported so sandboxed surfaces (e.g. marketing demos) can supply an
@@ -186,10 +169,6 @@ export function TomeEconomyProvider({ children }: { children: ReactNode }) {
     return createDefaultStats(GUEST_USER_ID)
   })
 
-  // Achievement unlock queue
-  const [pendingUnlocks, setPendingUnlocks] = useState<Achievement[]>([])
-  const achievementStateRef = useRef<AchievementState>(loadAchievementState())
-
   // Authenticated readers are DB-backed: hydrate from the authoritative
   // user_stats row (server recomputes hearts-regen + streak on read).
   useEffect(() => {
@@ -257,53 +236,6 @@ export function TomeEconomyProvider({ children }: { children: ReactNode }) {
     return () => clearInterval(interval)
   }, [stats.hearts])
 
-  // ── Achievement evaluation helper ──────────────
-
-  const evaluateAfterEvent = useCallback(
-    (
-      updatedStats: UserStats,
-      trigger:
-        | { type: "book-complete"; bookId: string }
-        | { type: "streak-change" }
-        | { type: "wisdom-change" },
-    ) => {
-      const allAchievements = getAllAchievements()
-      const bookIdIndex = getBookIdIndex()
-
-      // Get completed book IDs from progress
-      const progress = getAllBookProgress()
-      const completedBookIds = Object.keys(progress).filter(
-        (bookId) => progress[bookId].completedChapterIndices.length > 0,
-      )
-
-      // Narrow candidate set based on trigger type
-      const candidates = getRelevantAchievements(allAchievements, bookIdIndex, trigger)
-
-      // Evaluate which candidates are newly unlocked
-      const currentState = achievementStateRef.current
-      const newlyUnlocked = evaluateAchievements(
-        candidates,
-        completedBookIds,
-        updatedStats,
-        currentState,
-      )
-
-      if (newlyUnlocked.length > 0) {
-        // Persist unlocks
-        let state = currentState
-        for (const achievement of newlyUnlocked) {
-          state = unlockAchievement(achievement, state)
-        }
-        saveAchievementState(state)
-        achievementStateRef.current = state
-
-        // Queue unlock animations
-        setPendingUnlocks((prev) => [...prev, ...newlyUnlocked])
-      }
-    },
-    [],
-  )
-
   // Dispatch economy events
   const dispatch = useCallback((event: EconomyEvent): EconomyResult => {
     let result: EconomyResult = { stats, xpGained: 0, coinsGained: 0, notifications: [] }
@@ -321,22 +253,8 @@ export function TomeEconomyProvider({ children }: { children: ReactNode }) {
       })
     }
 
-    // Evaluate achievements after economy-changing events
-    if (event.type === "book_complete") {
-      // The bookId is not on the event type currently, so we evaluate broadly
-      evaluateAfterEvent(result.stats, { type: "book-complete", bookId: "" })
-      evaluateAfterEvent(result.stats, { type: "wisdom-change" })
-    } else if (event.type === "chapter_complete") {
-      evaluateAfterEvent(result.stats, { type: "wisdom-change" })
-    }
-
-    // Streak changes are handled on mount, but also check after any XP-granting event
-    if (event.type === "quiz_correct" || event.type === "chapter_complete" || event.type === "book_complete") {
-      evaluateAfterEvent(result.stats, { type: "streak-change" })
-    }
-
     return result
-  }, [stats, evaluateAfterEvent, userId])
+  }, [stats, userId])
 
   // Reconcile the display from an authoritative server row (record_trial_result
   // returns the reconciled user_stats). Guests have no server row → ignore.
@@ -344,11 +262,6 @@ export function TomeEconomyProvider({ children }: { children: ReactNode }) {
     if (!userId || !row) return
     setStats(rowToStats(row, userId))
   }, [userId])
-
-  // Dismiss the front of the unlock queue
-  const dismissUnlock = useCallback(() => {
-    setPendingUnlocks((prev) => prev.slice(1))
-  }, [])
 
   // Manual heart refresh
   const refreshHearts = useCallback(() => {
@@ -368,18 +281,13 @@ export function TomeEconomyProvider({ children }: { children: ReactNode }) {
   }, [stats.hearts, stats.hearts_last_regen])
 
   const value = useMemo<EconomyContextValue>(
-    () => ({ stats, rank, dailyGoalMet, heartsRegenAt, dispatch, syncStats, refreshHearts, pendingUnlocks, dismissUnlock }),
-    [stats, rank, dailyGoalMet, heartsRegenAt, dispatch, syncStats, refreshHearts, pendingUnlocks, dismissUnlock]
+    () => ({ stats, rank, dailyGoalMet, heartsRegenAt, dispatch, syncStats, refreshHearts }),
+    [stats, rank, dailyGoalMet, heartsRegenAt, dispatch, syncStats, refreshHearts]
   )
 
   return (
     <EconomyContext.Provider value={value}>
       {children}
-      {/* Unlock animation overlay */}
-      <UnlockAnimation
-        achievement={pendingUnlocks[0] ?? null}
-        onDismiss={dismissUnlock}
-      />
     </EconomyContext.Provider>
   )
 }

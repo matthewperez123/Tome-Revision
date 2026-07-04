@@ -74,8 +74,6 @@ export function DemoEconomyProvider({
       dispatch,
       syncStats: () => {},
       refreshHearts: () => {},
-      pendingUnlocks: [],
-      dismissUnlock: () => {},
     }),
     [stats, rank, dailyGoalMet, heartsRegenAt, dispatch]
   )

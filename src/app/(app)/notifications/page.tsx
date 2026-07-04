@@ -1,6 +1,6 @@
 "use client"
 
-import { useMemo, useState, useTransition } from "react"
+import { useMemo, useState } from "react"
 import Link from "next/link"
 import {
   Bell,
@@ -23,10 +23,6 @@ import {
   type AppNotification,
 } from "@/hooks/use-realtime-notifications"
 import { useAuth } from "@/hooks/use-auth"
-import {
-  acceptRecommendation,
-  rejectRecommendation,
-} from "@/lib/actions/recommendations"
 
 // ── Canonical type → icon / accent ─────────────────────────────────────────
 // RUBRIC palette: lapis #2A4B8D, gold #C8A24B, vermilion #C8553D,
@@ -245,21 +241,6 @@ function NotificationRow({
   const Icon = TYPE_ICONS[notification.type] ?? Bell
   const color = TYPE_COLORS[notification.type] ?? "text-muted-foreground"
 
-  if (
-    notification.type === "book_recommendation" &&
-    notification.payload?.status === "received" &&
-    notification.entityId
-  ) {
-    return (
-      <RecommendationRow
-        notification={notification}
-        onRead={onRead}
-        Icon={Icon}
-        color={color}
-      />
-    )
-  }
-
   const href = deepLink(notification)
   const body = (
     <div
@@ -299,88 +280,3 @@ function NotificationRow({
   )
 }
 
-function RecommendationRow({
-  notification,
-  onRead,
-  Icon,
-  color,
-}: {
-  notification: AppNotification
-  onRead: () => void
-  Icon: typeof Bell
-  color: string
-}) {
-  const [pending, startTransition] = useTransition()
-  const [resolved, setResolved] = useState<"accepted" | "rejected" | null>(null)
-  const recId = notification.entityId!
-
-  function handleAccept(e: React.MouseEvent) {
-    e.preventDefault()
-    e.stopPropagation()
-    if (pending || resolved) return
-    startTransition(async () => {
-      const result = await acceptRecommendation(recId)
-      if (result.ok) {
-        setResolved("accepted")
-        setTimeout(onRead, 1000)
-      }
-    })
-  }
-
-  function handleReject(e: React.MouseEvent) {
-    e.preventDefault()
-    e.stopPropagation()
-    if (pending || resolved) return
-    startTransition(async () => {
-      const result = await rejectRecommendation(recId)
-      if (result.ok) {
-        setResolved("rejected")
-        setTimeout(onRead, 400)
-      }
-    })
-  }
-
-  return (
-    <div
-      className={`flex items-start gap-3 rounded-xl border p-4 ${
-        notification.read ? "border-border bg-card" : "border-[#C8A24B]/30 bg-[#C8A24B]/[0.05]"
-      } ${resolved === "rejected" ? "opacity-50" : ""}`}
-    >
-      <Icon className={`mt-0.5 size-5 shrink-0 ${color}`} aria-hidden="true" />
-      <div className="min-w-0 flex-1">
-        <p className={`text-sm leading-snug ${!notification.read && !resolved ? "font-semibold" : ""}`}>
-          {resolved === "accepted" ? "Added to your library" : notification.title}
-        </p>
-        {notification.body && resolved !== "accepted" && (
-          <p className="mt-0.5 text-xs text-muted-foreground">{notification.body}</p>
-        )}
-        {!resolved && (
-          <div className="mt-2 flex items-center gap-1.5">
-            <button
-              type="button"
-              onClick={handleAccept}
-              disabled={pending}
-              className="flex size-7 items-center justify-center rounded-full bg-[#C8A24B]/15 text-[#C8A24B] transition-colors hover:bg-[#C8A24B]/25 disabled:opacity-50"
-              aria-label="Accept recommendation"
-            >
-              <Check className="size-3.5" strokeWidth={2.5} />
-            </button>
-            <button
-              type="button"
-              onClick={handleReject}
-              disabled={pending}
-              className="flex size-7 items-center justify-center rounded-full bg-[#C8553D]/10 text-[#C8553D] transition-colors hover:bg-[#C8553D]/20 disabled:opacity-50"
-              aria-label="Reject recommendation"
-            >
-              <X className="size-3.5" strokeWidth={2.5} />
-            </button>
-          </div>
-        )}
-      </div>
-      <div className="flex shrink-0 flex-col items-end gap-1.5">
-        <span className="text-[10px] text-muted-foreground">{timeAgo(notification.createdAt)}</span>
-        {!notification.read && !resolved && <span className="size-2 rounded-full bg-[#C8A24B]" />}
-      </div>
-    </div>
-  )
-}

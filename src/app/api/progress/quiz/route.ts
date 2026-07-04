@@ -42,7 +42,6 @@ export async function POST(request: Request) {
     difficulty,
     correct,
     totalQuestions,
-    isLastChapter,
   } = parsed.data
 
   // Advanced Trials (Scholar / Master) are a paid feature. Enforce it on the
@@ -86,28 +85,9 @@ export async function POST(request: Request) {
   if (recordError) {
     return Response.json({ error: recordError.message }, { status: 500 })
   }
-  // The RPC returns the reconciled user_stats row; the reader syncs its economy
+  // The RPC returns the reconciled user_stats row; the reader syncs its progress
   // display from this authoritative value rather than a client-minted amount.
   const stats = Array.isArray(statsRow) ? statsRow[0] : statsRow
-
-  // Emit the social milestone(s) for the Community feed. Best-effort — the
-  // SECURITY DEFINER record_activity() dedupes per (actor, type, entity) so a
-  // re-passed quiz never spams. A passing quiz on the final chapter is also a
-  // book_completed milestone.
-  await supabase.rpc("record_activity", {
-    p_type: "trial_passed",
-    p_entity_type: "trial",
-    p_entity_id: `${bookId}:${chapterIndex}`,
-    p_visibility: "friends",
-  })
-  if (isLastChapter) {
-    await supabase.rpc("record_activity", {
-      p_type: "book_completed",
-      p_entity_type: "book",
-      p_entity_id: bookId,
-      p_visibility: "friends",
-    })
-  }
 
   return Response.json({ ok: true, stats: stats ?? null })
 }

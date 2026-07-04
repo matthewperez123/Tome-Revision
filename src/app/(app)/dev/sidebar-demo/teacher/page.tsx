@@ -3,7 +3,6 @@
 import { useState } from "react"
 import {
   ClassroomsIcon,
-  ParentsIcon,
   QuizBuilderIcon,
   GradingIcon,
   GuidedSessionsIcon,
@@ -17,7 +16,6 @@ import {
   CurationIcon,
   SettingsIcon,
   classroomsMeta,
-  parentsMeta,
   quizBuilderMeta,
   gradingMeta,
   guidedSessionsMeta,
@@ -40,13 +38,8 @@ import {
   AuthorsIcon,
   ReadingIcon,
   TrialsIcon,
-  BookClubsIcon,
   ExploreIcon,
   TimelinesIcon,
-  SealsIcon,
-  FriendsIcon,
-  CommunityIcon,
-  ShopIcon,
   ProfileIcon,
   homeMeta,
   dashboardMeta,
@@ -56,20 +49,14 @@ import {
   authorsMeta,
   readingMeta,
   trialsMeta,
-  bookClubsMeta,
   exploreMeta,
   timelinesMeta,
-  sealsMeta,
-  friendsMeta,
-  communityMeta,
-  shopMeta,
   profileMeta,
 } from "@/components/sidebar/animations/shared"
 import type { AnimatedIconMeta, AnimatedIconComponent } from "@/components/sidebar/animations/types"
 
 const teacherIcons: { Component: AnimatedIconComponent; meta: AnimatedIconMeta }[] = [
   { Component: ClassroomsIcon, meta: classroomsMeta },
-  { Component: ParentsIcon, meta: parentsMeta },
   { Component: QuizBuilderIcon, meta: quizBuilderMeta },
   { Component: GradingIcon, meta: gradingMeta },
   { Component: GuidedSessionsIcon, meta: guidedSessionsMeta },
@@ -96,13 +83,8 @@ const sharedIcons: { Component: AnimatedIconComponent; meta: AnimatedIconMeta }[
   { Component: AuthorsIcon, meta: authorsMeta },
   { Component: ReadingIcon, meta: readingMeta },
   { Component: TrialsIcon, meta: trialsMeta },
-  { Component: BookClubsIcon, meta: bookClubsMeta },
   { Component: ExploreIcon, meta: exploreMeta },
   { Component: TimelinesIcon, meta: timelinesMeta },
-  { Component: SealsIcon, meta: sealsMeta },
-  { Component: FriendsIcon, meta: friendsMeta },
-  { Component: CommunityIcon, meta: communityMeta },
-  { Component: ShopIcon, meta: shopMeta },
   { Component: ProfileIcon, meta: profileMeta },
 ]
 

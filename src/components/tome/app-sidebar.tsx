@@ -18,7 +18,6 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar"
 import { ProfileSwitcher } from "@/components/tome/profile-switcher"
-import { useFriendsData } from "@/hooks/use-friends-data"
 
 export function AppSidebar() {
   const pathname = usePathname()
@@ -103,10 +102,6 @@ function SidebarNav({ pathname }: { pathname: string }) {
     return pathname
   })()
 
-  // Pending friend-request count powers the gold badge on the Friends entry.
-  const { incoming } = useFriendsData()
-  const pendingFriendRequests = incoming.length
-
   return (
     <SidebarMenu ref={listRef}>
       {navItems.map((item) => {
@@ -136,14 +131,6 @@ function SidebarNav({ pathname }: { pathname: string }) {
                 aria-hidden="true"
               />
               <span>{item.label}</span>
-              {item.label === "Friends" && pendingFriendRequests > 0 && (
-                <span
-                  aria-label={`${pendingFriendRequests} pending friend ${pendingFriendRequests === 1 ? "request" : "requests"}`}
-                  className="ml-auto flex size-4 items-center justify-center rounded-full bg-[#D4A04C] text-[9px] font-bold text-[#1a1a2e]"
-                >
-                  {pendingFriendRequests > 9 ? "9+" : pendingFriendRequests}
-                </span>
-              )}
             </SidebarMenuButton>
           </SidebarMenuItem>
         )

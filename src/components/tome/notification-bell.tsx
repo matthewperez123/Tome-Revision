@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useRef, useEffect, useTransition } from "react"
+import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
 import {
   Bell,
@@ -14,17 +14,12 @@ import {
   PenSquare,
   BookHeart,
   ShieldQuestion,
-  X,
 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import {
   useRealtimeNotifications,
   type AppNotification,
 } from "@/hooks/use-realtime-notifications"
-import {
-  acceptRecommendation,
-  rejectRecommendation,
-} from "@/lib/actions/recommendations"
 
 // ── Canonical type → icon / accent ─────────────────────────────────────────
 // RUBRIC palette: lapis #2A4B8D, gold #C8A24B, vermilion #C8553D,
@@ -198,22 +193,6 @@ function NotificationItem({
   const Icon = TYPE_ICONS[notification.type] ?? Bell
   const color = TYPE_COLORS[notification.type] ?? "text-muted-foreground"
 
-  // A received book recommendation gets inline accept / reject controls.
-  if (
-    notification.type === "book_recommendation" &&
-    notification.payload?.status === "received" &&
-    notification.entityId
-  ) {
-    return (
-      <RecommendationItem
-        notification={notification}
-        onRead={onRead}
-        Icon={Icon}
-        color={color}
-      />
-    )
-  }
-
   return (
     <PlainNotificationItem
       notification={notification}
@@ -309,126 +288,3 @@ function PlainNotificationItem({
   )
 }
 
-/**
- * Inline accept / reject for a received book recommendation. The rec id is
- * carried on the notification's entity_id. Accepting adds the book to the
- * reader's library and dismisses the row.
- */
-function RecommendationItem({
-  notification,
-  onRead,
-  Icon,
-  color,
-}: {
-  notification: AppNotification
-  onRead: () => void
-  Icon: typeof Bell
-  color: string
-}) {
-  const [pending, startTransition] = useTransition()
-  const [resolved, setResolved] = useState<"accepted" | "rejected" | null>(null)
-  const recId = notification.entityId!
-
-  function handleAccept(e: React.MouseEvent) {
-    e.preventDefault()
-    e.stopPropagation()
-    if (pending || resolved) return
-    startTransition(async () => {
-      const result = await acceptRecommendation(recId)
-      if (result.ok) {
-        setResolved("accepted")
-        setTimeout(onRead, 1200)
-      }
-    })
-  }
-
-  function handleReject(e: React.MouseEvent) {
-    e.preventDefault()
-    e.stopPropagation()
-    if (pending || resolved) return
-    startTransition(async () => {
-      const result = await rejectRecommendation(recId)
-      if (result.ok) {
-        setResolved("rejected")
-        setTimeout(onRead, 400)
-      }
-    })
-  }
-
-  const tile = (
-    <div
-      className={`flex items-start gap-3 border-l-2 px-4 py-3 transition-colors hover:bg-muted/50 ${
-        notification.read
-          ? "border-l-transparent"
-          : "border-l-[#C8A24B] bg-[#C8A24B]/[0.06]"
-      } ${resolved === "rejected" ? "opacity-50" : ""}`}
-    >
-      <Icon className={`mt-0.5 size-4 shrink-0 ${color}`} aria-hidden="true" />
-      <div className="min-w-0 flex-1">
-        <p
-          className={`text-sm leading-snug ${
-            !notification.read && !resolved ? "font-medium" : ""
-          }`}
-        >
-          {resolved === "accepted"
-            ? "Added to your library"
-            : notification.title}
-        </p>
-        {notification.body && resolved !== "accepted" && (
-          <p className="mt-0.5 line-clamp-2 text-xs text-muted-foreground">
-            {notification.body}
-          </p>
-        )}
-        {!resolved && (
-          <div className="mt-2 flex items-center gap-1.5">
-            <button
-              type="button"
-              onClick={handleAccept}
-              disabled={pending}
-              className="flex size-7 items-center justify-center rounded-full bg-[#C8A24B]/15 text-[#C8A24B] transition-colors hover:bg-[#C8A24B]/25 disabled:opacity-50"
-              aria-label="Accept recommendation"
-            >
-              <Check className="size-3.5" strokeWidth={2.5} />
-            </button>
-            <button
-              type="button"
-              onClick={handleReject}
-              disabled={pending}
-              className="flex size-7 items-center justify-center rounded-full bg-[#C8553D]/10 text-[#C8553D] transition-colors hover:bg-[#C8553D]/20 disabled:opacity-50"
-              aria-label="Reject recommendation"
-            >
-              <X className="size-3.5" strokeWidth={2.5} />
-            </button>
-          </div>
-        )}
-      </div>
-      <div className="flex shrink-0 flex-col items-end gap-1">
-        <span className="text-[10px] text-muted-foreground">
-          {timeAgo(notification.createdAt)}
-        </span>
-        {!notification.read && !resolved && (
-          <span
-            aria-hidden="true"
-            className="size-1.5 rounded-full bg-[#C8A24B]"
-          />
-        )}
-      </div>
-    </div>
-  )
-
-  if (notification.actionUrl) {
-    return (
-      <Link
-        href={notification.actionUrl}
-        aria-label={accessibleNameFor(notification)}
-        onClick={() => {
-          if (!pending && !resolved) onRead()
-        }}
-        className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#2A4B8D]"
-      >
-        {tile}
-      </Link>
-    )
-  }
-  return <div>{tile}</div>
-}
