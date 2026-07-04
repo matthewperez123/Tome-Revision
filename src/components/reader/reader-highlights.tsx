@@ -556,6 +556,42 @@ export function ReaderHighlights({
     [popover, bookId, chapterIndex],
   )
 
+  // Bookmark the selected passage — a saved location (kind='bookmark') painted
+  // with the gold reader hue, surfaced on /bookmarks and the reader Marks panel.
+  const handleBookmark = useCallback(async () => {
+    if (!popover) return
+    const root = document.querySelector<HTMLElement>(READER_SELECTOR)
+    if (!root) return
+
+    const BOOKMARK_COLOR = "#C8A24B"
+    const tempId = `pending-${Date.now()}`
+    applyHighlight(root, popover.start, popover.end, BOOKMARK_COLOR, tempId)
+    const text = popover.text
+    const start = popover.start
+    const end = popover.end
+    window.getSelection()?.removeAllRanges()
+    setPopover(null)
+
+    const res = await createHighlight({
+      bookId,
+      chapterIndex,
+      selectedText: text,
+      startOffset: start,
+      endOffset: end,
+      color: BOOKMARK_COLOR,
+      note: "",
+      kind: "bookmark",
+    })
+
+    if (res.ok) {
+      root
+        .querySelectorAll<HTMLElement>(`mark.tome-highlight[data-highlight-id="${tempId}"]`)
+        .forEach((el) => {
+          el.dataset.highlightId = res.data.id
+        })
+    }
+  }, [popover, bookId, chapterIndex])
+
   // ── Editor (note + share) for own highlights ──────────────────────────
 
   const patchRow = useCallback((id: string, patch: Partial<HighlightRow>) => {
@@ -626,7 +662,7 @@ export function ReaderHighlights({
         />
       ) : null}
       {popover ? (
-        <SelectionPopover popover={popover} onHighlight={handleHighlight} />
+        <SelectionPopover popover={popover} onHighlight={handleHighlight} onBookmark={handleBookmark} />
       ) : null}
     </>
   )
@@ -637,9 +673,11 @@ export function ReaderHighlights({
 function SelectionPopover({
   popover,
   onHighlight,
+  onBookmark,
 }: {
   popover: PopoverState
   onHighlight: (color: string) => void
+  onBookmark: () => void
 }) {
   return (
     <div
@@ -687,6 +725,16 @@ function SelectionPopover({
             />
           ))}
         </div>
+        <span style={{ width: 1, height: 18, background: "rgba(255,255,255,0.18)" }} />
+        <button
+          type="button"
+          onClick={onBookmark}
+          title="Bookmark this passage"
+          aria-label="Bookmark this passage"
+          style={popoverButtonStyle}
+        >
+          Bookmark
+        </button>
       </div>
     </div>
   )

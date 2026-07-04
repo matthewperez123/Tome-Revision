@@ -58,6 +58,7 @@ import { notifyChapterCompleted, notifyBookCompleted } from "@/lib/notifications
 import { assignCharacterColors, getCharacterColor, type BookColorAssignments } from "@/lib/character-colors"
 import { CanticleHero } from "@/components/reader/canticle-hero"
 import { ReaderHighlights } from "@/components/reader/reader-highlights"
+import { ReaderMarksPanel } from "@/components/reader/reader-marks-panel"
 import { ReaderPresenceRoom, ReaderPresenceAvatars } from "@/components/reader/reader-presence"
 import { useAuth } from "@/hooks/use-auth"
 import { useActivityBeacon } from "@/hooks/use-activity-beacon"
@@ -1492,6 +1493,14 @@ export default function ReaderPage() {
           bookId={bookId}
           chapterIndex={currentChapter}
           classroomId={classroomId}
+        />
+
+        {/* Marks — slide-in panel of this book's bookmarks + highlights,
+            grouped by chapter, click-to-jump. */}
+        <ReaderMarksPanel
+          bookId={bookId}
+          chapterTitles={chapters.map((c) => (c as { title?: string }).title ?? "")}
+          onJump={handleChapterSelect}
         />
       </div>
     </WordTooltipProvider>
