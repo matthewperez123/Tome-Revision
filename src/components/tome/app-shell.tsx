@@ -12,16 +12,12 @@ import { ErrorBoundary } from "@/components/tome/error-boundary"
 import { MobileDock } from "@/components/tome/mobile-dock"
 import { Toaster } from "@/components/ui/sonner"
 import { IntercomMessenger } from "@/components/support/IntercomMessenger"
-import { AuthProvider, type Profile } from "@/hooks/use-auth"
+import { AuthProvider } from "@/hooks/use-auth"
 
 export function AppShell({
   children,
-  initialProfile,
-  initialUserId,
 }: {
   children: React.ReactNode
-  initialProfile: Profile | null
-  initialUserId: string | null
 }) {
   const pathname = usePathname()
   // Public marketing surfaces. The bare /library route now 308-redirects to the
@@ -44,7 +40,7 @@ export function AppShell({
   // companion only belongs to authenticated app surfaces below.
   if (isLanding) {
     return (
-      <AuthProvider initialProfile={initialProfile} initialUserId={initialUserId}>
+      <AuthProvider>
       <ErrorBoundary>
       <TomeEconomyProvider>
       <BookProgressProvider>
@@ -63,7 +59,7 @@ export function AppShell({
   }
 
   return (
-    <AuthProvider initialProfile={initialProfile} initialUserId={initialUserId}>
+    <AuthProvider>
     <ErrorBoundary>
     <TomeEconomyProvider>
     <BookProgressProvider>

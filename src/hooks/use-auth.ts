@@ -191,7 +191,7 @@ function useAuthMachine(seed: Seed | null, active: boolean): AuthValue {
     // sign-out). Role continues to come only from the DB profile; there is no
     // route- or event-driven role reassignment.
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      async (_event, session) => {
+      async (event, session) => {
         if (session?.user) {
           const profile = await fetchProfile(session.user.id)
           setState({
@@ -202,8 +202,11 @@ function useAuthMachine(seed: Seed | null, active: boolean): AuthValue {
             isAuthenticated: true,
             isDemoMode: false,
           })
-        } else {
-          // Genuine sign-out — fall back to the signed-out demo view if present.
+        } else if (event === "SIGNED_OUT") {
+          // ONLY a genuine sign-out clears auth. A signed-out visitor may then
+          // fall back to the localStorage demo view. We gate on SIGNED_OUT so a
+          // transient session-less event can never flip a logged-in account's
+          // role to a localStorage-derived (demo) role.
           const demoProfile = getDemoProfile()
           setState({
             user: null,
@@ -214,6 +217,9 @@ function useAuthMachine(seed: Seed | null, active: boolean): AuthValue {
             isDemoMode: !!demoProfile,
           })
         }
+        // Any other session-less event (e.g. INITIAL_SESSION before the session
+        // hydrates) is ignored here — initAuth already established the correct
+        // state, and we never downgrade a real role on a non-sign-out event.
       },
     )
 
@@ -230,18 +236,26 @@ function useAuthMachine(seed: Seed | null, active: boolean): AuthValue {
 const AuthContext = createContext<AuthValue | null>(null)
 
 /**
- * Seeds the shared auth state with the server-resolved profile so every
- * authenticated surface reads one authoritative, non-flipping role. Mounted in
- * the app shell; the server layout passes the SSR profile in.
+ * Runs ONE shared auth machine for the whole authenticated app and exposes it
+ * through context, so every surface (sidebar, dashboard, top bar, …) reads the
+ * exact same role at the exact same time. Previously each `useAuth()` call ran
+ * its own independent machine, so different components could momentarily resolve
+ * to different roles — the source of the perceived teacher/student "switching".
+ *
+ * Role is ALWAYS the database profile's role; it is never inferred from the
+ * route and never mutated as a side effect of navigation. An optional seed lets
+ * a server surface pass an already-resolved profile in (kept null here to avoid
+ * forcing the shared `(app)` layout dynamic, which would deopt the static
+ * catalog/marketing pages).
  */
 export function AuthProvider({
-  initialProfile,
-  initialUserId,
   children,
+  initialProfile = null,
+  initialUserId = null,
 }: {
-  initialProfile: Profile | null
-  initialUserId: string | null
   children: ReactNode
+  initialProfile?: Profile | null
+  initialUserId?: string | null
 }) {
   const value = useAuthMachine({ profile: initialProfile, userId: initialUserId }, true)
   return createElement(AuthContext.Provider, { value }, children)
