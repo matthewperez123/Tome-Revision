@@ -22,11 +22,8 @@ export interface TrialAttemptSnapshot {
   answers: (string | null)[]
   /** Mirror of QuizState.results */
   results: ("correct" | "wrong" | null)[]
-  /** Mirror of QuizState.score / hearts / xpEarned / coinsEarned */
+  /** Mirror of QuizState.score */
   score: number
-  hearts: number
-  xpEarned: number
-  coinsEarned: number
   /** Reflection grades captured so far (questionId → { score, feedback, status }). */
   reflectionGrades: Record<
     string,

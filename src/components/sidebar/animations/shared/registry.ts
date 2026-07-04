@@ -7,13 +7,8 @@ import ShelvesIcon from "./ShelvesIcon"
 import AuthorsIcon from "./AuthorsIcon"
 import ReadingIcon from "./ReadingIcon"
 import TrialsIcon from "./TrialsIcon"
-import BookClubsIcon from "./BookClubsIcon"
 import ExploreIcon from "./ExploreIcon"
 import TimelinesIcon from "./TimelinesIcon"
-import FriendsIcon from "./FriendsIcon"
-import CommunityIcon from "./CommunityIcon"
-import ShopIcon from "./ShopIcon"
-import SealsIcon from "./SealsIcon"
 import ProfileIcon from "./ProfileIcon"
 
 export const sharedIconRegistry: Record<string, AnimatedIconComponent> = {
@@ -25,12 +20,7 @@ export const sharedIconRegistry: Record<string, AnimatedIconComponent> = {
   Authors: AuthorsIcon,
   Reading: ReadingIcon,
   Quizzes: TrialsIcon,
-  "Book Clubs": BookClubsIcon,
   Explore: ExploreIcon,
   Timelines: TimelinesIcon,
-  Friends: FriendsIcon,
-  Community: CommunityIcon,
-  Seals: SealsIcon,
-  Shop: ShopIcon,
   Profile: ProfileIcon,
 }

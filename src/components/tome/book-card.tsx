@@ -1,10 +1,9 @@
 "use client"
 
-import { useState, useEffect } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { Heart, Flame, TrendingUp, BookOpen, Sparkles } from "lucide-react"
-import { toggleFavorite, isFavorite } from "@/lib/shelves/store"
+import { useFavorite } from "@/hooks/use-favorite"
 import { cn } from "@/lib/utils"
 import { type TomeBook, type StructuralUnitType } from "@/data/books"
 import { getShortProgress } from "@/lib/structural-units"
@@ -65,31 +64,24 @@ const TREND_ICONS: Record<string, React.ReactNode> = {
 // ── HeartButton ────────────────────────────────
 
 function HeartButton({ bookId }: { bookId: string }) {
-  const [fav, setFav] = useState(false)
-  const [mounted, setMounted] = useState(false)
+  const { isFavorite, ready, toggle } = useFavorite(bookId)
 
-  useEffect(() => {
-    setMounted(true)
-    setFav(isFavorite(bookId))
-  }, [bookId])
+  if (!ready) return null
 
-  if (!mounted) return null
-
-  function toggle(e: React.MouseEvent) {
+  function handle(e: React.MouseEvent) {
     e.preventDefault()
     e.stopPropagation()
-    const result = toggleFavorite(bookId)
-    setFav(result.isFavorite)
+    toggle()
   }
 
   return (
     <button
-      onClick={toggle}
+      onClick={handle}
       className="absolute bottom-1.5 left-1.5 flex size-5 items-center justify-center rounded-full bg-black/30 backdrop-blur-sm transition-colors hover:bg-black/50"
-      aria-label={fav ? "Remove from favorites" : "Add to favorites"}
+      aria-label={isFavorite ? "Remove from favorites" : "Add to favorites"}
     >
       <Heart
-        className={cn("size-3", fav ? "fill-rose-500 text-rose-500" : "text-white/70")}
+        className={cn("size-3", isFavorite ? "fill-rose-500 text-rose-500" : "text-white/70")}
       />
     </button>
   )

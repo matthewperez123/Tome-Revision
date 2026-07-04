@@ -13,13 +13,27 @@ import {
   TEACHER_QUIZ_DIFFICULTIES,
   type GenerateQuizRequest,
 } from "@/lib/teacher-quiz-types"
+import {
+  TASK_CONFIG,
+  recordTaskEvent,
+  isOverRegenCap,
+  REGEN_DAILY_CAP,
+  type TeacherTaskKey,
+} from "@/lib/virgil/task-config"
+import { assertOwnership } from "@/lib/virgil/ownership"
 
 /**
  * Teacher-only Virgil task handlers. Every task here is reachable only after the
- * /api/virgil route's teacher role gate, so these never re-check the role — they
- * trust `ctx.userId` is a teacher. Model routing: Sonnet for generation, Opus
- * ONLY for grading, Haiku for lightweight drafting. Each successful call meters
- * one unit via `ctx.record()`.
+ * /api/virgil route's teacher role gate + strict `{ task, input }` envelope +
+ * per-task daily cap, so these never re-check the role. Each handler proves
+ * OBJECT-level ownership through the shared `assertOwnership` table before doing
+ * any work, routes its model / token ceiling / temperature through TASK_CONFIG
+ * (the client can never choose those), and meters one unit into the
+ * service-role `virgil_task_events` ledger on success.
+ *
+ * The dedicated semester planner lives at /api/classroom/semester-plan/generate
+ * (School-gated, classroom-owned, catalog-repaired). There is deliberately NO
+ * semester_plan task on this surface.
  */
 
 type DB = Awaited<ReturnType<typeof createClient>>
@@ -27,12 +41,9 @@ type DB = Awaited<ReturnType<typeof createClient>>
 export interface TaskCtx {
   userId: string
   supabase: DB
-  /** Increment the virgil_usage ledger for observability. */
-  record: () => Promise<void>
+  /** Aborted when the client disconnects; forwarded to the model call. */
+  signal?: AbortSignal
 }
-
-const MODEL_SONNET = "claude-sonnet-4-6"
-const MODEL_HAIKU = "claude-haiku-4-5"
 
 function client(): Anthropic | null {
   const apiKey = process.env.ANTHROPIC_API_KEY
@@ -47,8 +58,8 @@ function notConfigured(): Response {
  * Service-role reader for the read-only insight tools. A teacher's own request
  * client cannot see students' `reading_progress` (user-scoped RLS), so these
  * aggregators would surface empty data. Callers MUST verify classroom
- * ownership first (`classroom.teacher_id === ctx.userId`); only then may they
- * read the enrolled students' signals through this elevated client.
+ * ownership first via `assertOwnership`; only then may they read the enrolled
+ * students' signals through this elevated client.
  */
 function studentSignalReader(): SupabaseClient {
   return createAdminClient() as unknown as SupabaseClient
@@ -72,17 +83,20 @@ async function callJson(
   system: Anthropic.TextBlockParam[],
   prompt: string,
   maxTokens: number,
-  temperature?: number,
+  opts: { temperature?: number; signal?: AbortSignal } = {},
 ): Promise<unknown> {
   const c = client()
   if (!c) throw new Error("not_configured")
-  const msg = await c.messages.create({
-    model,
-    max_tokens: maxTokens,
-    ...(temperature !== undefined ? { temperature } : {}),
-    system,
-    messages: [{ role: "user", content: prompt }],
-  })
+  const msg = await c.messages.create(
+    {
+      model,
+      max_tokens: maxTokens,
+      ...(opts.temperature !== undefined ? { temperature: opts.temperature } : {}),
+      system,
+      messages: [{ role: "user", content: prompt }],
+    },
+    opts.signal ? { signal: opts.signal } : undefined,
+  )
   const block = msg.content.find((b) => b.type === "text")
   return extractJson(block && block.type === "text" ? block.text : "")
 }
@@ -92,15 +106,19 @@ async function callText(
   system: string,
   prompt: string,
   maxTokens: number,
+  signal?: AbortSignal,
 ): Promise<string> {
   const c = client()
   if (!c) throw new Error("not_configured")
-  const msg = await c.messages.create({
-    model,
-    max_tokens: maxTokens,
-    system,
-    messages: [{ role: "user", content: prompt }],
-  })
+  const msg = await c.messages.create(
+    {
+      model,
+      max_tokens: maxTokens,
+      system,
+      messages: [{ role: "user", content: prompt }],
+    },
+    signal ? { signal } : undefined,
+  )
   return msg.content
     .filter((b): b is Anthropic.TextBlock => b.type === "text")
     .map((b) => b.text)
@@ -127,6 +145,9 @@ async function handleTeacherQuiz(raw: unknown, ctx: TaskCtx): Promise<Response> 
   if (!parsed.success) return bad(parsed.error.flatten())
   if (!client()) return notConfigured()
   const { input } = parsed.data
+
+  const own = await assertOwnership("teacher_quiz", input, ctx)
+  if (!own.ok) return own.response
 
   const start = Math.min(input.chapterStart, input.chapterEnd)
   const end = Math.max(input.chapterStart, input.chapterEnd)
@@ -164,125 +185,13 @@ async function handleTeacherQuiz(raw: unknown, ctx: TaskCtx): Promise<Response> 
     result.questions,
     scoped.data.rows,
     scoped.data.book,
-    MODEL_SONNET,
+    TASK_CONFIG.teacher_quiz.model,
   )
-  if (saved.status === 200) await ctx.record()
+  if (saved.status === 200) {
+    const quizId = (saved.json as { quizId?: string } | null)?.quizId ?? null
+    await recordTaskEvent(ctx.userId, "teacher_quiz", quizId)
+  }
   return Response.json(saved.json, { status: saved.status })
-}
-
-// ── 3b. Curriculum planner ────────────────────────────────────────────────────
-
-const semesterPlanSchema = z.object({
-  task: z.literal("semester_plan"),
-  input: z.object({
-    title: z.string().min(1).max(200),
-    weeks: z.number().int().min(1).max(52),
-    level: z.string().max(80).optional(),
-    goals: z.array(z.string().max(300)).max(20).default([]),
-    bookIds: z.array(z.string().min(1)).min(1).max(30),
-    cadence: z.string().max(200).optional(),
-  }),
-})
-
-const planItemSchema = z.object({
-  type: z.string().min(1),
-  book_id: z.string().nullable().optional(),
-  title: z.string().min(1),
-  description: z.string().optional().default(""),
-  difficulty: z.string().nullable().optional(),
-  est_minutes: z.number().int().nonnegative().nullable().optional(),
-})
-const planWeekSchema = z.object({
-  week_index: z.number().int().nonnegative(),
-  theme: z.string().optional().default(""),
-  items: z.array(planItemSchema).default([]),
-})
-const planResultSchema = z.object({ weeks: z.array(planWeekSchema).min(1) })
-
-async function handleSemesterPlan(raw: unknown, ctx: TaskCtx): Promise<Response> {
-  const parsed = semesterPlanSchema.safeParse(raw)
-  if (!parsed.success) return bad(parsed.error.flatten())
-  if (!client()) return notConfigured()
-  const { input } = parsed.data
-
-  const { data: books } = await ctx.supabase
-    .from("books")
-    .select("id, title, author")
-    .in("id", input.bookIds)
-  const bookList = (books ?? [])
-    .map((b) => `- ${b.id}: "${b.title}" by ${b.author}`)
-    .join("\n")
-
-  const system: Anthropic.TextBlockParam[] = [
-    {
-      type: "text",
-      text: "You are Virgil, an experienced classics teacher designing a coherent curriculum. You output strictly valid JSON and sequence works into a clear intellectual arc with sensible pacing and a balanced mix of reading, discussion, and assessment.",
-    },
-  ]
-  const prompt = `Design a ${input.weeks}-week ${input.level ?? ""} curriculum titled "${input.title}".
-${input.cadence ? `Cadence: ${input.cadence}.` : ""}
-Learning goals:
-${input.goals.map((g) => `- ${g}`).join("\n") || "- (none supplied)"}
-
-Sequence ONLY these works (use the exact book_id when an item is tied to a book):
-${bookList}
-
-Return ONLY JSON:
-{"weeks":[{"week_index":0,"theme":"...","items":[{"type":"reading|discussion|assessment","book_id":"<id or null>","title":"...","description":"...","difficulty":"apprentice|scholar|master|null","est_minutes":<int or null>}]}]}
-Produce exactly ${input.weeks} weeks (week_index 0..${input.weeks - 1}). No prose, no fences.`
-
-  let plan: z.infer<typeof planResultSchema>
-  try {
-    plan = planResultSchema.parse(await callJson(MODEL_SONNET, system, prompt, 4000))
-  } catch (err) {
-    console.error("[virgil] semester_plan generation failed:", err)
-    return Response.json({ error: "Virgil couldn't draft the plan. Try again." }, { status: 502 })
-  }
-
-  const { data: planRow, error: planErr } = await ctx.supabase
-    .from("semester_plans")
-    .insert({
-      teacher_id: ctx.userId,
-      class_id: null,
-      title: input.title,
-      weeks: plan.weeks.length,
-      cadence: input.cadence ? { description: input.cadence } : {},
-      level: input.level ?? null,
-      goals: input.goals,
-      constraints: {},
-      status: "draft",
-      generated_by_model: MODEL_SONNET,
-    })
-    .select("id, title")
-    .single()
-  if (planErr || !planRow) {
-    console.error("[virgil] semester_plans insert failed:", planErr)
-    return Response.json({ error: "Failed to save plan" }, { status: 500 })
-  }
-
-  for (const week of plan.weeks) {
-    const { data: weekRow, error: weekErr } = await ctx.supabase
-      .from("semester_plan_weeks")
-      .insert({ plan_id: planRow.id, week_index: week.week_index, theme: week.theme || null })
-      .select("id")
-      .single()
-    if (weekErr || !weekRow) continue
-    const items = week.items.map((item, i) => ({
-      week_id: weekRow.id,
-      sort_order: i,
-      type: item.type,
-      book_id: item.book_id ?? null,
-      title: item.title,
-      description: item.description || null,
-      difficulty: item.difficulty ?? null,
-      est_minutes: item.est_minutes ?? null,
-      status: "planned",
-    }))
-    if (items.length > 0) await ctx.supabase.from("semester_plan_items").insert(items)
-  }
-
-  await ctx.record()
-  return Response.json({ planId: planRow.id, title: planRow.title, weeks: plan.weeks.length })
 }
 
 // ── 3c. Assignment builder ────────────────────────────────────────────────────
@@ -316,15 +225,8 @@ async function handleAssignmentDraft(raw: unknown, ctx: TaskCtx): Promise<Respon
   if (!client()) return notConfigured()
   const { input } = parsed.data
 
-  // Ownership: only the classroom's own teacher may draft into it.
-  const { data: classroom } = await ctx.supabase
-    .from("classrooms")
-    .select("id, teacher_id, name")
-    .eq("id", input.classroomId)
-    .maybeSingle()
-  if (!classroom || classroom.teacher_id !== ctx.userId) {
-    return Response.json({ error: "You don't own that classroom." }, { status: 403 })
-  }
+  const own = await assertOwnership("assignment_draft", input, ctx)
+  if (!own.ok) return own.response
 
   const system: Anthropic.TextBlockParam[] = [
     {
@@ -343,7 +245,15 @@ No prose, no fences.`
 
   let draft: z.infer<typeof assignmentResultSchema>
   try {
-    draft = assignmentResultSchema.parse(await callJson(MODEL_SONNET, system, prompt, 2000))
+    draft = assignmentResultSchema.parse(
+      await callJson(
+        TASK_CONFIG.assignment_draft.model,
+        system,
+        prompt,
+        TASK_CONFIG.assignment_draft.maxTokens,
+        { signal: ctx.signal },
+      ),
+    )
   } catch (err) {
     console.error("[virgil] assignment_draft generation failed:", err)
     return Response.json({ error: "Virgil couldn't draft the assignment. Try again." }, { status: 502 })
@@ -380,7 +290,7 @@ No prose, no fences.`
     .from("assignment_targets")
     .insert({ assignment_id: assignment.id, target_type: "classroom" })
 
-  await ctx.record()
+  await recordTaskEvent(ctx.userId, "assignment_draft", assignment.id)
   return Response.json({ assignmentId: assignment.id, title: assignment.title })
 }
 
@@ -388,38 +298,55 @@ No prose, no fences.`
 
 const gradeSchema = z.object({
   task: z.literal("grade_response"),
-  input: z.object({ responseId: z.string().uuid() }),
+  input: z.union([
+    z.object({ responseId: z.string().uuid() }),
+    z.object({ submissionId: z.string().uuid() }),
+  ]),
 })
 
 async function handleGradeResponse(raw: unknown, ctx: TaskCtx): Promise<Response> {
   const parsed = gradeSchema.safeParse(raw)
   if (!parsed.success) return bad(parsed.error.flatten())
   if (!client()) return notConfigured()
-  const { responseId } = parsed.data.input
+  const input = parsed.data.input
 
+  // Object-level authorization (404-not-403 so a probe can't confirm existence):
+  //  • responseId  → the response's teacher_quiz must belong to this teacher
+  //  • submissionId → the essay's assignment classroom must be owned by them
+  const own = await assertOwnership("grade_response", input as Record<string, unknown>, ctx)
+  if (!own.ok) return own.response
+
+  // Grading is a DRAFT: each call proposes a score + feedback and is repeatable
+  // (Regenerate), so it's bounded per-object per day. The teacher finalizes the
+  // draft separately via gradeSubmission, which is where the grade is written.
+  const objectId = "submissionId" in input ? input.submissionId : input.responseId
+  if (await isOverRegenCap(ctx.userId, "grade_response", objectId)) {
+    return Response.json(
+      {
+        error: `Virgil has drafted this ${REGEN_DAILY_CAP} times today — review the last draft or grade it yourself.`,
+      },
+      { status: 429 },
+    )
+  }
+
+  if ("submissionId" in input) {
+    return gradeEssaySubmission(input.submissionId, ctx)
+  }
+
+  const responseId = input.responseId
   const { data: response } = await ctx.supabase
     .from("teacher_quiz_responses")
     .select("id, quiz_id, question_id, response, max_points")
     .eq("id", responseId)
     .maybeSingle()
-  if (!response) return Response.json({ error: "Response not found" }, { status: 404 })
-
-  // Ownership: the response's quiz must belong to this teacher.
-  const { data: quiz } = await ctx.supabase
-    .from("teacher_quizzes")
-    .select("id, teacher_id")
-    .eq("id", response.quiz_id)
-    .maybeSingle()
-  if (!quiz || quiz.teacher_id !== ctx.userId) {
-    return Response.json({ error: "You don't own that quiz." }, { status: 403 })
-  }
+  if (!response) return Response.json({ error: "Not found." }, { status: 404 })
 
   const { data: question } = await ctx.supabase
     .from("teacher_quiz_questions")
     .select("question_text, rubric, reference_answer, max_points, points")
     .eq("id", response.question_id)
     .maybeSingle()
-  if (!question) return Response.json({ error: "Question not found" }, { status: 404 })
+  if (!question) return Response.json({ error: "Not found." }, { status: 404 })
 
   const maxPoints =
     (response.max_points as number | null) ?? (question.max_points as number | null) ?? question.points ?? 4
@@ -434,6 +361,13 @@ async function handleGradeResponse(raw: unknown, ctx: TaskCtx): Promise<Response
       answerText: answerToString(response.response),
     })
   } catch (err) {
+    // The grader refuses over-long answers WITHOUT ever calling the model.
+    if (err instanceof Error && err.message === "student_response_too_long") {
+      return Response.json(
+        { error: "That response is too long for Virgil to grade. Ask the student to trim it." },
+        { status: 422 },
+      )
+    }
     console.error("[virgil] grade_response generation failed:", err)
     return Response.json({ error: "Virgil couldn't grade this response. Try again." }, { status: 502 })
   }
@@ -454,8 +388,75 @@ async function handleGradeResponse(raw: unknown, ctx: TaskCtx): Promise<Response
     return Response.json({ error: "Failed to save grade" }, { status: 500 })
   }
 
-  await ctx.record()
-  return Response.json({ score: grade.score, is_correct: grade.isCorrect, feedback: grade.feedback })
+  await recordTaskEvent(ctx.userId, "grade_response", responseId)
+  return Response.json({
+    score: grade.score,
+    is_correct: grade.isCorrect,
+    feedback: grade.feedback,
+    truncated: grade.truncated,
+  })
+}
+
+/**
+ * Essay variant of grade_response. Ownership is already proven (the assignment's
+ * classroom is owned by this teacher). Grades the student's `response_text`
+ * against the essay prompt via the same shared grader and returns the proposal
+ * WITHOUT persisting anything — this is a DRAFT. The teacher reviews it, edits
+ * inline, and finalizes through `gradeSubmission` (the single write path), which
+ * records the model's draft score vs the teacher's confirmed score in
+ * grade_history. Metered into the per-object regen ledger so drafts are bounded.
+ */
+async function gradeEssaySubmission(submissionId: string, ctx: TaskCtx): Promise<Response> {
+  const { data: sub } = await ctx.supabase
+    .from("assignment_submissions")
+    .select("id, response_text, assignment:assignments(essay_prompt, points_available)")
+    .eq("id", submissionId)
+    .maybeSingle<{
+      id: string
+      response_text: string | null
+      assignment: {
+        essay_prompt: string | null
+        points_available: number | null
+      } | null
+    }>()
+  if (!sub?.assignment) return Response.json({ error: "Not found." }, { status: 404 })
+
+  const answerText = (sub.response_text ?? "").trim()
+  if (!answerText) {
+    return Response.json({ error: "There's no essay to grade yet." }, { status: 422 })
+  }
+  const maxPoints = sub.assignment.points_available ?? 100
+
+  let grade
+  try {
+    grade = await gradeFreeResponseWithVirgil({
+      questionText: sub.assignment.essay_prompt ?? "Grade this essay.",
+      rubric: null,
+      referenceAnswer: null,
+      maxPoints,
+      answerText,
+    })
+  } catch (err) {
+    if (err instanceof Error && err.message === "student_response_too_long") {
+      return Response.json(
+        { error: "That essay is too long for Virgil to grade. Ask the student to trim it." },
+        { status: 422 },
+      )
+    }
+    console.error("[virgil] essay grade generation failed:", err)
+    return Response.json({ error: "Virgil couldn't grade this essay. Try again." }, { status: 502 })
+  }
+
+  await recordTaskEvent(ctx.userId, "grade_response", submissionId)
+  return Response.json({
+    score: Math.round(Math.max(0, Math.min(grade.score, maxPoints))),
+    max_points: maxPoints,
+    is_correct: grade.isCorrect,
+    feedback: grade.feedback,
+    strengths: grade.strengths,
+    improvements: grade.improvements,
+    truncated: grade.truncated,
+  })
 }
 
 // ── 3e. Announcement draft (no write — teacher saves separately) ──────────────
@@ -471,14 +472,8 @@ async function handleAnnouncementDraft(raw: unknown, ctx: TaskCtx): Promise<Resp
   if (!client()) return notConfigured()
   const { input } = parsed.data
 
-  const { data: classroom } = await ctx.supabase
-    .from("classrooms")
-    .select("id, teacher_id")
-    .eq("id", input.classroomId)
-    .maybeSingle()
-  if (!classroom || classroom.teacher_id !== ctx.userId) {
-    return Response.json({ error: "You don't own that classroom." }, { status: 403 })
-  }
+  const own = await assertOwnership("announcement_draft", input, ctx)
+  if (!own.ok) return own.response
 
   const system: Anthropic.TextBlockParam[] = [
     {
@@ -493,7 +488,13 @@ Return ONLY JSON: {"title":"...","content":"..."} — no prose, no fences.`
 
   let draft: { title: string; content: string }
   try {
-    const json = (await callJson(MODEL_HAIKU, system, prompt, 600)) as { title?: unknown; content?: unknown }
+    const json = (await callJson(
+      TASK_CONFIG.announcement_draft.model,
+      system,
+      prompt,
+      TASK_CONFIG.announcement_draft.maxTokens,
+      { signal: ctx.signal },
+    )) as { title?: unknown; content?: unknown }
     draft = {
       title: String(json.title ?? "Announcement"),
       content: String(json.content ?? ""),
@@ -503,7 +504,7 @@ Return ONLY JSON: {"title":"...","content":"..."} — no prose, no fences.`
     return Response.json({ error: "Virgil couldn't draft the announcement. Try again." }, { status: 502 })
   }
 
-  await ctx.record()
+  await recordTaskEvent(ctx.userId, "announcement_draft", input.classroomId)
   return Response.json(draft)
 }
 
@@ -520,14 +521,8 @@ async function handleStudentNote(raw: unknown, ctx: TaskCtx): Promise<Response> 
   if (!client()) return notConfigured()
   const { studentId, classroomId } = parsed.data.input
 
-  const { data: classroom } = await ctx.supabase
-    .from("classrooms")
-    .select("id, teacher_id")
-    .eq("id", classroomId)
-    .maybeSingle()
-  if (!classroom || classroom.teacher_id !== ctx.userId) {
-    return Response.json({ error: "You don't own that classroom." }, { status: 403 })
-  }
+  const own = await assertOwnership("student_note", parsed.data.input, ctx)
+  if (!own.ok) return own.response
 
   // Ownership verified above → read the student's signals with the elevated
   // client (their reading_progress is invisible to the teacher under RLS).
@@ -564,13 +559,19 @@ Write the progress note.`
 
   let content: string
   try {
-    content = await callText(MODEL_SONNET, system, prompt, 400)
+    content = await callText(
+      TASK_CONFIG.student_note.model,
+      system,
+      prompt,
+      TASK_CONFIG.student_note.maxTokens,
+      ctx.signal,
+    )
   } catch (err) {
     console.error("[virgil] student_note generation failed:", err)
     return Response.json({ error: "Virgil couldn't summarize this student. Try again." }, { status: 502 })
   }
 
-  await ctx.record()
+  await recordTaskEvent(ctx.userId, "student_note", studentId)
   return Response.json({ content })
 }
 
@@ -594,18 +595,17 @@ async function handleClassInsights(raw: unknown, ctx: TaskCtx): Promise<Response
   if (!client()) return notConfigured()
   const { classroomId } = parsed.data.input
 
-  const { data: classroom } = await ctx.supabase
-    .from("classrooms")
-    .select("id, teacher_id, name")
-    .eq("id", classroomId)
-    .maybeSingle()
-  if (!classroom || classroom.teacher_id !== ctx.userId) {
-    return Response.json({ error: "You don't own that classroom." }, { status: 403 })
-  }
+  const own = await assertOwnership("class_insights", parsed.data.input, ctx)
+  if (!own.ok) return own.response
 
   // Ownership verified → read enrolled students' signals with the elevated
   // client. Only genuine students count (exclude owner/co_teacher rows).
   const reader = studentSignalReader()
+  const { data: classroom } = await reader
+    .from("classrooms")
+    .select("name")
+    .eq("id", classroomId)
+    .maybeSingle()
   const { data: members } = await reader
     .from("classroom_members")
     .select("student_id")
@@ -647,7 +647,7 @@ async function handleClassInsights(raw: unknown, ctx: TaskCtx): Promise<Response
       text: "You are Virgil giving a teacher a private read on their class. You output strictly valid JSON. Be specific and actionable; name students only from the supplied data.",
     },
   ]
-  const prompt = `Class: ${classroom.name}. Per-student signal:
+  const prompt = `Class: ${classroom?.name ?? "this class"}. Per-student signal:
 ${JSON.stringify(perStudent, null, 2)}
 
 Return ONLY JSON:
@@ -656,21 +656,28 @@ No prose, no fences.`
 
   let insights: z.infer<typeof classInsightsResultSchema>
   try {
-    insights = classInsightsResultSchema.parse(await callJson(MODEL_SONNET, system, prompt, 2000))
+    insights = classInsightsResultSchema.parse(
+      await callJson(
+        TASK_CONFIG.class_insights.model,
+        system,
+        prompt,
+        TASK_CONFIG.class_insights.maxTokens,
+        { signal: ctx.signal },
+      ),
+    )
   } catch (err) {
     console.error("[virgil] class_insights generation failed:", err)
     return Response.json({ error: "Virgil couldn't read the class right now. Try again." }, { status: 502 })
   }
 
-  await ctx.record()
+  await recordTaskEvent(ctx.userId, "class_insights", classroomId)
   return Response.json(insights)
 }
 
 // ── Dispatch ──────────────────────────────────────────────────────────────────
 
-const TEACHER_TASKS = new Set([
+const TEACHER_TASKS = new Set<TeacherTaskKey>([
   "teacher_quiz",
-  "semester_plan",
   "assignment_draft",
   "grade_response",
   "announcement_draft",
@@ -678,16 +685,18 @@ const TEACHER_TASKS = new Set([
   "class_insights",
 ])
 
-export function isTeacherTask(task: unknown): task is string {
-  return typeof task === "string" && TEACHER_TASKS.has(task)
+export function isTeacherTask(task: unknown): task is TeacherTaskKey {
+  return typeof task === "string" && TEACHER_TASKS.has(task as TeacherTaskKey)
 }
 
-export async function handleTeacherTask(task: string, raw: unknown, ctx: TaskCtx): Promise<Response> {
+export async function handleTeacherTask(
+  task: TeacherTaskKey,
+  raw: unknown,
+  ctx: TaskCtx,
+): Promise<Response> {
   switch (task) {
     case "teacher_quiz":
       return handleTeacherQuiz(raw, ctx)
-    case "semester_plan":
-      return handleSemesterPlan(raw, ctx)
     case "assignment_draft":
       return handleAssignmentDraft(raw, ctx)
     case "grade_response":

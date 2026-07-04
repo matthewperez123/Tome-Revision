@@ -16,7 +16,6 @@
 // ─────────────────────────────────────────────
 
 import type { ChapterQuestion, QuestionType, QuizDifficulty } from "./chapter-questions"
-import { WISDOM_PER_CORRECT } from "./quiz-engine"
 
 // ── DB row shape ───────────────────────────────
 
@@ -143,7 +142,7 @@ export function dbRowToChapterQuestion(
     type,
     text: row.question_text,
     difficulty,
-    xpReward: WISDOM_PER_CORRECT[difficulty] ?? 5,
+    xpReward: 5,
     explanation: row.explanation ?? "",
     citation: meta.citation,
   }

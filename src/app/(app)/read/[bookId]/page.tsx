@@ -18,7 +18,7 @@
 import { useEffect, useState, useRef, useCallback, useMemo } from "react"
 import { useParams, useRouter } from "next/navigation"
 import { AnimatePresence, motion } from "framer-motion"
-import { BookCheck, Palette } from "lucide-react"
+import { BookCheck, BookOpen, Palette, X } from "lucide-react"
 import { toast } from "sonner"
 import { supabase } from "@/lib/supabase"
 import type { Book } from "@/lib/supabase"
@@ -34,7 +34,7 @@ import {
   useReaderPrefs,
   setReaderPrefs,
 } from "@/lib/reader/reader-prefs"
-import { useReaderPrefsSync, saveReadingPosition } from "@/lib/reader/reader-sync"
+import { useReaderPrefsSync, saveReadingPosition, fetchReadingPosition } from "@/lib/reader/reader-sync"
 import { sanitizeReaderHtml } from "@/lib/reader/sanitize"
 import { WordTooltipProvider } from "./word-tooltip"
 import { useBookProgress } from "@/components/tome/book-progress-provider"
@@ -47,7 +47,6 @@ import { getCuratedQuestionsForChapter } from "@/lib/chapter-questions"
 import { dbRowsToChapterQuestions, type QuestionRow } from "@/lib/db-chapter-questions"
 import { isFrontOrBackMatter } from "@/lib/book-progress"
 import type { QuizDifficulty } from "@/lib/book-progress"
-import { emitActivity } from "@/lib/actions/activities"
 import { findAttemptForChapter, isAttemptResumable } from "@/lib/trial-attempts"
 import { getUnitNumber, getUnitLabel } from "@/lib/structural-units"
 import type { StructuralUnitType, BookPart } from "@/data/books"
@@ -59,8 +58,12 @@ import { notifyChapterCompleted, notifyBookCompleted } from "@/lib/notifications
 import { assignCharacterColors, getCharacterColor, type BookColorAssignments } from "@/lib/character-colors"
 import { CanticleHero } from "@/components/reader/canticle-hero"
 import { ReaderHighlights } from "@/components/reader/reader-highlights"
+import { ReaderMarksPanel } from "@/components/reader/reader-marks-panel"
 import { ReaderPresenceRoom, ReaderPresenceAvatars } from "@/components/reader/reader-presence"
 import { useAuth } from "@/hooks/use-auth"
+import { useActivityBeacon } from "@/hooks/use-activity-beacon"
+import { autoFinalizeReadingForBook } from "@/lib/actions/grades"
+import { RUBRIC } from "@/lib/semester-plan/rubric"
 import { useEntitlement } from "@/hooks/use-entitlement"
 import { canReadBook } from "@/lib/stripe/entitlements"
 import { PaywallGate } from "@/components/pricing/PaywallGate"
@@ -210,10 +213,32 @@ export default function ReaderPage() {
   const [sidebarOpen, setSidebarOpen] = useState(true)
   // Classroom context (?classroom=<id>) scopes live presence to the class room.
   const [classroomId, setClassroomId] = useState<string | null>(null)
+  // Reading-assignment context (?assignment=<id>) drives the assignment ribbon
+  // and auto-completion. Meta is fetched for the ribbon copy.
+  const [assignmentId, setAssignmentId] = useState<string | null>(null)
+  const [assignmentMeta, setAssignmentMeta] = useState<{
+    title: string
+    rangeEnd: number | null
+  } | null>(null)
+  const [ribbonDismissed, setRibbonDismissed] = useState(false)
+  const [assignmentDone, setAssignmentDone] = useState(false)
+  // Cross-device resume: set when the account's saved chapter is ahead of the
+  // chapter we opened at (e.g. progress made on another device).
+  const [serverResume, setServerResume] = useState<{ chapterIndex: number } | null>(null)
 
   // ── Entitlement gate (readers only; teachers/students unaffected) ──
-  const { role } = useAuth()
+  const { role, user } = useAuth()
   const { tier, loading: entitlementLoading } = useEntitlement()
+
+  // Live-presence heartbeat for the teacher's Lectern (students in a class only).
+  useActivityBeacon({
+    classroomId,
+    surface: "reading",
+    bookId,
+    chapterIndex: currentChapter,
+    assignmentId,
+    detail: chapters[currentChapter]?.title ?? null,
+  })
 
   // ── Reading preferences (dependency-free store, localStorage + Supabase) ──
   const prefs = useReaderPrefs()
@@ -403,9 +428,6 @@ export default function ReaderPage() {
     if (!existingProgress) {
       // Auto-start progress — no modal prompt
       startBook(bookId)
-      // Emit the book_started social milestone (best-effort; guests get a
-      // rejected promise we ignore). Idempotent server-side per (actor, book).
-      void emitActivity({ type: "book_started", entityType: "book", entityId: bookId })
     } else {
       setCurrentChapter(existingProgress.currentChapterIndex)
     }
@@ -422,9 +444,55 @@ export default function ReaderPage() {
       // Classroom context for scoping live co-reader presence to a class room.
       const classroomParam = search.get("classroom")?.trim()
       if (classroomParam) setClassroomId(classroomParam)
+      // Reading-assignment context — drives the ribbon + auto-completion.
+      const assignmentParam = search.get("assignment")?.trim()
+      if (assignmentParam) setAssignmentId(assignmentParam)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [bookId])
+
+  // Fetch assignment meta for the ribbon (title + assigned chapter range).
+  useEffect(() => {
+    if (!assignmentId) return
+    let cancelled = false
+    ;(async () => {
+      const { data } = await supabase
+        .from("assignments")
+        .select("title, chapter_range_end, chapter_range_start, status")
+        .eq("id", assignmentId)
+        .maybeSingle<{
+          title: string
+          chapter_range_end: number | null
+          chapter_range_start: number | null
+          status: string
+        }>()
+      if (cancelled || !data || data.status !== "active") return
+      setAssignmentMeta({
+        title: data.title,
+        rangeEnd: data.chapter_range_end ?? data.chapter_range_start ?? null,
+      })
+    })()
+    return () => {
+      cancelled = true
+    }
+  }, [assignmentId])
+
+  // Auto-complete reading assignments as the student's furthest chapter
+  // advances. Server-side derivation mirrors the classroom_gradebook rule and
+  // writes a full-points grade when the assigned range is covered. Debounced so
+  // page-turns within a chapter don't spam the action; runs for students only.
+  useEffect(() => {
+    if (role !== "student" || !user) return
+    const t = setTimeout(() => {
+      void autoFinalizeReadingForBook(bookId, currentChapter).then((res) => {
+        if (res.ok && res.data.finalized > 0) {
+          setAssignmentDone(true)
+          toast.success("Reading assignment complete", { duration: 2500 })
+        }
+      })
+    }, 1500)
+    return () => clearTimeout(t)
+  }, [role, user, bookId, currentChapter])
 
   // Load chapter HTML on demand — static file first, Supabase fallback
   useEffect(() => {
@@ -714,12 +782,41 @@ export default function ReaderPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [chapterHTML, effectiveMode, currentChapter, fontSize, containerDims, prefs.lineHeight, prefs.justify, prefs.a11yFace])
 
-  // Save page position to localStorage in paginated mode (+ Supabase mirror)
+  // Save page position to localStorage in paginated mode (instant per-chapter restore)
   useEffect(() => {
     if (isScroll) return
     localStorage.setItem(`tome-page-${bookId}-${currentChapter}`, String(currentPage))
-    saveReadingPosition(bookId, { chapterIndex: currentChapter, page: currentPage, scrollRatio: null })
   }, [currentPage, isScroll, bookId, currentChapter])
+
+  // Mirror reading position to the account (debounced ~3s) for cross-device
+  // resume. Chapter + percent in both modes; page only in paginated mode.
+  useEffect(() => {
+    const total = chapters.length || 1
+    saveReadingPosition(bookId, {
+      chapterIndex: currentChapter,
+      page: isScroll ? null : currentPage,
+      scrollRatio: null,
+      percent: Math.round(((currentChapter + 1) / total) * 100),
+    })
+  }, [bookId, currentChapter, currentPage, isScroll, chapters.length])
+
+  // Cross-device resume detection. On mount (and whenever the tab regains
+  // focus) fetch the account position; if it is ahead of where we are, surface
+  // a quiet affordance. The visibilitychange refetch lets a stale tab pick up
+  // progress made on another device without a manual refresh.
+  useEffect(() => {
+    if (!user) return
+    let cancelled = false
+    const check = async () => {
+      const remote = await fetchReadingPosition(bookId)
+      if (cancelled || !remote) return
+      setServerResume(remote.chapterIndex > currentChapter ? { chapterIndex: remote.chapterIndex } : null)
+    }
+    void check()
+    const onVis = () => { if (!document.hidden) void check() }
+    document.addEventListener("visibilitychange", onVis)
+    return () => { cancelled = true; document.removeEventListener("visibilitychange", onVis) }
+  }, [user, bookId, currentChapter])
 
   // ── Pre-measure the whole book → folio map (paginated modes only) ──
   // Approach A: lay every chapter out off-screen at the current layout and cache
@@ -911,19 +1008,12 @@ export default function ReaderPage() {
     }
   }, [bookId, currentChapter, chapters, completeChapter, handleChapterSelect])
 
-  const handleQuizPass = useCallback((xpEarned: number, coinsEarned: number, correct: number, total: number) => {
+  const handleQuizPass = useCallback((correct: number, total: number) => {
     const totalCount    = chapters.length || 1
     const isLastChapter = currentChapter === totalCount - 1
     const chapterData   = (chapters[currentChapter] ?? { id: `ch-${currentChapter}`, title: getUnitNumber(structuralUnitType, 1) }) as { id: string; title: string }
 
-    // Trial Wisdom is NO LONGER minted client-side. The server (record_trial_result)
-    // is the sole authority: it computes the Wisdom from the tier rate × correct
-    // answers, writes quiz_results, and awards user_stats. We only dispatch the
-    // separate chapter/book completion bonuses locally.
-    dispatchEconomy({ type: "chapter_complete" })
-    if (isLastChapter) dispatchEconomy({ type: "book_complete" })
-
-    completeChapter(bookId, currentChapter, xpEarned)
+    completeChapter(bookId, currentChapter, 0)
     const scorePct = total > 0 ? Math.round((correct / total) * 100) : 0
     saveQuizResult(bookId, {
       chapterId:       chapterData.id,
@@ -931,13 +1021,13 @@ export default function ReaderPage() {
       score:           scorePct,
       totalQuestions:  total,
       passed:          true,
-      xpEarned,
+      xpEarned:        0,
       completedAt:     new Date().toISOString(),
     })
 
-    // Authoritative server award. The route recomputes Wisdom itself (ignoring any
-    // client number) and returns the reconciled user_stats row, which we sync into
-    // the economy display. Guests (no session) get a 401 and keep local progress.
+    // Authoritative server record. The route writes quiz_results and returns the
+    // reconciled user_stats row, which we sync into the economy display. Guests
+    // (no session) get a 401 and keep local progress.
     void fetch("/api/progress/quiz", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -958,12 +1048,12 @@ export default function ReaderPage() {
     const bookTitle = book?.title ?? bookId
     notifyChapterCompleted(bookTitle, chapterData.title, bookId, isLastChapter ? undefined : currentChapter + 1, getUnitLabel(structuralUnitType))
     if (isLastChapter) {
-      notifyBookCompleted(bookTitle, bookId, xpEarned)
+      notifyBookCompleted(bookTitle, bookId)
     }
 
     setShowQuizOverlay(false)
     if (!isLastChapter) setTimeout(() => handleChapterSelect(currentChapter + 1), 300)
-  }, [bookId, currentChapter, chapters, selectedDifficulty, dispatchEconomy, syncStats, completeChapter, saveQuizResult, handleChapterSelect])
+  }, [bookId, currentChapter, chapters, selectedDifficulty, syncStats, completeChapter, saveQuizResult, handleChapterSelect])
 
 
   // Keyboard navigation (scroll mode only — PaginatedReader owns keyboard in capture phase)
@@ -1081,7 +1171,6 @@ export default function ReaderPage() {
           chapterIndex={currentChapter}
           unitDisplay={unitDisplay}
           questions={trialQuestions}
-          hearts={stats.hearts}
           isOpen={showQuizOverlay}
           onPass={handleQuizPass}
           onFail={() => setShowQuizOverlay(false)}
@@ -1136,6 +1225,88 @@ export default function ReaderPage() {
             chapterIndex={currentChapter}
             surfaceRef={readerSurfaceRef}
           >
+          {/* Cross-device resume affordance (gold, dismissible) */}
+          {serverResume && (
+            <div
+              className="flex shrink-0 items-center gap-2.5 px-4 py-2 text-sm"
+              style={{
+                backgroundColor: `${RUBRIC.goldLeaf}14`,
+                borderBottom: `1px solid ${RUBRIC.goldLeaf}33`,
+              }}
+            >
+              <BookOpen className="size-4 shrink-0" style={{ color: RUBRIC.goldLeaf }} />
+              <span className="min-w-0 flex-1 truncate">
+                Resume where you left off —{" "}
+                <span className="font-medium">
+                  {chapters[serverResume.chapterIndex]?.title ?? `Chapter ${serverResume.chapterIndex + 1}`}
+                </span>
+              </span>
+              <button
+                type="button"
+                onClick={() => {
+                  handleChapterSelect(serverResume.chapterIndex)
+                  setServerResume(null)
+                }}
+                className="shrink-0 rounded-full px-3 py-1 text-xs font-semibold"
+                style={{ backgroundColor: RUBRIC.goldLeaf, color: "#fff" }}
+              >
+                Resume
+              </button>
+              <button
+                type="button"
+                onClick={() => setServerResume(null)}
+                aria-label="Dismiss"
+                className="shrink-0 rounded-full p-1 text-muted-foreground hover:text-foreground"
+              >
+                <X className="size-4" />
+              </button>
+            </div>
+          )}
+          {/* Reading-assignment ribbon (dismissible) */}
+          {assignmentMeta && !ribbonDismissed && (
+            <div
+              className="flex shrink-0 items-center gap-2.5 px-4 py-2 text-sm"
+              style={{
+                backgroundColor: assignmentDone
+                  ? `${RUBRIC.verdigris}14`
+                  : `${RUBRIC.lapis}12`,
+                borderBottom: `1px solid ${
+                  assignmentDone ? `${RUBRIC.verdigris}33` : `${RUBRIC.lapis}26`
+                }`,
+              }}
+            >
+              <BookCheck
+                className="size-4 shrink-0"
+                style={{ color: assignmentDone ? RUBRIC.verdigris : RUBRIC.lapis }}
+              />
+              <span className="min-w-0 flex-1 truncate">
+                {assignmentDone ? (
+                  <span style={{ color: RUBRIC.verdigris }} className="font-medium">
+                    Reading complete — {assignmentMeta.title}
+                  </span>
+                ) : (
+                  <>
+                    <span className="font-medium">Assignment:</span>{" "}
+                    {assignmentMeta.title}
+                    {assignmentMeta.rangeEnd != null &&
+                      chapters[assignmentMeta.rangeEnd] && (
+                        <span className="text-muted-foreground">
+                          {" "}· through “{chapters[assignmentMeta.rangeEnd].title}”
+                        </span>
+                      )}
+                  </>
+                )}
+              </span>
+              <button
+                type="button"
+                onClick={() => setRibbonDismissed(true)}
+                className="shrink-0 rounded-md px-1.5 py-0.5 text-xs text-muted-foreground hover:bg-black/5 hover:text-foreground dark:hover:bg-white/10"
+                aria-label="Dismiss assignment banner"
+              >
+                Dismiss
+              </button>
+            </div>
+          )}
           {/* Reader Toolbar */}
           <div
             className="sticky top-0 z-20 flex shrink-0 items-center justify-between border-b border-border px-4 py-1.5 backdrop-blur-sm bg-background/90"
@@ -1322,6 +1493,14 @@ export default function ReaderPage() {
           bookId={bookId}
           chapterIndex={currentChapter}
           classroomId={classroomId}
+        />
+
+        {/* Marks — slide-in panel of this book's bookmarks + highlights,
+            grouped by chapter, click-to-jump. */}
+        <ReaderMarksPanel
+          bookId={bookId}
+          chapterTitles={chapters.map((c) => (c as { title?: string }).title ?? "")}
+          onJump={handleChapterSelect}
         />
       </div>
     </WordTooltipProvider>

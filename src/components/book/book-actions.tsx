@@ -9,8 +9,8 @@ import {
 } from "@/lib/book-progress"
 import type { StructuralUnitType } from "@/data/books"
 import { getUnitNumber, getShortProgress } from "@/lib/structural-units"
-import { isFavorite as isShelfFavorite, toggleFavorite as toggleShelfFavorite } from "@/lib/shelves/store"
-import { RecommendBookButton } from "@/components/book/recommend-book-button"
+import { useFavorite } from "@/hooks/use-favorite"
+import { AddToShelf } from "@/components/book/add-to-shelf"
 import { cn } from "@/lib/utils"
 
 /**
@@ -38,11 +38,10 @@ export function BookActions({
 }) {
   const router = useRouter()
   const [progress, setProgress] = useState<BookProgress | null>(null)
-  const [isBookmarked, setIsBookmarked] = useState(false)
+  const { isFavorite: isBookmarked, toggle: toggleBookmark } = useFavorite(bookId)
 
   useEffect(() => {
     setProgress(getBookProgress(bookId))
-    setIsBookmarked(isShelfFavorite(bookId))
   }, [bookId])
 
   function handleStartReading() {
@@ -52,11 +51,6 @@ export function BookActions({
       setProgress(newProgress)
     }
     router.push(`/read/${bookId}`)
-  }
-
-  function toggleBookmark() {
-    const result = toggleShelfFavorite(bookId)
-    setIsBookmarked(result.isFavorite)
   }
 
   const chaptersDone = progress?.completedChapterIndices.length ?? 0
@@ -101,23 +95,7 @@ export function BookActions({
           {progress ? <Play className="size-3.5 fill-current" /> : <BookOpen className="size-3.5" />}
           {ctaLabel}
         </button>
-        <button
-          onClick={toggleBookmark}
-          aria-label={isBookmarked ? "Remove bookmark" : "Add to shelf"}
-          className={cn(
-            "flex items-center gap-1.5 h-9 px-3 rounded-full border text-xs transition-colors",
-            isBookmarked
-              ? "border-[var(--tome-accent)] text-[var(--tome-accent)] bg-[color-mix(in_srgb,var(--tome-accent)_8%,transparent)]"
-              : "border-border text-muted-foreground hover:text-foreground hover:border-foreground/30"
-          )}
-        >
-          {isBookmarked
-            ? <BookmarkCheck className="size-3.5" />
-            : <Bookmark className="size-3.5" />}
-          {isBookmarked ? "Bookmarked" : "Add to Shelf"}
-        </button>
-        {/* Real-mode-only: send a recommendation to a friend */}
-        <RecommendBookButton bookId={bookId} bookTitle={bookTitle} />
+        <AddToShelf bookId={bookId} completed={progressPct === 100} />
       </div>
 
       {/* ── Mobile sticky CTA ── */}
@@ -146,7 +124,6 @@ export function BookActions({
         >
           {isBookmarked ? <BookmarkCheck className="size-4" /> : <Bookmark className="size-4" />}
         </button>
-        <RecommendBookButton bookId={bookId} bookTitle={bookTitle} className="shrink-0" />
       </div>
     </>
   )

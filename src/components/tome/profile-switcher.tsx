@@ -3,49 +3,39 @@
 import * as React from "react"
 import { createPortal } from "react-dom"
 import { motion, AnimatePresence } from "framer-motion"
-import { GraduationCap, BookOpen, Backpack, ChevronUp, Check, LogOut } from "lucide-react"
+import { GraduationCap, BookOpen, Backpack, ChevronUp, LogOut } from "lucide-react"
 import { useAuth } from "@/hooks/use-auth"
-import { UserAvatar } from "@/components/tome/avatar/UserAvatar"
-import { getCurrentAvatar } from "@/lib/avatar-state"
-import { CHARACTER_MAP, type BookCharacter } from "@/data/character-avatars"
-import { saveOnboardingData, getOnboardingData } from "@/lib/onboarding"
 import { useSidebar } from "@/components/ui/sidebar"
 import Link from "next/link"
 
-interface ProfileOption {
-  role: "reader" | "teacher" | "student"
+interface RoleMeta {
   label: string
   subtitle: string
   icon: typeof BookOpen
   accentColor: string
 }
 
-// Demo profiles the switcher can preview. When signed in with a real account,
-// useAuth resolves the role from the session and this switch has no effect on
-// that account — it only drives the localStorage-backed demo profile.
-const PROFILES: ProfileOption[] = [
-  {
-    role: "teacher",
+// Account type is permanent — set once during onboarding, never switchable here.
+const ROLE_META: Record<"reader" | "teacher" | "student", RoleMeta> = {
+  teacher: {
     label: "Teacher",
     subtitle: "Classroom management",
     icon: GraduationCap,
     accentColor: "#D4A04C",
   },
-  {
-    role: "student",
+  student: {
     label: "Student",
     subtitle: "Enrolled in a class",
     icon: Backpack,
     accentColor: "#2A4B8D",
   },
-  {
-    role: "reader",
+  reader: {
     label: "Reader",
     subtitle: "Personal reading",
     icon: BookOpen,
     accentColor: "#6366F1",
   },
-]
+}
 
 /** Width of the portal popup */
 const POPUP_WIDTH = 240
@@ -55,14 +45,9 @@ export function ProfileSwitcher() {
   const { state } = useSidebar()
   const collapsed = state === "collapsed"
   const [isOpen, setIsOpen] = React.useState(false)
-  const [character, setCharacter] = React.useState<BookCharacter | null>(null)
   const buttonRef = React.useRef<HTMLButtonElement>(null)
   const popupRef = React.useRef<HTMLDivElement>(null)
   const [popupPos, setPopupPos] = React.useState<{ left: number; bottom: number } | null>(null)
-
-  React.useEffect(() => {
-    setCharacter(getCurrentAvatar())
-  }, [])
 
   // Position the portal popup above the button
   React.useEffect(() => {
@@ -99,28 +84,9 @@ export function ProfileSwitcher() {
     return () => document.removeEventListener("keydown", handleKey)
   }, [isOpen])
 
-  const displayCharacter = character ?? CHARACTER_MAP["virgil"]
-  const currentProfile = PROFILES.find((p) => p.role === role) ?? PROFILES[2]
-  const displayName = profile?.display_name ?? "Matthew"
-
-  function switchRole(newRole: "reader" | "teacher" | "student") {
-    if (newRole === role) {
-      setIsOpen(false)
-      return
-    }
-
-    // Update localStorage onboarding data — ensure completedAt exists
-    // so getDemoProfile() recognises the profile on reload.
-    const current = getOnboardingData()
-    saveOnboardingData({
-      userType: newRole,
-      completedAt: current.completedAt ?? new Date().toISOString(),
-    })
-    setIsOpen(false)
-
-    // Navigate to dashboard and reload to pick up the new role
-    window.location.href = "/dashboard"
-  }
+  const currentRole = ROLE_META[role ?? "reader"]
+  const displayName = profile?.display_name ?? "Reader"
+  const initial = displayName.trim().charAt(0).toUpperCase() || "R"
 
   // Render popup via portal so it escapes sidebar overflow constraints
   const popupContent = (
@@ -139,37 +105,18 @@ export function ProfileSwitcher() {
             width: POPUP_WIDTH,
           }}
         >
-          {/* Profile options */}
-          <div className="p-1.5">
-            {PROFILES.map((p) => {
-              const isActive = p.role === role
-              const Icon = p.icon
-              return (
-                <button
-                  key={p.role}
-                  onClick={() => switchRole(p.role)}
-                  className={`flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left transition-colors ${
-                    isActive
-                      ? "bg-muted"
-                      : "hover:bg-muted/50"
-                  }`}
-                >
-                  <div
-                    className="flex size-8 items-center justify-center rounded-lg"
-                    style={{ backgroundColor: `${p.accentColor}15` }}
-                  >
-                    <Icon className="size-4" style={{ color: p.accentColor }} />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium">{p.label}</p>
-                    <p className="text-[10px] text-muted-foreground">{p.subtitle}</p>
-                  </div>
-                  {isActive && (
-                    <Check className="size-4 text-green-500 shrink-0" />
-                  )}
-                </button>
-              )
-            })}
+          {/* Account identity (read-only — role is fixed at onboarding) */}
+          <div className="flex items-center gap-3 p-3">
+            <div
+              className="flex size-8 items-center justify-center rounded-lg"
+              style={{ backgroundColor: `${currentRole.accentColor}15` }}
+            >
+              <currentRole.icon className="size-4" style={{ color: currentRole.accentColor }} />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-medium truncate">{displayName}</p>
+              <p className="text-[10px] text-muted-foreground">{currentRole.label} account</p>
+            </div>
           </div>
 
           {/* Divider + links */}
@@ -180,13 +127,6 @@ export function ProfileSwitcher() {
               className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm text-muted-foreground hover:bg-muted/50 hover:text-foreground"
             >
               View Profile
-            </Link>
-            <Link
-              href="/profile/avatar"
-              onClick={() => setIsOpen(false)}
-              className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm text-muted-foreground hover:bg-muted/50 hover:text-foreground"
-            >
-              Change Avatar
             </Link>
             <button
               onClick={() => {
@@ -215,18 +155,20 @@ export function ProfileSwitcher() {
         onClick={() => setIsOpen(!isOpen)}
         className={`flex w-full items-center gap-2 rounded-md p-1.5 hover:bg-accent/50 transition-colors ${collapsed ? "justify-center" : ""}`}
       >
-        <UserAvatar
-          character={displayCharacter}
-          size="sm"
-          showRarityRing={true}
-        />
+        <span
+          className="flex size-8 shrink-0 items-center justify-center rounded-full text-xs font-semibold text-white"
+          style={{ backgroundColor: currentRole.accentColor }}
+          aria-hidden="true"
+        >
+          {initial}
+        </span>
         {!collapsed && (
           <>
             <div className="flex-1 min-w-0 text-left">
               <p className="text-xs font-medium truncate leading-tight">{displayName}</p>
               <p className="text-[10px] text-muted-foreground leading-tight flex items-center gap-1">
-                <currentProfile.icon className="size-2.5" />
-                {currentProfile.label}
+                <currentRole.icon className="size-2.5" />
+                {currentRole.label}
               </p>
             </div>
             <ChevronUp

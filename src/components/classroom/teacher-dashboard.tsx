@@ -5,7 +5,6 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { Plus, ChevronDown, MonitorPlay } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { StoaBanner } from "@/components/dashboard/StoaBanner"
 import { TeacherStatsCards } from "./teacher-stats-cards"
 import { ClassroomTabBar } from "./classroom-tab-bar"
 import { LiveReadingPanel } from "./live-reading-panel"
@@ -29,11 +28,6 @@ export function TeacherDashboard() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 sm:px-6 py-6 pb-12">
-      {/* Stoa Banner — constrained to same max-width as student dashboard */}
-      <div className="mx-auto max-w-3xl">
-        <StoaBanner />
-      </div>
-
       {/* Welcome + CTA */}
       <motion.div
         initial={{ opacity: 0, y: 12 }}

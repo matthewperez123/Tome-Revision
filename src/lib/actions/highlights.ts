@@ -25,6 +25,8 @@ const CreateInput = z.object({
   endOffset: z.number().int().nonnegative(),
   color: z.string().min(1).max(16),
   note: z.string().max(8000).optional().default(""),
+  kind: z.enum(["bookmark", "highlight"]).optional().default("highlight"),
+  label: z.string().max(200).nullable().optional(),
 })
 
 /**
@@ -52,6 +54,8 @@ export async function createHighlight(
       end_offset: d.endOffset,
       color: d.color,
       note: d.note,
+      kind: d.kind,
+      label: d.label ?? null,
       shared: false,
     })
     .select("id")

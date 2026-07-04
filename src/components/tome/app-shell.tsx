@@ -9,13 +9,16 @@ import { AppSidebar } from "@/components/tome/app-sidebar"
 import { TopBar } from "@/components/tome/top-bar"
 import { PageTransition } from "@/components/tome/page-transition"
 import { ErrorBoundary } from "@/components/tome/error-boundary"
-import { VirgilWrapper } from "@/components/tome/virgil/VirgilWrapper"
 import { MobileDock } from "@/components/tome/mobile-dock"
 import { Toaster } from "@/components/ui/sonner"
 import { IntercomMessenger } from "@/components/support/IntercomMessenger"
 import { AuthProvider } from "@/hooks/use-auth"
 
-export function AppShell({ children }: { children: React.ReactNode }) {
+export function AppShell({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   const pathname = usePathname()
   // Public marketing surfaces. The bare /library route now 308-redirects to the
   // single functional catalog at /library/browse, which uses the full app chrome.
@@ -61,7 +64,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     <TomeEconomyProvider>
     <BookProgressProvider>
     <TooltipProvider>
-    <VirgilWrapper>
       <SidebarProvider defaultOpen={false}>
         <div className="flex h-svh w-full flex-col overflow-hidden">
           <TopBar />
@@ -76,7 +78,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           <IntercomMessenger />
         </div>
       </SidebarProvider>
-    </VirgilWrapper>
     </TooltipProvider>
     </BookProgressProvider>
     </TomeEconomyProvider>

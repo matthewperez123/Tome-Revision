@@ -22,30 +22,20 @@ const SHARED_CORE_LABELS = [
   "Authors",
   "Reading",
   "Quizzes",
-  "Book Clubs",
 ] as const
 
 const STUDENT_ONLY_LABELS = [
-  "Wisdom",
-  "Flames",
-  "Virgil",
   "My Classes",
-  "Study Groups",
 ] as const
 
 const SHARED_SOCIAL_LABELS = [
   "Explore",
   "Timelines",
-  "Achievements",
-  "Friends",
-  "Community",
-  "Shop",
   "Profile",
 ] as const
 
 const TEACHER_NAV_LABELS = [
   "My Classrooms",
-  "Parents",
   "Quiz Builder",
   "Grading",
   "Guided Sessions",
@@ -197,7 +187,6 @@ describe("key collision checks", () => {
   const INTENTIONAL_STUDENT_OVERRIDES = new Set([
     "Library",
     "Reading",
-    "Achievements",
     "Quizzes",
     "Profile",
   ])
@@ -225,7 +214,6 @@ describe("key collision checks", () => {
     const sharedKeys = new Set(Object.keys(sharedIconRegistry))
     const teacherNavOnly = [
       "My Classrooms",
-      "Parents",
       "Quiz Builder",
       "Grading",
       "Guided Sessions",

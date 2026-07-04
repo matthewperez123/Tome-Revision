@@ -2,22 +2,18 @@
 
 /**
  * Dev-only Trial harness — runs the six net-new typed question types through
- * the real <QuestionCard> + registry + economy provider (provided by the (app)
- * AppShell). Each question is a validated demo from lib/trials/demo-questions.
+ * the real <QuestionCard> + registry. Each question is a validated demo from
+ * lib/trials/demo-questions.
  *
- * Use it to verify end-to-end that every type renders, grades a response, shows
- * the feedback bar + explanation, and awards Wisdom through the existing economy
- * entry point. The live Wisdom total below ticks up on each correct grade.
+ * Use it to verify end-to-end that every type renders, grades a response, and
+ * shows the feedback bar + explanation.
  */
 import { useState } from "react"
 import { QuestionCard } from "@/components/trials/QuestionCard"
 import { DEMO_TRIAL_QUESTIONS } from "@/lib/trials/demo-questions"
 import { TRIAL_REGISTRY } from "@/lib/trials/registry"
-import { useEconomy } from "@/components/tome/economy-provider"
-import { WisdomStar } from "@/components/trials/sigils/WisdomStar"
 
 export default function DevTrials() {
-  const { stats } = useEconomy()
   const [i, setI] = useState(0)
   const [results, setResults] = useState<(boolean | null)[]>(
     () => DEMO_TRIAL_QUESTIONS.map(() => null)
@@ -44,15 +40,6 @@ export default function DevTrials() {
               <p className="text-xs text-muted-foreground font-sans">
                 Six net-new types through the real QuestionCard.
               </p>
-            </div>
-            <div className="flex items-center gap-1.5 shrink-0">
-              <WisdomStar size={18} />
-              <span className="font-sans font-bold tabular-nums text-ink">
-                {stats.xp_total}
-              </span>
-              <span className="text-xs text-muted-foreground font-sans">
-                Wisdom
-              </span>
             </div>
           </div>
 

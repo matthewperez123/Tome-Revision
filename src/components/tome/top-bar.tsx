@@ -2,32 +2,21 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { BookOpen, Search, X } from "lucide-react"
+import { BookOpen, CircleUser, Search, X } from "lucide-react"
 import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
 import { SidebarTrigger } from "@/components/ui/sidebar"
 import { cn } from "@/lib/utils"
 import { ThemeToggle } from "@/components/tome/ThemeToggle"
 import { NotificationBell } from "@/components/tome/notification-bell"
 import { TomeWordmark } from "@/components/brand/tome-wordmark"
-import { UserAvatar } from "@/components/tome/avatar/UserAvatar"
-import { getCurrentAvatar } from "@/lib/avatar-state"
-import type { BookCharacter } from "@/data/character-avatars"
-import { CHARACTER_MAP } from "@/data/character-avatars"
 import { useSearch } from "@/hooks/useSearch"
 import { SearchDropdown } from "@/components/tome/SearchDropdown"
 
 export function TopBar({ className }: { className?: string }) {
-  const [character, setCharacter] = React.useState<BookCharacter | null>(null)
   const [query, setQuery] = React.useState("")
   const [dropdownOpen, setDropdownOpen] = React.useState(false)
   const inputRef = React.useRef<HTMLInputElement>(null)
 
-  React.useEffect(() => {
-    setCharacter(getCurrentAvatar())
-  }, [])
-
-  const displayCharacter = character ?? CHARACTER_MAP["virgil"]
   const { results, isSearching } = useSearch(query)
 
   const handleClose = React.useCallback(() => {
@@ -95,12 +84,12 @@ export function TopBar({ className }: { className?: string }) {
       <div className="ml-auto flex items-center gap-0.5">
         <ThemeToggle />
         <NotificationBell />
-        <Link href="/profile/avatar" className="rounded-full hover:opacity-80 transition-opacity ml-0.5">
-          <UserAvatar
-            character={displayCharacter}
-            size="xs"
-            showRarityRing
-          />
+        <Link
+          href="/profile"
+          aria-label="Profile"
+          className="ml-0.5 flex size-8 items-center justify-center rounded-full text-muted-foreground hover:text-foreground hover:opacity-80 transition-opacity"
+        >
+          <CircleUser className="size-5" strokeWidth={1.5} />
         </Link>
       </div>
     </header>

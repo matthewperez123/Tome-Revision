@@ -2,7 +2,6 @@ export { teacherIconRegistry, teacherConceptIcons } from "./registry"
 
 // Nav-mapped teacher icons
 export { default as ClassroomsIcon, meta as classroomsMeta } from "./ClassroomsIcon"
-export { default as ParentsIcon, meta as parentsMeta } from "./ParentsIcon"
 export { default as QuizBuilderIcon, meta as quizBuilderMeta } from "./QuizBuilderIcon"
 export { default as GradingIcon, meta as gradingMeta } from "./GradingIcon"
 export { default as GuidedSessionsIcon, meta as guidedSessionsMeta } from "./GuidedSessionsIcon"

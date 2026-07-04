@@ -250,15 +250,15 @@ export function notifyChapterCompleted(bookTitle: string, chapterTitle: string, 
   })
 }
 
-export function notifyBookCompleted(bookTitle: string, bookId: string, wisdomEarned: number) {
+export function notifyBookCompleted(bookTitle: string, bookId: string) {
   return createNotification({
     type: "book_completed",
     title: `You finished ${bookTitle}!`,
-    body: `${wisdomEarned} Wisdom earned. A remarkable achievement.`,
+    body: `A remarkable achievement.`,
     icon: "Trophy",
     link: `/book/${bookId}/complete`,
     priority: "celebration",
-    metadata: { bookId, wisdomEarned, confetti: true },
+    metadata: { bookId, confetti: true },
   })
 }
 
