@@ -1,11 +1,9 @@
 // ─────────────────────────────────────────────
 // Tome Trials Engine — State Manager
-// Supports all 10 question types declared in chapter-questions.ts.
-// Wisdom rewards are tier-scaled: Apprentice 5, Scholar 10, Master 15
-// per correct answer.
+// Supports all question types declared in chapter-questions.ts.
+// Quizzes are ungated: a wrong answer never ends or pauses the attempt.
 // ─────────────────────────────────────────────
 
-import { COIN_REWARDS } from "@/lib/economy"
 import type { QuizDifficulty } from "@/lib/book-progress"
 import type { Hint } from "@/lib/quiz-hints"
 
@@ -81,14 +79,9 @@ export type QuizState = {
   questions: Question[]
   currentIndex: number
   score: number
-  hearts: number
-  xpEarned: number
-  coinsEarned: number
   answers: (string | null)[]
   results: ("correct" | "wrong" | null)[]
-  /** Incremented when hearts-zero pause resumes. Used to key UI remounts. */
-  resumeCount: number
-  status: "idle" | "active" | "review" | "paused" | "complete"
+  status: "idle" | "active" | "review" | "complete"
   timerSeconds: number | null
   timeRemaining: number
   startedAt: number
@@ -103,42 +96,26 @@ export type QuizAction =
   | { type: "ANSWER"; answer: string }
   | { type: "NEXT" }
   | { type: "TICK" }
-  | { type: "RESUME" }
   | { type: "FINISH" }
   | ReflectionGradeAction
 
-// ── Wisdom scaling ──────────────────────────────
-
-export const WISDOM_PER_CORRECT: Record<QuizDifficulty, number> = {
-  Apprentice: 5,
-  Scholar: 10,
-  Master: 15,
-}
+// ── Pass threshold ─────────────────────────────
 
 export const TRIAL_PASS_THRESHOLD = 60 // percent
-
-export function wisdomForQuestion(q: Question): number {
-  return WISDOM_PER_CORRECT[q.difficulty ?? "Apprentice"] ?? 5
-}
 
 // ── Initial State ──────────────────────────────
 
 export function createQuizState(
   quiz: Quiz,
-  questions: Question[],
-  hearts: number
+  questions: Question[]
 ): QuizState {
   return {
     quiz,
     questions: [...questions].sort((a, b) => a.order - b.order),
     currentIndex: 0,
     score: 0,
-    hearts,
-    xpEarned: 0,
-    coinsEarned: 0,
     answers: new Array(questions.length).fill(null),
     results: new Array(questions.length).fill(null),
-    resumeCount: 0,
     status: "idle",
     timerSeconds: null,
     timeRemaining: 0,
@@ -212,7 +189,7 @@ export function checkAnswer(question: Question, answer: string): boolean {
 
     case "reflection": {
       // Virgil-graded asynchronously; the engine accepts any response that
-      // meets the minimum word threshold so the user isn't penalised hearts.
+      // meets the minimum word threshold.
       const min = q.reflectionWordMin ?? 30
       const wc = answer.trim().split(/\s+/).filter(Boolean).length
       return wc >= min
@@ -248,37 +225,17 @@ export function quizReducer(state: QuizState, action: QuizAction): QuizState {
       answers[state.currentIndex] = action.answer
       results[state.currentIndex] = isCorrect ? "correct" : "wrong"
 
-      let { score, hearts, xpEarned, coinsEarned } = state
-
-      if (isCorrect) {
-        score++
-        xpEarned += wisdomForQuestion(question)
-        coinsEarned += COIN_REWARDS.quiz_correct
-      } else {
-        hearts = Math.max(0, hearts - 1)
-      }
+      const score = isCorrect ? state.score + 1 : state.score
 
       const isLast = state.currentIndex === state.questions.length - 1
-      const outOfHearts = hearts === 0
-
-      let nextStatus: QuizState["status"] = "active"
-      let endedAt: number | null = state.endedAt
-      if (isLast) {
-        nextStatus = "review"
-        endedAt = Date.now()
-      } else if (outOfHearts) {
-        // Pause instead of ending — player can resume after refill / regen.
-        nextStatus = "paused"
-      }
+      const nextStatus: QuizState["status"] = isLast ? "review" : "active"
+      const endedAt: number | null = isLast ? Date.now() : state.endedAt
 
       return {
         ...state,
         answers,
         results,
         score,
-        hearts,
-        xpEarned,
-        coinsEarned,
         status: nextStatus,
         endedAt,
       }
@@ -292,17 +249,6 @@ export function quizReducer(state: QuizState, action: QuizAction): QuizState {
         ...state,
         currentIndex: state.currentIndex + 1,
         status: "active",
-      }
-    }
-
-    case "RESUME": {
-      if (state.status !== "paused") return state
-      return {
-        ...state,
-        status: "active",
-        // Refill handled by caller updating `hearts` externally; if hearts are
-        // still 0, the next wrong answer will pause again immediately.
-        resumeCount: state.resumeCount + 1,
       }
     }
 
@@ -376,9 +322,6 @@ export function getQuizSummary(state: QuizState) {
     correct,
     wrong,
     percentage,
-    xpEarned: state.xpEarned,
-    coinsEarned: state.coinsEarned,
-    heartsLost: state.results.filter((r) => r === "wrong").length,
     passed,
     perfect,
     elapsedMs,

@@ -2,12 +2,11 @@
 
 import { useCallback, useEffect, useMemo, useReducer, useState } from "react"
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion"
-import { CheckCircle2, ChevronRight, Flame, X, XCircle } from "lucide-react"
+import { CheckCircle2, ChevronRight, X, XCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   quizReducer,
   createQuizState,
-  wisdomForQuestion,
   type Quiz,
   type Question,
 } from "@/lib/quiz-engine"
@@ -17,8 +16,6 @@ import type { QuizDifficulty } from "@/lib/book-progress"
 import { springs } from "@/lib/design-tokens"
 import {
   trialEnter,
-  trialExit,
-  wisdomFloat,
   wrongShakeKeyframes,
   wrongShakeTransition,
   reduced as reducedTokens,
@@ -37,12 +34,9 @@ import {
 } from "@/lib/trial-attempts"
 import { DifficultyBars } from "@/components/trials/DifficultyBars"
 import { getTierDef, TrialDifficultyCards } from "./trial-difficulty-cards"
-import { HeartsDisplay } from "@/components/trials/HeartsDisplay"
 import { TrialIntroCard } from "@/components/trials/TrialIntroCard"
-import { HeartsZeroModal } from "@/components/trials/HeartsZeroModal"
 import { KeyboardHints } from "@/components/trials/KeyboardHints"
 import { TrialResultsScreen } from "@/components/trials/TrialResultsScreen"
-import { WisdomStar } from "@/components/trials/sigils/WisdomStar"
 
 // ─────────────────────────────────────────────
 // Types
@@ -55,9 +49,8 @@ export interface ChapterQuizOverlayProps {
   chapterTitle: string
   chapterIndex: number
   unitDisplay: string
-  hearts: number
   isOpen: boolean
-  onPass: (xpEarned: number, coinsEarned: number, correct: number, total: number) => void
+  onPass: (correct: number, total: number) => void
   onFail: () => void
   onClose: () => void
   onSelectDifficulty: (difficulty: QuizDifficulty) => void
@@ -191,35 +184,6 @@ function buildQuizObjects(
 }
 
 // ─────────────────────────────────────────────
-// Floating "+N Wisdom" element
-// ─────────────────────────────────────────────
-
-function WisdomFloat({ amount, show, reduced }: { amount: number; show: boolean; reduced: boolean }) {
-  return (
-    <AnimatePresence>
-      {show && (
-        <motion.div
-          key="wisdom-float"
-          variants={reduced ? reducedTokens.wisdomFloat : wisdomFloat}
-          initial="hidden"
-          animate="visible"
-          exit="hidden"
-          className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 z-10 flex items-center gap-1 select-none"
-        >
-          <WisdomStar size={20} />
-          <span
-            className="font-semibold text-sm"
-            style={{ color: "var(--codex-tier-laureate-text)" }}
-          >
-            +{amount} Wisdom
-          </span>
-        </motion.div>
-      )}
-    </AnimatePresence>
-  )
-}
-
-// ─────────────────────────────────────────────
 // Quiz phase
 // ─────────────────────────────────────────────
 
@@ -229,12 +193,9 @@ interface QuizRunnerProps {
   chapterIndex: number
   questions: ChapterQuestion[]
   tier: QuizDifficulty
-  hearts: number
   onComplete: () => void
-  onPauseStateChange: (paused: boolean) => void
   onFeedback: (msg: string) => void
   quizStateOut: (state: ReturnType<typeof createQuizState>) => void
-  resumeToken: number
   onClose: () => void
 }
 
@@ -244,12 +205,9 @@ function QuizRunner({
   chapterIndex,
   questions,
   tier,
-  hearts,
   onComplete,
-  onPauseStateChange,
   onFeedback,
   quizStateOut,
-  resumeToken,
   onClose,
 }: QuizRunnerProps) {
   const reduced = useReducedMotion() ?? false
@@ -261,9 +219,9 @@ function QuizRunner({
 
   const [state, dispatch] = useReducer(
     quizReducer,
-    { quiz, engineQuestions, hearts, book, chapterIndex, tier },
-    ({ quiz: q, engineQuestions: eqs, hearts: h, book: b, chapterIndex: ci, tier: t }) => {
-      const fresh = createQuizState(q, eqs, h)
+    { quiz, engineQuestions, book, chapterIndex, tier },
+    ({ quiz: q, engineQuestions: eqs, book: b, chapterIndex: ci, tier: t }) => {
+      const fresh = createQuizState(q, eqs)
       // Hydrate from any in-progress saved attempt for this book/chapter/tier.
       const snap = loadAttempt(b.id, ci, t)
       if (
@@ -277,9 +235,6 @@ function QuizRunner({
           answers: snap.answers,
           results: snap.results,
           score: snap.score,
-          hearts: Math.min(snap.hearts, h),
-          xpEarned: snap.xpEarned,
-          coinsEarned: snap.coinsEarned,
           reflectionGrades: snap.reflectionGrades ?? {},
           status: "active" as const,
         }
@@ -309,9 +264,6 @@ function QuizRunner({
       answers: state.answers,
       results: state.results,
       score: state.score,
-      hearts: state.hearts,
-      xpEarned: state.xpEarned,
-      coinsEarned: state.coinsEarned,
       reflectionGrades: state.reflectionGrades ?? {},
       lastSavedAt: new Date().toISOString(),
       startedAt: new Date(state.startedAt).toISOString(),
@@ -323,9 +275,6 @@ function QuizRunner({
     state.answers,
     state.results,
     state.score,
-    state.hearts,
-    state.xpEarned,
-    state.coinsEarned,
     state.reflectionGrades,
     state.startedAt,
     book.id,
@@ -333,24 +282,13 @@ function QuizRunner({
     tier,
   ])
 
-  // Handle paused / review transitions
+  // Handle review / complete transitions
   useEffect(() => {
-    if (state.status === "paused") onPauseStateChange(true)
-    else onPauseStateChange(false)
-
     if (state.status === "review" || state.status === "complete") {
       const t = setTimeout(onComplete, 400)
       return () => clearTimeout(t)
     }
-  }, [state.status, onComplete, onPauseStateChange])
-
-  // Resume when hearts regenerate / refill
-  useEffect(() => {
-    if (state.status === "paused" && hearts > 0 && resumeToken > 0) {
-      dispatch({ type: "RESUME" })
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [resumeToken, hearts])
+  }, [state.status, onComplete])
 
   const currentIdx = state.currentIndex
   const q = state.questions[currentIdx]
@@ -359,33 +297,22 @@ function QuizRunner({
   const isWrong = state.results[currentIdx] === "wrong"
   const selectedAnswer = state.answers[currentIdx]
 
-  const [showWisdom, setShowWisdom] = useState(false)
   const [shake, setShake] = useState(false)
-  const [lostIndex, setLostIndex] = useState<number | null>(null)
 
   // Feedback effects after answer
   useEffect(() => {
     if (!answered) return
     if (isCorrect) {
-      setShowWisdom(true)
-      onFeedback(
-        `Correct. +${wisdomForQuestion(q)} Wisdom. ${q.explanation ?? ""}`
-      )
-      const t = setTimeout(() => setShowWisdom(false), 1000)
-      return () => clearTimeout(t)
+      onFeedback(`Correct. ${q.explanation ?? ""}`)
+      return
     }
     if (isWrong) {
       setShake(true)
-      setLostIndex(state.hearts) // heart that was just lost
       onFeedback(
         `Wrong. Correct answer: ${q.correct_answer}. ${q.explanation ?? ""}`
       )
       const t1 = setTimeout(() => setShake(false), 500)
-      const t2 = setTimeout(() => setLostIndex(null), 800)
-      return () => {
-        clearTimeout(t1)
-        clearTimeout(t2)
-      }
+      return () => clearTimeout(t1)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [answered, isCorrect, isWrong])
@@ -488,12 +415,6 @@ function QuizRunner({
     dispatch({ type: "NEXT" })
   }
 
-  // Current consecutive-correct run, derived from results (no engine field).
-  const streak = state.results.reduce(
-    (acc, r) => (r === "correct" ? acc + 1 : r === "wrong" ? 0 : acc),
-    0
-  )
-
   const progressPct =
     state.questions.length > 0
       ? Math.min(100, (currentIdx / state.questions.length) * 100)
@@ -501,7 +422,7 @@ function QuizRunner({
 
   return (
     <div className="flex flex-col h-full">
-      {/* Codex-style top bar — close · progress · hearts */}
+      {/* Top bar — close · progress */}
       <div className="shrink-0 bg-card border-b border-border">
         <div className="flex items-center gap-3 px-4 pt-3 pb-2 max-w-[640px] mx-auto">
           <button
@@ -535,11 +456,9 @@ function QuizRunner({
               }}
             />
           </div>
-
-          <HeartsDisplay current={state.hearts} max={hearts} lostIndex={lostIndex} />
         </div>
 
-        {/* Meta row — difficulty · wisdom · streak */}
+        {/* Meta row — difficulty */}
         <div className="flex items-center justify-between gap-3 px-4 pb-2.5 max-w-[640px] mx-auto">
           <span
             className="flex items-center gap-1.5 rounded-full pl-1.5 pr-2.5 py-0.5 text-[11px] font-semibold font-sans"
@@ -548,24 +467,6 @@ function QuizRunner({
             <DifficultyBars level={tierDef.level} size={12} color={tierDef.accentColor} />
             {tierDef.label}
           </span>
-          <div className="flex items-center gap-3">
-            <span
-              className="flex items-center gap-1 text-[11px] font-semibold tabular-nums font-sans"
-              style={{ color: "var(--codex-tier-laureate-text)" }}
-              aria-label={`${state.xpEarned} Wisdom earned`}
-            >
-              <WisdomStar size={13} />
-              {state.xpEarned}
-            </span>
-            <span
-              className={`flex items-center gap-1 text-[11px] font-semibold tabular-nums font-sans transition-opacity ${streak > 1 ? "opacity-100" : "opacity-40"}`}
-              style={{ color: "var(--flame-streak)" }}
-              aria-label={`${streak} correct in a row`}
-            >
-              <Flame size={13} className="fill-current" />
-              {streak}
-            </span>
-          </div>
         </div>
       </div>
 
@@ -579,10 +480,10 @@ function QuizRunner({
         <div className="px-4 py-6 max-w-[640px] mx-auto">
           <AnimatePresence mode="wait">
             <motion.div
-              key={q.id + state.resumeCount}
+              key={q.id}
               variants={reduced ? reducedTokens.trialEnter : trialEnter}
               initial="hidden"
-              animate={shake ? "visible" : "visible"}
+              animate="visible"
               exit={reduced ? undefined : "hidden"}
               className="space-y-6 relative"
             >
@@ -627,21 +528,8 @@ function QuizRunner({
                 onSubmit={handleSubmit}
                 reduced={reduced}
               />
-
-              {/* Wisdom float */}
-              {answered && isCorrect && (
-                <div className="absolute right-4 top-4 h-0 w-0">
-                  <WisdomFloat
-                    amount={wisdomForQuestion(q)}
-                    show={showWisdom}
-                    reduced={reduced}
-                  />
-                </div>
-              )}
-
             </motion.div>
           </AnimatePresence>
-
         </div>
       </div>
 
@@ -707,9 +595,7 @@ function QuizRunner({
                       className="flex items-center gap-2 font-sans text-base font-bold"
                       style={{ color: tint.text }}
                     >
-                      {isReflection ? (
-                        <WisdomStar size={18} />
-                      ) : isCorrect ? (
+                      {isReflection ? null : isCorrect ? (
                         <CheckCircle2 className="w-5 h-5" />
                       ) : (
                         <XCircle className="w-5 h-5" />
@@ -802,7 +688,6 @@ export function ChapterQuizOverlay({
   chapterIndex,
   unitDisplay,
   questions,
-  hearts,
   isOpen,
   onPass,
   onFail,
@@ -820,8 +705,6 @@ export function ChapterQuizOverlay({
     initialTier
   )
   const [attempt, setAttempt] = useState(0)
-  const [paused, setPaused] = useState(false)
-  const [resumeToken, setResumeToken] = useState(0)
   const [finalState, setFinalState] = useState<ReturnType<typeof createQuizState> | null>(
     null
   )
@@ -833,9 +716,7 @@ export function ChapterQuizOverlay({
       setPhase(initialTier ? "intro" : "difficulty-select")
       setSelectedTier(initialTier)
       setAttempt(0)
-      setPaused(false)
       setFinalState(null)
-      setResumeToken(0)
     }
   }, [isOpen, initialTier])
 
@@ -963,7 +844,6 @@ export function ChapterQuizOverlay({
                     tier={selectedTier}
                     unitDisplay={unitDisplay}
                     questionCount={questions.length}
-                    hearts={hearts}
                     onBegin={handleIntroBegin}
                   />
                 </motion.div>
@@ -984,12 +864,9 @@ export function ChapterQuizOverlay({
                     chapterIndex={chapterIndex}
                     questions={questions}
                     tier={selectedTier}
-                    hearts={hearts}
                     onComplete={handleQuizComplete}
-                    onPauseStateChange={setPaused}
                     onFeedback={setLiveMessage}
                     quizStateOut={setFinalState}
-                    resumeToken={resumeToken}
                     onClose={onClose}
                   />
                 </motion.div>
@@ -1007,7 +884,6 @@ export function ChapterQuizOverlay({
                   <TrialResultsScreen
                     quizState={finalState}
                     tier={selectedTier}
-                    maxHearts={hearts}
                     onPass={onPass}
                     onRetry={handleRetry}
                     onReturn={handleReturn}
@@ -1019,16 +895,6 @@ export function ChapterQuizOverlay({
 
             {phase === "quiz" && <KeyboardHints />}
           </div>
-
-          {/* Hearts-zero pause modal */}
-          <HeartsZeroModal
-            open={paused}
-            onResume={() => {
-              setPaused(false)
-              setResumeToken((n) => n + 1)
-            }}
-            onReviewChapter={onClose}
-          />
         </motion.div>
       )}
     </AnimatePresence>

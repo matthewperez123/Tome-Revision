@@ -11,7 +11,7 @@
  *
  * This hook reads the per-account source-of-truth tables for the *authenticated*
  * user:
- *   - `user_stats`        → Wisdom / streak / hearts / coins / daily goal
+ *   - `user_stats`        → streak / daily goal
  *   - `reading_progress`  → Continue Reading (joined to the static book catalog)
  *   - `activities`        → Recent Activity + this week's reading
  *
@@ -39,10 +39,8 @@ import { getBook } from "@/lib/content"
 import type { TomeBook } from "@/data/books"
 import {
   createDefaultStats,
-  getRank,
   isDailyGoalMet,
   type UserStats,
-  type RankProgress,
 } from "@/lib/economy"
 
 const supabase = createClient()
@@ -68,7 +66,6 @@ export interface DashboardData {
   mode: "real" | "empty"
   loading: boolean
   stats: UserStats
-  rank: RankProgress
   dailyGoalMet: boolean
   continueReading: ContinueReadingItem[]
   inProgressCount: number
@@ -215,7 +212,6 @@ export function useDashboardData(): DashboardData {
   }, [userId, authLoading])
 
   return useMemo<DashboardData>(() => {
-    const rank = getRank(stats.xp_total)
     const dailyGoalMet = isDailyGoalMet(stats)
 
     // Continue Reading — join reading_progress to the static catalog.
@@ -268,7 +264,6 @@ export function useDashboardData(): DashboardData {
       mode: userId ? "real" : "empty",
       loading: authLoading || loading,
       stats,
-      rank,
       dailyGoalMet,
       continueReading,
       inProgressCount: continueReading.length,

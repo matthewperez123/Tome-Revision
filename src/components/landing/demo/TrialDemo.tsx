@@ -1,23 +1,18 @@
 "use client"
 
 import { useState } from "react"
-import { Flame } from "lucide-react"
 import { DemoFrame } from "@/components/demo/DemoFrame"
 import { DemoEconomyProvider } from "@/components/demo/DemoEconomyProvider"
 import { TeacherShowcaseShell } from "../teacher/TeacherShowcaseShell"
 import { QuestionCard } from "@/components/trials/QuestionCard"
 import { DEMO_TRIAL_QUESTIONS } from "@/lib/trials/demo-questions"
 import { TRIAL_REGISTRY } from "@/lib/trials/registry"
-import { useEconomy } from "@/components/tome/economy-provider"
-import { WisdomStar } from "@/components/trials/sigils/WisdomStar"
 
 /**
  * R3 — the Trial demo. Mounts the REAL <QuestionCard> + registry + the six
- * net-new typed questions, but inside a DemoEconomyProvider so any Wisdom a
- * visitor earns lives only in this sandbox (never the real localStorage stats).
+ * net-new typed questions, inside a DemoEconomyProvider sandbox.
  */
 function TrialInner() {
-  const { stats } = useEconomy()
   const [i, setI] = useState(0)
   const total = DEMO_TRIAL_QUESTIONS.length
   const question = DEMO_TRIAL_QUESTIONS[i]
@@ -60,21 +55,6 @@ function TrialInner() {
           sound={false}
         />
       </div>
-
-      {/* Live sandbox Wisdom readout */}
-      <div className="mt-3 flex items-center gap-3 text-xs text-muted-foreground">
-        <span className="inline-flex items-center gap-1.5">
-          <WisdomStar size={15} />
-          <span className="font-sans font-bold tabular-nums text-foreground">
-            {stats.xp_total}
-          </span>
-          Wisdom
-        </span>
-        <span className="inline-flex items-center gap-1.5">
-          <Flame className="size-3.5 text-orange-500" />
-          Keep your Flame alive daily
-        </span>
-      </div>
     </>
   )
 }
@@ -87,7 +67,7 @@ export function TrialDemo() {
       layout="mockup-left"
       bgClass="bg-background"
     >
-      <DemoEconomyProvider initialStats={{ xp_total: 340 }}>
+      <DemoEconomyProvider>
         <DemoFrame ariaLabel="Interactive Trial demonstration" hint="Answer it">
           <TrialInner />
         </DemoFrame>

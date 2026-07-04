@@ -44,7 +44,6 @@ export default function CreateClassroomPage() {
   const [subject, setSubject] = useState("")
   const [gradeLevel, setGradeLevel] = useState("")
   const [maxStudents, setMaxStudents] = useState(35)
-  const [leaderboardEnabled, setLeaderboardEnabled] = useState(true)
   const [creating, setCreating] = useState(false)
   const [createdCode, setCreatedCode] = useState<string | null>(null)
   const [createdId, setCreatedId] = useState<string | null>(null)
@@ -68,7 +67,6 @@ export default function CreateClassroomPage() {
         subject: subject || undefined,
         gradeLevel: gradeLevel || undefined,
         maxStudents,
-        leaderboardEnabled,
       })
 
       if (!result.ok) {
@@ -83,7 +81,7 @@ export default function CreateClassroomPage() {
     } finally {
       setCreating(false)
     }
-  }, [name, description, subject, gradeLevel, maxStudents, leaderboardEnabled, user])
+  }, [name, description, subject, gradeLevel, maxStudents, user])
 
   // Success state — show join code
   if (createdCode && createdId) {
@@ -239,17 +237,6 @@ export default function CreateClassroomPage() {
             className="w-24"
           />
         </div>
-
-        {/* Leaderboard Toggle */}
-        <label className="flex items-center gap-3 cursor-pointer">
-          <input
-            type="checkbox"
-            checked={leaderboardEnabled}
-            onChange={(e) => setLeaderboardEnabled(e.target.checked)}
-            className="size-4 rounded border-border"
-          />
-          <span className="text-sm">Enable class leaderboard</span>
-        </label>
 
         {error && <p className="text-sm text-red-500">{error}</p>}
 

@@ -19,7 +19,7 @@ import { useEffect, useMemo, useState, useSyncExternalStore } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import {
-  Flame, Heart, Zap, BookOpen, Trophy, Clock,
+  Flame, Zap, BookOpen, Trophy, Clock,
   ChevronRight, Star, Check, Sparkles, AlertTriangle,
   TrendingUp,
 } from "lucide-react"
@@ -29,7 +29,6 @@ import { getBooks, getFeaturedBooks } from "@/lib/content"
 import { TRADITION_COLORS } from "@/components/tome/book-card"
 import { ClassicsCover } from "@/components/tome/ClassicsCover"
 import { AuthorLink } from "@/components/tome/author-link"
-import { springs } from "@/lib/design-tokens"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { NumberTicker } from "@/components/ui/number-ticker"
 import { AnimatedCircularProgressBar } from "@/components/ui/animated-circular-progress-bar"
@@ -181,7 +180,6 @@ function StudentDashboard() {
   // only from a real, seeded account — never from browser localStorage.
   const {
     stats,
-    rank,
     dailyGoalMet,
     continueReading,
     completedCount,
@@ -251,8 +249,7 @@ function StudentDashboard() {
   const isFresh =
     inProgress.length === 0 &&
     completedCount === 0 &&
-    recentActivity.length === 0 &&
-    stats.xp_total === 0
+    recentActivity.length === 0
   const streakAtRisk = streak > 0 && stats.daily_progress_minutes < 5 // hasn't read today
 
   // Reason tags for recommended books
@@ -286,25 +283,6 @@ function StudentDashboard() {
                 {now
                   ? now.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" })
                   : "Your reading journey continues"}
-              </p>
-            </div>
-            <div className="shrink-0 text-right">
-              <p className="text-[11px] text-muted-foreground">{rank.rank.name}</p>
-              <p className="text-lg font-bold tracking-tight" style={{ color: "#6366F1" }}>
-                {stats.xp_total} Wisdom
-              </p>
-              <div className="h-1.5 w-24 bg-muted rounded-full overflow-hidden mt-1">
-                <motion.div
-                  className="h-full rounded-full bg-[#6366F1]"
-                  initial={{ width: 0 }}
-                  animate={{ width: `${rank.pct}%` }}
-                  transition={springs.gentle}
-                />
-              </div>
-              <p className="text-[9px] text-muted-foreground/60 mt-0.5">
-                {rank.next
-                  ? `${rank.wisdomToNext} Wisdom to ${rank.next.name}`
-                  : "Highest rank reached"}
               </p>
             </div>
           </div>
@@ -491,7 +469,7 @@ function StudentDashboard() {
 
         {/* ── 3. Stats Row ───────────────────────── */}
         <BlurFade delay={0.12} inView>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div className="grid grid-cols-2 gap-3">
             {/* Daily Goal ring */}
             <div className="rounded-xl border border-border bg-card p-4 flex flex-col items-center justify-center gap-1.5">
               <AnimatedCircularProgressBar
@@ -519,35 +497,6 @@ function StudentDashboard() {
               </div>
               <p className="text-[10px] font-medium text-muted-foreground">Day Flame</p>
               <p className="text-[9px] text-muted-foreground/60">Best: {stats.longest_streak}</p>
-            </div>
-
-            {/* Total Wisdom */}
-            <div className="rounded-xl border border-border bg-card p-4 flex flex-col items-center justify-center gap-0.5">
-              <div className="flex items-center gap-1.5">
-                <Sparkles className="size-4 text-[#6366F1] shrink-0" />
-                <NumberTicker value={stats.xp_total} className="font-serif text-2xl font-bold tabular-nums text-[#6366F1]" />
-              </div>
-              <p className="text-[10px] font-medium text-muted-foreground">Total Wisdom</p>
-              <p className="text-[9px] text-muted-foreground/60">Wisdom earned</p>
-            </div>
-
-            {/* Hearts */}
-            <div className="rounded-xl border border-border bg-card p-4 flex flex-col items-center justify-center gap-0.5">
-              <div className="flex gap-1 mb-0.5">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Heart
-                    key={i}
-                    className={cn(
-                      "size-4 transition-colors",
-                      i < stats.hearts
-                        ? "fill-rose-500 text-rose-500"
-                        : "text-muted-foreground/20"
-                    )}
-                  />
-                ))}
-              </div>
-              <p className="text-[10px] font-medium text-muted-foreground">{stats.hearts}/5 Hearts</p>
-              <p className="text-[9px] text-muted-foreground/60">{stats.coins} coins</p>
             </div>
           </div>
         </BlurFade>
@@ -645,11 +594,6 @@ function StudentDashboard() {
               <span className="inline-flex items-center gap-1">
                 <Flame className="size-3.5" style={{ color: "var(--flame-streak)" }} />
                 {streak} day streak
-              </span>
-              <span className="text-muted-foreground/40">·</span>
-              <span className="inline-flex items-center gap-1">
-                <Zap className="size-3.5" style={{ color: "var(--codex-primary)" }} />
-                {stats.xp_total} Wisdom
               </span>
             </div>
           </div>

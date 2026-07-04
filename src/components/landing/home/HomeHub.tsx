@@ -171,7 +171,7 @@ function AnswerQuizzes() {
     >
       <div className="mx-auto max-w-md overflow-hidden rounded-xl border border-border bg-card">
         <div className="h-[440px]">
-          <DemoEconomyProvider initialStats={{ xp_total: 120 }}>
+          <DemoEconomyProvider>
             <QuestionCard
               key={`${question.id}-${round}`}
               question={question}

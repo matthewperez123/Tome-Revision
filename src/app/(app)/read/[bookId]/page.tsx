@@ -60,6 +60,8 @@ import { CanticleHero } from "@/components/reader/canticle-hero"
 import { ReaderHighlights } from "@/components/reader/reader-highlights"
 import { ReaderPresenceRoom, ReaderPresenceAvatars } from "@/components/reader/reader-presence"
 import { useAuth } from "@/hooks/use-auth"
+import { autoFinalizeReadingForBook } from "@/lib/actions/grades"
+import { RUBRIC } from "@/lib/semester-plan/rubric"
 import { useEntitlement } from "@/hooks/use-entitlement"
 import { canReadBook } from "@/lib/stripe/entitlements"
 import { PaywallGate } from "@/components/pricing/PaywallGate"
@@ -209,9 +211,18 @@ export default function ReaderPage() {
   const [sidebarOpen, setSidebarOpen] = useState(true)
   // Classroom context (?classroom=<id>) scopes live presence to the class room.
   const [classroomId, setClassroomId] = useState<string | null>(null)
+  // Reading-assignment context (?assignment=<id>) drives the assignment ribbon
+  // and auto-completion. Meta is fetched for the ribbon copy.
+  const [assignmentId, setAssignmentId] = useState<string | null>(null)
+  const [assignmentMeta, setAssignmentMeta] = useState<{
+    title: string
+    rangeEnd: number | null
+  } | null>(null)
+  const [ribbonDismissed, setRibbonDismissed] = useState(false)
+  const [assignmentDone, setAssignmentDone] = useState(false)
 
   // ── Entitlement gate (readers only; teachers/students unaffected) ──
-  const { role } = useAuth()
+  const { role, user } = useAuth()
   const { tier, loading: entitlementLoading } = useEntitlement()
 
   // ── Reading preferences (dependency-free store, localStorage + Supabase) ──
@@ -418,9 +429,55 @@ export default function ReaderPage() {
       // Classroom context for scoping live co-reader presence to a class room.
       const classroomParam = search.get("classroom")?.trim()
       if (classroomParam) setClassroomId(classroomParam)
+      // Reading-assignment context — drives the ribbon + auto-completion.
+      const assignmentParam = search.get("assignment")?.trim()
+      if (assignmentParam) setAssignmentId(assignmentParam)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [bookId])
+
+  // Fetch assignment meta for the ribbon (title + assigned chapter range).
+  useEffect(() => {
+    if (!assignmentId) return
+    let cancelled = false
+    ;(async () => {
+      const { data } = await supabase
+        .from("assignments")
+        .select("title, chapter_range_end, chapter_range_start, status")
+        .eq("id", assignmentId)
+        .maybeSingle<{
+          title: string
+          chapter_range_end: number | null
+          chapter_range_start: number | null
+          status: string
+        }>()
+      if (cancelled || !data || data.status !== "active") return
+      setAssignmentMeta({
+        title: data.title,
+        rangeEnd: data.chapter_range_end ?? data.chapter_range_start ?? null,
+      })
+    })()
+    return () => {
+      cancelled = true
+    }
+  }, [assignmentId])
+
+  // Auto-complete reading assignments as the student's furthest chapter
+  // advances. Server-side derivation mirrors the classroom_gradebook rule and
+  // writes a full-points grade when the assigned range is covered. Debounced so
+  // page-turns within a chapter don't spam the action; runs for students only.
+  useEffect(() => {
+    if (role !== "student" || !user) return
+    const t = setTimeout(() => {
+      void autoFinalizeReadingForBook(bookId, currentChapter).then((res) => {
+        if (res.ok && res.data.finalized > 0) {
+          setAssignmentDone(true)
+          toast.success("Reading assignment complete", { duration: 2500 })
+        }
+      })
+    }, 1500)
+    return () => clearTimeout(t)
+  }, [role, user, bookId, currentChapter])
 
   // Load chapter HTML on demand — static file first, Supabase fallback
   useEffect(() => {
@@ -907,19 +964,12 @@ export default function ReaderPage() {
     }
   }, [bookId, currentChapter, chapters, completeChapter, handleChapterSelect])
 
-  const handleQuizPass = useCallback((xpEarned: number, coinsEarned: number, correct: number, total: number) => {
+  const handleQuizPass = useCallback((correct: number, total: number) => {
     const totalCount    = chapters.length || 1
     const isLastChapter = currentChapter === totalCount - 1
     const chapterData   = (chapters[currentChapter] ?? { id: `ch-${currentChapter}`, title: getUnitNumber(structuralUnitType, 1) }) as { id: string; title: string }
 
-    // Trial Wisdom is NO LONGER minted client-side. The server (record_trial_result)
-    // is the sole authority: it computes the Wisdom from the tier rate × correct
-    // answers, writes quiz_results, and awards user_stats. We only dispatch the
-    // separate chapter/book completion bonuses locally.
-    dispatchEconomy({ type: "chapter_complete" })
-    if (isLastChapter) dispatchEconomy({ type: "book_complete" })
-
-    completeChapter(bookId, currentChapter, xpEarned)
+    completeChapter(bookId, currentChapter, 0)
     const scorePct = total > 0 ? Math.round((correct / total) * 100) : 0
     saveQuizResult(bookId, {
       chapterId:       chapterData.id,
@@ -927,13 +977,13 @@ export default function ReaderPage() {
       score:           scorePct,
       totalQuestions:  total,
       passed:          true,
-      xpEarned,
+      xpEarned:        0,
       completedAt:     new Date().toISOString(),
     })
 
-    // Authoritative server award. The route recomputes Wisdom itself (ignoring any
-    // client number) and returns the reconciled user_stats row, which we sync into
-    // the economy display. Guests (no session) get a 401 and keep local progress.
+    // Authoritative server record. The route writes quiz_results and returns the
+    // reconciled user_stats row, which we sync into the economy display. Guests
+    // (no session) get a 401 and keep local progress.
     void fetch("/api/progress/quiz", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -954,12 +1004,12 @@ export default function ReaderPage() {
     const bookTitle = book?.title ?? bookId
     notifyChapterCompleted(bookTitle, chapterData.title, bookId, isLastChapter ? undefined : currentChapter + 1, getUnitLabel(structuralUnitType))
     if (isLastChapter) {
-      notifyBookCompleted(bookTitle, bookId, xpEarned)
+      notifyBookCompleted(bookTitle, bookId)
     }
 
     setShowQuizOverlay(false)
     if (!isLastChapter) setTimeout(() => handleChapterSelect(currentChapter + 1), 300)
-  }, [bookId, currentChapter, chapters, selectedDifficulty, dispatchEconomy, syncStats, completeChapter, saveQuizResult, handleChapterSelect])
+  }, [bookId, currentChapter, chapters, selectedDifficulty, syncStats, completeChapter, saveQuizResult, handleChapterSelect])
 
 
   // Keyboard navigation (scroll mode only — PaginatedReader owns keyboard in capture phase)
@@ -1077,7 +1127,6 @@ export default function ReaderPage() {
           chapterIndex={currentChapter}
           unitDisplay={unitDisplay}
           questions={trialQuestions}
-          hearts={stats.hearts}
           isOpen={showQuizOverlay}
           onPass={handleQuizPass}
           onFail={() => setShowQuizOverlay(false)}
@@ -1132,6 +1181,51 @@ export default function ReaderPage() {
             chapterIndex={currentChapter}
             surfaceRef={readerSurfaceRef}
           >
+          {/* Reading-assignment ribbon (dismissible) */}
+          {assignmentMeta && !ribbonDismissed && (
+            <div
+              className="flex shrink-0 items-center gap-2.5 px-4 py-2 text-sm"
+              style={{
+                backgroundColor: assignmentDone
+                  ? `${RUBRIC.verdigris}14`
+                  : `${RUBRIC.lapis}12`,
+                borderBottom: `1px solid ${
+                  assignmentDone ? `${RUBRIC.verdigris}33` : `${RUBRIC.lapis}26`
+                }`,
+              }}
+            >
+              <BookCheck
+                className="size-4 shrink-0"
+                style={{ color: assignmentDone ? RUBRIC.verdigris : RUBRIC.lapis }}
+              />
+              <span className="min-w-0 flex-1 truncate">
+                {assignmentDone ? (
+                  <span style={{ color: RUBRIC.verdigris }} className="font-medium">
+                    Reading complete — {assignmentMeta.title}
+                  </span>
+                ) : (
+                  <>
+                    <span className="font-medium">Assignment:</span>{" "}
+                    {assignmentMeta.title}
+                    {assignmentMeta.rangeEnd != null &&
+                      chapters[assignmentMeta.rangeEnd] && (
+                        <span className="text-muted-foreground">
+                          {" "}· through “{chapters[assignmentMeta.rangeEnd].title}”
+                        </span>
+                      )}
+                  </>
+                )}
+              </span>
+              <button
+                type="button"
+                onClick={() => setRibbonDismissed(true)}
+                className="shrink-0 rounded-md px-1.5 py-0.5 text-xs text-muted-foreground hover:bg-black/5 hover:text-foreground dark:hover:bg-white/10"
+                aria-label="Dismiss assignment banner"
+              >
+                Dismiss
+              </button>
+            </div>
+          )}
           {/* Reader Toolbar */}
           <div
             className="sticky top-0 z-20 flex shrink-0 items-center justify-between border-b border-border px-4 py-1.5 backdrop-blur-sm bg-background/90"

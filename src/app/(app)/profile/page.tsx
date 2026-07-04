@@ -71,7 +71,7 @@ export default function ProfilePage() {
   const router = useRouter()
   const { user, profile, isDemoMode, signOut, role } = useAuth()
   const { tier } = useEntitlement()
-  const { stats, rank } = useEconomy()
+  const { stats } = useEconomy()
 
   const [billingLoading, setBillingLoading] = useState(false)
   async function openBillingPortal() {
@@ -122,7 +122,6 @@ export default function ProfilePage() {
     : null
 
   // ── Real stats (economy + reading progress) ────
-  const totalXp = stats.xp_total
   const streak = stats.current_streak
   const bestStreak = stats.longest_streak
 
@@ -206,35 +205,9 @@ export default function ProfilePage() {
               {accountEmail && (
                 <p className="text-sm text-muted-foreground mt-0.5">{accountEmail}</p>
               )}
-              <p className="text-sm font-medium mt-1" style={{ color: accentColor }}>
-                {rank.rank.name}
-                {isDemoMode && (
-                  <span className="ml-2 text-[10px] text-muted-foreground/70">· demo mode</span>
-                )}
-              </p>
-
-              {/* Wisdom bar */}
-              <div className="mt-3 max-w-xs mx-auto sm:mx-0">
-                <div className="flex items-center justify-between text-[11px] text-muted-foreground mb-1">
-                  <span>
-                    {rank.next
-                      ? `${rank.wisdomIntoRank.toLocaleString()} / ${rank.wisdomForNext.toLocaleString()} Wisdom`
-                      : `${totalXp.toLocaleString()} Wisdom`}
-                  </span>
-                  {rank.next && (
-                    <span>→ {rank.next.name}</span>
-                  )}
-                </div>
-                <div className="h-2 bg-muted rounded-full overflow-hidden">
-                  <motion.div
-                    className="h-full rounded-full"
-                    style={{ backgroundColor: accentColor }}
-                    initial={{ width: 0 }}
-                    animate={{ width: `${rank.pct}%` }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                  />
-                </div>
-              </div>
+              {isDemoMode && (
+                <p className="text-[10px] text-muted-foreground/70 mt-1">demo mode</p>
+              )}
 
               {memberSince && (
                 <p className="text-[11px] text-muted-foreground/60 mt-2">Member since {memberSince}</p>
@@ -245,9 +218,8 @@ export default function ProfilePage() {
 
         {/* ── 2. Stats Row ──────────────────────── */}
         <BlurFade delay={0.1} inView>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {[
-              { label: "Total Wisdom",      value: totalXp.toLocaleString(),       icon: Sparkles, color: "#F59E0B", sub: "Wisdom" },
               { label: "Day Streak",         value: streak,                         icon: Flame,    color: "#F97316", sub: `Best: ${bestStreak}` },
               { label: "Books Started",      value: booksStarted,                   icon: BookOpen, color: "#0EA5E9", sub: "in library" },
               { label: "Chapters Done",      value: totalChapters,                  icon: Bookmark, color: "#8B5CF6", sub: "completed" },
@@ -281,8 +253,8 @@ export default function ProfilePage() {
                   </h2>
                 </div>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-                  All 1,200+ books, unlimited Virgil conversations, advanced
-                  Trials, and unlimited Hearts. Starts with a 7-day free trial.
+                  All 1,200+ books, unlimited Virgil conversations, and advanced
+                  Trials. Starts with a 7-day free trial.
                 </p>
               </div>
               <div className="flex shrink-0 flex-col items-stretch gap-2 sm:items-end">
@@ -504,15 +476,11 @@ export default function ProfilePage() {
                 </div>
 
                 {/* User name */}
-                <p className="font-serif text-white text-2xl font-bold mb-1">{displayName}</p>
-                <p className="text-[#D4A04C]/70 text-sm mb-6">
-                  {rank.rank.name} · Level {rank.rank.level}
-                </p>
+                <p className="font-serif text-white text-2xl font-bold mb-6">{displayName}</p>
 
                 {/* Stats grid */}
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
                   {[
-                    { label: "Wisdom", value: totalXp.toLocaleString(), icon: Sparkles },
                     { label: "Streak",  value: `${streak} days`,               icon: Flame },
                     { label: "Books",   value: `${booksStarted}`,              icon: BookOpen },
                     { label: "Chapters",value: `${totalChapters}`,             icon: Bookmark },

@@ -3,12 +3,11 @@
 import { useEffect, useState } from "react"
 import { motion, useReducedMotion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { ChevronRight, Heart } from "lucide-react"
+import { ChevronRight } from "lucide-react"
 import type { QuizDifficulty } from "@/lib/book-progress"
 import { getTierDef } from "@/components/tome/trial-difficulty-cards"
 import { DifficultyBars } from "@/components/trials/DifficultyBars"
 import { trialDurations } from "@/lib/animations/trial-tokens"
-import { MAX_HEARTS } from "@/lib/economy"
 
 /**
  * Shown between difficulty selection and the first question. Auto-advances
@@ -18,13 +17,11 @@ export function TrialIntroCard({
   tier,
   unitDisplay,
   questionCount,
-  hearts,
   onBegin,
 }: {
   tier: QuizDifficulty
   unitDisplay: string
   questionCount: number
-  hearts: number
   onBegin: () => void
 }) {
   const reduced = useReducedMotion()
@@ -68,23 +65,6 @@ export function TrialIntroCard({
         <p className="font-serif text-lg text-ink">
           {questionCount} {questionCount === 1 ? "question" : "questions"}
         </p>
-
-        <div className="flex items-center gap-1" aria-label={`${hearts} hearts remaining`}>
-          {Array.from({ length: MAX_HEARTS }).map((_, i) => (
-            <Heart
-              key={i}
-              className="w-4 h-4"
-              style={
-                i < hearts
-                  ? {
-                      fill: "var(--codex-danger)",
-                      color: "var(--codex-danger)",
-                    }
-                  : { fill: "transparent", color: "var(--muted-foreground)" }
-              }
-            />
-          ))}
-        </div>
       </div>
 
       <Button

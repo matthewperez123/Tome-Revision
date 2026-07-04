@@ -18,9 +18,8 @@
 import { useEffect, useState, useCallback, useRef } from "react"
 import { useParams, useRouter } from "next/navigation"
 import { motion, useReducedMotion } from "framer-motion"
-import { Heart, Zap, Trophy, ChevronRight, X, Check, BookOpen, Landmark } from "lucide-react"
+import { Zap, Trophy, ChevronRight, X, Check, BookOpen } from "lucide-react"
 import { supabase } from "@/lib/supabase"
-import { useEconomy } from "@/components/tome/economy-provider"
 import {
   type Quiz,
   type Question,
@@ -28,7 +27,6 @@ import {
   quizReducer,
   getQuizSummary,
   checkAnswer,
-  wisdomForQuestion,
 } from "@/lib/quiz-engine"
 import {
   QUESTION_RENDERERS,
@@ -64,7 +62,6 @@ import { TextAnimate } from "@/components/ui/text-animate"
 import { NumberTicker } from "@/components/ui/number-ticker"
 import { Confetti, type ConfettiRef } from "@/components/ui/confetti"
 import { RetroGrid } from "@/components/ui/retro-grid"
-import { PulsatingButton } from "@/components/ui/pulsating-button"
 import { OrbitingCircles } from "@/components/ui/orbiting-circles"
 import { Button } from "@/components/ui/button"
 import { Skeleton } from "@/components/ui/skeleton"
@@ -183,7 +180,6 @@ export default function QuizPage() {
   const params = useParams()
   const router = useRouter()
   const quizId = params.quizId as string
-  const { stats, dispatch: economyDispatch } = useEconomy()
   const confettiRef = useRef<ConfettiRef>(null)
   const startTimeRef = useRef(Date.now())
   const reduced = useReducedMotion() ?? false
@@ -191,7 +187,6 @@ export default function QuizPage() {
   const [loading, setLoading] = useState(true)
   const [quiz, setQuiz] = useState<Quiz | null>(null)
   const [state, setState] = useState<ReturnType<typeof createQuizState> | null>(null)
-  const [heartFlash, setHeartFlash] = useState(false)
   // The question stem to move focus to after a jump (a11y), and a flag so we
   // only steal focus on navigation — not on initial load or on answering.
   const stemRef = useRef<HTMLDivElement>(null)
@@ -239,12 +234,12 @@ export default function QuizPage() {
       })
 
       setQuiz(q)
-      setState({ ...createQuizState(q, questions, stats.hearts), status: "active" })
+      setState({ ...createQuizState(q, questions), status: "active" })
       startTimeRef.current = Date.now()
       setLoading(false)
     }
     fetchQuiz()
-  }, [quizId, stats.hearts])
+  }, [quizId])
 
   // Number key shortcuts for answer selection (1-4)
   useEffect(() => {
@@ -295,7 +290,7 @@ export default function QuizPage() {
       const question = state.questions[state.currentIndex]
       // Grade through the engine so every type (ordering/matching/reflection/
       // tf_with_reason composites, fill_blank accepted-variants, …) is judged
-      // by the same logic that updates score/hearts in the reducer.
+      // by the same logic that updates the score in the reducer.
       const isCorrect = checkAnswer(question, answer)
 
       setState((prev) => {
@@ -308,7 +303,6 @@ export default function QuizPage() {
         }
         return next
       })
-      economyDispatch({ type: isCorrect ? "quiz_correct" : "quiz_wrong" })
 
       if (isCorrect) {
         // Confetti burst
@@ -318,13 +312,9 @@ export default function QuizPage() {
           origin: { y: 0.6 },
           colors: ["#EAB308", "#F59E0B", "#6366F1"],
         })
-      } else {
-        // Heart flash
-        setHeartFlash(true)
-        setTimeout(() => setHeartFlash(false), 600)
       }
     },
-    [state, economyDispatch]
+    [state]
   )
 
   // Single source of truth for the active index — bounds-checked. The strip
@@ -366,51 +356,6 @@ export default function QuizPage() {
   }
 
   const timeTaken = Math.round((Date.now() - startTimeRef.current) / 1000)
-
-  // ── All Hearts Lost ──
-  if (state.status === "complete" && state.hearts === 0) {
-    return (
-      <div className="relative mx-auto max-w-lg px-6 py-16 text-center overflow-hidden">
-        <RetroGrid className="opacity-[0.03]" />
-        <motion.div
-          initial={{ scale: 0.9, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={springs.gentle}
-          className="relative z-10"
-        >
-          <div className="mx-auto flex size-20 items-center justify-center rounded-full bg-[var(--tome-accent)]/10 mb-6">
-            <Landmark className="size-8 text-[#B0A898]" />
-          </div>
-          <h1 className="text-xl font-bold tracking-tight">Don&apos;t give up!</h1>
-          <p className="mt-2 text-sm text-muted-foreground max-w-xs mx-auto">
-            Even the greatest scholars stumbled before mastering the classics. Virgil believes in you.
-          </p>
-          <p className="mt-4 text-xs text-muted-foreground">
-            Score: {getQuizSummary(state).correct}/{getQuizSummary(state).total} · {getQuizSummary(state).xpEarned} XP earned
-          </p>
-          <div className="mt-8">
-            <PulsatingButton
-              onClick={() => {
-                setState({ ...createQuizState(state.quiz, state.questions, 5), status: "active" })
-                setHintsUsedTotal(0)
-                setHintsRemaining(HINT_BUDGET)
-                startTimeRef.current = Date.now()
-              }}
-              className="bg-[var(--tome-accent)]"
-            >
-              Try Again
-            </PulsatingButton>
-          </div>
-          <button
-            onClick={() => router.back()}
-            className="mt-4 text-xs text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Back to book
-          </button>
-        </motion.div>
-      </div>
-    )
-  }
 
   // ── Complete — Perfect Score ──
   if (state.status === "complete") {
@@ -462,7 +407,7 @@ export default function QuizPage() {
 
           <p className="mt-2 text-sm text-muted-foreground">{quiz?.title}</p>
 
-          <div className="mt-8 grid grid-cols-4 gap-3">
+          <div className="mt-8 grid grid-cols-3 gap-3">
             <div className="rounded-xl border border-border bg-card p-3">
               <div className="text-lg font-bold">
                 <NumberTicker value={summary.correct} className="text-lg font-bold" />
@@ -474,13 +419,6 @@ export default function QuizPage() {
               <NumberTicker value={summary.percentage} className="text-lg font-bold" />
               <span className="text-xs text-muted-foreground">%</span>
               <p className="text-[9px] text-muted-foreground mt-0.5">Accuracy</p>
-            </div>
-            <div className="rounded-xl border border-border bg-card p-3">
-              <div className="flex items-center justify-center gap-0.5">
-                <Zap className="size-3.5 text-[var(--tome-accent)]" />
-                <NumberTicker value={summary.xpEarned} className="text-lg font-bold" />
-              </div>
-              <p className="text-[9px] text-muted-foreground mt-0.5">XP</p>
             </div>
             <div className="rounded-xl border border-border bg-card p-3">
               <p className="text-lg font-bold tabular-nums">
@@ -539,24 +477,6 @@ export default function QuizPage() {
             <X className="size-5" />
           </button>
           <div className="flex items-center gap-3">
-            <div aria-live="polite" aria-label={`${state.hearts} hearts remaining`} className={cn("flex gap-0.5 transition-all", heartFlash && "animate-pulse")}>
-              {Array.from({ length: 5 }).map((_, i) => (
-                <motion.div
-                  key={i}
-                  animate={heartFlash && i === state.hearts ? { scale: [1, 0.5, 0], opacity: [1, 0.5, 0] } : {}}
-                  transition={{ duration: 0.4 }}
-                >
-                  <Heart
-                    className={cn(
-                      "size-4 transition-colors",
-                      i < state.hearts
-                        ? "fill-[var(--tome-red)] text-[var(--tome-red)]"
-                        : "text-muted-foreground/20"
-                    )}
-                  />
-                </motion.div>
-              ))}
-            </div>
             <span className="text-xs text-muted-foreground tabular-nums">
               {state.currentIndex + 1}/{state.questions.length}
             </span>
@@ -694,9 +614,6 @@ export default function QuizPage() {
                     currentResult === "correct" ? "text-[var(--codex-success)]" : "text-[var(--codex-danger)]"
                   )}>
                     {currentResult === "correct" ? "Correct!" : "Incorrect"}
-                    {currentResult === "correct" && (
-                      <span className="ml-2 text-muted-foreground font-normal">+{wisdomForQuestion(question)} XP</span>
-                    )}
                   </p>
                   {question.explanation && (
                     <p className="mt-1 text-xs text-muted-foreground">{question.explanation}</p>
