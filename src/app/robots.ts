@@ -33,7 +33,6 @@ export default function robots(): MetadataRoute.Robots {
         "/achievements",
         "/shop",
         "/family",
-        "/guided",
         "/join",
         "/read",
         "/reading",

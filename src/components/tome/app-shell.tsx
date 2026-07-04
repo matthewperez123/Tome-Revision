@@ -9,7 +9,6 @@ import { AppSidebar } from "@/components/tome/app-sidebar"
 import { TopBar } from "@/components/tome/top-bar"
 import { PageTransition } from "@/components/tome/page-transition"
 import { ErrorBoundary } from "@/components/tome/error-boundary"
-import { VirgilWrapper } from "@/components/tome/virgil/VirgilWrapper"
 import { MobileDock } from "@/components/tome/mobile-dock"
 import { Toaster } from "@/components/ui/sonner"
 import { IntercomMessenger } from "@/components/support/IntercomMessenger"
@@ -57,7 +56,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     <TomeEconomyProvider>
     <BookProgressProvider>
     <TooltipProvider>
-    <VirgilWrapper>
       <SidebarProvider defaultOpen={false}>
         <div className="flex h-svh w-full flex-col overflow-hidden">
           <TopBar />
@@ -72,7 +70,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           <IntercomMessenger />
         </div>
       </SidebarProvider>
-    </VirgilWrapper>
     </TooltipProvider>
     </BookProgressProvider>
     </TomeEconomyProvider>

@@ -8,7 +8,6 @@ import { TeacherControlsBar } from "./teacher-controls-bar"
 import { SessionSummaryView } from "./session-summary"
 import { MessagingPanel } from "./messaging-panel"
 import { TeacherAnnotationReview } from "./annotations/teacher-annotation-review"
-import { VirgilSurface } from "@/components/virgil/VirgilSurface"
 import { Loader2, MessageSquareText } from "lucide-react"
 import Link from "next/link"
 import {
@@ -41,7 +40,6 @@ export function SessionMonitorDashboard({ sessionId }: SessionMonitorDashboardPr
   const [stations, setStations] = useState<Station[]>([])
   const [selectedStudentIds, setSelectedStudentIds] = useState<Set<string>>(new Set())
   const [showAnnotations, setShowAnnotations] = useState(false)
-  const [rightTab, setRightTab] = useState<"messages" | "virgil">("messages")
   const simulateRef = useRef<ReturnType<typeof setInterval>>(undefined)
 
   // Load session
@@ -303,8 +301,6 @@ export function SessionMonitorDashboard({ sessionId }: SessionMonitorDashboardPr
 
   // Active / Paused state
   const hasStations = stations.length > 0
-  // Virgil needs real server auth for /api/virgil — demo sessions can't reach it.
-  const canUseVirgil = !isDemoMode && !!user
 
   return (
     <div className="px-4 pt-4">
@@ -353,72 +349,20 @@ export function SessionMonitorDashboard({ sessionId }: SessionMonitorDashboardPr
           </div>
         </div>
 
-        {/* Right rail — tabbed: Messages / Ask Virgil */}
+        {/* Right rail — messaging */}
         <div className="hidden w-80 shrink-0 lg:block">
           <div
             className="sticky top-4 flex h-[calc(100vh-8rem)] flex-col overflow-hidden rounded-xl border"
             style={{ borderColor: "rgba(128,128,128,0.12)" }}
           >
-            {/* Tab strip — only show Virgil tab when real auth backs /api/virgil */}
-            {canUseVirgil && (
-              <div
-                className="flex shrink-0 items-center gap-1 border-b px-2 py-1.5"
-                style={{ borderColor: "rgba(128,128,128,0.12)" }}
-              >
-                <button
-                  type="button"
-                  onClick={() => setRightTab("messages")}
-                  className="flex-1 rounded-lg px-2 py-1.5 text-xs font-semibold transition-colors"
-                  style={
-                    rightTab === "messages"
-                      ? { backgroundColor: "var(--tome-indigo, #6366F1)", color: "#fff" }
-                      : { color: "var(--tome-ink-soft, #6b7280)" }
-                  }
-                >
-                  Messages
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setRightTab("virgil")}
-                  className="flex flex-1 items-center justify-center gap-1.5 rounded-lg px-2 py-1.5 text-xs font-semibold transition-colors"
-                  style={
-                    rightTab === "virgil"
-                      ? { color: "#fff", backgroundImage: "linear-gradient(110deg,#6366F1 0%,#8B5CF6 35%,#06B6D4 70%,#6366F1 100%)" }
-                      : { color: "var(--tome-ink-soft, #6b7280)" }
-                  }
-                >
-                  <span
-                    className="flex h-4 w-4 items-center justify-center rounded-full font-serif text-[10px] font-bold leading-none text-white"
-                    style={{ backgroundImage: "linear-gradient(135deg,#E6C76E 0%,#C8A24B 55%,#9C7A2E 100%)" }}
-                    aria-hidden
-                  >
-                    V
-                  </span>
-                  Ask Virgil
-                </button>
-              </div>
-            )}
-
-            {/* Panel body */}
             <div className="min-h-0 flex-1">
-              {canUseVirgil && rightTab === "virgil" ? (
-                <VirgilSurface
-                  surface={{ kind: "guided-session", sessionId }}
-                  dense
-                  hideHeader
-                  className="h-full rounded-none border-0"
-                  placeholder="Ask Virgil about this session…"
-                  hint="Generate discussion prompts, summarize the room, or steer a struggling student."
-                />
-              ) : (
-                <MessagingPanel
-                  sessionId={sessionId}
-                  participants={participants}
-                  messages={messages}
-                  selectedStudentIds={selectedStudentIds.size > 0 ? selectedStudentIds : undefined}
-                  onSend={handleSendTypedMessage}
-                />
-              )}
+              <MessagingPanel
+                sessionId={sessionId}
+                participants={participants}
+                messages={messages}
+                selectedStudentIds={selectedStudentIds.size > 0 ? selectedStudentIds : undefined}
+                onSend={handleSendTypedMessage}
+              />
             </div>
           </div>
         </div>
