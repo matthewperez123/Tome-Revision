@@ -1142,12 +1142,15 @@ export type Database = {
           classroom_id: string | null
           color: string
           created_at: string
-          end_offset: number
+          end_offset: number | null
           id: string
+          kind: string
+          label: string | null
           note: string | null
-          selected_text: string
+          paragraph_anchor: string | null
+          selected_text: string | null
           shared: boolean
-          start_offset: number
+          start_offset: number | null
           updated_at: string
           user_id: string
         }
@@ -1157,12 +1160,15 @@ export type Database = {
           classroom_id?: string | null
           color?: string
           created_at?: string
-          end_offset: number
+          end_offset?: number | null
           id?: string
+          kind?: string
+          label?: string | null
           note?: string | null
-          selected_text: string
+          paragraph_anchor?: string | null
+          selected_text?: string | null
           shared?: boolean
-          start_offset: number
+          start_offset?: number | null
           updated_at?: string
           user_id: string
         }
@@ -1172,12 +1178,15 @@ export type Database = {
           classroom_id?: string | null
           color?: string
           created_at?: string
-          end_offset?: number
+          end_offset?: number | null
           id?: string
+          kind?: string
+          label?: string | null
           note?: string | null
-          selected_text?: string
+          paragraph_anchor?: string | null
+          selected_text?: string | null
           shared?: boolean
-          start_offset?: number
+          start_offset?: number | null
           updated_at?: string
           user_id?: string
         }
@@ -1839,6 +1848,8 @@ export type Database = {
           book_id: string
           chapter_index: number
           page: number | null
+          paragraph_anchor: string | null
+          percent: number | null
           scroll_ratio: number | null
           updated_at: string
           user_id: string
@@ -1847,6 +1858,8 @@ export type Database = {
           book_id: string
           chapter_index?: number
           page?: number | null
+          paragraph_anchor?: string | null
+          percent?: number | null
           scroll_ratio?: number | null
           updated_at?: string
           user_id: string
@@ -1855,8 +1868,34 @@ export type Database = {
           book_id?: string
           chapter_index?: number
           page?: number | null
+          paragraph_anchor?: string | null
+          percent?: number | null
           scroll_ratio?: number | null
           updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      shelf_items: {
+        Row: {
+          book_id: string
+          created_at: string
+          id: string
+          shelf: string
+          user_id: string
+        }
+        Insert: {
+          book_id: string
+          created_at?: string
+          id?: string
+          shelf: string
+          user_id: string
+        }
+        Update: {
+          book_id?: string
+          created_at?: string
+          id?: string
+          shelf?: string
           user_id?: string
         }
         Relationships: []
