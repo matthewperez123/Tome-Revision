@@ -1,6 +1,6 @@
 "use client"
 
-import { use, useEffect, useState, useCallback } from "react"
+import { use, useEffect, useRef, useState, useCallback } from "react"
 import Link from "next/link"
 import { ChevronLeft, BookOpen, Brain, MessageCircle, PenTool, Highlighter, Check, Send } from "lucide-react"
 import { toast } from "sonner"
@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
 import { startAssignment, submitAssignment, saveDraft } from "@/lib/actions/assignments"
+import { RUBRIC } from "@/lib/semester-plan/rubric"
 
 const TYPE_ICONS: Record<string, typeof BookOpen> = {
   chapter_read: BookOpen,
@@ -58,6 +59,9 @@ export default function AssignmentDetailPage({
   const [submitting, setSubmitting] = useState(false)
   const [savingDraft, setSavingDraft] = useState(false)
   const [loading, setLoading] = useState(true)
+  const [confirmingSubmit, setConfirmingSubmit] = useState(false)
+  const [autosave, setAutosave] = useState<"idle" | "saving" | "saved">("idle")
+  const lastSavedRef = useRef<string>("")
 
   useEffect(() => {
     if (!user) return
@@ -85,6 +89,7 @@ export default function AssignmentDetailPage({
         if (sub) {
           setSubmission(sub)
           setResponseText(sub.response_text ?? "")
+          lastSavedRef.current = sub.response_text ?? ""
         }
       }
 
@@ -105,10 +110,12 @@ export default function AssignmentDetailPage({
       responseText,
     })
     setSubmitting(false)
+    setConfirmingSubmit(false)
     if (!res.ok) {
       toast.error(res.error)
       return
     }
+    lastSavedRef.current = responseText
     toast.success("Submitted")
     setSubmission((prev) => ({
       ...(prev ?? { id: res.data.submissionId, score: null, feedback: null, submitted_at: null }),
@@ -127,6 +134,7 @@ export default function AssignmentDetailPage({
       toast.error(res.error)
       return
     }
+    lastSavedRef.current = responseText
     toast.success("Draft saved")
     setSubmission((prev) => ({
       ...(prev ?? { id: res.data.submissionId, score: null, feedback: null, submitted_at: null }),
@@ -135,6 +143,28 @@ export default function AssignmentDetailPage({
       submitted_at: prev?.submitted_at ?? null,
     }))
   }, [user, assignment, responseText])
+
+  // Autosave: after ~10s idle, quietly persist the draft. Never runs once
+  // submitted/graded. Skips when nothing changed since the last save.
+  useEffect(() => {
+    if (!assignment || !user || role !== "student") return
+    if (assignment.type !== "essay" && assignment.type !== "discussion") return
+    const isDone =
+      submission?.status === "submitted" || submission?.status === "graded"
+    if (isDone) return
+    if (responseText === lastSavedRef.current) return
+    const t = setTimeout(async () => {
+      setAutosave("saving")
+      const res = await saveDraft({ assignmentId: assignment.id, responseText })
+      if (res.ok) {
+        lastSavedRef.current = responseText
+        setAutosave("saved")
+      } else {
+        setAutosave("idle")
+      }
+    }, 10000)
+    return () => clearTimeout(t)
+  }, [responseText, assignment, user, role, submission?.status])
 
   if (loading) {
     return (
@@ -158,6 +188,12 @@ export default function AssignmentDetailPage({
   const wordCount = responseText.split(/\s+/).filter(Boolean).length
   const minWords = assignment.essay_word_min ?? 0
   const maxWords = assignment.essay_word_max
+  const withinBounds =
+    wordCount >= minWords && (maxWords == null || wordCount <= maxWords)
+  // Gold once the response sits inside the word window; vermilion when it's
+  // short or over. Muted before the writer has begun.
+  const countColor =
+    wordCount === 0 ? undefined : withinBounds ? RUBRIC.goldLeaf : RUBRIC.vermilion
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-8">
@@ -216,13 +252,14 @@ export default function AssignmentDetailPage({
             <Link
               href={
                 assignment.chapter_range_start != null
-                  ? `/read/${assignment.book_id}?ch=${assignment.chapter_range_start}&classroom=${classroomId}`
-                  : `/read/${assignment.book_id}?classroom=${classroomId}`
+                  ? `/read/${assignment.book_id}?ch=${assignment.chapter_range_start}&classroom=${classroomId}&assignment=${assignment.id}`
+                  : `/read/${assignment.book_id}?classroom=${classroomId}&assignment=${assignment.id}`
               }
               onClick={() => {
                 if (role === "student") void startAssignment(assignment.id)
               }}
-              className="mt-2 inline-flex items-center gap-1.5 text-sm text-indigo-600 hover:text-indigo-500"
+              className="mt-2 inline-flex items-center gap-1.5 text-sm"
+              style={{ color: RUBRIC.lapis }}
             >
               <BookOpen className="size-3.5" />
               Open in reader
@@ -314,19 +351,27 @@ export default function AssignmentDetailPage({
           <textarea
             value={responseText}
             onChange={(e) => setResponseText(e.target.value)}
-            placeholder="Write your response here..."
-            rows={8}
+            placeholder="Begin writing…"
+            rows={assignment.type === "essay" ? 16 : 8}
             disabled={isSubmitted}
-            className="mt-3 w-full rounded-xl border bg-card p-4 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring disabled:opacity-60"
+            className="mt-3 w-full rounded-xl border bg-card p-5 font-serif text-base leading-relaxed placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring disabled:opacity-60"
           />
 
           <div className="mt-2 flex items-center justify-between">
-            <span
-              className={`text-xs ${wordCount < minWords || (maxWords != null && wordCount > maxWords) ? "text-red-500" : "text-muted-foreground"}`}
-            >
-              {wordCount} words
-            </span>
-            {!isSubmitted && (
+            <div className="flex items-center gap-3">
+              <span
+                className="text-xs font-medium"
+                style={countColor ? { color: countColor } : undefined}
+              >
+                {wordCount} words
+              </span>
+              {!isSubmitted && autosave !== "idle" && (
+                <span className="text-[11px] text-muted-foreground">
+                  {autosave === "saving" ? "Saving…" : "Saved"}
+                </span>
+              )}
+            </div>
+            {!isSubmitted && !confirmingSubmit && (
               <div className="flex items-center gap-2">
                 <Button
                   variant="outline"
@@ -337,21 +382,57 @@ export default function AssignmentDetailPage({
                   {savingDraft ? "Saving..." : "Save draft"}
                 </Button>
                 <Button
-                  onClick={handleSubmit}
+                  onClick={() => setConfirmingSubmit(true)}
                   disabled={!responseText.trim() || submitting}
                   className="gap-1.5"
                 >
                   <Send className="size-3.5" />
-                  {submitting ? "Submitting..." : "Submit"}
+                  Submit
                 </Button>
               </div>
             )}
             {isSubmitted && (
-              <span className="flex items-center gap-1.5 text-sm text-green-600">
+              <span className="flex items-center gap-1.5 text-sm" style={{ color: RUBRIC.verdigris }}>
                 <Check className="size-4" /> Submitted
               </span>
             )}
           </div>
+
+          {/* Submit confirmation — final, so make it deliberate. */}
+          {confirmingSubmit && !isSubmitted && (
+            <div
+              className="mt-3 rounded-xl border p-4"
+              style={{ borderColor: `${RUBRIC.lapis}33`, backgroundColor: `${RUBRIC.lapis}0A` }}
+            >
+              <p className="text-sm font-medium">Submit this response?</p>
+              <p className="mt-0.5 text-xs text-muted-foreground">
+                {assignment.type === "essay" && !withinBounds
+                  ? maxWords != null && wordCount > maxWords
+                    ? `You're over the ${maxWords}-word limit. You can keep editing instead.`
+                    : `You're under the ${minWords}-word minimum. You can keep editing instead.`
+                  : "Once submitted, you won't be able to edit."}
+              </p>
+              <div className="mt-3 flex items-center gap-2">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setConfirmingSubmit(false)}
+                  disabled={submitting}
+                >
+                  Keep editing
+                </Button>
+                <Button
+                  size="sm"
+                  onClick={handleSubmit}
+                  disabled={submitting}
+                  className="gap-1.5"
+                >
+                  <Send className="size-3.5" />
+                  {submitting ? "Submitting…" : "Confirm submit"}
+                </Button>
+              </div>
+            </div>
+          )}
         </div>
       )}
     </div>
