@@ -61,3 +61,21 @@ Palette: lapis, vermilion, gold, tyrian, verdigris. No new fonts, no new accents
 LIVEBLOCKS: auth at /api/liveblocks-auth; rooms 'classroom:{classroomId}' (roster presence) and
 'reader:{bookId}:{classroomId}' (reading presence). Gate room grants with the existing
 user_has_classroom_role(uid, classroom_id, roles[]) helper — reuse, don't reinvent.
+
+## SHIP LEDGER — Phase 2 (2026-07-05, branch ship/phase-1-testable)
+Audit concluded the classroom money-loop is functional end-to-end; the three zeros are because
+the real UI has never been run, NOT broken wiring. ZERO DDL — Phase 2 needs no migration.
+Wired the three code-only gaps found in the audit:
+- rotateJoinCode (src/lib/actions/classrooms.ts) — staff-gated via user_has_classroom_role
+  (owner|co_teacher), collision-retry, updates classrooms.join_code. UI = RefreshCw button in
+  classroom/[id]/manage header beside the code chip.
+- late-joiner backfill (backfillActiveAssignments in classrooms.ts) — joinClassroomByCode now
+  seeds not_started assignment_submissions for already-active classroom-scoped assignments
+  (idempotent upsert on assignment_id,student_id), so a student who joins after publish appears
+  on the teacher roster. group/individual scopes intentionally excluded (fixed target set).
+- duplicateTeacherQuiz (src/lib/actions/teacher-quizzes.ts) — owner-gated, copies quiz + all
+  questions as a fresh draft ("<title> (copy)"). UI = Copy button per row in quiz-builder list.
+VERIFY: tsc clean (only known registry.test.ts / stale library/page noise). STOA AUDIT fails in
+strict mode BUT this is PRE-EXISTING branch state — commit 822dc1a7 (surface sweep) removed
+src/data/stoa-collection.ts, so audit runs manifest-only w/ 294 orphan-painting warnings, 0
+errors. Unrelated to these changes (none touch stoa data). NOT committed, NOT merged, no migration.
