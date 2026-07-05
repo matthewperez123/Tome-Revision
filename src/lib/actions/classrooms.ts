@@ -16,7 +16,7 @@ import {
 } from "./_shared"
 // Classroom join codes are the 6-char uppercase alphanumeric format the student
 // join UI (isValidJoinCode) and invite links expect — NOT the 4-4 group code.
-import { generateJoinCode } from "@/lib/classroom-utils"
+import { generateJoinCode, generateUniqueJoinCode } from "@/lib/classroom-utils"
 import { hasActiveSchoolEntitlement } from "@/lib/entitlements/server"
 
 const Uuid = z.string().uuid()
@@ -465,8 +465,8 @@ export async function archiveClassroom(
 
 /**
  * Rotate a classroom's join code (invalidates the old one — e.g. if a code
- * leaked). Owner/co_teacher only. Generates a fresh unique code with the same
- * collision-retry as createClassroom. Enrolled members are unaffected.
+ * leaked). Owner/co_teacher only. Generates a fresh unique code (throws if it
+ * can't after max attempts). Enrolled members are unaffected.
  */
 export async function rotateJoinCode(
   classroomId: string,
@@ -484,16 +484,14 @@ export async function rotateJoinCode(
     if (!allowed) return fail("Only classroom staff can change the join code.")
 
     const admin = createAdminClient()
-    let joinCode = generateJoinCode()
-    for (let i = 0; i < 5; i++) {
+    const joinCode = await generateUniqueJoinCode(async (code) => {
       const { data: existing } = await admin
         .from("classrooms")
         .select("id")
-        .eq("join_code", joinCode)
+        .eq("join_code", code)
         .maybeSingle()
-      if (!existing) break
-      joinCode = generateJoinCode()
-    }
+      return existing != null
+    })
 
     const { error } = await supabase
       .from("classrooms")
