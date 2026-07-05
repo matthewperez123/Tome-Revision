@@ -16,7 +16,7 @@ export function LandingNav() {
   // Marketing pages stay statically rendered; this client nav reads auth on
   // mount and re-renders the instant `onAuthStateChange` fires (see useAuth),
   // swapping the Sign in / Sign up CTAs for an "Open Tome" entry point.
-  const { isAuthenticated } = useAuth()
+  const { isAuthenticated, isDemoMode } = useAuth()
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -40,6 +40,23 @@ export function LandingNav() {
     "text-sm font-medium transition-colors px-3 py-1.5 rounded-full",
     solid ? "text-foreground hover:bg-accent" : "text-white hover:bg-white/10"
   )
+
+  // A visitor "has entry" if they hold a real session OR a demo profile —
+  // demo mode enters the exact same app shell as a signed-in account. Keying
+  // the nav off this (instead of isAuthenticated alone) is what kills the
+  // "constant switching": the auth machine can flap between a stale session
+  // and the localStorage demo fallback, but BOTH map to the same "Open Tome"
+  // CTA, so the flap is no longer visible. Only a genuinely fresh visitor
+  // (no session, no demo) sees "Sign in".
+  const hasEntry = isAuthenticated || isDemoMode
+  // The primary pill always points at /dashboard and is present in every
+  // state, so it never appears/disappears — only its label changes.
+  const pillClass = cn(
+    "text-sm font-semibold px-4 py-1.5 rounded-full transition-colors",
+    solid ? "bg-foreground text-background hover:opacity-90" : "bg-white text-black hover:bg-white/90"
+  )
+  const pillLabel = hasEntry ? "Open Tome" : "Use Beta"
+  const showSignIn = !hasEntry
 
   return (
     <nav
@@ -74,43 +91,19 @@ export function LandingNav() {
             </Link>
           ))}
 
-          {/* Real auth entry points. Once a session exists they collapse to a
-              single "Open Tome" pill. While auth is resolving we keep the
-              signed-out CTAs (the static default). */}
-          {isAuthenticated ? (
-            <Link
-              href="/dashboard"
-              className={cn(
-                "text-sm font-semibold px-4 py-1.5 rounded-full transition-colors",
-                solid
-                  ? "bg-foreground text-background hover:opacity-90"
-                  : "bg-white text-black hover:bg-white/90"
-              )}
-            >
-              Open Tome
+          {/* Real auth entry points. The primary pill is always rendered (it
+              links to /dashboard in every state) so it never flips in or out;
+              only the "Sign in" link is conditional, and only once auth has
+              resolved to a confirmed signed-out visitor. The pill's label
+              reads "Open Tome" for a session, "Use Beta" for the demo shell. */}
+          {showSignIn && (
+            <Link href={AUTH_LINKS.signIn.href} className={cn("hidden sm:inline-flex", linkClass)}>
+              {AUTH_LINKS.signIn.label}
             </Link>
-          ) : (
-            <>
-              <Link href={AUTH_LINKS.signIn.href} className={cn("hidden sm:inline-flex", linkClass)}>
-                {AUTH_LINKS.signIn.label}
-              </Link>
-              {/* Beta demo entry — drops visitors straight into the app shell
-                  in demo mode (no auth required), where the sidebar profile
-                  switcher lets them preview the Reader / Teacher / Student
-                  experiences. Mirrors the authenticated "Open Tome" pill. */}
-              <Link
-                href="/dashboard"
-                className={cn(
-                  "text-sm font-semibold px-4 py-1.5 rounded-full transition-colors",
-                  solid
-                    ? "bg-foreground text-background hover:opacity-90"
-                    : "bg-white text-black hover:bg-white/90"
-                )}
-              >
-                Use Beta
-              </Link>
-            </>
           )}
+          <Link href="/dashboard" className={pillClass}>
+            {pillLabel}
+          </Link>
 
           <ThemeToggle
             className={cn(
@@ -147,29 +140,20 @@ export function LandingNav() {
                 {item.label}
               </Link>
             ))}
-            {isAuthenticated ? (
+            {showSignIn && (
               <Link
-                href="/dashboard"
-                className="rounded-lg px-3 py-2.5 text-sm font-semibold text-foreground hover:bg-accent transition-colors"
+                href={AUTH_LINKS.signIn.href}
+                className="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
               >
-                Open Tome
+                {AUTH_LINKS.signIn.label}
               </Link>
-            ) : (
-              <>
-                <Link
-                  href={AUTH_LINKS.signIn.href}
-                  className="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
-                >
-                  {AUTH_LINKS.signIn.label}
-                </Link>
-                <Link
-                  href="/dashboard"
-                  className="rounded-lg px-3 py-2.5 text-sm font-semibold text-foreground hover:bg-accent transition-colors"
-                >
-                  Use Beta
-                </Link>
-              </>
             )}
+            <Link
+              href="/dashboard"
+              className="rounded-lg px-3 py-2.5 text-sm font-semibold text-foreground hover:bg-accent transition-colors"
+            >
+              {pillLabel}
+            </Link>
           </div>
         </div>
       )}

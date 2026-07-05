@@ -45,7 +45,7 @@ export function AppSidebar() {
 
 function SidebarNav({ pathname }: { pathname: string }) {
   const { setOpen, setOpenMobile } = useSidebar()
-  const { role } = useAuth()
+  const { role, isLoading } = useAuth()
   const listRef = React.useRef<HTMLDivElement>(null)
 
   const navGroups = React.useMemo(() => getNavGroupsForRole(role), [role])
@@ -100,13 +100,21 @@ function SidebarNav({ pathname }: { pathname: string }) {
     return pathname
   })()
 
+  // Until auth resolves we don't know the role, so we render a fixed-shape
+  // skeleton instead of the role-agnostic subset. Rendering the partial nav
+  // first and then adding role-specific items was the visible "profile type
+  // switching" — this replaces that role flip with a clean loading reveal.
+  if (isLoading) {
+    return <SidebarNavSkeleton />
+  }
+
   return (
-    <SidebarContent ref={listRef} className="pt-1">
+    <SidebarContent ref={listRef} className="gap-1 px-1.5 pt-2">
       {navGroups.map((group) => (
-        <SidebarGroup key={group.label ?? group.items[0]?.href}>
+        <SidebarGroup key={group.label ?? group.items[0]?.href} className="px-1 py-1">
           {group.label && <SidebarGroupLabel>{group.label}</SidebarGroupLabel>}
           <SidebarGroupContent>
-            <SidebarMenu>
+            <SidebarMenu className="gap-0.5">
               {group.items.map((item) => {
                 const isActive =
                   item.href === "/"
@@ -135,6 +143,31 @@ function SidebarNav({ pathname }: { pathname: string }) {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
+      ))}
+    </SidebarContent>
+  )
+}
+
+// Deterministic loading placeholder (fixed widths — no Math.random, so it is
+// hydration-safe). Mirrors the grouped nav shape so the real nav reveals in
+// place without a layout jump or a role-dependent reflow.
+const SKELETON_GROUPS = [2, 4, 3, 1, 1]
+
+function SidebarNavSkeleton() {
+  return (
+    <SidebarContent className="gap-1 px-1.5 pt-2" aria-hidden="true">
+      {SKELETON_GROUPS.map((rows, gi) => (
+        <div key={gi} className="px-1 py-1">
+          <div className="mx-1 mb-1 h-3 w-16 rounded bg-muted/60" />
+          <div className="flex flex-col gap-0.5">
+            {Array.from({ length: rows }).map((_, ri) => (
+              <div key={ri} className="flex h-8 items-center gap-2 rounded-md px-2">
+                <div className="size-4 shrink-0 rounded bg-muted/60" />
+                <div className="h-3 flex-1 rounded bg-muted/40" />
+              </div>
+            ))}
+          </div>
+        </div>
       ))}
     </SidebarContent>
   )

@@ -41,7 +41,7 @@ const ROLE_META: Record<"reader" | "teacher" | "student", RoleMeta> = {
 const POPUP_WIDTH = 240
 
 export function ProfileSwitcher() {
-  const { role, profile, signOut } = useAuth()
+  const { role, profile, signOut, isLoading } = useAuth()
   const { state } = useSidebar()
   const collapsed = state === "collapsed"
   const [isOpen, setIsOpen] = React.useState(false)
@@ -143,6 +143,26 @@ export function ProfileSwitcher() {
       )}
     </AnimatePresence>
   )
+
+  // Until auth resolves, render a neutral placeholder rather than defaulting to
+  // the "Reader" role — showing a guessed role that then flips to the real one
+  // is exactly the perceived role "switching" this avoids.
+  if (isLoading) {
+    return (
+      <div
+        aria-hidden="true"
+        className={`flex w-full items-center gap-2 rounded-md p-1.5 ${collapsed ? "justify-center" : ""}`}
+      >
+        <span className="size-8 shrink-0 rounded-full bg-muted/60" />
+        {!collapsed && (
+          <div className="flex-1 space-y-1">
+            <span className="block h-3 w-20 rounded bg-muted/60" />
+            <span className="block h-2.5 w-12 rounded bg-muted/40" />
+          </div>
+        )}
+      </div>
+    )
+  }
 
   return (
     <div>
