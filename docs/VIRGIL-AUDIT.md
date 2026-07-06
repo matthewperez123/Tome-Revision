@@ -73,5 +73,20 @@ Legend: **Routing/Config/Entitlement/Persistence** verified live (API + DB schem
 ## Security notes (for the separate hardening phase — not fixed here)
 - Grading (`grade_response`) has real injection defenses (`wrapStudentText`, delimiter escaping, `GRADING_INJECTION_GUARD`, hard length cap). The other generation tasks pass teacher `brief` text straight into prompts without an injection guard — acceptable (teacher is trusted) but worth the hardening phase's attention.
 
+## Phase 1 — transport + routing correctness (DONE, commit `94281158`)
+- New `src/lib/virgil/retry.ts` `withAnthropicRetry`: backoff (0.5→1→2s + jitter) on 429/529/408/409/5xx + `APIConnectionError`/`APIConnectionTimeoutError`; NEVER retries `AbortError` (client navigated away); capped at 3 attempts so cost can't run away.
+- Wired into all four model-calling paths: `teacher-tasks.ts` (`callTextRaw`), `teacher-quiz/grade.ts` (free-response grader), `semester-plan/generate.ts` (`run`). Grading + semester-plan already had a JSON-repair retry; `callJson` now zod-validates with a single repair retry (assignment_draft, class_insights pass their schemas).
+- Routing matrix unchanged and correct; no surface's model was upgraded.
+
+## Phase 2 — create → save library (DONE, commit `e0451b8e`)
+- Fixed D1: `teacher_quiz` metering read `saved.json.quizId` (always undefined → null object_id). `persistDraftQuiz` returns `{ draft: {...quiz} }`, so it now reads `saved.json.draft.id`. Client nav was already reading `body.draft.id` (unaffected).
+- Verified create→save is editable: `teacher_quiz` → `teacher_quizzes` draft → `/classroom/quiz-builder/[quizId]` editor; `assignment_draft` → `assignments` (status=draft) + `assignment_targets`, metered with the real `assignment.id`. Each generate persists a fresh editable draft with question-insert rollback on failure.
+
+## Phase 3 — save → send handoff (VERIFIED CLEAN, no fix needed)
+All three student-facing send legs are correctly wired — no broken handoff found:
+- **Announcement:** `announcement_draft` returns `{title, content}` → `TeacherAnnouncementComposer` fills the composer (Virgil never posts) → teacher reviews → `createAnnouncement` inserts `classroom_announcements` + fans out `group_post` notifications to every member except the poster (`actionUrl=/classroom/{id}`).
+- **Assignment:** `assignment_draft` inserts a `status=draft` row → `onCreated()` refreshes the list → the draft appears where the teacher publishes it through the existing (fenced) fan-out flow.
+- **Grading:** `grade_response` (essay `submissionId`) returns `{score, feedback, strengths, improvements}` → grading page prefills editable inputs → `handleFinalize` writes the canonical grade via `gradeSubmission` (grades + grade_history audit of model-draft-vs-confirmed + student notify).
+
 ## Verdict
-Backend is mature and correctly wired; routing, config, entitlement, and persistence schema all pass live. No entitlement blocker. Main gaps are Phase 1 resilience (retry/JSON-repair) and the chatbot orphans (Phase 4). Recommend proceeding.
+Backend is mature and correctly wired; routing, config, entitlement, and persistence schema all pass live. No entitlement blocker. Phases 1–3 complete: resilient transport + JSON-repair, D1 metering fix, and all three save→send handoffs verified clean. Remaining: Phase 4 chatbot orphans (after go) and Phase 5 end-to-end proof.
