@@ -37,6 +37,7 @@ export const LANDING_PATHS = new Set<string>([
   "/virgil",
   "/pricing",
   "/faq",
+  "/library",
   "/privacy",
   "/terms",
   "/security",
