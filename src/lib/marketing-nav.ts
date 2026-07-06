@@ -37,6 +37,7 @@ export const LANDING_PATHS = new Set<string>([
   "/virgil",
   "/pricing",
   "/faq",
+  "/library",
   "/privacy",
   "/terms",
   "/security",
@@ -70,6 +71,7 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
       { label: "Virgil", href: "/virgil" },
       { label: "Trials", href: "/quizzes" },
       { label: "Authors", href: "/authors" },
+      { label: "Live Demo", href: "/demo" },
     ],
   },
   {

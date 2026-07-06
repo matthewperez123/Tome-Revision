@@ -49,33 +49,36 @@ export default function GradingQueuePage() {
   const [virgilBusy, setVirgilBusy] = useState<string | null>(null)
   const [draftingAll, setDraftingAll] = useState(false)
 
-  useEffect(() => {
+  const fetchQueue = useCallback(async () => {
     if (isDemoMode || !user) {
       setItems([])
       setLoading(false)
       return
     }
+    const supabase = createClient()
 
-    async function fetchQueue() {
-      const supabase = createClient()
+    const { data } = await supabase
+      .from("assignment_submissions")
+      .select(`
+        id,
+        response_text,
+        submitted_at,
+        score,
+        student_id,
+        profiles!assignment_submissions_student_id_fkey(display_name),
+        assignments!inner(title, type, classroom_id, teacher_id, points_available, classrooms(name))
+      `)
+      .eq("status", "submitted")
+      .eq("assignments.teacher_id", user.id)
+      .order("submitted_at", { ascending: false })
 
-      const { data } = await supabase
-        .from("assignment_submissions")
-        .select(`
-          id,
-          response_text,
-          submitted_at,
-          score,
-          student_id,
-          profiles!assignment_submissions_student_id_fkey(display_name),
-          assignments!inner(title, type, classroom_id, teacher_id, points_available, classrooms(name))
-        `)
-        .eq("status", "submitted")
-        .eq("assignments.teacher_id", user!.id)
-        .order("submitted_at", { ascending: false })
-
-      setItems(
-        (data ?? []).map((d) => ({
+    // Preserve any in-flight Virgil drafts / edits the teacher has open so a
+    // background refetch never wipes unsaved work.
+    setItems((prev) => {
+      const byId = new Map(prev.map((it) => [it.submission_id, it]))
+      return (data ?? []).map((d) => {
+        const existing = byId.get(d.id)
+        return {
           submission_id: d.id,
           student_name: ((d as any).profiles as { display_name: string } | null)?.display_name ?? "Student",
           assignment_title: ((d as any).assignments as { title: string })?.title ?? "",
@@ -84,18 +87,39 @@ export default function GradingQueuePage() {
           response_text: d.response_text,
           submitted_at: d.submitted_at,
           points_available: ((d as any).assignments as { points_available: number })?.points_available ?? 100,
-          score: d.score,
-          feedback: "",
-          ai_draft_score: null,
-          ai_notes: null,
-        })),
-      )
+          score: existing?.score ?? d.score,
+          feedback: existing?.feedback ?? "",
+          ai_draft_score: existing?.ai_draft_score ?? null,
+          ai_notes: existing?.ai_notes ?? null,
+        }
+      })
+    })
 
-      setLoading(false)
-    }
-
-    fetchQueue()
+    setLoading(false)
   }, [user, isDemoMode])
+
+  useEffect(() => {
+    void fetchQueue()
+  }, [fetchQueue])
+
+  // Live: a new student submission drops into the queue without a reload. RLS
+  // scopes realtime delivery to this teacher's classrooms (submissions_staff_
+  // select via user_has_classroom_role), so an unfiltered subscription is safe.
+  useEffect(() => {
+    if (isDemoMode || !user) return
+    const supabase = createClient()
+    const channel = supabase
+      .channel(`grading-queue:${user.id}`)
+      .on(
+        "postgres_changes",
+        { event: "*", schema: "public", table: "assignment_submissions" },
+        () => void fetchQueue(),
+      )
+      .subscribe()
+    return () => {
+      void supabase.removeChannel(channel)
+    }
+  }, [user, isDemoMode, fetchQueue])
 
   const updateItem = useCallback((submissionId: string, updates: Partial<GradingItem>) => {
     setItems((prev) => prev.map((it) => (it.submission_id === submissionId ? { ...it, ...updates } : it)))

@@ -23,7 +23,15 @@ function LoginContent() {
   const params = useSearchParams()
   const supabase = createClient()
   const initialError = params.get("error")
-  const redirectTo = safeRedirectTarget(params.get("redirect"))
+  const rawRedirect = params.get("redirect")
+  const redirectTo = safeRedirectTarget(rawRedirect)
+  // Carry a safe ?redirect= onto the "Sign up" link so a new user who arrived
+  // via an intent (e.g. a seat invite, or resume-checkout) keeps it through
+  // sign-up instead of losing it and dead-ending on the dashboard.
+  const signupHref =
+    rawRedirect && rawRedirect.startsWith("/") && !rawRedirect.startsWith("//")
+      ? `/signup?redirect=${encodeURIComponent(rawRedirect)}`
+      : "/signup"
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [showPassword, setShowPassword] = useState(false)
@@ -123,8 +131,19 @@ function LoginContent() {
         {/* Sign up link */}
         <p className="mt-6 text-center text-sm text-muted-foreground">
           Don&apos;t have an account?{" "}
-          <Link href="/signup" className="font-medium text-indigo-600 hover:text-indigo-500">
+          <Link href={signupHref} className="font-medium text-indigo-600 hover:text-indigo-500">
             Sign up
+          </Link>
+        </p>
+
+        {/* Student entry — code-only, no email. */}
+        <p className="mt-3 text-center text-sm text-muted-foreground">
+          Are you a student?{" "}
+          <Link
+            href="/student-login"
+            className="font-medium text-indigo-600 hover:text-indigo-500"
+          >
+            Use your class code
           </Link>
         </p>
       </motion.div>

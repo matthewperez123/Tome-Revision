@@ -38,6 +38,13 @@ export function CheckoutButton({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ tier, period, seats }),
       })
+      // Not signed in: don't dead-end at a toast. Send them to sign in and carry
+      // the plan intent so they land back on pricing to resume checkout.
+      if (res.status === 401) {
+        const resume = `/pricing?plan=${tier}`
+        window.location.href = `/login?redirect=${encodeURIComponent(resume)}`
+        return
+      }
       const data = (await res.json()) as { url?: string; error?: string }
       if (!res.ok || !data.url) {
         throw new Error(data.error || "Could not start checkout.")

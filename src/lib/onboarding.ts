@@ -67,18 +67,28 @@ export function isOnboardingComplete(): boolean {
   }
 }
 
+export type SyncResult =
+  | { ok: true }
+  | { ok: false; reason: "no-session" | "write-failed"; message: string }
+
 /**
  * Sync onboarding data to Supabase profiles table.
  * Called after onboarding completion when authenticated.
+ *
+ * Returns a result so the caller can gate navigation on a *confirmed* write:
+ * the proxy gates `/dashboard` on the DB `onboarding_completed` column, so
+ * navigating after a silently-failed write bounces the user back here forever.
  */
-export async function syncOnboardingToSupabase(): Promise<void> {
+export async function syncOnboardingToSupabase(): Promise<SyncResult> {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) return
+  if (!user) {
+    return { ok: false, reason: "no-session", message: "You're not signed in." }
+  }
 
   const data = getOnboardingData()
 
-  await supabase
+  const { error } = await supabase
     .from("profiles")
     .update({
       role: data.userType ?? "reader",
@@ -95,4 +105,9 @@ export async function syncOnboardingToSupabase(): Promise<void> {
       updated_at: new Date().toISOString(),
     })
     .eq("id", user.id)
+
+  if (error) {
+    return { ok: false, reason: "write-failed", message: error.message }
+  }
+  return { ok: true }
 }

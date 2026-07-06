@@ -54,19 +54,22 @@ export function LandingNav() {
 
   // The auth slot has exactly three states. Server HTML always renders
   // "resolving"; the client resolves to "in" (a real session OR a demo shell →
-  // "Open Tome") or "out" (a fresh visitor → "Sign in" + "Use Beta") once, then
-  // latches. Keying "in" off isAuthenticated || isDemoMode means a stale
-  // session vs demo-fallback flap can't move the slot — both are "Open Tome".
+  // "Open Tome") or "out" (a fresh visitor → quiet "Sign in" + primary "Sign up")
+  // once, then latches. Keying "in" off isAuthenticated || isDemoMode means a
+  // stale session vs demo-fallback flap can't move the slot — both are "Open Tome".
   const hasEntry = isAuthenticated || isDemoMode
   const slotState: "resolving" | "in" | "out" =
     isLoading && !resolved ? "resolving" : hasEntry ? "in" : "out"
-  // The pill always points at /dashboard and carries a fixed min-width + centred
-  // text so "Use Beta" and "Open Tome" share one box; the skeleton reuses it.
+  // The primary pill carries a fixed min-width + centred text so "Sign up" and
+  // "Open Tome" share one box; the skeleton reuses it. Signed-out visitors also
+  // get a quiet "Sign in" in the slot beside it; signed-in/demo shells get the
+  // single "Open Tome" pill pointing at /dashboard.
   const pillClass = cn(
     "text-sm font-semibold px-4 py-1.5 rounded-full transition-colors text-center min-w-[112px]",
     solid ? "bg-foreground text-background hover:opacity-90" : "bg-white text-black hover:bg-white/90"
   )
-  const pillLabel = slotState === "in" ? "Open Tome" : "Use Beta"
+  const pillLabel = slotState === "in" ? "Open Tome" : AUTH_LINKS.signUp.label
+  const pillHref = slotState === "in" ? "/dashboard" : AUTH_LINKS.signUp.href
   const skeletonBg = solid ? "bg-foreground/10" : "bg-white/20"
 
   return (
@@ -106,7 +109,7 @@ export function LandingNav() {
               skeleton and both final states occupy identical space (no layout
               shift when it resolves). The Sign-in area keeps its width even in
               the "in" state; the pill is always present with a fixed min-width
-              so "Use Beta"/"Open Tome"/skeleton share one box. */}
+              so "Sign up"/"Open Tome"/skeleton share one box. */}
           <div
             className="hidden sm:flex items-center justify-end w-[72px]"
             aria-busy={slotState === "resolving"}
@@ -123,7 +126,7 @@ export function LandingNav() {
           {slotState === "resolving" ? (
             <span aria-hidden className={cn(pillClass, "animate-pulse opacity-60")} />
           ) : (
-            <Link href="/dashboard" className={pillClass}>
+            <Link href={pillHref} className={pillClass}>
               {pillLabel}
             </Link>
           )}
@@ -172,7 +175,7 @@ export function LandingNav() {
               </Link>
             )}
             <Link
-              href="/dashboard"
+              href={pillHref}
               className="rounded-lg px-3 py-2.5 text-sm font-semibold text-foreground hover:bg-accent transition-colors"
             >
               {pillLabel}

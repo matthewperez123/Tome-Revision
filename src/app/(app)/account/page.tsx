@@ -27,10 +27,14 @@ export default async function AccountPage() {
 
   const { data: profileRow } = await supabase
     .from("profiles")
-    .select("stripe_customer_id")
+    .select("stripe_customer_id, role")
     .eq("id", user.id)
     .maybeSingle()
   const hasBilling = Boolean(profileRow?.stripe_customer_id)
+  // Students sign in with a class code and have no email on any surface. Their
+  // account is teacher-managed, so we hide every email / password-recovery /
+  // self-delete control from them (COPPA).
+  const isStudent = profileRow?.role === "student"
 
   return (
     <div className="min-h-screen pb-32">
@@ -64,29 +68,45 @@ export default async function AccountPage() {
                 {fullName || "—"}
               </p>
             </div>
-            <div className="px-5 py-4">
-              <p className="text-[11px] text-muted-foreground">Email</p>
-              <p className="text-sm font-medium mt-0.5">{user.email}</p>
-            </div>
-            <div className="px-5 py-4">
-              <p className="text-[11px] text-muted-foreground">Password</p>
-              <Link
-                href="/auth/forgot-password"
-                className="text-sm font-medium text-indigo-600 hover:text-indigo-500 mt-0.5 inline-block"
-              >
-                Send password reset email
-              </Link>
-            </div>
+            {isStudent ? (
+              <div className="px-5 py-4">
+                <p className="text-[11px] text-muted-foreground">How you sign in</p>
+                <p className="text-sm font-medium mt-0.5">
+                  You sign in with your class code.
+                </p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  Ask your teacher if you need your code.
+                </p>
+              </div>
+            ) : (
+              <>
+                <div className="px-5 py-4">
+                  <p className="text-[11px] text-muted-foreground">Email</p>
+                  <p className="text-sm font-medium mt-0.5">{user.email}</p>
+                </div>
+                <div className="px-5 py-4">
+                  <p className="text-[11px] text-muted-foreground">Password</p>
+                  <Link
+                    href="/auth/forgot-password"
+                    className="text-sm font-medium text-indigo-600 hover:text-indigo-500 mt-0.5 inline-block"
+                  >
+                    Send password reset email
+                  </Link>
+                </div>
+              </>
+            )}
           </div>
         </section>
 
-        {/* Email notifications */}
-        <section>
-          <h2 className="font-serif text-xl font-semibold tracking-tight mb-4">
-            Email notifications
-          </h2>
-          <NotificationPreferencesForm initial={notificationPrefs} />
-        </section>
+        {/* Email notifications — students have no email, so this is hidden. */}
+        {!isStudent && (
+          <section>
+            <h2 className="font-serif text-xl font-semibold tracking-tight mb-4">
+              Email notifications
+            </h2>
+            <NotificationPreferencesForm initial={notificationPrefs} />
+          </section>
+        )}
 
         {/* Billing */}
         {hasBilling && (
@@ -107,7 +127,8 @@ export default async function AccountPage() {
           </section>
         )}
 
-        {/* Danger zone */}
+        {/* Danger zone — a student's account is teacher-managed; no self-delete. */}
+        {!isStudent && (
         <section>
           <h2 className="font-serif text-xl font-semibold tracking-tight text-rose-600 flex items-center gap-2 mb-4">
             <ShieldAlert className="size-5" />
@@ -125,6 +146,7 @@ export default async function AccountPage() {
             </div>
           </div>
         </section>
+        )}
       </div>
     </div>
   )

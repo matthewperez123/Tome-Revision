@@ -9,6 +9,7 @@ import { getBook } from "@/lib/content"
 import { useAuth } from "@/hooks/use-auth"
 import { TeacherAnnouncementComposer } from "@/components/classroom/teacher-announcement-composer"
 import { TeacherAssignmentComposer } from "@/components/classroom/teacher-assignment-composer"
+import { LiveSessionBanner } from "@/components/classroom/live/live-session-banner"
 
 type Tab = "feed" | "assignments" | "progress"
 
@@ -46,13 +47,17 @@ interface GradeItem {
 }
 
 export function StudentClassroomView({ classroomId }: { classroomId: string }) {
-  const { user } = useAuth()
+  const { user, isLoading: authLoading } = useAuth()
   const [classroom, setClassroom] = useState<ClassroomInfo | null>(null)
   const [tab, setTab] = useState<Tab>("feed")
   const [announcements, setAnnouncements] = useState<AnnouncementItem[]>([])
   const [assignments, setAssignments] = useState<AssignmentItem[]>([])
   const [grades, setGrades] = useState<GradeItem[]>([])
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+  // Bumped by reload() to re-run the fetch after a transient failure.
+  const [attempt, setAttempt] = useState(0)
+  const reload = useCallback(() => setAttempt((n) => n + 1), [])
 
   // Student reads ONLY their own grades (grades_student_select RLS), scoped to
   // this classroom's assignments. Feedback + score come straight off the
@@ -158,31 +163,58 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
   }, [classroomId, fetchAnnouncements])
 
   useEffect(() => {
-    if (!user) return
+    // Wait for auth to settle — a null user mid-resolution is not "signed out",
+    // and must not lock the view in a permanent spinner.
+    if (authLoading) return
+    if (!user) {
+      setLoading(false)
+      return
+    }
+
+    let cancelled = false
+    setLoading(true)
+    setError(null)
 
     void fetchGrades()
 
     async function fetchData() {
       const supabase = createClient()
 
-      // Classroom info
-      const { data: cls } = await supabase
+      // Classroom info — a failed read is NOT "not found"; distinguish them so
+      // the student sees a retry, not a false "Classroom not found".
+      const { data: cls, error: clsErr } = await supabase
         .from("classrooms")
         .select("id, name, subject")
         .eq("id", classroomId)
         .single()
+      if (cancelled) return
+      if (clsErr) {
+        // PGRST116 = no row matched (genuinely not found / not a member).
+        if (clsErr.code !== "PGRST116") {
+          setError("Couldn't load this class. Check your connection and try again.")
+          setLoading(false)
+          return
+        }
+      }
       if (cls) setClassroom(cls)
 
       // Announcements
       await fetchAnnouncements()
 
       // Assignments
-      const { data: assignmentData } = await supabase
+      const { data: assignmentData, error: assignErr } = await supabase
         .from("assignments")
         .select("id, title, type, book_id, due_date")
         .eq("classroom_id", classroomId)
         .eq("status", "active")
         .order("due_date", { ascending: true })
+
+      if (cancelled) return
+      if (assignErr) {
+        setError("Couldn't load this class. Check your connection and try again.")
+        setLoading(false)
+        return
+      }
 
       if (assignmentData) {
         // Get student's submission statuses
@@ -192,6 +224,7 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
           .eq("student_id", user!.id)
           .in("assignment_id", assignmentData.map((a) => a.id))
 
+        if (cancelled) return
         const statusMap = Object.fromEntries(
           (submissions ?? []).map((s) => [s.assignment_id, s.status]),
         )
@@ -208,12 +241,30 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
     }
 
     fetchData()
-  }, [user, classroomId, fetchGrades, fetchAnnouncements])
+
+    return () => {
+      cancelled = true
+    }
+  }, [user, authLoading, classroomId, attempt, fetchGrades, fetchAnnouncements])
 
   if (loading) {
     return (
       <div className="flex items-center justify-center py-20">
         <div className="size-6 animate-spin rounded-full border-2 border-muted border-t-foreground" />
+      </div>
+    )
+  }
+
+  if (error) {
+    return (
+      <div className="flex flex-col items-center py-20 text-center">
+        <p className="text-sm font-medium text-[#C8553D]">{error}</p>
+        <button
+          onClick={reload}
+          className="mt-3 rounded-md px-3 py-1.5 text-sm font-medium text-[#D4A04C] hover:underline"
+        >
+          Try again
+        </button>
       </div>
     )
   }
@@ -257,6 +308,11 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
           {classroom.subject}
         </span>
       )}
+
+      {/* Live quiz in progress — appears the instant the teacher launches. */}
+      <div className="mt-6">
+        <LiveSessionBanner classroomId={classroomId} role="student" />
+      </div>
 
       {/* Real-mode owner/co_teacher composers — invisible to students. */}
       <div className="mt-6 space-y-2">

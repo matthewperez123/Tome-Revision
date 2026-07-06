@@ -107,6 +107,7 @@ export type NotificationType =
   | "session_summary"
   | "peer_review"
   | "book_recommendation"
+  | "message"
   | "system"
 
 export interface NotifyParams {

@@ -20,6 +20,7 @@ import {
   REGEN_DAILY_CAP,
   type TeacherTaskKey,
 } from "@/lib/virgil/task-config"
+import { withAnthropicRetry } from "@/lib/virgil/retry"
 import { assertOwnership } from "@/lib/virgil/ownership"
 
 /**
@@ -78,27 +79,60 @@ function extractJson(text: string): unknown {
   return JSON.parse(match[0])
 }
 
-async function callJson(
+/** One raw model round-trip, with transient-failure backoff (429/529/5xx). */
+async function callTextRaw(
   model: string,
   system: Anthropic.TextBlockParam[],
   prompt: string,
   maxTokens: number,
   opts: { temperature?: number; signal?: AbortSignal } = {},
-): Promise<unknown> {
+): Promise<string> {
   const c = client()
   if (!c) throw new Error("not_configured")
-  const msg = await c.messages.create(
-    {
-      model,
-      max_tokens: maxTokens,
-      ...(opts.temperature !== undefined ? { temperature: opts.temperature } : {}),
-      system,
-      messages: [{ role: "user", content: prompt }],
-    },
-    opts.signal ? { signal: opts.signal } : undefined,
+  const msg = await withAnthropicRetry(() =>
+    c.messages.create(
+      {
+        model,
+        max_tokens: maxTokens,
+        ...(opts.temperature !== undefined ? { temperature: opts.temperature } : {}),
+        system,
+        messages: [{ role: "user", content: prompt }],
+      },
+      opts.signal ? { signal: opts.signal } : undefined,
+    ),
   )
-  const block = msg.content.find((b) => b.type === "text")
-  return extractJson(block && block.type === "text" ? block.text : "")
+  return msg.content
+    .filter((b): b is Anthropic.TextBlock => b.type === "text")
+    .map((b) => b.text)
+    .join("")
+    .trim()
+}
+
+/**
+ * Structured call: transient-failure backoff on the wire, plus ONE repair retry
+ * when the reply can't be parsed into JSON (append an explicit "return only
+ * valid JSON" nudge). Client aborts are never retried. When `schema` is given
+ * the parsed value is validated (and re-repaired) here so a single bad shape
+ * doesn't surface as an error the first time.
+ */
+async function callJson<T = unknown>(
+  model: string,
+  system: Anthropic.TextBlockParam[],
+  prompt: string,
+  maxTokens: number,
+  opts: { temperature?: number; signal?: AbortSignal; schema?: z.ZodType<T> } = {},
+): Promise<T> {
+  const attempt = async (nudge: string): Promise<T> => {
+    const text = await callTextRaw(model, system, prompt + nudge, maxTokens, opts)
+    const json = extractJson(text)
+    return opts.schema ? opts.schema.parse(json) : (json as T)
+  }
+  try {
+    return await attempt("")
+  } catch (err) {
+    if (err instanceof Error && err.name === "AbortError") throw err
+    return await attempt("\n\nReturn ONLY valid JSON matching the requested shape — no prose, no fences.")
+  }
 }
 
 async function callText(
@@ -108,22 +142,7 @@ async function callText(
   maxTokens: number,
   signal?: AbortSignal,
 ): Promise<string> {
-  const c = client()
-  if (!c) throw new Error("not_configured")
-  const msg = await c.messages.create(
-    {
-      model,
-      max_tokens: maxTokens,
-      system,
-      messages: [{ role: "user", content: prompt }],
-    },
-    signal ? { signal } : undefined,
-  )
-  return msg.content
-    .filter((b): b is Anthropic.TextBlock => b.type === "text")
-    .map((b) => b.text)
-    .join("")
-    .trim()
+  return callTextRaw(model, [{ type: "text", text: system }], prompt, maxTokens, { signal })
 }
 
 // ── 3a. Quiz builder ──────────────────────────────────────────────────────────
@@ -188,7 +207,8 @@ async function handleTeacherQuiz(raw: unknown, ctx: TaskCtx): Promise<Response> 
     TASK_CONFIG.teacher_quiz.model,
   )
   if (saved.status === 200) {
-    const quizId = (saved.json as { quizId?: string } | null)?.quizId ?? null
+    const quizId =
+      (saved.json as { draft?: { id?: string } } | null)?.draft?.id ?? null
     await recordTaskEvent(ctx.userId, "teacher_quiz", quizId)
   }
   return Response.json(saved.json, { status: saved.status })
@@ -245,14 +265,12 @@ No prose, no fences.`
 
   let draft: z.infer<typeof assignmentResultSchema>
   try {
-    draft = assignmentResultSchema.parse(
-      await callJson(
-        TASK_CONFIG.assignment_draft.model,
-        system,
-        prompt,
-        TASK_CONFIG.assignment_draft.maxTokens,
-        { signal: ctx.signal },
-      ),
+    draft = await callJson(
+      TASK_CONFIG.assignment_draft.model,
+      system,
+      prompt,
+      TASK_CONFIG.assignment_draft.maxTokens,
+      { signal: ctx.signal, schema: assignmentResultSchema },
     )
   } catch (err) {
     console.error("[virgil] assignment_draft generation failed:", err)
@@ -656,14 +674,12 @@ No prose, no fences.`
 
   let insights: z.infer<typeof classInsightsResultSchema>
   try {
-    insights = classInsightsResultSchema.parse(
-      await callJson(
-        TASK_CONFIG.class_insights.model,
-        system,
-        prompt,
-        TASK_CONFIG.class_insights.maxTokens,
-        { signal: ctx.signal },
-      ),
+    insights = await callJson(
+      TASK_CONFIG.class_insights.model,
+      system,
+      prompt,
+      TASK_CONFIG.class_insights.maxTokens,
+      { signal: ctx.signal, schema: classInsightsResultSchema },
     )
   } catch (err) {
     console.error("[virgil] class_insights generation failed:", err)

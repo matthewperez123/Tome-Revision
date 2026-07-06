@@ -38,7 +38,7 @@ function record() {
       p.firstNav = nav;
     }
   }
-  const pill = nav.querySelector('a[href="/dashboard"]');
+  const pill = nav.querySelector('a[href="/dashboard"], a[href="/signup"]');
   const label = pill ? (pill.textContent || '').trim() : '';
   if (label) {
     const last = p.ctaLabels[p.ctaLabels.length - 1];
@@ -103,10 +103,14 @@ test.describe("Marketing nav determinism", () => {
       `CTA label changed more than once: ${JSON.stringify(probe.ctaLabels)}`
     ).toBeLessThanOrEqual(1)
 
-    // The final label is one of the two legitimate resting states.
-    const finalPill = page.locator('nav.fixed a[href="/dashboard"]')
+    // The final label is one of the two legitimate resting states: signed-out
+    // visitors get the primary "Sign up" (/signup) pill; signed-in / demo shells
+    // get "Open Tome" (/dashboard).
+    const finalPill = page
+      .locator('nav.fixed a[href="/dashboard"], nav.fixed a[href="/signup"]')
+      .first()
     await expect(finalPill).toBeVisible()
-    expect(["Use Beta", "Open Tome"]).toContain(
+    expect(["Sign up", "Open Tome"]).toContain(
       (await finalPill.textContent())?.trim()
     )
 

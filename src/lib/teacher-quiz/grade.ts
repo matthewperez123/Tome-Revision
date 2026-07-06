@@ -8,6 +8,7 @@ import {
   GRADING_INJECTION_GUARD,
   wrapStudentText,
 } from "@/lib/virgil/task-config"
+import { withAnthropicRetry } from "@/lib/virgil/retry"
 
 /**
  * Shared teacher-quiz grading primitives.
@@ -102,13 +103,15 @@ Grade it. Return ONLY JSON:
 No prose, no fences.${nudge}`
 
   const call = async (prompt: string): Promise<string> => {
-    const msg = await client.messages.create({
-      model: MODEL_OPUS,
-      max_tokens: 1200,
-      temperature: 0,
-      system,
-      messages: [{ role: "user", content: prompt }],
-    })
+    const msg = await withAnthropicRetry(() =>
+      client.messages.create({
+        model: MODEL_OPUS,
+        max_tokens: 1200,
+        temperature: 0,
+        system,
+        messages: [{ role: "user", content: prompt }],
+      }),
+    )
     const block = msg.content.find((b) => b.type === "text")
     return block && block.type === "text" ? block.text : ""
   }

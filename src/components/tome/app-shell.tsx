@@ -21,8 +21,8 @@ export function AppShell({
   children: React.ReactNode
 }) {
   const pathname = usePathname()
-  // Public marketing surfaces. The bare /library route now 308-redirects to the
-  // single functional catalog at /library/browse, which uses the full app chrome.
+  // Public marketing surfaces. /library is the Wanderer-hero marketing preview;
+  // the functional catalog at /library/browse keeps the full app chrome.
   const isLanding =
     pathname === "/" ||
     pathname === "/readers" ||
@@ -30,6 +30,7 @@ export function AppShell({
     pathname === "/virgil" ||
     pathname === "/pricing" ||
     pathname === "/faq" ||
+    pathname === "/library" ||
     pathname === "/privacy" ||
     pathname === "/terms" ||
     pathname === "/security" ||
