@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server"
 import type Stripe from "stripe"
 import { getStripe } from "@/lib/stripe/server"
-import { tierForPriceId } from "@/lib/stripe/prices"
+import { tierForBillingPriceId } from "@/lib/billing/prices"
 import { isPaidTier, type PaidTier } from "@/lib/stripe/plans"
 import { createAdminClient as createAdminClientUntyped } from "@/lib/supabase/admin"
 import type { SupabaseClient } from "@supabase/supabase-js"
@@ -441,12 +441,15 @@ async function resolveUserId(
   return null
 }
 
-/** tier from: metadata hint → env price-id reverse map → price metadata. */
+/** tier from: metadata hint → canonical price-id reverse map → price metadata. */
 function deriveTier(subscription: Stripe.Subscription, hint: string | null): PaidTier | null {
   if (hint && isPaidTier(hint)) return hint
   const priceId = subscription.items.data[0]?.price?.id
   if (priceId) {
-    const fromEnv = tierForPriceId(priceId)
+    // Reverse-map against the CANONICAL TOME_PRICE_* table — the same one
+    // checkout resolves its Price IDs from — so a subscription event with no
+    // metadata.tier hint still derives the right tier from its line-item price.
+    const fromEnv = tierForBillingPriceId(priceId)
     if (fromEnv) return fromEnv
   }
   const fromMeta = subscription.items.data[0]?.price?.metadata?.tier
