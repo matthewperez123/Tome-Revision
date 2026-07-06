@@ -14,6 +14,7 @@ import {
   PenSquare,
   BookHeart,
   ShieldQuestion,
+  MessageCircle,
 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import {
@@ -36,6 +37,7 @@ const TYPE_ICONS: Record<string, typeof Bell> = {
   session_summary: BookOpen,
   peer_review: PenSquare,
   book_recommendation: BookHeart,
+  message: MessageCircle,
   system: Bell,
 }
 
@@ -55,6 +57,7 @@ const TYPE_COLORS: Record<string, string> = {
   session_summary: LAPIS,
   peer_review: LAPIS,
   book_recommendation: GOLD,
+  message: LAPIS,
   system: "text-muted-foreground",
 }
 
