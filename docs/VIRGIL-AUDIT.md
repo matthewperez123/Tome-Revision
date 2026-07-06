@@ -88,5 +88,37 @@ All three student-facing send legs are correctly wired — no broken handoff fou
 - **Assignment:** `assignment_draft` inserts a `status=draft` row → `onCreated()` refreshes the list → the draft appears where the teacher publishes it through the existing (fenced) fan-out flow.
 - **Grading:** `grade_response` (essay `submissionId`) returns `{score, feedback, strengths, improvements}` → grading page prefills editable inputs → `handleFinalize` writes the canonical grade via `gradeSubmission` (grades + grade_history audit of model-draft-vs-confirmed + student notify).
 
+## Phase 4 — chatbot orphan removal (DONE, commit `279009b8`)
+Deleted the entire dead student-era chat tree (zero client callers since Jul 4):
+`registry.ts`, `profile.ts`, `types.ts`, `surfaces/{library,guided-session}.ts`,
+`tools/{index,generate-teacher-quiz,recommend-books,semester-plan}.ts`, and the
+orphaned `virgil-suggestions.ts` / `virgil-tips.ts`. Stripped the `{messages,
+surface}` branch — plus its chat-only `virgil_usage` ledger helpers
+(`recordTaskUsage`, `isOverDailyCap`, `textStream`, `MAX_DAILY_VIRGIL_CALLS`,
+`surfaceSchema`/`bodySchema`) — from `route.ts`, leaving only the strict
+`{ task, input }` teacher dispatch. −1251 lines. Preserved: `persistDraftQuiz`
+(live), the guided-session quiz-assistant routes, and the fenced
+`assertVirgilAccess`. `tsc` clean apart from pre-existing guided-session noise.
+
+## Phase 5 — proof + failure-mode check (DONE)
+- **Full production build PASSES** (`next build`, LIVEBLOCKS_SECRET_KEY unset):
+  "✓ Compiled successfully in 21.8s". `/api/virgil` builds as a dynamic route;
+  all `/api/classroom/semester-plan/*` routes present. Nothing dangles after the
+  orphan removal.
+- **Truthful failure matrix** (every surface returns an honest status; the
+  client preserves the teacher's input on error and only clears on success):
+  - Dispatcher: 401 no-auth · 403 non-teacher · 400 bad envelope/unknown task · 429 per-task cap.
+  - `teacher_quiz`: persist error → 500/422/404 (question-insert rollback deletes the orphan quiz).
+  - `assignment_draft`: gen fail → 502 · insert fail → 500.
+  - `grade_response`: over-long → 422 · gen fail → 502 · regen cap → 429 · not-found → 404.
+  - `announcement_draft` / `class_insights` / `student_note`: gen fail → 502.
+  - Transport (`withAnthropicRetry`): retries only 429/529/408/409/5xx + connection
+    errors (capped 3, backoff+jitter); rethrows `AbortError` immediately so a
+    teacher who navigates away isn't billed for retries.
+- **Deferred:** the live two-browser E2E (Hypatia generates → saves → a student
+  sees it) needs a real auth session + `ANTHROPIC_API_KEY`, unavailable in this
+  environment — consistent with the Phase 0 note. The full build + code-path
+  verification stand in as the ship gate.
+
 ## Verdict
-Backend is mature and correctly wired; routing, config, entitlement, and persistence schema all pass live. No entitlement blocker. Phases 1–3 complete: resilient transport + JSON-repair, D1 metering fix, and all three save→send handoffs verified clean. Remaining: Phase 4 chatbot orphans (after go) and Phase 5 end-to-end proof.
+Backend is mature and correctly wired; routing, config, entitlement, and persistence schema all pass live. No entitlement blocker. All five phases complete: resilient transport + JSON-repair (P1), D1 metering fix (P2), save→send handoffs verified clean (P3), chatbot orphans removed (P4), production build + failure-mode matrix green (P5). Branch `today/virgil-surfaces-functional` — NOT merged; awaiting review.
