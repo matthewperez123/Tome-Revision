@@ -242,3 +242,31 @@ Beatrice reads 2 msgs, Homer (classmate, non-participant) reads 0 (participant-s
 Announcements / assignment-published / grade+feedback / notification-bell were already PASS in the
 Phase 0 matrix (verified at data level); no code change needed. tsc clean for all Phase 1 files
 (pre-existing `RouteContext` errors in guided-session routes are untouched, logged for Phase 5).
+
+---
+
+## PHASE 2 CLOSEOUT — grade visibility authoritative both sides (no migration)
+
+The grade WRITE path (`gradeSubmission` → `grades` canonical + `grade_history` snapshot +
+`assignment_submissions` mirror + student notify) is owned by SHIP/quiz-loop and was already
+correct. The Phase 2 gap was **read-side liveness**: the student view refetched live, but the two
+teacher surfaces required a hard refresh to see new submissions/grades. Fixed by adding
+RLS-scoped realtime subscriptions on `assignment_submissions`:
+
+- `src/app/(app)/classroom/[id]/gradebook/page.tsx` — channel `gradebook:{classroomId}:{uid}`,
+  `event:"*"` → `fetchAll()`. The `submissions_staff_select` RLS (`user_has_classroom_role`)
+  means realtime only delivers this teacher's own-classroom rows, so no `classroom_id` filter is
+  needed on the subscription.
+- `src/app/(app)/classroom/grading/page.tsx` — extracted the inline queue loader into a
+  `useCallback fetchQueue` that **merges over prior state** (`existing?.score ?? d.score`, kept
+  `feedback`/`ai_draft_score`/`ai_notes`) so a background realtime refetch never wipes an unsaved
+  Virgil draft or teacher edit; subscription channel `grading-queue:{uid}` on
+  `assignment_submissions`.
+- `src/components/classroom/student-classroom-view.tsx` — **no change**; already reads canonical
+  `grades` (score/max_score/feedback/was_overridden) with realtime `my-grades:{classroomId}:{uid}`
+  on its own submissions. Confirmed live.
+
+**Proof (Phase 0 data-level verify still holds):** teacher `gradeSubmission` writes `grades` +
+`grade_history` + mirror; student `grades_student_select` RLS returns only own grades; teacher
+`classroom_gradebook` RPC returns the matrix. Both sides now reconcile without a manual refresh.
+tsc clean for both edited files (same pre-existing guided-session `RouteContext` noise only).
