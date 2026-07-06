@@ -13,12 +13,23 @@ import { useAuth } from "@/hooks/use-auth"
 export function LandingNav() {
   const pathname = usePathname()
   const isLandingPath = LANDING_PATHS.has(pathname)
-  // Marketing pages stay statically rendered; this client nav reads auth on
-  // mount and re-renders the instant `onAuthStateChange` fires (see useAuth),
-  // swapping the Sign in / Sign up CTAs for an "Open Tome" entry point.
-  const { isAuthenticated, isDemoMode } = useAuth()
+  // Marketing pages are statically rendered, so the server always ships the
+  // "resolving" skeleton. This client nav reads auth ONLY from the shared
+  // AuthProvider (no localStorage, no route inference, no second subscription)
+  // and resolves the CTA exactly once — see the auth-slot latch below.
+  const { isAuthenticated, isDemoMode, isLoading } = useAuth()
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  // Latch the first settled auth resolution. Server HTML and the first client
+  // render show "resolving"; once the shared machine settles we render the
+  // final CTA once and never fall back to the skeleton. After that the slot
+  // only moves on a genuine sign-in/out, since the shared machine already
+  // ignores INITIAL_SESSION / TOKEN_REFRESHED and only recomputes demo state on
+  // a real SIGNED_OUT.
+  const [resolved, setResolved] = useState(false)
+  useEffect(() => {
+    if (!isLoading && !resolved) setResolved(true)
+  }, [isLoading, resolved])
 
   const handleScroll = useCallback(() => {
     setScrolled(window.scrollY > 60)
@@ -41,22 +52,22 @@ export function LandingNav() {
     solid ? "text-foreground hover:bg-accent" : "text-white hover:bg-white/10"
   )
 
-  // A visitor "has entry" if they hold a real session OR a demo profile —
-  // demo mode enters the exact same app shell as a signed-in account. Keying
-  // the nav off this (instead of isAuthenticated alone) is what kills the
-  // "constant switching": the auth machine can flap between a stale session
-  // and the localStorage demo fallback, but BOTH map to the same "Open Tome"
-  // CTA, so the flap is no longer visible. Only a genuinely fresh visitor
-  // (no session, no demo) sees "Sign in".
+  // The auth slot has exactly three states. Server HTML always renders
+  // "resolving"; the client resolves to "in" (a real session OR a demo shell →
+  // "Open Tome") or "out" (a fresh visitor → "Sign in" + "Use Beta") once, then
+  // latches. Keying "in" off isAuthenticated || isDemoMode means a stale
+  // session vs demo-fallback flap can't move the slot — both are "Open Tome".
   const hasEntry = isAuthenticated || isDemoMode
-  // The primary pill always points at /dashboard and is present in every
-  // state, so it never appears/disappears — only its label changes.
+  const slotState: "resolving" | "in" | "out" =
+    isLoading && !resolved ? "resolving" : hasEntry ? "in" : "out"
+  // The pill always points at /dashboard and carries a fixed min-width + centred
+  // text so "Use Beta" and "Open Tome" share one box; the skeleton reuses it.
   const pillClass = cn(
-    "text-sm font-semibold px-4 py-1.5 rounded-full transition-colors",
+    "text-sm font-semibold px-4 py-1.5 rounded-full transition-colors text-center min-w-[112px]",
     solid ? "bg-foreground text-background hover:opacity-90" : "bg-white text-black hover:bg-white/90"
   )
-  const pillLabel = hasEntry ? "Open Tome" : "Use Beta"
-  const showSignIn = !hasEntry
+  const pillLabel = slotState === "in" ? "Open Tome" : "Use Beta"
+  const skeletonBg = solid ? "bg-foreground/10" : "bg-white/20"
 
   return (
     <nav
@@ -91,19 +102,31 @@ export function LandingNav() {
             </Link>
           ))}
 
-          {/* Real auth entry points. The primary pill is always rendered (it
-              links to /dashboard in every state) so it never flips in or out;
-              only the "Sign in" link is conditional, and only once auth has
-              resolved to a confirmed signed-out visitor. The pill's label
-              reads "Open Tome" for a session, "Use Beta" for the demo shell. */}
-          {showSignIn && (
-            <Link href={AUTH_LINKS.signIn.href} className={cn("hidden sm:inline-flex", linkClass)}>
-              {AUTH_LINKS.signIn.label}
+          {/* Auth slot — one fixed footprint across all three states so the
+              skeleton and both final states occupy identical space (no layout
+              shift when it resolves). The Sign-in area keeps its width even in
+              the "in" state; the pill is always present with a fixed min-width
+              so "Use Beta"/"Open Tome"/skeleton share one box. */}
+          <div
+            className="hidden sm:flex items-center justify-end w-[72px]"
+            aria-busy={slotState === "resolving"}
+          >
+            {slotState === "resolving" && (
+              <span aria-hidden className={cn("h-[30px] w-[68px] rounded-full animate-pulse", skeletonBg)} />
+            )}
+            {slotState === "out" && (
+              <Link href={AUTH_LINKS.signIn.href} className={cn("whitespace-nowrap", linkClass)}>
+                {AUTH_LINKS.signIn.label}
+              </Link>
+            )}
+          </div>
+          {slotState === "resolving" ? (
+            <span aria-hidden className={cn(pillClass, "animate-pulse opacity-60")} />
+          ) : (
+            <Link href="/dashboard" className={pillClass}>
+              {pillLabel}
             </Link>
           )}
-          <Link href="/dashboard" className={pillClass}>
-            {pillLabel}
-          </Link>
 
           <ThemeToggle
             className={cn(
@@ -140,7 +163,7 @@ export function LandingNav() {
                 {item.label}
               </Link>
             ))}
-            {showSignIn && (
+            {slotState === "out" && (
               <Link
                 href={AUTH_LINKS.signIn.href}
                 className="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
