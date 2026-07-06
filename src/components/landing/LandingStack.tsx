@@ -3,7 +3,6 @@
 import { useEffect, useRef } from "react"
 import { useRouter } from "next/navigation"
 import { AudienceProvider, useAudience } from "@/contexts/AudienceContext"
-import { LandingNav } from "./LandingNav"
 import { HeroSection } from "./HeroSection"
 import { HomepageContent } from "./HomepageContent"
 import { LandingFooter } from "./LandingFooter"
@@ -38,7 +37,6 @@ export function LandingStack({ defaultView }: { defaultView: View }) {
     <div className="min-h-screen bg-background text-foreground">
       <AudienceProvider initial={defaultView}>
         <AudienceRouter view={defaultView} />
-        <LandingNav />
         <HeroSection />
         <HomepageContent />
         <LandingFooter />

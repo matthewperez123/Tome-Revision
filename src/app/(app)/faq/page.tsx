@@ -2,7 +2,6 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
-import { LandingNav } from "@/components/landing/LandingNav"
 import { LandingFooter } from "@/components/landing/LandingFooter"
 import { FaqAccordion } from "@/components/faq/FaqAccordion"
 import { FaqCategoryNav } from "@/components/faq/FaqCategoryNav"
@@ -39,8 +38,6 @@ export default async function FaqPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <LandingNav />
-
       <script
         type="application/ld+json"
         // Generated from lib/faqs.ts so structured data never drifts from the

@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Mail, MessageCircle, GraduationCap } from "lucide-react"
-import { LandingNav } from "@/components/landing/LandingNav"
 import { LandingFooter } from "@/components/landing/LandingFooter"
 import { SUPPORT_EMAIL, SUPPORT_MAILTO } from "@/lib/support"
 
@@ -15,7 +14,6 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <LandingNav />
       <main className="px-6 pb-24 pt-32 md:px-12">
         <div className="mx-auto max-w-3xl">
           <header className="mb-12 text-center">

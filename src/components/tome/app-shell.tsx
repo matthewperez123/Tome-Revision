@@ -13,6 +13,7 @@ import { MobileDock } from "@/components/tome/mobile-dock"
 import { Toaster } from "@/components/ui/sonner"
 import { IntercomMessenger } from "@/components/support/IntercomMessenger"
 import { AuthProvider } from "@/hooks/use-auth"
+import { LandingNav } from "@/components/landing/LandingNav"
 
 export function AppShell({
   children,
@@ -35,9 +36,12 @@ export function AppShell({
     pathname === "/contact" ||
     pathname === "/accessibility"
 
-  // Landing page has its own navbar — hide app chrome. Marketing surfaces
-  // also omit the floating Virgil companion (no VirgilWrapper here); the
-  // companion only belongs to authenticated app surfaces below.
+  // Marketing surfaces hide the app chrome and omit the floating Virgil
+  // companion (no VirgilWrapper here). The single marketing nav is mounted
+  // HERE — once, by the shell — so it never unmounts/remounts as the visitor
+  // navigates between marketing routes (this layout persists), and every route
+  // shares the exact same deterministic nav. Individual marketing pages must
+  // NOT render their own <LandingNav />.
   if (isLanding) {
     return (
       <AuthProvider>
@@ -45,6 +49,7 @@ export function AppShell({
       <TomeEconomyProvider>
       <BookProgressProvider>
       <TooltipProvider>
+        <LandingNav />
         <main className="min-h-screen">
           <PageTransition>{children}</PageTransition>
         </main>

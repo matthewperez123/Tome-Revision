@@ -2,7 +2,6 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, BookOpen } from "lucide-react"
-import { LandingNav } from "@/components/landing/LandingNav"
 import { LandingFooter } from "@/components/landing/LandingFooter"
 import { VirgilLanding } from "@/components/landing/virgil/VirgilLanding"
 import { marketingMasterImages } from "@/lib/marketing-images"
@@ -32,8 +31,6 @@ export const metadata: Metadata = {
 export default function VirgilPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <LandingNav />
-
       {/* Hero */}
       <section className="px-6 pb-12 pt-32 md:px-12 md:pt-40">
         <div className="mx-auto max-w-3xl text-center">
