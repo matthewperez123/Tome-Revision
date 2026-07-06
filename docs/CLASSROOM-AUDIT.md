@@ -270,3 +270,39 @@ RLS-scoped realtime subscriptions on `assignment_submissions`:
 `grade_history` + mirror; student `grades_student_select` RLS returns only own grades; teacher
 `classroom_gradebook` RPC returns the matrix. Both sides now reconcile without a manual refresh.
 tsc clean for both edited files (same pre-existing guided-session `RouteContext` noise only).
+
+---
+
+## PHASE 3 CLOSEOUT — Liveblocks foundation verified complete (no migration)
+
+The Liveblocks stack was already built (prior sessions) and every DB dependency is present on the
+live DB (`vjaezrcuuzmbmnsfrtwt`). Phase 3 = verify the foundation is correct, classroom-scoped,
+and COPPA-safe. No new code was required; audited surfaces:
+
+- **Single auth boundary** `src/app/api/liveblocks-auth/route.ts` — the browser never sees the
+  Liveblocks secret; it posts the room, we verify the Supabase session server-side, and mint a
+  token scoped to what that user may do. Room families + gates:
+  - `book:*` / `reader:*` (legacy) — READ_ACCESS for any authenticated reader (presence only).
+  - `classroom:{cid}:book:{bid}` — READ_ACCESS **only** when `user_is_classroom_member(uid,cid)`
+    AND `classrooms.live_presence_enabled` is not false. Fails closed (403).
+  - `gs:{sid}:{book}:{ch}[:{uid}]` — guided-annotation rooms; collaborative → shared room for
+    every participant + teacher; private_to_teacher → per-student room, a student may enter only
+    their own, teacher may enter any. `annotations_enabled=false` mints nothing.
+  - Role in `userInfo` is derived **server-side** (`user_has_classroom_role` / session ownership),
+    never trusted from the client.
+- **COPPA:** the auth endpoint selects only `display_name, avatar_url` from `profiles` and puts
+  `{name, avatar, role}` in `userInfo` — the synthetic student email is NEVER read, so it can
+  never reach Liveblocks or a peer. Verified at data level too: all 30 student `display_name`s in
+  the cohort are human names, none contains `@`.
+- **Presence layer** `src/components/reader/reader-presence.tsx` — ephemeral only (cursors,
+  selections, avatar stack); nothing persisted (highlights/notes stay in Supabase). Renders
+  children with NO Liveblocks connection for signed-out/demo or a class with presence disabled.
+  Peer colors are muted RUBRIC accents, deliberately **not iridescent** (reserved for Virgil).
+- **Wiring:** reading-assignment pages link into the reader with `?classroom=<id>`
+  (`classroom/[id]/assignment/[assignmentId]/page.tsx`), the reader reads it into `classroomId`,
+  and `ReaderPresenceRoom` scopes the room to `classroom:{cid}:book:{bid}`. End-to-end.
+
+**Live DB dependency check (all true):** `classrooms.live_presence_enabled`,
+`user_is_classroom_member`, `user_has_classroom_role`, `guided_session_participants`,
+`guided_sessions.annotations_enabled`. Note: `live_presence_enabled` has no migration file in this
+worktree but exists on the live DB (added out-of-band in an earlier session) — no DDL needed.
