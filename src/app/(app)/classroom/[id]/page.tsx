@@ -26,6 +26,7 @@ import { StudentClassroomView } from "@/components/classroom/student-classroom-v
 import { TeacherAnnouncementComposer } from "@/components/classroom/teacher-announcement-composer"
 import { TeacherAssignmentComposer } from "@/components/classroom/teacher-assignment-composer"
 import { ClassroomRosterPanel } from "@/components/classroom/classroom-roster-panel"
+import { LiveSessionBanner } from "@/components/classroom/live/live-session-banner"
 import { publishAssignment } from "@/lib/actions/assignments"
 
 export default function ClassroomDetail({ params }: { params: Promise<{ id: string }> }) {
@@ -287,6 +288,11 @@ function TeacherClassroomView({ classroomId }: { classroomId: string }) {
             <Sparkles className="size-3.5" /> Semester Planning
           </Button>
         </Link>
+      </div>
+
+      {/* Live quiz in progress — appears the instant a game is launched */}
+      <div className="mt-6">
+        <LiveSessionBanner classroomId={classroomId} role="teacher" />
       </div>
 
       {/* Owner/co_teacher composers — self-gated to staff */}

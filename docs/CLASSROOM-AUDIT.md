@@ -338,3 +338,66 @@ Supabase `session_annotations` mirror fed by a Liveblocks webhook so annotations
 auditable / recoverable server-side after a session ends (independent of the Liveblocks room
 lifecycle). This is the only annotation gap that requires a migration, so its table is a candidate
 for the single Phase 5 migration and will be presented there rather than minted ad hoc now.
+
+---
+
+## PHASE 5 CLOSEOUT — live (Kahoot-style) quiz mode, "The Amphitheater"
+
+The fourth pillar. A teacher launches an existing **published** `teacher_quiz` as a LIVE game;
+students join a lobby, the host reveals one question at a time, answers race in on a per-question
+countdown, a live leaderboard climbs, and when the game ends **each student's result persists
+through the sole authoritative path** (`record_trial_result`) — never a second `quiz_results`
+INSERT. UI direction B (projector / game-show energy), RUBRIC-toned, iridescence reserved for
+Virgil.
+
+**The single migration** `supabase/migrations/20260706000000_classroom_live_quiz.sql` (APPLIED to
+live DB `vjaezrcuuzmbmnsfrtwt`; this is the one Phase-5 DDL). Three tables + three RPCs:
+
+- `live_quiz_sessions` (host-controlled state machine: `lobby → question → reveal → ended`,
+  `current_question_index`, `question_started_at`; snapshots `book_id / chapter_index / difficulty
+  / total_questions` at launch so self-finalize needs no bank re-read).
+- `live_quiz_participants` (COPPA-safe `display_name` snapshot — never email; server-maintained
+  `score` / `correct_count`; `finalized_at` guards double-finalize) and `live_quiz_answers`
+  (one row per question per student, server-computed `is_correct` / `points_awarded`).
+- **Every classroom policy calls the locked helpers.** Sessions: SELECT = `user_is_classroom_
+  member`; INSERT/UPDATE = `user_has_classroom_role(... owner|co_teacher|ta)` AND host = uid.
+  Participants + answers are **SELECT-only to clients** (member-scoped) — there is deliberately NO
+  client write policy, so a student can never write their own score. All writes flow through
+  SECURITY DEFINER RPCs.
+- RPCs: `join_live_quiz` (reads `profiles.display_name` only), `submit_live_quiz_answer`
+  (server-authoritative: resolves the correct answer by `sort_order`, speed-weighted
+  `greatest(100, 1000 - round(elapsed*50))` while correct, one answer per question via
+  `on conflict do nothing`), and `finalize_live_quiz_for_me` — called BY the student
+  (`auth.uid()` = them) so the nested `record_trial_result` attributes the row and computes wisdom
+  exactly as a normal Trial; **idempotent** via `finalized_at`. It *consumes* the RPC, never
+  reimplements wisdom math or opens a second write path.
+
+**Code surface (all new, tsc-clean):**
+
+- `src/lib/actions/live-quiz.ts` — HOST controls only (`launchLiveQuiz`, `start/reveal/advance/
+  endLiveQuiz`, `getLiveQuizView`). Host writes run under the caller's RLS-scoped client so the
+  role policy is the real gate. `getLiveQuizView` is **leak-safe**: `correct_answer` / `explanation`
+  are stripped for students on any question not yet server-revealed (reveal gate computed
+  server-side); staff always see the key.
+- `src/hooks/use-live-quiz.ts` — one realtime channel (`live_quiz_sessions` + `_participants` +
+  `_answers`, all RLS-scoped). Student writes are the direct SECURITY DEFINER RPC calls
+  (`join / submitAnswer / finalize`) for minimal answer latency. Refetches the leak-safe view only
+  when the state machine advances.
+- `src/components/classroom/live/live-quiz-host.tsx` — projector "Amphitheater": lobby with joining
+  chips, four+ color-blocked answer zones (lapis/vermilion/gold/tyrian/verdigris), circular
+  countdown ring, reveal highlights the correct zone + tally, framer-motion bar-race leaderboard,
+  podium on end.
+- `src/components/classroom/live/live-quiz-player.tsx` — full-screen colored answer buttons, streak
+  counter, "locked in" wait, correct/incorrect + points reveal, and on `ended` calls `finalize()`
+  once (ref-guarded) → the authoritative persist.
+- `src/app/(standalone)/classroom/live/[sessionId]/page.tsx` — full-bleed route (no app chrome);
+  renders host if `view.isStaff` else the player. The server-computed `isStaff` is the authority.
+- `src/components/classroom/live/live-session-banner.tsx` — realtime banner on both teacher &
+  student classroom pages; appears the instant a game launches, links into the shared route.
+- Launch entry: "Launch Live Quiz" button in the published section of the quiz-builder
+  `[quizId]` page (reuses the class picker → `launchLiveQuiz` → navigates the host to the arena).
+
+**Result-persistence invariant honored:** the ONLY `quiz_results` write is inside
+`record_trial_result`, reached exclusively via `finalize_live_quiz_for_me`. Client INSERTs to
+`quiz_results` remain revoked (Phase-0 trial_result_authority). No Stripe/billing/entitlement or
+Virgil surface touched; iridescence stays Virgil-only.
