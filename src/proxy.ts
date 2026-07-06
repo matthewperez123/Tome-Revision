@@ -22,6 +22,7 @@ import { updateSession } from "@/lib/supabase/middleware"
 const PUBLIC_ROUTES = new Set<string>([
   "/", // marketing landing
   "/login",
+  "/student-login", // code-only (email-free) student sign-in
   "/signup",
   "/onboarding", // signup funnel / demo entry — a form, no protected data
   "/demo",
@@ -100,7 +101,12 @@ export async function proxy(request: NextRequest) {
   if (isPublicRoute(pathname)) {
     // Already-authenticated users have no business on login/signup; send them
     // to their intended destination (or the dashboard).
-    if (user && (pathname === "/login" || pathname === "/signup")) {
+    if (
+      user &&
+      (pathname === "/login" ||
+        pathname === "/student-login" ||
+        pathname === "/signup")
+    ) {
       const dest =
         safeRedirectTarget(request.nextUrl.searchParams.get("redirect")) ??
         "/dashboard"

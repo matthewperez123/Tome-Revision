@@ -127,6 +127,17 @@ function LoginContent() {
             Sign up
           </Link>
         </p>
+
+        {/* Student entry — code-only, no email. */}
+        <p className="mt-3 text-center text-sm text-muted-foreground">
+          Are you a student?{" "}
+          <Link
+            href="/student-login"
+            className="font-medium text-indigo-600 hover:text-indigo-500"
+          >
+            Use your class code
+          </Link>
+        </p>
       </motion.div>
     </div>
   )
