@@ -15,6 +15,7 @@ import {
   History,
   Compass,
   Settings,
+  MessageCircle,
   type LucideIcon,
 } from "lucide-react"
 
@@ -75,6 +76,7 @@ export const navGroups: NavGroup[] = [
     label: "Classroom",
     items: [
       { label: "My Classes", href: "/classroom", icon: GraduationCap },
+      { label: "Messages", href: "/messages", icon: MessageCircle, roles: ["teacher", "student"] },
       { label: "Quiz Builder", href: "/classroom/quiz-builder", icon: SquarePen, roles: ["teacher"] },
       { label: "Grading", href: "/classroom/grading", icon: ClipboardCheck, roles: ["teacher"] },
       { label: "Guided Sessions", href: "/teacher/guided-learning", icon: Compass, roles: ["teacher"] },

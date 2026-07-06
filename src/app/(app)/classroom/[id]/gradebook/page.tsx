@@ -112,6 +112,26 @@ export default function GradebookPage({
     fetchAll()
   }, [fetchAll])
 
+  // Live: a student submitting / progressing (assignment_submissions) or a
+  // co-teacher grading refreshes the gradebook without a reload. Realtime
+  // enforces RLS, so the staff-select policy scopes delivery to this teacher's
+  // own classrooms — an unfiltered subscription is safe here.
+  useEffect(() => {
+    if (!allowed || !user || isDemoMode) return
+    const supabase = createClient()
+    const channel = supabase
+      .channel(`gradebook:${classroomId}:${user.id}`)
+      .on(
+        "postgres_changes",
+        { event: "*", schema: "public", table: "assignment_submissions" },
+        () => void fetchAll(),
+      )
+      .subscribe()
+    return () => {
+      void supabase.removeChannel(channel)
+    }
+  }, [allowed, user, isDemoMode, classroomId, fetchAll])
+
   // Derive columns (assignments) and rows (students) + a cell lookup from the
   // flat RPC result. The RPC already cross-joins every assignment × student.
   const assignments = useMemo<AssignmentCol[]>(() => {

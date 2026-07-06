@@ -9,6 +9,7 @@ import { getBook } from "@/lib/content"
 import { useAuth } from "@/hooks/use-auth"
 import { TeacherAnnouncementComposer } from "@/components/classroom/teacher-announcement-composer"
 import { TeacherAssignmentComposer } from "@/components/classroom/teacher-assignment-composer"
+import { LiveSessionBanner } from "@/components/classroom/live/live-session-banner"
 
 type Tab = "feed" | "assignments" | "progress"
 
@@ -307,6 +308,11 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
           {classroom.subject}
         </span>
       )}
+
+      {/* Live quiz in progress — appears the instant the teacher launches. */}
+      <div className="mt-6">
+        <LiveSessionBanner classroomId={classroomId} role="student" />
+      </div>
 
       {/* Real-mode owner/co_teacher composers — invisible to students. */}
       <div className="mt-6 space-y-2">

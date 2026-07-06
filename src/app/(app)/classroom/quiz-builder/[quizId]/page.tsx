@@ -6,7 +6,7 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import {
   ArrowLeft, Plus, Trash2, Save, Eye, Sparkles,
-  ChevronDown, ChevronUp, Check, Feather, Clock, Target, Send, BarChart2,
+  ChevronDown, ChevronUp, Check, Feather, Clock, Target, Send, BarChart2, Radio,
 } from "lucide-react"
 import { toast } from "sonner"
 import { Button } from "@/components/ui/button"
@@ -15,6 +15,7 @@ import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
 import { getBooks } from "@/lib/content"
 import { publishTeacherQuiz, assignQuiz, saveTeacherQuiz } from "@/lib/actions/teacher-quizzes"
+import { launchLiveQuiz } from "@/lib/actions/live-quiz"
 
 // Kept as a broad string so Virgil-authored types (multiple_select,
 // vocabulary_in_context, tf_with_reason, fill_blank, free_response, …) round-trip
@@ -120,6 +121,7 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
   const [classrooms, setClassrooms] = useState<{ id: string; name: string }[]>([])
   const [assignClassroom, setAssignClassroom] = useState("")
   const [assigning, setAssigning] = useState(false)
+  const [launching, setLaunching] = useState(false)
 
   const books = getBooks()
   const selectedBook = books.find((b) => b.id === bookId)
@@ -315,6 +317,18 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
     toast.success("Assigned to class")
     setAssignClassroom("")
   }, [assignClassroom, quizId, questions])
+
+  const handleLaunchLive = useCallback(async () => {
+    if (!assignClassroom) return
+    setLaunching(true)
+    const res = await launchLiveQuiz({ quizId, classroomId: assignClassroom })
+    setLaunching(false)
+    if (!res.ok) {
+      toast.error(res.error)
+      return
+    }
+    router.push(`/classroom/live/${res.data.sessionId}`)
+  }, [assignClassroom, quizId, router])
 
   const handleAIGenerate = useCallback(async () => {
     if (!bookId) return
@@ -802,6 +816,21 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
                 <Button onClick={handleAssign} disabled={!assignClassroom || assigning} className="gap-1.5">
                   <Send className="size-3.5" />
                   {assigning ? "Assigning…" : "Assign"}
+                </Button>
+              </div>
+            )}
+            {classrooms.length > 0 && (
+              <div className="border-t pt-3">
+                <p className="text-xs text-muted-foreground">
+                  Or run it live — students race to answer on a shared big screen.
+                </p>
+                <Button
+                  onClick={handleLaunchLive}
+                  disabled={!assignClassroom || launching}
+                  className="mt-2 w-full gap-1.5 bg-[#6C2D5C] text-white hover:bg-[#7d3a6c]"
+                >
+                  <Radio className="size-3.5" />
+                  {launching ? "Launching…" : "Launch Live Quiz"}
                 </Button>
               </div>
             )}
