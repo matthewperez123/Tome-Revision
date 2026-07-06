@@ -81,16 +81,15 @@ export function useReaderPrefsSync(): void {
       if (!uid || !loadedRef.current) return
       if (saveTimer.current) clearTimeout(saveTimer.current)
       saveTimer.current = setTimeout(async () => {
-        try {
-          await supabase
-            .from("reading_preferences")
-            .upsert(
-              { user_id: uid, prefs: getReaderPrefs(), updated_at: new Date().toISOString() },
-              { onConflict: "user_id" }
-            )
-        } catch {
-          /* non-fatal */
-        }
+        const { error } = await supabase
+          .from("reading_preferences")
+          .upsert(
+            { user_id: uid, prefs: getReaderPrefs(), updated_at: new Date().toISOString() },
+            { onConflict: "user_id" }
+          )
+        // Non-fatal for local reading (localStorage is the source of truth), but
+        // no longer invisible: a cross-device sync failure is now observable.
+        if (error) console.warn("[reader-sync] reading_preferences upsert failed:", error.message)
       }, 800)
     }
 
@@ -127,23 +126,22 @@ export function saveReadingPosition(bookId: string, pos: ReadingPosition): void 
   positionTimer = setTimeout(async () => {
     const uid = await getUserId()
     if (!uid) return
-    try {
-      await supabase.from("reading_progress").upsert(
-        {
-          user_id: uid,
-          book_id: bookId,
-          chapter_index: pos.chapterIndex,
-          page: pos.page,
-          scroll_ratio: pos.scrollRatio,
-          paragraph_anchor: pos.paragraphAnchor ?? null,
-          percent: pos.percent ?? null,
-          updated_at: new Date().toISOString(),
-        },
-        { onConflict: "user_id,book_id" }
-      )
-    } catch {
-      /* non-fatal */
-    }
+    const { error } = await supabase.from("reading_progress").upsert(
+      {
+        user_id: uid,
+        book_id: bookId,
+        chapter_index: pos.chapterIndex,
+        page: pos.page,
+        scroll_ratio: pos.scrollRatio,
+        paragraph_anchor: pos.paragraphAnchor ?? null,
+        percent: pos.percent ?? null,
+        updated_at: new Date().toISOString(),
+      },
+      { onConflict: "user_id,book_id" }
+    )
+    // Non-fatal (local position still tracked), but a failed cross-device sync
+    // is now observable rather than silently dropped.
+    if (error) console.warn("[reader-sync] reading_progress upsert failed:", error.message)
   }, 3000)
 }
 

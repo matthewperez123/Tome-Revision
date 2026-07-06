@@ -118,6 +118,135 @@ export async function publishTeacherQuiz(
   }
 }
 
+// ── Draft save ──────────────────────────────────────────────────────────────
+
+const SaveQuestionInput = z.object({
+  question_type: z.string().min(1),
+  question_text: z.string().default(""),
+  options: z.array(z.string()).nullable().default(null),
+  correct_answer: z.string().default(""),
+  explanation: z.string().nullable().default(null),
+  points: z.number().int().min(0).default(10),
+  // Grading metadata Virgil (or a teacher) authored — must survive the round-trip.
+  rubric: z.unknown().optional(),
+  reference_answer: z.string().nullable().optional(),
+  max_points: z.number().int().min(0).nullable().optional(),
+  difficulty: z.string().nullable().optional(),
+  category: z.string().nullable().optional(),
+  hints: z.unknown().optional(),
+  distractor_eliminations: z.unknown().optional(),
+  source_anchor: z.unknown().optional(),
+})
+
+const SaveQuizInput = z.object({
+  quizId: Uuid,
+  title: z.string().trim().min(1).max(200).default("Untitled Quiz"),
+  bookId: z.string().nullable().optional(),
+  difficulty: z.enum(["apprentice", "scholar", "master"]).default("scholar"),
+  settings: z.object({
+    timeLimit: z.number().int().min(0).nullable().default(null),
+    passingScore: z.number().int().min(0).max(100).default(60),
+    allowRetakes: z.boolean().default(true),
+    randomizeOrder: z.boolean().default(true),
+    showAnswers: z.boolean().default(true),
+  }),
+  questions: z.array(SaveQuestionInput).default([]),
+})
+
+/**
+ * Persist a draft quiz — the authoritative, owner-gated, error-returning save
+ * path (replaces the old inline client update+delete+insert that swallowed every
+ * error and could empty a quiz mid-save).
+ *
+ * The question set is replaced atomically-safe: the new rows are INSERTED first,
+ * and only then are the prior rows (those not in the freshly-inserted id set)
+ * deleted. If the insert fails we return before deleting, so a failed save can
+ * never leave an existing quiz with zero questions.
+ */
+export async function saveTeacherQuiz(
+  input: z.input<typeof SaveQuizInput>,
+): Promise<ActionResult<{ questionCount: number }>> {
+  const parsed = SaveQuizInput.safeParse(input)
+  if (!parsed.success) return fail(parsed.error.issues[0]?.message ?? "Invalid input.")
+  const i = parsed.data
+  try {
+    const gate = await requireSchoolTools()
+    if (!gate.ok) return fail(gate.error)
+    const { supabase, user } = gate
+
+    const { data: quiz } = await supabase
+      .from("teacher_quizzes")
+      .select("id, teacher_id")
+      .eq("id", i.quizId)
+      .maybeSingle<{ id: string; teacher_id: string }>()
+    if (!quiz || quiz.teacher_id !== user.id) return fail("You don't own that quiz.")
+
+    const { error: updErr } = await supabase
+      .from("teacher_quizzes")
+      .update({
+        title: i.title,
+        book_id: i.bookId || null,
+        difficulty: i.difficulty,
+        time_limit_minutes: i.settings.timeLimit,
+        passing_score: i.settings.passingScore,
+        allow_retakes: i.settings.allowRetakes,
+        randomize_order: i.settings.randomizeOrder,
+        show_answers: i.settings.showAnswers,
+        updated_at: new Date().toISOString(),
+      })
+      .eq("id", i.quizId)
+    if (updErr) return fail(updErr.message)
+
+    if (i.questions.length > 0) {
+      const rows = i.questions.map((q, idx) => ({
+        quiz_id: i.quizId,
+        question_type: q.question_type,
+        question_text: q.question_text,
+        options: q.options,
+        correct_answer: q.correct_answer,
+        explanation: q.explanation || null,
+        points: q.points,
+        sort_order: idx,
+        rubric: q.rubric ?? null,
+        reference_answer: q.reference_answer ?? null,
+        max_points: q.max_points ?? q.points,
+        difficulty: q.difficulty ?? null,
+        category: q.category ?? null,
+        hints: q.hints ?? null,
+        distractor_eliminations: q.distractor_eliminations ?? null,
+        source_anchor: q.source_anchor ?? null,
+      }))
+      const { data: inserted, error: insErr } = await supabase
+        .from("teacher_quiz_questions")
+        .insert(rows)
+        .select("id")
+      if (insErr || !inserted) return fail(insErr?.message ?? "Failed to save questions.")
+
+      // Delete the prior rows now that the new set is safely in place. UUIDs
+      // carry no PostgREST-special chars, so the id list is safe to join.
+      const newIds = (inserted as { id: string }[]).map((r) => r.id)
+      const { error: delErr } = await supabase
+        .from("teacher_quiz_questions")
+        .delete()
+        .eq("quiz_id", i.quizId)
+        .not("id", "in", `(${newIds.join(",")})`)
+      if (delErr) return fail(delErr.message)
+    } else {
+      // The teacher explicitly cleared every question.
+      const { error: delErr } = await supabase
+        .from("teacher_quiz_questions")
+        .delete()
+        .eq("quiz_id", i.quizId)
+      if (delErr) return fail(delErr.message)
+    }
+
+    revalidatePath(`/classroom/quiz-builder/${i.quizId}`)
+    return ok({ questionCount: i.questions.length })
+  } catch (e) {
+    return fail((e as Error).message)
+  }
+}
+
 /**
  * Duplicate a quiz the teacher owns into a fresh DRAFT copy (title + " (copy)"),
  * carrying over every setting and question (with answer key + grading metadata)

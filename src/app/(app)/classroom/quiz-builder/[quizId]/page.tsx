@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
 import { getBooks } from "@/lib/content"
-import { publishTeacherQuiz, assignQuiz } from "@/lib/actions/teacher-quizzes"
+import { publishTeacherQuiz, assignQuiz, saveTeacherQuiz } from "@/lib/actions/teacher-quizzes"
 
 // Kept as a broad string so Virgil-authored types (multiple_select,
 // vocabulary_in_context, tf_with_reason, fill_blank, free_response, …) round-trip
@@ -229,73 +229,65 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
     })
   }, [])
 
-  const handleSave = useCallback(async () => {
+  // Returns true only when the draft actually persisted. The save routes through
+  // the authoritative saveTeacherQuiz server action, so a failed write is
+  // surfaced (toast) instead of being swallowed while the UI claims "Saved".
+  const handleSave = useCallback(async (): Promise<boolean> => {
     setSaving(true)
 
     if (isDemoMode || !user) {
-      // Demo mode: just show saved feedback
+      // Demo mode: no backing account to write to — show local feedback only.
       await new Promise((r) => setTimeout(r, 500))
       setSaving(false)
       setSaved(true)
       setTimeout(() => setSaved(false), 2000)
-      return
+      return true
     }
 
-    const supabase = createClient()
-
-    await supabase
-      .from("teacher_quizzes")
-      .update({
-        title,
-        book_id: bookId || null,
-        difficulty,
-        time_limit_minutes: settings.timeLimit,
-        passing_score: settings.passingScore,
-        allow_retakes: settings.allowRetakes,
-        randomize_order: settings.randomizeOrder,
-        show_answers: settings.showAnswers,
-        updated_at: new Date().toISOString(),
-      })
-      .eq("id", quizId)
-
-    await supabase.from("teacher_quiz_questions").delete().eq("quiz_id", quizId)
-
-    if (questions.length > 0) {
-      await supabase.from("teacher_quiz_questions").insert(
-        questions.map((q, i) => ({
-          quiz_id: quizId,
-          question_type: q.question_type,
-          question_text: q.question_text,
-          options: q.options,
-          correct_answer: q.correct_answer,
-          explanation: q.explanation || null,
-          points: q.points,
-          sort_order: i,
-          // Preserve the grading metadata Virgil (or a teacher) authored so a
-          // save cycle never strips a free-response question's gradeability.
-          rubric: q.rubric ?? null,
-          reference_answer: q.reference_answer ?? null,
-          max_points: q.max_points ?? q.points,
-          difficulty: q.difficulty ?? null,
-          category: q.category ?? null,
-          hints: q.hints ?? null,
-          distractor_eliminations: q.distractor_eliminations ?? null,
-          source_anchor: q.source_anchor ?? null,
-        })),
-      )
-    }
+    const res = await saveTeacherQuiz({
+      quizId,
+      title,
+      bookId: bookId || null,
+      difficulty: difficulty as "apprentice" | "scholar" | "master",
+      settings,
+      questions: questions.map((q) => ({
+        question_type: q.question_type,
+        question_text: q.question_text,
+        options: q.options,
+        correct_answer: q.correct_answer,
+        explanation: q.explanation || null,
+        points: q.points,
+        rubric: q.rubric,
+        reference_answer: q.reference_answer ?? null,
+        max_points: q.max_points ?? null,
+        difficulty: q.difficulty ?? null,
+        category: q.category ?? null,
+        hints: q.hints,
+        distractor_eliminations: q.distractor_eliminations,
+        source_anchor: q.source_anchor,
+      })),
+    })
 
     setSaving(false)
+    if (!res.ok) {
+      // Keep the teacher's edits on screen; nothing was silently lost.
+      toast.error(res.error || "Couldn't save your changes. Please try again.")
+      return false
+    }
     setSaved(true)
     setTimeout(() => setSaved(false), 2000)
+    return true
   }, [user, isDemoMode, quizId, title, bookId, difficulty, settings, questions])
 
   const handlePublish = useCallback(async () => {
-    await handleSave()
+    const savedOk = await handleSave()
     if (isDemoMode || !user) {
       router.push("/classroom/quiz-builder")
       return
     }
+    // Don't publish on top of a save that didn't land — the error toast from
+    // handleSave already told the teacher what went wrong.
+    if (!savedOk) return
     // Server action enforces teacher ownership + ≥1 question under RLS.
     const res = await publishTeacherQuiz(quizId)
     if (!res.ok) {
