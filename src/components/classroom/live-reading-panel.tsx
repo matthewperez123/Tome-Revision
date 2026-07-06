@@ -29,11 +29,13 @@ const STATUS_DOT: Record<ReaderStatus, string> = {
 }
 
 export function LiveReadingPanel({ classroomId }: { classroomId?: string }) {
-  const { user, isDemoMode } = useAuth()
+  const { user, isDemoMode, isLoading: authLoading } = useAuth()
   const [readers, setReaders] = useState<ActiveReader[]>([])
   const channelsRef = useRef<RealtimeChannel[]>([])
 
   useEffect(() => {
+    // Wait for auth to settle before treating a null user as signed-out.
+    if (authLoading) return
     if (isDemoMode || !user) {
       setReaders([])
       return
@@ -90,7 +92,7 @@ export function LiveReadingPanel({ classroomId }: { classroomId?: string }) {
       channelsRef.current.forEach((ch) => supabase.removeChannel(ch))
       channelsRef.current = []
     }
-  }, [user, classroomId, isDemoMode])
+  }, [user, classroomId, isDemoMode, authLoading])
 
   return (
     <div className="rounded-2xl border bg-card p-5">

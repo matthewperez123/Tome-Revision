@@ -157,3 +157,64 @@ authorize each write; SAVE-1 proven by reading the handler). A **live two-browse
 (teacher saves quiz → reload → still there; student submits; one simulated failed save) is the
 remaining Phase-0 step and belongs to Phase 4 proof; it needs a dev server stood up on a non-3000
 port in this worktree. Available on request.
+
+---
+
+## REMEDIATION LOG
+
+### Phase 1 — authoritative write paths + truthful save states (commit `26a333f6`)
+
+- **SAVE-1 fixed** without a migration. New `saveTeacherQuiz` server action
+  (`src/lib/actions/teacher-quizzes.ts`): school-tools gated → owner-checked → error-returning
+  `.update()` of the quiz row → **insert new questions first, then delete the others** via
+  `.not("id","in",(…newIds))`. Insert-before-delete guarantees a failed save can never empty an
+  existing quiz (the old delete-then-insert could). Preserves all Virgil metadata
+  (rubric, reference_answer, max_points, difficulty, category, hints, distractor_eliminations,
+  source_anchor). Ends with `revalidatePath()` so the server is re-read after save.
+- **quiz-builder page** `handleSave` now returns `Promise<boolean>`: routes through the action,
+  on failure shows `toast.error` and **keeps the user's edits** (returns false, no "Saved"), on
+  success sets saved. `handlePublish` awaits `handleSave()` and aborts publish if the save failed
+  — no more publishing a quiz whose edits didn't persist.
+- **UX-LIE-1 fixed** in `src/lib/reader/reader-sync.ts`: the `reading_progress` and
+  `reading_preferences` upserts no longer swallow errors — a failed cross-device sync now
+  `console.warn`s (local reading still driven by localStorage, so reading is unaffected, but the
+  failure is observable rather than invisible).
+
+### Phase 2 — auth-settled fetches + honest loading/empty/error states (this commit)
+
+Fixed the **LOAD-1 fake-empty** pattern (dropped `error` → renders as genuinely-empty) and added
+`authLoading` gating (a null user mid-resolution is not "signed out") across every classroom load
+surface. Tiered by authority:
+
+**Tier 1 — authoritative surfaces get full error + retry UI:**
+- `src/hooks/use-teacher-students.ts` — captures `classErr`/`memberErr`, exposes
+  `{ students, loading, error, reload }`, gates on `authLoading`. A failed roster read now returns
+  an error (not an empty roster).
+- `src/components/guided-learning/create-session-form.tsx` — `StudentRosterSelector` renders an
+  error state with a **Try again** button (wired to the hook's `reload`) instead of the false
+  "No students yet".
+- `src/components/classroom/classroom-roster-panel.tsx` — captures the members read error, shows an
+  error block + retry, and **no longer silently hides the whole panel** when a failed load leaves
+  `isStaff` false (the `return null` guard now excludes the error case).
+- `src/components/classroom/student-classroom-view.tsx` (Tier-1 student surface) — auth-settled
+  gate (no more permanent spinner when signed out), distinguishes a **load failure from
+  "Classroom not found"** (PGRST116 = genuine not-found; any other error → retry UI), captures the
+  assignments read error, and cancels in-flight state on unmount.
+
+**Tier 2 — dashboard cards get proportionate error capture (no fake data):**
+- `students-at-risk-card.tsx` — a failed read now shows "Couldn't check student progress right now"
+  instead of the reassuring lie **"All students are on track."**
+- `teacher-stats-cards.tsx` — a failed read shows **"—"** for each stat instead of a misleading row
+  of zeros (the "three zeros" symptom).
+- `assignments-summary-card.tsx` — same: "—" on error instead of `0 need grading / 0 due this week`.
+- `teacher-activity-feed.tsx` — a failed read shows "Couldn't load recent activity" + retry instead
+  of "No activity yet".
+
+**Tier 3 — self-hiding / ephemeral surfaces get the auth-settled gate only** (absent-on-error is
+acceptable degradation, not a lie): `recently-graded.tsx`, `upcoming-assignments.tsx`,
+`live-reading-panel.tsx` (realtime presence), `classroom-tab-bar.tsx`, and the two permission-gated
+composers `teacher-announcement-composer.tsx` / `teacher-assignment-composer.tsx` (role-read error
+now `console.warn`s instead of silently — the composer stays hidden but the failure is observable).
+
+Verify: `tsc` clean across all Phase 2 files; only the pre-existing `RouteContext` Next-16
+generated-types quirk remains in the untouched `api/guided-sessions/[id]/**` routes.

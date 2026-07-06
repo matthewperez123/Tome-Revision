@@ -28,7 +28,7 @@ export function TeacherAnnouncementComposer({
 }: {
   classroomId: string
 }) {
-  const { user, isDemoMode } = useAuth()
+  const { user, isDemoMode, isLoading: authLoading } = useAuth()
   const [allowed, setAllowed] = useState<boolean | null>(null)
   const [open, setOpen] = useState(false)
   const [title, setTitle] = useState("")
@@ -39,6 +39,8 @@ export function TeacherAnnouncementComposer({
 
   // Resolve the viewer's role in this classroom.
   useEffect(() => {
+    // Wait for auth to settle before treating a null user as signed-out.
+    if (authLoading) return
     if (!user || isDemoMode) {
       setAllowed(false)
       return
@@ -46,13 +48,21 @@ export function TeacherAnnouncementComposer({
     let cancelled = false
     ;(async () => {
       const supabase = createClient()
-      const { data } = await supabase
+      const { data, error } = await supabase
         .from("classroom_members")
         .select("role")
         .eq("classroom_id", classroomId)
         .eq("student_id", user.id)
         .maybeSingle<{ role: string }>()
       if (cancelled) return
+      // A failed role read is not "not staff" — keep the composer hidden but
+      // observable, so a transient failure can be diagnosed rather than
+      // silently stripping a teacher's ability to post.
+      if (error) {
+        console.warn("[announcement-composer] role read failed:", error.message)
+        setAllowed(false)
+        return
+      }
       setAllowed(
         data?.role === "owner" || data?.role === "co_teacher",
       )
@@ -60,7 +70,7 @@ export function TeacherAnnouncementComposer({
     return () => {
       cancelled = true
     }
-  }, [classroomId, user, isDemoMode])
+  }, [classroomId, user, isDemoMode, authLoading])
 
   if (!allowed) return null
 

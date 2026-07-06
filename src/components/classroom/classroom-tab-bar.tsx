@@ -19,10 +19,12 @@ export function ClassroomTabBar({
   selectedId: string | null
   onSelect: (id: string | null) => void
 }) {
-  const { user, isDemoMode } = useAuth()
+  const { user, isDemoMode, isLoading: authLoading } = useAuth()
   const [classrooms, setClassrooms] = useState<ClassroomTab[]>([])
 
   useEffect(() => {
+    // Wait for auth to settle before treating a null user as signed-out.
+    if (authLoading) return
     if (isDemoMode || !user) {
       setClassrooms([])
       return
@@ -57,7 +59,7 @@ export function ClassroomTabBar({
     }
 
     fetchClassrooms()
-  }, [user, isDemoMode])
+  }, [user, isDemoMode, authLoading])
 
   if (classrooms.length <= 1) return null
 

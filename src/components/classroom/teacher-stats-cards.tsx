@@ -28,14 +28,22 @@ const STAT_CONFIG = [
 ]
 
 export function TeacherStatsCards({ classroomId }: { classroomId?: string }) {
-  const { user, isDemoMode } = useAuth()
+  const { user, isDemoMode, isLoading: authLoading } = useAuth()
   const [stats, setStats] = useState<StatsData>(EMPTY_STATS)
+  // Distinguishes "loaded, genuinely zero" from "couldn't load" so a failed
+  // read shows "—" rather than a misleading row of zeros.
+  const [error, setError] = useState(false)
 
   useEffect(() => {
+    // Wait for auth to settle before treating a null user as signed-out.
+    if (authLoading) return
     if (isDemoMode || !user) {
       setStats(EMPTY_STATS)
+      setError(false)
       return
     }
+
+    let cancelled = false
 
     async function fetchStats() {
       const supabase = createClient()
@@ -44,24 +52,30 @@ export function TeacherStatsCards({ classroomId }: { classroomId?: string }) {
       if (classroomId) {
         classroomIds = [classroomId]
       } else {
-        const { data: classrooms } = await supabase
+        const { data: classrooms, error: classErr } = await supabase
           .from("classrooms")
           .select("id")
           .eq("teacher_id", user!.id)
           .eq("archived", false)
+        if (cancelled) return
+        if (classErr) {
+          setError(true)
+          return
+        }
         classroomIds = (classrooms ?? []).map((c) => c.id)
       }
 
       if (!classroomIds.length) {
         setStats(EMPTY_STATS)
+        setError(false)
         return
       }
 
       const [
-        { count: studentCount },
-        { count: activeCount },
-        { count: gradingCount },
-        { data: gradedRows },
+        { count: studentCount, error: studentErr },
+        { count: activeCount, error: activeErr },
+        { count: gradingCount, error: gradingErr },
+        { data: gradedRows, error: gradedErr },
       ] = await Promise.all([
         supabase
           .from("classroom_members")
@@ -85,6 +99,13 @@ export function TeacherStatsCards({ classroomId }: { classroomId?: string }) {
           .in("assignments.classroom_id", classroomIds),
       ])
 
+      if (cancelled) return
+      if (studentErr || activeErr || gradingErr || gradedErr) {
+        setError(true)
+        return
+      }
+      setError(false)
+
       const scores = ((gradedRows ?? []) as { score: number | null }[])
         .map((r) => r.score)
         .filter((s): s is number => typeof s === "number")
@@ -102,15 +123,20 @@ export function TeacherStatsCards({ classroomId }: { classroomId?: string }) {
     }
 
     fetchStats()
-  }, [user, classroomId, isDemoMode])
+
+    return () => {
+      cancelled = true
+    }
+  }, [user, classroomId, isDemoMode, authLoading])
 
   return (
     <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
       {STAT_CONFIG.map((config, i) => {
         const Icon = config.icon
         const value = stats[config.key]
-        const displayValue =
-          config.key === "avgGrade"
+        const displayValue = error
+          ? "—"
+          : config.key === "avgGrade"
             ? value === null
               ? "—"
               : `${value}%`

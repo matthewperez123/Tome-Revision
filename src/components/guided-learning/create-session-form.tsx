@@ -133,6 +133,8 @@ function BookSearchPicker({
 function StudentRosterSelector({
   roster,
   rosterLoading,
+  rosterError,
+  onRetryRoster,
   selectedIds,
   onToggle,
   onSelectAll,
@@ -140,6 +142,8 @@ function StudentRosterSelector({
 }: {
   roster: TeacherStudent[]
   rosterLoading: boolean
+  rosterError: string | null
+  onRetryRoster: () => void
   selectedIds: Set<string>
   onToggle: (id: string) => void
   onSelectAll: () => void
@@ -157,6 +161,27 @@ function StudentRosterSelector({
     return (
       <div className="flex items-center justify-center py-10">
         <div className="size-5 animate-spin rounded-full border-2 border-muted border-t-foreground" />
+      </div>
+    )
+  }
+
+  if (rosterError) {
+    return (
+      <div
+        className="rounded-xl border px-4 py-10 text-center"
+        style={{ borderColor: "rgba(200, 85, 61, 0.25)" }}
+      >
+        <p className="text-sm font-medium" style={{ color: "#C8553D" }}>
+          Couldn&apos;t load your students
+        </p>
+        <p className="mt-1 text-xs opacity-60">{rosterError}</p>
+        <button
+          onClick={onRetryRoster}
+          className="mt-3 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors hover:bg-muted/50"
+          style={{ color: "var(--tome-indigo, #6366F1)" }}
+        >
+          Try again
+        </button>
       </div>
     )
   }
@@ -261,7 +286,7 @@ function StudentRosterSelector({
 export function CreateSessionForm() {
   const router = useRouter()
   const { user, isDemoMode } = useAuth()
-  const { students: roster, loading: rosterLoading } = useTeacherStudents()
+  const { students: roster, loading: rosterLoading, error: rosterError, reload: reloadRoster } = useTeacherStudents()
   const [type, setType] = useState<AssignmentType>("chapter")
   const [bookId, setBookId] = useState("")
   const [chapterIndex, setChapterIndex] = useState(0)
@@ -456,6 +481,8 @@ export function CreateSessionForm() {
         <StudentRosterSelector
           roster={roster}
           rosterLoading={rosterLoading}
+          rosterError={rosterError}
+          onRetryRoster={reloadRoster}
           selectedIds={selectedStudentIds}
           onToggle={handleToggleStudent}
           onSelectAll={handleSelectAll}

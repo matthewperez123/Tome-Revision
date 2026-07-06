@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 import Link from "next/link"
 import { Trophy, BookOpen, Brain, UserPlus, AlertTriangle, Flame, Inbox } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
@@ -45,22 +45,30 @@ function formatTimeAgo(dateStr: string): string {
 }
 
 export function TeacherActivityFeed({ classroomId }: { classroomId?: string }) {
-  const { user, isDemoMode } = useAuth()
+  const { user, isDemoMode, isLoading: authLoading } = useAuth()
   const [items, setItems] = useState<ActivityItem[]>([])
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(false)
+  const [attempt, setAttempt] = useState(0)
+  const reload = useCallback(() => setAttempt((n) => n + 1), [])
 
   useEffect(() => {
+    // Wait for auth to settle before treating a null user as signed-out.
+    if (authLoading) return
     if (isDemoMode || !user) {
       setItems([])
+      setError(false)
       setLoading(false)
       return
     }
 
     let cancelled = false
+    setLoading(true)
+    setError(false)
     async function fetchActivity() {
       const supabase = createClient()
 
-      const { data } = await supabase
+      const { data, error: loadErr } = await supabase
         .from("notifications")
         .select("id, type, payload, created_at")
         .eq("recipient_id", user!.id)
@@ -68,6 +76,12 @@ export function TeacherActivityFeed({ classroomId }: { classroomId?: string }) {
         .limit(8)
 
       if (cancelled) return
+      // A failed read is NOT "no activity" — surface it.
+      if (loadErr) {
+        setError(true)
+        setLoading(false)
+        return
+      }
 
       const rows: ActivityItem[] = (data ?? []).map((n) => {
         const p = (n.payload ?? {}) as {
@@ -93,7 +107,7 @@ export function TeacherActivityFeed({ classroomId }: { classroomId?: string }) {
     return () => {
       cancelled = true
     }
-  }, [user, isDemoMode, classroomId])
+  }, [user, isDemoMode, authLoading, classroomId, attempt])
 
   return (
     <div className="rounded-2xl border bg-card p-5">
@@ -110,6 +124,19 @@ export function TeacherActivityFeed({ classroomId }: { classroomId?: string }) {
               </div>
             </div>
           ))}
+        </div>
+      ) : error ? (
+        <div className="mt-4 flex flex-col items-center gap-2 py-8 text-center">
+          <AlertTriangle className="size-6 text-muted-foreground/30" />
+          <p className="text-sm text-muted-foreground">
+            Couldn&apos;t load recent activity
+          </p>
+          <button
+            onClick={reload}
+            className="text-xs font-medium text-[#D4A04C] hover:underline"
+          >
+            Try again
+          </button>
         </div>
       ) : items.length === 0 ? (
         <div className="mt-4 flex flex-col items-center gap-2 py-8 text-center">
