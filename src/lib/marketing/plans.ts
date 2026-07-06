@@ -122,6 +122,11 @@ export const HOUSEHOLD_SEATS = 5
 // the cards. (Annual is just Solo billed yearly — not a separate tier.)
 export const SOLO_ANNUAL_PRICE = "$90"
 
+// Family's annual price, surfaced in in-app upgrade copy (profile page) so
+// those CTAs never drift from the cards. Matches the canonical
+// TOME_PRICE_FAMILY_YEARLY tier in src/lib/billing/prices.ts.
+export const FAMILY_ANNUAL_PRICE = "$150"
+
 // ── READER PLANS ─────────────────────────────────────────────────────
 // Solo carries both a monthly and an annual price; the BillingToggle on
 // /pricing picks which cadence to show. Annual is the same product billed
@@ -182,7 +187,7 @@ export function getReaderPlans(stats: CatalogStats): ReaderPlan[] {
             ctaHref: HREFS.signupFamily,
             stripePriceEnv: PLAN_PRICE_ENV.family,
             monthly: { price: "$18", cadence: "per month" },
-            annual: { price: "$150", cadence: "per year" },
+            annual: { price: FAMILY_ANNUAL_PRICE, cadence: "per year" },
           } satisfies ReaderPlan,
         ]
       : []),
