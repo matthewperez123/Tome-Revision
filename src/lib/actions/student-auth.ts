@@ -1,5 +1,6 @@
 "use server"
 
+import { createHash } from "node:crypto"
 import { headers } from "next/headers"
 import { createClient } from "@/lib/supabase/server"
 import {
@@ -9,6 +10,7 @@ import {
   ok,
 } from "./_shared"
 import { normalizeStudentCode, studentCodePrefix } from "@/lib/student-code"
+import { badgeTokenPrefix, parseBadgeQrPayload } from "@/lib/badge-token"
 
 // ── Rate limiting ───────────────────────────────────────────────────────────
 // Every entry attempt (typed OR scanned) funnels through this action, and each
@@ -90,43 +92,98 @@ async function establishSessionForUser(userId: string): Promise<boolean> {
 }
 
 /**
+ * Classify a raw entry into the ONE credential it is, and describe how to
+ * resolve it — WITHOUT hitting the DB yet. A typed XXXX-XXXX code and a scanned
+ * badge QR are the two shapes; the 4-char `prefix` keys the shared rate limit,
+ * and `lookup` performs the (service-role) row match when we're ready.
+ *
+ *   * Typed code   → match on `code`, must be active.
+ *   * Scanned badge→ match on the SHA-256 of the token, must be active AND not
+ *     revoked (a revoked badge is dead even though its hash still matches).
+ *
+ * Foreign QRs and malformed input return null → a single generic "invalid"
+ * without a DB hit. No branch ever touches or reveals an email.
+ */
+type Resolver = {
+  prefix: string
+  lookup: (
+    admin: ReturnType<typeof createAdminClient>,
+  ) => Promise<{ user_id: string } | null>
+}
+
+function classifyEntry(raw: string): Resolver | null {
+  const code = normalizeStudentCode(raw)
+  if (code) {
+    return {
+      prefix: studentCodePrefix(code),
+      lookup: async (admin) => {
+        const { data } = await admin
+          .from("student_access_codes")
+          .select("user_id, active")
+          .eq("code", code)
+          .maybeSingle<{ user_id: string; active: boolean }>()
+        return data && data.active ? { user_id: data.user_id } : null
+      },
+    }
+  }
+
+  const token = parseBadgeQrPayload(raw)
+  if (token) {
+    const hash = createHash("sha256").update(token).digest("hex")
+    return {
+      prefix: badgeTokenPrefix(token),
+      lookup: async (admin) => {
+        const { data } = await admin
+          .from("student_access_codes")
+          .select("user_id, active, badge_revoked_at")
+          .eq("badge_token_hash", hash)
+          .maybeSingle<{
+            user_id: string
+            active: boolean
+            badge_revoked_at: string | null
+          }>()
+        return data && data.active && data.badge_revoked_at == null
+          ? { user_id: data.user_id }
+          : null
+      },
+    }
+  }
+
+  return null
+}
+
+/**
  * THE single student verification path. Both the typed code and the scanned
- * badge token (Phase 3) resolve to this action. Given a raw code it:
- *   1. normalizes + validates the shape (no DB hit on garbage),
+ * badge token resolve to this action. Given a raw entry it:
+ *   1. classifies the shape (no DB hit on garbage),
  *   2. checks the rate-limit ledger for the prefix,
- *   3. looks up an active code row (service role — RLS would hide other rows),
+ *   3. looks up an active (and, for badges, un-revoked) row via service role,
  *   4. mints a session for the mapped student.
- * It never logs the code and never surfaces email in any branch.
+ * It never logs the code/token and never surfaces email in any branch.
  */
 export async function verifyStudentAccess(
   rawCode: string,
 ): Promise<ActionResult<{ redirectTo: string }>> {
-  const code = normalizeStudentCode(rawCode ?? "")
-  if (!code) return fail(MSG.invalid)
+  const resolver = classifyEntry(rawCode ?? "")
+  if (!resolver) return fail(MSG.invalid)
 
-  const prefix = studentCodePrefix(code)
   const admin = createAdminClient()
   const ip = await callerIp()
 
   try {
-    if ((await recentFailures(admin, prefix)) >= MAX_FAILURES) {
+    if ((await recentFailures(admin, resolver.prefix)) >= MAX_FAILURES) {
       return fail(MSG.lockedOut)
     }
 
-    const { data: row } = await admin
-      .from("student_access_codes")
-      .select("user_id, active")
-      .eq("code", code)
-      .maybeSingle<{ user_id: string; active: boolean }>()
-
-    if (!row || !row.active) {
-      await recordFailure(admin, prefix, ip)
+    const row = await resolver.lookup(admin)
+    if (!row) {
+      await recordFailure(admin, resolver.prefix, ip)
       return fail(MSG.notFound)
     }
 
     const signedIn = await establishSessionForUser(row.user_id)
     if (!signedIn) {
-      await recordFailure(admin, prefix, ip)
+      await recordFailure(admin, resolver.prefix, ip)
       return fail(MSG.generic)
     }
 
