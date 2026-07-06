@@ -218,3 +218,38 @@ now `console.warn`s instead of silently — the composer stays hidden but the fa
 
 Verify: `tsc` clean across all Phase 2 files; only the pre-existing `RouteContext` Next-16
 generated-types quirk remains in the untouched `api/guided-sessions/[id]/**` routes.
+
+### Phase 3 — reliable covers (MEDIA-1) (this commit)
+
+Root cause, corrected on inspection: `getBookCoverArt()` already returns `undefined` (museum art
+culled 2026-06-18) so the `if (!art) return sources` short-circuit means ClassicsCover never emits
+any museum/workspace source. Likewise `getTomeGeneratedCoverPaths()` returns `undefined` for every
+book except the seven approved Monumental Literary Paths packs (its 50-entry legacy map is inert —
+the getter never reads it). So the *only* image sources ClassicsCover ever issued were for those
+seven approved books: `the-iliad, the-odyssey, the-aeneid, the-republic, the-divine-comedy,
+the-canterbury-tales, beowulf`.
+
+Those seven books' `/living-archive/assets/<slug>/` WebP packs were never committed (they exist
+only as ~63 MB of orphaned untracked binaries in the primary working tree; `git ls-files` = 0), so
+every one 404s in every deploy. Each of the seven therefore issued 1–2 doomed image requests and
+then fell to the procedural cover — which was already the *only* thing that ever rendered for them.
+The three genuinely-shipped packs (macbeth, moby-dick, alices-adventures-in-wonderland) are NOT in
+the approved set, so ClassicsCover already showed them procedurally too; their assets are consumed
+only by the now-orphaned `living-archive.ts` surface (zero `.tsx` importers).
+
+Fix (`src/data/monumental-literary-paths.ts`): emptied
+`MONUMENTAL_LITERARY_PATHS_APPROVED_COVER_BOOK_IDS` and `..._COMPLETE_PACK_BOOK_IDS` (now typed
+`readonly string[] = []`). `getMonumentalLiteraryPathsAssets()` now returns `undefined` for every
+book → ClassicsCover emits ZERO image sources app-wide → the procedural gradient+motif cover (which
+always renders first and cannot break) is the sole path. Net visible change: none — the seven books
+already rendered procedural; the only difference is the seven dead 404 requests are gone. The BIBLES
+data + palettes are retained for reversibility, mirroring the existing culls in `cover-art.ts` and
+`tome-generated-cover-paths.ts`. `livingArchiveBookFromBible` no longer runs (complete-pack set is
+empty → `generatedBooks` = []), so the throw path can't fire and the dead living-archive surface
+degrades to its three pilot books.
+
+If the seven flagship packs are wanted later, the reversal is mechanical: `git add` their
+`public/living-archive/assets/<slug>/` files and re-populate the two id arrays.
+
+Verify: `tsc` clean across the three registry files + `ClassicsCover.tsx` (filtered error count 0;
+only the pre-existing `RouteContext` / `registry.test.ts` noise remains).

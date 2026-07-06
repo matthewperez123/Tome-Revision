@@ -69,25 +69,20 @@ export const MONUMENTAL_PALETTES: MonumentalPalette[] = [
   { id: "charcoal-ice", name: "Charcoal Ice", hex: ["#1F2730", "#516878", "#A8C0CB", "#EEF0EA"] },
 ]
 
-export const MONUMENTAL_LITERARY_PATHS_APPROVED_COVER_BOOK_IDS = [
-  "the-iliad",
-  "the-odyssey",
-  "the-aeneid",
-  "the-republic",
-  "the-divine-comedy",
-  "the-canterbury-tales",
-  "beowulf",
-] as const
+// Asset cull (2026-07-06, asset-loadsave-reliability): the seven Monumental
+// Literary Paths cover/stoa packs (the-iliad, the-odyssey, the-aeneid,
+// the-republic, the-divine-comedy, the-canterbury-tales, beowulf) were never
+// committed — their /living-archive/assets/<slug>/ WebP files remain orphaned
+// untracked binaries and 404 in every deploy, so ClassicsCover emitted a doomed
+// image request for each before falling to the (correct) procedural cover.
+// Emptying the approved/complete sets makes getMonumentalLiteraryPathsAssets
+// return undefined for every book, so no missing-image request is ever issued.
+// The BIBLES + palettes below are retained for reversibility (mirrors the same
+// cull pattern in cover-art.ts and tome-generated-cover-paths.ts). To restore a
+// pack, git-track its /living-archive/assets/<slug>/ files and re-add its id.
+export const MONUMENTAL_LITERARY_PATHS_APPROVED_COVER_BOOK_IDS: readonly string[] = []
 
-export const MONUMENTAL_LITERARY_PATHS_COMPLETE_PACK_BOOK_IDS = [
-  "the-iliad",
-  "the-odyssey",
-  "the-aeneid",
-  "the-republic",
-  "the-divine-comedy",
-  "the-canterbury-tales",
-  "beowulf",
-] as const
+export const MONUMENTAL_LITERARY_PATHS_COMPLETE_PACK_BOOK_IDS: readonly string[] = []
 
 const approvedCoverBookIds = new Set<string>(MONUMENTAL_LITERARY_PATHS_APPROVED_COVER_BOOK_IDS)
 const completePackBookIds = new Set<string>(MONUMENTAL_LITERARY_PATHS_COMPLETE_PACK_BOOK_IDS)
