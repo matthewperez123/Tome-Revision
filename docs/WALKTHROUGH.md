@@ -49,6 +49,27 @@ right column = **Student browser**.
 10. **Student sees their score.** Student browser → the student's progress/grades view should reflect the graded result.
 11. **Teacher runs one Virgil action.** Teacher browser → any Virgil affordance (e.g. draft an announcement, or "Generate with Virgil" in the quiz builder). Confirm it produces a draft.
 
+## Student badge login (email-free, scan-to-enter)
+
+Students never type, see, or get asked for an email. A teacher provisions each
+student a `XXXX-XXXX` class code and a printable "Ex Libris" bookplate badge
+whose QR scans that same student in. Typed code and scanned badge hit the exact
+same server check — the badge is a convenience, the typed code is always the
+fallback.
+
+1. **Teacher provisions a student.** Teacher browser → class → **Manage** → **Badges** tab → type a first name (e.g. `Beatrice C.`) → **Add student**. A `XXXX-XXXX` code is minted and shown. No email is ever requested.
+2. **Teacher prints badges.** Same tab → **Print all badges** (or the printer icon on one row) → the bookplate sheet opens (2-up on US Letter, dashed cut lines). Each card shows the child's name, the class, a QR, and the typed code. **Print.** Reprinting mints fresh codes, so any earlier printout stops scanning.
+3. **Student types the code.** Student browser → `/student-login` → type the code → **Let's go**. Lands on the student dashboard. No email, no password.
+4. **Student scans the badge (camera).** `/student-login` → **Scan your badge instead** → allow the camera → point at the QR. On a phone/Chromebook/Android/Edge it enters instantly. On Safari/iPad the scanner shows a clear "type your code instead" message (camera QR isn't supported there yet).
+5. **Student scans the badge (wedge/USB scanner).** With the login field focused, scan the badge with a hardware barcode scanner. It types the badge payload + Enter and signs the student in — same path as the camera.
+6. **Teacher revokes a badge.** Badges tab → the revoke (⊘) button on a student. Toast: "Badge revoked. The typed code still works." The QR now fails safe (scans do nothing) while the typed code keeps working until rotated.
+7. **Rate limiting.** Repeated bad codes/scans are throttled server-side (shared `login_attempts` ledger, keyed on the 4-char prefix). A valid entry after the window recovers normally. Codes and tokens are never logged.
+
+Verified end-to-end at the DB layer (rolled-back, net-zero simulation): typed
+code → resolves the student; scanned badge (hashed token) → resolves the same
+student; after **revoke** the badge lookup returns nothing while the typed code
+still resolves.
+
 ## What to report back
 
 Go through the 11 steps in order. For each, note: **works**, **broken**
