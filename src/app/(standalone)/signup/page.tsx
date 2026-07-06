@@ -18,6 +18,17 @@ function SignupForm() {
   // lands in the app. The intent is carried through email verification too.
   const plan = searchParams.get("plan")
   const wantsCheckout = plan === "solo" || plan === "family"
+  // An explicit same-origin ?redirect= (e.g. a seat invite arrived at via
+  // /login → "Sign up") takes priority once the account exists, so the intent
+  // survives sign-up instead of dropping the reader on the dashboard.
+  const rawRedirect = searchParams.get("redirect")
+  const redirectTarget =
+    rawRedirect && rawRedirect.startsWith("/") && !rawRedirect.startsWith("//")
+      ? rawRedirect
+      : null
+  const loginHref = redirectTarget
+    ? `/login?redirect=${encodeURIComponent(redirectTarget)}`
+    : "/login"
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -59,9 +70,12 @@ function SignupForm() {
       return
     }
 
-    // Email confirmation off: session is live. Paid reader plans resume at
-    // checkout; everyone else goes straight into the app.
-    router.push(wantsCheckout ? `/pricing?plan=${plan}` : "/dashboard")
+    // Email confirmation off: session is live. An explicit redirect intent
+    // (e.g. a seat invite) wins; else paid reader plans resume at checkout;
+    // everyone else goes straight into the app.
+    router.push(
+      redirectTarget ?? (wantsCheckout ? `/pricing?plan=${plan}` : "/dashboard"),
+    )
     router.refresh()
   }
 
@@ -140,7 +154,7 @@ function SignupForm() {
         {/* Login link */}
         <p className="mt-6 text-center text-sm text-muted-foreground">
           Already have an account?{" "}
-          <Link href="/login" className="font-medium text-indigo-600 hover:text-indigo-500">
+          <Link href={loginHref} className="font-medium text-indigo-600 hover:text-indigo-500">
             Sign in
           </Link>
         </p>
