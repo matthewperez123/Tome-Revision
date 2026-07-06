@@ -11,8 +11,9 @@ import { rotateJoinCode } from "@/lib/actions/classrooms"
 import { useAuth } from "@/hooks/use-auth"
 
 import { SemesterPlanTab } from "@/components/classroom/semester-timeline"
+import { StudentBadgesPanel } from "@/components/classroom/student-badges-panel"
 
-type Tab = "overview" | "students" | "assignments" | "announcements" | "semester-plan"
+type Tab = "overview" | "students" | "badges" | "assignments" | "announcements" | "semester-plan"
 
 interface ClassroomInfo {
   id: string
@@ -133,6 +134,7 @@ export default function ClassroomManagePage({ params }: { params: Promise<{ id: 
   const tabs: { key: Tab; label: string }[] = [
     { key: "overview", label: "Overview" },
     { key: "students", label: `Students (${members.length})` },
+    { key: "badges", label: "Badges" },
     { key: "assignments", label: `Assignments (${assignments.length})` },
     { key: "announcements", label: "Announcements" },
     { key: "semester-plan", label: "Semester Plan" },
@@ -244,6 +246,14 @@ export default function ClassroomManagePage({ params }: { params: Promise<{ id: 
               ))
             )}
           </div>
+        )}
+
+        {tab === "badges" && (
+          <StudentBadgesPanel
+            classroomId={id}
+            className={classroom.name}
+            disabled={isDemoMode || !user}
+          />
         )}
 
         {tab === "assignments" && (
