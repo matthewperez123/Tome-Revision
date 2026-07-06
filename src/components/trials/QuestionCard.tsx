@@ -9,8 +9,6 @@
  *   • the chunky Check → Continue pressable button
  *   • correct / incorrect feedback bar (green / red) + shake animation
  *     + optional sound + the post-answer "explain" reveal
- *   • awards Wisdom on correct through the EXISTING economy entry point
- *     (useEconomy().dispatch — same `quiz_correct` event the legacy quiz uses)
  *
  * It delegates only the interactive surface to `TRIAL_REGISTRY[type].component`
  * (a Phase-3 body). The body is "controlled": it reports a draft response via
@@ -20,7 +18,6 @@ import { useMemo, useState } from "react"
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion"
 import { CheckCircle2, ChevronRight, Lightbulb, XCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { useEconomy } from "@/components/tome/economy-provider"
 import { TRIAL_REGISTRY, type TrialBodyProps } from "@/lib/trials/registry"
 import type {
   TrialQuestion,
@@ -33,7 +30,6 @@ import {
   wrongShakeTransition,
   reduced as reducedTokens,
 } from "@/lib/animations/trial-tokens"
-import { WisdomStar } from "@/components/trials/sigils/WisdomStar"
 import { playCorrect, playWrong } from "@/lib/trials/sound"
 
 export interface QuestionCardProps {
@@ -60,7 +56,6 @@ export function QuestionCard({
   sound = false,
 }: QuestionCardProps) {
   const reduced = useReducedMotion() ?? false
-  const { dispatch } = useEconomy()
 
   const entry = TRIAL_REGISTRY[question.type]
   const Body = entry.component
@@ -87,8 +82,6 @@ export function QuestionCard({
     setAnswered(true)
 
     if (correct) {
-      // Award Wisdom through the existing economy entry point.
-      dispatch({ type: "quiz_correct", xp: question.points })
       if (sound) playCorrect()
     } else {
       setShake(true)
@@ -231,14 +224,6 @@ export function QuestionCard({
                     <XCircle className="w-5 h-5" />
                   )}
                   {isCorrect ? "Correct" : "Not quite"}
-                  {isCorrect && (
-                    <span className="inline-flex items-center gap-1 ml-1">
-                      <WisdomStar size={15} />
-                      <span className="text-sm tabular-nums">
-                        +{question.points}
-                      </span>
-                    </span>
-                  )}
                 </div>
 
                 {question.explanation && (

@@ -5,7 +5,6 @@ import Link from "next/link"
 import { motion, useReducedMotion } from "motion/react"
 import { ChevronDown, BookOpen, GraduationCap } from "lucide-react"
 import { BlurFade } from "@/components/ui/blur-fade"
-import { LandingNav } from "@/components/landing/LandingNav"
 import { LandingFooter } from "@/components/landing/LandingFooter"
 import { HomeHub } from "@/components/landing/home/HomeHub"
 
@@ -17,8 +16,6 @@ export function AboutPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <LandingNav />
-
       {/* ── HERO ─────────────────────────────────────────────────── */}
       <section className="relative h-screen w-full overflow-hidden">
         <Image

@@ -11,6 +11,7 @@ import {
   requireSchoolTools,
   requireUser,
 } from "./_shared"
+import { isStudentEligibleForAssignment } from "./assignments"
 
 const Uuid = z.string().uuid()
 
@@ -92,6 +93,156 @@ export async function autoGradeTrialSubmission(
   }
 }
 
+// ── Auto-finalize reading assignments ─────────────────────────────────────
+// Called by the reader when a student's reading_progress advances. Reading
+// completion is derived, never manually submitted: an assignment is "done"
+// when the student's furthest chapter reaches the assigned range end. We mirror
+// the exact convention the classroom_gradebook RPC uses:
+//   reading_progress.chapter_index >= coalesce(chapter_range_end,
+//                                               chapter_range_start, 0)
+// For every covered-and-not-yet-graded reading assignment on this book across
+// the student's classes, we mark the submission submitted and write a
+// full-points grade (reading is pass/complete — no partial credit).
+
+interface ReadingAssignmentRow {
+  id: string
+  classroom_id: string
+  scope: "classroom" | "group" | "individuals"
+  points_available: number
+  chapter_range_start: number | null
+  chapter_range_end: number | null
+  title: string
+}
+
+export async function autoFinalizeReadingForBook(
+  bookId: string,
+  reachedChapter?: number,
+): Promise<ActionResult<{ finalized: number }>> {
+  if (!bookId) return fail("Missing book id.")
+  try {
+    const { user } = await requireUser()
+    const admin = createAdminClient()
+
+    // Furthest chapter the student has reached in this book. The reader may
+    // pass its live cursor (reachedChapter) which can lead the debounced
+    // reading_progress write; take the greater of the two so completion fires
+    // without waiting for the DB mirror.
+    const { data: rp } = await admin
+      .from("reading_progress")
+      .select("chapter_index")
+      .eq("user_id", user.id)
+      .eq("book_id", bookId)
+      .maybeSingle<{ chapter_index: number | null }>()
+    const dbReached = rp?.chapter_index ?? null
+    const reached =
+      reachedChapter != null
+        ? Math.max(reachedChapter, dbReached ?? reachedChapter)
+        : dbReached
+    if (reached == null) return ok({ finalized: 0 })
+
+    // The student's classrooms.
+    const { data: memberships } = await admin
+      .from("classroom_members")
+      .select("classroom_id")
+      .eq("student_id", user.id)
+    const classroomIds = (memberships ?? []).map((m) => m.classroom_id)
+    if (classroomIds.length === 0) return ok({ finalized: 0 })
+
+    // Active reading assignments on this book in those classrooms.
+    const { data: assignments } = await admin
+      .from("assignments")
+      .select(
+        "id, classroom_id, scope, points_available, chapter_range_start, chapter_range_end, title",
+      )
+      .in("classroom_id", classroomIds)
+      .eq("book_id", bookId)
+      .eq("status", "active")
+      .in("type", ["reading", "chapter_read"])
+      .returns<ReadingAssignmentRow[]>()
+    if (!assignments || assignments.length === 0) return ok({ finalized: 0 })
+
+    let finalized = 0
+    for (const a of assignments) {
+      const target = a.chapter_range_end ?? a.chapter_range_start ?? 0
+      if (reached < target) continue
+
+      const eligible = await isStudentEligibleForAssignment(a.id, user.id)
+      if (!eligible) continue
+
+      // Existing submission for this student, if any.
+      const { data: existing } = await admin
+        .from("assignment_submissions")
+        .select("id, status")
+        .eq("assignment_id", a.id)
+        .eq("student_id", user.id)
+        .maybeSingle<{ id: string; status: string }>()
+      if (existing && (existing.status === "submitted" || existing.status === "graded")) {
+        continue
+      }
+
+      const nowIso = new Date().toISOString()
+      let submissionId: string
+      if (existing) {
+        await admin
+          .from("assignment_submissions")
+          .update({
+            status: "graded",
+            score: a.points_available,
+            submitted_at: nowIso,
+            graded_at: nowIso,
+          })
+          .eq("id", existing.id)
+        submissionId = existing.id
+      } else {
+        const { data: created, error: subErr } = await admin
+          .from("assignment_submissions")
+          .insert({
+            assignment_id: a.id,
+            student_id: user.id,
+            status: "graded",
+            score: a.points_available,
+            submitted_at: nowIso,
+            graded_at: nowIso,
+          })
+          .select("id")
+          .single()
+        if (subErr || !created) continue
+        submissionId = created.id
+      }
+
+      // Canonical grade row (full points — reading is complete/pass).
+      await admin
+        .from("grades")
+        .upsert(
+          {
+            submission_id: submissionId,
+            score: a.points_available,
+            max_score: a.points_available,
+            is_auto_graded: true,
+            graded_by: null,
+            graded_at: nowIso,
+          },
+          { onConflict: "submission_id" },
+        )
+
+      await notify({
+        recipientId: user.id,
+        type: "assignment_graded",
+        title: `Reading complete: ${a.title}`,
+        body: `Full marks · ${a.points_available}/${a.points_available}`,
+        actionUrl: `/classroom/${a.classroom_id}`,
+        entityType: "submission",
+        entityId: submissionId,
+      })
+      finalized += 1
+    }
+
+    return ok({ finalized })
+  } catch (e) {
+    return fail((e as Error).message)
+  }
+}
+
 // ── Grade a submission (canonical write path) ─────────────────────────────
 // `grades` is the single source of truth (one row per submission). This handles
 // both the first grade and every re-grade: on re-grade it snapshots the current
@@ -105,6 +256,9 @@ const GradeInput = z.object({
   submissionId: Uuid,
   score: z.number().min(0).max(10000),
   feedback: z.string().trim().max(5000).optional(),
+  // When a Virgil draft was the starting point, the score Virgil proposed. The
+  // finalize records it against the teacher's confirmed score in grade_history.
+  aiDraftScore: z.number().min(0).max(10000).optional(),
 })
 
 export async function gradeSubmission(
@@ -136,6 +290,12 @@ export async function gradeSubmission(
     const maxScore = sub.assignments?.points_available ?? 100
     const score = Math.max(0, Math.min(parsed.data.score, maxScore))
     const feedback = parsed.data.feedback ?? null
+    // Clamp the recorded draft score into range too; only set for Virgil-assisted
+    // finalizes (null on teacher-only grades → leaves the audit columns null).
+    const aiDraftScore =
+      parsed.data.aiDraftScore != null
+        ? Math.max(0, Math.min(parsed.data.aiDraftScore, maxScore))
+        : null
 
     // One grade per submission (UNIQUE submission_id). Re-grade => snapshot then
     // overwrite; first grade => insert.
@@ -158,6 +318,8 @@ export async function gradeSubmission(
         previous_feedback: existing.feedback,
         previous_graded_by: existing.graded_by,
         changed_by: user.id,
+        ai_draft_score: aiDraftScore,
+        final_score: aiDraftScore != null ? score : null,
       })
       if (histErr) return fail(histErr.message)
 
@@ -190,6 +352,20 @@ export async function gradeSubmission(
         .single()
       if (error) return fail(error.message)
       gradeId = grade.id
+
+      // First grade has no prior snapshot, but a Virgil-assisted one still
+      // records what the model drafted vs what the teacher confirmed.
+      if (aiDraftScore != null) {
+        await supabase.from("grade_history").insert({
+          grade_id: gradeId,
+          previous_score: null,
+          previous_feedback: null,
+          previous_graded_by: null,
+          changed_by: user.id,
+          ai_draft_score: aiDraftScore,
+          final_score: score,
+        })
+      }
     }
 
     // Mirror onto the denormalized submission cache (read by the grading queue

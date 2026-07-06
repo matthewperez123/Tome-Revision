@@ -9,12 +9,17 @@ import { AppSidebar } from "@/components/tome/app-sidebar"
 import { TopBar } from "@/components/tome/top-bar"
 import { PageTransition } from "@/components/tome/page-transition"
 import { ErrorBoundary } from "@/components/tome/error-boundary"
-import { VirgilWrapper } from "@/components/tome/virgil/VirgilWrapper"
 import { MobileDock } from "@/components/tome/mobile-dock"
 import { Toaster } from "@/components/ui/sonner"
 import { IntercomMessenger } from "@/components/support/IntercomMessenger"
+import { AuthProvider } from "@/hooks/use-auth"
+import { LandingNav } from "@/components/landing/LandingNav"
 
-export function AppShell({ children }: { children: React.ReactNode }) {
+export function AppShell({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   const pathname = usePathname()
   // Public marketing surfaces. The bare /library route now 308-redirects to the
   // single functional catalog at /library/browse, which uses the full app chrome.
@@ -31,15 +36,20 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     pathname === "/contact" ||
     pathname === "/accessibility"
 
-  // Landing page has its own navbar — hide app chrome. Marketing surfaces
-  // also omit the floating Virgil companion (no VirgilWrapper here); the
-  // companion only belongs to authenticated app surfaces below.
+  // Marketing surfaces hide the app chrome and omit the floating Virgil
+  // companion (no VirgilWrapper here). The single marketing nav is mounted
+  // HERE — once, by the shell — so it never unmounts/remounts as the visitor
+  // navigates between marketing routes (this layout persists), and every route
+  // shares the exact same deterministic nav. Individual marketing pages must
+  // NOT render their own <LandingNav />.
   if (isLanding) {
     return (
+      <AuthProvider>
       <ErrorBoundary>
       <TomeEconomyProvider>
       <BookProgressProvider>
       <TooltipProvider>
+        <LandingNav />
         <main className="min-h-screen">
           <PageTransition>{children}</PageTransition>
         </main>
@@ -49,15 +59,16 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       </BookProgressProvider>
       </TomeEconomyProvider>
       </ErrorBoundary>
+      </AuthProvider>
     )
   }
 
   return (
+    <AuthProvider>
     <ErrorBoundary>
     <TomeEconomyProvider>
     <BookProgressProvider>
     <TooltipProvider>
-    <VirgilWrapper>
       <SidebarProvider defaultOpen={false}>
         <div className="flex h-svh w-full flex-col overflow-hidden">
           <TopBar />
@@ -72,10 +83,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           <IntercomMessenger />
         </div>
       </SidebarProvider>
-    </VirgilWrapper>
     </TooltipProvider>
     </BookProgressProvider>
     </TomeEconomyProvider>
     </ErrorBoundary>
+    </AuthProvider>
   )
 }

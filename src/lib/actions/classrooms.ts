@@ -16,7 +16,7 @@ import {
 } from "./_shared"
 // Classroom join codes are the 6-char uppercase alphanumeric format the student
 // join UI (isValidJoinCode) and invite links expect — NOT the 4-4 group code.
-import { generateJoinCode } from "@/lib/classroom-utils"
+import { generateJoinCode, generateUniqueJoinCode } from "@/lib/classroom-utils"
 import { hasActiveSchoolEntitlement } from "@/lib/entitlements/server"
 
 const Uuid = z.string().uuid()
@@ -203,12 +203,45 @@ export async function joinClassroomByCode(
       })
     if (insertErr) return fail(insertErr.message)
 
+    // Late-joiner backfill: seed not_started submission rows for assignments that
+    // were already published (active) before this student joined, so they appear
+    // on the teacher roster exactly like students enrolled at publish time. Only
+    // classroom-scoped assignments backfill — group/individual scopes target a
+    // fixed student set that a new member is not automatically part of.
+    await backfillActiveAssignments(admin, classroom.id, user.id)
+
     revalidatePath("/classroom")
     revalidatePath(`/classroom/${classroom.id}`)
     return ok({ classroomId: classroom.id })
   } catch (e) {
     return fail((e as Error).message)
   }
+}
+
+/** Seed missing not_started submissions for a newly-enrolled student across
+ * every active classroom-scoped assignment. Mirrors publishAssignment's upsert
+ * shape (idempotent on assignment_id,student_id). */
+async function backfillActiveAssignments(
+  admin: ReturnType<typeof createAdminClient>,
+  classroomId: string,
+  studentId: string,
+): Promise<void> {
+  const { data: active } = await admin
+    .from("assignments")
+    .select("id")
+    .eq("classroom_id", classroomId)
+    .eq("scope", "classroom")
+    .eq("status", "active")
+  const ids = (active ?? []).map((a) => a.id as string)
+  if (ids.length === 0) return
+  await admin.from("assignment_submissions").upsert(
+    ids.map((assignment_id) => ({
+      assignment_id,
+      student_id: studentId,
+      status: "not_started" as const,
+    })),
+    { onConflict: "assignment_id,student_id", ignoreDuplicates: true },
+  )
 }
 
 const InviteInput = z.object({
@@ -425,6 +458,50 @@ export async function archiveClassroom(
     revalidatePath("/classroom")
     revalidatePath(`/classroom/${parsed.data}`)
     return ok(undefined)
+  } catch (e) {
+    return fail((e as Error).message)
+  }
+}
+
+/**
+ * Rotate a classroom's join code (invalidates the old one — e.g. if a code
+ * leaked). Owner/co_teacher only. Generates a fresh unique code (throws if it
+ * can't after max attempts). Enrolled members are unaffected.
+ */
+export async function rotateJoinCode(
+  classroomId: string,
+): Promise<ActionResult<{ joinCode: string }>> {
+  const parsed = Uuid.safeParse(classroomId)
+  if (!parsed.success) return fail("Invalid classroom id.")
+  try {
+    const { supabase, user } = await requireUser()
+
+    const { data: allowed } = await supabase.rpc("user_has_classroom_role", {
+      p_user_id: user.id,
+      p_classroom_id: parsed.data,
+      p_roles: ["owner", "co_teacher"],
+    })
+    if (!allowed) return fail("Only classroom staff can change the join code.")
+
+    const admin = createAdminClient()
+    const joinCode = await generateUniqueJoinCode(async (code) => {
+      const { data: existing } = await admin
+        .from("classrooms")
+        .select("id")
+        .eq("join_code", code)
+        .maybeSingle()
+      return existing != null
+    })
+
+    const { error } = await supabase
+      .from("classrooms")
+      .update({ join_code: joinCode })
+      .eq("id", parsed.data)
+    if (error) return fail(error.message)
+
+    revalidatePath(`/classroom/${parsed.data}`)
+    revalidatePath(`/classroom/${parsed.data}/manage`)
+    return ok({ joinCode })
   } catch (e) {
     return fail((e as Error).message)
   }

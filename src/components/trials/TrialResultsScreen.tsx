@@ -27,12 +27,10 @@ import {
   reduced as reducedTokens,
   perfectSparkle,
 } from "@/lib/animations/trial-tokens"
-import { HeartsDisplay } from "./HeartsDisplay"
 
 export function TrialResultsScreen({
   quizState,
   tier,
-  maxHearts,
   onPass,
   onRetry,
   onReturn,
@@ -40,8 +38,7 @@ export function TrialResultsScreen({
 }: {
   quizState: QuizState
   tier: QuizDifficulty
-  maxHearts: number
-  onPass: (xp: number, coins: number, correct: number, total: number) => void
+  onPass: (correct: number, total: number) => void
   onRetry: () => void
   onReturn: () => void
   /** When true, the pass-CTA reads "Finish book" instead of "Next chapter". */
@@ -51,7 +48,6 @@ export function TrialResultsScreen({
   const summary = getQuizSummary(quizState)
   const tierDef = getTierDef(tier)
   const confettiRef = useRef<ConfettiRef>(null)
-  const [wisdomDisplay, setWisdomDisplay] = useState(0)
   const [reviewOpen, setReviewOpen] = useState(false)
 
   // Fire confetti on pass; extra-sparkle on perfect
@@ -76,29 +72,6 @@ export function TrialResultsScreen({
     }, 300)
     return () => clearTimeout(t)
   }, [summary.passed, summary.perfect])
-
-  // Wisdom ticker
-  useEffect(() => {
-    if (summary.xpEarned === 0) {
-      setWisdomDisplay(0)
-      return
-    }
-    if (reduced) {
-      setWisdomDisplay(summary.xpEarned)
-      return
-    }
-    let raf = 0
-    const start = performance.now()
-    const duration = Math.min(1400, Math.max(500, summary.xpEarned * 25))
-    const animate = (now: number) => {
-      const t = Math.min(1, (now - start) / duration)
-      const eased = 1 - Math.pow(1 - t, 3)
-      setWisdomDisplay(Math.round(summary.xpEarned * eased))
-      if (t < 1) raf = requestAnimationFrame(animate)
-    }
-    raf = requestAnimationFrame(animate)
-    return () => cancelAnimationFrame(raf)
-  }, [summary.xpEarned, reduced])
 
   const pctColor = summary.passed
     ? "var(--codex-success-text)"
@@ -182,38 +155,11 @@ export function TrialResultsScreen({
           </div>
         </motion.div>
 
-        {/* Wisdom ticker */}
+        {/* Time */}
         <motion.div
           variants={reduced ? reducedTokens.resultsChild : resultsChild}
-          className="border-2 bg-card px-4 py-3 flex items-center justify-between"
-          style={{
-            borderRadius: "var(--codex-radius-btn)",
-            borderColor: "color-mix(in srgb, var(--codex-tier-laureate) 30%, transparent)",
-          }}
-          aria-live="polite"
+          className="flex items-center justify-center"
         >
-          <span className="text-xs uppercase tracking-wider text-muted-foreground font-sans">
-            Wisdom earned
-          </span>
-          <span
-            className="font-serif text-2xl font-bold tabular-nums"
-            style={{ color: "var(--codex-tier-laureate-text)" }}
-          >
-            +{wisdomDisplay}
-          </span>
-        </motion.div>
-
-        {/* Hearts + Time */}
-        <motion.div
-          variants={reduced ? reducedTokens.resultsChild : resultsChild}
-          className="flex items-center justify-between"
-        >
-          <div className="flex items-center gap-2">
-            <span className="text-xs uppercase tracking-wider text-muted-foreground font-sans">
-              Hearts
-            </span>
-            <HeartsDisplay current={quizState.hearts} max={maxHearts} />
-          </div>
           <div className="flex items-center gap-1.5 text-xs text-muted-foreground font-sans">
             <Clock className="w-3.5 h-3.5" aria-hidden />
             <span className="tabular-nums">{formatElapsed(summary.elapsedMs)}</span>
@@ -285,7 +231,7 @@ export function TrialResultsScreen({
         <motion.div variants={reduced ? reducedTokens.resultsChild : resultsChild} className="space-y-2 pt-2">
           {summary.passed ? (
             <Button
-              onClick={() => onPass(summary.xpEarned, summary.coinsEarned, summary.correct, summary.total)}
+              onClick={() => onPass(summary.correct, summary.total)}
               className="codex-pressable-edge w-full min-h-[44px] py-3 text-base font-semibold gap-2"
               style={{
                 background: tierDef.accentColor,

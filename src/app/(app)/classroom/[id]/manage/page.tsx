@@ -3,9 +3,11 @@
 import { use, useEffect, useState } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { ChevronLeft, Copy, Check, Users, BookOpen, TrendingUp, Plus, Settings } from "lucide-react"
+import { ChevronLeft, Copy, Check, Users, BookOpen, TrendingUp, Plus, Settings, RefreshCw } from "lucide-react"
+import { toast } from "sonner"
 import { Button } from "@/components/ui/button"
 import { createClient } from "@/lib/supabase/client"
+import { rotateJoinCode } from "@/lib/actions/classrooms"
 import { useAuth } from "@/hooks/use-auth"
 
 import { SemesterPlanTab } from "@/components/classroom/semester-timeline"
@@ -45,7 +47,21 @@ export default function ClassroomManagePage({ params }: { params: Promise<{ id: 
   const [assignments, setAssignments] = useState<AssignmentInfo[]>([])
   const [tab, setTab] = useState<Tab>("overview")
   const [copied, setCopied] = useState(false)
+  const [rotating, setRotating] = useState(false)
   const [loading, setLoading] = useState(true)
+
+  async function handleRotate() {
+    if (isDemoMode || !user || rotating || !classroom) return
+    setRotating(true)
+    const res = await rotateJoinCode(classroom.id)
+    if (res.ok) {
+      setClassroom({ ...classroom, join_code: res.data.joinCode })
+      toast.success("New join code generated")
+    } else {
+      toast.error(res.error)
+    }
+    setRotating(false)
+  }
 
   useEffect(() => {
     if (!user && !isDemoMode) return
@@ -151,6 +167,16 @@ export default function ClassroomManagePage({ params }: { params: Promise<{ id: 
           Code: {classroom.join_code}
           {copied ? <Check className="size-3 text-green-500" /> : <Copy className="size-3" />}
         </button>
+        {!isDemoMode && user && (
+          <button
+            onClick={handleRotate}
+            disabled={rotating}
+            title="Generate a new join code"
+            className="inline-flex items-center justify-center rounded-lg bg-muted p-1.5 text-muted-foreground hover:bg-muted/80 disabled:opacity-50"
+          >
+            <RefreshCw className={`size-3 ${rotating ? "animate-spin" : ""}`} />
+          </button>
+        )}
       </div>
 
       {/* Tab bar */}

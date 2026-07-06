@@ -2,26 +2,19 @@ import {
   Home,
   LayoutDashboard,
   Library,
+  LibraryBig,
   BookOpen,
-  BookHeart,
-  Brain,
-  Trophy,
-  HeartHandshake,
-  PenTool,
-  UsersRound,
-  MessageCircle,
+  Bookmark,
   Globe2,
   GraduationCap,
-  ShoppingBag,
   CircleUser,
-  Users,
-  Bookmark,
-  BookMarked,
-  Bell,
   ClipboardCheck,
   Feather,
+  SquarePen,
+  Brain,
   History,
   Compass,
+  Settings,
   type LucideIcon,
 } from "lucide-react"
 
@@ -34,68 +27,85 @@ export type NavItem = {
   icon: LucideIcon
   /** If set, only show for these roles. If omitted, show for all. */
   roles?: UserRole[]
-  /** If true, only show in a "teaching" section separator */
-  section?: "teaching" | "reading" | "social"
 }
 
-export const sidebarNav: NavItem[] = [
-  // Core — all roles
-  { label: "Home", href: "/", icon: Home },
-  { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
-  // The bare /library route is now the public marketing/preview page.
-  // The authenticated catalog lives at /library/browse.
-  { label: "Library", href: "/library/browse", icon: Library },
-  { label: "Bookmarks", href: "/bookmarks", icon: Bookmark },
-  { label: "My Shelves", href: "/shelves", icon: BookMarked },
-  { label: "Authors", href: "/authors", icon: PenTool },
-  { label: "Reading", href: "/reading", icon: BookOpen },
-  { label: "Quizzes", href: "/quizzes", icon: Brain },
-  // Consumer/open-social — readers and teachers only (students stay classroom-scoped)
-  { label: "Book Clubs", href: "/clubs", icon: BookHeart, roles: ["reader", "teacher"] },
+export type NavGroup = {
+  /** Heading shown above the group; hidden automatically when the rail is collapsed. */
+  label?: string
+  items: NavItem[]
+  /** If set, only show for these roles. If omitted, show for all. */
+  roles?: UserRole[]
+}
 
-  // Teacher-only classroom tools
-  { label: "My Classrooms", href: "/classroom", icon: GraduationCap, roles: ["teacher"], section: "teaching" },
-  { label: "Parents", href: "/teacher/parents", icon: Users, roles: ["teacher"], section: "teaching" },
-  { label: "Quiz Builder", href: "/classroom/quiz-builder", icon: Feather, roles: ["teacher"], section: "teaching" },
-  { label: "Grading", href: "/classroom/grading", icon: ClipboardCheck, roles: ["teacher"], section: "teaching" },
-  { label: "Guided Sessions", href: "/teacher/guided-learning", icon: Compass, roles: ["teacher"], section: "teaching" },
-
-  // Classroom access — students and readers who have joined classes
-  { label: "My Classes", href: "/classroom", icon: GraduationCap, roles: ["reader", "student"] },
-  { label: "Study Groups", href: "/study-groups", icon: UsersRound, roles: ["reader", "student"] },
-
-  // Discovery & social — all roles
-  { label: "Explore", href: "/explore", icon: Globe2 },
-  { label: "Timelines", href: "/timelines", icon: History },
-  { label: "Seals", href: "/seals", icon: Trophy },
-  { label: "Notifications", href: "/notifications", icon: Bell },
-  // Open social + consumer surfaces — hidden from classroom-scoped students
-  { label: "Friends", href: "/friends", icon: HeartHandshake, roles: ["reader", "teacher"] },
-  { label: "Family", href: "/family", icon: Users, roles: ["reader", "teacher"] },
-  { label: "Messages", href: "/messages", icon: MessageCircle, roles: ["reader", "teacher"] },
-  { label: "Community", href: "/social", icon: Globe2, roles: ["reader", "teacher"] },
-  { label: "Shop", href: "/shop", icon: ShoppingBag, roles: ["reader", "teacher"] },
-  { label: "Profile", href: "/profile", icon: CircleUser },
+/**
+ * Grouped sidebar navigation. Learning surfaces only — no gamification or
+ * social entries. Groups collapse to a bare icon rail (labels auto-hide) so the
+ * 64px ↔ 240px peek behaviour is preserved.
+ */
+export const navGroups: NavGroup[] = [
+  {
+    label: "Home",
+    items: [
+      { label: "Home", href: "/", icon: Home, roles: ["reader", "student"] },
+      { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
+    ],
+  },
+  {
+    label: "Read",
+    items: [
+      { label: "Library", href: "/library/browse", icon: Library },
+      { label: "Reading", href: "/reading", icon: BookOpen },
+      { label: "Bookmarks", href: "/bookmarks", icon: Bookmark },
+      { label: "Shelves", href: "/shelves", icon: LibraryBig },
+    ],
+  },
+  {
+    label: "Discover",
+    items: [
+      { label: "Authors", href: "/authors", icon: Feather },
+      { label: "Explore", href: "/explore", icon: Globe2 },
+      { label: "Timelines", href: "/timelines", icon: History },
+    ],
+  },
+  {
+    label: "Practice",
+    items: [{ label: "Quizzes", href: "/quizzes", icon: Brain }],
+  },
+  {
+    label: "Classroom",
+    items: [
+      { label: "My Classes", href: "/classroom", icon: GraduationCap },
+      { label: "Quiz Builder", href: "/classroom/quiz-builder", icon: SquarePen, roles: ["teacher"] },
+      { label: "Grading", href: "/classroom/grading", icon: ClipboardCheck, roles: ["teacher"] },
+      { label: "Guided Sessions", href: "/teacher/guided-learning", icon: Compass, roles: ["teacher"] },
+    ],
+  },
+  {
+    label: "Settings",
+    items: [{ label: "Settings", href: "/account", icon: Settings }],
+  },
 ]
 
 /**
- * Filter navigation items by user role.
+ * Filter navigation groups (and their items) by user role, dropping any group
+ * that ends up empty. Unauthenticated visitors see only role-agnostic entries.
  */
-export function getNavForRole(role: UserRole | null): NavItem[] {
-  if (!role) {
-    // Unauthenticated — show items without role restrictions
-    return sidebarNav.filter((item) => !item.roles)
+export function getNavGroupsForRole(role: UserRole | null): NavGroup[] {
+  const allow = (roles?: UserRole[]) => {
+    if (!roles) return true
+    if (!role) return false
+    return roles.includes(role)
   }
-  return sidebarNav.filter((item) => {
-    if (!item.roles) return true
-    return item.roles.includes(role)
-  })
+  return navGroups
+    .filter((g) => allow(g.roles))
+    .map((g) => ({ ...g, items: g.items.filter((i) => allow(i.roles)) }))
+    .filter((g) => g.items.length > 0)
 }
 
 export const dockNav: NavItem[] = [
   { label: "Home", href: "/", icon: Home },
   { label: "Library", href: "/library/browse", icon: Library },
   { label: "Read", href: "/reading", icon: BookOpen },
-  { label: "Quiz", href: "/quizzes", icon: Brain },
+  { label: "Classes", href: "/classroom", icon: GraduationCap },
   { label: "Profile", href: "/profile", icon: CircleUser },
 ]

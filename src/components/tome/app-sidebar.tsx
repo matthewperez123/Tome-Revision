@@ -3,7 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { getNavForRole } from "@/lib/navigation"
+import { getNavGroupsForRole } from "@/lib/navigation"
 import { useAuth } from "@/hooks/use-auth"
 import {
   Sidebar,
@@ -11,6 +11,7 @@ import {
   SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
+  SidebarGroupLabel,
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuButton,
@@ -18,7 +19,6 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar"
 import { ProfileSwitcher } from "@/components/tome/profile-switcher"
-import { useFriendsData } from "@/hooks/use-friends-data"
 
 export function AppSidebar() {
   const pathname = usePathname()
@@ -34,13 +34,7 @@ export function AppSidebar() {
 
   return (
     <Sidebar collapsible="icon" overlayExpand className={`border-r-0 !top-12 !h-[calc(100svh-3rem)] [&_[data-sidebar=sidebar]]:bg-background ${zClass}`}>
-      <SidebarContent className="pt-1">
-        <SidebarGroup>
-          <SidebarGroupContent>
-            <SidebarNav pathname={pathname} />
-          </SidebarGroupContent>
-        </SidebarGroup>
-      </SidebarContent>
+      <SidebarNav pathname={pathname} />
       <SidebarFooter className="px-1.5 py-2 border-t border-border">
         <ProfileSwitcher />
       </SidebarFooter>
@@ -51,10 +45,10 @@ export function AppSidebar() {
 
 function SidebarNav({ pathname }: { pathname: string }) {
   const { setOpen, setOpenMobile } = useSidebar()
-  const { role } = useAuth()
-  const listRef = React.useRef<HTMLUListElement>(null)
+  const { role, isLoading } = useAuth()
+  const listRef = React.useRef<HTMLDivElement>(null)
 
-  const navItems = React.useMemo(() => getNavForRole(role), [role])
+  const navGroups = React.useMemo(() => getNavGroupsForRole(role), [role])
 
   React.useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
@@ -86,68 +80,95 @@ function SidebarNav({ pathname }: { pathname: string }) {
   // to avoid multiple items highlighting at once.
   const activeHref = (() => {
     if (pathname.startsWith("/book/"))    return "/library/browse"
-    if (pathname.startsWith("/author/") && !pathname.startsWith("/authors")) return "/authors"
-    if (pathname.startsWith("/profile"))  return "/profile"
-    if (pathname.startsWith("/clubs/"))   return "/clubs"
-    if (pathname.startsWith("/study-groups/")) return "/study-groups"
-    if (pathname.startsWith("/quiz/"))    return "/quizzes"
+    if (pathname.startsWith("/library"))  return "/library/browse"
     if (pathname.startsWith("/read/"))    return "/reading"
+    if (pathname.startsWith("/reading"))  return "/reading"
+    if (pathname.startsWith("/bookmarks")) return "/bookmarks"
+    if (pathname.startsWith("/shelves"))  return "/shelves"
+    if (pathname.startsWith("/author"))   return "/authors"
+    if (pathname.startsWith("/explore"))  return "/explore"
+    if (pathname.startsWith("/timelines")) return "/timelines"
+    if (pathname.startsWith("/quiz"))     return "/quizzes"
+    if (pathname.startsWith("/dashboard")) return "/dashboard"
+    if (pathname.startsWith("/account"))  return "/account"
+    if (pathname.startsWith("/teacher/guided-learning")) return "/teacher/guided-learning"
     // Teacher sub-routes: keep their exact prefixes so they don't
     // also highlight the parent "/classroom" item
-    if (pathname.startsWith("/teacher/parents"))          return "/teacher/parents"
-    if (pathname.startsWith("/teacher/students"))        return "/classroom"
     if (pathname.startsWith("/classroom/quiz-builder")) return "/classroom/quiz-builder"
     if (pathname.startsWith("/classroom/grading"))      return "/classroom/grading"
-    if (pathname.startsWith("/classroom/create"))       return "/classroom"
-    if (pathname.startsWith("/classroom/"))             return "/classroom"
+    if (pathname.startsWith("/classroom"))              return "/classroom"
     return pathname
   })()
 
-  // Pending friend-request count powers the gold badge on the Friends entry.
-  const { incoming } = useFriendsData()
-  const pendingFriendRequests = incoming.length
+  // Until auth resolves we don't know the role, so we render a fixed-shape
+  // skeleton instead of the role-agnostic subset. Rendering the partial nav
+  // first and then adding role-specific items was the visible "profile type
+  // switching" — this replaces that role flip with a clean loading reveal.
+  if (isLoading) {
+    return <SidebarNavSkeleton />
+  }
 
   return (
-    <SidebarMenu ref={listRef}>
-      {navItems.map((item) => {
-        // Exact match for the home route
-        // For other routes, match activeHref exactly to prevent
-        // multiple items highlighting (e.g. /classroom and /classroom/quiz-builder)
-        const isActive =
-          item.href === "/"
-            ? pathname === "/"
-            : activeHref === item.href
+    <SidebarContent ref={listRef} className="gap-1 px-1.5 pt-2">
+      {navGroups.map((group) => (
+        <SidebarGroup key={group.label ?? group.items[0]?.href} className="px-1 py-1">
+          {group.label && <SidebarGroupLabel>{group.label}</SidebarGroupLabel>}
+          <SidebarGroupContent>
+            <SidebarMenu className="gap-0.5">
+              {group.items.map((item) => {
+                const isActive =
+                  item.href === "/"
+                    ? pathname === "/"
+                    : activeHref === item.href
 
-        return (
-          <SidebarMenuItem key={`${item.label}-${item.href}`}>
-            <SidebarMenuButton
-              isActive={isActive}
-              tooltip={item.label}
-              render={<Link href={item.href} onClick={() => { setOpen(false); setOpenMobile(false) }} />}
-            >
-              {/* Minimalist Lucide line icon — no animations, no entrance,
-               * no hover scale. 1.5 stroke reads scholarly. The
-               * SidebarMenuButton's data-[active=true] state handles the
-               * laurel-gold active swap; inactive items use a basic
-               * transition-colors only. */}
-              <item.icon
-                className="size-4 transition-colors duration-200"
-                strokeWidth={1.5}
-                aria-hidden="true"
-              />
-              <span>{item.label}</span>
-              {item.label === "Friends" && pendingFriendRequests > 0 && (
-                <span
-                  aria-label={`${pendingFriendRequests} pending friend ${pendingFriendRequests === 1 ? "request" : "requests"}`}
-                  className="ml-auto flex size-4 items-center justify-center rounded-full bg-[#D4A04C] text-[9px] font-bold text-[#1a1a2e]"
-                >
-                  {pendingFriendRequests > 9 ? "9+" : pendingFriendRequests}
-                </span>
-              )}
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-        )
-      })}
-    </SidebarMenu>
+                return (
+                  <SidebarMenuItem key={`${item.label}-${item.href}`}>
+                    <SidebarMenuButton
+                      isActive={isActive}
+                      tooltip={item.label}
+                      render={<Link href={item.href} onClick={() => { setOpen(false); setOpenMobile(false) }} />}
+                    >
+                      {/* Minimalist Lucide line icon — no animations, no entrance,
+                       * no hover scale. 1.5 stroke reads scholarly. */}
+                      <item.icon
+                        className="size-4 transition-colors duration-200"
+                        strokeWidth={1.5}
+                        aria-hidden="true"
+                      />
+                      <span>{item.label}</span>
+                    </SidebarMenuButton>
+                  </SidebarMenuItem>
+                )
+              })}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+      ))}
+    </SidebarContent>
+  )
+}
+
+// Deterministic loading placeholder (fixed widths — no Math.random, so it is
+// hydration-safe). Mirrors the grouped nav shape so the real nav reveals in
+// place without a layout jump or a role-dependent reflow.
+const SKELETON_GROUPS = [2, 4, 3, 1, 1]
+
+function SidebarNavSkeleton() {
+  return (
+    <SidebarContent className="gap-1 px-1.5 pt-2" aria-hidden="true">
+      {SKELETON_GROUPS.map((rows, gi) => (
+        <div key={gi} className="px-1 py-1">
+          <div className="mx-1 mb-1 h-3 w-16 rounded bg-muted/60" />
+          <div className="flex flex-col gap-0.5">
+            {Array.from({ length: rows }).map((_, ri) => (
+              <div key={ri} className="flex h-8 items-center gap-2 rounded-md px-2">
+                <div className="size-4 shrink-0 rounded bg-muted/60" />
+                <div className="h-3 flex-1 rounded bg-muted/40" />
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </SidebarContent>
   )
 }

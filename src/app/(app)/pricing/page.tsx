@@ -2,7 +2,6 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Lock } from "lucide-react"
-import { LandingNav } from "@/components/landing/LandingNav"
 import { LandingFooter } from "@/components/landing/LandingFooter"
 import { BillingPlans, type BillingPlanCard } from "@/components/pricing/BillingPlans"
 import { getBillingTiers } from "@/lib/billing/prices"
@@ -97,8 +96,6 @@ export default async function PricingPage({
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <LandingNav />
-
       <main className="px-6 pb-24 pt-32 md:px-12">
         {banner ? (
           <div className="mx-auto mb-10 flex max-w-3xl items-start gap-3 rounded-lg border border-primary/30 bg-primary/5 px-5 py-4">

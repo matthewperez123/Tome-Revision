@@ -118,6 +118,74 @@ export async function publishTeacherQuiz(
   }
 }
 
+/**
+ * Duplicate a quiz the teacher owns into a fresh DRAFT copy (title + " (copy)"),
+ * carrying over every setting and question (with answer key + grading metadata)
+ * so it can be edited independently. The copy is never published automatically.
+ */
+export async function duplicateTeacherQuiz(
+  quizId: string,
+): Promise<ActionResult<{ id: string }>> {
+  const parsed = Uuid.safeParse(quizId)
+  if (!parsed.success) return fail("Invalid quiz id.")
+  try {
+    const gate = await requireSchoolTools()
+    if (!gate.ok) return fail(gate.error)
+    const { supabase, user } = gate
+
+    const { data: quiz } = await supabase
+      .from("teacher_quizzes")
+      .select(
+        "id, teacher_id, title, book_id, chapter_range_start, chapter_range_end, difficulty, time_limit_minutes, passing_score, randomize_order, show_answers, hints_enabled, hint_point_penalty, allow_retakes",
+      )
+      .eq("id", parsed.data)
+      .maybeSingle()
+    if (!quiz || quiz.teacher_id !== user.id) return fail("You don't own that quiz.")
+
+    const { data: copy, error: copyErr } = await supabase
+      .from("teacher_quizzes")
+      .insert({
+        teacher_id: user.id,
+        title: `${quiz.title} (copy)`,
+        book_id: quiz.book_id,
+        chapter_range_start: quiz.chapter_range_start,
+        chapter_range_end: quiz.chapter_range_end,
+        difficulty: quiz.difficulty,
+        time_limit_minutes: quiz.time_limit_minutes,
+        passing_score: quiz.passing_score,
+        randomize_order: quiz.randomize_order,
+        show_answers: quiz.show_answers,
+        hints_enabled: quiz.hints_enabled,
+        hint_point_penalty: quiz.hint_point_penalty,
+        allow_retakes: quiz.allow_retakes,
+        status: "draft",
+      })
+      .select("id")
+      .single()
+    if (copyErr || !copy) return fail(copyErr?.message ?? "Failed to duplicate quiz.")
+
+    const { data: questions } = await supabase
+      .from("teacher_quiz_questions")
+      .select(
+        "question_type, question_text, options, correct_answer, explanation, points, sort_order, rubric, reference_answer, max_points, difficulty, category, hints, distractor_eliminations, source_anchor",
+      )
+      .eq("quiz_id", parsed.data)
+      .order("sort_order", { ascending: true })
+
+    if (questions && questions.length > 0) {
+      const { error: qErr } = await supabase
+        .from("teacher_quiz_questions")
+        .insert(questions.map((q) => ({ ...q, quiz_id: copy.id })))
+      if (qErr) return fail(qErr.message)
+    }
+
+    revalidatePath("/classroom/quiz-builder")
+    return ok({ id: copy.id })
+  } catch (e) {
+    return fail((e as Error).message)
+  }
+}
+
 // ── Assign ────────────────────────────────────────────────────────────────
 
 const AssignInput = z.object({

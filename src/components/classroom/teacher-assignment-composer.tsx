@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState, useTransition } from "react"
+import { useEffect, useMemo, useState, useTransition } from "react"
 import { useRouter } from "next/navigation"
 import {
   ClipboardList,
@@ -10,9 +10,8 @@ import {
   Layers,
   BookOpen,
   Brain,
-  Highlighter,
-  MessageCircle,
   PenTool,
+  X,
 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { toast } from "sonner"
@@ -21,15 +20,17 @@ import { Input } from "@/components/ui/input"
 import { useAuth } from "@/hooks/use-auth"
 import { createClient } from "@/lib/supabase/client"
 import { createAssignment, publishAssignment } from "@/lib/actions/assignments"
+import { getBooks, getChapters } from "@/lib/content"
 
 type Scope = "classroom" | "group" | "individuals"
-type Type = "reading" | "trial" | "annotation" | "discussion" | "essay"
+type Type = "reading" | "trial" | "essay"
 
+// Reading + essay ship end-to-end; Trial is the existing quiz path. Discussion
+// and annotation are intentionally omitted here (coming soon) so the composer
+// only offers types with a complete student loop.
 const TYPE_META: { v: Type; label: string; Icon: typeof BookOpen }[] = [
   { v: "reading", label: "Reading", Icon: BookOpen },
   { v: "trial", label: "Trial", Icon: Brain },
-  { v: "annotation", label: "Annotation", Icon: Highlighter },
-  { v: "discussion", label: "Discussion", Icon: MessageCircle },
   { v: "essay", label: "Essay", Icon: PenTool },
 ]
 
@@ -66,14 +67,14 @@ export function TeacherAssignmentComposer({
   const [description, setDescription] = useState("")
   const [type, setType] = useState<Type>("reading")
   const [bookId, setBookId] = useState("")
+  const [bookLabel, setBookLabel] = useState("")
+  const [bookQuery, setBookQuery] = useState("")
   const [chapterStart, setChapterStart] = useState("")
   const [chapterEnd, setChapterEnd] = useState("")
   const [trialId, setTrialId] = useState("")
-  const [discussionPrompt, setDiscussionPrompt] = useState("")
   const [essayPrompt, setEssayPrompt] = useState("")
   const [essayWordMin, setEssayWordMin] = useState("")
   const [essayWordMax, setEssayWordMax] = useState("")
-  const [annotationTarget, setAnnotationTarget] = useState("3")
   const [dueAt, setDueAt] = useState("")
   const [gracePeriodDays, setGracePeriodDays] = useState("0")
   const [latePenaltyPercent, setLatePenaltyPercent] = useState("0")
@@ -86,6 +87,25 @@ export function TeacherAssignmentComposer({
   const [peerReviewEnabled, setPeerReviewEnabled] = useState(false)
   const [reviewersPer, setReviewersPer] = useState(2)
   const [pending, startTransition] = useTransition()
+
+  // Book search (reading type) — filter the local catalog by title/author.
+  const bookMatches = useMemo(() => {
+    const q = bookQuery.trim().toLowerCase()
+    if (!q) return []
+    return getBooks()
+      .filter(
+        (b) =>
+          b.title.toLowerCase().includes(q) ||
+          b.author.toLowerCase().includes(q),
+      )
+      .slice(0, 8)
+  }, [bookQuery])
+
+  // Chapters for the selected book (0-based index = reader/reading_progress cursor).
+  const chapterOptions = useMemo(
+    () => (bookId ? getChapters(bookId) : []),
+    [bookId],
+  )
 
   useEffect(() => {
     if (!user || isDemoMode) {
@@ -153,14 +173,14 @@ export function TeacherAssignmentComposer({
     setDescription("")
     setType("reading")
     setBookId("")
+    setBookLabel("")
+    setBookQuery("")
     setChapterStart("")
     setChapterEnd("")
     setTrialId("")
-    setDiscussionPrompt("")
     setEssayPrompt("")
     setEssayWordMin("")
     setEssayWordMax("")
-    setAnnotationTarget("3")
     setDueAt("")
     setGracePeriodDays("0")
     setLatePenaltyPercent("0")
@@ -178,24 +198,21 @@ export function TeacherAssignmentComposer({
       title: title.trim(),
       description: description.trim() || undefined,
       type,
-      bookId:
-        type === "reading" || type === "annotation"
-          ? bookId.trim() || undefined
+      bookId: type === "reading" ? bookId.trim() || undefined : undefined,
+      chapterRangeStart:
+        type === "reading" && chapterStart !== ""
+          ? parseInt(chapterStart, 10)
           : undefined,
-      chapterRangeStart: chapterStart ? parseInt(chapterStart, 10) : undefined,
-      chapterRangeEnd: chapterEnd ? parseInt(chapterEnd, 10) : undefined,
+      chapterRangeEnd:
+        type === "reading" && chapterEnd !== ""
+          ? parseInt(chapterEnd, 10)
+          : undefined,
       trialId: type === "trial" ? trialId.trim() || undefined : undefined,
-      discussionPrompt:
-        type === "discussion" ? discussionPrompt.trim() || undefined : undefined,
       essayPrompt: type === "essay" ? essayPrompt.trim() || undefined : undefined,
       essayWordMin:
         type === "essay" && essayWordMin ? parseInt(essayWordMin, 10) : undefined,
       essayWordMax:
         type === "essay" && essayWordMax ? parseInt(essayWordMax, 10) : undefined,
-      annotationTarget:
-        type === "annotation" && annotationTarget
-          ? parseInt(annotationTarget, 10)
-          : undefined,
       dueAt: dueAt ? new Date(dueAt).toISOString() : undefined,
       gracePeriodDays: parseInt(gracePeriodDays || "0", 10),
       latePenaltyPercent: parseInt(latePenaltyPercent || "0", 10),
@@ -239,9 +256,8 @@ export function TeacherAssignmentComposer({
 
   const canSubmit =
     title.trim().length > 0 &&
-    !((type === "reading" || type === "annotation") && !bookId.trim()) &&
+    !(type === "reading" && !bookId.trim()) &&
     !(type === "trial" && !trialId.trim()) &&
-    !(type === "discussion" && !discussionPrompt.trim()) &&
     !(type === "essay" && !essayPrompt.trim()) &&
     !(scope === "group" && targetGroupIds.length === 0) &&
     !(scope === "individuals" && targetUserIds.length === 0)
@@ -321,44 +337,95 @@ export function TeacherAssignmentComposer({
               </div>
 
               {/* Conditional content fields */}
-              {(type === "reading" || type === "annotation") && (
-                <div className="grid grid-cols-3 gap-2">
-                  <Input
-                    value={bookId}
-                    onChange={(e) => setBookId(e.target.value)}
-                    placeholder="Book id (slug)"
-                    className="h-9 text-sm"
-                  />
-                  <Input
-                    value={chapterStart}
-                    onChange={(e) => setChapterStart(e.target.value)}
-                    placeholder="From ch."
-                    type="number"
-                    min={1}
-                    className="h-9 text-sm"
-                  />
-                  <Input
-                    value={chapterEnd}
-                    onChange={(e) => setChapterEnd(e.target.value)}
-                    placeholder="To ch. (opt)"
-                    type="number"
-                    min={1}
-                    className="h-9 text-sm"
-                  />
-                </div>
-              )}
-              {type === "annotation" && (
-                <div className="flex items-center gap-2">
-                  <label className="text-xs font-medium text-muted-foreground">
-                    Annotations required:
-                  </label>
-                  <Input
-                    value={annotationTarget}
-                    onChange={(e) => setAnnotationTarget(e.target.value)}
-                    type="number"
-                    min={1}
-                    className="h-9 w-20 text-sm"
-                  />
+              {type === "reading" && (
+                <div className="space-y-2">
+                  {bookId ? (
+                    <div className="flex items-center justify-between gap-2 rounded-md border border-border bg-muted/30 px-3 py-2">
+                      <span className="flex items-center gap-1.5 text-sm">
+                        <BookOpen className="size-3.5 text-muted-foreground" />
+                        {bookLabel}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setBookId("")
+                          setBookLabel("")
+                          setBookQuery("")
+                          setChapterStart("")
+                          setChapterEnd("")
+                        }}
+                        className="rounded p-0.5 text-muted-foreground hover:text-foreground"
+                        aria-label="Change book"
+                      >
+                        <X className="size-3.5" />
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="relative">
+                      <Input
+                        value={bookQuery}
+                        onChange={(e) => setBookQuery(e.target.value)}
+                        placeholder="Search a book by title or author…"
+                        className="h-9 text-sm"
+                      />
+                      {bookMatches.length > 0 && (
+                        <div className="absolute z-10 mt-1 max-h-56 w-full overflow-y-auto rounded-md border border-border bg-popover shadow-md">
+                          {bookMatches.map((b) => (
+                            <button
+                              key={b.id}
+                              type="button"
+                              onClick={() => {
+                                setBookId(b.id)
+                                setBookLabel(`${b.title} — ${b.author}`)
+                                setBookQuery("")
+                              }}
+                              className="flex w-full flex-col items-start px-3 py-1.5 text-left text-sm hover:bg-muted"
+                            >
+                              <span className="font-medium">{b.title}</span>
+                              <span className="text-[11px] text-muted-foreground">
+                                {b.author}
+                              </span>
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )}
+
+                  {bookId && chapterOptions.length > 0 && (
+                    <div className="grid grid-cols-2 gap-2">
+                      <label className="flex flex-col gap-1 text-[11px] text-muted-foreground">
+                        From chapter
+                        <select
+                          value={chapterStart}
+                          onChange={(e) => setChapterStart(e.target.value)}
+                          className="h-9 rounded-md border border-border bg-background px-2 text-sm"
+                        >
+                          <option value="">— start —</option>
+                          {chapterOptions.map((c) => (
+                            <option key={c.id} value={String(c.number)}>
+                              {c.title}
+                            </option>
+                          ))}
+                        </select>
+                      </label>
+                      <label className="flex flex-col gap-1 text-[11px] text-muted-foreground">
+                        Through chapter
+                        <select
+                          value={chapterEnd}
+                          onChange={(e) => setChapterEnd(e.target.value)}
+                          className="h-9 rounded-md border border-border bg-background px-2 text-sm"
+                        >
+                          <option value="">— same —</option>
+                          {chapterOptions.map((c) => (
+                            <option key={c.id} value={String(c.number)}>
+                              {c.title}
+                            </option>
+                          ))}
+                        </select>
+                      </label>
+                    </div>
+                  )}
                 </div>
               )}
               {type === "trial" && (
@@ -367,15 +434,6 @@ export function TeacherAssignmentComposer({
                   onChange={(e) => setTrialId(e.target.value)}
                   placeholder="Trial id"
                   className="h-9 text-sm"
-                />
-              )}
-              {type === "discussion" && (
-                <textarea
-                  value={discussionPrompt}
-                  onChange={(e) => setDiscussionPrompt(e.target.value)}
-                  placeholder="Discussion prompt"
-                  rows={2}
-                  className="w-full resize-none rounded-md border border-border bg-background px-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--tome-accent)]"
                 />
               )}
               {type === "essay" && (

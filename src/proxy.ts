@@ -109,13 +109,25 @@ export async function proxy(request: NextRequest) {
     return supabaseResponse
   }
 
-  // ── Protected routes ──
-
-  // No session → bounce to login, remembering where they were headed.
+  // ── Demo mode (no session) ──
+  //
+  // Unauthenticated visitors run the app shell in client-side DEMO mode — the
+  // "Use Beta" entry point. This mirrors the public demo at usetome.app: they
+  // can browse the app and preview the Reader / Teacher / Student experiences
+  // via the sidebar profile switcher (see use-auth.ts getDemoProfile()).
+  //
+  // This exposes NO server data: every read is RLS-scoped, so a session-less
+  // request sees only demo/empty content. Real, entitlement-gated surfaces keep
+  // their own guards — e.g. read/[bookId]/layout.tsx sorts free-sample from paid.
+  // Only /read/* requires a real account (server-authoritative reading progress
+  // lives in user_stats), so it stays gated to /login.
   if (!user) {
-    const loginUrl = new URL("/login", request.url)
-    loginUrl.searchParams.set("redirect", pathname + search)
-    return NextResponse.redirect(loginUrl)
+    if (pathname.startsWith("/read/") || pathname === "/read") {
+      const loginUrl = new URL("/login", request.url)
+      loginUrl.searchParams.set("redirect", pathname + search)
+      return NextResponse.redirect(loginUrl)
+    }
+    return supabaseResponse
   }
 
   // ── Authenticated user checks below ──

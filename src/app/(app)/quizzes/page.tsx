@@ -1,106 +1,170 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import Link from "next/link"
-import { Brain, ChevronRight, BookOpen, ArrowRight, Check } from "lucide-react"
-import { BlurFade } from "@/components/ui/blur-fade"
-import { getAllBookProgress, type BookProgress } from "@/lib/book-progress"
+import { Brain, ArrowRight, Search, History as HistoryIcon, GraduationCap } from "lucide-react"
 import { getBook } from "@/lib/content"
 import { BookCoverThumb } from "@/components/tome/book-cover-thumb"
 import { Skeleton } from "@/components/ui/skeleton"
+import { cn } from "@/lib/utils"
 import type { TomeBook } from "@/data/books"
+import {
+  loadPracticeData,
+  QUIZ_TIERS,
+  type QuizAttempt,
+  type QuizBookEntry,
+  type QuizTier,
+} from "@/lib/quizzes/practice"
 
-// Books with quiz content available
-const QUIZ_BOOKS = [
-  { key: "the-iliad", name: "The Iliad", chapters: [0, 1, 2, 3, 4] },
-  { key: "the-odyssey", name: "The Odyssey", chapters: [0, 1, 2, 3, 4] },
-  { key: "the-divine-comedy", name: "The Divine Comedy", chapters: [0, 1, 2, 3] },
-  { key: "hamlet", name: "Hamlet", chapters: [0, 1, 2, 3] },
-  { key: "pride-and-prejudice", name: "Pride and Prejudice", chapters: [0, 1, 2] },
-  { key: "crime-and-punishment", name: "Crime and Punishment", chapters: [0, 1, 2] },
-]
+// RUBRIC palette — practice tiers map to the canonical accents. Master carries
+// tyrian; Scholar lapis; Apprentice verdigris. (Iridescence stays Virgil-only.)
+const TIER_COLOR: Record<QuizTier, string> = {
+  Apprentice: "#2E7D6F",
+  Scholar: "#2A4B8D",
+  Master: "#6B2D5C",
+}
 
-interface QuizEntry {
+function relativeTime(iso: string): string {
+  const diff = Date.now() - new Date(iso).getTime()
+  const mins = Math.floor(diff / 60_000)
+  const hours = Math.floor(diff / 3_600_000)
+  const days = Math.floor(diff / 86_400_000)
+  if (mins < 1) return "just now"
+  if (mins < 60) return `${mins}m ago`
+  if (hours < 24) return `${hours}h ago`
+  if (days < 30) return `${days}d ago`
+  return new Date(iso).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })
+}
+
+interface Row {
+  entry: QuizBookEntry
   book: TomeBook
-  bookKey: string
-  chaptersWithQuiz: number[]
-  progress: BookProgress | null
-  completedQuizzes: number
 }
 
 export default function QuizzesPage() {
-  const [entries, setEntries] = useState<QuizEntry[]>([])
   const [loading, setLoading] = useState(true)
+  const [rows, setRows] = useState<Row[]>([])
+  const [history, setHistory] = useState<QuizAttempt[]>([])
+  const [query, setQuery] = useState("")
 
   useEffect(() => {
-    const allProgress = getAllBookProgress()
-    const items: QuizEntry[] = []
-    for (const qb of QUIZ_BOOKS) {
-      const book = getBook(qb.key)
-      if (!book) continue
-      const progress = allProgress[qb.key] ?? null
-      const completedQuizzes = progress?.quizResults?.length ?? 0
-      items.push({ book, bookKey: qb.key, chaptersWithQuiz: qb.chapters, progress, completedQuizzes })
+    let cancelled = false
+    async function load() {
+      const { books, history } = await loadPracticeData()
+      if (cancelled) return
+      const mapped: Row[] = []
+      for (const entry of books) {
+        const book = getBook(entry.bookId)
+        if (book) mapped.push({ entry, book })
+      }
+      // Assigned first, then books you've practiced, then alphabetical.
+      mapped.sort((a, b) => {
+        if (!!a.entry.assignedIn !== !!b.entry.assignedIn) return a.entry.assignedIn ? -1 : 1
+        const aPracticed = Object.keys(a.entry.stats).length > 0
+        const bPracticed = Object.keys(b.entry.stats).length > 0
+        if (aPracticed !== bPracticed) return aPracticed ? -1 : 1
+        return a.book.title.localeCompare(b.book.title)
+      })
+      setRows(mapped)
+      setHistory(history)
+      setLoading(false)
     }
-    setEntries(items)
-    setLoading(false)
+    load()
+    return () => { cancelled = true }
   }, [])
 
-  const inProgress = entries.filter(e => e.progress && e.completedQuizzes > 0 && e.completedQuizzes < e.chaptersWithQuiz.length)
+  const filtered = useMemo(() => {
+    const q = query.trim().toLowerCase()
+    if (!q) return rows
+    return rows.filter(
+      (r) => r.book.title.toLowerCase().includes(q) || r.book.author.toLowerCase().includes(q),
+    )
+  }, [rows, query])
+
+  const titleFor = (bookId: string) => getBook(bookId)?.title ?? bookId
 
   return (
-    <div className="flex flex-col min-h-full">
-      <div className="sticky top-0 z-10 border-b border-border bg-background/80 backdrop-blur-sm px-4 py-2.5">
-        <div className="flex items-center gap-2.5">
-          <Brain className="size-6 shrink-0 text-foreground" />
-          <h1 className="text-2xl font-bold tracking-tight">Quizzes</h1>
-          <p className="text-sm text-muted-foreground ml-auto">{QUIZ_BOOKS.length} books with quizzes</p>
+    <div className="min-h-screen pb-20">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8 space-y-6">
+        <div className="flex items-start gap-2.5">
+          <Brain className="size-6 shrink-0 text-foreground mt-0.5" />
+          <div>
+            <h1 className="text-2xl font-bold tracking-tight">Practice Quizzes</h1>
+            <p className="text-sm text-muted-foreground mt-0.5">
+              Free, unlimited practice across three tiers. Practice never counts toward a grade.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div className="flex-1 overflow-y-auto p-4 space-y-6">
-        {/* In-progress quizzes */}
-        {inProgress.length > 0 && (
-          <BlurFade delay={0.1} inView>
-            <section>
-              <h2 className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-3">Continue where you left off</h2>
-              <div className="space-y-2">
-                {inProgress.map((entry) => (
-                  <QuizCard key={entry.bookKey} entry={entry} highlighted />
-                ))}
-              </div>
-            </section>
-          </BlurFade>
+        {/* Recent attempts */}
+        {!loading && history.length > 0 && (
+          <section className="rounded-xl border border-border bg-card p-4">
+            <h2 className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3">
+              <HistoryIcon className="size-3.5" /> Recent attempts
+            </h2>
+            <ul className="space-y-1.5">
+              {history.map((a, i) => (
+                <li key={i} className="flex items-center gap-3 text-sm">
+                  <span className="flex-1 min-w-0 truncate">
+                    <span className="font-medium text-foreground">{titleFor(a.bookId)}</span>
+                    <span className="text-muted-foreground"> · Ch. {a.chapterIndex + 1}</span>
+                    {a.tier && <span className="text-muted-foreground"> · {a.tier}</span>}
+                  </span>
+                  <span
+                    className={cn(
+                      "shrink-0 tabular-nums font-semibold",
+                      a.percent >= 80 ? "text-[#2E7D6F]" : a.percent >= 50 ? "text-[var(--amber-default)]" : "text-muted-foreground",
+                    )}
+                  >
+                    {a.percent}%
+                  </span>
+                  <span className="shrink-0 w-16 text-right text-[11px] text-muted-foreground">
+                    {relativeTime(a.createdAt)}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
         )}
 
-        {/* All quizzes */}
-        <BlurFade delay={0.2} inView>
-          <section>
-            <h2 className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-3">All quizzes</h2>
-            <div className="space-y-2">
-              {loading ? (
-                <div role="status" aria-busy="true" aria-live="polite" className="space-y-2">
-                  <span className="sr-only">Loading your quizzes…</span>
-                  {Array.from({ length: 4 }).map((_, i) => (
-                    <Skeleton key={i} className="h-20 w-full rounded-lg" />
-                  ))}
-                </div>
-              ) : (
-                entries.map((entry, i) => (
-                  <BlurFade key={entry.bookKey} delay={0.03 + i * 0.02} inView>
-                    <QuizCard entry={entry} />
-                  </BlurFade>
-                ))
-              )}
-            </div>
-          </section>
-        </BlurFade>
+        {/* Search */}
+        {!loading && rows.length > 0 && (
+          <div className="relative">
+            <Search className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 size-4 text-muted-foreground" />
+            <input
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search books with quizzes…"
+              className="w-full rounded-lg border border-border bg-card pl-9 pr-3 py-2 text-sm outline-none focus:border-[var(--gold-default)]/50"
+            />
+          </div>
+        )}
 
-        {/* Browse more */}
-        <div className="text-center py-4">
-          <p className="text-xs text-muted-foreground mb-2">Start reading a book to unlock its chapter quizzes</p>
-          <Link href="/library/browse" className="inline-flex items-center gap-1.5 text-sm text-[var(--gold-default)] hover:opacity-80 transition-opacity">
-            Browse Library <ArrowRight className="size-3.5" />
+        {/* Book index */}
+        {loading ? (
+          <div className="space-y-2">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <Skeleton key={i} className="h-24 w-full rounded-xl" />
+            ))}
+          </div>
+        ) : filtered.length === 0 ? (
+          <div className="py-16 text-center text-sm text-muted-foreground">
+            {rows.length === 0 ? "No quizzes available yet." : "No books match your search."}
+          </div>
+        ) : (
+          <div className="space-y-2">
+            {filtered.map(({ entry, book }) => (
+              <QuizBookCard key={entry.bookId} entry={entry} book={book} />
+            ))}
+          </div>
+        )}
+
+        <div className="text-center pt-2">
+          <Link
+            href="/library/browse"
+            className="inline-flex items-center gap-1.5 text-sm text-[var(--gold-default)] hover:opacity-80 transition-opacity"
+          >
+            Browse the full library <ArrowRight className="size-3.5" />
           </Link>
         </div>
       </div>
@@ -108,39 +172,52 @@ export default function QuizzesPage() {
   )
 }
 
-function QuizCard({ entry, highlighted }: { entry: QuizEntry; highlighted?: boolean }) {
-  const totalQuizzes = entry.chaptersWithQuiz.length
-  const completed = entry.completedQuizzes
-  const pct = Math.round((completed / totalQuizzes) * 100)
-  const isComplete = completed >= totalQuizzes
-  const hasStarted = completed > 0
-
+function QuizBookCard({ entry, book }: { entry: QuizBookEntry; book: TomeBook }) {
   return (
-    <Link
-      href={`/read/${entry.bookKey}`}
-      className={`flex items-center gap-4 rounded-lg border p-4 transition-colors group ${
-        highlighted ? "border-[var(--gold-default)]/40 bg-[var(--gold-default)]/5" : "border-border bg-card hover:border-[var(--gold-default)]/30"
-      }`}
-    >
-      <BookCoverThumb book={entry.book} />
-      <div className="flex-1 min-w-0">
-        <p className="text-sm font-semibold text-foreground truncate">{entry.book.title}</p>
-        <p className="text-xs text-muted-foreground">{entry.book.author} &middot; {totalQuizzes} chapter quizzes</p>
-        <div className="flex items-center gap-2 mt-1.5">
-          {isComplete ? (
-            <span className="inline-flex items-center gap-1 text-[10px] text-[var(--green-default)]">
-              <Check className="size-3" /> Completed &middot; {completed}/{totalQuizzes}
+    <div className="flex gap-4 rounded-xl border border-border bg-card p-4">
+      <BookCoverThumb book={book} className="w-12" />
+      <div className="flex-1 min-w-0 space-y-2">
+        <div className="flex items-start justify-between gap-2">
+          <div className="min-w-0">
+            <p className="text-sm font-semibold text-foreground truncate">{book.title}</p>
+            <p className="text-xs text-muted-foreground truncate">{book.author}</p>
+          </div>
+          {entry.assignedIn && (
+            <span className="shrink-0 inline-flex items-center gap-1 rounded-full border border-[var(--gold-default)]/40 bg-[var(--gold-default)]/10 px-2 py-0.5 text-[10px] font-medium text-[var(--gold-default)]">
+              <GraduationCap className="size-3" /> Assigned in {entry.assignedIn}
             </span>
-          ) : hasStarted ? (
-            <span className="inline-flex items-center gap-1 text-[10px] text-[var(--amber-default)]">
-              In progress &middot; {completed}/{totalQuizzes}
-            </span>
-          ) : (
-            <span className="text-[10px] text-muted-foreground">Not started</span>
           )}
         </div>
+
+        <div className="flex flex-wrap gap-2">
+          {QUIZ_TIERS.map((tier) => {
+            const cov = entry.tiers.find((t) => t.tier === tier)
+            if (!cov) return null
+            const stat = entry.stats[tier]
+            const color = TIER_COLOR[tier]
+            return (
+              <Link
+                key={tier}
+                href={`/quiz/${cov.quizId}`}
+                className="group flex items-center gap-2 rounded-lg border px-2.5 py-1.5 transition-colors"
+                style={{ borderColor: `${color}55` }}
+              >
+                <span className="text-xs font-semibold" style={{ color }}>
+                  {tier}
+                </span>
+                {stat ? (
+                  <span className="text-[11px] text-muted-foreground tabular-nums">
+                    best {stat.bestPercent}% · {stat.attempts} {stat.attempts === 1 ? "try" : "tries"}
+                  </span>
+                ) : (
+                  <span className="text-[11px] text-muted-foreground">Practice</span>
+                )}
+                <ArrowRight className="size-3 text-muted-foreground/50 group-hover:translate-x-0.5 transition-transform" />
+              </Link>
+            )
+          })}
+        </div>
       </div>
-      <ChevronRight className="size-4 text-muted-foreground/30 group-hover:text-[var(--gold-default)] transition-colors shrink-0" />
-    </Link>
+    </div>
   )
 }

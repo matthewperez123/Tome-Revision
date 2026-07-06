@@ -1,74 +1,46 @@
 "use client"
 
-import { useMemo, useState, useTransition } from "react"
+import { useMemo, useState } from "react"
 import Link from "next/link"
 import {
   Bell,
   BookOpen,
-  UserPlus,
-  Heart,
-  Users,
-  Megaphone,
   GraduationCap,
   Check,
   PenSquare,
-  BookHeart,
-  ShieldQuestion,
-  MessageCircle,
   CheckCheck,
-  X,
 } from "lucide-react"
 import {
   useRealtimeNotifications,
   type AppNotification,
 } from "@/hooks/use-realtime-notifications"
 import { useAuth } from "@/hooks/use-auth"
-import {
-  acceptRecommendation,
-  rejectRecommendation,
-} from "@/lib/actions/recommendations"
 
 // ── Canonical type → icon / accent ─────────────────────────────────────────
 // RUBRIC palette: lapis #2A4B8D, gold #C8A24B, vermilion #C8553D,
 // verdigris #2E7D6F. Iridescence is reserved for Virgil — never used here.
 
 const TYPE_ICONS: Record<string, typeof Bell> = {
-  friend_request: UserPlus,
-  friend_accepted: Heart,
-  group_invite: Users,
-  group_post: Megaphone,
   class_assignment: GraduationCap,
   assignment_graded: Check,
-  parent_link_request: ShieldQuestion,
   session_summary: BookOpen,
   peer_review: PenSquare,
-  book_recommendation: BookHeart,
-  message: MessageCircle,
   system: Bell,
 }
 
 const LAPIS = "text-[#2A4B8D] dark:text-[#7BA0E0]"
-const GOLD = "text-[#C8A24B]"
-const VERMILION = "text-[#C8553D]"
 const VERDIGRIS = "text-[#2E7D6F] dark:text-[#5FB3A1]"
 
 const TYPE_COLORS: Record<string, string> = {
-  friend_request: LAPIS,
-  friend_accepted: VERMILION,
-  group_invite: LAPIS,
-  group_post: GOLD,
   class_assignment: LAPIS,
   assignment_graded: VERDIGRIS,
-  parent_link_request: GOLD,
   session_summary: LAPIS,
   peer_review: LAPIS,
-  book_recommendation: GOLD,
-  message: VERDIGRIS,
   system: "text-muted-foreground",
 }
 
 // Grouping buckets for the filter chips.
-type FilterId = "all" | "unread" | "classroom" | "social" | "family"
+type FilterId = "all" | "unread" | "classroom"
 
 const FILTERS: { id: FilterId; label: string; types: string[] | null }[] = [
   { id: "all", label: "All", types: null },
@@ -78,12 +50,6 @@ const FILTERS: { id: FilterId; label: string; types: string[] | null }[] = [
     label: "Classroom",
     types: ["class_assignment", "assignment_graded", "peer_review", "session_summary"],
   },
-  {
-    id: "social",
-    label: "Social",
-    types: ["friend_request", "friend_accepted", "group_invite", "group_post", "book_recommendation", "message"],
-  },
-  { id: "family", label: "Family", types: ["parent_link_request"] },
 ]
 
 function timeAgo(dateStr: string): string {
@@ -111,12 +77,6 @@ function deepLink(n: AppNotification): string | null {
     case "submission":
     case "assignment":
       return "/classroom"
-    case "friendship":
-      return "/friends"
-    case "group":
-      return `/clubs/${n.entityId}`
-    case "conversation":
-      return `/messages/${n.entityId}`
     case "session":
       return "/reading"
     default:
@@ -148,7 +108,7 @@ export default function NotificationsPage() {
           <Bell className="size-8 text-muted-foreground/40" />
           <p className="mt-3 text-sm font-medium">Sign in to see your notifications</p>
           <p className="mt-1 text-xs text-muted-foreground">
-            Friend requests, grades, and class updates will appear here.
+            Grades and class updates will appear here.
           </p>
         </div>
       </div>
@@ -216,7 +176,7 @@ export default function NotificationsPage() {
               {filter === "unread" ? "No unread notifications" : "You're all caught up"}
             </p>
             <p className="mt-1 text-xs text-muted-foreground">
-              Friend requests, grades, and class updates will appear here.
+              Grades and class updates will appear here.
             </p>
           </div>
         ) : (
@@ -244,21 +204,6 @@ function NotificationRow({
 }) {
   const Icon = TYPE_ICONS[notification.type] ?? Bell
   const color = TYPE_COLORS[notification.type] ?? "text-muted-foreground"
-
-  if (
-    notification.type === "book_recommendation" &&
-    notification.payload?.status === "received" &&
-    notification.entityId
-  ) {
-    return (
-      <RecommendationRow
-        notification={notification}
-        onRead={onRead}
-        Icon={Icon}
-        color={color}
-      />
-    )
-  }
 
   const href = deepLink(notification)
   const body = (
@@ -299,88 +244,3 @@ function NotificationRow({
   )
 }
 
-function RecommendationRow({
-  notification,
-  onRead,
-  Icon,
-  color,
-}: {
-  notification: AppNotification
-  onRead: () => void
-  Icon: typeof Bell
-  color: string
-}) {
-  const [pending, startTransition] = useTransition()
-  const [resolved, setResolved] = useState<"accepted" | "rejected" | null>(null)
-  const recId = notification.entityId!
-
-  function handleAccept(e: React.MouseEvent) {
-    e.preventDefault()
-    e.stopPropagation()
-    if (pending || resolved) return
-    startTransition(async () => {
-      const result = await acceptRecommendation(recId)
-      if (result.ok) {
-        setResolved("accepted")
-        setTimeout(onRead, 1000)
-      }
-    })
-  }
-
-  function handleReject(e: React.MouseEvent) {
-    e.preventDefault()
-    e.stopPropagation()
-    if (pending || resolved) return
-    startTransition(async () => {
-      const result = await rejectRecommendation(recId)
-      if (result.ok) {
-        setResolved("rejected")
-        setTimeout(onRead, 400)
-      }
-    })
-  }
-
-  return (
-    <div
-      className={`flex items-start gap-3 rounded-xl border p-4 ${
-        notification.read ? "border-border bg-card" : "border-[#C8A24B]/30 bg-[#C8A24B]/[0.05]"
-      } ${resolved === "rejected" ? "opacity-50" : ""}`}
-    >
-      <Icon className={`mt-0.5 size-5 shrink-0 ${color}`} aria-hidden="true" />
-      <div className="min-w-0 flex-1">
-        <p className={`text-sm leading-snug ${!notification.read && !resolved ? "font-semibold" : ""}`}>
-          {resolved === "accepted" ? "Added to your library" : notification.title}
-        </p>
-        {notification.body && resolved !== "accepted" && (
-          <p className="mt-0.5 text-xs text-muted-foreground">{notification.body}</p>
-        )}
-        {!resolved && (
-          <div className="mt-2 flex items-center gap-1.5">
-            <button
-              type="button"
-              onClick={handleAccept}
-              disabled={pending}
-              className="flex size-7 items-center justify-center rounded-full bg-[#C8A24B]/15 text-[#C8A24B] transition-colors hover:bg-[#C8A24B]/25 disabled:opacity-50"
-              aria-label="Accept recommendation"
-            >
-              <Check className="size-3.5" strokeWidth={2.5} />
-            </button>
-            <button
-              type="button"
-              onClick={handleReject}
-              disabled={pending}
-              className="flex size-7 items-center justify-center rounded-full bg-[#C8553D]/10 text-[#C8553D] transition-colors hover:bg-[#C8553D]/20 disabled:opacity-50"
-              aria-label="Reject recommendation"
-            >
-              <X className="size-3.5" strokeWidth={2.5} />
-            </button>
-          </div>
-        )}
-      </div>
-      <div className="flex shrink-0 flex-col items-end gap-1.5">
-        <span className="text-[10px] text-muted-foreground">{timeAgo(notification.createdAt)}</span>
-        {!notification.read && !resolved && <span className="size-2 rounded-full bg-[#C8A24B]" />}
-      </div>
-    </div>
-  )
-}

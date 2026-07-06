@@ -3,12 +3,14 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
-import { Plus, Feather, Edit3, Sparkles, X } from "lucide-react"
+import { Plus, Feather, Edit3, Sparkles, X, Copy } from "lucide-react"
+import { toast } from "sonner"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
 import { getBooks } from "@/lib/content"
+import { duplicateTeacherQuiz } from "@/lib/actions/teacher-quizzes"
 
 interface TeacherQuiz {
   id: string
@@ -24,6 +26,7 @@ export default function QuizBuilderPage() {
   const { user, isDemoMode } = useAuth()
   const [quizzes, setQuizzes] = useState<TeacherQuiz[]>([])
   const [loading, setLoading] = useState(true)
+  const [duplicatingId, setDuplicatingId] = useState<string | null>(null)
 
   // "Generate with Virgil" — creates a fully-authored draft via the teacher
   // task pipeline (POST /api/virgil task=teacher_quiz), then opens it.
@@ -122,6 +125,18 @@ export default function QuizBuilderPage() {
     fetchQuizzes()
   }, [user, isDemoMode])
 
+  async function handleDuplicate(quizId: string) {
+    if (isDemoMode || !user || duplicatingId) return
+    setDuplicatingId(quizId)
+    const res = await duplicateTeacherQuiz(quizId)
+    if (res.ok) {
+      window.location.href = `/classroom/quiz-builder/${res.data.id}`
+    } else {
+      toast.error(res.error)
+      setDuplicatingId(null)
+    }
+  }
+
   async function createNewQuiz() {
     if (isDemoMode || !user) {
       // Demo mode: create a local ID and navigate
@@ -197,10 +212,11 @@ export default function QuizBuilderPage() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.05 }}
+              className="flex items-stretch gap-2"
             >
               <Link
                 href={`/classroom/quiz-builder/${quiz.id}`}
-                className="flex items-center gap-4 rounded-xl border bg-card p-4 transition-colors hover:bg-muted/50"
+                className="flex flex-1 items-center gap-4 rounded-xl border bg-card p-4 transition-colors hover:bg-muted/50"
               >
                 <div className="flex size-10 items-center justify-center rounded-lg bg-[var(--tome-accent)]">
                   <Feather className="size-5 text-white" />
@@ -220,6 +236,15 @@ export default function QuizBuilderPage() {
                 </span>
                 <Edit3 className="size-4 text-muted-foreground" />
               </Link>
+              <button
+                type="button"
+                onClick={() => handleDuplicate(quiz.id)}
+                disabled={isDemoMode || !user || duplicatingId === quiz.id}
+                title="Duplicate quiz"
+                className="flex items-center justify-center rounded-xl border bg-card px-3 text-muted-foreground transition-colors hover:bg-muted/50 hover:text-foreground disabled:opacity-50"
+              >
+                <Copy className="size-4" />
+              </button>
             </motion.div>
           ))}
         </div>

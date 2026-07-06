@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import { LandingNav } from "@/components/landing/LandingNav"
 import { LandingFooter } from "@/components/landing/LandingFooter"
 import { SUPPORT_EMAIL } from "@/lib/support"
 
@@ -13,7 +12,6 @@ export const metadata: Metadata = {
 export default function AccessibilityPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <LandingNav />
       <main className="px-6 pb-24 pt-32 md:px-12">
         <article className="mx-auto max-w-3xl">
           <header className="mb-12">

@@ -1028,8 +1028,10 @@ export type Database = {
       }
       grade_history: {
         Row: {
+          ai_draft_score: number | null
           changed_at: string
           changed_by: string
+          final_score: number | null
           grade_id: string
           id: string
           previous_feedback: string | null
@@ -1037,8 +1039,10 @@ export type Database = {
           previous_score: number | null
         }
         Insert: {
+          ai_draft_score?: number | null
           changed_at?: string
           changed_by: string
+          final_score?: number | null
           grade_id: string
           id?: string
           previous_feedback?: string | null
@@ -1046,8 +1050,10 @@ export type Database = {
           previous_score?: number | null
         }
         Update: {
+          ai_draft_score?: number | null
           changed_at?: string
           changed_by?: string
+          final_score?: number | null
           grade_id?: string
           id?: string
           previous_feedback?: string | null
@@ -1136,12 +1142,15 @@ export type Database = {
           classroom_id: string | null
           color: string
           created_at: string
-          end_offset: number
+          end_offset: number | null
           id: string
+          kind: string
+          label: string | null
           note: string | null
-          selected_text: string
+          paragraph_anchor: string | null
+          selected_text: string | null
           shared: boolean
-          start_offset: number
+          start_offset: number | null
           updated_at: string
           user_id: string
         }
@@ -1151,12 +1160,15 @@ export type Database = {
           classroom_id?: string | null
           color?: string
           created_at?: string
-          end_offset: number
+          end_offset?: number | null
           id?: string
+          kind?: string
+          label?: string | null
           note?: string | null
-          selected_text: string
+          paragraph_anchor?: string | null
+          selected_text?: string | null
           shared?: boolean
-          start_offset: number
+          start_offset?: number | null
           updated_at?: string
           user_id: string
         }
@@ -1166,12 +1178,15 @@ export type Database = {
           classroom_id?: string | null
           color?: string
           created_at?: string
-          end_offset?: number
+          end_offset?: number | null
           id?: string
+          kind?: string
+          label?: string | null
           note?: string | null
-          selected_text?: string
+          paragraph_anchor?: string | null
+          selected_text?: string | null
           shared?: boolean
-          start_offset?: number
+          start_offset?: number | null
           updated_at?: string
           user_id?: string
         }
@@ -1677,6 +1692,39 @@ export type Database = {
         }
         Relationships: []
       }
+      student_activity: {
+        Row: {
+          user_id: string
+          classroom_id: string
+          surface: string
+          book_id: string | null
+          chapter_index: number | null
+          assignment_id: string | null
+          detail: string | null
+          last_seen_at: string
+        }
+        Insert: {
+          user_id: string
+          classroom_id: string
+          surface: string
+          book_id?: string | null
+          chapter_index?: number | null
+          assignment_id?: string | null
+          detail?: string | null
+          last_seen_at?: string
+        }
+        Update: {
+          user_id?: string
+          classroom_id?: string
+          surface?: string
+          book_id?: string | null
+          chapter_index?: number | null
+          assignment_id?: string | null
+          detail?: string | null
+          last_seen_at?: string
+        }
+        Relationships: []
+      }
       questions: {
         Row: {
           category: string | null
@@ -1800,6 +1848,8 @@ export type Database = {
           book_id: string
           chapter_index: number
           page: number | null
+          paragraph_anchor: string | null
+          percent: number | null
           scroll_ratio: number | null
           updated_at: string
           user_id: string
@@ -1808,6 +1858,8 @@ export type Database = {
           book_id: string
           chapter_index?: number
           page?: number | null
+          paragraph_anchor?: string | null
+          percent?: number | null
           scroll_ratio?: number | null
           updated_at?: string
           user_id: string
@@ -1816,8 +1868,34 @@ export type Database = {
           book_id?: string
           chapter_index?: number
           page?: number | null
+          paragraph_anchor?: string | null
+          percent?: number | null
           scroll_ratio?: number | null
           updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      shelf_items: {
+        Row: {
+          book_id: string
+          created_at: string
+          id: string
+          shelf: string
+          user_id: string
+        }
+        Insert: {
+          book_id: string
+          created_at?: string
+          id?: string
+          shelf: string
+          user_id: string
+        }
+        Update: {
+          book_id?: string
+          created_at?: string
+          id?: string
+          shelf?: string
           user_id?: string
         }
         Relationships: []

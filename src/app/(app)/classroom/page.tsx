@@ -2,11 +2,14 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { motion } from "framer-motion"
-import { Users, BookOpen, Copy, Plus, Check, LogIn, GraduationCap } from "lucide-react"
+import { Users, BookOpen, Copy, Plus, Check, GraduationCap, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
+import { isValidJoinCode } from "@/lib/classroom-utils"
+import { RUBRIC } from "@/lib/semester-plan/rubric"
 
 type ClassroomRole = "owner" | "co_teacher" | "ta" | "student"
 
@@ -19,6 +22,10 @@ interface ClassroomData {
   active_assignments: number
   /** Viewer's role in this classroom. */
   my_role: ClassroomRole
+  /** Student view: soonest due date for work not yet submitted. */
+  next_due: string | null
+  /** Student view: has active work not yet submitted (drives the unread dot). */
+  unread: boolean
 }
 
 const ROLE_LABEL: Record<ClassroomRole, string> = {
@@ -88,7 +95,7 @@ export default function ClassroomDashboard() {
       const withCounts: ClassroomData[] = await Promise.all(
         rows.map(async (r) => {
           const c = r.classroom!
-          const [{ count: studentCount }, { count: assignmentCount }] = await Promise.all([
+          const [{ count: studentCount }, { data: activeAssignments }] = await Promise.all([
             supabase
               .from("classroom_members")
               .select("*", { count: "exact", head: true })
@@ -96,18 +103,47 @@ export default function ClassroomDashboard() {
               .eq("role", "student"),
             supabase
               .from("assignments")
-              .select("*", { count: "exact", head: true })
+              .select("id, due_date")
               .eq("classroom_id", c.id)
               .eq("status", "active"),
           ])
+
+          // Nearest-due + unread are a student concern only. A card is "unread"
+          // when it holds active work the student hasn't submitted yet; the
+          // nearest of those due dates surfaces on the card.
+          let nextDue: string | null = null
+          let unread = false
+          const active = activeAssignments ?? []
+          if (r.role === "student" && active.length > 0) {
+            const { data: subs } = await supabase
+              .from("assignment_submissions")
+              .select("assignment_id, status")
+              .eq("student_id", user!.id)
+              .in("assignment_id", active.map((a) => a.id))
+            const done = new Set(
+              (subs ?? [])
+                .filter((s) => s.status === "submitted" || s.status === "graded")
+                .map((s) => s.assignment_id),
+            )
+            const pending = active.filter((a) => !done.has(a.id))
+            unread = pending.length > 0
+            const dueDates = pending
+              .map((a) => a.due_date)
+              .filter((d): d is string => !!d)
+              .sort()
+            nextDue = dueDates[0] ?? null
+          }
+
           return {
             id: c.id,
             name: c.name,
             subject: c.subject,
             join_code: c.join_code,
             student_count: studentCount ?? 0,
-            active_assignments: assignmentCount ?? 0,
+            active_assignments: active.length,
             my_role: r.role,
+            next_due: nextDue,
+            unread,
           }
         }),
       )
@@ -131,22 +167,17 @@ export default function ClassroomDashboard() {
             {isTeacher ? "Your Classrooms" : "My Classes"}
           </h1>
         </div>
-        {isTeacher ? (
+        {isTeacher && (
           <Link href="/classroom/create">
             <Button size="sm" className="gap-1.5">
               <Plus className="size-4" />
               Create classroom
             </Button>
           </Link>
-        ) : (
-          <Link href="/classroom/join">
-            <Button size="sm" variant="outline" className="gap-1.5">
-              <LogIn className="size-4" />
-              Join a class
-            </Button>
-          </Link>
         )}
       </div>
+
+      {!isTeacher && !isDemoMode && <StudentJoinCard />}
 
       {loading ? (
         <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -183,7 +214,16 @@ export default function ClassroomDashboard() {
               >
                 <div className="flex items-start justify-between">
                   <div>
-                    <h2 className="text-lg font-semibold">{cls.name}</h2>
+                    <h2 className="flex items-center gap-2 text-lg font-semibold">
+                      {cls.name}
+                      {cls.unread && (
+                        <span
+                          className="inline-block size-2 shrink-0 rounded-full"
+                          style={{ backgroundColor: RUBRIC.vermilion }}
+                          aria-label="Work due"
+                        />
+                      )}
+                    </h2>
                     {cls.subject && (
                       <span className="mt-1 inline-block text-xs bg-[#D4A04C]/10 text-[#D4A04C] px-2 py-0.5 rounded-full">
                         {cls.subject}
@@ -208,6 +248,16 @@ export default function ClassroomDashboard() {
                   </span>
                 </div>
 
+                {cls.my_role === "student" && cls.next_due && (
+                  <p className="mt-2 text-xs font-medium" style={{ color: RUBRIC.lapis }}>
+                    Next due{" "}
+                    {new Date(cls.next_due).toLocaleDateString("en-US", {
+                      month: "short",
+                      day: "numeric",
+                    })}
+                  </p>
+                )}
+
                 {(cls.my_role === "owner" || cls.my_role === "co_teacher") && (
                   <JoinCodeBadge code={cls.join_code} />
                 )}
@@ -216,6 +266,53 @@ export default function ClassroomDashboard() {
           ))}
         </div>
       )}
+    </div>
+  )
+}
+
+function StudentJoinCard() {
+  const router = useRouter()
+  const [code, setCode] = useState("")
+  const valid = isValidJoinCode(code)
+
+  const submit = () => {
+    if (!valid) return
+    router.push(`/classroom/join?code=${encodeURIComponent(code)}`)
+  }
+
+  return (
+    <div
+      className="mt-6 rounded-2xl border p-5"
+      style={{ borderColor: `${RUBRIC.lapis}33`, backgroundColor: `${RUBRIC.lapis}0A` }}
+    >
+      <p className="text-sm font-semibold" style={{ color: RUBRIC.lapis }}>
+        Join a class
+      </p>
+      <p className="mt-0.5 text-xs text-muted-foreground">
+        Enter the 6-character code from your teacher
+      </p>
+      <div className="mt-3 flex gap-2">
+        <input
+          value={code}
+          onChange={(e) => setCode(e.target.value.toUpperCase().slice(0, 6))}
+          onKeyDown={(e) => e.key === "Enter" && submit()}
+          placeholder="ABC123"
+          maxLength={6}
+          aria-label="Class join code"
+          className="w-40 rounded-lg border border-border bg-background px-3 py-2 text-center font-mono text-lg uppercase tracking-[0.25em] outline-none focus:ring-2"
+          style={{ ["--tw-ring-color" as string]: RUBRIC.lapis }}
+        />
+        <Button
+          onClick={submit}
+          disabled={!valid}
+          size="sm"
+          className="gap-1.5 text-white"
+          style={{ backgroundColor: RUBRIC.lapis }}
+        >
+          Join
+          <ArrowRight className="size-4" />
+        </Button>
+      </div>
     </div>
   )
 }
