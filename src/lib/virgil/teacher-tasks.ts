@@ -207,7 +207,8 @@ async function handleTeacherQuiz(raw: unknown, ctx: TaskCtx): Promise<Response> 
     TASK_CONFIG.teacher_quiz.model,
   )
   if (saved.status === 200) {
-    const quizId = (saved.json as { quizId?: string } | null)?.quizId ?? null
+    const quizId =
+      (saved.json as { draft?: { id?: string } } | null)?.draft?.id ?? null
     await recordTaskEvent(ctx.userId, "teacher_quiz", quizId)
   }
   return Response.json(saved.json, { status: saved.status })
