@@ -8,6 +8,7 @@ import {
   type PlanSetup,
 } from "@/lib/semester-plan/types"
 import { repairPlan, type RepairResult } from "@/lib/semester-plan/catalog"
+import { withAnthropicRetry } from "@/lib/virgil/retry"
 
 // Whole-term planning needs real reasoning; haiku is too weak. Sonnet is the
 // default; opus handles ambitious surveys + deep thematic threading.
@@ -142,7 +143,7 @@ export async function generateSemesterPlan(opts: {
     : buildInstruction(opts.setup)
 
   const run = async () => {
-    const msg = await client.messages.create({
+    const msg = await withAnthropicRetry(() => client.messages.create({
       model,
       max_tokens: 8192,
       system: [
@@ -158,7 +159,7 @@ export async function generateSemesterPlan(opts: {
         },
       ],
       messages: [{ role: "user", content: instruction }],
-    })
+    }))
     const block = msg.content.find((b) => b.type === "text")
     const text = block && block.type === "text" ? block.text : ""
     const parsed = generatedPlanSchema.parse(extractJson(text))
