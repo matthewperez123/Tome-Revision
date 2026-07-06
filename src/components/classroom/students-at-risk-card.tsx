@@ -15,14 +15,20 @@ interface AtRiskStudent {
 }
 
 export function StudentsAtRiskCard({ classroomId }: { classroomId?: string }) {
-  const { user, isDemoMode } = useAuth()
+  const { user, isDemoMode, isLoading: authLoading } = useAuth()
   const [students, setStudents] = useState<AtRiskStudent[]>([])
+  const [error, setError] = useState(false)
 
   useEffect(() => {
+    // Wait for auth to settle before treating a null user as signed-out.
+    if (authLoading) return
     if (isDemoMode || !user) {
       setStudents([])
+      setError(false)
       return
     }
+
+    let cancelled = false
 
     async function fetchAtRisk() {
       const supabase = createClient()
@@ -31,27 +37,41 @@ export function StudentsAtRiskCard({ classroomId }: { classroomId?: string }) {
       if (classroomId) {
         classroomIds = [classroomId]
       } else {
-        const { data: classrooms } = await supabase
+        const { data: classrooms, error: classErr } = await supabase
           .from("classrooms")
           .select("id")
           .eq("teacher_id", user!.id)
           .eq("archived", false)
 
+        if (cancelled) return
+        // A failed read must not read as "all on track".
+        if (classErr) {
+          setError(true)
+          return
+        }
         classroomIds = (classrooms ?? []).map((c) => c.id)
       }
 
       if (!classroomIds.length) {
         setStudents([])
+        setError(false)
         return
       }
 
       const now = new Date()
-      const { data: overdueAssignments } = await supabase
+      const { data: overdueAssignments, error: overdueErr } = await supabase
         .from("assignments")
         .select("id, classroom_id, title")
         .in("classroom_id", classroomIds)
         .eq("status", "active")
         .lt("due_date", now.toISOString())
+
+      if (cancelled) return
+      if (overdueErr) {
+        setError(true)
+        return
+      }
+      setError(false)
 
       if (!overdueAssignments?.length) {
         setStudents([])
@@ -97,11 +117,30 @@ export function StudentsAtRiskCard({ classroomId }: { classroomId?: string }) {
         return true
       })
 
+      if (cancelled) return
       setStudents(unique.slice(0, 5))
     }
 
     fetchAtRisk()
-  }, [user, classroomId, isDemoMode])
+
+    return () => {
+      cancelled = true
+    }
+  }, [user, classroomId, isDemoMode, authLoading])
+
+  if (error) {
+    return (
+      <div className="rounded-2xl border bg-card p-5">
+        <div className="flex items-center gap-2">
+          <AlertTriangle className="size-4 text-muted-foreground" />
+          <h3 className="text-sm font-semibold">Students at Risk</h3>
+        </div>
+        <p className="mt-4 text-center text-sm text-muted-foreground py-4">
+          Couldn&apos;t check student progress right now.
+        </p>
+      </div>
+    )
+  }
 
   if (students.length === 0) {
     return (

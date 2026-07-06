@@ -48,11 +48,13 @@ function getCountdown(dueDate: string): { text: string; urgent: boolean } {
 }
 
 export function UpcomingAssignments() {
-  const { user } = useAuth()
+  const { user, isLoading: authLoading } = useAuth()
   const [assignments, setAssignments] = useState<UpcomingAssignment[]>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    // Wait for auth to settle before treating a null user as signed-out.
+    if (authLoading) return
     if (!user) { setLoading(false); return }
 
     async function fetchAssignments() {
@@ -111,7 +113,7 @@ export function UpcomingAssignments() {
     }
 
     fetchAssignments()
-  }, [user])
+  }, [user, authLoading])
 
   // Don't render if no assignments
   if (loading || assignments.length === 0) return null

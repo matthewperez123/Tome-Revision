@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useMemo, useState } from "react"
+import { useCallback, useEffect, useMemo, useState } from "react"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
 
@@ -31,25 +31,43 @@ function colorForId(id: string): string {
  * teacher has no classrooms or no enrolled students yet.
  */
 export function useTeacherStudents() {
-  const { user, isDemoMode } = useAuth()
+  const { user, isDemoMode, isLoading: authLoading } = useAuth()
   const [students, setStudents] = useState<TeacherStudent[]>([])
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+  // Bumped by reload() to re-run the fetch after a transient failure.
+  const [attempt, setAttempt] = useState(0)
+  const reload = useCallback(() => setAttempt((n) => n + 1), [])
 
   useEffect(() => {
+    // Wait for auth to settle before deciding — a null user during resolution is
+    // not the same as "signed out", and must not render as an empty roster.
+    if (authLoading) return
     if (!user || isDemoMode) {
       setStudents([])
+      setError(null)
       setLoading(false)
       return
     }
 
     let cancelled = false
+    setLoading(true)
+    setError(null)
     ;(async () => {
       const supabase = createClient()
 
-      const { data: classes } = await supabase
+      const { data: classes, error: classErr } = await supabase
         .from("classrooms")
         .select("id, name")
         .eq("teacher_id", user.id)
+
+      if (cancelled) return
+      if (classErr) {
+        // A failed read is NOT an empty roster — surface it instead of lying.
+        setError("Couldn't load your students. Check your connection and try again.")
+        setLoading(false)
+        return
+      }
 
       const classIds = (classes ?? []).map((c) => c.id)
       if (classIds.length === 0) {
@@ -64,13 +82,18 @@ export function useTeacherStudents() {
         (classes ?? []).map((c) => [c.id, c.name as string]),
       )
 
-      const { data: members } = await supabase
+      const { data: members, error: memberErr } = await supabase
         .from("classroom_members")
         .select("classroom_id, student_id, role, profiles(display_name, avatar_url)")
         .in("classroom_id", classIds)
         .eq("role", "student")
 
       if (cancelled) return
+      if (memberErr) {
+        setError("Couldn't load your students. Check your connection and try again.")
+        setLoading(false)
+        return
+      }
 
       const byId = new Map<string, TeacherStudent>()
       for (const m of members ?? []) {
@@ -107,7 +130,10 @@ export function useTeacherStudents() {
     return () => {
       cancelled = true
     }
-  }, [user, isDemoMode])
+  }, [user, isDemoMode, authLoading, attempt])
 
-  return useMemo(() => ({ students, loading }), [students, loading])
+  return useMemo(
+    () => ({ students, loading, error, reload }),
+    [students, loading, error, reload],
+  )
 }

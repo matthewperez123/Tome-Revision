@@ -38,11 +38,13 @@ function scoreColor(pct: number): string {
 }
 
 export function RecentlyGraded() {
-  const { user } = useAuth()
+  const { user, isLoading: authLoading } = useAuth()
   const [items, setItems] = useState<GradedItem[]>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    // Wait for auth to settle before treating a null user as signed-out.
+    if (authLoading) return
     if (!user) {
       setLoading(false)
       return
@@ -93,7 +95,7 @@ export function RecentlyGraded() {
     }
 
     fetchGraded()
-  }, [user])
+  }, [user, authLoading])
 
   if (loading || items.length === 0) return null
 

@@ -70,20 +70,30 @@ export function ClassroomRosterPanel({
   const { user, isDemoMode } = useAuth()
   const [members, setMembers] = useState<MemberRow[]>([])
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
   const load = useCallback(async () => {
     if (!user || isDemoMode) {
       setLoading(false)
       return
     }
+    setLoading(true)
+    setError(null)
     const supabase = createClient()
-    const { data } = await supabase
+    const { data, error: loadErr } = await supabase
       .from("classroom_members")
       .select(
         `id, student_id, role, joined_at,
          profile:profiles!classroom_members_student_id_fkey(display_name, username, avatar_url)`,
       )
       .eq("classroom_id", classroomId)
+
+    // A failed read is NOT an empty roster — surface it instead of hiding the panel.
+    if (loadErr) {
+      setError("Couldn't load the roster. Check your connection and try again.")
+      setLoading(false)
+      return
+    }
 
     type Raw = {
       id: string
@@ -146,7 +156,7 @@ export function ClassroomRosterPanel({
     load()
   }
 
-  if (isDemoMode || (!loading && !isStaff)) return null
+  if (isDemoMode || (!loading && !error && !isStaff)) return null
 
   return (
     <div className="mt-8">
@@ -171,7 +181,18 @@ export function ClassroomRosterPanel({
         {loading && (
           <div className="h-16 animate-pulse rounded-xl border border-border bg-muted/30" />
         )}
-        {!loading && members.length === 0 && (
+        {!loading && error && (
+          <div className="rounded-xl border border-[#C8553D]/25 py-8 text-center">
+            <p className="text-sm font-medium text-[#C8553D]">{error}</p>
+            <button
+              onClick={() => load()}
+              className="mt-2 rounded-md px-3 py-1.5 text-xs font-medium text-indigo-600 transition-colors hover:bg-muted dark:text-indigo-300"
+            >
+              Try again
+            </button>
+          </div>
+        )}
+        {!loading && !error && members.length === 0 && (
           <p className="rounded-xl border border-dashed border-border py-8 text-center text-sm text-muted-foreground">
             No members yet. Share the join code or send an invite to get started.
           </p>

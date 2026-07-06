@@ -55,6 +55,45 @@ Go through the 11 steps in order. For each, note: **works**, **broken**
 (what you saw vs. expected), or **confusing**. That numbered list becomes the
 punch list for the next phase.
 
+## Asset load/save reliability checks (today/asset-loadsave-reliability)
+
+Run these after the 11 steps to confirm assets save authoritatively, load
+truthfully, and covers never break. Each maps to a fix in Phases 1–3
+(see `docs/ASSET-AUDIT.md` → REMEDIATION LOG).
+
+**Saves (Phase 1) — the write must land or say why:**
+
+- **A1. Teacher quiz draft survives a reload.** Teacher browser → quiz builder →
+  create/edit a quiz, add a question, save. Reload the page. The question is
+  still there (write goes through the `saveTeacherQuiz` server action, which
+  inserts the new rows *before* deleting the old — no lossy delete-then-fail).
+- **A2. Announcement post confirms or errors — never silently no-ops.** Teacher →
+  post a class announcement. On success a toast fires and it appears in the
+  feed; on failure you get an error toast, not a cleared form that pretends it
+  worked.
+- **A3. Student answers / reading position persist.** Student browser → answer a
+  trial question and advance a chapter, then reload. Progress is retained.
+
+**Loads (Phase 2) — a failed fetch shows an error + retry, never a fake-empty:**
+
+- **A4. Roster / classroom lists.** Teacher → open a classroom. The roster,
+  activity feed, and stat cards render real data. If a query fails (kill the
+  network briefly and click retry), you see "Couldn't load…" + a **Try again**
+  button — NOT an empty roster or a reassuring "0 students / all on track" lie.
+- **A5. Dashboard cards don't invent zeros.** Teacher dashboard → the stat cards
+  show real counts, or `—` on error — never a fabricated `0`.
+- **A6. Auth-settled.** Hard-refresh any teacher surface. Lists must not flash
+  "empty / signed-out" while auth resolves; they wait for `authLoading` to
+  settle before deciding a null user means signed-out.
+
+**Covers (Phase 3) — every tile renders, zero failed image requests:**
+
+- **A7. Library covers.** Open `/library/browse`. Every book shows a cover
+  (procedural gradient + tradition motif). Open DevTools → Network, filter
+  `assets` — there must be **no** 404 for `/living-archive/assets/**` or
+  `/covers/tome/generated/images/**`. This is asserted automatically by
+  `e2e/asset-reliability.spec.ts` (Playwright; dev server on :3000).
+
 ## Reseeding / teardown
 
 - **Reset to clean state:** `npx tsx scripts/seed-test-walkthrough.ts` (idempotent — safe to re-run any time).
