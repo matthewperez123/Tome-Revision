@@ -3,19 +3,29 @@
 import { useState, useRef, useCallback } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
-import { BookOpen } from "lucide-react"
+import { BookOpen, ScanLine } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { verifyStudentAccess } from "@/lib/actions/student-auth"
 import { isValidStudentCode, normalizeStudentCode } from "@/lib/student-code"
+import { parseBadgeQrPayload } from "@/lib/badge-token"
+import { BadgeScanner } from "@/components/student/badge-scanner"
 
 const LAPIS = "#2A4B8D"
 
+/** True if a raw entry is a usable credential (typed code OR badge payload). */
+function isSubmittable(raw: string): boolean {
+  return isValidStudentCode(raw) || parseBadgeQrPayload(raw) !== null
+}
+
 /**
- * Code-only student sign-in. No email, no password — a student types (or, in
- * Phase 3, scans) the XXXX-XXXX code from their badge. The same input doubles
- * as the hardware-scanner target: wedge scanners type the code and press Enter,
- * which submits the form. All copy is age-appropriate and never mentions email
- * or account recovery.
+ * Code-only student sign-in. No email, no password — a student types OR scans
+ * the code from their badge. Three routes, ONE server path:
+ *   * typed XXXX-XXXX code,
+ *   * a wedge/USB scanner that types the badge QR payload + Enter (same input),
+ *   * the on-device camera scanner (BadgeScanner).
+ * Every route hands its raw value to verifyStudentAccess, which classifies and
+ * rate-limits it server-side. All copy is age-appropriate and never mentions
+ * email or account recovery.
  */
 export default function StudentLoginPage() {
   const router = useRouter()
@@ -23,21 +33,24 @@ export default function StudentLoginPage() {
   const [code, setCode] = useState("")
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
+  const [scanning, setScanning] = useState(false)
 
   const submit = useCallback(
     async (rawValue: string) => {
-      const value = normalizeStudentCode(rawValue)
-      if (!value) {
+      if (!isSubmittable(rawValue)) {
         setError("That code doesn't look right. Check it and try again.")
         return
       }
       setError(null)
       setLoading(true)
-      const result = await verifyStudentAccess(value)
+      // Pass the raw value straight through — the server action is the single
+      // classifier for both typed codes and scanned badge tokens.
+      const result = await verifyStudentAccess(rawValue)
       if (!result.ok) {
         setError(result.error)
         setLoading(false)
-        inputRef.current?.select()
+        setCode("")
+        inputRef.current?.focus()
         return
       }
       router.push(result.data.redirectTo)
@@ -47,13 +60,24 @@ export default function StudentLoginPage() {
   )
 
   function handleChange(raw: string) {
-    // Uppercase, keep only alphabet+dash, and auto-insert the dash after the
-    // first block so it always reads XXXX-XXXX as the student types or scans.
-    const cleaned = raw.toUpperCase().replace(/[^A-Z0-9]/g, "")
-    const formatted =
-      cleaned.length > 4 ? `${cleaned.slice(0, 4)}-${cleaned.slice(4, 8)}` : cleaned
-    setCode(formatted)
+    const upper = raw.toUpperCase()
+    // A wedge scanner types the whole badge payload (TOME-BADGE:…) into this
+    // field. Keep that intact; only apply XXXX-XXXX code formatting to short,
+    // human-typed input.
+    if (upper.includes("TOME-BADGE:") || upper.replace(/[^A-Z0-9]/g, "").length > 8) {
+      setCode(upper)
+    } else {
+      const cleaned = upper.replace(/[^A-Z0-9]/g, "")
+      setCode(
+        cleaned.length > 4 ? `${cleaned.slice(0, 4)}-${cleaned.slice(4, 8)}` : cleaned,
+      )
+    }
     if (error) setError(null)
+  }
+
+  function handleScanned(payload: string) {
+    setScanning(false)
+    void submit(payload)
   }
 
   return (
@@ -90,7 +114,7 @@ export default function StudentLoginPage() {
             autoFocus
             aria-label="Class code"
             placeholder="ABCD-EFGH"
-            maxLength={9}
+            maxLength={40}
             className="w-full rounded-xl border-2 border-border bg-card py-4 text-center font-mono text-2xl uppercase tracking-[0.3em] outline-none focus:border-[#2A4B8D]"
           />
 
@@ -103,12 +127,28 @@ export default function StudentLoginPage() {
           <Button
             type="submit"
             className="w-full text-base"
-            disabled={loading || !isValidStudentCode(code)}
+            disabled={loading || !isSubmittable(code)}
             style={{ backgroundColor: LAPIS }}
           >
             {loading ? "Checking…" : "Let's go"}
           </Button>
+
+          <button
+            type="button"
+            onClick={() => setScanning(true)}
+            className="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-border bg-card py-3 text-sm font-medium text-muted-foreground transition-colors hover:border-[#2A4B8D] hover:text-foreground"
+          >
+            <ScanLine className="size-4" />
+            Scan your badge instead
+          </button>
         </form>
+
+        {scanning && (
+          <BadgeScanner
+            onDetect={handleScanned}
+            onClose={() => setScanning(false)}
+          />
+        )}
 
         <p className="mt-8 text-xs text-muted-foreground">
           Are you a teacher?{" "}
