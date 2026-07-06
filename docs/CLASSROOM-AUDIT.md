@@ -306,3 +306,35 @@ and COPPA-safe. No new code was required; audited surfaces:
 `user_is_classroom_member`, `user_has_classroom_role`, `guided_session_participants`,
 `guided_sessions.annotations_enabled`. Note: `live_presence_enabled` has no migration file in this
 worktree but exists on the live DB (added out-of-band in an earlier session) — no DDL needed.
+
+---
+
+## PHASE 4 CLOSEOUT — collaborative annotations verified durable + moderated (no migration)
+
+The collaborative reader-annotation layer exists and satisfies all three properties. Audited:
+
+- **Collaborative** — `src/components/guided-learning/annotations/annotation-layer.tsx` uses
+  Liveblocks **Comments** (`<Composer>` / `<Thread>`), so many readers author threads on the same
+  passage in one shared room. Highlights are anchored with a W3C-style quote+prefix/suffix anchor
+  (`src/lib/annotations/anchor.ts`) stored flattened in `ThreadMetadata`, and re-found per rendered
+  page after pagination reflow.
+- **Durable** — annotations use Comments (persisted in Liveblocks storage), NOT the ephemeral
+  presence channel (cursors/selections that vanish on disconnect). They survive reload, reconnect,
+  and page turns. This is the durability contrast the layer is built around.
+- **Moderated** — teacher-only affordances gated on the **server-derived** `userInfo.role`
+  (`useSelf((me) => me.info.role === "teacher")`, never a client-set value): Endorse (toggles
+  `metadata.endorsed` → gold-leaf "Teacher clarification") and Delete (`useDeleteThread`). Colors
+  are flat RUBRIC (lapis peer / gold endorsed), **never iridescent** (Virgil-only).
+- **Privacy topology** — `collaborative` → one shared `gs:{sid}:{book}:{ch}` room; `private_to_
+  teacher` → per-student `…:{uid}` room, enforced by the auth endpoint (room id keyed on the
+  student's uid, server-checked), not client-side hiding. COPPA-safe (userInfo carries only
+  name/avatar/role).
+- **Mounted** — student side in `locked-reader.tsx` (`AnnotationLayer` with roomId/visibility/
+  presence); teacher review in `session-monitor-dashboard.tsx` (`TeacherAnnotationReview`, lists
+  every thread per reading target, endorse/delete). tsc clean for all annotation files.
+
+**Deferred to the Phase 5 design checkpoint (needs DDL):** a *stronger* durability guarantee — a
+Supabase `session_annotations` mirror fed by a Liveblocks webhook so annotations are queryable /
+auditable / recoverable server-side after a session ends (independent of the Liveblocks room
+lifecycle). This is the only annotation gap that requires a migration, so its table is a candidate
+for the single Phase 5 migration and will be presented there rather than minted ad hoc now.
