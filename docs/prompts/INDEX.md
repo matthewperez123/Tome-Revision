@@ -28,7 +28,7 @@ never runs alongside `marketing-nav-determinism` or `stripe-full-integration`.
 |------|-----------------|--------------------------------|------------|--------|
 | `tome-housekeeping-marketing-cta.md` (this lane) | `docs/prompts/`, marketing nav CTA, marketing `/library` hero | `marketing-nav-determinism` | `marketing-nav-determinism` Phase-2 CTA wording | `merged` |
 | `tome-marketing-nav-determinism.md` | Marketing top-nav mount + auth-slot determinism | `housekeeping-marketing-cta` | — | `merged` |
-| `tome-stripe-full-integration.md` | Stripe billing (checkout, webhook, entitlement) | `student-badge-login` | SHIP master's Stripe phases | `queued` |
+| `tome-stripe-full-integration.md` | Stripe billing (checkout, webhook, entitlement) | `student-badge-login` | SHIP master's Stripe phases | `merged` |
 | `tome-virgil-surfaces-functional.md` | Virgil generate→save→send surfaces | — (waits for Stripe entitlement) | — | `queued` |
 | `tome-asset-loadsave-reliability.md` | Reader/library asset load + save reliability | — (parallel after #2) | — | `queued` |
 | `tome-classroom-live-loop.md` | Classroom live quiz loop | quiz return-loop fix (Phases 2/5 gate) | SHIP master's Liveblocks phase | `queued` |
