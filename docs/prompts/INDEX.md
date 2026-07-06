@@ -31,7 +31,7 @@ never runs alongside `marketing-nav-determinism` or `stripe-full-integration`.
 | `tome-stripe-full-integration.md` | Stripe billing (checkout, webhook, entitlement) | `student-badge-login` | SHIP master's Stripe phases | `merged` |
 | `tome-virgil-surfaces-functional.md` | Virgil generate→save→send surfaces | — (waits for Stripe entitlement) | — | `merged` |
 | `tome-asset-loadsave-reliability.md` | Reader/library asset load + save reliability | — (parallel after #2) | — | `merged` |
-| `tome-classroom-live-loop.md` | Classroom live quiz loop | quiz return-loop fix (Phases 2/5 gate) | SHIP master's Liveblocks phase | `queued` |
+| `tome-classroom-live-loop.md` | Classroom live quiz loop | quiz return-loop fix (Phases 2/5 gate) | SHIP master's Liveblocks phase | `merged` |
 | `tome-student-badge-login.md` | Student badge / scan-to-enter login | `marketing-nav-determinism`, `stripe-full-integration` | — | `queued` |
 
 Status values: `queued` → `running` → `final report` → `merged`.
