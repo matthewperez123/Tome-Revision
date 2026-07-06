@@ -17,6 +17,7 @@
 
 import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
+import { toast } from "sonner"
 import { AnimatePresence, motion } from "framer-motion"
 import { springs } from "@/lib/design-tokens"
 import { StepRole } from "./step-role"
@@ -74,6 +75,7 @@ export default function OnboardingPage() {
   const [stepIndex, setStepIndex] = useState(0)
   const [direction, setDirection] = useState(1)
   const [userType, setUserType] = useState<"reader" | "teacher" | "student" | null>(null)
+  const [submitting, setSubmitting] = useState(false)
 
   // Skip if already completed
   useEffect(() => {
@@ -96,13 +98,32 @@ export default function OnboardingPage() {
     if (stepIndex < totalSteps - 1) {
       setDirection(1)
       setStepIndex((s) => s + 1)
-    } else {
+      return
+    }
+    // Final step. Persist to Supabase BEFORE navigating: the proxy gates
+    // /dashboard on the DB `onboarding_completed` column, so navigating after a
+    // failed write bounces the user straight back to /onboarding. Only mark
+    // complete + navigate once the write is confirmed; on failure, surface it
+    // and let the user retry rather than dropping them into a silent loop.
+    if (submitting) return
+    setSubmitting(true)
+    try {
+      const result = await syncOnboardingToSupabase().catch(
+        (e): { ok: false; message: string } => ({
+          ok: false,
+          message: e instanceof Error ? e.message : "Network error",
+        }),
+      )
+      if (!result.ok) {
+        toast.error("Couldn't save your setup. Please try again.", {
+          description: result.message,
+        })
+        return
+      }
       completeOnboarding()
-      // Persist to Supabase BEFORE navigating: the middleware gates /dashboard
-      // on the DB `onboarding_completed` column, so a fire-and-forget write
-      // races the redirect and bounces the user back to /onboarding.
-      await syncOnboardingToSupabase().catch(() => {})
       router.push("/dashboard")
+    } finally {
+      setSubmitting(false)
     }
   }
 
