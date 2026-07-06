@@ -79,3 +79,31 @@ VERIFY: tsc clean (only known registry.test.ts / stale library/page noise). STOA
 strict mode BUT this is PRE-EXISTING branch state — commit 822dc1a7 (surface sweep) removed
 src/data/stoa-collection.ts, so audit runs manifest-only w/ 294 orphan-painting warnings, 0
 errors. Unrelated to these changes (none touch stoa data). NOT committed, NOT merged, no migration.
+
+## SHIP LEDGER — Phase 1 SHIPPED TO PRODUCTION (2026-07-05)
+ship/phase-1-testable fast-forward-merged into main (main was AT the merge-base 3ca6c8f6, so ship
+was a strict descendant → clean --ff-only, no conflicts). main now 22a1579e; prod deploy
+dpl_EcFmxsMUSAVbXaKd7UcYuZw7tU3S (target production) triggered. NO prebuild hook in package.json on
+this branch — the strict stoa audit does NOT gate the Vercel build (build = plain `next build`), and
+the same tree already built READY as preview dpl_JCKY.../dpl_32BN. Merge done via isolated
+`git worktree add /tmp/tome-prod main` (removed after push); the primary working tree was never
+checked out off ship. This is the surface-restoration + classroom-money-loop line: ~204 files vs the
+prior main, +5961/-36039 (the sweep removed the vanity/social surfaces).
+
+MIGRATIONS APPLIED TO LIVE DB vjaezrcuuzmbmnsfrtwt (all additive; verified present post-apply):
+- trial_result_authority — record_trial_result(text,int,text,int,int) SECURITY DEFINER is now the
+  SOLE quiz_results write path; INSERT revoked from authenticated+anon; server computes wisdom
+  (tier rate × correct) so the client can't mint Wisdom/poison leaderboards. Was ALREADY applied
+  earlier (20260702165027); my re-apply was idempotent (create-or-replace + drop-if-exists). Code
+  path already routes through the RPC (api/progress/quiz/route.ts); practice.ts + both crons only
+  SELECT quiz_results; seeds use service-role → revoke breaks nothing.
+- message_notifications — on_message_notify AFTER INSERT trigger on public.messages fans an in-app
+  'message' notification to every other conversation participant via create_notification. Also
+  idempotent re-apply (earlier 20260702170809).
+- virgil_loop_linkage_and_student_codes — assignments.quiz_id FK → teacher_quizzes ON DELETE SET
+  NULL (all rows null, safe); NEW student_access_codes (COPPA code-login, RLS via
+  user_has_classroom_role owner|co_teacher + student-reads-own) + login_attempts (deny-all rate
+  ledger). student_access_codes did NOT exist before; created fresh.
+The three 20260717 files on the branch (personal_reading_data_model, student_activity_lectern,
+virgil_secure_hardening) were ALREADY applied earlier as 20260704 timestamps → nothing missing.
+ALL ship-branch migration files map to an applied DB migration by base name. DB fully migrated.
