@@ -23,7 +23,8 @@
     "test:covers": "npx tsx scripts/covers/cover-factory.test.ts",
     "typecheck": "tsc --noEmit",
     "verify:billing": "node --conditions=react-server --import tsx scripts/verify-billing-entitlements.ts",
-    "verify:billing:stripe": "node --import tsx scripts/verify-billing-stripe.ts"
+    "verify:billing:stripe": "node --import tsx scripts/verify-billing-stripe.ts",
+    "test:nav": "playwright test marketing-nav"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.90.0",
