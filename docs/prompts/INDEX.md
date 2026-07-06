@@ -6,8 +6,10 @@ as its own Claude Code session, in the order encoded below.
 
 ## Run order (the queue)
 
-1. **`housekeeping-marketing-cta`** (this lane) — docs + two marketing content edits.
-2. **`marketing-nav-determinism`** — inherits this lane's CTA labels, hardens the mechanics.
+1. **`housekeeping-marketing-cta`** (this lane) — docs + two marketing content edits. ✅ **merged** (`0ade1752`).
+2. **`marketing-nav-determinism`** — **next up**. Nav mechanics already shipped
+   (`a681f033…191f696a`); the one commit still parked ahead of `main` on that branch
+   is the onboarding write-confirmation fix (`819f9c28`), pending its own review/merge.
 3. **`stripe-full-integration`** — full billing cutover.
 4. **`virgil-surfaces-functional`** — its entitlement stop resolves via #3, so it runs after Stripe.
 
@@ -24,7 +26,7 @@ never runs alongside `marketing-nav-determinism` or `stripe-full-integration`.
 
 | File | Surface it owns | Must-not-run-concurrently-with | Supersedes | Status |
 |------|-----------------|--------------------------------|------------|--------|
-| `tome-housekeeping-marketing-cta.md` (this lane) | `docs/prompts/`, marketing nav CTA, marketing `/library` hero | `marketing-nav-determinism` | `marketing-nav-determinism` Phase-2 CTA wording | `running` |
+| `tome-housekeeping-marketing-cta.md` (this lane) | `docs/prompts/`, marketing nav CTA, marketing `/library` hero | `marketing-nav-determinism` | `marketing-nav-determinism` Phase-2 CTA wording | `merged` |
 | `tome-marketing-nav-determinism.md` | Marketing top-nav mount + auth-slot determinism | `housekeeping-marketing-cta` | — | `merged`¹ |
 | `tome-stripe-full-integration.md` | Stripe billing (checkout, webhook, entitlement) | `student-badge-login` | SHIP master's Stripe phases | `queued` |
 | `tome-virgil-surfaces-functional.md` | Virgil generate→save→send surfaces | — (waits for Stripe entitlement) | — | `queued` |
