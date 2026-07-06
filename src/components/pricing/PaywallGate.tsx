@@ -20,18 +20,18 @@ function copyFor(reason: PaywallReason, subject?: string): PaywallCopy {
     case "virgil":
       return {
         title: "You've reached today's Virgil limit",
-        body: "Free readers get a few questions a day. Upgrade to Tome Solo for unlimited conversations with Virgil at your side.",
+        body: "Free readers get a few questions a day. Upgrade to Tome Family for unlimited conversations with Virgil at your side.",
       }
     case "advanced-trials":
       return {
-        title: "Advanced Trials are part of Tome Solo",
-        body: "Scholar and Master Trials — the harder, deeper assessments — are unlocked with a subscription. Start with a free 7-day trial.",
+        title: "Advanced Trials need a subscription",
+        body: "Scholar and Master Trials — the harder, deeper assessments — are unlocked with Tome Family. Start with a free 7-day trial.",
       }
     case "book":
     default:
       return {
-        title: subject ? `${subject} is part of Tome Solo` : "This book is part of Tome Solo",
-        body: "Unlock the full library — every great book, unlimited reading, and Virgil at your side. Start with a free 7-day trial.",
+        title: subject ? `${subject} needs a subscription` : "This book needs a subscription",
+        body: "Unlock the full library — every great book, unlimited reading, and Virgil at your side, for up to five readers. Start with a free 7-day trial.",
       }
   }
 }
@@ -66,7 +66,7 @@ export function PaywallGate({
 
       <div className="mt-8 flex flex-col items-center gap-3">
         <CheckoutButton
-          tier="solo"
+          tier="family"
           period="monthly"
           className="inline-flex items-center gap-2 rounded-xl bg-[#2A4B8D] px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
         >

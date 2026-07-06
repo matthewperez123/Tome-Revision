@@ -20,7 +20,7 @@ import { useAuth } from "@/hooks/use-auth"
 import { useEntitlement } from "@/hooks/use-entitlement"
 import { useEconomy } from "@/components/tome/economy-provider"
 import { CheckoutButton } from "@/components/pricing/CheckoutButton"
-import { SOLO_ANNUAL_PRICE } from "@/lib/marketing/plans"
+import { FAMILY_ANNUAL_PRICE } from "@/lib/marketing/plans"
 
 // Static literary quotes for the shareable card (not user data).
 const READING_QUOTES = [
@@ -241,7 +241,7 @@ export default function ProfilePage() {
           </div>
         </BlurFade>
 
-        {/* ── Upgrade to Solo (Stripe checkout) ──── */}
+        {/* ── Upgrade to Family (Stripe checkout) ── */}
         <BlurFade delay={0.13} inView>
           <section className="relative overflow-hidden rounded-xl border border-primary/40 bg-gradient-to-br from-primary/10 via-card to-card p-5 sm:p-6">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
@@ -249,21 +249,21 @@ export default function ProfilePage() {
                 <div className="flex items-center gap-2">
                   <Sparkles className="size-4 shrink-0 text-primary" />
                   <h2 className="font-serif text-xl font-bold tracking-tight">
-                    Unlock Tome Solo
+                    Unlock Tome Family
                   </h2>
                 </div>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
                   All 1,200+ books, unlimited Virgil conversations, and advanced
-                  Trials. Starts with a 7-day free trial.
+                  Trials — for up to five readers. Starts with a 7-day free trial.
                 </p>
               </div>
               <div className="flex shrink-0 flex-col items-stretch gap-2 sm:items-end">
                 <CheckoutButton
-                  tier="solo"
+                  tier="family"
                   period="annual"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:opacity-70"
                 >
-                  Upgrade — {SOLO_ANNUAL_PRICE}/yr
+                  Upgrade — {FAMILY_ANNUAL_PRICE}/yr
                 </CheckoutButton>
                 <Link
                   href="/pricing"
@@ -642,7 +642,7 @@ export default function ProfilePage() {
                       href="/pricing"
                       className="flex items-center justify-between text-sm font-medium hover:text-foreground transition-colors group"
                     >
-                      <span>Upgrade to Tome Solo</span>
+                      <span>Upgrade to Tome Family</span>
                       <ChevronRight className="size-4 text-muted-foreground group-hover:text-foreground transition-colors" />
                     </Link>
                   ) : (
