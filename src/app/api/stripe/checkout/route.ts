@@ -102,6 +102,22 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Sign in to subscribe." }, { status: 401 })
   }
 
+  // Students never self-checkout: they're provisioned into a plan by a parent
+  // (Family) or teacher (School seat invite), not by buying their own. Block the
+  // role explicitly so a signed-in student can't mint a subscription. Reads the
+  // caller's OWN profile row (RLS-scoped client).
+  const { data: roleRow } = await supabase
+    .from("profiles")
+    .select("role")
+    .eq("id", user.id)
+    .maybeSingle()
+  if (roleRow?.role === "student") {
+    return NextResponse.json(
+      { error: "Student accounts can't purchase a subscription." },
+      { status: 403 },
+    )
+  }
+
   // Authoritative test/live mode guard: a test-mode key cannot see a live
   // price (and vice versa). Refuses to start a cross-mode Checkout Session.
   try {
@@ -129,7 +145,10 @@ export async function POST(req: Request) {
     req.headers.get("origin") ??
     "http://localhost:3000"
 
-  const successPath = `/billing/success?tier=${tier}`
+  // {CHECKOUT_SESSION_ID} is expanded by Stripe on redirect so the success page
+  // can reconcile the REAL subscription status from Stripe (not claim "active"
+  // on trust, which would be a lie until the webhook lands).
+  const successPath = `/billing/success?tier=${tier}&session_id={CHECKOUT_SESSION_ID}`
 
   try {
     const session = await stripe.checkout.sessions.create({
