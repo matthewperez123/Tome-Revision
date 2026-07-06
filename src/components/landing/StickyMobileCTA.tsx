@@ -30,15 +30,15 @@ export function StickyMobileCTA() {
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
-  // "Use Beta" replaces the previous reader/educator-specific labels for the
-  // beta demo. Routes directly into the authenticated app shell at
-  // /dashboard, mirroring the desktop top-nav behavior. The audience-aware
-  // icon is preserved so the CTA still telegraphs which path the visitor
-  // was reading. /signup and /demo route files remain on disk.
+  // Primary marketing conversion CTA → "Sign Up" (/signup), matching the desktop
+  // top-nav's signed-out primary. This component has no auth awareness (the
+  // desktop nav owns the signed-in "Open Tome" state); the public demo entry now
+  // lives in the footer. The audience-aware icon is preserved so the CTA still
+  // telegraphs which path the visitor was reading.
   const isReader = audience === "reader"
-  const label = "Use Beta"
+  const label = "Sign Up"
   const Icon = isReader ? BookOpen : GraduationCap
-  const href = "/dashboard"
+  const href = "/signup"
 
   return (
     <div

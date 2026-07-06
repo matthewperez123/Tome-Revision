@@ -70,6 +70,7 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
       { label: "Virgil", href: "/virgil" },
       { label: "Trials", href: "/quizzes" },
       { label: "Authors", href: "/authors" },
+      { label: "Live Demo", href: "/demo" },
     ],
   },
   {

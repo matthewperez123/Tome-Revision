@@ -111,10 +111,11 @@ export async function proxy(request: NextRequest) {
 
   // ── Demo mode (no session) ──
   //
-  // Unauthenticated visitors run the app shell in client-side DEMO mode — the
-  // "Use Beta" entry point. This mirrors the public demo at usetome.app: they
-  // can browse the app and preview the Reader / Teacher / Student experiences
-  // via the sidebar profile switcher (see use-auth.ts getDemoProfile()).
+  // Unauthenticated visitors run the app shell in client-side DEMO mode —
+  // reached via the marketing footer "Live Demo" link (/demo). This mirrors the
+  // public demo at usetome.app: they can browse the app and preview the Reader /
+  // Teacher / Student experiences via the sidebar profile switcher (see
+  // use-auth.ts getDemoProfile()).
   //
   // This exposes NO server data: every read is RLS-scoped, so a session-less
   // request sees only demo/empty content. Real, entitlement-gated surfaces keep
