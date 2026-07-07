@@ -7,7 +7,12 @@ import { BookOpen, Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { ThemeToggle } from "@/components/tome/ThemeToggle"
 import { TomeWordmark } from "@/components/brand/tome-wordmark"
-import { PRIMARY_NAV, AUTH_LINKS, LANDING_PATHS } from "@/lib/marketing-nav"
+import {
+  PRIMARY_NAV,
+  AUTH_LINKS,
+  LANDING_PATHS,
+  OPEN_TOME_LOGGED_OUT_TARGET,
+} from "@/lib/marketing-nav"
 import { useAuth } from "@/hooks/use-auth"
 
 export function LandingNav() {
@@ -68,8 +73,14 @@ export function LandingNav() {
     "text-sm font-semibold px-4 py-1.5 rounded-full transition-colors text-center min-w-[112px]",
     solid ? "bg-foreground text-background hover:opacity-90" : "bg-white text-black hover:bg-white/90"
   )
-  const pillLabel = slotState === "in" ? "Open Tome" : AUTH_LINKS.signUp.label
-  const pillHref = slotState === "in" ? "/dashboard" : AUTH_LINKS.signUp.href
+  // The primary pill is the single "Open Tome" front door in every resolved
+  // state: a real session (or demo shell) opens straight to the role home
+  // (/dashboard, which routes teacher→teacher home / student→student surface);
+  // a fresh visitor is sent to OPEN_TOME_LOGGED_OUT_TARGET (the auth entry). The
+  // label is constant across "in"/"out" so the slot never swaps text once
+  // resolved — only the target moves — which keeps the nav deterministic.
+  const pillLabel = "Open Tome"
+  const pillHref = slotState === "in" ? "/dashboard" : OPEN_TOME_LOGGED_OUT_TARGET
   const skeletonBg = solid ? "bg-foreground/10" : "bg-white/20"
 
   return (

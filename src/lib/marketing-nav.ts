@@ -27,6 +27,15 @@ export const AUTH_LINKS = {
 } as const
 
 /**
+ * Where the "Open Tome" front-door CTA sends a LOGGED-OUT visitor. Default is
+ * the sign-in page (which itself offers "Create account" → /signup and the
+ * student class-code path). Flip this single line to "/signup" if you'd rather
+ * the acquisition-first funnel. Logged-in visitors always go to their role home
+ * (/dashboard) — that routing is owned by LandingNav, not this constant.
+ */
+export const OPEN_TOME_LOGGED_OUT_TARGET = "/login"
+
+/**
  * Marketing routes that suppress the Beta superscript on the wordmark so it
  * reads cleanly on hero chrome. Authenticated surfaces keep the indicator.
  */
