@@ -15,7 +15,7 @@ import {
   History,
   Compass,
   Settings,
-  MessageCircle,
+  CalendarRange,
   type LucideIcon,
 } from "lucide-react"
 
@@ -39,58 +39,94 @@ export type NavGroup = {
 }
 
 /**
- * Grouped sidebar navigation. Learning surfaces only — no gamification or
- * social entries. Groups collapse to a bare icon rail (labels auto-hide) so the
- * 64px ↔ 240px peek behaviour is preserved.
+ * Section building blocks. Learning surfaces only — no gamification or social
+ * entries. Groups collapse to a bare icon rail (labels auto-hide) so the
+ * 64px ↔ 240px peek behaviour is preserved. Section ORDER is role-specific
+ * (see teacherOrder / readerStudentOrder) — teachers lead with the classroom,
+ * readers and students lead with the library.
  */
-export const navGroups: NavGroup[] = [
-  {
-    label: "Home",
-    items: [
-      { label: "Home", href: "/", icon: Home, roles: ["reader", "student"] },
-      { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
-    ],
-  },
-  {
-    label: "Read",
-    items: [
-      { label: "Library", href: "/library/browse", icon: Library },
-      { label: "Reading", href: "/reading", icon: BookOpen },
-      { label: "Bookmarks", href: "/bookmarks", icon: Bookmark },
-      { label: "Shelves", href: "/shelves", icon: LibraryBig },
-    ],
-  },
-  {
-    label: "Discover",
-    items: [
-      { label: "Authors", href: "/authors", icon: Feather },
-      { label: "Explore", href: "/explore", icon: Globe2 },
-      { label: "Timelines", href: "/timelines", icon: History },
-    ],
-  },
-  {
-    label: "Practice",
-    items: [{ label: "Quizzes", href: "/quizzes", icon: Brain }],
-  },
-  {
-    label: "Classroom",
-    items: [
-      { label: "My Classes", href: "/classroom", icon: GraduationCap },
-      { label: "Messages", href: "/messages", icon: MessageCircle, roles: ["teacher", "student"] },
-      { label: "Quiz Builder", href: "/classroom/quiz-builder", icon: SquarePen, roles: ["teacher"] },
-      { label: "Grading", href: "/classroom/grading", icon: ClipboardCheck, roles: ["teacher"] },
-      { label: "Guided Sessions", href: "/teacher/guided-learning", icon: Compass, roles: ["teacher"] },
-    ],
-  },
-  {
-    label: "Settings",
-    items: [{ label: "Settings", href: "/account", icon: Settings }],
-  },
+const homeGroup: NavGroup = {
+  label: "Home",
+  items: [
+    { label: "Home", href: "/", icon: Home, roles: ["reader", "student"] },
+    { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
+  ],
+}
+
+const libraryGroup: NavGroup = {
+  label: "Library",
+  items: [
+    { label: "Library", href: "/library/browse", icon: Library },
+    { label: "Authors", href: "/authors", icon: Feather },
+  ],
+}
+
+const readGroup: NavGroup = {
+  label: "Read",
+  items: [
+    { label: "Reading", href: "/reading", icon: BookOpen },
+    { label: "Bookmarks", href: "/bookmarks", icon: Bookmark },
+    { label: "Shelves", href: "/shelves", icon: LibraryBig },
+  ],
+}
+
+const discoverGroup: NavGroup = {
+  label: "Discover",
+  items: [
+    { label: "Explore", href: "/explore", icon: Globe2 },
+    { label: "Timelines", href: "/timelines", icon: History },
+  ],
+}
+
+const classroomGroup: NavGroup = {
+  label: "Classroom",
+  items: [
+    { label: "Classes", href: "/classroom", icon: GraduationCap },
+    { label: "Quizzes", href: "/quizzes", icon: Brain },
+    { label: "Quiz Builder", href: "/classroom/quiz-builder", icon: SquarePen, roles: ["teacher"] },
+    { label: "Grading", href: "/classroom/grading", icon: ClipboardCheck, roles: ["teacher"] },
+    { label: "Guided Sessions", href: "/teacher/guided-learning", icon: Compass, roles: ["teacher"] },
+  ],
+}
+
+const planningGroup: NavGroup = {
+  label: "Planning",
+  roles: ["teacher"],
+  items: [
+    { label: "Semester Planning", href: "/semester-plan", icon: CalendarRange, roles: ["teacher"] },
+  ],
+}
+
+const settingsGroup: NavGroup = {
+  label: "Settings",
+  items: [{ label: "Settings", href: "/account", icon: Settings }],
+}
+
+/** Teachers lead with the classroom, then planning; library sits at the end. */
+const teacherOrder: NavGroup[] = [
+  homeGroup,
+  classroomGroup,
+  planningGroup,
+  libraryGroup,
+  readGroup,
+  discoverGroup,
+  settingsGroup,
+]
+
+/** Readers and students lead with the library; classroom follows. */
+const readerStudentOrder: NavGroup[] = [
+  homeGroup,
+  libraryGroup,
+  readGroup,
+  discoverGroup,
+  classroomGroup,
+  settingsGroup,
 ]
 
 /**
  * Filter navigation groups (and their items) by user role, dropping any group
- * that ends up empty. Unauthenticated visitors see only role-agnostic entries.
+ * that ends up empty. Section order is role-specific. Unauthenticated visitors
+ * fall back to the reader/student order and see only role-agnostic entries.
  */
 export function getNavGroupsForRole(role: UserRole | null): NavGroup[] {
   const allow = (roles?: UserRole[]) => {
@@ -98,7 +134,8 @@ export function getNavGroupsForRole(role: UserRole | null): NavGroup[] {
     if (!role) return false
     return roles.includes(role)
   }
-  return navGroups
+  const order = role === "teacher" ? teacherOrder : readerStudentOrder
+  return order
     .filter((g) => allow(g.roles))
     .map((g) => ({ ...g, items: g.items.filter((i) => allow(i.roles)) }))
     .filter((g) => g.items.length > 0)
