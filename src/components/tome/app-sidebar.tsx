@@ -89,6 +89,7 @@ function SidebarNav({ pathname }: { pathname: string }) {
     if (pathname.startsWith("/explore"))  return "/explore"
     if (pathname.startsWith("/timelines")) return "/timelines"
     if (pathname.startsWith("/quiz"))     return "/quizzes"
+    if (pathname.startsWith("/semester-plan")) return "/semester-plan"
     if (pathname.startsWith("/dashboard")) return "/dashboard"
     if (pathname.startsWith("/account"))  return "/account"
     if (pathname.startsWith("/teacher/guided-learning")) return "/teacher/guided-learning"
