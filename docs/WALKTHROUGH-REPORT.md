@@ -1,9 +1,9 @@
 # Tome — "Does it actually work" walkthrough
 
-**Verdict: YES — the teacher→student classroom loop works end-to-end against the live database (proven below with real row IDs), and the new front-door + scan-to-join code is complete, typecheck-clean, and statically verified; ONE live step (provisioning a student sign-in code and running a real scan→enroll) is held pending your go-ahead to write to the prod dataset.**
+**Verdict: YES — the teacher→student classroom loop works end-to-end against the live database, AND the full scan-to-join path (provision code → sign in with code → land on join → enroll) has now been run live against a throwaway prod student with real row IDs (see "Live scan-to-join proof" below). The new front-door + scan-to-join code is complete, typecheck-clean, and verified in code and at runtime. Nothing is held back.**
 
 Branch: `today/ship-walkthrough` — commits `b461b2ae` (door) + `23671925` (join). NOT merged to main.
-Environment probed: Supabase `vjaezrcuuzmbmnsfrtwt` (this is the **prod** dataset — all probes below are read-only SELECTs; no rows were written).
+Environment probed: Supabase `vjaezrcuuzmbmnsfrtwt` (this is the **prod** dataset — the persona/loop probes below are read-only SELECTs; the ONE deliberate prod write is the throwaway-student scan-to-join proof at the end, run with your go-ahead).
 
 ---
 
@@ -73,12 +73,24 @@ No schema changes. `classrooms.join_code`, `student_access_codes`, `login_attemp
 
 ---
 
-## The one step held for your approval (prod write)
+## Live scan-to-join proof (the one prod write — DONE with your go-ahead)
 
-A **fully live** scan-to-join proof — logged-out scan → `/student-login` → `verifyStudentAccess` mints a session → student lands on `/join?code=RHET10` → enroll — cannot be run without writing to the prod dataset, because:
+Run 2026-07-07 against a **throwaway** student in prod RHET10, mirroring the exact server paths (`addStudentWithCode` → `verifyStudentAccess.establishSessionForUser` → `joinClassroomByCode`). Every stage passed with a real row:
 
-1. `student_access_codes` currently has **0 rows** — no student has a code-login credential, so provisioning one is a prod INSERT.
-2. Completing the join inserts a real `classroom_members` row.
-3. `verifyStudentAccess` carries a `NOTE(phase-4)` to confirm the magic-link OTP `type` (`"email"` vs `"magiclink"`) against this project — only confirmable by actually running it.
+| # | Stage | Mirrors | Result | Evidence (real prod rows) |
+|---|---|---|---|---|
+| 1 | Provision sign-in card | `addStudentWithCode` | **PASS** | auth user `4c580515-67e6-4d4d-9d35-9dce12c9206d` (synthetic email `s-…@students.tome.invalid`, no PII), `student_access_codes` code `Q4EY-3FNW`, active, scoped RHET10 |
+| 2 | Sign in with code (login lookup) | `verifyStudentAccess.classifyEntry` | **PASS** | typed code `Q4EY-3FNW` → active row → user `4c580515…` (single classifier path, no email surfaced) |
+| 3 | Mint session | `establishSessionForUser` | **PASS** | `generateLink(type:"magiclink")` → `hashed_token` → `verifyOtp(type:"email")` returned a **real session** |
+| 4 | Land on `/join?code=RHET10` → enroll | `joinClassroomByCode` | **PASS** | `classroom_members` row `c36cc76e-9dc3-4738-a934-402dbdd04b5d` (was_existing=false → the join itself created the membership) |
+| 5 | Late-joiner backfill | `backfillActiveAssignments` | **PASS** | `assignment_submissions` row `ffd2d861-b02c-4b5a-9c41-711d2be76fb3` (assignment `4943cd4f-…` "On Achilles' Rage", `not_started`) seeded so the new student shows on the teacher roster |
+| 6 | Roster reflects the join | — | **PASS** | RHET10 member count 4 → **5** |
 
-Per your rule ("ask before touching prod data; default to the dev/walkthrough environment"), I have **not** provisioned a code or run a live enroll. Say the word and I'll either (a) run it against a throwaway walkthrough student in prod and append the live row IDs + OTP-type confirmation here, or (b) point it at a dev/walkthrough Supabase project if you have one.
+### Phase-4 OTP-type NOTE — RESOLVED
+The `verifyStudentAccess` NOTE asked whether magic-link `token_hash` verification uses `type:"email"` or `"magiclink"` on this project. **Confirmed live: `type:"email"` is correct** — a `generateLink("magiclink")` token verifies with `verifyOtp({type:"email"})` and returns a session (`emailWorks=true`). The code as-shipped is right; the stale NOTE has been replaced with the confirmed fact.
+
+### Side effect worth knowing
+Step 5's backfill gave essay `4943cd4f-…` "On Achilles' Rage" its **first** `assignment_submissions` row (it previously had 0 — see "Data observation" above). That's the backfill working as designed, not a fixture repair.
+
+### Throwaway cleanup
+These are disposable test rows on the RHET10 roster (auth user `4c580515-…`, member `c36cc76e-…`, submission `ffd2d861-…`, code `Q4EY-3FNW`). They can be removed with a single `admin.auth.admin.deleteUser("4c580515-…")` (FKs cascade the member + submission + code) once you've seen them live — say the word and I'll delete, or leave them so you can inspect the roster in the UI. The one-off driver is `tmp/live-scan-join.ts` (untracked).

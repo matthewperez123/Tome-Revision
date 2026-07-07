@@ -91,9 +91,9 @@ async function establishSessionForUser(userId: string): Promise<boolean> {
   if (linkErr || !tokenHash) return false
 
   const supabase = await createClient()
-  // NOTE(phase-4): confirm this `type` against the live project during the
-  // persona proof — magic-link token_hash verification uses "email" in the
-  // current SSR flow; older projects expect "magiclink".
+  // Magic-link token_hash verification uses type "email" on this project —
+  // confirmed live against vjaezrcuuzmbmnsfrtwt (a generateLink "magiclink"
+  // token verifies with verifyOtp type "email" and returns a session).
   const { error: otpErr } = await supabase.auth.verifyOtp({
     type: "email",
     token_hash: tokenHash,
