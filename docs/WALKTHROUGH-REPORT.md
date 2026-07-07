@@ -2,8 +2,8 @@
 
 **Verdict: YES — the teacher→student classroom loop works end-to-end against the live database, AND the full scan-to-join path (provision code → sign in with code → land on join → enroll) has now been run live against a throwaway prod student with real row IDs (see "Live scan-to-join proof" below). The new front-door + scan-to-join code is complete, typecheck-clean, and verified in code and at runtime. Nothing is held back.**
 
-Branch: `today/ship-walkthrough` — commits `b461b2ae` (door) + `23671925` (join). NOT merged to main.
-Environment probed: Supabase `vjaezrcuuzmbmnsfrtwt` (this is the **prod** dataset — the persona/loop probes below are read-only SELECTs; the ONE deliberate prod write is the throwaway-student scan-to-join proof at the end, run with your go-ahead).
+**SHIPPED 2026-07-07:** `main` fast-forwarded `302e9808 → 4bb79279` (door `b461b2ae` + join `23671925` + report `53b53a77` + live-proof `4bb79279`); prod deploy `dpl_3M1zpy1564sas63mTruVsFNsjDoi` is **READY** on `tome-revision.vercel.app`. Phase 3 = NO migration. The throwaway test student has been **deleted** (RHET10 roster back to 4, no orphan rows); the one-off drivers were removed.
+Environment probed: Supabase `vjaezrcuuzmbmnsfrtwt` (this is the **prod** dataset — the persona/loop probes below are read-only SELECTs; the ONE deliberate prod write was the throwaway-student scan-to-join proof at the end, run with your go-ahead and since cleaned up).
 
 ---
 
@@ -92,5 +92,5 @@ The `verifyStudentAccess` NOTE asked whether magic-link `token_hash` verificatio
 ### Side effect worth knowing
 Step 5's backfill gave essay `4943cd4f-…` "On Achilles' Rage" its **first** `assignment_submissions` row (it previously had 0 — see "Data observation" above). That's the backfill working as designed, not a fixture repair.
 
-### Throwaway cleanup
-These are disposable test rows on the RHET10 roster (auth user `4c580515-…`, member `c36cc76e-…`, submission `ffd2d861-…`, code `Q4EY-3FNW`). They can be removed with a single `admin.auth.admin.deleteUser("4c580515-…")` (FKs cascade the member + submission + code) once you've seen them live — say the word and I'll delete, or leave them so you can inspect the roster in the UI. The one-off driver is `tmp/live-scan-join.ts` (untracked).
+### Throwaway cleanup — DONE
+The disposable test rows (auth user `4c580515-…`, member `c36cc76e-…`, submission `ffd2d861-…`, code `Q4EY-3FNW`) have been **deleted**: dependent rows cleared then `admin.auth.admin.deleteUser("4c580515-…")` — verified 0 members / 0 codes / 0 submissions remain and the RHET10 roster is back to **4**. The one-off drivers (`tmp/live-scan-join.ts`, `tmp/delete-throwaway.ts`) were removed.
