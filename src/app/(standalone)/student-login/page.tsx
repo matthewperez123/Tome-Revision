@@ -1,8 +1,8 @@
 "use client"
 
-import { useState, useRef, useCallback } from "react"
+import { Suspense, useState, useRef, useCallback } from "react"
 import Link from "next/link"
-import { useRouter } from "next/navigation"
+import { useRouter, useSearchParams } from "next/navigation"
 import { BookOpen, ScanLine } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { verifyStudentAccess } from "@/lib/actions/student-auth"
@@ -28,12 +28,30 @@ function isSubmittable(raw: string): boolean {
  * email or account recovery.
  */
 export default function StudentLoginPage() {
+  return (
+    <Suspense fallback={null}>
+      <StudentLoginInner />
+    </Suspense>
+  )
+}
+
+function StudentLoginInner() {
   const router = useRouter()
+  const searchParams = useSearchParams()
   const inputRef = useRef<HTMLInputElement>(null)
   const [code, setCode] = useState("")
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const [scanning, setScanning] = useState(false)
+
+  // A ?returnTo= (e.g. from a scanned class-join QR) is carried through sign-in
+  // so the student lands back on the join flow. The server re-validates it.
+  const rawReturnTo = searchParams.get("returnTo")
+  const returnTo =
+    rawReturnTo && rawReturnTo.startsWith("/") && !rawReturnTo.startsWith("//")
+      ? rawReturnTo
+      : undefined
+  const joiningClass = Boolean(returnTo && returnTo.startsWith("/join"))
 
   const submit = useCallback(
     async (rawValue: string) => {
@@ -45,7 +63,7 @@ export default function StudentLoginPage() {
       setLoading(true)
       // Pass the raw value straight through — the server action is the single
       // classifier for both typed codes and scanned badge tokens.
-      const result = await verifyStudentAccess(rawValue)
+      const result = await verifyStudentAccess(rawValue, returnTo)
       if (!result.ok) {
         setError(result.error)
         setLoading(false)
@@ -56,7 +74,7 @@ export default function StudentLoginPage() {
       router.push(result.data.redirectTo)
       router.refresh()
     },
-    [router],
+    [router, returnTo],
   )
 
   function handleChange(raw: string) {
@@ -93,8 +111,15 @@ export default function StudentLoginPage() {
           Enter your class code
         </h1>
         <p className="mt-1.5 text-sm text-muted-foreground">
-          Type the code from your badge to start reading.
+          {joiningClass
+            ? "Sign in with your class code to finish joining your class."
+            : "Type the code from your badge to start reading."}
         </p>
+        {joiningClass && (
+          <p className="mt-3 rounded-xl border border-border bg-card px-4 py-3 text-xs text-muted-foreground">
+            No sign-in card yet? Ask your teacher for your Tome sign-in card.
+          </p>
+        )}
 
         <form
           onSubmit={(e) => {

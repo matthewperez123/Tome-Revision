@@ -1,6 +1,7 @@
 "use server"
 
 import { revalidatePath } from "next/cache"
+import { headers } from "next/headers"
 import { z } from "zod"
 import {
   sendClassroomInviteEmail,
@@ -118,6 +119,49 @@ export async function createClassroom(
   }
 }
 
+// ── Join rate limiting ──────────────────────────────────────────────────────
+// Guessing join codes is throttled through the SAME `login_attempts` ledger the
+// student code-login uses. We namespace the key with a "join:" prefix so it can
+// never collide with a real 4-char student-code prefix, and prefer the caller IP
+// (falling back to the attempted code) so one abusive client can't brute the
+// whole code space. The ledger is service-role only (RLS deny-all).
+const JOIN_MAX_FAILURES = 10
+const JOIN_WINDOW_MINUTES = 15
+
+/** Best-effort caller IP from the proxy headers. */
+async function callerIp(): Promise<string | null> {
+  const h = await headers()
+  const fwd = h.get("x-forwarded-for")
+  if (fwd) return fwd.split(",")[0]!.trim() || null
+  return h.get("x-real-ip")
+}
+
+/** Namespaced ledger key — never collides with student-code prefixes. */
+function joinRateKey(ip: string | null, code: string): string {
+  return `join:${ip ?? code}`
+}
+
+async function joinAttemptsBlocked(
+  admin: ReturnType<typeof createAdminClient>,
+  key: string,
+): Promise<boolean> {
+  const since = new Date(Date.now() - JOIN_WINDOW_MINUTES * 60_000).toISOString()
+  const { count } = await admin
+    .from("login_attempts")
+    .select("*", { count: "exact", head: true })
+    .eq("code_prefix", key)
+    .gte("attempted_at", since)
+  return (count ?? 0) >= JOIN_MAX_FAILURES
+}
+
+async function recordJoinFailure(
+  admin: ReturnType<typeof createAdminClient>,
+  key: string,
+  ip: string | null,
+): Promise<void> {
+  await admin.from("login_attempts").insert({ code_prefix: key, ip })
+}
+
 export async function lookupClassroomByCode(
   code: string,
 ): Promise<ActionResult<{ id: string; name: string; subject: string | null }>> {
@@ -135,13 +179,21 @@ export async function lookupClassroomByCode(
     // room by its code through the user client.
     await requireUser()
     const admin = createAdminClient()
+    const ip = await callerIp()
+    const rateKey = joinRateKey(ip, parsed.data)
+    if (await joinAttemptsBlocked(admin, rateKey)) {
+      return fail("Too many attempts. Take a break and try again shortly.")
+    }
     const { data, error } = await admin
       .from("classrooms")
       .select("id, name, subject")
       .eq("join_code", parsed.data)
       .maybeSingle()
     if (error) return fail(error.message)
-    if (!data) return fail("No classroom found for that code.")
+    if (!data) {
+      await recordJoinFailure(admin, rateKey, ip)
+      return fail("No classroom found for that code.")
+    }
     return ok({ id: data.id, name: data.name, subject: data.subject ?? null })
   } catch (e) {
     return fail((e as Error).message)
@@ -162,6 +214,11 @@ export async function joinClassroomByCode(
   try {
     const { user } = await requireUser()
     const admin = createAdminClient()
+    const ip = await callerIp()
+    const rateKey = joinRateKey(ip, parsed.data)
+    if (await joinAttemptsBlocked(admin, rateKey)) {
+      return fail("Too many attempts. Take a break and try again shortly.")
+    }
 
     const { data: classroom, error: lookupErr } = await admin
       .from("classrooms")
@@ -169,7 +226,10 @@ export async function joinClassroomByCode(
       .eq("join_code", parsed.data)
       .maybeSingle()
     if (lookupErr) return fail(lookupErr.message)
-    if (!classroom) return fail("No classroom found for that code.")
+    if (!classroom) {
+      await recordJoinFailure(admin, rateKey, ip)
+      return fail("No classroom found for that code.")
+    }
     if (classroom.archived) {
       return fail("This classroom is archived and no longer accepting students.")
     }

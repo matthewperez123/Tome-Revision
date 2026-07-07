@@ -12,6 +12,7 @@ import { useAuth } from "@/hooks/use-auth"
 
 import { SemesterPlanTab } from "@/components/classroom/semester-timeline"
 import { StudentBadgesPanel } from "@/components/classroom/student-badges-panel"
+import { ClassJoinQr } from "@/components/classroom/class-join-qr"
 
 type Tab = "overview" | "students" | "badges" | "assignments" | "announcements" | "semester-plan"
 
@@ -178,6 +179,13 @@ export default function ClassroomManagePage({ params }: { params: Promise<{ id: 
           >
             <RefreshCw className={`size-3 ${rotating ? "animate-spin" : ""}`} />
           </button>
+        )}
+        {!isDemoMode && user && (
+          <ClassJoinQr
+            classroomId={classroom.id}
+            className={classroom.name}
+            joinCode={classroom.join_code}
+          />
         )}
       </div>
 

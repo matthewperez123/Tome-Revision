@@ -51,6 +51,16 @@ async function recordFailure(
   await admin.from("login_attempts").insert({ code_prefix: prefix, ip })
 }
 
+/**
+ * Only follow same-origin relative targets (a single leading "/") so a scanned
+ * or crafted ?returnTo= can't bounce a freshly signed-in student off-site.
+ * Anything else falls back to the dashboard.
+ */
+function safeReturnTo(raw: string | null | undefined): string {
+  if (raw && raw.startsWith("/") && !raw.startsWith("//")) return raw
+  return "/dashboard"
+}
+
 // Age-appropriate copy. Never mentions email, accounts, or password recovery,
 // and always points a stuck student back to their teacher.
 const MSG = {
@@ -163,6 +173,7 @@ function classifyEntry(raw: string): Resolver | null {
  */
 export async function verifyStudentAccess(
   rawCode: string,
+  returnTo?: string,
 ): Promise<ActionResult<{ redirectTo: string }>> {
   const resolver = classifyEntry(rawCode ?? "")
   if (!resolver) return fail(MSG.invalid)
@@ -187,7 +198,9 @@ export async function verifyStudentAccess(
       return fail(MSG.generic)
     }
 
-    return ok({ redirectTo: "/dashboard" })
+    // Honor a preserved destination (e.g. /join?code=… from a scanned class
+    // QR) so the student lands back on the join flow; default to the dashboard.
+    return ok({ redirectTo: safeReturnTo(returnTo) })
   } catch {
     return fail(MSG.generic)
   }
