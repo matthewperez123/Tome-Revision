@@ -11,7 +11,7 @@ export const dynamic = "force-dynamic"
 import { useState, useCallback } from "react"
 import { useRouter } from "next/navigation"
 import { motion } from "framer-motion"
-import { GraduationCap, Copy, Check, ArrowLeft } from "lucide-react"
+import { GraduationCap, Copy, Check, ArrowLeft, AlertCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { createClassroom } from "@/lib/actions/classrooms"
@@ -38,7 +38,7 @@ const GRADE_LEVELS = [
 
 export default function CreateClassroomPage() {
   const router = useRouter()
-  const { user } = useAuth()
+  const { user, isDemoMode, isLoading } = useAuth()
   const [name, setName] = useState("")
   const [description, setDescription] = useState("")
   const [subject, setSubject] = useState("")
@@ -51,7 +51,15 @@ export default function CreateClassroomPage() {
   const [error, setError] = useState<string | null>(null)
 
   const handleCreate = useCallback(async () => {
-    if (!name.trim() || !user) return
+    if (!name.trim()) return
+    // Demo mode / no real session can't write to the database — the classroom
+    // would never persist. Tell the user instead of silently doing nothing.
+    if (isDemoMode || !user) {
+      setError(
+        "You're browsing in demo mode, so classrooms can't be saved. Sign in to your teacher account to create and keep a class.",
+      )
+      return
+    }
     setCreating(true)
     setError(null)
 
@@ -81,7 +89,7 @@ export default function CreateClassroomPage() {
     } finally {
       setCreating(false)
     }
-  }, [name, description, subject, gradeLevel, maxStudents, user])
+  }, [name, description, subject, gradeLevel, maxStudents, user, isDemoMode])
 
   // Success state — show join code
   if (createdCode && createdId) {
@@ -152,6 +160,20 @@ export default function CreateClassroomPage() {
           <p className="text-sm text-muted-foreground">Set up a new classroom for your students</p>
         </div>
       </div>
+
+      {!isLoading && (isDemoMode || !user) && (
+        <div
+          role="alert"
+          className="mt-6 flex items-start gap-2.5 rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-800 dark:border-amber-900/50 dark:bg-amber-950/30 dark:text-amber-300"
+        >
+          <AlertCircle className="mt-0.5 size-4 shrink-0" />
+          <span>
+            You&apos;re browsing in demo mode. Classrooms you create here
+            won&apos;t be saved — sign in to your teacher account to create and
+            keep a class.
+          </span>
+        </div>
+      )}
 
       <div className="mt-8 space-y-5">
         {/* Name */}
@@ -238,7 +260,15 @@ export default function CreateClassroomPage() {
           />
         </div>
 
-        {error && <p className="text-sm text-red-500">{error}</p>}
+        {error && (
+          <div
+            role="alert"
+            className="flex items-start gap-2.5 rounded-xl border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-700 dark:border-red-900/50 dark:bg-red-950/30 dark:text-red-300"
+          >
+            <AlertCircle className="mt-0.5 size-4 shrink-0" />
+            <span>{error}</span>
+          </div>
+        )}
 
         <Button
           onClick={handleCreate}

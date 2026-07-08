@@ -2,12 +2,14 @@
 
 import { useEffect, useMemo, useState } from "react"
 import Link from "next/link"
-import { Brain, ArrowRight, Search, History as HistoryIcon, GraduationCap } from "lucide-react"
+import { Brain, ArrowRight, Search, History as HistoryIcon, GraduationCap, Feather, Plus, Edit3 } from "lucide-react"
 import { getBook } from "@/lib/content"
 import { BookCoverThumb } from "@/components/tome/book-cover-thumb"
 import { Skeleton } from "@/components/ui/skeleton"
 import { cn } from "@/lib/utils"
 import type { TomeBook } from "@/data/books"
+import { useAuth } from "@/hooks/use-auth"
+import { createClient } from "@/lib/supabase/client"
 import {
   loadPracticeData,
   QUIZ_TIERS,
@@ -42,6 +44,14 @@ interface Row {
 }
 
 export default function QuizzesPage() {
+  const { role } = useAuth()
+  // Teachers get their own saved-quiz library here (the quizzes they built);
+  // readers/students keep the free three-tier practice surface.
+  if (role === "teacher") return <TeacherQuizzesView />
+  return <PracticeQuizzesView />
+}
+
+function PracticeQuizzesView() {
   const [loading, setLoading] = useState(true)
   const [rows, setRows] = useState<Row[]>([])
   const [history, setHistory] = useState<QuizAttempt[]>([])
@@ -167,6 +177,145 @@ export default function QuizzesPage() {
             Browse the full library <ArrowRight className="size-3.5" />
           </Link>
         </div>
+      </div>
+    </div>
+  )
+}
+
+interface SavedQuiz {
+  id: string
+  title: string
+  book_id: string | null
+  difficulty: string | null
+  status: string
+  question_count: number
+}
+
+/**
+ * Teacher "Quizzes" surface — lists the quizzes this teacher has saved in the
+ * Quiz Builder (teacher_quizzes, owned by teacher_id). Each row opens the
+ * builder editor; published quizzes are marked so the teacher can see what's
+ * ready to assign.
+ */
+function TeacherQuizzesView() {
+  const { user, isDemoMode } = useAuth()
+  const [quizzes, setQuizzes] = useState<SavedQuiz[]>([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    if (isDemoMode || !user) {
+      setQuizzes([])
+      setLoading(false)
+      return
+    }
+    let cancelled = false
+    async function load() {
+      const supabase = createClient()
+      const { data } = await supabase
+        .from("teacher_quizzes")
+        .select("id, title, book_id, difficulty, status")
+        .eq("teacher_id", user!.id)
+        .order("created_at", { ascending: false })
+      if (cancelled) return
+      const withCounts = await Promise.all(
+        (data ?? []).map(async (q) => {
+          const { count } = await supabase
+            .from("teacher_quiz_questions")
+            .select("*", { count: "exact", head: true })
+            .eq("quiz_id", q.id)
+          return { ...q, question_count: count ?? 0 }
+        }),
+      )
+      if (cancelled) return
+      setQuizzes(withCounts)
+      setLoading(false)
+    }
+    load()
+    return () => { cancelled = true }
+  }, [user, isDemoMode])
+
+  return (
+    <div className="min-h-screen pb-20">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8 space-y-6">
+        <div className="flex items-start justify-between gap-3">
+          <div className="flex items-start gap-2.5">
+            <Brain className="size-6 shrink-0 text-foreground mt-0.5" />
+            <div>
+              <h1 className="text-2xl font-bold tracking-tight">Quizzes</h1>
+              <p className="text-sm text-muted-foreground mt-0.5">
+                The quizzes you&apos;ve created. Open one to edit, publish, or assign it to a class.
+              </p>
+            </div>
+          </div>
+          <Link
+            href="/classroom/quiz-builder"
+            className="shrink-0 inline-flex items-center gap-1.5 rounded-lg bg-foreground px-3 py-2 text-sm font-semibold text-background transition-opacity hover:opacity-90"
+          >
+            <Plus className="size-4" /> New Quiz
+          </Link>
+        </div>
+
+        {loading ? (
+          <div className="space-y-2">
+            {Array.from({ length: 4 }).map((_, i) => (
+              <Skeleton key={i} className="h-20 w-full rounded-xl" />
+            ))}
+          </div>
+        ) : quizzes.length === 0 ? (
+          <div className="mt-8 flex flex-col items-center text-center gap-3 rounded-xl border border-dashed border-border py-16">
+            <div className="flex size-12 items-center justify-center rounded-full bg-muted">
+              <Feather className="size-6 text-muted-foreground" />
+            </div>
+            <div>
+              <p className="text-base font-semibold">No saved quizzes yet</p>
+              <p className="mt-1 max-w-sm text-sm text-muted-foreground">
+                Build a quiz in the Quiz Builder and it will be saved here, ready to assign to your classes.
+              </p>
+            </div>
+            <Link
+              href="/classroom/quiz-builder"
+              className="inline-flex items-center gap-1.5 rounded-lg bg-foreground px-4 py-2 text-sm font-semibold text-background transition-opacity hover:opacity-90"
+            >
+              <Plus className="size-4" /> Create your first quiz
+            </Link>
+          </div>
+        ) : (
+          <div className="space-y-2">
+            {quizzes.map((quiz) => {
+              const bookTitle = quiz.book_id ? getBook(quiz.book_id)?.title ?? null : null
+              return (
+                <Link
+                  key={quiz.id}
+                  href={`/classroom/quiz-builder/${quiz.id}`}
+                  className="flex items-center gap-4 rounded-xl border border-border bg-card p-4 transition-colors hover:bg-muted/50"
+                >
+                  <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-[var(--tome-accent)]">
+                    <Feather className="size-5 text-white" />
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate text-sm font-medium">{quiz.title}</p>
+                    <p className="truncate text-xs text-muted-foreground">
+                      {quiz.question_count} {quiz.question_count === 1 ? "question" : "questions"}
+                      {" · "}{quiz.difficulty ?? "No difficulty set"}
+                      {bookTitle ? ` · ${bookTitle}` : ""}
+                    </p>
+                  </div>
+                  <span
+                    className={cn(
+                      "shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium",
+                      quiz.status === "published"
+                        ? "bg-green-50 text-green-700 dark:bg-green-950/30 dark:text-green-400"
+                        : "bg-muted text-muted-foreground",
+                    )}
+                  >
+                    {quiz.status}
+                  </span>
+                  <Edit3 className="size-4 shrink-0 text-muted-foreground" />
+                </Link>
+              )
+            })}
+          </div>
+        )}
       </div>
     </div>
   )

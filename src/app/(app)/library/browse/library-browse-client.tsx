@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState, useMemo, useCallback } from "react"
-import { BookOpen, TrendingUp, Search, Flame, SlidersHorizontal, ChevronLeft, ChevronRight, Sparkles, Library } from "lucide-react"
+import { BookOpen, TrendingUp, Search, Flame, SlidersHorizontal, ChevronLeft, ChevronRight, Library } from "lucide-react"
 import { type TomeBook } from "@/data/books"
 import { getBooks, searchBooks } from "@/lib/content"
 // supabase removed — library uses local BOOKS data as the canonical source
@@ -13,7 +13,6 @@ import { BookCover, getCoverParams } from "@/components/tome/book-cover"
 import { AuthorLink } from "@/components/tome/author-link"
 import { SearchBar } from "@/components/tome/SearchBar"
 import { FilterDropdown } from "@/components/tome/FilterDropdown"
-import { isBookRecommended, isBookComplete } from "@/lib/book-apparatus"
 import { useLibraryRecommendations } from "@/hooks/use-library-recommendations"
 import { cn } from "@/lib/utils"
 
@@ -149,26 +148,6 @@ export function LibraryBrowseClient() {
 
     return result
   }, [allBooks, allProgress, debouncedSearch, selectedTraditions, selectedDifficulties, sort])
-
-  // Show discovery sections only when no active filters
-  const showDiscovery = !hasActiveFilters
-
-  // ── Recommended: fully-ingested + in-progress books ──
-  // Sorted by year (ascending) so earlier works — which influence the later
-  // ones — read first. This is our working proxy for "importance" in a
-  // canon built on intertextual lineage. Finished books (full Opus
-  // apparatus) come first within each year; in-progress books (partial
-  // annotations or glosses) come second.
-  const recommendedBooks = useMemo(
-    () =>
-      allBooks.filter(isBookRecommended).sort((a, b) => {
-        const ac = isBookComplete(a) ? 0 : 1
-        const bc = isBookComplete(b) ? 0 : 1
-        if (ac !== bc) return ac - bc
-        return a.year - b.year
-      }),
-    [allBooks]
-  )
 
   return (
     <div className="flex flex-row gap-0 min-h-full">
@@ -326,42 +305,6 @@ export function LibraryBrowseClient() {
         {/* Content */}
         <div className="p-4">
             <div className="space-y-8">
-
-              {/* ── Recommended: fully-ingested books ── */}
-              {showDiscovery && recommendedBooks.length > 0 && (
-                <section>
-                  <div className="flex items-baseline gap-2 mb-3">
-                    <span className="text-[var(--tome-accent)]">
-                      <Sparkles className="size-4" />
-                    </span>
-                    <h2
-                      className="text-sm font-semibold tracking-tight"
-                      style={{ letterSpacing: "-0.01em" }}
-                    >
-                      Recommended
-                    </h2>
-                    <span className="text-xs text-muted-foreground">
-                      ({recommendedBooks.length})
-                    </span>
-                    <p className="text-[11px] text-muted-foreground/70 ml-1">
-                      Finished &amp; in-progress books with scholarly apparatus (annotations, glosses, echoes).
-                    </p>
-                  </div>
-                  <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-                    {recommendedBooks.map((book, i) => (
-                      <BlurFade key={book.id} delay={0.03 + i * 0.03} inView>
-                        <BookCard
-                          book={book}
-                          progress={allProgress[book.id]}
-                          size="lg"
-                          activeSort={sort}
-                          recommendedBy={recsMap[book.id] ?? null}
-                        />
-                      </BlurFade>
-                    ))}
-                  </div>
-                </section>
-              )}
 
               {/* ── All books grid ── */}
               {filtered.length === 0 ? (
