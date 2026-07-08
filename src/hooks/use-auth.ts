@@ -228,6 +228,18 @@ function useAuthMachine(seed: Seed | null, active: boolean): AuthValue {
 
   const signOut = useCallback(async () => {
     await supabase.auth.signOut()
+    // Clear the localStorage demo shell so the SIGNED_OUT handler can't
+    // immediately re-hydrate a demo profile (same role) and mask the sign-out.
+    try {
+      localStorage.removeItem("tome-onboarding")
+    } catch {
+      // ignore (storage unavailable)
+    }
+    // Hard navigation to the sign-in page guarantees a clean, session-less
+    // state and lets the user sign in as a different account.
+    if (typeof window !== "undefined") {
+      window.location.href = "/login"
+    }
   }, [])
 
   return { ...state, signOut, refreshProfile }

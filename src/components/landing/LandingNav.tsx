@@ -8,28 +8,12 @@ import { cn } from "@/lib/utils"
 import { ThemeToggle } from "@/components/tome/ThemeToggle"
 import { TomeWordmark } from "@/components/brand/tome-wordmark"
 import { PRIMARY_NAV, AUTH_LINKS, LANDING_PATHS } from "@/lib/marketing-nav"
-import { useAuth } from "@/hooks/use-auth"
 
 export function LandingNav() {
   const pathname = usePathname()
   const isLandingPath = LANDING_PATHS.has(pathname)
-  // Marketing pages are statically rendered, so the server always ships the
-  // "resolving" skeleton. This client nav reads auth ONLY from the shared
-  // AuthProvider (no localStorage, no route inference, no second subscription)
-  // and resolves the CTA exactly once — see the auth-slot latch below.
-  const { isAuthenticated, isDemoMode, isLoading } = useAuth()
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-  // Latch the first settled auth resolution. Server HTML and the first client
-  // render show "resolving"; once the shared machine settles we render the
-  // final CTA once and never fall back to the skeleton. After that the slot
-  // only moves on a genuine sign-in/out, since the shared machine already
-  // ignores INITIAL_SESSION / TOKEN_REFRESHED and only recomputes demo state on
-  // a real SIGNED_OUT.
-  const [resolved, setResolved] = useState(false)
-  useEffect(() => {
-    if (!isLoading && !resolved) setResolved(true)
-  }, [isLoading, resolved])
 
   const handleScroll = useCallback(() => {
     setScrolled(window.scrollY > 60)
@@ -52,31 +36,15 @@ export function LandingNav() {
     solid ? "text-foreground hover:bg-accent" : "text-white hover:bg-white/10"
   )
 
-  // The auth slot has exactly three states. Server HTML always renders
-  // "resolving"; the client resolves to "in" (a real session OR a demo shell →
-  // "Open Tome") or "out" (a fresh visitor → quiet "Sign in" + primary "Sign up")
-  // once, then latches. Keying "in" off isAuthenticated || isDemoMode means a
-  // stale session vs demo-fallback flap can't move the slot — both are "Open Tome".
-  const hasEntry = isAuthenticated || isDemoMode
-  const slotState: "resolving" | "in" | "out" =
-    isLoading && !resolved ? "resolving" : hasEntry ? "in" : "out"
-  // The primary pill carries a fixed min-width + centred text so "Sign up" and
-  // "Open Tome" share one box; the skeleton reuses it. Signed-out visitors also
-  // get a quiet "Sign in" in the slot beside it; signed-in/demo shells get the
-  // single "Open Tome" pill pointing at /dashboard.
+  // The nav always exposes both auth entrances — a quiet "Sign in" link beside
+  // a primary "Sign up" pill — regardless of any existing session. This keeps
+  // the sign-in page one click away at all times, so testers/users can switch
+  // between accounts without an "Open Tome" pill hiding the way in. The CTA no
+  // longer depends on auth state, so the nav is deterministic by construction.
   const pillClass = cn(
     "text-sm font-semibold px-4 py-1.5 rounded-full transition-colors text-center min-w-[112px]",
     solid ? "bg-foreground text-background hover:opacity-90" : "bg-white text-black hover:bg-white/90"
   )
-  // The primary pill is the front door in every resolved state: a real session
-  // (or demo shell) opens straight to the role home ("Open Tome" → /dashboard,
-  // which routes teacher→teacher home / student→student surface); a fresh
-  // visitor gets "Sign up" → /signup alongside the quiet "Sign in" link in the
-  // slot. Both resolved states latch once, so the slot never swaps after the
-  // first settle — only on a genuine sign-in/out — keeping the nav deterministic.
-  const pillLabel = slotState === "in" ? "Open Tome" : AUTH_LINKS.signUp.label
-  const pillHref = slotState === "in" ? "/dashboard" : AUTH_LINKS.signUp.href
-  const skeletonBg = solid ? "bg-foreground/10" : "bg-white/20"
 
   return (
     <nav
@@ -111,31 +79,16 @@ export function LandingNav() {
             </Link>
           ))}
 
-          {/* Auth slot — one fixed footprint across all three states so the
-              skeleton and both final states occupy identical space (no layout
-              shift when it resolves). The Sign-in area keeps its width even in
-              the "in" state; the pill is always present with a fixed min-width
-              so "Sign up"/"Open Tome"/skeleton share one box. */}
-          <div
-            className="hidden sm:flex items-center justify-end w-[72px]"
-            aria-busy={slotState === "resolving"}
-          >
-            {slotState === "resolving" && (
-              <span aria-hidden className={cn("h-[30px] w-[68px] rounded-full animate-pulse", skeletonBg)} />
-            )}
-            {slotState === "out" && (
-              <Link href={AUTH_LINKS.signIn.href} className={cn("whitespace-nowrap", linkClass)}>
-                {AUTH_LINKS.signIn.label}
-              </Link>
-            )}
-          </div>
-          {slotState === "resolving" ? (
-            <span aria-hidden className={cn(pillClass, "animate-pulse opacity-60")} />
-          ) : (
-            <Link href={pillHref} className={pillClass}>
-              {pillLabel}
+          {/* Auth slot — always both entrances: a quiet "Sign in" link beside
+              the primary "Sign up" pill, so the login page is always reachable. */}
+          <div className="hidden sm:flex items-center justify-end w-[72px]">
+            <Link href={AUTH_LINKS.signIn.href} className={cn("whitespace-nowrap", linkClass)}>
+              {AUTH_LINKS.signIn.label}
             </Link>
-          )}
+          </div>
+          <Link href={AUTH_LINKS.signUp.href} className={pillClass}>
+            {AUTH_LINKS.signUp.label}
+          </Link>
 
           <ThemeToggle
             className={cn(
@@ -172,19 +125,17 @@ export function LandingNav() {
                 {item.label}
               </Link>
             ))}
-            {slotState === "out" && (
-              <Link
-                href={AUTH_LINKS.signIn.href}
-                className="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
-              >
-                {AUTH_LINKS.signIn.label}
-              </Link>
-            )}
             <Link
-              href={pillHref}
+              href={AUTH_LINKS.signIn.href}
+              className="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
+            >
+              {AUTH_LINKS.signIn.label}
+            </Link>
+            <Link
+              href={AUTH_LINKS.signUp.href}
               className="rounded-lg px-3 py-2.5 text-sm font-semibold text-foreground hover:bg-accent transition-colors"
             >
-              {pillLabel}
+              {AUTH_LINKS.signUp.label}
             </Link>
           </div>
         </div>
