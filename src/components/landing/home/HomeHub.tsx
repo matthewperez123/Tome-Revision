@@ -134,7 +134,7 @@ function DiscoverCanon() {
         stats.traditionCount,
       )} that shaped them.`}
       bg="background"
-      cta={{ label: "Browse the library", href: "/library/browse" }}
+      cta={{ label: "Browse the library", href: "/library" }}
     >
       <div
         className="-mx-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-3 md:-mx-12 md:px-12 [scrollbar-width:thin]"

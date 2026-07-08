@@ -1,6 +1,6 @@
 "use client"
 
-import { use, useEffect, useState, useCallback } from "react"
+import { use, useEffect, useRef, useState, useCallback } from "react"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
 import { motion } from "framer-motion"
@@ -119,9 +119,16 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
   const [loading, setLoading] = useState(true)
   const [status, setStatus] = useState<string>("draft")
   const [classrooms, setClassrooms] = useState<{ id: string; name: string }[]>([])
-  const [assignClassroom, setAssignClassroom] = useState("")
+  const [assignClassrooms, setAssignClassrooms] = useState<string[]>([])
+  const [dueDate, setDueDate] = useState("")
   const [assigning, setAssigning] = useState(false)
   const [launching, setLaunching] = useState(false)
+  // Unsaved-changes tracking. hydratedRef flips true one tick after the initial
+  // load so the load's own state writes don't mark the draft dirty; genuine
+  // edits after that set `dirty`, which drives the Save-Draft indicator and a
+  // beforeunload guard.
+  const [dirty, setDirty] = useState(false)
+  const hydratedRef = useRef(false)
 
   const books = getBooks()
   const selectedBook = books.find((b) => b.id === bookId)
@@ -196,6 +203,29 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
     fetchQuiz()
   }, [user, quizId, isDemoMode])
 
+  // Allow dirty tracking only after the load-driven state writes have settled.
+  useEffect(() => {
+    if (loading) return
+    const t = setTimeout(() => { hydratedRef.current = true }, 0)
+    return () => clearTimeout(t)
+  }, [loading])
+
+  // Mark the draft dirty on any content edit (after hydration).
+  useEffect(() => {
+    if (hydratedRef.current) setDirty(true)
+  }, [title, bookId, difficulty, settings, questions])
+
+  // Warn before leaving with unsaved edits.
+  useEffect(() => {
+    if (!dirty) return
+    const handler = (e: BeforeUnloadEvent) => {
+      e.preventDefault()
+      e.returnValue = ""
+    }
+    window.addEventListener("beforeunload", handler)
+    return () => window.removeEventListener("beforeunload", handler)
+  }, [dirty])
+
   const addQuestion = useCallback((type: QuestionType) => {
     const newQ: QuizQuestion = {
       id: `new-${Date.now()}`,
@@ -242,6 +272,7 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
       await new Promise((r) => setTimeout(r, 500))
       setSaving(false)
       setSaved(true)
+      setDirty(false)
       setTimeout(() => setSaved(false), 2000)
       return true
     }
@@ -277,6 +308,7 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
       return false
     }
     setSaved(true)
+    setDirty(false)
     setTimeout(() => setSaved(false), 2000)
     return true
   }, [user, isDemoMode, quizId, title, bookId, difficulty, settings, questions])
@@ -300,35 +332,61 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
     toast.success("Quiz published")
   }, [handleSave, quizId, router, isDemoMode, user])
 
+  const toggleAssignClassroom = useCallback((id: string) => {
+    setAssignClassrooms((prev) =>
+      prev.includes(id) ? prev.filter((c) => c !== id) : [...prev, id],
+    )
+  }, [])
+
   const handleAssign = useCallback(async () => {
-    if (!assignClassroom) return
+    if (assignClassrooms.length === 0) return
     setAssigning(true)
     const points = questions.reduce((sum, q) => sum + q.points, 0)
-    const res = await assignQuiz({
-      quizId,
-      classroomId: assignClassroom,
-      points,
-    })
-    setAssigning(false)
-    if (!res.ok) {
-      toast.error(res.error)
-      return
+    // datetime-local is wall-clock local; convert to an ISO instant for the API.
+    const dueAt = dueDate ? new Date(dueDate).toISOString() : undefined
+
+    let totalStudents = 0
+    let sentClasses = 0
+    let resentClasses = 0
+    const failed: string[] = []
+    // Sequential so each class's duplicate check + seed lands before the next.
+    for (const cid of assignClassrooms) {
+      const res = await assignQuiz({ quizId, classroomId: cid, points, dueAt })
+      if (res.ok) {
+        sentClasses += 1
+        totalStudents += res.data.assigned
+        if (res.data.reused) resentClasses += 1
+      } else {
+        failed.push(classrooms.find((c) => c.id === cid)?.name ?? "a class")
+      }
     }
-    toast.success("Assigned to class")
-    setAssignClassroom("")
-  }, [assignClassroom, quizId, questions])
+    setAssigning(false)
+
+    if (sentClasses > 0) {
+      const s = totalStudents === 1 ? "" : "s"
+      const cls = sentClasses === 1 ? "class" : "classes"
+      const resentNote = resentClasses > 0 ? ` (${resentClasses} updated, no re-notify)` : ""
+      toast.success(`Sent to ${totalStudents} student${s} across ${sentClasses} ${cls}${resentNote}`)
+      setAssignClassrooms([])
+      setDueDate("")
+    }
+    if (failed.length > 0) {
+      toast.error(`Couldn't send to ${failed.join(", ")}`)
+    }
+  }, [assignClassrooms, dueDate, quizId, questions, classrooms])
 
   const handleLaunchLive = useCallback(async () => {
-    if (!assignClassroom) return
+    // Live quizzes run for a single class on a shared screen.
+    if (assignClassrooms.length !== 1) return
     setLaunching(true)
-    const res = await launchLiveQuiz({ quizId, classroomId: assignClassroom })
+    const res = await launchLiveQuiz({ quizId, classroomId: assignClassrooms[0] })
     setLaunching(false)
     if (!res.ok) {
       toast.error(res.error)
       return
     }
     router.push(`/classroom/live/${res.data.sessionId}`)
-  }, [assignClassroom, quizId, router])
+  }, [assignClassrooms, quizId, router])
 
   const handleAIGenerate = useCallback(async () => {
     if (!bookId) return
@@ -775,8 +833,14 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
       <div className="mt-8 space-y-4 border-t pt-6">
         <div className="flex gap-3">
           <Button variant="outline" onClick={handleSave} disabled={saving} className="gap-1.5">
-            {saved ? <Check className="size-3.5 text-green-500" /> : <Save className="size-3.5" />}
-            {saving ? "Saving..." : saved ? "Saved!" : "Save Draft"}
+            {saved ? (
+              <Check className="size-3.5 text-green-500" />
+            ) : dirty ? (
+              <span className="size-2 rounded-full bg-amber-500" aria-hidden />
+            ) : (
+              <Save className="size-3.5" />
+            )}
+            {saving ? "Saving..." : saved ? "Saved!" : dirty ? "Save Draft*" : "Save Draft"}
           </Button>
           <Button onClick={handlePublish} disabled={questions.length === 0} className="flex-1 gap-1.5 bg-[var(--tome-accent)] hover:bg-[color-mix(in_srgb,var(--tome-accent)_85%,black)] text-white">
             <Eye className="size-3.5" />
@@ -802,31 +866,64 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
                 You have no classes yet. Create one to assign this quiz.
               </p>
             ) : (
-              <div className="flex gap-2">
-                <select
-                  value={assignClassroom}
-                  onChange={(e) => setAssignClassroom(e.target.value)}
-                  className="flex-1 rounded-md border bg-background px-3 py-2 text-sm"
+              <>
+                {/* Multi-class picker — check every class that should get it. */}
+                <div className="space-y-1 max-h-44 overflow-y-auto rounded-lg border bg-background p-1.5">
+                  {classrooms.map((c) => {
+                    const checked = assignClassrooms.includes(c.id)
+                    return (
+                      <label
+                        key={c.id}
+                        className={`flex items-center gap-2 rounded-md px-2 py-1.5 text-sm cursor-pointer transition-colors ${
+                          checked ? "bg-[var(--tome-accent)]/10 text-[var(--tome-accent)]" : "hover:bg-muted/50"
+                        }`}
+                      >
+                        <input
+                          type="checkbox"
+                          checked={checked}
+                          onChange={() => toggleAssignClassroom(c.id)}
+                          className="size-4 rounded"
+                        />
+                        <span className="flex-1">{c.name}</span>
+                      </label>
+                    )
+                  })}
+                </div>
+
+                {/* Optional due date. */}
+                <div>
+                  <label className="text-xs font-medium text-muted-foreground">Due date (optional)</label>
+                  <Input
+                    type="datetime-local"
+                    value={dueDate}
+                    onChange={(e) => setDueDate(e.target.value)}
+                    className="mt-1 text-sm"
+                  />
+                </div>
+
+                <Button
+                  onClick={handleAssign}
+                  disabled={assignClassrooms.length === 0 || assigning}
+                  className="w-full gap-1.5"
                 >
-                  <option value="">Choose a class…</option>
-                  {classrooms.map((c) => (
-                    <option key={c.id} value={c.id}>{c.name}</option>
-                  ))}
-                </select>
-                <Button onClick={handleAssign} disabled={!assignClassroom || assigning} className="gap-1.5">
                   <Send className="size-3.5" />
-                  {assigning ? "Assigning…" : "Assign"}
+                  {assigning
+                    ? "Sending…"
+                    : assignClassrooms.length > 1
+                      ? `Send to ${assignClassrooms.length} classes`
+                      : "Send to class"}
                 </Button>
-              </div>
+              </>
             )}
             {classrooms.length > 0 && (
               <div className="border-t pt-3">
                 <p className="text-xs text-muted-foreground">
                   Or run it live — students race to answer on a shared big screen.
+                  Select exactly one class.
                 </p>
                 <Button
                   onClick={handleLaunchLive}
-                  disabled={!assignClassroom || launching}
+                  disabled={assignClassrooms.length !== 1 || launching}
                   className="mt-2 w-full gap-1.5 bg-[#6C2D5C] text-white hover:bg-[#7d3a6c]"
                 >
                   <Radio className="size-3.5" />

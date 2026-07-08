@@ -85,7 +85,7 @@ export default function AssignmentDetailPage({
           .select("*")
           .eq("assignment_id", assignmentId)
           .eq("student_id", user!.id)
-          .single()
+          .maybeSingle()
 
         if (sub) {
           setSubmission(sub)

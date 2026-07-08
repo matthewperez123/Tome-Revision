@@ -9,6 +9,7 @@ import {
   GraduationCap,
   CircleUser,
   ClipboardCheck,
+  ClipboardList,
   Feather,
   SquarePen,
   Brain,
@@ -64,7 +65,10 @@ const libraryGroup: NavGroup = {
 const readGroup: NavGroup = {
   label: "Read",
   items: [
-    { label: "Reading", href: "/reading", icon: BookOpen },
+    // Readers/teachers get their personal reading list; students get the
+    // reading their teacher assigned (same page, reading-only filter).
+    { label: "Reading", href: "/reading", icon: BookOpen, roles: ["reader", "teacher"] },
+    { label: "Reading", href: "/assignments?type=reading", icon: BookOpen, roles: ["student"] },
     { label: "Bookmarks", href: "/bookmarks", icon: Bookmark },
     { label: "Shelves", href: "/shelves", icon: LibraryBig },
   ],
@@ -82,18 +86,15 @@ const classroomGroup: NavGroup = {
   label: "Classroom",
   items: [
     { label: "Classes", href: "/classroom", icon: GraduationCap },
-    { label: "Quizzes", href: "/quizzes", icon: Brain },
+    // Students see teacher-given Assignments + the term Semester schedule in
+    // place of the personal practice "Quizzes" surface (kept for readers).
+    { label: "Assignments", href: "/assignments", icon: ClipboardList, roles: ["student"] },
+    { label: "Semester", href: "/semester", icon: CalendarRange, roles: ["student"] },
+    { label: "Quizzes", href: "/quizzes", icon: Brain, roles: ["reader", "teacher"] },
     { label: "Quiz Builder", href: "/classroom/quiz-builder", icon: SquarePen, roles: ["teacher"] },
     { label: "Grading", href: "/classroom/grading", icon: ClipboardCheck, roles: ["teacher"] },
-    { label: "Guided Sessions", href: "/teacher/guided-learning", icon: Compass, roles: ["teacher"] },
-  ],
-}
-
-const planningGroup: NavGroup = {
-  label: "Planning",
-  roles: ["teacher"],
-  items: [
     { label: "Semester Planning", href: "/semester-plan", icon: CalendarRange, roles: ["teacher"] },
+    { label: "Guided Sessions", href: "/teacher/guided-learning", icon: Compass, roles: ["teacher"] },
   ],
 }
 
@@ -102,11 +103,10 @@ const settingsGroup: NavGroup = {
   items: [{ label: "Settings", href: "/account", icon: Settings }],
 }
 
-/** Teachers lead with the classroom, then planning; library sits at the end. */
+/** Teachers lead with the classroom (planning now lives inside it); library sits at the end. */
 const teacherOrder: NavGroup[] = [
   homeGroup,
   classroomGroup,
-  planningGroup,
   libraryGroup,
   readGroup,
   discoverGroup,

@@ -329,10 +329,15 @@ const AssignInput = z.object({
  * publishing) a type='quiz' assignment linked via assignments.quiz_id. Seeds
  * not_started submissions for the roster + fires class_assignment notifications
  * — the same broadcast shape as publishAssignment.
+ *
+ * Idempotent per quiz+class: if an active assignment for this quiz already
+ * exists in the classroom it is REUSED (due date / points refreshed) instead of
+ * creating a duplicate, and only students who don't yet have a submission row
+ * (late joiners) are notified — so re-sending never spams the whole roster.
  */
 export async function assignQuiz(
   input: z.input<typeof AssignInput>,
-): Promise<ActionResult<{ assignmentId: string; assigned: number }>> {
+): Promise<ActionResult<{ assignmentId: string; assigned: number; reused: boolean; notified: number }>> {
   const parsed = AssignInput.safeParse(input)
   if (!parsed.success) return fail(parsed.error.issues[0]?.message ?? "Invalid input.")
   const i = parsed.data
@@ -366,26 +371,53 @@ export async function assignQuiz(
       .maybeSingle<{ id: string; teacher_id: string; name: string }>()
     if (!classroom || classroom.teacher_id !== user.id) return fail("You don't own that classroom.")
 
-    // Create the assignment as active (published) directly.
-    const { data: assignment, error: aErr } = await supabase
+    // Reuse an existing active quiz-assignment for this class rather than
+    // stacking a duplicate (which would double the roster's submissions +
+    // notifications). Refresh its due date / points on re-send.
+    const { data: existing } = await supabase
       .from("assignments")
-      .insert({
-        classroom_id: i.classroomId,
-        teacher_id: user.id,
-        type: "quiz",
-        quiz_id: i.quizId,
-        title: quiz.title,
-        book_id: quiz.book_id,
-        chapter_range_start: quiz.chapter_range_start,
-        chapter_range_end: quiz.chapter_range_end,
-        due_date: i.dueAt ?? null,
-        points_available: i.points,
-        scope: "classroom",
-        status: "active",
-      })
       .select("id")
-      .single()
-    if (aErr || !assignment) return fail(aErr?.message ?? "Failed to create assignment.")
+      .eq("quiz_id", i.quizId)
+      .eq("classroom_id", i.classroomId)
+      .eq("type", "quiz")
+      .eq("status", "active")
+      .maybeSingle<{ id: string }>()
+
+    let assignmentId: string
+    const reused = Boolean(existing)
+    if (existing) {
+      const { error: updErr } = await supabase
+        .from("assignments")
+        .update({
+          title: quiz.title,
+          due_date: i.dueAt ?? null,
+          points_available: i.points,
+        })
+        .eq("id", existing.id)
+      if (updErr) return fail(updErr.message)
+      assignmentId = existing.id
+    } else {
+      const { data: assignment, error: aErr } = await supabase
+        .from("assignments")
+        .insert({
+          classroom_id: i.classroomId,
+          teacher_id: user.id,
+          type: "quiz",
+          quiz_id: i.quizId,
+          title: quiz.title,
+          book_id: quiz.book_id,
+          chapter_range_start: quiz.chapter_range_start,
+          chapter_range_end: quiz.chapter_range_end,
+          due_date: i.dueAt ?? null,
+          points_available: i.points,
+          scope: "classroom",
+          status: "active",
+        })
+        .select("id")
+        .single()
+      if (aErr || !assignment) return fail(aErr?.message ?? "Failed to create assignment.")
+      assignmentId = assignment.id
+    }
 
     // Seed submissions + notify the roster (admin — writes on behalf of many).
     const admin = createAdminClient()
@@ -396,31 +428,45 @@ export async function assignQuiz(
       .eq("role", "student")
     const studentIds = (members ?? []).map((m) => m.student_id as string)
 
+    // On reuse, only notify students who don't already have a submission for
+    // this assignment (late joiners) so a re-send doesn't re-notify everyone.
+    let notifyIds = studentIds
+    if (reused && studentIds.length > 0) {
+      const { data: existingSubs } = await admin
+        .from("assignment_submissions")
+        .select("student_id")
+        .eq("assignment_id", assignmentId)
+      const have = new Set((existingSubs ?? []).map((s) => s.student_id as string))
+      notifyIds = studentIds.filter((sid) => !have.has(sid))
+    }
+
     if (studentIds.length > 0) {
       await admin.from("assignment_submissions").upsert(
         studentIds.map((sid) => ({
-          assignment_id: assignment.id,
+          assignment_id: assignmentId,
           student_id: sid,
           status: "not_started" as const,
         })),
         { onConflict: "assignment_id,student_id", ignoreDuplicates: true },
       )
-      await notify(
-        studentIds.map((sid) => ({
-          recipientId: sid,
-          type: "class_assignment" as const,
-          title: `New quiz: ${quiz.title}`,
-          body: classroom.name,
-          actionUrl: `/classroom/${i.classroomId}/quiz/${i.quizId}`,
-          actorId: user.id,
-          entityType: "assignment",
-          entityId: assignment.id,
-        })),
-      )
+      if (notifyIds.length > 0) {
+        await notify(
+          notifyIds.map((sid) => ({
+            recipientId: sid,
+            type: "class_assignment" as const,
+            title: `New quiz: ${quiz.title}`,
+            body: classroom.name,
+            actionUrl: `/classroom/${i.classroomId}/quiz/${i.quizId}`,
+            actorId: user.id,
+            entityType: "assignment",
+            entityId: assignmentId,
+          })),
+        )
+      }
     }
 
     revalidatePath(`/classroom/${i.classroomId}`)
-    return ok({ assignmentId: assignment.id, assigned: studentIds.length })
+    return ok({ assignmentId, assigned: studentIds.length, reused, notified: notifyIds.length })
   } catch (e) {
     return fail((e as Error).message)
   }

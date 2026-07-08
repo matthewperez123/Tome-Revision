@@ -56,9 +56,9 @@ export function TeacherDashboard() {
             </Button>
           </Link>
           <Link href="/classroom/create">
-            <Button variant="outline" size="sm" className="gap-1.5">
+            <Button size="sm" className="gap-1.5">
               <Plus className="size-3.5" />
-              New Classroom
+              Create Class + Code
             </Button>
           </Link>
         </div>

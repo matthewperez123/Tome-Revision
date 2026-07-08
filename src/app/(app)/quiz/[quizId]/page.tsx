@@ -211,7 +211,7 @@ export default function QuizPage() {
   useEffect(() => {
     async function fetchQuiz() {
       const { data: quizData } = await supabase
-        .from("quizzes").select("*").eq("id", quizId).single()
+        .from("quizzes").select("*").eq("id", quizId).maybeSingle()
 
       let questions: Question[] = []
       if (quizData) {
