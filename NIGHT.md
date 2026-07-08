@@ -1,0 +1,2601 @@
+# NIGHT.md — Canon Ingestion & Quiz Generation continuity log
+
+## SESSION 2026-07-08 — Launch-blocker close-out: quiz return-loop + walkthrough + Stripe webhook (read-only/verify, NO code changes, NO merge)
+Mission = close every launch blocker a single session can, in strict stage order, verifying each before the next. Referenced doc `TOME-code-quiz-return-loop.md` DOES NOT EXIST (glob/grep/`git log --all` clean); proceeded on the mission's embedded ground truth + self-contained stage specs.
+
+**STAGE 0 — LOCATE:** Ground-truth counts verified exactly (teacher_quizzes=4, assignment_submissions=58, subscriptions=9, teacher_quiz_responses=0, teacher_quiz_results=0, stripe_events=0). The mission's stated diagnosis ("missing submit/finalize handler") is STALE — the entire WIRE-1 code (action layer `submitQuizAttempt` in `teacher-quizzes.ts`, student take page `classroom/[id]/quiz/[quizId]`, teacher results view `quiz-builder/[quizId]/results`) is ALREADY on origin/main AND deployed. TRUE root cause of the zeros: all 4 teacher_quizzes were `draft` and NONE were ever assigned → no student could take a quiz. RESUME = STAGE 1 verification, no build.
+
+**STAGE 1 — WIRE 1 (verified end-to-end):** Published + assigned Moby Dick quiz (`cc29398a…`) to RHET10 (`5b191168…`, Hypatia owner) via SQL mirroring the teacher actions, then drove the REAL deployed submit handler through the browser as Beatrice (`a599fe24…`). Rows landed: **teacher_quiz_responses 0→5, teacher_quiz_results 0→1**, assignment_submission→submitted. Hypatia's results view reads them (listQuizResults → Beatrice 2/12 17%; listStudentResponses → 4 auto + 1 virgil). Objective grading correct (vocab 1/1, MC 1/1); one multiple_select scored 0 due to a browser eval under-click (test artifact, NOT a handler defect); tf_with_reason 0/4 virgil (no ANTHROPIC_API_KEY → graceful score 0, needsReview); short_answer 0/5 (null correct_answer, by design). **Definition-of-done counts MET (both > 0).**
+
+**STAGE 2 — WIRE 3 (walkthrough env already merged; poison branch NOT merged):** The walkthrough test-env branch `test/walkthrough` is ALREADY an ancestor of main (commit `d90b6d5d` idempotent seed+teardown+audit) → shipped. Personas live in prod DB (Beatrice student both classes, Hypatia owner RHET10). **⚠️ `today/demo-cohort` MUST NOT BE MERGED** — it diverged at ancient merge-base `24e4a048`, is missing EVERY recent lane merge on main (student-badge-login, classroom-live-loop, asset-loadsave, virgil-surfaces, stripe-full-integration, nav-determinism, ship-walkthrough), and its 146-file/-12837 diff is stale reversions of shipped work. Merging it = revert the entire launch. Its only valuable artifact (`scripts/seed-demo-cohort.ts`, +915) is ALREADY present in this working tree as an untracked file (byte-identical). If the elaborate @demo.usetome.app cohort is wanted, cherry-pick the seed script onto main — never merge the branch.
+
+**STAGE 3 — WIRE 2 (webhook code-side PASS; endpoint registration is HUMAN-only):** `src/app/api/stripe/webhook/route.ts` verifies signature via `constructEvent(rawBody, sig, STRIPE_WEBHOOK_SECRET)` (missing→400, bad→400, unconfigured→501); idempotent by claiming `event.id` into `stripe_events` PK-first (dup 23505→200 no-op, claim released on handler failure for retry); service-role writes only. `stripe_events` PK=`id` confirmed. CLI test trigger NOT run — `stripe` CLI not installed + no test-mode `STRIPE_WEBHOOK_SECRET`/`STRIPE_SECRET_KEY` set locally (only `.env.example`); per rules, never touch live keys. **stripe_events=0 remaining is EXPECTED** (endpoint never registered in Stripe dashboard = human task). Five-click checklist delivered in session.
+
+**No files changed, no commits, no merges, no migrations this session.** All work was DB/browser verification + code analysis. The quiz loop rows (5 responses, 1 result) + the published/assigned Moby Dick quiz PERSIST in prod DB from the Stage-1 exercise.
+
+
+## SESSION 2026-07-07 — Sidebar IA: sections, renames, reorder (branch `today/nav-ia`, NOT merged, commit `dd927a9c`)
+Label/order-only nav reorg. NO migration. Routes/slugs unchanged. RUBRIC-only (Semester Planning is a normal item, `CalendarRange` icon; zero iridescence in nav). Config centralized in `src/lib/navigation.ts` (role-specific ordering).
+
+**BEFORE (single order, both roles):** Home[Home,Dashboard] · Read[Library,Reading,Bookmarks,Shelves] · Discover[Authors,Explore,Timelines] · Practice[Quizzes] · Classroom[My Classes,Messages,Quiz Builder,Grading,Guided Sessions] · Settings.
+
+**AFTER — TEACHER:** Home[Dashboard] · Classroom[Classes(was "My Classes"),Quizzes,Quiz Builder,Grading,Guided Sessions] · Planning[Semester Planning] · Library[Library,Authors] · Read[Reading,Bookmarks,Shelves] · Discover[Explore,Timelines] · Settings.
+**AFTER — STUDENT/READER:** Home[Home,Dashboard] · Library[Library,Authors] · Read[Reading,Bookmarks,Shelves] · Discover[Explore,Timelines] · Classroom[Classes,Quizzes] · Settings.
+
+**CHANGES:** "My Classes"→"Classes"; Quizzes moved into Classroom (both roles); Authors moved into new Library section (below Library); new Planning section w/ **new landing** `src/app/(app)/semester-plan/page.tsx` (lists owner/co_teacher classrooms → links each `/classroom/[id]/semester-plan`); **Messages removed** from nav both roles — `src/app/(app)/messages/page.tsx` now `redirect("/dashboard")`, DM feature code left dormant (smallest reversible diff). `dockNav` unchanged (already "Classes", no Messages). Active-state map in `app-sidebar.tsx` gained `/semester-plan`; per-classroom planner still highlights Classes.
+
+**VERIFY:** tsc clean; teacher nav live-verified via DOM (order + active states match spec). PENDING: full dual-persona screenshots (Hypatia/Beatrice, desktop+mobile) blocked while another session owns the shared working tree. Branch is main(`302e9808`)+1 commit, cleanly re-parented. **DO NOT merge to main — review first.**
+
+
+## SESSION 2026-07-07 — Front door + scan-to-join + walkthrough (branch `today/ship-walkthrough`, NOT merged)
+**SHIPPED (committed on `today/ship-walkthrough`, not on main):**
+- `b461b2ae` door: open-tome routes to auth — `OPEN_TOME_LOGGED_OUT_TARGET="/login"` (one-line flip to `/signup`) in `marketing-nav.ts`; LandingNav pill: signed-in→`/dashboard`, out→target; nav-determinism preserved.
+- `23671925` join: class QR + one-path join action — teacher "Show QR" modal + printable `classroom/[id]/join-poster` route (payload ONLY `${APP_URL}/join?code=`, no PII, local `qrcode`, staff-gated via `user_has_classroom_role`); `/join` now auth-aware (logged-out scan→`/student-login?returnTo=/join?code=`, no account creation); `verifyStudentAccess(returnTo)` same-origin only; join rate-limit reuses `login_attempts` under namespaced `join:` key.
+**VERIFIED (read-only prod probes, real rows in `docs/WALKTHROUGH-REPORT.md`):**
+- Loop closes end-to-end in Hypatia's RHET10 (`5b191168`): Beatrice member `6de9e94f` → assignment `13702a8d` → submission `ebb0049f` (graded) → grade `010d8eaa` 45/100 `was_overridden` → 1 `grade_history` snapshot (mirror invariant held).
+- Isolation: Alcuin 0 memberships; `user_has_classroom_role(alcuin, …)` = false for RHET10 & English 9.
+- tsc clean; Phase 3 = NO migration (all tables/cols already live).
+**LIVE SCAN-TO-JOIN — DONE (your go-ahead, one throwaway prod student):** provisioned throwaway student in RHET10 mirroring the exact server paths → all 6 stages PASS with real rows: auth user `4c580515`, code `Q4EY-3FNW`, member `c36cc76e` (join created it), submission `ffd2d861` (backfill), roster 4→5. **OTP-type NOTE RESOLVED: `verifyOtp(type:"email")` returns a real session on this project — code as-shipped is correct;** replaced the stale NOTE in `student-auth.ts` with the confirmed fact. Flagged: the backfill gave essay `4943cd4f` "On Achilles' Rage" its first submission row (it was active-but-0-submissions — backfill working, not a fixture repair).
+**SHIPPED + CLEANED UP:** `main` fast-forwarded `302e9808 → 4bb79279` (door/join/report/live-proof, clean ff, no merge commit), pushed origin/main; prod deploy `dpl_3M1zpy1564sas63mTruVsFNsjDoi` is **READY** on `tome-revision.vercel.app`. Throwaway student **deleted** (roster back to 4, 0 orphan rows); one-off drivers removed. Nothing outstanding. (Note: the `today/nav-ia` sidebar-IA session shares this working tree — its NIGHT block above is a separate lane, not part of this ship.)
+
+
+Resumable, multi-session pipeline. **Trust live row counts, never `ingestion_status`
+or in-memory progress.** Re-derive the worklist every session with the audit script.
+Only ever touch Supabase project `vjaezrcuuzmbmnsfrtwt` (tome-app). Never the Anvil
+project. Never the `teacher_*` or verse/drama (`works/sections/lines/trials`) pipelines.
+
+## Locked decisions (Matthew)
+- Question types: **full 13** + reader wiring (renderers already exist and score).
+- **10 questions per quiz.**
+- Scope: **per-chapter** — one Apprentice/Scholar/Master set per chapter.
+- Generation: **author content in-session** (no Batch API; `ANTHROPIC_API_KEY` absent).
+- Reader bridge: **static wins** — curated banks first, then DB, then generic fallback.
+- Schema: **`quizzes.chapter_index`** column added (migration applied).
+- Difficulty casing for reader quizzes: **Capitalized** Apprentice/Scholar/Master.
+
+## Architecture delivered (Phase 3 wiring)
+- `migration add_chapter_index_to_quizzes` — nullable `chapter_index` + index. ✅ applied.
+- `src/lib/db-chapter-questions.ts` — DB row → `ChapterQuestion` adapter, all 13 types,
+  prefers new `options`/`correct_answer`/`meta` and falls back to legacy `option_a..d`.
+- `src/lib/chapter-questions.ts` — split into `getCuratedQuestionsForChapter()`
+  (returns `null` when no curated bank) and a thin `getQuestionsForChapter()` wrapper
+  (curated ?? FALLBACK). The `null` is what lets the reader know to try the DB.
+- `src/app/(app)/read/[bookId]/page.tsx` — `handleTrialDifficultySelect` now resolves
+  **curated → DB (book_id + chapter_index + difficulty) → fallback**, with a `trialReqRef`
+  token so a slow DB fetch can't clobber a newer selection.
+- Meta contract = renderer field names exactly: `acceptedVariants`, `correctOrder`,
+  `matchingLeft`/`matchingRight`/`correctPairs`, `vocabWord`/`etymology`,
+  `crossRefBookId`/`crossRefLabel`, `passage`/`passageHighlight`,
+  `reflection*`, `identificationSubject`, `tfReasons`/`tfCorrectReason`.
+
+## Verification done
+- `scripts/verify-db-quiz-bridge.ts` — all 13 types round-trip DB → adapter → engine;
+  correct submissions score correct AND wrong submissions score wrong (not vacuous). ✅
+- Pilot invariants (SQL via MCP): 3 quizzes × 10 Qs, ≤2 of any type, ≥4 distinct types,
+  zero dual-encoding mismatches across every type. ✅
+- `npx tsc --noEmit`: new files clean (only 9 pre-existing errors, all in an unrelated
+  vitest test missing `vitest` types).
+
+## Pipeline scripts (run from Matthew's env — sandbox here has no DNS to Supabase)
+Run with: `node --import ./node_modules/tsx/dist/loader.mjs scripts/<name>.ts`
+(the tsx **loader**, not the tsx CLI, which needs an IPC socket).
+- `scripts/canon-lib.ts` — service-role client (guardrails to tome-app only), audit
+  fetchers, worklist derivation, JSON checkpoint, and the quiz-set validator.
+- `scripts/canon-audit.ts` — Step 0 preflight; writes `scripts/canon-progress.json`.
+- `scripts/canon-quiz-validate.ts <book_id> [chapter_index] | --all-chapter-scoped` —
+  the gate; enforces acceptance criteria; exits non-zero on any issue.
+
+## Live audit (2026-06-19, via MCP)
+- books total **1280**, `status='success'` 796 (noisy — ignore).
+- books with chapters **84**, chapters ingested **3491**.
+- books with full whole-book quiz set **99**; chapter-scoped quizzes **3** (the pilot).
+- Worklists: **① ingestion 1196 books** (zero chapters) · **② whole-book quiz gap 30
+  ingested books** · **③ per-chapter quiz gap 3490 chapters**.
+- Scope: ingested backlog alone ≈ **104,730** questions (3491 ch × 3 × 10). The full
+  canon (all 1280 books) is far larger → strictly a batched, resumable run.
+
+## Done
+- ✅ **`a-christmas-carol` FULLY DONE — all 5 staves (ch 1–5), per-chapter.**
+  Every chapter has Apprentice/Scholar/Master × 10 Q = **15 quizzes, 150 questions.**
+  Book-level invariant rollup (MCP, 2026-06-19): every (chapter_index, difficulty) =
+  n 10, ≥4 distinct types (6 Apprentice / 7 Scholar / 7 Master), max-one-type ≤2,
+  mc_mismatch 0; per-type meta integrity 0 defects on each stave's validation pass.
+  - ch 1 Stave I (pilot): types incl. cross_reference, reflection, ordering, matching.
+  - ch 2 Stave II: incl. cross_reference (crossRefBookId=`robinson-crusoe`, which exists).
+  - ch 3 Stave III: incl. passage_id (Ignorance/Want).
+  - ch 4 Stave IV: incl. passage_id (Scrooge's reform vow).
+  - ch 5 Stave V: incl. ordering/matching (Apprentice) + passage_id/reflection (Master).
+  - **All 13 types appear across the book** (book-wide type census confirmed via MCP:
+    multiple_choice 27, close_reading/fill_blank/true_false 16 each, identification/
+    theme_analysis/vocabulary_in_context 12 each, tf_with_reason 8, matching/ordering/
+    reflection 4 each, cross_reference/passage_id 2 each).
+  - ⚠️ Reconciliation note (surfaced, NOT touched): `a-christmas-carol` also still has the
+    **legacy whole-book set** (`chapter_index = NULL`): 3 quizzes × 5 Q. It predates the
+    per-chapter decision. Left in place — flag for Matthew: keep, migrate, or retire it.
+    "static wins" reader bridge means curated/DB-by-chapter is what the reader hits, but
+    the NULL set is still queryable. Decision pending.
+
+## Next pickup (in priority order)
+1. **Prove the bridge in the running app** (manual): open the reader on A Christmas Carol,
+   advance through Staves I–V, pick each difficulty, confirm the DB-backed 10-Q trials
+   render and score (esp. ordering/matching/tf_with_reason/reflection/passage_id renderers).
+   A Christmas Carol is now the complete end-to-end reference book — use it as the demo.
+2. **Author per-chapter sets at volume** for already-ingested, demo-facing books first
+   (`is_tier1` → `featured` → A–Z). Author in-session, insert via MCP using the Stave I
+   block as the template, then `canon-quiz-validate.ts <book> <ch>` before moving on.
+   Idempotency: skip any (book, chapter_index, difficulty) that already exists.
+3. **Whole-book quiz gap (30 books)** if a quick win is wanted (legacy `chapter_index` NULL).
+4. **Ingestion (1196 books)** from Standard Ebooks → `chapters`. NOTE: the skill's
+   `references/formatting-and-toc.md` is absent; before any mass ingestion write, sample a
+   well-formed book's `chapters` rows (e.g. `moby-dick`) and replicate its `data-epub-type`
+   HTML + flat TOC exactly. Do this as a dry-run-first script; don't bulk-write blind.
+
+## Gotchas
+- `chapters` has `chapter_index` (no `order` column); reader `currentChapter` == `chapter_index`.
+- `questions.option_a..d` and `correct_option` are NOT NULL → non-MC types store `'n/a'`
+  / `'A'` placeholders; the adapter strips `'n/a'` and reads `meta`.
+- Reader quizzes use Capitalized difficulty; `trials`/`teacher_*` use lowercase — don't mix.
+- Empty SQL string literal: use `''`, not `$t$$t$` (breaks dollar-quote parsing).
+
+## Ingestion run 2026-06-27T14:53:14.710Z — 1 books
+- ✓ the-charterhouse-of-parma — 36 chapters
+Run complete: ok=1 fail=0
+
+## Ingestion run 2026-06-27T14:57:49.038Z — 1195 books
+- SKIP a-damsel-in-distress (no slug)
+- SKIP a-gentleman-of-leisure (no slug)
+- SKIP a-hazard-of-new-fortunes (no slug)
+- SKIP a-high-wind-in-jamaica (no slug)
+- SKIP a-house-of-gentlefolk (no slug)
+- SKIP a-negro-explorer-at-the-north-pole (no slug)
+- SKIP a-pluralistic-universe (no slug)
+- SKIP a-prefects-uncle (no slug)
+- SKIP a-strange-disappearance (no slug)
+- SKIP a-voyage-to-arcturus (no slug)
+- SKIP a-yankee-in-the-trenches (no slug)
+- SKIP adams-breed (no slug)
+- SKIP after-london (no slug)
+- SKIP after-the-divorce (no slug)
+- SKIP ajax (no slug)
+- SKIP allan-quatermain (no slug)
+- SKIP allan-quatermain-stories (no slug)
+- SKIP alls-well-that-ends-well (no slug)
+- SKIP almayers-folly (no slug)
+- SKIP american-indian-stories (no slug)
+- SKIP an-american-tragedy (no slug)
+- SKIP an-antarctic-mystery (no slug)
+- SKIP an-autobiography (no slug)
+- SKIP an-enquiry-concerning-human-understanding (no slug)
+- SKIP an-ideal-husband (no slug)
+- SKIP an-outback-marriage (no slug)
+- SKIP an-outcast-of-the-islands (no slug)
+- SKIP anna-of-the-five-towns (no slug)
+- SKIP anne-of-avonlea (no slug)
+- SKIP anne-of-green-gables (no slug)
+- SKIP anne-of-the-island (no slug)
+- SKIP antic-hay (no slug)
+- SKIP antony-and-cleopatra (no slug)
+- SKIP apology (no slug)
+- SKIP armageddon-2419-a-d (no slug)
+- SKIP arms-and-the-man (no slug)
+- SKIP around-the-world-in-eighty-days (no slug)
+- SKIP arrowsmith (no slug)
+- SKIP arsene-lupin-versus-herlock-sholmes (no slug)
+- SKIP as-i-lay-dying (no slug)
+- SKIP as-you-like-it (no slug)
+- SKIP ashenden (no slug)
+- SKIP aspects-of-the-novel (no slug)
+- SKIP at-the-back-of-the-north-wind (no slug)
+- SKIP at-the-earths-core (no slug)
+- SKIP at-the-mountains-of-madness (no slug)
+- SKIP at-the-villa-rose (no slug)
+- SKIP aurora-floyd (no slug)
+- SKIP babbitt (no slug)
+- SKIP back-to-methuselah (no slug)
+- SKIP backwater (no slug)
+- SKIP bambi (no slug)
+- SKIP barchester-towers (no slug)
+- SKIP barlaam-and-ioasaph (no slug)
+- SKIP barnaby-rudge (no slug)
+- SKIP beatrix (no slug)
+- SKIP beauvallet (no slug)
+- SKIP before-adam (no slug)
+- SKIP behind-a-mask (no slug)
+- SKIP behind-that-curtain (no slug)
+- SKIP bellarion-the-fortunate (no slug)
+- SKIP ben-hur (no slug)
+- SKIP bertram-copes-year (no slug)
+- SKIP betty-zane (no slug)
+- SKIP beyond-good-and-evil (no slug)
+- SKIP beyond-thirty (no slug)
+- SKIP black-beauty (no slug)
+- SKIP black-no-more (no slug)
+- SKIP bleak-house (no slug)
+- SKIP brewsters-millions (no slug)
+- SKIP brown-on-resolution (no slug)
+- SKIP buddenbrooks (no slug)
+- SKIP bulfinchs-mythology (no slug)
+- SKIP bulldog-drummond (no slug)
+- SKIP cakes-and-ale (no slug)
+- SKIP calvary-mirbeau (no slug)
+- SKIP can-you-forgive-her (no slug)
+- SKIP candida (no slug)
+- SKIP cane (no slug)
+- SKIP captain-blood (no slug)
+- SKIP castle-rackrent (no slug)
+- SKIP catriona (no slug)
+- SKIP chance (no slug)
+- SKIP charlotte-temple (no slug)
+- SKIP childrens-stories (no slug)
+- SKIP cimarron (no slug)
+- SKIP clarissa (no slug)
+- SKIP cleopatra (no slug)
+- SKIP clerambault (no slug)
+- SKIP clotel (no slug)
+- SKIP clouds-of-witness (no slug)
+- SKIP commentaries-on-the-gallic-war (no slug)
+- SKIP conan-stories (no slug)
+- SKIP confessions-of-an-english-opium-eater (no slug)
+- SKIP continental-op-stories (no slug)
+- SKIP coriolanus (no slug)
+- SKIP cornelli (no slug)
+- SKIP cousin-henry (no slug)
+- SKIP cranford (no slug)
+- SKIP crome-yellow (no slug)
+- SKIP culture-and-anarchy (no slug)
+- SKIP cup-of-gold (no slug)
+- SKIP cymbeline (no slug)
+- SKIP dangerous-ages (no slug)
+- SKIP dangerous-liaisons (no slug)
+- SKIP daniel-deronda (no slug)
+- SKIP dark-princess (no slug)
+- SKIP darkwater (no slug)
+- SKIP david-copperfield (no slug)
+- SKIP dead-souls (no slug)
+- SKIP death-comes-for-the-archbishop (no slug)
+- SKIP decline-and-fall (no slug)
+- SKIP demian (no slug)
+- SKIP democracy-and-education (no slug)
+- SKIP democracy-and-social-ethics (no slug)
+- SKIP demons (no slug)
+- SKIP dick-sands-the-boy-captain (no slug)
+- SKIP discourse-on-method (no slug)
+- SKIP discourses-on-livy (no slug)
+- SKIP disenchantment (no slug)
+- SKIP diverging-roads (no slug)
+- SKIP doctor-syn (no slug)
+- SKIP doctor-thorne (no slug)
+- SKIP dodsworth (no slug)
+- SKIP dombey-and-son (no slug)
+- SKIP don-juan (no slug)
+- SKIP dorothy-and-the-wizard-in-oz (no slug)
+- SKIP dr-mabuse-the-gambler (no slug)
+- SKIP driven-back-to-eden (no slug)
+- SKIP dubliners (no slug)
+- SKIP early-autumn (no slug)
+- SKIP edward-ii (no slug)
+- SKIP edward-iii (no slug)
+- SKIP el-dorado (no slug)
+- SKIP el-filibusterismo (no slug)
+- ✓ antigone — 8 chapters
+- SKIP elizabeth-and-her-german-garden (no slug)
+- SKIP elmer-gantry (no slug)
+- SKIP emily-of-new-moon (no slug)
+- SKIP eminent-victorians (no slug)
+- SKIP english-as-she-is-spoke (no slug)
+- SKIP erewhon (no slug)
+- SKIP erewhon-revisited (no slug)
+- SKIP essays (no slug)
+- SKIP ethan-frome (no slug)
+- SKIP eugene-onegin (no slug)
+- SKIP eugenie-grandet (no slug)
+- SKIP evelina (no slug)
+- SKIP exiles (no slug)
+- ✓ beowulf — 51 chapters
+- SKIP facing-the-flag (no slug)
+- SKIP fannys-first-play (no slug)
+- SKIP fantomas (no slug)
+- SKIP far-from-the-madding-crowd (no slug)
+- SKIP father-goriot (no slug)
+- SKIP father-hensons-story-of-his-own-life (no slug)
+- SKIP fathers-and-children (no slug)
+- SKIP figures-of-earth (no slug)
+- SKIP file-no-113 (no slug)
+- SKIP five-children-and-it (no slug)
+- SKIP five-weeks-in-a-balloon (no slug)
+- SKIP flatland (no slug)
+- SKIP four-day-planet (no slug)
+- SKIP framley-parsonage (no slug)
+- SKIP freckles (no slug)
+- SKIP from-the-earth-to-the-moon (no slug)
+- SKIP futility (no slug)
+- SKIP gentlemen-prefer-blondes (no slug)
+- SKIP germinal (no slug)
+- SKIP germinie-lacerteux (no slug)
+- ✓ electra — 9 chapters
+- SKIP getting-married (no slug)
+- SKIP ghost-stories (no slug)
+- SKIP ghosts (no slug)
+- SKIP giants-bread (no slug)
+- SKIP gil-blas (no slug)
+- SKIP gitanjali (no slug)
+- SKIP gladiator (no slug)
+- SKIP green-forest-stories (no slug)
+- SKIP green-meadow-stories (no slug)
+- SKIP greenmantle (no slug)
+- SKIP growth-of-the-soil (no slug)
+- ✓ discourses — 12 chapters
+- SKIP hadji-murad (no slug)
+- SKIP hadrian-the-seventh (no slug)
+- SKIP hard-times (no slug)
+- SKIP hardings-luck (no slug)
+- SKIP harry-heathcote-of-gangoil (no slug)
+- SKIP he-knew-he-was-right (no slug)
+- SKIP he-who-gets-slapped (no slug)
+- SKIP heartbreak-house (no slug)
+- SKIP hedda-gabler (no slug)
+- SKIP heidi (no slug)
+- SKIP henry-iv-part-i (no slug)
+- SKIP henry-iv-part-ii (no slug)
+- SKIP henry-v (no slug)
+- SKIP henry-vi-part-i (no slug)
+- SKIP henry-vi-part-ii (no slug)
+- SKIP henry-vi-part-iii (no slug)
+- SKIP henry-viii (no slug)
+- SKIP heretics (no slug)
+- SKIP herland (no slug)
+- SKIP hester (no slug)
+- SKIP hindu-tales-from-the-sanskrit (no slug)
+- SKIP his-family (no slug)
+- SKIP his-last-bow (no slug)
+- SKIP his-masterpiece (no slug)
+- ✓ geronimos-story-of-his-life — 38 chapters
+- ✓ fables — 7 chapters
+- SKIP home-to-harlem (no slug)
+- SKIP honeycomb (no slug)
+- SKIP household-tales (no slug)
+- SKIP how-the-other-half-lives (no slug)
+- SKIP howards-end (no slug)
+- SKIP hudibras (no slug)
+- SKIP hudson-river-bracketed (no slug)
+- SKIP human-nature-and-conduct (no slug)
+- SKIP hunger (no slug)
+- SKIP hunting-for-hidden-gold (no slug)
+- SKIP huntingtower (no slug)
+- SKIP i-will-repay (no slug)
+- SKIP idylls-of-the-king (no slug)
+- SKIP in-a-glass-darkly (no slug)
+- SKIP in-darkest-london (no slug)
+- SKIP in-search-of-lost-time (no slug)
+- SKIP in-search-of-the-castaways (no slug)
+- SKIP in-the-days-of-the-comet (no slug)
+- SKIP incidents-in-the-life-of-a-slave-girl (no slug)
+- SKIP indian-fairy-tales (no slug)
+- SKIP indian-summer (no slug)
+- SKIP indiscretions-of-archie (no slug)
+- ✓ gudrun — 40 chapters
+- SKIP inspector-frenchs-greatest-case (no slug)
+- SKIP invaders-from-the-infinite (no slug)
+- SKIP iola-leroy (no slug)
+- SKIP irish-fairy-tales (no slug)
+- SKIP islands-of-space (no slug)
+- SKIP ivanhoe (no slug)
+- SKIP jack-keefe-stories (no slug)
+- SKIP jacobs-room (no slug)
+- SKIP jean-christophe (no slug)
+- SKIP jeeves-stories (no slug)
+- SKIP jenny (no slug)
+- SKIP john-browns-body (no slug)
+- SKIP john-silence-stories (no slug)
+- SKIP journey-to-the-center-of-the-earth (no slug)
+- SKIP jude-the-obscure (no slug)
+- SKIP julius-caesar (no slug)
+- SKIP jungle-tales-of-tarzan (no slug)
+- SKIP jurgen (no slug)
+- SKIP just-so-stories (no slug)
+- SKIP just-william (no slug)
+- SKIP kai-lungs-golden-hours (no slug)
+- SKIP kate-plus-10 (no slug)
+- SKIP key-out-of-time (no slug)
+- SKIP kidnapped (no slug)
+- SKIP kim (no slug)
+- SKIP king-coal (no slug)
+- SKIP king-john (no slug)
+- SKIP king-lear (no slug)
+- SKIP king-solomons-mines (no slug)
+- SKIP kipps (no slug)
+- SKIP kusamakura (no slug)
+- SKIP la-bas (no slug)
+- SKIP lady-audleys-secret (no slug)
+- SKIP lady-chatterleys-lover (no slug)
+- SKIP lady-into-fox (no slug)
+- SKIP lady-windermeres-fan (no slug)
+- SKIP lais (no slug)
+- SKIP last-and-first-men (no slug)
+- SKIP laughing-boy (no slug)
+- SKIP lavengro (no slug)
+- SKIP lay-down-your-arms (no slug)
+- SKIP le-morte-darthur (no slug)
+- SKIP leave-it-to-psmith (no slug)
+- SKIP leaves-of-grass (no slug)
+- SKIP legends-of-vancouver (no slug)
+- SKIP letters-of-two-brides (no slug)
+- SKIP letters-written-during-a-short-residence-in-sweden-norway-and-denmark (no slug)
+- SKIP leviathan (no slug)
+- SKIP liberalism-hobhouse (no slug)
+- SKIP lilith (no slug)
+- SKIP little-caesar (no slug)
+- SKIP little-dorrit (no slug)
+- SKIP little-fuzzy (no slug)
+- SKIP little-lord-fauntleroy (no slug)
+- SKIP lolly-willowes (no slug)
+- SKIP look-homeward-angel (no slug)
+- SKIP looking-backward (no slug)
+- SKIP lord-arthur-saviles-crime-and-other-stories (no slug)
+- SKIP lord-jim (no slug)
+- SKIP lord-peter-views-the-body (no slug)
+- SKIP lord-tonys-wife (no slug)
+- SKIP lorna-doone (no slug)
+- SKIP lost-face (no slug)
+- SKIP lost-illusions (no slug)
+- SKIP lost-mans-lane (no slug)
+- SKIP love-among-the-chickens (no slug)
+- SKIP loves-labours-lost (no slug)
+- SKIP lud-in-the-mist (no slug)
+- SKIP lyrical-ballads (no slug)
+- SKIP magnificent-obsession (no slug)
+- SKIP magnolia-leaves (no slug)
+- SKIP main-street (no slug)
+- SKIP major-barbara (no slug)
+- SKIP man-and-superman (no slug)
+- SKIP man-and-wife (no slug)
+- SKIP manalive (no slug)
+- SKIP manhattan-transfer (no slug)
+- SKIP mansfield-park (no slug)
+- SKIP maria (no slug)
+- SKIP maria-chapdelaine (no slug)
+- SKIP marius-the-epicurean (no slug)
+- SKIP martin-chuzzlewit (no slug)
+- SKIP martin-eden (no slug)
+- SKIP mary-olivier-a-life (no slug)
+- SKIP master-flea (no slug)
+- SKIP mauprat (no slug)
+- SKIP mcteague (no slug)
+- SKIP measure-for-measure (no slug)
+- SKIP melmoth-the-wanderer (no slug)
+- SKIP melville-short-fiction (no slug)
+- SKIP memoirs-of-a-foxhunting-man (no slug)
+- SKIP memoirs-of-a-midget (no slug)
+- SKIP memoirs-of-a-revolutionist (no slug)
+- SKIP memoirs-of-arsene-lupin (no slug)
+- ✗ metamorphoses (ovid_metamorphoses_john-dryden_joseph-addison_laurence-eusden_arthur-maynwaring_samuel-croxall_nahum-tate_william-stonestreet_thomas-vernon_john-gay_alexander-pope_stephen-harvey_william-congreve_et-al) — download failed for ovid_metamorphoses_john-dryden_joseph-addison_laurence-eusden_arthur-maynwaring_samuel-croxall_nahum-tate_william-stonestreet_thomas-vernon_john-gay_alexander-pope_stephen-harvey_william-congreve_et-al
+- SKIP metropolis (no slug)
+- SKIP michael-strogoff (no slug)
+- SKIP middlemarch (no slug)
+- SKIP midwinter (no slug)
+- SKIP mike-wodehouse (no slug)
+- SKIP mireio (no slug)
+- SKIP misalliance (no slug)
+- SKIP miss-marjoribanks (no slug)
+- SKIP miss-mole (no slug)
+- SKIP modeste-mignon (no slug)
+- SKIP moll-flanders (no slug)
+- SKIP monsieur-lecoq (no slug)
+- SKIP moonfleet (no slug)
+- SKIP moribund-society-and-anarchy (no slug)
+- SKIP mr-britling-sees-it-through (no slug)
+- SKIP mr-mulliner-stories (no slug)
+- SKIP mr-standfast (no slug)
+- SKIP mrs-dalloway (no slug)
+- SKIP mrs-warrens-profession (no slug)
+- SKIP much-ado-about-nothing (no slug)
+- SKIP murder-by-the-clock (no slug)
+- SKIP murder-in-the-gunroom (no slug)
+- SKIP murder-in-the-maze (no slug)
+- SKIP mutual-aid (no slug)
+- SKIP my-antonia (no slug)
+- SKIP my-brilliant-career (no slug)
+- SKIP my-disillusionment-in-russia (no slug)
+- SKIP my-first-summer-in-the-sierra (no slug)
+- SKIP my-four-weeks-in-france (no slug)
+- SKIP my-reminiscences (no slug)
+- SKIP mystery-at-lynden-sands (no slug)
+- SKIP narrative-of-the-life-of-frederick-douglass (no slug)
+- SKIP national-avenue (no slug)
+- SKIP new-grub-street (no slug)
+- SKIP new-hampshire (no slug)
+- SKIP news-from-nowhere (no slug)
+- SKIP nicholas-nickleby (no slug)
+- SKIP nicomachean-ethics (no slug)
+- SKIP niels-lyhne (no slug)
+- SKIP night-and-day (no slug)
+- SKIP nightmare-abbey (no slug)
+- SKIP no-more-parades (no slug)
+- SKIP no-name (no slug)
+- SKIP no-treason (no slug)
+- SKIP noli-me-tangere (no slug)
+- SKIP nonsense-books (no slug)
+- SKIP nordenholts-million (no slug)
+- SKIP north-and-south (no slug)
+- SKIP north-of-boston (no slug)
+- SKIP northanger-abbey (no slug)
+- SKIP nostromo (no slug)
+- SKIP not-without-laughter (no slug)
+- SKIP notes-from-underground (no slug)
+- SKIP notre-dame-de-paris (no slug)
+- SKIP now-it-can-be-told (no slug)
+- SKIP o-pioneers (no slug)
+- SKIP oedipus-at-colonus (no slug)
+- ✓ histories — 16 chapters
+- SKIP of-human-bondage (no slug)
+- SKIP oil (no slug)
+- SKIP old-indian-legends (no slug)
+- SKIP on-a-chinese-screen (no slug)
+- SKIP on-liberty (no slug)
+- SKIP on-the-eve (no slug)
+- SKIP one-of-ours (no slug)
+- SKIP orlando (no slug)
+- SKIP orlando-furioso (no slug)
+- SKIP orley-farm (no slug)
+- SKIP orthodoxy (no slug)
+- SKIP othello (no slug)
+- SKIP our-american-cousin (no slug)
+- SKIP our-mutual-friend (no slug)
+- SKIP our-nig (no slug)
+- SKIP ozma-of-oz (no slug)
+- SKIP pan-michael (no slug)
+- SKIP pan-tadeusz (no slug)
+- SKIP parisians-in-the-country (no slug)
+- SKIP parnassus-on-wheels (no slug)
+- SKIP pastors-and-masters (no slug)
+- SKIP payment-deferred (no slug)
+- SKIP pelle-the-conqueror (no slug)
+- SKIP pellucidar (no slug)
+- SKIP penguin-island (no slug)
+- SKIP pericles (no slug)
+- SKIP personal-memoirs-of-ulysses-s-grant (no slug)
+- SKIP personal-recollections-of-joan-of-arc (no slug)
+- SKIP persuasion (no slug)
+- SKIP peter-and-wendy (no slug)
+- SKIP phantastes (no slug)
+- SKIP philoctetes (no slug)
+- SKIP phineas-finn (no slug)
+- SKIP phineas-redux (no slug)
+- SKIP phoebe-junior (no slug)
+- SKIP piccadilly-jim (no slug)
+- SKIP pierre-and-jean (no slug)
+- SKIP pimpernel-and-rosemary (no slug)
+- SKIP plague-ship (no slug)
+- SKIP planet-of-the-damned (no slug)
+- SKIP plays-roswitha-of-gandersheim (no slug)
+- SKIP plays-zeami-motokiyo (no slug)
+- SKIP plum-bun (no slug)
+- SKIP poems-on-various-subjects (no slug)
+- SKIP poetry (no slug)
+- SKIP poetry-ambrose-bierce (no slug)
+- SKIP poetry-ameen-rihani (no slug)
+- SKIP poetry-c-s-lewis (no slug)
+- SKIP poetry-edgar-allan-poe (no slug)
+- SKIP poetry-edward-thomas (no slug)
+- SKIP poetry-fernando-pessoa (no slug)
+- SKIP poetry-frances-ellen-watkins-harper (no slug)
+- SKIP poetry-georgia-douglas-johnson (no slug)
+- SKIP poetry-henry-van-dyke (no slug)
+- SKIP poetry-james-joyce (no slug)
+- SKIP poetry-james-weldon-johnson (no slug)
+- SKIP poetry-langston-hughes (no slug)
+- SKIP poetry-matthew-arnold (no slug)
+- SKIP poetry-mina-loy (no slug)
+- SKIP poetry-oscar-wilde (no slug)
+- SKIP poetry-taras-shevchenko (no slug)
+- SKIP poetry-thomas-gray (no slug)
+- SKIP poetry-w-b-yeats (no slug)
+- SKIP poetry-william-carlos-williams (no slug)
+- SKIP point-counter-point (no slug)
+- SKIP pointed-roofs (no slug)
+- SKIP poirot-investigates (no slug)
+- SKIP pollyanna (no slug)
+- SKIP pollyanna-grows-up (no slug)
+- SKIP polynesian-mythology (no slug)
+- SKIP poor-folk (no slug)
+- SKIP practical-mysticism (no slug)
+- SKIP pragmatism (no slug)
+- SKIP prince-otto (no slug)
+- SKIP principia-ethica (no slug)
+- SKIP progress-and-poverty (no slug)
+- SKIP psmith-in-the-city (no slug)
+- SKIP psmith-journalist (no slug)
+- SKIP puddnhead-wilson (no slug)
+- SKIP pygmalion (no slug)
+- SKIP queen-victoria (no slug)
+- SKIP quicksand (no slug)
+- SKIP quo-vadis (no slug)
+- SKIP r-u-r (no slug)
+- SKIP rachel-ray (no slug)
+- SKIP ragged-dick (no slug)
+- SKIP ralestone-luck (no slug)
+- SKIP recollections-of-full-years (no slug)
+- SKIP red-dusk-and-the-morrow (no slug)
+- SKIP red-harvest (no slug)
+- SKIP religion-and-the-rise-of-capitalism (no slug)
+- SKIP representative-men (no slug)
+- SKIP resurrection (no slug)
+- SKIP riceyman-steps (no slug)
+- SKIP richard-ii (no slug)
+- SKIP richard-iii (no slug)
+- SKIP riders-of-the-purple-sage (no slug)
+- SKIP right-ho-jeeves (no slug)
+- SKIP roads-to-freedom (no slug)
+- SKIP robbery-under-arms (no slug)
+- SKIP romance-conrad-ford (no slug)
+- SKIP roughing-it (no slug)
+- SKIP round-the-moon (no slug)
+- SKIP running-a-thousand-miles-for-freedom (no slug)
+- SKIP russian-folktales (no slug)
+- SKIP saint-joan (no slug)
+- SKIP salammbo (no slug)
+- SKIP salem-chapel (no slug)
+- SKIP sanine (no slug)
+- SKIP sartor-resartus (no slug)
+- SKIP savrola (no slug)
+- SKIP scaramouche (no slug)
+- SKIP scarlet-sister-mary (no slug)
+- SKIP scrambles-amongst-the-alps (no slug)
+- SKIP seven-pillars-of-wisdom (no slug)
+- SKIP she (no slug)
+- SKIP she-stoops-to-conquer (no slug)
+- SKIP shirley (no slug)
+- SKIP short-fiction (no slug)
+- SKIP short-fiction-akutagawa-ryunosuke (no slug)
+- SKIP short-fiction-aleksandr-kuprin (no slug)
+- SKIP short-fiction-andre-norton (no slug)
+- SKIP short-fiction-anthony-trollope (no slug)
+- SKIP short-fiction-beatrix-potter (no slug)
+- SKIP short-fiction-charles-beaumont (no slug)
+- SKIP short-fiction-clark-ashton-smith (no slug)
+- SKIP short-fiction-clifford-d-simak (no slug)
+- SKIP short-fiction-cordwainer-smith (no slug)
+- SKIP short-fiction-daphne-du-maurier (no slug)
+- SKIP short-fiction-e-m-forster (no slug)
+- SKIP short-fiction-edgar-allan-poe (no slug)
+- SKIP short-fiction-ernest-hemingway (no slug)
+- SKIP short-fiction-f-scott-fitzgerald (no slug)
+- SKIP short-fiction-frederik-pohl (no slug)
+- SKIP short-fiction-fritz-leiber (no slug)
+- SKIP short-fiction-fyodor-sologub (no slug)
+- SKIP short-fiction-george-macdonald (no slug)
+- SKIP short-fiction-gustave-flaubert (no slug)
+- SKIP short-fiction-guy-de-maupassant (no slug)
+- SKIP short-fiction-h-beam-piper (no slug)
+- SKIP short-fiction-h-g-wells (no slug)
+- SKIP short-fiction-henry-kuttner (no slug)
+- SKIP short-fiction-hjalmar-soderberg (no slug)
+- SKIP short-fiction-ivan-bunin (no slug)
+- SKIP short-fiction-j-sheridan-le-fanu (no slug)
+- SKIP short-fiction-jonas-lie (no slug)
+- SKIP short-fiction-kate-chopin (no slug)
+- SKIP short-fiction-leonid-andreyev (no slug)
+- SKIP short-fiction-m-r-james (no slug)
+- SKIP short-fiction-mack-reynolds (no slug)
+- SKIP short-fiction-manly-wade-wellman (no slug)
+- SKIP short-fiction-mary-shelley (no slug)
+- SKIP short-fiction-nella-larsen (no slug)
+- SKIP short-fiction-o-henry (no slug)
+- SKIP short-fiction-philip-k-dick (no slug)
+- SKIP short-fiction-poul-anderson (no slug)
+- SKIP short-fiction-r-a-lafferty (no slug)
+- SKIP short-fiction-ray-bradbury (no slug)
+- SKIP short-fiction-ring-lardner (no slug)
+- SKIP short-fiction-robert-sheckley (no slug)
+- SKIP short-fiction-saki (no slug)
+- SKIP short-fiction-selma-lagerlof (no slug)
+- SKIP short-fiction-tanizaki-junichiro (no slug)
+- SKIP short-fiction-thomas-hardy (no slug)
+- SKIP short-fiction-vladimir-korolenko (no slug)
+- SKIP short-fiction-voltairine-de-cleyre (no slug)
+- SKIP short-fiction-walter-m-miller-jr (no slug)
+- SKIP short-plays (no slug)
+- SKIP short-plays-george-bernard-shaw (no slug)
+- SKIP short-plays-j-m-synge (no slug)
+- SKIP short-science-fiction-isaac-asimov (no slug)
+- SKIP shorts-from-scenes-from-private-life (no slug)
+- SKIP siddhartha (no slug)
+- SKIP silas-marner (no slug)
+- SKIP sinister-street (no slug)
+- SKIP sir-gawain-and-the-green-knight (no slug)
+- SKIP sir-percy-hits-back (no slug)
+- SKIP sister-carrie (no slug)
+- SKIP six-characters-in-search-of-an-author (no slug)
+- SKIP so-big (no slug)
+- SKIP soldiers-pay (no slug)
+- SKIP some-do-not (no slug)
+- SKIP some-thoughts-concerning-education (no slug)
+- SKIP something-new-wodehouse (no slug)
+- SKIP songs-of-a-sourdough (no slug)
+- SKIP songs-of-the-cattle-trail-and-cow-camp (no slug)
+- SKIP sonnets-from-the-portuguese (no slug)
+- SKIP sons-and-lovers (no slug)
+- SKIP south (no slug)
+- SKIP space-viking (no slug)
+- SKIP spoon-river-anthology (no slug)
+- SKIP stand-by-for-mars (no slug)
+- SKIP star-born (no slug)
+- SKIP star-hunter (no slug)
+- SKIP steppenwolf (no slug)
+- SKIP sticks-and-stones (no slug)
+- SKIP storm-over-warlock (no slug)
+- SKIP stover-at-yale (no slug)
+- SKIP strong-poison (no slug)
+- SKIP struggles-and-triumphs (no slug)
+- SKIP summer (no slug)
+- SKIP sunshine-sketches-of-a-little-town (no slug)
+- SKIP swallows-and-amazons (no slug)
+- SKIP sybil (no slug)
+- SKIP sylvie-and-bruno (no slug)
+- SKIP symposium (no slug)
+- SKIP table-talk (no slug)
+- ✓ dialogues — 35 chapters
+- SKIP tartuffe (no slug)
+- SKIP tarzan-and-the-ant-men (no slug)
+- SKIP tarzan-and-the-golden-lion (no slug)
+- SKIP tarzan-and-the-jewels-of-opar (no slug)
+- SKIP tarzan-lord-of-the-jungle (no slug)
+- SKIP tarzan-of-the-apes (no slug)
+- SKIP tarzan-the-terrible (no slug)
+- SKIP tarzan-the-untamed (no slug)
+- SKIP ten-days-that-shook-the-world (no slug)
+- SKIP terror-keep (no slug)
+- SKIP tess-of-the-durbervilles (no slug)
+- SKIP that-affair-next-door (no slug)
+- SKIP the-able-mclaughlins (no slug)
+- SKIP the-absolute-at-large (no slug)
+- SKIP the-acquisitive-society (no slug)
+- SKIP the-adventures-of-captain-hatteras (no slug)
+- SKIP the-adventures-of-pinocchio (no slug)
+- SKIP the-adventurous-simplicissimus (no slug)
+- SKIP the-age-of-innocence (no slug)
+- SKIP the-age-of-reason (no slug)
+- SKIP the-airlords-of-han (no slug)
+- SKIP the-alchemist (no slug)
+- SKIP the-amateur-cracksman (no slug)
+- SKIP the-ambassadors (no slug)
+- SKIP the-american-crisis (no slug)
+- SKIP the-american-senator (no slug)
+- SKIP the-apple-cart (no slug)
+- SKIP the-argonautica (no slug)
+- SKIP the-art-of-money-getting (no slug)
+- SKIP the-autobiography-of-an-ex-colored-man (no slug)
+- SKIP the-autobiography-of-an-idea (no slug)
+- SKIP the-autobiography-of-benjamin-franklin (no slug)
+- SKIP the-autobiography-of-calvin-coolidge (no slug)
+- SKIP the-autobiography-of-john-stuart-mill (no slug)
+- SKIP the-autobiography-of-ma-ka-tai-me-she-kia-kiak-or-black-hawk (no slug)
+- SKIP the-autobiography-of-mark-rutherford (no slug)
+- SKIP the-autobiography-of-mark-twain (no slug)
+- SKIP the-avenger-wallace (no slug)
+- SKIP the-beasts-of-tarzan (no slug)
+- SKIP the-beautiful-and-damned (no slug)
+- SKIP the-beetle (no slug)
+- SKIP the-bellamy-trial (no slug)
+- SKIP the-benson-murder-case (no slug)
+- SKIP the-big-bow-mystery (no slug)
+- SKIP the-big-four (no slug)
+- SKIP the-big-time (no slug)
+- SKIP the-black-arrow (no slug)
+- SKIP the-black-mask (no slug)
+- SKIP the-black-moth (no slug)
+- SKIP the-black-opal (no slug)
+- SKIP the-black-star-passes (no slug)
+- SKIP the-black-tulip (no slug)
+- SKIP the-blacker-the-berry (no slug)
+- SKIP the-blazing-world (no slug)
+- SKIP the-blithedale-romance (no slug)
+- SKIP the-blue-castle (no slug)
+- SKIP the-blue-lagoon (no slug)
+- SKIP the-bolshevik-myth (no slug)
+- SKIP the-book-of-tea (no slug)
+- SKIP the-breaking-of-the-storm (no slug)
+- SKIP the-bridal-wreath (no slug)
+- SKIP the-bridge-of-san-luis-rey (no slug)
+- SKIP the-brooklyn-murders (no slug)
+- SKIP the-bungalow-mystery (no slug)
+- SKIP the-canary-murder-case (no slug)
+- SKIP the-canterbury-tales (no slug)
+- SKIP the-case-of-charles-dexter-ward (no slug)
+- SKIP the-case-with-nine-solutions (no slug)
+- SKIP the-casebook-of-sherlock-holmes (no slug)
+- SKIP the-cask (no slug)
+- SKIP the-castle (no slug)
+- SKIP the-castle-of-otranto (no slug)
+- SKIP the-celibates (no slug)
+- SKIP the-charwomans-shadow (no slug)
+- SKIP the-cherry-orchard (no slug)
+- SKIP the-chessmen-of-mars (no slug)
+- SKIP the-cheyne-mystery (no slug)
+- SKIP the-child-of-the-cavern (no slug)
+- SKIP the-chinese-parrot (no slug)
+- SKIP the-circular-staircase (no slug)
+- SKIP the-city-of-god (no slug)
+- SKIP the-claverings (no slug)
+- SKIP the-cloven-foot (no slug)
+- SKIP the-club-of-queer-trades (no slug)
+- SKIP the-clue (no slug)
+- SKIP the-clue-of-the-new-pin (no slug)
+- SKIP the-clue-of-the-twisted-candle (no slug)
+- SKIP the-columbiad (no slug)
+- SKIP the-comedy-of-errors (no slug)
+- SKIP the-coming-of-bill (no slug)
+- SKIP the-coming-race (no slug)
+- SKIP the-communist-manifesto (no slug)
+- SKIP the-confessions-of-arsene-lupin (no slug)
+- SKIP the-conjure-woman (no slug)
+- SKIP the-conquest-of-bread (no slug)
+- SKIP the-conscience-of-a-conservative (no slug)
+- SKIP the-conscious-lovers (no slug)
+- SKIP the-consolation-of-philosophy (no slug)
+- SKIP the-coral-island (no slug)
+- SKIP the-cosmic-computer (no slug)
+- SKIP the-council-of-justice (no slug)
+- SKIP the-count-of-monte-cristo (no slug)
+- SKIP the-counterfeiters (no slug)
+- SKIP the-country-of-the-pointed-firs (no slug)
+- SKIP the-country-wife (no slug)
+- SKIP the-courts-of-the-morning (no slug)
+- SKIP the-created-legend (no slug)
+- SKIP the-crime-at-black-dudley (no slug)
+- SKIP the-crimson-circle (no slug)
+- SKIP the-crock-of-gold (no slug)
+- SKIP the-crowd (no slug)
+- SKIP the-cruise-of-the-alerte (no slug)
+- SKIP the-cruise-of-the-nona (no slug)
+- SKIP the-crystal-stopper (no slug)
+- SKIP the-dain-curse (no slug)
+- SKIP the-damnation-of-theron-ware (no slug)
+- SKIP the-dead-letter (no slug)
+- SKIP the-dead-secret (no slug)
+- SKIP the-decameron (no slug)
+- SKIP the-defiant-agents (no slug)
+- SKIP the-deluge (no slug)
+- SKIP the-devils-dictionary (no slug)
+- SKIP the-devils-pool (no slug)
+- SKIP the-diary (no slug)
+- SKIP the-doctors-dilemma (no slug)
+- SKIP the-documents-in-the-case (no slug)
+- SKIP the-door-with-seven-locks (no slug)
+- SKIP the-duchess-of-malfi (no slug)
+- SKIP the-duel (no slug)
+- SKIP the-dukes-children (no slug)
+- SKIP the-eclogues (no slug)
+- SKIP the-economic-consequences-of-the-peace (no slug)
+- SKIP the-education-of-henry-adams (no slug)
+- SKIP the-eight-strokes-of-the-clock (no slug)
+- SKIP the-eleventh-virgin (no slug)
+- SKIP the-elusive-pimpernel (no slug)
+- SKIP the-enchanted-april (no slug)
+- SKIP the-enchanted-castle (no slug)
+- SKIP the-end-of-the-tether (no slug)
+- SKIP the-end-of-the-world-dennis (no slug)
+- SKIP the-english-constitution (no slug)
+- SKIP the-enormous-room (no slug)
+- SKIP the-eumenides (no slug)
+- SKIP the-eustace-diamonds (no slug)
+- SKIP the-everlasting-man (no slug)
+- SKIP the-extraordinary-adventures-of-arsene-lupin-gentleman-burglar (no slug)
+- SKIP the-eye-of-osiris (no slug)
+- SKIP the-faerie-queene (no slug)
+- SKIP the-faraway-bride (no slug)
+- SKIP the-federalist-papers (no slug)
+- SKIP the-fifth-queen (no slug)
+- SKIP the-financier (no slug)
+- SKIP the-first-men-in-the-moon (no slug)
+- SKIP the-first-sir-percy (no slug)
+- SKIP the-food-of-the-gods (no slug)
+- SKIP the-footsteps-at-the-lock (no slug)
+- SKIP the-forerunner (no slug)
+- SKIP the-forsyte-saga (no slug)
+- SKIP the-four-feathers (no slug)
+- SKIP the-four-just-men (no slug)
+- SKIP the-fur-country (no slug)
+- SKIP the-gadfly (no slug)
+- SKIP the-gambler (no slug)
+- SKIP the-genealogy-of-morals (no slug)
+- SKIP the-georgics (no slug)
+- SKIP the-getting-of-wisdom (no slug)
+- SKIP the-giant-raft (no slug)
+- SKIP the-gods-of-mars (no slug)
+- SKIP the-gold-bat (no slug)
+- SKIP the-golden-ass (no slug)
+- SKIP the-golden-bowl (no slug)
+- SKIP the-golden-triangle (no slug)
+- SKIP the-good-companions (no slug)
+- SKIP the-good-soldier (no slug)
+- SKIP the-great-impersonation (no slug)
+- SKIP the-green-hat (no slug)
+- SKIP the-greene-murder-case (no slug)
+- SKIP the-hairy-ape (no slug)
+- SKIP the-hashish-eater (no slug)
+- SKIP the-haunted-bookshop (no slug)
+- SKIP the-haunted-hotel (no slug)
+- SKIP the-head-of-kays (no slug)
+- SKIP the-hidden-staircase (no slug)
+- SKIP the-hill-of-dreams (no slug)
+- SKIP the-histories (no slug)
+- SKIP the-history-of-henry-esmond (no slug)
+- SKIP the-history-of-mr-polly (no slug)
+- SKIP the-history-of-rasselas-prince-of-abyssinia (no slug)
+- SKIP the-history-of-the-decline-and-fall-of-the-roman-empire (no slug)
+- SKIP the-history-of-tom-jones-a-foundling (no slug)
+- SKIP the-hollow-needle (no slug)
+- SKIP the-homemaker (no slug)
+- SKIP the-hoosier-schoolmaster (no slug)
+- SKIP the-hound-of-the-baskervilles (no slug)
+- SKIP the-house-at-pooh-corner (no slug)
+- SKIP the-house-by-the-river (no slug)
+- SKIP the-house-of-arden (no slug)
+- SKIP the-house-of-mirth (no slug)
+- SKIP the-house-of-the-dead (no slug)
+- SKIP the-house-of-the-seven-gables (no slug)
+- SKIP the-house-of-the-wolfings (no slug)
+- SKIP the-house-on-the-cliff (no slug)
+- SKIP the-house-without-a-key (no slug)
+- SKIP the-house-without-windows (no slug)
+- SKIP the-humbugs-of-the-world (no slug)
+- SKIP the-idiot (no slug)
+- SKIP the-imitation-of-christ (no slug)
+- SKIP the-importance-of-being-earnest (no slug)
+- SKIP the-incredulity-of-father-brown (no slug)
+- SKIP the-indiscreet-jewels (no slug)
+- SKIP the-inferno (no slug)
+- SKIP the-informer (no slug)
+- SKIP the-inheritors (no slug)
+- SKIP the-innocence-of-father-brown (no slug)
+- SKIP the-innocents-abroad (no slug)
+- SKIP the-inspector-general (no slug)
+- SKIP the-interesting-narrative-of-the-life-of-olaudah-equiano (no slug)
+- SKIP the-invisible-man (no slug)
+- SKIP the-iron-heel (no slug)
+- SKIP the-island-of-doctor-moreau (no slug)
+- SKIP the-jealousies-of-a-country-town (no slug)
+- SKIP the-jew-of-malta (no slug)
+- SKIP the-jewels-of-aptor (no slug)
+- SKIP the-journal-of-a-disappointed-man (no slug)
+- SKIP the-jungle (no slug)
+- SKIP the-jungle-book (no slug)
+- SKIP the-just-men-of-cordova (no slug)
+- SKIP the-kalevala (no slug)
+- SKIP the-king-in-yellow (no slug)
+- SKIP the-king-of-elflands-daughter (no slug)
+- SKIP the-kingdom-of-god-is-within-you (no slug)
+- SKIP the-kural (no slug)
+- SKIP the-ladies-lindores (no slug)
+- SKIP the-land-of-little-rain (no slug)
+- SKIP the-land-that-time-forgot (no slug)
+- SKIP the-last-chronicle-of-barset (no slug)
+- SKIP the-last-man (no slug)
+- SKIP the-last-of-the-mohicans (no slug)
+- SKIP the-last-post (no slug)
+- SKIP the-laughing-cavalier (no slug)
+- SKIP the-law-and-the-lady (no slug)
+- SKIP the-law-of-the-four-just-men (no slug)
+- SKIP the-layton-court-mystery (no slug)
+- SKIP the-lazy-detective (no slug)
+- SKIP the-league-of-the-scarlet-pimpernel (no slug)
+- SKIP the-leavenworth-case (no slug)
+- SKIP the-lerouge-case (no slug)
+- ✓ history-of-the-peloponnesian-war — 41 chapters
+- SKIP the-life-and-adventures-of-robinson-crusoe (no slug)
+- SKIP the-life-and-opinions-of-tristram-shandy-gentleman (no slug)
+- SKIP the-life-of-buffalo-bill (no slug)
+- SKIP the-life-of-lazarillo-de-tormes (no slug)
+- SKIP the-lily-of-the-valley (no slug)
+- SKIP the-little-demon (no slug)
+- SKIP the-little-nugget (no slug)
+- SKIP the-little-white-bird (no slug)
+- SKIP the-lives-and-opinions-of-eminent-philosophers (no slug)
+- ✓ oedipus-rex — 9 chapters
+- SKIP the-lodger (no slug)
+- SKIP the-lone-wolf (no slug)
+- SKIP the-lost-girl (no slug)
+- SKIP the-lost-world (no slug)
+- SKIP the-luck-of-barry-lyndon (no slug)
+- SKIP the-lusiads (no slug)
+- SKIP the-madman (no slug)
+- SKIP the-magic-city (no slug)
+- SKIP the-magic-mountain (no slug)
+- SKIP the-magician (no slug)
+- SKIP the-magnificent-ambersons (no slug)
+- SKIP the-maid-of-sker (no slug)
+- SKIP the-maltese-falcon (no slug)
+- SKIP the-man-in-lower-ten (no slug)
+- SKIP the-man-in-the-brown-suit (no slug)
+- SKIP the-man-in-the-queue (no slug)
+- SKIP the-man-of-destiny (no slug)
+- SKIP the-man-who-was-thursday (no slug)
+- SKIP the-man-within (no slug)
+- SKIP the-maracot-deep (no slug)
+- SKIP the-mark-of-zorro (no slug)
+- SKIP the-marrow-of-tradition (no slug)
+- SKIP the-marvelous-land-of-oz (no slug)
+- SKIP the-masqueraders (no slug)
+- SKIP the-master-mind-of-mars (no slug)
+- SKIP the-master-of-ballantrae (no slug)
+- SKIP the-mayor-of-casterbridge (no slug)
+- SKIP the-melody-of-death (no slug)
+- SKIP the-memoirs-of-sherlock-holmes (no slug)
+- SKIP the-merchant-of-venice (no slug)
+- SKIP the-merry-wives-of-windsor (no slug)
+- SKIP the-middle-five (no slug)
+- SKIP the-mill-on-the-floss (no slug)
+- SKIP the-mind-of-mr-j-g-reeder (no slug)
+- SKIP the-mirror-of-the-sea (no slug)
+- SKIP the-missing-chums (no slug)
+- SKIP the-monk (no slug)
+- SKIP the-moon-and-sixpence (no slug)
+- SKIP the-moon-maid (no slug)
+- SKIP the-moonstone (no slug)
+- SKIP the-mother-buck (no slug)
+- SKIP the-mucker (no slug)
+- SKIP the-mule-bone (no slug)
+- SKIP the-murder-at-the-vicarage (no slug)
+- SKIP the-murder-of-roger-ackroyd (no slug)
+- SKIP the-murder-on-the-links (no slug)
+- SKIP the-mysteries-of-udolpho (no slug)
+- SKIP the-mysterious-affair-at-styles (no slug)
+- SKIP the-mysterious-island (no slug)
+- SKIP the-mystery-at-lilac-inn (no slug)
+- SKIP the-mystery-of-a-hansom-cab (no slug)
+- SKIP the-mystery-of-cabin-island (no slug)
+- SKIP the-mystery-of-orcival (no slug)
+- SKIP the-mystery-of-the-blue-train (no slug)
+- SKIP the-mystery-of-the-yellow-room (no slug)
+- SKIP the-napoleon-of-notting-hill (no slug)
+- SKIP the-narrative-of-arthur-gordon-pym-of-nantucket (no slug)
+- SKIP the-national-being (no slug)
+- SKIP the-nebuly-coat (no slug)
+- SKIP the-new-freedom (no slug)
+- SKIP the-new-state (no slug)
+- SKIP the-nibelungenlied (no slug)
+- SKIP the-nigger-of-the-narcissus (no slug)
+- SKIP the-night-land (no slug)
+- SKIP the-octopus (no slug)
+- SKIP the-old-curiosity-shop (no slug)
+- SKIP the-old-english-baron (no slug)
+- SKIP the-old-man-in-the-corner (no slug)
+- SKIP the-old-wives-tale (no slug)
+- SKIP the-origin-of-species (no slug)
+- SKIP the-outlaw-of-torn (no slug)
+- SKIP the-painted-veil (no slug)
+- SKIP the-patient-in-room-18 (no slug)
+- SKIP the-peasants (no slug)
+- SKIP the-perpetual-curate (no slug)
+- SKIP the-phantom-of-the-opera (no slug)
+- SKIP the-phoenix-and-the-carpet (no slug)
+- SKIP the-pickwick-papers (no slug)
+- SKIP the-pilgrim-kamanita (no slug)
+- SKIP the-pilgrims-progress (no slug)
+- SKIP the-pit (no slug)
+- SKIP the-pit-prop-syndicate (no slug)
+- SKIP the-plastic-age (no slug)
+- SKIP the-playboy-of-the-western-world (no slug)
+- SKIP the-poisoned-chocolates-case (no slug)
+- SKIP the-ponson-case (no slug)
+- SKIP the-portrait-of-a-lady (no slug)
+- SKIP the-pothunters (no slug)
+- SKIP the-power-of-darkness (no slug)
+- SKIP the-powerhouse (no slug)
+- SKIP the-practice-and-theory-of-bolshevism (no slug)
+- SKIP the-prime-minister (no slug)
+- SKIP the-prince (no slug)
+- SKIP the-prince-and-the-pauper (no slug)
+- SKIP the-princess-and-curdie (no slug)
+- SKIP the-princess-and-the-goblin (no slug)
+- SKIP the-prisoner-of-zenda (no slug)
+- SKIP the-private-memoirs-and-confessions-of-a-justified-sinner (no slug)
+- SKIP the-private-papers-of-henry-ryecroft (no slug)
+- SKIP the-problems-of-philosophy (no slug)
+- SKIP the-prophet (no slug)
+- SKIP the-public-and-its-problems (no slug)
+- SKIP the-purple-cloud (no slug)
+- SKIP the-purple-land (no slug)
+- SKIP the-pursuit-of-god (no slug)
+- SKIP the-railway-children (no slug)
+- SKIP the-rainbow (no slug)
+- SKIP the-rasp (no slug)
+- SKIP the-rector-and-the-doctors-family (no slug)
+- SKIP the-red-badge-of-courage (no slug)
+- SKIP the-red-house-mystery (no slug)
+- SKIP the-red-room (no slug)
+- SKIP the-red-thumb-mark (no slug)
+- SKIP the-return-de-la-mare (no slug)
+- SKIP the-return-of-sherlock-holmes (no slug)
+- SKIP the-return-of-tarzan (no slug)
+- SKIP the-return-of-the-native (no slug)
+- SKIP the-revolt-of-the-angels (no slug)
+- SKIP the-riddle-of-the-sands (no slug)
+- SKIP the-rights-of-man (no slug)
+- SKIP the-rise-of-silas-lapham (no slug)
+- SKIP the-road-to-oz (no slug)
+- SKIP the-roman-hat-mystery (no slug)
+- SKIP the-room-in-the-dragon-volant (no slug)
+- SKIP the-roots-of-the-mountains (no slug)
+- SKIP the-rough-riders (no slug)
+- SKIP the-rubaiyat-of-omar-khayyam (no slug)
+- SKIP the-scarlet-pimpernel (no slug)
+- SKIP the-school-for-scandal (no slug)
+- SKIP the-sea-hawk (no slug)
+- SKIP the-sea-mystery (no slug)
+- SKIP the-sea-wolf (no slug)
+- SKIP the-seagull (no slug)
+- SKIP the-second-mrs-tanqueray (no slug)
+- SKIP the-secret-adversary (no slug)
+- SKIP the-secret-agent (no slug)
+- SKIP the-secret-garden (no slug)
+- SKIP the-secret-glory (no slug)
+- SKIP the-secret-history (no slug)
+- SKIP the-secret-house-wallace (no slug)
+- SKIP the-secret-of-chimneys (no slug)
+- SKIP the-secret-of-father-brown (no slug)
+- SKIP the-secret-of-sarek (no slug)
+- SKIP the-secret-of-the-caves (no slug)
+- SKIP the-secret-of-the-old-clock (no slug)
+- SKIP the-secret-of-the-old-mill (no slug)
+- SKIP the-secret-tomb (no slug)
+- SKIP the-seven-dials-mystery (no slug)
+- SKIP the-shadow-line (no slug)
+- SKIP the-shadow-line-conrad (no slug)
+- SKIP the-shore-road-mystery (no slug)
+- SKIP the-sign-of-the-four (no slug)
+- SKIP the-sketchbook-of-geoffrey-crayon-gent (no slug)
+- SKIP the-skylark-of-space (no slug)
+- SKIP the-slaves-of-paris (no slug)
+- SKIP the-small-bachelor (no slug)
+- SKIP the-small-house-at-allington (no slug)
+- SKIP the-social-contract (no slug)
+- SKIP the-son-of-tarzan (no slug)
+- SKIP the-son-of-the-wolf (no slug)
+- SKIP the-song-of-the-lark (no slug)
+- SKIP the-sorrows-of-young-werther (no slug)
+- SKIP the-souls-of-black-folk (no slug)
+- SKIP the-sound-and-the-fury (no slug)
+- SKIP the-special-correspondent (no slug)
+- SKIP the-splendid-fairing (no slug)
+- SKIP the-sport-of-the-gods (no slug)
+- SKIP the-spy-in-black (no slug)
+- SKIP the-square-emerald (no slug)
+- SKIP the-stainless-steel-rat (no slug)
+- SKIP the-starvel-hollow-tragedy (no slug)
+- SKIP the-story-of-doctor-dolittle (no slug)
+- SKIP the-story-of-gosta-berling (no slug)
+- SKIP the-story-of-my-experiments-with-truth (no slug)
+- SKIP the-story-of-my-life (no slug)
+- SKIP the-story-of-the-amulet (no slug)
+- SKIP the-story-of-the-treasure-seekers (no slug)
+- SKIP the-story-of-utopias (no slug)
+- SKIP the-subjection-of-women (no slug)
+- SKIP the-sun-also-rises (no slug)
+- SKIP the-sundering-flood (no slug)
+- SKIP the-survivors-of-the-chancellor (no slug)
+- SKIP the-swiss-family-robinson (no slug)
+- SKIP the-taming-of-the-shrew (no slug)
+- SKIP the-teeth-of-the-tiger (no slug)
+- SKIP the-tempest (no slug)
+- SKIP the-tenant-of-wildfell-hall (no slug)
+- SKIP the-theory-of-moral-sentiments (no slug)
+- SKIP the-theory-of-the-leisure-class (no slug)
+- SKIP the-thirty-nine-steps (no slug)
+- SKIP the-three-hostages (no slug)
+- SKIP the-three-impostors (no slug)
+- SKIP the-three-musketeers (no slug)
+- SKIP the-three-taps (no slug)
+- SKIP the-time-traders (no slug)
+- SKIP the-titan (no slug)
+- SKIP the-tower-treasure (no slug)
+- ✓ the-libation-bearers — 9 chapters
+- SKIP the-tragical-history-of-doctor-faustus (no slug)
+- SKIP the-trail-of-the-serpent (no slug)
+- SKIP the-triumph-of-the-scarlet-pimpernel (no slug)
+- SKIP the-truth-about-tristrem-varick (no slug)
+- SKIP the-tunnel-richardson (no slug)
+- SKIP the-turmoil (no slug)
+- SKIP the-two-gentlemen-of-verona (no slug)
+- SKIP the-two-noble-kinsmen (no slug)
+- SKIP the-uncalled (no slug)
+- SKIP the-unicorn-from-the-stars (no slug)
+- SKIP the-unpleasantness-at-the-bellona-club (no slug)
+- SKIP the-valley-of-fear (no slug)
+- SKIP the-varieties-of-religious-experience (no slug)
+- SKIP the-venetians (no slug)
+- SKIP the-viaduct-murder (no slug)
+- SKIP the-vicar-of-bullhampton (no slug)
+- SKIP the-vicar-of-wakefield (no slug)
+- SKIP the-vicomte-de-bragelonne (no slug)
+- SKIP the-virginian (no slug)
+- SKIP the-vortex (no slug)
+- SKIP the-voyage-of-the-beagle (no slug)
+- SKIP the-voyage-out (no slug)
+- SKIP the-voyages-of-doctor-dolittle (no slug)
+- SKIP the-warden (no slug)
+- SKIP the-warlord-of-mars (no slug)
+- SKIP the-water-babies (no slug)
+- SKIP the-water-of-the-wondrous-isles (no slug)
+- SKIP the-way-of-all-flesh (no slug)
+- SKIP the-way-of-the-world (no slug)
+- SKIP the-way-we-live-now (no slug)
+- SKIP the-wealth-of-nations (no slug)
+- SKIP the-well-at-the-worlds-end (no slug)
+- SKIP the-well-of-loneliness (no slug)
+- SKIP the-white-company (no slug)
+- SKIP the-white-feather (no slug)
+- SKIP the-wind-in-the-willows (no slug)
+- SKIP the-wings-of-the-dove (no slug)
+- SKIP the-winters-tale (no slug)
+- SKIP the-wisdom-of-father-brown (no slug)
+- SKIP the-woman-in-white (no slug)
+- SKIP the-wonderful-adventures-of-nils (no slug)
+- SKIP the-wonderful-visit (no slug)
+- SKIP the-wonderful-wizard-of-oz (no slug)
+- SKIP the-wood-beyond-the-world (no slug)
+- SKIP the-woodlanders (no slug)
+- SKIP the-world-below (no slug)
+- SKIP the-world-set-free (no slug)
+- SKIP the-worm-ouroboros (no slug)
+- SKIP the-worst-journey-in-the-world (no slug)
+- SKIP the-wrong-letter (no slug)
+- SKIP the-wyvern-mystery (no slug)
+- SKIP the-young-visiters (no slug)
+- SKIP theodore-savage (no slug)
+- SKIP there-is-confusion (no slug)
+- SKIP these-old-shades (no slug)
+- SKIP this-side-of-paradise (no slug)
+- SKIP thoreau-essays (no slug)
+- SKIP those-barren-leaves (no slug)
+- SKIP three-lives (no slug)
+- SKIP three-men-in-a-boat (no slug)
+- SKIP three-sisters (no slug)
+- SKIP through-the-brazilian-wilderness (no slug)
+- SKIP through-the-looking-glass (no slug)
+- SKIP thus-spake-zarathustra (no slug)
+- SKIP thuvia-maid-of-mars (no slug)
+- SKIP ticket-no-9672 (no slug)
+- SKIP timon-of-athens (no slug)
+- SKIP titus-andronicus (no slug)
+- SKIP to-the-lighthouse (no slug)
+- SKIP toilers-of-the-sea (no slug)
+- SKIP tom-browns-school-days (no slug)
+- SKIP tombstone (no slug)
+- SKIP tono-bungay (no slug)
+- SKIP topsy-turvy (no slug)
+- SKIP tracks-in-the-snow (no slug)
+- SKIP tractatus-logico-philosophicus (no slug)
+- SKIP trafalgar (no slug)
+- SKIP tragedy-at-ravensthorpe (no slug)
+- SKIP trents-last-case (no slug)
+- SKIP trilby (no slug)
+- SKIP troilus-and-cressida (no slug)
+- SKIP tusculan-disputations (no slug)
+- SKIP twelfth-night (no slug)
+- SKIP twelve-years-a-slave (no slug)
+- SKIP twenty-years-after (no slug)
+- SKIP twenty-years-at-hull-house (no slug)
+- SKIP two-treatises-of-government (no slug)
+- SKIP two-years-before-the-mast (no slug)
+- SKIP typee (no slug)
+- SKIP uller-uprising (no slug)
+- SKIP ulysses (no slug)
+- SKIP uncle-silas (no slug)
+- SKIP uncle-toms-cabin (no slug)
+- SKIP uncle-vanya (no slug)
+- SKIP under-western-eyes (no slug)
+- SKIP understood-betsy (no slug)
+- SKIP uneasy-money (no slug)
+- SKIP unnatural-death (no slug)
+- SKIP unspoken-sermons (no slug)
+- SKIP unto-this-last (no slug)
+- SKIP up-from-slavery (no slug)
+- SKIP ursule-mirouet (no slug)
+- SKIP utopia (no slug)
+- SKIP vanity-fair (no slug)
+- SKIP vathek (no slug)
+- SKIP veiled-women (no slug)
+- SKIP verses-on-various-occasions (no slug)
+- SKIP victory (no slug)
+- SKIP victory-odes-pindar (no slug)
+- SKIP vikram-and-the-vampire (no slug)
+- SKIP vile-bodies (no slug)
+- SKIP villette (no slug)
+- SKIP voodoo-planet (no slug)
+- SKIP washington-square (no slug)
+- SKIP waverley (no slug)
+- SKIP we (no slug)
+- SKIP wet-magic (no slug)
+- SKIP what-is-art (no slug)
+- SKIP what-is-property (no slug)
+- SKIP what-is-to-be-done (no slug)
+- SKIP whats-wrong-with-the-world (no slug)
+- SKIP when-god-laughs (no slug)
+- SKIP when-the-world-shook (no slug)
+- SKIP where-angels-fear-to-tread (no slug)
+- SKIP while-the-billy-boils (no slug)
+- SKIP white-fang (no slug)
+- SKIP whose-body (no slug)
+- SKIP wild-animals-i-have-known (no slug)
+- SKIP winesburg-ohio (no slug)
+- SKIP winnie-the-pooh (no slug)
+- SKIP wired-love (no slug)
+- SKIP with-fire-and-sword (no slug)
+- SKIP wolf-solent (no slug)
+- SKIP women-and-economics (no slug)
+- SKIP women-in-love (no slug)
+- SKIP wonderful-adventures-of-mrs-seacole-in-many-lands (no slug)
+- SKIP worlds-end (no slug)
+- SKIP yashka (no slug)
+- SKIP years-of-grace (no slug)
+- SKIP you-never-can-tell (no slug)
+- SKIP zuleika-dobson (no slug)
+- SKIP zuni-folktales (no slug)
+- ✓ tao-te-ching — 12 chapters
+- ✓ the-lives-of-the-caesars — 13 chapters
+- ✓ the-trachiniae — 9 chapters
+- ✓ inferno-dante — 10 chapters
+Run complete: ok=16 fail=1179
+
+## Ingestion run 2026-06-27T14:58:55.097Z — 1 books
+- ✓ metamorphoses — 20 chapters
+Run complete: ok=1 fail=0
+
+## Ingestion run 2026-06-27T15:02:20.683Z — 1 books (dry)
+- SKIP pride-and-prejudice (no slug)
+Run complete: ok=0 fail=1
+
+## Ingestion run 2026-06-27T15:02:21.260Z — 1 books (dry)
+- SKIP war-and-peace (no slug)
+Run complete: ok=0 fail=1
+
+## Ingestion run 2026-06-27T15:02:21.669Z — 1 books (dry)
+- SKIP the-brothers-karamazov (no slug)
+Run complete: ok=0 fail=1
+
+## Ingestion run 2026-06-27T15:02:48.202Z — 1 books (dry)
+- SKIP a-damsel-in-distress (no slug)
+Run complete: ok=0 fail=1
+
+## Ingestion run 2026-06-27T15:03:42.603Z — 1 books (dry)
+- SKIP a-damsel-in-distress (no slug)
+Run complete: ok=0 fail=1
+
+## Ingestion run 2026-06-27T15:07:57.489Z — 1178 books
+- ✓ a-damsel-in-distress — 33 chapters
+- ✓ a-high-wind-in-jamaica — 15 chapters
+- ✓ a-prefects-uncle — 22 chapters
+- ✓ a-negro-explorer-at-the-north-pole — 31 chapters
+- ✓ a-pluralistic-universe — 17 chapters
+- ✓ a-house-of-gentlefolk — 50 chapters
+- ✓ a-gentleman-of-leisure — 36 chapters
+- ✓ a-hazard-of-new-fortunes — 74 chapters
+- ✓ a-strange-disappearance — 24 chapters
+- ✓ a-voyage-to-arcturus — 25 chapters
+- ✓ a-yankee-in-the-trenches — 26 chapters
+- ✓ after-london — 39 chapters
+- ✓ ajax — 9 chapters
+- ✓ allan-quatermain-stories — 9 chapters
+- ✓ adams-breed — 41 chapters
+- ✓ an-antarctic-mystery — 31 chapters
+- ✓ an-american-tragedy — 107 chapters
+- ✓ american-indian-stories — 18 chapters
+- ✓ allan-quatermain — 34 chapters
+- ✓ an-enquiry-concerning-human-understanding — 17 chapters
+- ✓ an-ideal-husband — 10 chapters
+- ✓ an-outcast-of-the-islands — 39 chapters
+- ✓ an-outback-marriage — 34 chapters
+- ✓ anna-of-the-five-towns — 22 chapters
+- ✓ an-autobiography — 33 chapters
+- ✓ anne-of-avonlea — 37 chapters
+- SKIP apology (no slug)
+- ✗ anne-of-green-gables (l-m-montgomery_anne-of-green-gables) — TypeError: fetch failed
+- ✓ arms-and-the-man — 10 chapters
+- ✓ antic-hay — 28 chapters
+- ✓ armageddon-2419-a-d — 19 chapters
+- ✓ around-the-world-in-eighty-days — 41 chapters
+- ✓ anne-of-the-island — 49 chapters
+- ✓ alls-well-that-ends-well — 13 chapters
+- ✓ arsene-lupin-versus-herlock-sholmes — 13 chapters
+- ✓ arrowsmith — 46 chapters
+- ✓ as-i-lay-dying — 65 chapters
+- ✓ as-you-like-it — 12 chapters
+- ✗ ashenden (w-somerset-maugham_ashenden) — TypeError: fetch failed
+- ✓ aspects-of-the-novel — 17 chapters
+- ✓ at-the-back-of-the-north-wind — 42 chapters
+- ✓ at-the-villa-rose — 25 chapters
+- ✓ at-the-earths-core — 20 chapters
+- ✓ almayers-folly — 20 chapters
+- ✓ at-the-mountains-of-madness — 16 chapters
+- ✓ babbitt — 38 chapters
+- ✓ bambi — 29 chapters
+- ✓ aurora-floyd — 43 chapters
+- ✓ barchester-towers — 57 chapters
+- ✓ beatrix — 10 chapters
+- ✓ after-the-divorce — 27 chapters
+- ✓ beauvallet — 34 chapters
+- ✓ backwater — 14 chapters
+- ✓ before-adam — 26 chapters
+- ✓ behind-a-mask — 13 chapters
+- ✓ back-to-methuselah — 17 chapters
+- ✓ behind-that-curtain — 28 chapters
+- ✓ bellarion-the-fortunate — 54 chapters
+- ✓ antony-and-cleopatra — 11 chapters
+- ✓ barnaby-rudge — 88 chapters
+- ✓ barlaam-and-ioasaph — 48 chapters
+- ✓ betty-zane — 24 chapters
+- ✓ bertram-copes-year — 37 chapters
+- ✓ ben-hur — 97 chapters
+- ✓ beyond-good-and-evil — 17 chapters
+- ✓ black-beauty — 58 chapters
+- ✓ black-no-more — 20 chapters
+- ✓ bleak-house — 74 chapters
+- ✓ brewsters-millions — 38 chapters
+- ✓ brown-on-resolution — 25 chapters
+- ✓ calvary-mirbeau — 16 chapters
+- ✓ bulfinchs-mythology — 122 chapters
+- ✓ bulldog-drummond — 18 chapters
+- ✓ can-you-forgive-her — 85 chapters
+- ✓ candida — 9 chapters
+- ✓ beyond-thirty — 13 chapters
+- ✓ cane — 39 chapters
+- ✓ captain-blood — 35 chapters
+- ✓ catriona — 40 chapters
+- ✓ cakes-and-ale — 30 chapters
+- ✓ charlotte-temple — 45 chapters
+- ✓ chance — 23 chapters
+- ✓ cimarron — 34 chapters
+- ✓ childrens-stories — 13 chapters
+- ✓ clerambault — 13 chapters
+- ✓ clouds-of-witness — 29 chapters
+- ✓ commentaries-on-the-gallic-war — 12 chapters
+- ✓ clotel — 37 chapters
+- ✓ cleopatra — 45 chapters
+- ✗ continental-op-stories (dashiell-hammett_continental-op-stories) — TypeError: fetch failed
+- ✓ clarissa — 546 chapters
+- ✓ castle-rackrent — 9 chapters
+- ✓ cousin-henry — 28 chapters
+- ✓ coriolanus — 12 chapters
+- ✓ cornelli — 14 chapters
+- ✓ conan-stories — 14 chapters
+- ✓ cranford — 20 chapters
+- ✓ culture-and-anarchy — 15 chapters
+- ✓ crome-yellow — 34 chapters
+- ✓ cymbeline — 11 chapters
+- ✓ cup-of-gold — 9 chapters
+- ✓ dangerous-ages — 24 chapters
+- ✓ dangerous-liaisons — 184 chapters
+- ✓ dark-princess — 11 chapters
+- ✓ darkwater — 19 chapters
+- ✓ daniel-deronda — 87 chapters
+- ✓ dead-souls — 25 chapters
+- ✓ david-copperfield — 72 chapters
+- ✓ decline-and-fall — 35 chapters
+- ✓ confessions-of-an-english-opium-eater — 10 chapters
+- SKIP discourse-on-method (no slug)
+- ✓ death-comes-for-the-archbishop — 17 chapters
+- ✓ democracy-and-education — 33 chapters
+- ✓ demons — 33 chapters
+- ✓ democracy-and-social-ethics — 14 chapters
+- ✓ dick-sands-the-boy-captain — 45 chapters
+- ✓ disenchantment — 22 chapters
+- ✓ diverging-roads — 30 chapters
+- ✓ doctor-syn — 44 chapters
+- ✓ discourses-on-livy — 154 chapters
+- ✓ doctor-thorne — 52 chapters
+- ✓ dodsworth — 42 chapters
+- ✓ dr-mabuse-the-gambler — 27 chapters
+- ✓ dombey-and-son — 70 chapters
+- ✓ dorothy-and-the-wizard-in-oz — 27 chapters
+- ✓ driven-back-to-eden — 52 chapters
+- ✓ dubliners — 19 chapters
+- ✓ edward-ii — 11 chapters
+- ✓ early-autumn — 16 chapters
+- ✓ demian — 13 chapters
+- ✓ don-juan — 28 chapters
+- ✓ edward-iii — 12 chapters
+- ✓ el-dorado — 58 chapters
+- ✓ el-filibusterismo — 48 chapters
+- ✓ elizabeth-and-her-german-garden — 21 chapters
+- ✓ elmer-gantry — 40 chapters
+- ✓ english-as-she-is-spoke — 13 chapters
+- ✓ eminent-victorians — 31 chapters
+- ✓ emily-of-new-moon — 35 chapters
+- ✓ erewhon — 40 chapters
+- ✓ buddenbrooks — 114 chapters
+- ✓ essays — 35 chapters
+- ✓ eugenie-grandet — 7 chapters
+- ✓ erewhon-revisited — 37 chapters
+- ✓ eugene-onegin — 17 chapters
+- ✓ facing-the-flag — 22 chapters
+- ✓ ethan-frome — 17 chapters
+- ✓ evelina — 93 chapters
+- ✓ fantomas — 36 chapters
+- ✓ fannys-first-play — 13 chapters
+- ✓ father-goriot — 8 chapters
+- ✓ father-hensons-story-of-his-own-life — 32 chapters
+- ✓ figures-of-earth — 53 chapters
+- ✓ far-from-the-madding-crowd — 64 chapters
+- ✓ five-children-and-it — 17 chapters
+- ✓ file-no-113 — 29 chapters
+- ✓ five-weeks-in-a-balloon — 49 chapters
+- ✓ four-day-planet — 27 chapters
+- ✓ freckles — 26 chapters
+- ✓ framley-parsonage — 52 chapters
+- ✓ flatland — 33 chapters
+- ✓ from-the-earth-to-the-moon — 32 chapters
+- ✓ gentlemen-prefer-blondes — 12 chapters
+- ✓ futility — 45 chapters
+- ✓ germinie-lacerteux — 78 chapters
+- ✓ getting-married — 9 chapters
+- ✓ germinal — 53 chapters
+- ✓ ghost-stories — 33 chapters
+- ✓ fathers-and-children — 32 chapters
+- ✓ ghosts — 11 chapters
+- ✓ giants-bread — 38 chapters
+- ✗ gil-blas (alain-rene-lesage_gil-blas_tobias-smollett) — TypeError: fetch failed
+- ✓ gladiator — 29 chapters
+- ✓ gitanjali — 7 chapters
+- ✓ green-meadow-stories — 8 chapters
+- ✓ greenmantle — 29 chapters
+- ✓ hadrian-the-seventh — 33 chapters
+- ✓ harry-heathcote-of-gangoil — 16 chapters
+- ✓ hadji-murad — 32 chapters
+- ✓ growth-of-the-soil — 38 chapters
+- ✓ exiles — 9 chapters
+- ✓ heartbreak-house — 10 chapters
+- ✓ hedda-gabler — 12 chapters
+- ✓ hardings-luck — 19 chapters
+- ✓ henry-iv-part-i — 11 chapters
+- ✓ henry-v — 13 chapters
+- ✓ green-forest-stories — 10 chapters
+- ✓ henry-iv-part-ii — 13 chapters
+- ✓ he-who-gets-slapped — 11 chapters
+- ✓ henry-vi-part-ii — 11 chapters
+- ✓ henry-vi-part-i — 11 chapters
+- ✓ henry-viii — 13 chapters
+- ✓ heretics — 26 chapters
+- ✓ herland — 16 chapters
+- ✓ hindu-tales-from-the-sanskrit — 16 chapters
+- ✓ hester — 51 chapters
+- ✗ his-family (ernest-poole_his-family) — TypeError: fetch failed
+- ✓ henry-vi-part-iii — 11 chapters
+- ✓ his-last-bow — 13 chapters
+- ✓ honeycomb — 15 chapters
+- ✓ hard-times — 44 chapters
+- ✓ his-masterpiece — 19 chapters
+- ✓ home-to-harlem — 31 chapters
+- ✓ heidi — 29 chapters
+- ✓ howards-end — 48 chapters
+- ✓ household-tales — 206 chapters
+- ✓ he-knew-he-was-right — 103 chapters
+- ✓ hudson-river-bracketed — 60 chapters
+- ✓ hunting-for-hidden-gold — 28 chapters
+- SKIP in-a-glass-darkly (no slug)
+- ✓ hunger — 11 chapters
+- ✓ idylls-of-the-king — 19 chapters
+- ✓ hudibras — 24 chapters
+- ✓ i-will-repay — 37 chapters
+- ✓ in-darkest-london — 22 chapters
+- ✗ in-search-of-lost-time (marcel-proust_in-search-of-lost-time_c-k-scott-moncrieff) — TypeError: fetch failed
+- ✓ indian-summer — 28 chapters
+- ✓ indian-fairy-tales — 38 chapters
+- ✓ incidents-in-the-life-of-a-slave-girl — 51 chapters
+- ✓ in-the-days-of-the-comet — 22 chapters
+- ✓ huntingtower — 26 chapters
+- ✓ human-nature-and-conduct — 38 chapters
+- ✓ in-search-of-the-castaways — 66 chapters
+- ✓ indiscretions-of-archie — 32 chapters
+- ✓ irish-fairy-tales — 17 chapters
+- ✓ inspector-frenchs-greatest-case — 24 chapters
+- ✗ jacobs-room (virginia-woolf_jacobs-room) — TypeError: fetch failed
+- ✓ how-the-other-half-lives — 37 chapters
+- ✓ ivanhoe — 53 chapters
+- ✓ jeeves-stories — 31 chapters
+- ✓ john-browns-body — 17 chapters
+- ✓ iola-leroy — 41 chapters
+- ✓ invaders-from-the-infinite — 31 chapters
+- ✓ jean-christophe — 51 chapters
+- ✓ john-silence-stories — 12 chapters
+- ✓ jenny — 40 chapters
+- ✓ journey-to-the-center-of-the-earth — 51 chapters
+- ✓ jude-the-obscure — 66 chapters
+- ✓ jungle-tales-of-tarzan — 16 chapters
+- ✓ jurgen — 59 chapters
+- ✓ julius-caesar — 11 chapters
+- ✓ just-william — 16 chapters
+- ✓ jack-keefe-stories — 30 chapters
+- ✓ kai-lungs-golden-hours — 18 chapters
+- ✓ key-out-of-time — 22 chapters
+- ✓ kate-plus-10 — 24 chapters
+- ✓ kidnapped — 38 chapters
+- ✓ kim — 20 chapters
+- ✓ king-lear — 11 chapters
+- ✓ king-solomons-mines — 30 chapters
+- ✓ kipps — 27 chapters
+- ✓ kusamakura — 20 chapters
+- ✓ king-coal — 131 chapters
+- ✓ la-bas — 27 chapters
+- ✓ king-john — 11 chapters
+- ✓ lady-audleys-secret — 45 chapters
+- ✓ lady-into-fox — 7 chapters
+- ✓ just-so-stories — 17 chapters
+- ✓ lady-chatterleys-lover — 23 chapters
+- ✓ lady-windermeres-fan — 12 chapters
+- ✓ last-and-first-men — 24 chapters
+- ✓ laughing-boy — 28 chapters
+- ✓ leave-it-to-psmith — 18 chapters
+- ✓ islands-of-space — 29 chapters
+- ✓ lay-down-your-arms — 27 chapters
+- ✓ lais — 20 chapters
+- ✓ lavengro — 172 chapters
+- ✓ le-morte-darthur — 534 chapters
+- ✓ letters-of-two-brides — 65 chapters
+- ✓ letters-written-during-a-short-residence-in-sweden-norway-and-denmark — 32 chapters
+- ✓ leaves-of-grass — 44 chapters
+- ✓ leviathan — 60 chapters
+- ✓ liberalism-hobhouse — 14 chapters
+- ✓ lilith — 54 chapters
+- ✓ little-caesar — 58 chapters
+- ✓ little-fuzzy — 21 chapters
+- ✓ little-lord-fauntleroy — 19 chapters
+- ✓ legends-of-vancouver — 24 chapters
+- ✓ looking-backward — 35 chapters
+- ✓ little-dorrit — 78 chapters
+- ✓ lolly-willowes — 7 chapters
+- ✓ lord-arthur-saviles-crime-and-other-stories — 10 chapters
+- ✓ look-homeward-angel — 52 chapters
+- ✗ lord-jim (joseph-conrad_lord-jim) — TypeError: fetch failed
+- ✓ lord-tonys-wife — 29 chapters
+- ✓ lord-peter-views-the-body — 18 chapters
+- ✓ lost-face — 11 chapters
+- ✓ love-among-the-chickens — 29 chapters
+- ✓ lost-mans-lane — 53 chapters
+- ✓ lorna-doone — 80 chapters
+- ✓ lud-in-the-mist — 39 chapters
+- ✓ lyrical-ballads — 11 chapters
+- ✓ magnificent-obsession — 29 chapters
+- ✓ loves-labours-lost — 11 chapters
+- ✓ magnolia-leaves — 10 chapters
+- ✓ major-barbara — 10 chapters
+- ✓ lost-illusions — 10 chapters
+- ✓ main-street — 45 chapters
+- ✓ man-and-superman — 15 chapters
+- ✓ manalive — 16 chapters
+- ✓ mansfield-park — 52 chapters
+- ✓ manhattan-transfer — 25 chapters
+- ✓ man-and-wife — 84 chapters
+- ✓ maria-chapdelaine — 20 chapters
+- ✗ martin-chuzzlewit (charles-dickens_martin-chuzzlewit) — TypeError: fetch failed
+- ✓ martin-eden — 52 chapters
+- ✓ master-flea — 12 chapters
+- ✓ mauprat — 39 chapters
+- ✓ maria — 65 chapters
+- ✓ mcteague — 28 chapters
+- ✓ mary-olivier-a-life — 44 chapters
+- ✓ measure-for-measure — 11 chapters
+- ✓ melmoth-the-wanderer — 46 chapters
+- ✓ memoirs-of-a-foxhunting-man — 16 chapters
+- ✓ melville-short-fiction — 23 chapters
+- ✓ memoirs-of-a-revolutionist — 77 chapters
+- ✓ memoirs-of-a-midget — 72 chapters
+- ✓ marius-the-epicurean — 40 chapters
+- ✓ memoirs-of-arsene-lupin — 22 chapters
+- ✓ midwinter — 28 chapters
+- ✓ michael-strogoff — 39 chapters
+- ✓ mike-wodehouse — 65 chapters
+- ✓ misalliance — 7 chapters
+- ✓ middlemarch — 102 chapters
+- ✓ mireio — 20 chapters
+- ✓ metropolis — 31 chapters
+- ✓ miss-marjoribanks — 57 chapters
+- ✓ modeste-mignon — 8 chapters
+- ✓ miss-mole — 44 chapters
+- ✓ moll-flanders — 8 chapters
+- ✓ moribund-society-and-anarchy — 30 chapters
+- ✓ moonfleet — 27 chapters
+- ✓ mr-mulliner-stories — 13 chapters
+- ✓ mr-britling-sees-it-through — 18 chapters
+- ✓ mr-standfast — 31 chapters
+- ✓ monsieur-lecoq — 89 chapters
+- ✓ mrs-dalloway — 5 chapters
+- ✓ murder-by-the-clock — 35 chapters
+- ✓ mrs-warrens-profession — 12 chapters
+- ✓ much-ado-about-nothing — 11 chapters
+- ✓ murder-in-the-gunroom — 27 chapters
+- ✓ murder-in-the-maze — 22 chapters
+- ✓ my-brilliant-career — 46 chapters
+- ✓ my-antonia — 59 chapters
+- ✓ my-four-weeks-in-france — 12 chapters
+- ✓ narrative-of-the-life-of-frederick-douglass — 20 chapters
+- ✓ national-avenue — 37 chapters
+- ✓ my-reminiscences — 59 chapters
+- ✓ new-hampshire — 6 chapters
+- ✓ new-grub-street — 41 chapters
+- ✓ news-from-nowhere — 37 chapters
+- ✓ nicomachean-ethics — 18 chapters
+- ✓ niels-lyhne — 21 chapters
+- ✓ mystery-at-lynden-sands — 23 chapters
+- ✓ night-and-day — 40 chapters
+- ✓ nicholas-nickleby — 72 chapters
+- ✓ no-more-parades — 17 chapters
+- ✓ nightmare-abbey — 22 chapters
+- ✓ no-name — 63 chapters
+- ✓ no-treason — 11 chapters
+- ✓ noli-me-tangere — 74 chapters
+- ✓ my-disillusionment-in-russia — 41 chapters
+- ✓ nordenholts-million — 27 chapters
+- ✓ north-of-boston — 8 chapters
+- ✓ north-and-south — 56 chapters
+- ✓ northanger-abbey — 38 chapters
+- ✓ nostromo — 40 chapters
+- ✓ mutual-aid — 17 chapters
+- ✓ not-without-laughter — 34 chapters
+- ✓ notes-from-underground — 29 chapters
+- ✓ notre-dame-de-paris — 78 chapters
+- ✓ now-it-can-be-told — 14 chapters
+- ✓ o-pioneers — 39 chapters
+- ✓ on-a-chinese-screen — 65 chapters
+- ✓ of-human-bondage — 126 chapters
+- ✓ one-of-ours — 85 chapters
+- ✓ on-the-eve — 39 chapters
+- ✓ orlando — 16 chapters
+- ✓ orlando-furioso — 54 chapters
+- ✓ old-indian-legends — 20 chapters
+- ✓ oil — 27 chapters
+- ✓ on-liberty — 14 chapters
+- ✓ orley-farm — 84 chapters
+- ✓ orthodoxy — 16 chapters
+- ✓ othello — 11 chapters
+- ✓ our-american-cousin — 9 chapters
+- ✓ oedipus-at-colonus — 9 chapters
+- ✓ ozma-of-oz — 29 chapters
+- ✓ pan-tadeusz — 21 chapters
+- ✓ our-mutual-friend — 76 chapters
+- ✓ our-nig — 20 chapters
+- ✓ pan-michael — 67 chapters
+- ✓ parisians-in-the-country — 10 chapters
+- ✓ pastors-and-masters — 11 chapters
+- ✓ parnassus-on-wheels — 22 chapters
+- ✓ pellucidar — 22 chapters
+- ✓ pericles — 11 chapters
+- ✓ nonsense-books — 12 chapters
+- ✓ penguin-island — 74 chapters
+- ✓ payment-deferred — 20 chapters
+- ✓ pelle-the-conqueror — 121 chapters
+- ✓ personal-recollections-of-joan-of-arc — 88 chapters
+- ✓ persuasion — 28 chapters
+- ✓ my-first-summer-in-the-sierra — 18 chapters
+- ✓ peter-and-wendy — 21 chapters
+- ✓ philoctetes — 9 chapters
+- ✓ phantastes — 33 chapters
+- ✓ phineas-finn — 80 chapters
+- ✓ phoebe-junior — 49 chapters
+- ✓ pierre-and-jean — 16 chapters
+- ✓ pimpernel-and-rosemary — 53 chapters
+- ✓ plague-ship — 22 chapters
+- ✓ phineas-redux — 84 chapters
+- ✓ piccadilly-jim — 30 chapters
+- ✓ planet-of-the-damned — 25 chapters
+- ✓ plays-roswitha-of-gandersheim — 18 chapters
+- ✓ poems-on-various-subjects — 10 chapters
+- ✗ plum-bun (jessie-redmon-fauset_plum-bun) — TypeError: fetch failed
+- ✓ plays-zeami-motokiyo — 14 chapters
+- ✓ poetry-ambrose-bierce — 17 chapters
+- ✓ poetry-fernando-pessoa — 7 chapters
+- ✓ poetry-frances-ellen-watkins-harper — 6 chapters
+- ✓ poetry-c-s-lewis — 61 chapters
+- ✓ poetry-georgia-douglas-johnson — 5 chapters
+- ✓ poetry — 61 chapters
+- ✓ poetry-ameen-rihani — 9 chapters
+- ✓ poetry-james-joyce — 7 chapters
+- ✓ poetry-langston-hughes — 5 chapters
+- ✓ poetry-james-weldon-johnson — 6 chapters
+- ✓ poetry-mina-loy — 6 chapters
+- ✓ poetry-matthew-arnold — 6 chapters
+- ✓ poetry-edgar-allan-poe — 6 chapters
+- ✓ poetry-taras-shevchenko — 6 chapters
+- ✓ poetry-oscar-wilde — 5 chapters
+- ✓ poetry-w-b-yeats — 6 chapters
+- ✓ poetry-edward-thomas — 6 chapters
+- ✓ poetry-william-carlos-williams — 5 chapters
+- ✓ poetry-thomas-gray — 6 chapters
+- ✓ pointed-roofs — 17 chapters
+- ✓ point-counter-point — 41 chapters
+- ✓ poirot-investigates — 16 chapters
+- ✗ pollyanna-grows-up (eleanor-h-porter_pollyanna-grows-up) — TypeError: fetch failed
+- ✓ pollyanna — 38 chapters
+- ✓ poor-folk — 60 chapters
+- ✓ polynesian-mythology — 34 chapters
+- ✗ poetry-henry-van-dyke (henry-van-dyke-jr_poetry) — TypeError: fetch failed
+- ✓ practical-mysticism — 18 chapters
+- ✓ prince-otto — 32 chapters
+- ✓ pragmatism — 16 chapters
+- ✓ principia-ethica — 16 chapters
+- ✓ progress-and-poverty — 79 chapters
+- ✓ psmith-in-the-city — 37 chapters
+- ✓ psmith-journalist — 36 chapters
+- ✓ puddnhead-wilson — 28 chapters
+- ✓ queen-victoria — 17 chapters
+- ✓ quicksand — 32 chapters
+- ✓ pygmalion — 13 chapters
+- ✓ ragged-dick — 35 chapters
+- ✓ r-u-r — 10 chapters
+- ✓ quo-vadis — 82 chapters
+- ✓ ralestone-luck — 25 chapters
+- ✓ rachel-ray — 34 chapters
+- ✓ red-dusk-and-the-morrow — 24 chapters
+- ✓ red-harvest — 33 chapters
+- ✓ religion-and-the-rise-of-capitalism — 14 chapters
+- ✓ riceyman-steps — 58 chapters
+- ✓ representative-men — 12 chapters
+- ✓ resurrection — 140 chapters
+- ✓ richard-ii — 11 chapters
+- ✓ right-ho-jeeves — 29 chapters
+- ✓ richard-iii — 11 chapters
+- ✓ riders-of-the-purple-sage — 27 chapters
+- ✓ round-the-moon — 28 chapters
+- ✓ romance-conrad-ford — 47 chapters
+- ✓ running-a-thousand-miles-for-freedom — 10 chapters
+- ✓ roughing-it — 89 chapters
+- ✓ russian-folktales — 84 chapters
+- ✓ salammbo — 19 chapters
+- ✓ roads-to-freedom — 19 chapters
+- ✓ sanine — 51 chapters
+- ✓ saint-joan — 14 chapters
+- ✓ robbery-under-arms — 64 chapters
+- ✓ savrola — 29 chapters
+- ✓ sartor-resartus — 42 chapters
+- ✓ scaramouche — 45 chapters
+- ✓ salem-chapel — 47 chapters
+- ✓ scarlet-sister-mary — 38 chapters
+- ✓ she — 37 chapters
+- ✓ she-stoops-to-conquer — 15 chapters
+- ✓ short-fiction-akutagawa-ryunosuke — 20 chapters
+- ✓ short-fiction-aleksandr-kuprin — 54 chapters
+- ✓ shirley — 42 chapters
+- ✓ short-fiction-andre-norton — 7 chapters
+- ✓ short-fiction-charles-beaumont — 7 chapters
+- ✓ short-fiction-anthony-trollope — 46 chapters
+- ✓ short-fiction-clark-ashton-smith — 17 chapters
+- ✓ short-fiction-clifford-d-simak — 14 chapters
+- ✓ short-fiction-cordwainer-smith — 7 chapters
+- ✓ short-fiction-daphne-du-maurier — 11 chapters
+- ✓ short-fiction-e-m-forster — 17 chapters
+- ✓ short-fiction-edgar-allan-poe — 75 chapters
+- ✓ short-fiction-ernest-hemingway — 53 chapters
+- ✓ short-fiction — 7 chapters
+- ✓ short-fiction-frederik-pohl — 18 chapters
+- ✓ short-fiction-f-scott-fitzgerald — 43 chapters
+- ✓ short-fiction-fritz-leiber — 29 chapters
+- ✓ short-fiction-fyodor-sologub — 57 chapters
+- ✓ short-fiction-gustave-flaubert — 8 chapters
+- ✓ short-fiction-george-macdonald — 23 chapters
+- ✓ personal-memoirs-of-ulysses-s-grant — 82 chapters
+- ✗ short-fiction-guy-de-maupassant (guy-de-maupassant_short-fiction_various-translators) — TypeError: fetch failed
+- ✓ short-fiction-h-g-wells — 62 chapters
+- ✓ short-fiction-henry-kuttner — 15 chapters
+- ✓ short-fiction-h-beam-piper — 32 chapters
+- ✓ short-fiction-hjalmar-soderberg — 24 chapters
+- ✓ short-fiction-ivan-bunin — 25 chapters
+- ✓ short-fiction-jonas-lie — 19 chapters
+- ✓ short-fiction-kate-chopin — 54 chapters
+- ✓ short-fiction-j-sheridan-le-fanu — 44 chapters
+- ✓ short-fiction-leonid-andreyev — 45 chapters
+- ✓ short-fiction-m-r-james — 32 chapters
+- ✓ short-fiction-mack-reynolds — 34 chapters
+- ✓ short-fiction-nella-larsen — 6 chapters
+- ✓ short-fiction-mary-shelley — 25 chapters
+- ✓ short-fiction-manly-wade-wellman — 24 chapters
+- ✓ short-fiction-philip-k-dick — 17 chapters
+- ✗ short-fiction-poul-anderson (poul-anderson_short-fiction) — TypeError: fetch failed
+- ✓ short-fiction-r-a-lafferty — 14 chapters
+- ✓ short-fiction-o-henry — 418 chapters
+- ✓ short-fiction-robert-sheckley — 24 chapters
+- ✓ short-fiction-ray-bradbury — 21 chapters
+- ✓ short-fiction-ring-lardner — 79 chapters
+- ✓ short-fiction-selma-lagerlof — 51 chapters
+- ✓ short-fiction-tanizaki-junichiro — 10 chapters
+- ✓ short-fiction-voltairine-de-cleyre — 18 chapters
+- ✓ short-fiction-saki — 147 chapters
+- ✓ short-fiction-vladimir-korolenko — 25 chapters
+- ✓ short-fiction-walter-m-miller-jr — 11 chapters
+- ✓ short-plays — 21 chapters
+- ✓ short-plays-george-bernard-shaw — 21 chapters
+- ✓ short-science-fiction-isaac-asimov — 9 chapters
+- ✓ short-plays-j-m-synge — 7 chapters
+- ✗ siddhartha (hermann-hesse_siddhartha_various-translators) — TypeError: fetch failed
+- ✓ short-fiction-thomas-hardy — 53 chapters
+- ✓ sir-gawain-and-the-green-knight — 14 chapters
+- ✓ silas-marner — 30 chapters
+- ✓ sinister-street — 68 chapters
+- ✓ shorts-from-scenes-from-private-life — 27 chapters
+- ✓ sir-percy-hits-back — 43 chapters
+- ✓ sister-carrie — 51 chapters
+- ✓ so-big — 25 chapters
+- ✓ six-characters-in-search-of-an-author — 9 chapters
+- ✓ some-do-not — 19 chapters
+- ✓ soldiers-pay — 15 chapters
+- ✓ some-thoughts-concerning-education — 8 chapters
+- ✓ something-new-wodehouse — 16 chapters
+- ✓ songs-of-a-sourdough — 8 chapters
+- ✓ songs-of-the-cattle-trail-and-cow-camp — 12 chapters
+- ✓ sonnets-from-the-portuguese — 5 chapters
+- ✓ space-viking — 31 chapters
+- ✓ south — 29 chapters
+- ✓ sons-and-lovers — 23 chapters
+- ✓ spoon-river-anthology — 12 chapters
+- ✓ stand-by-for-mars — 26 chapters
+- ✓ star-born — 24 chapters
+- ✓ star-hunter — 17 chapters
+- ✓ steppenwolf — 6 chapters
+- ✓ sticks-and-stones — 17 chapters
+- ✓ stover-at-yale — 31 chapters
+- ✓ storm-over-warlock — 22 chapters
+- ✓ strong-poison — 28 chapters
+- ✓ struggles-and-triumphs — 58 chapters
+- ✓ sunshine-sketches-of-a-little-town — 18 chapters
+- ✓ summer — 22 chapters
+- SKIP symposium (no slug)
+- ✓ short-fiction-beatrix-potter — 25 chapters
+- ✓ sybil — 85 chapters
+- ✓ table-talk — 40 chapters
+- ✓ swallows-and-amazons — 39 chapters
+- ✓ sylvie-and-bruno — 59 chapters
+- ✓ tarzan-and-the-ant-men — 26 chapters
+- ✓ tartuffe — 13 chapters
+- ✓ tarzan-and-the-jewels-of-opar — 28 chapters
+- ✓ tarzan-lord-of-the-jungle — 28 chapters
+- ✓ tarzan-and-the-golden-lion — 25 chapters
+- ✓ tarzan-of-the-apes — 34 chapters
+- ✓ seven-pillars-of-wisdom — 149 chapters
+- ✓ tarzan-the-untamed — 28 chapters
+- ✓ tarzan-the-terrible — 33 chapters
+- ✓ ten-days-that-shook-the-world — 34 chapters
+- ✓ tess-of-the-durbervilles — 73 chapters
+- ✓ that-affair-next-door — 51 chapters
+- ✓ the-able-mclaughlins — 26 chapters
+- ✓ terror-keep — 28 chapters
+- ✓ the-absolute-at-large — 35 chapters
+- ✓ the-acquisitive-society — 16 chapters
+- ✓ the-adventures-of-captain-hatteras — 66 chapters
+- ✓ the-age-of-innocence — 40 chapters
+- ✓ the-age-of-reason — 37 chapters
+- ✓ the-airlords-of-han — 20 chapters
+- ✓ the-adventurous-simplicissimus — 150 chapters
+- ✓ the-alchemist — 15 chapters
+- ✓ the-amateur-cracksman — 14 chapters
+- ✓ the-adventures-of-pinocchio — 40 chapters
+- ✓ the-ambassadors — 54 chapters
+- ✓ the-american-senator — 84 chapters
+- ✓ the-autobiography-of-an-ex-colored-man — 17 chapters
+- ✓ the-autobiography-of-an-idea — 19 chapters
+- ✓ the-autobiography-of-benjamin-franklin — 27 chapters
+- ✓ the-american-crisis — 23 chapters
+- ✓ the-argonautica — 10 chapters
+- ✓ the-apple-cart — 10 chapters
+- ✓ the-autobiography-of-john-stuart-mill — 12 chapters
+- ✓ the-autobiography-of-mark-rutherford — 16 chapters
+- ✓ the-autobiography-of-mark-twain — 25 chapters
+- ✓ the-beasts-of-tarzan — 27 chapters
+- ✓ the-avenger-wallace — 46 chapters
+- ✓ the-autobiography-of-calvin-coolidge — 14 chapters
+- ✓ the-beautiful-and-damned — 19 chapters
+- ✓ the-beetle — 56 chapters
+- ✓ the-big-bow-mystery — 19 chapters
+- ✓ the-bellamy-trial — 15 chapters
+- ✗ the-benson-murder-case (s-s-van-dine_the-benson-murder-case) — TypeError: fetch failed
+- ✗ the-autobiography-of-ma-ka-tai-me-she-kia-kiak-or-black-hawk (black-hawk_the-autobiography-of-ma-ka-tai-me-she-kia-kiak-or-black-hawk) — TypeError: fetch failed
+- ✓ the-black-arrow — 43 chapters
+- ✓ the-black-mask — 12 chapters
+- ✓ the-black-moth — 35 chapters
+- ✓ the-big-four — 22 chapters
+- ✓ the-big-time — 20 chapters
+- ✓ the-blacker-the-berry — 12 chapters
+- ✓ the-blazing-world — 10 chapters
+- ✓ the-black-opal — 42 chapters
+- ✓ the-art-of-money-getting — 7 chapters
+- ✓ the-black-star-passes — 30 chapters
+- ✓ the-black-tulip — 37 chapters
+- ✓ the-blue-castle — 49 chapters
+- ✓ the-blithedale-romance — 35 chapters
+- ✗ the-blue-lagoon (h-de-vere-stacpoole_the-blue-lagoon) — TypeError: fetch failed
+- ✓ the-bolshevik-myth — 47 chapters
+- ✓ the-book-of-tea — 14 chapters
+- ✓ the-bridge-of-san-luis-rey — 11 chapters
+- ✓ the-brooklyn-murders — 42 chapters
+- ✓ the-case-of-charles-dexter-ward — 12 chapters
+- ✓ the-case-with-nine-solutions — 23 chapters
+- ✓ the-bungalow-mystery — 29 chapters
+- ✓ the-canterbury-tales — 30 chapters
+- ✓ the-breaking-of-the-storm — 85 chapters
+- ✓ the-casebook-of-sherlock-holmes — 18 chapters
+- ✓ the-bridal-wreath — 30 chapters
+- ✓ the-cask — 38 chapters
+- ✓ the-castle-of-otranto — 14 chapters
+- ✓ the-castle — 26 chapters
+- ✓ the-celibates — 14 chapters
+- ✓ the-charwomans-shadow — 34 chapters
+- ✓ the-cherry-orchard — 10 chapters
+- ✓ the-chessmen-of-mars — 30 chapters
+- ✓ the-cheyne-mystery — 25 chapters
+- ✓ the-child-of-the-cavern — 23 chapters
+- ✓ the-chinese-parrot — 26 chapters
+- ✓ the-circular-staircase — 39 chapters
+- ✓ the-cloven-foot — 50 chapters
+- ✓ the-club-of-queer-trades — 10 chapters
+- ✓ the-canary-murder-case — 40 chapters
+- ✓ the-claverings — 52 chapters
+- ✓ the-clue — 28 chapters
+- ✗ the-city-of-god (augustine-of-hippo_the-city-of-god_marcus-dods_george-wilson_j-j-smith) — TypeError: fetch failed
+- ✓ the-clue-of-the-twisted-candle — 27 chapters
+- ✓ the-comedy-of-errors — 11 chapters
+- ✓ the-coming-of-bill — 34 chapters
+- ✓ the-coming-race — 34 chapters
+- ✓ the-clue-of-the-new-pin — 44 chapters
+- ✓ the-communist-manifesto — 12 chapters
+- ✓ the-columbiad — 19 chapters
+- ✓ the-conjure-woman — 17 chapters
+- ✓ the-confessions-of-arsene-lupin — 15 chapters
+- ✓ the-conquest-of-bread — 24 chapters
+- ✓ the-conscience-of-a-conservative — 17 chapters
+- ✓ the-conscious-lovers — 17 chapters
+- ✓ the-consolation-of-philosophy — 54 chapters
+- ✓ the-council-of-justice — 21 chapters
+- ✗ the-count-of-monte-cristo (alexandre-dumas_the-count-of-monte-cristo_chapman-and-hall) — TypeError: fetch failed
+- ✓ the-counterfeiters — 55 chapters
+- ✓ the-coral-island — 41 chapters
+- ✓ the-cosmic-computer — 26 chapters
+- ✓ the-country-wife — 16 chapters
+- ✓ the-created-legend — 40 chapters
+- ✓ the-crimson-circle — 50 chapters
+- ✓ the-courts-of-the-morning — 49 chapters
+- ✓ the-crock-of-gold — 28 chapters
+- ✓ the-crime-at-black-dudley — 35 chapters
+- ✓ the-crowd — 24 chapters
+- ✓ the-crystal-stopper — 18 chapters
+- ✓ the-cruise-of-the-alerte — 26 chapters
+- ✓ the-cruise-of-the-nona — 8 chapters
+- ✓ the-dain-curse — 32 chapters
+- ✓ the-country-of-the-pointed-firs — 25 chapters
+- ✓ the-dead-secret — 39 chapters
+- ✓ the-defiant-agents — 24 chapters
+- ✓ the-dead-letter — 29 chapters
+- ✓ the-decameron — 129 chapters
+- ✓ the-devils-dictionary — 32 chapters
+- ✓ the-devils-pool — 25 chapters
+- ✓ the-damnation-of-theron-ware — 40 chapters
+- ✓ the-doctors-dilemma — 13 chapters
+- ✓ the-documents-in-the-case — 61 chapters
+- ✓ the-duchess-of-malfi — 13 chapters
+- ✓ the-door-with-seven-locks — 39 chapters
+- ✓ the-deluge — 106 chapters
+- ✓ the-duel — 25 chapters
+- ✓ the-eclogues — 14 chapters
+- ✓ the-economic-consequences-of-the-peace — 14 chapters
+- ✓ the-dukes-children — 84 chapters
+- ✓ the-eight-strokes-of-the-clock — 15 chapters
+- ✓ the-eleventh-virgin — 23 chapters
+- ✓ the-elusive-pimpernel — 41 chapters
+- ✓ scrambles-amongst-the-alps — 42 chapters
+- ✓ the-diary — 123 chapters
+- ✓ the-enchanted-april — 26 chapters
+- ✓ the-education-of-henry-adams — 42 chapters
+- ✓ the-enchanted-castle — 18 chapters
+- ✓ the-end-of-the-tether — 18 chapters
+- ✓ the-end-of-the-world-dennis — 22 chapters
+- ✓ the-english-constitution — 15 chapters
+- ✓ the-extraordinary-adventures-of-arsene-lupin-gentleman-burglar — 13 chapters
+- ✓ the-everlasting-man — 26 chapters
+- ✓ the-eumenides — 9 chapters
+- ✓ the-eustace-diamonds — 84 chapters
+- ✓ the-fifth-queen — 27 chapters
+- ✓ the-eye-of-osiris — 24 chapters
+- ✓ the-first-men-in-the-moon — 33 chapters
+- ✓ the-financier — 65 chapters
+- ✓ the-enormous-room — 19 chapters
+- ✓ the-faerie-queene — 16 chapters
+- ✓ the-first-sir-percy — 21 chapters
+- ✓ the-forerunner — 29 chapters
+- ✓ the-food-of-the-gods — 20 chapters
+- ✓ the-footsteps-at-the-lock — 33 chapters
+- ✓ the-forsyte-saga — 144 chapters
+- ✓ the-four-feathers — 42 chapters
+- ✓ the-federalist-papers — 93 chapters
+- ✓ the-four-just-men — 18 chapters
+- ✓ the-fur-country — 56 chapters
+- ✓ the-gambler — 22 chapters
+- ✓ the-genealogy-of-morals — 11 chapters
+- ✓ the-gadfly — 37 chapters
+- ✓ the-georgics — 8 chapters
+- ✓ the-getting-of-wisdom — 32 chapters
+- ✓ the-gold-bat — 28 chapters
+- ✓ the-golden-ass — 70 chapters
+- ✓ the-giant-raft — 47 chapters
+- ✓ the-faraway-bride — 23 chapters
+- ✓ the-gods-of-mars — 29 chapters
+- ✓ the-golden-triangle — 24 chapters
+- ✓ the-golden-bowl — 55 chapters
+- ✓ the-good-soldier — 27 chapters
+- ✓ the-great-impersonation — 33 chapters
+- ✓ the-hairy-ape — 15 chapters
+- ✓ the-good-companions — 29 chapters
+- ✓ the-green-hat — 17 chapters
+- ✓ the-greene-murder-case — 36 chapters
+- SKIP the-histories (no slug)
+- ✓ the-hashish-eater — 37 chapters
+- ✓ the-haunted-bookshop — 22 chapters
+- ✓ the-haunted-hotel — 39 chapters
+- ✓ the-head-of-kays — 28 chapters
+- ✓ the-hidden-staircase — 29 chapters
+- ✓ the-hill-of-dreams — 13 chapters
+- ✓ the-history-of-rasselas-prince-of-abyssinia — 55 chapters
+- ✓ the-history-of-mr-polly — 14 chapters
+- ✓ the-history-of-henry-esmond — 53 chapters
+- ✓ the-hound-of-the-baskervilles — 21 chapters
+- ✓ the-hollow-needle — 16 chapters
+- ✓ the-hoosier-schoolmaster — 42 chapters
+- ✓ the-house-at-pooh-corner — 17 chapters
+- ✓ the-history-of-tom-jones-a-foundling — 233 chapters
+- ✗ the-house-of-the-dead (fyodor-dostoevsky_the-house-of-the-dead_constance-garnett) — TypeError: fetch failed
+- ✓ the-house-of-arden — 18 chapters
+- ✓ the-house-of-mirth — 35 chapters
+- ✓ the-house-by-the-river — 22 chapters
+- ✓ the-homemaker — 30 chapters
+- ✓ the-house-of-the-seven-gables — 27 chapters
+- ✓ the-house-without-a-key — 29 chapters
+- ✓ the-house-on-the-cliff — 29 chapters
+- ✓ the-house-of-the-wolfings — 38 chapters
+- ✓ the-humbugs-of-the-world — 68 chapters
+- ✗ the-history-of-the-decline-and-fall-of-the-roman-empire (edward-gibbon_the-history-of-the-decline-and-fall-of-the-roman-empire) — TypeError: fetch failed
+- ✓ the-idiot — 59 chapters
+- ✓ the-house-without-windows — 11 chapters
+- ✓ the-incredulity-of-father-brown — 15 chapters
+- ✓ the-imitation-of-christ — 126 chapters
+- ✓ the-inferno — 24 chapters
+- ✓ the-inheritors — 26 chapters
+- ✓ the-informer — 22 chapters
+- ✓ the-importance-of-being-earnest — 10 chapters
+- ✓ the-inspector-general — 12 chapters
+- ✓ the-interesting-narrative-of-the-life-of-olaudah-equiano — 21 chapters
+- ✓ the-invisible-man — 33 chapters
+- ✓ the-innocence-of-father-brown — 18 chapters
+- ✓ the-island-of-doctor-moreau — 29 chapters
+- ✓ the-indiscreet-jewels — 58 chapters
+- ✓ the-jealousies-of-a-country-town — 10 chapters
+- ✓ the-innocents-abroad — 71 chapters
+- ✓ the-jew-of-malta — 13 chapters
+- ✓ the-iron-heel — 33 chapters
+- ✓ the-journal-of-a-disappointed-man — 11 chapters
+- ✓ the-jungle-book — 13 chapters
+- ✓ the-jewels-of-aptor — 19 chapters
+- ✓ the-jungle — 38 chapters
+- ✓ the-king-in-yellow — 17 chapters
+- ✓ the-just-men-of-cordova — 22 chapters
+- ✓ the-king-of-elflands-daughter — 41 chapters
+- ✓ the-kalevala — 59 chapters
+- ✗ the-last-chronicle-of-barset (anthony-trollope_the-last-chronicle-of-barset) — TypeError: fetch failed
+- ✓ the-kingdom-of-god-is-within-you — 20 chapters
+- ✓ the-land-of-little-rain — 21 chapters
+- ✓ the-land-that-time-forgot — 30 chapters
+- ✓ the-kural — 153 chapters
+- ✓ the-last-man — 41 chapters
+- ✓ the-ladies-lindores — 56 chapters
+- ✓ the-last-post — 20 chapters
+- ✓ the-law-of-the-four-just-men — 16 chapters
+- ✓ the-last-of-the-mohicans — 40 chapters
+- ✓ the-layton-court-mystery — 34 chapters
+- ✓ the-league-of-the-scarlet-pimpernel — 15 chapters
+- ✓ the-lazy-detective — 34 chapters
+- ✓ the-leavenworth-case — 49 chapters
+- ✓ the-law-and-the-lady — 59 chapters
+- ✓ the-laughing-cavalier — 52 chapters
+- ✓ the-life-of-buffalo-bill — 40 chapters
+- ✓ the-lerouge-case — 25 chapters
+- ✓ the-lily-of-the-valley — 8 chapters
+- ✓ the-little-demon — 43 chapters
+- ✓ the-life-and-adventures-of-robinson-crusoe — 24 chapters
+- ✓ the-life-of-lazarillo-de-tormes — 18 chapters
+- ✓ the-little-nugget — 26 chapters
+- ✓ the-little-white-bird — 30 chapters
+- ✓ the-life-and-opinions-of-tristram-shandy-gentleman — 338 chapters
+- ✓ the-lone-wolf — 31 chapters
+- ✗ the-lodger (marie-belloc-lowndes_the-lodger) — TypeError: fetch failed
+- ✓ the-lost-world — 23 chapters
+- ✓ the-magic-city — 19 chapters
+- ✓ the-lost-girl — 20 chapters
+- ✓ the-luck-of-barry-lyndon — 26 chapters
+- ✗ the-maid-of-sker (r-d-blackmore_the-maid-of-sker) — TypeError: fetch failed
+- ✗ the-magnificent-ambersons (booth-tarkington_the-magnificent-ambersons) — TypeError: fetch failed
+- ✗ the-magician (w-somerset-maugham_the-magician) — TypeError: fetch failed
+- ✓ the-lives-and-opinions-of-eminent-philosophers — 17 chapters
+- ✓ the-madman — 39 chapters
+- ✓ the-man-in-the-brown-suit — 44 chapters
+- ✓ the-man-in-lower-ten — 37 chapters
+- ✓ the-magic-mountain — 65 chapters
+- ✓ the-lusiads — 21 chapters
+- ✓ the-man-of-destiny — 7 chapters
+- ✓ the-maltese-falcon — 26 chapters
+- ✓ the-man-who-was-thursday — 21 chapters
+- ✓ the-man-in-the-queue — 23 chapters
+- ✓ the-mark-of-zorro — 43 chapters
+- ✓ the-maracot-deep — 11 chapters
+- ✓ the-man-within — 21 chapters
+- ✓ the-marvelous-land-of-oz — 31 chapters
+- ✓ the-master-mind-of-mars — 21 chapters
+- ✓ the-masqueraders — 38 chapters
+- ✓ the-marrow-of-tradition — 43 chapters
+- ✓ the-master-of-ballantrae — 20 chapters
+- ✓ the-melody-of-death — 20 chapters
+- ✓ the-merchant-of-venice — 11 chapters
+- ✓ the-memoirs-of-sherlock-holmes — 16 chapters
+- ✓ the-middle-five — 25 chapters
+- ✓ the-merry-wives-of-windsor — 11 chapters
+- ✓ the-mayor-of-casterbridge — 49 chapters
+- ✓ the-mind-of-mr-j-g-reeder — 13 chapters
+- ✓ the-missing-chums — 27 chapters
+- ✓ the-mirror-of-the-sea — 73 chapters
+- ✓ the-moon-and-sixpence — 63 chapters
+- ✓ the-mill-on-the-floss — 70 chapters
+- ✓ the-monk — 21 chapters
+- ✓ the-moon-maid — 44 chapters
+- ✓ the-mule-bone — 10 chapters
+- ✓ the-murder-of-roger-ackroyd — 34 chapters
+- ✓ the-murder-on-the-links — 34 chapters
+- ✓ the-mucker — 41 chapters
+- ✓ the-mother-buck — 23 chapters
+- ✓ the-moonstone — 62 chapters
+- ✓ the-murder-at-the-vicarage — 39 chapters
+- ✓ the-mystery-at-lilac-inn — 29 chapters
+- ✓ the-mysterious-island — 69 chapters
+- ✓ the-mysteries-of-udolpho — 64 chapters
+- ✓ the-mystery-of-cabin-island — 29 chapters
+- ✓ the-mystery-of-a-hansom-cab — 42 chapters
+- ✓ the-mystery-of-the-blue-train — 42 chapters
+- ✓ the-mystery-of-orcival — 33 chapters
+- ✓ the-napoleon-of-notting-hill — 12 chapters
+- ✓ the-national-being — 27 chapters
+- ✓ the-narrative-of-arthur-gordon-pym-of-nantucket — 34 chapters
+- ✓ the-nebuly-coat — 31 chapters
+- ✓ the-mystery-of-the-yellow-room — 37 chapters
+- ✓ the-mysterious-affair-at-styles — 20 chapters
+- ✓ the-new-state — 49 chapters
+- ✓ the-new-freedom — 19 chapters
+- ✓ the-nibelungenlied — 46 chapters
+- ✓ recollections-of-full-years — 27 chapters
+- ✓ the-old-man-in-the-corner — 42 chapters
+- ✓ the-night-land — 23 chapters
+- ✓ the-nigger-of-the-narcissus — 13 chapters
+- ✓ the-old-english-baron — 8 chapters
+- ✓ the-patient-in-room-18 — 24 chapters
+- ✓ the-origin-of-species — 26 chapters
+- ✓ the-painted-veil — 9 chapters
+- ✓ the-old-wives-tale — 38 chapters
+- ✓ the-old-curiosity-shop — 80 chapters
+- ✓ the-octopus — 28 chapters
+- ✓ the-outlaw-of-torn — 23 chapters
+- ✓ the-peasants — 60 chapters
+- ✓ the-phoenix-and-the-carpet — 18 chapters
+- ✓ the-pit-prop-syndicate — 27 chapters
+- ✓ the-phantom-of-the-opera — 33 chapters
+- ✓ the-pilgrim-kamanita — 53 chapters
+- ✓ the-plastic-age — 33 chapters
+- ✓ the-pit — 19 chapters
+- ✓ the-perpetual-curate — 55 chapters
+- ✓ the-pickwick-papers — 64 chapters
+- ✓ the-playboy-of-the-western-world — 10 chapters
+- ✗ the-pothunters (p-g-wodehouse_the-pothunters) — TypeError: fetch failed
+- ✓ the-ponson-case — 21 chapters
+- ✓ the-poisoned-chocolates-case — 24 chapters
+- ✓ the-pilgrims-progress — 11 chapters
+- ✓ the-powerhouse — 16 chapters
+- ✓ the-power-of-darkness — 12 chapters
+- ✓ the-portrait-of-a-lady — 61 chapters
+- ✓ the-practice-and-theory-of-bolshevism — 25 chapters
+- ✓ the-prince — 35 chapters
+- ✓ the-prince-and-the-pauper — 44 chapters
+- ✓ the-prisoner-of-zenda — 26 chapters
+- ✓ the-princess-and-curdie — 39 chapters
+- ✓ the-prime-minister — 84 chapters
+- ✓ the-princess-and-the-goblin — 36 chapters
+- ✓ the-private-papers-of-henry-ryecroft — 113 chapters
+- ✓ the-problems-of-philosophy — 23 chapters
+- ✓ the-private-memoirs-and-confessions-of-a-justified-sinner — 10 chapters
+- ✓ the-prophet — 34 chapters
+- ✓ the-public-and-its-problems — 13 chapters
+- ✓ the-purple-land — 36 chapters
+- ✓ the-rasp — 26 chapters
+- ✓ the-rector-and-the-doctors-family — 28 chapters
+- ✓ the-railway-children — 20 chapters
+- ✓ the-pursuit-of-god — 19 chapters
+- ✓ the-purple-cloud — 9 chapters
+- ✓ the-red-room — 35 chapters
+- ✓ the-red-badge-of-courage — 28 chapters
+- ✓ the-red-thumb-mark — 23 chapters
+- ✓ the-red-house-mystery — 28 chapters
+- ✓ the-return-de-la-mare — 29 chapters
+- ✓ the-return-of-sherlock-holmes — 18 chapters
+- ✓ the-return-of-tarzan — 30 chapters
+- ✓ the-return-of-the-native — 64 chapters
+- ✓ the-rise-of-silas-lapham — 31 chapters
+- ✓ the-revolt-of-the-angels — 39 chapters
+- ✓ the-riddle-of-the-sands — 38 chapters
+- ✓ the-rights-of-man — 27 chapters
+- ✓ the-road-to-oz — 30 chapters
+- ✓ the-rubaiyat-of-omar-khayyam — 7 chapters
+- ✓ the-room-in-the-dragon-volant — 32 chapters
+- ✓ the-roman-hat-mystery — 38 chapters
+- ✓ the-roots-of-the-mountains — 65 chapters
+- ✓ the-school-for-scandal — 16 chapters
+- ✓ the-rough-riders — 20 chapters
+- ✓ the-sea-mystery — 24 chapters
+- ✓ the-sea-wolf — 43 chapters
+- ✓ the-sea-hawk — 42 chapters
+- ✓ the-seagull — 10 chapters
+- ✓ the-second-mrs-tanqueray — 10 chapters
+- ✓ the-secret-adversary — 35 chapters
+- ✓ the-secret-garden — 31 chapters
+- ✓ the-secret-history — 38 chapters
+- ✓ the-secret-glory — 14 chapters
+- ✓ the-secret-of-chimneys — 37 chapters
+- ✓ the-secret-house-wallace — 26 chapters
+- ✓ the-secret-of-father-brown — 16 chapters
+- ✓ the-rainbow — 22 chapters
+- ✓ the-secret-of-sarek — 25 chapters
+- ✓ the-secret-of-the-caves — 29 chapters
+- ✓ the-scarlet-pimpernel — 37 chapters
+- ✓ the-secret-of-the-old-clock — 29 chapters
+- ✓ the-secret-of-the-old-mill — 29 chapters
+- ✓ the-secret-tomb — 22 chapters
+- ✓ the-shadow-line-conrad — 15 chapters
+- ✓ the-seven-dials-mystery — 38 chapters
+- ✓ the-shadow-line — 15 chapters
+- ✓ the-shore-road-mystery — 27 chapters
+- ✓ the-sign-of-the-four — 16 chapters
+- ✓ the-skylark-of-space — 23 chapters
+- ✓ the-small-bachelor — 22 chapters
+- ✓ the-slaves-of-paris — 68 chapters
+- ✓ the-social-contract — 61 chapters
+- ✓ the-sketchbook-of-geoffrey-crayon-gent — 42 chapters
+- ✓ the-son-of-tarzan — 33 chapters
+- ✓ the-secret-agent — 20 chapters
+- ✓ the-son-of-the-wolf — 13 chapters
+- ✓ the-sorrows-of-young-werther — 10 chapters
+- ✓ the-souls-of-black-folk — 22 chapters
+- ✓ the-special-correspondent — 31 chapters
+- ✓ the-sport-of-the-gods — 22 chapters
+- ✓ the-sound-and-the-fury — 8 chapters
+- ✓ the-spy-in-black — 36 chapters
+- ✓ the-splendid-fairing — 32 chapters
+- ✓ the-small-house-at-allington — 64 chapters
+- ✓ the-song-of-the-lark — 74 chapters
+- ✓ the-square-emerald — 27 chapters
+- ✓ the-stainless-steel-rat — 25 chapters
+- ✓ the-starvel-hollow-tragedy — 26 chapters
+- ✓ the-story-of-doctor-dolittle — 27 chapters
+- ✓ the-story-of-gosta-berling — 48 chapters
+- ✓ the-story-of-the-amulet — 21 chapters
+- ✓ the-story-of-my-experiments-with-truth — 181 chapters
+- ✓ the-story-of-my-life — 43 chapters
+- ✓ the-sun-also-rises — 29 chapters
+- ✓ the-story-of-utopias — 22 chapters
+- ✓ the-subjection-of-women — 9 chapters
+- ✓ the-sundering-flood — 75 chapters
+- ✓ the-taming-of-the-shrew — 12 chapters
+- ✓ the-survivors-of-the-chancellor — 61 chapters
+- ✓ the-tempest — 12 chapters
+- ✓ the-teeth-of-the-tiger — 25 chapters
+- ✓ the-swiss-family-robinson — 49 chapters
+- ✓ the-tenant-of-wildfell-hall — 59 chapters
+- ✓ the-theory-of-the-leisure-class — 20 chapters
+- ✓ the-story-of-the-treasure-seekers — 22 chapters
+- ✓ the-thirty-nine-steps — 16 chapters
+- ✓ the-three-impostors — 13 chapters
+- ✓ the-three-hostages — 28 chapters
+- ✓ the-time-traders — 22 chapters
+- ✓ the-three-taps — 32 chapters
+- ✓ the-tragical-history-of-doctor-faustus — 25 chapters
+- ✓ the-tower-treasure — 28 chapters
+- ✓ the-trail-of-the-serpent — 58 chapters
+- ✓ the-triumph-of-the-scarlet-pimpernel — 38 chapters
+- ✓ the-tunnel-richardson — 39 chapters
+- ✓ the-three-musketeers — 75 chapters
+- ✓ the-titan — 66 chapters
+- ✓ the-two-noble-kinsmen — 13 chapters
+- ✓ the-uncalled — 21 chapters
+- ✓ the-unicorn-from-the-stars — 9 chapters
+- ✓ the-valley-of-fear — 21 chapters
+- ✓ the-truth-about-tristrem-varick — 24 chapters
+- ✓ the-varieties-of-religious-experience — 23 chapters
+- ✓ the-venetians — 37 chapters
+- ✓ the-two-gentlemen-of-verona — 11 chapters
+- ✓ the-viaduct-murder — 35 chapters
+- ✓ the-theory-of-moral-sentiments — 73 chapters
+- ✓ the-vicar-of-bullhampton — 79 chapters
+- ✓ the-vicar-of-wakefield — 38 chapters
+- ✓ the-turmoil — 39 chapters
+- ✓ the-vortex — 10 chapters
+- ✓ the-virginian — 43 chapters
+- ✓ the-unpleasantness-at-the-bellona-club — 28 chapters
+- ✓ the-warden — 25 chapters
+- ✓ the-warlord-of-mars — 20 chapters
+- ✓ the-voyages-of-doctor-dolittle — 73 chapters
+- ✓ the-voyage-out — 31 chapters
+- ✓ the-water-babies — 15 chapters
+- ✓ the-vicomte-de-bragelonne — 280 chapters
+- ✓ the-way-we-live-now — 104 chapters
+- ✓ the-way-of-the-world — 17 chapters
+- ✓ the-way-of-all-flesh — 93 chapters
+- ✓ the-well-of-loneliness — 68 chapters
+- ✓ the-water-of-the-wondrous-isles — 120 chapters
+- ✓ the-wealth-of-nations — 48 chapters
+- ✓ the-voyage-of-the-beagle — 31 chapters
+- ✓ the-white-company — 44 chapters
+- ✓ the-white-feather — 31 chapters
+- ✓ the-wind-in-the-willows — 16 chapters
+- ✓ the-well-at-the-worlds-end — 127 chapters
+- ✓ the-wood-beyond-the-world — 40 chapters
+- ✓ the-winters-tale — 11 chapters
+- ✓ the-wisdom-of-father-brown — 18 chapters
+- ✓ the-wings-of-the-dove — 53 chapters
+- ✓ the-wonderful-wizard-of-oz — 30 chapters
+- ✓ the-wonderful-visit — 59 chapters
+- ✓ the-world-below — 50 chapters
+- ✓ the-world-set-free — 13 chapters
+- ✓ the-wonderful-adventures-of-nils — 50 chapters
+- ✓ the-wrong-letter — 23 chapters
+- ✓ the-woodlanders — 52 chapters
+- ✓ the-young-visiters — 18 chapters
+- ✓ the-woman-in-white — 69 chapters
+- ✓ these-old-shades — 38 chapters
+- ✓ the-worm-ouroboros — 43 chapters
+- ✓ there-is-confusion — 43 chapters
+- ✓ theodore-savage — 27 chapters
+- ✓ the-wyvern-mystery — 69 chapters
+- ✓ this-side-of-paradise — 19 chapters
+- ✓ the-worst-journey-in-the-world — 30 chapters
+- ✓ three-lives — 13 chapters
+- ✓ three-sisters — 11 chapters
+- ✓ three-men-in-a-boat — 26 chapters
+- ✓ thus-spake-zarathustra — 89 chapters
+- ✓ those-barren-leaves — 51 chapters
+- ✓ thoreau-essays — 35 chapters
+- ✓ titus-andronicus — 11 chapters
+- ✓ toilers-of-the-sea — 123 chapters
+- ✓ ticket-no-9672 — 24 chapters
+- ✓ tom-browns-school-days — 28 chapters
+- ✓ thuvia-maid-of-mars — 19 chapters
+- ✓ tono-bungay — 23 chapters
+- ✓ tombstone — 29 chapters
+- ✓ timon-of-athens — 11 chapters
+- ✓ topsy-turvy — 25 chapters
+- ✓ tractatus-logico-philosophicus — 11 chapters
+- ✓ tracks-in-the-snow — 29 chapters
+- ✓ trafalgar — 23 chapters
+- ✓ tragedy-at-ravensthorpe — 19 chapters
+- ✓ trilby — 13 chapters
+- ✓ troilus-and-cressida — 12 chapters
+- ✓ tusculan-disputations — 12 chapters
+- ✓ twelfth-night — 12 chapters
+- ✓ to-the-lighthouse — 49 chapters
+- ✓ twelve-years-a-slave — 32 chapters
+- ✓ trents-last-case — 22 chapters
+- ✓ two-treatises-of-government — 39 chapters
+- ✓ twenty-years-after — 95 chapters
+- ✓ two-years-before-the-mast — 46 chapters
+- ✓ typee — 44 chapters
+- ✓ uncle-silas — 75 chapters
+- ✓ uncle-toms-cabin — 52 chapters
+- ✓ uncle-vanya — 10 chapters
+- ✗ under-western-eyes (joseph-conrad_under-western-eyes) — TypeError: fetch failed
+- ✓ uneasy-money — 31 chapters
+- ✓ unnatural-death — 32 chapters
+- ✓ understood-betsy — 15 chapters
+- ✓ unto-this-last — 12 chapters
+- ✓ unspoken-sermons — 49 chapters
+- SKIP utopia (no slug)
+- ✓ up-from-slavery — 26 chapters
+- ✓ ursule-mirouet — 9 chapters
+- ✓ uller-uprising — 22 chapters
+- ✓ vathek — 8 chapters
+- ✓ verses-on-various-occasions — 10 chapters
+- ✓ veiled-women — 44 chapters
+- ✓ victory — 52 chapters
+- ✓ vanity-fair — 72 chapters
+- ✓ vikram-and-the-vampire — 22 chapters
+- ✓ ulysses — 25 chapters
+- ✓ victory-odes-pindar — 11 chapters
+- ✓ vile-bodies — 22 chapters
+- ✓ voodoo-planet — 12 chapters
+- ✓ washington-square — 39 chapters
+- ✓ villette — 47 chapters
+- ✓ waverley — 86 chapters
+- ✓ we — 47 chapters
+- ✓ wet-magic — 18 chapters
+- ✓ what-is-art — 29 chapters
+- ✓ what-is-property — 15 chapters
+- ✓ whats-wrong-with-the-world — 61 chapters
+- ✓ when-god-laughs — 17 chapters
+- ✓ what-is-to-be-done — 118 chapters
+- ✓ while-the-billy-boils — 58 chapters
+- ✓ when-the-world-shook — 36 chapters
+- ✓ white-fang — 34 chapters
+- ✓ where-angels-fear-to-tread — 14 chapters
+- ✓ through-the-looking-glass — 22 chapters
+- ✓ whose-body — 20 chapters
+- ✓ twenty-years-at-hull-house — 28 chapters
+- ✓ winnie-the-pooh — 17 chapters
+- ✓ winesburg-ohio — 31 chapters
+- ✓ wired-love — 24 chapters
+- ✓ wild-animals-i-have-known — 16 chapters
+- ✓ women-and-economics — 22 chapters
+- ✓ wonderful-adventures-of-mrs-seacole-in-many-lands — 28 chapters
+- ✓ with-fire-and-sword — 70 chapters
+- ✓ wolf-solent — 31 chapters
+- ✓ worlds-end — 51 chapters
+- ✓ women-in-love — 35 chapters
+- ✓ yashka — 33 chapters
+- ✓ years-of-grace — 29 chapters
+- ✓ zuleika-dobson — 32 chapters
+- ✓ you-never-can-tell — 10 chapters
+- ✓ zuni-folktales — 40 chapters
+- ✓ through-the-brazilian-wilderness — 24 chapters
+Run complete: ok=1143 fail=35
+
+## Ingestion run 2026-06-27T15:13:56.891Z — 35 books
+- SKIP apology (no slug)
+- ✓ ashenden — 22 chapters
+- SKIP discourse-on-method (no slug)
+- ✓ anne-of-green-gables — 42 chapters
+- ✓ continental-op-stories — 32 chapters
+- SKIP in-a-glass-darkly (no slug)
+- ✓ gil-blas — 153 chapters
+- ✗ in-search-of-lost-time (marcel-proust_in-search-of-lost-time_c-k-scott-moncrieff) — TypeError: fetch failed
+- ✗ jacobs-room (virginia-woolf_jacobs-room) — TypeError: fetch failed
+- ✓ his-family — 50 chapters
+- ✓ lord-jim — 51 chapters
+- ✓ martin-chuzzlewit — 63 chapters
+- ✓ plum-bun — 39 chapters
+- ✓ pollyanna-grows-up — 39 chapters
+- ✓ short-fiction-poul-anderson — 27 chapters
+- ✓ short-fiction-guy-de-maupassant — 285 chapters
+- SKIP symposium (no slug)
+- ✓ siddhartha — 20 chapters
+- ✓ poetry-henry-van-dyke — 5 chapters
+- ✓ the-benson-murder-case — 36 chapters
+- ✓ the-blue-lagoon — 62 chapters
+- ✓ the-city-of-god — 31 chapters
+- SKIP the-histories (no slug)
+- ✓ the-autobiography-of-ma-ka-tai-me-she-kia-kiak-or-black-hawk — 22 chapters
+- ✓ the-count-of-monte-cristo — 122 chapters
+- ✓ the-house-of-the-dead — 29 chapters
+- ✓ the-last-chronicle-of-barset — 89 chapters
+- ✓ the-lodger — 33 chapters
+- ✓ the-magnificent-ambersons — 39 chapters
+- ✓ the-magician — 20 chapters
+- ✓ the-maid-of-sker — 75 chapters
+- ✓ the-pothunters — 24 chapters
+- SKIP utopia (no slug)
+- ✓ under-western-eyes — 29 chapters
+- ✓ the-history-of-the-decline-and-fall-of-the-roman-empire — 84 chapters
+Run complete: ok=27 fail=8
+
+## Ingestion run 2026-06-27T15:14:44.975Z — 1 books
+- ✓ jacobs-room — 18 chapters
+Run complete: ok=1 fail=0
+
+## Ingestion run 2026-06-27T15:14:49.080Z — 1 books
+- ✓ in-search-of-lost-time — 52 chapters
+Run complete: ok=1 fail=0
+
+## CANON INGESTION COMPLETE — 2026-06-27
+- books_with_chapters: 84 → 1274 / 1280. Total chapter rows: 45,662.
+- Ingested today: 1190 books, ALL gapless (chapter_index 1..n) + every book has data-epub-type + toc_description + chapter_count + estimated_reading_time.
+- Source: Standard Ebooks GitHub catalog (1471 repos), matched by title-slug via scripts/resolve-se-slugs.mjs → scripts/se-slug-overrides.json (1172 matched, 0 ambiguous).
+- NOT ingested (6) — genuinely not standalone Standard Ebooks repos; need non-SE source:
+  apology, symposium  (subsets of Plato `dialogues`, which IS ingested)
+  utopia (More), discourse-on-method (Descartes), in-a-glass-darkly (Le Fanu), the-histories (Tacitus)
+- Pre-existing legacy (33 books, alphabetically 813 … all-quiet-on-the-western-front): no data-epub-type + non-gapless chapter_index. NOT created by this run — left untouched (out of scope).
+- Reader caveat: read/[bookId]/page.tsx renders static /content/<id>/ch-N.json first; its DB-chapters fallback queries a nonexistent `order` column (table uses chapter_index) — DB-only books won't render until that one-line bug is fixed.
