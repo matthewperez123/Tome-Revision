@@ -83,6 +83,7 @@ export async function POST(req: Request) {
         if (session.mode === "subscription" && session.subscription) {
           const subscription = await stripe.subscriptions.retrieve(
             asId(session.subscription),
+            { expand: ["items.data.price.product"] },
           )
           const result = await syncSubscription(stripe, admin, subscription, {
             userId: session.client_reference_id ?? session.metadata?.user_id ?? null,
@@ -140,7 +141,9 @@ export async function POST(req: Request) {
           console.log(`[stripe-webhook] handled ${event.type} (${event.id}): no subscription on invoice, ignored`)
           break
         }
-        const subscription = await stripe.subscriptions.retrieve(subId)
+        const subscription = await stripe.subscriptions.retrieve(subId, {
+          expand: ["items.data.price.product"],
+        })
         const result = await syncSubscription(stripe, admin, subscription, {
           userId: subscription.metadata?.user_id ?? null,
           tier: subscription.metadata?.tier ?? null,
@@ -441,19 +444,55 @@ async function resolveUserId(
   return null
 }
 
-/** tier from: metadata hint → canonical price-id reverse map → price metadata. */
+/**
+ * The five sandbox Price IDs, mapped to their tier. A hardcoded fallback so
+ * tier resolution NEVER depends on the TOME_PRICE_* env vars being present in
+ * the runtime: the webhook must derive a tier even for an event with no
+ * metadata.tier hint whose env reverse-map happens to be unset. In this Stripe
+ * account `metadata.tier` sits on the PRODUCT (the prices' own metadata is
+ * empty), so the price id is the only reliable in-event key.
+ */
+const FALLBACK_PRICE_TIER: Record<string, PaidTier> = {
+  price_1TnoAKQx4yuHRtovThJ5Kf5I: "solo", // $9/mo
+  price_1TnoAPQx4yuHRtovPpOWP2qY: "solo", // $90/yr
+  price_1TnoAWQx4yuHRtovcW4q1OlJ: "family", // $18/mo
+  price_1TnoAdQx4yuHRtovvHJl9ncx: "family", // $150/yr
+  price_1TolyOQx4yuHRtovFdvyzoTa: "school", // $120/seat/yr
+}
+
+/**
+ * Resolve tier, in order:
+ *   1. an explicit metadata.tier hint (set by our checkout),
+ *   2. the line-item price id → hardcoded fallback map (env-independent),
+ *   3. the price id → canonical TOME_PRICE_* reverse map,
+ *   4. the EXPANDED product's metadata.tier (tier lives on the product), then
+ *   5. the price's own metadata.tier (empty in this account; last resort).
+ */
 function deriveTier(subscription: Stripe.Subscription, hint: string | null): PaidTier | null {
   if (hint && isPaidTier(hint)) return hint
-  const priceId = subscription.items.data[0]?.price?.id
+
+  const price = subscription.items.data[0]?.price
+  const priceId = price?.id
   if (priceId) {
+    const fromMap = FALLBACK_PRICE_TIER[priceId]
+    if (fromMap) return fromMap
     // Reverse-map against the CANONICAL TOME_PRICE_* table — the same one
     // checkout resolves its Price IDs from — so a subscription event with no
     // metadata.tier hint still derives the right tier from its line-item price.
     const fromEnv = tierForBillingPriceId(priceId)
     if (fromEnv) return fromEnv
   }
-  const fromMeta = subscription.items.data[0]?.price?.metadata?.tier
-  return fromMeta && isPaidTier(fromMeta) ? fromMeta : null
+
+  // metadata.tier sits on the PRODUCT, not the price — read it when the product
+  // is expanded (see the `expand: ["items.data.price.product"]` retrieves).
+  const product = price?.product
+  if (product && typeof product === "object" && !("deleted" in product && product.deleted)) {
+    const fromProduct = (product as Stripe.Product).metadata?.tier
+    if (fromProduct && isPaidTier(fromProduct)) return fromProduct
+  }
+
+  const fromPrice = price?.metadata?.tier
+  return fromPrice && isPaidTier(fromPrice) ? fromPrice : null
 }
 
 /** current_period_end across Stripe API versions (item-level → top-level). */
