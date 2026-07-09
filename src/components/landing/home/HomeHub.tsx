@@ -21,6 +21,7 @@ import { DEMO_LIBRARY_BOOKS } from "@/lib/demo/data"
 import { DemoEconomyProvider } from "@/components/demo/DemoEconomyProvider"
 import { QuestionCard } from "@/components/trials/QuestionCard"
 import { DEMO_TRIAL_QUESTIONS } from "@/lib/trials/demo-questions"
+import { TRIAL_REGISTRY } from "@/lib/trials/registry"
 import { DEMO_PASSAGE, DEMO_EXCHANGES, streamScriptedReply } from "@/lib/demo/virgil"
 import { AvatarCircles } from "@/components/ui/avatar-circles"
 import { getReaderPlans, getEducatorPlans, READER_TRIAL_COPY } from "@/lib/marketing/plans"
@@ -30,6 +31,7 @@ import {
 } from "@/lib/marketing/catalog-stats"
 import { useCatalogStats } from "@/lib/marketing/catalog-stats-context"
 import { marketingMasterImages } from "@/lib/marketing-images"
+import { cn } from "@/lib/utils"
 
 // ── Section shell ───────────────────────────────────────────────────
 
@@ -173,28 +175,56 @@ function DiscoverCanon() {
 // ── 3 · Answer Quizzes (condensed Trial) ────────────────────────────
 
 function AnswerQuizzes() {
-  // A single representative Trial — the whole typed engine lives on /readers.
-  const question =
-    DEMO_TRIAL_QUESTIONS.find((q) => q.type === "who_said_it") ??
-    DEMO_TRIAL_QUESTIONS[0]
-  // Bump a key on "Continue" so the same question simply replays in place.
-  const [round, setRound] = useState(0)
+  // Mirrors the live /demo Trial system (TrialDemo): the REAL <QuestionCard> +
+  // registry + the six net-new typed questions in a DemoEconomyProvider sandbox,
+  // with a registry-driven type switcher so EVERY question type is represented.
+  const [i, setI] = useState(0)
+  const total = DEMO_TRIAL_QUESTIONS.length
+  const question = DEMO_TRIAL_QUESTIONS[i]
 
   return (
     <SectionShell
       eyebrow="Trials"
       title="Every chapter ends in a Trial."
-      subline="Comprehension, vocabulary, evidence, and recall — answer to earn Wisdom and keep your Flame alive. This one is live; try it."
+      subline="Comprehension, vocabulary, evidence, and recall — six question types, each earning Wisdom and keeping your Flame alive. Every one is live; try them all."
       bg="muted"
       cta={{ label: "See every Trial type", href: "/readers" }}
     >
+      {/* Type switcher — one chip per Trial type, icon + label from the shared
+          registry, so every type is visible and reachable (mirrors /demo). */}
+      <div className="mb-5 flex flex-wrap justify-center gap-1.5" role="tablist" aria-label="Trial question types">
+        {DEMO_TRIAL_QUESTIONS.map((q, idx) => {
+          const entry = TRIAL_REGISTRY[q.type]
+          const Icon = entry.icon
+          const activeTab = idx === i
+          return (
+            <button
+              key={q.id}
+              type="button"
+              role="tab"
+              aria-selected={activeTab}
+              onClick={() => setI(idx)}
+              className={cn(
+                "flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                activeTab
+                  ? "border-primary bg-primary text-primary-foreground"
+                  : "border-border bg-card text-muted-foreground hover:border-primary/40 hover:text-foreground",
+              )}
+            >
+              <Icon className="size-3.5 shrink-0" />
+              {entry.label}
+            </button>
+          )
+        })}
+      </div>
+
       <div className="mx-auto max-w-md overflow-hidden rounded-xl border border-border bg-card">
         <div className="h-[440px]">
           <DemoEconomyProvider>
             <QuestionCard
-              key={`${question.id}-${round}`}
+              key={question.id}
               question={question}
-              onNext={() => setRound((r) => r + 1)}
+              onNext={() => setI((n) => (n + 1) % total)}
               sound={false}
             />
           </DemoEconomyProvider>

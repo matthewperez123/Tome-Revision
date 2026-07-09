@@ -14,6 +14,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "lakeimagesweb.artic.edu" },
       { protocol: "https", hostname: "lh3.googleusercontent.com" },
       { protocol: "https", hostname: "media.nga.gov" },
+      // Standard Ebooks text-free cover paintings in Supabase Storage
+      { protocol: "https", hostname: "vjaezrcuuzmbmnsfrtwt.supabase.co" },
     ],
   },
 

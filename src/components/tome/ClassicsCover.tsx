@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { useMemo, useState } from "react"
 import { getBookCoverArt, type BookCoverArt } from "@/data/cover-art"
+import { getSeCoverPath } from "@/data/generated/se-cover-paths"
 import { getTomeGeneratedCoverPaths } from "@/data/generated/tome-generated-cover-paths"
 import { getMonumentalLiteraryPathsAssets } from "@/data/monumental-literary-paths"
 import { cn } from "@/lib/utils"
@@ -57,6 +58,10 @@ function getCoverImageSources(
   const push = (src?: string) => {
     if (src && !sources.includes(src)) sources.push(src)
   }
+
+  // Standard Ebooks text-free painting takes precedence — it's the pure artwork
+  // with no baked-in type, letting the info card carry title/author.
+  push(getSeCoverPath(bookId))
 
   const monumentalAssets = getMonumentalLiteraryPathsAssets(bookId)
   if (monumentalAssets) {
@@ -209,6 +214,10 @@ export function ClassicsCover({
   const fallbackGradient = getFallbackGradient(fallbackColors.primary, fallbackColors.secondary, fallbackColors.accent)
   const imageSourceIndex = imageSourceState.bookId === bookId ? imageSourceState.index : 0
   const coverImageSrc = imageSourceIndex < imageSources.length ? imageSources[imageSourceIndex] : undefined
+  // When the displayed cover is the text-free Standard Ebooks painting, drop the
+  // title/author band, TOME wordmark, and border frame — the painting stands
+  // alone and the surrounding info card is the sole type carrier.
+  const isTextFreeCover = Boolean(coverImageSrc) && coverImageSrc === getSeCoverPath(bookId)
   const coverImageAlt = monumentalAssets
     ? monumentalAssets.coverAlt
     : coverArt
@@ -257,7 +266,7 @@ export function ClassicsCover({
         />
       )}
 
-      {!hideBand && (
+      {!hideBand && !isTextFreeCover && (
         <>
           {/* ── Gold/white separator line ── */}
           <div
@@ -308,7 +317,7 @@ export function ClassicsCover({
       )}
 
       {/* ── TOME wordmark (top-right) ── */}
-      {showTomeWordmark && (
+      {showTomeWordmark && !isTextFreeCover && (
         <div
           aria-hidden="true"
           className="absolute top-[5%] right-[6%] pointer-events-none"
@@ -324,14 +333,16 @@ export function ClassicsCover({
       )}
 
       {/* ── Gold/white border frame (inset 4px) ── */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-1 pointer-events-none rounded-[1px]"
-        style={{
-          border: `1px solid ${accentGold}55`,
-          zIndex: 6,
-        }}
-      />
+      {!isTextFreeCover && (
+        <div
+          aria-hidden="true"
+          className="absolute inset-1 pointer-events-none rounded-[1px]"
+          style={{
+            border: `1px solid ${accentGold}55`,
+            zIndex: 6,
+          }}
+        />
+      )}
     </div>
   )
 }

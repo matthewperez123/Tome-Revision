@@ -284,8 +284,9 @@ export function BookCard({ book, progress, size = "sm", className, activeSort, r
           </p>
         )}
 
-        {/* ── Progress ── */}
-        {hasProgress && (
+        {/* ── Progress ── (only on real, navigable cards — the display-only
+            marketing cards omit the reading-progress bar) */}
+        {interactive && hasProgress && (
           <div className={cn("mt-1.5", size === "lg" && "mt-2")}>
             {progress ? (
               <div className="flex items-center justify-between text-[9px] text-muted-foreground mb-1">
