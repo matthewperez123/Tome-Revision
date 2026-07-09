@@ -245,20 +245,19 @@ export async function autoFinalizeReadingForBook(
 
 // ── Grade a submission (canonical write path) ─────────────────────────────
 // `grades` is the single source of truth (one row per submission). This handles
-// both the first grade and every re-grade: on re-grade it snapshots the current
-// grade into grade_history first (no DB trigger does this), then overwrites and
-// flags was_overridden. It mirrors the numeric score onto the denormalized
-// assignment_submissions cache (which the grading queue + rosters still read)
-// and notifies the student. Grader-gated by the grades RLS policy, which only
-// admits owner/co_teacher/ta of the submission's classroom.
+// both the first grade and every re-grade: on re-grade it overwrites the row and
+// flags was_overridden. The grade_history snapshot is written automatically by
+// the trg_mirror_grade_to_history DB trigger (AFTER INSERT/UPDATE on grades), so
+// this and every other write path is mirrored — no app code can bypass it. It
+// mirrors the numeric score onto the denormalized assignment_submissions cache
+// (which the grading queue + rosters still read) and notifies the student.
+// Grader-gated by the grades RLS policy, which only admits owner/co_teacher/ta
+// of the submission's classroom.
 
 const GradeInput = z.object({
   submissionId: Uuid,
   score: z.number().min(0).max(10000),
   feedback: z.string().trim().max(5000).optional(),
-  // When a Virgil draft was the starting point, the score Virgil proposed. The
-  // finalize records it against the teacher's confirmed score in grade_history.
-  aiDraftScore: z.number().min(0).max(10000).optional(),
 })
 
 export async function gradeSubmission(
@@ -290,39 +289,21 @@ export async function gradeSubmission(
     const maxScore = sub.assignments?.points_available ?? 100
     const score = Math.max(0, Math.min(parsed.data.score, maxScore))
     const feedback = parsed.data.feedback ?? null
-    // Clamp the recorded draft score into range too; only set for Virgil-assisted
-    // finalizes (null on teacher-only grades → leaves the audit columns null).
-    const aiDraftScore =
-      parsed.data.aiDraftScore != null
-        ? Math.max(0, Math.min(parsed.data.aiDraftScore, maxScore))
-        : null
 
-    // One grade per submission (UNIQUE submission_id). Re-grade => snapshot then
-    // overwrite; first grade => insert.
+    // One grade per submission (UNIQUE submission_id). Re-grade => overwrite +
+    // flag was_overridden; first grade => insert. grade_history is written
+    // automatically by the trg_mirror_grade_to_history trigger on grades (an
+    // AFTER INSERT snapshots the new grade, an AFTER UPDATE snapshots the prior
+    // state), so the app no longer mirrors by hand and no write path can bypass
+    // the audit trail.
     const { data: existing } = await supabase
       .from("grades")
-      .select("id, score, feedback, graded_by")
+      .select("id")
       .eq("submission_id", parsed.data.submissionId)
-      .maybeSingle<{
-        id: string
-        score: number | null
-        feedback: string | null
-        graded_by: string | null
-      }>()
+      .maybeSingle<{ id: string }>()
 
     let gradeId: string
     if (existing) {
-      const { error: histErr } = await supabase.from("grade_history").insert({
-        grade_id: existing.id,
-        previous_score: existing.score,
-        previous_feedback: existing.feedback,
-        previous_graded_by: existing.graded_by,
-        changed_by: user.id,
-        ai_draft_score: aiDraftScore,
-        final_score: aiDraftScore != null ? score : null,
-      })
-      if (histErr) return fail(histErr.message)
-
       const { error: updErr } = await supabase
         .from("grades")
         .update({
@@ -352,20 +333,6 @@ export async function gradeSubmission(
         .single()
       if (error) return fail(error.message)
       gradeId = grade.id
-
-      // First grade has no prior snapshot, but a Virgil-assisted one still
-      // records what the model drafted vs what the teacher confirmed.
-      if (aiDraftScore != null) {
-        await supabase.from("grade_history").insert({
-          grade_id: gradeId,
-          previous_score: null,
-          previous_feedback: null,
-          previous_graded_by: null,
-          changed_by: user.id,
-          ai_draft_score: aiDraftScore,
-          final_score: score,
-        })
-      }
     }
 
     // Mirror onto the denormalized submission cache (read by the grading queue

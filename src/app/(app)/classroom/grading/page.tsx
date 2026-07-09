@@ -194,9 +194,9 @@ export default function GradingQueuePage() {
   }, [items, draftWithVirgil])
 
   // Finalize: the canonical write goes through gradeSubmission (grades table +
-  // grade_history audit + submission cache mirror + student notify). When a
-  // Virgil draft seeded the grade, aiDraftScore is recorded against the teacher's
-  // confirmed score so the audit shows what the model proposed vs what shipped.
+  // submission cache mirror + student notify). The grade_history audit row is
+  // written automatically by the trg_mirror_grade_to_history DB trigger, so no
+  // write path can bypass the mirror.
   const handleFinalize = useCallback(
     async (submissionId: string) => {
       const item = items.find((it) => it.submission_id === submissionId)
@@ -206,7 +206,6 @@ export default function GradingQueuePage() {
         submissionId,
         score: item.score,
         feedback: item.feedback.trim() || undefined,
-        aiDraftScore: item.ai_draft_score ?? undefined,
       })
       setGrading(false)
       if (!res.ok) {

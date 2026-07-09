@@ -862,21 +862,50 @@ export async function submitQuizAttempt(
     })
     if (resultErr) return fail(resultErr.message)
 
-    // Reflect completion on the assignment roster. Fully-objective quizzes are
-    // graded; anything with a free-response awaits teacher review.
-    await admin
+    // Reflect completion on the assignment roster + write the canonical grade.
+    // Teacher quizzes are machine-graded (objective auto + Virgil rubric), so the
+    // score lands in `grades` immediately and the submission is marked graded — a
+    // teacher can still override individual responses afterward.
+    const { data: submission } = await admin
       .from("assignment_submissions")
       .upsert(
         {
           assignment_id: access.assignmentId,
           student_id: user.id,
-          status: needsReview ? "submitted" : "graded",
+          status: "graded",
           score: percentage,
           submitted_at: now,
-          ...(needsReview ? {} : { graded_at: now }),
+          graded_at: now,
         },
         { onConflict: "assignment_id,student_id" },
       )
+      .select("id")
+      .single()
+
+    // Canonical grade row on the assignment's points scale (score out of
+    // points_available, matching every other grade). is_auto_graded — no human
+    // grader yet. One grade per submission (UNIQUE submission_id); a retake
+    // upserts, and the grade_history trigger records the change automatically.
+    if (submission) {
+      const { data: assignment } = await admin
+        .from("assignments")
+        .select("points_available")
+        .eq("id", access.assignmentId)
+        .maybeSingle<{ points_available: number | null }>()
+      const maxScore = assignment?.points_available ?? 100
+      const gradeScore = Math.round((percentage / 100) * maxScore)
+      await admin.from("grades").upsert(
+        {
+          submission_id: submission.id as string,
+          score: gradeScore,
+          max_score: maxScore,
+          is_auto_graded: true,
+          graded_by: null,
+          graded_at: now,
+        },
+        { onConflict: "submission_id" },
+      )
+    }
 
     return ok({ score: totalScore, totalPoints, percentage, passed, needsReview })
   } catch (e) {
@@ -949,11 +978,56 @@ export async function overrideResponseScore(
     const totalPoints = (all ?? []).reduce((s, r) => s + Number(r.max_points ?? 0), 0)
     const percentage = totalPoints > 0 ? Math.round((totalScore / totalPoints) * 100) : 0
 
-    await admin
+    const { data: resultRow } = await admin
       .from("teacher_quiz_results")
       .update({ score: Math.round(totalScore), total_points: Math.round(totalPoints), percentage })
       .eq("quiz_id", response.quiz_id)
       .eq("student_id", response.student_id)
+      .select("assignment_id")
+      .maybeSingle<{ assignment_id: string | null }>()
+
+    // Keep the canonical grade in step with the override. Without this, a
+    // teacher adjusting a single free-response score would leave the gradebook
+    // showing the pre-override percentage. Re-upsert on the assignment's points
+    // scale; the grade_history trigger records the change automatically.
+    if (resultRow?.assignment_id) {
+      const now = new Date().toISOString()
+      const { data: submission } = await admin
+        .from("assignment_submissions")
+        .upsert(
+          {
+            assignment_id: resultRow.assignment_id,
+            student_id: response.student_id,
+            status: "graded",
+            score: percentage,
+            graded_at: now,
+          },
+          { onConflict: "assignment_id,student_id" },
+        )
+        .select("id")
+        .single()
+      if (submission) {
+        const { data: assignment } = await admin
+          .from("assignments")
+          .select("points_available")
+          .eq("id", resultRow.assignment_id)
+          .maybeSingle<{ points_available: number | null }>()
+        const maxScore = assignment?.points_available ?? 100
+        const gradeScore = Math.round((percentage / 100) * maxScore)
+        await admin.from("grades").upsert(
+          {
+            submission_id: submission.id as string,
+            score: gradeScore,
+            max_score: maxScore,
+            is_auto_graded: false,
+            was_overridden: true,
+            graded_by: user.id,
+            graded_at: now,
+          },
+          { onConflict: "submission_id" },
+        )
+      }
+    }
 
     return ok({ percentage })
   } catch (e) {
