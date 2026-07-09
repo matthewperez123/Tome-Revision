@@ -15,7 +15,7 @@ export interface NavLink {
 export const PRIMARY_NAV: NavLink[] = [
   { label: "For Students", href: "/readers" },
   { label: "For Teachers", href: "/educators" },
-  { label: "Library", href: "/library/browse" },
+  { label: "Library", href: "/library" },
   { label: "Virgil", href: "/virgil" },
   { label: "Pricing", href: "/pricing" },
   { label: "FAQ", href: "/faq" },
@@ -24,6 +24,9 @@ export const PRIMARY_NAV: NavLink[] = [
 export const AUTH_LINKS = {
   signIn: { label: "Sign in", href: "/login" },
   signUp: { label: "Sign up", href: "/signup" },
+  // Shown in place of "Sign in" once a real session is resolved, so a
+  // signed-in visitor gets an explicit front door into the app.
+  openTome: { label: "Open Tome", href: "/dashboard" },
 } as const
 
 /**

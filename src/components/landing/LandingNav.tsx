@@ -8,12 +8,25 @@ import { cn } from "@/lib/utils"
 import { ThemeToggle } from "@/components/tome/ThemeToggle"
 import { TomeWordmark } from "@/components/brand/tome-wordmark"
 import { PRIMARY_NAV, AUTH_LINKS, LANDING_PATHS } from "@/lib/marketing-nav"
+import { useAuth } from "@/hooks/use-auth"
 
 export function LandingNav() {
   const pathname = usePathname()
   const isLandingPath = LANDING_PATHS.has(pathname)
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+
+  // Reads the shared auth machine (LandingNav is mounted under <AuthProvider>
+  // by app-shell.tsx). A "resolve-once" latch flips true the first time auth
+  // settles and never falls back, so the auth slot swaps at most once — no
+  // flapping between renders. Only a REAL session shows "Open Tome"; demo mode
+  // (localStorage) keeps the signed-out entrances.
+  const { isAuthenticated, isLoading } = useAuth()
+  const [resolved, setResolved] = useState(false)
+  useEffect(() => {
+    if (!isLoading) setResolved(true)
+  }, [isLoading])
+  const showOpenTome = resolved && isAuthenticated
 
   const handleScroll = useCallback(() => {
     setScrolled(window.scrollY > 60)
@@ -36,11 +49,10 @@ export function LandingNav() {
     solid ? "text-foreground hover:bg-accent" : "text-white hover:bg-white/10"
   )
 
-  // The nav always exposes both auth entrances — a quiet "Sign in" link beside
-  // a primary "Sign up" pill — regardless of any existing session. This keeps
-  // the sign-in page one click away at all times, so testers/users can switch
-  // between accounts without an "Open Tome" pill hiding the way in. The CTA no
-  // longer depends on auth state, so the nav is deterministic by construction.
+  // Auth slot: a signed-OUT visitor gets a quiet "Sign in" link beside the
+  // "Sign up" pill; a signed-IN visitor gets an "Open Tome" pill in place of
+  // "Sign in" (the "Sign up" pill stays so a new person can still create an
+  // account). The resolve-once latch above keeps the swap deterministic.
   const pillClass = cn(
     "text-sm font-semibold px-4 py-1.5 rounded-full transition-colors text-center min-w-[112px]",
     solid ? "bg-foreground text-background hover:opacity-90" : "bg-white text-black hover:bg-white/90"
@@ -79,12 +91,18 @@ export function LandingNav() {
             </Link>
           ))}
 
-          {/* Auth slot — always both entrances: a quiet "Sign in" link beside
-              the primary "Sign up" pill, so the login page is always reachable. */}
-          <div className="hidden sm:flex items-center justify-end w-[72px]">
-            <Link href={AUTH_LINKS.signIn.href} className={cn("whitespace-nowrap", linkClass)}>
-              {AUTH_LINKS.signIn.label}
-            </Link>
+          {/* Auth slot — "Open Tome" pill when signed in, otherwise a quiet
+              "Sign in" link. The "Sign up" pill is always present. */}
+          <div className={cn("hidden sm:flex items-center justify-end", showOpenTome ? "" : "w-[72px]")}>
+            {showOpenTome ? (
+              <Link href={AUTH_LINKS.openTome.href} className={cn("whitespace-nowrap", pillClass)}>
+                {AUTH_LINKS.openTome.label}
+              </Link>
+            ) : (
+              <Link href={AUTH_LINKS.signIn.href} className={cn("whitespace-nowrap", linkClass)}>
+                {AUTH_LINKS.signIn.label}
+              </Link>
+            )}
           </div>
           <Link href={AUTH_LINKS.signUp.href} className={pillClass}>
             {AUTH_LINKS.signUp.label}
@@ -125,12 +143,21 @@ export function LandingNav() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href={AUTH_LINKS.signIn.href}
-              className="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
-            >
-              {AUTH_LINKS.signIn.label}
-            </Link>
+            {showOpenTome ? (
+              <Link
+                href={AUTH_LINKS.openTome.href}
+                className="rounded-lg px-3 py-2.5 text-sm font-semibold text-foreground hover:bg-accent transition-colors"
+              >
+                {AUTH_LINKS.openTome.label}
+              </Link>
+            ) : (
+              <Link
+                href={AUTH_LINKS.signIn.href}
+                className="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-accent transition-colors"
+              >
+                {AUTH_LINKS.signIn.label}
+              </Link>
+            )}
             <Link
               href={AUTH_LINKS.signUp.href}
               className="rounded-lg px-3 py-2.5 text-sm font-semibold text-foreground hover:bg-accent transition-colors"
