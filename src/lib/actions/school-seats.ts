@@ -315,7 +315,7 @@ export async function inviteTeacherSeat(
     .is("invite_token", null)
   if (error) return fail(error.message)
 
-  await sendSeatInvite(email, { token, adminId: guard.userId })
+  await sendSeatInvite(admin, email, { token, adminId: guard.userId })
 
   revalidatePath("/classroom/school")
   return ok({ email })

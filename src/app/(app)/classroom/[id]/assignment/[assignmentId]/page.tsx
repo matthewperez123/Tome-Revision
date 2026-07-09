@@ -264,11 +264,7 @@ export default function AssignmentDetailPage({
                 : "Read the assigned passage"}
             </p>
             <Link
-              href={
-                assignment.chapter_range_start != null
-                  ? `/read/${assignment.book_id}?ch=${assignment.chapter_range_start}&classroom=${classroomId}&assignment=${assignment.id}`
-                  : `/read/${assignment.book_id}?classroom=${classroomId}&assignment=${assignment.id}`
-              }
+              href={`/classroom/${classroomId}/assignment/${assignment.id}/read`}
               onClick={() => {
                 if (role === "student") void startAssignment(assignment.id)
               }}

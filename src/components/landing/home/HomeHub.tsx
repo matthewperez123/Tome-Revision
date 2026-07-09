@@ -16,6 +16,7 @@ import Link from "next/link"
 import { ArrowRight, Sparkles, Users, GraduationCap, Check, HelpCircle } from "lucide-react"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { BookCard } from "@/components/tome/book-card"
+import { Marquee } from "@/components/ui/marquee"
 import { DEMO_LIBRARY_BOOKS } from "@/lib/demo/data"
 import { DemoEconomyProvider } from "@/components/demo/DemoEconomyProvider"
 import { QuestionCard } from "@/components/trials/QuestionCard"
@@ -124,6 +125,10 @@ function MasterHomeImage({
 
 function DiscoverCanon() {
   const stats = useCatalogStats()
+  // Split the demo slice across two rows that scroll opposite directions.
+  const mid = Math.ceil(DEMO_LIBRARY_BOOKS.length / 2)
+  const topRow = DEMO_LIBRARY_BOOKS.slice(0, mid)
+  const bottomRow = DEMO_LIBRARY_BOOKS.slice(mid)
   return (
     <SectionShell
       eyebrow="The Library"
@@ -136,16 +141,30 @@ function DiscoverCanon() {
       bg="background"
       cta={{ label: "Browse the library", href: "/library" }}
     >
+      {/* Twin marquee: two rows of covers drifting in opposite directions,
+          pausing on hover. A fresh spin on the original moving-book carousel. */}
       <div
-        className="-mx-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-3 md:-mx-12 md:px-12 [scrollbar-width:thin]"
+        className="relative -mx-6 overflow-hidden md:-mx-12"
         role="list"
         aria-label="A sample of the library"
       >
-        {DEMO_LIBRARY_BOOKS.map((book) => (
-          <div key={book.id} role="listitem" className="w-[150px] shrink-0 snap-start">
-            <BookCard book={book} size="sm" interactive={false} />
-          </div>
-        ))}
+        <Marquee pauseOnHover className="[--duration:60s] [--gap:1rem] py-0">
+          {topRow.map((book) => (
+            <div key={book.id} role="listitem" className="w-[150px] shrink-0">
+              <BookCard book={book} size="sm" interactive={false} />
+            </div>
+          ))}
+        </Marquee>
+        <Marquee reverse pauseOnHover className="[--duration:65s] [--gap:1rem] py-0">
+          {bottomRow.map((book) => (
+            <div key={book.id} role="listitem" className="w-[150px] shrink-0">
+              <BookCard book={book} size="sm" interactive={false} />
+            </div>
+          ))}
+        </Marquee>
+        {/* Fade the edges into the section background. */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-background to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-background to-transparent" />
       </div>
     </SectionShell>
   )

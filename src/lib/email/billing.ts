@@ -6,6 +6,7 @@ import { sendEmail } from "./send"
 import { SubscriptionConfirmedEmail } from "./templates/subscription-confirmed"
 import { TrialEndingEmail } from "./templates/trial-ending"
 import { PaymentFailedEmail } from "./templates/payment-failed"
+import { SeatInviteEmail } from "./templates/seat-invite"
 
 /**
  * Best-effort dispatchers for billing transactional emails, called from the
@@ -143,20 +144,39 @@ export async function sendTrialEndingEmail(
 }
 
 /**
- * School seat invitation — called from `inviteTeacherSeat`. P4 will send a real
- * email; for now this logs the claim link so the invite flow is testable
- * end-to-end without an email provider. Never throws.
+ * School seat invitation — called from `inviteTeacherSeat`. Emails the invitee
+ * the claim link for their teacher seat. The inviter's display name is resolved
+ * from their profile when not supplied. Best-effort; never throws.
  */
 export async function sendSeatInvite(
+  admin: Admin,
   email: string,
   opts: { token: string; adminId: string; inviterName?: string | null },
 ): Promise<void> {
   try {
-    const url = `${APP_URL}/join/seat/${opts.token}`
-    console.log(`[billing-email] seat invite (stub) → ${email}: ${url} (from ${opts.adminId})`)
+    const claimUrl = `${APP_URL}/join/seat/${opts.token}`
+
+    let inviterName = opts.inviterName?.trim() || ""
+    if (!inviterName) {
+      const { data: profile } = await admin
+        .from("profiles")
+        .select("display_name, username")
+        .eq("id", opts.adminId)
+        .maybeSingle()
+      inviterName =
+        (profile?.display_name as string | null)?.trim() ||
+        (profile?.username as string | null)?.trim() ||
+        "A Tome School administrator"
+    }
+
+    await sendEmail({
+      to: email,
+      subject: `${inviterName} invited you to a Tome teacher seat`,
+      react: SeatInviteEmail({ inviterName, claimUrl, recipient: email }),
+    })
   } catch (err) {
     console.error(
-      "[billing-email] seat-invite stub failed:",
+      "[billing-email] seat-invite dispatch failed:",
       err instanceof Error ? err.message : err,
     )
   }

@@ -1,12 +1,11 @@
 "use client"
 
-import { use, useState, useCallback } from "react"
+import { use, useEffect, useState, useCallback } from "react"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
-import { motion, AnimatePresence } from "framer-motion"
 import {
   BookOpen, Brain, MessageCircle, PenTool, Highlighter,
-  ChevronLeft, ChevronRight, Calendar, ArrowLeft,
+  ChevronLeft, ChevronRight, ArrowLeft, PencilLine, Link2,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -14,7 +13,15 @@ import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
 import { getBooks } from "@/lib/content"
 import { getUnitLabel } from "@/lib/structural-units"
-import type { StructuralUnitType } from "@/data/books"
+import {
+  QuizQuestionEditor,
+  type QuizQuestion,
+} from "@/components/classroom/quiz-question-editor"
+import {
+  createTeacherQuiz,
+  saveTeacherQuiz,
+  publishTeacherQuiz,
+} from "@/lib/actions/teacher-quizzes"
 
 type AssignmentType = "reading" | "quiz" | "discussion" | "essay" | "annotation"
 
@@ -46,6 +53,13 @@ export default function CreateAssignmentPage({ params }: { params: Promise<{ id:
   const [creating, setCreating] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
+  // Quiz authoring (type === "quiz"): write questions inline, or attach one of
+  // the teacher's already-published quizzes.
+  const [quizMode, setQuizMode] = useState<"inline" | "existing">("inline")
+  const [quizQuestions, setQuizQuestions] = useState<QuizQuestion[]>([])
+  const [existingQuizzes, setExistingQuizzes] = useState<{ id: string; title: string }[]>([])
+  const [selectedQuizId, setSelectedQuizId] = useState("")
+
   const books = getBooks()
   const filteredBooks = bookSearch
     ? books.filter((b) =>
@@ -56,6 +70,25 @@ export default function CreateAssignmentPage({ params }: { params: Promise<{ id:
 
   const selectedBook = books.find((b) => b.id === bookId)
 
+  // Load the teacher's published quizzes once, for the "attach existing" picker.
+  useEffect(() => {
+    if (!user || type !== "quiz") return
+    let active = true
+    const supabase = createClient()
+    supabase
+      .from("teacher_quizzes")
+      .select("id, title")
+      .eq("teacher_id", user.id)
+      .eq("status", "published")
+      .order("created_at", { ascending: false })
+      .then(({ data }) => {
+        if (active && data) setExistingQuizzes(data)
+      })
+    return () => {
+      active = false
+    }
+  }, [user, type])
+
   const handleCreate = useCallback(async () => {
     if (!user || !type || !dueDate) return
     setCreating(true)
@@ -65,6 +98,74 @@ export default function CreateAssignmentPage({ params }: { params: Promise<{ id:
 
     const assignmentTitle = title.trim() ||
       (selectedBook ? `${selectedBook.title} — ${type}` : `${type} assignment`)
+
+    // For a quiz assignment, resolve the backing teacher_quizzes row: either
+    // author it inline (create → save questions → publish) or attach an existing
+    // published quiz. quiz_id is what lets the student launch and be graded.
+    let quizId: string | null = null
+    if (type === "quiz") {
+      if (quizMode === "existing") {
+        if (!selectedQuizId) {
+          setError("Pick a quiz to attach, or switch to writing questions.")
+          setCreating(false)
+          return
+        }
+        quizId = selectedQuizId
+      } else {
+        const usable = quizQuestions.filter((q) => q.question_text.trim().length > 0)
+        if (usable.length === 0) {
+          setError("Add at least one question, or attach an existing quiz.")
+          setCreating(false)
+          return
+        }
+        const created = await createTeacherQuiz({
+          title: assignmentTitle,
+          bookId: bookId || undefined,
+          chapterRangeStart: chapterStart,
+          chapterRangeEnd: chapterEnd,
+        })
+        if (!created.ok) {
+          setError(created.error)
+          setCreating(false)
+          return
+        }
+        const saved = await saveTeacherQuiz({
+          quizId: created.data.id,
+          title: assignmentTitle,
+          bookId: bookId || null,
+          settings: {
+            timeLimit: null,
+            passingScore: 60,
+            allowRetakes: true,
+            randomizeOrder: true,
+            showAnswers: true,
+          },
+          questions: usable.map((q) => ({
+            question_type: q.question_type,
+            question_text: q.question_text,
+            options: q.options,
+            correct_answer: q.correct_answer,
+            explanation: q.explanation || null,
+            points: q.points,
+            rubric: q.rubric,
+            reference_answer: q.reference_answer ?? null,
+            max_points: q.max_points ?? null,
+          })),
+        })
+        if (!saved.ok) {
+          setError(saved.error)
+          setCreating(false)
+          return
+        }
+        const published = await publishTeacherQuiz(created.data.id)
+        if (!published.ok) {
+          setError(published.error)
+          setCreating(false)
+          return
+        }
+        quizId = created.data.id
+      }
+    }
 
     const { error: insertError } = await supabase
       .from("assignments")
@@ -79,6 +180,7 @@ export default function CreateAssignmentPage({ params }: { params: Promise<{ id:
         chapter_range_end: chapterEnd,
         discussion_prompt: discussionPrompt.trim() || null,
         essay_prompt: essayPrompt.trim() || null,
+        quiz_id: quizId,
         due_date: new Date(dueDate).toISOString(),
         points_available: points,
         status: "active",
@@ -91,7 +193,7 @@ export default function CreateAssignmentPage({ params }: { params: Promise<{ id:
     }
 
     router.push(`/classroom/${classroomId}/manage`)
-  }, [user, type, title, description, bookId, chapterStart, chapterEnd, discussionPrompt, essayPrompt, dueDate, points, classroomId, router, selectedBook])
+  }, [user, type, title, description, bookId, chapterStart, chapterEnd, discussionPrompt, essayPrompt, dueDate, points, classroomId, router, selectedBook, quizMode, selectedQuizId, quizQuestions])
 
   return (
     <div className="mx-auto max-w-lg px-4 py-8">
@@ -192,6 +294,61 @@ export default function CreateAssignmentPage({ params }: { params: Promise<{ id:
                   </div>
                 )}
               </>
+            )}
+
+            {type === "quiz" && (
+              <div>
+                <div className="mb-3 flex gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setQuizMode("inline")}
+                    className={`flex flex-1 items-center justify-center gap-1.5 rounded-lg border px-3 py-2 text-sm font-medium transition-colors ${
+                      quizMode === "inline"
+                        ? "border-indigo-500 bg-indigo-50 text-indigo-700 dark:bg-indigo-950/30 dark:text-indigo-300"
+                        : "border-border text-muted-foreground hover:bg-muted/50"
+                    }`}
+                  >
+                    <PencilLine className="size-4" /> Write questions
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setQuizMode("existing")}
+                    className={`flex flex-1 items-center justify-center gap-1.5 rounded-lg border px-3 py-2 text-sm font-medium transition-colors ${
+                      quizMode === "existing"
+                        ? "border-indigo-500 bg-indigo-50 text-indigo-700 dark:bg-indigo-950/30 dark:text-indigo-300"
+                        : "border-border text-muted-foreground hover:bg-muted/50"
+                    }`}
+                  >
+                    <Link2 className="size-4" /> Attach existing
+                  </button>
+                </div>
+
+                {quizMode === "inline" ? (
+                  <QuizQuestionEditor questions={quizQuestions} onChange={setQuizQuestions} />
+                ) : existingQuizzes.length === 0 ? (
+                  <p className="rounded-lg border border-dashed bg-muted/30 p-4 text-center text-sm text-muted-foreground">
+                    You have no published quizzes yet. Switch to “Write questions” to author one here.
+                  </p>
+                ) : (
+                  <div className="space-y-1">
+                    {existingQuizzes.map((qz) => (
+                      <button
+                        key={qz.id}
+                        type="button"
+                        onClick={() => setSelectedQuizId(qz.id)}
+                        className={`flex w-full items-center gap-2 rounded-lg border px-3 py-2.5 text-left text-sm transition-colors ${
+                          selectedQuizId === qz.id
+                            ? "border-indigo-500 bg-indigo-50 dark:bg-indigo-950/30"
+                            : "border-border hover:bg-muted/50"
+                        }`}
+                      >
+                        <Brain className="size-4 text-muted-foreground" />
+                        <span className="flex-1 truncate">{qz.title}</span>
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
             )}
 
             {type === "discussion" && (

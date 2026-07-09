@@ -804,3 +804,11 @@
     animation: none;
   }
 }
+
+/* Pause marquee carousels (e.g. Discover-the-Canon) under reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee,
+  .animate-marquee-vertical {
+    animation: none;
+  }
+}

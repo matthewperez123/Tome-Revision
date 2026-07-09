@@ -1,11 +1,14 @@
 /**
- * Demo seed — one validated question per net-new Trial type, drawn from the
- * existing canon (Homer, Shakespeare, Dante, Milton, Virgil). Each raw object
- * is run through `parseTrialQuestion` at module load, so the per-type zod
- * schemas guard the shape exactly as a DB / content-JSON read would. The
- * dev/trials harness mounts these through the real <QuestionCard> + registry.
+ * Demo seed — one validated question per Trial type, EACH drawn from a
+ * DIFFERENT book so the marketing demo showcases both the full type set and the
+ * breadth of the canon: The Iliad, Pride and Prejudice, Frankenstein, The
+ * Odyssey, Hamlet, and Julius Caesar. Each raw object is run through
+ * `parseTrialQuestion` at module load, so the per-type zod schemas guard the
+ * shape exactly as a DB / content-JSON read would. The dev/trials harness and
+ * the /readers Trial demo mount these through the real <QuestionCard> +
+ * registry.
  *
- * This is verification seed only — production banks live per-section in the
+ * This is verification/demo seed only — production banks live per-section in the
  * trials table (type + content columns) and the per-book *-trials siblings.
  */
 import {
@@ -39,27 +42,29 @@ const RAW = [
   },
 
   // find_the_evidence — tap the line(s) that support the claim.
+  // Pride and Prejudice — Mrs. Bennet's matchmaking motive.
   {
     id: "demo-find_the_evidence",
     type: "find_the_evidence",
-    prompt: "Which line shows why Apollo sends the plague?",
+    prompt: "Which line shows what Mrs. Bennet really wants?",
     difficulty: "scholar",
     points: 10,
     explanation:
-      "Agamemnon's refusal to ransom Chryses' daughter dishonours Apollo's priest, so the god answers Chryses' prayer with a plague on the camp.",
+      "From the opening of Pride and Prejudice: the moment Bingley takes Netherfield, Mrs. Bennet's single object is to see one of her daughters married to him.",
     content: {
-      claim: "Apollo sends the plague to avenge his dishonoured priest.",
+      claim: "Mrs. Bennet regards the new neighbour chiefly as a husband for one of her daughters.",
       segments: [
-        "Agamemnon seized Chryseis as his prize of war.",
-        "Her father Chryses, priest of Apollo, came to ransom her.",
-        "Agamemnon drove the old priest away with threats.",
-        "So Chryses prayed, and Apollo sent a plague upon the Greeks.",
+        "A wealthy young gentleman, Mr. Bingley, had taken nearby Netherfield Park.",
+        "Mrs. Bennet at once pressed her husband to call on him.",
+        "\"I am thinking of his marrying one of our daughters,\" she confessed.",
+        "Mr. Bennet only teased her for her scheming.",
       ],
-      correctRange: [3, 3],
+      correctRange: [2, 2],
     },
   },
 
   // word_in_context — gloss the target word as used in the sentence.
+  // Frankenstein — Victor's flight from the creature.
   {
     id: "demo-word_in_context",
     type: "word_in_context",
@@ -67,34 +72,34 @@ const RAW = [
     difficulty: "apprentice",
     points: 10,
     explanation:
-      "\"Portentous\" describes something that seems to foretell a momentous (often ominous) event — fitting for the Ghost on the battlements.",
+      "In Frankenstein, Victor recoils from his creation and repeatedly calls it a \"wretch\" — a miserable, contemptible creature.",
     content: {
-      sentence: "The Ghost was a portentous figure upon the battlements.",
-      targetWord: "portentous",
+      sentence: "Victor fled from the wretch to whom he had given life.",
+      targetWord: "wretch",
       choices: [
-        { text: "ominously foretelling something to come", correct: true },
-        { text: "enormous in physical size", correct: false },
-        { text: "faintly transparent", correct: false },
-        { text: "warmly welcoming", correct: false },
+        { text: "a miserable, contemptible creature", correct: true },
+        { text: "a trusted companion", correct: false },
+        { text: "a skilled craftsman", correct: false },
+        { text: "a distant relative", correct: false },
       ],
     },
   },
 
-  // match_pairs — character to the work they belong to.
+  // match_pairs — figures within a single work (The Odyssey) to their role.
   {
     id: "demo-match_pairs",
     type: "match_pairs",
-    prompt: "Match each figure to the work they belong to.",
+    prompt: "Match each figure of the Odyssey to their role.",
     difficulty: "apprentice",
     points: 10,
     explanation:
-      "Each is the defining figure of its epic — protagonist, or in Satan's case its most consequential agent.",
+      "All four belong to Homer's Odyssey: Odysseus strives home to Ithaca, where Penelope holds off her suitors and Telemachus sets out to find his father — while the Cyclops Polyphemus is the monster Odysseus must blind to escape.",
     content: {
       pairs: [
-        { left: "Achilles", right: "The Iliad" },
-        { left: "Beatrice", right: "The Divine Comedy" },
-        { left: "Satan", right: "Paradise Lost" },
-        { left: "Aeneas", right: "The Aeneid" },
+        { left: "Odysseus", right: "The king striving to reach home" },
+        { left: "Penelope", right: "His wife, besieged by suitors" },
+        { left: "Telemachus", right: "His son, who seeks him" },
+        { left: "Polyphemus", right: "The Cyclops he blinds to escape" },
       ],
     },
   },
@@ -120,6 +125,7 @@ const RAW = [
   },
 
   // recitation — progressive cloze; type the passage from a partial view.
+  // Julius Caesar — Antony's oration (III.ii).
   {
     id: "demo-recitation",
     type: "recitation",
@@ -127,19 +133,16 @@ const RAW = [
     difficulty: "scholar",
     points: 15,
     explanation:
-      "Hamlet III.i — the most-quoted opening in English drama.",
+      "Mark Antony's funeral oration in Julius Caesar III.ii — \"Friends, Romans, countrymen, lend me your ears.\"",
     content: {
       tokens: [
-        "To",
-        "be,",
-        "or",
-        "not",
-        "to",
-        "be,",
-        "that",
-        "is",
-        "the",
-        "question.",
+        "Friends,",
+        "Romans,",
+        "countrymen,",
+        "lend",
+        "me",
+        "your",
+        "ears.",
       ],
       rounds: [0.25, 0.5, 0.75, 1],
     },
