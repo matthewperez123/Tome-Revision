@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Link from "next/link"
 import { motion } from "framer-motion"
 import { Users, BookOpen, ClipboardCheck, Brain } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
@@ -26,6 +27,22 @@ const STAT_CONFIG = [
   { key: "needsGrading" as const, label: "Needs Grading", icon: ClipboardCheck, color: "text-green-500", bg: "bg-green-50 dark:bg-green-950/30" },
   { key: "avgGrade" as const, label: "Avg Grade", icon: Brain, color: "text-blue-500", bg: "bg-blue-50 dark:bg-blue-950/30" },
 ]
+
+// Where each stat card navigates. "Needs Grading" always opens the teacher-wide
+// grading queue (submitted student work); the others deep-link into the selected
+// classroom when one is active, else the classrooms index.
+function hrefFor(key: (typeof STAT_CONFIG)[number]["key"], classroomId?: string): string {
+  switch (key) {
+    case "needsGrading":
+      return "/classroom/grading"
+    case "totalStudents":
+      return classroomId ? `/classroom/${classroomId}/manage` : "/classroom"
+    case "activeAssignments":
+      return classroomId ? `/classroom/${classroomId}` : "/classroom"
+    case "avgGrade":
+      return classroomId ? `/classroom/${classroomId}/gradebook` : "/classroom"
+  }
+}
 
 export function TeacherStatsCards({ classroomId }: { classroomId?: string }) {
   const { user, isDemoMode, isLoading: authLoading } = useAuth()
@@ -148,15 +165,19 @@ export function TeacherStatsCards({ classroomId }: { classroomId?: string }) {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.05, duration: 0.3 }}
-            className="rounded-xl border bg-card p-4"
           >
-            <div className={`flex size-9 items-center justify-center rounded-lg ${config.bg}`}>
-              <Icon className={`size-4.5 ${config.color}`} />
-            </div>
-            <p className="mt-3 font-serif text-2xl font-bold tracking-tight">
-              {displayValue}
-            </p>
-            <p className="mt-0.5 text-xs text-muted-foreground">{config.label}</p>
+            <Link
+              href={hrefFor(config.key, classroomId)}
+              className="block rounded-xl border bg-card p-4 transition-colors hover:border-foreground/30 hover:bg-muted/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            >
+              <div className={`flex size-9 items-center justify-center rounded-lg ${config.bg}`}>
+                <Icon className={`size-4.5 ${config.color}`} />
+              </div>
+              <p className="mt-3 font-serif text-2xl font-bold tracking-tight">
+                {displayValue}
+              </p>
+              <p className="mt-0.5 text-xs text-muted-foreground">{config.label}</p>
+            </Link>
           </motion.div>
         )
       })}
