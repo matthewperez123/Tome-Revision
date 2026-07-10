@@ -90,7 +90,18 @@ async function establishSessionForUser(userId: string): Promise<boolean> {
   const tokenHash = link?.properties?.hashed_token
   if (linkErr || !tokenHash) return false
 
+  // Use the SSR client so verifyOtp's Set-Cookie lands on THIS server action's
+  // response (the admin client never touches browser cookies). This same client
+  // instance is reused for signOut + verifyOtp so both mutate the one cookie jar
+  // that Next flushes back to the browser.
   const supabase = await createClient()
+
+  // Kick out any session already in this browser (e.g. a teacher who was signed
+  // in on the same device) BEFORE minting the student's. Otherwise the stale
+  // cookies survive and the next token refresh restores the old user, silently
+  // clobbering the freshly established student session.
+  await supabase.auth.signOut()
+
   // Magic-link token_hash verification uses type "email" on this project —
   // confirmed live against vjaezrcuuzmbmnsfrtwt (a generateLink "magiclink"
   // token verifies with verifyOtp type "email" and returns a session).

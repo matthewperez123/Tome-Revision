@@ -21,6 +21,14 @@ export interface ActivityBeacon {
 const HEARTBEAT_MS = 45_000
 const THROTTLE_MS = 5_000
 
+// The classroom id arrives from a client-controlled `?classroom=` URL param, so
+// it can be a hand-typed or display-truncated value (e.g. "5b191168-…"). Writing
+// that straight into the uuid `classroom_id` column throws Postgres 22P02
+// ("invalid input syntax for type uuid"). Validate at this boundary and skip the
+// beacon on anything that isn't a full canonical UUID.
+const UUID_RE =
+  /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
+
 /**
  * Live-presence heartbeat for the reader / quiz / essay student surfaces. It
  * upserts a single `student_activity` cursor row (PK user_id) so the teacher's
@@ -38,6 +46,7 @@ export function useActivityBeacon(beacon: ActivityBeacon) {
 
   useEffect(() => {
     if (isDemoMode || !user || role !== "student" || !classroomId) return
+    if (!UUID_RE.test(classroomId)) return
 
     const supabase = createClient()
     let cancelled = false

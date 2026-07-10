@@ -2,7 +2,7 @@
 
 import { Suspense, useState, useRef, useCallback } from "react"
 import Link from "next/link"
-import { useRouter, useSearchParams } from "next/navigation"
+import { useSearchParams } from "next/navigation"
 import { BookOpen, ScanLine } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { verifyStudentAccess } from "@/lib/actions/student-auth"
@@ -36,7 +36,6 @@ export default function StudentLoginPage() {
 }
 
 function StudentLoginInner() {
-  const router = useRouter()
   const searchParams = useSearchParams()
   const inputRef = useRef<HTMLInputElement>(null)
   const [code, setCode] = useState("")
@@ -71,10 +70,14 @@ function StudentLoginInner() {
         inputRef.current?.focus()
         return
       }
-      router.push(result.data.redirectTo)
-      router.refresh()
+      // Hard navigation (NOT router.push) so the browser fully re-hydrates auth
+      // from the freshly server-set student cookies. A soft nav keeps the old
+      // in-memory Supabase session alive; that stale client re-persists its own
+      // cookies on the next refresh and clobbers the student session — the
+      // "works server-side but never lands in the browser" failure.
+      window.location.assign(result.data.redirectTo)
     },
-    [router, returnTo],
+    [returnTo],
   )
 
   function handleChange(raw: string) {
