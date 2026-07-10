@@ -2,7 +2,6 @@
 
 import { createHash } from "node:crypto"
 import { headers } from "next/headers"
-import { createClient } from "@/lib/supabase/server"
 import {
   type ActionResult,
   createAdminClient,
@@ -70,46 +69,53 @@ const MSG = {
   generic: "Something went wrong. Ask your teacher for help.",
 } as const
 
+/** The freshly minted session, handed to the browser to redeem itself. */
+type StudentSession = { accessToken: string; refreshToken: string }
+
 /**
- * Establish a real Supabase session for an already-verified student, WITHOUT a
- * password. We mint a one-time magic-link token server-side (service role) and
- * immediately redeem it on the SSR client so the session cookies are set. The
- * student's synthetic email is used only here, inside the server, and never
+ * Mint a real Supabase session for an already-verified student, WITHOUT a
+ * password, and RETURN its tokens so the browser can install them itself.
+ *
+ * We generate a one-time magic-link token (service role) and redeem it with
+ * verifyOtp. The redemption runs on the admin client purely to OBTAIN the
+ * session — its cookie jar is server-side and discarded. We do NOT try to set
+ * cookies from here: a server action's Set-Cookie was never reliably landing in
+ * real browsers (auth.sessions rows showed refreshed_at = null forever, meaning
+ * the browser never held the token). Instead the caller returns these tokens to
+ * the client, which calls supabase.auth.setSession(...) on the BROWSER client
+ * so the sb-…-auth-token cookie is written in the browser directly.
+ *
+ * The student's synthetic email is used only here, inside the server, and never
  * leaves it.
  */
-async function establishSessionForUser(userId: string): Promise<boolean> {
+async function establishSessionForUser(
+  userId: string,
+): Promise<StudentSession | null> {
   const admin = createAdminClient()
   const { data: got, error: getErr } = await admin.auth.admin.getUserById(userId)
   const email = got?.user?.email
-  if (getErr || !email) return false
+  if (getErr || !email) return null
 
   const { data: link, error: linkErr } = await admin.auth.admin.generateLink({
     type: "magiclink",
     email,
   })
   const tokenHash = link?.properties?.hashed_token
-  if (linkErr || !tokenHash) return false
-
-  // Use the SSR client so verifyOtp's Set-Cookie lands on THIS server action's
-  // response (the admin client never touches browser cookies). This same client
-  // instance is reused for signOut + verifyOtp so both mutate the one cookie jar
-  // that Next flushes back to the browser.
-  const supabase = await createClient()
-
-  // Kick out any session already in this browser (e.g. a teacher who was signed
-  // in on the same device) BEFORE minting the student's. Otherwise the stale
-  // cookies survive and the next token refresh restores the old user, silently
-  // clobbering the freshly established student session.
-  await supabase.auth.signOut()
+  if (linkErr || !tokenHash) return null
 
   // Magic-link token_hash verification uses type "email" on this project —
   // confirmed live against vjaezrcuuzmbmnsfrtwt (a generateLink "magiclink"
   // token verifies with verifyOtp type "email" and returns a session).
-  const { error: otpErr } = await supabase.auth.verifyOtp({
+  const { data, error: otpErr } = await admin.auth.verifyOtp({
     type: "email",
     token_hash: tokenHash,
   })
-  return !otpErr
+  const session = data?.session
+  if (otpErr || !session) return null
+  return {
+    accessToken: session.access_token,
+    refreshToken: session.refresh_token,
+  }
 }
 
 /**
@@ -179,13 +185,14 @@ function classifyEntry(raw: string): Resolver | null {
  *   1. classifies the shape (no DB hit on garbage),
  *   2. checks the rate-limit ledger for the prefix,
  *   3. looks up an active (and, for badges, un-revoked) row via service role,
- *   4. mints a session for the mapped student.
+ *   4. mints a session for the mapped student and hands its tokens back so the
+ *      browser can install the auth cookie itself.
  * It never logs the code/token and never surfaces email in any branch.
  */
 export async function verifyStudentAccess(
   rawCode: string,
   returnTo?: string,
-): Promise<ActionResult<{ redirectTo: string }>> {
+): Promise<ActionResult<{ redirectTo: string; session: StudentSession }>> {
   const resolver = classifyEntry(rawCode ?? "")
   if (!resolver) return fail(MSG.invalid)
 
@@ -203,15 +210,16 @@ export async function verifyStudentAccess(
       return fail(MSG.notFound)
     }
 
-    const signedIn = await establishSessionForUser(row.user_id)
-    if (!signedIn) {
+    const session = await establishSessionForUser(row.user_id)
+    if (!session) {
       await recordFailure(admin, resolver.prefix, ip)
       return fail(MSG.generic)
     }
 
     // Honor a preserved destination (e.g. /join?code=… from a scanned class
-    // QR) so the student lands back on the join flow; default to the dashboard.
-    return ok({ redirectTo: safeReturnTo(returnTo) })
+    // QR) so the student lands back on the join flow; default to the role-aware
+    // dashboard (which renders by profiles.role, never JWT metadata).
+    return ok({ redirectTo: safeReturnTo(returnTo), session })
   } catch {
     return fail(MSG.generic)
   }

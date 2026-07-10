@@ -5,6 +5,7 @@ import Link from "next/link"
 import { useSearchParams } from "next/navigation"
 import { BookOpen, ScanLine } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { createClient } from "@/lib/supabase/client"
 import { verifyStudentAccess } from "@/lib/actions/student-auth"
 import { isValidStudentCode, normalizeStudentCode } from "@/lib/student-code"
 import { parseBadgeQrPayload } from "@/lib/badge-token"
@@ -70,11 +71,28 @@ function StudentLoginInner() {
         inputRef.current?.focus()
         return
       }
+      // Install the session in the BROWSER. The server verified the code and
+      // minted the session, but a server action's Set-Cookie never reliably
+      // landed the auth token in real browsers (sessions showed refreshed_at =
+      // null forever). Writing it via the browser client guarantees the
+      // sb-…-auth-token cookie is set on this device.
+      const supabase = createClient()
+      // Clear any existing session first (e.g. a teacher signed in on this same
+      // device). Local scope only — we drop the token from THIS browser without
+      // revoking the teacher's session elsewhere. Otherwise a stale token would
+      // clobber the student session on the next refresh.
+      await supabase.auth.signOut({ scope: "local" })
+      const { error: sessionErr } = await supabase.auth.setSession({
+        access_token: result.data.session.accessToken,
+        refresh_token: result.data.session.refreshToken,
+      })
+      if (sessionErr) {
+        setError("Something went wrong. Ask your teacher for help.")
+        setLoading(false)
+        return
+      }
       // Hard navigation (NOT router.push) so the browser fully re-hydrates auth
-      // from the freshly server-set student cookies. A soft nav keeps the old
-      // in-memory Supabase session alive; that stale client re-persists its own
-      // cookies on the next refresh and clobbers the student session — the
-      // "works server-side but never lands in the browser" failure.
+      // from the freshly installed student cookie.
       window.location.assign(result.data.redirectTo)
     },
     [returnTo],
