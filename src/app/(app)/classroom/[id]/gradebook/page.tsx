@@ -68,6 +68,9 @@ export default function GradebookPage({
     submissionId: string
     score: string
   } | null>(null)
+  // The gradebook opens on a general per-student overview; picking a student
+  // drills into that student's per-assignment breakdown.
+  const [selectedStudentId, setSelectedStudentId] = useState<string | null>(null)
   const [pending, startTransition] = useTransition()
 
   const fetchAll = useCallback(async () => {
@@ -199,6 +202,45 @@ export default function GradebookPage({
     }
   }, [assignments, students, cellMap])
 
+  // Per-student rollup for the general overview: overall average %, how many
+  // assignments are scored, and how many are still awaiting a grade.
+  interface StudentSummary {
+    avg: number | null
+    scored: number
+    needsGrading: number
+    total: number
+  }
+  const studentSummary = useMemo(() => {
+    const map = new Map<string, StudentSummary>()
+    for (const s of students) {
+      let sum = 0
+      let scored = 0
+      let needsGrading = 0
+      for (const a of assignments) {
+        const cell = cellMap.get(`${a.id}:${s.id}`)
+        if (cell?.score != null) {
+          const max = cell.max_score ?? a.points ?? 100
+          sum += max > 0 ? (cell.score / max) * 100 : 0
+          scored += 1
+        } else if (cell?.status === "submitted") {
+          needsGrading += 1
+        }
+      }
+      map.set(s.id, {
+        avg: scored > 0 ? Math.round(sum / scored) : null,
+        scored,
+        needsGrading,
+        total: assignments.length,
+      })
+    }
+    return map
+  }, [students, assignments, cellMap])
+
+  const selectedStudent = useMemo(
+    () => students.find((s) => s.id === selectedStudentId) ?? null,
+    [students, selectedStudentId],
+  )
+
   const exportCsv = useCallback(() => {
     const esc = (v: string | number | null) => {
       const s = v == null ? "" : String(v)
@@ -283,6 +325,101 @@ export default function GradebookPage({
     })
   }
 
+  // The gradeable cell control — editable score / derived score / grade prompt.
+  // Shared by the (rare) matrix and the per-student detail drill-down.
+  function renderCell(cell: GradebookRow | undefined, a: AssignmentCol) {
+    const isManual = cell?.source === "manual"
+    const hasScore = cell?.score != null
+    const canEdit = !!cell?.submission_id
+    const isEditing =
+      cell?.submission_id != null && editingCell?.submissionId === cell.submission_id
+    if (isEditing) {
+      return (
+        <div className="flex items-center gap-1">
+          <Input
+            value={editingCell!.score}
+            onChange={(e) =>
+              setEditingCell({
+                submissionId: editingCell!.submissionId,
+                score: e.target.value,
+              })
+            }
+            type="number"
+            step="0.01"
+            className="h-7 w-16 text-xs"
+            autoFocus
+            onKeyDown={(e) => {
+              if (e.key === "Enter") saveCell()
+              if (e.key === "Escape") setEditingCell(null)
+            }}
+          />
+          <Button
+            size="sm"
+            className="h-7 px-2 text-[10px]"
+            onClick={saveCell}
+            disabled={pending}
+          >
+            Save
+          </Button>
+        </div>
+      )
+    }
+    if (hasScore && canEdit) {
+      return (
+        <button
+          type="button"
+          onClick={() =>
+            setEditingCell({
+              submissionId: cell!.submission_id!,
+              score: String(cell!.score ?? ""),
+            })
+          }
+          className="rounded px-1.5 py-0.5 hover:bg-muted"
+          title={
+            isManual ? "Manual grade — click to change" : `${cell!.source} — click to override`
+          }
+        >
+          {cell!.score}
+          {isManual && <span className="ml-1 text-[9px] text-amber-600">⚙</span>}
+        </button>
+      )
+    }
+    if (hasScore) {
+      return (
+        <span
+          className="rounded px-1.5 py-0.5 text-[var(--tome-accent)]"
+          title={`Derived from ${cell!.source}`}
+        >
+          {cell!.score}
+        </span>
+      )
+    }
+    if (canEdit) {
+      return (
+        <button
+          type="button"
+          onClick={() =>
+            setEditingCell({ submissionId: cell!.submission_id!, score: "" })
+          }
+          className="rounded px-1.5 py-0.5 text-muted-foreground hover:bg-muted hover:text-foreground"
+          title={`Status: ${cell!.status} — click to grade`}
+        >
+          {cell!.status === "completed"
+            ? "Grade"
+            : STATUS_LABEL[cell!.status] ?? cell!.status}
+        </button>
+      )
+    }
+    if (cell && cell.status !== "not_started") {
+      return (
+        <span className="text-muted-foreground">
+          {STATUS_LABEL[cell.status] ?? cell.status}
+        </span>
+      )
+    }
+    return <span className="text-muted-foreground/40">—</span>
+  }
+
   return (
     <div className="mx-auto max-w-5xl space-y-4 p-4 md:p-6">
       <Link
@@ -319,168 +456,152 @@ export default function GradebookPage({
         </div>
       </BlurFade>
 
-      {students.length === 0 || assignments.length === 0 ? (
+      {students.length === 0 ? (
         <div className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-border bg-muted/30 py-16 text-center">
           <p className="text-sm text-muted-foreground">
-            {students.length === 0
-              ? "No students have joined this classroom yet."
-              : "No assignments yet — create one to start grading."}
+            No students have joined this classroom yet.
           </p>
         </div>
+      ) : selectedStudent ? (
+        // ── Per-student drill-down: this student's assignment-by-assignment
+        // breakdown, reached by selecting a student in the overview. ──────────
+        <BlurFade delay={0.04} inView>
+          <div className="space-y-3">
+            <button
+              type="button"
+              onClick={() => {
+                setSelectedStudentId(null)
+                setEditingCell(null)
+              }}
+              className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
+            >
+              <ChevronLeft className="size-4" /> All students
+            </button>
+
+            <div className="flex flex-wrap items-center gap-3">
+              <h2 className="font-serif text-lg font-semibold tracking-tight">
+                {selectedStudent.name}
+              </h2>
+              {(() => {
+                const sum = studentSummary.get(selectedStudent.id)
+                return sum?.avg != null ? (
+                  <span className="rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium text-muted-foreground">
+                    Average {sum.avg}%
+                  </span>
+                ) : null
+              })()}
+              <Link
+                href={`/profile/${selectedStudent.username ?? selectedStudent.id}`}
+                className="text-xs text-muted-foreground hover:text-[var(--tome-accent)]"
+              >
+                View profile →
+              </Link>
+            </div>
+
+            {assignments.length === 0 ? (
+              <div className="rounded-2xl border border-dashed border-border bg-muted/30 py-12 text-center text-sm text-muted-foreground">
+                No assignments yet — create one to start grading.
+              </div>
+            ) : (
+              <div className="overflow-hidden rounded-xl border border-border bg-card">
+                <table className="min-w-full divide-y divide-border text-sm">
+                  <tbody className="divide-y divide-border">
+                    {assignments.map((a) => {
+                      const cell = cellMap.get(`${a.id}:${selectedStudent.id}`)
+                      const isManual = cell?.source === "manual"
+                      return (
+                        <tr key={a.id} className="hover:bg-muted/20">
+                          <td className="px-4 py-3">
+                            <div className="font-medium">{a.title}</div>
+                            <div className="text-[10px] text-muted-foreground">
+                              out of {a.points}
+                            </div>
+                          </td>
+                          <td
+                            className={`px-4 py-3 text-right text-xs ${
+                              isManual ? "bg-amber-50/50 dark:bg-amber-950/20" : ""
+                            }`}
+                          >
+                            {renderCell(cell, a)}
+                          </td>
+                        </tr>
+                      )
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            <p className="text-[10px] italic text-muted-foreground">
+              Reading and Trial progress fills in automatically as students work.
+              Click a score to enter or override a manual grade; overrides are
+              highlighted and the original score is kept in the audit trail.
+            </p>
+          </div>
+        </BlurFade>
       ) : (
+        // ── General overview: one summarized, selectable row per student. ────
         <BlurFade delay={0.08} inView>
-          <div className="overflow-x-auto rounded-xl border border-border bg-card">
+          <div className="overflow-hidden rounded-xl border border-border bg-card">
             <table className="min-w-full divide-y divide-border text-sm">
               <thead className="bg-muted/30">
                 <tr>
-                  <th className="sticky left-0 z-10 bg-muted/30 px-3 py-2 text-left text-xs font-semibold">
-                    Student
-                  </th>
-                  {assignments.map((a) => (
-                    <th
-                      key={a.id}
-                      className="px-3 py-2 text-left text-xs font-semibold whitespace-nowrap"
-                    >
-                      <div className="font-medium">{a.title}</div>
-                      <div className="text-[10px] font-normal text-muted-foreground">
-                        / {a.points}
-                      </div>
-                    </th>
-                  ))}
+                  <th className="px-4 py-2 text-left text-xs font-semibold">Student</th>
+                  <th className="px-4 py-2 text-right text-xs font-semibold">Graded</th>
+                  <th className="px-4 py-2 text-right text-xs font-semibold">To grade</th>
+                  <th className="px-4 py-2 text-right text-xs font-semibold">Average</th>
+                  <th className="px-2 py-2" />
                 </tr>
               </thead>
               <tbody className="divide-y divide-border">
-                {students.map((s) => (
-                  <tr key={s.id} className="hover:bg-muted/20">
-                    <td className="sticky left-0 z-10 bg-card px-3 py-2 font-medium">
-                      <Link
-                        href={`/profile/${s.username ?? s.id}`}
-                        className="hover:text-[var(--tome-accent)]"
-                      >
-                        {s.name}
-                      </Link>
-                    </td>
-                    {assignments.map((a) => {
-                      const cell = cellMap.get(`${a.id}:${s.id}`)
-                      const isManual = cell?.source === "manual"
-                      const hasScore = cell?.score != null
-                      const canEdit = !!cell?.submission_id
-                      const isEditing =
-                        cell?.submission_id != null &&
-                        editingCell?.submissionId === cell.submission_id
-                      return (
-                        <td
-                          key={a.id}
-                          className={`px-3 py-2 text-xs ${
-                            isManual ? "bg-amber-50/50 dark:bg-amber-950/20" : ""
-                          }`}
-                        >
-                          {isEditing ? (
-                            <div className="flex items-center gap-1">
-                              <Input
-                                value={editingCell!.score}
-                                onChange={(e) =>
-                                  setEditingCell({
-                                    submissionId: editingCell!.submissionId,
-                                    score: e.target.value,
-                                  })
-                                }
-                                type="number"
-                                step="0.01"
-                                className="h-7 w-16 text-xs"
-                                autoFocus
-                                onKeyDown={(e) => {
-                                  if (e.key === "Enter") saveCell()
-                                  if (e.key === "Escape") setEditingCell(null)
-                                }}
-                              />
-                              <Button
-                                size="sm"
-                                className="h-7 px-2 text-[10px]"
-                                onClick={saveCell}
-                                disabled={pending}
-                              >
-                                Save
-                              </Button>
-                            </div>
-                          ) : hasScore && canEdit ? (
-                            <button
-                              type="button"
-                              onClick={() =>
-                                setEditingCell({
-                                  submissionId: cell!.submission_id!,
-                                  score: String(cell!.score ?? ""),
-                                })
-                              }
-                              className="rounded px-1.5 py-0.5 hover:bg-muted"
-                              title={
-                                isManual
-                                  ? "Manual grade — click to change"
-                                  : `${cell!.source} — click to override`
-                              }
-                            >
-                              {cell!.score}
-                              {isManual && (
-                                <span className="ml-1 text-[9px] text-amber-600">
-                                  ⚙
-                                </span>
-                              )}
-                            </button>
-                          ) : hasScore ? (
-                            // Derived score (reading/trial) without a submission
-                            // row to override against — show read-only.
-                            <span
-                              className="rounded px-1.5 py-0.5 text-[var(--tome-accent)]"
-                              title={`Derived from ${cell!.source}`}
-                            >
-                              {cell!.score}
-                            </span>
-                          ) : canEdit ? (
-                            <button
-                              type="button"
-                              onClick={() =>
-                                setEditingCell({
-                                  submissionId: cell!.submission_id!,
-                                  score: "",
-                                })
-                              }
-                              className="rounded px-1.5 py-0.5 text-muted-foreground hover:bg-muted hover:text-foreground"
-                              title={`Status: ${cell!.status} — click to grade`}
-                            >
-                              {cell!.status === "completed"
-                                ? "Grade"
-                                : STATUS_LABEL[cell!.status] ?? cell!.status}
-                            </button>
-                          ) : cell && cell.status !== "not_started" ? (
-                            <span className="text-muted-foreground">
-                              {STATUS_LABEL[cell.status] ?? cell.status}
-                            </span>
-                          ) : (
-                            <span className="text-muted-foreground/40">—</span>
-                          )}
-                        </td>
-                      )
-                    })}
-                  </tr>
-                ))}
+                {students.map((s) => {
+                  const sum = studentSummary.get(s.id)
+                  return (
+                    <tr
+                      key={s.id}
+                      onClick={() => setSelectedStudentId(s.id)}
+                      className="cursor-pointer transition-colors hover:bg-muted/30"
+                    >
+                      <td className="px-4 py-3 font-medium">{s.name}</td>
+                      <td className="px-4 py-3 text-right text-xs tabular-nums text-muted-foreground">
+                        {sum?.scored ?? 0}/{sum?.total ?? assignments.length}
+                      </td>
+                      <td className="px-4 py-3 text-right text-xs tabular-nums">
+                        {sum && sum.needsGrading > 0 ? (
+                          <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-medium text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">
+                            {sum.needsGrading}
+                          </span>
+                        ) : (
+                          <span className="text-muted-foreground/40">—</span>
+                        )}
+                      </td>
+                      <td className="px-4 py-3 text-right text-xs font-semibold tabular-nums">
+                        {sum?.avg == null ? (
+                          <span className="text-muted-foreground/40">—</span>
+                        ) : (
+                          `${sum.avg}%`
+                        )}
+                      </td>
+                      <td className="px-2 py-3 text-right text-muted-foreground/60">
+                        <ChevronLeft className="ml-auto size-4 rotate-180" />
+                      </td>
+                    </tr>
+                  )
+                })}
               </tbody>
               <tfoot className="border-t border-border bg-muted/30">
                 <tr>
-                  <td className="sticky left-0 z-10 bg-muted/30 px-3 py-2 text-xs font-semibold">
-                    Average
+                  <td className="px-4 py-2 text-xs font-semibold">Class average</td>
+                  <td />
+                  <td />
+                  <td className="px-4 py-2 text-right text-xs font-semibold tabular-nums">
+                    {classAvg == null ? (
+                      <span className="text-muted-foreground/40">—</span>
+                    ) : (
+                      `${classAvg}%`
+                    )}
                   </td>
-                  {assignments.map((a) => {
-                    const avg = assignmentAvg.get(a.id)
-                    return (
-                      <td key={a.id} className="px-3 py-2 text-xs font-semibold tabular-nums">
-                        {avg == null ? (
-                          <span className="text-muted-foreground/40">—</span>
-                        ) : (
-                          `${avg}%`
-                        )}
-                      </td>
-                    )
-                  })}
+                  <td />
                 </tr>
               </tfoot>
             </table>
@@ -489,9 +610,7 @@ export default function GradebookPage({
       )}
 
       <p className="text-[10px] italic text-muted-foreground">
-        Reading and Trial progress fills in automatically as students work.
-        Click a cell to enter or override a manual grade; overrides are
-        highlighted and the original score is kept in the audit trail.
+        Select a student to see their assignment-by-assignment grades.
       </p>
     </div>
   )
