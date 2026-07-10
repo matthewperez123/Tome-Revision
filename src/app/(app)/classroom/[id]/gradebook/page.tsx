@@ -59,7 +59,7 @@ export default function GradebookPage({
   params: Promise<{ id: string }>
 }) {
   const { id: classroomId } = use(params)
-  const { user, isDemoMode } = useAuth()
+  const { user, isDemoMode, isLoading: authLoading } = useAuth()
   const [allowed, setAllowed] = useState<boolean | null>(null)
   const [classroomName, setClassroomName] = useState("")
   const [rows, setRows] = useState<GradebookRow[]>([])
@@ -71,6 +71,9 @@ export default function GradebookPage({
   const [pending, startTransition] = useTransition()
 
   const fetchAll = useCallback(async () => {
+    // Wait for auth to settle before deciding access — a transiently-null
+    // `user` during cold resolution must not flash the "not allowed" state.
+    if (authLoading) return
     if (!user || isDemoMode) {
       setAllowed(false)
       setLoading(false)
@@ -106,7 +109,7 @@ export default function GradebookPage({
     if (cls) setClassroomName((cls as { name: string }).name)
     setRows((gb as GradebookRow[] | null) ?? [])
     setLoading(false)
-  }, [user, isDemoMode, classroomId])
+  }, [user, isDemoMode, authLoading, classroomId])
 
   useEffect(() => {
     fetchAll()
@@ -232,7 +235,7 @@ export default function GradebookPage({
 
   // ── Renders ─────────────────────────────────────────────────────────────
 
-  if (allowed === null || loading) {
+  if (authLoading || allowed === null || loading) {
     return (
       <div className="mx-auto max-w-5xl p-4 md:p-6">
         <div className="h-32 animate-pulse rounded-2xl border border-border bg-muted/30" />
