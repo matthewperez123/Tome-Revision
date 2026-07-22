@@ -1,0 +1,6 @@
+export { Virgil, useVirgilMachine } from "./Virgil"
+export type { VirgilProps, VirgilMachine } from "./Virgil"
+export { VirgilArt } from "./VirgilArt"
+export type { VirgilArtProps, VirgilArtTone } from "./VirgilArt"
+export { VIRGIL_EXPRESSIONS, VIRGIL_EXPRESSION_IDS } from "./expressions"
+export { VIRGIL_POSES, resolveVirgilPose } from "./poses"
