@@ -1,0 +1,7 @@
+export { StoaGallery } from "./StoaGallery"
+export { StoaNiche } from "./StoaNiche"
+export type { StoaNicheProps } from "./StoaNiche"
+export { StoaDetail } from "./StoaDetail"
+export type { StoaDetailProps } from "./StoaDetail"
+export { StoaRestore } from "./StoaRestore"
+export type { StoaRestoreProps } from "./StoaRestore"

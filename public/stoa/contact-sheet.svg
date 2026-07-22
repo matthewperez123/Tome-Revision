@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="874" viewBox="0 0 800 874">
+  <rect width="800" height="874" fill="#F6F1E6"/>
+  <image href="macbeth.svg" x="16" y="16" width="180" height="270"/>
+  <image href="moby-dick.svg" x="212" y="16" width="180" height="270"/>
+  <image href="alice.svg" x="408" y="16" width="180" height="270"/>
+  <image href="paradise-lost.svg" x="604" y="16" width="180" height="270"/>
+  <image href="divine-comedy.svg" x="16" y="302" width="180" height="270"/>
+  <image href="iliad.svg" x="212" y="302" width="180" height="270"/>
+  <image href="odyssey.svg" x="408" y="302" width="180" height="270"/>
+  <image href="frankenstein.svg" x="604" y="302" width="180" height="270"/>
+  <image href="pride-prejudice.svg" x="16" y="588" width="180" height="270"/>
+  <image href="jane-eyre.svg" x="212" y="588" width="180" height="270"/>
+  <image href="meditations.svg" x="408" y="588" width="180" height="270"/>
+  <image href="republic.svg" x="604" y="588" width="180" height="270"/>
+</svg>
