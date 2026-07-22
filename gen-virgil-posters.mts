@@ -2,20 +2,20 @@
  * One-shot generator for Virgil static exports.
  * Renders VirgilArt (the same components the product uses) to static SVG
  * posters + runtime assets inside tome-revision/public/virgil/.
- * Run from the repo root: ./node_modules/.bin/tsx ../gen-virgil-posters.mts
+ * Run from the repo root: ./node_modules/.bin/tsx gen-virgil-posters.mts
  */
 
 import { renderToStaticMarkup } from "react-dom/server"
 import { createElement as h } from "react"
 import { writeFileSync, mkdirSync } from "node:fs"
 import { join } from "node:path"
-import { VirgilArt } from "./tome-revision/src/components/virgil/VirgilArt"
-import { VIRGIL_EXPRESSIONS, VIRGIL_EXPRESSION_IDS } from "./tome-revision/src/components/virgil/expressions"
-import { VIRGIL_STATES, virgilStatesByCategory } from "./tome-revision/src/lib/virgil/state-machine"
-import { VIRGIL_PALETTE } from "./tome-revision/src/lib/virgil/palette"
-import type { VirgilPalette } from "./tome-revision/src/lib/virgil/palette"
-import { VIRGIL_VARIANTS, VIRGIL_VARIANT_IDS } from "./tome-revision/src/lib/virgil/variants"
-import type { VirgilCategory, VirgilStateId } from "./tome-revision/src/lib/virgil/types"
+import { VirgilArt } from "./src/components/virgil/VirgilArt"
+import { VIRGIL_EXPRESSIONS, VIRGIL_EXPRESSION_IDS } from "./src/components/virgil/expressions"
+import { VIRGIL_STATES, virgilStatesByCategory } from "./src/lib/virgil/state-machine"
+import { VIRGIL_PALETTE } from "./src/lib/virgil/palette"
+import type { VirgilPalette } from "./src/lib/virgil/palette"
+import { VIRGIL_VARIANTS, VIRGIL_VARIANT_IDS } from "./src/lib/virgil/variants"
+import type { VirgilCategory, VirgilStateId } from "./src/lib/virgil/types"
 
 const OUT = join(process.cwd(), "public", "virgil")
 mkdirSync(join(OUT, "posters"), { recursive: true })
@@ -222,7 +222,7 @@ const INK = "#232A38"
   }
   const grayPalette = Object.fromEntries(
     Object.entries(VIRGIL_PALETTE).map(([k, v]) => [k, gray(v)]),
-  ) as VirgilPalette
+  ) as unknown as VirgilPalette
   save("runtime", "virgil-grayscale.svg",
     `<svg xmlns="http://www.w3.org/2000/svg" width="240" height="320" viewBox="0 0 240 320" role="img" aria-label="Virgil grayscale">` +
     art({ state: "idle", size: 240, paletteOverride: grayPalette }) + `</svg>`)
