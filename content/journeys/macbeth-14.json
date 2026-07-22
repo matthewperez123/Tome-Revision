@@ -1,0 +1,1896 @@
+{
+  "id": "macbeth-14",
+  "bookSlug": "macbeth",
+  "title": "Macbeth — The Fourteen-Day Journey",
+  "tagline": "Fourteen days through the storm: prophecy, murder, madness, and the wood that walks.",
+  "days": [
+    {
+      "day": 1,
+      "title": "Thunder, Lightning, Rain",
+      "subtitle": "The witches open the play — and invert the weather of the world.",
+      "readingTarget": {
+        "chapterRefs": [
+          { "chapterIndex": 0, "chapterTitle": "Dramatis Personae" },
+          { "chapterIndex": 2, "chapterTitle": "Scene I" }
+        ],
+        "citation": "Macbeth, Act I, Scene 1",
+        "excerptTitle": "A desert place",
+        "excerptIntro": "The play's whole first scene — thirteen lines, and the trap is already set.",
+        "excerpt": [
+          { "anchor": "d1-e1", "speaker": "First Witch", "text": "When shall we three meet again" },
+          { "anchor": "d1-e2", "text": "In thunder, lightning, or in rain?" },
+          { "anchor": "d1-e3", "speaker": "Second Witch", "text": "When the hurlyburly’s done," },
+          { "anchor": "d1-e4", "text": "When the battle’s lost and won." },
+          { "anchor": "d1-e5", "speaker": "Third Witch", "text": "That will be ere the set of sun." },
+          { "anchor": "d1-e6", "speaker": "First Witch", "text": "Where the place?" },
+          { "anchor": "d1-e7", "speaker": "Second Witch", "text": "Upon the heath." },
+          { "anchor": "d1-e8", "speaker": "Third Witch", "text": "There to meet with Macbeth." },
+          { "anchor": "d1-e9", "speaker": "All", "text": "Fair is foul, and foul is fair:" },
+          { "anchor": "d1-e10", "text": "Hover through the fog and filthy air." }
+        ],
+        "estimatedMinutes": 2,
+        "sourceNote": "Public-domain play text, bundled with Tome at public/content/macbeth/ch-0.json and ch-2.json. Quotations are public domain."
+      },
+      "contextCard": "Macbeth was written around 1606, early in the reign of James I, the Scottish king who came to England’s throne in 1603. James took witchcraft seriously enough to publish a book on it, Daemonologie (1597), and Shakespeare’s opening — three witches in thunder, arranging to meet a soldier — played straight to the court’s fascinations. The play survives from the 1623 First Folio; its earliest recorded performance was at the Globe in 1611.",
+      "virgilPrompt": "The play begins not with a king or a hero but with three witches in a storm. Before we read, carry this question: why might a tragedy about ambition open with the words ‘Fair is foul, and foul is fair’?",
+      "trial": [
+        {
+          "id": "macbeth-d01-fill-1",
+          "family": "fill-the-line",
+          "prompt": "Complete the witches’ parting chant.",
+          "anchors": [{ "paragraphId": "d1-e9", "quote": "Fair is foul, and foul is fair:" }],
+          "rationale": "The chant closes the scene by inverting value itself: fair and foul trade places. That inversion is the moral weather of the whole play.",
+          "evidenceAnchor": { "paragraphId": "d1-e9", "quote": "Fair is foul, and foul is fair:" },
+          "hints": [
+            { "level": 1, "text": "Listen to how the line mirrors itself — the same two words, swapped." },
+            { "level": 2, "text": "The missing word is the opposite of ‘foul’." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "lines": ["Fair is foul, and foul is ___:", "Hover through the fog and filthy air."],
+            "blanks": [{ "lineIndex": 0, "answer": "fair" }],
+            "wordBank": ["fair", "foul", "fog", "foe"],
+            "mode": "bank"
+          }
+        },
+        {
+          "id": "macbeth-d01-who-1",
+          "family": "who-said-it",
+          "prompt": "Who opens the play with this question?",
+          "anchors": [{ "paragraphId": "d1-e1" }],
+          "rationale": "The First Witch speaks the play’s first line. Macbeth, the hero of the tragedy, does not appear until Scene 3.",
+          "evidenceAnchor": { "paragraphId": "d1-e1", "quote": "When shall we three meet again" },
+          "hints": [
+            { "level": 1, "text": "The speaker is not anyone you would call the play’s hero." },
+            { "level": 2, "text": "The question is answered by the Second Witch — so who asked it?" }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "quote": "When shall we three meet again / In thunder, lightning, or in rain?",
+            "choices": [
+              { "name": "The First Witch", "correct": true },
+              { "name": "Macbeth", "correct": false },
+              { "name": "Banquo", "correct": false },
+              { "name": "Duncan", "correct": false }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d01-tf-1",
+          "family": "true-false-with-reason",
+          "prompt": "Judge the claim, then choose the reason that proves it.",
+          "anchors": [{ "paragraphId": "d1-e7" }, { "paragraphId": "d1-e8" }],
+          "rationale": "The witches fix both coordinates: the Second Witch names the place (‘Upon the heath’) and the Third Witch names the hour (‘ere the set of sun’). Their appointment with Macbeth is already made.",
+          "evidenceAnchor": { "paragraphId": "d1-e8", "quote": "There to meet with Macbeth." },
+          "hints": [
+            { "level": 1, "text": "Reread the witches’ short exchanges in the middle of the scene." },
+            { "level": 2, "text": "One witch names the place; another names the time." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "statement": "The witches already know where and when they will meet Macbeth.",
+            "correctBool": true,
+            "reasons": [
+              { "id": "r-heath", "text": "The Second Witch names the place — ‘Upon the heath’ — and the Third Witch names the time, ‘ere the set of sun’.", "correct": true },
+              { "id": "r-battle", "text": "They agree only to meet after the battle, with no place fixed.", "correct": false, "nearMiss": true, "distractorNote": "The battle detail is real — ‘when the hurlyburly’s done’ — but the witches fix the heath as well." },
+              { "id": "r-castle", "text": "They plan to seek him at his castle, Inverness.", "correct": false, "distractorNote": "Inverness is never mentioned in this scene; the meeting place is the open heath." }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d01-refl-1",
+          "family": "reflection",
+          "prompt": "Virgil asks: why begin a tragedy of ambition with ‘Fair is foul, and foul is fair’?",
+          "anchors": [{ "paragraphId": "d1-e9" }],
+          "rationale": "No wrong answers here — the Trial rewards a grounded prediction tied to the scene, not a lucky guess.",
+          "evidenceAnchor": { "paragraphId": "d1-e9", "quote": "Fair is foul, and foul is fair:" },
+          "hints": [
+            { "level": 1, "text": "Name one thing in this scene that seems one thing and is another." },
+            { "level": 2, "text": "Predict: if appearances cannot be trusted, what kind of story follows?" }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "minWords": 40,
+            "guidance": [
+              "Two or three sentences is plenty.",
+              "Point to one detail from the witches’ scene.",
+              "End with a prediction about the play."
+            ],
+            "rubric": [
+              { "id": "rb1", "label": "I explained what the line reverses or confuses" },
+              { "id": "rb2", "label": "I pointed to a detail from the scene" },
+              { "id": "rb3", "label": "I made a prediction about the play" }
+            ]
+          }
+        }
+      ],
+      "wisdomAward": 40
+    },
+    {
+      "day": 2,
+      "title": "Valour’s Minion",
+      "subtitle": "A bleeding Sergeant reports: the hero has arrived.",
+      "readingTarget": {
+        "chapterRefs": [{ "chapterIndex": 3, "chapterTitle": "Scene II" }],
+        "citation": "Macbeth, Act I, Scene 2",
+        "excerptTitle": "A camp near Forres",
+        "excerptIntro": "Before we meet Macbeth, we hear what he did today.",
+        "excerpt": [
+          { "anchor": "d2-e1", "speaker": "Sergeant", "text": "For brave Macbeth —well he deserves that name —" },
+          { "anchor": "d2-e2", "text": "Disdaining fortune, with his brandish’d steel," },
+          { "anchor": "d2-e3", "text": "Which smoked with bloody execution," },
+          { "anchor": "d2-e4", "text": "Like valour’s minion carved out his passage" },
+          { "anchor": "d2-e5", "text": "Till he faced the slave;" },
+          { "anchor": "d2-e6", "text": "Which ne’er shook hands, nor bade farewell to him," },
+          { "anchor": "d2-e7", "text": "Till he unseam’d him from the nave to the chaps," },
+          { "anchor": "d2-e8", "text": "And fix’d his head upon our battlements." },
+          { "anchor": "d2-e9", "speaker": "Duncan", "text": "O valiant cousin! worthy gentleman!" },
+          { "anchor": "d2-e10", "speaker": "Duncan", "text": "No more that thane of Cawdor shall deceive" },
+          { "anchor": "d2-e11", "text": "Our bosom interest: go pronounce his present death," },
+          { "anchor": "d2-e12", "text": "And with his former title greet Macbeth." },
+          { "anchor": "d2-e13", "speaker": "Duncan", "text": "What he hath lost noble Macbeth hath won." }
+        ],
+        "estimatedMinutes": 3,
+        "sourceNote": "Public-domain play text, bundled with Tome at public/content/macbeth/ch-3.json. Quotations are public domain."
+      },
+      "contextCard": "Shakespeare found Macbeth in Raphael Holinshed’s Chronicles of England, Scotland, and Ireland (revised edition, 1587), the same history behind many of his plays. The real Macbeth killed King Duncan in battle near Elgin in 1040 and ruled Scotland for seventeen years, by several accounts well. Shakespeare’s wounded Sergeant, praising ‘brave Macbeth’ fresh from the fight, lets us meet a hero first — so the fall has somewhere to fall from.",
+      "virgilPrompt": "Everyone in this scene talks about Macbeth before Macbeth speaks a word. Watch how Shakespeare builds him: what kind of man are we being told to expect?",
+      "trial": [
+        {
+          "id": "macbeth-d02-word-1",
+          "family": "word-in-context",
+          "prompt": "The Sergeant calls Macbeth ‘valour’s minion’. What does ‘minion’ mean here?",
+          "anchors": [{ "paragraphId": "d2-e4", "quote": "Like valour’s minion carved out his passage" }],
+          "rationale": "‘Minion’ keeps its older sense here — a darling or favoured servant. Macbeth fights as Valour’s own beloved, not as anyone’s lackey.",
+          "evidenceAnchor": { "paragraphId": "d2-e4", "quote": "Like valour’s minion carved out his passage" },
+          "hints": [
+            { "level": 1, "text": "Forget the modern insult; in 1606 this word could be affectionate." },
+            { "level": 2, "text": "The Sergeant is praising Macbeth, so the word must be praise." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "sentence": "Like valour’s minion carved out his passage / Till he faced the slave;",
+            "targetWord": "minion",
+            "choices": [
+              { "text": "A favoured darling or servant — here, Valour’s own beloved instrument", "correct": true },
+              { "text": "A small, contemptible underling", "correct": false },
+              { "text": "A hired foreign soldier", "correct": false },
+              { "text": "A minister of the church", "correct": false }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d02-find-1",
+          "family": "find-the-evidence",
+          "prompt": "Tap the lines where the Sergeant says Macbeth cut his way through the rebels to reach their leader.",
+          "anchors": [{ "paragraphId": "d2-e2" }, { "paragraphId": "d2-e5" }],
+          "rationale": "‘Disdaining fortune… carved out his passage / Till he faced the slave’ — Macbeth hews a path through the army itself to reach Macdonwald, then ‘unseam’d him from the nave to the chaps’.",
+          "evidenceAnchor": { "paragraphId": "d2-e4", "quote": "Like valour’s minion carved out his passage" },
+          "hints": [
+            { "level": 1, "text": "Look for the verb ‘carved’ and the line it completes." },
+            { "level": 2, "text": "The run starts at ‘Disdaining fortune’ and ends when he reaches ‘the slave’." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "claim": "Macbeth fought through the rebel army itself to reach its leader.",
+            "segments": [
+              "Disdaining fortune, with his brandish’d steel,",
+              "Which smoked with bloody execution,",
+              "Like valour’s minion carved out his passage",
+              "Till he faced the slave;",
+              "Which ne’er shook hands, nor bade farewell to him,",
+              "Till he unseam’d him from the nave to the chaps,"
+            ],
+            "correctRange": [0, 3]
+          }
+        },
+        {
+          "id": "macbeth-d02-who-1",
+          "family": "who-said-it",
+          "prompt": "Who pronounces this sentence over the scene?",
+          "anchors": [{ "paragraphId": "d2-e13" }],
+          "rationale": "Duncan closes the scene: the traitor Cawdor’s title passes to Macbeth. The reward will arrive like a prophecy fulfilling itself.",
+          "evidenceAnchor": { "paragraphId": "d2-e13", "quote": "What he hath lost noble Macbeth hath won." },
+          "hints": [
+            { "level": 1, "text": "Only one person in the scene has the power to give away a title." },
+            { "level": 2, "text": "The same speaker orders the old Cawdor’s ‘present death’." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "quote": "What he hath lost noble Macbeth hath won.",
+            "choices": [
+              { "name": "Duncan", "correct": true },
+              { "name": "Ross", "correct": false },
+              { "name": "Malcolm", "correct": false },
+              { "name": "The Sergeant", "correct": false }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d02-tf-1",
+          "family": "true-false-with-reason",
+          "prompt": "Judge the claim, then choose the reason that proves it.",
+          "anchors": [{ "paragraphId": "d2-e10" }, { "paragraphId": "d2-e11" }],
+          "rationale": "The old Cawdor falls for treason, not cowardice: he aided the Norweyan invasion, and Duncan orders his ‘present death’. The title is the reward Macbeth wins.",
+          "evidenceAnchor": { "paragraphId": "d2-e11", "quote": "go pronounce his present death" },
+          "hints": [
+            { "level": 1, "text": "Check why Duncan sentences Cawdor, not how he fought." },
+            { "level": 2, "text": "The charge is named earlier in the scene: ‘that most disloyal traitor’." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "statement": "The former Thane of Cawdor lost his title for cowardice in battle.",
+            "correctBool": false,
+            "reasons": [
+              { "id": "r-treason", "text": "He lost it for treason — he aided the Norweyan assault, and Duncan orders his ‘present death’.", "correct": true },
+              { "id": "r-fled", "text": "He fled the field at Forres and was stripped of command.", "correct": false, "nearMiss": true, "distractorNote": "The rebels fled, but Cawdor’s crime was choosing their side — treason, not flight." },
+              { "id": "r-tribute", "text": "He refused to pay tribute to the Norweyan king.", "correct": false, "distractorNote": "It is Sweno, the Norweyan king, who pays ten thousand dollars for his men’s burial." }
+            ]
+          }
+        }
+      ],
+      "wisdomAward": 40
+    },
+    {
+      "day": 3,
+      "title": "All Hail, Macbeth",
+      "subtitle": "Three greetings on the heath — two true, one impossible.",
+      "readingTarget": {
+        "chapterRefs": [{ "chapterIndex": 4, "chapterTitle": "Scene III" }],
+        "citation": "Macbeth, Act I, Scene 3",
+        "excerptTitle": "A heath near Forres",
+        "excerptIntro": "The appointment from Scene 1 is kept.",
+        "excerpt": [
+          { "anchor": "d3-e1", "speaker": "Macbeth", "text": "So foul and fair a day I have not seen." },
+          { "anchor": "d3-e2", "speaker": "First Witch", "text": "All hail, Macbeth! hail to thee, thane of Glamis!" },
+          { "anchor": "d3-e3", "speaker": "Second Witch", "text": "All hail, Macbeth, hail to thee, thane of Cawdor!" },
+          { "anchor": "d3-e4", "speaker": "Third Witch", "text": "All hail, Macbeth, thou shalt be king hereafter!" },
+          { "anchor": "d3-e5", "speaker": "Third Witch", "text": "Thou shalt get kings, though thou be none:" },
+          { "anchor": "d3-e6", "speaker": "Banquo", "text": "And oftentimes, to win us to our harm," },
+          { "anchor": "d3-e7", "text": "The instruments of darkness tell us truths," },
+          { "anchor": "d3-e8", "text": "Win us with honest trifles, to betray’s" },
+          { "anchor": "d3-e9", "text": "In deepest consequence." },
+          { "anchor": "d3-e10", "speaker": "Macbeth", "text": "This supernatural soliciting" },
+          { "anchor": "d3-e11", "text": "Cannot be ill, cannot be good: if ill," },
+          { "anchor": "d3-e12", "text": "Why hath it given me earnest of success," },
+          { "anchor": "d3-e13", "text": "Commencing in a truth? I am thane of Cawdor:" },
+          { "anchor": "d3-e14", "speaker": "Macbeth", "text": "If chance will have me king, why, chance may crown me," },
+          { "anchor": "d3-e15", "text": "Without my stir." }
+        ],
+        "estimatedMinutes": 6,
+        "sourceNote": "Public-domain play text, bundled with Tome at public/content/macbeth/ch-4.json. Quotations are public domain."
+      },
+      "contextCard": "On the heath the witches greet Macbeth with three titles, two already true and one impossible. Banquo, hearing his own fortune, gets riddles instead: ‘Lesser than Macbeth, and greater.’ Shakespeare’s audience knew Banquo as the legendary ancestor of the Stuart kings, James I’s own line, so ‘Thou shalt get kings, though thou be none’ doubled as flattery aimed at the royal box. ‘Weird’ descends from wyrd, the Old English word for fate.",
+      "virgilPrompt": "Macbeth’s first line in the play — ‘So foul and fair a day’ — rhymes with the witches’ chant. Keep that echo in mind as you read: whose language is he already speaking?",
+      "trial": [
+        {
+          "id": "macbeth-d03-order-1",
+          "family": "ordering",
+          "prompt": "The witches greet Macbeth with three titles. Put the prophecies in the order they are spoken.",
+          "anchors": [{ "paragraphId": "d3-e2" }, { "paragraphId": "d3-e4" }],
+          "rationale": "Glamis he holds, Cawdor he has won without knowing it, and the crown is the impossible third — the one he cannot stop hearing.",
+          "evidenceAnchor": { "paragraphId": "d3-e4", "quote": "thou shalt be king hereafter!" },
+          "hints": [
+            { "level": 1, "text": "Each witch speaks once, in order: First, Second, Third." },
+            { "level": 2, "text": "The titles climb: one he has, one he is about to learn, one he cannot believe." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "items": [
+              { "id": "glamis", "text": "thane of Glamis" },
+              { "id": "cawdor", "text": "thane of Cawdor" },
+              { "id": "king", "text": "king hereafter" }
+            ],
+            "correctOrder": ["glamis", "cawdor", "king"]
+          }
+        },
+        {
+          "id": "macbeth-d03-fill-1",
+          "family": "fill-the-line",
+          "prompt": "Complete Macbeth’s first line in the play.",
+          "anchors": [{ "paragraphId": "d3-e1" }],
+          "rationale": "‘So foul and fair a day I have not seen’ — Macbeth enters already speaking the witches’ language of inversion.",
+          "evidenceAnchor": { "paragraphId": "d3-e1", "quote": "So foul and fair a day I have not seen." },
+          "hints": [
+            { "level": 1, "text": "It is a weather word — and the battle was fought today." },
+            { "level": 2, "text": "It rhymes with nothing but pairs with ‘foul and fair’." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "lines": ["So foul and fair a ___ I have not seen."],
+            "blanks": [{ "lineIndex": 0, "answer": "day" }],
+            "wordBank": ["day", "night", "sight", "storm"],
+            "mode": "bank"
+          }
+        },
+        {
+          "id": "macbeth-d03-who-1",
+          "family": "who-said-it",
+          "prompt": "Who sees the trap the moment it springs?",
+          "anchors": [{ "paragraphId": "d3-e7" }],
+          "rationale": "Banquo names the method of the ‘instruments of darkness’: small truths as bait, betrayal ‘in deepest consequence’. Macbeth never hears him.",
+          "evidenceAnchor": { "paragraphId": "d3-e7", "quote": "The instruments of darkness tell us truths," },
+          "hints": [
+            { "level": 1, "text": "The speaker is warning someone who is no longer listening." },
+            { "level": 2, "text": "He received a prophecy of his own — but riddling, not royal." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "quote": "The instruments of darkness tell us truths, / Win us with honest trifles, to betray’s / In deepest consequence.",
+            "choices": [
+              { "name": "Banquo", "correct": true },
+              { "name": "Macbeth", "correct": false },
+              { "name": "Duncan", "correct": false },
+              { "name": "Ross", "correct": false }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d03-word-1",
+          "family": "word-in-context",
+          "prompt": "Macbeth calls the prophecy a ‘supernatural soliciting’. What is ‘soliciting’ here?",
+          "anchors": [{ "paragraphId": "d3-e10" }],
+          "rationale": "A soliciting is an incitement — something that summons and tempts. The word makes the prophecy an agent working on him, not just information.",
+          "evidenceAnchor": { "paragraphId": "d3-e10", "quote": "This supernatural soliciting" },
+          "hints": [
+            { "level": 1, "text": "The word is doing something to Macbeth, not describing him." },
+            { "level": 2, "text": "Think of what a solicitor does: urges, petitions, presses a case." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "sentence": "This supernatural soliciting / Cannot be ill, cannot be good",
+            "targetWord": "soliciting",
+            "choices": [
+              { "text": "An incitement or temptation — the prophecy working on him like a summons", "correct": true },
+              { "text": "A formal request for payment", "correct": false },
+              { "text": "An act of public worship", "correct": false },
+              { "text": "A signed legal contract", "correct": false }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d03-refl-1",
+          "family": "reflection",
+          "prompt": "Virgil asks: ‘If chance will have me king, why, chance may crown me, / Without my stir.’ What is Macbeth deciding in this aside — and what will it mean when he stops meaning it?",
+          "anchors": [{ "paragraphId": "d3-e14" }],
+          "rationale": "The Trial rewards tracking the aside closely: ‘chance’ is the word a man uses when he has not yet admitted the word ‘murder’.",
+          "evidenceAnchor": { "paragraphId": "d3-e14", "quote": "If chance will have me king, why, chance may crown me," },
+          "hints": [
+            { "level": 1, "text": "Notice the word he chooses instead of naming any action." },
+            { "level": 2, "text": "Compare ‘chance may crown me’ with what he does two scenes later." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "minWords": 40,
+            "guidance": [
+              "Two or three sentences is plenty.",
+              "Name the word Macbeth hides behind.",
+              "Say what changes if ‘chance’ needs help."
+            ],
+            "rubric": [
+              { "id": "rb1", "label": "I named the word Macbeth substitutes for action" },
+              { "id": "rb2", "label": "I said what ‘without my stir’ promises" },
+              { "id": "rb3", "label": "I connected the aside to what comes next" }
+            ]
+          }
+        }
+      ],
+      "wisdomAward": 40
+    },
+    {
+      "day": 4,
+      "title": "The Golden Round",
+      "subtitle": "A named heir, a letter home, and a resolution in the dark.",
+      "readingTarget": {
+        "chapterRefs": [
+          { "chapterIndex": 5, "chapterTitle": "Scene IV" },
+          { "chapterIndex": 6, "chapterTitle": "Scene V" }
+        ],
+        "citation": "Macbeth, Act I, Scenes 4–5",
+        "excerptTitle": "Forres and Inverness",
+        "excerptIntro": "Duncan settles the succession; a letter travels faster than the king.",
+        "excerpt": [
+          { "anchor": "d4-e1", "speaker": "Duncan", "text": "There’s no art" },
+          { "anchor": "d4-e2", "text": "To find the mind’s construction in the face:" },
+          { "anchor": "d4-e3", "speaker": "Duncan", "text": "We will establish our estate upon" },
+          { "anchor": "d4-e4", "text": "Our eldest, Malcolm, whom we name hereafter" },
+          { "anchor": "d4-e5", "text": "The Prince of Cumberland;" },
+          { "anchor": "d4-e6", "speaker": "Macbeth", "text": "The Prince of Cumberland! that is a step" },
+          { "anchor": "d4-e7", "text": "On which I must fall down, or else o’erleap," },
+          { "anchor": "d4-e8", "text": "For in my way it lies. Stars, hide your fires;" },
+          { "anchor": "d4-e9", "text": "Let not light see my black and deep desires:" },
+          { "anchor": "d4-e10", "speaker": "Lady Macbeth", "text": "Glamis thou art, and Cawdor; and shalt be" },
+          { "anchor": "d4-e11", "text": "What thou art promised: yet do I fear thy nature;" },
+          { "anchor": "d4-e12", "text": "It is too full o’ the milk of human kindness" },
+          { "anchor": "d4-e13", "text": "To catch the nearest way:" },
+          { "anchor": "d4-e14", "speaker": "Lady Macbeth", "text": "Hie thee hither," },
+          { "anchor": "d4-e15", "text": "That I may pour my spirits in thine ear;" },
+          { "anchor": "d4-e16", "text": "And chastise with the valour of my tongue" },
+          { "anchor": "d4-e17", "text": "All that impedes thee from the golden round," },
+          { "anchor": "d4-e18", "speaker": "Lady Macbeth", "text": "look like the innocent flower," },
+          { "anchor": "d4-e19", "text": "But be the serpent under’t." }
+        ],
+        "estimatedMinutes": 6,
+        "sourceNote": "Public-domain play text, bundled with Tome at public/content/macbeth/ch-5.json and ch-6.json. Quotations are public domain."
+      },
+      "contextCard": "Duncan names his son Malcolm Prince of Cumberland, and in one aside Macbeth calls the announcement ‘a step / On which I must fall down, or else o’erleap’. Kingship in Shakespeare’s Britain was understood as part of a God-ordered hierarchy, so a named heir made the crown look settled — and made Macbeth’s desire a treason against the order of things. At Inverness, Lady Macbeth reads his letter and resolves to ‘pour my spirits in thine ear’.",
+      "virgilPrompt": "Two households of thought today: Duncan cannot read faces, and Lady Macbeth reads her husband’s perfectly. Who in this play sees clearly, and who sees only what they want?",
+      "trial": [
+        {
+          "id": "macbeth-d04-fill-1",
+          "family": "fill-the-line",
+          "prompt": "Complete Macbeth’s aside as the stars come out.",
+          "anchors": [{ "paragraphId": "d4-e9" }],
+          "rationale": "‘Stars, hide your fires; / Let not light see my black and deep desires’ — the first time Macbeth asks the dark for help. It will not be the last.",
+          "evidenceAnchor": { "paragraphId": "d4-e9", "quote": "Let not light see my black and deep desires:" },
+          "hints": [
+            { "level": 1, "text": "The word names what he is asking the dark to conceal." },
+            { "level": 2, "text": "It is what the witches awakened on the heath." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "lines": ["Let not light see my black and deep ___"],
+            "blanks": [{ "lineIndex": 0, "answer": "desires" }],
+            "wordBank": ["desires", "designs", "dreams", "deeds"],
+            "mode": "bank"
+          }
+        },
+        {
+          "id": "macbeth-d04-who-1",
+          "family": "who-said-it",
+          "prompt": "Who admits he cannot read a face?",
+          "anchors": [{ "paragraphId": "d4-e1" }],
+          "rationale": "Duncan, speaking of the executed Cawdor: ‘There’s no art / To find the mind’s construction in the face.’ He says it moments before greeting the next traitor warmly.",
+          "evidenceAnchor": { "paragraphId": "d4-e1", "quote": "There’s no art / To find the mind’s construction in the face:" },
+          "hints": [
+            { "level": 1, "text": "The speaker is about to trust exactly the wrong person — again." },
+            { "level": 2, "text": "He is speaking of the first Thane of Cawdor." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "quote": "There’s no art / To find the mind’s construction in the face:",
+            "choices": [
+              { "name": "Duncan", "correct": true },
+              { "name": "Macbeth", "correct": false },
+              { "name": "Banquo", "correct": false },
+              { "name": "Lady Macbeth", "correct": false }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d04-tf-1",
+          "family": "true-false-with-reason",
+          "prompt": "Judge the claim, then choose the reason that proves it.",
+          "anchors": [{ "paragraphId": "d4-e12" }],
+          "rationale": "She fears the opposite: ambition without ‘the illness should attend it’. Her husband wants the crown but flinches from ‘the nearest way’.",
+          "evidenceAnchor": { "paragraphId": "d4-e12", "quote": "It is too full o’ the milk of human kindness" },
+          "hints": [
+            { "level": 1, "text": "Read her diagnosis of his ‘nature’ closely." },
+            { "level": 2, "text": "What does she think is in him in excess — ambition, or kindness?" }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "statement": "Lady Macbeth worries that Macbeth is too ambitious to take the crown.",
+            "correctBool": false,
+            "reasons": [
+              { "id": "r-milk", "text": "She fears he is ‘too full o’ the milk of human kindness / To catch the nearest way’ — ambitious, but without the ruthlessness ambition needs.", "correct": true },
+              { "id": "r-careless", "text": "She fears his ambition will make him careless in public.", "correct": false, "nearMiss": true, "distractorNote": "She does coach his face — ‘look like the innocent flower’ — but the diagnosis is kindness, not carelessness." },
+              { "id": "r-doubt", "text": "She doubts the witches’ prophecy is genuine.", "correct": false, "distractorNote": "She treats the promise as fact from the first line: ‘shalt be / What thou art promised’." }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d04-find-1",
+          "family": "find-the-evidence",
+          "prompt": "Tap the lines where Lady Macbeth resolves to drive Macbeth to the crown herself.",
+          "anchors": [{ "paragraphId": "d4-e14" }, { "paragraphId": "d4-e17" }],
+          "rationale": "‘Hie thee hither’ — come home fast — so she can pour her spirits into his ear and chastise away everything between him and ‘the golden round’. The plan is hers from this moment.",
+          "evidenceAnchor": { "paragraphId": "d4-e15", "quote": "That I may pour my spirits in thine ear;" },
+          "hints": [
+            { "level": 1, "text": "Look for the lines addressed to Macbeth before he arrives." },
+            { "level": 2, "text": "The run begins with a summons — ‘Hie thee hither’." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "claim": "Lady Macbeth resolves to drive Macbeth to the crown herself.",
+            "segments": [
+              "Hie thee hither,",
+              "That I may pour my spirits in thine ear;",
+              "And chastise with the valour of my tongue",
+              "All that impedes thee from the golden round,"
+            ],
+            "correctRange": [0, 3]
+          }
+        }
+      ],
+      "wisdomAward": 60,
+      "milestoneSeal": {
+        "sealId": "macbeth-golden-round",
+        "name": "The Golden Round",
+        "description": "For standing at the moment resolve replaced prophecy — the crown now has a plan."
+      }
+    },
+    {
+      "day": 5,
+      "title": "If It Were Done",
+      "subtitle": "A mind argues with itself — and loses on purpose.",
+      "readingTarget": {
+        "chapterRefs": [{ "chapterIndex": 8, "chapterTitle": "Scene VII" }],
+        "citation": "Macbeth, Act I, Scene 7",
+        "excerptTitle": "Macbeth’s castle",
+        "excerptIntro": "The king is at supper. Down the corridor, a decision is being unmade and remade.",
+        "excerpt": [
+          { "anchor": "d5-e1", "speaker": "Macbeth", "text": "If it were done when ’tis done, then ’twere well" },
+          { "anchor": "d5-e2", "text": "It were done quickly:" },
+          { "anchor": "d5-e3", "speaker": "Macbeth", "text": "He’s here in double trust;" },
+          { "anchor": "d5-e4", "text": "First, as I am his kinsman and his subject," },
+          { "anchor": "d5-e5", "text": "Strong both against the deed; then, as his host," },
+          { "anchor": "d5-e6", "text": "Who should against his murderer shut the door," },
+          { "anchor": "d5-e7", "text": "Not bear the knife myself." },
+          { "anchor": "d5-e8", "speaker": "Macbeth", "text": "I have no spur" },
+          { "anchor": "d5-e9", "text": "To prick the sides of my intent, but only" },
+          { "anchor": "d5-e10", "text": "Vaulting ambition, which o’erleaps itself" },
+          { "anchor": "d5-e11", "text": "And falls on the other." },
+          { "anchor": "d5-e12", "speaker": "Macbeth", "text": "We will proceed no further in this business:" },
+          { "anchor": "d5-e13", "speaker": "Macbeth", "text": "I dare do all that may become a man;" },
+          { "anchor": "d5-e14", "text": "Who dares do more is none." },
+          { "anchor": "d5-e15", "speaker": "Lady Macbeth", "text": "When you durst do it, then you were a man;" },
+          { "anchor": "d5-e16", "speaker": "Lady Macbeth", "text": "But screw your courage to the sticking-place," },
+          { "anchor": "d5-e17", "text": "And we’ll not fail." },
+          { "anchor": "d5-e18", "speaker": "Macbeth", "text": "I am settled, and bend up" },
+          { "anchor": "d5-e19", "text": "Each corporal agent to this terrible feat." },
+          { "anchor": "d5-e20", "text": "False face must hide what the false heart doth know." }
+        ],
+        "estimatedMinutes": 4,
+        "sourceNote": "Public-domain play text, bundled with Tome at public/content/macbeth/ch-8.json. Quotations are public domain."
+      },
+      "contextCard": "The soliloquy — a character alone, thinking aloud — is where Shakespeare lets us hear a mind try its own case. Macbeth’s ‘If it were done’ speech lists every reason not to kill Duncan: kinship, duty as a subject, the sacred duty of a host, and Duncan’s own goodness. What remains when the reasons run out is the play’s name for his motive: ‘vaulting ambition, which o’erleaps itself’. Lady Macbeth then attacks the one word he cannot bear: coward.",
+      "virgilPrompt": "Macbeth talks himself out of the murder in thirty lines — then back into it in one scene with his wife. Watch for the hinge: what argument actually moves him?",
+      "trial": [
+        {
+          "id": "macbeth-d05-word-1",
+          "family": "word-in-context",
+          "prompt": "‘Vaulting ambition, which o’erleaps itself’ — what does ‘o’erleaps’ mean?",
+          "anchors": [{ "paragraphId": "d5-e10" }],
+          "rationale": "To o’erleap is to jump over and past the mark. Ambition leaps at the crown and misses the landing — ‘falls on the other’ side.",
+          "evidenceAnchor": { "paragraphId": "d5-e10", "quote": "Vaulting ambition, which o’erleaps itself" },
+          "hints": [
+            { "level": 1, "text": "Picture a rider taking a fence too hard." },
+            { "level": 2, "text": "The next line says what happens after the leap: a fall." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "sentence": "I have no spur / To prick the sides of my intent, but only / Vaulting ambition, which o’erleaps itself / And falls on the other.",
+            "targetWord": "o’erleaps",
+            "choices": [
+              { "text": "Leaps over and past its mark — and falls on the far side", "correct": true },
+              { "text": "Climbs carefully, rung by rung", "correct": false },
+              { "text": "Outruns every rival in a race", "correct": false },
+              { "text": "Unties itself and wanders free", "correct": false }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d05-find-1",
+          "family": "find-the-evidence",
+          "prompt": "Tap the lines where Macbeth admits ambition is his only motive.",
+          "anchors": [{ "paragraphId": "d5-e8" }, { "paragraphId": "d5-e11" }],
+          "rationale": "‘I have no spur / To prick the sides of my intent, but only / Vaulting ambition’ — no grievance, no threat, no cause. Only the leap itself.",
+          "evidenceAnchor": { "paragraphId": "d5-e8", "quote": "I have no spur" },
+          "hints": [
+            { "level": 1, "text": "Look for the riding metaphor." },
+            { "level": 2, "text": "The run begins ‘I have no spur’ and ends with the fall." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "claim": "Macbeth admits he has no justification for the murder — only ambition.",
+            "segments": [
+              "I have no spur",
+              "To prick the sides of my intent, but only",
+              "Vaulting ambition, which o’erleaps itself",
+              "And falls on the other."
+            ],
+            "correctRange": [0, 3]
+          }
+        },
+        {
+          "id": "macbeth-d05-tf-1",
+          "family": "true-false-with-reason",
+          "prompt": "Judge the claim, then choose the reason that proves it.",
+          "anchors": [{ "paragraphId": "d5-e15" }, { "paragraphId": "d5-e16" }],
+          "rationale": "Her whole attack runs through his manhood: ‘When you durst do it, then you were a man’ — and the machine-shop image of courage screwed ‘to the sticking-place’.",
+          "evidenceAnchor": { "paragraphId": "d5-e15", "quote": "When you durst do it, then you were a man;" },
+          "hints": [
+            { "level": 1, "text": "Which word does she keep putting in front of him?" },
+            { "level": 2, "text": "She does not argue politics or prophecy — she argues courage." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "statement": "Lady Macbeth wins the argument by questioning Macbeth’s courage and manhood.",
+            "correctBool": true,
+            "reasons": [
+              { "id": "r-man", "text": "She tells him ‘When you durst do it, then you were a man’, and dares him to screw his courage ‘to the sticking-place’.", "correct": true },
+              { "id": "r-witches", "text": "She reminds him the witches commanded the murder.", "correct": false, "nearMiss": true, "distractorNote": "The witches prophesied but commanded nothing — and she never mentions them in this scene." },
+              { "id": "r-leave", "text": "She threatens to leave him if he refuses.", "correct": false, "distractorNote": "She attacks his love and courage, never her own loyalty." }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d05-refl-1",
+          "family": "reflection",
+          "prompt": "Virgil asks: ‘I dare do all that may become a man; / Who dares do more is none.’ Two definitions of manhood collide in this scene. Whose wins — and what does the victory cost?",
+          "anchors": [{ "paragraphId": "d5-e13" }, { "paragraphId": "d5-e15" }],
+          "rationale": "The Trial rewards a clear reading of the collision: Macbeth’s limit (‘become a man’) against Lady Macbeth’s escalation (‘then you were a man’).",
+          "evidenceAnchor": { "paragraphId": "d5-e13", "quote": "I dare do all that may become a man;" },
+          "hints": [
+            { "level": 1, "text": "Put the two ‘man’ lines side by side." },
+            { "level": 2, "text": "Which definition is standing at the end of the scene?" }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "minWords": 40,
+            "guidance": [
+              "Quote or paraphrase both definitions.",
+              "Say which one wins in the scene.",
+              "Name one thing the victory costs."
+            ],
+            "rubric": [
+              { "id": "rb1", "label": "I contrasted the two definitions of manhood" },
+              { "id": "rb2", "label": "I said which definition prevails in the scene" },
+              { "id": "rb3", "label": "I named a cost of that victory" }
+            ]
+          }
+        }
+      ],
+      "wisdomAward": 40
+    },
+    {
+      "day": 6,
+      "title": "Is This a Dagger",
+      "subtitle": "A weapon made of air points the way to Duncan’s door.",
+      "readingTarget": {
+        "chapterRefs": [{ "chapterIndex": 10, "chapterTitle": "Scene I" }],
+        "citation": "Macbeth, Act II, Scene 1",
+        "excerptTitle": "Court of Macbeth’s castle, past midnight",
+        "excerptIntro": "Banquo cannot sleep either. Heaven has put out its candles.",
+        "excerpt": [
+          { "anchor": "d6-e1", "speaker": "Banquo", "text": "Hold, take my sword. There’s husbandry in heaven;" },
+          { "anchor": "d6-e2", "text": "Their candles are all out." },
+          { "anchor": "d6-e3", "speaker": "Macbeth", "text": "Is this a dagger which I see before me," },
+          { "anchor": "d6-e4", "text": "The handle toward my hand? Come, let me clutch thee." },
+          { "anchor": "d6-e5", "text": "I have thee not, and yet I see thee still." },
+          { "anchor": "d6-e6", "speaker": "Macbeth", "text": "A dagger of the mind, a false creation," },
+          { "anchor": "d6-e7", "text": "Proceeding from the heat-oppressed brain?" },
+          { "anchor": "d6-e8", "speaker": "Macbeth", "text": "I see thee yet, in form as palpable" },
+          { "anchor": "d6-e9", "text": "As this which now I draw." },
+          { "anchor": "d6-e10", "speaker": "Macbeth", "text": "And on thy blade and dudgeon gouts of blood," },
+          { "anchor": "d6-e11", "text": "Which was not so before. There’s no such thing:" },
+          { "anchor": "d6-e12", "text": "It is the bloody business which informs" },
+          { "anchor": "d6-e13", "text": "Thus to mine eyes." },
+          { "anchor": "d6-e14", "speaker": "Macbeth", "text": "With Tarquin’s ravishing strides, towards his design" },
+          { "anchor": "d6-e15", "text": "Moves like a ghost." },
+          { "anchor": "d6-e16", "speaker": "Macbeth", "text": "I go, and it is done; the bell invites me." },
+          { "anchor": "d6-e17", "text": "Hear it not, Duncan; for it is a knell" },
+          { "anchor": "d6-e18", "text": "That summons thee to heaven or to hell." }
+        ],
+        "estimatedMinutes": 3,
+        "sourceNote": "Public-domain play text, bundled with Tome at public/content/macbeth/ch-10.json. Quotations are public domain."
+      },
+      "contextCard": "Alone in the dark court before the murder, Macbeth sees a dagger that is not there. Shakespeare names the phenomenon inside the speech itself: ‘a false creation, / Proceeding from the heat-oppressed brain’ — perhaps the first stage direction ever written into a line. When he moves ‘with Tarquin’s ravishing strides’, he is comparing himself to the Roman tyrant whose crime, in Shakespeare’s poem The Rape of Lucrece (1594), destroyed a house and a dynasty.",
+      "virgilPrompt": "Is the dagger a warning or a summons? Macbeth asks the question and then answers it with his feet. Read closely: at what exact moment does the vision turn bloody?",
+      "trial": [
+        {
+          "id": "macbeth-d06-fill-1",
+          "family": "fill-the-line",
+          "prompt": "Complete the opening of the soliloquy.",
+          "anchors": [{ "paragraphId": "d6-e3" }],
+          "rationale": "‘Is this a dagger which I see before me’ — the most famous hallucination in English theatre begins as a simple question.",
+          "evidenceAnchor": { "paragraphId": "d6-e3", "quote": "Is this a dagger which I see before me," },
+          "hints": [
+            { "level": 1, "text": "The object’s handle points toward his hand." },
+            { "level": 2, "text": "It is the instrument he is about to use." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "lines": ["Is this a ___ which I see before me,", "The handle toward my hand? Come, let me clutch thee."],
+            "blanks": [{ "lineIndex": 0, "answer": "dagger" }],
+            "wordBank": ["dagger", "shadow", "lantern", "crown"],
+            "mode": "bank"
+          }
+        },
+        {
+          "id": "macbeth-d06-word-1",
+          "family": "word-in-context",
+          "prompt": "The vision appears ‘in form as palpable / As this which now I draw’. What does ‘palpable’ mean?",
+          "anchors": [{ "paragraphId": "d6-e8" }],
+          "rationale": "Palpable means touchable — solid to the hand. The phantom dagger feels as real as the steel one he draws to compare it with.",
+          "evidenceAnchor": { "paragraphId": "d6-e8", "quote": "in form as palpable / As this which now I draw." },
+          "hints": [
+            { "level": 1, "text": "He is comparing the vision to something physical he is holding." },
+            { "level": 2, "text": "Think of the Latin root: palpare, to touch." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "sentence": "I see thee yet, in form as palpable / As this which now I draw.",
+            "targetWord": "palpable",
+            "choices": [
+              { "text": "Able to be touched — as real to the hand as to the eye", "correct": true },
+              { "text": "Faint and barely visible", "correct": false },
+              { "text": "Terrifying to look at", "correct": false },
+              { "text": "Painted like a picture", "correct": false }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d06-who-1",
+          "family": "who-said-it",
+          "prompt": "Who reads thrift in the dark sky?",
+          "anchors": [{ "paragraphId": "d6-e1" }],
+          "rationale": "Banquo, sleepless: ‘There’s husbandry in heaven; / Their candles are all out.’ Heaven economises on starlight the night it is needed most.",
+          "evidenceAnchor": { "paragraphId": "d6-e1", "quote": "There’s husbandry in heaven;" },
+          "hints": [
+            { "level": 1, "text": "The speaker is also awake past midnight — but innocent." },
+            { "level": 2, "text": "He hands his sword to his son Fleance." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "quote": "There’s husbandry in heaven; / Their candles are all out.",
+            "choices": [
+              { "name": "Banquo", "correct": true },
+              { "name": "Fleance", "correct": false },
+              { "name": "Macbeth", "correct": false },
+              { "name": "Duncan", "correct": false }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d06-tf-1",
+          "family": "true-false-with-reason",
+          "prompt": "Judge the claim, then choose the reason that proves it.",
+          "anchors": [{ "paragraphId": "d6-e10" }],
+          "rationale": "The vision mutates as he watches: ‘on thy blade and dudgeon gouts of blood, / Which was not so before’. The blood arrives before the deed — the mind rehearsing its own horror.",
+          "evidenceAnchor": { "paragraphId": "d6-e10", "quote": "And on thy blade and dudgeon gouts of blood," },
+          "hints": [
+            { "level": 1, "text": "Track the phrase ‘which was not so before’." },
+            { "level": 2, "text": "Whose blade shows the blood — the real one or the vision?" }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "statement": "The dagger Macbeth sees appears bloody before any blood is shed.",
+            "correctBool": true,
+            "reasons": [
+              { "id": "r-gouts", "text": "‘On thy blade and dudgeon gouts of blood, / Which was not so before’ — the vision changes as he watches.", "correct": true },
+              { "id": "r-real", "text": "He draws his own dagger and finds it already stained.", "correct": false, "nearMiss": true, "distractorNote": "He does draw a real dagger — to compare. The blood is on the phantom, and even he admits ‘There’s no such thing’." },
+              { "id": "r-witches", "text": "The witches show him the bloody dagger in a dream.", "correct": false, "distractorNote": "No witches appear in this scene; Macbeth himself traces the vision to his ‘heat-oppressed brain’." }
+            ]
+          }
+        }
+      ],
+      "wisdomAward": 40
+    },
+    {
+      "day": 7,
+      "title": "Sleep No More",
+      "subtitle": "The deed is done offstage. The echo happens here.",
+      "readingTarget": {
+        "chapterRefs": [{ "chapterIndex": 11, "chapterTitle": "Scene II" }],
+        "citation": "Macbeth, Act II, Scene 2",
+        "excerptTitle": "The same, moments later",
+        "excerptIntro": "Two people, one staircase, and a voice only one of them can hear.",
+        "excerpt": [
+          { "anchor": "d7-e1", "speaker": "Lady Macbeth", "text": "I have drugg’d their possets," },
+          { "anchor": "d7-e2", "speaker": "Macbeth", "text": "I have done the deed. Didst thou not hear a noise?" },
+          { "anchor": "d7-e3", "speaker": "Macbeth", "text": "But wherefore could not I pronounce ‘Amen’?" },
+          { "anchor": "d7-e4", "text": "I had most need of blessing, and ‘Amen’" },
+          { "anchor": "d7-e5", "text": "Stuck in my throat." },
+          { "anchor": "d7-e6", "speaker": "Macbeth", "text": "Methought I heard a voice cry ‘Sleep no more!" },
+          { "anchor": "d7-e7", "text": "Macbeth does murder sleep,’ the innocent sleep," },
+          { "anchor": "d7-e8", "text": "Sleep that knits up the ravell’d sleave of care," },
+          { "anchor": "d7-e9", "speaker": "Lady Macbeth", "text": "Go get some water," },
+          { "anchor": "d7-e10", "text": "And wash this filthy witness from your hand." },
+          { "anchor": "d7-e11", "speaker": "Macbeth", "text": "Will all great Neptune’s ocean wash this blood" },
+          { "anchor": "d7-e12", "text": "Clean from my hand? No, this my hand will rather" },
+          { "anchor": "d7-e13", "text": "The multitudinous seas in incarnadine," },
+          { "anchor": "d7-e14", "text": "Making the green one red." },
+          { "anchor": "d7-e15", "speaker": "Lady Macbeth", "text": "A little water clears us of this deed:" },
+          { "anchor": "d7-e16", "speaker": "Macbeth", "text": "To know my deed, ’twere best not know myself." },
+          { "anchor": "d7-e17", "text": "Wake Duncan with thy knocking! I would thou couldst!" }
+        ],
+        "estimatedMinutes": 3,
+        "sourceNote": "Public-domain play text, bundled with Tome at public/content/macbeth/ch-11.json. Quotations are public domain."
+      },
+      "contextCard": "The murder happens offstage; what we watch is its echo in two people. Macbeth hears a voice cry ‘Sleep no more!’ and finds he cannot say ‘Amen’ to a sleeping servant’s prayer. Lady Macbeth, practical where he is visionary, carries the daggers back herself. Their lines about water and blood — his ‘Will all great Neptune’s ocean wash this blood / Clean from my hand?’ against her ‘A little water clears us of this deed’ — are the play’s two doctrines of guilt, set side by side in one scene.",
+      "virgilPrompt": "Neither murderer sleeps tonight. Listen for what each of them cannot say and cannot wash — and remember her confidence about water. The play will remember it too.",
+      "trial": [
+        {
+          "id": "macbeth-d07-fill-1",
+          "family": "fill-the-line",
+          "prompt": "Complete the voice’s accusation.",
+          "anchors": [{ "paragraphId": "d7-e7" }],
+          "rationale": "‘Macbeth does murder sleep’ — the voice names the victim no one counted: rest itself, for every sleeper in the house, starting with the murderer.",
+          "evidenceAnchor": { "paragraphId": "d7-e7", "quote": "Macbeth does murder sleep,’ the innocent sleep," },
+          "hints": [
+            { "level": 1, "text": "The voice repeats the same word it began with." },
+            { "level": 2, "text": "It is what the innocent are doing in the next chamber." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "lines": ["Methought I heard a voice cry ‘Sleep no more!", "Macbeth does murder ___,’ the innocent ___,"],
+            "blanks": [
+              { "lineIndex": 1, "answer": "sleep" },
+              { "lineIndex": 1, "answer": "sleep" }
+            ],
+            "wordBank": ["sleep", "time", "mercy", "peace"],
+            "mode": "bank"
+          }
+        },
+        {
+          "id": "macbeth-d07-who-1",
+          "family": "who-said-it",
+          "prompt": "Who believes a little water settles everything?",
+          "anchors": [{ "paragraphId": "d7-e15" }],
+          "rationale": "Lady Macbeth: ‘A little water clears us of this deed.’ She will spend Act V trying to wash the same hand that clears them here.",
+          "evidenceAnchor": { "paragraphId": "d7-e15", "quote": "A little water clears us of this deed:" },
+          "hints": [
+            { "level": 1, "text": "The speaker is the practical one tonight." },
+            { "level": 2, "text": "They have already told their spouse to ‘Go get some water’." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "quote": "A little water clears us of this deed:",
+            "choices": [
+              { "name": "Lady Macbeth", "correct": true },
+              { "name": "Macbeth", "correct": false },
+              { "name": "Macduff", "correct": false },
+              { "name": "The Porter", "correct": false }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d07-find-1",
+          "family": "find-the-evidence",
+          "prompt": "Tap the lines where Macbeth feels his guilt could stain the whole sea.",
+          "anchors": [{ "paragraphId": "d7-e11" }, { "paragraphId": "d7-e14" }],
+          "rationale": "No ocean can clean the hand; instead the hand would turn ‘the multitudinous seas in incarnadine, / Making the green one red’. Guilt larger than the world’s water.",
+          "evidenceAnchor": { "paragraphId": "d7-e11", "quote": "Will all great Neptune’s ocean wash this blood" },
+          "hints": [
+            { "level": 1, "text": "Look for Neptune and the colour words." },
+            { "level": 2, "text": "The run is one continuous sentence, from question to ‘red’." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "claim": "Macbeth feels his guilt could stain the whole sea red.",
+            "segments": [
+              "Will all great Neptune’s ocean wash this blood",
+              "Clean from my hand? No, this my hand will rather",
+              "The multitudinous seas in incarnadine,",
+              "Making the green one red."
+            ],
+            "correctRange": [0, 3]
+          }
+        },
+        {
+          "id": "macbeth-d07-order-1",
+          "family": "ordering",
+          "prompt": "Put the scene’s beats in the order they happen.",
+          "anchors": [{ "paragraphId": "d7-e1" }, { "paragraphId": "d7-e6" }],
+          "rationale": "Possets drugged, the deed done, the failed ‘Amen’, the voice crying ‘Sleep no more’, then the knocking that will not stop until the play ends.",
+          "evidenceAnchor": { "paragraphId": "d7-e2", "quote": "I have done the deed." },
+          "hints": [
+            { "level": 1, "text": "Lady Macbeth speaks first in this scene — about what she drugged." },
+            { "level": 2, "text": "The ‘Amen’ comes before the voice; the knocking comes last." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "items": [
+              { "id": "possets", "text": "Lady Macbeth drugs the grooms’ possets" },
+              { "id": "deed", "text": "Macbeth returns: ‘I have done the deed’" },
+              { "id": "amen", "text": "Macbeth cannot say ‘Amen’" },
+              { "id": "voice", "text": "A voice cries ‘Sleep no more’" },
+              { "id": "knocking", "text": "Knocking sounds at the south entry" }
+            ],
+            "correctOrder": ["possets", "deed", "amen", "voice", "knocking"]
+          }
+        }
+      ],
+      "wisdomAward": 40
+    },
+    {
+      "day": 8,
+      "title": "The Hell-Gate",
+      "subtitle": "A drunk Porter jokes about hell — and is standing in it.",
+      "readingTarget": {
+        "chapterRefs": [
+          { "chapterIndex": 12, "chapterTitle": "Scene III" },
+          { "chapterIndex": 13, "chapterTitle": "Scene IV" }
+        ],
+        "citation": "Macbeth, Act II, Scene 3",
+        "excerptTitle": "The gate, then the discovery",
+        "excerptIntro": "The knocking from last night has a name: Macduff, come to wake the king.",
+        "excerpt": [
+          { "anchor": "d8-e1", "speaker": "Porter", "text": "Here’s a knocking indeed! If a man were porter of hell-gate, he should have old turning the key." },
+          { "anchor": "d8-e2", "speaker": "Porter", "text": "Faith, here’s an equivocator, that could swear in both the scales against either scale;" },
+          { "anchor": "d8-e3", "speaker": "Porter", "text": "But this place is too cold for hell. I’ll devil-porter it no further:" },
+          { "anchor": "d8-e4", "speaker": "Lennox", "text": "The night has been unruly: where we lay," },
+          { "anchor": "d8-e5", "text": "Our chimneys were blown down;" },
+          { "anchor": "d8-e6", "speaker": "Macbeth", "text": "’Twas a rough night." },
+          { "anchor": "d8-e7", "speaker": "Macduff", "text": "O horror, horror, horror! Tongue nor heart" },
+          { "anchor": "d8-e8", "text": "Cannot conceive nor name thee!" },
+          { "anchor": "d8-e9", "speaker": "Macduff", "text": "Confusion now hath made his masterpiece!" },
+          { "anchor": "d8-e10", "text": "Most sacrilegious murder hath broke ope" },
+          { "anchor": "d8-e11", "text": "The Lord’s anointed temple, and stole thence" },
+          { "anchor": "d8-e12", "text": "The life o’ the building!" },
+          { "anchor": "d8-e13", "speaker": "Macbeth", "text": "Had I but died an hour before this chance," },
+          { "anchor": "d8-e14", "text": "I had lived a blessed time;" },
+          { "anchor": "d8-e15", "speaker": "Macbeth", "text": "O, yet I do repent me of my fury," },
+          { "anchor": "d8-e16", "text": "That I did kill them." }
+        ],
+        "estimatedMinutes": 8,
+        "sourceNote": "Public-domain play text, bundled with Tome at public/content/macbeth/ch-12.json and ch-13.json. Quotations are public domain."
+      },
+      "contextCard": "Morning brings the Porter, joking that he keeps the gate of hell — a grim joke, since hell is exactly what Inverness has become. His ‘equivocator’ gag was topical: after the Gunpowder Plot of November 1605, the Jesuit Henry Garnet was tried and executed in 1606 for defending equivocation, the art of swearing truthfully while meaning falsely. Then Macduff finds the king, and comedy curdles in a single line: ‘O horror, horror, horror.’",
+      "virgilPrompt": "Why does Shakespeare put his crudest comedian directly after a king’s murder — and directly before its discovery? Hold the question while the Porter works the door.",
+      "trial": [
+        {
+          "id": "macbeth-d08-word-1",
+          "family": "word-in-context",
+          "prompt": "The Porter lets in an ‘equivocator’. What is an equivocator?",
+          "anchors": [{ "paragraphId": "d8-e2" }],
+          "rationale": "One who swears ‘in both the scales against either scale’ — words technically true, meaning false. The play’s own prophecies will equivocate the same way.",
+          "evidenceAnchor": { "paragraphId": "d8-e2", "quote": "an equivocator, that could swear in both the scales against either scale;" },
+          "hints": [
+            { "level": 1, "text": "The Porter defines the word in the same breath: scales, swearing." },
+            { "level": 2, "text": "Think of ‘equal voice’ — one statement carrying two meanings." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "sentence": "here’s an equivocator, that could swear in both the scales against either scale;",
+            "targetWord": "equivocator",
+            "choices": [
+              { "text": "One who swears with double meanings — technically true, actually false", "correct": true },
+              { "text": "A drunkard who cannot hold his drink", "correct": false },
+              { "text": "A merchant who cheats the scales", "correct": false },
+              { "text": "A priest who hears confessions", "correct": false }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d08-who-1",
+          "family": "who-said-it",
+          "prompt": "Who discovers the murder and names it?",
+          "anchors": [{ "paragraphId": "d8-e7" }],
+          "rationale": "Macduff — the man who came to wake the king finds him instead. ‘Tongue nor heart / Cannot conceive nor name thee!’",
+          "evidenceAnchor": { "paragraphId": "d8-e7", "quote": "O horror, horror, horror!" },
+          "hints": [
+            { "level": 1, "text": "He had an appointment with the king this morning." },
+            { "level": 2, "text": "He calls the body ‘the Lord’s anointed temple’." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "quote": "O horror, horror, horror! Tongue nor heart / Cannot conceive nor name thee!",
+            "choices": [
+              { "name": "Macduff", "correct": true },
+              { "name": "Lennox", "correct": false },
+              { "name": "Banquo", "correct": false },
+              { "name": "Malcolm", "correct": false }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d08-tf-1",
+          "family": "true-false-with-reason",
+          "prompt": "Judge the claim, then choose the reason that proves it.",
+          "anchors": [{ "paragraphId": "d8-e15" }, { "paragraphId": "d8-e16" }],
+          "rationale": "He says it himself: ‘O, yet I do repent me of my fury, / That I did kill them.’ Killing the grooms silences the only witnesses — and gives him a grief to perform.",
+          "evidenceAnchor": { "paragraphId": "d8-e16", "quote": "That I did kill them." },
+          "hints": [
+            { "level": 1, "text": "Listen to what Macbeth confesses while everyone mourns." },
+            { "level": 2, "text": "The dead men are the chamberlains — the supposed killers." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "statement": "Macbeth claims he killed Duncan’s chamberlains in a fit of fury.",
+            "correctBool": true,
+            "reasons": [
+              { "id": "r-fury", "text": "‘O, yet I do repent me of my fury, / That I did kill them’ — his own account, offered as grief.", "correct": true },
+              { "id": "r-sons", "text": "He openly accuses Malcolm and Donalbain before they flee.", "correct": false, "nearMiss": true, "distractorNote": "Suspicion does fall on the sons after they run — but Macbeth does not name them here; he confesses to killing the grooms." },
+              { "id": "r-porter", "text": "He blames the Porter for sleeping at the gate.", "correct": false, "distractorNote": "The Porter admits Macduff in person; no blame lands on him." }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d08-refl-1",
+          "family": "reflection",
+          "prompt": "Virgil asks again: why a drunk Porter joking about hell, here, between the murder and its discovery? What does the laughter do to the audience?",
+          "anchors": [{ "paragraphId": "d8-e1" }, { "paragraphId": "d8-e3" }],
+          "rationale": "The Trial rewards any grounded answer — relief, contrast, dramatic irony (‘too cold for hell’), or the way jokes about equivocation teach us to hear the play’s lies.",
+          "evidenceAnchor": { "paragraphId": "d8-e1", "quote": "porter of hell-gate" },
+          "hints": [
+            { "level": 1, "text": "What do you feel in your body when the knocking finally gets answered?" },
+            { "level": 2, "text": "The Porter thinks he is joking about hell. Is he wrong?" }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "minWords": 40,
+            "guidance": [
+              "Describe the effect on you as a reader or viewer.",
+              "Use one of the Porter’s actual lines.",
+              "Connect the joke to the scene before or after it."
+            ],
+            "rubric": [
+              { "id": "rb1", "label": "I named an effect the comedy has on the audience" },
+              { "id": "rb2", "label": "I quoted or paraphrased the Porter" },
+              { "id": "rb3", "label": "I connected the joke to the murder around it" }
+            ]
+          }
+        }
+      ],
+      "wisdomAward": 60,
+      "milestoneSeal": {
+        "sealId": "macbeth-hell-gate",
+        "name": "The Hell-Gate",
+        "description": "For passing the Porter’s gate on the morning the castle woke to murder."
+      }
+    },
+    {
+      "day": 9,
+      "title": "To Be Thus Is Nothing",
+      "subtitle": "A fruitless crown, a barren sceptre, two men waiting outside.",
+      "readingTarget": {
+        "chapterRefs": [{ "chapterIndex": 15, "chapterTitle": "Scene I" }],
+        "citation": "Macbeth, Act III, Scene 1",
+        "excerptTitle": "Forres. The palace.",
+        "excerptIntro": "Banquo counts what the witches promised him. So does the king.",
+        "excerpt": [
+          { "anchor": "d9-e1", "speaker": "Banquo", "text": "Thou hast it now: king, Cawdor, Glamis, all," },
+          { "anchor": "d9-e2", "text": "As the weird women promised, and, I fear," },
+          { "anchor": "d9-e3", "text": "Thou play’dst most foully for’t:" },
+          { "anchor": "d9-e4", "speaker": "Macbeth", "text": "To be thus is nothing;" },
+          { "anchor": "d9-e5", "text": "But to be safely thus." },
+          { "anchor": "d9-e6", "speaker": "Macbeth", "text": "Upon my head they placed a fruitless crown," },
+          { "anchor": "d9-e7", "text": "And put a barren sceptre in my gripe," },
+          { "anchor": "d9-e8", "text": "Thence to be wrench’d with an unlineal hand," },
+          { "anchor": "d9-e9", "text": "No son of mine succeeding." },
+          { "anchor": "d9-e10", "speaker": "Macbeth", "text": "For Banquo’s issue have I filed my mind;" },
+          { "anchor": "d9-e11", "text": "For them the gracious Duncan have I murder’d;" },
+          { "anchor": "d9-e12", "speaker": "Macbeth", "text": "Rather than so, come fate into the list," },
+          { "anchor": "d9-e13", "text": "And champion me to the utterance!" }
+        ],
+        "estimatedMinutes": 6,
+        "sourceNote": "Public-domain play text, bundled with Tome at public/content/macbeth/ch-15.json. Quotations are public domain."
+      },
+      "contextCard": "Crowned at last, Macbeth discovers the arithmetic of the usurper: a crown without an heir is ‘fruitless’, a sceptre without a line is ‘barren’. Banquo’s soliloquy opens the scene suspecting foul play — ‘I fear / Thou play’dst most foully for’t’ — and Macbeth’s soliloquy ends it hiring murderers. The prophecy that once thrilled him now reads as an eviction notice: ‘For Banquo’s issue have I filed my mind; / For them the gracious Duncan have I murder’d.’",
+      "virgilPrompt": "Banquo knows. Macbeth knows that Banquo knows. Everything in this scene is said twice — once in public, once in soliloquy. Read both tracks at once.",
+      "trial": [
+        {
+          "id": "macbeth-d09-who-1",
+          "family": "who-said-it",
+          "prompt": "Who opens the scene by counting the king’s new titles?",
+          "anchors": [{ "paragraphId": "d9-e1" }],
+          "rationale": "Banquo: ‘Thou hast it now: king, Cawdor, Glamis, all, / As the weird women promised’ — and in the same breath, the suspicion that will kill him.",
+          "evidenceAnchor": { "paragraphId": "d9-e1", "quote": "Thou hast it now: king, Cawdor, Glamis, all," },
+          "hints": [
+            { "level": 1, "text": "The speaker immediately adds: ‘I fear…’" },
+            { "level": 2, "text": "His own prophecy promised his descendants the same crown." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "quote": "Thou hast it now: king, Cawdor, Glamis, all, / As the weird women promised",
+            "choices": [
+              { "name": "Banquo", "correct": true },
+              { "name": "Macbeth", "correct": false },
+              { "name": "Lady Macbeth", "correct": false },
+              { "name": "Ross", "correct": false }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d09-fill-1",
+          "family": "fill-the-line",
+          "prompt": "Complete the king’s credo.",
+          "anchors": [{ "paragraphId": "d9-e4" }, { "paragraphId": "d9-e5" }],
+          "rationale": "‘To be thus is nothing; / But to be safely thus’ — having the crown means nothing without feeling safe in it. Safety is the one thing murder cannot buy.",
+          "evidenceAnchor": { "paragraphId": "d9-e5", "quote": "But to be safely thus." },
+          "hints": [
+            { "level": 1, "text": "The missing word is what he does not feel on the throne." },
+            { "level": 2, "text": "It is the opposite of ‘in fear of Banquo’." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "lines": ["To be thus is nothing;", "But to be ___ thus."],
+            "blanks": [{ "lineIndex": 1, "answer": "safely" }],
+            "wordBank": ["safely", "boldly", "gladly", "justly"],
+            "mode": "bank"
+          }
+        },
+        {
+          "id": "macbeth-d09-find-1",
+          "family": "find-the-evidence",
+          "prompt": "Tap the lines where Macbeth dreads that Banquo’s line will inherit the crown.",
+          "anchors": [{ "paragraphId": "d9-e6" }, { "paragraphId": "d9-e9" }],
+          "rationale": "A ‘fruitless crown’, a ‘barren sceptre’, wrenched away ‘with an unlineal hand, / No son of mine succeeding’ — the entire fear is succession.",
+          "evidenceAnchor": { "paragraphId": "d9-e6", "quote": "Upon my head they placed a fruitless crown," },
+          "hints": [
+            { "level": 1, "text": "Look for the two adjectives attached to crown and sceptre." },
+            { "level": 2, "text": "The run ends with ‘No son of mine succeeding’." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "claim": "Macbeth dreads that Banquo’s descendants will take the crown from his line.",
+            "segments": [
+              "Upon my head they placed a fruitless crown,",
+              "And put a barren sceptre in my gripe,",
+              "Thence to be wrench’d with an unlineal hand,",
+              "No son of mine succeeding."
+            ],
+            "correctRange": [0, 3]
+          }
+        },
+        {
+          "id": "macbeth-d09-order-1",
+          "family": "ordering",
+          "prompt": "Put the scene’s movements in order.",
+          "anchors": [{ "paragraphId": "d9-e1" }, { "paragraphId": "d9-e12" }],
+          "rationale": "Suspicion, then the friendly interrogation about a ride, then the emptied stage, then the murderers. Macbeth never says the word — the structure says it for him.",
+          "evidenceAnchor": { "paragraphId": "d9-e3", "quote": "Thou play’dst most foully for’t:" },
+          "hints": [
+            { "level": 1, "text": "Banquo speaks first; the murderers arrive last." },
+            { "level": 2, "text": "The king asks about horses before he asks to be alone." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "items": [
+              { "id": "suspect", "text": "Banquo suspects the crown was won by foul play" },
+              { "id": "feast", "text": "Macbeth questions Banquo about his afternoon ride" },
+              { "id": "alone", "text": "Macbeth dismisses the court to be alone" },
+              { "id": "murderers", "text": "Macbeth receives two murderers" }
+            ],
+            "correctOrder": ["suspect", "feast", "alone", "murderers"]
+          }
+        }
+      ],
+      "wisdomAward": 40
+    },
+    {
+      "day": 10,
+      "title": "Avaunt, and Quit My Sight",
+      "subtitle": "The coronation banquet has one guest too many.",
+      "readingTarget": {
+        "chapterRefs": [{ "chapterIndex": 18, "chapterTitle": "Scene IV" }],
+        "citation": "Macbeth, Act III, Scene 4",
+        "excerptTitle": "A hall in the palace",
+        "excerptIntro": "The table is full. Macbeth insists it is full. Only he can see why.",
+        "excerpt": [
+          { "anchor": "d10-e1", "speaker": "Macbeth", "text": "Which of you have done this?" },
+          { "anchor": "d10-e2", "speaker": "Macbeth", "text": "Thou canst not say I did it: never shake" },
+          { "anchor": "d10-e3", "text": "Thy gory locks at me." },
+          { "anchor": "d10-e4", "speaker": "Lady Macbeth", "text": "When all’s done," },
+          { "anchor": "d10-e5", "text": "You look but on a stool." },
+          { "anchor": "d10-e6", "speaker": "Macbeth", "text": "Avaunt! and quit my sight! let the earth hide thee!" },
+          { "anchor": "d10-e7", "text": "Thy bones are marrowless, thy blood is cold;" },
+          { "anchor": "d10-e8", "speaker": "Macbeth", "text": "It will have blood; they say, blood will have blood:" },
+          { "anchor": "d10-e9", "speaker": "Macbeth", "text": "I am in blood" },
+          { "anchor": "d10-e10", "text": "Stepp’d in so far that, should I wade no more," },
+          { "anchor": "d10-e11", "text": "Returning were as tedious as go o’er:" },
+          { "anchor": "d10-e12", "speaker": "Macbeth", "text": "Strange things I have in head, that will to hand;" },
+          { "anchor": "d10-e13", "text": "Which must be acted ere they may be scann’d." }
+        ],
+        "estimatedMinutes": 7,
+        "sourceNote": "Public-domain play text, bundled with Tome at public/content/macbeth/ch-18.json. Quotations are public domain."
+      },
+      "contextCard": "At the coronation banquet, with every lord in Scotland watching, the one man who knows Banquo is dead sees Banquo take his seat. Only Macbeth sees the ghost — Lady Macbeth hisses that he looks ‘but on a stool’ — and the king falls apart in public while his queen covers for him. Afterwards he says the line every tyrant eventually arrives at: ‘I am in blood / Stepp’d in so far’ that going back is as tedious as going on.",
+      "virgilPrompt": "Watch the queen manage the room while the king haunts it. Then read the last speech twice: what has Macbeth decided about the arithmetic of murder?",
+      "trial": [
+        {
+          "id": "macbeth-d10-who-1",
+          "family": "who-said-it",
+          "prompt": "Who shouts at an empty stool?",
+          "anchors": [{ "paragraphId": "d10-e6" }],
+          "rationale": "Macbeth, to the ghost only he can see: ‘Avaunt! and quit my sight!’ The lords see a king screaming at furniture.",
+          "evidenceAnchor": { "paragraphId": "d10-e6", "quote": "Avaunt! and quit my sight! let the earth hide thee!" },
+          "hints": [
+            { "level": 1, "text": "The speaker is the only one who sees what he is shouting at." },
+            { "level": 2, "text": "He addresses the dead man’s ‘marrowless’ bones." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "quote": "Avaunt! and quit my sight! let the earth hide thee!",
+            "choices": [
+              { "name": "Macbeth", "correct": true },
+              { "name": "Banquo", "correct": false },
+              { "name": "Lady Macbeth", "correct": false },
+              { "name": "Macduff", "correct": false }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d10-tf-1",
+          "family": "true-false-with-reason",
+          "prompt": "Judge the claim, then choose the reason that proves it.",
+          "anchors": [{ "paragraphId": "d10-e4" }, { "paragraphId": "d10-e5" }],
+          "rationale": "The ghost is in Macbeth’s eye alone. Lady Macbeth tells the lords he looks ‘but on a stool’, and Ross only concludes ‘his highness is not well’.",
+          "evidenceAnchor": { "paragraphId": "d10-e5", "quote": "You look but on a stool." },
+          "hints": [
+            { "level": 1, "text": "What does Lady Macbeth tell the guests he is looking at?" },
+            { "level": 2, "text": "Ross diagnoses illness, not ghosts." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "statement": "The other guests at the banquet can see Banquo’s ghost.",
+            "correctBool": false,
+            "reasons": [
+              { "id": "r-stool", "text": "Lady Macbeth tells them he looks ‘but on a stool’ — the ghost is in Macbeth’s eye alone.", "correct": true },
+              { "id": "r-ross", "text": "Ross rises from the table because he sees the ghost too.", "correct": false, "nearMiss": true, "distractorNote": "Ross does rise — but his explanation is ‘his highness is not well’. He sees a sick king, not a ghost." },
+              { "id": "r-speaks", "text": "The ghost addresses the whole table before vanishing.", "correct": false, "distractorNote": "The ghost never speaks; it only sits and nods its gory locks." }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d10-find-1",
+          "family": "find-the-evidence",
+          "prompt": "Tap the lines where Macbeth decides turning back would be as hard as going on.",
+          "anchors": [{ "paragraphId": "d10-e9" }, { "paragraphId": "d10-e11" }],
+          "rationale": "‘I am in blood / Stepp’d in so far that, should I wade no more, / Returning were as tedious as go o’er’ — the river crossed is the river he keeps crossing.",
+          "evidenceAnchor": { "paragraphId": "d10-e9", "quote": "I am in blood" },
+          "hints": [
+            { "level": 1, "text": "The image is of wading through something." },
+            { "level": 2, "text": "The run begins ‘I am in blood’ and ends with ‘go o’er’." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "claim": "Macbeth believes stopping now would be as hard as continuing to kill.",
+            "segments": [
+              "I am in blood",
+              "Stepp’d in so far that, should I wade no more,",
+              "Returning were as tedious as go o’er:"
+            ],
+            "correctRange": [0, 2]
+          }
+        },
+        {
+          "id": "macbeth-d10-fill-1",
+          "family": "fill-the-line",
+          "prompt": "Complete the folk-wisdom Macbeth now lives inside.",
+          "anchors": [{ "paragraphId": "d10-e8" }],
+          "rationale": "‘Blood will have blood’ — murder demands murder. The saying is older than the play; Macbeth has turned it into policy.",
+          "evidenceAnchor": { "paragraphId": "d10-e8", "quote": "blood will have blood:" },
+          "hints": [
+            { "level": 1, "text": "The line repeats its own first word." },
+            { "level": 2, "text": "It is the same word as the river he is wading in." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "lines": ["It will have blood; they say, blood will have ___"],
+            "blanks": [{ "lineIndex": 0, "answer": "blood" }],
+            "wordBank": ["blood", "proof", "guile", "time"],
+            "mode": "bank"
+          }
+        }
+      ],
+      "wisdomAward": 40
+    },
+    {
+      "day": 11,
+      "title": "Double, Double",
+      "subtitle": "Three apparitions, three promises, three loopholes.",
+      "readingTarget": {
+        "chapterRefs": [{ "chapterIndex": 22, "chapterTitle": "Scene I" }],
+        "citation": "Macbeth, Act IV, Scene 1",
+        "excerptTitle": "A cavern, a boiling cauldron",
+        "excerptIntro": "Macbeth returns to the witches — not to ask whether, but to ask how safe.",
+        "excerpt": [
+          { "anchor": "d11-e1", "speaker": "All", "text": "Double, double toil and trouble;" },
+          { "anchor": "d11-e2", "text": "Fire burn, and cauldron bubble." },
+          { "anchor": "d11-e3", "speaker": "Second Witch", "text": "By the pricking of my thumbs," },
+          { "anchor": "d11-e4", "text": "Something wicked this way comes." },
+          { "anchor": "d11-e5", "speaker": "First Apparition", "text": "Macbeth! Macbeth! Macbeth! beware Macduff;" },
+          { "anchor": "d11-e6", "text": "Beware the thane of Fife. Dismiss me. Enough." },
+          { "anchor": "d11-e7", "speaker": "Second Apparition", "text": "Be bloody, bold, and resolute; laugh to scorn" },
+          { "anchor": "d11-e8", "text": "The power of man, for none of woman born" },
+          { "anchor": "d11-e9", "text": "Shall harm Macbeth." },
+          { "anchor": "d11-e10", "speaker": "Third Apparition", "text": "Macbeth shall never vanquish’d be until" },
+          { "anchor": "d11-e11", "text": "Great Birnam wood to high Dunsinane hill" },
+          { "anchor": "d11-e12", "text": "Shall come against him." },
+          { "anchor": "d11-e13", "speaker": "Macbeth", "text": "Then live, Macduff: what need I fear of thee?" },
+          { "anchor": "d11-e14", "text": "But yet I’ll make assurance double sure," },
+          { "anchor": "d11-e15", "speaker": "Macbeth", "text": "What, will the line stretch out to the crack of doom?" },
+          { "anchor": "d11-e16", "speaker": "Macbeth", "text": "The castle of Macduff I will surprise;" },
+          { "anchor": "d11-e17", "text": "Seize upon Fife; give to the edge o’ the sword" },
+          { "anchor": "d11-e18", "text": "His wife, his babes, and all unfortunate souls" },
+          { "anchor": "d11-e19", "text": "That trace him in his line." }
+        ],
+        "estimatedMinutes": 6,
+        "sourceNote": "Public-domain play text, bundled with Tome at public/content/macbeth/ch-22.json. Quotations are public domain."
+      },
+      "contextCard": "The cauldron scene gives Macbeth three apparitions and three promises: beware Macduff; ‘none of woman born / Shall harm Macbeth’; he falls only when Birnam wood walks to Dunsinane. Every promise is true and every promise is a trap — equivocation again, this time from the fiends themselves. The show of eight kings stretched Banquo’s line down the centuries; to James I, watching his supposed ancestors parade onstage, it was flattery in the royal box.",
+      "virgilPrompt": "Macbeth finally feels safe today. Read each promise twice — once the way he hears it, once the way it is worded. The gap between those two readings is the rest of the play.",
+      "trial": [
+        {
+          "id": "macbeth-d11-fill-1",
+          "family": "fill-the-line",
+          "prompt": "Complete the cauldron refrain.",
+          "anchors": [{ "paragraphId": "d11-e1" }],
+          "rationale": "‘Double, double toil and trouble; / Fire burn, and cauldron bubble’ — the most quoted witch-chant in the language, doubling everything including itself.",
+          "evidenceAnchor": { "paragraphId": "d11-e1", "quote": "Double, double toil and trouble;" },
+          "hints": [
+            { "level": 1, "text": "It rhymes with ‘bubble’." },
+            { "level": 2, "text": "The line doubles its own first word — and the last word names what they are brewing." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "lines": ["Double, double toil and ___;", "Fire burn, and cauldron bubble."],
+            "blanks": [{ "lineIndex": 0, "answer": "trouble" }],
+            "wordBank": ["trouble", "bubble", "rubble", "double"],
+            "mode": "bank"
+          }
+        },
+        {
+          "id": "macbeth-d11-order-1",
+          "family": "ordering",
+          "prompt": "Put the apparitions and their messages in the order they rise.",
+          "anchors": [{ "paragraphId": "d11-e5" }, { "paragraphId": "d11-e15" }],
+          "rationale": "An armed Head (beware Macduff), a bloody Child (none of woman born), a crowned Child with a tree (Birnam wood), then the show of eight kings that breaks him.",
+          "evidenceAnchor": { "paragraphId": "d11-e5", "quote": "beware Macduff;" },
+          "hints": [
+            { "level": 1, "text": "The armed Head rises first." },
+            { "level": 2, "text": "The tree comes before the line of kings." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "items": [
+              { "id": "head", "text": "An armed Head warns: beware Macduff" },
+              { "id": "child", "text": "A bloody Child promises: none of woman born shall harm Macbeth" },
+              { "id": "crowned", "text": "A crowned Child promises: safe until Birnam wood comes to Dunsinane" },
+              { "id": "kings", "text": "Eight kings pass, Banquo’s ghost smiling behind them" }
+            ],
+            "correctOrder": ["head", "child", "crowned", "kings"]
+          }
+        },
+        {
+          "id": "macbeth-d11-tf-1",
+          "family": "true-false-with-reason",
+          "prompt": "Judge the claim, then choose the reason that proves it.",
+          "anchors": [{ "paragraphId": "d11-e8" }, { "paragraphId": "d11-e16" }],
+          "rationale": "Each promise hides a loophole — a walking wood, a man ‘not of woman born’ — and the safety he buys with them costs Fife its family. The fiends keep the word of promise to his ear and break it to his hope.",
+          "evidenceAnchor": { "paragraphId": "d11-e8", "quote": "for none of woman born / Shall harm Macbeth." },
+          "hints": [
+            { "level": 1, "text": "Ask what ‘none of woman born’ might fail to cover." },
+            { "level": 2, "text": "Notice what he orders immediately after feeling safe." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "statement": "The apparitions’ promises leave Macbeth with nothing to fear.",
+            "correctBool": false,
+            "reasons": [
+              { "id": "r-loopholes", "text": "Each promise is a riddle with a loophole — a wood can move, a birth can be unusual — and feeling safe, he orders the murder of Macduff’s family.", "correct": true },
+              { "id": "r-lie", "text": "The first apparition lies outright about Macduff.", "correct": false, "nearMiss": true, "distractorNote": "That is the horror of it: the apparitions tell the truth. Macduff is exactly who Macbeth should fear." },
+              { "id": "r-dismiss", "text": "Macbeth dismisses the apparitions as frauds and leaves.", "correct": false, "distractorNote": "He believes them completely — that belief is the trap." }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d11-who-1",
+          "family": "who-said-it",
+          "prompt": "Whose thumbs announce Macbeth’s arrival?",
+          "anchors": [{ "paragraphId": "d11-e3" }],
+          "rationale": "The Second Witch: ‘By the pricking of my thumbs, / Something wicked this way comes.’ Ray Bradbury borrowed the line for a novel title in 1962.",
+          "evidenceAnchor": { "paragraphId": "d11-e3", "quote": "By the pricking of my thumbs," },
+          "hints": [
+            { "level": 1, "text": "The speaker is one of the cauldron’s keepers." },
+            { "level": 2, "text": "She speaks just before the locks open." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "quote": "By the pricking of my thumbs, / Something wicked this way comes.",
+            "choices": [
+              { "name": "The Second Witch", "correct": true },
+              { "name": "Hecate", "correct": false },
+              { "name": "Lady Macbeth", "correct": false },
+              { "name": "The First Apparition", "correct": false }
+            ]
+          }
+        }
+      ],
+      "wisdomAward": 60,
+      "milestoneSeal": {
+        "sealId": "macbeth-cauldrons-truth",
+        "name": "The Cauldron’s Truth",
+        "description": "For hearing the apparitions through — every promise, and every loophole."
+      }
+    },
+    {
+      "day": 12,
+      "title": "All My Pretty Ones",
+      "subtitle": "Fife burns; in England, a prince tests a thane.",
+      "readingTarget": {
+        "chapterRefs": [
+          { "chapterIndex": 23, "chapterTitle": "Scene II" },
+          { "chapterIndex": 24, "chapterTitle": "Scene III" }
+        ],
+        "citation": "Macbeth, Act IV, Scenes 2–3",
+        "excerptTitle": "Fife, then England",
+        "excerptIntro": "The play’s tenderest scene and its hardest news, back to back.",
+        "excerpt": [
+          { "anchor": "d12-e1", "speaker": "Lady Macduff", "text": "Wisdom! to leave his wife, to leave his babes," },
+          { "anchor": "d12-e2", "text": "His mansion and his titles in a place" },
+          { "anchor": "d12-e3", "text": "From whence himself does fly? He loves us not;" },
+          { "anchor": "d12-e4", "speaker": "Son", "text": "He has kill’d me, mother:" },
+          { "anchor": "d12-e5", "text": "Run away, I pray you!" },
+          { "anchor": "d12-e6", "speaker": "Macduff", "text": "Bleed, bleed, poor country!" },
+          { "anchor": "d12-e7", "speaker": "Malcolm", "text": "No less in truth than life: my first false speaking" },
+          { "anchor": "d12-e8", "text": "Was this upon myself: what I am truly," },
+          { "anchor": "d12-e9", "text": "Is thine and my poor country’s to command:" },
+          { "anchor": "d12-e10", "speaker": "Macduff", "text": "He has no children. All my pretty ones?" },
+          { "anchor": "d12-e11", "text": "Did you say all? O hell-kite! All?" },
+          { "anchor": "d12-e12", "text": "What, all my pretty chickens and their dam" },
+          { "anchor": "d12-e13", "text": "At one fell swoop?" },
+          { "anchor": "d12-e14", "speaker": "Malcolm", "text": "Dispute it like a man." },
+          { "anchor": "d12-e15", "speaker": "Macduff", "text": "I shall do so;" },
+          { "anchor": "d12-e16", "text": "But I must also feel it as a man:" }
+        ],
+        "estimatedMinutes": 14,
+        "sourceNote": "Public-domain play text, bundled with Tome at public/content/macbeth/ch-23.json and ch-24.json. Quotations are public domain."
+      },
+      "contextCard": "Macbeth strikes where Macduff is not: Fife. Lady Macduff and her son are murdered onstage, and the play pivots. In England, Malcolm tests Macduff’s honour by pretending to be a worse monster than Macbeth, then takes it back: ‘my first false speaking / Was this upon myself’. When Ross finally delivers the news, Macduff’s ‘He has no children’ may glance at Malcolm, who cannot comfort, or at Macbeth, who could never understand such a loss. Scholars have argued it for centuries.",
+      "virgilPrompt": "Today the play weighs two kinds of manhood again — Malcolm’s ‘Dispute it like a man’ against Macduff’s answer. Keep Act I in mind: whose definition was right then, and whose is right now?",
+      "trial": [
+        {
+          "id": "macbeth-d12-who-1",
+          "family": "who-said-it",
+          "prompt": "Who counts his family as chickens taken in one swoop?",
+          "anchors": [{ "paragraphId": "d12-e12" }],
+          "rationale": "Macduff, hearing that his wife and children are dead: ‘What, all my pretty chickens and their dam / At one fell swoop?’",
+          "evidenceAnchor": { "paragraphId": "d12-e12", "quote": "What, all my pretty chickens and their dam" },
+          "hints": [
+            { "level": 1, "text": "The speaker has just been told the worst news in the play." },
+            { "level": 2, "text": "He calls the killer a ‘hell-kite’ in the same breath." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "quote": "What, all my pretty chickens and their dam / At one fell swoop?",
+            "choices": [
+              { "name": "Macduff", "correct": true },
+              { "name": "Malcolm", "correct": false },
+              { "name": "Lady Macduff", "correct": false },
+              { "name": "Ross", "correct": false }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d12-word-1",
+          "family": "word-in-context",
+          "prompt": "Macduff calls Macbeth a ‘hell-kite’. What is a kite?",
+          "anchors": [{ "paragraphId": "d12-e11" }],
+          "rationale": "A kite is a scavenging bird of prey — the natural enemy of farmyard chickens. The metaphor completes itself: the kite has taken the whole brood.",
+          "evidenceAnchor": { "paragraphId": "d12-e11", "quote": "O hell-kite! All?" },
+          "hints": [
+            { "level": 1, "text": "The very next line names his children ‘chickens’." },
+            { "level": 2, "text": "It flies, it hunts, and it takes poultry." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "sentence": "Did you say all? O hell-kite! All? / What, all my pretty chickens and their dam / At one fell swoop?",
+            "targetWord": "kite",
+            "choices": [
+              { "text": "A scavenging bird of prey — the tyrant as a hawk among chickens", "correct": true },
+              { "text": "A child’s toy flown on a string", "correct": false },
+              { "text": "A forged financial document", "correct": false },
+              { "text": "A messenger riding at speed", "correct": false }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d12-tf-1",
+          "family": "true-false-with-reason",
+          "prompt": "Judge the claim, then choose the reason that proves it.",
+          "anchors": [{ "paragraphId": "d12-e7" }, { "paragraphId": "d12-e8" }],
+          "rationale": "Malcolm retracts it himself: his catalogue of vices was ‘my first false speaking’, a test of whether Macduff would serve a bad king for a good country. Macduff’s refusal — ‘Fit to govern! / No, not to live’ — passes it.",
+          "evidenceAnchor": { "paragraphId": "d12-e7", "quote": "my first false speaking" },
+          "hints": [
+            { "level": 1, "text": "Malcolm confesses to lying. About what?" },
+            { "level": 2, "text": "He calls it his FIRST false speaking — what does that claim about the rest?" }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "statement": "Malcolm’s confession of monstrous vices was a test of Macduff, not the truth.",
+            "correctBool": true,
+            "reasons": [
+              { "id": "r-test", "text": "He retracts it: ‘my first false speaking / Was this upon myself’ — he lied to see whether Macduff would follow a bad king.", "correct": true },
+              { "id": "r-proof", "text": "Macduff exposes the lie with evidence carried from Scotland.", "correct": false, "distractorNote": "No evidence is needed; Malcolm volunteers the truth once Macduff refuses him." },
+              { "id": "r-repeat", "text": "Malcolm confesses the same vices again at his coronation.", "correct": false, "distractorNote": "At Scone he speaks only of restoration — the vices were never real." }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d12-refl-1",
+          "family": "reflection",
+          "prompt": "Virgil asks: ‘Dispute it like a man’ — ‘But I must also feel it as a man.’ After Act I’s argument about manhood, which definition does the play believe now, and how do you know?",
+          "anchors": [{ "paragraphId": "d12-e14" }, { "paragraphId": "d12-e16" }],
+          "rationale": "The Trial rewards the connection: Lady Macbeth’s ‘then you were a man’ led to murder; Macduff’s ‘feel it as a man’ leads to justice. Feeling is no longer the opposite of courage.",
+          "evidenceAnchor": { "paragraphId": "d12-e16", "quote": "But I must also feel it as a man:" },
+          "hints": [
+            { "level": 1, "text": "Compare this exchange with Lady Macbeth’s in Act I, Scene 7." },
+            { "level": 2, "text": "Notice which speaker the play rewards with victory." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "minWords": 40,
+            "guidance": [
+              "Set the two lines against the Act I argument.",
+              "Say whose definition the play vindicates.",
+              "Support it with one outcome from the story."
+            ],
+            "rubric": [
+              { "id": "rb1", "label": "I connected this exchange to Act I’s ‘man’ debate" },
+              { "id": "rb2", "label": "I said whose definition the play now favours" },
+              { "id": "rb3", "label": "I supported it with a story outcome" }
+            ]
+          }
+        }
+      ],
+      "wisdomAward": 40
+    },
+    {
+      "day": 13,
+      "title": "Out, Damned Spot",
+      "subtitle": "She said a little water would clear them. She was wrong.",
+      "readingTarget": {
+        "chapterRefs": [{ "chapterIndex": 26, "chapterTitle": "Scene I" }],
+        "citation": "Macbeth, Act V, Scene 1",
+        "excerptTitle": "Dunsinane, an ante-room, deep night",
+        "excerptIntro": "A doctor and a gentlewoman keep watch. What they see, they dare not repeat.",
+        "excerpt": [
+          { "anchor": "d13-e1", "speaker": "Gentlewoman", "text": "It is an accustomed action with her, to seem thus washing her hands:" },
+          { "anchor": "d13-e2", "speaker": "Lady Macbeth", "text": "Yet here’s a spot." },
+          { "anchor": "d13-e3", "speaker": "Lady Macbeth", "text": "Out, damned spot! out, I say!" },
+          { "anchor": "d13-e4", "speaker": "Lady Macbeth", "text": "Yet who would have thought the old man to have had so much blood in him." },
+          { "anchor": "d13-e5", "speaker": "Lady Macbeth", "text": "What, will these hands ne’er be clean?" },
+          { "anchor": "d13-e6", "speaker": "Lady Macbeth", "text": "Here’s the smell of the blood still: all the perfumes of Arabia will not sweeten this little hand. Oh, oh, oh!" },
+          { "anchor": "d13-e7", "speaker": "Lady Macbeth", "text": "What’s done cannot be undone." },
+          { "anchor": "d13-e8", "speaker": "Doctor", "text": "Foul whisperings are abroad: unnatural deeds" },
+          { "anchor": "d13-e9", "text": "Do breed unnatural troubles: infected minds" },
+          { "anchor": "d13-e10", "text": "To their deaf pillows will discharge their secrets:" },
+          { "anchor": "d13-e11", "text": "More needs she the divine than the physician." }
+        ],
+        "estimatedMinutes": 3,
+        "sourceNote": "Public-domain play text, bundled with Tome at public/content/macbeth/ch-26.json. Quotations are public domain."
+      },
+      "contextCard": "Lady Macbeth, who once said ‘A little water clears us of this deed’, now walks in her sleep, washing hands that will not come clean. Shakespeare drops verse for broken prose — the only scene of its kind in the play — while a doctor and gentlewoman watch and take notes. ‘All the perfumes of Arabia will not sweeten this little hand’ answers Macbeth’s reddened seas from Act II: the guilt they argued about in metaphors has become a smell she cannot rinse away.",
+      "virgilPrompt": "Every line she speaks asleep answers a line she spoke awake. Listen for the rhymes across four acts — water, hands, spots, fear — and ask which version of her was right.",
+      "trial": [
+        {
+          "id": "macbeth-d13-fill-1",
+          "family": "fill-the-line",
+          "prompt": "Complete the sleepwalker’s command.",
+          "anchors": [{ "paragraphId": "d13-e3" }],
+          "rationale": "‘Out, damned spot!’ — the deed has shrunk from a kingdom’s politics to one invisible mark on one small hand.",
+          "evidenceAnchor": { "paragraphId": "d13-e3", "quote": "Out, damned spot! out, I say!" },
+          "hints": [
+            { "level": 1, "text": "She is looking at her hand." },
+            { "level": 2, "text": "It is the word she used for it two lines earlier: ‘Yet here’s a —’" }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "lines": ["Out, damned ___! out, I say!"],
+            "blanks": [{ "lineIndex": 0, "answer": "spot" }],
+            "wordBank": ["spot", "stain", "hand", "deed"],
+            "mode": "bank"
+          }
+        },
+        {
+          "id": "macbeth-d13-who-1",
+          "family": "who-said-it",
+          "prompt": "Who cannot sweeten one little hand with all the perfumes of Arabia?",
+          "anchors": [{ "paragraphId": "d13-e6" }],
+          "rationale": "Lady Macbeth, asleep. In Act II she promised a little water would clear the deed; now Arabia’s whole perfume trade fails against one hand.",
+          "evidenceAnchor": { "paragraphId": "d13-e6", "quote": "all the perfumes of Arabia will not sweeten this little hand" },
+          "hints": [
+            { "level": 1, "text": "The speaker once believed in a simpler washing." },
+            { "level": 2, "text": "She is speaking in her sleep, watched by a doctor." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "quote": "All the perfumes of Arabia will not sweeten this little hand.",
+            "choices": [
+              { "name": "Lady Macbeth", "correct": true },
+              { "name": "Macbeth", "correct": false },
+              { "name": "The Gentlewoman", "correct": false },
+              { "name": "The Doctor", "correct": false }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d13-tf-1",
+          "family": "true-false-with-reason",
+          "prompt": "Judge the claim, then choose the reason that proves it.",
+          "anchors": [{ "paragraphId": "d13-e11" }],
+          "rationale": "The Doctor reaches past his profession: ‘More needs she the divine than the physician.’ Unnatural deeds breed unnatural troubles; the sickness is confessional, not medical.",
+          "evidenceAnchor": { "paragraphId": "d13-e11", "quote": "More needs she the divine than the physician." },
+          "hints": [
+            { "level": 1, "text": "Listen to the Doctor’s last diagnosis." },
+            { "level": 2, "text": "He recommends a different kind of practitioner." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "statement": "The Doctor believes he can cure Lady Macbeth with medicine.",
+            "correctBool": false,
+            "reasons": [
+              { "id": "r-divine", "text": "‘More needs she the divine than the physician’ — her sickness is past his practice.", "correct": true },
+              { "id": "r-draught", "text": "He prescribes a sleeping draught and orders rest.", "correct": false, "nearMiss": true, "distractorNote": "He does order her watched and kept from harm — but that is containment, not a cure." },
+              { "id": "r-gossip", "text": "He blames the gentlewoman for inventing the story.", "correct": false, "distractorNote": "He watches the scene with his own eyes and writes it down." }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d13-find-1",
+          "family": "find-the-evidence",
+          "prompt": "Tap the lines where the sleeping Lady Macbeth confesses what the waking one concealed.",
+          "anchors": [{ "paragraphId": "d13-e3" }, { "paragraphId": "d13-e6" }],
+          "rationale": "Spot, blood in the old man, hands never clean, the smell that survives Arabia’s perfumes — asleep, she says plainly what awake she called ‘a sorry sight’.",
+          "evidenceAnchor": { "paragraphId": "d13-e4", "quote": "the old man to have had so much blood in him." },
+          "hints": [
+            { "level": 1, "text": "Four speeches in a row, all hers, all about her hands." },
+            { "level": 2, "text": "The run starts at ‘Out, damned spot!’ and ends with the perfumes." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "claim": "In sleep, Lady Macbeth confesses what she hid awake.",
+            "segments": [
+              "Out, damned spot! out, I say!",
+              "Yet who would have thought the old man to have had so much blood in him.",
+              "What, will these hands ne’er be clean?",
+              "Here’s the smell of the blood still: all the perfumes of Arabia will not sweeten this little hand. Oh, oh, oh!"
+            ],
+            "correctRange": [0, 3]
+          }
+        }
+      ],
+      "wisdomAward": 40
+    },
+    {
+      "day": 14,
+      "title": "Tomorrow, and Tomorrow",
+      "subtitle": "The wood walks, the charm breaks, the time is free.",
+      "readingTarget": {
+        "chapterRefs": [
+          { "chapterIndex": 28, "chapterTitle": "Scene III" },
+          { "chapterIndex": 30, "chapterTitle": "Scene V" },
+          { "chapterIndex": 32, "chapterTitle": "Scene VII" },
+          { "chapterIndex": 33, "chapterTitle": "Scene VIII" }
+        ],
+        "citation": "Macbeth, Act V, Scenes 3–8",
+        "excerptTitle": "Dunsinane, the last day",
+        "excerptIntro": "Every promise the apparitions made is cashed today — all at once.",
+        "excerpt": [
+          { "anchor": "d14-e1", "speaker": "Seyton", "text": "The queen, my lord, is dead." },
+          { "anchor": "d14-e2", "speaker": "Macbeth", "text": "To-morrow, and to-morrow, and to-morrow," },
+          { "anchor": "d14-e3", "text": "Creeps in this petty pace from day to day" },
+          { "anchor": "d14-e4", "text": "To the last syllable of recorded time," },
+          { "anchor": "d14-e5", "speaker": "Macbeth", "text": "Life’s but a walking shadow, a poor player" },
+          { "anchor": "d14-e6", "text": "That struts and frets his hour upon the stage" },
+          { "anchor": "d14-e7", "text": "And then is heard no more: it is a tale" },
+          { "anchor": "d14-e8", "text": "Told by an idiot, full of sound and fury," },
+          { "anchor": "d14-e9", "text": "Signifying nothing." },
+          { "anchor": "d14-e10", "speaker": "Macbeth", "text": "I bear a charmed life, which must not yield" },
+          { "anchor": "d14-e11", "text": "To one of woman born." },
+          { "anchor": "d14-e12", "speaker": "Macduff", "text": "Despair thy charm;" },
+          { "anchor": "d14-e13", "text": "And let the angel whom thou still hast served" },
+          { "anchor": "d14-e14", "text": "Tell thee, Macduff was from his mother’s womb" },
+          { "anchor": "d14-e15", "text": "Untimely ripp’d." },
+          { "anchor": "d14-e16", "speaker": "Macbeth", "text": "Lay on, Macduff," },
+          { "anchor": "d14-e17", "text": "And damn’d be him that first cries, ‘Hold, enough!’" },
+          { "anchor": "d14-e18", "speaker": "Macduff", "text": "Hail, king! for so thou art: behold, where stands" },
+          { "anchor": "d14-e19", "text": "The usurper’s cursed head: the time is free:" },
+          { "anchor": "d14-e20", "speaker": "Malcolm", "text": "Whom we invite to see us crown’d at Scone." }
+        ],
+        "estimatedMinutes": 10,
+        "sourceNote": "Public-domain play text, bundled with Tome at public/content/macbeth/ch-28.json, ch-30.json, ch-32.json, and ch-33.json. Quotations are public domain."
+      },
+      "contextCard": "The end arrives as arithmetic: a wood moves, a man unborn of woman walks, and every prophecy is cashed at once. Birnam wood came to Dunsinane in Holinshed’s chronicle too, where Malcolm’s soldiers cut branches for camouflage. Macbeth’s ‘Tomorrow, and tomorrow, and tomorrow’, spoken at the news of his wife’s death, reduces life to ‘a tale / Told by an idiot’. He dies fighting, refusing to ‘play the Roman fool’, and Malcolm is hailed at Scone. The storm passes; the record remains.",
+      "virgilPrompt": "One last reading. Macbeth calls life ‘a tale / Told by an idiot, full of sound and fury, / Signifying nothing’ — inside a tale, full of sound and fury, that has signified plenty for four hundred years. Carry that irony into the Trial.",
+      "trial": [
+        {
+          "id": "macbeth-d14-fill-1",
+          "family": "fill-the-line",
+          "prompt": "Complete the player metaphor.",
+          "anchors": [{ "paragraphId": "d14-e6" }],
+          "rationale": "‘Life’s but a walking shadow, a poor player / That struts and frets his hour upon the stage’ — an actor-king reaches for an actor’s image.",
+          "evidenceAnchor": { "paragraphId": "d14-e6", "quote": "That struts and frets his hour upon the stage" },
+          "hints": [
+            { "level": 1, "text": "A ‘player’ performs somewhere. Where?" },
+            { "level": 2, "text": "It rhymes with nothing — it ends the thought." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "lines": ["Life’s but a walking shadow, a poor player", "That struts and frets his hour upon the ___"],
+            "blanks": [{ "lineIndex": 1, "answer": "stage" }],
+            "wordBank": ["stage", "page", "earth", "throne"],
+            "mode": "bank"
+          }
+        },
+        {
+          "id": "macbeth-d14-who-1",
+          "family": "who-said-it",
+          "prompt": "Who refuses to yield and calls the last fight on?",
+          "anchors": [{ "paragraphId": "d14-e16" }],
+          "rationale": "Macbeth: ‘Lay on, Macduff, / And damn’d be him that first cries, “Hold, enough!”’ — beaten by the prophecies, he still chooses the sword over the shame of being displayed as a monster.",
+          "evidenceAnchor": { "paragraphId": "d14-e16", "quote": "Lay on, Macduff," },
+          "hints": [
+            { "level": 1, "text": "The speaker has just learned the charm is broken — and fights anyway." },
+            { "level": 2, "text": "He throws his ‘warlike shield’ before his body first." }
+          ],
+          "wisdom": 10,
+          "difficulty": "apprentice",
+          "content": {
+            "quote": "Lay on, Macduff, / And damn’d be him that first cries, ‘Hold, enough!’",
+            "choices": [
+              { "name": "Macbeth", "correct": true },
+              { "name": "Macduff", "correct": false },
+              { "name": "Malcolm", "correct": false },
+              { "name": "Young Siward", "correct": false }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d14-word-1",
+          "family": "word-in-context",
+          "prompt": "‘I bear a charmed life’ — what does ‘charmed’ mean here?",
+          "anchors": [{ "paragraphId": "d14-e10" }],
+          "rationale": "Charmed means protected by magic — a life under a spell. Macduff’s answer, ‘Despair thy charm’, names the spell and breaks it in one breath.",
+          "evidenceAnchor": { "paragraphId": "d14-e10", "quote": "I bear a charmed life, which must not yield" },
+          "hints": [
+            { "level": 1, "text": "He believes the apparitions’ words protect him." },
+            { "level": 2, "text": "Macduff answers with the same word: ‘Despair thy charm’." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "sentence": "I bear a charmed life, which must not yield / To one of woman born.",
+            "targetWord": "charmed",
+            "choices": [
+              { "text": "Protected by magic — or so the apparitions led him to believe", "correct": true },
+              { "text": "Blessed with good fortune in love", "correct": false },
+              { "text": "Made gentle and pleasing to others", "correct": false },
+              { "text": "Anointed and guarded by the church", "correct": false }
+            ]
+          }
+        },
+        {
+          "id": "macbeth-d14-order-1",
+          "family": "ordering",
+          "prompt": "Put the last act’s unravelling in order.",
+          "anchors": [{ "paragraphId": "d14-e1" }, { "paragraphId": "d14-e19" }],
+          "rationale": "The queen dies, the wood walks, the charm breaks, the fight is refused then taken, and the time is free. Prophecy’s loopholes close in that exact sequence.",
+          "evidenceAnchor": { "paragraphId": "d14-e15", "quote": "Untimely ripp’d." },
+          "hints": [
+            { "level": 1, "text": "Death news comes before the moving grove." },
+            { "level": 2, "text": "Macduff’s revelation comes before Macbeth’s refusal to yield." }
+          ],
+          "wisdom": 15,
+          "difficulty": "scholar",
+          "content": {
+            "items": [
+              { "id": "queen", "text": "News arrives: the queen is dead" },
+              { "id": "wood", "text": "A messenger reports that Birnam wood is moving" },
+              { "id": "womb", "text": "Macduff reveals he was ‘untimely ripp’d’ from the womb" },
+              { "id": "yield", "text": "Macbeth refuses to yield and fights" },
+              { "id": "hail", "text": "Macduff presents the tyrant’s head; Malcolm is hailed king" }
+            ],
+            "correctOrder": ["queen", "wood", "womb", "yield", "hail"]
+          }
+        },
+        {
+          "id": "macbeth-d14-refl-1",
+          "family": "reflection",
+          "prompt": "Virgil asks, one last time: Macbeth says life signifies nothing — inside a play that has signified for four centuries. Does Shakespeare agree with his villain? Argue it from one moment you have read.",
+          "anchors": [{ "paragraphId": "d14-e8" }, { "paragraphId": "d14-e9" }],
+          "rationale": "The Trial rewards a genuine argument either way — the strongest answers notice that the speech’s beauty refutes its content.",
+          "evidenceAnchor": { "paragraphId": "d14-e9", "quote": "Signifying nothing." },
+          "hints": [
+            { "level": 1, "text": "Pick one moment from your fourteen days that meant something to you." },
+            { "level": 2, "text": "Consider: would a play that believed this speech exist at all?" }
+          ],
+          "wisdom": 20,
+          "difficulty": "master",
+          "content": {
+            "minWords": 60,
+            "guidance": [
+              "Take a side.",
+              "Anchor it to one moment from the journey.",
+              "Address the irony of the speech itself."
+            ],
+            "rubric": [
+              { "id": "rb1", "label": "I took a clear position" },
+              { "id": "rb2", "label": "I anchored it to a specific moment in the play" },
+              { "id": "rb3", "label": "I addressed the irony of the speech" }
+            ]
+          }
+        }
+      ],
+      "wisdomAward": 120
+    }
+  ],
+  "finalReward": {
+    "sealId": "macbeth-dagger-in-the-dark",
+    "sealName": "The Dagger in the Dark",
+    "stoaRewardId": "macbeth",
+    "shareableRecord": {
+      "title": "The Macbeth Journey",
+      "subtitle": "Fourteen days with William Shakespeare’s Macbeth in the Living Archive — read, tried, and sealed."
+    }
+  }
+}
