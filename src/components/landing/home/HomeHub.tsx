@@ -31,6 +31,7 @@ import {
 } from "@/lib/marketing/catalog-stats"
 import { useCatalogStats } from "@/lib/marketing/catalog-stats-context"
 import { marketingMasterImages } from "@/lib/marketing-images"
+import { VirgilOrb } from "@/components/virgil/VirgilOrb"
 import { cn } from "@/lib/utils"
 
 // ── Section shell ───────────────────────────────────────────────────
@@ -119,6 +120,9 @@ function MasterHomeImage({
         sizes="100vw"
         className="object-cover"
       />
+      <p className="absolute bottom-2 right-4 text-[11px] text-white/45">
+        {image.attribution}
+      </p>
     </div>
   )
 }
@@ -297,13 +301,7 @@ function GuideWithVirgil() {
 
         <div className="border-t border-border bg-card p-4">
           <div className="mb-2 flex items-center gap-2">
-            <Image
-              src={marketingMasterImages.virgil.src}
-              alt={marketingMasterImages.virgil.alt}
-              width={marketingMasterImages.virgil.width}
-              height={marketingMasterImages.virgil.height}
-              className="size-6 rounded-full border border-primary/40 object-cover"
-            />
+            <VirgilOrb className="size-6 border border-primary/40" />
             <span className="text-xs font-semibold text-primary">Virgil</span>
             <span className="text-[10px] text-muted-foreground">
               &middot; {DEMO_PASSAGE.annotationLabel}

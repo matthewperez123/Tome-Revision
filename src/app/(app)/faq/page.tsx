@@ -57,17 +57,19 @@ export default async function FaqPage() {
               and where the texts come from.
             </p>
           </div>
-          <div className="overflow-hidden rounded-lg border border-border bg-card shadow-sm">
+          <figure className="relative aspect-[4/3] overflow-hidden rounded-lg border border-border bg-card shadow-sm">
             <Image
               src={marketingMasterImages.faq.src}
               alt={marketingMasterImages.faq.alt}
-              width={marketingMasterImages.faq.width}
-              height={marketingMasterImages.faq.height}
+              fill
               priority
               sizes="(min-width: 1024px) 560px, 100vw"
-              className="h-auto w-full object-cover"
+              className="object-cover object-center"
             />
-          </div>
+            <figcaption className="absolute bottom-2 right-3 text-[11px] text-white/50">
+              {marketingMasterImages.faq.attribution}
+            </figcaption>
+          </figure>
         </section>
 
         {/* Nav + sections */}

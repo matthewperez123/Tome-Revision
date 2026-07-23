@@ -116,17 +116,19 @@ export default async function PricingPage({
               per-teacher seats.
             </p>
           </div>
-          <div className="overflow-hidden rounded-lg border border-border bg-card shadow-sm">
+          <figure className="relative aspect-[4/3] overflow-hidden rounded-lg border border-border bg-card shadow-sm">
             <Image
               src={marketingMasterImages.pricing.src}
               alt={marketingMasterImages.pricing.alt}
-              width={marketingMasterImages.pricing.width}
-              height={marketingMasterImages.pricing.height}
+              fill
               priority
               sizes="(min-width: 1024px) 560px, 100vw"
-              className="h-auto w-full object-cover"
+              className="object-cover object-center"
             />
-          </div>
+            <figcaption className="absolute bottom-2 right-3 text-[11px] text-white/50">
+              {marketingMasterImages.pricing.attribution}
+            </figcaption>
+          </figure>
         </section>
 
         {/* Plans */}

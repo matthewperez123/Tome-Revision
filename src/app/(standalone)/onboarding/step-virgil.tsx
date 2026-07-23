@@ -1,7 +1,6 @@
 "use client"
 
-import Image from "next/image"
-import { marketingMasterImages } from "@/lib/marketing-images"
+import { VirgilOrb } from "@/components/virgil/VirgilOrb"
 import { TextAnimate } from "@/components/ui/text-animate"
 import { TypingAnimation } from "@/components/ui/typing-animation"
 import { Button } from "@/components/ui/button"
@@ -32,14 +31,7 @@ export function StepVirgil({ onComplete }: { onComplete: () => void }) {
       </div>
 
       {/* Virgil Avatar */}
-      <Image
-        src={marketingMasterImages.virgil.src}
-        alt={marketingMasterImages.virgil.alt}
-        width={marketingMasterImages.virgil.width}
-        height={marketingMasterImages.virgil.height}
-        priority
-        className="relative z-10 size-28 rounded-full object-cover ring-2 ring-[var(--tome-accent)]/20"
-      />
+      <VirgilOrb className="relative z-10 size-28 ring-2 ring-[var(--tome-accent)]/20" />
 
       {/* Title */}
       <div className="mt-6">

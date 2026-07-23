@@ -1,10 +1,9 @@
 import type { Metadata } from "next"
-import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, BookOpen } from "lucide-react"
 import { LandingFooter } from "@/components/landing/LandingFooter"
 import { VirgilLanding } from "@/components/landing/virgil/VirgilLanding"
-import { marketingMasterImages } from "@/lib/marketing-images"
+import { VirgilOrb } from "@/components/virgil/VirgilOrb"
 
 export const metadata: Metadata = {
   title: { absolute: "Virgil — Your AI Scholar — Tome" },
@@ -34,15 +33,7 @@ export default function VirgilPage() {
       {/* Hero */}
       <section className="px-6 pb-12 pt-32 md:px-12 md:pt-40">
         <div className="mx-auto max-w-3xl text-center">
-          <Image
-            src={marketingMasterImages.virgil.src}
-            alt={marketingMasterImages.virgil.alt}
-            width={marketingMasterImages.virgil.width}
-            height={marketingMasterImages.virgil.height}
-            priority
-            sizes="(min-width: 768px) 224px, 160px"
-            className="mx-auto mb-6 h-auto w-40 md:w-56"
-          />
+          <VirgilOrb className="mx-auto mb-6 size-40 shadow-lg md:size-56" />
           <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary">
             <BookOpen className="size-3.5" />
             Meet Virgil

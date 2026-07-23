@@ -3,6 +3,8 @@
 import { motion, AnimatePresence } from "motion/react"
 import { useAnimationLoop } from "../useAnimationLoop"
 import { TeacherShowcaseShell } from "./TeacherShowcaseShell"
+import { TRIAL_REGISTRY } from "@/lib/trials/registry"
+import type { TrialQuestionType } from "@/lib/trials/question-types"
 
 const PHASES = [
   { name: "idle", duration: 500 },
@@ -20,10 +22,13 @@ const PASSAGE_LINES = [
   "upon the Achaeans.",
 ]
 
-const QUESTIONS = [
-  "What emotion drives the central conflict?",
-  "Who is Achilles\u2019 father?",
-  "What did the anger bring upon the Achaeans?",
+// Each generated question is tagged with a real Trial type from the shared
+// registry, so the educator demo showcases the variety of question types Tome
+// can author — not a single generic multiple-choice shape.
+const QUESTIONS: { type: TrialQuestionType; text: string }[] = [
+  { type: "fill_the_line", text: "Restore the opening: \u201cSing, O goddess, the ___ of Achilles.\u201d" },
+  { type: "word_in_context", text: "What does \u201canger\u201d mean as Homer uses it here?" },
+  { type: "find_the_evidence", text: "Which line names Achilles as the son of Peleus?" },
 ]
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1]
@@ -59,7 +64,7 @@ export function CustomTrialsShowcase() {
     return (
       <TeacherShowcaseShell
         heading="Write your own Trials &mdash; or let Virgil"
-        subcopy="Author questions by hand or generate them from any passage with one click."
+        subcopy="Author questions by hand or generate them from any passage with one click \u2014 across all six Trial types."
         layout="mockup-left"
         bgClass="bg-background"
       >
@@ -155,23 +160,30 @@ export function CustomTrialsShowcase() {
         {/* Quiz questions */}
         <div className="flex flex-col gap-2">
           <AnimatePresence>
-            {QUESTIONS.slice(0, visibleQuestions).map((q, i) => (
-              <motion.div
-                key={q}
-                initial={{ opacity: 0, x: -12 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -12 }}
-                transition={{
-                  duration: 0.4,
-                  ease: EASE,
-                  delay: i * 0.05,
-                }}
-                className="border-l-2 border-[#D4AF37] bg-[#D4AF37]/5 rounded-r-lg p-3 text-xs text-foreground"
-                style={{ willChange: "transform, opacity" }}
-              >
-                {q}
-              </motion.div>
-            ))}
+            {QUESTIONS.slice(0, visibleQuestions).map(({ type, text }, i) => {
+              const { label, icon: Icon } = TRIAL_REGISTRY[type]
+              return (
+                <motion.div
+                  key={text}
+                  initial={{ opacity: 0, x: -12 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -12 }}
+                  transition={{
+                    duration: 0.4,
+                    ease: EASE,
+                    delay: i * 0.05,
+                  }}
+                  className="border-l-2 border-[#D4AF37] bg-[#D4AF37]/5 rounded-r-lg p-3 text-xs text-foreground"
+                  style={{ willChange: "transform, opacity" }}
+                >
+                  <span className="mb-1.5 inline-flex items-center gap-1 rounded-full bg-[#D4AF37]/15 px-2 py-0.5 text-[10px] font-semibold text-[#8A6D1F]">
+                    <Icon className="size-3" />
+                    {label}
+                  </span>
+                  <p>{text}</p>
+                </motion.div>
+              )
+            })}
           </AnimatePresence>
         </div>
 
