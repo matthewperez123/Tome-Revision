@@ -1,7 +1,7 @@
 import "server-only"
 
 import type { ReactElement } from "react"
-import { FROM, resend } from "./client"
+import { FROM, isEmailConfigured, resend } from "./client"
 
 export interface SendEmailParams {
   to: string
@@ -31,6 +31,16 @@ export async function sendEmail({
   react,
   from = FROM,
 }: SendEmailParams): Promise<SendEmailResult> {
+  // No key configured (dev/preview or a misconfigured deploy): skip the doomed
+  // network call and return a clean, non-error result. Callers already treat
+  // { ok: false } as best-effort and continue.
+  if (!isEmailConfigured()) {
+    if (process.env.NODE_ENV !== "production") {
+      console.info("[email] Skipped (RESEND_API_KEY not set):", { to, subject })
+    }
+    return { ok: false, error: "Email not configured" }
+  }
+
   try {
     const { data, error } = await resend.emails.send({
       from,
