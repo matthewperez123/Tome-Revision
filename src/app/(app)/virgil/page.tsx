@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowRight, BookOpen } from "lucide-react"
 import { LandingFooter } from "@/components/landing/LandingFooter"
 import { VirgilLanding } from "@/components/landing/virgil/VirgilLanding"
-import { VirgilOrb } from "@/components/virgil/VirgilOrb"
+import { VirgilShowcase } from "@/components/virgil/VirgilShowcase"
 
 export const metadata: Metadata = {
   title: { absolute: "Virgil — Your AI Scholar — Tome" },
@@ -33,7 +33,7 @@ export default function VirgilPage() {
       {/* Hero */}
       <section className="px-6 pb-12 pt-32 md:px-12 md:pt-40">
         <div className="mx-auto max-w-3xl text-center">
-          <VirgilOrb className="mx-auto mb-6 size-40 shadow-lg md:size-56" />
+          <VirgilShowcase />
           <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary">
             <BookOpen className="size-3.5" />
             Meet Virgil
