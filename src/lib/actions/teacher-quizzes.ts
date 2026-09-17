@@ -12,11 +12,10 @@ import {
   requireUser,
 } from "./_shared"
 import {
-  autoGradeObjective,
-  answerToString,
   gradeFreeResponseWithVirgil,
   isOpenEndedType,
   questionMaxPoints,
+  resolveResponseGrade,
 } from "@/lib/teacher-quiz/grade"
 import { parseHints, type Hint } from "@/lib/quiz-hints"
 
@@ -731,9 +730,10 @@ export async function submitQuizAttempt(
       student_id: string
       response: unknown
       is_correct: boolean | null
-      score: number
+      // null when the response is awaiting review — never a false graded zero.
+      score: number | null
       max_points: number
-      graded_by: "auto" | "virgil"
+      graded_by: "auto" | "virgil" | "pending"
       ai_feedback: string | null
       ai_rubric_breakdown: unknown
       graded_at: string | null
@@ -760,76 +760,44 @@ export async function submitQuizAttempt(
       const usage = i.hints[qid] ?? { used: 0, maxLevel: 0 }
       const penalty = Math.min(usage.used * hintPenalty, maxPoints)
 
-      if (isOpenEndedType(type)) {
-        // Free-response → Virgil rubric grade (same model path as the teacher
-        // grade_response task). Flag for teacher review.
-        needsReview = true
-        let score = 0
-        let isCorrect: boolean | null = null
-        let feedback: string | null = null
-        let breakdown: unknown = []
-        try {
-          const grade = await gradeFreeResponseWithVirgil({
-            questionText: q.question_text as string,
-            rubric: q.rubric,
-            referenceAnswer: (q.reference_answer as string | null) ?? null,
-            maxPoints,
-            answerText: answerToString(rawAnswer),
-          })
-          score = Math.max(0, grade.score - penalty)
-          isCorrect = grade.isCorrect
-          feedback = grade.feedback
-          breakdown = grade.rubricBreakdown
-        } catch (err) {
-          console.error("[teacher-quiz] free-response grade failed:", err)
-          // Leave ungraded for the teacher; contributes 0 until reviewed.
-          feedback = null
-        }
-        totalScore += score
-        responseRows.push({
-          quiz_id: i.quizId,
-          question_id: qid,
-          student_id: user.id,
-          response: rawAnswer ?? null,
-          is_correct: isCorrect,
-          score,
-          max_points: maxPoints,
-          graded_by: "virgil",
-          ai_feedback: feedback,
-          ai_rubric_breakdown: breakdown,
-          graded_at: now,
-          hints_used: usage.used,
-          hint_max_level: usage.maxLevel,
-        })
-      } else {
-        // Objective → deterministic auto-grade against correct_answer.
-        const verdict = autoGradeObjective(
-          {
-            question_type: type,
-            correct_answer: (q.correct_answer as string | null) ?? null,
-            options: q.options,
-          },
-          rawAnswer,
-        )
-        const isCorrect = verdict === true
-        const score = Math.max(0, (isCorrect ? maxPoints : 0) - penalty)
-        totalScore += score
-        responseRows.push({
-          quiz_id: i.quizId,
-          question_id: qid,
-          student_id: user.id,
-          response: rawAnswer ?? null,
-          is_correct: verdict === null ? null : isCorrect,
-          score,
-          max_points: maxPoints,
-          graded_by: "auto",
-          ai_feedback: null,
-          ai_rubric_breakdown: null,
-          graded_at: now,
-          hints_used: usage.used,
-          hint_max_level: usage.maxLevel,
-        })
+      const baseRow = {
+        quiz_id: i.quizId,
+        question_id: qid,
+        student_id: user.id,
+        response: rawAnswer ?? null,
+        max_points: maxPoints,
+        hints_used: usage.used,
+        hint_max_level: usage.maxLevel,
       }
+
+      // Single decision path. Objective questions auto-grade ONLY when
+      // machine-gradable (a real correct_answer); open-ended types go to Virgil;
+      // a grader failure or an unkeyed question routes to teacher review — never
+      // a phantom zero. The invariant lives in resolveResponseGrade.
+      const resolved = await resolveResponseGrade({
+        questionType: type,
+        correctAnswer: (q.correct_answer as string | null) ?? null,
+        options: q.options,
+        questionText: q.question_text as string,
+        rubric: q.rubric,
+        referenceAnswer: (q.reference_answer as string | null) ?? null,
+        maxPoints,
+        penalty,
+        rawAnswer,
+        grade: gradeFreeResponseWithVirgil,
+      })
+
+      if (resolved.gradedBy !== "auto") needsReview = true
+      if (resolved.score !== null) totalScore += resolved.score
+      responseRows.push({
+        ...baseRow,
+        is_correct: resolved.isCorrect,
+        score: resolved.score,
+        graded_by: resolved.gradedBy,
+        ai_feedback: resolved.aiFeedback,
+        ai_rubric_breakdown: resolved.aiRubricBreakdown,
+        graded_at: resolved.graded ? now : null,
+      })
     }
 
     // Replace prior attempt rows (students have no DELETE policy; retakes must
@@ -1178,11 +1146,13 @@ export async function listQuizResults(quizId: string): Promise<ActionResult<Quiz
         (p.display_name as string) || (p.username as string) || "Student",
       ]),
     )
-    // A student needs review if any Virgil-graded response hasn't been overridden.
+    // A student needs review if any response is a Virgil draft or a pending
+    // (ungraded) response that hasn't been overridden by the teacher.
     const needsReviewBy = new Map<string, boolean>()
     for (const r of reviewRows ?? []) {
       const sid = r.student_id as string
-      const pending = r.graded_by === "virgil" && !r.teacher_override
+      const pending =
+        (r.graded_by === "virgil" || r.graded_by === "pending") && !r.teacher_override
       needsReviewBy.set(sid, (needsReviewBy.get(sid) ?? false) || pending)
     }
 

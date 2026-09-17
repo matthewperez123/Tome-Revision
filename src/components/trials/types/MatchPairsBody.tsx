@@ -8,15 +8,7 @@
  */
 import { useEffect, useMemo, useState } from "react"
 import type { TrialBodyProps } from "@/lib/trials/registry"
-
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr]
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[a[i], a[j]] = [a[j], a[i]]
-  }
-  return a
-}
+import { deterministicShuffle } from "@/lib/trials/deterministic-shuffle"
 
 export function MatchPairsBody({
   content,
@@ -27,8 +19,12 @@ export function MatchPairsBody({
 }: TrialBodyProps<"match_pairs">) {
   const lefts = useMemo(() => content.pairs.map((p) => p.left), [content.pairs])
   const rights = useMemo(
-    () => shuffle(content.pairs.map((p) => p.right)),
-    [content.pairs]
+    () =>
+      deterministicShuffle(
+        content.pairs.map((p) => p.right),
+        JSON.stringify(content.pairs),
+      ),
+    [content.pairs],
   )
   const correct = useMemo(() => {
     const m = new Map<string, string>()
@@ -38,10 +34,7 @@ export function MatchPairsBody({
 
   const [matches, setMatches] = useState<Record<string, string>>({})
   const [selectedLeft, setSelectedLeft] = useState<string | null>(null)
-
-  useEffect(() => {
-    if (answered && response) setMatches(response.pairs)
-  }, [answered, response])
+  const displayedMatches = answered && response ? response.pairs : matches
 
   useEffect(() => {
     if (Object.keys(matches).length === lefts.length) {
@@ -52,9 +45,9 @@ export function MatchPairsBody({
 
   const rightToLeft = useMemo(() => {
     const m = new Map<string, string>()
-    for (const [l, r] of Object.entries(matches)) m.set(r, l)
+    for (const [l, r] of Object.entries(displayedMatches)) m.set(r, l)
     return m
-  }, [matches])
+  }, [displayedMatches])
 
   const tapLeft = (left: string) => {
     if (answered) return
@@ -78,9 +71,9 @@ export function MatchPairsBody({
   }
 
   const leftStyle = (left: string) => {
-    const matched = Boolean(matches[left])
+    const matched = Boolean(displayedMatches[left])
     if (answered) {
-      const ok = matches[left] === correct.get(left)
+      const ok = displayedMatches[left] === correct.get(left)
       return ok
         ? { borderColor: "var(--codex-success)", background: "var(--codex-success-soft)" }
         : { borderColor: "var(--codex-danger)", background: "var(--codex-danger-soft)" }
@@ -115,9 +108,9 @@ export function MatchPairsBody({
           >
             <span className="flex items-center justify-between gap-2">
               {left}
-              {matches[left] && (
+              {displayedMatches[left] && (
                 <span className="text-xs text-muted-foreground font-sans shrink-0">
-                  → {matches[left]}
+                  → {displayedMatches[left]}
                 </span>
               )}
             </span>

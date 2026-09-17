@@ -12,6 +12,7 @@
  */
 import { useEffect, useMemo, useState } from "react"
 import type { TrialBodyProps } from "@/lib/trials/registry"
+import { deterministicShuffle } from "@/lib/trials/deterministic-shuffle"
 
 type Node =
   | { kind: "text"; text: string }
@@ -44,15 +45,6 @@ function lineNodes(
   return nodes
 }
 
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr]
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[a[i], a[j]] = [a[j], a[i]]
-  }
-  return a
-}
-
 export function FillTheLineBody({
   content,
   onRespond,
@@ -65,10 +57,7 @@ export function FillTheLineBody({
     Array(blankCount).fill("")
   )
 
-  // Read back any frozen response when the card replays it.
-  useEffect(() => {
-    if (answered && response) setAnswers(response.answers)
-  }, [answered, response])
+  const displayedAnswers = answered && response ? response.answers : answers
 
   // Report the current draft up to the card on every change.
   useEffect(() => {
@@ -77,17 +66,21 @@ export function FillTheLineBody({
   }, [answers])
 
   const bank = useMemo(
-    () => shuffle(content.wordBank ?? content.blanks.map((b) => b.answer)),
-    [content.wordBank, content.blanks]
+    () =>
+      deterministicShuffle(
+        content.wordBank ?? content.blanks.map((b) => b.answer),
+        JSON.stringify([content.lines, content.blanks]),
+      ),
+    [content.wordBank, content.blanks, content.lines],
   )
 
   const usedCounts = useMemo(() => {
     const m = new Map<string, number>()
-    for (const a of answers) {
+    for (const a of displayedAnswers) {
       if (a) m.set(a.toLowerCase(), (m.get(a.toLowerCase()) ?? 0) + 1)
     }
     return m
-  }, [answers])
+  }, [displayedAnswers])
 
   const setAnswer = (blankIndex: number, value: string) =>
     setAnswers((prev) => prev.map((a, i) => (i === blankIndex ? value : a)))
@@ -98,7 +91,7 @@ export function FillTheLineBody({
   }
 
   const renderSlot = (blankIndex: number) => {
-    const val = answers[blankIndex]
+    const val = displayedAnswers[blankIndex]
     const correct = content.blanks[blankIndex]?.answer ?? ""
     const ok =
       answered &&

@@ -9,6 +9,22 @@ import {
   wrapStudentText,
 } from "@/lib/virgil/task-config"
 import { withAnthropicRetry } from "@/lib/virgil/retry"
+import type { VirgilGrade } from "@/lib/teacher-quiz/objective"
+
+// Re-export the pure, server-only-free grading primitives so existing
+// `@/lib/teacher-quiz/grade` importers keep working unchanged.
+export {
+  answerToString,
+  autoGradeObjective,
+  isOpenEndedType,
+  questionMaxPoints,
+  resolveResponseGrade,
+} from "@/lib/teacher-quiz/objective"
+export type {
+  VirgilGrade,
+  FreeResponseGrader,
+  ResolvedGrade,
+} from "@/lib/teacher-quiz/objective"
 
 /**
  * Shared teacher-quiz grading primitives.
@@ -36,17 +52,6 @@ const gradeResultSchema = z.object({
   strengths: z.array(z.string()).default([]),
   improvements: z.array(z.string()).default([]),
 })
-
-export interface VirgilGrade {
-  score: number
-  isCorrect: boolean
-  feedback: string
-  rubricBreakdown: { criterion: string; points: number; note: string }[]
-  strengths: string[]
-  improvements: string[]
-  /** True when the student's answer was truncated before grading. */
-  truncated: boolean
-}
 
 export function isVirgilConfigured(): boolean {
   return Boolean(process.env.ANTHROPIC_API_KEY)
@@ -86,7 +91,7 @@ export async function gradeFreeResponseWithVirgil(params: {
     {
       type: "text",
       text:
-        "You are Virgil grading a student's free-response answer against a rubric. Award partial credit fairly. Feedback is warm, concrete, and tied to the text — never generic. You output strictly valid JSON. " +
+        "You are the Tome Assistant grading a student's free-response answer against a rubric. Award partial credit fairly. Feedback is warm, concrete, and tied to the text — never generic. You output strictly valid JSON. " +
         GRADING_INJECTION_GUARD,
     },
   ]
@@ -135,82 +140,4 @@ No prose, no fences.${nudge}`
     improvements: grade.improvements,
     truncated,
   }
-}
-
-// ── Objective auto-grading ────────────────────────────────────────────────────
-
-/** Types that carry a machine-checkable correct_answer. */
-const OBJECTIVE_TYPES = new Set([
-  "multiple_choice",
-  "multiple_select",
-  "true_false",
-  "fill_blank",
-  "vocabulary_in_context",
-  "passage_id",
-  "vocabulary",
-  "short_answer",
-])
-
-/** Types that must be graded by Virgil against a rubric / reference answer. */
-const OPEN_ENDED_TYPES = new Set(["free_response", "tf_with_reason"])
-
-export function isOpenEndedType(t: string): boolean {
-  return OPEN_ENDED_TYPES.has(t)
-}
-
-function norm(s: string): string {
-  return s
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, " ")
-    .replace(/[.,;:!?"'`]+$/g, "")
-}
-
-/** Pull a plain answer string out of the stored jsonb response. */
-export function answerToString(response: unknown): string {
-  if (response == null) return ""
-  if (typeof response === "string") return response
-  if (Array.isArray(response)) return response.map((r) => String(r)).join(", ")
-  if (typeof response === "object") {
-    const v = (response as { value?: unknown }).value
-    if (Array.isArray(v)) return v.map((r) => String(r)).join(", ")
-    if (v != null) return String(v)
-  }
-  return String(response)
-}
-
-/**
- * Grade an objective question. Returns null when the question isn't
- * machine-gradable (no correct_answer, or an open-ended type) — the caller
- * then routes it to Virgil or to teacher review.
- */
-export function autoGradeObjective(
-  question: { question_type: string; correct_answer: string | null; options: unknown },
-  response: unknown,
-): boolean | null {
-  const type = question.question_type
-  const correct = question.correct_answer
-  if (isOpenEndedType(type)) return null
-  if (!OBJECTIVE_TYPES.has(type) || correct == null || correct.trim() === "") return null
-
-  const given = answerToString(response)
-  if (type === "multiple_select") {
-    const expected = new Set(correct.split(",").map((s) => norm(s)).filter(Boolean))
-    const got = new Set(given.split(",").map((s) => norm(s)).filter(Boolean))
-    if (expected.size !== got.size) return false
-    for (const e of expected) if (!got.has(e)) return false
-    return true
-  }
-  return norm(given) === norm(correct)
-}
-
-/** Per-question max points, defaulting sensibly by kind. */
-export function questionMaxPoints(q: {
-  question_type: string
-  max_points: number | null
-  points: number | null
-}): number {
-  if (q.max_points != null) return q.max_points
-  if (q.points != null) return q.points
-  return isOpenEndedType(q.question_type) ? 4 : 1
 }

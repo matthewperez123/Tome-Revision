@@ -199,7 +199,8 @@ function ResponseCard({
   row: StudentResponseRow
   onGraded: () => void
 }) {
-  const [score, setScore] = useState(String(row.score))
+  const isPending = row.gradedBy === "pending"
+  const [score, setScore] = useState(isPending ? "" : String(row.score))
   const [feedback, setFeedback] = useState("")
   const [saving, setSaving] = useState(false)
 
@@ -229,10 +230,16 @@ function ResponseCard({
       <div className="flex items-start gap-2">
         <span className="mt-0.5 text-xs font-semibold text-muted-foreground">{index + 1}.</span>
         <p className="flex-1 text-sm font-medium">{row.questionText}</p>
-        <span className="flex items-center gap-1 text-xs font-semibold tabular-nums">
-          {row.isCorrect === true && <Check className="size-3.5 text-green-600" />}
-          {row.score}/{row.maxPoints}
-        </span>
+        {isPending ? (
+          <span className="rounded-full bg-amber-50 px-2 py-0.5 text-[10px] font-medium text-amber-700 dark:bg-amber-950/30 dark:text-amber-400">
+            Needs grading
+          </span>
+        ) : (
+          <span className="flex items-center gap-1 text-xs font-semibold tabular-nums">
+            {row.isCorrect === true && <Check className="size-3.5 text-green-600" />}
+            {row.score}/{row.maxPoints}
+          </span>
+        )}
       </div>
 
       <div className="mt-3 rounded-lg bg-muted/50 p-3">
@@ -246,12 +253,17 @@ function ResponseCard({
         </p>
       )}
 
-      {row.isOpenEnded && (
+      {(row.isOpenEnded || isPending) && (
         <div className="mt-3 space-y-3">
+          {isPending && (
+            <p className="text-xs text-amber-700 dark:text-amber-400">
+              This response wasn&apos;t auto-graded. Assign a score below.
+            </p>
+          )}
           {row.aiFeedback && (
             <div className="rounded-lg border border-[var(--tome-accent)]/20 bg-[var(--tome-accent)]/5 p-3">
               <p className="flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-wide text-[var(--tome-accent)]">
-                <Sparkles className="size-3" /> Virgil&apos;s draft
+                <Sparkles className="size-3" /> Tome Assistant&apos;s draft
               </p>
               <p className="mt-1 text-sm">{row.aiFeedback}</p>
               {breakdown.length > 0 && (
@@ -284,7 +296,7 @@ function ResponseCard({
               placeholder="Optional feedback to the student…"
               className="flex-1 text-sm"
             />
-            <Button onClick={save} disabled={saving} className="gap-1.5">
+            <Button onClick={save} disabled={saving || score.trim() === ""} className="gap-1.5">
               {saving ? "Saving…" : row.teacherOverride ? "Update" : "Approve"}
             </Button>
           </div>

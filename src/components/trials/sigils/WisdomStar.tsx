@@ -1,3 +1,6 @@
+"use client"
+
+import { useId } from "react"
 import type { SigilProps } from "./ApprenticeSigil"
 
 /**
@@ -5,7 +8,7 @@ import type { SigilProps } from "./ApprenticeSigil"
  * Used for the "+N Wisdom" floating element.
  */
 export function WisdomStar({ size = 16, color, ...rest }: SigilProps) {
-  const gradId = `wisdom-star-${Math.random().toString(36).slice(2, 8)}`
+  const gradId = `wisdom-star-${useId().replaceAll(":", "")}`
   return (
     <svg
       width={size}
