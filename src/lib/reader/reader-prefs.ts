@@ -27,19 +27,25 @@ export interface ReaderPrefs {
   turnStyle: ReaderTurnStyle
   a11yFace: boolean // accessibility reading face (sans) instead of Literata
   showFrontMatter: boolean // include imprint/colophon/etc. in the reading flow
+  openRecto: boolean // chapters open on a right-hand page (blank verso inserted)
 }
 
 export const READER_PREFS_DEFAULTS: ReaderPrefs = {
-  mode: "scroll",
+  // Codex spec (spec_version 1): the default reading experience is the
+  // two-page codex spread, typeset Literata 16/24, justified, hyphens off.
+  // Scroll remains available as an opt-in mode.
+  mode: "spread",
   theme: "day",
-  fontSizePx: 19,
-  // Kindle-proportioned leading (~1.6 at body sizes) — 1.8 read airy/loose.
-  lineHeight: 1.6,
+  fontSizePx: 16,
+  lineHeight: 1.5, // 16 × 1.5 = the reference 24px leading
   measureCh: 68,
-  justify: false,
+  justify: true,
   turnStyle: "slide",
   a11yFace: false,
   showFrontMatter: false,
+  // Off by default: readers preferred an unbroken flow of text (no inserted
+  // blank versos). The recto-open convention stays available as a setting.
+  openRecto: false,
 }
 
 export const FONT_SIZE_RANGE = { min: 14, max: 26, step: 1 } as const
@@ -99,6 +105,7 @@ function coerce(raw: unknown): ReaderPrefs {
     a11yFace: typeof p.a11yFace === "boolean" ? p.a11yFace : READER_PREFS_DEFAULTS.a11yFace,
     showFrontMatter:
       typeof p.showFrontMatter === "boolean" ? p.showFrontMatter : READER_PREFS_DEFAULTS.showFrontMatter,
+    openRecto: typeof p.openRecto === "boolean" ? p.openRecto : READER_PREFS_DEFAULTS.openRecto,
   }
 }
 
@@ -168,7 +175,8 @@ export function setReaderPrefs(patch: Partial<ReaderPrefs>): void {
     next.justify === state.justify &&
     next.turnStyle === state.turnStyle &&
     next.a11yFace === state.a11yFace &&
-    next.showFrontMatter === state.showFrontMatter
+    next.showFrontMatter === state.showFrontMatter &&
+    next.openRecto === state.openRecto
   ) {
     return
   }

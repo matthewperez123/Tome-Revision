@@ -7,22 +7,12 @@ import { springs } from "@/lib/design-tokens"
 import { cn } from "@/lib/utils"
 import { getUnitLabel } from "@/lib/structural-units"
 import type { StructuralUnitType, BookPart } from "@/data/books"
+// Chapter front/back-matter classification is shared with the folio-map lib
+// (single source of truth for the reader AND the canonical page-map generator).
+import { classifyChapter, type ChapterType } from "@/lib/reader/folio-map"
 
-// ── Chapter type classification ──
-
-export type ChapterType = "front-matter" | "chapter" | "back-matter"
-
-const FRONT_MATTER_KEYWORDS = [
-  "preface", "introduction", "introductory", "foreword", "dedication",
-  "prologue", "epigraph", "letter", "note to", "author's note",
-  "translator's", "dramatis personae", "the story", "frontispiece",
-  "acknowledgment", "our raison", "characters in the play",
-]
-
-const BACK_MATTER_KEYWORDS = [
-  "afterword", "appendix", "postscript",
-  "endnotes", "glossary", "bibliography", "colophon",
-]
+export { classifyChapter }
+export type { ChapterType }
 
 // Patterns that indicate a structural container (not a leaf chapter)
 const CONTAINER_PATTERNS = [
@@ -60,13 +50,6 @@ function isLevel1Container(title: string): boolean {
 function isSceneTitle(title: string): boolean {
   const t = title.trim()
   return SCENE_PATTERNS.some(p => p.test(t))
-}
-
-export function classifyChapter(title: string): ChapterType {
-  const lower = title.toLowerCase().trim()
-  if (FRONT_MATTER_KEYWORDS.some(kw => lower.startsWith(kw) || lower.includes(kw))) return "front-matter"
-  if (BACK_MATTER_KEYWORDS.some(kw => lower.startsWith(kw) || lower.includes(kw))) return "back-matter"
-  return "chapter"
 }
 
 function getChapterTypeIcon(type: ChapterType) {
@@ -282,6 +265,10 @@ interface ChapterSidebarProps {
    */
   parts?: BookPart[]
   chapterPartIds?: (string | undefined)[]
+  /** Canonical folio of each chapter's opening page ("xiv" / "212"). */
+  chapterFolios?: (string | null)[]
+  /** "Go to page" handler — accepts roman or arabic folios; false = unmapped. */
+  onGoToPage?: (input: string) => boolean
 }
 
 // ── Component ──
@@ -297,7 +284,11 @@ export function ChapterSidebar({
   structuralUnitType,
   parts,
   chapterPartIds,
+  chapterFolios,
+  onGoToPage,
 }: ChapterSidebarProps) {
+  const [gotoValue, setGotoValue] = useState("")
+  const [gotoError, setGotoError] = useState(false)
   const useParts = !!(parts && parts.length > 0 && chapterPartIds && chapterPartIds.length === chapters.length)
   const { frontMatter, body, backMatter } = useParts
     ? buildPartsTree(chapters, parts!, chapterPartIds!)
@@ -385,6 +376,11 @@ export function ChapterSidebar({
           <Icon className={cn("size-3 shrink-0", isActive ? "text-foreground" : "text-muted-foreground")} />
         )}
         <span className="truncate">{leaf.title}</span>
+        {chapterFolios?.[leaf.index] && (
+          <span className="ml-auto shrink-0 text-[9px] tabular-nums text-muted-foreground/60">
+            {chapterFolios[leaf.index]}
+          </span>
+        )}
       </button>
     )
   }
@@ -575,6 +571,48 @@ export function ChapterSidebar({
               </div>
             )}
           </nav>
+
+          {/* Go to page — canonical folios, arabic ("212") or roman ("xiv") */}
+          {onGoToPage && (
+            <form
+              className="mt-3 border-t border-border pt-3 px-1"
+              onSubmit={e => {
+                e.preventDefault()
+                const ok = onGoToPage(gotoValue)
+                setGotoError(!ok)
+                if (ok) {
+                  setGotoValue("")
+                  if (open) onToggle()
+                }
+              }}
+            >
+              <label className="mb-1 block text-[10px] text-muted-foreground" htmlFor="reader-goto-page">
+                Go to page
+              </label>
+              <div className="flex items-center gap-1.5">
+                <input
+                  id="reader-goto-page"
+                  value={gotoValue}
+                  onChange={e => { setGotoValue(e.target.value); setGotoError(false) }}
+                  placeholder="212 or xiv"
+                  autoComplete="off"
+                  className={cn(
+                    "h-7 w-full min-w-0 rounded-md border bg-background px-2 text-xs tabular-nums outline-none focus:border-foreground/40",
+                    gotoError ? "border-red-400" : "border-border"
+                  )}
+                />
+                <button
+                  type="submit"
+                  className="h-7 shrink-0 rounded-md border border-border px-2 text-[10px] font-medium text-muted-foreground hover:text-foreground"
+                >
+                  Go
+                </button>
+              </div>
+              {gotoError && (
+                <p className="mt-1 text-[10px] text-red-500">No such page.</p>
+              )}
+            </form>
+          )}
 
           {/* Progress */}
           <div className="mt-3 border-t border-border pt-3 px-1">

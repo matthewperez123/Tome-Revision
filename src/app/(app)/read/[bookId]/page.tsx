@@ -29,6 +29,13 @@ import type { TomeChapter } from "@/data/chapters"
 import { springs } from "@/lib/design-tokens"
 import { Skeleton } from "@/components/ui/skeleton"
 import { ChapterSidebar } from "./chapter-sidebar"
+import {
+  toRomanLower,
+  fromRomanLower,
+  buildChapterHeaderHTML,
+  stripLeadingHeading,
+  computeBookFolioMap,
+} from "@/lib/reader/folio-map"
 import { ReaderSettingsPanel } from "@/components/reader/reader-settings-panel"
 import {
   useReaderPrefs,
@@ -52,6 +59,7 @@ import { findAttemptForChapter, isAttemptResumable } from "@/lib/trial-attempts"
 import { getUnitNumber, getUnitLabel } from "@/lib/structural-units"
 import type { StructuralUnitType, BookPart } from "@/data/books"
 import { paginateHTML } from "@/lib/paginator"
+import { CODEX, codexTextHeight } from "@/lib/reader/codex-spec"
 import { AuthorLink } from "@/components/tome/author-link"
 import { cn } from "@/lib/utils"
 import { useTheme } from "next-themes"
@@ -83,72 +91,9 @@ const PLACEHOLDER_HTML = `<p>The dawn spread her fingertips of rose across the s
 <p>In the great hall, the fire crackled and sent shadows dancing across the stone walls. The bard took up his lyre and began to sing of the deeds of men and gods.</p>
 <p>The philosopher sat beneath the olive tree, his students gathered around him. He posed his question not to instruct, but to illuminate.</p>`
 
-/** Strip the first heading from chapter HTML to prevent duplicate titles
- *  (the reader's UI chrome already shows the chapter title). Handles:
- *  - Simple: <h2>Title</h2>
- *  - With spans: <h2><span>Act</span> <span>I</span></h2>
- *  - Inside section: <section ...><h2>Title</h2>
- *  - Header blocks: <header><h2>I</h2><p>Title</p></header>
- */
-function stripLeadingHeading(html: string): string {
-  // Strip the chapter's leading heading group so it isn't duplicated by the
-  // metadata-driven chapter header. Standard Ebooks wraps it in one of three
-  // shapes — <header>, <hgroup> (title + <p role="doc-subtitle">), or a bare
-  // <h1>-<h4> — optionally inside one or more <section> opens. We keep the
-  // section opens (capture group) and remove only the heading block. The
-  // negative lookahead preserves scholarly-apparatus headers that opt out via
-  // a `data-scholarly-header` marker — those are not title duplicates.
-  return html.replace(
-    /^(\s*(?:<section[^>]*>\s*)*)(?:<header(?![^>]*data-scholarly-header)[^>]*>[\s\S]*?<\/header>|<hgroup[^>]*>[\s\S]*?<\/hgroup>|<h[1-4][^>]*>[\s\S]*?<\/h[1-4]>)\s*/i,
-    "$1"
-  )
-}
-
-// ── Whole-book folio numbering ──────────────────────────────────────────────
-// Front matter (preface/introduction/etc.) is numbered with lowercase roman
-// numerals; body matter uses arabic restarting at 1 on the first body page.
-// Matter is derived from the chapter's leading Standard-Ebooks section role
-// (epub:type surfaces as the ARIA `role` in our content HTML).
-const FRONT_MATTER_ROLES = new Set([
-  "doc-preface", "doc-foreword", "doc-introduction", "doc-dedication",
-  "doc-epigraph", "doc-prologue", "doc-acknowledgments", "doc-colophon",
-])
-
-function isFrontMatterHtml(html: string): boolean {
-  const m = html.match(/role="(doc-[a-z]+)"/i)
-  return m ? FRONT_MATTER_ROLES.has(m[1].toLowerCase()) : false
-}
-
-function toRomanLower(n: number): string {
-  if (n <= 0) return String(n)
-  const table: [number, string][] = [
-    [1000, "m"], [900, "cm"], [500, "d"], [400, "cd"], [100, "c"], [90, "xc"],
-    [50, "l"], [40, "xl"], [10, "x"], [9, "ix"], [5, "v"], [4, "iv"], [1, "i"],
-  ]
-  let out = "", rem = n
-  for (const [v, s] of table) while (rem >= v) { out += s; rem -= v }
-  return out
-}
-
-function escapeHtml(s: string): string {
-  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
-}
-
-// Chapter-title chrome prepended to the paginated content so the first page of
-// each chapter opens with the same eyebrow + Literata title + subtitle the
-// scroll reader renders. Wrapped in <figure> so the paginator keeps it as ONE
-// atomic block (FIGURE is a leaf tag) — that prevents the header's <p>s from
-// joining the body's `p + p` indent chain. Must stay byte-identical between the
-// live render and the off-screen pre-measure pass so folio counts match.
-function buildChapterHeaderHTML(eyebrow: string, title: string, subtitle?: string): string {
-  return (
-    `<figure class="reader-chapter-header">` +
-    `<p class="reader-chapter-eyebrow">${escapeHtml(eyebrow)}</p>` +
-    `<h1 class="reader-chapter-title">${escapeHtml(title)}</h1>` +
-    (subtitle ? `<p class="reader-chapter-subtitle">${escapeHtml(subtitle)}</p>` : "") +
-    `</figure>`
-  )
-}
+// Whole-book folio numbering + chapter-header chrome helpers live in the
+// shared lib (@/lib/reader/folio-map) so the live reader and the headless
+// canonical-map generator measure with identical code.
 
 /** Derive a CSS content-type class from the book's genre tags.
  *  Drama books get character-color bars + table styling.
@@ -180,26 +125,11 @@ function getContentTypeClass(genres: string[]): string {
 
 // Reader uses the global theme via next-themes. No separate theme system.
 
-// Padding constants — must match PaginatedReader's own padding.
-// Horizontal now derives from the shared --reader-pad-x token (2rem = 32px/side)
-// so paginated text inset matches scroll; vertical stays a page-layout constant.
-const PAGE_PADDING_V = 80  // 40px top + 40px bottom
-const PAGE_PADDING_H = 64  // 32px left + 32px right
-const SPREAD_SPINE   = 1   // 1px spine
-// The paper card is `h-[calc(100%-72px)]` inside the reading surface (centered,
-// leaving room for the progress strip). Subtract it so the paginator measures
-// the true content box height — not doing so overpacked pages and clipped the
-// last line(s) under the paper's `overflow: hidden`.
-const PAGE_PAPER_OFFSET = 72
-
-/** Usable per-page content height, floored to a whole number of text lines so
- *  no partial line is ever left to be clipped at the page boundary. */
-function usablePageHeight(containerH: number, fontSizePx: number, lineHeight: number): number {
-  const raw = containerH - PAGE_PAPER_OFFSET - PAGE_PADDING_V
-  const linePx = fontSizePx * lineHeight
-  if (linePx <= 0) return Math.max(50, raw)
-  return Math.max(linePx, Math.floor(raw / linePx) * linePx)
-}
+// Codex geometry (spec_version 1): pagination always measures against the
+// fixed 392×672 text block regardless of viewport — the rendered page box is
+// scaled whole via `transform: scale` inside PaginatedReader. Only the user's
+// font-size / line-spacing setting re-flows text (codexTextHeight floors the
+// block to whole lines so no partial line is ever clipped).
 
 export default function ReaderPage() {
   const params  = useParams()
@@ -278,7 +208,6 @@ export default function ReaderPage() {
   const [pages, setPages]               = useState<string[]>([])
   const [currentPage, setCurrentPage]   = useState(0)
   const [isPaginating, setIsPaginating] = useState(false)
-  const [containerDims, setContainerDims] = useState({ w: 0, h: 0 })
 
   // ── Guided / Free flow state ──
   // showModeModal removed — auto-start with guided/Apprentice
@@ -330,14 +259,19 @@ export default function ReaderPage() {
   const scrollContentRef       = useRef<HTMLDivElement>(null)
   // Always-set ref to the reader surface (both modes) for presence overlays.
   const readerSurfaceRef       = useRef<HTMLDivElement>(null)
-  const paginationRoRef        = useRef<ResizeObserver | null>(null)
-  const paginationDebounceRef  = useRef<ReturnType<typeof setTimeout> | null>(null)
   const sessionStartRef        = useRef(Date.now())
   // Monotonic token so a slow DB-quiz fetch from a previous difficulty/chapter
   // selection can't clobber a newer one (last-selected wins).
   const trialReqRef            = useRef(0)
   const sentinelRef            = useRef<HTMLDivElement>(null)
   const anchorTextRef          = useRef<string | null>(null)
+  // One-shot local-page target for "go to page" jumps across chapters —
+  // consumed by the pagination effect ahead of anchor/localStorage restore.
+  const pendingLocalPageRef    = useRef<number | null>(null)
+  // Which chapter the current chapterHTML belongs to (-1 while loading). The
+  // pagination effect runs in the same commit as a chapter switch — before the
+  // loader's placeholder lands — so it must not trust chapterHTML alone.
+  const htmlForChapterRef      = useRef<number>(-1)
 
   // ── Providers ──
   const { getProgress, startBook, completeChapter, saveQuizResult } = useBookProgress()
@@ -374,10 +308,15 @@ export default function ReaderPage() {
 
   // ── Whole-book folio map (paginated modes only) ──
   // counts[i] = page count of chapter i at the current layout; matter[i] tells
-  // roman (front) vs arabic (body). Pre-measured off-screen on book open and
-  // whenever layout (mode / font-size / viewport) changes — see the effect.
-  const [folioMap, setFolioMap] =
-    useState<{ counts: number[]; matter: ("front" | "body")[]; key: string } | null>(null)
+  // roman (front) vs arabic (body); folioStart[i] = 1-based folio (within its
+  // numbering sequence) of chapter i's first page, with recto-open blanks
+  // counted. Pre-measured off-screen on book open / layout change.
+  const [folioMap, setFolioMap] = useState<{
+    counts: number[]
+    matter: ("front" | "body")[]
+    folioStart: number[]
+    key: string
+  } | null>(null)
 
   // Eyebrow / title / subtitle for a given chapter — identical logic to the
   // scroll header (eyebrow = "Book · Part" or "Book"; subtitle only on a part's
@@ -498,6 +437,7 @@ export default function ReaderPage() {
 
   // Load chapter HTML on demand — static file first, Supabase fallback
   useEffect(() => {
+    htmlForChapterRef.current = -1 // chapterHTML no longer matches this chapter
     setChapterHTML(PLACEHOLDER_HTML)
     let cancelled = false
     async function loadHTML() {
@@ -506,14 +446,21 @@ export default function ReaderPage() {
         const res = await fetch(`/content/${bookId}/ch-${currentChapter}.json`)
         if (res.ok) {
           const data = await res.json()
-          if (!cancelled && data.html) { setChapterHTML(sanitizeReaderHtml(data.html)); return }
+          if (!cancelled && data.html) {
+            htmlForChapterRef.current = currentChapter
+            setChapterHTML(sanitizeReaderHtml(data.html))
+            return
+          }
         }
       } catch { /* fall through */ }
 
       // 2. Try inline content_html from cached chapter (Supabase chapter already in state)
       const cached = chapters[currentChapter] as Chapter | undefined
       if (cached?.content_html) {
-        if (!cancelled) setChapterHTML(sanitizeReaderHtml(cached.content_html))
+        if (!cancelled) {
+          htmlForChapterRef.current = currentChapter
+          setChapterHTML(sanitizeReaderHtml(cached.content_html))
+        }
         return
       }
 
@@ -522,7 +469,11 @@ export default function ReaderPage() {
         const { data } = await supabase
           .from("chapters").select("content_html")
           .eq("book_id", bookId).order("order")
-        if (!cancelled) setChapterHTML(sanitizeReaderHtml(data?.[currentChapter]?.content_html ?? PLACEHOLDER_HTML))
+        if (!cancelled) {
+          const html = data?.[currentChapter]?.content_html
+          if (html) htmlForChapterRef.current = currentChapter
+          setChapterHTML(sanitizeReaderHtml(html ?? PLACEHOLDER_HTML))
+        }
       } catch {
         if (!cancelled) setChapterHTML(PLACEHOLDER_HTML)
       }
@@ -681,37 +632,11 @@ export default function ReaderPage() {
     return () => observer.disconnect()
   }, [currentChapter, isScroll])
 
-  // Callback ref — measures the paginated container the instant it attaches
-  // (post-layout) and re-measures on resize. A callback ref fires reliably on
-  // mount/unmount, avoiding the pre-layout `width === 0` race a mount effect
-  // hits when the container appears mid-transition from scroll → paginated.
-  const setPaginationContainer = useCallback((el: HTMLDivElement | null) => {
-    paginationRoRef.current?.disconnect()
-    paginationRoRef.current = null
-    if (paginationDebounceRef.current) clearTimeout(paginationDebounceRef.current)
-    if (!el) return
-
-    const measure = () => {
-      const rect = el.getBoundingClientRect()
-      setContainerDims(prev => {
-        if (Math.abs(prev.w - rect.width) < 4 && Math.abs(prev.h - rect.height) < 4) return prev
-        return { w: rect.width, h: rect.height }
-      })
-    }
-
-    measure() // seed immediately — the node is attached and laid out here
-    const ro = new ResizeObserver(() => {
-      if (paginationDebounceRef.current) clearTimeout(paginationDebounceRef.current)
-      paginationDebounceRef.current = setTimeout(measure, 200)
-    })
-    ro.observe(el)
-    paginationRoRef.current = ro
-  }, [])
-
-  // Pagination driver — re-runs when mode / chapter / fontSize / containerDims changes
+  // Pagination driver — re-runs when chapter / type settings change. The codex
+  // page box is viewport-independent, so container resizes and spread/single
+  // toggles never re-flow text (they only re-scale the box).
   useEffect(() => {
     if (isScroll) return
-    if (containerDims.w === 0 || containerDims.h === 0) return
 
     let cancelled = false
 
@@ -724,13 +649,8 @@ export default function ReaderPage() {
 
       setIsPaginating(true)
 
-      const usableH = usablePageHeight(containerDims.h, fontSize, prefs.lineHeight)
-      // Spread splits the surface into two columns; single uses the full width
-      // (clamped to the 640px paper) so page counts match the rendered paper.
-      const usableW =
-        effectiveMode === "spread"
-          ? Math.min(500, (containerDims.w - SPREAD_SPINE) / 2) - PAGE_PADDING_H
-          : Math.min(680, containerDims.w) - PAGE_PADDING_H
+      const usableH = codexTextHeight(fontSize, prefs.lineHeight)
+      const usableW = CODEX.textW
 
       // Prepend the chapter-header chrome (eyebrow + Literata title + subtitle)
       // so the first page opens like the scroll reader. Atomic <figure> keeps it
@@ -748,7 +668,9 @@ export default function ReaderPage() {
         contentTypeClass: ctClass,
         justify: prefs.justify,
         a11yFace: prefs.a11yFace,
-        measure: `${prefs.measureCh}ch`,
+        // Codex: the fixed text block IS the measure — the measure-ch pref
+        // applies to scroll mode only.
+        measure: `${CODEX.textW}px`,
       })
 
       if (cancelled) return
@@ -756,7 +678,23 @@ export default function ReaderPage() {
       setPages(computed)
       setIsPaginating(false)
 
-      // Restore position: anchor text match → localStorage → first page
+      // Restore position: go-to-page target → anchor text → localStorage → 0.
+      // The placeholder pass (chapter HTML still loading) must NOT consume the
+      // pending target — the real content's pagination run does.
+      const pending = pendingLocalPageRef.current
+      if (pending !== null) {
+        // Only consume the target once THIS chapter's real content has been
+        // paginated — not the stale previous-chapter HTML (same-commit run on
+        // chapter switch) and not the loading placeholder.
+        if (htmlForChapterRef.current !== currentChapter) {
+          setCurrentPage(0)
+          return
+        }
+        pendingLocalPageRef.current = null
+        setCurrentPage(Math.min(Math.max(0, pending), Math.max(0, computed.length - 1)))
+        return
+      }
+
       const anchor = anchorTextRef.current
       if (anchor) {
         const anchorPage = computed.findIndex(p => p.includes(anchor))
@@ -783,7 +721,7 @@ export default function ReaderPage() {
     runPagination()
     return () => { cancelled = true }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [chapterHTML, effectiveMode, currentChapter, fontSize, containerDims, prefs.lineHeight, prefs.justify, prefs.a11yFace, prefs.measureCh])
+  }, [chapterHTML, isScroll, currentChapter, fontSize, prefs.lineHeight, prefs.justify, prefs.a11yFace])
 
   // Save page position to localStorage in paginated mode (instant per-chapter restore)
   useEffect(() => {
@@ -828,55 +766,35 @@ export default function ReaderPage() {
   // Reuses paginateHTML's module cache, so the current chapter is measured once.
   useEffect(() => {
     if (isScroll) return
-    if (containerDims.w === 0 || containerDims.h === 0) return
     if (!book || chapters.length === 0) return
 
-    const usableH = usablePageHeight(containerDims.h, fontSize, prefs.lineHeight)
-    const usableW =
-      effectiveMode === "spread"
-        ? Math.min(500, (containerDims.w - SPREAD_SPINE) / 2) - PAGE_PADDING_H
-        : Math.min(680, containerDims.w) - PAGE_PADDING_H
+    // Codex geometry — identical in single and spread, independent of the
+    // viewport, so the folio map is stable per (book, type setting). The
+    // measurement itself lives in the shared lib so the live reader and the
+    // headless canonical-map generator can never drift.
     const ctClass = book && "genres" in book ? getContentTypeClass((book as TomeBook).genres) : "content-prose"
-    const key = `${bookId}-${effectiveMode}-${fontSize}-${prefs.lineHeight}-${prefs.justify}-${prefs.a11yFace}-${prefs.measureCh}-${Math.round(usableW)}-${Math.round(usableH)}`
+    const key = `${bookId}-codex1-${fontSize}-${prefs.lineHeight}-${prefs.justify}-${prefs.a11yFace}-${prefs.openRecto}`
 
     let cancelled = false
     ;(async () => {
-      const counts: number[] = new Array(chapters.length).fill(1)
-      const matter: ("front" | "body")[] = new Array(chapters.length).fill("body")
-      for (let i = 0; i < chapters.length; i++) {
-        if (cancelled) return
-        try {
-          const res = await fetch(`/content/${bookId}/ch-${i}.json`)
-          if (!res.ok) continue
-          const data = await res.json()
-          const raw: string | undefined = data?.html
-          if (!raw) continue
-          matter[i] = isFrontMatterHtml(raw) ? "front" : "body"
-          const hp = chapterHeaderPartsFor(i)
-          const html =
-            buildChapterHeaderHTML(hp.eyebrow, hp.title, hp.subtitle) +
-            stripLeadingHeading(sanitizeReaderHtml(raw))
-          const pagesArr = await paginateHTML({
-            html,
-            pageHeight: Math.max(50, usableH),
-            pageWidth:  Math.max(50, usableW),
-            fontSize,
-            lineHeight: prefs.lineHeight,
-            contentTypeClass: ctClass,
-            justify: prefs.justify,
-            a11yFace: prefs.a11yFace,
-            measure: `${prefs.measureCh}ch`,
-          })
-          counts[i] = Math.max(1, pagesArr.length)
-        } catch { /* keep the fallback count of 1 */ }
-        // Yield periodically so a long book doesn't jank the page-turn UI.
-        if (i % 2 === 1) await new Promise(r => setTimeout(r, 0))
-      }
-      if (!cancelled) setFolioMap({ counts, matter, key })
+      const result = await computeBookFolioMap({
+        bookId,
+        chapterTitles: chapters.map(c => c.title ?? ""),
+        headerParts: chapterHeaderPartsFor,
+        contentTypeClass: ctClass,
+        fontSizePx: fontSize,
+        lineHeight: prefs.lineHeight,
+        justify: prefs.justify,
+        a11yFace: prefs.a11yFace,
+        openRecto: prefs.openRecto,
+        isCancelled: () => cancelled,
+      })
+      if (!result || cancelled) return
+      setFolioMap({ ...result, key })
     })()
     return () => { cancelled = true }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isScroll, bookId, effectiveMode, fontSize, containerDims, prefs.lineHeight, prefs.justify, prefs.a11yFace, prefs.measureCh, chapters, book])
+  }, [isScroll, bookId, fontSize, prefs.lineHeight, prefs.justify, prefs.a11yFace, prefs.openRecto, chapters, book])
 
   // Global folio for a local (within-chapter) page index. Front matter → roman,
   // body → arabic restarting at 1 on the first body page. While the whole-book
@@ -884,19 +802,52 @@ export default function ReaderPage() {
   // folio is always visible.
   const folioLabel = useCallback(
     (localPageIndex: number): string | null => {
-      if (!folioMap) return String(localPageIndex + 1)
-      const { counts, matter } = folioMap
-      if (currentChapter >= counts.length) return String(localPageIndex + 1)
-      const isFront = matter[currentChapter] === "front"
-      let before = 0
-      for (let i = 0; i < currentChapter; i++) {
-        if ((matter[i] === "front") === isFront) before += counts[i]
-      }
-      const folio = before + localPageIndex + 1
-      return isFront ? toRomanLower(folio) : String(folio)
+      if (!folioMap || currentChapter >= folioMap.counts.length) return String(localPageIndex + 1)
+      const folio = folioMap.folioStart[currentChapter] + localPageIndex
+      return folioMap.matter[currentChapter] === "front" ? toRomanLower(folio) : String(folio)
     },
     [folioMap, currentChapter]
   )
+
+  // "Go to page" — accepts an arabic body folio ("212") or a lowercase roman
+  // front-matter folio ("xiv") and jumps to the chapter + local page holding
+  // that canonical folio at the current layout. Returns false when unmapped.
+  const goToFolio = useCallback(
+    (input: string): boolean => {
+      if (!folioMap) return false
+      const raw = input.trim().toLowerCase()
+      if (!raw) return false
+      const isRoman = /^[ivxlcdm]+$/.test(raw) && !/^\d+$/.test(raw)
+      const target = isRoman ? fromRomanLower(raw) : Number.parseInt(raw, 10)
+      if (!Number.isFinite(target) || target < 1) return false
+      const wantFront = isRoman
+      for (let i = 0; i < folioMap.counts.length; i++) {
+        if ((folioMap.matter[i] === "front") !== wantFront) continue
+        const start = folioMap.folioStart[i]
+        if (target >= start && target < start + folioMap.counts[i]) {
+          const local = target - start
+          if (i === currentChapter) {
+            setCurrentPage(local)
+          } else {
+            pendingLocalPageRef.current = local
+            setCurrentChapter(i)
+          }
+          return true
+        }
+      }
+      return false
+    },
+    [folioMap, currentChapter]
+  )
+
+  // TOC folios — the canonical folio of each chapter's opening page, shown in
+  // the chapter sidebar once the whole-book map has been measured.
+  const chapterFolios = useMemo<(string | null)[] | undefined>(() => {
+    if (isScroll || !folioMap) return undefined
+    return folioMap.folioStart.map((start, i) =>
+      folioMap.matter[i] === "front" ? toRomanLower(start) : String(start)
+    )
+  }, [isScroll, folioMap])
 
   // ────────────────────────────────────────────────────
   // Handlers
@@ -1207,6 +1158,8 @@ export default function ReaderPage() {
           structuralUnitType={structuralUnitType}
           parts={bookParts}
           chapterPartIds={chapterPartIds}
+          chapterFolios={chapterFolios}
+          onGoToPage={!isScroll && folioMap ? goToFolio : undefined}
         />
 
         {/* Main Reader Area */}
@@ -1472,11 +1425,8 @@ export default function ReaderPage() {
               </div>
             </>
           ) : (
-            /* ── PAGINATED MODE (page / book spread) ── */
-            <div
-              ref={setPaginationContainer}
-              className="relative z-10 flex-1 overflow-hidden"
-            >
+            /* ── PAGINATED MODE (codex page / book spread) ── */
+            <div className="relative z-10 flex-1 overflow-hidden">
               <PaginatedReader
                 pages={pages}
                 currentPage={currentPage}
@@ -1493,6 +1443,9 @@ export default function ReaderPage() {
                 onToggleToolbar={() => setSidebarOpen(s => !s)}
                 contentTypeClass={book && "genres" in book ? getContentTypeClass((book as TomeBook).genres) : "content-prose"}
                 folioLabel={folioLabel}
+                runningHeadVerso={book?.title ?? undefined}
+                runningHeadRecto={chapters[currentChapter]?.title ?? undefined}
+                openOnRecto={prefs.openRecto}
               />
             </div>
           )}

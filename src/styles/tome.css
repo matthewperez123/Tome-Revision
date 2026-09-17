@@ -306,7 +306,10 @@
    NOT Fraunces — matches scroll); subtitle = text-sm italic muted. */
 .prose-reader .reader-chapter-header {
   margin: 0 0 2rem;
-  padding: 0;
+  /* Modest opener drop (reader preferred density over the full ⅓ sink —
+     keeps more of the text on each opening page). The off-screen paginator
+     probe carries .prose-reader too, so it measures identically. */
+  padding: 48px 0 0;
 }
 .prose-reader .reader-chapter-eyebrow {
   margin: 0 0 0.5rem;
@@ -320,7 +323,8 @@
 }
 .prose-reader .reader-chapter-title {
   margin: 0;
-  font-family: var(--font-serif);
+  /* Codex spec §5.2: chapter titles are Fraunces (display), 28–32px. */
+  font-family: var(--font-display);
   font-size: 1.875rem;
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -1391,8 +1395,8 @@ mark.tome-shared-annotation {
    values are set inline from the user's reader prefs on the wrapper element;
    the fallbacks below keep the surface sane if a token is ever absent. */
 .reader-surface {
-  --reader-font-size: 19px;
-  --reader-line-height: 1.6; /* Kindle-proportioned leading; mirrors READER_PREFS_DEFAULTS */
+  --reader-font-size: 16px;   /* codex spec body — mirrors READER_PREFS_DEFAULTS */
+  --reader-line-height: 1.5;  /* 16 × 1.5 = 24px reference leading */
   --reader-measure: 68ch;
   --reader-pad-x: 2rem;   /* 32px — matches scroll md:px-8 */
   --reader-pad-y: 4rem;   /* 64px — matches scroll md:py-16 */
@@ -1421,11 +1425,14 @@ mark.tome-shared-annotation {
 }
 
 /* ── Justification toggle (prose only) ──────────────────────────────────
-   Verse and drama speeches must NEVER justify or hyphenate. */
+   Verse and drama speeches must NEVER justify or hyphenate.
+   Codex spec: word-space justification only — no word is ever split, so
+   hyphenation stays OFF even when justified (inter-word stretching). */
 .prose-reader.reader-justify p {
   text-align: justify;
-  -webkit-hyphens: auto;
-  hyphens: auto;
+  text-justify: inter-word;
+  -webkit-hyphens: none;
+  hyphens: none;
 }
 .prose-reader.reader-ragged p {
   text-align: left;
