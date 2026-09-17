@@ -92,7 +92,7 @@ export function PersonalAnnotationsShowcase() {
                   </span>
                 </div>
                 <p className="text-xs text-foreground leading-relaxed">
-                  Echoes Blake &mdash; to see a world in a grain of sand. Pull
+                  Echoes Blake: to see a world in a grain of sand. Pull
                   this for the essay.
                 </p>
               </div>

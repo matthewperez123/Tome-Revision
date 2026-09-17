@@ -5,14 +5,14 @@
 export const marketingMasterImages = {
   faq: {
     src: "/paintings/astronomer.jpg",
-    alt: "The Astronomer by Johannes Vermeer, 1668 — a scholar at work in a warmly lit study.",
+    alt: "The Astronomer by Johannes Vermeer, 1668: a scholar at work in a warmly lit study.",
     attribution: "Johannes Vermeer, The Astronomer, 1668",
     width: 900,
     height: 1020,
   },
   pricing: {
     src: "/paintings/among-sierra-nevada.jpg",
-    alt: "Among the Sierra Nevada, California by Albert Bierstadt, 1868 — a luminous panoramic landscape.",
+    alt: "Among the Sierra Nevada, California by Albert Bierstadt, 1868: a luminous panoramic landscape.",
     attribution: "Albert Bierstadt, Among the Sierra Nevada, California, 1868",
     width: 1916,
     height: 1150,

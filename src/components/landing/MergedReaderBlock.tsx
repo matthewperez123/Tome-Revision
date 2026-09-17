@@ -58,7 +58,7 @@ export function MergedReaderBlock() {
   return (
     <TeacherShowcaseShell
       heading="The reader, shaped to the work."
-      subcopy="Epic, verse, drama, or Middle English — each form rendered the way it was meant to be read. No summaries, no abridgements, complete texts in Literata."
+      subcopy="Epic, verse, drama, or Middle English: each form rendered the way it was meant to be read. No summaries, no abridgements, complete texts in Literata."
       layout="mockup-left"
       bgClass="bg-background"
     >
@@ -178,7 +178,7 @@ function PlaySample() {
         Hamlet &middot; Shakespeare
       </p>
       <p className="text-[11px] font-semibold text-foreground mb-4">
-        Act I, Scene iv &mdash; The platform before the castle
+        Act I, Scene iv · The platform before the castle
       </p>
       <div className="font-serif text-sm leading-[1.8] space-y-2">
         {SCRIPT.map((beat, i) => {

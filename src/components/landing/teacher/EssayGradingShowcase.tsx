@@ -44,7 +44,7 @@ export function EssayGradingShowcase() {
         <div className="bg-card rounded-xl border border-border p-5">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-sm font-semibold">Grading Assistant</span>
-            <span className="rounded-full bg-indigo-50 dark:bg-indigo-950/30 px-2 py-0.5 text-[8px] text-indigo-600 dark:text-indigo-400">Preview — AI-assisted</span>
+            <span className="rounded-full bg-indigo-50 dark:bg-indigo-950/30 px-2 py-0.5 text-[8px] text-indigo-600 dark:text-indigo-400">Preview · AI-assisted</span>
           </div>
           <p className="text-2xl font-bold">87 <span className="text-sm text-muted-foreground">/ 100</span></p>
           {CRITERIA.map(c => <div key={c.name} className="flex justify-between text-[9px] py-0.5"><span>{c.name}</span><span>{c.score}/{c.max}</span></div>)}
@@ -72,7 +72,7 @@ export function EssayGradingShowcase() {
           <div className="flex items-center gap-1.5 mb-2">
             <span className="text-[9px] font-semibold">Grading Assistant</span>
           </div>
-          <span className="rounded-full bg-indigo-50 dark:bg-indigo-950/30 px-1.5 py-0.5 text-[7px] text-indigo-600 dark:text-indigo-400">Preview — AI-assisted</span>
+          <span className="rounded-full bg-indigo-50 dark:bg-indigo-950/30 px-1.5 py-0.5 text-[7px] text-indigo-600 dark:text-indigo-400">Preview · AI-assisted</span>
 
           {!showResults && (
             <motion.div className="mt-4 text-center">

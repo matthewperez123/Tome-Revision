@@ -4,9 +4,9 @@ import { getCatalogStats } from "@/lib/marketing/catalog-stats"
 import { CatalogStatsProvider } from "@/lib/marketing/catalog-stats-context"
 
 export async function generateMetadata(): Promise<Metadata> {
-  const title = "For Educators — Teach the classics with Tome"
+  const title = "For Educators | Teach the classics with Tome"
   const description =
-    "Bring guided reading to your classroom. Assign chapters and Trials, auto-grade comprehension, and track every student in a live gradebook — free for individual teachers."
+    "Bring guided reading to your classroom. Assign chapters and Trials, auto-grade comprehension, and track every student in a live gradebook. Free for individual teachers."
   return {
     title: { absolute: title },
     description,

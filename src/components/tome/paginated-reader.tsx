@@ -55,10 +55,11 @@ function ProgressStrip({
   step: number
 }) {
   const pct = ((currentPage + step) / Math.max(1, totalPages)) * 100
+  const shown = Math.min(totalPages, currentPage + step)
 
   return (
     <div
-      className="absolute bottom-0 inset-x-0 flex flex-col items-center gap-1 pb-3 pointer-events-none"
+      className="absolute bottom-0 inset-x-0 flex flex-col items-center gap-1 pb-2 pointer-events-none"
       aria-live="polite"
     >
       <div
@@ -70,6 +71,11 @@ function ProgressStrip({
           style={{ width: `${Math.min(100, pct)}%`, backgroundColor: "var(--reader-accent)" }}
         />
       </div>
+      {totalPages > 0 && (
+        <span className="text-[10px] tabular-nums" style={{ color: "var(--reader-muted)" }}>
+          Page {shown} of {totalPages}
+        </span>
+      )}
     </div>
   )
 }

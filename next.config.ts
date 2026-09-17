@@ -49,6 +49,17 @@ const nextConfig: NextConfig = {
   // Compress responses
   compress: true,
 
+  // The AI assistant marketing page moved /virgil → /assistant (rebrand).
+  async redirects() {
+    return [
+      {
+        source: "/virgil",
+        destination: "/assistant",
+        permanent: true,
+      },
+    ]
+  },
+
   // Caching headers for static assets
   async headers() {
     return [

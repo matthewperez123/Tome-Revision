@@ -12,7 +12,7 @@ const PASSAGE_LINES = [
 const ANNOTATION = {
   label: "Patronymic",
   body:
-    "\u201cSon of Peleus\u201d is a patronymic \u2014 an epithet identifying Achilles by his father. Homer uses patronymics to place heroes within their lineage and remind the audience of inherited glory or doom.",
+    "\u201cSon of Peleus\u201d is a patronymic, an epithet identifying Achilles by his father. Homer uses patronymics to place heroes within their lineage and remind the audience of inherited glory or doom.",
 }
 
 const CHAT_Q = "Why open with Achilles' anger?"
@@ -29,7 +29,7 @@ export function MergedVirgilBlock() {
   return (
     <TeacherShowcaseShell
       heading="A scholar in the margin. Your marks beside his."
-      subcopy="Tap any annotation to open Tome Assistant's drawer — a scholarly note up top, a live chat at the bottom. Highlight what stops you, leave a note for your future self. Tome Assistant is indigo; you are amber."
+      subcopy="Tap any annotation to open Tome Assistant's drawer: a scholarly note up top, a live chat at the bottom. Highlight what stops you, leave a note for your future self. Tome Assistant is indigo; you are amber."
       layout="mockup-right"
       bgClass="bg-muted"
     >
@@ -149,7 +149,7 @@ export function MergedVirgilBlock() {
                     </span>
                   </div>
                   <p className="text-xs text-foreground leading-relaxed">
-                    Echoes Blake &mdash; to see a world in a grain of sand. Pull this for the essay.
+                    Echoes Blake: to see a world in a grain of sand. Pull this for the essay.
                   </p>
                 </div>
               </div>

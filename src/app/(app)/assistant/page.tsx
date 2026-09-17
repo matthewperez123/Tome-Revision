@@ -6,23 +6,23 @@ import { VirgilLanding } from "@/components/landing/virgil/VirgilLanding"
 import { VirgilOrb } from "@/components/virgil/VirgilOrb"
 
 export const metadata: Metadata = {
-  title: { absolute: "Tome Assistant — Your AI Scholar — Tome" },
+  title: { absolute: "Tome Assistant: Your AI Scholar | Tome" },
   description:
-    "Meet the Tome Assistant, the AI scholar inside Tome. It annotates the text as you read, offers scaffolded hints during Trials, explains any passage on request, and learns your taste — privately.",
+    "Meet the Tome Assistant, the AI scholar inside Tome. It annotates the text as you read, offers scaffolded hints during Trials, and explains any passage on request.",
   alternates: { canonical: "/assistant" },
   openGraph: {
     type: "website",
     url: "/assistant",
-    title: "Tome Assistant — Your AI Scholar — Tome",
+    title: "Tome Assistant: Your AI Scholar | Tome",
     description:
-      "Annotations in the margin, hints during quizzes, help with any passage, and recommendations that learn your taste. A scholar at your side, grounded in the text.",
+      "Annotations in the margin, hints during quizzes, and help with any passage. A scholar at your side, grounded in the text.",
     images: [{ url: "/og-image.png" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tome Assistant — Your AI Scholar — Tome",
+    title: "Tome Assistant: Your AI Scholar | Tome",
     description:
-      "Annotations in the margin, hints during quizzes, help with any passage, and recommendations that learn your taste. A scholar at your side, grounded in the text.",
+      "Annotations in the margin, hints during quizzes, and help with any passage. A scholar at your side, grounded in the text.",
     images: ["/og-image.png"],
   },
 }
@@ -42,7 +42,7 @@ export default function AssistantPage() {
             A scholar at your side, line by line.
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-            The Tome Assistant reads alongside you — marking what matters, answering what you
+            The Tome Assistant reads alongside you, marking what matters, answering what you
             ask, and nudging when you&apos;re stuck. Grounded in the text, never a
             tab away.
           </p>

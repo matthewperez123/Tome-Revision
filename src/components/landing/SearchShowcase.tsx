@@ -35,7 +35,7 @@ export function SearchShowcase() {
 
   if (isReduced) {
     return (
-      <TeacherShowcaseShell heading="Search the canon, six ways" subcopy="Titles, authors, themes, periods, quotes, traditions — everything indexed for discovery." layout="mockup-left" bgClass="bg-background">
+      <TeacherShowcaseShell heading="Search the canon, six ways" subcopy="Titles, authors, themes, periods, quotes, traditions: everything indexed for discovery." layout="mockup-left" bgClass="bg-background">
         <div className="bg-card rounded-xl border border-border p-5">
           <div className="flex items-center gap-2 rounded-lg border bg-muted/50 px-3 py-2 mb-4">
             <Search className="size-3.5 text-muted-foreground" />
@@ -55,7 +55,7 @@ export function SearchShowcase() {
   }
 
   return (
-    <TeacherShowcaseShell heading="Search the canon, six ways" subcopy="Titles, authors, themes, periods, quotes, traditions — everything indexed for discovery." layout="mockup-left" bgClass="bg-background">
+    <TeacherShowcaseShell heading="Search the canon, six ways" subcopy="Titles, authors, themes, periods, quotes, traditions: everything indexed for discovery." layout="mockup-left" bgClass="bg-background">
       <div ref={containerRef} className="bg-card rounded-xl border border-border p-5 min-h-[260px]" style={{ willChange: "transform" }}>
         <div className="flex items-center gap-2 rounded-lg border bg-muted/50 px-3 py-2 mb-4">
           <Search className="size-3.5 text-muted-foreground" />

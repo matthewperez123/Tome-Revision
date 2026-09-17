@@ -1,192 +1,137 @@
 "use client"
 
+import { useState } from "react"
 import { motion, AnimatePresence } from "motion/react"
-import { useAnimationLoop } from "../useAnimationLoop"
+import { RotateCcw, Sparkles } from "lucide-react"
 import { TeacherShowcaseShell } from "./TeacherShowcaseShell"
 import { TRIAL_REGISTRY } from "@/lib/trials/registry"
 import type { TrialQuestionType } from "@/lib/trials/question-types"
+import { ClassicsCover } from "@/components/tome/ClassicsCover"
+import { getBook } from "@/lib/content"
 
-const PHASES = [
-  { name: "idle", duration: 500 },
-  { name: "highlight", duration: 600 },
-  { name: "generate", duration: 500 },
-  { name: "question1", duration: 500 },
-  { name: "question2", duration: 500 },
-  { name: "question3", duration: 600 },
-  { name: "reset", duration: 200 },
-]
+const BOOK = getBook("pride-and-prejudice")
 
-const PASSAGE_LINES = [
-  "Sing, O goddess, the anger of Achilles",
-  "son of Peleus, that brought countless ills",
-  "upon the Achaeans.",
-]
+const PASSAGE = {
+  work: "Pride and Prejudice",
+  locator: "Chapter 1",
+  lines: [
+    "It is a truth universally acknowledged, that a single man",
+    "in possession of a good fortune, must be",
+    "in want of a wife.",
+  ],
+}
 
 // Each generated question is tagged with a real Trial type from the shared
 // registry, so the educator demo showcases the variety of question types Tome
 // can author — not a single generic multiple-choice shape.
 const QUESTIONS: { type: TrialQuestionType; text: string }[] = [
-  { type: "fill_the_line", text: "Restore the opening: \u201cSing, O goddess, the ___ of Achilles.\u201d" },
-  { type: "word_in_context", text: "What does \u201canger\u201d mean as Homer uses it here?" },
-  { type: "find_the_evidence", text: "Which line names Achilles as the son of Peleus?" },
+  { type: "fill_the_line", text: "Restore the opening: \u201cIt is a truth universally ___\u2026\u201d" },
+  { type: "word_in_context", text: "What does \u201cwant\u201d mean as Austen uses it here?" },
+  { type: "find_the_evidence", text: "Which line tells us what the single man must be seeking?" },
 ]
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1]
 
 export function CustomTrialsShowcase() {
-  const { phase, containerRef, isReduced } = useAnimationLoop(PHASES)
-
-  const isHighlighted =
-    phase === "highlight" ||
-    phase === "generate" ||
-    phase === "question1" ||
-    phase === "question2" ||
-    phase === "question3"
-
-  const showButton =
-    phase === "generate" ||
-    phase === "question1" ||
-    phase === "question2" ||
-    phase === "question3"
-
-  const buttonPulsing = phase === "generate"
-
-  const visibleQuestions =
-    phase === "question1"
-      ? 1
-      : phase === "question2"
-        ? 2
-        : phase === "question3"
-          ? 3
-          : 0
-
-  if (isReduced) {
-    return (
-      <TeacherShowcaseShell
-        heading="Write your own Trials &mdash; or let Tome Assistant"
-        subcopy="Author questions by hand or generate them from any passage with one click \u2014 across all six Trial types."
-        layout="mockup-left"
-        bgClass="bg-background"
-      >
-        <div className="bg-card rounded-xl border border-border p-6">
-          <p className="text-xs text-muted-foreground mb-3">Trial Generator</p>
-          <div className="font-serif text-sm text-foreground leading-[1.9]">
-            {PASSAGE_LINES.map((line, i) => (
-              <p key={i}>{line}</p>
-            ))}
-          </div>
-        </div>
-      </TeacherShowcaseShell>
-    )
-  }
+  const [generated, setGenerated] = useState(false)
 
   return (
     <TeacherShowcaseShell
-      heading="Write your own Trials &mdash; or let Tome Assistant"
-      subcopy="Author questions by hand or generate them from any passage with one click."
+      heading="Write your own Trials, or let Tome Assistant"
+      subcopy="Author questions by hand or generate them from any passage with one click, across all six Trial types."
       layout="mockup-left"
       bgClass="bg-background"
     >
       <div
-        ref={containerRef}
-        className="bg-card rounded-xl border border-border p-6 min-h-[300px] relative overflow-hidden"
-        style={{ willChange: "transform" }}
-        aria-label="Animated trial generation demonstration"
+        className="bg-card rounded-xl border border-border p-6 min-h-[380px]"
+        aria-label="Interactive trial generation demonstration"
       >
-        <p className="text-xs text-muted-foreground mb-3">Trial Generator</p>
+        <div className="mb-3 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            {BOOK && (
+              <ClassicsCover
+                bookId={BOOK.id}
+                title={BOOK.title}
+                author={BOOK.author}
+                tradition={BOOK.tradition}
+                fallbackColors={BOOK.coverColors}
+                showTomeWordmark={false}
+                hideBand
+                className="w-5 shrink-0"
+              />
+            )}
+            <p className="text-xs text-muted-foreground">
+              Trial Generator &middot; {PASSAGE.work} &middot; {PASSAGE.locator}
+            </p>
+          </div>
+          {generated && (
+            <button
+              type="button"
+              onClick={() => setGenerated(false)}
+              className="inline-flex items-center gap-1 text-[10px] font-medium text-muted-foreground hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded"
+            >
+              <RotateCcw className="size-3" />
+              Reset
+            </button>
+          )}
+        </div>
 
         {/* Passage */}
         <div className="font-serif text-sm text-foreground leading-[1.9] mb-4">
-          {PASSAGE_LINES.map((line, i) => (
-            <motion.p
-              key={i}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{
-                delay: phase === "idle" ? i * 0.12 : 0,
-                duration: 0.35,
-                ease: EASE,
-              }}
-              style={{ willChange: "transform, opacity" }}
-            >
-              {isHighlighted ? (
-                <motion.span
-                  initial={{ backgroundColor: "transparent" }}
-                  animate={{ backgroundColor: "rgba(99,102,241,0.15)" }}
-                  className="bg-indigo-500/15 rounded px-0.5"
-                  transition={{ duration: 0.35, ease: EASE }}
-                  style={{ willChange: "background-color" }}
-                >
-                  {line}
-                </motion.span>
-              ) : (
-                line
-              )}
-            </motion.p>
+          {PASSAGE.lines.map((line, i) => (
+            <p key={i}>
+              <span
+                className={`rounded px-0.5 transition-colors duration-300 ${
+                  generated ? "bg-indigo-500/15" : ""
+                }`}
+              >
+                {line}
+              </span>
+            </p>
           ))}
         </div>
 
-        {/* Generate Trial button */}
-        <AnimatePresence>
-          {showButton && (
-            <motion.div
-              initial={{ opacity: 0, y: 6 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 6 }}
-              transition={{ duration: 0.3, ease: EASE }}
-              className="mb-4"
-              style={{ willChange: "transform, opacity" }}
-            >
-              <motion.button
-                className="bg-indigo-500 text-white rounded-lg px-4 py-2 text-sm font-semibold pointer-events-none"
-                animate={
-                  buttonPulsing
-                    ? { scale: [1, 1.05, 1], opacity: [1, 0.85, 1] }
-                    : { scale: 1, opacity: 1 }
-                }
-                transition={
-                  buttonPulsing
-                    ? { duration: 1.2, repeat: Infinity, ease: EASE }
-                    : { duration: 0.3 }
-                }
-                style={{ willChange: "transform, opacity" }}
-              >
-                Generate Trial
-              </motion.button>
-            </motion.div>
-          )}
-        </AnimatePresence>
+        {/* Generate Trial button — always present, user-triggered */}
+        <button
+          type="button"
+          onClick={() => setGenerated(true)}
+          disabled={generated}
+          className="mb-4 inline-flex items-center gap-1.5 bg-indigo-500 text-white rounded-lg px-4 py-2 text-sm font-semibold transition-opacity hover:opacity-90 disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        >
+          <Sparkles className="size-4" />
+          {generated ? "Trial generated" : "Generate Trial"}
+        </button>
 
-        {/* Quiz questions */}
+        {/* Generated questions — revealed together, once */}
         <div className="flex flex-col gap-2">
           <AnimatePresence>
-            {QUESTIONS.slice(0, visibleQuestions).map(({ type, text }, i) => {
-              const { label, icon: Icon } = TRIAL_REGISTRY[type]
-              return (
-                <motion.div
-                  key={text}
-                  initial={{ opacity: 0, x: -12 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -12 }}
-                  transition={{
-                    duration: 0.4,
-                    ease: EASE,
-                    delay: i * 0.05,
-                  }}
-                  className="border-l-2 border-[#D4AF37] bg-[#D4AF37]/5 rounded-r-lg p-3 text-xs text-foreground"
-                  style={{ willChange: "transform, opacity" }}
-                >
-                  <span className="mb-1.5 inline-flex items-center gap-1 rounded-full bg-[#D4AF37]/15 px-2 py-0.5 text-[10px] font-semibold text-[#8A6D1F]">
-                    <Icon className="size-3" />
-                    {label}
-                  </span>
-                  <p>{text}</p>
-                </motion.div>
-              )
-            })}
+            {generated &&
+              QUESTIONS.map(({ type, text }, i) => {
+                const { label, icon: Icon } = TRIAL_REGISTRY[type]
+                return (
+                  <motion.div
+                    key={text}
+                    initial={{ opacity: 0, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.35, ease: EASE, delay: i * 0.08 }}
+                    className="border-l-2 border-[#D4AF37] bg-[#D4AF37]/5 rounded-r-lg p-3 text-xs text-foreground"
+                  >
+                    <span className="mb-1.5 inline-flex items-center gap-1 rounded-full bg-[#D4AF37]/15 px-2 py-0.5 text-[10px] font-semibold text-[#8A6D1F]">
+                      <Icon className="size-3" />
+                      {label}
+                    </span>
+                    <p>{text}</p>
+                  </motion.div>
+                )
+              })}
           </AnimatePresence>
+          {!generated && (
+            <p className="text-[11px] text-muted-foreground">
+              Click Generate Trial to draft three typed questions from this passage.
+            </p>
+          )}
         </div>
-
       </div>
     </TeacherShowcaseShell>
   )

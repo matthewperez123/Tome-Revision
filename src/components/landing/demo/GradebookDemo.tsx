@@ -5,6 +5,10 @@ import { motion, AnimatePresence } from "motion/react"
 import { Sparkles, Check, Pencil } from "lucide-react"
 import { DemoFrame } from "@/components/demo/DemoFrame"
 import { TeacherShowcaseShell } from "../teacher/TeacherShowcaseShell"
+import { ClassicsCover } from "@/components/tome/ClassicsCover"
+import { getBook } from "@/lib/content"
+
+const ODYSSEY = getBook("the-odyssey")
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1]
 
@@ -203,7 +207,7 @@ export function GradebookDemo() {
   return (
     <TeacherShowcaseShell
       heading="See how they&rsquo;re really reading"
-      subcopy="Scores, time on page, Tome Assistant conversations, and annotation density &mdash; all in one gradebook."
+      subcopy="Scores, time on page, Tome Assistant conversations, and annotation density, all in one gradebook."
       layout="mockup-right"
       bgClass="bg-muted"
       paddingClass="py-20"
@@ -213,9 +217,23 @@ export function GradebookDemo() {
         hint="Open a row"
         onReset={open !== "Livia C." ? () => setOpen("Livia C.") : undefined}
       >
-        <p className="text-xs text-muted-foreground mb-4">
-          Gradebook &middot; The Odyssey
-        </p>
+        <div className="mb-4 flex items-center gap-2">
+          {ODYSSEY && (
+            <ClassicsCover
+              bookId={ODYSSEY.id}
+              title={ODYSSEY.title}
+              author={ODYSSEY.author}
+              tradition={ODYSSEY.tradition}
+              fallbackColors={ODYSSEY.coverColors}
+              showTomeWordmark={false}
+              hideBand
+              className="w-5 shrink-0"
+            />
+          )}
+          <p className="text-xs text-muted-foreground">
+            Gradebook &middot; The Odyssey
+          </p>
+        </div>
 
         {/* Header */}
         <div className="grid grid-cols-4 gap-2 px-2 pb-2 border-b border-border mb-1">

@@ -9,10 +9,15 @@ export interface PaginateOptions {
   pageHeight: number  // usable content height in px (after subtracting padding)
   pageWidth: number   // usable content width in px (after subtracting padding)
   fontSize: number
-  lineHeight?: number // default 1.8
+  lineHeight?: number // default 1.6
   contentTypeClass?: string // "content-drama" | "content-verse" | "content-prose"
   justify?: boolean   // match the reading surface so page counts don't drift
   a11yFace?: boolean  // accessibility (sans) reading face
+  // CSS max-width matching the rendered `.reader-measure` cap (e.g. "68ch").
+  // Without this the probe wraps at the full page width while the rendered
+  // page wraps at the (narrower) measure — extra lines then overflow the
+  // page box and get clipped. Passing it keeps measurement === render.
+  measure?: string
 }
 
 // Module-level cache — max 20 entries
@@ -88,6 +93,37 @@ function splittableChildren(el: HTMLElement): HTMLElement[] {
 }
 
 /**
+ * Split an over-tall inline-flow block (typically a verse paragraph — one
+ * giant <p> whose lines are separated by <br>) at its <br> boundaries into
+ * display:block line-group spans. Each group is a valid child of <p>, so the
+ * emitted pages re-wrap in a clone of the original block without the browser
+ * parser re-nesting anything. Returns [] when there's nothing to split on.
+ */
+function splitInlineByBr(el: HTMLElement): HTMLElement[] {
+  if (el.querySelectorAll("br").length < 2) return []
+  const groups: HTMLElement[] = []
+  let current: HTMLElement | null = null
+  const startGroup = () => {
+    const span = document.createElement("span")
+    span.style.display = "block"
+    // Mirror `.prose-reader br { margin-bottom: 0.25em }` line spacing.
+    span.style.marginBottom = "0.25em"
+    groups.push(span)
+    return span
+  }
+  for (const node of Array.from(el.childNodes)) {
+    if (node.nodeType === Node.ELEMENT_NODE && (node as Element).tagName === "BR") {
+      current = null // next content starts a new line group
+      continue
+    }
+    if (node.nodeType === Node.TEXT_NODE && !node.textContent?.trim() && !current) continue
+    if (!current) current = startGroup()
+    current.appendChild(node.cloneNode(true))
+  }
+  return groups.filter((g) => g.textContent?.trim() || g.children.length > 0)
+}
+
+/**
  * Lay a list of block elements into a fresh probe, then break them into page
  * HTML strings (largest run of whole blocks that fits `pageHeight`, measured
  * from the first block's real offsetTop so stacked margins are honored).
@@ -158,8 +194,18 @@ function paginateBlocks(
         const subPages = paginateBlocks(kids, pageHeight, makeProbe, innerWrap)
         for (const sp of subPages) out.push(wrapHtml(sp))
       } else {
-        // Unsplittable (lone image, single child) — its own page.
-        out.push(wrapHtml(el.outerHTML))
+        // Inline flow (e.g. a giant verse <p> with <br> line breaks) — split
+        // at the <br> boundaries so the overflow continues on the next page
+        // instead of being clipped by the page box.
+        const lineGroups = splitInlineByBr(blocks[i])
+        if (lineGroups.length > 1) {
+          const innerWrap = blocks[i].cloneNode(false) as HTMLElement
+          const subPages = paginateBlocks(lineGroups, pageHeight, makeProbe, innerWrap)
+          for (const sp of subPages) out.push(wrapHtml(sp))
+        } else {
+          // Truly unsplittable (lone image, single child) — its own page.
+          out.push(wrapHtml(el.outerHTML))
+        }
       }
       start = i + 1
       pageTop = i + 1 < laid.length ? laid[i + 1].offsetTop : 0
@@ -172,7 +218,7 @@ function paginateBlocks(
 }
 
 export async function paginateHTML(options: PaginateOptions): Promise<string[]> {
-  const { html, pageHeight, pageWidth, fontSize, lineHeight = 1.8, contentTypeClass = "content-prose", justify = false, a11yFace = false } = options
+  const { html, pageHeight, pageWidth, fontSize, lineHeight = 1.6, contentTypeClass = "content-prose", justify = false, a11yFace = false, measure } = options
 
   // Guard: SSR or invalid dimensions
   if (typeof window === "undefined") return [html]
@@ -183,7 +229,7 @@ export async function paginateHTML(options: PaginateOptions): Promise<string[]> 
 
   // Check cache — keyed on everything that changes wrapped-line height.
   const htmlHash = fastHash(html)
-  const cacheKey = `${fontSize}-${lineHeight}-${Math.round(pageHeight)}-${Math.round(pageWidth)}-${contentTypeClass}-${justify ? "j" : "r"}-${a11yFace ? "a" : "s"}-${htmlHash}`
+  const cacheKey = `${fontSize}-${lineHeight}-${Math.round(pageHeight)}-${Math.round(pageWidth)}-${contentTypeClass}-${justify ? "j" : "r"}-${a11yFace ? "a" : "s"}-${measure ?? "none"}-${htmlHash}`
   if (paginationCache.has(cacheKey)) {
     return paginationCache.get(cacheKey)!
   }
@@ -202,6 +248,9 @@ export async function paginateHTML(options: PaginateOptions): Promise<string[]> 
       top: "-9999px",
       left: "-9999px",
       width: `${pageWidth}px`,
+      // Mirror the rendered `.reader-measure` cap so line wrapping (and thus
+      // page height) is measured at the exact width the page renders at.
+      maxWidth: measure ?? "none",
       height: "auto",
       fontSize: `${fontSize}px`,
       lineHeight: String(lineHeight),

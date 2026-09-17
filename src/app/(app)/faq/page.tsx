@@ -10,23 +10,23 @@ import { getCatalogStats } from "@/lib/marketing/catalog-stats"
 import { marketingMasterImages } from "@/lib/marketing-images"
 
 export const metadata: Metadata = {
-  title: { absolute: "FAQ — Tome" },
+  title: { absolute: "FAQ | Tome" },
   description:
     "Answers about reading on Tome, plans and billing, classroom and school use, and where the texts come from.",
   alternates: { canonical: "/faq" },
   openGraph: {
     type: "website",
     url: "/faq",
-    title: "FAQ — Tome",
+    title: "FAQ | Tome",
     description:
-      "Reading & getting started, plans & billing, for educators, and the texts & trust — answered.",
+      "Reading & getting started, plans & billing, for educators, and the texts & trust, answered.",
     images: [{ url: "/og-image.png" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "FAQ — Tome",
+    title: "FAQ | Tome",
     description:
-      "Reading & getting started, plans & billing, for educators, and the texts & trust — answered.",
+      "Reading & getting started, plans & billing, for educators, and the texts & trust, answered.",
     images: ["/og-image.png"],
   },
 }
@@ -102,7 +102,7 @@ export default async function FaqPage() {
                 Still stuck?
               </h2>
               <p className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-muted-foreground">
-                We&apos;re happy to help — reach out or tell us about your
+                We&apos;re happy to help. Reach out, or tell us about your
                 school and we&apos;ll set up a pilot. Evaluating Tome for a
                 school? See{" "}
                 <Link

@@ -50,7 +50,7 @@ export function ReaderFormDemo() {
   return (
     <TeacherShowcaseShell
       heading="The reader, shaped to the work."
-      subcopy="Epic, verse, drama, or Middle English \u2014 each form rendered the way it was meant to be read. No summaries, no abridgements, complete texts in Literata."
+      subcopy="Epic, verse, drama, or Middle English: each form rendered the way it was meant to be read. No summaries, no abridgements, complete texts in Literata."
       layout="mockup-left"
       bgClass="bg-background"
     >
@@ -243,7 +243,7 @@ export function ReaderFormDemo() {
                   <div className="flex items-center gap-2 text-[10px] text-muted-foreground">
                     <span className="size-1.5 rounded-full bg-primary inline-block" />
                     {gloss.interacted
-                      ? "Tap again to close \u2014 every hard word is glossed."
+                      ? "Tap again to close; every hard word is glossed."
                       : "Tap a dotted word for its gloss."}
                   </div>
                 </div>

@@ -33,7 +33,8 @@ export const READER_PREFS_DEFAULTS: ReaderPrefs = {
   mode: "scroll",
   theme: "day",
   fontSizePx: 19,
-  lineHeight: 1.8,
+  // Kindle-proportioned leading (~1.6 at body sizes) — 1.8 read airy/loose.
+  lineHeight: 1.6,
   measureCh: 68,
   justify: false,
   turnStyle: "slide",

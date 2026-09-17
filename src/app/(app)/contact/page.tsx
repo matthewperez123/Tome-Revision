@@ -5,7 +5,7 @@ import { LandingFooter } from "@/components/landing/LandingFooter"
 import { SUPPORT_EMAIL, SUPPORT_MAILTO } from "@/lib/support"
 
 export const metadata: Metadata = {
-  title: { absolute: "Contact — Tome" },
+  title: { absolute: "Contact | Tome" },
   description:
     "Get in touch with the Tome team for support, billing questions, or school pilots.",
   alternates: { canonical: "/contact" },

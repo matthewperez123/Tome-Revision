@@ -5,10 +5,10 @@ import { CatalogStatsProvider } from "@/lib/marketing/catalog-stats-context"
 
 export async function generateMetadata(): Promise<Metadata> {
   const stats = await getCatalogStats()
-  const title = "For Readers — Guided reading of the classics on Tome"
+  const title = "For Readers | Guided reading of the classics on Tome"
   const description = `Read ${formatBookCount(
     stats.bookCount,
-  )} unabridged classics with Tome Assistant, an AI scholar in the margin. Answer Trials, earn Seals, keep a daily Flame, and finally finish the hard books — start free.`
+  )} unabridged classics with Tome Assistant, an AI scholar in the margin. Answer Trials, earn Seals, keep a daily Flame, and finally finish the hard books. Start free.`
   return {
     title: { absolute: title },
     description,

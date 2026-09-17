@@ -34,7 +34,7 @@ const COMMENTS = [
     name: "Marcus A.",
     bg: "bg-amber-500/20",
     text: "text-amber-500",
-    body: "Agreed \u2014 the catalogue of losses begins here",
+    body: "Agreed, the catalogue of losses begins here",
   },
   {
     initials: "Prof.",

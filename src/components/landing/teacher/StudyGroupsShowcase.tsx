@@ -35,7 +35,7 @@ export function StudyGroupsShowcase() {
 
   if (isReduced) {
     return (
-      <TeacherShowcaseShell heading="Collaborative study, built in" subcopy="Students form groups around assignments and exams — shared notes, practice Trials, session schedules. You see every group at a glance." layout="mockup-left" bgClass="bg-background">
+      <TeacherShowcaseShell heading="Collaborative study, built in" subcopy="Students form groups around assignments and exams: shared notes, practice Trials, session schedules. You see every group at a glance." layout="mockup-left" bgClass="bg-background">
         <div className="bg-card rounded-xl border border-border p-5">
           <div className="flex items-center gap-2 mb-3">
             <Brain className="size-4 text-indigo-500" />
@@ -44,14 +44,14 @@ export function StudyGroupsShowcase() {
           <div className="flex -space-x-1 mb-3">
             {MEMBERS.map(m => <div key={m.initials} className="size-6 rounded-full border-2 border-background text-[7px] font-bold text-white flex items-center justify-center" style={{ backgroundColor: m.color }}>{m.initials}</div>)}
           </div>
-          {HARD_QUESTIONS.map(q => <div key={q.question} className="flex items-center gap-1 text-[8px] py-0.5"><XCircle className="size-2.5 text-amber-500" />{q.question} — {q.rate}%</div>)}
+          {HARD_QUESTIONS.map(q => <div key={q.question} className="flex items-center gap-1 text-[8px] py-0.5"><XCircle className="size-2.5 text-amber-500" />{q.question} · {q.rate}%</div>)}
         </div>
       </TeacherShowcaseShell>
     )
   }
 
   return (
-    <TeacherShowcaseShell heading="Collaborative study, built in" subcopy="Students form groups around assignments and exams — shared notes, practice Trials, session schedules. You see every group at a glance." layout="mockup-left" bgClass="bg-background">
+    <TeacherShowcaseShell heading="Collaborative study, built in" subcopy="Students form groups around assignments and exams: shared notes, practice Trials, session schedules. You see every group at a glance." layout="mockup-left" bgClass="bg-background">
       <div ref={containerRef} className="bg-card rounded-xl border border-border p-5 min-h-[280px]" style={{ willChange: "transform" }}>
         <motion.div animate={{ opacity: showGroup ? 1 : 0, y: showGroup ? 0 : 10 }} transition={{ duration: 0.5, ease: EASE }} style={{ willChange: "transform, opacity" }}>
           <div className="flex items-center gap-2 mb-2">

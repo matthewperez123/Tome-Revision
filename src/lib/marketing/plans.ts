@@ -110,7 +110,7 @@ export const READER_TRIAL_COPY =
 export const SCHOOL_PRICING_IS_FINAL = false
 
 export const EDUCATOR_FINE_PRINT_DEV =
-  "Pricing in development — final tiers and rates announced at launch."
+  "Pricing in development. Final tiers and rates announced at launch."
 export const EDUCATOR_FINE_PRINT_FINAL =
   "Volume discounts for whole schools and districts. Annual billing available."
 
@@ -175,7 +175,7 @@ export function getReaderPlans(stats: CatalogStats): ReaderPlan[] {
           {
             id: "family",
             name: "Family",
-            description: `Up to ${HOUSEHOLD_SEATS} readers under one subscription — built for families reading the Great Books together.`,
+            description: `Up to ${HOUSEHOLD_SEATS} readers under one subscription, built for families reading the Great Books together.`,
             features: [
               `${HOUSEHOLD_SEATS} reader seats`,
               "Everything in Solo for every seat",
@@ -249,7 +249,7 @@ export function getEducatorPlans(): EducatorPlan[] {
       features: [
         "Everything in School",
         "SSO (coming soon)",
-        "Roster sync — Clever, ClassLink, Google Classroom (coming soon)",
+        "Roster sync: Clever, ClassLink, Google Classroom (coming soon)",
         "Admin dashboard",
         "Custom standards alignment",
         "Dedicated success manager",

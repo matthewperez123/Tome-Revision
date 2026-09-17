@@ -748,6 +748,7 @@ export default function ReaderPage() {
         contentTypeClass: ctClass,
         justify: prefs.justify,
         a11yFace: prefs.a11yFace,
+        measure: `${prefs.measureCh}ch`,
       })
 
       if (cancelled) return
@@ -782,7 +783,7 @@ export default function ReaderPage() {
     runPagination()
     return () => { cancelled = true }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [chapterHTML, effectiveMode, currentChapter, fontSize, containerDims, prefs.lineHeight, prefs.justify, prefs.a11yFace])
+  }, [chapterHTML, effectiveMode, currentChapter, fontSize, containerDims, prefs.lineHeight, prefs.justify, prefs.a11yFace, prefs.measureCh])
 
   // Save page position to localStorage in paginated mode (instant per-chapter restore)
   useEffect(() => {
@@ -836,7 +837,7 @@ export default function ReaderPage() {
         ? Math.min(500, (containerDims.w - SPREAD_SPINE) / 2) - PAGE_PADDING_H
         : Math.min(680, containerDims.w) - PAGE_PADDING_H
     const ctClass = book && "genres" in book ? getContentTypeClass((book as TomeBook).genres) : "content-prose"
-    const key = `${bookId}-${effectiveMode}-${fontSize}-${prefs.lineHeight}-${prefs.justify}-${prefs.a11yFace}-${Math.round(usableW)}-${Math.round(usableH)}`
+    const key = `${bookId}-${effectiveMode}-${fontSize}-${prefs.lineHeight}-${prefs.justify}-${prefs.a11yFace}-${prefs.measureCh}-${Math.round(usableW)}-${Math.round(usableH)}`
 
     let cancelled = false
     ;(async () => {
@@ -864,6 +865,7 @@ export default function ReaderPage() {
             contentTypeClass: ctClass,
             justify: prefs.justify,
             a11yFace: prefs.a11yFace,
+            measure: `${prefs.measureCh}ch`,
           })
           counts[i] = Math.max(1, pagesArr.length)
         } catch { /* keep the fallback count of 1 */ }
@@ -874,16 +876,17 @@ export default function ReaderPage() {
     })()
     return () => { cancelled = true }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isScroll, bookId, effectiveMode, fontSize, containerDims, prefs.lineHeight, prefs.justify, prefs.a11yFace, chapters, book])
+  }, [isScroll, bookId, effectiveMode, fontSize, containerDims, prefs.lineHeight, prefs.justify, prefs.a11yFace, prefs.measureCh, chapters, book])
 
   // Global folio for a local (within-chapter) page index. Front matter → roman,
-  // body → arabic restarting at 1 on the first body page. Returns null until the
-  // map is ready (corner folio simply hides).
+  // body → arabic restarting at 1 on the first body page. While the whole-book
+  // map is still measuring, fall back to the chapter-local page number so a
+  // folio is always visible.
   const folioLabel = useCallback(
     (localPageIndex: number): string | null => {
-      if (!folioMap) return null
+      if (!folioMap) return String(localPageIndex + 1)
       const { counts, matter } = folioMap
-      if (currentChapter >= counts.length) return null
+      if (currentChapter >= counts.length) return String(localPageIndex + 1)
       const isFront = matter[currentChapter] === "front"
       let before = 0
       for (let i = 0; i < currentChapter; i++) {

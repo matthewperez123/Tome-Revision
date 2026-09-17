@@ -29,7 +29,7 @@ export function MiddleEnglishGlossesShowcase() {
   return (
     <TeacherShowcaseShell
       heading="Middle English, made readable."
-      subcopy="Read Chaucer, Malory, or Gawain in the original. Tap any hard word for a modern paraphrase \u2014 word-level glosses that keep you in the text, not the footnotes."
+      subcopy="Read Chaucer, Malory, or Gawain in the original. Tap any hard word for a modern paraphrase: word-level glosses that keep you in the text, not the footnotes."
       layout="mockup-right"
       bgClass="bg-background"
     >

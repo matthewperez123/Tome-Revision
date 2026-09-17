@@ -60,7 +60,7 @@ export function PlaysFormattingShowcase() {
           Hamlet &middot; Shakespeare
         </p>
         <p className="text-[11px] font-semibold text-foreground mb-4">
-          Act I, Scene iv &mdash; The platform before the castle
+          Act I, Scene iv · The platform before the castle
         </p>
 
         <div className="font-serif text-sm leading-[1.8] space-y-2">

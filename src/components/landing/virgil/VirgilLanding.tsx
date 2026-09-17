@@ -1,7 +1,7 @@
 "use client"
 
 /**
- * /virgil deep page — four scripted, self-contained demonstrations of what
+ * /virgil deep page — three scripted, self-contained demonstrations of what
  * Tome Assistant does in the reader. Everything is canned (lib/demo/virgil.ts): no
  * network, no AI request, no backend write. Tome Assistant's colour is the indigo
  * `primary` token throughout; the reader's own marks would be amber.
@@ -9,21 +9,16 @@
  *   1 · Annotations in Text     — a marked phrase + scholarly note
  *   2 · Hints During Quizzes    — a mini Trial with a scaffolded hint
  *   3 · Assistance in Reading   — select a line → Explain / Who / Why
- *   4 · Understand Your Taste   — "Because you read X, try Y" (opt-in)
  */
 
 import { useEffect, useRef, useState } from "react"
 import {
-  Sparkles,
   Lightbulb,
   Check,
   X,
   MessageCircleQuestion,
-  ArrowRight,
 } from "lucide-react"
 import { BlurFade } from "@/components/ui/blur-fade"
-import { BookCard } from "@/components/tome/book-card"
-import { DEMO_LIBRARY_BOOKS } from "@/lib/demo/data"
 import {
   DEMO_PASSAGE,
   DEMO_EXCHANGES,
@@ -82,7 +77,7 @@ function AnnotationsInText() {
       index={1}
       eyebrow="Annotations"
       title="Scholarship in the margin, not the footnotes."
-      subline="Tome Assistant marks the phrases that matter and explains them in plain language — right where you're reading, never a tab away."
+      subline="Tome Assistant marks the phrases that matter and explains them in plain language, right where you're reading, never a tab away."
       bg="background"
     >
       <div className="mx-auto max-w-xl overflow-hidden rounded-xl border border-border bg-background">
@@ -143,7 +138,7 @@ function HintsDuringQuizzes() {
       index={2}
       eyebrow="Quiz Hints"
       title="Stuck on a Trial? Ask for a nudge, not the answer."
-      subline="Tome Assistant offers a scaffolded hint that points you back to the text — so you still earn the insight yourself."
+      subline="Tome Assistant offers a scaffolded hint that points you back to the text, so you still earn the insight yourself."
       bg="muted"
     >
       <div className="mx-auto max-w-md rounded-xl border border-border bg-card p-5">
@@ -200,7 +195,7 @@ function HintsDuringQuizzes() {
           <div className="mt-4 flex gap-2.5 rounded-lg border border-primary/30 bg-primary/5 p-3">
             <Lightbulb className="mt-0.5 size-4 shrink-0 text-primary" />
             <p className="text-xs leading-relaxed text-muted-foreground">
-              <span className="font-semibold text-primary">Tome Assistant&apos;s hint — </span>
+              <span className="font-semibold text-primary">Tome Assistant&apos;s hint:</span>
               {HINT_QUIZ.hint}
             </p>
           </div>
@@ -258,7 +253,7 @@ function AssistanceInReading() {
       index={3}
       eyebrow="Reading Help"
       title="Select a line. Ask Tome Assistant to take it from there."
-      subline="Highlight anything that stops you and choose what you need — an explanation, a name, or why it matters."
+      subline="Highlight anything that stops you and choose what you need: an explanation, a name, or why it matters."
       bg="background"
     >
       <div className="mx-auto max-w-xl rounded-xl border border-border bg-background p-6">
@@ -285,7 +280,7 @@ function AssistanceInReading() {
           {DEMO_PASSAGE.lines[2]}
         </button>
         <p className="mt-2 text-[11px] text-muted-foreground">
-          {selected ? "Line selected — choose what you need:" : "Tap the line to select it."}
+          {selected ? "Line selected. Choose what you need:" : "Tap the line to select it."}
         </p>
 
         {selected && (
@@ -330,72 +325,6 @@ function AssistanceInReading() {
   )
 }
 
-// ── 4 · Understand Your Taste ───────────────────────────────────────
-
-function UnderstandTaste() {
-  const [optIn, setOptIn] = useState(true)
-  const because = DEMO_LIBRARY_BOOKS.find((b) => b.id === "crime-and-punishment")
-  const tryNext = DEMO_LIBRARY_BOOKS.find((b) => b.id === "frankenstein")
-
-  return (
-    <FeatureSection
-      index={4}
-      eyebrow="Your Taste"
-      title="Tome Assistant learns what you love — privately."
-      subline="From the works you finish, Tome Assistant suggests where to go next. It's opt-in and yours alone; turn it off any time."
-      bg="muted"
-    >
-      <div className="rounded-xl border border-border bg-card p-6">
-        <div className="flex items-center gap-2 text-sm text-muted-foreground">
-          <Sparkles className="size-4 shrink-0 text-primary" />
-          Because you read{" "}
-          <span className="font-semibold text-foreground">
-            {because?.title ?? "Crime and Punishment"}
-          </span>
-          , try&hellip;
-        </div>
-
-        {because && tryNext && (
-          <div className="mt-5 flex items-center gap-4 sm:gap-6">
-            <div className="w-[130px] shrink-0">
-              <BookCard book={because} size="sm" interactive={false} />
-            </div>
-            <ArrowRight className="size-6 shrink-0 text-primary" />
-            <div className="w-[130px] shrink-0">
-              <BookCard book={tryNext} size="sm" interactive={false} />
-            </div>
-          </div>
-        )}
-
-        <label className="mt-6 flex cursor-pointer items-center gap-3 text-sm">
-          <button
-            type="button"
-            role="switch"
-            aria-checked={optIn}
-            onClick={() => setOptIn((v) => !v)}
-            className={
-              "relative inline-flex h-5 w-9 shrink-0 items-center rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring " +
-              (optIn ? "bg-primary" : "bg-muted-foreground/30")
-            }
-          >
-            <span
-              className={
-                "inline-block size-4 transform rounded-full bg-white transition-transform " +
-                (optIn ? "translate-x-4" : "translate-x-0.5")
-              }
-            />
-          </button>
-          <span className="text-muted-foreground">
-            {optIn
-              ? "Tailored suggestions are on — private to you."
-              : "Tailored suggestions are off."}
-          </span>
-        </label>
-      </div>
-    </FeatureSection>
-  )
-}
-
 // ── Page body ───────────────────────────────────────────────────────
 
 export function VirgilLanding() {
@@ -404,7 +333,6 @@ export function VirgilLanding() {
       <AnnotationsInText />
       <HintsDuringQuizzes />
       <AssistanceInReading />
-      <UnderstandTaste />
     </>
   )
 }

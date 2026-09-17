@@ -114,7 +114,7 @@ export function PublicLibraryPage() {
           Browse by tradition
         </h2>
         <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-          The canon, organized by the literary traditions that shaped it — the
+          The canon, organized by the literary traditions that shaped it, the
           same axis the reader uses inside Tome.
         </p>
         <ul className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">

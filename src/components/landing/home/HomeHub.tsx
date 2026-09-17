@@ -13,7 +13,19 @@
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Sparkles, Users, GraduationCap, Check, HelpCircle } from "lucide-react"
+import {
+  ArrowRight,
+  Sparkles,
+  Users,
+  Check,
+  HelpCircle,
+  BookOpen,
+  PenSquare,
+  ClipboardList,
+  KeyRound,
+  Highlighter,
+  BellRing,
+} from "lucide-react"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { BookCard } from "@/components/tome/book-card"
 import { Marquee } from "@/components/ui/marquee"
@@ -141,7 +153,7 @@ function DiscoverCanon() {
       title="Discover the canon of world literature."
       subline={`${formatBookCount(
         stats.bookCount,
-      )} foundational works, every one in the public domain, from Homer to the moderns — organized by the ${formatTraditionCount(
+      )} foundational works, every one in the public domain, from Homer to the moderns, organized by the ${formatTraditionCount(
         stats.traditionCount,
       )} that shaped them.`}
       bg="background"
@@ -192,7 +204,7 @@ function AnswerQuizzes() {
     <SectionShell
       eyebrow="Trials"
       title="Every chapter ends in a Trial."
-      subline="Comprehension, vocabulary, evidence, and recall — six question types, each earning Wisdom and keeping your Flame alive. Every one is live; try them all."
+      subline="Comprehension, vocabulary, evidence, and recall: six question types, each earning Wisdom and keeping your Flame alive. Every one is live; try them all."
       bg="muted"
       cta={{ label: "See every Trial type", href: "/readers" }}
     >
@@ -281,7 +293,7 @@ function GuideWithAssistant() {
     <SectionShell
       eyebrow="Tome Assistant"
       title="A scholar in the margin, whenever you need one."
-      subline="Tap a phrase and the Tome Assistant explains it — grounded in the text beside you. Ask one of its questions to see how it reads."
+      subline="Tap a phrase and the Tome Assistant explains it, grounded in the text beside you. Ask one of its questions to see how it reads."
       bg="muted"
       cta={{ label: "Meet the Assistant", href: "/assistant" }}
     >
@@ -376,30 +388,113 @@ function InviteFriends() {
 
 // ── 7 · Teach Classes (teacher teaser) ──────────────────────────────
 
-const TEACHER_POINTS = [
-  "Assign books and chapters to a class",
-  "Auto-graded Trials and a live gradebook",
-  "Assistant-graded reflections",
-  "A searchable parent directory",
-]
+const TEACHER_FEATURES = [
+  {
+    icon: BookOpen,
+    title: "Assign real reading",
+    body: "Send books, chapters, or essays to a whole class in a few clicks. Students see exactly what is due and open it straight from their dashboard.",
+  },
+  {
+    icon: PenSquare,
+    title: "Build quizzes fast",
+    body: "Write your own questions or let the Tome Assistant draft a quiz from the text. Publish it, attach it to an assignment, and reuse it next term.",
+  },
+  {
+    icon: ClipboardList,
+    title: "A gradebook that fills itself",
+    body: "Objective questions grade themselves the moment a student submits. Review free responses, override any score, and export the whole class to CSV.",
+  },
+  {
+    icon: KeyRound,
+    title: "One code to join",
+    body: "Students join with a simple class code, no email required. Rosters, announcements, and notifications stay inside your classroom.",
+  },
+] as const
 
 function TeachClasses() {
   return (
     <SectionShell
       eyebrow="For Teachers"
       title="Bring the canon to your classroom."
-      subline="Assign, track, and grade — Tome handles the busywork so you can teach the books. Built for one class or a whole district."
+      subline="Tome handles the assigning, the quizzing, and the grading so your class time goes to the conversation. Built for one class or a whole school."
       bg="muted"
       cta={{ label: "Explore for teachers", href: "/educators" }}
     >
-      <ul className="grid gap-3 sm:grid-cols-2">
-        {TEACHER_POINTS.map((point) => (
+      <ul className="grid gap-4 sm:grid-cols-2">
+        {TEACHER_FEATURES.map((f) => (
           <li
-            key={point}
-            className="flex items-start gap-2.5 rounded-lg border border-border bg-card p-4 text-sm text-foreground"
+            key={f.title}
+            className="rounded-xl border border-border bg-card p-5"
           >
-            <GraduationCap className="mt-0.5 size-4 shrink-0 text-primary" />
-            {point}
+            <div className="flex items-center gap-2.5">
+              <span className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                <f.icon className="size-4 text-primary" />
+              </span>
+              <h3 className="text-sm font-semibold text-foreground">
+                {f.title}
+              </h3>
+            </div>
+            <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">
+              {f.body}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </SectionShell>
+  )
+}
+
+// ── 7b · Learn as a Student (student teaser) ────────────────────────
+
+const STUDENT_FEATURES = [
+  {
+    icon: KeyRound,
+    title: "Join with a class code",
+    body: "Enter the code your teacher shares and you are in. Your assignments, announcements, and classmates are waiting on your dashboard.",
+  },
+  {
+    icon: BookOpen,
+    title: "Read, then answer in place",
+    body: "Assigned chapters open in a clean, focused reader. When a quiz is attached, it appears right inside the reading so you never lose your page.",
+  },
+  {
+    icon: Highlighter,
+    title: "Mark what matters",
+    body: "Highlight a line and annotate it as you read. Your notes stay with the text, ready when it is time to write or discuss.",
+  },
+  {
+    icon: BellRing,
+    title: "Know where you stand",
+    body: "A notification tells you the moment work is assigned or graded. Open it to see your score, your teacher's feedback, and what is next.",
+  },
+] as const
+
+function LearnAsStudent() {
+  return (
+    <SectionShell
+      eyebrow="For Students"
+      title="Your reading, your class, one place."
+      subline="Everything your teacher assigns lives beside the books themselves: the chapters, the quizzes, the grades, and your own notes in the margin."
+      bg="background"
+      cta={{ label: "See how students read", href: "/readers" }}
+    >
+      <ul className="grid gap-4 sm:grid-cols-2">
+        {STUDENT_FEATURES.map((f) => (
+          <li
+            key={f.title}
+            className="rounded-xl border border-border bg-card p-5"
+          >
+            <div className="flex items-center gap-2.5">
+              <span className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                <f.icon className="size-4 text-primary" />
+              </span>
+              <h3 className="text-sm font-semibold text-foreground">
+                {f.title}
+              </h3>
+            </div>
+            <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">
+              {f.body}
+            </p>
           </li>
         ))}
       </ul>
@@ -520,6 +615,7 @@ export function HomeHub() {
       <GuideWithAssistant />
       <InviteFriends />
       <TeachClasses />
+      <LearnAsStudent />
       <PricingTeaser />
       <FaqTeaser />
     </>

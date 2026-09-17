@@ -7,8 +7,8 @@ import { ReaderFormDemo } from "./demo/ReaderFormDemo"
 import { VirgilDrawerDemo } from "./demo/VirgilDrawerDemo"
 import { TrialDemo } from "./demo/TrialDemo"
 import { WorldMapSection } from "./WorldMapSection"
-import { LibraryControlsDemo } from "./demo/LibraryControlsDemo"
-import { TrendingBooksShowcase, RecommendationsShowcase } from "./ReaderDiscoveryShowcase"
+import { TimelinesShowcase } from "./TimelinesShowcase"
+import { TrendingBooksShowcase } from "./ReaderDiscoveryShowcase"
 import { ReadingInsightsShowcase } from "./ReadingInsightsShowcase"
 import { ReaderPricingSection } from "./ReaderPricingSection"
 import { FinalCTA } from "./FinalCTA"
@@ -18,7 +18,6 @@ import { AssignmentBuilderDemo } from "./demo/AssignmentBuilderDemo"
 import { CustomTrialsShowcase } from "./teacher/CustomTrialsShowcase"
 import { GradebookDemo } from "./demo/GradebookDemo"
 import { ClassProgressDemo } from "./demo/ClassProgressDemo"
-import { ParentDirectoryShowcase } from "./teacher/ParentDirectoryShowcase"
 import { SemesterPlanShowcase } from "./teacher/SemesterPlanShowcase"
 import { CoTeachersShowcase } from "./teacher/CoTeachersShowcase"
 import { TeacherPricingSection } from "./TeacherPricingSection"
@@ -39,7 +38,7 @@ export function HomepageContent() {
     return (
       <>
         {/* Teacher feature blocks: roster → assign → quiz builder → grading →
-            progress → parent directory → curriculum → co-teachers → pricing */}
+            progress → curriculum → co-teachers → pricing */}
         <ClassRosterShowcase />
         <AssignmentBuilderDemo />
         <CustomTrialsShowcase />
@@ -47,9 +46,6 @@ export function HomepageContent() {
           <GradebookDemo />
         </div>
         <ClassProgressDemo />
-        <div id="parent-directory" className="scroll-mt-20">
-          <ParentDirectoryShowcase />
-        </div>
         <div id="curriculum" className="scroll-mt-20">
           <SemesterPlanShowcase />
         </div>
@@ -67,9 +63,8 @@ export function HomepageContent() {
       <VirgilDrawerDemo />
       <TrialDemo />
       <WorldMapSection />
-      <LibraryControlsDemo />
+      <TimelinesShowcase audience="reader" />
       <TrendingBooksShowcase />
-      <RecommendationsShowcase />
       <ReadingInsightsShowcase />
 
       {/* Student pricing band */}

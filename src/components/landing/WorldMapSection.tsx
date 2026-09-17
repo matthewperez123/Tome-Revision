@@ -231,7 +231,7 @@ export function WorldMapSection() {
             {headline}
           </h2>
           <p className="text-sm text-muted-foreground leading-relaxed text-center max-w-xl mx-auto mb-6">
-            Browse the canon by tradition &mdash; from Mesopotamia to Modernism,
+            Browse the canon by tradition, from Mesopotamia to Modernism:
             every region of world literature charted on a single Ortelius-style
             map. Pick a region, then tap a country to meet its authors.
           </p>

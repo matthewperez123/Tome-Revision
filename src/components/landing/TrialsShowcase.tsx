@@ -124,7 +124,7 @@ function TrialsShell({ children }: { children: React.ReactNode }) {
               Prove your understanding.
             </h2>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
-              Earn Wisdom by completing Trials after each chapter. Every question tests comprehension, vocabulary, and critical thinking &mdash; at Apprentice, Scholar, or Master difficulty.
+              Earn Wisdom by completing Trials after each chapter. Every question tests comprehension, vocabulary, and critical thinking, at Apprentice, Scholar, or Master difficulty.
             </p>
           </BlurFade>
         </div>

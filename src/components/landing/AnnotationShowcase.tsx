@@ -23,7 +23,7 @@ const PASSAGE_LINES = [
 const ANNOTATION = {
   label: "Patronymic",
   body:
-    "\u201cSon of Peleus\u201d is a patronymic \u2014 an epithet identifying Achilles by his father. Homer uses patronymics to place heroes within their lineage and remind the audience of inherited glory or doom.",
+    "\u201cSon of Peleus\u201d is a patronymic, an epithet identifying Achilles by his father. Homer uses patronymics to place heroes within their lineage and remind the audience of inherited glory or doom.",
 }
 
 const CHAT_Q = "Why open with Achilles' anger?"

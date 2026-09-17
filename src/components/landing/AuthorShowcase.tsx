@@ -24,12 +24,12 @@ const COPY: Record<Audience, { heading: string; subcopy: string }> = {
   reader: {
     heading: "Every author, in depth",
     subcopy:
-      "Biographies, literary context, influences, and complete bibliographies \u2014 a scholar's dossier for every voice in the canon.",
+      "Biographies, literary context, influences, and complete bibliographies: a scholar's dossier for every voice in the canon.",
   },
   teacher: {
     heading: "A dossier per voice",
     subcopy:
-      "Hand students a vetted author page instead of a Wikipedia tab. Biographies, influences, works, and movement context \u2014 the background reading, already written.",
+      "Hand students a vetted author page instead of a Wikipedia tab. Biographies, influences, works, and movement context: the background reading, already written.",
   },
 }
 

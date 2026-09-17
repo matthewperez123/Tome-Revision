@@ -12,6 +12,10 @@ import {
 } from "lucide-react"
 import { DemoFrame } from "@/components/demo/DemoFrame"
 import { TeacherShowcaseShell } from "../teacher/TeacherShowcaseShell"
+import { ClassicsCover } from "@/components/tome/ClassicsCover"
+import { getBook } from "@/lib/content"
+
+const ODYSSEY = getBook("the-odyssey")
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1]
 
@@ -71,7 +75,7 @@ export function AssignmentBuilderDemo() {
   return (
     <TeacherShowcaseShell
       heading="Assign chapters, Trials, and reflections."
-      subcopy="Five assignment types &mdash; chapter readings, Trials, Tome Assistant-graded reflections, annotation prompts, and quote collections. Set due dates, scope to a class or a student, attach a rubric."
+      subcopy="Five assignment types: chapter readings, Trials, Tome Assistant-graded reflections, annotation prompts, and quote collections. Set due dates, scope to a class or a student, attach a rubric."
       layout="mockup-right"
       bgClass="bg-muted"
       paddingClass="py-20"
@@ -121,9 +125,22 @@ export function AssignmentBuilderDemo() {
 
         {/* Book (fixed for the demo) */}
         <div className="flex items-center gap-3 mb-4">
-          <div className="size-10 rounded bg-primary/10 border border-primary/20 flex items-center justify-center text-xs font-serif font-bold text-primary">
-            O
-          </div>
+          {ODYSSEY ? (
+            <ClassicsCover
+              bookId={ODYSSEY.id}
+              title={ODYSSEY.title}
+              author={ODYSSEY.author}
+              tradition={ODYSSEY.tradition}
+              fallbackColors={ODYSSEY.coverColors}
+              showTomeWordmark={false}
+              hideBand
+              className="w-8 shrink-0"
+            />
+          ) : (
+            <div className="size-10 rounded bg-primary/10 border border-primary/20 flex items-center justify-center text-xs font-serif font-bold text-primary">
+              O
+            </div>
+          )}
           <div className="min-w-0">
             <p className="text-sm text-foreground font-medium leading-tight">
               The Odyssey

@@ -11,21 +11,21 @@ import { marketingMasterImages } from "@/lib/marketing-images"
 import { getBook } from "@/lib/content"
 
 export const metadata: Metadata = {
-  title: { absolute: "Pricing — Tome" },
+  title: { absolute: "Pricing | Tome" },
   description:
     "Tome plans: read the canon, go deeper with Solo or Family, or bring per-teacher seats to your school.",
   alternates: { canonical: "/pricing" },
   openGraph: {
     type: "website",
     url: "/pricing",
-    title: "Pricing — Tome",
-    description: "Plans for readers and schools — Solo, Family, and School.",
+    title: "Pricing | Tome",
+    description: "Plans for readers and schools: Solo, Family, and School.",
     images: [{ url: "/og-image.png" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pricing — Tome",
-    description: "Plans for readers and schools — Solo, Family, and School.",
+    title: "Pricing | Tome",
+    description: "Plans for readers and schools: Solo, Family, and School.",
     images: ["/og-image.png"],
   },
 }
@@ -136,7 +136,7 @@ export default async function PricingPage({
           <BillingPlans plans={cards} />
           <p className="mt-8 text-center text-xs text-muted-foreground">
             All plans include a 7-day free trial. Cancel anytime. School pricing
-            is in development — final rates confirmed at launch.
+            is in development; final rates confirmed at launch.
           </p>
         </section>
 

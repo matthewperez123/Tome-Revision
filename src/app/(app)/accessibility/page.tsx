@@ -3,7 +3,7 @@ import { LandingFooter } from "@/components/landing/LandingFooter"
 import { SUPPORT_EMAIL } from "@/lib/support"
 
 export const metadata: Metadata = {
-  title: { absolute: "Accessibility — Tome" },
+  title: { absolute: "Accessibility | Tome" },
   description:
     "Tome's commitment to building an accessible reading platform, and how to report accessibility issues.",
   alternates: { canonical: "/accessibility" },

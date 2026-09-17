@@ -53,7 +53,7 @@ export function AssignmentBuilderShowcase() {
     return (
       <TeacherShowcaseShell
         heading="Assign chapters, Trials, and reflections."
-        subcopy="Five assignment types \u2014 chapter readings, Trials, Tome Assistant-graded reflections, annotation prompts, and quote collections. Set due dates, scope to a class or a student, attach a rubric."
+        subcopy="Five assignment types: chapter readings, Trials, Tome Assistant-graded reflections, annotation prompts, and quote collections. Set due dates, scope to a class or a student, attach a rubric."
         layout="mockup-right"
         bgClass="bg-muted"
       >
@@ -110,7 +110,7 @@ export function AssignmentBuilderShowcase() {
   return (
     <TeacherShowcaseShell
       heading="Assign chapters, Trials, and reflections."
-      subcopy="Five assignment types \u2014 chapter readings, Trials, Tome Assistant-graded reflections, annotation prompts, and quote collections. Set due dates, scope to a class or a student, attach a rubric."
+      subcopy="Five assignment types: chapter readings, Trials, Tome Assistant-graded reflections, annotation prompts, and quote collections. Set due dates, scope to a class or a student, attach a rubric."
       layout="mockup-right"
       bgClass="bg-muted"
       paddingClass="py-20"

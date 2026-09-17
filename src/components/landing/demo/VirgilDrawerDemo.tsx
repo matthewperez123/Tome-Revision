@@ -95,7 +95,7 @@ export function VirgilDrawerDemo() {
   return (
     <TeacherShowcaseShell
       heading="A scholar in the margin. Your marks beside his."
-      subcopy="Tap any annotation to open Tome Assistant's drawer \u2014 a scholarly note up top, a live chat at the bottom. Highlight what stops you, leave a note for your future self. Tome Assistant is indigo; you are amber."
+      subcopy="Tap any annotation to open Tome Assistant's drawer: a scholarly note up top, a live chat at the bottom. Highlight what stops you, leave a note for your future self. Tome Assistant is indigo; you are amber."
       layout="mockup-right"
       bgClass="bg-muted"
     >
@@ -287,7 +287,7 @@ export function VirgilDrawerDemo() {
                   </span>
                 </div>
                 <p className="text-xs text-foreground leading-relaxed">
-                  Echoes Blake &mdash; to see a world in a grain of sand. Pull
+                  Echoes Blake: to see a world in a grain of sand. Pull
                   this for the essay.
                 </p>
               </div>

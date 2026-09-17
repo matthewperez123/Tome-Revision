@@ -11,9 +11,9 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = `Tome is the gamified platform for the canon of world literature. Read ${formatBookCount(
     stats.bookCount,
   )} foundational works, answer Trials, earn Seals, and learn with Tome Assistant, an AI scholar at your side.`
-  const ogTitle = "Tome — Read the Canon of World Literature"
+  const ogTitle = "Tome: Read the Canon of World Literature"
   const ogDescription =
-    "Read the great books, answer Trials, earn Seals, and learn with Tome Assistant — your AI scholar. For students, readers, and the classrooms that teach them."
+    "Read the great books, answer Trials, earn Seals, and learn with Tome Assistant, your AI scholar. For students, readers, and the classrooms that teach them."
   return {
     title: { absolute: ogTitle },
     description,

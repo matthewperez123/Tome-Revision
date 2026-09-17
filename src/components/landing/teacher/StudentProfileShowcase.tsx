@@ -29,7 +29,7 @@ export function StudentProfileShowcase() {
 
   if (isReduced) {
     return (
-      <TeacherShowcaseShell heading="The complete student picture" subcopy="A complete view of each student — reading time, Trial history, annotations, discussion posts, Wisdom earned. And private notes just for you." layout="mockup-right" bgClass="bg-muted">
+      <TeacherShowcaseShell heading="The complete student picture" subcopy="A complete view of each student: reading time, Trial history, annotations, discussion posts, Wisdom earned. And private notes just for you." layout="mockup-right" bgClass="bg-muted">
         <div className="bg-card rounded-xl border border-border p-5">
           <div className="flex items-center gap-3 mb-4">
             <div className="size-10 rounded-full bg-[#4F46E5] flex items-center justify-center text-sm font-bold text-white">EC</div>
@@ -49,14 +49,14 @@ export function StudentProfileShowcase() {
   }
 
   return (
-    <TeacherShowcaseShell heading="The complete student picture" subcopy="A complete view of each student — reading time, Trial history, annotations, discussion posts, Wisdom earned. And private notes just for you." layout="mockup-right" bgClass="bg-muted">
+    <TeacherShowcaseShell heading="The complete student picture" subcopy="A complete view of each student: reading time, Trial history, annotations, discussion posts, Wisdom earned. And private notes just for you." layout="mockup-right" bgClass="bg-muted">
       <div ref={containerRef} className="bg-card rounded-xl border border-border p-5 min-h-[300px]" style={{ willChange: "transform" }}>
         <motion.div animate={{ opacity: showProfile ? 1 : 0, y: showProfile ? 0 : 10 }} transition={{ duration: 0.5, ease: EASE }} style={{ willChange: "transform, opacity" }}>
           <div className="flex items-center gap-3 mb-4">
             <div className="size-12 rounded-full bg-[#4F46E5] flex items-center justify-center text-sm font-bold text-white">EC</div>
             <div>
               <p className="font-[var(--font-display)] text-base font-bold">Emma Chen</p>
-              <p className="text-[10px] text-muted-foreground">11th Grade · AP Literature — Period 3</p>
+              <p className="text-[10px] text-muted-foreground">11th Grade · AP Literature · Period 3</p>
             </div>
           </div>
 

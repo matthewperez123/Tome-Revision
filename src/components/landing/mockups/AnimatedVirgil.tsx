@@ -22,7 +22,7 @@ const PASSAGE_LINES = [
 
 const ANNOTATION_1 = {
   title: "Contrapasso",
-  text: "The principle that a sinner\u2019s punishment mirrors their sin. Dante borrowed the concept from Aristotelian ethics. In this canto, the fortune-tellers walk with their heads twisted backward \u2014 because in life they tried to see the future.",
+  text: "The principle that a sinner\u2019s punishment mirrors their sin. Dante borrowed the concept from Aristotelian ethics. In this canto, the fortune-tellers walk with their heads twisted backward, because in life they tried to see the future.",
 }
 
 const ANNOTATION_2 = {

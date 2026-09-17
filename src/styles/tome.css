@@ -1392,7 +1392,7 @@ mark.tome-shared-annotation {
    the fallbacks below keep the surface sane if a token is ever absent. */
 .reader-surface {
   --reader-font-size: 19px;
-  --reader-line-height: 1.8;
+  --reader-line-height: 1.6; /* Kindle-proportioned leading; mirrors READER_PREFS_DEFAULTS */
   --reader-measure: 68ch;
   --reader-pad-x: 2rem;   /* 32px — matches scroll md:px-8 */
   --reader-pad-y: 4rem;   /* 64px — matches scroll md:py-16 */
