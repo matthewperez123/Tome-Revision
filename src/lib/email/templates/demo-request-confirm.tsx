@@ -36,7 +36,7 @@ export function DemoRequestConfirmEmail({
 
       <EmailParagraph>
         In the meantime, you&apos;re welcome to explore what Tome offers
-        educators — classrooms, the gradebook, AI-assisted quizzes, and Virgil,
+        educators — classrooms, the gradebook, AI-assisted quizzes, and Tome Assistant,
         your students&apos; reading guide.
       </EmailParagraph>
 

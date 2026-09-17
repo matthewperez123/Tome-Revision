@@ -57,7 +57,7 @@ export const BILLING_TIERS: Record<BillingTier, BillingTierPlan> = {
     tier: "solo",
     name: "Solo",
     blurb:
-      "Unlimited access to the full canon and Virgil's deeper scholarship for one reader.",
+      "Unlimited access to the full canon and Tome Assistant's deeper scholarship for one reader.",
     roleGranted: "reader",
     featured: true,
     badge: "Most popular",

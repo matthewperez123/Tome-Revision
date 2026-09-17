@@ -3,7 +3,7 @@
 /**
  * Home hub — the overview that sits below the Barque-of-Dante hero on `/`.
  * Each block is a CONDENSED teaser that reuses a real primitive (BookCard,
- * QuestionCard, SealBase, the scripted Virgil drawer, the pricing data) and
+ * QuestionCard, SealBase, the scripted assistant drawer, the pricing data) and
  * links onward to the dedicated page where the full demo lives. It never
  * duplicates a deep-page demo wholesale — it samples one instance and points
  * to depth. All colour/type comes from theme tokens; motion respects
@@ -118,7 +118,7 @@ function MasterHomeImage({
         fill
         priority={priority}
         sizes="100vw"
-        className="object-cover"
+        className="object-cover marketing-vibrant"
       />
       <p className="absolute bottom-2 right-4 text-[11px] text-white/45">
         {image.attribution}
@@ -178,9 +178,11 @@ function DiscoverCanon() {
 
 // ── 3 · Answer Quizzes (condensed Trial) ────────────────────────────
 
+const DEMO_TYPES = Array.from(new Set(DEMO_TRIAL_QUESTIONS.map((q) => q.type)))
+
 function AnswerQuizzes() {
   // Mirrors the live /demo Trial system (TrialDemo): the REAL <QuestionCard> +
-  // registry + the six net-new typed questions in a DemoEconomyProvider sandbox,
+  // registry + a multi-question typed pool in a DemoEconomyProvider sandbox,
   // with a registry-driven type switcher so EVERY question type is represented.
   const [i, setI] = useState(0)
   const total = DEMO_TRIAL_QUESTIONS.length
@@ -197,13 +199,14 @@ function AnswerQuizzes() {
       {/* Type switcher — one chip per Trial type, icon + label from the shared
           registry, so every type is visible and reachable (mirrors /demo). */}
       <div className="mb-5 flex flex-wrap justify-center gap-1.5" role="tablist" aria-label="Trial question types">
-        {DEMO_TRIAL_QUESTIONS.map((q, idx) => {
-          const entry = TRIAL_REGISTRY[q.type]
+        {DEMO_TYPES.map((type) => {
+          const entry = TRIAL_REGISTRY[type]
           const Icon = entry.icon
-          const activeTab = idx === i
+          const activeTab = question.type === type
+          const idx = DEMO_TRIAL_QUESTIONS.findIndex((q) => q.type === type)
           return (
             <button
-              key={q.id}
+              key={type}
               type="button"
               role="tab"
               aria-selected={activeTab}
@@ -238,9 +241,9 @@ function AnswerQuizzes() {
   )
 }
 
-// ── 5 · Guide with Virgil (condensed drawer) ────────────────────────
+// ── 5 · Guide with the Assistant (condensed drawer) ────────────────────────
 
-function GuideWithVirgil() {
+function GuideWithAssistant() {
   const [answer, setAnswer] = useState("")
   const [thinking, setThinking] = useState(false)
   const [asked, setAsked] = useState<string | null>(null)
@@ -276,11 +279,11 @@ function GuideWithVirgil() {
 
   return (
     <SectionShell
-      eyebrow="Virgil"
+      eyebrow="Tome Assistant"
       title="A scholar in the margin, whenever you need one."
-      subline="Tap a phrase and Virgil explains it — grounded in the text beside you. Ask one of his questions to see how it reads."
+      subline="Tap a phrase and the Tome Assistant explains it — grounded in the text beside you. Ask one of its questions to see how it reads."
       bg="muted"
-      cta={{ label: "Meet Virgil", href: "/virgil" }}
+      cta={{ label: "Meet the Assistant", href: "/assistant" }}
     >
       <div className="mx-auto max-w-xl overflow-hidden rounded-xl border border-border bg-background">
         <div className="p-5">
@@ -302,7 +305,7 @@ function GuideWithVirgil() {
         <div className="border-t border-border bg-card p-4">
           <div className="mb-2 flex items-center gap-2">
             <VirgilOrb className="size-6 border border-primary/40" />
-            <span className="text-xs font-semibold text-primary">Virgil</span>
+            <span className="text-xs font-semibold text-primary">Tome Assistant</span>
             <span className="text-[10px] text-muted-foreground">
               &middot; {DEMO_PASSAGE.annotationLabel}
             </span>
@@ -312,7 +315,7 @@ function GuideWithVirgil() {
             className="min-h-[3.5rem] text-xs leading-relaxed text-muted-foreground"
           >
             {asked
-              ? answer || (thinking ? "Virgil is considering…" : "")
+              ? answer || (thinking ? "The assistant is considering…" : "")
               : DEMO_PASSAGE.annotation}
           </p>
 
@@ -376,7 +379,7 @@ function InviteFriends() {
 const TEACHER_POINTS = [
   "Assign books and chapters to a class",
   "Auto-graded Trials and a live gradebook",
-  "Virgil-assisted reflection grading",
+  "Assistant-graded reflections",
   "A searchable parent directory",
 ]
 
@@ -477,6 +480,8 @@ const FAQ_POINTS = [
   "Reading and getting started",
   "Plans, billing, and trials",
   "Classroom and school use",
+  "Students, privacy, and COPPA",
+  "Homeschool and ESA purchasing",
   "Texts, trust, and sources",
 ]
 
@@ -512,7 +517,7 @@ export function HomeHub() {
     <>
       <DiscoverCanon />
       <AnswerQuizzes />
-      <GuideWithVirgil />
+      <GuideWithAssistant />
       <InviteFriends />
       <TeachClasses />
       <PricingTeaser />

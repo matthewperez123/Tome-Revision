@@ -5,7 +5,7 @@ const ORIGIN = process.env.VERCEL_PROJECT_PRODUCTION_URL
   : "http://localhost:3000"
 
 // Index the marketing surface and public catalog (/, /readers, /educators,
-// /virgil, /pricing, /faq, /library, /book/*, /author/*, /authors, /quizzes,
+// /assistant, /pricing, /faq, /library, /book/*, /author/*, /authors, /quizzes,
 // and the legal pages). Disallow the authenticated app, account, auth flows,
 // and API so private/dynamic surfaces stay out of the index.
 export default function robots(): MetadataRoute.Robots {

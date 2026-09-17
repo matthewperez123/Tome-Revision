@@ -30,7 +30,7 @@ import {
 } from "@/lib/annotations/anchor"
 
 // Peer annotations are human-to-human → a flat RUBRIC accent (lapis), never
-// iridescent. Iridescence is reserved for Virgil (PR4).
+// iridescent. Iridescence is reserved for Tome Assistant (PR4).
 const LAPIS = "#2A4B8D"
 const GOLD = "#C8A24B" // endorsed / official clarification (PR2+)
 

@@ -71,7 +71,7 @@ export function AssignmentBuilderDemo() {
   return (
     <TeacherShowcaseShell
       heading="Assign chapters, Trials, and reflections."
-      subcopy="Five assignment types &mdash; chapter readings, Trials, Virgil-graded reflections, annotation prompts, and quote collections. Set due dates, scope to a class or a student, attach a rubric."
+      subcopy="Five assignment types &mdash; chapter readings, Trials, Tome Assistant-graded reflections, annotation prompts, and quote collections. Set due dates, scope to a class or a student, attach a rubric."
       layout="mockup-right"
       bgClass="bg-muted"
       paddingClass="py-20"

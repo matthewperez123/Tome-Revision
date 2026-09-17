@@ -24,7 +24,7 @@ import {
 
 // ── Canonical type → icon / accent ─────────────────────────────────────────
 // RUBRIC palette: lapis #2A4B8D, gold #C8A24B, vermilion #C8553D,
-// verdigris #2E7D6F. Iridescence is reserved for Virgil — never used here.
+// verdigris #2E7D6F. Iridescence is reserved for Tome Assistant — never used here.
 
 const TYPE_ICONS: Record<string, typeof Bell> = {
   friend_request: UserPlus,

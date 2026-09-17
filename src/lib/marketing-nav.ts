@@ -16,7 +16,7 @@ export const PRIMARY_NAV: NavLink[] = [
   { label: "For Students", href: "/readers" },
   { label: "For Teachers", href: "/educators" },
   { label: "Library", href: "/library" },
-  { label: "Virgil", href: "/virgil" },
+  { label: "Assistant", href: "/assistant" },
   { label: "Pricing", href: "/pricing" },
   { label: "FAQ", href: "/faq" },
 ]
@@ -46,7 +46,7 @@ export const LANDING_PATHS = new Set<string>([
   "/",
   "/readers",
   "/educators",
-  "/virgil",
+  "/assistant",
   "/pricing",
   "/faq",
   "/library",
@@ -80,7 +80,7 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
     heading: "Product",
     items: [
       { label: "Library", href: "/library/browse" },
-      { label: "Virgil", href: "/virgil" },
+      { label: "Assistant", href: "/assistant" },
       { label: "Trials", href: "/quizzes" },
       { label: "Authors", href: "/authors" },
       { label: "Live Demo", href: "/demo" },

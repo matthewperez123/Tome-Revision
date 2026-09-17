@@ -13,7 +13,7 @@ const HERO_VARIANTS = {
     attribution: "Michelangelo, The Creation of Adam, c.1512",
     headline: "Read the books that shaped the world.",
     subcopy:
-      "Explore the canon of world literature with Virgil, your scholar in the margin. Annotations, Trials, and your own Library \u2014 all in your browser.",
+      "Explore the canon of world literature with Tome Assistant, your scholar in the margin. Annotations, Trials, and your own Library \u2014 all in your browser.",
   },
   teacher: {
     src: "/paintings/school-of-athens.jpg",
@@ -46,7 +46,7 @@ export function HeroSection() {
             fill
             loading="eager"
             fetchPriority="high"
-            className="object-cover object-center"
+            className="object-cover object-center marketing-vibrant marketing-hero-drift"
             unoptimized
           />
         </motion.div>
@@ -56,7 +56,7 @@ export function HeroSection() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(to top, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.4) 30%, transparent 60%)",
+            "linear-gradient(to top, rgba(12,12,16,0.72) 0%, rgba(12,12,16,0.3) 30%, transparent 55%)",
         }}
       />
 

@@ -42,9 +42,9 @@ interface Props {
 
 type Phase = "config" | "generating" | "review"
 
-// Iridescent treatment is reserved for Virgil affordances only.
+// Iridescent treatment is reserved for Tome Assistant affordances only.
 const IRIDESCENT =
-  "linear-gradient(110deg, #6366F1 0%, #8B5CF6 35%, #06B6D4 70%, #6366F1 100%)"
+  "linear-gradient(0deg, #2C4A7E, #2C4A7E)"
 
 export function VirgilQuizPanel({ bookId, bookTitle, initialQuizId, onQuizReady, onClear }: Props) {
   const [phase, setPhase] = useState<Phase>(initialQuizId ? "review" : "config")
@@ -254,14 +254,14 @@ export function VirgilQuizPanel({ bookId, bookTitle, initialQuizId, onQuizReady,
     }
   }, [draftQuizId, questions, mix, onQuizReady])
 
-  // ── Iridescent header (Virgil signature) ──
+  // ── Iridescent header (Tome Assistant signature) ──
   const header = (
     <div
       className="flex items-center gap-2 rounded-t-xl px-3 py-2 text-white"
       style={{ backgroundImage: IRIDESCENT }}
     >
       <Sparkles className="h-4 w-4" />
-      <span className="text-xs font-semibold tracking-wide">Generate a quiz with Virgil</span>
+      <span className="text-xs font-semibold tracking-wide">Generate a quiz with Tome Assistant</span>
     </div>
   )
 
@@ -382,7 +382,7 @@ export function VirgilQuizPanel({ bookId, bookTitle, initialQuizId, onQuizReady,
             style={{ backgroundImage: IRIDESCENT }}
           >
             {generating ? <Loader2 className="h-4 w-4 animate-spin" /> : <Wand2 className="h-4 w-4" />}
-            {generating ? "Virgil is reading…" : `Generate ${totalCount} questions`}
+            {generating ? "Tome Assistant is reading…" : `Generate ${totalCount} questions`}
           </Button>
           {!bookId && <p className="text-[11px] opacity-50">Select a book above to enable generation.</p>}
         </div>

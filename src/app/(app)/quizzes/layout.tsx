@@ -5,21 +5,21 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: { absolute: "Quizzes & Trials — Test your reading on Tome" },
   description:
-    "Tome's Trials check what you read — comprehension, vocabulary, critical thinking, and Virgil-graded reflections at the end of every chapter, so the great books actually stick.",
+    "Tome's Trials check what you read — comprehension, vocabulary, critical thinking, and Tome Assistant-graded reflections at the end of every chapter, so the great books actually stick.",
   alternates: { canonical: "/quizzes" },
   openGraph: {
     type: "website",
     url: "/quizzes",
     title: "Quizzes & Trials — Test your reading on Tome",
     description:
-      "Comprehension, vocabulary, critical thinking, and Virgil-graded reflections at the end of every chapter.",
+      "Comprehension, vocabulary, critical thinking, and Tome Assistant-graded reflections at the end of every chapter.",
     images: [{ url: "/og-image.png" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Quizzes & Trials — Test your reading on Tome",
     description:
-      "Comprehension, vocabulary, critical thinking, and Virgil-graded reflections at the end of every chapter.",
+      "Comprehension, vocabulary, critical thinking, and Tome Assistant-graded reflections at the end of every chapter.",
     images: ["/og-image.png"],
   },
 }

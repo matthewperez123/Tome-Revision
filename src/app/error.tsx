@@ -21,7 +21,7 @@ export default function Error({
             className="text-xl font-semibold tracking-tight"
             style={{ letterSpacing: "-0.015em" }}
           >
-            Virgil seems to have lost his way
+            The page seems to have lost its way
           </h2>
           <p className="mt-2 text-sm text-muted-foreground max-w-sm">
             Something unexpected happened. Don&apos;t worry — even the best guides

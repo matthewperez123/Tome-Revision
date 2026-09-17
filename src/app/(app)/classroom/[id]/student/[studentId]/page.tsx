@@ -36,8 +36,8 @@ export default function StudentDetailPage({
   const [notes, setNotes] = useState("")
   const [notesDrafting, setNotesDrafting] = useState(false)
 
-  // Ask Virgil to summarize this student's recent scores + reading into a
-  // short private note. Virgil never persists it — it fills the box for the
+  // Ask Tome Assistant to summarize this student's recent scores + reading into a
+  // short private note. Tome Assistant never persists it — it fills the box for the
   // teacher to keep or edit.
   async function draftNoteWithVirgil() {
     setNotesDrafting(true)
@@ -52,15 +52,15 @@ export default function StudentDetailPage({
       })
       const data = await res.json()
       if (!res.ok) {
-        toast.error(data.error ?? "Virgil couldn't summarize this student.")
+        toast.error(data.error ?? "Tome Assistant couldn't summarize this student.")
         return
       }
       if (data.content) {
         setNotes((prev) => (prev.trim() ? `${prev.trim()}\n\n${data.content}` : String(data.content)))
-        toast.success("Virgil drafted a note — review and edit as needed.")
+        toast.success("Tome Assistant drafted a note — review and edit as needed.")
       }
     } catch {
-      toast.error("Virgil couldn't be reached. Try again.")
+      toast.error("Tome Assistant couldn't be reached. Try again.")
     } finally {
       setNotesDrafting(false)
     }
@@ -225,7 +225,7 @@ export default function StudentDetailPage({
           className="inline-flex items-center gap-1.5 rounded-full border border-border px-3 py-1 text-xs text-muted-foreground transition-colors hover:border-[var(--tome-accent)]/40 hover:text-foreground disabled:opacity-60"
         >
           <Sparkles className="size-3 text-[#D4A04C]" />
-          {notesDrafting ? "Drafting…" : "Ask Virgil"}
+          {notesDrafting ? "Drafting…" : "Ask Tome Assistant"}
         </button>
       </div>
       <textarea

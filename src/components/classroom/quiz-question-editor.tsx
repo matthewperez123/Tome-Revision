@@ -8,7 +8,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
-// Kept as a broad string so Virgil-authored types (multiple_select,
+// Kept as a broad string so Tome Assistant-authored types (multiple_select,
 // vocabulary_in_context, tf_with_reason, fill_blank, free_response, …) round-trip
 // through the editor even though the manual "add" buttons only cover a few.
 export type QuestionType = string
@@ -22,7 +22,7 @@ export interface QuizQuestion {
   explanation: string
   points: number
   sort_order: number
-  // Passthrough metadata — Virgil-generated free-response questions carry a
+  // Passthrough metadata — Tome Assistant-generated free-response questions carry a
   // rubric / reference_answer / max_points that MUST survive a save cycle so
   // they stay auto-gradable. Manually-added questions leave these null.
   rubric?: unknown
@@ -46,7 +46,7 @@ export const QUESTION_TYPES: { key: QuestionType; label: string; icon: string }[
   { key: "free_response", label: "Free Response", icon: "¶" },
 ]
 
-// Rubric <-> textarea. Virgil authors rubric as
+// Rubric <-> textarea. Tome Assistant authors rubric as
 // { max_points, criteria: [{ name, points, descriptor }] }; teachers edit the
 // criteria as one-line-per-criterion text. Untouched rubrics keep their full
 // object (onChange never fires) so points/descriptors survive a save.
@@ -321,15 +321,15 @@ export function QuizQuestionEditor({
                     </>
                   )}
 
-                  {/* Free response — Virgil grades against the rubric + reference answer */}
+                  {/* Free response — Tome Assistant grades against the rubric + reference answer */}
                   {OPEN_ENDED.has(q.question_type) && q.question_type !== "short_answer" && (
                     <div className="space-y-3">
                       <div>
-                        <label className="text-xs font-medium text-muted-foreground">Reference answer (guides Virgil's grading)</label>
+                        <label className="text-xs font-medium text-muted-foreground">Reference answer (guides Tome Assistant's grading)</label>
                         <textarea
                           value={q.reference_answer ?? ""}
                           onChange={(e) => updateQuestion(q.id, { reference_answer: e.target.value })}
-                          placeholder="A model answer for Virgil to grade against..."
+                          placeholder="A model answer for Tome Assistant to grade against..."
                           rows={3}
                           className="mt-1 w-full rounded-md border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
                         />

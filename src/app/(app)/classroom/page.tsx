@@ -8,6 +8,7 @@ import { Users, BookOpen, Copy, Plus, Check, GraduationCap, ArrowRight } from "l
 import { Button } from "@/components/ui/button"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
+import { NAV_ACCENTS } from "@/lib/navigation"
 import { isValidJoinCode } from "@/lib/classroom-utils"
 import { RUBRIC } from "@/lib/semester-plan/rubric"
 
@@ -162,7 +163,7 @@ export default function ClassroomDashboard() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2.5">
-          <GraduationCap className="size-6 shrink-0 text-foreground" />
+          <GraduationCap className="size-6 shrink-0" style={{ color: NAV_ACCENTS.classroom }} />
           <h1 className="text-2xl font-bold tracking-tight">
             {isTeacher ? "Your Classrooms" : "My Classes"}
           </h1>

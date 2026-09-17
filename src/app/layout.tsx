@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     siteName: "Tome",
     title: "Tome — Read the books that shaped the world",
     description:
-      "The gamified platform for classical literature. Guided by Virgil.",
+      "The gamified platform for classical literature. Guided by the Tome Assistant.",
     images: [
       {
         url: "/og-image.png",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Tome — Read the books that shaped the world",
     description:
-      "The gamified platform for classical literature. Guided by Virgil.",
+      "The gamified platform for classical literature. Guided by the Tome Assistant.",
     images: ["/og-image.png"],
   },
   robots: {

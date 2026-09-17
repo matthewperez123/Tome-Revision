@@ -65,13 +65,13 @@ export function PublicLibraryPage() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center"
+          className="object-cover object-center marketing-vibrant marketing-hero-drift"
         />
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to top, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.35) 35%, transparent 65%)",
+              "linear-gradient(to top, rgba(12,12,16,0.7) 0%, rgba(12,12,16,0.26) 35%, transparent 60%)",
           }}
         />
         <div className="absolute bottom-0 left-0 right-0 px-6 pb-16 md:px-12 md:pb-20 flex flex-col items-center text-center">

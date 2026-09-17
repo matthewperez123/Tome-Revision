@@ -130,7 +130,7 @@ export default function PrivacyPage() {
                   and security obligations — Supabase (database, authentication,
                   and hosting), Vercel (application hosting), Stripe (payments),
                   Resend (transactional email), and Anthropic (which powers
-                  Virgil&apos;s annotations and grading). The current list is
+                  Tome Assistant&apos;s annotations and grading). The current list is
                   maintained on our{" "}
                   <a href="/security">Privacy &amp; Security for Schools</a>{" "}
                   page;

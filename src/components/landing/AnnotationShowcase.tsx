@@ -52,7 +52,7 @@ export function AnnotationShowcase() {
       <div
         ref={containerRef}
         className="bg-card rounded-xl border border-border min-h-[340px] relative overflow-hidden"
-        aria-label="Unified Virgil drawer demonstration"
+        aria-label="Unified Tome Assistant drawer demonstration"
       >
         {/* Passage */}
         <div className="p-6">
@@ -101,7 +101,7 @@ export function AnnotationShowcase() {
                     V
                   </div>
                   <span className="text-xs font-semibold text-indigo-500">
-                    Virgil
+                    Tome Assistant
                   </span>
                   <span className="text-[10px] text-muted-foreground">
                     &middot; {ANNOTATION.label}
@@ -145,7 +145,7 @@ export function AnnotationShowcase() {
                 <div className="flex items-center gap-2 rounded-full border border-border bg-muted px-3 py-1.5">
                   <Sparkles className="size-3 text-indigo-500 shrink-0" />
                   <span className="text-[11px] text-muted-foreground flex-1 truncate">
-                    Ask Virgil about this passage…
+                    Ask Tome Assistant about this passage…
                   </span>
                   <button
                     type="button"
@@ -180,7 +180,7 @@ function StaticMockup() {
           <div className="size-5 rounded-full bg-indigo-500/15 border border-indigo-500/40 flex items-center justify-center text-[10px] font-serif font-bold text-indigo-500">
             V
           </div>
-          <span className="text-xs font-semibold text-indigo-500">Virgil</span>
+          <span className="text-xs font-semibold text-indigo-500">Tome Assistant</span>
           <span className="text-[10px] text-muted-foreground">
             &middot; {ANNOTATION.label}
           </span>
@@ -206,7 +206,7 @@ function Shell({ children }: { children: React.ReactNode }) {
               A scholar in the margin.
             </h2>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
-              Tap any annotation to open Virgil&apos;s drawer: a scholarly
+              Tap any annotation to open Tome Assistant&apos;s drawer: a scholarly
               note at the top, a live chat footer at the bottom. Read the
               footnote, ask a follow-up, keep reading.
             </p>

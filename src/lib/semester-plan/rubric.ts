@@ -11,9 +11,10 @@
 
 import type { PlanItemType } from "@/lib/semester-plan/types"
 
-// Iridescent (Virgil only) — identical to the guided-session assistant signature.
+// Retired iridescent treatment — assistant surfaces now use flat RUBRIC lapis.
+// Kept as a backgroundImage-compatible gradient so all call sites stay valid.
 export const IRIDESCENT =
-  "linear-gradient(110deg, #6366F1 0%, #8B5CF6 35%, #06B6D4 70%, #6366F1 100%)"
+  "linear-gradient(0deg, #2C4A7E, #2C4A7E)"
 
 // Flat RUBRIC accent palette.
 export const RUBRIC = {

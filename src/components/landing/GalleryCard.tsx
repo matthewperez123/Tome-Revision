@@ -22,7 +22,7 @@ export function GalleryCard({ card }: { card: PaintingCard }) {
           src={card.cover}
           alt={`${card.painting} by ${card.artist}`}
           fill
-          className="object-cover"
+          className="object-cover marketing-vibrant"
           sizes="180px"
           loading="lazy"
         />

@@ -65,7 +65,7 @@ const SUBPROCESSORS = [
   },
   {
     name: "Anthropic",
-    purpose: "Powers Virgil's annotations, answers, and reflection grading",
+    purpose: "Powers Tome Assistant's annotations, answers, and reflection grading",
     data: "The passage and prompt text sent for a given request",
   },
 ]

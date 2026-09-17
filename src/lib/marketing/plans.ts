@@ -139,7 +139,7 @@ export function getReaderPlans(stats: CatalogStats): ReaderPlan[] {
       description: "Everything you need to start reading the canon.",
       features: [
         "Access to 20 foundational books",
-        "Virgil annotations in the reader",
+        "Tome Assistant annotations in the reader",
         "Daily Flame and Seal tracking",
         "Basic Trials after each chapter",
         "Personal library and progress tracking",
@@ -153,10 +153,10 @@ export function getReaderPlans(stats: CatalogStats): ReaderPlan[] {
       id: "solo",
       name: "Solo",
       description:
-        "Unlimited access to the full canon and Virgil's deeper scholarship.",
+        "Unlimited access to the full canon and Tome Assistant's deeper scholarship.",
       features: [
         `All ${catalogSummary(stats)}`,
-        "Unlimited Virgil conversations",
+        "Unlimited Tome Assistant conversations",
         "Advanced Trials and Seals",
         "Custom reading lists and collections",
         "Offline reading",
@@ -228,7 +228,7 @@ export function getEducatorPlans(): EducatorPlan[] {
       features: [
         "Unlimited classes and students",
         "All assignment types",
-        "Virgil reflection grading",
+        "Tome Assistant reflection grading",
         "Class progress dashboard",
         "Co-teacher sharing",
         "LMS export (coming soon)",
@@ -283,11 +283,11 @@ export function getReaderComparison(stats: CatalogStats): ComparisonRow[] {
       tiers: { free: "20", solo: fullLibrary, family: fullLibrary },
     },
     {
-      label: "Virgil annotations",
+      label: "Tome Assistant annotations",
       tiers: { free: true, solo: true, family: true },
     },
     {
-      label: "Unlimited Virgil conversations",
+      label: "Unlimited Tome Assistant conversations",
       tiers: { free: false, solo: true, family: true },
     },
     {

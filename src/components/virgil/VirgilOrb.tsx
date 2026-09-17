@@ -3,7 +3,7 @@
 import { motion, useReducedMotion } from "motion/react"
 
 /**
- * Virgil's visual identity: an abstract, softly moving blue orb. Layered
+ * Tome Assistant's visual identity: an abstract, softly moving blue orb. Layered
  * conic + radial gradients rotate and drift against each other so the color
  * shifts continuously without ever resolving into a face or figure. Sized
  * entirely by the caller's `className` (it fills a `rounded-full` circle), and
@@ -11,7 +11,7 @@ import { motion, useReducedMotion } from "motion/react"
  */
 export function VirgilOrb({
   className = "",
-  label = "Virgil",
+  label = "Tome Assistant",
 }: {
   className?: string
   label?: string

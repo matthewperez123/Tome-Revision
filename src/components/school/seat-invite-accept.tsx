@@ -6,7 +6,7 @@ import { Loader2, Check } from "lucide-react"
 import { claimSeatInvite } from "@/lib/actions/school-seats"
 
 // RUBRIC verdigris — the "confirmed / complete" accent (iridescence is reserved
-// for Virgil surfaces, so this uses a flat single hue).
+// for Tome Assistant surfaces, so this uses a flat single hue).
 const VERDIGRIS = "#2E7D6F"
 
 /**

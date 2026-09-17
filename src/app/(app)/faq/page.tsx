@@ -64,7 +64,7 @@ export default async function FaqPage() {
               fill
               priority
               sizes="(min-width: 1024px) 560px, 100vw"
-              className="object-cover object-center"
+              className="object-cover object-center marketing-vibrant"
             />
             <figcaption className="absolute bottom-2 right-3 text-[11px] text-white/50">
               {marketingMasterImages.faq.attribution}

@@ -251,7 +251,7 @@ async function handleAssignmentDraft(raw: unknown, ctx: TaskCtx): Promise<Respon
   const system: Anthropic.TextBlockParam[] = [
     {
       type: "text",
-      text: "You are Virgil, a classics teacher drafting a clear, rigorous classroom assignment. You output strictly valid JSON. Prompts are specific, text-grounded, and age-appropriate — never generic filler.",
+      text: "You are the Tome Assistant, a classics teacher drafting a clear, rigorous classroom assignment. You output strictly valid JSON. Prompts are specific, text-grounded, and age-appropriate — never generic filler.",
     },
   ]
   const prompt = `Draft a ${input.type} assignment for a classics classroom.
@@ -496,7 +496,7 @@ async function handleAnnouncementDraft(raw: unknown, ctx: TaskCtx): Promise<Resp
   const system: Anthropic.TextBlockParam[] = [
     {
       type: "text",
-      text: "You are Virgil drafting a short, warm classroom announcement for a teacher to review and post. You output strictly valid JSON: a concise title and a friendly body of 1–3 short paragraphs.",
+      text: "You are the Tome Assistant drafting a short, warm classroom announcement for a teacher to review and post. You output strictly valid JSON: a concise title and a friendly body of 1–3 short paragraphs.",
     },
   ]
   const prompt = `Draft a classroom announcement.
@@ -569,7 +569,7 @@ async function handleStudentNote(raw: unknown, ctx: TaskCtx): Promise<Response> 
   }
 
   const system =
-    "You are Virgil writing a brief, private progress note for a teacher about one student. 2–4 sentences: specific, balanced, and actionable. No greeting, no sign-off — just the note."
+    "You are the Tome Assistant writing a brief, private progress note for a teacher about one student. 2–4 sentences: specific, balanced, and actionable. No greeting, no sign-off — just the note."
   const prompt = `Student signal (recent quiz scores + reading):
 ${JSON.stringify(signal, null, 2)}
 
@@ -662,7 +662,7 @@ async function handleClassInsights(raw: unknown, ctx: TaskCtx): Promise<Response
   const system: Anthropic.TextBlockParam[] = [
     {
       type: "text",
-      text: "You are Virgil giving a teacher a private read on their class. You output strictly valid JSON. Be specific and actionable; name students only from the supplied data.",
+      text: "You are the Tome Assistant giving a teacher a private read on their class. You output strictly valid JSON. Be specific and actionable; name students only from the supplied data.",
     },
   ]
   const prompt = `Class: ${classroom?.name ?? "this class"}. Per-student signal:

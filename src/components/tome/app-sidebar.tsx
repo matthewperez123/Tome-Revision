@@ -11,7 +11,6 @@ import {
   SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
-  SidebarGroupLabel,
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuButton,
@@ -26,7 +25,7 @@ export function AppSidebar() {
   const collapsed = state === "collapsed"
 
   // Layering fix: shadcn's container ships `z-20`, which sits BELOW every
-  // drawer in the app (Virgil, annotation, bookmark all at z-30/40). When
+  // drawer in the app (Tome Assistant, annotation, bookmark all at z-30/40). When
   // collapsed we keep the sidebar above drawers; when expanded we push it
   // above the drawer layer entirely so the panel can never be visually
   // clipped by a drawer that opened underneath it.
@@ -110,10 +109,12 @@ function SidebarNav({ pathname }: { pathname: string }) {
   }
 
   return (
-    <SidebarContent ref={listRef} className="gap-1 px-1.5 pt-2">
+    // Group labels are intentionally not rendered: the section headers took a
+    // row each and pushed the icon list past the viewport (forcing scroll).
+    // Groups keep a hairline of spacing so the clusters still read.
+    <SidebarContent ref={listRef} className="gap-0 overflow-y-auto px-1.5 pt-1.5">
       {navGroups.map((group) => (
-        <SidebarGroup key={group.label ?? group.items[0]?.href} className="px-1 py-1">
-          {group.label && <SidebarGroupLabel>{group.label}</SidebarGroupLabel>}
+        <SidebarGroup key={group.label ?? group.items[0]?.href} className="px-1 py-0.5">
           <SidebarGroupContent>
             <SidebarMenu className="gap-0.5">
               {group.items.map((item) => {
@@ -130,10 +131,12 @@ function SidebarNav({ pathname }: { pathname: string }) {
                       render={<Link href={item.href} onClick={() => { setOpen(false); setOpenMobile(false) }} />}
                     >
                       {/* Minimalist Lucide line icon — no animations, no entrance,
-                       * no hover scale. 1.5 stroke reads scholarly. */}
+                       * no hover scale. 1.5 stroke reads scholarly. Each section
+                       * carries a flat RUBRIC pigment for at-a-glance wayfinding. */}
                       <item.icon
                         className="size-4 transition-colors duration-200"
                         strokeWidth={1.5}
+                        style={group.accent ? { color: group.accent } : undefined}
                         aria-hidden="true"
                       />
                       <span>{item.label}</span>
@@ -156,10 +159,9 @@ const SKELETON_GROUPS = [2, 4, 3, 1, 1]
 
 function SidebarNavSkeleton() {
   return (
-    <SidebarContent className="gap-1 px-1.5 pt-2" aria-hidden="true">
+    <SidebarContent className="gap-0 px-1.5 pt-1.5" aria-hidden="true">
       {SKELETON_GROUPS.map((rows, gi) => (
-        <div key={gi} className="px-1 py-1">
-          <div className="mx-1 mb-1 h-3 w-16 rounded bg-muted/60" />
+        <div key={gi} className="px-1 py-0.5">
           <div className="flex flex-col gap-0.5">
             {Array.from({ length: rows }).map((_, ri) => (
               <div key={ri} className="flex h-8 items-center gap-2 rounded-md px-2">

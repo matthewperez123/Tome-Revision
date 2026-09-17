@@ -116,7 +116,7 @@ const CONTRACT = `Each question object MUST match exactly:
 HARD RULE for hints: no hint may contain the literal correct answer, the correct option's text or letter, or the exact reference_answer. The student does the thinking; hints only orient and scaffold.`
 
 function buildInstruction(req: GenerateQuizRequest, bookTitle: string, bookAuthor: string): string {
-  return `You are Virgil, a literature teacher writing a rigorous, TEXT-GROUNDED quiz for students on "${bookTitle}" by ${bookAuthor}.
+  return `You are the Tome Assistant, a literature teacher writing a rigorous, TEXT-GROUNDED quiz for students on "${bookTitle}" by ${bookAuthor}.
 
 Use ONLY the provided source passage. Every question must be answerable from that text — never invent events, characters, or quotations. Quotes in source_anchor must appear verbatim in the passage.
 
@@ -133,7 +133,7 @@ Return ONLY a JSON object {"questions": [...]} — no prose, no markdown fences.
 
 function buildSingleInstruction(req: GenerateQuizRequest, bookTitle: string, bookAuthor: string): string {
   const s = req.single!
-  return `You are Virgil, writing ONE replacement quiz question for "${bookTitle}" by ${bookAuthor}, grounded only in the provided source passage.
+  return `You are the Tome Assistant, writing ONE replacement quiz question for "${bookTitle}" by ${bookAuthor}, grounded only in the provided source passage.
 
 Type: ${s.type} (${QUESTION_TYPE_LABELS[s.type]}). Difficulty: ${s.difficulty} (${DIFFICULTY_SEMANTICS[s.difficulty]}).
 ${s.instruction ? `Teacher instruction: ${s.instruction}` : ""}

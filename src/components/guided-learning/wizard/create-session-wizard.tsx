@@ -118,7 +118,7 @@ export function CreateSessionWizard({
     setState((prev) => ({ ...prev, ...partial }))
   }, [])
 
-  // Virgil chatbot drops a ready-made quiz station into the queue.
+  // Tome Assistant chatbot drops a ready-made quiz station into the queue.
   const handleAttachQuiz = useCallback((station: DraftStation) => {
     setState((prev) => ({ ...prev, stations: [...prev.stations, station] }))
     setCurrentStep("stations")
@@ -256,7 +256,7 @@ export function CreateSessionWizard({
         </p>
       </div>
 
-      {/* Virgil quiz assistant — ask in plain language, no toggles */}
+      {/* Tome Assistant quiz assistant — ask in plain language, no toggles */}
       <VirgilSessionAssistant onAttachQuiz={handleAttachQuiz} />
 
       {/* Step indicator */}

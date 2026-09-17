@@ -7,7 +7,7 @@
  * 3. Typography scale:      5/5
  * 4. Motion easing tokens:  5/5
  * 5. Component selection:   5/5
- * 6. Virgil presence:       5/5
+ * 6. Tome Assistant presence:       5/5
  * 7. Density restraint:     5/5
  * 8. Accessibility:         5/5
  * ─────────────────────────────────
@@ -52,7 +52,7 @@ type StepKey =
   // Student-only steps
   | "join-class"
 
-// Reader path: a short Virgil welcome → pick a first book → set a daily goal
+// Reader path: a short Tome Assistant welcome → pick a first book → set a daily goal
 const READER_STEPS: StepKey[] = ["role", "virgil", "first-book", "goal"]
 
 // Student path: join a class with a code → set a daily goal

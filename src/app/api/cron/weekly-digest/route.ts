@@ -45,7 +45,7 @@ function fmt(d: Date): string {
   })
 }
 
-/** Optional warm one-liner in Virgil's voice. Never throws — returns undefined. */
+/** Optional warm one-liner in Tome Assistant's voice. Never throws — returns undefined. */
 async function virgilNote(
   name: string,
   chapters: number,
@@ -61,7 +61,7 @@ async function virgilNote(
       model: HAIKU,
       max_tokens: 120,
       system:
-        "You are Virgil, a warm, erudite reading guide. Write ONE sentence (max 30 words) " +
+        "You are Tome Assistant, a warm, erudite reading guide. Write ONE sentence (max 30 words) " +
         "celebrating a reader's week in the classics. Second person, no emojis, no quotes, no preamble.",
       messages: [
         {
@@ -74,7 +74,7 @@ async function virgilNote(
     const note = text && "text" in text ? text.text.trim() : ""
     return note || undefined
   } catch (err) {
-    console.warn("[weekly-digest] Virgil note skipped:", err)
+    console.warn("[weekly-digest] Tome Assistant note skipped:", err)
     return undefined
   }
 }

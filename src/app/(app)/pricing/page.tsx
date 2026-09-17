@@ -40,7 +40,7 @@ function gateMessage(gate: string | undefined, book: string | undefined): string
         : "That book is part of Tome Solo. Subscribe to read the full library."
     }
     case "virgil":
-      return "You've reached today's free Virgil limit. Upgrade for unlimited conversations."
+      return "You've reached today's free Tome Assistant limit. Upgrade for unlimited conversations."
     case "advanced-trials":
       return "Scholar and Master Trials are part of Tome Solo. Upgrade to take advanced Trials."
     default:
@@ -92,7 +92,7 @@ export default async function PricingPage({
   const billingFaqs =
     getFaqCategories(stats)
       .find((category) => category.id === "billing")
-      ?.items.slice(0, 3) ?? []
+      ?.items.slice(0, 5) ?? []
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -111,7 +111,7 @@ export default async function PricingPage({
               Read the canon. Choose how you go deeper.
             </h1>
             <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted-foreground lg:mx-0">
-              Unlock the full library and Virgil&apos;s deeper scholarship with
+              Unlock the full library and Tome Assistant&apos;s deeper scholarship with
               Solo, bring the whole household in with Family, or give your school
               per-teacher seats.
             </p>
@@ -123,7 +123,7 @@ export default async function PricingPage({
               fill
               priority
               sizes="(min-width: 1024px) 560px, 100vw"
-              className="object-cover object-center"
+              className="object-cover object-center marketing-vibrant"
             />
             <figcaption className="absolute bottom-2 right-3 text-[11px] text-white/50">
               {marketingMasterImages.pricing.attribution}

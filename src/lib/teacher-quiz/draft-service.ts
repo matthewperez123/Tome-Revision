@@ -66,7 +66,7 @@ export async function prepareScope(
         status: 422,
         json: {
           error: "not_ingested",
-          message: `"${book.title}" has no readable chapter content yet, so Virgil can't write a grounded quiz. Ingest the book first.`,
+          message: `"${book.title}" has no readable chapter content yet, so the assistant can't write a grounded quiz. Ingest the book first.`,
         },
       },
       data: null,
@@ -95,7 +95,7 @@ export async function persistDraftQuiz(
     .insert({
       teacher_id: userId,
       book_id: req.bookId,
-      title: `${book.title} — Virgil Quiz`,
+      title: `${book.title} — Assistant Quiz`,
       difficulty: dominant ?? "scholar",
       chapter_range_start: Math.min(...indexes),
       chapter_range_end: Math.max(...indexes),

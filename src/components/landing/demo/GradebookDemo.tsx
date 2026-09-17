@@ -12,7 +12,7 @@ interface Detail {
   virgilChats: string
   readingTime: string
   annotations: string
-  /** Virgil's drafted reflection score, out of 4. */
+  /** Tome Assistant's drafted reflection score, out of 4. */
   rubricDraft: number
   rubricNote: string
 }
@@ -130,7 +130,7 @@ function ReflectionRubric({ detail }: { detail: Detail }) {
       <div className="flex items-center gap-1.5 mb-1.5">
         <Sparkles className="size-3 text-primary" />
         <span className="text-[10px] font-semibold uppercase tracking-wider text-primary">
-          Virgil rubric draft
+          Tome Assistant rubric draft
         </span>
       </div>
       <p className="text-[11px] text-muted-foreground leading-relaxed mb-2.5">
@@ -203,7 +203,7 @@ export function GradebookDemo() {
   return (
     <TeacherShowcaseShell
       heading="See how they&rsquo;re really reading"
-      subcopy="Scores, time on page, Virgil conversations, and annotation density &mdash; all in one gradebook."
+      subcopy="Scores, time on page, Tome Assistant conversations, and annotation density &mdash; all in one gradebook."
       layout="mockup-right"
       bgClass="bg-muted"
       paddingClass="py-20"
@@ -268,7 +268,7 @@ export function GradebookDemo() {
                   >
                     <div className="bg-muted/50 rounded-lg p-3 mt-2 mb-1 mx-2 space-y-2">
                       <DetailBar
-                        label="Virgil chats"
+                        label="Tome Assistant chats"
                         value={student.detail.virgilChats}
                         width="60%"
                       />

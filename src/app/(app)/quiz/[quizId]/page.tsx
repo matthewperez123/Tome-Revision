@@ -7,7 +7,7 @@
  * 3. Typography scale:      5/5
  * 4. Motion easing tokens:  5/5
  * 5. Component selection:   5/5
- * 6. Virgil presence:       4/5
+ * 6. Tome Assistant presence:       4/5
  * 7. Density restraint:     5/5
  * 8. Accessibility:         4/5
  * ─────────────────────────────────
@@ -35,6 +35,7 @@ import {
 import { HintPanel } from "@/components/trials/HintPanel"
 import { QuestionNavigator, type QuestionStatus } from "@/components/trials/QuestionNavigator"
 import { parseHints } from "@/lib/quiz-hints"
+import { PLATFORM_QUIZZES_ENABLED } from "@/lib/quizzes/flags"
 
 // Types whose renderer draws its own prompt/passage, so the page must not
 // also print question.prompt above it.
@@ -177,6 +178,21 @@ function mapQuestionRow(row: Record<string, unknown>): Question {
 // ── Main Component ─────────────────────────────
 
 export default function QuizPage() {
+  // Platform (pre-generated) quizzes are paused — bounce back to /quizzes,
+  // which explains the pause. Teacher-built quizzes live at a different route.
+  if (!PLATFORM_QUIZZES_ENABLED) return <QuizArenaPaused />
+  return <QuizArena />
+}
+
+function QuizArenaPaused() {
+  const router = useRouter()
+  useEffect(() => {
+    router.replace("/quizzes")
+  }, [router])
+  return null
+}
+
+function QuizArena() {
   const params = useParams()
   const router = useRouter()
   const quizId = params.quizId as string
@@ -578,7 +594,7 @@ export default function QuizPage() {
               })()}
             </div>
 
-            {/* Hint affordance — a Virgil surface (iridescent). Pre-answer only. */}
+            {/* Hint affordance — a Tome Assistant surface (iridescent). Pre-answer only. */}
             {!answered && hintConfig.enabled && (question.hints?.length ?? 0) > 0 && (
               <HintPanel
                 hint={question.hints?.[0] ?? null}

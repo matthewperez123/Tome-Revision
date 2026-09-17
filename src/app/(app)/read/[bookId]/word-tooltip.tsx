@@ -44,6 +44,11 @@ export function WordTooltipProvider({ children }: { children: React.ReactNode })
     const selection = window.getSelection()
     if (!selection) return
 
+    // A real drag-selection is in progress (highlight/bookmark/annotation
+    // flow) — never clobber it. Wiping it here is what forced users to
+    // double-click before they could place a highlight.
+    if (!selection.isCollapsed && selection.toString().trim()) return
+
     // Expand selection to word at click point
     const range = document.caretRangeFromPoint(e.clientX, e.clientY)
     if (!range) return

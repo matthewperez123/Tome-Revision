@@ -107,7 +107,7 @@ export async function POST(request: Request, { params }: { params: Promise<{ pla
   const apiKey = process.env.ANTHROPIC_API_KEY
   if (!apiKey) {
     return NextResponse.json(
-      { reply: "Virgil isn't configured on this server yet (missing ANTHROPIC_API_KEY)." },
+      { reply: "The assistant isn't configured on this server yet (missing ANTHROPIC_API_KEY)." },
       { status: 200 },
     )
   }
@@ -115,7 +115,7 @@ export async function POST(request: Request, { params }: { params: Promise<{ pla
   const hydrated = await hydratePlan(supabase, planId)
   if (!hydrated) return NextResponse.json({ error: "Plan not found" }, { status: 404 })
 
-  const system = `You are Virgil, a warm, erudite teaching assistant inside Tome, helping a teacher refine a literature semester plan.
+  const system = `You are the Tome Assistant, a warm, erudite teaching assistant inside Tome, helping a teacher refine a literature semester plan.
 
 CURRENT PLAN:
 ${planSummary(hydrated)}

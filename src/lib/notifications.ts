@@ -24,7 +24,7 @@ export type NotificationType =
   | "flame_recovered"
   | "wisdom_milestone"
   | "daily_goal_met"
-  // Virgil
+  // Tome Assistant
   | "virgil_annotation_ready"
   | "virgil_insight"
   // Unlocks
@@ -367,7 +367,7 @@ export function notifyPaintingUnlocked(paintingTitle: string, artist: string, pa
 export function notifyVirgilInsight(message: string, bookId?: string) {
   return createNotification({
     type: "virgil_insight",
-    title: "Virgil has a thought",
+    title: "Tome Assistant has a thought",
     body: message,
     icon: "MessageSquare",
     link: bookId ? `/book/${bookId}` : undefined,

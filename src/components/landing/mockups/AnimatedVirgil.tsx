@@ -49,7 +49,7 @@ export function AnimatedVirgil() {
         <div className="rounded-lg border-l-2 border-primary bg-primary/5 p-4">
           <div className="flex items-center gap-2 mb-2">
             <VirgilAvatar />
-            <span className="text-xs text-primary font-semibold">Virgil</span>
+            <span className="text-xs text-primary font-semibold">Tome Assistant</span>
           </div>
           <p className="text-xs text-muted-foreground leading-relaxed">{ANNOTATION_1.text}</p>
         </div>
@@ -61,7 +61,7 @@ export function AnimatedVirgil() {
     <div
       ref={containerRef}
       className="bg-card rounded-xl border border-border p-6 min-h-[300px]"
-      aria-label="Animated Virgil annotation demonstration"
+      aria-label="Animated assistant annotation demonstration"
     >
       <p className="text-xs text-muted-foreground mb-3">The Divine Comedy &middot; Inferno, Canto III</p>
 
@@ -106,7 +106,7 @@ export function AnimatedVirgil() {
           >
             <div className="flex items-center gap-2 mb-2">
               <VirgilAvatar />
-              <span className="text-xs text-primary font-semibold">Virgil</span>
+              <span className="text-xs text-primary font-semibold">Tome Assistant</span>
               <span className="text-[10px] text-muted-foreground">&middot; {annotation.title}</span>
             </div>
             <p className="text-xs text-muted-foreground leading-relaxed">{annotation.text}</p>

@@ -79,7 +79,7 @@ export function EmptyActivity({ className }: EmptyStateProps) {
         <p className="mt-1 text-xs text-muted-foreground max-w-xs font-serif italic">
           &ldquo;Every great reader starts with a single page.&rdquo;
           <br />
-          <span className="not-italic text-[10px]">— Virgil, your guide</span>
+          <span className="not-italic text-[10px]">— Tome Assistant, your guide</span>
         </p>
       </div>
     </BlurFade>

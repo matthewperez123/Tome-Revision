@@ -19,8 +19,8 @@ function copyFor(reason: PaywallReason, subject?: string): PaywallCopy {
   switch (reason) {
     case "virgil":
       return {
-        title: "You've reached today's Virgil limit",
-        body: "Free readers get a few questions a day. Upgrade to Tome Family for unlimited conversations with Virgil at your side.",
+        title: "You've reached today's Tome Assistant limit",
+        body: "Free readers get a few questions a day. Upgrade to Tome Family for unlimited conversations with Tome Assistant at your side.",
       }
     case "advanced-trials":
       return {
@@ -31,7 +31,7 @@ function copyFor(reason: PaywallReason, subject?: string): PaywallCopy {
     default:
       return {
         title: subject ? `${subject} needs a subscription` : "This book needs a subscription",
-        body: "Unlock the full library — every great book, unlimited reading, and Virgil at your side, for up to five readers. Start with a free 7-day trial.",
+        body: "Unlock the full library — every great book, unlimited reading, and Tome Assistant at your side, for up to five readers. Start with a free 7-day trial.",
       }
   }
 }

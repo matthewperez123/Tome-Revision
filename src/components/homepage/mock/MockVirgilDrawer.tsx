@@ -31,7 +31,7 @@ export function MockVirgilDrawer({ open, title, text, crossRef }: MockVirgilDraw
             <div className="size-5 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37]/40 flex items-center justify-center text-[9px] font-serif font-bold text-[#D4AF37]">
               V
             </div>
-            <span className="text-[10px] text-[#D4AF37] font-semibold">Virgil</span>
+            <span className="text-[10px] text-[#D4AF37] font-semibold">Tome Assistant</span>
             <span className="text-[9px] text-[#7A756D]">&middot; {title}</span>
           </div>
 

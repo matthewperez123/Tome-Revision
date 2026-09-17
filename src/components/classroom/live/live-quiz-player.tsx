@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Check, X, Flame, Trophy, Loader2 } from "lucide-react"
 import { useLiveQuiz } from "@/hooks/use-live-quiz"
 
-// RUBRIC answer-zone palette (mirrors the host). Never iridescent — Virgil only.
+// RUBRIC answer-zone palette (mirrors the host). Never iridescent — Tome Assistant only.
 const ZONE = [
   { bg: "#2A4B8D", hover: "#33579f" }, // lapis
   { bg: "#C8553D", hover: "#d5624a" }, // vermilion

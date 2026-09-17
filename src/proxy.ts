@@ -31,6 +31,7 @@ const PUBLIC_ROUTES = new Set<string>([
   "/readers",
   "/educators",
   "/virgil",
+  "/assistant",
   "/pricing",
   "/faq",
   "/privacy",

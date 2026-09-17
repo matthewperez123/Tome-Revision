@@ -40,7 +40,7 @@ const STATUS_WORD: Record<QuestionStatus, string> = {
  * not bundled in the repo, so the app sans (Inter, `font-sans`) is the
  * documented substitution. Pigments come from the canonical RUBRIC palette;
  * neutral states use semantic tokens for day/night parity. No iridescence —
- * that signature is reserved for Virgil surfaces.
+ * that signature is reserved for Tome Assistant surfaces.
  */
 export function QuestionNavigator({
   count,

@@ -6,7 +6,7 @@ import { TypingAnimation } from "@/components/ui/typing-animation"
 import { Button } from "@/components/ui/button"
 
 const virgilSpeech =
-  "I am Virgil, your guide through the great books. As I once guided Dante through the underworld, I will guide you through the greatest stories ever written."
+  "I am the Tome Assistant, your guide through the great books. I will walk beside you through the greatest stories ever written — annotating, explaining, and asking the questions that matter."
 
 export function StepVirgil({ onComplete }: { onComplete: () => void }) {
   return (
@@ -30,7 +30,7 @@ export function StepVirgil({ onComplete }: { onComplete: () => void }) {
         </div>
       </div>
 
-      {/* Virgil Avatar */}
+      {/* Assistant avatar */}
       <VirgilOrb className="relative z-10 size-28 ring-2 ring-[var(--tome-accent)]/20" />
 
       {/* Title */}
@@ -41,7 +41,7 @@ export function StepVirgil({ onComplete }: { onComplete: () => void }) {
           className="text-2xl font-semibold tracking-tight"
           style={{ letterSpacing: "-0.02em" }}
         >
-          Meet Virgil
+          Meet your Assistant
         </TextAnimate>
       </div>
 

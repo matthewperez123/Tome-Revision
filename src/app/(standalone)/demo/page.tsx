@@ -35,7 +35,7 @@ export default async function DemoPage({
             <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted-foreground">
               See how Tome brings three thousand years of literature into your
               classroom — with classrooms, a live gradebook, AI-assisted quizzes,
-              and Virgil to guide every reader. Tell us about your school and
+              and Tome Assistant to guide every reader. Tell us about your school and
               we&apos;ll be in touch.
             </p>
           </header>

@@ -38,7 +38,7 @@ export function VirgilAnnotationDemo({ playing = true }: { playing?: boolean }) 
           >
             <div className="flex items-center gap-1 mb-1">
               <div className="size-3 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37]/40 flex items-center justify-center text-[6px] font-bold text-[#D4AF37]">V</div>
-              <span className="text-[7px] text-[#D4AF37] font-semibold">Virgil</span>
+              <span className="text-[7px] text-[#D4AF37] font-semibold">Tome Assistant</span>
             </div>
             <p className="text-[8px] text-[#C4BFB6] leading-relaxed">
               The fall of Troy is the pivotal event of the ancient world. Homer assumes his audience knows the full story.

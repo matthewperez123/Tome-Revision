@@ -283,7 +283,7 @@ function TeacherClassroomView({ classroomId }: { classroomId: string }) {
           <Button
             size="sm"
             className="gap-1.5 text-white"
-            style={{ backgroundImage: "linear-gradient(110deg, #6366F1 0%, #8B5CF6 35%, #06B6D4 70%, #6366F1 100%)" }}
+            style={{ backgroundImage: "linear-gradient(0deg, #2C4A7E, #2C4A7E)" }}
           >
             <Sparkles className="size-3.5" /> Semester Planning
           </Button>
@@ -332,7 +332,7 @@ function TeacherClassroomView({ classroomId }: { classroomId: string }) {
         <ClassroomRosterPanel classroomId={classroomId} joinCode={meta.joinCode} />
       </div>
 
-      {/* Virgil's read on the class — teacher-only, read-only */}
+      {/* Tome Assistant's read on the class — teacher-only, read-only */}
       <ClassInsightsPanel classroomId={classroomId} />
 
       {/* Shared margin annotations across the class's assigned books — live */}
@@ -455,8 +455,8 @@ const ASSIGNMENT_DRAFT_TYPES = ["essay", "discussion", "annotation", "reading", 
 type AssignmentDraftType = (typeof ASSIGNMENT_DRAFT_TYPES)[number]
 
 /**
- * Compact "draft an assignment with Virgil" flow. Unlike the manual composer,
- * Virgil owns the write: POST /api/virgil (task=assignment_draft) inserts a
+ * Compact "draft an assignment with Tome Assistant" flow. Unlike the manual composer,
+ * Tome Assistant owns the write: POST /api/virgil (task=assignment_draft) inserts a
  * DRAFT assignment row directly, then we refresh the list so it appears.
  */
 function AssignmentDraftWithVirgil({
@@ -498,10 +498,10 @@ function AssignmentDraftWithVirgil({
       })
       const data = await res.json()
       if (!res.ok) {
-        toast.error(data.error ?? "Virgil couldn't draft the assignment.")
+        toast.error(data.error ?? "Tome Assistant couldn't draft the assignment.")
         return
       }
-      toast.success(`Virgil drafted "${data.title}" — it's saved as a draft.`)
+      toast.success(`Tome Assistant drafted "${data.title}" — it's saved as a draft.`)
       setOpen(false)
       setBookId("")
       setChapterStart("")
@@ -509,7 +509,7 @@ function AssignmentDraftWithVirgil({
       setBrief("")
       onCreated()
     } catch {
-      toast.error("Virgil couldn't be reached. Try again.")
+      toast.error("Tome Assistant couldn't be reached. Try again.")
     } finally {
       setPending(false)
     }
@@ -523,7 +523,7 @@ function AssignmentDraftWithVirgil({
         className="flex w-full items-center gap-2 rounded-xl border border-dashed border-border bg-muted/30 px-4 py-3 text-left text-sm text-muted-foreground transition-colors hover:border-[var(--tome-accent)]/40 hover:bg-muted/50"
       >
         <Sparkles className="size-4 text-[#D4A04C]" />
-        <span>Draft an assignment with Virgil…</span>
+        <span>Draft an assignment with Tome Assistant…</span>
       </button>
     )
   }
@@ -536,7 +536,7 @@ function AssignmentDraftWithVirgil({
     >
       <div className="mb-3 flex items-center gap-2">
         <Sparkles className="size-3.5 text-[#D4A04C]" />
-        <h3 className="text-sm font-semibold">Draft an assignment with Virgil</h3>
+        <h3 className="text-sm font-semibold">Draft an assignment with Tome Assistant</h3>
       </div>
       <div className="space-y-3">
         <div className="flex flex-wrap items-center gap-1">
@@ -582,7 +582,7 @@ function AssignmentDraftWithVirgil({
         <textarea
           value={brief}
           onChange={(e) => setBrief(e.target.value)}
-          placeholder="What should this assignment focus on? (optional brief for Virgil)"
+          placeholder="What should this assignment focus on? (optional brief for Tome Assistant)"
           rows={2}
           className="w-full resize-none rounded-md border border-border bg-background px-3 py-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--tome-accent)]"
         />
@@ -598,7 +598,7 @@ function AssignmentDraftWithVirgil({
           </Button>
           <Button size="sm" className="gap-1.5 text-xs" onClick={submit} disabled={pending}>
             <Sparkles className="size-3" />
-            {pending ? "Drafting…" : "Draft with Virgil"}
+            {pending ? "Drafting…" : "Draft with Tome Assistant"}
           </Button>
         </div>
       </div>
@@ -614,9 +614,9 @@ interface ClassInsights {
 }
 
 /**
- * Virgil's read on the class — a read-only, teacher-only insight card. Fetches
+ * Tome Assistant's read on the class — a read-only, teacher-only insight card. Fetches
  * on demand from POST /api/virgil (task=class_insights); the endpoint is
- * teacher-gated and Virgil writes nothing, so this only ever displays.
+ * teacher-gated and Tome Assistant writes nothing, so this only ever displays.
  */
 function ClassInsightsPanel({ classroomId }: { classroomId: string }) {
   const [insights, setInsights] = useState<ClassInsights | null>(null)
@@ -634,12 +634,12 @@ function ClassInsightsPanel({ classroomId }: { classroomId: string }) {
       })
       const data = await res.json()
       if (!res.ok) {
-        setError(data.error ?? "Virgil couldn't read the class right now.")
+        setError(data.error ?? "Tome Assistant couldn't read the class right now.")
         return
       }
       setInsights(data as ClassInsights)
     } catch {
-      setError("Virgil couldn't be reached. Try again.")
+      setError("Tome Assistant couldn't be reached. Try again.")
     } finally {
       setLoading(false)
     }
@@ -650,7 +650,7 @@ function ClassInsightsPanel({ classroomId }: { classroomId: string }) {
       <div className="flex flex-wrap items-center justify-between gap-2">
         <div className="flex items-center gap-2">
           <Sparkles className="size-4 text-[#D4A04C]" />
-          <h2 className="text-sm font-semibold">Virgil&apos;s read on the class</h2>
+          <h2 className="text-sm font-semibold">Tome Assistant&apos;s read on the class</h2>
         </div>
         <Button
           size="sm"
@@ -659,7 +659,7 @@ function ClassInsightsPanel({ classroomId }: { classroomId: string }) {
           onClick={fetchInsights}
           disabled={loading}
         >
-          {loading ? "Reading…" : insights ? "Refresh" : "Ask Virgil"}
+          {loading ? "Reading…" : insights ? "Refresh" : "Ask Tome Assistant"}
         </Button>
       </div>
 

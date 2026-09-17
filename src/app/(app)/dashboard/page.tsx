@@ -26,6 +26,7 @@ import {
 } from "lucide-react"
 import { listReadingProgress } from "@/lib/reading/positions"
 import { loadPracticeData, type QuizAttempt } from "@/lib/quizzes/practice"
+import { PLATFORM_QUIZZES_ENABLED } from "@/lib/quizzes/flags"
 import { getBook } from "@/lib/content"
 import type { TomeBook } from "@/data/books"
 import { BookCoverThumb } from "@/components/tome/book-cover-thumb"
@@ -38,7 +39,7 @@ import { UpcomingAssignments } from "@/components/classroom/upcoming-assignments
 import { RecentlyGraded } from "@/components/classroom/recently-graded"
 import { CheckoutResultToast } from "@/components/pricing/CheckoutResultToast"
 
-// RUBRIC flat accents (iridescence stays Virgil-only).
+// RUBRIC flat accents (iridescence stays Tome Assistant-only).
 const LAPIS = "#2A4B8D"
 const VERDIGRIS = "#2E7D6F"
 
@@ -263,8 +264,8 @@ function StudentDashboard() {
               )}
             </section>
 
-            {/* Recent quiz results */}
-            {quizHistory.length > 0 && (
+            {/* Recent quiz results — hidden while platform practice quizzes are paused */}
+            {PLATFORM_QUIZZES_ENABLED && quizHistory.length > 0 && (
               <section>
                 <SectionHeading title="Recent quiz results" actionHref="/quizzes" action="Practice" />
                 <ul className="rounded-xl border border-border bg-card divide-y divide-border">

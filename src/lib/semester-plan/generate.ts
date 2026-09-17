@@ -73,7 +73,7 @@ function buildInstruction(setup: PlanSetup): string {
     ? setup.constraints.breakWeeks.join(", ")
     : "(none)"
 
-  return `You are Virgil, designing a ${setup.weeks}-week literature semester plan${
+  return `You are the Tome Assistant, designing a ${setup.weeks}-week literature semester plan${
     setup.level ? ` for ${setup.level}` : ""
   }.
 
@@ -95,7 +95,7 @@ ${CONTRACT}`
 }
 
 function buildReviseInstruction(current: GeneratedPlan, instruction: string): string {
-  return `You are Virgil, REVISING an existing semester plan. Apply this instruction:
+  return `You are the Tome Assistant, REVISING an existing semester plan. Apply this instruction:
 
 "${instruction}"
 

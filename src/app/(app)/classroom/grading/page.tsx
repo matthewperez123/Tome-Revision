@@ -9,10 +9,10 @@ import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
 import { gradeSubmission } from "@/lib/actions/grades"
 
-// The iridescent gradient is reserved app-wide for Virgil affordances only —
+// The iridescent gradient is reserved app-wide for Tome Assistant affordances only —
 // identical to the guided-session assistant + semester-planner signature.
 const VIRGIL_IRIDESCENT =
-  "linear-gradient(110deg, #6366F1 0%, #8B5CF6 35%, #06B6D4 70%, #6366F1 100%)"
+  "linear-gradient(0deg, #2C4A7E, #2C4A7E)"
 
 interface GradingItem {
   submission_id: string
@@ -26,7 +26,7 @@ interface GradingItem {
   // grading fields
   score: number | null
   feedback: string
-  // Virgil draft provenance: the score Virgil proposed (null until drafted), and
+  // Tome Assistant draft provenance: the score Tome Assistant proposed (null until drafted), and
   // whatever it flagged as strengths / improvements for the teacher to weigh.
   ai_draft_score: number | null
   ai_notes: { strengths: string[]; improvements: string[] } | null
@@ -72,7 +72,7 @@ export default function GradingQueuePage() {
       .eq("assignments.teacher_id", user.id)
       .order("submitted_at", { ascending: false })
 
-    // Preserve any in-flight Virgil drafts / edits the teacher has open so a
+    // Preserve any in-flight Tome Assistant drafts / edits the teacher has open so a
     // background refetch never wipes unsaved work.
     setItems((prev) => {
       const byId = new Map(prev.map((it) => [it.submission_id, it]))
@@ -125,7 +125,7 @@ export default function GradingQueuePage() {
     setItems((prev) => prev.map((it) => (it.submission_id === submissionId ? { ...it, ...updates } : it)))
   }, [])
 
-  // Ask Virgil for a DRAFT — a proposed score + feedback that is NOT persisted.
+  // Ask Tome Assistant for a DRAFT — a proposed score + feedback that is NOT persisted.
   // It pre-fills the editable inputs for the teacher to review, tweak, and
   // finalize. Repeatable (Regenerate), bounded per-object per day server-side.
   const draftWithVirgil = useCallback(
@@ -137,7 +137,7 @@ export default function GradingQueuePage() {
       })
       const data = (await res.json().catch(() => null)) as VirgilDraftResponse | null
       if (!res.ok || !data || typeof data.score !== "number") {
-        toast.error(data?.error ?? "Virgil couldn't draft a grade.")
+        toast.error(data?.error ?? "Tome Assistant couldn't draft a grade.")
         return false
       }
       updateItem(submissionId, {
@@ -166,7 +166,7 @@ export default function GradingQueuePage() {
     [draftWithVirgil],
   )
 
-  // Sequentially draft every ungraded essay that Virgil hasn't drafted yet. Each
+  // Sequentially draft every ungraded essay that Tome Assistant hasn't drafted yet. Each
   // draft stays a proposal — the teacher still reviews + finalizes each one.
   const handleDraftRemaining = useCallback(async () => {
     const targets = items.filter(
@@ -187,7 +187,7 @@ export default function GradingQueuePage() {
       setDraftingAll(false)
       if (done > 0) {
         toast.success(
-          `Virgil drafted ${done} ${done === 1 ? "essay" : "essays"} — review each before finalizing.`,
+          `Tome Assistant drafted ${done} ${done === 1 ? "essay" : "essays"} — review each before finalizing.`,
         )
       }
     }
@@ -251,7 +251,7 @@ export default function GradingQueuePage() {
             style={{ backgroundImage: VIRGIL_IRIDESCENT }}
           >
             <Sparkles className="size-3.5" />
-            {draftingAll ? "Virgil is drafting…" : `Draft remaining with Virgil (${essayDraftableCount})`}
+            {draftingAll ? "Tome Assistant is drafting…" : `Draft remaining with Tome Assistant (${essayDraftableCount})`}
           </button>
         )}
       </div>
@@ -322,7 +322,7 @@ export default function GradingQueuePage() {
                   <div className="rounded-[calc(0.5rem-1.5px)] bg-card p-3">
                     <div className="flex items-center gap-1.5 text-xs font-semibold">
                       <Sparkles className="size-3.5 text-indigo-500" />
-                      Virgil&apos;s draft — review before finalizing
+                      Tome Assistant&apos;s draft — review before finalizing
                     </div>
                     {selected.ai_notes && selected.ai_notes.strengths.length > 0 && (
                       <p className="mt-2 text-xs text-muted-foreground">
@@ -390,10 +390,10 @@ export default function GradingQueuePage() {
                       <Sparkles className="size-3.5" />
                     )}
                     {virgilBusy === selected.submission_id
-                      ? "Virgil is grading…"
+                      ? "Tome Assistant is grading…"
                       : selected.ai_draft_score !== null
                         ? "Regenerate draft"
-                        : "Grade with Virgil"}
+                        : "Grade with Tome Assistant"}
                   </Button>
                 )}
               </div>

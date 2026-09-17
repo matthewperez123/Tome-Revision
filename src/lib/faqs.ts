@@ -48,7 +48,7 @@ export function getFaqCategories(stats: CatalogStats): FaqCategory[] {
       {
         id: "what-is-tome",
         q: "What is Tome?",
-        a: "Tome is a guided reading platform for the canon of world literature. You read complete, unabridged texts alongside Virgil — an AI scholar in the margin who annotates passages, answers questions, and grades your reflections — while earning Wisdom, keeping a daily Flame, and collecting Seals as you go.",
+        a: "Tome is a guided reading platform for the canon of world literature. You read complete, unabridged texts alongside the Tome Assistant — an AI scholar in the margin that annotates passages, answers questions, and grades your reflections — while earning Wisdom, keeping a daily Flame, and collecting Seals as you go.",
       },
       {
         id: "how-tome-is-different",
@@ -57,8 +57,8 @@ export function getFaqCategories(stats: CatalogStats): FaqCategory[] {
       },
       {
         id: "who-is-virgil",
-        q: "Who is Virgil, and is he accurate?",
-        a: "Virgil is Tome's AI reading companion, named for Dante's guide. His annotations are generated against the specific passage in front of you and kept close to the text; he's a scholarly aid, not an infallible authority, so treat him as a brilliant tutor rather than a citation.",
+        q: "What is the Tome Assistant, and is it accurate?",
+        a: "The Tome Assistant is Tome's AI reading companion. Its annotations are generated against the specific passage in front of you and kept close to the text; it is a scholarly aid, not an infallible authority, so treat it as a brilliant tutor rather than a citation.",
         confirm: true,
       },
       {
@@ -76,7 +76,7 @@ export function getFaqCategories(stats: CatalogStats): FaqCategory[] {
       {
         id: "trials-wisdom-flames-seals",
         q: "What are Trials, Wisdom, Flames, and Seals?",
-        a: "Trials are short assessments at the end of each chapter — comprehension, vocabulary, critical thinking, and a Virgil-graded reflection. Completing them earns Wisdom (which raises your level), reading daily keeps your Flame (your streak) alive, and milestones earn Seals (badges).",
+        a: "Trials are short assessments at the end of each chapter — comprehension, vocabulary, critical thinking, and an assistant-graded reflection. Completing them earns Wisdom (which raises your level), reading daily keeps your Flame (your streak) alive, and milestones earn Seals (badges).",
       },
       {
         id: "need-credit-card",
@@ -101,6 +101,36 @@ export function getFaqCategories(stats: CatalogStats): FaqCategory[] {
         id: "reading-privacy",
         q: "Is my reading private?",
         a: "Yes. Public profiles and Circles are opt-in; by default everything you read, highlight, and note stays private to you.",
+      },
+      {
+        id: "trial-difficulties",
+        q: "What are the Trial difficulty tiers?",
+        a: "Every chapter Trial comes in three tiers — Apprentice for comprehension, Scholar for close reading, and Master for genuine critical analysis. Start where you're comfortable and climb as the text opens up.",
+      },
+      {
+        id: "highlights-and-notes",
+        q: "Can I highlight and take notes while I read?",
+        a: "Yes. Highlight any passage, attach a note, and everything is saved to your account — your marginalia follows you across devices and stays private unless you choose to share it.",
+      },
+      {
+        id: "daily-reading-goal",
+        q: "How do daily reading goals work?",
+        a: "When you join, you pick a pace — from casual to ambitious — and Tome tracks it. Reading on any day keeps your Flame alive; your goal is a rhythm to keep, not a deadline to miss.",
+      },
+      {
+        id: "multiple-books-at-once",
+        q: "Can I read more than one book at a time?",
+        a: "Absolutely. Progress, highlights, and Trials are tracked per book, so you can keep an epic, a novel, and a play going at once and pick up each exactly where you left off.",
+      },
+      {
+        id: "wisdom-ranks",
+        q: "What are the reader ranks?",
+        a: "Wisdom accumulates as you read and pass Trials, carrying you up the ladder from Novice through Reader, Scholar, Sage, and Luminary to Laureate. Rank is a record of the work you've done — it never gates what you can read.",
+      },
+      {
+        id: "hard-books-help",
+        q: "What if a book is too hard for me?",
+        a: "That's the point of the margin. The Tome Assistant explains difficult passages in context, annotations unpack archaic language and allusions, and Apprentice-tier Trials let you build confidence before attempting deeper analysis.",
       },
     ],
   },
@@ -153,6 +183,29 @@ export function getFaqCategories(stats: CatalogStats): FaqCategory[] {
         a: "Individual teachers use Tome free in their classroom — see the Educators section below.",
         confirm: true,
       },
+      {
+        id: "whats-in-free",
+        q: "What exactly is included in the Free plan?",
+        a: "A curated foundational shelf of complete classics, chapter Trials, Wisdom and Flames, highlights and notes, and the free Classroom tools for teachers. Upgrading unlocks the full library and the deeper assistant features.",
+      },
+      {
+        id: "switch-plans",
+        q: "Can I switch plans later?",
+        a: "Yes — you can upgrade, downgrade, or move between monthly and annual billing at any time from your account settings, and the change is prorated automatically.",
+        confirm: true,
+      },
+      {
+        id: "esa-funds",
+        q: "Can I pay with ESA or education funds?",
+        a: "Yes — Tome is distributed through education savings account (ESA) marketplaces in participating states, so eligible families can use education funds toward a subscription. Contact us if you don't see Tome in your state's marketplace.",
+        confirm: true,
+      },
+      {
+        id: "school-plan-pricing",
+        q: "How is the School plan priced?",
+        a: "School pricing is per teacher seat, billed annually — each seat gives a teacher the full paid toolset for all of their classes and students. Book a demo for a quote for your team.",
+        confirm: true,
+      },
     ],
   },
   {
@@ -172,12 +225,12 @@ export function getFaqCategories(stats: CatalogStats): FaqCategory[] {
       {
         id: "what-can-i-assign",
         q: "What can I assign?",
-        a: "Five assignment types: chapter readings, Trials, Virgil-graded reflections, annotation prompts, and quote collections — each with due dates and the option to scope to a whole class or a single student.",
+        a: "Five assignment types: chapter readings, Trials, assistant-graded reflections, annotation prompts, and quote collections — each with due dates and the option to scope to a whole class or a single student.",
       },
       {
         id: "how-grading-works",
         q: "How does grading work?",
-        a: "Trials auto-grade instantly. On paid plans, Virgil drafts grades and feedback for written reflections, which you review and adjust before they're final.",
+        a: "Trials auto-grade instantly. On paid plans, the Tome Assistant drafts grades and feedback for written reflections, which you review and adjust before they're final.",
       },
       {
         id: "lms-integration",
@@ -195,6 +248,31 @@ export function getFaqCategories(stats: CatalogStats): FaqCategory[] {
         q: "How do I bring Tome to my whole department or school?",
         a: "The School and District plans add unlimited classes, every assignment type, co-teacher sharing, dashboards, and integrations. Book a demo and we'll set up a pilot for your team.",
       },
+      {
+        id: "students-without-email",
+        q: "Can young students use Tome without an email address?",
+        a: "Yes. Teachers can issue short access codes so students sign in with a code alone — no email address, no personal account setup — which keeps the youngest readers COPPA-safe by design.",
+      },
+      {
+        id: "homeschool-use",
+        q: "Does Tome work for homeschooling?",
+        a: "Very well — the Family plan gives a homeschooling parent the full teacher toolset: assignments, Trials, assistant-drafted feedback, and a gradebook for every reader in the household.",
+      },
+      {
+        id: "build-own-quizzes",
+        q: "Can I write my own quizzes?",
+        a: "Yes. Build quizzes question-by-question in the quiz builder, or have the Tome Assistant draft a grounded quiz from the assigned chapters that you edit and approve before students ever see it.",
+      },
+      {
+        id: "see-student-progress",
+        q: "Can I see what my students are reading in real time?",
+        a: "Yes — the classroom dashboard shows live reading progress, submitted work, and Trial results as they happen, and the gradebook rolls it all up per student.",
+      },
+      {
+        id: "students-and-ai",
+        q: "Do students talk to the AI directly?",
+        a: "AI features that touch student work run through you. The assistant drafts, explains, and grades under teacher control — Tome does not offer children an unsupervised chatbot.",
+      },
     ],
   },
   {
@@ -211,12 +289,28 @@ export function getFaqCategories(stats: CatalogStats): FaqCategory[] {
         q: "How do you decide which books are chosen for readers?",
         a: `Every title belongs to the established canon of world literature, chosen for its lasting influence across traditions — and every book is in the public domain, sourced from high-quality digital editions. The library spans ${catalogSummary(
           stats,
-        )}, and Virgil can suggest where to start based on what you already love.`,
+        )}, and the Tome Assistant can suggest where to start based on what you already love.`,
       },
       {
         id: "religious-affiliation",
         q: "Is Tome tied to a particular religion or school of thought?",
         a: "Tome is for anyone serious about the canon of world literature — used by independent readers, homeschoolers, and both faith-based and secular schools alike.",
+        confirm: true,
+      },
+      {
+        id: "works-in-translation",
+        q: "Are non-English works available in translation?",
+        a: "Yes — Homer, Dante, Cervantes, and the rest of the world canon appear in respected public-domain translations, while English-language works are presented in their original text, Middle English included.",
+      },
+      {
+        id: "new-books-added",
+        q: "Do you add new books?",
+        a: "Continuously. The library grows as we source, clean, and typeset new public-domain editions — and reader requests genuinely shape what we ingest next.",
+      },
+      {
+        id: "ai-and-my-data",
+        q: "Is my reading data used to train AI models?",
+        a: "No. Your highlights, notes, and conversations with the assistant are used to serve you, not to train models — and student data is never sold or used for advertising.",
         confirm: true,
       },
     ],
@@ -229,6 +323,16 @@ export function getFaqCategories(stats: CatalogStats): FaqCategory[] {
         id: "how-to-get-support",
         q: "How do I get support?",
         a: "Reach a real person from the Support link in the app, or email support@usetome.app — real help, not just docs.",
+      },
+      {
+        id: "accessibility",
+        q: "Is Tome accessible?",
+        a: "Accessibility is part of the reading experience: keyboard navigation, screen-reader labels, reduced-motion support, and adjustable reader typography. See our Accessibility page for the full statement.",
+      },
+      {
+        id: "delete-account",
+        q: "Can I delete my account and data?",
+        a: "Yes — you can delete your account from settings, which removes your personal data and reading history. Schools can additionally request deletion for their students under our DPA.",
       },
     ],
   },

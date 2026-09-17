@@ -63,7 +63,7 @@ export function CustomTrialsShowcase() {
   if (isReduced) {
     return (
       <TeacherShowcaseShell
-        heading="Write your own Trials &mdash; or let Virgil"
+        heading="Write your own Trials &mdash; or let Tome Assistant"
         subcopy="Author questions by hand or generate them from any passage with one click \u2014 across all six Trial types."
         layout="mockup-left"
         bgClass="bg-background"
@@ -82,7 +82,7 @@ export function CustomTrialsShowcase() {
 
   return (
     <TeacherShowcaseShell
-      heading="Write your own Trials &mdash; or let Virgil"
+      heading="Write your own Trials &mdash; or let Tome Assistant"
       subcopy="Author questions by hand or generate them from any passage with one click."
       layout="mockup-left"
       bgClass="bg-background"

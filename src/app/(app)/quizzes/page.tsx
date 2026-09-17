@@ -17,9 +17,10 @@ import {
   type QuizBookEntry,
   type QuizTier,
 } from "@/lib/quizzes/practice"
+import { PLATFORM_QUIZZES_ENABLED } from "@/lib/quizzes/flags"
 
 // RUBRIC palette — practice tiers map to the canonical accents. Master carries
-// tyrian; Scholar lapis; Apprentice verdigris. (Iridescence stays Virgil-only.)
+// tyrian; Scholar lapis; Apprentice verdigris. (Iridescence stays Tome Assistant-only.)
 const TIER_COLOR: Record<QuizTier, string> = {
   Apprentice: "#2E7D6F",
   Scholar: "#2A4B8D",
@@ -48,7 +49,30 @@ export default function QuizzesPage() {
   // Teachers get their own saved-quiz library here (the quizzes they built);
   // readers/students keep the free three-tier practice surface.
   if (role === "teacher") return <TeacherQuizzesView />
+  if (!PLATFORM_QUIZZES_ENABLED) return <PracticePausedNotice />
   return <PracticeQuizzesView />
+}
+
+/** Shown while the pre-generated practice surface is paused. */
+function PracticePausedNotice() {
+  return (
+    <div className="mx-auto max-w-2xl px-6 py-24 text-center">
+      <Brain className="mx-auto size-10 text-muted-foreground/50" />
+      <h1 className="mt-4 font-[var(--font-display)] text-2xl font-bold text-foreground">
+        Practice quizzes are paused
+      </h1>
+      <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-muted-foreground">
+        The free practice Trials are temporarily unavailable. Quizzes your
+        teacher assigns still work — check your Assignments for anything due.
+      </p>
+      <Link
+        href="/assignments"
+        className="mt-6 inline-flex items-center gap-1.5 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+      >
+        Go to Assignments <ArrowRight className="size-4" />
+      </Link>
+    </div>
+  )
 }
 
 function PracticeQuizzesView() {

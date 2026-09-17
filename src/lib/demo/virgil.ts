@@ -1,5 +1,5 @@
 /**
- * Scripted Virgil — the demo brain for the homepage Virgil drawer.
+ * Scripted Tome Assistant — the demo brain for the homepage Tome Assistant drawer.
  *
  * VIRGIL_DEMO_MODE === "scripted": this NEVER calls the network / real
  * `askVirgil`. It returns canned, canon-grounded answers and streams them
@@ -12,7 +12,7 @@
 export interface ScriptedExchange {
   /** The suggestion pill / prompt text the visitor can tap. */
   prompt: string
-  /** Virgil's canned reply. */
+  /** Tome Assistant's canned reply. */
   answer: string
 }
 
@@ -25,7 +25,7 @@ export const DEMO_PASSAGE = {
     "son of Peleus, that brought countless ills",
     "upon the Achaeans.",
   ],
-  /** The indigo-marked phrase Virgil annotates. */
+  /** The indigo-marked phrase Tome Assistant annotates. */
   marked: "son of Peleus",
   annotationLabel: "Patronymic",
   annotation:

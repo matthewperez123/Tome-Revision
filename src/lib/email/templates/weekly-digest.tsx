@@ -3,7 +3,7 @@
  *
  * Fraunces for display headings, Literata for body (serif fallbacks for email
  * clients that lack the webfonts), the RUBRIC accent palette. Iridescence is
- * reserved exclusively for Virgil's note — the rest of the email stays in flat
+ * reserved exclusively for Tome Assistant's note — the rest of the email stays in flat
  * ink + accent colour.
  */
 
@@ -59,7 +59,7 @@ export interface WeeklyDigestProps {
   flameCount: number
   /** 1–2 books to pick back up. */
   continueBooks: DigestBook[]
-  /** Optional warm one-liner in Virgil's voice. Iridescent treatment. */
+  /** Optional warm one-liner in Tome Assistant's voice. Iridescent treatment. */
   virgilNote?: string
   /** Absolute URL back into the Stoa. */
   stoaUrl: string
@@ -212,7 +212,7 @@ export function WeeklyDigestEmail({
               </Row>
             </Section>
 
-            {/* Virgil note — the ONLY iridescent element */}
+            {/* Tome Assistant note — the ONLY iridescent element */}
             {virgilNote ? (
               <Section
                 style={{
@@ -233,7 +233,7 @@ export function WeeklyDigestEmail({
                     color: C.lapis,
                   }}
                 >
-                  A word from Virgil
+                  A word from Tome Assistant
                 </Text>
                 <Text
                   style={{

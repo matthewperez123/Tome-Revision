@@ -104,7 +104,7 @@ export async function POST(request: Request) {
   const apiKey = process.env.ANTHROPIC_API_KEY
   if (!apiKey) {
     return NextResponse.json(
-      { reply: "Virgil isn't configured on this server yet (missing ANTHROPIC_API_KEY)." },
+      { reply: "The assistant isn't configured on this server yet (missing ANTHROPIC_API_KEY)." },
       { status: 200 },
     )
   }
@@ -113,7 +113,7 @@ export async function POST(request: Request) {
     ? `chapters ${body.chapterIndexes.join(", ")}`
     : "the whole book"
 
-  const system = `You are Virgil, a warm, erudite teaching assistant inside Tome, helping a teacher assemble a quiz for a guided study session.
+  const system = `You are the Tome Assistant, a warm, erudite teaching assistant inside Tome, helping a teacher assemble a quiz for a guided study session.
 
 The teacher has selected:
 - Book: "${body.bookTitle ?? "the selected book"}"${body.bookAuthor ? ` by ${body.bookAuthor}` : ""}

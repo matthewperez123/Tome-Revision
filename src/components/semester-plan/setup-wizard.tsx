@@ -121,12 +121,12 @@ export function SemesterPlanWizard({ classId }: { classId: string }) {
         Semester plans
       </Link>
 
-      {/* Iridescent Virgil header */}
+      {/* Iridescent Tome Assistant header */}
       <div className="mt-3 overflow-hidden rounded-2xl border" style={{ borderColor: "rgba(99,102,241,0.35)" }}>
         <div className="flex items-center gap-2 px-4 py-3 text-white" style={{ backgroundImage: IRIDESCENT }}>
           <Sparkles className="h-4 w-4" />
-          <span className="text-sm font-semibold tracking-wide">Plan a semester with Virgil</span>
-          <span className="ml-1 text-xs font-normal opacity-80">— set the frame, Virgil drafts the term</span>
+          <span className="text-sm font-semibold tracking-wide">Plan a semester with Tome Assistant</span>
+          <span className="ml-1 text-xs font-normal opacity-80">— set the frame, Tome Assistant drafts the term</span>
         </div>
 
         <div className="space-y-5 bg-card p-5">
@@ -349,7 +349,7 @@ export function SemesterPlanWizard({ classId }: { classId: string }) {
             style={{ backgroundImage: IRIDESCENT }}
           >
             {submitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Sparkles className="h-4 w-4" />}
-            {submitting ? "Virgil is composing your term…" : "Draft the semester"}
+            {submitting ? "Tome Assistant is composing your term…" : "Draft the semester"}
           </Button>
         </div>
       </div>

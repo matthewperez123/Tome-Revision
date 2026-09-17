@@ -48,7 +48,7 @@ export function TrialEndingEmail({
       <EmailParagraph>
         Your {planLabel} free trial ends on <strong>{trialEndDate}</strong>.
         After that{amountFormatted ? `, we'll charge ${amountFormatted}` : ", your subscription will begin"}{" "}
-        and you&apos;ll keep full access to the library, Virgil, and everything
+        and you&apos;ll keep full access to the library, Tome Assistant, and everything
         you&apos;ve started.
       </EmailParagraph>
 

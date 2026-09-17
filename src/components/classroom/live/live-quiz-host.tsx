@@ -12,7 +12,7 @@ import {
   endLiveQuiz,
 } from "@/lib/actions/live-quiz"
 
-// RUBRIC answer-zone palette (never iridescent — that's reserved for Virgil).
+// RUBRIC answer-zone palette (never iridescent — that's reserved for Tome Assistant).
 const ZONE = [
   { bg: "#2A4B8D", label: "lapis" }, // lapis
   { bg: "#C8553D", label: "vermilion" }, // vermilion

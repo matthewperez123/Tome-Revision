@@ -37,7 +37,7 @@ export function StepFirstBook({
         Choose your first book
       </h2>
       <p className="mt-2 text-sm text-muted-foreground">
-        Virgil will be at your side from the very first page.
+        Tome Assistant will be at your side from the very first page.
       </p>
 
       <div className="mt-8 grid w-full grid-cols-3 gap-3 sm:grid-cols-4">

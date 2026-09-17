@@ -533,7 +533,7 @@ export default async function AuthorProfilePage({
           </BlurFade>
         )}
 
-        {/* Virgil's Note */}
+        {/* Assistant note */}
         {author.virgilNote && (
           <BlurFade delay={0.3} inView>
             <section>
@@ -557,7 +557,7 @@ export default async function AuthorProfilePage({
                     className="text-xs font-bold uppercase tracking-widest mb-1.5"
                     style={{ color: "#6366f1" }}
                   >
-                    Virgil&rsquo;s Note
+                    Assistant&rsquo;s Note
                   </p>
                   <p className="text-sm leading-relaxed text-foreground/85 font-serif italic">
                     {author.virgilNote}

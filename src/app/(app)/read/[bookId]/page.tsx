@@ -7,7 +7,7 @@
  * 3. Typography scale:      5/5
  * 4. Motion easing tokens:  5/5
  * 5. Component selection:   5/5
- * 6. Virgil presence:       N/A
+ * 6. Tome Assistant presence:       N/A
  * 7. Density restraint:     5/5
  * 8. Accessibility:         5/5
  * ─────────────────────────────────
@@ -46,6 +46,7 @@ import { PaginatedReader } from "@/components/tome/paginated-reader"
 import { getCuratedQuestionsForChapter } from "@/lib/chapter-questions"
 import { dbRowsToChapterQuestions, type QuestionRow } from "@/lib/db-chapter-questions"
 import { isFrontOrBackMatter } from "@/lib/book-progress"
+import { PLATFORM_QUIZZES_ENABLED } from "@/lib/quizzes/flags"
 import type { QuizDifficulty } from "@/lib/book-progress"
 import { findAttemptForChapter, isAttemptResumable } from "@/lib/trial-attempts"
 import { getUnitNumber, getUnitLabel } from "@/lib/structural-units"
@@ -57,6 +58,7 @@ import { useTheme } from "next-themes"
 import { notifyChapterCompleted, notifyBookCompleted } from "@/lib/notifications"
 import { assignCharacterColors, getCharacterColor, type BookColorAssignments } from "@/lib/character-colors"
 import { CanticleHero } from "@/components/reader/canticle-hero"
+import { ClassQuizDock } from "@/components/reader/class-quiz-dock"
 import { ReaderHighlights } from "@/components/reader/reader-highlights"
 import { ReaderMarksPanel } from "@/components/reader/reader-marks-panel"
 import { ReaderPresenceRoom, ReaderPresenceAvatars } from "@/components/reader/reader-presence"
@@ -918,7 +920,9 @@ export default function ReaderPage() {
     const totalCount = chapters.length || 1
     // Skip quiz for front/back matter — auto-complete and advance
     const currentTitle = chapters[currentChapter]?.title ?? ""
-    if (isFrontOrBackMatter(currentTitle)) {
+    // Platform Trials are paused — treat every chapter like front/back matter:
+    // mark it complete and advance without offering the pre-generated quiz.
+    if (!PLATFORM_QUIZZES_ENABLED || isFrontOrBackMatter(currentTitle)) {
       completeChapter(bookId, currentChapter, 0)
       if (currentChapter < totalCount - 1) setTimeout(() => handleChapterSelect(currentChapter + 1), 100)
       return
@@ -1181,6 +1185,11 @@ export default function ReaderPage() {
           isLastChapter={currentChapter === (chapters.length || 1) - 1}
         />
       )}
+
+      {/* Class quizzes assigned for this book — students open them here,
+          inside the reading, mirroring the Trial affordance. */}
+      <ClassQuizDock bookId={bookId} />
+
 
       <div className="relative flex h-[calc(100vh-3rem)] overflow-hidden bg-background text-foreground">
         {/* Chapter Sidebar */}

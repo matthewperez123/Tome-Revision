@@ -2,8 +2,8 @@
 
 /**
  * /virgil deep page — four scripted, self-contained demonstrations of what
- * Virgil does in the reader. Everything is canned (lib/demo/virgil.ts): no
- * network, no AI request, no backend write. Virgil's colour is the indigo
+ * Tome Assistant does in the reader. Everything is canned (lib/demo/virgil.ts): no
+ * network, no AI request, no backend write. Tome Assistant's colour is the indigo
  * `primary` token throughout; the reader's own marks would be amber.
  *
  *   1 · Annotations in Text     — a marked phrase + scholarly note
@@ -82,7 +82,7 @@ function AnnotationsInText() {
       index={1}
       eyebrow="Annotations"
       title="Scholarship in the margin, not the footnotes."
-      subline="Virgil marks the phrases that matter and explains them in plain language — right where you're reading, never a tab away."
+      subline="Tome Assistant marks the phrases that matter and explains them in plain language — right where you're reading, never a tab away."
       bg="background"
     >
       <div className="mx-auto max-w-xl overflow-hidden rounded-xl border border-border bg-background">
@@ -106,7 +106,7 @@ function AnnotationsInText() {
             <div className="flex size-5 items-center justify-center rounded-full border border-primary/40 bg-primary/15 font-serif text-[10px] font-bold text-primary">
               V
             </div>
-            <span className="text-xs font-semibold text-primary">Virgil</span>
+            <span className="text-xs font-semibold text-primary">Tome Assistant</span>
             <span className="text-[10px] text-muted-foreground">
               &middot; {DEMO_PASSAGE.annotationLabel}
             </span>
@@ -143,7 +143,7 @@ function HintsDuringQuizzes() {
       index={2}
       eyebrow="Quiz Hints"
       title="Stuck on a Trial? Ask for a nudge, not the answer."
-      subline="Virgil offers a scaffolded hint that points you back to the text — so you still earn the insight yourself."
+      subline="Tome Assistant offers a scaffolded hint that points you back to the text — so you still earn the insight yourself."
       bg="muted"
     >
       <div className="mx-auto max-w-md rounded-xl border border-border bg-card p-5">
@@ -194,13 +194,13 @@ function HintsDuringQuizzes() {
             className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-3 py-1.5 text-xs font-semibold text-primary transition-colors hover:bg-primary/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
             <Lightbulb className="size-3.5" />
-            Ask Virgil for a hint
+            Ask Tome Assistant for a hint
           </button>
         ) : (
           <div className="mt-4 flex gap-2.5 rounded-lg border border-primary/30 bg-primary/5 p-3">
             <Lightbulb className="mt-0.5 size-4 shrink-0 text-primary" />
             <p className="text-xs leading-relaxed text-muted-foreground">
-              <span className="font-semibold text-primary">Virgil&apos;s hint — </span>
+              <span className="font-semibold text-primary">Tome Assistant&apos;s hint — </span>
               {HINT_QUIZ.hint}
             </p>
           </div>
@@ -257,7 +257,7 @@ function AssistanceInReading() {
     <FeatureSection
       index={3}
       eyebrow="Reading Help"
-      title="Select a line. Ask Virgil to take it from there."
+      title="Select a line. Ask Tome Assistant to take it from there."
       subline="Highlight anything that stops you and choose what you need — an explanation, a name, or why it matters."
       bg="background"
     >
@@ -319,7 +319,7 @@ function AssistanceInReading() {
                   aria-live="polite"
                   className="text-sm leading-relaxed text-muted-foreground"
                 >
-                  {answer || "Virgil is considering…"}
+                  {answer || "Tome Assistant is considering…"}
                 </p>
               </div>
             )}
@@ -341,8 +341,8 @@ function UnderstandTaste() {
     <FeatureSection
       index={4}
       eyebrow="Your Taste"
-      title="Virgil learns what you love — privately."
-      subline="From the works you finish, Virgil suggests where to go next. It's opt-in and yours alone; turn it off any time."
+      title="Tome Assistant learns what you love — privately."
+      subline="From the works you finish, Tome Assistant suggests where to go next. It's opt-in and yours alone; turn it off any time."
       bg="muted"
     >
       <div className="rounded-xl border border-border bg-card p-6">

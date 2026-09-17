@@ -14,7 +14,7 @@ interface ChatMessage {
 
 interface Props {
   planId: string
-  /** Called after Virgil applies a revision, so the board can refresh. */
+  /** Called after Tome Assistant applies a revision, so the board can refresh. */
   onApplied: () => void
 }
 
@@ -22,7 +22,7 @@ const GREETING: ChatMessage = {
   id: "greeting",
   role: "assistant",
   content:
-    "I'm Virgil. Tell me how you'd like to reshape the term \u2014 in plain language \u2014 and I'll revise the plan (e.g. \u201clighten weeks 5\u20136\u201d, \u201cswap the week 3 novel for something shorter\u201d, or \u201cadd a discussion to every reading week\u201d).",
+    "I'm Tome Assistant. Tell me how you'd like to reshape the term \u2014 in plain language \u2014 and I'll revise the plan (e.g. \u201clighten weeks 5\u20136\u201d, \u201cswap the week 3 novel for something shorter\u201d, or \u201cadd a discussion to every reading week\u201d).",
 }
 
 export function SemesterPlanAssistant({ planId, onApplied }: Props) {
@@ -83,7 +83,7 @@ export function SemesterPlanAssistant({ planId, onApplied }: Props) {
         >
           <Sparkles className="size-4" style={{ color: "#7C5CFF" }} />
           <span className="text-sm font-semibold" style={{ color: RUBRIC.ink }}>
-            Plan the term with Virgil
+            Plan the term with Tome Assistant
           </span>
           <span className="ml-1 text-xs font-normal text-muted-foreground">— ask in plain language</span>
           {open ? (
@@ -127,7 +127,7 @@ export function SemesterPlanAssistant({ planId, onApplied }: Props) {
               {sending && (
                 <div className="flex items-center gap-2 text-xs text-muted-foreground">
                   <Loader2 className="size-3.5 animate-spin" />
-                  Virgil is reworking the term…
+                  Tome Assistant is reworking the term…
                 </div>
               )}
             </div>
@@ -144,7 +144,7 @@ export function SemesterPlanAssistant({ planId, onApplied }: Props) {
                   }
                 }}
                 rows={1}
-                placeholder="Ask Virgil to revise the term…"
+                placeholder="Ask Tome Assistant to revise the term…"
                 disabled={sending}
                 className="max-h-28 min-h-[40px] flex-1 resize-none rounded-xl border border-border bg-background px-3 py-2 text-sm outline-none focus:border-foreground/30"
               />

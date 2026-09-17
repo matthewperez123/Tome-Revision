@@ -32,11 +32,32 @@ interface AuthState {
   isAuthenticated: boolean
   /** True when using localStorage fallback instead of real auth */
   isDemoMode: boolean
+  /** Non-null when a signed-in account is PREVIEWING another role's UI. */
+  rolePreview: Profile["role"] | null
 }
 
 type AuthValue = AuthState & {
   signOut: () => Promise<void>
   refreshProfile: () => Promise<void>
+  /**
+   * Demo/testing lens: view the app as another role without changing the
+   * account. UI-only — the session, DB profile, and every server-side
+   * authorization check keep the real identity. Pass null to reset.
+   */
+  setRolePreview: (role: Profile["role"] | null) => void
+}
+
+const ROLE_PREVIEW_KEY = "tome-role-preview"
+
+function getRolePreview(): Profile["role"] | null {
+  if (typeof window === "undefined") return null
+  try {
+    const v = localStorage.getItem(ROLE_PREVIEW_KEY)
+    // Reader preview is paused for now — only teacher/student are switchable.
+    return v === "teacher" || v === "student" ? v : null
+  } catch {
+    return null
+  }
 }
 
 const DEMO_USER_ID = "00000000-0000-0000-0000-000000000000"
@@ -98,13 +119,15 @@ interface Seed {
 function useAuthMachine(seed: Seed | null, active: boolean): AuthValue {
   const [state, setState] = useState<AuthState>(() => {
     if (seed?.profile) {
+      const preview = getRolePreview()
       return {
         user: { id: seed.userId } as User,
         profile: seed.profile,
-        role: seed.profile.role,
+        role: preview ?? seed.profile.role,
         isLoading: false,
         isAuthenticated: true,
         isDemoMode: false,
+        rolePreview: preview,
       }
     }
     return {
@@ -114,6 +137,7 @@ function useAuthMachine(seed: Seed | null, active: boolean): AuthValue {
       isLoading: active,
       isAuthenticated: false,
       isDemoMode: false,
+      rolePreview: null,
     }
   })
 
@@ -135,7 +159,7 @@ function useAuthMachine(seed: Seed | null, active: boolean): AuthValue {
       setState((prev) => ({
         ...prev,
         profile,
-        role: profile.role,
+        role: prev.rolePreview ?? profile.role,
       }))
     }
   }, [state.user, fetchProfile])
@@ -149,13 +173,15 @@ function useAuthMachine(seed: Seed | null, active: boolean): AuthValue {
       const { data: { session } } = await supabase.auth.getSession()
       if (session?.user) {
         const profile = await fetchProfile(session.user.id)
+        const preview = getRolePreview()
         setState({
           user: session.user,
           profile,
-          role: profile?.role ?? null,
+          role: preview ?? profile?.role ?? null,
           isLoading: false,
           isAuthenticated: true,
           isDemoMode: false,
+          rolePreview: preview,
         })
         return
       }
@@ -171,6 +197,7 @@ function useAuthMachine(seed: Seed | null, active: boolean): AuthValue {
           isLoading: false,
           isAuthenticated: false,
           isDemoMode: true,
+          rolePreview: null,
         })
         return
       }
@@ -182,6 +209,7 @@ function useAuthMachine(seed: Seed | null, active: boolean): AuthValue {
         isLoading: false,
         isAuthenticated: false,
         isDemoMode: false,
+        rolePreview: null,
       })
     }
 
@@ -194,13 +222,15 @@ function useAuthMachine(seed: Seed | null, active: boolean): AuthValue {
       async (event, session) => {
         if (session?.user) {
           const profile = await fetchProfile(session.user.id)
+          const preview = getRolePreview()
           setState({
             user: session.user,
             profile,
-            role: profile?.role ?? null,
+            role: preview ?? profile?.role ?? null,
             isLoading: false,
             isAuthenticated: true,
             isDemoMode: false,
+            rolePreview: preview,
           })
         } else if (event === "SIGNED_OUT") {
           // ONLY a genuine sign-out clears auth. A signed-out visitor may then
@@ -215,6 +245,7 @@ function useAuthMachine(seed: Seed | null, active: boolean): AuthValue {
             isLoading: false,
             isAuthenticated: false,
             isDemoMode: !!demoProfile,
+            rolePreview: null,
           })
         }
         // Any other session-less event (e.g. INITIAL_SESSION before the session
@@ -232,6 +263,7 @@ function useAuthMachine(seed: Seed | null, active: boolean): AuthValue {
     // immediately re-hydrate a demo profile (same role) and mask the sign-out.
     try {
       localStorage.removeItem("tome-onboarding")
+      localStorage.removeItem(ROLE_PREVIEW_KEY)
     } catch {
       // ignore (storage unavailable)
     }
@@ -242,7 +274,24 @@ function useAuthMachine(seed: Seed | null, active: boolean): AuthValue {
     }
   }, [])
 
-  return { ...state, signOut, refreshProfile }
+  const setRolePreview = useCallback((role: Profile["role"] | null) => {
+    try {
+      // Reader preview is paused — only teacher/student may be previewed.
+      if (role === "teacher" || role === "student") {
+        localStorage.setItem(ROLE_PREVIEW_KEY, role)
+      } else {
+        localStorage.removeItem(ROLE_PREVIEW_KEY)
+      }
+    } catch {
+      // ignore (storage unavailable)
+    }
+    // Hard navigation so every surface re-reads the preview consistently.
+    if (typeof window !== "undefined") {
+      window.location.href = "/dashboard"
+    }
+  }, [])
+
+  return { ...state, signOut, refreshProfile, setRolePreview }
 }
 
 const AuthContext = createContext<AuthValue | null>(null)

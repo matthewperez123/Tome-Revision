@@ -32,7 +32,7 @@ export function PersonalAnnotationsShowcase() {
   return (
     <TeacherShowcaseShell
       heading="Your marginalia, kept."
-      subcopy="Highlight the line that stops you. Leave a note for your future self. Virgil is indigo; you are amber. Every mark you make is indexed and searchable."
+      subcopy="Highlight the line that stops you. Leave a note for your future self. Tome Assistant is indigo; you are amber. Every mark you make is indexed and searchable."
       layout="mockup-right"
       bgClass="bg-muted"
     >
@@ -102,7 +102,7 @@ export function PersonalAnnotationsShowcase() {
 
         <div className="absolute bottom-3 right-4 flex items-center gap-1.5 text-[10px] text-muted-foreground">
           <Highlighter className="size-3" style={{ color: AMBER_BORDER }} />
-          <span>Amber = your marks &middot; Indigo = Virgil</span>
+          <span>Amber = your marks &middot; Indigo = Tome Assistant</span>
         </div>
       </div>
     </TeacherShowcaseShell>

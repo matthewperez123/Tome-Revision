@@ -188,7 +188,7 @@ export function StationEditorModal({ station: initial, onSave, onClose }: Props)
                   <div className="flex items-center gap-2">
                     <Sparkles className="size-4" style={{ color: "var(--tome-indigo,#6366F1)" }} />
                     <div>
-                      <p className="text-sm font-semibold">Virgil quiz attached</p>
+                      <p className="text-sm font-semibold">Tome Assistant quiz attached</p>
                       <p className="text-xs opacity-60">{station.teacher_quiz_summary ?? "Quiz ready"}</p>
                     </div>
                   </div>
@@ -207,7 +207,7 @@ export function StationEditorModal({ station: initial, onSave, onClose }: Props)
                 >
                   <Sparkles className="mt-0.5 size-3.5 shrink-0" style={{ color: "var(--tome-indigo,#6366F1)" }} />
                   <span>
-                    Ask <strong>Virgil</strong> at the top of the wizard to build a grounded quiz, then it lands here as a station.
+                    Ask <strong>Tome Assistant</strong> at the top of the wizard to build a grounded quiz, then it lands here as a station.
                   </span>
                 </div>
               )}

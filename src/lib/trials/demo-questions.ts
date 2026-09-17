@@ -1,8 +1,10 @@
 /**
- * Demo seed — one validated question per Trial type, EACH drawn from a
- * DIFFERENT book so the marketing demo showcases both the full type set and the
- * breadth of the canon: The Iliad, Pride and Prejudice, Frankenstein, The
- * Odyssey, Hamlet, and Julius Caesar. Each raw object is run through
+ * Demo seed — TWO validated questions per Trial type (grouped by type in
+ * registry order), each drawn from a DIFFERENT book so the marketing demo
+ * showcases both the full type set and the breadth of the canon: The Iliad,
+ * the Divine Comedy, Pride and Prejudice, Moby-Dick, Frankenstein, Jane Eyre,
+ * The Odyssey, Romeo and Juliet, Hamlet, Macbeth, Julius Caesar, and A Tale
+ * of Two Cities. Each raw object is run through
  * `parseTrialQuestion` at module load, so the per-type zod schemas guard the
  * shape exactly as a DB / content-JSON read would. The dev/trials harness and
  * the /readers Trial demo mount these through the real <QuestionCard> +
@@ -41,6 +43,29 @@ const RAW = [
     },
   },
 
+  // fill_the_line — Longfellow's opening tercet of the Divine Comedy.
+  {
+    id: "demo-fill_the_line-2",
+    type: "fill_the_line",
+    prompt: "Restore the opening of Dante's Divine Comedy.",
+    difficulty: "scholar",
+    points: 10,
+    explanation:
+      "Longfellow's Inferno opens: \"Midway upon the journey of our life / I found myself within a forest dark, / For the straightforward pathway had been lost.\"",
+    content: {
+      lines: [
+        "Midway upon the journey of our life",
+        "I found myself within a forest dark,",
+      ],
+      blanks: [
+        { lineIndex: 0, answer: "life" },
+        { lineIndex: 1, answer: "dark" },
+      ],
+      wordBank: ["life", "dark", "light", "strife"],
+      mode: "bank",
+    },
+  },
+
   // find_the_evidence — tap the line(s) that support the claim.
   // Pride and Prejudice — Mrs. Bennet's matchmaking motive.
   {
@@ -60,6 +85,27 @@ const RAW = [
         "Mr. Bennet only teased her for her scheming.",
       ],
       correctRange: [2, 2],
+    },
+  },
+
+  // find_the_evidence — Moby-Dick: why Ishmael goes to sea.
+  {
+    id: "demo-find_the_evidence-2",
+    type: "find_the_evidence",
+    prompt: "Which line shows why Ishmael goes to sea?",
+    difficulty: "scholar",
+    points: 10,
+    explanation:
+      "In the famous opening of Moby-Dick, Ishmael explains that whenever a damp, drizzly November settles in his soul, he takes to the ship as his substitute for despair.",
+    content: {
+      claim: "Ishmael sails not for wages but to drive off his own gloom.",
+      segments: [
+        "Call me Ishmael. Some years ago, having little money, I thought I would sail about a little.",
+        "Whenever I find myself growing grim about the mouth, I account it high time to get to sea.",
+        "The Pequod was fitting out for a three years' voyage under Captain Ahab.",
+        "Queequeg and I signed the ship's articles together.",
+      ],
+      correctRange: [1, 1],
     },
   },
 
@@ -85,6 +131,27 @@ const RAW = [
     },
   },
 
+  // word_in_context — Jane Eyre: "countenance".
+  {
+    id: "demo-word_in_context-2",
+    type: "word_in_context",
+    prompt: "What does the marked word mean here?",
+    difficulty: "scholar",
+    points: 10,
+    explanation:
+      "Brontë uses \"countenance\" throughout Jane Eyre for the face as it reveals feeling — Rochester's expression darkens as he reads.",
+    content: {
+      sentence: "Mr. Rochester's countenance darkened as he read the letter.",
+      targetWord: "countenance",
+      choices: [
+        { text: "facial expression", correct: true },
+        { text: "formal signature", correct: false },
+        { text: "financial account", correct: false },
+        { text: "country estate", correct: false },
+      ],
+    },
+  },
+
   // match_pairs — figures within a single work (The Odyssey) to their role.
   {
     id: "demo-match_pairs",
@@ -100,6 +167,25 @@ const RAW = [
         { left: "Penelope", right: "His wife, besieged by suitors" },
         { left: "Telemachus", right: "His son, who seeks him" },
         { left: "Polyphemus", right: "The Cyclops he blinds to escape" },
+      ],
+    },
+  },
+
+  // match_pairs — Romeo and Juliet: figures to their place in the feud.
+  {
+    id: "demo-match_pairs-2",
+    type: "match_pairs",
+    prompt: "Match each figure of Romeo and Juliet to their place in Verona.",
+    difficulty: "scholar",
+    points: 10,
+    explanation:
+      "The feud frames everyone: Romeo is Montague's heir, Juliet is Capulet's daughter, Mercutio is Romeo's quicksilver friend, and Tybalt is Juliet's duelling cousin.",
+    content: {
+      pairs: [
+        { left: "Romeo", right: "Heir of the house of Montague" },
+        { left: "Juliet", right: "Daughter of the house of Capulet" },
+        { left: "Mercutio", right: "Romeo's quick-tongued friend" },
+        { left: "Tybalt", right: "Juliet's hot-blooded cousin" },
       ],
     },
   },
@@ -120,6 +206,26 @@ const RAW = [
         { name: "Macbeth", correct: false },
         { name: "Othello", correct: false },
         { name: "King Lear", correct: false },
+      ],
+    },
+  },
+
+  // who_said_it — Macbeth: the sleepwalking scene.
+  {
+    id: "demo-who_said_it-2",
+    type: "who_said_it",
+    prompt: "Who speaks this line?",
+    difficulty: "scholar",
+    points: 10,
+    explanation:
+      "Lady Macbeth, sleepwalking in Act V scene i, tries to scrub the imagined blood from her hands.",
+    content: {
+      quote: "Out, damned spot! out, I say!",
+      choices: [
+        { name: "Lady Macbeth", correct: true },
+        { name: "Macbeth", correct: false },
+        { name: "The Three Witches", correct: false },
+        { name: "Banquo", correct: false },
       ],
     },
   },
@@ -147,7 +253,35 @@ const RAW = [
       rounds: [0.25, 0.5, 0.75, 1],
     },
   },
+
+  // recitation — A Tale of Two Cities' famous opening.
+  {
+    id: "demo-recitation-2",
+    type: "recitation",
+    prompt: "Recite the opening from memory.",
+    difficulty: "scholar",
+    points: 15,
+    explanation:
+      "Dickens opens A Tale of Two Cities with the most famous antithesis in English prose: \"It was the best of times, it was the worst of times.\"",
+    content: {
+      tokens: [
+        "It",
+        "was",
+        "the",
+        "best",
+        "of",
+        "times,",
+        "it",
+        "was",
+        "the",
+        "worst",
+        "of",
+        "times.",
+      ],
+      rounds: [0.25, 0.5, 0.75, 1],
+    },
+  },
 ]
 
-/** Validated demo questions — one per net-new type, in registry order. */
+/** Validated demo questions — two per net-new type, grouped in registry order. */
 export const DEMO_TRIAL_QUESTIONS: TrialQuestion[] = RAW.map(parseTrialQuestion)

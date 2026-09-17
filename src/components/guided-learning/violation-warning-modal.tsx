@@ -86,7 +86,7 @@ export function ViolationWarningModal({
               {isFinalWarning ? "Final Warning" : "Focus Lost"}
             </h2>
 
-            {/* Virgil quote */}
+            {/* Tome Assistant quote */}
             <p
               className="mb-4 font-serif text-sm italic opacity-60"
               style={{ fontFamily: "var(--font-serif, 'Literata')" }}

@@ -19,6 +19,21 @@ import {
   CalendarRange,
   type LucideIcon,
 } from "lucide-react"
+import { RUBRIC } from "@/lib/semester-plan/rubric"
+import { PLATFORM_QUIZZES_ENABLED } from "@/lib/quizzes/flags"
+
+/**
+ * Sidebar icon palette — one RUBRIC pigment per section so teachers and
+ * students can find surfaces by colour at a glance. Flat accents only
+ * (iridescence stays reserved for Virgil).
+ */
+export const NAV_ACCENTS = {
+  home: RUBRIC.lapis,
+  library: RUBRIC.goldLeaf,
+  read: RUBRIC.verdigris,
+  discover: RUBRIC.tyrian,
+  classroom: RUBRIC.vermilion,
+} as const
 
 
 export type UserRole = "reader" | "teacher" | "student"
@@ -37,6 +52,8 @@ export type NavGroup = {
   items: NavItem[]
   /** If set, only show for these roles. If omitted, show for all. */
   roles?: UserRole[]
+  /** Flat RUBRIC pigment applied to every icon in the group. */
+  accent?: string
 }
 
 /**
@@ -48,6 +65,7 @@ export type NavGroup = {
  */
 const homeGroup: NavGroup = {
   label: "Home",
+  accent: NAV_ACCENTS.home,
   items: [
     { label: "Home", href: "/", icon: Home, roles: ["reader", "student"] },
     { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
@@ -56,6 +74,7 @@ const homeGroup: NavGroup = {
 
 const libraryGroup: NavGroup = {
   label: "Library",
+  accent: NAV_ACCENTS.library,
   items: [
     { label: "Library", href: "/library/browse", icon: Library },
     { label: "Authors", href: "/authors", icon: Feather },
@@ -64,6 +83,7 @@ const libraryGroup: NavGroup = {
 
 const readGroup: NavGroup = {
   label: "Read",
+  accent: NAV_ACCENTS.read,
   items: [
     // Readers/teachers get their personal reading list; students get the
     // reading their teacher assigned (same page, reading-only filter).
@@ -76,6 +96,7 @@ const readGroup: NavGroup = {
 
 const discoverGroup: NavGroup = {
   label: "Discover",
+  accent: NAV_ACCENTS.discover,
   items: [
     { label: "Explore", href: "/explore", icon: Globe2 },
     { label: "Timelines", href: "/timelines", icon: History },
@@ -84,13 +105,21 @@ const discoverGroup: NavGroup = {
 
 const classroomGroup: NavGroup = {
   label: "Classroom",
+  accent: NAV_ACCENTS.classroom,
   items: [
     { label: "Classes", href: "/classroom", icon: GraduationCap },
     // Students see teacher-given Assignments + the term Semester schedule in
     // place of the personal practice "Quizzes" surface (kept for readers).
     { label: "Assignments", href: "/assignments", icon: ClipboardList, roles: ["student"] },
     { label: "Semester", href: "/semester", icon: CalendarRange, roles: ["student"] },
-    { label: "Quizzes", href: "/quizzes", icon: Brain, roles: ["reader", "teacher"] },
+    // While platform practice quizzes are paused, only teachers see the
+    // Quizzes entry (their saved-quiz library). Restore "reader" when unpaused.
+    {
+      label: "Quizzes",
+      href: "/quizzes",
+      icon: Brain,
+      roles: PLATFORM_QUIZZES_ENABLED ? ["reader", "teacher"] : ["teacher"],
+    },
     { label: "Quiz Builder", href: "/classroom/quiz-builder", icon: SquarePen, roles: ["teacher"] },
     { label: "Grading", href: "/classroom/grading", icon: ClipboardCheck, roles: ["teacher"] },
     { label: "Semester Planning", href: "/semester-plan", icon: CalendarRange, roles: ["teacher"] },
@@ -98,6 +127,8 @@ const classroomGroup: NavGroup = {
   ],
 }
 
+// Settings stays neutral (inherits foreground) so it reads in light AND dark
+// themes — ink would disappear on a dark background.
 const settingsGroup: NavGroup = {
   label: "Settings",
   items: [{ label: "Settings", href: "/account", icon: Settings }],

@@ -74,12 +74,12 @@ export function TeacherAnnouncementComposer({
 
   if (!allowed) return null
 
-  // Ask Virgil to expand the teacher's brief into a polished title + body.
-  // Virgil never posts — it fills the composer for the teacher to review.
+  // Ask Tome Assistant to expand the teacher's brief into a polished title + body.
+  // Tome Assistant never posts — it fills the composer for the teacher to review.
   async function draftWithVirgil() {
     const brief = body.trim() || title.trim()
     if (brief.length === 0) {
-      toast.error("Jot a quick brief first, then let Virgil polish it.")
+      toast.error("Jot a quick brief first, then let Tome Assistant polish it.")
       return
     }
     setDrafting(true)
@@ -94,14 +94,14 @@ export function TeacherAnnouncementComposer({
       })
       const data = await res.json()
       if (!res.ok) {
-        toast.error(data.error ?? "Virgil couldn't draft that. Try again.")
+        toast.error(data.error ?? "Tome Assistant couldn't draft that. Try again.")
         return
       }
       if (data.title) setTitle(String(data.title))
       if (data.content) setBody(String(data.content))
-      toast.success("Virgil drafted your announcement — review and post.")
+      toast.success("Tome Assistant drafted your announcement — review and post.")
     } catch {
-      toast.error("Virgil couldn't be reached. Try again.")
+      toast.error("Tome Assistant couldn't be reached. Try again.")
     } finally {
       setDrafting(false)
     }
@@ -201,7 +201,7 @@ export function TeacherAnnouncementComposer({
                     disabled={pending || drafting || (body.trim().length === 0 && title.trim().length === 0)}
                   >
                     <Sparkles className="size-3 text-[#D4A04C]" />
-                    {drafting ? "Drafting…" : "Draft with Virgil"}
+                    {drafting ? "Drafting…" : "Draft with Tome Assistant"}
                   </Button>
                   <Button
                     size="sm"

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import type { QuestionRendererProps } from "./shared"
 
 /**
- * Reflection — open-response, Virgil-graded.
+ * Reflection — open-response, Tome Assistant-graded.
  *
  * The engine accepts the response if it meets `reflectionWordMin`; the
  * numeric grade (0–10) is produced asynchronously by the placeholder
@@ -53,7 +53,7 @@ export function Reflection({
 
   return (
     <div className="space-y-4">
-      {/* Virgil framing */}
+      {/* Tome Assistant framing */}
       <div className="flex items-start gap-3">
         <motion.div
           aria-hidden
@@ -85,7 +85,7 @@ export function Reflection({
             className="text-[11px] uppercase tracking-wider font-sans font-semibold"
             style={{ color: "var(--codex-tier-laureate-text)" }}
           >
-            Reflection · Virgil grades
+            Reflection · Tome Assistant grades
           </p>
           {question.reflectionPrompt ? (
             <p className="font-serif text-ink text-base leading-relaxed mt-0.5">
@@ -123,7 +123,7 @@ export function Reflection({
       {!answered && (
         <div className="flex items-center justify-between gap-3">
           <p className="text-[12px] text-muted-foreground italic">
-            Virgil reads for engagement, reasoning, evidence, and originality.
+            Tome Assistant reads for engagement, reasoning, evidence, and originality.
           </p>
           <Button
             onClick={submit}

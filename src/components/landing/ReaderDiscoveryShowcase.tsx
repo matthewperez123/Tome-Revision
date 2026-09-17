@@ -75,7 +75,7 @@ export function RecommendationsShowcase() {
   return (
     <TeacherShowcaseShell
       heading="Recommendations that know your taste."
-      subcopy="Virgil and your Circle suggest where to go next — grounded in what you've already loved, never random."
+      subcopy="Tome Assistant and your Circle suggest where to go next — grounded in what you've already loved, never random."
       layout="mockup-left"
       bgClass="bg-muted"
     >

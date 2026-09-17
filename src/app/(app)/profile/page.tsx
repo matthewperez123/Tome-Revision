@@ -253,7 +253,7 @@ export default function ProfilePage() {
                   </h2>
                 </div>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-                  All 1,200+ books, unlimited Virgil conversations, and advanced
+                  All 1,200+ books, unlimited Tome Assistant conversations, and advanced
                   Trials — for up to five readers. Starts with a 7-day free trial.
                 </p>
               </div>
@@ -662,7 +662,7 @@ export default function ProfilePage() {
                   )}
                   <p className="text-[11px] text-muted-foreground mt-0.5">
                     {tier === "free"
-                      ? "Unlock the full library and Virgil"
+                      ? "Unlock the full library and Tome Assistant"
                       : "Update payment, change plan, or cancel"}
                   </p>
                 </div>

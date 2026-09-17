@@ -25,7 +25,7 @@ type AnswerValue = string | string[]
  * teacher quiz: the standalone classroom quiz page and the end-of-reading
  * quiz in the scoped assignment reader. Answer keys never reach the client —
  * every attempt is graded authoritatively server-side by `submitQuizAttempt`
- * (objective auto-grade + free-response Virgil review), so this component only
+ * (objective auto-grade + free-response Tome Assistant review), so this component only
  * renders question cards, collects answers, and shows the returned result.
  */
 export function QuizAttemptRunner({

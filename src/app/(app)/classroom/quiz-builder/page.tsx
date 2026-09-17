@@ -11,6 +11,7 @@ import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
 import { getBooks } from "@/lib/content"
 import { duplicateTeacherQuiz } from "@/lib/actions/teacher-quizzes"
+import { NAV_ACCENTS } from "@/lib/navigation"
 
 interface TeacherQuiz {
   id: string
@@ -28,7 +29,7 @@ export default function QuizBuilderPage() {
   const [loading, setLoading] = useState(true)
   const [duplicatingId, setDuplicatingId] = useState<string | null>(null)
 
-  // "Generate with Virgil" — creates a fully-authored draft via the teacher
+  // "Generate with Tome Assistant" — creates a fully-authored draft via the teacher
   // task pipeline (POST /api/virgil task=teacher_quiz), then opens it.
   const [genOpen, setGenOpen] = useState(false)
   const [genBookId, setGenBookId] = useState("")
@@ -76,7 +77,7 @@ export default function QuizBuilderPage() {
       })
       const body = await res.json().catch(() => ({}))
       if (!res.ok) {
-        setGenError(body?.message || body?.error || "Virgil couldn't generate that quiz.")
+        setGenError(body?.message || body?.error || "Tome Assistant couldn't generate that quiz.")
         setGenerating(false)
         return
       }
@@ -87,7 +88,7 @@ export default function QuizBuilderPage() {
       }
       setGenError("Quiz generated, but no draft was returned.")
     } catch {
-      setGenError("Something went wrong reaching Virgil.")
+      setGenError("Something went wrong reaching Tome Assistant.")
     }
     setGenerating(false)
   }
@@ -165,7 +166,7 @@ export default function QuizBuilderPage() {
     <div className="mx-auto max-w-3xl px-4 py-8">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Feather className="size-6 text-foreground" />
+          <Feather className="size-6" style={{ color: NAV_ACCENTS.classroom }} />
           <h1 className="text-2xl font-bold">Quiz Builder</h1>
         </div>
         <div className="flex items-center gap-2">
@@ -175,7 +176,7 @@ export default function QuizBuilderPage() {
             className="gap-1.5 border-[var(--tome-accent)]/30 text-[var(--tome-accent)] hover:bg-[var(--tome-accent)]/5"
           >
             <Sparkles className="size-4" />
-            Generate with Virgil
+            Generate with Tome Assistant
           </Button>
           <Button onClick={createNewQuiz} className="gap-1.5">
             <Plus className="size-4" />
@@ -250,7 +251,7 @@ export default function QuizBuilderPage() {
         </div>
       )}
 
-      {/* Generate-with-Virgil modal */}
+      {/* Generate-with-Tome Assistant modal */}
       <AnimatePresence>
         {genOpen && (
           <motion.div
@@ -272,7 +273,7 @@ export default function QuizBuilderPage() {
                   <div className="flex size-8 items-center justify-center rounded-lg bg-[var(--tome-accent)]">
                     <Sparkles className="size-4 text-white" />
                   </div>
-                  <h2 className="text-base font-semibold">Generate a quiz with Virgil</h2>
+                  <h2 className="text-base font-semibold">Generate a quiz with Tome Assistant</h2>
                 </div>
                 <button
                   onClick={() => !generating && setGenOpen(false)}
@@ -380,7 +381,7 @@ export default function QuizBuilderPage() {
                 {genError && <p className="text-xs text-red-500">{genError}</p>}
                 {(isDemoMode || !user) && (
                   <p className="text-xs text-muted-foreground">
-                    Sign in as a teacher to generate quizzes with Virgil.
+                    Sign in as a teacher to generate quizzes with Tome Assistant.
                   </p>
                 )}
 
@@ -390,7 +391,7 @@ export default function QuizBuilderPage() {
                   className="w-full gap-1.5"
                 >
                   <Sparkles className="size-4" />
-                  {generating ? "Virgil is writing your quiz..." : "Generate quiz"}
+                  {generating ? "Tome Assistant is writing your quiz..." : "Generate quiz"}
                 </Button>
               </div>
             </motion.div>

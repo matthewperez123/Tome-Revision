@@ -31,7 +31,7 @@ export function MergedTrialsBlock() {
   return (
     <TeacherShowcaseShell
       heading="Every chapter is a Trial."
-      subcopy="Earn Wisdom by completing Trials at the end of each chapter — comprehension, vocabulary, critical thinking, and a Virgil-graded reflection. Keep your Flame alive with daily reading."
+      subcopy="Earn Wisdom by completing Trials at the end of each chapter — comprehension, vocabulary, critical thinking, and a Tome Assistant-graded reflection. Keep your Flame alive with daily reading."
       layout="mockup-left"
       bgClass="bg-background"
     >

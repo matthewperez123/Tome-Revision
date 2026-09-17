@@ -2,7 +2,7 @@
 
 /**
  * word_in_context — pick the gloss/meaning of a target word shown in a sentence.
- * Thin adapter over the shared <MultipleChoiceBody>; seeded from Virgil glosses
+ * Thin adapter over the shared <MultipleChoiceBody>; seeded from Tome Assistant glosses
  * where available (the join lives in the seed, not here).
  */
 import { useMemo } from "react"

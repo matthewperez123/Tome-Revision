@@ -102,7 +102,7 @@ export interface ProfileLike {
 
 /** Thrown by `assertVirgilAccess` when the profile isn't a teacher. */
 export class VirgilAccessError extends Error {
-  constructor(message = "Virgil is available to teacher accounts only.") {
+  constructor(message = "Tome Assistant is available to teacher accounts only.") {
     super(message)
     this.name = "VirgilAccessError"
   }
@@ -120,7 +120,7 @@ export function isTeacher(profile: ProfileLike | null | undefined): boolean {
 }
 
 /**
- * Guard for Virgil surfaces (teacher-only). Throws `VirgilAccessError` when the
+ * Guard for Tome Assistant surfaces (teacher-only). Throws `VirgilAccessError` when the
  * profile isn't a teacher so callers can map it to a 403.
  */
 export function assertVirgilAccess(profile: ProfileLike | null | undefined): void {

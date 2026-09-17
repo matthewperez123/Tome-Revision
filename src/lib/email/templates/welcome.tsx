@@ -40,7 +40,7 @@ export function WelcomeEmail({
       </EmailParagraph>
 
       <EmailParagraph>
-        <strong>Virgil.</strong> Tap any annotation in the margin to chat with
+        <strong>Tome Assistant.</strong> Tap any annotation in the margin to chat with
         a scholar — your guide through the harder passages.
       </EmailParagraph>
 

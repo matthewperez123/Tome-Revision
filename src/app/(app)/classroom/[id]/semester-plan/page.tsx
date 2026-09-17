@@ -48,10 +48,10 @@ export default async function SemesterPlansListPage({
         <Link
           href={`/classroom/${id}/semester-plan/new`}
           className="inline-flex items-center gap-1.5 rounded-xl px-3 py-2 text-sm font-semibold text-white"
-          style={{ backgroundImage: "linear-gradient(110deg, #6366F1 0%, #8B5CF6 35%, #06B6D4 70%, #6366F1 100%)" }}
+          style={{ backgroundImage: "linear-gradient(0deg, #2C4A7E, #2C4A7E)" }}
         >
           <Sparkles className="size-4" />
-          Plan a semester with Virgil
+          Plan a semester with Tome Assistant
         </Link>
       </div>
 
@@ -62,7 +62,7 @@ export default async function SemesterPlansListPage({
           </div>
           <h2 className="mt-4 font-display text-lg font-semibold">No semester plans yet</h2>
           <p className="mt-1 font-serif text-sm text-muted-foreground">
-            Let Virgil draft a paced, week-by-week term from the catalog — then edit and deploy it.
+            Let Tome Assistant draft a paced, week-by-week term from the catalog — then edit and deploy it.
           </p>
         </div>
       ) : (

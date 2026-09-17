@@ -12,6 +12,8 @@ import { TRIAL_REGISTRY } from "@/lib/trials/registry"
  * R3 — the Trial demo. Mounts the REAL <QuestionCard> + registry + the six
  * net-new typed questions, inside a DemoEconomyProvider sandbox.
  */
+const DEMO_TYPES = Array.from(new Set(DEMO_TRIAL_QUESTIONS.map((q) => q.type)))
+
 function TrialInner() {
   const [i, setI] = useState(0)
   const total = DEMO_TRIAL_QUESTIONS.length
@@ -19,15 +21,17 @@ function TrialInner() {
 
   return (
     <>
-      {/* Type switcher */}
+      {/* Type switcher — one chip per type; the pool holds several questions
+          of each, and "Next" walks through all of them. */}
       <div className="flex flex-wrap gap-1.5 mb-3" role="tablist" aria-label="Trial type">
-        {DEMO_TRIAL_QUESTIONS.map((q, idx) => {
-          const entry = TRIAL_REGISTRY[q.type]
+        {DEMO_TYPES.map((type) => {
+          const entry = TRIAL_REGISTRY[type]
           const Icon = entry.icon
-          const activeTab = idx === i
+          const activeTab = question.type === type
+          const idx = DEMO_TRIAL_QUESTIONS.findIndex((q) => q.type === type)
           return (
             <button
-              key={q.id}
+              key={type}
               type="button"
               role="tab"
               aria-selected={activeTab}
@@ -63,7 +67,7 @@ export function TrialDemo() {
   return (
     <TeacherShowcaseShell
       heading="Every chapter is a Trial."
-      subcopy="Earn Wisdom by completing Trials at the end of each chapter \u2014 comprehension, vocabulary, critical thinking, and a Virgil-graded reflection. Keep your Flame alive with daily reading."
+      subcopy="Earn Wisdom by completing Trials at the end of each chapter \u2014 comprehension, vocabulary, critical thinking, and a Tome Assistant-graded reflection. Keep your Flame alive with daily reading."
       layout="mockup-left"
       bgClass="bg-background"
     >

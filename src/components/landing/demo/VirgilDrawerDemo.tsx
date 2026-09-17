@@ -95,13 +95,13 @@ export function VirgilDrawerDemo() {
   return (
     <TeacherShowcaseShell
       heading="A scholar in the margin. Your marks beside his."
-      subcopy="Tap any annotation to open Virgil's drawer \u2014 a scholarly note up top, a live chat at the bottom. Highlight what stops you, leave a note for your future self. Virgil is indigo; you are amber."
+      subcopy="Tap any annotation to open Tome Assistant's drawer \u2014 a scholarly note up top, a live chat at the bottom. Highlight what stops you, leave a note for your future self. Tome Assistant is indigo; you are amber."
       layout="mockup-right"
       bgClass="bg-muted"
     >
       <DemoFrame
-        ariaLabel="Interactive Virgil drawer"
-        hint="Ask Virgil"
+        ariaLabel="Interactive Tome Assistant drawer"
+        hint="Ask Tome Assistant"
         onReset={
           messages.length > 0
             ? () => {
@@ -115,7 +115,7 @@ export function VirgilDrawerDemo() {
         }
       >
         <div className="grid grid-cols-1 gap-4">
-          {/* Virgil drawer */}
+          {/* Tome Assistant drawer */}
           <div className="bg-background rounded-lg border border-border relative overflow-hidden">
             <div className="p-5">
               <p className="text-[10px] text-muted-foreground mb-3 uppercase tracking-wider">
@@ -140,7 +140,7 @@ export function VirgilDrawerDemo() {
                   <div className="size-5 rounded-full bg-primary/15 border border-primary/40 flex items-center justify-center text-[10px] font-serif font-bold text-primary">
                     V
                   </div>
-                  <span className="text-xs font-semibold text-primary">Virgil</span>
+                  <span className="text-xs font-semibold text-primary">Tome Assistant</span>
                   <span className="text-[10px] text-muted-foreground">
                     &middot; {DEMO_PASSAGE.annotationLabel}
                   </span>
@@ -234,8 +234,8 @@ export function VirgilDrawerDemo() {
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                     disabled={thinking}
-                    placeholder="Ask Virgil about this passage…"
-                    aria-label="Ask Virgil about this passage"
+                    placeholder="Ask Tome Assistant about this passage…"
+                    aria-label="Ask Tome Assistant about this passage"
                     className="text-[11px] bg-transparent text-foreground placeholder:text-muted-foreground flex-1 min-w-0 outline-none disabled:opacity-50"
                   />
                   <button
@@ -294,7 +294,7 @@ export function VirgilDrawerDemo() {
             </div>
             <div className="mt-3 flex items-center gap-1.5 text-[10px] text-muted-foreground">
               <Highlighter className="size-3" style={{ color: AMBER }} />
-              <span>Amber = your marks &middot; Indigo = Virgil</span>
+              <span>Amber = your marks &middot; Indigo = Tome Assistant</span>
             </div>
           </div>
         </div>

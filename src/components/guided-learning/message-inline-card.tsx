@@ -50,7 +50,7 @@ interface Props {
 
 /**
  * Inline marginalia-style card for teacher messages shown to students.
- * Styled to match Virgil annotation aesthetic.
+ * Styled to match Tome Assistant annotation aesthetic.
  */
 export function MessageInlineCard({
   messageType,

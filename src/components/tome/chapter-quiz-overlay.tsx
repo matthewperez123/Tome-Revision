@@ -382,7 +382,7 @@ function QuizRunner({
     if (answered) return
     dispatch({ type: "ANSWER", answer })
 
-    // Reflection: kick off Virgil grading (placeholder action). The engine
+    // Reflection: kick off Tome Assistant grading (placeholder action). The engine
     // already accepted the answer; we only attach a 0–10 score + feedback.
     if (q.type === "reflection") {
       dispatch({ type: "REFLECTION_PENDING", questionId: q.id })
@@ -402,10 +402,10 @@ function QuizRunner({
             score: res.score,
             feedback: res.feedback,
           })
-          onFeedback(`Virgil: ${res.feedback}`)
+          onFeedback(`Tome Assistant: ${res.feedback}`)
         } catch {
           dispatch({ type: "REFLECTION_FAILED", questionId: q.id })
-          onFeedback("Virgil will review this shortly.")
+          onFeedback("Tome Assistant will review this shortly.")
         }
       })()
     }
@@ -565,10 +565,10 @@ function QuizRunner({
 
             const heading = isReflection
               ? refPending
-                ? "Virgil is reading your reflection…"
+                ? "Tome Assistant is reading your reflection…"
                 : refFailed
-                  ? "Virgil will review this shortly"
-                  : `Virgil — ${grade!.score} / 10`
+                  ? "Tome Assistant will review this shortly"
+                  : `Tome Assistant — ${grade!.score} / 10`
               : isCorrect
                 ? "Correct"
                 : "Not quite"

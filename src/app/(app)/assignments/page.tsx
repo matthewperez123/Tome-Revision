@@ -26,6 +26,7 @@ import { createClient } from "@/lib/supabase/client"
 import { getBook } from "@/lib/content"
 import { useAuth } from "@/hooks/use-auth"
 import { Skeleton } from "@/components/ui/skeleton"
+import { NAV_ACCENTS } from "@/lib/navigation"
 
 type AssignmentType = "reading" | "quiz" | "discussion" | "essay" | "annotation"
 
@@ -184,7 +185,10 @@ function AssignmentsList() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
       <div className="flex items-center gap-2.5">
-        <HeadingIcon className="size-6 shrink-0 text-foreground" />
+        <HeadingIcon
+          className="size-6 shrink-0"
+          style={{ color: readingOnly ? NAV_ACCENTS.read : NAV_ACCENTS.classroom }}
+        />
         <h1 className="text-2xl font-bold tracking-tight">{heading}</h1>
         {!loading && visible.length > 0 && (
           <span className="ml-auto text-sm text-muted-foreground">

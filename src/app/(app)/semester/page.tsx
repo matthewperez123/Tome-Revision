@@ -16,6 +16,7 @@ import { createClient } from "@/lib/supabase/client"
 import { getBook } from "@/lib/content"
 import { useAuth } from "@/hooks/use-auth"
 import { Skeleton } from "@/components/ui/skeleton"
+import { NAV_ACCENTS } from "@/lib/navigation"
 
 type AssignmentType = "reading" | "quiz" | "discussion" | "essay" | "annotation"
 
@@ -152,7 +153,7 @@ export default function StudentSemesterPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
       <div className="flex items-center gap-2.5">
-        <CalendarRange className="size-6 shrink-0 text-foreground" />
+        <CalendarRange className="size-6 shrink-0" style={{ color: NAV_ACCENTS.classroom }} />
         <h1 className="text-2xl font-bold tracking-tight">Semester</h1>
       </div>
       <p className="mt-1 text-sm text-muted-foreground">

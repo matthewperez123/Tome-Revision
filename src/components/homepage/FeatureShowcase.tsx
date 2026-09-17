@@ -23,7 +23,7 @@ const FEATURES: {
   Component: React.ComponentType<{ playing?: boolean }>
 }[] = [
   {
-    title: "Virgil AI Annotations",
+    title: "Tome Assistant annotations",
     description: "Scholarly footnotes appear as you read, explaining context, vocabulary, and literary devices.",
     frame: "safari",
     Component: VirgilAnnotationDemo,
@@ -66,7 +66,7 @@ const FEATURES: {
   },
   {
     title: "Shop & Cosmetics",
-    description: "Earn coins by reading. Spend on streak freezes, themes, and Virgil outfits.",
+    description: "Earn coins by reading. Spend on streak freezes, themes, and Tome Assistant outfits.",
     frame: "iphone",
     Component: ShopDemo,
   },

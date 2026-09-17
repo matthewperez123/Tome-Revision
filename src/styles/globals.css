@@ -58,6 +58,44 @@
   transform: translateY(2px);
   box-shadow: 0 2px 0 0 var(--codex-edge, var(--codex-primary-edge));
 }
+/* ── Marketing vibrancy: shared treatment for the public-domain painting
+   heroes/banners on marketing pages. Lifts the old-varnish darkness of the
+   source scans so the landing surfaces read bright and welcoming while the
+   artwork itself stays untouched on disk. Pair with a lightened overlay. */
+img.marketing-vibrant,
+.marketing-vibrant {
+  filter: brightness(1.12) saturate(1.18) contrast(1.02);
+}
+
+/* ── Subtle motion utilities ─────────────────────────────────────
+   marketing-hero-drift: slow Ken Burns breathing on full-bleed
+   painting heroes. tome-page-enter: gentle fade/rise applied to app
+   pages on navigation via (app)/template.tsx. Both are disabled for
+   reduced-motion users below. */
+@keyframes marketing-hero-drift {
+  from { transform: scale(1); }
+  to { transform: scale(1.06); }
+}
+.marketing-hero-drift {
+  animation: marketing-hero-drift 26s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes tome-page-enter {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.tome-page-enter {
+  animation: tome-page-enter 260ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marketing-hero-drift,
+  .tome-page-enter {
+    animation: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .codex-pressable,
   .codex-pressable-success,

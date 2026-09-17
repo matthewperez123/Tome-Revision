@@ -183,7 +183,7 @@ export function EditablePlanBoard({ plan }: { plan: SemesterPlan }) {
           {plan.generated_by_model ? ` · drafted by ${plan.generated_by_model}` : ""}
         </p>
 
-        {/* Conversational Virgil assistant (iridescent — reserved for Virgil affordances) */}
+        {/* Conversational Tome Assistant assistant (iridescent — reserved for Tome Assistant affordances) */}
         <SemesterPlanAssistant
           planId={plan.id}
           onApplied={() => startTransition(() => router.refresh())}
@@ -382,7 +382,7 @@ function WeekEditor({
           disabled={virgilBusy}
           className="inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium text-white disabled:opacity-50"
           style={{ backgroundImage: IRIDESCENT }}
-          title="Ask Virgil to regenerate this week"
+          title="Ask Tome Assistant to regenerate this week"
         >
           {virgilBusy ? <Loader2 className="size-3 animate-spin" /> : <RefreshCw className="size-3" />}
           Regenerate week

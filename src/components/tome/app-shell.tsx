@@ -28,6 +28,7 @@ export function AppShell({
     pathname === "/readers" ||
     pathname === "/educators" ||
     pathname === "/virgil" ||
+    pathname === "/assistant" ||
     pathname === "/pricing" ||
     pathname === "/faq" ||
     pathname === "/library" ||

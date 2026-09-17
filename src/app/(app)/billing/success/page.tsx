@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 }
 
 // RUBRIC verdigris — the settled palette's "confirmed / complete" accent.
-// Iridescence is reserved exclusively for Virgil surfaces, so this page uses
+// Iridescence is reserved exclusively for Tome Assistant surfaces, so this page uses
 // a flat, single-hue treatment.
 const VERDIGRIS = "#2E7D6F"
 

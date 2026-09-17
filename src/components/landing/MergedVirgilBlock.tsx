@@ -29,13 +29,13 @@ export function MergedVirgilBlock() {
   return (
     <TeacherShowcaseShell
       heading="A scholar in the margin. Your marks beside his."
-      subcopy="Tap any annotation to open Virgil's drawer — a scholarly note up top, a live chat at the bottom. Highlight what stops you, leave a note for your future self. Virgil is indigo; you are amber."
+      subcopy="Tap any annotation to open Tome Assistant's drawer — a scholarly note up top, a live chat at the bottom. Highlight what stops you, leave a note for your future self. Tome Assistant is indigo; you are amber."
       layout="mockup-right"
       bgClass="bg-muted"
     >
       <div>
         <div className="grid grid-cols-1 gap-4">
-            {/* Left: Virgil drawer */}
+            {/* Left: Tome Assistant drawer */}
             <div className="bg-card rounded-xl border border-border min-h-[360px] relative overflow-hidden">
               <div className="p-6">
                 <p className="text-[10px] text-muted-foreground mb-3 uppercase tracking-wider">
@@ -66,7 +66,7 @@ export function MergedVirgilBlock() {
                       V
                     </div>
                     <span className="text-xs font-semibold text-indigo-500">
-                      Virgil
+                      Tome Assistant
                     </span>
                     <span className="text-[10px] text-muted-foreground">
                       &middot; {ANNOTATION.label}
@@ -95,7 +95,7 @@ export function MergedVirgilBlock() {
                   <div className="flex items-center gap-2 rounded-full border border-border bg-muted px-3 py-1.5">
                     <Sparkles className="size-3 text-indigo-500 shrink-0" />
                     <span className="text-[11px] text-muted-foreground flex-1 truncate">
-                      Ask Virgil about this passage&hellip;
+                      Ask Tome Assistant about this passage&hellip;
                     </span>
                     <button
                       type="button"
@@ -156,7 +156,7 @@ export function MergedVirgilBlock() {
 
               <div className="absolute bottom-3 right-4 flex items-center gap-1.5 text-[10px] text-muted-foreground">
                 <Highlighter className="size-3" style={{ color: AMBER }} />
-                <span>Amber = your marks &middot; Indigo = Virgil</span>
+                <span>Amber = your marks &middot; Indigo = Tome Assistant</span>
               </div>
             </div>
         </div>

@@ -21,9 +21,9 @@ import {
   type TeacherQuizDraftQuestion,
 } from "@/lib/teacher-quiz-types"
 
-// Iridescent treatment is reserved for Virgil affordances only.
+// Iridescent treatment is reserved for Tome Assistant affordances only.
 const IRIDESCENT =
-  "linear-gradient(110deg, #6366F1 0%, #8B5CF6 35%, #06B6D4 70%, #6366F1 100%)"
+  "linear-gradient(0deg, #2C4A7E, #2C4A7E)"
 
 interface ChatMessage {
   id: string
@@ -47,7 +47,7 @@ const GREETING: ChatMessage = {
   id: "greeting",
   role: "assistant",
   content:
-    "I'm Virgil. Pick a book and the sections you'd like — in any order — then just tell me what kind of quiz to build (e.g. \u201csix questions on Book IX, focus on fate\u201d).",
+    "I'm Tome Assistant. Pick a book and the sections you'd like — in any order — then just tell me what kind of quiz to build (e.g. \u201csix questions on Book IX, focus on fate\u201d).",
 }
 
 export function VirgilSessionAssistant({ onAttachQuiz }: Props) {
@@ -205,7 +205,7 @@ export function VirgilSessionAssistant({ onAttachQuiz }: Props) {
       onAttachQuiz({
         id: crypto.randomUUID(),
         type: "quiz",
-        title: selectedBook ? `${selectedBook.title} — Quiz` : "Virgil Quiz",
+        title: selectedBook ? `${selectedBook.title} — Quiz` : "Tome Assistant Quiz",
         book_id: bookId,
         book_title: selectedBook?.title,
         chapter_start: selected.length ? Math.min(...selected) : null,
@@ -232,7 +232,7 @@ export function VirgilSessionAssistant({ onAttachQuiz }: Props) {
       className="mb-8 overflow-hidden rounded-2xl border"
       style={{ borderColor: "rgba(99,102,241,0.35)" }}
     >
-      {/* Iridescent header (Virgil signature) */}
+      {/* Iridescent header (Tome Assistant signature) */}
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}
@@ -240,7 +240,7 @@ export function VirgilSessionAssistant({ onAttachQuiz }: Props) {
         style={{ backgroundImage: IRIDESCENT }}
       >
         <Sparkles className="h-4 w-4" />
-        <span className="text-sm font-semibold tracking-wide">Build a quiz with Virgil</span>
+        <span className="text-sm font-semibold tracking-wide">Build a quiz with Tome Assistant</span>
         <span className="ml-1 text-xs font-normal opacity-80">— ask in plain language</span>
         {open ? (
           <ChevronUp className="ml-auto h-4 w-4" />
@@ -379,7 +379,7 @@ export function VirgilSessionAssistant({ onAttachQuiz }: Props) {
             {sending && (
               <div className="flex items-center gap-2 text-xs opacity-50">
                 <Loader2 className="h-3.5 w-3.5 animate-spin" />
-                Virgil is reading…
+                Tome Assistant is reading…
               </div>
             )}
           </div>
@@ -396,7 +396,7 @@ export function VirgilSessionAssistant({ onAttachQuiz }: Props) {
                 }
               }}
               rows={1}
-              placeholder={bookId ? "Ask Virgil to build a quiz…" : "Pick a book above first…"}
+              placeholder={bookId ? "Ask Tome Assistant to build a quiz…" : "Pick a book above first…"}
               className="max-h-28 min-h-[40px] flex-1 resize-none rounded-xl border border-transparent bg-[var(--tome-surface-elevated)] px-3 py-2 text-sm focus:border-[var(--tome-accent)] focus:outline-none"
             />
             <Button

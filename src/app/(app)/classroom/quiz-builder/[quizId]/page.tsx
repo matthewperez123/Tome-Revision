@@ -17,7 +17,7 @@ import { getBooks } from "@/lib/content"
 import { publishTeacherQuiz, assignQuiz, saveTeacherQuiz } from "@/lib/actions/teacher-quizzes"
 import { launchLiveQuiz } from "@/lib/actions/live-quiz"
 
-// Kept as a broad string so Virgil-authored types (multiple_select,
+// Kept as a broad string so Tome Assistant-authored types (multiple_select,
 // vocabulary_in_context, tf_with_reason, fill_blank, free_response, …) round-trip
 // through the editor even though the manual "add" buttons only cover a few.
 type QuestionType = string
@@ -31,7 +31,7 @@ interface QuizQuestion {
   explanation: string
   points: number
   sort_order: number
-  // Passthrough metadata — Virgil-generated free-response questions carry a
+  // Passthrough metadata — Tome Assistant-generated free-response questions carry a
   // rubric / reference_answer / max_points that MUST survive a save cycle so
   // they stay auto-gradable. Manually-added questions leave these null.
   rubric?: unknown
@@ -46,7 +46,7 @@ interface QuizQuestion {
 
 const OPEN_ENDED = new Set(["free_response", "tf_with_reason", "short_answer"])
 
-// Rubric <-> textarea. Virgil authors rubric as
+// Rubric <-> textarea. Tome Assistant authors rubric as
 // { max_points, criteria: [{ name, points, descriptor }] }; teachers edit the
 // criteria as one-line-per-criterion text. Untouched rubrics keep their full
 // object (onChange never fires) so points/descriptors survive a save.
@@ -178,7 +178,7 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
 
       if (questionData) {
         // `...q` carries the passthrough metadata (rubric / reference_answer /
-        // max_points / hints / …) so a Virgil-generated free-response question
+        // max_points / hints / …) so a Tome Assistant-generated free-response question
         // survives a load → save round-trip and stays auto-gradable.
         setQuestions(
           questionData.map((q) => ({
@@ -745,15 +745,15 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
                     </>
                   )}
 
-                  {/* Free response — Virgil grades against the rubric + reference answer */}
+                  {/* Free response — Tome Assistant grades against the rubric + reference answer */}
                   {OPEN_ENDED.has(q.question_type) && q.question_type !== "short_answer" && (
                     <div className="space-y-3">
                       <div>
-                        <label className="text-xs font-medium text-muted-foreground">Reference answer (guides Virgil's grading)</label>
+                        <label className="text-xs font-medium text-muted-foreground">Reference answer (guides Tome Assistant's grading)</label>
                         <textarea
                           value={q.reference_answer ?? ""}
                           onChange={(e) => updateQuestion(q.id, { reference_answer: e.target.value })}
-                          placeholder="A model answer for Virgil to grade against..."
+                          placeholder="A model answer for Tome Assistant to grade against..."
                           rows={3}
                           className="mt-1 w-full rounded-md border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
                         />

@@ -28,7 +28,7 @@ export function SeatInviteEmail({
       <EmailParagraph>
         {inviterName} invited you to a <strong>Tome School</strong> teacher seat.
         Claim it to unlock the full educator suite — classrooms, assignments,
-        Trials, and Virgil.
+        Trials, and Tome Assistant.
       </EmailParagraph>
 
       <EmailButton href={claimUrl}>Claim your seat</EmailButton>
