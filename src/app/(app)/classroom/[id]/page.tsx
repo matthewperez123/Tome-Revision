@@ -279,6 +279,11 @@ function TeacherClassroomView({ classroomId }: { classroomId: string }) {
             <Calendar className="size-3.5" /> Manage
           </Button>
         </Link>
+        <Link href={`/classroom/${classroomId}/planner`}>
+          <Button variant="outline" size="sm" className="gap-1.5">
+            <Calendar className="size-3.5" /> Term Planner
+          </Button>
+        </Link>
         <Link href={`/classroom/${classroomId}/semester-plan`}>
           <Button
             size="sm"
