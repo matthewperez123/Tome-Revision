@@ -1,0 +1,41 @@
+.character { aspect-ratio: 1; }
+.artwork { display: block; width: 100%; height: 100%; overflow: visible; }
+.artwork [data-part="Virgil"] { transform-origin: 256px 390px; animation: float 3s ease-in-out infinite; }
+.artwork [data-part="Shadow"] { transform-origin: 256px 448px; animation: shadow 3s ease-in-out infinite; }
+.artwork [data-part="Eyes"] { transform-box: fill-box; transform-origin: center; animation: blink 5s ease-in-out infinite; }
+.artwork [data-part="Head"] { transform-origin: 270px 280px; }
+.artwork [data-pose] { display: none; }
+.character[data-mood="wave"] [data-pose="04_Wink"],
+.character[data-mood="think"] [data-pose="06_Think"],
+.character[data-mood="celebrate"] [data-pose="03_Joy"],
+.character[data-mood="read"] [data-pose="11_Read"] { display: block; }
+.artwork [data-part="HandLeft"] { transform-origin: 160px 309px; }
+.artwork [data-part="CapeLeft"] { transform-origin: 274px 278px; animation: cape 3s ease-in-out infinite; }
+.character[data-mood="wave"] [data-part="HandLeft"] { animation: wave 1.6s ease-in-out infinite; }
+.character[data-mood="wave"] [data-part="Head"] { transform: rotate(-5deg); }
+.character[data-mood="think"] [data-part="Head"] { animation: think 3s ease-in-out infinite; }
+.character[data-mood="think"] [data-part="Eyes"] { animation: ponder 3s ease-in-out infinite; }
+.character[data-mood="celebrate"] [data-part="Virgil"] { animation: celebrate 2s ease-in-out infinite; }
+.character[data-mood="celebrate"] [data-part="HandLeft"] { animation: wave 0.8s ease-in-out infinite; }
+.character[data-mood="celebrate"] [data-part="Shadow"] { animation: celebration-shadow 2s ease-in-out infinite; }
+.character[data-mood="read"] [data-part="Head"] { animation: read 3s ease-in-out infinite; }
+.character[data-mood="read"] [data-part="Eyes"] { animation: reading-eyes 3s ease-in-out infinite; }
+.character[data-mood="read"] [data-part="ScrollHand"] { transform-origin: 350px 320px; animation: scroll 3s ease-in-out infinite; }
+.character[data-paused="true"] .artwork [data-part] { animation-play-state: paused; }
+
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
+@keyframes shadow { 0%, 100% { transform: scaleX(1); opacity: 1; } 50% { transform: scaleX(.9); opacity: .7; } }
+@keyframes blink { 0%, 42%, 46%, 100% { transform: scaleY(1); } 44% { transform: scaleY(.08); } }
+@keyframes cape { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(2deg); } }
+@keyframes wave { 0%, 100% { transform: rotate(0); } 20%, 60% { transform: rotate(40deg); } 40%, 80% { transform: rotate(15deg); } }
+@keyframes think { 0%, 100% { transform: rotate(0); } 35%, 75% { transform: rotate(-9deg); } }
+@keyframes ponder { 0%, 100% { transform: translate(0, 0); } 35%, 75% { transform: translate(-5px, -6px); } }
+@keyframes celebrate { 0%, 100% { transform: translateY(0) scale(1); } 15% { transform: translateY(5px) scale(1.04, .95); } 40% { transform: translateY(-27px) scale(.98, 1.04) rotate(-5deg); } 65% { transform: translateY(0) scale(1.04, .96); } 80% { transform: translateY(-6px) rotate(3deg); } }
+@keyframes celebration-shadow { 0%, 100% { transform: scaleX(1); opacity: 1; } 40% { transform: scaleX(.65); opacity: .5; } }
+@keyframes read { 0%, 100% { transform: rotate(0); } 25%, 75% { transform: rotate(7deg) translateY(3px); } }
+@keyframes reading-eyes { 0%, 100% { transform: translate(0, 0); } 25%, 60% { transform: translate(6px, 8px); } 75% { transform: translate(2px, 8px); } }
+@keyframes scroll { 0%, 100% { transform: rotate(0); } 25%, 75% { transform: rotate(-8deg) translateY(-5px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .character .artwork [data-part] { animation: none !important; transform: none !important; }
+}
