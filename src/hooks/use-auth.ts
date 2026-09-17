@@ -218,20 +218,39 @@ function useAuthMachine(seed: Seed | null, active: boolean): AuthValue {
     // Keep the DB profile fresh across auth events (sign-in, token refresh,
     // sign-out). Role continues to come only from the DB profile; there is no
     // route- or event-driven role reassignment.
+    // IMPORTANT: the handler body is deferred out of the callback tick.
+    // supabase-js invokes onAuthStateChange callbacks while HOLDING its auth
+    // lock; awaiting a Supabase query inside the callback (fetchProfile needs
+    // the same lock for its access token) deadlocks the whole client — every
+    // later .from() query hangs before dispatching HTTP. setTimeout(0) lets
+    // the callback return immediately so the lock is released first.
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      async (event, session) => {
+      (event, session) => {
+        setTimeout(() => void handleAuthEvent(event, session), 0)
+      },
+    )
+
+    async function handleAuthEvent(
+      event: string,
+      session: { user: User } | null,
+    ) {
         if (session?.user) {
-          const profile = await fetchProfile(session.user.id)
+          const sessionUser = session.user
+          const profile = await fetchProfile(sessionUser.id)
           const preview = getRolePreview()
-          setState({
-            user: session.user,
+          setState((prev) => ({
+            // Keep the SAME user object reference when the id hasn't changed
+            // (e.g. TOKEN_REFRESHED after every server action). Consumers key
+            // effects on `user`; a fresh object per refresh event would
+            // re-trigger their data fetches in a loop.
+            user: prev.user && prev.user.id === sessionUser.id ? prev.user : sessionUser,
             profile,
             role: preview ?? profile?.role ?? null,
             isLoading: false,
             isAuthenticated: true,
             isDemoMode: false,
             rolePreview: preview,
-          })
+          }))
         } else if (event === "SIGNED_OUT") {
           // ONLY a genuine sign-out clears auth. A signed-out visitor may then
           // fall back to the localStorage demo view. We gate on SIGNED_OUT so a
@@ -251,8 +270,7 @@ function useAuthMachine(seed: Seed | null, active: boolean): AuthValue {
         // Any other session-less event (e.g. INITIAL_SESSION before the session
         // hydrates) is ignored here — initAuth already established the correct
         // state, and we never downgrade a real role on a non-sign-out event.
-      },
-    )
+    }
 
     return () => subscription.unsubscribe()
   }, [fetchProfile, active])
