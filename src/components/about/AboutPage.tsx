@@ -23,14 +23,14 @@ export function AboutPage() {
           alt="The Barque of Dante by Eugène Delacroix, 1822"
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover object-center marketing-vibrant marketing-hero-drift"
           unoptimized
         />
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to top, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.4) 30%, transparent 60%)",
+              "linear-gradient(to top, rgba(10,10,10,0.72) 0%, rgba(10,10,10,0.3) 30%, transparent 55%)",
           }}
         />
 
