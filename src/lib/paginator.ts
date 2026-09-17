@@ -124,6 +124,104 @@ function splitInlineByBr(el: HTMLElement): HTMLElement[] {
 }
 
 /**
+ * Split an over-tall inline-flow block with no <br> boundaries (a very long
+ * prose paragraph) at word boundaries, by measurement. Every word of each
+ * direct text node is wrapped in an inline span (inline spans don't change
+ * wrapping, so the probe lays out exactly like the render); we then walk the
+ * word boxes and break where the next line would exceed `pageHeight`. Inline
+ * element children (<em>, <a>, …) are kept atomic. Returns full page HTML
+ * strings, each re-wrapped in a shallow clone of the original block, or []
+ * when everything fits on one page.
+ */
+function splitInlineByWords(
+  el: HTMLElement,
+  pageHeight: number,
+  makeProbe: () => HTMLElement,
+  wrapTemplate: HTMLElement | null
+): string[] {
+  const probe = makeProbe()
+  let parent: HTMLElement = probe
+  if (wrapTemplate) {
+    const w = wrapTemplate.cloneNode(false) as HTMLElement
+    probe.appendChild(w)
+    parent = w
+  }
+  const host = el.cloneNode(false) as HTMLElement
+  parent.appendChild(host)
+
+  // Word-wrap direct text nodes of a deep clone; element children stay atomic.
+  const prepared = el.cloneNode(true) as HTMLElement
+  for (const child of Array.from(prepared.childNodes)) {
+    if (child.nodeType !== Node.TEXT_NODE) continue
+    const text = child.textContent ?? ""
+    const frag = document.createDocumentFragment()
+    for (const token of text.split(/(\s+)/)) {
+      if (!token) continue
+      if (/^\s+$/.test(token)) {
+        frag.appendChild(document.createTextNode(token))
+      } else {
+        const s = document.createElement("span")
+        s.textContent = token
+        frag.appendChild(s)
+      }
+    }
+    prepared.replaceChild(frag, child)
+  }
+  while (prepared.firstChild) host.appendChild(prepared.firstChild)
+  document.body.appendChild(probe)
+
+  // Half-leading correction: inline rects are glyph boxes, but the page clips
+  // at line-box edges — extend each measured bottom to its line-box bottom.
+  const lineH = parseFloat(getComputedStyle(host).lineHeight) || 0
+
+  const pages: string[] = []
+  let current: Node[] = []
+  let pageStartTop: number | null = null
+  const flush = () => {
+    if (current.length === 0) return
+    const w = el.cloneNode(false) as HTMLElement
+    for (const n of current) {
+      // Unwrap measurement spans back to plain text so emitted HTML is clean.
+      if (n.nodeType === Node.ELEMENT_NODE && (n as Element).tagName === "SPAN" && (n as Element).attributes.length === 0) {
+        w.appendChild(document.createTextNode(n.textContent ?? ""))
+      } else {
+        w.appendChild(n.cloneNode(true))
+      }
+    }
+    w.normalize()
+    pages.push(w.outerHTML)
+    current = []
+  }
+
+  for (const node of Array.from(host.childNodes)) {
+    if (node.nodeType !== Node.ELEMENT_NODE) {
+      current.push(node) // whitespace rides with the preceding word
+      continue
+    }
+    const rects = (node as HTMLElement).getClientRects()
+    if (rects.length === 0) {
+      current.push(node)
+      continue
+    }
+    const first = rects[0]
+    const last = rects[rects.length - 1]
+    const adj = Math.max(0, (lineH - first.height) / 2)
+    const top = first.top - adj
+    const bottom = last.bottom + Math.max(0, (lineH - last.height) / 2)
+    if (pageStartTop === null) pageStartTop = top
+    if (bottom - pageStartTop > pageHeight && current.length > 0) {
+      flush()
+      pageStartTop = top
+    }
+    current.push(node)
+  }
+  flush()
+
+  document.body.removeChild(probe)
+  return pages.length > 1 ? pages : []
+}
+
+/**
  * Lay a list of block elements into a fresh probe, then break them into page
  * HTML strings (largest run of whole blocks that fits `pageHeight`, measured
  * from the first block's real offsetTop so stacked margins are honored).
@@ -203,8 +301,15 @@ function paginateBlocks(
           const subPages = paginateBlocks(lineGroups, pageHeight, makeProbe, innerWrap)
           for (const sp of subPages) out.push(wrapHtml(sp))
         } else {
-          // Truly unsplittable (lone image, single child) — its own page.
-          out.push(wrapHtml(el.outerHTML))
+          // No <br> boundaries — a very long prose paragraph. Split at word
+          // boundaries by measurement so it flows across pages.
+          const wordPages = splitInlineByWords(blocks[i], pageHeight, makeProbe, wrapTemplate)
+          if (wordPages.length > 0) {
+            for (const sp of wordPages) out.push(wrapHtml(sp))
+          } else {
+            // Truly unsplittable (lone image, single word) — its own page.
+            out.push(wrapHtml(el.outerHTML))
+          }
         }
       }
       start = i + 1
