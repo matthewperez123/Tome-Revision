@@ -272,6 +272,56 @@ export function ReaderSettingsPanel({ canSpread }: ReaderSettingsPanelProps) {
             </div>
           )}
 
+          {/* Hyphenation — codex spec default is OFF (word-space justification
+              only); exposed as an opt-in reader setting. */}
+          <button
+            type="button"
+            onClick={() => setReaderPrefs({ hyphenate: !prefs.hyphenate })}
+            aria-pressed={prefs.hyphenate}
+            className="flex w-full items-center justify-between gap-2 rounded-md py-1 text-[11px] text-muted-foreground hover:text-foreground"
+          >
+            <span>Hyphenation</span>
+            <span
+              className={cn(
+                "inline-flex h-4 w-7 items-center rounded-full px-0.5 transition-colors",
+                prefs.hyphenate ? "bg-[var(--codex-primary)]" : "bg-muted"
+              )}
+            >
+              <span
+                className={cn(
+                  "size-3 rounded-full bg-white transition-transform",
+                  prefs.hyphenate ? "translate-x-3" : "translate-x-0"
+                )}
+              />
+            </span>
+          </button>
+
+          {/* Chapters open on recto (paginated modes only) — inserts a counted
+              blank verso so every chapter starts on a right-hand page. */}
+          {effectiveMode !== "scroll" && (
+            <button
+              type="button"
+              onClick={() => setReaderPrefs({ openRecto: !prefs.openRecto })}
+              aria-pressed={prefs.openRecto}
+              className="flex w-full items-center justify-between gap-2 rounded-md py-1 text-[11px] text-muted-foreground hover:text-foreground"
+            >
+              <span>Chapters open on recto</span>
+              <span
+                className={cn(
+                  "inline-flex h-4 w-7 items-center rounded-full px-0.5 transition-colors",
+                  prefs.openRecto ? "bg-[var(--codex-primary)]" : "bg-muted"
+                )}
+              >
+                <span
+                  className={cn(
+                    "size-3 rounded-full bg-white transition-transform",
+                    prefs.openRecto ? "translate-x-3" : "translate-x-0"
+                  )}
+                />
+              </span>
+            </button>
+          )}
+
           {/* Accessibility reading face */}
           <button
             type="button"

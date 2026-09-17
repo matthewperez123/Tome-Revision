@@ -139,6 +139,7 @@ export interface FolioMapOptions {
   lineHeight: number
   justify: boolean
   a11yFace: boolean
+  hyphenate?: boolean
   openRecto: boolean
   /** Return true to abort (e.g. React effect cleanup). */
   isCancelled?: () => boolean
@@ -153,7 +154,7 @@ export interface FolioMapOptions {
 export async function computeBookFolioMap(opts: FolioMapOptions): Promise<FolioMap | null> {
   const {
     bookId, chapterTitles, headerParts, contentTypeClass,
-    fontSizePx, lineHeight, justify, a11yFace, openRecto, isCancelled,
+    fontSizePx, lineHeight, justify, a11yFace, hyphenate = false, openRecto, isCancelled,
   } = opts
   const n = chapterTitles.length
   const usableH = codexTextHeight(fontSizePx, lineHeight)
@@ -192,6 +193,7 @@ export async function computeBookFolioMap(opts: FolioMapOptions): Promise<FolioM
         contentTypeClass,
         justify,
         a11yFace,
+        hyphenate,
         // Codex: the fixed text block IS the measure.
         measure: `${CODEX.textW}px`,
       })

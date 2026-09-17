@@ -20,6 +20,7 @@ export interface PaginatedReaderProps {
   lineHeight: number
   justify: boolean
   a11yFace: boolean
+  hyphenate?: boolean
   turnStyle: ReaderTurnStyle
   onToggleToolbar: () => void
   contentTypeClass?: string // "content-drama" | "content-verse" | "content-prose"
@@ -110,6 +111,7 @@ export function PaginatedReader({
   lineHeight,
   justify,
   a11yFace,
+  hyphenate = false,
   turnStyle,
   onToggleToolbar,
   contentTypeClass = "content-prose",
@@ -350,7 +352,8 @@ export function PaginatedReader({
                 "font-serif prose-reader mx-auto w-full flex-1",
                 contentTypeClass,
                 justify ? "reader-justify" : "reader-ragged",
-                a11yFace && "reader-a11y-face"
+                a11yFace && "reader-a11y-face",
+                hyphenate && "reader-hyphenate"
               )}
               style={contentStyle}
               data-reader-text

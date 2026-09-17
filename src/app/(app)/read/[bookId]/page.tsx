@@ -41,7 +41,14 @@ import {
   useReaderPrefs,
   setReaderPrefs,
 } from "@/lib/reader/reader-prefs"
-import { useReaderPrefsSync, saveReadingPosition, fetchReadingPosition } from "@/lib/reader/reader-sync"
+import {
+  useReaderPrefsSync,
+  saveReadingPosition,
+  fetchReadingPosition,
+  fetchCanonicalPageMap,
+  toCanonicalPage,
+  type CanonicalPageMap,
+} from "@/lib/reader/reader-sync"
 import { sanitizeReaderHtml } from "@/lib/reader/sanitize"
 import { WordTooltipProvider } from "./word-tooltip"
 import { useBookProgress } from "@/components/tome/book-progress-provider"
@@ -242,7 +249,8 @@ export default function ReaderPage() {
           "mt-8 font-serif prose-reader reader-measure",
           contentTypeClass,
           prefs.justify ? "reader-justify" : "reader-ragged",
-          prefs.a11yFace && "reader-a11y-face"
+          prefs.a11yFace && "reader-a11y-face",
+          prefs.hyphenate && "reader-hyphenate"
         )}
         style={{
           fontSize:   "var(--reader-font-size)",
@@ -253,7 +261,7 @@ export default function ReaderPage() {
         dangerouslySetInnerHTML={{ __html: stripLeadingHeading(chapterHTML) }}
       />
     )
-  }, [chapterHTML, prefs.justify, prefs.a11yFace, book])
+  }, [chapterHTML, prefs.justify, prefs.a11yFace, prefs.hyphenate, book])
 
   // ── Refs ──
   const scrollContentRef       = useRef<HTMLDivElement>(null)
@@ -668,6 +676,7 @@ export default function ReaderPage() {
         contentTypeClass: ctClass,
         justify: prefs.justify,
         a11yFace: prefs.a11yFace,
+        hyphenate: prefs.hyphenate,
         // Codex: the fixed text block IS the measure — the measure-ch pref
         // applies to scroll mode only.
         measure: `${CODEX.textW}px`,
@@ -721,13 +730,23 @@ export default function ReaderPage() {
     runPagination()
     return () => { cancelled = true }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [chapterHTML, isScroll, currentChapter, fontSize, prefs.lineHeight, prefs.justify, prefs.a11yFace])
+  }, [chapterHTML, isScroll, currentChapter, fontSize, prefs.lineHeight, prefs.justify, prefs.a11yFace, prefs.hyphenate])
 
   // Save page position to localStorage in paginated mode (instant per-chapter restore)
   useEffect(() => {
     if (isScroll) return
     localStorage.setItem(`tome-page-${bookId}-${currentChapter}`, String(currentPage))
   }, [currentPage, isScroll, bookId, currentChapter])
+
+  // Canonical whole-book page map (codex spec §5.7) — fetched once per book so
+  // saved positions carry a typography-independent canonical page number that
+  // teachers and assignments can reference ("pp. 1–58").
+  const [canonicalMap, setCanonicalMap] = useState<CanonicalPageMap | null>(null)
+  useEffect(() => {
+    let cancelled = false
+    fetchCanonicalPageMap(bookId).then(m => { if (!cancelled) setCanonicalMap(m) })
+    return () => { cancelled = true }
+  }, [bookId])
 
   // Mirror reading position to the account (debounced ~3s) for cross-device
   // resume. Chapter + percent in both modes; page only in paginated mode.
@@ -738,8 +757,17 @@ export default function ReaderPage() {
       page: isScroll ? null : currentPage,
       scrollRatio: null,
       percent: Math.round(((currentChapter + 1) / total) * 100),
+      canonicalPage: canonicalMap
+        ? toCanonicalPage(
+            canonicalMap,
+            currentChapter,
+            isScroll ? null : currentPage,
+            isScroll ? null : pages.length || null
+          )
+        : null,
     })
-  }, [bookId, currentChapter, currentPage, isScroll, chapters.length])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [bookId, currentChapter, currentPage, isScroll, chapters.length, canonicalMap])
 
   // Cross-device resume detection. On mount (and whenever the tab regains
   // focus) fetch the account position; if it is ahead of where we are, surface
@@ -773,7 +801,7 @@ export default function ReaderPage() {
     // measurement itself lives in the shared lib so the live reader and the
     // headless canonical-map generator can never drift.
     const ctClass = book && "genres" in book ? getContentTypeClass((book as TomeBook).genres) : "content-prose"
-    const key = `${bookId}-codex1-${fontSize}-${prefs.lineHeight}-${prefs.justify}-${prefs.a11yFace}-${prefs.openRecto}`
+    const key = `${bookId}-codex1-${fontSize}-${prefs.lineHeight}-${prefs.justify}-${prefs.a11yFace}-${prefs.hyphenate}-${prefs.openRecto}`
 
     let cancelled = false
     ;(async () => {
@@ -786,6 +814,7 @@ export default function ReaderPage() {
         lineHeight: prefs.lineHeight,
         justify: prefs.justify,
         a11yFace: prefs.a11yFace,
+        hyphenate: prefs.hyphenate,
         openRecto: prefs.openRecto,
         isCancelled: () => cancelled,
       })
@@ -794,7 +823,7 @@ export default function ReaderPage() {
     })()
     return () => { cancelled = true }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isScroll, bookId, fontSize, prefs.lineHeight, prefs.justify, prefs.a11yFace, prefs.openRecto, chapters, book])
+  }, [isScroll, bookId, fontSize, prefs.lineHeight, prefs.justify, prefs.a11yFace, prefs.hyphenate, prefs.openRecto, chapters, book])
 
   // Global folio for a local (within-chapter) page index. Front matter → roman,
   // body → arabic restarting at 1 on the first body page. While the whole-book
@@ -1439,6 +1468,7 @@ export default function ReaderPage() {
                 lineHeight={prefs.lineHeight}
                 justify={prefs.justify}
                 a11yFace={prefs.a11yFace}
+                hyphenate={prefs.hyphenate}
                 turnStyle={prefs.turnStyle}
                 onToggleToolbar={() => setSidebarOpen(s => !s)}
                 contentTypeClass={book && "genres" in book ? getContentTypeClass((book as TomeBook).genres) : "content-prose"}

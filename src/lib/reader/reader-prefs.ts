@@ -28,6 +28,7 @@ export interface ReaderPrefs {
   a11yFace: boolean // accessibility reading face (sans) instead of Literata
   showFrontMatter: boolean // include imprint/colophon/etc. in the reading flow
   openRecto: boolean // chapters open on a right-hand page (blank verso inserted)
+  hyphenate: boolean // hyphens: auto (codex spec default is off / hyphens: none)
 }
 
 export const READER_PREFS_DEFAULTS: ReaderPrefs = {
@@ -46,6 +47,7 @@ export const READER_PREFS_DEFAULTS: ReaderPrefs = {
   // Off by default: readers preferred an unbroken flow of text (no inserted
   // blank versos). The recto-open convention stays available as a setting.
   openRecto: false,
+  hyphenate: false,
 }
 
 export const FONT_SIZE_RANGE = { min: 14, max: 26, step: 1 } as const
@@ -106,6 +108,7 @@ function coerce(raw: unknown): ReaderPrefs {
     showFrontMatter:
       typeof p.showFrontMatter === "boolean" ? p.showFrontMatter : READER_PREFS_DEFAULTS.showFrontMatter,
     openRecto: typeof p.openRecto === "boolean" ? p.openRecto : READER_PREFS_DEFAULTS.openRecto,
+    hyphenate: typeof p.hyphenate === "boolean" ? p.hyphenate : READER_PREFS_DEFAULTS.hyphenate,
   }
 }
 
@@ -176,7 +179,8 @@ export function setReaderPrefs(patch: Partial<ReaderPrefs>): void {
     next.turnStyle === state.turnStyle &&
     next.a11yFace === state.a11yFace &&
     next.showFrontMatter === state.showFrontMatter &&
-    next.openRecto === state.openRecto
+    next.openRecto === state.openRecto &&
+    next.hyphenate === state.hyphenate
   ) {
     return
   }

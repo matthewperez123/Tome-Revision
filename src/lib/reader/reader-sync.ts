@@ -116,6 +116,9 @@ export interface ReadingPosition {
   scrollRatio: number | null
   paragraphAnchor?: string | null
   percent?: number | null
+  /** Position in the canonical whole-book page map (codex spec §5.7) — a
+   *  typography-independent page number teachers can reference. */
+  canonicalPage?: number | null
 }
 
 let positionTimer: ReturnType<typeof setTimeout> | null = null
@@ -135,6 +138,7 @@ export function saveReadingPosition(bookId: string, pos: ReadingPosition): void 
         scroll_ratio: pos.scrollRatio,
         paragraph_anchor: pos.paragraphAnchor ?? null,
         percent: pos.percent ?? null,
+        canonical_page: pos.canonicalPage ?? null,
         updated_at: new Date().toISOString(),
       },
       { onConflict: "user_id,book_id" }
@@ -143,6 +147,57 @@ export function saveReadingPosition(bookId: string, pos: ReadingPosition): void 
     // is now observable rather than silently dropped.
     if (error) console.warn("[reader-sync] reading_progress upsert failed:", error.message)
   }, 3000)
+}
+
+// ── Canonical whole-book page map ────────────────────────────────────────────
+
+export interface CanonicalPageMap {
+  chapterPages: number[] // canonical page count per chapter (default typography)
+  totalPages: number
+}
+
+/**
+ * Fetch the stored canonical page map for a book (public catalogue metadata,
+ * computed headless at the codex default typography — see
+ * scripts/reader/backfill-page-maps.ts). Null when no map exists yet.
+ */
+export async function fetchCanonicalPageMap(bookId: string): Promise<CanonicalPageMap | null> {
+  try {
+    const { data } = await supabase
+      .from("book_page_maps")
+      .select("chapter_pages, total_pages")
+      .eq("book_id", bookId)
+      .maybeSingle()
+    if (!data?.chapter_pages) return null
+    return {
+      chapterPages: data.chapter_pages as number[],
+      totalPages: (data.total_pages as number) ?? 0,
+    }
+  } catch {
+    return null
+  }
+}
+
+/**
+ * Map a live reading position onto the canonical page map. The reader's local
+ * pagination may differ from the canonical typography, so the within-chapter
+ * position is mapped proportionally onto the chapter's canonical page count.
+ */
+export function toCanonicalPage(
+  map: CanonicalPageMap,
+  chapterIndex: number,
+  localPage: number | null,
+  localPageCount: number | null
+): number | null {
+  if (chapterIndex < 0 || chapterIndex >= map.chapterPages.length) return null
+  let before = 0
+  for (let i = 0; i < chapterIndex; i++) before += map.chapterPages[i]
+  const chapterTotal = Math.max(1, map.chapterPages[chapterIndex])
+  const frac =
+    localPage !== null && localPageCount !== null && localPageCount > 0
+      ? Math.min(1, Math.max(0, localPage / localPageCount))
+      : 0
+  return before + Math.min(chapterTotal, Math.floor(frac * chapterTotal) + 1)
 }
 
 /** Fetch the last saved reading position for the logged-in user, if any. */

@@ -13,6 +13,7 @@ export interface PaginateOptions {
   contentTypeClass?: string // "content-drama" | "content-verse" | "content-prose"
   justify?: boolean   // match the reading surface so page counts don't drift
   a11yFace?: boolean  // accessibility (sans) reading face
+  hyphenate?: boolean // hyphens: auto (reader setting; off by default)
   // CSS max-width matching the rendered `.reader-measure` cap (e.g. "68ch").
   // Without this the probe wraps at the full page width while the rendered
   // page wraps at the (narrower) measure — extra lines then overflow the
@@ -323,7 +324,7 @@ function paginateBlocks(
 }
 
 export async function paginateHTML(options: PaginateOptions): Promise<string[]> {
-  const { html, pageHeight, pageWidth, fontSize, lineHeight = 1.6, contentTypeClass = "content-prose", justify = false, a11yFace = false, measure } = options
+  const { html, pageHeight, pageWidth, fontSize, lineHeight = 1.6, contentTypeClass = "content-prose", justify = false, a11yFace = false, hyphenate = false, measure } = options
 
   // Guard: SSR or invalid dimensions
   if (typeof window === "undefined") return [html]
@@ -334,7 +335,7 @@ export async function paginateHTML(options: PaginateOptions): Promise<string[]> 
 
   // Check cache — keyed on everything that changes wrapped-line height.
   const htmlHash = fastHash(html)
-  const cacheKey = `${fontSize}-${lineHeight}-${Math.round(pageHeight)}-${Math.round(pageWidth)}-${contentTypeClass}-${justify ? "j" : "r"}-${a11yFace ? "a" : "s"}-${measure ?? "none"}-${htmlHash}`
+  const cacheKey = `${fontSize}-${lineHeight}-${Math.round(pageHeight)}-${Math.round(pageWidth)}-${contentTypeClass}-${justify ? "j" : "r"}-${a11yFace ? "a" : "s"}-${hyphenate ? "h" : "n"}-${measure ?? "none"}-${htmlHash}`
   if (paginationCache.has(cacheKey)) {
     return paginationCache.get(cacheKey)!
   }
@@ -343,7 +344,7 @@ export async function paginateHTML(options: PaginateOptions): Promise<string[]> 
   // styles so DOM measurement matches the rendered page. A fresh probe per
   // (recursive) call keeps nested split measurements from disturbing parent
   // offsets.
-  const probeClassName = `font-serif prose-reader ${contentTypeClass} ${justify ? "reader-justify" : "reader-ragged"}${a11yFace ? " reader-a11y-face" : ""}`
+  const probeClassName = `font-serif prose-reader ${contentTypeClass} ${justify ? "reader-justify" : "reader-ragged"}${a11yFace ? " reader-a11y-face" : ""}${hyphenate ? " reader-hyphenate" : ""}`
   const makeProbe = (): HTMLElement => {
     const probe = document.createElement("div")
     probe.setAttribute("aria-hidden", "true")

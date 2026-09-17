@@ -1449,6 +1449,14 @@ mark.tome-shared-annotation {
   hyphens: none !important;
 }
 
+/* ── Hyphenation setting (off by default per codex spec) ────────────────
+   Opt-in `hyphens: auto` for prose paragraphs only. Verse/drama/blockquote
+   hard guards above still win (!important), so poetry never hyphenates. */
+.prose-reader.reader-hyphenate p {
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
 /* ── Accessibility reading face ─────────────────────────────────────────
    Opt-in swap of Literata for the UI sans face (Inter) for readers who find
    it easier. RUBRIC keeps Literata as the default reading face. */
