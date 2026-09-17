@@ -43,7 +43,7 @@ import {
 } from "@/lib/marketing/catalog-stats"
 import { useCatalogStats } from "@/lib/marketing/catalog-stats-context"
 import { marketingMasterImages } from "@/lib/marketing-images"
-import { VirgilCharacter } from "@/components/virgil/VirgilCharacter"
+import { VirgilOrb } from "@/components/virgil/VirgilOrb"
 import { cn } from "@/lib/utils"
 
 // ── Section shell ───────────────────────────────────────────────────
@@ -316,7 +316,7 @@ function GuideWithAssistant() {
 
         <div className="border-t border-border bg-card p-4">
           <div className="mb-2 flex items-center gap-2">
-            <VirgilCharacter mood={thinking ? "think" : asked ? "read" : "idle"} className="size-12 shrink-0" />
+            <VirgilOrb className="size-6 border border-primary/40" />
             <span className="text-xs font-semibold text-primary">Tome Assistant</span>
             <span className="text-[10px] text-muted-foreground">
               &middot; {DEMO_PASSAGE.annotationLabel}
