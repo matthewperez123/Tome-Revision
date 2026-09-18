@@ -1,5 +1,35 @@
 @AGENTS.md
 
+## Codex Reader — canonical pages (2026-09-17)
+
+The paginated reader renders a fixed "codex" page: geometry frozen in
+`src/lib/reader/codex-spec.ts` (page 528×816, text block 392×672, Literata
+16/24 justified, hyphenation off). Every book has ONE canonical whole-book
+page map at that geometry, stored in `book_page_maps` (prod, `spec_version = 1`:
+chapter_pages, chapter_matter front|body, folio_start, total_pages). Front
+matter shows roman folios from i; body restarts arabic at 1. `canonical_page`
+in reading progress refers to this map (`src/lib/reader/reader-sync.ts`),
+so positions and assigned page ranges are stable across devices and font sizes.
+
+- Live folio display is computed CLIENT-SIDE by `computeBookFolioMap`
+  (`src/lib/reader/folio-map.ts`, shared with the headless generator) — the
+  stored map only feeds canonical-page progress. Until the live map lands,
+  folios fall back to chapter-local numbers.
+- Any change to the codex geometry, `src/lib/paginator.ts`, or reader
+  typography CSS MUST bump `spec_version` and re-run the backfill:
+  `npx tsx scripts/reader/backfill-page-maps.ts --all --force --concurrency=4`
+  (needs a dev server on :3000; resumable — book_page_maps is the ledger).
+- Regression harness: `npx tsx scripts/verify-reader.ts` (11 books,
+  prose/verse/drama/front-matter; §5.8 assertions). Calibration + honest
+  deviations: `docs/reader-codex-calibration.md`.
+- Known deferred: canonical-range folios at enlarged type; words/page median
+  ~145–172 vs the 280–340 aspiration (physical ceiling of the approved
+  geometry); illustrations never render (sanitize.ts strips unhosted SE
+  `../images/…` srcs by design — image checks are in place but vacuous).
+- Playwright + tsx gotcha: esbuild keepNames injects `__name(...)` into
+  serialized page functions → instant ReferenceError. Pass predicates to
+  `waitForFunction` as strings.
+
 ## Stoa Gallery Invariant
 
 The Stoa (painting gallery) enforces a strict 1:1 painting-to-book relationship:
