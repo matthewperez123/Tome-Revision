@@ -4,6 +4,7 @@ import Link from "next/link"
 import { ArrowRight, Lock } from "lucide-react"
 import { LandingFooter } from "@/components/landing/LandingFooter"
 import { BillingPlans, type BillingPlanCard } from "@/components/pricing/BillingPlans"
+import { PlanComparison } from "@/components/pricing/PlanComparison"
 import { getMarketingTiers, getTopupOffer, isPurchasableTier } from "@/lib/billing/tiers"
 import { getFaqCategories } from "@/lib/faqs"
 import { getCatalogStats } from "@/lib/marketing/catalog-stats"
@@ -145,6 +146,9 @@ export default async function PricingPage({
             invoice or purchase order.
           </p>
         </section>
+
+        {/* Comparison table (stacked cards under 768px) */}
+        <PlanComparison />
 
         {/* FAQ teaser strip */}
         <section className="mx-auto mt-24 max-w-3xl">
