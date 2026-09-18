@@ -10,7 +10,11 @@ import {
   getTopupPriceId,
   isPurchasableTier,
 } from "@/lib/billing/prices"
-import { MIN_STUDENT_SEATS, SCHOOL_MIN_SEATS } from "@/lib/billing/config"
+import {
+  MIN_STUDENT_SEATS,
+  SCHOOL_MIN_SEATS,
+  QUESTIONS_TOPUP_BLOCK,
+} from "@/lib/billing/config"
 import { createClient } from "@/lib/supabase/server"
 import { createAdminClient as createAdminClientUntyped } from "@/lib/supabase/admin"
 import type { SupabaseClient } from "@supabase/supabase-js"
@@ -172,6 +176,7 @@ export async function POST(req: Request) {
     kind,
     ...(tier ? { tier } : {}),
     ...(studentSeats > 0 ? { student_seats: String(studentSeats) } : {}),
+    ...(isTopup ? { topup_questions: String(QUESTIONS_TOPUP_BLOCK) } : {}),
   }
 
   try {

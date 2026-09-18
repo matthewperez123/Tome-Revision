@@ -35,6 +35,11 @@ export function schoolFlatForKey(key: string) {
   return SCHOOL_FLAT_TIERS.find((t) => t.key === key) ?? null
 }
 
+/** Reverse lookup: a subscription line-item price id → the flat School tier. */
+export function schoolFlatForPriceId(priceId: string) {
+  return SCHOOL_FLAT_TIERS.find((t) => envPrice(t.env) === priceId) ?? null
+}
+
 /** Family (Homeschool) $99 yearly. */
 export function getFamilyPriceId(): string | null {
   return envPrice("TOME_PRICE_FAMILY_YEARLY")

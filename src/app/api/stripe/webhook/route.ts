@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server"
 import type Stripe from "stripe"
 import { getStripe } from "@/lib/stripe/server"
-import { tierForBillingPriceId } from "@/lib/billing/prices"
+import { tierForBillingPriceId, schoolFlatForPriceId } from "@/lib/billing/prices"
+import { FAMILY_STUDENT_LIMIT } from "@/lib/billing/config"
 import { isPaidTier, type PaidTier } from "@/lib/stripe/plans"
 import { createAdminClient as createAdminClientUntyped } from "@/lib/supabase/admin"
 import type { SupabaseClient } from "@supabase/supabase-js"
@@ -10,6 +11,7 @@ import {
   sendReceiptEmail,
   sendTrialEndingEmail,
   sendPaymentFailedEmail,
+  sendCancellationEmail,
 } from "@/lib/email/billing"
 
 type Admin = SupabaseClient<any, "public", any>
@@ -90,6 +92,24 @@ export async function POST(req: Request) {
             tier: session.metadata?.tier ?? null,
           })
           console.log(`[stripe-webhook] handled ${event.type} (${event.id}): ${result.log}`)
+        } else if (
+          session.mode === "payment" &&
+          session.metadata?.kind === "topup" &&
+          session.payment_status === "paid"
+        ) {
+          // One-time Questions top-up. The block size travels in metadata so
+          // the grant is exactly what was sold, idempotent on the event id.
+          const buyerId = session.client_reference_id ?? session.metadata?.user_id ?? null
+          const topupQuestions = Number(session.metadata?.topup_questions ?? NaN)
+          if (buyerId && Number.isFinite(topupQuestions) && topupQuestions > 0) {
+            // TODO(2.6): grant_question_credits(personal pool, +topupQuestions,
+            // 'topup', event.id) once the question_credit_pools schema lands.
+            console.log(
+              `[stripe-webhook] handled ${event.type} (${event.id}): topup ${topupQuestions} questions for ${buyerId} (grant pending 2.6)`,
+            )
+          } else {
+            console.log(`[stripe-webhook] handled ${event.type} (${event.id}): topup session missing buyer/count, ignored`)
+          }
         } else {
           console.log(`[stripe-webhook] handled ${event.type} (${event.id}): non-subscription session, ignored`)
         }
@@ -106,8 +126,11 @@ export async function POST(req: Request) {
         })
         // A fully deleted subscription no longer confers a paid teacher plan —
         // step the buyer back down to `reader` unless they still teach.
+        // Pools keep their balance; monthly_grant returns to free-tier values
+        // on the next syncPoolSizes run (TODO(2.6)).
         if (event.type === "customer.subscription.deleted" && result.userId) {
           await maybeDowngradeRole(admin, result.userId)
+          await sendCancellationEmail(admin, result.userId, { tier: result.tier })
         }
         console.log(`[stripe-webhook] handled ${event.type} (${event.id}): ${result.log}`)
         break
@@ -161,6 +184,9 @@ export async function POST(req: Request) {
                 nextBillingUnix: subscriptionPeriodEnd(subscription),
                 invoiceUrl: invoice.hosted_invoice_url ?? null,
               })
+              // TODO(2.6): grant_question_credits to the buyer's personal pool
+              // (QUESTIONS_PAID_TEACHER_PERSONAL_PER_MONTH) + syncPoolSizes,
+              // idempotent on event.id, once question_credit_pools lands.
             }
           } else {
             await sendPaymentFailedEmail(admin, result.userId, {
@@ -224,10 +250,7 @@ async function syncSubscription(
 
   const tier = deriveTier(subscription, hints.tier)
   const periodEnd = subscriptionPeriodEnd(subscription)
-  // Seats = the line item quantity. Only meaningful for the seat-based School
-  // plan; null for the single-seat reader plans.
-  const quantity = subscription.items.data[0]?.quantity ?? null
-  const seats = tier === "school" ? quantity : null
+  const seats = resolveSeats(tier, subscription)
 
   const { error } = await admin.from("subscriptions").upsert(
     {
@@ -249,25 +272,59 @@ async function syncSubscription(
   // surface the billing portal even before the entitlement is read.
   await persistProfileCustomerId(admin, userId, customerId)
 
-  // Family & School are teacher-capable plans: grant the teacher role so the
-  // Virgil gate (role='teacher') and educator tools unlock. Only ever SETS the
-  // role — never strips it, so a mid-period cancel doesn't yank access.
-  if ((tier === "family" || tier === "school") && isLiveStatus(subscription.status)) {
+  // Every purchasable plan is teacher-run (the Classroom teacher, the School
+  // admin, the Family parent): grant the teacher role so educator tools and
+  // the Virgil gate (role='teacher') unlock. Only ever SETS the role — never
+  // strips it, so a mid-period cancel doesn't yank access.
+  if (
+    (tier === "classroom" || tier === "family" || tier === "school") &&
+    isLiveStatus(subscription.status)
+  ) {
     await ensureTeacherRole(admin, userId)
   }
 
-  // Provision one School seat per purchased quantity: seat #1 is the buying
-  // admin (active), the rest are `pending` placeholders the admin fills by
-  // inviting teachers. Idempotent — tops up only the missing rows on replay.
+  // School only: seed the buying admin's own school_seats row (active). No
+  // placeholder rows — teachers are invited explicitly from the school panel.
   if (tier === "school" && isLiveStatus(subscription.status)) {
-    await ensureSchoolSeats(admin, userId, quantity ?? 1)
+    await ensureSchoolSeats(admin, userId)
   }
+
+  // TODO(2.6): syncPoolSizes(userId) on every subscription change once
+  // question_credit_pools lands.
 
   return {
     userId,
     tier,
     log: `user ${userId} -> tier ${tier ?? "null"}, status ${subscription.status}, seats ${seats ?? "n/a"}`,
   }
+}
+
+/**
+ * Student-seat count for the subscription row, by tier:
+ *   - checkout writes `metadata.student_seats` (classroom seats, school seats,
+ *     or a flat tier's student cap) — authoritative when present;
+ *   - flat School price ids → that flat tier's maxStudents;
+ *   - seat-priced classroom/school → the line-item quantity;
+ *   - family → FAMILY_STUDENT_LIMIT;
+ *   - grandfathered solo → null (single reader, no seats).
+ */
+function resolveSeats(
+  tier: PaidTier | null,
+  subscription: Stripe.Subscription,
+): number | null {
+  const fromMeta = Number(subscription.metadata?.student_seats ?? NaN)
+  if (Number.isFinite(fromMeta) && fromMeta > 0) return Math.floor(fromMeta)
+
+  const item = subscription.items.data[0]
+  const priceId = item?.price?.id
+  if (priceId) {
+    const flat = schoolFlatForPriceId(priceId)
+    if (flat) return flat.maxStudents
+  }
+
+  if (tier === "classroom" || tier === "school") return item?.quantity ?? null
+  if (tier === "family") return FAMILY_STUDENT_LIMIT
+  return null
 }
 
 /** A subscription status that still confers entitlement. */
@@ -308,18 +365,13 @@ async function persistProfileCustomerId(
 }
 
 /**
- * Provision the School seat roster to match the purchased quantity. Seat #1 is
- * the admin (active); each remaining seat is a `pending` placeholder (no
- * teacher yet) that an invite later claims. Idempotent — creates only the
- * shortfall, never removes seats (a downward change is handled elsewhere).
+ * Seed the School seat roster: the buying admin's own row, active. No
+ * placeholder rows — teachers are invited explicitly from the school panel
+ * (/account/school), and the seat allowance (`subscriptions.seats`) caps
+ * STUDENTS, not teacher rows. Idempotent on replay.
  */
-async function ensureSchoolSeats(
-  admin: Admin,
-  ownerId: string,
-  quantity: number,
-): Promise<void> {
-  // Seat #1 — the purchasing admin.
-  const { error: adminErr } = await admin.from("school_seats").upsert(
+async function ensureSchoolSeats(admin: Admin, ownerId: string): Promise<void> {
+  const { error } = await admin.from("school_seats").upsert(
     {
       subscription_user_id: ownerId,
       teacher_id: ownerId,
@@ -328,27 +380,8 @@ async function ensureSchoolSeats(
     },
     { onConflict: "subscription_user_id,teacher_id", ignoreDuplicates: true },
   )
-  if (adminErr) {
-    console.error(`[stripe-webhook] could not bootstrap admin seat for ${ownerId}: ${adminErr.message}`)
-  }
-
-  const target = Math.max(1, Math.floor(quantity))
-  const { count } = await admin
-    .from("school_seats")
-    .select("id", { count: "exact", head: true })
-    .eq("subscription_user_id", ownerId)
-  const missing = target - (count ?? 0)
-  if (missing <= 0) return
-
-  const rows = Array.from({ length: missing }, () => ({
-    subscription_user_id: ownerId,
-    teacher_id: null,
-    seat_role: "teacher",
-    status: "pending",
-  }))
-  const { error } = await admin.from("school_seats").insert(rows)
   if (error) {
-    console.error(`[stripe-webhook] could not provision ${missing} pending seat(s) for ${ownerId}: ${error.message}`)
+    console.error(`[stripe-webhook] could not bootstrap admin seat for ${ownerId}: ${error.message}`)
   }
 }
 
@@ -445,7 +478,10 @@ async function resolveUserId(
 }
 
 /**
- * The five sandbox Price IDs, mapped to their tier. A hardcoded fallback so
+ * The five LEGACY sandbox Price IDs, mapped to their tier.
+ * grandfathered — remove only when subscriptions has zero solo / legacy-family rows.
+ *
+ * A hardcoded fallback so
  * tier resolution NEVER depends on the TOME_PRICE_* env vars being present in
  * the runtime: the webhook must derive a tier even for an event with no
  * metadata.tier hint whose env reverse-map happens to be unset. In this Stripe
