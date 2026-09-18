@@ -35,28 +35,34 @@ writer.
 
 ## 1. Namespace: use the CANONICAL vars
 
-The app has two price-config namespaces. Only one is wired to the live UI:
+Launch-week model (annual-only): Teachers free, Classroom $12/student/yr,
+School $12/student with a $1,500 minimum or flat $1,800 ≤150 / $3,200 ≤300,
+Family $99/yr (sold only from `/homeschool`), 10,000-Question top-up $149
+(one-time). Solo is sunset — grandfathered rows only.
 
-| | Namespace | Used by |
-| --- | --- | --- |
-| **CANONICAL (use this)** | `TOME_PRICE_*` → `src/lib/billing/prices.ts` | `/pricing`, `/api/stripe/checkout`, `billing/success`, webhook reverse-map |
-| LEGACY (do not rely on) | `STRIPE_PRICE_*` → `src/lib/stripe/prices.ts`, `src/lib/marketing/plans.ts` | dead routes + the `verify:billing:stripe` script only |
+Price-id resolution lives in `src/lib/billing/prices.ts`; all dollar numbers
+in `src/lib/billing/config.ts`. The active vars, one per TEST/LIVE price:
 
-The five canonical vars, one per live TEST price:
+```
+TOME_PRICE_STUDENT_SEAT_YEARLY   # $12 recurring seat — shared by classroom + school
+TOME_PRICE_SCHOOL_FLAT_150       # $1,800 / yr, up to 150 students
+TOME_PRICE_SCHOOL_FLAT_300      # $3,200 / yr, up to 300 students
+TOME_PRICE_FAMILY_YEARLY         # $99 / yr Family (Homeschool / ESA)
+TOME_PRICE_QUESTIONS_TOPUP       # $149 one-time, +10,000 Questions
+```
+
+Grandfathered vars (keep set until `subscriptions` has zero solo /
+legacy-family rows; they only feed the webhook's reverse lookup):
 
 ```
 TOME_PRICE_SOLO_MONTHLY
 TOME_PRICE_SOLO_YEARLY
 TOME_PRICE_FAMILY_MONTHLY
-TOME_PRICE_FAMILY_YEARLY
-TOME_PRICE_SCHOOL_SEAT_YEARLY
+TOME_PRICE_SCHOOL_SEAT_YEARLY    # legacy per-teacher school seat
 ```
 
-> The legacy `verify:billing:stripe` script (see `docs/billing-test-plan.md`)
-> reads `STRIPE_PRICE_{SOLO,FAMILY,SCHOOL}_MONTHLY`. It exercises Stripe test
-> clocks in isolation but does **not** prove the app's real checkout→webhook
-> path, which is canonical-only. Use it as a supplementary lifecycle check, not
-> the primary proof.
+> The legacy `STRIPE_PRICE_*` namespace (`src/lib/stripe/prices.ts`,
+> `src/lib/marketing/plans.ts`) is dead — do not add prices there.
 
 ---
 
@@ -65,13 +71,13 @@ TOME_PRICE_SCHOOL_SEAT_YEARLY
 In the worktree `.env.local` (untracked), set:
 
 ```
-STRIPE_SECRET_KEY            # sk_test_…  (test mode)
-STRIPE_WEBHOOK_SECRET        # whsec_…    (from `stripe listen`, step 2)
-TOME_PRICE_SOLO_MONTHLY      # price_… (test)
-TOME_PRICE_SOLO_YEARLY       # price_…
-TOME_PRICE_FAMILY_MONTHLY    # price_…
-TOME_PRICE_FAMILY_YEARLY     # price_…
-TOME_PRICE_SCHOOL_SEAT_YEARLY# price_…
+STRIPE_SECRET_KEY               # sk_test_…  (test mode)
+STRIPE_WEBHOOK_SECRET           # whsec_…    (from `stripe listen`, step 2)
+TOME_PRICE_STUDENT_SEAT_YEARLY  # price_… (test)
+TOME_PRICE_SCHOOL_FLAT_150      # price_…
+TOME_PRICE_SCHOOL_FLAT_300      # price_…
+TOME_PRICE_FAMILY_YEARLY        # price_…
+TOME_PRICE_QUESTIONS_TOPUP      # price_…
 ```
 
 1. Start the app on the worktree port: dev server `tome-stripe` (port 3300).

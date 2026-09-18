@@ -20,7 +20,7 @@ the Stripe CLI. Nothing here charges a real card or emails a real user.
 | Script | npm | Talks to | Needs |
 | --- | --- | --- | --- |
 | `scripts/verify-billing-entitlements.ts` | `npm run verify:billing` | **our DB only** — writes `subscriptions` rows mirroring webhook outcomes, asserts `getEntitlement()` | Supabase URL + service-role key (in `.env.local`) |
-| `scripts/verify-billing-stripe.ts` | `npm run verify:billing:stripe` | **Stripe TEST mode only** — drives real test-clock subscriptions, asserts Stripe statuses/invoices | `STRIPE_SECRET_KEY` (test) + `STRIPE_PRICE_{SOLO,FAMILY,SCHOOL}_MONTHLY` |
+| `scripts/verify-billing-stripe.ts` | `npm run verify:billing:stripe` | **Stripe TEST mode only** — drives real test-clock subscriptions, asserts Stripe statuses/invoices | `STRIPE_SECRET_KEY` (test) + the `TOME_PRICE_*` vars below |
 
 `verify:billing` runs today with no extra setup. `verify:billing:stripe`
 **skips cleanly** (exit 0, prints a skip line) until you add TEST-mode Stripe
@@ -41,34 +41,47 @@ state, asserts the full `getEntitlement()` output, and deletes everything in a
 For every step it asserts the **subscriptions row** that the webhook would write
 and the **`getEntitlement()`** result it should produce:
 
-### Solo
+Launch-model scenarios (seats are **student** seats; teachers are free):
 
-| Step | `subscriptions` row | `getEntitlement()` |
+### Free teacher
+
+| Step | `subscriptions` row | `getEntitlement()` / plan |
 | --- | --- | --- |
-| Free | *(no row)* | `tier:free`, `isActive:false`, `bookLimit:20`, `fullLibrary:false` |
-| Start trial | `tier:solo, status:trialing` | `tier:solo`, `isActive:true`, full library, `teacherTools:false` |
-| Trial → paid | `tier:solo, status:active` | unchanged — full access retained |
-| Cancel (at period end) | `status:active, cancel_at_period_end:true` | **still full access** until the period actually ends |
-| Period ends / canceled | `status:canceled` | reverts to Free (`bookLimit:20`) |
-| Payment failed (dunning) | `status:past_due` | reverts to Free |
+| Teacher, no sub | *(no row)*, `profiles.role:teacher` | `hasEducatorTools:true`, student allowance 30, classroom allowance 1 |
 
-> Key rule: only `active` **or** `trialing` confer a paid tier. `cancel_at_period_end`
-> keeps `status:active`, so access is retained until Stripe flips it to `canceled`
-> at period end. `canceled` and `past_due` both fall back to Free.
+### Classroom (per-student seats)
 
-### Family (seats, smoke)
-
-| Step | row | entitlement |
+| Step | row | expected |
 | --- | --- | --- |
-| Active Family | `tier:family, status:active` | full library, `teacherTools:false` |
+| Checkout `seats:25` | `tier:classroom, status:active, seats:25` | allowance 25; the **26th** student join is rejected |
+| Cancel (at period end) | `status:active, cancel_at_period_end:true` | access retained until period end |
+| Period ends | `status:canceled` | reverts to free-teacher allowances (1 classroom · 30 students) |
 
-### School (per-teacher quantity, smoke)
+### School (pooled student seats across teachers)
 
-| Step | row | entitlement |
+| Step | row | expected |
 | --- | --- | --- |
-| School admin | `tier:school, status:active, seats:5` | `schoolRole:admin`, `seats:5`, `teacherTools:true`, `coveredBy:self` |
-| Covered teacher | admin row + `school_seats(teacher_id, seat_role:teacher)` | `schoolRole:teacher`, `coveredBy:<admin>`, full access |
-| School canceled | admin `status:canceled` | **both** admin and covered teacher revert to Free |
+| Checkout `seats:150` | `tier:school, status:active, seats:150` | admin `school_seats` row active; covered teachers share the 150-student allowance; a student in two covered classrooms counts **once** |
+| Flat 150 SKU | `tier:school`, flat150 price | allowance 150 |
+| School canceled | `status:canceled` | admin and covered teachers revert to free-teacher |
+
+### Family ($99 / yr, sold only from /homeschool)
+
+| Step | row | expected |
+| --- | --- | --- |
+| Active Family | `tier:family, status:active` | full library, student allowance 4 |
+
+### Grandfathered (never sold, must keep resolving)
+
+| Step | row | expected |
+| --- | --- | --- |
+| Legacy Solo | `tier:solo, status:active` | reads all books (full library) |
+| Legacy School (per-teacher) | legacy school row | holder is still a teacher |
+
+> Key rule: only `active` **or** `trialing` confer a paid tier.
+> `cancel_at_period_end` keeps `status:active`, so access is retained until
+> Stripe flips it to `canceled` at period end. `canceled` and `past_due` fall
+> back to the free-teacher baseline (teachers are never locked out of tools).
 
 ---
 
@@ -82,25 +95,29 @@ Skipped today (no Stripe keys). To enable:
 
 1. Stripe dashboard → **Test mode** → Developers → API keys → copy the **test**
    secret key (`sk_test_…`).
-2. Create three **test-mode** recurring monthly prices (Solo / Family / School)
-   and copy their `price_…` ids.
-3. Add to `.env.local`:
+2. Create the **test-mode** prices for the launch model and copy their
+   `price_…` ids.
+3. Add to `.env.local` (same names the app itself reads —
+   `src/lib/billing/prices.ts`):
    ```
    STRIPE_SECRET_KEY=sk_test_…
-   STRIPE_PRICE_SOLO_MONTHLY=price_…
-   STRIPE_PRICE_FAMILY_MONTHLY=price_…
-   STRIPE_PRICE_SCHOOL_MONTHLY=price_…
+   TOME_PRICE_STUDENT_SEAT_YEARLY=price_…
+   TOME_PRICE_SCHOOL_FLAT_150=price_…
+   TOME_PRICE_SCHOOL_FLAT_300=price_…
+   TOME_PRICE_FAMILY_YEARLY=price_…
+   TOME_PRICE_QUESTIONS_TOPUP=price_…
    ```
 
 What it asserts (using **test clocks** so no real time passes, no real charge):
 
-- **Solo:** create with `trial_period_days:7` → `trialing` → advance +8 days →
-  `active` with a **paid** first invoice (amount > 0) → swap to
-  `pm_card_chargeCustomerFail` → advance to renewal → `past_due`/`unpaid`/`canceled`
-  with the renewal invoice **not** paid → cancel → `canceled`.
-- **Family:** subscription on the Family price starts `trialing`.
-- **School:** subscription on the School price with `quantity = seats` — asserts
-  the line-item quantity.
+- **Classroom:** checkout with seat `quantity:12` → `subscriptions.seats = 12`
+  and a personal Question pool granted.
+- **School:** `quantity:125` on the seat price → `seats = 125` and the admin's
+  `school_seats` row active; **flat300** → `seats = 300`.
+- **Top-up:** one-time payment → ledger `+10000 topup` **exactly once** even
+  when the webhook event is replayed.
+- **Deletion:** subscription deleted → role kept while still teaching,
+  `monthly_grant` reset to the free-teacher 100.
 
 It creates everything under disposable test clocks and deletes them at the end
 (cascades to customers + subscriptions). It **refuses to run** unless the key is
@@ -156,6 +173,12 @@ our webhook → `subscriptions` row. Exercise it locally with the Stripe CLI.
 ## Pre-launch sign-off checklist
 
 - [ ] `npm run verify:billing` → all checks pass.
+- [ ] Questions RPC unit tests: insufficient balance raises `insufficient_questions`;
+      refund restores; a repeated `stripe_event_id` grant is a no-op;
+      `refresh_question_grants` respects the 3-month accrual cap; a non-owner
+      cannot consume from another teacher's pool.
+- [ ] `/pricing` shows one set of numbers matching `src/lib/billing/config.ts`;
+      `/homeschool` shows $99 and `/pricing` does not.
 - [ ] TEST Stripe keys + price ids added; `npm run verify:billing:stripe` → all checks pass.
 - [ ] Run 3 manual webhook pass: each Stripe event writes the expected `subscriptions` row.
 - [ ] Billing emails fire to `@resend.dev` sinks (receipt / trial-ending / dunning).
