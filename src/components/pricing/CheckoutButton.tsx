@@ -38,7 +38,9 @@ export function CheckoutButton({
       // Not signed in: don't dead-end at a toast. Send them to sign in and carry
       // the plan intent so they land back on pricing to resume checkout.
       if (res.status === 401) {
-        const resume = `/pricing?plan=${tier}`
+        // Family is sold only from /homeschool; everything else from /pricing.
+        const resume =
+          tier === "family" ? "/homeschool?plan=family" : `/pricing?plan=${tier}`
         window.location.href = `/login?redirect=${encodeURIComponent(resume)}`
         return
       }

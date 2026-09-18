@@ -60,7 +60,7 @@ export async function POST(request: Request) {
           {
             error: "advanced_trials",
             message:
-              "Scholar and Master Trials are part of Tome Solo. Upgrade to take advanced Trials.",
+              "Scholar and Master Trials are part of Tome's paid plans. Upgrade to take advanced Trials.",
           },
           { status: 402 },
         )

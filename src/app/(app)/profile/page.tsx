@@ -641,7 +641,7 @@ export default function ProfilePage() {
                 <div className="px-5 py-4">
                   {tier === "free" ? (
                     <Link
-                      href="/pricing"
+                      href="/homeschool"
                       className="flex items-center justify-between text-sm font-medium hover:text-foreground transition-colors group"
                     >
                       <span>Upgrade to Tome Family</span>
