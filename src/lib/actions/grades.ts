@@ -112,11 +112,15 @@ interface ReadingAssignmentRow {
   chapter_range_start: number | null
   chapter_range_end: number | null
   title: string
+  quiz_mode: string | null
 }
+
+type FinalizeQuizMode = "platform" | "teacher" | "none"
 
 export async function autoFinalizeReadingForBook(
   bookId: string,
   reachedChapter?: number,
+  opts?: { includeQuizModes?: FinalizeQuizMode[] },
 ): Promise<ActionResult<{ finalized: number }>> {
   if (!bookId) return fail("Missing book id.")
   try {
@@ -152,7 +156,7 @@ export async function autoFinalizeReadingForBook(
     const { data: assignments } = await admin
       .from("assignments")
       .select(
-        "id, classroom_id, scope, points_available, chapter_range_start, chapter_range_end, title",
+        "id, classroom_id, scope, points_available, chapter_range_start, chapter_range_end, title, quiz_mode",
       )
       .in("classroom_id", classroomIds)
       .eq("book_id", bookId)
@@ -161,8 +165,18 @@ export async function autoFinalizeReadingForBook(
       .returns<ReadingAssignmentRow[]>()
     if (!assignments || assignments.length === 0) return ok({ finalized: 0 })
 
+    // Only finalize assignments whose quiz mode is in scope. The ambient
+    // reader hook uses the default (quiz_mode 'none' only) so platform- and
+    // teacher-quiz assignments are graded by their quiz, never by reaching
+    // the last page. The explicit "Mark as read" path (fires only after the
+    // quiz resolver honestly returned none) passes all three modes.
+    const includeModes = opts?.includeQuizModes ?? ["none"]
+
     let finalized = 0
     for (const a of assignments) {
+      const mode = (a.quiz_mode ?? "platform") as FinalizeQuizMode
+      if (!includeModes.includes(mode)) continue
+
       const target = a.chapter_range_end ?? a.chapter_range_start ?? 0
       if (reached < target) continue
 

@@ -1045,7 +1045,11 @@ export default function ReaderPage() {
         return
       }
       // No quiz — "Mark as read": finalize the reading submission and advance.
-      const fin = await autoFinalizeReadingForBook(bookId, currentChapter)
+      // All modes included: the resolver returned none, so mode 'none',
+      // empty-bank platform, and teacher-mode-without-quiz all finalize here.
+      const fin = await autoFinalizeReadingForBook(bookId, currentChapter, {
+        includeQuizModes: ["none", "platform", "teacher"],
+      })
       if (fin.ok && fin.data.finalized > 0) {
         setAssignmentDone(true)
         toast.success("Assignment marked as read.")
