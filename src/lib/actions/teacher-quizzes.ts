@@ -137,6 +137,9 @@ const SaveQuestionInput = z.object({
   hints: z.unknown().optional(),
   distractor_eliminations: z.unknown().optional(),
   source_anchor: z.unknown().optional(),
+  // Per-type payload (items/correctOrder, matching pairs, passage, tfReasons,
+  // acceptedAnswers, …) — the grader + attempt renderer both read this.
+  meta: z.record(z.string(), z.unknown()).nullable().optional(),
 })
 
 const SaveQuizInput = z.object({
@@ -216,6 +219,7 @@ export async function saveTeacherQuiz(
         hints: q.hints ?? null,
         distractor_eliminations: q.distractor_eliminations ?? null,
         source_anchor: q.source_anchor ?? null,
+        meta: q.meta ?? null,
       }))
       const { data: inserted, error: insErr } = await supabase
         .from("teacher_quiz_questions")
@@ -297,7 +301,7 @@ export async function duplicateTeacherQuiz(
     const { data: questions } = await supabase
       .from("teacher_quiz_questions")
       .select(
-        "question_type, question_text, options, correct_answer, explanation, points, sort_order, rubric, reference_answer, max_points, difficulty, category, hints, distractor_eliminations, source_anchor",
+        "question_type, question_text, options, correct_answer, explanation, points, sort_order, rubric, reference_answer, max_points, difficulty, category, hints, distractor_eliminations, source_anchor, meta",
       )
       .eq("quiz_id", parsed.data)
       .order("sort_order", { ascending: true })

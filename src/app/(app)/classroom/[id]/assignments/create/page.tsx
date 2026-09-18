@@ -147,6 +147,7 @@ export default function CreateAssignmentPage({ params }: { params: Promise<{ id:
             correct_answer: q.correct_answer,
             explanation: q.explanation || null,
             points: q.points,
+            meta: q.meta ?? null,
             rubric: q.rubric,
             reference_answer: q.reference_answer ?? null,
             max_points: q.max_points ?? null,
