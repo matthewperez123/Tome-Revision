@@ -234,6 +234,30 @@ const OPTION_TYPES = new Set([
   'close_reading', 'theme_analysis', 'passage_id', 'identification',
 ])
 
+// ── Launch type ladder (whole-book sets, [3.6]) ─
+// Slot n of each 5-question whole-book quiz carries a fixed type. Master
+// slot 4 accepts close_reading OR identification. Union across the three
+// difficulties = all 13 platform types.
+export const LADDER: Record<(typeof DIFFS)[number], string[]> = {
+  Apprentice: ['multiple_choice', 'true_false', 'fill_blank', 'identification', 'ordering'],
+  Scholar: ['vocabulary_in_context', 'passage_id', 'matching', 'close_reading', 'tf_with_reason'],
+  Master: ['theme_analysis', 'cross_reference', 'reflection', 'multiple_choice', 'close_reading'],
+}
+
+export function ladderAllowed(diff: string, slot: number): Set<string> {
+  if (diff === 'Master' && slot === 4) return new Set(['close_reading', 'identification'])
+  return new Set([LADDER[diff as (typeof DIFFS)[number]]?.[slot] ?? ''])
+}
+
+export const PLATFORM_TYPES = [
+  'multiple_choice', 'true_false', 'fill_blank', 'vocabulary_in_context',
+  'passage_id', 'matching', 'ordering', 'close_reading', 'tf_with_reason',
+  'theme_analysis', 'cross_reference', 'reflection', 'identification',
+] as const
+
+/** Generic filler explanations are rejected outright. */
+export const BANNED_EXPLANATION = 'See the text for the relevant passage'
+
 export type ValidationIssue = { quizId: string; questionId?: string; problem: string }
 
 /**
@@ -285,6 +309,7 @@ export function validateQuestionRow(r: QuestionRow): ValidationIssue[] {
   const opts = asArr(r.options) as string[]
 
   if (!r.explanation || r.explanation.trim().length < 12) fail('explanation too short/empty')
+  if (r.explanation?.includes(BANNED_EXPLANATION)) fail('explanation is banned generic filler')
 
   if (OPTION_TYPES.has(r.type)) {
     const letterOpt = { A: r.option_a, B: r.option_b, C: r.option_c, D: r.option_d }[r.correct_option]
@@ -308,7 +333,10 @@ export function validateQuestionRow(r: QuestionRow): ValidationIssue[] {
     const left = asArr(meta.matchingLeft)
     if (Object.keys(cp).length === 0) fail('matching missing meta.correctPairs')
     if (left.length !== Object.keys(cp).length) fail('matching matchingLeft length ≠ correctPairs keys')
-    try { if (JSON.stringify(JSON.parse(r.correct_answer ?? '{}')) !== JSON.stringify(cp)) fail('matching correct_answer ≠ meta.correctPairs') } catch { fail('matching correct_answer not JSON') }
+    // jsonb normalizes object key order — compare canonically (sorted keys).
+    const canon = (o: Record<string, unknown>) =>
+      JSON.stringify(Object.entries(o).sort(([a], [b]) => a.localeCompare(b)))
+    try { if (canon(asObj(JSON.parse(r.correct_answer ?? '{}'))) !== canon(cp)) fail('matching correct_answer ≠ meta.correctPairs') } catch { fail('matching correct_answer not JSON') }
   } else if (r.type === 'tf_with_reason') {
     if (!/^(true|false)\|\d+$/.test(r.correct_answer ?? '')) fail('tf_with_reason correct_answer not "<bool>|<idx>"')
     const reasons = asArr(meta.tfReasons)
