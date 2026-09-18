@@ -41,6 +41,7 @@ interface AssignmentRow {
   book_id: string | null
   quiz_id: string | null
   quiz_mode: string | null
+  platform_quiz_difficulty: string | null
   chapter_range_start: number | null
   chapter_range_end: number | null
   status: string
@@ -57,7 +58,7 @@ export async function resolveAssignmentQuiz(
     const { data: a } = await supabase
       .from("assignments")
       .select(
-        "id, classroom_id, book_id, quiz_id, quiz_mode, chapter_range_start, chapter_range_end, status",
+        "id, classroom_id, book_id, quiz_id, quiz_mode, platform_quiz_difficulty, chapter_range_start, chapter_range_end, status",
       )
       .eq("id", assignmentId)
       .maybeSingle<AssignmentRow>()
@@ -75,15 +76,20 @@ export async function resolveAssignmentQuiz(
     const rangeStart = fromReaderIndex(a.chapter_range_start ?? 0)
     const rangeEnd = fromReaderIndex(a.chapter_range_end ?? a.chapter_range_start ?? 0)
 
-    // Planner-authored assignments carry an explicit platform difficulty.
-    const { data: item } = await supabase
-      .from("assignment_items")
-      .select("platform_quiz_difficulty")
-      .eq("assignment_id", assignmentId)
-      .not("platform_quiz_difficulty", "is", null)
-      .limit(1)
-      .maybeSingle<{ platform_quiz_difficulty: string | null }>()
-    const difficulty = item?.platform_quiz_difficulty ?? "Apprentice"
+    // Difficulty: the composer writes assignments.platform_quiz_difficulty;
+    // planner-authored assignments may instead carry it on assignment_items.
+    let difficulty = a.platform_quiz_difficulty
+    if (!difficulty) {
+      const { data: item } = await supabase
+        .from("assignment_items")
+        .select("platform_quiz_difficulty")
+        .eq("assignment_id", assignmentId)
+        .not("platform_quiz_difficulty", "is", null)
+        .limit(1)
+        .maybeSingle<{ platform_quiz_difficulty: string | null }>()
+      difficulty = item?.platform_quiz_difficulty ?? null
+    }
+    difficulty = difficulty ?? "Apprentice"
 
     // Chapter-level quiz inside the range, preferring the range end.
     const { data: chapterQuiz } = await supabase

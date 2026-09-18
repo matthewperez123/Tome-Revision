@@ -65,9 +65,19 @@ export async function requireSchoolTools(): Promise<
   }
   const allowed = await hasActiveSchoolEntitlement(user.id)
   if (!allowed) {
-    return {
-      ok: false,
-      error: "This tool requires an active School plan. Upgrade to unlock educator tools.",
+    // TODO(2.5): launch billing replaces this gate ($12/student seats,
+    // teachers free). Until Phase 2.5 lands, any teacher-role account passes
+    // so the assignment loop is testable by free teachers. Do not forget it.
+    const { data: profile } = await supabase
+      .from("profiles")
+      .select("role")
+      .eq("id", user.id)
+      .maybeSingle<{ role: string }>()
+    if (profile?.role !== "teacher") {
+      return {
+        ok: false,
+        error: "This tool requires an active School plan. Upgrade to unlock educator tools.",
+      }
     }
   }
   return { ok: true, supabase, user }

@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useMemo, useState, useTransition } from "react"
+import Link from "next/link"
 import { useRouter } from "next/navigation"
 import {
   ClipboardList,
@@ -86,6 +87,18 @@ export function TeacherAssignmentComposer({
   const [targetGroupIds, setTargetGroupIds] = useState<string[]>([])
   const [peerReviewEnabled, setPeerReviewEnabled] = useState(false)
   const [reviewersPer, setReviewersPer] = useState(2)
+  // "Quiz at the end" (reading assignments): Tome's platform bank (default,
+  // with a difficulty), one of the teacher's published quizzes, or none.
+  const [quizMode, setQuizMode] = useState<"platform" | "teacher" | "none">(
+    "platform",
+  )
+  const [platformDifficulty, setPlatformDifficulty] = useState<
+    "Apprentice" | "Scholar" | "Master"
+  >("Apprentice")
+  const [teacherQuizId, setTeacherQuizId] = useState("")
+  const [teacherQuizzes, setTeacherQuizzes] = useState<
+    { id: string; title: string }[]
+  >([])
   const [pending, startTransition] = useTransition()
 
   // Book search (reading type) — filter the local catalog by title/author.
@@ -174,6 +187,31 @@ export function TeacherAssignmentComposer({
     }
   }, [open, allowed, classroomId])
 
+  // Published teacher quizzes for the selected book — options for the
+  // "One of my quizzes" quiz mode.
+  useEffect(() => {
+    if (!open || !allowed || !user || !bookId) {
+      setTeacherQuizzes([])
+      return
+    }
+    let cancelled = false
+    ;(async () => {
+      const supabase = createClient()
+      const { data } = await supabase
+        .from("teacher_quizzes")
+        .select("id, title")
+        .eq("teacher_id", user.id)
+        .eq("status", "published")
+        .eq("book_id", bookId)
+        .order("created_at", { ascending: false })
+      if (cancelled) return
+      setTeacherQuizzes((data as { id: string; title: string }[] | null) ?? [])
+    })()
+    return () => {
+      cancelled = true
+    }
+  }, [open, allowed, user, bookId])
+
   if (!allowed) return null
 
   function reset() {
@@ -198,6 +236,9 @@ export function TeacherAssignmentComposer({
     setTargetGroupIds([])
     setPeerReviewEnabled(false)
     setReviewersPer(2)
+    setQuizMode("platform")
+    setPlatformDifficulty("Apprentice")
+    setTeacherQuizId("")
   }
 
   function buildInput() {
@@ -216,6 +257,15 @@ export function TeacherAssignmentComposer({
           ? parseInt(chapterEnd, 10)
           : undefined,
       trialId: type === "trial" ? trialId.trim() || undefined : undefined,
+      quizMode: type === "reading" ? quizMode : undefined,
+      quizId:
+        type === "reading" && quizMode === "teacher"
+          ? teacherQuizId || undefined
+          : undefined,
+      platformQuizDifficulty:
+        type === "reading" && quizMode === "platform"
+          ? platformDifficulty
+          : undefined,
       essayPrompt: type === "essay" ? essayPrompt.trim() || undefined : undefined,
       essayWordMin:
         type === "essay" && essayWordMin ? parseInt(essayWordMin, 10) : undefined,
@@ -265,6 +315,7 @@ export function TeacherAssignmentComposer({
   const canSubmit =
     title.trim().length > 0 &&
     !(type === "reading" && !bookId.trim()) &&
+    !(type === "reading" && quizMode === "teacher" && !teacherQuizId) &&
     !(type === "trial" && !trialId.trim()) &&
     !(type === "essay" && !essayPrompt.trim()) &&
     !(scope === "group" && targetGroupIds.length === 0) &&
@@ -432,6 +483,87 @@ export function TeacherAssignmentComposer({
                           ))}
                         </select>
                       </label>
+                    </div>
+                  )}
+
+                  {bookId && (
+                    <div className="rounded-md border border-border bg-muted/20 p-2">
+                      <label className="mb-1 block text-xs font-medium text-muted-foreground">
+                        Quiz at the end
+                      </label>
+                      <div className="flex flex-wrap gap-1">
+                        {(
+                          [
+                            { v: "platform", label: "Tome's questions (automatic)" },
+                            { v: "teacher", label: "One of my quizzes" },
+                            { v: "none", label: "No quiz" },
+                          ] as const
+                        ).map(({ v, label }) => (
+                          <button
+                            key={v}
+                            type="button"
+                            onClick={() => setQuizMode(v)}
+                            className={`rounded-full px-3 py-1 text-xs ${
+                              quizMode === v
+                                ? "bg-foreground text-background"
+                                : "bg-muted text-muted-foreground hover:text-foreground"
+                            }`}
+                          >
+                            {label}
+                          </button>
+                        ))}
+                      </div>
+
+                      {quizMode === "platform" && (
+                        <label className="mt-2 flex items-center gap-2 text-[11px] text-muted-foreground">
+                          Difficulty
+                          <select
+                            value={platformDifficulty}
+                            onChange={(e) =>
+                              setPlatformDifficulty(
+                                e.target.value as
+                                  | "Apprentice"
+                                  | "Scholar"
+                                  | "Master",
+                              )
+                            }
+                            className="h-8 rounded-md border border-border bg-background px-2 text-sm"
+                          >
+                            <option value="Apprentice">Apprentice</option>
+                            <option value="Scholar">Scholar</option>
+                            <option value="Master">Master</option>
+                          </select>
+                        </label>
+                      )}
+
+                      {quizMode === "teacher" && (
+                        <div className="mt-2 space-y-1.5">
+                          {teacherQuizzes.length > 0 ? (
+                            <select
+                              value={teacherQuizId}
+                              onChange={(e) => setTeacherQuizId(e.target.value)}
+                              className="h-9 w-full rounded-md border border-border bg-background px-2 text-sm"
+                            >
+                              <option value="">— choose a quiz —</option>
+                              {teacherQuizzes.map((q) => (
+                                <option key={q.id} value={q.id}>
+                                  {q.title}
+                                </option>
+                              ))}
+                            </select>
+                          ) : (
+                            <p className="text-[11px] text-muted-foreground">
+                              No published quizzes for this book yet.
+                            </p>
+                          )}
+                          <Link
+                            href={`/classroom/quiz-builder?book=${encodeURIComponent(bookId)}&range=${chapterStart || "0"}-${chapterEnd || chapterStart || "0"}`}
+                            className="inline-block text-[11px] font-medium text-[#2C4A7E] underline-offset-2 hover:underline"
+                          >
+                            Build a new one →
+                          </Link>
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>

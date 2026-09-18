@@ -19,12 +19,17 @@ const Scope = z.enum(["classroom", "group", "individuals"])
 // `reading`; the DB `assignments_type_check` accepts both.
 const Type = z.enum([
   "reading",
+  "quiz",
   "trial",
   "annotation",
   "discussion",
   "essay",
   "chapter_read",
 ])
+
+// "Quiz at the end" of a reading assignment (composer control → reader ladder).
+const QuizMode = z.enum(["platform", "teacher", "none"])
+const PlatformDifficulty = z.enum(["Apprentice", "Scholar", "Master"])
 
 const CreateInput = z
   .object({
@@ -41,6 +46,9 @@ const CreateInput = z
     essayWordMin: z.number().int().nonnegative().max(100000).optional(),
     essayWordMax: z.number().int().positive().max(100000).optional(),
     annotationTarget: z.number().int().positive().max(1000).optional(),
+    quizId: Uuid.optional(),
+    quizMode: QuizMode.default("platform"),
+    platformQuizDifficulty: PlatformDifficulty.optional(),
     dueAt: z.string().datetime().optional(),
     gracePeriodDays: z.number().int().min(0).max(60).default(0),
     latePenaltyPercent: z.number().int().min(0).max(100).default(0),
@@ -142,6 +150,12 @@ export async function createAssignment(
   if (i.type === "trial" && !i.trialId) {
     return fail("Trial assignments require a trial id.")
   }
+  if (i.type === "quiz" && !i.quizId) {
+    return fail("Quiz assignments require a quiz.")
+  }
+  if (i.quizMode === "teacher" && !i.quizId) {
+    return fail("Pick one of your quizzes, or switch to Tome's questions.")
+  }
   if (i.type === "discussion" && !i.discussionPrompt) {
     return fail("Discussion assignments require a prompt.")
   }
@@ -154,6 +168,8 @@ export async function createAssignment(
 
   const rangeStart = i.chapterRangeStart ?? null
   const rangeEnd = i.chapterRangeEnd ?? i.chapterRangeStart ?? null
+  // A directly attached quiz always means teacher mode; explicit 'none' wins.
+  const quizMode = i.quizId ? "teacher" : i.quizMode
 
   try {
     const gate = await requireSchoolTools()
@@ -177,6 +193,10 @@ export async function createAssignment(
         essay_word_min: i.essayWordMin ?? null,
         essay_word_max: i.essayWordMax ?? null,
         annotation_target: i.annotationTarget ?? null,
+        quiz_id: i.quizId ?? null,
+        quiz_mode: quizMode,
+        platform_quiz_difficulty:
+          quizMode === "platform" ? (i.platformQuizDifficulty ?? "Apprentice") : null,
         due_date: i.dueAt ?? null,
         grace_period_days: i.gracePeriodDays,
         late_penalty_percent: i.latePenaltyPercent,
