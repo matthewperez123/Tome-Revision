@@ -1,11 +1,9 @@
 "use client"
 
-import { Lock, Sparkles } from "lucide-react"
+import { Lock } from "lucide-react"
 import Link from "next/link"
-import { CheckoutButton } from "@/components/pricing/CheckoutButton"
 
 const LAPIS = "#2A4B8D"
-const GOLD = "#C8A24B"
 
 /** What the reader was trying to do when they hit the wall — drives the copy. */
 export type PaywallReason = "book" | "virgil" | "advanced-trials"
@@ -19,28 +17,28 @@ function copyFor(reason: PaywallReason, subject?: string): PaywallCopy {
   switch (reason) {
     case "virgil":
       return {
-        title: "You've reached today's Tome Assistant limit",
-        body: "Free readers get a few questions a day. Upgrade to Tome Family for unlimited conversations with Tome Assistant at your side.",
+        title: "Tome Assistant is a teacher tool",
+        body: "The assistant works for teachers — drafting quizzes, grading, and planning. Teachers use Tome free; students reach it through their teacher's classroom.",
       }
     case "advanced-trials":
       return {
-        title: "Advanced Trials need a subscription",
-        body: "Scholar and Master Trials — the harder, deeper assessments — are unlocked with Tome Family. Start with a free 7-day trial.",
+        title: "Advanced Trials come through a classroom",
+        body: "Scholar and Master Trials are part of classroom reading. Ask your teacher for a class code — or if you're the teacher, start a classroom free.",
       }
     case "book":
     default:
       return {
-        title: subject ? `${subject} needs a subscription` : "This book needs a subscription",
-        body: "Unlock the full library — every great book, unlimited reading, and Tome Assistant at your side, for up to five readers. Start with a free 7-day trial.",
+        title: subject ? `${subject} is beyond the free sampler` : "This book is beyond the free sampler",
+        body: "Teachers read the entire library free. Students read through their school — ask your teacher for a class code, or start a classroom free.",
       }
   }
 }
 
 /**
  * Reusable RUBRIC paywall interstitial. Renders in place of gated content and
- * routes free readers toward a subscription with context about what they hit.
- * The matching server gate (redirect / 402) is the real boundary; this is the
- * styled UX that explains it.
+ * routes visitors to the free teacher signup (teachers are never charged; the
+ * money path is student seats). The matching server gate (redirect / 402) is
+ * the real boundary; this is the styled UX that explains it.
  */
 export function PaywallGate({
   reason = "book",
@@ -65,14 +63,12 @@ export function PaywallGate({
       <p className="mt-3 max-w-md text-sm text-muted-foreground">{body}</p>
 
       <div className="mt-8 flex flex-col items-center gap-3">
-        <CheckoutButton
-          tier="family"
-          period="monthly"
+        <Link
+          href="/signup?as=teacher"
           className="inline-flex items-center gap-2 rounded-xl bg-[#2A4B8D] px-6 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
         >
-          <Sparkles className="size-4" style={{ color: GOLD }} />
-          Start free trial
-        </CheckoutButton>
+          Start a classroom free
+        </Link>
         <Link href="/pricing" className="text-xs text-muted-foreground hover:text-foreground">
           See all plans
         </Link>

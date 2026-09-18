@@ -480,7 +480,7 @@ function deriveTier(subscription: Stripe.Subscription, hint: string | null): Pai
     // checkout resolves its Price IDs from — so a subscription event with no
     // metadata.tier hint still derives the right tier from its line-item price.
     const fromEnv = tierForBillingPriceId(priceId)
-    if (fromEnv) return fromEnv
+    if (fromEnv && isPaidTier(fromEnv)) return fromEnv
   }
 
   // metadata.tier sits on the PRODUCT, not the price — read it when the product

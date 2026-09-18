@@ -30,6 +30,7 @@
     "verify:billing": "node --conditions=react-server --import tsx scripts/verify-billing-entitlements.ts",
     "verify:billing:stripe": "node --import tsx scripts/verify-billing-stripe.ts",
     "test:nav": "playwright test marketing-nav",
+    "test:billing:dollars": "npx tsx scripts/billing/no-hardcoded-dollars.test.ts",
     "test:assignments": "node --import tsx --test src/lib/assignments/*.test.ts"
   },
   "dependencies": {

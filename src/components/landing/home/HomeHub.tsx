@@ -36,7 +36,7 @@ import { DEMO_TRIAL_QUESTIONS } from "@/lib/trials/demo-questions"
 import { TRIAL_REGISTRY } from "@/lib/trials/registry"
 import { DEMO_PASSAGE, DEMO_EXCHANGES, streamScriptedReply } from "@/lib/demo/virgil"
 import { AvatarCircles } from "@/components/ui/avatar-circles"
-import { getReaderPlans, getEducatorPlans, READER_TRIAL_COPY } from "@/lib/marketing/plans"
+import { getMarketingTiers } from "@/lib/billing/tiers"
 import {
   formatBookCount,
   formatTraditionCount,
@@ -505,21 +505,13 @@ function LearnAsStudent() {
 // ── 8 · Pricing teaser ──────────────────────────────────────────────
 
 function PricingTeaser() {
-  const stats = useCatalogStats()
-  const readerPlans = getReaderPlans(stats)
-  const educatorPlans = getEducatorPlans()
-  const solo = readerPlans.find((p) => p.id === "solo")
-  const family = readerPlans.find((p) => p.id === "family")
-  const school = educatorPlans.find((p) => p.id === "school")
-  const cards = [solo, family, school].filter(
-    (p): p is NonNullable<typeof p> => Boolean(p),
-  )
+  const cards = getMarketingTiers()
 
   return (
     <SectionShell
       eyebrow="Pricing"
-      title="Start free. Upgrade when you're ready."
-      subline={`Solo and Family for readers, plans for schools and districts. ${READER_TRIAL_COPY}`}
+      title="Free for teachers. Priced per student."
+      subline="Teachers use every tool free. Classrooms pay per student seat, schools get volume pricing, and homeschool families have the Family plan."
       bg="background"
       cta={{ label: "See full pricing", href: "/pricing" }}
     >
@@ -527,7 +519,7 @@ function PricingTeaser() {
       <div className="mt-8 grid gap-4 sm:grid-cols-3">
         {cards.map((plan) => (
           <div
-            key={plan.id}
+            key={plan.tier}
             className={
               "flex flex-col rounded-xl border bg-card p-5 " +
               (plan.featured
@@ -543,14 +535,12 @@ function PricingTeaser() {
             <h3 className="font-[var(--font-display)] text-lg font-bold text-foreground">
               {plan.name}
             </h3>
-            {plan.monthly && (
-              <p className="mt-1 text-sm text-muted-foreground">
-                <span className="text-2xl font-bold text-foreground">
-                  {plan.monthly.price}
-                </span>{" "}
-                {plan.monthly.cadence}
-              </p>
-            )}
+            <p className="mt-1 text-sm text-muted-foreground">
+              <span className="text-2xl font-bold text-foreground">
+                {plan.price}
+              </span>{" "}
+              {plan.cadence}
+            </p>
             <ul className="mt-4 flex flex-col gap-2">
               {plan.features.slice(0, 4).map((f) => (
                 <li
@@ -573,7 +563,7 @@ function PricingTeaser() {
 
 const FAQ_POINTS = [
   "Reading and getting started",
-  "Plans, billing, and trials",
+  "Plans, billing, and student seats",
   "Classroom and school use",
   "Students, privacy, and COPPA",
   "Homeschool and ESA purchasing",

@@ -21,9 +21,10 @@ const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://usetome.app"
 const MANAGE_URL = `${APP_URL}/profile`
 
 const PLAN_LABELS: Record<PaidTier, string> = {
-  solo: "Tome Solo",
+  classroom: "Tome Classroom",
   family: "Tome Family",
   school: "Tome School",
+  solo: "Tome Solo", // grandfathered
 }
 
 export function planLabel(tier: PaidTier | string | null): string {
