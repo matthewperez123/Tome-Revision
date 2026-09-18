@@ -2,8 +2,9 @@
 
 // One assignment "package" rendered as a checklist card: the bundled
 // readings / quizzes / writing items with per-item completion state.
-// Reading items link into the scoped assignment reader; quiz items into the
-// quiz runner; writing/discussion items into the assignment detail page.
+// Reading items link into the general reader with assignment context; quiz
+// items into the quiz runner; writing/discussion items into the assignment
+// detail page.
 
 import { useState, useTransition } from "react"
 import Link from "next/link"
@@ -15,6 +16,7 @@ import {
   HelpCircle,
   MessageSquare,
 } from "lucide-react"
+import { assignmentDetailHref, assignmentReaderHref } from "@/lib/assignments/links"
 import { getBook } from "@/lib/content"
 import {
   type AssignmentItemRow,
@@ -37,13 +39,18 @@ function itemHref(
   classroomId: string,
 ): string | null {
   if (item.kind === "reading" && item.book_id) {
-    return `/classroom/${classroomId}/assignment/${item.assignment_id}/read`
+    return assignmentReaderHref({
+      id: item.assignment_id,
+      classroom_id: classroomId,
+      book_id: item.book_id,
+      chapter_range_start: item.chapter_start,
+    })
   }
   if ((item.kind === "quiz" || item.kind === "assessment") && item.quiz_id) {
     return `/classroom/${classroomId}/quiz/${item.quiz_id}`
   }
   if (item.kind === "writing" || item.kind === "discussion" || item.kind === "annotation") {
-    return `/classroom/${classroomId}/assignment/${item.assignment_id}`
+    return assignmentDetailHref(classroomId, item.assignment_id)
   }
   return null
 }

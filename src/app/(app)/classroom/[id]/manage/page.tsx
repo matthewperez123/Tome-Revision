@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { createClient } from "@/lib/supabase/client"
 import { rotateJoinCode } from "@/lib/actions/classrooms"
 import { useAuth } from "@/hooks/use-auth"
+import { assignmentDetailHref } from "@/lib/assignments/links"
 
 import { SemesterPlanTab } from "@/components/classroom/semester-timeline"
 import { StudentBadgesPanel } from "@/components/classroom/student-badges-panel"
@@ -280,7 +281,7 @@ export default function ClassroomManagePage({ params }: { params: Promise<{ id: 
               assignments.map((a) => (
                 <Link
                   key={a.id}
-                  href={`/classroom/${id}/assignment/${a.id}`}
+                  href={assignmentDetailHref(id, a.id)}
                   className="flex items-center gap-3 rounded-xl border bg-card p-4 transition-colors hover:bg-muted/50"
                 >
                   <div className="flex-1">

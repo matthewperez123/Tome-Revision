@@ -18,6 +18,7 @@ import {
   resolveResponseGrade,
 } from "@/lib/teacher-quiz/grade"
 import { parseHints, type Hint } from "@/lib/quiz-hints"
+import { assignmentReaderHref } from "@/lib/assignments/links"
 
 const Uuid = z.string().uuid()
 
@@ -455,7 +456,12 @@ export async function assignQuiz(
             type: "class_assignment" as const,
             title: `New quiz: ${quiz.title}`,
             body: classroom.name,
-            actionUrl: `/classroom/${i.classroomId}/quiz/${i.quizId}`,
+            actionUrl: assignmentReaderHref({
+              id: assignmentId,
+              classroom_id: i.classroomId,
+              book_id: quiz.book_id,
+              chapter_range_start: quiz.chapter_range_start,
+            }),
             actorId: user.id,
             entityType: "assignment",
             entityId: assignmentId,

@@ -11,6 +11,7 @@
 
 import { z } from "zod"
 import { revalidatePath } from "next/cache"
+import { assignmentReaderHref } from "@/lib/assignments/links"
 import {
   type ActionResult,
   createAdminClient,
@@ -792,7 +793,12 @@ export async function publishPackage(
             recipientId: sid,
             type: "class_assignment" as const,
             title: `New assignment: ${pkg.title}`,
-            actionUrl: `/classroom/${plan.class_id}/assignment/${assignmentId}`,
+            actionUrl: assignmentReaderHref({
+              id: assignmentId as string,
+              classroom_id: plan.class_id,
+              book_id: assignmentPatch.book_id,
+              chapter_range_start: assignmentPatch.chapter_range_start,
+            }),
             actorId: user.id,
             entityType: "assignment",
             entityId: assignmentId as string,

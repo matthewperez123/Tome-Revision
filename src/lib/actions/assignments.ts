@@ -2,6 +2,7 @@
 
 import { revalidatePath } from "next/cache"
 import { z } from "zod"
+import { assignmentReaderHref } from "@/lib/assignments/links"
 import {
   type ActionResult,
   createAdminClient,
@@ -246,7 +247,7 @@ export async function publishAssignment(
     // student set.
     const { data: a, error: loadErr } = await supabase
       .from("assignments")
-      .select("id, classroom_id, scope, title, status")
+      .select("id, classroom_id, scope, title, status, book_id, chapter_range_start")
       .eq("id", parsed.data)
       .single<{
         id: string
@@ -254,6 +255,8 @@ export async function publishAssignment(
         scope: "classroom" | "group" | "individuals"
         title: string
         status: string
+        book_id: string | null
+        chapter_range_start: number | null
       }>()
     if (loadErr || !a) return fail(loadErr?.message ?? "Assignment not found.")
 
@@ -303,7 +306,7 @@ export async function publishAssignment(
           type: "class_assignment" as const,
           title: `New assignment: ${a.title}`,
           body: classroom?.name ?? undefined,
-          actionUrl: `/classroom/${a.classroom_id}/assignment/${a.id}`,
+          actionUrl: assignmentReaderHref(a),
           actorId: user.id,
           entityType: "assignment",
           entityId: a.id,

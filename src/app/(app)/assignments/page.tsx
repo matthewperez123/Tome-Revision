@@ -23,6 +23,7 @@ import {
   ChevronRight,
 } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
+import { assignmentReaderHref } from "@/lib/assignments/links"
 import { getBook } from "@/lib/content"
 import { useAuth } from "@/hooks/use-auth"
 import { Skeleton } from "@/components/ui/skeleton"
@@ -38,6 +39,7 @@ interface StudentAssignment {
   classroom_id: string
   classroom_name: string
   book_id: string | null
+  chapter_range_start: number | null
   status: string
 }
 
@@ -123,7 +125,7 @@ function AssignmentsList() {
 
       const { data: rows } = await supabase
         .from("assignments")
-        .select("id, title, type, due_date, classroom_id, book_id")
+        .select("id, title, type, due_date, classroom_id, book_id, chapter_range_start")
         .in("classroom_id", classroomIds)
         .eq("status", "active")
         .order("due_date", { ascending: true, nullsFirst: false })
@@ -137,6 +139,7 @@ function AssignmentsList() {
         due_date: string | null
         classroom_id: string
         book_id: string | null
+        chapter_range_start: number | null
       }>
 
       // Student submission status per assignment.
@@ -160,6 +163,7 @@ function AssignmentsList() {
           classroom_id: a.classroom_id,
           classroom_name: classroomNames[a.classroom_id] ?? "Class",
           book_id: a.book_id,
+          chapter_range_start: a.chapter_range_start,
           status: statusMap[a.id] ?? "not_started",
         })),
       )
@@ -232,7 +236,7 @@ function AssignmentsList() {
             return (
               <Link
                 key={a.id}
-                href={`/classroom/${a.classroom_id}/assignment/${a.id}`}
+                href={assignmentReaderHref(a)}
                 className="flex items-center gap-3 rounded-xl border border-border bg-card p-4 transition-colors hover:bg-muted/50"
               >
                 <div

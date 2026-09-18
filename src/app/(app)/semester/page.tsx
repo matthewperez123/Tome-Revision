@@ -14,6 +14,7 @@ import Link from "next/link"
 import { CalendarRange, BookOpen, Brain, MessageCircle, PenTool, Highlighter, ChevronRight } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
 import { getBook } from "@/lib/content"
+import { assignmentReaderHref } from "@/lib/assignments/links"
 import { useAuth } from "@/hooks/use-auth"
 import { Skeleton } from "@/components/ui/skeleton"
 import { NAV_ACCENTS } from "@/lib/navigation"
@@ -28,6 +29,7 @@ interface ScheduleItem {
   classroom_id: string
   classroom_name: string
   book_id: string | null
+  chapter_range_start: number | null
   status: string
 }
 
@@ -92,7 +94,7 @@ export default function StudentSemesterPage() {
 
       const { data: rows } = await supabase
         .from("assignments")
-        .select("id, title, type, due_date, classroom_id, book_id")
+        .select("id, title, type, due_date, classroom_id, book_id, chapter_range_start")
         .in("classroom_id", classroomIds)
         .eq("status", "active")
         .order("due_date", { ascending: true, nullsFirst: false })
@@ -106,6 +108,7 @@ export default function StudentSemesterPage() {
         due_date: string | null
         classroom_id: string
         book_id: string | null
+        chapter_range_start: number | null
       }>
 
       const { data: submissions } = await supabase
@@ -128,6 +131,7 @@ export default function StudentSemesterPage() {
           classroom_id: a.classroom_id,
           classroom_name: classroomNames[a.classroom_id] ?? "Class",
           book_id: a.book_id,
+          chapter_range_start: a.chapter_range_start,
           status: statusMap[a.id] ?? "not_started",
         })),
       )
@@ -209,7 +213,7 @@ export default function StudentSemesterPage() {
                     <li key={it.id} className="relative">
                       <span className="absolute -left-[21px] top-4 size-2 rounded-full bg-border" aria-hidden />
                       <Link
-                        href={`/classroom/${it.classroom_id}/assignment/${it.id}`}
+                        href={assignmentReaderHref(it)}
                         className="flex items-center gap-3 rounded-xl border border-border bg-card p-3.5 transition-colors hover:bg-muted/50"
                       >
                         <div

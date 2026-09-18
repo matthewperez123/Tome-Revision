@@ -7,6 +7,7 @@ import { BlurFade } from "@/components/ui/blur-fade"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
 import { RUBRIC } from "@/lib/semester-plan/rubric"
+import { assignmentDetailHref } from "@/lib/assignments/links"
 
 interface GradedItem {
   submissionId: string
@@ -122,7 +123,7 @@ export function RecentlyGraded() {
             return (
               <Link
                 key={item.submissionId}
-                href={`/classroom/${item.classroomId}/assignment/${item.assignmentId}`}
+                href={assignmentDetailHref(item.classroomId, item.assignmentId)}
                 className="flex items-center gap-3 rounded-xl border border-transparent p-2.5 transition-colors hover:border-border hover:bg-muted/50"
               >
                 <div className="flex size-10 items-center justify-center rounded-lg bg-muted text-muted-foreground">
