@@ -8,7 +8,7 @@ import {
   fail,
   notify,
   ok,
-  requireSchoolTools,
+  requireEducatorTools,
   requireUser,
 } from "./_shared"
 import {
@@ -27,7 +27,7 @@ const Uuid = z.string().uuid()
  * teacher_quiz_questions / teacher_quiz_responses / teacher_quiz_results tables
  * (distinct from the built-in book quizzes/questions/quiz_results).
  *
- * Builder + assign are teacher-gated (requireSchoolTools). The student take
+ * Builder + assign are teacher-gated (requireEducatorTools). The student take
  * path (getQuizForAttempt / submitQuizAttempt) is student-facing: it verifies
  * enrollment + published + assigned, then uses the admin client for grade
  * writes (students have no DELETE policy on responses, and teacher_quiz_results
@@ -56,7 +56,7 @@ export async function createTeacherQuiz(
   if (!parsed.success) return fail(parsed.error.issues[0]?.message ?? "Invalid input.")
   const i = parsed.data
   try {
-    const gate = await requireSchoolTools()
+    const gate = await requireEducatorTools()
     if (!gate.ok) return fail(gate.error)
     const { supabase, user } = gate
 
@@ -87,7 +87,7 @@ export async function publishTeacherQuiz(
   const parsed = Uuid.safeParse(quizId)
   if (!parsed.success) return fail("Invalid quiz id.")
   try {
-    const gate = await requireSchoolTools()
+    const gate = await requireEducatorTools()
     if (!gate.ok) return fail(gate.error)
     const { supabase, user } = gate
 
@@ -170,7 +170,7 @@ export async function saveTeacherQuiz(
   if (!parsed.success) return fail(parsed.error.issues[0]?.message ?? "Invalid input.")
   const i = parsed.data
   try {
-    const gate = await requireSchoolTools()
+    const gate = await requireEducatorTools()
     if (!gate.ok) return fail(gate.error)
     const { supabase, user } = gate
 
@@ -258,7 +258,7 @@ export async function duplicateTeacherQuiz(
   const parsed = Uuid.safeParse(quizId)
   if (!parsed.success) return fail("Invalid quiz id.")
   try {
-    const gate = await requireSchoolTools()
+    const gate = await requireEducatorTools()
     if (!gate.ok) return fail(gate.error)
     const { supabase, user } = gate
 
@@ -342,7 +342,7 @@ export async function assignQuiz(
   if (!parsed.success) return fail(parsed.error.issues[0]?.message ?? "Invalid input.")
   const i = parsed.data
   try {
-    const gate = await requireSchoolTools()
+    const gate = await requireEducatorTools()
     if (!gate.ok) return fail(gate.error)
     const { supabase, user } = gate
 
@@ -907,7 +907,7 @@ export async function overrideResponseScore(
   if (!parsed.success) return fail(parsed.error.issues[0]?.message ?? "Invalid input.")
   const i = parsed.data
   try {
-    const gate = await requireSchoolTools()
+    const gate = await requireEducatorTools()
     if (!gate.ok) return fail(gate.error)
     const { supabase, user } = gate
 
@@ -1051,7 +1051,7 @@ export async function listStudentResponses(
     return fail("Invalid id.")
   }
   try {
-    const gate = await requireSchoolTools()
+    const gate = await requireEducatorTools()
     if (!gate.ok) return fail(gate.error)
     const { supabase, user } = gate
 
@@ -1117,7 +1117,7 @@ export async function listQuizResults(quizId: string): Promise<ActionResult<Quiz
   const parsed = Uuid.safeParse(quizId)
   if (!parsed.success) return fail("Invalid quiz id.")
   try {
-    const gate = await requireSchoolTools()
+    const gate = await requireEducatorTools()
     if (!gate.ok) return fail(gate.error)
     const { supabase, user } = gate
 

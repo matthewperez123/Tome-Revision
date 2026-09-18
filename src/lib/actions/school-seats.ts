@@ -4,7 +4,6 @@ import { revalidatePath } from "next/cache"
 import { z } from "zod"
 import {
   type ActionResult,
-  type SupaClient,
   createAdminClient,
   fail,
   notify,
@@ -15,15 +14,15 @@ import { getEntitlement } from "@/lib/entitlements/server"
 import { sendSeatInvite } from "@/lib/email/billing"
 
 /**
- * School seat roster management. The School subscription owner (the "admin")
- * assigns the teacher accounts their seats cover. Covered teachers are ordinary
- * `profiles.role='teacher'` accounts — a seat just makes their paid educator
- * tools (assignments, gradebook, AI quiz/plan generation, reflection grading)
- * active. The admin always holds seat #1 and cannot be unseated here.
+ * School teacher-roster management. Launch model: `subscriptions.seats` caps
+ * STUDENTS, not teachers — a school may cover any number of teachers, whose
+ * classrooms all draw from the shared student-seat allowance. `school_seats`
+ * rows exist only for actual teachers (the admin + explicitly added/invited
+ * teachers); there are NO pending placeholder rows sized to the Stripe
+ * quantity. Adding a teacher INSERTS a row; removing one DELETES it.
  *
- * Seat changes that affect the *count* (and therefore billing) go through
- * `/api/school/seats` so Stripe stays the source of truth for quantity. These
- * actions only assign already-purchased seats to specific teachers.
+ * Student-seat count changes (billing) go through `/api/school/seats` so
+ * Stripe stays the source of truth for quantity.
  */
 
 const FRIEND_CODE_RE = /^[A-Za-z0-9]{8}$/
@@ -40,9 +39,9 @@ export interface SchoolSeatRow {
 export interface SchoolRoster {
   /** subscriptions.user_id that owns the plan. */
   adminId: string
-  /** Purchased seats (Stripe quantity). */
+  /** Purchased STUDENT seats (Stripe quantity). */
   seats: number | null
-  /** Currently assigned seats (incl. the admin). */
+  /** Teachers currently on the plan (incl. the admin). */
   used: number
   members: SchoolSeatRow[]
 }
@@ -75,6 +74,7 @@ export async function listSchoolRoster(): Promise<SchoolRoster | null> {
     .from("school_seats")
     .select("teacher_id, seat_role, added_at")
     .eq("subscription_user_id", adminId)
+    .not("teacher_id", "is", null) // exclude outstanding invites (no teacher yet)
     .order("added_at", { ascending: true })
 
   const rows = (seats ?? []) as {
@@ -159,9 +159,20 @@ export async function addTeacherToSchool(
     return fail("You already hold the admin seat.")
   }
 
-  // Claim one of the plan's purchased (pending) seats for this teacher.
-  const claim = await claimPendingSeatFor(admin, guard.userId, profile.id)
-  if (!claim.ok) return fail(claim.error)
+  // Add the teacher to the roster. No teacher cap — student seats are the
+  // billable unit; the global unique(teacher_id) blocks double-seating.
+  const { error: insertError } = await admin.from("school_seats").insert({
+    subscription_user_id: guard.userId,
+    teacher_id: profile.id,
+    seat_role: "teacher",
+    status: "active",
+  })
+  if (insertError) {
+    if (insertError.code === "23505") {
+      return fail("That teacher already holds a seat in a School plan.")
+    }
+    return fail(insertError.message)
+  }
 
   await notify({
     recipientId: profile.id,
@@ -195,17 +206,10 @@ export async function removeTeacherFromSchool(
   }
 
   const admin = createAdminClient()
-  // Release the seat back to the pool (pending) rather than deleting it, so the
-  // roster stays sized to the purchased quantity and can be re-invited.
+  // Teachers aren't a billed quantity — removing one simply deletes the row.
   const { error } = await admin
     .from("school_seats")
-    .update({
-      teacher_id: null,
-      status: "pending",
-      invite_email: null,
-      invite_token: null,
-      invited_at: null,
-    })
+    .delete()
     .eq("subscription_user_id", guard.userId)
     .eq("teacher_id", parsed.data.teacherId)
     .eq("seat_role", "teacher")
@@ -222,59 +226,12 @@ function randomInviteToken(): string {
   return (crypto.randomUUID() + crypto.randomUUID()).replace(/-/g, "")
 }
 
-/**
- * Claim one open pending seat for `teacherId` (pending → active). Prefers a seat
- * with no outstanding invite so a live invitation isn't clobbered. Returns a
- * friendly error when no seat is available or the teacher already holds one.
- */
-async function claimPendingSeatFor(
-  admin: SupaClient,
-  ownerId: string,
-  teacherId: string,
-): Promise<{ ok: true } | { ok: false; error: string }> {
-  const { data: seat } = await admin
-    .from("school_seats")
-    .select("id")
-    .eq("subscription_user_id", ownerId)
-    .eq("status", "pending")
-    .order("invite_token", { ascending: true, nullsFirst: true })
-    .order("added_at", { ascending: true })
-    .limit(1)
-    .maybeSingle<{ id: string }>()
-  if (!seat) {
-    return {
-      ok: false,
-      error: "All seats are assigned. Add more seats before inviting another teacher.",
-    }
-  }
-
-  const { error } = await admin
-    .from("school_seats")
-    .update({
-      teacher_id: teacherId,
-      status: "active",
-      invite_email: null,
-      invite_token: null,
-      invited_at: null,
-    })
-    .eq("id", seat.id)
-    .eq("status", "pending")
-  if (error) {
-    // Global unique(teacher_id) → already seated in some school.
-    if (error.code === "23505") {
-      return { ok: false, error: "That teacher already holds a seat in a School plan." }
-    }
-    return { ok: false, error: error.message }
-  }
-  return { ok: true }
-}
-
 const InviteInput = z.object({ email: z.string().trim().min(3).max(200) })
 
 /**
- * Invite a teacher to the caller's School plan by email. Reserves an open
- * pending seat with a single-use token and hands off to `sendSeatInvite` (a P4
- * stub for now). The invitee claims the seat via `/join/seat/[token]`.
+ * Invite a teacher to the caller's School plan by email. Inserts a pending
+ * roster row with a single-use token and hands off to `sendSeatInvite`.
+ * The invitee claims the seat via `/join/seat/[token]`.
  */
 export async function inviteTeacherSeat(
   input: z.infer<typeof InviteInput>,
@@ -289,30 +246,18 @@ export async function inviteTeacherSeat(
 
   const admin = createAdminClient()
 
-  // Reserve an OPEN pending seat (one with no outstanding invite).
-  const { data: seat } = await admin
-    .from("school_seats")
-    .select("id")
-    .eq("subscription_user_id", guard.userId)
-    .eq("status", "pending")
-    .is("invite_token", null)
-    .order("added_at", { ascending: true })
-    .limit(1)
-    .maybeSingle<{ id: string }>()
-  if (!seat) {
-    return fail("No open seats. Add more seats before inviting another teacher.")
-  }
-
+  // Record the invitation as a fresh pending row (no placeholder pool — a row
+  // per outstanding invite, deleted/activated when claimed).
   const token = randomInviteToken()
-  const { error } = await admin
-    .from("school_seats")
-    .update({
-      invite_email: email,
-      invite_token: token,
-      invited_at: new Date().toISOString(),
-    })
-    .eq("id", seat.id)
-    .is("invite_token", null)
+  const { error } = await admin.from("school_seats").insert({
+    subscription_user_id: guard.userId,
+    teacher_id: null,
+    seat_role: "teacher",
+    status: "pending",
+    invite_email: email,
+    invite_token: token,
+    invited_at: new Date().toISOString(),
+  })
   if (error) return fail(error.message)
 
   await sendSeatInvite(admin, email, { token, adminId: guard.userId })

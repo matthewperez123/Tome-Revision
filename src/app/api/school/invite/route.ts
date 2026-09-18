@@ -19,12 +19,13 @@ function isLiveStatus(status: string | null): boolean {
  * Auth: the caller must be a `teacher` who OWNS an active School subscription
  * (`subscriptions.user_id = caller`, tier='school'). Body: { teacherEmail }.
  *
- * Guard: the number of occupied seats (`school_seats` rows for this owner —
- * the admin's own seat #1 counts) must be `< subscriptions.seats`, else 402.
+ * Launch model: `subscriptions.seats` caps STUDENTS, not teachers — a school
+ * may cover any number of teachers, whose classrooms all draw from the shared
+ * student-seat allowance. No teacher-count guard here.
  *
  * On success: inserts `school_seats { subscription_user_id: owner, teacher_id,
- * seat_role: 'teacher' }` and sets that teacher's `profiles.role = 'teacher'`
- * so they gain the covered entitlement immediately.
+ * seat_role: 'teacher', status: 'active' }` and sets that teacher's
+ * `profiles.role = 'teacher'` so they gain the covered plan immediately.
  */
 export async function POST(req: Request) {
   const supabase = await createClient()
@@ -65,21 +66,11 @@ export async function POST(req: Request) {
     .maybeSingle()
   const tier = (sub?.tier as string | null) ?? null
   const status = (sub?.status as string | null) ?? null
-  const seats = (sub?.seats as number | null) ?? null
-  if (tier !== "school" || !isLiveStatus(status) || !seats || seats < 1) {
+  if (tier !== "school" || !isLiveStatus(status)) {
     return NextResponse.json(
       { error: "You need an active School subscription to invite teachers." },
       { status: 403 },
     )
-  }
-
-  // Seat-limit guard (the admin's own seat counts toward the total).
-  const { count: occupied } = await admin
-    .from("school_seats")
-    .select("id", { count: "exact", head: true })
-    .eq("subscription_user_id", user.id)
-  if ((occupied ?? 0) >= seats) {
-    return NextResponse.json({ error: "seat limit reached" }, { status: 402 })
   }
 
   // Resolve the invited teacher's account by email (service-role auth lookup).
@@ -118,6 +109,7 @@ export async function POST(req: Request) {
     subscription_user_id: user.id,
     teacher_id: teacherId,
     seat_role: "teacher",
+    status: "active",
   })
   if (seatErr) {
     // A concurrent insert may have taken the last seat / this teacher.

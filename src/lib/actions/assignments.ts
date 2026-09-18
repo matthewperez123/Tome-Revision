@@ -9,7 +9,7 @@ import {
   fail,
   notify,
   ok,
-  requireSchoolTools,
+  requireEducatorTools,
   requireUser,
 } from "./_shared"
 
@@ -172,7 +172,7 @@ export async function createAssignment(
   const quizMode = i.quizId ? "teacher" : i.quizMode
 
   try {
-    const gate = await requireSchoolTools()
+    const gate = await requireEducatorTools()
     if (!gate.ok) return fail(gate.error)
     const { supabase, user } = gate
 
@@ -258,7 +258,7 @@ export async function publishAssignment(
   if (!parsed.success) return fail("Invalid assignment id.")
 
   try {
-    const gate = await requireSchoolTools()
+    const gate = await requireEducatorTools()
     if (!gate.ok) return fail(gate.error)
     const { supabase, user } = gate
 

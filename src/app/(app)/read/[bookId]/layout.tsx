@@ -5,7 +5,8 @@ import { canUserReadBook } from "@/lib/entitlements/server"
 /**
  * Server-side paywall for the reader. This is the authoritative gate: a free
  * account that asks for a book outside the foundational sampler is redirected
- * to /pricing before the (client) reader page ever renders. The reader page's
+ * to teacher signup before the (client) reader page ever renders (teachers
+ * read everything free — that's the launch funnel). The reader page's
  * own `<PaywallGate>` remains for guests and as defense-in-depth, but the UI is
  * no longer the only thing standing between a free user and a paid book.
  *
@@ -26,7 +27,7 @@ export default async function ReadLayout({
   } = await supabase.auth.getUser()
 
   if (user && !(await canUserReadBook(user.id, bookId))) {
-    redirect(`/pricing?gate=book&book=${encodeURIComponent(bookId)}`)
+    redirect(`/signup?as=teacher&gate=book&book=${encodeURIComponent(bookId)}`)
   }
 
   return <>{children}</>

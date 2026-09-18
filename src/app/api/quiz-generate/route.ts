@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server"
 import { createClient } from "@/lib/supabase/server"
-import { hasActiveSchoolEntitlement } from "@/lib/entitlements/server"
 
 export async function POST(request: Request) {
   // Verify the user is authenticated
@@ -18,16 +17,10 @@ export async function POST(request: Request) {
     .eq("id", user.id)
     .single()
 
+  // Teachers are free forever — the teacher role IS the educator-tool gate.
+  // Usage is metered by Questions Available (2.6/2.7), not by plan tier.
   if (profile?.role !== "teacher") {
     return NextResponse.json({ error: "Only teachers can generate quizzes" }, { status: 403 })
-  }
-
-  // AI quiz generation is a paid educator tool — gate behind School.
-  if (!(await hasActiveSchoolEntitlement(user.id))) {
-    return NextResponse.json(
-      { error: "AI quiz generation requires an active School plan." },
-      { status: 403 },
-    )
   }
 
   const body = await request.json()

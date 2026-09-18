@@ -8,7 +8,7 @@ import {
   fail,
   notify,
   ok,
-  requireSchoolTools,
+  requireEducatorTools,
   requireUser,
 } from "./_shared"
 import { isStudentEligibleForAssignment } from "./assignments"
@@ -280,7 +280,7 @@ export async function gradeSubmission(
   const parsed = GradeInput.safeParse(input)
   if (!parsed.success) return fail("Invalid input.")
   try {
-    const gate = await requireSchoolTools()
+    const gate = await requireEducatorTools()
     if (!gate.ok) return fail(gate.error)
     const { supabase, user } = gate
 

@@ -18,14 +18,15 @@ import {
 // Classroom join codes are the 6-char uppercase alphanumeric format the student
 // join UI (isValidJoinCode) and invite links expect — NOT the 4-4 group code.
 import { generateJoinCode, generateUniqueJoinCode } from "@/lib/classroom-utils"
-import { hasActiveSchoolEntitlement } from "@/lib/entitlements/server"
+import {
+  getClassroomAllowance,
+  getPlanContext,
+  getSeatAllowance,
+} from "@/lib/entitlements/server"
+import { FREE_TEACHER_STUDENT_LIMIT } from "@/lib/billing/config"
 
 const Uuid = z.string().uuid()
 const Role = z.enum(["owner", "co_teacher", "ta", "student"])
-
-/** Free Classroom tier: one class, capped at this many students. */
-const FREE_CLASS_LIMIT = 1
-const FREE_STUDENT_CAP = 30
 
 const CreateInput = z.object({
   name: z.string().trim().min(1).max(120),
@@ -46,23 +47,24 @@ export async function createClassroom(
   try {
     const { supabase, user } = await requireUser()
 
-    // Free Classroom tier = one class, ≤30 students. An active School plan
-    // lifts both caps. The cap is enforced on owned (teacher_id) classrooms.
-    const hasSchool = await hasActiveSchoolEntitlement(user.id)
+    // Free teachers get one classroom (≤30 students); any paid seat plan
+    // (Classroom/School/Family) lifts the classroom cap — students are then
+    // limited by SEATS at join time, not by classroom count.
+    const classLimit = await getClassroomAllowance(user.id)
     let maxStudents = parsed.data.maxStudents ?? null
-    if (!hasSchool) {
+    if (classLimit != null) {
       const admin = createAdminClient()
       const { count: owned } = await admin
         .from("classrooms")
         .select("*", { count: "exact", head: true })
         .eq("teacher_id", user.id)
-      if ((owned ?? 0) >= FREE_CLASS_LIMIT) {
+      if ((owned ?? 0) >= classLimit) {
         return fail(
-          "The free Classroom tier includes one class. Upgrade to School for more.",
+          "The free teacher plan includes one classroom. Add student seats to create more.",
         )
       }
-      if (maxStudents == null || maxStudents > FREE_STUDENT_CAP) {
-        maxStudents = FREE_STUDENT_CAP
+      if (maxStudents == null || maxStudents > FREE_TEACHER_STUDENT_LIMIT) {
+        maxStudents = FREE_TEACHER_STUDENT_LIMIT
       }
     }
 
@@ -116,6 +118,36 @@ export async function createClassroom(
     return ok({ id: classroom.id, joinCode: classroom.join_code })
   } catch (e) {
     return fail((e as Error).message)
+  }
+}
+
+// ── Seat status (for the manage-page banner) ────────────────────────────────
+
+export interface SeatStatusView {
+  tier: "free_teacher" | "classroom" | "school" | "family" | "solo"
+  allowance: number
+  used: number
+  /** Covered by someone ELSE's School plan → "Ask your school" instead of checkout. */
+  coveredBySchool: boolean
+}
+
+/** The caller's student-seat allowance vs. live usage. Null when signed out. */
+export async function getSeatStatus(): Promise<SeatStatusView | null> {
+  try {
+    const { user } = await requireUser()
+    const [plan, seat] = await Promise.all([
+      getPlanContext(user.id),
+      getSeatAllowance(user.id),
+    ])
+    return {
+      tier: seat.tier,
+      allowance: seat.allowance,
+      used: seat.used,
+      coveredBySchool:
+        plan.tier === "school" && plan.coveringSubscriptionUserId !== user.id,
+    }
+  } catch {
+    return null
   }
 }
 
@@ -222,7 +254,7 @@ export async function joinClassroomByCode(
 
     const { data: classroom, error: lookupErr } = await admin
       .from("classrooms")
-      .select("id, name, archived, max_students")
+      .select("id, name, archived, max_students, teacher_id")
       .eq("join_code", parsed.data)
       .maybeSingle()
     if (lookupErr) return fail(lookupErr.message)
@@ -254,6 +286,34 @@ export async function joinClassroomByCode(
       }
     }
 
+    // Plan seat enforcement: the owning teacher's plan must cover one more
+    // distinct student. A student already counted elsewhere on the same
+    // teacher's plan doesn't consume a new seat.
+    if (classroom.teacher_id) {
+      const seat = await getSeatAllowance(classroom.teacher_id)
+      if (seat.used >= seat.allowance) {
+        const alreadyCovered = await isStudentOfTeacher(
+          admin,
+          classroom.teacher_id,
+          user.id,
+        )
+        if (!alreadyCovered) {
+          await notify({
+            recipientId: classroom.teacher_id,
+            type: "system",
+            title: "Seat limit reached",
+            body: `A student tried to join ${classroom.name}, but all ${seat.allowance} student seats on your plan are in use. Add seats to let more students in.`,
+            actionUrl: `/classroom/${classroom.id}/manage`,
+            entityType: "classroom",
+            entityId: classroom.id,
+          })
+          return fail(
+            "Your teacher's classroom is full — ask them to add seats.",
+          )
+        }
+      }
+    }
+
     const { error: insertErr } = await admin
       .from("classroom_members")
       .insert({
@@ -276,6 +336,28 @@ export async function joinClassroomByCode(
   } catch (e) {
     return fail((e as Error).message)
   }
+}
+
+/** True when `studentId` is already a student in any classroom owned by
+ * `teacherId` — i.e. already occupies one of the plan's distinct seats. */
+async function isStudentOfTeacher(
+  admin: ReturnType<typeof createAdminClient>,
+  teacherId: string,
+  studentId: string,
+): Promise<boolean> {
+  const { data: owned } = await admin
+    .from("classrooms")
+    .select("id")
+    .eq("teacher_id", teacherId)
+  const ids = (owned ?? []).map((c) => c.id as string)
+  if (ids.length === 0) return false
+  const { count } = await admin
+    .from("classroom_members")
+    .select("*", { count: "exact", head: true })
+    .in("classroom_id", ids)
+    .eq("student_id", studentId)
+    .eq("role", "student")
+  return (count ?? 0) > 0
 }
 
 /** Seed missing not_started submissions for a newly-enrolled student across

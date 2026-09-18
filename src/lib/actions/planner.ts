@@ -18,7 +18,7 @@ import {
   fail,
   notify,
   ok,
-  requireSchoolTools,
+  requireEducatorTools,
   requireUser,
   type SupaClient,
 } from "./_shared"
@@ -652,7 +652,7 @@ export async function publishPackage(
   const parsed = Uuid.safeParse(packageId)
   if (!parsed.success) return fail("Invalid package id.")
   try {
-    const gate = await requireSchoolTools()
+    const gate = await requireEducatorTools()
     if (!gate.ok) return fail(gate.error)
     const { supabase, user } = gate
 
