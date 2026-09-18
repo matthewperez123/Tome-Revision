@@ -24,6 +24,7 @@ import {
   getSeatAllowance,
 } from "@/lib/entitlements/server"
 import { FREE_TEACHER_STUDENT_LIMIT } from "@/lib/billing/config"
+import { syncPoolSizes } from "@/lib/credits/pools"
 
 const Uuid = z.string().uuid()
 const Role = z.enum(["owner", "co_teacher", "ta", "student"])
@@ -112,6 +113,14 @@ export async function createClassroom(
       // Roll back the classroom row to keep state consistent.
       await admin.from("classrooms").delete().eq("id", classroom.id)
       return fail(memberErr.message)
+    }
+
+    // Seed/size the new classroom's Questions pool (first month lands now).
+    // Best-effort: the daily question-grants cron re-syncs on failure.
+    try {
+      await syncPoolSizes(user.id)
+    } catch {
+      // non-fatal
     }
 
     revalidatePath("/classroom")

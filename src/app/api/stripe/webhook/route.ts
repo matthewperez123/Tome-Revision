@@ -2,7 +2,11 @@ import { NextResponse } from "next/server"
 import type Stripe from "stripe"
 import { getStripe } from "@/lib/stripe/server"
 import { tierForBillingPriceId, schoolFlatForPriceId } from "@/lib/billing/prices"
-import { FAMILY_STUDENT_LIMIT } from "@/lib/billing/config"
+import {
+  FAMILY_STUDENT_LIMIT,
+  QUESTIONS_PAID_TEACHER_PERSONAL_PER_MONTH,
+} from "@/lib/billing/config"
+import { syncPoolSizes, ensurePersonalPool } from "@/lib/credits/pools"
 import { isPaidTier, type PaidTier } from "@/lib/stripe/plans"
 import { createAdminClient as createAdminClientUntyped } from "@/lib/supabase/admin"
 import type { SupabaseClient } from "@supabase/supabase-js"
@@ -102,10 +106,17 @@ export async function POST(req: Request) {
           const buyerId = session.client_reference_id ?? session.metadata?.user_id ?? null
           const topupQuestions = Number(session.metadata?.topup_questions ?? NaN)
           if (buyerId && Number.isFinite(topupQuestions) && topupQuestions > 0) {
-            // TODO(2.6): grant_question_credits(personal pool, +topupQuestions,
-            // 'topup', event.id) once the question_credit_pools schema lands.
+            const poolId = await ensurePersonalPool(buyerId)
+            if (!poolId) throw new Error(`topup: could not ensure personal pool for ${buyerId}`)
+            const { error: grantErr } = await admin.rpc("grant_question_credits", {
+              p_pool: poolId,
+              p_count: topupQuestions,
+              p_reason: "topup",
+              p_stripe_event_id: event.id,
+            })
+            if (grantErr) throw new Error(`topup grant failed: ${grantErr.message}`)
             console.log(
-              `[stripe-webhook] handled ${event.type} (${event.id}): topup ${topupQuestions} questions for ${buyerId} (grant pending 2.6)`,
+              `[stripe-webhook] handled ${event.type} (${event.id}): topup +${topupQuestions} questions for ${buyerId}`,
             )
           } else {
             console.log(`[stripe-webhook] handled ${event.type} (${event.id}): topup session missing buyer/count, ignored`)
@@ -127,7 +138,7 @@ export async function POST(req: Request) {
         // A fully deleted subscription no longer confers a paid teacher plan —
         // step the buyer back down to `reader` unless they still teach.
         // Pools keep their balance; monthly_grant returns to free-tier values
-        // on the next syncPoolSizes run (TODO(2.6)).
+        // via the syncPoolSizes call inside syncSubscription.
         if (event.type === "customer.subscription.deleted" && result.userId) {
           await maybeDowngradeRole(admin, result.userId)
           await sendCancellationEmail(admin, result.userId, { tier: result.tier })
@@ -184,9 +195,27 @@ export async function POST(req: Request) {
                 nextBillingUnix: subscriptionPeriodEnd(subscription),
                 invoiceUrl: invoice.hosted_invoice_url ?? null,
               })
-              // TODO(2.6): grant_question_credits to the buyer's personal pool
-              // (QUESTIONS_PAID_TEACHER_PERSONAL_PER_MONTH) + syncPoolSizes,
-              // idempotent on event.id, once question_credit_pools lands.
+              // Paid invoice → the buyer's personal monthly questions land now,
+              // idempotent on event.id; then resize every pool they own.
+              if (result.tier === "classroom" || result.tier === "school" || result.tier === "family") {
+                const poolId = await ensurePersonalPool(result.userId)
+                if (poolId) {
+                  const { error: grantErr } = await admin.rpc("grant_question_credits", {
+                    p_pool: poolId,
+                    p_count: QUESTIONS_PAID_TEACHER_PERSONAL_PER_MONTH,
+                    p_reason: "monthly_grant",
+                    p_stripe_event_id: event.id,
+                  })
+                  if (grantErr) {
+                    console.error(`[stripe-webhook] personal grant failed for ${result.userId}: ${grantErr.message}`)
+                  }
+                }
+                try {
+                  await syncPoolSizes(result.userId)
+                } catch (err) {
+                  console.error(`[stripe-webhook] syncPoolSizes failed for ${result.userId}: ${err instanceof Error ? err.message : err}`)
+                }
+              }
             }
           } else {
             await sendPaymentFailedEmail(admin, result.userId, {
@@ -289,8 +318,13 @@ async function syncSubscription(
     await ensureSchoolSeats(admin, userId)
   }
 
-  // TODO(2.6): syncPoolSizes(userId) on every subscription change once
-  // question_credit_pools lands.
+  // Resize Questions Available pools on every subscription change. Best-effort:
+  // a pool-sync hiccup must never fail the webhook (the daily cron retries).
+  try {
+    await syncPoolSizes(userId)
+  } catch (err) {
+    console.error(`[stripe-webhook] syncPoolSizes failed for ${userId}: ${err instanceof Error ? err.message : err}`)
+  }
 
   return {
     userId,
