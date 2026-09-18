@@ -4,8 +4,11 @@ import { useState } from "react"
 import { motion, AnimatePresence } from "motion/react"
 import { RotateCcw, Sparkles } from "lucide-react"
 import { TeacherShowcaseShell } from "./TeacherShowcaseShell"
-import { TRIAL_REGISTRY } from "@/lib/trials/registry"
-import type { TrialQuestionType } from "@/lib/trials/question-types"
+import {
+  QUESTION_TYPE_ICONS,
+  QUESTION_TYPE_LABELS,
+} from "@/components/trials/questions"
+import type { QuestionType } from "@/lib/quiz-engine"
 import { ClassicsCover } from "@/components/tome/ClassicsCover"
 import { getBook } from "@/lib/content"
 
@@ -21,13 +24,13 @@ const PASSAGE = {
   ],
 }
 
-// Each generated question is tagged with a real Trial type from the shared
-// registry, so the educator demo showcases the variety of question types Tome
-// can author — not a single generic multiple-choice shape.
-const QUESTIONS: { type: TrialQuestionType; text: string }[] = [
-  { type: "fill_the_line", text: "Restore the opening: \u201cIt is a truth universally ___\u2026\u201d" },
-  { type: "word_in_context", text: "What does \u201cwant\u201d mean as Austen uses it here?" },
-  { type: "find_the_evidence", text: "Which line tells us what the single man must be seeking?" },
+// Each generated question is tagged with a real platform question type from
+// the shared trial-renderer registry, so the educator demo showcases the
+// variety Tome can author — not a single generic multiple-choice shape.
+const QUESTIONS: { type: QuestionType; text: string }[] = [
+  { type: "fill_blank", text: "Restore the opening: \u201cIt is a truth universally ___\u2026\u201d" },
+  { type: "vocabulary_in_context", text: "What does \u201cwant\u201d mean as Austen uses it here?" },
+  { type: "close_reading", text: "Which line tells us what the single man must be seeking?" },
 ]
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1]
@@ -38,7 +41,7 @@ export function CustomTrialsShowcase() {
   return (
     <TeacherShowcaseShell
       heading="Write your own Trials, or let Tome Assistant"
-      subcopy="Author questions by hand or generate them from any passage with one click, across all six Trial types."
+      subcopy="Author questions by hand or generate them from any passage with one click, across all thirteen question types."
       layout="mockup-left"
       bgClass="bg-background"
     >
@@ -107,7 +110,8 @@ export function CustomTrialsShowcase() {
           <AnimatePresence>
             {generated &&
               QUESTIONS.map(({ type, text }, i) => {
-                const { label, icon: Icon } = TRIAL_REGISTRY[type]
+                const label = QUESTION_TYPE_LABELS[type]
+                const Icon = QUESTION_TYPE_ICONS[type]
                 return (
                   <motion.div
                     key={text}

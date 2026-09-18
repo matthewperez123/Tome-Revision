@@ -30,10 +30,7 @@ import { BlurFade } from "@/components/ui/blur-fade"
 import { BookCard } from "@/components/tome/book-card"
 import { Marquee } from "@/components/ui/marquee"
 import { DEMO_LIBRARY_BOOKS } from "@/lib/demo/data"
-import { DemoEconomyProvider } from "@/components/demo/DemoEconomyProvider"
-import { QuestionCard } from "@/components/trials/QuestionCard"
-import { DEMO_TRIAL_QUESTIONS } from "@/lib/trials/demo-questions"
-import { TRIAL_REGISTRY } from "@/lib/trials/registry"
+import { PlatformQuestionDemoInner } from "@/components/landing/demo/PlatformQuestionDemo"
 import { DEMO_PASSAGE, DEMO_EXCHANGES, streamScriptedReply } from "@/lib/demo/virgil"
 import { AvatarCircles } from "@/components/ui/avatar-circles"
 import { getMarketingTiers } from "@/lib/billing/tiers"
@@ -190,65 +187,19 @@ function DiscoverCanon() {
 
 // ── 3 · Answer Quizzes (condensed Trial) ────────────────────────────
 
-const DEMO_TYPES = Array.from(new Set(DEMO_TRIAL_QUESTIONS.map((q) => q.type)))
-
 function AnswerQuizzes() {
-  // Mirrors the live /demo Trial system (TrialDemo): the REAL <QuestionCard> +
-  // registry + a multi-question typed pool in a DemoEconomyProvider sandbox,
-  // with a registry-driven type switcher so EVERY question type is represented.
-  const [i, setI] = useState(0)
-  const total = DEMO_TRIAL_QUESTIONS.length
-  const question = DEMO_TRIAL_QUESTIONS[i]
-
+  // [3.7] The THIRTEEN live platform question types — the real renderers +
+  // the real deterministic grader the reader's chapter Trials run on, with a
+  // type-switcher chip per type so every one is visible and answerable.
   return (
     <SectionShell
       eyebrow="Trials"
-      title="Every chapter ends in a Trial."
-      subline="Comprehension, vocabulary, evidence, and recall: six question types, each earning Wisdom and keeping your Flame alive. Every one is live; try them all."
+      title="Thirteen ways to be asked. Every one is live."
+      subline="Every chapter ends in a Trial: comprehension, close reading, matching, ordering, cross-reference, and a Tome Assistant-graded reflection — thirteen question types, each earning Wisdom. Try them all."
       bg="muted"
       cta={{ label: "See every Trial type", href: "/readers" }}
     >
-      {/* Type switcher — one chip per Trial type, icon + label from the shared
-          registry, so every type is visible and reachable (mirrors /demo). */}
-      <div className="mb-5 flex flex-wrap justify-center gap-1.5" role="tablist" aria-label="Trial question types">
-        {DEMO_TYPES.map((type) => {
-          const entry = TRIAL_REGISTRY[type]
-          const Icon = entry.icon
-          const activeTab = question.type === type
-          const idx = DEMO_TRIAL_QUESTIONS.findIndex((q) => q.type === type)
-          return (
-            <button
-              key={type}
-              type="button"
-              role="tab"
-              aria-selected={activeTab}
-              onClick={() => setI(idx)}
-              className={cn(
-                "flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
-                activeTab
-                  ? "border-primary bg-primary text-primary-foreground"
-                  : "border-border bg-card text-muted-foreground hover:border-primary/40 hover:text-foreground",
-              )}
-            >
-              <Icon className="size-3.5 shrink-0" />
-              {entry.label}
-            </button>
-          )
-        })}
-      </div>
-
-      <div className="mx-auto max-w-md overflow-hidden rounded-xl border border-border bg-card">
-        <div className="h-[440px]">
-          <DemoEconomyProvider>
-            <QuestionCard
-              key={question.id}
-              question={question}
-              onNext={() => setI((n) => (n + 1) % total)}
-              sound={false}
-            />
-          </DemoEconomyProvider>
-        </div>
-      </div>
+      <PlatformQuestionDemoInner />
     </SectionShell>
   )
 }
