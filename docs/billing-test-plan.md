@@ -108,16 +108,23 @@ Skipped today (no Stripe keys). To enable:
    TOME_PRICE_QUESTIONS_TOPUP=price_…
    ```
 
-What it asserts (using **test clocks** so no real time passes, no real charge):
+What it asserts, Stripe-side (using **test clocks** so no real time passes, no
+real charge):
 
-- **Classroom:** checkout with seat `quantity:12` → `subscriptions.seats = 12`
-  and a personal Question pool granted.
-- **School:** `quantity:125` on the seat price → `seats = 125` and the admin's
-  `school_seats` row active; **flat300** → `seats = 300`.
-- **Top-up:** one-time payment → ledger `+10000 topup` **exactly once** even
-  when the webhook event is replayed.
-- **Deletion:** subscription deleted → role kept while still teaching,
-  `monthly_grant` reset to the free-teacher 100.
+- **Classroom:** seat price with `quantity:12` → active, first annual invoice
+  paid, renewal after a clock-advanced year keeps `quantity:12`, cancel →
+  `canceled`. Metadata carries `tier:classroom, student_seats:12` (what the
+  webhook reads to write `subscriptions.seats = 12` and grant the pool).
+- **School:** `quantity:125` on the seat price → active with
+  `student_seats:125`; **flat300** → active on `TOME_PRICE_SCHOOL_FLAT_300`
+  with `student_seats:300`.
+- **Top-up:** a one-time invoice on `TOME_PRICE_QUESTIONS_TOPUP` settles.
+- **Family:** active on the $99/yr price.
+
+The DB half of each claim — `subscriptions.seats`, the `+10000 topup` ledger
+entry landing **exactly once** on webhook replay, and the free-teacher
+`monthly_grant` reset after deletion — is the webhook's work: prove it with
+Run 3 below plus the Questions RPC unit tests.
 
 It creates everything under disposable test clocks and deletes them at the end
 (cascades to customers + subscriptions). It **refuses to run** unless the key is
