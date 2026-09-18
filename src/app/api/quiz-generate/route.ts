@@ -1,5 +1,11 @@
 import { NextResponse } from "next/server"
 import { createClient } from "@/lib/supabase/server"
+import {
+  INSUFFICIENT_QUESTIONS_MESSAGE,
+  findSpendablePool,
+  isInsufficientQuestions,
+  withQuestionCredits,
+} from "@/lib/credits/consume"
 
 export async function POST(request: Request) {
   // Verify the user is authenticated
@@ -49,6 +55,17 @@ export async function POST(request: Request) {
     })
   }
 
+  // Questions Available: one credit per generated question (2.7). The no-key
+  // fallback below is free — only real generation draws from the pool.
+  const questionCost = Math.max(1, Math.min(30, Number(count) || 5))
+  const poolId = await findSpendablePool(user.id, questionCost)
+  if (!poolId) {
+    return NextResponse.json(
+      { error: "insufficient_questions", message: INSUFFICIENT_QUESTIONS_MESSAGE },
+      { status: 402 },
+    )
+  }
+
   try {
     const prompt = `You are a literature teacher creating a quiz for students on "${book.title}" by ${book.author}.
 
@@ -68,34 +85,42 @@ Return ONLY a JSON array (no other text) with this schema:
   }
 ]`
 
-    const response = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "x-api-key": apiKey,
-        "anthropic-version": "2023-06-01",
-      },
-      body: JSON.stringify({
-        model: "claude-sonnet-4-6",
-        max_tokens: 2048,
-        messages: [{ role: "user", content: prompt }],
-      }),
+    const questions = await withQuestionCredits(poolId, questionCost, { book_id: bookId }, async () => {
+      const response = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key": apiKey,
+          "anthropic-version": "2023-06-01",
+        },
+        body: JSON.stringify({
+          model: "claude-sonnet-4-6",
+          max_tokens: 2048,
+          messages: [{ role: "user", content: prompt }],
+        }),
+      })
+
+      if (!response.ok) {
+        throw new Error(`API error: ${response.status}`)
+      }
+
+      const message = await response.json()
+      const text = message.content?.[0]?.text
+      if (!text) throw new Error("No text in response")
+
+      const jsonMatch = text.match(/\[[\s\S]*\]/)
+      if (!jsonMatch) throw new Error("Could not parse questions")
+
+      return JSON.parse(jsonMatch[0])
     })
-
-    if (!response.ok) {
-      throw new Error(`API error: ${response.status}`)
-    }
-
-    const message = await response.json()
-    const text = message.content?.[0]?.text
-    if (!text) throw new Error("No text in response")
-
-    const jsonMatch = text.match(/\[[\s\S]*\]/)
-    if (!jsonMatch) throw new Error("Could not parse questions")
-
-    const questions = JSON.parse(jsonMatch[0])
     return NextResponse.json({ questions })
   } catch (error) {
+    if (isInsufficientQuestions(error)) {
+      return NextResponse.json(
+        { error: "insufficient_questions", message: INSUFFICIENT_QUESTIONS_MESSAGE },
+        { status: 402 },
+      )
+    }
     console.error("Quiz generation error:", error)
     return NextResponse.json({
       questions: generateFallbackQuestions(book.title, book.author, count),

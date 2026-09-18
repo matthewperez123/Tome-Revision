@@ -29,6 +29,10 @@ import {
 } from "@/lib/actions/_shared"
 import { createClient } from "@/lib/supabase/server"
 import { fromReaderIndex } from "@/lib/assignments/chapters"
+import { classroomPoolForAssignment, withQuestionCredits } from "@/lib/credits/consume"
+import { generateQuizQuestions } from "@/lib/teacher-quiz/generate"
+import { prepareScope } from "@/lib/teacher-quiz/draft-service"
+import type { GenerateQuizRequest, GeneratedQuestion } from "@/lib/teacher-quiz-types"
 
 export type ResolvedAssignmentQuiz =
   | { kind: "teacher"; quizId: string }
@@ -124,12 +128,181 @@ export async function resolveAssignmentQuiz(
       return ok({ kind: "platform", quizId: bookQuiz.id, difficulty, chapterIndex: null })
     }
 
-    // 3. Generate on demand — Phase 2 (classroom Questions Available pool).
-    // Until then an empty bank is an honest 'none'.
+    // 3. Generate on demand — 5 questions at the resolved difficulty, debited
+    // from the CLASSROOM's Questions Available pool (never the student), then
+    // cached as platform quizzes/questions rows so every later student in
+    // every class reuses the bank for free.
+    const generatedId = await generateAndCacheAssignmentQuiz(a, rangeStart, rangeEnd, difficulty)
+    if (generatedId) {
+      return ok({ kind: "platform", quizId: generatedId, difficulty, chapterIndex: rangeEnd })
+    }
+
+    // 4. Nothing resolvable (pool empty, generation failed, or book has no
+    // readable text) — the reader falls back to "Mark as read".
     return ok({ kind: "none" })
   } catch (e) {
     return fail((e as Error).message)
   }
+}
+
+// ── On-demand generation (ladder step 3) ─────────────────────────────────────
+
+const ON_DEMAND_QUESTION_COUNT = 5
+const READER_TO_TEACHER_DIFFICULTY: Record<string, "apprentice" | "scholar" | "master"> = {
+  Apprentice: "apprentice",
+  Scholar: "scholar",
+  Master: "master",
+}
+
+/**
+ * Generate + cache a platform quiz for an assignment whose range has no bank.
+ * Consume-first: 5 Questions are debited from the classroom pool, refunded
+ * automatically if generation or caching fails. Called from a student's
+ * resolve, but the student is never charged — the pool belongs to the
+ * classroom's owning teacher. A concurrent double-resolve can in rare cases
+ * generate twice; the second bank is harmless and later resolves hit the
+ * cached quiz at ladder step 2.
+ */
+async function generateAndCacheAssignmentQuiz(
+  a: AssignmentRow,
+  rangeStart: number,
+  rangeEnd: number,
+  difficulty: string,
+): Promise<string | null> {
+  try {
+    if (!a.book_id) return null
+    const poolId = await classroomPoolForAssignment(a.classroom_id)
+    if (!poolId) return null
+
+    const admin = createAdminClient()
+
+    // Grounding scope: the assigned chapters (capped to bound cost).
+    const indexes: number[] = []
+    for (let i = rangeStart; i <= rangeEnd && indexes.length < 8; i++) indexes.push(i)
+    const teacherDifficulty = READER_TO_TEACHER_DIFFICULTY[difficulty] ?? "apprentice"
+    const req: GenerateQuizRequest = {
+      bookId: a.book_id,
+      scope: { chapterIndexes: indexes },
+      difficultyMix: {
+        apprentice: teacherDifficulty === "apprentice" ? ON_DEMAND_QUESTION_COUNT : 0,
+        scholar: teacherDifficulty === "scholar" ? ON_DEMAND_QUESTION_COUNT : 0,
+        master: teacherDifficulty === "master" ? ON_DEMAND_QUESTION_COUNT : 0,
+      },
+      types: ["multiple_choice", "true_false"],
+      totalCount: ON_DEMAND_QUESTION_COUNT,
+    }
+
+    const scoped = await prepareScope(admin as unknown as Parameters<typeof prepareScope>[0], req)
+    if (scoped.error) return null
+    const { book, passage } = scoped.data
+
+    return await withQuestionCredits(
+      poolId,
+      ON_DEMAND_QUESTION_COUNT,
+      { assignment_id: a.id },
+      async () => {
+        const result = await generateQuizQuestions({
+          passage,
+          bookTitle: book.title,
+          bookAuthor: book.author,
+          req,
+        })
+
+        const rows = result.questions
+          .map((q) => toPlatformQuestionRow(q, a.id))
+          .filter((r): r is NonNullable<typeof r> => r !== null)
+        // A thin bank is worse than none — throwing refunds the credits.
+        if (rows.length < 3) throw new Error("on-demand quiz: too few valid questions")
+
+        const { data: quiz, error: quizErr } = await admin
+          .from("quizzes")
+          .insert({
+            book_id: a.book_id!,
+            chapter_index: rangeEnd,
+            difficulty,
+            title: `${book.title} — ${difficulty} Quiz`,
+            question_count: rows.length,
+          })
+          .select("id")
+          .single()
+        if (quizErr || !quiz) {
+          throw new Error(quizErr?.message ?? "on-demand quiz: failed to save quiz")
+        }
+
+        const { error: qErr } = await admin
+          .from("questions")
+          .insert(rows.map((r, i) => ({ ...r, quiz_id: quiz.id as string, order: i })))
+        if (qErr) {
+          await admin.from("quizzes").delete().eq("id", quiz.id as string)
+          throw new Error(qErr.message)
+        }
+
+        return quiz.id as string
+      },
+    )
+  } catch (e) {
+    console.error("[resolve-assignment-quiz] on-demand generation failed:", (e as Error).message)
+    return null
+  }
+}
+
+const OPTION_LETTERS = ["A", "B", "C", "D"] as const
+
+/**
+ * Map a generated question onto the reader `questions` dual encoding
+ * (legacy option_a–d/correct_option kept in lockstep with JSONB options +
+ * text correct_answer). Returns null for anything that can't be encoded
+ * losslessly — the caller filters those out.
+ */
+function toPlatformQuestionRow(q: GeneratedQuestion, assignmentId: string) {
+  const base = {
+    category: q.category,
+    explanation: q.explanation,
+    hints: q.hints ?? null,
+    distractor_eliminations: q.distractor_eliminations ?? null,
+    meta: { generated_for_assignment: assignmentId },
+  }
+
+  if (q.type === "multiple_choice") {
+    const options = (q.options ?? []).map((o) => o.trim()).filter(Boolean)
+    if (options.length !== 4 || new Set(options).size !== 4) return null
+    const correctIdx = options.findIndex((o) => o === q.correct_answer?.trim())
+    if (correctIdx < 0) return null
+    return {
+      ...base,
+      type: "multiple_choice",
+      question_text: q.prompt,
+      option_a: options[0],
+      option_b: options[1],
+      option_c: options[2],
+      option_d: options[3],
+      options,
+      correct_option: OPTION_LETTERS[correctIdx],
+      correct_answer: options[correctIdx],
+    }
+  }
+
+  if (q.type === "true_false") {
+    const answer = q.correct_answer?.trim().toLowerCase()
+    if (answer !== "true" && answer !== "false") return null
+    const text = /^true or false[:,]?\s/i.test(q.prompt)
+      ? q.prompt
+      : `True or False: ${q.prompt}`
+    return {
+      ...base,
+      type: "true_false",
+      question_text: text,
+      option_a: "True",
+      option_b: "False",
+      option_c: "n/a",
+      option_d: "n/a",
+      options: ["True", "False"],
+      correct_option: answer === "true" ? "A" : "B",
+      correct_answer: answer === "true" ? "True" : "False",
+    }
+  }
+
+  return null
 }
 
 /**
