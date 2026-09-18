@@ -163,7 +163,11 @@ export function QuizAttemptRunner({
         </h1>
         <p className="mt-1 text-sm text-muted-foreground">
           {result.passed ? "Passed" : "Below passing"}
-          {result.needsReview ? " · Free-response answers await your teacher's review" : ""}
+          {result.pendingCount > 0
+            ? ` · ${result.pendingCount} answer${result.pendingCount === 1 ? "" : "s"} awaiting review — your score covers graded questions only`
+            : result.needsReview
+              ? " · Free-response answers await your teacher's review"
+              : ""}
         </p>
         {backHref && (
           <Link

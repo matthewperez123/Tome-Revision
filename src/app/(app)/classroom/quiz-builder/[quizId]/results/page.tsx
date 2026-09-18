@@ -27,6 +27,29 @@ function answerToString(response: unknown): string {
   return String(response)
 }
 
+// Partial credit (e.g. tf_with_reason half credit) displays to two decimals;
+// whole scores stay whole.
+function fmtScore(n: number): string {
+  return Number.isInteger(n) ? String(n) : n.toFixed(2)
+}
+
+interface RubricCriterion {
+  name: string
+  points: number
+  descriptor: string
+}
+
+function rubricCriteria(rubric: unknown): RubricCriterion[] {
+  if (rubric == null || typeof rubric !== "object") return []
+  const c = (rubric as { criteria?: unknown }).criteria
+  if (!Array.isArray(c)) return []
+  return c.map((x) => ({
+    name: String((x as RubricCriterion).name ?? ""),
+    points: Number((x as RubricCriterion).points ?? 0),
+    descriptor: String((x as RubricCriterion).descriptor ?? ""),
+  }))
+}
+
 export default function QuizResultsPage({ params }: { params: Promise<{ quizId: string }> }) {
   const { quizId } = use(params)
   const [rows, setRows] = useState<QuizResultRow[]>([])
@@ -109,12 +132,12 @@ export default function QuizResultsPage({ params }: { params: Promise<{ quizId: 
               <span className="flex-1 text-sm font-medium">{r.studentName}</span>
               {r.needsReview && (
                 <span className="rounded-full bg-amber-50 px-2 py-0.5 text-[10px] font-medium text-amber-700 dark:bg-amber-950/30 dark:text-amber-400">
-                  Needs review
+                  {r.pendingCount > 0 ? `${r.pendingCount} awaiting review` : "Needs review"}
                 </span>
               )}
               <span className="text-sm font-semibold tabular-nums">{r.percentage}%</span>
               <span className="text-xs text-muted-foreground tabular-nums">
-                {r.score}/{r.totalPoints}
+                {fmtScore(r.score)}/{fmtScore(r.totalPoints)}
               </span>
               <ChevronRight className="size-4 text-muted-foreground" />
             </button>
@@ -168,7 +191,8 @@ function StudentDetail({
           <div>
             <h2 className="text-base font-bold">{student.studentName}</h2>
             <p className="text-xs text-muted-foreground">
-              {student.percentage}% · {student.score}/{student.totalPoints}
+              {student.percentage}% · {fmtScore(student.score)}/{fmtScore(student.totalPoints)}
+              {student.pendingCount > 0 && ` · ${student.pendingCount} awaiting review`}
             </p>
           </div>
           <Button variant="ghost" size="sm" onClick={onClose}>Close</Button>
@@ -237,7 +261,7 @@ function ResponseCard({
         ) : (
           <span className="flex items-center gap-1 text-xs font-semibold tabular-nums">
             {row.isCorrect === true && <Check className="size-3.5 text-green-600" />}
-            {row.score}/{row.maxPoints}
+            {fmtScore(row.score)}/{fmtScore(row.maxPoints)}
           </span>
         )}
       </div>
@@ -259,6 +283,21 @@ function ResponseCard({
             <p className="text-xs text-amber-700 dark:text-amber-400">
               This response wasn&apos;t auto-graded. Assign a score below.
             </p>
+          )}
+          {isPending && rubricCriteria(row.rubric).length > 0 && (
+            <div className="rounded-lg border bg-muted/30 p-3">
+              <p className="text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">
+                Rubric
+              </p>
+              <ul className="mt-1 space-y-1">
+                {rubricCriteria(row.rubric).map((c, i) => (
+                  <li key={i} className="text-xs text-muted-foreground">
+                    <span className="font-medium text-foreground">{c.name}</span> · {c.points} pt —{" "}
+                    {c.descriptor}
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
           {row.aiFeedback && (
             <div className="rounded-lg border border-[var(--tome-accent)]/20 bg-[var(--tome-accent)]/5 p-3">

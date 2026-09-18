@@ -689,7 +689,12 @@ export interface AttemptResult {
   percentage: number
   passed: boolean
   needsReview: boolean
+  /** Responses awaiting teacher review (no score yet) — excluded from the %. */
+  pendingCount: number
 }
+
+/** score / total_points are numeric(6,2) — keep partial credit to two decimals. */
+const round2 = (n: number) => Math.round(n * 100) / 100
 
 /**
  * Finalize a student attempt. Auto-grades objective questions against
@@ -762,6 +767,8 @@ export async function submitQuizAttempt(
     const responseRows: ResponseRow[] = []
     let totalScore = 0
     let totalPoints = 0
+    let gradedPoints = 0
+    let pendingCount = 0
     let needsReview = false
 
     for (const q of questions) {
@@ -807,7 +814,12 @@ export async function submitQuizAttempt(
       })
 
       if (resolved.gradedBy !== "auto") needsReview = true
-      if (resolved.score !== null) totalScore += resolved.score
+      if (resolved.score !== null) {
+        totalScore += resolved.score
+        gradedPoints += maxPoints
+      } else {
+        pendingCount += 1
+      }
       responseRows.push({
         ...baseRow,
         is_correct: resolved.isCorrect,
@@ -827,7 +839,10 @@ export async function submitQuizAttempt(
     const { error: respErr } = await admin.from("teacher_quiz_responses").insert(responseRows)
     if (respErr) return fail(respErr.message)
 
-    const percentage = totalPoints > 0 ? Math.round((totalScore / totalPoints) * 100) : 0
+    // The percentage is computed over GRADED points only — a pending
+    // (awaiting-review) response never deflates the score. The result surfaces
+    // show "N awaiting review" alongside it instead.
+    const percentage = gradedPoints > 0 ? Math.round((totalScore / gradedPoints) * 100) : 0
     const passed = percentage >= quiz.passing_score
 
     const answersSnapshot: Record<string, unknown> = {}
@@ -838,10 +853,10 @@ export async function submitQuizAttempt(
       student_id: user.id,
       classroom_id: i.classroomId,
       assignment_id: access.assignmentId,
-      // results.score / total_points are integer columns; Virgil can award
-      // fractional partial credit, so round the summary.
-      score: Math.round(totalScore),
-      total_points: Math.round(totalPoints),
+      // results.score / total_points are numeric(6,2) since the 3.1 migration;
+      // keep Virgil's fractional partial credit to two decimals.
+      score: round2(totalScore),
+      total_points: round2(totalPoints),
       percentage,
       answers: answersSnapshot,
       started_at: i.startedAt ?? now,
@@ -894,7 +909,7 @@ export async function submitQuizAttempt(
       )
     }
 
-    return ok({ score: totalScore, totalPoints, percentage, passed, needsReview })
+    return ok({ score: round2(totalScore), totalPoints, percentage, passed, needsReview, pendingCount })
   } catch (e) {
     return fail((e as Error).message)
   }
@@ -961,13 +976,18 @@ export async function overrideResponseScore(
       .select("score, max_points")
       .eq("quiz_id", response.quiz_id)
       .eq("student_id", response.student_id)
-    const totalScore = (all ?? []).reduce((s, r) => s + Number(r.score ?? 0), 0)
-    const totalPoints = (all ?? []).reduce((s, r) => s + Number(r.max_points ?? 0), 0)
-    const percentage = totalPoints > 0 ? Math.round((totalScore / totalPoints) * 100) : 0
+    // Same invariant as submitQuizAttempt: still-pending responses (score null)
+    // are excluded from the percentage denominator, never coerced to 0.
+    const rows = all ?? []
+    const graded = rows.filter((r) => r.score !== null)
+    const totalScore = graded.reduce((s, r) => s + Number(r.score ?? 0), 0)
+    const totalPoints = rows.reduce((s, r) => s + Number(r.max_points ?? 0), 0)
+    const gradedPoints = graded.reduce((s, r) => s + Number(r.max_points ?? 0), 0)
+    const percentage = gradedPoints > 0 ? Math.round((totalScore / gradedPoints) * 100) : 0
 
     const { data: resultRow } = await admin
       .from("teacher_quiz_results")
-      .update({ score: Math.round(totalScore), total_points: Math.round(totalPoints), percentage })
+      .update({ score: round2(totalScore), total_points: round2(totalPoints), percentage })
       .eq("quiz_id", response.quiz_id)
       .eq("student_id", response.student_id)
       .select("assignment_id")
@@ -1032,6 +1052,8 @@ export interface QuizResultRow {
   totalPoints: number
   completedAt: string
   needsReview: boolean
+  /** Responses still awaiting a grade (no score) — excluded from percentage. */
+  pendingCount: number
 }
 
 export interface StudentResponseRow {
@@ -1049,6 +1071,8 @@ export interface StudentResponseRow {
   teacherOverride: boolean
   aiFeedback: string | null
   aiRubricBreakdown: unknown
+  /** The authored rubric ({max_points, criteria[]}) for review surfaces. */
+  rubric: unknown
   isOpenEnded: boolean
 }
 
@@ -1086,7 +1110,7 @@ export async function listStudentResponses(
         .eq("student_id", studentId),
       admin
         .from("teacher_quiz_questions")
-        .select("id, question_text, question_type, correct_answer, reference_answer, sort_order")
+        .select("id, question_text, question_type, correct_answer, reference_answer, rubric, sort_order")
         .eq("quiz_id", quizId)
         .order("sort_order", { ascending: true }),
     ])
@@ -1115,6 +1139,7 @@ export async function listStudentResponses(
           teacherOverride: Boolean(r.teacher_override),
           aiFeedback: (r.ai_feedback as string | null) ?? null,
           aiRubricBreakdown: r.ai_rubric_breakdown,
+          rubric: q.rubric,
           isOpenEnded: isOpenEndedType(type),
         }
       })
@@ -1168,11 +1193,18 @@ export async function listQuizResults(quizId: string): Promise<ActionResult<Quiz
     // A student needs review if any response is a Virgil draft or a pending
     // (ungraded) response that hasn't been overridden by the teacher.
     const needsReviewBy = new Map<string, boolean>()
+    // Ungraded (graded_by='pending') responses per student — the "N awaiting
+    // review" count. Virgil drafts carry a score, so they flag needsReview but
+    // don't count as awaiting.
+    const pendingBy = new Map<string, number>()
     for (const r of reviewRows ?? []) {
       const sid = r.student_id as string
-      const pending =
+      const flagged =
         (r.graded_by === "virgil" || r.graded_by === "pending") && !r.teacher_override
-      needsReviewBy.set(sid, (needsReviewBy.get(sid) ?? false) || pending)
+      needsReviewBy.set(sid, (needsReviewBy.get(sid) ?? false) || flagged)
+      if (r.graded_by === "pending" && !r.teacher_override) {
+        pendingBy.set(sid, (pendingBy.get(sid) ?? 0) + 1)
+      }
     }
 
     return ok(
@@ -1184,7 +1216,96 @@ export async function listQuizResults(quizId: string): Promise<ActionResult<Quiz
         totalPoints: Number(r.total_points ?? 0),
         completedAt: r.completed_at as string,
         needsReview: needsReviewBy.get(r.student_id as string) ?? false,
+        pendingCount: pendingBy.get(r.student_id as string) ?? 0,
       })),
+    )
+  } catch (e) {
+    return fail((e as Error).message)
+  }
+}
+
+// ── Cross-quiz review queue (for /classroom/grading) ────────────────────────
+
+export interface PendingQuizReview {
+  responseId: string
+  quizId: string
+  quizTitle: string
+  studentId: string
+  studentName: string
+  questionText: string
+  questionType: string
+  response: unknown
+  maxPoints: number
+  /** The authored rubric ({max_points, criteria[]}) when the question has one. */
+  rubric: unknown
+  referenceAnswer: string | null
+  submittedAt: string
+}
+
+/**
+ * Every still-ungraded (graded_by='pending', no teacher override) quiz response
+ * across all of this teacher's quizzes — the quiz half of the grading queue.
+ * Grading one goes through overrideResponseScore, which re-derives the
+ * student's summary over graded points only.
+ */
+export async function listPendingQuizReviews(): Promise<ActionResult<PendingQuizReview[]>> {
+  try {
+    const gate = await requireEducatorTools()
+    if (!gate.ok) return fail(gate.error)
+    const { user } = gate
+
+    const admin = createAdminClient()
+    const { data: quizzes } = await admin
+      .from("teacher_quizzes")
+      .select("id, title")
+      .eq("teacher_id", user.id)
+    if (!quizzes || quizzes.length === 0) return ok([])
+    const titleFor = new Map(quizzes.map((q) => [q.id as string, (q.title as string) ?? "Quiz"]))
+
+    const { data: pending } = await admin
+      .from("teacher_quiz_responses")
+      .select("id, quiz_id, student_id, question_id, response, max_points, created_at")
+      .in("quiz_id", [...titleFor.keys()])
+      .eq("graded_by", "pending")
+      .eq("teacher_override", false)
+      .order("created_at", { ascending: false })
+    if (!pending || pending.length === 0) return ok([])
+
+    const questionIds = Array.from(new Set(pending.map((r) => r.question_id as string)))
+    const studentIds = Array.from(new Set(pending.map((r) => r.student_id as string)))
+    const [{ data: questions }, { data: profiles }] = await Promise.all([
+      admin
+        .from("teacher_quiz_questions")
+        .select("id, question_text, question_type, rubric, reference_answer")
+        .in("id", questionIds),
+      admin.from("profiles").select("id, display_name, username").in("id", studentIds),
+    ])
+    const questionFor = new Map((questions ?? []).map((q) => [q.id as string, q]))
+    const nameFor = new Map(
+      (profiles ?? []).map((p) => [
+        p.id as string,
+        (p.display_name as string) || (p.username as string) || "Student",
+      ]),
+    )
+
+    return ok(
+      pending.map((r) => {
+        const q = questionFor.get(r.question_id as string)
+        return {
+          responseId: r.id as string,
+          quizId: r.quiz_id as string,
+          quizTitle: titleFor.get(r.quiz_id as string) ?? "Quiz",
+          studentId: r.student_id as string,
+          studentName: nameFor.get(r.student_id as string) ?? "Student",
+          questionText: (q?.question_text as string) ?? "",
+          questionType: (q?.question_type as string) ?? "",
+          response: r.response,
+          maxPoints: Number(r.max_points ?? 1),
+          rubric: q?.rubric ?? null,
+          referenceAnswer: (q?.reference_answer as string | null) ?? null,
+          submittedAt: r.created_at as string,
+        }
+      }),
     )
   } catch (e) {
     return fail((e as Error).message)

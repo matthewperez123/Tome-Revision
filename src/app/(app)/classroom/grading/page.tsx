@@ -8,6 +8,11 @@ import { Input } from "@/components/ui/input"
 import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
 import { gradeSubmission } from "@/lib/actions/grades"
+import {
+  listPendingQuizReviews,
+  overrideResponseScore,
+  type PendingQuizReview,
+} from "@/lib/actions/teacher-quizzes"
 
 // The iridescent gradient is reserved app-wide for Tome Assistant affordances only —
 // identical to the guided-session assistant + semester-planner signature.
@@ -32,6 +37,37 @@ interface GradingItem {
   ai_notes: { strengths: string[]; improvements: string[] } | null
 }
 
+// Pull a plain answer string out of the stored jsonb response.
+function quizAnswerToString(response: unknown): string {
+  if (response == null) return ""
+  if (typeof response === "string") return response
+  if (Array.isArray(response)) return response.map((r) => String(r)).join(", ")
+  if (typeof response === "object") {
+    const v = (response as { value?: unknown }).value
+    if (Array.isArray(v)) return v.map((r) => String(r)).join(", ")
+    if (v != null) return String(v)
+    return JSON.stringify(response)
+  }
+  return String(response)
+}
+
+interface RubricCriterion {
+  name: string
+  points: number
+  descriptor: string
+}
+
+function rubricCriteria(rubric: unknown): RubricCriterion[] {
+  if (rubric == null || typeof rubric !== "object") return []
+  const c = (rubric as { criteria?: unknown }).criteria
+  if (!Array.isArray(c)) return []
+  return c.map((x) => ({
+    name: String((x as RubricCriterion).name ?? ""),
+    points: Number((x as RubricCriterion).points ?? 0),
+    descriptor: String((x as RubricCriterion).descriptor ?? ""),
+  }))
+}
+
 interface VirgilDraftResponse {
   score?: number
   feedback?: string
@@ -43,6 +79,7 @@ interface VirgilDraftResponse {
 export default function GradingQueuePage() {
   const { user, isDemoMode } = useAuth()
   const [items, setItems] = useState<GradingItem[]>([])
+  const [quizReviews, setQuizReviews] = useState<PendingQuizReview[]>([])
   const [loading, setLoading] = useState(true)
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null)
   const [grading, setGrading] = useState(false)
@@ -52,10 +89,17 @@ export default function GradingQueuePage() {
   const fetchQueue = useCallback(async () => {
     if (isDemoMode || !user) {
       setItems([])
+      setQuizReviews([])
       setLoading(false)
       return
     }
     const supabase = createClient()
+
+    // Quiz responses that resolved to pending (Virgil failure or unkeyed
+    // question) — never a phantom zero; they wait here for the teacher.
+    void listPendingQuizReviews().then((res) => {
+      if (res.ok) setQuizReviews(res.data)
+    })
 
     const { data } = await supabase
       .from("assignment_submissions")
@@ -238,9 +282,9 @@ export default function GradingQueuePage() {
       <div className="flex flex-wrap items-center gap-3">
         <ClipboardCheck className="size-6 text-amber-500" />
         <h1 className="text-2xl font-bold">Grading Queue</h1>
-        {items.length > 0 && (
+        {items.length + quizReviews.length > 0 && (
           <span className="rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">
-            {items.length} to grade
+            {items.length + quizReviews.length} to grade
           </span>
         )}
         {essayDraftableCount > 0 && (
@@ -256,7 +300,7 @@ export default function GradingQueuePage() {
         )}
       </div>
 
-      {items.length === 0 ? (
+      {items.length === 0 && quizReviews.length === 0 ? (
         <div className="mt-12 flex flex-col items-center text-center">
           <div className="flex size-16 items-center justify-center rounded-2xl bg-green-50 dark:bg-green-950/30">
             <ClipboardCheck className="size-7 text-green-500" />
@@ -264,7 +308,7 @@ export default function GradingQueuePage() {
           <h2 className="mt-4 text-lg font-semibold">All caught up!</h2>
           <p className="mt-1 text-sm text-muted-foreground">No submissions to grade right now.</p>
         </div>
-      ) : (
+      ) : items.length === 0 ? null : (
         <div className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-[1fr_1fr]">
           {/* Submission list */}
           <div className="space-y-2">
@@ -401,6 +445,121 @@ export default function GradingQueuePage() {
           )}
         </div>
       )}
+
+      {quizReviews.length > 0 && (
+        <section className="mt-10">
+          <div className="flex items-center gap-2">
+            <h2 className="text-base font-semibold">Quiz answers awaiting review</h2>
+            <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">
+              {quizReviews.length}
+            </span>
+          </div>
+          <p className="mt-1 text-xs text-muted-foreground">
+            These responses weren&apos;t auto-graded — scores you assign here update each
+            student&apos;s quiz result and gradebook grade.
+          </p>
+          <div className="mt-4 space-y-3">
+            {quizReviews.map((r) => (
+              <QuizReviewCard
+                key={r.responseId}
+                item={r}
+                onGraded={() =>
+                  setQuizReviews((prev) => prev.filter((x) => x.responseId !== r.responseId))
+                }
+              />
+            ))}
+          </div>
+        </section>
+      )}
+    </div>
+  )
+}
+
+function QuizReviewCard({ item, onGraded }: { item: PendingQuizReview; onGraded: () => void }) {
+  const [score, setScore] = useState("")
+  const [feedback, setFeedback] = useState("")
+  const [saving, setSaving] = useState(false)
+
+  const criteria = rubricCriteria(item.rubric)
+  const answer = quizAnswerToString(item.response)
+
+  const save = useCallback(async () => {
+    setSaving(true)
+    const res = await overrideResponseScore({
+      responseId: item.responseId,
+      score: Number(score),
+      feedback: feedback.trim() || undefined,
+    })
+    setSaving(false)
+    if (!res.ok) {
+      toast.error(res.error)
+      return
+    }
+    toast.success("Score saved")
+    onGraded()
+  }, [item.responseId, score, feedback, onGraded])
+
+  return (
+    <div className="rounded-xl border bg-card p-4">
+      <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+        <span className="text-sm font-medium">{item.studentName}</span>
+        <span className="text-xs text-muted-foreground">
+          {item.quizTitle} ·{" "}
+          {new Date(item.submittedAt).toLocaleDateString("en-US", { month: "short", day: "numeric" })}
+        </span>
+      </div>
+      <p className="mt-2 text-sm font-medium">{item.questionText}</p>
+
+      <div className="mt-2 rounded-lg bg-muted/50 p-3">
+        <p className="text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">Answer</p>
+        <p className="mt-1 whitespace-pre-wrap text-sm">
+          {answer || <span className="italic text-muted-foreground">No answer</span>}
+        </p>
+      </div>
+
+      {criteria.length > 0 && (
+        <div className="mt-2 rounded-lg border bg-muted/30 p-3">
+          <p className="text-[10px] font-semibold uppercase tracking-wide text-muted-foreground">Rubric</p>
+          <ul className="mt-1 space-y-1">
+            {criteria.map((c, i) => (
+              <li key={i} className="text-xs text-muted-foreground">
+                <span className="font-medium text-foreground">{c.name}</span> · {c.points} pt —{" "}
+                {c.descriptor}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+      {item.referenceAnswer && (
+        <p className="mt-2 text-xs text-muted-foreground">
+          Reference answer: <span className="font-medium text-foreground">{item.referenceAnswer}</span>
+        </p>
+      )}
+
+      <div className="mt-3 flex flex-wrap items-end gap-2">
+        <div>
+          <label className="text-[10px] font-medium text-muted-foreground">
+            Score (of {item.maxPoints})
+          </label>
+          <Input
+            type="number"
+            min={0}
+            max={item.maxPoints}
+            value={score}
+            onChange={(e) => setScore(e.target.value)}
+            className="mt-1 w-24 text-sm"
+          />
+        </div>
+        <Input
+          value={feedback}
+          onChange={(e) => setFeedback(e.target.value)}
+          placeholder="Optional feedback to the student…"
+          className="flex-1 text-sm"
+        />
+        <Button onClick={save} disabled={saving || score.trim() === ""} className="gap-1.5">
+          {saving ? "Saving…" : "Save score"}
+        </Button>
+      </div>
     </div>
   )
 }
