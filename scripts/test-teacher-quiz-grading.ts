@@ -122,6 +122,21 @@ async function main() {
       "bool right, reason wrong → auto-graded (not full credit)",
       reasonWrong.gradedBy === "auto" && reasonWrong.isCorrect === false,
     )
+    check("bool right, reason wrong → HALF credit (2 of 4)", reasonWrong.score === 2)
+
+    const boolWrong = await resolveResponseGrade({
+      questionType: "tf_with_reason",
+      correctAnswer: "true|2",
+      options: null,
+      questionText: "True or false, and why?",
+      rubric: null,
+      referenceAnswer: null,
+      maxPoints: 4,
+      penalty: 0,
+      rawAnswer: "false|2",
+      grade: throwingGrader,
+    })
+    check("bool wrong → zero, graded", boolWrong.score === 0 && boolWrong.graded === true)
   }
 
   console.log("\nshort_answer with meta.acceptedAnswers is objective (normalized match):")

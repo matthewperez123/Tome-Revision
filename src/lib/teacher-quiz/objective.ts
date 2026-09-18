@@ -22,7 +22,8 @@ export interface VirgilGrade {
   truncated: boolean
 }
 
-import { acceptedAnswersFrom, isOpenEnded } from "@/lib/questions/classify"
+import { isOpenEnded } from "@/lib/questions/classify"
+import { gradeAnswer, type GradableQuestion, type GradeVerdict } from "@/lib/questions/grade"
 
 /**
  * The canonical objective/open-ended split lives in
@@ -31,14 +32,6 @@ import { acceptedAnswersFrom, isOpenEnded } from "@/lib/questions/classify"
  */
 export function isOpenEndedType(t: string, meta?: unknown): boolean {
   return isOpenEnded(t, meta)
-}
-
-function norm(s: string): string {
-  return s
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, " ")
-    .replace(/[.,;:!?"'`]+$/g, "")
 }
 
 /** Pull a plain answer string out of the stored jsonb response. */
@@ -54,10 +47,62 @@ export function answerToString(response: unknown): string {
   return String(response)
 }
 
+/** Pull grade.ts extras (variants / order / pairs) out of the row's meta jsonb. */
+function metaExtras(
+  meta: unknown,
+): Pick<GradableQuestion, "acceptedVariants" | "correctOrder" | "correctPairs"> {
+  if (meta == null || typeof meta !== "object") return {}
+  const m = meta as Record<string, unknown>
+  const strings = (v: unknown): string[] | null =>
+    Array.isArray(v) ? v.map((x) => String(x)) : null
+  const pairs =
+    m.correctPairs != null && typeof m.correctPairs === "object" && !Array.isArray(m.correctPairs)
+      ? Object.fromEntries(
+          Object.entries(m.correctPairs as Record<string, unknown>).map(([k, v]) => [k, String(v)]),
+        )
+      : null
+  return {
+    acceptedVariants: strings(m.acceptedVariants),
+    correctOrder: strings(m.correctOrder),
+    correctPairs: pairs,
+  }
+}
+
+/** Serialize the stored jsonb response into the grader's wire format. */
+function responseToWire(type: string, response: unknown): string {
+  if (typeof response === "string") return response
+  // ordering / matching grade against JSON — preserve structure, don't flatten.
+  if ((type === "ordering" || type === "matching") && response != null && typeof response === "object") {
+    return JSON.stringify(response)
+  }
+  return answerToString(response)
+}
+
+/** The shared 16-type verdict for a teacher-quiz row (pending = not machine-gradable). */
+export function gradeObjectiveVerdict(
+  question: {
+    question_type: string
+    correct_answer: string | null
+    meta?: unknown
+  },
+  response: unknown,
+): GradeVerdict {
+  return gradeAnswer(
+    {
+      type: question.question_type,
+      correctAnswer: question.correct_answer,
+      meta: question.meta,
+      ...metaExtras(question.meta),
+    },
+    responseToWire(question.question_type, response),
+  )
+}
+
 /**
  * Grade an objective question. Returns null when the question isn't
  * machine-gradable (no correct_answer, or an open-ended type) — the caller
- * then routes it to Virgil or to teacher review.
+ * then routes it to Virgil or to teacher review. Boolean-only view of
+ * `gradeObjectiveVerdict` (partial credit reads as not-correct).
  */
 export function autoGradeObjective(
   question: {
@@ -68,40 +113,8 @@ export function autoGradeObjective(
   },
   response: unknown,
 ): boolean | null {
-  const type = question.question_type
-  const correct = question.correct_answer
-  if (isOpenEndedType(type, question.meta)) return null
-
-  const given = answerToString(response)
-
-  // short_answer (objective form): normalized match against acceptedAnswers.
-  if (type === "short_answer") {
-    const accepted = acceptedAnswersFrom(question.meta).map(norm)
-    if (accepted.length === 0) return null
-    return accepted.includes(norm(given))
-  }
-
-  if (correct == null || correct.trim() === "") return null
-
-  if (type === "multiple_select") {
-    const expected = new Set(correct.split(",").map((s) => norm(s)).filter(Boolean))
-    const got = new Set(given.split(",").map((s) => norm(s)).filter(Boolean))
-    if (expected.size !== got.size) return false
-    for (const e of expected) if (!got.has(e)) return false
-    return true
-  }
-
-  // tf_with_reason: composite "<bool>|<reasonIndex>" key. Both parts must
-  // match for a true verdict. (Half credit for the boolean alone is layered
-  // on by the shared grader in src/lib/questions/grade.ts.) A legacy
-  // bool-only key compares as a plain norm-equality below.
-  if (type === "tf_with_reason" && correct.includes("|")) {
-    const [wantBool, wantReason] = correct.split("|").map((s) => norm(s))
-    const [gotBool, gotReason] = given.split("|").map((s) => norm(s ?? ""))
-    return wantBool === gotBool && wantReason === (gotReason ?? "")
-  }
-
-  return norm(given) === norm(correct)
+  const v = gradeObjectiveVerdict(question, response)
+  return v.kind === "pending" ? null : v.correct
 }
 
 /** Per-question max points, defaulting sensibly by kind. */
@@ -165,23 +178,19 @@ export async function resolveResponseGrade(params: {
 }): Promise<ResolvedGrade> {
   const { questionType: type, maxPoints, penalty, rawAnswer, meta } = params
 
-  const objectiveVerdict = isOpenEndedType(type, meta)
+  const verdict = isOpenEndedType(type, meta)
     ? null
-    : autoGradeObjective(
-        {
-          question_type: type,
-          correct_answer: params.correctAnswer,
-          options: params.options,
-          meta,
-        },
+    : gradeObjectiveVerdict(
+        { question_type: type, correct_answer: params.correctAnswer, meta },
         rawAnswer,
       )
 
-  if (objectiveVerdict !== null) {
-    const isCorrect = objectiveVerdict === true
-    const score = Math.max(0, (isCorrect ? maxPoints : 0) - penalty)
+  if (verdict && verdict.kind === "graded") {
+    // credit ∈ {0, 0.5, 1} — tf_with_reason's boolean-alone half credit lands
+    // here (score columns are numeric(6,2) since the 3.1 migration).
+    const score = Math.max(0, verdict.credit * maxPoints - penalty)
     return {
-      isCorrect,
+      isCorrect: verdict.correct,
       score,
       gradedBy: "auto",
       aiFeedback: null,
