@@ -31,42 +31,51 @@ export const DIFFICULTY_SEMANTICS: Record<TeacherQuizDifficulty, string> = {
 
 // ── Question types ────────────────────────────────────────────────────────────
 
-export const OBJECTIVE_QUESTION_TYPES = [
-  "multiple_choice",
-  "multiple_select",
-  "true_false",
-  "fill_blank",
-  "vocabulary_in_context",
-] as const
+// The canonical 16-type vocabulary and the objective/open-ended rule live in
+// src/lib/questions/classify.ts — this file re-exposes them for the teacher
+// stack. NOTE: short_answer is objective only when meta.acceptedAnswers[] is
+// present; the meta-free lists below use its DEFAULT (open-ended) form.
+import {
+  CANONICAL_QUESTION_TYPES,
+  isObjective,
+  isOpenEnded,
+  type CanonicalQuestionType,
+} from "@/lib/questions/classify"
 
-export const OPEN_ENDED_QUESTION_TYPES = [
-  "short_answer",
-  "free_response",
-  "tf_with_reason",
-] as const
+export const ALL_QUESTION_TYPES = CANONICAL_QUESTION_TYPES
+export type TeacherQuizQuestionType = CanonicalQuestionType
 
-export const ALL_QUESTION_TYPES = [
-  ...OBJECTIVE_QUESTION_TYPES,
-  ...OPEN_ENDED_QUESTION_TYPES,
-] as const
+export type OpenEndedQuestionType = "short_answer" | "free_response" | "reflection"
+export type ObjectiveQuestionType = Exclude<TeacherQuizQuestionType, OpenEndedQuestionType>
 
-export type ObjectiveQuestionType = (typeof OBJECTIVE_QUESTION_TYPES)[number]
-export type OpenEndedQuestionType = (typeof OPEN_ENDED_QUESTION_TYPES)[number]
-export type TeacherQuizQuestionType = (typeof ALL_QUESTION_TYPES)[number]
+export const OPEN_ENDED_QUESTION_TYPES = ALL_QUESTION_TYPES.filter(
+  (t): t is OpenEndedQuestionType => isOpenEnded(t),
+)
+export const OBJECTIVE_QUESTION_TYPES = ALL_QUESTION_TYPES.filter(
+  (t): t is ObjectiveQuestionType => !isOpenEnded(t),
+)
 
 export const QUESTION_TYPE_LABELS: Record<TeacherQuizQuestionType, string> = {
   multiple_choice: "Multiple choice",
-  multiple_select: "Multiple select",
   true_false: "True / False",
   fill_blank: "Fill the blank",
   vocabulary_in_context: "Vocabulary in context",
+  passage_id: "Passage identification",
+  matching: "Matching",
+  ordering: "Ordering",
+  close_reading: "Close reading",
+  tf_with_reason: "True/False with reason",
+  theme_analysis: "Theme analysis",
+  cross_reference: "Cross-reference",
+  reflection: "Reflection",
+  identification: "Identification",
+  multiple_select: "Multiple select",
   short_answer: "Short answer",
   free_response: "Free response",
-  tf_with_reason: "True/False with reason",
 }
 
 export function isObjectiveType(t: TeacherQuizQuestionType): t is ObjectiveQuestionType {
-  return (OBJECTIVE_QUESTION_TYPES as readonly string[]).includes(t)
+  return isObjective(t)
 }
 
 export const QUESTION_CATEGORIES = [

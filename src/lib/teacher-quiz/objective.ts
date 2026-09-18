@@ -22,23 +22,15 @@ export interface VirgilGrade {
   truncated: boolean
 }
 
-/** Types that carry a machine-checkable correct_answer. */
-const OBJECTIVE_TYPES = new Set([
-  "multiple_choice",
-  "multiple_select",
-  "true_false",
-  "fill_blank",
-  "vocabulary_in_context",
-  "passage_id",
-  "vocabulary",
-  "short_answer",
-])
+import { acceptedAnswersFrom, isOpenEnded } from "@/lib/questions/classify"
 
-/** Types that must be graded by Virgil against a rubric / reference answer. */
-const OPEN_ENDED_TYPES = new Set(["free_response", "tf_with_reason"])
-
-export function isOpenEndedType(t: string): boolean {
-  return OPEN_ENDED_TYPES.has(t)
+/**
+ * The canonical objective/open-ended split lives in
+ * `src/lib/questions/classify.ts`. Pass `meta` where available so
+ * short_answer (objective iff meta.acceptedAnswers[]) resolves correctly.
+ */
+export function isOpenEndedType(t: string, meta?: unknown): boolean {
+  return isOpenEnded(t, meta)
 }
 
 function norm(s: string): string {
@@ -68,15 +60,29 @@ export function answerToString(response: unknown): string {
  * then routes it to Virgil or to teacher review.
  */
 export function autoGradeObjective(
-  question: { question_type: string; correct_answer: string | null; options: unknown },
+  question: {
+    question_type: string
+    correct_answer: string | null
+    options: unknown
+    meta?: unknown
+  },
   response: unknown,
 ): boolean | null {
   const type = question.question_type
   const correct = question.correct_answer
-  if (isOpenEndedType(type)) return null
-  if (!OBJECTIVE_TYPES.has(type) || correct == null || correct.trim() === "") return null
+  if (isOpenEndedType(type, question.meta)) return null
 
   const given = answerToString(response)
+
+  // short_answer (objective form): normalized match against acceptedAnswers.
+  if (type === "short_answer") {
+    const accepted = acceptedAnswersFrom(question.meta).map(norm)
+    if (accepted.length === 0) return null
+    return accepted.includes(norm(given))
+  }
+
+  if (correct == null || correct.trim() === "") return null
+
   if (type === "multiple_select") {
     const expected = new Set(correct.split(",").map((s) => norm(s)).filter(Boolean))
     const got = new Set(given.split(",").map((s) => norm(s)).filter(Boolean))
@@ -84,6 +90,17 @@ export function autoGradeObjective(
     for (const e of expected) if (!got.has(e)) return false
     return true
   }
+
+  // tf_with_reason: composite "<bool>|<reasonIndex>" key. Both parts must
+  // match for a true verdict. (Half credit for the boolean alone is layered
+  // on by the shared grader in src/lib/questions/grade.ts.) A legacy
+  // bool-only key compares as a plain norm-equality below.
+  if (type === "tf_with_reason" && correct.includes("|")) {
+    const [wantBool, wantReason] = correct.split("|").map((s) => norm(s))
+    const [gotBool, gotReason] = given.split("|").map((s) => norm(s ?? ""))
+    return wantBool === gotBool && wantReason === (gotReason ?? "")
+  }
+
   return norm(given) === norm(correct)
 }
 
@@ -92,10 +109,11 @@ export function questionMaxPoints(q: {
   question_type: string
   max_points: number | null
   points: number | null
+  meta?: unknown
 }): number {
   if (q.max_points != null) return q.max_points
   if (q.points != null) return q.points
-  return isOpenEndedType(q.question_type) ? 4 : 1
+  return isOpenEndedType(q.question_type, q.meta) ? 4 : 1
 }
 
 // ── Per-response grading decision ─────────────────────────────────────────────
@@ -142,13 +160,20 @@ export async function resolveResponseGrade(params: {
   penalty: number
   rawAnswer: unknown
   grade: FreeResponseGrader
+  /** Question meta jsonb — drives short_answer objective/open classification. */
+  meta?: unknown
 }): Promise<ResolvedGrade> {
-  const { questionType: type, maxPoints, penalty, rawAnswer } = params
+  const { questionType: type, maxPoints, penalty, rawAnswer, meta } = params
 
-  const objectiveVerdict = isOpenEndedType(type)
+  const objectiveVerdict = isOpenEndedType(type, meta)
     ? null
     : autoGradeObjective(
-        { question_type: type, correct_answer: params.correctAnswer, options: params.options },
+        {
+          question_type: type,
+          correct_answer: params.correctAnswer,
+          options: params.options,
+          meta,
+        },
         rawAnswer,
       )
 
@@ -165,7 +190,7 @@ export async function resolveResponseGrade(params: {
     }
   }
 
-  if (isOpenEndedType(type)) {
+  if (isOpenEndedType(type, meta)) {
     try {
       const g = await params.grade({
         questionText: params.questionText,

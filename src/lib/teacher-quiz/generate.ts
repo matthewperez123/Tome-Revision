@@ -1,7 +1,9 @@
 import "server-only"
 
 import Anthropic from "@anthropic-ai/sdk"
+import { isOpenEnded } from "@/lib/questions/classify"
 import {
+  ALL_QUESTION_TYPES,
   generatedQuestionSchema,
   generatedQuizSchema,
   answerStringsForLeakCheck,
@@ -21,11 +23,11 @@ const MODEL_HAIKU = "claude-haiku-4-5"
 const MODEL_SONNET = "claude-sonnet-4-6"
 const MODEL_OPUS = "claude-opus-4-8"
 
-const OPEN_ENDED = new Set<TeacherQuizQuestionType>([
-  "short_answer",
-  "free_response",
-  "tf_with_reason",
-])
+// The canonical open-ended rule (meta-free default form) — classify.ts is the
+// single source of truth for the 16-type vocabulary.
+const OPEN_ENDED = new Set<TeacherQuizQuestionType>(
+  ALL_QUESTION_TYPES.filter((t) => isOpenEnded(t)),
+)
 
 export function chooseModel(req: GenerateQuizRequest): string {
   const hasMaster = (req.difficultyMix.master ?? 0) > 0 || req.single?.difficulty === "master"
