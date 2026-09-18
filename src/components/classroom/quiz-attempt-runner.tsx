@@ -13,12 +13,13 @@ import {
 } from "@/lib/actions/teacher-quizzes"
 import { IRIDESCENT } from "@/lib/semester-plan/rubric"
 import { useActivityBeacon } from "@/hooks/use-activity-beacon"
-
-const MULTI = new Set(["multiple_choice", "vocabulary_in_context"])
-const TEXT = new Set(["fill_blank", "short_answer"])
-const OPEN = new Set(["free_response", "tf_with_reason"])
-
-type AnswerValue = string | string[]
+import { useReducedMotion } from "framer-motion"
+import { QUESTION_RENDERERS } from "@/components/trials/questions"
+import {
+  adaptTeacherQuestion,
+  RENDERER_OWNS_PROMPT,
+} from "@/lib/questions/adapt-teacher-question"
+import { ShortAnswer } from "@/components/trials/questions/ShortAnswer"
 
 /**
  * The single teacher-quiz take engine, reused wherever a student answers a
@@ -27,6 +28,13 @@ type AnswerValue = string | string[]
  * every attempt is graded authoritatively server-side by `submitQuizAttempt`
  * (objective auto-grade + free-response Tome Assistant review), so this component only
  * renders question cards, collects answers, and shows the returned result.
+ *
+ * Every question renders through the shared trial renderer registry
+ * (`QUESTION_RENDERERS`), the same components the reader's chapter trials
+ * use — one renderer per canonical type, everywhere. Renderers are mounted
+ * with `answered=false` for the whole attempt (no per-question feedback;
+ * grading is server-authoritative on submit), so students can revise any
+ * answer until they submit the quiz.
  */
 export function QuizAttemptRunner({
   quizId,
@@ -46,12 +54,13 @@ export function QuizAttemptRunner({
   const [quiz, setQuiz] = useState<AttemptQuiz | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const [answers, setAnswers] = useState<Record<string, AnswerValue>>({})
+  const [answers, setAnswers] = useState<Record<string, string>>({})
   const [revealedHints, setRevealedHints] = useState<Record<string, boolean>>({})
   const [submitting, setSubmitting] = useState(false)
   const [result, setResult] = useState<AttemptResult | null>(null)
   const [remaining, setRemaining] = useState<number | null>(null)
   const startedAtRef = useRef<string>("")
+  const reduced = useReducedMotion() ?? false
 
   useEffect(() => {
     let active = true
@@ -208,88 +217,38 @@ export function QuizAttemptRunner({
       )}
 
       <div className="mt-6 space-y-6">
-        {quiz.questions.map((q, idx) => (
+        {quiz.questions.map((q, idx) => {
+          const adapted = adaptTeacherQuestion(q)
+          // Registry lookup with a text-entry fallback for any unknown type —
+          // never silently drop a question the teacher authored.
+          const Renderer = QUESTION_RENDERERS[adapted.type] ?? ShortAnswer
+          const recorded = hasAnswer(answers[q.id])
+          return (
           <div key={q.id} className="rounded-xl border bg-card p-5">
             <div className="flex items-start gap-2">
               <span className="mt-0.5 text-xs font-semibold text-muted-foreground">{idx + 1}.</span>
-              <p className="font-serif text-base leading-relaxed">{q.question_text}</p>
+              {RENDERER_OWNS_PROMPT.has(adapted.type) ? (
+                <span className="sr-only">{q.question_text}</span>
+              ) : (
+                <p className="flex-1 font-serif text-base leading-relaxed">{q.question_text}</p>
+              )}
+              {recorded && (
+                <span className="ml-auto flex items-center gap-1 rounded-full bg-[#2E7D6F]/10 px-2 py-0.5 text-[11px] font-medium text-[#2E7D6F]">
+                  <Check className="size-3" /> Recorded
+                </span>
+              )}
             </div>
 
             <div className="mt-4">
-              {MULTI.has(q.question_type) && (
-                <div className="space-y-2">
-                  {(q.options ?? []).map((opt) => (
-                    <OptionRow
-                      key={opt}
-                      label={opt}
-                      selected={answers[q.id] === opt}
-                      onSelect={() => setAnswers((a) => ({ ...a, [q.id]: opt }))}
-                    />
-                  ))}
-                </div>
-              )}
-
-              {q.question_type === "multiple_select" && (
-                <div className="space-y-2">
-                  {(q.options ?? []).map((opt) => {
-                    const cur = (answers[q.id] as string[] | undefined) ?? []
-                    const on = cur.includes(opt)
-                    return (
-                      <OptionRow
-                        key={opt}
-                        label={opt}
-                        selected={on}
-                        multi
-                        onSelect={() =>
-                          setAnswers((a) => ({
-                            ...a,
-                            [q.id]: on ? cur.filter((o) => o !== opt) : [...cur, opt],
-                          }))
-                        }
-                      />
-                    )
-                  })}
-                </div>
-              )}
-
-              {q.question_type === "true_false" && (
-                <div className="flex gap-2">
-                  {["true", "false"].map((v) => (
-                    <button
-                      key={v}
-                      type="button"
-                      onClick={() => setAnswers((a) => ({ ...a, [q.id]: v }))}
-                      className={`flex-1 rounded-lg border px-4 py-2.5 text-sm font-medium capitalize transition-colors ${
-                        answers[q.id] === v
-                          ? "border-[#2A4B8D] bg-[#2A4B8D]/5 text-[#2A4B8D]"
-                          : "hover:bg-muted/50"
-                      }`}
-                    >
-                      {v}
-                    </button>
-                  ))}
-                </div>
-              )}
-
-              {TEXT.has(q.question_type) && (
-                <input
-                  type="text"
-                  value={(answers[q.id] as string | undefined) ?? ""}
-                  onChange={(e) => setAnswers((a) => ({ ...a, [q.id]: e.target.value }))}
-                  placeholder="Your answer"
-                  className="w-full rounded-lg border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
-                />
-              )}
-
-              {OPEN.has(q.question_type) && (
-                <textarea
-                  value={(answers[q.id] as string | undefined) ?? ""}
-                  onChange={(e) => setAnswers((a) => ({ ...a, [q.id]: e.target.value }))}
-                  placeholder="Write your response…"
-                  rows={5}
-                  className="w-full rounded-lg border bg-background p-3 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
-                />
-              )}
+              <Renderer
+                question={adapted}
+                answered={false}
+                isCorrect={false}
+                isWrong={false}
+                selectedAnswer={answers[q.id] ?? null}
+                onSubmit={(answer) => setAnswers((a) => ({ ...a, [q.id]: answer }))}
+                reduced={reduced}
+              />
             </div>
 
             {quiz.hints_enabled && q.hints.length > 0 && (
@@ -323,7 +282,8 @@ export function QuizAttemptRunner({
               </div>
             )}
           </div>
-        ))}
+          )
+        })}
       </div>
 
       <div className="mt-6 flex justify-end">
@@ -336,41 +296,8 @@ export function QuizAttemptRunner({
   )
 }
 
-function OptionRow({
-  label,
-  selected,
-  onSelect,
-  multi = false,
-}: {
-  label: string
-  selected: boolean
-  onSelect: () => void
-  multi?: boolean
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onSelect}
-      className={`flex w-full items-center gap-3 rounded-lg border px-3 py-2.5 text-left text-sm transition-colors ${
-        selected ? "border-[#2A4B8D] bg-[#2A4B8D]/5" : "hover:bg-muted/50"
-      }`}
-    >
-      <span
-        className={`flex size-4 flex-shrink-0 items-center justify-center border ${
-          multi ? "rounded" : "rounded-full"
-        } ${selected ? "border-[#2A4B8D] bg-[#2A4B8D] text-white" : "border-muted-foreground/40"}`}
-      >
-        {selected && <Check className="size-3" />}
-      </span>
-      <span>{label}</span>
-    </button>
-  )
-}
-
-function hasAnswer(v: AnswerValue | undefined): boolean {
-  if (v == null) return false
-  if (Array.isArray(v)) return v.length > 0
-  return v.trim().length > 0
+function hasAnswer(v: string | undefined): boolean {
+  return v != null && v.trim().length > 0
 }
 
 function fmt(seconds: number): string {

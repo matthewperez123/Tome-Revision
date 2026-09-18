@@ -18,6 +18,7 @@ import {
   resolveResponseGrade,
 } from "@/lib/teacher-quiz/grade"
 import { parseHints, type Hint } from "@/lib/quiz-hints"
+import { sanitizePresentationMeta } from "@/lib/questions/adapt-teacher-question"
 import { assignmentReaderHref } from "@/lib/assignments/links"
 
 const Uuid = z.string().uuid()
@@ -493,6 +494,12 @@ export interface AttemptQuestion {
   /** MC-only distractor eliminations, in reveal order. */
   distractor_eliminations: string[] | null
   sort_order: number
+  /**
+   * Presentation-safe meta only (through sanitizePresentationMeta) — passage,
+   * matching columns, ordering items, tf reasons, reflection framing. Answer
+   * keys (acceptedAnswers, correctOrder, correctPairs, …) are stripped.
+   */
+  meta: Record<string, unknown> | null
 }
 
 export interface AttemptQuiz {
@@ -603,7 +610,7 @@ export async function getQuizForAttempt(
     const { data: rawQuestions } = await admin
       .from("teacher_quiz_questions")
       .select(
-        "id, question_type, question_text, options, points, max_points, category, difficulty, hints, distractor_eliminations, sort_order",
+        "id, question_type, question_text, options, points, max_points, category, difficulty, hints, distractor_eliminations, sort_order, meta",
       )
       .eq("quiz_id", quizId)
       .order("sort_order", { ascending: true })
@@ -624,6 +631,7 @@ export async function getQuizForAttempt(
       hints: quiz.hints_enabled ? parseHints(q.hints) : [],
       distractor_eliminations: (q.distractor_eliminations as string[] | null) ?? null,
       sort_order: (q.sort_order as number) ?? 0,
+      meta: sanitizePresentationMeta(q.meta),
     }))
 
     // Prior completed attempt (for retake gating / result surface).
@@ -722,7 +730,7 @@ export async function submitQuizAttempt(
     const { data: questions } = await admin
       .from("teacher_quiz_questions")
       .select(
-        "id, question_type, question_text, options, correct_answer, rubric, reference_answer, max_points, points",
+        "id, question_type, question_text, options, correct_answer, rubric, reference_answer, max_points, points, meta",
       )
       .eq("quiz_id", i.quizId)
     if (!questions || questions.length === 0) return fail("This quiz has no questions.")
@@ -791,6 +799,7 @@ export async function submitQuizAttempt(
         penalty,
         rawAnswer,
         grade: gradeFreeResponseWithVirgil,
+        meta: q.meta,
       })
 
       if (resolved.gradedBy !== "auto") needsReview = true

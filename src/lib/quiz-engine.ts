@@ -24,6 +24,9 @@ export type QuestionType =
   | "reflection"
   | "identification"
   | "tf_with_reason"
+  | "multiple_select"
+  | "short_answer"
+  | "free_response"
 
 export type Question = {
   id: string
