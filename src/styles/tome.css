@@ -298,6 +298,17 @@
   break-after: avoid;
 }
 
+/* The paginated page box is overflow:hidden (a BFC), so a first block's top
+   margin pushes content down INSIDE the box — but the paginator's probe
+   (overflow: visible) collapses that margin away, so pages were measured
+   without it (seen as a ~96px shove on blockquote-opening pages). Zero it at
+   render so every page top-aligns exactly as measured (classic book behavior:
+   text meets the top edge of the text block). Chapter openers are unaffected —
+   the .reader-chapter-header sink is padding, not margin. */
+.prose-reader[data-reader-text] > :first-child {
+  margin-top: 0 !important;
+}
+
 /* ── Paginated chapter header ───────────────────────
    Parity with the scroll reader's React header (page.tsx eyebrow + h1 title +
    subtitle). Prepended into the paginated content as an atomic <figure> so the
@@ -345,6 +356,12 @@
   width: 100%;
   border-collapse: collapse;
   border: none;
+  /* Fixed layout: the speaker column is always exactly 120px no matter which
+     rows share the table. The paginator splits scene tables at row boundaries
+     (one sub-table per page); with auto layout each page's table would size
+     its columns from only its own rows and wrap lines differently than the
+     whole-scene measuring probe. Fixed layout makes both identical. */
+  table-layout: fixed;
 }
 
 .prose-reader.content-drama table td {

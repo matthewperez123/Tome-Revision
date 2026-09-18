@@ -1,0 +1,266 @@
+{
+  "generatedAt": "2026-09-18T00:00:03.598Z",
+  "base": "http://localhost:3000",
+  "books": [
+    {
+      "book": "pride-and-prejudice",
+      "chaptersSampled": [
+        0,
+        1,
+        30
+      ],
+      "pagesSampled": 51,
+      "wordsPerPage": {
+        "min": 48,
+        "median": 168,
+        "max": 255,
+        "samples": 43
+      },
+      "folioSequenceOk": true,
+      "chapterStartFoliosOk": true,
+      "clippedPages": 0,
+      "overflowPages": 0,
+      "wordSplits": 0,
+      "imageIssues": 0,
+      "smallViewportClipped": 0,
+      "singleModeClipped": 0
+    },
+    {
+      "book": "frankenstein",
+      "chaptersSampled": [
+        0,
+        1,
+        15
+      ],
+      "pagesSampled": 70,
+      "wordsPerPage": {
+        "min": 49,
+        "median": 171,
+        "max": 257,
+        "samples": 56
+      },
+      "folioSequenceOk": true,
+      "chapterStartFoliosOk": true,
+      "clippedPages": 0,
+      "overflowPages": 0,
+      "wordSplits": 0,
+      "imageIssues": 0,
+      "smallViewportClipped": 0,
+      "singleModeClipped": 0
+    },
+    {
+      "book": "jane-eyre",
+      "chaptersSampled": [
+        0,
+        1,
+        20
+      ],
+      "pagesSampled": 67,
+      "wordsPerPage": {
+        "min": 82,
+        "median": 160,
+        "max": 227,
+        "samples": 59
+      },
+      "folioSequenceOk": true,
+      "chapterStartFoliosOk": true,
+      "clippedPages": 0,
+      "overflowPages": 0,
+      "wordSplits": 0,
+      "imageIssues": 0,
+      "smallViewportClipped": 0,
+      "singleModeClipped": 0
+    },
+    {
+      "book": "great-expectations",
+      "chaptersSampled": [
+        0,
+        1,
+        29
+      ],
+      "pagesSampled": 71,
+      "wordsPerPage": {
+        "min": 57,
+        "median": 172,
+        "max": 251,
+        "samples": 65
+      },
+      "folioSequenceOk": true,
+      "chapterStartFoliosOk": true,
+      "clippedPages": 0,
+      "overflowPages": 0,
+      "wordSplits": 0,
+      "imageIssues": 0,
+      "smallViewportClipped": 0,
+      "singleModeClipped": 0
+    },
+    {
+      "book": "wuthering-heights",
+      "chaptersSampled": [
+        0,
+        1,
+        17
+      ],
+      "pagesSampled": 69,
+      "wordsPerPage": {
+        "min": 41,
+        "median": 164,
+        "max": 247,
+        "samples": 59
+      },
+      "folioSequenceOk": true,
+      "chapterStartFoliosOk": true,
+      "clippedPages": 0,
+      "overflowPages": 0,
+      "wordSplits": 0,
+      "imageIssues": 0,
+      "smallViewportClipped": 0,
+      "singleModeClipped": 0
+    },
+    {
+      "book": "the-odyssey",
+      "chaptersSampled": [
+        0,
+        1,
+        12
+      ],
+      "pagesSampled": 60,
+      "wordsPerPage": {
+        "min": 53,
+        "median": 145,
+        "max": 245,
+        "samples": 53
+      },
+      "folioSequenceOk": true,
+      "chapterStartFoliosOk": true,
+      "clippedPages": 0,
+      "overflowPages": 0,
+      "wordSplits": 0,
+      "imageIssues": 0,
+      "smallViewportClipped": 0,
+      "singleModeClipped": 0
+    },
+    {
+      "book": "the-iliad",
+      "chaptersSampled": [
+        0,
+        1,
+        12
+      ],
+      "pagesSampled": 70,
+      "wordsPerPage": {
+        "min": 42,
+        "median": 162,
+        "max": 246,
+        "samples": 63
+      },
+      "folioSequenceOk": true,
+      "chapterStartFoliosOk": true,
+      "clippedPages": 0,
+      "overflowPages": 0,
+      "wordSplits": 0,
+      "imageIssues": 0,
+      "smallViewportClipped": 0,
+      "singleModeClipped": 0
+    },
+    {
+      "book": "paradise-lost",
+      "chaptersSampled": [
+        0,
+        1,
+        6
+      ],
+      "pagesSampled": 71,
+      "wordsPerPage": {
+        "min": 44,
+        "median": 158,
+        "max": 240,
+        "samples": 61
+      },
+      "folioSequenceOk": true,
+      "chapterStartFoliosOk": true,
+      "clippedPages": 0,
+      "overflowPages": 0,
+      "wordSplits": 0,
+      "imageIssues": 0,
+      "smallViewportClipped": 0,
+      "singleModeClipped": 0
+    },
+    {
+      "book": "hamlet",
+      "chaptersSampled": [
+        0,
+        1,
+        13
+      ],
+      "pagesSampled": 59,
+      "wordsPerPage": {
+        "min": 44,
+        "median": 96,
+        "max": 111,
+        "samples": 46
+      },
+      "folioSequenceOk": true,
+      "chapterStartFoliosOk": true,
+      "clippedPages": 0,
+      "overflowPages": 0,
+      "wordSplits": 0,
+      "imageIssues": 0,
+      "smallViewportClipped": 0,
+      "singleModeClipped": 0
+    },
+    {
+      "book": "julius-caesar",
+      "chaptersSampled": [
+        0,
+        1,
+        12
+      ],
+      "pagesSampled": 69,
+      "wordsPerPage": {
+        "min": 51,
+        "median": 100,
+        "max": 183,
+        "samples": 53
+      },
+      "folioSequenceOk": true,
+      "chapterStartFoliosOk": true,
+      "clippedPages": 0,
+      "overflowPages": 0,
+      "wordSplits": 0,
+      "imageIssues": 0,
+      "smallViewportClipped": 0,
+      "singleModeClipped": 0
+    },
+    {
+      "book": "moby-dick",
+      "chaptersSampled": [
+        0,
+        1,
+        69,
+        19
+      ],
+      "pagesSampled": 90,
+      "wordsPerPage": {
+        "min": 43,
+        "median": 122,
+        "max": 252,
+        "samples": 80
+      },
+      "folioSequenceOk": true,
+      "chapterStartFoliosOk": true,
+      "clippedPages": 0,
+      "overflowPages": 0,
+      "wordSplits": 0,
+      "imageIssues": 0,
+      "smallViewportClipped": 0,
+      "singleModeClipped": 0
+    }
+  ],
+  "issues": [],
+  "deviations": [
+    "Canonical-range folio display at enlarged type (spec §5.4 '45–46') is not implemented; the reader shows live-typography folios at non-default sizes.",
+    "Words-per-page medians are reported honestly; the frozen 392×672 @16/24 geometry may land below the 280–340 target for prose.",
+    "Illustration checks are implemented but vacuous: every content image uses a relative Standard Ebooks '../images/…' src, which src/lib/reader/sanitize.ts deliberately strips (no asset host). No book currently renders inline illustrations, so no illustration-spread screenshot is possible."
+  ]
+}

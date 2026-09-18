@@ -81,10 +81,209 @@ function normalizeToBlocks(nodes: NodeListOf<ChildNode>): Element[] {
   return result
 }
 
+/** Fragment a drama speech row (<tr><td>SPEAKER</td><td><p>…</p>×N</td></tr>)
+ *  into one row per paragraph so page breaks can fall inside long speeches.
+ *  Rows whose speech cell holds bare text or a single block stay whole. */
+function splitSpeechRow(row: HTMLElement): HTMLElement[] {
+  const cells = Array.from(row.children) as HTMLElement[]
+  const speech = cells[cells.length - 1]
+  if (!speech || speech.tagName !== "TD") return [row]
+  let parts = Array.from(speech.children) as HTMLElement[]
+  // Only fragment when the cell is purely block children (no stray text nodes
+  // that would be dropped) and there is actually something to split.
+  const pureBlocks =
+    parts.length >= 2 &&
+    Array.from(speech.childNodes).every(
+      (n) => n.nodeType === Node.ELEMENT_NODE || !n.textContent?.trim()
+    )
+  if (!pureBlocks) {
+    // Verse speech: ONE <p> holding many <br>-separated lines (Shakespeare).
+    // Explode it at line boundaries so a 30-line monologue can break across
+    // pages: each line group re-wraps in a shallow clone of the <p> and rides
+    // its own fragment row. Non-final fragments zero the p's margin-bottom so
+    // the reunited speech keeps the original line rhythm.
+    const only = parts.length === 1 ? parts[0] : null
+    if (!only || only.tagName !== "P") return [row]
+    const lines = splitInlineByBr(only)
+    if (lines.length < 2) return [row]
+    parts = lines.map((line, i) => {
+      const p = only.cloneNode(false) as HTMLElement
+      if (i < lines.length - 1) p.style.marginBottom = "0"
+      p.appendChild(line)
+      return p
+    })
+  }
+  return parts.map((part, idx) => {
+    const r = row.cloneNode(false) as HTMLElement
+    for (let c = 0; c < cells.length - 1; c++) {
+      const cell = cells[c].cloneNode(idx === 0) as HTMLElement
+      if (idx > 0) cell.innerHTML = "\u200B" // defeat :empty, render nothing
+      r.appendChild(cell)
+    }
+    const sp = speech.cloneNode(false) as HTMLElement
+    if (idx < parts.length - 1) sp.style.paddingBottom = "0"
+    sp.appendChild(part.cloneNode(true))
+    r.appendChild(sp)
+    return r
+  })
+}
+
+/**
+ * Word-split a too-tall drama row whose speech cell is prose (bare text, or a
+ * single <p> with no <br> lines) INSIDE its real table context, so the speech
+ * wraps at its true rendered width (table minus the speaker column). Each
+ * emitted chunk is a complete row: the speaker cell rides the first fragment,
+ * continuations carry a zero-width space (so `td:first-child:empty`
+ * stage-direction styling doesn't fire), and non-final fragments zero the
+ * cell's padding-bottom. Returns [] when there's nothing to split.
+ */
+function splitSpeechCellByWords(
+  row: HTMLElement,
+  pageHeight: number,
+  makeProbe: () => HTMLElement,
+  tableTemplate: HTMLElement | null
+): string[] {
+  const cells = Array.from(row.children) as HTMLElement[]
+  const speech = cells[cells.length - 1]
+  if (!speech || speech.tagName !== "TD") return []
+
+  // The wrapping-flow source: the cell itself, or its lone <p> child.
+  const elementKids = Array.from(speech.children) as HTMLElement[]
+  const soleP =
+    elementKids.length === 1 &&
+    elementKids[0].tagName === "P" &&
+    !Array.from(speech.childNodes).some((n) => n.nodeType === Node.TEXT_NODE && n.textContent?.trim())
+      ? elementKids[0]
+      : null
+  const target = soleP ?? speech
+
+  // Measure inside table > tr with the speaker cells present, so fixed table
+  // layout gives the speech cell its exact rendered width.
+  const probe = makeProbe()
+  const table = tableTemplate
+    ? (tableTemplate.cloneNode(false) as HTMLElement)
+    : document.createElement("table")
+  probe.appendChild(table)
+  const trHost = row.cloneNode(false) as HTMLElement
+  table.appendChild(trHost)
+  for (let c = 0; c < cells.length - 1; c++) trHost.appendChild(cells[c].cloneNode(true))
+  const speechHost = speech.cloneNode(false) as HTMLElement
+  trHost.appendChild(speechHost)
+  let flowHost: HTMLElement = speechHost
+  if (soleP) {
+    const pHost = soleP.cloneNode(false) as HTMLElement
+    speechHost.appendChild(pHost)
+    flowHost = pHost
+  }
+
+  // Word-wrap direct text nodes of the flow source; element children atomic.
+  const prepared = target.cloneNode(true) as HTMLElement
+  for (const child of Array.from(prepared.childNodes)) {
+    if (child.nodeType !== Node.TEXT_NODE) continue
+    const text = child.textContent ?? ""
+    const frag = document.createDocumentFragment()
+    for (const token of text.split(/(\s+)/)) {
+      if (!token) continue
+      if (/^\s+$/.test(token)) {
+        frag.appendChild(document.createTextNode(token))
+      } else {
+        const s = document.createElement("span")
+        s.textContent = token
+        frag.appendChild(s)
+      }
+    }
+    prepared.replaceChild(frag, child)
+  }
+  while (prepared.firstChild) flowHost.appendChild(prepared.firstChild)
+  document.body.appendChild(probe)
+
+  const lineH = parseFloat(getComputedStyle(flowHost).lineHeight) || 0
+  const chunks: Node[][] = []
+  let current: Node[] = []
+  let pageStartTop: number | null = null
+  for (const node of Array.from(flowHost.childNodes)) {
+    if (node.nodeType !== Node.ELEMENT_NODE) {
+      current.push(node)
+      continue
+    }
+    const rects = (node as HTMLElement).getClientRects()
+    if (rects.length === 0) {
+      current.push(node)
+      continue
+    }
+    const first = rects[0]
+    const last = rects[rects.length - 1]
+    const top = first.top - Math.max(0, (lineH - first.height) / 2)
+    const bottom = last.bottom + Math.max(0, (lineH - last.height) / 2)
+    if (pageStartTop === null) pageStartTop = top
+    if (bottom - pageStartTop > pageHeight && current.length > 0) {
+      chunks.push(current)
+      current = []
+      pageStartTop = top
+    }
+    current.push(node)
+  }
+  if (current.length > 0) chunks.push(current)
+  document.body.removeChild(probe)
+  if (chunks.length < 2) return []
+
+  return chunks.map((chunk, idx) => {
+    const r = row.cloneNode(false) as HTMLElement
+    for (let c = 0; c < cells.length - 1; c++) {
+      const cell = cells[c].cloneNode(idx === 0) as HTMLElement
+      if (idx > 0) cell.innerHTML = "\u200B"
+      r.appendChild(cell)
+    }
+    const sp = speech.cloneNode(false) as HTMLElement
+    if (idx < chunks.length - 1) sp.style.paddingBottom = "0"
+    let sink: HTMLElement = sp
+    if (soleP) {
+      const pw = soleP.cloneNode(false) as HTMLElement
+      sp.appendChild(pw)
+      sink = pw
+    }
+    for (const n of chunk) {
+      // Unwrap measurement spans back to plain text so emitted HTML is clean.
+      if (
+        n.nodeType === Node.ELEMENT_NODE &&
+        (n as Element).tagName === "SPAN" &&
+        (n as Element).attributes.length === 0
+      ) {
+        sink.appendChild(document.createTextNode(n.textContent ?? ""))
+      } else {
+        sink.appendChild(n.cloneNode(true))
+      }
+    }
+    sink.normalize()
+    r.appendChild(sp)
+    return r.outerHTML
+  })
+}
+
 /** Block-level children eligible for splitting a too-tall container
  *  (blockquote, list, …). Returns [] when the element can't be meaningfully
  *  split (single child, or mixed/inline content). */
 function splittableChildren(el: HTMLElement): HTMLElement[] {
+  // A too-tall <table> (a drama scene: one row per speech) splits at row
+  // boundaries. Rows re-wrap in a clone of the table (see paginateBlocks) so
+  // the speaker-column styling survives the break; innerHTML fragment parsing
+  // with a <table> context re-nests <tr>s correctly.
+  if (el.tagName === "TABLE") {
+    const rows = Array.from(el.querySelectorAll("tr")) as HTMLElement[]
+    if (rows.length < 2) return []
+    // Long speeches (one row, many <p> lines) must be able to break across
+    // pages too, so each multi-paragraph speech row is pre-fragmented into
+    // one row per paragraph: the speaker cell rides only the first fragment
+    // (continuations carry a zero-width space so the `td:first-child:empty`
+    // stage-direction styling doesn't fire), and non-final fragments zero the
+    // cell's padding-bottom so a reunited speech keeps its original rhythm.
+    return rows.flatMap(splitSpeechRow)
+  }
+  // NEVER split a table row at cell boundaries: the speaker column would be
+  // orphaned from its speech, and a lone speech <td> re-parses as
+  // td:first-child, whose white-space: nowrap unwraps the whole speech into
+  // one clipped line. Too-tall rows go through splitSpeechCellByWords instead.
+  if (el.tagName === "TR") return []
   const kids = Array.from(el.children) as HTMLElement[]
   if (kids.length < 2) return []
   const splittable = kids.every(
@@ -286,6 +485,18 @@ function paginateBlocks(
       pageTop = el.offsetTop
     }
     if (el.offsetHeight > pageHeight && i === start) {
+      // A too-tall drama row (long PROSE speech) word-splits inside its speech
+      // cell, keeping the speaker column with the first fragment.
+      const rowPages =
+        blocks[i].tagName === "TR"
+          ? splitSpeechCellByWords(blocks[i], pageHeight, makeProbe, wrapTemplate)
+          : []
+      if (rowPages.length > 0) {
+        for (const rp of rowPages) out.push(wrapHtml(rp))
+        start = i + 1
+        pageTop = i + 1 < laid.length ? laid[i + 1].offsetTop : 0
+        continue
+      }
       // Block taller than a page: split its children rather than clip it.
       const kids = splittableChildren(blocks[i])
       if (kids.length > 0) {
