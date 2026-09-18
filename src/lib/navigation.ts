@@ -20,7 +20,6 @@ import {
   type LucideIcon,
 } from "lucide-react"
 import { RUBRIC } from "@/lib/semester-plan/rubric"
-import { PLATFORM_QUIZZES_ENABLED } from "@/lib/quizzes/flags"
 
 /**
  * Sidebar icon palette — one RUBRIC pigment per section so teachers and
@@ -112,13 +111,13 @@ const classroomGroup: NavGroup = {
     // place of the personal practice "Quizzes" surface (kept for readers).
     { label: "Assignments", href: "/assignments", icon: ClipboardList, roles: ["student"] },
     { label: "Semester", href: "/semester", icon: CalendarRange, roles: ["student"] },
-    // While platform practice quizzes are paused, only teachers see the
-    // Quizzes entry (their saved-quiz library). Restore "reader" when unpaused.
+    // Practice quizzes for readers and students; teachers see their
+    // saved-quiz library at the same route.
     {
       label: "Quizzes",
       href: "/quizzes",
       icon: Brain,
-      roles: PLATFORM_QUIZZES_ENABLED ? ["reader", "teacher"] : ["teacher"],
+      roles: ["reader", "student", "teacher"],
     },
     { label: "Quiz Builder", href: "/classroom/quiz-builder", icon: SquarePen, roles: ["teacher"] },
     { label: "Grading", href: "/classroom/grading", icon: ClipboardCheck, roles: ["teacher"] },
