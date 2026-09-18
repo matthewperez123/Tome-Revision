@@ -21,10 +21,16 @@
     "covers:compose": "npx tsx scripts/covers/cover-factory.ts compose",
     "covers:publish": "npx tsx scripts/covers/cover-factory.ts publish --dry-run",
     "test:covers": "npx tsx scripts/covers/cover-factory.test.ts",
+    "quizgen": "node --import tsx scripts/quiz-gen/run.ts",
+    "quizgen:gate": "node --import tsx scripts/quiz-gen/gate.ts",
+    "quizgen:report": "node --import tsx scripts/quiz-gen/report.ts",
+    "test:quizgen": "node --import tsx --test scripts/quiz-gen/*.test.ts",
+    "typecheck:quizgen": "tsc --noEmit -p scripts/quiz-gen/tsconfig.json",
     "typecheck": "tsc --noEmit",
     "verify:billing": "node --conditions=react-server --import tsx scripts/verify-billing-entitlements.ts",
     "verify:billing:stripe": "node --import tsx scripts/verify-billing-stripe.ts",
-    "test:nav": "playwright test marketing-nav"
+    "test:nav": "playwright test marketing-nav",
+    "test:assignments": "node --import tsx --test src/lib/assignments/*.test.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.90.0",
