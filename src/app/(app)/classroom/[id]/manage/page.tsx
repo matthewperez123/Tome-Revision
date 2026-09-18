@@ -15,6 +15,8 @@ import { SemesterPlanTab } from "@/components/classroom/semester-timeline"
 import { StudentBadgesPanel } from "@/components/classroom/student-badges-panel"
 import { SeatLimitBanner } from "@/components/classroom/seat-limit-banner"
 import { ClassJoinQr } from "@/components/classroom/class-join-qr"
+import { QuestionsAvailableChip } from "@/components/credits/questions-available-chip"
+import { getQuestionsLedger, type QuestionsLedgerEntry } from "@/lib/actions/credits"
 
 type Tab = "overview" | "students" | "badges" | "assignments" | "announcements" | "semester-plan"
 
@@ -53,6 +55,16 @@ export default function ClassroomManagePage({ params }: { params: Promise<{ id: 
   const [copied, setCopied] = useState(false)
   const [rotating, setRotating] = useState(false)
   const [loading, setLoading] = useState(true)
+  const [ledger, setLedger] = useState<QuestionsLedgerEntry[]>([])
+
+  // 30-day Questions Available movement (launch brief 2.8) — teacher-only,
+  // the action returns [] for anyone else.
+  useEffect(() => {
+    if (isDemoMode || !user) return
+    getQuestionsLedger()
+      .then(setLedger)
+      .catch(() => setLedger([]))
+  }, [user, isDemoMode])
 
   async function handleRotate() {
     if (isDemoMode || !user || rotating || !classroom) return
@@ -191,6 +203,7 @@ export default function ClassroomManagePage({ params }: { params: Promise<{ id: 
             joinCode={classroom.join_code}
           />
         )}
+        {!isDemoMode && user && <QuestionsAvailableChip className="ml-auto" />}
       </div>
 
       {/* Tab bar */}
@@ -217,18 +230,62 @@ export default function ClassroomManagePage({ params }: { params: Promise<{ id: 
       {/* Tab content */}
       <div className="mt-6">
         {tab === "overview" && (
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-            {[
-              { icon: Users, label: "Students", value: members.length, color: "text-indigo-500" },
-              { icon: BookOpen, label: "Assignments", value: assignments.length, color: "text-blue-500" },
-              { icon: TrendingUp, label: "Active", value: assignments.filter((a) => a.status === "active").length, color: "text-green-500" },
-            ].map((stat) => (
-              <div key={stat.label} className="rounded-xl border bg-card p-4">
-                <stat.icon className={`size-4 ${stat.color}`} />
-                <p className="mt-2 text-2xl font-bold">{stat.value}</p>
-                <p className="text-xs text-muted-foreground">{stat.label}</p>
+          <div className="space-y-6">
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+              {[
+                { icon: Users, label: "Students", value: members.length, color: "text-indigo-500" },
+                { icon: BookOpen, label: "Assignments", value: assignments.length, color: "text-blue-500" },
+                { icon: TrendingUp, label: "Active", value: assignments.filter((a) => a.status === "active").length, color: "text-green-500" },
+              ].map((stat) => (
+                <div key={stat.label} className="rounded-xl border bg-card p-4">
+                  <stat.icon className={`size-4 ${stat.color}`} />
+                  <p className="mt-2 text-2xl font-bold">{stat.value}</p>
+                  <p className="text-xs text-muted-foreground">{stat.label}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Questions Available — last 30 days of ledger movement (2.8) */}
+            {ledger.length > 0 && (
+              <div className="rounded-xl border bg-card">
+                <div className="border-b px-4 py-3">
+                  <p className="text-sm font-semibold">Questions — last 30 days</p>
+                </div>
+                <table className="w-full text-left text-xs">
+                  <thead>
+                    <tr className="text-muted-foreground">
+                      <th className="px-4 py-2 font-medium">Date</th>
+                      <th className="px-4 py-2 font-medium">Activity</th>
+                      <th className="px-4 py-2 font-medium">Classroom</th>
+                      <th className="px-4 py-2 text-right font-medium">Questions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {ledger.map((entry) => (
+                      <tr key={entry.id} className="border-t">
+                        <td className="px-4 py-2 whitespace-nowrap">
+                          {new Date(entry.createdAt).toLocaleDateString("en-US", {
+                            month: "short",
+                            day: "numeric",
+                          })}
+                        </td>
+                        <td className="px-4 py-2 capitalize">{entry.reason.replace(/_/g, " ")}</td>
+                        <td className="px-4 py-2 text-muted-foreground">
+                          {entry.classroomName ?? "Personal"}
+                        </td>
+                        <td
+                          className={`px-4 py-2 text-right font-mono tabular-nums ${
+                            entry.delta < 0 ? "text-[#D7472F]" : "text-[#3E7C6A]"
+                          }`}
+                        >
+                          {entry.delta > 0 ? `+${entry.delta}` : entry.delta}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
-            ))}
+            )}
           </div>
         )}
 

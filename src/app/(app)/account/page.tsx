@@ -6,6 +6,7 @@ import { DeleteAccountDialog } from "@/components/auth/delete-account-dialog"
 import { NotificationPreferencesForm } from "@/components/account/notification-preferences-form"
 import { ManageBillingButton } from "@/components/account/manage-billing-button"
 import { getNotificationPreferences } from "@/lib/actions/notification-preferences"
+import { QuestionsAvailableChip } from "@/components/credits/questions-available-chip"
 
 export const dynamic = "force-dynamic"
 
@@ -138,6 +139,23 @@ export default async function AccountPage() {
               >
                 Open school panel
               </Link>
+            </div>
+          </section>
+        )}
+
+        {/* Questions Available — the chip renders nothing for non-teachers. */}
+        {profileRow?.role === "teacher" && (
+          <section>
+            <h2 className="font-serif text-xl font-semibold tracking-tight mb-4">
+              Questions
+            </h2>
+            <div className="rounded-xl border border-border bg-card p-5">
+              <QuestionsAvailableChip />
+              <p className="text-xs text-muted-foreground mt-3 leading-relaxed">
+                Questions power quiz generation. They renew every 30 days per
+                student seat, and you can add more any time from a classroom or
+                here when you run out.
+              </p>
             </div>
           </section>
         )}

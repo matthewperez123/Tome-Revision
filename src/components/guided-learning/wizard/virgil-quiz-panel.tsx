@@ -25,6 +25,10 @@ import {
   type TeacherQuizDraftQuestion,
   type TeacherQuizQuestionType,
 } from "@/lib/teacher-quiz-types"
+import {
+  QuestionsAvailableChip,
+  useQuestionsAvailable,
+} from "@/components/credits/questions-available-chip"
 
 // Editable question — server draft shape, mutated locally before publish.
 type EditableQuestion = Omit<TeacherQuizDraftQuestion, "quiz_id" | "sort_order"> & {
@@ -69,6 +73,13 @@ export function VirgilQuizPanel({ bookId, bookTitle, initialQuizId, onQuizReady,
 
   const totalCount = mix.apprentice + mix.scholar + mix.master
 
+  // Clamp the request to the teacher's Questions Available balance (2.8).
+  const { summary: questionsSummary } = useQuestionsAvailable()
+  const maxQuestions = Math.max(
+    1,
+    Math.min(MAX_QUIZ_QUESTIONS, questionsSummary?.balance ?? MAX_QUIZ_QUESTIONS),
+  )
+
   const scope = useMemo(() => {
     if (chapterStart !== "" && chapterEnd !== "" && chapterEnd >= chapterStart) {
       const idxs: number[] = []
@@ -84,11 +95,11 @@ export function VirgilQuizPanel({ bookId, bookTitle, initialQuizId, onQuizReady,
       scope,
       difficultyMix: mix,
       types: Array.from(types),
-      totalCount: Math.max(1, Math.min(MAX_QUIZ_QUESTIONS, totalCount)),
+      totalCount: Math.max(1, Math.min(maxQuestions, totalCount)),
       focus: focus.trim() || undefined,
       single,
     }),
-    [bookId, scope, mix, types, totalCount, focus],
+    [bookId, scope, mix, types, totalCount, focus, maxQuestions],
   )
 
   const handleGenerate = useCallback(async () => {
@@ -271,6 +282,8 @@ export function VirgilQuizPanel({ bookId, bookTitle, initialQuizId, onQuizReady,
       <div className="overflow-hidden rounded-xl border" style={{ borderColor: "rgba(99,102,241,0.35)" }}>
         {header}
         <div className="space-y-4 p-3">
+          <QuestionsAvailableChip />
+
           {/* Difficulty mix */}
           <div>
             <label className="text-xs font-semibold">Difficulty mix</label>
@@ -300,7 +313,10 @@ export function VirgilQuizPanel({ bookId, bookTitle, initialQuizId, onQuizReady,
                 </div>
               ))}
             </div>
-            <p className="mt-1 text-[11px] opacity-50">{totalCount} questions total</p>
+            <p className="mt-1 text-[11px] opacity-50">
+              {totalCount} questions total
+              {totalCount > maxQuestions && ` — capped at ${maxQuestions} by your Questions Available`}
+            </p>
           </div>
 
           {/* Question types (objective in this release) */}

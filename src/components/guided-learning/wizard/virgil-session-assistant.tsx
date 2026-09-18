@@ -20,6 +20,7 @@ import {
   type TeacherQuizDraft,
   type TeacherQuizDraftQuestion,
 } from "@/lib/teacher-quiz-types"
+import { QuestionsAvailableChip } from "@/components/credits/questions-available-chip"
 
 // Iridescent treatment is reserved for Tome Assistant affordances only.
 const IRIDESCENT =
@@ -251,6 +252,8 @@ export function VirgilSessionAssistant({ onAttachQuiz }: Props) {
 
       {open && (
         <div className="space-y-3 bg-card p-4">
+          <QuestionsAvailableChip />
+
           {/* Scope: book + out-of-order section picker */}
           <div className="space-y-2">
             <div className="relative" ref={bookBoxRef}>

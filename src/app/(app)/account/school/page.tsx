@@ -6,6 +6,7 @@ import { createAdminClient } from "@/lib/supabase/admin"
 import { getEntitlement, getSeatAllowance } from "@/lib/entitlements/server"
 import { listSchoolRoster } from "@/lib/actions/school-seats"
 import { SchoolPanel } from "@/components/account/school-panel"
+import { QuestionsAvailableChip } from "@/components/credits/questions-available-chip"
 
 export const dynamic = "force-dynamic"
 
@@ -87,6 +88,9 @@ export default async function SchoolAccountPage() {
           <p className="text-sm text-muted-foreground mt-1">
             Manage student seats and the teachers your school covers.
           </p>
+          <div className="mt-3">
+            <QuestionsAvailableChip />
+          </div>
         </div>
 
         <SchoolPanel

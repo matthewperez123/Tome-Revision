@@ -23,6 +23,7 @@ import {
   publishTeacherQuiz,
 } from "@/lib/actions/teacher-quizzes"
 import { createAssignment, publishAssignment } from "@/lib/actions/assignments"
+import { QuestionsAvailableChip } from "@/components/credits/questions-available-chip"
 
 type AssignmentType = "reading" | "quiz" | "discussion" | "essay" | "annotation"
 
@@ -306,6 +307,9 @@ export default function CreateAssignmentPage({ params }: { params: Promise<{ id:
 
             {type === "quiz" && (
               <div>
+                <div className="mb-3">
+                  <QuestionsAvailableChip />
+                </div>
                 <div className="mb-3 flex gap-2">
                   <button
                     type="button"

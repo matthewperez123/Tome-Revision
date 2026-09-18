@@ -12,6 +12,11 @@ import { useAuth } from "@/hooks/use-auth"
 import { getBooks } from "@/lib/content"
 import { duplicateTeacherQuiz } from "@/lib/actions/teacher-quizzes"
 import { NAV_ACCENTS } from "@/lib/navigation"
+import { MAX_QUIZ_QUESTIONS } from "@/lib/teacher-quiz-types"
+import {
+  QuestionsAvailableChip,
+  useQuestionsAvailable,
+} from "@/components/credits/questions-available-chip"
 
 interface TeacherQuiz {
   id: string
@@ -42,6 +47,13 @@ export default function QuizBuilderPage() {
   const [generating, setGenerating] = useState(false)
   const [genError, setGenError] = useState<string | null>(null)
 
+  // Clamp the request size to what the teacher can actually spend (2.8).
+  const { summary: questionsSummary } = useQuestionsAvailable()
+  const maxQuestions = Math.max(
+    1,
+    Math.min(MAX_QUIZ_QUESTIONS, questionsSummary?.balance ?? MAX_QUIZ_QUESTIONS),
+  )
+
   const books = getBooks()
   const genBook = books.find((b) => b.id === genBookId)
   const genFilteredBooks = genBookSearch
@@ -69,7 +81,7 @@ export default function QuizBuilderPage() {
             // Chapter numbers are 1-based in the UI; the content index is 0-based.
             chapterStart: Math.max(0, genStart - 1),
             chapterEnd: Math.max(0, genEnd - 1),
-            questionCount: genCount,
+            questionCount: Math.min(maxQuestions, genCount),
             difficulty: genDifficulty,
             brief: genBrief.trim() || undefined,
           },
@@ -170,6 +182,7 @@ export default function QuizBuilderPage() {
           <h1 className="text-2xl font-bold">Quiz Builder</h1>
         </div>
         <div className="flex items-center gap-2">
+          <QuestionsAvailableChip className="hidden md:inline-flex" />
           <Button
             variant="outline"
             onClick={() => setGenOpen(true)}
@@ -342,9 +355,11 @@ export default function QuizBuilderPage() {
                     <Input
                       type="number"
                       min={1}
-                      max={30}
+                      max={maxQuestions}
                       value={genCount}
-                      onChange={(e) => setGenCount(Math.min(30, Math.max(1, Number(e.target.value) || 1)))}
+                      onChange={(e) =>
+                        setGenCount(Math.min(maxQuestions, Math.max(1, Number(e.target.value) || 1)))
+                      }
                       className="text-sm"
                     />
                   </div>

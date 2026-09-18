@@ -16,6 +16,7 @@ import { useAuth } from "@/hooks/use-auth"
 import { getBooks } from "@/lib/content"
 import { publishTeacherQuiz, assignQuiz, saveTeacherQuiz } from "@/lib/actions/teacher-quizzes"
 import { launchLiveQuiz } from "@/lib/actions/live-quiz"
+import { QuestionsAvailableChip } from "@/components/credits/questions-available-chip"
 
 // Kept as a broad string so Tome Assistant-authored types (multiple_select,
 // vocabulary_in_context, tf_with_reason, fill_blank, free_response, …) round-trip
@@ -454,6 +455,7 @@ export default function QuizEditorPage({ params }: { params: Promise<{ quizId: s
             placeholder="Quiz title..."
           />
         </div>
+        <QuestionsAvailableChip className="hidden md:inline-flex" />
       </div>
 
       {/* Book selector + difficulty + settings */}
