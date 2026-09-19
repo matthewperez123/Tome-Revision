@@ -70,7 +70,7 @@ VERIFIED SCHEMA FACTS (do not re-derive):
   group_goals, group_notes, group_invites, group_schedule. Sweep any lingering imports/queries.
 - demo_requests: INSERT allowed for anon+authenticated; SELECT locked (service role only).
 - Book coverage: NEVER trust ingestion_status; use JOIN on chapters row counts.
-- Quiz data: 36 chapter-level quizzes, 297 book-level (chapter_index null), 99 books covered.
+- Quiz data: 3 × 5 with the type ladder (see docs/quiz-standard.md). 151 books have the full set as of 2026-09-18; full-canon backfill resumes via scripts/quizzes/rebalance-types.ts once API credits are topped up.
 
 BILLING MODEL (launch-week, settled — do not relitigate):
 - Annual-only. Teachers free forever (1 classroom · 30 students · 100 Questions/mo).
