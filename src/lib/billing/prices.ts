@@ -1,119 +1,79 @@
 import "server-only"
 
 /**
- * THE single source of truth for Tome's billable plans.
+ * Server-side Stripe price-id resolution for the launch billing model.
  *
- * Every plan fact — display name, Stripe Price IDs (from env), display price,
- * the `profiles.role` a purchase grants, and the marketing blurb — lives here
- * and NOWHERE else. Pricing surfaces render from `getBillingTiers()`; checkout
- * resolves Price IDs from `getBillingPriceId()`. Do not hardcode a plan name,
- * amount, or price id anywhere in the codebase.
+ * Display facts (names, formatted prices, features) live in `./tiers`
+ * (client-safe); every number derives from `./config`. This module owns
+ * the env-var ↔ price-id wiring and the reverse lookup the webhook uses.
  *
  * Price IDs are environment-specific (test vs live) and read from env at
- * runtime — never committed. Provision them with `npx tsx scripts/stripe-setup.ts`,
- * which prints the exact `TOME_PRICE_*` lines to set per environment.
- *
- * server-only: this module reads server env and must never ship to the client.
- * Client surfaces receive plain, serialized card data as props from a Server
- * Component (see the /pricing page).
+ * runtime — never committed.
  */
 
-export type BillingTier = "solo" | "family" | "school"
-export type BillingInterval = "monthly" | "yearly"
+import { SCHOOL_FLAT_TIERS, type SchoolFlatKey } from "./config"
+export type { BillingTier, PurchasableTier } from "./tiers"
+export { isPurchasableTier } from "./tiers"
+import type { BillingTier } from "./tiers"
 
-export interface TierPrice {
-  /** The env var that holds this Stripe Price ID. */
-  envVar: string
-  /** Resolved Stripe Price ID, or null when the env var is unset. */
-  priceId: string | null
-  /** Display amount, e.g. "$9". */
-  amount: string
-  /** Display cadence, e.g. "/mo", "/yr", "per seat / yr". */
-  cadence: string
+function envPrice(envVar: string): string | null {
+  return process.env[envVar]?.trim() || null
 }
 
-export interface BillingTierPlan {
-  tier: BillingTier
-  name: string
-  blurb: string
-  /** The `profiles.role` a purchase of this tier grants. */
-  roleGranted: "reader" | "teacher"
-  /** True while the rate is provisional (School), for "pricing in development" copy. */
-  provisional?: boolean
-  featured?: boolean
-  badge?: string
-  /** null when the tier has no monthly option (School is annual-only). */
-  monthly: TierPrice | null
-  yearly: TierPrice
+/** The $12 per-student recurring yearly price (Classroom AND School seats). */
+export function getStudentSeatPriceId(): string | null {
+  return envPrice("TOME_PRICE_STUDENT_SEAT_YEARLY")
 }
 
-function price(envVar: string, amount: string, cadence: string): TierPrice {
-  return { envVar, priceId: process.env[envVar]?.trim() || null, amount, cadence }
+/** Flat School prices ($1,800 ≤ 150 / $3,200 ≤ 300). */
+export function getSchoolFlatPriceId(key: SchoolFlatKey): string | null {
+  const flat = SCHOOL_FLAT_TIERS.find((t) => t.key === key)
+  return flat ? envPrice(flat.env) : null
 }
 
-/** Canonical tier table. Order here is display order. */
-export const BILLING_TIERS: Record<BillingTier, BillingTierPlan> = {
-  solo: {
-    tier: "solo",
-    name: "Solo",
-    blurb:
-      "Unlimited access to the full canon and Tome Assistant's deeper scholarship for one reader.",
-    roleGranted: "reader",
-    featured: true,
-    badge: "Most popular",
-    monthly: price("TOME_PRICE_SOLO_MONTHLY", "$9", "/mo"),
-    yearly: price("TOME_PRICE_SOLO_YEARLY", "$90", "/yr"),
-  },
-  family: {
-    tier: "family",
-    name: "Family",
-    blurb:
-      "Up to five readers under one subscription, each with their own library and progress.",
-    roleGranted: "teacher",
-    monthly: price("TOME_PRICE_FAMILY_MONTHLY", "$18", "/mo"),
-    yearly: price("TOME_PRICE_FAMILY_YEARLY", "$150", "/yr"),
-  },
-  school: {
-    tier: "school",
-    name: "School",
-    blurb:
-      "Per-teacher seats for departments and schools. Each seat grants a teacher account; students join free.",
-    roleGranted: "teacher",
-    provisional: true,
-    monthly: null,
-    yearly: price("TOME_PRICE_SCHOOL_SEAT_YEARLY", "$120", "per seat / yr"),
-  },
+export function schoolFlatForKey(key: string) {
+  return SCHOOL_FLAT_TIERS.find((t) => t.key === key) ?? null
 }
 
-const ORDER: BillingTier[] = ["solo", "family", "school"]
-
-/** All billable tiers in display order. */
-export function getBillingTiers(): BillingTierPlan[] {
-  return ORDER.map((tier) => BILLING_TIERS[tier])
+/** Reverse lookup: a subscription line-item price id → the flat School tier. */
+export function schoolFlatForPriceId(priceId: string) {
+  return SCHOOL_FLAT_TIERS.find((t) => envPrice(t.env) === priceId) ?? null
 }
 
-/** Resolve the Stripe Price ID for a tier + interval from env, or null. */
-export function getBillingPriceId(
-  tier: BillingTier,
-  interval: BillingInterval,
-): string | null {
-  const plan = BILLING_TIERS[tier]
-  const slot = interval === "monthly" ? plan.monthly : plan.yearly
-  return slot?.priceId ?? null
+/** Family (Homeschool) $99 yearly. */
+export function getFamilyPriceId(): string | null {
+  return envPrice("TOME_PRICE_FAMILY_YEARLY")
+}
+
+/** One-time 10,000-Question top-up. */
+export function getTopupPriceId(): string | null {
+  return envPrice("TOME_PRICE_QUESTIONS_TOPUP")
+}
+
+// grandfathered — remove only when subscriptions has zero solo / legacy-family rows
+const GRANDFATHERED_PRICE_ENV: Record<string, BillingTier> = {
+  TOME_PRICE_SOLO_MONTHLY: "solo",
+  TOME_PRICE_SOLO_YEARLY: "solo",
+  TOME_PRICE_FAMILY_MONTHLY: "family",
+  TOME_PRICE_SCHOOL_SEAT_YEARLY: "school",
 }
 
 /**
- * Reverse lookup: given a Stripe Price ID (e.g. an explicit `priceId` in a
- * checkout request), return the tier it belongs to in THIS environment, or
- * null. Lets checkout derive `metadata.tier` from the canonical tier table
- * rather than trusting the client or a hardcoded map.
+ * Reverse lookup: given a Stripe Price ID from a subscription line item,
+ * return the tier it belongs to in THIS environment, or null.
+ *
+ * The $12 seat price is shared by `classroom` and `school` — it resolves to
+ * `classroom` here; the webhook prefers checkout metadata (`tier`) and only
+ * falls back to this when metadata is missing.
  */
 export function tierForBillingPriceId(priceId: string): BillingTier | null {
-  for (const tier of ORDER) {
-    const plan = BILLING_TIERS[tier]
-    if (plan.monthly?.priceId === priceId || plan.yearly.priceId === priceId) {
-      return tier
-    }
+  if (getStudentSeatPriceId() === priceId) return "classroom"
+  for (const flat of SCHOOL_FLAT_TIERS) {
+    if (envPrice(flat.env) === priceId) return "school"
+  }
+  if (getFamilyPriceId() === priceId) return "family"
+  for (const [envVar, tier] of Object.entries(GRANDFATHERED_PRICE_ENV)) {
+    if (envPrice(envVar) === priceId) return tier
   }
   return null
 }

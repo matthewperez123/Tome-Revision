@@ -12,6 +12,7 @@ import {
   type SupaClient,
 } from "./_shared"
 import { generateStudentCode } from "@/lib/student-code"
+import { getSeatAllowance } from "@/lib/entitlements/server"
 import { generateBadgeToken, wrapBadgeQrPayload } from "@/lib/badge-token"
 
 // ─── Badge / roster provisioning (teacher-only) ─────────────────────────────
@@ -161,7 +162,7 @@ export async function addStudentWithCode(
     // Capacity cap against the live member count.
     const { data: room } = await admin
       .from("classrooms")
-      .select("max_students")
+      .select("max_students, teacher_id")
       .eq("id", classroomId)
       .maybeSingle()
     if (room?.max_students != null) {
@@ -172,6 +173,15 @@ export async function addStudentWithCode(
       if ((count ?? 0) >= room.max_students) {
         return fail("This classroom is full.")
       }
+    }
+
+    // Plan seat cap: a brand-new student account always consumes a seat.
+    const payerTeacherId = (room?.teacher_id as string | null) ?? user.id
+    const seat = await getSeatAllowance(payerTeacherId)
+    if (seat.used >= seat.allowance) {
+      return fail(
+        `All ${seat.allowance} student seats on your plan are in use. Add seats before adding more students.`,
+      )
     }
 
     // Synthetic, non-deliverable identity. Random local part, reserved TLD,

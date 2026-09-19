@@ -1,13 +1,20 @@
 import { NextResponse } from "next/server"
 import type Stripe from "stripe"
 import { getStripe } from "@/lib/stripe/server"
-import { isPaidTier, type PaidTier } from "@/lib/stripe/plans"
 import { assertPriceMatchesKeyMode } from "@/lib/stripe/prices"
 import {
-  getBillingPriceId,
-  tierForBillingPriceId,
-  type BillingInterval,
+  getStudentSeatPriceId,
+  getSchoolFlatPriceId,
+  schoolFlatForKey,
+  getFamilyPriceId,
+  getTopupPriceId,
+  isPurchasableTier,
 } from "@/lib/billing/prices"
+import {
+  MIN_STUDENT_SEATS,
+  SCHOOL_MIN_SEATS,
+  QUESTIONS_TOPUP_BLOCK,
+} from "@/lib/billing/config"
 import { createClient } from "@/lib/supabase/server"
 import { createAdminClient as createAdminClientUntyped } from "@/lib/supabase/admin"
 import type { SupabaseClient } from "@supabase/supabase-js"
@@ -18,25 +25,22 @@ const createAdminClient = () =>
 export const runtime = "nodejs"
 
 /**
- * Creates a Stripe Checkout Session (mode: subscription) and returns its
- * hosted-checkout URL for the client to redirect to.
+ * Creates a Stripe Checkout Session and returns its hosted-checkout URL.
+ * All billing is annual; price ids resolve server-side from env and never
+ * ship to the browser.
  *
- * Body (either form):
- *   { priceId: string, quantity?: number }      — canonical (any API caller)
- *   { tier, period?, quantity? }                 — first-party UI convenience;
- *     the server resolves the price id from env so price ids never ship to the
- *     browser.
+ * Body (one of):
+ *   { tier: "classroom", seats }            — $12 seat price × max(1, seats)
+ *   { tier: "school", seats }               — seat price × max(125, seats)
+ *   { tier: "school", flat: "flat150"|"flat300" } — flat price, qty 1
+ *   { tier: "family" }                      — $99/yr, qty 1
+ *   { kind: "topup" }                       — one-time Questions block (mode: payment)
  *
- * The tier is resolved from `@/lib/billing/prices` (the single source of plan
- * facts): forward (tier + interval → price id) for the first-party form, and
- * reverse (`tierForBillingPriceId`) when an explicit price id is supplied.
- * `metadata.tier` on the session comes from that lookup — never hardcoded.
- *
- * The signed-in user is attached as the Stripe customer (reused from the
- * canonical `subscriptions` row → profiles → a metadata search, else created),
- * and the resolved customer id is persisted to BOTH `profiles.stripe_customer_id`
- * and `subscriptions.stripe_customer_id`. `client_reference_id` +
- * `subscription_data.metadata.user_id` let the webhook map the resulting
+ * `metadata.tier` + `metadata.student_seats` disambiguate the shared seat
+ * price for the webhook (classroom vs school). The signed-in user is attached
+ * as the Stripe customer (reused from subscriptions → profiles → metadata
+ * search, else created) and persisted to both tables; `client_reference_id`
+ * + `subscription_data.metadata.user_id` let the webhook map the resulting
  * subscription back to the account.
  */
 export async function POST(req: Request) {
@@ -49,11 +53,10 @@ export async function POST(req: Request) {
   }
 
   let body: {
-    priceId?: string
     tier?: string
-    period?: string
-    quantity?: unknown
     seats?: unknown
+    flat?: string
+    kind?: string
   }
   try {
     body = await req.json()
@@ -61,51 +64,66 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Invalid request body." }, { status: 400 })
   }
 
-  // Resolve price id + tier from the canonical tier table. An explicit priceId
-  // reverse-resolves its tier; otherwise tier + period resolves the price id
-  // (keeps price ids off the client). School is annual-only.
-  const wantsYearly = body.period === "annual" || body.period === "yearly"
-  let priceId = typeof body.priceId === "string" ? body.priceId.trim() : ""
-  let tier: PaidTier | null = null
-
-  if (priceId) {
-    tier = tierForBillingPriceId(priceId)
-  } else {
-    if (!body.tier || !isPaidTier(body.tier)) {
-      return NextResponse.json(
-        { error: "Provide a priceId or a known tier." },
-        { status: 400 },
-      )
-    }
-    tier = body.tier
-    const interval: BillingInterval =
-      tier === "school" || wantsYearly ? "yearly" : "monthly"
-    const resolved = getBillingPriceId(tier, interval)
-    if (!resolved) {
-      return NextResponse.json({ error: "Plan price not configured." }, { status: 500 })
-    }
-    priceId = resolved
-  }
-  if (!tier) {
-    return NextResponse.json({ error: "Unknown plan for that price." }, { status: 400 })
+  const isTopup = body.kind === "topup"
+  if (!isTopup && (!body.tier || !isPurchasableTier(body.tier))) {
+    return NextResponse.json(
+      { error: "Provide a known tier or kind." },
+      { status: 400 },
+    )
   }
 
-  // Quantity = line-item quantity (only meaningful for School seats, min 2).
-  const qtyRaw = Math.floor(Number(body.quantity ?? body.seats))
-  const requested = Number.isFinite(qtyRaw) && qtyRaw >= 1 ? qtyRaw : 1
-  const seats = tier === "school" ? Math.max(2, requested) : 1
+  // Resolve price id + line-item quantity + the student-seat count recorded
+  // in metadata (which the webhook and seat enforcement read).
+  let priceId: string | null = null
+  let quantity = 1
+  let studentSeats = 0
+  let tier: string | null = null
 
-  // Require a signed-in user so the subscription can be mapped to an account.
+  const seatsRaw = Math.floor(Number(body.seats))
+  const requestedSeats = Number.isFinite(seatsRaw) && seatsRaw >= 1 ? seatsRaw : 1
+
+  if (isTopup) {
+    priceId = getTopupPriceId()
+  } else if (body.tier === "classroom") {
+    tier = "classroom"
+    priceId = getStudentSeatPriceId()
+    quantity = Math.max(MIN_STUDENT_SEATS, requestedSeats)
+    studentSeats = quantity
+  } else if (body.tier === "school" && typeof body.flat === "string") {
+    const flat = schoolFlatForKey(body.flat)
+    if (!flat) {
+      return NextResponse.json({ error: "Unknown school tier." }, { status: 400 })
+    }
+    tier = "school"
+    priceId = getSchoolFlatPriceId(flat.key)
+    quantity = 1
+    studentSeats = flat.maxStudents
+  } else if (body.tier === "school") {
+    tier = "school"
+    priceId = getStudentSeatPriceId()
+    quantity = Math.max(SCHOOL_MIN_SEATS, requestedSeats)
+    studentSeats = quantity
+  } else if (body.tier === "family") {
+    tier = "family"
+    priceId = getFamilyPriceId()
+    quantity = 1
+  }
+
+  if (!priceId) {
+    return NextResponse.json({ error: "Plan price not configured." }, { status: 500 })
+  }
+
+  // Require a signed-in user so the purchase can be mapped to an account.
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) {
     return NextResponse.json({ error: "Sign in to subscribe." }, { status: 401 })
   }
 
-  // Students never self-checkout: they're provisioned into a plan by a parent
-  // (Family) or teacher (School seat invite), not by buying their own. Block the
-  // role explicitly so a signed-in student can't mint a subscription. Reads the
-  // caller's OWN profile row (RLS-scoped client).
+  // Students never self-checkout: they're provisioned into a plan by a
+  // teacher, school, or parent. Block the role explicitly so a signed-in
+  // student can't mint a subscription. Reads the caller's OWN profile row
+  // (RLS-scoped client).
   const { data: roleRow } = await supabase
     .from("profiles")
     .select("role")
@@ -145,32 +163,35 @@ export async function POST(req: Request) {
     req.headers.get("origin") ??
     "http://localhost:3000"
 
+  const kind = isTopup ? "topup" : "subscription"
   // {CHECKOUT_SESSION_ID} is expanded by Stripe on redirect so the success page
-  // can reconcile the REAL subscription status from Stripe (not claim "active"
-  // on trust, which would be a lie until the webhook lands).
-  const successPath = `/billing/success?tier=${tier}&session_id={CHECKOUT_SESSION_ID}`
+  // can reconcile the REAL status from Stripe (not claim "active" on trust,
+  // which would be a lie until the webhook lands).
+  const successPath = `/billing/success?session_id={CHECKOUT_SESSION_ID}&kind=${kind}${
+    tier ? `&tier=${tier}` : ""
+  }`
+
+  const metadata: Record<string, string> = {
+    user_id: user.id,
+    kind,
+    ...(tier ? { tier } : {}),
+    ...(studentSeats > 0 ? { student_seats: String(studentSeats) } : {}),
+    ...(isTopup ? { topup_questions: String(QUESTIONS_TOPUP_BLOCK) } : {}),
+  }
 
   try {
     const session = await stripe.checkout.sessions.create({
-      mode: "subscription",
-      line_items: [{ price: priceId, quantity: tier === "school" ? seats : 1 }],
+      mode: isTopup ? "payment" : "subscription",
+      line_items: [{ price: priceId, quantity }],
       customer: customerId,
       client_reference_id: user.id,
       allow_promotion_codes: true,
-      subscription_data: {
-        metadata: {
-          user_id: user.id,
-          tier,
-          ...(tier === "school" ? { seats: String(seats) } : {}),
-        },
-      },
+      ...(isTopup
+        ? {}
+        : { subscription_data: { metadata } }),
       success_url: `${origin}${successPath}`,
       cancel_url: `${origin}/pricing?checkout=cancelled`,
-      metadata: {
-        user_id: user.id,
-        tier,
-        ...(tier === "school" ? { seats: String(seats) } : {}),
-      },
+      metadata,
     })
 
     if (!session.url) {

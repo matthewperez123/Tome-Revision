@@ -5,7 +5,7 @@ import { toast } from "sonner"
 
 /** Maps the `?tier=` param to its display name so the toast reflects the real plan. */
 const TIER_LABELS: Record<string, string> = {
-  solo: "Tome Solo",
+  classroom: "Tome Classroom",
   family: "Tome Family",
   school: "Tome School",
 }

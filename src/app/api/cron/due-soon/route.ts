@@ -1,5 +1,6 @@
 import { createAdminClient } from "@/lib/supabase/admin"
 import { notify, type NotifyParams } from "@/lib/actions/_shared"
+import { assignmentReaderHref } from "@/lib/assignments/links"
 
 export const dynamic = "force-dynamic"
 export const maxDuration = 60
@@ -12,6 +13,8 @@ interface AssignmentRow {
   classroom_id: string
   title: string
   due_date: string
+  book_id: string | null
+  chapter_range_start: number | null
 }
 interface SubmissionRow {
   assignment_id: string
@@ -58,7 +61,7 @@ export async function GET(request: Request) {
 
   const { data: assignmentsData } = await db
     .from("assignments")
-    .select("id, classroom_id, title, due_date")
+    .select("id, classroom_id, title, due_date, book_id, chapter_range_start")
     .eq("status", "active")
     .gte("due_date", now.toISOString())
     .lte("due_date", horizon.toISOString())
@@ -116,7 +119,7 @@ export async function GET(request: Request) {
       type: "class_assignment",
       title: `Due soon: ${a.title}`,
       body: `${classroomNameById.get(a.classroom_id) ?? "Your class"} · due ${fmtDue(a.due_date)}`,
-      actionUrl: `${SITE_URL}/classroom/${a.classroom_id}/assignment/${a.id}`,
+      actionUrl: `${SITE_URL}${assignmentReaderHref(a)}`,
       entityType: "assignment",
       entityId: a.id,
       payload: { kind: "due_soon" },

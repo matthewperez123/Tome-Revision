@@ -6,6 +6,7 @@ import { DeleteAccountDialog } from "@/components/auth/delete-account-dialog"
 import { NotificationPreferencesForm } from "@/components/account/notification-preferences-form"
 import { ManageBillingButton } from "@/components/account/manage-billing-button"
 import { getNotificationPreferences } from "@/lib/actions/notification-preferences"
+import { QuestionsAvailableChip } from "@/components/credits/questions-available-chip"
 
 export const dynamic = "force-dynamic"
 
@@ -31,6 +32,18 @@ export default async function AccountPage() {
     .eq("id", user.id)
     .maybeSingle()
   const hasBilling = Boolean(profileRow?.stripe_customer_id)
+
+  // School plan owners get the seat/teacher admin panel.
+  const { data: subRow } = await supabase
+    .from("subscriptions")
+    .select("tier, status")
+    .eq("user_id", user.id)
+    .maybeSingle()
+  const isSchoolOwner =
+    subRow?.tier === "school" &&
+    (subRow?.status === "active" ||
+      subRow?.status === "trialing" ||
+      subRow?.status === "past_due")
   // Students sign in with a class code and have no email on any surface. Their
   // account is teacher-managed, so we hide every email / password-recovery /
   // self-delete control from them (COPPA).
@@ -105,6 +118,45 @@ export default async function AccountPage() {
               Email notifications
             </h2>
             <NotificationPreferencesForm initial={notificationPrefs} />
+          </section>
+        )}
+
+        {/* School plan */}
+        {isSchoolOwner && (
+          <section>
+            <h2 className="font-serif text-xl font-semibold tracking-tight mb-4">
+              School plan
+            </h2>
+            <div className="rounded-xl border border-border bg-card p-5">
+              <p className="text-sm font-medium">Seats &amp; teachers</p>
+              <p className="text-xs text-muted-foreground mt-1 leading-relaxed">
+                Manage student seats, invite teachers, and see usage across
+                your school.
+              </p>
+              <Link
+                href="/account/school"
+                className="text-sm font-medium text-indigo-600 hover:text-indigo-500 mt-3 inline-block"
+              >
+                Open school panel
+              </Link>
+            </div>
+          </section>
+        )}
+
+        {/* Questions Available — the chip renders nothing for non-teachers. */}
+        {profileRow?.role === "teacher" && (
+          <section>
+            <h2 className="font-serif text-xl font-semibold tracking-tight mb-4">
+              Questions
+            </h2>
+            <div className="rounded-xl border border-border bg-card p-5">
+              <QuestionsAvailableChip />
+              <p className="text-xs text-muted-foreground mt-3 leading-relaxed">
+                Questions power quiz generation. They renew every 30 days per
+                student seat, and you can add more any time from a classroom or
+                here when you run out.
+              </p>
+            </div>
           </section>
         )}
 

@@ -4,11 +4,8 @@ import { useState } from "react"
 import { Check } from "lucide-react"
 import Link from "next/link"
 import { CheckoutButton } from "./CheckoutButton"
-import type { BillingPeriod } from "@/lib/marketing/plans"
-import type { PaidTier } from "@/lib/stripe/plans"
-
-/** School is billed per teacher seat; a department needs at least two. */
-const MIN_SEATS = 2
+import { MIN_STUDENT_SEATS, SEAT_PRICE_USD_PER_YEAR } from "@/lib/billing/config"
+import type { PurchasableTier } from "@/lib/billing/tiers"
 
 export interface PricingCardProps {
   name: string
@@ -21,7 +18,7 @@ export interface PricingCardProps {
   featured?: boolean
   badge?: string
   /** When set, the CTA opens Stripe checkout instead of linking to ctaHref. */
-  checkout?: { tier: PaidTier; period: BillingPeriod }
+  checkout?: { tier: PurchasableTier }
 }
 
 const baseBtn =
@@ -39,8 +36,9 @@ export function PricingCard({
   badge,
   checkout,
 }: PricingCardProps) {
-  const seatBased = checkout?.tier === "school"
-  const [seats, setSeats] = useState(MIN_SEATS)
+  // Classroom is priced per student seat; the card carries a seat stepper.
+  const seatBased = checkout?.tier === "classroom"
+  const [seats, setSeats] = useState(MIN_STUDENT_SEATS)
   const btnClass = `${baseBtn} ${
     featured
       ? "border-primary bg-primary text-primary-foreground hover:opacity-90"
@@ -92,27 +90,35 @@ export function PricingCard({
       </ul>
 
       {checkout && seatBased && (
-        <label className="mb-3 flex items-center justify-between gap-3 text-sm text-foreground">
-          <span className="font-medium">Teacher seats</span>
-          <input
-            type="number"
-            min={MIN_SEATS}
-            step={1}
-            value={seats}
-            onChange={(e) => {
-              const next = Math.floor(Number(e.target.value))
-              setSeats(Number.isFinite(next) && next >= MIN_SEATS ? next : MIN_SEATS)
-            }}
-            aria-label="Number of teacher seats"
-            className="w-20 rounded-lg border border-border bg-background px-3 py-1.5 text-right font-semibold text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-          />
-        </label>
+        <div className="mb-3 space-y-1.5">
+          <label className="flex items-center justify-between gap-3 text-sm text-foreground">
+            <span className="font-medium">Students</span>
+            <input
+              type="number"
+              min={MIN_STUDENT_SEATS}
+              step={1}
+              value={seats}
+              onChange={(e) => {
+                const next = Math.floor(Number(e.target.value))
+                setSeats(
+                  Number.isFinite(next) && next >= MIN_STUDENT_SEATS
+                    ? next
+                    : MIN_STUDENT_SEATS,
+                )
+              }}
+              aria-label="Number of students"
+              className="w-20 rounded-lg border border-border bg-background px-3 py-1.5 text-right font-semibold text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            />
+          </label>
+          <p className="text-right text-xs text-muted-foreground">
+            ${(seats * SEAT_PRICE_USD_PER_YEAR).toLocaleString("en-US")} / year
+          </p>
+        </div>
       )}
 
       {checkout ? (
         <CheckoutButton
           tier={checkout.tier}
-          period={checkout.period}
           seats={seatBased ? seats : undefined}
           className={btnClass}
         >

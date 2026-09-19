@@ -22,6 +22,8 @@ import {
   saveTeacherQuiz,
   publishTeacherQuiz,
 } from "@/lib/actions/teacher-quizzes"
+import { createAssignment, publishAssignment } from "@/lib/actions/assignments"
+import { QuestionsAvailableChip } from "@/components/credits/questions-available-chip"
 
 type AssignmentType = "reading" | "quiz" | "discussion" | "essay" | "annotation"
 
@@ -94,8 +96,6 @@ export default function CreateAssignmentPage({ params }: { params: Promise<{ id:
     setCreating(true)
     setError(null)
 
-    const supabase = createClient()
-
     const assignmentTitle = title.trim() ||
       (selectedBook ? `${selectedBook.title} — ${type}` : `${type} assignment`)
 
@@ -147,6 +147,7 @@ export default function CreateAssignmentPage({ params }: { params: Promise<{ id:
             correct_answer: q.correct_answer,
             explanation: q.explanation || null,
             points: q.points,
+            meta: q.meta ?? null,
             rubric: q.rubric,
             reference_answer: q.reference_answer ?? null,
             max_points: q.max_points ?? null,
@@ -167,27 +168,36 @@ export default function CreateAssignmentPage({ params }: { params: Promise<{ id:
       }
     }
 
-    const { error: insertError } = await supabase
-      .from("assignments")
-      .insert({
-        classroom_id: classroomId,
-        teacher_id: user.id,
-        type,
-        title: assignmentTitle,
-        description: description.trim() || null,
-        book_id: bookId || null,
-        chapter_range_start: chapterStart,
-        chapter_range_end: chapterEnd,
-        discussion_prompt: discussionPrompt.trim() || null,
-        essay_prompt: essayPrompt.trim() || null,
-        quiz_id: quizId,
-        due_date: new Date(dueDate).toISOString(),
-        points_available: points,
-        status: "active",
-      })
-
-    if (insertError) {
-      setError(insertError.message)
+    // Create as a draft through the server action, then publish (eager
+    // submission roster + class_assignment notifications). This page's chapter
+    // inputs are 1-BASED ("of N"); assignments store 0-based reader indexes.
+    const usesBook = type === "reading" || type === "quiz" || type === "annotation"
+    const created2 = await createAssignment({
+      classroomId,
+      title: assignmentTitle,
+      description: description.trim() || undefined,
+      type,
+      bookId: usesBook ? bookId || undefined : undefined,
+      chapterRangeStart: usesBook && bookId ? Math.max(0, chapterStart - 1) : undefined,
+      chapterRangeEnd: usesBook && bookId ? Math.max(0, chapterEnd - 1) : undefined,
+      discussionPrompt:
+        type === "discussion" ? discussionPrompt.trim() || undefined : undefined,
+      essayPrompt: type === "essay" ? essayPrompt.trim() || undefined : undefined,
+      // This page has no annotation-count field yet; default to 3 highlights.
+      annotationTarget: type === "annotation" ? 3 : undefined,
+      quizId: quizId ?? undefined,
+      dueAt: new Date(dueDate).toISOString(),
+      points,
+      scope: "classroom",
+    })
+    if (!created2.ok) {
+      setError(created2.error)
+      setCreating(false)
+      return
+    }
+    const published2 = await publishAssignment(created2.data.id)
+    if (!published2.ok) {
+      setError(published2.error)
       setCreating(false)
       return
     }
@@ -298,6 +308,9 @@ export default function CreateAssignmentPage({ params }: { params: Promise<{ id:
 
             {type === "quiz" && (
               <div>
+                <div className="mb-3">
+                  <QuestionsAvailableChip />
+                </div>
                 <div className="mb-3 flex gap-2">
                   <button
                     type="button"

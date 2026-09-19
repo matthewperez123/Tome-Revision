@@ -12,6 +12,7 @@ import {
   CalendarRange,
 } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
+import { assignmentDetailHref, assignmentReaderHref } from "@/lib/assignments/links"
 import { getBook } from "@/lib/content"
 import { useAuth } from "@/hooks/use-auth"
 import { TeacherAnnouncementComposer } from "@/components/classroom/teacher-announcement-composer"
@@ -49,6 +50,7 @@ interface AssignmentItem {
   title: string
   type: string
   book_id: string | null
+  chapter_range_start: number | null
   due_date: string
   status: string // submission status
 }
@@ -245,7 +247,7 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
       // Assignments
       const { data: assignmentData, error: assignErr } = await supabase
         .from("assignments")
-        .select("id, title, type, book_id, due_date")
+        .select("id, title, type, book_id, chapter_range_start, due_date")
         .eq("classroom_id", classroomId)
         .eq("status", "active")
         .order("due_date", { ascending: true })
@@ -441,7 +443,7 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
                 {assignments.slice(0, 3).map((a) => (
                   <Link
                     key={a.id}
-                    href={`/classroom/${classroomId}/assignment/${a.id}`}
+                    href={assignmentReaderHref({ ...a, classroom_id: classroomId })}
                     className="flex items-center gap-3 rounded-xl border bg-card p-4 transition-colors hover:bg-muted/50"
                   >
                     <BookOpen className="size-5 text-blue-500" />
@@ -472,7 +474,7 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
                 return (
                   <div key={a.id} className="rounded-xl border bg-card p-4">
                     <Link
-                      href={`/classroom/${classroomId}/assignment/${a.id}`}
+                      href={assignmentReaderHref({ ...a, classroom_id: classroomId })}
                       className="flex items-center gap-3"
                     >
                       <div className="flex-1">
@@ -664,7 +666,7 @@ export function StudentClassroomView({ classroomId }: { classroomId: string }) {
                             <span className="size-1.5 rounded-full bg-[#2C4A7E]" />
                             {p.published_assignment_id ? (
                               <Link
-                                href={`/classroom/${classroomId}/assignment/${p.published_assignment_id}`}
+                                href={assignmentDetailHref(classroomId, p.published_assignment_id)}
                                 className="flex-1 truncate hover:underline"
                               >
                                 {p.title}

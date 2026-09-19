@@ -16,6 +16,7 @@
 "use client"
 
 import { useEffect, useState, useRef, useCallback, useMemo } from "react"
+import Link from "next/link"
 import { useParams, useRouter } from "next/navigation"
 import { AnimatePresence, motion } from "framer-motion"
 import { BookCheck, BookOpen, Palette, X } from "lucide-react"
@@ -80,6 +81,13 @@ import { ReaderPresenceRoom, ReaderPresenceAvatars } from "@/components/reader/r
 import { useAuth } from "@/hooks/use-auth"
 import { useActivityBeacon } from "@/hooks/use-activity-beacon"
 import { autoFinalizeReadingForBook } from "@/lib/actions/grades"
+import { fromReaderIndex, isWithinRange, toReaderIndex } from "@/lib/assignments/chapters"
+import { assignmentDetailHref } from "@/lib/assignments/links"
+import {
+  finalizePlatformQuizForAssignment,
+  resolveAssignmentQuiz,
+} from "@/lib/reader/resolve-assignment-quiz"
+import { QuizAttemptRunner } from "@/components/classroom/quiz-attempt-runner"
 import { RUBRIC } from "@/lib/semester-plan/rubric"
 import { useEntitlement } from "@/hooks/use-entitlement"
 import { canReadBook } from "@/lib/stripe/entitlements"
@@ -92,6 +100,24 @@ type Chapter = {
   title: string
   order: number
   content_html: string | null
+}
+
+// Full assignment context fetched for ?assignment= URLs — drives the ribbon,
+// the end-of-range CTA, and the quiz resolution ladder (chapter_range_* are
+// 0-based reader indexes per src/lib/assignments/chapters.ts).
+interface AssignmentCtx {
+  id: string
+  title: string
+  type: string
+  book_id: string | null
+  classroom_id: string
+  chapter_range_start: number | null
+  chapter_range_end: number | null
+  quiz_id: string | null
+  quiz_mode: string | null
+  due_date: string | null
+  points_available: number | null
+  status: string
 }
 
 const PLACEHOLDER_HTML = `<p>The dawn spread her fingertips of rose across the sky as the hero stood upon the shore, gazing out at the wine-dark sea that stretched endlessly before him.</p>
@@ -152,15 +178,22 @@ export default function ReaderPage() {
   const [sidebarOpen, setSidebarOpen] = useState(true)
   // Classroom context (?classroom=<id>) scopes live presence to the class room.
   const [classroomId, setClassroomId] = useState<string | null>(null)
-  // Reading-assignment context (?assignment=<id>) drives the assignment ribbon
-  // and auto-completion. Meta is fetched for the ribbon copy.
+  // Reading-assignment context (?assignment=<id>) drives the assignment ribbon,
+  // end-of-range CTA, and quiz ladder. Full row is fetched for the context.
   const [assignmentId, setAssignmentId] = useState<string | null>(null)
-  const [assignmentMeta, setAssignmentMeta] = useState<{
-    title: string
-    rangeEnd: number | null
-  } | null>(null)
+  const [assignmentCtx, setAssignmentCtx] = useState<AssignmentCtx | null>(null)
   const [ribbonDismissed, setRibbonDismissed] = useState(false)
   const [assignmentDone, setAssignmentDone] = useState(false)
+  // Teacher-quiz overlay opened from the assignment CTA (same overlay shape
+  // ClassQuizDock uses — QuizAttemptRunner owns grading via submitQuizAttempt).
+  const [assignmentQuizOpen, setAssignmentQuizOpen] = useState<{
+    quizId: string
+    classroomId: string
+  } | null>(null)
+  const [assignmentQuizResolving, setAssignmentQuizResolving] = useState(false)
+  // Set while a platform quiz runs on behalf of an assignment so handleQuizPass
+  // can finalize the roster/grade chain on completion.
+  const assignmentPlatformRef = useRef<{ assignmentId: string; quizId: string } | null>(null)
   // Cross-device resume: set when the account's saved chapter is ahead of the
   // chapter we opened at (e.g. progress made on another device).
   const [serverResume, setServerResume] = useState<{ chapterIndex: number } | null>(null)
@@ -400,31 +433,31 @@ export default function ReaderPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [bookId])
 
-  // Fetch assignment meta for the ribbon (title + assigned chapter range).
+  // Fetch the full assignment context for the ribbon + CTA + quiz ladder.
+  // A stale URL (wrong book, or the assignment is no longer active) drops the
+  // context entirely — the reader behaves like a plain reading session.
   useEffect(() => {
     if (!assignmentId) return
     let cancelled = false
     ;(async () => {
       const { data } = await supabase
         .from("assignments")
-        .select("title, chapter_range_end, chapter_range_start, status")
+        .select(
+          "id, title, type, book_id, classroom_id, chapter_range_start, chapter_range_end, quiz_id, quiz_mode, due_date, points_available, status",
+        )
         .eq("id", assignmentId)
-        .maybeSingle<{
-          title: string
-          chapter_range_end: number | null
-          chapter_range_start: number | null
-          status: string
-        }>()
-      if (cancelled || !data || data.status !== "active") return
-      setAssignmentMeta({
-        title: data.title,
-        rangeEnd: data.chapter_range_end ?? data.chapter_range_start ?? null,
-      })
+        .maybeSingle<AssignmentCtx>()
+      if (cancelled) return
+      if (!data || data.status !== "active" || data.book_id !== bookId) {
+        setAssignmentCtx(null)
+        return
+      }
+      setAssignmentCtx(data)
     })()
     return () => {
       cancelled = true
     }
-  }, [assignmentId])
+  }, [assignmentId, bookId])
 
   // Auto-complete reading assignments as the student's furthest chapter
   // advances. Server-side derivation mirrors the classroom_gradebook rule and
@@ -899,26 +932,6 @@ export default function ReaderPage() {
 
   // handleModeSelect removed — modal no longer used
 
-  const handleFinishChapter = useCallback(() => {
-    const totalCount = chapters.length || 1
-    // Skip quiz for front/back matter — auto-complete and advance
-    const currentTitle = chapters[currentChapter]?.title ?? ""
-    // Platform Trials are paused — treat every chapter like front/back matter:
-    // mark it complete and advance without offering the pre-generated quiz.
-    if (!PLATFORM_QUIZZES_ENABLED || isFrontOrBackMatter(currentTitle)) {
-      completeChapter(bookId, currentChapter, 0)
-      if (currentChapter < totalCount - 1) setTimeout(() => handleChapterSelect(currentChapter + 1), 100)
-      return
-    }
-    // Open the compact drop-up toast; difficulty selection inside the
-    // toast triggers the full overlay with tier pre-selected.
-    setTrialQuestions([])
-    setSelectedDifficulty(null)
-    setShowQuizOverlay(false)
-    setTrialResolveStatus("select")
-    setShowDifficultyDropUp(true)
-  }, [bookId, currentChapter, chapters, handleChapterSelect, completeChapter])
-
   // Load + adapt a DB quiz's questions for a book/tier. When `chapterIndex` is a
   // number we ask for that chapter's quiz; when null we ask for the book-level
   // quiz (chapter_index IS NULL). Returns [] when no such quiz exists.
@@ -943,9 +956,37 @@ export default function ReaderPage() {
     [],
   )
 
-  const handleTrialDifficultySelect = useCallback((difficulty: QuizDifficulty) => {
+  const handleTrialDifficultySelect = useCallback((difficulty: QuizDifficulty, explicitQuizId?: string) => {
     if (!book) return
     setSelectedDifficulty(difficulty)
+
+    // Assignment path: the quiz has already been resolved server-side — load
+    // exactly that quiz's questions, skipping the curated/ladder walk.
+    if (explicitQuizId) {
+      setTrialResolveStatus("resolving")
+      setShowDifficultyDropUp(true)
+      const reqId = ++trialReqRef.current
+      ;(async () => {
+        const { data: rows } = await supabase
+          .from("questions")
+          .select("*")
+          .eq("quiz_id", explicitQuizId)
+          .order("order")
+        if (reqId !== trialReqRef.current) return
+        const adapted = rows?.length
+          ? dbRowsToChapterQuestions(rows as QuestionRow[], difficulty)
+          : []
+        if (adapted.length > 0) {
+          setTrialQuestions(adapted)
+          setTrialResolveStatus("select")
+          setShowDifficultyDropUp(false)
+          setShowQuizOverlay(true)
+        } else {
+          setTrialResolveStatus("unavailable")
+        }
+      })()
+      return
+    }
 
     // Trial resolution ladder — keyed on (book, chapter, tier). Correct at ANY
     // coverage level; it never falls back to generic filler questions (that would
@@ -984,8 +1025,90 @@ export default function ReaderPage() {
     })()
   }, [book, currentChapter, loadDbQuestions])
 
+  // Assignment quiz launcher — runs the resolution ladder server-side, then
+  // opens the right experience: teacher quiz → QuizAttemptRunner overlay,
+  // platform quiz → the trial overlay with that exact quiz, none → "Mark as
+  // read" (auto-finalize the reading submission) and advance.
+  const openAssignmentQuiz = useCallback(async () => {
+    if (!assignmentCtx) return
+    setAssignmentQuizResolving(true)
+    try {
+      const res = await resolveAssignmentQuiz(assignmentCtx.id)
+      const resolved = res.ok ? res.data : { kind: "none" as const }
+      if (resolved.kind === "teacher") {
+        setAssignmentQuizOpen({ quizId: resolved.quizId, classroomId: assignmentCtx.classroom_id })
+        return
+      }
+      if (resolved.kind === "platform") {
+        assignmentPlatformRef.current = { assignmentId: assignmentCtx.id, quizId: resolved.quizId }
+        handleTrialDifficultySelect(resolved.difficulty as QuizDifficulty, resolved.quizId)
+        return
+      }
+      // No quiz — "Mark as read": finalize the reading submission and advance.
+      // All modes included: the resolver returned none, so mode 'none',
+      // empty-bank platform, and teacher-mode-without-quiz all finalize here.
+      const fin = await autoFinalizeReadingForBook(bookId, currentChapter, {
+        includeQuizModes: ["none", "platform", "teacher"],
+      })
+      if (fin.ok && fin.data.finalized > 0) {
+        setAssignmentDone(true)
+        toast.success("Assignment marked as read.")
+      }
+      const totalCount = chapters.length || 1
+      if (currentChapter < totalCount - 1) setTimeout(() => handleChapterSelect(currentChapter + 1), 100)
+    } finally {
+      setAssignmentQuizResolving(false)
+    }
+  }, [assignmentCtx, bookId, currentChapter, chapters, handleTrialDifficultySelect, handleChapterSelect])
+
+  const handleFinishChapter = useCallback(() => {
+    const totalCount = chapters.length || 1
+    const currentTitle = chapters[currentChapter]?.title ?? ""
+    const isMatter = isFrontOrBackMatter(currentTitle)
+    const inAssignment = !!assignmentCtx && assignmentCtx.book_id === bookId
+    const atRangeEnd =
+      inAssignment &&
+      currentChapter >=
+        toReaderIndex(assignmentCtx!.chapter_range_end ?? assignmentCtx!.chapter_range_start ?? 0)
+
+    // Front/back matter never quizzes — complete and advance.
+    if (isMatter) {
+      completeChapter(bookId, currentChapter, 0)
+      if (currentChapter < totalCount - 1) setTimeout(() => handleChapterSelect(currentChapter + 1), 100)
+      return
+    }
+    // Mid-assignment chapters read straight through; the quiz waits at the end
+    // of the assigned range.
+    if (inAssignment && !atRangeEnd) {
+      completeChapter(bookId, currentChapter, 0)
+      if (currentChapter < totalCount - 1) setTimeout(() => handleChapterSelect(currentChapter + 1), 100)
+      return
+    }
+    // End of the assigned range — the assignment quiz owns this moment. Never
+    // advance silently past it.
+    if (inAssignment && atRangeEnd) {
+      completeChapter(bookId, currentChapter, 0)
+      void openAssignmentQuiz()
+      return
+    }
+    // Outside an assignment with platform trials paused: complete and advance.
+    if (!PLATFORM_QUIZZES_ENABLED) {
+      completeChapter(bookId, currentChapter, 0)
+      if (currentChapter < totalCount - 1) setTimeout(() => handleChapterSelect(currentChapter + 1), 100)
+      return
+    }
+    // Open the compact drop-up toast; difficulty selection inside the
+    // toast triggers the full overlay with tier pre-selected.
+    setTrialQuestions([])
+    setSelectedDifficulty(null)
+    setShowQuizOverlay(false)
+    setTrialResolveStatus("select")
+    setShowDifficultyDropUp(true)
+  }, [bookId, currentChapter, chapters, assignmentCtx, handleChapterSelect, completeChapter, openAssignmentQuiz])
+
   const handleTrialSkip = useCallback(() => {
     // Skip trial — mark chapter complete with 0 XP and advance
+    assignmentPlatformRef.current = null
     completeChapter(bookId, currentChapter, 0)
     setShowDifficultyDropUp(false)
     setShowQuizOverlay(false)
@@ -1036,6 +1159,21 @@ export default function ReaderPage() {
     notifyChapterCompleted(bookTitle, chapterData.title, bookId, isLastChapter ? undefined : currentChapter + 1, getUnitLabel(structuralUnitType))
     if (isLastChapter) {
       notifyBookCompleted(bookTitle, bookId)
+    }
+
+    // Assignment platform quiz — close the grading loop: submission graded +
+    // canonical grades row, exactly like a teacher-quiz submit.
+    const platformCtx = assignmentPlatformRef.current
+    if (platformCtx) {
+      assignmentPlatformRef.current = null
+      void finalizePlatformQuizForAssignment(platformCtx.assignmentId, platformCtx.quizId, correct, total).then(
+        (r) => {
+          if (r.ok) {
+            setAssignmentDone(true)
+            toast.success(`Assignment quiz graded — ${r.data.score}/${r.data.maxScore}`)
+          }
+        },
+      )
     }
 
     setShowQuizOverlay(false)
@@ -1105,6 +1243,23 @@ export default function ReaderPage() {
 
   const progress               = getProgress(bookId)
   const completedChapterIndices = progress?.completedChapterIndices ?? []
+
+  // Chapter-end CTA label — assignment-aware. Inside an assigned range the
+  // quiz only waits at the range end; the final body chapter keeps its
+  // "Begin Final Quiz" weight; quiz_mode 'none' reads honestly as mark-as-read.
+  const inAssignment = !!assignmentCtx && assignmentCtx.book_id === bookId
+  const atAssignmentRangeEnd =
+    inAssignment &&
+    currentChapter >=
+      toReaderIndex(assignmentCtx!.chapter_range_end ?? assignmentCtx!.chapter_range_start ?? 0)
+  const ctaLabel = () => {
+    if (inAssignment && !atAssignmentRangeEnd) return "Continue reading"
+    if (inAssignment && atAssignmentRangeEnd) {
+      if (assignmentCtx!.quiz_mode === "none") return "Mark as read"
+      return currentChapter === totalChapters - 1 ? "Begin Final Quiz" : "Begin Quiz"
+    }
+    return currentChapter === totalChapters - 1 ? "Begin Final Quiz" : "Begin Quiz"
+  }
   // Compute unit display label (e.g. "Canto III", "Chapter 5", "The Dead").
   // For multi-part books, number cantos within their canticle, not globally.
   const unitDisplay = currentPart
@@ -1160,8 +1315,14 @@ export default function ReaderPage() {
           questions={trialQuestions}
           isOpen={showQuizOverlay}
           onPass={handleQuizPass}
-          onFail={() => setShowQuizOverlay(false)}
-          onClose={() => setShowQuizOverlay(false)}
+          onFail={() => {
+            assignmentPlatformRef.current = null
+            setShowQuizOverlay(false)
+          }}
+          onClose={() => {
+            assignmentPlatformRef.current = null
+            setShowQuizOverlay(false)
+          }}
           onSelectDifficulty={handleTrialDifficultySelect}
           onSkip={handleTrialSkip}
           initialTier={selectedDifficulty}
@@ -1172,6 +1333,31 @@ export default function ReaderPage() {
       {/* Class quizzes assigned for this book — students open them here,
           inside the reading, mirroring the Trial affordance. */}
       <ClassQuizDock bookId={bookId} />
+
+      {/* Assignment teacher-quiz overlay — reached from "Begin Quiz" at the end
+          of the assigned range. QuizAttemptRunner owns grading via
+          submitQuizAttempt (same shape as the ClassQuizDock overlay). */}
+      {assignmentQuizOpen && (
+        <div className="fixed inset-0 z-[70] flex items-start justify-center overflow-y-auto bg-black/50 p-4 sm:p-8">
+          <div className="relative w-full max-w-2xl rounded-xl border bg-background p-5 shadow-2xl sm:p-8">
+            <button
+              type="button"
+              onClick={() => setAssignmentQuizOpen(null)}
+              className="absolute right-4 top-4 rounded-md p-1 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+              aria-label="Close quiz"
+            >
+              <X className="size-5" />
+            </button>
+            <QuizAttemptRunner
+              quizId={assignmentQuizOpen.quizId}
+              classroomId={assignmentQuizOpen.classroomId}
+              backHref="/assignments"
+              embedded
+              onComplete={() => setAssignmentDone(true)}
+            />
+          </div>
+        </div>
+      )}
 
 
       <div className="relative flex h-[calc(100vh-3rem)] overflow-hidden bg-background text-foreground">
@@ -1257,50 +1443,94 @@ export default function ReaderPage() {
             </div>
           )}
           {/* Reading-assignment ribbon (dismissible) */}
-          {assignmentMeta && !ribbonDismissed && (
-            <div
-              className="flex shrink-0 items-center gap-2.5 px-4 py-2 text-sm"
-              style={{
-                backgroundColor: assignmentDone
-                  ? `${RUBRIC.verdigris}14`
-                  : `${RUBRIC.lapis}12`,
-                borderBottom: `1px solid ${
-                  assignmentDone ? `${RUBRIC.verdigris}33` : `${RUBRIC.lapis}26`
-                }`,
-              }}
-            >
-              <BookCheck
-                className="size-4 shrink-0"
-                style={{ color: assignmentDone ? RUBRIC.verdigris : RUBRIC.lapis }}
-              />
-              <span className="min-w-0 flex-1 truncate">
-                {assignmentDone ? (
-                  <span style={{ color: RUBRIC.verdigris }} className="font-medium">
-                    Reading complete — {assignmentMeta.title}
-                  </span>
-                ) : (
-                  <>
-                    <span className="font-medium">Assignment:</span>{" "}
-                    {assignmentMeta.title}
-                    {assignmentMeta.rangeEnd != null &&
-                      chapters[assignmentMeta.rangeEnd] && (
+          {assignmentCtx && !ribbonDismissed && (() => {
+            const rs = assignmentCtx.chapter_range_start
+            const re = assignmentCtx.chapter_range_end ?? rs
+            const rangeLabel =
+              rs == null
+                ? null
+                : re == null || re === rs
+                  ? `Chapter ${fromReaderIndex(rs) + 1}`
+                  : `Chapters ${fromReaderIndex(rs) + 1}–${fromReaderIndex(re) + 1}`
+            const rangeCount = rs == null ? 0 : (re ?? rs) - rs + 1
+            const doneCount = completedChapterIndices.filter((i) =>
+              isWithinRange(i, assignmentCtx),
+            ).length
+            const dueLabel = assignmentCtx.due_date
+              ? new Date(assignmentCtx.due_date).toLocaleDateString("en-US", {
+                  month: "short",
+                  day: "numeric",
+                })
+              : null
+            const isQuizType = assignmentCtx.type === "trial" || assignmentCtx.type === "quiz" || assignmentCtx.type === "reading"
+            return (
+              <div
+                className="flex shrink-0 items-center gap-2.5 px-4 py-2 text-sm"
+                style={{
+                  backgroundColor: assignmentDone
+                    ? `${RUBRIC.verdigris}14`
+                    : `${RUBRIC.lapis}12`,
+                  borderBottom: `1px solid ${
+                    assignmentDone ? `${RUBRIC.verdigris}33` : `${RUBRIC.lapis}26`
+                  }`,
+                }}
+              >
+                <BookCheck
+                  className="size-4 shrink-0"
+                  style={{ color: assignmentDone ? RUBRIC.verdigris : RUBRIC.lapis }}
+                />
+                <span className="min-w-0 flex-1 truncate">
+                  {assignmentDone ? (
+                    <span style={{ color: RUBRIC.verdigris }} className="font-medium">
+                      Assignment complete — {assignmentCtx.title}
+                    </span>
+                  ) : (
+                    <>
+                      <span className="font-medium">{assignmentCtx.title}</span>
+                      {rangeLabel && (
+                        <span className="text-muted-foreground"> · {rangeLabel}</span>
+                      )}
+                      {dueLabel && (
+                        <span className="text-muted-foreground"> · due {dueLabel}</span>
+                      )}
+                      {rangeCount > 0 && (
                         <span className="text-muted-foreground">
-                          {" "}· through “{chapters[assignmentMeta.rangeEnd].title}”
+                          {" "}· {Math.min(doneCount, rangeCount)} of {rangeCount} chapters
                         </span>
                       )}
-                  </>
-                )}
-              </span>
-              <button
-                type="button"
-                onClick={() => setRibbonDismissed(true)}
-                className="shrink-0 rounded-md px-1.5 py-0.5 text-xs text-muted-foreground hover:bg-black/5 hover:text-foreground dark:hover:bg-white/10"
-                aria-label="Dismiss assignment banner"
-              >
-                Dismiss
-              </button>
-            </div>
-          )}
+                    </>
+                  )}
+                </span>
+                {!assignmentDone && assignmentCtx.type === "essay" ? (
+                  <Link
+                    href={assignmentDetailHref(assignmentCtx.classroom_id, assignmentCtx.id)}
+                    className="shrink-0 rounded-md px-2 py-0.5 text-xs font-semibold"
+                    style={{ color: RUBRIC.lapis }}
+                  >
+                    Write your response
+                  </Link>
+                ) : !assignmentDone && isQuizType && assignmentCtx.quiz_mode !== "none" ? (
+                  <button
+                    type="button"
+                    onClick={() => void openAssignmentQuiz()}
+                    disabled={assignmentQuizResolving}
+                    className="shrink-0 rounded-md px-2 py-0.5 text-xs font-semibold disabled:opacity-50"
+                    style={{ color: RUBRIC.lapis }}
+                  >
+                    {assignmentQuizResolving ? "Opening…" : "Open the quiz"}
+                  </button>
+                ) : null}
+                <button
+                  type="button"
+                  onClick={() => setRibbonDismissed(true)}
+                  className="shrink-0 rounded-md px-1.5 py-0.5 text-xs text-muted-foreground hover:bg-black/5 hover:text-foreground dark:hover:bg-white/10"
+                  aria-label="Dismiss assignment banner"
+                >
+                  Dismiss
+                </button>
+              </div>
+            )
+          })()}
           {/* Reader Toolbar */}
           <div
             className="sticky top-0 z-20 flex shrink-0 items-center justify-between border-b border-border px-4 py-1.5 backdrop-blur-sm bg-background/90"
@@ -1403,9 +1633,7 @@ export default function ReaderPage() {
                             }}
                           >
                             <BookCheck className="size-4" />
-                            {currentChapter === totalChapters - 1
-                              ? "Begin Final Quiz"
-                              : "Begin Quiz"}
+                            {ctaLabel()}
                           </button>
                         </div>
                       )}

@@ -15,6 +15,9 @@ import {
   Feather,
   Search,
   Scale,
+  ListTodo,
+  PenLine,
+  AlignLeft,
 } from "lucide-react"
 import type { QuestionType } from "@/lib/quiz-engine"
 import { MultipleChoice } from "./MultipleChoice"
@@ -30,6 +33,9 @@ import { CloseReading } from "./CloseReading"
 import { Reflection } from "./Reflection"
 import { Identification } from "./Identification"
 import { TrueFalseReason } from "./TrueFalseReason"
+import { MultipleSelect } from "./MultipleSelect"
+import { ShortAnswer } from "./ShortAnswer"
+import { FreeResponse } from "./FreeResponse"
 import type { QuestionRendererProps } from "./shared"
 
 export const QUESTION_RENDERERS: Record<
@@ -49,6 +55,9 @@ export const QUESTION_RENDERERS: Record<
   reflection: Reflection,
   identification: Identification,
   tf_with_reason: TrueFalseReason,
+  multiple_select: MultipleSelect,
+  short_answer: ShortAnswer,
+  free_response: FreeResponse,
 }
 
 export const QUESTION_TYPE_ICONS: Record<
@@ -68,6 +77,9 @@ export const QUESTION_TYPE_ICONS: Record<
   reflection: Feather,
   identification: Search,
   tf_with_reason: Scale,
+  multiple_select: ListTodo,
+  short_answer: PenLine,
+  free_response: AlignLeft,
 }
 
 export const QUESTION_TYPE_LABELS: Record<QuestionType, string> = {
@@ -84,4 +96,7 @@ export const QUESTION_TYPE_LABELS: Record<QuestionType, string> = {
   reflection: "Reflection",
   identification: "Identification",
   tf_with_reason: "True/False with Reason",
+  multiple_select: "Multiple Select",
+  short_answer: "Short Answer",
+  free_response: "Free Response",
 }

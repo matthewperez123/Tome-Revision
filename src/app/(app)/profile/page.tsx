@@ -19,8 +19,10 @@ import { useTheme } from "next-themes"
 import { useAuth } from "@/hooks/use-auth"
 import { useEntitlement } from "@/hooks/use-entitlement"
 import { useEconomy } from "@/components/tome/economy-provider"
-import { CheckoutButton } from "@/components/pricing/CheckoutButton"
-import { FAMILY_ANNUAL_PRICE } from "@/lib/marketing/plans"
+import {
+  FAMILY_PRICE_USD_PER_YEAR,
+  FAMILY_STUDENT_LIMIT,
+} from "@/lib/billing/config"
 
 // Static literary quotes for the shareable card (not user data).
 const READING_QUOTES = [
@@ -253,18 +255,18 @@ export default function ProfilePage() {
                   </h2>
                 </div>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-                  All 1,200+ books, unlimited Tome Assistant conversations, and advanced
-                  Trials — for up to five readers. Starts with a 7-day free trial.
+                  The full teacher toolset for a homeschool household — the whole
+                  library, assignments, quizzes, and a family gradebook for up to{" "}
+                  {FAMILY_STUDENT_LIMIT} students.
                 </p>
               </div>
               <div className="flex shrink-0 flex-col items-stretch gap-2 sm:items-end">
-                <CheckoutButton
-                  tier="family"
-                  period="annual"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:opacity-70"
+                <Link
+                  href="/homeschool"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 >
-                  Upgrade — {FAMILY_ANNUAL_PRICE}/yr
-                </CheckoutButton>
+                  See the Family plan — ${FAMILY_PRICE_USD_PER_YEAR}/yr
+                </Link>
                 <Link
                   href="/pricing"
                   className="text-center text-xs font-medium text-muted-foreground transition-colors hover:text-foreground"
@@ -639,7 +641,7 @@ export default function ProfilePage() {
                 <div className="px-5 py-4">
                   {tier === "free" ? (
                     <Link
-                      href="/pricing"
+                      href="/homeschool"
                       className="flex items-center justify-between text-sm font-medium hover:text-foreground transition-colors group"
                     >
                       <span>Upgrade to Tome Family</span>

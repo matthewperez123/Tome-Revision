@@ -1,7 +1,9 @@
 import "server-only"
 
 import Anthropic from "@anthropic-ai/sdk"
+import { isOpenEnded } from "@/lib/questions/classify"
 import {
+  ALL_QUESTION_TYPES,
   generatedQuestionSchema,
   generatedQuizSchema,
   answerStringsForLeakCheck,
@@ -21,11 +23,11 @@ const MODEL_HAIKU = "claude-haiku-4-5"
 const MODEL_SONNET = "claude-sonnet-4-6"
 const MODEL_OPUS = "claude-opus-4-8"
 
-const OPEN_ENDED = new Set<TeacherQuizQuestionType>([
-  "short_answer",
-  "free_response",
-  "tf_with_reason",
-])
+// The canonical open-ended rule (meta-free default form) — classify.ts is the
+// single source of truth for the 16-type vocabulary.
+const OPEN_ENDED = new Set<TeacherQuizQuestionType>(
+  ALL_QUESTION_TYPES.filter((t) => isOpenEnded(t)),
+)
 
 export function chooseModel(req: GenerateQuizRequest): string {
   const hasMaster = (req.difficultyMix.master ?? 0) > 0 || req.single?.difficulty === "master"
@@ -99,11 +101,12 @@ const CONTRACT = `Each question object MUST match exactly:
   "difficulty": "apprentice" | "scholar" | "master",
   "category": "factual" | "literary" | "analytical" | "thematic" | "contextual",
   "prompt": the question text,
-  "options": ["A","B",...]  // REQUIRED for multiple_choice, multiple_select, vocabulary_in_context; omit otherwise
-  "correct_answer": exact correct option text  // REQUIRED for objective types; for true_false use "true"/"false"; for multiple_select comma-join the correct options; OMIT for short_answer/free_response/tf_with_reason
-  "rubric": { "max_points": int, "criteria": [{ "name": str, "points": int, "descriptor": str }] }  // REQUIRED for short_answer/free_response/tf_with_reason; omit for objective
+  "options": ["…","…","…","…"]  // exactly 4 for option types; 4-6 for multiple_select; omit otherwise
+  "correct_answer": see the per-type table below,
+  "meta": { per-type payload — see the table below },
+  "rubric": { "max_points": int, "criteria": [{ "name": str, "points": int, "descriptor": str }] }  // REQUIRED for reflection/free_response (3-5 criteria); omit for objective types
   "reference_answer": model answer  // include for open-ended types
-  "explanation": specific, text-grounded reason the answer is correct (never generic filler),
+  "explanation": specific, text-grounded reason the answer is correct. NEVER write generic filler like "See the text for the relevant passage" — cite what happens and why the answer follows.
   "source_anchor": { "chapter_index": int, "quote": "<= 15 words quoted from the passage" },
   "hints": [
     { "level": 1, "text": "ORIENT — where to look / what the question is really asking. Point to the relevant passage or concept. Give NO reasoning away." },
@@ -113,7 +116,22 @@ const CONTRACT = `Each question object MUST match exactly:
   "distractor_eliminations": ["<exact text of an INCORRECT option safe to grey out>", "…"]  // multiple_choice/vocabulary_in_context ONLY; ordered; NEVER include the correct option; omit otherwise
 }
 
-HARD RULE for hints: no hint may contain the literal correct answer, the correct option's text or letter, or the exact reference_answer. The student does the thinking; hints only orient and scaffold.`
+HARD RULE for hints: no hint may contain the literal correct answer, the correct option's text or letter, or the exact reference_answer. The student does the thinking; hints only orient and scaffold.
+
+PER-TYPE PAYLOAD TABLE (required fields per type):
+- multiple_choice / theme_analysis / close_reading: options[4], correct_answer = exact option text. theme_analysis also meta.theme (the theme named). close_reading also meta.passage (verbatim excerpt from the source, 1-4 sentences) and optionally meta.passageHighlight = [startChar, endChar] within that excerpt.
+- vocabulary_in_context: options[4] (definitions), correct_answer, meta.vocabWord (the word as it appears in the text).
+- passage_id: options[4] (e.g. speakers, scenes, or works), correct_answer, meta.passage (verbatim excerpt), optional meta.passageHighlight.
+- identification: options[4], correct_answer, meta.identificationSubject = "speaker" | "book" | "character".
+- cross_reference: options[4], correct_answer, meta.crossRefBookId (the slug id of the other book, e.g. "the-odyssey"), meta.crossRefLabel (its display title).
+- true_false: correct_answer = "true" or "false". No options needed.
+- tf_with_reason: correct_answer = "<true|false>|<reasonIndex>" (e.g. "true|2"), meta.tfReasons = array of 3-4 candidate reasons; the index (0-based) picks the correct one.
+- multiple_select: options[4-6], correct_answer = the 2+ correct option texts comma-joined.
+- fill_blank: prompt marks the blank with ____, correct_answer = the missing word/phrase, meta.acceptedVariants = array of other accepted spellings/phrasings (may be empty []).
+- short_answer: correct_answer = canonical expected answer (a few words), meta.acceptedVariants = array of accepted alternate phrasings (may be empty []).
+- ordering: meta.items = 4-6 event/item strings in SHUFFLED presentation order, meta.correctOrder = the same strings in the correct sequence. No correct_answer field.
+- matching: meta.matchingLeft = 3-5 items, meta.matchingRight = same count of counterparts, meta.correctPairs = { "<left>": "<right>", ... }. No correct_answer field.
+- reflection / free_response: rubric (3-5 criteria), reference_answer, meta.reflectionPrompt (the full writing prompt), meta.reflectionWordMin and meta.reflectionWordMax (integers, min < max — e.g. 50/300 for reflection, 150/800 for free_response), meta.reflectionExpectedThemes = array of themes a strong answer engages.`
 
 function buildInstruction(req: GenerateQuizRequest, bookTitle: string, bookAuthor: string): string {
   return `You are the Tome Assistant, a literature teacher writing a rigorous, TEXT-GROUNDED quiz for students on "${bookTitle}" by ${bookAuthor}.
@@ -124,6 +142,11 @@ Generate exactly ${req.totalCount} questions with this difficulty mix:
 ${difficultyMixLines(req)}
 
 Allowed question types (distribute across them): ${typesLine(req.types)}.
+${
+    req.totalCount >= 10 && req.types.length >= 6
+      ? "\nTYPE-MIX RULE: use at least 6 distinct types, and no more than 2 questions of any single type."
+      : ""
+  }
 ${req.focus ? `\nFocus the quiz on: ${req.focus}` : ""}
 
 ${CONTRACT}

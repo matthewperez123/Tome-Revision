@@ -22,31 +22,16 @@ export interface VirgilGrade {
   truncated: boolean
 }
 
-/** Types that carry a machine-checkable correct_answer. */
-const OBJECTIVE_TYPES = new Set([
-  "multiple_choice",
-  "multiple_select",
-  "true_false",
-  "fill_blank",
-  "vocabulary_in_context",
-  "passage_id",
-  "vocabulary",
-  "short_answer",
-])
+import { isOpenEnded } from "@/lib/questions/classify"
+import { gradeAnswer, type GradableQuestion, type GradeVerdict } from "@/lib/questions/grade"
 
-/** Types that must be graded by Virgil against a rubric / reference answer. */
-const OPEN_ENDED_TYPES = new Set(["free_response", "tf_with_reason"])
-
-export function isOpenEndedType(t: string): boolean {
-  return OPEN_ENDED_TYPES.has(t)
-}
-
-function norm(s: string): string {
-  return s
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, " ")
-    .replace(/[.,;:!?"'`]+$/g, "")
+/**
+ * The canonical objective/open-ended split lives in
+ * `src/lib/questions/classify.ts`. Pass `meta` where available so
+ * short_answer (objective iff meta.acceptedAnswers[]) resolves correctly.
+ */
+export function isOpenEndedType(t: string, meta?: unknown): boolean {
+  return isOpenEnded(t, meta)
 }
 
 /** Pull a plain answer string out of the stored jsonb response. */
@@ -62,29 +47,74 @@ export function answerToString(response: unknown): string {
   return String(response)
 }
 
+/** Pull grade.ts extras (variants / order / pairs) out of the row's meta jsonb. */
+function metaExtras(
+  meta: unknown,
+): Pick<GradableQuestion, "acceptedVariants" | "correctOrder" | "correctPairs"> {
+  if (meta == null || typeof meta !== "object") return {}
+  const m = meta as Record<string, unknown>
+  const strings = (v: unknown): string[] | null =>
+    Array.isArray(v) ? v.map((x) => String(x)) : null
+  const pairs =
+    m.correctPairs != null && typeof m.correctPairs === "object" && !Array.isArray(m.correctPairs)
+      ? Object.fromEntries(
+          Object.entries(m.correctPairs as Record<string, unknown>).map(([k, v]) => [k, String(v)]),
+        )
+      : null
+  return {
+    acceptedVariants: strings(m.acceptedVariants),
+    correctOrder: strings(m.correctOrder),
+    correctPairs: pairs,
+  }
+}
+
+/** Serialize the stored jsonb response into the grader's wire format. */
+function responseToWire(type: string, response: unknown): string {
+  if (typeof response === "string") return response
+  // ordering / matching grade against JSON — preserve structure, don't flatten.
+  if ((type === "ordering" || type === "matching") && response != null && typeof response === "object") {
+    return JSON.stringify(response)
+  }
+  return answerToString(response)
+}
+
+/** The shared 16-type verdict for a teacher-quiz row (pending = not machine-gradable). */
+export function gradeObjectiveVerdict(
+  question: {
+    question_type: string
+    correct_answer: string | null
+    meta?: unknown
+  },
+  response: unknown,
+): GradeVerdict {
+  return gradeAnswer(
+    {
+      type: question.question_type,
+      correctAnswer: question.correct_answer,
+      meta: question.meta,
+      ...metaExtras(question.meta),
+    },
+    responseToWire(question.question_type, response),
+  )
+}
+
 /**
  * Grade an objective question. Returns null when the question isn't
  * machine-gradable (no correct_answer, or an open-ended type) — the caller
- * then routes it to Virgil or to teacher review.
+ * then routes it to Virgil or to teacher review. Boolean-only view of
+ * `gradeObjectiveVerdict` (partial credit reads as not-correct).
  */
 export function autoGradeObjective(
-  question: { question_type: string; correct_answer: string | null; options: unknown },
+  question: {
+    question_type: string
+    correct_answer: string | null
+    options: unknown
+    meta?: unknown
+  },
   response: unknown,
 ): boolean | null {
-  const type = question.question_type
-  const correct = question.correct_answer
-  if (isOpenEndedType(type)) return null
-  if (!OBJECTIVE_TYPES.has(type) || correct == null || correct.trim() === "") return null
-
-  const given = answerToString(response)
-  if (type === "multiple_select") {
-    const expected = new Set(correct.split(",").map((s) => norm(s)).filter(Boolean))
-    const got = new Set(given.split(",").map((s) => norm(s)).filter(Boolean))
-    if (expected.size !== got.size) return false
-    for (const e of expected) if (!got.has(e)) return false
-    return true
-  }
-  return norm(given) === norm(correct)
+  const v = gradeObjectiveVerdict(question, response)
+  return v.kind === "pending" ? null : v.correct
 }
 
 /** Per-question max points, defaulting sensibly by kind. */
@@ -92,10 +122,11 @@ export function questionMaxPoints(q: {
   question_type: string
   max_points: number | null
   points: number | null
+  meta?: unknown
 }): number {
   if (q.max_points != null) return q.max_points
   if (q.points != null) return q.points
-  return isOpenEndedType(q.question_type) ? 4 : 1
+  return isOpenEndedType(q.question_type, q.meta) ? 4 : 1
 }
 
 // ── Per-response grading decision ─────────────────────────────────────────────
@@ -142,21 +173,24 @@ export async function resolveResponseGrade(params: {
   penalty: number
   rawAnswer: unknown
   grade: FreeResponseGrader
+  /** Question meta jsonb — drives short_answer objective/open classification. */
+  meta?: unknown
 }): Promise<ResolvedGrade> {
-  const { questionType: type, maxPoints, penalty, rawAnswer } = params
+  const { questionType: type, maxPoints, penalty, rawAnswer, meta } = params
 
-  const objectiveVerdict = isOpenEndedType(type)
+  const verdict = isOpenEndedType(type, meta)
     ? null
-    : autoGradeObjective(
-        { question_type: type, correct_answer: params.correctAnswer, options: params.options },
+    : gradeObjectiveVerdict(
+        { question_type: type, correct_answer: params.correctAnswer, meta },
         rawAnswer,
       )
 
-  if (objectiveVerdict !== null) {
-    const isCorrect = objectiveVerdict === true
-    const score = Math.max(0, (isCorrect ? maxPoints : 0) - penalty)
+  if (verdict && verdict.kind === "graded") {
+    // credit ∈ {0, 0.5, 1} — tf_with_reason's boolean-alone half credit lands
+    // here (score columns are numeric(6,2) since the 3.1 migration).
+    const score = Math.max(0, verdict.credit * maxPoints - penalty)
     return {
-      isCorrect,
+      isCorrect: verdict.correct,
       score,
       gradedBy: "auto",
       aiFeedback: null,
@@ -165,7 +199,7 @@ export async function resolveResponseGrade(params: {
     }
   }
 
-  if (isOpenEndedType(type)) {
+  if (isOpenEndedType(type, meta)) {
     try {
       const g = await params.grade({
         questionText: params.questionText,

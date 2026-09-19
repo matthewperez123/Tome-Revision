@@ -2,7 +2,8 @@ import { NextResponse } from "next/server"
 import { getStripe } from "@/lib/stripe/server"
 import { createClient } from "@/lib/supabase/server"
 import { createAdminClient as createAdminClientUntyped } from "@/lib/supabase/admin"
-import { getEntitlement } from "@/lib/entitlements/server"
+import { getEntitlement, getSeatAllowance } from "@/lib/entitlements/server"
+import { SCHOOL_MIN_SEATS } from "@/lib/billing/config"
 import type { SupabaseClient } from "@supabase/supabase-js"
 
 const createAdminClient = () =>
@@ -10,19 +11,19 @@ const createAdminClient = () =>
 
 export const runtime = "nodejs"
 
-/** Hard ceiling on a single self-serve School subscription's teacher seats. */
-const MAX_SEATS = 500
+/** Hard ceiling on a single self-serve School subscription's student seats. */
+const MAX_SEATS = 5000
 
 /**
- * Change the number of teacher seats on the caller's School subscription.
+ * Change the number of STUDENT seats on the caller's School subscription.
  * Seats are the line-item `quantity`; Stripe is the source of truth for the
  * count, so this updates the subscription with proration on. The canonical
  * `subscriptions.seats` is refreshed here and re-confirmed by the webhook.
  *
  * Body: { seats: number }
  *
- * Admin-only. The new count cannot drop below the number of seats already
- * assigned to teachers (release teachers first via removeTeacherFromSchool).
+ * Admin-only. The count is floored at the School minimum and cannot drop
+ * below the students currently enrolled across the school's classrooms.
  */
 export async function POST(req: Request) {
   const stripe = getStripe()
@@ -41,9 +42,9 @@ export async function POST(req: Request) {
   }
 
   const seats = Math.floor(Number(body.seats))
-  if (!Number.isFinite(seats) || seats < 1 || seats > MAX_SEATS) {
+  if (!Number.isFinite(seats) || seats < SCHOOL_MIN_SEATS || seats > MAX_SEATS) {
     return NextResponse.json(
-      { error: `Choose between 1 and ${MAX_SEATS} teacher seats.` },
+      { error: `Choose between ${SCHOOL_MIN_SEATS} and ${MAX_SEATS} student seats.` },
       { status: 400 },
     )
   }
@@ -65,15 +66,12 @@ export async function POST(req: Request) {
 
   const admin = createAdminClient()
 
-  // Never shrink below the seats already assigned to teachers (admin + covered).
-  const { count: assigned } = await admin
-    .from("school_seats")
-    .select("*", { count: "exact", head: true })
-    .eq("subscription_user_id", user.id)
-  if (assigned != null && seats < assigned) {
+  // Never shrink below the students already enrolled across the school.
+  const { used } = await getSeatAllowance(user.id)
+  if (seats < used) {
     return NextResponse.json(
       {
-        error: `${assigned} seats are in use. Remove teachers before reducing below ${assigned}.`,
+        error: `${used} student seats are in use. Remove students before reducing below ${used}.`,
       },
       { status: 400 },
     )

@@ -1,10 +1,12 @@
 #!/usr/bin/env npx tsx
 // ─────────────────────────────────────────────
 // Canon quiz validator — the gate for authored quiz sets.
-// Enforces the acceptance criteria (3 difficulties; 10 questions each; ≥4
-// distinct types and ≤2 of any type per quiz; full, consistent dual-encoding;
-// type-specific meta integrity). Run it after authoring a book/chapter's set,
-// before moving on. Exits non-zero if any issue is found.
+// Enforces the acceptance criteria. Whole-book sets ([3.6] launch standard):
+// 3 difficulties × 5 questions on the type ladder, all 13 platform types
+// across the set, no generic filler explanations. Chapter-scoped sets keep
+// the legacy standard (10 questions; ≥4 distinct types; ≤2 of any type).
+// Both: full, consistent dual-encoding + type-specific meta integrity.
+// Exits non-zero if any issue is found.
 //
 // Usage:
 //   ... scripts/canon-quiz-validate.ts <book_id> [chapter_index]
@@ -12,8 +14,8 @@
 // ─────────────────────────────────────────────
 
 import {
-  getClient, validateQuizSet, DIFFS,
-  type QuizRow, type QuestionRow,
+  getClient, validateQuizSet, DIFFS, ladderAllowed, PLATFORM_TYPES,
+  type QuizRow, type QuestionRow, type ValidationIssue,
 } from './canon-lib'
 
 async function fetchQuizzes(client: ReturnType<typeof getClient>, bookId: string, chapterIndex?: number) {
@@ -36,11 +38,38 @@ async function fetchQuestions(client: ReturnType<typeof getClient>, quizIds: str
   return byQuiz
 }
 
+/** [3.6] Whole-book ladder conformance + 13-type coverage across the set. */
+function validateLadder(quizzes: QuizRow[], byQuiz: Map<string, QuestionRow[]>): ValidationIssue[] {
+  const issues: ValidationIssue[] = []
+  const typesSeen = new Set<string>()
+  for (const quiz of quizzes) {
+    const rows = [...(byQuiz.get(quiz.id) ?? [])].sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
+    rows.forEach((r, slot) => {
+      typesSeen.add(r.type)
+      const allowed = ladderAllowed(quiz.difficulty ?? '', slot)
+      if (!allowed.has(r.type)) {
+        issues.push({
+          quizId: quiz.id, questionId: r.id,
+          problem: `slot ${slot} type ${r.type} ∉ ladder {${[...allowed].join('|')}} for ${quiz.difficulty}`,
+        })
+      }
+    })
+  }
+  for (const t of PLATFORM_TYPES) {
+    if (!typesSeen.has(t)) issues.push({ quizId: '(set)', problem: `type ${t} missing from whole-book set` })
+  }
+  return issues
+}
+
 async function validateOne(client: ReturnType<typeof getClient>, bookId: string, chapterIndex?: number): Promise<number> {
   const quizzes = await fetchQuizzes(client, bookId, chapterIndex)
   const byQuiz = await fetchQuestions(client, quizzes.map((q) => q.id))
   const label = `${bookId}${chapterIndex == null ? ' (whole-book)' : ` · ch ${chapterIndex}`}`
-  const issues = validateQuizSet(quizzes, byQuiz)
+  // Whole-book sets follow the launch standard: 5 questions/quiz on the type
+  // ladder, all 13 platform types across the set. Chapter-scoped sets keep
+  // the legacy 10-question standard.
+  const issues = validateQuizSet(quizzes, byQuiz, chapterIndex == null ? 5 : 10)
+  if (chapterIndex == null) issues.push(...validateLadder(quizzes, byQuiz))
   if (issues.length === 0) {
     console.log(`  ✓ ${label} — ${quizzes.length} quizzes, all ${DIFFS.join('/')} valid`)
     return 0

@@ -40,7 +40,11 @@ export function useEntitlement(): EntitlementState {
 
       const active = data?.status === "active" || data?.status === "trialing"
       const tier: Tier =
-        active && (data?.tier === "solo" || data?.tier === "family")
+        active &&
+        (data?.tier === "solo" ||
+          data?.tier === "family" ||
+          data?.tier === "classroom" ||
+          data?.tier === "school")
           ? data.tier
           : "free"
 

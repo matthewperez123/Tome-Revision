@@ -4,7 +4,6 @@ import { planSetupSchema } from "@/lib/semester-plan/types"
 import { assembleCandidates } from "@/lib/semester-plan/catalog"
 import { generateSemesterPlan } from "@/lib/semester-plan/generate"
 import { materializePlan } from "@/lib/semester-plan/persist"
-import { hasActiveSchoolEntitlement } from "@/lib/entitlements/server"
 
 export const maxDuration = 120
 
@@ -27,16 +26,10 @@ export async function POST(request: Request) {
     .select("role")
     .eq("id", user.id)
     .single()
+  // Teachers are free forever — the teacher role IS the educator-tool gate.
+  // Usage is metered by Questions Available (2.6/2.7), not by plan tier.
   if (profile?.role !== "teacher") {
     return NextResponse.json({ error: "Only teachers can plan semesters" }, { status: 403 })
-  }
-
-  // The AI semester planner is a paid educator tool — gate behind School.
-  if (!(await hasActiveSchoolEntitlement(user.id))) {
-    return NextResponse.json(
-      { error: "The semester planner requires an active School plan." },
-      { status: 403 },
-    )
   }
 
   const parsed = planSetupSchema.safeParse(await request.json())

@@ -70,14 +70,32 @@ VERIFIED SCHEMA FACTS (do not re-derive):
   group_goals, group_notes, group_invites, group_schedule. Sweep any lingering imports/queries.
 - demo_requests: INSERT allowed for anon+authenticated; SELECT locked (service role only).
 - Book coverage: NEVER trust ingestion_status; use JOIN on chapters row counts.
-- Quiz data: 36 chapter-level quizzes, 297 book-level (chapter_index null), 99 books covered.
+- Quiz data: 3 × 5 with the type ladder (see docs/quiz-standard.md). 151 books have the full set as of 2026-09-18; full-canon backfill resumes via scripts/quizzes/rebalance-types.ts once API credits are topped up.
 
-BILLING MODEL (settled — do not relitigate):
-- Stripe SANDBOX. Solo = prod_UnOyR0U75npmXt ($9 mo / $90 yr, role stays reader).
-- Family = prod_UnOy09CqGKXxB4 ($18 mo / $150 yr, buyer's profiles.role → teacher).
-- School = per-teacher-seat, $120/yr PROVISIONAL, metadata.tier=school, seats grant teacher role
-  via school_seats invites. Billing writes profiles.role; the Virgil gate READS it. No separate flag.
-- Idempotency: insert event id into stripe_events first; skip if exists.
+BILLING MODEL (launch-week, settled — do not relitigate):
+- Annual-only. Teachers free forever (1 classroom · 30 students · 100 Questions/mo).
+  Classroom = $12/student/yr seat checkout. School = $12/student with $1,500 minimum
+  (→125 min seats) OR flat $1,800 ≤150 / $3,200 ≤300 students; sold by quote (/schools#quote),
+  invoice/PO allowed. Family = $99/yr (≤4 students), sold ONLY from /homeschool (ESA SKU).
+  Solo is SUNSET: grandfathered rows still resolve entitlement; never displayed or sold.
+- All numbers live in src/lib/billing/config.ts (seat $12, min 1, school min $1500/125,
+  flat tiers, family $99/4, Questions: free 100/mo, per-seat/mo classroom 60 school 90
+  family 60, accrual cap 3 months, topup 10,000 for $149, low-balance ratio 0.2).
+  Display facts: src/lib/billing/tiers.ts (getMarketingTiers/getFamilyTier/getTopupOffer).
+  Price-id env wiring: src/lib/billing/prices.ts — TOME_PRICE_STUDENT_SEAT_YEARLY (shared
+  classroom+school), TOME_PRICE_SCHOOL_FLAT_{150,300}_YEARLY, TOME_PRICE_FAMILY_YEARLY,
+  TOME_PRICE_QUESTIONS_TOPUP (one-time). Grandfathered env vars stay until subscriptions
+  has zero solo/legacy-family rows.
+- Questions Available: question_credit_pools + question_credit_ledger (migration
+  20260918010000). RPCs (SECURITY DEFINER, search_path=''): consume_question_credits
+  (raises insufficient_questions), refund_question_credits, grant_question_credits
+  (idempotent on stripe_event_id), ensure_question_pool, refresh_question_grants
+  (monthly cron; respects 3-month accrual cap). Server reads/UI via
+  src/lib/actions/credits.ts + questions-available-chip (teachers only; students never
+  see a balance).
+- School admin panel = /account/school (owner-only): seats purchased vs used, teacher
+  roster via school_seats invites. Seats grant teacher role; billing writes profiles.role,
+  gates READ it. Webhook idempotency: claim event id into stripe_events first; skip if exists.
 
 VIRGIL (teacher-only, settled):
 - Single dispatcher POST /api/virgil. 403 for any non-teacher BEFORE task dispatch.

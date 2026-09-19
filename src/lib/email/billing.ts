@@ -7,6 +7,7 @@ import { SubscriptionConfirmedEmail } from "./templates/subscription-confirmed"
 import { TrialEndingEmail } from "./templates/trial-ending"
 import { PaymentFailedEmail } from "./templates/payment-failed"
 import { SeatInviteEmail } from "./templates/seat-invite"
+import { SubscriptionCancelledEmail } from "./templates/subscription-cancelled"
 
 /**
  * Best-effort dispatchers for billing transactional emails, called from the
@@ -21,9 +22,10 @@ const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://usetome.app"
 const MANAGE_URL = `${APP_URL}/profile`
 
 const PLAN_LABELS: Record<PaidTier, string> = {
-  solo: "Tome Solo",
+  classroom: "Tome Classroom",
   family: "Tome Family",
   school: "Tome School",
+  solo: "Tome Solo", // grandfathered
 }
 
 export function planLabel(tier: PaidTier | string | null): string {
@@ -215,6 +217,34 @@ export async function sendPaymentFailedEmail(
   } catch (err) {
     console.error(
       "[billing-email] payment-failed dispatch failed:",
+      err instanceof Error ? err.message : err,
+    )
+  }
+}
+
+/** Cancellation confirmation — on customer.subscription.deleted. */
+export async function sendCancellationEmail(
+  admin: Admin,
+  userId: string,
+  opts: { tier: PaidTier | string | null },
+): Promise<void> {
+  try {
+    const r = await resolveRecipient(admin, userId)
+    if (!r) return
+    const label = planLabel(opts.tier)
+    await sendEmail({
+      to: r.email,
+      subject: `Your ${label} subscription has ended`,
+      react: SubscriptionCancelledEmail({
+        firstName: r.firstName,
+        planLabel: label,
+        pricingUrl: `${APP_URL}/pricing`,
+        recipient: r.email,
+      }),
+    })
+  } catch (err) {
+    console.error(
+      "[billing-email] cancellation dispatch failed:",
       err instanceof Error ? err.message : err,
     )
   }

@@ -6,6 +6,7 @@
 
 import type { QuizDifficulty } from "@/lib/book-progress"
 import type { Hint } from "@/lib/quiz-hints"
+import { gradeAnswer, meetsWordMinimum } from "@/lib/questions/grade"
 
 // ── Types ──────────────────────────────────────
 
@@ -23,6 +24,9 @@ export type QuestionType =
   | "reflection"
   | "identification"
   | "tf_with_reason"
+  | "multiple_select"
+  | "short_answer"
+  | "free_response"
 
 export type Question = {
   id: string
@@ -132,72 +136,28 @@ export type ReflectionGradeAction =
   | { type: "REFLECTION_FAILED"; questionId: string }
 
 // ── Answer Checking ────────────────────────────
-
-function norm(s: string): string {
-  return s.toLowerCase().trim().replace(/\s+/g, " ")
-}
+// The 16-type switch lives in src/lib/questions/grade.ts (the ONE grader).
+// This engine flattens the verdict to a boolean: full credit = correct.
+// Pending verdicts (reflection here — Virgil-graded async) are accepted when
+// the answer meets the minimum word threshold; the numeric grade lives on the
+// attempt, not on the question result.
 
 export function checkAnswer(question: Question, answer: string): boolean {
-  const q = question
-  const given = norm(answer)
-
-  switch (q.type) {
-    case "multiple_choice":
-    case "true_false":
-    case "passage_id":
-    case "theme_analysis":
-    case "vocabulary_in_context":
-    case "cross_reference":
-    case "close_reading":
-    case "identification":
-    case "tf_with_reason": {
-      // All option/exact-match types — including identification (the chosen
-      // option text) and tf_with_reason (the composite "<bool>|<reasonIndex>"
-      // string the renderer commits). Compared verbatim against correct_answer.
-      return given === norm(q.correct_answer)
-    }
-
-    case "fill_blank": {
-      const accepted = [q.correct_answer, ...(q.acceptedVariants ?? [])].map(norm)
-      return accepted.includes(given)
-    }
-
-    case "ordering": {
-      // `answer` is a JSON array of strings representing the user's order.
-      try {
-        const userOrder = (JSON.parse(answer) as string[]).map(norm)
-        const correctOrder = (q.correctOrder ?? []).map(norm)
-        if (userOrder.length !== correctOrder.length) return false
-        return userOrder.every((item, i) => item === correctOrder[i])
-      } catch {
-        return false
-      }
-    }
-
-    case "matching": {
-      // `answer` is a JSON object: { [left]: right }
-      try {
-        const given = JSON.parse(answer) as Record<string, string>
-        const correct = q.correctPairs ?? {}
-        const keys = Object.keys(correct)
-        if (keys.length === 0) return false
-        return keys.every((k) => norm(given[k] ?? "") === norm(correct[k]))
-      } catch {
-        return false
-      }
-    }
-
-    case "reflection": {
-      // Virgil-graded asynchronously; the engine accepts any response that
-      // meets the minimum word threshold.
-      const min = q.reflectionWordMin ?? 30
-      const wc = answer.trim().split(/\s+/).filter(Boolean).length
-      return wc >= min
-    }
-
-    default:
-      return false
+  const verdict = gradeAnswer(
+    {
+      type: question.type,
+      correctAnswer: question.correct_answer,
+      acceptedVariants: question.acceptedVariants,
+      correctOrder: question.correctOrder,
+      correctPairs: question.correctPairs,
+      reflectionWordMin: question.reflectionWordMin,
+    },
+    answer,
+  )
+  if (verdict.kind === "pending") {
+    return meetsWordMinimum(answer, question.reflectionWordMin)
   }
+  return verdict.credit === 1
 }
 
 // ── Reducer ────────────────────────────────────

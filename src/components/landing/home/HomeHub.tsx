@@ -30,13 +30,10 @@ import { BlurFade } from "@/components/ui/blur-fade"
 import { BookCard } from "@/components/tome/book-card"
 import { Marquee } from "@/components/ui/marquee"
 import { DEMO_LIBRARY_BOOKS } from "@/lib/demo/data"
-import { DemoEconomyProvider } from "@/components/demo/DemoEconomyProvider"
-import { QuestionCard } from "@/components/trials/QuestionCard"
-import { DEMO_TRIAL_QUESTIONS } from "@/lib/trials/demo-questions"
-import { TRIAL_REGISTRY } from "@/lib/trials/registry"
+import { PlatformQuestionDemoInner } from "@/components/landing/demo/PlatformQuestionDemo"
 import { DEMO_PASSAGE, DEMO_EXCHANGES, streamScriptedReply } from "@/lib/demo/virgil"
 import { AvatarCircles } from "@/components/ui/avatar-circles"
-import { getReaderPlans, getEducatorPlans, READER_TRIAL_COPY } from "@/lib/marketing/plans"
+import { getMarketingTiers } from "@/lib/billing/tiers"
 import {
   formatBookCount,
   formatTraditionCount,
@@ -190,65 +187,19 @@ function DiscoverCanon() {
 
 // ── 3 · Answer Quizzes (condensed Trial) ────────────────────────────
 
-const DEMO_TYPES = Array.from(new Set(DEMO_TRIAL_QUESTIONS.map((q) => q.type)))
-
 function AnswerQuizzes() {
-  // Mirrors the live /demo Trial system (TrialDemo): the REAL <QuestionCard> +
-  // registry + a multi-question typed pool in a DemoEconomyProvider sandbox,
-  // with a registry-driven type switcher so EVERY question type is represented.
-  const [i, setI] = useState(0)
-  const total = DEMO_TRIAL_QUESTIONS.length
-  const question = DEMO_TRIAL_QUESTIONS[i]
-
+  // [3.7] The THIRTEEN live platform question types — the real renderers +
+  // the real deterministic grader the reader's chapter Trials run on, with a
+  // type-switcher chip per type so every one is visible and answerable.
   return (
     <SectionShell
       eyebrow="Trials"
-      title="Every chapter ends in a Trial."
-      subline="Comprehension, vocabulary, evidence, and recall: six question types, each earning Wisdom and keeping your Flame alive. Every one is live; try them all."
+      title="Thirteen ways to be asked. Every one is live."
+      subline="Every chapter ends in a Trial: comprehension, close reading, matching, ordering, cross-reference, and a Tome Assistant-graded reflection — thirteen question types, each earning Wisdom. Try them all."
       bg="muted"
       cta={{ label: "See every Trial type", href: "/readers" }}
     >
-      {/* Type switcher — one chip per Trial type, icon + label from the shared
-          registry, so every type is visible and reachable (mirrors /demo). */}
-      <div className="mb-5 flex flex-wrap justify-center gap-1.5" role="tablist" aria-label="Trial question types">
-        {DEMO_TYPES.map((type) => {
-          const entry = TRIAL_REGISTRY[type]
-          const Icon = entry.icon
-          const activeTab = question.type === type
-          const idx = DEMO_TRIAL_QUESTIONS.findIndex((q) => q.type === type)
-          return (
-            <button
-              key={type}
-              type="button"
-              role="tab"
-              aria-selected={activeTab}
-              onClick={() => setI(idx)}
-              className={cn(
-                "flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
-                activeTab
-                  ? "border-primary bg-primary text-primary-foreground"
-                  : "border-border bg-card text-muted-foreground hover:border-primary/40 hover:text-foreground",
-              )}
-            >
-              <Icon className="size-3.5 shrink-0" />
-              {entry.label}
-            </button>
-          )
-        })}
-      </div>
-
-      <div className="mx-auto max-w-md overflow-hidden rounded-xl border border-border bg-card">
-        <div className="h-[440px]">
-          <DemoEconomyProvider>
-            <QuestionCard
-              key={question.id}
-              question={question}
-              onNext={() => setI((n) => (n + 1) % total)}
-              sound={false}
-            />
-          </DemoEconomyProvider>
-        </div>
-      </div>
+      <PlatformQuestionDemoInner />
     </SectionShell>
   )
 }
@@ -505,21 +456,13 @@ function LearnAsStudent() {
 // ── 8 · Pricing teaser ──────────────────────────────────────────────
 
 function PricingTeaser() {
-  const stats = useCatalogStats()
-  const readerPlans = getReaderPlans(stats)
-  const educatorPlans = getEducatorPlans()
-  const solo = readerPlans.find((p) => p.id === "solo")
-  const family = readerPlans.find((p) => p.id === "family")
-  const school = educatorPlans.find((p) => p.id === "school")
-  const cards = [solo, family, school].filter(
-    (p): p is NonNullable<typeof p> => Boolean(p),
-  )
+  const cards = getMarketingTiers()
 
   return (
     <SectionShell
       eyebrow="Pricing"
-      title="Start free. Upgrade when you're ready."
-      subline={`Solo and Family for readers, plans for schools and districts. ${READER_TRIAL_COPY}`}
+      title="Free for teachers. Priced per student."
+      subline="Teachers use every tool free. Classrooms pay per student seat, schools get volume pricing, and homeschool families have the Family plan."
       bg="background"
       cta={{ label: "See full pricing", href: "/pricing" }}
     >
@@ -527,7 +470,7 @@ function PricingTeaser() {
       <div className="mt-8 grid gap-4 sm:grid-cols-3">
         {cards.map((plan) => (
           <div
-            key={plan.id}
+            key={plan.tier}
             className={
               "flex flex-col rounded-xl border bg-card p-5 " +
               (plan.featured
@@ -543,14 +486,12 @@ function PricingTeaser() {
             <h3 className="font-[var(--font-display)] text-lg font-bold text-foreground">
               {plan.name}
             </h3>
-            {plan.monthly && (
-              <p className="mt-1 text-sm text-muted-foreground">
-                <span className="text-2xl font-bold text-foreground">
-                  {plan.monthly.price}
-                </span>{" "}
-                {plan.monthly.cadence}
-              </p>
-            )}
+            <p className="mt-1 text-sm text-muted-foreground">
+              <span className="text-2xl font-bold text-foreground">
+                {plan.price}
+              </span>{" "}
+              {plan.cadence}
+            </p>
             <ul className="mt-4 flex flex-col gap-2">
               {plan.features.slice(0, 4).map((f) => (
                 <li
@@ -573,7 +514,7 @@ function PricingTeaser() {
 
 const FAQ_POINTS = [
   "Reading and getting started",
-  "Plans, billing, and trials",
+  "Plans, billing, and student seats",
   "Classroom and school use",
   "Students, privacy, and COPPA",
   "Homeschool and ESA purchasing",

@@ -9,8 +9,16 @@
  *
  * It exercises:
  *   Solo:   free → trialing → active → cancel_at_period_end → canceled → past_due
- *   Family: active (seats n/a)               [smoke]
+ *           (grandfathered; active Solo must still read beyond-sampler books)
+ *   Family: active (student allowance 4)     [smoke]
  *   School: admin + covered teacher, seats, then cancel reverts both  [smoke]
+ * Launch-model (Gate 2) scenarios:
+ *   Free teacher:  educator tools free; 30-student / 1-classroom allowance
+ *   Classroom:     seats:25 → allowance 25; the 26th join is rejected;
+ *                  cancel_at_period_end retains; canceled reverts to free
+ *   School pooled: seats:150 shared across covered teachers; a student in two
+ *                  covered classrooms counts ONCE; flat150 SKU → allowance 150
+ *   Legacy school: per-teacher holder still resolves as a teacher
  *
  * Requires (from .env.local): NEXT_PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY.
  * Creates ephemeral auth users (billing-verify+…@usetome.app) and DELETES every
@@ -30,9 +38,19 @@ import { randomUUID } from "node:crypto"
 import { createClient, type SupabaseClient } from "@supabase/supabase-js"
 import {
   getEntitlement,
+  hasEducatorTools,
+  getSeatAllowance,
+  getClassroomAllowance,
+  canUserReadBook,
   type Entitlement,
 } from "@/lib/entitlements/server"
-import { FREE_BOOK_LIMIT } from "@/lib/stripe/free-books"
+import { FREE_BOOK_LIMIT, isFreeSample } from "@/lib/stripe/free-books"
+import {
+  FREE_TEACHER_CLASSROOM_LIMIT,
+  FREE_TEACHER_STUDENT_LIMIT,
+  FAMILY_STUDENT_LIMIT,
+  SCHOOL_MIN_SEATS,
+} from "@/lib/billing/config"
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL
 const SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY
@@ -145,21 +163,71 @@ async function addSchoolSeat(
   role: "admin" | "teacher",
 ) {
   const { error } = await admin.from("school_seats").upsert(
-    { subscription_user_id: ownerId, teacher_id: teacherId, seat_role: role },
+    {
+      subscription_user_id: ownerId,
+      teacher_id: teacherId,
+      seat_role: role,
+      status: "active", // getSeatAllowance only counts active seats
+    },
     { onConflict: "subscription_user_id,teacher_id", ignoreDuplicates: false },
   )
   if (error) throw new Error(`school_seats upsert failed: ${error.message}`)
 }
 
+/** handle_new_user auto-creates the profiles row — UPDATE, never INSERT. */
+async function setProfileRole(
+  userId: string,
+  role: "reader" | "teacher" | "student",
+) {
+  const { error } = await admin.from("profiles").update({ role }).eq("id", userId)
+  if (error) throw new Error(`profiles role update failed: ${error.message}`)
+}
+
+const createdClassroomIds: string[] = []
+
+/** Admin-inserted classroom mirroring createClassroom (owner member row incl.). */
+async function makeClassroom(teacherId: string, name: string): Promise<string> {
+  const joinCode = randomUUID().replace(/-/g, "").slice(0, 6).toUpperCase()
+  const { data, error } = await admin
+    .from("classrooms")
+    .insert({ name, teacher_id: teacherId, join_code: joinCode })
+    .select("id")
+    .single()
+  if (error || !data) {
+    throw new Error(`classrooms insert failed: ${error?.message ?? "no row"}`)
+  }
+  createdClassroomIds.push(data.id as string)
+  const { error: memberErr } = await admin
+    .from("classroom_members")
+    .insert({ classroom_id: data.id, student_id: teacherId, role: "owner" })
+  if (memberErr) {
+    throw new Error(`owner member insert failed: ${memberErr.message}`)
+  }
+  return data.id as string
+}
+
+async function enrollStudent(classroomId: string, studentId: string) {
+  const { error } = await admin
+    .from("classroom_members")
+    .insert({ classroom_id: classroomId, student_id: studentId, role: "student" })
+  if (error) throw new Error(`student enroll failed: ${error.message}`)
+}
+
 async function cleanup() {
   console.log("\nCleaning up fixtures…")
+  for (const id of createdClassroomIds) {
+    await admin.from("classroom_members").delete().eq("classroom_id", id)
+    await admin.from("classrooms").delete().eq("id", id)
+  }
   for (const id of createdUserIds) {
     await admin.from("school_seats").delete().eq("teacher_id", id)
     await admin.from("school_seats").delete().eq("subscription_user_id", id)
     await admin.from("subscriptions").delete().eq("user_id", id)
     await admin.auth.admin.deleteUser(id).catch(() => {})
   }
-  console.log(`  removed ${createdUserIds.length} ephemeral users + their rows`)
+  console.log(
+    `  removed ${createdUserIds.length} ephemeral users + ${createdClassroomIds.length} classrooms + their rows`,
+  )
 }
 
 // ── scenarios ──────────────────────────────────────────────────────────
@@ -192,6 +260,10 @@ async function run() {
     seats: null, schoolRole: null, fullLibrary: true, unlimitedVirgil: true,
     advancedTrials: true, teacherTools: false,
   })
+  // Grandfathered rule: an active legacy Solo must keep reading ALL books.
+  const paidBook = "wuthering-heights"
+  check("precondition: test book is beyond the free sampler", isFreeSample(paidBook), false)
+  check("active Solo reads a beyond-sampler book", await canUserReadBook(solo, paidBook), true)
 
   // 4. Cancel AT period end — access is RETAINED until the period actually ends
   //    (status is still active; only cancel_at_period_end flips).
@@ -229,6 +301,128 @@ async function run() {
     seats: null, schoolRole: null, fullLibrary: true, unlimitedVirgil: true,
     advancedTrials: true, teacherTools: false,
   })
+  const familySeat = await getSeatAllowance(family)
+  check("Family student allowance", familySeat.allowance, FAMILY_STUDENT_LIMIT)
+  check("Family classroom allowance is uncapped", await getClassroomAllowance(family), null)
+
+  // ===== FREE TEACHER (teachers are free forever) =====
+  console.log("\nFREE TEACHER")
+  const freeTeacher = await makeUser("free-teacher")
+  await setProfileRole(freeTeacher, "teacher")
+  check("free teacher has educator tools", await hasEducatorTools(freeTeacher), true)
+  const freeSeat = await getSeatAllowance(freeTeacher)
+  check("free teacher plan tier", freeSeat.tier, "free_teacher")
+  check("free teacher student allowance", freeSeat.allowance, FREE_TEACHER_STUDENT_LIMIT)
+  check("free teacher seats used (none enrolled)", freeSeat.used, 0)
+  check("free teacher payerId", freeSeat.payerId, null)
+  check(
+    "free teacher classroom allowance",
+    await getClassroomAllowance(freeTeacher),
+    FREE_TEACHER_CLASSROOM_LIMIT,
+  )
+
+  // ===== CLASSROOM (per-student seats) =====
+  console.log("\nCLASSROOM (per-student seats, seats:25)")
+  const clsTeacher = await makeUser("classroom-teacher")
+  await setProfileRole(clsTeacher, "teacher")
+  await setSubscription(clsTeacher, { tier: "classroom", status: "active", seats: 25 })
+
+  expectEntitlement("active Classroom unlocks full library", await getEntitlement(clsTeacher), {
+    tier: "classroom", status: "active", isActive: true, bookLimit: null,
+    seats: null, schoolRole: null, fullLibrary: true, unlimitedVirgil: true,
+    advancedTrials: true, teacherTools: false,
+  })
+  check("classroom teacher keeps educator tools", await hasEducatorTools(clsTeacher), true)
+  check("classroom plan lifts the classroom cap", await getClassroomAllowance(clsTeacher), null)
+
+  const clsRoom = await makeClassroom(clsTeacher, "Billing Verify — Classroom 25")
+  const clsStudents: string[] = []
+  for (let i = 0; i < 25; i++) {
+    const sid = await makeUser(`cls-student-${i}`)
+    await setProfileRole(sid, "student")
+    clsStudents.push(sid)
+  }
+  for (const sid of clsStudents.slice(0, 24)) await enrollStudent(clsRoom, sid)
+
+  let clsSeat = await getSeatAllowance(clsTeacher)
+  check("classroom allowance = purchased seats", clsSeat.allowance, 25)
+  check("24 students enrolled → used 24", clsSeat.used, 24)
+  check("25th join allowed (used < allowance)", clsSeat.used >= clsSeat.allowance, false)
+
+  await enrollStudent(clsRoom, clsStudents[24])
+  clsSeat = await getSeatAllowance(clsTeacher)
+  check("25 students enrolled → used 25", clsSeat.used, 25)
+  check("26th join rejected (used >= allowance)", clsSeat.used >= clsSeat.allowance, true)
+  check("classroom payerId = teacher", clsSeat.payerId, clsTeacher)
+
+  // Cancel at period end: status stays active → seats retained.
+  await setSubscription(clsTeacher, {
+    tier: "classroom", status: "active", seats: 25, cancel_at_period_end: true,
+  })
+  clsSeat = await getSeatAllowance(clsTeacher)
+  check("cancel-at-period-end retains 25-seat allowance", clsSeat.allowance, 25)
+
+  // Period ends → canceled → reverts to free-teacher allowances.
+  await setSubscription(clsTeacher, { tier: "classroom", status: "canceled", seats: 25 })
+  clsSeat = await getSeatAllowance(clsTeacher)
+  check("canceled Classroom reverts to free-teacher tier", clsSeat.tier, "free_teacher")
+  check("canceled Classroom reverts to free student allowance", clsSeat.allowance, FREE_TEACHER_STUDENT_LIMIT)
+  check(
+    "canceled Classroom reverts to 1-classroom allowance",
+    await getClassroomAllowance(clsTeacher),
+    FREE_TEACHER_CLASSROOM_LIMIT,
+  )
+  check("canceled Classroom teacher keeps educator tools", await hasEducatorTools(clsTeacher), true)
+
+  // ===== SCHOOL pooled seats (seats:150, two covered teachers) =====
+  console.log("\nSCHOOL pooled seats (seats:150, shared usage)")
+  const poolAdmin = await makeUser("school-pool-admin")
+  const poolTeacher = await makeUser("school-pool-teacher")
+  await setProfileRole(poolAdmin, "teacher")
+  await setProfileRole(poolTeacher, "teacher")
+  await setSubscription(poolAdmin, { tier: "school", status: "active", seats: 150 })
+  await addSchoolSeat(poolAdmin, poolAdmin, "admin")
+  await addSchoolSeat(poolAdmin, poolTeacher, "teacher")
+
+  const roomA = await makeClassroom(poolAdmin, "Billing Verify — School Room A")
+  const roomB = await makeClassroom(poolTeacher, "Billing Verify — School Room B")
+  const s1 = await makeUser("school-student-1")
+  const s2 = await makeUser("school-student-2")
+  const s3 = await makeUser("school-student-3")
+  for (const sid of [s1, s2, s3]) await setProfileRole(sid, "student")
+  await enrollStudent(roomA, s1)
+  await enrollStudent(roomA, s3)
+  await enrollStudent(roomB, s2)
+  await enrollStudent(roomB, s3) // s3 is in BOTH covered classrooms
+
+  const adminSeat = await getSeatAllowance(poolAdmin)
+  check("pooled admin allowance = 150", adminSeat.allowance, 150)
+  check("pooled usage counts a shared student ONCE (3, not 4)", adminSeat.used, 3)
+  check("pooled admin payerId = admin", adminSeat.payerId, poolAdmin)
+  const covSeat = await getSeatAllowance(poolTeacher)
+  check("covered teacher shares the 150 allowance", covSeat.allowance, 150)
+  check("covered teacher sees the same pooled usage", covSeat.used, 3)
+  check("covered teacher payerId = admin", covSeat.payerId, poolAdmin)
+
+  // Flat 150 SKU: the webhook writes seats = maxStudents for flat prices.
+  console.log("\nSCHOOL flat150 SKU")
+  const flatAdmin = await makeUser("school-flat150")
+  await setProfileRole(flatAdmin, "teacher")
+  await setSubscription(flatAdmin, { tier: "school", status: "active", seats: 150 })
+  await addSchoolSeat(flatAdmin, flatAdmin, "admin")
+  const flatSeat = await getSeatAllowance(flatAdmin)
+  check("flat150 allowance = 150", flatSeat.allowance, 150)
+
+  // ===== LEGACY SCHOOL (per-teacher, grandfathered) =====
+  console.log("\nLEGACY SCHOOL (per-teacher, grandfathered)")
+  const legacy = await makeUser("legacy-school")
+  await setProfileRole(legacy, "teacher")
+  await setSubscription(legacy, { tier: "school", status: "active" }) // no seats col on legacy rows
+  check("legacy school holder is still a teacher", await hasEducatorTools(legacy), true)
+  const legacyEnt = await getEntitlement(legacy)
+  check("legacy school holder resolves school tier", legacyEnt.tier, "school")
+  const legacySeat = await getSeatAllowance(legacy)
+  check("legacy school seatless row falls back to SCHOOL_MIN_SEATS", legacySeat.allowance, SCHOOL_MIN_SEATS)
 
   // ===== SCHOOL smoke (admin + covered teacher) =====
   console.log("\nSCHOOL smoke")

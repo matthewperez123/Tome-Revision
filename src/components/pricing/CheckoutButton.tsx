@@ -3,13 +3,11 @@
 import { useState } from "react"
 import { Loader2 } from "lucide-react"
 import { toast } from "sonner"
-import type { BillingPeriod } from "@/lib/marketing/plans"
-import type { PaidTier } from "@/lib/stripe/plans"
+import type { PurchasableTier } from "@/lib/billing/tiers"
 
 interface CheckoutButtonProps {
-  tier: PaidTier
-  period?: BillingPeriod
-  /** Teacher seats for the School plan (line-item quantity). Ignored otherwise. */
+  tier: PurchasableTier
+  /** Student seats (line-item quantity) for classroom/school. */
   seats?: number
   className?: string
   children: React.ReactNode
@@ -17,13 +15,12 @@ interface CheckoutButtonProps {
 
 /**
  * Posts to /api/stripe/checkout, then redirects the browser to the
- * Stripe-hosted checkout URL. Sends tier + period (the server resolves the
- * Stripe price id from env, so price ids never ship to the client); the School
- * CTA also sends `seats`. Shows inline loading + surfaces errors as a toast.
+ * Stripe-hosted checkout URL. Sends tier + seats (the server resolves the
+ * Stripe price id from env, so price ids never ship to the client).
+ * All billing is annual. Shows inline loading + surfaces errors as a toast.
  */
 export function CheckoutButton({
   tier,
-  period = "monthly",
   seats,
   className,
   children,
@@ -36,12 +33,14 @@ export function CheckoutButton({
       const res = await fetch("/api/stripe/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ tier, period, seats }),
+        body: JSON.stringify({ tier, seats }),
       })
       // Not signed in: don't dead-end at a toast. Send them to sign in and carry
       // the plan intent so they land back on pricing to resume checkout.
       if (res.status === 401) {
-        const resume = `/pricing?plan=${tier}`
+        // Family is sold only from /homeschool; everything else from /pricing.
+        const resume =
+          tier === "family" ? "/homeschool?plan=family" : `/pricing?plan=${tier}`
         window.location.href = `/login?redirect=${encodeURIComponent(resume)}`
         return
       }

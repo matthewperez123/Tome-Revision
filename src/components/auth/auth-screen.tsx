@@ -38,7 +38,8 @@ export function AuthScreen({ initialMode }: { initialMode: AuthMode }) {
   // Intent carried in from a CTA / invite. A paid reader plan resumes at
   // checkout after sign-up; an explicit same-origin ?redirect= always wins.
   const plan = params.get("plan")
-  const wantsCheckout = plan === "solo" || plan === "family"
+  // Solo is sunset (grandfathered only) — Family is the only reader plan sold.
+  const wantsCheckout = plan === "family"
   const redirectTarget = safeRedirectTarget(params.get("redirect"))
 
   const [name, setName] = useState("")
@@ -103,7 +104,7 @@ export function AuthScreen({ initialMode }: { initialMode: AuthMode }) {
     }
 
     router.push(
-      redirectTarget ?? (wantsCheckout ? `/pricing?plan=${plan}` : "/dashboard"),
+      redirectTarget ?? (wantsCheckout ? "/homeschool?plan=family" : "/dashboard"),
     )
     router.refresh()
   }

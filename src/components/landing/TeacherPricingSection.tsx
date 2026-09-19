@@ -1,17 +1,13 @@
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { BlurFade } from "@/components/ui/blur-fade"
-import {
-  EDUCATOR_FINE_PRINT_DEV,
-  EDUCATOR_FINE_PRINT_FINAL,
-  SCHOOL_PRICING_IS_FINAL,
-  educatorPlansForPeriod,
-} from "@/lib/marketing/plans"
+import { getMarketingTiers } from "@/lib/billing/tiers"
 import { PricingCard } from "./PricingCard"
 
-// Teaser only — full plans live on /pricing. Numbers sourced from lib/marketing/plans.
+// Teaser only — seat checkout and the full breakdown live on /pricing.
+// Numbers are sourced from lib/billing/tiers so they never drift.
 export function TeacherPricingSection() {
-  const plans = educatorPlansForPeriod("monthly")
+  const plans = getMarketingTiers()
 
   return (
     <section className="bg-muted py-20 px-6 md:px-12">
@@ -22,42 +18,38 @@ export function TeacherPricingSection() {
               Bring Tome to your classroom
             </h2>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-lg mx-auto">
-              Free for individual teachers. Volume tiers for departments and districts.
+              Free for teachers. Per-student seats for classrooms and schools.
             </p>
           </div>
         </BlurFade>
 
         <BlurFade delay={0.2} inView>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-            {plans.map((plan) => {
-              const pricing = plan.monthly!
-              return (
-                <PricingCard
-                  key={plan.id}
-                  tier={plan.name}
-                  price={pricing.price}
-                  cadence={pricing.cadence}
-                  description={plan.description}
-                  features={plan.features}
-                  ctaLabel={plan.ctaLabel}
-                  ctaHref={plan.ctaHref}
-                  featured={plan.featured}
-                  badge={plan.badge}
-                />
-              )
-            })}
+            {plans.map((plan) => (
+              <PricingCard
+                key={plan.tier}
+                tier={plan.name}
+                price={plan.price}
+                cadence={plan.cadence}
+                description={plan.blurb}
+                features={plan.features}
+                ctaLabel={plan.ctaLabel}
+                ctaHref={plan.seatCheckout ? "/pricing" : plan.ctaHref}
+                featured={plan.featured}
+                badge={plan.badge}
+              />
+            ))}
           </div>
         </BlurFade>
 
         <BlurFade delay={0.3} inView>
           <div className="mt-8 text-center">
             <p className="text-xs text-muted-foreground">
-              {SCHOOL_PRICING_IS_FINAL
-                ? EDUCATOR_FINE_PRINT_FINAL
-                : EDUCATOR_FINE_PRINT_DEV}
+              Prices in USD, billed annually, cancel any time. Schools may pay
+              by invoice or purchase order.
             </p>
             <Link
-              href="/pricing?for=educators"
+              href="/pricing"
               className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors hover:opacity-80"
             >
               Compare all plans <ArrowRight className="size-4" />

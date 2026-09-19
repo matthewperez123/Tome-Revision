@@ -3,6 +3,13 @@ import { createClient } from "@/lib/supabase/server"
 import { generateQuizRequestSchema } from "@/lib/teacher-quiz-types"
 import { generateQuizQuestions } from "@/lib/teacher-quiz/generate"
 import { prepareScope, persistDraftQuiz } from "@/lib/teacher-quiz/draft-service"
+import { CAP_MESSAGE, isOverTaskCap, recordTaskEvent } from "@/lib/virgil/task-config"
+import {
+  INSUFFICIENT_QUESTIONS_MESSAGE,
+  findSpendablePool,
+  isInsufficientQuestions,
+  withQuestionCredits,
+} from "@/lib/credits/consume"
 
 export const maxDuration = 60
 
@@ -41,6 +48,11 @@ export async function POST(request: Request) {
   }
   const req = parsed.data
 
+  // Daily task cap (shared with the /api/virgil teacher_quiz task).
+  if (await isOverTaskCap(user.id, "teacher_quiz")) {
+    return NextResponse.json({ error: "cap_exceeded", message: CAP_MESSAGE }, { status: 429 })
+  }
+
   // Grounding: resolve book + the selected (possibly out-of-order) chapter scope.
   const scope = await prepareScope(supabase, req)
   if (scope.error) {
@@ -48,15 +60,33 @@ export async function POST(request: Request) {
   }
   const { book, rows, passage } = scope.data
 
+  // Questions Available: one credit per question generated (2.7).
+  const questionCost = req.single ? 1 : req.totalCount
+  const poolId = await findSpendablePool(user.id, questionCost)
+  if (!poolId) {
+    return NextResponse.json(
+      { error: "insufficient_questions", message: INSUFFICIENT_QUESTIONS_MESSAGE },
+      { status: 402 },
+    )
+  }
+
   let result
   try {
-    result = await generateQuizQuestions({
-      passage,
-      bookTitle: book.title,
-      bookAuthor: book.author,
-      req,
-    })
+    result = await withQuestionCredits(poolId, questionCost, { book_id: req.bookId }, () =>
+      generateQuizQuestions({
+        passage,
+        bookTitle: book.title,
+        bookAuthor: book.author,
+        req,
+      }),
+    )
   } catch (err) {
+    if (isInsufficientQuestions(err)) {
+      return NextResponse.json(
+        { error: "insufficient_questions", message: INSUFFICIENT_QUESTIONS_MESSAGE },
+        { status: 402 },
+      )
+    }
     const message = err instanceof Error ? err.message : "Generation failed"
     const status = message.includes("ANTHROPIC_API_KEY") ? 503 : 502
     console.error("Virgil quiz generation failed:", message)
@@ -86,6 +116,10 @@ export async function POST(request: Request) {
     book,
     result.model,
   )
+  if (persisted.status === 200) {
+    const quizId = (persisted.json as { draft?: { id?: string } }).draft?.id ?? null
+    await recordTaskEvent(user.id, "teacher_quiz", quizId)
+  }
   return NextResponse.json(
     { ...persisted.json, model: result.model },
     { status: persisted.status },

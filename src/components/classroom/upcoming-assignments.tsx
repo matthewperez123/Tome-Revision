@@ -5,6 +5,7 @@ import Link from "next/link"
 import { BookOpen, Brain, MessageCircle, PenTool, Highlighter, Clock, ChevronRight } from "lucide-react"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { createClient } from "@/lib/supabase/client"
+import { assignmentReaderHref } from "@/lib/assignments/links"
 import { useAuth } from "@/hooks/use-auth"
 
 interface UpcomingAssignment {
@@ -14,6 +15,8 @@ interface UpcomingAssignment {
   due_date: string
   classroom_id: string
   classroom_name: string
+  book_id: string | null
+  chapter_range_start: number | null
   book_title: string | null
   status: string
 }
@@ -76,7 +79,7 @@ export function UpcomingAssignments() {
       // Get active assignments from those classrooms, ordered by due date
       const { data: assignmentData } = await supabase
         .from("assignments")
-        .select("id, title, type, due_date, classroom_id, book_id, books(title)")
+        .select("id, title, type, due_date, classroom_id, book_id, chapter_range_start, books(title)")
         .in("classroom_id", classroomIds)
         .eq("status", "active")
         .gte("due_date", new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()) // include 1 week overdue
@@ -103,6 +106,8 @@ export function UpcomingAssignments() {
             due_date: a.due_date,
             classroom_id: a.classroom_id,
             classroom_name: classroomNames[a.classroom_id] ?? "",
+            book_id: a.book_id,
+            chapter_range_start: a.chapter_range_start,
             book_title: ((a as any).books as { title: string } | null)?.title ?? null,
             status: submissionMap[a.id] ?? "not_started",
           }))
@@ -139,7 +144,7 @@ export function UpcomingAssignments() {
             return (
               <Link
                 key={assignment.id}
-                href={`/classroom/${assignment.classroom_id}/assignment/${assignment.id}`}
+                href={assignmentReaderHref(assignment)}
                 className="flex items-center gap-3 rounded-xl border border-transparent p-2.5 transition-colors hover:border-border hover:bg-muted/50"
               >
                 <div className={`flex size-10 items-center justify-center rounded-lg bg-muted ${TYPE_COLORS[assignment.type]}`}>

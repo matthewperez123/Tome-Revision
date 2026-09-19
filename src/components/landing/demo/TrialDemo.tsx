@@ -8,9 +8,15 @@ import { QuestionCard } from "@/components/trials/QuestionCard"
 import { DEMO_TRIAL_QUESTIONS } from "@/lib/trials/demo-questions"
 import { TRIAL_REGISTRY } from "@/lib/trials/registry"
 
+import { PlatformQuestionDemoInner } from "./PlatformQuestionDemo"
+
 /**
- * R3 — the Trial demo. Mounts the REAL <QuestionCard> + registry + the six
- * net-new typed questions, inside a DemoEconomyProvider sandbox.
+ * [3.7] The Trial demo, two movements:
+ * 1. The THIRTEEN platform question types, live — the real renderers +
+ *    deterministic grader the reader's chapter Trials run on.
+ * 2. "For verse and drama" — the six line-level Trial types (Hamlet and the
+ *    epics), mounted through the REAL <QuestionCard> + registry inside a
+ *    DemoEconomyProvider sandbox.
  */
 const DEMO_TYPES = Array.from(new Set(DEMO_TRIAL_QUESTIONS.map((q) => q.type)))
 
@@ -65,17 +71,28 @@ function TrialInner() {
 
 export function TrialDemo() {
   return (
-    <TeacherShowcaseShell
-      heading="Every chapter is a Trial."
-      subcopy="Earn Wisdom by completing Trials at the end of each chapter: comprehension, vocabulary, critical thinking, and a Tome Assistant-graded reflection. Keep your Flame alive with daily reading."
-      layout="mockup-left"
-      bgClass="bg-background"
-    >
-      <DemoEconomyProvider>
-        <DemoFrame ariaLabel="Interactive Trial demonstration" hint="Answer it">
-          <TrialInner />
-        </DemoFrame>
-      </DemoEconomyProvider>
-    </TeacherShowcaseShell>
+    <>
+      <TeacherShowcaseShell
+        heading="Thirteen ways to be asked. Every one is live."
+        subcopy="Every chapter ends in a Trial built from thirteen question types — comprehension, close reading, matching, ordering, cross-reference, and a Tome Assistant-graded reflection. These are the real renderers and the real grader; try each one."
+        layout="mockup-left"
+        bgClass="bg-background"
+      >
+        <PlatformQuestionDemoInner />
+      </TeacherShowcaseShell>
+
+      <TeacherShowcaseShell
+        heading="For verse and drama"
+        subcopy="Poetry and plays get their own six Trial types — restore the line, find the evidence, scan the meter — built for Hamlet, the epics, and everything written in lines rather than paragraphs."
+        layout="mockup-left"
+        bgClass="bg-muted/30"
+      >
+        <DemoEconomyProvider>
+          <DemoFrame ariaLabel="Interactive verse and drama Trial demonstration" hint="Answer it">
+            <TrialInner />
+          </DemoFrame>
+        </DemoEconomyProvider>
+      </TeacherShowcaseShell>
+    </>
   )
 }

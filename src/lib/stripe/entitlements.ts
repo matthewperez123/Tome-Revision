@@ -12,14 +12,14 @@
 import { isFreeSample, FREE_SAMPLE_BOOK_IDS } from "@/lib/stripe/free-books"
 import type { UserRole } from "@/lib/navigation"
 
-export type Tier = "free" | "solo" | "family" | "school"
+export type Tier = "free" | "solo" | "family" | "classroom" | "school"
 
 /** The free sampler ids (explicit foundational-20; see `free-books.ts`). */
 export const FREE_BOOK_IDS: readonly string[] = FREE_SAMPLE_BOOK_IDS
 
-/** Whether `tier` is a paid reader plan. */
+/** Whether `tier` is a paid plan. */
 export function isPaid(tier: Tier): boolean {
-  return tier === "solo" || tier === "family" || tier === "school"
+  return tier !== "free"
 }
 
 /**

@@ -1,45 +1,11 @@
 import "server-only"
 import type Stripe from "stripe"
-import {
-  PLAN_PRICE_ENV,
-  type BillingPeriod,
-} from "@/lib/marketing/plans"
-import type { PaidTier } from "@/lib/stripe/plans"
 
 /**
- * The ENV VAR that holds each tier + billing period's Stripe Price ID is owned
- * by `@/lib/marketing/plans` (`PLAN_PRICE_ENV`) — the single source of truth
- * for plan↔price wiring. Price IDs are environment-specific (test vs live) and
- * MUST NOT be hardcoded anywhere; set the vars per environment:
- *   - local + Vercel Preview -> TEST-mode price IDs
- *   - Vercel Production       -> LIVE-mode price IDs
- * See `.env.example` for the full list.
+ * Stripe mode guards. Price-id ↔ tier wiring lives in
+ * `src/lib/billing/prices.ts`; this module only verifies that a price and
+ * the secret key agree on test vs live mode before checkout starts.
  */
-
-/** Resolve the Stripe Price ID for a tier + period from the environment. */
-export function getPriceId(
-  tier: PaidTier,
-  period: BillingPeriod,
-): string | null {
-  return process.env[PLAN_PRICE_ENV[tier][period]]?.trim() || null
-}
-
-/**
- * Reverse lookup: given a Stripe Price ID (e.g. from a subscription line item),
- * return the paid tier it belongs to in THIS environment, or null. Lets the
- * webhook derive `tier` authoritatively from the price even when event metadata
- * is missing.
- */
-export function tierForPriceId(priceId: string): PaidTier | null {
-  for (const tier of Object.keys(PLAN_PRICE_ENV) as PaidTier[]) {
-    for (const period of Object.keys(PLAN_PRICE_ENV[tier]) as BillingPeriod[]) {
-      if (process.env[PLAN_PRICE_ENV[tier][period]]?.trim() === priceId) {
-        return tier
-      }
-    }
-  }
-  return null
-}
 
 /** "live" | "test" inferred from a Stripe secret / restricted key prefix. */
 export function stripeKeyMode(secretKey: string): "live" | "test" {

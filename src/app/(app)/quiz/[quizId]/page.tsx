@@ -35,7 +35,6 @@ import {
 import { HintPanel } from "@/components/trials/HintPanel"
 import { QuestionNavigator, type QuestionStatus } from "@/components/trials/QuestionNavigator"
 import { parseHints } from "@/lib/quiz-hints"
-import { PLATFORM_QUIZZES_ENABLED } from "@/lib/quizzes/flags"
 
 // Types whose renderer draws its own prompt/passage, so the page must not
 // also print question.prompt above it.
@@ -178,18 +177,7 @@ function mapQuestionRow(row: Record<string, unknown>): Question {
 // ── Main Component ─────────────────────────────
 
 export default function QuizPage() {
-  // Platform (pre-generated) quizzes are paused — bounce back to /quizzes,
-  // which explains the pause. Teacher-built quizzes live at a different route.
-  if (!PLATFORM_QUIZZES_ENABLED) return <QuizArenaPaused />
   return <QuizArena />
-}
-
-function QuizArenaPaused() {
-  const router = useRouter()
-  useEffect(() => {
-    router.replace("/quizzes")
-  }, [router])
-  return null
 }
 
 function QuizArena() {

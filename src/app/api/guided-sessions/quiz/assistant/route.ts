@@ -11,6 +11,12 @@ import {
 } from "@/lib/teacher-quiz-types"
 import { generateQuizQuestions } from "@/lib/teacher-quiz/generate"
 import { prepareScope, persistDraftQuiz } from "@/lib/teacher-quiz/draft-service"
+import {
+  INSUFFICIENT_QUESTIONS_MESSAGE,
+  findSpendablePool,
+  isInsufficientQuestions,
+  withQuestionCredits,
+} from "@/lib/credits/consume"
 
 export const maxDuration = 60
 
@@ -201,15 +207,26 @@ Always pass a difficulty mix whose numbers add up to the total count. If the tea
     return NextResponse.json({ reply: msg ?? "I couldn't read that book's text to build a grounded quiz." })
   }
 
+  // Questions Available: one credit per assistant turn that produces questions (2.7).
+  const poolId = await findSpendablePool(user.id, 1)
+  if (!poolId) {
+    return NextResponse.json({ reply: INSUFFICIENT_QUESTIONS_MESSAGE })
+  }
+
   let result
   try {
-    result = await generateQuizQuestions({
-      passage: scope.data.passage,
-      bookTitle: scope.data.book.title,
-      bookAuthor: scope.data.book.author,
-      req,
-    })
+    result = await withQuestionCredits(poolId, 1, { book_id: req.bookId }, () =>
+      generateQuizQuestions({
+        passage: scope.data.passage,
+        bookTitle: scope.data.book.title,
+        bookAuthor: scope.data.book.author,
+        req,
+      }),
+    )
   } catch (err) {
+    if (isInsufficientQuestions(err)) {
+      return NextResponse.json({ reply: INSUFFICIENT_QUESTIONS_MESSAGE })
+    }
     console.error("Virgil assistant generation failed:", err)
     return NextResponse.json({ reply: "I hit a snag while drafting those questions. Want me to try again?" })
   }

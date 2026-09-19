@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Check, Loader2 } from "lucide-react"
-import { BILLING_TIERS, type BillingTier } from "@/lib/billing/prices"
 import { getStripe } from "@/lib/stripe/server"
 import { createClient } from "@/lib/supabase/server"
 
@@ -15,8 +14,20 @@ export const metadata: Metadata = {
 // a flat, single-hue treatment.
 const VERDIGRIS = "#2E7D6F"
 
-function isBillingTier(value: string | undefined): value is BillingTier {
-  return value === "solo" || value === "family" || value === "school"
+/** Display names + confirmation blurbs for the purchasable tiers. */
+const TIER_COPY: Record<string, { name: string; blurb: string }> = {
+  classroom: {
+    name: "Classroom",
+    blurb: "Your student seats are ready — invite your roster and assign the first reading.",
+  },
+  school: {
+    name: "School",
+    blurb: "Your school's seats are ready — invite teachers and roll out classrooms.",
+  },
+  family: {
+    name: "Family",
+    blurb: "The whole household can read now — set up your students and assign the first book.",
+  },
 }
 
 /**
@@ -40,6 +51,8 @@ async function resolveConfirmed(sessionId: string | undefined): Promise<boolean>
     })
     // Only trust a session that belongs to THIS signed-in user.
     if (session.client_reference_id !== user.id) return false
+    // One-time purchases (Questions top-up) have no subscription.
+    if (session.mode === "payment") return session.payment_status === "paid"
     const sub = session.subscription
     const status = sub && typeof sub !== "string" ? sub.status : null
     return status === "active" || status === "trialing"
@@ -51,10 +64,11 @@ async function resolveConfirmed(sessionId: string | undefined): Promise<boolean>
 export default async function BillingSuccessPage({
   searchParams,
 }: {
-  searchParams: Promise<{ tier?: string; session_id?: string }>
+  searchParams: Promise<{ tier?: string; session_id?: string; kind?: string }>
 }) {
-  const { tier, session_id } = await searchParams
-  const plan = isBillingTier(tier) ? BILLING_TIERS[tier] : null
+  const { tier, session_id, kind } = await searchParams
+  const isTopup = kind === "topup"
+  const plan = (tier && TIER_COPY[tier]) || null
   const confirmed = await resolveConfirmed(session_id)
 
   return (
@@ -73,23 +87,34 @@ export default async function BillingSuccessPage({
 
         <h1 className="mt-6 font-[var(--font-display)] text-3xl font-bold text-foreground">
           {confirmed
-            ? plan
-              ? `Welcome to Tome ${plan.name}`
-              : "You're all set"
-            : "Finalizing your subscription"}
+            ? isTopup
+              ? "Questions added"
+              : plan
+                ? `Welcome to Tome ${plan.name}`
+                : "You're all set"
+            : isTopup
+              ? "Finalizing your purchase"
+              : "Finalizing your subscription"}
         </h1>
 
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           {confirmed ? (
-            <>
-              {plan
-                ? plan.blurb
-                : "Your subscription is active. Thank you for supporting the canon."}{" "}
-              Your subscription is active and a receipt is on its way to your inbox.
-            </>
+            isTopup ? (
+              <>
+                Your Questions top-up is applied and ready to use. A receipt is
+                on its way to your inbox.
+              </>
+            ) : (
+              <>
+                {plan
+                  ? plan.blurb
+                  : "Your subscription is active. Thank you for supporting the canon."}{" "}
+                Your subscription is active and a receipt is on its way to your inbox.
+              </>
+            )
           ) : (
             <>
-              Thanks for subscribing{plan ? ` to Tome ${plan.name}` : ""}. We&apos;re
+              Thanks for your purchase{plan ? ` of Tome ${plan.name}` : ""}. We&apos;re
               confirming your payment — this can take a moment. Your receipt will
               arrive by email, and your access unlocks as soon as it clears.
             </>

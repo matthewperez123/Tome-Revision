@@ -2,13 +2,14 @@
 
 import { revalidatePath } from "next/cache"
 import { z } from "zod"
+import { assignmentReaderHref } from "@/lib/assignments/links"
 import {
   type ActionResult,
   createAdminClient,
   fail,
   notify,
   ok,
-  requireSchoolTools,
+  requireEducatorTools,
   requireUser,
 } from "./_shared"
 
@@ -18,12 +19,17 @@ const Scope = z.enum(["classroom", "group", "individuals"])
 // `reading`; the DB `assignments_type_check` accepts both.
 const Type = z.enum([
   "reading",
+  "quiz",
   "trial",
   "annotation",
   "discussion",
   "essay",
   "chapter_read",
 ])
+
+// "Quiz at the end" of a reading assignment (composer control → reader ladder).
+const QuizMode = z.enum(["platform", "teacher", "none"])
+const PlatformDifficulty = z.enum(["Apprentice", "Scholar", "Master"])
 
 const CreateInput = z
   .object({
@@ -40,6 +46,9 @@ const CreateInput = z
     essayWordMin: z.number().int().nonnegative().max(100000).optional(),
     essayWordMax: z.number().int().positive().max(100000).optional(),
     annotationTarget: z.number().int().positive().max(1000).optional(),
+    quizId: Uuid.optional(),
+    quizMode: QuizMode.default("platform"),
+    platformQuizDifficulty: PlatformDifficulty.optional(),
     dueAt: z.string().datetime().optional(),
     gracePeriodDays: z.number().int().min(0).max(60).default(0),
     latePenaltyPercent: z.number().int().min(0).max(100).default(0),
@@ -141,6 +150,12 @@ export async function createAssignment(
   if (i.type === "trial" && !i.trialId) {
     return fail("Trial assignments require a trial id.")
   }
+  if (i.type === "quiz" && !i.quizId) {
+    return fail("Quiz assignments require a quiz.")
+  }
+  if (i.quizMode === "teacher" && !i.quizId) {
+    return fail("Pick one of your quizzes, or switch to Tome's questions.")
+  }
   if (i.type === "discussion" && !i.discussionPrompt) {
     return fail("Discussion assignments require a prompt.")
   }
@@ -153,9 +168,11 @@ export async function createAssignment(
 
   const rangeStart = i.chapterRangeStart ?? null
   const rangeEnd = i.chapterRangeEnd ?? i.chapterRangeStart ?? null
+  // A directly attached quiz always means teacher mode; explicit 'none' wins.
+  const quizMode = i.quizId ? "teacher" : i.quizMode
 
   try {
-    const gate = await requireSchoolTools()
+    const gate = await requireEducatorTools()
     if (!gate.ok) return fail(gate.error)
     const { supabase, user } = gate
 
@@ -176,6 +193,10 @@ export async function createAssignment(
         essay_word_min: i.essayWordMin ?? null,
         essay_word_max: i.essayWordMax ?? null,
         annotation_target: i.annotationTarget ?? null,
+        quiz_id: i.quizId ?? null,
+        quiz_mode: quizMode,
+        platform_quiz_difficulty:
+          quizMode === "platform" ? (i.platformQuizDifficulty ?? "Apprentice") : null,
         due_date: i.dueAt ?? null,
         grace_period_days: i.gracePeriodDays,
         late_penalty_percent: i.latePenaltyPercent,
@@ -237,7 +258,7 @@ export async function publishAssignment(
   if (!parsed.success) return fail("Invalid assignment id.")
 
   try {
-    const gate = await requireSchoolTools()
+    const gate = await requireEducatorTools()
     if (!gate.ok) return fail(gate.error)
     const { supabase, user } = gate
 
@@ -246,7 +267,7 @@ export async function publishAssignment(
     // student set.
     const { data: a, error: loadErr } = await supabase
       .from("assignments")
-      .select("id, classroom_id, scope, title, status")
+      .select("id, classroom_id, scope, title, status, book_id, chapter_range_start")
       .eq("id", parsed.data)
       .single<{
         id: string
@@ -254,6 +275,8 @@ export async function publishAssignment(
         scope: "classroom" | "group" | "individuals"
         title: string
         status: string
+        book_id: string | null
+        chapter_range_start: number | null
       }>()
     if (loadErr || !a) return fail(loadErr?.message ?? "Assignment not found.")
 
@@ -303,7 +326,7 @@ export async function publishAssignment(
           type: "class_assignment" as const,
           title: `New assignment: ${a.title}`,
           body: classroom?.name ?? undefined,
-          actionUrl: `/classroom/${a.classroom_id}/assignment/${a.id}`,
+          actionUrl: assignmentReaderHref(a),
           actorId: user.id,
           entityType: "assignment",
           entityId: a.id,

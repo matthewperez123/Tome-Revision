@@ -22,6 +22,7 @@ import {
   PLAN_ITEM_TYPE_LABELS,
 } from "@/lib/semester-plan/types"
 import { TEACHER_QUIZ_DIFFICULTIES } from "@/lib/teacher-quiz-types"
+import { assignmentDetailHref } from "@/lib/assignments/links"
 import { ITEM_ACCENT, IRIDESCENT, RUBRIC, formatMinutes } from "@/lib/semester-plan/rubric"
 import { SemesterPlanAssistant } from "@/components/semester-plan/semester-plan-assistant"
 
@@ -558,7 +559,7 @@ function ItemEditor({
 
       {item.assignment_id && classId ? (
         <a
-          href={`/classroom/${classId}/assignment/${item.assignment_id}`}
+          href={assignmentDetailHref(classId, item.assignment_id)}
           className="mt-1.5 inline-flex items-center gap-1 text-[11px] font-semibold"
           style={{ color: RUBRIC.verdigris }}
         >

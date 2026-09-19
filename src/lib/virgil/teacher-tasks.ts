@@ -22,6 +22,12 @@ import {
 } from "@/lib/virgil/task-config"
 import { withAnthropicRetry } from "@/lib/virgil/retry"
 import { assertOwnership } from "@/lib/virgil/ownership"
+import {
+  INSUFFICIENT_QUESTIONS_MESSAGE,
+  findSpendablePool,
+  isInsufficientQuestions,
+  withQuestionCredits,
+} from "@/lib/credits/consume"
 
 /**
  * Teacher-only Virgil task handlers. Every task here is reachable only after the
@@ -190,12 +196,34 @@ async function handleTeacherQuiz(raw: unknown, ctx: TaskCtx): Promise<Response> 
   const scoped = await prepareScope(ctx.supabase, req)
   if (scoped.error) return Response.json(scoped.error.json, { status: scoped.error.status })
 
-  const result = await generateQuizQuestions({
-    passage: scoped.data.passage,
-    bookTitle: scoped.data.book.title,
-    bookAuthor: scoped.data.book.author,
-    req,
-  })
+  // Questions Available: one credit per question requested (2.7).
+  const poolId = await findSpendablePool(ctx.userId, input.questionCount)
+  if (!poolId) {
+    return Response.json(
+      { error: "insufficient_questions", message: INSUFFICIENT_QUESTIONS_MESSAGE },
+      { status: 402 },
+    )
+  }
+
+  let result
+  try {
+    result = await withQuestionCredits(poolId, input.questionCount, { book_id: input.bookId }, () =>
+      generateQuizQuestions({
+        passage: scoped.data.passage,
+        bookTitle: scoped.data.book.title,
+        bookAuthor: scoped.data.book.author,
+        req,
+      }),
+    )
+  } catch (err) {
+    if (isInsufficientQuestions(err)) {
+      return Response.json(
+        { error: "insufficient_questions", message: INSUFFICIENT_QUESTIONS_MESSAGE },
+        { status: 402 },
+      )
+    }
+    throw err
+  }
 
   const saved = await persistDraftQuiz(
     ctx.supabase,

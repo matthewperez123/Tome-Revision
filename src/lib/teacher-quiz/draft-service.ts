@@ -122,7 +122,7 @@ export async function persistDraftQuiz(
     .from("teacher_quiz_questions")
     .insert(rowsToInsert)
     .select(
-      "id, quiz_id, question_type, question_text, options, correct_answer, explanation, difficulty, category, points, max_points, rubric, reference_answer, source_anchor, hints, distractor_eliminations, sort_order",
+      "id, quiz_id, question_type, question_text, options, correct_answer, meta, explanation, difficulty, category, points, max_points, rubric, reference_answer, source_anchor, hints, distractor_eliminations, sort_order",
     )
     .order("sort_order", { ascending: true })
 

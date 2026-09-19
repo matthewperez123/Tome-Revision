@@ -7,11 +7,12 @@
  * launch, never invented beyond the brief.
  */
 import {
-  HOUSEHOLD_ENABLED,
-  HOUSEHOLD_SEATS,
-  READER_TRIAL_COPY,
-  SOLO_ANNUAL_PRICE,
-} from "./marketing/plans"
+  SEAT_PRICE_USD_PER_YEAR,
+  SCHOOL_ANNUAL_MINIMUM_USD,
+  FAMILY_PRICE_USD_PER_YEAR,
+  FAMILY_STUDENT_LIMIT,
+  FREE_TEACHER_STUDENT_LIMIT,
+} from "./billing/config"
 import {
   catalogSummary,
   formatBookCount,
@@ -81,15 +82,7 @@ export function getFaqCategories(stats: CatalogStats): FaqCategory[] {
       {
         id: "need-credit-card",
         q: "Do I need a credit card to start?",
-        a: "No. The Free plan is free forever and needs no card — you only add payment if you choose to upgrade.",
-      },
-      {
-        id: "read-offline",
-        q: "Can I read offline?",
-        a: HOUSEHOLD_ENABLED
-          ? "Offline reading is included on Solo and Family."
-          : "Offline reading is included on Solo.",
-        confirm: true,
+        a: "No. Teachers use Tome free forever with no card on file — payment only enters the picture when a classroom, school, or homeschool family buys student seats.",
       },
       {
         id: "supported-devices",
@@ -100,7 +93,7 @@ export function getFaqCategories(stats: CatalogStats): FaqCategory[] {
       {
         id: "reading-privacy",
         q: "Is my reading private?",
-        a: "Yes. Public profiles and Circles are opt-in; by default everything you read, highlight, and note stays private to you.",
+        a: "Yes. By default everything you read, highlight, and note stays private to you — students' work is visible only to their teacher.",
       },
       {
         id: "trial-difficulties",
@@ -139,31 +132,24 @@ export function getFaqCategories(stats: CatalogStats): FaqCategory[] {
     label: "Plans & billing",
     items: [
       {
-        id: "annual-billing",
-        q: "How does annual billing work?",
-        a: `Solo is ${SOLO_ANNUAL_PRICE} per year when you switch the billing toggle to annual — the same plan as monthly Solo, just billed yearly for roughly two months free.`,
-      },
-      {
-        id: "free-trial",
-        q: "Is there a free trial?",
-        a: `Yes — ${READER_TRIAL_COPY}`,
+        id: "how-pricing-works",
+        q: "How is Tome priced?",
+        a: `Teachers are free forever. Classrooms pay $${SEAT_PRICE_USD_PER_YEAR} per student per year, schools get volume pricing with a $${SCHOOL_ANNUAL_MINIMUM_USD.toLocaleString("en-US")} annual minimum, and homeschool families have the Family plan at $${FAMILY_PRICE_USD_PER_YEAR} per year. All billing is annual.`,
       },
       {
         id: "cancel-anytime",
         q: "Can I cancel anytime?",
-        a: "Yes, right from your account settings. You keep full access through the end of the period you've already paid for.",
+        a: "Yes, right from your account settings. You keep full access through the end of the year you've already paid for.",
       },
       {
         id: "keep-progress-after-cancel",
         q: "What happens to my library and progress if I cancel?",
-        a: "Nothing is deleted. Your highlights, notes, Wisdom, and reading history stay on your account — you just return to Free-plan access until you resubscribe.",
+        a: "Nothing is deleted. Your highlights, notes, Wisdom, and reading history stay on your account — teachers simply return to the free teacher plan until you resubscribe.",
       },
       {
         id: "household-plan",
         q: "Is there a household or family plan?",
-        a: HOUSEHOLD_ENABLED
-          ? `Yes — the Family plan covers up to ${HOUSEHOLD_SEATS} readers under one subscription, built for families reading the Great Books together.`
-          : "Not yet — family plans are coming soon. For now, each reader needs their own account.",
+        a: `Yes — the Family plan covers up to ${FAMILY_STUDENT_LIMIT} students under one subscription at $${FAMILY_PRICE_USD_PER_YEAR} per year, built for homeschool families reading the Great Books together.`,
       },
       {
         id: "payment-methods",
@@ -185,13 +171,13 @@ export function getFaqCategories(stats: CatalogStats): FaqCategory[] {
       },
       {
         id: "whats-in-free",
-        q: "What exactly is included in the Free plan?",
-        a: "A curated foundational shelf of complete classics, chapter Trials, Wisdom and Flames, highlights and notes, and the free Classroom tools for teachers. Upgrading unlocks the full library and the deeper assistant features.",
+        q: "What exactly do free teachers get?",
+        a: `The full library, the reader, pre-built quizzes, assignments, and the live gradebook for one classroom of up to ${FREE_TEACHER_STUDENT_LIMIT} students — free forever. Paid student seats add unlimited classrooms and a larger pool of Questions.`,
       },
       {
         id: "switch-plans",
-        q: "Can I switch plans later?",
-        a: "Yes — you can upgrade, downgrade, or move between monthly and annual billing at any time from your account settings, and the change is prorated automatically.",
+        q: "Can I add seats later?",
+        a: "Yes — you can add student seats at any time from your account settings, and the change is prorated automatically for the rest of your billing year.",
         confirm: true,
       },
       {
@@ -203,8 +189,7 @@ export function getFaqCategories(stats: CatalogStats): FaqCategory[] {
       {
         id: "school-plan-pricing",
         q: "How is the School plan priced?",
-        a: "School pricing is per teacher seat, billed annually — each seat gives a teacher the full paid toolset for all of their classes and students. Book a demo for a quote for your team.",
-        confirm: true,
+        a: `School pricing is $${SEAT_PRICE_USD_PER_YEAR} per student per year with a $${SCHOOL_ANNUAL_MINIMUM_USD.toLocaleString("en-US")} annual minimum, billed annually by card, invoice, or purchase order. Teachers are always free. Get a quote and we'll set up a pilot for your team.`,
       },
     ],
   },
@@ -215,7 +200,7 @@ export function getFaqCategories(stats: CatalogStats): FaqCategory[] {
       {
         id: "free-for-teachers",
         q: "Is Tome really free for individual teachers?",
-        a: "Yes. The Classroom plan is free forever for one teacher with up to 30 students — real assignments, auto-graded Trials, and a live gradebook, no credit card required.",
+        a: `Yes. Tome is free forever for individual teachers — one classroom with up to ${FREE_TEACHER_STUDENT_LIMIT} students, real assignments, auto-graded Trials, and a live gradebook, no credit card required.`,
       },
       {
         id: "how-students-join",

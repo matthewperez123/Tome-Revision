@@ -11,13 +11,20 @@ import "server-only"
 
 import { createAdminClient as createAdminClientUntyped } from "@/lib/supabase/admin"
 import { isFreeSample, FREE_BOOK_LIMIT } from "@/lib/stripe/free-books"
+import {
+  FAMILY_STUDENT_LIMIT,
+  FREE_TEACHER_CLASSROOM_LIMIT,
+  FREE_TEACHER_STUDENT_LIMIT,
+  MIN_STUDENT_SEATS,
+  SCHOOL_MIN_SEATS,
+} from "@/lib/billing/config"
 import type { UserRole } from "@/lib/navigation"
 import type { SupabaseClient } from "@supabase/supabase-js"
 
 const createAdminClient = () =>
   createAdminClientUntyped() as unknown as SupabaseClient<any, "public", any>
 
-export type EntitlementTier = "free" | "solo" | "family" | "school"
+export type EntitlementTier = "free" | "solo" | "family" | "classroom" | "school"
 
 export interface EntitlementFeatures {
   /** Read the whole catalog (vs. only the free sampler). */
@@ -94,7 +101,7 @@ function freeEntitlement(status: string | null): Entitlement {
 }
 
 function readerEntitlement(
-  tier: "solo" | "family",
+  tier: "solo" | "family" | "classroom",
   status: string | null,
 ): Entitlement {
   return {
@@ -173,8 +180,11 @@ export async function getEntitlement(userId: string): Promise<Entitlement> {
     })
   }
 
-  // 3. A paid reader (Solo/Family).
-  if (isActiveStatus(status) && (tier === "solo" || tier === "family")) {
+  // 3. A paid reader/teacher plan (Solo grandfathered, Family, Classroom).
+  if (
+    isActiveStatus(status) &&
+    (tier === "solo" || tier === "family" || tier === "classroom")
+  ) {
     return readerEntitlement(tier, status)
   }
 
@@ -213,12 +223,195 @@ async function resolveCoveringSchool(
 }
 
 /**
- * True when `userId` has an active School entitlement (as the admin OR a covered
- * teacher). The gate for paid educator tools.
+ * Teachers are free forever: every account with `profiles.role = 'teacher'`
+ * gets the full educator toolset (assignments, gradebook, quiz builder,
+ * planner). What paid plans buy is student SEATS and Questions, not tools.
+ * This is the sole gate for educator features.
  */
-export async function hasActiveSchoolEntitlement(userId: string): Promise<boolean> {
-  const entitlement = await getEntitlement(userId)
-  return entitlement.tier === "school" && entitlement.features.teacherTools
+export async function hasEducatorTools(userId: string): Promise<boolean> {
+  return (await getUserRole(userId)) === "teacher"
+}
+
+/** The launch billing plans a teacher can be on. */
+export type PlanTier = "free_teacher" | "classroom" | "school" | "family" | "solo"
+
+export interface PlanContext {
+  tier: PlanTier
+  status: string | null
+  /** Student seats on the paying subscription (null = none/uncapped-by-plan). */
+  seats: number | null
+  /**
+   * The `subscriptions.user_id` that pays for this teacher. Equal to the
+   * teacher's own id unless they're covered by someone else's School plan;
+   * null on the free tier.
+   */
+  coveringSubscriptionUserId: string | null
+}
+
+/**
+ * Resolve which billing plan governs a teacher. Order:
+ *   1. own active classroom/school/family subscription,
+ *   2. a school_seats row covered by someone else's active School plan,
+ *   3. own grandfathered Solo subscription,
+ *   4. free teacher.
+ */
+export async function getPlanContext(teacherId: string): Promise<PlanContext> {
+  const admin = createAdminClient()
+  const { data } = await admin
+    .from("subscriptions")
+    .select("tier, status, seats")
+    .eq("user_id", teacherId)
+    .maybeSingle()
+
+  const status = (data?.status as string | null) ?? null
+  const tier = (data?.tier as string | null) ?? null
+  const seats = (data?.seats as number | null) ?? null
+
+  if (
+    isActiveStatus(status) &&
+    (tier === "classroom" || tier === "school" || tier === "family")
+  ) {
+    return {
+      tier,
+      status,
+      seats: tier === "family" ? FAMILY_STUDENT_LIMIT : seats,
+      coveringSubscriptionUserId: teacherId,
+    }
+  }
+
+  const covered = await resolveCoveringSchool(admin, teacherId)
+  if (covered) {
+    return {
+      tier: "school",
+      status: covered.status,
+      seats: covered.seats,
+      coveringSubscriptionUserId: covered.ownerId,
+    }
+  }
+
+  if (isActiveStatus(status) && tier === "solo") {
+    // Grandfathered Solo: full reading, but seat limits mirror the free tier.
+    return { tier: "solo", status, seats: null, coveringSubscriptionUserId: teacherId }
+  }
+
+  return { tier: "free_teacher", status, seats: null, coveringSubscriptionUserId: null }
+}
+
+export interface SeatAllowance {
+  tier: PlanTier
+  /** Max distinct students the plan covers. */
+  allowance: number
+  /** Distinct students currently enrolled across the counted classrooms. */
+  used: number
+  /** The paying `subscriptions.user_id` (null on the free tier). */
+  payerId: string | null
+}
+
+/**
+ * Student-seat allowance vs. usage for a teacher's governing plan.
+ * School plans share one allowance across every covered teacher: usage is
+ * the count of DISTINCT students across all classrooms owned or co-taught
+ * by the admin and every active-seat teacher. Other plans count only the
+ * teacher's own classrooms.
+ */
+export async function getSeatAllowance(teacherId: string): Promise<SeatAllowance> {
+  const admin = createAdminClient()
+  const plan = await getPlanContext(teacherId)
+
+  if (plan.tier === "school" && plan.coveringSubscriptionUserId) {
+    const ownerId = plan.coveringSubscriptionUserId
+    const { data: seatRows } = await admin
+      .from("school_seats")
+      .select("teacher_id")
+      .eq("subscription_user_id", ownerId)
+      .eq("status", "active")
+    const teacherIds = new Set<string>([ownerId])
+    for (const row of seatRows ?? []) {
+      const id = (row as { teacher_id: string | null }).teacher_id
+      if (id) teacherIds.add(id)
+    }
+    const used = await countDistinctStudents(admin, [...teacherIds])
+    return {
+      tier: plan.tier,
+      allowance: plan.seats ?? SCHOOL_MIN_SEATS,
+      used,
+      payerId: ownerId,
+    }
+  }
+
+  const used = await countDistinctStudents(admin, [teacherId])
+  if (plan.tier === "classroom") {
+    return {
+      tier: plan.tier,
+      allowance: plan.seats ?? MIN_STUDENT_SEATS,
+      used,
+      payerId: teacherId,
+    }
+  }
+  if (plan.tier === "family") {
+    return { tier: plan.tier, allowance: FAMILY_STUDENT_LIMIT, used, payerId: teacherId }
+  }
+  // free_teacher + grandfathered solo → free classroom limits.
+  return {
+    tier: plan.tier,
+    allowance: FREE_TEACHER_STUDENT_LIMIT,
+    used,
+    payerId: plan.tier === "solo" ? teacherId : null,
+  }
+}
+
+/**
+ * How many classrooms a teacher may own (null = unlimited). Only the free
+ * tier (and grandfathered Solo, which never bought seats) is capped.
+ */
+export async function getClassroomAllowance(teacherId: string): Promise<number | null> {
+  const plan = await getPlanContext(teacherId)
+  return plan.tier === "free_teacher" || plan.tier === "solo"
+    ? FREE_TEACHER_CLASSROOM_LIMIT
+    : null
+}
+
+/**
+ * Distinct students across every classroom owned (classrooms.teacher_id) or
+ * staffed (classroom_members owner/co_teacher) by the given teachers.
+ */
+async function countDistinctStudents(
+  admin: SupabaseClient<any, "public", any>,
+  teacherIds: string[],
+): Promise<number> {
+  if (teacherIds.length === 0) return 0
+
+  const [{ data: owned }, { data: staffed }] = await Promise.all([
+    admin.from("classrooms").select("id").in("teacher_id", teacherIds),
+    admin
+      .from("classroom_members")
+      .select("classroom_id")
+      .in("student_id", teacherIds)
+      .in("role", ["owner", "co_teacher"]),
+  ])
+
+  const classroomIds = new Set<string>()
+  for (const row of owned ?? []) {
+    const id = (row as { id: string | null }).id
+    if (id) classroomIds.add(id)
+  }
+  for (const row of staffed ?? []) {
+    const id = (row as { classroom_id: string | null }).classroom_id
+    if (id) classroomIds.add(id)
+  }
+  if (classroomIds.size === 0) return 0
+
+  const { data: students } = await admin
+    .from("classroom_members")
+    .select("student_id")
+    .in("classroom_id", [...classroomIds])
+    .eq("role", "student")
+  const distinct = new Set<string>()
+  for (const row of students ?? []) {
+    const id = (row as { student_id: string | null }).student_id
+    if (id) distinct.add(id)
+  }
+  return distinct.size
 }
 
 /** Read a profile's role via the service role (independent of the caller's RLS). */

@@ -9,6 +9,7 @@ import { createClient } from "@/lib/supabase/client"
 import { useAuth } from "@/hooks/use-auth"
 import { useActivityBeacon } from "@/hooks/use-activity-beacon"
 import { startAssignment, submitAssignment, saveDraft } from "@/lib/actions/assignments"
+import { assignmentReaderHref } from "@/lib/assignments/links"
 import { RUBRIC } from "@/lib/semester-plan/rubric"
 
 const TYPE_ICONS: Record<string, typeof BookOpen> = {
@@ -264,7 +265,7 @@ export default function AssignmentDetailPage({
                 : "Read the assigned passage"}
             </p>
             <Link
-              href={`/classroom/${classroomId}/assignment/${assignment.id}/read`}
+              href={assignmentReaderHref({ ...assignment, classroom_id: classroomId })}
               onClick={() => {
                 if (role === "student") void startAssignment(assignment.id)
               }}
@@ -285,11 +286,7 @@ export default function AssignmentDetailPage({
               : "Pass the assigned Trial"}
           </p>
           <Link
-            href={
-              assignment.chapter_range_start != null
-                ? `/read/${assignment.book_id}?ch=${assignment.chapter_range_start}&trial=1&classroom=${classroomId}`
-                : `/read/${assignment.book_id}?trial=1&classroom=${classroomId}`
-            }
+            href={assignmentReaderHref({ ...assignment, classroom_id: classroomId })}
             onClick={() => {
               if (role === "student") void startAssignment(assignment.id)
             }}
